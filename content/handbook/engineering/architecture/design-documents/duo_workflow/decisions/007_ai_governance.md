@@ -10,9 +10,9 @@ participating-stages: []
 toc_hide: true
 description: "GitLab の永続化された階層的な AI ツールルールエンジンのアーキテクチャ決定記録。ガバナンスポリシーが Organization/Group から Project スコープへどのようにカスケードするかを定義する。"
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-lastmod: 2026-06-01T13:26:03+12:00
-translated_at: "2026-06-01T22:00:36Z"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-10T01:09:44+01:00"
+translated_at: "2026-09-10T11:24:55+00:00"
 translator: claude
 stale: false
 ---
@@ -324,4 +324,4 @@ add_index :ai_tool_rules, :project_id,
 
 ## 8. v2 とその先
 
-延期された機能とその理由は [AI Governance v2: Deferred Capabilities](007_ai_governance_v2.md) で追跡されています。
+延期された機能は、以前は補足ドキュメント「v2: Deferred Capabilities」で追跡していましたが、このドキュメントは廃止しました（決定ではなくバックログを記録しており、ADR 形式に適していなかったためです）。延期された各項目の扱いについては、[ADR-008 §7](008_auto_mode_phased_rollout.md) を参照してください。ユーザーレベルの自動承認へのオプトインは ADR-008 の委任設定で提供し、glob/正規表現による引数マッチング、その GIN インデックス、具体性に基づく優先順位は、ADR-008 の将来の引数レベルのガバナンス上限として引き継ぎます。残るガバナンスエンジンのバックログ（監査専用モード、コンプライアンスプリセット、プロンプトレベルの拒否ツールフィルタリング、インスタンスレベルのルール、traversal-ID クエリ最適化）は、追跡用 Issue に移行します。

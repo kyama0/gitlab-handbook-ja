@@ -4,9 +4,9 @@ description: "AI Catalog グループは、組織、グループ、プロジェ�
 aliases:
   - /handbook/engineering/ai/ai-catalog/
 upstream_path: /handbook/engineering/ai/agent-foundations/ai-catalog/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-lastmod: "2026-08-25T14:25:25-04:00"
-translated_at: "2026-09-04T11:16:44+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-09T19:05:36+01:00"
+translated_at: "2026-09-10T11:09:19+00:00"
 translator: codex
 stale: false
 ---
@@ -29,6 +29,14 @@ AI Catalog グループは、GitLab ユーザーがエージェント、フロ�
 ## 取り組んでいること
 
 未定
+
+## 私たちの担当範囲 {#what-we-own}
+
+* [GitLab for Slack アプリ](https://docs.gitlab.com/user/project/integrations/gitlab_slack_application/)は、
+  このグループ内の External Agents 機能チーム
+  （[`#f_external-agents`](https://gitlab.enterprise.slack.com/archives/C0B4V7TJPG9)）が
+  所有しています。
+  [リリースとマニフェストのプロセス](/handbook/engineering/ai/agent-foundations/ai-catalog/slack-app-release-process/)を参照してください。
 
 ## 私たちの働き方
 

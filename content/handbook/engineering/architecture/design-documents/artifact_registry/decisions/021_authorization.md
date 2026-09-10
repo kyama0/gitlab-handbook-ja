@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認可設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization/
-upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
-lastmod: "2026-09-07T15:22:46+02:00"
-translated_at: "2026-09-08T07:12:08+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-10T10:10:17+02:00"
+translated_at: "2026-09-10T11:09:19+00:00"
 translator: codex
 stale: false
 ---
@@ -77,8 +77,8 @@ Artifact Registry は、Artifact Registry にスコープされた、プラッ�
 |---|---|
 | **Artifact Viewer** | アーティファクトを pull し、レジストリを閲覧する利用者。 |
 | **Artifact Contributor** | アーティファクトも公開する作成者（例: CI ジョブ）。 |
-| **Artifact Manager** | アーティファクトとリポジトリ設定を管理するリポジトリオーナー。 |
-| **Artifact Admin** | レジストリ全体の設定とアクセスを管理するレジストリ管理者。 |
+| **Artifact Manager** | アーティファクトとリポジトリ設定を管理するリポジトリオーナー。アクセスは管理しません。 |
+| **Artifact Admin** | レジストリ全体の設定を管理するレジストリ管理者。アクセスを管理する唯一のロールです。 |
 
 これらは**ユーザーロール**であり、プラットフォームの**ユーザータイプ**（例: Organization Administrator または Organization Member）とは異なります。ユーザータイプは Artifact Registry ロールを意味しません。この 2 つは独立して割り当てられます。この区別の背後にあるチーム横断の整合性については、[ロール管理の作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/593455) を参照してください。
 
@@ -129,6 +129,8 @@ Artifact Registry は固定の権限セットを定義します。
 | `delete_repository_upstream` | | | ✓ | ✓ |
 
 各ロールは独立した権限バケットです。ロール間に階層や継承はなく、その列でマークされた権限だけを付与します。
+
+ロール割り当ての管理は Artifact Registry の権限ではないため、上の表には含まれていません（[ロール割り当て](#role-assignment)を参照）。これを持つのは Artifact Admin だけです。
 
 ### リポジトリの可視性 {#repository-visibility}
 
@@ -188,20 +190,20 @@ namespace 全体およびリポジトリ内で一覧表示をどのように認�
 
 ロールは、auth platform の [relationships API](../agreements/auth.md#r5--relationships-api)（R5）を通じて `(subject, role, resource)` タプルとして割り当てられます。subject はトークンから解決される relationships-API の [`Identity`](https://gitlab.com/gitlab-org/auth/iam/-/blob/main/docs/relationships-api.md#subject-and-identity) 型（`origin`、`origin_id`、`local_id`）であり、resource は Artifact Registry namespace またはリポジトリです。ロール割り当ては、subject をその subject の organization 内のリソースに結び付けます。
 
-ロール割り当ての管理自体も、権限が必要な操作です。**Artifact Admin** と **Artifact Manager** ロールはそれらを作成、更新、削除できますが、Artifact Viewer と Artifact Contributor はできません（[決定](https://gitlab.com/groups/gitlab-org/-/work_items/22246#note_3471245743)）。この能力は、ロールがどこで保持されていても同一です。異なるのはスコープだけです。namespace レベルのロールはレジストリ全体の割り当てを管理し、リポジトリレベルのロールはそのリポジトリ上の割り当てを管理します。プリンシパルは自分より上位のロールを付与できません。Artifact Manager は Artifact Admin を作成できません。これは project Maintainer が member を Owner に昇格できないのと同じです。これは GitLab UI を通じて行われ、Rails がフロントエンドと API を提供します（R5）。relationships API は書き込み自体を認可します（[relationships API の書き込み認可](https://gitlab.com/gitlab-org/gitlab/-/work_items/599078)）。relationships API 自体は gRPC であるため、この Rails インターフェイスは GraphQL-over-gRPC ラッパーです（[GraphQL ラッパーの作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/602144)）。namespace は organization と 1 対 1 で対応するため、これは organization のアクセス管理体験を通じて表示されます。
+ロール割り当てを管理できるのは **Artifact Admin** ロールだけです。Artifact Manager、Artifact Contributor、Artifact Viewer は、ロール割り当てを作成、更新、削除できません（[ロールと権限の作業アイテム](https://gitlab.com/groups/gitlab-org/-/work_items/22246)）。Artifact Manager はリポジトリを管理するロールであり、アクセスは管理しません。ロールの付与、リポジトリオーバーライドの設定、アクセスルールの書き込みはいずれも行いません。この能力は Artifact Admin がどこで保持されていても同一であり、異なるのはスコープだけです。namespace レベルの Artifact Admin はレジストリ全体の割り当てを管理し、リポジトリレベルの Artifact Admin はそのリポジトリの割り当てを管理します。これは GitLab UI を通じて行われ、Rails がフロントエンドと API を提供します（R5）。relationships API は書き込み自体を認可します（[relationships API の書き込み認可](https://gitlab.com/gitlab-org/gitlab/-/work_items/599078)）。relationships API 自体は gRPC であるため、この Rails インターフェイスは GraphQL-over-gRPC ラッパーです（[GraphQL ラッパーの作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/602144)）。namespace は organization と 1 対 1 で対応するため、これは organization のアクセス管理体験を通じて表示されます。
 
 ロールは、**2 つのリソースレベル**のいずれか、つまり namespace またはリポジトリで動作し、4 つのロールはいずれもどちらのレベルにも割り当てられます。
 
 - **Namespace（トップレベル）**： ロールはレジストリ全体、つまりすべてのリポジトリに適用されます。たとえば、namespace レベルの Artifact Manager はすべてのリポジトリの manager です。namespace レベルの Artifact Viewer はすべてのリポジトリを読み取れます。これは、管理者が数千人のユーザーへ大規模にアクセスを付与できるようにするベースラインです。Organization Administrator は namespace レベルの Artifact Admin としてブートストラップされます（R6）。
 - **リポジトリ（直接、加算的）**： 単一リポジトリに割り当てられたロールは、そのリポジトリ上で権限を付与します。これは独立した直接メンバーシップの関連付けであり、namespace レベルの割り当てを必要としません。そのため、プリンシパルには単一リポジトリへのアクセスのみを付与できます。プリンシパルが両レベルでロールを持つ場合、リポジトリ上の有効な権限は 2 つの**和集合**になります。リポジトリレベルの割り当ては権限を増やすことだけができ、減らすことはできません。特定リポジトリでアクセスを制限すること（減算的オーバーライド）は、[クローズドベータから延期](#reductive-repository-overrides)されます。
 
-`create_repository` はレジストリ全体に対して作用するため、リポジトリレベルでは意味を持ちません。Artifact Admin をリポジトリレベルで割り当てると、Artifact Manager に対してちょうど `delete_repository` が追加され、そのリポジトリを削除することを含む完全な制御が可能になります。
+`create_repository` はレジストリ全体に対して作用するため、リポジトリレベルでは意味を持ちません。Artifact Admin をリポジトリレベルで割り当てると、Artifact Manager に対して 2 つの能力が追加されます。削除を含めてそのリポジトリを完全に制御する `delete_repository` と、そのリポジトリでのロール割り当ての管理です。
 
 **各リクエストは 1 つのリソースに対して解決されます。** リクエストは、それが指す単一リソースに対して認可されます。関係のルックアップはそのリソースと祖先（リポジトリ → namespace → organization）でフィルタリングされるため、_別の_リポジトリの割り当てが判断に含まれることはありません。オーバーライドは権限を上げるだけなので、有効ロールは該当する中で最上位のものになります。「最も制限的」という解決はありません。これは仮想リポジトリにも含まれます。**仮想リポジトリを経由して**提供されるリクエストは、**その仮想リポジトリ**自体のロールに対して解決される一方、含まれる**ホスト型またはリモートリポジトリ**に割り当てられたロールは、その含まれるリポジトリに**直接**宛てたリクエストを制御します。したがって、仮想リポジトリのロールは、それを経由して提供される集約対象コンテンツへのアクセスを許可します。これは、含まれるリポジトリの割り当てを迂回するものではなく、設計どおりです。
 
 ロール割り当てが Artifact Registry に届く方法は、イテレーションによって異なります。
 
-- **クローズドベータ**: トークンはアイデンティティとコンテキストのみを運びます（認可クレームはありません）。Artifact Registry は同じ場所に配置された relationships API に問い合わせ、**対象リソースでフィルタリング**します。namespace 操作では namespace id と organization id を渡し、リポジトリ操作では repository id、namespace id、organization id を渡します。API はそのリソースとその祖先に対するプリンシパルのロール割り当てをメンバーシップタプルとして返します。Artifact Registry はそれらのすべてのタプルをポリシーエンジンに渡し、ポリシーエンジンが有効な権限を解決します。リポジトリレベルの割り当ては加算的であるため、権限は namespace レベルとリポジトリレベルの割り当ての和集合です（エンジンのネイティブな最も許容的な評価）。Artifact Registry は relationships API のレスポンスを、AR で設定された短い期間（デフォルト 30 秒、最大 60 秒）キャッシュします。キャッシュは relationships API に送られた入力、つまりプリンシパル、対象リソース、関係の種類フィルターをキーにします。キャッシュされた結果が別のプリンシパルやリソースに再利用されることはありません。その結果、取り消しを含む最近のロール割り当て変更は、即時に適用されるのではなく、最大でその時間枠だけ反映に時間がかかる可能性があります。
+- **クローズドベータ**: トークンはアイデンティティとコンテキストのみを運びます（認可クレームはありません）。Artifact Registry は同じ場所に配置された relationships API に問い合わせ、**対象リソースでフィルタリング**します。namespace 操作では namespace id と organization id を渡し、リポジトリ操作では repository id、namespace id、organization id を渡します。API はそのリソースとその祖先に対するプリンシパルのロール割り当てをメンバーシップタプルとして返します。Artifact Registry はそれらのすべてのタプルをポリシーエンジンに渡し、ポリシーエンジンが有効な権限を解決します。リポジトリレベルの割り当ては加算的であるため、権限は namespace レベルとリポジトリレベルの割り当ての和集合です（エンジンのネイティブな最も許容的な評価）。Artifact Registry は relationships API のレスポンスを、Artifact Registry で設定された短い期間（デフォルト 30 秒、最大 60 秒）キャッシュします。このキャッシュは、[Artifact Registry に用意されるキーバリューストア](../agreements/infrastructure.md#isolation-levels)を使用せず、プロセス内に保持します。認可パスでネットワーク経由のアクセスが発生せず、共有キャッシュへの依存もありませんが、その代償として無効化はアトミックではなくなります。キーバリューストアを使用するキャッシュなら、フリート全体で 1 つのエントリと 1 つの有効期限を共有します。キャッシュは relationships API に送られた入力、つまりプリンシパル、対象リソース、関係の種類フィルターをキーにします。キャッシュされた結果が別のプリンシパルやリソースに再利用されることはありません。その結果、取り消しを含む直近のロール割り当ての変更は即座には観測されません。この期間が上限を定めるのは、遅延のうち Artifact Registry が生じさせる分だけです。インスタンスは、その時点で relationships API が返す内容でエントリを埋めるため、割り当てが書き込まれた後、その書き込みが読み取り可能になる前にキャッシュを埋めると、さらにその期間が丸ごと経過するまで変更前の応答を返します。relationships API 内の書き込みから読み取りまでの遅延はまだ測定されていないため、現時点では合計時間の上限を示せません（[artifact-registry#1025](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/1025)）。キャッシュはインスタンスごとに存在するため、エントリは独立して期限切れとなり、ロールの変更はフリート全体でアトミックには反映されません。伝播中に呼び出し元が受け取る判定は、どのインスタンスがリクエストを処理するかによって異なります。そのため、リクエストが 1 回拒否されただけでは、取り消しが反映されたことの証明にはなりません。
 - **目標状態**: auth platform の情報付加レイヤーがロール割り当てを解決し、情報を付加したトークンに認可クレームを含めるため、ルックアップは不要になります。ADR-020 がこの ADR に委ねているそれらのクレームの形は、情報付加レイヤーが出荷されるときに定義されます。
 
 ### 認可フロー {#authorization-flow}
@@ -315,7 +317,7 @@ sequenceDiagram
 
 ### アクセスルール {#access-rules}
 
-アクセスルールにより、管理者は_どのロールがアーティファクト権限を保持するか_を、namespace、リポジトリ、またはパターンに一致するアーティファクト上で、プリンシパルを指定せずに引き締められます。これは、特定のアーティファクトを保護すること、重複アップロードを許可または防止することという 2 つの顧客ユースケースを扱います。ポリシーエンジン（R4）向けのユーザー定義ポリシーとしてモデル化され、組み込みデフォルトを引き締めることだけができ、広げることはできません。この機能とともに導入される専用の `*_access_rule` 権限セットを通じて管理されます。これらは延期されるため、クローズドベータではリポジトリごとに権限を引き締めることはできません。
+アクセスルールにより、Artifact Admin は_どのロールがアーティファクト権限を保持するか_を、namespace、リポジトリ、またはパターンに一致するアーティファクト上で、プリンシパルを指定せずに引き締められます。これは、特定のアーティファクトを保護すること、重複アップロードを許可または防止することという 2 つの顧客ユースケースを扱います。ポリシーエンジン（R4）向けのユーザー定義ポリシーとしてモデル化され、組み込みデフォルトを引き締めることだけができ、広げることはできません。この機能とともに導入される専用の `*_access_rule` 権限セットを通じて管理されます。これらは延期されるため、クローズドベータではリポジトリごとに権限を引き締めることはできません。
 
 ### カスタムロール {#custom-roles}
 

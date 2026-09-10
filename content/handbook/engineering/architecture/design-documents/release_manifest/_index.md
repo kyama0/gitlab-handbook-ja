@@ -9,9 +9,9 @@ dris: ["@skarbek"]
 coaches: ["@nolith", "@skarbek"]
 toc_hide: false
 upstream_path: /handbook/engineering/architecture/design-documents/release_manifest/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-lastmod: "2026-08-18T15:21:26-04:00"
-translated_at: "2026-09-04T08:02:21+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-08T18:17:26-04:00"
+translated_at: "2026-09-10T11:03:04+00:00"
 translator: codex
 stale: false
 ---
@@ -85,7 +85,7 @@ flowchart LR
 ## データモデル {#data-model}
 
 {{% alert %}}
-データモデルが確定したら、以下のエントリを [JSON Schema](https://json-schema.org/) に変換し、CI でのデータの自動検証に使用できるようにします。
+以下のデータモデルは [JSON Schema](https://gitlab.com/gitlab-org/release/manifests/schema/-/blob/main/json-schemas/release-manifest.schema.json) として公開されています。両方のマニフェストプロジェクトで、CI によりすべてのファイルをこのスキーマに照らして検証します。プロジェクトについては[保存先](#storage)を参照してください。
 {{% /alert %}}
 
 ### 可変カタログ {#mutable-catalog}
@@ -151,10 +151,32 @@ flowchart LR
 
 ```
 
+## 保存先 {#storage}
+
+リリースマニフェストは、`gitlab-org/release/manifests` 配下の 3 つの専用プロジェクトに置かれています。モジュールの作成者と利用者は、ここから確認してください。
+
+| プロジェクト | 内容 | 可視性 |
+| --- | --- | --- |
+| [`manifests/unreleased`](https://gitlab.com/gitlab-org/release/manifests/unreleased) | 可変カタログ。コンポーネントごとに 1 ファイルを `{major}/{minor}/{patch}/{module-id}.json` に保存します | 非公開。社内の利用者は Delivery: Release and Deploy チームに、Reporter ロールでのグループ共有を依頼します |
+| [`manifests/released`](https://gitlab.com/gitlab-org/release/manifests/released) | 不変レコード。公開済み GitLab リリースごとに 1 ファイルを `{major}/{minor}/{patch}.json` に保存します | 公開 |
+| [`manifests/schema`](https://gitlab.com/gitlab-org/release/manifests/schema) | 両方の層で検証に使用する [JSON Schema](https://gitlab.com/gitlab-org/release/manifests/schema/-/blob/main/json-schemas/release-manifest.schema.json) | 公開 |
+
+どちらのデータプロジェクトでも、人が `main` に直接プッシュすることはありません。`main` のプッシュ許可リストには、リリース自動化ボットだけが登録されています。人が行う変更はマージリクエストを経由する必要があり、そこで CI チェックによって取り込みの可否を判定します。両プロジェクトとも、すべてのファイルをスキーマに照らして検証します。さらに、レコードのプロジェクトでは既存のレコードファイルを変更するマージリクエストを失敗させることで、「公開後は不変」というゴール（[ゴール](#goals)を参照）を慣例ではなく仕組みで強制します。意図的な訂正は引き続き可能です。その場合は `record-change-approved` ラベルが必要で、ラベルがあればジョブは成功し、変更したファイル名を示す監査コメントを投稿します。
+
+### エントリの書き込み方法 {#how-entries-are-written}
+
+リリースマニフェストへの書き込みは、別々の 2 つのイベントによって、それぞれ異なるプロジェクトに対して行われます。
+
+**モジュールのバージョンが公開されるとき。** [release-tools](https://gitlab.com/gitlab-org/release-tools) が、今後公開予定の GitLab バージョンごとに、そのモジュールのエントリを[可変カタログ](https://gitlab.com/gitlab-org/release/manifests/unreleased)に追加します。書き込みは GitLab のリリースを待たず、他のモジュールにも影響しません。これにより、モジュールのリリースサイクルを GitLab のリリーススケジュールから独立させます（[ゴール](#goals)を参照）。
+
+**GitLab のバージョンが公開されるとき。** release-tools が、そのバージョンのカタログエントリを[不変レコード](https://gitlab.com/gitlab-org/release/manifests/released)の 1 つのファイルに固定し、同じエントリを次のバージョンのカタログに引き継ぎます。それ以降、その固定されたファイルが当該 GitLab バージョンの参照情報となり、変更されることはありません。
+
+エントリを引き継ぐことで、モジュールが再び公開されるまで、最後に公開されたバージョンをカタログ内に保持します。リリース頻度の低いモジュールも後のレコードに引き続き含まれ、サイクル中にモジュールが公開された場合は、そのエントリが置き換わります。
+
 ## 関連ドキュメント {#related-documents}
 
 1. [GitLab R&D Summit 2026 - Release Manifest Demo（GitLab Delivery）- Google Slides](https://docs.google.com/presentation/d/1jLXML2-2vIdtJ9TflasVgZtaoAs02WFS4M5oQ8c9dg4/edit?slide=id.g12b319f6181_0_0#slide=id.g12b319f6181_0_0)
-1. デモで使用したリポジトリとコンテンツ
+1. デモで使用したリポジトリとコンテンツ。[保存先](#storage)に示した本番プロジェクトに置き換えられています
    1. [可変カタログ](https://gitlab.com/gitlab-org/release/demo-release-manifests/unreleased/-/blob/main/19/0/5/gitaly.json)
    1. [不変レコード](https://gitlab.com/gitlab-org/release/demo-release-manifests/released/-/blob/main/releases/19/1/1.json)
 1. [実装の詳細とコンポーネントの変更](https://gitlab.com/groups/gitlab-com/gl-infra/software-delivery/-/work_items/39#note_3587819537)

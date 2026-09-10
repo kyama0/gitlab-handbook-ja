@@ -3,9 +3,9 @@ title: "GitLab Linux オンボーディング 101"
 aliases:
   - /handbook/security/corporate/end-user-services/onboarding101/linux-onboarding101/
 upstream_path: /handbook/eta/corporate-it/end-user-services/onboarding101/linux-onboarding101/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:14:51+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-09T20:42:55Z"
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: codex
 stale: false
 ---
@@ -44,7 +44,7 @@ Linux ユーザーには、セキュリティポリシーに準拠しながら�
 Okta にログインするには、以下のセキュリティ要件を満たす必要があります:
 
 1. **フルディスク暗号化:** LUKS 暗号化を有効にする必要があります
-1. **ホスト名:** ラップトップのホスト名が標準の命名規則と一致している必要があります
+1. **ホスト名:** ラップトップのホスト名が標準の命名規則と一致している必要があります。手順は [Linux ホスト名変更スクリプト](https://gitlab.com/gitlab-com/gl-security/corp/engineering/corpsecdevices.gitlab.io/-/blob/main/docs/Tech_Stack/Fleet/Linux_Rename_Script.md)を参照してください
 1. **Fleet:** デバイス管理をインストールする必要があります
 1. **EDR:** CrowdStrike Falcon または SentinelOne（ドイツ、オランダ、イタリア、オーストリアのみ）をインストールする必要があります
 

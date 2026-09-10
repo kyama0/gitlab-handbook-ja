@@ -3,11 +3,11 @@ title: Salesforce フィールドロギング要件
 description: >-
   ソリューションアーキテクトのための、必須となる Salesforce フィールド、データキャプチャ要件、正確な商談トラッキングを維持するためのベストプラクティスに関する包括的なガイド。
 upstream_path: /handbook/solutions-architects/processes/activity-capture/sfdc-logging/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:03:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-09-08T18:38:30-04:00"
 ---
 
 ## 概要
@@ -67,7 +67,7 @@ SA Validated Tech Evaluation Close Details は、評価の結果に対する追�
 - 1〜2行を使用した結果の簡潔な要約であるべきです
 - **SA Validated Tech Evaluation End Date** および **SA Validated Tech Evaluation Close Status** を伴うべきです
 
-## Technical Health and Feasibility Rating
+## 技術的な健全性と実現可能性の評価 {#technical-health-and-feasibility-rating}
 
 SA Feasibility Rating は、ソリューションアーキテクトが **商談の技術的な健全性と進捗** を評価するために使用する評価ツールです。Red-Yellow-Green の評価システムを使用して、商談のプリセールス予測におけるリスクや好ましさのレベルを示し、追加の注意が必要な場所を示します。
 
@@ -113,7 +113,7 @@ SA Feasibility Rating は、**SA Feasibility Review Date** 時点でのソリュ
 - 大幅なタイムラインの遅延
 - カスタマーサクセスプランに重要な情報が欠如
 - 顧客や見込み顧客における組織変更からの不確実性
-- 1〜2 個の顧客 [ペルソナ](/handbook/solutions-architects/processes/activity-capture/activity-logging/#logging-an-activity)（Development、QA、Operations、Security、DevOps、Infrastructure）に閉じ込められたエンゲージメント
+- 1〜2 個の顧客 [ペルソナ](/handbook/solutions-architects/processes/activity-capture/activity-logging)（Development、QA、Operations、Security、DevOps、Infrastructure）に閉じ込められたエンゲージメント
 - テクニカルチャンピオンが特定されているが気を取られている
 - エグゼクティブが特定されているがエンゲージメントが限定的
 - 取引サイクルが早すぎて十分な情報がない商談
@@ -127,7 +127,7 @@ SA Feasibility Rating は、**SA Feasibility Review Date** 時点でのソリュ
 - 個別調整されたデモやハンズオンワークショップを通じた重要な顧客エンゲージメント
 - 承認された Proof of Value が順調
 - よく文書化されたカスタマーサクセスプラン
-- 顧客 [ペルソナ](/handbook/solutions-architects/processes/activity-capture/activity-logging/#logging-an-activity)（Development、QA、Operations、Security、DevOps、Infrastructure）全体での整合
+- 顧客 [ペルソナ](/handbook/solutions-architects/processes/activity-capture/activity-logging)（Development、QA、Operations、Security、DevOps、Infrastructure）全体での整合
 - 明白で強くエンゲージしているテクニカルチャンピオン
 - 強いエグゼクティブエンゲージメント
 - Product、Professional Services、Field CTO などのクロスファンクショナルな GitLab チームからの強いエンゲージメント
@@ -170,13 +170,13 @@ SA Feasibility はステージ 3〜4で最も適用可能です。ステージ 3
 
 - **シンプルなアドオン、計画的成長、更新:**
   - SA Feasibility Rating: Green
-  - SA Feasibility Details: Engagement not required
+  - SA Feasibility Details: エンゲージメントは不要
 - **時期尚早:**
   - SA Feasibility Rating: Yellow
-  - SA Feasibility Details: Not engaged yet and don't know enough
+  - SA Feasibility Details: まだエンゲージしておらず、十分な情報がない
 - **エンゲージしていない:**
   - SA Feasibility Rating: Red
-  - SA Feasibility Details: Not engaged at all but should have been
+  - SA Feasibility Details: エンゲージすべきだったが、まったくエンゲージしていない
 
 #### 更新頻度
 
@@ -256,7 +256,7 @@ Rattle を通じた活動ロギングの詳細な手順については、[活動
 
 - 日付に正確に
 - 明確で簡潔な説明を使用
-- 商談全体での一貫性を維持
+- 商談間での一貫性を維持
 
 #### 完全性
 
@@ -286,7 +286,7 @@ Rattle を通じた活動ロギングの詳細な手順については、[活動
 
 ## クローズした商談の更新
 
-商談がクローズしているがフィールドの更新が必要な場合、Sales Operation に必要な更新を依頼できます: 追加の詳細についてはハンドブックの「[Requesting Internal Support](/handbook/sales/field-operations/requesting-internal-support/)」セクションを参照してください。
+商談がクローズしているがフィールドの更新が必要な場合、Sales Operation に必要な更新を依頼できます: 追加の詳細についてはハンドブックの「[社内サポートの依頼](/handbook/sales/field-operations/requesting-internal-support/)」セクションを参照してください。
 
 1. 更新が必要なクローズした商談に移動
 2. **「Request Support」** ボタンをクリック

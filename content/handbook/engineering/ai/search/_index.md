@@ -1,19 +1,19 @@
 ---
-title: グローバル検索グループ
-description: "グローバル検索チームは、GitLab.com および自己管理インスタンスにワールドクラスの検索機能を提供することに注力しています。"
+title: Global Search グループ
+description: "Global Search チームは、GitLab.com および自己管理インスタンスにワールドクラスの検索機能を提供することに注力しています。"
 upstream_path: /handbook/engineering/ai/search/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-lastmod: "2026-05-22T14:47:44+02:00"
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-10T09:56:03+02:00"
+translated_at: "2026-09-10T11:09:19+00:00"
 translator: claude
 stale: false
 ---
 
 ## ビジョン
 
-グローバル検索グループは、GitLab.com および自己管理インスタンスにワールドクラスの検索機能を提供することに注力しています。
+Global Search グループは、GitLab.com および自己管理インスタンスにワールドクラスの検索機能を提供することに注力しています。
 
-このページでは、グローバル検索グループに固有のプロセスと情報を扱います。あわせて [Global Search](https://about.gitlab.com/direction/global-search/) および [Code Search](https://about.gitlab.com/direction/global-search/code-search/) のディレクションページも参照してください。
+このページでは、Global Search グループに固有のプロセスと情報を扱います。あわせて [Global Search](https://about.gitlab.com/direction/global-search/) および [Code Search](https://about.gitlab.com/direction/global-search/code-search/) のディレクションページも参照してください。
 
 ## ミッション
 
@@ -21,7 +21,6 @@ stale: false
 
 加えて、私たちは以下を含む重要な AI コンテキストインフラストラクチャの構築・保守を行います。
 
-- **AI Context Abstraction Layer**: 複数のベクターデータベース（Elasticsearch、OpenSearch、pgvector を備えた PostgreSQL）にまたがる Retrieval Augmented Generation (RAG) のための統一インターフェース。基盤となるストレージにかかわらず AI 機能を動作させます。
 - **GitLab Zoekt**: GitLab のスケーラブルな完全一致コード検索サービスおよびファイルベースのデータベースシステム。従来の検索を超えたさまざまな AI コンテキストのユースケースをサポートする柔軟なアーキテクチャを備えています。オープンソースのコード検索エンジン Zoekt の上に構築されています。
 
 これらのシステムは、Retrieval Augmented Generation の取り組みを通じて AI 機能に高品質なコンテキストを提供するための基盤となります。これには以下が含まれます。
@@ -35,15 +34,27 @@ stale: false
 
 ## チームメンバー
 
-以下のチームメンバーは、グローバル検索グループの常設メンバーです。
+以下のチームメンバーは、Global Search グループの常設メンバーです。John Mason がこのグループの Engineering Manager 代行です。
 
-{{< team-by-manager-slug manager="cliu" role="Global Search|Core Platform" >}}
+<!--
+This list is maintained by hand. `group-by-slugs` matches each argument exactly against the
+`slug` field in team.yml, and a slug that no longer matches is skipped silently -- the page
+builds green with that person simply missing. Re-check the slugs whenever membership changes.
+
+Slugs come from the file names under data/team_members/person in
+https://gitlab.com/gitlab-com/www-gitlab-com
+
+The same roster is also listed by hand on
+content/handbook/engineering/data-engineering/analytics/platform-insights.md -- update both.
+-->
+
+{{< group-by-slugs john-mason rkumar555 siddharthdungarwal >}}
 
 ## ステーブルカウンターパート
 
 以下の他の機能チームのメンバーは、私たちのステーブルカウンターパートです。
 
-| **Name**                                                 | **Role** |
+| **名前**                                                 | **ロール** |
 | ---------------------------------------------------------| ------------------------------------------------------------------------------- |
 | [Ashraf Khamis](/handbook/company/team#ashrafkhamis)     | [Senior Technical Writer](/job-description-library/product/technical-writer/) |
 | [Cleveland Bledsoe Jr](/handbook/company/team#cleveland) | [Senior Support Engineer](/job-description-library/engineering/support-engineer/) |
@@ -51,19 +62,18 @@ stale: false
 
 ## 共有責任
 
-グローバル検索チームは、![Retrieval Augmented Generation](/images/handbook/engineering/ai/search/rag_ownership_framwework.png) (RAG) の領域で AI Framework チームと責任を共有しています。具体的には、RAG プロセスのデータ準備段階と情報取得段階で協力します。
+Global Search チームは、![Retrieval Augmented Generation](/images/handbook/engineering/ai/search/rag_ownership_framwework.png) (RAG) の領域で AI Framework チームと責任を共有しています。具体的には、RAG プロセスのデータ準備段階と情報取得段階で協力します。
 
 ## AI コンテキストインフラストラクチャと Advanced Search のデータストア
 
 ![グローバル検索のデータストアとインターフェースの図](/images/global_search_interfaces.png)
 
-グローバル検索チームは、従来の検索と AI コンテキスト機能の両方を支えるいくつかの主要システムを保守しています。
+Global Search チームは、従来の検索と AI コンテキスト機能の両方を支えるいくつかの主要システムを保守しています。
 
 ### コアインフラストラクチャコンポーネント
 
 - **Elasticsearch**: 全文検索、集計、ベクター類似度検索の機能を備えた Advanced Search 機能を支えます
 - **GitLab Zoekt**: GitLab のスケーラブルなファイルベースのデータベースシステムで、エンタープライズ規模のパフォーマンス（GitLab.com で 48 TiB 以上をインデックス化）で完全一致コード検索を提供します。コード検索を超えて、Zoekt の柔軟なアーキテクチャはさまざまな AI コンテキストのユースケースの基盤として機能します
-- **AI Context Abstraction Layer**: 複数のベクターデータベース（Elasticsearch、OpenSearch、pgvector を備えた PostgreSQL）にまたがる RAG を可能にする統一された Ruby gem インターフェースで、基盤となるストレージソリューションにかかわらず AI 機能を動作させます
 
 これらのシステムは連携して、従来のキーワード検索から AI 機能向けの高度なベクター類似度マッチングまで、包括的な検索と AI コンテキストの機能を提供します。
 
@@ -76,7 +86,7 @@ GitLab のグローバル検索機能を支えるだけでなく、Advanced Sear
 - **分析とインサイトを支える**: プライマリデータベースのパフォーマンスに影響を与えることなく、大規模なデータセットから集計、統計、インサイトを生成する
 - **AI および ML ワークフローをサポートする**: AI 機能に不可欠なベクター類似度検索、埋め込みの保存、取得機能を提供する
 
-このフレームワークアプローチにより、機能チームは、グローバル検索チームが保守する実戦で鍛えられたスケーラブルな検索インフラストラクチャを活用しながら、自身のドメインの専門性に集中できます。
+このフレームワークアプローチにより、機能チームは、Global Search チームが保守する実戦で鍛えられたスケーラブルな検索インフラストラクチャを活用しながら、自身のドメインの専門性に集中できます。
 
 ### ベーシック検索に関する注記
 
@@ -88,23 +98,23 @@ Advanced Search のインターフェースを通じて、多くのデータタ�
 
 | データタイプ / スコープ | プライバシー / 権限 | ネームスペース横断 / グループ横断検索 | キーワード検索 | 類似度検索 & 埋め込み | メタデータフィルタリング |
 |-------------------|-----------------------|-----------------------------------------|----------------|--------------------------------|--------------------|
-| **Code** | Yes | Yes | Yes | 進行中 | Group、Project、アーカイブの含む/除外、フォークの含む/除外、Language、Filename、Path、Extension |
-| **Issues** | Yes | Yes | Yes | Yes | Group、Project、Status、Confidentiality、Labels、アーカイブの含む/除外 |
-| **Merge requests** | Yes | Yes | Yes | No | Group、Project、Status、アーカイブの含む/除外 |
-| **Epics** | Yes | Yes | Yes | No | Group、Project |
-| **Comments** | Yes | Yes | Yes | No | Group、Project、アーカイブの含む/除外 |
-| **Users** | Yes | Yes | Yes | No | Group、Project |
-| **Commits** | Yes | Yes | Yes | No | アーカイブの含む/除外 |
-| **Milestones** | Yes | Yes | Yes | No | Group、Project、アーカイブの含む/除外 |
-| **Project** | Yes | Yes | Yes | No | Group |
-| **Wiki** | Yes | Yes | Yes | No | Group、Project |
+| **コード** | はい | はい | はい | 進行中 | Group、Project、アーカイブの含む/除外、フォークの含む/除外、Language、Filename、Path、Extension |
+| **Issue** | はい | はい | はい | はい | Group、Project、Status、Confidentiality、Labels、アーカイブの含む/除外 |
+| **マージリクエスト** | はい | はい | はい | いいえ | Group、Project、Status、アーカイブの含む/除外 |
+| **エピック** | はい | はい | はい | いいえ | Group、Project |
+| **コメント** | はい | はい | はい | いいえ | Group、Project、アーカイブの含む/除外 |
+| **ユーザー** | はい | はい | はい | いいえ | Group、Project |
+| **コミット** | はい | はい | はい | いいえ | アーカイブの含む/除外 |
+| **マイルストーン** | はい | はい | はい | いいえ | Group、Project、アーカイブの含む/除外 |
+| **プロジェクト** | はい | はい | はい | いいえ | Group |
+| **Wiki** | はい | はい | はい | いいえ | Group、Project |
 
 ## ミーティング
 
 可能な限り、私たちは Issue、マージリクエスト、Slack を使って非同期でコミュニケーションすることを好みます。ただし、対面のミーティングは、個人的なつながりを築いたり、ブロッカーなど同期的に議論したほうが効率的な項目に対処したりするのに役立ちます。
 
-- グローバル検索グループは毎週火曜日 14:00 UTC にミーティングを行います。
-- グローバル検索グループは、毎週木曜日 12:30 UTC にオープンディスカッションアワーも設けています。
+- Global Search グループは毎週火曜日 14:00 UTC にミーティングを行います。
+- Global Search グループは、毎週木曜日 12:30 UTC にオープンディスカッションアワーも設けています。
 
 ## ワーク
 
@@ -183,16 +193,16 @@ Advanced Search のインターフェースを通じて、多くのデータタ�
 
 ### MR レビュー
 
-私たちは、グローバル検索チームの MR のレビューを行う際に以下のガイドラインを設けています。
+私たちは、Global Search チームの MR のレビューを行う際に以下のガイドラインを設けています。
 
-- MR の作成者は、初回レビューまたはメンテナーレビューをグローバル検索チームのメンバーが行うべきかを判断する責任を負い、コメントまたはレビュアーのアサインによってそれを示すことができます。
+- MR の作成者は、初回レビューまたはメンテナーレビューを Global Search チームのメンバーが行うべきかを判断する責任を負い、コメントまたはレビュアーのアサインによってそれを示すことができます。
 - ドラフトステータスは、MR がマージの準備ができていないことを示しますが、作成者はドラフトモードのままレビュアーをアサインすることを決めても構いません。レビューが緊急でない限り、作成者はレビュアーをアサインする前にパイプラインが通過するのを待つべきです。
 - 私たちはレビューコメントで効果的にコミュニケーションするために [Conventional Comments](https://conventionalcomments.org/) を使用します。
 - マージリクエストの作成者は、完全に対処したと感じ、すべてのディスカッションがクローズされたスレッドのみを解決します。それ以外はレビュアーが解決します。マージリクエストに多くのスレッドがある場合、レビュアーがオープンなスレッドに戻って、以前のディスカッションが残されていたところから再開すると役立ちます。
 
 ### オンコールエスカレーションのカバレッジ
 
-グローバル検索チームは Elasticsearch などの特別なドメイン知識を必要とするため、
+Global Search チームは Elasticsearch などの特別なドメイン知識を必要とするため、
 人員が不足しているとき、特に休暇シーズン中には、このドメイン知識を持つチームメンバーを
 他のグループから借りてオンコールエスカレーションをカバーします。一般的に、ドメインの専門知識を要する
 エスカレーションについては [Tier 2 オンコールプログラム](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/)
@@ -221,10 +231,10 @@ SRE と Tier 2 のオンコールエンジニアが本番のインシデント�
 
 ### 共通リンク
 
-- [グローバル検索チームのマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1339901?label_name[]=group%3A%3Aglobal%20search)
-- [グローバル検索チームのワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/4440461?not[label_name][]=UX%20Paper%20Cuts&label_name[]=group%3A%3Aglobal%20search&milestone_title=Started)
-- [グローバル検索チームのエピック](https://gitlab.com/groups/gitlab-org/-/epics?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Aglobal%20search)
-- グローバル検索チームの Slack チャンネル（社内）[#g_global_search](https://gitlab.slack.com/app_redirect?channel=g_global_search)
+- [Global Search チームのマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1339901?label_name[]=group%3A%3Aglobal%20search)
+- [Global Search チームのワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/4440461?not[label_name][]=UX%20Paper%20Cuts&label_name[]=group%3A%3Aglobal%20search&milestone_title=Started)
+- [Global Search チームのエピック](https://gitlab.com/groups/gitlab-org/-/epics?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Aglobal%20search)
+- Global Search チームの Slack チャンネル（社内）[#g_global_search](https://gitlab.slack.com/app_redirect?channel=g_global_search)
 - [グローバル検索ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?state=all&sort=start_date_asc&layout=MONTHS&timeframe_range_type=CURRENT_YEAR&label_name%5B%5D=group%3A%3Aglobal+search&label_name%5B%5D=Roadmap&progress=COUNT&show_progress=true&show_milestones=false&milestones_type=ALL)
 - [バグレビューボード](https://gitlab.com/groups/gitlab-org/-/boards/2118530?label_name[]=type::bug&label_name[]=group%3A%3Aglobal%20search)
 
@@ -242,30 +252,28 @@ SRE と Tier 2 のオンコールエンジニアが本番のインシデント�
 
 #### 検索と Advanced Search
 
-- [GitLab Elasticsearch Integration](https://docs.gitlab.com/ee/integration/advanced_search/elasticsearch.html)
-- [GitLab Advanced Search Development Guidelines](https://docs.gitlab.com/ee/development/advanced_search.html)
-- [GDK Elasticsearch Setup Instructions](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/elasticsearch.md)
+- [GitLab の Elasticsearch 連携](https://docs.gitlab.com/ee/integration/advanced_search/elasticsearch.html)
+- [GitLab Advanced Search 開発ガイドライン](https://docs.gitlab.com/ee/development/advanced_search.html)
+- [GDK の Elasticsearch セットアップ手順](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/elasticsearch.md)
 
 #### AI コンテキストインフラストラクチャ
 
 - [Zoekt 設計ドキュメント](/handbook/engineering/architecture/design-documents/code_search_with_zoekt/) - 包括的なアーキテクチャと実装の詳細
-- [GDK Zoekt Setup Instructions](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/zoekt.md)
-- [AI Context Abstraction Layer 設計ドキュメント](/handbook/engineering/architecture/design-documents/ai_context_abstraction_layer/) - 統一された RAG インターフェースアーキテクチャ
-- [AI Context Abstraction Layer ソースコード](https://gitlab.com/gitlab-org/gitlab/-/tree/master/gems/gitlab-active-context) - Ruby gem の実装
+- [GDK の Zoekt セットアップ手順](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/zoekt.md)
+- [セマンティックコード検索](/handbook/engineering/ai/ai-core-infra/semantic-code-search/) - ActiveContext フレームワークとコード向け RAG を扱う AI Core Infra チームのページ
 
 ### ブログ記事
 
-- [Lessons from our journey to enable global code search with Elasticsearch on GitLab.com](https://about.gitlab.com/blog/2019/03/20/enabling-global-search-elasticsearch-gitlab-com/)
-- [Update: The challenge of enabling Elasticsearch on GitLab.com](https://about.gitlab.com/blog/2019/07/16/elasticsearch-update/)
-- [Update: Elasticsearch lessons learnt for Advanced Global Search 2020-04-28](https://about.gitlab.com/blog/2020/04/28/elasticsearch-update/)
-- [How the Search Team at GitLab Implemented a Risk Map to Direct Automated Testing Efforts](https://about.gitlab.com/blog/2020/09/03/risk-mapping/)
-- [GitLab's data migration process for Advanced Search](https://about.gitlab.com/blog/2021/06/01/advanced-search-data-migrations/)
+- [GitLab.com で Elasticsearch によるグローバルコード検索を有効化する取り組みから得た教訓](https://about.gitlab.com/blog/2019/03/20/enabling-global-search-elasticsearch-gitlab-com/)
+- [更新: GitLab.com で Elasticsearch を有効化する課題](https://about.gitlab.com/blog/2019/07/16/elasticsearch-update/)
+- [更新: Advanced Global Search 向け Elasticsearch から学んだ教訓 2020-04-28](https://about.gitlab.com/blog/2020/04/28/elasticsearch-update/)
+- [GitLab の Search チームが自動テストの取り組みの方向付けにリスクマップを導入した方法](https://about.gitlab.com/blog/2020/09/03/risk-mapping/)
+- [GitLab の Advanced Search 向けデータマイグレーションプロセス](https://about.gitlab.com/blog/2021/06/01/advanced-search-data-migrations/)
 
 ### 製品デモ
 
-- [GitLab search with Custom Search Engines](https://www.youtube.com/watch?v=YESlLDxHH4o)
-- [Use the GitLab search bar to navigate](https://www.youtube.com/watch?v=OE9b0Qc6KaI)
-- [Search suggestions for recently viewed issues and merge requests](https://www.youtube.com/watch?v=_5s4ZjnDZPo)
-- [How to search for epics in GitLab](https://www.youtube.com/watch?v=bu6kaBqcYFc)
-- [Elasticsearch Migrating Issues To Separate Index Technical Overview](https://youtu.be/1znFvPH_wjU)
-</content>
+- [カスタム検索エンジンによる GitLab 検索](https://www.youtube.com/watch?v=YESlLDxHH4o)
+- [GitLab の検索バーで移動する](https://www.youtube.com/watch?v=OE9b0Qc6KaI)
+- [最近閲覧した Issue とマージリクエストの検索候補](https://www.youtube.com/watch?v=_5s4ZjnDZPo)
+- [GitLab でエピックを検索する方法](https://www.youtube.com/watch?v=bu6kaBqcYFc)
+- [Elasticsearch の Issue を独立したインデックスに移行する技術概要](https://youtu.be/1znFvPH_wjU)

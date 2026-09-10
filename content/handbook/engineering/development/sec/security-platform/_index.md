@@ -4,9 +4,9 @@ description: >-
   Security Platform ステージは、GitLab プラットフォームの認証、認可、不正利用防止、
   シークレット管理、ソフトウェアサプライチェーンの基盤を構築します。
 upstream_path: /handbook/engineering/development/sec/security-platform/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T15:10:33+03:00"
-translated_at: "2026-08-14T06:13:39+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-08T22:02:15Z"
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: codex
 stale: false
 ---
@@ -26,9 +26,9 @@ Security Platform エンジニアリングステージは、GitLab の他のす�
 
 | グループ | Engineering Manager | Tech Lead | ラベル |
 | --- | --- | --- | --- |
-| [Authentication](authentication/) | Adil Farrukh（`@adil.farrukh`） | Smriti Garg（`@sgarg_gitlab`） | `group::authentication` |
-| [GATE Infra](gate-infra/) | Adil Farrukh（`@adil.farrukh`） | Matthias Käppler（`@mkaeppler`） | `group::gate infra` |
-| [GATE Core](gate-core/) | Adil Farrukh（`@adil.farrukh`） | Shilpa Kundapur（`@skundapur`） | `group::gate core` |
+| [Authentication](authentication/) | Mike Eddington（`@mikeeddington`） | Smriti Garg（`@sgarg_gitlab`） | `group::authentication` |
+| [GATE Infra](gate-infra/) | Mike Eddington（`@mikeeddington`） | Matthias Käppler（`@mkaeppler`） | `group::gate infra` |
+| [GATE Core](gate-core/) | Mike Eddington（`@mikeeddington`） | Shilpa Kundapur（`@skundapur`） | `group::gate core` |
 | [Authorization](authorization/) | Jordon Proctor（`@jpr0c`） | Ian Anderson（`@imand3r`） | `group::authorization` |
 | [Abuse Engineering](abuse-engineering/) | Jordon Proctor（`@jpr0c`） | Jay Swain（`@jayswain`） | `group::abuse engineering` |
 | [Build Security](build-security/) | Mark Mishaev（`@mmishaev`、暫定） | 採用予定 | `group::build security` |

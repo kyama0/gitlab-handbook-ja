@@ -1,19 +1,19 @@
 ---
 title: 'Transcend'
 description: 'Transcend のドキュメント'
-upstream_path: "/handbook/eta/css/transcend/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_path: /handbook/eta/css/transcend/
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-21T11:29:58-05:00"
+lastmod: "2026-09-09T13:05:50-05:00"
 ---
 
 ## Transcend を理解する
 
 ### Transcend とは
 
-Transcend は、データプライバシーリクエストを処理するためのツールです。主な利用者は Support Engineers と Privacy チームです。将来的にシステム所有権が別チームへ移る可能性はありますが、現在は Customer Support Systems が管理しています。
+Transcend は、データプライバシーリクエストを処理するためのツールです。主な利用者は Support Engineers と Privacy チームです。
 
 ## Transcend 項目の処理
 

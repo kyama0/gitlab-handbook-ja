@@ -4,9 +4,9 @@ description: >-
   GATE Infra グループは、GitLab Adaptive Trust Environment のインフラストラクチャと
   Cloud Connector v2 を構築および運用します。
 upstream_path: /handbook/engineering/development/sec/security-platform/gate-infra/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T15:10:33+03:00"
-translated_at: "2026-08-14T06:22:26+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-08T22:02:15Z"
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: codex
 stale: false
 ---
@@ -19,7 +19,7 @@ GitLab Adaptive Trust Environment である GATE を構築および運用し、G
 
 | ロール | 担当者 |
 | --- | --- |
-| Engineering Manager | Adil Farrukh（`@adil.farrukh`） |
+| Engineering Manager | Mike Eddington（`@mikeeddington`） |
 | Tech Lead | Matthias Käppler（`@mkaeppler`） |
 
 現在のメンバー情報は Workday を情報源とし、[プロダクトカテゴリページ](/handbook/product/categories/#sec-section)で公開しています。
