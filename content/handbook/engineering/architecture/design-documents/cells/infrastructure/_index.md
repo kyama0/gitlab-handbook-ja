@@ -8,11 +8,11 @@ coach: [ "@andrewn" ]
 status: proposed
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T15:26:53+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:12:52+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-04T14:27:38+12:00"
+lastmod: "2026-09-09T09:42:02+02:00"
 ---
 
 
@@ -281,7 +281,7 @@ together {
 }
 
 
-cloud wss://kas.gitlab.com <<cloudflare>> as kas.gitlab.com {
+cloud grpcs://kas.gitlab.com <<cloudflare>> as kas.gitlab.com {
     component "routing service"
 }
 
@@ -394,7 +394,7 @@ Protocells では、`ring 2` 内に最大 10 個の Cell を目標としてい�
 
 最終的にはリングを使って Cell 環境での[すべての変更の管理](managing_changes.md)に使用します。
 
-#### ステージング
+#### ステージング {#staging}
 
 リングには従来のステージング環境がありません。
 なぜなら、最初のリングで変更をテストできるため、同じ結果が得られるからです。

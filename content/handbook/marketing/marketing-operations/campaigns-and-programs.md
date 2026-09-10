@@ -2,9 +2,9 @@
 title: "キャンペーンとプログラム"
 description: "Campaign は、マーケティング施策の取り組みを追跡するために使用します"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: 4165803c1cf9adeae2826f1af918668be5c942f6
-lastmod: "2026-09-04T16:02:33-06:00"
-translated_at: "2026-09-06T09:49:51+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-09T09:54:36-06:00"
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: codex
 stale: false
 ---
@@ -1008,6 +1008,7 @@ Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の�
 - [#TEMPLATE - FY00_Q0_Brilliant Gifts Direct Mail TEMPLATE](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG24060A1) を適切なフォルダーにクローンし、プログラムの名前を変更します。1 つの地域で実施する場合は、1 回クローンします。複数の地域で実施し、各地域を個別に追跡したい場合は、すべての地域（例: AMER、APJ、EMEA）に必要な数のプログラムをクローンし、メインの [Brilliant Gifts プログラムのフォルダー](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内にある、それぞれの `FYXX_QX` フォルダーに配置します。地域別／子プログラムの命名規則を揃え、プログラム名の末尾に地域タグを追加します（例: `FY00_Q0_Campaign_AMER`）。
 - すべてのプログラムを SFDC に同期します
 - テンプレートについて、いくつか注意点があります。[01 - Processing](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC63769A1ZN19) スマートキャンペーンが実行されるのは、特定のプログラムステータスで、かつ[リードがターゲットリストに含まれる場合のみ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL53588098A1LA1)です。必要に応じてターゲットリストを入れ替えられますが、その場合は必ず処理用のスマートキャンペーンを更新してください。フロー内では、`Meeting Attended` ステータスの場合のみ、リードがメインの Brilliant プログラムの静的リストに送られます。[メインの Brilliant プログラム](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内の適切な `FYXX_QX` フォルダーに新しい静的リストを作成し、クローンした各プログラムのフローステップ 6 に追加する必要があります。フローステップ 4 はリードを `Invite Sent` ステータスでメインの Brilliant プログラムに追加しますが、静的リストはメインのプログラム内での長期的な追跡と整理に使用します
+- 注: Brilliant に接続されたメインプログラムは、SFDC では [Direct_Mail_eGift_Global - Brilliant connected](https://gitlab.lightning.force.com/lightning/r/Campaign/701Qq00001Pkt5sIAB/view) というキャンペーンとして表示されます。配送情報に関するプログラム/キャンペーンステータスは、Marketo プログラムでも SFDC キャンペーンでも確認できます
 
 ### ステップ 2: Marketo プログラムをセットアップする
 

@@ -10,11 +10,11 @@ owning-stage: "~devops::platforms"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/unified_rate_limiting/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T11:55:51+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:12:52+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-02T14:41:23+02:00"
+lastmod: "2026-09-09T10:44:41Z"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
@@ -325,6 +325,7 @@ Self-Managed と GitLab.com は引き続き機能します。呼び出し可能�
 | `gitlab_labkit_rate_limiter_checks_total` | カウンター | `rate_limiter`, `action`, `matched`, `error` | フェイルオープンになる呼び出しを含め、`check` の呼び出しごとに正確に 1 回増加。`action` は呼び出し元向けの判定（`allow`\|`block`）、`matched` と `error` は真偽値フラグです。カーディナリティは低く、レート制限全体の健全性を示します。 |
 | `gitlab_labkit_rate_limiter_rule_evaluations_total` | カウンター | `rate_limiter`, `rule`, `action`, `result` | 評価されたルールごとに 1 回増加。非終端チェーン内のすべてのルールを捕捉します。`action` は設定されたルールアクション（`limit`\|`log`\|`skip`）、`result` は評価で決定された内容（`allow`\|`block`\|`log`\|`skip`\|`banned` — 超過した `log` ルールは `result="log"` と報告し、禁止が有効なルールはアクションにかかわらず `result="banned"` と報告するため、個別の `exceeded` ラベルは不要です）。 |
 | `gitlab_labkit_rate_limiter_peeks_total` | カウンター | `rate_limiter`, `error` | フェイルオープンになる呼び出しを含め、`peek` の呼び出しごとに正確に 1 回増加。`error` は真偽値フラグです。 |
+| `gitlab_labkit_rate_limiter_enforced_total` | カウンター | `rate_limiter`, `rule` | 呼び出し元が `block` に基づいて拒否したリクエストごとに 1 回増加。評価側ではなく呼び出し元が出力します。ロールアウトの制御ではブロック判定を観測しても適用しない場合があり、実際にどちらを行ったかが分かるのは呼び出し元だけだからです。 |
 | `gitlab_labkit_rate_limiter_limit` | ゲージ (`:max`) | `rate_limiter`, `rule` | 設定された閾値。 |
 | `gitlab_labkit_rate_limiter_period_seconds` | ゲージ (`:max`) | `rate_limiter`, `rule` | 設定された期間。 |
 

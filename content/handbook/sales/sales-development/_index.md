@@ -1,10 +1,10 @@
 ---
 title: セールス開発
 description: "このページの目的は、セールス開発組織のハンドブック上のホームページとして機能することです。"
-upstream_path: "/handbook/sales/sales-development/"
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-lastmod: "2026-09-01T11:48:29+01:00"
-translated_at: "2026-09-04T20:59:59+09:00"
+upstream_path: /handbook/sales/sales-development/
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-10T08:59:51+01:00"
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: claude
 stale: false
 ---
@@ -1189,7 +1189,7 @@ President's Club への資格と立場は、各チームメンバー個別の報
 
 ### Sales Dev パフォーマンス管理プロセス
 
-ランプアップしたチームメンバーが連続 2 か月で 80% 未満の達成率の場合、非公式パフォーマンス管理が開始されます。_**パフォーマンス管理検討の場合、Hybrid/Growth PubSec BDR の Stage 1 Net ARR 達成率は 200% でキャップされ、チームメンバーが他のクォータ構成要素でも期待を満たしていることを確実にします。_
+ランプアップしたチームメンバーが連続 2 か月で 80% 未満の達成率の場合、または常態的に期待を下回る成果の場合、非公式パフォーマンス管理が開始されます。_**パフォーマンス管理検討の場合、Hybrid/Growth PubSec BDR の Stage 1 Net ARR 達成率は 200% でキャップされ、チームメンバーが他のクォータ構成要素でも期待を満たしていることを確実にします。_
 
 _**FY27 の本ページの変更について現在 NL WC と協議中です。このプロセスの間、このガイダンスはオランダを拠点とするチームメンバーには適用されません。_
 

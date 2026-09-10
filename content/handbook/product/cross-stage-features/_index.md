@@ -2,11 +2,11 @@
 title: 共有機能・体験領域における協業
 description: "製品グループ向けの協業プロセスと、共有機能領域のドキュメント"
 upstream_path: /handbook/product/cross-stage-features/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:23:48+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T14:39:01+02:00"
+lastmod: "2026-09-09T19:05:36+01:00"
 ---
 
 ## ステージ横断の機能コラボレーション
@@ -129,7 +129,7 @@ lastmod: "2026-08-14T14:39:01+02:00"
 | 統合 | DRI グループ | 理由 |
 |---|---|---|
 | [Slack slash commands](https://docs.gitlab.com/ee/user/project/integrations/slack_slash_commands.html) | group Create:Import | Slack ワークスペースからスラッシュコマンドを実行して GitLab データを操作 |
-| [GitLab for Slack app](https://docs.gitlab.com/ee/user/project/integrations/slack.html) | group Plan:Work Items | Slack スラッシュコマンド統合と Slack 通知統合の組み合わせに、追加のインシデント管理フローを加えたもの |
+| [GitLab for Slack アプリ](https://docs.gitlab.com/ee/user/project/integrations/slack.html) | group Agent Foundations:AI Catalog（External Agents 機能チーム） | Slack スラッシュコマンド統合と Slack 通知統合の組み合わせに、追加のインシデント管理フローを加えたもの。[リリースとマニフェストのプロセス](/handbook/engineering/ai/agent-foundations/ai-catalog/slack-app-release-process/)を参照してください |
 | [Mattermost slash commands](https://docs.gitlab.com/ee/user/project/integrations/mattermost.html) | group Plan:Work Items | Mattermost 環境からスラッシュコマンドを実行して GitLab データを操作 |
 | [Trello PowerUp](https://docs.gitlab.com/ee/integration/trello_power_up.html) | group Plan:Work Items | ボードベースのプロジェクト管理統合 |
 | [Pipeline status emails](https://docs.gitlab.com/ee/user/project/integrations/pipeline_status_emails.html) | group Verify:Pipeline Execution | CI/CD パイプライン通知統合 |

@@ -1,6 +1,6 @@
 ---
 title: "bundle-uri を活用して Gitaly の CPU 負荷を削減する"
-status: ongoing
+status: implemented
 creation-date: "2023-08-04"
 authors: [ "@toon" ]
 coach: ""
@@ -9,11 +9,11 @@ owning-stage: "~devops::systems"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/bundle_uri/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:12:52+00:00"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-09-09T16:58:28+02:00"
 ---
 
 

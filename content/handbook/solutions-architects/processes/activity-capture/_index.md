@@ -3,11 +3,11 @@ title: ソリューションアーキテクチャのデータキャプチャ
 description: >-
   ソリューションアーキテクトはさまざまな方法で顧客 / 見込み顧客の商談に関するデータを収集する責任があります。このページでは、必要となるデータキャプチャの種類と、それぞれの詳細情報がある場所をまとめています。
 upstream_path: /handbook/solutions-architects/processes/activity-capture/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:03:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-27T07:47:25+00:00"
+lastmod: "2026-09-08T18:38:30-04:00"
 ---
 
 ## なぜデータをキャプチャするのか
@@ -72,9 +72,9 @@ lastmod: "2025-01-27T07:47:25+00:00"
 
 さまざまな種類のデータをキャプチャすることで、活動とそのインパクトを包括的に理解できます。以下は、さまざまなデータキャプチャタイプとそのステータス（オプションまたは必須）、および各タイプのキャプチャ方法に関する詳細ガイドへのリンクの簡単な概要です。
 
-### 1. **活動ベースロギング（Rattle）[必須]**
+### 1. **活動ベースロギング（SA Activity Form）[必須]**
 
-- **概要**: Slack と Salesforce と統合された Rattle を使用して、会議や通話などの活動を記録します。
+- **概要**: [GitLab SA Activity Form](https://sa-activity-e4fb10.gitlab.io/)を通じて、会議、通話、イベント、パートナー関連業務などの活動を記録します。2026-09-07 に Rattle に代わり、SA の活動追跡の唯一の方法になりました。
 - **詳細**: [活動ベースロギングガイド](/handbook/solutions-architects/processes/activity-capture/activity-logging)
 
 ### 2. **メールロギング（Gong）[オプション]**
@@ -101,5 +101,5 @@ lastmod: "2025-01-27T07:47:25+00:00"
 
 ## フィードバックと質問
 
-- **フィードバック**: フィードバックテンプレートを使用して、Customer Success, Solutions Architecture Activity Capture プロジェクトに Issue を作成してください。
-- **Slack チャンネル**: ディスカッションと質問のための #rattle-users と #rattle-gitlab。
+- **フィードバック**: フィードバックテンプレートを使用して、Customer Success, Solutions Architecture Activity Capture プロジェクトに Issue を作成してください。SA Activity Form に関するフィードバックには、[sa-activity プロジェクト](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/coe/requests/sa-activity)を使用してください。
+- **ディスカッションと質問**: [sa-activity プロジェクト](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/coe/requests/sa-activity)に Issue を作成するか、チームリーダーに質問してください。

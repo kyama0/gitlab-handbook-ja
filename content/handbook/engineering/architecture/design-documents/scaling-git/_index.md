@@ -9,9 +9,9 @@ owning-stage: "~group::gitaly"
 participating-stages: [ "~group::git" ]
 toc_hide: false
 upstream_path: /handbook/engineering/architecture/design-documents/scaling-git/
-upstream_sha: "a2af0b1d81734a87d89ce13f0302597755181359"
-lastmod: "2026-08-04T10:51:45-07:00"
-translated_at: "2026-08-05T06:33:12+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+lastmod: "2026-09-10T17:59:41+10:00"
+translated_at: "2026-09-10T11:12:52+00:00"
 translator: codex
 stale: false
 ---
@@ -74,24 +74,53 @@ Gitaly はオーケストレーターです。アクティブなマニフェス�
 ```mermaid
 flowchart TB
   client[Client]
-  router[Router]
-  subgraph cluster[Gitaly cluster - stateless nodes]
-    n1[Gitaly node A<br/>local cache]
-    n2[Gitaly node B<br/>local cache]
-    n3[Gitaly node C<br/>local cache]
+  router[<b>Router</b><br/>cache-aware routing, scaling]
+
+  subgraph node[Gitaly node - stateless compute]
+    gitaly[<b>Gitaly</b><br/>orchestrator]
+    git[<b>Git</b><br/>MVCC reference/object backends]
+    cache[<b>Local cache</b><br/>manifests, packs, reftables, indices]
   end
-  os[(Object storage<br/>source of truth)]
+  more[More Gitaly nodes ...]
+
+  subgraph os[Object storage - source of truth]
+    pointer[<b>Manifest pointer</b><br/>mutable<br/>currently active manifest]
+    artifacts[<b>Artifacts</b><br/>immutable<br/>manifests, packs, reftables, indices]
+  end
 
   client --> router
-  router --> n1
-  router --> n2
-  router --> n3
-  n1 <--> os
-  n2 <--> os
-  n3 <--> os
+  router --> gitaly
+  router -.-> more
+  gitaly -->|spawn| git
+  git -->|local file I/O only| cache
+  gitaly -->|resolve / update pointer| pointer
+  gitaly -->|prefetch| artifacts
+  artifacts -->|fetch missing artifacts| cache
+  gitaly -->|upload new artifacts| artifacts
+
+  style more stroke-dasharray: 5 5
 ```
 
-各リポジトリについて、オブジェクトストレージはすべてのアーティファクトとミュータブルなマニフェストポインターを信頼できる唯一の情報源として保持します。Gitaly ノードは、オブジェクトストレージから取り込んだローカルキャッシュディレクトリに対して Git を実行するステートレスなコンピューティングユニットであり、独自の正式な状態を保持しません。Git 自体はネットワーク I/O を行いません。ローカルファイルの読み書きだけを行い、Git から見えるファイルの集合はアクティブなマニフェストによって決まります。ノードの前段では、ルーターが各リクエストをノードに割り当て、対象リポジトリのウォームキャッシュをすでに保持しているノードを優先します。
+各コンポーネントの責任は次のとおりです。
+
+- **オブジェクトストレージ**は、リポジトリデータの信頼できる唯一の情報源です。各リポジトリについて、
+  イミュータブルでコンテンツアドレス指定されたアーティファクトの集合（マニフェスト本体、
+  packfile、reftable、インデックス）と、現在アクティブなマニフェストを指定する単一のミュータブルな
+  マニフェストポインターを保持します。ポインターを進める際は、必ず
+  アトミックな比較交換を使用します。
+- **Git** は、MVCC の参照バックエンドとオブジェクトバックエンドを提供します。独自に
+  ネットワーク I/O を行うことはなく、ローカルファイルの読み書きだけを行います。Git から見えるファイルの集合は、
+  アクティブなマニフェストによって決まります。Git プロセスを特定のマニフェストに
+  ピン留めすると、一貫性のある特定時点のスナップショットが得られます。
+- **Gitaly** は、各コンピューティングノードで動作するステートレスなオーケストレーターです。
+  RPC ごとにマニフェストポインターを解決し、マニフェストで指定されたアーティファクトを
+  ローカルキャッシュへ事前取得し、そのスナップショットにピン留めした Git を起動し、新しく生成された
+  アーティファクトをアップロードし、ポインターを進めることで書き込みを公開します。
+  ローカルディスクはキャッシュとしてのみ機能するため、ノードは正式な状態を保持せず、
+  データを失うことなく破棄できます。
+- **ルーター**はノードの前段にあり、各リクエストをノードに割り当てます。
+  対象リポジトリのウォームキャッシュをすでに保持しているノードを優先します。
+  また、負荷に応じてクラスターをスケールアップ、スケールダウンします。
 
 ## 設計と実装の詳細
 

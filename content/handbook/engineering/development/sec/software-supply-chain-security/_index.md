@@ -1,11 +1,11 @@
 ---
 title: Software Supply Chain Security サブ部門
 upstream_path: /handbook/engineering/development/sec/software-supply-chain-security/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-14T00:19:19+09:00"
+upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
+translated_at: "2026-09-10T11:11:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-09-08T22:02:15Z"
 ---
 
 Software Supply Chain Security サブ部門のチームは、製品の [Software Supply Chain Security ステージ](https://about.gitlab.com/direction/software_supply_chain_security/)におけるエンジニアリングチームです。
@@ -182,7 +182,7 @@ AI 機能（GitLab Duo、AI エージェント、コード生成）は、私た�
 
 ### Authentication
 
-{{% team-by-manager-slug manager="adil.farrukh" team="Engineer(.*)Software Supply Chain Security:Authentication" %}}
+{{% team-by-manager-slug manager="mikeeddington" team="Engineer(.*)Software Supply Chain Security:Authentication" %}}
 
 ### Authorization
 
