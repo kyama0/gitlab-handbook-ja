@@ -1,10 +1,10 @@
 ---
 title: "Developer Advocacy"
 description: "Developer Advocates は、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
-upstream_path: /handbook/marketing/developer-relations/developer-advocacy/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_path: "/handbook/marketing/developer-relations/developer-advocacy/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+lastmod: "2026-09-11T13:54:05+02:00"
+translated_at: "2026-09-11T12:58:54+00:00"
 translator: claude
 stale: false
 ---
@@ -90,7 +90,7 @@ Developer Advocacy は、進化し続ける複雑な分野です。
 1. 業務を遂行するのにより適した別のチームを見つける。
 1. その業務は実施すべきでないという合意に至る。
 
-## <i class="fa fa-users" aria-hidden="true"></i> チームメンバーと注力領域
+## <i class="fa fa-users" aria-hidden="true"></i> チームメンバーと注力領域 {#team-members-and-focus-areas}
 
 私たちは [Developer Relations チーム](/handbook/marketing/developer-relations/)のメンバーです。
 

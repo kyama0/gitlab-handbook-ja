@@ -2,11 +2,11 @@
 title: "エクイティ報酬"
 description: "GitLab のエクイティ報酬について詳しく学ぶ"
 upstream_path: /handbook/total-rewards/stock-options/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:11:55+09:00"
+upstream_sha: 0b4843d337f9f8173d56982fff942cb2b5a78543
+translated_at: "2026-09-11T13:14:29+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-27T15:48:49-07:00"
+lastmod: "2026-09-10T17:36:41-04:00"
 ---
 
 ## GitLab における所有権について
@@ -42,7 +42,7 @@ GitLab は現時点では、オプションの形でエクイティ付与を行�
 
 ### Restricted Stock Unit (RSU) の付与頻度とベスティング
 
-RSU の付与頻度とベスティングについては、以下の [スライドデッキ](https://docs.google.com/presentation/d/1a3iisaLdoMFdujTyh9K2gYB2eOTi1xC2Ul7ycj7HkSg/edit#slide=id.p) を参照してください。
+RSU の付与頻度とベスティングについては、以下の [スライドデッキ](https://docs.google.com/presentation/d/176GjzzcrEpdMz9X5NPD5c_YojhD33KPO5f1jGiG9j8c/edit?slide=id.p#slide=id.p) を参照してください。
 
 ### Sell-to-cover - RSU
 
@@ -170,7 +170,7 @@ RSU、および時にはオプション付与 (オプション付与は2021年9�
 
 RSU は、要求されるサービス要件に基づいてベスティングする、当社の普通株式の付与です。
 
-[SAFE フレームワーク](/handbook/legal/safe-framework/) に従って、エクイティに関する特定の日付をハンドブックに追加しません。付与頻度とベスティングの詳細については、以下の [スライドデッキ](https://docs.google.com/presentation/d/1a3iisaLdoMFdujTyh9K2gYB2eOTi1xC2Ul7ycj7HkSg/edit#slide=id.p) を参照してください。
+[SAFE フレームワーク](/handbook/legal/safe-framework/) に従って、エクイティに関する特定の日付をハンドブックに追加しません。付与頻度とベスティングの詳細については、以下の [スライドデッキ](https://docs.google.com/presentation/d/176GjzzcrEpdMz9X5NPD5c_YojhD33KPO5f1jGiG9j8c/edit?slide=id.p#slide=id.p) を参照してください。
 
 - RSU は対応する付与日にベスティングを開始します。
 - RSU は四半期ごとに承認のためにレビューされます。

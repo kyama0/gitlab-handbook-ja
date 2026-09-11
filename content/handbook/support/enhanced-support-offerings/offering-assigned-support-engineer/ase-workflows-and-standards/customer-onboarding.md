@@ -1,17 +1,25 @@
 ---
 title: ASE アカウントのオンボーディング
 description: ASE サービスを新規に利用するアカウントをオンボーディングするためのワークフロー
-upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T14:51:47+09:00"
+upstream_path: "/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+translated_at: "2026-09-11T13:07:53+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-28T14:38:36-07:00"
+lastmod: "2026-09-10T12:19:48-07:00"
 ---
 
 ## 概要
 
 お客様のアカウントが Assigned Support Engineer (ASE) サービスを含む新規契約を締結すると、サポートチームはお客様のオンボーディングプロセスを開始します。このプロセスを通じて、私たちはお客様とのパートナーシップを開始する際に、円滑でプロフェッショナルな体験を作り、提供することを目指します。これには、お客様およびアカウントチームとの調整、そしてアカウントの新しいステータスについてサポートの他のメンバーへの通知が含まれます。
+
+## 準備
+
+お客様が利用する環境に応じて、適切なプラットフォームのトレーニングを完了していることを確認してください。例は次のとおりです。
+
+1. [GitLab Dedicated](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/.gitlab/issue_templates/GitLab%20Dedicated.md?ref_type=heads)
+1. [GitLab.com / SaaS](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/.gitlab/issue_templates/GitLab-com%20SaaS%20Basics.md?ref_type=heads)
+1. [Self-Managed](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/.gitlab/issue_templates/Self-Managed%20Basics.md?ref_type=heads)
 
 ## お客様とのコミュニケーション
 

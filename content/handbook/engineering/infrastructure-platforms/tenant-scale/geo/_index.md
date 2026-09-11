@@ -2,11 +2,11 @@
 title: "Geo とディザスタリカバリ"
 description: "Geo チームに関する情報"
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/geo/"
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T12:16:50+09:00"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+translated_at: "2026-09-11T12:49:40+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-29T07:56:36+10:00"
+lastmod: "2026-09-11T10:31:43+10:00"
 ---
 
 ## Geo チーム
@@ -23,18 +23,11 @@ lastmod: "2026-08-29T07:56:36+10:00"
 
 ## 目標と優先事項
 
-私たちの優先事項はプロダクトの方向性と整合しています。詳細は [Geo 製品ビジョンページ](https://about.gitlab.com/direction/geo/)でご覧いただけます。
+私たちの優先事項はプロダクトの方向性と整合しています。現在および今後の作業は、[オープンな `group::geo` エピック](https://gitlab.com/groups/gitlab-org/-/epics/?state=opened&label_name%5B%5D=group%3A%3Ageo)で確認できます。
 
-製品ビジョンに記載された項目に加えて、お客様から寄せられる Issue を常に評価する必要があります。これらはバグレポートや機能リクエストの形を取ることがあります。Geo のユーザーは多くの場合、私たちの最大のお客様であり、Geo をワークフローの重要な部分として利用している方もいます。
+これらの優先事項に加えて、お客様から寄せられる Issue を常に評価する必要があります。これらはバグレポートや機能リクエストの形を取ることがあります。Geo のユーザーは多くの場合、私たちの最大のお客様であり、Geo をワークフローの重要な部分として利用している方もいます。
 
 また、ハウスキーピング作業を管理可能なレベルに保つために常に取り組んでいます。可能な限り、関連するプロジェクトの一部としてこれらの Issue に対処します。それが不可能な場合は、プロジェクト間の時間を使ってこれを実現します。
-
-## 目標と主要な結果（OKR）
-
-四半期ごとに、エンジニアリングチームは[目標と主要な結果](/handbook/company/okrs/)を設定します。OKR は FY24-Q1 以降 GitLab で管理されています。以下は Geo の OKR に関する Issue リストへのリンクです。
-
-[OKR FY25-Q2](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=created_date&state=opened&label_name%5B%5D=group%3A%3Ageo&milestone_title=FY25-Q2&first_page_size=20)
-[OKR FY25-Q3](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=created_date&state=opened&label_name%5B%5D=group%3A%3Ageo&milestone_title=FY25-Q3&first_page_size=20)
 
 ## Geo のディザスタリカバリとの関係
 

@@ -1,10 +1,10 @@
 ---
 title: "AI エージェントのセットアップ"
 description: "開発用のエージェント型 AI ツールをセットアップするためのデータチームのガイド"
-upstream_path: /handbook/enterprise-data/ai/agent-setup/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-10T11:16:59-07:00"
-translated_at: "2026-07-14T06:42:18+09:00"
+upstream_path: "/handbook/enterprise-data/ai/agent-setup/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+lastmod: "2026-09-10T21:04:36Z"
+translated_at: "2026-09-11T12:56:16+00:00"
 translator: claude
 stale: false
 ---
@@ -15,11 +15,69 @@ stale: false
 
 データチームには AI 支援開発の標準的なアプローチがありません。このガイドはそのギャップを埋めます。これは複数のチームメイトの間ですでにうまく機能してきた内容に基づいており、ゼロから自分で考え出すのではなく、全員がしっかりとした出発点を持てるようにします。
 
+ここでは、ターミナルベースの 2 つのエージェント、**Claude Code** と **OpenCode** を説明します。どちらもサポートされており、チームのデフォルトは決まっていません。自分のワークフローに合う方を使用してください。チームの共有スキルは [Agent Skills 形式](https://agentskills.io/specification)に従っているため、1 つのローカルクローンをどちらのツールでも使用できます。
+
 このガイドは以下のセットアップを扱います。
 
-- **OpenCode** — ターミナルベースの AI コーディングエージェント
-- **Snowflake/dbt MCP サーバー**（任意ですが、強く推奨します）
+- **Claude Code** と **OpenCode** — ターミナルベースの AI コーディングエージェント
+- **Snowflake CLI と dbt MCP サーバー** — エージェントセッション中のデータアクセス
 - **MacWhisper** — 音声ベースのプロンプト入力（任意）
+
+---
+
+## Claude Code のセットアップ {#claude-code-setup}
+
+より包括的なガイドは[内部ハンドブック](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/claude-code-setup/)にあります。以下の手順は、データチームに特化した簡略版です。
+
+<details>
+<summary><strong>Claude Code のセットアップ手順</strong></summary>
+
+**ステップ 1: Claude Code のインストール**
+
+[Claude Code セットアップガイド](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/claude-code-setup/)に従って Claude Code をインストールします。このガイドでは、インストール、GitLab アカウントでの認証、承認済みの利用ポリシーについて説明しています。
+
+インストールを確認します。
+
+```bash
+claude --version
+```
+
+インストールされたバージョン番号が表示されるはずです。
+
+**ステップ 2: analytics リポジトリから Claude Code を起動**
+
+```bash
+jump analytics
+claude
+```
+
+**ステップ 3: GitLab MCP サーバーを追加**
+
+[GitLab MCP セットアップガイド](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/gitlab-mcp-setup/)に従って GitLab MCP サーバーを追加します。
+
+GitLab MCP サーバーにより、エージェントはセッション中に GitLab を直接操作できます。Issue の読み取り、マージリクエストの作成と更新、レビューコメントの読み取り、パイプラインとジョブのステータス確認が可能になります。Data Team のスキルのいくつかはこのサーバーに依存しています。
+
+接続を確認するには、Claude Code 内で `/mcp` を実行します。GitLab サーバーが接続済みとして表示されるはずです。
+
+**ステップ 4: `plan` をデフォルトモードに設定**
+
+Claude Code セッション内で `/config` を実行して、設定を確認、変更します。ここで変更した内容はすべて Claude Code の設定ファイルに自動的に書き込まれるため、設定ファイルを手動で編集する必要はありません。
+
+`defaultMode` を `plan` に設定します。これにより、デフォルトでより安全で慎重なモードに留まります。実行する準備ができたら、明示的に編集モードに切り替えます。これは、以下で説明する OpenCode のデフォルトエージェント設定に相当する Claude Code の設定です。
+
+あわせて `/config` でモデルと出力スタイルも確認するとよいでしょう。
+
+**ステップ 5: エージェント利用ガイドの確認**
+
+Claude Code の使用を開始する前に、[エージェント利用ガイド](agent-usage-guide.md)を確認して、以下を理解してください。
+
+- エージェントと MCP の仕組み
+- 設定のベストプラクティス（グローバル対プロジェクトレベル）
+- Plan モードを使うタイミング
+- プロンプト入力のベストプラクティスとコンテキスト管理
+- 利用可能なスキルとエージェント
+
+</details>
 
 ---
 
@@ -27,13 +85,20 @@ stale: false
 
 より包括的なガイドは[内部ハンドブック](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/opencode-setup/)にあります。以下の手順は、データチームに特化した簡略版です。
 
-### ステップ 1: OpenCode のインストール {#step-1-install-opencode}
+<details>
+<summary><strong>OpenCode のセットアップ手順</strong></summary>
+
+<span id="step-1-install-opencode"></span>
+
+**ステップ 1: OpenCode のインストール**
 
 ```bash
 curl -fsSL https://opencode.ai/install | bash
 ```
 
-### ステップ 2: インストールの確認 {#step-2-verify-the-installation}
+<span id="step-2-verify-the-installation"></span>
+
+**ステップ 2: インストールの確認**
 
 OpenCode が PATH で利用可能であることを確認します。
 
@@ -55,33 +120,39 @@ opencode --version
 
 インストールされたバージョン番号が表示されるはずです。
 
-### ステップ 3: analytics リポジトリから OpenCode を起動 {#step-3-start-opencode-from-the-analytics-repo}
+<span id="step-3-start-opencode-from-the-analytics-repo"></span>
+
+**ステップ 3: analytics リポジトリから OpenCode を起動**
 
 ```bash
 jump analytics
 opencode
 ```
 
-### ステップ 4: GitLab Duo を AI プロバイダーとして設定 {#step-4-configure-gitlab-duo-as-your-ai-provider}
+<span id="step-4-configure-gitlab-duo-as-your-ai-provider"></span>
+
+**ステップ 4: GitLab Duo を AI プロバイダーとして設定**
 
 GitLab Duo は OAuth を使用します。作成や管理が必要なトークンはありません。
 
 1. OpenCode 内で `/connect` を実行し、**GitLab Duo** を選択します
-2. OpenCode が OAuth フローを完了するためにブラウザを開きます
-3. `@gitlab.com` アカウントでサインインし、アプリを承認します
-4. 自動的に OpenCode にリダイレクトされます
-
-### ステップ 4.5: 接続のテスト {#step-4-5-test-the-connection}
+1. OpenCode が OAuth フローを完了するためにブラウザを開きます
+1. `@gitlab.com` アカウントでサインインし、アプリを承認します
+1. 自動的に OpenCode にリダイレクトされます
 
 接続したら、`hi` と入力して OpenCode が応答することを確認してテストします。
 
-### ステップ 5: Golden Config の適用 {#step-5-apply-the-golden-config}
+<span id="step-5-apply-the-golden-config"></span>
 
-[OpenCode Golden Path](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/golden-configs/opencode/#golden-path-config) の設定を適用します。
+**ステップ 5: Golden Config の適用**
+
+[OpenCode Golden Path](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/golden-configs/opencode/#golden-path-config)の設定を適用します。
 
 > **注:** `opencode.json` ではなく `~/.config/opencode/opencode.jsonc` を使用してください。`.jsonc` 拡張子はコメントを許可するため、設定に注釈を付けるのに便利です。
 
-### ステップ 6: `plan` をデフォルトエージェントに設定 {#step-6-set-plan-as-your-default-agent}
+<span id="step-6-set-plan-as-your-default-agent"></span>
+
+**ステップ 6: `plan` をデフォルトエージェントに設定**
 
 `~/.config/opencode/config.json`（これはステップ 5 の `opencode.jsonc` Golden Config とは別のファイルです）を開き、`default_agent` を追加します。
 
@@ -95,9 +166,11 @@ GitLab Duo は OAuth を使用します。作成や管理が必要なトーク�
 
 これにより、デフォルトでより安全で慎重なモードに留まります。実行する準備ができたら、明示的に Build に切り替えます。
 
-### ステップ 7: Agent Usage Guide の確認 {#step-7-review-the-agent-usage-guide}
+<span id="step-7-review-the-agent-usage-guide"></span>
 
-OpenCode の使用を開始する前に、[Agent Usage Guide](agent-usage-guide.md) を確認して、以下を理解してください。
+**ステップ 7: エージェント利用ガイドの確認**
+
+OpenCode の使用を開始する前に、[エージェント利用ガイド](agent-usage-guide.md)を確認して、以下を理解してください。
 
 - エージェントと MCP の仕組み
 - 設定のベストプラクティス（グローバル対プロジェクトレベル）
@@ -105,67 +178,36 @@ OpenCode の使用を開始する前に、[Agent Usage Guide](agent-usage-guide.
 - プロンプト入力のベストプラクティスとコンテキスト管理
 - 利用可能なスキルとエージェント
 
-### ビデオリソース {#video-resources}
+<span id="video-resources"></span>
+
+**ビデオリソース**
 
 **GitLab Unfiltered** アカウントの使用が必要です。
 
-- [OpenCode Setup Tutorial](https://www.youtube.com/watch?v=80vTUzgQzoY)（3 分 30 秒）
-- [OpenCode Demo](https://www.youtube.com/watch?v=nClVkkI-MFo)（5 分 30 秒）
-
----
-
-## MCP サーバーのセットアップ {#mcp-server-setup}
-
-### Snowflake MCP サーバー（任意ですが強く推奨） {#snowflake-mcp-server-optional-but-highly-recommended}
-
-OpenCode を Snowflake MCP に接続すると、LLM エージェントが OpenCode セッション中に Snowflake を直接クエリできるようになります。
-
-セットアップするには、[setup_mcp_analytics.sh スクリプト](https://gitlab.com/gitlab-data/analytics/-/blob/master/admin/setup_mcp_analytics.sh?ref_type=heads)を次のコマンドで実行します。
-
-```bash
-jump analytics
-git checkout master && git pull && ./admin/setup_mcp_analytics.sh
-```
-
-スクリプトは GitLab のユーザー名と analytics リポジトリのパスの入力を求めます。
-
-> **重要:** スクリプトはコンピューターのログインパスワードの入力を求め、キーチェーンアクセスを要求します。パスワードを入力し、プロンプトが表示されたら **「常に許可」** をクリックしてください。
-
-**接続を確認します。**
-
-OpenCode を起動し（`jump analytics && opencode`）、`hi` と入力して、インターフェースの右側を確認します。Snowflake MCP の名前が「接続済み」を示す緑色のドットとともに表示されているはずです。
-
-<details>
-<summary>作成される内容の詳細</summary>
-
-スクリプトは 2 つのファイルを生成します。
-
-**`~/.config/mcp/snowflake-mcp/snowflake_mcp_config.yml`**
-
-どの Snowflake ツールグループを有効にするか、どの SQL ステートメントタイプを許可するかを制御します。デフォルトでは、オブジェクトの検査とクエリの実行を有効にし、破壊的な操作（`Drop`、`Delete`）を無効にします。
-
-**`~/.config/mcp/snowflake-mcp/snowflake_mcp.env`**
-
-```env
-SNOWFLAKE_USER=<your GitLab email>
-SNOWFLAKE_ACCOUNT=gitlab
-SNOWFLAKE_ROLE=<the portion of your email before the @>
-```
+- [OpenCode セットアップチュートリアル](https://www.youtube.com/watch?v=80vTUzgQzoY)（3 分 30 秒）
+- [OpenCode デモ](https://www.youtube.com/watch?v=nClVkkI-MFo)（5 分 30 秒）
 
 </details>
 
+---
+
+## 他のアプリケーションへの接続
+
+エージェントは、ツールチェーンのより多くのツールにアクセスできるほど役立ちます。以下のセクションでは、データチームが日常的に利用する接続、つまり Snowflake へのクエリと dbt プロジェクトの把握について説明します。
+
+### Snowflake CLI
+
+エージェントは、Data Team におけるローカルからの Snowflake アクセスの標準である [Snowflake CLI](/handbook/enterprise-data/platform/snowflake/snowflake-cli/)（`snow`）を通じて Snowflake にクエリを実行します。インストールと設定は、そのページに従ってください。
+
+`snow connection test` に成功すれば、Claude Code と OpenCode のどちらもセッション中に Snowflake にクエリを実行できます。Claude Code はターミナルで `snow sql` を実行し、OpenCode は組み込みの `snowflake` ツールを使用します。
+
+> **注:** 以前ここで説明していた Snowflake MCP サーバーは保守されなくなり、Snowflake CLI に置き換えられました。以前に MCP サーバーをセットアップした場合も、移行手順はありません。CLI をインストールし、代わりに使用してください。
+
 ### dbt MCP サーバー {#dbt-mcp-server}
 
-上記の `setup_snowflake_mcp.sh` を実行した場合、これはすでに設定されています。スクリプトは次の環境変数を `~/.zshrc` に追加します。
+dbt MCP サーバーにより、エージェントは dbt プロジェクトのモデル構造、リネージュ、ノード詳細を把握できます。これは analytics リポジトリでのみ関係します。
 
-```bash
-# Analytics MCP Environment Variables
-export ANALYTICS_DIR="~/repos/analytics/"
-export DBT_PROJECT_DIR="$ANALYTICS_DIR/transform/snowflake-dbt"
-export DBT_PATH="$DBT_PROJECT_DIR/.venv/bin/dbt"
-```
-
-唯一の他の前提条件は、dbt virtualenv がセットアップされていることです。確認またはセットアップするには:
+まず、dbt virtualenv がセットアップされていることを確認します。
 
 ```bash
 jump analytics
@@ -175,9 +217,28 @@ ls .venv/bin/dbt  # Should show the dbt executable
 
 `ls .venv/bin/dbt` がファイルパスを返せば、準備完了です。
 
+次に、以下を `~/.zshrc` に追加します。analytics リポジトリが別の場所にある場合は、`ANALYTICS_DIR` を調整してください。
+
+```bash
+# Analytics MCP Environment Variables
+export ANALYTICS_DIR="$HOME/repos/analytics"
+export DBT_PROJECT_DIR="$ANALYTICS_DIR/transform/snowflake-dbt"
+export DBT_PATH="$DBT_PROJECT_DIR/.venv/bin/dbt"
+```
+
+エージェントを起動する予定のシェルで `source ~/.zshrc` を実行します。
+
 **接続を確認します。**
 
-OpenCode を起動し（`jump analytics && opencode`）、`hi` と入力して、インターフェースの右側を確認します。dbt MCP の名前が「接続済み」を示す緑色のドットとともに表示されているはずです。
+Claude Code で `/mcp`、または OpenCode で `/mcps` を実行します。dbt サーバーが接続済みとして表示されるはずです。
+
+---
+
+## スキルのセットアップ {#skills-setup}
+
+リポジトリ内でエージェントを実行する場合、そのリポジトリ独自のスキルはセットアップ不要です。エージェントがフロントマターを読み取り、タスクが一致すると呼び出します。
+
+リポジトリ間で共有されるスキルは異なります。それらは [`data-team-agentic-skills`](https://gitlab.com/gitlab-data/data-team-agentic-skills)にあり、エージェントが認識できるようにするには、ローカルのスキルディレクトリにシンボリックリンクを作成する必要があります。リポジトリ独自のスキルが共有スキルを呼び出す場合も同様です。そのリポジトリの README に記載されたセットアップ手順に従ってください。
 
 ---
 
@@ -186,170 +247,3 @@ OpenCode を起動し（`jump analytics && opencode`）、`hi` と入力して�
 詳細なプロンプトを打ち込むのは遅いものです。[MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper) は macOS の音声テキスト変換アプリで、コンテキストを説明したり問題を声に出して考えたりするのをはるかに速くします。特に、入力するより考える時間の方が短くなるような長いプロンプトに有効です。
 
 組み込みの macOS Dictation アプリよりも目に見えて正確で、クラウドベースの文字起こしとは異なり完全にデバイス上で動作するため、データがマシンの外に出ることはありません。
-
-## スキルのセットアップ {#skills-setup}
-
-スキルは、エージェントが自動的に呼び出せる再利用可能なワークフローと規約を提供します。利用可能なすべてのデータチームのスキルを使用するには:
-
-1. 上記の OpenCode セットアップ手順を完了します
-2. 上記の MCP セットアップ手順（Snowflake/dbt）を完了します
-3. [セットアップ手順](https://gitlab.com/gitlab-data/data-team-agentic-skills#setup-opencode)に従って、`data-team-agentic-skills` リポジトリをクローンしてシンボリックリンクします
-
-## OpenCode プラグイン
-
-### OpenCode Notify
-
-[OpenCode Notifier](https://github.com/mohak34/opencode-notifier)は、OpenCode が何らかの入力を求めたときに macOS のネイティブシステム通知を送信するプラグインです。
-
-#### インストール手順
-
-1. `opencode-notifier` プラグインを `~/.config/opencode/opencode.jsonc` に追加します。次のようになります。
-
-   ```jsonc
-   {
-     "$schema": "https://opencode.ai/config.json",
-     "share": "disabled",
-     "autoupdate": true,
-     "plugin": ["@mohak34/opencode-notifier@latest"],
-   ```
-
-1. 任意（ただし推奨）: デフォルトでは、このプラグインはすべてのイベントを通知するため、すぐに煩わしくなります。通知をトリガーするイベントをカスタマイズするには、`~/.config/opencode/opencode-notifier.json` ファイルを作成し、次の設定を貼り付けます。
-
-<details>
-<summary>opencode-notifier.json の設定</summary>
-
-```json
-{
-  "sound": true,
-  "notification": true,
-  "bell": false,
-  "timeout": 5,
-  "showProjectName": true,
-  "showFullPath": false,
-  "showSessionTitle": false,
-  "showIcon": true,
-  "customIconPath": null,
-  "suppressWhenFocused": true,
-  "enableOnDesktop": false,
-  "notificationSystem": "osascript",
-  "suppressGhosttySound": false,
-  "linux": {
-    "grouping": false
-  },
-  "minDuration": 0,
-  "command": {
-    "enabled": false,
-    "path": "/path/to/command",
-    "args": [
-      "--event",
-      "{event}",
-      "--message",
-      "{message}"
-    ],
-    "minDuration": 0
-  },
-  "events": {
-    "permission": {
-      "sound": true,
-      "notification": true,
-      "command": true,
-      "bell": false
-    },
-    "complete": {
-      "sound": false,
-      "notification": false,
-      "command": true,
-      "bell": false
-    },
-    "subagent_complete": {
-      "sound": false,
-      "notification": false,
-      "command": true,
-      "bell": false
-    },
-    "error": {
-      "sound": false,
-      "notification": true,
-      "command": true,
-      "bell": false
-    },
-    "question": {
-      "sound": true,
-      "notification": true,
-      "command": true,
-      "bell": false
-    },
-    "user_cancelled": {
-      "sound": false,
-      "notification": false,
-      "command": true,
-      "bell": false
-    },
-    "plan_exit": {
-      "sound": false,
-      "notification": false,
-      "command": true,
-      "bell": false
-    },
-    "session_started": {
-      "sound": false,
-      "notification": false,
-      "command": true,
-      "bell": false
-    },
-    "user_message": {
-      "sound": false,
-      "notification": false,
-      "command": true,
-      "bell": false
-    },
-    "client_connected": {
-      "sound": false,
-      "notification": false,
-      "command": true,
-      "bell": false
-    }
-  },
-  "messages": {
-    "permission": "Session needs permission: {sessionTitle}",
-    "complete": "Session has finished: {sessionTitle}",
-    "subagent_complete": "Subagent task completed: {sessionTitle}",
-    "error": "Session encountered an error: {sessionTitle}",
-    "question": "Session has a question: {sessionTitle}",
-    "user_cancelled": "Session was cancelled by user: {sessionTitle}",
-    "plan_exit": "Plan ready for review: {sessionTitle}",
-    "session_started": "Session started: {sessionTitle}",
-    "user_message": "User sent a message: {sessionTitle}",
-    "client_connected": "OpenCode connected"
-  },
-  "sounds": {
-    "permission": null,
-    "complete": null,
-    "subagent_complete": null,
-    "error": null,
-    "question": null,
-    "user_cancelled": null,
-    "plan_exit": null,
-    "session_started": null,
-    "user_message": null,
-    "client_connected": null
-  },
-  "volumes": {
-    "permission": 0.5,
-    "complete": 1,
-    "subagent_complete": 1,
-    "error": 1,
-    "question": 0.5,
-    "user_cancelled": 1,
-    "plan_exit": 1,
-    "session_started": 1,
-    "user_message": 1,
-    "client_connected": 1
-  }
-}
-```
-
-</details>
-
-1. `opencode-notifier` プラグインを読み込むため、OpenCode を再起動します。
-1. 検証: 権限プロンプトをトリガーします（例: OpenCode に `rm ~/Downloads/some-file.csv` の実行を依頼します）。音が鳴り、画面右上に通知バナーが表示されるはずです。タスク完了時には通知されないはずです。

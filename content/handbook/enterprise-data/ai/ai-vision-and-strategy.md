@@ -1,12 +1,12 @@
 ---
 title: "AI ビジョンと戦略"
 description: "データチームにおける AI の戦略的ビジョンと方向性"
-upstream_path: /handbook/enterprise-data/ai/ai-vision-and-strategy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_path: "/handbook/enterprise-data/ai/ai-vision-and-strategy/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+translated_at: "2026-09-11T12:56:16+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-11T21:43:34+00:00"
+lastmod: "2026-09-10T21:04:36Z"
 ---
 
 このドキュメントは、進化する組織的役割という文脈における、データチームの AI 採用への戦略的アプローチを概説します。
@@ -35,8 +35,8 @@ lastmod: "2026-05-11T21:43:34+00:00"
 
 エンタープライズデータチームはゼロから始めているわけではありません - 私たちはすでに AI 駆動のデータインフラを構築しています。すでに本番環境にあるか、アクティブに開発中の主要な機能には以下が含まれます。
 
-- **Claude + Snowflake MCP**: SQL 生成、グラフ作成、結論の検証
-- **Duo Agent Platform / OpenCode**: 十分にスコープされた Issue を、コンセプトから動作する MR まで、手動で 1 時間かかるところを 10 分で完了
+- **Claude + Snowflake CLI**: SQL 生成、グラフ作成、結論の検証
+- **Claude Code / Duo Agent Platform / OpenCode**: 十分にスコープされた Issue を、コンセプトから動作する MR まで、手動で 1 時間かかるところを 10 分で完了
 - **AI 生成のモデル説明**: ステークホルダーから好評を得ているデータモデルの平易な英語による説明
 - **dbt MCP + Duo**: dbt モデル構造、リネージュ、ノード詳細を完全に認識
 

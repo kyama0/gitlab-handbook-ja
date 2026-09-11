@@ -1,12 +1,12 @@
 ---
 title: "Field Communications"
 description: "Field Communications チームは、セールスおよびカスタマーサクセスのオーディエンスに向けた効果的、タイムリー、かつ消化しやすいコミュニケーションを作成する責任を担っています"
-upstream_path: /handbook/sales/field-communications/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_path: "/handbook/sales/field-communications/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+translated_at: "2026-09-11T12:58:54+00:00"
 translator: claude
 stale: false
-lastmod: "2025-05-05T17:37:49+00:00"
+lastmod: "2026-09-10T11:11:38-04:00"
 ---
 
 ## Field Communications ページへようこそ
@@ -81,8 +81,8 @@ GitLab の透明性という価値観をサポートするため、各 Tier の�
 
 **留意事項**:
 
-   1. **複雑さのため、すべての Tier 2 アナウンスは Field Communications チームへ少なくとも 1 ヶ月前に通知が必要です。**
-   1. Field Communications は、各四半期の最後の 2 週間を「静かな期間」として強制し、邪魔を制限してフィールドがビジネスのクローズに集中できるようにします。
+  1. **複雑さのため、すべての Tier 2 アナウンスは Field Communications チームへ少なくとも 1 ヶ月前に通知が必要です。**
+  1. Field Communications は、各四半期の最後の 2 週間を「静かな期間」として強制し、邪魔を制限してフィールドがビジネスのクローズに集中できるようにします。
 
 ## Tier 3 アップデート
 
@@ -92,7 +92,7 @@ GitLab の透明性という価値観をサポートするため、各 Tier の�
 
 **留意事項**:
 
-   1. Field Communications は、各四半期の最後の 2 週間を「静かな期間」として強制し、邪魔を制限してフィールドがビジネスのクローズに集中できるようにします。
+  1. Field Communications は、各四半期の最後の 2 週間を「静かな期間」として強制し、邪魔を制限してフィールドがビジネスのクローズに集中できるようにします。
 
 ## Tier 4 アップデート
 
@@ -102,8 +102,8 @@ GitLab の透明性という価値観をサポートするため、各 Tier の�
 
 **留意事項**:
 
-   1. Field Communications はフィールドサーベイリクエストを月に 1 回までに制限します。サーベイリクエストはこのケイデンスに基づいて評価とスケジューリングが行われ、例外はケースバイケースで判断されます。
-   1. Field Communications は、各四半期の最後の 2 週間を「静かな期間」として強制し、邪魔を制限してフィールドがビジネスのクローズに集中できるようにします。
+  1. Field Communications はフィールドサーベイリクエストを月に 1 回までに制限します。サーベイリクエストはこのケイデンスに基づいて評価とスケジューリングが行われ、例外はケースバイケースで判断されます。
+  1. Field Communications は、各四半期の最後の 2 週間を「静かな期間」として強制し、邪魔を制限してフィールドがビジネスのクローズに集中できるようにします。
 
 ## Tier 5 アップデート
 

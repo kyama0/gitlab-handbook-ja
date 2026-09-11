@@ -2,11 +2,11 @@
 title: 'チケットプロセッサー'
 description: 'Zendesk チケットプロセッサーのドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/tickets/processor/"
-upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+translated_at: "2026-09-11T12:58:54+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-12T14:22:07-05:00"
+lastmod: "2026-09-10T09:47:50-05:00"
 ---
 
 このガイドでは、特定のトリガーに基づいてチケットにカスタムアクションを実行する自動化システム、Zendesk チケットプロセッサーについて説明します。利用可能なプロセッサーの種類と、プロセッサー項目を作成、変更、削除する方法を記載します。
@@ -31,6 +31,7 @@ lastmod: "2026-08-12T14:22:07-05:00"
 #### 2FA の削除
 
 <sup>[gitlab-com/support/support-team-meta#6663](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6663)で導入</sup>
+<sup>[gitlab-com/eta/css/issue-tracker#275](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/work_items/275)により非推奨化</sup>
 
 リクエスト自体を確認して、資格の状態を判定します。判定に応じてチケットにタグを追加します（対応する Zendesk トリガーが起動します）。
 
@@ -47,6 +48,40 @@ lastmod: "2026-08-12T14:22:07-05:00"
     - 対象者が最上位の有償名前空間のメンバーか
   - すべての確認に合格した場合、`2fa_snippet_verification` タグを追加します（ここで処理を終了します）
   - いずれかの確認に失敗した場合、`2fa_owner_not_entitled` タグを追加します（ここで処理を終了します）
+
+#### 2FA の削除 {#2fa-removals}
+
+<sup>[gitlab-com/eta/css/issue-tracker#275](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/work_items/275)で導入</sup>
+
+新しいプロセスを使用してリクエスト自体を確認し、2FA 削除の資格の状態を判定します。
+
+確認の状態に応じて、さまざまなアクションを実行します。
+
+- チケットのリクエスト者に gitlab.com アカウントがない場合:
+  - チケットに返信して閉じます
+- リクエスト者が最上位の有償名前空間の Owner ではない場合:
+  - チケットに返信して閉じます
+- リクエスト者のメールドメインと対象者のメールドメインが一致しない場合:
+  - チケットに内部メモを追加します
+- 対象アカウントが存在しない場合:
+  - チケットに返信して閉じます
+- 対象アカウントがエンタープライズユーザーの確認（下記を参照）に合格しない場合:
+  - チケットに内部メモを追加します
+- 提供された Support PIN が正しくない場合:
+  - チケットに返信して閉じます
+- すべての確認に合格した場合:
+  - チケットに内部メモを追加します
+  - 対象の gitlab.com アカウントにメモを追加します
+  - 対象の gitlab.com アカウントから 2FA を削除します
+  - チケットに返信して閉じます
+
+参考として、この処理で行うエンタープライズユーザーの確認は次のとおりです。
+
+- 対象アカウントの `provisioned_by_group_id` の値が、リクエスト者の所有する最上位の有償名前空間に一致するか
+- 対象アカウントの `enterprise_group_id` の値が、リクエスト者の所有する最上位の有償名前空間に一致するか
+- 対象アカウントに、リクエスト者の所有する最上位の有償名前空間に対応する SCIM ID があるか
+- 対象アカウントに、リクエスト者の所有する最上位の有償名前空間に対応する SAML ID があるか
+- 対象アカウントが、リクエスト者の所有する最上位の有償名前空間のメンバーか
 
 #### アカウントのブロック
 

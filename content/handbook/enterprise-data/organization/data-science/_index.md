@@ -2,16 +2,18 @@
 title: "データサイエンスハンドブック"
 description: "GitLab データサイエンスチームのハンドブック"
 upstream_path: "/handbook/enterprise-data/organization/data-science/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T12:40:32Z"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+translated_at: "2026-09-11T12:56:16+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-22T11:29:23-05:00"
+lastmod: "2026-09-10T15:32:37-05:00"
 ---
 
 ## GitLab のエンタープライズデータサイエンスチーム
 
-データサイエンスチームのミッションは、***予測アナリティクス***を使って***より速く、より良い意思決定***を支援することです。
+データサイエンスチームのミッションは、信頼できるデータ、予測モデル、統計分析、AI を活用したインサイトを組み合わせることで、***より速く、より良い意思決定***を支援することです。
+
+私たちは、ビジネスにとって最も重要な取り組みに能力を集中し、成果物だけでなく測定可能な成果に責任を持ち、意思決定が行われる場所でインサイトを利用できるようにします。具体的には、ガバナンスの下でのセルフサービス、全社的なレポーティング、組み込みのワークフローを通じて提供します。
 
 ## ハンドブックファースト
 
@@ -65,9 +67,8 @@ graph BT;
 
 - 収益拡大
 - チャーン削減
-- 予測精度の改善
-- 顧客ヘルス
-- GitLab を使った MLOps
+- 予測
+- 顧客ヘルス／顧客生涯価値
 
 進行中・計画中のすべてのプロジェクトの最新情報については、[データサイエンスイニシアティブ 社内ハンドブック](https://internal.gitlab.com/handbook/enterprise-data/organization/data-science-enterprise-analytics/data-science-initiatives)を参照してください。
 

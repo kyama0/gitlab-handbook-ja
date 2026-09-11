@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
-translated_at: "2026-08-08T08:52:01+09:00"
+upstream_sha: 0b4843d337f9f8173d56982fff942cb2b5a78543
+translated_at: "2026-09-11T13:14:29+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-06T20:53:38-07:00"
+lastmod: "2026-09-10T13:31:22-07:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -27,7 +27,7 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 - GitLab Benefit Plan の完全なレビューについては[2026 US Benefits Guide](https://drive.google.com/file/d/1vC3BQ6rorJiu_6e7bO9kzKcD3nIBIEQT/view) を参照してください
 - プラン選択にお困りですか？[2026 Flimp PlanSelect ツール](https://flimpdecisions.net/welcome/633c8d6807f8b) を使用して、あなたと家族のニーズに最も適したプランを見つけてください。
 - [2026 Cigna Formulary](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view) を参照してください
-- 私たちの 2026 [Annual Rights Notices](https://drive.google.com/file/d/1YK79mgmrv3qwkD-7DqWF8ZfBlOTFsEoq/view) を参照してください
+- 私たちの [2026 Annual Rights Notices](https://drive.google.com/file/d/1YK79mgmrv3qwkD-7DqWF8ZfBlOTFsEoq/view) を参照してください
 - [Transparency in Coverage](https://www.cigna.com/legal/compliance/machine-readable-files) を参照してください。これらの機械可読ファイルは、連邦の Transparency in Coverage Rule に対応して提供されており、健康プランと医療提供者間の交渉済みサービス料金とアウトオブネットワーク許容額が含まれます。機械可読ファイルは、研究者、規制当局、アプリケーション開発者がデータをより簡単にアクセス・分析できるようにフォーマットされています。
 
 #### 重要な書類、アーカイブされたプラン、Medicare 通知、税書類 {#important-documents-archived-plans-medicare-notices--tax-documents}
@@ -143,7 +143,7 @@ GitLab は Cigna を通じて全国的に医療保険を提供し、Kaiser オ�
 
 ### Medical Waiver Allowance
 
-すでにグループ医療カバレッジを持っていますか？オプトアウトして、月 **$150** *（2025 年は $300）* の福利厚生手当を受け取りながら、歯科、ビジョン、その他の福利厚生に登録することができます。この手当を受け取るには、PlanSource で医療カバレッジを積極的に放棄する必要があります。*福利厚生選択期間内にプランに登録しない場合、自動的に Medical Waiver Allowance に登録されます。*
+すでにグループ医療カバレッジを持っていますか？オプトアウトして、月 **$150** の福利厚生手当を受け取りながら、歯科、ビジョン、その他の福利厚生に登録することができます。この手当を受け取るには、PlanSource で医療カバレッジを積極的に放棄する必要があります。*福利厚生選択期間内にプランに登録しない場合、自動的に Medical Waiver Allowance に登録されます。*
 
 ### Cigna Medical Plans
 
@@ -154,28 +154,28 @@ GitLab は Cigna を通じて全国的に医療保険を提供し、Kaiser オ�
 
 #### Cigna EPO
 
-EPO: [2025 Summary)](https://drive.google.com/file/d/1V9oWpbYWBVuyYoiKNyFj_y7LoFH0QR8P/view?usp=sharing) | [2025 SBC](https://drive.google.com/file/d/1MAn1Y5GRKV_YaBGQK6onUeGI0fzbqTBL/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1mBHIR5xsAEpyArBLrDSMIZSOUhV3yn3R/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1AHoN2uuG_qd6bwu-fDGOYPTuB6zOewFk/view?usp=sharing)
+EPO: [2026 SBC](https://drive.google.com/file/d/1mBHIR5xsAEpyArBLrDSMIZSOUhV3yn3R/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1AHoN2uuG_qd6bwu-fDGOYPTuB6zOewFk/view?usp=sharing)
 
-RX プラン: [2025 Standard 3-Tier](https://drive.google.com/file/d/1mPLR54AnbOelaif1oh0e_KnMGNIXdnMw/view) | [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
+RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
 
 *重要なカバレッジ注を参照してください
 
 #### Cigna High Deductible Health Plan
 
-HDHP: [2025 Summary](https://drive.google.com/file/d/1Gb6HaLmEeswxdszUxOQhh5m24jdrmTNp/view?usp=sharing) | [2025 SBC](https://drive.google.com/file/d/1UoSJxzk4oCUvDlrtpFSn6XYaON_2neiC/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1jh3QmCvkt1rfjcLaoJqisz13rXPrsaJ7/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1-8zHX89X1EX5yf3HAzAmvJlFcO-XZnei/view?usp=sharing)
+HDHP: [2026 SBC](https://drive.google.com/file/d/1jh3QmCvkt1rfjcLaoJqisz13rXPrsaJ7/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1-8zHX89X1EX5yf3HAzAmvJlFcO-XZnei/view?usp=sharing)
 
 **GitLab HSA 拠出:**
 
 - チームメンバーのみカバレッジ: 月額 $100
 - チームメンバー + 配偶者/子/家族カバレッジ: $125
 
-RX プラン: [2025 Standard 3-Tier](https://drive.google.com/file/d/1mPLR54AnbOelaif1oh0e_KnMGNIXdnMw/view)  | [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
+RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
 
 #### Cigna PPO
 
-PPO: [2025 SBC](https://drive.google.com/file/d/147BcT7rRqth-m5VsU0zoMDvC6nawxxoi/view?usp=sharing) | [2025 Summary](https://drive.google.com/file/d/17amF3mBc7duZbsjw92eLhBtmsInfhoUM/view?usp=sharing) | [2025](https://drive.google.com/file/d/147BcT7rRqth-m5VsU0zoMDvC6nawxxoi/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1o6IHytz5ddiOedimgyFWU8obquF5BxFx/view?usp=sharing) | [2026 Summary Utah](https://drive.google.com/file/d/1uNHA_0Xtk7EEUscovappLZa5PD8sdG68/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1dwKYobzRKSdulXDDzSXzlOieMN_U7jsp/view?usp=sharing) | [2026 SBC Utah](https://drive.google.com/file/d/1WsiTvy5PYVhTgcjwUqNNc3s5CDUETTCt/view?usp=sharing)
+PPO: [2026 Summary](https://drive.google.com/file/d/1o6IHytz5ddiOedimgyFWU8obquF5BxFx/view?usp=sharing) | [2026 Summary Utah](https://drive.google.com/file/d/1uNHA_0Xtk7EEUscovappLZa5PD8sdG68/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1dwKYobzRKSdulXDDzSXzlOieMN_U7jsp/view?usp=sharing) | [2026 SBC Utah](https://drive.google.com/file/d/1WsiTvy5PYVhTgcjwUqNNc3s5CDUETTCt/view?usp=sharing)
 
-RX プラン: [2025 Standard 3-Tier](https://drive.google.com/file/d/1mPLR54AnbOelaif1oh0e_KnMGNIXdnMw/view) | [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
+RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
 
 *Utah Network の詳細は重要なカバレッジ注を参照してください
 
@@ -216,9 +216,9 @@ RX プラン: [2025 Standard 3-Tier](https://drive.google.com/file/d/1mPLR54AnbO
 <details markdown="1">
 <summary>プランサマリー</summary>
 
-- Kaiser NorCal: [2025 HMO NorCal](https://drive.google.com/file/d/1byP2FD7CcA8cszh_1SZoRTBP_cjUXuOh/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1qcZtEM28dus7ltdd7aym5IJUptSOEd65/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1UOsMV37R8QyiljsubawhcRNIxeDTnvhm/view?usp=sharing)
-- Kaiser SoCal: [2025 HMO SoCal](https://drive.google.com/file/d/1yrNt4Y0PSfCSEXWnp5YbOs0f2OKtYhz3/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1pG3cKY2qroZMVVncOSpDS6LOUZ7Huptg/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1VTHmUutjRvFpuJt-2zYBANKjQTkWFLiZ/view?usp=sharing)
-- Kaiser Hawaii: [2025 HMO Hawaii](https://drive.google.com/file/d/1qkWTsJ2vPOAGuWSzCxgpLWhZvCyzG-q0/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1YBpS1-Kh6jtygJNs61lc0oJ2ZWuVHF3A/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/15MigkT822LXKQx6tRIUWy1WXE9MS9D_M/view?usp=sharing)
+- Kaiser NorCal: [2026 Summary](https://drive.google.com/file/d/1qcZtEM28dus7ltdd7aym5IJUptSOEd65/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1UOsMV37R8QyiljsubawhcRNIxeDTnvhm/view?usp=sharing)
+- Kaiser SoCal: [2026 Summary](https://drive.google.com/file/d/1pG3cKY2qroZMVVncOSpDS6LOUZ7Huptg/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1VTHmUutjRvFpuJt-2zYBANKjQTkWFLiZ/view?usp=sharing)
+- Kaiser Hawaii: [2026 SBC](https://drive.google.com/file/d/1YBpS1-Kh6jtygJNs61lc0oJ2ZWuVHF3A/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/15MigkT822LXKQx6tRIUWy1WXE9MS9D_M/view?usp=sharing)
 
 </details>
 
@@ -238,8 +238,8 @@ Cigna を通じた包括的な歯科ケアは、2 つのカバレッジレベル
 
 **プランサマリー:**
 
-- [DPPO 2025 Base Plan](https://drive.google.com/file/d/1cBwl-Hkf7E8EqbRfHgCJzS1oJpSoHvA5/view?usp=sharing) | [DPPO 2026 Base Plan](https://drive.google.com/file/d/1-XZvZjN2sz_CWtHz5q-iOvKNdsIGNTVi/view?usp=sharing)
-- [DPPO 2025 Buy Up](https://drive.google.com/file/d/1wFpHm0mHX1vqbIxun59DjhvNhi3RxRc4/view?usp=sharing) | [DPPO 2026 Buy Up Plan](https://drive.google.com/file/d/1VZBbNZX9M5A8P0cs_b1Q5kkTMRSL_vMX/view?usp=sharing)
+- [DPPO 2026 Base Plan](https://drive.google.com/file/d/1-XZvZjN2sz_CWtHz5q-iOvKNdsIGNTVi/view?usp=sharing)
+- [DPPO 2026 Buy Up Plan](https://drive.google.com/file/d/1VZBbNZX9M5A8P0cs_b1Q5kkTMRSL_vMX/view?usp=sharing)
 
 ### 視力カバレッジ {#vision-coverage}
 
@@ -247,8 +247,8 @@ EyeMed と提携した Cigna を通じた視力ケア。プランの詳細と費
 
 **プランサマリー:**
 
-- [Vision 2025 Base](https://drive.google.com/file/d/1mK8tCw9p5Nh6fG3x2wZVJxEvczPLmgV/view) | [Vision 2026 Base](https://drive.google.com/file/d/1qfDmbwsiAhKf-h_GI6_ZcMr9CMqqSor6/view?usp=sharing)
-- [Vision 2025 Buy Up](https://drive.google.com/file/d/13kattV90EQVyJN3ifV5suG4_kLLENvEw/view?usp=sharing) | [Vision 2026 Buy Up](https://drive.google.com/file/d/1_omcfVakTHoJqvmEjKdrPyJ3Mvd_M6tU/view?usp=sharing)
+- [Vision 2026 Base](https://drive.google.com/file/d/1qfDmbwsiAhKf-h_GI6_ZcMr9CMqqSor6/view?usp=sharing)
+- [Vision 2026 Buy Up](https://drive.google.com/file/d/1_omcfVakTHoJqvmEjKdrPyJ3Mvd_M6tU/view?usp=sharing)
 
 ### 従業員アシスタンスプログラム (EAP) {#employee-assistance-program-eap}
 
@@ -298,7 +298,6 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 **リソース**
 
 - [Voluntary Life Insurance Details](https://drive.google.com/file/d/1q10xugbtFJMhoMJ6tCzD4It5bSdoKEf4/view?usp=sharing)
-- [2025 Cost Sheet](https://drive.google.com/file/d/1B_fNqboB3Nkkiq0mvd_yLs_-HceoY2ad/view?usp=sharing)
 - [2026 Cost Sheet](https://drive.google.com/file/d/1MqQGQFYHj2tq2r85Ey3lDvqIdxo8W0gR/view?usp=sharing)
 
 <details markdown="1">
@@ -510,7 +509,6 @@ FSA を使用すると、税引前ドルで医療費と扶養者ケア費用を�
 
 **拠出およびロールオーバー限度:**
 
-- **2025:** 最大拠出 $3,300、最大ロールオーバー $660
 - **2026:** 最大拠出 $3,400、最大ロールオーバー $680
 
 **重要な注:**
