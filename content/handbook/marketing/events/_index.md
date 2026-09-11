@@ -1,11 +1,11 @@
 ---
 title: GitLab イベント情報
-upstream_path: /handbook/marketing/events/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_path: "/handbook/marketing/events/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+translated_at: "2026-09-11T12:58:54+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-10T23:59:14Z"
 ---
 
 ## GitLab のイベント
@@ -877,7 +877,7 @@ GitLab の自社主催イベントでは、参加している GitLab CXO と 10 
 - 10 分のミーティングにアジェンダはありません。ミーティングの DRI は、SFDC を介して会社をすばやく調査 (SFDC アプリが電話にない場合、これがそれが役立つ理由のすばらしいユースケースです!) し、できるだけ多くの情報をすばやく収集して、CXO にこの情報を伝えます。例えば、CXO に会う列の次にエンタープライズ顧客がいる場合、CXO に知らせてください。短いブリーフ情報、なぜならこの情報を伝える時間があまりないからです
 - CXO がミーティングに集中できるよう、メモは DRI または部屋にいる指定された代理人が取る必要があります。これらのメモは、メモ担当の DRI が 48 時間以内に SFDC の人物レコードへ追加します。次のステップが議論され、部屋にいない誰かにアクションが割り当てられた場合、割り当てられた人をタグ付けすることを忘れないでください!
 
-## `about.gitlab.com/events` にイベントを追加する方法
+## `about.gitlab.com/events` にイベントを追加する方法 {#how-to-add-events-to-aboutgitlabcomevents}
 
 世界中のバーチャルイベントや対面イベントで GitLab を見つける場所を公に共有するため、[about.gitlab.com/events](https://about.gitlab.com/events/) を作成しました。このページは、イベントの責任者によって更新されます。このページは現在、[Decap CMS](/handbook/marketing/digital-experience/decap-cms/) を介して管理されています。ページにイベントを追加したり、既存のイベントに変更を加えるには、[こちら](/handbook/marketing/digital-experience/decap-cms/#adding-an-event-to-the-events-landing-page) の手順を参照してください。
 
@@ -928,7 +928,9 @@ GitLab の自社主催イベントでは、参加している GitLab CXO と 10 
      - Travel Policy - `Default`
      - 請求情報を指定します - `n/a` と入力します
 
-1. イベント後、講演者は Navan の招待を通じて経費を提出します。
+#### 講演者経費のメールテンプレート
+
+顧客である講演者に送信するメールの例は、[このテンプレート](https://docs.google.com/document/d/1RyHZYbeAHzOveW-RJlvTGtvk5z3ENXvMs_Mgve16aWU/edit?tab=t.0)を参照してください。
 
 ### その他の GitLab チーム向け講演者経費プロセス
 

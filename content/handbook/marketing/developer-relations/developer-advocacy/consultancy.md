@@ -1,15 +1,15 @@
 ---
 title: "デベロッパーアドボケイトのコンサルティングワークフロー"
 description: "デベロッパーアドボカシーチームのコンサルティングワークフローとリクエストについて学びます。"
-upstream_path: /handbook/marketing/developer-relations/developer-advocacy/consultancy/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-08T11:30:44+02:00
-translated_at: "2026-06-12T21:17:35Z"
+upstream_path: "/handbook/marketing/developer-relations/developer-advocacy/consultancy/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+lastmod: "2026-09-11T13:54:05+02:00"
+translated_at: "2026-09-11T12:58:54+00:00"
 translator: claude
 stale: false
 ---
 
-各チームや各部門は、[デベロッパーアドボケイトがサブジェクトマターエキスパート (SME)](/handbook/marketing/developer-relations/developer-advocacy/#i-classfa-fa-users-aria-hiddentruei-team-members-and-focus-areas) である領域や、その経験やつながりのネットワークで支援できる領域について、コンサルティングをリクエストできます。
+各チームや各部門は、[デベロッパーアドボケイトがサブジェクトマターエキスパート (SME)](/handbook/marketing/developer-relations/developer-advocacy/#team-members-and-focus-areas) である領域や、その経験やつながりのネットワークで支援できる領域について、コンサルティングをリクエストできます。
 
 ## 構成
 

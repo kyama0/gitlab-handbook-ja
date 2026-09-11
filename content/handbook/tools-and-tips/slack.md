@@ -2,64 +2,115 @@
 title: "Slack"
 description: "GitLab における Slack の利用とヒント"
 upstream_path: /handbook/tools-and-tips/slack/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:21:07+09:00"
+upstream_sha: 0b4843d337f9f8173d56982fff942cb2b5a78543
+translated_at: "2026-09-11T13:14:29+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-11T13:54:05+02:00"
 ---
 
 ## 概要
 
 *Slack は GitLab のチームメンバー間コミュニケーション戦略の重要な一部です。そのため、データの安全性と完全性を確保するために特別な注意が必要です。*
 
-## プロフィール
+## はじめに
 
-Slack のプロフィールを記入してください。私たちは Slack のプロフィールをチームディレクトリとして利用し、他のチームメンバーと連絡を取り合うために使っています。重要なフィールドは以下のとおりです:
+Slack を初めて使いますか？ワークスペースは、人々と会話を一か所に集めます。チャンネルはトピックごとに会話を整理し、ダイレクトメッセージ（DM）は特定の人との会話に使います。スレッドは、メッセージへの返信をまとめます。
 
-- 写真（人間的なつながりや認識のしやすさのため、人工的なアバターではなく顔がはっきり見える写真）
-- 役職（部署とチーム名を含む GitLab の職位であるべきです）
-- GitLab.com プロフィール（ユーザー名を識別するためにリンクをクリックしなくてもよいよう、表示テキストを @gitlabusername に設定）
-- タイムゾーン（他の GitLab チームメンバーがあなたの利用可能時間を確認するのに便利です）
-- 勤務時間（一般的にあなたが対応可能な時間を他者が把握するのに役立ちます）
-- GitLab Birthdays（はい/いいえを選択して Slack での誕生日のお祝いをオプトインまたはオプトアウト）
-- 市区町村／州／県および国の Location フィールド（オプション）
-- 国コードを含む個人の電話番号を追加できます（オプション）
-- ニックネームで呼ばれる方が好みの場合は「Display Name」の変更を検討してください
-- Pronouns フィールドに代名詞を追加することを検討してください。代名詞を設定することを当たり前にすることで、伝統的でない代名詞を使う人々にとってよりインクルーシブな環境を作れます。
-- 他者が名前を正しく発音できるよう、「Name Pronunciation」フィールドに発音ガイドを追加することを検討してください（例: Sid Sijbrandij なら sid see-brandy）。
-- 名前の発音を助けるために「Name recording」を追加することを検討してください。
-- [Calendly アカウント](/handbook/tools-and-tips/other-apps/#calendly) をセットアップして利用したい場合を除き、G-Cal Booking! フィールドには何も入力しないでください。
+1. 他のチームメンバーにあなたを認識してもらえるように、[プロフィールを設定します](#profile)。
+1. チームや自分の興味に合った [チャンネルを探して参加します](#browse-channels)。
+1. [スレッドへの返信とメンションの使い方](#threads-and-mentions) を学びます。
+1. 勤務時間に合わせて [通知スケジュールを設定します](#do-not-disturb-hours)。
+
+投稿する前に、GitLab の [Slack コミュニケーションガイドライン](/handbook/communication/#general-guidelines) を読んでください。Slack は非同期のツールなので、すべてを読む必要はなく、即時の返信を期待する必要もありません。
+
+## プロフィール {#profile}
+
+Slack のプロフィールを記入してください。私たちは Slack のプロフィールをチームディレクトリとして利用し、他のチームメンバーと連絡を取り合うために使っています。人間的なつながりや認識のしやすさのため、人工的なアバターではなく顔がはっきり見える写真を使ってください。Slack の [プロフィール写真のアップロードガイド](https://slack.com/help/articles/115005506003-Upload-a-profile-photo) を参照してください。
+
+デスクトップで Slack のプロフィールを開くには、次の操作を行います。
+
+1. 左サイドバーで自分のプロフィール写真（アバター）を選択します。
+1. メニューから **Profile** を選択します。
+
+デスクトップとモバイルでの操作手順は、Slack の [プロフィールの編集ガイド](https://slack.com/help/articles/204092246-Edit-your-profile) を参照してください。
+**About me** のカスタムフィールドはデスクトップで編集してください。Slack のモバイルアプリはカスタムプロフィールフィールドの編集に対応していません。GitLab のプロフィールには、**Edit your profile** と **About me** の両方に **Pronouns** フィールドがあります。
+
+### プロフィールの編集
+
+プロフィールで、右側の最初の **Edit** ボタンを選択します。
+
+- **Full name。** フルネームを入力します。
+- **Display name。** ニックネームで呼ばれることを希望する場合はニックネームを使うか、`nickname (full name)` のようにフルネームと組み合わせます。
+- **Title。** 部署とチーム名を含む GitLab での職位を使います。
+- **Pronouns。** よりインクルーシブな環境づくりに役立つよう、代名詞の追加を検討してください。
+- **Name recording。** 名前の発音を助けるために、録音の追加を検討してください。
+- **Name pronunciation。** 発音ガイドの追加を検討してください。たとえば、Michael Friedrich の英語での発音は `MY-kul FREED-rick` です。
+- **Time zone。** 他の GitLab チームメンバーがあなたの対応可能な時間を確認できるようにします。
+
+### 連絡先情報
+
+プロフィールで、**Contact information** の横にある **Edit** を選択します。
+
+- **Phone（オプション）。** 国コードを含む個人の電話番号を追加します。
+
+### 自己紹介
+
+プロフィールで、**About me** の横にある **Edit** を選択します。
+
+- **Location（オプション）。** 市区町村、州または県、国を追加します。
+- **Job Description。** 表示テキストと URL を追加します。例：[Developer Advocate](/handbook/marketing/developer-relations/developer-advocacy/#team-members-and-focus-areas)。
+- **Address（オプション）**
+- **G-Cal booking。** [Calendly](/handbook/tools-and-tips/other-apps/#calendly) を使う場合は、予約ページの URL と `Book a meeting` などの表示テキストを追加します。それ以外の場合は、このフィールドを空欄にしてください。
+- **Pronouns。** よりインクルーシブな環境づくりに役立つよう、代名詞の追加を検討してください。
+- **Spoken Languages。** 社外の人々との部門横断の業務に役立つよう、話せる言語を追加します。
+- **Hobbies（オプション）**
+- **Working hours。** 一般的にあなたが対応可能な時間を他の人が把握できるようにします。
+- **README Link。** 他の人があなたについて詳しく知ることができる個人の README へのリンクを、`About me` などの表示テキストで追加します。[README の概要](/handbook/communication/#readmes) を参照してください。
+- **GitLab Birthdays。** はいまたはいいえを選択し、Slack での誕生日のお祝いに参加するかどうかを設定します。
 
 ## チャンネル
 
-チャンネルは Slack の中核機能です。このセクションでは Slack チャンネルを管理するためのツールやヒントについて説明します。一般的な GitLab Slack チャンネルのリストについては、[GitLab Communication Chat](/handbook/communication/chat) を参照してください。
+チャンネルは Slack の中核機能です。このセクションでは Slack チャンネルを管理するためのツールやヒントについて説明します。一般的なチャンネルや質問先については、[GitLab の Slack チャンネルとその用途](/handbook/communication/chat/#key-slack-channels) を参照してください。
 
-### チャンネルを参照する
+### チャンネルを参照する {#browse-channels}
 
-Slack アプリの左ペインにある "Channels" をクリックすると、すべての利用可能な GitLab チャンネルを参照できます。
-そこから、すべてのチャンネル、その作成者、メンバー数を確認できます。
+[パブリックチャンネルを参照する](https://slack.com/help/articles/205239967-Join-a-channel) には、**Home** から **Directories** を選択し、**Channels** タブを選択します。
+チャンネル名や説明で検索するか、チャンネルを選択して参加前にプレビューします。
+パブリックチャンネルに参加するには、**Join channel** を選択します。プライベートチャンネルに参加するには、既存のメンバーに追加を依頼してください。
 他のチームメンバーにお気に入りのチャンネルを推薦してもらうのも気軽にどうぞ。
 全チームメンバーは自動的に `#company-fyi` と `#whats-happening-at-gitlab` チャンネルに追加され、ここで全社向けのアナウンスや情報共有が行われます。
 新入社員全員がデフォルトで追加されるチャンネルもいくつかあります。たとえば `#celebrations`、`#new_team_members`、`#questions`、`#random`、`#thanks` などです。これらのチャンネルはオプションですが、チームメンバーが交流し互いを知る素晴らしい場所だと考えています。
 
+### スレッドとメンション {#threads-and-mentions}
+
+スレッドはメッセージの下に返信をまとめ、会話を追いやすくします。デスクトップで返信するには、メッセージにカーソルを合わせて **Reply in thread** を選択し、そこで返信を送信します。Slack の [スレッドの使用ガイド](https://slack.com/help/articles/115000769927-Use-threads-to-organize-discussions) を参照してください。
+
+- 既存の質問や議論に返信する際は、GitLab の [Slack コミュニケーションガイドライン](/handbook/communication/#general-guidelines) に従って **スレッド内で返信します**。
+- 相手の注意を引く必要がある場合は、`@` を入力して名前を選択し、**その人をメンションします**。単にその人について言及する場合は、メンションせずに名前を書いてください。
+- **`@here` と `@channel` は緊急かつ重要なメッセージにのみ使ってください。** GitLab の [他の人の時間を尊重するためのガイダンス](/handbook/communication/#be-respectful-of-others-time) を参照してください。Slack のメッセージは非同期なので、即時の返信を期待しないでください。
+
 ### サイドバーセクションでチャンネルを整理する
 
-Slack は [チャンネルをセクションで整理する](https://slack.com/intl/en-de/help/articles/360043207674-Organize-conversations-with-custom-sections) ことをサポートするようになりました。以前はこれは「スター付き」チャンネルでのみ可能でした。Slack の **環境設定** に移動して `Sidebar` ナビゲーション項目を選択します。`Create Section` をクリックして左サイドバーに新しいセクションを作成できます。既存の各セクションの設定メニューからも作成できます。
+[サイドバーのカスタムセクション](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) を使って、チャンネルとダイレクトメッセージをグループ化します。チャンネルまたはダイレクトメッセージを開き、上部のスターアイコン（または現在のセクションの絵文字）を選択して、**Create new section** を選択します。セクションに名前を付け、**Create** を選択します。
 
 最も頻繁に使用するチャンネルや、特定のチームのグループ化など、お好みで整理してください。ドラッグ＆ドロップしたり、セクションを非表示にしたりもできます。たとえば、`info` セクションを作成して `#company-fyi` と `#whats-happening-at-gitlab` をチャンネルとして追加できます。さらに、`team` セクションを追加して関連するすべてのチャンネルをそこに移動することもできます。
 
-Slack の <b>[スター付きチャンネル](https://slack.com/help/articles/201331016-Star-channels-and-direct-messages)</b> 機能を使って 3 つのカテゴリのチャンネルにスポットライトを当て、<b>[ミュート機能](https://slack.com/help/articles/204411433-Mute-channels-and-direct-messages)</b> で気を散らしてしまうチャンネルを静かにし、最も重要なものとして **すべてのメッセージを既読にマーク** 機能（デスクトップで `Shift` と `Esc` を同時に押すことで簡単に切り替えできます）を使って瞬時にすっきりさせることを検討してください。
+目的に合った操作を選んでください。
 
-3 つのスポットライトチャンネルアプローチの例を以下に示します。Slack ではスター付きチャンネルのサイドバーを <b>[カスタムセクション](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections)</b> で整理して優先順位を視覚的に上げ下げでき、最初に何を見るかを制御できます。
+- **会話にスターを付ける** と、**Starred** セクションで見つけやすくなります。[チャンネルとダイレクトメッセージにスターを付ける方法](https://slack.com/help/articles/201331016-Star-channels-and-direct-messages) を参照してください。
+- **会話をミュートする** と、その会話からの通知を減らせます。[チャンネルとダイレクトメッセージをミュートする方法](https://slack.com/help/articles/204411433-Mute-channels-and-direct-messages) を参照してください。
+- Slack 全体の未読表示を消したい場合は、デスクトップで `Shift` + `Esc` を押して **すべてのメッセージを既読にマークします**。実際に読んでいないメッセージも既読になります。
 
-1. 仕事に重要なチャンネル（例: コーポレートマーケティングのチームメンバーは `#marketing`、`#corp-mktg`、`#newswire`、`#external-comms`、`#website`、`#handbook` にスターを付けるかもしれません）
-1. GitLab に重要なチャンネル（例: `#company-fyi`、`#whats-happening-at-gitlab`、`#team-member-updates`、`#e-group`、`#ceo`、`#new-vacancies`）
-1. 自分の興味に重要なチャンネル（例: `#travel`、`#remote`、`#daily-gratitude`、`#mental_health_aware`、`#intheparenthood`、`#women`、`#diversity_inclusion_and_belonging`）
+たとえば、用途に応じて会話を 3 つのカスタムセクションに分類します。
+
+1. 仕事に重要なチャンネル（例：Product and Technical Marketing のチームメンバーは `#marketing`、`#gitlab-gtm`、`#ask-product-and-technical-marketing`、`#external-comms`、`#handbook` にスターを付けるかもしれません）
+1. GitLab に重要なチャンネル（例：`#company-fyi`、`#whats-happening-at-gitlab`、`#team-member-updates`、`#ceo`、`#field-fyi`、`#engineering-fyi`、`#thanks`）
+1. 自分の興味に重要なチャンネル（例：`#travel`、`#parenting`、`#women`、`#diversity_inclusion_and_belonging`、`#music`、`#dog`、`#i-made-this`、`#all-caps`、`#lego`）
 
 ### スターでチャンネルとダイレクトメッセージをソートする
 
-ダイレクトメッセージとチャンネルをソートするには、ダイレクトメッセージまたはチャンネルを開いてスターアイコンをクリックします。
+ダイレクトメッセージまたはチャンネルにスターを付けるには、その会話を開いて上部のスターアイコンを選択します。カスタムセクションを使っている場合は、メニューから **Starred** を選択します。
 詳細は [チャンネルまたはダイレクトメッセージにスターを付ける](https://slack.com/intl/en-gb/help/articles/201331016-Star-channels-and-direct-messages#star-a-channel-or-dm) を参照してください。
 
 ### チャンネルへのアクセス
@@ -102,26 +153,22 @@ Slack はデフォルト状態では混沌とした場所になりがちです�
 以下は通知の管理と Slack のノイズ削減に関するベストプラクティスとヒントへの便利なリンクです。あなたにとって *重要／関連性のある* ことに関する通知を増やし、*そうでない* ことに関する通知を減らせるよう、定期的に通知設定をチェックすることをおすすめします。
 
 - [Slack のノイズを減らす](https://slack.com/intl/en-gb/help/articles/218551977-Reduce-noise-in-Slack)
-- [通知を設定する](https://slack.com/intl/en-gb/help/articles/201355156-Guide-to-desktop-notifications#configure-your-notifications)
-- [デスクトップ通知ガイド](https://slack.com/intl/en-gb/help/articles/201355156-Guide-to-desktop-notifications#channel-specific-and-group-dm-notifications)
-- [チャンネル固有およびグループ DM 通知](https://slack.com/intl/en-gb/help/articles/201355156-Guide-to-desktop-notifications#channel-specific-and-group-dm-notifications)
-- [未読の会話のみを表示する](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections-Organize-your-sidebar-with-custom-sections-Organize-your-sidebar-with-custom-sections#manage-conversation-display)
-- [GitLab チームメンバー Brendan O'leary による Slack の使い方](https://blog.boleary.dev/how-i-slack/)
+- [Slack の通知を設定する](https://slack.com/help/articles/201355156-Configure-your-Slack-notifications)
+- [未読の会話のみを表示する](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections)
+- [Brendan O'Leary による Slack の使い方](https://blog.boleary.dev/how-i-slack/)
 
 ### 未読の会話のみを表示する
 
 たくさんのチャンネルとダイレクトメッセージがあると、Slack は圧倒的になり得ます。Slack のアクティビティを追跡しやすくし、インターフェースをシンプルにするために、
-[未読の会話のみを表示](https://slack.com/intl/en-au/help/articles/360043207674-Organise-your-sidebar-with-customised-sections-Organise-your-sidebar-with-customised-sections-Organise-your-sidebar-with-customised-sections#manage-conversation-display) することを検討してください。
+[未読の会話のみを表示](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) することを検討してください。
 
 ### Slack リマインダー
 
 Slack リマインダーは、すべてを頭の中に保持することなく物事を覚えておくのに役立ちます。
-自分自身や他のチームメンバーにリマインダーを設定できます。
-指定した時刻に通知を受け取ります。
-
-`/remind` コマンドで自然言語を使用できます。
-ヒントを得るには `/remind help` とタイプしてください。
-Slack リマインダーの完全な情報は [Slack ヘルプ](https://slack.com/intl/en-gb/help/articles/208423427-Set-a-reminder) を参照してください。
+自分自身またはチャンネルにリマインダーを設定できます。
+個人用のリマインダーでは、**Later** を開き、プラス記号を選択して日付、時刻、リマインダーのテキストを指定します。
+チャンネルのリマインダーでは、`/remind [#channel] [what] [when]` を使います。
+詳細は、Slack の [リマインダーの設定ガイド](https://slack.com/help/articles/208423427-Set-a-reminder) を参照してください。
 
 ### 通知を処理する時間を確保する
 
@@ -133,7 +180,7 @@ Slack リマインダーの完全な情報は [Slack ヘルプ](https://slack.co
 
 簡単です: メッセージを作成中に、紙飛行機アイコンの隣にある矢印アイコンをクリックして、後の時刻にスケジュール設定できます。
 
-Slack でのメッセージスケジューリングの詳細は、[Slack ヘルプ](https://slack.com/help/articles/201457107-Send-and-read-messages#:~:text=hide%20formatting%20tools-,Send%20or%20schedule%20messages,-You%20can%20send) を参照してください。
+Slack でのメッセージスケジューリングの詳細は、[Slack ヘルプ](https://slack.com/help/articles/201457107-Send-and-read-messages) を参照してください。
 
 ### 視覚的な気晴らしを最小化する
 
@@ -143,20 +190,20 @@ Slack でのメッセージスケジューリングの詳細は、[Slack ヘル�
 
 ## Slack ステータス
 
-Slack では「Away」や「Lunch」などの標準メッセージや、カスタムメッセージとお好みの絵文字を使って、GitLab チームメンバー向けに [ステータス](https://slack.com/blog/productivity/set-your-status-in-slack) を設定できます。
+[Slack ステータス](https://slack.com/help/articles/201864558-Set-your-Slack-status-and-availability) を使って、他の GitLab チームメンバーにメッセージと絵文字を共有します。ステータスは、アクティブか離席中かを示す在席状況の表示とは別のものです。
 
 休日や休暇で仕事を離れる場合、[Time Off by Deel](/handbook/people-group/time-off-and-absence/time-off-types/) を使ってステータスを更新できます。
 これは、自分が対応可能かどうかをチームに知らせるのに最適な方法です。
 
 Google Calendar に基づいて Slack ステータスを「会議中」に自動設定するには、[Google Calendar アプリ](https://gitlab.slack.com/apps/ADZ494LHY-google-calendar?next_id=0) を Slack アカウントに追加してください。
 
-### おやすみ時間
+### おやすみ時間 {#do-not-disturb-hours}
 
-Slack は「おやすみ時間」をサポートしているので、夜中や家族の対応中に通知を受けることはありません。
-Slack アプリの左ペイン上部にあるベルをクリックして「おやすみ時間」を設定できます。
-20 分から 24 時間までスヌーズすることもできます。
-注: おやすみ時間は緊急時にはオーバーライドされる可能性があります。
-詳しくは Slack のドキュメントを参照してください。
+集中したいときや仕事を離れているときは、通知を一時停止してください。デスクトップでは、サイドバーのプロフィール写真を選択し、**Notifications** にカーソルを合わせて、期間または **Custom** を選択します。
+
+定期的に通知を止める時間を設定するには、プロフィールメニューから **Preferences** を開き、**Working hours** で通知スケジュールを設定します。
+緊急のダイレクトメッセージでは、送信者は 1 日 1 回、一時停止中でも通知を送信できます。
+Slack の [通知の一時停止とスケジュール設定のガイド](https://slack.com/help/articles/214908388-Pause-your-Slack-notifications) を参照してください。
 
 ## クイックスイッチャー
 
@@ -167,10 +214,9 @@ Mac では <kbd>Cmd</kbd>+<kbd>k</kbd>、Windows または Linux では <kbd>Ctr
 
 ## メッセージ内のリンクのアンファール
 
-Slack には、Slack に投稿されたメッセージに含まれる [リンクをアンファール](https://api.slack.com/docs/message-link-unfurling) する組み込み機能があります。
-これによりメッセージの隣にリンクのプレビューが投稿されます。
-プレビューの左上にある「x」を押すと、アンファールされたリンクのプレビューを削除できます。
-これにより添付の削除を確認するプロンプトが表示され、「Yes, remove」を押せます。
+**アンファール** とは、Slack がメッセージ内の URL の隣にリンクのプレビューを自動表示することです。プレビューには、ページのタイトル、説明、画像などの詳細を表示できます。
+デスクトップでプレビューを削除するには、プレビューにカーソルを合わせ、左側の **x** を選択します。
+Slack の [リンクの共有とプレビューの管理ガイド](https://slack.com/help/articles/204399343-Share-links-and-set-preview-preferences) を参照してください。
 
 ![アンファール添付の削除](/images/tools-and-tips/unfurl-remove.png)
 
@@ -194,11 +240,16 @@ GitLab テーマをセットアップするには、自分自身に次のメッ�
 ## Slack アプリ
 
 多くのアプリケーションが Slack と統合できます。
-推奨されるアプリ:
+これらのアプリを、ミーティングのリマインダー、情報の検索、チームのワークフローに使ってください。
+キーワードへの自動応答については、[Slackbot](#slackbots) セクションで別途説明しています。
 
-1. Google Calendar - カレンダーを Slack と統合することで、ミーティングに関する通知を Slack で直接受け取れます。
-最も重要なのは、ミーティングが始まる 1 分前に、Zoom で開催されるミーティングへの参加リンクを含むミーティング情報のメッセージを受け取ることです。
-任意のメッセージフィールドに /gcal とタイプして統合をセットアップできます。
+- **[Google Calendar](/handbook/eta/corporate-it/end-user-services/supported-apps/google-workspace/google-calendar/)** - カレンダーを Slack と統合することで、ミーティングに関する通知を Slack で直接受け取れます。
+  最も重要なのは、ミーティングが始まる 1 分前に、Zoom で開催されるミーティングへの参加リンクを含むミーティング情報のメッセージを受け取ることです。
+  任意のメッセージフィールドに `/gcal` とタイプして統合をセットアップできます。
+- **Workday** - Slack 連携を通じて休暇を入力します。ハンドブックの [Workday への PTO の入力手順](/handbook/people-group/time-off-and-absence/time-off-types/#how-to-enter-pto-in-workday) に従ってください。
+- **Claude** - 文章の下書き、推論、コーディングの支援を受けられます。一般的なアクセス方法と使用方法については、[ハンドブックの Claude ガイド](/handbook/eta/ai/tools/claude/) を参照してください。
+- **Glean** - チャンネル内で `/glean` を使って GitLab の社内ナレッジを検索したり、`@Glean` をメンションして質問したりできます。Slack のセットアップと応答設定については、[ハンドブックの Glean ガイド](/handbook/eta/ai/tools/glean/) を参照してください。
+- **GitLab Duo** - 有効になっている場合は Slack で GitLab Duo を使って、プロジェクトに関する質問や議論の要約を行えます。前提条件と使用手順については、[Slack の GitLab Duo のドキュメント](https://docs.gitlab.com/user/project/integrations/gitlab_slack_application/#gitlab-duo) を参照してください。
 
 ### Slack に新しいアプリを追加する必要がある場合
 
@@ -211,7 +262,7 @@ GitLab はアプリのインストール能力を制限することを選択し�
 
 **これはレビューまたは承認されていない新しいアプリにのみ必要です。** リクエストが Slack でアプリケーションがどう動作するかについて新しいプロセスを追加したり既存のプロセスを更新したりすることである場合は、私たちの [Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/) プロセスを参照してください。
 
-## Slackbot
+## Slackbot {#slackbots}
 
 私たちはよくある質問への対応に役立つ Slackbot をいくつか持っており、その他にもインクルーシブな言葉遣いを保ち、私たちの [ダイバーシティ・インクルージョン・ビロンギング・バリュー](/handbook/values/#diversity-inclusion) と密接に整合させるのに直接役立つ Slackbot もあります。
 以下のリストはダイバーシティ・インクルージョン・ビロンギングのために使うものと、使うべき推奨される変更を反映したものです。このリストは代表的なもので完全ではありません。リスト上の用語はイテレーションを重ねるにつれて追加・削除されていきます。

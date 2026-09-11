@@ -9,10 +9,10 @@ approvers: [ "" ]
 owning-stage: "~devops::data stores"
 participating-stages: []
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/data_retention_policy_framework/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T11:39:25+02:00"
-translated_at: "2026-08-14T10:12:00+09:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/data_retention_policy_framework/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+lastmod: "2026-09-10T14:45:41+02:00"
+translated_at: "2026-09-11T12:49:40+00:00"
 translator: codex
 stale: false
 ---
@@ -71,7 +71,7 @@ stale: false
   を実現できない場合。パーティション化を不可能にする具体的な技術的制約を `work_item` で説明しなければなりません。
 
 削除が技術的に難しいというだけでは、それ自体は有効な除外理由に**なりません**。データを削除できるテーブルは、
-たとえ手順が煩雑だったりエンジニアリング作業が必要だったりしても除外されません。`delete_rows`（BBO）を使用し、
+たとえ手順が煩雑だったりエンジニアリング作業が必要だったりしても除外されません。`delete_rows`（[バックグラウンド操作](https://docs.gitlab.com/development/database/background_operations/)）を使用し、
 理由を `work_item` に記録します。例外は `technical_complexity` で、パーティション化が不可能な大規模テーブル専用です。
 その制約は `work_item` で説明する必要があります。
 
@@ -100,7 +100,7 @@ stale: false
 **指定可能な値：**
 
 1. `drop_partition` — テーブルをパーティション化し、`retention_window` を過ぎたパーティションをドロップします。
-1. `delete_rows`（BBO）— 削除後はデータを取得できません。
+1. `delete_rows`（[バックグラウンド操作](https://docs.gitlab.com/development/database/background_operations/)）— 削除後はデータを取得できません。
 1. `transient_data` — ユーザーまたは機能のライフサイクルに関連付けられ、そのライフサイクルの一部としてすでに削除されるデータです。
 1. `none` — テーブルは保持の対象外です。`exclude.reason` が設定されている場合のみ有効です（[除外](#exclude)を参照）。
 

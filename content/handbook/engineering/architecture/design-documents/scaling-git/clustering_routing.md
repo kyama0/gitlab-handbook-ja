@@ -7,10 +7,10 @@ authors: [ "@jamesliu-gitlab" ]
 owning-stage: "~group::gitaly"
 participating-stages: [ "~group::git" ]
 toc_hide: false
-upstream_path: /handbook/engineering/architecture/design-documents/scaling-git/clustering_routing/
-upstream_sha: "a2af0b1d81734a87d89ce13f0302597755181359"
-lastmod: "2026-08-04T10:51:45-07:00"
-translated_at: "2026-08-05T06:33:12+09:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/scaling-git/clustering_routing/"
+upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
+lastmod: "2026-09-11T05:17:06Z"
+translated_at: "2026-09-11T12:49:40+00:00"
 translator: codex
 stale: false
 ---
@@ -59,7 +59,7 @@ MVP をお客様へ展開し、クラスターが実際にどのように動作�
 1. 特定のリポジトリに対してライターを厳密に 1 つだけに制限すること。
 1. 特定のリポジトリに対する同時操作の書き込み直列化。
 
-つまり、特定のシナリオでは、複数の Gitaly ノードが特定のリポジトリに同時書き込みを行う可能性があります。マニフェストポインターの更新時に競合が発生する可能性があり、これは別途対処します。
+つまり、特定のシナリオでは、複数の Gitaly ノードが特定のリポジトリに同時書き込みを行う可能性があります。次の世代オブジェクトの書き込み時に競合が発生する可能性があり、これは別途対処します。
 
 ローカルの Gitaly ディスクは永続ストレージの信頼できる唯一の情報源ではなくなるため、実装、デバッグ、運用がより簡単なアーキテクチャを実現するためのトレードオフとして、これらは許容できます。
 
