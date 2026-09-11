@@ -1,12 +1,12 @@
 ---
-title: "GitLab LTD (UK) Benefits"
+title: "GitLab LTD (UK) の福利厚生"
 description: "イギリスを拠点とするチームメンバー向けの GitLab LTD (UK) の福利厚生です。"
-upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:37:44Z"
+upstream_path: "/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:22:25+00:00"
 translator: claude
 stale: false
-lastmod: "2026-06-15T14:21:35-07:00"
+lastmod: "2026-09-11T12:52:41-07:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -105,7 +105,7 @@ AXA PPP からの確認に 7-10 営業日かかります。月の 24 日まで�
 
 - Total Rewards: total-rewards@gitlab.com
 - Willis Towers Watson: Lisa.Holland@wtwco.com
-- 請求サポートには [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- 請求サポートには [Compass](https://app.serval.com/new-request)
 
 </details>
 
@@ -121,7 +121,7 @@ AXA PPP からの確認に 7-10 営業日かかります。月の 24 日まで�
 <details markdown="1">
 <summary>視力検査の払い戻しプロセス</summary>
 
-1. 領収書を [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) 経由で Total Rewards に承認のために提出
+1. 領収書を [Compass](https://app.serval.com/new-request) 経由で Total Rewards に承認のために提出
 2. Total Rewards により承認された後、Total Rewards の承認を添付して Navan で経費を提出してください
 
 </details>
@@ -129,7 +129,7 @@ AXA PPP からの確認に 7-10 営業日かかります。月の 24 日まで�
 <details markdown="1">
 <summary>矯正レンズの払い戻しプロセス</summary>
 
-1. 処方箋を [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) 経由で Total Rewards に承認のために提出
+1. 処方箋を [Compass](https://app.serval.com/new-request) 経由で Total Rewards に承認のために提出
 2. Total Rewards により承認された後、Total Rewards の承認を添付して Navan で経費を提出してください
 
 </details>
@@ -222,7 +222,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <summary>アクセス方法</summary>
 
 - Leaves チームが不在の 6 週目に請求プロセスを開始するために連絡します
-- それ以前に質問がある場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) 経由で Leaves チームにお問い合わせください
+- それ以前に質問がある場合は、[Compass](https://app.serval.com/new-request) 経由で Leaves チームにお問い合わせください
 - 標準の税控除を伴う通常の給与のように支払われます
 
 </details>
@@ -245,13 +245,13 @@ GitLab は Scottish Widows との Group Personal Pension Plan を提供してお
 
 以下の場合に自動加入:
 
-- 年間 £10,000 以上の収入がある
+- 年間 £10,000 を超える収入がある
 - 22 歳以上である
 - State Pension Age 未満である
 
 従業員がこれらの基準を満たさない場合、Entitled Worker（年間 £6,240 未満の収入）または Non-Eligible Jobholder（年間 £6,240〜£10,000 の収入）と見なされます。
 
-Entitled Worker は、年金制度に加入する機会を提供されなければなりません。Entitled Worker は希望する場合、年金制度に拠出することができます。ただし、GitLab に拠出する義務はありません。
+Entitled Worker は、年金制度に加入する機会を提供されなければなりません。Entitled Worker は希望する場合、年金制度に拠出することができます。ただし、GitLab が拠出する義務はありません。
 
 Non-Eligible Jobholder は、自動加入制度にオプトインする機会を提供されなければなりません。
 
@@ -276,7 +276,7 @@ Non-Eligible Jobholder は、自動加入制度にオプトインする機会を
 
 - 自動加入 — 給与処理後 14 日以内にウェルカムパックが届きます
 - Scottish Widows [ポータル](https://www.scottishwidows.co.uk/personal) でアカウントにアクセス
-- [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=7b018859478c069067429ee0026d4352) 経由で拠出を増やす
+- [Compass](https://app.serval.com/new-request) 経由で拠出を増やす
 
 オンボーディング中に GitLab People Operations が以下のプロセスに従ってチームメンバーを年金制度に登録します:
 
@@ -294,7 +294,7 @@ Non-Eligible Jobholder は、自動加入制度にオプトインする機会を
 <details markdown="1">
 <summary>給与犠牲</summary>
 
-National Insurance 拠出を節約しながら年金を構築できます。2022 年 12 月 13 日以降に入社したチームメンバーは自動的に登録されます。それ以前の入社者は [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=a3e7bb0d474c069067429ee0026d4328) 経由でオプトインできます。
+National Insurance 拠出を節約しながら年金を構築できます。2022 年 12 月 13 日以降に入社したチームメンバーは自動的に登録されます。それ以前の入社者は [Compass](https://app.serval.com/new-request) 経由でオプトインできます。
 
 **給与犠牲 FAQ**
 
@@ -325,7 +325,7 @@ National Insurance 拠出を節約しながら年金を構築できます。2022
 
 - あなたの拠出は給与の割合であるため、金額は基本給与に応じて自動的に増減します。これらの拠出は給与から差し引かれ、税控除が含まれます。
 
-- 拠出割合を増やすには、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=7b018859478c069067429ee0026d4352) 経由で Non-US Payroll チームにご連絡ください。会社の拠出は上記のとおり固定のままです。標準の **Annual Allowance** は税年度内に年金プランに行われたすべての拠出（雇用主と従業員）に適用されます。未使用の手当は最大 3 つの税年度まで繰り越すことができます。現在の料金は [HMRC Pension Schemes rates ページ](https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates) に公開されています。Adjusted Income が閾値限度を超える場合（現在の料金は [HMRC Pension Schemes rates ページ](https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates) で利用可能）、または Defined Contribution 年金制度から「柔軟にアクセス」する給付がある場合、Annual Allowance が削減される可能性があります。詳細については [Annual Allowance Fact Sheet](https://drive.google.com/file/d/1MMA-0wfzUsO70pBsweDAHK-FVc-P_iR1/view?usp=sharing) を参照してください。
+- 拠出割合を増やすには、[Compass](https://app.serval.com/new-request) 経由で Non-US Payroll チームにご連絡ください。会社の拠出は上記のとおり固定のままです。標準の **Annual Allowance** は税年度内に年金プランに行われたすべての拠出（雇用主と従業員）に適用されます。未使用の手当は最大 3 つの税年度まで繰り越すことができます。現在の料金は [HMRC Pension Schemes rates ページ](https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates) に公開されています。Adjusted Income が閾値限度を超える場合（現在の料金は [HMRC Pension Schemes rates ページ](https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates) で利用可能）、または Defined Contribution 年金制度から「柔軟にアクセス」する給付がある場合、Annual Allowance が削減される可能性があります。詳細については [Annual Allowance Fact Sheet](https://drive.google.com/file/d/1MMA-0wfzUsO70pBsweDAHK-FVc-P_iR1/view?usp=sharing) を参照してください。
 
 - **Relief at Source のチームメンバーのみ**: これらの割合は [Relief at Source](https://www.gov.uk/workplace-pensions/managing-your-pension) 方式を使用した総額の割合です。基本税率税控除は年金プロバイダーによって追加されるため、給与明細上の金額は通常、従業員の拠出の 80% である純額になります。
 
@@ -350,7 +350,7 @@ National Insurance 拠出を節約しながら年金を構築できます。2022
 <details markdown="1">
 <summary>再加入</summary>
 
-制度への再加入を決定した場合、HelpLab [チケット](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=a3e7bb0d474c069067429ee0026d4328) を提出することで行えます。レターまたはあなたの個人メールアドレスからメールを書くように求められます。レターには「I confirm I personally submitted this notice to join a workplace pension scheme.」というフレーズを含める必要があります。12 か月の間に 1 回のみ再加入できます。
+制度への再加入を決定した場合、[Compass](https://app.serval.com/new-request)でチケットを提出することで行えます。レターまたはあなたの個人メールアドレスからメールを書くように求められます。レターには「I confirm I personally submitted this notice to join a workplace pension scheme.」というフレーズを含める必要があります。12 か月の間に 1 回のみ再加入できます。
 
 </details>
 
@@ -483,7 +483,7 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 
 - 最大 52 週間の休暇が利用可能
 - チームメンバーは Statutory Adoption Pay を最大 39 週間受け取ることができます
-- チームメンバーは、子と一致した週までに少なくとも 26 週間 GitLab で連続雇用されている必要があります。
+- チームメンバーは、養子となる子とのマッチングが成立した週までに少なくとも 26 週間 GitLab で連続雇用されている必要があります。
 - 適格チームメンバーは、最初の 6 週間は平均週収入の 90%（税引前）、その後 33 週間は £194.32 または平均週収入の 90% のうち低い方を受け取る権利があります
 
 </details>
@@ -524,7 +524,7 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 <summary>休暇権利</summary>
 
 - すべてのチームメンバーが雇用初日から利用可能
-- チームメンバーのパートナー（子の母親または主な養親）が子の生後 1 年または養子縁組内に死亡した場合に適用されます
+- チームメンバーのパートナー（子の母親または主な養親）が子の出生または養子縁組から 1 年以内に死亡した場合に適用されます
 - 雇用保護された休暇は最大 52 週間
 - 休暇は子の世話のために使用する必要があります
 
@@ -665,5 +665,5 @@ Justice of the Peace であるチームメンバーは、職務を遂行する�
 
 福利厚生に関するご質問は、サポートチームまでお問い合わせください:
 
-- 福利厚生: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- 福利厚生: [Compass](https://app.serval.com/new-request)
 - 欠勤休暇: leaves@gitlab.com

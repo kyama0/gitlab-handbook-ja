@@ -2,12 +2,12 @@
 title: "CI/CD キャンペーン"
 description: "CI/CD キャンペーンについて知っておくべきことすべて。"
 twitter_image: '/images/tweets/handbook-marketing.png'
-upstream_path: /handbook/marketing/campaigns/cicd/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
+upstream_path: "/handbook/marketing/campaigns/cicd/"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:12:37+00:00"
 translator: claude
 stale: false
-lastmod: "2024-11-26T00:36:40+00:00"
+lastmod: "2026-09-11T17:02:17+02:00"
 ---
 
 ## キャンペーン概要 {#overview}
@@ -24,7 +24,7 @@ lastmod: "2024-11-26T00:36:40+00:00"
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-![''](/images/handbook/marketing/marketing-programs/CI-CD_Campaign_Flow.png.png)
+![''](/images/handbook/marketing/marketing-programs/CI-CD_Campaign_Flow.png)
 
 ### キャンペーンページとアクティビティ {#campaign-activities}
 
@@ -34,9 +34,9 @@ lastmod: "2024-11-26T00:36:40+00:00"
 
 常時稼働のリードジェネレーション:
 
-- :books: コンテンツ [[eBook] 単一アプリケーション CI/CD のメリット](https://about.gitlab.com/why/use-continuous-integration-to-build-and-test-faster/)
-- :books: コンテンツ [[eBook] CI/CD を近代化する](https://about.gitlab.com/resources/ebook-fuel-growth-cicd/)
-- :video_camera: オンデマンドウェビナー [[Demo + Q&A] GitLab で継続的インテグレーション](https://www.brighttalk.com/webcast/17523/461825?utm_source=GitLab&utm_medium=brighttalk&utm_campaign=461825)
+- :books: コンテンツ [[電子書籍] 単一アプリケーション CI/CD のメリット](https://about.gitlab.com/why/use-continuous-integration-to-build-and-test-faster/)
+- :books: コンテンツ [[電子書籍] CI/CD を近代化する](https://about.gitlab.com/resources/ebook-fuel-growth-cicd/)
+- :video_camera: オンデマンドウェビナー [[デモ + Q&A] GitLab で継続的インテグレーション](https://www.brighttalk.com/webcast/17523/461825?utm_source=GitLab&utm_medium=brighttalk&utm_campaign=461825)
 
 ## リサーチ&準備 {#research-prep}
 
@@ -56,7 +56,7 @@ lastmod: "2024-11-26T00:36:40+00:00"
   - チームが CI/CD を始めやすい簡単なエントリ
   - 追加情報:
     - DevOps Manager: 組織のアプリケーションデリバリーに不可欠な DevOps ツールとインフラを効果的にサポートする必要があります。開発チームに最適なツール、環境、統合を提供して成功させることを重視しています。個人貢献者として(機能/バグ修正)の開発作業の優先順位付けと、開発チームのサポートに苦労しています。
-    - Dev Lead (Development Manager): 開発チームのキャパシティと優先事項に常に注意を払う必要があります。生産性の向上と進捗を妨げる Issue のブロック解除に重点を置いています。開発期限と割り当てタスクが急速にまたは頻繁に変わると苦労します。また、機能デリバリーの作業が show-stopping なバグやブロッカーで中断されたときも苦労します。
+    - Dev Lead (Development Manager): 開発チームのキャパシティと優先事項に常に注意を払う必要があります。生産性の向上と進捗を妨げる問題の解消に重点を置いています。開発期限と割り当てタスクが急速にまたは頻繁に変わると苦労します。また、機能デリバリーの作業が、進行を止める重大なバグやブロッカーで中断されたときも苦労します。
 - **理想的な状態:**
   - Dev と Ops がより良く連携できる権限を持ち、もはや「壁の向こうに物を投げる」ことはない
   - 可視性とコミュニケーションの改善、より速いフィードバックを得て、より頻繁に小さなコード変更を統合(ビルド破壊変更のリスクが少ない)
@@ -160,9 +160,9 @@ lastmod: "2024-11-26T00:36:40+00:00"
 
 | ステージ | アセット 1 | アセット 2| アセット 3 |
 | ------ | ------ | -------| -------|
-| 認知| [[WEBCAST] Making the case for CI/CD in your organization](https://about.gitlab.com/webcast/cicd-in-your-organization/) | [[WEBCAST] Scaled continuous integration & delivery](https://about.gitlab.com/resources/downloads/gitlab-scaled-ci-cd-whitepaper.pdf) | [[WEBCAST] Mastering continuous software development](https://www.youtube.com/watch?v=GCYLqbxm70A)  |
-| 検討 | [[VIDEO] Getting started with GitLab CI/CD](https://www.youtube.com/watch?v=sIegJaLy2ug&feature=youtu.be) | [[VIDEO] Build and test automation](https://youtu.be/6207TKNGgJs) | [[VIDEO] GitLab for complex CI/CD: Robust, visible pipelines](https://www.youtube.com/watch?v=qy8A7Vp_7_8) |
-| 購入| [[REFERENCE] Goldman Sachs improves from 1 build every 2 weeks to 1000+ per day](https://about.gitlab.com/customers/goldman-sachs/)| [[REFERENCE] Paessler AG switched from Jenkins to GitLab](https://about.gitlab.com/customers/paessler/)| [[REFERENCE] Hotjar - Time of CI builds decreased by 30%, improved to 2-15 deploys per day, and 50% deployment time saved](https://about.gitlab.com/customers/hotjar/)|
+| 認知| [[ウェブキャスト] 組織での CI/CD 導入の必要性を示す](https://about.gitlab.com/webcast/cicd-in-your-organization/) | [[ウェブキャスト] 継続的インテグレーションとデリバリーのスケール](https://about.gitlab.com/resources/downloads/gitlab-scaled-ci-cd-whitepaper.pdf) | [[ウェブキャスト] 継続的ソフトウェア開発をマスターする](https://www.youtube.com/watch?v=GCYLqbxm70A)  |
+| 検討 | [[動画] GitLab CI/CD を使い始める](https://www.youtube.com/watch?v=sIegJaLy2ug&feature=youtu.be) | [[動画] ビルドとテストの自動化](https://youtu.be/6207TKNGgJs) | [[動画] 複雑な CI/CD のための GitLab：堅牢で可視化されたパイプライン](https://www.youtube.com/watch?v=qy8A7Vp_7_8) |
+| 購入| [[事例] Goldman Sachs が 2 週間に 1 回のビルドから 1 日 1,000 回以上へ改善](https://about.gitlab.com/customers/goldman-sachs/)| [[事例] Paessler AG が Jenkins から GitLab に移行](https://about.gitlab.com/customers/paessler/)| [[事例] Hotjar - CI ビルド時間を 30% 短縮し、1 日 2〜15 回のデプロイへ改善、デプロイ時間を 50% 削減](https://about.gitlab.com/customers/hotjar/)|
 
 #### マネージャー {#buyer-journey-manager}
 
@@ -170,9 +170,9 @@ lastmod: "2024-11-26T00:36:40+00:00"
 
 | ステージ | アセット 1 | アセット 2| アセット 3 |
 | ------ | ------ | -------| -------|
-| 認知| [[EBOOK] Modernize your CI/CD](https://about.gitlab.com/resources/ebook-fuel-growth-cicd/) | [[WEBCAST] Accelerating Software Delivery: Keys for a Digital Transformation](https://www.youtube.com/watch?v=Igu9DKpfweQ) | [[WEBCAST] Simplify Continuous Integration and Delivery Pipelines with New Tools](https://www.youtube.com/watch?v=esZSETVu70I)  |
-| 検討 | [[EBOOK] Benefits of single application CI/CD](https://about.gitlab.com/resources/ebook-single-app-cicd/) | [[REPORT] The Total Economic Impact™ of GitLab](https://about.gitlab.com/resources/study-forrester-tei-gitlab-ultimate/) | [[VIDEO] GitLab CI/CD Overview](https://www.youtube.com/watch?v=wsbSvLyC2Z8) |
-| 購入| [[ANALYST] The 2019 Forrester Wave™: Cloud-Native Continuous Integration Tools](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/4203)| [[REFERENCE] How Jaguar Land Rover embraced CI to speed up builds](https://about.gitlab.com/blog/2018/07/23/chris-hill-devops-enterprise-summit-talk/)| [COMPETITIVE] GitLab vs. Jenkins |
+| 認知| [[電子書籍] CI/CD を近代化する](https://about.gitlab.com/resources/ebook-fuel-growth-cicd/) | [[ウェブキャスト] ソフトウェアデリバリーの加速：デジタルトランスフォーメーションの鍵](https://www.youtube.com/watch?v=Igu9DKpfweQ) | [[ウェブキャスト] 新しいツールで継続的インテグレーションとデリバリーのパイプラインを簡素化する](https://www.youtube.com/watch?v=esZSETVu70I)  |
+| 検討 | [[電子書籍] 単一アプリケーション CI/CD のメリット](https://about.gitlab.com/resources/ebook-single-app-cicd/) | [[レポート] GitLab の総経済効果™](https://about.gitlab.com/resources/study-forrester-tei-gitlab-ultimate/) | [[動画] GitLab CI/CD の概要](https://www.youtube.com/watch?v=wsbSvLyC2Z8) |
+| 購入| [[アナリスト] 2019 年 Forrester Wave™：クラウドネイティブ継続的インテグレーションツール](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/4203)| [[事例] Jaguar Land Rover が CI を導入してビルドを高速化した方法](https://about.gitlab.com/blog/2018/07/23/chris-hill-devops-enterprise-summit-talk/)| [競合比較] GitLab と Jenkins |
 
 ### Marketo ナーチャーメール {#nurture-emails}
 
@@ -204,6 +204,6 @@ lastmod: "2024-11-26T00:36:40+00:00"
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-- [Campaign Epic](https://gitlab.com/groups/gitlab-com/marketing/-/epics/741)
-- [Project timeline plan](https://docs.google.com/spreadsheets/d/1a-0P2N8LKxqmMJLKv2ZlUbXXeu7I1dMSfXHWqzl0rg0/edit#gid=1426779885)
-- [Art Work](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/campaigns/use-cases/CI)
+- [キャンペーンエピック](https://gitlab.com/groups/gitlab-com/marketing/-/epics/741)
+- [プロジェクトのタイムライン計画](https://docs.google.com/spreadsheets/d/1a-0P2N8LKxqmMJLKv2ZlUbXXeu7I1dMSfXHWqzl0rg0/edit#gid=1426779885)
+- [アートワーク](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/campaigns/use-cases/CI)

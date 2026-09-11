@@ -2,9 +2,9 @@
 title: AI Clients
 description: "AI Clients ステージは、開発者とユーザーが GitLab Duo の AI 機能を利用するサーフェスを担当します。これには、エディター拡張機能、Duo CLI、Duo Chat の Web インターフェース、共有クライアント SDK が含まれます。"
 upstream_path: /handbook/engineering/ai/ai-clients/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:19:17+09:00"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+lastmod: "2026-09-11T15:01:30+02:00"
+translated_at: "2026-09-11T21:09:10+00:00"
 translator: codex
 stale: false
 ---
@@ -123,6 +123,31 @@ graph TD
 ### 共有カレンダー {#shared-calendar}
 
 AI Clients 共有カレンダー（カレンダー ID：c_673d889354d021f7fa9f20a003b5867185a9bf12989b5eaacbc8b537cc9ef27c@group.calendar.google.com）
+
+### 休暇の設定
+
+[Workday](https://www.myworkday.com/gitlab/d/home.htmld)は、不在情報の唯一の情報源です。これらの連携を一度設定すると、休暇が Slack と AI Clients 共有カレンダーに自動的に表示されます。
+
+OOO に入るときは、GitLab プロフィールのステータスを `:palm_tree:` に設定し、必要に応じて
+プロフィール名を `John Doe (OOO back on 2030-01-01)` のように変更してください。
+
+#### 1. Workday を Slack に接続する
+
+1. Slack で **アプリ → アプリを参照/管理 → Workday for Slack** に移動します。
+1. アプリの **ホーム** タブを開き、**Workday に接続 → 許可** を選択します。
+1. **休暇を取得** を使用し、案内に従って送信します。申請は Workday に記録されます。
+
+[Slack の Workday アプリで休暇を申請する方法](https://docs.google.com/document/d/1co0-_8YEV2iS7YIFsDdsSqw7ohCd1nNd3HCQU7jTQMo)（社内）と[休暇の種類](/handbook/people-group/time-off-and-absence/time-off-types/)を参照してください。
+
+#### 2. 休暇を Slack と Google Calendar に同期する
+
+休暇データは Workday から Time Off by Deel に渡され、Slack のステータスとカレンダーが更新されます。
+
+1. Slack で **Time Off by Deel → ホーム → 自分のイベント → カレンダー同期** を開きます。
+1. **追加するカレンダー** で **カレンダーを追加** を選択します。
+1. AI Clients 共有カレンダーの ID を追加します：`c_673d889354d021f7fa9f20a003b5867185a9bf12989b5eaacbc8b537cc9ef27c@group.calendar.google.com`
+
+ステージの他のメンバーの休暇を確認できるよう、Google Calendar でも同じカレンダーを登録してください。
 
 ### プロダクトカテゴリ
 

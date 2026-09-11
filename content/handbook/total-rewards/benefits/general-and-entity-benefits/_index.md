@@ -1,12 +1,12 @@
 ---
 title: 一般および事業体別の福利厚生と情報
 description: GitLab が提供する一般および事業体別の福利厚生のリストとその他の事業体別の情報。
-upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:21:42+09:00"
+upstream_path: "/handbook/total-rewards/benefits/general-and-entity-benefits/"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:22:25+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-09-11T12:50:47-07:00"
 ---
 
 
@@ -16,9 +16,9 @@ lastmod: "2026-07-20T13:03:25-03:00"
 
 **事業体別の福利厚生**は、GitLab が事業体を設立しているか、Professional Employer Organizations (PEO) を利用している国のチームメンバーが利用できる追加の福利厚生です。
 
-**ご質問は？** 福利厚生に関するご質問は、当社チーム ([HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b677b7c9474c069067429ee0026d43d1)) までお問い合わせください。
+**ご質問は？** 福利厚生に関するご質問は、当社チーム ([Compass](https://app.serval.com/new-request)) までお問い合わせください。
 
-## 事業体別の福利厚生
+## 事業体別の福利厚生 {#entity-specific-benefits}
 
 雇用所在地に応じて追加の福利厚生が利用できます。詳細情報については、以下から該当する事業体を選択してください:
 
@@ -133,31 +133,31 @@ lastmod: "2026-07-20T13:03:25-03:00"
 
 </details>
 
-#### 育児休職サポート: Parentaly
+#### 育児休職サポート: Parentaly {#parental-leave-support-parentaly}
 
-Parentaly は、強固なカバープランの構築、業務の効果的な引き継ぎ、自信を持っての職場復帰を支援します。テンプレート、パーソナライズされたツールキットと資料、そして数百人を育児休職を通じてサポートしてきた専任の Parentaly エキスパートとの 3～9 セッション（休職前後）にアクセスできます。サインアップ手順は以下に概説されています。
+Parentaly は、強固なカバープランの構築、業務の効果的な引き継ぎ、自信を持っての職場復帰を支援します。テンプレート、パーソナライズされたツールキットと資料、そして数百人を育児休職を通じてサポートしてきた専任の Parentaly Expert との 3～9 セッション（休職前後）にアクセスできます。サインアップ手順は以下に概説されています。
 
 <details markdown="1">
 <summary>プログラムの詳細</summary>
 
 - 性別や方法（養子縁組、代理出産、出産、パートナーが出産）に関係なく、世界中で育児休職を取得するすべてのチームメンバーが利用可能
 - 参加者は育児休職開始の 2～3 ヶ月前にサインアップする必要があります（すでに休職中、または復帰直後に参加することも可能）
-- Parentaly エキスパートとマッチングされ、すべての会話と作業は機密扱いになります
+- Parentaly Expert とマッチングされ、すべての会話と作業は機密扱いになります
 - カバープランを迅速かつ効果的に構築するためのパーソナライズされたチェックリストも提供され、あなたとチームを成功に導きます
-- 復帰時、Parentaly エキスパートは、再ランプアップ、昇進の追求、新しいマネージャーとの関係構築、その他この移行期に出てくるあらゆることなど、最重要となる課題や優先事項のナビゲートを支援します
+- 復帰時、Parentaly Expert は、再ランプアップ、昇進の追求、新しいマネージャーとの関係構築、その他この移行期に出てくるあらゆることなど、最重要となる課題や優先事項のナビゲートを支援します
 - プログラム費用は [Growth and Development ファンド](/handbook/total-rewards/benefits/general-and-entity-benefits/#growth-and-development-fund)から賄われます。サインアッププロセスと資金調達に関するより具体的な情報は、G&D ハンドブックページの[こちら](/handbook/people-group/learning-and-development/growth-and-development/)で確認できます
 - プログラムに関する質問は？ Parentaly (info@parentaly.com) までメールしてください
 
 **サインアップ方法:**
 
-1. プログラムの資金調達方法を[こちら](/handbook/people-group/learning-and-development/growth-and-development/#parentaly)で学び、HelpLab で Parentaly G&D リクエストを開きます。
+1. プログラムの資金調達方法を[こちら](/handbook/people-group/learning-and-development/growth-and-development/#parentaly)で学び、Compass で Parentaly G&D リクエストを開きます。
 1. [こちらをクリックしてサインアップ](https://www.parentaly.com/join/coaching-program/gitlab) - 請求目的で Benefits チームと氏名を共有しますが、その他の詳細はすべて機密扱いとなります。
 
 </details>
 
 #### 不妊治療と家族計画
 
-チームメンバーは、利用可能な不妊治療と家族計画の福利厚生を理解するために、[事業体別](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits)の医療プランを参照できます（該当する場合）。ご質問がある場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) までお問い合わせください。
+チームメンバーは、利用可能な不妊治療と家族計画の福利厚生を理解するために、[事業体別](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits)の医療プランを参照できます（該当する場合）。ご質問がある場合は、[Compass](https://app.serval.com/new-request) までお問い合わせください。
 
 GitLab は、福利厚生プラン全体を評価・強化する中で、不妊治療の福利厚生をイテレーションし続ける予定です。将来的に、GitLab はチームメンバーが家族を増やせるよう、不妊治療と家族計画サービス（養子縁組サポートを含む）の拡大を目指します。
 
@@ -203,7 +203,7 @@ GitLab は、複数の地域（オーストラリアと英国を含む）にわ�
 
 これらのプログラムは通常、チームメンバーが第三者プロバイダーを通じて、税引前給与を使用して車両費用（購入、燃料、保険、メンテナンス）をカバーすることを可能にします。一部の地域では、オーストラリアの[適格な電気自動車に対する 0% FBT 免除](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/types-of-fringe-benefits/fbt-on-cars-other-vehicles-parking-and-tolls/electric-cars-exemption)や英国の電気自動車給与減額制度などの政府インセンティブが、これらのプログラムを特に魅力的にしています。
 
-法務および財務部門と協議の結果、GitLab は次の理由により実施しないことを決定しました:
+Legal および Finance と協議の結果、GitLab は次の理由により実施しないことを決定しました:
 
 - **責任のリスク:** 車両に関連する取り決めは、間接的であってもオールリモート組織としての GitLab の構造内では管理が困難な運用上および財務上のリスクを生み出します。
 - **財務報告の複雑さ:** FBT 報告義務、給与控除管理、継続的なコンプライアンス要件は、GitLab の現段階の運用モデルと整合しない財務的および管理上の複雑さを導入します。
@@ -212,7 +212,7 @@ GitLab は、複数の地域（オーストラリアと英国を含む）にわ�
 
 </details>
 
-#### 成長と能力開発のための基金
+#### 成長と能力開発のための基金 {#growth-and-development-fund}
 
 あなたの専門的な成長は私たちにとって重要であり、チーム全体を強化します。そのため、当社では毎年最大 10,000 ドルをあなたのキャリア開発のために特別に提供しています。
 
@@ -269,9 +269,9 @@ GitLab は、予期されるものであれ予期せぬものであれ、休職�
 
 [はじめに: Tilt プラットフォームのツアー](https://www.loom.com/share/8a725a7c2a8b4b50bd82e746541e4feb?sid=090da1bb-d493-46c7-8737-508686b1005e)
 
-**ピープルマネージャー向け:**
+**People Manager 向け:**
 
-- **ピープルマネージャーリソース:** ピープルマネージャーは、チームメンバーの休職状況や復職詳細のリマインダーを簡単に確認できます。
+- **People Manager リソース:** People Manager は、チームメンバーの休職状況や復職詳細のリマインダーを簡単に確認できます。
 
 [Tilt ウォークスルー動画](https://www.loom.com/share/5752ba41afc1414eb87c94a1781f6b67?sid=03be40ff-272c-413a-999a-82b68607fa33)
 
@@ -359,7 +359,7 @@ Meal Train の開始方法と参加手順については、[GitLab Meal Train �
 
 </details>
 
-#### GitLab Cares - 災害救援プログラム
+#### GitLab Cares - 災害救援プログラム {#gitlab-cares---disaster-relief-program}
 
 自然災害や予期せぬ緊急事態が経済的困難を引き起こす場合、GitLab のチームメンバー救援プログラムが支援します。E4E Relief とのパートナーシップを通じて管理されるこのプログラムは、極度の困窮時にチームメンバーとその家族に短期的な経済的支援を提供します。
 
@@ -398,7 +398,7 @@ GitLab は、喪失と悲嘆をナビゲートすることが人生で最も困�
 
 **マネージャー向け**:
 
-- ピープルマネージャーリソース: 悲嘆しているチームメンバーをサポートするための専門コンテンツ
+- People Manager リソース: 悲嘆しているチームメンバーをサポートするための専門コンテンツ
 - コーチングサポート: 重大な状況での専門家のガイダンスへのアクセス
 - コミュニケーションツール: 繊細な会話のためのテンプレートとガイド
 - チームサポート戦略: 困難な時期にチームの結束を維持するためのベストプラクティス

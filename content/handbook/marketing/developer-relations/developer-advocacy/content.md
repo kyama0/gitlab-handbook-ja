@@ -2,11 +2,11 @@
 title: "Developer Advocates のコンテンツライブラリとワークフロー"
 description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T13:29:37+09:00"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:16:35+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-11T11:28:52-04:00"
 ---
 
 Developer Advocacy チームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)に従って Issue で追跡されます。
@@ -48,9 +48,6 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 
 Developer Advocacy チームは、GitLab の機能、ユースケース、ベストプラクティスを扱うブログ記事を定期的に公開しています。以下の著者名をクリックすると、その著者のブログ記事の全リストが表示されます。
 
-- [Cesar Saavedra](https://about.gitlab.com/blog/authors/cesar-saavedra/)
-  - [GitLab Duo Agent Platform with Claude accelerates development](https://about.gitlab.com/blog/gitlab-duo-agent-platform-with-claude-accelerates-development/)
-  - [Vibe coding with GitLab Duo Agent Platform: Issue to MR Flow](https://about.gitlab.com/blog/vibe-coding-with-gitlab-duo-agent-platform-issue-to-mr-flow/)
 - [Daniel Helfand](https://about.gitlab.com/blog/authors/daniel-helfand/)
   - [Variable and artifact sharing in GitLab parent-child pipelines](https://about.gitlab.com/blog/variable-and-artifact-sharing-in-gitlab-parent-child-pipelines/)
   - [Get started with GitLab Duo Agentic Chat in the web UI](https://about.gitlab.com/blog/get-started-with-gitlab-duo-agentic-chat-in-the-web-ui/)

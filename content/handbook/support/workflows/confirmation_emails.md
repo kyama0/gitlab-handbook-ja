@@ -3,12 +3,12 @@ title: 確認メール
 category: GitLab.com
 subcategory: Accounts
 description: "お客様から確認メールを受信していないと報告されたケースのワークフロー"
-upstream_path: /handbook/support/workflows/confirmation_emails/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:04:40+09:00"
+upstream_path: "/handbook/support/workflows/confirmation_emails/"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:20:13+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-09-11T17:02:17+02:00"
 ---
 
 ## 概要
@@ -26,20 +26,20 @@ lastmod: "2026-07-14T15:22:25-05:00"
 
 問題を解決する前に、まず該当するアカウントを特定する必要があります。これは、[GitLab User Lookup App](#method-1-check-gitlab-user-lookup-app) または [GitLab Admin](#method-2-check-gitlab-admin) のいずれかを確認することで実行できます。
 
-### Method 1: GitLab User Lookup Appを確認する {#method-1-check-gitlab-user-lookup-app}
+### 方法 1: GitLab User Lookup App を確認する {#method-1-check-gitlab-user-lookup-app}
 
 1. チケットを表示中、Zendesk インターフェースの右上にある `Apps` ボタンをクリックします。
 1. `GitLab User Lookup` アプリまでスクロールダウンします。
 1. 結果を確認します。アプリが、ユーザーから提供されたユーザー名またはメールアドレスに関連するアカウントを発見したかを確認します。ユーザー名検索のみで結果が返された場合、提供された `Admin Link` に移動して、アカウントに記載されているメールアドレスを確認します。
-1. Check GitLab Admin の Step 2 に進みます。
+1. 「GitLab Admin を確認する」の手順 2 に進みます。
 
 **アカウントが見つからなかった場合** は、Zendeskマクロ [`Support::SaaS::Gitlab.com::Account does not exist`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Account%20does%20not%20exist.md?ref_type=heads) を使用するか、適用可能と判断する場合は [`General::Verify account self-managed or .com`](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/macros/-/blob/master/macros/active/General/Verify%20account%20self-managed%20or%20.com.yaml) を使用し、ユーザーからのフォローアップを待ちます。
 
-### Method 2: GitLab Adminを確認する {#method-2-check-gitlab-admin}
+### 方法 2: GitLab Admin を確認する {#method-2-check-gitlab-admin}
 
 1. GitLab.com の Admin Area で、ユーザー名で [ユーザーを検索](https://gitlab.com/admin/users) してアカウントが存在することを確認します。または、ブラウザで [API](https://gitlab.com/api/v4/users?search=email@email.test) または [ChatOps](/handbook/support/workflows/chatops#user) を使用して検索します。
 1. メールアドレスをユーザーが報告したものと照合し、次のいずれかの修正を実行します:
-    - 抑制（suppression）が原因で確認メールを受信していない可能性があります。👉 [Stage 2: Fix](#stage-2-fix) を参照してください。
+    - 抑制（suppression）が原因で確認メールを受信していない可能性があります。👉 [Stage 2: 修正](#stage-2-fix) を参照してください。
 
 ## **Stage 2:** 修正 {#stage-2-fix}
 
@@ -95,7 +95,7 @@ Zendesk は自動的に suppression を確認し、見つかった場合は削�
 
 問題が修正された後、メールがアカウント上のプライマリメールである場合、ユーザーに [新しい確認メール](https://gitlab.com/users/confirmation/new) を送信できます。その後、ユーザーに新しい確認メールを送信したことを伝え、受信トレイとスパムフォルダを確認するよう依頼します。
 
->**注意:** ユーザーがプライマリメールを変更した場合、これは機能しません。👉 [Secondary Email](#secondary-email) を参照してください。
+>**注意:** ユーザーがプライマリメールを変更した場合、これは機能しません。👉 [セカンダリメール](#secondary-email) を参照してください。
 
 ### セカンダリメール {#secondary-email}
 
@@ -116,7 +116,7 @@ Customers Portal アカウントメールに問題がある場合、ユーザー
 
 ### Mailgun ログを確認する {#checking-mailgun-logs}
 
-NOTE:
+注意:
 `mg.gitlab.com` ドメインには Support のトラブルシューティングに関連するデータが含まれています。このリストはどのページのドロップダウンでもドメインオプションとして表示されません。Send > Sending > Domains の下でドメインを選択する必要があります。デフォルトで表示される email.mg.gitlab.com ドメインがありますが、これは機能しません。
 
 最初の試みでメールシステムが通過できなかった場合（通常はサーバーが存在しないなどと言うため）、メールサーバーはそれ以上のメール送信に suppression をかけます。
@@ -157,7 +157,7 @@ Support Engineer は **Status message**、**Status code** などでフィルタ�
 1. [Mailgunログを確認する](#checking-mailgun-logs) セクションの手順に従って Mailgun でメールを特定します - メールの件名は「Verify your identity」である必要があります。
 1. ログエントリの右端にある省略記号 `...` アイコンをクリックして、ログ詳細にアクセスします。
 1. ログ詳細で、3番目のタブ「quick view」に移動して、フルメールを表示します。
-![Mailgun email body](static/images/support/workflows/assets/mailgun_email_view.png)
+![Mailgun のメール本文](/images/support/workflows/assets/mailgun_email_view.png)
 
 メールを再送信するには:
 
@@ -165,7 +165,7 @@ Support Engineer は **Status message**、**Status code** などでフィルタ�
 
 1. ログエントリの右端の省略記号 `...` アイコンの上で、「Resend message」ボタンをクリックします。
 1. そこからメールアドレスを入力して「Send」を押します。
-![Mailgun resend email](static/images/support/workflows/assets/mailgun_ellipsis_menu.png)
+![Mailgun でのメール再送信](/images/support/workflows/assets/mailgun_ellipsis_menu.png)
 
 ### 単一ドメイン上の複数の suppression を特定する
 
@@ -190,4 +190,4 @@ Mailgun では `Suppressions` セクション内で同じドメイン上の複�
 1. ユーザーのプライマリメールアドレスでパスワードリセットをトリガーします。
 1. オプション - Mailgun に移動し、ユーザーに以下の内容で戻る前にメールが配信されたかを確認します:
 
-> Due to our privacy policies I am unable to reveal what the primary email address is. That being said we have triggered a password reset for the account <username> just now, if you have access to the primary email address for this account you should see an email and be able to perform the password reset steps.
+> 私たちのプライバシーポリシーにより、プライマリメールアドレスをお伝えすることはできません。ただし、ただ今アカウント <username> のパスワードリセットを開始しました。このアカウントのプライマリメールアドレスにアクセスできる場合は、メールを確認し、パスワードリセットの手順を実行できるはずです。

@@ -1,12 +1,12 @@
 ---
 title: Modern Health
 description: GitLab の従業員支援プログラムに関する情報。
-upstream_path: /handbook/total-rewards/benefits/modern-health/
-upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
-translated_at: "2026-05-07T00:00:00Z"
+upstream_path: "/handbook/total-rewards/benefits/modern-health/"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:22:25+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-31T11:49:58-07:00"
+lastmod: "2026-09-11T12:20:05-07:00"
 ---
 
 ## メンタルウェルネスサポート {#mental-wellness-support}
@@ -16,7 +16,7 @@ GitLab は、Modern Health を通じて包括的なメンタルウェルネス�
 **Modern Health について詳しく知る**
 
 <iframe src="https://player.vimeo.com/video/680639730?h=d48b608b3f" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/680639730">Introducing Modern Health</a> from <a href="https://vimeo.com/modernhealth">Modern Health</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p><a href="https://vimeo.com/680639730">Modern Health の紹介</a>、<a href="https://vimeo.com/modernhealth">Modern Health</a> が <a href="https://vimeo.com">Vimeo</a> で公開。</p>
 
 - 詳細なガイダンスは [情報セッション](https://drive.google.com/file/d/10jn8_UoqtMwHpYLaKQpGRfDwgxeN_65h/view?usp=sharing) を参照してください
 
@@ -132,7 +132,7 @@ Modern Health は危機対応リソースではありません。メンタルヘ
 **福利厚生に関する質問**
 
 - Modern Health サポート: help@joinmodernhealth.com
-- GitLab Benefits Team: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- GitLab Benefits Team: [Compass](https://app.serval.com/new-request)
 
 **プライバシーと機密性** あなたのプライバシーは重要です。GitLab は個別の利用データを受け取らず、あなたが Modern Health サービスを利用しているかどうかを把握しません。コーチおよびセラピストとのすべての会話は機密扱いとされ、法律で要求される安全上の懸念に対する標準的な例外があります。
 

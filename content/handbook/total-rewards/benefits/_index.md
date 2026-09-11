@@ -1,12 +1,12 @@
 ---
 title: 福利厚生
 description: GitLab の福利厚生哲学の概要と、質問のサポート
-upstream_path: /handbook/total-rewards/benefits/
-upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
-translated_at: "2026-05-07T00:00:00Z"
+upstream_path: "/handbook/total-rewards/benefits/"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:22:25+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-09-11T12:08:59-07:00"
 ---
 
 ## 関連する福利厚生ページ
@@ -31,7 +31,7 @@ GitLab では、チームメンバーの福利厚生は、理解しやすく、�
 - [全社的・エンティティ/国別の福利厚生](/handbook/total-rewards/benefits/general-and-entity-benefits/) - 全社およびあなたの所在地で利用できる福利厚生の詳細
 - [**マネージャーおよびチームメンバー向けの休暇ツールキット**](/handbook/total-rewards/benefits/parental-leave-toolkit/) - 育児休暇やその他の休職などの人生の節目に対応するための包括的なガイダンス
 
-**直接サポート:** トータルリワードチームは、質問や人生の変化に関するご案内を行います。[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b677b7c9474c069067429ee0026d43d1) からお気軽にご連絡ください。
+**直接サポート:** Total Rewards チームは、質問や人生の変化に関するご案内を行います。[Compass](https://app.serval.com/new-request) からお気軽にご連絡ください。
 
 ### グローバルなアプローチ
 
@@ -103,7 +103,7 @@ GitLab では、チームメンバーの福利厚生は、理解しやすく、�
 #### 6. あなたに情報を提供し続けます
 
 - **大きな変更の場合:** 国別の変更については、実装前に具体的なフィードバックを集めるため、チームメンバー Issue を作成します。必要に応じて労使協議会と協議および/または通知します。
-- **小さな変更の場合:** 軽微な調整（控除額や拠出額の増加など）や法的・必要な変更については、トータルリワードチームが Issue を作成しないことがあります。
+- **小さな変更の場合:** 軽微な調整（控除額や拠出額の増加など）や法的・必要な変更については、Total Rewards チームが Issue を作成しないことがあります。
 - **すべての変更で:** 進捗を追跡し、最終決定にあなたの意見を考慮します
 - **常に:** あなたのフィードバックと、市場データ、予算上の考慮事項、運用上のスケーラビリティ・実現可能性のバランスを取ります
 
