@@ -2,11 +2,11 @@
 title: "Snowflake AI Functions: 利用とコスト管理ガイド"
 description: "GitLab の Enterprise Data Platform において、コストとトークン消費を管理しながら Snowflake AI Functions を効果的に活用する方法"
 upstream_path: "/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-function/"
-upstream_sha: "b751749fb746d2e0131db68b13218fc2e08cf6b2"
-translated_at: "2026-04-29T10:00:00Z"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:12:37+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-13T09:05:35-06:00"
+lastmod: "2026-09-11T17:02:17+02:00"
 ---
 
 ## 目次
@@ -26,7 +26,7 @@ lastmod: "2026-04-13T09:05:35-06:00"
 - [AI Functions アクセス管理 - 標準オペレーション](#ai-functions-access-management---standard-operations)
 - [関連リソース](#related-resources)
 
-## Snowflake AI Functions とは
+## Snowflake AI Functions とは {#what-is-snowflake-ai-functions}
 
 Snowflake AI Functions はビルトインの機械学習機能で、データアナリストやエンジニアが[Enterprise Data Warehouse](/handbook/enterprise-data/platform/snowflake/) 内で直接高度な分析を実行できるようにします。これらの関数は Snowflake のネイティブ AI/ML 機能を活用し、外部ツールや複雑なモデルデプロイを必要とせずにインサイトを提供します。
 
@@ -36,26 +36,26 @@ Snowflake AI Functions はビルトインの機械学習機能で、データア
 - 非構造化データからのインサイト抽出
 - 予測と分類の生成
 - インテリジェントなデータ処理によるデータ品質の向上
-- ビジネス意思決定のための Time-to-insight の加速
+- ビジネス意思決定のためのインサイトを得るまでの時間の短縮
 
 ⚠️ 重要なコスト上の注意: AI Functions はトークンベースの課金を使用しており、標準のウェアハウスクレジットとは別に計算されます。大規模なデータセットを処理する前に必ずコストを見積もってください。
 
-## 目的
+## 目的 {#purpose}
 
 このガイドは、コスト管理を維持しながら Snowflake AI Functions を効果的に使用するための包括的なガイダンスを提供します。トークンベースの課金モデルであることから、GitLab のデータプラットフォームで責任を持って使用するには、コストへの影響を理解することが不可欠です。
 
 ⚠️ Tableau と BI ツール: AI Functions を直接呼び出さないこと
 
-Snowflake Cortex AI functions は、Tableau やその他の BI ツールから直接呼び出してはなりません。そうすると、クエリが実行されるたびに AI functions が再実行され、予測不能なコストと一貫性のない結果を引き起こします。具体的なリスクは以下のとおりです：
+Snowflake Cortex AI 関数は、Tableau やその他の BI ツールから直接呼び出してはなりません。そうすると、クエリが実行されるたびに AI 関数が再実行され、予測不能なコストと一貫性のない結果を引き起こします。具体的なリスクは以下のとおりです：
 
-- **クレジットの際限ない消費**: ダッシュボードの読み込み、フィルタの変更、スケジュール更新のたびに AI function が再実行されます。つまり、利用者の多い 1 つのダッシュボードが、全閲覧者にわたって 1 日に何千回もの AI 呼び出しを発生させる可能性があります。
+- **クレジットの際限ない消費**: ダッシュボードの読み込み、フィルタの変更、スケジュール更新のたびに AI 関数が再実行されます。つまり、利用者の多い 1 つのダッシュボードが、全閲覧者にわたって 1 日に何千回もの AI 呼び出しを発生させる可能性があります。
 - **コストの不可視性**: クレジット消費は実行ごとに積み上がり、使用状況レポートに現れるまで警告が出ません。予算策定や予測がほぼ不可能になります。
 - **非決定論的な出力**: `COMPLETE` のような生成関数は実行ごとに異なる結果を返すため、同じ行がセッション、ユーザー、更新をまたいで異なる値を表示します。
 - **監査不能性**: クエリ実行時に計算された結果は確認・検証・再利用できません。
 
-**正しいアプローチ:** AI functions を制御されたパイプラインで一度実行し、結果を Snowflake テーブルに永続化します。BI ツールはその事前計算済みテーブルに接続します。新しいソース行が来るたびに出力テーブルを更新・増分更新するには、dbt モデル、Airflow パイプライン、または Snowflake タスクを使用します。これにより、クレジットが単一の予測可能なバッチで消費され、結果がすべてのユーザーに対して安定・一貫したものとなり、複数のワークブックやダウンストリームモデルで再利用できます。
+**正しいアプローチ:** AI 関数を制御されたパイプラインで一度実行し、結果を Snowflake テーブルに永続化します。BI ツールはその事前計算済みテーブルに接続します。新しいソース行が来るたびに出力テーブルを更新・増分更新するには、dbt モデル、Airflow パイプライン、または Snowflake タスクを使用します。これにより、クレジットが単一の予測可能なバッチで消費され、結果がすべてのユーザーに対して安定・一貫したものとなり、複数のワークブックやダウンストリームモデルで再利用できます。
 
-## 前提条件
+## 前提条件 {#prerequisites}
 
 Snowflake AI Functions を使用する前に、以下を確認してください：
 
@@ -64,7 +64,7 @@ Snowflake AI Functions を使用する前に、以下を確認してください
 - **ウェアハウスアクセス**: 適切なコンピューティングウェアハウス（`dev_xs`、`dev_m`、または `reporting`）へのアクセス
 - **コスト意識**: トークンベースの課金への影響の理解
 
-## トークンとクレジットの理解
+## トークンとクレジットの理解 {#understanding-tokens-and-credits}
 
 ### トークンとは？
 
@@ -120,11 +120,11 @@ Snowflake AI サービスはトークンベースの課金を使用しており�
 - **トークン計算**: 使用する特定のモデルと処理するテキストの長さに基づく
 - **コスト変動性**: モデルによってトークン消費レートが異なる
 
-**例**: Large ウェアハウスで 1 時間クエリを実行すると、100 件でも 100,000 件でも同じウェアハウスクレジットがかかります。一方、AI function のコストは処理するテキスト量に直接比例します。
+**例**: Large ウェアハウスで 1 時間クエリを実行すると、100 件でも 100,000 件でも同じウェアハウスクレジットがかかります。一方、AI 関数のコストは処理するテキスト量に直接比例します。
 
-## 利用可能な AI Functions
+## 利用可能な AI Functions {#available-ai-functions}
 
-Snowflake は CORTEX 名前空間を通じていくつかの AI functions を提供しています：
+Snowflake は CORTEX 名前空間を通じていくつかの AI 関数を提供しています：
 
 ### テキスト分析関数
 
@@ -142,14 +142,14 @@ Snowflake は CORTEX 名前空間を通じていくつかの AI functions を提
 
 | モデルティア | 例 | コスト範囲 | 適した用途 |
 |------------|----------|------------|----------|
-| **Budget** | `mistral-7b`、`llama3.1-8b` | 0.05-0.12 | 大量の単純なタスク、分類 |
-| **Balanced** | `mixtral-8x7b`、`llama3.1-70b` | 0.22-1.21 | ほとんどの汎用タスク |
-| **Performance** | `llama3.3-70b`、`snowflake-arctic` | 0.84-1.21 | 複雑な分析、微妙な推論 |
-| **Premium** | `claude-4-sonnet`、`mistral-large2` | 1.95-2.55 | 顧客向けコンテンツ、最高品質 |
+| **低予算** | `mistral-7b`、`llama3.1-8b` | 0.05-0.12 | 大量の単純なタスク、分類 |
+| **バランス型** | `mixtral-8x7b`、`llama3.1-70b` | 0.22-1.21 | ほとんどの汎用タスク |
+| **高性能** | `llama3.3-70b`、`snowflake-arctic` | 0.84-1.21 | 複雑な分析、微妙な推論 |
+| **プレミアム** | `claude-4-sonnet`、`mistral-large2` | 1.95-2.55 | 顧客向けコンテンツ、最高品質 |
 
 💡 **コストのヒント**: 可能な限り特化関数（SENTIMENT、SUMMARIZE、EXTRACT_ANSWER）を使用してください — 同じタスクに COMPLETE を使うより 3〜30 倍安価です！
 
-## Snowflake AI Functions: 固定価格と変動価格
+## Snowflake AI Functions: 固定価格と変動価格 {#snowflake-ai-functions-fixed-vs-variable-pricing}
 
 ### 固定価格関数
 
@@ -189,23 +189,23 @@ Snowflake は CORTEX 名前空間を通じていくつかの AI functions を提
 | `SNOWFLAKE.CORTEX.EMBED_TEXT_1024` | 0.05 - 0.07 | 高度なテキスト埋め込み（1024 次元） |
 | `SNOWFLAKE.CORTEX.EMBED_IMAGE_1024` | 0.06 | 画像とテキストの埋め込み |
 
-## ⚡ クイックスタートチェックリスト
+## ⚡ クイックスタートチェックリスト {#-quick-start-checklist}
 
-AI functions を使用する前に：
+AI 関数を使用する前に：
 
 - [ ] **本日のクレジット使用量を確認する**（下記のモニタリングクエリを参照）
 - [ ] **可能な場合は特化関数から始める**（SENTIMENT、SUMMARIZE）— 3〜30 倍安価
 - [ ] **初期テストにはバジェットモデルを使用する**（mistral-7b）
 - [ ] **常に小さなサンプルでテストしてから**完全なデータセットを処理する
 
-## はじめ方: 3 ステップアプローチ
+## はじめ方: 3 ステップアプローチ {#getting-started-3-step-approach}
 
 ### ステップ 1: まずサンプルデータでテストする
 
 関数の動作とトークン消費を理解するために、常に小さなサンプルから始めてください：
 
 ```sql
--- サンプルデータで感情分析をテストする
+-- Test sentiment analysis on sample data
 SELECT 
     email,
     SNOWFLAKE.CORTEX.SENTIMENT(email) as sentiment_score,
@@ -223,7 +223,7 @@ ORDER BY tokens_used DESC;
 データセット全体を処理する前に推定コストを計算してください：
 
 ```sql
--- 全テーブル処理前の推定コストを計算する
+-- Calculate estimated cost before processing full table
 WITH sample_estimate AS (
     SELECT 
         COUNT(*) as sample_rows,
@@ -232,7 +232,7 @@ WITH sample_estimate AS (
             'Your prompt here: ' || your_column
         )) as sample_tokens
     FROM your_table
-    SAMPLE (100 ROWS)  -- 100 行をサンプリング
+    SAMPLE (100 ROWS)  -- Sample 100 rows
 ),
 cost_projection AS (
     SELECT 
@@ -244,7 +244,7 @@ cost_projection AS (
 )
 SELECT
     estimated_total_tokens / 1000000 as estimated_million_tokens,
-    estimated_million_tokens * 0.12 as estimated_credits  -- 現在のレートを確認
+    estimated_million_tokens * 0.12 as estimated_credits  -- Check current rates
 FROM cost_projection;
 ```
 
@@ -253,7 +253,7 @@ FROM cost_projection;
 大規模なデータセットの場合、管理可能なバッチでデータを処理してください：
 
 ```sql
--- データを日次バッチで処理する
+-- Process data in daily batches
 SELECT
     date_day,
     issue_id,
@@ -262,11 +262,11 @@ SELECT
         'Categorize this GitLab issue: ' || title || '. Categories: bug, feature, documentation'
     ) as issue_category
 FROM RAW.AIRFLOW_STITCH.AB_USER
-WHERE date_day = '2024-01-01'  -- 1 日ずつ処理する
+WHERE date_day = '2024-01-01'  -- Process one day at a time
 ORDER BY issue_id;
 ```
 
-## 私のトークン使用量は適切か？
+## 私のトークン使用量は適切か？ {#is-my-token-usage-reasonable}
 
 ### 日次使用量の計画: 今日何を処理できるか？
 
@@ -300,7 +300,7 @@ FROM RAW.CORTEX_MONITORING.CURRENT_USAGE_MONITOR
 WHERE USER_NAME = CURRENT_USER();
 ```
 
-## 高度な利用方法と最適化
+## 高度な利用方法と最適化 {#advanced-usage--optimization}
 
 ### トークンカウントのベストプラクティス
 
@@ -340,11 +340,11 @@ FROM your_table;
 
 - 第 1 選択: 可能な場合は特化関数（SENTIMENT、SUMMARIZE、EXTRACT_ANSWER）を使用する
 - 第 2 選択: COMPLETE 関数にはバジェットモデル（mistral-7b、llama3.1-8b）を使用する
-- プロンプトを短くし、可能な限り入力データのサイズを制限する
+プロンプトを短くし、可能な限り入力データのサイズを制限してください。
 
 **2. データの前処理**
 
-- AI functions の前に WHERE 句を適用してデータ量を削減する
+- AI 関数の前に WHERE 句を適用してデータ量を削減する
 - 意味のあるコンテンツのみを処理する（空または非常に短いテキストをフィルタリング）
 
 **3. スマートバッチング**
@@ -358,7 +358,7 @@ FROM your_table;
 トークン使用量はモデルによって大きく異なります。実用的な比較を示します：
 
 ```sql
--- 同じテキストで異なるモデルのトークン使用量を比較する
+-- Compare token usage across models for the same text
 WITH sample_text AS (
     SELECT 'Analyze customer feedback for product improvement opportunities' as text
 )
@@ -382,7 +382,7 @@ FROM sample_text;
 
 **選択戦略:** 初期テストには mistral-7b から始め、精度要件が追加コストを正当化する場合にのみアップグレードしてください。
 
-## モニタリングとサポート
+## モニタリングとサポート {#monitoring--support}
 
 ### 日次使用量の追跡
 
@@ -437,7 +437,7 @@ LIMIT 10;
 
 #### 関数のタイムアウト
 
-**問題: AI function クエリが失敗またはタイムアウトする**
+**問題: AI 関数クエリが失敗またはタイムアウトする**
 
 解決策:
 
@@ -448,7 +448,7 @@ LIMIT 10;
 
 #### 不一致な結果
 
-**問題: AI functions が変動する、または予期しない出力を返す**
+**問題: AI 関数が変動する、または予期しない出力を返す**
 
 解決策:
 
@@ -457,13 +457,13 @@ LIMIT 10;
 - より高精度なモデルへのアップグレードを検討する
 - 結果の検証とリトライロジックを実装する
 
-## 緊急アクセス制御手順 - Data Platform チーム
+## 緊急アクセス制御手順 - Data Platform チーム {#emergency-access-control-procedures---data-platform-team}
 
 **対象者**: Data Platform チームの管理者のみ。
-**目的**: アカウント全体の Cortex AI functions の緊急ロックダウン。
-**警告**: これらの手順はアカウント**すべてのユーザー**の AI functions を無効にします。
+**目的**: アカウント全体の Cortex AI 関数の緊急ロックダウン。
+**警告**: これらの手順はアカウント**すべてのユーザー**の AI 関数を無効にします。
 
-### 非常ボタン: アカウント全体の Cortex 即時シャットダウン
+### 非常ボタン: アカウント全体の Cortex 即時シャットダウン {#red-button-immediate-account-wide-cortex-shutdown}
 
 <div style="border: 3px solid red; background-color: #fff0f0; padding: 15px; border-radius: 5px; margin-bottom: 15px;">
 
@@ -474,7 +474,7 @@ USE ROLE ACCOUNTADMIN;
 ALTER ACCOUNT SET CORTEX_MODELS_ALLOWLIST = 'None';
 ```
 
-<p>これにより、アカウント内のすべてのユーザーとロールに対して、すべての Cortex AI モデルの呼び出しが即座にブロックされます。アローリストが復元されるまで、どの Cortex 関数（<code>COMPLETE</code>、<code>SENTIMENT</code>、<code>SUMMARIZE</code>、Cortex Agents、Cortex Analyst、Cortex Code など）も動作しません。</p>
+<p>これにより、アカウント内のすべてのユーザーとロールに対して、<b>すべての</b> Cortex AI モデルの呼び出しが即座にブロックされます。アローリストが復元されるまで、どの Cortex 関数（<code>COMPLETE</code>、<code>SENTIMENT</code>、<code>SUMMARIZE</code>、Cortex Agents、Cortex Analyst、Cortex Code など）も動作しません。</p>
 
 </div>
 
@@ -484,13 +484,13 @@ ALTER ACCOUNT SET CORTEX_MODELS_ALLOWLIST = 'None';
 
 ```sql
 SHOW PARAMETERS LIKE 'CORTEX_MODELS_ALLOWLIST' IN ACCOUNT;
--- 'None' と表示されるはず
+-- Should show 'None'
 ```
 
 ### 非常ボタンを使用するタイミング
 
 - 暴走コスト: アカウント全体の Cortex 支出が許容しきい値を超えて加速している
-- AI functions を含むセキュリティインシデント
+- AI 関数を含むセキュリティインシデント
 - 即時停止のコンプライアンスまたは法的要件
 - ユーザーごとの自動モニタリングが不十分な場合（例: 多数のユーザーが同時にスパイクしている）
 
@@ -533,7 +533,7 @@ ALTER TASK RAW.CORTEX_MONITORING.RESTORE_DAILY_ACCESS_TASK RESUME;
 
 ```sql
 SELECT SNOWFLAKE.CORTEX.COMPLETE('llama3.1-8b', 'Restoration test');
--- 成功するはず
+-- Should succeed
 
 SELECT COUNT(*) AS monitored_users
 FROM RAW.CORTEX_MONITORING.USER_THRESHOLDS
@@ -547,9 +547,9 @@ WHERE IS_ACTIVE = TRUE;
 3. **しきい値の確認**: インシデントがコスト主導の場合、ユーザーごとの制限を引き下げることを検討する
 4. **ランブックの更新**: 新たな知見を[トリアージャーランブック](/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-credits-alert/)に追加する
 
-## AI Functions アクセス管理 - 標準オペレーション
+## AI Functions アクセス管理 - 標準オペレーション {#ai-functions-access-management---standard-operations}
 
-### Cortex アクセスアーキテクチャ
+### Cortex アクセスアーキテクチャ {#cortex-access-architecture}
 
 Snowflake の `SNOWFLAKE` オブジェクトは（通常のデータベースではなく）**APPLICATION** です。これは Cortex データベースロールがどのように付与され、継承され、失効されるかに重要な影響を与えます。3 つの異なるアクセスパスがあります：
 
@@ -600,11 +600,11 @@ Cortex AI アクセスは 2 つのパスで管理されます：
 ```sql
 USE ROLE ACCOUNTADMIN;
 
--- 承認済みモデルアローリストを適用する
+-- Enforce the approved model allowlist
 ALTER ACCOUNT SET CORTEX_MODELS_ALLOWLIST =
     'claude-4-sonnet,snowflake-arctic,snowflake-arctic-embed-m-v1.5,llama3.1-8b,llama3.1-70b,llama3.3-70b,mistral-7b,arctic-translate,arctic-extract,arctic-sentiment,arctic-parse-document,arctic-extract-answer,arctic-summarize';
 
--- 確認
+-- Verify
 SHOW PARAMETERS LIKE 'CORTEX_MODELS_ALLOWLIST' IN ACCOUNT;
 ```
 
@@ -619,7 +619,7 @@ SHOW PARAMETERS LIKE 'CORTEX_MODELS_ALLOWLIST' IN ACCOUNT;
 **動作のしくみ:**
 
 - `ALL`（デフォルト）— すべてのモデルを許可（制限なし）
-- `None` — すべてのモデルをブロック（[非常ボタン](#emergency-access-control-procedures---data-platform-team)）
+- `None` — すべてのモデルをブロック（[非常ボタン](#red-button-immediate-account-wide-cortex-shutdown)）
 - コンマ区切りリスト — リストされたモデルとエイリアスのみ許可
 
 すべてのモデルを許可（制限を削除）する場合：
@@ -635,7 +635,7 @@ ALTER ACCOUNT UNSET CORTEX_MODELS_ALLOWLIST;
 ```sql
 USE ROLE <username>;
 SELECT SNOWFLAKE.CORTEX.COMPLETE('llama3.1-8b', 'Hello, world!');
--- ユーザーが CORTEX_FUNCTIONS を持っていれば成功するはず
+-- Should succeed if user has CORTEX_FUNCTIONS
 ```
 
 ### ヘルプの取得
@@ -648,7 +648,7 @@ SELECT SNOWFLAKE.CORTEX.COMPLETE('llama3.1-8b', 'Hello, world!');
 3. **コストに関する懸念**: コスト最適化のガイダンスや制限調整については Data Platform チームに連絡する
 4. **モニタリングシステム**: しきい値、手順、ランブックについては [Cortex AI クレジットモニタリングシステム](/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-credits-alert/) を参照する
 
-## 関連リソース
+## 関連リソース {#related-resources}
 
 ### GitLab 内部リソース
 

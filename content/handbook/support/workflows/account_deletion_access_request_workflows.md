@@ -4,12 +4,12 @@ category: GitLab.com
 subcategory: Legal
 description: "アカウント削除およびデータアクセスのリクエスト処理を行う方法"
 controlled_document: true
-upstream_path: /handbook/support/workflows/account_deletion_access_request_workflows/
-upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
-translated_at: "2026-07-10T21:27:59+09:00"
+upstream_path: "/handbook/support/workflows/account_deletion_access_request_workflows/"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:20:13+00:00"
 translator: codex
 stale: false
-lastmod: 2026-07-10T04:00:37-04:00
+lastmod: "2026-09-11T17:02:17+02:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -22,7 +22,7 @@ lastmod: 2026-07-10T04:00:37-04:00
 
 ### **Stage 1:** 提出処理
 
-プライバシーリクエストは [Privacy Center](https://privacy.gitlab.com/) を通じて送信された場合にのみ処理できます。それ以外の方法でリクエストを受け取った場合は、そのリクエストをクローズし、Privacy Center の `Make a Privacy Request` ボタンからリクエストを開くようユーザーに案内します。Privacy Center は Transcend によって提供されており、「the system（システム）」への言及は、プライバシーリクエストが取り込まれ処理される Transcend プラットフォームを指します。
+プライバシーリクエストは [Privacy Center](https://privacy.gitlab.com/) を通じて送信された場合にのみ処理できます。それ以外の方法でリクエストを受け取った場合は、そのリクエストをクローズし、Privacy Center の `Make a Privacy Request` ボタンからリクエストを開くようユーザーに案内します。Privacy Center は Transcend によって提供されており、「システム」への言及は、プライバシーリクエストが取り込まれ処理される Transcend プラットフォームを指します。
 
 ユーザーが Privacy Center を通じてリクエストを送信すると、*GitLab アカウントが存在しない場合でも*、システムが自動的に新しいリクエストを作成します。ユーザーとのすべてのコミュニケーションはプライバシーリクエスト内で行われます。
 
@@ -82,7 +82,7 @@ lastmod: 2026-07-10T04:00:37-04:00
 - アカウントが Enterprise User（[バッジ付き](https://docs.gitlab.com/user/enterprise_user/)でも[サポート定義の Enterprise User](https://gitlab.com/gitlab-com/content-sites/handbook/blob/main/content/handbook/support/workflows/gitlab-com_overview.md#enterprise-users)でもないこと）。
 - アカウントに[有効なサブスクリプションがない](#step-3-check-non-enterprise-user-paid-subscription-status)こと
 
-送信後、GitLab アカウントが見つかった場合、自動チェックはリスクレーティングを返します。リスクレーティングは、ユーザーアカウントを削除するために追加の検証が必要かどうかを判断するために使用されます。サポートエンジニアは、リスクレーティングが計算される方法を [Support Workflow page](https://internal.gitlab.com/handbook/support/workflows/data-subject-requests/) *(internal only)* で確認できます。自動チェックでユーザーアカウントが見つからない場合、システムが生成するメールメッセージでユーザーに通知されます。
+送信後、GitLab アカウントが見つかった場合、自動チェックはリスクレーティングを返します。リスクレーティングは、ユーザーアカウントを削除するために追加の検証が必要かどうかを判断するために使用されます。サポートエンジニアは、リスクレーティングが計算される方法を [サポートワークフローページ](https://internal.gitlab.com/handbook/support/workflows/data-subject-requests/) *（社内限定）* で確認できます。自動チェックでユーザーアカウントが見つからない場合、システムが生成するメールメッセージでユーザーに通知されます。
 
 ###### **Step 0:** 重複リクエストのチェック
 
@@ -91,11 +91,11 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 1. `Duplicate Request` メッセージをユーザーに送信します。
 1. メッセージを送信した後、Transcend で `Cancel Request` をクリックして、重複リクエストを明示的にキャンセルします。Duplicate Request メッセージを送信しただけではリクエストは自動的にクローズされません。手動でキャンセルする必要があります。
 
-![Transcend の Cancel Request ボタン](static/images/support/workflows/assets/transcend-cancelrequest.png))
+![Transcend の Cancel Request ボタン](/images/support/workflows/assets/transcend-cancelrequest.png)
 
 注意: 削除リクエストに関してサポートエンジニアに割り当てられるタスクは 2 つあります。
 
-`Support Engineer (GitLab Deletion)` は、GitLab ユーザーアカウントを**削除できる**かどうかを判断し、削除できる場合は削除を実行する役割を担います。*現在、ステップごとのアクションはタスクを配信する email にも表示されます。*
+`Support Engineer (GitLab Deletion)` は、GitLab ユーザーアカウントを**削除できる**かどうかを判断し、削除できる場合は削除を実行する役割を担います。*現在、ステップごとのアクションはタスクを配信するメールにも表示されます。*
 
 `Support Engineer (Zendesk/cDot Deletion)` は、ユーザーの Customers Portal アカウントおよび/または Zendesk アカウントが存在するかどうかを判断する役割を担います。このタスク内では削除は行われません。ただし、Customers Portal の削除を実行するコンソールエンジニアと、Zendesk アカウントを削除する Support Readiness に対し、後続のタスクが割り当てられるトリガーとして機能します。
 
@@ -103,7 +103,7 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 
 1.1. アカウントが Enterprise User かどうか
 
-リクエストの Details タブで、データ主体の種類が `Enterprise User` であり、**かつ**自動チェックでもアカウントが Enterprise User のものであると示されている場合は、ここで中止して直接 [Enterprise User Deletion](#enterprise-user-deletion) に進みます。
+リクエストの Details タブで、データ主体の種類が `Enterprise User` であり、**かつ**自動チェックでもアカウントが Enterprise User のものであると示されている場合は、ここで中止して直接 [エンタープライズユーザーの削除](#enterprise-user-deletion) に進みます。
 [エンタープライズユーザーのサポート定義](https://gitlab.com/gitlab-com/content-sites/handbook/blob/main/content/handbook/support/workflows/gitlab-com_overview.md#enterprise-users)も適用される点に注意してください。
 
 1.2 リスクレーティングの確認
@@ -128,7 +128,7 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 
 ###### **Step 3:** 非 Enterprise ユーザーの有償サブスクリプションステータスの確認 {#step-3-check-non-enterprise-user-paid-subscription-status}
 
-1. アカウントが Enterprise user で**ない**ことを確認します。Enterprise user である場合は、[Enterprise user deletion](#enterprise-user-deletion) のステップに従います。
+1. アカウントが Enterprise user で**ない**ことを確認します。Enterprise user である場合は、[エンタープライズユーザーの削除](#enterprise-user-deletion) のステップに従います。
 1. メールアドレスを使って Customers Portal を検索します。
 1. Customers Portal アカウントが存在しない場合は、Step 4 に進みます。
 1. Customers Portal アカウントが見つかり、かつ `Subscription` バッジがある場合:
@@ -260,11 +260,11 @@ Step 2.1 の条件に該当しない限り、2.2 のステップを実行して 
 2) Account Success のメールアドレス（権限を有する代理人が Designated Account Successor として追加された場合に使用）
 3) 権限を有する代理人のメールアドレス（権限を有する代理人が、Designated Account Successor として追加された際にどのメールアドレスが含まれていたか分からない場合、またはアカウントに紐づくメールアドレスが分からない場合に使用）。
 
-送信後、GitLab アカウントが見つかった場合、自動チェックはリスクレーティングを返します。サポートエンジニアは、リスクレーティングが計算される方法を [Support Workflow page](https://internal.gitlab.com/handbook/support/workflows/data-subject-requests/) *(internal only)* で確認できますが、このリスク計算は、リクエストを送信した個人の権限が Privacy チームによって検証された**後**にのみ考慮する必要があります。
+送信後、GitLab アカウントが見つかった場合、自動チェックはリスクレーティングを返します。サポートエンジニアは、リスクレーティングが計算される方法を [サポートワークフローページ](https://internal.gitlab.com/handbook/support/workflows/data-subject-requests/) *（社内限定）* で確認できますが、このリスク計算は、リクエストを送信した個人の権限が Privacy チームによって検証された**後**にのみ考慮する必要があります。
 
 自動チェックでユーザーアカウントが見つからない場合、すべてのシステムタスクが完了した後、システムが生成するメールメッセージで依頼者に通知されます。
 
-システムにさらなる自動化が追加されるにつれて、権限を有する代理人または Designated Account Successor によって送信された削除リクエストは、Privacy チームが法的要件が満たされたことを検証するまで保留されます。この検証が完了すると、リクエストが再開され、[Individual User Deletion](#individual-user-deletion) ワークフローに従う必要があります。
+システムにさらなる自動化が追加されるにつれて、権限を有する代理人または Designated Account Successor によって送信された削除リクエストは、Privacy チームが法的要件が満たされたことを検証するまで保留されます。この検証が完了すると、リクエストが再開され、[個人ユーザーの削除](#individual-user-deletion) ワークフローに従う必要があります。
 
 すべてのタスクが完了すると、システムは自動的に依頼者へリクエストが履行された旨のメッセージを送信します。
 
@@ -277,13 +277,13 @@ Step 2.1 の条件に該当しない限り、2.2 のステップを実行して 
 - ユーザー名とメールアドレスが同一アカウントで一致する必要があります
 - アカウントがエンタープライズユーザーでないこと
 
-送信後、GitLab アカウントが見つかった場合、自動チェックはリスクレーティングを返します。リスクレーティングは、ユーザーアカウントを削除するために追加の検証が必要かどうかを判断するために使用されます。サポートエンジニアは、リスクレーティングが計算される方法を [Support Workflow page](https://internal.gitlab.com/handbook/support/workflows/data-subject-requests/) (*internal only*) で確認できます。自動チェックでユーザーアカウントが見つからない場合、システムが生成するメールメッセージでユーザーに通知されます。
+送信後、GitLab アカウントが見つかった場合、自動チェックはリスクレーティングを返します。リスクレーティングは、ユーザーアカウントを削除するために追加の検証が必要かどうかを判断するために使用されます。サポートエンジニアは、リスクレーティングが計算される方法を [サポートワークフローページ](https://internal.gitlab.com/handbook/support/workflows/data-subject-requests/) （*社内限定*） で確認できます。自動チェックでユーザーアカウントが見つからない場合、システムが生成するメールメッセージでユーザーに通知されます。
 
 アクセスリクエストに関してサポートエンジニアに割り当てられるタスクは 1 つですが、2 つの別個のシステムからのデータのクエリと抽出を兼ねています。
 
 いずれかのシステムでアカウントが特定された場合:
 
-- [Personal Data Requests shared drive folder](https://drive.google.com/drive/folders/0AA4kcF3prJ6pUk9PVA) から cDot/Zendesk Google sheet テンプレートをダウンロードし、システムにあるフィールド値を入力します。
+- [Personal Data Requests 共有ドライブフォルダー](https://drive.google.com/drive/folders/0AA4kcF3prJ6pUk9PVA) から cDot/Zendesk の Google スプレッドシートのテンプレートをダウンロードし、システムにあるフィールド値を入力します。
 - 必ず空白のシートテンプレートをダウンロードし、入力済みのシートを共有ドライブに保存しないようにします。
 - 入力後、シートを `Support Engineer (Access)` タスクにアップロードし、complete としてマークします。
 
@@ -317,7 +317,7 @@ Step 2.1 の条件に該当しない限り、2.2 のステップを実行して 
 必要に応じてユーザーが追加の検証に合格したら、プロジェクトエクスポートを取得するためのプロセスを開始します。
 
 - ユーザーがサインインできない場合は、[UI](https://docs.gitlab.com/user/project/settings/import_export/#export-a-project-and-its-data) または [API](https://docs.gitlab.com/api/project_import_export/#schedule-an-export) を使って、個人ネームスペースのプロジェクト、またはユーザーが唯一のメンバーであるグループ内のプロジェクトのみをエクスポートします。
-- エラーが発生した場合は、[customers のプロジェクトエクスポート](/handbook/support/workflows/exporting_projects/)ワークフローに従います。追加のトラブルシューティングの支援やアイデアが必要な場合は、有料顧客による過去のプロジェクトエクスポートチケットの例を ZenDesk で検索できます。
+- エラーが発生した場合は、[顧客向けのプロジェクトエクスポート](/handbook/support/workflows/exporting_projects/)ワークフローに従います。追加のトラブルシューティングの支援やアイデアが必要な場合は、有料顧客による過去のプロジェクトエクスポートチケットの例を ZenDesk で検索できます。
 - プロジェクトエクスポートを `Support Engineer (Access)` タスクにアップロードし、`Project Export Complete` メッセージを送信して、タスクを complete としてマークします。
 
 ## 例外

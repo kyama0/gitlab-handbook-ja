@@ -1,11 +1,11 @@
 ---
 title: "ソーシャルメディアでのデベロッパーアドボカシー"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/social-media/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:58:25Z"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:16:35+00:00"
 translator: claude
 stale: false
-lastmod: 2026-06-16T12:33:40-04:00
+lastmod: "2026-09-11T11:28:52-04:00"
 ---
 
 ## はじめに {#introduction}
@@ -240,7 +240,6 @@ _不足している機能、2024-11-11:_
 
 | 名前 | Bluesky ハンドル |
 |------|----------------|
-| Cesar Saveedra | [@cealsair.bsky.social](https://bsky.app/profile/cealsair.bsky.social) |
 | Daniel Helfand | [@dhelfand.bsky.social](https://bsky.app/profile/dhelfand.bsky.social) |
 | Fatima Sarah Kalid | [@sugaroverflow.com](https://bsky.app/profile/sugaroverflow.com) |
 | John Coghlan | [@coghlan.me](https://bsky.app/profile/coghlan.me) |

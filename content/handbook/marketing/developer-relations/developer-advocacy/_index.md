@@ -2,9 +2,9 @@
 title: "Developer Advocacy"
 description: "Developer Advocates は、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: "/handbook/marketing/developer-relations/developer-advocacy/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-lastmod: "2026-09-11T13:54:05+02:00"
-translated_at: "2026-09-11T12:58:54+00:00"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+lastmod: "2026-09-11T11:29:04-04:00"
+translated_at: "2026-09-11T21:16:35+00:00"
 translator: claude
 stale: false
 ---
@@ -22,7 +22,7 @@ stale: false
 - [<i class="far fa-edit"></i> 新規コンテンツ Issue](https://go.gitlab.com/new-content-issue)
 - [<i class="far fa-edit"></i> 新規イベント Issue](https://go.gitlab.com/new-event-issue)
 - [<i class="far fa-edit"></i> 新規アクティビティ Issue](https://go.gitlab.com/new-activity-ssue)
-- [<i class="far fa-edit"></i> CFP Issue テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=cfp)
+- [<i class="far fa-edit"></i> CFP Issue テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=cfp-meta)
 
 #### Issue ボード
 
@@ -96,7 +96,6 @@ Developer Advocacy は、進化し続ける複雑な分野です。
 
 | チームメンバー |  注力領域 | 言語 | プロジェクト | テクノロジー | リソース |
 |-------------|--------------|-----------|----------|--------------|-----------|
-| [Cesar Saavedra](https://gitlab.com/csaavedra1) <br/> Staff Developer Advocate | DevSecOps（CD、GitOps、Kubernetes、GitLab Flow、Feature flags、GitLab Duo に注力） | 英語、スペイン語 | [GitLab demos on YouTube](/handbook/marketing/developer-relations/developer-advocacy/content/#videos), Analyst relations demos, Competitive Research, CD Overview, Feature Flags, GitLab Flow |  Kubernetes, GitOps, CI/CD, Java, AI |  |
 | [Colleen Lavin](https://gitlab.com/clavin1) <br/> Developer Advocate | Embedded Systems, GitLab Duo, Community Engagement | 英語 | Event Support, Sales Enablement, Demo Videos, Webinars | Javascript, C++, Embedded |  |
 | [Daniel Helfand](https://gitlab.com/dhelfand) <br/> Developer Advocate | DevSecOps | 英語 |  | CI/CD, Kubernetes, Go |  |
 | [Fatima Sarah Khalid](https://gitlab.com/sugaroverflow) <br/> Senior Developer Advocate | Community Engagement, DevSecOps | 英語 | [LinkedIn Live](/handbook/marketing/developer-relations/developer-advocacy/projects/#linkedin-lives-in-collaboration-with-the-social-team), [Community Engagement](/handbook/marketing/developer-relations/developer-advocacy/#community-engagement) | CI/CD, C++, PHP, JavaScript | |
@@ -149,6 +148,8 @@ Developer Advocate チームはコミュニティを理解し、GitLab に関す
 #### イベントサポート
 
 Developer Advocate チームは、イベントのサポートにおいて重要な役割を果たします。私たちは [Corporate Event Marketing](/handbook/marketing/growth-marketing/corporate-events/)と緊密に連携し、Corporate Events とサードパーティ協賛イベントの両方に対して、戦略的なコンテンツと支援を提供します。このコラボレーションにより、さまざまな集まりの成功とスムーズな実施が保証されます。詳しくは [イベントページ](/handbook/marketing/developer-relations/events/)を参照してください。
+
+Developer Advocates は、役割の一環として提案を提出し、イベントで登壇します。イベントの検索、提案の追跡、応募やプレゼンテーションへの支援の依頼については、[CFP ハンドブックと登壇リソース](/handbook/marketing/developer-relations/developer-advocacy/cfps/)を参照してください。
 
 私たちはまた、ローカルのテックイベントやミートアップでの講演の機会に向けて、チームメンバーが準備するのを支援します。そのようなイベントの準備に手助けが必要な場合は、Slack の [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでご連絡いただくか、[Developer Advocate リクエストのテンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?description_template=developer-advocate-request)を使用して Issue を作成してください。
 

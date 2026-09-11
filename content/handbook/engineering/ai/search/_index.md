@@ -2,9 +2,9 @@
 title: Global Search グループ
 description: "Global Search チームは、GitLab.com および自己管理インスタンスにワールドクラスの検索機能を提供することに注力しています。"
 upstream_path: /handbook/engineering/ai/search/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-lastmod: "2026-09-10T09:56:03+02:00"
-translated_at: "2026-09-10T11:09:19+00:00"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+lastmod: "2026-09-10T02:00:57-04:00"
+translated_at: "2026-09-11T21:09:10+00:00"
 translator: claude
 stale: false
 ---
@@ -19,9 +19,7 @@ Global Search グループは、GitLab.com および自己管理インスタン�
 
 グループは、Elasticsearch、PostgreSQL、Zoekt、Gitaly を使用した現在のグローバル検索の実装を改善・拡張する責任を負います。責任範囲には、グローバル検索機能、UI、取り込み機構、最適なインデキシング、管理ツール、自己管理インストール向けのインストール機構が含まれます。
 
-加えて、私たちは以下を含む重要な AI コンテキストインフラストラクチャの構築・保守を行います。
-
-- **GitLab Zoekt**: GitLab のスケーラブルな完全一致コード検索サービスおよびファイルベースのデータベースシステム。従来の検索を超えたさまざまな AI コンテキストのユースケースをサポートする柔軟なアーキテクチャを備えています。オープンソースのコード検索エンジン Zoekt の上に構築されています。
+加えて、私たちは重要な AI コンテキストインフラストラクチャを構築・保守しており、その中心が **GitLab Zoekt** です。GitLab のスケーラブルな完全一致コード検索サービスおよびファイルベースのデータベースシステムであり、従来の検索を超えたさまざまな AI コンテキストのユースケースをサポートする柔軟なアーキテクチャを備えています。オープンソースのコード検索エンジン Zoekt の上に構築されています。
 
 これらのシステムは、Retrieval Augmented Generation の取り組みを通じて AI 機能に高品質なコンテキストを提供するための基盤となります。これには以下が含まれます。
 
@@ -30,7 +28,7 @@ Global Search グループは、GitLab.com および自己管理インスタン�
 - それらのベクター埋め込みに対する取得 API、メタデータフィルタリングを提供し、権限が確実に適用されるようにすること
 - AI コンテキストに不可欠な、高速で精密なコード検索とコンテキスト取得を可能にすること
 
-このチームは、特定の機能向けのカスタム検索（たとえば Issue の「フィルターバー」など）は所有しません。これは [Project Management グループ](/handbook/product/categories/#project-management-group)が所有する [Issue Tracking](https://about.gitlab.com/direction/plan/project_management/team_planning/) カテゴリーの一部です。
+このチームは、特定の機能向けのカスタム検索（たとえば Issue の「フィルターバー」など）は所有しません。これは [Issue Tracking](https://about.gitlab.com/direction/plan/project_management/team_planning/) カテゴリーの一部であり、[Project Management グループ](/handbook/product/categories/#project-management-group)が所有しています。
 
 ## チームメンバー
 
@@ -76,6 +74,27 @@ Global Search チームは、従来の検索と AI コンテキスト機能の�
 - **GitLab Zoekt**: GitLab のスケーラブルなファイルベースのデータベースシステムで、エンタープライズ規模のパフォーマンス（GitLab.com で 48 TiB 以上をインデックス化）で完全一致コード検索を提供します。コード検索を超えて、Zoekt の柔軟なアーキテクチャはさまざまな AI コンテキストのユースケースの基盤として機能します
 
 これらのシステムは連携して、従来のキーワード検索から AI 機能向けの高度なベクター類似度マッチングまで、包括的な検索と AI コンテキストの機能を提供します。
+
+### インフラストラクチャのオーナーシップと DRI
+
+サービスのオーナーシップは、アラートとエラーバジェットの通知先を決めるための機械可読な唯一の情報源である [runbooks のサービスカタログ](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/service-catalog.yml)に定義されています。Global Search Engineering Manager は、チームが所有する両サービスの DRI を務め、日常の運用作業をチームに委任します。
+
+| システム | サービスカタログのエントリ | DRI | SRE ガイド | アラート |
+| --- | --- | --- | --- | --- |
+| Elasticsearch（Advanced Search） | `search`、オーナー `global_search` | Global Search Engineering Manager | [runbooks.gitlab.com/search](https://runbooks.gitlab.com/search/)、[runbooks.gitlab.com/elastic](https://runbooks.gitlab.com/elastic/) | [`Service::Elasticsearch`](https://alerts.gitlab.net/#/alerts?filter=%7Btype%3D%22search%22%2C%20tier%3D%22inf%22%7D) |
+| GitLab Zoekt（完全一致コード検索） | `zoekt`、オーナー `global_search` | Global Search Engineering Manager | [runbooks.gitlab.com/zoekt](https://runbooks.gitlab.com/zoekt/) | [`Service::Zoekt`](https://alerts.gitlab.net/#/alerts?filter=%7Btype%3D%22zoekt%22%2C%20tier%3D%22inf%22%7D) |
+
+両サービスのアラートは `#g_global_search_alerts` に呼び出し通知を送り、毎週のエラーバジェットレポートは `#g_global_search` に送信されます。どちらのチャンネルも [`services/teams.yml`](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/teams.yml) の `global_search` チームのエントリに設定されています。
+
+#### Elasticsearch クラスターの保守
+
+本番とステージングの Advanced Search クラスターは Elastic Cloud 上で稼働しています。クラスター設定、インデックスライフサイクル管理ポリシー、watcher、インデックスおよびコンポーネントテンプレート、API キーは、[`elastic-cloud`](https://gitlab.com/gitlab-com/gl-infra/observability/elastic-cloud)リポジトリでコードとして管理し、`main` へのマージ時に Atlantis が適用します。Kibana UI からこれらを変更しないでください。次の Terraform apply で元に戻されます。
+
+[Elastic ランブック](https://runbooks.gitlab.com/elastic/)には、バージョンアップグレードのチェックリスト、クラスターの正常性確認、ディスク容量の飽和への対処、失われた Advanced Search 更新の災害復旧などの運用手順が記載されています。
+
+#### Active Context とセマンティックコード検索
+
+**ActiveContext** 抽象化レイヤーとセマンティックコード検索を支えるベクターストアは、Global Search ではなく [AI Core Infra の Semantic Code Search チーム](/handbook/engineering/ai/ai-core-infra/semantic-code-search/)が所有しています。運用ドキュメントは [Active Context ランブック](https://runbooks.gitlab.com/ai-active-context/)にあり、埋め込みパイプライン、ベクターストア管理、コードベースのインデキシングを扱います。ActiveContext がバッキングストアとして使用する可能性のある Elasticsearch クラスターは引き続き Global Search が所有するため、インシデントには両チームの対応が必要な場合があります。
 
 ### イネーブリングフレームワークとしての Advanced Search
 
@@ -129,7 +148,7 @@ Advanced Search のインターフェースを通じて、多くのデータタ�
 - 私たちは、マイルストーンの開始前にそのマイルストーンでクローズする予定の Issue に Deliverable ラベルを適用します。マイルストーン中に追加された Issue には Deliverable ラベルを適用すべきではありません。私たちはこれらの Issue をマイルストーンの中間、通常は毎月第 1 週にレビューします。リリースに間に合いそうにない Issue からは Deliverable ラベルを削除します。
 - 私たちは、マイルストーン中に着手する予定だがクローズすることをコミットしていない Issue に Stretch ラベルを適用します。
 - 私たちは、デザインの入力が必要な機能については、Issue に UX ワークフローラベルを付け、対応する UX チームのカウンターパートをアサイニーとして追加することで UX チームと協力します。ユーザーリサーチには `workflow::problem validation` と `workflow::solution` validation を、UI デザインとプロトタイピングには `workflow::design` を使用します。デザインが完了すると、開発を開始できることを示すインジケーターとして `workflow::ready for development` ラベルが追加されます。軽微な UX/UI の変更については、UX のカウンターパートまたは Product Design Manager に連絡し、迅速なイテレーションのためのレビューを依頼します。
-- 私たちは、テストの観点から入力が必要な Issue については、[RFH](/handbook/engineering/infrastructure-platforms/developer-experience/#request-for-help-process) を作成して [Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/) チームと協力します。
+- 私たちは、テストの観点から入力が必要な Issue については、[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/)チームと協力するために [RFH](/handbook/engineering/infrastructure-platforms/developer-experience/#request-for-help-process) を作成します。
 - 私たちは、ドキュメントの変更が必要な Issue については、Issue に <code>documentation</code> ラベルを付け、Technical Writing チームのカウンターパートをアサイニーとして追加することで Technical Writing チームと協力します。私たちのテクニカルライターは、対応するドキュメントの更新を手伝ってくれます。ドキュメントの変更は通常、コードの変更と同時に行われます。
 - 私たちは、セキュリティの観点から入力が必要な Issue については、Security チームのステーブルカウンターパートと協力します。コミュニケーションには、たとえば[このような](https://gitlab.com/gitlab-org/search-team/team-tasks/-/issues/17)チームプランニング Issue を使用することを推奨します。
 - 私たちは、Issue に直接協力することで Support Engineering チームと協力します。毎月、Support Engineering チームのカウンターパートをチームミーティングに招待し、直接コミュニケーションを取ります。
@@ -199,6 +218,39 @@ Advanced Search のインターフェースを通じて、多くのデータタ�
 - ドラフトステータスは、MR がマージの準備ができていないことを示しますが、作成者はドラフトモードのままレビュアーをアサインすることを決めても構いません。レビューが緊急でない限り、作成者はレビュアーをアサインする前にパイプラインが通過するのを待つべきです。
 - 私たちはレビューコメントで効果的にコミュニケーションするために [Conventional Comments](https://conventionalcomments.org/) を使用します。
 - マージリクエストの作成者は、完全に対処したと感じ、すべてのディスカッションがクローズされたスレッドのみを解決します。それ以外はレビュアーが解決します。マージリクエストに多くのスレッドがある場合、レビュアーがオープンなスレッドに戻って、以前のディスカッションが残されていたところから再開すると役立ちます。
+
+#### レビュアーとメンテナーの種類
+
+通常のバックエンドとフロントエンドのメンテナーロールに加え、チームは専用のメンテナーグループを持つ 2 つの共有コンポーネントを所有しています。どちらも `gitlab-org/gitlab` の [`.gitlab/CODEOWNERS`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/CODEOWNERS) によって適用されるため、以下のパスを変更する MR は、作成者にかかわらずそのグループの承認が必要です。
+
+| メンテナーグループ | CODEOWNERS セクション | 対象 |
+| --- | --- | --- |
+| [`@gitlab-org/search-team/maintainers/advanced-framework`](https://gitlab.com/groups/gitlab-org/search-team/maintainers/advanced-framework) | `[Advanced Search Framework]`（必須）と `[Advanced Search Framework - Entity Implementations]`（任意） | `ee/lib/search/elastic/` と `ee/lib/elastic/` 配下のコアフレームワークの抽象化、バルクインデクサー、クライアント、クエリビルダーと DSL、Elastic の concern、サービスとワーカー、および `doc/development/advanced_search.md`。新しいエンティティの実装（クエリビルダー、型、参照、レコードの事前読み込み）は任意のセクションに該当します。 |
+| [`@gitlab-org/search-team/maintainers/advanced-migrations`](https://gitlab.com/groups/gitlab-org/search-team/maintainers/advanced-migrations) | `[Advanced Search Migration]`（`ee/elastic/migrate/` と `ee/elastic/docs/` では必須、spec では任意） | Advanced Search のマイグレーション。誤ったマイグレーションはデータベースマイグレーションと同様に可用性に影響するため、任意ではなく必須としています。 |
+
+CODEOWNERS の必須セクションと任意セクションの区別は重要です。コアフレームワークの抽象化への変更はフレームワークメンテナーの承認を待つ必要がありますが、新しいエンティティの実装では承認を依頼するだけです。マイグレーショングループでレビューする前に、[Advanced Search マイグレーションのレビューガイドライン](https://docs.gitlab.com/development/search/advanced_search_migration_review/)を参照してください。
+
+### 自動化
+
+チームはいくつかの自動化を利用しています。それぞれのプロセスは実行元のリポジトリに記載しています。以下のリンクはその入口であり、プロセスを重複して記載するものではありません。
+
+#### Advanced Search マイグレーションを廃止済みとしてマークする
+
+最後の必須アップグレード停止点の 1 マイルストーン前よりも古いマイグレーションは、自動的に廃止済みとしてマークされます。どちらも `gitlab-org/gitlab` にある 2 つの [GitLab Housekeeper](https://gitlab.com/gitlab-org/gitlab/-/blob/master/gems/gitlab-housekeeper/README.md) の keep がこの作業を行います。
+
+1. [`Keeps::MarkOldAdvancedSearchMigrationsAsObsolete`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/keeps/mark_old_advanced_search_migrations_as_obsolete.rb) — `Search::Elastic::MigrationObsolete` を prepend し、spec を廃止済みマイグレーションの共有 example に置き換え、辞書ファイルを更新し、Global Search のバックエンドエンジニアをアサインします。
+2. [`Keeps::DeleteObsoleteAdvancedSearchMigrations`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/keeps/delete_obsolete_advanced_search_migrations.rb) — 廃止済みマイグレーションのうち最新のものを除いてすべて削除します。
+
+**パイプラインの場所：** マークを付ける keep は、[`engineering-productivity/team` のスケジュール済みパイプライン](https://gitlab.com/gitlab-org/quality/engineering-productivity/team/-/pipeline_schedules)から毎月実行されます。このプロジェクトの [`.gitlab-ci.yml`](https://gitlab.com/gitlab-org/quality/engineering-productivity/team/-/blob/main/.gitlab-ci.yml) で定義された `automatic-mark-search-migrations-obsolete` ジョブを使用します。スケジュールは `AUTO_MARK_OBSOLETE_SEARCH_MIGRATIONS` を設定し、これがジョブの実行と、失敗時の `#g_global_search_alerts` へのアラート送信を制御します。削除する keep は手動で実行します。
+
+MR のアサイニーには、引き続き手動で完了すべき手順があります。`marked_obsolete_by_url` の確認、`.rubocop_todo/` の参照の削除、`migration_has_finished?` の後方互換性のための分岐の削除、削除したマイグレーションの[マイグレーション墓地](https://gitlab.com/gitlab-org/search-team/migration-graveyard)へのバックアップです。これらは [Advanced Search マイグレーションのスタイルガイド](https://docs.gitlab.com/development/search/advanced_search_migration_styleguide/#cleaning-up-advanced-search-migrations)に記載されています。
+
+#### インデクサーのリリース
+
+両インデクサーはスケジュール済みパイプラインから毎週自動でリリースし、そのプロセスをリポジトリ内に記載しています。
+
+1. **Elasticsearch インデクサー**：`gitlab-org/gitlab-elasticsearch-indexer` の [`doc/process.md`](https://gitlab.com/gitlab-org/gitlab-elasticsearch-indexer/-/blob/main/doc/process.md)。`SCHEDULE_TYPE=weekly_release` を設定した毎週のスケジュールが `release_create_mr` を実行します。これは `git-cliff` を使い、Conventional Commits に基づいてバージョンを上げる必要があるかを判断し、リリース MR を作成し、マージ時にタグを付けます。その後、`renovate-gitlab-bot` が `gitlab-org/gitlab` の `GITLAB_ELASTICSEARCH_INDEXER_VERSION` を更新する MR を作成します。このドキュメントには、現在のメンテナーとメンテナー研修のプロセスも記載されています。
+2. **Zoekt インデクサー**：`gitlab-org/gitlab-zoekt-indexer` の [`DEPLOYMENT_PROCESS.md`](https://gitlab.com/gitlab-org/gitlab-zoekt-indexer/-/blob/main/DEPLOYMENT_PROCESS.md)。インデクサーと Zoekt Web サーバーの両方を扱います。タグ付けは同じ方法（毎週のスケジュールで `release_create_mr` を実行）で自動化されていますが、リリースの反映には CI イメージ、CNG、[`gitlab-zoekt` チャート](https://gitlab.com/gitlab-org/cloud-native/charts/gitlab-zoekt)、メインの GitLab チャートを順に手動で更新する必要があります。ここに手順を重複して記載せず、そのファイルの手順に従ってください。
 
 ### オンコールエスカレーションのカバレッジ
 

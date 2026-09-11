@@ -1,18 +1,18 @@
 ---
 title: "補助ソリューションリソース: GitOps"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T16:35:23+09:00"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:16:35+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-11T11:28:52-04:00"
 ---
 
 #### 連絡先
 
 | プロダクトマーケティング | デベロッパーアドボケイト |
 | ---- | --- |
-| Daniel Hom (@danielhom) | @csaavedra1 |
+| Daniel Hom (@danielhom) | [Developer Advocacy チーム](/handbook/marketing/developer-relations/developer-advocacy/) |
 
 ## 市場の視点 {#the-market-viewpoint}
 

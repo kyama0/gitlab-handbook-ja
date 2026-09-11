@@ -2,11 +2,11 @@
 title: "Developer Experience"
 description: "Developer Experience セクションは、すべてのチームが高品質な変更をリリースできるよう、開発者体験の向上に取り組んでいます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/"
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T12:11:57+09:00"
+upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
+translated_at: "2026-09-11T21:12:37+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-21T10:31:23+10:00"
+lastmod: "2026-09-11T15:26:39Z"
 ---
 
 ## ミッション
@@ -126,6 +126,8 @@ graph TD
     click AP "/handbook/engineering/infrastructure-platforms/developer-experience/api"
     DE --> DA[Development Analytics]
     click DA "/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics"
+    DE --> DI[Deployment Interfaces]
+    click DI "/handbook/engineering/infrastructure-platforms/developer-experience/deployment-interfaces"
     DE --> DT[Development Tooling]
     click DT "/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling"
     DE --> PE[Performance Enablement]
@@ -153,6 +155,12 @@ graph TD
 次のメンバーが [Development Analytics グループ](development-analytics)に所属しています:
 
 {{< team-by-manager-slug manager="pjphillips" team="Development Analytics(.*)" >}}
+
+#### Deployment Interfaces
+
+次のメンバーが [Deployment Interfaces グループ](deployment-interfaces)に所属しています：
+
+{{< team-by-manager-slug manager="mkomor1" team="Deployment Interfaces(.*)" >}}
 
 #### Development Tooling
 
