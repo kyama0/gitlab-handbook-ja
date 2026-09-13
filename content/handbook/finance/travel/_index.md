@@ -2,16 +2,16 @@
 title: "出張の安全とセキュリティ"
 date: 2025-11-12
 upstream_path: "/handbook/finance/travel/"
-upstream_sha: "a1349675d55d5e861385a14a4b2d2b617d2381b1"
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:11:20+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-03T16:40:06-08:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ### 出張の安全とセキュリティ
 
-チームメンバーの安全とセキュリティはGitLabにとって最優先事項です。場所、地域、個人の健康、その他の安全またはセキュリティリスクに関する懸念から、GitLabを代表して特定の場所への出張に不安や危険を感じるチームメンバーは、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=26bcca9c3b603a10de2c5b7e53e45afe)またはメールでPeople Safety & Security（PSS）チームに連絡してください。People Safety & Securityチームは、チームメンバーが適切なリソースにつながるよう支援します。
+チームメンバーの安全とセキュリティはGitLabにとって最優先事項です。場所、地域、個人の健康、その他の安全またはセキュリティリスクに関する懸念から、GitLabを代表して特定の場所への出張に不安や危険を感じるチームメンバーは、[Compass](https://app.serval.com/new-request)またはメールでPeople Safety & Security（PSS）チームに連絡してください。People Safety & Securityチームは、チームメンバーが適切なリソースにつながるよう支援します。
 
 **チームメンバーの出張は、役割に必須と判断された場合を除き、義務ではありません。その出張が役割において義務的かつ必要かどうか、マネージャーに相談してください。**
 

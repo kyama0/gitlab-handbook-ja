@@ -1,9 +1,9 @@
 ---
 title: Zip リクエスト提出のヒント
 upstream_path: "/handbook/finance/procurement/tips-for-submitting-a-zip-request/"
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-lastmod: "2026-07-08T14:46:05-04:00"
-translated_at: "2026-07-09T09:03:55+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-13T21:11:20+00:00"
 translator: claude
 stale: false
 ---
@@ -183,7 +183,7 @@ Zip Change Request を提出すると、該当する approvers がレビュー�
    - PO number を invoice に含めて ap@gitlab.com に invoice を送信
    - これらの指示に従わないと支払いが遅れます
    - GitLab team member によって Coupa にアップロードされた invoices は支払いにルーティングされません。
-1. リクエストが new software を含む場合、Zip Request が完全に承認され契約が署名されたら、HelpLab の [Tech Stack Update Form](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)を通じて system details を提出してください。
+1. リクエストに新しいソフトウェアが含まれる場合、Zip リクエストが完全に承認され契約が署名されたら、Compass の [Tech Stack 更新フォーム](https://app.serval.com/new-request)を通じてシステムの詳細を提出してください。
 
 ## Procurement Office Hours
 

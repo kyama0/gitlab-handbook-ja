@@ -1,11 +1,11 @@
 ---
 title: "IT エンタープライズアプリケーション"
 upstream_path: /handbook/business-technology/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T08:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:08:19+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-17T18:26:58+00:00"
+lastmod: "2026-09-13T10:44:23-04:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -39,7 +39,7 @@ GitLab の成長を促進するための生産性を支えるテクノロジー�
 
 ## <i class="fas fa-hands-helping" id="biz-tech-icons"></i> 私たちは何をするのか？
 
-1. **全社的なビジネステクノロジー** - [テックスタック](../business-technology/tech-stack.md)
+1. **全社的なビジネステクノロジー** - [Tech Stack](https://techstack.gtlb.com/)
 
 2. **私たちがサポートするアプリケーションエコシステム**
     - Zuora（CPQ & Billing）
@@ -114,7 +114,7 @@ GitLab の成長を促進するための生産性を支えるテクノロジー�
 6. **チームに参加する** - [現在の求人](https://about.gitlab.com/jobs/all-jobs/#general-administrative)
 
 7. **お問い合わせ**
-    - **技術サポート、サービスリクエスト、または一般的な質問：** HelpLab - [IT Break/Fix リクエスト](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=07b1f158979c4610a326158de053affb)
+    - **技術サポート、サービスリクエスト、または一般的な質問：** Compass - [IT Break/Fix リクエスト](https://app.serval.com/new-request)
     - Slack チャンネル
         - #[enterprise-apps](https://gitlab.slack.com/archives/CCPG8P3K4)
         - #[business-technology](https://gitlab.slack.com/archives/C01BLS12V37)

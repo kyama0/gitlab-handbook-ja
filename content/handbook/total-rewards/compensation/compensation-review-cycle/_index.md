@@ -2,18 +2,18 @@
 title: 年次報酬レビューサイクル
 date: 2026-03-11
 upstream_path: /handbook/total-rewards/compensation/compensation-review-cycle/
-upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
-translated_at: "2026-05-07T00:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:19:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-13T14:17:22-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 <span style="color:red">_**以下の情報は、年次報酬レビュー（Annual Compensation Review、ACR）に関する一般的な情報です。最新情報については Loop をご参照ください。**_</span>
 
 ## はじめに
 
-年次報酬レビューに関するフィードバックや質問がある場合は、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide) までお問い合わせください。
+年次報酬レビューに関するフィードバックや質問がある場合は、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) までお問い合わせください。
 
 ## 年次報酬レビュー
 

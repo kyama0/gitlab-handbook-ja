@@ -146,11 +146,11 @@
     },
     "content/handbook/business-technology/_index.md": {
       "path": "content/handbook/business-technology/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "89f217941bb085f36b01d368b235ecd5d16c328bda521bce4935f4627837d49a",
-      "upstream_committed_at": "2025-01-17T18:26:58+00:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:08:19+00:00",
+      "model": "codex",
+      "input_hash": "788dadc756f722e8567c9013286424eb9cd9a9543ae64248ad46c0ccfb0ac854",
+      "upstream_committed_at": "2026-09-13T10:44:23-04:00"
     },
     "content/handbook/business-technology/engineering/infrastructure/reference-links.md": {
       "path": "content/handbook/business-technology/engineering/infrastructure/reference-links.md",
@@ -210,11 +210,11 @@
     },
     "content/handbook/business-technology/enterprise-applications/entapps-crm/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "5eccc10667b08446cfc9161ca8171819be665a5d41226c87ee4095d176acac44",
-      "upstream_committed_at": "2025-01-10T14:51:43+00:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:08:19+00:00",
+      "model": "codex",
+      "input_hash": "37ee09803e94f8810f02bba29fd2e883f6f0ab4ea4483f2c53c3489a6095dd60",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/business-technology/enterprise-applications/entapps-crm/finsys-access-requests.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/finsys-access-requests.md",
@@ -354,11 +354,11 @@
     },
     "content/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:02:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "68bd4c012edfbdb49afef050713e91f7eb40c5584337932c90c0019a3860bc01",
-      "upstream_committed_at": "2026-03-26T15:23:59-04:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:08:19+00:00",
+      "model": "codex",
+      "input_hash": "d97646f144aef7dab1373290d042164c66a171980f9f789f1603e175070491b0",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/ns-custom-field.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/ns-custom-field.md",
@@ -482,11 +482,11 @@
     },
     "content/handbook/business-technology/readmes/bien-balaba.md": {
       "path": "content/handbook/business-technology/readmes/bien-balaba.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "aec3931bfe837a24c2450cea2c684ac2e7a8355600de134083131f9be03bc5c4",
-      "upstream_committed_at": "2024-12-12T15:42:00+00:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:08:19+00:00",
+      "model": "codex",
+      "input_hash": "f960d93a601c2e7a28c595910a36fa00a03db031cac8b13abcf71869dd032e1b",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/business-technology/readmes/carlo-curato.md": {
       "path": "content/handbook/business-technology/readmes/carlo-curato.md",
@@ -530,11 +530,11 @@
     },
     "content/handbook/business-technology/readmes/jeff-ford.md": {
       "path": "content/handbook/business-technology/readmes/jeff-ford.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T08:23:34+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:08:19+00:00",
       "model": "codex",
-      "input_hash": "1969bab12c2de2d1550a30c3b70387e4245d1742c3bed6c6cff3719ed5563117",
-      "upstream_committed_at": "2026-07-08T14:46:05-04:00"
+      "input_hash": "45bcef5a4ec3cdb6121ed4286fca4fb7e27e515160252698a1af220501061f64",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/business-technology/readmes/kavya-nanjappa.md": {
       "path": "content/handbook/business-technology/readmes/kavya-nanjappa.md",
@@ -650,11 +650,11 @@
     },
     "content/handbook/business-technology/tech-stack-applications.md": {
       "path": "content/handbook/business-technology/tech-stack-applications.md",
-      "upstream_sha": "ad217b024ba77ae34e6f41cb4a28107135c5dba5",
-      "translated_at": "2026-08-01T16:25:30+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:06:55+00:00",
       "model": "codex",
-      "input_hash": "a7f2bfd74b7c75bbaafe079ae762ae7f95d75e327bd04375bae4eebfa9155325",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "c0aec7dd4c24ad3a5ba01b5dfa40611b713dc8ab05d887b33323fe500e670555",
+      "upstream_committed_at": "2026-09-13T10:44:23-04:00"
     },
     "content/handbook/business-technology/tech-stack-guide/index.md": {
       "path": "content/handbook/business-technology/tech-stack-guide/index.md",
@@ -15074,11 +15074,11 @@
     },
     "content/handbook/entity/iberia-srl-spain.md": {
       "path": "content/handbook/entity/iberia-srl-spain.md",
-      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
-      "translated_at": "2026-09-04T15:19:25+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:18:06+00:00",
       "model": "codex",
-      "input_hash": "91a634cc734233a24c32529583790ac51326901d142afd659de865885e13c804",
-      "upstream_committed_at": "2026-09-03T20:53:51-07:00"
+      "input_hash": "c45bd97f7eaee3560fdad9dd9d0d16ec417666fc9a2aa66bf45242ee779f78aa",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/entity/india-pvt-ltd.md": {
       "path": "content/handbook/entity/india-pvt-ltd.md",
@@ -15202,19 +15202,19 @@
     },
     "content/handbook/finance/accounts-payable/_index.md": {
       "path": "content/handbook/finance/accounts-payable/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3aa7842c94266e693dce6c00f03256cde5770424f0109f9fd8e8af257e6759aa",
-      "upstream_committed_at": "2026-05-06T06:00:45-07:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:10:04+00:00",
+      "model": "codex",
+      "input_hash": "5bcec685a6e3d553930a6ce41e558594c584817435064e20147946a55373b8f2",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/accounts-payable/corp-credit-cards.md": {
       "path": "content/handbook/finance/accounts-payable/corp-credit-cards.md",
-      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:10:04+00:00",
       "model": "codex",
-      "input_hash": "32aed1df70603217a7c83f5a8b9b30fd30a89488daf7aa28f1fcce8fe96084e3",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "75762317152d50171d371ecd640b4a512fc1729f8478cf572193bd011e4d6e2f",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/accounts-payable/coupa-virtual-card-guide-for-accounts-payable.md": {
       "path": "content/handbook/finance/accounts-payable/coupa-virtual-card-guide-for-accounts-payable.md",
@@ -15258,11 +15258,11 @@
     },
     "content/handbook/finance/expenses.md": {
       "path": "content/handbook/finance/expenses.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T15:11:10+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:10:04+00:00",
       "model": "codex",
-      "input_hash": "b2eb3c52a039aef9296a6105cdc2b9ecfe78b1790b7a34f01d8db7d6ed1f50e1",
-      "upstream_committed_at": "2026-08-31T10:10:52-07:00"
+      "input_hash": "f8e08af030221339d13686bb336b6560fca54803ac19049c94b84dcebb468e82",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/finance-team-performance-indicators.md": {
       "path": "content/handbook/finance/finance-team-performance-indicators.md",
@@ -15498,11 +15498,11 @@
     },
     "content/handbook/finance/procurement/_index.md": {
       "path": "content/handbook/finance/procurement/_index.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:10:04+00:00",
       "model": "codex",
-      "input_hash": "17ae381ee32dced6c022a190980ab9b6e06501a786657e4aa9990f83e9d00311",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "d0edf87989591d81e09a7b83a8c3b668b5ff82087d3d5c54b161fd92393251d2",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/procurement/charitable-contributions.md": {
       "path": "content/handbook/finance/procurement/charitable-contributions.md",
@@ -15522,11 +15522,11 @@
     },
     "content/handbook/finance/procurement/contingent-worker-policy.md": {
       "path": "content/handbook/finance/procurement/contingent-worker-policy.md",
-      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8fd567adc558f7e99972cef2d56546c337a15a886bc99aea40b99b349962a6a7",
-      "upstream_committed_at": "2025-12-09T16:30:03+01:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:11:20+00:00",
+      "model": "codex",
+      "input_hash": "a7e1d64f372d517219d0b1625e87eb413bd678e8269df9149ce8f97d29719118",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/procurement/coupa-faq.md": {
       "path": "content/handbook/finance/procurement/coupa-faq.md",
@@ -15554,19 +15554,19 @@
     },
     "content/handbook/finance/procurement/office-equipment-supplies.md": {
       "path": "content/handbook/finance/procurement/office-equipment-supplies.md",
-      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1def54f67abcb1229763ea60f55dd236b7548394673c621224fcef9fba5899cc",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:11:20+00:00",
+      "model": "codex",
+      "input_hash": "9c3069e18cf75db40cdf6a0fb0b402118e6ce7ac1438a94596458b75785ed02a",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/procurement/tips-for-submitting-a-zip-request.md": {
       "path": "content/handbook/finance/procurement/tips-for-submitting-a-zip-request.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T09:03:55+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:11:20+00:00",
       "model": "codex",
-      "input_hash": "75537a1d5a0946d85b7c6ceb213cdc72152bfca9c6377dd99289e56fcf6e2a04",
-      "upstream_committed_at": "2026-07-08T14:46:05-04:00"
+      "input_hash": "1a1fcb77e59ea58f94a75eb33a3c234a314af56c2d57e5f72752c4963a49cbc1",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/procurement/trial-agreement.md": {
       "path": "content/handbook/finance/procurement/trial-agreement.md",
@@ -15730,11 +15730,11 @@
     },
     "content/handbook/finance/travel/_index.md": {
       "path": "content/handbook/finance/travel/_index.md",
-      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "bf0544a1b10bd55cb5d0db28754b36a9628e8cafc75efd649e59df2a3e3272ac",
-      "upstream_committed_at": "2026-03-03T16:40:06-08:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:11:20+00:00",
+      "model": "codex",
+      "input_hash": "af983a150497b413d3ccb93cc4f9e717ecfa66a8989dda95a10d864ddc06746d",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/finance/travel/sponsored.md": {
       "path": "content/handbook/finance/travel/sponsored.md",
@@ -19138,11 +19138,11 @@
     },
     "content/handbook/tools-and-tips/ai/gitlab-duo.md": {
       "path": "content/handbook/tools-and-tips/ai/gitlab-duo.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:21:07+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:19:11+00:00",
       "model": "codex",
-      "input_hash": "db7d4e9d4337ddd012813e0a30adfca1c8fbf3702805bcfc34755b0c769b53f2",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "9460c5d33caf973dd338cf51dfa3023e48f282596063c557d19f34b38ef9da0b",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md": {
       "path": "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md",
@@ -19378,11 +19378,11 @@
     },
     "content/handbook/total-rewards/_index.md": {
       "path": "content/handbook/total-rewards/_index.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e77ed680d0dddfcf0952e5efc5a21c7e7b013026e7ff0dde1fbfec5c2e207a6e",
-      "upstream_committed_at": "2026-06-02T15:05:24-07:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:19:11+00:00",
+      "model": "codex",
+      "input_hash": "aeacc08a2b1bb2052c1be65ad5c1b4d335e57c4101083e302fadb7a7b5fc2374",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/_index.md": {
       "path": "content/handbook/total-rewards/benefits/_index.md",
@@ -19554,11 +19554,11 @@
     },
     "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md": {
       "path": "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "54b0adad0897f59da2dd191a35c18eaa607069d9debbe97686840363abc4ebde",
-      "upstream_committed_at": "2026-03-13T14:17:22-07:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:19:11+00:00",
+      "model": "codex",
+      "input_hash": "37158730165aace7d9a7a40fac7597d238cd7db7c19d4edc4f905d95cac99787",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/incentives.md": {
       "path": "content/handbook/total-rewards/incentives.md",
@@ -28138,11 +28138,11 @@
     },
     "content/handbook/sales/field-operations/requesting-internal-support/_index.md": {
       "path": "content/handbook/sales/field-operations/requesting-internal-support/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b8bb83c4e53650bc85a8f08aa87cfec1d768701a19617bfdf8d3a58d002eebb8",
-      "upstream_committed_at": "2026-05-21T12:17:18-04:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:19:11+00:00",
+      "model": "codex",
+      "input_hash": "b9f8a6444304324249010fb6b72967ae95122d361cbfa02e1760451c31def42d",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/sales/field-operations/gtm-resources/_index.md": {
       "path": "content/handbook/sales/field-operations/gtm-resources/_index.md",
@@ -30650,11 +30650,11 @@
     },
     "content/handbook/people-group/_index.md": {
       "path": "content/handbook/people-group/_index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T08:35:48+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:12:46+00:00",
       "model": "codex",
-      "input_hash": "3d9f4a6777201e3851200acc24cb1de3970d5b96f6d04320009087856a6c1ddb",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "89dafe6518fe83aac76ddcff012b5eea4885f3c95f169b85b06e781475562bb5",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/acceptable-use-policy.md": {
       "path": "content/handbook/people-group/acceptable-use-policy.md",
@@ -30802,11 +30802,11 @@
     },
     "content/handbook/people-group/relocation.md": {
       "path": "content/handbook/people-group/relocation.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:23:48+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:19:11+00:00",
       "model": "codex",
-      "input_hash": "4e6e992ff4e7f22c2f62b879f4b8a49bcfae1ec761a12e11883492f1f2dd1ac5",
-      "upstream_committed_at": "2026-08-14T14:40:29-04:00"
+      "input_hash": "a5d53278c88760e95bfc76ef83e9b5e302126181f0bd3c0964440c7eee692c44",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/talent-assessment.md": {
       "path": "content/handbook/people-group/talent-assessment.md",
@@ -30930,19 +30930,19 @@
     },
     "content/handbook/people-group/people-operations/_index.md": {
       "path": "content/handbook/people-group/people-operations/_index.md",
-      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
-      "translated_at": "2026-05-22T21:55:06Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "abecfc4372838f0322c67de6889db853da5e350301d9289ca8c8c0ca5896894e",
-      "upstream_committed_at": "2026-05-19T12:12:02+01:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:12:46+00:00",
+      "model": "codex",
+      "input_hash": "1da3551e25a01569ca29136ec4f52c2ef05360c5f4c830a6ebb109cca5070ece",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/people-compliance/_index.md": {
       "path": "content/handbook/people-group/people-compliance/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "8880fd13a22cebbaf9e23692038c0f229a4bc3145c396d0be83de9878a6d50c2",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:18:06+00:00",
+      "model": "codex",
+      "input_hash": "c20a38e68d992004d9875cb811f071917541ca6dd398ab1362db19c155c09776",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/people-business-partners/_index.md": {
       "path": "content/handbook/people-group/people-business-partners/_index.md",
@@ -31146,11 +31146,11 @@
     },
     "content/handbook/people-group/general-onboarding/tanewki-tips.md": {
       "path": "content/handbook/people-group/general-onboarding/tanewki-tips.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:18:06+00:00",
       "model": "codex",
-      "input_hash": "51395f93ee80bc4e4be3cac4f9c6a5486e331a1145937eec9e88cfc8e9986493",
-      "upstream_committed_at": "2026-08-19T14:13:18-04:00"
+      "input_hash": "a8e71cedff7ba7a1b6911d9e5dd83e6945b539eb9f877ff2587cfdc4961eb936",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/employment-branding/_index.md": {
       "path": "content/handbook/people-group/employment-branding/_index.md",
@@ -33626,11 +33626,11 @@
     },
     "content/handbook/eta/css/zendesk/users/provisioning.md": {
       "path": "content/handbook/eta/css/zendesk/users/provisioning.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T13:16:58+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:12:46+00:00",
       "model": "codex",
-      "input_hash": "8615db4aebb9fc14cc5a73ca2fc3713107fd484daf4d3d5024c5d1e5a18a425d",
-      "upstream_committed_at": "2026-09-01T10:10:19-05:00"
+      "input_hash": "00a6eba6acf72f37996355b5ea5664648c19d5989d2dcde89706fb5f98544099",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/eta/css/zendesk/tags/_index.md": {
       "path": "content/handbook/eta/css/zendesk/tags/_index.md",
@@ -34634,11 +34634,11 @@
     },
     "content/handbook/eta/corporate-it/compass/_index.md": {
       "path": "content/handbook/eta/corporate-it/compass/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:45:00+09:00",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:06:55+00:00",
       "model": "codex",
-      "input_hash": "1a2d7dbccc306e75d994f2a0bdba8683b75f968df0832581bbaeb855a91d74cc",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "26205854d0c2edd5ed0d2fa2f822b760243a353460713f2ea246725980f7cddb",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/access-requests/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/access-requests/_index.md",
@@ -37375,6 +37375,14 @@
       "translated_at": "2026-09-11T21:12:37+00:00",
       "model": "codex",
       "input_hash": "798d67ece36266877ed6e331cb0996d0c4e32c99fc1a47d34570b85b7f95bad0"
+    },
+    "content/handbook/eta/corporate-it/compass/compass-guide/_index.md": {
+      "path": "content/handbook/eta/corporate-it/compass/compass-guide/_index.md",
+      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
+      "translated_at": "2026-09-13T21:06:55+00:00",
+      "model": "codex",
+      "input_hash": "ee076805c8b6f4d85e08fa59e2f6f651391f2c01da4c848ad4bda06f40d5c126",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     }
   }
 }

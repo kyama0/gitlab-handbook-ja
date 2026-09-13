@@ -2,9 +2,9 @@
 title: "GitLab Iberia s.r.l.（スペイン）の情報と福利厚生"
 description: "GitLab Iberia s.r.l. スペインのチームメンバー向けエンティティ情報"
 upstream_path: "/handbook/entity/iberia-srl-spain/"
-upstream_sha: "2964a66da5fafba0461d1476fa91593397881853"
-lastmod: "2026-09-03T20:53:51-07:00"
-translated_at: "2026-09-04T15:19:25+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-13T21:18:06+00:00"
 translator: claude
 stale: false
 ---
@@ -48,7 +48,7 @@ GitLab には XIX Convenio colectivo estatal de empresas de consultor√≠a, te
 * 日次の勤務時間記録が必要（スペインの法律により義務）  
 * 月次のタイムシートを翌月 2 日までに提出  
 * テンプレートは [英語とスペイン語](https://drive.google.com/drive/folders/1KFUjpX1T2EBLqsi2c6jauI7odIiu9WXF) で利用可能  
-* HelpLab を通じて提出（Payroll ‚Üí Timecards）
+* Compass を通じて提出（Payroll ‚Üí Timecards）
 
 ## 勤務時間管理ポリシー {#timekeeping-policies}
 
@@ -80,14 +80,14 @@ GitLab には XIX Convenio colectivo estatal de empresas de consultor√≠a, te
 
 1. 記入済みのタイムシートは翌月 2 日より前に提出する必要があります。
 1. 記入済みのタイムシートは PDF ファイルとして保存する必要があります。
-1. Okta アカウントにアクセスし、HelpLab SSO タイルをクリックします。
+1. Okta アカウントにアクセスし、Compass SSO タイルをクリックします。
 1. Payroll ドロップダウンをクリックし、Timecards を選択します。
 
-![HelpLab の Payroll ドロップダウン](/images/entity/timecards.png "HelpLab Payroll dropdown")
+![Compass の Payroll ドロップダウン](/images/entity/timecards.png "Compass Payroll dropdown")
 
 1. Timecards リクエストタイルをクリックします。
 
-![Timecards リクエストタイル](/images/entity/timecards-request.png "HelpLab Timecards Request")
+![Timecards リクエストタイル](/images/entity/timecards-request.png "Compass Timecards Request")
 
 1. エンティティ（GitLab Iberia srl）を入力します
 1. マネージャーの承認は不要なので、No を入力します
@@ -95,9 +95,9 @@ GitLab には XIX Convenio colectivo estatal de empresas de consultor√≠a, te
 1. タイムシートの pdf ファイルをアップロードし、ファイル名に氏名、タイムシートの月と年が含まれていることを確認します。
 1. Submit をクリックします。
 
-![Timecards の提出](/images/entity/timecards-submission.png "HelpLab Timecard Submission")
+![Timecards の提出](/images/entity/timecards-submission.png "Compass Timecard Submission")
 
-このプロセスに関する質問は、HelpLab を通じて Non US Payroll チームに連絡してください。新規採用者または異動の場合、この情報は関連するオンボーディング／異動の Issue／チャンネルに記載されます。
+このプロセスに関する質問は、Compass を通じて Non US Payroll チームに連絡してください。新規採用者または異動の場合、この情報は関連するオンボーディング／異動の Issue／チャンネルに記載されます。
 
 タイムシートには、勤務時間を記録するための 4 つの列があります。**Time In、Time Out、Breaks、OOO** です。有給か無給かにかかわらず、半日または終日不在（Out of Office）となる場合のみ、OOO 列に「OOO」と入力します。**チームメンバーは、すべての OOO 時間を Workday に正確に記録し、法定の傷病休暇ガイドラインに従って sick note を提出する必要もあります。**
 
@@ -171,7 +171,7 @@ GitLab は AXA VIP（ネットワーク \+ 払い戻し）を通じて包括的�
 
 <summary>連絡先情報</summary>
 
-* 加入に関する質問: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)  
+* 加入に関する質問: [Compass](https://app.serval.com/new-request)  
 * プランに関する質問: Willis Towers Watson（[Soportehb@wtwco.com](mailto:Soportehb@wtwco.com)）
 * 退職後のカバレッジ継続: WTW（[Soportehb@wtwco.com](mailto:Soportehb@wtwco.com)）に連絡し、[Fernanda.Dallagnese@wtwco.com](mailto:Fernanda.Dallagnese@wtwco.com) を cc に入れる
 
@@ -266,7 +266,7 @@ Generali を通じた包括的な生命保険で、あなたと大切な人々�
 
 <summary>連絡先情報</summary>
 
-* 福利厚生に関する質問: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+* 福利厚生に関する質問: [Compass](https://app.serval.com/new-request)
 * 保険プロバイダーに関する質問: [Fernanda.dallagnese@wtwco.com](mailto:Fernanda.dallagnese@wtwco.com)
 
 </details>
@@ -569,7 +569,7 @@ GitLab Iberia s.r.l. のすべてのチームメンバー。
 
 **Total Rewards チーム**
 
-* 連絡先: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+* 連絡先: [Compass](https://app.serval.com/new-request)
 * 対応: 福利厚生の加入、質問、ライフイベント
 
 **休暇管理**
@@ -580,7 +580,7 @@ GitLab Iberia s.r.l. のすべてのチームメンバー。
 **給与サポート**
 
 * 連絡先: [nonuspayroll@gitlab.com](mailto:nonuspayroll@gitlab.com)
-* アクセス: Okta の [HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) を通じて  
+* アクセス: Okta の [Compass](/handbook/eta/corporate-it/compass/compass-guide/) を通じて  
 * 対応: 給与明細へのアクセス、給与に関する質問
 
 **Willis Towers Watson（ベネフィットブローカー）**

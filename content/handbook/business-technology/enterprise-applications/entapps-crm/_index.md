@@ -4,11 +4,11 @@ description: "GitLab の CRM システムチームは、Salesforce と Zuora を
 
 私たちの専門は顧客関係管理（CRM）と請求エコシステムにあり、最先端のテクノロジーを活用してプロセスの簡略化、ユーザーエクスペリエンスの向上、GitLab の成長戦略の支援を実現しています。"
 upstream_path: /handbook/business-technology/enterprise-applications/entapps-crm/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T06:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:08:19+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-10T14:51:43+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 
@@ -60,7 +60,7 @@ GitLab のエンタープライズアプリケーションをサポートする[
 
 CRM システムに関連する運用上のバグや一般的な問い合わせは、以下からリクエストを提出してください:
 
-- HelpLab - [IT ブレーク / フィックスリクエスト](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=07b1f158979c4610a326158de053affb)
+- Compass - [IT ブレーク / フィックスリクエスト](https://app.serval.com/new-request)
 
 ### 小〜中規模の機能リクエストと改善
 

@@ -3,11 +3,11 @@ title: "Bien Balaba の README"
 description: "Bien Balaba の個人 README"
 job: "Systems Analyst - Enterprise Applications"
 upstream_path: /handbook/business-technology/readmes/bien-balaba/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T08:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:08:19+00:00"
 translator: claude
 stale: false
-lastmod: "2024-12-12T15:42:00+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ### はじめに
@@ -24,8 +24,8 @@ lastmod: "2024-12-12T15:42:00+00:00"
 
 ### 現在取り組んでいること
 
-- Enterprise Applications チーム向けに、HelpLab で発行されるインシデント／リクエストチケット、GitLab Issue、その他さまざまなチャンネル経由のリクエストに対応・解決しています。
-- ServiceNow による HelpLab ポータルのシステム設定と開発を管理しています。
+- Enterprise Applications チーム向けに、Compass で発行されるインシデント／リクエストチケット、GitLab Issue、その他さまざまなチャンネル経由のリクエストに対応・解決しています。
+- Compass ポータルのシステム設定と開発を管理しています。
 - Salesforce のユーザーアクセスプロビジョニング。
 
 ### 仕事以外の時間

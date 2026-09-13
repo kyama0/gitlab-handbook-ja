@@ -3,11 +3,11 @@ title: "Jeff Ford の README"
 description: "Jeff Ford による自己紹介 README"
 job: "Senior IT Helpdesk Analyst"
 upstream_path: "/handbook/business-technology/readmes/jeff-ford/"
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-translated_at: "2026-07-09T08:23:34+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:08:19+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ### Hello world
@@ -41,4 +41,4 @@ lastmod: "2026-07-08T14:46:05-04:00"
 - Slack の Compass アプリ（上部の検索バーに「Compass」と入力して探してください）からお問い合わせください。
 - メール: it-help@gitlab.com
 - GitLab: `@gitlab-com/gl-security/corp/helpdesk`
-- HelpLab: [チケットを提出する](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=2970a228ebe5a210725cf4f2bad0cd70)
+- Compass: [チケットを提出する](https://app.serval.com/new-request)

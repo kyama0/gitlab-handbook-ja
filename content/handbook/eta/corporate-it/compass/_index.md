@@ -1,10 +1,10 @@
 ---
 title: "Compass"
 description: "Compass は、IT およびサービスリクエストのための Corporate IT サポートリクエストプラットフォームです。"
-upstream_path: /handbook/eta/corporate-it/compass/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:45:00+09:00"
+upstream_path: "/handbook/eta/corporate-it/compass/"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-13T21:06:55+00:00"
 translator: codex
 stale: false
 ---

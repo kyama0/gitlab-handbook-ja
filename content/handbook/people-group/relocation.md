@@ -2,16 +2,16 @@
 title: "リロケーション"
 description: "チームメンバーのリロケーションに関する GitLab のポリシーとプロセス。"
 upstream_path: /handbook/people-group/relocation/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:23:48+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:19:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T14:40:29-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## リロケーション / 住所変更
 
-このプロセスは People Operations チームが DRI として管理しています。以下に記載されていない質問については、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#accessing-helplab) からリクエストを送信してください。
+このプロセスは People Operations チームが DRI として管理しています。以下に記載されていない質問については、[Compass](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass) からリクエストを送信してください。
 
 新しい場所への引っ越しはエキサイティングな冒険であり、GitLab ではチームメンバーがリロケーションポリシーの柔軟性を活用することを奨励したいと考えています。ただし、適格性、報酬への影響の可能性 (エクイティと福利厚生の適格性を含む)、GitLab での役割への影響など、考慮すべき複数の側面があります。
 
@@ -55,7 +55,7 @@ GitLab は、チームメンバーが世界中のほとんどの場所から働�
 
 GitLab は、適用される貿易管理法への GitLab ユーザーのコンプライアンスを促進するために、予告なく変更される可能性のあるこの情報を提供します。追加情報はハンドブックの[貿易コンプライアンス](/handbook/legal/trade-compliance/)ページに記載されています。
 
-一部の国は米国の禁輸リストにはありませんが、これらの場所への旅行またはそこからの作業の前に GitLab への事前通知および/または承認が必要な場合があります。質問がある場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) 経由で People チームに遠慮なくお問い合わせください。
+一部の国は米国の禁輸リストにはありませんが、これらの場所への旅行またはそこからの作業の前に GitLab への事前通知および/または承認が必要な場合があります。質問がある場合は、[Compass](https://app.serval.com/new-request) 経由で People チームに遠慮なくお問い合わせください。
 
 ### 長期リロケーション
 
@@ -81,7 +81,7 @@ GitLab は、適用される貿易管理法への GitLab ユーザーのコン�
 
 #### 考慮事項と適格性
 
-**GitLab は、役割の要件と事業への潜在的影響に基づいて、新しい場所であなたの役割を続行できるかどうかをいつでも決定する裁量を保持します。場合によっては、提案された場所に移動が整合しないことがあり (たとえば、EMEA をサポートするために EMEA で採用されたリクルーターは、米国への移動が承認されません)、また他の場合には、会社が提案された場所でのリロケーションをサポートできない場合があります。次に、ほぼすべての状況で、エクイティ適格性を含む報酬が変更される可能性があります。リロケーションプロセス中に、報酬がどのように影響されるかを知り、情報に基づいた決定を下せるようになります。報酬の増加は[承認プロセス](/handbook/people-group/relocation/#approvals-phase)を経る必要があります。これにより、ビジネスはプロセスの早い段階で予算の利用可能性を検証できます。リロケーションがどのように影響するかを理解したい場合は、HelpLab 経由で People Operations チームに [リロケーション評価](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=45f7278647533d1067429ee0026d432d) リクエストを送信してください。**
+**GitLab は、役割の要件と事業への潜在的影響に基づいて、新しい場所であなたの役割を続行できるかどうかをいつでも決定する裁量を保持します。場合によっては、提案された場所に移動が整合しないことがあり (たとえば、EMEA をサポートするために EMEA で採用されたリクルーターは、米国への移動が承認されません)、また他の場合には、会社が提案された場所でのリロケーションをサポートできない場合があります。次に、ほぼすべての状況で、エクイティ適格性を含む報酬が変更される可能性があります。リロケーションプロセス中に、報酬がどのように影響されるかを知り、情報に基づいた決定を下せるようになります。報酬の増加は[承認プロセス](/handbook/people-group/relocation/#approvals-phase)を経る必要があります。これにより、ビジネスはプロセスの早い段階で予算の利用可能性を検証できます。リロケーションがどのように影響するかを理解したい場合は、Compass 経由で People Operations チームに [リロケーション評価](https://app.serval.com/new-request) リクエストを送信してください。**
 
 1. 新しい国への長期リロケーションを申請することを検討している場合、最初の考慮事項は、移動したい国に GitLab が[法人](/handbook/people-group/employment-solutions/#gitlab-entities-and-branches)を持っていることを確認することです。私たちは現在、採用に開かれ、採用制限やヘッドカウントキャップのない GitLab 法人へのリロケーションのみをサポートしています。これは、私たちの[国別採用ガイドライン](/handbook/people-group/employment-solutions/#country-hiring-guidelines)と整合しています。
 1. [福利厚生](/handbook/total-rewards/benefits/general-and-entity-benefits/)は国によって異なる場合があるため、変更を考慮します。
@@ -91,18 +91,18 @@ GitLab は、適用される貿易管理法への GitLab ユーザーのコン�
 
 1. リロケーションの対象となるには、必要な 1 年の在職期間を満たしている必要があります。
 
-#### 就労資格
+#### 就労資格 {#eligibility-to-work}
 
 長期リロケーション (上記で定義) に興味がある場合、その場所で働く資格があることを確認する必要があります。[オランダを除き](/handbook/people-group/visas/#right-to-immigrate-to-the-netherlands)、GitLab は新しい国に移動することを選択するチームメンバーに対して、いかなる形のスポンサーシップや移民支援も提供しません。詳細については、[ビザページ](/handbook/people-group/visas/)を参照してください。GitLab は、既にその資格がない場合、ある場所で働く資格を得るためのプロセスを支援したり促進したりすることはできません。もちろん、GitLab を関与させない手順を取ることができれば、申請してその資格を得る自由はあります。リクエストされたロケーション国で働く資格があると確信したら、[Workday プロフィールのドキュメントタブで証明をアップロード](https://docs.google.com/document/d/19B0lsMu7dMhof1ghPuBxHP23DuDqi2qpWF8pCWyEUN4/edit)することにより、適格性の証明を提供する必要があります。就労資格を確立する前に移動し、居住の最初の 6 か月以内に新しい場所での就労資格を確立できない場合、GitLab での役割を継続する能力に影響を与える可能性があります。
 
-## 長期リロケーションの申請方法
+## 長期リロケーションの申請方法 {#how-to-apply-for-a-long-term-relocation}
 
 ### チームメンバー
 
 1. [国別採用ガイドライン](/handbook/people-group/employment-solutions/#country-hiring-guidelines)を確認して、私たちがあなたのリロケーションをサポートできるかどうかを確認します。
   *別の国に移動する場合は、理想的なリロケーション日の **3 か月** 以上前にこのプロセスを開始してください。同じ国内のリロケーションの場合は、理想的なリロケーション日の 30 日以上前にプロセスを開始してください。*
 1. 別の国に移動する場合は、上記の[就労資格](/handbook/people-group/relocation/#eligibility-to-work)セクションに従って、適格性ドキュメントを Workday にアップロードします。
-1. [HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#accessing-helplab) 経由で[リロケーションリクエストフォーム](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=3537489247173d1067429ee0026d43b7)を完了して、プロセスを開始するための初期リクエストを送信します。完了後、フォームは自動的に People Operations に送信され、彼らは移動の詳細をレビューし、適切なリーダーおよび承認者と協働して、(予算と職務への影響に基づいて) リロケーションが承認できるかどうかを判断します。マネージャーは、ステークホルダーまたは顧客に悪影響を与えることなく、新しい場所で役割を適切に実行できるかをレビューします。一部の職位では、GitLab チームメンバーが特定の国、場所、地域、またはタイムゾーンに居る必要があり、リロケーションの対象になりません。People Operations は最終決定でマネージャーと協働します。マネージャーは決定と報酬への影響をコミュニケートするため、あなたは移動に関する情報に基づいた最終決定を下せます。割り当てられた People Business Partner にもリロケーションリクエストが通知されます。
+1. [Compass](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass) 経由で[リロケーションリクエストフォーム](https://app.serval.com/new-request)を完了して、プロセスを開始するための初期リクエストを送信します。完了後、フォームは自動的に People Operations に送信され、彼らは移動の詳細をレビューし、適切なリーダーおよび承認者と協働して、(予算と職務への影響に基づいて) リロケーションが承認できるかどうかを判断します。マネージャーは、ステークホルダーまたは顧客に悪影響を与えることなく、新しい場所で役割を適切に実行できるかをレビューします。一部の職位では、GitLab チームメンバーが特定の国、場所、地域、またはタイムゾーンに居る必要があり、リロケーションの対象になりません。People Operations は最終決定でマネージャーと協働します。マネージャーは決定と報酬への影響をコミュニケートするため、あなたは移動に関する情報に基づいた最終決定を下せます。割り当てられた People Business Partner にもリロケーションリクエストが通知されます。
 1. リロケーション前に必要なすべての就労書類が揃っていることを確認することで、給与の遅延やリロケーション発効日の変更を避けるための準備を始めます。GitLab は、[オランダ](/handbook/people-group/visas/#right-to-immigrate-to-the-netherlands)を除き、移民サポートを提供しないため、これらの要件を事前に調査するのはチームメンバーの責任です。税番号、銀行口座などを受け取るために必要なリロケーション先の国でのビザやその他の必要な予約の処理時間を考慮してください。
 
 注: リロケーションが承認されたと仮定して、適用される報酬の変更は、移動日 (または新しい場所で働き始める日) まで発効されず、これは新しい契約の発効日として記載されます。**私たちは遡及的にリロケーションを処理できません。リロケーションを申請する際は将来の日付のみを使用してください。**
@@ -118,7 +118,7 @@ GitLab は、適用される貿易管理法への GitLab ユーザーのコン�
 
 #### 新しい国または異なるロケーションファクターへのリロケーション
 
-1. [リロケーションリクエストフォーム](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=3537489247173d1067429ee0026d43b7)を完了して、プロセスを開始するための初期リクエストを送信します。完了後、フォームは自動的に People Operations に送信されます。
+1. [リロケーションリクエストフォーム](https://app.serval.com/new-request)を完了して、プロセスを開始するための初期リクエストを送信します。完了後、フォームは自動的に People Operations に送信されます。
 1. リロケーションリクエストフォームが People Operations によって受信されると、以下の情報に細心の注意を払ってフォームをレビューする必要があります。
 
    - [就労資格](#eligibility-to-work)
@@ -151,7 +151,7 @@ GitLab は、適用される貿易管理法への GitLab ユーザーのコン�
 1. [同じ国内のリロケーション](#relocation-within-the-same-country)
 1. [新しい国へのリロケーション](#relocation-to-a-new-country)
 
-#### 同じ国内のリロケーション
+#### 同じ国内のリロケーション {#relocation-within-the-same-country}
 
 ##### People Operations のタスク
 
@@ -175,11 +175,11 @@ GitLab は、適用される貿易管理法への GitLab ユーザーのコン�
 
 1. Workday プロフィールの Contact タブで[住所を更新](https://docs.google.com/document/d/1NiNKWd-H9FTnYkmsWWi79-DGDSUCiWMfwFaGQPRnj14/edit)します。その後、[住所が承認](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/#home-contact-changes---workday-inbox)されます。
 
-#### 新しい国へのリロケーション
+#### 新しい国へのリロケーション {#relocation-to-a-new-country}
 
 ##### People Operations のタスク
 
-1. HelpLab からの承認コミュニケーションをチームメンバーの Workday > Documents フォルダ (approvals & confidential) にアップロードします
+1. Compass からの承認コミュニケーションをチームメンバーの Workday > Documents フォルダ (approvals & confidential) にアップロードします
 1. 新しい報酬 (該当する場合) と発効日を確認するチームメンバーの新しい[契約](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements)を作成します。
     - リロケーションでは、カバーレターは不要なので、契約テンプレートからカバーレターを削除します (該当する場合)。
     - フランスに移動するチームメンバーの場合、フランスのオファーを作成する際に [CES への同様の手順](/handbook/hiring)に従い、`legal-employment@gitlab.com` 経由で Legal, Employment チームのサポートを依頼して、使用すべき契約テンプレートを決定し、フランスで適用される CBA の下にリロケーションするチームメンバーを分類してもらう必要があります。Legal, Employment チームメンバーの 1 人が、以下の情報を回答します:
@@ -191,7 +191,7 @@ GitLab は、適用される貿易管理法への GitLab ユーザーのコン�
 1. 該当する場合:
     - チームメンバーが IT BV からリロケーションする場合は、[相互終了契約](https://docs.google.com/document/d/1MJCWQupiqfU7rUk99qowHuxd64OPIHKfD05gLlfs7K8/edit)が必要です。
     - チームメンバーが 1 つの法人から別の法人にリロケーションする場合は、[サイドレター リロケーション - 1 つの法人から別の法人への移転](https://docs.google.com/document/d/1UesnGAH1y0MMgWU37RRX2DuSP14mDLff/edit)が必要です。
-1. プライベート Slack チャンネルで監査のために People Operations チームメンバーに連絡します。監査を行う人は、監査を確認する HelpLab ケースにプライベートコメントを残す必要があります。
+1. プライベート Slack チャンネルで監査のために People Operations チームメンバーに連絡します。監査を行う人は、監査を確認する Compass ケースにプライベートコメントを残す必要があります。
 1. DocuSign で契約をステージングし、最初に GitLab 署名者に、続いてチームメンバーに署名を求めます。
       - チームメンバーが契約への変更をリクエストした場合、契約が DocuSign 経由で署名のために送信された後、承認および更新されたら、チームメンバーに該当する変更の内訳を記載したメールを送ります。
 1. Workday のチームメンバーの `Contracts & Changes` フォルダに署名済みドキュメントをアップロードします。
@@ -211,7 +211,7 @@ GitLab は、適用される貿易管理法への GitLab ユーザーのコン�
 リロケーションが承認され、契約に署名されたら、[リロケーション Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding_tasks/relocations.md) が開かれ、People Operations チームによってあなたに割り当てられます。スムーズなオンボーディングを確保し、新しい国での最初の給与の準備をすべて整えるため、期日までにタスクを完了してください。
 PEO 雇用の場所からリロケーションする場合、通知期間内に PEO に直接通知する必要があります。ほとんどの[通知期間](/handbook/people-group/contracts-probation-periods/#probation-period)は通常 30 日ですが、契約に指定されているため、自身の契約をレビューする必要があります。
 
-### 国別タスク
+### 国別タスク {#country-specific-tasks}
 
 #### アメリカ合衆国
 
@@ -251,7 +251,7 @@ PEO 雇用の場所からリロケーションする場合、通知期間内に 
 
 ##### インド**へ**のリロケーション
 
-1. リロケーションが承認されたら、People Operations Specialist は HelpLab ケースでリロケーションするチームメンバーに尋ねます:
+1. リロケーションが承認されたら、People Operations Specialist は Compass ケースでリロケーションするチームメンバーに尋ねます:
 
 - 「Hi NAME,
 
@@ -287,7 +287,7 @@ PEO 雇用の場所からリロケーションする場合、通知期間内に 
 すべてのステークホルダー（マネージャーを含む）から承認を受けたら、ドイツへリロケーションするチームメンバーについては、次のステップとして German Works Council の承認を得ます。People Operations Specialist は次を完了する必要があります:
 
 - [Works Council New Hire Checklist - Germany (Relocations)](https://docs.google.com/document/d/12xkKmgTeN0sWKSZfCJ52gJ8sAocpeUpAwYITtJIFI_4/edit?tab=t.0) ドキュメントのコピーを作成し、リロケーションに関するすべての情報を記入します。
-- 情報の記入が完了したら、People Operations Specialist は Emma Tate に Works Council の承認を依頼する HelpLab 子ケースを作成します。作成したドキュメントのコピーを Emma Tate（PBP）と共有します。Emma Tate が承認取得を進め、完了後に HelpLab ケースを更新します。
+- 情報の記入が完了したら、People Operations Specialist は Emma Tate に Works Council の承認を依頼する Compass 子ケースを作成します。作成したドキュメントのコピーを Emma Tate（PBP）と共有します。Emma Tate が承認取得を進め、完了後に Compass ケースを更新します。
 
 Works Council の承認を受けたら、People Operations Specialist は次に進めます:
 
@@ -323,7 +323,7 @@ People Operations チームメンバーによって相互終了契約 (MTA) が�
    - また、両当事者がドキュメントを郵送したことを確認するようメールで推奨することがベストプラクティスです。
    - 指定された署名者が署名済みのドキュメント (両当事者が署名したもの) を受け取ったら、署名済みドキュメントのスキャンコピーも People Operations チームに送る必要があります。そのリクエストもメールに含めてください。このドキュメントは、チームメンバーの Workday プロフィールに保存する必要があります。
 
-#### カナダ
+#### カナダ {#canada}
 
 ##### ケベックと非ケベックの間のリロケーション
 

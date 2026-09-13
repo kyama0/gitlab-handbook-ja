@@ -1,20 +1,20 @@
 ---
 title: "GitLab People Operations チーム"
 upstream_path: /handbook/people-group/people-operations/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-translated_at: "2026-05-22T21:55:06Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:12:46+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-19T12:12:02+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## <i class="far fa-paper-plane"></i> お問い合わせ
 
-GitLab のチームメンバーは、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#how-do-i-use-helplab) からボタンひとつで私たちに連絡できるようになりました。
+GitLab のチームメンバーは、[Compass](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass) からボタンひとつで私たちに連絡できるようになりました。
 
 GitLab 外部から私たちのチームに問い合わせたい場合は、people_operations@gitlab.com へメールしてください。
 
-<a href="https://helplab.gitlab.systems/esc" class="btn btn-primary btn-lg"><i class="fa-brands fa-slack"></i> HelpLab</a>
+<a href="https://app.serval.com/new-request" class="btn btn-primary btn-lg"><i class="fa-brands fa-slack"></i> Compass</a>
 
 ### はじめに
 
@@ -46,22 +46,22 @@ People Operations は、People Operations のジェネラリストとスペシ�
 
 #### サービスデスク
 
-HelpLab は、ServiceNow プラットフォームの GitLab 内ブランドです。
+Compass は、GitLab が調達して社内利用向けに設定したサードパーティ製の AI ネイティブ IT サービス管理（ITSM）プラットフォーム Serval の、GitLab 社内での名称です。
 
-ServiceNow は、サービスライフサイクル管理を中央集約・自動化することで組織が業務効率を高められるようにする SaaS のエンタープライズサービス管理プラットフォームです。簡単に言えば、サポートチケッティングシステムであり、より迅速で正確なヘルプを提供することで、チームメイトの生産性を最大化することを可能にします。
+Compass は、チームメンバーが IT、People、ビジネスサービスに関する支援を受けるための一元化された窓口です。よくあるリクエストを自動で解決し、対応できないものは背景情報をすべて添えて適切なチームに振り分けるため、チームメンバーが問題を説明し直す必要はありません。詳細は [Compass ユーザーガイド](/handbook/eta/corporate-it/compass/compass-guide/)を参照してください。
 
 #### 関わり方の方法
 
 | やり取りの種類 | コミュニケーション手段 |
 | ----- | ----- |
-| **社内**: 現在の GitLab チームメンバーからの問い合わせ | [HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#how-do-i-use-helplab)、またはメールで people_operations@gitlab.com |
+| **社内**: 現在の GitLab チームメンバーからの問い合わせ | [Compass](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass)、またはメールで people_operations@gitlab.com |
 | **社外**: 元 GitLab チームメンバーや社外の方からの問い合わせ | people_operations@gitlab.com |
 
 GitLab は [Handbook First](/handbook/about/handbook-usage/#why-handbook-first) の組織であり続けます。ただし、ピープル関連の質問への答えが明らかでない場合、次の連絡先は People Operations になります。
 
 #### 期待される対応（SLA）
 
-チームメンバーが HelpLab を使って質問やリクエストを送信すると、24 時間以内にケースの受領通知を受け取れます。
+チームメンバーが Compass を使って質問やリクエストを送信すると、24 時間以内にケースの受領通知を受け取れます。
 
 People Operations は、問い合わせやリクエストを内容と複雑さに応じて分類するティア制モデルで運用しており、これに沿って、対応するジェネラリストから別途指定がない限り、想定される解決時間が決まります。
 

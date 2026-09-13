@@ -3,11 +3,11 @@ title: 買掛金（Accounts Payable）
 decription: >-
   このページにはGitLabの買掛金部門のポリシー、手順、ガイドラインが記載されています。
 upstream_path: /handbook/finance/accounts-payable/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:10:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-06T06:00:45-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 このページにはGitLabの買掛金部門のポリシー、手順、ガイドラインが記載されています。私たちの目標は、チームメンバーと外部パートナーの双方への支払いをタイムリーに行えるようにすることです。また、買掛金処理に関連するハンドブックの他の領域への便利なリンクも提供しています。
@@ -109,9 +109,9 @@ GitLabがサプライヤーに対して推奨する支払い方法は、サプ�
 - これには **Navan Purchase Card** と **Physical Cards** の準備も含まれます。
 - [Navan Purchase Card](https://internal.gitlab.com/handbook/finance/expenses/#6-purchase-cards) - これらはAPチームによってのみ使用されるバーチャルカードで、新しいチームメンバーにオンボーディング時にホームオフィスセットアップ用の$1,500 USD（または現地通貨換算額）の手当を提供するためにのみ使用されます。
 - [Physical Cards](https://internal.gitlab.com/handbook/finance/expenses/#5-physical-cards) - このNavan Physical Cardポリシーの目的は、会社運営に必要な購入を促進し、効率的にプロセスを早めることです。制限は$10,000 USDに設定されており、承認されたIssueのリクエストに対して提供されます。
-- 経費について一般的な質問がある場合は、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#how-do-i-use-helplab) にチケットを提出してください。
-- HelpLabのローンチに伴い - すべての質問を [一般経費関連の問い合わせ](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=f9c88a6a47f3f55067429ee0026d43b6) のためのHelpLabチケットプロセスを通じてAP Adminチームに向けることを丁寧にリクエストします。
-- 経費に関する詳細なガイダンスについては、Expense PolicyおよびFAQページもレビューしてください。これらの便利な情報リンクは、HelpLabツールのExpenses > Quick linksセクションにあります。
+- 経費について一般的な質問がある場合は、[Compass](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass) にチケットを提出してください。
+- Compass のローンチに伴い - すべての質問を [一般経費関連の問い合わせ](https://app.serval.com/new-request) のためのCompass チケットプロセスを通じてAP Adminチームに向けることを丁寧にリクエストします。
+- 経費に関する詳細なガイダンスについては、Expense PolicyおよびFAQページもレビューしてください。これらの便利な情報リンクは、Compass ツールの Expenses > Quick links セクションにあります。
 
 ## <i id="biz-tech-icons" class="fas fa-stream"></i> QuickLinks
 
