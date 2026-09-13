@@ -2,11 +2,11 @@
 title: TaNewKi のヒント
 description: GitLab で開始する新入社員のガイド
 upstream_path: /handbook/people-group/general-onboarding/tanewki-tips/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:18:06+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## チームへようこそ
@@ -59,7 +59,7 @@ People Operations チームは、オンボーディングおよび GitLab での
 
 - オンボーディングプロセスは [自分のペース](/handbook/values/#self-service-and-self-learning) で進めますが、🔴 でマークされたアイテムは指定された日に完了する必要があります。他のタスクについては、日数の内訳はガイドラインとしてあるものなので、タスクを完了する必要があると感じて勤務時間を超えて働かないでください。
 - 時間をかけてください — オンボーディングには丸 2 週間が割り当てられています。マネージャー、オンボーディングバディ、GitLab 全体のサポートも受けられます。
-- 必要なときはいつでも [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) または Slack を通じて People Operations チームまたは IT Ops に連絡してください。
+- 必要なときはいつでも [Compass](https://app.serval.com/new-request) または Slack を通じて People Operations チームまたは IT Ops に連絡してください。
 - オンボーディング Issue と該当するハンドブックページには有用なコンテンツがたくさんあります。上記の便利なツールセクションで便利なテキスト読み上げツールの 1 つを有効にし、休憩を取ることを忘れないでください。また、後で参照するために特定のハンドブックページをブックマークすることも自由にしてください（大きな赤い点 🔴 でマークされたものを除き、それらは即座のアクションを必要とします）。
 
 #### コミュニケーションツール
@@ -67,7 +67,7 @@ People Operations チームは、オンボーディングおよび GitLab での
 - 私たちは [非同期コミュニケーション](/handbook/communication/#asynchronous-communication) を取り入れたオールリモート企業です
 - [Slack](/handbook/tools-and-tips/slack/) は私たちの主要なコミュニケーションツールです — 他のチームメンバーや興味のあるグループとつながるために使用してください
 - 標準的なオフィスソフトウェアではなく、Google Workspace（[Gmail](https://workspace.google.com/intl/en/products/gmail/)、[Drive](https://workspace.google.com/intl/en/products/drive/)、Docs/Sheets）を使用します
-- チームメンバーは、特定のクエリに関するサポートや支援が必要な場合、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) を通じて該当チームに連絡できます
+- チームメンバーは、特定のクエリに関するサポートや支援が必要な場合、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) を通じて該当チームに連絡できます
 
 #### 2 週目以降
 
@@ -110,12 +110,12 @@ GitLab では、誰もが所属し、誰もが貢献できます。新しいチ�
 
 - **初日前**: 標準機器以外の職場の配慮や調整が必要な場合は、支援のために Team Member Relations チーム（teammemberrelations@gitlab.com）に連絡してください。
 - **1〜3 日目**: GitLab ツール（Slack、Zoom、Google Workspace）のアクセシビリティ機能を探索してください。
-- **最初の週**: 標準の人間工学的機器については、マネージャーと IT と相談してください。特殊な配慮については、Team Member Relations チームに HelpLab（内部システム）でリクエストを送信してください。
-- **継続的に**: 標準機器のニーズには標準的な IT プロセスを使用し、継続的な配慮および/または調整をリクエストするために HelpLab（内部システム）を通じて Team Member Relations (TMR) チームに連絡してください。
+- **最初の週**: 標準の人間工学的機器については、マネージャーと IT と相談してください。特殊な配慮については、Team Member Relations チームに Compass（内部システム）でリクエストを送信してください。
+- **継続的に**: 標準機器のニーズには標準的な IT プロセスを使用し、継続的な配慮および/または調整をリクエストするために Compass（内部システム）を通じて Team Member Relations (TMR) チームに連絡してください。
 
 ##### サポートネットワーク
 
-- **IT および HelpLab**: 標準機器のリクエストと技術サポートはすべてのチームメンバーが利用できます。
+- **IT および Compass**: 標準機器のリクエストと技術サポートはすべてのチームメンバーが利用できます。
 - **Team Member Relations**: 個別の職場の配慮、調整、および標準の提供以上の個別のサポート。
 - **Diversity, Inclusion & Belonging (DIB) チーム**: Slack を通じたポリシーの質問とアクセシビリティのコンサルテーション。
 

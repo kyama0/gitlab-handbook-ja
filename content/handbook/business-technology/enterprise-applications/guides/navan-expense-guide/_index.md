@@ -2,11 +2,11 @@
 title: "Navan Expense エンドユーザーガイド"
 description: "Navan Expense エンドユーザーガイド"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:02:44Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:08:19+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-03-26T15:23:59-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -809,6 +809,6 @@ Navan Expense の製品リリースは次のブログで共有されています
 
 
 {{% alert color="info" %}}
-Accounts Payable チームまたは Finance System Admins に連絡するには、質問内容を記載した HelpLab リクエストを開いてください。
+Accounts Payable チームまたは Finance System Admins に連絡するには、質問内容を記載した Compass リクエストを開いてください。
 {{% /alert %}}
 

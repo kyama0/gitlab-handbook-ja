@@ -1,11 +1,11 @@
 ---
 title: GitLab のトータルリワードガイド
 upstream_path: /handbook/total-rewards/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:19:11+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-06-02T15:05:24-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 {{% cardpane %}}
@@ -52,4 +52,4 @@ _\* GitLab の報酬は現在、Job Architecture プロジェクトの一環と�
 
 報酬・福利厚生・エクイティに関するフィードバックや質問がある場合は、以下からご連絡いただけます。
 
-* **[HelpLab:](/handbook/business-technology/enterprise-applications/guides/helplab-guide/)** People Operations にお問い合わせいただくと、質問にお答えするか、適切な担当者・チームに引き継ぎます。
+* **[Compass:](/handbook/eta/corporate-it/compass/compass-guide/)** People Operations にお問い合わせいただくと、質問にお答えするか、適切な担当者・チームに引き継ぎます。

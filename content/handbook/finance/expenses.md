@@ -1,11 +1,11 @@
 ---
 title: グローバル出張・経費ポリシー
 upstream_path: /handbook/finance/expenses/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T15:11:10+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:10:04+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-31T10:10:52-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 {{% alert title="これは管理対象ドキュメントです" color="danger" %}}
@@ -72,15 +72,15 @@ GitLab のグローバル出張・経費ポリシーは、私たちが常に会�
 - 経費品目には、支出にクライアント／チームメンバー以外の金額が含まれている場合は明確に記載する必要があります。特定の国の税制要件により、クライアント支出を異なる方法で計上する必要があります。
 - これらのガイドラインの範囲外で提出されたものは、ポリシー外としてフラグが立てられます。
 - 業務関連経費（インターネット、コワーキングスペース、その他の月額サブスクリプションなど）は、いかなる種類の休暇中も払い戻し対象外です。
-- PEO の場合、Navan ではご存知のとおり、雇用されている GitLab 組織の通貨で自動的にシステムが払い戻します。PEO に請求する必要のある通貨で確実に払い戻されるようにするため、PEO に請求する支払い通貨で経費を提出してください。すなわち、PEO に USD で請求する場合は、Navan で経費レポートを提出する前に経費を USD に変換してください。これにより、毎月 PEO に請求する正確な金額を把握できます。これが不可能な場合は、PEO への支払いのために経費が給与に振り替えられる日の Netsuite の FX レートを使用して通貨を変換します。Navan で提出された実際の金額を確認するには、毎月提出された経費のリストを提供できます。必要な情報を提供できるよう、毎月 [HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) チケットを提出してリクエストしてください。
+- PEO の場合、Navan ではご存知のとおり、雇用されている GitLab 組織の通貨で自動的にシステムが払い戻します。PEO に請求する必要のある通貨で確実に払い戻されるようにするため、PEO に請求する支払い通貨で経費を提出してください。すなわち、PEO に USD で請求する場合は、Navan で経費レポートを提出する前に経費を USD に変換してください。これにより、毎月 PEO に請求する正確な金額を把握できます。これが不可能な場合は、PEO への支払いのために経費が給与に振り替えられる日の Netsuite の FX レートを使用して通貨を変換します。Navan で提出された実際の金額を確認するには、毎月提出された経費のリストを提供できます。必要な情報を提供できるよう、毎月 [Compass](/handbook/eta/corporate-it/compass/compass-guide/) チケットを提出してリクエストしてください。
 - 第三者と同様に、共有する個人データの量を制限することがベストプラクティスです。経費を提出するために領収書に個人データを含める必要はないため、プライバシーを高めるために個人データを編集しても構いません。ただし、これは必須のステップではありません。経費領収書から個人データを編集しないことを選択する方のために、Navan で実施されているプライバシーおよびセキュリティ管理が評価されており、お客様の情報を適切に保護するように設計されています。
 
 ### 3.1 ポリシー外取引
 
 - Navan で「ポリシー外」としてフラグが立てられた経費は、特定の添付ファイル（例：承認済みの Issue）と承認が必要なため、追加のレビューが必要であることを意味する場合があります。レビューの結果、特定の経費についてさらに明確化が必要な場合、AP チームは、経費を承認または却下する前に、Navan 経由でチームメンバーに連絡し、取引の正当性について説明を求めます。
-- ポリシーの例外はすべて AP Admin の裁量で承認または却下されます。Admin が追加の情報が必要だと判断した場合、最終決定のためチームメンバーのマネージャーにリクエストをエスカレーションします。例外の承認は Navan ツール内または HelpLab チケットを通じて付与できます。
+- ポリシーの例外はすべて AP Admin の裁量で承認または却下されます。Admin が追加の情報が必要だと判断した場合、最終決定のためチームメンバーのマネージャーにリクエストをエスカレーションします。例外の承認は Navan ツール内または Compass チケットを通じて付与できます。
 - 品目を請求したものの、GitLab に払い戻す必要がある場合、Navan の返金プロセスに従って資金を提出しなければなりません。
-- ポリシー外で却下された経費に関してご質問がある場合は、`Expenses -> General Expenses` タイル下の [HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) でリクエストを提出してください。マネージャーをタグ付けし、レビューできるよう他の追加文書を添付してください。
+- ポリシー外で却下された経費に関してご質問がある場合は、`Expenses -> General Expenses` タイル下の [Compass](/handbook/eta/corporate-it/compass/compass-guide/) でリクエストを提出してください。マネージャーをタグ付けし、レビューできるよう他の追加文書を添付してください。
 
 ### 3.2 出張目的ガイダンス
 
@@ -110,7 +110,7 @@ GitLab のグローバル出張・経費ポリシーは、私たちが常に会�
 
 #### 航空運賃
 
-すべての業務関連フライトは Navan を介して予約する必要があり、GitLab 出張カードで支払われます。各フライト検索について、Navan はリアルタイムで価格を決定します。また、時には Navan 外でより安いフライトを見つけることが可能ですが、会社全体の購買力により総じてより良いレートを得られることに注意してください。Navan 外でフライトが安い場合でも、Navan で予約してください。また、Navan のレートと他の航空会社のレートのスクリーンショットを添えて、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) の `Expenses -> Travel Related Expenses` ページにリクエストを提出し、Expense チームが Navan に対処できるようにしてください。
+すべての業務関連フライトは Navan を介して予約する必要があり、GitLab 出張カードで支払われます。各フライト検索について、Navan はリアルタイムで価格を決定します。また、時には Navan 外でより安いフライトを見つけることが可能ですが、会社全体の購買力により総じてより良いレートを得られることに注意してください。Navan 外でフライトが安い場合でも、Navan で予約してください。また、Navan のレートと他の航空会社のレートのスクリーンショットを添えて、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) の `Expenses -> Travel Related Expenses` ページにリクエストを提出し、Expense チームが Navan に対処できるようにしてください。
 
 #### 事前購入
 
@@ -145,7 +145,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 - チームメンバーは、参加できなくなる出張をキャンセルする責任があります。
 - フライトキャンセルは通常、今後使用できるフライトクレジット／未使用チケットになります。
-- 未使用チケットは、可能な限り将来の業務出張に使用する必要があります。チームメンバーがチケットを使用できないことを知っている場合は、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) の `Expenses -> Travel Related Expenses` ページでリクエストを提出してください。
+- 未使用チケットは、可能な限り将来の業務出張に使用する必要があります。チームメンバーがチケットを使用できないことを知っている場合は、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) の `Expenses -> Travel Related Expenses` ページでリクエストを提出してください。
 - チームメンバーは未使用の航空チケットから個人的に利益を得ることはできません。
 - フライトの変更が必要な場合は、Navan サポートにお問い合わせください。
 
@@ -378,7 +378,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - スペースは、チームメンバーが雇用されている国の主要居住地から通勤可能な距離（±50 km）内に位置している必要があります。ただし、チームメンバーが業務出張中の単発の日（デイパス）は例外です。これは税務上の理由によるものです。
 - コワーキングスペースは、共有ワークスペースサービスの提供を主な事業目的とする専門的に管理された施設である必要があります。アパート、私有財産、またはコワーキングが副次的または付随的なサービスとして提供される施設（ジム、カントリークラブ、ゴルフクラブ、ホテル、カフェ、レクリエーション施設など）の賃貸は禁止されています。中核ビジネスモデルがワークスペースレンタルを中心とする専用のコワーキングプロバイダーのみが受け入れられます。
 - 個人旅行中はコワーキングスペースは払い戻し対象外です。
-- 月内に 5 日を超える予約がある場合、マネージャーおよび Finance の承認（[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) の `Expenses -> General Expenses` ページからリクエストを提出することによる）が必要であり、経費提出前に取得する必要があります。
+- 月内に 5 日を超える予約がある場合、マネージャーおよび Finance の承認（[Compass](/handbook/eta/corporate-it/compass/compass-guide/) の `Expenses -> General Expenses` ページからリクエストを提出することによる）が必要であり、経費提出前に取得する必要があります。
 - 承認されたメールのコピーは、初月の提出時に提出する必要があります。
 - GitLab 名での契約は許可されておらず、チームメンバー名でなければなりません。
 - コワーキングスペースは、関連する月内に毎月、完全な領収書とともに提出する必要があります。
@@ -425,10 +425,10 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 私たちはあなたが望むようにオフィスをセットアップしてほしいと考えています。購入できるオフィス機器に制限を設けたくありませんが、オフィス機器という用語の対象範囲を明確にしたいと思います。
 - 含まれるもの - GitLab での役割を確実に遂行できるようにするために必要な必須品目には、椅子、机、モニター、ノートパソコン（提供）、ヘッドセット、外部マイク、外部キーボード、外部マウスが含まれます。
 - さらに、追加モニター、ノートパソコンスタンド、外部ウェブカメラ、補助照明、ノートパソコンバッグ/ケースなどの品目も、手当/Allowance を使用して考慮および経費計上できます。
-- これら以外の品目はポリシー例外に該当し、購入前に HelpLab プロセスを介して承認が必要です - [HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) の `Expenses -> Home Office Equipment` ページ。
+- これら以外の品目はポリシー例外に該当し、購入前に Compass プロセスを介して承認が必要です - [Compass](/handbook/eta/corporate-it/compass/compass-guide/) の `Expenses -> Home Office Equipment` ページ。
 - さらに、以下の品目は払い戻し対象外です：電話、時計、スマートスピーカー、スマート TV/スマートモニター、ウォーキングパッド/トレッドミル、タブレット、本棚、棚、キャビネット、その他の家具、wifi メッシュ、ルーター、エクステンダー/ブースター。
 - 個人売主からの購入（例：新品または中古機器）は許可されます。経費計上するには、合意された金額、支払い方法、および説明フィールドに品目詳細を示す売主との取引のスクリーンショットを添付してください。オンライン振込で支払った場合は、バックアップとして領収書を添付してください。
-- 疑問がある場合は、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) の `Expenses -> Home Office Equipment` ページでリクエストを提出して Expense チームに連絡してください。これらの購入は引き続きマネージャーおよび会計チームによってレビューされ、これらの資金の不正使用はフラグが立てられることに注意してください。
+- 疑問がある場合は、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) の `Expenses -> Home Office Equipment` ページでリクエストを提出して Expense チームに連絡してください。これらの購入は引き続きマネージャーおよび会計チームによってレビューされ、これらの資金の不正使用はフラグが立てられることに注意してください。
 
 ##### 新入社員 - 1,500 米ドル（または同等の現地通貨）ガイドライン
 
@@ -496,7 +496,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - GitLab チームメンバーに提供される贈答品や花の費用は、送信者の部門予算に割り当てられます。贈答品の許容費用は 1 ギフトあたり 125 米ドル（送料を含む）までです。
 - チームへのホリデーギフトを購入したい場合は、これらは個人で行う必要があり、経費計上すべきではありません。
 - ピープルマネージャーは、経費払い戻しのために自身の個人カードを使用する必要があります。ピープルマネージャーは、経費のために Navan Expense でチーム `EmployeeGiftsFlowers` およびアカウント 6028 を確実に使用する必要があります。
-- 贈答品および花の経費計上に関するさらなる質問については、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) の `Expenses -> General Expenses` ページからリクエストを提出して AP チームに連絡してください。
+- 贈答品および花の経費計上に関するさらなる質問については、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) の `Expenses -> General Expenses` ページからリクエストを提出して AP チームに連絡してください。
 
 {{% panel header="**コーディング**" header-bg="green" %}}
 
@@ -732,7 +732,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 **iiPay**
 
 - チームメンバーは Navan を通じて経費を提出する必要があります。
-- ナイジェリアを除くすべての個別請負業者または C2C は、毎月 22 日までに iiPay によって払い戻されます。すべての経費は、当月の支払いに含まれるようにするため、毎月 3 日以前に Accounts Payable チーム（ポリシー外経費の場合）が提出および承認する必要があります。C2C ステータスの請負業者の場合、経費払い戻し用に別個の銀行をセットアップする必要がある場合は、HelpLab 経由で Payroll チームに連絡し、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) の `Expenses -> General Expenses` ページでリクエストを提出してください。
+- ナイジェリアを除くすべての個別請負業者または C2C は、毎月 22 日までに iiPay によって払い戻されます。すべての経費は、当月の支払いに含まれるようにするため、毎月 3 日以前に Accounts Payable チーム（ポリシー外経費の場合）が提出および承認する必要があります。C2C ステータスの請負業者の場合、経費払い戻し用に別個の銀行をセットアップする必要がある場合は、Compass 経由で Payroll チームに連絡し、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) の `Expenses -> General Expenses` ページでリクエストを提出してください。
 
 **CXC Global**
 
@@ -772,7 +772,7 @@ Navan 内のこれらのバーチャルカードは AP チームのみが使用�
 
 ### Navan エンドユーザーガイド
 
-- Navan Expense ツールの使用方法については、[Navan エンドユーザーガイド](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/)を参照してください。関連する質問は、HelpLab 経由でチームに直接連絡できます。
+- Navan Expense ツールの使用方法については、[Navan エンドユーザーガイド](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/)を参照してください。関連する質問は、Compass 経由でチームに直接連絡できます。
 
 ### Navan ロイヤリティプログラム
 

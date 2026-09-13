@@ -5,39 +5,37 @@ extra_js:
   - libs/vue.min.js
   - tech-stack.js
 upstream_path: "/handbook/business-technology/tech-stack-applications/"
-upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
-translated_at: "2026-08-01T16:25:30+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:06:55+00:00"
 translator: "codex"
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-13T10:44:23-04:00"
 ---
 
-## Tech Stack のプロセスは HelpLab に移行しました
+## Tech Stack のプロセスは Compass に移行しました
 
-**Tech Stack の管理プロセス全体は、10 月 22 日 (水) に正式に HelpLab へ移行しました**。
+**Tech Stack の管理プロセス全体は、10 月 22 日 (水) に正式に Compass へ移行しました**。
 
-- [HelpLab 上の Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications) は[こちら](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications) からアクセスできます。Okta の **「Application Tech Stack」** アプリ経由でも利用可能です。
+- システム情報は現在 [Compass 上の Tech Stack](https://app.serval.com/new-request) にあります。Tech Stack にはこちらからアクセスできます - [Tech Stack](https://techstack.gtlb.com)。
 
 ### 既存のマージリクエストがありますか?
 
-- 心配は不要です。進捗状況に応じて、変更を完了し、**HelpLab 上の Tech Stack** に反映します。
+- 心配は不要です。進捗状況に応じて、変更を完了し、[Tech Stack](https://techstack.gtlb.com)に反映します。
 
 ### 新しいマージリクエストを作成する予定ですか?
 
 MR を提出する代わりに、新しい **Tech Stack 更新フォーム** をご利用ください。
 
-- HelpLab の **[Tech Stack 更新フォーム](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)** を使用してください。
-- **Okta > HelpLab > IT > Tech Stack Update**
+- Compass の **[Tech Stack 更新フォーム](https://app.serval.com/new-request)** を使用してください。
 
 ## 定義とアクセス
 
 Tech Stack は、事業を支えるために GitLab が現在使用しているすべてのテクノロジーのリストです。すべての部門で使用されるシステム、アプリケーション、ツール、データに加えて、ビジネス目的/説明、オーナー、プロビジョナー、アクセスチーム、その他の関連属性が記載されています。
 
-**[HelpLab 上の Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)** は現在、すべてのシステム情報および変更の公式な単一情報源 (Single Source of Truth) となっています。次の経路でアクセスできます。
+[Tech Stack](https://techstack.gtlb.com)は現在、すべてのシステム情報および変更の公式な単一情報源となっています。次の経路でアクセスできます。
 
-- **Okta → HelpLab → IT → Tech Stack Update**
-- Okta ダッシュボードで **「Application Tech Stack」** アプリを検索する
-- 直接リンク: **[HelpLab 上の Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)**
+- **Okta → Compass → New Request → Service Catalog → Tech Stack Update**
+- [Tech Stack](https://techstack.gtlb.com)にアクセスする
 
 多くのアプリケーションには **[Tech Stack ガイド](/handbook/business-technology/tech-stack-guide/)** があり、各アプリの使われ方や実装方法を理解できます。
 
@@ -59,26 +57,21 @@ Tech Stack の [Jupyter Notebook ビュー](https://colab.research.google.com/dr
 
 ## Tech Stack の更新
 
-Tech Stack のすべての変更は、HelpLab の **[Tech Stack 更新フォーム](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)** を使って提出する必要があります。
+Tech Stack のすべての変更は、Compass の **[Tech Stack 更新フォーム](https://app.serval.com/new-request)** を使って提出する必要があります。
 
 ### Tech Stack 更新リクエストの提出方法
 
-1. **HelpLab → IT → Tech Stack Update** にアクセスします。
-   *(Okta 経路: Okta → HelpLab → IT → Tech Stack Update)*
-  ![Tech Stack Update](/images/business-technology/enterprise-applications/tech-stack/techstackapplication.png "Tech Stack Update")
-
-2. HelpLab で IT セクション配下の **[Tech Stack 更新フォーム](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)** を開きます。
-
+1. **Compass → New Request → Service Catalog → Tech Stack Update** にアクセスします。
+2. Compass で Service Catalog セクション配下の **[Tech Stack 更新フォーム](https://app.serval.com/new-request)** を開きます。
 3. フォームが読み込まれたら、**「What can we help you with?」** から該当するオプションを選択します。
    選択内容に応じて適切なフォローアップ質問が自動的に表示されます。
-  ![Form](/images/business-technology/enterprise-applications/tech-stack/form-details.jpeg "Form")
 
 4. 必要な詳細をすべて入力し、リクエストを送信します。
 
 ### 処理とワークフロー
 
-- すべてのリクエストは HelpLab を介してルーティングされます。
-- **HelpLab Team / IT EntApps Team** がエントリーをレビュー、検証、更新します。
+- すべてのリクエストは Compass を介してルーティングされます。
+- **Corporate IT Team / IT EntApps Team** がエントリーをレビュー、検証、更新します。
 - オーナーシップの役割は変わりません。引き続き、各システムのビジネスオーナー、テクニカルオーナー、プロビジョナーを指定します。
 
 ### **Tech Stack にはどのようなデータが格納されますか?**
@@ -115,11 +108,10 @@ Tech Stack を更新する際は、以下の手順に従い、各フィールド
 
 ### Tech Stack への新規システムの追加
 
-新規システムを Tech Stack に追加するプロセスは、完全に HelpLab へ移行しました。`tech_stack.yml` ファイルへのマージリクエスト作成ではなく、以下のプロセスに従ってください。
+新規システムを Tech Stack に追加するプロセスは、完全に Compass へ移行しました。`tech_stack.yml` ファイルへのマージリクエスト作成ではなく、以下のプロセスに従ってください。
 
-1. **HelpLab → IT → [Tech Stack 更新](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)** にアクセスします。
-   *(Okta 経路: Okta → HelpLab → IT → Tech Stack Update)*
-    ![Tech Stack Update](/images/business-technology/enterprise-applications/tech-stack/techstackapplication.png "Tech Stack Update")
+1. **Compass → New Request → Service Catalog → Tech Stack Update [Tech Stack 更新](https://app.serval.com/new-request)** にアクセスします。
+   *(Okta 経路: Okta → Compass → New Request → Service Catalog → Tech Stack Update)*
 
 2. フォームを開き、**Add a New System** を選択します。
    システムの説明、オーナーシップ、プロビジョナー、アクセスの詳細、データ分類、その他の関連属性など、必要なフィールドがすべて自動的に表示されます。
@@ -130,29 +122,27 @@ Tech Stack を更新する際は、以下の手順に従い、各フィールド
 
 ### Tech Stack 内の既存システムの更新
 
-すべてのシステム更新は HelpLab を通じて行う必要があります。`tech_stack.yml` ファイルへのマージリクエスト作成ではなく、以下のプロセスに従ってください。
+すべてのシステム更新は Compass を通じて行う必要があります。`tech_stack.yml` ファイルへのマージリクエスト作成ではなく、以下のプロセスに従ってください。
 
-1. **HelpLab → IT → [Tech Stack 更新](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)** に移動し、**Update an Existing System** を選択します。
-  ![Tech Stack Update](/images/business-technology/enterprise-applications/tech-stack/techstackapplication.png "Tech Stack Update")
+1. **Compass → IT → [Tech Stack 更新](https://app.serval.com/new-request)** に移動し、**Update an Existing System** を選択します。
 2. 修正したいシステムを選択します。
 3. 更新の種類に応じたフォローアップ質問がフォームに自動的に表示されます。
 4. 必要な変更を入力し、フォームを送信します。
 
-該当するレビューグループが HelpLab ワークフローの一部として更新を検証・処理します。
+該当するレビューグループが Compass ワークフローの一部として更新を検証・処理します。
 
 ### Tech Stack からのシステムの削除
 
-Tech Stack からシステムを削除するには、`tech_stack.yml` ファイルへのマージリクエスト提出ではなく、[Tech Stack 更新](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab) フォームを使用してください。
+Tech Stack からシステムを削除するには、`tech_stack.yml` ファイルへのマージリクエスト提出ではなく、[Tech Stack 更新](https://app.serval.com/new-request) フォームを使用してください。
 
-1. **HelpLab → IT → [Tech Stack 更新](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)** にアクセスし、**Remove a System** を選択します。
-  ![Tech Stack Update](/images/business-technology/enterprise-applications/tech-stack/techstackapplication.png "Tech Stack Update")
+1. **Compass → IT → [Tech Stack 更新](https://app.serval.com/new-request)** にアクセスし、**Remove a System** を選択します。
 2. 廃止やオフボーディングの背景情報と、プロセスを開始するために必要な詳細を提供します。
 3. このワークフローの一部として、**ビジネスオーナー** は **Legal** および **IT Compliance** と連携し、データ削除および契約上の要件が完全に満たされていることを保証する必要があります。
-4. すべてのステップが完了し検証されると、**HelpLab Team / EntApps Team** がシステムを Tech Stack から削除します。
+4. すべてのステップが完了し検証されると、**Compass Team / EntApps Team** がシステムを Tech Stack から削除します。
 
-時折、Tech Stack に掲載されているシステムが廃止されることがあります。システムがオフボーディングされる場合 (使用されなくなる、または置き換えられる)、HelpLab の [Tech Stack 更新](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab) ワークフローを通じて Remove a System リクエストを提出してください。
+時折、Tech Stack に掲載されているシステムが廃止されることがあります。システムがオフボーディングされる場合 (使用されなくなる、または置き換えられる)、Compass の [Tech Stack 更新](https://app.serval.com/new-request) ワークフローを通じて Remove a System リクエストを提出してください。
 
-このプロセスの一環として、ビジネスオーナーは Legal および IT Compliance と協力し、ベンダー契約に従ってデータ削除と契約上の要件がすべて完了することを保証する必要があります。すべてのステップが検証されると、システムは HelpLab ワークフローを通じて Tech Stack から削除されます。
+このプロセスの一環として、ビジネスオーナーは Legal および IT Compliance と協力し、ベンダー契約に従ってデータ削除と契約上の要件がすべて完了することを保証する必要があります。すべてのステップが検証されると、システムは Compass ワークフローを通じて Tech Stack から削除されます。
 
 ## その他の関連プロセス
 

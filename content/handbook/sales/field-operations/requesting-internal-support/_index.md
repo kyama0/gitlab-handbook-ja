@@ -1,11 +1,11 @@
 ---
-title: Requesting Internal Support in Salesforce
+title: Salesforce で社内サポートをリクエストする
 upstream_path: /handbook/sales/field-operations/requesting-internal-support/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:19:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-21T12:17:18-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## サポートを得る方法
@@ -71,7 +71,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
   - [Enterprise Applications - PMO](/handbook/business-technology/enterprise-applications/pmo)
 - [Revenue](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/revenue-accounting/#communicating-with-revenue-accounting)
   - Chatter @revenue
-- [HelpLab](https://helplab.gitlab.systems/esc)（あなたの Okta 内）
+- [Compass](https://app.serval.com/new-request)（あなたの Okta 内）
 
 #### Salesforce のワークフロー
 
@@ -131,9 +131,9 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
 
 #### バグの報告や修正の依頼方法
 
-社内サポートチーム向けのケース作成やフォームで問題が発生した場合は、OKTA タイルからアクセスできる [HelpLab アプリケーション](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#create-a-ticket--request)を使用してリクエストを送信してください。
+社内サポートチーム向けのケース作成やフォームで問題が発生した場合は、OKTA タイルからアクセスできる [Compass アプリケーション](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass)を使用してリクエストを送信してください。
 
-1. HelpLab で **IT** を選択します。
+1. Compass で **IT** を選択します。
 2. **Break/Fix Request** タイプをクリックします。
 3. 受付フォームが開き、以下のフィールドを入力する必要があります。
    - ヘルプが必要な **アプリケーション**: Salesforce

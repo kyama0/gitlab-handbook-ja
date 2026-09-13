@@ -1,11 +1,11 @@
 ---
 title: コンティンジェントワーカーポリシー
 upstream_path: /handbook/finance/procurement/contingent-worker-policy/
-upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:11:20+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-09T16:30:03+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 1. 目的
@@ -315,7 +315,7 @@ GitLab が[サードパーティリスク管理](/handbook/security/security-ass
 
 契約終了後90日以内に GitLab に復帰するコンティンジェントワーカーと、契約延長を受けるコンティンジェントワーカーは、追加のバックグラウンドスクリーニングまたはバックグラウンドスクリーニング結果の再確認は不要です。
 
-コントラクターに対する GitLab のバックグラウンドスクリーニングポリシーに関するご質問は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=1f5cb781478c069067429ee0026d4392) にて受け付けています。
+コントラクターに対する GitLab のバックグラウンドスクリーニングポリシーに関するご質問は、[Compass](https://app.serval.com/new-request) にて受け付けています。
 
 ## 10. お問い合わせ
 

@@ -2,11 +2,11 @@
 title: 'プロビジョニング'
 description: 'Zendesk のユーザープロビジョニングに関するドキュメント'
 upstream_path: /handbook/eta/css/zendesk/users/provisioning/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T13:16:58+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:12:46+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-01T10:10:19-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 このドキュメントでは、Zendesk におけるエージェントのプロビジョニングおよびデプロビジョニングのプロセスについて詳述します。
@@ -71,7 +71,7 @@ GitLab で誰かが業務を開始してから 2 日後、そのロールベー�
 
 受領され承認された後、プロセスは以下のように進みます。
 
-1. People チームのドロップダウンの下から `Background Checks` を選択して HelpLab リクエストを送信します。次のページで、`What type of support do you need?` ドロップダウンから `Identity Verification` または `Other` を選択し、以下のプロンプトを使用してリクエストを記入します。
+1. People チームのドロップダウンの下から `Background Checks` を選択して Compass リクエストを送信します。次のページで、`What type of support do you need?` ドロップダウンから `Identity Verification` または `Other` を選択し、以下のプロンプトを使用してリクエストを記入します。
    > Greetings all!
    >
    > Can you verify if NAME is a US Citizen? They are requesting access to the US Government Zendesk instance via ISSUE which does require it.
@@ -79,7 +79,7 @@ GitLab で誰かが業務を開始してから 2 日後、そのロールベー�
    > Thanks!
    - NAME を依頼者の名前に置き換える
    - ISSUE をアクセスリクエスト Issue へのリンクに置き換える
-   - [このフォームへの直接リンク](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=3641564f47977550dff2c5a4f16d4326)
+   - [このフォームへの直接リンク](https://app.serval.com/new-request)
 1. アクセスリクエスト Issue に、米国市民権確認のため People チームに連絡したことをノートします。
 1. People チームの応答に応じて、次のアクションが変わります。
    - People チームが市民権を確認した場合:

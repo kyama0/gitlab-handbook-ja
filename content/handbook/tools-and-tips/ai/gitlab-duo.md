@@ -1,18 +1,18 @@
 ---
 title: "GitLab Duo のヒント"
 upstream_path: /handbook/tools-and-tips/ai/gitlab-duo/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:21:07+09:00"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:19:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 AI 駆動の GitLab Duo Chat、Code Suggestions などを使って DevSecOps ワークフローを高速化する方法を学びましょう。
 
 ## アクセス
 
-gitlab-com [グループ](https://gitlab.com/gitlab-com) で GitLab Duo へのアクセスが必要な場合は、[HelpLab チケット](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#create-a-ticket--request) を作成して IT と連携し、グループに対して GitLab Duo を有効化してもらってください。
+gitlab-com [グループ](https://gitlab.com/gitlab-com) で GitLab Duo へのアクセスが必要な場合は、[Compass チケット](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass) を作成して IT と連携し、グループに対して GitLab Duo を有効化してもらってください。
 
 GitLab のコントリビューターおよび co-creator も AI 駆動の GitLab Duo を活用できます。[contributors.gitlab.com/](https://contributors.gitlab.com/) のオンボーディングプロセスから始めてください。
 

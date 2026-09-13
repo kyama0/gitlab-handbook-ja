@@ -2,11 +2,11 @@
 title: "GitLab におけるグローバル People コンプライアンス"
 description: "Global People Compliance チームは、People Operations プロセス全体にわたるすべてのコンプライアンス関連の取り組みを管理します。"
 upstream_path: /handbook/people-group/people-compliance/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
+translated_at: "2026-09-13T21:18:06+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## Global People Compliance
@@ -23,7 +23,7 @@ Global People Compliance チームは、GitLab の最も価値ある資産であ
 
 ## コンプライアンスチームへの連絡
 
-- レビューのために [HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#how-do-i-use-helplab) でケースを作成してください
+- レビューのために [Compass](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass) でケースを作成してください
 
 {{% details summary="People Compliance チームを紹介します" %}}
 
