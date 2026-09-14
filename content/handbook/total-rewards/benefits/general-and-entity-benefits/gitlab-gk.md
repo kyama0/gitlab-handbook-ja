@@ -2,11 +2,11 @@
 title: "GitLab GK (日本) 福利厚生"
 description: "日本のチームメンバー向けの GitLab の福利厚生を見つけよう"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk/
-upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
-translated_at: "2026-05-07T13:21:11Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:08:13+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-31T11:49:48-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 **明確な福利厚生、確かなサポート**
@@ -242,7 +242,7 @@ Total Rewards に total-rewards@gitlab.com でお問い合わせください
 <details>
 <summary><strong>ご質問とサポート</strong></summary>
 
-**福利厚生に関する質問**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) にお問い合わせください
+**福利厚生に関する質問**: [Compass](https://app.serval.com/new-request) にお問い合わせください
 
 **休職の調整**: マネージャーと People Operations と協力。リクエストには Workday を使用してください。
 

@@ -3,9 +3,9 @@ title: GitLab における報酬
 description: GitLab の報酬フレームワークに関する質問の答えを見つけてください。
 date: 2026-02-19
 upstream_path: /handbook/total-rewards/compensation/
-upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
-lastmod: 2026-08-25T11:32:33-04:00
-translated_at: "2026-09-03T22:10:19+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-15T06:05:12+09:00"
 translator: codex
 stale: false
 ---
@@ -207,6 +207,6 @@ Global Compensation に関する特定時点の情報については、The Loop 
 
 ## 質問とサポート {#questions-and-support}
 
-**報酬に関する質問:** HelpLab に問い合わせてください\
+**報酬に関する質問:** Compass に問い合わせてください\
 **キャリアの会話:** マネージャーまたは People Business Partner に相談してください\
 **プログラムの詳細情報:** Loop の Compensation リソースを参照してください

@@ -6,11 +6,11 @@ tags:
   - security_policy
   - security_policy_ps
 upstream_path: /handbook/people-policies/
-upstream_sha: "50ee631c98005b47a0caea9d46e4ba5cfc62891a"
-translated_at: "2026-07-23T06:31:48+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:09:23+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-22T13:59:03-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -19,7 +19,7 @@ lastmod: "2026-07-22T13:59:03-07:00"
 
 ## 目的
 
-以下に挙げるすべてのポリシーは、GitLab チームメンバーが読んで理解しておくべき重要な内容で、人事関連の福利厚生、エンティティ固有の課題、そして会社の手続きや要件を扱っています。社内ポリシーに関する質問があれば、HelpLab 経由で People Operations にお問い合わせください。
+以下に挙げるすべてのポリシーは、GitLab チームメンバーが読んで理解しておくべき重要な内容で、人事関連の福利厚生、エンティティ固有の課題、そして会社の手続きや要件を扱っています。社内ポリシーに関する質問があれば、Compass 経由で People Operations にお問い合わせください。
 
 ## 適用範囲
 
@@ -95,11 +95,11 @@ _注: 合理性の具体的な法的基準は国によって異なります。�
 
 ### チームメンバーによる配慮の要求
 
-HelpLab でチケットを提出することで、配慮の要求を提出してください。あなたの回答は Team Member Relations チーム（TMR）のみが閲覧でき、要求された配慮のみが必要に応じてマネージャー／PBP と共有されます。
+Compass でチケットを提出することで、配慮の要求を提出してください。あなたの回答は Team Member Relations チーム（TMR）のみが閲覧でき、要求された配慮のみが必要に応じてマネージャー／PBP と共有されます。
 
 チームメンバーは GitLab に診断を提供する義務はありませんが、適用される法律に従って、状態が職務の本質的な機能を遂行する能力にどのような影響を与えるかに関連する質問を受ける場合があります。TMR は必要な書類を提供し、要求の支援を行います。
 
-**機材の調達:** GitLab の標準的な提供を超える専門機材や技術については、購入前に事前承認が必要です。事前承認なしに購入された機材は払い戻されない場合があります。すべての要求は HelpLab で Accommodations チケットを開くことで提出できます。
+**機材の調達:** GitLab の標準的な提供を超える専門機材や技術については、購入前に事前承認が必要です。事前承認なしに購入された機材は払い戻されない場合があります。すべての要求は Compass で Accommodations チケットを開くことで提出できます。
 
 - [米国固有のポリシー](/handbook/people-policies/inc-usa/)
 
@@ -205,10 +205,10 @@ GitLab は 100% リモートですが、業務関連の機能や coworking イ�
 
 - 重傷の場合は、ただちに適切な医療を受けてください。緊急事態の場合は、現地の緊急サービス（米国では 911）に電話してください。
 - 重症度にかかわらず、すべての負傷をできるだけ早くマネージャーに報告してください。
-- 負傷から 24 時間以内に HelpLab で Absence Management チームに連絡してください。Absence Management チームは申請の書類を提供し、給付について説明します。
+- 負傷から 24 時間以内に Compass で Absence Management チームに連絡してください。Absence Management チームは申請の書類を提供し、給付について説明します。
 - Absence Management チームの指示に従って、必要なすべての書類を完成させてください。
 
-**カリフォルニア州のチームメンバーのみ**: この[フォーム](https://www.dir.ca.gov/dwc/DWCForm1.pdf)を記入して、HelpLab で Absence Management チームに提出してください。
+**カリフォルニア州のチームメンバーのみ**: この[フォーム](https://www.dir.ca.gov/dwc/DWCForm1.pdf)を記入して、Compass で Absence Management チームに提出してください。
 
 以下の州は「独占的」労働者災害補償州とみなされ、雇用主は労働者災害補償を直接州から購入する必要があります。これらの州のチームメンバーが負傷した場合、自身で申請するか、Absence Management チームが代わりに申請します。**これらの州のチームメンバーは、自身で州を通じて申請する場合でも Absence Management チームに連絡する必要があります**:
 
@@ -250,7 +250,7 @@ GitLab は、アルコールまたは規制薬物の違法な使用、所持、�
 
         詳細については、[Modern Health](/handbook/total-rewards/benefits/modern-health/) を通じて提供される Mental Wellness Services および [Leading Through Adversity](/handbook/leadership/managing-conflict/leading-through-adversity/) のヒントをご覧ください。さらに、チームメンバーは[燃え尽き症候群を認識](/handbook/people-group/time-off-and-absence/time-off-types/)し、[それを防ぐ](https://about.gitlab.com/blog/2022/05/03/preventing-burnout-a-managers-toolkit/)方法を学ぶ必要があります。
 
-質問や懸念があれば、HelpLab 経由で People Operations チームにお気軽にお問い合わせください。
+質問や懸念があれば、Compass 経由で People Operations チームにお気軽にお問い合わせください。
 
 ## その他のピープルポリシー
 
@@ -310,7 +310,7 @@ GitLab チームメンバーが読んで理解しておくべき重要な GitLab
 
 **Health and Safety**
 
-ドイツのチームメンバーの健康と安全を確保し、ドイツの労働安全衛生法へのコンプライアンスを維持するため、ドイツのすべてのチームメンバーはオンボーディング時に以下のチェックリストを完了します。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。
+ドイツのチームメンバーの健康と安全を確保し、ドイツの労働安全衛生法へのコンプライアンスを維持するため、ドイツのすべてのチームメンバーはオンボーディング時に以下のチェックリストを完了します。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、[Compass](https://app.serval.com/new-request) 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。
 
 - [Work from Home Checklist](https://docs.google.com/document/d/1Z3i-vrkcU5ald0j-scf2rgTumwFCc_sI/edit?usp=sharing&ouid=106298195226644329866&rtpof=true&sd=true)
 {{% /details %}}
@@ -369,7 +369,7 @@ GitLab チームメンバーが読んで理解しておくべき重要な GitLab
 
 [GitLab Ltd (UK) Health and Safety Risk Assessment](https://docs.google.com/document/d/1c1Miem37ysMvddyhhQYfp1Tz07rQ7P3MnyUrFyhoTmc/edit#)
 
-英国のチームメンバーの身体的および精神的な健康と安全を確保し、現地の雇用規則へのコンプライアンスを維持するため、GitLab Ltd. に雇用されているすべてのチームメンバーは、[guidelines for working comfortably at home](https://docs.google.com/document/d/1aFVBgpfLIyuV14kE0kavHsdl5_fWjnnP/edit?usp=sharing&ouid=106298195226644329866&rtpof=true&sd=true) を確認し、オンボーディング時に [home working risk assessment](https://docs.google.com/document/d/1hJDuR1wqEcSCq3us2FnsV_b4My7STgctyM-c_FDqfAU/edit?usp=sharing) を完了する必要があります。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、HelpLab 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。チームメンバーは、以下に関連する潜在的な危険について、ホームオフィスを定期的に点検すべきです:
+英国のチームメンバーの身体的および精神的な健康と安全を確保し、現地の雇用規則へのコンプライアンスを維持するため、GitLab Ltd. に雇用されているすべてのチームメンバーは、[guidelines for working comfortably at home](https://docs.google.com/document/d/1aFVBgpfLIyuV14kE0kavHsdl5_fWjnnP/edit?usp=sharing&ouid=106298195226644329866&rtpof=true&sd=true) を確認し、オンボーディング時に [home working risk assessment](https://docs.google.com/document/d/1hJDuR1wqEcSCq3us2FnsV_b4My7STgctyM-c_FDqfAU/edit?usp=sharing) を完了する必要があります。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、Compass 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。チームメンバーは、以下に関連する潜在的な危険について、ホームオフィスを定期的に点検すべきです:
 
 - 電気機器: プラグ、配線、ケーシングが正常に動作しており、ほつれがないことを確認します。
 - 火災: 煙探知機を定期的に点検し、まだ作成していない場合は火災時の避難計画を作成します。
@@ -399,7 +399,7 @@ Working Time Regulations (1998) は、労働者の働ける最大時間、有給
 *週 48 時間労働をオプトアウトする方法*
 
 週平均 48 時間を超えて働きたいかどうかは、完全にあなたの決定です。GitLab はチームメンバーが健全なワークライフバランスを維持できるようにすることにコミットしていますが、ときに（たとえば顧客需要が高い時期）より長時間働くよう求められることがあります。規則を引き続き遵守するため、こうした必要性が生じた場合に備えて、規則からのオプトアウトをお願いします。
-オプトアウトしたい場合は、オプトアウト契約と呼ばれる書面に署名することで行えます。オンボーディング中にこの契約を署名／確認することを既に選択している場合があります。契約の期間は無期限です。まだ[この契約](https://docs.google.com/document/d/1DRu62fqQW7OQV0lS6evf_XxdQ-0IVZl1Jk_LmSgEhDo/edit#heading=h.tkxekwf0szl9)に署名していないが署名したい場合は、この文書のコピーを作成し、名前を追加して署名し、そのコピーを [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) 内の People Operations チームへの新しいケースに添付し、Workday の書類に保存されるよう依頼してください。
+オプトアウトしたい場合は、オプトアウト契約と呼ばれる書面に署名することで行えます。オンボーディング中にこの契約を署名／確認することを既に選択している場合があります。契約の期間は無期限です。まだ[この契約](https://docs.google.com/document/d/1DRu62fqQW7OQV0lS6evf_XxdQ-0IVZl1Jk_LmSgEhDo/edit#heading=h.tkxekwf0szl9)に署名していないが署名したい場合は、この文書のコピーを作成し、名前を追加して署名し、そのコピーを [Compass](https://app.serval.com/new-request) 内の People Operations チームへの新しいケースに添付し、Workday の書類に保存されるよう依頼してください。
 
 *オプトアウト契約を取り消す方法*
 
@@ -412,7 +412,7 @@ Working Time Regulations (1998) は、労働者の働ける最大時間、有給
 
 **Health and Safety**
 
-オーストラリアのチームメンバーの身体的および精神的な健康と安全を確保し、現地の雇用規則へのコンプライアンスを維持するため、オーストラリアのすべてのチームメンバーはオンボーディング時に以下のチェックリストを完了します。このチェックリストは毎年見直されます。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。
+オーストラリアのチームメンバーの身体的および精神的な健康と安全を確保し、現地の雇用規則へのコンプライアンスを維持するため、オーストラリアのすべてのチームメンバーはオンボーディング時に以下のチェックリストを完了します。このチェックリストは毎年見直されます。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、[Compass](https://app.serval.com/new-request) 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。
 
 - [Remote Work Checklist](https://docs.google.com/document/d/1_sHk3ksGLDVxBZsnO3pMD-U_R_Fy0Yyu/edit?usp=sharing&ouid=106298195226644329866&rtpof=true&sd=true)
 
@@ -427,7 +427,7 @@ Working Time Regulations (1998) は、労働者の働ける最大時間、有給
 
 **Health and Safety**
 
-ニュージーランドのチームメンバーの身体的および精神的な健康と安全を確保し、現地の雇用規則へのコンプライアンスを維持するため、ニュージーランドのすべてのチームメンバーはオンボーディング時に以下のサーベイを完了します。回答は毎年見直されます。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。
+ニュージーランドのチームメンバーの身体的および精神的な健康と安全を確保し、現地の雇用規則へのコンプライアンスを維持するため、ニュージーランドのすべてのチームメンバーはオンボーディング時に以下のサーベイを完了します。回答は毎年見直されます。健康で安全な作業環境を達成および／または維持するために配慮が必要かもしれないと考える場合は、[Compass](https://app.serval.com/new-request) 経由で People Operations チームにお問い合わせください。事故や負傷を報告する必要がある場合は、[Team Member Relations](mailto:teammemberrelations@gitlab.com) にお問い合わせください。
 
 - [Remote Work Checklist](https://forms.gle/DszZNkBA22Rhy3VW7)
 {{% /details %}}

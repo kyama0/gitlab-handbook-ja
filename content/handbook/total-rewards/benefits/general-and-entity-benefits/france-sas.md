@@ -2,9 +2,9 @@
 title: "GitLab France S.A.S."
 description: "フランス在住のチームメンバー向けの GitLab France S.A.S. 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/france-sas/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-lastmod: "2026-07-24T11:07:16-05:00"
-translated_at: "2026-07-25T06:07:57+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-15T06:06:55+09:00"
 translator: claude
 stale: false
 ---
@@ -90,7 +90,7 @@ GitLab は、予期しない人生のイベントから皆さんと大切な人�
 - GitLab France S.A.S. のチームメンバーは、休暇に関する[有給休暇の法定要件](/handbook/people-group/time-off-and-absence/time-off-types/)をレビューできます。
 - GitLab France S.A.S. のチームメンバーは、該当する休暇のカテゴリーを把握し、[業務からの離脱時間のログ記録要件と休暇残高の使用順序の推奨事項](https://internal.gitlab.com/handbook/finance/payroll/timekeeping/france/#logging-time-away)をレビューできます (*_社内アクセスのみ_)。
 - チームメンバーは、常に Workday で休暇を提出し、慎重にカテゴリー分けする必要があります。Workday には Okta、モバイル、Slack 経由でアクセスできます。
-Workday の欠勤管理や休暇残高に関するサポートやお問い合わせについては、People Operations チームに [HelpLab チケット](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=2d2194a6475b7d1067429ee0026d4307)を起票してください。必要に応じてサポートまたは適切な担当者への振り分けを行います。
+Workday の欠勤管理や休暇残高に関するサポートやお問い合わせについては、People Operations チームに [Compass チケット](https://app.serval.com/new-request)を起票してください。必要に応じてサポートまたは適切な担当者への振り分けを行います。
 - GitLab のチームメンバーは [RTT 時間](/handbook/people-group/time-off-and-absence/time-off-types/)も付与されており、これは PTO とは異なることを認識しています。チームメンバーは Workday で自分の時間を正確に追跡・分類する責任があります。RTT 時間を入力する際は、Workday で RTT 休暇カテゴリーを選択してください。
 
 **受取人を指定するには**:
@@ -404,6 +404,6 @@ Workday で時間を追跡する必要があります
 
 ご質問がございましたら、私たちのサポートチームまでお問い合わせください:
 
-- **福利厚生**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **福利厚生**: [Compass](https://app.serval.com/new-request)
 - **休暇および欠勤**: leaves@gitlab.com
 - **追加リソース**: [People Operations ページ](/handbook/people-group/)

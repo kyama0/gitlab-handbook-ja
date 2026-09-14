@@ -2,9 +2,9 @@
 title: "GitLab Ireland Ltd"
 description: "アイルランドのチームメンバー向けの GitLab の福利厚生を見つけよう"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-lastmod: "2026-07-27T15:56:47-07:00"
-translated_at: "2026-07-29T06:11:55+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-15T06:08:13+09:00"
 translator: claude
 stale: false
 ---
@@ -487,7 +487,7 @@ TravelHub を通じて、自転車と公共交通機関の税金節約を利用�
 
 ご質問がある場合は、サポートチームにお問い合わせください。
 
-- **Total Rewards Team**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **Total Rewards Team**: [Compass](https://app.serval.com/new-request)
 - **Absence Management**: leaves@gitlab.com
 - **NFP Ireland Pension Support**: employeebenefits@nfpireland.ie | +353 1 210 0210
 - **VHI Corporate Line**: 056 777 5800

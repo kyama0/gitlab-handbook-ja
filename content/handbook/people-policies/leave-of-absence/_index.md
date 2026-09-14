@@ -2,18 +2,18 @@
 title: 休職
 description: "GitLab の全社的な休職ポリシー。"
 upstream_path: /handbook/people-policies/leave-of-absence/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:10:24+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-12T13:54:00-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 全社的な休職ポリシー
 
 GitLab の休暇ポリシーは、深刻な健康状態から回復するために自分自身をケアする、深刻な健康状態から回復している家族をケアする、新生児または新たに養子縁組された子どもとの絆を深める、軍務に従事するなどのために、チームメンバーが仕事から離れて過ごす時間を提供することを目的としています。
 
-Absence Managment チームは、休暇の前、最中、後に支援するためにここにいます。このページを確認した後、休暇に関する質問があれば、HelpLab で Absence Management チームに連絡して話し合うか、Absence Management チームとの 1:1 を要求してください。
+Absence Managment チームは、休暇の前、最中、後に支援するためにここにいます。このページを確認した後、休暇に関する質問があれば、Compass で Absence Management チームに連絡して話し合うか、Absence Management チームとの 1:1 を要求してください。
 
 このページは、利用可能なさまざまな GitLab 固有の休暇ポリシーについてチームメンバーを教育することを目的としています。法律で許可されている場合、これらの休暇プログラムは、チームメンバーが対象となる可能性のあるエンティティ固有の休暇と同時並行で調整・運用されます。対象となる可能性のあるエンティティ固有の休暇プログラムを見つけるには、以下のリンクをクリックしてください。
 

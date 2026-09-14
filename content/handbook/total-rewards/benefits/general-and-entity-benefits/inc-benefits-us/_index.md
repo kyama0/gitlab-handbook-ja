@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: 0b4843d337f9f8173d56982fff942cb2b5a78543
-translated_at: "2026-09-11T13:14:29+00:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:09:23+09:00"
 translator: claude
 stale: false
-lastmod: "2026-09-10T13:31:22-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -399,7 +399,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 
 - **401(k) の変更、ローン、変換:** Fidelity に 800-835-5097 で電話
 - **財務計画:** [SageView との無料相談](https://calendly.com/elamb-financial/30min?month=2023-10) をスケジュール
-- **一般的な質問:** [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) に連絡
+- **一般的な質問:** [Compass](https://app.serval.com/new-request) に連絡
 
 </details>
 
@@ -667,7 +667,7 @@ GitLab を退職する場合、[COBRA](https://www.dol.gov/sites/dolgov/files/eb
 4. 受領から 60 日以内に登録（カバレッジは遡及）
 5. 支払いを最新の状態にするために登録から 45 日
 
-**現在の従業員:** 一般的な COBRA の質問については [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) に連絡
+**現在の従業員:** 一般的な COBRA の質問については [Compass](https://app.serval.com/new-request) に連絡
 
 **元従業員:** 特定の管理に関する質問については WEX (Discovery) Benefits に 866-451-3399 で連絡
 
@@ -697,12 +697,12 @@ Workday を通じてログインし、Documents → Tax Documents を選択し�
 **福利厚生サポートディレクトリ**
 
 - **一般的な福利厚生に関する質問:** Willis Towers Watson - [claims.sg@willistowerswatson.com](mailto:claims.sg@willistowerswatson.com)
-- **登録変更:** PlanSource または HelpLab を通じて連絡
+- **登録変更:** PlanSource または Compass を通じて連絡
 - **401(k) サポート:** Fidelity に 800-835-5097
 - **HSA/FSA/通勤福利厚生:** WEX (Discovery) に 866-451-3399 または customerservice@wexhealth.com
 - **Cigna メンバーサポート:** Cigna [One Guide Service](https://drive.google.com/file/d/1eIvtYtYPSt3Q0h-Byd16CFFfT0bxv8yF/view?usp=sharing) または [myCigna](https://my.cigna.com/web/public/guest) ポータルを通じてアクセス
 - **Kaiser メンバーサポート:** [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door) にログイン
-- **システムに関する質問:** PlanSource および内部ポリシーサポートについては HelpLab に連絡
+- **システムに関する質問:** PlanSource および内部ポリシーサポートについては Compass に連絡
 
 </details>
 

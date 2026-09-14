@@ -2,11 +2,11 @@
 title: "GitLab BV (オランダ) 福利厚生"
 description: "オランダ在住のチームメンバー向けの GitLab BV (オランダ) 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-translated_at: "2026-09-10T11:14:36+00:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:06:55+09:00"
 translator: claude
 stale: false
-lastmod: "2026-09-08T20:17:01-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## あなたをしっかりカバーします
@@ -25,10 +25,10 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 
 | チーム | 連絡先 | 用途 |
 | :---- | :---- | :---- |
-| People Connect | [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) | 福利厚生に関する一般的な質問 |
+| People Connect | [Compass](https://app.serval.com/new-request) | 福利厚生に関する一般的な質問 |
 | Absence Management | [leaves@gitlab.com](mailto:leaves@gitlab.com)  | 休職と病気休暇 |
 | HR Savvy | [payroll@savvy-group.eu](mailto:payroll@savvy-group.eu)  | 給与と税金に関する質問 |
-| Non-US Payroll | [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=7b018859478c069067429ee0026d4352) | 給与関連の一般的な問い合わせすべて  |
+| Non-US Payroll | [Compass](https://app.serval.com/new-request) | 給与関連の一般的な問い合わせすべて  |
 
 ## 健康とウェルビーイング
 
@@ -553,6 +553,6 @@ GitLab B.V. の従業員は、雇用[契約書](https://internal.gitlab.com/hand
 
 福利厚生に関するご質問は、サポートチームまでお問い合わせください:
 
-* 福利厚生: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+* 福利厚生: [Compass](https://app.serval.com/new-request)
 * 休職: [leaves@gitlab.com](mailto:leaves@gitlab.com)
 * 給与および管理上の質問: [payroll@savvy-group.eu](mailto:payroll@savvy-group.eu)

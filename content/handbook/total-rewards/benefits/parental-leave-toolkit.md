@@ -2,11 +2,11 @@
 title: "チームメンバーとマネージャー向け休職ツールキット"
 description: "チームメンバーとマネージャー向け休職ツールキット"
 upstream_path: /handbook/total-rewards/benefits/parental-leave-toolkit/
-upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
-translated_at: "2026-05-07T13:21:11Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:05:12+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-20T14:49:01-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## チームメンバー向けツールキット
@@ -34,7 +34,7 @@ lastmod: "2026-04-20T14:49:01-05:00"
 - 非同期ファーストのプラクティスを活用して、スムーズに業務に復帰しましょう。
 - AI ツールを活用してキャッチアップに役立てましょう！
   - **プロのヒント**: GitLab の **[Back in the Loop](https://app.glean.com/chat/agents/c8f2490a88314f0ca37667f283d99b21)** Glean エージェントは、不在中のアクティビティをスキャンし、知っておくべきことの優先順位付きサマリーを生成します。
-- 医師から推奨された制限により[配慮](/handbook/people-policies/inc-usa/#reasonable-accommodation)が必要な場合は、Team Member Relations チームに [Reasonable Accommodation HelpLab リクエスト](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=34cc2e54eb84e210725cf4f2bad0cd6c)を提出してください。
+- 医師から推奨された制限により[配慮](/handbook/people-policies/inc-usa/#reasonable-accommodation)が必要な場合は、Team Member Relations チームに [合理的配慮の Compass リクエスト](https://app.serval.com/new-request)を提出してください。
 - すべてのチームメンバーが利用できる[全社共通の福利厚生](/handbook/total-rewards/benefits/general-and-entity-benefits/#health--wellness)に再度親しんでください:
   - [Modern Health - メンタルヘルスサポート](/handbook/total-rewards/benefits/general-and-entity-benefits/#modern-health---mental-health-support)
   - [HealthKick ウェルビーイング・プラットフォーム](/handbook/total-rewards/benefits/general-and-entity-benefits/#healthkick-well-being-platform)

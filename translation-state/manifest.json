@@ -15066,11 +15066,11 @@
     },
     "content/handbook/entity/gmbh-germany.md": {
       "path": "content/handbook/entity/gmbh-germany.md",
-      "upstream_sha": "ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c",
-      "translated_at": "2026-06-24T07:02:38+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:10:24+09:00",
       "model": "codex",
-      "input_hash": "c3d5690439ef9958da1908a67f18f65f82eec33ed2df8f43a04ab13813e55a91",
-      "upstream_committed_at": "2026-06-23T13:40:50+00:00"
+      "input_hash": "8f823d4c953e441c60352deeee764a1f6b4cabed44b9c16e9ccbf0947c4b1d95",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/entity/iberia-srl-spain.md": {
       "path": "content/handbook/entity/iberia-srl-spain.md",
@@ -15082,19 +15082,19 @@
     },
     "content/handbook/entity/india-pvt-ltd.md": {
       "path": "content/handbook/entity/india-pvt-ltd.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:18:07Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "28c63aa673cefdf5209c3c2de36ea3ab93b5841d30b0326841d56a6045802259",
-      "upstream_committed_at": "2026-06-08T14:27:33-07:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:11:27+09:00",
+      "model": "codex",
+      "input_hash": "7096d11e3234b76f92d0e45f521217c1c354e0456dbfb5fe522b290b087f82c5",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/entity/israel-ltd.md": {
       "path": "content/handbook/entity/israel-ltd.md",
-      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
-      "translated_at": "2026-04-29T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8bfeadbf804ab3e1c69ead1bdec07279b214db6745283b8c61d3d2aaab757f8b",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:11:27+09:00",
+      "model": "codex",
+      "input_hash": "6d462e157bd2c07e3629a5127ef4dc84d10c9d46c520b8067ba2493f179d6b75",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/eta/_index.md": {
       "path": "content/handbook/eta/_index.md",
@@ -19402,11 +19402,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
-      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
-      "translated_at": "2026-05-07T13:21:11Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7047cbe407bcb3e36a36b589e6ed99ae70f42acdd81bccf5555f5d66563648fa",
-      "upstream_committed_at": "2026-04-21T09:32:03+01:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:05:12+09:00",
+      "model": "codex",
+      "input_hash": "7e14fd4925393d3e7f11ab139f582226e49aaff9ce6969d5e3dea3f42d27dda5",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland.md",
@@ -19418,51 +19418,51 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands.md",
-      "upstream_sha": "7a4e62958b31234a80d386bf4b7c8dd855df2cb8",
-      "translated_at": "2026-09-10T11:14:36+00:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:06:55+09:00",
       "model": "codex",
-      "input_hash": "25bde26679d1087c3b4c0f2773568a6a11843ffc038b59ef419601e6c2643393",
-      "upstream_committed_at": "2026-09-08T20:17:01-07:00"
+      "input_hash": "9231ec5e2ce58cd9870b9908e58a5ffbc5c55bd07045a10fcef839362c198222",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md",
-      "upstream_sha": "239a95f5729d7e61f33d703f5b4179327673cbc2",
-      "translated_at": "2026-07-21T06:59:28+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:06:55+09:00",
       "model": "codex",
-      "input_hash": "509ab567b2c8fbe23ea8599eb5d3bdf5f2ba110eeba67492d9f05d847074c8ac",
-      "upstream_committed_at": "2026-07-20T15:00:19-07:00"
+      "input_hash": "9c764e326f3ffde484e4b9d303473b16403d0c2d92d3f07df79403ff7a103b36",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md",
-      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
-      "translated_at": "2026-05-07T13:21:11Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "384890e65760c56f1852877f2d872664e0e59fb07d3c2a692c445ddf6260af4c",
-      "upstream_committed_at": "2025-10-31T11:48:55-07:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:06:55+09:00",
+      "model": "codex",
+      "input_hash": "77f8462d41ca23b44e322be3d5451e146eeaf71fc91faca9dfa754675de5e293",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas.md",
-      "upstream_sha": "886c0f074266fdc336cfcc58cd53699da6c71a73",
-      "translated_at": "2026-07-25T06:07:57+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:06:55+09:00",
       "model": "codex",
-      "input_hash": "f86a2b29b50bf0325cbbd20cebeb4217508412cd6bbf8a83a36984ffcaa37dd8",
-      "upstream_committed_at": "2026-07-24T11:07:16-05:00"
+      "input_hash": "cb95f4989f1bda4f6a49f72000638461906fd344092b590f0185b40823d32437",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk.md",
-      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
-      "translated_at": "2026-05-07T13:21:11Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "63cf847eb25b2c39a76a339636692d6fd15bc90daa7157fd9c3198a92e155bf5",
-      "upstream_committed_at": "2025-10-31T11:49:48-07:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:08:13+09:00",
+      "model": "codex",
+      "input_hash": "3ec22370971dd45a00861347936f52670a6bb3847ddb8dfa74bf2e2114b9963f",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:11:55+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:08:13+09:00",
       "model": "codex",
-      "input_hash": "07344c9b7b51a1c28fb73deeeba2737cdafd9a0184d6fb3d7ab1c337e8051cc9",
-      "upstream_committed_at": "2026-07-27T15:56:47-07:00"
+      "input_hash": "2e1288fff7689c5bddc69d09341a85f4e3d1264969c66ca3986abf7e50234bd5",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
@@ -19474,19 +19474,19 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T13:14:29+00:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:09:23+09:00",
       "model": "codex",
-      "input_hash": "5b92b804a229d62083480a11820b5d3c30657e15e40c18c9c6e9c4bbd32bc4d6",
-      "upstream_committed_at": "2026-09-10T13:31:22-07:00"
+      "input_hash": "3e2568e232af3373f1c7365f5269bedc46c8fff3fa4a409979e85fdb516d7b82",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a8f5586172ec42b9f9f270f2a832fd7d5d0b93facc4e9490535f117f4e6f70eb",
-      "upstream_committed_at": "2026-05-28T01:13:19-07:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:08:13+09:00",
+      "model": "codex",
+      "input_hash": "e1112501dc0d76d565fcdc9ef1cddca9ee54f243d6b2e65040ca9af8800b223d",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
@@ -19498,11 +19498,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T07:30:25+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:08:13+09:00",
       "model": "codex",
-      "input_hash": "1b599c824ec9840a8f23b5cd0640e4ba4857b52b4b02b4f5eb2a763856da8abb",
-      "upstream_committed_at": "2026-07-15T09:57:47-07:00"
+      "input_hash": "e8fa9cf1dc7e3d16d5d3636def697c0d7fc1b24f32e2c31444de460578c5cb3e",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md",
@@ -19514,19 +19514,19 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md",
-      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
-      "translated_at": "2026-09-03T22:10:19+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:09:23+09:00",
       "model": "codex",
-      "input_hash": "0e37c9ef322ba9e971f4bcb7e00890a24b4362c0a604f5070cc6f22a3f7f816f",
-      "upstream_committed_at": "2026-09-01T13:37:58-07:00"
+      "input_hash": "bb6148f0903d9c569ac19d142d4d5f53a560a91c0ac0d99b564ab3cd1f24c2cd",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md",
-      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
-      "translated_at": "2026-08-07T06:19:17+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:09:23+09:00",
       "model": "codex",
-      "input_hash": "43837927110f72b648f3c5a69a1b44ccad13406e5e7247fd7da312c2ea3451cc",
-      "upstream_committed_at": "2026-08-06T10:08:38-07:00"
+      "input_hash": "3b370ff5ce5b8310625ded204e839934d78b60d4cabef9de611141a6e3f3a701",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/benefits/modern-health.md": {
       "path": "content/handbook/total-rewards/benefits/modern-health.md",
@@ -19538,19 +19538,19 @@
     },
     "content/handbook/total-rewards/benefits/parental-leave-toolkit.md": {
       "path": "content/handbook/total-rewards/benefits/parental-leave-toolkit.md",
-      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
-      "translated_at": "2026-05-07T13:21:11Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b9a0f392ec5f954de59d53e965a42930f05c0323755449fb5917377167f95a1a",
-      "upstream_committed_at": "2026-04-20T14:49:01-05:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:05:12+09:00",
+      "model": "codex",
+      "input_hash": "8c6c4fca9d2c67b1f122edd48c027892001f06982b1add587238e1cf09732bb7",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/compensation/_index.md": {
       "path": "content/handbook/total-rewards/compensation/_index.md",
-      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
-      "translated_at": "2026-09-03T22:10:19+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:05:12+09:00",
       "model": "codex",
-      "input_hash": "2b78a96e4a3f0088bf5f89f75c566b24bbe51decaf8b8d0eedacb97141004b94",
-      "upstream_committed_at": "2026-08-25T11:32:33-04:00"
+      "input_hash": "89c2f6efc52d7f7647dcc7e2840dea27a0698b55e2f17609845ff8f769cafe15",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md": {
       "path": "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md",
@@ -19562,11 +19562,11 @@
     },
     "content/handbook/total-rewards/incentives.md": {
       "path": "content/handbook/total-rewards/incentives.md",
-      "upstream_sha": "30048133aad0232ed4d59fa0c80643620c85adb3",
-      "translated_at": "2026-08-04T06:05:19+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:05:12+09:00",
       "model": "codex",
-      "input_hash": "2bff1fa8bd5ab3d61f8e5bd517bc4de4501587099f2be0d991a3d086110a458b",
-      "upstream_committed_at": "2026-08-03T09:56:05-07:00"
+      "input_hash": "ad1596578764518a2dc309716ba6236ab14e1a726edfec8ce0dd9443504b134c",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/support/_index.md": {
       "path": "content/handbook/support/_index.md",
@@ -30578,35 +30578,35 @@
     },
     "content/handbook/people-policies/_index.md": {
       "path": "content/handbook/people-policies/_index.md",
-      "upstream_sha": "50ee631c98005b47a0caea9d46e4ba5cfc62891a",
-      "translated_at": "2026-07-23T06:31:48+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:09:23+09:00",
       "model": "codex",
-      "input_hash": "86b56d8b9a0548a443099ee8c9a0eda9bbedc5cb4cc7e51a73bc5ce050e2863e",
-      "upstream_committed_at": "2026-07-22T13:59:03-07:00"
+      "input_hash": "8a6f85b6840d2ada4014215720344109e3e826060395069c44476d0ebfd2a6ab",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-policies/inc-usa.md": {
       "path": "content/handbook/people-policies/inc-usa.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "83be65de624f0bd9a223a22f6dc8200236bde9955f380d46513f5d4df78d3106",
-      "upstream_committed_at": "2025-09-25T12:38:00+01:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:10:24+09:00",
+      "model": "codex",
+      "input_hash": "7837e660eee741cf8eb37bbf5b08303c9c2d2f4dd48e5d7bc9f55fa046774ca4",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-policies/leave-of-absence/_index.md": {
       "path": "content/handbook/people-policies/leave-of-absence/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b53e80b70775ba34d433dac116c0881abcabc221761257ebe5767b6e0037b110",
-      "upstream_committed_at": "2025-11-12T13:54:00-05:00"
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:10:24+09:00",
+      "model": "codex",
+      "input_hash": "d0f342f7eb2d9cd93090e86cabfa876ddec4fd8057f5df7edd7872adfd924cf7",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-policies/leave-of-absence/us.md": {
       "path": "content/handbook/people-policies/leave-of-absence/us.md",
-      "upstream_sha": "a2af0b1d81734a87d89ce13f0302597755181359",
-      "translated_at": "2026-08-05T06:06:38+09:00",
+      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
+      "translated_at": "2026-09-15T06:10:24+09:00",
       "model": "codex",
-      "input_hash": "633e73b16e291d3c53839d95f1021f11c525bcaaada44d13ff7889f33d5e052a",
-      "upstream_committed_at": "2026-08-04T15:03:09-05:00"
+      "input_hash": "98c21d0534985da06487151abb8771b45696bec4a217cfb0cf29d178ddcf7f98",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-policies/ireland-ltd/right-to-disconnect-policy.md": {
       "path": "content/handbook/people-policies/ireland-ltd/right-to-disconnect-policy.md",
