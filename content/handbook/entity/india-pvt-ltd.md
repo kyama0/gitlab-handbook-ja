@@ -2,11 +2,11 @@
 title: GitLab India Private Limited の情報と福利厚生
 description: インド在住チームメンバー向けの GitLab India Private Limited の福利厚生と情報
 upstream_path: /handbook/entity/india-pvt-ltd/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T21:18:07Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:11:27+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-08T14:27:33-07:00
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 {{% panel header="**これはセキュアなドキュメントです**" header-bg="orange" %}}
@@ -75,7 +75,7 @@ lastmod: 2026-06-08T14:27:33-07:00
 
 <summary>連絡先情報</summary>
 
-- 登録に関する質問: Total Rewards [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- 登録に関する質問: Total Rewards [Compass](https://app.serval.com/new-request)
 - プランに関する質問は、Willis Towers Watson の Ritesh Baria に連絡してください: Ritesh.Baria@wtwco.com
 
 </details>
@@ -160,7 +160,7 @@ GitLab は、雇用契約に記載されているとおり、チームメンバ�
 
 チームメンバーは GitLab に入社する際に Provident Fund の選択を行います。当初 PF 拠出に上限を設けることを選択した場合、後でそれを引き上げるリクエストはできません。12% の PF 拠出を選択した場合、4 月の登録期間中に上限額への引き下げをリクエストできますが、次の点に注意してください: これにより雇用主のマッチング拠出と全体の CTC の両方が減少します。あなたの「固定報酬」の構成要素は変更されず、減額を相殺するための調整は行われません。
 
-引き下げをリクエストするには、CTC と雇用主拠出への影響を承知したうえで、4 月 6 日より前に [HelpLab](https://helplab.gitlab.systems/esc) を通じて正式な書面でのリクエストを提出し、次の税年度に変更が反映されるようにします。
+引き下げをリクエストするには、CTC と雇用主拠出への影響を承知したうえで、4 月 6 日より前に [Compass](https://app.serval.com/new-request) を通じて正式な書面でのリクエストを提出し、次の税年度に変更が反映されるようにします。
 
 </details>
 
@@ -209,7 +209,7 @@ NPS は任意です。基本給の 1% から 14% の間で拠出を選択でき�
 
 新入社員は、オファープロセス中に Greenhouse のリファレンスチェックの質問票を通じて、NPS の選択の詳細（拠出割合と PRAN 番号）を共有するよう求められます。参加を希望しない場合は 0% を選択してください。
 
-既存のチームメンバーは、4 月と 11 月の年 2 回の選択ウィンドウ中に拠出を登録または更新できます。選択を提出するには、PRAN 番号と希望する拠出割合を記載した HelpLab People Ops チケットを開いてください。これらのウィンドウ以外では、拠出割合は変更できません。
+既存のチームメンバーは、4 月と 11 月の年 2 回の選択ウィンドウ中に拠出を登録または更新できます。選択を提出するには、PRAN 番号と希望する拠出割合を記載した Compass People Ops チケットを開いてください。これらのウィンドウ以外では、拠出割合は変更できません。
 
 </details>
 

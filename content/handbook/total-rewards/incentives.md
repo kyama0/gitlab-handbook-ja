@@ -3,11 +3,11 @@ title: "GitLab におけるインセンティブ"
 description: "このページでは、GitLab チームメンバーが利用できるインセンティブに関する情報を扱っています。"
 date: 2026-03-06
 upstream_path: /handbook/total-rewards/incentives/
-upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
-translated_at: "2026-08-04T06:05:19+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:05:12+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-03T09:56:05-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 お探しのものが見つかりませんか？ メインの [People Operations ページ](/handbook/people-group/) をお試しください。
@@ -215,8 +215,8 @@ Workday の例:
 1. 'Nominate!' ボタンをクリックして、推薦の詳細を追加します。テキストフィールドを使用して、GitLab チームメンバーが自分のワークで特定の GitLab 価値観をどのように実証したかを説明する数文を書きます。 上記の有効・無効基準を確認したことを必ず確認してください。推薦リクエストは私たちの価値観と関連付けられ、推薦が基準を満たしていることを保証するために十分に詳細でなければならないことを忘れないでください。適用される価値観を選択できます。
 1. 該当する場合は、推薦をサポートする関連 Issue またはマージリクエストを必ず含めてください。
 1. 提出されると、ボットはマネージャーに送信して承認フローを開始します。
-1. 承認フローのいずれかの時点で、マネージャーまたはその上位のマネージャーがボーナスの承認について質問がある場合、マネージャーまたは推薦者に追加のコンテキストを求めることができます。プロセスとロジスティクスに関する残りの質問 (例えば、ボーナスは承認チェーンのどこにあるか?) がある場合、この [FAQ ガイド](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854) が明確化に役立つ可能性があります。あるいは、 [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=e7b7f30d474c069067429ee0026d431f) を通じて People Operations チームに連絡することができます。推薦を承認するかどうかのガイダンスに関する残りの質問については、整合した [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡できます。
-1. マネージャーまたは 2 レベル目の承認者が長期休暇中で、合理的な時間枠 (2 週間を超える) で推薦に応答できない場合、推薦が誰のためであるかを記載した [HelpLab](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=ff7a26094784069067429ee0026d4337) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
+1. 承認フローのいずれかの時点で、マネージャーまたはその上位のマネージャーがボーナスの承認について質問がある場合、マネージャーまたは推薦者に追加のコンテキストを求めることができます。プロセスとロジスティクスに関する残りの質問 (例えば、ボーナスは承認チェーンのどこにあるか?) がある場合、この [FAQ ガイド](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854) が明確化に役立つ可能性があります。あるいは、 [Compass](https://app.serval.com/new-request) を通じて People Operations チームに連絡することができます。推薦を承認するかどうかのガイダンスに関する残りの質問については、整合した [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡できます。
+1. マネージャーまたは 2 レベル目の承認者が長期休暇中で、合理的な時間枠 (2 週間を超える) で推薦に応答できない場合、推薦が誰のためであるかを記載した [Compass](https://app.serval.com/new-request) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
 1. 全員が承認すると、ボットは良いニュースとともに報告を返します。拒否された場合は、拒否した人にあなたに連絡してもらうように依頼します。それはボットによって行われません。
 
 ##### マネージャープロセス
@@ -224,7 +224,7 @@ Workday の例:
 1. Nominator ボットは、推薦の承認または拒否を求める Slack DM をあなたに送信します。
 1. 承認することを決定したら、必要なのは承認ボタンをクリックするだけです。ボットが次のステップ (2レベル目のマネージャーと People Operations チームへの送信) を処理します。
 1. 拒否することを決定したら、拒否ボタンをクリックします。推薦は `rejected_by_manager` として更新されます。ボットは推薦者に連絡して、推薦が承認されなかった理由を確実に理解してもらうように依頼します。
-1. 次のレベルの承認者が長期休暇中で、合理的な時間枠 (2 週間を超える) で推薦に応答できない場合、推薦が誰のためであるかを記載した [HelpLab](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=ff7a26094784069067429ee0026d4337) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
+1. 次のレベルの承認者が長期休暇中で、合理的な時間枠 (2 週間を超える) で推薦に応答できない場合、推薦が誰のためであるかを記載した [Compass](https://app.serval.com/new-request) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
 1. 他の全員が承認すると、ボットはあなたに連絡し、 [#thanks](https://gitlab.slack.com/archives/C038E3Q6L) Slack チャンネルでチームメンバーと共有し、チームメンバーの直接のピアが簡単に見えるようにできます:
     * 例えば、チームメンバーのグループチャンネルにクロスポストする
     * Support の場合、 [Support Week in Review](/handbook/support/#support-week-in-review) に「Team Member Update」項目として追加する
@@ -430,7 +430,7 @@ GitLab で働いているなら、私たちの [Team](/handbook/company/team/) �
 ### 一時的なアドオンキャンペーン支払いの追加追跡
 
 1. Talent Acquisition Manager は、アドオンキャンペーン期間中に採用に設定されたすべての紹介を追跡します。
-1. Talent Acquisition Manager は、紹介された新規採用者の GitLab での3ヶ月雇用に整合する月の最初に、HelpLab またはメールで People Operations に通知します。
+1. Talent Acquisition Manager は、紹介された新規採用者の GitLab での3ヶ月雇用に整合する月の最初に、Compass またはメールで People Operations に通知します。
 1. People Operations は、 [上記のステップ](#referral-bonus-processing) に従います
 
 ### GitLab 記念日

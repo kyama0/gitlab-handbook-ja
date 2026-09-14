@@ -2,11 +2,11 @@
 title: "GitLab Korea Limited Benefits"
 description: "韓国のチームメンバー向け GitLab の福利厚生をご紹介します"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:08:13+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-28T01:13:19-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -69,7 +69,7 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 <details markdown="1">
 <summary>連絡先情報</summary>
 
-- **質問**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **質問**: [Compass](https://app.serval.com/new-request)
 - **ライフイベント登録**: [登録フォーム](https://docs.google.com/forms/d/e/1FAIpQLSfNcDxqaNJlp372cPepq5Dm6L5KIvDeOFeF4-EgmzTvDu7x8w/viewform) を完了してください
 
 </details>
@@ -209,7 +209,7 @@ GitLab Korea は、法定要件を超える **包括的な育児休暇給付** �
 
 - **期間**: 年間最大 6 日間
 - **支払い**: 最初の 2 日間は有給、残りの日は無給
-- **リクエスト方法**: 可能な場合は事前通知をお願いします。医療文書が必要となる場合があります。詳細については Absence Management チームに HelpLab ケースを提出できます。
+- **リクエスト方法**: 可能な場合は事前通知をお願いします。医療文書が必要となる場合があります。詳細については Absence Management チームに Compass ケースを提出できます。
 
 </details>
 
@@ -230,7 +230,7 @@ GitLab Korea は、法定要件を超える **包括的な育児休暇給付** �
 
 - **短期家族介護休暇**: 年間最大 10 日（無給）、複数回に分割可能
 - **拡張家族介護休暇**: 年間最大 90 日（無給）、取得した短期休暇を含む。延長休暇は最低 30 日を一度に使用する必要があります。
-- **リクエスト方法**: 可能な場合は事前通知をお願いします。詳細については Absence Management チームに HelpLab ケースを提出できます。
+- **リクエスト方法**: 可能な場合は事前通知をお願いします。詳細については Absence Management チームに Compass ケースを提出できます。
 
 </details>
 
@@ -256,5 +256,5 @@ GitLab Korea は、法定要件を超える **包括的な育児休暇給付** �
 
 ご質問は、サポートチームまでお問い合わせください:
 
-- **福利厚生**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **福利厚生**: [Compass](https://app.serval.com/new-request)
 - **欠勤休暇**: leaves@gitlab.com

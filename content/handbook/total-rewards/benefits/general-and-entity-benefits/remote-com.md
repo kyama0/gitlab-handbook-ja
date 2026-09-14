@@ -2,9 +2,9 @@
 title: "Remote.com"
 description: "Remote のチームメンバー向け福利厚生をご紹介します"
 upstream_path: "/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/"
-upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
-lastmod: 2026-09-01T13:37:58-07:00
-translated_at: "2026-09-03T22:10:19+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-15T06:09:23+09:00"
 translator: codex
 stale: false
 ---
@@ -561,7 +561,7 @@ Allianz 民間保険を通じた強化された医療カバレッジで、ルク
 すべての Remote.com 福利厚生に関する質問と登録サポート:
 
 - **主要連絡先:** help@remote.com
-- **GitLab Benefits チーム:** [HelpLab](https://helplab.gitlab.systems/esc)
+- **GitLab Benefits チーム:** [Compass](https://app.serval.com/new-request)
 - **休暇管理:** leaves@gitlab.com
 
 **重要:** この概要は、Remote.com 福利厚生に関する主要情報を提供します。完全な利用規約は、Remote.com の公式ポリシー文書および国別ガイドに記載されています。特定の国の福利厚生と要件に関する最新情報については、常に Remote.com に確認してください。

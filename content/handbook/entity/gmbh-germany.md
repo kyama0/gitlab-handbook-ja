@@ -2,11 +2,11 @@
 title: GitLab GmbH（ドイツ）の情報と福利厚生
 description: ドイツ在住チームメンバー向けの GitLab GmbH（ドイツ）の福利厚生と情報
 upstream_path: "/handbook/entity/gmbh-germany/"
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-translated_at: "2026-06-24T07:02:38+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:10:24+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-23T13:40:50+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 
@@ -476,7 +476,7 @@ Mutterschutz（出産保護）および Elternzeit（育児休暇）中は:
 
 #### リクエスト方法
 
-1. HelpLab を通じて People Operations に書面でリクエストを提出
+1. Compass を通じて People Operations に書面でリクエストを提出
 2. 希望する週の労働時間と希望するスケジュールを指定
 3. すべてのリクエストは Divisional People Business Partner と Divisional Leadership によってレビューされます。
 4. GitLab は 4 週間以内に回答します
@@ -498,7 +498,7 @@ Mutterschutz（出産保護）および Elternzeit（育児休暇）中は:
 
 #### リクエスト方法
 
-* 開始予定日の 3 か月前に HelpLab を通じて People Operations に書面でリクエストを提出。
+* 開始予定日の 3 か月前に Compass を通じて People Operations に書面でリクエストを提出。
 * 期間（最短 1 年、最長 5 年）を指定
 * すべてのリクエストは Divisional People Business Partner と Divisional Leadership によってレビューされます。
 
@@ -514,7 +514,7 @@ Elternzeit 中の親は、育児休暇中に週 15〜32 時間勤務する**法�
 
 #### 申請方法
 
-1. [leaves@gitlab.com](mailto:leaves@gitlab.com) にメールするか HelpLab チケットを提出
+1. [leaves@gitlab.com](mailto:leaves@gitlab.com) にメールするか Compass チケットを提出
 2. 開始日、終了日、週の労働時間、希望するスケジュールを含める
 
 #### 通知期間
@@ -670,7 +670,7 @@ Workday ですべての休暇を「Paid Time Off」として指定します
 
 **コース終了後、チームメンバーはするべきこと**:
 
-* Absence Management チームとの HelpLab チケットを作成して出席証明書を提出する（Absence Management チームが証明書を Workday プロファイルに追加します）
+* Absence Management チームとの Compass チケットを作成して出席証明書を提出する（Absence Management チームが証明書を Workday プロファイルに追加します）
 * 重要な学習内容の簡単なサマリーを（専門的に関連するコースの場合）マネージャーに提出する
 * 会社はコンプライアンス目的のために取得したすべての Bildungsurlaub の記録を保持します。
 

@@ -2,11 +2,11 @@
 title: "PTY LTD Benefits"
 description: "オーストラリアのチームメンバー向け GitLab PTY Australia の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:30:25+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:08:13+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T09:57:47-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## **私たちがあなたをサポートします:**
@@ -190,7 +190,7 @@ BUPA を通じた包括的な民間健康保険で、オーストラリアの Me
 | WA | WorkCover |
 | VIC | WorkSafe |
 
-**請求方法:** 労災補償の請求に関する支援は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=7b018859478c069067429ee0026d4352) 経由で Payroll チームにお問い合わせください。
+**請求方法:** 労災補償の請求に関する支援は、[Compass](https://app.serval.com/new-request) 経由で Payroll チームにお問い合わせください。
 
 </details>
 

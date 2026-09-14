@@ -2,11 +2,11 @@
 title: "GitLab BV (ベルギー) 福利厚生"
 description: "ベルギー在住のチームメンバー向けの GitLab BV (ベルギー) 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/
-upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
-translated_at: "2026-05-07T13:21:11Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:05:12+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-21T09:32:03+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## あなたをしっかりカバーします
@@ -114,7 +114,7 @@ total-rewards@gitlab.com までお問い合わせください
 <summary>連絡先詳細</summary>
 
 - 食事バウチャーに関するご質問は、以下までお問い合わせください:
-- [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382): 一般的な質問とサポート
+- [Compass](https://app.serval.com/new-request): 一般的な質問とサポート
 - Pluxee: 02 679 56 56
 
 </details>

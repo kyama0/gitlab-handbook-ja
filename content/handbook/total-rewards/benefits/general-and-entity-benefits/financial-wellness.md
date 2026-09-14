@@ -2,11 +2,11 @@
 title: ファイナンシャルウェルネス
 description: GitLab のチームメンバーが利用可能なファイナンシャルウェルネスリソースの概要。
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness/
-upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
-translated_at: "2026-05-07T13:21:11Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:06:55+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-31T11:48:55-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## ファイナンシャルウェルネス: あなたをしっかりカバーします
@@ -139,7 +139,7 @@ SageView は教育的なガイダンスを提供しますが、特定の税務�
 </details>
 
 **ご質問は？**
-アクセスの問題については [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) にお問い合わせください。
+アクセスの問題については [Compass](https://app.serval.com/new-request) にお問い合わせください。
 
 ---
 
@@ -147,7 +147,7 @@ SageView は教育的なガイダンスを提供しますが、特定の税務�
 
 ### 連絡先情報
 
-- **一般的な福利厚生:** [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **一般的な福利厚生:** [Compass](https://app.serval.com/new-request)
 - **Modern Health:** プラットフォーム経由
 - **SageView:** スケジューリングシステムを使用
 - **株式に関する質問:** Stock Admin チーム

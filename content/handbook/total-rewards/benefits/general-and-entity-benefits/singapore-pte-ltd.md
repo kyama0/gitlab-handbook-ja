@@ -2,11 +2,11 @@
 title: "GitLab Singapore Pte Ltd"
 description: "シンガポールのチームメンバー向け GitLab の福利厚生をご紹介します"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-translated_at: "2026-08-07T06:19:17+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:09:23+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-06T10:08:38-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -265,7 +265,7 @@ GitLab Singapore は、法定休暇と私たちのグローバルな育児休暇
 
 ご質問は、サポートチームまでお問い合わせください：
 
-- **福利厚生に関する質問**：[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **福利厚生に関する質問**：[Compass](https://app.serval.com/new-request)
 - **請求サポート**：Pacific Prime は GitLab の登録ブローカーであり、請求のサポートやエスカレーションを支援します：メール：SGServiceTeam@pacificprime.com、電話：+65 6346 3781、オプション 3
 - **医療請求**：IHP ポータルまたは +64 6715 9422
 - **健康診断**：ehs@fullertonhealth.com または +65 6333 3636（オプション 3）

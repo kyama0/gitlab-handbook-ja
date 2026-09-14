@@ -2,11 +2,11 @@
 title: "GitLab Canada Corp"
 description: "カナダ在住のチームメンバー向けの GitLab Canada Corp 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/
-upstream_sha: 239a95f5729d7e61f33d703f5b4179327673cbc2
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:06:55+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T15:00:19-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## あなたをしっかりカバーします
@@ -61,7 +61,7 @@ ManuLife を通じた包括的な健康カバーが無料で提供されます�
 
 - **ManuLife**: 1-800-268-6195 (午前 8 時 - 午後 8 時 EST、月-金)
 - **カバー変更**: total-rewards@gitlab.com
-- **テクニカルサポート**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **テクニカルサポート**: [Compass](https://app.serval.com/new-request)
 
 ---
 
@@ -87,7 +87,7 @@ Canada Life を通じた GitLab のグループ RRSP で経済的な未来を構
 
 - 拠出変更はいつでも可能（反映には 1～2 給与サイクル）
 - 個人の RRSP 拠出限度額の追跡はあなたの責任です
-- ボーナスおよびコミッションの拠出: ボーナスまたはコミッションの支払いを RRSP に振り向けたい場合は、[給与締切](https://internal.gitlab.com/handbook/finance/payroll/?search=payroll)前に [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=7b018859478c069067429ee0026d4352) 経由でリクエストを送信できます。以下に注意してください:
+- ボーナスおよびコミッションの拠出: ボーナスまたはコミッションの支払いを RRSP に振り向けたい場合は、[給与締切](https://internal.gitlab.com/handbook/finance/payroll/?search=payroll)前に [Compass](https://app.serval.com/new-request) 経由でリクエストを送信できます。以下に注意してください:
   - 全社的なボーナス支払いの前に、Payroll は登録済みの RRSP チームメンバーにボーナスが近づいていることを通知し、リクエストを提出する期限を案内します。
   - ボーナスおよびコミッションの拠出は全額で行う必要があります。部分的な拠出は認められません。
   - コミッション拠出の選択は、四半期に 1 回のみ更新できます。
@@ -277,7 +277,7 @@ GitLab の包括的な PTO ポリシーは、州法定要件への準拠を確�
 - **SC Insurance**: info@scinsurance.ca または 416.259.1166
 - **Total Rewards**: total-rewards@gitlab.com
 - **Absence Management**: leaves@gitlab.com
-- **一般サポート**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
+- **一般サポート**: [Compass](https://app.serval.com/new-request)
 
 ### 重要なリンク
 
@@ -299,4 +299,4 @@ GitLab の包括的な PTO ポリシーは、州法定要件への準拠を確�
 
 *このサマリーは、福利厚生の主要な情報を提供します。完全な利用規約は公式ポリシー文書にあります。詳細なカバーについては、リンクされたリソースを参照してください。*
 
-**ヘルプが必要ですか？** [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) に連絡するか、[People Operations ページ](/handbook/people-group/)を訪問してください。
+**ヘルプが必要ですか？** [Compass](https://app.serval.com/new-request) に連絡するか、[People Operations ページ](/handbook/people-group/)を訪問してください。

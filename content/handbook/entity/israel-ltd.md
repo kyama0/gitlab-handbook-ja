@@ -2,11 +2,11 @@
 title: GitLab Israel Ltd. の情報と福利厚生
 description: イスラエル在住チームメンバー向けの GitLab Israel Ltd. の福利厚生と情報
 upstream_path: "/handbook/entity/israel-ltd/"
-upstream_sha: "cd48478a4249801968533c5281c38a2b58b5e688"
-translated_at: "2026-04-29T12:00:00Z"
+upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
+translated_at: "2026-09-15T06:11:27+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 
@@ -127,12 +127,12 @@ Shaldan は、年金口座への資金受領を確保する運営代理人です
 
 交通費手当を受けるには、チームメンバーは次の手順を踏む必要があります:
 
-- [HelpLab のイスラエル交通費手当フォーム](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=0f8a3eefff991e103691fe34fc4fd9be)を記入して提出する
+- [Compass のイスラエル交通費手当フォーム](https://app.serval.com/new-request)を記入して提出する
 - フォームに必要な情報:
   - コワーキングスペースの賃貸契約書のコピー。
   - コワーキングスペースの住所。
   - チームメンバーがコワーキングスペースに通勤する予定の週当たりの日数。
-- 手当は賃貸契約の期間中提供されます。賃貸契約が終了した後、チームメンバーは手当の受け取りを継続するためにフォームと HelpLab チケットを再提出する必要があります。
+- 手当は賃貸契約の期間中提供されます。賃貸契約が終了した後、チームメンバーは手当の受け取りを継続するためにフォームと Compass チケットを再提出する必要があります。
 - 賃貸契約の満了時に新しいリクエストを提出するのはチームメンバーの責任です。
 
 次の給与サイクルに含まれるよう、毎月 4 日までにフォームとサポート書類を提出してください。提出された詳細は Non-US Payroll と Total Rewards チームによってレビューされ、給与計算を通じて手当が計算・処理されます。
