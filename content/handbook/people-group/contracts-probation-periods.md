@@ -2,11 +2,11 @@
 title: "契約、バックグラウンドスクリーニング、試用期間、PIAA"
 description: "GitLab の契約情報および関連する手順。"
 upstream_path: /handbook/people-group/contracts-probation-periods/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:37:44Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:54:37Z"
 translator: claude
 stale: false
-lastmod: "2026-06-19T17:23:25+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 契約テンプレート
@@ -15,7 +15,7 @@ GitLab のチームメンバー契約テンプレートは、GitLab 内のみで
 
 ## チームメンバーの個別契約
 
-個別のチームメンバー契約（チームメンバーが採用された後）の DRI は People Operations チームです。チームメンバーの契約に関する問い合わせは、HelpLab チケットで People Operations チームに送る必要があり、問い合わせは必要に応じて転送またはエスカレーションされます。
+個別のチームメンバー契約（チームメンバーが採用された後）の DRI は People Operations チームです。チームメンバーの契約に関する問い合わせは、Compass チケットで People Operations チームに送る必要があり、問い合わせは必要に応じて転送またはエスカレーションされます。
 
 **契約テンプレートへの承認済みの変更または編集は CES チームに通知されます**
 
@@ -61,7 +61,7 @@ GitLab は現在、オンボーディング/採用前の要件を超えて、現
 
 Candidate Experience Specialist は、候補者向けのすべてのバックグラウンドスクリーニングを[開始](/handbook/hiring)します。Senior Background Check Specialist は、現在のチームメンバー向けの該当する遡及バックグラウンドスクリーニングまたは要求された強化バックグラウンドスクリーニングを開始します。
 
-追加の支援や質問については、`backgroundchecks@gitlab.com` の Senior Background Check Specialist にお問い合わせいただくか、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=1f5cb781478c069067429ee0026d4392) でリクエストを送信してください。
+追加の支援や質問については、`backgroundchecks@gitlab.com` の Senior Background Check Specialist にお問い合わせいただくか、[Compass](https://app.serval.com/new-request) でリクエストを送信してください。
 
 #### 業務委託者、随時労働者、一時的サービスプロバイダー
 
@@ -117,7 +117,7 @@ People Operations チームは、社内で試用期間プロセスを管理す�
 
 GitLab は、他のオープンソースプロジェクトを含む、GitLab のビジネスに関連しないプロジェクトで作業する能力をチームメンバーが維持できるよう支援するよう努めています。私たちの PIAA は、GitLab のビジネスや GitLab のために行う作業に関連しない、あなたが行うかもしれない創作物に対するいかなる権利も GitLab に付与しません。つまり、GitLab から事前の承認をリクエストすることなく、それらの創作物を自由に開発できます。
 
-雇用契約が 2017 年 11 月より前に作成された場合、PIAA 契約の修正を作成しており、[こちら](https://docs.google.com/document/d/1oEfDCIht7Vy6KdcGXWPHZBUXLUUZS9hsvYnOYhQjllg/edit)で確認できます。PIAA の 2A セクションを修正します。[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) を通じて People Operations チームに連絡してください。署名のために文書を完成させ、ステージングします。修正は、最初にチームメンバーによって署名され、次に必要な Company signatory によって署名されます。
+雇用契約が 2017 年 11 月より前に作成された場合、PIAA 契約の修正を作成しており、[こちら](https://docs.google.com/document/d/1oEfDCIht7Vy6KdcGXWPHZBUXLUUZS9hsvYnOYhQjllg/edit)で確認できます。PIAA の 2A セクションを修正します。[Compass](https://app.serval.com/new-request) を通じて People Operations チームに連絡してください。署名のために文書を完成させ、ステージングします。修正は、最初にチームメンバーによって署名され、次に必要な Company signatory によって署名されます。
 
 ### 外部雇用（有給または無給）、プロジェクト、潜在的に矛盾する活動
 
@@ -224,7 +224,7 @@ GitLab チームメンバーが GitLab アカウントを使用する承認済�
 1. 契約終了の 2 ヶ月前、HR Savvy が People Operations チームメンバーのメールアドレスにメールを送信します。
 1. 契約更新の割り当てを担当する People Operations チームメンバーが、契約更新プロセスの完了のために People Operations チームのメンバーを割り当てます。
 1. People Operations チームメンバーは、チームメンバーの契約詳細を People Operations Task [Tracker](https://docs.google.com/spreadsheets/d/1Z45eOZ2rCRIKgGae3eOKQ8lhIbAPikSs5gLz3V8Kh9U/edit?ts=5e7a2c42#gid=84302455) の Netherlands Contracts タブの下に追加します。
-1. People Operations チームメンバーは、チームメンバーの契約終了の 2 ヶ月前に、チームメンバーのマネージャーから承認をリクエストするため、[この HelpLab Job Aid](https://docs.google.com/document/d/1hm707ieQVskaRhBl_89AHq-V3wXbsaiSbYmCiFF3_40/edit) に従います。
+1. People Operations チームメンバーは、チームメンバーの契約終了の 2 ヶ月前に、チームメンバーのマネージャーから承認をリクエストするため、[この Compass Job Aid](https://docs.google.com/document/d/1hm707ieQVskaRhBl_89AHq-V3wXbsaiSbYmCiFF3_40/edit) に従います。
 1. GitLab は、開始時に 1 つの 12 ヶ月の有期契約を提供します。1 年間の有期契約後、チームメンバーが良好な状態である場合、会社での 2 年目から無期契約が付与されます。最初の有期契約終了後、異動により 1 年以上 GitLab に在籍しているチームメンバーには、無期契約が付与されます。
 1. マネージャーには、チームメンバーのパフォーマンスを評価するための 2 週間があります。
 

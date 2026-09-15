@@ -2,11 +2,11 @@
 title: "ピープルオペレーションチーム"
 description: "GitLab ピープルオペレーション部門ハンドブック"
 upstream_path: /handbook/people-group/people-ops-tech-analytics/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T18:43:26Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:56:59Z"
 translator: claude
 stale: false
-lastmod: "2025-09-30T12:30:49-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## ピープルオペレーションチームハンドブックへようこそ
@@ -26,7 +26,7 @@ lastmod: "2025-09-30T12:30:49-04:00"
 
 ### お問い合わせ
 
-<a href="https://helplab.gitlab.systems/esc?id=ec_pro_dashboard" class="btn btn-primary btn-lg"><i class="fa-brands fa-slack"></i> HelpLab</a>
+<a href="https://app.serval.com/new-request" class="btn btn-primary btn-lg"><i class="fa-brands fa-slack"></i> Compass</a>
 
 ## 私たちの働き方
 
@@ -34,9 +34,9 @@ lastmod: "2025-09-30T12:30:49-04:00"
 
 ピープルオペレーションは [ピープル](/handbook/people-group) ディビジョンの傘下にある部門です。
 
-### HelpLab
+### Compass
 
-ピープルオペレーション部門は、GitLab のピープルオペレーション関連クエリすべてに対する主要ツールとして HelpLab を主に使用しています。これは、他のチームの方々がヘルプや方向性を求め、ピープルオペレーションチームから正しいチームへの回答や方向性を受け取る場所です。
+ピープルオペレーション部門は、GitLab のピープルオペレーション関連クエリすべてに対する主要ツールとして Compass を主に使用しています。これは、他のチームの方々がヘルプや方向性を求め、ピープルオペレーションチームから正しいチームへの回答や方向性を受け取る場所です。
 
 他の Slack チャンネルでは、ピープルオペレーションチームのサブセットをタグ付けすることもできます:
 

@@ -4,11 +4,11 @@ description: >-
   GitLab はエンゲージメントサーベイを使用してチームメンバーにフィードバックを提供する機会を与え、
   リーダーシップに洞察を提供します。
 upstream_path: /handbook/people-group/engagement/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:54:37Z"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ### サーベイの概要
@@ -153,7 +153,7 @@ FY26-Q4 パルスサーベイは、私たちの最初のパルスサーベイで
 
 - [FY26-Q4 パルスサーベイのマネージャー向け FAQ ガイド](https://theloop.gitlab.com/site/86fb486b-2c79-43d7-85f0-edbb946866b4/page/0e140917-2308-449c-93b5-92826e5ec9d7)
 - Culture Amp セルフサービスレポートのドキュメント - リンク追加予定
-- 質問やサポートについては、People Business Partner に連絡するか、HelpLab を介してリクエストを送信してください
+- 質問やサポートについては、People Business Partner に連絡するか、Compass を介してリクエストを送信してください
 
 ### なぜパルスサーベイなのか
 
@@ -646,7 +646,7 @@ FY'22 Q4 パルスエンゲージメントサーベイの結果については�
 
 #### 質問とサポート
 
-GitLab Team Member Engagement Survey は People Operations Team によって管理されます。サポートが必要、またはサーベイに関する質問がある場合は、必ず HelpLab を通じてお問い合わせください。
+GitLab Team Member Engagement Survey は People Operations Team によって管理されます。サポートが必要、またはサーベイに関する質問がある場合は、必ず Compass を通じてお問い合わせください。
 
 ## 過去のエンゲージメントサーベイ結果
 

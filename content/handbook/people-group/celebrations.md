@@ -2,11 +2,11 @@
 title: "新入社員、お祝い、重要なライフイベント"
 description: "GitLab がチームメンバーをお祝いするさまざまな方法をご紹介します。"
 upstream_path: /handbook/people-group/celebrations/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:54:37Z"
 translator: claude
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 新入社員 Swag
@@ -35,7 +35,7 @@ GitLab の記念日を祝うチームメンバーには、記念日を迎える�
 
 ご注意: 新入社員および記念日 Swag のリンクは、選択済みアイテムの引き換え専用に提供されています。これらのアイテムは交換または swag ショップクレジットへの変換の対象外です。
 
-新入社員 Swag または記念日 Swag に関する質問やさらなる支援が必要な場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=4c1e3345478c069067429ee0026d43dc) を通じて People Operations チームまでお気軽にお問い合わせください。
+新入社員 Swag または記念日 Swag に関する質問やさらなる支援が必要な場合は、[Compass](https://app.serval.com/new-request) を通じて People Operations チームまでお気軽にお問い合わせください。
 
 ### チームメンバーの誕生日
 

@@ -2,9 +2,9 @@
 title: GitLab オンボーディングバディ
 description: オンボーディングの責任とプロセス
 upstream_path: /handbook/people-group/general-onboarding/onboarding-buddies/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-06-30T16:55:38-04:00"
-translated_at: "2026-07-10T07:06:29+09:00"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-15T21:58:18Z"
 translator: claude
 stale: false
 ---
@@ -95,4 +95,4 @@ stale: false
 
 ## 以上です
 
-これで全部です！最新の GitLab チームメンバーをチームに迎え入れ、参加させるお手伝いをいただきありがとうございます。このページで回答されていない質問がある場合は、オンボーディング Issue または HelpLab を通じて People Operations チームに連絡してください。
+これで全部です！最新の GitLab チームメンバーをチームに迎え入れ、参加させるお手伝いをいただきありがとうございます。このページで回答されていない質問がある場合は、オンボーディング Issue または Compass を通じて People Operations チームに連絡してください。

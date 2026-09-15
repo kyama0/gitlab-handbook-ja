@@ -1,11 +1,11 @@
 ---
 title: "法務・雇用（GitLab における雇用）: 戦略的パートナーシップ"
 upstream_path: "/handbook/legal/employment-law/"
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T13:16:58+09:00"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:58:18Z"
 translator: claude
 stale: false
-lastmod: "2026-08-28T16:40:56-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ![GitLab のバリューを示すイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
@@ -38,7 +38,7 @@ lastmod: "2026-08-28T16:40:56-04:00"
 
 ### Connect（つながる）
 
-機密性の高い事項については特に、法務雇用チームと連絡を取るには 'legal-employment@gitlab.com' のメールアドレスを使用できます。機密性の低いクエリについては、[#legal](https://gitlab.enterprise.slack.com/archives/C78E74A6L) Slack チャンネルで連絡できます。個人の雇用に関するクエリを持つ GitLab チームメンバーは、HelpLab を通じてサポートをリクエストしてください。
+機密性の高い事項については特に、法務雇用チームと連絡を取るには 'legal-employment@gitlab.com' のメールアドレスを使用できます。機密性の低いクエリについては、[#legal](https://gitlab.enterprise.slack.com/archives/C78E74A6L) Slack チャンネルで連絡できます。個人の雇用に関するクエリを持つ GitLab チームメンバーは、Compass を通じてサポートをリクエストしてください。
 
 ### Consult（相談する）
 

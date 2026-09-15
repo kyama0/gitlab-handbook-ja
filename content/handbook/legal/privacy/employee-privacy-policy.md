@@ -2,11 +2,11 @@
 title: "チームメンバープライバシーポリシー"
 description: "このチームメンバープライバシーポリシーは、チームメンバーについて収集する可能性のある個人データの種類とその使用方法を説明しています"
 upstream_path: "/handbook/legal/privacy/employee-privacy-policy/"
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T06:39:44+09:00"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:58:18Z"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 *最終更新日：2025年12月12日*
 
@@ -34,7 +34,7 @@ GitLabのウェブサイト（例：[about.gitlab.com](https://about.gitlab.com/
 
 ## サードパーティサービス
 
-場合によっては、GitLabが協力しているまたはGitLabにサービスを提供しているサードパーティに個人データを提供する場合があります。これには[テクスタックアプリケーション](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)に記載されている当事者またはシステムが含まれます。
+場合によっては、GitLabが協力しているまたはGitLabにサービスを提供しているサードパーティに個人データを提供する場合があります。これには[テクスタックアプリケーション](https://app.serval.com/new-request)に記載されている当事者またはシステムが含まれます。
 
 テクスタックはGitLabで使用されるチームメンバーおよび顧客のサードパーティアプリケーションの正確かつ最新の開示を確保するために定期的に更新されます。このプライバシーポリシーは、そのようなアプリケーションがお客様のデータの独立した管理者として法的に指定されているエンティティによって提供されていない場合（例：Modern Health）に限り、チームメンバーアプリケーションに関連するものとして特定されたアプリケーションに適用されます。
 
@@ -239,7 +239,7 @@ GitLabはチームメンバーの記録を以下の場所に保管します：[W
 
 ### 収集した個人データへのアクセス
 
-適用法で許可されている範囲で、私たちが保持するお客様の個人データへのアクセスをリクエストできます。個人データへのアクセスを取得するための2つの別個のプロセスがあります。アクティブなGitLabチームメンバーの場合、Workdayでセルフサービスを通じて人事文書にアクセスできます（および該当する場合は各種給与システム）。人事ファイルの取得に関するその他のサポートについては、GitLabチームメンバーは[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d)を通じてご連絡ください。元チームメンバーは人事ファイルをリクエストするためにpeople_operations@gitlab.comにメールを送ることができます。人事ファイルに含まれる個人データの種類は[こちら](/handbook/legal/record-retention-policy/#team-member-personnel-file-retention-policy)でご確認いただけます。人事ファイルに含まれる以上の個人データを確認したい場合は、データアクセスリクエスト[フォーム](https://forms.gle/8LVd1jseHoxCD47o9)を送信してください。
+適用法で許可されている範囲で、私たちが保持するお客様の個人データへのアクセスをリクエストできます。個人データへのアクセスを取得するための2つの別個のプロセスがあります。アクティブなGitLabチームメンバーの場合、Workdayでセルフサービスを通じて人事文書にアクセスできます（および該当する場合は各種給与システム）。人事ファイルの取得に関するその他のサポートについては、GitLabチームメンバーは[Compass](https://app.serval.com/new-request)を通じてご連絡ください。元チームメンバーは人事ファイルをリクエストするためにpeople_operations@gitlab.comにメールを送ることができます。人事ファイルに含まれる個人データの種類は[こちら](/handbook/legal/record-retention-policy/#team-member-personnel-file-retention-policy)でご確認いただけます。人事ファイルに含まれる以上の個人データを確認したい場合は、データアクセスリクエスト[フォーム](https://forms.gle/8LVd1jseHoxCD47o9)を送信してください。
 
 個人データへのアクセスをリクエストする際、お客様のアイデンティティとアクセス権を確認し、お客様に関する個人データを検索・提供するために特定の情報を求める場合があることにご注意ください。
 

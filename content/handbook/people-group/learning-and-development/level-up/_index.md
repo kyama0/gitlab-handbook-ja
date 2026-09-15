@@ -1,11 +1,11 @@
 ---
 title: LevelUp
 upstream_path: /handbook/people-group/learning-and-development/level-up/
-upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
-translated_at: "2026-08-05T06:27:42+09:00"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:58:00Z"
 translator: codex
 stale: false
-lastmod: "2026-08-04T09:49:53+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## LevelUp とは？
@@ -461,15 +461,15 @@ A: Lumos を通じてアクセスをリクエストしてください
 
 **Q: LevelUp でバグや機能していないものを見つけました。誰に伝えるべきですか？**
 
-A: 技術的な問題や機能に関するフィードバックは #learninganddevelopment Slack チャンネルで共有するか、HelpLab からチケットを提出してください。チームは両方を定期的にモニタリングし、報告された問題に対処します。
+A: 技術的な問題や機能に関するフィードバックは #learninganddevelopment Slack チャンネルで共有するか、Compass からチケットを提出してください。チームは両方を定期的にモニタリングし、報告された問題に対処します。
 
 **Q: LevelUp での操作について質問があります。どこで助けを得ることができますか？**
 
-A: #learninganddevelopment Slack チャンネルで尋ねるか、Talent Development チーム宛てに HelpLab チケットを作成してください。
+A: #learninganddevelopment Slack チャンネルで尋ねるか、Talent Development チーム宛てに Compass チケットを作成してください。
 
 **Q: コンプライアンストレーニングに関する通知を受け取りましたが、コースが見つかりません。どうすればよいですか？**
 
-A: まず、LevelUp ダッシュボードの **Assigned Learning** セクションを確認してください。それでも見つからない場合は、すでに完了したかどうかを確認するためにシステムトランスクリプトを確認してください。それでも解決しない場合は、探しているトレーニングの詳細とともに #learninganddevelopment または HelpLab から Talent Development team に連絡してください。
+A: まず、LevelUp ダッシュボードの **Assigned Learning** セクションを確認してください。それでも見つからない場合は、すでに完了したかどうかを確認するためにシステムトランスクリプトを確認してください。それでも解決しない場合は、探しているトレーニングの詳細とともに #learninganddevelopment または Compass から Talent Development team に連絡してください。
 
 ---
 
@@ -499,4 +499,4 @@ A: すべてのチームメンバーが LevelUp で SmartCards を作成でき�
 
 ## ヘルプを得る
 
-LevelUp に関する質問、フィードバック、またはサポートについては、**#learninganddevelopment** Slack チャンネルに連絡するか、**HelpLab** からリクエストを提出してください。Talent Development team はあなたの学習ジャーニーをサポートし、LevelUp の機能を最大限に活用するお手伝いをします。
+LevelUp に関する質問、フィードバック、またはサポートについては、**#learninganddevelopment** Slack チャンネルに連絡するか、**Compass** からリクエストを提出してください。Talent Development team はあなたの学習ジャーニーをサポートし、LevelUp の機能を最大限に活用するお手伝いをします。

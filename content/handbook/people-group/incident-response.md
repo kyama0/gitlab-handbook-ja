@@ -2,11 +2,11 @@
 title: インシデント対応
 description: 異常気象、自然災害、その他の災害によりチームメンバーまたはチームメンバーの集団が影響を受けた場合に取るべき対応のアウトライン。
 upstream_path: /handbook/people-group/incident-response/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:56:38Z"
 translator: claude
 stale: false
-lastmod: "2025-11-10T11:40:12-08:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## インシデント対応計画
@@ -31,7 +31,7 @@ GitLab は、すべてのチームメンバーがいる場所から脱出する�
 
 これらの事象はチームメンバーとその家族にとって極めてストレスのかかるものとなり得ることを理解しています。私たちはすべてのチームメンバーに Modern Health サービスの活用を推奨しています。Modern Health は、本人とその扶養家族が利用できる、会社が提供する機密かつ無料のリソースです。サービスには、機密のカウンセリング、財務情報とリソース、法的サポートなどが含まれます。詳細はハンドブックの [Modern Health](/handbook/total-rewards/benefits/modern-health/) ページを参照してください。
 
-チームメンバーの福利厚生に関する質問がある場合は、Total Rewards チームに [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382) からお問い合わせください。
+チームメンバーの福利厚生に関する質問がある場合は、Total Rewards チームに [Compass](https://app.serval.com/new-request) からお問い合わせください。
 
 ### マネージャーとして取るべき行動
 

@@ -15842,19 +15842,19 @@
     },
     "content/handbook/hiring/talent-acquisition-framework/coordinator.md": {
       "path": "content/handbook/hiring/talent-acquisition-framework/coordinator.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:39:44+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:18Z",
       "model": "codex",
-      "input_hash": "2cae6348c386ed72b06b0cd8618237e68b13a9f7eff3e5dfbfd3c456edd16ed9",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "9150251976c69a75bce04e326d019ff86c653614fdcfe062bfc89c968e7f999a",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/hiring/talent-acquisition-framework/internal-hiring-process.md": {
       "path": "content/handbook/hiring/talent-acquisition-framework/internal-hiring-process.md",
-      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
-      "translated_at": "2026-04-29T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "82289ec19635c9b5cc56ba32c4f81a59eb107d44c91898e6f4d0edc43b131fd8",
-      "upstream_committed_at": "2026-03-19T16:08:06-05:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:38Z",
+      "model": "codex",
+      "input_hash": "e1aceac6704abd09cd9636c41e566d1f24786b3f4ecb8a4d45d3953b83342392",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/it/_index.md": {
       "path": "content/handbook/it/_index.md",
@@ -16274,11 +16274,11 @@
     },
     "content/handbook/legal/employment-law.md": {
       "path": "content/handbook/legal/employment-law.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T13:16:58+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:18Z",
       "model": "codex",
-      "input_hash": "e403726d3c52508205340f2a9e2d219ce60c3643333a1134987bda1bd860eb46",
-      "upstream_committed_at": "2026-08-28T16:40:56-04:00"
+      "input_hash": "dd230662d448f7897fa67cef4b623e7ba537cdb6ebc752f71c606e8db4512849",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/legal/esg/_index.md": {
       "path": "content/handbook/legal/esg/_index.md",
@@ -16650,11 +16650,11 @@
     },
     "content/handbook/legal/privacy/employee-privacy-policy.md": {
       "path": "content/handbook/legal/privacy/employee-privacy-policy.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:39:44+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:18Z",
       "model": "codex",
-      "input_hash": "78994ef4654b121e5703768ed3fb6536ed2003cbfc17f7848e34ed636d74d93c",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "0ec2aeb0b52cc194073bab62bd88ee5c4f412fe5c343827af0e45fe51b24aac1",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/legal/privacy/gdpr.md": {
       "path": "content/handbook/legal/privacy/gdpr.md",
@@ -30666,19 +30666,19 @@
     },
     "content/handbook/people-group/anti-harassment.md": {
       "path": "content/handbook/people-group/anti-harassment.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3cbb987e86190dd73651a65d7c7391f291506f120c96037155a236ffac35f4ca",
-      "upstream_committed_at": "2026-02-06T10:29:14-05:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:54:37Z",
+      "model": "codex",
+      "input_hash": "b94257f7042f81ff4d66b92d661695695f2ba5ccf34c730bd78f23f00bf91153",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/celebrations.md": {
       "path": "content/handbook/people-group/celebrations.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d25b82f2b243ab4bf3fb0dba809118ff306c9e456b58aca61b41af875492cdf3",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:54:37Z",
+      "model": "codex",
+      "input_hash": "6d0ff0694c181158567815174a704fef42ecc755bf907974a4465067db1e4ebc",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/competencies.md": {
       "path": "content/handbook/people-group/competencies.md",
@@ -30690,11 +30690,11 @@
     },
     "content/handbook/people-group/contracts-probation-periods.md": {
       "path": "content/handbook/people-group/contracts-probation-periods.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T13:37:44Z",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:54:37Z",
       "model": "codex",
-      "input_hash": "c44b262a2cb15bedf255e09e0b8f28420bf4dceb0ab65df9090d95b535ce12c9",
-      "upstream_committed_at": "2026-06-19T17:23:25+01:00"
+      "input_hash": "ba59fc9883dfc452326fbe95b45db8e7df33d3bb16fbe0857287afb56ff37ef2",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/directly-responsible-individuals.md": {
       "path": "content/handbook/people-group/directly-responsible-individuals.md",
@@ -30714,11 +30714,11 @@
     },
     "content/handbook/people-group/engagement.md": {
       "path": "content/handbook/people-group/engagement.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T22:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "670b0a2446908a62113b43ee6fd7589862a7063b2a60cbe211cb727db288cd98",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:54:37Z",
+      "model": "codex",
+      "input_hash": "0317e4a9388d18b181b0ee982aba63cc697c2882e490a8a4795e473fa01cfd11",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/givelab-volunteer-initiatives.md": {
       "path": "content/handbook/people-group/givelab-volunteer-initiatives.md",
@@ -30738,11 +30738,11 @@
     },
     "content/handbook/people-group/incident-response.md": {
       "path": "content/handbook/people-group/incident-response.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b3371164d651e3a708a57963113c04a9eabd2cdcf8eef8cf16406fb1a2e4bb8e",
-      "upstream_committed_at": "2025-11-10T11:40:12-08:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:38Z",
+      "model": "codex",
+      "input_hash": "cfdc66a6bbe51422a2828b179dfaace6f0f94c93e2c150ad9002b849208fc94f",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/organizational-change-management.md": {
       "path": "content/handbook/people-group/organizational-change-management.md",
@@ -30778,11 +30778,11 @@
     },
     "content/handbook/people-group/promotions-transfers.md": {
       "path": "content/handbook/people-group/promotions-transfers.md",
-      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:38Z",
       "model": "codex",
-      "input_hash": "248dbcabe37a45df15de7bf54db7052b0661423e3079f30d950504f399fc17b8",
-      "upstream_committed_at": "2026-09-01T16:59:18+01:00"
+      "input_hash": "bb4e114593cba11e81c66ed8f1e3e0b1371484038a8ebfeda4958d35ef590f91",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/pronouns.md": {
       "path": "content/handbook/people-group/pronouns.md",
@@ -30810,11 +30810,11 @@
     },
     "content/handbook/people-group/talent-assessment.md": {
       "path": "content/handbook/people-group/talent-assessment.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T14:04:19+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:38Z",
       "model": "codex",
-      "input_hash": "b4f92ff2745ae96aef77c13baa92a6eb5603201d4522c1392933d9296c1f424b",
-      "upstream_committed_at": "2026-08-19T17:03:55-07:00"
+      "input_hash": "12bd6f1431024bb21fe3546478b91a31b359119d731a6c163f2989ac3d9fd053",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/talent-development-program.md": {
       "path": "content/handbook/people-group/talent-development-program.md",
@@ -30834,11 +30834,11 @@
     },
     "content/handbook/people-group/visas.md": {
       "path": "content/handbook/people-group/visas.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T18:43:26Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c017fed8109d2510bc961d04fb1506c26209bce16ac743514c095532ff10faa7",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:38Z",
+      "model": "codex",
+      "input_hash": "f50a1d68c08af8bc82e7018a267f18bca9a046fdec78d1523bd61497135cbc19",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/time-off-and-absence/_index.md": {
       "path": "content/handbook/people-group/time-off-and-absence/_index.md",
@@ -30850,35 +30850,35 @@
     },
     "content/handbook/people-group/time-off-and-absence/leave-types.md": {
       "path": "content/handbook/people-group/time-off-and-absence/leave-types.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T18:43:26Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2ea820c17225c148c82001abf677ebbacb79322210ce14ad38a9dfc615d5f8d6",
-      "upstream_committed_at": "2026-03-16T15:18:24-05:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:59Z",
+      "model": "codex",
+      "input_hash": "b956207cc4522d0608e44184255b3360e63b47abe9e70db32c43652efedea87c",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md": {
       "path": "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T18:43:26Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a44971c62f22873e8e1efccb08be2dd1e8b502ceac5d35d504c8273750cdb169",
-      "upstream_committed_at": "2026-04-15T09:46:14-04:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:59Z",
+      "model": "codex",
+      "input_hash": "d779afe2e18a126c8882ecea7295b0d755533c51f2ede0db727fa764bbc56c46",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/time-off-and-absence/time-off-types.md": {
       "path": "content/handbook/people-group/time-off-and-absence/time-off-types.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T18:43:26Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1e5c656203d809a9a1d63003aab95ddb8a8603871aa02ad462a7e5d9a9abebd2",
-      "upstream_committed_at": "2026-04-16T13:38:02-05:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:59Z",
+      "model": "codex",
+      "input_hash": "7597b2c20fcdfac920bd75045f222afbd462596b0b5a768b6dee90b4ae8f626f",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/people-ops-tech-analytics/_index.md": {
       "path": "content/handbook/people-group/people-ops-tech-analytics/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T18:43:26Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7fdc33de3543d05a41bf46d69c140bee3f3cd4a737b816e4ad0804cfcc81b432",
-      "upstream_committed_at": "2025-09-30T12:30:49-04:00"
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:56:59Z",
+      "model": "codex",
+      "input_hash": "401a23326c3637f2e86519819fd87b3578809f989d5af370b5b8059c4d6f3751",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md": {
       "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md",
@@ -30954,11 +30954,11 @@
     },
     "content/handbook/people-group/offboarding/_index.md": {
       "path": "content/handbook/people-group/offboarding/_index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T08:48:05+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:00Z",
       "model": "codex",
-      "input_hash": "17ecb25ff80eb389ebf519d399cc39b5fa965dddece408c3736d35a6bcd84f4e",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "3c5d2ad208508f923a3112f1b10d3c94ec43986d7c79b14b9300495d11bdf179",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/offboarding/faq.md": {
       "path": "content/handbook/people-group/offboarding/faq.md",
@@ -31034,11 +31034,11 @@
     },
     "content/handbook/people-group/learning-and-development/level-up/_index.md": {
       "path": "content/handbook/people-group/learning-and-development/level-up/_index.md",
-      "upstream_sha": "a2af0b1d81734a87d89ce13f0302597755181359",
-      "translated_at": "2026-08-05T06:27:42+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:00Z",
       "model": "codex",
-      "input_hash": "94e8a7dceca936ff7f891ece356fa19da2b2843f8c18b7dff8d97bedd992e59e",
-      "upstream_committed_at": "2026-08-04T09:49:53+00:00"
+      "input_hash": "0fb618977a29eebbea5456237425a3547ae1a0bdb11992614c63042933396c85",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/learning-and-development/learning-initiatives/_index.md": {
       "path": "content/handbook/people-group/learning-and-development/learning-initiatives/_index.md",
@@ -31050,11 +31050,11 @@
     },
     "content/handbook/people-group/learning-and-development/growth-and-development/_index.md": {
       "path": "content/handbook/people-group/learning-and-development/growth-and-development/_index.md",
-      "upstream_sha": "a2af0b1d81734a87d89ce13f0302597755181359",
-      "translated_at": "2026-08-05T06:27:42+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:00Z",
       "model": "codex",
-      "input_hash": "088534e133f32b2898d1d29ffefde6a466d56cdbe7e741b4fae7fd237519cc15",
-      "upstream_committed_at": "2026-08-04T09:49:53+00:00"
+      "input_hash": "9f8f354bd64829537c587fc47348aa4da45a942b62906c40dba981114195b9c8",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/learning-and-development/growth-and-development/tax.md": {
       "path": "content/handbook/people-group/learning-and-development/growth-and-development/tax.md",
@@ -31122,11 +31122,11 @@
     },
     "content/handbook/people-group/general-onboarding/_index.md": {
       "path": "content/handbook/people-group/general-onboarding/_index.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-16T21:18:58Z",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:00Z",
       "model": "codex",
-      "input_hash": "30d75988dd03d99ed25cbdff0015995d2c451bd5fe8bfc07073af59a773e2f05",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "6af4a947df52cdd6f6208e1bc3bcb57c8901bf9d4711ddc8f6047e942296c873",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/general-onboarding/mr-buddies.md": {
       "path": "content/handbook/people-group/general-onboarding/mr-buddies.md",
@@ -31138,11 +31138,11 @@
     },
     "content/handbook/people-group/general-onboarding/onboarding-buddies.md": {
       "path": "content/handbook/people-group/general-onboarding/onboarding-buddies.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T07:06:29+09:00",
+      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
+      "translated_at": "2026-09-15T21:58:18Z",
       "model": "codex",
-      "input_hash": "4ca2acb5e83a62932b3b26c9165767e58f4a197c898da506447d837f4b9faf45",
-      "upstream_committed_at": "2026-06-30T16:55:38-04:00"
+      "input_hash": "436321d3da0cfe9b46644bce434e67faf3836eb1adcc48de8faaefd44a841adf",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/people-group/general-onboarding/tanewki-tips.md": {
       "path": "content/handbook/people-group/general-onboarding/tanewki-tips.md",

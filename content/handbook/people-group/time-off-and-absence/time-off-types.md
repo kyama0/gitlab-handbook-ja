@@ -2,11 +2,11 @@
 title: 休暇 (Time Off) の種類
 description:  このページでは、Flexible Paid Time Off (PTO)、祝日、Sick Time、Caregiving Sick Time、Bereavement、Volunteer、Legal Civic Obligations (Jury Duty) を含む GitLab の休暇ポリシーを説明します。
 upstream_path: /handbook/people-group/time-off-and-absence/time-off-types/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T18:43:26Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:56:59Z"
 translator: claude
 stale: false
-lastmod: "2026-04-16T13:38:02-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ご自身の場所に特化した情報については、[このページ](/handbook/total-rewards/benefits/general-and-entity-benefits/) を確認してください。
@@ -41,7 +41,7 @@ GitLab は、ビジネス継続性を確保しながら、チームメンバー�
 
 **重要**: すべてのチームメンバーは Workday で休暇を記録する必要があります。Workday モジュールの詳細については、[Workday: 休暇の Single Source of Truth](/handbook/people-group/time-off-and-absence/time-away-philosophy/#workday-single-source-of-truth-for-absence) を参照してください。
 
-***ヘルプ！ 間違えて編集が必要、どうすればいい？*** チームメンバーは、未来の日付の休暇エントリと過去 30 日以内のエントリを編集できます。古いエントリには、HelpLab 経由で People Connect チームへの提出が必要です。
+***ヘルプ！ 間違えて編集が必要、どうすればいい？*** チームメンバーは、未来の日付の休暇エントリと過去 30 日以内のエントリを編集できます。古いエントリには、Compass 経由で People Connect チームへの提出が必要です。
 
 ### PTO の準備方法
 
@@ -106,7 +106,7 @@ GitLab は、ビジネス継続性を確保しながら、チームメンバー�
 
 たとえば、あなたの国の年間付与が 10 日で、年内に 92 日残った状態で参加した場合、残高は 10 × (92 ÷ 365) = 2.52 となり、3 日に切り上げられます。
 
-***祝日関連、または休暇の分類方法について他に質問があります、誰に尋ねればいいですか？*** HelpLab 経由でピープルオペレーションチームに質問を提出してください。
+***祝日関連、または休暇の分類方法について他に質問があります、誰に尋ねればいいですか？*** Compass 経由でピープルオペレーションチームに質問を提出してください。
 
 {{% /details %}}
 
@@ -154,7 +154,7 @@ GitLab の Sick Time ポリシーは、病気から回復するために休暇�
 
 **他のすべての場所:** 以下の手順に従ってください。
 
-1. HelpLab チケットを提出して休暇管理チームに通知してください。これにより、GitLab Sick Time ポリシーの詳細を共有し、対象となる可能性のある [法定給付](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) を確認し、他の次のステップをご案内できます。
+1. Compass チケットを提出して休暇管理チームに通知してください。これにより、GitLab Sick Time ポリシーの詳細を共有し、対象となる可能性のある [法定給付](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) を確認し、他の次のステップをご案内できます。
 1. Workday で「Out Sick」ラベルを選択して休暇を入力する。
    - *注意*: 休暇管理チームはエントリの編集や、エントリを Leave Type で置き換える必要がある場合があります。
 1. GitLab の Sick Time ポリシーの対象には、チームメンバーが現地要件に従って Sick Leave の必要性を裏付ける証拠を提供する必要があります。必要な書類の詳細は所在地によって異なる場合があります（医療証明書、医師の診断書、フィットノートなど）。雇用契約書または所在国の Sick Time ポリシーを確認し、必要な書類を判断してください。
@@ -165,7 +165,7 @@ GitLab の Sick Time ポリシーは、病気から回復するために休暇�
 
 ***FAQ: セールス職でコミッションを受け取っています。Sick Leave 中はどう影響しますか？***
 
-- 非 Parental Leave 中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences) が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、leave of absence 中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 HelpLab チケットを提出してください。
+- 非 Parental Leave 中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences) が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、leave of absence 中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 Compass チケットを提出してください。
 
 {{% /details %}}
 
@@ -223,11 +223,11 @@ GitLab の Caregiver Sick Time ポリシーは、病気の家族を世話する�
 
 **他のすべての場所:** 以下の手順に従ってください。
 
-1. HelpLab チケットを提出して休暇管理チームに通知してください。これにより、GitLab Caregiver Sick Time ポリシーの詳細を共有し、対象となる可能性のある法定給付を確認し、他の次のステップをご案内できます。
+1. Compass チケットを提出して休暇管理チームに通知してください。これにより、GitLab Caregiver Sick Time ポリシーの詳細を共有し、対象となる可能性のある法定給付を確認し、他の次のステップをご案内できます。
 1. Workday で「Caregiver Sick Time」ラベルを選択して休暇を入力する
    - *注意*: 休暇管理チームはエントリの編集や、エントリを Leave Type で置き換える必要がある場合があります
 1. GitLab の Caregiver Sick ポリシーに基づく leave of absence の対象には、チームメンバーが現地要件に従って Caregiver Leave の必要性を裏付ける証拠を提供する必要があります。必要な書類の詳細は所在地によって異なる場合があります（医療証明書、医師の診断書、フィットノートなど）。
-   - チームメンバーは書類を休暇管理チームに（HelpLab チケットで）提出してください。
+   - チームメンバーは書類を休暇管理チームに（Compass チケットで）提出してください。
 
 ### Caregiver Sick Leave of Absence 中の給与
 
@@ -235,7 +235,7 @@ GitLab の Caregiver Sick Time ポリシーは、病気の家族を世話する�
 
 ***FAQ: セールス職でコミッションを受け取っています。Caregiver Sick Leave 中はどう影響しますか？***
 
-- 非 Parental Leave 中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences) が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、leave of absence 中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 HelpLab チケットを提出してください。
+- 非 Parental Leave 中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences) が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、leave of absence 中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 Compass チケットを提出してください。
 
 {{% /details %}}
 

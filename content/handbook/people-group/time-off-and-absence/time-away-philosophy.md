@@ -2,11 +2,11 @@
 title: 休暇の理念
 description:  このページでは、休暇に対する GitLab の理念、コミュニケーションガイドライン、およびすべての休暇管理の主要システムである Workday に関する情報を説明します。
 upstream_path: /handbook/people-group/time-off-and-absence/time-away-philosophy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T18:43:26Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:56:59Z"
 translator: claude
 stale: false
-lastmod: "2026-04-15T09:46:14-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 業務から離れることに対する GitLab の理念
@@ -196,7 +196,7 @@ Workday と Workday Slack は、すべての休暇管理の主要システムで
 
 計画的な休暇について、マネージャーや一緒に働くと期待されるチームメンバーに、できる限り事前通知を提供することが期待されます。有給休暇 (paid time off) をリクエストする場合、計画的な不在の期間の少なくとも 2 倍の事前通知日数を提供してください。たとえば、3 日間の不在には、少なくとも 6 営業日の事前通知が必要です。
 
-Workday に関するご質問は、HelpLab ポータルをご利用ください。
+Workday に関するご質問は、Compass ポータルをご利用ください。
 
 ### 主な機能
 
@@ -252,7 +252,7 @@ Google カレンダー同期: 休暇エントリは Time Off by Deel に流れ�
 ### 休暇エントリの編集
 
 - チームメンバーは未来の日付のエントリ、および過去 30 日以内のエントリを編集できます。
-- 30 日以上前のエントリには、HelpLab 経由で People Connect チームへの提出が必要です。
+- 30 日以上前のエントリには、Compass 経由で People Connect チームへの提出が必要です。
 - 注意: すべてのリクエストが承認されるわけではありません。チームメンバーは正確な休暇記録を維持する責任があります。
 
 {{% /details %}}
