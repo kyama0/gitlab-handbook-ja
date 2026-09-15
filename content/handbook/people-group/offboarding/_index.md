@@ -2,11 +2,11 @@
 title: "GitLab オフボーディング"
 description: "GitLab チームメンバーおよびステークホルダー向けのオフボーディング手順"
 upstream_path: /handbook/people-group/offboarding/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:48:05+09:00"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:58:00Z"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 <!-- markdownlint-disable MD051 -->
 ## オフボーディング概要
@@ -23,9 +23,9 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ペイロール関連の質問や未提出の経費精算については、`uspayroll@gitlab.com` または `nonuspayroll@gitlab.com` のいずれかに連絡してください。
 
-その他のオフボーディング関連の質問について、アクティブなチームメンバーは [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=897eb385478c069067429ee0026d432c) を介して People Operations に連絡するか、すでにアクセスが終了している場合は `people_operations@gitlab.com` にメールを送ってください。
+その他のオフボーディング関連の質問について、アクティブなチームメンバーは [Compass](https://app.serval.com/new-request) を介して People Operations に連絡するか、すでにアクセスが終了している場合は `people_operations@gitlab.com` にメールを送ってください。
 
-**注：** 退職日が変更された場合は、HelpLab を通じて People Operations に連絡してください。チームが Workday を更新します。通知は変更の裏付け書類として使用され、チームメンバーの Workday レコードに保存されます。
+**注：** 退職日が変更された場合は、Compass を通じて People Operations に連絡してください。チームが Workday を更新します。通知は変更の裏付け書類として使用され、チームメンバーの Workday レコードに保存されます。
 
 ## 自発的な退職 {#voluntary-offboarding}
 
@@ -39,7 +39,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 1. **チームメンバー：** 「辞任の提出方法」の[ジョブエイド](https://docs.google.com/document/d/1AVHHBKd6dtyn0DOl4_UydbdEhectLpH5aMh17r9Sg_4/edit)のガイドラインに従って、Okta からアクセス可能な Workday で直接辞任を提出してください。
 1. **チームメンバー：** Workday で辞任が提出された後、マネージャーは Workday であなたのオフボーディングを完了するリクエストを受け取ります。退職が完了すると、最終支払、継続的な福利厚生の提供、デバイスの返却などの追加のオフボーディング情報に関するオフボーディングパケットを受け取ることが期待できます。
-1. **チームメンバー：** 質問がある場合は[Offboarding FAQ](/handbook/people-group/offboarding/faq) ハンドブックページを確認してください。そのページにない質問がある場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=897eb385478c069067429ee0026d432c) を使用して People Operations チームに連絡してください。**注：あなたのオフボーディング Issue は退職前には表示されません。これはアクセスの deprovisioning に使用される Issue であり、勤務が終了した時点で作成されるためです。**
+1. **チームメンバー：** 質問がある場合は[Offboarding FAQ](/handbook/people-group/offboarding/faq) ハンドブックページを確認してください。そのページにない質問がある場合は、[Compass](https://app.serval.com/new-request) を使用して People Operations チームに連絡してください。**注：あなたのオフボーディング Issue は退職前には表示されません。これはアクセスの deprovisioning に使用される Issue であり、勤務が終了した時点で作成されるためです。**
 
 #### ***辞任に関する国別の要件***
 
@@ -57,11 +57,11 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ##### 日本
 
-退職する日本在住のチームメンバーは、[この辞任届](https://docs.google.com/spreadsheets/d/1ScccG7B48ClXw4L7BWcFmeT1v-CgpNvS/edit?usp=sharing&ouid=114499652844396120212&rtpof=true&sd=true)を記入し、正確な税処理のために現地プロバイダー／パートナーで処理できるよう、月の 10 日までに [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=0d510c99478c069067429ee0026d4356) を介してペイロールに送付する必要があります。記入のためにドキュメントをダウンロードまたはコピーしてください。
+退職する日本在住のチームメンバーは、[この辞任届](https://docs.google.com/spreadsheets/d/1ScccG7B48ClXw4L7BWcFmeT1v-CgpNvS/edit?usp=sharing&ouid=114499652844396120212&rtpof=true&sd=true)を記入し、正確な税処理のために現地プロバイダー／パートナーで処理できるよう、月の 10 日までに [Compass](https://app.serval.com/new-request) を介してペイロールに送付する必要があります。記入のためにドキュメントをダウンロードまたはコピーしてください。
 
 ##### シンガポール
 
-シンガポール市民**ではない**辞任するシンガポール在住のチームメンバーは、Letter of Undertaking [ドキュメント](https://docs.google.com/document/d/1l4Iq6atvXzq6Gt_DdiWfv3DwvshTOoEYZv8baMq_HKo/edit?usp=sharing)を記入し、現地プロバイダー／パートナーで処理できるよう、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=0d510c99478c069067429ee0026d4356) を介してペイロールに送付する必要があります。記入のためにドキュメントをダウンロードまたはコピーしてください。
+シンガポール市民**ではない**辞任するシンガポール在住のチームメンバーは、Letter of Undertaking [ドキュメント](https://docs.google.com/document/d/1l4Iq6atvXzq6Gt_DdiWfv3DwvshTOoEYZv8baMq_HKo/edit?usp=sharing)を記入し、現地プロバイダー／パートナーで処理できるよう、[Compass](https://app.serval.com/new-request) を介してペイロールに送付する必要があります。記入のためにドキュメントをダウンロードまたはコピーしてください。
 
 ##### UAE
 
@@ -80,8 +80,8 @@ UAE の労働ビザで PEO/EOR に所属しているチームメンバーが辞�
 
 ### オフボーディング
 
-1. **People Ops：** Workday の退職レポートに示された最終勤務日の[事前に決定された時間](/handbook/people-group/offboarding/offboarding_standards/#notice-of-offboarding)に、オフボーディングの親ケースと子ケースが HelpLab で作成されます。すべてのシステムオーナーには、子ケース作成の通知メールが届き、チームメンバーのアクセスを取り消せるようになります。
-1. **Deprovisioner（システム）：** HelpLab で子ケースが届き、チームメンバーのアクセスがオフボードされたことが示され、あなたのアプリケーションから削除する必要があります。
+1. **People Ops：** Workday の退職レポートに示された最終勤務日の[事前に決定された時間](/handbook/people-group/offboarding/offboarding_standards/#notice-of-offboarding)に、オフボーディングの親ケースと子ケースが Compass で作成されます。すべてのシステムオーナーには、子ケース作成の通知メールが届き、チームメンバーのアクセスを取り消せるようになります。
+1. **Deprovisioner（システム）：** Compass で子ケースが届き、チームメンバーのアクセスがオフボードされたことが示され、あなたのアプリケーションから削除する必要があります。
     - SOX システムへのアクセスは緊急に対応する必要があります
     - すべてのタスクは 5 日間の SLA 内に完了する必要があります
     - 子ケース内のタスクに対応し、完了したらケースをクローズしてアクセス削除の完了を示します。
@@ -361,6 +361,6 @@ Navan Expense から誰かを削除するには、[Navan Expense](https://app.na
 
 あなたがフルタイムのチームメンバーで、州の Unemployment Commission から失業給付のリクエストについて話し合うために連絡された場合、Unemployment Claim Fraud の被害者である可能性があります。
 
-発信者に情報を提供する前に、機関の従業員と話しているか確認してください。州の Unemployment Commission に虚偽の申請があることを確認した場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) を通じて People Operations チームに報告してください。
+発信者に情報を提供する前に、機関の従業員と話しているか確認してください。州の Unemployment Commission に虚偽の申請があることを確認した場合は、[Compass](https://app.serval.com/new-request) を通じて People Operations チームに報告してください。
 
 さらに、こちらは失業保険詐欺を報告するための [U.S Department of Labor 連絡先](https://www.dol.gov/agencies/eta/unemployment-insurance-payment-accuracy/UIFraudReporting) へのリンクです。

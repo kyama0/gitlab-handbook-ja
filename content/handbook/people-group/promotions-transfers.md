@@ -2,9 +2,9 @@
 title: 昇進と異動
 description: "GitLab の昇進と異動に関する情報とプロトコル。"
 upstream_path: /handbook/people-group/promotions-transfers/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-lastmod: "2026-09-01T16:59:18+01:00"
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-15T21:56:38Z"
 translator: claude
 stale: false
 ---
@@ -594,7 +594,7 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 - 降格がパフォーマンスによる場合、マネージャーは Team Member Relations とパフォーマンスの問題や可能な降格について議論する必要があります。
 - 降格には Google ドキュメントでの[報酬](/handbook/total-rewards/compensation/)と[エクイティ](/handbook/total-rewards/stock-options/#equity-incentive-plans)のレビューも含める必要があります。マネージャーはこれらのトピックについて Total Rewards チームに相談する必要があります。
 - チームでの降格と変更 (もしあれば) について合意に達したら、関連する Google ドキュメントが完了した後、降格を Compensation Group がレビューおよび承認するためのエスカレーションポイントとして機能します。
-- 承認されたら、マネージャーは個人に通知し、[HelpLab 経由でリクエスト](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=c15e3b45478c069067429ee0026d43e1)を提出して必要な変更をリクエストする必要があります。その後[職務変更レター](https://docs.google.com/document/d/12AscsmP3qnTqCC9h6cx1UpIVrnZUfoN6AvfMjf8guyg/editm)が作成されます。
+- 承認されたら、マネージャーは個人に通知し、[Compass 経由でリクエスト](https://app.serval.com/new-request)を提出して必要な変更をリクエストする必要があります。その後[職務変更レター](https://docs.google.com/document/d/12AscsmP3qnTqCC9h6cx1UpIVrnZUfoN6AvfMjf8guyg/editm)が作成されます。
 - その後、People Operations チームは [People Operations チーム向け: 昇進と報酬変更の処理](/handbook/people-group/promotions-transfers/#for-people-operations-team-processing-promotions-internal-transfers--compensation-changes)の下にリストされているプロセスに従う必要があります。
 - コミュニケーションは個人への敬意のために必要な人に限定し、公開してはなりません。
 - マネージャーは必要なアクセスリクエストまたはアクセス変更リクエストを開始します。
@@ -603,7 +603,7 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 
 職務タイトルの専門分野は、ステージ、グループ、および/または責任範囲内のチームメンバーの特定の焦点領域を示すために使用されます。これらの専門分野は職務タイトルの一部ではありませんが、ステージ、グループ、および/または焦点領域への投資に関するレポートに反映されるために使用されます。また、People Group とリーダーが組織健全性指標と比率をレビューするために活用するリソースでもあります。
 
-**チームメンバーの職務タイトル専門分野に変更が必要な場合、マネージャーは新しい職務タイトル専門分野情報と変更の発効日 (Data Correction を選択) を含む People Operations チーム向けの [HelpLab](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=d3f03243ffe962103691fe34fc4fd9f6) ケースを作成する必要があります。既に存在しない新しい職務タイトル専門分野を作成する必要がある場合は、`Workday: Job Title Specialty Request` テンプレートを使用して Workday で作成してもらうために [Issue](https://gitlab.com/gitlab-com/people-group/people-tools-technology/general/-/issues/new#) を開いてください。Workday でこのフィールドが正確であり続けることを確実にすることは、マネージャーの重要な責任です。**
+**チームメンバーの職務タイトル専門分野に変更が必要な場合、マネージャーは新しい職務タイトル専門分野情報と変更の発効日 (Data Correction を選択) を含む People Operations チーム向けの [Compass](https://app.serval.com/new-request) ケースを作成する必要があります。既に存在しない新しい職務タイトル専門分野を作成する必要がある場合は、`Workday: Job Title Specialty Request` テンプレートを使用して Workday で作成してもらうために [Issue](https://gitlab.com/gitlab-com/people-group/people-tools-technology/general/-/issues/new#) を開いてください。Workday でこのフィールドが正確であり続けることを確実にすることは、マネージャーの重要な責任です。**
 
 ### マネージャー向けの職務タイトル専門分野ガイダンス
 
@@ -648,7 +648,7 @@ GitLab のさまざまな部署は、職務タイトル専門分野をさまざ�
 
 ### 現在のマネージャー向け: マネージャー変更の処理
 
-[このジョブエイド](https://docs.google.com/document/d/1JEobACNSMeHU4pU5DaaF7aqmv9wmSDoXx7veZ6_SM_I/edit?usp=sharing)は、Workday 内でチームメンバーを別のマネージャーに移動する方法に関する指示をピープルマネージャーに提供するのに役立ちます。直属の部下を移動する必要のあるマネージャーが利用できない場合は、おそらく「supervisory organization」が作成されていないことを意味します。管理レベルが「Manager」と表示されていても、Workday でチームメンバーが直属の部下を持つには監督組織が必要です。監督組織は、彼らが管理しているチームに固有の名前を持つべきです (例: Commercial Sales - EMEA、Content Marketing (John Smith)、Backend Engineering - Ruby)。監督組織のセットアップが必要なチームメンバーの名前、固有の名前、監督組織の発効日を [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=14aff309478c069067429ee0026d4372) 経由で People Operations チームに連絡してください。Workday でセットアップをお手伝いします。
+[このジョブエイド](https://docs.google.com/document/d/1JEobACNSMeHU4pU5DaaF7aqmv9wmSDoXx7veZ6_SM_I/edit?usp=sharing)は、Workday 内でチームメンバーを別のマネージャーに移動する方法に関する指示をピープルマネージャーに提供するのに役立ちます。直属の部下を移動する必要のあるマネージャーが利用できない場合は、おそらく「supervisory organization」が作成されていないことを意味します。管理レベルが「Manager」と表示されていても、Workday でチームメンバーが直属の部下を持つには監督組織が必要です。監督組織は、彼らが管理しているチームに固有の名前を持つべきです (例: Commercial Sales - EMEA、Content Marketing (John Smith)、Backend Engineering - Ruby)。監督組織のセットアップが必要なチームメンバーの名前、固有の名前、監督組織の発効日を [Compass](https://app.serval.com/new-request) 経由で People Operations チームに連絡してください。Workday でセットアップをお手伝いします。
 
 セールスマネージャーへの注: チームメンバーが Workday で正しいセールスマネージャーの下に移動されない場合、セールスコミッションのクレジットが正しいマネージャーにロールアップされません。コミッション対象役割の追加の昇進と異動の考慮事項は[こちら](/handbook/people-group/promotions-transfers/#promotions-and-transfers-of-employees-in-commissionable-roles)を参照してください。
 
@@ -659,7 +659,7 @@ GitLab のさまざまな部署は、職務タイトル専門分野をさまざ�
 
 **EBA がシニアリーダーシップを更新するプロセス:**
 
-1. People Operations チームに変更を Workday で行うようリクエストし、発効日を提供するために、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=c15e3b45478c069067429ee0026d43e1) でケースを作成します。
+1. People Operations チームに変更を Workday で行うようリクエストし、発効日を提供するために、[Compass](https://app.serval.com/new-request) でケースを作成します。
 1. People Operations チームが Workday で変更を処理します。
 1. 完了したら、チームは EBA にフォローアップして、すべての変更が行われたことを知らせます。
 1. その後、EBA はチームページで変更を行う必要があります。
@@ -667,7 +667,7 @@ GitLab のさまざまな部署は、職務タイトル専門分野をさまざ�
 ### People Operations 向け: 職務情報変更リクエストの処理
 
 1. すべての職務変更リクエストを監査し、変更が Payroll トラッカーで捕捉されていることを確認します。
-1. `Job Title Specialty` 変更リクエストの場合、マネージャーは Workday でチームメンバーの `Speciality` を更新してもらうために People Operations チーム [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=14aff309478c069067429ee0026d4372) に連絡します。
+1. `Job Title Specialty` 変更リクエストの場合、マネージャーは Workday でチームメンバーの `Speciality` を更新してもらうために People Operations チーム [Compass](https://app.serval.com/new-request) に連絡します。
     - People Operations チームメンバーは、タイトルが既に Workday に存在するかどうかを確認する必要があります。存在しない場合は、`Job Speciality` がそれぞれの部門ハンドブックページに追加されているかどうかをチェックします (例: <https://handbook.gitlab.com/handbook/engineering/ai/search/>、または People Operations チームメンバーがそれを追加するためにそれぞれの Issue にタグ付けされているかどうか。不明な場合は、[それぞれの People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡してください)。
 
 ## 部門異動
@@ -802,7 +802,7 @@ GitLab チームメンバーが新しい役割に選ばれた場合、マネー�
 
 - チーム/専門分野の変更だが、アクセスリクエストは不要
 
-マネージャーがチームメンバーの役割に組織変更チェックリストが必要だと感じる他の役割変更については、HelpLab 経由で People Operations チームに連絡してください。
+マネージャーがチームメンバーの役割に組織変更チェックリストが必要だと感じる他の役割変更については、Compass 経由で People Operations チームに連絡してください。
 
 ## 組織変更チェックリスト作成プロセス
 

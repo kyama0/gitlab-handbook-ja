@@ -2,11 +2,11 @@
 title: "Candidate Experience Specialistの責務"
 description: "このページでは、Candidate Experience チームが担当するプロセスとシステムの概要を説明します。"
 upstream_path: "/handbook/hiring/talent-acquisition-framework/coordinator/"
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T06:39:44+09:00"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:58:18Z"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 CESチームは、[GitLab Service Desk](https://docs.gitlab.com/ee/user/project/service_desk/) と ModernLoop を活用して、CESチームへのすべての受信リクエストを追跡します。GitLab チームメンバーで Candidate Experience チームへのリクエストや質問がある場合は、`ces@gitlab.com` にメールを送ると、CES Service Desk 内に自動的に Issue が作成されます。どの CES チームメンバーがあなたのリクエストを担当するかについては、[アライメントページ](/handbook/hiring/)をご覧ください。私たちのチームはインタビューのスケジューリングに ModernLoop を活用しており、既存のカレンダーや ATS とシームレスに連携しています。
@@ -515,7 +515,7 @@ People Connect チームは、エンティティ/PEO ベースのチームメン
    - 「Comment」に「Family Member Relationship Acknowledgement」と記入します
    - 「Ok」をクリックしてアップロードします
    - Workday で GitLab チームメンバーを見つけて同じ手順を繰り返します
-1. 最後に、HelpLab で General People Team リクエストを開き、既存の家族メンバーの Workday プロフィールに確認書をアップロードするよう依頼してください。リクエストに確認書を添付し、チームメンバーの名前を提供する必要があります。
+1. 最後に、Compass で General People Team リクエストを開き、既存の家族メンバーの Workday プロフィールに確認書をアップロードするよう依頼してください。リクエストに確認書を添付し、チームメンバーの名前を提供する必要があります。
 
 ### コントラクト署名後の開始日の更新方法
 
@@ -591,8 +591,8 @@ People Connect チームは、エンティティ/PEO ベースのチームメン
 
 ジョブ変更レター（JCL）が署名され、内部チームメンバーが GreenHouse で「hired」になった後に開始日を変更するには、Candidate Experience Specialist は以下の手順を実行します：
 
-1. 開始日変更リクエストが届いたら、CES は採用担当者に Workday で変更を行うために People Connect チームの HelpLab チケットを上げるよう採用マネージャーまたは PBP と協力するよう勧めます。
-ハイリングマネージャーまたは PBP は HelpLab チケットを通じて新しい開始日の確認を提供する必要があります。
+1. 開始日変更リクエストが届いたら、CES は採用担当者に Workday で変更を行うために People Connect チームの Compass チケットを上げるよう採用マネージャーまたは PBP と協力するよう勧めます。
+ハイリングマネージャーまたは PBP は Compass チケットを通じて新しい開始日の確認を提供する必要があります。
 1. CES は GreenHouse を更新できます：
    - 「Offer Details」に移動します
    - 開始日の隣の編集ペンシルをクリックします

@@ -2,11 +2,11 @@
 title: "GitLab のオンボーディング"
 description: "GitLab のオンボーディングと、オンボーディング Issue テンプレート"
 upstream_path: /handbook/people-group/general-onboarding/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:18:58Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:58:00Z"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 GitLab では、オンボーディングは [非常に重要](/handbook/company/culture/all-remote/onboarding/) なものです。私たちは初日からすぐに業務をフル稼働で進めることを期待していません。
@@ -76,7 +76,7 @@ People Operations チームは、**プレオンボーディングコール** と
 
 ## 新しいチームメンバーのマネージャー
 
-新しいチームメンバーには、入社日の少なくとも 4 営業日前に Issue が作成されます。マネージャーと People Operations チームのメンバーがこの Issue にアサインされます。**マネージャーと People Operations** には、円滑で成功するオンボーディングプロセスを確保するため、**入社日前** に完了する必要があるタスクがあります。これらのタスクに関する質問や支援については、Issue 上で気軽に問い合わせるか、HelpLab 経由でリクエストを作成してください。
+新しいチームメンバーには、入社日の少なくとも 4 営業日前に Issue が作成されます。マネージャーと People Operations チームのメンバーがこの Issue にアサインされます。**マネージャーと People Operations** には、円滑で成功するオンボーディングプロセスを確保するため、**入社日前** に完了する必要があるタスクがあります。これらのタスクに関する質問や支援については、Issue 上で気軽に問い合わせるか、Compass 経由でリクエストを作成してください。
 
 ### <i class="fas fa-tasks fa-fw color-orange font-awesome"></i>コンプライアンス
 

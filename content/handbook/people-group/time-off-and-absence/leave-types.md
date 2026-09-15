@@ -2,11 +2,11 @@
 title: 長期休暇 (Leave) の種類
 description: このページでは、GitLab Parental Leave、Emergency Leave、Military Leave、Sick Leave、Caregiving Sick Leave を含む GitLab の長期休暇ポリシーを説明します。
 upstream_path: /handbook/people-group/time-off-and-absence/leave-types/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T18:43:26Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:56:59Z"
 translator: claude
 stale: false
-lastmod: "2026-03-16T15:18:24-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## GitLab Parental Leave
@@ -66,7 +66,7 @@ Parental Leave 後に追加の時間が必要な場合:
 
 ***FAQ: セールス職でコミッションを受け取っています。Parental Leave 中はどう影響しますか？***
 
-- Parental Leave 中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences) が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、LOA 中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 HelpLab チケットを提出してください。
+- Parental Leave 中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences) が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、LOA 中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 Compass チケットを提出してください。
 
 ### 業務への復帰
 
@@ -159,7 +159,7 @@ GitLab は、軍務 (Military Leave) により業務を不在にするチーム�
 
 チームメンバーは、報告要件に従って休暇を報告していることを確認するため、まず自国の Military Leave ポリシーを確認する必要があります。可能な限り、チームメンバーは Workday の Leaves ドロップダウンで Military Leave を選択し、少なくとも 30 日前の事前通知を提供する必要があります。GitLab は、チームメンバーの軍務に関連する文書を要請する権利を留保します。文書が必要な場合、休暇管理チームから連絡があります。
 
-- Military Leave の開始方法または復職リクエストに関するご質問がある場合は、HelpLab チケットを提出して休暇管理チームに連絡してください。GitLab Inc または GitLab Federal のチームメンバーは、さらに [Military Leave ポリシー](/handbook/people-policies/leave-of-absence/us/#us-military-leave) を確認してください。
+- Military Leave の開始方法または復職リクエストに関するご質問がある場合は、Compass チケットを提出して休暇管理チームに連絡してください。GitLab Inc または GitLab Federal のチームメンバーは、さらに [Military Leave ポリシー](/handbook/people-policies/leave-of-absence/us/#us-military-leave) を確認してください。
 
 ## Sick Leave
 
@@ -173,4 +173,4 @@ GitLab は、軍務 (Military Leave) により業務を不在にするチーム�
 
 連続 6 か月の休暇後、株式権利確定は一時停止され、業務復帰初日に再開されます。このポリシーは適用される現地法および法定要件に従って適用され、すべての地域またはすべての種類の休暇に世界的に適用されない場合があることに注意してください。
 
-詳細については、[株式ポリシーページ](/handbook/total-rewards/stock-options/#equity-policies) を参照してください。これがあなたの特定の状況にどう適用されるかについて質問や懸念がある場合は、[HelpLab チケット](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=103515bd97680e50a326158de053af6b) を Stock Admin チームに直接提出してください。
+詳細については、[株式ポリシーページ](/handbook/total-rewards/stock-options/#equity-policies) を参照してください。これがあなたの特定の状況にどう適用されるかについて質問や懸念がある場合は、[Compass チケット](https://app.serval.com/new-request) を Stock Admin チームに直接提出してください。

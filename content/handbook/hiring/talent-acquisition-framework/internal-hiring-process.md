@@ -2,11 +2,11 @@
 title: "社内採用プロセス"
 description: "このページでは社内採用プロセスについて説明します。"
 upstream_path: "/handbook/hiring/talent-acquisition-framework/internal-hiring-process/"
-upstream_sha: "fe88192cad67a795a237396e552566cb08c118b9"
-translated_at: "2026-04-29T06:00:00Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:58:38Z"
 translator: claude
 stale: false
-lastmod: "2026-03-19T16:08:06-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## チームメンバーの責任
@@ -38,11 +38,11 @@ lastmod: "2026-03-19T16:08:06-05:00"
 - リクルーターが社内チームメンバーの応募を受け取ったら、以下の手順で進める：
   - 外部候補者と同様に応募を審査し、役割への適格性を判断する。適格でない場合は、メール（またはSlack）で決定を伝え、適格でない理由について明確なフィードバックを提供し、採用マネージャーをループインして適切な場合は追加フィードバックを提供できるようにする。
   - 社内チームメンバーのGitLabメールが応募に紐付いていることを確認する。紐付いていない場合は更新し、面接プロセス全体のコミュニケーションがそこに向けられるようチームメンバーに通知する。
-  - 社内候補者が役割に適格だと判断された場合、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=2e8c3f81478c069067429ee0026d4380)経由でリクエストを提出してPeople Connectに連絡する。
+  - 社内候補者が役割に適格だと判断された場合、[Compass](https://app.serval.com/new-request)経由でリクエストを提出してPeople Connectに連絡する。
     - 適格性の返信を受け取ったら、以下の手順を続ける
     - 追加質問がある場合は、チームメンバーの現在のPBPに連絡することがある。
 - 社内モビリティプロセスによる昇進（一つの職位レベルから別の職位レベルへの上位移動）の場合、Greenhouseのノートセクションに部門固有のPeople Business Partnerをタグ付けして、オファーを進める前に整合性を確保する。また、オファーが新役割のスキップレベルリーダーによって承認されていることを確認する。
-- リクルーターがHelpLab経由で適格性ステータスを確認（チームメンバーが適格と確認）したら、チームメンバーに連絡して自己紹介をし、社内採用プロセスについての期待値を設定する。現在のマネージャーへの通知を確認することも含まれる。
+- リクルーターがCompass経由で適格性ステータスを確認（チームメンバーが適格と確認）したら、チームメンバーに連絡して自己紹介をし、社内採用プロセスについての期待値を設定する。現在のマネージャーへの通知を確認することも含まれる。
 - チームメンバーが適格でない場合、リクルーターは適切な拒否メールテンプレートを送信する。
 - リクルーターはチームメンバーの現在の補償（Workdayで確認）を確認し、役割の給与範囲と予算に沿っているかチェックする。
 - チームメンバーの現在の補償が役割の予算および/または給与範囲を超えている場合（レベルまたは異なる求人ファミリーのため）、リクルーターはチーム面接を完了する前に補償の変更の可能性についてチームメンバーに通知する。
@@ -61,7 +61,7 @@ lastmod: "2026-03-19T16:08:06-05:00"
   - TAはチームメンバーの現在のマネージャーとの補償変更について議論しない。
   - TAはチームメンバーの現在のマネージャーに面接フィードバックや進捗状況を提供しない。これは1:1でマネージャーとチームメンバーの間で話し合われるべきです。
   - リクルーターがチームメンバーの補償にアクセスできない場合（部門移動のため）：
-    - HelpLabでの[社内異動](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7b2f4b8d4748069067429ee0026d435f)ケーステンプレートを使用してPeople Connectにリクエストを提出する。リクエストの詳細に、候補者が選考に進んでおり、現在の補償詳細が必要である旨を記載してください。People Connectは給与の詳細のみを確認し、株式に関する確認はTotal Rewardsチームが別途行う必要があります。
+    - Compassでの[社内異動](https://app.serval.com/new-request)ケーステンプレートを使用してPeople Connectにリクエストを提出する。リクエストの詳細に、候補者が選考に進んでおり、現在の補償詳細が必要である旨を記載してください。People Connectは給与の詳細のみを確認し、株式に関する確認はTotal Rewardsチームが別途行う必要があります。
     - 48時間以内に、People Connectチームは回答し、オファー作成に活用するための年間基本報酬の詳細をリクルーター（採用マネージャーとのパートナーシップのもと）に提供する。
 
 ### リクルーターのSlackメッセージテンプレート
@@ -88,7 +88,7 @@ As you are both aware, XXX has been interviewing for the XXX role and the team i
 
 - People Connectは社内機会に応募するチームメンバーのすべての適格性確認を担当する。
   - People ConnectチームのメンバーのCandidateの適格性確認については、People Connectチームのマネージャーに直接連絡してください。
-- [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=2e8c3f81478c069067429ee0026d4380)経由でリクエストを提出してPeople Connectに連絡する。People ConnectはHelpLab経由で提出されたリクエストに返信することでリクルーターに適格性確認完了を通知する。部門固有の適格要件を満たしていることを確認：
+- [Compass](https://app.serval.com/new-request)経由でリクエストを提出してPeople Connectに連絡する。People ConnectはCompass経由で提出されたリクエストに返信することでリクルーターに適格性確認完了を通知する。部門固有の適格要件を満たしていることを確認：
   - パフォーマンス適格性のガイドライン：
     - Talent Assessmentで「Performing」または「Exceeding Performance」レベルと評価されたチームメンバーは他の役割の対象となる
     - パフォーマンスが「Developing」と評価されているか、書面によるパフォーマンス管理中のチームメンバーは対象外となる場合がある。これらの状況ではマネージャーおよび/またはPBPの承認が必要
@@ -100,9 +100,9 @@ As you are both aware, XXX has been interviewing for the XXX role and the team i
       - SDRは12か月在籍
       - SDR/BDRチームリードは3か月在籍
 - 追加の話し合いが必要な状況では、People Connect Leadsが部門固有の[PBP](/handbook/people-group/people-business-partners/#people-business-partner-alignments)に連絡する。
-- オファーステージで、リクルーターが補償データにアクセスできない場合（候補者が部門を移動する場合など）、HelpLabでリクエストを提出して現在の補償情報を取得する：
+- オファーステージで、リクルーターが補償データにアクセスできない場合（候補者が部門を移動する場合など）、Compassでリクエストを提出して現在の補償情報を取得する：
   - People ConnectはWorkdayでチームメンバーの現在の基本報酬を確認する。
-  - People ConnectはHelpLabリクエストで年間基本報酬の詳細を提供する。リクルーターはこの情報をオファー作成（採用マネージャーとのパートナーシップのもと）に活用できる。
+  - People ConnectはCompassリクエストで年間基本報酬の詳細を提供する。リクルーターはこの情報をオファー作成（採用マネージャーとのパートナーシップのもと）に活用できる。
 
 ## 現在のマネージャーの責任
 

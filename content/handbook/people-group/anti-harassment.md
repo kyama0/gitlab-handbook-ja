@@ -2,11 +2,11 @@
 title: "ハラスメント禁止ポリシー"
 description: "GitLab では誰もがハラスメントを防止し止める責任を負っています。私たちのハラスメント禁止ポリシーについて詳しくご紹介します。"
 upstream_path: /handbook/people-group/anti-harassment/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
+translated_at: "2026-09-15T21:54:37Z"
 translator: claude
 stale: false
-lastmod: "2026-02-06T10:29:14-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 {{% panel header="**This is a Secure Document**" header-bg="orange" %}}
@@ -88,7 +88,7 @@ GitLab は暴力行為や暴力の脅迫を容認しません。当社は、同�
 Issue、マージリクエスト、メール、その他の業務関連の事柄により、あなたまたは他のチームメンバーが安全に疑問を持つような脅威があなたまたは他の誰かに対して行われた場合、躊躇せず以下のプロセスを開始してください:
 
 1. 現地の法執行機関に連絡してください。お住まいの地域での適切な連絡先番号と、緊急番号と非緊急番号のどちらに電話すべきかを確認してください。
-1. HelpLab リクエストを通じて People Operations チームに通知してください。その後、状況の対処を支援する People Business Partner、People Operations チームメンバー、Team Member Relations、マネージャー、セキュリティチームと共にプライベート Slack チャンネルを開設することができます。
+1. Compass リクエストを通じて People Operations チームに通知してください。その後、状況の対処を支援する People Business Partner、People Operations チームメンバー、Team Member Relations、マネージャー、セキュリティチームと共にプライベート Slack チャンネルを開設することができます。
 1. 脅威に基づいて、以下のステップが取られる場合があります:
     - 内部脅威評価
     - 一時的な宿泊（友人、家族、ホテルなど）
