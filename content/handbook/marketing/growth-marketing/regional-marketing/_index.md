@@ -2,9 +2,9 @@
 title: "Regional Marketing"
 description: "GitLab における Regional Marketing の役割は、対面およびバーチャルのインタラクションを通じて、地域レベルでのマーケティングメッセージとパイプライン構築を支援するために、セールスと密接に連携することです。"
 upstream_path: "/handbook/marketing/growth-marketing/regional-marketing/"
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-lastmod: "2026-08-31T14:37:56-06:00"
-translated_at: "2026-09-04T20:55:21+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-16T21:09:55+00:00"
 translator: codex
 stale: false
 ---
@@ -111,7 +111,7 @@ GitLab の Issue やエピックで作業する際は、GitLab のバリュー�
 
 ## Regional Marketing が AI をどのように活用しているか
 
-[GitLab が承認した AI ツール](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#approved-ai-tools)のみを使用し、それらのデータ分類レベルを認識してください。承認されたすべてのプラットフォームのリストについては、[Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications) を参照してください。[禁止されている AI ツール](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#prohibited-ai-tools)のリストについては、このハンドブックページを参照してください。
+[GitLab が承認した AI ツール](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#approved-ai-tools)のみを使用し、それらのデータ分類レベルを認識してください。承認されたすべてのプラットフォームのリストについては、[Tech Stack](https://app.serval.com/new-request) を参照してください。[禁止されている AI ツール](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#prohibited-ai-tools)のリストについては、このハンドブックページを参照してください。
 
 ### 役立つリンク
 

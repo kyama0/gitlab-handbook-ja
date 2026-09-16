@@ -1,11 +1,11 @@
 ---
 title: リーダーシップ
 upstream_path: /handbook/leadership/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:13:21+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 このページはリーダーシップのポインターを掲載しています。
@@ -317,7 +317,7 @@ M-team ミーティングを始めること、または参加することに興�
 
 ## People Group
 
-リーダーシップ開発のトピックについてさらなるサポートが必要な場合は、[People Group](/handbook/people-group/)の誰にでも気軽に連絡してください。[チームページ](/handbook/company/team/)で `People Group` のドロップダウンを使って私たちを見つけられます。チームには HelpLab 経由でも連絡できます。
+リーダーシップ開発のトピックについてさらなるサポートが必要な場合は、[People Group](/handbook/people-group/)の誰にでも気軽に連絡してください。[チームページ](/handbook/company/team/)で `People Group` のドロップダウンを使って私たちを見つけられます。チームには Compass 経由でも連絡できます。
 
 ## 上場企業であること
 

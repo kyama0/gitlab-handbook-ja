@@ -2,11 +2,11 @@
 title: "YouTube の利用とアクセス"
 description: "私たちは YouTube を、ライブストリーミングのグループカンバセーション、マーケティング動画、デモなどを含む動画コンテンツの単一の信頼できる情報源 (SSoT) として使用しています。"
 upstream_path: /handbook/marketing/marketing-operations/youtube/
-upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
-translated_at: "2026-07-30T09:08:29+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:09:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## チャンネル
@@ -243,7 +243,7 @@ GitLab Unfiltered でプライベート動画にアクセスする方法のビ�
 ## アクセス
 
 1. GitLab Branded チャンネル: アクセスをリクエストするには、[個別アクセスリクエストの Issue](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request) を作成し、[Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) に列挙されたプロビジョナー (列 G) を割り当ててください。
-1. GitLab Unfiltered: 全員がオンボーディング中に YouTube Unfiltered へのアクセスを取得すべきです。受信トレイに招待が見つからない場合は、Google Workspace アカウントの [Pending Invitations](https://myaccount.google.com/brandaccounts) セクションを確認してください。招待がそこにない場合、HelpLab を介して People Operations チームに新しい招待をリクエストしてください。
+1. GitLab Unfiltered: 全員がオンボーディング中に YouTube Unfiltered へのアクセスを取得すべきです。受信トレイに招待が見つからない場合は、Google Workspace アカウントの [Pending Invitations](https://myaccount.google.com/brandaccounts) セクションを確認してください。招待がそこにない場合、Compass を介して People Operations チームに新しい招待をリクエストしてください。
 
 People Operations のトラブルシューティング:
 
@@ -271,7 +271,7 @@ GitLab Unfiltered YouTube アカウントは、以下の例外を除き、どの
 
 GitLab Unfiltered YouTube アカウントは共有スペースです。時々、チームメンバーが個人アカウントにいると思って、誤って[コメント](#commenting)したり[チャンネルに登録](#subscribing-to-channels)したりすることがあります。
 
-このハンドブックのルールに違反するチャンネル登録やコメントを見つけた場合、GitLab Unfiltered YouTube アカウントを清潔に保つために行動を起こす偏りを示してください。誤ったチャンネル登録やコメントを削除して、YouTube アカウントを清潔な状態に戻してください。関連するコメントや登録を削除できない場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) を介して直ちに People Operations チームに通知してください。
+このハンドブックのルールに違反するチャンネル登録やコメントを見つけた場合、GitLab Unfiltered YouTube アカウントを清潔に保つために行動を起こす偏りを示してください。誤ったチャンネル登録やコメントを削除して、YouTube アカウントを清潔な状態に戻してください。関連するコメントや登録を削除できない場合は、[Compass](https://app.serval.com/new-request) を介して直ちに People Operations チームに通知してください。
 
 ## 整理
 

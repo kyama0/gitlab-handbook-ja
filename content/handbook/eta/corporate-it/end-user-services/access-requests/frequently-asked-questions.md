@@ -1,51 +1,48 @@
 ---
-title: "アクセスリクエスト（AR）に関するよくある質問"
+title: "Compass でのアクセスリクエスト（AR）に関するよくある質問"
 aliases:
   - /handbook/security/corporate/end-user-services/access-requests/frequently-asked-questions/
 upstream_path: /handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:54:55+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+lastmod: "2026-09-15T14:25:09-04:00"
+translated_at: "2026-09-16T21:13:21+00:00"
 translator: codex
 stale: false
 ---
 
 ## サポートが必要ですか？
 
-- 特定の SLA はありませんが、Issue で `@gitlab-com/business-technology/end-user-services` に @メンションしてください。
-- リクエストが緊急の場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com を通じて IT に連絡してください。
+- **Compass** を通じてアクセスリクエストを送信し、進捗を追跡してください。Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または Compass の Web アプリ（Okta 経由でアクセスできます）を使用します。
+- リクエストが緊急の場合は、Slack の Compass アプリまたは it-help@gitlab.com を通じて IT に連絡してください。
 
 ## アクセスが必要です
 
 ### AR リクエストをしばらく開いたままにしています。対応を進めるにはどうすればよいですか？
 
-1. アクセスリクエストが[手順](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests#how-do-i-choose-which-template-to-use)に従って完了していること、およびアクセスが必要なシステム／ボルト／グループ／プロジェクトと、必要なロールまたは権限を含めたことを確認してください。
-1. ほとんどのアクセスリクエストには Manager の承認が必要です。AR で Manager をタグ付けし、Issue に ~"AR-Approval::Manager Approved" と ~"ReadyForProvisioning" のラベルを追加するよう依頼してください。
-1. アクセスをリクエストしているツールに対して、正しいプロビジョニング担当者を Issue にタグ付けし、担当に割り当てたことを確認してください。すべてのツールのプロビジョニング担当者は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
-1. プロビジョニング担当者が IT チームの場合は、AR に ~"IT::to do" ラベルを追加してください。
-1. 上記のすべての手順を実行してもアクセスリクエストの対応が進まない場合は、ツールを所有するチームの Slack チャンネルで連絡してください。各チームの Slack チャンネルは [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
+1. Compass（Slack アプリまたは Web アプリ）でリクエストのステータスを確認してください。チケットには、ToDo/Progress/Waiting On Another Team のフローのどの段階にあるかが表示されます。
+2. チケットに、アクセスが必要なシステム／ボルト／グループ／プロジェクトと、必要なロールまたは権限が含まれていることを確認してください。
+3. Manager の承認が必要な場合は、Compass のチケット内で直接処理されるようになりました。チケットで Manager の承認待ちかどうかを確認し、必要に応じてそのチケットで Manager にフォローアップしてください。
+4. チケットが承認済みでもプロビジョニング待ちの場合は、チケットを通じてプロビジョニング担当チームにフォローアップするか、[Tech Stack](https://techstack.gtlb.com/)で担当チームの Slack チャンネルを探してください。
+5. 対応が進まず困っている場合は、Slack の Compass アプリまたは it-help@gitlab.com を通じて IT に連絡してください。
 
 ### システムまたはグループ／ボルトへのアクセスが必要ですか？
 
-1. ニーズに基づいてテンプレートを選択してください。ほとんどの人は [Bulk](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Bulk_Access_Request) または [Single Person](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) テンプレートを使用します。
-1. オンボーディング中に漏れた場合を除き、ベースライン権限の一部であるものについてアクセスリクエストを作成しないでください。
+1. **Compass** を通じてリクエストを送信してください。Compass の Slack アプリまたは Compass の Web アプリ（Okta 経由）を使用します。これにより、リクエストのチケットが作成されます。
+2. オンボーディング中に漏れた場合を除き、ベースライン権限の一部であるものについてリクエストを送信しないでください。
     1. [全チームメンバーのベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/#baseline-entitlements-all-gitlab-team-members)
-    1. [ロールベースのベースライン権限](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/tree/master/.gitlab/issue_templates/role_baseline_access_request_tasks)
-1. 次の場合を**除き**、Issue には `AR-Approval::Manager Approved` ラベルが必要です。
-    1. Google Workspace のメールエイリアスまたはグループに追加される内部チームメンバー
-    1. Slack グループに追加される内部チームメンバー
-    1. まったく変更のないロールベースのベースライン権限
-1. [システムへのアクセスをプロビジョニングする担当者](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に Issue を割り当ててください。
-1. サポートが必要な場合は、支援が必要な Issue へのリンクを添えて Slack チャンネル #it-help で IT-Ops に依頼してください。
-1. 作業に必要な最小限のアクセスのみを要求してください。
+    2. [ロールベースのベースライン権限](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/tree/master/.gitlab/issue_templates/role_baseline_access_request_tasks)
+3. 必要な承認（Manager の承認など）は、チケット内で依頼・記録されます。別途ラベルを付けたり、GitLab のアクセスリクエストを作成したりする必要はありません。
+4. チケットは適切なプロビジョニング担当チームに自動的に振り分けられます。各システムへのアクセスをプロビジョニングする担当者は、[Tech Stack](https://techstack.gtlb.com/)でも確認できます。
 
 ### Manager の承認は必要ですか？ 場合によります
 
 次の内容をリクエストする場合、Manager の承認は不要です。
 
 1. Google Workspace のメールエイリアスまたはグループに追加される内部チームメンバー（そのグループが Google Cloud Platform の権限を提供する場合を除く）
-1. Slack グループに追加される内部チームメンバー
-1. 自身のロールベース権限に含まれるもの
+2. Slack グループに追加される内部チームメンバー
+3. 自身のロールベース権限に含まれるもの
+
+Manager の承認が必要な場合は、Compass のチケット内で自動的に承認が依頼され、状況が追跡されます。
 
 ### Rails またはデータベースの本番コンソール（grpd）へのアクセスが必要です
 
@@ -58,34 +55,28 @@ Teleport を使用して、一時的なアクセスを次のいずれかにリ�
 
 すでにアクセスできる可能性があります。[dev アカウントがあるかテストしてください。](https://dev.gitlab.org/)
 
-- dev アカウントが必要な場合は、[Single Person Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を作成してください。
+- dev アカウントが必要な場合は、Compass（Slack アプリまたは Okta 経由の Web アプリ）を通じてリクエストを送信してください。
 - dev アカウントがある場合は、[version](https://version.gitlab.com/users/sign_in)に移動し、GitLab でログインして、認証情報の使用を許可してください。
 
 ### Zendesk に Light Agent としてアクセスする必要があります
 
-Zendesk Light アクセスのアクセスリクエストを作成する必要はありません。[メールでアクセスを取得する手順](/handbook/support/internal-support/)に従ってください。
+Zendesk Light アクセスのアクセスリクエストを送信する必要はありません。[メールでアクセスを取得する手順](/handbook/support/internal-support/)に従ってください。
 
 ### メールエイリアスを追加するか、氏名を変更する必要があります
 
-メールエイリアスの追加または氏名変更には、[`slack_googlegroup_1password` AR テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/issues/new?issuable_template=slack_googlegroup_1Passwordgroupvault)を使用してください。
+メールエイリアスの追加または氏名変更には、Compass（Slack アプリまたは Okta 経由の Web アプリ）を通じてリクエストを送信してください。
 リクエストできる内容や数に制限はありませんが、追加または変更について短い説明を記載してください。不適切と判断された場合、または運用の裁量により、一部のエイリアスリクエストが却下されることがあります。
 
-このアプリケーションの自動化は Okta で行われますが、「真の」システムのプロビジョニングとプロビジョニング解除は、影響を受けるシステム内でアクセス変更リクエストを通じて手動で完了する必要があります。
+このアプリケーションの自動化は Okta で行われますが、「真の」システムのプロビジョニングとプロビジョニング解除は、影響を受けるシステム内で手動で完了する必要があります。
 
 ### 古いアクセスリクエストをクローズする
 
-アクセスリクエストはできるだけ早く（30 日以内に）完了することが期待されます。
+アクセスリクエストはできるだけ早く（7 日以内に）完了することが期待されます。
 
-30 日（作成時点）を経過したアクセスリクエストを自動的にクローズするパイプラインを設定しています。
-これは古い AR を減らし、バックログを整理するためです。例外として、AR に `AccessReview` ラベルがある場合、そのラベルを持つ Issue はパイプラインで無視されます。
-このパイプラインは、Issue が自動的にクローズされること、およびチームメンバーが
-残っているタスクがある場合にすべきことを示すコメントを Issue に追加します。
+作成から 7 日を過ぎても開いたままのチケットは、古いリクエストを減らしてバックログを整理するため、自動的にクローズされる場合があります。自動的にクローズされる場合は、残っているタスクへの次の対応手順とともに、チケット上でチームメンバーに 3 回通知されます。
 
-現在、パイプラインは毎週金曜日の午後 09:30 に実行するよう設定されています。これは
-30 日経過したすべてのアクセスリクエスト Issue をクローズします。
-
-ご注意ください。これは AR 自動クローザーの最初のイテレーションです。私たちのチームは、これを洗練し改善するために取り組みます。
+ご注意ください。プロセスが Compass に移行したため、私たちは新しいシステムでの自動クローズの動作の詳細について、引き続き改善と確認を行います。
 
 ### 既存のアクセスを削除する必要があります
 
-削除する必要があるアクセスと対象者を指定したアクセスリクエストを作成してください。
+削除する必要があるアクセスと対象者を指定し、Compass（Slack アプリまたは Okta 経由の Web アプリ）を通じてリクエストを送信してください。

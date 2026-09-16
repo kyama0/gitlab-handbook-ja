@@ -1,9 +1,9 @@
 ---
 title: "Developer Relations のワークフローとツール"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-16T21:09:55+00:00"
 translator: claude
 stale: false
 ---
@@ -44,7 +44,7 @@ stale: false
 
 ### Tech Stack への追加が保留中のツール
 
-Developer Relations チームは、HelpLab の [Tech Stack Update](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab) プロセスを通じて Tech Stack への追加が保留されているこれらのツールの DRI でもあります:
+Developer Relations チームは、Compass の [Tech Stack Update](https://app.serval.com/new-request) プロセスを通じて Tech Stack への追加が保留されているこれらのツールの DRI でもあります:
 
 | ツール | 説明                                                                                                               | 使用方法 |
 |---|---------------------------------------------------------------------------------------------------------------------------|---|
@@ -64,4 +64,4 @@ Developer Relations チームは、HelpLab の [Tech Stack Update](https://helpl
 
 ### Developer Relations のツールスタックに新しいツールを追加する
 
-1. HelpLab の [Tech Stack Update](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab) プロセスを通じて新しいツールを追加する場合と同様に、調達プロセスに従ってください。
+1. Compass の [Tech Stack Update](https://app.serval.com/new-request) プロセスを通じて新しいツールを追加する場合と同様に、調達プロセスに従ってください。
