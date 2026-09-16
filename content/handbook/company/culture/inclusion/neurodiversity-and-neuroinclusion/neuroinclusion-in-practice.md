@@ -2,12 +2,12 @@
 title: "実践におけるニューロインクルージョン"
 description: "GitLab のニューロインクルージョン実践プログラムについて学ぶ — インクルーシブなデザイン、コミュニケーション、リーダーシップを通じてすべての思考方法をサポートする。"
 page_type: handbook
-upstream_path: "/company/culture/inclusion/neurodiversity-and-neuroinclusion/neuroinclusion-in-practice/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_path: "/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neuroinclusion-in-practice/"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:13:21+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-12-15T07:06:38-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 実践におけるニューロインクルージョン
@@ -85,7 +85,7 @@ GitLab では、ニューロインクルージョンは私たちが[CREDIT バ�
 
 - [アクセシビリティ＆合理的配慮 ハンドブック](https://internal.gitlab.com/handbook/people-group/diversity-inclusion-belonging/accessibility-and-accommodations/)
 - [グローバルアクセシビリティ＆合理的配慮ポリシー](/handbook/people-policies/)
-- HelpLab を通じて**チームメンバー関係**に連絡する
+- Compass を通じて**チームメンバー関係**に連絡する
 
 ---
 

@@ -3,11 +3,11 @@ title: "クリティカルシステム階層化方法論"
 summary: "The purpose of the Critical System Tiering Methodology is to support GitLab in identifying and understanding the specific systems utilized across the organization that are considered critical to serving GitLab's Customers."
 controlled_document: true
 upstream_path: /handbook/security/security-assurance/security-risk/storm-program/critical-systems/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T11:04:27+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:05:51+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T15:34:33-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -18,7 +18,7 @@ lastmod: "2026-07-08T15:34:33-07:00"
 
 ## 範囲
 
-クリティカルシステム階層化方法論は、[Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)（社内のみ）で追跡される GitLab 全体で使用されるすべてのシステムに適用されます。
+クリティカルシステム階層化方法論は、[Tech Stack](https://app.serval.com/new-request)（社内のみ）で追跡される GitLab 全体で使用されるすべてのシステムに適用されます。
 
 ## 役割と責任
 
@@ -109,7 +109,7 @@ GitLab 全体で使用されるシステムを階層化することにより、�
 
 ### Critical System Tier の維持
 
-既存のシステムの Critical System Tier は定期的に検証されます。システムの指定された階層は、GitLab で使用されるすべてのシステムの Single Source of Truth である [Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)（社内のみ）で確認できます。
+既存のシステムの Critical System Tier は定期的に検証されます。システムの指定された階層は、GitLab で使用されるすべてのシステムの Single Source of Truth である [Tech Stack](https://app.serval.com/new-request)（社内のみ）で確認できます。
 
 ## 例外
 

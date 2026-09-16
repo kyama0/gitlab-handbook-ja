@@ -2,11 +2,11 @@
 title: "サステナビリティ"
 description: "サステナビリティおよび ESG に関連する情報とプロセス"
 upstream_path: /handbook/legal/esg/
-upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:09:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-21T14:08:51-07:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## クイックリンク
@@ -199,7 +199,7 @@ GitLab は [GiveLab](#givelab) を通じて通年のボランティア活動を�
 
 #### ボランティア休暇のリクエスト方法
 
-ボランティアのために休暇を取るチームメンバーは、事前にマネージャーに休暇を伝えるべきです。ボランティア休暇をリクエストするには、ハンドブックで概説されている [有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/) の手順に従い、懸念があれば HelpLab を通じて People Operations に連絡してください。有給休暇のリクエスト方法のステップバイステップガイドは [こちら](https://docs.google.com/document/d/1CZvTbPfvCOHDqA9riifMNNN0wsZyaxIql14cj_M5TK8/edit?tab=t.0) で確認できます。ボランティア休暇は、許容されるボランティア活動に向けて、私たちの [GitLab Philanthropy Policy](/handbook/legal/philanthropy-policy/) を遵守して使用すべきであることに注意してください。
+ボランティアのために休暇を取るチームメンバーは、事前にマネージャーに休暇を伝えるべきです。ボランティア休暇をリクエストするには、ハンドブックで概説されている [有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/) の手順に従い、懸念があれば Compass を通じて People Operations に連絡してください。有給休暇のリクエスト方法のステップバイステップガイドは [こちら](https://docs.google.com/document/d/1CZvTbPfvCOHDqA9riifMNNN0wsZyaxIql14cj_M5TK8/edit?tab=t.0) で確認できます。ボランティア休暇は、許容されるボランティア活動に向けて、私たちの [GitLab Philanthropy Policy](/handbook/legal/philanthropy-policy/) を遵守して使用すべきであることに注意してください。
 
 #### 参加に関する経費と払い戻し
 

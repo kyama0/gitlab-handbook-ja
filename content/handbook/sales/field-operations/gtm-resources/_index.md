@@ -2,11 +2,11 @@
 title: "Go to Market"
 description: "オペレーション、手順、ドキュメント"
 upstream_path: /handbook/sales/field-operations/gtm-resources/
-upstream_sha: 46180fa3686c8baa55f91bf32c6e1d676eefd475
-translated_at: "2026-08-03T06:08:55+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:07:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T12:14:03+01:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ---
@@ -19,7 +19,7 @@ lastmod: "2026-07-28T12:14:03+01:00"
 - [Marketing](https://gitlab.com/groups/gitlab-com/marketing/-/issues) - ウェブサイト、製品、デザイン、イベント、ウェブキャスト、リードルーティング、ソーシャルメディア、Developer Relations に関連するすべての Issue
 - [Customer Success SA Triage](https://gitlab.com/gitlab-com/customer-success/sa-triage-boards) - 技術的プリセールスリクエスト
 - [Salesforce での社内サポート依頼](/handbook/sales/field-operations/requesting-internal-support/)
-- [HelpLab](https://helplab.gitlab.systems/esc)（Okta 経由） - Salesforce のバグ修正と機能リクエスト（IT）
+- [Compass](https://app.serval.com/new-request)（Okta 経由） - Salesforce のバグ修正と機能リクエスト（IT）
 
 ### Slack: 有用な Slack チャンネルのリスト
 

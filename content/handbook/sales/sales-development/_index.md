@@ -2,9 +2,9 @@
 title: セールス開発
 description: "このページの目的は、セールス開発組織のハンドブック上のホームページとして機能することです。"
 upstream_path: /handbook/sales/sales-development/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-lastmod: "2026-09-10T08:59:51+01:00"
-translated_at: "2026-09-10T11:11:28+00:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-16T21:07:55+00:00"
 translator: claude
 stale: false
 ---
@@ -68,7 +68,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 | チャネル | 使用目的 |
 | ------- | ------------ |
 | [Marketing Operations Team](https://gitlab.enterprise.slack.com/archives/CGL35F20G) | MOPs 所有ツールに関するバグや問題: Cognism、ZoomInfo、UserGems、Outreach、6Sense |
-| [CorpSec Team](https://gitlab.enterprise.slack.com/archives/CK4EQH50E) | GitLab、Okta、ラップトップ、オフボーディング/オンボーディングに関するヘルプ。[HelpLab チケットはこちら](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=e3812e68ebe5a210725cf4f2bad0cd53) |
+| [CorpSec Team](https://gitlab.enterprise.slack.com/archives/CK4EQH50E) | GitLab、Okta、ラップトップ、オフボーディング/オンボーディングに関するヘルプ。[Compass チケットはこちら](https://app.serval.com/new-request) |
 | [Sales Dev Operations Team](https://gitlab.enterprise.slack.com/archives/C2V1KLY0Z) | 日常的なすべて — イテレーションと改善のアイデア。`@Mona` または `@Sam` にタグ付けしてください |
 | [UserGems Feedback](https://gitlab.enterprise.slack.com/archives/C07Q6GHJ2AV) | UserGems の改善 |
 | [6Sense Help](https://gitlab.enterprise.slack.com/archives/C04L7EV24PK) | 6Sense に関する質問 |
@@ -1536,7 +1536,7 @@ BDR および SDR として、オンボーディングはマーケティング�
 
 ### 組織変更 Issue
 
-組織変更 Issue は、[こちらの基準](/handbook/people-group/promotions-transfers/#organization-change-checklist)に従って、People Operations チームによって移行日に開始されます。質問がある場合は [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) 経由で People Operations に連絡してください。
+組織変更 Issue は、[こちらの基準](/handbook/people-group/promotions-transfers/#organization-change-checklist)に従って、People Operations チームによって移行日に開始されます。質問がある場合は [Compass](https://app.serval.com/new-request) 経由で People Operations に連絡してください。
 
 以下のいずれかが真の場合、People Operations は組織変更 Issue を開きます: 部門に変更がある（例: SDR/BDR が SMB セールスチームに移動）、Individual Contributor から Manager に変わる、Manager から Individual Contributor に変わる、チームを変更する。
 
@@ -1552,6 +1552,6 @@ XDR が長期にわたって不在になる場合は、適切なプロセスに�
 
 完全なオフボーディングプロセス（自発的および非自発的）は[オフボーディングハンドブックページ](/handbook/people-group/offboarding/#offboarding)で確認できます。
 
-**マネージャーオフボーディングチェックリスト:** People チームの[オフボーディング Issue](/handbook/people-group/offboarding/#offboarding) のすべての 'Manager' タスクを完了。質問？`#managers` Slack チャネルを使用するか、HelpLab 経由で People Operations チームに連絡してください。
+**マネージャーオフボーディングチェックリスト:** People チームの[オフボーディング Issue](/handbook/people-group/offboarding/#offboarding) のすべての 'Manager' タスクを完了。質問？`#managers` Slack チャネルを使用するか、Compass 経由で People Operations チームに連絡してください。
 
 **Sales Dev 引き継ぎ Issue:** チームメンバーが GitLab を離れる、Sales Dev 組織を離れる、または別の BDR チームに転送される場合、退職するチームのマネージャーは [Sales Dev Handover Issue](https://gitlab.com/gitlab-com/marketing/sales-development/-/blob/main/.gitlab/issue_templates/Exit_handover_template.md?ref_type=heads) を作成する必要があります。

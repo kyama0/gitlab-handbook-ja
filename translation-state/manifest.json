@@ -1234,19 +1234,19 @@
     },
     "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neurodiversity-resources.md": {
       "path": "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neurodiversity-resources.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "67c282fdc1f0b9458efdec83a75fc32c1db3176b02e171eea94a27ef69e41e99",
-      "upstream_committed_at": "2026-02-09T20:42:10+00:00"
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:13:21+00:00",
+      "model": "codex",
+      "input_hash": "1233542ed038f084ce3cf1e01c80ea3fbdd5942071a7fc81d3ca3a3048df3133",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neuroinclusion-in-practice.md": {
       "path": "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neuroinclusion-in-practice.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "79f0f484d4d84ac56c7b37a152e8f9f47863f72b9e3f0971407e5c506195c5ca",
-      "upstream_committed_at": "2025-12-15T07:06:38-07:00"
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:13:21+00:00",
+      "model": "codex",
+      "input_hash": "bcabcd34aa791c488fb837c0ac87a178d13202a4433eb65f58c3833bb923f336",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/understanding-neurodivergence.md": {
       "path": "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/understanding-neurodivergence.md",
@@ -15906,11 +15906,11 @@
     },
     "content/handbook/leadership/_index.md": {
       "path": "content/handbook/leadership/_index.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:13:21+00:00",
       "model": "codex",
-      "input_hash": "8b4542ae3fcafa90f80563cfb6002ba88b7b6721e850398b29064c67cec08e74",
-      "upstream_committed_at": "2026-08-19T14:13:18-04:00"
+      "input_hash": "1b48558084e608217573cd73b3423b9549363a9c7835bb425b98c1769eb8ee42",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/leadership/biggest-tailwinds.md": {
       "path": "content/handbook/leadership/biggest-tailwinds.md",
@@ -16282,11 +16282,11 @@
     },
     "content/handbook/legal/esg/_index.md": {
       "path": "content/handbook/legal/esg/_index.md",
-      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
-      "translated_at": "2026-07-22T06:32:52+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:09:55+00:00",
       "model": "codex",
-      "input_hash": "4e19f670d0a72f1e684951a172e1942887b1b9599fc3834b1fd52db1e50e73f2",
-      "upstream_committed_at": "2026-07-21T14:08:51-07:00"
+      "input_hash": "6106f1da6207c8e15c28369029957213032fb6617f169e1615358849130efb22",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/legal/esg/earth-month/_index.md": {
       "path": "content/handbook/legal/esg/earth-month/_index.md",
@@ -18098,11 +18098,11 @@
     },
     "content/handbook/marketing/developer-relations/workflows-tools/_index.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/_index.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:09:55+00:00",
       "model": "codex",
-      "input_hash": "d4b718fa71831a33620be0fdbceca527fffc312994125f209cd27847e509c488",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "0ca898750f0f7e44c8c601d8ae378e1cd8befe67a2d53522ba86fce233a6eb1c",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/marketing/developer-relations/workflows-tools/cloud-resources.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/cloud-resources.md",
@@ -18970,11 +18970,11 @@
     },
     "content/handbook/marketing/marketing-operations/youtube/index.md": {
       "path": "content/handbook/marketing/marketing-operations/youtube/index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:08:29+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:09:55+00:00",
       "model": "codex",
-      "input_hash": "edbd6b50413e427cf446720ef219209d9b348c79b542f1e4720c36a1b25ef336",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "beabdfa90c56c1394381a1511bc0dc4dcb9cbe55f38c1c1ff6d0c252abe0d6b6",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/marketing/marketing-operations/zoominfo.md": {
       "path": "content/handbook/marketing/marketing-operations/zoominfo.md",
@@ -19114,11 +19114,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
-      "translated_at": "2026-09-03T22:10:19+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:05:51+00:00",
       "model": "codex",
-      "input_hash": "cafd60b3f6f4ec87c9b23ead3dfde61740f792f1b887523cbaad1a513f932e02",
-      "upstream_committed_at": "2026-09-03T11:50:52+02:00"
+      "input_hash": "1c9e8b874b8861e447d30576ac497a189629dc185d5d213e49b59f6634ac9449",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -23234,11 +23234,11 @@
     },
     "content/handbook/security/security-assurance/security-risk/third-party-risk-management.md": {
       "path": "content/handbook/security/security-assurance/security-risk/third-party-risk-management.md",
-      "upstream_sha": "ad217b024ba77ae34e6f41cb4a28107135c5dba5",
-      "translated_at": "2026-08-01T15:25:19+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:05:51+00:00",
       "model": "codex",
-      "input_hash": "1e4f421389f4f3219430cb17d029febf90c4dcb0a36a18a8e7fbe8af933e2ecf",
-      "upstream_committed_at": "2026-07-30T16:25:07-05:00"
+      "input_hash": "9593a00be2ec877ee70093b624eb66f3bddd48a51c399eb2aca174e426df43fe",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/security/security-assurance/security-risk/storm-program/_index.md": {
       "path": "content/handbook/security/security-assurance/security-risk/storm-program/_index.md",
@@ -23250,19 +23250,19 @@
     },
     "content/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis.md": {
       "path": "content/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T05:30:11Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "483e40d7633f59f160699f2c2c42db763beb4413c4f7105ed506ba4d8b6a60b0",
-      "upstream_committed_at": "2025-12-11T13:59:38-05:00"
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:05:51+00:00",
+      "model": "codex",
+      "input_hash": "fb8923866d818782b4bcc8abe8ac354bc278e1e430d6985f2d94e2b27e49b39d",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/security/security-assurance/security-risk/storm-program/critical-systems.md": {
       "path": "content/handbook/security/security-assurance/security-risk/storm-program/critical-systems.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T11:04:27+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:05:51+00:00",
       "model": "codex",
-      "input_hash": "56301c324c9531b8e41f20ec33fc8eea2c2f86702c6c0ff6bd58f2610094649e",
-      "upstream_committed_at": "2026-07-08T15:34:33-07:00"
+      "input_hash": "78bcd88498703eba03e62265076c6c7c6aa03d5b3fa2986ebba6d5e2b422e39a",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/security/security-assurance/security-compliance/_index.md": {
       "path": "content/handbook/security/security-assurance/security-compliance/_index.md",
@@ -28146,11 +28146,11 @@
     },
     "content/handbook/sales/field-operations/gtm-resources/_index.md": {
       "path": "content/handbook/sales/field-operations/gtm-resources/_index.md",
-      "upstream_sha": "46180fa3686c8baa55f91bf32c6e1d676eefd475",
-      "translated_at": "2026-08-03T06:08:55+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:07:55+00:00",
       "model": "codex",
-      "input_hash": "9aad1682bc2c3658cf1ae6a362b3bfb6cdc074bed0e59abed1aefd800ed0a5d1",
-      "upstream_committed_at": "2026-07-28T12:14:03+01:00"
+      "input_hash": "6bd7212cf25045e69ae2dbb612c8ac10efa128c321b101bd100ab25dae6eda91",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md": {
       "path": "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md",
@@ -28226,11 +28226,11 @@
     },
     "content/handbook/sales/field-operations/customer-success-strategy/cs-monthly-metrics-dashboard.md": {
       "path": "content/handbook/sales/field-operations/customer-success-strategy/cs-monthly-metrics-dashboard.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-12T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b6036a080c4294eb7385fe831383cbd4955d273a5222d3b5dd7c581f3ebc4387",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:07:55+00:00",
+      "model": "codex",
+      "input_hash": "8079591d55416a464f963fac4b496ca3c37ef9cf2818dab1b23092c99a9de888",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/sales/field-operations/customer-success-strategy/customer-success-strategy-analytics.md": {
       "path": "content/handbook/sales/field-operations/customer-success-strategy/customer-success-strategy-analytics.md",
@@ -30250,11 +30250,11 @@
     },
     "content/handbook/product/product-management/product-manager-role.md": {
       "path": "content/handbook/product/product-management/product-manager-role.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b2ed5411b7ebd3421a69eae5d8e94bb81528ad51d6a7307b406286bef6f94b2f",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:07:55+00:00",
+      "model": "codex",
+      "input_hash": "dc72c9306963dcdc0606f846be12219d54f38129c5c768e145bc865f47e9ceb6",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/product/product-leaders/_index.md": {
       "path": "content/handbook/product/product-leaders/_index.md",
@@ -34650,11 +34650,11 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:54:55+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:13:21+00:00",
       "model": "codex",
-      "input_hash": "131f5554cea6a4573fc22057dae37a2f5c7a41e14da1bb8be81b0c46469ab702",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "a869fe4d9e269db73ec68dc20b4b1e0eb4420e3111229ee8d33cf8a85f3fab26",
+      "upstream_committed_at": "2026-09-15T14:25:09-04:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/_index.md",
@@ -36842,11 +36842,11 @@
     },
     "content/handbook/marketing/growth-marketing/regional-marketing/_index.md": {
       "path": "content/handbook/marketing/growth-marketing/regional-marketing/_index.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T20:55:21+09:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:09:55+00:00",
       "model": "codex",
-      "input_hash": "e5412e121248696153f453eec0b9750740360a45486905b4c43be599a4f640f7",
-      "upstream_committed_at": "2026-08-31T14:37:56-06:00"
+      "input_hash": "6cb4c46a2919ec8f643e80da2e1311c4f2937a520827bb954ed284951316b48d",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events.md": {
       "path": "content/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events.md",
@@ -36930,11 +36930,11 @@
     },
     "content/handbook/sales/sales-development/_index.md": {
       "path": "content/handbook/sales/sales-development/_index.md",
-      "upstream_sha": "7a4e62958b31234a80d386bf4b7c8dd855df2cb8",
-      "translated_at": "2026-09-10T11:11:28+00:00",
+      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
+      "translated_at": "2026-09-16T21:07:55+00:00",
       "model": "codex",
-      "input_hash": "5933dbc89af447a8715c9eba709ddf8142fa00392b2ba6e1701079fc709b775a",
-      "upstream_committed_at": "2026-09-10T08:59:51+01:00"
+      "input_hash": "b8fdf114408cb2cf06cb68fe328e73a30dcb85892df358f3ab9afba14953ccc5",
+      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/content/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/content/_index.md",

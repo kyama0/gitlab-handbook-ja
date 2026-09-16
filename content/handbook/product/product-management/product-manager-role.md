@@ -2,9 +2,9 @@
 title: GitLab におけるプロダクトマネージャーの役割
 description: "このページでは、GitLab でプロダクトマネージャーとして働くための概要と、それに役立つリソースへのリンクを掲載しています。"
 upstream_path: /handbook/product/product-management/product-manager-role/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-lastmod: "2026-05-22T14:47:44+02:00"
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+lastmod: "2026-09-13T04:09:59-04:00"
+translated_at: "2026-09-16T21:07:55+00:00"
 translator: claude
 stale: false
 ---
@@ -67,7 +67,7 @@ PM として、人々から頼まれるすべてのことをやろうとする�
 * 一般的な質問は `#questions` で尋ねるべきです。
 * Git 固有の質問は `#git-help` で尋ねるべきです。
 * MR に問題がある場合は、`#mr-buddies` で尋ねてください。
-* HR の質問は HelpLab で尋ねるべきです。
+* HR の質問は Compass で尋ねるべきです。
 * リリース投稿関連のことはすべて、[リリース投稿ハンドブック](https://docs.gitlab.com/development/documentation/release_notes/)および `#release-post` で見つけることができます。
 
 ### 職務要件
@@ -122,7 +122,7 @@ _[ソースファイル](https://docs.google.com/spreadsheets/d/19gAgPJVdXfBpXiF
 
 プロダクトマネージャーのオンボーディングは、2 つの関連する Issue テンプレートで構成されています。
 
-[GitLab People Operations オンボーディング Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) は、新入社員の入社日のおよそ 4 〜 10 営業日前に People Operations によって生成されます。詳細は [GitLab オンボーディングプロセス](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/)で確認できます。この Issue は採用マネージャーに割り当てられ、採用マネージャーは自身のタスクを実行した後、新しいプロダクトマネージャーの採用者に割り当てます。この Issue にはプロダクト固有のセクションがあり、最初の 4 週間以内に完了する必要があるクラリカルなプロダクトタスク（例: チームとの紹介コールのスケジュール設定）が含まれています。採用マネージャーは、Issue 内で割り当てられた People Operations チームメンバーにメンションするか、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=2a7cb781478c069067429ee0026d43c2) で助けを求めることができます。プロダクトマネージャーはこの一般的なオンボーディングに 4 週間以上を費やすべきではなく、必要に応じてテンプレート内の項目に優先順位をつけて時間的なコミットメントを管理するためにマネージャーと相談すべきです。
+[GitLab People Operations オンボーディング Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) は、新入社員の入社日のおよそ 4 〜 10 営業日前に People Operations によって生成されます。詳細は [GitLab オンボーディングプロセス](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/)で確認できます。この Issue は採用マネージャーに割り当てられ、採用マネージャーは自身のタスクを実行した後、新しいプロダクトマネージャーの採用者に割り当てます。この Issue にはプロダクト固有のセクションがあり、最初の 4 週間以内に完了する必要があるクラリカルなプロダクトタスク（例: チームとの紹介コールのスケジュール設定）が含まれています。採用マネージャーは、Issue 内で割り当てられた People Operations チームメンバーにメンションするか、[Compass](https://app.serval.com/new-request) で助けを求めることができます。プロダクトマネージャーはこの一般的なオンボーディングに 4 週間以上を費やすべきではなく、必要に応じてテンプレート内の項目に優先順位をつけて時間的なコミットメントを管理するためにマネージャーと相談すべきです。
 
 さらに、プロダクトチームには[最初の 100 日テンプレート](https://gitlab.com/gitlab-com/Product/-/blob/main/.gitlab/issue_templates/PM-onboarding-first-100-days.md)があります。
 

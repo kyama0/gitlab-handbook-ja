@@ -5,11 +5,11 @@ tags:
   - security_standard
   - security_standard_sasr
 upstream_path: /handbook/security/security-assurance/security-risk/third-party-risk-management/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-translated_at: "2026-08-01T15:25:19+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:05:51+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-30T16:25:07-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 {{< label name="可視性: 監査" color="#E24329" >}}
@@ -419,7 +419,7 @@ TSV の完了は、特定された不備の深刻度、送信されるデータ�
 
 ### 新システムのオンボーディングと Post-Implementation Controls (PIC)
 
-私たちの TPRM アセスメントのアウトプットとして、Security Risk チームは [Information Technology](/handbook/business-technology) と提携して、さまざまな GitLab 機能をサポートする新しいアプリケーションの使用、管理、統合をインベントリ化しています。このインベントリは [Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)、つまりビジネスをサポートするテクノロジーに関する GitLab の[信頼できる唯一の情報源（SSOT）](/handbook/values/#single-source-of-truth)内に存在します。要件は、各システムの Critical System Tier に合わせて定義されます。GitLab が Critical System Tiering (CST) をどのように活用しているかについての詳細は、[CST ハンドブックページ](/handbook/security/security-assurance/security-risk/storm-program/critical-systems/)で確認できます。
+私たちの TPRM アセスメントのアウトプットとして、Security Risk チームは [Information Technology](/handbook/business-technology) と提携して、さまざまな GitLab 機能をサポートする新しいアプリケーションの使用、管理、統合をインベントリ化しています。このインベントリは [Tech Stack](https://app.serval.com/new-request)、つまりビジネスをサポートするテクノロジーに関する GitLab の[信頼できる唯一の情報源（SSOT）](/handbook/values/#single-source-of-truth)内に存在します。要件は、各システムの Critical System Tier に合わせて定義されます。GitLab が Critical System Tiering (CST) をどのように活用しているかについての詳細は、[CST ハンドブックページ](/handbook/security/security-assurance/security-risk/storm-program/critical-systems/)で確認できます。
 
 #### Post-Implementation Controls (PIC)
 
@@ -432,7 +432,7 @@ Post-Implementation Controls (PIC) プロセスは、go-live 後に新しいシ�
 - **Application Integrations** — go-live 時に確立された API 接続を文書化し、API キーが GitLab ポリシーに従って管理されていることを確認する。
 - **Compliance Scope** — システムに関連するコンプライアンス義務を確認する。
 
-完了した PIC Issue は、ベンダーの [Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications) レコードにリンクされます。質問は #security_help チャンネルの @security-risk に問い合わせることができます。
+完了した PIC Issue は、ベンダーの [Tech Stack](https://app.serval.com/new-request) レコードにリンクされます。質問は #security_help チャンネルの @security-risk に問い合わせることができます。
 
 コントロールドメインで GitLab の要件に対する不備が特定され、代替コントロールが存在しない場合、Security Risk は [TPRM Security Notice](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/third-party-vendor-security-management/-/issues/new?issuable_template=Security%20Notice%20%20Template) を作成し、[TPRM Security Notice Process](#tprm-security-notice-process) に従って Business Owner に承認を求めます。
 

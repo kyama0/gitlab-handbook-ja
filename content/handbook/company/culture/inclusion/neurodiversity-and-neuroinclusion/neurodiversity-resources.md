@@ -2,12 +2,12 @@
 title: "サポート、合理的配慮＆リソース"
 description: "GitLab において、神経多様性に対応した仕事のためのサポートにアクセスし、合理的配慮を申請し、リソースを見つける方法。"
 page_type: handbook
-upstream_path: "/company/culture/inclusion/neurodiversity-and-neuroinclusion/neurodiversity-resources/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_path: "/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neurodiversity-resources/"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:13:21+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## サポート、合理的配慮＆リソース
@@ -18,7 +18,7 @@ lastmod: "2026-02-09T20:42:10+00:00"
 
 > **クイックリンク:**
 >
-> - [HelpLab を通じて合理的配慮を申請する](https://helplab.gitlab.systems/)
+> - [Compass を通じて合理的配慮を申請する](https://app.serval.com/new-request)
 > - [グローバルアクセシビリティ＆合理的配慮ポリシー](/handbook/people-policies/#global-accessibility-and-accommodations-policy)
 > - [障害＆神経多様性 TMRG に参加する](/handbook/company/culture/inclusion/tmrg-tmag/erg-gitlab-diversability/)
 > - [Modern Health サポートにアクセスする](https://about.gitlab.com/benefits/)
@@ -77,7 +77,7 @@ G--> |いいえ| K[合理的配慮とマネージャーへのアプローチの�
 
 ## チームメンバーおよびマネージャー以上向けリソース
 
-- [Modern Health](/handbook/total-rewards/benefits/modern-health/) は、神経多様性コミュニティの人々をサポートするチームメンバーとマネージャーのためのコーチングセッションを提供しています。チームメンバーは Modern Health プラットフォームを通じてコーチングセッションをスケジュールできます。セッションのスケジューリングに関してご不明な点は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)にお問い合わせください。
+- [Modern Health](/handbook/total-rewards/benefits/modern-health/) は、神経多様性コミュニティの人々をサポートするチームメンバーとマネージャーのためのコーチングセッションを提供しています。チームメンバーは Modern Health プラットフォームを通じてコーチングセッションをスケジュールできます。セッションのスケジューリングに関してご不明な点は、[Compass](https://app.serval.com/new-request)を通じてお問い合わせください。
 - [人事管理の実践に神経多様性を組み込む方法](https://hrzone.com/how-to-embed-neurodiversity-into-your-people-management-practices/)
 - [自閉症アドボカシーリソース](https://autisticadvocacy.org/resources/accessibility/)
 - [認定神経多様性職場](https://ibcces.org/certified-neurodiverse-workplace/)

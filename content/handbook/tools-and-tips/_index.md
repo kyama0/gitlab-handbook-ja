@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
-translated_at: "2026-09-03T22:10:19+09:00"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:05:51+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-03T11:50:52+02:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 概要
@@ -569,7 +569,7 @@ GitLab Team Meetings カレンダーはすべてのチームメンバーが利�
 
 新しいチームミーティングを作成する場合は、GitLab Team Meetings カレンダーに [追加](#adding-an-event-to-the-gitlab-team-meetings-calendar) してください
 
-GitLab Team Meetings カレンダーに関する質問、リクエスト、変更については、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) 経由で People Operations Team にお問い合わせください。
+GitLab Team Meetings カレンダーに関する質問、リクエスト、変更については、[Compass](https://app.serval.com/new-request) 経由で People Operations Team にお問い合わせください。
 
 ##### GitLab Team Meetings カレンダーへのイベントの追加 {#adding-an-event-to-the-gitlab-team-meetings-calendar}
 

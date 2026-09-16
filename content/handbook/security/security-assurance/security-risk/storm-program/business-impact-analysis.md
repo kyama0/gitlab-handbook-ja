@@ -3,11 +3,11 @@ title: "ビジネスインパクト分析 (Business Impact Analysis)"
 description: "Security Risk チームによって実施されるビジネスインパクト分析に関する情報"
 controlled_document: true
 upstream_path: /handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T05:30:11Z"
+upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
+translated_at: "2026-09-16T21:05:51+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-11T13:59:38-05:00"
+lastmod: "2026-09-13T04:09:59-04:00"
 ---
 
 ## 目的
@@ -47,7 +47,7 @@ BIA のアウトプット（新しいシステムに対する Critical System Ti
 
 ## レポート
 
-BIA のアウトプットは、HelpLab の [Tech Stack Update Form](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab) を通じて Add a New System リクエストを送信する際に報告されます。この情報を報告するために使用されるフィールドは `critical_system_tier` です。
+BIA のアウトプットは、Compass の [Tech Stack Update Form](https://app.serval.com/new-request) を通じて Add a New System リクエストを送信する際に報告されます。この情報を報告するために使用されるフィールドは `critical_system_tier` です。
 
 ## 例外
 
