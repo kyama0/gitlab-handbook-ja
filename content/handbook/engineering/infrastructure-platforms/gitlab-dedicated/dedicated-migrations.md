@@ -2,9 +2,9 @@
 title: Dedicated Migration チーム
 description: Geo マイグレーションを Dedicated へスムーズに進めることに注力するチーム。ツール、プロセス、エンジニアリングを担当します
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-lastmod: "2026-08-26T09:57:10+10:00"
-translated_at: "2026-09-04T12:11:57+09:00"
+upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
+lastmod: "2026-09-16T15:42:58-06:00"
+translated_at: "2026-09-17T21:03:55+00:00"
 translator: claude
 stale: false
 ---
@@ -139,7 +139,7 @@ Dedicated Migrations は実行中の第一線のトラブルシューティン�
 
 ##### 2 週間ウィンドウ外
 
-サポートは主に Request for Help (RFH) チケットを通じて非同期で行われます。`@fviegas` によれば、すべての Dedicated Migrations RFH は priority 1 と見なされます。同期的なお客様通話は個別の対応として扱われ、チームの空き状況に基づき Steve Denham または Oriol Lluch Parellada のいずれかの承認が必要です。
+サポートは主に Request for Help (RFH) チケットを通じて非同期で行われます。`@fviegas` によれば、すべての Dedicated Migrations RFH は priority 1 と見なされます。同期的なお客様通話は個別の対応として扱われ、チームの空き状況に基づき Matt Kirkevold または Oriol Lluch Parellada のいずれかの承認が必要です。
 
 ##### RFH プロセス
 

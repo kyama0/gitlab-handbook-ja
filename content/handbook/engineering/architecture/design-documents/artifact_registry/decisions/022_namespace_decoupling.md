@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-lastmod: "2026-08-17T15:27:08+02:00"
-translated_at: "2026-09-04T11:43:17+09:00"
+upstream_sha: "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1"
+lastmod: "2026-09-15T11:46:43+02:00"
+translated_at: "2026-09-17T21:17:04+00:00"
 translator: claude
 stale: false
 ---
@@ -69,7 +69,10 @@ Artifact Registry に、3 つのプロパティを持つ内部 `namespaces` エ�
    変わらない。GCS/S3 のストレージバケット名の動作に類似している。
 2. **仮想アンカータプル**: ネームスペースを外部エンティティにリンクする `(platform, entity_type, entity_id)` タプル。
    そのセマンティクスを解釈することはない
-3. **内部 UUIDv7 ID**: データベースのパーティショニングとすべての内部クエリに使用される。外部に公開されることは決してない
+3. **UUIDv7 ID**: データベースのパーティショニング、内部クエリ、および認可におけるネームスペースの安定したリソース識別子として使用します。
+   ロール割り当てが対象とするリソースを識別します（[ADR-021](021_authorization.md#role-assignment)）。これはアドレス指定用の識別子ではありません。
+   クライアント向け URL では、スラッグが唯一のネームスペース識別子であり、内部 GitLab API では UUID をキーにします
+   （[ADR-009](009_api_design.md)）
 
 Organization は引き続き最初のアンカー型です。この提案は
 [ADR-001](001_organizations_as_anchor_point.md) を変更しません。Artifact Registry と

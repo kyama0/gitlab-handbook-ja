@@ -1,11 +1,11 @@
 ---
 title: "Dedicated Commercial（旧称 Environment Automation）"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
+translated_at: "2026-09-17T21:03:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-12T12:24:04+00:00"
+lastmod: "2026-09-16T15:42:58-06:00"
 ---
 
 ## 概要
@@ -19,7 +19,7 @@ Dedicated Commercial は、[Dedicated グループ](/handbook/engineering/infras
 
 {{< team-by-manager-slug "o-lluch" >}}
 
-{{< team-by-manager-slug "denhams" >}}
+{{< team-by-manager-slug "mckgl" >}}
 
 ## Act 2 後の機能別チーム
 
@@ -29,11 +29,11 @@ R&D 部門は、3 〜 4 人のエンジニアで構成され、機能領域に�
 
 | 機能別チーム | サービス提供先 | スコープとオーナーシップ | 主なアライメント | マネージャー | ファンクショナルリード |
 |---|---|---|---|---|---|
-| **Platform Integration** | GitLab モジュール開発チーム | 外部製品やモジュール型 GitLab 機能を Dedicated に導入する統合経路を所有します。これには Dedicated との結合、本番運用への対応、統合経路のテスト戦略が含まれます。 | Theseus と Test Automation Framework。 | 暫定: {{< member-by-gitlab "o-olluch" >}}| {{< member-by-gitlab "bmckitrick" >}} |
-| **Platform Resilience** | Dedicated 運用チーム | 個々のテナント向けのレジリエンスおよび自己修復製品を所有します。これにはディザスタリカバリ、オートスケーリング、自動キャパシティプランニング、レート制限のほか、人の介入を最小限に抑えながらインスタンスが障害を検知、吸収、復旧し、同時にインフラストラクチャのコスト効率を維持できるようにする仕組みが含まれます。 | Dedicated Orchestration Automation と Cloud Cost Utilization。 |  {{< member-by-gitlab "denhams" >}}| {{< member-by-gitlab "ktchernov" >}} |
-| **Dedicated Responder Automation** | Dedicated の SRE および DevOps 対応者 | Dedicated インシデントに対応するワークフローとツールを所有します。これにはシグナルとアラートの情報付加、アラートルーティング、アラート集約、自動トラブルシューティングが含まれます。 | Production Engineering の Incident Management および Signals/Observability。 |  {{< member-by-gitlab "o-olluch" >}}| {{< member-by-gitlab "troblot" >}} |
-| **Dedicated Orchestration Automation** | Dedicated オペレーターおよび DevOps チーム | 中核となるオーケストレーションプラットフォームと変更管理の自動化を所有します。これにはジョブワークフロー、基盤となるインフラストラクチャの変更、メンテナンス操作、テナントモデルのセグメントが含まれます。Platform Resilience、Responder Automation、Platform Integration はこのプラットフォームを利用し、プラットフォーム内の各ワークフローと設定を所有します。 | Switchboard Orchestration APIs。また、インターフェースが重なる領域では Service Delivery Platform および Cells の運用と連携します。 | {{< member-by-gitlab "o-olluch" >}}| {{< member-by-gitlab "SamirHafez" >}} |
-| **Dedicated Commercial Features** | Dedicated Product および Dedicated の顧客 | 商用の Dedicated 機能ロードマップと本番運用可能な実装を所有します。これには BYOD、ネットワーク設定、Geo Proxy などの顧客向けインフラストラクチャおよび分離機能が含まれます。 | アーティファクトの注入、統合、本番品質について Platform Integration および Dedicated Orchestration Automation と連携します。 |   {{< member-by-gitlab "denhams" >}}| {{< member-by-gitlab "vmondo" >}} |
+| **Platform Integration** | GitLab モジュール開発チーム | 外部製品やモジュール型 GitLab 機能を Dedicated に導入する統合経路を所有します。これには Dedicated との結合、本番運用への対応、統合経路のテスト戦略が含まれます。 | Theseus と Test Automation Framework。 | 暫定: {{< member-by-gitlab "o-lluch" >}}| {{< member-by-gitlab "bmckitrick" >}} |
+| **Platform Resilience** | Dedicated 運用チーム | 個々のテナント向けのレジリエンスおよび自己修復製品を所有します。これにはディザスタリカバリ、オートスケーリング、自動キャパシティプランニング、レート制限のほか、人の介入を最小限に抑えながらインスタンスが障害を検知、吸収、復旧し、同時にインフラストラクチャのコスト効率を維持できるようにする仕組みが含まれます。 | Dedicated Orchestration Automation と Cloud Cost Utilization。 |  {{< member-by-gitlab "mckgl" >}}| {{< member-by-gitlab "ktchernov" >}} |
+| **Dedicated Responder Automation** | Dedicated の SRE および DevOps 対応者 | Dedicated インシデントに対応するワークフローとツールを所有します。これにはシグナルとアラートの情報付加、アラートルーティング、アラート集約、自動トラブルシューティングが含まれます。 | Production Engineering の Incident Management および Signals/Observability。 |  {{< member-by-gitlab "o-lluch" >}}| {{< member-by-gitlab "troblot" >}} |
+| **Dedicated Orchestration Automation** | Dedicated オペレーターおよび DevOps チーム | 中核となるオーケストレーションプラットフォームと変更管理の自動化を所有します。これにはジョブワークフロー、基盤となるインフラストラクチャの変更、メンテナンス操作、テナントモデルのセグメントが含まれます。Platform Resilience、Responder Automation、Platform Integration はこのプラットフォームを利用し、プラットフォーム内の各ワークフローと設定を所有します。 | Switchboard Orchestration APIs。また、インターフェースが重なる領域では Service Delivery Platform および Cells の運用と連携します。 | {{< member-by-gitlab "o-lluch" >}}| {{< member-by-gitlab "SamirHafez" >}} |
+| **Dedicated Commercial Features** | Dedicated Product および Dedicated の顧客 | 商用の Dedicated 機能ロードマップと本番運用可能な実装を所有します。これには BYOD、ネットワーク設定、Geo Proxy などの顧客向けインフラストラクチャおよび分離機能が含まれます。 | アーティファクトの注入、統合、本番品質について Platform Integration および Dedicated Orchestration Automation と連携します。 |   {{< member-by-gitlab "mckgl" >}}| {{< member-by-gitlab "vmondo" >}} |
 
 ## 私たちとの連携
 

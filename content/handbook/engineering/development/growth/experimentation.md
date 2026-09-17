@@ -2,11 +2,11 @@
 title: 実験（Experimentation）
 description: "GitLab における実験の作成と実施に関する情報。"
 upstream_path: "/handbook/engineering/development/growth/experimentation/"
-upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
-translated_at: "2026-04-28T05:15:25Z"
+upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
+translated_at: "2026-09-17T21:05:53+00:00"
 translator: claude
 stale: false
-lastmod: "2025-07-02T12:41:38-07:00"
+lastmod: "2026-09-14T14:14:34-04:00"
 ---
 
 ### 実験（Experimentation）
@@ -132,7 +132,7 @@ lastmod: "2025-07-02T12:41:38-07:00"
 クリーンアップ業務には、実験を完全に削除すること（`~"experiment::invalidated"` と `~"experiment::inconclusive"` の場合）または長期間のために実験機能をリファクタリングすること（`~"experiment::validated"` の場合）が含まれます。
 クリーンアップ Issue は、クリーンアップ前に実験が完了していることを確認するために、実験ロールアウト Issue の参照としてリンクされるべきです。
 
-[実験成功クリーンアップ](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experiment%20Successful%20Cleanup) Issue テンプレートは `gitlab-org/gitlab` プロジェクトに使用できます。
+[実験クリーンアップ](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experiment%20Cleanup) Issue テンプレートは `gitlab-org/gitlab` プロジェクトに使用できます。
 
 #### 実験 Issue テンプレート
 
@@ -140,7 +140,7 @@ lastmod: "2025-07-02T12:41:38-07:00"
   * [実験アイデア](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experiment%20Idea) Issue テンプレート
   * エンジニアリング用[実験実施](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experimentation%20Implementation) Issue テンプレート
   * [実験ロールアウト](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experiment%20Rollout)
-  * 成功した実験を機能に転換するための[実験成功クリーンアップ](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experiment%20Successful%20Cleanup) Issue テンプレート
+  * 完了した実験をクリーンアップする（製品化するか元に戻す）ための[実験クリーンアップ](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experiment%20Cleanup) Issue テンプレート
 * Growth `team-tasks` プロジェクト
   * Growth グループ用[マイルストーン計画](https://gitlab.com/gitlab-org/growth/team-tasks/-/issues/new?issuable_template=growth_team_planning_template) Issue テンプレート
   * Growth グループ用[実験アイデア](https://gitlab.com/gitlab-org/growth/team-tasks/-/issues/new?issuable_template=Growth%20experiment) Issue テンプレート

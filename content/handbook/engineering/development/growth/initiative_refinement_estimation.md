@@ -2,11 +2,11 @@
 title: Growth マイルストーン計画・リファインメント・見積もり
 description: "Growth チームの継続的リファインメントプロセスと見積もりガイドライン"
 upstream_path: "/handbook/engineering/development/growth/initiative_refinement_estimation/"
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T12:11:57+09:00"
+upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
+translated_at: "2026-09-17T21:05:53+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-19T11:37:13-04:00"
+lastmod: "2026-09-17T10:56:12-04:00"
 ---
 
 ## マイルストーン計画フェーズ
@@ -65,7 +65,9 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 ### デザイン中 {.h5}
 
 - プロダクトデザイナーは必要なデザインを作成するためにエピック配下に Issue を作成します
-- デザイナーはデザインをイテレーションして早期フィードバックを収集します
+- デザイナーはデザインをイテレーションして早期フィードバックを収集します：
+  - デザイナーは、フィードバックの依頼がチーム全体に均等に分散するよう、2 〜 3 人のエンジニアをランダムにタグ付けします。
+  - 理想的には、エンジニアは 24 〜 48 時間以内にフィードバックを提供します。
 - デザイナーはディスカッションに基づいてデザインを改善します
 - スコープが明確になりディスカッションが解決されたら、デザイナー/PM は Issue を `Planning Breakdown` ステータスに変更します
 - デザイン Issue がない場合、プロダクトマネージャーは[実験実装](https://gitlab.com/gitlab-org/gitlab/-/Issues/new?description_template=Experiment%20Implementation)または[実装](https://gitlab.com/gitlab-org/gitlab/-/Issues/new?description_template=Implementation)テンプレートを使用してシンプルな実装 Issue を作成し、`Planning Breakdown` ステータスに進みます

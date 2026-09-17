@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Theseus のために Artifact Registry と Auth を最小限の実行可能なプラットフォームとして提供する"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-13T13:42:10+02:00"
-translated_at: "2026-07-14T07:00:47+09:00"
+upstream_sha: "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1"
+lastmod: "2026-09-14T10:53:54-04:00"
+translated_at: "2026-09-17T21:17:04+00:00"
 translator: codex
 stale: false
 ---
@@ -203,3 +203,13 @@ flowchart TB
   style gcscdncom fill:#F3EBFA,stroke:#A87CC9,color:#3E2A52;
   style yugacom fill:#FDEFF4,stroke:#E892B5,color:#5A2238;
 ```
+
+### トランスポートセキュリティ {#transport-security}
+
+図の接続の大半は TLS を使用します。クライアントと Rails は Cloudflare で HTTPS 経由で接続し、Artifact Registry のデータベースは暗号化された接続のみを受け入れ、オブジェクトストレージと CDN は HTTPS を提供します。3 つのホップは平文です。Artifact Registry から設定でループバックのみに限定した GLAZ サイドカーへの接続、pod 間で行う IAM Data Access への接続、そしてプライベート VPC 内で転送時の暗号化を無効にした Memorystore が提供する Redis への接続です。
+
+GitLab.com ベータでは、これらのホップにアプリケーションレベルの TLS はありません。それぞれ認証され（gRPC ではサービス認証情報、Redis では AUTH）、ネットワークはプライベートであり、[Google は自らが管理する物理的な境界を越えるトラフィックを暗号化します](https://cloud.google.com/docs/security/encryption-in-transit)。同じ境界内では、物理的なセキュリティがその役割を担います。
+
+Self-Managed と Dedicated はプラットフォームによる保証を前提とせず、一部のオペレーターはすべてのホップで暗号化を義務付けます。そのため、これらのホップで TLS を提供することは、デプロイメントの前提ではなく、各サービスのオプション機能です。オペレーターがファイルベースの鍵ペアを提供して有効にします。最初に必要になるのは Self-Managed GA です。GitLab.com では現在オフで実行しており、他のオペレーターと同様に採用できます。オペレーターが強制するまでは検証は任意であるため、認証局を有効にしても動作中のホップを壊すことはありません。
+
+ワークロードアイデンティティを伴う相互 TLS は検討中の方向性であり、決定ではありません。[ADR-020](020_authentication_flow.md)では将来の作業として記載しています。再検討の契機は 2 つあります。サポート対象のデプロイモデルからホップごとの暗号化またはワークロードアイデンティティが義務付けられること、あるいは認証アーキテクチャにおける Unified Request Token の方向性が定まることです。

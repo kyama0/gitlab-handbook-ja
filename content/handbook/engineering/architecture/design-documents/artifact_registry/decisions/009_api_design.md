@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリの API エンドポイントの構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
-translated_at: "2026-09-11T21:09:10+00:00"
+upstream_sha: "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1"
+translated_at: "2026-09-17T21:10:04+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-11T14:51:24+02:00"
+lastmod: "2026-09-16T18:05:43+02:00"
 ---
 
 ## コンテキスト
@@ -320,12 +320,39 @@ https://artifact-registry.gitlab.com/acme-engineering/maven/my-repo
 - `PUT    /:slug/npm/:repository_name/:package_name/-rev/:rev`                       - 単一バージョンの公開取り消し、ステップ 1：そのバージョンを削除したパッケージドキュメントに置き換える（リモートおよび仮想リポジトリでは利用不可）
 - `DELETE /:slug/npm/:repository_name/:package_name/-/:file_name/-rev/:rev`          - 単一バージョンの公開取り消し、ステップ 2：バージョンの tarball を削除（リモートおよび仮想リポジトリでは利用不可）
 - `DELETE /:slug/npm/:repository_name/:package_name/-rev/:rev`                       - パッケージ全体の公開取り消し（`npm unpublish <pkg> --force`、リモートおよび仮想リポジトリでは利用不可）
-- `GET    /:slug/npm/:repository_name/:package_name/-/:file_name`                    - パッケージファイルをダウンロード
+- `GET    /:slug/npm/:repository_name/:package_name/-/*file_name`                    - パッケージファイルをダウンロード
 - `GET    /:slug/npm/:repository_name/-/package/:package_name/dist-tags`             - パッケージの dist-tags をリスト
 - `PUT    /:slug/npm/:repository_name/-/package/:package_name/dist-tags/:tag`        - dist-tag を作成または更新（リモートおよび仮想リポジトリでは利用不可）
 - `DELETE /:slug/npm/:repository_name/-/package/:package_name/dist-tags/:tag`        - dist-tag を削除（リモートおよび仮想リポジトリでは利用不可）
 - `POST   /:slug/npm/:repository_name/-/npm/v1/security/audits/quick`                - クイックセキュリティ監査
 - `POST   /:slug/npm/:repository_name/-/npm/v1/security/advisories/bulk`             - 一括セキュリティアドバイザリ
+
+**注意:** ダウンロードルートの `*file_name` は 1 つ以上のパスセグメントを表し、上記の Maven ルートと同じスプラット記法です。
+ホスト型リポジトリは常に単一セグメントの `{plain_name}-{version}.tgz` を提供します。
+リモートリポジトリは、上流の `dist.tarball` のうち、その `/{package}/-/` の後にある部分をそのまま提供します。
+ファイル名内でスコープを繰り返すレジストリでは、この部分は複数のセグメントになります。
+提供するドキュメントが指すのはこの名前であり、それによってクライアントはこのレジストリに再びアクセスします。
+このようなマーカーがない `dist.tarball` では最後のパスセグメントにフォールバックしますが、そのような上流をプロキシすることはできません。
+パッケージメタデータと dist-tags は提供されますが、tarball の読み取りは `404` を返します。
+仮想リポジトリは、解決先の上流が持つ名前を提供します。
+
+キャプチャした値を検証するルールは 2 つあり、異なるコードを返します。
+各要素は安全なパスセグメントでなければなりません。そのため、空の要素、`.` または `..`、パス区切り文字、ASCII 制御バイトは、
+すべてのリポジトリ種別で `400 file_name_invalid` を返します。
+続いて、最後の要素は、リクエストされたパッケージ名からスコープを除いた名前と、有効なセマンティックバージョンによる `{plain_name}-{version}.tgz` に一致しなければなりません。
+それより前の要素では安全性のみをチェックするため、このルールは最後の要素だけに適用されます。
+安全であっても形式が異なる名前は、ホスト型リポジトリでは `400` を返し、
+リモートまたは仮想リポジトリでは、キャッシュされたファイルのキーとなるバージョンを導出できないため `404` を返します。
+単一の `@scope%2Fname` の位置以外にあるエンコードされた区切り文字は、両ルールより前の認可処理で拒否され、情報を隠すための `404` を返します。
+どちらのルールが実行されるよりも前にルーターが `%2F` を実際の区切り文字にデコードするため、どちらのルールも、
+上流の名前自体に含まれていた区切り文字と区別できません。
+
+単一セグメントのパターンと並べて複数セグメントのパターンを登録すると、ディスパッチャーと認可文法が異なる区切り方をするリクエスト群に 1 行が加わります。
+これは、ディスパッチャーはエスケープされたパスに対してマッチングし、認可文法はデコードされたパスを読むためです。
+この行にはパーセントエンコーディングが含まれないため、エンコードされた区切り文字のガードではなく、メソッドテーブルで拒否して安全側に倒します
+（[artifact-registry#950](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/950)）。
+
+上記の公開取り消しルートは `:file_name` を維持します。このステップは、このレジストリ自体が公開した tarball を削除するためです。
 
 ##### クライアント設定例
 

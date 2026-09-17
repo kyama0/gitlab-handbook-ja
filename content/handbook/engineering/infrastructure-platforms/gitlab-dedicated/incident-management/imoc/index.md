@@ -2,11 +2,11 @@
 title: "GitLab Dedicated IMOC レスポンスチーム"
 description: "GitLab Dedicated インシデントマネージャーオンコール（IMOC）レスポンスチームのワークフロー、責任範囲、およびプロセス"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/incident-management/imoc/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T22:31:40Z"
+upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
+translated_at: "2026-09-17T21:03:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-09-16T15:42:58-06:00"
 ---
 
 ## 概要
@@ -246,7 +246,7 @@ IMOC として、インシデントを迅速に解決するためのいくつか
 1. アラートを確認し、現在の [GDEOC](https://gitlab.pagerduty.com/schedules/PE57MNA) が誰かを確認
 2. Slack DM: 「こんにちは [名前]、PagerDuty アラートがあります。対応できますか？」
 3. 応答がない場合（10 分後）: 現在のタイムゾーンの別の Dedicated SRE に再割り当てし、#gitlab-dedicated-team に投稿
-4. それでも解決しない場合: Dedicated 管理者全員にページング（@fviegas、@o-lluch、@denhams、@nitinduttsharma）
+4. それでも解決しない場合: Dedicated 管理者全員にページング（@fviegas、@o-lluch、@mckgl）
 5. 文書化し、GDEOC のマネージャーがミスしたページについてフォローアップ
 
 **重要な教訓:** まずカバレッジを確保し、ミスしたページへの対応は後で行ってください。
@@ -298,7 +298,7 @@ IMOC として、インシデントを迅速に解決するためのいくつか
 | AWS インフラ                 | AWS エンタープライズサポート     | AWS サポートシート                               |
 | GitLab アプリバグ            | Tier 2 / Dev エスカレーション   | インシデント Slack チャンネルで [`/inc escalate`](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/runbooks/on-call.html#escalating-internally-gitlab-teams) → tier2: [チーム] |
 | セキュリティ脆弱性           | SIRT                             | SIRT 側から連絡が来る                         |
-| マネジメントサポート         | Dedicated マネジメント           | @fviegas、@o-lluch、@denhams、@nitinduttsharma   |
+| マネジメントサポート         | Dedicated マネジメント           | @fviegas、@o-lluch、@mckgl   |
 
 ## リードすることとこなすことの違い
 
@@ -370,7 +370,7 @@ IMOC として、インシデントを迅速に解決するためのいくつか
 **ヘルプ:**
 
 - 現在の IMOC: PagerDuty 「GitLab Dedicated プラットフォームリーダーシップエスカレーション」スケジュール
-- EM: @fviegas、@o-lluch、@denhams、@nitinduttsharma
+- EM: @fviegas、@o-lluch、@mckgl
 - Slack: #gitlab-dedicated-team、#incident-management
 
 ---
