@@ -5866,11 +5866,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md",
-      "upstream_sha": "ebe7ab593136b21df5f05a4d4b9df742864011d1",
-      "translated_at": "2026-09-05T00:10:20+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:10:04+00:00",
       "model": "codex",
-      "input_hash": "fed6f50fd607744a009cca84de591c65b612db2cd749366c8a1b666494141b57",
-      "upstream_committed_at": "2026-09-04T06:53:42-07:00"
+      "input_hash": "ed93dc0164d8dc35e4b1d19de0156a448900f53d0fcda2412a27e11bd5c32e17",
+      "upstream_committed_at": "2026-09-17T16:31:04+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
@@ -5882,11 +5882,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md",
-      "upstream_sha": "4246c71d16beefada2a847b698b152ff280860c5",
-      "translated_at": "2026-09-11T21:09:10+00:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:10:04+00:00",
       "model": "codex",
-      "input_hash": "3c6be851b3f233b1f4fa4bf1ce4661f3834bb89ac35d2a3ee7d47e8ae193f12b",
-      "upstream_committed_at": "2026-09-11T14:51:24+02:00"
+      "input_hash": "2d22c1fc1ce42bdde986e8bef19728e9eed7d90e37496d59051a7c46b8f2eb86",
+      "upstream_committed_at": "2026-09-16T18:05:43+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md",
@@ -5914,19 +5914,19 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
-      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
-      "translated_at": "2026-09-08T07:12:08+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:15:18+00:00",
       "model": "codex",
-      "input_hash": "bd60770ff4222497535c2293057e5abe05ff7aa0c0acfecfe05b5bc6bd45c50c",
-      "upstream_committed_at": "2026-09-07T15:22:46+02:00"
+      "input_hash": "ca611bbda8ecb6a1e5ec495a5a0b736764af5eb04f0c4d1b79b9528fce09bf32",
+      "upstream_committed_at": "2026-09-17T18:47:46+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T11:43:17+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:17:04+00:00",
       "model": "codex",
-      "input_hash": "99f9e3befd3bc9c5f9ff3123bf351e38407234538cf355d63d6b13f69d6f256c",
-      "upstream_committed_at": "2026-08-17T15:27:08+02:00"
+      "input_hash": "b1d6dfb9ba129ecb3932340e481d734666caa904bd903a2c860c4dd94dc37afb",
+      "upstream_committed_at": "2026-09-15T11:46:43+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md",
@@ -10562,11 +10562,11 @@
     },
     "content/handbook/engineering/development/growth/experimentation.md": {
       "path": "content/handbook/engineering/development/growth/experimentation.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T05:15:25Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1cd5188be74342895b5c8580fa6145da87572c45bbc49c8c66e4e5eb429d2855",
-      "upstream_committed_at": "2025-07-02T12:41:38-07:00"
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:05:53+00:00",
+      "model": "codex",
+      "input_hash": "b0f0794e0245843386bd3f6ffcabba3e09c1bc6347658aa19269d67bfe0b4deb",
+      "upstream_committed_at": "2026-09-14T14:14:34-04:00"
     },
     "content/handbook/engineering/development/growth/fast-boot.md": {
       "path": "content/handbook/engineering/development/growth/fast-boot.md",
@@ -10578,11 +10578,11 @@
     },
     "content/handbook/engineering/development/growth/initiative_refinement_estimation.md": {
       "path": "content/handbook/engineering/development/growth/initiative_refinement_estimation.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T12:11:57+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:05:53+00:00",
       "model": "codex",
-      "input_hash": "e35b0f5d3ba10bde4417a33e73fcfc6bc49acdfef007192e4f3e467b6e5168a6",
-      "upstream_committed_at": "2026-08-19T11:37:13-04:00"
+      "input_hash": "5266ab0f9102d605065b3e100d4debcd535a49a4bf75ca32c21bd600f11be22c",
+      "upstream_committed_at": "2026-09-17T10:56:12-04:00"
     },
     "content/handbook/engineering/development/growth/operating_model_growth.md": {
       "path": "content/handbook/engineering/development/growth/operating_model_growth.md",
@@ -12434,11 +12434,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T08:13:25+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:03:55+00:00",
       "model": "codex",
-      "input_hash": "f3e4ab199d8b3cbd9defe0a6ebd10679ec755386271d3bf895f79e43e0fec6a3",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "ec9c85d112bb57739720624ffbf0cfd750567d75952562b48296c69523f8186a",
+      "upstream_committed_at": "2026-09-16T15:42:58-06:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/architecture/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/architecture/_index.md",
@@ -12466,19 +12466,19 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/ecosystem.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/ecosystem.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "dbc4b37aaf3dd84690c67b8b7ff43775d2e3dd13968031a2b556e01f8058e3ee",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:03:55+00:00",
+      "model": "codex",
+      "input_hash": "1952eef94f05d58a26c42d94465ab0f359c935ccb993dce6de9ce94b9848c81f",
+      "upstream_committed_at": "2026-09-16T15:42:58-06:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation.md",
-      "upstream_sha": "d8fb317567e8e271f91f602d97d453ad1a69a00a",
-      "translated_at": "2026-08-13T23:58:47+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:03:55+00:00",
       "model": "codex",
-      "input_hash": "7db1d31e470a58d254adab91cec1292b1d0cced64771d19323faab76f5a8c664",
-      "upstream_committed_at": "2026-08-12T12:24:04+00:00"
+      "input_hash": "7df01601a6d6beaa84144e7507c46ba59f74219c022ab690cbb2f5a088b0e771",
+      "upstream_committed_at": "2026-09-16T15:42:58-06:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/migration-acceleration-team.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/migration-acceleration-team.md",
@@ -24234,11 +24234,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/incident-management/imoc/index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/incident-management/imoc/index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T22:31:40Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "afa2c400960080dc905eee781ca7907d8f5460670f5bb27092facb7d434b694d",
-      "upstream_committed_at": "2026-04-09T20:14:47+00:00"
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:03:55+00:00",
+      "model": "codex",
+      "input_hash": "f3a74304f106bd90e961020d5b15534631c24274e26b6c00d53babd810c806e0",
+      "upstream_committed_at": "2026-09-16T15:42:58-06:00"
     },
     "content/handbook/security/corporate/_index.md": {
       "path": "content/handbook/security/corporate/_index.md",
@@ -31618,11 +31618,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T12:11:57+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:03:55+00:00",
       "model": "codex",
-      "input_hash": "f2349a0c6b27157c2862e6a390ea5e585243097d6ff19155fd22127cb2143b46",
-      "upstream_committed_at": "2026-08-26T09:57:10+10:00"
+      "input_hash": "39c7c1909ca6101427ec60dd196a4b80990d7dfa942a0bc335c7e4c60cbcba86",
+      "upstream_committed_at": "2026-09-16T15:42:58-06:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/impacted_features/term-agreements.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/term-agreements.md",
@@ -32002,11 +32002,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T07:00:47+09:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:17:04+00:00",
       "model": "codex",
-      "input_hash": "0248c52d68ab9edd6ac30a2cca7748b6052287b3cc785b34636fcf1322a0a066",
-      "upstream_committed_at": "2026-07-13T13:42:10+02:00"
+      "input_hash": "095326c9eceb20bbcb3dbd513765735ea432fc6a7b6f3445f3c163372b21be07",
+      "upstream_committed_at": "2026-09-14T10:53:54-04:00"
     },
     "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md": {
       "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md",
@@ -32234,11 +32234,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization.md",
-      "upstream_sha": "7a4e62958b31234a80d386bf4b7c8dd855df2cb8",
-      "translated_at": "2026-09-10T11:09:19+00:00",
+      "upstream_sha": "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1",
+      "translated_at": "2026-09-17T21:15:18+00:00",
       "model": "codex",
-      "input_hash": "d83eeb1366dae423fcad9642d210b65bee18ec886216d7f404e1a264793c8deb",
-      "upstream_committed_at": "2026-09-10T10:10:17+02:00"
+      "input_hash": "c15a68f1bb61fb54afb74d3e381eea3c1f63bc24ba0cdf1d88f13ed828173bb5",
+      "upstream_committed_at": "2026-09-16T17:34:09+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/chunking.md": {
       "path": "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/chunking.md",

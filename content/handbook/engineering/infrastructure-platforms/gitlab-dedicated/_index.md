@@ -1,11 +1,11 @@
 ---
 title: "GitLab Dedicated グループ"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:13:25+09:00"
+upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
+translated_at: "2026-09-17T21:03:55+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-16T15:42:58-06:00"
 ---
 
 ![GitLab Dedicated グループロゴ](/images/engineering/infrastructure-platforms/gitlab-dedicated/dedicated_team_logo.png)
@@ -39,29 +39,15 @@ GitLab Dedicated のエンジニアリングチームメンバーは、主なタ
 
 以下のメンバーは Dedicated:Environment Automation チームです：
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug "o-lluch" >}}
 
 以下のメンバーは Dedicated:US Public Sector Services チームです：
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug "mckgl" >}}
 
 以下のメンバーは Dedicated:Switchboard チームです：
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug "ashiel" >}}
 
 ## 私たちとの連携
 
