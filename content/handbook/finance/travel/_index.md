@@ -2,11 +2,11 @@
 title: "出張の安全とセキュリティ"
 date: 2025-11-12
 upstream_path: "/handbook/finance/travel/"
-upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
-translated_at: "2026-09-13T21:11:20+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:13:05+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-14T21:28:02-07:00"
 ---
 
 ### 出張の安全とセキュリティ
@@ -103,16 +103,14 @@ GitLabのBusiness Travel Accident Policyは、国内外の出張中のチーム�
 
 *出張中に医療費を立替払いした場合:*
 
-1. この[請求ガイド](https://drive.google.com/file/d/1hFqrGJ4VxPgrnYMxO7O-9h5LTG9Mw0L8/view?usp=sharing)に従って請求を提出してください。
-
+1. この[請求ガイド](/handbook/total-rewards/benefits/general-and-entity-benefits/#travel-community--support)に従って請求を提出してください。
 International SOSは保険会社への請求提出の手順についてもサポートできます
 
 #### ビザレター書類
 
 ビザ申請のカバレッジ確認が必要なチームメンバーへ:
 
-1. [AIG Visa Letter Form](https://drive.google.com/file/d/124ioq21jOW1LMHcyERM4gTuzXF6s6TNH/view?usp=sharing)に記入する
-1. フォームに記載された提出指示に従ってください
+1. [Chubb 渡航保険証明フォーム](https://docs.google.com/document/d/1MLPP3fB65l7WwEcxw4iRNBHLptvv3Sgu/edit?usp=sharing&ouid=101018700832258912823&rtpof=true&sd=true)に記入してください
 
 ### 出張中のデータの保護
 

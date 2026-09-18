@@ -1,11 +1,11 @@
 ---
 title: "GitLab Duo のヒント"
 upstream_path: /handbook/tools-and-tips/ai/gitlab-duo/
-upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
-translated_at: "2026-09-13T21:19:11+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:10:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 AI 駆動の GitLab Duo Chat、Code Suggestions などを使って DevSecOps ワークフローを高速化する方法を学びましょう。
@@ -34,8 +34,8 @@ GitLab Duo の拡張機能を介した IDE 統合については、[エディタ
 - [GitLab University](https://university.gitlab.com)
   - [AI および GitLab Duo コース](https://university.gitlab.com/learn/dashboard?labels=%5B%22Topic%22%5D&values=%5B%22AI%22%5D)
   - [GitLab Duo Enterprise ラーニングパス](https://university.gitlab.com/learn/learning-path/gitlab-duo-enterprise-learning-path)
-- [Developer Advocacy リソース](/handbook/marketing/developer-relations/developer-advocacy/)
-  - [コンテンツライブラリ](/handbook/marketing/developer-relations/developer-advocacy/content/)（GitLab Duo のデモ、ユースケース、製品ツアー、トーク、ワークショップ、レコーディングなど）
+- [Developer Advocacy リソース](/handbook/marketing/product-and-technical-marketing/developer-advocacy/)
+  - [コンテンツライブラリ](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/)（GitLab Duo のデモ、ユースケース、製品ツアー、トーク、ワークショップ、レコーディングなど）
 - [Highspot: フィールドガイド](https://gitlab.highspot.com/items/6459a4f9a583c8ebe9aa5a64)（社内のみ、フィールドチーム向け）
 - ドッグフーディング: [GitLab Duo の開発に関するブログチュートリアルシリーズ](https://about.gitlab.com/blog/2024/06/03/developing-gitlab-duo-series/)
 
@@ -125,7 +125,7 @@ Show the raw Markdown in a code block
 
 これらのユースケースは以下で探求できます:
 
-1. [Developer Advocacy チーム](/handbook/marketing/developer-relations/developer-advocacy/projects/#organisation-structure) が保守する [Duo Enterprise 製品ツアー](/handbook/marketing/developer-relations/developer-advocacy/content/#product-tours) と [Root Cause Analysis チャレンジ](https://gitlab.com/gitlab-da/use-cases/ai/ai-workflows/gitlab-duo-challenges/root-cause-analysis)
+1. [Developer Advocacy チーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/#organisation-structure) が保守する [Duo Enterprise 製品ツアー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#product-tours) と [Root Cause Analysis チャレンジ](https://gitlab.com/gitlab-da/use-cases/ai/ai-workflows/gitlab-duo-challenges/root-cause-analysis)
 1. [GitLab University: GitLab Duo Enterprise コース](https://university.gitlab.com/courses/gitlab-duo-enterprise)
 
 ### オンボーディングと貢献

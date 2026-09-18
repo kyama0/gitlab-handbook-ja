@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
-translated_at: "2026-09-15T06:09:23+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:06:29+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-16T15:10:00-07:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -457,12 +457,14 @@ HSA を使用すると、適格な医療費に対して税引前のお金を取�
 - **投資オプション:** 残高が最低額に達すると、ミューチュアルファンド、株式、債券に投資できます
 - **将来の柔軟性:** 65 歳になると、ペナルティなしで任意の目的で引き出すことができます（医療費は引き続き非課税）
 
+**Fidelity が GitLab の HSA プランを管理しています**。PlanSource で HSA 対象の医療保険プランを選択すると、Fidelity の HSA アカウントを有効にするための次の手順が PlanSource に表示されます。
+
 </details>
 
 <details markdown="1">
 <summary>HSA アカウントロールオーバーと管理</summary>
 
-**前の HSA から転送する:** WEX (Discovery) に 866.451.3399 または customerservice@discoverybenefits.com で連絡し、転送フォームを依頼してください。古いプロバイダーのアカウント情報を完了し、WEX が残りを処理します。
+**前の HSA から移管する:** Fidelity に 800-544-3716 で連絡するか、[Fidelity NetBenefits](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/home)にログインして、移管フォームを依頼してください。以前のプロバイダーのアカウント情報を記入すると、残りの手続きは Fidelity が行います。
 
 **GitLab を退職する場合:** HSA は永遠にあなたと一緒です。GitLab があなたの雇用主でなくなったら、月次管理料の支払いの責任を負います。
 
@@ -475,7 +477,7 @@ HSA を使用すると、適格な医療費に対して税引前のお金を取�
 
 年間を通じていつでも HSA 拠出を調整できます。変更は翌月の 1 日から有効になります。Qualifying Life Event Process を使用し、「Mid-Year HSA Contribution」を選択してください。
 
-**フロントローディング拠出:** WEX に直接連絡して、HSA 拠出のあなたの部分をフロントロードしてください。以下を忘れずに行ってください:
+**フロントローディング拠出:** Fidelity に 800-544-3716 で直接連絡して、HSA 拠出のあなたの部分をフロントロードしてください。以下を忘れずに行ってください:
 
 - 計算に GitLab の拠出を含める
 - それに応じて PlanSource で給与控除を更新
@@ -488,7 +490,7 @@ HSA を使用すると、適格な医療費に対して税引前のお金を取�
 
 GitLab を退職するとき、HSA とすべての資金はあなたのものです。次の雇用主で適格な医療費にお金を引き続き使用したり、時間とともに増やすこともできます。
 
-WEX は直接アカウント管理に対して管理料を請求する場合があります。質問については、WEX (Discovery) に 866.451.3399、ライブチャット、または customerservice@discoverybenefits.com で連絡してください。
+Fidelity は直接アカウント管理に対して管理料を請求する場合があります。質問については、Fidelity に 800-544-3716 または [Fidelity NetBenefits](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/home)を通じて連絡してください。
 
 </details>
 
@@ -699,7 +701,8 @@ Workday を通じてログインし、Documents → Tax Documents を選択し�
 - **一般的な福利厚生に関する質問:** Willis Towers Watson - [claims.sg@willistowerswatson.com](mailto:claims.sg@willistowerswatson.com)
 - **登録変更:** PlanSource または Compass を通じて連絡
 - **401(k) サポート:** Fidelity に 800-835-5097
-- **HSA/FSA/通勤福利厚生:** WEX (Discovery) に 866-451-3399 または customerservice@wexhealth.com
+- **FSA/通勤福利厚生:** WEX (Discovery) に 866-451-3399 または customerservice@wexhealth.com
+- **HSA:** Fidelity に 800-544-3716 または [Fidelity NetBenefits](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/home)を通じて連絡
 - **Cigna メンバーサポート:** Cigna [One Guide Service](https://drive.google.com/file/d/1eIvtYtYPSt3Q0h-Byd16CFFfT0bxv8yF/view?usp=sharing) または [myCigna](https://my.cigna.com/web/public/guest) ポータルを通じてアクセス
 - **Kaiser メンバーサポート:** [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door) にログイン
 - **システムに関する質問:** PlanSource および内部ポリシーサポートについては Compass に連絡

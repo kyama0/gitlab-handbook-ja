@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
-translated_at: "2026-09-16T21:05:51+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:09:14+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-18T16:09:19+02:00"
 ---
 
 ## 概要
@@ -473,7 +473,7 @@ Slack に関する多くの情報があります。これは GitLab のコミュ
 ## Zoom
 
 Zoom に関する多くの情報があります。これは GitLab のコミュニケーションの重要な部分です。
-[Zoom ハンドブックページ](zoom.md) をご覧ください。
+[Zoom ハンドブックページ](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/) をご覧ください。
 
 [Google Calendar](/handbook/tools-and-tips/#google-calendar) の招待は Zoom リンクの真実の唯一のソースです。Google Docs アジェンダで Zoom リンクをリンクすることを避けてください。これは、すぐに最新ではなくなる可能性があります。会議の開始頃に Zoom リンクが変更された場合、一時的にそこに置いておくことは大丈夫です。
 
