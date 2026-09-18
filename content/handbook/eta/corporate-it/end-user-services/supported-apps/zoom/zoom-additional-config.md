@@ -4,9 +4,9 @@ description: Zoom の追加セットアップおよび設定手順
 aliases:
   - /handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config/
 upstream_path: /handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:07:25+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T16:09:19+02:00"
+translated_at: "2026-09-18T21:14:39+00:00"
 translator: codex
 stale: false
 ---
@@ -15,6 +15,7 @@ stale: false
 
 - [Zoom で音声とビデオをテストする](#test-audio-and-video-in-zoom)
 - [Zoom プロフィールをカスタマイズする](#customize-your-zoom-profile)
+  - [名前に役職を追加する](#adding-your-title-to-your-name)
 - [カスタマイズしたパーソナルリンクを作成する](#create-a-customized-personal-link)
 - [Zoom 待機室](#zoom-waiting-rooms)
 - [画面共有を有効にする](#enable-screen-sharing)
@@ -33,6 +34,22 @@ Zoom では、表示名、場所、役職名など、さまざまな設定をカ
 
 1. Chrome を開き、[Zoom プロフィールページ](https://gitlab.zoom.us/profile)に移動します
 1. ページ上の各種フィールドの横にある **Edit** をクリックし、すべての詳細が正しいことを確認します
+
+### 名前に役職を追加する {#adding-your-title-to-your-name}
+
+ミーティング中に他の参加者が担当分野を確認できるように、Zoom の表示名に役職を含めてください。
+部署やチーム、GitLab ユーザー名を含めることもできます。
+例：
+`Michael Friedrich - Principal Developer Advocate, GitLab, @dnsmichi`。
+
+1. [Zoom プロフィール](https://gitlab.zoom.us/profile)を開きます。
+1. 名前の横にある **Edit** を選択します。
+1. **Display Name** を名前と役職で更新します。必要に応じて、部署やチーム、GitLab ユーザー名を追加します。
+1. **Save** を選択します。
+
+これにより、今後のミーティングで使用するプロフィールの表示名が更新されます。その他の変更方法については、
+[Zoom の表示名に関する手順](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061891)を
+参照してください。
 
 ## カスタマイズしたパーソナルリンクを作成する {#create-a-customized-personal-link}
 

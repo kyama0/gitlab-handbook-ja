@@ -2,9 +2,9 @@
 title: "GitLab Iberia s.r.l.（スペイン）の情報と福利厚生"
 description: "GitLab Iberia s.r.l. スペインのチームメンバー向けエンティティ情報"
 upstream_path: "/handbook/entity/iberia-srl-spain/"
-upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
-lastmod: "2026-09-13T04:09:59-04:00"
-translated_at: "2026-09-13T21:18:06+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T11:33:31-07:00"
+translated_at: "2026-09-18T21:06:29+00:00"
 translator: claude
 stale: false
 ---
@@ -149,7 +149,7 @@ GitLab は AXA VIP（ネットワーク \+ 払い戻し）を通じて包括的�
 3. オンボーディング書類のサーベイリンクから家族を追加  
 4. 家族が同じ条件を受けるための 25 日間の加入期間  
 5. ライフイベント時に扶養家族を追加するには、[Life Event Form](https://docs.google.com/forms/d/e/1FAIpQLSd8YRqlEqfvlZgqUFm2fZ8A6JC5hKrm2JlZKInkUl_nQD3nww/viewform?usp=sf_link) に記入  
-6. オプトアウトするには、[Spain Medical Opt Form](https://docs.google.com/document/d/1Fz8kTyyu0SScMatTFI9r6vtIyWpuzdYW/edit?usp=sharing&ouid=115600862362829120699&rtpof=true&sd=true) を確認・記入し、[total-rewards@gitlab.com](mailto:total-rewards@gitlab.com) に送信
+6. 新入社員がオプトアウトするには、[Spain Medical Opt Form](https://docs.google.com/document/d/1Fz8kTyyu0SScMatTFI9r6vtIyWpuzdYW/edit?usp=sharing&ouid=115600862362829120699&rtpof=true&sd=true)を確認・記入し、[total-rewards@gitlab.com](mailto:total-rewards@gitlab.com)に送信してください。医療保険プランに加入している既存のチームメンバーは、対象となるライフイベント（婚姻状況の変更など）がある場合を除き、更新時（毎年 5 月 1 日）にのみオプトアウトできます。
 
 </details>
 
@@ -258,7 +258,7 @@ Generali を通じた包括的な生命保険で、あなたと大切な人々�
 * **無審査カバー限度額**: EUR 500,000（この金額を超える場合は医療アンケートが必要）  
 * **税務上の影響**: 保険料は現物給付として課税対象 \- [2024 年保険料率](https://docs.google.com/spreadsheets/d/1GD79QjfMkIEMxukH0t8vTE949oup_Hco/edit?usp=sharing&ouid=115600862362829120699&rtpof=true&sd=true) を参照  
 * **デフォルトの受取人の順序**: 配偶者、子ども、親、法定相続人  
-* **オプトアウト期限**: 入社日から 1 週間以内 \- [Spain Life Opt Form](https://docs.google.com/document/d/1uShnipck7CwJmP-d8Inpcupj-ILPn81U/edit?usp=sharing&ouid=115600862362829120699&rtpof=true&sd=true) を使用
+* **オプトアウト期限**: 新入社員は入社日から 1 週間以内にオプトアウトできます \- [Spain Life Opt Form](https://docs.google.com/document/d/1uShnipck7CwJmP-d8Inpcupj-ILPn81U/edit?usp=sharing&ouid=115600862362829120699&rtpof=true&sd=true)を使用してください。生命保険・障害保険プランに加入している既存のチームメンバーは、対象となるライフイベント（婚姻状況の変更など）がある場合を除き、更新時（毎年 5 月 1 日）にのみオプトアウトできます。
 
 </details>
 

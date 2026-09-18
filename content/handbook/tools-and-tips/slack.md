@@ -2,11 +2,11 @@
 title: "Slack"
 description: "GitLab における Slack の利用とヒント"
 upstream_path: /handbook/tools-and-tips/slack/
-upstream_sha: 0b4843d337f9f8173d56982fff942cb2b5a78543
-translated_at: "2026-09-11T13:14:29+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:09:14+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-11T13:54:05+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## 概要
@@ -59,7 +59,7 @@ Slack のプロフィールを記入してください。私たちは Slack の�
 プロフィールで、**About me** の横にある **Edit** を選択します。
 
 - **Location（オプション）。** 市区町村、州または県、国を追加します。
-- **Job Description。** 表示テキストと URL を追加します。例：[Developer Advocate](/handbook/marketing/developer-relations/developer-advocacy/#team-members-and-focus-areas)。
+- **Job Description。** 表示テキストと URL を追加します。例：[Developer Advocate](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#team-members-and-focus-areas)。
 - **Address（オプション）**
 - **G-Cal booking。** [Calendly](/handbook/tools-and-tips/other-apps/#calendly) を使う場合は、予約ページの URL と `Book a meeting` などの表示テキストを追加します。それ以外の場合は、このフィールドを空欄にしてください。
 - **Pronouns。** よりインクルーシブな環境づくりに役立つよう、代名詞の追加を検討してください。

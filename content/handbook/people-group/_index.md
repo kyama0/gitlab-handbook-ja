@@ -2,11 +2,11 @@
 title: ピープルグループ
 description: "GitLab のピープルグループは、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
 upstream_path: /handbook/people-group/
-upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
-translated_at: "2026-09-13T21:12:46+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:10:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## ようこそ
@@ -174,7 +174,7 @@ GitLab は、GitLab チームメンバーであることに関する不正確な
 - チームメンバーがプロフィールを確認できない場合、チームメンバーは [Compass](https://app.serval.com/new-request) を介して、対象となる LinkedIn プロフィールと共に People Operations Team に連絡すべきです。
 - People Operations チームメンバーは、その人がチームメンバーでないこと／なかったことを Workday で確認します。
 - People Operations チームメンバーは、その人が面接を受けたこと、オファーを受けたこと、または辞退されたことがあるかを確認するため、talent acquisition に確認します。
-- People Operations チームメンバーは、より広いコミュニティのアクティブなメンバーかどうかを確認するため、[Developer Relations team](/handbook/marketing/developer-relations/) に、[#developer-relations](https://gitlab.slack.com/archives/C0R04UMT9) Slack チャンネルで `@devrel-team` タグを使用して連絡します。
+- People Operations チームメンバーは、より広いコミュニティのアクティブなメンバーかどうかを確認するため、[Developer Advocacy チーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/)に、[#developer-advocacy](https://gitlab.enterprise.slack.com/archives/CMELFQS4B) Slack チャンネルで `@devrel-team` タグを使用して連絡します。
 - より広いコミュニティの確認されたメンバーであるがチームメンバーでない場合、Developer Relations チームはプロフィールに連絡を取り、プロフィールを GitLab への関与に合わせるよう依頼します。
 - より広いコミュニティの現在のメンバーでなく、talent acquisition が Greenhouse にプロフィールがないことを確認した場合、talent acquisition は Do Not Hire プロフィールを作成します。
 - People Operations チームメンバーは、[Reporting Inaccurate Information on Another Member's Profile](https://www.linkedin.com/help/linkedin/answer/30200?src=or-search&veh=www.google.com%7Cor-search) を介して LinkedIn にアカウントを報告します。

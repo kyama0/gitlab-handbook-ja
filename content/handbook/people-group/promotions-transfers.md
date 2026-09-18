@@ -2,9 +2,9 @@
 title: 昇進と異動
 description: "GitLab の昇進と異動に関する情報とプロトコル。"
 upstream_path: /handbook/people-group/promotions-transfers/
-upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
-lastmod: "2026-09-13T04:09:59-04:00"
-translated_at: "2026-09-15T21:56:38Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T21:20:33+02:00"
+translated_at: "2026-09-18T21:10:59+00:00"
 translator: claude
 stale: false
 ---
@@ -890,7 +890,7 @@ GitLab には、昇進、ラテラル異動、会社の再編、マネージャ�
 フィールドチーム向け:
 
 - 必要に応じて、[名刺](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/frequently_requested/#ordering-business-cards)。
-- GitLab コミュニティプラットフォーム: [Forum](/handbook/marketing/developer-relations/workflows-tools/forum/)、[Discord](/handbook/marketing/developer-relations/workflows-tools/discord/)
+- GitLab コミュニティプラットフォーム: [Forum](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/forum/)、[Discord](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/discord/)
 - 講演活動のための略歴/履歴書 (Sessionize など)
 - ソーシャルメディアプラットフォーム (LinkedIn、X、Fediverse、Reddit など)
 

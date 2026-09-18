@@ -2,11 +2,11 @@
 title: "ビザ"
 description: "渡航ビザ、ビザレター、およびオランダへの移住に関する情報。"
 upstream_path: /handbook/people-group/visas/
-upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
-translated_at: "2026-09-15T21:56:38Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:10:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-17T12:53:39Z"
 ---
 
 ## ビザおよびスポンサーシップポリシー
@@ -24,7 +24,7 @@ GitLab は、特定の社内 [オランダ](/handbook/people-group/visas/#right-
 - 以下の情報は、GitLab エンティティのある国に限定されます。GitLab が PEO を利用している地域には、代替のビザオプションが存在する可能性があります。雇用主として、PEO は受け入れる/支援するビザに関して独自のポリシーを持っている可能性があります。
 - 就労許可に関連するピープルグループメンバー向けの追加情報は [こちら](https://docs.google.com/document/d/1LnDx1NeDDufo-mGYv-eMYqqaLLkIS0___QgtTXp7otI/edit?usp=sharing) で入手できます。
 
-### GitLab が受け入れ可能な可能性のあるビザおよび就労許可
+### GitLab が受け入れ可能な可能性のあるビザおよび就労許可 {#visas-and-work-permits-gitlab-may-be-able-to-accept}
 
 GitLab がビザを受け入れるかどうかは、多くの要因によって決まります。以下のビザは、候補者が GitLab で就労する資格を有することを可能にする場合があります。以下のリストは網羅的ではありません。
 
@@ -40,7 +40,6 @@ GitLab がビザを受け入れるかどうかは、多くの要因によって�
 - 韓国 F5 永住者ビザ
 - シンガポール Personalised Employment Pass
 - 現行のシンガポール Employment Pass および/または Dependent Pass の移管
-- スペイン EU ブルーカード
 - 英国 Global Talent Visa
 - 英国 India Young Professionals Scheme Visa
 - 英国 Ancestry Visa
@@ -249,7 +248,7 @@ Critical Skills Employment Permit の処理手数料は €1,000 です（申請
 
 ### EU ブルーカード
 
-GitLab は、GitLab がエンティティを持つ EU 諸国で雇用を求める選ばれた高度技能候補者で、その国の EU ブルーカードを申請するかすでに保有している人に、雇用契約を提供できる場合があります。GitLab はまた、GitLab がエンティティを持つ EU 諸国へ移住を希望する現職のチームメンバーで、その国への [リロケーション承認](/handbook/people-group/relocation/#how-to-apply-for-a-long-term-relocation) を受け、EU ブルーカードを申請する予定の人にも、雇用契約を提供できる場合があります。
+GitLab は、GitLab がエンティティを持つ一部の EU 諸国で雇用を求める選ばれた高度技能候補者で、その国の EU ブルーカードを申請するかすでに保有している人に、雇用契約を提供できる場合があります。対象は、上記の[GitLab が受け入れ可能な可能性のあるビザおよび就労許可](/handbook/people-group/visas/#visas-and-work-permits-gitlab-may-be-able-to-accept)に記載されている国に限られます。GitLab はまた、GitLab がエンティティを持つ一部の EU 諸国へ移住を希望する現職のチームメンバーで、その国への [リロケーション承認](/handbook/people-group/relocation/#how-to-apply-for-a-long-term-relocation) を受け、EU ブルーカードを申請する予定の人にも、雇用契約を提供できる場合があります。
 
 注意: GitLab は申請のいかなる費用もカバーせず、EU ブルーカードの発行を保証しません。提供される雇用契約には、候補者が十分な就労権を保有していること、ブルーカードが必要な場合はブルーカードを取得できることを条件とする条項が含まれます。ブルーカードが却下された場合、雇用契約は取り消されます。GitLab は、現在採用を受け付けている国でのみ、見込みブルーカード保有者の候補者およびチームメンバーのリロケーション要請を検討します。GitLab はブルーカード申請のサポートを、雇用契約と申請に必要な会社情報の提供を超えて行いません。
 

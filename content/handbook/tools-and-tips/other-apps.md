@@ -2,11 +2,11 @@
 title: "その他のアプリ"
 description: このページでは、GitLab でのワークフローに役立つかもしれない様々なアプリを紹介します。
 upstream_path: /handbook/tools-and-tips/other-apps/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T10:32:00+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-18T21:09:14+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T15:26:51-07:00"
+lastmod: "2026-09-16T12:32:11-04:00"
 ---
 
 ### 一般的なセキュリティのヒント
@@ -42,7 +42,7 @@ lastmod: "2026-08-13T15:26:51-07:00"
 
 GitLab が管理するデバイス上のブラウザー拡張機能は、許可リストモデルで管理されています。Corporate Security によって審査・承認された拡張機能のみがインストールできます。それ以外の拡張機能はデフォルトでブロックされます。
 
-承認済み・ブロック済みの拡張機能の最新リスト、新しい拡張機能のリクエスト方法や関連ポリシーについては、[内部ドキュメント](https://corpsecdevices-gitlab-io-a3d14d.gitlab.io/Policies/Chrome/Approved_Extensions/)を参照してください。
+承認済み・ブロック済みの拡張機能の最新リスト、新しい拡張機能のリクエスト方法や関連ポリシーについては、[内部ドキュメント](https://corpsecdevices.gitlab.net/Policies/Chrome/Approved_Extensions/)を参照してください。
 
 #### One Tab
 

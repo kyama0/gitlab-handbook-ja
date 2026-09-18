@@ -4,9 +4,9 @@ description: より良い Zoom 体験のための追加情報
 aliases:
   - /handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips/
 upstream_path: /handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:07:25+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T16:09:19+02:00"
+translated_at: "2026-09-18T21:14:39+00:00"
 translator: codex
 stale: false
 ---
@@ -23,6 +23,7 @@ stale: false
   - [参加者の体験を楽しいものにする](#make-the-participant-experience-an-enjoyable-one)
   - [プレゼンテーションや編集を共有するのではなくリンクを提供する](#provide-links-rather-than-sharing-while-you-present-or-edit)
 - [その他の Zoom のヒント](#additional-zoom-tips)
+  - [名前に役職を追加する](#adding-your-title-to-your-name)
   - [仮想背景](#virtual-backgrounds)
   - [ビデオフィルターを適用する](#applying-video-filters)
   - [外付けウェブカメラと DSLR](#external-webcams-and-dslrs)
@@ -136,6 +137,12 @@ Zoom ミーティングへ迅速かつ効果的に電話接続するためのヒ
 プレゼンテーション／編集中に画面を共有するのではなく、（マージリクエスト、Issue、ドキュメントなどへの）リンクを提供してください。これにより、参加者は自分のペースで進み、独自にコメント／編集できます。
 
 ## その他の Zoom のヒント {#additional-zoom-tips}
+
+### 名前に役職を追加する {#adding-your-title-to-your-name}
+
+他の参加者が担当分野を理解できるように、表示名に役職、部署、チームを追加してください。
+次の
+[プロフィール設定手順](zoom-additional-config.md#adding-your-title-to-your-name)に従ってください。
 
 ### 仮想背景 {#virtual-backgrounds}
 

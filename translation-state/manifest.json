@@ -15074,11 +15074,11 @@
     },
     "content/handbook/entity/iberia-srl-spain.md": {
       "path": "content/handbook/entity/iberia-srl-spain.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:18:06+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:06:29+00:00",
       "model": "codex",
-      "input_hash": "c45bd97f7eaee3560fdad9dd9d0d16ec417666fc9a2aa66bf45242ee779f78aa",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "ae11b027c0adcd8ec825ff75ceb876b452a209a1c05e4d4f5bac198d57c31030",
+      "upstream_committed_at": "2026-09-18T11:33:31-07:00"
     },
     "content/handbook/entity/india-pvt-ltd.md": {
       "path": "content/handbook/entity/india-pvt-ltd.md",
@@ -15202,11 +15202,11 @@
     },
     "content/handbook/finance/accounts-payable/_index.md": {
       "path": "content/handbook/finance/accounts-payable/_index.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:10:04+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:13:05+00:00",
       "model": "codex",
-      "input_hash": "5bcec685a6e3d553930a6ce41e558594c584817435064e20147946a55373b8f2",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "0c34b3c1de80abe75427a5394cf1efbf4c5b2d7a0b03a9dfdd4ac52a54decae7",
+      "upstream_committed_at": "2026-09-15T06:21:36-07:00"
     },
     "content/handbook/finance/accounts-payable/corp-credit-cards.md": {
       "path": "content/handbook/finance/accounts-payable/corp-credit-cards.md",
@@ -15730,11 +15730,11 @@
     },
     "content/handbook/finance/travel/_index.md": {
       "path": "content/handbook/finance/travel/_index.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:11:20+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:13:05+00:00",
       "model": "codex",
-      "input_hash": "af983a150497b413d3ccb93cc4f9e717ecfa66a8989dda95a10d864ddc06746d",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "9eb826c1d73b1a8a3d8413e3b0d788a50624bdb3817d80b45cc12e5699b4488f",
+      "upstream_committed_at": "2026-09-14T21:28:02-07:00"
     },
     "content/handbook/finance/travel/sponsored.md": {
       "path": "content/handbook/finance/travel/sponsored.md",
@@ -19114,11 +19114,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "6922a5910f731dd441f582511639aa3d8a4b4d70",
-      "translated_at": "2026-09-16T21:05:51+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:09:14+00:00",
       "model": "codex",
-      "input_hash": "1c9e8b874b8861e447d30576ac497a189629dc185d5d213e49b59f6634ac9449",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "05c28dad5379c4500a2aeab8200de5547e2a9bf7b6bea3546a0f77d125f6db6f",
+      "upstream_committed_at": "2026-09-18T16:09:19+02:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -19138,11 +19138,11 @@
     },
     "content/handbook/tools-and-tips/ai/gitlab-duo.md": {
       "path": "content/handbook/tools-and-tips/ai/gitlab-duo.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:19:11+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:10:59+00:00",
       "model": "codex",
-      "input_hash": "9460c5d33caf973dd338cf51dfa3023e48f282596063c557d19f34b38ef9da0b",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "6c0559b29ab250e848074da6c809f51ebebf644f46513ad402b9294b095db665",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md": {
       "path": "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md",
@@ -19322,11 +19322,11 @@
     },
     "content/handbook/tools-and-tips/other-apps.md": {
       "path": "content/handbook/tools-and-tips/other-apps.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T10:32:00+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:09:14+00:00",
       "model": "codex",
-      "input_hash": "5850b544f6dc2a2a3d96b81d037fcee9142dc553aa9bc7a36c05b8485c4e89b3",
-      "upstream_committed_at": "2026-08-13T15:26:51-07:00"
+      "input_hash": "bd205ae72c9b7eafb9909628c460ff0a2f02af4b9caf44258915d71f78c5be5e",
+      "upstream_committed_at": "2026-09-16T12:32:11-04:00"
     },
     "content/handbook/tools-and-tips/personal-vpn.md": {
       "path": "content/handbook/tools-and-tips/personal-vpn.md",
@@ -19362,19 +19362,19 @@
     },
     "content/handbook/tools-and-tips/slack.md": {
       "path": "content/handbook/tools-and-tips/slack.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T13:14:29+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:09:14+00:00",
       "model": "codex",
-      "input_hash": "460c8c5dbb2cccb37ab25917c7eb0c6ac9f21414e0995698cfa8c6c4974d5d74",
-      "upstream_committed_at": "2026-09-11T13:54:05+02:00"
+      "input_hash": "e58b9451eb17e2781611ab8cd863ce0c5ada299420047e1abfdf1ee899828965",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/tools-and-tips/zoom.md": {
       "path": "content/handbook/tools-and-tips/zoom.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:21:07+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:09:14+00:00",
       "model": "codex",
-      "input_hash": "670c59f12453a4cbc77c8cfde15ac6811dcce6fff081ad7925d7b506b8f7f2d4",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "c3c8eedf47a55f32ead99f409854965dc46618e10bc02797d8859feb81aa698c",
+      "upstream_committed_at": "2026-09-18T16:09:19+02:00"
     },
     "content/handbook/total-rewards/_index.md": {
       "path": "content/handbook/total-rewards/_index.md",
@@ -19394,11 +19394,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
-      "upstream_sha": "4246c71d16beefada2a847b698b152ff280860c5",
-      "translated_at": "2026-09-11T21:22:25+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:06:29+00:00",
       "model": "codex",
-      "input_hash": "6c8c1779a0368931de36934598d66d40b8e038fbc47439a54e0be97c859a12e7",
-      "upstream_committed_at": "2026-09-11T12:50:47-07:00"
+      "input_hash": "64f3214d794e3447b58f7ea40a4f6c55235d86a032340576a1232216cc3fd6be",
+      "upstream_committed_at": "2026-09-17T12:56:13Z"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
@@ -19474,11 +19474,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
-      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
-      "translated_at": "2026-09-15T06:09:23+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:06:29+00:00",
       "model": "codex",
-      "input_hash": "3e2568e232af3373f1c7365f5269bedc46c8fff3fa4a409979e85fdb516d7b82",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "81a18b0510a3d60d07818bf46e5fbd0278c9c3df68d62948ca62197ddbfb1daf",
+      "upstream_committed_at": "2026-09-16T15:10:00-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
@@ -30650,11 +30650,11 @@
     },
     "content/handbook/people-group/_index.md": {
       "path": "content/handbook/people-group/_index.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:12:46+00:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:10:59+00:00",
       "model": "codex",
-      "input_hash": "89dafe6518fe83aac76ddcff012b5eea4885f3c95f169b85b06e781475562bb5",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "6b526f932ed374fb0bdfbe2dfb35142d3ab2211a88bd4ebf768299ef754613a3",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/people-group/acceptable-use-policy.md": {
       "path": "content/handbook/people-group/acceptable-use-policy.md",
@@ -30778,11 +30778,11 @@
     },
     "content/handbook/people-group/promotions-transfers.md": {
       "path": "content/handbook/people-group/promotions-transfers.md",
-      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
-      "translated_at": "2026-09-15T21:56:38Z",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:10:59+00:00",
       "model": "codex",
-      "input_hash": "bb4e114593cba11e81c66ed8f1e3e0b1371484038a8ebfeda4958d35ef590f91",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "e34e8fee8177dec48ca98a76d54b3cf94fa9785b4060c375edd2f97a6eea56ea",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/people-group/pronouns.md": {
       "path": "content/handbook/people-group/pronouns.md",
@@ -30834,11 +30834,11 @@
     },
     "content/handbook/people-group/visas.md": {
       "path": "content/handbook/people-group/visas.md",
-      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
-      "translated_at": "2026-09-15T21:56:38Z",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:10:59+00:00",
       "model": "codex",
-      "input_hash": "f50a1d68c08af8bc82e7018a267f18bca9a046fdec78d1523bd61497135cbc19",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "8c3b597d97f4398b5c1fba11bd48205f07d01719103f94383dcaf11c9b6eac3d",
+      "upstream_committed_at": "2026-09-17T12:53:39Z"
     },
     "content/handbook/people-group/time-off-and-absence/_index.md": {
       "path": "content/handbook/people-group/time-off-and-absence/_index.md",
@@ -34298,11 +34298,11 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:07:25+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:14:39+00:00",
       "model": "codex",
-      "input_hash": "dce5c098c2cc178990e70c05e6e699c779168a9da95f9bac8b338f3ead99b0bd",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "373636f4455eafe7ce94db6dff20d435e7923c685b55a9409ad5041cba90f013",
+      "upstream_committed_at": "2026-09-18T16:09:19+02:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-ai.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-ai.md",
@@ -34346,11 +34346,11 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:07:25+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-18T21:14:39+00:00",
       "model": "codex",
-      "input_hash": "a6e3505773a4c27bb5204d9799850530696393c1549075e1cb399d6993e7e229",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "c3582a9c720dd04dd3876ec96a9a663758038cfa050c2e8bfe1fe1308d028701",
+      "upstream_committed_at": "2026-09-18T16:09:19+02:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/supported-apps/reclaim-ai/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/supported-apps/reclaim-ai/_index.md",
