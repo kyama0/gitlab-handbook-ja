@@ -2,11 +2,11 @@
 title: サポートチーム APAC
 description: サポートチーム APAC のホームページ
 upstream_path: /handbook/support/apac/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-19T21:09:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T13:28:43+10:00"
+lastmod: "2026-09-18T17:08:11+12:00"
 ---
 
 ## サポートチーム APAC のハンドブックページへようこそ
@@ -111,7 +111,7 @@ lastmod: "2026-05-22T13:28:43+10:00"
 
 ## 運用メトリクスと測定
 
-### 確実な低パフォーマンスの崖 (Cliff of definite underperformance)
+### 確実な低パフォーマンスの崖 {#cliff-of-definite-underperformance}
 
 サポートエンジニアは、過去 4 週間のうち 3 週間で取り扱ったチケット数が 8 件未満の場合、
 確実に低パフォーマンスとみなされます。<i class="fa-solid fa-triangle-exclamation"></i>
@@ -147,13 +147,15 @@ lastmod: "2026-05-22T13:28:43+10:00"
 
 | **四半期** | **崖の数値** | **通知 Issue**  |
 |-------------| ---------------- | ------------------------|
-| FY27-Q1 (現行) | 7 | [STM#7455](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/7455) |
+| FY27-Q3 (現行) | 8 | [STM#7810](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7810) |
+| FY27-Q2 | 7 | Q3 まで計算しなかったため未通知 |
+| FY27-Q1 | 7 | [STM#7455](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/7455) |
 | FY26-Q4 | 6 | [STM#7281](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/7281) |
-| FY26-Q3 | 9 | Q4 まで計算しないため未通知 |
-| FY26-Q2 | 9 | Q4 まで計算しないため未通知 |
+| FY26-Q3 | 9 | Q4 まで計算しなかったため未通知 |
+| FY26-Q2 | 9 | Q4 まで計算しなかったため未通知 |
 | FY26-Q1 | 8 | [STM#6651](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6651) |
 | FY25-Q4 | 9 | [STM#6468](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6468) |
-| FY25-Q3 | 9 | Q4 まで計算しないため未通知 |
+| FY25-Q3 | 9 | Q4 まで計算しなかったため未通知 |
 | FY25-Q2 | 8 | [STM#6046](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6046) |
 | FY25-Q1 | 9 | [STM#5821](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/5821) |
 | FY24-Q4 | 8 | [STM#5672](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/5672) |
@@ -200,12 +202,7 @@ lastmod: "2026-05-22T13:28:43+10:00"
   1. フィルター:
      - Ticket form - Excluded:
        - L&R (週次の L&R 生産性数値が非常に高くなる可能性があるため除外。この数値から派生する基準を設定するのは、L&R を定期的に行わないサポートエンジニアにとって不公平となる)
-     - Updater tags - Selected:
-       - `jane_gianoutsos`
-       - `ket_slaats`
-       - `wei-meng_lee`
-     - Updater name - Excluded:
-       - `Anton Smith`
+     - APAC Leader Orgs - Updater - Selected:（これらの選択により Anton + ASE を除外します）
        - `Jane Gianoutsos`
        - `Ket Slaats`
        - `Wei-Meng Lee`
@@ -253,14 +250,13 @@ lastmod: "2026-05-22T13:28:43+10:00"
      - Update - Year
      - Update - Week of year
        - Filter > Edit date ranges > Advanced:
-         - From the beginning of: 4 weeks in the past.
-         - To the end of: 1 weeks in the past.
+         - From the beginning of: 4 週間前。
+         - To the end of: 1 週間前。
   1. 行:
-     - Updater tags
-       - Filter - Selected:
-         - `jane_gianoutsos`
-         - `ket_slaats`
-         - `wei-meng_lee`
+     - APAC Leader Orgs - Updater - Selected:（これらの選択により Anton + ASE を除外します）
+       - `Jane Gianoutsos`
+       - `Ket Slaats`
+       - `Wei-Meng Lee`
      - Updater name
   1. フィルター:
      - Comment type - Selected:
@@ -303,9 +299,9 @@ lastmod: "2026-05-22T13:28:43+10:00"
   測定のレビューが実施されたら:
 
 - 以下のためのマージリクエストを作成します:
-  - 数値が変わった場合は [Cliff of Definite Underperformance セクション](#cliff-of-definite-underperformance) の最初の段落の数値を更新する。
+  - 数値が変わった場合は [確実な低パフォーマンスの崖セクション](#cliff-of-definite-underperformance) の最初の段落の数値を更新する。
   - `Historical & Current Data` 表の上部に現四半期の数値を新しい行として追加する。`(Current)` データへの参照もこの行に移動する。
-- [Support Team Meta](https://gitlab.com/gitlab-com/support/support-team-meta) に、数値がレビューされたこと、変更があった場合はそれを記録するための通知 Issue を作成します。(以前の通知 Issue をテンプレートとしてコピーしてください)。
+- 数値をレビューしたことと変更の有無を記録するため、[Support Team Meta](https://gitlab.com/gitlab-com/support/support-team-meta)で通知 Issue（[四半期レビュー用 Issue テンプレート](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/new?issuable_template=Quarterly%20Review%3A%20Cliff%20of%20Definite%20Underperformance%20number)）を作成します。
 - `Historical and Current data` 表の該当列に、通知 Issue へのリンクを追加します。
 
   </details>

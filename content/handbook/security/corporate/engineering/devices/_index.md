@@ -2,9 +2,9 @@
 title: CorpSec Devices
 description: "CorpSec Devices は、GitLab のエンドポイントセキュリティコントロールプレーンを担当します。"
 upstream_path: /handbook/security/corporate/engineering/devices/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-lastmod: "2026-07-28T16:24:24+01:00"
-translated_at: "2026-07-30T07:50:13+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+lastmod: "2026-09-16T12:32:11-04:00"
+translated_at: "2026-09-19T21:18:00+00:00"
 translator: codex
 stale: false
 ---
@@ -23,6 +23,6 @@ CorpSec Devices は、以下を含むエンドポイントセキュリティコ�
 1. デバイス信頼とエンドポイントアプリケーション制御の強制
 1. ロック、ワイプ、再起動などのデバイスアクションを実行する保護された統合
 
-[Corporate IT / End User Services](/handbook/eta/corporate-it/end-user-services/) は、ユーザー向けのサポート体験、ノートパソコンの調達とロジスティクス、ハードウェア修理、委任された定型デバイスアクションを担当します。Corporate IT と CorpSec Devices は、サポート手順とセキュリティ要件の整合を保つため、エンドユーザーエンドポイントのドキュメントを共同で担当します。
+[Corporate IT / End User Services](/handbook/eta/corporate-it/end-user-services/)は、ユーザー向けのサポート体験、ノートパソコンの調達とロジスティクス、ハードウェア修理、委任された定型デバイスアクションを担当します。Corporate IT と CorpSec Devices は、サポート手順とセキュリティ要件の整合を保つため、エンドユーザーエンドポイントのドキュメントを共同で担当します。
 
-チーム手順、現在のツール、ランブック、エスカレーションのガイダンスについては、[CorpSec Devices TeamDocs](https://corpsecdevices-gitlab-io-a3d14d.gitlab.io/)を参照してください。
+チーム手順、現在のツール、ランブック、エスカレーションのガイダンスについては、[CorpSec Devices TeamDocs](https://corpsecdevices.gitlab.net/)を参照してください。

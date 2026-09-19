@@ -19586,11 +19586,11 @@
     },
     "content/handbook/support/apac.md": {
       "path": "content/handbook/support/apac.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "28cff4a46d7776cc7bb409ada8b2eeec247a964fd3a8fe389380c5321ffba373",
-      "upstream_committed_at": "2026-05-22T13:28:43+10:00"
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:09:47+00:00",
+      "model": "codex",
+      "input_hash": "2a5a89982f24559c1d5b939f99ac7d04ca0e5815d71539a4eb67928dd4f476d0",
+      "upstream_committed_at": "2026-09-18T17:08:11+12:00"
     },
     "content/handbook/support/aspiring_leaders.md": {
       "path": "content/handbook/support/aspiring_leaders.md",
@@ -20450,11 +20450,11 @@
     },
     "content/handbook/support/workflows/2fa-removal.md": {
       "path": "content/handbook/support/workflows/2fa-removal.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:21:07+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-20T06:05:46+09:00",
       "model": "codex",
-      "input_hash": "a98785a554ad8a9471b5e54fec14f036c605f770189f3adc1ed31932dba3a581",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "7cf200965a22e9e5742bdd8cc91933b19fcecd9e0de71eb18cc554cc4cdee2f0",
+      "upstream_committed_at": "2026-09-15T06:21:19-04:00"
     },
     "content/handbook/support/workflows/500_errors.md": {
       "path": "content/handbook/support/workflows/500_errors.md",
@@ -20562,11 +20562,11 @@
     },
     "content/handbook/support/workflows/cmoc_workflows.md": {
       "path": "content/handbook/support/workflows/cmoc_workflows.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "84539899b4b556d47d2b98d2052bc70d3c8e53e49e56c95bb438e2c617bf69c4",
-      "upstream_committed_at": "2026-03-12T14:30:38+00:00"
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:09:47+00:00",
+      "model": "codex",
+      "input_hash": "252d3637c5d4c28d806132e44376fbf13333855550bd74b13609cf187409e427",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/support/workflows/communication-tips.md": {
       "path": "content/handbook/support/workflows/communication-tips.md",
@@ -20578,11 +20578,11 @@
     },
     "content/handbook/support/workflows/community-support.md": {
       "path": "content/handbook/support/workflows/community-support.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T20:14:55Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "99b072ad2a4c8854410bf10e6b9012dc7cafdb5cea01658e8c81749633f0c41e",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:13:38+00:00",
+      "model": "codex",
+      "input_hash": "9011150db90712d0d5f8d94810c0e299b1a345781e73cff264880f7eebad0301",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/support/workflows/confirmation_emails.md": {
       "path": "content/handbook/support/workflows/confirmation_emails.md",
@@ -20690,11 +20690,11 @@
     },
     "content/handbook/support/workflows/dedicated_switchboard.md": {
       "path": "content/handbook/support/workflows/dedicated_switchboard.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:21:07+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:13:38+00:00",
       "model": "codex",
-      "input_hash": "7d20eb24e04409e0f1788c357a05bc309a1a55d4937793c5ded035e4284d7271",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "f4968861ae156f116b0b7c52531c3befca0c6740881bff5fed2a41bc4df04a5a",
+      "upstream_committed_at": "2026-09-14T11:39:01+08:00"
     },
     "content/handbook/support/workflows/dev_pulse.md": {
       "path": "content/handbook/support/workflows/dev_pulse.md",
@@ -21642,11 +21642,11 @@
     },
     "content/handbook/support/license-and-renewals/workflows/saas/compute_minutes_and_storage.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/saas/compute_minutes_and_storage.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T14:51:47+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:13:38+00:00",
       "model": "codex",
-      "input_hash": "8f0369a59206301fa189cb03cd30c0a61116e137a02faad6838ee592334e11e8",
-      "upstream_committed_at": "2026-08-20T16:01:05-07:00"
+      "input_hash": "ad61d8c725812d5515f4573a52af27a2bc12bfda64ac0a48b155ab878dfa116b",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md",
@@ -21946,11 +21946,11 @@
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T14:51:47+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:13:38+00:00",
       "model": "codex",
-      "input_hash": "4d2409e1cf2c352756d4768c5f011a0b1af64958413c2578306d02dfe997402b",
-      "upstream_committed_at": "2026-08-17T17:34:58-05:00"
+      "input_hash": "0df9598cea43ee58367d3cbd2b5898d159b31ec85e87141ed0c85bfd9e8ae4ce",
+      "upstream_committed_at": "2026-09-18T08:32:47+01:00"
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ticket-tsunami.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ticket-tsunami.md",
@@ -23218,11 +23218,11 @@
     },
     "content/handbook/security/security-assurance/security-risk/_index.md": {
       "path": "content/handbook/security/security-assurance/security-risk/_index.md",
-      "upstream_sha": "2ea342c4234f3820e0bad8565152836e52df6849",
-      "translated_at": "2026-07-03T20:37:21+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:18:00+00:00",
       "model": "codex",
-      "input_hash": "585e0f84c1c2bd442ee3c22dfde7a97686377ae3926c702555a8b4a913c75c59",
-      "upstream_committed_at": "2026-06-30T12:18:45-07:00"
+      "input_hash": "c63e6d5c987fc2262ce3579f4903cb0252564853eb3c1d4073097d8280e6d4c8",
+      "upstream_committed_at": "2026-09-17T12:39:20-07:00"
     },
     "content/handbook/security/security-assurance/security-risk/sox_cuec_mapping_procedure.md": {
       "path": "content/handbook/security/security-assurance/security-risk/sox_cuec_mapping_procedure.md",
@@ -23674,11 +23674,11 @@
     },
     "content/handbook/security/product-security/vulnerability-management/_index.md": {
       "path": "content/handbook/security/product-security/vulnerability-management/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "80d11f8412fcfd1849e858e956948d598bba38ade7eecf879833b3a1ad800f56",
-      "upstream_committed_at": "2026-02-06T19:27:57-05:00"
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:18:00+00:00",
+      "model": "codex",
+      "input_hash": "15de476fbf994c22f647014886c42bf35e618ab65e588d069f847be8d49ba918",
+      "upstream_committed_at": "2026-09-15T18:06:12-06:00"
     },
     "content/handbook/security/product-security/vulnerability-management/automation.md": {
       "path": "content/handbook/security/product-security/vulnerability-management/automation.md",
@@ -26090,11 +26090,11 @@
     },
     "content/handbook/security/policies_and_standards/security-logging-standard.md": {
       "path": "content/handbook/security/policies_and_standards/security-logging-standard.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e1a3dcbc51fc78c4b406ec44014324dbfd51c290912716234f33aba9ee807af0",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:18:00+00:00",
+      "model": "codex",
+      "input_hash": "1ea1c8726de928e55512d9bd6f152e1a54a8a7ca942210d22c23d338b7bfebc8",
+      "upstream_committed_at": "2026-09-16T08:51:21Z"
     },
     "content/handbook/security/policies_and_standards/software-development-lifecycle-standard.md": {
       "path": "content/handbook/security/policies_and_standards/software-development-lifecycle-standard.md",
@@ -33106,11 +33106,11 @@
     },
     "content/handbook/upstream-studios/experience-research/ux-bash/index.md": {
       "path": "content/handbook/upstream-studios/experience-research/ux-bash/index.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T08:32:10+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:20:08+00:00",
       "model": "codex",
-      "input_hash": "f9b15e71d777d962ebede00a375e03e8a07f246b71ebefd393a6985a8654b347",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "b7b4105de14aec0699db0587bc8bff3d0a0c333f9683325ab9099f55fac92796",
+      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
     },
     "content/handbook/upstream-studios/experience-research/ux-cloud-sandbox/index.md": {
       "path": "content/handbook/upstream-studios/experience-research/ux-cloud-sandbox/index.md",
@@ -34034,11 +34034,11 @@
     },
     "content/handbook/upstream-studios/product-design/workflow/mr-reviews/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/mr-reviews/_index.md",
-      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
-      "translated_at": "2026-07-22T06:32:52+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:20:08+00:00",
       "model": "codex",
-      "input_hash": "546b01fcbf9537d84abfc9a8a889225a1a7dd15a1077bd3ebd001878edddcd56",
-      "upstream_committed_at": "2026-07-21T08:59:24-03:00"
+      "input_hash": "b7c44c84574e7f8fa844e680f34a7bb5ac405edf8ef06a2219f1fe4f8a912779",
+      "upstream_committed_at": "2026-09-17T10:10:59-07:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md",
@@ -34170,11 +34170,11 @@
     },
     "content/handbook/security/corporate/engineering/devices/_index.md": {
       "path": "content/handbook/security/corporate/engineering/devices/_index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T07:50:13+09:00",
+      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
+      "translated_at": "2026-09-19T21:18:00+00:00",
       "model": "codex",
-      "input_hash": "76038e2211ee98768759be912a985ae7f7bf7ec2093f53ef7cd1200b4626e695",
-      "upstream_committed_at": "2026-07-28T16:24:24+01:00"
+      "input_hash": "ea8c170e3c817acd02873079294993b6c4729beb6808f64452e15c9f4df7d998",
+      "upstream_committed_at": "2026-09-16T12:32:11-04:00"
     },
     "content/handbook/eta/css/zendesk/copilot/admin-copilot.md": {
       "path": "content/handbook/eta/css/zendesk/copilot/admin-copilot.md",
