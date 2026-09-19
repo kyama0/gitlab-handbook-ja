@@ -2,11 +2,11 @@
 title: ASE としての PTO 計画
 description: Assigned Support Engineer の PTO 計画
 upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T14:51:47+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-19T21:13:38+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-17T17:34:58-05:00"
+lastmod: "2026-09-18T08:32:47+01:00"
 ---
 
 ## ASE PTO 計画
@@ -29,13 +29,13 @@ Assigned Support Engineer (ASE) 契約に定められているとおり、私た
 
 ### PTO からの復帰時
 
-復帰したら、バックアップと会って、バックアップ ASEがあなたの代わりに行った業務をレビューします。そして、顧客とアカウントチームに復帰を通知してください。
+復帰したら、バックアップと会って、バックアップがあなたの代わりに行った業務をレビューします。そして、顧客とアカウントチームに復帰を通知してください。
 
 このプロセスから学んだ教訓を、[Assigned Support Engineer プロジェクト](https://gitlab.com/gitlab-com/support/assigned-support-engineers/-/issues)で作成した Issue に追加し、その後 Issue をクローズします。このハンドブックページの改善も検討してください。
 
 ## PTO 地域カバー Pod パイロット (AMER)
 
-[RFC - Discuss options for PTO planning workflow update](https://gitlab.com/gitlab-com/support/assigned-support-engineers/-/issues/92#two-option-2-regional-coverage-pod-clustered-pool) での議論を受け、**2025-11-15** より、ASE は地域カバー Pod を使った PTO カバーの新形式をテストするパイロットプログラムを実施します。
+[RFC - PTO 計画ワークフロー更新の選択肢を議論する](https://gitlab.com/gitlab-com/support/assigned-support-engineers/-/issues/92#two-option-2-regional-coverage-pod-clustered-pool)での議論を受け、**2025-11-15** より、ASE は地域カバー Pod を使った PTO カバーの新形式をテストするパイロットプログラムを実施します。
 
 1 人の ASE が PTO 中の場合、残りの 2 人の ASE は **高優先度のアカウントのみ** をカバーします。平均的に、カバー担当の ASE は週あたり約 8 時間をカバー業務に費やすことを想定しています。
 
@@ -66,11 +66,11 @@ Pod は、アカウントの一貫したカバーを維持するために、緩�
 
 ### Pod がカバーできないとき {#when-your-pod-cant-cover}
 
-別の Pod からのカバーをリクエストするために `#support_assigned-support-eng` に投稿してください。他の ASE は 1〜2 アカウントを引き受けるよう申し出るべきです。48 時間以内（計画 PTO の場合）または 4 時間以内（緊急 PTO の場合）にボランティアがいない場合、ASE マネージャーがカバーを割り当てます。
+別の Pod からのカバーをリクエストするために `#support_assigned-support-eng` に投稿してください。他の ASE は 1 〜 2 アカウントを引き受けるよう申し出るべきです。48 時間以内（計画 PTO の場合）または 4 時間以内（緊急 PTO の場合）にボランティアがいない場合、ASE マネージャーがカバーを割り当てます。
 
 ### 現在の Pod 編成 {#current-pod-assignments}
 
-Pod にはリーダーがいません。メンバーは共有アカウントをサポートする際、[managers of one](/handbook/leadership/#managers-of-one) として行動し、グループとして意思決定を行うべきです。
+Pod にはリーダーがいません。メンバーは共有アカウントをサポートする際、[managers of one](/handbook/leadership/#managers-of-one)として行動し、グループとして意思決定を行うべきです。
 
 #### Pod alpha
 
@@ -89,5 +89,4 @@ Pod にはリーダーがいません。メンバーは共有アカウントを�
 
 - {{< member-by-gitlab "a.conrad" >}} - 4 アカウント - 米国
 - {{< member-by-gitlab "pselva" >}} - 2 アカウント - カナダ
-- {{< member-by-gitlab "jessie" >}} - 2 アカウント - 米国
 - {{< member-by-gitlab "dhickman" >}} - 2 アカウント - 米国

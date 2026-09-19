@@ -2,9 +2,9 @@
 title: "UX Bash"
 description: "バグを特定し、ユーザー体験を改善するための迅速で効率的な方法です。"
 upstream_path: /handbook/upstream-studios/experience-research/ux-bash/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T08:32:10+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+lastmod: "2026-09-18T21:20:33+02:00"
+translated_at: "2026-09-19T21:20:08+00:00"
 translator: codex
 stale: false
 ---
@@ -59,12 +59,12 @@ Bash は、[基礎リサーチ](/handbook/upstream-studios/experience-research/f
   - 全体的な品質の評価
   - 応答速度の評価
 
-#### ステップ 4. 採用 {#step-4-recruit}
+#### ステップ 4. 募集 {#step-4-recruit}
 
 - Bash に参加する人を決定します。実行可能なフィードバックを提供できるよう、参加者が機能の対象ユーザーを正確に代表していることを確認してください。Bash の目標に基づき、多様なグループまたは特定のオーディエンスを対象に選択できます。
-- Bash に参加者数の上限はありませんが、ニーズ、母集団から採用できる能力、データを効率的に分析する能力に基づいて拡大できます。過去の Bash は通常 5〜10 名のユーザーで構成されていました。
+- Bash に参加者数の上限はありませんが、ニーズ、母集団から参加者を募集できる能力、データを効率的に分析する能力に基づいて拡大できます。過去の Bash は通常 5〜10 名のユーザーで構成されていました。
 
-##### 内部参加者を採用する場合 {#for-recruiting-internal-participants}
+##### 内部参加者を募集する場合 {#for-recruiting-internal-participants}
 
 - #ux_research_volunteers Slack チャンネルで、今後の Bash について公式に告知します。
   - ![Slack 招待の例](/images/product/ux/ux-research/ux-bash/Bash_Slack_invite.png)
@@ -73,9 +73,9 @@ Bash は、[基礎リサーチ](/handbook/upstream-studios/experience-research/f
   - 対象を絞ったチャンネルの例: #security、#docs、#product、#development
 - プレースホルダーとしてカレンダーイベントを作成し、登録した人をイベントに追加します
 
-##### 外部参加者を採用する場合 {#for-recruiting-external-participants}
+##### 外部参加者を募集する場合 {#for-recruiting-external-participants}
 
-- コミュニティと外部ユーザーが活動している [GitLab Discord サーバー](/handbook/marketing/developer-relations/workflows-tools/discord/)に参加します
+- コミュニティと外部ユーザーが活動している [GitLab Discord サーバー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/discord/)に参加します
 - Discord プロフィールを GitLab チームメンバーとして記載してもらうため、Fatima Sarah Khalid（GitLab と Discord のハンドル: sugaroverflow）に連絡します。
 - 参加者に支払うための [Incentives Request Issue](/handbook/upstream-studios/research-operations/participation-gratuities/)を作成します。
 - [スクリーナーアンケート](/handbook/upstream-studios/experience-research/write-effective-screener/)へのリンクとともに、#announcements Discord チャンネルで Bash を告知します

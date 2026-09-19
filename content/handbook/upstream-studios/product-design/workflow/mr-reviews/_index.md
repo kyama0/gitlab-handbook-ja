@@ -1,17 +1,17 @@
 ---
 title: マージリクエストレビュー
-description: "プロダクトデザイナーがマージリクエスト（MR）をレビューする際のガイドライン。UX レビューまたはプロダクトデザイン MR レビューとも呼ばれます。"
+description: "Product Designers がマージリクエスト（MR）をレビューする際のガイドライン。UX レビューまたはプロダクトデザイン MR レビューとも呼ばれます。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/mr-reviews/
-upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-19T21:20:08+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-21T08:59:24-03:00"
+lastmod: "2026-09-17T10:10:59-07:00"
 ---
 
 ## 要件
 
-**プロダクトデザイナーは、ユーザーに見える変更を含む MR をレビューし、承認する必要があります。** [承認ガイドライン](https://docs.gitlab.com/development/code_review/#approval-guidelines)によれば、ユーザーに見える変更とは、（どんなに些細であっても）視覚的な変更と、スクリーンリーダーのアナウンスに影響する DOM レンダリングの変更の両方を含みます。
+**Product Designers は、ユーザーに見える変更を含む MR をレビューし、承認する必要があります。** [承認ガイドライン](https://docs.gitlab.com/development/code_review/#approval-guidelines)によれば、ユーザーに見える変更とは、（どんなに些細であっても）視覚的な変更と、スクリーンリーダーのアナウンスに影響する DOM レンダリングの変更の両方を含みます。
 
 UX に影響するバックエンドの変更（パフォーマンス、リストの並び替えなど）が含まれる MR は、ユーザーに見えるものでない限りレビューを必要としません。
 
@@ -38,21 +38,17 @@ UX に影響するバックエンドの変更（パフォーマンス、リス�
 
 ### コミュニティコントリビューション
 
-コミュニティから提出された MR は、影響を受けるグループのデザイン DRI に割り当てられます。グループにデザイナーがいない場合は、`@pedroms` がレビューします。GitLab Roulette は適切なデザイナーを自動的に提案し、`#ux-community-contributions` チャンネルに Slack メッセージを生成します。
-
-### 単一エンジニアリンググループの MR
-
-シングルエンジニアグループ（SEG）の MR は、影響を受けるグループのデザイン DRI がレビューすべきです。グループにデザイナーがいない場合、キャパシティ上の問題により MR レビューには対応できません。
+コミュニティから提出された MR は、影響を受けるグループのデザイン DRI に割り当てられます。グループにデザイナーがいない場合は、[代替レビュアー](https://gitlab.com/gitlab-org/ruby/gems/gitlab-dangerfiles/-/blob/master/lib/danger/plugins/roulette.rb?ref_type=heads#L130)がレビューします。GitLab Roulette は適切なデザイナーを自動的に提案し、`#ux-community-contributions` チャンネルに Slack メッセージを生成します。
 
 ## 作業量と応答時間
 
-MR レビュー依頼は[プロダクトデザイナーの最優先事項](/handbook/upstream-studios/product-design/workflow/capacity-management/#priorities)です。私たちの[レビュー応答のサービスレベル目標](/handbook/engineering/workflow/code-review/#review-response-slo)に従って応答してください。
+MR レビュー依頼は[Product Designers の最優先事項](/handbook/upstream-studios/product-design/workflow/capacity-management/#priorities)です。私たちの[レビュー応答のサービスレベル目標](/handbook/engineering/workflow/code-review/#review-response-slo)に従って応答してください。
 
 MR レビューを他のタスクとバランスを取るのは難しい場合があります。中断を避けるために、MR をレビューするための時間を毎日確保してください（例: 1 日 30 分または 1 時間）。レビューに苦戦している場合は、MR の作成者と[期待値を調整](/handbook/engineering/workflow/code-review/#managing-expectation)し、今後の休暇も考慮してキャパシティを見直してください。必要であれば、マネージャーと協力して MR を再割り当てしてください。
 
 ### MR レビュー作業量のモニタリング
 
-MR で過負荷になっている場合は、すぐにマネージャーに知らせてください。チーム内の別のデザイナーや、#ux_coworking Slack チャンネルで支援を依頼してください。プロダクトデザインマネージャーは、これらの発生をエスカレートしてモニタリングし、より広範な傾向を示しているかどうかを判断する必要があります。
+MR で過負荷になっている場合は、すぐにマネージャーに知らせてください。チーム内の別のデザイナーや、#ux_coworking Slack チャンネルで支援を依頼してください。Product Design Managers は、これらの発生をエスカレートしてモニタリングし、より広範な傾向を示しているかどうかを判断する必要があります。
 
 [GitLab Review Workload Dashboard](https://gitlab-org.gitlab.io/gitlab-roulette/?sortKey=stats.avg30&order=-1&hourFormat24=true&visible=reviewer%7CUX) と[プロダクトデザイン MR レビューボリューム](/handbook/product/ux/performance-indicators/#product-design-mr-review-volume)を使用して MR レビューの分配状況をモニタリングしてください。
 
@@ -67,7 +63,7 @@ MR の説明に以下が含まれていることを確認してください。
 - 変更内容に関する徹底的な説明。
 - 変更内容のテスト方法。
 - 関連 Issue へのリンク。
-- *Before* と *After* のスクリーンショット／動画（適切な場合）。
+- *変更前* と *変更後* のスクリーンショット／動画（適切な場合）。
 
 `~"UX"` ラベル付きでデザイン DRI や提案されたデザインがない MR の場合、変更に関する可能な限り多くの背景情報を集めてください。影響を受けるプロダクトエリアが不明な場合は、他のデザイナーやデザインマネージャーを巻き込んでください。
 
@@ -85,10 +81,10 @@ MR の説明に以下が含まれていることを確認してください。
 - **有料機能**: GitLab_Team_Member_License_Request テンプレートを使用して、[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new)でライセンスをリクエストしてください。[ライセンスをインスタンスに追加する](https://docs.gitlab.com/administration/license_file/#add-your-license-file-during-installation)。
   - CE と EE エディションを切り替えることもできます: [CE インスタンスをシミュレートする方法](https://docs.gitlab.com/development/ee_features/#simulate-a-ce-instance-when-unlicensed)。
 - **パイプライン関連機能と Runner 機能**: パイプラインを実行するために runner を作成または有効化します。[Gitpod で runner を作成](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/gitpod.md#enable-runners)または [GDK で作成](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/runner.md)してください。
-- **コンプライアンス**: stream destination URL を使用して[監査イベントストリーミング](https://docs.gitlab.com/administration/audit_event_streaming/)をテストするには、[Pipedream](https://pipedream.com/) で一時的な宛先を生成してください。
-- **Fulfillment**: Fulfillment のプロダクトデザイナーのみが CustomersDot の MR をレビューする必要があります。
-  - [CustomersDot をローカルでセットアップする](https://gitlab.com/gitlab-org/customers-gitlab-com/-/tree/main#setup)。実用的でない場合は、MR の説明にあるスクリーンショットや動画をレビューするか、エンジニアとデモの調整を行ってください。複雑な変更の場合は、変更を機能フラグの背後に保持し、マージ後にステージングでレビューしてください。
-- **Geo**: 2 つの **GDK** を Geo primary site と secondary site としてインストールおよび設定します。
+- **コンプライアンス**: ストリームの送信先 URL を使用して[監査イベントストリーミング](https://docs.gitlab.com/administration/audit_event_streaming/)をテストするには、[Pipedream](https://pipedream.com/) で一時的な宛先を生成してください。
+- **Fulfillment**: Fulfillment Product Designers のみが CustomersDot の MR をレビューする必要があります。
+  - [CustomersDot をローカルでセットアップする](https://gitlab.com/gitlab-org/customers-gitlab-com/-/tree/main#setup)。実用的でない場合は、MR の説明にあるスクリーンショットや動画をレビューするか、エンジニアとデモの調整を行ってください。複雑な変更の場合は、変更をフィーチャーフラグの背後に保持し、マージ後にステージングでレビューしてください。
+- **Geo**: 2 つの **GDK** を Geo のプライマリサイトとセカンダリサイトとしてインストールおよび設定します。
   - [簡単なインストール](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/geo.md)。
   - [動画](https://youtu.be/R58mgwDwjM8)と[スライド資料](https://docs.google.com/presentation/d/1azikV27LO68xobgJ7v399H1ppnLCmtB_kEKl_IMNI0Q/edit#slide=id.g123a13deda8_0_405)。
 - **Pipeline Execution**: コンピュート分数と共有 runner の使用に関連する機能については、過去のコンピュート分数の使用データをプロジェクトに投入してください。7 分以内にセットアップできます。
@@ -148,7 +144,7 @@ MR の説明に以下が含まれていることを確認してください。
 
 - **チェックリストを使用する**
   - [デザインと UI 変更のチェックリスト](https://docs.gitlab.com/development/contributing/design/#checklist)に従って、すべての主要な側面がカバーされていることを確認してください。
-  - 変更が機能フラグの背後に残り、ステージングで完全なレビューが計画されている場合、完全なレビュー前にマージすることを検討できます。これは計画外の問題につながる可能性があるため、慎重に行ってください。
+  - 変更がフィーチャーフラグの背後に残り、ステージングで完全なレビューが計画されている場合、完全なレビュー前にマージすることを検討できます。これは計画外の問題につながる可能性があるため、慎重に行ってください。
 - **UX 要件を遵守する**
   - Issue で指定された UX 要件を遵守してください。
   - [フォローアップチェックリスト](https://docs.gitlab.com/development/contributing/design/#follow-ups)を使用して、追加の更新や不足要素について Issue を作成してください。
