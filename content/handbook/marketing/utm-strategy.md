@@ -67,7 +67,7 @@ UTM が必要でなく、トラッキングを破壊する可能性のあるい�
 * GitLab 以外の Web プロパティにリンクする場合（例：Youtube、LinkedIn など）
 * 同じ gitlab.com ドメインの内部リンク。たとえば、about.gitlab.com の Web ページから learn.gitlab.com にリンクする場合。Google Analytics はクロスドメイン追跡用にセットアップされています。内部 gitlab.com リンク内に UTM が検出されると、新しいセッションがカウントされ、コンバージョン帰属は新しい UTM パラメータ値によって上書きされます。元のソースは適切なクレジットを受け取りません。
 
-## UTM の作成方法
+## UTM の作成方法 {#how-to-create-utms}
 
 [式付き UTM ビルダー googlesheet](https://docs.google.com/spreadsheets/d/12jm8q13e3-JNDbJ5-DBJbSAGprLamrilWIBka875gDI/edit#gid=29481466) を使用してください。スプレッドシートの [ビデオ概要はこちら](https://youtu.be/WRSIZ84027g) です。プロセスには以下のステップが含まれます：
 
