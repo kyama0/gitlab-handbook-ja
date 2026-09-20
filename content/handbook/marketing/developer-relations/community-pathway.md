@@ -1,11 +1,11 @@
 ---
 title: "Community Learning Pathway: コースリソース"
 upstream_path: /handbook/marketing/developer-relations/community-pathway/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:25:20+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-27T10:00:00+01:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## Community Learning Pathway
@@ -67,7 +67,7 @@ GitLab は DevOps プラットフォームであり、コミュニティから�
 
 * 無償のコミュニティプログラム:
   * [OSS](/handbook/marketing/developer-relations/programs/open-source-program/)
-  * [Developer Evangelism](/handbook/marketing/developer-relations/developer-advocacy/)
+  * [Developer Evangelism](/handbook/marketing/product-and-technical-marketing/developer-advocacy/)
   * [Education プログラム](/handbook/marketing/developer-relations/programs/education-program/)
 * [GitLab Diversity Scholarship プログラム](https://about.gitlab.com/community/sponsorship/)
 
@@ -95,7 +95,7 @@ GitLab は DevOps プラットフォームであり、コミュニティから�
 コミュニティチームは常に社内および外部チームとパートナーシップを組み、コミュニティをエンパワーしてきました。私たちはより多くを実現するためのコラボレーションを常に求めています。各コミュニティプログラムには Issue ボードがあり、そこに Issue を作成してコラボレーションを開始できます。または、GitLab チームメンバーで、どこから始めればよいかわからない場合は、いつでも Slack の `#developer-relations` チャンネルにお越しください。
 
 * Developer Relations チームと協働する方法
-  * [Developer Relations プログラム](/handbook/marketing/developer-relations/programs/operational-guidelines/)
-  * [Community Response](/handbook/marketing/developer-relations/developer-advocacy/community-response/)
+  * [Developer Relations Programs](/handbook/marketing/developer-relations/programs/operational-guidelines/)
+  * [Community Response](/handbook/marketing/product-and-technical-marketing/developer-advocacy/community-response/)
 * GitLab への貢献を始める
   * [Developer Portal](https://developer.gitlab.com/)

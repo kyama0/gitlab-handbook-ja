@@ -6,16 +6,16 @@ twitter_image_alt: GitLab's Social Media Community Management Handbook Page
 twitter_site: 'gitlab'
 twitter_creator: 'gitlab'
 upstream_path: /handbook/marketing/corporate-communications/social-marketing/community-management/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-translated_at: "2026-09-04T20:50:53+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:30:32+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## コミュニティマネジメントはチームでの取り組み
 
-私たちのコミュニティと効果的にコミュニケーションし応答するためには、応答や会話の管理はソーシャルメディア、[Developer Relations](/handbook/marketing/developer-relations/)、[Developer Advocates](/handbook/marketing/developer-relations/developer-advocacy)、各分野のエキスパート、サポートチームによる共同作業として行います。プロセスにおける主要な 2 チームは、ソーシャルチームと Developer Relations チームです。両者は最終的な応答ポイントとして、もしくは他のチームへメッセージを転送する責任者として機能します。
+私たちのコミュニティと効果的にコミュニケーションし応答するためには、応答や会話の管理はソーシャルメディア、[Developer Relations](/handbook/marketing/developer-relations/)、[Developer Advocates](/handbook/marketing/product-and-technical-marketing/developer-advocacy)、各分野のエキスパート、サポートチームによる共同作業として行います。プロセスにおける主要な 2 チームは、ソーシャルチームと Developer Relations チームです。両者は最終的な応答ポイントとして、もしくは他のチームへメッセージを転送する責任者として機能します。
 
 ## チームメンバーのソーシャル投稿へのエンゲージ
 
@@ -31,7 +31,7 @@ GitLab のブランドチャンネルは、チームメンバーのソーシャ�
 
 リツイートやシェアの対象として検討されるチームメンバーのソーシャル投稿には、次のものが含まれます：
 
-- コーポレートイベントが現在主導していない／していた／していない、地域全体（EMEA、APAC など）のイベントを宣伝するもの
+- corporate events が現在主導しているかどうかにかかわらず、地域全体（EMEA、APAC など）のイベントを宣伝するもの
 - 投稿者が自身のコンテンツを共有するもの（ブログの執筆者、イベントのスピーカーなど）
 - ブランドチャンネルの投稿でカバーしきれなかった重要な変更
 - GitLab の価値や製品を、楽しく、または教育的に体現・説明する投稿

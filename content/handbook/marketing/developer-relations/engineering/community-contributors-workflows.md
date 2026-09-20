@@ -2,11 +2,11 @@
 title: "コミュニティ貢献を扱うワークフロー"
 description: Co-Create & Community Engineering チームが扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T13:37:38+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:30:32+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-03T15:09:13+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## ワークフロー
@@ -277,7 +277,7 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
   - コミュニティがトピックを持ち寄れるオープンフロア
 - 参加方法の手順を含めます
   - Zoom (または他のビデオプラットフォーム) へのリンク
-- イベントを[デベロッパーアドボカシーチームカレンダー](/handbook/marketing/developer-relations/developer-advocacy/calendar)に追加します。GitLab チームメンバーでない場合は、[デベロッパーリレーションズ](/handbook/marketing/developer-relations/)チームのメンバーにイベントをカレンダーに追加するよう依頼してください。
+- イベントを[Developer Advocacy チームカレンダー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#calendar)に追加します。GitLab チームメンバーでない場合は、[Developer Relations](/handbook/marketing/developer-relations/)チームのメンバーにイベントをカレンダーに追加するよう依頼してください。
 - ソーシャルサポートのために以下の手順に従うか、[コードコントリビューターのプランニングリポ](https://gitlab.com/gitlab-com/marketing/community-relations/contributor-program/general/issues/new?issuable_template=event-support-request)でリクエストを開きます。
 
 ### ソーシャル
@@ -306,13 +306,13 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 利用可能なリソースの一部は、[hackathon-in-a-box フォルダ](https://drive.google.com/drive/u/0/folders/1YWb16NAguXq9T5kORhNcXOk3JwdaS4NF)、[GDK チュートリアルプレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KofEeWa9EXUOS8kJHOjIH_W)などで見つけることができます。プログラムマネージャーはオーガナイザーと協力して、初めて/経験の浅い貢献者に良い Issue のリストを作成し、イベント前に参加者と共有する必要があります。また、イベント中にマージリクエストを作成した人に配布できる GitLab グッズについて、オーガナイザーと連携する必要があります。
 
-### コミュニティオフィスアワー
+### コミュニティオフィスアワー {#community-office-hours}
 
 広範コミュニティと GitLab チームメンバー間のコミュニケーションを促進するために、製品チームはコミュニティオフィスアワーをホストすることがあります。これらのオフィスアワーの目的は、製品/開発に関する広範コミュニティのフィードバックを集め、広範コミュニティの貢献を議論し、MR のバックログをレビューし、その他のトピックを話し合うことです。オフィスアワー関連の Issue または MR には、[これらの例](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=Office%20Hours)で見ることができるように、`Office Hours` ラベルが付きます。
 
 通話は誰でも利用可能で、通話後に録画が投稿されます。[このプレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KrXZEInAfyddFlalvwaxL-I)で過去のオフィスアワーの例をご覧ください。コミュニティがビデオを見つけやすくするために、各ステージは独自のオフィスアワーのプレイリストを作成し、ハンドブックページからリンクする必要があります。
 
-すべてのコミュニティオフィスアワー通話は、[デベロッパーアドボカシーカレンダー](/handbook/marketing/developer-relations/developer-advocacy/calendar)と [meetup.com グループ](https://www.meetup.com/gitlab-virtual-meetups/)に追加する必要があります。
+すべてのコミュニティオフィスアワー通話は、[Developer Advocacy カレンダー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#calendar)と [meetup.com グループ](https://www.meetup.com/gitlab-virtual-meetups/)に追加する必要があります。
 
 #### オフィスアワー録画のセキュリティ上の注意
 
@@ -338,7 +338,7 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 - 日付と時刻が確定したら、次に追加します:
   - [meetup.com グループ](https://www.meetup.com/gitlab-virtual-meetups/) (meetup.com アカウントは GitLab の 1Password ボルトで利用可能)
-  - [デベロッパーアドボカシーカレンダー](/handbook/marketing/developer-relations/developer-advocacy/calendar)
+  - [developer advocacy カレンダー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#calendar)
 - Zoom URL と通話詳細で[オフィスアワーのランニングノートドキュメント](https://docs.google.com/document/d/18ddf5d5xASImrYnAG9P8VJXe0I63SBXy7ufDBBNB5H4/edit#)を更新します
 - [Discord で](https://discord.gg/gitlab)発表します
 - [GitLab をタグ付け](https://twitter.com/gitlab)してツイートします
@@ -432,7 +432,7 @@ Issue が `quick win` に該当しないと AI が判断した場合、ラベル
 など、コードとパイプラインの記述・理解に必要な時間を削減することで効率と効果を高める、AI を活用した機能を備えています。
 コミュニティ貢献者は、[コミュニティフォークへのアクセスをリクエスト](https://gitlab.com/groups/gitlab-community/community-members/-/group_members/request_access)した後に承認されると、GitLab Duo を受け取ります。
 
-### 製品ボーナスによる高価値貢献のハイライト
+### 製品ボーナスによる高価値貢献のハイライト {#highlighting-high-value-contributions-with-product-bonuses}
 
 これは FY25Q4 (2024 年 11 月 - 2025 年 1 月) に実施する実験です。
 
@@ -592,7 +592,7 @@ Contributor Success チームは、次のものを削除するために候補プ
 
 定期的な貢献者を認識するため、各暦年のトップ貢献者のリストが [Top Annual Contributors ページ](https://about.gitlab.com/community/top-annual-contributors/) に公開されます。トップ貢献者には 3 つのカテゴリがあります:
 
-- SuperStar: 75 件以上のマージ済み MR
+- SuperStar: 75 件を超えるマージ済み MR
 - Star: 11 件から 75 件のマージ済み MR
 - Enthusiast: 5 件から 10 件のマージ済み MR
 

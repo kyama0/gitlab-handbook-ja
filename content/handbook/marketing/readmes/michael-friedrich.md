@@ -3,11 +3,11 @@ title: "Michael 'dnsmichi' Friedrich README（Principal Developer Advocate）"
 description: "GitLab の Principal Developer Advocate である Michael 'dnsmichi' Friedrich とのコラボレーションについてご紹介します。"
 job: "Principal Developer Advocate"
 upstream_path: /handbook/marketing/readmes/michael-friedrich/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:18:09+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-25T21:10:14+01:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 このページは、私がどのように働き、どう連絡を取り、どこで一番役に立てるかを理解してもらうためのものです。私は意図的にオープンで、フィードバックを受け入れる姿勢でいます。
@@ -20,7 +20,7 @@ lastmod: "2026-03-25T21:10:14+01:00"
 
 ## TL;DR – 私と働くには
 
-- 私は **非同期ファースト** で働きます。アドホックな会議よりも、明確なコンテキストのある Issue/Epic/ハンドブックのドキュメントを基本にします。
+- 私は **非同期ファースト** で働きます。アドホックな会議よりも、明確なコンテキストのある Issue/エピック/ハンドブックのドキュメントを基本にします。
 - 私が他のことに取り組んでいる間でも他の人が続けられるよう、**ロー・コンテキストな書面コミュニケーション**を好みます。
 - 私のフォーカス: **GitLab Duo / Agent Platform、エージェント型 AI、DevSecOps 効率、組込み DevSecOps**。AI が実際の制約（レガシーコード、遅いパイプライン、エッジ／組込み、主権）と出会う領域で巻き込んでください。
 - **フォーカスタイムとエネルギー** を守ります（フォーカスブロック、出張＋休養）。インパクトを持続させるために、**No** と言ったり、スコープを下げたり、リダイレクトしたりします。
@@ -76,7 +76,7 @@ lastmod: "2026-03-25T21:10:14+01:00"
 
 ### コミュニケーション
 
-- **非同期ファースト。** 同期通話よりも、GitLab Issue/Epic、GDoc、Slack での議論を好みます。
+- **非同期ファースト。** 同期通話よりも、GitLab Issue/エピック、GDoc、Slack での議論を好みます。
   - 私がオフラインだったり、他のタスクに集中している間でも他の人が続けられるよう、すべての必要なコンテキストを提供する [ロー・コンテキストなコミュニケーション](/handbook/communication/#low-context) を使ってください。
   - [お互いの時間を尊重し](/handbook/communication/#be-respectful-of-others-time)、Slack で `@here/@channel` メンションを避けてください。
 - **私的より公開。**
@@ -142,7 +142,7 @@ lastmod: "2026-03-25T21:10:14+01:00"
 
 メールとカレンダーは、**Michael Friedrich** または **mfriedrich** で検索してください。
 
-[LinkedIn](https://www.linkedin.com/in/dnsmichi/) でのつながりや、あなたの仕事（採用、製品／エンジニアリングのインサイト、マーケティングなど）の増幅も喜んで行います。ソーシャルメディアのガイダンスについては [Developer Advocacy on Social Media](/handbook/marketing/developer-relations/developer-advocacy/social-media/) を参照してください。
+[LinkedIn](https://www.linkedin.com/in/dnsmichi/) でのつながりや、あなたの仕事（採用、製品／エンジニアリングのインサイト、マーケティングなど）の増幅も喜んで行います。ソーシャルメディアのガイダンスについては [Developer Advocacy on Social Media](/handbook/marketing/product-and-technical-marketing/developer-advocacy/social-media/) を参照してください。
 
 私の個人連絡先は社内では見られますが、外部で共有しないでください。フォームに電話番号が必要な場合は、[会社の電話番号](/handbook/communication/#company-phone-number) を使ってください。Slack が機能しない緊急インシデントの場合は、私の個人モバイルにテキストできます。
 
@@ -180,7 +180,7 @@ lastmod: "2026-03-25T21:10:14+01:00"
 
 - **講演:** https://dnsmichi.com/talks/
 
-  - [Developer Advocacy のコンテンツライブラリのメンテナンス対象講演](/handbook/marketing/developer-relations/developer-advocacy/content/#maintained-talks) で確認できます。
+  - [Developer Advocacy のコンテンツライブラリのメンテナンス対象講演](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#maintained-talks) で確認できます。
 
 - **ポートフォリオ:** https://dnsmichi.com/portfolio/
 - **GitLab ブログ記事:** https://about.gitlab.com/blog/authors/dnsmichi/

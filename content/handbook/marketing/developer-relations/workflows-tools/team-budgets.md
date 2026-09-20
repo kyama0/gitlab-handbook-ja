@@ -1,11 +1,11 @@
 ---
 title: "Developer Relations ワークフロー: チーム予算"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/team-budgets/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:27:10+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## <i class="fas fa-receipt" id="biz-tech-icons"></i> チーム予算
@@ -48,7 +48,7 @@ GitLab の他のチームと同様に、Developer Relations チームは各サ�
 
 #### Community チームの調達
 
-ほとんどの調達リクエストには Coupa を使用します。詳細については [Procurement Process ハンドブック](/handbook/finance/procurement/#how-to-start-procurement-process) を参照してください。
+ほとんどの調達リクエストには Coupa を使用します。詳細については [Procurement Process ハンドブック](/handbook/finance/procurement/#how-to-start-the-procurement-process) を参照してください。
 
 すべての請求書には PO 番号が必要なので、ベンダーには請求書に含める適切な PO 番号を伝える必要があります。PO 番号は Procurement チームによって割り当てられます。正しい PO 番号なしで受領した請求書は拒否され、関連する PO 番号を含めて再提出されなければなりません。質問は Slack の `#procurement` で Procurement チームに問い合わせてください。
 
@@ -66,6 +66,6 @@ Finance チームがコミュニティの swag 配布を追跡しやすくする
 
 Printfection 上のコミュニティプログラムキャンペーンには、定期的なメンテナンスコストがかかります。Printfection は固定のプリペイド金額単位で発送と取扱を行うため、頻繁に課金されることはありませんが、運用しているキャンペーンのコストとして発生します。
 
-### コミュニティイベントのスポンサーシップ
+### コミュニティイベントのスポンサーシップ {#community-event-sponsorship}
 
 スポンサーシップリクエストの取り扱いについての詳細は、Events ハンドブックページの [Suggesting an Event](/handbook/marketing/events/#suggesting-an-event) セクションを参照してください。

@@ -3,9 +3,9 @@ title: "Product and Technical Marketing"
 description: "GitLab Product and Technical Marketing ハンドブック"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/product-and-technical-marketing/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-04T22:10:08+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+lastmod: "2026-09-18T21:20:33+02:00"
+translated_at: "2026-09-20T01:18:09+00:00"
 translator: codex
 stale: false
 ---
@@ -25,7 +25,7 @@ Content Ops & Strategy は、GitLab の市場向けナラティブと Go-to-Mark
 
 Developer Advocacy は、技術コンテンツ、コミュニティとの交流、開発者との直接的なつながりを通じて、開発者に向けた声を GitLab のナラティブに取り入れます。
 
-- [Developer Advocacy ハンドブック](/handbook/marketing/developer-relations/developer-advocacy/)
+- [Developer Advocacy ハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/)
 - Slack：`#community-pulse`、`#developer-advocacy`、`#cfp`
 
 ### Product & Solutions Marketing {#product--solutions-marketing}

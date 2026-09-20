@@ -2,11 +2,11 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: "/handbook/marketing/marketing-operations/marketo/"
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T13:54:00+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:22:16+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-08-28T11:36:35-06:00"
+lastmod: "2026-09-14T13:51:01-06:00"
 ---
 
 ## Marketo について {#about-marketo}
@@ -63,7 +63,7 @@ Sales Systems は、[SFDC ステージング環境](/handbook/sales/field-operat
 
 ## フォーム {#forms}
 
-[こちら](https://internal.gitlab.com/handbook/marketing/marketing-ops-and-analytics/marketing-operations/operational-setup-marketo/)のドキュメントとともに、以下の手順を使用してください。私たちのウェブサイト（`about.gitlab.com`）のほぼすべてのフォームは Marketo 埋め込みフォームです。マーケティングオペレーションは、既存のフォームの維持と新しいフォームの作成を担当しています。
+[こちら](https://internal.gitlab.com/handbook/marketing/marketing-ops-and-analytics/marketing-operations/operational-setup-marketo/)のドキュメントとともに、以下の手順を使用してください。私たちのウェブサイト（`about.gitlab.com`）のほぼすべてのフォームは Marketo 埋め込みフォームです。Marketing Operations は、既存のフォームの維持と新しいフォームの作成を担当しています。
 
 私たちは主に Global フォームを使用しています。これは、フォームが複数のランディングページで使用され、フォームの自動化が個々の Marketo プログラムで処理されることを意味します。Global フォームで利用できないフィールドが必要な場合は、カスタムフォームをリクエストする必要があります。
 
@@ -135,7 +135,7 @@ dataLayer.push(
 
 ### データベースの定期的な削除 {#database-recurring-purge}
 
-マーケティングオペレーションは、データベースから非アクティブなリードを定期的に削除する自動化プロセスを作成しました。これにより、データ品質を維持し、不要なレコードを保管することに伴うコストを削減できます。リードは Marketo と Salesforce の両方から削除され、以下の基準に従います:
+Marketing operations は、データベースから非アクティブなリードを定期的に削除する自動化プロセスを作成しました。これにより、データ品質を維持し、不要なレコードを保管することに伴うコストを削減できます。リードは Marketo と Salesforce の両方から削除され、以下の基準に従います:
 
 | フィルタの説明              | 基準                                         | アクティビティ日 |
 |----------------------------------|-----------------------------------------------|------------------|
@@ -157,7 +157,7 @@ dataLayer.push(
 
 このプロセスは、最近のアクティビティがあるリード、プログラムを通過したリード、商談や現在の顧客に関連付けられたリードには影響しないことに注意してください。これにより、本当に非アクティブなレコードを削除しながら、価値のあるリードを保持できます。
 
-マーケティングオペレーションのチームメンバーは、プロセスが正しく実行されていることを確認し、対処が必要となる潜在的な問題や例外を特定するために、削除ログを定期的にレビューする必要があります。
+Marketing Operations のチームメンバーは、プロセスが正しく実行されていることを確認し、対処が必要となる潜在的な問題や例外を特定するために、削除ログを定期的にレビューする必要があります。
 
 このプロセスは[このスマートキャンペーン](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC53025A1ZN19)を通じて実行され、[このリスト](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52963827C3LA1)から基準を満たすすべてのレコードを削除します。
 
@@ -181,7 +181,7 @@ dataLayer.push(
 
 #### 国 &/または州値の標準化 {#standardization-of-country-or-state-values}
 
-`Country` &/または `State` フィールドの値が必要な Salesforce フォーマットを満たすことを保証するために、いくつかのワークフローでこれらのフィールドをクリーニングしています。州は省略形ではなく、スペルアウトする必要があります（例: CA は California）。`Country` &/または `State/Province` の標準化が SFDC と完全に一致しない場合、リードは同期されません。新しい標準化が必要な場合は、[マーケティングオペレーションプロジェクト](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=)で Issue を開いてください。SFDC で国/州が更新された場合、同期問題を防ぐために [customersDOT YML](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/3a7b78445d5cc1a5d53de7f003958004ec337ba5/data/countries.yml) ファイルも更新する必要があります。
+`Country` &/または `State` フィールドの値が必要な Salesforce フォーマットを満たすことを保証するために、いくつかのワークフローでこれらのフィールドをクリーニングしています。州は省略形ではなく、スペルアウトする必要があります（例: CA は California）。`Country` &/または `State/Province` の標準化が SFDC と完全に一致しない場合、リードは同期されません。新しい標準化が必要な場合は、[Marketing Operations プロジェクト](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=)で Issue を開いてください。SFDC で国/州が更新された場合、同期問題を防ぐために [customersDOT YML](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/3a7b78445d5cc1a5d53de7f003958004ec337ba5/data/countries.yml) ファイルも更新する必要があります。
 
 すべての標準化スマートキャンペーンは以下に含まれています:
 
@@ -234,7 +234,7 @@ MQL の瞬間の `Demographic`、`Behavior`、`Person` スコアは、Marketo �
 
 #### スコアリングモデルの更新 {#scoring-model-updates}
 
-セールスデベロップメントとマーケティングアナリティクスチームと協力し、マーケティングオペレーションは毎会計年度の Q4 にリードスコアリングモデルを更新します。モデルを更新する時期を制限することで、MQL の前年比ボリュームを公平に比較できます。年間を通じて変更を考慮する必要がある代わりに、レポーティングで言及できる小さな期間に変更を凝縮します。
+Sales Development と Marketing Analytics チームと協力し、Marketing Operations は毎会計年度の Q4 にリードスコアリングモデルを更新します。モデルを更新する時期を制限することで、MQL の前年比ボリュームを公平に比較できます。年間を通じて変更を考慮する必要がある代わりに、レポーティングで言及できる小さな期間に変更を凝縮します。
 
 年中にリードスコアリングモデルへのフィードバックを共有するには、[このエピック](https://gitlab.com/groups/gitlab-com/marketing/-/epics/5621)にコメントを残すか、既存の Issue をそのエピックにリンクしてください。私たちはこの Issue を頻繁にレビューし、リードスコアリングモデルを更新する際に各項目を考慮します。バグ修正と判断した場合は、Q4 のタイムフレーム前の更新を検討します。
 
@@ -259,7 +259,7 @@ MQL の瞬間の `Demographic`、`Behavior`、`Person` スコアは、Marketo �
 | Inbound - High  | Contact Request, <br> Renewals, <br> In-app Health Check, <br> Duo Requests <br> | +100 | 1日1回 |
 | Inbound - Hand Raise  | [Hand Raise PQL](/handbook/product/product-principles/#a-pql-can-be-further-broken-down-into-two-types-usage-and-hand-raise) | +100 | 1日1回 |
 | [PTP Score](https://internal.gitlab.com/handbook/sales/propensity_models/)  |Propensity Model 経由で新たに 4 または 5 のスコアが割り当てられ、Lead Score Classification 経由で `A` または `B` のランキングが割り当てられた場合。<br> 詳細は[教育用デッキ](https://docs.google.com/presentation/d/1dxSXekzw-SIF1g4pjNf6QGNBUY1L6euggsqqr9BTHUY/edit#slide=id.g1d24c3e4ddd_5_252)またはハンドブックを参照 <br>  | +100 | 90日に1回 |
-| Web Chat - <br>Qualified  |ウェブチャットインタラクションまたはミーティング予約 | +100 | 1日1回 |
+| Web Chat - <br>Qualified  |ウェブチャットインタラクションまたはミーティング予約 | +100 | 30 日に 1 回 |
 |* Inbound - Med|インバウンドフォーム、上記以外で Startup 申請者を除く |    +100|1日1回|
 |MM+ Valuable Trials | MM+ および EDU 除外の Valuable Trials（SaaS および Self-Managed）  |+100 |6ヶ月に1回|
 |User Gems Past Champ |User Gems によって以前の champion としてタグ付けされた人物|+100|3 ヶ月に 1 回|
@@ -337,7 +337,7 @@ MQL の瞬間の `Demographic`、`Behavior`、`Person` スコアは、Marketo �
 
 #### トライアル閾値スコアリング {#trial-threshold-scoring}
 
-標準のリードスコアリングモデルに加えて、GitLab は GitLab トライアル専用のセカンダリスコアリングモデルを活用し、特定の特性を示すトライアルユーザーを `MQL` させることを意図しています。トライアル閾値スコアリングシステムは、元のリードスコアリングワークフローと連携して機能します。スコアリングメカニズムは、AMER、APAC、EMEA リージョン内で、各リージョンの最も早いタイムゾーンに基づき、1 日 2 回、08:00 と 14:00 に発火します。トライアルユーザーは `31` ポイントに達すると `MQL` し、その後さらなるスコアリングから除外されます。スコアリングメカニズムは、プログラムメンバーシップと [Days Since Trial Counter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC72010C3ZN19) でフィルタリングされ、これはトライアル開始の `40 日` 後に終了します。
+標準のリードスコアリングモデルに加えて、GitLab は GitLab トライアル専用のセカンダリスコアリングモデルを活用し、特定の特性を示すトライアルユーザーを `MQL` させることを意図しています。トライアル閾値スコアリングシステムは、元のリードスコアリングワークフローと連携して機能します。スコアリングメカニズムは、AMER、APAC、EMEA リージョン内で、各リージョンの最も早いタイムゾーンに基づき、1 日 2 回、08:00 と 14:00 に発火します。トライアルユーザーは `31` ポイントに達すると `MQL` し、その後さらなるスコアリングから除外されます。メールドメインが `generic` と分類されているリードは、トライアル経由の MQL 化の対象から除外されます。スコアリングメカニズムは、プログラムメンバーシップと [Days Since Trial Counter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC72010C3ZN19) でフィルタリングされ、これはトライアル開始の `40 日` 後に終了します。
 
 | **トライアルスコアリング特性**| **スコアリングの説明** | **割り当てポイント** |
 | ------ | ------ | ------| ------ |
@@ -377,7 +377,7 @@ MQL の瞬間の `Demographic`、`Behavior`、`Person` スコアは、Marketo �
 
 ### セグメンテーション {#segmentations}
 
-Marketo セグメンテーションはスマートリストに似ていますが、永続的でマーケティングオペレーションのみが変更できます。動的コンテンツ（メールとランディングページ）を作成し、リストの高速処理に使用されます。セグメンテーションは Marketo のバックグラウンドで常に実行されているため、最新の数値のために更新する必要はありません。Marketo には合計 20 個のセグメンテーションしか持てません。セグメンテーション基準は、セグメンテーションを構成するセグメントリストの順序に基づいてウォーターフォールします。セグメンテーションの 1 つのセグメントにのみ存在できます。
+Marketo セグメンテーションはスマートリストに似ていますが、永続的で marketing ops のみが変更できます。動的コンテンツ（メールとランディングページ）を作成し、リストの高速処理に使用されます。セグメンテーションは Marketo のバックグラウンドで常に実行されているため、最新の数値のために更新する必要はありません。Marketo には合計 20 個のセグメンテーションしか持てません。セグメンテーション基準は、セグメンテーションを構成するセグメントリストの順序に基づいてウォーターフォールします。セグメンテーションの 1 つのセグメントにのみ存在できます。
 
 承認され、稼働中の以下のセグメンテーションがあります。
 
@@ -614,7 +614,7 @@ Marketo セグメンテーションはスマートリストに似ていますが
 {{% /details %}}
 
 
-[Trust Logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/8/overview/details) - このスニペットは、承認された顧客ロゴを表示するために使用されます。通常はサンクスページで使用されますが、ランディングページでも使用できます。スニペットは、ランディングページの `Trust Logos` セクションがオンに切り替えられた時に表示されます。マーケティングオペレーションのみが、カスタマーアドボカシーチームの指示に基づいてこのスニペットを編集できます。
+[Trust Logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/8/overview/details) - このスニペットは、承認された顧客ロゴを表示するために使用されます。通常はサンクスページで使用されますが、ランディングページでも使用できます。スニペットは、ランディングページの `Trust Logos` セクションがオンに切り替えられた時に表示されます。Marketing Operations のみが、カスタマーアドボカシーチームの指示に基づいてこのスニペットを編集できます。
 
 
 {{% details summary="MOps 用 - Trust Logo スニペットの編集方法" %}}
@@ -651,17 +651,17 @@ Marketo セグメンテーションはスマートリストに似ていますが
 ABM リストは、フィールドマーケティングおよびマーケティングプログラムチームが、セールスによって優先度が高いと判断されたアカウントをターゲットにしてメール/招待状を送信するために、リクエストに応じて構築されます。これらのリストは [Marketo データベース](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52943077A1)の DMA フォルダで見つけることができます。
 **MktgOps** チームは、これらのリストの作成と維持を担当しています。
 
-新しい ABM リストが必要な場合は、[Target list issue テンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して Issue を開き、マーケティングオペレーションをタグ付けしてください。
+新しい ABM リストが必要な場合は、[Target list issue テンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して Issue を開き、marketing ops をタグ付けしてください。
 
 ### 地理的 DMA リスト {#geographic-dma-list}
 
 地理的 DMA（direct marketing area）は、フィールドマーケティングおよびマーケティングキャンペーンチームが、フィールド &/または企業マーケティングイベントに関連するメール/招待状をターゲットに送信するために構築されました。**MktgOps** チームは、これらのリストの作成と維持を担当しています。これらのリストは Marketo の `Database` の `Geographic DMA List` [フォルダ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52900024A1)で見つけることができます。
 
-新しい DMA リストが必要な場合は、マーケティングオペレーションプロジェクトで Issue を開き、[DMA_request issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issuable_template=dma_request)を活用してください。
+新しい DMA リストが必要な場合は、Marketing Operations プロジェクトで Issue を開き、[DMA_request issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issuable_template=dma_request)を活用してください。
 
 #### フォーカスメールリスト {#focused-email-lists}
 
-フィールドマーケティングおよびマーケティングキャンペーンチームは、特定のリージョン、セクター、または企業を追求する際のツールとしてターゲットメールリストを使用します。メールリストリクエストは、[このテンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して提出する必要があります。そこから、キャンペーンマネージャーまたはマーケティングオペレーションがリストを構築またはレビューします。
+フィールドマーケティングおよびマーケティングキャンペーンチームは、特定のリージョン、セクター、または企業を追求する際のツールとしてターゲットメールリストを使用します。メールリストリクエストは、[このテンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して提出する必要があります。そこから、キャンペーンマネージャーまたは marketing ops がリストを構築またはレビューします。
 
 #### ターゲットリストの SLA {#sla-for-targeted-lists}
 

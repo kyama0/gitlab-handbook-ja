@@ -1,11 +1,11 @@
 ---
 title: "オープンソース成長戦略"
 upstream_path: "/handbook/engineering/open-source/growth-strategy/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T05:50:35Z"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:32:20+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-27T11:46:45+01:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## デュアルフライホイール
@@ -130,7 +130,7 @@ flowchart LR
 #### プロダクトとエンジニアリングの整合
 
 * **理由:** [プロダクトグループ](/handbook/company/structure/#product-groups)内では、コントリビューションの提出、バックログ、テクノロジースタックが異なります。健全なコミュニティバックログの整合と、アウトリーチのための共通のベストプラクティスの確立が、コントリビューターの成功に不可欠です。さらに、広域コミュニティコントリビューションのための統一された既知のワークフローが必要です。
-* **DRI:** [Developer Advocacy team](/handbook/marketing/developer-relations/developer-advocacy/) および [Developer Relations Engineering team](/handbook/marketing/developer-relations/engineering/)
+* **DRI:** [Developer Advocacy team](/handbook/marketing/product-and-technical-marketing/developer-advocacy/) および [Developer Relations Engineering team](/handbook/marketing/developer-relations/engineering/)
 
 #### コントリビューションガイドの簡素化と改善
 

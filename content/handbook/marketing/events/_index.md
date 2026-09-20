@@ -1,11 +1,11 @@
 ---
 title: GitLab イベント情報
 upstream_path: "/handbook/marketing/events/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-translated_at: "2026-09-11T12:58:54+00:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:25:20+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-10T23:59:14Z"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## GitLab のイベント
@@ -14,7 +14,7 @@ lastmod: "2026-09-10T23:59:14Z"
 
 マーケティング内には外部イベントを扱う 3 つのグループがあります。各グループには特定の目的があります。詳細については各ページを参照してください。
 
-- [Developer Relations](/handbook/marketing/developer-relations/events/)
+- [Developer Relations](/handbook/marketing/product-and-technical-marketing/developer-advocacy/events/)
 - [Corporate Events](/handbook/marketing/growth-marketing/corporate-events/)
 - [Field Marketing](/handbook/marketing/growth-marketing/regional-marketing/)
 
@@ -648,8 +648,8 @@ Sales nominated プロセスは、レコードがイベントへの招待を受�
 - FMM はランディングページ URL をブーススタッフ (およびブーススタッフのみ) と共有します
 - ブースの GitLab 担当者は、ランディングページ & フォームを使用して、会話したブース訪問者の詳細を追加できます
 - GitLab 担当者がフォームのメモ欄にメモを追加したかしないかによって、プログラムメンバーは以下のように Salesforce キャンペーンに入ります:
-- - メモ欄にメモがある場合 > キャンペーンステータス = `Follow Up Requested` > リードステータス = `MQL`
-- - メモ欄が空の場合 > キャンペーンステータス = `Visited Booth` > リードステータス = `Inquiry`
+  - メモ欄にメモがある場合 > キャンペーンステータス = `Follow Up Requested` > リードステータス = `MQL`
+  - メモ欄が空の場合 > キャンペーンステータス = `Visited Booth` > リードステータス = `Inquiry`
 - ブーススタッフは、イベント後 24 時間で、イベント Salesforce キャンペーンに行き、キャンペーンメンバーに関する追加メモを加えることができます
 - イベントが終了したら、FMC はオンサイト登録フォーム & ランディングページの Issue を介して Marketing Ops にフォームとランディングページを無効化するよう通知します
 
@@ -710,7 +710,7 @@ Field Marketing スワッグおよびイベントアセットに関するすべ�
 
 ## Developer Relations の詳細
 
-GitLab の Developer Relations チームは、私たちのコミュニティイベント (一般的には GitLab のエンドユーザーをターゲットにした 250 人未満の参加者のイベント) をレビューおよび管理しています。[Developer Relations ハンドブック](/handbook/marketing/developer-relations/events) には、Developer Relations チームがサポートするイベントに関する追加情報があります。
+GitLab の Developer Relations チームは、私たちのコミュニティイベント (一般的には GitLab のエンドユーザーをターゲットにした 250 人未満の参加者のイベント) をレビューおよび管理しています。[Developer Relations ハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/events) には、Developer Relations チームがサポートするイベントに関する追加情報があります。
 
 ## Corporate Events の詳細
 

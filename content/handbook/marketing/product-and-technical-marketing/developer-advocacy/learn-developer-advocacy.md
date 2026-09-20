@@ -1,0 +1,58 @@
+---
+description: "デベロッパーアドボカシー、コミュニティとの交流、影響の測定について学ぶためのリソース。"
+title: "デベロッパーアドボカシーを学ぶ"
+upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/learn-developer-advocacy/"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T21:20:33+02:00"
+translated_at: "2026-09-20T01:48:20+00:00"
+translator: codex
+stale: false
+---
+
+## アドボカシーとは何か？ {#what-is-advocacy}
+
+アドボカシーは、典型的なコンテンツマーケティングをはるかに超えて、テクノロジーのバイヤーや消費者と人と人とのつながりを生み出します。顔と名前を持つ人物がストーリーを語り、意見を述べ、最終的に意思決定に影響を与えるのです。
+
+多くの人は、Apple Computer の元 Chief Evangelist である Guy Kawasaki をアドボカシーの父と考えています。
+
+参考資料:
+
+* [https://www.forbes.com/sites/theopriestley/2015/08/28/why-every-tech-company-needs-a-chief-evangelist/](https://www.forbes.com/sites/theopriestley/2015/08/28/why-every-tech-company-needs-a-chief-evangelist/)
+* [https://en.wikipedia.org/wiki/Evangelism_marketing](https://en.wikipedia.org/wiki/Evangelism_marketing)
+
+### 誰がアドボケイトになれるのか？ {#who-can-be-an-advocate}
+
+**広い GitLab コミュニティの誰もがアドボケイトになれます。** マーケティングオペレーションでもインフラエンジニアリングでも、自分の仕事やオープンソースのエンタープライズテクノロジーのエコシステムについて、独自の視点を持っているはずです。
+
+### アドボカシーのステージ {#stages-of-advocacy}
+
+1. ビギナー - [ソーシャルメディア](/handbook/marketing/product-and-technical-marketing/developer-advocacy/social-media/)で適切なアカウントをフォローしはじめ、HN を定期的にチェックし、人々に返信するようになった段階。
+2. エンスージアスト - ブログ記事、動画、ソーシャル投稿、トークなどの形でコンテンツを作り始めた段階。会社のブログや Medium の出版物に何かを投稿したいときに、ときどき Issue を作成するようになります。
+3. プロ - 200 人を超える参加者がいる講演への登壇を依頼されたり、コンテンツがときどき話題になり、500 ビューを超える閲覧数を獲得することが多くなった段階。GitLab ブログや他のコミュニティブログ、ポッドキャスト、その他のコンテンツチャネルに定期的に貢献するようになります。
+
+### アドボケイトであることのメリット {#benefits-of-being-an-advocate}
+
+* ビギナー: 私たちのエコシステムに関する会話に参加することは、自分の仕事についてより微妙な視点を養うのに最適な方法です。それが新しくよりよいアイデアにつながります。業界のさまざまな視点を意識することで、戦略的思考の刺激が始まり、業務上の議論でより深く貢献できるようになります。
+
+* エンスージアスト: エンスージアストとして、あなたは公の場で専門知識を披露します。これは、あなたとあなたの会社が成果物から恩恵を受けることを意味し、新しい機会につながる名前認知の構築が始まります。新しい専門分野へとキャリアを転換したい場合にも、これは良いポジションです。
+
+* プロ: この段階では、専門家として認識され始めます。人々があなたの話を聞きたがり、コミュニティでの名前認知が得られます。これは、求人のオファー、昇進などにつながる可能性があります。
+
+## <i class="fa fa-newspaper-o" aria-hidden="true"></i> デベロッパーアドボカシーを実践として学ぶ {#learn-more-about-developer-advocacy-as-a-practice}
+
+具体的なエリア定義を含む良い概要は、[DevRel Notebook](https://github.com/konradsopala/devrel-notebook)で見つけることができます。[DevRel Resources](https://devrelresourc.es/)は DevRel に関するリソースの包括的なコレクションです。私たちは[ソーシャルメディア](/handbook/marketing/product-and-technical-marketing/developer-advocacy/social-media/)でデベロッパーアドボカシー、リレーションズ、エバンジェリズムの友人たちとも交流しています。
+
+私たちの KPI とプロセスは、業界のベストプラクティスに従っています。新しいアイデアやさまざまな戦略を定期的にイテレーションしています。次の記事は、デベロッパーアドボカシーの新しい方法を探るのに役立つでしょう:
+
+* [Developer Relations の成功と KPI の測定 - コミュニティによる概要](https://dev.to/tessamero/measuring-success-and-kpis-in-developer-relations-community-contributed-outline-1383)
+* [Developer Relations チームの影響を測定する](https://openviewpartners.com/blog/measuring-the-impact-of-your-developer-relations-team/)
+* [デベロッパーエバンジェリズムと GitHub メトリクス - スターが答えにならない理由](https://developerrelations.com/strategy-and-metrics/developer-evangelism-github-metrics)
+* [Cisco の Tessa Mero と学ぶデベロッパーエバンジェリズム](https://web.archive.org/web/20220629131422/https://openchannel.io/blog/developer-evangelism-tessa-mero-cisco/)
+* [Elastic の Developer Advocate（🥑）は何をするのか？](https://xeraa.net/blog/2020_what-do-you-do-as-a-developer-advocate-at-elastic/)
+* [コードの教え方](https://welearncode.com/teaching-code/) - Ali Spittel 著
+
+## <i class="fa fa-external-link" aria-hidden="true"></i> 役立つリンク {#useful-links}
+
+1. [ソーシャルメディアで活動する Developer Advocates](/handbook/marketing/product-and-technical-marketing/developer-advocacy/social-media/)
+1. [講演募集と登壇リソース](/handbook/marketing/product-and-technical-marketing/developer-advocacy/cfps/)
+1. [私たちが連携するコンソーシアム](/handbook/marketing/developer-relations/programs/open-source-program/#consortium-memberships-and-sponsorships)

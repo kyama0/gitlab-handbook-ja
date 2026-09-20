@@ -1,12 +1,14 @@
 ---
 title: "Developer Relations のワークフローとツール"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/
-upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
-lastmod: "2026-09-13T04:09:59-04:00"
-translated_at: "2026-09-16T21:09:55+00:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+lastmod: "2026-09-18T21:20:33+02:00"
+translated_at: "2026-09-20T01:25:20+00:00"
 translator: claude
 stale: false
 ---
+
+> Developer Advocacy が担当するツールとプラットフォームは、[Developer Advocacy のツールとプラットフォームのハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/)に移動しました。チーム予算、メール、Swag のワークフローは、Co-Create & Community Engineering が確認して移行するため、このセクションに残っています。
 
 ## ワークフロー
 
@@ -19,28 +21,10 @@ stale: false
 
 ### チームのワークフロー
 
-- [行動規範の施行](/handbook/marketing/developer-relations/workflows-tools/code-of-conduct-enforcement/)
-- [チーム予算](/handbook/marketing/developer-relations/workflows-tools/team-budgets)
-- [Developer Advocate のコミュニティ対応プロセス](/handbook/marketing/developer-relations/developer-advocacy/community-response/)
-- [Community Operations: 自動化されたコミュニティプログラム](/handbook/marketing/developer-relations/programs/program-resources/#automated-application-workflow)
-- [Swag の運用](/handbook/marketing/developer-relations/workflows-tools/swag/)
-- [コンテンツレビュー / Fix Fridays](/handbook/marketing/developer-relations/workflows-tools/content-review/)
-
-### コミュニティプラットフォーム
-
-- [Forum](/handbook/marketing/developer-relations/workflows-tools/forum/)
-- [Discord](/handbook/marketing/developer-relations/workflows-tools/discord/)
-- [Reddit](/handbook/marketing/developer-relations/workflows-tools/reddit/)
-- [StackOverflow](/handbook/marketing/developer-relations/workflows-tools/stackoverflow/)
-
-### 自動化
-
-- [Workato](/handbook/marketing/developer-relations/workflows-tools/workato/)
-
-### コミュニケーション
-
+- [チーム予算](/handbook/marketing/developer-relations/workflows-tools/team-budgets/)
 - [Email](/handbook/marketing/developer-relations/workflows-tools/e-mail/)
-- [Twitter](/handbook/marketing/developer-relations/workflows-tools/twitter/)
+- [Swag の運用](/handbook/marketing/developer-relations/workflows-tools/swag/)
+- [Community Operations: 自動化されたコミュニティプログラム](/handbook/marketing/developer-relations/programs/program-resources/#automated-application-workflow)
 
 ### Tech Stack への追加が保留中のツール
 

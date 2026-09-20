@@ -2,11 +2,11 @@
 title: "Co-Create & Community Engineering チーム"
 description: "Co-Create & Community Engineering チーム"
 upstream_path: /handbook/marketing/developer-relations/engineering/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T13:37:38+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:27:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-03T15:09:13+02:00"
+lastmod: "2026-09-18T16:54:43+02:00"
 model: claude-opus-4-7
 ---
 
@@ -32,6 +32,7 @@ model: claude-opus-4-7
 | **イノベーションピッチコンペティション** | [イノベーションピッチコンペティション](/handbook/marketing/developer-relations/engineering/innovation-pitch-competition) |
 | **あなたのコントリビューションを紹介する** | [あなたのコントリビューションを紹介する](/handbook/marketing/developer-relations/engineering/showcase-your-contributions) |
 | **オブザーバビリティアラートのトリアージ** | [コントリビュータープラットフォームのアラートを調査してクローズする方法](/handbook/marketing/developer-relations/engineering/observability-alert-triage) |
+| **進捗報告の方法** | [進捗報告の方法](/handbook/marketing/developer-relations/engineering/how-we-report) |
 
 ---
 
@@ -119,7 +120,7 @@ GitLab の [Co-Create プログラム](https://about.gitlab.com/community/co-cre
 
 ## OKR
 
-OKR は公開されていません。ただし、四半期の目標と主要な成果を含め、これらの目標を常に念頭に置いていることはご安心ください。
+OKR は公開されていません。ただし、四半期の目標と主要な成果を含め、これらの目標を常に念頭に置いていることはご安心ください。目標、主要な成果、そしてそれらを実現するための作業をどのように構成するかは、[進捗報告の方法](/handbook/marketing/developer-relations/engineering/how-we-report)に記載しています。
 
 ## パフォーマンス指標
 

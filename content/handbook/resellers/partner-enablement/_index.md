@@ -1,11 +1,11 @@
 ---
 title: "パートナーテクニカルプリセールスイネーブルメント"
 upstream_path: /handbook/resellers/partner-enablement/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:22:16+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -35,7 +35,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 [GitLab User Webinars and Labs](https://university.gitlab.com/pages/gitlab-user-webinars)
 
-- 私たちのカスタマーサクセスチームは各地域で定期的にイネーブルメントセッションを行っており、参加したり同僚や顧客に紹介したりできます。
+- 私たちの Customer Success チームは各地域で定期的にイネーブルメントセッションを行っており、参加したり同僚や顧客に紹介したりできます。
 - 今後のセッションを確認し、参加を奨励してください！
 
 **DevSecOps コンセプトに関するトピック別記事**
@@ -100,7 +100,7 @@ GitLab とは何か、何を提供し、何を行うのかを学びます。
 
 **プラットフォームを示すのに役立つデモリソース**
 
-- [Product tours](/handbook/marketing/developer-relations/developer-advocacy/content/#product-tours)（インタラクティブデモ）
+- [Product tours](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#product-tours)（インタラクティブデモ）
   - [Navattic](https://www.navattic.com/) を利用した、（潜在）顧客向けのセルフガイド型ハンズオン体験集です。ライブデモの代替や、安全なフォールバックとしても活用できます。
 - [Start a Free Trial](https://gitlab.com/-/trials/new)（Web ページ）
   - GitLab.com 上の GitLab SaaS の無料トライアルを開始するための汎用リンクです。人気が高まっています。

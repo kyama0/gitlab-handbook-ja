@@ -2,9 +2,9 @@
 title: GitLab のコミュニケーション
 description: "オールリモートの企業として、つながりを保ちながらより効率的に働くために、明確なコミュニケーションを実践することが私たちにとって重要です。"
 upstream_path: /handbook/communication/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-lastmod: "2026-09-02T10:04:44-04:00"
-translated_at: "2026-09-04T11:09:38+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+lastmod: "2026-09-18T21:20:33+02:00"
+translated_at: "2026-09-20T01:32:20+00:00"
 translator: codex
 stale: false
 ---
@@ -151,7 +151,7 @@ GitLab では、意図的な透明性やオープンな対話への人々の参�
 1. 単一の顧客ミーティングのためであっても、チャンネルを作るのはまったく問題ありません。これらのチャンネルは、その「社内」的な性質（顧客とは共有されない）を示すために "a\_<customer-name>-internal" と名付けるべきです。
 1. {{% a "low-context" %}} コミュニケーションにおいて明示的になることで、[ローコンテキストコミュニケーション](https://en.wikipedia.org/wiki/High-context_and_low-context_cultures)を使ってください。私たちはオールリモートの企業で、世界中に拠点があります。混乱を避けるために、できる限り多くのコンテキストを提供してください。関連して、私たちはコミュニケーションの効率のために[ユビキタス言語](#ubiquitous-language)を使います。
 1. 概念について議論するとき、仮定の話に傾きすぎないように注意してください。価値が下がり、全員が統一された意思決定に至る助けとしてもはや建設的でなくなる転換点があります。
-1. [より良い文章を書くためのヒント](/handbook/company/culture/all-remote/)を参考にしてください。
+1. [文章スタイルのガイドライン](/handbook/communication/#writing-style-guidelines)を参考にしてください。
 
 ### 社内コミュニケーションチャンネルのガイダンス {#internal-communication-channel-guidance}
 
@@ -319,7 +319,7 @@ Issue を作成するときに覚えておくべきことをいくつか挙げ�
 1. 機能が[**完了**](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)したら、対応するドキュメントへのリンクを追加するよう説明を更新してください。検索エンジンを使うと、Issue がドキュメントページより前に表示されることが多く、機能に関する関連情報を見つけにくくなります。
 1. Issue は私的な情報を除外して書いてください。こうすれば Issue をパブリックにできます。Issue が[非公開情報](/handbook/communication/confidentiality-levels/#not-public)を含む必要がある場合にのみ、機密 Issue を使ってください。**注:** 機密 Issue は[レポーターアクセス以上を持つプロジェクトの全メンバーがアクセスできます](https://docs.gitlab.com/ee/user/project/issues/confidential_issues.html#permissions-and-access-to-confidential-issues)。より厳格なレベルの機密性を要する項目には、Google Doc の使用を検討してください。
 1. パブリックな Issue 内のコンテンツが機密の[非公開情報](/handbook/communication/confidentiality-levels/#not-public)とみなされるものに移行した場合、その Issue を機密にできます。
-1. パブリックな Issue のコンテンツが、私たちの[行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/)に違反するとみなされるコメントを引き起こした場合、その Issue はロックされ、[モデレーションを受ける](/handbook/marketing/developer-relations/workflows-tools/code-of-conduct-enforcement/#overview)ことがあります。
+1. パブリックな Issue のコンテンツが、私たちの[行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/)に違反するとみなされるコメントを引き起こした場合、その Issue はロックされ、[モデレーションを受ける](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/code-of-conduct-enforcement/#overview)ことがあります。
 
 ### 会社全体へのアナウンスの仕方 {#how-to-make-a-company-wide-announcement}
 

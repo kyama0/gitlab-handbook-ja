@@ -3,11 +3,11 @@ title: "マーケティング"
 description: "GitLab マーケティングハンドブック: Brand Experience、Corporate Communications、Product and Technical Marketing、Growth Marketing"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T13:29:37+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:18:09+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 GitLab は、チームが[信頼を保ちながら、より速くリリース](https://about.gitlab.com/)できるよう支援します。マーケティングは、GitLab のブランドと市場でのナラティブを形作り、顧客やコミュニティとつながり、需要を創出し、社外からの評価を管理することで、この約束を支えます。
@@ -58,7 +58,7 @@ GitLab は、チームが[信頼を保ちながら、より速くリリース](h
 | チーム | ハンドブック | Slack |
 | ------ | ------ | ------ |
 | Content Ops & Strategy | [Content Ops & Strategy ハンドブック](/handbook/marketing/product-and-technical-marketing/content/) | `#content`, `#content-updates` |
-| Developer Advocacy | [Developer Advocacy ハンドブック](/handbook/marketing/developer-relations/developer-advocacy/) | `#developer-advocacy`, `#cfp`, `#community-pulse` |
+| Developer Advocacy | [Developer Advocacy ハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/) | `#developer-advocacy`, `#cfp`, `#community-pulse` |
 | Product & Solutions Marketing | [Product & Solutions Marketing ハンドブック](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | `#ask-product-and-technical-marketing` |
 | Tech Writing & Globalization | [Tech Writing ハンドブック](/handbook/marketing/product-and-technical-marketing/technical-writing/)、[Globalization ハンドブック](/handbook/marketing/product-and-technical-marketing/globalization/) | `#tech-writing-and-globalization`, `#docs` |
 
@@ -106,14 +106,14 @@ GitLab の Marketing チームで働く人たちを知るには、[README](/hand
 
 | トピック | 連絡先 | サブチーム |
 | ------ | ------ | ------ |
-| ブログ投稿、ウェブキャスト、ニュースレター、その他のマーケティングコンテンツ | `#content` | [コンテンツ](/handbook/marketing/product-and-technical-marketing/content/) |
-| スワッグ | `#swag` | [ブランド](/handbook/marketing/brand-experience/) |
-| デザインのリクエスト、ロゴ使用に関する質問 | `#marketing-design` | [ブランド](/handbook/marketing/brand-experience/) |
-| 外部 PR（広報）エージェンシー、GitLab メディア掲載の議論、スピーキング・ポッドキャスト・解説の機会の評価 | `#external-comms` | [コーポレートコミュニケーション](/handbook/marketing/corporate-communications/) |
-| マーケティング Web サイトと Web 開発に関するすべての事項 | `#digital-experience-team` | [デジタルエクスペリエンス](/handbook/marketing/digital-experience/) |
-| [マーケティングテックスタック](/handbook/marketing/marketing-operations/)のツールに関する質問、新しいマーケティングツールの評価、マーケティングシステムプロセスの改善 | `#mktgops` | マーケティングオペレーション |
-| マーケティングコミュニケーションの[法的に準拠した言語](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/legal-privacy/#marketing-rules-and-consent-language)に関するルール（_内部のみ_） | `#mktgops` | マーケティングオペレーション |
-| Salesforce | `#sfdc-users` | セールスオペレーション（マーケティングではない） |
+| ブログ投稿、ウェブキャスト、ニュースレター、その他のマーケティングコンテンツ | `#content` | [Content](/handbook/marketing/product-and-technical-marketing/content/) |
+| スワッグ | `#swag` | [Brand](/handbook/marketing/brand-experience/) |
+| デザインのリクエスト、ロゴ使用に関する質問 | `#marketing-design` | [Brand](/handbook/marketing/brand-experience/) |
+| 外部 PR（広報）エージェンシー、GitLab メディア掲載の議論、スピーキング・ポッドキャスト・解説の機会の評価 | `#external-comms` | [Corporate Communications](/handbook/marketing/corporate-communications/) |
+| マーケティング Web サイトと Web 開発に関するすべての事項 | `#digital-experience-team` | [Digital experience](/handbook/marketing/digital-experience/) |
+| [マーケティングテックスタック](/handbook/marketing/marketing-operations/)のツールに関する質問、新しいマーケティングツールの評価、マーケティングシステムプロセスの改善 | `#mktgops` | Marketing Operations |
+| マーケティングコミュニケーションの[法的に準拠した言語](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/legal-privacy/#marketing-rules-and-consent-language)に関するルール（_内部のみ_） | `#mktgops` | Marketing Ops |
+| Salesforce | `#sfdc-users` | Sales Operations（Marketing ではない） |
 
 Marketing チームの Slack チャンネルは、[私たちのチーム](#our-teams)で確認できます。
 
@@ -127,20 +127,20 @@ Marketing チームの Slack チャンネルは、[私たちのチーム](#our-t
 すべてのチームは自らソーシャル投稿をリクエストする責任があります。特定のカテゴリやキャンペーンの DRI でなく、ソーシャル投稿をリクエストしたい場合は、最初のステップとして以下に記載されているチームの窓口に連絡してください。これらの役割のチームメンバーは、リクエストを断る権利を持っています。承認された場合は、その窓口と連携して[新しいソーシャルリクエスト Issue を作成](/handbook/marketing/corporate-communications/social-marketing/)し、ソーシャルチームがリクエストを処理して投稿をスケジュールできるようにします。チームの窓口またはマーケティングやソーシャルチームのメンバーは、ブランドボイスの一貫性を確保するためにコピーを調整する場合があります。
 
 - イベント: Jr. Content Editor
-- リリース・テクニカル投稿・製品アップデート: [テクニカルライティング](/handbook/marketing/product-and-technical-marketing/technical-writing/)
-- Twitter/X でのユーザーの質問・コメント: [ソーシャルマーケティング](/handbook/marketing/corporate-communications/social-marketing/) または [デベロッパーリレーションズ](/handbook/marketing/developer-relations/) チーム
-- リードジェンキャンペーン: [コンテンツ](/handbook/marketing/product-and-technical-marketing/content/) チーム
+- リリース・テクニカル投稿・製品アップデート: [Technical writing](/handbook/marketing/product-and-technical-marketing/technical-writing/)
+- Twitter/X でのユーザーの質問・コメント: [Social Marketing](/handbook/marketing/corporate-communications/social-marketing/) または [Developer Relations](/handbook/marketing/developer-relations/) チーム
+- リードジェンキャンペーン: [Content](/handbook/marketing/product-and-technical-marketing/content/) チーム
 - UX デザイン: UX Lead
-- プレス・メディア報道: `#external-comms` に投稿して[コーポレートコミュニケーション](/handbook/marketing/corporate-communications/)チームのサポートを受けてください
+- プレス・メディア報道: `#external-comms` に投稿して[Corporate Communications](/handbook/marketing/corporate-communications/)チームのサポートを受けてください
 - ソーシャルメディア、メンションのリシェア、CEO のステートメント・投稿: `#social_media_action` に投稿してサポートを受けてください
 
 ### 会社のスポークスパーソン
 
-GitLab チームメンバーとして、カンファレンス、メディア、ポッドキャストで GitLab を代表して発言することは重要な責任です。ガイドラインとトレーニングについては、[コーポレートコミュニケーション ハンドブックページ](/handbook/marketing/corporate-communications/)を参照してください。
+GitLab チームメンバーとして、カンファレンス、メディア、ポッドキャストで GitLab を代表して発言することは重要な責任です。ガイドラインとトレーニングについては、[Corporate Communications ハンドブックページ](/handbook/marketing/corporate-communications/)を参照してください。
 
 ### ブログ投稿の編集
 
-- テクニカルコミュニティ投稿・チュートリアル: [デベロッパーアドボカシー](/handbook/marketing/developer-relations/developer-advocacy/) および [ブログ編集](/handbook/marketing/product-and-technical-marketing/content/) チーム
+- テクニカルコミュニティ投稿・チュートリアル: [Developer Advocacy](/handbook/marketing/product-and-technical-marketing/developer-advocacy/) および [ブログ編集](/handbook/marketing/product-and-technical-marketing/content/) チーム
 - その他すべてのブログ投稿: [ブログ編集チーム](/handbook/marketing/product-and-technical-marketing/content/)
 
 ブログのピッチと提出のガイドライン（テンプレートとフォーマットを含む）は、[ブログ ハンドブック](/handbook/marketing/blog/)にあります。
@@ -151,7 +151,7 @@ GitLab チームメンバーとして、カンファレンス、メディア、�
 
 マーケティングと編集チームは、月次ニュースレターを[ニュースレター購読者](/handbook/marketing/marketing-operations/email-management/#types-of-email)に送付しています。ニュースレターには常に最新のリリース投稿に関する情報、最新ブログへのリンク、DevSecOps チームへの追加コンテンツが含まれています。このニュースレターの目標は、思想的リーダーシップと認知度向上です。
 
-コンテンツの提案を追加するには、タイトルに「DevSecOps Download Content: [件名]」を含む Issue を作成し（テンプレート不要）、@sgittlen（Sandra Gittlen、ブログ管理編集者）にタグ付けしてください。会社の誰でも提案を追加できますが、最終的なコンテンツはブログ管理編集者が決定します。
+コンテンツの提案を追加するには、タイトルに「DevSecOps Download Content: [件名]」を含む Issue を作成し（テンプレート不要）、@sgittlen（Sandra Gittlen、Blog Managing Editor）にタグ付けしてください。会社の誰でも提案を追加できますが、最終的なコンテンツは Blog Managing Editor が決定します。
 
 **その他のニュースレター**
 
@@ -177,7 +177,7 @@ GitLab チームメンバーとして、カンファレンス、メディア、�
 | ------ | ------ |
 | `@ptm-leadership` | PTM 内で、組織全体の質問、リーダーシップの連携、部門横断的なエスカレーションを行う際にタグ付けします。 |
 | `@ptm-content-ops-strategy` | コンテンツ計画、編集オペレーション、戦略的コンテンツプログラムのサポートについてタグ付けします。 |
-| `@ptm-dev-advocacy` | デベロッパーリレーションズ、コミュニティエンゲージメント、技術的なアドボカシープログラムについてタグ付けします。 |
+| `@ptm-dev-advocacy` | Developer Relations、コミュニティエンゲージメント、技術的なアドボカシープログラムについてタグ付けします。 |
 | `@ptm-product-solutions-marketing` | 製品ポジショニング、Go-to-Market 戦略、ソリューションマーケティングのサポートについてタグ付けします。 |
 | `@ptm-tech-writing-globalization` | 技術ドキュメント、コンテンツのローカライゼーション、グローバリゼーションプログラムのサポートについてタグ付けします。 |
 
@@ -185,22 +185,22 @@ GitLab チームメンバーとして、カンファレンス、メディア、�
 
 <a id="email"></a>
 
-- Analysts@ 会社ドメイン: GitLab のアナリストリレーションズへの連絡用外部メールアドレス。返信はアナリストリレーションズマネージャーおよび VP 製品 & プロダクトマーケティングに転送されます
+- Analysts@ 会社ドメイン: GitLab のアナリストリレーションズへの連絡用外部メールアドレス。返信は Analyst Relations manager および VP Product and Product Marketing に転送されます
 - Community@ 会社ドメイン: GitLab 製品に関連した確認メール送信用外部メールアドレス。返信は Zen Desk サポートに転送されます
-- Content@ 会社ドメイン: SlideShare アカウントの管理に関連する外部メールアドレス。返信はコンテンツマーケティングチームおよびマーケティング OPS マネージャーに転送されます
-- Events@ 会社ドメイン: ライブ、VIP、対面トレーニング関連のメール送信用外部メールアドレス。返信は地域マーケティングマネージャーおよびマーケティング OPS マネージャーに届きます
+- Content@ 会社ドメイン: SlideShare アカウントの管理に関連する外部メールアドレス。返信は Content Marketing team および Marketing OPS Manager に転送されます
+- Events@ 会社ドメイン: ライブ、VIP、対面トレーニング関連のメール送信用外部メールアドレス。返信は Regional Marketing Managers および Marketing OPS Manager に届きます
 - Rregionalmarketing@ 会社ドメイン: 世界規模の地域マーケティングチームへのリクエスト用外部メールアドレス
-- Giveaways@ 会社ドメイン: コンテンツ & ソーシャルメディア関連の販促プレゼント受け取り用外部メールアドレス。返信はコンテンツマーケティングチームおよびマーケティング OPS マネージャーに届きます
-- Leads@ 会社ドメイン: 内部リードアラート用外部メールアドレス。返信はマーケティング OPS マネージャーに届きます
-- News@ 会社ドメイン: ニュースレター送付に使用される外部メールアドレス。返信はマーケティング OPS マネージャーおよびコンテンツマーケティングマネージャーに届きます
+- Giveaways@ 会社ドメイン: コンテンツ & ソーシャルメディア関連の販促プレゼント受け取り用外部メールアドレス。返信は Content Marketing team および Marketing OPS Manager に届きます
+- Leads@ 会社ドメイン: 内部リードアラート用外部メールアドレス。返信は Marketing OPS Manager に届きます
+- News@ 会社ドメイン: ニュースレター送付に使用される外部メールアドレス。返信は Marketing OPS Manager および Manager, Content Marketing に届きます
 - MPM@ 会社ドメイン: Marketing Program Manager への一般的なリクエストを直接送るための外部メールアドレス
-- MarketingOPS@ 会社ドメイン: マーケティング OPS マネージャーへの一般的な運用リクエストを送るための外部メールアドレス
-- MarketingSFDC@ 会社ドメイン: Salesforce の管理に関連する外部メールアドレス。返信はデジタルマーケティングプログラムマネージャー、地域マーケティングマネージャー、プロダクトマーケティングマネージャー、コンテンツマーケティングマネージャーに転送されます
-- SecurityAlerts@ 会社ドメイン: セキュリティアラート送付に使用される外部メールアドレス。返信はマーケティング OPS マネージャーに届きます
-- Sponsorships@ 会社ドメイン: コミュニティからのスポンサーリクエスト管理用外部メールアドレス。返信はデベロッパーリレーションズチームに転送されます
+- MarketingOPS@ 会社ドメイン: Marketing OPS Manager への一般的な運用リクエストを送るための外部メールアドレス
+- MarketingSFDC@ 会社ドメイン: Salesforce の管理に関連する外部メールアドレス。返信は Manager, Digital Marketing Programs、Regonal Marketing Manager、Product Marketing Manager、Manager, Content Marketing に転送されます
+- SecurityAlerts@ 会社ドメイン: セキュリティアラート送付に使用される外部メールアドレス。返信は Marketing OPS Manager に届きます
+- Sponsorships@ 会社ドメイン: コミュニティからのスポンサーリクエスト管理用外部メールアドレス。返信は Developer Relations チームに転送されます
 - Support@ 会社ドメイン: 重大な変更および/またはサポート関連の顧客コミュニケーション送信用外部メールアドレス。返信は Zen Desk サポートに届きます
-- Surveys@ 会社ドメイン: デベロッパーサーベイおよび/または関連サーベイ送付用外部メールアドレス。返信はコンテンツチームおよびプロダクトマーケティングマネージャーに届きます
-- Webcasts@ 会社ドメイン: ウェブキャスト関連のメール送付用外部メールアドレス。返信はマーケティング OPS マネージャーおよびマーケティングプログラムマネージャーに届きます
+- Surveys@ 会社ドメイン: デベロッパーサーベイおよび/または関連サーベイ送付用外部メールアドレス。返信はコンテンツチームおよび Product Marketing Manager に届きます
+- Webcasts@ 会社ドメイン: ウェブキャスト関連のメール送付用外部メールアドレス。返信は Marketing OPS Manager および Marketing Program Managers に届きます
 - on24questions@ 会社ドメイン: On24 ウェビナーでプライベートに質問を収集するための外部メールアドレス
 
 ## マーケティングチームプロセス
