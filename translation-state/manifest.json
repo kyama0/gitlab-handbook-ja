@@ -4088,14 +4088,6 @@
       "input_hash": "944285f82df3354dde736988a4a2f1da1bc8237b53137eed99e92da5a9182678",
       "upstream_committed_at": "2026-09-16T21:11:43+01:00"
     },
-    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab7.md": {
-      "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab7.md",
-      "upstream_sha": "d8fb317567e8e271f91f602d97d453ad1a69a00a",
-      "translated_at": "2026-08-13T15:26:34Z",
-      "model": "codex",
-      "input_hash": "944285f82df3354dde736988a4a2f1da1bc8237b53137eed99e92da5a9182678",
-      "upstream_committed_at": "2026-08-13T07:16:24-04:00"
-    },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduo.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduo.md",
       "upstream_sha": "d8fb317567e8e271f91f602d97d453ad1a69a00a",
@@ -31744,14 +31736,6 @@
       "input_hash": "68438f16c56755dc00af6af19b39701b09c0d339e8b9e7030bb7b4ca3c1ed832",
       "upstream_committed_at": "2026-06-04T15:39:28+01:00"
     },
-    "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md": {
-      "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md",
-      "upstream_sha": "7a4e62958b31234a80d386bf4b7c8dd855df2cb8",
-      "translated_at": "2026-09-10T11:24:55+00:00",
-      "model": "codex",
-      "input_hash": "3c7043eb8018154fc0d12a7ebee647c00d9632b887ae8e6cd4f04008299e9990",
-      "upstream_committed_at": "2026-09-10T01:09:44+01:00"
-    },
     "content/handbook/eta/ai/tools/glean/tips/_index.md": {
       "path": "content/handbook/eta/ai/tools/glean/tips/_index.md",
       "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
@@ -37335,22 +37319,6 @@
       "translated_at": "2026-09-10T11:09:19+00:00",
       "model": "codex",
       "input_hash": "ab91d8a4a42aa4335047a6f6470969eb7e7e1c8fc47cafa1034c9eca71942a39"
-    },
-    "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/009_command_validator_deprecation.md": {
-      "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/009_command_validator_deprecation.md",
-      "upstream_sha": "7a4e62958b31234a80d386bf4b7c8dd855df2cb8",
-      "upstream_committed_at": "2026-09-10T01:09:44+01:00",
-      "translated_at": "2026-09-10T11:24:55+00:00",
-      "model": "codex",
-      "input_hash": "091dadb04efb98e69e54c1b432d3ef6ff38b335fb4037ffbe02de529cf28251f"
-    },
-    "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/008_auto_mode_phased_rollout.md": {
-      "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/008_auto_mode_phased_rollout.md",
-      "upstream_sha": "7a4e62958b31234a80d386bf4b7c8dd855df2cb8",
-      "upstream_committed_at": "2026-09-10T01:09:44+01:00",
-      "translated_at": "2026-09-10T11:24:55+00:00",
-      "model": "codex",
-      "input_hash": "4fcc95a0559c66732de2c3a031041f66ea851a219425625adfa7f9503e3936da"
     },
     "content/handbook/engineering/architecture/design-documents/mcp_server_block_enforcement/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/mcp_server_block_enforcement/_index.md",
