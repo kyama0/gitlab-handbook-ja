@@ -1,218 +1,102 @@
 ---
-title: "GitLab Advanced CI/CD - ハンズオンラボ: レビューアプリ"
-description: "このハンズオンガイドでは、レビューアプリの作成プロセスについて説明します"
+title: "GitLab Advanced CI/CD - ハンズオンラボ: デプロイ戦略"
+description: "このハンズオンガイドでは、フィーチャーフラグの作成プロセスについて説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T15:26:34Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T03:04:38+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-09-16T21:11:43+01:00"
 ---
 
-このラボの目的は、Node.js アプリケーションからレビューアプリを作成することです。レビューアプリとは、プロジェクト内の各マージリクエストのために自動的に作成される一時的なアプリケーション環境です。これにより、開発者やステークホルダーは、変更をメインブランチにマージする前に、ライブの独立した環境で提案された変更をプレビューしてインタラクションできます。
+開発プロセスの次のステップは、アプリケーションに適したデプロイ戦略を決定することです。すべてのユーザーに一度に変更をロールアウトするのはリスクの高い戦略です。なぜなら、エラーがすべてのユーザーに影響し、障害を引き起こす可能性があるからです。これを軽減するために、GitLab のデプロイ機能を活用できます。このセクションでは、アプリケーションにフィーチャーフラグを実装して、機能を段階的にロールアウトする方法を学びます。
 
 > 完了までの推定時間: 15 分
 
-## 目標
+## 目標 {#objectives}
 
-- Node.js アプリケーションからレビューアプリを作成する
+このラボの終了時点で、次のことができるようになります:
 
-## タスク A. Web アプリを作成する
+- GitLab のフィーチャーフラグ機能を使用する
 
-このタスクでは、レビュー環境で実行する Web アプリケーションを作成します。
+## タスク A. フィーチャーフラグを実装する {#task-a-implement-a-feature-flag}
 
-1. プロジェクトリポジトリに移動します。
+このタスクでは、GitLab のフィーチャーフラグ機能を使用して、アプリケーションにフィーチャーフラグを実装します。これにより、新機能を一部のユーザーに段階的にロールアウトし、問題が発生した場合の広範な影響のリスクを軽減できます。
 
-1. **Build > Pipeline Editor** を選択します。
+フィーチャーフラグをセットアップして使用するために次の手順に従います:
 
-1. `index.js` ファイルに express コードを追加すると、Web サーバーを起動して接続を待機するため、テストは `index.js` に対して実行できなくなります。そのため、`install deps`、`test binarysearch`、`test linearsearch` ジョブをファイルから削除します。`.gitlab-ci.yml` ファイルからジョブを削除して、**Commit changes** を選択します。
+1. **Deploy > Feature flags** に移動します。
 
-1. プロジェクトリポジトリに戻ります。
+1. **New Feature Flag** を選択します。
+
+1. 名前に `test` を入力します。Type として `Percent rollout` を選択します。
+
+1. パーセンテージを 50% に設定し、**Based on** を Random に設定します。
+
+1. **Create feature flag** を選択します。
+
+1. フィーチャーフラグを作成した後、**Configure** を選択します。API URL と Instance ID フィールドをメモしておきます。後でコードの変更に必要になります。
 
 1. `index.js` ファイルを選択します。
 
-1. **Edit > Edit single file** を選択します。
+1. **Edit > Edit in single file** を選択します。
 
-1. 二分探索と線形探索のメソッドを削除し、Web アプリケーションを実行する次のコードを追加します:
+1. `index.js` ファイルで、既存のコードをすべて削除し、次のコードに置き換えます。**your-instance-url** と **your-instance-id** は先ほどメモした値に置き換えてください:
 
       ```js
-      const express = require('express')
-      const app = express()
-      const port = 4001
+      const { initialize } = require('unleash-client');
 
-      app.get('/', (req, res) => {
-        res.send('Hello World!')
-      })
+      const unleash = initialize({
+        url: 'your-instance-url',
+        appName:'production',
+        instanceId: 'your-instance-id'
+      });
 
-      app.listen(port, () => {
-        console.log(`Example app listening on port ${port}`)
-      })
+      setInterval(() => {
+      if (unleash.isEnabled('test')) {
+          console.log('Toggle enabled');
+      } else {
+          console.log('Toggle disabled');
+      }
+      }, 1000);
       ```
 
-1. 変更をコミットします。
+1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択します。
 
-## タスク B. レビューアプリを作成する
+    > このコードは継続的に実行され、フィーチャーフラグトグルが有効か無効かを確認しようとします。50% のユーザーに対して有効になっているため、このコードを実行するとおよそ半分の確率で有効と表示されます。
 
-1. 左サイドバーで **Operate > Environments** を選択します。
-
-1. **Enable Review Apps** を選択します。
-
-1. 次のような提供されたスクリプトをコピーします:
-
-      ```yml
-      deploy_review:
-        stage: deploy
-        script:
-          - echo "Add script here that deploys the code to your infrastructure"
-        environment:
-          name: review/$CI_COMMIT_REF_NAME
-          url: https://$CI_ENVIRONMENT_SLUG.example.com
-        rules:
-          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-      ```
-
-      > **Enable Review Apps** をクリックしたときに GitLab がこのスクリプトを表示しない場合は、上記の参照スクリプトをコピーして使用してください。
-
-1. コードリポジトリに戻ります。
+1. これをテストするために、スクリプトの実行テストを行います。
 
 1. **Build > Pipeline Editor** を選択します。
 
-1. コピーした `deploy_review` ジョブを `.gitlab-ci.yml` ファイルの末尾に貼り付けます。
-
-1. この例では、URL として IP アドレスを使用するように URL を少し変更します。この変数 `$ip` は、招待コードを利用したときに作成されたグループレベルの変数です。この変数を使用するために、サーバーが `HTTP` のみを使用するため `HTTPS` も削除します。以下は完成した `deploy_review` 定義です:
+1. `.gitlab-ci.yml` ファイル全体を次のコードに置き換えます:
 
       ```yml
-      deploy_review:
-        stage: deploy
-        script:
-          - echo "Add script here that deploys the code to your infrastructure"
-        environment:
-          name: review/$CI_COMMIT_REF_NAME
-          url: http://$ip:4001
-        rules:
-          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-      ```
+      default:
+        image: node:latest
 
-1. `.gitlab-ci.yml` ファイルに `deploy` ステージを追加します。
-
-      ```yml
       stages:
-        - deps
         - test
-        - deploy
-      ```
 
-1. これで、変更をレビューアプリにデプロイできます。`deploy_review` ジョブに `ubuntu:latest` の `image` を追加します。
-
-      ```yml
-      deploy_review:
-        stage: deploy
-        image: ubuntu:latest
-      ```
-
-1. `deploy_review` ジョブの `script` のすぐ上に、次の `before_script` を追加します:
-
-      ```yml
-        before_script:
-          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-          - eval $(ssh-agent -s)
-          - chmod 400 "$SSH_PRIVATE_KEY"
-          - ssh-add "$SSH_PRIVATE_KEY"
-          - mkdir -p ~/.ssh
-          - chmod 700 ~/.ssh
-      ```
-
-1. 最後に、次のジョブ定義に合わせてジョブスクリプトを更新します:
-
-      ```yml
+      test_flag:
+        stage: test
         script:
-          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-          - ssh root@$ip 'mkdir -p /www'
-          - ssh root@$ip 'sudo apt-get update'
-          - ssh root@$ip 'sudo apt-get install nodejs npm -y'
-          - ssh root@$ip 'cd /www/ && npm init -y'
-          - ssh root@$ip 'cd /www/ && npm i express'
-          - ssh root@$ip 'cd /www/ && npm i -g pm2'
-          - scp index.js root@$ip:/www
-          - ssh root@$ip 'pm2 start -f /www/index.js'
-      ```
-
-1. 最終的なジョブスクリプトは次のようになります:
-
-      ```yml
-      deploy_review:
-        stage: deploy
-        image: ubuntu:latest
-        before_script:
-          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-          - eval $(ssh-agent -s)
-          - chmod 400 "$SSH_PRIVATE_KEY"
-          - ssh-add "$SSH_PRIVATE_KEY"
-          - mkdir -p ~/.ssh
-          - chmod 700 ~/.ssh
-        script:
-          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-          - ssh root@$ip 'mkdir -p /www'
-          - ssh root@$ip 'sudo apt-get update'
-          - ssh root@$ip 'sudo apt-get install nodejs npm -y'
-          - ssh root@$ip 'cd /www/ && npm init -y'
-          - ssh root@$ip 'cd /www/ && npm i express'
-          - ssh root@$ip 'cd /www/ && npm i -g pm2'
-          - scp index.js root@$ip:/www
-          - ssh root@$ip 'pm2 start -f /www/index.js'
-        environment:
-          name: review/$CI_COMMIT_REF_NAME
-          url: http://$ip:4001
-        rules:
-          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+          - npm i unleash-client
+          - node index.js
       ```
 
 1. **Commit changes** を選択します。
 
-## タスク C. レビューアプリを確認する
+1. 変更をコミットした後、左サイドバーで **Build > Pipelines** を選択します。
 
-レビューアプリが機能することをテストするために、新しいマージリクエストを作成します。
+1. `test_flag` ジョブを選択します。
 
-1. **Code > Branches** を選択します。
+1. このジョブが true を出力したり false を出力したりすることを観察します。これは、フィーチャーフラグが 50% の確率でアクティブになっているためです。
 
-1. **New branch** を選択します。
-
-1. ブランチ名を `test_review` に設定して **Create branch** を選択します。
-
-1. このブランチのマージリクエストを作成します。
-
-1. マージリクエストを作成したら、**Code > Open in Web IDE** を選択してマージリクエストから Web IDE を開きます。
-
-1. `index.js` ファイルを選択します。
-
-1. `res.send` を好きなメッセージを表示するように更新します。以下は例です:
-
-      ```js
-      const express = require('express')
-          const app = express()
-          const port = 4001
-
-          app.get('/', (req, res) => {
-            res.send('Our app is running!')
-          })
-
-          app.listen(port, () => {
-            console.log(`Example app listening on port ${port}`)
-      })
-      ```
-
-1. **source control** アイコンを選択します。コミットメッセージを入力し、**Commit and put to...** ボタンをクリックしてコード変更をコミットします。
-
-1. パイプラインが完了するまで待ちます。
-
-1. マージリクエストを開きます。
-
-1. パイプラインが完了したら **View app** を選択します。
-
-## ラボガイドの完了
+## ラボガイドの完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson)を参照できます。
 
-## ご提案は?
+## ご提案は? {#suggestions}
 
 このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

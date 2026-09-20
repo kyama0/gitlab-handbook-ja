@@ -8,24 +8,24 @@ coach: [ "@andrewn" ]
 status: proposed
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-translated_at: "2026-09-10T11:12:52+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T02:57:18+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-09T09:42:02+02:00"
+lastmod: "2026-09-14T10:35:55+12:00"
 ---
 
 
 {{< engineering/design-document-header >}}
 
 
-## 事前学習
+## 事前学習 {#pre-reads}
 
-1. [Cells イテレーション](../_index.md#cells-iterations)、特に `Cells 1.0`
+1. [Protocells](../_index.md#protocells)
 1. [GitLab Dedicated](https://about.gitlab.com/dedicated/)
 1. [GitLab Dedicated アーキテクチャ](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/architecture/Architecture.html)
 
-## 哲学
+## 哲学 {#philosophy}
 
 - **デフォルトでセルローカル**: すべてのサービスはセルローカルにすべきであり、セルローカルでない正当な理由が文書化されていない限り、グローバルであってはなりません。
   セルローカルを維持することで、Cell とサービス間の通信が内部にとどまり、サービスはより小さなスケールで動作し、爆発半径がはるかに小さくなります。
@@ -41,7 +41,7 @@ lastmod: "2026-09-09T09:42:02+02:00"
   このツールをできる限り使用するように努め、同意できないことがあれば[不同意、コミット、そして再び不同意する](/handbook/values/#disagree-and-commit)ようにして 1 つのツールを改善すべきです。
   欠点があるツールから始めることは問題ありません。イテレーション的なアプローチにより、2 つではなく_1 つ_の成熟した製品が生まれます。
 
-## 用語集/ユビキタス言語
+## 用語集/ユビキタス言語 {#glossaryubiquitous-language}
 
 [ユビキタス言語](https://martinfowler.com/bliki/UbiquitousLanguage.html)
 
@@ -57,7 +57,7 @@ lastmod: "2026-09-09T09:42:02+02:00"
 - `Fleet`（フリート）: 本番環境を構成する、シングルテナントとマルチテナントの両方を含むすべての SaaS 環境の集合。
   既存の GitLab.com インフラストラクチャ、Cell、および Dedicated が含まれます。
 
-## アーキテクチャ
+## アーキテクチャ {#architecture}
 
 以下は Cell アーキテクチャです。現在の GitLab.com アーキテクチャ（Cell 導入前）は <https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/architecture/> で確認できます。
 
@@ -247,7 +247,7 @@ frame "Google Cloud Platform" <<gcp>> {
 @enduml
 ```
 
-### KAS
+### KAS {#kas}
 
 ```plantuml
 @startuml
@@ -322,7 +322,7 @@ together {
 @enduml
 ```
 
-### リング
+### リング {#rings}
 
 `リング`は、プロビジョニングする Cell と既存のインフラストラクチャをどのようにグループ化するかというメンタルモデルの基礎となります。
 リングの内部には X 個の Cell があり、後続のリングはより多くの Cell を含み、フリート全体を段階的にカバーします。
@@ -407,7 +407,7 @@ Cell 以外のインフラストラクチャには引き続き使用されます
 1. デプロイメントをブロックするため、ステージングを本番として扱っています。
 1. ステージングの設定が本番から逸脱する可能性があります。
 
-## 大規模ドメイン
+## 大規模ドメイン {#large-domains}
 
 インフラストラクチャは多面的であり、すべてのチームが Cell インフラストラクチャの設定に役割を持っています。
 
@@ -463,7 +463,7 @@ component "Configuration Management"
 @enduml
 ```
 
-## ステークホルダー
+## ステークホルダー {#stakeholders}
 
 Cell の運用には複数のチームが参加しています。
 最初の区別は、ツールを実装・保守するチームと、それらのツールを使用するチームの間です。

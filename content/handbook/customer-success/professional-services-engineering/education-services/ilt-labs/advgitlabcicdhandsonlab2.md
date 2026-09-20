@@ -1,266 +1,112 @@
 ---
-title: "GitLab Advanced CI/CD - ハンズオンラボ: ビルドパイプラインの最適化"
-description: "このハンズオンガイドでは、ビルドパイプラインの最適化について説明します"
-upstream_path: "/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab2/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-translated_at: "2026-09-11T12:49:40+00:00"
+title: "GitLab Advanced CI/CD - ハンズオンラボ: パイプラインテストの最適化"
+description: "このハンズオンガイドでは、テストパイプラインの最適化について説明します"
+upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab2/
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T03:01:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-10T10:01:10-04:00"
+lastmod: "2026-09-16T21:11:43+01:00"
 ---
 
-このラボの目的は、GitLab CI/CD パイプラインにおけるキャッシングのメリットを実証することです。キャッシュとは、ジョブがダウンロードして保存する 1 つ以上のファイルのことです。同じキャッシュを使用する後続のジョブは、ファイルを再ダウンロードする必要がないため、より迅速に実行されます。キャッシュはアーティファクトとは異なり、GitLab には保存されません。
+このラボの目的は、アプリケーションのテストを設定できるさまざまな方法を探ることです。
 
 > 完了までの推定時間: 15 分
 
-## 目標
+## 目標 {#objectives}
 
-このラボの目標:
+- 失敗後にパイプラインを停止する
+- ユニットテストのレポート
 
-- キャッシングのメリットを示す
+このラボでは、アプリケーションのテストを設定できるさまざまな方法を探ります。現在、プロジェクトには次のテストセットアップがあります:
 
-## タスク A. 基本的なパイプラインを作成する
+  ```yml
+  stages:
+    - deps
+    - test
 
-まず、パイプラインビルドのデモに使用する基本的な `Node.js` アプリケーションを作成します。
+  default:
+    image: node:latest
 
-1. ILT グループ（"Group - XXXXXXXX" という名前で、「X」の部分がユーザー名に置き換えられます）に移動してください。
+  install deps:
+    stage: deps
+    script:
+      - npm install jest
+    cache:
+      key: $CI_COMMIT_REF_SLUG
+      paths:
+        - node_modules
 
-1. **New project** を選択してください。
+  test binarysearch:
+    stage: test
+    script:
+      - node_modules/.bin/jest binarysearch.test.js
+    cache:
+      key: $CI_COMMIT_REF_SLUG
+      paths:
+        - node_modules
 
-1. **Create blank project** を選択してください。
+  test linearsearch:
+    stage: test
+    script:
+      - node_modules/.bin/jest linearsearch.test.js
+    cache:
+      key: $CI_COMMIT_REF_SLUG
+      paths:
+        - node_modules
+```
 
-1. プロジェクト名を **Node** に設定し、その他のオプションはすべてデフォルトのまま **Create project** を選択してください。
+このラボでは、単一のジョブが失敗した際のテストパイプラインの制御方法を探ります。また、テストジョブにテストレポートを追加する方法も確認します。
 
-1. このプロジェクトで、**+ > New file** を選択してください。
+## タスク A. 失敗後にパイプラインを停止する {#task-a-stopping-a-pipeline-after-failure}
 
-1. ファイル名を `index.js` に設定し、次のコードを追加してください:
+この例では、テストの 1 つが失敗した場合にパイプラインをキャンセルする方法を見てみましょう。
 
-      ```js
-      module.exports.binarySearch = function binarySearch(arr, val) {
-          let start = 0;
-          let end = arr.length - 1;
-          while (start <= end) {
-              let mid = Math.floor((start + end) / 2);
-              if (arr[mid] === val) {
-                  return mid;
-              }
-              if (val < arr[mid]) {
-                  end = mid - 1;
-              } else {
-                  start = mid + 1;
-              }
-          }
-          return -1;
-      }
+1. `Node` プロジェクトリポジトリに移動します。
 
-      module.exports.linearSearch = function linearSearch(arr, val){
-        let index = 0;
-        let found = false;
-        while (!found && index < arr.length){
-          if (arr[index] == val){
-              found = true;
-          }else{
-            index += 1;
-          }
-          }
+1. **Build > Pipeline Editor** を選択します。
 
-          if (!found){
-              index = -1;
-          }
-
-        return index;
-      }
-      ```
-
-      > このコードは単純な二分探索で、ソートされた配列の中から値を検索し、値が配列に存在する場合はそのインデックスを、見つからない場合は -1 を返します。
-
-1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
-
-      Node プロジェクトを作成するには、`package.json` ファイルも作成する必要があります。
-
-1. プロジェクトリポジトリに移動してください。
-
-1. **+ > New file** を選択してください。
-
-1. ファイル名を `package.json` に設定し、次のテキストを追加してください:
-
-      ```json
-      {
-        "name": "ci-cd-demos",
-        "version": "1.0.0",
-        "description": "",
-        "main": "index.js",
-        "scripts": {
-          "test": "echo \"Error: no test specified\" && exit 1"
-        },
-        "author": "",
-        "license": "ISC"
-      }
-      ```
-
-1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
-
-## タスク B. テストを作成する
-
-キャッシングの概念を実証するために、アプリケーションにテストを追加してみましょう。まず、二分探索のテストを作成します。
-
-1. コードリポジトリに移動してください。
-
-1. **+ > New file** を選択してください。
-
-1. ファイル名を `binarysearch.test.js` に設定し、次のコードを追加してください:
-
-      ```js
-      const {binarySearch} = require("./index.js");
-
-      describe("Binary search tests", () => {
-          test("Search should succeed on first element", () => {
-              expect(binarySearch([1,2,3,4],1)).toBe(0);
-          });
-
-          test("Search should succeed on last element", () => {
-              expect(binarySearch([1,2,3,4],4)).toBe(3);
-          });
-
-          test("Search should succeed on any element", () => {
-              expect(binarySearch([1,2,3,4],2)).toBe(1);
-          });
-
-          test("Search should return -1 on not found", () => {
-              expect(binarySearch([1,2,3,4],10)).toBe(-1);
-          });
-
-      });
-      ```
-
-1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
-
-1. 線形探索についても同様のテストセットを作成します。`linearsearch.test.js` という名前の新しいファイルを作成し、次のコードを追加してください:
-
-      ```js
-      const {linearSearch} = require("./index.js");
-
-      describe("Linear search tests", () => {
-          test("Search should succeed on first element", () => {
-              expect(linearSearch([1,2,3,4],1)).toBe(0);
-          });
-
-          test("Search should succeed on last element", () => {
-              expect(linearSearch([1,2,3,4],4)).toBe(3);
-          });
-
-          test("Search should succeed on any element", () => {
-              expect(linearSearch([1,2,3,4],2)).toBe(1);
-          });
-
-          test("Search should return -1 on not found", () => {
-              expect(linearSearch([1,2,3,4],10)).toBe(-1);
-          });
-
-      });
-      ```
-
-1. `linearsearch.test.js` ファイルをコミットしてください。
-
-      次に、テストを定義する `.gitlab-ci.yml` ファイルを作成します。
-
-1. プロジェクトリポジトリに移動してください。
-
-1. **+ > New file** を選択してください。
-
-1. ファイル名に `.gitlab-ci.yml` と入力してください。
-
-1. ファイルに次のジョブ定義を追加してください:
+1. `.gitlab-ci.yml` ファイルの stages セクションのすぐ下に、ジョブを自動キャンセルするワークフローを追加します。
 
       ```yml
-      stages:
-        - test
+      workflow:
+        auto_cancel:
+          on_job_failure: all
+      ```
 
-      default:
-        image: node:latest
+1. この設定では、いずれかのジョブが失敗すると、パイプライン全体が失敗します。これをテストするために、意図的に失敗するテストジョブを作成できます。
 
-      test binarysearch:
+      ```yml
+      test fail:
         stage: test
         script:
-          - npm install jest
-          - node_modules/.bin/jest binarysearch.test.js
-
-      test linearsearch:
-        stage: test
-        script:
-          - npm install jest
-          - node_modules/.bin/jest linearsearch.test.js
+          - jet test.js
       ```
 
-1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
+1. **Commit changes** を選択します。
 
-## タスク C. キャッシングを使用してジョブを最適化する
+      パイプラインが失敗したジョブをどのように処理するかを見てみましょう。
 
-このジョブ定義のセットを確認して、より効率的にできるかどうかを見てみましょう。よくある最適化の一つは、ジョブ実行中のスクリプトの繰り返しを探すことです。この例では、両方のジョブで npm を使って `jest-junit` パッケージをインストールする必要があります。`jest-junit` を 2 回インストールする代わりに、ジョブ間でパッケージをキャッシュできます。
+1. 左サイドバーで、**Build > Pipelines** を選択します。
 
-1. `.gitlab-ci.yml` ファイルに、次のジョブを追加してください:
+1. 最新のパイプラインを選択して、ジョブを観察します。`test fail` ジョブが失敗すると、他のジョブがキャンセルされ、灰色のスラッシュアイコンが表示されることに注目してください。
 
-      ```yml
-      install deps:
-        stage: deps
-        script:
-          - npm install jest
-        cache:
-          key: $CI_COMMIT_REF_SLUG
-          paths:
-            - node_modules
-      ```
+      自動キャンセルが機能していることを確認できたので、失敗するジョブを削除しましょう。
 
-1. 次に、テストスクリプトが実行される前に依存関係がキャッシュされるよう、test ステージの前に 'deps' ステージを追加してください:
+1. リポジトリに移動します。
 
-      ```yml
-      stages:
-        - deps
-        - test
-      ```
+1. **Build > Pipeline Editor** を選択します。
 
-      `.gitlab-ci.yml` ファイルは次のようになります:
+1. `test fail` ジョブを削除します。`.gitlab-ci.yml` ファイルは次のようになります:
 
       ```yml
       stages:
         - deps
         - test
 
-      default:
-        image: node:latest
-
-      install deps:
-        stage: deps
-        script:
-          - npm install jest
-        cache:
-          key: $CI_COMMIT_REF_SLUG
-          paths:
-            - node_modules
-
-      test binarysearch:
-        stage: test
-        script:
-          - npm install jest
-          - node_modules/.bin/jest binarysearch.test.js
-
-      test linearsearch:
-        stage: test
-        script:
-          - npm install jest
-          - node_modules/.bin/jest linearsearch.test.js
-      ```
-
-      > この定義では、`CI_COMMIT_REF_SLUG` に一致するキーを持つキャッシュを作成します。これにより、各ジョブが一意のキャッシュを受け取ることが保証されます。キャッシュされるデータは `node_modules` フォルダーです。キャッシュを使用するためにセットアップするには、テストの実行に使用する `jest` パッケージのインストールコマンドをスクリプトで実行します。
-
-      キャッシュが定義されたので、各ジョブから `jest` パッケージのインストールを削除できます。
-
-1. ジョブから `npm install jest` コマンドを削除し、キャッシュ参照に置き換えてください。以下は完成した `.gitlab-ci.yml` ファイルの例です:
-
-      ```yml
-      stages:
-        - deps
-        - test
+      workflow:
+        auto_cancel:
+          on_job_failure: all
 
       default:
         image: node:latest
@@ -293,14 +139,98 @@ lastmod: "2026-09-10T10:01:10-04:00"
             - node_modules
       ```
 
-1. 変更を `main` にコミットしてください。
+1. **Commit changes** を選択します。
 
-1. パイプラインに移動して、テストジョブが正常に実行されることを確認してください。
+## タスク B. テストレポートを追加する {#task-b-adding-test-reports}
 
-## ラボガイドの完了
+このタスクでは、テストジョブにテストレポートを追加します。
+
+1. 引き続き Pipeline Editor が表示されていることを確認します（表示されていない場合は、**Build > Pipeline Editor** に移動します）。
+
+1. `test binarysearch` と `test linearsearch` ジョブの `jest` コマンドを調整して、コマンドに `testResultsProcessor` を追加します。これは `--ci --testResultsProcessor=jest-junit` フラグをコマンドに追加することで実現できます。`--ci` フラグにより、Jest は CI 環境で実行されていると見なします。これを機能させるには、`install deps` に `jest-junit` を追加してインストールする必要もあります。変更後のジョブの例を以下に示します:
+
+      ```yml
+      install deps:
+        stage: deps
+        script:
+          - npm install jest jest-junit
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+      ```
+
+1. テスト結果をパイプラインからアクセスできるようにするには、JUnit ファイルに保存する必要があります。そのために、両方のテストの `script` キーワードの後に次のコードスニペットを追加する必要があります:
+
+      ```yml
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
+      ```
+
+      テストは次のようになります:
+
+      ```yml
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+      ```
+
+1. これらの変更を行った後、**Commit changes** を選択します。
+
+1. 左サイドバーで、**Build > Pipelines** を選択します。
+
+1. 最新のパイプラインを選択します。
+
+1. テストが完了するまで待ちます。テストジョブの完了後にページを更新して、`Tests` タブを選択します。
+
+1. タブにテスト結果のレポートが表示されます。
+
+## ラボガイドの完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson)を参照できます。
 
-## ご提案は?
+## ご提案は? {#suggestions}
 
 このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

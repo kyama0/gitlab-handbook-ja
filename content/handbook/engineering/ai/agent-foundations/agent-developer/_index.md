@@ -4,20 +4,20 @@ description: "Agent Developer グループは、GitLab Duo Developer の基盤�
 aliases:
   - /handbook/engineering/ai/agent-developer/
 upstream_path: /handbook/engineering/ai/agent-foundations/agent-developer/
-upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
-lastmod: "2026-08-10T07:49:15+02:00"
-translated_at: "2026-08-11T06:40:00+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T13:53:38+02:00"
+translated_at: "2026-09-20T03:00:44+00:00"
 translator: codex
 stale: false
 ---
 
-## ビジョン
+## ビジョン {#vision}
 
 GitLab における中核的な AI／Agent 開発を推進し、エージェントの出力品質において業界の他社に対する競争力を獲得・維持するチームです。設定可能性を実現するプラットフォームを提供し、エージェントがプロンプトインジェクションに対して合理的に可能な限り高い耐性を備えるようにします。
 
-### チームメンバー
+### チームメンバー {#team-members}
 
-**エンジニアリングマネージャーおよびエンジニア**
+**Engineering Manager & Engineers**
 
 <!-- TODO: Confirm the correct manager slug for Annie Ying (aying-gl / aying). -->
 {{< team-by-manager-slug "aying-gl" >}}
@@ -28,14 +28,14 @@ GitLab における中核的な AI／Agent 開発を推進し、エージェン�
 |------|--------|
 | Product Manager | @frwang1, @bjune |
 
-### ☎️ 私たちへの連絡方法
+### ☎️ 私たちへの連絡方法 {#-how-to-reach-us}
 
 状況に応じて、Agent Developer グループへ連絡するもっとも適切な方法は次のとおりです:
 
 * Slack チャンネル: `#f_duo_developer`, `#f_flow_components`, `#dev_agent_developer`
 * Slack グループ: `@agent-developer-team` `@flow-components-subteam` `@duo-developer-subteam`
 
-### 技術コンポーネント 🛠️
+### 技術コンポーネント 🛠️ {#technical-components-}
 
 メインの GitLab リポジトリ以外で、私たちが扱う主要な技術コンポーネントは次のとおりです:
 
@@ -44,23 +44,25 @@ GitLab における中核的な AI／Agent 開発を推進し、エージェン�
    1. フローの評価の改善。
    1. フローレジストリの改善。
 
+   Duo Developer フローやその共有システムプロンプトを変更する際は、私たちの [Duo Developer の設計原則](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/duo_workflow_service/agent_platform/v1/flows/configs/developer/PRINCIPLES.md)に従ってください。これらの原則には、再利用可能な構成要素としての Duo Developer、クライアントが管理する目標、原則に基づくシステムプロンプト、根拠に基づく変更という、私たちの開発方法が記されています。
+
 これらのコンポーネントがどのように連携するかについては、[アーキテクチャ](/handbook/engineering/architecture/design-documents/duo_workflow/)を参照してください。
 
-## 📦 チームプロセス
+## 📦 チームプロセス {#-team-processes}
 
-### Goalkeeper ローテーション
+### Goalkeeper ローテーション {#goalkeeper-rotation}
 
 _TBD — Goalkeeper ローテーションのプロセスはまだ定義中です。_
 
-### レトロスペクティブ
+### レトロスペクティブ {#retrospective}
 
 _TBD — レトロスペクティブのプロセスはまだ定義中です。_
 
-### 📆 定例チームミーティング
+### 📆 定例チームミーティング {#-regular-team-meetings}
 
 **❗️重要**: すべてのミーティングで、[Agent Developer チームのミーティングメモドキュメント](https://docs.google.com/document/d/1wKrNYqP3SwSFa29dWyCMOq_O_31YQ64YX1FIztA6-ag/edit)を使用し、ミーティングのメモや、最近行われた他の同期ミーティングのアジェンダ／メモ／録画への参照を記入してください。これにより、人々がミーティングのメモを見つけやすくなります。
 
-#### チームミーティング
+#### チームミーティング {#team-meetings}
 
 1. **Agent Developer Standup**（隔週火曜日）
    * **いつ:** 隔週火曜日 14:00 UTC <!-- 15:00 CET; note: during CEST (summer) this is 13:00 UTC -->
@@ -74,11 +76,11 @@ _TBD — レトロスペクティブのプロセスはまだ定義中です。_
    * **いつ:** サブチームごとに毎週実施（スケジュールは各サブチームが設定）
    * **内容:** 各サブチーム内でのより深い技術的ディスカッションです。実装の詳細、設計上の決定、および小規模なグループでの同期が有益な進捗を扱います。
 
-### 共有カレンダー
+### 共有カレンダー {#shared-calendars}
 
 _TBD。_
 
-### 📚 Agent Developer ボードの概要
+### 📚 Agent Developer ボードの概要 {#-agent-developer-board-outline}
 
 Agent Developer チームはマイルストーンプロセスに従っています。現在優先されているすべての Issue は、[マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/7828018?milestone_title=Started&label_name[]=group%3A%3Aagent%20developer)で可視化されています。過去および現在のマイルストーンの目標とフォーカスポイントを概説する概要 Issue は、[統括エピック](https://gitlab.com/groups/gitlab-org/-/work_items/18293)にあります。
 
@@ -100,7 +102,7 @@ Agent Developer チームはマイルストーンプロセスに従っていま�
 1. **Deliverable**: これらの項目はイテレーションの主要な成果物であり、したがって最初に着手すべきです。
 1. **Stretch**: これらの項目のほとんどを提供することを目指しますが、野心的に計画する一環として、一部はスリップする可能性があります。
 
-## 👏 コミュニケーション
+## 👏 コミュニケーション {#-communication}
 
 Agent Developer チームは、次のガイドラインに基づいてコミュニケーションを行います:
 
@@ -113,13 +115,13 @@ Agent Developer チームは、次のガイドラインに基づいてコミュ�
 
 私たちは、明確なコミュニケーションを確保し、進捗を効果的に追跡し、チーム全体の透明性を保つため、週次の非同期ステータスアップデートの慣行を維持しています。このプロセスは、構造化されたコミュニケーションを通じてコラボレーションを促進し、成果を推進し、効率性を高めることで、私たちのコアバリューに沿っています。
 
-#### タイミングと頻度
+#### タイミングと頻度 {#timing-and-frequency}
 
 * チームメンバーは毎週金曜日にアップデートを投稿し、チームの Slack チャンネル（`#dev_agent_developer`）で共有します。
 * アップデートは、少なくとも **In Dev** にあるすべての割り当て済み Issue について必須です。その他の割り当て済み Issue については、アップデートが必要かどうかは担当者の判断に委ねられます。
 * 複数の Issue に取り組んでいる場合は、複数のアップデートが必要になることがあります
 
-#### テンプレート
+#### テンプレート {#template}
 
 アップデートに使用するテンプレートはこちらです
 
@@ -139,9 +141,9 @@ _Remember to update the status!_
 /cc @aying-gl @bastirehm @frwang1 @bjune
 ```
 
-エンジニアリングマネージャー、プロダクトマネージャー、そして協働しているチームメンバーを必ずタグ付けしてください。
+engineering manager、product manager、そして協働しているチームメンバーを必ずタグ付けしてください。
 
-#### ベストプラクティス
+#### ベストプラクティス {#best-practices}
 
 * アップデートは具体的かつ簡潔に
 * 暫定的であっても、常に次のステップを含める
@@ -149,7 +151,7 @@ _Remember to update the status!_
 * スキャンしやすいよう、テンプレートを一貫して使用する
 * 適切な場合は、関連する Issue やドキュメントにリンクする
 
-### ⏲ 休暇
+### ⏲ 休暇 {#-time-off}
 
 チームメンバーは、[予定された休暇](/handbook/people-group/time-off-and-absence/time-off-types/)を「Workday」Slack アプリに追加し、[休暇取得](/handbook/engineering/#taking-time-off)ポリシーに従って [PTO カバレッジ Issue](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new)も作成する必要があります。
 
@@ -157,11 +159,11 @@ _Remember to update the status!_
 
 私たちはデフォルトで非同期コミュニケーションを使って運用しています。同期ディスカッションが有益な場合もあるので、チームメンバーが必要に応じて必要なチームメンバーと同期コールをスケジュールすることを推奨します。
 
-## 🔗 便利なリンク
+## 🔗 便利なリンク {#-useful-links}
 
 * [Issue ボード（Started マイルストーン）](https://gitlab.com/groups/gitlab-org/-/boards/11381598?milestone_title=Started&label_name%5B%5D=group%3A%3Aagent%20developer)
 
-### 📝 ダッシュボード（内部限定）
+### 📝 ダッシュボード（内部限定） {#-dashboards-internal-only}
 
 * [Developer Trace Analyzer](https://developer-traces-77e941.gitlab.io/index.html)
 * [Tableau の使用状況メトリクス](https://10az.online.tableau.com/#/site/gitlab/views/DuoWorkflowMetricsTracking/DuoWorkflowMetricsTracking?:iid=1)

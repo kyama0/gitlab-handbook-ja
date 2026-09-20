@@ -2,20 +2,20 @@
 title: "GitLab 基礎 - ハンズオンラボ: セキュリティスキャナーの実装"
 description: "このハンズオンガイドでは、CI/CD プロセスにセキュリティスキャナーを追加するプロセスを学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab6/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-14T01:13:44+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T03:04:38+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-09-16T14:51:21+01:00"
 ---
 
 > 完了までの推定時間: 30 分
 
-## 目標
+## 目標 {#objectives}
 
 このラボでは、CI/CD パイプラインのオプション機能である SAST を使用して、コードのセキュリティ脆弱性を特定します。GitLab の脆弱性レポートは、各パイプライン実行で見つかった新旧の脆弱性を表示します。詳細は[ドキュメント](https://docs.gitlab.com/ee/user/application_security/sast/)を参照してください。
 
-## タスク A. SAST コンポーネントの検索
+## タスク A. SAST コンポーネントの検索 {#task-a-finding-the-sast-component}
 
 GitLab には様々な CI/CD コンポーネントが用意されており、プロジェクトに含めることができるビルド済みの CI/CD 設定です。GitLab インスタンスで利用可能なすべてのコンポーネントを確認するには:
 
@@ -29,12 +29,12 @@ CI/CD コンポーネントを選択すると、コンポーネントの使用�
 
 ```yaml
 include:
-  - component: $CI_SERVER_FQDN/components/sast/sast@1.0.0
+  - component: $CI_SERVER_FQDN/components/sast/sast@1.1.0
 ```
 
 これを CI/CD ファイルに追加しましょう。
 
-## タスク B. SAST コンポーネントの追加
+## タスク B. SAST コンポーネントの追加 {#task-b-adding-the-sast-component}
 
 1. ページの左上にある Tanuki ロゴをクリックして CI/CD プロジェクトに移動し、`Cool App QA` プロジェクトをクリックしてください。
 
@@ -44,11 +44,11 @@ include:
 
 1. **Build > Pipeline Editor** を選択してください。
 
-1. ファイルの先頭（image の下）に、現在のバージョンの SAST インポートを追加してください。
+1. ファイルの先頭に、現在のバージョンの SAST インポートを追加してください。
 
       ```yaml
       include:
-        - component: $CI_SERVER_FQDN/components/sast/sast@1.0.0
+        - component: $CI_SERVER_FQDN/components/sast/sast@1.1.0
       ```
 
 1. ファイルの stages セクションに、以下のように `test` という名前のステージを追加します:
@@ -62,17 +62,15 @@ include:
       これらの変更を加えると、ファイルは次のようになります:
 
       ```yaml
-      default:
-        image: golang
-
       include:
-        - component: $CI_SERVER_FQDN/components/sast/sast@1.0.0
+        - component: $CI_SERVER_FQDN/components/sast/sast@1.1.0
 
       stages:
         - build
         - test
 
       build go:
+        image: golang
         stage: build
         script:
           - go build
@@ -87,13 +85,13 @@ include:
 
 1. *semgrep-sast* という名前の新しいジョブが表示されます。このジョブは、`include` キーワードを使用してインポートされたセキュリティスキャンです。
 
-## タスク C. `run.py` の追加と SAST スキャン結果の確認
+## タスク C. `run.py` の追加と SAST スキャン結果の確認 {#task-c-add-runpy-and-review-sast-scanning-results}
 
 このタスクでは、既知の脆弱性を含むファイルを追加し、SAST がそれを検出するかどうかを確認してください。
 
 1. パンくずリストのプロジェクト名をクリックして **Project overview** ページに戻ってください。
 
-1. ブランチのドロップダウンリストを使用して `initial-code` ブランチに切り替えてください。
+1. ブランチのドロップダウンリストを使用して initial-code ブランチに切り替えてください。
 
 1. プロジェクトランディングページの上部、ブランチのドロップダウンリストの右側にある **(+) > This directory > New file** をクリックしてください。
 
@@ -125,10 +123,10 @@ include:
 
 1. 問題を修正するためにコードを編集し（`subprocess.run` コマンドを削除するなど）、変更をコミットしてみてください。脆弱性レポートにまだその問題が表示されますか?
 
-## ラボガイド完了
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボの演習を完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson)を確認できます。
 
-## ご提案はありますか?
+## ご提案はありますか? {#suggestions}
 
 このラボへの変更を希望する場合は、マージリクエストを通じて変更を送信してください。

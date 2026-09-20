@@ -1,116 +1,67 @@
 ---
-title: "GitLab Advanced CI/CD - ハンズオンラボ: ベストプラクティスの確認"
-description: "このハンズオンガイドでは、GitLab の CI/CD に関する一般的なベストプラクティスについて説明します"
+title: "GitLab Advanced CI/CD - ハンズオンラボ: 複雑なプロセスの設定"
+description: "このハンズオンガイドでは、複雑な CI/CD プロセスの一般的な設定について説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T15:26:34Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T03:04:17+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-09-16T21:11:43+01:00"
 ---
 
-このラボの目的は、隠しジョブやマップマージなどを活用して、コードをより簡潔にして繰り返しを避けることです。
+このラボでは、マージトレインとマージコンフリクトを中心に、より複雑なマージプロセスを分析します。まず、マージトレインから始めます。
 
 > 完了までの推定時間: 15 分
 
-## 目標
+## 目標 {#objectives}
 
-- パイプラインの繰り返しを減らす
-- 隠しジョブとマップマージ
+- マージトレインの概念とそのメリットを理解する
+- GitLab プロジェクトでマージトレインを有効にする
+- マージトレインを作成して実行する
+- GitLab でマージコンフリクトを特定して解決する
+- コンフリクトするマージリクエストの処理を実践する
 
-テストパイプラインには、コードや定義が繰り返されている箇所がいくつかあります。npm でパッケージをインストールする際の繰り返しを、キャッシュを使用して減らせることを既に確認しました。このラボでは、コードの繰り返しをさらに減らす方法を学びます。
+## タスク A. マージトレインを有効にする {#task-a-enabling-merge-trains}
 
-現在の `.gitlab-ci.yml` ファイルの定義は次のとおりです:
+1. プロジェクトでマージトレインを有効にするには、左サイドバーで **Settings > Merge requests** を選択します。
 
-```yml:
-stages:
-  - deps
-  - test
+1. Merge options の下で、**Enable merged results pipeline** と **Enable merge trains** オプションをクリックします。
 
-workflow:
-  auto_cancel:
-    on_job_failure: all
+1. ページを少し下にスクロールして **Merge Checks** セクションで、**Pipelines must succeed** オプションをクリックします。
 
-default:
-  image: node:latest
+1. セクション下部で **Save changes** を選択します。
 
-install deps:
-  stage: deps
-  script:
-    - npm install jest jest-junit
-  cache:
-    key: $CI_COMMIT_REF_SLUG
-    paths:
-      - node_modules
+## タスク B. マージトレインを実行する {#task-b-running-a-merge-train}
 
-test binarysearch:
-  stage: test
-  script:
-    - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
-  artifacts:
-    when: always
-    reports:
-      junit: junit.xml
-  cache:
-    key: $CI_COMMIT_REF_SLUG
-    paths:
-     - node_modules
+マージトレインをデモンストレーションするために、意図的に長い CI/CD ジョブを作成しましょう。
 
-test linearsearch:
-  stage: test
-  script:
-    - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
-  artifacts:
-    when: always
-    reports:
-      junit: junit.xml
-  cache:
-    key: $CI_COMMIT_REF_SLUG
-    paths:
-      - node_modules
-```
+1. プロジェクトリポジトリに移動します。
 
-## タスク A. ジョブを簡略化する
+1. `.gitlab-ci.yml` ファイルを選択します。
 
-1. プロジェクトリポジトリに移動してください。
-
-1. **Build > Pipeline Editor** を選択してください。
-
-1. 現在の `.gitlab-ci.yml` ファイルでは、すべてのテストに同じアーティファクトセットが含まれています。各ジョブにアーティファクトを定義する代わりに、次の定義で最初に隠しジョブを作成してください:
+1. 既存の CI/CD ファイルに、次のジョブをパイプラインに追加します:
 
       ```yml
-      .artifactdef: &artifactdef
-        artifacts:
-          when: always
-          reports:
-            junit: junit.xml
+      pause:
+        stage: test
+        script:
+          - sleep 4m
       ```
 
-1. その後、マップマージを使用して、すべてのテストジョブにアーティファクト定義を追加してください:
+      このジョブを追加すると、2 つのマージリクエストを作成するのに十分な時間が確保されます。
+
+1. マージリクエストパイプラインでジョブが実行されるように、次のルールを追加します:
 
       ```yml
-      test binarysearch:
-        stage: test
-        script:
-          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
-        <<: *artifactdef
-        cache:
-          key: $CI_COMMIT_REF_SLUG
-          paths:
-            - node_modules
-
-      test linearsearch:
-        stage: test
-        script:
-          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
-        <<: *artifactdef
-        cache:
-          key: $CI_COMMIT_REF_SLUG
-          paths:
-            - node_modules
+      workflow:
+        auto_cancel:
+          on_job_failure: all
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
       ```
 
-1. さらに、繰り返しを避けるためにキャッシュも隠しジョブに移動してください。この例では、これらの定義を `cachedef` 隠しジョブに移動しています:
+      現在のパイプラインは次のようになります:
 
       ```yml
       stages:
@@ -120,6 +71,9 @@ test linearsearch:
       workflow:
         auto_cancel:
           on_job_failure: all
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
       default:
         image: node:latest
@@ -146,27 +100,188 @@ test linearsearch:
         stage: test
         script:
           - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
-        <<: [ *artifactdef, *cachedef ]
+        <<: [*artifactdef, *cachedef]
 
       test linearsearch:
         stage: test
         script:
           - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
-        <<: [ *artifactdef, *cachedef ]
+        <<: [*artifactdef, *cachedef]
+
+      pause:
+        stage: test
+        script:
+          - sleep 4m
       ```
 
-      > この変更により、コードの総行数が減るだけでなく、アーティファクトが変更された場合に複数の場所ではなく 1 か所だけ変更すれば済むようになります。
+1. **Commit changes** を選択して `.gitlab-ci.yml` ファイルを更新します。
 
-1. これらの変更を行った後、**Commit changes** を選択してください。
+      2 つのマージリクエストを作成します。最初のマージリクエスト:
 
-1. 左サイドバーで **Build > Pipelines** を選択してパイプラインを監視してください。
+1. **Code > Branches** を選択します。
 
-1. パイプラインが正常に実行されたことを確認したら、`.gitlab-ci.yml` ファイルに戻ってください。このファイルに他の最適化点はありますか?
+1. **New branch** を選択します。
 
-## ラボガイドの完了
+1. ブランチ名として `train` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `README.md` ファイルを選択して、変更を加えます。
+
+1. **Create merge request** を選択します。
+
+1. すべてのオプションをデフォルトのままにして **Create merge request** を選択します。
+
+      2 番目のマージリクエスト:
+
+1. **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチ名として `train-2` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `README.md` ファイルを選択して変更を加えます。前のブランチで行った変更とは異なる変更を加えるようにしてください。
+
+1. **Create merge request** を選択します。
+
+1. すべてのオプションをデフォルトのままにして **Create merge request** を選択します。
+
+      両方のマージリクエストが作成されたら:
+
+1. 両方を自動マージに設定します。`Set by your user to start a merge train when all merge checks pass` というメッセージが表示されます。
+
+1. `A new merge train has started and this merge request is the first of the queue. View merge train details.` のようなメッセージが表示されます。**View merge train details** をクリックして、マージトレインの動作を確認します。
+
+1. マージリクエストの完了を待ち、正常にマージされることを確認します。
+
+## タスク C. マージコンフリクト {#task-c-merge-conflicts}
+
+複数のユーザーが同時にプロジェクトで作業する場合、マージコンフリクトはしばしば避けられません。このラボでは、プロジェクト内でのマージリクエストの処理方法を学びます。
+
+1. 速度低下を避けるために、`main` ブランチの CI/CD プロジェクトから `pause` ジョブを削除します。現在、ファイルは次のようになります:
+
+      ```yml
+      stages:
+        - deps
+        - test
+
+      workflow:
+        auto_cancel:
+          on_job_failure: all
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+      default:
+        image: node:latest
+
+      .artifactdef: &artifactdef
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
+
+      install deps: &cachedef
+        stage: deps
+        script:
+          - npm install jest jest-junit
+        <<: *cachedef
+
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        <<: [*artifactdef, *cachedef]
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        <<: [*artifactdef, *cachedef]
+      ```
+
+      次に、コンフリクトする 2 つのマージリクエストを作成しましょう:
+
+1. **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチ名として `conflict` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `index.js` ファイルを選択します。ファイルの先頭に、関数を説明するコメントを追加します。コメントの例は以下のとおりです。
+
+      ```js
+      // This method will create a binary search finding the value in list in log(n) time
+      module.exports.binarySearch = function binarySearch(arr, val) {
+          let start = 0;
+          let end = arr.length - 1;
+          while (start <= end) {
+              let mid = Math.floor((start + end) / 2);
+              if (arr[mid] === val) {
+                  return mid;
+              }
+              if (val < arr[mid]) {
+                  end = mid - 1;
+              } else {
+                  start = mid + 1;
+              }
+          }
+          return -1;
+      }
+      ```
+
+1. このコードをブランチにコミットして、そこから新しいマージリクエストを作成します。その後、新しいブランチを作成します:
+
+1. **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチ名として `conflict-2` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `index.js` ファイルを選択します。ファイルの先頭に、関数を説明する別のコメントを追加します。コメントの例は以下のとおりです:
+
+      ```js
+      //A binary search will search a list in log(n) time
+      module.exports.binarySearch = function binarySearch(arr, val) {
+          let start = 0;
+          let end = arr.length - 1;
+          while (start <= end) {
+              let mid = Math.floor((start + end) / 2);
+              if (arr[mid] === val) {
+                  return mid;
+              }
+              if (val < arr[mid]) {
+                  end = mid - 1;
+              } else {
+                  start = mid + 1;
+              }
+          }
+          return -1;
+      }
+      ```
+
+1. このコードをブランチにコミットして、そこから新しいマージリクエストを作成します。
+
+1. `conflict` マージリクエストに戻ります。マージボタンの横の矢印を選択し、即時マージを選択してリポジトリにマージします。
+
+1. マージ後、`conflict-2` マージリクエストに移動します。*Merge conflicts must be resolved* と表示されてマージがブロックされていることがわかります。
+
+1. **Resolve conflicts** オプションを選択します。現在のマージリクエストのコードを使用するか、main のコードを使用するかを選択するオプションが表示されます。
+
+1. 希望のオプションを選択し、**Commit to source branch** を選択します。
+
+この後、マージリクエストをマージできるようになります。
+
+## ラボガイドの完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson)を参照できます。
 
-## ご提案は?
+## ご提案は? {#suggestions}
 
 このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。
