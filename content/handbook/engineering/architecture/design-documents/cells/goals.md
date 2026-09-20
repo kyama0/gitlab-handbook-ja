@@ -4,50 +4,61 @@ group: Tenant Scale
 title: 'Cells: ゴール'
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/goals/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T10:00:00Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-16T14:23:05-10:00"
+translated_at: "2026-09-20T02:53:45+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
 ---
 
-## ゴール
+## ゴール {#goals}
 
-### スケーラビリティ
+GitLab.com は、共有データベースを持つ単一のモノリシックなインスタンスとして動作しており、これがスケーラビリティの根本的な
+ボトルネックになっています。
+
+GitLab の成長に伴い、レガシー Cell のデータベースは負荷の増大と容量の制約に直面しています。
+
+Cells アーキテクチャは、次の仕組みによって水平スケーラビリティを実現し、この問題に対処します:
+
+- **論理的な分離**: Organizations は顧客のデータと操作に明確な論理的境界を提供し、
+  [Organization の分離](../organization/isolation.md)によってデータを分離します。Organizations をまたぐ操作では、
+  公開 API を使用して分離の境界を維持します。
+- **物理的な分散**: 自己完結した複数の GitLab インスタンスを、GitLab.com 上に Cells としてデプロイします。各 Cell は
+  複数の Organizations をホストできます。Self-Managed と Dedicated のデプロイでは、
+  インスタンスと Organization の 1 対 1 の対応を確立します。
+- **スケーラビリティ**: 複数の Cells が独立して動作できるため、成長に対応し、
+  [レガシー Cell](#legacy-cell)のデータベースの負荷を軽減できます。
+- **機能の同等性**: すべてのデプロイモデル（GitLab.com、Self-Managed、Dedicated）で、
+  Organizations と Cells の機能の一貫性を維持します。
+
+### スケーラビリティ {#scalability}
 
 この新しい共有インフラストラクチャアーキテクチャの主な目標は、SaaS プラットフォームに追加のスケーラビリティを提供することです。
 GitLab.com は大部分がモノリシックであり、（社内での）推定によると、現在のアーキテクチャには
-[PostgreSQL データベース](https://gitlab-com.gitlab.io/gl-infra/tamland/patroni.html) や
-[Redis](https://gitlab-com.gitlab.io/gl-infra/tamland/redis.html) のような水平スケールが難しいリソースに対して、
+[PostgreSQL データベース](https://gitlab-com.gitlab.io/gl-infra/tamland/patroni.html)や
+[Redis](https://gitlab-com.gitlab.io/gl-infra/tamland/redis.html)のような水平スケールが難しいリソースに対して、
 データベースのパーティショニングや分解を考慮しても、スケーラビリティの限界があると見込まれています。
 
 Cells は需要に応じて追加の Cell を作成できるため、水平スケーラブルなソリューションを提供します。Cells は最適なスケーラビリティのために必要に応じてプロビジョニングおよびチューニングできます。
 
-### 可用性の向上
+### 可用性の向上 {#increased-availability}
 
 共有インフラストラクチャアーキテクチャにとっての主要な課題は、トップレベルグループ間の分離の欠如です。
 これはノイジーネイバー効果を引き起こす可能性があります。
 あるトップレベルグループ内の組織の動作が他のすべての組織に影響を与える可能性があります。
 これは非常に好ましくありません。
 Cells は Cell レベルでの分離を提供します。
-特定のグループの Organizations は、異なる Cell に存在する他の Organizations から完全に分離されます。
+ある一群の Organizations は、異なる Cell に存在する他の Organizations から完全に分離されます。
 これにより、共有インフラストラクチャのコスト効率の恩恵を受けながら、ノイジーネイバー効果が最小化されます。
 
 さらに、Cells はディザスターリカバリー機能を実装するための手段を提供します。
 Cell 全体を読み取り専用のスタンバイにレプリケーションし、自動フェイルオーバー機能を備えることができます。
 
-### 一貫したエクスペリエンス
+### 一貫したエクスペリエンス {#a-consistent-experience}
 
 Organizations は、セルフマネージド GitLab インスタンスと同じユーザーエクスペリエンスを SaaS プラットフォームで体験できるべきです。
 
-### リージョン
-
-GitLab.com はアメリカ合衆国内でのみホストされています。
-他のリージョンに所在する Organizations は、ローカルの SaaS オファリングの需要を表明しています。
-Cells は [GitLab Regions](https://gitlab.com/groups/gitlab-org/-/epics/6037) への道を提供します。なぜなら Cells は異なる地域にデプロイできるためです。
-組織のどのデータが Cell の外部に存在するかによっては、データ居住と コンプライアンスの問題が解決されるかもしれません。
-
-### マーケットセグメント
+### マーケットセグメント {#market-segment}
 
 現時点では、GitLab.com は、より孤立した Organization モデルにうまく合わない「ソーシャルネットワーク」のような機能を持っています。
 ただし、これらの機能を削除すると、いくつかの課題が生じます:
@@ -57,39 +68,37 @@ Cells は [GitLab Regions](https://gitlab.com/groups/gitlab-org/-/epics/6037) �
 
 中小企業および中堅市場セグメントがこれらの機能に関心があるかどうか、またはほとんどのケースでそれらがなくても問題ないかどうかを評価する必要があります。
 
-### セルフマネージド
+### セルフマネージド {#self-managed}
 
 一貫性の観点から、セルフマネージドインスタンスも
 シングル Cell アーキテクチャを採用することが期待されています。セルフマネージドインスタンスは
 ルーティングやトポロジーのような追加の Cell サービスを必要とせず、シングル Cell を維持し続けることができます。Organizations と、場合によってはユーザーの分解もセルフマネージドインスタンスに採用されます。
 
-## 要件
+## 要件 {#requirements}
 
 | 種別 | 要件 | 重要度 |
 | ----------- | ------------------------------------------------- | -------- |
-| プロダクト | クラスター全体のデータの集計 | Medium |
-| プロダクト | すべての Cells が単一の GitLab.com ドメイン配下にある | High |
-| プロダクト | ユーザーが多数の Cells と対話できる | Medium |
-| プロダクト | 貢献者のワークフローへの影響が最小限 | High |
-| プロダクト | オンプレミスのようなエクスペリエンス | Medium |
-| プロダクト | 破壊的変更を最小限に抑える | High |
-| プロダクト | リージョンのサポートを可能にする | Low |
-| プロダクト | セルフマネージド顧客への影響を制限する | Low |
-| 運用 | 10 倍のヘッドルームを提供する | High |
-| 運用 | 100 倍のヘッドルームを提供する | Medium |
-| 運用 | サービス可用性の向上 | High |
-| 運用 | ユーザーあたりのコストが GitLab.com と同等またはそれ以下 | Medium |
-| 運用 | Cells の統一されたデプロイ方法 | Medium |
-| 運用 | 混在デプロイで動作する Cells | High |
-| 運用 | シングル Cell 障害への高い耐障害性 | High |
-| 運用 | 小規模 Cells | Medium |
-| 移行 | 堅牢なロールバックおよびディザスターリカバリーシナリオ | High |
-| 移行 | 既存の GitLab.com データベースのスケーリング | High |
-| 移行 | Cells の再バランシング | Low |
-| 移行 | 顧客が GitLab.com から Dedicated に移行できる | Low |
-| 開発 | 開発環境での容易な利用 | Medium |
+| プロダクト | クラスター全体のデータの集計 | 中 |
+| プロダクト | すべての Cells が単一の GitLab.com ドメイン配下にある | 高 |
+| プロダクト | ユーザーが多数の Cells と対話できる | 中 |
+| プロダクト | 貢献者のワークフローへの影響が最小限 | 高 |
+| プロダクト | オンプレミスのようなエクスペリエンス | 中 |
+| プロダクト | 破壊的変更を最小限に抑える | 高 |
+| プロダクト | セルフマネージド顧客への影響を制限する | 低 |
+| 運用 | 10 倍のヘッドルームを提供する | 高 |
+| 運用 | 100 倍のヘッドルームを提供する | 中 |
+| 運用 | サービス可用性の向上 | 高 |
+| 運用 | ユーザーあたりのコストが GitLab.com と同等またはそれ以下 | 中 |
+| 運用 | Cells の統一されたデプロイ方法 | 中 |
+| 運用 | 混在デプロイで動作する Cells | 高 |
+| 運用 | シングル Cell 障害への高い耐障害性 | 高 |
+| 運用 | 小規模 Cells | 中 |
+| 移行 | 堅牢なロールバックおよびディザスターリカバリーシナリオ | 高 |
+| 移行 | 既存の GitLab.com データベースのスケーリング | 高 |
+| 移行 | 顧客が GitLab.com から Dedicated に移行できる | 低 |
+| 開発 | 開発環境での容易な利用 | 中 |
 
-### クラスター全体のデータの集計
+### クラスター全体のデータの集計 {#aggregation-of-cluster-wide-data}
 
 アーキテクチャは Cell のクラスターを単一ビューで表示する方法を提供する必要があります。
 これは以下を意味する場合があります:
@@ -97,7 +106,7 @@ Cells は [GitLab Regions](https://gitlab.com/groups/gitlab-org/-/epics/6037) �
 - 異なる Organizations からのユーザーの To-Do を集計する
 - 公開プロジェクトや公開ソースコードのクラスター全体の検索を実行する
 
-### すべての Cells が単一の GitLab.com ドメイン配下にある
+### すべての Cells が単一の GitLab.com ドメイン配下にある {#all-cells-are-under-a-single-gitlabcom-domain}
 
 一般ユーザーは Cells の存在を認識すべきではありません。
 Cells はインスタンス管理者にのみ見えるべきです。
@@ -110,7 +119,7 @@ Organization または Cell ごとのサブドメインは、インスタンス�
 Organizations 間でユーザーとデータを共有するという長期的な目標と相反します。
 サブドメインの使用は顧客に対して破壊的変更（リンク、レジストリなど）をもたらします。
 
-### ユーザーが多数の Cells と対話できる
+### ユーザーが多数の Cells と対話できる {#user-can-interact-with-many-cells}
 
 異なる Cell に存在する可能性のある異なる Organizations と対話するために
 複数のアカウントを使用することは強く推奨されません。
@@ -123,14 +132,14 @@ Organizations 間でユーザーとデータを共有するという長期的な
 ユーザーは多数の SSH キーを管理する複雑さから、異なる Organizations にアクセスするために
 異なる SSH キーを使用することを要求されるべきではありません。
 
-### 貢献者のワークフローへの影響が最小限
+### 貢献者のワークフローへの影響が最小限 {#minimal-impact-on-contributor-workflows}
 
-GitLab.com には多数のオープンソースおよびオープンコアプロジェクトがあります（[`gitlab-org/gitlab`](https://gitlab.com/gitlab-org/gitlab) を含む）。
+GitLab.com には多数のオープンソースおよびオープンコアプロジェクトがあります（[`gitlab-org/gitlab`](https://gitlab.com/gitlab-org/gitlab)を含む）。
 Cells は公開プロジェクトへの貢献を困難にすべきではありません。
 新しい貢献方法を学ぶことは Cells の採用を妨げる可能性があります。
 導入されるアーキテクチャは、既存のワークフローを最小限の変更で変えることに集中すべきです。
 
-### オンプレミスのようなエクスペリエンス
+### オンプレミスのようなエクスペリエンス {#on-premise-like-experience}
 
 現在、オンプレミスは SaaS オファリングと比較して多くの利点を持っています。
 オンプレミスでは、ユーザー管理、アクセスコントロール、またはインスタンス全体の設定を含むすべての側面を制御できます。
@@ -138,7 +147,7 @@ Cells は公開プロジェクトへの貢献を困難にすべきではあり�
 SaaS とオンプレミスの差異は顧客にとって問題であり、
 異なるユーザーエクスペリエンスをもたらします。
 
-### 破壊的変更を最小限に抑える
+### 破壊的変更を最小限に抑える {#minimize-breaking-changes}
 
 Cells の導入は、サポートされる GitLab.com ワークフローの変更を意味します。
 Cells は説得力のあるユーザーエクスペリエンスを提供する限り、GitLab の使い方に影響を与えるかもしれません。
@@ -160,32 +169,20 @@ Cells は説得力のあるユーザーエクスペリエンスを提供する�
   システムの主要な側面は以前と同様に機能し続けます。
   顧客は以前の既知の動作状態にロールバックする方法を持っています。
 
-### リージョンのサポートを可能にする
-
-リージョンのサポートにより、異なる可用性ゾーン、
-または完全に異なるデータセンターで GitLab を実行できるようにする必要があります。
-
-これには、ユーザーが欧州、米国西部、米国東部などに Organizations を作成できるようにすること、
-また GitLab Inc. が異なるクラウドインフラストラクチャプロバイダー（Google Cloud、AWS）を使用して
-顧客にサービスを提供できるようにすることが含まれますが、これらに限定されません。
-
-Cells は、Organizations を実行している既存の顧客が、GitLab によって GitLab.com でサポートされる
-異なるデプロイリージョン/データセンター間で Organization を移動できるようにします。
-
-### セルフマネージド顧客への影響を制限する（Omnibus/CNG）
+### セルフマネージド顧客への影響を制限する（Omnibus/CNG） {#limit-impact-on-self-managed-customers-omnibuscng}
 
 Cells の導入は小規模なインストールに影響を与えるべきではありません。
 Cells はリソース要件が増加する Cells に関心がない限り、セルフマネージド顧客が追加コンポーネントを実行することを要求すべきではありません。
 
-### 10 倍のヘッドルームを提供する
+### 10 倍のヘッドルームを提供する {#provides-10x-headroom}
 
 Cells アーキテクチャは少なくとも 10 倍のヘッドルームを提供する必要があります。そのため、私たちのアーキテクチャは 10 個の Cells を実行するのに適したものでなければなりません。10 個以上の Cells の実行に伴う複雑性を最初から解決する必要はありません。
 
-### 100 倍のヘッドルームを提供する
+### 100 倍のヘッドルームを提供する {#provides-100x-headroom}
 
 Cells アーキテクチャは 10 個以上の Cells を実行できる必要があります。
 
-### サービス可用性の向上
+### サービス可用性の向上 {#improve-service-availability}
 
 Cells アーキテクチャは、クラスターの特定の Cells に配置することで
 一部の顧客により良い SLA を提供できるようにする必要があります:
@@ -193,7 +190,7 @@ Cells アーキテクチャは、クラスターの特定の Cells に配置す�
 - Cells はスパイクのある正当な使用によって引き起こされるノイジーネイバーの影響を軽減する必要があります。
 - Cells は例えば CI が暗号通貨マイニングに使用されるような悪用による影響を軽減する必要があります。
 
-### ユーザーあたりのコストが GitLab.com と同等またはそれ以下
+### ユーザーあたりのコストが GitLab.com と同等またはそれ以下 {#cost-per-user-similar-or-lower-to-gitlabcom}
 
 現在の GitLab.com アーキテクチャは非常にコスト効率が高いです。
 Cells の導入は、データ分散によりより多くのインフラストラクチャコンポーネントをもたらします:
@@ -204,14 +201,14 @@ Cells の導入は、データ分散によりより多くのインフラスト�
 - 提案される Cells アーキテクチャは Cells 上での高度なマルチテナンシーを確保する必要があります。
 - 提案される Cells アーキテクチャは長期的に Cells の負荷をバランスする方法を可能にするかもしれません。
 
-### Cells の統一されたデプロイ方法
+### Cells の統一されたデプロイ方法 {#unified-way-of-deploying-cells}
 
 提案される Cells アーキテクチャは、クラスターで 100 個以上の Cells を実行する必要性を見込んでいます。
 これは運用上のオーバーヘッドになります。Cells アーキテクチャが
 デプロイ、監視、ログ、ディザスターリカバリー、および顧客サポートのために
 既存のインフラストラクチャツールをできる限り再利用することが強く望まれます。
 
-### 混在デプロイで動作する Cells
+### 混在デプロイで動作する Cells {#cells-running-in-mixed-deployments}
 
 Cells アーキテクチャがクラスター全体で異なるバージョンのアプリケーションを実行できることが
 強く求められます。目的は、クラスターの一部で変更をテストするステージドデプロイを可能にし、
@@ -222,7 +219,7 @@ Cells アーキテクチャがクラスター全体で異なるバージョン�
 
 Cell 内で異なるバージョンを使用しても他の Cells に影響を与えてはなりません。
 
-### シングル Cell 障害への高い耐障害性
+### シングル Cell 障害への高い耐障害性 {#high-resilience-to-a-single-cell-failure}
 
 単一の Cell が利用不能になっても、他の Cells が正常に機能できなくなるべきではありません:
 
@@ -233,7 +230,7 @@ Cell 内で異なるバージョンを使用しても他の Cells に影響を�
 - クラスター全体のデータ集計は各 Cell の可用性ステータスを考慮する必要があります。
 - Cell ローカルデータ（グループおよびプロジェクト）の損失は、この Cell に存在するデータへのアクセス能力にのみ影響します。
 
-### 小規模 Cells
+### 小規模 Cells {#small-cells}
 
 Cells アーキテクチャは小規模 Cells をコスト効率よく実行する方法を提供すべきです。
 小規模 Cells の実行は、処理するデータセットが大幅に少なく、重要なシングルノードの垂直スケーリングを
@@ -245,7 +242,7 @@ Cells アーキテクチャは小規模 Cells をコスト効率よく実行す�
 - 停止時のリカバリー時間を短縮するために Cell に保存されるデータの量を削減する。
 - データが少ないほど、データベースマイグレーションが速くなり、レイテンシが改善され、ユーザー向けのパフォーマンスが向上します。
 
-### 堅牢なロールバックおよびディザスターリカバリーシナリオ
+### 堅牢なロールバックおよびディザスターリカバリーシナリオ {#robust-rollback-and-disaster-recovery-scenarios}
 
 Cells アーキテクチャのロールアウトは、GitLab.com の運用方法の根本的な変更です。
 これには多数の新コンポーネントの導入と、異なる Cells 間でのデータの水平分散が伴います。
@@ -254,13 +251,13 @@ Cells アーキテクチャのロールアウトは、GitLab.com の運用方法
 以前の動作状態にロールバックする方法を提供する必要があります。これには、ユーザー向けの変更と
 インフラストラクチャにデプロイされたコンポーネントの両方が含まれます。
 
-### 既存の GitLab.com データベースのスケーリング
+### 既存の GitLab.com データベースのスケーリング {#scale-existing-gitlabcom-database}
 
 既存の GitLab.com データベースは Cells をデプロイしながらも成長し続けます。
 Cells アーキテクチャは、できるだけ早く Cell 1（既存の GitLab.com）の
 容量を増やす方法を提供する必要があります。
 
-### Cells の再バランシング
+### Cells の再バランシング {#re-balancing-of-cells}
 
 Cells 上のデータ分散はいずれかの時点で不均一になることが予想されます。
 
@@ -270,7 +267,7 @@ Cells の再バランシング問題はかなり複雑ですが、ある規模�
 これは、既存の Cells 間で顧客データを選択的に移行する方法を理解することを
 意味するかもしれません。
 
-### 顧客が GitLab.com から Dedicated に移行できる
+### 顧客が GitLab.com から Dedicated に移行できる {#customer-can-migrate-from-gitlabcom-to-dedicated}
 
 Cells はより高い分離を持つアーキテクチャを強制します。しかし、一部の顧客は
 SaaS GitLab.com から GitLab Dedicated に移行したいと思うことが予想されます。
@@ -281,35 +278,35 @@ SaaS GitLab.com から GitLab Dedicated に移行したいと思うことが予�
 - 顧客を GitLab.com クラスター上の Dedicated Cell に移行する。
 - Cell を GitLab.com クラスターから独立したスタンドアロンの Dedicated Cell に切り離す。
 
-### 開発環境での容易な利用
+### 開発環境での容易な利用 {#easy-usage-in-development-environment}
 
 Cells アーキテクチャは開発者が必要に応じてローカルで実行しやすくする必要があります:
 
 - クラスター全体の機能を実装できる。
 - Cells が利用不能な状態をモデル化できる。
 
-## 非ゴール
+## 非ゴール {#non-goals}
 
 以下の目標はこのドキュメントの対象外です。ある時点でこれらが考慮されましたが、
 上記のゴールと要件からの気をそらすものとして除外されました。
 
-### 別個の GitLab インスタンス間のフェデレーション
+### 別個の GitLab インスタンス間のフェデレーション {#federation-between-distinct-gitlab-instances}
 
 Cells アーキテクチャは、一部のデータが共有される信頼された
 クラスター内通信を提供することを目的としています。フェデレーションは、
 完全に別個の外部インスタンス間のデータフローの問題を解決することを目的としています。
 
-### Dedicated インスタンスの GitLab.com への統合
+### Dedicated インスタンスの GitLab.com への統合 {#merging-dedicated-instances-to-gitlabcom}
 
 既存の Dedicated インスタンスが GitLab.com
 クラスターに参加することは意図されていません。
 
-### クラウドマネージドサービスの使用
+### クラウドマネージドサービスの使用 {#usage-of-cloud-managed-services}
 
 Cells はクラウドでより多くのマネージドサービスを使用する方向への他の取り組みに
 干渉すべきではありません。
 
-### Cells によるカナリアデプロイの置き換え
+### Cells によるカナリアデプロイの置き換え {#cells-should-replace-canary-deployments}
 
 Cells を持つことで、変更を一度に単一の Cells にロールアウトできるため、
 カナリアデプロイを実行する必要がなくなります。
@@ -319,7 +316,22 @@ Cells では、内部ユーザーが特定の Cell に存在し、その Cell �
 さらに Cells は今日のカナリアにおける一部の問題を解決するかもしれません。
 例えば、ユーザーのサブセットに対して Sidekiq コードをアップグレードする方法がないといった問題です。
 
-## 用語集
+### リージョン {#regions}
+
+GitLab.com はアメリカ合衆国内でのみホストされています。
+他のリージョンに所在する Organizations からは、現地の SaaS オファリングを求める声が上がっています。
+Cells は異なる地域にデプロイできるため、[GitLab Regions](https://gitlab.com/groups/gitlab-org/-/epics/6037)の実現につながります。
+Organization のどのデータが Cell の外部に置かれるかによっては、データレジデンシーとコンプライアンスの問題を解決できる可能性があります。
+
+これには、ユーザーが欧州、米国西部、米国東部に Organizations を作成できるようにすることや、
+GitLab Inc. が異なるクラウドインフラストラクチャプロバイダー（Google Cloud、AWS）を使用して顧客にサービスを提供できるようにすることが含まれますが、これらに限定されません。
+
+Cells によって、Organizations を運用している既存の顧客は、GitLab が GitLab.com でサポートする異なるデプロイリージョン/データセンター間で Organization を移動できるようになります。
+
+ただし、Regions は Cells の一部ではありません。Cells は実現をわずかに後押しするだけであり、
+Regions には他の手順も必要になります。
+
+## 用語集 {#glossary}
 
 | 用語 | 説明 | 非推奨用語 |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -330,7 +342,7 @@ Cells では、内部ユーザーが特定の Cell に存在し、その Cell �
 | [トップレベルグループ](#top-level-group) | トップレベルグループとは、他のすべてのグループの最上位グループの名称です。グループとプロジェクトはトップレベルグループの配下に入れ子になっています。 | ルートレベル名前空間 |
 | [ユーザー](#users) | メールアドレスに関連付けられた個人の名前空間を持つアカウント。 | 顧客 |
 
-### Cell
+### Cell {#cell}
 
 > - Pod は <https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/121163> で Cell に改名されました
 
@@ -364,15 +376,15 @@ Cell とは、異なる Organizations に属する複数のトップレベルグ
 
 非推奨の同義語: Whale、GitLab Dedicated インスタンス、インスタンス
 
-### Organizations
+### Organizations {#organizations}
 
 Organization とは 1 つまたは複数のトップレベルグループのための包括的な傘となるエンティティです。Organizations はデフォルトで互いに分離されており、クロス名前空間機能は単一の Organization 内に存在する名前空間に対してのみ機能します。
 
 ![用語 Organization](/images/engineering/architecture/design-documents/cells/diagrams/term-organization.drawio.png)
 
-[Organization ブループリント](../organization/) を参照してください。
+[Organization ブループリント](../organization/)を参照してください。
 
-Organizations は既知の概念であり、例えば [AWS](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/core-concepts.html) や [GCP](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy#organizations) にも存在します。
+Organizations は既知の概念であり、例えば [AWS](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/core-concepts.html)や [GCP](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy#organizations)にも存在します。
 
 Organizations は以下の前提で機能します:
 
@@ -398,8 +410,8 @@ Organizations は以下の前提で機能します:
 
 `https://gitlab.com/gitlab-org/gitlab/`:
 
-- `gitlab-org` は `トップレベルグループ` です; Organization のすべてのグループとプロジェクトのルート
-- `gitlab` は `プロジェクト` です; Organization のプロジェクト。
+- `gitlab-org` は `top-level group` です; Organization のすべてのグループとプロジェクトのルート
+- `gitlab` は `project` です; Organization のプロジェクト。
 
 トップレベルグループは事実上の Organization エンティティとして機能してきました。Organizations の作成により、トップレベルグループは [Organizations の配下に入れ子にされます](https://gitlab.com/gitlab-org/gitlab/-/issues/394796)。
 
@@ -419,7 +431,7 @@ Organizations は以下の前提で機能します:
 - ユーザーはすべての Cells 間でグローバルに共有されます。
 - ユーザーは複数のトップレベルグループを作成できます。
 - ユーザーは複数のトップレベルグループのメンバーになれます。
-- ユーザーは 1 つの Organization に属します。[!395736](https://gitlab.com/gitlab-org/gitlab/-/issues/395736) を参照してください。
+- ユーザーは 1 つの Organization に属します。[!395736](https://gitlab.com/gitlab-org/gitlab/-/issues/395736)を参照してください。
 - ユーザーは異なる Organizations のグループやプロジェクトのメンバーになれます。
 - ユーザーは Organizations を管理できます。
 - ユーザーアクティビティは Organization 内で集計されます。

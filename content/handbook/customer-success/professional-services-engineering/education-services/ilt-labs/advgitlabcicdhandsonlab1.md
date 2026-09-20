@@ -1,344 +1,306 @@
 ---
-title: "GitLab Advanced CI/CD - ハンズオンラボ: GitLab Runners ディープダイブ"
-description: "このハンズオンガイドでは、Docker ランナーの作成と管理について説明します"
+title: "GitLab Advanced CI/CD - ハンズオンラボ: ビルドパイプラインの最適化"
+description: "このハンズオンガイドでは、ビルドパイプラインの最適化について説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T15:26:34Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T03:01:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-09-16T21:11:43+01:00"
 ---
 
-ランナースケーラーは、オンデマンドでランナーマシンを起動するために一貫したランナーイメージに依存しています。このイメージを作成する最初のステップは、基盤となるランナーの仕組みを理解することです。このラボでは、Docker ベースのランナーを作成する方法を学びます。このランナーは、Docker オートスケーラーの基礎として使用できます。
+このラボの目的は、GitLab CI/CD パイプラインにおけるキャッシングのメリットを実証することです。キャッシュとは、ジョブがダウンロードして保存する 1 つ以上のファイルのことです。同じキャッシュを使用する後続のジョブは、ファイルを再ダウンロードする必要がないため、より迅速に実行されます。キャッシュはアーティファクトとは異なり、GitLab には保存されません。
 
 > 完了までの推定時間: 15 分
 
-## タスク A. 新しいプロジェクトを作成する
+## 目標 {#objectives}
 
-まず、ラボ環境で新しいプロジェクトを作成します:
+このラボの目標:
 
-1. **Create a project** を選択します。
+- キャッシングのメリットを示す
 
-1. **Create blank project** を選択します。
+## タスク A. 基本的なパイプラインを作成する {#task-a-building-a-basic-pipeline}
 
-1. プロジェクト名として **CICD Runner** と入力します。
+まず、パイプラインビルドのデモに使用する基本的な `Node.js` アプリケーションを作成します。
 
-1. その他のオプションはすべてデフォルトのまま、**Create project** を選択します。
+1. ILT グループ（"My Test Group - XXXXXXXX" という名前で、「X」の部分がユーザー名に置き換えられます）に移動してください。
 
-## タスク B. プロジェクトにランナーを追加する
+1. **New project** を選択してください。
 
-1. 新しく作成したプロジェクトのページが表示されていることを確認します。
+1. **Create blank project** を選択してください。
 
-1. 左サイドバーで、**Settings > CI/CD** を選択します。
+1. プロジェクト名を **Node** に設定し、その他のオプションはすべてデフォルトのまま **Create project** を選択してください。
 
-1. **Runners** の横の矢印をクリックして、Runners セクションを展開します。
+1. このプロジェクトで、**+ > New file** を選択してください。
 
-1. **Create project runner** を選択します。
+1. ファイル名を `index.js` に設定し、次のコードを追加してください:
 
-1. タグボックス内に `node` をタグとして追加し、**Run untagged jobs** のチェックが外れていることを確認したうえで、その他の設定はすべてデフォルトのままにして **Create runner** を選択します。
+      ```js
+      module.exports.binarySearch = function binarySearch(arr, val) {
+          let start = 0;
+          let end = arr.length - 1;
+          while (start <= end) {
+              let mid = Math.floor((start + end) / 2);
+              if (arr[mid] === val) {
+                  return mid;
+              }
+              if (val < arr[mid]) {
+                  end = mid - 1;
+              } else {
+                  start = mid + 1;
+              }
+          }
+          return -1;
+      }
 
-1. オペレーティングシステムとして Linux が選択されていることを確認します。
+      module.exports.linearSearch = function linearSearch(arr, val){
+        let index = 0;
+        let found = false;
+        while (!found && index < arr.length){
+          if (arr[index] == val){
+              found = true;
+          }else{
+            index += 1;
+          }
+          }
 
-1. **Step 1** というタイトルのセクションで、次のようなコマンドを確認します:
+          if (!found){
+              index = -1;
+          }
 
-      ```shell
-      gitlab-runner register
-          --url https://ilt.gitlabtraining.cloud
-          --token glrt-bzoxCnA6aDlvCnQ6Mwp1OmFtdCQKGl9glOywWMYcfTG74GwQ.1c1rc1xe9
+        return index;
+      }
       ```
 
-1. `--token` に続く値をメモしておきます。このトークンは後でランナーの登録に必要になります。
+      > このコードは単純な二分探索で、ソートされた配列の中から値を検索し、値が配列に存在する場合はそのインデックスを、見つからない場合は -1 を返します。
 
-1. 最後に、**View Runners** を選択します。ページを保存せずに離れようとしている旨の警告メッセージが表示される場合がありますが、トークンをメモしてある限り問題ありません。
+1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
 
-## タスク C. ランナーをデプロイする
+      Node プロジェクトを作成するには、`package.json` ファイルも作成する必要があります。
 
-ランナーの関連付けとランナー設定のデプロイは GitLab を通じて管理します。この方法を使用すると、ランナーの設定をソースコントロールで管理でき、変更の追跡に最適です。
+1. プロジェクトリポジトリに移動してください。
 
-この構造について見てみましょう:
+1. **+ > New file** を選択してください。
 
-1. まず、トークンをプロジェクトレベルの変数としてプロジェクトに安全に追加します。**Settings > CI/CD** に移動して、**Variables** セクションを展開します。
+1. ファイル名を `package.json` に設定し、次のテキストを追加してください:
 
-1. **Add variable** を選択します。右側のパネルで、**Key** フィールドに `GITLAB_RUNNER_TOKEN` と入力し、**Value** フィールドにランナートークンを貼り付けます。
+      ```json
+      {
+        "name": "ci-cd-demos",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "author": "",
+        "license": "ISC"
+      }
+      ```
 
-1. 変数の **Visibility** を **Visible** に設定します。GitLab が UI やログで値をマスクする場合がありますが、ランナートークンでは想定される動作です。重要なのは、コピーした値が登録時に使用される実際のトークンであることです。
+1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
 
-1. **Add variable** をクリックします。
+## タスク B. テストを作成する {#task-b-creating-tests}
 
-1. プロジェクトリポジトリに移動します。
+キャッシングの概念を実証するために、アプリケーションにテストを追加してみましょう。まず、二分探索のテストを作成します。
 
-1. **+ > New file** を選択します。
+1. コードリポジトリに移動してください。
 
-1. ファイル名に `.gitlab-ci.yml` と入力します。
+1. **+ > New file** を選択してください。
 
-1. `.gitlab-ci.yml` ファイルに deploy ステージを追加します:
+1. ファイル名を `binarysearch.test.js` に設定し、次のコードを追加してください:
+
+      ```js
+      const {binarySearch} = require("./index.js");
+
+      describe("Binary search tests", () => {
+          test("Search should succeed on first element", () => {
+              expect(binarySearch([1,2,3,4],1)).toBe(0);
+          });
+
+          test("Search should succeed on last element", () => {
+              expect(binarySearch([1,2,3,4],4)).toBe(3);
+          });
+
+          test("Search should succeed on any element", () => {
+              expect(binarySearch([1,2,3,4],2)).toBe(1);
+          });
+
+          test("Search should return -1 on not found", () => {
+              expect(binarySearch([1,2,3,4],10)).toBe(-1);
+          });
+
+      });
+      ```
+
+1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
+
+1. 線形探索についても同様のテストセットを作成します。`linearsearch.test.js` という名前の新しいファイルを作成し、次のコードを追加してください:
+
+      ```js
+      const {linearSearch} = require("./index.js");
+
+      describe("Linear search tests", () => {
+          test("Search should succeed on first element", () => {
+              expect(linearSearch([1,2,3,4],1)).toBe(0);
+          });
+
+          test("Search should succeed on last element", () => {
+              expect(linearSearch([1,2,3,4],4)).toBe(3);
+          });
+
+          test("Search should succeed on any element", () => {
+              expect(linearSearch([1,2,3,4],2)).toBe(1);
+          });
+
+          test("Search should return -1 on not found", () => {
+              expect(linearSearch([1,2,3,4],10)).toBe(-1);
+          });
+
+      });
+      ```
+
+1. `linearsearch.test.js` ファイルをコミットしてください。
+
+      次に、テストを定義する `.gitlab-ci.yml` ファイルを作成します。
+
+1. プロジェクトリポジトリに移動してください。
+
+1. **+ > New file** を選択してください。
+
+1. ファイル名に `.gitlab-ci.yml` と入力してください。
+
+1. ファイルに次のジョブ定義を追加してください:
 
       ```yml
       stages:
-          - deploy
-      ```
+        - test
 
-1. 最初のタスクは、SSH 接続に必要な依存関係をインストールするジョブをセットアップすることです。以下のコードをコピーして貼り付けます。
+      default:
+        image: node:latest
 
-      ```yml
-      deploy config:
-          stage: deploy
-          image: ubuntu:latest
-          before_script:
-            - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-            - eval $(ssh-agent -s)
-            - chmod 400 "$SSH_PRIVATE_KEY"
-            - ssh-add "$SSH_PRIVATE_KEY"
-            - mkdir -p ~/.ssh
-            - chmod 700 ~/.ssh
-            - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-      ```
-
-    > このジョブは、ランナー上に SSH エージェントをインストールして起動することから始まります。招待コードを利用すると、デプロイ先のインスタンスが作成され、SSH 秘密鍵が `SSH_PRIVATE_KEY` という変数に格納されます。この鍵は接続に使用するために SSH エージェントに追加されます。
-
-1. ジョブのスクリプトとして、サーバーに SSH 接続して GitLab ランナーを登録します。先ほど作成した GITLAB_RUNNER_TOKEN 変数を使用していることに注意してください。
-
-      ```yml
-          script:
-            - ssh root@$ip 'gitlab-runner unregister --all-runners'
-            - ssh root@$ip 'gitlab-runner register --non-interactive --url https://ilt.gitlabtraining.cloud --executor "docker" --docker-image alpine:latest  --token '"$GITLAB_RUNNER_TOKEN"
-      ```
-
-      > 最初に実行するコマンドは、リモートサーバー上のすべての現在のランナーを登録解除します。これにより、ランナーの重複登録を防ぎます。
-      >
-      > `–non-interactive` フラグは、インストールプロセス中にランナーが入力を求めることを防ぎます。プロンプトに入力する代わりに、URL、エグゼキューター、Docker イメージ、トークンの引数をコマンドライン引数で指定します。
-      >
-      > この設定では、エグゼキューターは docker に設定されています。`docker-image` には、パイプラインで使用するデフォルトの Docker イメージを設定します。任意の Docker イメージを使用できますが、この例では `alpine:latest` をデフォルトイメージとして使用します。
-
-1. **Commit changes** を選択し、コミットメッセージ（例: "Added runner creation job"）を追加して **Commit changes** を選択します。
-
-1. **Build > Pipelines** を選択します。
-
-1. 最新のパイプラインを選択します。
-
-1. パイプラインが正常に完了することを確認します。
-
-      ランナーが登録されていることを確認するには:
-
-1. 左サイドバーで、**Settings > CI/CD** を選択します。
-
-1. **Runners** の横の矢印をクリックして、Runners セクションを展開します。ランナーの横に緑色の丸が表示されているはずです。
-
-## タスク D. ランナーの設定を確認する
-
-このランナーが作成されると、ランナーの設定を定義する `config.toml` ファイルが作成されます。現在のランナーの設定を確認することから始めましょう。
-
-1. `deploy config` ジョブスクリプトの末尾に、次のコマンドを追加します:
-
-      ```yml
-      - ssh root@$ip 'cat /etc/gitlab-runner/config.toml'
-      ```
-
-1. この変更をコミットし、変更から作成されたパイプラインに移動します。
-
-1. `deploy config` ジョブの出力を確認します。
-
-1. `cat` コマンドからの次のような出力が表示されます:
-
-      ```toml
-      concurrent = 1
-      check_interval = 0
-      shutdown_timeout = 0
-
-      [session_server]
-        session_timeout = 1800
-
-      [[runners]]
-        name = "runner-test"
-        url = "https://ilt.gitlabtraining.cloud"
-        id = 1852
-        token = "your-token-here"
-        token_obtained_at = 2025-05-08T12:59:30Z
-        token_expires_at = 0001-01-01T00:00:00Z
-        executor = "docker"
-        [runners.custom_build_dir]
-        [runners.cache]
-          MaxUploadedArchiveSize = 0
-          [runners.cache.s3]
-          [runners.cache.gcs]
-          [runners.cache.azure]
-        [runners.docker]
-          tls_verify = false
-          image = "alpine:latest"
-          privileged = false
-          disable_entrypoint_overwrite = false
-          oom_kill_disable = false
-          disable_cache = false
-          volumes = ["/cache"]
-          shm_size = 0
-          network_mtu = 0
-      ```
-
-1. GitLab が UI、ログ、生成された設定の出力でランナートークンをマスクする場合があることに注意してください。`token:` の値が **[MASKED]** と表示される場合、これはランナートークンに対して想定される動作です。
-
-1. 次のタスクで必要になるため、この出力をメモしておきます。
-
-## タスク E. ランナーの設定を編集する
-
-この設定では、Docker in Docker でジョブを実行できるようにする必要があります。そのために、次の 2 つのデフォルト設定を変更する必要があります:
-
-  ```toml
-    privileged = true
-    volumes = ["/certs/client", "/cache"]
-  ```
-
-これらの変更を行うために、`config.toml` ファイルをランナーにプッシュします。
-
-1. プロジェクトリポジトリに移動します。
-
-1. **+ > New file** を選択します。
-
-1. ファイル名に `config.toml` と入力します。
-
-1. ジョブ出力の `config.toml` をリポジトリ内に作成した `.toml` ファイルにコピーし、**[MASKED]** トークンを先ほどコピーした元のランナートークン値に置き換えます。
-
-      `config.toml` は次のようになります:
-
-      ```toml
-      concurrent = 1
-      check_interval = 0
-      connection_max_age = "15m0s"
-      shutdown_timeout = 0
-      [session_server]
-        session_timeout = 1800
-      [[runners]]
-        name = "docker-runner"
-        url = "https://gitlab.com"
-        id = 40174213
-        token = "your-token"
-        token_obtained_at = 2025-05-24T12:10:22Z
-        token_expires_at = 0001-01-01T00:00:00Z
-        executor = "docker"
-        [runners.custom_build_dir]
-        [runners.cache]
-          MaxUploadedArchiveSize = 0
-          [runners.cache.s3]
-          [runners.cache.gcs]
-          [runners.cache.azure]
-        [runners.docker]
-          tls_verify = false
-          image = "alpine:latest"
-          privileged = false
-          disable_entrypoint_overwrite = false
-          oom_kill_disable = false
-          disable_cache = false
-          volumes = ["/cache"]
-          shm_size = 0
-          network_mtu = 0
-      ```
-
-1. `config.toml` ファイルを保存する前に、`config.toml` 内の次のフィールドを更新します:
-
-      ```toml
-      privileged = true
-      volumes = ["/certs/client", "/cache"]
-      ```
-
-1. `config.toml` ファイルをコミットします。
-
-1. **Build > Pipeline Editor** を選択します。
-
-1. `.gitlab-ci.yml` ファイル内の `gitlab-runner register` コマンドの後に、スクリプトに次の内容を追加します:
-
-      ```yml
-      - scp config.toml root@$ip:/etc/gitlab-runner/config.toml
-      - ssh root@$ip 'gitlab-runner restart'
-      ```
-
-1. これを行うと、次のような `.gitlab-ci.yml` ファイルになります:
-
-      ```yml
-      stages:
-          - deploy
-
-      deploy config:
-        stage: deploy
-        image: ubuntu:latest
-        before_script:
-          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-          - eval $(ssh-agent -s)
-          - chmod 400 "$SSH_PRIVATE_KEY"
-          - ssh-add "$SSH_PRIVATE_KEY"
-          - mkdir -p ~/.ssh
-          - chmod 700 ~/.ssh
-          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
+      test binarysearch:
+        stage: test
         script:
-          - ssh root@$ip 'gitlab-runner unregister --all-runners'
-          - ssh root@$ip 'gitlab-runner register --non-interactive --url https://ilt.gitlabtraining.cloud --executor "docker" --docker-image alpine:latest  --token '"$GITLAB_RUNNER_TOKEN"
-          - scp config.toml root@$ip:/etc/gitlab-runner/config.toml
-          - ssh root@$ip 'gitlab-runner restart'
-          - ssh root@$ip 'cat /etc/gitlab-runner/config.toml'
+          - npm install jest
+          - node_modules/.bin/jest binarysearch.test.js
+
+      test linearsearch:
+        stage: test
+        script:
+          - npm install jest
+          - node_modules/.bin/jest linearsearch.test.js
       ```
 
-1. **Commit changes** を選択します。
+1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択してください。
 
-このスクリプトにより、設定がランナーマシンにコピーされます。ランナーが登録されると、新しい設定が適用されます。
+## タスク C. キャッシングを使用してジョブを最適化する {#task-c-using-caching-to-optimize-jobs}
 
-## タスク F. ランナーをテストする
+このジョブ定義のセットを確認して、より効率的にできるかどうかを見てみましょう。よくある最適化の一つは、ジョブ実行中のスクリプトの繰り返しを探すことです。この例では、両方のジョブで npm を使って `jest-junit` パッケージをインストールする必要があります。`jest-junit` を 2 回インストールする代わりに、ジョブ間でパッケージをキャッシュできます。
 
-ランナーをテストするために、プロジェクトで使用する基本的な Docker in Docker 設定を作成します。
+1. `.gitlab-ci.yml` ファイルに、次のジョブを追加してください:
 
-1. `CICD Runner` プロジェクトに移動します。
-
-1. コードリポジトリに戻ります。
-
-1. **+ > New file** を選択します。
-
-1. ファイル名に `Dockerfile` と入力します。次のコンテンツを追加します:
-
-      ```Dockerfile
-      FROM node:latest
-
-      WORKDIR /app
-      CMD ["npm", "start"]
+      ```yml
+      install deps:
+        stage: deps
+        script:
+          - npm install jest
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
       ```
 
-1. このファイルをコミットします。
-
-1. `.gitlab-ci.yml` ファイルを選択します。
-
-1. **Edit > Edit in pipeline editor** を選択します。
-
-1. 既存のジョブとステージをすべて削除して、空のファイルにします。
-
-1. build ステージを追加します:
+1. 次に、テストスクリプトが実行される前に依存関係がキャッシュされるよう、test ステージの前に 'deps' ステージを追加してください:
 
       ```yml
       stages:
-        - build
+        - deps
+        - test
       ```
 
-1. 次の build ジョブを追加します:
+      `.gitlab-ci.yml` ファイルは次のようになります:
 
       ```yml
-      build image:
-        stage: build
-        image: docker:27
-        services:
-          - docker:27-dind
-        variables:
-          IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+      stages:
+        - deps
+        - test
+
+      default:
+        image: node:latest
+
+      install deps:
+        stage: deps
         script:
-          - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
-          - docker build -t $IMAGE .
-          - docker push $IMAGE
-        tags:
-          - node
+          - npm install jest
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      test binarysearch:
+        stage: test
+        script:
+          - npm install jest
+          - node_modules/.bin/jest binarysearch.test.js
+
+      test linearsearch:
+        stage: test
+        script:
+          - npm install jest
+          - node_modules/.bin/jest linearsearch.test.js
       ```
 
-1. **Commit changes** を選択します。
+      > この定義では、`CI_COMMIT_REF_SLUG` に一致するキーを持つキャッシュを作成します。これにより、各ジョブが一意のキャッシュを受け取ることが保証されます。キャッシュされるデータは `node_modules` フォルダーです。キャッシュを使用するためにセットアップするには、テストの実行に使用する `jest` パッケージのインストールコマンドをスクリプトで実行します。
 
-パイプラインが実行されると、新しい Docker ランナーを使用してジョブが正常に完了するはずです。
+      キャッシュが定義されたので、各ジョブから `jest` パッケージのインストールを削除できます。
 
-## ラボガイドの完了
+1. ジョブから `npm install jest` コマンドを削除し、キャッシュ参照に置き換えてください。以下は完成した `.gitlab-ci.yml` ファイルの例です:
+
+      ```yml
+      stages:
+        - deps
+        - test
+
+      default:
+        image: node:latest
+
+      install deps:
+        stage: deps
+        script:
+          - npm install jest
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest binarysearch.test.js
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest linearsearch.test.js
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+      ```
+
+1. 変更を `main` にコミットしてください。
+
+1. パイプラインに移動して、テストジョブが正常に実行されることを確認してください。
+
+## ラボガイドの完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson)を参照できます。
 
-## ご提案は?
+## ご提案は? {#suggestions}
 
 このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

@@ -4,29 +4,29 @@ description: "AI Catalog グループは、組織、グループ、プロジェ�
 aliases:
   - /handbook/engineering/ai/ai-catalog/
 upstream_path: /handbook/engineering/ai/agent-foundations/ai-catalog/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-lastmod: "2026-09-09T19:05:36+01:00"
-translated_at: "2026-09-10T11:09:19+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-17T14:47:13+02:00"
+translated_at: "2026-09-20T02:57:18+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
 AI Catalog グループは、GitLab ユーザーがエージェント、フロー、MCP サーバー、スキルなどの AI 搭載オブジェクトを発見、評価、有効化、管理するための場を構築することに注力しています。私たちは Explore、Group、Project の各スコープにわたるカタログ体験を担当し、プロダクト、デザイン、エンジニアリングを横断して、AI オブジェクトをどのように作成、キュレーション、提示し、信頼できるものにして活用するかを定義します。
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 {{% product/section-group-table "AI Catalog" %}}
 
-## 連絡方法
+## 連絡方法 {#how-to-reach-us}
 
 状況に応じて、AI Catalog グループに連絡する最も適切な方法は以下のとおりです。
 
 * Slack チャンネル: `#g_ai_catalog`
 * GitLab グループ `@gitlab-org/ai-powered/ai-catalog/engineering`（エンジニアのみ）
 
-## 取り組んでいること
+## 取り組んでいること {#what-were-working-on}
 
 未定
 
@@ -38,7 +38,7 @@ AI Catalog グループは、GitLab ユーザーがエージェント、フロ�
   所有しています。
   [リリースとマニフェストのプロセス](/handbook/engineering/ai/agent-foundations/ai-catalog/slack-app-release-process/)を参照してください。
 
-## 私たちの働き方
+## 私たちの働き方 {#how-we-work}
 
 私たちはまだ始まったばかりで、新しいチームに馴染んでいきながら働き方を定義していきます。
 始めるためのいくつかのリンクを以下に示します。
@@ -49,7 +49,7 @@ AI Catalog グループは、GitLab ユーザーがエージェント、フロ�
 * [非同期アップデート](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/issues/?label_name%5B%5D=async%20update)
 * [チーム Wiki](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/wikis/home): プロダクトの意思決定と有用な情報のため
 
-### DRI
+### DRI {#dris}
 
 大規模なプロジェクトに取り組む際は、それをエピックと Issue に分割します。
 各エピックの Directly Responsible Individual（DRI）は、その領域に対する単一の説明責任を担います。
@@ -63,7 +63,7 @@ DRI の責任:
 4. Issue リストをキュレーションする。必要なものを含め、不要なものを削除する
 5. 作業が複数のエピックにまたがる場合、他の DRI と調整する
 
-### 支援の依頼への対応方法
+### 支援の依頼への対応方法 {#how-we-handle-requests-for-help}
 
 お客様がカタログで問題を経験している場合、Support チームが
 [支援の依頼（request for help）](https://gitlab.com/gitlab-com/request-for-help)を提起します。
@@ -85,7 +85,7 @@ AI Catalog チームは、以下のガイドラインに基づいてコミュニ
 * デフォルトでオープンにコミュニケーションを行います。
 * 仕事関連の Slack メッセージでは、プライベートメッセージよりも公開チャンネル（`#g_ai_catalog`）を優先します。
 
-### フロントエンドとバックエンドの協業
+### フロントエンドとバックエンドの協業 {#frontend-backend-collaboration}
 
 私たちは、開発のスピードとコード品質を確保するために、フロントエンドエンジニアとバックエンドエンジニアの間で高いレベルの協業を促進することを目指しています。
 
@@ -98,7 +98,7 @@ AI Catalog チームは、以下のガイドラインに基づいてコミュニ
   関連する GitLab Issue または [`#g_ai_catalog`](https://gitlab.enterprise.slack.com/archives/C08T5J1KXKQ) で早めに伝え、
   フロントエンドやバックエンドのカウンターパートがすべての変更を把握し、後の段階でブロッカーになるのを避けるために早めにフィードバックを提供できるようにします。
 
-### AI ステージとの協業
+### AI ステージとの協業 {#ai-stage-collaboration}
 
 AI Catalog は、基盤となるバックエンドサービスとして
 [Workflow Service](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/tree/main/duo_workflow_service?ref_type=heads)
@@ -119,7 +119,7 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 * Agent Foundations の [`#g_duo-agent-platform`](https://gitlab.enterprise.slack.com/archives/C07035GQ0TB) チャンネルに参加します
 * デフォルトで私たちの[非同期コミュニケーションの方針](#communication)に従いますが、必要に応じて同期ミーティングを設定し、主要な成果が GitLab Issue に文書化されるようにします
 
-#### 主要な Agent Foundations の連絡先
+#### 主要な Agent Foundations の連絡先 {#primary-agent-foundations-contacts}
 
 | チームメンバー | 専門領域 |
 | --- | --- |
@@ -130,7 +130,7 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 | [Shekhar Patnaik](https://gitlab.com/shekharpatnaik)  / [Igor Drozdov](https://gitlab.com/igor.drozdov) | Duo Chat エージェントの統合 |
 | [Sebastian Rehm](https://gitlab.com/bastirehm) | Engineering Manager、上記いずれのバックアップ連絡先 |
 
-### 計画のサイクル
+### 計画のサイクル {#planning-cadence}
 
 私たちは GitLab の[プロダクトマイルストーン](/handbook/product/product-processes/milestones/)に合わせて作業を計画し、整合させます。マイルストーンの計画は、次のマイルストーンが始まる前の週に行われます。
 
@@ -138,7 +138,7 @@ Issue の分解と[重み付け](#weighting)は、マイルストーンが始ま
 
 計画期間内に Issue やエピックを分解できない場合は、マイルストーン作業の一環として Product や Design と調査・コラボレーションを行うための `Spike` Issue をマイルストーンに追加します。スパイクの結果に基づいてエピックを更新し、追加の Issue を作成します。
 
-### ~Deliverable と ~Stretch ラベル
+### ~Deliverable と ~Stretch ラベル {#deliverable-and-stretch-labels}
 
 マイルストーンに割り当てられたすべての Issue は、トリアージされ、`~Deliverable` または `~Stretch` のいずれかのラベルが付けられます。
 これらのラベルは Issue にのみ適用されます。エピックには `~Deliverable` または `~Stretch` を付けてはいけません
@@ -154,7 +154,7 @@ Issue の分解と[重み付け](#weighting)は、マイルストーンが始ま
 * **優先順位付け**： チームメンバーがどの Issue に最初に取り組むべきかを識別するのを助ける
 * **焦点**： マイルストーンにとって必須の作業とあれば嬉しい作業を明確にする
 
-#### 誰がいつ適用するか
+#### 誰がいつ適用するか {#who-applies-it-and-when}
 
 Engineering Manager は、マイルストーンが始まる前の計画プロセス中に `~Deliverable` と `~Stretch` のラベルを適用します。
 この決定は、以下に基づいて Product Manager と協力して行われます。
@@ -198,7 +198,7 @@ Issue はフィボナッチ数列（0、1、2、3、5、8+）を使用して重�
 
 全員が、担当する `~Deliverable` と `~Stretch` の Issue およびエピックについて、金曜日までに、またはそれ以前の方が合理的であれば早めに、非同期の週次ステータスアップデートを提供します。
 
-* アップデートのコメントは `## Weekly Status · YYYY-MM-DD · <On Track | Needs Attention | At Risk | No Status | Complete>` で始めます。
+* アップデートのコメントには[このテンプレート](https://gitlab.com/-/snippets/6052232)を使用します。
   過去 6 日以内に Weekly Status のコメントを手動で投稿している場合、AI が生成する週次サマリーはスキップされます。
 * 3 日以上の作業を要する Issue ではアップデートが求められます。1 日か
   2 日で完了する Issue にはアップデートは不要です。
@@ -207,7 +207,7 @@ Issue はフィボナッチ数列（0、1、2、3、5、8+）を使用して重�
 * `workflow::` ラベルと健全性ステータスを最新に保ち、アサインされた担当者（DRI）を明確にします。
   健全性ステータスの評価が実態と一致しない場合は、手動で更新します。
 
-### 私たちの技術スタック
+### 私たちの技術スタック {#our-tech-stack}
 
 * GraphQL の[バックエンド](https://docs.gitlab.com/development/api_graphql_styleguide/)と
   [フロントエンド](https://docs.gitlab.com/development/fe_guide/graphql/)。すべての新しいスキーマアイテムは、
@@ -215,14 +215,14 @@ Issue はフィボナッチ数列（0、1、2、3、5、8+）を使用して重�
 * ポーリングではなく GraphQL [サブスクリプション](https://docs.gitlab.com/development/fe_guide/graphql/#subscriptions)。
 * [AI Catalog Backend Architecture](/handbook/engineering/architecture/design-documents/ai_catalog/) のデザインドキュメント（2026 年 2 月に執筆）を読んでください。
 
-## UX 原則
+## UX 原則 {#ux-principles}
 
 すべてのデザインとエンジニアリングの意思決定を導く、AI Catalog の [UX 原則](/handbook/engineering/ai/ai-catalog/ux-principles/)を参照してください。
 これは、カタログに貢献するすべての人がトレードオフを判断する前に意図をすり合わせるための参照点です。
 
-## チームミーティング
+## チームミーティング {#team-meetings}
 
-### AI Catalog: グループミーティング
+### AI Catalog: グループミーティング {#ai-catalog-group-meeting}
 
 * **時間**： 毎週火曜日、05:30 UTC と 15:00 UTC を週ごとに交互に。
 * **目的**： このミーティングは、現在の Issue やブロッカーを取り上げるための一般的な同期ミーティングとして機能します。

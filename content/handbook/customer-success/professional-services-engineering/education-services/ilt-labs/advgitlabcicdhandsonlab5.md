@@ -1,287 +1,218 @@
 ---
-title: "GitLab Advanced CI/CD - ハンズオンラボ: 複雑なプロセスの設定"
-description: "このハンズオンガイドでは、複雑な CI/CD プロセスの一般的な設定について説明します"
+title: "GitLab Advanced CI/CD - ハンズオンラボ: レビューアプリ"
+description: "このハンズオンガイドでは、レビューアプリの作成プロセスについて説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T15:26:34Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T03:04:38+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-09-16T21:11:43+01:00"
 ---
 
-このラボでは、マージトレインとマージコンフリクトを中心に、より複雑なマージプロセスを分析します。まず、マージトレインから始めます。
+このラボの目的は、Node.js アプリケーションからレビューアプリを作成することです。レビューアプリとは、プロジェクト内の各マージリクエストのために自動的に作成される一時的なアプリケーション環境です。これにより、開発者やステークホルダーは、変更をメインブランチにマージする前に、ライブの独立した環境で提案された変更をプレビューしてインタラクションできます。
 
 > 完了までの推定時間: 15 分
 
-## 目標
+## 目標 {#objectives}
 
-- マージトレインの概念とそのメリットを理解する
-- GitLab プロジェクトでマージトレインを有効にする
-- マージトレインを作成して実行する
-- GitLab でマージコンフリクトを特定して解決する
-- コンフリクトするマージリクエストの処理を実践する
+- Node.js アプリケーションからレビューアプリを作成する
 
-## タスク A. マージトレインを有効にする
+## タスク A. Web アプリを作成する {#task-a-creating-a-web-app}
 
-1. プロジェクトでマージトレインを有効にするには、左サイドバーで **Settings > Merge requests** を選択します。
-
-1. Merge options の下で、**Enable merged results pipeline** と **Enable merge trains** オプションをクリックします。
-
-1. ページを少し下にスクロールして **Merge Checks** セクションで、**Pipelines must succeed** オプションをクリックします。
-
-1. セクション下部で **Save changes** を選択します。
-
-## タスク B. マージトレインを実行する
-
-マージトレインをデモンストレーションするために、意図的に長い CI/CD ジョブを作成しましょう。
+このタスクでは、レビュー環境で実行する Web アプリケーションを作成します。
 
 1. プロジェクトリポジトリに移動します。
 
-1. `.gitlab-ci.yml` ファイルを選択します。
+1. **Build > Pipeline Editor** を選択します。
 
-1. 既存の CI/CD ファイルに、次のジョブをパイプラインに追加します:
+1. `index.js` ファイルに express コードを追加すると、Web サーバーを起動して接続を待機するため、テストは `index.js` に対して実行できなくなります。そのため、`install deps`、`test binarysearch`、`test linearsearch` ジョブをファイルから削除します。`.gitlab-ci.yml` ファイルからジョブを削除して、**Commit changes** を選択します。
+
+1. プロジェクトリポジトリに戻ります。
+
+1. `index.js` ファイルを選択します。
+
+1. **Edit > Edit single file** を選択します。
+
+1. 二分探索と線形探索のメソッドを削除し、Web アプリケーションを実行する次のコードを追加します:
+
+      ```js
+      const express = require('express')
+      const app = express()
+      const port = 4001
+
+      app.get('/', (req, res) => {
+        res.send('Hello World!')
+      })
+
+      app.listen(port, () => {
+        console.log(`Example app listening on port ${port}`)
+      })
+      ```
+
+1. 変更をコミットします。
+
+## タスク B. レビューアプリを作成する {#task-b-creating-a-review-app}
+
+1. 左サイドバーで **Operate > Environments** を選択します。
+
+1. **Enable Review Apps** を選択します。
+
+1. 次のような提供されたスクリプトをコピーします:
 
       ```yml
-      pause:
-        stage: test
+      deploy_review:
+        stage: deploy
         script:
-          - sleep 4m
+          - echo "Add script here that deploys the code to your infrastructure"
+        environment:
+          name: review/$CI_COMMIT_REF_NAME
+          url: https://$CI_ENVIRONMENT_SLUG.example.com
+        rules:
+          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
       ```
 
-      このジョブを追加すると、2 つのマージリクエストを作成するのに十分な時間が確保されます。
+      > **Enable Review Apps** をクリックしたときに GitLab がこのスクリプトを表示しない場合は、上記の参照スクリプトをコピーして使用してください。
 
-1. マージリクエストパイプラインでジョブが実行されるように、次のルールを追加します:
+1. コードリポジトリに戻ります。
+
+1. **Build > Pipeline Editor** を選択します。
+
+1. コピーした `deploy_review` ジョブを `.gitlab-ci.yml` ファイルの末尾に貼り付けます。
+
+1. この例では、URL として IP アドレスを使用するように URL を少し変更します。この変数 `$ip` は、招待コードを利用したときに作成されたグループレベルの変数です。この変数を使用するために、サーバーが `HTTP` のみを使用するため `HTTPS` も削除します。以下は完成した `deploy_review` 定義です:
 
       ```yml
-      workflow:
-        auto_cancel:
-          on_job_failure: all
+      deploy_review:
+        stage: deploy
+        script:
+          - echo "Add script here that deploys the code to your infrastructure"
+        environment:
+          name: review/$CI_COMMIT_REF_NAME
+          url: http://$ip:4001
         rules:
-          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
       ```
 
-      現在のパイプラインは次のようになります:
+1. `.gitlab-ci.yml` ファイルに `deploy` ステージを追加します。
 
       ```yml
       stages:
         - deps
         - test
-
-      workflow:
-        auto_cancel:
-          on_job_failure: all
-        rules:
-          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
-      default:
-        image: node:latest
-
-      .artifactdef: &artifactdef
-        artifacts:
-          when: always
-          reports:
-            junit: junit.xml
-
-      .cachedef: &cachedef
-        cache:
-          key: $CI_COMMIT_REF_SLUG
-          paths:
-            - node_modules
-
-      install deps:
-        stage: deps
-        script:
-          - npm install jest jest-junit
-        <<: *cachedef
-
-      test binarysearch:
-        stage: test
-        script:
-          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
-        <<: [*artifactdef, *cachedef]
-
-      test linearsearch:
-        stage: test
-        script:
-          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
-        <<: [*artifactdef, *cachedef]
-
-      pause:
-        stage: test
-        script:
-          - sleep 4m
+        - deploy
       ```
 
-1. **Commit changes** を選択して `.gitlab-ci.yml` ファイルを更新します。
-
-      2 つのマージリクエストを作成します。最初のマージリクエスト:
-
-1. **Code > Branches** を選択します。
-
-1. **New branch** を選択します。
-
-1. ブランチ名として `train` を追加します。
-
-1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
-
-1. `README.md` ファイルを選択して、変更を加えます。
-
-1. **Create merge request** を選択します。
-
-1. すべてのオプションをデフォルトのままにして **Create merge request** を選択します。
-
-      2 番目のマージリクエスト:
-
-1. **Code > Branches** を選択します。
-
-1. **New branch** を選択します。
-
-1. ブランチ名として `train-2` を追加します。
-
-1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
-
-1. `README.md` ファイルを選択して変更を加えます。前のブランチで行った変更とは異なる変更を加えるようにしてください。
-
-1. **Create merge request** を選択します。
-
-1. すべてのオプションをデフォルトのままにして **Create merge request** を選択します。
-
-      両方のマージリクエストが作成されたら:
-
-1. 両方を自動マージに設定します。`Set by your user to start a merge train when all merge checks pass` というメッセージが表示されます。
-
-1. `A new merge train has started and this merge request is the first of the queue. View merge train details.` のようなメッセージが表示されます。**View merge train details** をクリックして、マージトレインの動作を確認します。
-
-1. マージリクエストの完了を待ち、正常にマージされることを確認します。
-
-## タスク C. マージコンフリクト
-
-複数のユーザーが同時にプロジェクトで作業する場合、マージコンフリクトはしばしば避けられません。このラボでは、プロジェクト内でのマージリクエストの処理方法を学びます。
-
-1. 速度低下を避けるために、`main` ブランチの CI/CD プロジェクトから `pause` ジョブを削除します。現在、ファイルは次のようになります:
+1. これで、変更をレビューアプリにデプロイできます。`deploy_review` ジョブに `ubuntu:latest` の `image` を追加します。
 
       ```yml
-      stages:
-        - deps
-        - test
+      deploy_review:
+        stage: deploy
+        image: ubuntu:latest
+      ```
 
-      workflow:
-        auto_cancel:
-          on_job_failure: all
+1. `deploy_review` ジョブの `script` のすぐ上に、次の `before_script` を追加します。SSH 秘密鍵は SSH_PRIVATE_KEY という名前の変数に保存されています。この鍵を SSH エージェントに追加して、リモートサーバーへの接続に使用します:
+
+      ```yml
+        before_script:
+          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+          - eval $(ssh-agent -s)
+          - chmod 400 "$SSH_PRIVATE_KEY"
+          - ssh-add "$SSH_PRIVATE_KEY"
+          - mkdir -p ~/.ssh
+          - chmod 700 ~/.ssh
+      ```
+
+1. 最後に、次のジョブ定義に合わせてジョブスクリプトを更新します:
+
+      ```yml
+        script:
+          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
+          - ssh root@$ip 'mkdir -p /www'
+          - ssh root@$ip 'sudo apt-get update'
+          - ssh root@$ip 'sudo apt-get install nodejs npm -y'
+          - ssh root@$ip 'cd /www/ && npm init -y'
+          - ssh root@$ip 'cd /www/ && npm i express'
+          - ssh root@$ip 'cd /www/ && npm i -g pm2'
+          - scp index.js root@$ip:/www
+          - ssh root@$ip 'pm2 start -f /www/index.js'
+      ```
+
+1. 最終的なジョブスクリプトは次のようになります:
+
+      ```yml
+      deploy_review:
+        stage: deploy
+        image: ubuntu:latest
+        before_script:
+          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+          - eval $(ssh-agent -s)
+          - chmod 400 "$SSH_PRIVATE_KEY"
+          - ssh-add "$SSH_PRIVATE_KEY"
+          - mkdir -p ~/.ssh
+          - chmod 700 ~/.ssh
+        script:
+          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
+          - ssh root@$ip 'mkdir -p /www'
+          - ssh root@$ip 'sudo apt-get update'
+          - ssh root@$ip 'sudo apt-get install nodejs npm -y'
+          - ssh root@$ip 'cd /www/ && npm init -y'
+          - ssh root@$ip 'cd /www/ && npm i express'
+          - ssh root@$ip 'cd /www/ && npm i -g pm2'
+          - scp index.js root@$ip:/www
+          - ssh root@$ip 'pm2 start -f /www/index.js'
+        environment:
+          name: review/$CI_COMMIT_REF_NAME
+          url: http://$ip:4001
         rules:
-          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
-      default:
-        image: node:latest
-
-      .artifactdef: &artifactdef
-        artifacts:
-          when: always
-          reports:
-            junit: junit.xml
-
-      install deps: &cachedef
-        stage: deps
-        script:
-          - npm install jest jest-junit
-        <<: *cachedef
-
-      test binarysearch:
-        stage: test
-        script:
-          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
-        <<: [*artifactdef, *cachedef]
-
-      test linearsearch:
-        stage: test
-        script:
-          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
-        <<: [*artifactdef, *cachedef]
+          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
       ```
 
-      次に、コンフリクトする 2 つのマージリクエストを作成しましょう:
+1. **Commit changes** を選択します。
+
+## タスク C. レビューアプリを確認する {#task-c-verify-the-review-app}
+
+レビューアプリが機能することをテストするために、新しいマージリクエストを作成します。
 
 1. **Code > Branches** を選択します。
 
 1. **New branch** を選択します。
 
-1. ブランチ名として `conflict` を追加します。
+1. ブランチ名を `test_review` に設定して **Create branch** を選択します。
 
-1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+1. このブランチのマージリクエストを作成します。
 
-1. `index.js` ファイルを選択します。ファイルの先頭に、関数を説明するコメントを追加します。コメントの例は以下のとおりです。
+1. マージリクエストを作成したら、**Code > Open in Web IDE** を選択してマージリクエストから Web IDE を開きます。
 
-      ```js
-      // This method will create a binary search finding the value in list in log(n) time
-      module.exports.binarySearch = function binarySearch(arr, val) {
-          let start = 0;
-          let end = arr.length - 1;
-          while (start <= end) {
-              let mid = Math.floor((start + end) / 2);
-              if (arr[mid] === val) {
-                  return mid;
-              }
-              if (val < arr[mid]) {
-                  end = mid - 1;
-              } else {
-                  start = mid + 1;
-              }
-          }
-          return -1;
-      }
-      ```
+1. `index.js` ファイルを選択します。
 
-1. このコードをブランチにコミットして、そこから新しいマージリクエストを作成します。その後、新しいブランチを作成します:
-
-1. **Code > Branches** を選択します。
-
-1. **New branch** を選択します。
-
-1. ブランチ名として `conflict-2` を追加します。
-
-1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
-
-1. `index.js` ファイルを選択します。ファイルの先頭に、関数を説明する別のコメントを追加します。コメントの例は以下のとおりです:
+1. `res.send` を好きなメッセージを表示するように更新します。以下は例です:
 
       ```js
-      //A binary search will search a list in log(n) time
-      module.exports.binarySearch = function binarySearch(arr, val) {
-          let start = 0;
-          let end = arr.length - 1;
-          while (start <= end) {
-              let mid = Math.floor((start + end) / 2);
-              if (arr[mid] === val) {
-                  return mid;
-              }
-              if (val < arr[mid]) {
-                  end = mid - 1;
-              } else {
-                  start = mid + 1;
-              }
-          }
-          return -1;
-      }
+      const express = require('express')
+          const app = express()
+          const port = 4001
+
+          app.get('/', (req, res) => {
+            res.send('Our app is running!')
+          })
+
+          app.listen(port, () => {
+            console.log(`Example app listening on port ${port}`)
+      })
       ```
 
-1. このコードをブランチにコミットして、そこから新しいマージリクエストを作成します。
+1. **source control** アイコンを選択します。コミットメッセージを入力し、**Commit and put to...** ボタンをクリックしてコード変更をコミットします。
 
-1. `conflict` マージリクエストに戻ります。マージボタンの横の矢印を選択し、即時マージを選択してリポジトリにマージします。
+1. パイプラインが完了するまで待ちます。
 
-1. マージ後、`conflict-2` マージリクエストに移動します。*Merge conflicts must be resolved* と表示されてマージがブロックされていることがわかります。
+1. マージリクエストを開きます。
 
-1. **Resolve conflicts** オプションを選択します。現在のマージリクエストのコードを使用するか、main のコードを使用するかを選択するオプションが表示されます。
+1. パイプラインが完了したら **View app** を選択します。
 
-1. 希望のオプションを選択し、**Commit to source branch** を選択します。
-
-この後、マージリクエストをマージできるようになります。
-
-## ラボガイドの完了
+## ラボガイドの完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson)を参照できます。
 
-## ご提案は?
+## ご提案は? {#suggestions}
 
 このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

@@ -7,29 +7,29 @@ coach: "@andrewn"
 status:
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/diff-between-dedicated/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+translated_at: "2026-09-20T02:57:18+00:00"
 translator: claude
 stale: false
-lastmod: "2025-05-21T18:01:46+00:00"
+lastmod: "2026-09-11T16:41:00+12:00"
 ---
 
 
 {{< engineering/design-document-header >}}
 
 
-## 既存の参考資料
+## 既存の参考資料 {#existing-reads}
 
-1. [Cell イテレーション](../index.md#cells-iterations)、特に Cell 1.0
+1. [Protocells](../_index.md#protocells)
 1. [GitLab Dedicated](https://about.gitlab.com/dedicated/)
 1. [GitLab Dedicated 技術ドキュメント](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/)
 
-## GitLab Dedicated との差分
+## GitLab Dedicated との差分 {#gitlab-dedicated-diff}
 
 GitLab Dedicated はゼロから開始して安定したサービスのみを実行する機会がありました。
 GitLab.com はベータ機能や GitLab Dedicated にはない補助機能を実行しています。
 
-### 高度な検索
+### 高度な検索 {#advanced-search}
 
 **GitLab Dedicated が行っていること:**
 
@@ -47,7 +47,7 @@ Global Search チームは最終的にコード検索機能を置き換えるた
 
 [Dedicated の関連 Issue](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/4111)
 
-### キャパシティプランニング
+### キャパシティプランニング {#capacity-planning}
 
 **GitLab Dedicated が行っていること:**
 
@@ -63,7 +63,7 @@ Global Search チームは最終的にコード検索機能を置き換えるた
 [Dedicated 向けの作業](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1118)は完了しています。
 Cell に向けて有効にするためにわずかな作業が必要な場合があります。
 
-### Redis
+### Redis {#redis}
 
 **GitLab Dedicated が行っていること:**
 
@@ -82,7 +82,7 @@ Cell は .com よりはるかに小さな GitLab のインストールである�
 選択された参照アーキテクチャは、需要に対して十分にサイズ調整された Redis デプロイメントをデプロイするべきです。
 最初の Cell セットが顧客トラフィックを受け取る際の Redis の動作へのオブザーバビリティを注意深く監視して、改善が必要な領域を判断する必要があります。
 
-### シークレット管理
+### シークレット管理 {#secret-management}
 
 **GitLab Dedicated が行っていること:**
 
@@ -105,7 +105,7 @@ Kubernetes シークレットは [External Secrets オペレーター](https://e
 
 [議論中](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/25076)。
 
-### HAProxy
+### HAProxy {#haproxy}
 
 **GitLab Dedicated が行っていること:**
 
@@ -140,7 +140,7 @@ CloudFlare のファイアウォールルールとして設定できる場合、
 
 Helm チャートはフロントエンドの Pod をデプロイするために使用され、Dedicated が今日行っているものを模倣して 1 つのみデプロイされます。
 
-### アセットルーティング
+### アセットルーティング {#assets-routing}
 
 **GitLab Dedicated が行っていること:**
 
@@ -156,7 +156,7 @@ GitLab Helm チャートによってデプロイされた `webservice` Pod。
 
 アセットのデプロイメントは変更されません。このプロセスは CloudFlare と同じままです。
 
-### Cloudflare
+### Cloudflare {#cloudflare}
 
 **GitLab Dedicated が行っていること:**
 
@@ -172,7 +172,7 @@ CloudFlare はネイティブおよびカスタムのファイアウォール、
 [ルーティングサービス](../http_routing_service.md)の使用により CloudFlare の使用は技術的に拡大します。
 .com エントリポイントは変更されず、[ルーティングサービス](../http_routing_service.md)の追加以外にこのサービスへの変更はないはずです。
 
-### コンテナレジストリ
+### コンテナレジストリ {#container-registry}
 
 **GitLab Dedicated が行っていること:**
 
@@ -192,7 +192,7 @@ Container Registry はキャッシュレイヤーとして Redis も使用して
 
 [議論中](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/4130)
 
-### メール配信
+### メール配信 {#mail-delivery}
 
 **GitLab Dedicated が行っていること:**
 
@@ -212,7 +212,7 @@ _作業進行中。_ [Issue 2481 を参照](https://gitlab.com/gitlab-com/gl-inf
 Dedicated プロビジョナーは最小限の設定変更で Mailgun/サードパーティ送信メールゲートウェイをサポートできます。
 受信: [議論中](https://gitlab.com/gitlab-org/gitlab/-/issues/442161)
 
-### PostgreSQL
+### PostgreSQL {#postgresql}
 
 **GitLab Dedicated が行っていること:**
 
@@ -230,7 +230,7 @@ GitLab Rails コードベースのいくつかの機能のスケールを処理�
 
 何をするかは別の[ブループリント](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/144238)で作業中です。
 
-### 埋め込みデータベース
+### 埋め込みデータベース {#embedding-database}
 
 **GitLab Dedicated が行っていること:**
 
@@ -245,7 +245,7 @@ GitLab Dedicated は埋め込みデータベースを使用しておらず、ま
 
 埋め込みデータベースはまだ実験的であり、Cells 1.0 のスコープを減らすために Cell ではサポートしません。
 
-### GitLab Pages
+### GitLab Pages {#gitlab-pages}
 
 **GitLab Dedicated が行っていること:**
 
@@ -259,7 +259,7 @@ GitLab Pages は .com のアクティブな機能です。
 
 [Cells 1.0](https://gitlab.com/gitlab-org/gitlab/-/blob/cfc0b476301097580d348e054b0ba4f721d4a9df/doc/architecture/blueprints/cells/iterations/cells-1.0.md#L476-479) では GitLab Pages を有効にしないため、現時点ではスコープ外です。
 
-### VM 設定管理
+### VM 設定管理 {#vm-configuration-management}
 
 **GitLab Dedicated が行っていること:**
 
@@ -274,7 +274,7 @@ VM の管理はすべて GitLab Environment Toolkit によって処理されま�
 
 GitLab Dedicated ツールを再利用し、Chef を削除します。
 
-### 障害復旧
+### 障害復旧 {#disaster-recovery}
 
 **GitLab Dedicated が行っていること:**
 
@@ -293,7 +293,7 @@ GitLab Dedicated ツールを再利用し、Chef を削除します。
 
 ブループリントは[後の時点](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/25118)で作成されます。
 
-### フィーチャーフラグ
+### フィーチャーフラグ {#feature-flags}
 
 **GitLab Dedicated が行っていること:**
 
@@ -311,7 +311,7 @@ ChatOps は最終的に Cell をサポートするよう拡張されます。
 [エピック 12797](https://gitlab.com/groups/gitlab-org/-/epics/12797) は追加された機能を提供するために作成されました。
 Iteration Cells 1.0 では作業は行われません。
 
-### デプロイメント
+### デプロイメント {#deployment}
 
 **GitLab Dedicated が行っていること:**
 
@@ -329,7 +329,7 @@ Iteration Cells 1.0 では作業は行われません。
 [Delivery](../../../infrastructure/team/delivery/) はこれの初期開発の責任を持ち続けます。
 この作業を取り巻く[現在のブループリント](deployments.md)は、リスクを管理するためにリングデプロイメントの概念を導入しています。
 
-### サブネット
+### サブネット {#subnets}
 
 **GitLab Dedicated が行っていること:**
 
@@ -344,7 +344,7 @@ Dedicated はすべてのテナントに対して意図的に重複する IP CID
 
 [議論中](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/25069)
 
-### Kubernetes
+### Kubernetes {#kubernetes}
 
 **GitLab Dedicated が行っていること:**
 
@@ -361,7 +361,7 @@ Instrumentor には、同じクラスターにインストールされるオブ�
 
 [議論中](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/25068)
 
-### SRE のマシンへの root アクセス
+### SRE のマシンへの root アクセス {#sre-root-access-to-machines}
 
 **GitLab Dedicated が行っていること:**
 
@@ -400,7 +400,7 @@ Kubernetes:
 - `kubectl`: GitLab Dedicated と同じ
 - GKE VM: GitLab Dedicated と同じ
 
-### オブザーバビリティ
+### オブザーバビリティ {#observability}
 
 **GitLab Dedicated が行っていること:**
 
@@ -426,7 +426,7 @@ CloudFlare、GKE、HAProxy などの一部のサービスはデータが多す�
 
 [議論中](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/143672)
 
-### Camoproxy
+### Camoproxy {#camoproxy}
 
 **GitLab Dedicated が行っていること:**
 
@@ -440,7 +440,7 @@ CloudFlare、GKE、HAProxy などの一部のサービスはデータが多す�
 
 [議論中](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/25125)
 
-### 証明書
+### 証明書 {#certificates}
 
 **GitLab Dedicated が行っていること:**
 
@@ -454,7 +454,7 @@ GitLab.com は[証明書](https://gitlab.com/gitlab-com/runbooks/-/blob/master/d
 
 GitLab.com では引き続き Cloudflare を使用するため、Cloudflare の証明書を継続して使用できます。
 
-### osquery
+### osquery {#osquery}
 
 **GitLab Dedicated が行っていること:**
 
@@ -478,7 +478,7 @@ osquery はすべての Virtual Machine をカバーします。今日カバー�
 1. **コンプライアンス要件:** コンプライアンスは Kubernetes やレガシー VM などの環境でのアクションに明確な洞察を持つことを要求します。
 1. **インシデント調査:** 過去に報告されたインシデントは、悪意のあるコマンドの前後に実行されたコマンドの検出と調査の欠如により、いくつかの欠落した調査が残されています。
 
-### Wiz Runtime Sensor
+### Wiz Runtime Sensor {#wiz-runtime-sensor}
 
 **GitLab Dedicated が行っていること:**
 

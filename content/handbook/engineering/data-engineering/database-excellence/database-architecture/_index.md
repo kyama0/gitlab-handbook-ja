@@ -1,32 +1,31 @@
 ---
-title: "データベースアーキテクチャチーム"
-description: "データベースアーキテクチャチームは、データ配置のための意思決定フレームワーク、データ増加の制御、およびすべてのデータストアにわたるデータベースレビュープロセスの調整を通じて、GitLab のエンジニアリングチームがデータを使ってサステナブルに構築できるよう支援します。"
+title: "Database Architecture チーム"
+description: "Database Architecture チームは、データ配置のための意思決定フレームワーク、データ増加の制御、およびすべてのデータストアにわたるデータベースレビュープロセスの調整を通じて、GitLab のエンジニアリングチームがデータを使ってサステナブルに構築できるよう支援します。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/database-architecture/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T12:11:14-05:00"
+translated_at: "2026-09-20T02:14:23.155976+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-23T14:23:47-07:00"
 ---
 
-データベースアーキテクチャチームは、[データベースフレームワークチーム](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)の分割によって誕生しました。
+Database Architecture チームは、[Database Frameworks チーム](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)の分割によって誕生しました。
 
-## ミッション
+## ミッション {#mission}
 
 データ配置・保持・ライフサイクル管理に関する明確なガイダンス、ベストプラクティス、フレームワークを提供することで、チームがデータを使ってサステナブルに構築できるよう支援します。私たちは、アーキテクチャ上の意思決定が将来の技術的負債を防ぎ、すべてのデータストアにわたる GitLab の長期的なスケーラビリティをサポートすることを保証します。
 
-## スコープ
+## スコープ {#scope}
 
-データベースアーキテクチャチームは以下に責任を持ちます:
+Database Architecture チームは以下に責任を持ちます:
 
 * **データ配置フレームワーク** — PostgreSQL、Redis、OpenSearch、ClickHouse、オブジェクトストレージ、その他のアプリケーションデータストアにわたって、チームがニーズに合ったデータストアを選択するための意思決定フレームワークとガイダンスを提供します。
 * **データ増加の制御** — 保持ポリシー、ライフサイクル管理、データベースサイズを長期的にサステナブルに保つための戦略など、チームがデータ増加を積極的に管理するためのフレームワークとツールを構築します。
-* **データベースレビューの調整** — データベースレビュープロセスを調整し、データベースメンテナーコミュニティを支援します。データベースエクセレンスの3チームすべてがレビューに参加しますが、プロセス・ツール・標準はデータベースアーキテクチャチームが所有します。
+* **データベースレビューの調整** — データベースレビュープロセスを調整し、データベースメンテナーコミュニティを支援します。Database Excellence の 3 チームすべてがレビューに参加しますが、プロセス・ツール・標準は Database Architecture チームが所有します。
 
-## チーム
+## チーム {#team}
 
-チームは主にバックエンドエンジニアで構成され、インフラ・運用目標の達成を支援するリライアビリティエンジニアも在籍しています。役割にかかわらず、すべてのチームメンバーは、他のデータベースエクセレンスチームと並行して、データベースレビュー、オンコールローテーション、運用ニーズなど、ステージレベルの責務を共有します。
+チームは主にバックエンドエンジニアで構成され、インフラ・運用目標の達成を支援するリライアビリティエンジニアも在籍しています。役割にかかわらず、すべてのチームメンバーは、他の Database Excellence チームと並行して、データベースレビュー、オンコールローテーション、運用ニーズなど、ステージレベルの責務を共有します。
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/data-engineering/database-excellence/database-architecture/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< group-by-slugs alexander-sosna amritasinha l.rosa mattkasa maximeorefice panoskanell praba.m7n vporalla >}}
 

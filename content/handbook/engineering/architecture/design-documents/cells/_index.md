@@ -2,42 +2,157 @@
 title: "Cells"
 status: ongoing
 creation-date: "2022-09-07"
-authors: ["@ayufan", "@fzimmer", "@DylanGriffith", "@lohrc", "@tkuah"]
-coaches: ["@ayufan", "@sxuereb"]
+authors: ["@ayufan", "@fzimmer", "@DylanGriffith", "@lohrc", "@tkuah", "@sxuereb"]
+coaches: ["@ayufan", "@tkuah"]
 dris: ["@daveyleach"]
 owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/
-upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
-translated_at: "2026-09-08T07:04:23+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-16T14:23:05-10:00"
+translated_at: "2026-09-20T02:52:48+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-07T14:25:49+12:00"
 ---
 
-
 {{< engineering/design-document-header >}}
-
 
 このドキュメントは作業中であり、Cells の設計のごく初期の状態を表しています。重要な部分の多くがまだ文書化されていませんが、今後追記していく予定です。
 
 Cells は、私たちの SaaS プラットフォームのための新しいアーキテクチャです。このアーキテクチャは水平方向にスケール可能で、レジリエントであり、より一貫したユーザー体験を提供します。将来的には、データレジデンシー制御（リージョン）やフェデレーション機能などの追加機能も提供する可能性があります。
 
-## ゴール
+## ゴール {#goals}
 
 [目標、用語集、要件](goals.md)を参照してください。
 
-## Cells のイテレーション
+## Protocells {#protocells}
 
-- （保留中）[Cells 1.0](iterations/cells-1.0.md)のターゲットは、SaaS GitLab.com オファリングを利用する社内のお客様向けのソリューションを提供し、Cells の基礎的な作業を行うことです。
-- （保留中）[Cells 1.5](iterations/cells-1.5.md)のターゲットは、Cells 1.0 アーキテクチャの上に構築された、SaaS GitLab.com オファリングを利用する既存および新規のエンタープライズ顧客向けのマイグレーションソリューションを提供することです。
-- （保留中）[Cells 2.0](iterations/cells-2.0.md)のターゲットは、Cell ベースのアーキテクチャにおけるパブリックおよびオープンソースのコントリビューションモデルをサポートすることです。
-- [Protocells](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1616)
-  は Cells 1.0、Cells 1.5、Cells 2.0 を置き換え、データベースの負荷を恒久的に削減することに新たな焦点を置いたものです。
+Protocells は Cells アーキテクチャの現在のイテレーションです。以前の Cells 1.0、
+Cells 1.5、Cells 2.0 のイテレーションに代わり、レガシー Cell のデータベースの負荷を恒久的に軽減することに
+新たな重点を置いています。
 
-### アーキテクチャ概要
+### 概要 {#summary}
+
+Protocells は、水平スケーラビリティを提供することで[レガシー Cell](goals.md#legacy-cell)のデータベースの負荷を軽減します。
+
+Organizations は論理的な境界として、Cells は物理的な境界として機能します。
+
+この設計は、Organizations、Organization の移行、Cells インフラストラクチャという 3 つの主要コンポーネントを統合します。
+
+進捗は[作業用エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/1616)で追跡します。
+
+### 提案 {#proposal}
+
+```mermaid
+flowchart TD
+    subgraph P1["1 · Organizations"]
+        A["Top-level group\n+ child resources"] -->|"transferred to"| B["Organization"]
+        B --> C["Missing references\nrender gracefully\non source & target cell"]
+    end
+
+    subgraph P2["2 · Organization Migration"]
+        D["Organization"] -->|"all data, no loss"| E["New Cell"]
+        E -->|"canonical cell updated"| F["Topology Service"]
+    end
+
+    subgraph P3["3 · Cells Infrastructure"]
+        G["Incoming Request"] -->|"routed by org"| H["Routing Logic"]
+        H -->|"lookup"| F
+        F -->|"cell location"| H
+        H -->|"proxy"| E
+    end
+
+    B -.->|"migrate"| D
+    A ~~~ G
+```
+
+Protocells は 3 本の柱で構成されています:
+
+| 柱 | 目的 | 結果 |
+| ------ | ------- | ------ |
+| 1. Organizations | [Organization の分離](../organization/isolation.md)により、Organizations を論理的な境界として導入します。 | トップレベルグループと、その子リソース（グループ、プロジェクト、ユーザーなど）を、専用の Organization に移管します。 |
+| 2. Organization の移行 | [Organization のデータ移行](../organization-data-migration/_index.md)の設計ドキュメントに基づいて、Cells 間で Organizations を移動できるようにします。 | Organization のすべてのデータを、損失なく別の Cell に移動します。Topology Service でその Organization の正規の Cell を更新して切り替えます。 |
+| 3. Cells インフラストラクチャ | [Cells インフラストラクチャ](./infrastructure/_index.md)の設計ドキュメントに基づいて、自己完結した複数の GitLab インスタンスを GitLab.com 上に Cells としてデプロイします。 | [ルーティングロジック](http_routing_service.md)が Organization に基づいて適切な Cell にリクエストを振り分けます。 |
+
+各柱の詳細:
+
+| 柱 | 詳細 |
+| ------ | ------- |
+| 1. Organizations | すべてのリクエストに対して Organization コンテキストの解決を確立し、データや操作が Organization の境界を越えることを防ぎます。Self-Managed と Dedicated では、[Organization の ADR](../organization/decisions/007_self_managed_dedicated_single_organization.md)に基づいて、インスタンスと Organization の 1 対 1 の対応を確立します。Organization を別の Cell に移動した際、参照先が欠けていても移動元と移動先の両方の Cell でページが引き続き表示されます。たとえば、作成者（ユーザー）が Organization と一緒に移動されなかった Issue や、移動したユーザーが別の Organization の Issue に残したコメントが該当します。 |
+| 2. Organization の移行 | このツールは、レガシー Cell から新しい Cells への Organizations の移行をサポートします。水平スケーラビリティと、インフラストラクチャ全体での負荷分散を可能にします。 |
+| 3. Cells インフラストラクチャ | 各 Cell は複数の Organizations をホストできます。Cells は、独自のデータベースとインフラストラクチャを持つ独立した GitLab インスタンスとして動作します。 |
+
+この取り組みは、[データ保持](../../guidelines/data_lifecycle/data_retention.md)など、レガシー Cell のデータベースを支える他の補完的な取り組みを妨げるものではありません。
+
+### 設計と実装の詳細 {#design-and-implementation-details}
+
+#### 論理的な境界と物理的な境界 {#logical-vs-physical-boundaries}
+
+このアーキテクチャでは、2 種類の境界を区別します:
+
+**論理的な境界（Organization）**: データのシャーディング境界（例: PostgreSQL、Gitaly）とアクセス制御を定義します。
+
+Organizations は、GitLab のすべての機能とデータを分離する単位です。
+
+**物理的な境界（Cell）**: インフラストラクチャの分散を定義します。
+
+Cells は、複数の Organizations をホストできる自己完結した GitLab インスタンスです。
+
+この分離により、次のことが可能になります:
+
+- 論理構造を変更せずに Organizations を Cells 間で移動します。
+- 複数の Organizations が単一の Cell 上のインフラストラクチャを共有します。
+- Organizations をまたぐ操作で公開 API を使用します。
+
+#### Organization にスコープを限定した操作 {#organization-scoped-operations}
+
+ほとんどの操作は、スコープを 1 つの Organization に限定すべきです。
+
+これにより、機能が論理的な境界の内側で動作し、分離を維持します。
+
+#### Organizations をまたぐ操作 {#cross-organization-operations}
+
+複数の Organizations をまたぐすべての操作は、公開 API を使用しなければなりません。
+
+これにより、次のことを確保します:
+
+- 適切な認証と認可の境界。
+- デプロイモデル間で一貫した動作。
+- Organizations 間での明確な関心の分離。
+
+Organizations をまたぐ操作の例:
+
+- ユーザー認証とセッション管理。
+- 共有リソースへの公開 API アクセス。
+- GitLab.com の管理操作。
+
+#### デプロイモデル {#deployment-models}
+
+##### GitLab.com {#gitlabcom}
+
+- 複数の Cells があり、それぞれが複数の Organizations をホストします。
+- Organizations が分離の単位になります。
+- Cells が物理的な分散の単位になります。
+- デフォルトの Organization が既存ユーザー向けの後方互換性を提供します。
+
+##### Self-Managed と Dedicated {#self-managed-and-dedicated}
+
+- Organization ごとに単一のインスタンスを使用します（1 対 1 の対応）。
+- Organizations が論理的な境界を提供します。
+- インスタンスが物理的な境界を提供します。
+- GitLab.com と比べて運用モデルが簡素になります。
+
+### 機能の同等性 {#feature-parity}
+
+お客様が既存の機能を引き続き利用できるようにするため、機能の同等性が必要です。
+これらの取り組みでは、次の点に重点を置きます:
+
+- [**Organization の機能の同等性**](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/1871): すべてのデプロイモデルで Organizations が一貫した機能を持つようにします。
+- [**Cells の機能の同等性**](https://gitlab.com/gitlab-org/architecture/readiness/-/blob/main/templates/platform_strategy/cells.md): 本番利用に必要な GitLab のすべての機能を Cells がサポートするようにします。
+
+## アーキテクチャ概要 {#architecture-overview}
 
 ```plantuml
 @startuml
@@ -101,7 +216,33 @@ Cell_Sidekiq --> TS
 @enduml
 ```
 
-## 技術的な提案
+## 将来のスコープ {#future-scope}
+
+Cells 2.0 の目標は、Cell ベースのアーキテクチャで
+パブリックおよびオープンソースのコントリビューションモデルをサポートすることでした。
+Protocells では、当面の焦点をレガシー Cell のデータベースの負荷軽減に絞ったため、
+元のスコープに含まれていた次の側面は未解決のままです。
+現在の Protocells のロールアウトの一部ではなく、将来のスコープとして追跡します:
+
+1. **Organizations 間の相互運用（「Org Connect」）**: Organization の境界を越えて公開プロジェクトに貢献するには、
+   まだ存在しない相互運用機能が必要です。
+   [Organizations ADR 015](../organization/decisions/015_non_isolation_is_permanent.md)では、この概念を
+   「Org Connect」と名付け、実現までにはまだ「長い道のりがある」としています。
+1. **ユーザーの Organizations が複数の Cells にまたがること**: ユーザーはすでに多数の
+   Organizations に所属できますが、異なる Cells 上にある Organizations をシームレスに利用するには、
+   まだデプロイされていない [New Auth Stack](../new_auth_stack/_index.md)（GATE）が必要です。
+   これは未解決の設計上の疑問ではなく、実施順序に関する依存関係です。
+1. **公開 Organizations の Cells 間での移行**: Organization を Cells 間で移行することは
+   Protocells のスコープに含まれます（[Cells: データ移行](impacted_features/data-migration.md)を参照）が、
+   現時点で現実的な候補となるのは非公開の Organizations だけです。
+   公開 Organizations は、内部 API を介して「行き来」し、
+   同一クラスタ内で到達可能であると想定する機能に依存しています。たとえば、Gitaly の
+   リポジトリ間操作によるフォークなどです。
+   公開 Organization を別の
+   Cell に移行すると、その前提が崩れるため、公開 Organization を
+   移行できるようにするには、この部分を別途作り直す必要があります。
+
+## 技術的な提案 {#technical-proposals}
 
 Cells アーキテクチャは、データ処理、ロケーション、スケーラビリティ、そして GitLab アーキテクチャ全体に長期的な影響を与えます。
 このセクションでは、評価対象となっているさまざまな技術提案へのリンクをまとめます。
@@ -120,7 +261,7 @@ Cells アーキテクチャは、データ処理、ロケーション、スケ�
 - [設定の同期](./proposal-admin_area_setting_sychronization_in_cells.md)
 - [Organization の移行](../organization-data-migration/_index.md)
 
-## 影響を受ける機能
+## 影響を受ける機能 {#impacted-features}
 
 Cells アーキテクチャは多くの機能に影響を与え、その中には書き直しや大幅な変更を必要とするものもあります。
 影響を受ける既知の機能と、暫定的な解決案のリストを以下に示します。
@@ -147,7 +288,7 @@ Cells アーキテクチャは多くの機能に影響を与え、その中に�
 - [Cells: ユーザープロフィール](impacted_features/user-profile.md)
 - [Cells: 自分の作業](impacted_features/your-work.md)
 
-### 影響を受ける機能: プレースホルダー
+### 影響を受ける機能: プレースホルダー {#impacted-features-placeholders}
 
 以下の影響を受ける機能のリストは、Cells の影響を見積もり、ソリューション提案を作成するための作業がまだ必要なプレースホルダーにすぎません。
 
@@ -163,9 +304,9 @@ Cells アーキテクチャは多くの機能に影響を与え、その中に�
 - [Cells: アップロード](impacted_features/uploads.md)
 - ...
 
-## よくある質問
+## よくある質問 {#frequently-asked-questions}
 
-### Cells アーキテクチャと GitLab Dedicated の違いは何ですか？
+### Cells アーキテクチャと GitLab Dedicated の違いは何ですか？ {#whats-the-difference-between-cells-architecture-and-gitlab-dedicated}
 
 Cells と Dedicated の個別の考えと違いについては、[こちら](infrastructure/diff-between-dedicated.md)にまとめています。
 
@@ -182,11 +323,11 @@ Cells と Dedicated の個別の考えと違いについては、[こちら](inf
 このインスタンスは独自のカスタムドメイン名で動作しており、GitLab SaaS を含む他のすべての GitLab インスタンスから完全に分離されています。
 たとえば、GitLab Dedicated 上のユーザーは、GitLab.com で既に取られているユーザー名と異なるユニークなユーザー名を持つ必要はありません。
 
-### 異なる Cells は互いに通信できますか？
+### 異なる Cells は互いに通信できますか？ {#can-different-cells-communicate-with-each-other}
 
 直接はできません。私たちのゴールは、Cells を分離した状態に保ち、グローバルサービスを通じてのみ通信することです。
 
-### Cells はどのようにプロビジョニングされますか？
+### Cells はどのようにプロビジョニングされますか？ {#how-are-cells-provisioned}
 
 Cells の GitLab.com クラスタは、`GitLab Instances` のプロビジョニングに [GitLab Dedicated](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/)のツーリングを使用しています。
 そのため、いくつかのプロジェクトでは Cells は Tenant と呼ばれることがあります。
@@ -201,7 +342,7 @@ Cells は [the tissue](https://ops.gitlab.net/gitlab-com/gl-infra/cells/tissue/-
 各 Cells の構成は、GitLab Dedicated のテナントでも既に使用されている [tenant-model-schema](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/tenant-model-schema)
 に対して検証されます。
 
-#### デプロイメントプロセス
+#### デプロイメントプロセス {#deployment-process}
 
 デプロイメントワークフローは以下の手順に従います:
 
@@ -218,19 +359,30 @@ Cells は [the tissue](https://ops.gitlab.net/gitlab-com/gl-infra/cells/tissue/-
 
 [設計に関するディスカッション](https://gitlab.com/gitlab-org/gitlab/-/issues/396641)も参照してください。
 
-### Cells のトポロジーとは何ですか？
+### Cells のトポロジーとは何ですか？ {#what-is-a-cells-topology}
 
 [設計に関するディスカッション](https://gitlab.com/gitlab-org/gitlab/-/issues/396641)を参照してください。
 
-### Organization のユーザーは、どのように正しい Cell にルーティングされるのですか？
+### Organization のユーザーは、どのように正しい Cell にルーティングされるのですか？ {#how-are-users-of-an-organization-routed-to-the-correct-cell}
 
 未定
 
-### ユーザーは Cells と Organization に対してどのように認証しますか？
+### `mycorp.gitlab.com` のようなサブドメインを使用しないのはなぜですか？ {#why-not-use-subdomains-like-mycorpgitlabcom}
+
+[すべての Cells は単一の GitLab.com ドメイン下にあります](goals.md#all-cells-are-under-a-single-gitlabcom-domain)を参照してください。
+その目標に加えて、サブドメインには具体的な問題がいくつかあります:
+
+- サブドメイン間で Cookie が漏れることによるセキュリティ上の問題を防ぐため、注意が必要です。
+- Organization によって URL とホストが変わるため、インテグレーションと API のやり取りが複雑になります。
+- ユーザーを有効な Organization/URL にリダイレクトする共通のログインサービスを構築する必要があります。
+- 名前の衝突が発生するリスクが高まり、その影響も大きくなります。たとえば、大企業内の異なる部門や
+  組織、似た名前の企業などが該当します。
+
+### ユーザーは Cells と Organization に対してどのように認証しますか？ {#how-do-users-authenticate-with-cells-and-organizations}
 
 [設計に関するディスカッション](https://gitlab.com/gitlab-org/gitlab/-/issues/395736)を参照してください。
 
-### ユーザーはどのようにログインしますか？
+### ユーザーはどのようにログインしますか？ {#how-would-users-log-in}
 
 現在の承認済みの設計については、[Organization ログイン設計ドキュメント](../organization/login.md)を参照してください。
 
@@ -238,11 +390,11 @@ Cells は [the tissue](https://ops.gitlab.net/gitlab-com/gl-infra/cells/tissue/-
 - SAML: `https://<GITLAB_DOMAIN>/users/auth/saml/callback` が `?organization=gitlab-inc` を受け取り、正しい Cell にルーティングされます。
 - これには、高可用性のソリューションで利用可能にした Organization のリストを使う動的ルーティング方式が必要です。
 
-### Cells はどのようにリバランスされますか？
+### Cells はどのようにリバランスされますか？ {#how-are-cells-rebalanced}
 
 未定
 
-### 追加の Cell 上の Organization にユーザーをどのようにオンボーディングしますか？
+### 追加の Cell 上の Organization にユーザーをどのようにオンボーディングしますか？ {#how-will-we-onboard-users-to-an-organization-on-additional-cells}
 
 > [!note]
 > この回答は以前の Cells 1.0 のイテレーションから引き継いだもので、現在の Protocells の設計に照らした検証は行われていません。確定的な回答として扱うには、Product からの意見が必要です。
@@ -254,11 +406,11 @@ Admin が以下のタスクを実行します。
 1. Organization から Admin を削除します。機能セットによっては省略可能です。
 1. 新しい Owner がこのグループのデータをインポートします。これにより、ユーザーが作成され、グループ/プロジェクトと Organization に追加されます。
 
-### Cells はディザスタリカバリー機能をどのように実装できますか？
+### Cells はディザスタリカバリー機能をどのように実装できますか？ {#how-can-cells-implement-disaster-recovery-capabilities}
 
 未定
 
-### 機能を Cells と互換性のあるものにするにはどう適応すればよいですか？
+### 機能を Cells と互換性のあるものにするにはどう適応すればよいですか？ {#how-can-i-adapt-a-feature-to-be-compatible-with-cells}
 
 [チェックリストの草案](https://gitlab.com/gitlab-org/architecture/readiness/-/issues/57#note_2743953306)を参照してください。
 
@@ -266,7 +418,7 @@ Admin が以下のタスクを実行します。
 
 ご質問は `#f_protocells` か、Protocells Office Hours セッションにご連絡ください。
 
-### 機能を Cell 内に限定すべきか、クラスタ全体にすべきかをどう判断しますか？
+### 機能を Cell 内に限定すべきか、クラスタ全体にすべきかをどう判断しますか？ {#how-can-i-decide-if-my-feature-can-be-cell-local-or-clusterwide-}
 
 デフォルトでは、機能は Organization レベルにスコープされる必要があります。このルールから逸脱する場合は、Tenant Scale による検証と承認が必要です。
 
@@ -287,14 +439,14 @@ Cells アーキテクチャの設計目標では、[すべての Cells は単一
   最初はクラスタ全体で提供するサービスでも、完全なサービス分離を達成するため、将来的には分割されることが想定されています。
   どの機能も、そのようなサービス（例: Elasticsearch）に依存して構築されるべきではありません。
 
-### Cells は最大 1000 RPS または 50,000 ユーザー向けのリファレンスアーキテクチャを使用しますか？
+### Cells は最大 1000 RPS または 50,000 ユーザー向けのリファレンスアーキテクチャを使用しますか？ {#will-cells-use-the-reference-architecture-for-up-to-1000-rps-or-50000-users}
 
 [最大 1000 RPS または 50,000 ユーザー向けのリファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/50k_users.html)を参照してください。
 
 インフラチームは、負荷に応じて Cells を適切にサイジングします。
 Tenant Scale チームは、Cells のデプロイメントの基盤として GitLab Dedicated を使用する機会を見出しています。
 
-## 意思決定ログ
+## 意思決定ログ {#decision-log}
 
 - [ADR-001: Cloudflare Workers を使用するルーティング技術](decisions/001_routing_technology.md)
 - [ADR-002: Cell ごとに 1 つの GCP プロジェクト](decisions/002_gcp_project_boundary.md)
@@ -325,11 +477,15 @@ Tenant Scale チームは、Cells のデプロイメントの基盤として Git
 - [ADR 027: クラウド間の依存関係の許可リスト](decisions/027_cross_cloud_dependency_allow_list.md)
 - [ADR 028: オブザーバビリティのフェデレーション](decisions/028_observability_federation.md)
 
-## リンク
+## リンク {#links}
 
 - [社内向け Pods プレゼンテーション](https://docs.google.com/presentation/d/1x1uIiN8FR9fhL7pzFh9juHOVcSxEY7d2_q4uiKKGD44/edit#slide=id.ge7acbdc97a_0_155)
 - [Cells エピック](https://gitlab.com/groups/gitlab-org/-/epics/7582)
+- [Protocells 作業用エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/1616)
 - [Database グループの調査](../../../data-engineering/database-excellence/database-frameworks/doc/root-namespace-sharding/)
 - [Shopify Pods アーキテクチャ](https://shopify.engineering/a-pods-architecture-to-allow-shopify-to-scale)
 - [Opstrace アーキテクチャ](https://gitlab.com/gitlab-org/opstrace/opstrace/-/blob/main/docs/architecture/overview.md)
 - [このブループリントへの図の追加](diagrams/_index.md)
+- [Organization 設計ドキュメント](../organization/_index.md)
+- [Organization の分離](../organization/isolation.md)
+- [Organization ADR: Self-Managed と Dedicated での単一 Organization](../organization/decisions/007_self_managed_dedicated_single_organization.md)

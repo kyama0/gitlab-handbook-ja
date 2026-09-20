@@ -9,11 +9,11 @@ owning-stage: "~group::platform insights"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/data_insights_platform_querying_api/
-upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T08:38:37+02:00"
+translated_at: "2026-09-20T02:33:09.135467+00:00"
 translator: claude
 stale: false
-lastmod: "2025-08-18T10:18:01-07:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -24,7 +24,7 @@ lastmod: "2025-08-18T10:18:01-07:00"
 {{< engineering/design-document-header >}}
 
 
-## 概要
+## 概要 {#summary}
 
 [データインサイトプラットフォーム](https://docs.google.com/document/d/1V3XRXfPquBrI_-ob9Fn2Jdskq7W4-heG6zBjJ66AOx8/edit?usp=sharing)（DIP）は、GitLab 全体で生成された分析データストリームを取り込み、処理し、永続化してクエリするための統合抽象化であり、製品全体のビジネスインサイトを計算する能力を実現します。
 
@@ -39,9 +39,9 @@ lastmod: "2025-08-18T10:18:01-07:00"
 
 この提案は最初の部分を参照していますが、2 番目の部分の実装に焦点を当てています。
 
-![querying_api_flowchart](/images/engineering/architecture/design-documents/data_insights_platform_querying_api/querying_api_flowchart.png)
+![クエリ API のフローチャート](/images/engineering/architecture/design-documents/data_insights_platform_querying_api/querying_api_flowchart.png)
 
-## 目標
+## 目標 {#goals}
 
 - **クエリ API は ClickHouse エクスポーターをサポートしなければならない**
   - 代替エクスポーターをサポートする計画がありますが、コアの最初の目標は [Siphon](https://gitlab.com/gitlab-org/analytics-section/siphon) と連携して GitLab データを照合・分析することです。データは ClickHouse テーブルに保存されます。
@@ -56,20 +56,25 @@ lastmod: "2025-08-18T10:18:01-07:00"
   - DIP が収集するデータにはさまざまなデータプライバシーカテゴリが混在しています。クエリされたデータが正しい認証と認可を持つ者のみがアクセスできるようにする必要があります。リクエスターの権限外のデータはいかなる方法でもアクセスできてはなりません。
   - データ分類は Atlan の[データカタログ](https://gitlab.com/groups/gitlab-org/architecture/gitlab-data-analytics/-/epics/25)によって決定されます。
 
-## 対象外
+## 対象外 {#non-goals}
 
 - この初期フェーズでは Snowflake などの他のデータソースのサポートは対象外。
 - Monitor/Platform Insights が所有していない ClickHouse を活用するすべての他の GraphQL および REST API 呼び出しの統合は対象外。この作業はドメイン専門知識を持つチームによって最善に実行されます。Monitor/Platform Insights がすべてのチームのためにこれを行うことはスケーラブルではありません。チームが独自のエンドポイントを DIP に統合できるようにサポートと[ドキュメント](#docs)が提供されます。
 
-## 歴史的背景
+## 決定事項 {#decisions}
 
-### 既存の API
+- [ADR-001: オントロジー定義を用いた構造化リクエスト](decisions/001_structured_requests_with_ontology.md) - gRPC API は、構造化リクエストを扱う汎用 proto を使用します。各ドメインは、DIP が公開するオントロジーの YAML ファイルで記述します。
+- [ADR-002: Rails と Query API の統合の境界](decisions/002_rails_dip_integration_boundaries.md) - Rails は認可とドメインの意味論を維持し、DIP はストレージの意味論を所有し、呼び出し元は名前付きのメジャーとメトリクスを参照します。エンジンごとのフィーチャーフラグを使い、1 つずつエンジンを移行します。
+
+## 歴史的背景 {#historical-context}
+
+### 既存の API {#existing-apis}
 
 すでに独自の ClickHouse データベース内の分析データを扱うために開発された 3 つの API があります。これらの API は独立して開発されたため、利用可能なデータ、API との対話方法、データのフォーマットの点で互換性がありません。
 
 オブザーバビリティと Cube API はクエリ API の必須部分として計画されていませんが、歴史的な背景と経験から学ぶためにここに記載しています。
 
-#### オブザーバビリティ API
+#### オブザーバビリティ API {#observability-api}
 
 Go で書かれたオブザーバビリティ API は REST ベースで、[GitLab Observability Backend](https://gitlab.com/gitlab-org/opstrace/opstrace)（GOB）からデータを取得するために使用されます。データは別の ClickHouse データベースに保存され、[OTel フォーマット](https://opentelemetry.io/)で動作するようにフォーマットされています。
 
@@ -90,7 +95,7 @@ API はリクエストの認証に [Cloud Connector](https://docs.gitlab.com/ee/
 
 この API は十分にドキュメント化されておらず、期待されるデータと使用可能なパラメーターを理解するには GOB または GitLab 内のコードを読む必要があります。ただし、DIP に取り組んでいる間 O11y が顧客向けサービスとして撤退しているため、これは予想されることです。
 
-#### Cube API
+#### Cube API {#cube-api}
 
 [プロダクトアナリティクス](https://docs.gitlab.com/ee/development/internal_analytics/product_analytics.html)は[Cube](https://cube.dev/docs/product/introduction)を使用して、ClickHouse をデータの保存に使用する[アナリティクススタック](https://gitlab.com/gitlab-org/analytics-section/product-analytics/analytics-stack/)と通信するためのクエリレイヤーとして機能させています。
 
@@ -111,7 +116,7 @@ API は[REST API ドキュメント](https://docs.gitlab.com/ee/api/product_anal
 
 Cube の[Cube ストア](https://cube.dev/docs/product/deployment/production-checklist#set-up-cube-store)を使用せずにより高度な機能をサポートすることに問題がありました（RED データをそのソリューションに保存することへの懸念がありました）。また、特定の機能や ClickHouse の事前集計などのより高度な機能をサポートしていません。そのため、しばらくの間 Cube から離れることについて多くの議論がありました。
 
-#### Optimize
+#### Optimize {#optimize}
 
 [Optimize は ClickHouse を使用して](../../../data-engineering/analytics/optimize/#ssot-for-data-flows-across-optimize-features)、コントリビューション、バリューストリーム、AI インパクトダッシュボードの集計クエリをパフォーマントに保ちます。
 
@@ -137,7 +142,7 @@ Cube の[Cube ストア](https://cube.dev/docs/product/deployment/production-che
 - [`aiUsageData`](https://docs.gitlab.com/api/graphql/reference/#group)（グループ）
 - [`aiUsageData`](https://docs.gitlab.com/api/graphql/reference/#project)（プロジェクト）
 
-#### GLQL
+#### GLQL {#glql}
 
 [GitLab クエリ言語](https://docs.gitlab.com/ee/user/glql/)（GLQL）は、Plan ステージ内で顧客が GitLab データとインタラクションするための単一クエリ言語を開発するために始まったイニシアティブです。
 
@@ -155,11 +160,11 @@ GLQL の最初の目標は、顧客がコラボレーションと計画に役立
 
 GLQL は [Rust](https://gitlab.com/gitlab-org/gitlab-query-language/glql-rust) を使用して構築されています。コードは [WASM](https://webassembly.org/) [フロントエンド](https://gitlab.com/gitlab-org/gitlab-query-language/glql-rust/-/blob/main/npm/src/index.js#L35)モジュールにコンパイルされます。モジュールは GLQL クエリを[解析](https://gitlab.com/gitlab-org/gitlab-query-language/glql-rust/-/blob/main/src/parser/mod.rs#L28)し、[結果の GraphQL クエリを生成](https://gitlab.com/gitlab-org/gitlab-query-language/glql-rust/-/blob/main/src/codegen/graphql.rs#L5)します。生成された GraphQL クエリは、結果データをリクエストするために[フロントエンド](https://gitlab.com/gitlab-org/gitlab/blob/0c47fbd08cf2bec87c407e9ee8e5a1c04e3d91c0/app/assets/javascripts/glql/core/executor.js#L13-13)によって通常通り使用されます。
 
-### クエリ API の前書き
+### クエリ API の前書き {#querying-api-preface}
 
 DIP がどのように機能するかという複雑さを API コンシューマーから取り除く必要があります。したがって、データがどこから来たかを無視し、このデータが存在するということのみを認識する API コンシューマーのための一貫したインターフェイスを提供するクエリ API を作成する必要があります。
 
-#### 廃棄された解決策
+#### 廃棄された解決策 {#discarded-solutions}
 
 いくつかの潜在的な解決策が検討されましたが、実行不可能として廃棄されました：
 
@@ -172,7 +177,7 @@ DIP がどのように機能するかという複雑さを API コンシュー�
 
 もちろん、既存の API を新しい API の開発における学習の機会として利用できます。
 
-#### 選択された解決策
+#### 選択された解決策 {#chosen-solution}
 
 UI/顧客コミュニケーションには既存の GraphQL および REST API インフラを使用し、モノリスと DIP 間の通信には gRPC 上の Protobuf API を使用します。
 
@@ -180,7 +185,112 @@ UI/顧客コミュニケーションには既存の GraphQL および REST API �
 
 また、GLQL が GA になった時点で Plan と協力して後で統合するタイミングを見つけることができるため、Plan の既存のロードマップを遅らせることについて心配する必要はありません。
 
-### API 構造
+[ADR-001](decisions/001_structured_requests_with_ontology.md) は、この決定を具体化します。Protobuf API は、オントロジー定義で記述された構造化リクエストを扱う汎用 proto を使用します。
+
+### オントロジーに基づく構造化リクエスト {#ontology-based-structured-requests}
+
+モノリスと DIP の間の Protobuf-over-gRPC API は、SQL ではなく構造化リクエストを使用します。汎用の `Query` RPC にはテーブル名や列名を含めません。代わりに、クエリ可能な各ドメインを、DIP が公開するオントロジーの YAML ファイルで記述します。これは Siphon のテーブル一覧と同じ方式です。新しいテーブルやドメインを汎用 RPC に追加する際には、新しい YAML ファイルだけが必要で、proto の変更は不要です。汎用 RPC は API のインターフェースをできる限り広くカバーすることを目指しますが、このサービスには、汎用 RPC で対応できないケースのためのドメイン固有の RPC もあり、さらに追加することもできます。
+
+すべてのデータが Siphon を経由するわけではありません。DIP は、たとえばカスタムイベントや外部イベントも直接取り込みます。それらのスキーマは Postgres をそのまま反映するのではなく、分析クエリ向けの形にします。
+
+責任は次のように分担します。
+
+- DIP は物理ストレージ、つまりテーブル、マイグレーション、マテリアライズドビューを所有します。各ドメインが公開する内容を記述したオントロジードキュメントを公開します。
+- Rails はビジネスロジックを所有します。オントロジーを読み取り、何をクエリできるかを把握するべきです。
+- Rails は、存在するドメインを把握するためにオントロジーを使用するべきです。DIP にとっての目的は、リクエストの検証です。列が存在すること、主キーが一致することを確認し、どの列が走査パスかを指定します。DIP は現在、オントロジーに照らしてリクエストを検証しています。ドメインが登録済みであることと、走査パスが正しい形式であることを要求し、ドメインに宣言されていない名前付きのメトリクスとメジャーを拒否します。オントロジーファイル自体では、ドメインとテーブルの存在だけをチェックします。
+
+#### クエリの流れ {#query-flow}
+
+すべてのクエリは Rails を経由します。これには GLQL も含まれ、DIP を直接クエリすることはありません。Rails は、認可と、ユーザー ID をユーザーオブジェクトに解決するなどの情報の補完を行うため、経路上に残ります。認可を Rails から独立したサービスに切り出す動きがあり、理論上は将来 Query API が Rails を経由しなくて済む可能性もありますが、そのサービスはまだ存在せず、それを前提に計画するべきではありません。その場合でも、情報の補完には Rails が必要です。
+
+```mermaid
+sequenceDiagram
+    participant UI as UI / API consumer
+    participant Rails as Rails (Monolith)
+    participant DIP as DIP Query API
+    participant CH as ClickHouse
+
+    UI->>Rails: GraphQL or REST request (GLQL arrives here too)
+    Rails->>Rails: Authorize the request
+    Rails->>DIP: Structured Protobuf request over gRPC
+    DIP->>DIP: Validate the request against the ontology
+    DIP->>CH: SQL query
+    CH-->>DIP: Rows
+    DIP-->>Rails: Structured Protobuf response
+    Rails->>Rails: Enrich the response (for example, user ids into user objects)
+    Rails-->>UI: GraphQL or REST response
+```
+
+#### オントロジーと検出の流れ {#ontology-and-discovery-flow}
+
+Rails は、特定の DIP バージョンではなく、互換性のあるオントロジーに依存するべきです。互換性は CI 時にチェックし、必要に応じて実行時にもチェックするべきです。古い DIP があるメトリクスを提供しない場合、その機能を利用不可と表示するなど、適切に機能を縮退させるべきです。
+
+```mermaid
+flowchart TB
+    subgraph dip[DIP]
+        tables[(ClickHouse tables)]
+        ontology[Ontology YAML files]
+        queryapi[Query API]
+    end
+    subgraph rails[Rails]
+        service[DIP service]
+        feature[Feature]
+    end
+    ontology -->|describes| tables
+    queryapi -->|validates requests against| ontology
+    service -->|reads to discover available domains| ontology
+    ci[CI compatibility check] -->|is Rails compatible with this ontology?| ontology
+    service -->|metric unavailable at runtime| feature
+    feature -->|degrades gracefully, shows as unavailable| feature
+```
+
+#### オントロジーファイルの構造 {#ontology-file-structure}
+
+各オントロジーファイルには、ドメイン定義のリストが含まれます。定義には、ドメイン、その基盤となる ClickHouse テーブル、クエリのスコープをグループとプロジェクトの階層に限定するための列を指定します。
+
+```yaml
+# A file contains a list of domain definitions, so related domains
+# can share a file.
+
+# Unique identifier that clients pass in QueryRequest.domain. Required.
+- domain: labels
+  # Human-readable name for the data source. Defaults to the domain.
+  name: Labels
+  # The ClickHouse table backing this domain. Required.
+  table: siphon_labels
+  # The column used for scoping queries to the group and project
+  # hierarchy. Defaults to "traversal_path".
+  hierarchy_path_column: traversal_path
+```
+
+現在の形式で指定するのは、ドメイン、テーブル、階層の列だけです。Query API がリクエストを検証するために必要となるため、今後、列とその型、許可する集約関数とキャストも記述するように拡張します。
+
+[DIP リポジトリ](https://gitlab.com/gitlab-org/analytics-section/platform-insights/core/-/blob/main/pkg/query-api/ontology/testdata/labels.yaml)から引用した具体例:
+
+```yaml
+# Ontology definition for siphon_labels
+#
+# Table: siphon_labels
+# Engine: ReplacingMergeTree(_siphon_replicated_at, _siphon_deleted)
+# Primary key: (traversal_path, id)
+#
+# The traversal_path column is derived via ClickHouse dictionaries from
+# group_id, project_id, or organization_id at insert time.
+
+- domain: labels
+  name: Labels
+  table: siphon_labels
+  hierarchy_path_column: traversal_path
+```
+
+#### 未解決の質問 {#open-questions}
+
+- 現在のオントロジー形式は、物理テーブルと 1:1 で対応します。クエリ API は、DIP が Rails を壊さずにテーブルを再構成できるよう、ストレージの詳細を隠すことを意図しています。内部向けと外部向けのマッピングを分ける必要がありそうです。実現可能に見えますが、調査が必要です。
+- ドメイン間でフィールド名（走査パス、ユーザー ID、名前空間 ID）を標準化することもできます。まずは既存の列名を使用して問題ありません。
+- サブクエリ、CTE、UNION、複数ドメインの JOIN は、まだサポートしていません。影響の全一覧については [ADR-001](decisions/001_structured_requests_with_ontology.md) を参照してください。
+- オントロジーファイルの公開方法と、Rails が取得する方法は未決定です。[ADR 002](decisions/002_rails_dip_integration_boundaries.md) は、短期的な方針を定めています。Rails を唯一の情報源として維持し、すでにダンプしているスキーマ定義からオントロジーを生成するべきです。Snowplow の iglu レジストリのように、Rails が特定のバージョンを取得してキャッシュする共有レジストリが長期的な方向性であり、proto ファイルの配置先の候補として[共有 proto レジストリ](https://gitlab.com/gitlab-org/protos)が挙げられました。
+
+### API 構造 {#api-structure}
 
 GraphQL と REST の 2 つの既存の GitLab API が Rails モデルを通じてモノリスの DIP サービスと通信する必要があります。
 
@@ -188,7 +298,7 @@ GraphQL と REST の 2 つの既存の GitLab API が Rails モデルを通じ�
 
 モノリス内の GraphQL および REST API は DIP に取り組むチームによって設計されません。これらの API は機能を所有するチームが所有します。DIP に取り組むチームは DIP 自体との統合のみを所有してサポートします。
 
-#### GraphQL フォーマット
+#### GraphQL フォーマット {#graphql-format}
 
 GraphQL API は既存の [GitLab GraphQL サービス](https://docs.gitlab.com/api/graphql/)を使用します。したがって、サービス内で新しい GraphQL エンドポイントを開発するための関連するガイドラインをすべて遵守する必要があります。
 
@@ -196,7 +306,7 @@ GraphQL API の構造は機能を構築するチームによって決定され�
 
 [ドキュメント](#docs)で、GraphQL リゾルバーが DIP サービスとどのように対話するかについて、期待されるリクエストとレスポンスの観点から文書化する必要があります。
 
-#### REST フォーマット
+#### REST フォーマット {#rest-format}
 
 REST API は既存の [GitLab REST API](https://docs.gitlab.com/api/rest/) を使用します。したがって、既存の REST API フレームワーク内で新しい REST エンドポイントを開発するための関連するガイドラインをすべて遵守する必要があります。
 
@@ -208,15 +318,15 @@ REST API の構造は機能を構築するチームによって決定されま�
 
 `POST` クエリには、与えられたパラメーターにサイズ制限を適用しなければなりません。これは、ユーザーが 10 万人のユーザーからすべての MR などの過剰なデータリクエストを試みるのを防ぐためです。
 
-#### Protobuf フォーマット
+#### Protobuf フォーマット {#protobuf-format}
 
 Protobuf API はバイナリフォーマットを使用して書かれなければなりません。ProtoJSON を使用しても動作しますが、パフォーマンスが大幅に低下し、より多くのリソースを使用します。
 
 API は [Protobuf スタイル標準](https://protobuf.dev/programming-guides/style/)と[ベストプラクティス](https://protobuf.dev/best-practices/api/)に従わなければなりません。また、すべてのリクエストが Protobuf で規定されている[制限](https://protobuf.dev/programming-guides/proto-limits/)を超えないようにしなければなりません。レスポンスがこれらの制限を超えることが予想される場合、ストリーミングに変換してリクエスターにチャンクで送信しなければなりません。
 
-API の変更に対しては、`.proto` ファイルを Go と Rails の両方用に生成しなければなりません。これらはそれぞれ DIP とモノリスに追加しなければなりません。
+API の変更に対しては、`.proto` ファイルを Go と Rails の両方用に生成しなければなりません。これらはそれぞれ DIP とモノリスに追加しなければなりません。[汎用の `Query` RPC](#ontology-based-structured-requests) にはテーブル名や列名を含めないため、新しいテーブルやドメインを追加しても proto は変わりません。ドメイン固有の RPC を追加する場合は変わります。
 
-#### バージョニング
+#### バージョニング {#versioning}
 
 GitLab の GraphQL および REST API のバージョニングガイドラインに従わなければなりません。
 
@@ -226,7 +336,7 @@ gRPC 内の機能フラグについては、[Gitaly と同じ標準](https://doc
 
 Protobuf は[ベストプラクティス](https://protobuf.dev/best-practices/api/)に従うことで自動的にバージョニングを処理するように設計されています。フィールド番号やフィールド名を再利用してはなりません。将来のバージョンで削除されたフィールドは `reserved` にしなければなりません。
 
-#### ページネーション
+#### ページネーション {#pagination}
 
 パフォーマンス上の理由から、非集計クエリは[キーセットベースのページネーション](https://docs.gitlab.com/ee/api/rest/#keyset-based-pagination)に従わなければなりません。このアプローチはページ ID を使用する代わりに次のページへのリンク（またはカーソル）を公開します。次と前のページ（該当する場合）のカーソルがあり、列データを使用して適切なカーソルを生成します。[GraphQL](https://docs.gitlab.com/development/graphql_guide/pagination/#keyset-pagination-1) ではすでにこれを行っています。
 
@@ -236,15 +346,17 @@ Protobuf は[ベストプラクティス](https://protobuf.dev/best-practices/ap
 
 ClickHouse は「従来の」[プライマリキー](https://clickhouse.com/docs/en/guides/creating-tables#a-brief-intro-to-primary-keys)を活用しないため、ページネーションリンクを生成する際にクエリ内の次のアイテムグループを定義するためにソートオプションに依存する必要があります。たとえば、ユーザーが最終更新タイムスタンプの降順でソートする場合、生成されたページネーションリンクは前のクエリで最も古い最終更新タイムスタンプからフィルタリングします。クエリがソートオプションを定義していない場合、各エンドポイントのデフォルトを設定しなければなりません。
 
-#### 自動スキーマ生成
+#### 自動スキーマ生成 {#automated-schema-generation}
 
 できるだけ効率的に API スキーマを最新の状態に保つために、Protobuf API のスキーマ生成とドキュメントの自動化を検討する必要があります。これは新しいバージョンの作成時、デプロイ時、またはすべてのマージ後にでも行えます。その後、関連するドキュメントを更新する必要があります。
 
-#### クエリの例
+#### クエリの例 {#example-queries}
 
 これらのクエリは例示目的のみです。実際に書かれるものを反映するものではなく、実装中に最終的に構築するものを制限するものでもありません。
 
-##### グループコントリビューション
+以下の Protobuf の例は、ドメイン固有のサービスを示しています。これは、すべてのドメインで共有する単一の汎用 proto を採用した [ADR-001](decisions/001_structured_requests_with_ontology.md) より前のものです。現在の定義については[汎用 proto](https://gitlab.com/gitlab-org/analytics-section/platform-insights/core/-/blob/main/pkg/proto/gitlab/generic/v1/generic.proto)を参照してください。
+
+##### グループコントリビューション {#group-contributions}
 
 **GraphQL クエリ**
 
@@ -673,9 +785,9 @@ func main() {
 }
 ```
 
-#### プロトバッファパラメーターの例
+#### プロトバッファパラメーターの例 {#example-protobuf-parameters}
 
-##### グループコントリビューション
+##### グループコントリビューション {#group-contributions-1}
 
 - `datetimeBefore`
   - UTC のみ受け付けます。ユーザーのタイムゾーンへの変換はAPIの呼び出し元が行う必要があります
@@ -686,7 +798,7 @@ func main() {
 - `fullPath`
   - GitLab グループ/名前空間/プロジェクトへのパス
 
-#### レスポンスコード
+#### レスポンスコード {#response-codes}
 
 Protobuf API は以下の[レスポンスコード](https://google.aip.dev/193#error_model)を返さなければなりません：
 
@@ -700,7 +812,7 @@ Protobuf API は以下の[レスポンスコード](https://google.aip.dev/193#e
 
 レスポンスボディは DIP のインフラや内部スキーマを公開してはなりません。すべてのレスポンスは[メトリクスとログ](#metrics-and-logs)に送られなければなりません。クライアントに返されるエラーレスポンスは、内部の詳細を明かさずにエラーの原因を説明するユーザーフレンドリーなレスポンスでなければなりません。
 
-### 認証、認可、セキュリティ
+### 認証、認可、セキュリティ {#authentication-authorization-and-security}
 
 DIP へのリクエストはモノリスを通過しなければなりません。DIP は直接エンドポイントを通じてアクセスできません。
 
@@ -710,7 +822,7 @@ DIP は内部通信にのみ使用され、すべてのリクエストはモノ�
 
 DIP との間のすべてのリクエスト（内部ネットワークリクエストを含む）は、[TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) または他の適切な暗号化方法を使用して暗号化される必要があります。クエリ API のデータフロー内に保存されたデータはすべて[保存中に暗号化](https://www.imperva.com/learn/data-security/data-at-rest/)されなければなりません（たとえばキャッシュ）。
 
-### パフォーマンス
+### パフォーマンス {#performance}
 
 クエリ時間を短縮し、データ取得全般を最適化するために、ClickHouse の事前集計された[マテリアライズドビュー](https://clickhouse.com/docs/en/materialized-view)（MV）をできる限り活用します。このアプローチは、データの複雑な結合を `SELECT` 時から `INSERT` 時に移動させます。ClickHouse は JOIN よりも大きなテーブルで良いパフォーマンスを発揮する傾向があります。
 
@@ -718,7 +830,7 @@ ClickHouse のデータマージの非同期性のため、クエリされたデ
 
 各リソースは、過度なクエリ時間を避けるために適用されなければならない制限をドキュメントで文書化しなければなりません。リソースは、これらの制限が特定のクエリによって超過されないことを検証しなければなりません。クエリがこれらの制限を超えようとする場合、理由を含む `429 RESOURCE_EXHAUSTED` エラーを返さなければなりません。たとえば、リソースは最大 30 日間のクエリしかサポートできませんが、クエリが 60 日間をリクエストする場合などです。
 
-#### レート制限と IP ブロッキング
+#### レート制限と IP ブロッキング {#rate-limiting-and-ip-blocking}
 
 GraphQL および REST API については、既存の GitLab フレームワークを通じて実行されるため、既存のレート制限と IP ブロッキング機能を活用する必要があります。
 
@@ -726,7 +838,7 @@ GraphQL および REST API については、既存の GitLab フレームワー
 
 gRPC API については、レート制限を定義する代わりに、[並行制限](../gitaly_adaptive_concurrency_limit/)を使用することを推奨します。理想的には、これは適応的で、特定のデータソースが過負荷になっているときにリクエストを自動的にバックオフする必要があります。各制限はデータソースごとにカスタマイズ可能である必要があります。各データソースは異なる制限があるためです。
 
-#### メトリクスとログ
+#### メトリクスとログ {#metrics-and-logs}
 
 Protobuf API が既存のオブザーバビリティインフラと統合されていることを確認しなければなりません。すべてのログは [Kibana](https://docs.gitlab.com/ee/development/logging.html#additional-steps-with-new-log-files) に送られなければならず、フロントエンド GitLab 使用エラーと[パフォーマンス](https://docs.gitlab.com/ee/development/fe_guide/performance.html)は [Sentry](https://docs.gitlab.com/ee/development/fe_guide/sentry.html) に送られなければなりません。
 
@@ -746,11 +858,11 @@ ClickHouse クエリはプレースホルダーを `?` で置き換えたリダ�
 - スロークエリ
 - 高コストのクエリ
 
-#### ページネーション
+#### ページネーション {#pagination-1}
 
 [上記](#pagination)に概説したように、可能な場合はキーセットベースのページネーションを使用しなければなりません。集計クエリについては完全なクエリを返す必要がありますが、集計クエリ用に事前定義された MV を構築し、時間の経過とともにメトリクスを使用してこれを監視することで、パフォーマンスの懸念をある程度軽減できます。
 
-### ドキュメント
+### ドキュメント {#docs}
 
 Protobuf API への接続と使用方法を説明するクイックスタートガイドを作成しなければなりません。このドキュメントは DIP の知識が限られているユーザーを対象としています。ドキュメントにはデータのフローと各部分に責任を持つチームを明確に概説しなければなりません。
 
@@ -758,7 +870,7 @@ Protobuf API への接続と使用方法を説明するクイックスタート�
 
 特定のリソースの MV を作成する方法と、クエリ時間とパフォーマンスを向上させるためにこれらを DIP 内でどのように使用するかについてのガイドを作成しなければなりません。
 
-### .com/dedicated/cells/セルフマネージドに関する考慮事項
+### .com/dedicated/cells/セルフマネージドに関する考慮事項 {#considerations-for-comdedicatedcellsself-managed}
 
 この API のクエリは複数の Cells にまたがることはありません。各クエリはインスタンス（セルフマネージドインスタンスの管理者ユーザーのみ）、組織、名前空間、グループ、またはプロジェクトにスコープされなければなりません。
 

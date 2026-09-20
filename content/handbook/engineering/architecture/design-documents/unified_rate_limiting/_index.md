@@ -10,18 +10,18 @@ owning-stage: "~devops::platforms"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/unified_rate_limiting/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-translated_at: "2026-09-10T11:12:52+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-15T08:36:14Z"
+translated_at: "2026-09-20T02:21:36.161890+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-09T10:44:41Z"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
 
 {{< engineering/design-document-header >}}
 
-## 概要
+## 概要 {#summary}
 
 GitLab のアプリケーションレベルのレート制限には、すべての実装（RackAttack、ApplicationRateLimiter、将来のサービス）で機能する単一の設定モデルが必要です。このドキュメントでは、共有 SDK として [labkit](https://gitlab.com/gitlab-org/labkit) を使用し、3 つのフェーズでそこに到達する方法を説明します。
 
@@ -31,19 +31,19 @@ GitLab のアプリケーションレベルのレート制限には、すべて�
 
 これは [次世代レート制限アーキテクチャ](../rate_limiting/)のブループリントと、[レート制限設定の簡素化](../rate_limiting_simplification/)デザインドキュメントを土台にしています。実装は [Phase 2 エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/2021) で追跡されています。
 
-## モチベーション
+## モチベーション {#motivation}
 
 GitLab アプリケーションのレート制限は、RackAttack、ApplicationRateLimiter、いくつかの小さな実装に分散しています。それぞれが独自の設定メカニズム、独自のカウント、独自の可観測性を持っています。実際には、すべてのレート制限を同じ方法で設定できないこと、ドライランやバイパスの挙動がばらつくこと、新しいエンドポイントが制限なしでリリースされること、インシデント時に何がなぜ制限されているのかを誰もすばやく判断できないことを意味します。
 
 [レート制限設定の簡素化](../rate_limiting_simplification/)ドキュメントでは、フェーズ化されたアプローチを説明しています。Phase 1（エッジネットワーク）は完了しています。このドキュメントでは、Phase 2（アプリケーションレベルの統一）の技術設計を扱い、Phase 3（外部化された設定と動的サービス）の概要を示します。
 
-## Phase 1: アプリケーションレベルの統一
+## Phase 1: アプリケーションレベルの統一 {#phase-1-application-level-unification}
 
 すべてのアプリケーションレート制限は、`labkit-ruby` の単一 API を通ります。呼び出し元（Rack ミドルウェアまたはアプリケーションコード）は識別子を構築し、一連のルールとともに labkit に渡し、結果を受け取ります。既存の設定（ApplicationSettings、環境変数、ハードコードされたデフォルト）はそのまま機能します。呼び出し元は自身の設定を解決し、それを渡します。
 
 *可能になること:* アプリケーション全体で制限を定義し、観測する一貫した方法。ルールの追加や変更には引き続きコード変更とデプロイが必要ですが、すべての制限が同じ方法で動作し、同じ方法で計装されるようになります。古い制限は移行され、新しい制限は自動的に同じ利点を得ます。
 
-### 1.1 labkit レート制限 API
+### 1.1 labkit レート制限 API {#11-the-labkit-rate-limiting-api}
 
 `Labkit::RateLimit::Limiter` がメインのエントリーポイントです。レート制限チェックポイントごとに 1 つ（リクエストごとではなく起動時に）構築し、再利用します。内部の `Evaluator` はキャッシュされます。
 
@@ -62,7 +62,7 @@ result = limiter.check(identifier)
 
 名前はサービスをまたいで繰り返せます。`rack_request` が複数のサービスに存在しても問題ありません。各サービスは自身の Redis ストレージ（GitLab Rails の場合は専用のレート制限 Redis）でカウントするため、共有された名前が共有カウンターを意味することはありません。
 
-### 1.2 言語 SDK
+### 1.2 言語 SDK {#12-language-sdks}
 
 SDK は Ruby 固有ではありません。サポート対象の各言語は、同じモデルのネイティブ SDK を持ちます。リミッターを一度構築し、リクエストごとに識別子を構築し、`check` を呼び出し、結果に基づいて動作します。このドキュメントの例では簡潔さのために Ruby を使用しますが、Go API もそれに対応する必要があります。両方の SDK は同じ設定ファイル（Phase 2）を読み込み、同じ外部サービス（Phase 3）と通信するため、一度定義されたルールは、どの言語から呼び出されても同じことを行います。
 
@@ -138,7 +138,7 @@ case ratelimit.ActionAllow:
 
 設定ではなくプログラムでルールを定義することは、原則ではなく例外であるべきです。ただし、このサポートは必要です。これがないと、この用途のためにデータベースに設定を持っている可能性がある Self-Managed 設定を壊してしまうためです。
 
-### 1.3 識別子
+### 1.3 識別子 {#13-identifier}
 
 識別子は、呼び出し元がリクエストについて知っている情報で構築するキーと値のハッシュです。リミッターごとに異なる形を持ちます。
 
@@ -168,7 +168,7 @@ case ratelimit.ActionAllow:
 
 `<anonymous>` は山括弧を使用するため、実際のユーザー名と衝突できません。未認証ルールは `user: "<anonymous>"` にマッチし、`[:ip]` でカウントします。認証済みルールはこの値にマッチしないため、フォールバックとして動作し、`[:user]` でカウントします。
 
-### 1.4 ルールとマッチング
+### 1.4 ルールとマッチング {#14-rules-and-matching}
 
 各ルールは以下を持ちます。
 
@@ -198,7 +198,7 @@ case ratelimit.ActionAllow:
 
 ルールは順序どおりに評価されます。より具体的なルールを、より一般的なルールより前に置いてください。
 
-#### 禁止: 時間窓より長いブロック
+#### 禁止: 時間窓より長いブロック {#bans-blocking-for-longer-than-the-window}
 
 一部の制限では、時間窓より大きな代償を課す必要があります。繰り返される認証失敗が典型例です。1 分間に 10 回パスワードを間違えたからといって、次の 1 分間に新しい許容量を得られるべきではありません。
 
@@ -281,7 +281,7 @@ Self-Managed と GitLab.com は引き続き機能します。呼び出し可能�
 
 より広い設定の進化は [#28853](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) で追跡されています。
 
-### 1.8 移行: ApplicationRateLimiter（ステージ 2a）
+### 1.8 移行: ApplicationRateLimiter（ステージ 2a） {#18-migration-applicationratelimiter-stage-2a}
 
 フィーチャーフラグの背後で、`ApplicationRateLimiter.throttled?` は内部のカウント戦略ではなく labkit の `Limiter` に委譲します。公開 API は変わりません。コントローラーとサービスはこれまでどおり `.throttled?` を呼び出し続けます。
 
@@ -296,7 +296,7 @@ Self-Managed と GitLab.com は引き続き機能します。呼び出し可能�
 - [#28876](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28876) — ロールアウト後のフィーチャーフラグ整理
 - [#29054](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29054) — `rate_limits` ハッシュを静的な labkit リミッターオブジェクトに置き換える
 
-### 1.9 移行: RackAttack（ステージ 2b）
+### 1.9 移行: RackAttack（ステージ 2b） {#19-migration-rackattack-stage-2b}
 
 新しいミドルウェアは既存の RackAttack ミドルウェアと並行して実行されます。RackAttack は強制適用を継続します。新しいミドルウェアはログモードから始めて、並行して実行されます。
 
@@ -316,7 +316,7 @@ Self-Managed と GitLab.com は引き続き機能します。呼び出し可能�
 
 [#28852](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28852) で追跡されています。
 
-### 1.10 可観測性
+### 1.10 可観測性 {#110-observability}
 
 **Prometheus メトリクス** — カウンターメトリクスは、非終端ルールチェーンをカバーするために 2 つの粒度に分割されます。
 
@@ -325,7 +325,6 @@ Self-Managed と GitLab.com は引き続き機能します。呼び出し可能�
 | `gitlab_labkit_rate_limiter_checks_total` | カウンター | `rate_limiter`, `action`, `matched`, `error` | フェイルオープンになる呼び出しを含め、`check` の呼び出しごとに正確に 1 回増加。`action` は呼び出し元向けの判定（`allow`\|`block`）、`matched` と `error` は真偽値フラグです。カーディナリティは低く、レート制限全体の健全性を示します。 |
 | `gitlab_labkit_rate_limiter_rule_evaluations_total` | カウンター | `rate_limiter`, `rule`, `action`, `result` | 評価されたルールごとに 1 回増加。非終端チェーン内のすべてのルールを捕捉します。`action` は設定されたルールアクション（`limit`\|`log`\|`skip`）、`result` は評価で決定された内容（`allow`\|`block`\|`log`\|`skip`\|`banned` — 超過した `log` ルールは `result="log"` と報告し、禁止が有効なルールはアクションにかかわらず `result="banned"` と報告するため、個別の `exceeded` ラベルは不要です）。 |
 | `gitlab_labkit_rate_limiter_peeks_total` | カウンター | `rate_limiter`, `error` | フェイルオープンになる呼び出しを含め、`peek` の呼び出しごとに正確に 1 回増加。`error` は真偽値フラグです。 |
-| `gitlab_labkit_rate_limiter_enforced_total` | カウンター | `rate_limiter`, `rule` | 呼び出し元が `block` に基づいて拒否したリクエストごとに 1 回増加。評価側ではなく呼び出し元が出力します。ロールアウトの制御ではブロック判定を観測しても適用しない場合があり、実際にどちらを行ったかが分かるのは呼び出し元だけだからです。 |
 | `gitlab_labkit_rate_limiter_limit` | ゲージ (`:max`) | `rate_limiter`, `rule` | 設定された閾値。 |
 | `gitlab_labkit_rate_limiter_period_seconds` | ゲージ (`:max`) | `rate_limiter`, `rule` | 設定された期間。 |
 
@@ -339,7 +338,7 @@ Self-Managed と GitLab.com は引き続き機能します。呼び出し可能�
 - [#28807](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28807) — 移行のための Redis クラスターの余裕を調査する
 - [#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827) — Redis 操作を単一の Lua EVAL 呼び出しに統合する
 
-### 1.11 コストを考慮したレート制限
+### 1.11 コストを考慮したレート制限 {#111-cost-aware-rate-limiting}
 
 `GET /api/v4/user` と複雑な GraphQL クエリは同じものではありませんが、単純なリクエストカウンターはそれらを同等に扱います。`check` の `cost:` パラメーターにより、実際のリソース消費量に基づいてカウントできます:
 
@@ -391,7 +390,7 @@ limiter.check(identifier, cost: cost)
 
 内部的には、`cost:` は Lua EVAL 内で `INCRBYFLOAT` を使用します（[#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827)）。`1` を指定した `INCRBYFLOAT` は `INCR` と同じように振る舞うため、整数コストと浮動小数点コストのために別々のカウント戦略はありません。
 
-## Phase 2: 外部化された設定
+## Phase 2: 外部化された設定 {#phase-2-externalized-configuration}
 
 Labkit は、アプリケーションが提供するデフォルトを上書きする設定を読み込みます。フォーマットは [LabKit 設定管理](../labkit_configuration/)デザインドキュメントに従います。protobuf スキーマが構造を定義し、YAML がシリアライズ形式になります。スキーマが共有されるため、同じファイルは `labkit-ruby`、`labkit-go`、それを消費するサービスで同じように読み込まれます。
 
@@ -835,14 +834,14 @@ Labkit::RateLimit.publisher.publish_all!
 - **アプリケーション設定は永続的なレコードのままです。** 照合ジョブは、labkit がチェック時に呼び出し可能オブジェクトを決して呼び出さなくても、実行ごとに登録済みの呼び出し可能オブジェクトを解決します。これによりフラッシュされたストアが再投入され、このフェーズは Postgres をシステムからではなくホットパスから外します（[2.4](#24-redis-backed-rules-web-ui-configuration)）。
 - **Redis キーは設定を保持するため有効期限を持ちません。** 有効期限のあるルールキーは、制限が変わったと示すログを何も残さず、リミッターをアプリケーションデフォルトに静かに戻します。これはレート制限用 Redis がキャッシュではなく永続ストアとして運用されるため機能します。文書のプロセスローカルな複製は期限切れになりますが（[2.4](#24-redis-backed-rules-web-ui-configuration)）、そこでの有効期限は再読み取りの契機になるだけです。消えてはならないのは保存された文書です。
 
-### 2.7 デプロイ
+### 2.7 デプロイ {#27-deployment}
 
 - **Self-Managed:** 設定ファイルは任意です。存在しない場合、既存の挙動は変わりません。管理者はカスタムレート制限のために設定ファイルを提供するか、Web UI からルールを管理できます（Redis に保存）。
 - **GitLab.com:** 設定ファイルは Helm チャートまたは運用設定経由でデプロイされます。プラットフォームレベルのルールは Production Engineering が管理します。
 - **Dedicated:** 設定ファイルは Dedicated 運用者が管理します。ファイル経由のテナントごとのカスタマイズは技術的には可能ですが、推奨されません。
 - **Cells:** 個別の設定ファイルによる Cell ごとの設定が可能です。
 
-### 2.8 GitLab モノリスのフロー
+### 2.8 GitLab モノリスのフロー {#28-gitlab-monolith-flow}
 
 - レート制限機能の Phase 2 の最初の利用者であり、私たちの最初の実装でもあるのは、すでに含まれている `labkit-ruby` 依存関係を介した GitLab Rails モノリスです。
 - `protos` には、利用可能なリミッターとレート制限の両方に対する protobuf 定義が含まれます。これが定義の唯一の信頼できる情報源です。
@@ -855,7 +854,7 @@ Labkit::RateLimit.publisher.publish_all!
     - Omnibus Self-Managed インストールでは、存在しない場合に無視される任意の設定ファイルです。例となる `rate_limits.example.yaml` と使用方法の手順を同梱します。
 - すべての言語の `labkit` には、宣言された `rate_limits.yaml` ファイルがアプリケーションの `available_limiters.yaml` ファイルに対して有効かどうかを実行時に確認する、新しい検証スクリプトが必要です。
 
-#### 2.8.1 生成と公開
+#### 2.8.1 生成と公開 {#281-generation-and-publishing}
 
 ```text
 protos (or labkit-spec?)  (single source of truth)
@@ -872,7 +871,7 @@ protos (or labkit-spec?)  (single source of truth)
 
 ```
 
-#### 2.8.2 検証
+#### 2.8.2 検証 {#282-validation}
 
 ```text
     available_limiters.yaml                   rate_limits.yaml
@@ -919,7 +918,7 @@ protos (or labkit-spec?)  (single source of truth)
                                   Phase 3 external service
 ```
 
-## Phase 3: 動的外部サービス
+## Phase 3: 動的外部サービス {#phase-3-dynamic-external-service}
 
 外部サービスは、リクエスト識別子に基づいてレート制限ルールを動的に提供します。これにより、それぞれのケースに静的な設定ファイルを維持せずに、顧客ごと、階層ごと、名前空間ごとのカスタマイズを実現できます。
 
@@ -944,7 +943,7 @@ protos (or labkit-spec?)  (single source of truth)
 
 サービスはリミッター名をキーにするため、同じ名前が異なるサービスでは異なる意味を持つことを考慮する必要があります。これは、`rack_request` が意図的にあらゆる場所で再利用される汎用リミッター（Rack ミドルウェア、gRPC インターセプター）で特に重要です。サービスは、呼び出し元サービスとリミッター名の両方でルールのスコープを絞るため、あるサービス向けの動的ルールが、たまたま同じ名前を共有する別のサービスに漏れることはありません。
 
-### 3.2 機能
+### 3.2 機能 {#32-capabilities}
 
 名前空間ごと、プランごとの閾値は、設定ファイル（`namespace_plan` や `root_namespace` にマッチするルール）を通じて Phase 2 ですでに可能です。外部サービスは、静的設定では提供できない機能を追加します。
 
@@ -953,7 +952,7 @@ protos (or labkit-spec?)  (single source of truth)
 - 設定ファイルを再デプロイせずに変更されるルール
 - Terraform 経由で設定でき、アプリケーションのレート制限を Cloudflare や他のエッジルールと同じリポジトリに保持できること
 
-### 3.3 フェイルオープンとキャッシュ
+### 3.3 フェイルオープンとキャッシュ {#33-fail-open-and-caching}
 
 サービスに到達できない場合、labkit はローカルルールストアにフォールバックします。ファイル階層、次に公開済み階層、次にアプリケーションデフォルトの順です（フェイルオープン）。識別子ごと、名前空間ごと、プランごとにキャッシュすることで、リクエストごとのオーバーヘッドを減らします。
 
@@ -961,11 +960,11 @@ protos (or labkit-spec?)  (single source of truth)
 
 ローカルルールストアもメモリにキャッシュされます（[2.4](#24-redis-backed-rules-web-ui-configuration)）。異なるのは粒度です。サービスキャッシュはリクエストの形（識別子ごと、名前空間ごと、プランごと）をキーにするため、プロセスが見たすべての形に対するエントリを保持します。ローカルストアはリミッターごとに 1 文書で、タイマーで更新されるプロセスごとの少数のエントリです。どちらも即時ではありませんが、ローカルの間隔はより短く固定されているため、緊急の変更はサービスではなくファイルまたは公開に属します。
 
-### 3.4 GATE との関係
+### 3.4 GATE との関係 {#34-relationship-to-gate}
 
 識別子は拡張可能です。[GATE](../new_auth_stack/) は `workload_identity` と `ambient_credential` の識別子タイプを導入しますが、これらは識別子内の新しいキーにすぎません。外部サービスは labkit 自体を変更せずにそれらを使用できます。
 
-## 主な設計判断
+## 主な設計判断 {#key-design-decisions}
 
 | 決定 | 根拠 | 参照 |
 |---|---|---|
@@ -992,19 +991,19 @@ protos (or labkit-spec?)  (single source of truth)
 | Web UI ルールはデータベースではなく Redis に保存 | Self-Managed のクリック操作を維持しながらデータベースをホットパスから外し、カウンターにすでに使用している Redis インスタンスを再利用し、すべての実行時変更と同じ公開契約を通じて書き込みます | — |
 | 運用者が契約とグローバルルールを所有し、サービス所有者が自身のリミッターをチューニングする | チームはオンコールで担当するサービスの制限を管理する自律性を持ち、横断的な変更にはインフラストラクチャが意見を出します。回避には引き続きガードレールが適用されます | — |
 
-## 参考文献
+## 参考文献 {#references}
 
-### デザインドキュメント
+### デザインドキュメント {#design-documents}
 
 - [次世代レート制限アーキテクチャ](../rate_limiting/) — 制限を定義して強制適用するフレームワークのための、元の 2022 年の設計図
 - [レート制限設定の簡素化](../rate_limiting_simplification/) — フェーズ化されたロードマップ（Phase 1: エッジネットワーク、Phase 2: アプリケーション、Phase 3: インターフェース）
 - [LabKit 設定管理](../labkit_configuration/) — labkit サービスのための protobuf 優先の設定スキーマ
 
-### 外部参考資料
+### 外部参考資料 {#external-references}
 
 - [Cloudflare のレート制限ルール — サポートされるアクション](https://developers.cloudflare.com/ruleset-engine/rules-language/actions/#supported-actions) — アクションのセマンティクスモデルの着想元
 
-### 追跡
+### 追跡 {#tracking}
 
 - [Phase 2 エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/2021) — すべての実装作業の親エピック
 - [設定の進化](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) — 呼び出し可能オブジェクト、優先順位、静的設定に関する設計上の議論

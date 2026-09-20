@@ -1,23 +1,23 @@
 ---
-title: "データエンジニアリングとマネタイゼーション"
+title: "Data Engineering and Monetization"
 description: "あらゆる展開モデルで GitLab をスケールし、インテリジェントなマネタイゼーションを実現する、運用・分析両面の統合データ基盤を構築します。"
 upstream_path: /handbook/engineering/data-engineering/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T02:21:43Z"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-18T12:11:14-05:00"
+translated_at: "2026-09-20T02:04:59.673212+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-13T14:59:43-07:00"
 ---
 
-## ミッション
+## ミッション {#mission}
 
 私たちは、あらゆる展開モデルで GitLab をスケールし、インテリジェントなマネタイゼーションを実現する、運用・分析両面の統合データ基盤を構築します。断片化されたシステムをシームレスで低タッチなエコシステムに接続し、移行とアップグレード時のデータ問題をゼロにすることで、顧客が新機能をより速く採用できるようにし、カスタマージャーニー全体にわたるリーディングインジケーターにローデータを変換して成長と競争優位を加速させます。
 
-## ビジョン
+## ビジョン {#vision}
 
 私たちは GitLab が Developer-Led Economy（開発者主導の経済）を定義することを目指しています: エージェントとデータ駆動型プラットフォームによって力を与えられたソフトウェア開発者が、20 世紀の石油が産業の力を定義したのと同様に、イノベーション・成長・競争優位のコアドライバーとなるグローバルな転換です。
 
-## 組織構造
+## 組織構造 {#organization-structure}
 
 ```mermaid
 flowchart LR
@@ -62,5 +62,6 @@ flowchart LR
     click DBF "/handbook/engineering/data-engineering/database-excellence/database-frameworks"
     DE --> DBO[Database Operations]
     click DBO "/handbook/engineering/data-engineering/database-excellence/database-operations"
-    DE --> DBH[Database Health]
+    DE --> SMDX[Self-Managed Database Experience]
+    click SMDX "/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience"
 ```
