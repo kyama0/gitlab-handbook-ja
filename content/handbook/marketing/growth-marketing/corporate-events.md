@@ -6,11 +6,11 @@ twitter_image_alt: GitLab's Corporate Marketing Team Handbook
 twitter_site: gitlab
 twitter_creator: gitlab
 upstream_path: /handbook/marketing/growth-marketing/corporate-events/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-translated_at: "2026-09-04T20:50:53+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:22:16+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## ミッションステートメント
@@ -167,7 +167,7 @@ GitLab のすべてのイベントは、検討対象になるために以下の�
 * インサイドセールスレップ  — 登録の促進、ブースサポート、リードフォローアップ
 * カスタマーサクセス（参加する TAM、SA） / デベロッパーリレーションズ — ブースサポート、顧客ミーティング参加、プレゼンテーション/講演
 * プロダクト/アライアンスマーケティング — メッセージング、コンテンツ作成（ブログ、スポンサーシップデリバラブル、イベント後メールなど）、オンサイトブースサポート
-* デベロッパーアドボケイト — デモ作成、オンサイトサポート
+* Developer Advocate — デモ作成、オンサイトサポート
 * ソーシャル&コミュニケーションズ — イベント前、オンサイト、イベント後のソーシャルコンテンツ作成、PR & メディア
 * ライフサイクルマーケティング — イベントランディングページ、メールブラスト、データベースメールレビュー、SEO、コピー編集
 * リクルーティング — オンサイトブースサポート
@@ -221,10 +221,10 @@ TBD    スピーカー - CFP 採択数による
 
 **コーポレートイベント講演セッション & CFP プロセスの参考資料:**
 
-* [FY25 スポンサードイベント & Epic](https://gitlab.com/groups/gitlab-com/marketing/-/epics/4775)
+* [FY25 スポンサードイベント & エピック](https://gitlab.com/groups/gitlab-com/marketing/-/epics/4775)
 * [FY25 Dev Evangelism Event Strategy](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/326/)
-* [Developer Advocate CFP](/handbook/marketing/developer-relations/developer-advocacy/cfps/)
-* [Developer Advocate CFP ワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/#cfp-workflow)
+* [Developer Advocate CFP](/handbook/marketing/product-and-technical-marketing/developer-advocacy/cfps/)
+* [Developer Advocate CFP ワークフロー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/workflow/#cfp-workflow)
 
 #### プロセス
 
@@ -238,11 +238,11 @@ TBD    スピーカー - CFP 採択数による
 
 #### スポンサーシップに講演セッションが**含まれない**場合
 
-スポンサーシップに講演セッションが含まれない場合、ECM は、デベロッパーアドボケイトチームのレーダーに [FY24 Dev Evangelism Event Strategy](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/326/) 経由でイベントが入っており、イベントのオープン CFP 期間中に提出してもらえることを確認します。
+スポンサーシップに講演セッションが含まれない場合、ECM は、Developer Advocate チームのレーダーに [FY24 Dev Evangelism Event Strategy](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/326/) 経由でイベントが入っており、イベントのオープン CFP 期間中に提出してもらえることを確認します。
 
 提出した CFP に対してイベントによってセッションが選ばれた場合、スポンサードイベントマネージャーは、イベントから提供されたすべての関連情報を含む Issue を作成します。彼らは、プレゼンテーションの作成を支援する ECM とすべての関連当事者を Issue にタグ付けします。スポンサードイベントマネージャーは ECM に引き渡し、ECM は次のことを確認します: すべての締切が守られ、コンテンツがイベントの要件に従って提出されること、必要に応じて法務によりコンテンツが承認されること、ソーシャルカードとソーシャルコピーが作成されてスピーカーに提供されること、セッション当日にどこに行けばよいかを知れるようカレンダーホールドがスピーカーに送られること。
 
-私たちがスポンサーするイベントが CFP 提出のためのデベロッパーアドボケイトチームのレーダーにない場合、ECM は[戦略 Issue](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/326/) のコメント経由で DE チームと会話を始めます。
+私たちがスポンサーするイベントが CFP 提出のための Developer Advocate チームのレーダーにない場合、ECM は[戦略 Issue](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/326/) のコメント経由で DE チームと会話を始めます。
 
 ### サードパーティイベントの GitLab ブースでのライトニングトーク
 
@@ -269,7 +269,7 @@ TBD    スピーカー - CFP 採択数による
 
 ## GitLab DevSecOps World Tour
 
-* DevSecOps World Tour - プランニング Epic _近日公開_
+* DevSecOps World Tour - プランニングエピック _近日公開_
 * GitLab DevSecOps World Tour、GitLab のユーザーカンファレンスは、DevSecOps トランスフォーメーションを推進するアイデア、テクノロジー、人々と皆さんを繋ぐイベントで、アプリケーションを構築、運用、セキュリティ確保するテクノロジーチャンピオン向けです。
 
 ### イベントの実行

@@ -48,7 +48,7 @@ Slack またはメールで通知を開くか、Okta タイルから Lumos に�
 
 スクリーンショットと、アプリを Lumos App Store に追加するリクエスト方法を含む完全な手順については、[Lumos Access Request Guide](/handbook/security/corporate/systems/lumos/ar/)を参照してください。
 
-## アクセスリクエストに関連するページ
+## アクセスリクエストに関連するページ {#access-requests-related-pages}
 
 - [よくある質問](/handbook/eta/corporate-it/end-user-services/access-requests/#application-specific-templates)
 - [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)

@@ -2,11 +2,11 @@
 title: "GitLab for Open Source プログラム"
 description: "GitLab の Developer Relations チームが提供する GitLab for Open Source プログラムなどのオープンソースプログラムについて学びましょう"
 upstream_path: /handbook/marketing/developer-relations/programs/open-source-program/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:27:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 GitLab のオープンソースプログラムは、[Developer Relations チーム](/handbook/marketing/developer-relations/)の一部です。このプログラムは次の要素で構成されています:
@@ -25,7 +25,7 @@ GitLab のオープンソースプログラムは、[Developer Relations チー�
 私たちは **プログラムサポートリクエスト** を、専用の内部プロジェクトと、それぞれの [Issue キュー](https://gitlab.com/gitlab-com/marketing/developer-relations/open-source-program/open-source-program-support/-/issues) および [追跡ボード](https://gitlab.com/gitlab-com/marketing/developer-relations/open-source-program/open-source-program-support/-/boards/5749258) で管理しています。
 
 私たちは **プログラムの編集業務** を、[オープンソースパートナー編集キュー](https://gitlab.com/gitlab-com/marketing/developer-relations/open-source-program/gitlab-open-source-partners/publications-and-presentations/-/boards/5105228) で管理しています。
-これらの業務は Developer Relations の[チームロードマップ](https://go.gitlab.com/community-relations-team-roadmap)の一部としてトラッキングしています。
+これらの業務は Developer Relations の[チームロードマップ](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/roadmap?state=all&sort=START_DATE_ASC&layout=MONTHS&timeframe_range_type=CURRENT_YEAR&progress=COUNT&show_progress=true&show_milestones=false&milestones_type=GROUP&show_labels=true)の一部としてトラッキングしています。
 詳細は [Developer Relations Programs オペレーショナルガイドライン](/handbook/marketing/developer-relations/programs/operational-guidelines/) を参照してください。
 
 ## GitLab for Open Source プログラム
@@ -137,7 +137,7 @@ GitLab for Open Source 申請ページを編集する際は、適切なファイ
 
 すべてのオープンなプログラムサポート Issue の現在のステータスは [プライベートプロジェクトボード](https://gitlab.com/gitlab-com/marketing/developer-relations/open-source-program/open-source-program-support/-/boards/5749258) で確認できます。
 
-## コンソーシアムメンバーシップとスポンサーシップ
+## コンソーシアムメンバーシップとスポンサーシップ {#consortium-memberships-and-sponsorships}
 
 GitLab のオープンソースプログラムチームは、選定された業界コンソーシアムにおける GitLab の代表と参加、および選定されたオープンソースコミュニティイベントへの GitLab のスポンサーシップも監督しています。
 
@@ -155,7 +155,7 @@ GitLab のオープンソースプログラムチームは、選定された業�
 
 #### GitLab はどのようにコンソーシアム活動に参加していますか？
 
-選定されたコンソーシアムメンバーシップは GitLab のオープンソースプログラムの管轄（と予算）の範囲内ですが、[Developer Advocacy チーム](/handbook/marketing/developer-relations/developer-advocacy/) はコンソーシアムマーケティングに焦点を当て、GitLab の全体的なコミュニティメッセージと技術的視点を最も適切で効果的な業界対話に統合する活動を行っています。
+選定されたコンソーシアムメンバーシップは GitLab のオープンソースプログラムの管轄（と予算）の範囲内ですが、[Developer Advocacy チーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/) はコンソーシアムマーケティングに焦点を当て、GitLab の全体的なコミュニティメッセージと技術的視点を最も適切で効果的な業界対話に統合する活動を行っています。
 
 #### GitLab がコンソーシアムに関与することをおすすめするには？
 
@@ -198,7 +198,7 @@ GitLab がサポートしているコンソーシアムにより深く関わり�
 
 **内部推薦**
 Developer Relations チームはコンソーシアムの取締役会選挙を綿密に追跡しています。
-選挙の機会が生じた場合、チームはそれについて議論するために `Consortium Memberships` [プロジェクト](https://gitlab.com/gitlab-com/marketing/developer-relations/open-source-program/consortium-memberships) で confidential issue を作成します。
+選挙の機会が生じた場合、チームはそれについて議論するために `Consortium Memberships` [プロジェクト](https://gitlab.com/gitlab-com/marketing/developer-relations/open-source-program/consortium-memberships) で機密 Issue を作成します。
 チームは、選出されたポジションで効果的に務められそうな GitLab チームメンバーを決定します。
 彼らの考慮事項は、次の基準を優先します:
 

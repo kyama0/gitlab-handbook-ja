@@ -1,18 +1,18 @@
 ---
 title: "補助ソリューションリソース: 継続的デリバリー"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/
-upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
-translated_at: "2026-09-11T21:16:35+00:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:18:09+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-11T11:28:52-04:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 #### 連絡先
 
-| プロダクトマーケティング | デベロッパーアドボケイト |
+| Product Marketing | Developer Advocate |
 | ---- | --- |
-| Daniel Hom (@danielhom) | [Developer Advocacy チーム](/handbook/marketing/developer-relations/developer-advocacy/) |
+| Daniel Hom (@danielhom) | [Developer Advocacy チーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/) |
 
 ## 市場の視点
 
@@ -44,23 +44,23 @@ lastmod: "2026-09-11T11:28:52-04:00"
 
 このユースケースの典型的な**ユーザーペルソナ**は次のとおりです:
 
-#### DevOps エンジニア、Devon
+#### DevOps Engineer、Devon
 
-[DevOps エンジニア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、開発者がコードをテスト/ステージング・本番環境にデプロイするために必要なインフラ、環境、インテグレーションのサポートを提供する、開発者の安定したカウンターパートです。
+[DevOps Engineer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、開発者がコードをテスト/ステージング・本番環境にデプロイするために必要なインフラ、環境、インテグレーションのサポートを提供する、開発者の安定したカウンターパートです。
 
-#### システム管理者、Sidney
+#### Systems Administrator、Sidney
 
-[システム管理者](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)はインフラのエキスパートであり、テスト/ステージング・本番環境（物理・仮想・クラウドインフラ、データベースやミドルウェアといったアプリケーションインフラを含む）のモデリング、保守、スケーリングに貢献します。
+[Systems Administrator](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)はインフラのエキスパートであり、テスト/ステージング・本番環境（物理・仮想・クラウドインフラ、データベースやミドルウェアといったアプリケーションインフラを含む）のモデリング、保守、スケーリングに貢献します。
 
-#### リリースマネージャー、Rachel
+#### Release Manager、Rachel
 
-[リリースマネージャー](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)はリリース計画、スケジューリング、依存関係とリソースの特定において中心的な役割を担い、リリースが期日通りに行われることを保証します。リリースマネージャーはリリースプロセスの自動化を支援します。
+[Release Manager](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)はリリース計画、スケジューリング、依存関係とリソースの特定において中心的な役割を担い、リリースが期日通りに行われることを保証します。Release Manager はリリースプロセスの自動化を支援します。
 
-#### プラットフォームエンジニア、Priyanka
+#### Platform Engineer、Priyanka
 
-[プラットフォームエンジニア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)はモダンなプラットフォームのスペシャリストであり、開発者がセルフサービス方式で多層環境のプロビジョニング、デプロイ、廃止を行えるようにすることを目指します。
+[Platform Engineer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)はモダンなプラットフォームのスペシャリストであり、開発者がセルフサービス方式で多層環境のプロビジョニング、デプロイ、廃止を行えるようにすることを目指します。
 
-#### アプリケーションオペレーション、Allison
+#### Application Operations、Allison
 
 [オペレーションスペシャリスト](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#allison-application-ops)は、デプロイされたアプリケーションが利用可能であり、要求されたパフォーマンスパラメータで動作していることを保証します。
 
@@ -68,13 +68,13 @@ lastmod: "2026-09-11T11:28:52-04:00"
 
 このユースケースの典型的な**バイヤーペルソナ**は次のとおりです:
 
-#### インフラエンジニアリングディレクター、Kennedy
+#### Infrastructure Engineering Director、Kennedy
 
-[インフラエンジニアリングディレクター](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)は、高可用性環境の構築とスケーリングを担当します。組織においてクラウドイニシアティブやコスト最適化のアジェンダを持っていることが多いです。
+[Infrastructure Engineering Director](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)は、高可用性環境の構築とスケーリングを担当します。組織においてクラウドイニシアティブやコスト最適化のアジェンダを持っていることが多いです。
 
-#### リリース・チェンジマネジメントディレクター、Casey
+#### Release and Change Management Director、Casey
 
-[リリース・チェンジマネジメントディレクター](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)は、コンセプトからデリバリーまでの複雑なリリースの管理を担当します。最終的な意思決定者またはバイヤーは CIO の場合もありますが、リリース・チェンジマネジメントディレクターは購買プロセスにおいて大きな影響力を持ちます。
+[Release and Change Management Director](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)は、コンセプトからデリバリーまでの複雑なリリースの管理を担当します。最終的な意思決定者またはバイヤーは CIO の場合もありますが、Release and Change Management Director は購買プロセスにおいて大きな影響力を持ちます。
 
 ## 業界アナリストリソース
 
@@ -152,9 +152,15 @@ GitLab の CD ケイパビリティを示す短いデモのコレクションで
 
 ### ディスカバリー質問 {#discovery-questions}
 
+-
+
 #### サンプルディスカバリー質問
 
+-
+
 #### 追加ディスカバリー質問
+
+-
 
 ### 業界アナリストリレーションズ（IAR）プラン
 
@@ -173,35 +179,35 @@ GitLab の CD ケイパビリティを示す短いデモのコレクションで
 
 *Gartner Peer Insights のレビューは、個々のエンドユーザーが自身の体験に基づいて述べた主観的な意見であり、Gartner やその関連会社の見解を表すものではありません。レビューは誤りや読みやすさを考慮して編集されています。*
 
-「GitLab は世界で最も好まれているサービスであり、ユーザーコミュニティも非常に広いです。GitLab ではプロジェクトやブランチに基づくユーザー認証を行えます。さらに継続的デプロイメントの統合も非常に迅速に実現できます。加えて、好みの制約内でマージリクエストを作成し、簡単に管理できます。コンフリクトの防止も非常に簡単です。ソフトウェア開発チームには必須のサービスです。」
+「GitLab は世界で最も好まれているサービスであり、ユーザーコミュニティも非常に広いです。GitLab ではプロジェクトやブランチに基づくユーザー認可を行えます。さらに継続的デプロイメントの統合も非常に迅速に実現できます。加えて、好みの制約内でマージリクエストを作成し、簡単に管理できます。コンフリクトの防止も非常に簡単です。ソフトウェア開発チームには必須のサービスです。」
 
-> - ソフトウェア開発リード, [Gartner Peer Insights Review](https://www.gartner.com/reviews/market/application-release-orchestration-solutions/vendor/gitlab/product/gitlab/review/view/1324677)
+> - Software Development Lead, [Gartner Peer Insights Review](https://www.gartner.com/reviews/market/application-release-orchestration-solutions/vendor/gitlab/product/gitlab/review/view/1324677)
 
 「GitLab は私の[会社の]継続的インテグレーションと継続的デリバリー（CI/CD）プロセス全体をサポートしています。ソフトウェアプロセス管理に使用している Jira ともスムーズに統合されています。」
 
-> - プリンシパル Android エンジニア, [Gartner Peer Insights Review](https://www.gartner.com/reviews/market/application-release-orchestration-solutions/vendor/gitlab/product/gitlab/review/view/1210153)
+> - Principal Android Engineer, [Gartner Peer Insights Review](https://www.gartner.com/reviews/market/application-release-orchestration-solutions/vendor/gitlab/product/gitlab/review/view/1210153)
 
 「私の会社では[GitLab を]使ってさまざまなプロジェクトをホストしています。多くの開発者と一緒に簡単に使えてコラボレーションできるからです。各プロジェクトには、プロジェクトの閲覧と機能構築の権限を持つ特定のメンバーがアクセスできます。ピアレビューは分割ウィンドウでコード変更を確認するのが非常に簡単です。CI/CD でパイプラインを作成するのも簡単です。」
 
-> - ソフトウェアエンジニア, [Gartner Peer Insights Review](https://www.gartner.com/reviews/market/application-release-orchestration-solutions/vendor/gitlab/product/gitlab/review/view/1187975)
+> - Software Engineer, [Gartner Peer Insights Review](https://www.gartner.com/reviews/market/application-release-orchestration-solutions/vendor/gitlab/product/gitlab/review/view/1187975)
 
 #### G2
 
 「私にとって彼らのツールチェーンで最も印象的だったのは CI/CD プラットフォームです。使いやすさと柔軟性が素晴らしいです。CI/CD パイプラインの構築がこれほど簡単に感じられたことはありません。」
 
-> - Luca Favaretto Marques, ソフトウェアエンジニア, ミッドマーケット, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-4215029)
+> - Luca Favaretto Marques, Software Engineer, ミッドマーケット, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-4215029)
 
 「GitLab は私たちの開発者に統一された体験を生み出してくれます。以前はチームの間にいくつかの best-of-breed ソリューション（コードリポジトリ、Issue トラッカー、CI ランナー、デプロイメントパイプライン）が混在していましたが、それらを単一のソリューションに集約することができ、当社のニーズの大半を満たしています。」
 
-> - Joël Cox, パートナー, スモールビジネス, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-3160908)
+> - Joël Cox, Partner, Small Business, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-3160908)
 
 「Github を何年も使っていたのに GitLab を選んだ主な理由は CI/CD ツールでした。Github はそれを標準で備えていません。しかし私たちのチームには DevOps はおらず、JS デベロッパーしかいないため、ソリューションが必要でした」
 
-> - Cynthia Sanchez, 創業者, プロダクトマネージャー, SMB, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-4193586)
+> - Cynthia Sanchez, Founder, Product-Manager, SMB, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-4193586)
 
 「GitLab は提供する多くのリソースを通じて、Git、CI/CD パイプライン、そしてソフトウェア開発全般を習得するのに役立ちました。多くの個別のサービスを学んでそれらがどう組み合わさるかを把握する時間を費やす必要がなくなります。開発活動のための優れたツールを探している方には強くお勧めします。」
 
-> - Justin Smith, システム管理者, ミッドマーケット, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-3606488)
+> - Justin Smith, System Administrator, ミッドマーケット, [G2](https://www.g2.com/products/gitlab/reviews/gitlab-review-3606488)
 
 ### Gartner Peer Insights 'Voice of the Customer'
 
@@ -346,7 +352,7 @@ GitLab の CD ケイパビリティを示す短いデモのコレクションで
 ### Premium
 
 **なぜ CD に GitLab Premium を選ぶのか？**
-Premium はマルチチーム利用にスケールしていく組織に最適で、高度な構成、一貫した標準、コンプライアンスで DevOps デリバリーをスケールできるようにします。24 時間 365 日のアップタイムサポート、専任のカスタマーサクセスマネージャー（CSM）、アップグレード支援を含むエンタープライズレベルの優先サポートを活用できます。
+Premium はマルチチーム利用にスケールしていく組織に最適で、高度な構成、一貫した標準、コンプライアンスで DevOps デリバリーをスケールできるようにします。24 時間 365 日のアップタイムサポート、専任の Customer Success Manager（CSM）、アップグレード支援を含むエンタープライズレベルの優先サポートを活用できます。
 
 **Premium の主要機能:**
 

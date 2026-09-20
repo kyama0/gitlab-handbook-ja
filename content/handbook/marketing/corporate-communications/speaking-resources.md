@@ -8,6 +8,6 @@ stale: false
 lastmod: "2025-01-08T17:53:32+00:00"
 ---
 
-#### イベントの要件
+#### イベントの要件 {#event-requirements}
 
 GitLab を代表してスピーカーとして登壇するよう招待された場合は、`#external-comms` までご連絡ください。

@@ -2,14 +2,14 @@
 title: GitLab インシデントコミュニケーション計画
 description: 'エスカレーション、プロセス、インシデント管理の方法'
 upstream_path: /handbook/marketing/corporate-communications/incident-communications-plan/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:30:32+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
-**コーポレートコミュニケーションチームから潜在的なインシデントに関するレビューを受けたい場合は、Issue 内に情報を集めるか、Slack ディスカッションへのリンクを #corpcomms Slack チャンネルでチームへメッセージしてください。私たちは [セキュリティコミュニケーションマネージャーオンコール](/handbook/security/security-operations/sirt/security-incident-communication-plan/#roles-and-responsibilities-in-a-security-incident) と協力して次のステップを決定します。**
+**corporate communications チームから潜在的なインシデントに関するレビューを受けたい場合は、Issue 内に情報を集めるか、Slack ディスカッションへのリンクを #corpcomms Slack チャンネルでチームへメッセージしてください。私たちは [Security Communication Manager on Call](/handbook/security/security-operations/sirt/security-incident-communication-plan/#roles-and-responsibilities-in-a-security-incident) と協力して次のステップを決定します。**
 
 ## インシデントコミュニケーション計画
 
@@ -43,19 +43,19 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 ティア 2 のコミュニケーションエスカレーションが発生した場合は、Slack またはテキストメッセージで以下に通知してください:
 
-1. コーポレートコミュニケーション・社内コミュニケーション責任者
-1. 上記が不在の場合、コーポレートマーケティング責任者および CMO
+1. Head of Corporate Communications and Internal Communications
+1. 上記が不在の場合、Head of Corporate Marketing および CMO
 
-コーポレートコミュニケーション責任者は、対外的な企業メッセージをどのように進めるのが最善かについての推奨事項を提案し、計画を遂行するためのリソースを招集します（これは各リソースにとって最優先事項となります。物理的に不可能な場合や、マネージャーが代替要員を提供する場合を除きます）。[ティア 2 コミュニケーションエスカレーション対応計画のテンプレートはこちらから確認できます](https://docs.google.com/document/d/1zqk9qxVUUYENRl2Hbnwp3j_x-CXQbpJCtYvl46fzVIQ/edit#)。
+head of corporate communications は、対外的な企業メッセージをどのように進めるのが最善かについての推奨事項を提案し、計画を遂行するためのリソースを招集します（これは各リソースにとって最優先事項となります。物理的に不可能な場合や、マネージャーが代替要員を提供する場合を除きます）。[ティア 2 コミュニケーションエスカレーション対応計画のテンプレートはこちらから確認できます](https://docs.google.com/document/d/1zqk9qxVUUYENRl2Hbnwp3j_x-CXQbpJCtYvl46fzVIQ/edit#)。
 
-コーポレートコミュニケーション責任者は、1 時間以内（PST 午前 6 時〜午後 6 時）にリクエストを評価します。緊急度を評価し、3 時間（できるだけ早く）または 24 時間以内の対応と判断され、それに応じてコミュニケーションエスカレーション対応計画のスコープが決定されます。なるべく早く MVC をリリースし、新しい情報が入手可能になり次第イテレーションする方針です。
+head of corporate communications は、1 時間以内（PST 午前 6 時〜午後 6 時）にリクエストを評価します。緊急度を評価し、3 時間（できるだけ早く）または 24 時間以内の対応と判断され、それに応じてコミュニケーションエスカレーション対応計画のスコープが決定されます。なるべく早く MVC をリリースし、新しい情報が入手可能になり次第イテレーションする方針です。
 
 ### コアコミュニケーションエスカレーション対応チームの役割と責任
 
-- [コーポレートコミュニケーションのフォンツリー](https://docs.google.com/document/d/1qos3kjM_yIhS8-syey7WfR22SzmnHYFSCZpnFnBv7Rw/edit) - このチームは、コミュニケーションエスカレーション対応計画に従って対外コミュニケーションの取り組みを調整し、GitLab の拡張チーム全体と連携して、すべての関係者がアクティブで、最新情報を共有し、足並みを揃えていることを確認します。このチームはソーシャルメディアも担当します。
-- 社内コミュニケーション - このチームは対応計画に従って社内コミュニケーションの取り組みを調整します。
-- [Developer Relations のフォンツリー](/handbook/marketing/developer-relations/#emergency-contact) - このチームは、コミュニティの対応状況、モニタリング、関連する GitLab.com のディスカッションでの [GitLab 行動規範の執行](/handbook/marketing/developer-relations/workflows-tools/code-of-conduct-enforcement/) を担当します。
-- CLO - 最高法務責任者は、対応計画と、すべての書面による対外・社内コミュニケーションについて法的なインプットを提供します。
+- [Corporate Communications のフォンツリー](https://docs.google.com/document/d/1qos3kjM_yIhS8-syey7WfR22SzmnHYFSCZpnFnBv7Rw/edit) - このチームは、コミュニケーションエスカレーション対応計画に従って対外コミュニケーションの取り組みを調整し、GitLab の拡張チーム全体と連携して、すべての関係者がアクティブで、最新情報を共有し、足並みを揃えていることを確認します。このチームはソーシャルメディアも担当します。
+- Internal Communications - このチームは対応計画に従って社内コミュニケーションの取り組みを調整します。
+- [Developer Advocacy のコミュニティ対応](/handbook/marketing/product-and-technical-marketing/developer-advocacy/community-response/#notification) - このチームは、コミュニティの対応状況、モニタリング、関連する GitLab.com のディスカッションでの [GitLab 行動規範の執行](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/code-of-conduct-enforcement/) を担当します。
+- CLO - Chief Legal Officer は、対応計画と、すべての書面による対外・社内コミュニケーションについて法的なインプットを提供します。
 - CMO - 最終的な対外メッセージの DRI です。緊急度や対応に関する意見の不一致は、最終決定のため即座に CMO にエスカレーションされます。
 
 ### 拡張チームの役割、責任、連絡先
@@ -78,7 +78,7 @@ Developer Relations チームとソーシャルチームの両方によって、
 
 #### コミュニティ対応
 
-コミュニティオペレーションマネージャーは、ティア 3 と 4 については既存のフレームワークを通じて作業します。ティア 2 のインシデントについては、Developer Relations のディレクターとコミュニティオペレーションマネージャーが、既存の e-group 主導の対応に組み込まれます。
+Community Operations Manager は、ティア 3 と 4 については既存のフレームワークを通じて作業します。ティア 2 のインシデントについては、director of Developer Relations と community operations manager が、既存の e-group 主導の対応に組み込まれます。
 
 ティア 2 のインシデントについては、コミュニティチームは [comms-reactive-tier-2-incident-checklist テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/comms-reactive-tier-2-incident-checklist.md) の自分たちが担当する部分に従います。
 

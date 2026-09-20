@@ -2,11 +2,11 @@
 title: カンファレンス
 description: このページでは、カンファレンスに参加する利点を紹介します。
 upstream_path: /handbook/engineering/devops/create/engineers/conferences/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T10:48:33Z"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:32:20+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 ## なぜカンファレンスへの参加が重要なのですか？
@@ -62,7 +62,7 @@ lastmod: "2025-12-05T19:47:34+00:00"
 * 個人ブランドを確立し GitLab の認知度を高める
 * 人前でのスピーキングとコミュニケーションスキルを向上させる
 
-カンファレンスでの登壇の詳細については、[Developer Advocacy CFPs](/handbook/marketing/developer-relations/developer-advocacy/cfps/) ハンドブックをご確認ください。
+カンファレンスでの登壇の詳細については、[Developer Advocacy CFPs](/handbook/marketing/product-and-technical-marketing/developer-advocacy/cfps/) ハンドブックをご確認ください。
 
 ## カンファレンスへの参加許可を申請するにはどうすればよいですか？
 

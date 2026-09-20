@@ -1,24 +1,24 @@
 ---
 title: "補助ソリューションリソース: GitOps"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/
-upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
-translated_at: "2026-09-11T21:16:35+00:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:18:09+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-11T11:28:52-04:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 #### 連絡先
 
-| プロダクトマーケティング | デベロッパーアドボケイト |
+| Product Marketing | Developer Advocate |
 | ---- | --- |
-| Daniel Hom (@danielhom) | [Developer Advocacy チーム](/handbook/marketing/developer-relations/developer-advocacy/) |
+| Daniel Hom (@danielhom) | [Developer Advocacy チーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/) |
 
 ## 市場の視点 {#the-market-viewpoint}
 
 ## GitOps の必要性
 
-現代のアプリケーションは高速な反復で開発され、極めてダイナミックなスケールで動作します。成熟した DevOps 文化を持つ組織では、コードを 1 日に数百回本番にデプロイできます。アプリケーションは数人のユーザーから数百万まで、極めてダイナミックな負荷の下で動作することがあります。現代のインフラはエラスティックである必要があります。動的にプロビジョニング・デプロビジョニングできるキャパシティは、最適なパフォーマンスとコストの最小化を維持しながら負荷に追従できます。今日のインフラに課される要求の中で、堅牢で一貫性のある方法論でインフラの自動化を管理することがますます重要になっています。
+現代のアプリケーションは高速なイテレーションで開発され、極めてダイナミックなスケールで動作します。成熟した DevOps 文化を持つ組織では、コードを 1 日に数百回本番にデプロイできます。アプリケーションは数人のユーザーから数百万まで、極めてダイナミックな負荷の下で動作することがあります。現代のインフラはエラスティックである必要があります。動的にプロビジョニング・デプロビジョニングできるキャパシティは、最適なパフォーマンスとコストの最小化を維持しながら負荷に追従できます。今日のインフラに課される要求の中で、堅牢で一貫性のある方法論でインフラの自動化を管理することがますます重要になっています。
 
 ## GitOps とは何か？
 
@@ -84,13 +84,13 @@ Infrastructure as Code はプラットフォームの理解とアプリケーシ
 - [Sam, SRE](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
   Sam は機能開発者と同じサービスチームに組み込まれて働きます。サービスを稼働させ続け、デプロイし、そのサービスのインフラニーズを管理する作業を行います。プラットフォームチームと協力してベストプラクティスを体系化します。
 
-- [Devon, DevOps エンジニア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+- [Devon, DevOps Engineer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
   Devon は開発チームに対する Ops のインターフェースを担当することが多いです。インフラ、環境、統合のサポートを提供します。Devon はコードに精通しており、多数の異なるツールやコンテキストスイッチではなく、コードを通じてインフラを管理することを好みます。
 
-- [Priyanka, プラットフォームオペレーター](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+- [Priyanka, Platform Operator](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
   インフラ管理はプラットフォームチームの主な責任の一つです。[Priyanka](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer) は、開発チームがソフトウェアをより迅速に出荷・運用するために活用する共有プラットフォーム（伝統的なものまたは現代のクラウドプラットフォーム）の提供、保守、運用に責任を持っています。
 
-- [Sydney, システム管理者](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)
+- [Sydney, System Administrator](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)
   Sydney はアプリケーションチームのインフラと構成を定義、保守、スケールします。同じタスクに対する繰り返しの依頼を受けることがしばしばあります。Sydney の主な動機は、エラーを最小限に抑え時間を節約するために繰り返しのタスクを自動化すること、そしてインフラと構成を変更が追跡される方法で定義し、インフラ変更が[ワイルドウェスト](https://en.wikipedia.org/wiki/Cowboy_coding) になるのを止めることです。
 
 ### バイヤーペルソナ

@@ -168,7 +168,7 @@ convert blogimage.jpg -resize 1920x1080 blogimage.jpg
 find . -type f -name '*.jpg' -exec sh -c 'convert {} -resize 1920x1080 {}' \;
 ```
 
-### HEIC を JPG に変換
+### HEIC を JPG に変換 {#convert-heic-to-jpg}
 
 > ヒント: 最近の macOS バージョンは、Finder で右クリックメニュー `Quick Actions > Convert Image` を提供しており、画像を自動的に JPG に変換します。クイックな UI 変換にはこの方法を使用してください。
 

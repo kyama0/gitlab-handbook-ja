@@ -1,11 +1,11 @@
 ---
 title: "プログラムリソースとワークフロー"
 upstream_path: /handbook/marketing/developer-relations/programs/program-resources/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:27:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 このページには、プログラムの認知拡大、エンゲージメント、リテンション、アドボカシーを推進するために使用するツールとワークフローが含まれています。
@@ -49,7 +49,7 @@ Developer Relations Program Manager は、プログラムメンバーへのメ�
 {{% /alert %}}
 
 
-1. [Marketing Operations issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=dma_list) をファイルし、既存のデータベース内の既知のプログラムメンバー全員のリストを作成します。データベースのセグメンテーション制約があるため、このリストはコンバート済みのリードと、[GitLab for Education プログラム](https://about.gitlab.com/solutions/education/)、[GitLab for Open Source プログラム](https://about.gitlab.com/solutions/open-source/)、[GitLab for Startups プログラム](https://about.gitlab.com/solutions/startups/) など、既存のプログラムにすでにサインアップしている機関、コミュニティ、企業に直接関連付けられたコンタクトから生成する必要があります。
+1. [Marketing Operations Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=dma_list) をファイルし、既存のデータベース内の既知のプログラムメンバー全員のリストを作成します。データベースのセグメンテーション制約があるため、このリストはコンバート済みのリードと、[GitLab for Education プログラム](https://about.gitlab.com/solutions/education/)、[GitLab for Open Source プログラム](https://about.gitlab.com/solutions/open-source/)、[GitLab for Startups プログラム](https://about.gitlab.com/solutions/startups/) など、既存のプログラムにすでにサインアップしている機関、コミュニティ、企業に直接関連付けられたコンタクトから生成する必要があります。
 1. [一回限りのメールリクエスト](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=email-request) Issue をファイルして、上記のリストに最初のプログラムメールを送信します。最初のプログラムメールは、メールが正しくステージングされ、既存のプロトコルに従っていることを確認するため、キャンペーンマネージャーが送信する必要があります。
 1. リストが生成され、最初のプログラムメールが送信されると、アウトリーチメール用の Developer Relations DRI は、Marketo へのアクセス権と、上記の指定リストにメールキャンペーンを送信する権限を受け取ります。Developer Relations DRI は、最初のメールをテンプレートとして使用し、今後のすべてのアウトリーチメールをステージングおよび送信します。
 
@@ -71,7 +71,7 @@ EveryoneSocial では、GitLab チームメンバーが個人チャンネルを�
 PM は次のニュースレターを活用して、社内外でプログラムの認知度を高めています:
 
 * Company Newsletter: **GitLab チームメンバー** に向けて、関連する更新を **月 2 回** 伝えます。プログラム関連のコンテンツを追加するには、[これらの手順](/handbook/people-group/employment-branding/people-communications/#people-communications--engagement-channels) に従って、[現在の Issue](https://gitlab.com/gitlab-com/internal-communications/newsletter/-/issues) にコメントを追加してください。
-* [Customer Newsletter](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter)。**顧客** に向けて **月の第 4 木曜日/金曜日** に送信されます。プログラム関連のコンテンツを追加するには、[プロセス](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter/#process) に従って、[FY26 epic](https://gitlab.com/groups/gitlab-com/customer-success/digital-success/-/epics/8) に紐づく現在の Issue にコメントを追加してください。
+* [Customer Newsletter](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter)。**顧客** に向けて **月の第 4 木曜日/金曜日** に送信されます。プログラム関連のコンテンツを追加するには、[プロセス](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter/#process) に従って、[FY26 エピック](https://gitlab.com/groups/gitlab-com/customer-success/digital-success/-/epics/8) に紐づく現在の Issue にコメントを追加してください。
 
 ## コンテンツ
 
@@ -84,7 +84,7 @@ Content Marketing チームは GitLab ブログを管理しており、ブログ
 
 Brand Creative チームは、デザイン、tanuki tab、スワッグなどのアセットの設計、作成、サポート、レビューを支援できます。クリエイティブリクエストを送信するには、関連する [テンプレート](/handbook/marketing/brand-experience/brand-creative/) を使用してください。
 
-Developer Advocacy チームは、開発者向けにカスタマイズされたコンテンツを作成します。チームの [プロセス](/handbook/marketing/developer-relations/content-request/#how-to-work-with-the-developer-advocate-team) に従って [Issue を提出](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=content-request) することでリクエストを送ることができます。
+Developer Advocacy チームは、開発者向けにカスタマイズされたコンテンツを作成します。[コンテンツ依頼テンプレートを使って Issue を作成](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/work_items/new?description_template=content-request)することで、リクエストを送れます。
 
 GitLab のブランドガイドラインとの整合性を確保しながら、独自のコンテンツを作成することもできます。アセットを作成するには、GitLab チームアカウントの [Canva](https://www.canva.com/) を使用します。これは Business 機能へのアクセスを提供し、[ブランドキット](https://www.canva.com/brand/kAEZq1Eyzzw) が含まれています。すべてのアセットは少なくとも Brand Creative チームによってレビューおよび承認される必要があります。
 
@@ -149,7 +149,7 @@ GitLab for Education プログラムでは、申請者がアカデミック機�
 * [GitLab for Education ワークフロー](/handbook/marketing/developer-relations/programs/education-program/edu-program-workflows)
 * [GitLab for Open Source ワークフロー](/handbook/marketing/developer-relations/programs/open-source-program/oss-program-workflows)
 
-検証が成功すると、申請者はライセンスを取得する手順を含むメールを受け取ります。これらの手順には、GitLab のフルフィルメントチームによって生成された固有のクーポンコード（クーポンコードジェネレーター経由）が含まれます。クーポンコードジェネレーターの DRI は [フルフィルメントチーム](https://about.gitlab.com/direction/fulfillment/) です。
+検証が成功すると、申請者はライセンスを取得する手順を含むメールを受け取ります。これらの手順には、GitLab の fulfillment チームによって生成された固有のクーポンコード（クーポンコードジェネレーター経由）が含まれます。クーポンコードジェネレーターの DRI は [fulfillment チーム](https://about.gitlab.com/direction/fulfillment/) です。
 
 #### 例外
 
@@ -191,7 +191,7 @@ GitLab for Education プログラムでは、申請者がアカデミック機�
 
 Sales-Support と Billing Ops が、コンプライアンス関連の問題を処理します。このステージでは、ライセンスを付与し、ライセンスへのアクセス方法を顧客に通知します。Developer Relations Programs チームは、プログラム規約への準拠を保証します。
 
-Developer Relations Programs チームが、プログラムメンバーの行為がプログラム規約に違反していると判断した場合、チームメンバーは [Legal and Compliance issue](https://gitlab.com/gitlab-com/legal-and-compliance/-/issues/) を開いて違反の疑いを報告します。Developer Relations Programs チームは、その後 GitLab の Legal チームと協力して、問題を評価する最も適切な方法を判断します。
+Developer Relations Programs チームが、プログラムメンバーの行為がプログラム規約に違反していると判断した場合、チームメンバーは [Legal and Compliance Issue](https://gitlab.com/gitlab-com/legal-and-compliance/-/issues/) を開いて違反の疑いを報告します。Developer Relations Programs チームは、その後 GitLab の Legal チームと協力して、問題を評価する最も適切な方法を判断します。
 
 #### 是正
 
@@ -270,7 +270,7 @@ Chatter は、Salesforce のユーザーとグループ間の主要なコミュ�
 
 ### 期限切れの更新をクローズする
 
-営業チームは、処理されなかった期限切れの opportunity でプログラムマネージャーをタグ付けすることがあります。
+営業チームは、処理されなかった期限切れの opportunity で Program Manager をタグ付けすることがあります。
 
 1. opportunity ページで `Edit` をクリック
 1. `Close Date` を今日の日付に更新

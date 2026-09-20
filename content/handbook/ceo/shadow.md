@@ -2,11 +2,11 @@
 title: CEO シャドウプログラム
 description: "GitLab では、CEO シャドウとは役職ではなく、CEO に同行する一時的なアサインメントです"
 upstream_path: "/handbook/ceo/shadow/"
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-translated_at: "2026-08-01T16:25:30+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:32:20+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 <!-- vale handbook.InclusionLanguage = NO -->
 
@@ -441,7 +441,7 @@ CEO シャドウは作成するハンドブック MR に `ceo-shadow` ラベル�
    1. CEO のソーシャルメディアアカウントのトーンとスタイルを参考にしてください。
    1. 各ツイートには 280 文字が入力でき、URL のカウントは異なります。Twitter のウェブフォームで各ツイートをテストしてください。
    1. URL を追加する場合は、[カードバリデーター](https://cards-dev.twitter.com/validator)を使用してプレビューをレンダリングしてください。これにより、ツイートテキストを洗練するのに役立ちます。
-   1. より多くのメッセージのヒントは[ディベロッパーアドボカシーのソーシャルメディアハンドブック](/handbook/marketing/developer-relations/developer-advocacy/social-media/#message-tips)にあります。
+   1. より多くのメッセージのヒントは[Developer Advocacy のソーシャルメディアハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/social-media/#message-tips)にあります。
    1. [2021-12-15 Chief of Staff ビデオの例](https://docs.google.com/document/d/1BL2ZBtqF5fKdQox0p2lde_qv-75rXwYmQNHvKJnUR-8/edit)（内部リンク）。
 1. 完了したら、ドキュメントのオーナーを [Chief of Staff to the CEO](/job-description-library/chief-executive-officer/chief-of-staff/) に変更してください。
 

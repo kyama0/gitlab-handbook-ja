@@ -2,11 +2,11 @@
 title: "GitLab POWER"
 description: "GitLab パートナーのオンボーディングワークフローとイネーブルメントリソース"
 upstream_path: /handbook/resellers/partner-enablement/power/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:11:46+09:00"
+upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
+translated_at: "2026-09-20T01:22:16+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T12:29:16+00:00"
+lastmod: "2026-09-18T21:20:33+02:00"
 ---
 
 このページは、パートナー向けの GitLab イネーブルメントリソースを集めたものです。主な目的は、パートナーのテクニカルプリセールスチームを私たちの [Channel Partner Program](/handbook/resellers/) にオンボーディングすることです。他のセールスプロフェッショナルやサービスエンジニアにとっても、有用な情報が多数含まれています。
@@ -184,7 +184,7 @@ GitLab は、開発ツールの競争が激しい市場における複雑な製�
 
 * **インタラクティブ製品ツアー**
 
-  Developer Advocacy チームは、[インタラクティブ製品ツアーのカタログ](/handbook/marketing/developer-relations/developer-advocacy/content/#product-tours)を維持しています。個々の機能を扱うセルフガイドの旅です。迅速で焦点を絞ったデモとしても、GitLab が想定どおりに動作しないときの代替手段としても有効です。
+  Developer Advocacy チームは、[インタラクティブ製品ツアーのカタログ](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#product-tours)を維持しています。個々の機能を扱うセルフガイドの旅です。迅速で焦点を絞ったデモとしても、GitLab が想定どおりに動作しないときの代替手段としても有効です。
 
 ## 5. サービスを構築する
 

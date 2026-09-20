@@ -8,7 +8,7 @@ translator: codex
 stale: false
 ---
 
-## Core Team メンバーになる
+## Core Team メンバーになる {#becoming-a-core-team-member}
 
 新しいメンバーは、以下のステップを通じていつでも [Core Team](https://about.gitlab.com/community/core-team/) に追加できます:
 
