@@ -3,16 +3,16 @@ title: ソリューションアーキテクチャの活動ロギング
 description: >-
   SA の活動記録のプロセスマニュアルです。GitLab SA Activity Form の Phase 1 展開に関する変更の理由、よくあるケースの記録方法、既知の制限、FAQ をまとめています。
 upstream_path: /handbook/solutions-architects/processes/activity-capture/activity-logging/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-translated_at: "2026-09-10T11:03:04+00:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-13T16:53:02-04:00"
+translated_at: "2026-09-20T03:25:02+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-08T18:38:30-04:00"
 ---
 
 Phase 1 の展開に関する理由、方法、例外的なケースの記録方法、既知の制限、FAQ を、Solutions Architecture 組織全体が参照できるよう 1 か所にまとめています。
 
-**ステータス:** Phase 1 は 2026-09-07 に開始 · Rattle での活動記録は廃止 · 最終更新 2026-09-07
+**ステータス:** Phase 1 は 2026-09-07 に開始 · Rattle での活動記録は廃止 · 最終更新 2026-09-09
 
 ## 1. この変更の理由 {#1-why-this-change}
 
@@ -26,9 +26,12 @@ Phase 1 の展開に関する理由、方法、例外的なケースの記録方
 
 1. 2026-09-07 月曜日から、SA の活動追跡に **Rattle を使うのをやめてください**。Slack 連携は同日停止します。（Rattle のその他の機能は引き続き稼働します。SFDC のケースのトリアージ/SA Requests やその他の通知は、今のところ影響を受けません。）
 1. **[GitLab SA Activity Form](https://sa-activity-e4fb10.gitlab.io/)で記録を開始してください。**
+1. **データを入力し始める前にサインインしてください。** Demo モードで活動を入力しても気付きにくく、その場合は自分の活動として記録されません。必ず先にサインインしていることを確認してください。
 1. **可能であれば当日中に記録**し、難しければ活動の記憶が新しいうちに、遅くとも週に 1 回は記録してください。
 1. 開始前に短い[「ある 1 日」のデモ](https://drive.google.com/file/d/1thOkWwPBM_B7Q3qHyYJYfCsAwAkA_eVy/view)（顧客向けとそれ以外の活動の記録方法を紹介）を視聴してください。
 1. 難しい質問はチームリーダーに相談してください。リーダーシップによる説明会はそのためにあります。
+
+**Rattle の会議後の通知：** Rattle は、顧客向け会議の後に引き続き従来どおり Slack 通知を送信します。`Log Activity` ボタンは、新しい SA Activity Form を開く `Capture Activity` リンクに置き換わりました。この通知の対象は顧客との会議のみです。準備、調査、移動、フォローアップ、社内への貢献など、より幅広い活動は引き続き自分で積極的に記録する必要があります。
 
 ## 3. よくあるケースの記録方法 {#3-how-to-log-common-scenarios}
 
@@ -38,26 +41,43 @@ Phase 1 の展開に関する理由、方法、例外的なケースの記録方
 | パートナー関連業務（パートナーイネーブルメント、MDF を使用した訪問） | パートナーは Salesforce では**アカウント**として表示されます。パートナーの **Account ID** を使用してください。どの SA でもパートナー/顧客のアカウント番号に対して記録でき、Ecosystem チームにとって有用な情報になります。 |
 | 初期段階の業務（リードまたはアカウントがあり、商談はまだない） | フィールドは自由入力を受け付けます。**Account ID** が存在する場合はそれを使用し、アカウントも商談もまったくない場合は **"Pipeline Gen"** と入力してください。 |
 | 社内への貢献（ブログ記事、社内手順、オンボーディングバディ、面接） | **Non-Customer Facing** → Activity Type の **Other** を選択 → Notes で説明します。 |
+| コミュニティや技術のイベント（ミートアップ、カンファレンスでの講演、DevSecOps のプレゼンテーション） | これらも記録してください。実際に SA が時間を費やす活動であり、商談の創出につながることもよくあります。Salesforce のキャンペーンがある場合は Campaign ID を使用し、ない場合は関係する主要な顧客/パートナーの Account ID を使用してください。まだアカウントに関連付いていない場合は「Pipeline Gen」を使用します。 |
 | まとめて記録する移動（複数の顧客/パートナーを訪問する出張） | 移動分は「Opportunity, Campaign or Account」フィールドに複数の商談 ID を入力するか、主要な顧客を 1 社選んでそこに記録します。その後、各訪問/ワークショップを、それぞれの顧客またはパートナーに対して個別に記録します。移動時間は **Non-Customer Facing** に記録するだけでも構いません。顧客との会議のための出張でも、移動自体は顧客対応時間ではありません。 |
 | Salesforce のマーケティングキャンペーンがない顧客イベント | 2026-09-07 時点では未解決です。パートナー/顧客アカウントに直接記録する以外に、確定した回答はまだありません。 |
 | 社内会議（1:1、チーム通話、コーヒーチャット、メンタリング） | 従来の Rattle のプロセスと同様に、**これらは記録しないでください**。顧客に関連する準備、通話前後の作業、計画のみを記録します。 |
 
 Salesforce でのアカウント ID または商談 ID の確認方法: アカウント URL は `.../Account/0016100000SwqPFAAZ/view` のような形式（ID は `0016` で始まります）、商談 URL は `.../Opportunity/006Qq00000qM2jcIAC/view` のような形式（ID は `006` で始まります）です。ドロップダウンの有効な項目を選択する必要はなく、ID を直接貼り付けられます。
 
-## 4. 既知の問題と制限 {#4-known-issues-and-limitations}
+## 4. Notes フィールドと Salesforce フィールド {#4-notes-field-and-salesforce-fields}
+
+**Notes フィールドの扱い：**
+
+1. **顧客向けの活動：** Notes は任意です。この追跡ツールの主な目的は時間の使い道を把握することであり、Salesforce の活動メモを置き換えることではありません。
+1. **顧客向けではない活動：** Notes は必須です。SA が実際にどのような顧客対応以外の業務を行っているかを把握するのに役立ちます。
+1. チーム固有の要件に応じて、マネージャーが顧客向けの活動にも追加のメモを求める場合があります。
+
+**最新の状態に保つ Salesforce フィールド（新しいフォームで置き換わるものではありません）：**
+
+1. **SA Next Steps** と **SA Feasibility Rating** は引き続き Opportunity レコードにあります。これまでどおり最新の状態に保ってください。
+1. **PoV Object** は、すべての価値実証とトライアルの業務で必須となる正式な記録先です。情報を維持し、関連する商談とリンクした状態に保ってください。
+1. Opportunity の **SA Validated Tech Eval フィールド**は、PoV Object への移行に伴い段階的に廃止されています。移行期間中もチームで必要かどうか、マネージャーと相談してください。
+
+## 5. 既知の問題と制限 {#5-known-issues-and-limitations}
 
 - **商談の同期遅延。** 商談一覧は Salesforce から 4 時間ごとに更新され、その後約 15 分間キャッシュされます。キャンペーン一覧と地域の検索結果も 15 分間、トークンからメールアドレスへの検索結果は 5 分間キャッシュされます。Salesforce Connector の更新やクエリの編集直後は、フォームに最大 15 分間古い一覧が表示される可能性があります。
 - **ドロップダウンに表示されない商談。** New Business SA などから、SFDC で実際に割り当てられている商談よりも、表示される商談が大幅に少ないという報告があります。Account レベルではなく Opportunity レベルで割り当てられていることが原因かもしれません（Command Center でも同じ根本原因が指摘されています）。2026-09-07 時点で未解決です。回避策は商談 ID を手動で貼り付けることです。
 - **過去の送信内容を確認する方法がありません。** ツールには、すでに記録した内容の履歴やダッシュボードがありません。「Download backup CSV」ボタンはありますが、読みやすい名前ではなく Salesforce ID だけが表示されます。自分で参照できるよう、Notes にアカウント名/商談名を追加することを検討してください。
-- **ローカルバックアップは失われやすい状態です。** 記録は「このデバイス上のローカルバックアップ」として保存され、ブラウザーのキャッシュを消去すると削除されます。
-- **カレンダー連携はまだありません。** Rattle の Slack による会議の通知とは異なり、新しいフォームにはカレンダーに基づく記録や会議の自動検出がありません。Phase 2 で最も要望の多い機能ですが、2026-09-07 時点では、文書化された機能リクエストのプロセスによる一元的な追跡はまだ行われていません。
+- **ローカルバックアップは失われやすい状態です。** 記録は「このデバイス上のローカルバックアップ」として保存され、ブラウザーのキャッシュを消去すると削除されます。展開開始から最初の数週間は、念のため毎日 CSV のローカルバックアップをダウンロードしてください。
+- **カレンダー連携はまだありません。** Rattle の Slack による会議の通知とは異なり、新しいフォームにはカレンダーに基づく記録や会議の自動検出がありません。Phase 2 で最も要望の多い機能です。[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)でリクエストを提出・追跡してください。
 - **Ecosystem/Partner SA 向けのカテゴリが不足しています。** 「Customer-facing」は Ecosystem SA の業務の大半に当てはまらず、「Partner enablement」と「Workshop」の分類も曖昧です。最初の数か月分のデータが集まった後に調整する項目として指摘されています。
 - **不足している活動タイプ。** Rattle にあった「Post-sales support」は、新しいフォームのドロップダウンにはまだありません。追加が要望されていますが、まだ追加されていません。
 - **フォーム自体に費やす時間のカテゴリがありません。** 新しいプロセス自体の負担を測定できるようにするため、追加が要望されています。
 - **アクセシビリティ/作業負荷に関する懸念。** 複数の SA（特に多数のアカウントを担当する SA やニューロダイバージェントな SA）から、Rattle/Troops にあったカレンダーに基づく通知がなく、自動化されていない手作業の記録は認知負荷と過少報告のリスクを増やすとの指摘がありました。
 - **自動化を進めています。** データ入力を支援するツールは、2026-09-07 時点で社内レビュー中です。
 
-## 5. FAQ {#5-faq}
+**フィードバックと機能リクエスト：** 体系的なフィードバック、バグ報告、機能リクエストには[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)を使用してください。「この活動はどのように記録すればよいですか？」などの一般的な質問には Slack スレッドを使用してください。
+
+## 6. FAQ {#6-faq}
 
 **1:1、チーム通話、コーヒーチャット、メンタリングなど、すべての社内会議を記録する必要がありますか？**
 
@@ -87,13 +107,17 @@ Account ID がある場合はそれを使用してください。まだ何もな
 
 Non-Customer Facing → Activity Type の「Other」を選択 → Notes で説明します。
 
+**GitLab を紹介するコミュニティイベント、カンファレンスでの講演、技術ミートアップも記録するべきですか？**
+
+はい。実際に SA が時間を費やす活動であり、商談の創出につながることもよくあります。Salesforce のキャンペーンがある場合は Campaign ID、ない場合は主要な顧客/パートナーの Account ID を使って記録してください。まだ何にも関連付いていない場合は「Pipeline Gen」を使用します。
+
 **1 回の出張で複数の顧客/パートナーを訪問します。移動自体はどのように記録しますか？**
 
 複数の商談 ID を入力するか、主要な顧客を 1 社選んでそこに移動を記録してください。各訪問/ワークショップは、それぞれのアカウントに対して個別に記録します。移動時間自体は顧客対応ではないため、Non-Customer Facing に記録するだけでも構いません。
 
 **Rattle は完全に廃止されますか？**
 
-完全な廃止ではありません。SA の活動追跡での使用は 2026-09-07 に停止しますが、Salesforce のケースのトリアージ（SA Requests）やその他の自動化/通知といった機能には、今のところ引き続き使用します。
+完全な廃止ではありません。SA の活動追跡での使用は 2026-09-07 に停止しますが、Salesforce のケースのトリアージ（SA Requests）やその他の自動化/通知といった機能には、今のところ引き続き使用します。Rattle の会議後の通知も引き続き送信されます。`Log Activity` ボタンは、新しいフォームへの `Capture Activity` リンクに置き換わりました。
 
 **すでに送信した内容をすべて一覧で確認できますか？**
 
@@ -101,7 +125,7 @@ Non-Customer Facing → Activity Type の「Other」を選択 → Notes で説�
 
 **カレンダーと連携し、会議のたびに手動で記録しなくてもよくなりますか？**
 
-まだできません。その種の自動化（Salesforce に直接書き込む MCP 機能）は Phase 2 で計画されていますが、2026-09-07 時点では、承認を条件として今後数か月以内の予定です。機能リクエストは [sa-activity リポジトリ](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/coe/requests/sa-activity)で提出できます。
+まだできません。その種の自動化（Salesforce に直接書き込む MCP 機能）は Phase 2 で計画されていますが、2026-09-07 時点では、承認を条件として今後数か月以内の予定です。機能リクエストは[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)で提出してください。
 
 **New Business SA として割り当てられた商談の大半がドロップダウンに表示されないのはなぜですか？**
 
@@ -111,7 +135,11 @@ Salesforce で New Business SA が Account レベルではなく Opportunity レ
 
 できるだけ当日に近いタイミングで、遅くとも週に 1 回は記録してください。リーダーシップからのメッセージは、整っていても作り上げたデータより、不完全でも正直なデータのほうがよいというものです。
 
-## 6. 活動タイプ {#6-activity-types}
+**フォームへのフィードバックや機能リクエストはどこに提出しますか？**
+
+体系的なフィードバック、バグ、機能リクエストには[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)を使用してください。特定の活動の記録方法についての簡単な質問には Slack スレッドを使用してください。
+
+## 7. 活動タイプ {#7-activity-types}
 
 以下は活動を記録するときに選択できる活動タイプです。従来のプロセスから引き継いだもので、一部の説明には Rattle のフィールド名が残っています。フォームのドロップダウンの変更に合わせて更新を進めています。
 
@@ -120,9 +148,9 @@ Salesforce で New Business SA が Account レベルではなく Opportunity レ
 Enterprise および Commercial SA チームによる活動をキャプチャする際には、これらのタイプを選択します。
 
 - **Customer No Show** - SA は、顧客が出席しなかった予定された顧客会議について活動をログする機会があります。SAE/AE/Channels Manager と協力して、SA は顧客の不在の根本的な理由を理解しようとし、[SA] Activity Description に記録すべきです。
-- **Customer Strategy Plan Review** - （注: この活動タイプは依然としてレガシー名「Customer Strategy Plan」を使用していますが、Customer Success Plan の活動を指します）ビジネスステークホルダー、影響度の高い戦略要件と主要技術、顧客の技術エコシステムの現状、現在および望ましい能力、戦略目的との運用整合、そして現在の能力における認識されたギャップと欠陥を特定して文書化する SA と顧客の協働セッション。詳細は [カスタマーサクセスプラン](/handbook/solutions-architects/processes/activity-capture/customer-success-plans) を参照してください。この活動を報告する際には、最新のカスタマーサクセスプランへのリンクを含める必要があります。
+- **Customer Strategy Plan Review** - （注: この活動タイプは依然としてレガシー名「Customer Strategy Plan」を使用していますが、Customer Success Plan の活動を指します）ビジネスステークホルダー、影響度の高い戦略要件と主要技術、顧客の技術エコシステムの現状、現在および望ましい能力、戦略目的との運用整合、そして現在の能力における認識されたギャップと欠陥を特定して文書化する SA と顧客の協働セッション。詳細は [カスタマーサクセスプラン](/handbook/solutions-architects/processes/activity-capture/customer-success-plans)を参照してください。この活動を報告する際には、最新のカスタマーサクセスプランへのリンクを含める必要があります。
 - **Demo** - SA は、計画された GitLab 製品デモが顧客に提供されたときに活動を記録できます。Rattle の [SA] Activity Description フィールドで、SA はデモの目的と製品ウォークスルーの領域に関する洞察も参照すべきです。オプションは、フルでハイレベルなエンドツーエンドの GitLab 概要、特定の GitLab ステージのデモ、部分的な GitLab プラットフォーム概要、または製品への非常に特定の技術ディープダイブが考えられます。
-- **Discovery Session** - SA は、顧客との初回ディスカバリーセッション中の主要な洞察を記録する機会があります。SA は、現在の環境がプロジェクトの成果物の制限となっているかどうか、または既存のプラットフォームを当社の提供で拡張する必要があるかどうかを理解するため、顧客と協働できます。カテゴリ化されたディスカバリーセッションの例:
+- **Discovery Session** - SA は、顧客との初回ディスカバリーセッション中の主要な洞察を記録する機会があります。SA は、現在の環境がプロジェクトの成果物の制限となっているかどうか、または既存のプラットフォームを私たちの提供で拡張する必要があるかどうかを理解するため、顧客と協働できます。カテゴリ化されたディスカバリーセッションの例:
   - DevOps ディスカバリーディスカッション
   - 継続的インテグレーションディスカッション
   - デプロイメント環境ディスカッション
@@ -137,33 +165,33 @@ Enterprise および Commercial SA チームによる活動をキャプチャす
 - **Presentation / pitch** - SA は、クライアントへのプレゼンテーションの準備と実際の提供を記録する機会があります。SA なしでクライアントとの大幅な議論があったため、SAE/AE からピッチがリクエストされることがあり、これは完全に許容されます。このタイプの [SA] 活動 の検討事項:
   - SA がクライアントとの最初の Technical Discovery セッションに参加し、最初の要件が SA と明確に協働され、プレゼンテーションの準備のためにイニシアチブを取った。
   - SA が SAE/AE/Channels Manager と内部でデブリーフし、クライアントとの初回 SA 接続の要件と最初のプレゼンテーション / ピッチへの期待を理解した
-- **Ride Along** - この活動タイプは、ある SA が別の SA をシャドーイングして商談をサポートし、メインのソリューションアーキテクトへのフィードバックを提供し、メインのソリューションアーキテクトの仕事方法を学ぶときに使用されます。Ride Along の動作の詳細については、[Ride Along](/handbook/solutions-architects/sa-practices/ride-alongs/) ハンドブックページを活用してください。この活動はアカウントレベルで記録します。アカウントレベルでの記録が必要なのは、セグメント間または地域間の Ride Along では、ライダーが商談にアクセスできないためです。
+- **Ride Along** - この活動タイプは、ある SA が別の SA をシャドーイングして商談をサポートし、メインの Solutions Architect へのフィードバックを提供し、メインの Solutions Architect の仕事方法を学ぶときに使用されます。Ride Along の動作の詳細については、[Ride Along](/handbook/solutions-architects/sa-practices/ride-alongs/) ハンドブックページを活用してください。この活動はアカウントレベルで記録します。アカウントレベルでの記録が必要なのは、セグメント間または地域間の Ride Along では、ライダーが商談にアクセスできないためです。
 - **Guided Trial** - この活動タイプは、見込み顧客または既存顧客が GitLab Free trial 提供を使用した自己評価中に SA からのサポートを必要とする場合に使用されます。
 - **Security Questionnaire / RFP** - SA は、セキュリティアセスメントの完了や入札プロセスを通じた商談の進行に関連するアクションを記録するためにこの活動タイプを使用すべきです。このカテゴリに該当する活動の例:
   - Security Assessment: 技術的には入札プロセスの一部ですが、Security Assessment は通常 SA が GitLab の管理部門と連携して、正確性と法的応答を確保するためにエンゲージします。そのため、SA はそれらのセキュリティ固有の要件に対処するために GitLab の部門と内部でエンゲージしますが、プロセスに先立って、SA はクエリへの最初の試みとして対応する責任があります。
   - Procurement / Tender process（RFx - RFP, RFQ, RFI, FRB, RFT - Request for Anything）: SA はクライアントとエンゲージし、その組織が公的入札プロセスを実施することが示されました。入札プロセスは、提案、見積もり、情報、関心の表明をリクエストする可能性があり、通常はリクエストの一部として GitLab プラットフォームの機能要件と非機能要件への応答を SA に求めます。多くの場合、入札プロセスは早期に示され、市場へのアプローチで公平に共有され、書面によるアーティファクトの形で技術的なものに対処する SA を含む正式なプロセスを必要とします。
 - **Technical Deep Dive** - SA はテクノロジーと GitLab 機能の詳細なレビュー、およびクライアントソリューションの作成に関するクライアントセッションを記録すべきです。
 - **Technical Support** - SA はアカウントチームとして、また GitLab Support と協力して特定の技術的な問題や課題のトラブルシューティングと対処に関する技術サポートセッションを実施します。
-- **Positioned Professional Services** - この活動タイプは、[Solution Architects プロセス](/handbook/solutions-architects/processes/#positioning-professional-services) の一部としてプロフェッショナルサービスをポジショニングしたときに使用すべきです。
-- **Professional Service Support** - SA はクライアントの利用可能な内部スキルと能力を明確に理解し、スキルギャップが特定された場合に、より迅速に成功する方法でクライアントを支援します。その結果、GitLab プロフェッショナルサービスのサポートは、リスクを軽減し成功への速度を加速するために顧客価値を追加します。SA は、ここで概説されている当社の顧客のための GitLab の ProServ 部門の開始を所有しているため、地域の顧客への SA サービスとして、相当量のフォローアップとケイデンスが期待されます。
+- **Positioned Professional Services** - この活動タイプは、[Solution Architects プロセス](/handbook/solutions-architects/processes/#positioning-professional-services)の一部として Professional Services をポジショニングしたときに使用すべきです。
+- **Professional Service Support** - SA はクライアントの利用可能な内部スキルと能力を明確に理解し、スキルギャップが特定された場合に、より迅速に成功する方法でクライアントを支援します。その結果、GitLab Professional Services のサポートは、リスクを軽減し成功への速度を加速するために顧客価値を追加します。SA は、ここで概説されている私たちの顧客のための GitLab の ProServ 部門の開始を所有しているため、地域の顧客への SA サービスとして、相当量のフォローアップとケイデンスが期待されます。
 - **SA Assistance - Subject Matter** - 特定のエンゲージメントや商談を所有することなく、特定の主題における高度な知識と理解で別の GitLab チームメンバーをサポートすることを [SA] にリクエストされます。
 
 - **SA Assistance - Manager** - 顧客エンゲージメントを支援する場合に [SA] Manager によって使用されます。
 
-### Strategic Field SA 活動タイプ
+### Strategic Field SA 活動タイプ {#strategic-field-sa-activity-types}
 
 Strategic Field チームによる活動をキャプチャする際にこれらの [SA] Activity タイプを選択しますが、Enterprise の他の活動タイプも使用できます。
 
 - **SA Assistance - Strategic Field** - エンタープライズ DevOps 戦略と、デジタルやクラウド変革などの全社的なイニシアチブとの整合をレビューするためのクライアントの管理職や経営陣とのコール。
 - **Executive Solution Plan** - 組織全体の変革のための DevOps ソリューションを議論、戦略化、レビューするクライアントの管理職や経営陣とのコール。業界のソートリーダーシップとの信頼できるアドバイザリ関係を構築し、ベストプラクティスでの DevOps 採用に向けてエンタープライズを導きます。
 
-### Ecosystem SA 活動タイプ
+### Ecosystem SA 活動タイプ {#ecosystem-sa-activity-types}
 
 Ecosystem チームによる活動をキャプチャする際にこれらの [SA] Activity タイプを選択しますが、Enterprise の他の活動タイプも使用できます。価値の高い活動が最も上 / 最初に、最も低い / 最後にリストされる暗黙の優先順位があります。
 
 単一の活動に複数の活動タイプを使用できますが、行われた最も価値の高い単一の活動のみをタグ付けするようにしてください。たとえば、コールを **Partner Enablement** の実施に活用した場合、**Partner Cadence Call** を追加しないでください。
 
-ある活動が MBO の1 つにカウントされることを提案する場合は、その活動にオーバーレイタグとして MBO 関連活動タイプを **必ず追加してください**。MBO タイプを使用するときは、Activity Description にドキュメント、Issue へのリンク、または根拠となるコンテンツを配置してください。
+ある活動が MBO の 1 つにカウントされることを提案する場合は、その活動にオーバーレイタグとして MBO 関連活動タイプを **必ず追加してください**。MBO タイプを使用するときは、Activity Description にドキュメント、Issue へのリンク、または根拠となるコンテンツを配置してください。
 
 :movie_camera: ビデオ: [忙しい Solutions Architect 向け: 多数の Rattle エントリをすばやく記録、分類、トリアージする方法 9:17、Highspot。](https://gitlab.highspot.com/items/67be46c991e055ef7c36de79?lfrm=shp.0) 以下のテキストを補完します。
 
@@ -172,7 +200,7 @@ Ecosystem チームによる活動をキャプチャする際にこれらの [SA
 - **ESA MBO Capability** - _Ecosystem Services Capability_ - 顧客アカウント関係でのサービス提供の統合を通じて、顧客のオンボーディングと採用を加速します。
 - **ESA MBO Commitment** - _Commitment and Advocacy_ - GitLab Champions プログラムを活用して、パートナー技術リソースからの価値の高い技術投資とアドボカシーを推進します。
 
-さらに、各 Rattle 活動には、以下のいずれか1 つ（そして1 つだけ）の Rattle タグをタグ付けしてください。Partner Opportunity :money_with_wings: :money_with_wings: :money_with_wings: :money_with_wings: :money_with_wings: が最も価値の高い活動で、Partner Cadence Calls が最も価値の低い活動です。
+さらに、各 Rattle 活動には、以下のいずれか 1 つ（そして 1 つだけ）の Rattle タグをタグ付けしてください。Partner Opportunity :money_with_wings: :money_with_wings: :money_with_wings: :money_with_wings: :money_with_wings: が最も価値の高い活動で、Partner Cadence Calls が最も価値の低い活動です。
 
 - **Partner Opportunity** - :money_with_wings: :money_with_wings: :money_with_wings: :money_with_wings: :money_with_wings: パートナーが関与する特定のセールス商談で、フィールド SA とともに整合した Sales opportunity # アライン業務。これには、パートナーテクノロジーと GitLab とのジョイント価値提案のオーバーレイ SME であること、および / またはチャネル / サービスパートナーがジョイント顧客で成功するのを支援することが含まれます。
 - **Partner Assisted Demand Gen** - :money_with_wings: :money_with_wings: :money_with_wings: :money_with_wings: 需要創出 / リード創出に焦点を当て、パートナーと協働して顧客向けのウェビナー、ワークショップ、ロードショー、類似の活動を提供または開発すること。
@@ -184,7 +212,7 @@ Ecosystem チームによる活動をキャプチャする際にこれらの [SA
 - **Partner Enablement** - :money_with_wings: GitLab 製品とプリセールスでパートナーチャンピオンをイネーブルするための準備業務を含む、パートナー向けのコール、会議、ワークショップ、ウェビナー。
 - **Partner Cadence calls** - パートナーシップ構築と顧客商談やアカウント戦略におけるプリセールス活動のためのパートナーとのケイデンスコール。
 
-### Value Stream ワークショップ（アセスメント）活動タイプ
+### Value Stream ワークショップ（アセスメント）活動タイプ {#value-stream-workshop-assessment-activity-types}
 
 **注:** これらのオプションは依然として「VSA」の旧名称を参照していますが、データ追跡が継続している理由により、選択を更新できません。これにご注意ください。
 

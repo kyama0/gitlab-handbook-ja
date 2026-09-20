@@ -1,11 +1,11 @@
 ---
 title: GitLab トライアルガイドライン
 description: GitLab トライアルガイドライン
-upstream_path: /handbook/solutions-architects/tools-and-resources/trial-guidelines/
+upstream_path: /handbook/solutions-architects/processes/tools-and-resources/trial-guidelines/
 upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
 lastmod: "2026-09-16T23:38:14-04:00"
-translated_at: "2026-09-20T03:09:49+00:00"
-translator: claude
+translated_at: "2026-09-20T03:19:50+00:00"
+translator: codex
 stale: false
 ---
 
@@ -173,15 +173,15 @@ GitLab Duo アドオンは有料 Premium および Ultimate のお客様のみ�
 新規ユーザーは、まず Ultimate トライアルをリクエストした後、GitLab.com でトライアルできます。
 Community Edition または Enterprise Edition のライセンスなし（Free）の Self Managed インスタンスで Duo を試すことはできません。
 
-GitLab Duo Enterprise を試すには Ultimate サブスクリプションが必要です。GitLab Duo Pro を試すには Premium サブスクリプションが必要です。新規または Premium のお客様は、GitLab Ultimate の[トライアルにこちらから](https://gitlab.com/-/trials/new)申し込むことで、Duo Enterprise を無料で試せます。[Duo に含まれる機能はこちら](https://about.gitlab.com/gitlab-duo/#addons)に掲載されています。
+GitLab Duo Enterprise を試すには Ultimate サブスクリプションが必要です。GitLab Duo Pro を試すには Premium サブスクリプションが必要です。新規または Premium のお客様は、[GitLab Ultimate トライアルにこちらから](https://gitlab.com/-/trials/new)申し込むことで、Duo Enterprise を無料で試せます。Duo Pro と Duo Enterprise に含まれる機能は[こちらに掲載されています](https://about.gitlab.com/gitlab-duo/#addons)。
 
 | サブスクリプションタイプ | プロセス |
 | ----------------- | ------- |
 | GitLab を初めて使用する | 上記の手順に従って GitLab.com アカウントを作成し、Ultimate トライアルをリクエストします。次に [これらの手順](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html#start-gitlab-duo-pro-trial)に従います。 |
-| SaaS Premium | [これらの手順](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html#start-gitlab-duo-pro-trial)に従って Duo トライアルをリクエストし、シートを割り当てます。Duo を試したい場合は、[こちら](https://gitlab.com/-/trials/new)から GitLab Ultimate トライアルに申し込むことで試せます。|
+| SaaS Premium | [これらの手順](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html#start-gitlab-duo-pro-trial)に従って Duo Pro トライアルをリクエストし、シートを割り当てます。Duo Enteprise を試したい場合は、[こちらから GitLab Ultimate トライアル](https://gitlab.com/-/trials/new)に申し込むことで試せます。|
 | SaaS Ultimate | [これらの手順](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html#start-gitlab-duo-pro-trial)に従って Duo Enterprise トライアルをリクエストし、シートを割り当てます。 |
 | Self Managed Community Edition / Self Managed Enterprise Edition Free  | Duo を試すには、トライアル専用の GitLab.com アカウントを作成する必要があります（「GitLab を初めて使用する」の手順に従ってください）。注: IDE で Duo Pro 機能を試すために、このアカウントにプロジェクトを追加する必要はありません。サポートされている [IDE 拡張機能](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/supported_extensions.html)を構成するために [パーソナルアクセストークン](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)を生成するだけです。[Code Suggestions](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/)と [Duo Chat](https://docs.gitlab.com/ee/user/gitlab_duo_chat/)を使用できます。   |
-| Self Managed Enterprise Edition Premium | [このオンラインフォーム](https://about.gitlab.com/solutions/gitlab-duo-pro/sales/)を使用してトライアルをリクエストし、Duo Pro を試すために [これらの手順](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html#on-self-managed-and-gitlab-dedicated)に従います。Duo Enterprise を試したい場合は、[こちら](https://gitlab.com/-/trials/new)から GitLab Ultimate トライアルにサインアップすることでこれを行えます。|
+| Self Managed Enterprise Edition Premium | [このオンラインフォーム](https://about.gitlab.com/solutions/gitlab-duo-pro/sales/)を使用してトライアルをリクエストし、Duo Pro を試すために [これらの手順](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html#on-self-managed-and-gitlab-dedicated)に従います。Duo Enteprise を試したい場合は、[こちら](https://gitlab.com/-/trials/new)から GitLab Ultimate トライアルにサインアップすることでこれを行えます。|
 | Self Managed Enterprise Edition Ultimate | [このオンラインフォーム](https://about.gitlab.com/solutions/gitlab-duo-pro/sales/)を使用してトライアルをリクエストし、Duo Enterprise を試すために [これらの手順](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html#on-self-managed-and-gitlab-dedicated)に従います。 |
 
 ## プラットフォームの使い方を学ぶ {#learning-how-to-use-the-platform}
@@ -190,7 +190,7 @@ GitLab を初めて使用する場合でも、現在の使用方法を改善し�
 
 - 充実した [ドキュメント](https://docs.gitlab.com/)に目を通し、[チュートリアル](https://docs.gitlab.com/?tab=Tutorials)をレビューします
 - [GitLab University](https://university.gitlab.com/): トレーニングと認定資格のコレクション（無料および有料両方）
-- [GitLab YouTube チャンネル](https://www.youtube.com/channel/UCnMGQ8QHMAnVIsI3xJrihhg): デモ、ユースケース、録画されたウェビナーなどを見つけます
+- [GitLab Youtube チャンネル](https://www.youtube.com/channel/UCnMGQ8QHMAnVIsI3xJrihhg): デモ、ユースケース、録画されたウェビナーなどを見つけます
 - [リソースページ](https://about.gitlab.com/resources/): レポート、電子書籍、ウェブキャストなど
 - [GitLab Blog](https://about.gitlab.com/blog/): ヒント、ユースケースなど興味のあるトピックを検索
 - [コミュニティに参加](https://about.gitlab.com/community/)し、さまざまなプログラムを通じてメンバーになります

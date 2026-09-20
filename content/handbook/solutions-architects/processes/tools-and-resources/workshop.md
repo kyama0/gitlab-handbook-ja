@@ -2,11 +2,11 @@
 title: ハンズオンワークショップ
 description: ハンズオンワークショップ
 # REVIEW: Possible overlap with sa-practices/workshops.md. See restructuring issue #628 for details.
-upstream_path: /handbook/solutions-architects/tools-and-resources/workshop/
+upstream_path: /handbook/solutions-architects/processes/tools-and-resources/workshop/
 upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
 lastmod: "2026-09-16T23:38:14-04:00"
-translated_at: "2026-09-20T03:09:49+00:00"
-translator: claude
+translated_at: "2026-09-20T03:19:50+00:00"
+translator: codex
 stale: false
 ---
 
@@ -23,7 +23,9 @@ stale: false
 1. 「New Project」ボタンをクリック
 1. 「Create from template」を選択
 1. 「Group」を選択し、必要なワークショップテンプレートを選択
-1. 以下の命名規則に従ったプロジェクト名を入力します:[ワークショップの日付]-[ワークショップ名]-[クライアント名（該当する場合）]。例: 「20210112-Advanced CI CD-GitLab」
+1. 以下の命名規則に従ったプロジェクト名を入力します：
+[ワークショップの日付]-[ワークショップ名]-[クライアント名（該当する場合）]
+例：「20210112-Advanced CI CD-GitLab」
 1. 「Create project」ボタンをクリック
 
 ## ワークショップテンプレートの使い方 {#how-to-use-the-workshop-template}

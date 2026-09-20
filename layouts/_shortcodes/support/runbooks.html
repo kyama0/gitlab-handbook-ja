@@ -1,0 +1,66 @@
+<!-- To edit the content, see: /data/support_runbooks.yaml -->
+
+{{ $categories := slice }}
+{{ range site.Data.support_runbooks }}
+  {{ $categories = $categories | append .category }}
+{{ end }}
+{{ $categories = $categories | uniq | sort }}
+
+{{ range $categories }}
+  {{ $cat := . }}
+  <h2>{{ $cat }}</h2>
+  <div class="responsive-table">
+    <table>
+      <thead>
+        <tr>
+          <th>サブカテゴリ</th>
+          <th>名前</th>
+          <th>ランブック</th>
+          <th>SOP</th>
+          <th>ZD Global</th>
+          <th>ZD US Gov</th>
+          <th>Decagon</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ $catItems := where site.Data.support_runbooks "category" $cat }}
+        {{ $subcats := slice }}
+        {{ range $catItems }}
+          {{ $subcats = $subcats | append .subcategory }}
+        {{ end }}
+        {{ $subcats = $subcats | uniq | sort }}
+
+        {{ range $subcats }}
+          {{ $sub := . }}
+          {{ $subItems := where $catItems "subcategory" $sub }}
+
+          {{ range $index, $element := sort $subItems "name" }}
+            <tr style='vertical-align: middle;'>
+              <td>{{ if eq $index 0 }}{{ $element.subcategory }}{{ end }}</td>
+              <td><a href='{{ $element.zendesk_global.topic }}' target='_blank'>{{ $element.name }}</a></td>
+              <td class='text-center'>
+                {{ with $element.runbook }}<a href='{{ . }}' target='_blank'>リンク</a>{{ end }}
+              </td>
+              <td class='text-center'>
+                {{ with $element.sop }}<a href='{{ . }}' target='_blank'>リンク</a>{{ end }}
+              </td>
+              <td class='text-center'>
+                {{ with $element.zendesk_global.procedure }}<a href='{{ . }}' target='_blank'>手順</a><br />{{ end }}
+                {{ with $element.zendesk_global.articles }}{{ len . }} 件の記事<br />{{ end }}
+                {{ with $element.zendesk_global.macros }}{{ len . }} 件のマクロ{{ end }}
+              </td>
+              <td class='text-center'>
+                {{ with $element.zendesk_usgov.procedure }}<a href='{{ . }}' target='_blank'>手順</a><br />{{ end }}
+                {{ with $element.zendesk_usgov.articles }}{{ len . }} 件の記事<br />{{ end }}
+                {{ with $element.zendesk_usgov.macros }}{{ len . }} 件のマクロ{{ end }}
+              </td>
+              <td class='text-center'>
+                {{ with $element.decagon.aop }}<a href='{{ . }}' target='_blank'>リンク</a>{{ end }}
+              </td>
+            </tr>
+          {{ end }}
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+{{ end }}

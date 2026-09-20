@@ -1,21 +1,21 @@
 ---
 title: "ハンドブックについて"
 weight: -10
-upstream_path: "/handbook/about/"
-upstream_sha: "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256"
-translated_at: "2026-04-19T00:00:00Z"
+upstream_path: /handbook/about/
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-17T22:07:50+02:00"
+translated_at: "2026-09-20T03:28:53+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-03-07T10:45:14-08:00"
 ---
 
-## ハンドブックの歴史
+## ハンドブックの歴史 {#history-of-the-handbook}
 
 ハンドブックは、GitLab がわずか 10 人の会社だった頃に、情報共有を効率的かつ容易にするために始まりました。
 将来 GitLab にジョインするチームメンバーは、自分が入社する前に送られていたプロセス変更に関するメールを見ることはできず、また最終的に GitLab に参加する人々のほとんどは、その時点では私たちのことを聞いたこともないであろうと、私たちは分かっていました。
 ハンドブックは、いつチームの一員になったかにかかわらず、すべての会社情報を誰もが利用できるようにするための私たちの手段だったのです。
 
-## 利点
+## 利点 {#advantages}
 
 GitLab のハンドブックは広範囲にわたり、それを常に最新の状態に保つことは全員の仕事の重要な一部です。
 これは私たちが何者であり、どのようにコミュニケーションを取るのかを支える不可欠な要素です。
@@ -33,30 +33,30 @@ GitLab のハンドブックは広範囲にわたり、それを常に最新の�
 
 ハンドブックを初めて目にする人がよく口にする懸念の一つに、厳格な文書化が会社をより硬直的にするのではないか、というものがあります。
 実際には、現在のプロセスをハンドブックに書き下すことで、コントリビューターが変更を提案できる力を得るという効果があります。
-その結果、このハンドブックは硬直からは程遠いものになっています。[ハンドブックのコミット一覧](https://gitlab.com/gitlab-com/content-sites/handbook/-/commits/main) を見れば、その証拠が一目で分かります。あらゆるガイドラインやプロセスをハンドブックに文書化するよう努めていますが、起こり得るすべての状況やシナリオを文書化することは不可能です。ハンドブックに記載がないからといって、それが許容されているわけではありません。GitLab は各チームメンバーの懸念や状況を現地の法令に基づいて個別に精査し、最善の結論を出したうえで、それに応じてハンドブックを更新します。質問がある場合は、マネージャーに相談するか、[People Success](/handbook/people-group/) チームまでお問い合わせください。
+その結果、このハンドブックは硬直からは程遠いものになっています。[ハンドブックのコミット一覧](https://gitlab.com/gitlab-com/content-sites/handbook/-/commits/main)を見れば、その証拠が一目で分かります。あらゆるガイドラインやプロセスをハンドブックに文書化するよう努めていますが、起こり得るすべての状況やシナリオを文書化することは不可能です。ハンドブックに記載がないからといって、それが許容されているわけではありません。GitLab は各チームメンバーの懸念や状況を現地の法令に基づいて個別に精査し、最善の結論を出したうえで、それに応じてハンドブックを更新します。質問がある場合は、マネージャーに相談するか、[People Success](/handbook/people-group/) チームまでお問い合わせください。
 
-## ハンドブックの解釈
+## ハンドブックの解釈 {#handbook-interpretation}
 
 ハンドブックは解釈の対象となります。私たちは混乱や誤読を最小限にするため、できる限り明確に書くよう努めています。また、グローバルな読者を抱えており、それが異なる解釈をもたらし得ることも認識しています。質問やさらなる明確化が必要な場合は、該当ページのコンテンツオーナーにご確認ください。迷ったら、気軽に声をかけて質問してください。
 
-**GitLab では [すべてはドラフト](/handbook/values/#everything-is-in-draft) であり、変更の対象であることを忘れないでください。これはハンドブックも例外ではありません。**
+**GitLab では [すべてはドラフト](/handbook/values/#everything-is-in-draft)であり、変更の対象であることを忘れないでください。これはハンドブックも例外ではありません。**
 
-## ハンドブックのページ数を数える
+## ハンドブックのページ数を数える {#count-handbook-pages}
 
 ハンドブックが大きいのは容易に分かりますが、*どれだけ* 大きいのか考えたことはありますか？
 ハンドブックは *2,000* ページを超えます。実に多くの有益な情報です！
 
-### 単語数とページ数の推移
+### 単語数とページ数の推移 {#historical-word-and-page-counts}
 
-#### about.gitlab.com/handbook
+#### about.gitlab.com/handbook {#aboutgitlabcomhandbook}
 
 {{< handbook-counts site="about" >}}
 
-#### handbook.gitlab.com/handbook
+#### handbook.gitlab.com/handbook {#handbookgitlabcomhandbook}
 
 {{< handbook-counts site="handbook" >}}
 
-### 測定方法
+### 測定方法 {#methodology}
 
 単語数とページ数は、シンプルな 2 ステップのプロセスで算出します。
 
@@ -65,15 +65,15 @@ GitLab のハンドブックは広範囲にわたり、それを常に最新の�
 
 注記: 以前のバージョンのハンドブックに遡る必要がある場合は、戻りたい日の翌日を指定して ``git checkout `git rev-list -n 1 --first-parent --before="2021-07-02 00:00" master` `` を使ってください。
 
-## 統計を見る
+## 統計を見る {#view-statistics}
 
 このページでは、ハンドブックのトレンドを確認したり、あまり知られていない人気ページを発見したりできます。
 
-GitLab はハンドブックの利用状況の追跡に [Snowplow](/handbook/enterprise-data/platform/snowplow/) を使用しており、情報は [Tableau](https://10az.online.tableau.com/#/site/gitlab/views/PDGitlabHandbookPageTraffic/GitLabHandbookTraffic) で確認できます。
+GitLab はハンドブックの利用状況の追跡に [Snowplow](/handbook/enterprise-data/platform/snowplow/)を使用しており、情報は [Tableau](https://10az.online.tableau.com/#/site/gitlab/views/PDGitlabHandbookPageTraffic/GitLabHandbookTraffic)で確認できます。
 
-## ハンドブックについてのさらなる情報
+## ハンドブックについてのさらなる情報 {#more-about-the-handbook}
 
 このページでハンドブックに関する *一部* の情報を集めていますが、他にもさらに情報があります。
 
 - [ハンドブックの使い方](/handbook/about/handbook-usage/)
-- [ハンドブック編集例](/handbook/about/editing-handbook/practical-handbook-edits/)
+- [ハンドブックでよく行う編集作業](/handbook/about/editing-handbook/#common-handbook-tasks)
