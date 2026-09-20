@@ -3,32 +3,18 @@ title: SME オペレーション - コラボレーションプロジェクト、
 
 description: SME プログラムオペレーションに必要な SME コラボレーションプロジェクト、Google Groups、Slack チャンネルを説明します
 upstream_path: /handbook/solutions-architects/sa-practices/subject-matter-experts/sme-operations/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:25:33+09:00"
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-16T23:38:14-04:00"
+translated_at: "2026-09-20T03:15:52+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
-## StackOverflow（TBD）
+## SME Google Groups {#sme-google-groups}
 
-優先されるチャンネルは、#cs-questions 内の [StackOverFlow for Teams](/handbook/solutions-architects/tools-and-resources/#stack-overflow-for-teams) です。
+各 SA Area Lead は、カレンダー用に SA および CS SME Google Groups を設定してください。SA Area Lead が OOO の場合に備え、両方の SA Program Lead もオーナーにしてください
 
-* SME のリスト（StackOverFlow にもある）と SME アソシエイトを維持する
-
-SME として指定された人物が、Stack Overflow にそのように記載されていることを確認してください。これにより、それらの関連トピックでタグ付けされた質問が適切な人々にルーティングされます。
-
-定期的な厳格な作業の一環として、SME は Slack（特に #cs-questions）と Stack Overflow の質問をレビューし、新しい変更/機能がリリースされる際に回答が支持され関連性があることを確認するべきです。
-
-Stack Overflow を、これらの特定の領域に関する FAQ や記事にも使用できます。
-
-TODO：StackOverFlow に SME を追加する正確なプロセスについて詳述する必要があります
-
-## SME Google Groups
-
-各 SA 領域リードは、カレンダー用に SA および CS SME Google Groups をセットアップするべきです。SA 領域リードが OOO の場合のバックアップとして、SA プログラムリードのオーナーも両方含めてください
-
-[SME](https://gitlab.com/gitlab-com/customer-success/subject-matter-experts/cs-subject-matter-experts/-/tree/main#who-are-the-current-smes-and-what-areas-are-they-focused-on) のリストを使用してグループを形成します
+[SME](https://gitlab.com/gitlab-com/customer-success/subject-matter-experts/cs-subject-matter-experts/-/tree/main#who-are-the-current-smes-and-what-areas-are-they-focused-on)のリストを使用してグループを形成します
 
 | SME 領域                | SME グループ                                                    |
 |-------------------------|--------------------------------------------------------------|
@@ -51,17 +37,17 @@ TODO：StackOverFlow に SME を追加する正確なプロセスについて詳
 
 ## **SME Slack チャンネル** {#sme-slack}
 
-サブジェクトマターエキスパート（SME）と現場チーム間の効果的なコミュニケーションと協働を促進するために、以下の Slack チャンネル構造が推奨されます：
+Subject Matter Expert（SME）と現場チーム間の効果的なコミュニケーションと協働を促進するために、以下の Slack チャンネル構造が推奨されます：
 
-### SME プログラムリーダーシップチャンネル
+### SME プログラムリーダーシップチャンネル {#sme-program-leadership-channel}
 
-目的：SME プログラムに関する変更や決定について SME 領域リーダー間の非同期の調整。
+目的：SME プログラムに関する変更や決定について SME Area Leader 間の非同期の調整。
 
 | SME 領域                       |  Slack チャンネル        |
 |--------------------------------|------------------------|
 | SME プログラムリーダーシップチャンネル |  #sme-program-leaders  |
 
-### すべての領域のすべての SME のチャンネル
+### すべての領域のすべての SME のチャンネル {#channel-for-all-smes-in-all-areas}
 
 目的：これは、すべての SME 関連の議論とアナウンスのためのメインチャンネルです。以下の中央ハブとして機能します：
 
@@ -76,7 +62,7 @@ TODO：StackOverFlow に SME を追加する正確なプロセスについて詳
 
 ### SME 領域内部 Slack チャンネル {#sme-internal}
 
-目的：これらの SME Pod チャンネルは主に SME プログラムリード、SME 領域リード、SME、SME アソシエイト向けです。以下に使用されます：
+目的：これらの SME Pod チャンネルは主に SME Program Lead、SME Area Lead、SME、SME Associate 向けです。以下に使用されます：
 
 * 非同期ミーティング
 * アーキテクチャの課題に関する議論
@@ -95,10 +81,10 @@ TODO：StackOverFlow に SME を追加する正確なプロセスについて詳
 
 ### SME 公開チャンネル {#sme-channels}
 
-これらのチャンネルは、すべての SME、プロダクトマネージャー（PM）、すべての現場メンバーに開放されています。これらは以下のために機能します：
+これらのチャンネルは、すべての SME、Product Manager（PM）、すべての現場メンバーに開放されています。これらは以下のために機能します：
 
 * GitLab 機能の顧客評価をサポートするチームメンバーのための場所
-* 特定の機会のための SME リクエストの提出
+* 特定の商談のための SME リクエストの提出
 * 顧客エンゲージメントへの SME 関与の調整
 * 特定のサブジェクト事項に関するプロダクトの質問
 
@@ -120,9 +106,9 @@ TODO：StackOverFlow に SME を追加する正確なプロセスについて詳
 | テレコミュニケーション   | #sme-telecommunications |
 | ヘルスケア              | #sme-healthcare         |
 
-## SME コラボレーションプロジェクト
+## SME コラボレーションプロジェクト {#sme-collaboration-projects}
 
-各 SME 領域リードは SME コラボレーションプロジェクトをセットアップするべきです（[AppSec の例](https://gitlab.com/gitlab-com/customer-success/sa-sme-team-appsec-and-compliance) を参照）
+各 SME Area Lead は SME コラボレーションプロジェクトを設定してください（[AppSec の例を参照）](https://gitlab.com/gitlab-com/customer-success/sa-sme-team-appsec-and-compliance)
 
 | SME 領域                    | コラボレーションプロジェクト   |
 |-----------------------------|-------------------------|
@@ -145,10 +131,10 @@ TODO：StackOverFlow に SME を追加する正確なプロセスについて詳
 SME プログラムの影響と成功を効果的に測定するために、以下のメトリックを追跡します：
 
 1. テクニカル勝率：
-   * メトリック：SA Activity type SA Assistance - Subject Matter を使用した SME 関与のある機会での勝利の割合
-   * 計算：(SME エンゲージメントのある勝利した機会の数 / SME エンゲージメントのある機会の総数) * 100
+   * メトリック：SA Activity type SA Assistance - Subject Matter を使用した SME が関与した商談の受注率
+   * 計算：(SME が関与した受注商談数 / SME が関与した商談総数) * 100
    * ゴール：12 か月以内にベースラインと比較して勝率を 10% 増加させる
-2. 知識転送の有効性：
+2. 知識共有の有効性：
    * メトリック：SME 主導のトレーニングセッションの数、作成および共有された知識ベース記事、トレーニングセッションのアンケート結果
    * 計算：実施されたトレーニングセッション、SME によって発行された記事、セッションアンケート結果の平均評価の合計
    * ゴール：四半期あたり最低 4 回のトレーニングセッションと 10 件の知識ベース記事
@@ -164,7 +150,7 @@ SME プログラムの影響と成功を効果的に測定するために、以�
 
 これらのメトリックを継続的に追跡および分析することで、SME プログラムの継続的な改善を確保し、組織への価値を示すことができます。
 
-## 新しい SME 専門領域プロセス
+## 新しい SME 専門領域プロセス {#new-sme-area-of-expertise-process}
 
 TBD - SME 専門領域を確立するかどうかを決定するプロセスを定義します。
 
@@ -173,29 +159,29 @@ TBD - SME 専門領域を確立するかどうかを決定するプロセスを�
 | <br><br> | SME 関心領域 | 正式 SME 領域 |
 |---|---|---|
 | <br><br> | 1. CICD/Runners<br>2. Metrics & Observability<br>3. Embedded Systems | 1. AI<br>2. App Security<br>3. Dedicated<br>4. Plan |
-| リーダーシップ構造 | 公式の SME 領域リーダーや SME はいない。<br>SME アソシエイトの関心ある人々のプールがある可能性がある。<br>1 人の人物がプログラムを推進している | [x] SME 領域リード<br>[x] SME<br>[x] SME アソシエイト |
-| オペレーション | [ ] SA および CS SME の正式リスト<br>[x] SME アソシエイトまたは関心ある人々のリスト<br>[ ] SME Google Groups<br>[x] Slack チャンネル - 一般<br>[ ] Slack チャンネル - SME のリクエスト<br>[ ] コラボレーションプロジェクト<br>[ ] StackOverFlow | [x] SA および CS SME の正式リスト<br>[x] SME アソシエイトのリスト<br>[x] SME Google Groups<br>[x] Slack チャンネル - 一般<br>[x] Slack チャンネル - SME のリクエスト<br>[x] コラボレーションプロジェクト<br>[x] StackOverFlow |
-| ケイデンス | [ ] ARR Driver<br>[ ] SME 領域リードミーティング<br>[x] SME 領域 Pod ケイデンス<br>[ ] PM/SME 領域ケイデンス<br>[x] PM ロードマップ<br>[x] Technical Skills Exchange<br>ミーティングはトレーニング、非同期、オフィスアワーなどの形式が可能<br> | [x] ARR Driver<br>[x] SME 領域リードミーティング<br>[x] SME 領域 Pod ケイデンス<br>[x] PM/SME 領域ケイデンス<br>[x] PM ロードマップ<br>[x] Technical Skills Exchange |
+| リーダーシップ構造 | 公式の SME Area Leader や SME はいない。<br>SME Associate の関心ある人々のプールがある可能性がある。<br>1 人の人物がプログラムを推進している | [x] SME Area Lead<br>[x] SME<br>[x] SME Associate |
+| オペレーション | [ ] SA および CS SME の正式リスト<br>[x] SME Associate または関心ある人々のリスト<br>[ ] SME Google Groups<br>[x] Slack チャンネル - 一般<br>[ ] Slack チャンネル - SME のリクエスト<br>[ ] コラボレーションプロジェクト<br>[ ] StackOverFlow | [x] SA および CS SME の正式リスト<br>[x] SME Associate のリスト<br>[x] SME Google Groups<br>[x] Slack チャンネル - 一般<br>[x] Slack チャンネル - SME のリクエスト<br>[x] コラボレーションプロジェクト<br>[x] StackOverFlow |
+| ケイデンス | [ ] ARR Driver<br>[ ] SME Area Lead ミーティング<br>[x] SME 領域 Pod ケイデンス<br>[ ] PM/SME 領域ケイデンス<br>[x] PM ロードマップ<br>[x] Technical Skills Exchange<br>ミーティングはトレーニング、非同期、オフィスアワーなどの形式が可能<br> | [x] ARR Driver<br>[x] SME Area Lead ミーティング<br>[x] SME 領域 Pod ケイデンス<br>[x] PM/SME 領域ケイデンス<br>[x] PM ロードマップ<br>[x] Technical Skills Exchange |
 | SME のリクエストプロセス | なし | あり |
 | 顧客フィードバックメカニズム | なし | あり（Issue ボードなどあり） |
 | PM とのエンゲージメント | 一部 | あり |
 
 SME 関心領域が正式 SME プログラムになるとき、これらは設定を完了するために必要なタスクです：
 
-* SME 領域リードと SME の選定
+* SME Area Lead と SME の選定
 * 新しい SME 領域を誰が決定するか
 * SA と CS コミュニティへのロールアウト
 * PM の登録
-* SA SME 参加者のリストを維持 - [SME](https://gitlab.com/gitlab-com/customer-success/subject-matter-experts/cs-subject-matter-experts/-/tree/main#who-are-the-current-smes-and-what-areas-are-they-focused-on) のリストを確認
-* 各領域のプールとして潜在的な SME（SME アソシエイト）のリストを維持
+* SA SME 参加者のリストを維持 - [SME](https://gitlab.com/gitlab-com/customer-success/subject-matter-experts/cs-subject-matter-experts/-/tree/main#who-are-the-current-smes-and-what-areas-are-they-focused-on)のリストを確認
+* 各領域のプールとして潜在的な SME（SME Associate）のリストを維持
 * カレンダー目的のために必要な SME google グループを作成
-   1. IT に [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を開いて Google Group を作成してもらう。
-   2. 他の SME 領域と同じ命名規則を使用し、DRI をグループオーナーとグループマネージャーとして提供する。例として、この [Issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/34007) を複製できます。
+   1. IT に [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を開いて Google Group を作成してもらう。
+   2. 他の SME 領域と同じ命名規則を使用し、DRI を Group Owner と Group Manager として指定する。例として、この [Issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/34007)を複製できます。
    3. IT によって Google Group が作成されたら、グループオーナー/マネージャーは Google Groups ページに移動し、SME をグループメンバーとして追加できる。
 * SME に質問に答えてもらうように Stack OverFlow をセットアップ。
 * SME コラボレーションプロジェクトをセットアップ
-   1. [SME Subgroup](https://gitlab.com/gitlab-com/customer-success/subject-matter-experts) に移動
-   2. **新しいプロジェクト** をクリック
+   1. [SME Subgroup](https://gitlab.com/gitlab-com/customer-success/subject-matter-experts)に移動
+   2. **New Project** をクリック
    3. サブグループの他のプロジェクトと同じ命名法を使用してプロジェクトを作成
 * 上記で概説された命名規則を使用して、現場用の公開 SME Slack チャンネルと SME Pod 用のプライベート内部チャンネルの両方をセットアップ（例 *#sme-(area)* および *#sme-(area)-internal*）
 * SME オペレーションに関するハンドブックを更新

@@ -28,7 +28,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 Claude.ai は様々な質問やトピックに回答できます。創造的に、好奇心を持って探求し、最適なチャットプロンプトを反復してみましょう。[GitLab Duo Chat](gitlab-duo.md) も [Anthropic Claude を LLM の 1 つとして利用している](https://docs.gitlab.com/ee/user/gitlab_duo_chat/) ため、似たチャットプロンプトをテストして再利用できます。
 
-### アプリケーションと CLI
+### アプリケーションと CLI {#applications-and-cli}
 
 1. macOS で Claude アプリケーションを使うには、[Claude for Desktop](https://claude.ai/download) をダウンロードしてください。
 1. Anthropic API アクセス

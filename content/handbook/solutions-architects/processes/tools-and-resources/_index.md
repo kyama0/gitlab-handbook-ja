@@ -1,12 +1,11 @@
 ---
 title: ツールとリソース
 description: "Solutions Architects が利用するツール、プラットフォーム、リソースのリファレンスインデックス"
-model: claude-opus-4-7
-upstream_path: /handbook/solutions-architects/tools-and-resources/
+upstream_path: /handbook/solutions-architects/processes/tools-and-resources/
 upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
 lastmod: "2026-09-16T23:38:14-04:00"
-translated_at: "2026-09-20T03:09:30+00:00"
-translator: claude
+translated_at: "2026-09-20T03:19:50+00:00"
+translator: codex
 stale: false
 ---
 
@@ -86,7 +85,7 @@ Solutions Architects は、デモ、プレゼンテーション、Q&A のため�
 - [HighSpot](https://gitlab.highspot.com/) (フィールドチーム向け)
 - [Solution Pages](https://about.gitlab.com/solutions/) (Web ユーザー向け)
 
-### O'Reilly ラーニングプラットフォーム {#oreilly-learning-platform}
+### 学習プラットフォーム {#learning-platform}
 
 詳細は [カスタマーサクセス エデュケーション＆イネーブルメントページ](/handbook/customer-success/education-enablement/)で確認できます。
 

@@ -1,10 +1,10 @@
 ---
 title: 価値実証 (POV)
 description: 価値実証 (POV)
-upstream_path: "/handbook/solutions-architects/playbooks/pov/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-lastmod: "2026-09-10T23:51:35-04:00"
-translated_at: "2026-09-11T13:07:53+00:00"
+upstream_path: /handbook/solutions-architects/playbooks/pov/
+upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
+lastmod: "2026-09-16T03:07:11Z"
+translated_at: "2026-09-20T03:26:30+00:00"
 translator: claude
 stale: false
 ---
@@ -148,10 +148,11 @@ Professional Services（PS）トライアルは、自主的な評価ではなく
 顧客からの新しいリクエストまたは重要な問題ごとに、次を実施します。
 
 * 該当する顧客リクエストテンプレートに準拠した Issue を作成し、顧客の背景、ユースケース、期待する動作、実際の動作、ビジネス面または技術面の影響、エビデンス、優先度、顧客向けのコメントを含めます。
-* POV レポートに Issue のリンクと現在のステータスを記録します。
+* POV 評価計画または顧客コラボレーションプロジェクトで維持している POV レポートに、Issue のリンクと現在のステータスを記録します。
 * 評価文書またはコラボレーションプロジェクトに Issue と関連するフィードバックを記録します。
 * 技術的な結果への影響が分かるように、Issue を関連するユースケースと成功基準に紐付けます。
 * 未解決の Issue、責任者、次のアクションを最終報告と移行計画に引き継ぎます。
+* POV オブジェクトの [General Notes](#general-notes)を必ず更新してください。
 
 ### 4.2 正式な記録システムの最低限のフィールド {#42-minimum-system-of-record-fields}
 
@@ -174,13 +175,13 @@ Professional Services（PS）トライアルは、自主的な評価ではなく
 
 従量制トライアルでは、使用量とトライアルの状況をまとめて確認できるように、サブスクリプション識別子とクレジット申請を関連付けます。
 
-### 4.3 POV の日々の進め方
+### 4.3 POV の日々の進め方 {#43-day-in-the-life-of-a-pov}
 
 このセクションでは、実際に作業する人の視点から POV のライフサイクルを示します。AE、SA、SA Manager 向けに、誰が行動するか、望ましい状態とは何か、POV が次の段階に進む前に何を満たす必要があるかを示す運用上の見取り図です。
 
 以下の役割別の進行サイクルは 30 日間の評価を想定していますが、責任は Simple、Extended、Enterprise、Commercial/Lite、パートナー主導、PS 主導、パイロット、DAP の取り組みに共通します。詳細なテンプレートとタイミングの例は、[DAP AE チェックリスト](https://docs.google.com/presentation/d/1Xw49Kdz8xihfoMQ5Mlq-h5ig0IM0jrOFtElhT_IlRdc)と [POV 評価計画チェックリスト](https://docs.google.com/document/d/1XzttRqG8r7fQmQv4ZRbe6vv6hO_8VWQLC7CgDnZQNp8)を使用してください。
 
-#### 段階別・役割別の運用
+#### 段階別・役割別の運用 {#role-by-stage-operating-view}
 
 | 段階 | AE / 営業担当者 | SA | SA Manager | 段階の終了条件 / ベストプラクティス |
 | :---- | :---- | :---- | :---- | :---- |
@@ -193,9 +194,9 @@ Professional Services（PS）トライアルは、自主的な評価ではなく
 | **7\. 測定** | 評価が顧客のビジネス上の意思決定に引き続き結び付いていることを確認します。経営幹部の購買責任者が進捗を把握し、Opportunity の商業上の次のステップが最新であることを検証します。 | エビデンスを基準値と目標に照らして比較します。ユースケースの完了、技術指標、使用量、利用定着、最終判断に向けた準備を追跡します。およそ 15 日目に中間確認とアンケートを行います。 | エビデンスが十分か、POV が技術的な結果に向けて順調か、追加支援や承認を伴うスコープ変更が必要かをレビューします。 | 成功基準に対する進捗を議論するのに十分なエビデンスがあり、中間時点のフィードバックとリスクが見えています。 |
 | **8\. フィードバック** | 顧客と経営幹部の購買責任者からフィードバックを得ます。何が機能しているか、何が行き詰まっているか、判断のために何に対応すべきかを尋ねます。製品、サポート、商業面、経営幹部への要望をエスカレーションします。 | 中間・最終アンケートと継続的なフィードバック収集を行います。顧客リクエストテンプレートを使って Issue を作成するか、既存の Issue に協力します。バグ、機能強化、Product Management へのリクエスト、Engineering の対応、Customer Support へのリクエストを、POV レポート、評価計画、コラボレーションプロジェクト、Issue 記録に残します。 | フィードバックが行動につながること、Issue に責任者と対応経路があること、重要な不足が見通しと最終判断に反映されることを確認します。エビデンスに基づき、継続、停滞、延長、終了を判断します。 | 対応する時間が残っているうちにフィードバックを収集し、すべての重要な Issue がユースケースまたは成功基準に関連付けられ、責任者がいます。 |
 | **9\. 報告** | ビジネス価値、顧客への影響、商業上の推奨事項、次のステップを経営幹部の購買責任者と意思決定者に提示します。継続、拡大、改善、中止のどれを求めるかを明確にします。 | 技術報告を行います。成功基準、エビデンス、ユースケースの結果、製品の不足、Issue、顧客フィードバックとともに、該当する場合は成功、失敗、結論不明の推奨判断を示します。 | 技術面と商業面の推奨事項がエビデンスに支えられていることを確認します。最終報告と顧客の判断が見通しと Salesforce レコードに反映されていることを確認します。 | 意思決定者への最終報告が行われ、結果と次のステップに合意しているか、未解決であることが明示されています。 |
-| **10\. 記録と移行** | Opportunity の Next Steps フィールドを `<action, owner, and due date>` で更新します。調達、拡大、本格展開、失注処理、移行作業を主導します。 | POV オブジェクト、General Notes、Result、終了理由、POV レポート、評価計画、コラボレーションプロジェクト、Issue リンク、引き継ぎ記録を更新します。オブジェクトを Successful または Unsuccessful で閉じるか、最終判断なく一時停止している場合は Stalled にします。 | Salesforce の記録管理、成果の質、成約への転換、未解決の Issue、学んだことを確認します。停滞・失敗の理由が具体的であり、後続作業に責任者がいることを確認します。 | Salesforce、Opportunity、評価計画、POV レポート、コラボレーションプロジェクト、Issue 記録の内容が一致しています。 |
+| **10\. 記録と移行** | Opportunity の SA Next Steps フィールドを `<action, owner, and due date>` で更新します。調達、拡大、本格展開、失注処理、移行作業を主導します。 | POV オブジェクト、General Notes、Result、終了理由、POV レポート、評価計画、コラボレーションプロジェクト、Issue リンク、引き継ぎ記録を更新します。オブジェクトを Successful または Unsuccessful で閉じるか、最終判断なく一時停止している場合は Stalled にします。 | Salesforce の記録管理、成果の質、成約への転換、未解決の Issue、学んだことを確認します。停滞・失敗の理由が具体的であり、後続作業に責任者がいることを確認します。 | Salesforce、Opportunity、評価計画、POV レポート、コラボレーションプロジェクト、Issue 記録の内容が一致しています。 |
 
-#### 段階 1: 申請 — POV の最初の日
+#### 段階 1: 申請 — POV の最初の日 {#stage-1-request--the-first-day-in-the-life-of-a-pov}
 
 申請段階では、評価が実際のもので、責任者がいて、計画する価値があるかを確認します。アカウントチームは、顧客からの申請を実行開始の承認として扱ってはいけません。
 
@@ -226,20 +227,20 @@ Professional Services（PS）トライアルは、自主的な評価ではなく
 * 将来の日付が入力され、`New` に設定された Salesforce の POV オブジェクト。
 * 正しい Account、Opportunity、責任者、SA、顧客、POV Type、製品 / 取り組み。
 * 初期申請または計画へのリンク。
-* Opportunity の Next Steps フィールドに明記された次のアクション、責任者、期限。
+* Opportunity の SA Next Steps フィールドに明記された次のアクション、責任者、期限。
 
-#### 30 日間の POV 運用サイクル
+#### 30 日間の POV 運用サイクル {#the-30-day-pov-operating-rhythm}
 
 | 時期 | AE / 営業担当者 | SA | SA Manager |
 | :---- | :---- | :---- | :---- |
 | **第 0 週 / T-14 〜 T-2** | ビジネスケース、顧客の参加者、意思決定者、契約に至る道筋を確認し、POV プロセススライドと顧客の了承を調整し、該当する場合は DAP 申請 Issue を提出します。 | 目標とユースケースのスコープを定め、POV 計画、評価計画、コラボレーションプロジェクト、Issue 一覧、POV レポート、設定計画、スモークテストを作成し、キックオフ、定例、アンケート、報告を予定に設定します。 | POV オブジェクトと計画をレビューし、POV と DAP クレジット申請を承認し、権限がある場合は承認後に DAP クレジットを付与します。 |
 | **0 日目** | キックオフでの認識合わせを主導し、経営幹部とのコミュニケーションを確認します。 | キックオフを行い、環境を設定し、アクセスを検証し、スモークテストを完了して、最初のユースケースを開始します。 | 評価の準備が整い、ステータスが `In Progress` に変更されていることを確認します。 |
-| **第 1 〜 2 週** | 経営幹部の購買責任者にメールまたは Slack で週次報告を送り、商業上の阻害要因を除き、Opportunity の Next Steps を最新に保ちます。 | ユースケースを実行し、週 1 回 / 週 2 回の定例を実施し、POV レポートを更新し、Issue を記録して、General Notes を更新します。 | 進捗、顧客の関与、阻害要因、リソース負荷を確認します。 |
+| **第 1 〜 2 週** | 経営幹部の購買責任者にメールまたは Slack で週次報告を送り、商業上の阻害要因を除き、Opportunity の SA Next Steps を最新に保ちます。 | ユースケースを実行し、週 1 回 / 週 2 回の定例を実施し、POV レポートを更新し、Issue を記録して、General Notes を更新します。 | 進捗、顧客の関与、阻害要因、リソース負荷を確認します。 |
 | **15 日目 / 第 2 週** | 顧客のビジネス面と経営幹部のフィードバックを確認します。 | 中間アンケート / 確認を行い、エビデンスと目標を比較し、合意がある場合のみ計画を調整します。 | 評価が引き続き順調か、介入、スコープの修正、エスカレーションが必要かを判断します。 |
 | **第 3 〜 4 週** | 経営幹部の購買責任者が最終判断と商業上の次のステップに備えられるようにします。 | ユースケースを完了し、最終エビデンスを集め、Issue を解決するか対応方針を決め、最終アンケートを行い、報告を準備します。 | エビデンス、成果の質、終了の準備状況をレビューします。 |
 | **30 日目 / 第 4 週** | ビジネス上の推奨事項を提示し、商業上の次のステップを主導します。 | 技術報告を行い、フィードバック、結果、Issue、移行アクションを記録します。 | Salesforce、見通し、POV レポート、Opportunity の記録管理を確認し、終了または文書化された停滞時の対応方針を承認します。 |
 
-#### DAP 固有の注意事項
+#### DAP 固有の注意事項 {#dap-specific-callouts}
 
 DAP では、通常の POV ライフサイクルに使用量とクレジット管理の経路が加わります。
 
@@ -250,16 +251,17 @@ DAP では、通常の POV ライフサイクルに使用量とクレジット�
 5. **顧客が実行できるようになるまで、アカウントチームは DAP の評価期間を開始しません。** 設定、スモークテスト、キックオフ、定例、アンケート、経営幹部への報告、Issue 管理、最終報告を計画する必要があります。
 6. **AE / 営業担当者は、経営幹部の購買責任者に週次で進捗を報告します。** SA は技術的な状況、ユースケースの進捗、Issue、フィードバック、エビデンスを提供します。
 
-#### 情報の種類ごとの記録場所
+#### 情報の種類ごとの記録場所 {#where-each-type-of-information-belongs}
 
 | 情報 | 正式な記録システム / 作業場所 | 目的 |
 | :---- | :---- | :---- |
 | POV の要約、ステータス、日付、責任者、種類、結果、General Notes | Salesforce の POV オブジェクト | 技術面の見通し、管理者による確認、成果の記録管理 |
-| Opportunity の Next Steps | Salesforce の Opportunity | 次の商業上またはアカウントチームのアクションについての `<action, owner, and due date>` |
-| 詳細な週次状況と POV の継続レポート | 評価文書の POV レポートタブ | 実行履歴全体、進捗、顧客の反応、Issue、エビデンス |
-| 詳細なタスク、Issue、作業の追跡 | 顧客コラボレーションプロジェクト / Issue 一覧 | 顧客と GitLab による共同実行と Issue の担当責任 |
+| Opportunity の SA Next Steps | Salesforce の Opportunity | 次の商業上またはアカウントチームのアクションについての `<action, owner, and due date>` |
+| 週次状況の要約 | Salesforce の POV オブジェクト内の General Notes | ステータス（Red、Green、Yellow）、顧客の反応、阻害要因または Issue を週ごとにまとめ、SA Manager が週次の POV 定例や技術面の見通しの確認時に報告できるようにする |
+| 詳細な週次状況と POV の継続レポート | POV 評価計画またはコラボレーションプロジェクト内の POV レポートタブまたはセクション | 実行履歴全体、進捗、顧客の反応、Issue、エビデンス |
+| 詳細なタスク、Issue、作業の追跡 | POV 評価計画または顧客コラボレーションプロジェクト / Issue 一覧 | 顧客と GitLab による共同実行と Issue の担当責任 |
 | 成功基準と最終結果 | POV 計画 / 評価計画 | 合意した内容、実証した内容、未解決の内容 |
-| 製品のバグ、機能強化、PM、Engineering、Support へのリクエスト | POV レポートとユースケースへのリンクを持つ顧客リクエスト Issue | 部門横断の対応とトレーサビリティ |
+| 製品のバグ、機能強化、PM、Engineering、Support へのリクエスト | POV 評価計画または顧客コラボレーションプロジェクト内の POV レポートと、ユースケースへのリンクを持つ顧客リクエスト Issue | 部門横断の対応とトレーサビリティ |
 | DAP クレジット申請と付与のエビデンス | DAP 申請 Issue と Salesforce の POV オブジェクト、評価計画 | 承認、クレジットのガバナンス、使用量、監査証跡 |
 
 ベストプラクティスは、Salesforce を見通しの確認に十分な簡潔さに保ちつつ、評価計画では完全な POV の継続レポートを維持することです。SA Manager は General Notes から現在の状況を把握でき、見通しについて詳細が必要な場合は POV レポートを参照できるようにしてください。
@@ -345,7 +347,7 @@ SA が関与するすべての Self-Managed、Cloud、Dedicated、従量制ト�
 
 > **DAP の注記:** DAP の申請、クレジット、準備状況、実行に関する要件は、[Duo Agent Platform の POV とトライアルのハンドブック](/handbook/solutions-architects/playbooks/pov/ai.md)で管理しています。このセクションでは、DAP と、SA が関与するほかのすべての POV に必要な Salesforce の記録管理を定義します。
 
-### 7.1 POV が依頼されたとき: 直ちにオブジェクトを作成する
+### 7.1 POV が依頼されたとき: 直ちにオブジェクトを作成する {#71-when-a-pov-is-requested-create-the-object-immediately}
 
 顧客が POV を依頼した場合、技術評価に合意した場合、またはアカウントチームが SA 支援付きトライアルを確約した場合は、次を行います。
 
@@ -359,7 +361,7 @@ SA が関与するすべての Self-Managed、Cloud、Dedicated、従量制ト�
 
 将来の Start Date は予定されるキックオフを示すものであり、実行開始の許可ではありません。評価期間は、チームの準備が整い、顧客が計画に合意し、必要な承認が完了した後にのみ開始します。
 
-### 7.2 Salesforce の POV オブジェクトのフィールド
+### 7.2 Salesforce の POV オブジェクトのフィールド {#72-salesforce-pov-object-fields}
 
 申請時に必須フィールドを入力し、計画が具体化するにつれて補足フィールドを追加または更新します。
 
@@ -379,7 +381,6 @@ SA が関与するすべての Self-Managed、Cloud、Dedicated、従量制ト�
 | Success Criteria | マネージャーの承認前 | 顧客固有の POV 計画または評価文書にリンクします。計画には測定可能な目標、ユースケース、エビデンス、意思決定基準を含める必要があります。 |
 | POV Milestone in Collaboration Project | キックオフ前 | 顧客コラボレーションプロジェクトまたは Issue にリンクします。プロジェクトがまだなければ、作成されるまで評価計画にリンクします。 |
 | SA Manager Leader Approved | キックオフ前 | マネージャーが POV 計画、準備状況、商談、実行モードをレビューした後、SA Manager の承認を得ます。 |
-| Next Steps（Opportunity） | 申請時および全期間 | Opportunity の Next Steps フィールドを `<action, owner, and due date>` で更新します。これは POV オブジェクトではなく Opportunity で管理します。 |
 | General Notes | 毎週およびマイルストーン時 | Week \#、Status、Progress、Customer Sentiment、Main Blocker / Issue、Decision / Readout を使い、見通しを把握するための週次要約を維持します。最新の週を先頭に置きます。 |
 | Status | 全期間 | 以下のステータスのガイダンスに従って、`New`、`In Progress`、`Stalled`、`Closed` を使用します。 |
 | Result | 終了時 | POV オブジェクトを閉じるときにのみ、`Successful` または `Unsuccessful` を選択します。 |
@@ -387,7 +388,7 @@ SA が関与するすべての Self-Managed、Cloud、Dedicated、従量制ト�
 
 個別の **SA が検証した技術評価の開始 / 終了日フィールドは廃止されています**。POV の追跡を Salesforce の POV オブジェクトに集約します。
 
-### 7.3 SA Manager の承認ワークフロー
+### 7.3 SA Manager の承認ワークフロー {#73-sa-manager-approval-workflow}
 
 まず AE / 営業担当者または SA が POV オブジェクトを作成します。SA Manager はオブジェクト、POV 計画、商談の背景をレビューした後、評価を承認します。
 
@@ -406,7 +407,7 @@ SA が関与するすべての Self-Managed、Cloud、Dedicated、従量制ト�
 
 承認後、**SA Manager Leader Approved** を Yes に設定し、条件や例外を General Notes に記録します。承認待ちの間は、POV を開始したりトライアルのリソースを提供したりしないでください。
 
-### 7.4 POV を In Progress にする
+### 7.4 POV を In Progress にする {#74-marking-a-pov-in-progress}
 
 顧客と GitLab が合意した評価活動を開始した **キックオフ時に、POV オブジェクトを `New` から `In Progress` に変更します**。
 
@@ -420,11 +421,15 @@ SA が関与するすべての Self-Managed、Cloud、Dedicated、従量制ト�
 
 オブジェクトを作成した、ディスカバリーの通話を行った、汎用デモを実施したというだけで、POV を In Progress にしないでください。`In Progress` は、合意した計画に沿って評価を実際に実行していることを意味します。
 
-### 7.5 POV の進捗に応じて General Notes を更新する
+### 7.5 POV の進捗に応じて General Notes を更新する {#general-notes}
 
-General Notes は、SA Manager が技術面の見通しを確認するために使用する、Salesforce 上の簡潔な管理用要約です。詳細な POV レポート、評価計画、コラボレーションプロジェクト、Issue ボード、会議メモの代わりではありません。
+General Notes は、SA Manager が POV の技術面の見通しを確認するために使用する、Salesforce 上の簡潔な管理用要約です。SA Next Steps、詳細な POV レポート、評価計画、コラボレーションプロジェクト、Issue ボード、会議メモの代わりではありません。
+
+商談の SA Next Steps フィールドには、POV の活動にかかわらず、商談全体の次のステップを記録します。SA Next Steps には `<action, owner, and due date>` を記録してください。これは POV オブジェクトではなく Opportunity で管理します。
 
 General Notes は少なくとも毎週、およびすべての重要なマイルストーンで更新します。見出しには日付ではなく **Week \#** を使用します。標準的な 30 日間の評価では `Week 1`、`Week 2`、`Week 3`、`Week 4` を使い、最新の週を先頭に置き、`Week 4` を最後の評価週とします。
+
+マネージャー向けに、主な阻害要因または Issue を 1 つ General Notes に記録します。すべての詳細、作成したすべての Issue、顧客からのすべてのフィードバックは、評価計画またはコラボレーションプロジェクトで維持している詳細な POV レポートタブに記録してください。
 
 推奨形式:
 
@@ -437,24 +442,24 @@ Main Blocker / Issue: <primary blocker or issue affecting progress, owner, and e
 Decision / Readout: <current decision, readout date, or next commercial/technical step>
 
 Week 3
-Status: <prior-week status>
+Status: Green / Yellow / Red
 Progress: <prior-week progress>
-Customer Sentiment: <prior-week sentiment>
-Main Blocker / Issue: <prior-week blocker or issue>
+Customer Sentiment: <positive / mixed / at risk, with evidence>
+Main Blocker / Issue: <primary blocker or issue affecting progress, owner, and escalation>
 Decision / Readout: <prior-week decision or next step>
 
 Week 2
-Status: <prior-week status>
+Status: Green / Yellow / Red
 Progress: <prior-week progress>
-Customer Sentiment: <prior-week sentiment>
-Main Blocker / Issue: <prior-week blocker or issue>
+Customer Sentiment: <positive / mixed / at risk, with evidence>
+Main Blocker / Issue: <primary blocker or issue affecting progress, owner, and escalation>
 Decision / Readout: <prior-week decision or next step>
 
 Week 1
-Status: <initial-week status>
+Status: Green / Yellow / Red
 Progress: <initial progress against the success criteria>
-Customer Sentiment: <initial sentiment>
-Main Blocker / Issue: <initial blocker or issue>
+Customer Sentiment: <positive / mixed / at risk, with evidence>
+Main Blocker / Issue: <primary blocker or issue affecting progress, owner, and escalation>
 Decision / Readout: <initial next step>
 ```
 
@@ -472,7 +477,7 @@ SA Manager は技術面の見通しに General Notes を使用してください
 
 詳細な Issue 履歴、会議の文字起こし、長い状況説明を General Notes に貼り付けないでください。そこには管理上の要点を要約し、元の詳細は POV レポート、評価計画、コラボレーションプロジェクト、Issue 記録に保存します。
 
-### 7.6 POV オブジェクトを閉じる
+### 7.6 POV オブジェクトを閉じる {#76-closing-the-pov-object}
 
 評価が合意した終了日 / 報告に達した場合、顧客が判断した場合、またはアカウントチームが評価を再開しないと判断した場合は、POV オブジェクトを閉じます。
 
@@ -488,7 +493,7 @@ SA Manager は技術面の見通しに General Notes を使用してください
 8. 理由、エビデンス、未解決の不足、次の責任者 / アクションを含む簡潔な終了メモを追加します。
 9. 関連する商談、コラボレーションプロジェクト、評価計画、トライアル / クレジット記録を更新します。
 
-#### 成功
+#### 成功 {#successful}
 
 合意した技術的成功基準を満たしたことを顧客と GitLab が十分なエビデンスで確認できる場合、または顧客が成果を明示的に受け入れ、合意した商業面、本格展開、導入の次のステップへ進んでいる場合は、`Successful` を使用します。
 
@@ -500,7 +505,7 @@ SA Manager は技術面の見通しに General Notes を使用してください
 * 商業面、本格展開、調達、移行の次のステップ。
 * 明記した結果を妨げない残存の Issue。
 
-#### 失敗
+#### 失敗 {#unsuccessful}
 
 POV が合意した成功基準を満たさなかった場合、顧客が別の道を選んだ場合、製品またはアーキテクチャが適合しなかった場合、顧客が実行できなかった場合、または信頼できる今後の道筋がないまま評価が終了した場合は、`Unsuccessful` を使用します。
 
@@ -516,7 +521,7 @@ POV が合意した成功基準を満たさなかった場合、顧客が別の�
 
 理由なく「Unsuccessful」を使用しないでください。評価がまだ継続中であるものの阻害されている場合は、代わりに `Stalled` を使用します。
 
-### 7.7 POV を Stalled にする
+### 7.7 POV を Stalled にする {#77-marking-a-pov-stalled}
 
 重要な阻害要因、顧客による一時停止、前提条件の不足、リソースの問題、意思決定の遅れによって POV が実際に進行していない一方、チームが最終的な終了判断をまだ行っていない場合は、**`Stalled`** を使用します。
 
@@ -531,7 +536,7 @@ POV を Stalled にする際は、次を行います。
 
 阻害要因が解消したら計画を更新し、再開 / キックオフの確認時点で POV を `In Progress` に戻します。再開しない場合は、「停滞 / 判断なし」またはその他のエビデンスに基づく理由を明記し、`Unsuccessful` として閉じます。
 
-### 7.8 ステータスと記録管理の規則
+### 7.8 ステータスと記録管理の規則 {#78-status-and-hygiene-rules}
 
 | ステータス | 使用する状況 | Salesforce で必要なアクション |
 | :---- | :---- | :---- |
