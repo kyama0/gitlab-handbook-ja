@@ -3,11 +3,11 @@ title: U.S. Government Support チケットへの対応
 category: Handling tickets
 description: "U.S. Government Support チケットへの対応方法を解説するサポートエンジニアリングのワークフロー"
 upstream_path: /handbook/support/workflows/usgovernment_tickets/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T08:02:21+09:00"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T21:05:41+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T16:09:49-04:00"
+lastmod: "2026-09-21T17:30:16Z"
 ---
 
 U.S. Government Support は、Zendesk U.S. Government インスタンスにおける新規チケットの割り当てに、重み付きラウンドロビンワークフローを使用します。
@@ -241,6 +241,13 @@ U.S. Government Support チケットシステム内のチケットについて�
 いかなる GitLab Dedicated チケットでも、問題が GitLab アプリケーションの問題なのか、インフラの問題なのかを判断します。インフラ問題の RFH は CompSecGov の手順に従い、アプリケーション問題の RFH は[通常の手順](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team)に従います。
 
 CompSecGov で RFH を開くには、`Customer Support` グループに移動し、RFH の Issue テンプレートを使って新しい Issue を開きます。
+
+#### 顧客のメンテナンス時間帯を確認する {#finding-a-customers-maintenance-hours}
+
+米国政府の顧客のメンテナンス時間帯は、現在
+[Switchboard PubSec リポジトリ](https://gitlab.com/gitlab-com/gl-infra/us-public-sector/switchboard_pubsec/-/tree/main/customers?ref_type=heads)に記録されています。
+
+テナントが Switchboard に移行すると、この情報はそちらで確認できるようになります。現時点では、この移行の ETA はありません。
 
 #### 緊急対応
 

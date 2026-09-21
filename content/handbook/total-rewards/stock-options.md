@@ -2,11 +2,11 @@
 title: "エクイティ報酬"
 description: "GitLab のエクイティ報酬について詳しく学ぶ"
 upstream_path: /handbook/total-rewards/stock-options/
-upstream_sha: 0b4843d337f9f8173d56982fff942cb2b5a78543
-translated_at: "2026-09-11T13:14:29+00:00"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T21:05:41+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-10T17:36:41-04:00"
+lastmod: "2026-09-21T10:03:09-07:00"
 ---
 
 ## GitLab における所有権について
@@ -78,7 +78,7 @@ ESPP は、GitLab が提供する福利厚生で、チームメンバーが指�
 ### 対象資格要件
 
 1. チームメンバーは、50人以上の人員を持つ GitLab エンティティを通じて雇用されている
-1. チームメンバーは週20時間以上働いている。
+1. チームメンバーは週 20 時間を超えて働いている。
 1. 登録するためには、Offering Period の開始時にアクティブに雇用されている必要がある
 1. 購入できるためには、Purchase Period の最終日にアクティブに雇用されている必要がある
 1. ESPP 対象 GitLab エンティティ
@@ -104,7 +104,7 @@ ESPP は、GitLab が提供する福利厚生で、チームメンバーが指�
 
 - チームメンバーは、Offering Period 中に拠出を0%に減らすことができます。
 - 過去の拠出は、予定された購入日に株式を購入するために使用されます。
-- Offering Period の終了時に、チームメンバーは、リクエスト日の翌日の購入日後に発効する形で、Offering Period から自動的に撤回されます。
+- Offering Period の終了時に、チームメンバーは、リクエスト日より後の購入日の翌日をもって、Offering Period から自動的に脱退します。
 - 将来参加したい場合、チームメンバーは次の登録ウィンドウで新規参加者として再登録し、新しい Offering Period を始める必要があります。
 
 ### 撤回
@@ -116,7 +116,7 @@ ESPP は、GitLab が提供する福利厚生で、チームメンバーが指�
 
 ### 代替 ESPP 非米国
 
-代替 ESPP は、ESPP の対象とならないチームメンバー (主に PEO 諸国) のためのものです。 代替 ESPP のチームメンバーは、ESPP に参加できた場合の予想収益に基づいて RSU を受け取る対象となります。 給与控除や拠出は必要ありません。RSU は、各6ヶ月の購入期間について以下の計算式で計算されたとおり、チームメンバーに自動的に付与されます: 対象資格、登録、計算、価格、ドル価値の詳細は [ESPP Training Deck](https://docs.google.com/presentation/d/1X_IcuK8ORiQg_nsi1km6c9_Ewbv5FD1bdnO06C-snV8/edit#slide=id.gede224808f_0_39) で確認できます
+代替 ESPP プログラムは 2026 年 6 月に終了し、その時点で参加者の E*Trade アカウントに最後の RSU 付与が反映されました。
 
 ### Offering Period とは何か？
 

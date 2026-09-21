@@ -3,11 +3,11 @@ title: "マーケティング"
 description: "GitLab マーケティングハンドブック: Brand Experience、Corporate Communications、Product and Technical Marketing、Growth Marketing"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:18:09+00:00"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T21:05:41+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-09-21T18:51:47Z"
 ---
 
 GitLab は、チームが[信頼を保ちながら、より速くリリース](https://about.gitlab.com/)できるよう支援します。マーケティングは、GitLab のブランドと市場でのナラティブを形作り、顧客やコミュニティとつながり、需要を創出し、社外からの評価を管理することで、この約束を支えます。
@@ -71,7 +71,7 @@ GitLab は、チームが[信頼を保ちながら、より速くリリース](h
 | Co-Create & Community Engineering | [Co-Create & Community Engineering ハンドブック](/handbook/marketing/developer-relations/engineering/) | `#co-create-and-community-engineering` |
 | Corporate Events | [Corporate Events ハンドブック](/handbook/marketing/growth-marketing/corporate-events/) | `#marketing-campaigns` |
 | Digital Agency | [Digital Agency ハンドブック](/handbook/marketing/growth-marketing/digital-agency/) | `#digital-marketing` |
-| Growth Community Programs | [Growth Community Programs ハンドブック](/handbook/marketing/growth-marketing/growth-community-programs/) | `#ask-community-programs` |
+| Growth Community Programs | [Growth Community Programs ハンドブック](/handbook/marketing/growth-marketing/growth-community-programs/) | `#growth-community-programs-mktg` |
 | Lifecycle Marketing | [Lifecycle Marketing ハンドブック](/handbook/marketing/lifecycle-marketing/) | `#lifecycle-marketing` |
 | Marketing Engineering & Ops | [Marketing Engineering & Ops ハンドブック](/handbook/marketing/marketing-operations/)、[Digital Experience ハンドブック](/handbook/marketing/digital-experience/) | `#mktgops`, `#sfdc-users`, `#digital-experience-team`, `#website` |
 | Partner & Industry Marketing | [Partner & Industry Marketing ハンドブック](/handbook/marketing/growth-marketing/partner-and-industry-marketing/) | `#regional-partner-marketing` |

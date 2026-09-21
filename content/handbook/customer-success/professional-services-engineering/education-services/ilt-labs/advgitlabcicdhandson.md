@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ概要"
 description: "このハンズオンガイドでは、GitLab Advanced CI/CD コースのラボ演習について説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-20T03:00:44+00:00"
+upstream_sha: "945c1a5211612e55d2a9e0b08b59ebb80548de60"
+translated_at: "2026-09-21T23:32:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-16T21:11:43+01:00"
+lastmod: "2026-09-21T07:10:28-04:00"
 ---
 
 ## GitLab Advanced CI/CD ラボガイド {#gitlab-advanced-cicd-lab-guides}
@@ -15,10 +15,10 @@ lastmod: "2026-09-16T21:11:43+01:00"
 |-----------|------------|
 | ビルドパイプラインの最適化 | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1) |
 | パイプラインテストの最適化 | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab2) |
-| ベストプラクティスのレビュー | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3) |
-| 複雑なプロセスの設定 | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4) |
-| Review Apps | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5) |
-| デプロイ戦略 | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6) |
+| Review Apps | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3) |
+| デプロイ戦略 | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4) |
+| ベストプラクティスのレビュー | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5) |
+| 複雑なプロセスの設定 | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6) |
 
 ## クイックリンク {#quick-links}
 

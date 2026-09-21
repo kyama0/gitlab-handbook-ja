@@ -2,11 +2,11 @@
 title: Globalization
 description: Globalization チームのビジョンとプロセスについて学びましょう。
 upstream_path: /handbook/marketing/product-and-technical-marketing/globalization/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-translated_at: "2026-09-04T21:00:56+09:00"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T21:05:41+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-21T15:00:02+02:00"
 ---
 
 ## はじめに
@@ -16,21 +16,6 @@ Globalization チームは、Marketing、Sales、Product、Engineering の各 [�
 チームの主要なイニシアチブには、英語以外のブログ公開頻度とパフォーマンスの向上、マーケティングウェブサイトページのローカライズ、docs.gitlab.com のローカライズの実現、用語管理システムの立ち上げ、最先端の生成 AI および機械翻訳ソリューションの展開、サポートコンテンツやトレーニング・認定資料のローカリゼーションなど顧客向けプログラムへの拡大、さらに上記すべてをローカリゼーション技術プラットフォーム・ツールでサポートすることが含まれます。
 
 ローカライズされたプロダクトドキュメント、マーケティングコンテンツ、カスタマーサクセス資料で地域チームを支援する私たちの能力は、GitLab のグローバル市場での成長能力に直接影響します。
-
-## チームメンバー
-
-- [Daniel Sullivan](https://gitlab.com/djsulliv), Director, Globalization & Localization
-- [Oleksandr Pysaryuk](https://gitlab.com/opysaryuk), Senior Manager, Globalization Technology
-- [María José Salmerón Ibanez](https://gitlab.com/mjsibanez), Senior Localization Program Manager
-- [Megumi Uchikawa](https://gitlab.com/muchikawa), Senior Localization Content Manager
-- [Maud Leuenberger](https://gitlab.com/maud-L), Senior Localization Content Manager, French
-- [Hendrik Breuer](https://gitlab.com/hendrikbreuer), Senior Localization Content Manager, German
-- [Rasam Hossain](https://gitlab.com/rasamhossain), Senior Fullstack Engineer
-- [Lauren Barker](https://gitlab.com/laurenbarker), Staff Fullstack Engineer
-- [Emi Kimura](https://gitlab.com/emikimura-ext), English-Japanese Linguist*
-- [Yuko Yamamoto](https://gitlab.com/yyamamoto-ext), Localization Specialist, Japanese*
-
-*臨時のサービスプロバイダー
 
 ## ローカリゼーション技術管理
 
