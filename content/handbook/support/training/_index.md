@@ -2,11 +2,11 @@
 title: サポートの学習＆トレーニング
 description: サポートチームメンバーが利用できる学習パスウェイ
 upstream_path: /handbook/support/training/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T21:05:41+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-17T16:13:02+10:00"
+lastmod: "2026-09-21T09:28:28+02:00"
 ---
 
 ## サポート学習パスウェイ {#support-learning-pathways}
@@ -78,7 +78,7 @@ sequenceDiagram
 
 ## サポートオンボーディングの概要
 
-チームに加わって間もない頃は、すべてが新しく感じられるはずです。心配いりません！GitLab に素早く慣れていただくため、入社初日に PeopleOps からアサインされる全社共通のオンボーディング Issue とは別に、サポートでもオンボーディングプログラムを用意しています。
+チームに加わって間もない頃は、すべてが新しく感じられるはずです。心配いりません！GitLab に素早く慣れていただくため、Day 1 に PeopleOps からアサインされる全社共通のオンボーディング Issue とは別に、サポートでもオンボーディングプログラムを用意しています。
 
 オンボーディングの初期に、[サポートチケットライフサイクル](/handbook/support/workflows/ticket_lifecycle/) を学びます。これは、6 つのフェーズ（ロギング、トリアージ／ルーティング、認可、診断、解決、クローズ）にわたるチケット業務を語るための共通言語です。このフレームワークによって、1 対 1、レビュー、チームディスカッションでチケットについて一貫した会話ができるようになります。
 
@@ -106,6 +106,7 @@ sequenceDiagram
 | [GitLab Support Basics](https://gitlab.com/gitlab-com/support/support-training/-/issues/new?issuable_template=GitLab%20Support%20Basics&%5Bissue%5Dtitle=YOUR%20NAME%20-%20GitLab%20Support%20Basics)       | 1 日      | GitLab サポートの運営方法と最も一般的なワークフローを理解する                                                  |
 | [Zendesk Basics](https://gitlab.com/gitlab-com/support/support-training/-/issues/new?issuable_template=Zendesk%20Basics&%5Bissue%5Dtitle=YOUR%20NAME%20-%20Zendesk%20Basics)                                | 1 日      | Zendesk を活用してチケット管理を行う                                                                          |
 | [Customer Calls](https://gitlab.com/gitlab-com/support/support-training/-/issues/new?issuable_template=customer_calls&%5Bissue%5Dtitle=YOUR%20NAME%20-%20Customer%20Calls)                                  | 6〜12 時間 | 顧客との成功するコールをいつ、どのように準備しリードするかを理解する                                          |
+| [Support での AI の活用](https://gitlab.com/gitlab-com/support/support-training/-/work_items/new?issue[title]=YOUR+NAME+-+Using+AI+in+Support&description_template=Using+AI+in+Support) | 1 日      | GitLab Support で利用できる AI ツールを理解し、どの場面でどのツールを使うべきかを学ぶ                                  |
 | [Documentation](https://gitlab.com/gitlab-com/support/support-training/-/issues/new?issuable_template=Documentation&%5Bissue%5Dtitle=YOUR%20NAME%20-%20Documentation)                                       | 1 日      | ドキュメントとマージリクエストの作成に習熟する                                                          |
 | [Knowledge Base](https://gitlab.com/gitlab-com/support/support-training/-/issues/new?issuable_template=Knowledge%20Base&%5Bissue%5Dtitle=YOUR%20NAME%20-%20Knowledge%20Base)                                | 1〜2 時間 | GitLab Knowledge Base を理解し、ナレッジ記事の作成方法を学ぶ                                       |
 

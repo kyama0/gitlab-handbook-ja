@@ -2,12 +2,13 @@
 title: "Zoominfo"
 description: "ZoomInfo は、ビジネスや専門職のコンタクト情報のデータベースを提供するセールスインテリジェンスソフトウェアです。"
 upstream_path: /handbook/marketing/marketing-operations/zoominfo/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T23:30:42+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-21T08:44:54Z"
 ---
+
 
 ### ZoomInfo について
 
@@ -70,7 +71,7 @@ GitLab 専用の Zoominfo トレーニングセッションにアクセスする
 
 ### Do Not Call と Do Not Email の自動化
 
-適切な条件が設定されている場合、Zoominfo は SFDC のリード/コンタクトに `Do not email` および `Do not call` のラベルを付けることができます。ルールの詳細については、[sales development handbook ページ](/handbook/sales/sales-development/#do-not-call-and-do-not-email-automations)を参照してください。
+適切な条件が設定されている場合、Zoominfo は SFDC のリード/コンタクトに `Do not email` および `Do not call` のラベルを付けることができます。ルールの詳細については、[Sales Development ハンドブックページ](/handbook/sales/sales-development/#do-not-call-and-do-not-email-automations)を参照してください。
 
 ### Zoominfo ライセンスポリシーと手順
 
@@ -96,9 +97,9 @@ Slack の #dataintelligencehelp または #mktgops で Data Intelligence また�
 3. Slack でユーザーに連絡
 4. アクセスが不要になったユーザーを無効化
 5. Marketing と Sales のライセンスの分割を追跡。Sales ライセンスが不足した場合、次のメッセージで Marketing からいくつか借りることができます。
-6. Data Intelligence プロジェクトで、無効化されたユーザーを毎月追跡するための issue を作成。Mktg Tool Audit と Data Intelligence :: Tech Stack のラベルを使用する必要があります。これは、可能な監査のサポートとして機能します。
+6. Data Intelligence プロジェクトで、無効化されたユーザーを毎月追跡するための Issue を作成。Mktg Tool Audit と Data Intelligence :: Tech Stack のラベルを使用する必要があります。これは、可能な監査のサポートとして機能します。
 
-**注:** ライセンスがマーケティングチームから借りられた場合、いつでも取り消すことができます。ユーザーに次のように伝えてください: 「ご挨拶！ 現在、フィールドセールス用の Zoominfo ライセンスがありません。プラットフォームへのアクセスを可能にするため、マーケティングチームから借りた一時的な ZoomInfo ライセンスを割り当てました。利用可能なライセンスが限られているため、マーケティングチームがチームメンバーの一人のためにライセンスを返却する必要がある場合、ライセンスが取り消される可能性があります。そのような場合は、ライセンスが取り消される前に通知し、Sales Operations ライセンスの調達に取り組みます。ご理解ありがとうございます。」
+**注:** ライセンスがマーケティングチームから借りられた場合、いつでも取り消すことができます。ユーザーに次のように伝えてください: 「ご挨拶！ 現在、フィールドセールス用の Zoominfo ライセンスがありません。プラットフォームへのアクセスを可能にするため、マーケティングチームから借りた一時的な ZoomInfo ライセンスを割り当てました。利用可能なライセンスが限られているため、マーケティングチームが、自チームのメンバーに使用させるためにライセンスの返却を必要とする場合、ライセンスが取り消される可能性があります。そのような場合は、ライセンスが取り消される前に通知し、Sales Operations ライセンスの調達に取り組みます。ご理解ありがとうございます。」
 
 ### コントロール
 
@@ -114,7 +115,7 @@ ZoomInfo クレジットは、ZoomInfo プラットフォームから専門職�
 - **アカウント** - ユーザーが SFDC にエクスポートできるアカウントの最大数は 100 に設定されています。
 - **コンタクト** - ユーザーが SFDC にエクスポートできるコンタクトの最大数は、アカウントと一致する必要があり、100 に設定されています。これは、コンタクトが SFDC でアカウントに関連付けられている必要があるためです。コンタクトをエクスポートするとき、Zoominfo は、コンタクトが働いている会社と一致するアカウントが SFDC 内に存在するかどうかを確認します。存在しない場合、ユーザーはコンタクトを関連付ける新しいアカウントを作成できます。コンタクト作成がアカウント以下になるよう強制するのは、同じ数のアカウントを作成できないためにコンタクトのエクスポートが失敗するシナリオがないようにするためです。
 - **リード** - ユーザーが SFDC にエクスポートできるリードの最大数は 1,000 に設定されています。これにより、ユーザーが 1 回のエクスポートで月次割り当てを使い切らないようにします。
-- **バルクリクエスト** キャンペーン用にバルクダウンロードが必要な場合、marketing operations プロジェクト用の[issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new)をオープンしてください。Admin はバルクリストをエクスポートするための無制限のクレジットを持っているか、個々のユーザー向けに一時的なリフトを行うことができます。
+- **バルクリクエスト** キャンペーン用にバルクダウンロードが必要な場合、marketing operations プロジェクト用の[Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new)をオープンしてください。Admin はバルクリストをエクスポートするための無制限のクレジットを持っているか、個々のユーザー向けに一時的なリフトを行うことができます。
 - **不正なリードの報告** - リードが不正であることが判明した場合、ユーザーは `Suggest Contact Update` を送信でき、リサーチチームは通常 1〜2 営業日以内に更新します。リードが更新されると、ユーザーはクレジットを消費せずに手動で追加するか、SFDC にプロスペクトを再プッシュできます (「管理下」の 2 ヶ月間)。
 - **API クレジット** - リード、コンタクト、アカウントは[以下に詳述](/handbook/marketing/marketing-operations/zoominfo/#sfdc-account-enrichment)のとおりエンリッチされており、特定のレコードでフィールドがいくつ更新されるかにかかわらず、webhook が呼び出されるたびに API クレジットが使用されます (リード/コンタクト/アカウントごとに 1)。
 
@@ -128,6 +129,48 @@ ZoomInfo クレジットは、ZoomInfo プラットフォームから専門職�
 
 - Salesforce Native App は、SFDC 内の任意のリード、コンタクト、アカウントで利用可能です。
 - Salesforce Native App では、ユーザーは一度に 25 件しかエクスポートできません。一方、直接ログインして標準の Salesforce ウェブコネクタを使用すると、一度に最大 2,000 件をプッシュできます。バルクプッシュには、通常の ZoomInfo ウェブサイトを使用することをお勧めします。
+
+## ターゲットアカウントリストからコンタクトを一括作成する {#bulk-contact-creation-from-a-target-account-list}
+
+Salesforce ネイティブアプリは一度に 25 件のレコードをエクスポートするため、数百件や数千件のリスト作成には適していません。このプロセスでは、Salesforce からターゲットアカウントリストを取得し、ZoomInfo でアカウントを照合し、適切なコンタクトを特定して、Salesforce の正しい Account に属する Contact としてエクスポートします。
+
+1. Salesforce からターゲットアカウントリストを CSV にエクスポートします。
+1. ZoomInfo の左側のナビゲーションから **Lists and Records > Lists** に移動します。
+1. 右上の **Upload Lists** をクリックします。
+1. リストのアップロード設定を完了します:
+    - **List Type:** Companies: ListMatch
+    - **Input List:** Salesforce の CSV をアップロードします
+    - **List Name and Actions:** リスト名を追加し、CSV の列を ZoomInfo の会社フィールドにマッピングしてから、処理するファイルを送信します
+1. ファイルの処理が完了したら、照合済みの会社リストを **Contact Search** で開きます。
+1. **Advanced Search** で、クイックフィルター **Not in My CRM** と、検索に必要な追加フィルターを設定します。
+1. 検索設定を保存します:
+    - **Save and Subscribe** をクリックします
+    - 検索名を付けて新しい検索として保存します
+1. **Advanced Search** の設定に問題がなければ、右上の **Create Workflow** をクリックします。これにより、現在のリストと Advanced Search の設定からワークフローが作成されます。
+1. ワークフローで、**Step 2: Export to Webhook** を **Discover ZoomInfo Contact** に置き換えます:
+    - 上限は **20** のままにします
+    - ペルソナは **Engineering Decision Makers** のままにします
+    - 必須のコンタクトフィールドは **Business Email**、**Direct Phone**、または **Mobile Phone** のままにします
+1. 最後のアクションを **Export to Salesforce** に設定します:
+    - **Contact** としてエクスポートします
+    - **Update Existing Records** をオンにします
+    - 作成した Contact をエクスポートするユーザーに割り当てます
+1. ワークフローを保存し、右上のトグルでオンにします。
+
+**ワークフローが作成するものと作成しないもの**
+
+このワークフローは、新たにトリガー対象となったコンタクトについてのみ新しいレコードを作成します。単に **Advanced Search** に表示されるコンタクトは、新しいワークフロートリガーの対象にならない限り、自動的には作成されません。コンタクトがすでに存在し、**Advanced Search** に表示されている場合、ワークフローはその人物の新しい Salesforce レコードを作成しません。ただし、該当する場合に一致する既存レコードを更新できるよう、Salesforce へのエクスポートステップでは **Update Existing Records** をオンにしておいてください。
+
+⚠️ **初回の一括転送:** 継続的に実行するワークフローは、初回の読み込みを対象としていません。初回については、[Marketing Ops の Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new)を作成してターゲットアカウントリストを添付し、チームが初回の一括作成を別途支援できるようにしてください。
+
+**遵守事項**
+
+1. 既存の Salesforce Account のみを使用します
+1. このフローでは完全に新しい Account を作成しません
+1. ZoomInfo ユーザーが対応する Salesforce ユーザーにマッピングされていることを確認します
+1. 開始前にアカウントの照合ルールと所有権ルールを確定します
+
+参考: [marketing-operations#11833](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11833)
 
 ## SFDC アカウントエンリッチメント
 

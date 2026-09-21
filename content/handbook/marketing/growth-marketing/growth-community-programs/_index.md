@@ -2,11 +2,11 @@
 title: "Growth Community Programs"
 description: "Growth Community Programs は、関係性を魅力的なストーリーと収益に変え、コミュニティ、戦略的アカウント、アドボカシーを横断する成長の好循環を生み出すことで、将来のお客様を育て、現在のお客様を活性化します。"
 upstream_path: /handbook/marketing/growth-marketing/growth-community-programs/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-translated_at: "2026-09-04T20:51:48+09:00"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T23:30:42+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-01T17:31:31Z"
+lastmod: "2026-09-21T18:53:56Z"
 ---
 
 ## チームを紹介
@@ -18,24 +18,25 @@ lastmod: "2026-09-01T17:31:31Z"
 - Program Manager, SELF - Karen Chi
 - Customer Advocacy - Rachel Lurie
 - Customer Advocacy - Leon Donnelly
-- Sr. Manager, Startup Programs - Mitchell Hanks
-- Program Manager, Startup - Alex Karsten
+- Sr. Manager, Startup Program - Mitchell Hanks
+- Program Manager, Startup Program - Alex Karsten
 
 ## 私たちとの働き方
 
-- **質問** - `#ask-customer-advocacy-and-references` Slack チャンネルで連絡してください。
+- **質問** - `#growth-community-programs-team` Slack チャンネルで連絡してください。
 - **情報とリソース** - [Customer Advocacy Overview deck](https://docs.google.com/presentation/d/1QyqHRQzhNE7WdvYqM6evCbX3zRGM5QGf2WJABx8I0gk/edit#slide=id.p) と [Highspot 内のカスタマーストーリーハブ](https://gitlab.highspot.com/spots/6830d55d25920f42ec43e435) を参照してください。
 - **依頼** - Growth Community Programs チームへの一般的な依頼を作成するには、[こちらで Issue を作成](https://gitlab.com/gitlab-com/marketing/growth-community-programs/-/work_items?sort=created_date&state=opened&first_page_size=100)してください。
 
 ## 公開 Slack チャンネル
 
-- `#ask-customer-advocacy-and-references`
-- `#customer-experience`
-- `#dap-customer-insights-agent`
-- `#ir-customer-references`
-- `#self-community-nominations`
-- `#self-program-team`
-- `#startups-program`
+- `#growth-community-programs-mktg` - Growth Community Programs チームへの質問・ディスカッション
+- `#ask-community-programs` - EDU/OSS プログラムへの質問・ディスカッション
+- `#ask-customer-advocacy-and-references` - Customer Advocacy プログラムへの質問・ディスカッション
+- `#dap-customer-insights-agent` - DAP インサイトに関するエージェントの投稿
+- `#self-community-nominations` - SELF メンバーシップへの質問・ディスカッション
+- `#self-program-team` - SELF プログラムチームへの質問・ディスカッション
+- `#startup-program` - Startup プログラムへの質問・ディスカッション
+- `#co-create-and-community-engineering` - Co-Create プログラムへの質問・ディスカッション
 
 ## 私たちが推進・支援するプログラム
 
@@ -68,7 +69,7 @@ GitLab はスタートアップコミュニティの支援に取り組んでい�
 プログラム、応募資格、申請、見積もり、承認に関する質問は、以下へお問い合わせください。
 
 - DRI：`@akarsten1` と `@mhanks`
-- Slack チャンネル：`#startups-program`
+- Slack チャンネル：`#startup-program`
 
 すでに申請を提出した応募者は、申請に関するサポートについて startups@gitlab.com へお問い合わせください。
 
@@ -203,13 +204,13 @@ GitLab の Growth Community Programs チームは、ケーススタディ、動�
 
 イベントでお客様に登壇いただく、またはイベントを支援していただく依頼の場合は、イベントの 60 日以上前に [Customer Speaker Request](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/product-marketing/-/issues/new?issuable_template=customer-speaker-request) Issue テンプレートを開き、Nicole Smith にアサインしてください。
 
-#### コーポレートイベント
+#### Corporate Events
 
-現時点では、Growth Community Programs は 60 日 SLA に基づきコーポレートイベントのカスタマースピーカーソーシングを支援します。
+現時点では、Growth Community Programs は 60 日 SLA に基づき Corporate Events のカスタマースピーカーソーシングを支援します。
 
-#### リージョナルマーケティング
+#### Regional Marketing
 
-リージョナルマーケティングのイベントスピーカーソーシングは、リージョナルマーケターが直接サポートします。ただし、お客様の体験を保護し、私たちの主要なお客様を最も戦略的な機会に合わせるため、市場でお客様を活用するすべての方法について Growth Community Programs は可視性と能動的な整合を必要とします。
+Regional Marketing のイベントスピーカーソーシングは、Regional Marketers が直接サポートします。ただし、お客様の体験を保護し、私たちの主要なお客様を最も戦略的な機会に合わせるため、市場でお客様を活用するすべての方法について Growth Community Programs は可視性と能動的な整合を必要とします。
 
 - RMM は営業のカウンターパートとパートナーを組み、特定のイベントを開発し、カスタマースピーカーが必要なタイミングを特定します。
 - RMM と営業は、ゴールとオーディエンスの属性に基づいてイベントの理想的なお客様プロファイルを特定し、スピーカーオプションのリストもまとめるため、[Customer Speaker Brief template](https://docs.google.com/document/d/1AcWpc0pVjeV29GxL_d9uVWdQyyHjgSp8r9Oe13TFL94/edit?tab=t.0) のコピーを作成します。

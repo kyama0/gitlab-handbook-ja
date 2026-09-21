@@ -4034,11 +4034,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T03:00:44+00:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:32:47+00:00",
       "model": "codex",
-      "input_hash": "4ad9f153ebf988611921192b3dbf294b557321aa0d2f26a5544afcf4e606cb13",
-      "upstream_committed_at": "2026-09-16T21:11:43+01:00"
+      "input_hash": "6e4afe4be53613e251ee8d646f2c662b9834a77bcabe205830695a9bc2b22880",
+      "upstream_committed_at": "2026-09-21T07:10:28-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1.md",
@@ -4058,35 +4058,35 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T03:04:17+00:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:32:47+00:00",
       "model": "codex",
-      "input_hash": "ebccbe14320417d3324ce67a8f8abae620d882b18c7a15100b3d6f21533aaf36",
-      "upstream_committed_at": "2026-09-16T21:11:43+01:00"
+      "input_hash": "6dde7900787f120743cbbf3750694540e168bbf94e3ea7dd788c5d0a13651eea",
+      "upstream_committed_at": "2026-09-21T07:10:28-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T03:04:17+00:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:32:47+00:00",
       "model": "codex",
-      "input_hash": "148c7623a0da5915712d2f134824e80191240d54468c72f6d7ff2275839f2d5f",
-      "upstream_committed_at": "2026-09-16T21:11:43+01:00"
+      "input_hash": "9a809c793a7968dcf274a3efb4136a981470f90d2ab5eeacb67b5a1311bd75d4",
+      "upstream_committed_at": "2026-09-21T07:10:28-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T03:04:38+00:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:33:54+00:00",
       "model": "codex",
-      "input_hash": "ec62373ead233a6c7487440df1714cab862a180d52b71360635a579f03a8a228",
-      "upstream_committed_at": "2026-09-16T21:11:43+01:00"
+      "input_hash": "ebccbe14320417d3324ce67a8f8abae620d882b18c7a15100b3d6f21533aaf36",
+      "upstream_committed_at": "2026-09-21T07:10:28-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T03:04:38+00:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:33:54+00:00",
       "model": "codex",
-      "input_hash": "944285f82df3354dde736988a4a2f1da1bc8237b53137eed99e92da5a9182678",
-      "upstream_committed_at": "2026-09-16T21:11:43+01:00"
+      "input_hash": "148c7623a0da5915712d2f134824e80191240d54468c72f6d7ff2275839f2d5f",
+      "upstream_committed_at": "2026-09-21T07:10:28-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduo.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduo.md",
@@ -16946,11 +16946,11 @@
     },
     "content/handbook/marketing/_index.md": {
       "path": "content/handbook/marketing/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T01:18:09+00:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T21:05:41+00:00",
       "model": "codex",
-      "input_hash": "4fc7bd0870d8619a5be87ccadfc583bab4d9faf11cf0bf7fd85d25363e86b850",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
+      "input_hash": "bb33ef3c63f6e3d1053e1dfdaa658e902f4e3dd7048a4052eb20d4f961bcd032",
+      "upstream_committed_at": "2026-09-21T18:51:47Z"
     },
     "content/handbook/marketing/account-based-marketing/_index.md": {
       "path": "content/handbook/marketing/account-based-marketing/_index.md",
@@ -18898,11 +18898,11 @@
     },
     "content/handbook/marketing/marketing-operations/qualified.md": {
       "path": "content/handbook/marketing/marketing-operations/qualified.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:30:42+00:00",
       "model": "codex",
-      "input_hash": "cd03233d916ed74b973ac415efb6f999e9267779c115a8d6299a0b5999c55a8f",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "1722952a4edc9e9bb533d81093f0a3282df6f101fbb7b20cc17a024a3c87080d",
+      "upstream_committed_at": "2026-09-21T08:44:54Z"
     },
     "content/handbook/marketing/marketing-operations/ringlead.md": {
       "path": "content/handbook/marketing/marketing-operations/ringlead.md",
@@ -18938,11 +18938,11 @@
     },
     "content/handbook/marketing/marketing-operations/usergems.md": {
       "path": "content/handbook/marketing/marketing-operations/usergems.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:30:42+00:00",
       "model": "codex",
-      "input_hash": "33c69ca53b4f94145a1702d43f849ef982b0e86877884f7c702ea25466b31f14",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "657012fbecfe41beaac5b2f2d85e990733b2caf9bd235ac7562f9efbb379aece",
+      "upstream_committed_at": "2026-09-21T08:44:54Z"
     },
     "content/handbook/marketing/marketing-operations/vimeo.md": {
       "path": "content/handbook/marketing/marketing-operations/vimeo.md",
@@ -18970,11 +18970,11 @@
     },
     "content/handbook/marketing/marketing-operations/zoominfo.md": {
       "path": "content/handbook/marketing/marketing-operations/zoominfo.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:30:42+00:00",
       "model": "codex",
-      "input_hash": "1729847452258d80b4d126c7d07b5a88168dd201d9485238c6839d3acfd60771",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "151111533784bf9ee5694780dc1f1b48d27074c2b0b10146cbc66878a9846037",
+      "upstream_committed_at": "2026-09-21T08:44:54Z"
     },
     "content/handbook/marketing/marketing-strategy-and-platforms.md": {
       "path": "content/handbook/marketing/marketing-strategy-and-platforms.md",
@@ -20370,11 +20370,11 @@
     },
     "content/handbook/support/training/_index.md": {
       "path": "content/handbook/support/training/_index.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6d692e0c7b500f83237b59755a428174258663fd5f2aa6217b7260cc26e1c66d",
-      "upstream_committed_at": "2026-04-17T16:13:02+10:00"
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T21:05:41+00:00",
+      "model": "codex",
+      "input_hash": "8a0daae88f5e56bf9a0e4a8e5d4c60c55dc4a0a94454a6d500ef808eaced7978",
+      "upstream_committed_at": "2026-09-21T09:28:28+02:00"
     },
     "content/handbook/support/training/external_training_recommendations.md": {
       "path": "content/handbook/support/training/external_training_recommendations.md",
@@ -21370,11 +21370,11 @@
     },
     "content/handbook/support/workflows/usgovernment_tickets.md": {
       "path": "content/handbook/support/workflows/usgovernment_tickets.md",
-      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T08:02:21+09:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T21:05:41+00:00",
       "model": "codex",
-      "input_hash": "308b9821c4e707d3d4a0492f7f30c6b59603c463a404f49a1f71c5899d2cfb35",
-      "upstream_committed_at": "2026-08-27T16:09:49-04:00"
+      "input_hash": "51ddbb75764d372d40df6ef41987fa298324b3f0b74e4c545b1966c4e36991cf",
+      "upstream_committed_at": "2026-09-21T17:30:16Z"
     },
     "content/handbook/support/workflows/verify_pages_domain.md": {
       "path": "content/handbook/support/workflows/verify_pages_domain.md",
@@ -21546,11 +21546,11 @@
     },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T13:14:29+00:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T21:05:41+00:00",
       "model": "codex",
-      "input_hash": "177990e7dda5f41f344dd8b3252c496a8ed0b13361acf1b647cca5a9d0fa3271",
-      "upstream_committed_at": "2026-09-10T17:36:41-04:00"
+      "input_hash": "f71c315d069818b4c0e8bfdcc60ec45e2f80f43f5ba8f38769c9ff0224cd6856",
+      "upstream_committed_at": "2026-09-21T10:03:09-07:00"
     },
     "content/handbook/upstream-studios/_index.md": {
       "path": "content/handbook/upstream-studios/_index.md",
@@ -36778,11 +36778,11 @@
     },
     "content/handbook/marketing/growth-marketing/growth-community-programs/_index.md": {
       "path": "content/handbook/marketing/growth-marketing/growth-community-programs/_index.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T20:51:48+09:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T23:30:42+00:00",
       "model": "codex",
-      "input_hash": "8c07bd2286ada09475f538edb130d6e0ce186512ac1c8e72072e4335ef198025",
-      "upstream_committed_at": "2026-09-01T17:31:31Z"
+      "input_hash": "dd7652012df7ee84d53f5b02554efa70554bed7b3c3830752c9491a3a775c309",
+      "upstream_committed_at": "2026-09-21T18:53:56Z"
     },
     "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/_index.md": {
       "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/_index.md",
@@ -36938,11 +36938,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/globalization/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/globalization/_index.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T21:00:56+09:00",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "translated_at": "2026-09-21T21:05:41+00:00",
       "model": "codex",
-      "input_hash": "f4b85ae7c00099899831c1af4c44c5f3ec35070c54615c6bae4b90b75d9ce76f",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "d2ef070035f5e927fb8bb86c2f3ecd7b7a7d1743723e7ea0f4f41ce80604e8ac",
+      "upstream_committed_at": "2026-09-21T15:00:02+02:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/globalization/category-internationalization.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/globalization/category-internationalization.md",
@@ -37647,6 +37647,14 @@
       "model": "codex",
       "input_hash": "ed2c170fa727d5fdc10c13a370fb519aff2bc7675009e1417c39d1387e135b4e",
       "upstream_committed_at": "2026-09-17T22:07:50+02:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/haproxy_control_plane/_index.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/haproxy_control_plane/_index.md",
+      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
+      "upstream_committed_at": "2026-09-21T08:09:18Z",
+      "translated_at": "2026-09-21T23:40:12+00:00",
+      "model": "codex",
+      "input_hash": "5efcc50c547884a9e97bd7ebebc17a49405bbb0d511d3ae5c7032307c79a20fb"
     }
   }
 }

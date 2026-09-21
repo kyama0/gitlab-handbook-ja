@@ -2,12 +2,13 @@
 title: "Qualified"
 description: "Qualified は、GitLab マーケティングウェブサイト上の訪問者と即座にセールスの会話を促進します"
 upstream_path: /handbook/marketing/marketing-operations/qualified/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
+translated_at: "2026-09-21T23:30:42+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-21T08:44:54Z"
 ---
+
 
 ## 概要
 
@@ -29,7 +30,7 @@ BDR（アウトバウンド担当者）は、AI Rep と会話している間に�
 
 ウェブサイトのエクスペリエンスについて質問がありますか？#mktgops Slack チャンネルでお問い合わせください。
 
-新しいエクスペリエンスをリクエストするには、マーケティングオペレーションプロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
+新しいエクスペリエンスをリクエストするには、Marketing Operations プロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
 
 ### ルーティング
 
@@ -61,13 +62,15 @@ Qualified は、ウェブサイト訪問者に関するファーモグラフィ�
 
 #### Zoom
 
-Zoom とのシームレスな統合は近日公開予定です。それまでは、担当者は次のいずれかの方法を使用できます:
+Zoom 統合は、すべての Qualified ユーザーで有効になっています。担当者は Zoom アカウントを接続して、Qualified 経由で予約された各ミーティングに固有のミーティングリンクを自動生成できるため、Zoom リンクを手動で貼り付ける必要はありません。
 
-1. `Calendar -> Meeting details -> Enter your own meeting details` セクションに個人ミーティングリンクを入力すると、ミーティングリンクがカレンダー招待に表示されます。
+接続方法:
 
-    または
+1. Qualified の Calendar 設定に移動します
 
-2. Google カレンダーでカレンダー招待を手動で開き、`Add video conferencing details` をクリックして、独自の Zoom リンクを追加します。
+2. Meeting details の下にある Connect with Zoom をクリックします
+
+3. 接続すると、Zoom のメールアドレスが Active と表示され、Qualified がミーティングごとに固有のリンクを自動生成します
 
 #### Marketo
 
@@ -123,7 +126,7 @@ Qualified の管理者設定で、`Experiences` に移動し、`Automatic` を�
 FY26 Q1 から、Qualified の AI メール機能をテストします。テストには 2 つのユースケースが含まれます。
 
 1. GitLab マーケティングサイトの訪問者で、Qualified チャットを通じてミーティングの予約を提供されたが、そのミーティングの予約に失敗した。AI は、カレンダーが表示された Sales Development 担当者の代わりに、そのミーティングの予約を再キャプチャしようとするためにメールでフォローアップします。これらのリードとコンタクトは、ミーティングを明示的にリクエストするか、ミーティングを提供する AI 目標をトリガーするのに十分な意図を示しているため、通常通り MQL になります。AI がメールで連絡すると、レコードは Accepted ステータスに移動し、メールキャンペーンの結果に応じて Recycle または Qualifying のいずれかに進みます。
-2. 特定のコンテンツシンジケーションキャンペーンに追加されたリードとコンタクト。これらは、関心を早く、より迅速に高めようとして、ファネルの早い段階のプロスペクトです。Salesforce のこれらのレコードのステータスは更新されません。むしろ、AI Email in Progress というチェックボックスでこれらのリードに AI が連絡していることを示します。AI メールキャンペーンが終わると、ボックスがオフになり、レコードは通常のライフサイクルを継続します。レコードを Sales Development 担当者にルーティングする必要があり、応答があれば、メールで応答してリードを適切に処理できるようになります。
+2. 特定のコンテンツシンジケーションキャンペーンに追加されたリードとコンタクト。これらは、関心を早く、より迅速に高めようとして、ファネルの早い段階のプロスペクトです。Salesforce のこれらのレコードのステータスは更新されません。むしろ、レコード上のチェックボックスでこれらのリードに AI が連絡していることを示します。AI メールキャンペーンが終わると、ボックスがオフになり、レコードは通常のライフサイクルを継続します。レコードを Sales Development 担当者にルーティングする必要があり、応答があれば、メールで応答してリードを適切に処理できるようになります。
 
 ### Qualified AI Email ロールバックプラン
 
@@ -131,9 +134,9 @@ AI チャットロールバックプランと同じように、Qualified の Set
 
 #### AI Rep サポート
 
-ウェブサイトの GitLab AI Rep について質問がありますか？#mktgops Slack チャンネルでお問い合わせください。Qualified サポートチームとの外部 Slack チャンネルもあります。そのチャンネルにまだ参加していない場合、Qualified チームへのアクセスが必要な場合は、マーケティング Ops チームメンバーに追加するように依頼してください。
+ウェブサイトの GitLab AI Rep について質問がありますか？#mktgops Slack チャンネルでお問い合わせください。Qualified サポートチームとの外部 Slack チャンネルもあります。そのチャンネルにまだ参加していない場合、Qualified チームへのアクセスが必要な場合は、Marketing Ops チームメンバーに追加するように依頼してください。
 
-新機能や変更をリクエストするには、マーケティングオペレーションプロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
+新機能や変更をリクエストするには、Marketing Operations プロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
 
 ## その他の Qualified 機能
 
@@ -208,13 +211,13 @@ Qualified でスマートフォームを使用すると、既存のリードキ�
 
 従来のリードフォームには、ウェブサイトを訪問する訪問者がセールスチームと話すために何時間も何日も待たなければならないという期待が伴うことがよくあります。スマートフォームでは、サイトでセールスと話す準備ができている熱心なプロスペクトについて、担当者にリアルタイムで通知したり、後でセールスチームとミーティングを予約したりできます。
 
-新しいスマートフォームをリクエストするには、マーケティングオペレーションプロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
+新しいスマートフォームをリクエストするには、Marketing Operations プロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
 
 ### スマートボタン
 
 スマートボタンは、CTA を静的な万能フォームから、特注の購買体験に変えます。訪問者が理想的な顧客プロファイルに合致するとき、セールスチームとリアルタイムのセールスの会話をトリガーして、動的な双方向の会話への扉を開きます。これにより、バイヤーの質問にリアルタイムで答えが得られ、セールスチームがより多くのパイプラインを即座にキャプチャするのに役立ちます。
 
-新しいスマートボタンをリクエストするには、マーケティングオペレーションプロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
+新しいスマートボタンをリクエストするには、Marketing Operations プロジェクトで [この Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new#) を使用してください。
 
 ### リソース
 

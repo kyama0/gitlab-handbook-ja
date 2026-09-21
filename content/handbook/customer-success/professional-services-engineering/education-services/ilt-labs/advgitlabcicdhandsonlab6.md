@@ -1,97 +1,282 @@
 ---
-title: "GitLab Advanced CI/CD - ハンズオンラボ: デプロイ戦略"
-description: "このハンズオンガイドでは、フィーチャーフラグの作成プロセスについて説明します"
+title: "GitLab Advanced CI/CD - ハンズオンラボ: 複雑なプロセスの設定"
+description: "このハンズオンガイドでは、複雑な CI/CD プロセスの一般的な設定について説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-20T03:04:38+00:00"
+upstream_sha: "945c1a5211612e55d2a9e0b08b59ebb80548de60"
+translated_at: "2026-09-21T23:33:54+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-16T21:11:43+01:00"
+lastmod: "2026-09-21T07:10:28-04:00"
 ---
 
-開発プロセスの次のステップは、アプリケーションに適したデプロイ戦略を決定することです。すべてのユーザーに一度に変更をロールアウトするのはリスクの高い戦略です。なぜなら、エラーがすべてのユーザーに影響し、障害を引き起こす可能性があるからです。これを軽減するために、GitLab のデプロイ機能を活用できます。このセクションでは、アプリケーションにフィーチャーフラグを実装して、機能を段階的にロールアウトする方法を学びます。
+このラボでは、マージトレインとマージコンフリクトを中心に、より複雑なマージプロセスを分析します。まず、マージトレインから始めます。
 
 > 完了までの推定時間: 15 分
 
 ## 目標 {#objectives}
 
-このラボの終了時点で、次のことができるようになります:
+- マージトレインの概念とそのメリットを理解する
+- GitLab プロジェクトでマージトレインを有効にする
+- マージトレインを作成して実行する
+- GitLab でマージコンフリクトを特定して解決する
+- コンフリクトするマージリクエストの処理を実践する
 
-- GitLab のフィーチャーフラグ機能を使用する
+## タスク A. マージトレインを有効にする {#task-a-enabling-merge-trains}
 
-## タスク A. フィーチャーフラグを実装する {#task-a-implement-a-feature-flag}
+1. プロジェクトでマージトレインを有効にするには、左サイドバーで **Settings > Merge requests** を選択します。
 
-このタスクでは、GitLab のフィーチャーフラグ機能を使用して、アプリケーションにフィーチャーフラグを実装します。これにより、新機能を一部のユーザーに段階的にロールアウトし、問題が発生した場合の広範な影響のリスクを軽減できます。
+1. Merge options の下で、**Enable merged results pipeline** と **Enable merge trains** オプションをクリックします。
 
-フィーチャーフラグをセットアップして使用するために次の手順に従います:
+1. ページを少し下にスクロールして **Merge Checks** セクションで、**Pipelines must succeed** オプションをクリックします。
 
-1. **Deploy > Feature flags** に移動します。
+1. セクション下部で **Save changes** を選択します。
 
-1. **New Feature Flag** を選択します。
+## タスク B. マージトレインを実行する {#task-b-running-a-merge-train}
 
-1. 名前に `test` を入力します。Type として `Percent rollout` を選択します。
+マージトレインをデモンストレーションするために、意図的に長い CI/CD ジョブを作成しましょう。
 
-1. パーセンテージを 50% に設定し、**Based on** を Random に設定します。
+1. プロジェクトリポジトリに移動します。
 
-1. **Create feature flag** を選択します。
+1. `.gitlab-ci.yml` ファイルを選択します。
 
-1. フィーチャーフラグを作成した後、**Configure** を選択します。API URL と Instance ID フィールドをメモしておきます。後でコードの変更に必要になります。
-
-1. `index.js` ファイルを選択します。
-
-1. **Edit > Edit in single file** を選択します。
-
-1. `index.js` ファイルで、既存のコードをすべて削除し、次のコードに置き換えます。**your-instance-url** と **your-instance-id** は先ほどメモした値に置き換えてください:
-
-      ```js
-      const { initialize } = require('unleash-client');
-
-      const unleash = initialize({
-        url: 'your-instance-url',
-        appName:'production',
-        instanceId: 'your-instance-id'
-      });
-
-      setInterval(() => {
-      if (unleash.isEnabled('test')) {
-          console.log('Toggle enabled');
-      } else {
-          console.log('Toggle disabled');
-      }
-      }, 1000);
-      ```
-
-1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択します。
-
-    > このコードは継続的に実行され、フィーチャーフラグトグルが有効か無効かを確認しようとします。50% のユーザーに対して有効になっているため、このコードを実行するとおよそ半分の確率で有効と表示されます。
-
-1. これをテストするために、スクリプトの実行テストを行います。
-
-1. **Build > Pipeline Editor** を選択します。
-
-1. `.gitlab-ci.yml` ファイル全体を次のコードに置き換えます:
+1. 既存の CI/CD ファイルに、次のジョブをパイプラインに追加します:
 
       ```yml
+      pause:
+        stage: test
+        script:
+          - sleep 4m
+      ```
+
+      このジョブを追加すると、2 つのマージリクエストを作成するのに十分な時間が確保されます。
+
+1. マージリクエストパイプラインでジョブが実行されるように、次のルールを追加します:
+
+      ```yml
+      workflow:
+        auto_cancel:
+          on_job_failure: all
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      ```
+
+      現在のパイプラインは次のようになります:
+
+      ```yml
+      stages:
+        - deps
+        - test
+
+      workflow:
+        auto_cancel:
+          on_job_failure: all
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
       default:
         image: node:latest
 
-      stages:
-        - test
+      .artifactdef: &artifactdef
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
 
-      test_flag:
+      .cachedef: &cachedef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      install deps:
+        stage: deps
+        script:
+          - npm install jest jest-junit
+        <<: *cachedef
+
+      test binarysearch:
         stage: test
         script:
-          - npm i unleash-client
-          - node index.js
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        <<: [*artifactdef, *cachedef]
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        <<: [*artifactdef, *cachedef]
+
+      pause:
+        stage: test
+        script:
+          - sleep 4m
       ```
 
-1. **Commit changes** を選択します。
+1. **Commit changes** を選択して `.gitlab-ci.yml` ファイルを更新します。
 
-1. 変更をコミットした後、左サイドバーで **Build > Pipelines** を選択します。
+      2 つのマージリクエストを作成します。最初のマージリクエスト:
 
-1. `test_flag` ジョブを選択します。
+1. **Code > Branches** を選択します。
 
-1. このジョブが true を出力したり false を出力したりすることを観察します。これは、フィーチャーフラグが 50% の確率でアクティブになっているためです。
+1. **New branch** を選択します。
+
+1. ブランチ名として `train` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `README.md` ファイルを選択して、変更を加えます。
+
+1. **Create merge request** を選択します。
+
+1. すべてのオプションをデフォルトのままにして **Create merge request** を選択します。
+
+      2 番目のマージリクエスト:
+
+1. **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチ名として `train-2` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `README.md` ファイルを選択して変更を加えます。前のブランチで行った変更とは異なる変更を加えるようにしてください。
+
+1. **Create merge request** を選択します。
+
+1. すべてのオプションをデフォルトのままにして **Create merge request** を選択します。
+
+      両方のマージリクエストが作成されたら:
+
+1. 両方を自動マージに設定します。`Set by your user to start a merge train when all merge checks pass` というメッセージが表示されます。
+
+1. `A new merge train has started and this merge request is the first of the queue. View merge train details.` のようなメッセージが表示されます。**View merge train details** をクリックして、マージトレインの動作を確認します。
+
+1. マージリクエストの完了を待ち、正常にマージされることを確認します。
+
+## タスク C. マージコンフリクト {#task-c-merge-conflicts}
+
+複数のユーザーが同時にプロジェクトで作業する場合、マージコンフリクトはしばしば避けられません。このラボでは、プロジェクト内でのマージリクエストの処理方法を学びます。
+
+1. 速度低下を避けるために、`main` ブランチの CI/CD プロジェクトから `pause` ジョブを削除します。現在、ファイルは次のようになります:
+
+      ```yml
+      stages:
+        - deps
+        - test
+
+      workflow:
+        auto_cancel:
+          on_job_failure: all
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+      default:
+        image: node:latest
+
+      .artifactdef: &artifactdef
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
+
+      install deps: &cachedef
+        stage: deps
+        script:
+          - npm install jest jest-junit
+        <<: *cachedef
+
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        <<: [*artifactdef, *cachedef]
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        <<: [*artifactdef, *cachedef]
+      ```
+
+      次に、コンフリクトする 2 つのマージリクエストを作成しましょう:
+
+1. **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチ名として `conflict` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `index.js` ファイルを選択します。ファイルの先頭に、関数を説明するコメントを追加します。コメントの例は以下のとおりです。
+
+      ```js
+      // This method will create a binary search finding the value in list in log(n) time
+      module.exports.binarySearch = function binarySearch(arr, val) {
+          let start = 0;
+          let end = arr.length - 1;
+          while (start <= end) {
+              let mid = Math.floor((start + end) / 2);
+              if (arr[mid] === val) {
+                  return mid;
+              }
+              if (val < arr[mid]) {
+                  end = mid - 1;
+              } else {
+                  start = mid + 1;
+              }
+          }
+          return -1;
+      }
+      ```
+
+1. このコードをブランチにコミットして、そこから新しいマージリクエストを作成します。その後、新しいブランチを作成します:
+
+1. **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチ名として `conflict-2` を追加します。
+
+1. その他のオプションはすべてデフォルトのまま **Create branch** を選択します。
+
+1. `index.js` ファイルを選択します。ファイルの先頭に、関数を説明する別のコメントを追加します。コメントの例は以下のとおりです:
+
+      ```js
+      //A binary search will search a list in log(n) time
+      module.exports.binarySearch = function binarySearch(arr, val) {
+          let start = 0;
+          let end = arr.length - 1;
+          while (start <= end) {
+              let mid = Math.floor((start + end) / 2);
+              if (arr[mid] === val) {
+                  return mid;
+              }
+              if (val < arr[mid]) {
+                  end = mid - 1;
+              } else {
+                  start = mid + 1;
+              }
+          }
+          return -1;
+      }
+      ```
+
+1. このコードをブランチにコミットして、そこから新しいマージリクエストを作成します。
+
+1. `conflict` マージリクエストに戻ります。マージボタンの横の矢印を選択し、即時マージを選択してリポジトリにマージします。
+
+1. マージ後、`conflict-2` マージリクエストに移動します。*Merge conflicts must be resolved* と表示されてマージがブロックされていることがわかります。
+
+1. **Resolve conflicts** オプションを選択します。現在のマージリクエストのコードを使用するか、main のコードを使用するかを選択するオプションが表示されます。
+
+1. 希望のオプションを選択し、**Commit to source branch** を選択します。
+
+この後、マージリクエストをマージできるようになります。
 
 ## ラボガイドの完了 {#lab-guide-complete}
 

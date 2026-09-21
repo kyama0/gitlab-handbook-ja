@@ -1,213 +1,167 @@
 ---
-title: "GitLab Advanced CI/CD - ハンズオンラボ: レビューアプリ"
-description: "このハンズオンガイドでは、レビューアプリの作成プロセスについて説明します"
+title: "GitLab Advanced CI/CD - ハンズオンラボ: ベストプラクティスの確認"
+description: "このハンズオンガイドでは、GitLab の CI/CD に関する一般的なベストプラクティスについて説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-20T03:04:38+00:00"
+upstream_sha: "945c1a5211612e55d2a9e0b08b59ebb80548de60"
+translated_at: "2026-09-21T23:33:54+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-16T21:11:43+01:00"
+lastmod: "2026-09-21T07:10:28-04:00"
 ---
 
-このラボの目的は、Node.js アプリケーションからレビューアプリを作成することです。レビューアプリとは、プロジェクト内の各マージリクエストのために自動的に作成される一時的なアプリケーション環境です。これにより、開発者やステークホルダーは、変更をメインブランチにマージする前に、ライブの独立した環境で提案された変更をプレビューしてインタラクションできます。
+このラボの目的は、隠しジョブやマップマージなどを活用して、コードをより簡潔にして繰り返しを避けることです。
 
 > 完了までの推定時間: 15 分
 
 ## 目標 {#objectives}
 
-- Node.js アプリケーションからレビューアプリを作成する
+- パイプラインの繰り返しを減らす
+- 隠しジョブとマップマージ
 
-## タスク A. Web アプリを作成する {#task-a-creating-a-web-app}
+テストパイプラインには、コードや定義が繰り返されている箇所がいくつかあります。npm でパッケージをインストールする際の繰り返しを、キャッシュを使用して減らせることを既に確認しました。このラボでは、コードの繰り返しをさらに減らす方法を学びます。
 
-このタスクでは、レビュー環境で実行する Web アプリケーションを作成します。
+現在の `.gitlab-ci.yml` ファイルの定義は次のとおりです:
 
-1. プロジェクトリポジトリに移動します。
+```yml:
+stages:
+  - deps
+  - test
 
-1. **Build > Pipeline Editor** を選択します。
+workflow:
+  auto_cancel:
+    on_job_failure: all
 
-1. `index.js` ファイルに express コードを追加すると、Web サーバーを起動して接続を待機するため、テストは `index.js` に対して実行できなくなります。そのため、`install deps`、`test binarysearch`、`test linearsearch` ジョブをファイルから削除します。`.gitlab-ci.yml` ファイルからジョブを削除して、**Commit changes** を選択します。
+default:
+  image: node:latest
 
-1. プロジェクトリポジトリに戻ります。
+install deps:
+  stage: deps
+  script:
+    - npm install jest jest-junit
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - node_modules
 
-1. `index.js` ファイルを選択します。
+test binarysearch:
+  stage: test
+  script:
+    - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+  artifacts:
+    when: always
+    reports:
+      junit: junit.xml
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+     - node_modules
 
-1. **Edit > Edit single file** を選択します。
+test linearsearch:
+  stage: test
+  script:
+    - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+  artifacts:
+    when: always
+    reports:
+      junit: junit.xml
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - node_modules
+```
 
-1. 二分探索と線形探索のメソッドを削除し、Web アプリケーションを実行する次のコードを追加します:
+## タスク A. ジョブを簡略化する {#task-a-simplifying-your-jobs}
 
-      ```js
-      const express = require('express')
-      const app = express()
-      const port = 4001
+1. プロジェクトリポジトリに移動してください。
 
-      app.get('/', (req, res) => {
-        res.send('Hello World!')
-      })
+1. **Build > Pipeline Editor** を選択してください。
 
-      app.listen(port, () => {
-        console.log(`Example app listening on port ${port}`)
-      })
-      ```
-
-1. 変更をコミットします。
-
-## タスク B. レビューアプリを作成する {#task-b-creating-a-review-app}
-
-1. 左サイドバーで **Operate > Environments** を選択します。
-
-1. **Enable Review Apps** を選択します。
-
-1. 次のような提供されたスクリプトをコピーします:
-
-      ```yml
-      deploy_review:
-        stage: deploy
-        script:
-          - echo "Add script here that deploys the code to your infrastructure"
-        environment:
-          name: review/$CI_COMMIT_REF_NAME
-          url: https://$CI_ENVIRONMENT_SLUG.example.com
-        rules:
-          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-      ```
-
-      > **Enable Review Apps** をクリックしたときに GitLab がこのスクリプトを表示しない場合は、上記の参照スクリプトをコピーして使用してください。
-
-1. コードリポジトリに戻ります。
-
-1. **Build > Pipeline Editor** を選択します。
-
-1. コピーした `deploy_review` ジョブを `.gitlab-ci.yml` ファイルの末尾に貼り付けます。
-
-1. この例では、URL として IP アドレスを使用するように URL を少し変更します。この変数 `$ip` は、招待コードを利用したときに作成されたグループレベルの変数です。この変数を使用するために、サーバーが `HTTP` のみを使用するため `HTTPS` も削除します。以下は完成した `deploy_review` 定義です:
+1. 現在の `.gitlab-ci.yml` ファイルでは、すべてのテストに同じアーティファクトセットが含まれています。各ジョブにアーティファクトを定義する代わりに、次の定義で最初に隠しジョブを作成してください:
 
       ```yml
-      deploy_review:
-        stage: deploy
-        script:
-          - echo "Add script here that deploys the code to your infrastructure"
-        environment:
-          name: review/$CI_COMMIT_REF_NAME
-          url: http://$ip:4001
-        rules:
-          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      .artifactdef: &artifactdef
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
       ```
 
-1. `.gitlab-ci.yml` ファイルに `deploy` ステージを追加します。
+1. その後、マップマージを使用して、すべてのテストジョブにアーティファクト定義を追加してください:
+
+      ```yml
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        <<: *artifactdef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        <<: *artifactdef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+      ```
+
+1. さらに、繰り返しを避けるためにキャッシュも隠しジョブに移動してください。この例では、これらの定義を `cachedef` 隠しジョブに移動しています:
 
       ```yml
       stages:
         - deps
         - test
-        - deploy
-      ```
 
-1. これで、変更をレビューアプリにデプロイできます。`deploy_review` ジョブに `ubuntu:latest` の `image` を追加します。
+      workflow:
+        auto_cancel:
+          on_job_failure: all
 
-      ```yml
-      deploy_review:
-        stage: deploy
-        image: ubuntu:latest
-      ```
+      default:
+        image: node:latest
 
-1. `deploy_review` ジョブの `script` のすぐ上に、次の `before_script` を追加します。SSH 秘密鍵は SSH_PRIVATE_KEY という名前の変数に保存されています。この鍵を SSH エージェントに追加して、リモートサーバーへの接続に使用します:
+      .artifactdef: &artifactdef
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
 
-      ```yml
-        before_script:
-          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-          - eval $(ssh-agent -s)
-          - chmod 400 "$SSH_PRIVATE_KEY"
-          - ssh-add "$SSH_PRIVATE_KEY"
-          - mkdir -p ~/.ssh
-          - chmod 700 ~/.ssh
-      ```
+      .cachedef: &cachedef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
 
-1. 最後に、次のジョブ定義に合わせてジョブスクリプトを更新します:
-
-      ```yml
+      install deps:
+        stage: deps
         script:
-          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-          - ssh root@$ip 'mkdir -p /www'
-          - ssh root@$ip 'sudo apt-get update'
-          - ssh root@$ip 'sudo apt-get install nodejs npm -y'
-          - ssh root@$ip 'cd /www/ && npm init -y'
-          - ssh root@$ip 'cd /www/ && npm i express'
-          - ssh root@$ip 'cd /www/ && npm i -g pm2'
-          - scp index.js root@$ip:/www
-          - ssh root@$ip 'pm2 start -f /www/index.js'
-      ```
+          - npm install jest jest-junit
+        <<: *cachedef
 
-1. 最終的なジョブスクリプトは次のようになります:
-
-      ```yml
-      deploy_review:
-        stage: deploy
-        image: ubuntu:latest
-        before_script:
-          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-          - eval $(ssh-agent -s)
-          - chmod 400 "$SSH_PRIVATE_KEY"
-          - ssh-add "$SSH_PRIVATE_KEY"
-          - mkdir -p ~/.ssh
-          - chmod 700 ~/.ssh
+      test binarysearch:
+        stage: test
         script:
-          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-          - ssh root@$ip 'mkdir -p /www'
-          - ssh root@$ip 'sudo apt-get update'
-          - ssh root@$ip 'sudo apt-get install nodejs npm -y'
-          - ssh root@$ip 'cd /www/ && npm init -y'
-          - ssh root@$ip 'cd /www/ && npm i express'
-          - ssh root@$ip 'cd /www/ && npm i -g pm2'
-          - scp index.js root@$ip:/www
-          - ssh root@$ip 'pm2 start -f /www/index.js'
-        environment:
-          name: review/$CI_COMMIT_REF_NAME
-          url: http://$ip:4001
-        rules:
-          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        <<: [ *artifactdef, *cachedef ]
+
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        <<: [ *artifactdef, *cachedef ]
       ```
 
-1. **Commit changes** を選択します。
+      > この変更により、コードの総行数が減るだけでなく、アーティファクトが変更された場合に複数の場所ではなく 1 か所だけ変更すれば済むようになります。
 
-## タスク C. レビューアプリを確認する {#task-c-verify-the-review-app}
+1. これらの変更を行った後、**Commit changes** を選択してください。
 
-レビューアプリが機能することをテストするために、新しいマージリクエストを作成します。
+1. 左サイドバーで **Build > Pipelines** を選択してパイプラインを監視してください。
 
-1. **Code > Branches** を選択します。
-
-1. **New branch** を選択します。
-
-1. ブランチ名を `test_review` に設定して **Create branch** を選択します。
-
-1. このブランチのマージリクエストを作成します。
-
-1. マージリクエストを作成したら、**Code > Open in Web IDE** を選択してマージリクエストから Web IDE を開きます。
-
-1. `index.js` ファイルを選択します。
-
-1. `res.send` を好きなメッセージを表示するように更新します。以下は例です:
-
-      ```js
-      const express = require('express')
-          const app = express()
-          const port = 4001
-
-          app.get('/', (req, res) => {
-            res.send('Our app is running!')
-          })
-
-          app.listen(port, () => {
-            console.log(`Example app listening on port ${port}`)
-      })
-      ```
-
-1. **source control** アイコンを選択します。コミットメッセージを入力し、**Commit and put to...** ボタンをクリックしてコード変更をコミットします。
-
-1. パイプラインが完了するまで待ちます。
-
-1. マージリクエストを開きます。
-
-1. パイプラインが完了したら **View app** を選択します。
+1. パイプラインが正常に実行されたことを確認したら、`.gitlab-ci.yml` ファイルに戻ってください。このファイルに他の最適化点はありますか?
 
 ## ラボガイドの完了 {#lab-guide-complete}
 
