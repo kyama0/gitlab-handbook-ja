@@ -2,9 +2,9 @@
 title: "Data Engineering and Monetization"
 description: "あらゆる展開モデルで GitLab をスケールし、インテリジェントなマネタイゼーションを実現する、運用・分析両面の統合データ基盤を構築します。"
 upstream_path: /handbook/engineering/data-engineering/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T12:11:14-05:00"
-translated_at: "2026-09-20T02:04:59.673212+00:00"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+lastmod: "2026-09-22T02:49:28Z"
+translated_at: "2026-09-22T21:08:10+00:00"
 translator: claude
 stale: false
 ---
@@ -65,3 +65,7 @@ flowchart LR
     DE --> SMDX[Self-Managed Database Experience]
     click SMDX "/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience"
 ```
+
+## 私たちの働き方 {#how-we-work}
+
+- [リリース前のプレモーテム](/handbook/engineering/data-engineering/pre-mortems/)：リリース日より前に、そのリリースに固有のリスクを洗い出すための、任意の 45 分間の取り組みです。実施するかどうかはリリースの DRI が決定します。

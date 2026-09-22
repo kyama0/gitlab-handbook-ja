@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリの API エンドポイントの構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1"
-translated_at: "2026-09-17T21:10:04+00:00"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+translated_at: "2026-09-22T21:11:03+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-16T18:05:43+02:00"
+lastmod: "2026-09-22T12:59:50+02:00"
 ---
 
 ## コンテキスト
@@ -150,7 +150,7 @@ API の表面は、異なるルールを持つ 3 つの明確なカテゴリに�
 
 - `GET /api/v1/:slug/namespace` - このスコープが指定するネームスペースを取得
 
-権限の判定結果は、既存の `include_referrers` パラメータにならった `include_permissions` ブール値によるオプトインで、ネームスペース、リポジトリ詳細、リポジトリ一覧のレスポンスに埋め込まれます。[ADR-021](021_authorization.md#permission-checks-for-ui-gating) がセマンティクスを定義し、この ADR がルートとパラメータを確定します。
+権限の判定結果は、既存の `include_referrers` パラメータにならった `include_permissions` ブール値によるオプトインで、アクセス制御の対象リソースを含むドメインレスポンスに埋め込まれます。[ADR-021](021_authorization.md#permission-checks-for-ui-gating)が、どのレスポンスに判定結果を含めるかも含めたセマンティクスを定義し、この ADR がルートとパラメータを確定します。
 
 #### リポジトリレベル API {#repository-level-apis}
 

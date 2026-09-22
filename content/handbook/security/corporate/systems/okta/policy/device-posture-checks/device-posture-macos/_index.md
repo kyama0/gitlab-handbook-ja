@@ -1,11 +1,11 @@
 ---
 title: Okta デバイスポスチャーチェック - macOS
 upstream_path: /handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-macos/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+translated_at: "2026-09-22T21:06:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-31T14:58:28-07:00"
+lastmod: "2026-09-22T13:55:21-07:00"
 ---
 
 GitLab は Okta デバイスポスチャーチェックを使用して、macOS デバイスが GitLab リソースにアクセスする前に最低限のセキュリティ要件を満たしていることを保証します。デバイスがポスチャーチェックに失敗した場合、問題が解決されるまで GitLab へのアクセスがブロックされます。デバイスが失敗した特定のチェックについて、以下の手順に従ってください。
@@ -58,10 +58,10 @@ Secure Enclave は、Apple Silicon および T2 チップを搭載した Intel M
 |-------------|
 | お使いの Mac は Secure Enclave チップを搭載しておらず、この要件を満たすことができません。サポート対象の Mac を使用する必要があります。 |
 
-{{% alert title="Note" color="Warning" %}}
+{{% alert title="注記" color="Warning" %}}
 このページに記載されているもの以外にも、追加のデバイス要件が適用される場合があります。
 {{% /alert %}}
 
-{{% alert title="Note" color="info" %}}
-デバイスポスチャーチェックの解決にサポートが必要な場合は、Slack チャンネル `#it_help` で IT に連絡するか、`it-help@gitlab.com` までメールしてください。
+{{% alert title="注記" color="info" %}}
+デバイスポスチャーチェックの解決にサポートが必要な場合は、Compass を使用して IT に連絡するか、`it-help@gitlab.com` までメールしてください。
 {{% /alert %}}

@@ -3,14 +3,14 @@ title: "Product and Technical Marketing"
 description: "GitLab Product and Technical Marketing ハンドブック"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/product-and-technical-marketing/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:18:09+00:00"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+lastmod: "2026-09-22T17:26:58+02:00"
+translated_at: "2026-09-22T21:06:28+00:00"
 translator: codex
 stale: false
 ---
 
-Product and Technical Marketing は、ポジショニング、メッセージング、プロダクトマーケティング、コンテンツ、技術ドキュメント、デベロッパーリレーションズという戦略とナラティブを担当します。このチームは、私たちが何を、誰に、なぜ伝えるのかを定義します。Product と Engineering がリリースするものを、市場に届くメッセージへ変換します。
+Product and Technical Marketing は、ポジショニング、メッセージング、プロダクトマーケティング、コンテンツ、技術ドキュメント、グローバリゼーション、デベロッパーリレーションズという戦略とナラティブを担当します。このチームは、私たちが何を、どのように、誰に、どの言語で、なぜ伝えるのかを定義します。Product と Engineering がリリースするものを、市場に届くメッセージへ変換します。
 
 ## 私たちのチーム {#our-teams}
 
@@ -37,11 +37,15 @@ Product & Solutions Marketing は、GitLab プラットフォームとそのソ�
 
 ### Tech Writing & Globalization {#tech-writing--globalization}
 
-Tech Writing & Globalization は、正確な技術ドキュメントを作成し、言語や市場を問わず GitLab のコンテンツを利用できるようにします。コンテンツ戦略やプロダクトマーケティングと連携することで、技術的な事実と市場向けナラティブの整合性を保ちます。
+Technical Writing チームは、GitLab のエンジニア、プロダクトマネージャー、デザイナー、UX リサーチャーと協力し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、規模の拡大に対応できるドキュメントに落とし込みます。ユーザーからのフィードバックに基づいてコンテンツを継続的に改善し、特別なプロジェクトやドキュメントサイトの機能に関する戦略的な専門知識を提供します。また、AI ワークフローの構築から決定論的なテストや lint に至るまで、ドキュメントの作成、管理、デプロイの最適化を担当します。
+
+Globalization チームは、GitLab の国際展開の優先事項に沿って、マーケティング、ドキュメント、製品の各領域で高品質な翻訳を実現する、AI を活用した拡張性のあるローカライズワークフローを構築します。また、日本語、フランス語、ドイツ語のブログの編集戦略とコンテンツを担当し、GitLab の国際的なブログ戦略を推進します。Engineering、Marketing、Product、Sales、Support の各チームと協力し、世界中のユーザーに GitLab の魅力を伝えます。
+
+両チームはコンテンツ戦略やプロダクトマーケティングと連携し、技術的な事実と市場向けナラティブの整合性を保ちます。
 
 - [Technical Writing ハンドブック](/handbook/marketing/product-and-technical-marketing/technical-writing/)
 - [Globalization ハンドブック](/handbook/marketing/product-and-technical-marketing/globalization/)
-- Slack：`#tech-writing-and-globalization`、`#docs`
+- Slack：`#tech-writing-and-globalization`、`#docs`、`#localization`
 
 ## Product and Technical Marketing との連携 {#working-with-product-and-technical-marketing}
 
