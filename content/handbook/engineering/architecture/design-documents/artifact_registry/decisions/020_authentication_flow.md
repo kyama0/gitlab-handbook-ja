@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認証設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow/
-upstream_sha: "12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1"
-lastmod: "2026-09-17T18:47:46+01:00"
-translated_at: "2026-09-17T21:15:18+00:00"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+lastmod: "2026-09-22T11:16:52+02:00"
+translated_at: "2026-09-22T21:11:03+00:00"
 translator: codex
 stale: false
 ---
@@ -113,7 +113,7 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 
 ## トークンペイロード (R3) {#token-payload-r3}
 
-トークンは、コールバックなしでリクエストを認証するのに十分な情報を運びます。認証に関連するクレームは次のとおりです。
+トークンは、コールバックなしでリクエストを認証するのに十分な情報を運びます。この例は CI ジョブトークンから発行されたトークンを示しており、ネストされた `gitlab.job` オブジェクトはその場合にのみ現れます。認証に関連するクレームは次のとおりです。
 
 ```json
 {
@@ -130,7 +130,11 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
     "origin_id": "6f1a9c02-4b7e-4a3d-9f21-1c8b0d5e77a4",
     "local_id": 42,
     "identity_kind": "user",
-    "organization_role": "owner"
+    "organization_role": "owner",
+    "job": {
+      "project_id": 278964,
+      "git_commit_sha": "e705c64cf239a2f3b0c6d1e8a9b4f5c6d7e8f9a0"
+    }
   }
 }
 ```
@@ -139,8 +143,9 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 1. `iss` — 発行インスタンスの OIDC 発行者 URL。これは情報提供のみ（ログ記録される）であり、Artifact Registry はこれを検証鍵の選択に **使用しない**（[トークン検証](#token-validation-r2) を参照）。
 1. `aud` — 2 つの値を運ぶ。クライアントが要求したオーディエンスである `gitlab-artifact-registry` と、`gitlab-iam-data-access` である。2 つ目の値により、Artifact Registry は同じトークンを変更せずに relationships API へ転送できる。[サービス間認証](#service-to-service-authentication) を参照。
 1. `ver` — トークンペイロードのスキーマバージョン。現在は `1` であり、ペイロードの形状に破壊的変更がある場合にのみ上げられる。IAM のバリデーターはそれ以外の値を拒否する。
-1. `gitlab` — 呼び出し元のコンテキストを運ぶネストされたオブジェクト。`origin`（`organization`。ローンチ時の唯一の値）、`origin_id`（organization の UUID）、`local_id`（ユーザー ID）、`identity_kind`（`user`）、`organization_role`（`owner` または `member`）を含む。
+1. `gitlab` — 呼び出し元のコンテキストを運ぶネストされたオブジェクト。`origin`（`organization`。ローンチ時の唯一の値）、`origin_id`（organization の UUID）、`local_id`（ユーザー ID）、`identity_kind`（`user`）、`organization_role`（`owner` または `member`）を含む。 ネストされた `job` オブジェクトは、交換した認証情報が CI ジョブトークンであった場合にのみ現れます。
 1. `gitlab.organization_role` は、認可を運ぶクレームを ADR-021 で扱うという以下のルールの唯一の例外である。ロール割り当てが存在する前に読み取られるため、relationships API を通じて解決できない。何を認可するか、すなわち R6 のブートストラップ要件については [ADR-021](021_authorization.md) を参照。
+1. `gitlab.job` — 交換した認証情報が CI ジョブトークンであった場合にのみ存在します。`project_id`（ジョブが属するプロジェクトの数値 ID）と `git_commit_sha`（ジョブを実行したコミットの完全な SHA）を含みます。これらは Artifact Registry のバージョンフィールド `project_id` と `git_commit_sha` に値を設定するために存在します。現在はトークンにそれらを埋める情報が含まれていないため、すべてのバージョンで null となっています。これらの値に認可上の意味はありません。ジョブトークンの交換では、パイプラインを起動したユーザーとして認証されるため、このビルドコンテキストがあっても `local_id` は引き続き実在の人物を指します。この変更は追加的なもので、`ver` は 1 のままです。これらのクレームをまだ認識しないバリデーターは、問題なく無視します。利用側は、値が欠落している場合や不正な形式である場合は「来歴情報なし」として扱い、それを理由にリクエストを失敗させてはいけません。[トークンペイロードの CI コンテキストに関するワークアイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/629690)を参照してください。
 1. `jti`、`iat`、`nbf`、`exp` — 標準的な JWT クレーム。`exp = iat + ttl`。
 1. `gitlab_instance_uid` は **現時点では省略される**。最初のイテレーションの同一境界トポロジーには単一の信頼アンカーがあるため、インスタンス識別子は不要である。それはクロス境界のフォローアップでのみ関連する。
 1. **ロールやその他の認可を運ぶクレームは、ここではなく ADR-021 で説明される。** Artifact Registry はこのトークンを使用して、呼び出し元が *誰* であるかを確立する。*何ができるか* は別途評価される。認可が *ソース認証情報の種類*（例: PAT 対 CI ジョブトークン）も考慮しなければならないかどうかは、同様に ADR-021 の関心事である。

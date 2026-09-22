@@ -12,9 +12,12 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Account%20and%20Portal%20Management/Contact%20management.md'
-    procedure: null
-    macros: []
-    articles: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Account%20and%20Portal%20Management/L&R%20-%20Account%20and%20Portal%20Management%20-%20Contact%20management.md
+    macros:
+    - L&R::Account and Portal Management::Contact management::Self-service
+    - L&R::Account and Portal Management::Contact management::Speak to billing contact
+    articles:
+    - https://federal-support.gitlab.com/hc/en-us/articles/53707294699796
 - name: 'Customers portal access issue'
   category: 'License and Renewals'
   subcategory: 'Account and Portal Management'
@@ -29,9 +32,14 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Account%20and%20Portal%20Management/Customers%20portal%20access%20issue.md'
-    procedure: null
-    macros: []
-    articles: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Account%20and%20Portal%20Management/L&R%20-%20Account%20and%20Portal%20Management%20-%20Access%20issue.md
+    macros:
+    - L&R::Account and Portal Management::Customer portal access issue::Create a cDot account
+    - L&R::Account and Portal Management::Customer portal access issue::Create a gitlab.com account
+    - L&R::Account and Portal Management::Customer portal access issue::What error are you seeing
+    - L&R::Account and Portal Management::Customer portal access
+    articles:
+    - https://federal-support.gitlab.com/hc/en-us/articles/53707264844180
 - name: 'Namespace association'
   category: 'License and Renewals'
   subcategory: 'Account and Portal Management'
@@ -63,8 +71,9 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Billing%20and%20payments/Billable%20members%20and%20seats.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Billing%20and%20payments/L&R%20-%20Billing%20and%20payments%20-%20Billable%20members%20and%20seats.md
+    macros:
+    - L&R::Billing and payments::Billable members and seats::Contact Sales
     articles: []
 - name: 'Billing and payment issue'
   category: 'License and Renewals'
@@ -80,8 +89,9 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Billing%20and%20payments/Billing%20and%20payment%20issue.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Billing%20and%20payments/L&R%20-%20Billing%20and%20payments%20-%20Issue.md
+    macros:
+    - L&R::Billing and payments::Billing and payment issue::Contact Sales
     articles: []
 - name: 'Consumption inquiry'
   category: 'License and Renewals'
@@ -97,8 +107,9 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Billing%20and%20payments/Consumption%20inquiry.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Billing%20and%20payments/L&R%20-%20Billing%20and%20payments%20-%20Consumption%20inquiry.md
+    macros:
+    - L&R::Billing and payments::Consumption inquiry::Contact Sales
     articles: []
 - name: 'General licensing or renewal question'
   category: 'License and Renewals'
@@ -145,12 +156,15 @@
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Special%20Programs/EDU%20program.md'
     procedure: null
     macros: []
-    articles: []
+    articles:
+    - https://support.gitlab.com/hc/en-us/articles/22725476432028
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Special%20Programs/EDU%20program.md'
-    procedure: null
-    macros: []
-    articles: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Special%20Programs/L&R%20-%20Special%20Programs%20-%20EDU.md
+    macros:
+    - L&R::Special Programs::EDU program::Contact EDU
+    articles:
+    - https://federal-support.gitlab.com/hc/en-us/articles/52923217414420
 - name: 'OSS program'
   category: 'License and Renewals'
   subcategory: 'Special Programs'
@@ -162,12 +176,15 @@
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Special%20Programs/OSS%20program.md'
     procedure: null
     macros: []
-    articles: []
+    articles:
+    - https://support.gitlab.com/hc/en-us/articles/22725476432028
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Special%20Programs/OSS%20program.md'
-    procedure: null
-    macros: []
-    articles: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Special%20Programs/L&R%20-%20Special%20Programs%20-%20OSS.md
+    macros:
+    - L&R::Special Programs::OSS program::Contact OSS
+    articles:
+    - https://federal-support.gitlab.com/hc/en-us/articles/52923217414420
 - name: 'Startups program'
   category: 'License and Renewals'
   subcategory: 'Special Programs'
@@ -179,12 +196,15 @@
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Special%20Programs/Startups%20program.md'
     procedure: null
     macros: []
-    articles: []
+    articles:
+    - https://support.gitlab.com/hc/en-us/articles/22725476432028
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Special%20Programs/Startups%20program.md'
-    procedure: null
-    macros: []
-    articles: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Special%20Programs/L&R%20-%20Special%20Programs%20-%20OSS.md
+    macros:
+    - L&R::Special Programs::OSS program::Contact OSS
+    articles:
+    - https://federal-support.gitlab.com/hc/en-us/articles/52923217414420
 - name: 'Auto renewal inquiry'
   category: 'License and Renewals'
   subcategory: 'Subscription and plan management'
@@ -199,8 +219,10 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Subscription%20and%20plan%20management/Auto%20renewal%20inquiry.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Subscription%20and%20plan%20management/L&R%20-%20Subscription%20and%20plan%20management%20-%20Auto%20renewal%20inquiry.md
+    macros:
+    - L&R::Subscription and plan management::Auto renewal inquiry::Self-service
+    - L&R::Subscription and plan management::Auto renewal inquiry::Contact Sales
     articles: []
 - name: 'License activation issues'
   category: 'License and Renewals'
@@ -216,8 +238,13 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Subscription%20and%20plan%20management/License%20activation%20issues.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Subscription%20and%20plan%20management/L&R%20-%20Subscription%20and%20plan%20management%20-%20License%20activation%20issues.md
+    macros:
+    - L&R::Subscription and plan management::License activation issues::Ask for error from instance
+    - L&R::Subscription and plan management::License activation issues::Ask for error from browser
+    - L&R::Subscription and plan management::License activation issues::Ask for networking information
+    - L&R::Subscription and plan management::License activation issues::New cloud code generated
+    - L&R::Subscription and plan management::License activation issues::Remove current license to apply new one
     articles: []
 - name: 'License resend request'
   category: 'License and Renewals'
@@ -234,7 +261,8 @@
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Subscription%20and%20plan%20management/License%20resend%20request.md'
     procedure: null
-    macros: []
+    macros:
+    - L&R::Subscription and plan management::License resend request::Self-service
     articles: []
 - name: 'Namespace Association'
   category: 'License and Renewals'
@@ -251,7 +279,8 @@
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Subscription%20and%20plan%20management/Namespace%20Association.md'
     procedure: null
-    macros: []
+    macros:
+    - L&R::Subscription and plan management::License resend request::Self-servic
     articles: []
 - name: 'Plan change request'
   category: 'License and Renewals'
@@ -267,8 +296,9 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Subscription%20and%20plan%20management/Plan%20change%20request.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Subscription%20and%20plan%20management/L&R%20-%20Subscription%20and%20plan%20management%20-%20Plan%20change%20request.md
+    macros:
+    - L&R::Subscription and plan management::Plan change request::Contact Sales
     articles: []
 - name: 'Quarterly subscription reconciliation'
   category: 'License and Renewals'
@@ -284,8 +314,9 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Subscription%20and%20plan%20management/Quarterly%20subscription%20reconciliation.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Subscription%20and%20plan%20management/L&R%20-%20Subscription%20and%20plan%20management%20-%20QSR.md
+    macros:
+    - L&R::Subscription and plan management::Quarterly subscription reconciliation::Contact Sales
     articles: []
 - name: 'Renewal or expiration issues'
   category: 'License and Renewals'
@@ -318,8 +349,9 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Subscription%20and%20plan%20management/Subscription%20extension%20request.md'
-    procedure: null
-    macros: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Subscription%20and%20plan%20management/L&R%20-%20Subscription%20and%20plan%20management%20-%20Extension%20request.md
+    macros:
+    - L&R::Subscription and plan management::Subscription extension request::Contact Sales
     articles: []
 - name: 'New trial request'
   category: 'License and Renewals'
@@ -335,7 +367,7 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Trial%20management/New%20trial%20request.md'
-    procedure: null
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Trial%20management/L&R%20-%20Trial%20management%20-%20New.md
     macros: []
     articles: []
 - name: 'Trial edit request'
@@ -352,7 +384,7 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Trial%20management/Trial%20edit%20request.md'
-    procedure: null
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Trial%20management/L&R%20-%20Trial%20management%20-%20Edit.md
     macros: []
     articles: []
 - name: 'Trial extension request'
@@ -369,7 +401,7 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/License%20and%20Renewals/Trial%20management/Trial%20extension%20request.md'
-    procedure: null
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/License%20and%20Renewals/Trial%20management/L&R%20-%20Trial%20management%20-%20Extension.md
     macros: []
     articles: []
 - name: 'Billing Entity change'
@@ -2185,6 +2217,24 @@
     procedure: null
     macros: []
     articles: []
+- name: 'Remote execution environment sandbox'
+  category: 'Product'
+  subcategory: 'Duo'
+  runbook: https://gitlab.com/gitlab-com/support/runbooks/-/blob/main/Product/Duo/Remote%20execution%20environment%20sandbox.md
+  sop: null
+  decagon:
+    aop: null
+  zendesk_global:
+    topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/Product/Duo/Remote%20execution%20environment%20sandbox.md'
+    procedure: null
+    macros: []
+    articles: []
+  zendesk_usgov:
+    topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/Product/Duo/Remote%20execution%20environment%20sandbox.md'
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/Product/Duo/Product%20-%20Duo%20-%20Remote%20execution%20environment%20sandbox.md
+    macros:
+    - Support::Product::Duo::Remote execution environment sandbox::Alternatives to using Anthropic Sandbox Runtime
+    articles: []
 - name: 'Self hosted Models'
   category: 'Product'
   subcategory: 'Duo'
@@ -3854,7 +3904,7 @@
 - name: 'SAST DAST or Dependency Scanning'
   category: 'Product'
   subcategory: 'Security and Compliance'
-  runbook: null
+  runbook: https://gitlab.com/gitlab-com/support/runbooks/-/blob/main/Product/Security%20and%20Compliance/SAST%20DAST%20or%20Dependency%20Scanning.md
   sop: null
   decagon:
     aop: null
@@ -3865,9 +3915,26 @@
     articles: []
   zendesk_usgov:
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/Product/Security%20and%20Compliance/SAST%20DAST%20or%20Dependency%20Scanning.md'
-    procedure: null
-    macros: []
-    articles: []
+    procedure: https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/Product/Security%20and%20Compliance/Product%20-%20Security%20and%20Compliance%20-%20SAST%20DAST%20or%20Dependency%20Scanning.md
+    macros:
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Add instance hostname to configuration
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Ask for job status and executor
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Ask for log info for container_registry_event
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Confirm image they are using
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Confirm scan is healthy
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Confirm scanning is enabled
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Database cannot be swapped
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Generate and use new token
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Need to use docker or kubernetes executor
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::No findings show for SBOM only OS
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Perform a push and gather logs
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Policy job is untagged
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Problem unclear
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Provide pipeline status
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Provide proxy settings
+    - Support::Product::Security and Compliance::SAST DAST or Dependency Scanning::Runner proxy settings issue
+    articles:
+    - https://federal-support.gitlab.com/hc/en-us/articles/53832283718420
 - name: 'Secret Detection'
   category: 'Product'
   subcategory: 'Security and Compliance'

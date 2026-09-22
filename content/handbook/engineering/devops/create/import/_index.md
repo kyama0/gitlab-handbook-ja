@@ -2,11 +2,11 @@
 title: Import グループ
 description: Import グループはマイグレーションを支援します。
 upstream_path: /handbook/engineering/devops/create/import/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+translated_at: "2026-09-22T21:08:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-17T13:05:42+12:00"
+lastmod: "2026-09-22T08:57:10+01:00"
 ---
 
 ## 概要
@@ -19,7 +19,7 @@ Import グループは [Create ステージ](/handbook/engineering/devops/create
 ## 連絡方法
 
 Import グループに連絡を取るには、[GitLab プロジェクト](https://gitlab.com/gitlab-org/gitlab)で
-イシューを作成し、`~"group::import"` ラベルとその他の[適切なラベル](#issue-labels)を付けるのがおすすめです。その後、
+Issue を作成し、`~"group::import"` ラベルとその他の[適切なラベル](#issue-labels)を付けるのがおすすめです。その後、
 関連するプロダクトマネージャーやエンジニアリングマネージャーに気軽にメンションしてください。
 
 より緊急性の高い案件については、Slack チャンネル（社内）[`#g_import`](https://gitlab.slack.com/archives/g_import)を利用してください。
@@ -33,70 +33,70 @@ Import グループに連絡を取るには、[GitLab プロジェクト](https:
 ## 作業
 
 各マイルストーンの 1 週間前に、エンジニアリングマネージャーがチームの優先事項をまとめた
-[計画イシュー](https://gitlab.com/gitlab-org/gitlab/-/work_items?sort=closed_at_desc&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Aimport&first_page_size=100)
+[計画 Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items?sort=closed_at_desc&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Aimport&first_page_size=100)
 を作成します。チームメンバーは通知を受け、マイルストーンに対する自分のコミットメントで
-イシューを更新していきます。
+Issue を更新していきます。
 
-### イシュー開発ワークフロー
+### Issue 開発ワークフロー {#issue-development-workflow}
 
 標準の GitLab [エンジニアリングワークフロー](/handbook/engineering/workflow/)を使用しています。
 
-### イシューボード
+### Issue ボード {#issue-boards}
 
 Import グループの作業は、以下の場所で追跡できます。
 
 - [Import 現在のマイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/1459244?milestone_title=Upcoming&milestone_title=Started&label_name%5B%5D=group%3A%3Aimport&group_by=epic)（マイルストーンフィルターを現在のマイルストーンに手動で調整してください）
-- [計画イシュー](https://gitlab.com/gitlab-org/gitlab/-/work_items?sort=closed_at_desc&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Aimport&first_page_size=100)
-- [計画イシューのエピック](https://gitlab.com/groups/gitlab-org/-/work_items?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Aimport&type%5B%5D=epic&first_page_size=100)
+- [計画 Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items?sort=closed_at_desc&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Aimport&first_page_size=100)
+- [計画 Issue のエピック](https://gitlab.com/groups/gitlab-org/-/work_items?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Aimport&type%5B%5D=epic&first_page_size=100)
 
-### イシューラベル {#issue-labels}
+### Issue ラベル {#issue-labels}
 
-発見しやすくするため、イシューに正しいラベルを付けてください。
+発見しやすくするため、Issue に正しいラベルを付けてください。
 
-すべてのイシューには以下が必要です。
+すべての Issue には以下が必要です。
 
 - `~"group::import"`（ボットがステージとセクションのラベルを適切に付与します）
 - 1 つ以上のカテゴリーラベル:
-  - `~"Category:Importers"`（FIXME: 現在、ボットがすべてのイシューにこのカテゴリーを強制的に付与しています）
+  - `~"Category:Importers"`（FIXME: 現在、ボットがすべての Issue にこのカテゴリーを強制的に付与しています）
   - `~"Category:Webhooks"`
 - [タイプラベル](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification)
 - [ワークフローラベル](/handbook/engineering/workflow/#updating-workflow-labels-throughout-development)
 - 該当する場合は `~"backend"` または `~"frontend"`
 
-インポーターに関連するイシューには、`Importer:` ラベルも付けてください。例: `~"Importer:GitHub"` または `~"Importer:Direct Transfer"`。
+インポーターに関連する Issue には、`Importer:` ラベルも付けてください。例: `~"Importer:GitHub"` または `~"Importer:Direct Transfer"`。
 
 ### バックログのリファインメント
 
-エンジニアは通常、自分が取り組む予定のイシューをリファインメントします。ただし、特にコミュニティコントリビューターが
-取り組む可能性がある場合は、誰でもイシューをリファインメントして開発の準備を整えることができます。
+エンジニアは通常、自分が取り組む予定の Issue をリファインメントします。ただし、特にコミュニティコントリビューターが
+取り組む可能性がある場合は、誰でも Issue をリファインメントして開発の準備を整えることができます。
 
-イシューがエピックの一部である場合、DRI がそれをリファインメントするか、そのエピックに
+Issue がエピックの一部である場合、DRI がそれをリファインメントするか、そのエピックに
 アサインされたエンジニアにリファインメントを委任できます。誰がリファインメントを行うかにかかわらず、
 マイルストーンが始まる前にリファインメントを完了することを目指してください。
 
-遅くとも、エンジニアリングマネージャーが次のマイルストーンの計画イシューを共有する時点
+遅くとも、エンジニアリングマネージャーが次のマイルストーンの計画 Issue を共有する時点
 （現在のマイルストーン終了の 1 週間前に行われます）でリファインメントを開始すべきです。
 
-#### リファインメント対象イシューの特定
+#### リファインメント対象 Issue の特定 {#identifying-issues-for-refinement}
 
-エンジニアリングマネージャーがイシューをスケジュールし、それらがマイルストーン計画イシューに含まれます。
+エンジニアリングマネージャーが Issue をスケジュールし、それらがマイルストーン計画 Issue に含まれます。
 
-マイルストーンにおける各エンジニアの割り当てに基づき、`Ready for Development` ステータスでないイシューを特定します。
+マイルストーンにおける各エンジニアの割り当てに基づき、`Ready for Development` ステータスでない Issue を特定します。
 これらは通常 `Refinement` または `Planning breakdown` ステータスですが、任意の
 [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)
 ステータスを取り得ます。
 
-`Ready for Development` だが何か月も前にリファインメントされたイシューは、コードベース、製品、または
+`Ready for Development` だが何か月も前にリファインメントされた Issue は、コードベース、製品、または
 アーキテクチャの方向性の変更に焦点を当てて、再度リファインメントすべきです。
 
-#### イシューのリファインメント
+#### Issue のリファインメント {#refining-issues}
 
 Create ステージの[クロスチーム計画とリファインメント](/handbook/engineering/devops/create/#cross-team-planning-and-refinement)のガイドライン、特に[リファインメント](/handbook/engineering/devops/create/#refinement)および[実装計画](/handbook/engineering/devops/create/#implementation-plan)のセクションに従ってください。
 
-Import グループでは、イシューがそれらのガイドラインに加え、以下の Import 固有の要件を満たした場合にリファインメント済みとみなされます。
+Import グループでは、Issue がそれらのガイドラインに加え、以下の Import 固有の要件を満たした場合にリファインメント済みとみなされます。
 
 - 重み付け（`type::bugs` の場合は任意）
-- 別のエンジニアによるピアレビュー（重み 1 のイシューの場合は任意）。レビュー済みであることを示すため、レビュアーはコメントを残すか、イシューを `Ready for development` に移動できます
+- 別のエンジニアによるピアレビュー（重み 1 の Issue の場合は任意）。レビュー済みであることを示すため、レビュアーはコメントを残すか、Issue を `Ready for development` に移動できます
 - `Ready for development` ステータス
 
 **バグの準備状態**
@@ -104,7 +104,7 @@ Import グループでは、イシューがそれらのガイドラインに加�
 バグは、取り組む前に完璧に理解されている必要はないため、重みも不要です。
 
 バグを完全に理解する労力は、しばしばそれを修正する労力の大半を占めます。したがって、
-バグイシューで提案された解決策は、欠陥に対する不完全な理解に基づいて行われた
+バグ Issue で提案された解決策は、欠陥に対する不完全な理解に基づいて行われた
 **提案**とみなされる場合があります。
 
 少なくとも以下を含めるようにしてください。
@@ -126,7 +126,7 @@ Import グループでは、イシューがそれらのガイドラインに加�
 - [GitLab ログ分析ツール](https://gitlab.com/gitlab-org/foundations/import-and-integrate/gitlab-logs-analysis)
 - [Jira プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Koazgli_PmMQCER2pVH7vUT)
 
-上記のリソースで質問の答えが見つからない場合は、[ヘルプ依頼（RFH）イシュー](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Import)を作成し、`SupportRequestTemplate-Import` テンプレートを使用してください。チームに連絡する前に、必要な情報をすべて提供してください。そうでない場合、私たちはあなたの依頼を進めることができません。新しいイシューは、社内のトリアージプロセスに従って優先順位付けされます。私たちは、現在のバージョンおよび直近の 2 つのマイナー GitLab バージョン（N-2）に影響するイシューの依頼のみをサポートできることにご注意ください。それより古いバージョンの修正は提供できません。これは[バックポートのメンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html#patch-releases)に沿ったものです。
+上記のリソースで質問の答えが見つからない場合は、[ヘルプ依頼（RFH）Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Import)を作成し、`SupportRequestTemplate-Import` テンプレートを使用してください。チームに連絡する前に、必要な情報をすべて提供してください。そうでない場合、私たちはあなたの依頼を進めることができません。新しい Issue は、社内のトリアージプロセスに従って優先順位付けされます。私たちは、現在のバージョンおよび直近の 2 つのマイナー GitLab バージョン（N-2）に影響する Issue の依頼のみをサポートできることにご注意ください。それより古いバージョンの修正は提供できません。これは[バックポートのメンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html#patch-releases)に沿ったものです。
 
 ### マイルストーンドクター
 
@@ -134,20 +134,20 @@ Import グループでは、イシューがそれらのガイドラインに加�
 
 セカンダリドクターは、プライマリが OOO またはキャパシティを超えている場合に、同じ責任を引き受けて代行します。それ以外の場合は、マイルストーンで計画されたタスクに取り組みます。プライマリドクターは、OOO になるときやキャパシティの問題に直面しているときにセカンダリに知らせるべきです。
 
-プライマリドクターのマイルストーンキャパシティは 100% この役割の責任に割り当てられます。何も残っていない場合、エンジニアは `~type::maintenance` または `~type::bug` イシューに取り組み、コードレビューのキャパシティを増やすことを検討すべきです。
+プライマリドクターのマイルストーンキャパシティは 100% この役割の責任に割り当てられます。何も残っていない場合、エンジニアは `~type::maintenance` または `~type::bug` Issue に取り組み、コードレビューのキャパシティを増やすことを検討すべきです。
 
 現在のドクターは `@gitlab-com/create-team/import/reaction-rotation` でタグ付けできます。
 
 #### 責任
 
-- 新しい [RFH イシュー](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Help%20group%3A%3Aimport&first_page_size=100)についてサポートおよび PS と連携する
-- 長期間オープンなイシューをフォローアップする
+- 新しい [RFH Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Help%20group%3A%3Aimport&first_page_size=100)についてサポートおよび PS と連携する
+- 長期間オープンな Issue をフォローアップする
 - 顧客との通話でサポートチームを支援する
 - マイルストーンドクターが問題を診断することに成功した方法に関するチームランブックのドキュメントを維持する
 - チームの Slack チャンネル [`#g_import`](https://gitlab.enterprise.slack.com/archives/C04RDL3MEH5) での質問に対応する
 - シフトから学んだことで [FAQ](https://gitlab.com/gitlab-org/foundations/import-and-integrate/team/-/blob/main/importers/faq.md?ref_type=heads) を更新する
 - [インポーターの依存関係](#importer-dependencies)をレビューし、サードパーティ API の変更による
-  必要な変更のためのイシューを作成する
+  必要な変更のための Issue を作成する
 - エラーがないか [`#import_exceptions`](https://gitlab.enterprise.slack.com/archives/C061EPC0RST) と [Direct Transfer Kibana Dashboard](https://log.gprd.gitlab.net/app/dashboards#/view/f2640580-a8bd-11ed-85ed-e7557b0a598c) を監視し、必要に応じてトリアージ、エスカレーション、フォローアップ Issue の作成を行う
 - マイルストーンごとに 1 回、[エラーバジェット](#error-budgets)をレビューし、リグレッションを調査して、見つかった問題についてフォローアップ Issue を作成する
 - マイルストーンの終わりに [`@gitlab-com/create-team/import/reaction-rotation` のメンバーシップ](https://gitlab.com/groups/gitlab-com/create-team/import/reaction-rotation/-/group_members?with_inherited_permissions=exclude)を更新する
@@ -156,9 +156,9 @@ Import グループでは、イシューがそれらのガイドラインに加�
 
 マイルストーンごとに 1 回、各インポーターの依存関係の変更履歴をレビューし、今後の破壊的変更や
 API の非推奨化を確認します。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) を使用して
-影響を評価し、更新が必要な変更については関連する `~"Importer:"` ラベルを付けたイシューを作成します。
+影響を評価し、更新が必要な変更については関連する `~"Importer:"` ラベルを付けた Issue を作成します。
 
-レビュー後、計画イシューにサマリーと作成したイシューへのリンクを含むコメントを残します。
+レビュー後、計画 Issue にサマリーと作成した Issue へのリンクを含むコメントを残します。
 注目してもらうために EM をタグ付けします。
 
 <details>
@@ -211,9 +211,9 @@ If no actionable changes are found, confirm that and note the date range you che
 
 ### セキュリティとの連携
 
-このグループには、セキュリティに影響を及ぼす可能性のあるイシューを特定するのに役立つ既存の[脅威モデル](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/threat-models/-/blob/master/gitlab-org/gitlab/GitLab%20Migration.md)がありますが、他にも考慮すべき点があります。
+このグループには、セキュリティに影響を及ぼす可能性のある Issue を特定するのに役立つ既存の[脅威モデル](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/threat-models/-/blob/master/gitlab-org/gitlab/GitLab%20Migration.md)がありますが、他にも考慮すべき点があります。
 
-イシューや MR がセキュリティに影響を及ぼす可能性がある場合、[アプリケーションセキュリティレビュー](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)を依頼すべきです。これには以下が含まれますが、これらに限りません。次のようなイシューや MR です。
+Issue や MR がセキュリティに影響を及ぼす可能性がある場合、[アプリケーションセキュリティレビュー](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)を依頼すべきです。これには以下が含まれますが、これらに限りません。次のような Issue や MR です。
 
 - 脅威モデルに該当するもの
 - バイナリファイルを扱うもの（ダウンロード、展開、抽出、移動、削除）
@@ -248,7 +248,7 @@ Import 機能の変更は、しばしばトラフィックの多いコードパ�
    インポーターについては、ヒントについて[私たちのランブック](https://gitlab.com/gitlab-org/manage/import-and-integrate/team/-/blob/main/importers/runbook.md)
    を参照してください。
 1. 機能をリリースする段階になったら、フィーチャーフラグを削除するのではなく `default_enabled: true`
-   に変更します。これはフラグロールアウトイシューにおける
+   に変更します。これはフラグロールアウト Issue における
    [任意のフラグ付きでの機能リリース](https://gitlab.com/gitlab-org/gitlab/-/blob/e730c474ed80143ebae33df90900b342020ad7c0/.gitlab/issue_templates/Feature%20Flag%20Roll%20Out.md?plain=1#L83)
    のステップです。
 1. この時点で、機能はマイルストーン内でリリースされたとみなされ、Self-Managed 顧客に出荷されるため、リリースポストで
@@ -260,31 +260,31 @@ Import 機能の変更は、しばしばトラフィックの多いコードパ�
 
 ### リリース中
 
-- Kickoff 後にイシューがリリースに導入される場合、計画外の作業を考慮するために同じ量の重みを取り除く必要があります。
-- イシューは見積もりが行われ、重みが付けられる前に開発を開始すべきではありません。
+- Kickoff 後に Issue がリリースに導入される場合、計画外の作業を考慮するために同じ量の重みを取り除く必要があります。
+- Issue は見積もりが行われ、重みが付けられる前に開発を開始すべきではありません。
 - 15 日までに、エンジニアリングのマージリクエストはマージされているべきです。言い換えれば、15 日以降にマージされたコードはリリースに含まれないと想定します。これにより、リリースを最終化し、関連する[リリースポスト](https://docs.gitlab.com/development/documentation/release_notes/)を 17 日までにマージする時間が確保されます。（これは [13.11 から開始された実験](https://gitlab.com/gitlab-org/manage/general-discussion/-/issues/17330)です。）
 
 ### リリースポスト
 
-より詳細に発表する必要があるイシューについては、そのイシューを使用してリリースポストを自動的に作成できます。
-イシューに取り組む際、計画段階でも、設計・開発中でも、
+より詳細に発表する必要がある Issue については、その Issue を使用してリリースポストを自動的に作成できます。
+Issue に取り組む際、計画段階でも、設計・開発中でも、
 [リリースノートライターエージェント](https://gitlab.com/components/agents-and-flows/release-notes-writer)
 を使用して、リリースポストを作成し、関連するすべての人に通知できます。
 
-イシューにリリースポストを持たせたくない場合は、そのイシューに
+Issue にリリースポストを持たせたくない場合は、その Issue に
 リリースノートのセクションがないこと、または `release post item::` ラベルを使用しないことを確認してください。
 
 ### 概念実証 MR
 
-私たちは[イテレーション](/handbook/values/#iteration)と小さな増分で価値を届けることを強く信じています。イテレーションは難しいことがあり、特に製品コンテキストが不足している場合や、コードベースの特にリスクが高い／複雑な部分で作業している場合はそうです。イシューの見積もりや実現可能性の判断に苦労している場合、まず概念実証（PoC）MR を作成するのが適切かもしれません。概念実証 MR の目的は、計画中の大きな前提を取り除き、早期のフィードバックを提供することで、将来の実装のリスクを軽減することです。
+私たちは[イテレーション](/handbook/values/#iteration)と小さな増分で価値を届けることを強く信じています。イテレーションは難しいことがあり、特に製品コンテキストが不足している場合や、コードベースの特にリスクが高い／複雑な部分で作業している場合はそうです。Issue の見積もりや実現可能性の判断に苦労している場合、まず概念実証（PoC）MR を作成するのが適切かもしれません。概念実証 MR の目的は、計画中の大きな前提を取り除き、早期のフィードバックを提供することで、将来の実装のリスクを軽減することです。
 
 - `PoC:` を接頭辞に付けた MR を作成します。
 - PoC MR が解決しようとしている問題を MR の説明で説明します。
 - タイムボックスを設けます。2〜3 日未満で実現可能性や計画を判断できますか？
 - この期間の終わりにフィードバックを提供するレビュアーを特定します。
-- MR をクローズします。製品およびパフォーマンスへの影響を含め、PoC から学んだことを元のイシューにサマリーとして提供します。
+- MR をクローズします。製品およびパフォーマンスへの影響を含め、PoC から学んだことを元の Issue にサマリーとして提供します。
   - 実装に進めるかどうかを述べます。
-  - イシューはクローズしないでください。
+  - Issue はクローズしないでください。
 
 概念実証 MR の必要性は、私たちのコードベースや製品の一部が過度に複雑になっていることを示唆している可能性があります。将来このステップを回避する方法を議論できるよう、レトロスペクティブの一環として MR について議論する価値が常にあります。
 
@@ -294,7 +294,7 @@ Import 機能の変更は、しばしばトラフィックの多いコードパ�
 
 #### マイルストーンごと
 
-Import グループは [GitLab イシューでマイルストーンレトロスペクティブ](https://gitlab.com/gl-retrospectives/manage-stage/import/-/work_items)を実施しています。これには、エンジニア、UX、PM、および
+Import グループは [GitLab Issue でマイルストーンレトロスペクティブ](https://gitlab.com/gl-retrospectives/manage-stage/import/-/work_items)を実施しています。これには、エンジニア、UX、PM、および
 マイルストーン中にそのチームと協働したすべての安定したカウンターパートが含まれます。
 
 すべてのマイルストーンで私たちのチームメンバーの参加が強く推奨されます。
@@ -303,16 +303,16 @@ Import グループは [GitLab イシューでマイルストーンレトロス�
 
 #### プロジェクトごと
 
-特定のイシュー、機能、またはその他の種類のプロジェクトが
+特定の Issue、機能、またはその他の種類のプロジェクトが
 特に有用な学びの経験になった場合、それから学ぶために同期または
 非同期のレトロスペクティブを行うことがあります。取り組んでいる何かが
 レトロスペクティブに値すると感じた場合は、
 
-1. レトロスペクティブを行いたい理由を説明する[イシューを作成](https://gitlab.com/gitlab-org/manage/import-and-integrate/discussions/-/issues)し、これが同期か非同期かを示します。
+1. レトロスペクティブを行いたい理由を説明する[Issue を作成](https://gitlab.com/gitlab-org/manage/import-and-integrate/discussions/-/issues)し、これが同期か非同期かを示します。
 1. EM および関与すべきその他の人（PM、カウンターパートなど）を含めます。
 1. 該当する場合は同期ミーティングを調整します。
 
-レトロスペクティブからのすべてのフィードバックは、参照目的で最終的にイシューに集約されるべきです。
+レトロスペクティブからのすべてのフィードバックは、参照目的で最終的に Issue に集約されるべきです。
 
 ### テックリード
 
@@ -414,7 +414,7 @@ print_files(:import_integrate_fe)
 
 ### Grafana ダッシュボード
 
-- [Import グループダッシュボード](https://dashboards.gitlab.net/d/stage-groups-import_and_integrate/stage-groups-import-and-integrate-group-dashboard?orgId=1)。以下を含みます。
+- [Import グループダッシュボード](https://dashboards.gitlab.net/d/stage-groups-import/stage-groups-import-group-dashboard?orgId=1)。以下を含みます。
   - 私たちの機能カテゴリーにフィルタリングされたさまざまな Kibana ログへのリンク
   - 私たちの[エラーバジェット](#error-budgets)消費の帰属
 - [ワーカーキュー](https://dashboards.gitlab.net/d/sidekiq-queue-detail/sidekiq-queue-detail?orgId=1&var-PROMETHEUS_DS=Global&var-environment=gprd&var-stage=main&var-queue=jira_connect:jira_connect_sync_branch)。`queue` ドロップダウンでキューを切り替えられます
@@ -498,12 +498,12 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 - 私たちの Slack チャンネル
   - Create:Import [#g_import](https://gitlab.slack.com/archives/C04RDL3MEH5)
   - デイリースタンドアップ [#g_import_daily](https://gitlab.slack.com/archives/C04UYQV7716)
-- イシューボード
+- Issue ボード
   - [現在のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1459244?milestone_title=Upcoming&label_name[]=group%3A%3Aimport%20and%20integrate)
 - コントリビューションガイド
   - [インポーター設計の原則](https://docs.gitlab.com/ee/development/import/principles_of_importer_design/)
   - [Direct Transfer へのコントリビューション](https://docs.gitlab.com/ee/development/bulk_imports/contributing/)
-    - [フィードバックイシュー](https://gitlab.com/gitlab-org/gitlab/-/issues/456468)
+    - [フィードバック Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/456468)
 - オンボーディング動画（GitLab Unfiltered Youtube）
   - [Direct Transfer](https://www.youtube.com/watch?v=vVQ6Ex9fSl8)（旧称 GitLab Migration）
   - [GitHub インポーターの紹介](https://www.youtube.com/watch?v=TxHopzXop5s)

@@ -5,11 +5,11 @@ owning-stage: "~devops::tenant scale"
 group: Organizations
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/organization/release_process/"
-upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
-translated_at: "2026-09-11T21:09:10+00:00"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+translated_at: "2026-09-22T21:11:03+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-11T13:45:57-07:00"
+lastmod: "2026-09-22T12:50:13-07:00"
 ---
 
 このドキュメントでは、特定の Organization 機能と[ステージ](../../../infrastructure-platforms/tenant-scale/organizations/release-stages.md)のリリースプロセスの概要を説明します。
@@ -45,7 +45,7 @@ lastmod: "2026-09-11T13:45:57-07:00"
 `ui_for_organizations` フィーチャーフラグ - このフラグで制御している箇所がまだいくつか残っています。特に、Organization の唯一のオーナーを削除できるかどうかに関するロジックです。このフィーチャーフラグは組織のコンテキスト外にあるページを制御し、`organization` アクターでは機能しないため、すべてのユーザーに対してグローバルに有効にする必要があります。
 
 ```shell
-/chatops run feature set ui_for_organizations true
+/chatops gitlab run feature set ui_for_organizations true
 ```
 
 #### 手順 2 - デザインパートナーのトップレベルグループ（TLG）を特定する
@@ -61,7 +61,7 @@ Organizations にオンボーディングするデザインパートナーを特
 `group` アクターを使用して、TLG に対して `root_group_organization_backfill` フィーチャーフラグを有効にします。
 
 ```shell
-/chatops run feature set --group=a-customer-group root_group_organization_backfill true
+/chatops gitlab run feature set --group=a-customer-group root_group_organization_backfill true
 ```
 
 これにより、次が実行されます。
@@ -76,7 +76,7 @@ Organizations にオンボーディングするデザインパートナーを特
 `group` アクターを使用して、TLG に対して `root_group_organization_confirm` フィーチャーフラグを有効にします。
 
 ```shell
-/chatops run feature set --organization=a-customer-group root_group_organization_confirm true
+/chatops gitlab run feature set --organization=a-customer-group root_group_organization_confirm true
 ```
 
 これにより、次が実行されます。
@@ -91,7 +91,7 @@ Organizations にオンボーディングするデザインパートナーを特
 作成して確定したばかりの組織に対して、`artifact_registry_ui` フィーチャーフラグを有効にします。
 
 ```shell
-/chatops run feature set --organization=a-customer-group artifact_registry_ui true
+/chatops gitlab run feature set --organization=a-customer-group artifact_registry_ui true
 ```
 
 これにより、Organization に Artifact Registry UI が表示されます。
@@ -111,10 +111,10 @@ Artifact Registry を有効化して使い始める方法を説明するドキ�
 #### ロールバック
 
 ```shell
-/chatops run feature set ui_for_organizations false
-/chatops run feature set --group=a-customer-group root_group_organization_backfill false
-/chatops run feature set --organization=a-customer-group root_group_organization_confirm false
-/chatops run feature set --organization=a-customer-group artifact_registry_ui false
+/chatops gitlab run feature set ui_for_organizations false
+/chatops gitlab run feature set --group=a-customer-group root_group_organization_backfill false
+/chatops gitlab run feature set --organization=a-customer-group root_group_organization_confirm false
+/chatops gitlab run feature set --organization=a-customer-group artifact_registry_ui false
 ```
 
 ### セルフサービスのオンボーディングを備えたスタンドアロンの組織 {#standalone-organizations-with-self-serve-onboarding}
@@ -149,7 +149,7 @@ Organizations にオンボーディングするデザインパートナーを特
 デザインパートナーの TLG に対して `org_stage_beta` フィーチャーフラグを有効にします
 
 ```shell
-/chatops run feature set --group=a-customer-group org_stage_beta true
+/chatops gitlab run feature set --group=a-customer-group org_stage_beta true
 ```
 
 #### 手順 4 - お客様が TLG から Organization を作成する
@@ -160,3 +160,37 @@ Organizations にオンボーディングするデザインパートナーを特
 UI を使用します。これにより Organization が作成され、TLG（および選択した他の所有 TLG）がその Organization に移動し、Organization の状態が `active` に設定されます。
 
 その後、`Your work` サイドバーに `Organizations` メニュー項目が表示され、Organizations を使用できます。
+
+#### ロールバック {#rollback-1}
+
+問題の重大度に応じて、次の選択肢を使用できます。
+
+##### 選択肢 1 - バグ修正 {#option-1---bug-fix}
+
+重大度が低く、すぐに修正できる問題であれば、修正をプッシュします。
+
+##### 選択肢 2 - フィーチャーフラグを無効にする {#option-2---disable-feature-flags}
+
+重大度が高く、すべてのお客様に影響し、修正に時間がかかる問題であれば、`org_stage_la_100` フィーチャーフラグを無効にできます。これにより、すべてのお客様に対して Organizations が無効になることに注意してください。
+
+```shell
+/chatops gitlab run feature set org_stage_la_100 false
+```
+
+##### 選択肢 3 - TLG を Default Organization に戻す {#option-3---move-tlgs-back-to-the-default-organization}
+
+重大度が高く、上記の選択肢では解決できない問題であれば、TLG を Default Organization に戻す必要があります。SRE に連絡し、Rails コンソールで次のコマンドを実行してもらってください。
+
+```rb
+organization = Organizations::Organization.find_by_path("<organization-path>") # replace with the actual organization path
+default_organization = Organizations::Organization.default_organization
+current_user = ::Users::Internal.in_organization(organization).admin_bot
+
+organization.groups.top_level.find_each do |group|
+  Organizations::Transfer::GroupsService.new(
+    group: group,
+    new_organization: default_organization,
+    current_user: current_user
+  ).execute
+end
+```

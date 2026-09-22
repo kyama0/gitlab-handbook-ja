@@ -3,11 +3,11 @@ title: "クリティカルシステム階層化方法論"
 summary: "The purpose of the Critical System Tiering Methodology is to support GitLab in identifying and understanding the specific systems utilized across the organization that are considered critical to serving GitLab's Customers."
 controlled_document: true
 upstream_path: /handbook/security/security-assurance/security-risk/storm-program/critical-systems/
-upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
-translated_at: "2026-09-16T21:05:51+00:00"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+translated_at: "2026-09-22T21:06:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-22T12:26:41-07:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -59,17 +59,17 @@ Security Risk チームは、Business Owner からの回答とシステムが提
 <table class="tg">
 <tbody>
   <tr>
-    <td class="tg-clye">Critical System Tier (CST) <span style="color:#DB3B21;">*</span></td>
+    <td class="tg-clye">Critical System Tier (CST) <sup style="color:#DB3B21;"><b>1</b></sup></td>
     <td class="tg-dxvi">CST の説明</td>
     <td class="tg-dxvi">例</td>
   </tr>
   <tr>
-    <td class="tg-e02t">Tier 1 ミッションクリティカル<span style="color:#DB3B21;">**</span></td>
+    <td class="tg-e02t">Tier 1 ミッションクリティカル<sup style="color:#DB3B21;"><b>2,3</b></sup></td>
     <td class="tg-zqun">中断または侵害が、GitLab SaaS サブスクリプションおよびお客様データの可用性/セキュリティに即時かつ重大な影響を与えます（定義については <a href="/handbook/security/policies_and_standards/data-classification-standard/#data-classification-definitions">Data Classification Standard</a> を参照）。</td>
     <td class="tg-zqun">GitLab.com、Google Cloud Platform、Elastic</td>
   </tr>
   <tr>
-    <td class="tg-e02t">Tier 2 ビジネスクリティカル<span style="color:#DB3B21;">***</span></td>
+    <td class="tg-e02t">Tier 2 ビジネスクリティカル<sup style="color:#DB3B21;"><b>4</b></sup></td>
     <td class="tg-zqun">中断が主要なビジネス機能や能力の遂行に影響を与えます。</td>
     <td class="tg-zqun">Okta、Salesforce、Workday</td>
   </tr>
@@ -89,13 +89,16 @@ Security Risk チームは、Business Owner からの回答とシステムが提
 
 {{% panel header="**注記**" header-bg="primary" %}}
 {{% note %}}
-<span style="color:#DB3B21;"><b>\*</b></span> 階層化方法論の延長として、[Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/) は、各データ分類レベルに対する **特定の** [Security and Privacy](/handbook/security/policies_and_standards/data-classification-standard/) コントロール要件を規定しています。これらの要件は、システムの階層に関係なく、システムのデータ分類に基づいて遵守されるべきです。
+<sup style="color:#DB3B21;"><b>1</b></sup> 階層化方法論の延長として、[Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/) は、各データ分類レベルに対する **特定の** [Security and Privacy](/handbook/security/policies_and_standards/data-classification-standard/) コントロール要件を規定しています。これらの要件は、システムの階層に関係なく、システムのデータ分類に基づいて遵守されるべきです。
 {{% /note %}}
 {{% note %}}
-<span style="color:#DB3B21;"><b>\**</b></span> デフォルトでは、[Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/#red) に従い **RED Data** を含むシステム、または [Third Party Sub-Processor](https://about.gitlab.com/privacy/subprocessors/#third-party-sub-processors) であるシステムは、**Tier 1 ミッションクリティカル** システムになります。これは、このデータがお客様所有およびアップロードされたものであり、その性質上ミッションクリティカルとみなされるためです。
+<sup style="color:#DB3B21;"><b>2</b></sup> [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/#red)で定義される <b>RED Data</b> を扱うシステムはすべて、**Tier 1 ミッションクリティカル** とみなされます。RED データの漏えいや損失は、どの分類レベルよりもビジネスへの影響が大きいためです。
 {{% /note %}}
 {{% note %}}
-<span style="color:#DB3B21;"><b>*\*\*</b></span> デフォルトでは、[SOX](https://internal.gitlab.com/handbook/internal-audit/sarbanes-oxley/) の対象範囲のシステムは、最低でも **Tier 2 ビジネスクリティカル** システムになります。
+<sup style="color:#DB3B21;"><b>3</b></sup> [Third Party Sub-Processor](https://about.gitlab.com/privacy/subprocessors/#third-party-sub-processors)として指定されたシステムはすべて、**Tier 1 ミッションクリティカル** とみなされます。これらのプロバイダーは、GitLab のデータ処理契約に基づき、GitLab に代わってお客様のデータを処理するためです。
+{{% /note %}}
+{{% note %}}
+<sup style="color:#DB3B21;"><b>4</b></sup> デフォルトでは、[SOX](https://internal.gitlab.com/handbook/internal-audit/sarbanes-oxley/)の対象範囲のシステムは、最低でも **Tier 2 ビジネスクリティカル** システムになります。その中断により、GitLab が主要な財務業務を遂行する能力や、それらについて正確に報告する能力に影響が及ぶ可能性があるためです。
 {{% /note %}}
 {{% /panel %}}
 

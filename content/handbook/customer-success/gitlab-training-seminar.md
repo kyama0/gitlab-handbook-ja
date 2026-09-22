@@ -1,18 +1,18 @@
 ---
 title: "GitLab トレーニング - セミナー"
 upstream_path: /handbook/customer-success/gitlab-training-seminar/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T02:49:20Z"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+translated_at: "2026-09-22T21:12:47+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-29T12:31:41-04:00"
+lastmod: "2026-09-22T09:09:20-04:00"
 ---
 
 ## GitLab トレーニング - セミナー
 
 *GitLab トレーニング - セミナー* サービスは、テクニカルインストラクターと共に GitLab の特定の領域を深く学びたい組織を対象としています。GitLab 製品は急速に進化しており、その範囲は SDLC 全体に及んでいるため、エンタープライズレベルでの導入とビジネス価値の推進には、よりスケーラブルな教育アプローチが有効です。
 
-このオファリングは、講義形式のイネーブルメントと、半日間にわたるインタラクティブな Q&A セッションで構成されています。
+このオファリングは、講義形式のイネーブルメントに続いてインタラクティブな Q&A を行う、半日の構成です。
 
 セミナーのトピック：
 
@@ -22,7 +22,7 @@ lastmod: "2025-10-29T12:31:41-04:00"
 - Advanced CI/CD（高度な CI/CD）
 - Security Essentials（セキュリティの基礎）
 - Compliance（コンプライアンス）
-- Duo
+- Duo Agent Platform (DAP)
 
 ## 解決する課題
 
@@ -39,7 +39,7 @@ GitLab トレーニング - セミナーサービスは、GitLab テクニカル
 
 | 条件  | 期間  | GitLab リソース  | 成果  |
 |-----------------------|-----------|------------------|-----------|
-| GitLab トレーニング - セミナー | 3 時間のセミナー＋1 時間のインタラクティブ Q&A。選択した単一トピックをカバーし、トピックは Fundamentals・Agile Portfolio Management・CI/CD・Advanced CI/CD・Security Essentials・Compliance・Duo から選択。 | GitLab テクニカルインストラクター | 3 時間のターゲットを絞ったセミナー＋1 時間の Q&A で、主要な GitLab 機能について領域の専門家と深く議論し、最も重要でインパクトの大きい領域に集中します。GitLab のプロトレーニングスタッフとの Q&A を通じて、一般的な概念から実世界の実践的な応用まで、あらゆる質問に回答します。 |
+| GitLab トレーニング - セミナー | 3 時間のセミナー＋1 時間のインタラクティブ Q&A。選択した単一トピックをカバーし、トピックは Fundamentals・Agile Portfolio Management・CI/CD・Advanced CI/CD・Security Essentials・Compliance・Duo Agent Platform (DAP) から選択。 | GitLab テクニカルインストラクター | 3 時間のターゲットを絞ったセミナー＋1 時間の Q&A で、主要な GitLab 機能について領域の専門家と深く議論し、最も重要でインパクトの大きい領域に集中します。GitLab のプロトレーニングスタッフとの Q&A を通じて、一般的な概念から実世界の実践的な応用まで、あらゆる質問に回答します。 |
 | [GitLab インストラクター主導トレーニング（アドオン）](https://about.gitlab.com/professional-services/education/) | 8 時間セッション | GitLab テクニカルインストラクター | 最大 12 名の参加者向けの GitLab 認定インストラクター主導トレーニング。GitLab プラットフォームを効果的に活用するための重要なインサイトと技術を習得します。コアな機能と機能の実践的なメリットを示すハンズオンラボと GitLab 内のワークフロー最適化を含みます。 |
 | GitLab University Enterprise（アドオン） | ライセンス更新と共同期限付きの年次サブスクリプション | GitLab Professional Services エンジニア（セットアップ用）、セルフサーブ | GitLab University Enterprise の専用インスタンスをセットアップし、すべてのセミナー録画とその他の学習コンテンツを一元管理し、ユーザー向けの学習パスをキュレートし、さまざまな GitLab 領域にわたるトレーニング導入状況を監視します。 |
 
@@ -53,4 +53,4 @@ GitLab トレーニング - セミナーサービスは、GitLab テクニカル
 
 ## 有効期限
 
-上記の情報は 2025 年 6 月 20 日時点で有効です。
+上記の情報は 2026 年 6 月 26 日時点で有効です。

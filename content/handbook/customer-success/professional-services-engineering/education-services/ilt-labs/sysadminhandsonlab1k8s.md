@@ -2,11 +2,11 @@
 title: "GitLab システム管理者 - ハンズオンラボ: Kubernetes 管理ダッシュボードの探索"
 description: "このハンズオンガイドでは、Kubernetes 上の GitLab インストールの管理ダッシュボードを紹介します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab1k8s/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T16:44:44Z"
+upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
+translated_at: "2026-09-22T21:12:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-09-22T09:07:08-04:00"
 ---
 
 ## 目的
@@ -53,7 +53,7 @@ GitLab インスタンスのセキュリティを高めるために、ユーザ�
 
 ## ラボガイド完了
 
-このラボ演習を完了しました。このコースの他の[ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandson)を参照できます。
+このラボ演習を完了しました。このコースの他の[ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonk8s)を参照できます。
 
 ## ご提案はありますか?
 
