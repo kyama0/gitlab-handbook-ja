@@ -1,10 +1,10 @@
 ---
 title: "CSE Assigned"
-description: "CSE Assigned モーションの概要。CSM または CSA が付いていない ARR $100K 以上のアカウントに対する、プロアクティブな担当 CSE によるカバレッジ。"
+description: "CSE Assigned モーションの概要。CSM または CSA が付いていない、対象条件を満たすアカウントに対する、プロアクティブな担当 CSE によるカバレッジ。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: "2026-07-29T14:14:43+00:00"
-translated_at: "2026-07-31T08:50:51+09:00"
+upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
+lastmod: "2026-09-23T10:06:34Z"
+translated_at: "2026-09-23T21:14:34+00:00"
 translator: codex
 stale: false
 ---
@@ -21,9 +21,9 @@ CSE Assigned は、名前付き Customer Success Engineer が、定義された�
 
 このモーションは、**Pool** モーション（リアクティブでケースベースのカバレッジ）と**[Success Tiers](/handbook/customer-success/success-services/)**（有償のハイタッチエンゲージメント）の間に位置します。CSE Assigned は追加費用なしで顧客の契約に含まれます。Success Tiers の代替ではありません。顧客がより深いエンゲージメントを求める場合、それは AE にとっての Success Tiers の機会です。
 
-> **適格性：** CSE Assigned は **ARR $100K 以上**のすべてのアカウントを対象とし、ARR の上限はありません。実務上の上限はキャパシティです。各 CSE はおよそ 50 アカウントを担当するため、カバレッジは ARR 帯ではなく担当ブックの規模によって制限されます。
+> **適格性：** CSE Assigned は、CSM または CSA が付いていない、対象条件を満たすアカウントを対象とします。対象条件の閾値については、社内ハンドブックを参照してください。実務上の上限はキャパシティです。各 CSE はおよそ 50 アカウントを担当するため、カバレッジは担当ブックの規模によって制限されます。
 
-## このページについて
+## このページについて {#on-this-page}
 
 1. [対象範囲と役割のスコープ](/handbook/customer-success/csm/segment/cse/cse-assigned-scope/)
 1. [役割と責任](/handbook/customer-success/csm/segment/cse/cse-assigned-roles-responsibilities/)

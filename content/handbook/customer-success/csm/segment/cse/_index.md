@@ -1,18 +1,18 @@
 ---
 title: "CSEs"
 upstream_path: /handbook/customer-success/csm/segment/cse/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:40:38+09:00"
+upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
+translated_at: "2026-09-23T21:14:34+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-29T14:14:43+00:00"
+lastmod: "2026-09-23T10:06:34Z"
 ---
 
 [CSM ハンドブックホームページ](/handbook/customer-success/csm/)で、CSM に関連するその他のハンドブックページをご覧ください。
 
 ---
 
-## Success On-Demand ティア
+## Success On-Demand ティア {#success-on-demand-tier}
 
 CSE チームは GitLab の **On-Demand サクセスティア** を提供し、ウェビナー、ハンズオンラボ、オフィスアワー、オンデマンドエンゲージメントを通じて、すべての GitLab 顧客に技術的な製品専門知識とベストプラクティスガイダンスを提供します。CSE はプール型モデルで働き、特定のアカウントに専任として配置されることはありません。
 
@@ -59,7 +59,7 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 
 4\. **[CSE Assigned](/handbook/customer-success/csm/segment/cse/cse-assigned/)**
 
-- CSM/CSA が付いていない ARR $100K 以上のアカウントに対する、プロアクティブな担当 CSE によるカバレッジ。
+- CSM または CSA が付いていない、対象条件を満たすアカウントに対する、プロアクティブな担当 CSE によるカバレッジ。
 
 - 役割と責任（RACI）、運用リズム、ヘルス評価、CTA を扱います。
 
@@ -89,25 +89,25 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 
 [CSE 顧客セグメントの ARR 閾値については、この Wiki ページを参照してください](https://gitlab.com/gitlab-com/customer-success/csm/-/wikis/CSM-Segments)（GitLab 内部）。
 
-![Customer Lifecycle Journey CSE](/images/customer-success/csm/segment/cse/CustomerLifecycleJourneywithMetrics-ScaleCSE_Nov-2023.png)
+![CSE の顧客ライフサイクルジャーニー](/images/customer-success/csm/segment/cse/CustomerLifecycleJourneywithMetrics-ScaleCSE_Nov-2023.png)
 
 以下に記載されている [CSE DCI マトリクス](/handbook/people-group/directly-responsible-individuals)は、チーム間のコラボレーションを向上させるためのガイドフレームワークとして機能するよう設計されています。これは CSE と連携するアカウントにのみ適用されることに注意してください。CSM または CSA が管理するアカウントについては、エンゲージメントルールに関する [CSMA の DCI](/handbook/customer-success/account-team/#customer-success-manager-csm/) を参照してください。
 
-#### **ジャーニーステージ: プレセールスとアライメント**
+#### **ジャーニーステージ: プレセールスとアライメント** {#journey-stage-pre-sales--alignment}
 
 | アクティビティ | タスク | CSE | AE | RM | SA | PS | Support | エグゼクティブスポンサー | プロダクトとエンジニアリング |
 |-------|------|------|-----|----|----|----|------|----|-----|
 | テックチャンピオンの特定 | ソリューションのカスタマイズのための主要なユーザーペルソナを定義してエンゲージする。 | I |C,I||DRI|||||
 | セールスからカスタマーサクセス（CS）への引き継ぎ | シームレスな移行のためにセールスから CS への詳細な情報転送を確保する。 | I |C,I||DRI|||||
 
-#### **ジャーニーステージ: オンボード**
+#### **ジャーニーステージ: オンボード** {#journey-stage-onboard}
 
 | アクティビティ | タスク | CSE | AE | RM | SA | PS | Support | エグゼクティブスポンサー | プロダクトとエンジニアリング |
 |--------------|------------|------|-----|----|----|----|------|----|-----|
 | GitLab セットアップと機能実装に関する一般的なアドバイス | オンボーディングキャンペーンの一部として、Gainsight によってオンボーディング後の自動メールが送信されます。顧客は CSE との通話を予約して、セットアップとニーズについて話し合うことができます。 | DRI |C,I|I||||||
 | 技術的なインテグレーションとセットアップサポート | 顧客のニーズと目標に合わせて GitLab をセットアップする（例えば、アーキテクチャとデプロイメント戦略）ための直接支援を提供する。 ||C,I|I|C,I|DRI||||
 
-#### **ジャーニーステージ: イネーブル**
+#### **ジャーニーステージ: イネーブル** {#journey-stage-enable}
 
 | アクティビティ | タスク | CSE | AE | RM | SA | PS | Support | エグゼクティブスポンサー | プロダクトとエンジニアリング |
 |--------------|------------|------|-----|----|----|----|------|----|-----|
@@ -118,7 +118,7 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 
 コメント: (C,I) - 状況に依存します。
 
-#### **ジャーニーステージ: 拡張**
+#### **ジャーニーステージ: 拡張** {#journey-stage-expand}
 
 | アクティビティ | タスク | CSE | AE | RM | SA | PS | Support | エグゼクティブスポンサー | プロダクトとエンジニアリング |
 |--------------|------------|------|-----|----|----|----|------|----|-----|
@@ -127,7 +127,7 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 
 コメント: (C),(I) - 状況に依存します。
 
-#### **ジャーニーステージ: 最適化と更新**
+#### **ジャーニーステージ: 最適化と更新** {#journey-stage-optimize--renew}
 
 | アクティビティ | タスク | CSE | AE | RM | SA | PS | Support | エグゼクティブスポンサー | プロダクトとエンジニアリング |
 |--------------|------------|------|-----|----|----|----|------|----|-----|
@@ -142,7 +142,7 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 
 CSE チーム固有の責任の追加概要については、職種ページ [CSE の責任と要件](/job-description-library/sales/customer-success-engineer/)を参照してください。
 
-### <i class="fa-solid fa-book" style="color: #B197FC;"></i> **CSE コンテンツハンドブック**
+### <i class="fa-solid fa-book" style="color: #B197FC;"></i> **CSE コンテンツハンドブック** {#cse-content-handbook}
 
 コンテンツ/1:many は、非常に大規模な顧客ベースにわたって顧客採用を規模でドライブするための戦略の重要な部分です。この戦略を実行するための専任リソース/DRI が必要です。
 

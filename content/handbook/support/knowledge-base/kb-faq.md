@@ -2,11 +2,11 @@
 title: FAQ とベストプラクティス
 description: ナレッジベースに参加する際のよくある質問とベストプラクティスの提案
 upstream_path: /handbook/support/knowledge-base/kb-faq/
-upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
-translated_at: "2026-05-08T13:00:00Z"
+upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
+translated_at: "2026-09-23T21:05:43+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-04T13:35:11-05:00"
+lastmod: "2026-09-23T14:30:48-04:00"
 ---
 
 このセクションは、ナレッジ記事のベストプラクティスを案内し、よくある質問にお答えするために用意されています。
@@ -42,11 +42,23 @@ lastmod: "2026-02-04T13:35:11-05:00"
 
 [ナレッジスライド](https://docs.google.com/presentation/d/1flmNz8K6SF5JLMFSFSV00v3lt1Z53UtuH3FgHtNQJEc/edit#slide=id.g2d8fe3d02d9_0_27)
 
-## 質問と回答
+## 質問と回答 {#questions--answers}
+
+**ナレッジ記事を削除する必要がある場合は、どうすればよいですか？**
+
+記事を削除するには、[記事リポジトリ](https://gitlab.com/gitlab-com/support/articles)にアクセスしてください。
+
+1. 記事が Gov/Global/Sandbox のどこにあるかを記録します
+2. 記事を削除します。
+3. [CSS に FR を作成](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/work_items/new?issuable_template=Feature)します。削除が必要な記事を伝えてください
+
+その後、記事が削除されます
+
+### その他の注意事項 {#other-notes}
 
 | 機能                                                                                       |  メモ                                                                            |
 |:--------------------------------------------------------------------------------------------- |:------------------------------------------------------------------|
-|**ナレッジについて助けが必要な場合は誰に連絡すればよいですか？**                                            | Slack チャンネル [#spt_Knowledge-base](https://join.slack.com/share/enQtODg0OTU5Mzk4OTQ3NC1lZDZjYjViODEzYzgxMjg0ZmZjY2Q5Mzc2ZTc1ZDQxZDkyZWRiYTA4ZmI0MmQyZWMyMjI3ZTMzMjgxYzdjYjVk) を使ってください|
+|**ナレッジについて助けが必要な場合は誰に連絡すればよいですか？**                                            | Slack チャンネル [#spt_Knowledge-base] を使ってください|
 |**ナレッジの作成、変更、公開のためのトレーニングはありますか？**                        | はい！ 利用可能なトレーニングリソースのリストはナレッジベーストレーニングページにあります](./knowledge-base-training)|
 |**自分が Support Engineer か Knowledge Champion かをどう確認できますか？**                            | [ロールと権限のセクション](../knowledge-base/#roles-and-permissions) で権限を確認してください。|
 |**作成したナレッジ記事の承認と公開は誰ができますか？**                                 | [Technical Reviewers](https://docs.google.com/spreadsheets/d/14CIIVup-tS5HdLyl0wInf-2m50AptauyhG-ZW5uhs-I/edit?gid=0#gid=0) が記事を承認して公開します。|
