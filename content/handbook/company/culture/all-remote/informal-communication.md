@@ -2,20 +2,20 @@
 title: "オールリモート環境におけるインフォーマルコミュニケーション"
 description: リモート会社でインフォーマルコミュニケーションを育む方法
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab リモートチームの画像"
+twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/informal-communication/"
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
+translated_at: "2026-09-23T21:14:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-22T22:24:08-07:00"
 ---
 
 このページでは、GitLab でインフォーマルコミュニケーションがどのように行われるか、それが [対面でのやり取り](/handbook/company/culture/all-remote/) をどのように補完するか、そしてなぜそれがオールリモート [カルチャー](/handbook/company/culture/#culture-at-gitlab) で重要なのかを詳しく説明します。以下に 20 以上のインフォーマルコミュニケーションを育む方法があり、私たちは常に新しい方法を発見し追加しています。
 
-## **インフォーマルコミュニケーション** とは何を意味するか？
+## **インフォーマルコミュニケーション** とは何を意味するか？ {#what-do-we-mean-by-informal-communication}
 
 職場でのインフォーマルコミュニケーションは、同僚間のやり取りで構成されており、それは非公式な性質のものであり、典型的なビジネス構造の通常の階層の外で社会的関係を構築することに焦点を当てています。
 
@@ -23,31 +23,31 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 天気について話すこと、ペット、お気に入りの食べ物や休日の写真を共有すること、誕生日の挨拶や励ましのメッセージを送ること、冗談、雑談、笑い - これらすべてが [完全な自分自身を仕事に持ち込む](/handbook/company/culture/inclusion/) ことの一部です。
 
-## 職場におけるフォーマルコミュニケーションとインフォーマルコミュニケーションの違いは何ですか？
+## 職場におけるフォーマルコミュニケーションとインフォーマルコミュニケーションの違いは何ですか？ {#what-is-the-difference-between-formal-and-informal-communication-in-the-workplace}
 
 GitLab は [非同期で働く](/handbook/communication/#asynchronous-communication) オールリモート組織なので、ほぼすべての仕事のコミュニケーションが [文書化](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation) されており、すべての仕事関連のコミュニケーションが「フォーマル」なコミュニケーションになっています。これは私たちの [透明性](/handbook/values/#transparency) の価値観をサポートします。
 
 私たちは関係構築を大切にしています。インフォーマルコミュニケーションを通じて関係を構築する時間を意図的に作ることを非常に重視しています。
 
-## なぜリモートワーク環境ではインフォーマルコミュニケーションがそれほど重要なのですか？
+## なぜリモートワーク環境ではインフォーマルコミュニケーションがそれほど重要なのですか？ {#why-is-informal-communication-so-important-in-a-remote-work-setting}
 
 インフォーマルコミュニケーションは [信頼の非公式な下部構造](/handbook/leadership/building-trust/) を構築します。この信頼は、人々が意思決定を受け入れるのに役立ちます。その受容により、意思決定の成功した実行がより可能になります。
 
 常に仕事ばかりしているオールリモートワーカーは、[孤独](https://about.gitlab.com/blog/2018/04/27/remote-future-how-remote-companies-stay-connected/) や [バーンアウト](mental-health/) のリスクを抱えます。孤独とバーンアウトに対処する最良の方法の 1 つは、業務日、週、月を通じてインフォーマルコミュニケーションを介した定期的な社会的交流を優先することによる関係構築です。
 
-## インフォーマルコミュニケーションの利点と欠点
+## インフォーマルコミュニケーションの利点と欠点 {#informal-communication-advantages-and-disadvantages}
 
 他者を知るために時間を費やすことで成長する人もいれば、仕事に関係のないテキストやメッセージにイライラする人もいます。多様なチームメンバー間のインフォーマルコミュニケーションには、高いレベルの [共感](being-a-great-remote-manager/#empathy) が必要です。
 
 マネージャーとチームメイトがあなたの境界を知り、尊重できるように、コミュニケーションの好みを透明にすることが役立ちます。
 
-## インフォーマルコミュニケーションを正式に設計する
+## インフォーマルコミュニケーションを正式に設計する {#formally-design-informal-communications}
 
 > Sid Sijbrandij on [Twitter/X](https://twitter.com/sytses/status/1270721630537277442)
 >
 > リモートで働くときは、インフォーマルコミュニケーションを公式化することが重要です。社会的なつながりと信頼を作り、構築し、維持するための時間を明示的に計画します。私たちの [ハンドブックには 15 の方法がリストされており](/handbook/company/culture/all-remote/informal-communication/)、このスレッドで要約します。
 
-### インフォーマルコミュニケーションを組織する
+### インフォーマルコミュニケーションを組織する {#organize-informal-communication}
 
 仕事以外の人生についてのチャットなどのインフォーマルなチームメンバーコミュニケーションは、信頼を構築するために必要です。信頼は素晴らしいビジネス結果に不可欠であり、[カルチャーの基盤要素](/handbook/company/culture/#culture-at-gitlab) です。多くの企業は、オフィスがインフォーマルコミュニケーションに必要だと信じているため、オフィスや施設に多額の投資をしています。
 
@@ -61,7 +61,7 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 {{% /card %}}
 {{% /cardpane %}}
 
-### 仕事以外のトピックの会話を大切にする
+### 仕事以外のトピックの会話を大切にする {#valuing-conversation-on-non-work-topics}
 
 インフォーマルコミュニケーションは重要です。なぜなら、仕事 *以外* の事柄に関連して仕事で友情を形成できるからです。仕事で本物の友人がいると感じる人は、[仕事を楽しむ可能性が高く](https://onlinelibrary.wiley.com/doi/full/10.1111/peps.12109)、高いレベルで遂行し、会社に投資された気持ちを感じ、組織内の他の人にサービスを提供します。GitLab では、私たちもそのような結果を望んでおり、[Results 価値観](/handbook/values/#results) を強化します。
 
@@ -71,7 +71,7 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 オールリモート環境では、インフォーマルコミュニケーションは正式に扱われるべきです。リーダーはインフォーマルコミュニケーションを組織し、可能な限り、世界中のチームメンバーが仕事に関連しないトピックについて会話するために誰にでも気軽に連絡できる雰囲気を設計するべきです。
 
-## コミュニティインパクトアウティング
+## コミュニティインパクトアウティング {#community-impact-outings}
 
 コミュニティインパクトアウティングは、Zoom ハッピーアワーに代わる意味のある選択肢です。チームメイトとビデオコールでチャットするために共有時間を割り当てる代わりに、各チームメンバーがその時間を地元コミュニティに振り向ける正式なアウティングを検討してください。このアプローチは、タイムゾーンや家族の都合に配慮するだけでなく（カレンダー上の設定された時間ではなく、特定の週の任意の時点で 1 時間を使用できるため）、私たち全員をユニークにするものの核心、つまり私たちが選んだ家と環境を祝います。
 
@@ -83,7 +83,7 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 人々が *仕事以外* の地元の近隣やコミュニティでソーシャルクォータを満たし、その後、そのカルチャーを仕事 *に* 持ち込むことを可能にすることで、インフォーマルコミュニケーションを育むためのリフレッシングな媒体が生まれます。
 
-## 偶然の出会いの機会を作る
+## 偶然の出会いの機会を作る {#create-opportunity-for-chance-meetings}
 
 > Sid Sijbrandij on [Twitter/X](https://twitter.com/sytses/status/1264341436138270720)
 >
@@ -91,27 +91,27 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 同じ場所にいる環境では、計画されていない出会いが興味深いアイデアや仮説につながり、イノベーションを生み出すことができます。リモート環境では、リーダーシップは「偶然の出会い」がまだ発生する機会を作るべきです。
 
-### リモートレトロスペクティブ
+### リモートレトロスペクティブ {#remote-retrospectives}
 
 意図的に組織された [リモートレトロスペクティブ](https://about.gitlab.com/blog/2019/12/19/how-gitlab-handles-retrospectives/) は、偶然の議論の雰囲気を作り出します。特定の事柄について即興で話すために特別にそこにいるからです。Zoom は [Breakout Rooms](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061583) をサポートしており、そのような会話を促進するのに役立つかもしれません。
 
-### イノベーションコミュニティ
+### イノベーションコミュニティ {#innovation-communities}
 
 偶然の出会いを作るために存在するリモートコミュニティに参加するよう従業員を奨励してください。[Open Assembly](https://open-assembly.com) はそのようなネットワークの 1 つで、「カルチャーとビジネスが仕事の未来に移行するのを助ける会話、コミュニティ、学習をホストします」。これは、誰もが新しい人々と関わり、共通の基盤を見つけ、洞察を共有する準備ができて到着する、非常に集中したセッションを作り出し、これらすべてが職場のカルチャーとエネルギーにフィードバックします。
 
-### カンファレンスとイベント
+### カンファレンスとイベント {#conferences-and-events}
 
 リモートチームは [対面でのエンゲージメント](/handbook/company/culture/all-remote/) を味わい予期する傾向があります。対面でのやり取りはリモートロールではあまり一般的でないため、リーダーシップにとってカンファレンスやイベントの有用性を最大化する機会となります。
 
 リーダーは、チームをカンファレンスに送ることを、密集した一連の偶然の出会いを組織する効率的な方法として検討すべきです。各人がその後、より理性的な空間に戻り、新しく蒔かれたアイデアを処理し、蒸留し、努力を注ぎ込みます。
 
-### ローカルコミュニティの力
+### ローカルコミュニティの力 {#the-power-of-local-communities}
 
 グローバルなリモートワークは、より多様な場所からイノベーションが生まれる素晴らしい機会を作ります。リモートチームが、近隣や家のコミュニティのメンバーとのローカルなやり取りでソーシャルクォータの一部を満たす力を持つため、彼らははるかに豊かな入力のセットを経験します。
 
 毎週の [非同期](/handbook/communication/#asynchronous-communication) デブリーフィングを検討してください。リモートチームメンバーが家庭のコミュニティで学んだ教訓や直面した課題を共有することで、新しい製品やソリューションにリンクされた職場内のスピンオフ会話が生まれる可能性があります。
 
-## 関係構築に時間を捧げる
+## 関係構築に時間を捧げる {#devote-time-to-fostering-relationships}
 
 {{% cardpane %}}
 {{% card footer="GitLab マーケティングチーム Show & Tell ソーシャルコール" %}}
@@ -139,11 +139,11 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 > **「チームメンバーの新しい家の見学、彼らのクリスマスの飾り付けの賞賛、ペットや子どもが登場したときの歓声、夕食を準備しているのを見るなど、私がオフィスの仕事では決して経験したことのなかった同僚の個人生活への垣間見が与えられました。」** - [Rebecca](/handbook/company/team#rebecca), Managing Editor, GitLab
 
-## インフォーマルコミュニケーションをどう改善できるか？
+## インフォーマルコミュニケーションをどう改善できるか？ {#how-can-informal-communication-be-improved}
 
 上記のすべてのアイデアに加えて、個人としてもチームとしてもインフォーマルコミュニケーションを改善する方法のベストプラクティスをキュレートしました。
 
-## コール上で人間的なつながりの余地を作る
+## コール上で人間的なつながりの余地を作る {#creating-room-for-human-connection-on-calls}
 
 {{% cardpane %}}
 {{% card footer="帽子と背景でアレンジ" %}}
@@ -153,19 +153,19 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 同じ場所にいる環境では、ミーティングは個人的な会話で始まる傾向があります。バーチャルコールはそれに対してより受け入れにくい感じがするかもしれないので、チームは共感と人間的なつながりのスペースを作ることについて意図的でなければなりません。純粋に仕事に関するコールの連続カレンダーは [バーンアウト](mental-health/) につながる可能性があります。GitLab では、以下の方法でこれを達成します。
 
-### スピーディミーティング
+### スピーディミーティング {#speedy-meetings}
 
 私たちの全体的な [Communications Handbook](/handbook/communication/#scheduling-meetings) の一部として、私たちは Google Calendar の「スピーディミーティング」設定を利用することを好みます。これは、コール前の雑談や会話を奨励します。また、ミーティング間に充電とリセットのためのスペースを提供します。
 
-### 共感をもって先導する
+### 共感をもって先導する {#lead-with-empathy}
 
 仕事関連の各コールは、誠実で心のこもった「調子はどうですか？」、または同様の適切な紹介で始まるべきです。誰もがあなたが知らない戦いに直面していることを覚えておくことが重要であり、リモート設定では積極的に耳を傾けるべきです。
 
-### コール中の中断を歓迎する
+### コール中の中断を歓迎する {#welcome-interruptions-in-calls}
 
 私たちはペット、子ども、配達、隣人、またはパートナーがコールを中断することを歓迎すべきです。これは絆を深め、仕事の経験を人間化する機会です。本人がオープンであれば、話すのに数分かけたり、チームメンバーにペット/家族について詳しく共有するように頼んだりしましょう。
 
-## 絵文字を使って感情を伝える
+## 絵文字を使って感情を伝える {#using-emoji-to-convey-emotion}
 
 絵文字は通常、職場の外で発生する個人的な会話のために予約されてきましたが、オールリモート従業員はチームメンバーとの日常的な対話でそれらを使うことに快適さを感じるべきです。
 
@@ -177,7 +177,7 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 コミュニケーションには [Giphy](https://slack.com/help/articles/204714258-Giphy-in-Slack) Slack アプリの使用も検討してください。このアプリでは、アニメ GIF のライブラリを検索し、Slack で送ることができます。
 
-## タレントショー
+## タレントショー {#talent-shows}
 
 {{% cardpane %}}
 {{% card footer="GitLab マーケティングタレントショー" %}}
@@ -189,13 +189,13 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 これらを 1 〜 2 週間前に組織すると、チームメンバーが準備できるようになります。GitLab のマーケティングチームは [Zoom でタレントショーを開催](https://twitter.com/darrenmurph/status/1243194687453835265) し、ビデオコールに 130 人以上が参加しました。モデレーターは、同僚が Google Doc にどう配置されているかに基づいて呼びかけ、審査員は最後に結果を集計しました。
 
-## バーチャルツアー
+## バーチャルツアー {#virtual-tour}
 
 [コーヒーチャット](informal-communication/#coffee-chats) または [show and tell](informal-communication/#show-and-tell) 中に、あなたが住んでいて働いている場所のバーチャルツアーを提供するための時間を取りましょう。これにより、バーチャルに「誰かを家に招待」しながら、他の人があなたをよりよく知ることができます。これを非公式に（ラップトップで歩き回りながら）行うことも、録画されたビデオを使用してチーム内で友好的な競争にすることもできます（[Architectural Design's Open Door](https://youtu.be/xlNC8Q62imU) スタイルのように）。
 
 これは Threat Management サブ部門のチームデーで行われました。彼らは活動の 1 つとして「バーチャルホームツアー」を含め、チームと共有するために [ビデオを録画](https://drive.google.com/file/d/1go2xx8IoPUW7SiLSKU3vqWDBOYKx5dT8/view) しました（*ビデオは GitLab 内部でのみ利用可能*）。
 
-## ポストカード交換
+## ポストカード交換 {#postcard-swapping}
 
 真にグローバルなチームで働くということは、あなたの街で他に誰も働いていない可能性があるということです。あなたの場所に特定のポストカードを同僚に送ることは、所属感を育む素晴らしい方法であり、通常非常に安価です。GitLab チームメンバーのグループは、世界中のホームシティ、町、村から住所を交換し、お互いにポストカードを送るために #postcrossing Slack チャネルをセットアップしました。
 
@@ -206,7 +206,7 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 1. [Arty のポストカードボード](https://twitter.com/TheRealArty/status/1420903891764342786)
 1. [Manoj が 12 か国に 30 枚以上のポストカードを送る様子](https://twitter.com/manoj_g33k/status/1379339796447784961)
 
-## コーヒーチャット
+## コーヒーチャット {#coffee-chats}
 
 {{< youtube "CH-NHoBOeho?start=496" >}}
 
@@ -216,7 +216,7 @@ GitLab は [非同期で働く](/handbook/communication/#asynchronous-communicat
 
 一緒に働く人を知る、日常的なことについて話す、コーヒー、お茶、またはお気に入りの飲み物を共有する素晴らしいチャンスです。私たちは、あなたが一緒に働く人々と友人になり、関係を構築して、より快適で、丸みのある環境を作ってほしいと思っています。
 
-### コーヒーチャットのスケジューリング
+### コーヒーチャットのスケジューリング {#scheduling-a-coffee-chat}
 
 GitLab チームメンバーは Google Calendar で簡単にコーヒーチャットをスケジュールし、ビデオコールへの 1 クリックリンクで Zoom にリンクできます。エグゼクティブリーダーシップとコーヒーチャットをスケジュールする場合は、EBA に連絡してお互いに利用可能な時間を見つけてください。[EBA Handbook](/handbook/eba/#executive-business-administrator-team) のリストにない場合は、以下の手順に従ってください。
 
@@ -229,7 +229,7 @@ GitLab チームメンバーは Google Calendar で簡単にコーヒーチャ�
 
 時間が他の人の労働時間外の場合、Google Calendar は警告し、提案された時間のリストから選択できます。
 
-### コーヒーチャットの多様化
+### コーヒーチャットの多様化 {#diversifying-your-coffee-chats}
 
 コーヒーチャットは、GitLab であなたの視点を意図的に広げる素晴らしい機会です。意図的なコーヒーチャットに関するいくつかの提案:
 
@@ -240,7 +240,7 @@ GitLab チームメンバーは Google Calendar で簡単にコーヒーチャ�
 
 [GitLab org chart](https://comp-calculator.gitlab.net/org_chart)、[Product stages page](/handbook/product/categories)、または [Team page](/handbook/company/team) を使って、ペアになるチームメンバーを見つけることができます。
 
-### URG チームメンバーとのリーダーシップコーヒーチャット
+### URG チームメンバーとのリーダーシップコーヒーチャット {#leadership-coffee-chat-with-urg-team-members}
 
 CEO の要請により、2021-03-01 をもって `Leadership Coffee Chats with URG Team Members` の取り組みを開始しています。これは、リーダーシップと Underrepresented Groups (URGs) との間のより多くの会話と相互理解の向上を目指したものです。私たちのゴールは、アライシップを増やし、GitLab のすべての URG と関わるためのあらゆる機会を活用することです。最初のイテレーションは黒人チームメンバーから始まります。将来のイテレーションには、LatinX、アジア人、LGBTQ、女性などとのコーヒーチャットが含まれます。話される内容はすべて機密のままです。
 
@@ -274,7 +274,7 @@ URG チームメンバーがコールのために質問やトピックを思い�
 
 質問がある場合は、[Staff EBA to the CEO](/handbook/eba/#executive-business-administrator-team)、Manager, Diversity Inclusion and Belonging、または People Business Partner に連絡してください。質問/フィードバックが公開で投稿できる場合は、slack チャネル #urg-leadership-coffee-chat に投稿してください。
 
-### ドーナツボット
+### ドーナツボット {#the-donut-bot}
 
 チームメンバーは `#donut_be_strangers` Slack チャネルに参加して、コーヒーチャットのためにランダムなチームメンバーとペアになることができます。["Donut" bot](https://www.donut.com) は隔週月曜日に自動的にチャネルの 2 人にメッセージを送ります。
 一緒にチャットをスケジュールしてください。Donut はフィードバックのためにフォローアップします。
@@ -286,7 +286,7 @@ URG チームメンバーがコールのために質問やトピックを思い�
 
 *2022 年、Donut は GitLab で 1265 人が 4186 のコーヒーチャットを通じてつながったと報告しました。これは類似サイズの企業の 356 チャットと比較されます。*
 
-### GitLab チームメンバーミキサーコール
+### GitLab チームメンバーミキサーコール {#gitlab-team-member-mixer-calls}
 
 コーヒーチャットと同様に、「[GitLab Team Member](/handbook/communication/top-misused-terms/) Mixer」コールは、チームメンバーが普段あまり一緒に働いたり交流したりしない他のグループやファンクションの人々と会うのを助けることを目指しています。
 
@@ -294,7 +294,7 @@ GitLab チームメンバーミキサーをセットアップするには、2 �
 
 最後に、ホストと共同ホストの *ゲスト* は、2 人の新しいゲストと別の GitLab チームメンバーミキサーコールをセットアップします。このようにして、参加は組織全体に広がり、できる限り多くのチームメンバーをつなぎます。
 
-### ジュースボックスチャット
+### ジュースボックスチャット {#juice-box-chats}
 
 コーヒーチャットと同様、「ジュースボックスチャット」は GitLab チームメンバーと彼らの子ども、孫、または家族の他のメンバーがお互いを知り合う機会です。これらのチャットは非公式でも、特定のトピック（レゴ、スーパーヒーロー、キャンプ、ビデオゲーム）に焦点を当ててもよく、すべて素晴らしい主題になります。
 
@@ -302,7 +302,7 @@ GitLab チームメンバーミキサーをセットアップするには、2 �
 
 [内部のタイムゾーンと関心のドキュメント](https://docs.google.com/spreadsheets/d/1SSeFAMLKWuBZ9Ku32SzorKV_KHW5jTqTVAOovr3HeGM/edit#gid=0) を見て、あなたに合うグループを見つけるか、Slack で `#kid-juicebox-chats` チャネルに参加してください。
 
-## チームデーとソーシャルコール
+## チームデーとソーシャルコール {#team-days-and-social-calls}
 
 {{% cardpane %}}
 {{% card footer="GitLab 会社コールで aloha を広める" %}}
@@ -314,9 +314,7 @@ GitLab のいくつかのチームは、仲間意識を構築するために定�
 [データチーム](/handbook/enterprise-data/) は毎週火曜日に開催しています。
 チームメンバーとマネージャーは、これらのコールをチームメンバー間のインフォーマルでアジェンダフリーのやり取りの媒体として作成することを奨励されています。
 
-[チームデー](/handbook/leadership/building-trust/#host-a-team-day) は、仕事と関係構築を混ぜる別の機会であり、同期または非同期で機能するように構造化できます。
-
-## Show and Tell
+## Show and Tell {#show-and-tell}
 
 ソーシャルイベントのために共有カレンダーを作成することを検討してください。これにより、人々がより便利なタイムゾーンにあるソーシャルイベントに参加し、認識できるようになります。例えば、GitLab の [マーケティング](/handbook/marketing) チームには「Show and Tell」コールがあり、チームメンバーが作ったものを表示し、その背景にあるストーリーを共有することを奨励されています。
 
@@ -324,7 +322,7 @@ GitLab のいくつかのチームは、仲間意識を構築するために定�
 
 Show and Tell セッションは、仕事の経験を人間化し、同僚をより深く、より個人的なレベルで知るのに優れた方法です。彼らが誇りに思っていること、仕事以外で充実感を提供するものを紹介します。
 
-## チーム DJ Zoom ルーム
+## チーム DJ Zoom ルーム {#team-dj-zoom-room}
 
 {{% cardpane %}}
 {{% card footer="Zoom でバーチャル DJ ルームを開始する時間" %}}
@@ -345,18 +343,18 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 これに関するさらなる手順は [このサポートページ](https://support.bookwhen.com/en/articles/3942332-playing-music-on-a-zoom-live-stream-video-call) にあります。
 
-## 会社ソングブックを作成する
+## 会社ソングブックを作成する {#create-a-company-songbook}
 
 チーム DJ Zoom ルームがあなたのチームに響いた場合、会社ソングブックを作成することを検討してください。[GitLab Songbook](/handbook/company/culture/songbook/) を訪れてインスピレーションを得てください。
 
-## AMA (Ask Me Anything)
+## AMA (Ask Me Anything) {#ama-ask-me-anything}
 
 ![GitLab バリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 [AMA](/handbook/company/culture/all-remote/) をホストすることは、人々が他の人について学ぶ素晴らしい方法です。質問は仕事についても *できますが*、これらは、より個人的なつながりを可能にする面白くて遠回しな質問をする機会として役立ちます。エグゼクティブとの継続的な AMA を検討することは特に重要です。AMA はリーダーを人間化し、私たちは [異なるよりも似ている](https://allpoetry.com/Human-Family) ことをチームに思い出させます。
 
-## 祝祭と祝日
+## 祝祭と祝日 {#celebrations-and-holidays}
 
 {{% cardpane %}}
 {{% card footer="ハロウィンの Airplane! の楽しみ" %}}
@@ -366,18 +364,18 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 世界中に分散したチームは、多くの祝祭の機会を作り出します。さまざまな国や文化が独自の方法で祝うことができ、チームメンバーが同僚にとって重要な主要な日付やイベントを理解できるようになります。チームが会社コールで祝祭を思慮深く表現することを奨励するカルチャーは、健全でインクルーシブなものです。
 
-### グローバルピザパーティ/食事
+### グローバルピザパーティ/食事 {#global-pizza-partiesmeals}
 
 チームはまた、世界中で共有食事を手配することができます。[グローバルピザパーティ](https://about.gitlab.com/blog/2019/10/02/support-virtual-pizza-party/) は、共有設定（Zoom または Slack）で文書化し楽しむことができますが、タイムゾーンに応じて朝食ピザを検討することもできます。
 
-## ソーシャルゲーム
+## ソーシャルゲーム {#social-games}
 
 ![Luna Park ライブゲームショーでの GitLab チーム](/images/all-remote/luna_park_game_show_gitlab.jpg)
 {style="max-width: 50%;"}
 
 [Luna Park](https://lunapark.com/) のようなプラットフォームを通じて、ピアや同僚をオンラインゲームショーに連れて行くことができます。一部のソーシャルゲームは [Collab](https://collab.getchinwag.com) のような同期エクスペリエンス用に作られていますが、オンデマンドゲームはタイムゾーンを越えた非同期エンゲージメントにより適しています。
 
-## バーチャルランチテーブル
+## バーチャルランチテーブル {#virtual-lunch-table}
 
 {{% cardpane %}}
 {{% card footer="素晴らしいチームに乾杯" %}}
@@ -391,7 +389,7 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 食事を共有することは、特にグローバルにオープンにすると、人間としてつながる強力な方法です。これにより、よりカジュアルな雰囲気が生まれ、ビデオコールの中心に仕事がない、より個人的なレベルで同僚とつながることができます。
 
-## バーチャルスカベンジャーハント
+## バーチャルスカベンジャーハント {#virtual-scavenger-hunt}
 
 {{% cardpane %}}
 {{% card footer="GitLab でのバーチャルスカベンジャーハント" %}}
@@ -401,23 +399,23 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 GitLab の Customer Success チームは GitLab（製品）を使った [世界規模のスカベンジャーハント](https://gitlab.com/gitlab-com/customer-success/tam/issues/212) を考案し実行しました。これは [GitLab Unfiltered ブログで詳細に説明](https://about.gitlab.com/blog/2020/04/06/cs-scavenger-hunt/) されており、簡単に複製できます。
 
-## バーチャルトリビア
+## バーチャルトリビア {#virtual-trivia}
 
 GitLab のグローバル [マーケティングチーム](/handbook/marketing) は隔週でパブスタイルのトリビアをプレイします。個人またはチームとして競い合うことができ、推奨時間は 1 時間です。GitLab 組織内の人々は、チームのためにゲームを手配したい場合は `events@gitlab.com` にメールしてください。
 
 GitLab は MysteryTrip を活用しており、大規模なチームによく対応し、オーガナイザーに重い準備の負担をかけません。MysteryTrip は質問の準備作業を処理し、トリビアマスターとして機能し、自動採点とリーダーカードを備えています。これにより、ゲームの立ち上げが迅速かつ簡単になり、価格はプレイヤー 1 人あたり約 $20 に設定されています。GitLab 組織外の人々は、定期的に予定されているトリビアセッションは、誰もが仕事から焦点を離し、共有体験に参加する優れた方法です。
 
-## 共同作業コール
+## 共同作業コール {#co-working-calls}
 
 これらのビデオコールは、Zoom でスケジュールされた作業セッションで、チームメンバーは同僚と一緒に挑戦的なタスクに取り組んだり、各自が自分のタスクに取り組みながら一緒に過ごしたりすることができます。
 これは、伝統的なオフィス設定で対面で行うかもしれない生産的な作業セッションを、自分のデスクの快適さから再現します。
 高度モードを試したい場合は、一緒に作業しながら画面共有してください（機密性の問題に注意してください）。
 
-## 共同バーチャルクイズ
+## 共同バーチャルクイズ {#collaborative-virtual-quizzes}
 
 [Kahoot](https://kahoot.com) のような共同クイズツールは、バーチャルチームビルディング活動に使用できます。Zoom で小さなブレイクアウトグループに分かれてお互いを知り、質問に答えます。中央セッションに戻ったら、質問を確認し、回答に関するストーリーを共有できます。勝者に賞品を提供することで、友好的な競争を取り入れましょう。
 
-## デジタルエクスペリエンスを人間化する
+## デジタルエクスペリエンスを人間化する {#humanizing-the-digital-experience}
 
 COVID-19 の影響を受けて、多くの急にリモートになった企業は、デジタルエクスペリエンスを人間化しようとしています。オフィスでのインフォーマルコミュニケーションを構造化することについて意図的でなかった企業の場合、この空白はリモート環境で著しく目立つようになります。
 
@@ -437,7 +435,7 @@ COVID-19 の影響を受けて、多くの急にリモートになった企業�
 1. Slack 上のチームのための [Geekbot](https://geekbot.com) "What I Did This Weekend" 投票
 1. チームや全体ビデオコールのためのドレスアップ/帽子のテーマ
 
-### 共感とつながりを構築するためのツール
+### 共感とつながりを構築するためのツール {#tools-for-building-empathy-and-connection}
 
 1. [Kona by Sike Insights](https://www.heykona.com/) でリモートチームの共感、関係、結束を構築
 1. [Yac](https://www.yac.com) を介したチームの非同期音声メッセージング

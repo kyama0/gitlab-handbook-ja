@@ -10,9 +10,9 @@ participating-stages: []
 toc_hide: true
 description: "ユーザー、プロジェクト、管理者が管理する複数のソースから、文書化された優先順位とマージ戦略によって GitLab AI クライアントの設定を解決するためのアーキテクチャ決定記録。"
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/012_enterprise_managed_ai_clients/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-16T07:16:38-07:00"
-translated_at: "2026-09-20T02:36:07.933665+00:00"
+upstream_sha: "81725dc1fe315a2e7d8a91637eb11f77d81b0ff7"
+lastmod: "2026-09-23T09:31:09+12:00"
+translated_at: "2026-09-23T21:13:12.279317+00:00"
 translator: codex
 stale: false
 ---
@@ -134,7 +134,7 @@ interface SettingDefinition<T> {
   description: string;                      // used for docs and $schema
   merge: MergeStrategy;                     // see merge strategies below
   allowedSources?: SourceId[];              // omit = any source may set it
-  onUnavailable?: 'fallthrough' | 'failClosed'; // when an administrator source cannot be loaded
+  onUnavailable?: 'fallthrough' | { failClosedTo: T }; // when an administrator source cannot be loaded
   clients?: Array<'cli' | 'editor' | 'ci'>; // where the setting applies; omit = every client
 }
 
@@ -255,7 +255,7 @@ resolver.get(settings.telemetry.enabled);   // Resolved<boolean>
 1. 解析できないファイルは `unavailable` です。クライアントはパスと解析エラーを示して 1 回警告し、次へ進みます。エラーから復旧するために設定ファイルを削除したり、その内容を置き換えたりすることはありません。ユーザーが修正できるよう、ファイルはそのまま残します。
 1. 検証に失敗した値は、キーと期待する型を示す警告とともに破棄します。ファイルの残りの部分は保持します。
 1. 未知のキーは無視するため、時間の経過とともにキーを追加または削除できます。
-1. 管理ファイルが読み取り不可である、またはリモート取得が失敗するなどの理由で管理者のソースを読み込めない場合、デフォルトの動作は `fallthrough` です。そのソースは存在しないものとして扱い、次のソースを適用します。好みの設定には適切ですが、ガバナンスの設定では、まさにポリシーにアクセスできなくなった時点で制限を解除することになります。そのような設定は `onUnavailable: 'failClosed'` を宣言します。クライアントは、そのソースが最後に提供した値をキャッシュしていれば維持し、そうでなければ、空の許可リストや安全性に関する真偽値の `true` など、最も制限の厳しい値を使用します。ポリシーを再び読み取れるようになるまで、クライアントは制限された状態で利用可能なままとなります。
+1. ある設定を指定できる管理者のソースが、管理ファイルを読み取れない、リモート取得が失敗するなどの理由で読み込めない場合や、その設定のスキーマに適合しない値を提供した場合、デフォルトの動作は `fallthrough` です。そのソースは存在しないものとして扱い、次のソースを適用します。好みの設定には適切ですが、ガバナンスの設定では、まさにポリシーにアクセスできなくなった時点で制限を解除することになります。そのような設定は `onUnavailable: { failClosedTo: value }` を宣言し、空の許可リストや有効化フラグの `false` など、ポリシーを読み取れない間に維持する値を指定します。ほとんどのマージ戦略では、クライアントがスキーマから安全な方向を導き出せないため、値を明示的に宣言します。また、`default` は、どのソースもその設定を指定していないときの値という、本来の意味を保ちます。ポリシーを再び読み取れるようになるまで、クライアントは制限された状態で利用可能なままとなり、その設定は読み取り専用になります。
 1. 設定ファイルに書き込めない場合も、変更は実行中のセッションに適用し、クライアントは保存できなかったことを報告します。
 
 ### ファイル形式 {#file-format}

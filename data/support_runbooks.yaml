@@ -505,7 +505,6 @@
     topic: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics/-/blob/master/data/Other/License%20and%20Renewals%20Internal%20Requests/Paid%20Cloud%20Exemption.md'
     procedure: 'https://gitlab.com/gitlab-support-readiness/zendesk-copilot/procedures/-/blob/master/data/US%20Government/Other/License%20and%20Renewals%20Internal%20Requests/L&R%20IRs%20-%20Cloud%20Licensing%20exemption.md'
     macros:
-    - 'L&R::IRs::Cloud Licensing exemption::Not approved'
     - 'L&R::IRs::Cloud Licensing exemption::Conversion made'
     articles: []
 - name: 'Paid Extensions'

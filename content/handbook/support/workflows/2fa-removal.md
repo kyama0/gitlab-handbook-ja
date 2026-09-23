@@ -4,35 +4,35 @@ category: GitLab.com
 subcategory: Accounts
 description: "2FA 解除リクエストを処理する方法を詳述するワークフロー"
 upstream_path: /handbook/support/workflows/2fa-removal/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T06:05:46+09:00"
+upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
+translated_at: "2026-09-23T21:05:43+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-15T06:21:19-04:00"
+lastmod: "2026-09-23T12:53:07-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 このワークフローは、GitLab.com アカウントの[二要素認証](https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html)（2FA）の無効化に焦点を当てています。リクエストの認証に関する一般的な原則は、[アカウント認証ワークフロー](account_verification.html)で説明しています。
 
 2FA の解除は、以下のワークフローが成功した場合にのみ完了できます。
 
-{{< alert type="note" >}}
-**2026 年 9 月 15 日より、Enterprise ユーザーの 2FA 解除リクエストは自動化されています。**[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たさないユーザーのリクエストは、手動検証に切り替わります。[手動検証（フォールバック）](#manual-verification-fallback)を参照してください。告知については、[2FA 解除リクエストの変更](https://support.gitlab.com/hc/en-us/articles/30223695893660-2FA-Removal-Request-Changes)を参照してください。
+{{% alert type="note" %}}
+**2026 年 9 月 15 日より、Enterprise ユーザーの 2FA 解除リクエストは自動化されています。**[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たさないユーザーのリクエストは、[手動検証](/handbook/support/workflows/2fa-removal/#manual-verification-fallback)に切り替わります。告知については、[2FA 解除リクエストの変更](https://support.gitlab.com/hc/en-us/articles/30223695893660-2FA-Removal-Request-Changes)を参照してください。
 
 **トップレベルグループのオーナーが、ロックアウトされたユーザーに代わってチケットを提出する必要があります。GitLab Support は、ロックアウトされたユーザー本人が直接提出する 2FA 解除チケットを受け付けなくなりました。**これは、手動検証に切り替わる非 Enterprise ユーザーを含むすべてのユーザーに適用されます。その場合も、オーナーがユーザーに代わって提出する必要があり、異なるのは検証方法（自動検証か、手動のチャレンジ質問か）のみです。
 
-{{< /alert >}}
+{{% /alert %}}
 
-## セルフサービスの回復オプション
+## セルフサービスの回復オプション {#self-service-recovery-options}
 
 チケットが必要になる前に、ユーザーは GitLab ドキュメントの[回復オプションと 2FA リセット](https://docs.gitlab.com/user/profile/account/two_factor_authentication_troubleshooting/#recovery-options-and-2fa-reset)を確認できます。これらのセルフサービスのオプションでは Support の関与は不要であり、以下のオーナーに関する要件にかかわらず利用できます。
 
 いずれも該当しない場合、ユーザーはトップレベルグループのオーナーに、自分に代わって 2FA 解除チケットを提出するよう依頼する必要があります。以下を参照してください。
 
-## 関連トピック
+## 関連トピック {#related-topics}
 
-### GitLab チームメンバー
+### GitLab チームメンバー {#gitlab-team-members}
 
 ユーザーが GitLab チームメンバーである場合は、[IT Ops に連絡](/handbook/eta/corporate-it/end-user-services/)してもらってください。
 
@@ -62,16 +62,16 @@ GitLab.com ユーザーが 2FA リセットの対象となるためには、以�
 
 請求書を提供できない場合は、[レガシーのメール／パスワードでサインイン](https://customers.gitlab.com/customers/sign_in?legacy=true)するように提案してください。そこで請求書をダウンロードできます。
 
-## チケットをシンプルかつ正確に保つ
+## チケットをシンプルかつ正確に保つ {#keep-the-ticket-simple-and-accurate}
 
 2FA 解除チケットは**記録に残るもの**であるため、シンプルかつ正確で、アクセスの問題に厳密に焦点を絞る必要があります。
 **お客様が無関係な話題を持ち出さないようにしてください。**
 
 ## 2FA の無効化：オーナーが開始する自動ワークフロー {#disable-2fa-automated-owner-initiated-workflow}
 
-{{< alert type="note" >}}
-**このワークフローは Enterprise ユーザーに対してのみ自動化されています。**対象ユーザーが[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たす場合、Zendesk は Support の介入なしで以下のチェックを実行します。非 Enterprise ユーザーを対象とするリクエストは自動化では解決できず、必ず[手動検証](#manual-verification-fallback)に切り替わります。
-{{< /alert >}}
+{{% alert type="note" %}}
+**このワークフローは Enterprise ユーザーに対してのみ自動化されています。**対象ユーザーが[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たす場合、Zendesk は Support の介入なしで以下のチェックを実行します。非 Enterprise ユーザーを対象とするリクエストは自動化では解決できず、必ず[手動検証](/handbook/support/workflows/2fa-removal/#manual-verification-fallback)に切り替わります。
+{{% /alert %}}
 
 トップレベルグループのオーナーが、対象ユーザーのメールアドレスと、オーナー自身のアカウントから生成した Support PIN を使ってリクエストを提出します。
 
@@ -85,7 +85,27 @@ Zendesk は自動的に以下を実行します。
 
 ### 手動検証（フォールバック） {#manual-verification-fallback}
 
-この経路は非 Enterprise ユーザーに適用されます。リクエストしたオーナーのネームスペースに対して[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たさない対象ユーザーは、自動化のステップ 2 と 3 でチェックに失敗します。
+この経路は、自動チェックが失敗した場合に適用されます。自動化が失敗した理由にかかわらず、ここから開始してください。
+
+1. **ステップ 1**：対象ユーザーが[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たすかを手動で確認します。
+1. **ステップ 2**：満たす場合は、[Enterprise ユーザーのワークフロー](#enterprise-user-workflow)に従います。
+1. **ステップ 3**：満たさない場合は、[非 Enterprise ユーザーのワークフロー](/handbook/support/workflows/2fa-removal/#non-enterprise-user-workflow)に従います。
+
+#### Enterprise ユーザーのワークフロー {#enterprise-user-workflow}
+
+対象ユーザーが自動化のチェックに失敗したものの、サポートにおける Enterprise ユーザーの定義を満たすことを独自に確認できた場合に使用します。
+
+1. 管理画面 `https://gitlab.com/admin/users/USERNAME` で、リクエストしたオーナーの Support PIN を確認します。Support PIN は、オーナーがチケットのメタデータで提供します。
+1. ZenDesk の [GitLab Super App](/handbook/eta/css/zendesk/apps/global#gitlab-super-app)の `2FA Helper` を使用して、[リスクファクター](https://internal.gitlab.com/handbook/support/#risk-factors-for-account-ownership-verification)（GitLab 社内向け）を判断します。
+1. 検証に成功した場合は、Slack の #support_gitlab-com を通じて、チームの別のメンバーに自分の決定のピアレビューを依頼します。
+1. 検証に失敗した場合は、以下を実行します。
+   1. 検証なしではアカウントに対して何も対応できないことを伝えます。2FA については、[Support::SaaS::GitLab.com::2FA::2FA Removal Verification - GitLab.com - Failed - Final Response](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/2FA/2FA%20Removal%20Verification%20-%20GitLab.com%20-%20Failed%20-%20Final%20Response.md?ref_type=heads) マクロを使用します。
+   1. チケットを「Solved」としてマークします。
+
+#### 非 Enterprise ユーザーのワークフロー {#non-enterprise-user-workflow}
+
+自動判定か手動確認かにかかわらず、対象ユーザーがサポートにおける Enterprise ユーザーの定義を
+満たさない場合に使用します。
 
 1. リクエストしたオーナーに、チケットの CC に対象ユーザーを追加するよう依頼し、[Support::SaaS::GitLab.com::Account Ownership Verification - GitLab.com](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Account%20Ownership%20Verification%20-%20GitLab.com.md?ref_type=heads) マクロを送信します。
 1. 対象ユーザー本人が[アカウント所有権検証](account_verification.html)のチャレンジ質問に直接回答する必要があります。オーナーが対象ユーザーに代わって回答することはできません。
@@ -95,14 +115,14 @@ Zendesk は自動的に以下を実行します。
    1. 検証なしではアカウントに対して何も対応できないことを伝えます。2FA については、[Support::SaaS::GitLab.com::2FA::2FA Removal Verification - GitLab.com - Failed - Final Response](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/2FA/2FA%20Removal%20Verification%20-%20GitLab.com%20-%20Failed%20-%20Final%20Response.md?ref_type=heads) マクロを使用します。
    1. チケットを「Solved」としてマークします。
 
-## アカウント管理プロジェクトのメンバーであるユーザーの 2FA 解除リクエスト
+## アカウント管理プロジェクトのメンバーであるユーザーの 2FA 解除リクエスト {#request-for-2fa-removal-for-a-user-who-is-a-member-of-an-account-management-project}
 
 Support は、アカウント管理プロジェクトのメンバーである GitLab.com ユーザーの 2FA をリセットするリクエストを受け取ることがあります（[GitLab.com ユーザーの条件](#conditions-for-gitlabcom-users)の項目 5 に記載されています）。
 
 このシナリオで 2FA リセットを進めるには、以下を確認してください。
 
 1. ユーザーは他の GitLab.com グループのメンバーまたはオーナーですか？
-   - 該当する場合、この方法では進めず、代わりに[上記の自動ワークフロー](#disable-2fa-automated-owner-initiated-workflow)を参照してください。
+   - 該当する場合、この方法では進めず、代わりに上記の自動ワークフローを参照してください。
    - 該当しない場合は続行します。
 1. Zendesk で、そのユーザーの組織の CSM、AM、または ASE（担当者がいるお客様の場合）を特定します。
 1. 特定した GitLab チームメンバーをチケットに CC し、内部ノートでメンションします。このノートには以下を含める必要があります。
@@ -112,7 +132,7 @@ Support は、アカウント管理プロジェクトのメンバーである Gi
    - 注：上記に加えて、その GitLab チームメンバーに Slack で連絡してもかまいません。
 1. 上記の GitLab チームメンバーが保証し、PIN を検証したら、管理者アカウントにサインインして[Admin Note](/handbook/support/workflows/admin_note.md)を追加し、2FA を無効化します。
 
-## フローチャート
+## フローチャート {#flowchart}
 
 以下のフローチャートで、上記の自動ワークフローと、そのフォールバックとなる手動検証の流れを確認できます。
 
@@ -127,11 +147,13 @@ flowchart TD
     G{Support PIN matches <br/>requester's PIN?}
     H[🛑 Ticket rejected]
     I([🟢 Admin note added, 2FA disabled, <br/>ticket commented and closed])
+    N{SE independently confirms target <br/>meets Enterprise User support definition?}
+    O[SE verifies Support PIN, <br/>adds admin note, disables 2FA]
     J[Owner asked to CC target user]
     K[Target answers account <br/>ownership verification challenges]
     L{Challenges passed <br/>& peer reviewed?}
     M[🛑 Ticket rejected/closed]
- 
+
     A --> B
     B -->|No| C
     B -->|Yes| D
@@ -141,18 +163,24 @@ flowchart TD
     E -->|Yes| G
     G -->|No| H
     G -->|Yes| I
-    F --> J
+    F --> N
+    N -->|Yes| O
+    O --> I
+    N -->|No| J
     J --> K
     K --> L
     L -->|Yes| I
     L -->|No| M
- 
+
 click F href "#manual-verification-fallback"
+click N href "#manual-verification-fallback"
+    click O href "#enterprise-user-workflow"
+click J href "#non-enterprise-user-workflow"
 ```
 
-## メールワンタイムパスワード（OTP）の強制
+## メールワンタイムパスワード（OTP）の強制 {#email-one-time-password-otp-enforcement}
 
-### 概要
+### 概要 {#overview-1}
 
 GitLab.com では、パスワードでサインインするユーザーには MFA が必須\*になります。ユーザーはアプリベースの TOTP または WebAuthn デバイスでこの要件を満たせます。どちらも設定されていない場合、ユーザーはサインインを完了するためにメール経由で送信されるワンタイムパスワードを入力する必要があります。
 
@@ -164,29 +192,29 @@ GitLab.com では、パスワードでサインインするユーザーには MF
 - [トークンを使ったクローン](https://docs.gitlab.com/topics/git/clone/#clone-using-a-token)
 - [Container Registry での認証](https://docs.gitlab.com/user/packages/container_registry/authenticate_with_container_registry/#authenticate-with-a-token)
 
-### セルフサービスのオプション
+### セルフサービスのオプション {#self-service-options}
 
 ユーザーは Email OTP コードを、自分のプライマリーメールアドレスや、アカウントに設定された任意の検証済み [セカンダリーメールアドレス](https://docs.gitlab.com/user/profile/#add-emails-to-your-user-profile)に送信できます。
 
-### 有償アカウントへのサポート介入
+### 有償アカウントへのサポート介入 {#support-intervention-for-paid-accounts}
 
 Email One-Time Passwords (Email OTP) 開発ガイドの
 [ロギングに関するセクション](https://docs.gitlab.com/development/email_one_time_passwords/)
 を参照して、Email OTP に関連する問題のトリアージとデバッグを支援してください。
 
-#### メールアカウントの喪失
+#### メールアカウントの喪失 {#lost-email-accounts}
 
 ユーザーがメールアドレスへのアクセスを失い Email OTP を受信できない場合は、[メールアカウント喪失のワークフロー](/handbook/support/workflows/lost_emails/)に従ってください。
 
-#### Email OTP コードのメールが届かない場合のサポート介入
+#### Email OTP コードのメールが届かない場合のサポート介入 {#support-intervention-for-missing-email-otp-code-emails}
 
 ユーザーがメールアドレスにはアクセスできるが Email OTP コードを受信できない場合、[Mailgun ログの確認](/handbook/support/workflows/confirmation_emails/#checking-mailgun-logs)と [Mailgun でメールを確認または再送する方法](/handbook/support/workflows/confirmation_emails/#how-to-see-or-resend-emails-in-mailgun)の手順に従ってください。
 
-#### ブロックされた API エンドポイントの調査
+#### ブロックされた API エンドポイントの調査 {#investigating-blocked-api-endpoints}
 
 サポートは ElasticSearch ログを使用して、現在ブロックされている API エンドポイントでパスワード認証を試みているエンドポイントおよびユーザーを見つけられます。
 
-##### ワークフロー
+##### ワークフロー {#workflow}
 
 1. ユーザーが [対象条件](#conditions-for-gitlabcom-users)を満たすことを確認します
 1. [アカウント認証マトリクス](/handbook/support/workflows/account_verification.md#account-verification-matrix)を使用して本人確認を完了します
@@ -202,15 +230,15 @@ Email One-Time Passwords (Email OTP) 開発ガイドの
 
 <https://docs.gitlab.com/development/email_one_time_passwords/#password-api-authentication-failures> も参照してください。
 
-#### Email OTP の遅延に対するサポート介入
+#### Email OTP の遅延に対するサポート介入 {#support-intervention-for-delaying-email-otp}
 
 サポートは、トップレベルネームスペースのオーナーからリクエストを受けた場合に、有償ユーザーの Email OTP の強制を遅延させることができます。
 
-##### Enterprise ユーザーに対する強制の遅延
+##### Enterprise ユーザーに対する強制の遅延 {#delay-enforcement-for-enterprise-users}
 
 **Enterprise ユーザー** に対する Email OTP 強制を遅延させるには、リクエストはトップレベルネームスペースの Enterprise オーナーから発信されている必要があります。各リクエストの適格性を確認するには、[アカウント所有権検証適格性マトリクス](/handbook/support/workflows/account_verification/#account-verification-matrix)を参照してください。これは [サポートの Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たすユーザーにも適用されます。
 
-##### 非 Enterprise ユーザーに対する強制の遅延
+##### 非 Enterprise ユーザーに対する強制の遅延 {#delay-enforcement-for-non-enterprise-users}
 
 **有償（非 Enterprise）ユーザー** に対する Email OTP 強制を遅延させるには、リクエストはトップレベルネームスペースのオーナーから発信され、**単一ユーザーをターゲット** にする必要がありますが、アカウント所有権検証の回答は [アカウント所有権検証適格性マトリクス](/handbook/support/workflows/account_verification/#account-verification-matrix)に従ってターゲットユーザーが提出する必要があります。
 
@@ -221,7 +249,7 @@ Email One-Time Passwords (Email OTP) 開発ガイドの
 - API エンドポイントが Email OTP 要件によりブロックされている（上記参照）ため、別の認証への切り替えに時間が必要。
 - お客様が組織全体での移行計画のための遅延をリクエストしている。
 
-##### ワークフロー
+##### ワークフロー {#workflow-1}
 
 1. リクエスターが [アカウント所有権検証適格性マトリクス](/handbook/support/workflows/account_verification.md#account-verification-matrix)に基づいて変更をリクエストする資格があることを確認します
 2. [チャレンジ質問](/handbook/support/workflows/account_verification/#step-1-sending-challenges)を発行してアカウント所有権検証を完了します

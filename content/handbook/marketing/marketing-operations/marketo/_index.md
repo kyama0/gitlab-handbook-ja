@@ -2,11 +2,11 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: "/handbook/marketing/marketing-operations/marketo/"
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:22:16+00:00"
+upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
+translated_at: "2026-09-23T21:05:43+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-09-14T13:51:01-06:00"
+lastmod: "2026-09-22T17:08:38-06:00"
 ---
 
 ## Marketo について {#about-marketo}
@@ -197,7 +197,7 @@ Marketing Operations のチームメンバーは、プロセスが正しく実�
 
 ビジュアルな概要については、この[スライド](https://docs.google.com/presentation/d/1KMyzQm_-7V7jeSJZuiedmIINti_uEWiW0NBYiX5viSA)を使用してください。
 
-### Re-MQL
+### Re-MQL {#re-mql}
 
 詳細については、[リードライフサイクルページ](/handbook/marketing/marketing-operations/lead-lifecycle/#lead-lifecycle)をご覧ください。
 
@@ -244,7 +244,7 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 - 認識される問題の概要と、それがワークフローに与える影響
 - 該当する場合、より高い/低いスコアになるべきだった最近のキャンペーンを記載
 
-#### Auto-MQL
+#### Auto-MQL {#auto-mql}
 
 特定の基準に基づいて、リードが auto-MQL する場合があります。なお、auto-MQL は `Behavior` スコアカテゴリの一部とみなされます。シナリオは以下のとおりです:
 
@@ -258,11 +258,9 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 | Meeting Requested, <br> Meeting Attended  | Conference > Meeting Attended, <br> Vendor Arranged Meeting > Meeting Requested   | +100 | 毎回 |
 | Inbound - High  | Contact Request, <br> Renewals, <br> In-app Health Check, <br> Duo Requests <br> | +100 | 1日1回 |
 | Inbound - Hand Raise  | [Hand Raise PQL](/handbook/product/product-principles/#a-pql-can-be-further-broken-down-into-two-types-usage-and-hand-raise) | +100 | 1日1回 |
-| [PTP Score](https://internal.gitlab.com/handbook/sales/propensity_models/)  |Propensity Model 経由で新たに 4 または 5 のスコアが割り当てられ、Lead Score Classification 経由で `A` または `B` のランキングが割り当てられた場合。<br> 詳細は[教育用デッキ](https://docs.google.com/presentation/d/1dxSXekzw-SIF1g4pjNf6QGNBUY1L6euggsqqr9BTHUY/edit#slide=id.g1d24c3e4ddd_5_252)またはハンドブックを参照 <br>  | +100 | 90日に1回 |
 | Web Chat - <br>Qualified  |ウェブチャットインタラクションまたはミーティング予約 | +100 | 30 日に 1 回 |
-|* Inbound - Med|インバウンドフォーム、上記以外で Startup 申請者を除く |    +100|1日1回|
-|MM+ Valuable Trials | MM+ および EDU 除外の Valuable Trials（SaaS および Self-Managed）  |+100 |6ヶ月に1回|
 |User Gems Past Champ |User Gems によって以前の champion としてタグ付けされた人物|+100|3 ヶ月に 1 回|
+<!--| [PTP Score](https://internal.gitlab.com/handbook/sales/propensity_models/)  |Propensity Model 経由で新たに 4 または 5 のスコアが割り当てられ、Lead Score Classification 経由で `A` または `B` のランキングが割り当てられた場合。<br> 詳細は[教育用デッキ](https://docs.google.com/presentation/d/1dxSXekzw-SIF1g4pjNf6QGNBUY1L6euggsqqr9BTHUY/edit#slide=id.g1d24c3e4ddd_5_252)またはハンドブックを参照 <br>  | +100 | 90日に1回 |-->
 
 #### ビヘイビアスコアリング {#behavior-scoring}
 
@@ -271,22 +269,23 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 |**ビヘイビア**|**キャンペーン説明 / プログラムステータス**|**割り当てポイント**|**スケジュール/フロー制限**|
 |:------:|:------:|:------:|:------:|
 |*Conference 参加 | Conference > Attended, <br> Conference > Attended On-Demand | +10 | 毎回|
-|*対面参加 | Executive Roundtables > Attended, <br> Owned Event > Attended, <br> Owned Event > Attended On-demand, <br> Speaking Session > Attended, <br> Vendor Arranged Meetings > Attended, <br> Vendor Arranged Meetings > Meeting Attended, <br> Live Event > Attended | +40 | 毎回|
+|*対面参加 | Executive Roundtables > Attended, <br> Owned Event > Attended, <br> Owned Event > Attended On-demand, <br> Speaking Session > Attended, <br> Vendor Arranged Meetings > Attended, <br> Vendor Arranged Meetings > Meeting Attended, <br> Live Event > Attended | +50 | 毎回|
 |*オンライン参加| Sponsored Webcast > Attended, <br> Sponsored Webcast > Attended On-demand, <br> Workshop > Attended, <br> Workshop > Attended On-demand, <br> Webcast > Attended (techdemo only), <br> Webcast > Attended On-demand (techdemo only)| +20| 毎回 |
 |*Webcast 参加 | Webcast > Attended, <br> Webcast > Attended On-demand | +40 | 毎回|
 |*Conference Booth | Conference > Visited Booth| +20 | 毎回|
 |*コンテンツシンジケーションダウンロード| Content Syndication > Downloaded| +10| 30日に1回|
-|*Gated Content - High|Gated Content > Downloaded（Forrester または Gartner を含む必要あり）| +35|毎回|
+|*Gated Content - High|Gated Content > Downloaded（Forrester または Gartner を含む必要あり）| +50|毎回|
 |*Gated Content - Med|Gated Content > Downloaded|+15|  毎回|
+|* Inbound - Med|インバウンドフォーム、上記以外で Startup 申請者を除く |    +50|1 日に 1 回|
 |*Paid Social | Paid Social > Responded  |+10| 毎回|
-|*PathFactory |PF コンテンツを消費|+10| 毎回|
-|対面登録 |Owned Event > Registered, <br> Field Event > Registered, <br> Speaking Session > Registered, <br> Conference > Meeting Requested, <br> Live Event > Registered|    +20    |毎回|
-|オンライン登録 |Workshop > Registered, <br> Sponsored Webcast > Registered, <br> Webcast > Registered, <br> Executive Roundtables > Registered, <br> Vendor Arranged Meetings > Registered|    +20    |毎回|
+|*PathFactory |PF コンテンツを消費|+10| 1 日に 1 回|
+|対面登録 |Owned Event > Registered, <br> Field Event > Registered, <br> Speaking Session > Registered, <br> Conference > Meeting Requested, <br> Live Event > Registered|    +10    |毎回|
+|オンライン登録 |Workshop > Registered, <br> Sponsored Webcast > Registered, <br> Webcast > Registered, <br> Executive Roundtables > Registered, <br> Vendor Arranged Meetings > Registered|    +10    |毎回|
 |Subscription|Subscription Form を記入    |+5|1週間に1回    |
 |*Survey - High|(None Defined)    |+45| 毎回|
 |*Survey - Med|(None Defined)    |+30| 毎回|
 |*Survey - Low|Googleforms, <br> Default    |+15|  毎回|
-|キーウェブページの訪問|`/pricing/`,<br> `/sales`,<br> `/install`,<br> `/features`,<br> `/direction`,<br> `/solutions/startups/`,<br> `/releases/gitlab-com/`    |+25    |1週間に1回    |
+|キーウェブページの訪問|`/pricing/`,<br> `/sales`,<br> `/install`,<br> `/features`,<br> `/direction`,<br> `/solutions/startups/`,<br> `/releases/gitlab-com/`    |+50    |1週間に1回    |
 
 ##### 自動ブースター {#automated-boosters}
 
@@ -304,11 +303,11 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 
 #### デモグラフィックスコアリング {#demographic-scoring}
 
-ジョブロール/ファンクションとシニアリティの説明は[こちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)で確認できます。デモグラフィックスコアリングには 70 pt のハードリミットがあり、最大値に達した後は、デモグラフィックスコアに関連するさらなるパーソンスコアの蓄積が制限されます。
+ジョブロール/ファンクションとシニアリティの説明は[こちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)で確認できます。デモグラフィックスコアリングには 60 pt のハードリミットがあり、最大値に達した後は、デモグラフィックスコアに関連するさらなるパーソンスコアの蓄積が制限されます。
 
 |**デモグラフィック特性**|キャンペーンタイプ|**ポイント**|**スケジュール/フロー制限**|
 |:-------------:|:-------:|:-----:|:--------:|
-|Setup for Company/Team Use|製品で会社またはチーム用に使用していると自己識別|    +25    |1回|
+|Setup for Company/Team Use|製品で会社またはチーム用に使用していると自己識別|    +10    |1回|
 |ビジネスメールドメイン|有効なビジネスメールアドレスを持っている|    +35    |1回|
 |シニアリティ - 高|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +15    |   1回|
 |シニアリティ - 中|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +15    |   1回|
@@ -325,13 +324,12 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 |**ビヘイビア減衰**|**キャンペーン説明**|**削除ポイント**|**スケジュール/フロー制限**|
 |:-------------:|:-------:|:-----:|:--------:|
 |30日間アクティビティなし|過去 30 日間にウェブ、スコアリング、プログラムのアクティビティなし、過去 30 日間に作成されていない|    -10    |    1ヶ月に1回|
-|Web: 低価値訪問|`/jobs`, `/careers`, `/unsubscribe`|    -10    |1日1回|
 |Email:  Bounce    |Email Hard Bounces|    -20|1ヶ月に1回|
 |Email: Unsubscribed|Email から購読解除|    デモグラフィックスコアに基づくスコアリセット    |1ヶ月に1回|
 
 | **デモグラフィック減衰** |**キャンペーン説明**|**削除ポイント**|**スケジュール/フロー制限**|
 |------|------|------|------|
-|ジェネリックドメイン|[ジェネリックメールドメインを含む](https://docs.google.com/spreadsheets/d/1IO7DAIvhAhvIydkvLjwP-X_g97Zharf8JpkSVIsmiSs/edit?usp=sharing)|    -10    |1回|
+|ジェネリックドメイン|[ジェネリックメールドメインを含む](https://docs.google.com/spreadsheets/d/1IO7DAIvhAhvIydkvLjwP-X_g97Zharf8JpkSVIsmiSs/edit?usp=sharing)|    -25    |1回|
 |シニアリティ - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -10    |    1回|
 |ファンクション - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -20    |  1回|
 
@@ -674,7 +672,7 @@ ABM リストは、フィールドマーケティングおよびマーケティ�
 
 少数のユーザーがエクスポートのパーミッションを持っており、適切なデータ管理手順に従い、データ分析のために PII をダウンロードすることを避けるべきです。
 
-## Marketo Sales Insight
+## Marketo Sales Insight {#marketo-sales-insight}
 
 Marketo Sales Insight（MSI）は、SFDC ユーザーが Marketo が取っているさまざまなアクションと Marketo を介したユーザーアクションを可視化するために使用されます。ユーザーはこのインテリジェンスを使用して、見込み客とより有意義な会話を行い、スコアに基づいてリードに優先順位を付けることができます。詳細については [Marketo のドキュメントページ](https://experienceleague.adobe.com/docs/marketo/using/product-docs/marketo-sales-insight/msi-for-salesforce/features/insights-dashboard-feature-overview.html?lang=en)で読むことができます。
 
@@ -684,27 +682,27 @@ SFDC インスタンスのタブで MSI を見つけることもできます - �
 
 MSI には主要なコンポーネントがいくつかあります:
 
-### Insights
+### Insights {#insights}
 
 このタブは、人物の最近のアクティビティのタイムラインを表示します。`すべての` 今後のメールキャンペーンとイベントが表示されます（注: これにはその見込み客に送信されたものだけでなく、すべての今後のメール/イベントが含まれます）。タイムラインでは、ウェブアクティビティ、メールの開封/クリック、インタレスティングモーメントを確認できます。各アクションの詳細を確認するために、リードタイムラインをクリックできます。また、全体的なスコアと過去 30 日間の変化のグラフも表示されます。以下のスクリーンショットを参照してください:
 
 ![Marketo Sales Insight](/images/marketing/marketing-operations/marketo/MSI.png)
 
-### Interesting Moments
+### Interesting Moments {#interesting-moments}
 
 インタレスティングモーメントは、人物がイベントに参加した時、プログラムステータスが変更された時、フォームを記入した時など、マイルストーンに到達した時にキャプチャされます。SDR は、リードビューの `Last Interesting Moments` フィールドを使用して、見込み客が Inquiry または MQL になる前に取った最後のアクションを素早く確認します。特定のアクティビティに対してインタレスティングモーメントを追加したい場合は、Mops に連絡して構築を依頼してください。
 
 詳細については、[このページ](/handbook/marketing/marketing-operations/marketo/interesting-moments)をご覧ください
 
-### Web Activity
+### Web Activity {#web-activity}
 
 このタブは、このビューで Cookie 化されたユーザーのすべてのウェブアクティビティを表示し、参照ページを含みます。リード/コンタクトでは、その特定の人物のアクティビティが表示され、Accounts では、そのアカウントに関連するすべてのコンタクトのアクティビティが表示されます。
 
-### Score
+### Score {#score}
 
 最近のスコア変更を確認するには、このタブを使用します。これは、人物が現在のスコアを達成するために取ったさまざまなアクティビティをすべて確認するのに役立ちます。スコアリングを引き起こしたキャンペーンは、上記の[スコアリングルーブリック](/handbook/marketing/marketing-operations/marketo/#scoring-models)とクロスリファレンスできます。
 
-### Email
+### Email {#email}
 
 このタブは、その特定の人物に送信されたすべてのメール、日付、開封またはクリックしたかどうかのチェックボックスを表示します。
 

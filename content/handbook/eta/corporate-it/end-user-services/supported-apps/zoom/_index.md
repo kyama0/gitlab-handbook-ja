@@ -4,16 +4,16 @@ description: Zoom の利用および設定ガイド
 aliases:
   - /handbook/security/corporate/end-user-services/supported-apps/zoom/
 upstream_path: /handbook/eta/corporate-it/end-user-services/supported-apps/zoom/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:07:25+09:00"
+upstream_sha: "81725dc1fe315a2e7d8a91637eb11f77d81b0ff7"
+lastmod: "2026-09-22T15:20:30-07:00"
+translated_at: "2026-09-23T21:13:12.279317+00:00"
 translator: codex
 stale: false
 ---
 
 Zoom は、社内および外部パートナーとのコミュニケーションに使用する、主要な音声・映像コミュニケーションソフトウェアです。シンプルなビデオ通話に加え、アプリには自動録画、共有ホワイトボードなど、多くの追加機能があります。
 
-## プライバシーとセキュリティに関する注意
+## プライバシーとセキュリティに関する注意 {#a-note-on-privacy-and-security}
 
 Zoom アプリは、Jamf を通じて EUS が直接管理しています。つまり、機能とセキュリティの両面でアプリを最新の状態に保つため、定期的に更新を自動配信しています。
 
@@ -26,6 +26,6 @@ Zoom を使用する際は、以下を確認してください:
 - [ラップトップ設定ガイドライン](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security)に従っていることを確認してください
 - Zoom プロフィールを更新し、カスタマイズした[パーソナルリンク](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#create-a-customized-personal-link)の作成を検討してください
 
-## 追加サポート
+## 追加サポート {#additional-support}
 
-Zoom に関する追加の支援が必要な場合は、Slack の #it_help または it-help@gitlab.com へ直接メールでお問い合わせください
+Zoom に関する追加の支援が必要な場合は、Slack の Compass App または it-help@gitlab.com へのメールで、私たちに直接お問い合わせください
