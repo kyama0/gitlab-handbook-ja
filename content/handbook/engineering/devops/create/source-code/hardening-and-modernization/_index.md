@@ -2,9 +2,9 @@
 title: "Create:Source Code Hardening & Modernization チーム"
 description: "Source Code の構造的なセキュリティとフロントエンドの問題に対処し、成果を機能担当チームに引き渡した後に解散する一時的なチーム。"
 upstream_path: /handbook/engineering/devops/create/source-code/hardening-and-modernization/
-upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
-lastmod: "2026-09-22T18:41:57+02:00"
-translated_at: "2026-09-22T21:16:35+00:00"
+upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
+lastmod: "2026-09-24T15:36:57+02:00"
+translated_at: "2026-09-24T21:11:16+00:00"
 translator: codex
 stale: false
 ---
@@ -32,9 +32,9 @@ Source Code は GitLab のコードベースで最も古い部分の 1 つで、
 | 氏名 | 役職 | 復帰先 |
 |---|---|---|
 | Vladimir Shushlin | Engineering Manager | Plan |
-| Kerri Miller | Staff Backend Engineer | 未定 |
-| Emma Park | Backend Engineer | 未定 |
-| Chaoyue Zhao | Frontend Engineer | 未定 |
+| Kerri Miller | Staff Backend Engineer | Create:Source Code Repository Services |
+| Emma Park | Backend Engineer | Create:Source Code Repository Services |
+| Chaoyue Zhao | Frontend Engineer | Create:Source Code Investigation |
 | Anastasia Khomchenko | Senior Frontend Engineer | Plan:Portfolio Planning |
 
 ## 成功の測定方法 {#how-we-measure-success}
@@ -48,6 +48,7 @@ Source Code は GitLab のコードベースで最も古い部分の 1 つで、
 
 ## リンク {#links}
 
+- [チームボード](https://gitlab.com/groups/gitlab-org/-/work_items/views/1032326)
 - [追跡用 Issue](https://gitlab.com/gitlab-org/create-stage/-/work_items/13313)（非公開）
 - [Create:Source Code チーム](/handbook/engineering/devops/create/source-code/)
-- Slack：`#g_create_source-code-hardening-and-modernization`
+- Slack：[#g_create_source-code-hardening-and-modernization](https://gitlab.enterprise.slack.com/archives/C0C37CWJHMM)

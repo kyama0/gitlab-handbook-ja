@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリの API エンドポイントの構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
-translated_at: "2026-09-22T21:11:03+00:00"
+upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
+translated_at: "2026-09-24T21:14:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-22T12:59:50+02:00"
+lastmod: "2026-09-24T09:51:04-01:00"
 ---
 
 ## コンテキスト
@@ -110,6 +110,8 @@ API の表面は、異なるルールを持つ 3 つの明確なカテゴリに�
 - フォーマット固有およびタイプ固有のフィールドは、オプションのトップレベルキーとして現れるのではなく、単一の `settings` オブジェクトの下にネストされます。`format` と `kind` のフィールドは判別子として機能します。クライアントはこれらを使用して `settings` の形状を解釈します。
 - `POST` と `PATCH` は、作成および更新操作に対して同じネストされた構造を受け取ります。
 
+種類固有のフィールドのうち 1 つは、`settings` のメンバーではなく、トップレベルのリクエストキーです。`kind=virtual` のリポジトリの作成・更新ボディで任意に指定できる、順序付きの `upstream_repository_ids` がそれに当たり、書き込み後にリポジトリが持つ関連付けを解決順に表します。キーを省略すると保存済みの関連付けは変わらず、空配列を指定すると関連付けがすべて解除されるため、作成時はどちらの場合も新しいリポジトリにアップストリームはありません。このフィールドを `settings` の外に置くのは、レスポンスでは `settings` がフォーマットごとの閉じたユニオン型としてシリアライズされる一方、このフィールドはレスポンスにシリアライズされて返されることがないためです。ネストすると、どのレスポンスにも含まれ得ないメンバーをそのユニオン型に追加することになります。他の種類のリポジトリに対して、このキーを含むボディを送ると `400` で拒否されます。これは、`settings` フィールドが定義されていない種類に `settings` オブジェクトを指定した場合と同じ、未定義フィールドに対する応答です。このフィールドには、リポジトリの権限に加えて [ADR-021](021_authorization.md) のアップストリームの権限が必要なため、サブリソースが拒否する書き込みを呼び出し元に許可することはありません。
+
 ##### リポジトリの削除 {#repository-deletion}
 
 `DELETE /api/v1/:slug/repositories/:repository_name` には、正確に `true` または `false` を値とする、破壊的操作の意図を示すクエリパラメータが **必須** です。このパラメータにデフォルト値はありません。パラメータを省略したリクエスト、またはそれ以外の値を指定したリクエストは `400 Bad Request` を返します。この ADR が定めるのは契約であり、識別子ではありません。パラメータ名と詳細なセマンティクスは、仕様と実装で決定します。
@@ -163,6 +165,8 @@ API の表面は、異なるルールを持つ 3 つの明確なカテゴリに�
 - `GET    /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories/:id` - アップストリームリポジトリの関連付けを取得
 - `PATCH  /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories/:id` - 関連付けの位置を更新。`position` フィールドのみ更新可能
 - `DELETE /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories/:id` - 仮想リポジトリからアップストリームの関連付けを解除
+
+これら 5 つのルートは、引き続き関連付けごとの書き込みパスであり、リポジトリの作成・更新ボディでは、[ネームスペースレベル API](#namespace-level-apis) で説明したリスト全体を扱う代替手段を利用できます。両者は表現する内容が異なります。ルートは 1 つの関連付けを変更し、ボディは最終状態を指定します。レジストリはその最終状態と現在の関連付けの集合を 1 つのトランザクションで照合し、反映します。1 つのフォームでリスト全体を編集する呼び出し元はボディを使用し、アップストリームを 1 つ追加または削除する呼び出し元はルートを使用します。
 
 **リモートリポジトリ - 接続テスト：**
 
