@@ -2,9 +2,9 @@
 title: GitLab のコミュニケーション
 description: "オールリモートの企業として、つながりを保ちながらより効率的に働くために、明確なコミュニケーションを実践することが私たちにとって重要です。"
 upstream_path: /handbook/communication/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:32:20+00:00"
+upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
+lastmod: "2026-09-24T08:56:35-04:00"
+translated_at: "2026-09-24T21:08:13+00:00"
 translator: codex
 stale: false
 ---
@@ -126,6 +126,17 @@ GitLab では、意図的な透明性やオープンな対話への人々の参�
 
 私たちはすべてのチームメンバーが [Manager of One](/handbook/leadership/#managers-of-one) でなければならないと信じているため、ほとんどのコミュニケーションは関連するグループによって処理されますが、一部のコミュニケーションは他のものよりも機微で議論を呼ぶものであることも分かっています。
 そうした場合、DRI は[社内コミュニケーション機能](/handbook/people-group/employment-branding/people-communications/)に関わってもらいたいと考えるかもしれません。
+
+### チームメンバーのプロフィールを記入する {#complete-your-team-member-profiles}
+
+チームメンバーがあなたを認識し、役割を理解し、対応可能な時間を確認できるように、オンボーディング中にチームメンバーのプロフィールを記入してください。役職、チーム、勤務時間が変わったら、これらのプロフィールを最新の状態に更新してください。
+
+1. [Slack プロフィール](/handbook/tools-and-tips/slack/#profile)。チームメンバーがあなたの役割を理解し、勤務時間を確認し、どのように呼びかければよいかを把握できるようにします。
+1. [Google プロフィール](/handbook/tools-and-tips/#google-profile)。ドキュメントでの共同作業やメールでのコミュニケーションの際に、チームメンバーがあなたを認識できるようにします。
+1. [GitLab プロフィール](/handbook/tools-and-tips/#gitlab-profile)。Issue やマージリクエストで共同作業をする際に、あなたが誰で、どのような役割を担っているかをチームメンバーやコミュニティの貢献者に伝えます。
+1. [GitLab チームページの項目](/handbook/about/editing-handbook/edit-team-page/)。GitLab 全体の人々が、あなたについて、また組織内のどこで働いているかを知ることができるようにします。この情報を最新の状態に保つことは、Product と Engineering の自動化にも不可欠です。
+1. [Zoom プロフィール](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)。ミーティングの参加者があなたを認識し、役割を理解できるようにします。詳しいガイダンスは、[Zoom のヒント](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips/)を参照してください。
+1. [個人の README](/handbook/leadership/#your-individual-readme)（作成している場合）。あなたが好む働き方や、あなたとの協働の仕方をチームメンバーが理解できるようにします。
 
 ### トップティップスとベストプラクティス {#top-tips-and-best-practices}
 
@@ -276,7 +287,7 @@ Google の["不在"](https://www.theverge.com/2018/6/27/17510656/google-calendar
 1. コメントや回答が別々のトピックを含む場合は、それぞれに別々のコメントを書いてください。そうすれば、他の人が [Reply to comment](https://docs.gitlab.com/ee/user/discussions/#start-a-discussion-by-replying-to-a-standard-comment) ボタンを使ってトピックに独立して対応できます。
 1. MR にフィードバックや質問を受け取ったら、コメントに応答するよう努めてください。[そうすることで、すべてのチームメンバーにとってのビロンギングの環境を作れるからです](/handbook/company/culture/inclusion/#gitlabs-definition-of-diversity-inclusion--belonging)。回答や応答をせずに MR をそのままマージすると、コメントした人は自分の意見が聞かれていないと感じます。あなたが素早い意思決定をする必要のない[直接の責任者](/handbook/people-group/directly-responsible-individuals/)（DRI）である場合、MR を変更しないことを選べますが、コメントやフィードバックには応答し、それらが MR の変更に値するかを検討し、[何をだけでなくなぜかを言う](/handbook/values/#say-why-not-just-what)べきです。
    コメントが多い場合は、主要なフィードバック領域を要約し、高いレベルで応答を共有することを選べます。私たちは、[DRI に説明させすぎると、こっそりとプロジェクトを出荷するインセンティブを作ってしまうことを理解しています。永遠の説明ループに陥る恐れは DRI を脱線させ、アクション志向で働くのではなく先送りさせる原因になります](/handbook/people-group/directly-responsible-individuals/#empowering-dris)。これは私たちが避けたいことです。
-   素早い意思決定が必要なときは、[人々が私たちの話を聞いてくれたが、全員のインプットに基づく素早い意思決定のために説明する義務はないことを受け入れなければなりません](/handbook/leadership/#making-decisions)。目標は透明性を持って協働することであり、効率を失うことではありません。全員が同意するわけではありませんが、すべての人が[同意しなくてもコミットし、それでも意見を異にする](/handbook/values/#disagree-and-commit)ことを期待しています。
+   素早い意思決定が必要なときは、[人々が私たちの話を聞いてくれたが、全員のインプットに基づく素早い意思決定のために説明する義務はないことを受け入れなければなりません](/handbook/leadership/#making-decisions)。目標は透明性を持って協働することであり、効率を失うことではありません。全員が同意するわけではありませんが、すべての人が[同意しなくてもコミットし、決定を支持する](/handbook/values/#disagree-and-commit)ことを期待しています。
 1. GitLab については、プロダクトのマージリクエストガイドラインは [Contribution guide](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#merge-request-guidelines) にあり、レビュアーやメンテナー向けのコードレビューガイドラインは私たちの [Code Review Guidelines](https://docs.gitlab.com/ee/development/code_review.html) で説明されています。
 1. 何かが完了していないときでも、人々が早期にコメントして手戻りを防げるよう、社内で共有してください。
 1. 誤って早期にマージされるのを防ぐために、<b>[ドラフト](https://docs.gitlab.com/ee/user/project/merge_requests/drafts.html)</b> マージリクエストを作成してください。ドラフトは、マージすることが **事態を悪化させる** 場合にのみ使ってください。ハンドブックへの貢献ではめったにそうなりません。進行中のほとんどのマージリクエストは事態を悪化させません。この場合はドラフトを使わないでください。誰かが予想より早くマージしたら、追加の項目について新しいマージリクエストを作成するだけです。まだドラフトステータスのものについて、最終レビューやマージを誰かに依頼しないでください。その時点で、あなたはそれが世に出すのに十分良いと確信しているべきです。
@@ -1001,7 +1012,7 @@ Note to table contributors:
 1. Google Groups とメール配信をプロビジョニングできるのは、Google Workspace のドメイン管理者のみです。
 1. メールは非同期です。たとえば、マネージャーが週末にメールを送ってきても、平日に返信して問題ありません。
 1. メールが **緊急** である、または緊急になった場合は、メールの件名を参照してチャットで人々に連絡してかまいません。
-1. あなたまたはあなたのチームが、現在の [Google メールグループ](https://gitlab.com/gitlab-com/security-tools/report-gsuite-group-members)にまとめられていないチームメンバーのグループに、特に個人を特定できる情報（ロケーション、州、国など）に関連したメールを送る必要がある場合は、total-rewards@gitlab の Total Rewards Analyst に連絡してください。承認があれば、Workday のデータからメールリストを作成できます。
+1. あなたまたはあなたのチームが、現在の [Google メールグループ](https://gitlab.com/gitlab-com/security-tools/report-gsuite-group-members)にまとめられていないチームメンバーのグループに、特に個人を特定できる情報（ロケーション、州、国など）に関連したメールを送る必要がある場合は、total-rewards@gitlab.com の Total Rewards Analyst に連絡してください。承認があれば、Workday のデータからメールリストを作成できます。
 1. 適切な場合は、Hi や Hello を含むプロフェッショナルな挨拶を使うことを検討し、Hey、Oh、Sup のような口語表現を避けてください。時には人の名前だけが適切なこともあります。社内のチームメンバーと外部の人々の両方とコミュニケーションを取るとき、フォーマルさのレベルは、しばしば以前のメッセージのフォーマルさを反映すべきです。
 1. メッセージを開始または返信するときは、特に複数の人が cc されている場合、宛先の人があなたが彼らに話しかけていると分かるよう、常に人の名前を使うようにしてください。
 1. 文の始まりや「I」という語など、大文字が必要なすべての文字と単語が大文字になっていることを確認してください。
@@ -1239,7 +1250,7 @@ GitLab 社内目的でドキュメントを共有するときの推奨デフォ�
 
 `repository`/`repositories` は、[ソースコード管理](https://about.gitlab.com/solutions/source-code-management/)の下でファイルが保管される場所です。ほとんどの場合、マージには MR が必要です。ハンドブックはリポジトリにあり、私たちのコードはリポジトリにある、などです。
 
-### README
+### README {#readmes}
 
 `README` - `README.md` ファイルは、リポジトリを閲覧するときにデフォルトで表示されるものです。プロジェクト/リポジトリが何のためのものかのコンテキストを与える有用な情報を含みます。これらは、個人の README として[ユーザープロフィール](https://docs.gitlab.com/ee/user/profile/#add-details-to-your-profile-with-a-readme)にも使えます。
 

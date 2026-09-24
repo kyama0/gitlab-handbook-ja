@@ -10,11 +10,11 @@ participating-stages: ["~Data Security Team", "~Department::Product Security" ]
 # Hides this page in the left sidebar. Recommended so we don't pollute it.
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/migrate_to_activerecord_encryption/
-upstream_sha: 5fcdd102793f56146077c82f37a89171dea6d0ba
-translated_at: "2026-04-27T13:25:33Z"
+upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
+translated_at: "2026-09-24T21:11:16+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-10T11:40:11+13:00"
+lastmod: "2026-09-24T09:50:53+12:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -58,17 +58,17 @@ GitLab はデータベース内の特定の機密データを暗号化してい�
 ### 対象外
 
 * OpenBao/GLSM のデプロイと設定: GLSM が利用可能であれば活用したいと考えていますが、その詳細は[独自のブループリント](/handbook/engineering/architecture/design-documents/secret_manager/)に委ねるのが最善です。GLSM が利用できない場合は、GLSM を使用しないキーマテリアルのソースを提供します。
-* エンタープライズ独自のキー（BYOK）機能: クラウドバックのエンベロープ暗号化を使用することで、イントラデータベース暗号化の BYOK は技術的なレベルで有効になりますが、製品にそのフィーチャーを組み込むことはこのブループリントのスコープ外であり、このブループリントの後に完全に独立したタスクとして完成させることができます。（現実的には、Organizations の GA 後に実施する必要があります。）
+* エンタープライズ独自のキー（BYOK）機能: クラウドバックのエンベロープ暗号化を使用することで、イントラデータベース暗号化の BYOK は技術的なレベルで有効になりますが、製品にその機能を組み込むことはこのブループリントのスコープ外であり、このブループリントの後に完全に独立したタスクとして完成させることができます。（現実的には、Organizations の GA 後に実施する必要があります。）
 
 ## 提案
 
-モノリスのすべての暗号化フィールドを Active Record Encryption（ARE）を使用した[エンベロープ暗号化](https://guides.rubyonrails.org/active_record_encryption.html#envelopeencryptionkeyprovider)フィールドに移行します。[`active_kms`](https://github.com/ankane/active_kms) ライブラリの機能を使用して、利用可能な場合は適切なクラウドキー管理システム（AWS KMS または Google Cloud KMS）でエンベロープ暗号化をバックアップします。利用できない場合は、プライマリ KWK はディスクに保存されます。
+モノリスのすべての暗号化フィールドを Active Record Encryption（ARE）を使用した[エンベロープ暗号化](https://guides.rubyonrails.org/active_record_encryption.html#envelopeencryptionkeyprovider)フィールドに移行します。[`active_kms`](https://github.com/ankane/active_kms) ライブラリの機能を使用して、利用可能な場合は適切なクラウドキー管理システム（AWS KMS または Google Cloud KMS）をエンベロープ暗号化の基盤として使用します。利用できない場合は、プライマリ KWK はディスクに保存されます。
 
 [OpenBao / GitLab Secrets Manager](/handbook/engineering/architecture/design-documents/secret_manager/) が環境で利用可能で、[キー管理プロキシとして機能する能力](https://github.com/openbao/openbao/issues/1319)があれば、この機能を実装する方法の 1 つとして [`transit` シークレットエンジン](https://openbao.org/docs/secrets/transit/)も使用します。
 
-ARE の[決定論的暗号化](https://guides.rubyonrails.org/active_record_encryption.html#deterministic-and-non-deterministic-encryption)フィーチャーを意図的に無効化します。このフィーチャーは暗号化された属性の（非常に限定的な形式の）文字列マッチングを可能にします。これにより ARE のドキュメントで説明されているようにセキュリティポスチャが改善され、ARE の決定論的暗号化がキーローテーションをサポートしていないため、将来的にキーローテーションが再び重大なエンジニアリング努力を必要とする状況に陥らないようにします。
+ARE の[決定論的暗号化](https://guides.rubyonrails.org/active_record_encryption.html#deterministic-and-non-deterministic-encryption)機能を意図的に無効化します。この機能は暗号化された属性の（非常に限定的な形式の）文字列マッチングを可能にします。これにより ARE のドキュメントで説明されているようにセキュリティポスチャが改善され、ARE の決定論的暗号化がキーローテーションをサポートしていないため、将来的にキーローテーションが再び重大なエンジニアリング努力を必要とする状況に陥らないようにします。
 
-検討された代替案の完全な議論は[このイシュー](https://gitlab.com/gitlab-com/gl-security/product-security/data-security/data-security-team/-/issues/101)（GitLab 内部リンク）で確認できます。
+検討された代替案の完全な議論は[この Issue](https://gitlab.com/gitlab-com/gl-security/product-security/data-security/data-security-team/-/issues/101)（GitLab 内部リンク）で確認できます。
 
 ### 定義: エンベロープ暗号化
 
@@ -81,7 +81,7 @@ ARE の[決定論的暗号化](https://guides.rubyonrails.org/active_record_encr
 
 通常、KWK は安全なハードウェア要素（[Apple Secure Enclave](https://support.apple.com/guide/security/secure-enclave-sec59b0b31ff/web)、[Hardware Security Module](https://en.wikipedia.org/wiki/Hardware_security_module) など）に保存されます。DEK をそのような要素に保存することもできますが、ローカル要素を使用してデータを直接復号化すると非常に遅くなり（CPU アクセラレーション暗号化命令でメモリに保持されたキーを使用するよりも何桁も遅い）、クラウド要素を使用すると非常にコストがかかります（GCP Cloud KMS は 10k オペレーションあたり $0.03 かかり、GitLab のスケールでは株主価値に悪影響を及ぼします）。DEK は暗号化されて別の場所（例えばデータベース）に保存され、必要に応じて復号化されます。
 
-エンベロープ暗号化は 3 つの主要なフィーチャーを提供します:
+エンベロープ暗号化は 3 つの主要な機能を提供します:
 
 * 暗号化されたデータへのアクセスには、最終的に安全な要素に保存された KWK へのアクセスが必要ですが、*すべての*復号化オペレーションをその安全な要素で実行する必要はありません。
 * KWK を変更しても、すべてのデータを再暗号化する必要はなく、その KWK でラップされた DEK のみを再暗号化するだけです。
@@ -92,7 +92,7 @@ ARE の[決定論的暗号化](https://guides.rubyonrails.org/active_record_encr
 
 数字 `n`、`d`、`k` がそれぞれ暗号化フィールド、DEK、KEK の数を表すと仮定して:
 
-* `n == d` の場合、各データが独自の DEK を持つことになります。これにより、各データの復号化に KWK 操作（安全な要素によって実行される）が必要になり、コストがかかり望ましくありません。**注意: これは Active Record Encryption がデフォルト設定で機能する方法です。**
+* `n == d` の場合、各データが独自の DEK を持つことになります。これにより、各データの復号化に KWK 操作（安全な要素によって実行される）が必要になり、コストがかかり望ましくありません。**注意: これは Rails の `EnvelopeEncryptionKeyProvider` の動作方式です。**
 * `d == k` の場合、システム（例: Cell）内のすべてのデータが同じ DEK で暗号化されます。これにより必要な KWK 操作の数が最小化されます（復号化された DEK をメモリにキャッシュする能力を最大化することによって）が、攻撃者が単一の復号化された DEK にアクセスすることで与えられる害が最大化されます（例: 実行中のノード上で）。
 * [Organizations](/handbook/engineering/architecture/design-documents/organization/) は DEK を共有してもよいです。大規模な Organizations は、Cells 間の移行を容易にするために、可能な限り他の Organizations と DEK を共有すべきではありません。
 
@@ -130,7 +130,7 @@ ARE の[決定論的暗号化](https://guides.rubyonrails.org/active_record_encr
 
 このプロセスは簡単ですが、繊細であり、毎回ランブックに照らして確認する必要がある詳細があり、各フィールドにはそのフィールドと一緒に移行・削除が必要な少数の追加フラグ、設定値などがある可能性があります。したがって、これは[恥ずかしいほど並列](https://en.wikipedia.org/wiki/Embarrassingly_parallel)な問題です。239 個の `attr_encrypted` フィールド、14 個の既存の `ActiveRecord::Encryption` フィールド（現在再キーが必要）、少数の `Lockbox` および `TokenAuthenticatable` フィールド（後者は単純なトークンではなく暗号化として使用される場合のみ）に対してこれを実行するために、多くのエンジニアがかなりの時間を要します。
 
-### ワークフロー: GitLab インスタンス間のデータ移行
+### ワークフロー: GitLab インスタンス間のデータ移行 {#workflow-migrating-data-between-gitlab-instances}
 
 まず質問: 移動される対象のオブジェクトと移動されないオブジェクトの間で DEK が共有されていますか？
 
@@ -147,4 +147,4 @@ ARE の[決定論的暗号化](https://guides.rubyonrails.org/active_record_encr
 
 ## 代替ソリューション
 
-検討された代替案の完全な議論（「何もしない」を含む）は[このイシュー](https://gitlab.com/gitlab-com/gl-security/product-security/data-security/data-security-team/-/issues/101)（GitLab 内部リンク）で確認できます。
+検討された代替案の完全な議論（「何もしない」を含む）は[この Issue](https://gitlab.com/gitlab-com/gl-security/product-security/data-security/data-security-team/-/issues/101)（GitLab 内部リンク）で確認できます。

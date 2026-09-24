@@ -2,11 +2,11 @@
 title: "Slack"
 description: "GitLab における Slack の利用とヒント"
 upstream_path: /handbook/tools-and-tips/slack/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-18T21:09:14+00:00"
+upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
+translated_at: "2026-09-24T21:08:13+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-09-24T08:56:32-04:00"
 ---
 
 ## 概要
@@ -68,6 +68,8 @@ Slack のプロフィールを記入してください。私たちは Slack の�
 - **Working hours。** 一般的にあなたが対応可能な時間を他の人が把握できるようにします。
 - **README Link。** 他の人があなたについて詳しく知ることができる個人の README へのリンクを、`About me` などの表示テキストで追加します。[README の概要](/handbook/communication/#readmes) を参照してください。
 - **GitLab Birthdays。** はいまたはいいえを選択し、Slack での誕生日のお祝いに参加するかどうかを設定します。
+
+オンボーディング中に、[チームメンバーのプロフィールを記入する](/handbook/communication/#complete-your-team-member-profiles)作業の一環として、Slack のプロフィールを記入してください。役職、チーム、勤務時間が変わったら、最新の状態に更新してください。任意と記載されたフィールドの記入や、代名詞・名前の発音の追加は、引き続き各自の判断に委ねられます。
 
 ## チャンネル
 
@@ -212,7 +214,7 @@ Slack の [通知の一時停止とスケジュール設定のガイド](https:/
 Mac では <kbd>Cmd</kbd>+<kbd>k</kbd>、Windows または Linux では <kbd>Ctrl</kbd>+<kbd>k</kbd> で起動し、チャットしたい人や興味のあるチャンネルの名前を入力し始めます。
 そして <kbd>↑</kbd> と <kbd>↓</kbd> キーで提案を移動し、<kbd>enter</kbd> を押して選択できます。
 
-## メッセージ内のリンクのアンファール
+## メッセージ内のリンクのアンファール {#unfurling-links-in-messages}
 
 **アンファール** とは、Slack がメッセージ内の URL の隣にリンクのプレビューを自動表示することです。プレビューには、ページのタイトル、説明、画像などの詳細を表示できます。
 デスクトップでプレビューを削除するには、プレビューにカーソルを合わせ、左側の **x** を選択します。

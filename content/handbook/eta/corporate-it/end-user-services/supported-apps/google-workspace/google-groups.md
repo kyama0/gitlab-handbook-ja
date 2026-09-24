@@ -4,9 +4,9 @@ description: Google Groups の利用および設定ガイド
 aliases:
   - /handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-groups/
 upstream_path: /handbook/eta/corporate-it/end-user-services/supported-apps/google-workspace/google-groups/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:14:51+09:00"
+upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
+lastmod: "2026-09-24T11:22:40+01:00"
+translated_at: "2026-09-24T21:08:13+00:00"
 translator: codex
 stale: false
 ---
@@ -17,7 +17,7 @@ Google Groups は、メンバーに特定リソースへのアクセスを付与
 
 ## 目次
 
-- [グループアクセスリクエスト](#group-access-requests)
+- [グループリクエスト](#group-requests)
 - [グループ設定](#group-configuration)
   - [グループロール](#group-roles)
     - [グループオーナー](#group-owners)
@@ -28,9 +28,9 @@ Google Groups は、メンバーに特定リソースへのアクセスを付与
     - [グループに参加できる人](#who-can-join-a-group)
 - [追加サポート](#additional-support)
 
-## グループアクセスリクエスト {#group-access-requests}
+## グループリクエスト {#group-requests}
 
-次のリクエストには、[この AR テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=GoogleGroup_Request)を使用できます:
+次のリクエストには、Compass（Slack 上部の検索バーに「Compass」と入力するとアプリが見つかります）を使用できます:
 
 - 新しい Google Group の作成
 - Google Group の更新

@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-18T21:09:14+00:00"
+upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
+translated_at: "2026-09-24T21:08:13+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-18T16:09:19+02:00"
+lastmod: "2026-09-24T08:56:32-04:00"
 ---
 
 ## 概要
@@ -14,6 +14,22 @@ lastmod: "2026-09-18T16:09:19+02:00"
 このページには、GitLab で働く際の役立つヒントと、私たちが使用するさまざまなツールに関するヒントが含まれています。
 
 ## GitLab のヒント
+
+### GitLab プロフィール {#gitlab-profile}
+
+オンボーディング中に GitLab.com のプロフィールを記入し、役職が変わったら最新の状態に更新してください。これは[チームメンバーのプロフィールを記入する](/handbook/communication/#complete-your-team-member-profiles)作業の一環です。
+
+[GitLab.com のプロフィール設定](https://gitlab.com/-/user_settings/profile)を開き、次のフィールドを記入します。
+
+- **フルネーム。** チームメンバーがあなたを識別できるように、フルネームを入力します。
+- **プロフィール写真。** チームメンバーがあなたを認識できるように、顔がはっきり見える写真を追加します。
+- **組織。** `GitLab` と入力します。
+- **役職。** GitLab での現在の役職を入力します。
+- **非公開プロフィール。** このチェックボックスはオフのままにします。
+- **代名詞（任意）。** 共有したい場合は、自分の代名詞を追加します。
+- **発音（任意）。** 名前の発音ガイドを追加します。たとえば、Michael Friedrich の英語での発音は `MY-kul FREED-rick` です。
+
+**Update profile settings** を選択して変更を保存します。その他のプロフィール設定については、[GitLab のプロフィールのドキュメント](https://docs.gitlab.com/user/profile/)を参照してください。
 
 ### GitLab.com でのユーザー名の変更
 
@@ -506,11 +522,23 @@ GA に関する詳細情報は、[Google Analytics ハンドブック](/handbook
 たとえば、選択した期間内に特定のページがどれだけ訪問されたかを GA データを見て分析できます。
 ユーザーがどこから来てどこに行くかを理解するために GA リファラルデータを見ることもできます。
 
-### Google でプロフィール写真を設定する
+### Google プロフィール {#google-profile}
 
-オプション: Google で[プロフィール写真を設定する](https://myaccount.google.com/personal-info) ことで、Google Docs で自分がどこにいるかを写真で表示できます（最初の文字だけ表示されるのではなく）。これにより、会議の参加者が文書内で動き回るときに、他の人がディスカッションをより簡単にフォローできます。
+オンボーディング中に GitLab の Google アカウントでプロフィールを記入してください。これは[チームメンバーのプロフィールを記入する](/handbook/communication/#complete-your-team-member-profiles)作業の一環です。
 
-### Google で名前の発音を追加する
+フルネームと役職を含む [Gmail の署名](/handbook/tools-and-tips/#email-signature)も設定または更新してください。
+
+#### Google でプロフィール写真を設定する
+
+Google Docs やその他の Google サービスでチームメンバーがあなたを認識できるように、顔がはっきり見える写真を使ってください。
+
+1. [Google の個人情報](https://myaccount.google.com/personal-info)を開きます。
+1. GitLab の Google アカウントでログインしていることを確認します。
+1. プロフィール写真を選択し、手順に従って写真をアップロードして保存します。
+
+詳細は、Google の[プロフィール写真の変更手順](https://support.google.com/accounts/answer/27442)を参照してください。
+
+#### Google で名前の発音を追加する
 
 名前の発音記号や発音録音を Google プロフィールに追加することを検討してください。
 
@@ -551,7 +579,7 @@ GitLab Availability Calendar は、GitLab を効果的にスケーリングす�
 
 すべての GitLab Team メンバーがリモートで働くため、`Home` は曖昧な選択肢です。人々は旅行する可能性があり、タイムゾーンに関するコンテキストを提供しないからです。よろしければ、`Somewhere else`（Settings 内）または `Edit pencil` -> `+` -> `Another location`（ピルから）を選択して、`City, State, Country (GMT-#)` のような形式に設定し、旅行時やタイムゾーン変更時に最新の状態に保つことで、計画とタイムゾーンの理解に役立ちます。
 
-#### GitLab Team Meetings カレンダー
+#### GitLab Team Meetings カレンダー {#gitlab-team-meetings-calendar}
 
 GitLab Team Meetings カレンダーはすべてのチームメンバーが利用でき、追加後にカレンダーリストに表示されます。GitLab Team Meetings カレンダーをカレンダーリストに追加するには:
 
@@ -786,7 +814,7 @@ Auto-advance を使用すると、次のメッセージまたは前のメッセ�
 これにより、Settings の General セクションに Auto-advance 設定が表示されます。
 通常、前の（古い）メッセージを表示するデフォルト設定が好まれます。
 
-#### メールサイン
+#### メールサイン {#email-signature}
 
 -[メールサイン](https://support.google.com/mail/answer/8395) を設定して、フルネームと役職を含めることで、人々があなたが誰でどのような仕事をしているかをすぐに知ることができます。
 -メールサインに [個人代名詞](/handbook/people-group/pronouns/) を追加するオプションもあります。
