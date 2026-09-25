@@ -3,9 +3,9 @@ linkTitle: "Content"
 title: "Developer Advocates のコンテンツライブラリとワークフロー"
 description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:42:40+00:00"
+upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-25T21:12:56Z"
 translator: codex
 stale: false
 ---
@@ -189,7 +189,7 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 
 ### ワークショップ {#workshops}
 
-Developer Advocacy チームは、さまざまな製品・フォーカス領域でワークショップをメンテナンスしています。ワークショップにはさまざまなタイプがあります: 受講者がライブで演習に参加するハンズオン形式（トレーニングコース）や、受講者が質問で関与するライブデモ／プログラミングセッションの実演形式です。ワークショップは [Solution Architect](/handbook/solutions-architects/)チームや [Customer Success](/handbook/customer-success/)チームと協力して作成し、ビジネス目標と整合させるべきです。
+Developer Advocacy チームは、さまざまな製品・フォーカス領域でワークショップをメンテナンスしています。ワークショップにはさまざまなタイプがあります: 受講者がライブで演習に参加するハンズオン形式（トレーニングコース）や、受講者が質問で関与するライブデモ／プログラミングセッションの実演形式です。ワークショップは [Solution Architect](/handbook/solutions-architects/)チームや [Customer Success](/handbook/customer-experience/)チームと協力して作成し、ビジネス目標と整合させるべきです。
 
 > 注: 特定の顧客向けに焦点を当てたワークショップは、[顧客コンサルティングハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/consultancy/)に従ってリクエストできます。
 
@@ -476,7 +476,7 @@ OBS > Preferences > Output > Dropdown: Advanced
 
 #### Adobe Premiere Pro でのポスト編集 {#post-editing-with-adobe-premiere-pro}
 
-**アクセス:** [アクセスリクエスト]((/handbook/eta/corporate-it/end-user-services/access-requests/)が必要です（[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)）
+**アクセス:** [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)が必要です（[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)）
 
 **リソース:** [Developer Advocacy のショーケースのメモ](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）を確認してください
 

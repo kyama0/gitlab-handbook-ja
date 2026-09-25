@@ -2,14 +2,14 @@
 title: プロスペクト向けの無償サポート
 description: プロスペクト向けにサポートをリクエストする方法の詳細
 upstream_path: /handbook/support/priority_prospects/
-upstream_sha: 18c3e90de89449f1cbbf92c21776a3ea7899476c
-translated_at: "2026-05-08T18:00:00Z"
+upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
+translated_at: "2026-09-25T21:07:10Z"
 translator: claude
 stale: false
-lastmod: "2026-02-05T23:38:57+11:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 デフォルトでは、[トライアルライセンスにはサポートは含まれていません](https://about.gitlab.com/support/#trials-support)。
 
@@ -17,7 +17,7 @@ lastmod: "2026-02-05T23:38:57+11:00"
 
 **注意:** このオプションは Salesforce 上のアカウントタイプが `Prospect` である **プロスペクト** にのみ適用できます。`Prospect` 以外のアカウントには適用できません。それ以外のアカウントについては、メインのハンドブックページである [無償サポートのリクエスト](/handbook/support/gratis-support/) を参照してください。
 
-## プロスペクト向け無償サポートの制限
+## プロスペクト向け無償サポートの制限 {#restrictions-on-gratis-support-for-prospects}
 
 [サポート方針](https://about.gitlab.com/support/statement-of-support/) に記載されている全般的なポリシーは、プロスペクト向けサポートにも適用されます。
 
@@ -35,7 +35,7 @@ lastmod: "2026-02-05T23:38:57+11:00"
 - 移行支援
 - アーキテクチャレビュー
 - [ネームスクワッティングのリクエスト](https://support.gitlab.com/hc/en-us/articles/11626493890844-GitLab-com-Specific-Support-Policies#name-squatting-policy)
-- [PoV](/handbook/customer-success/solutions-architects/tools-and-resources/pov/) の場合、サポートはセットアップから生じたエラーの解決に限られます（セットアップ作業そのものは対象外）
+- [PoV](/handbook/solutions-architects/playbooks/pov/) の場合、サポートはセットアップから生じたエラーの解決に限られます（セットアップ作業そのものは対象外）
 - すべての応答時間は合理的努力ベースで、社内 SLO は 24 時間です。
 
 Zendesk 内での制限事項:
@@ -43,17 +43,17 @@ Zendesk 内での制限事項:
 - 組織のサポートチケットを作成できる [指定連絡先](https://about.gitlab.com/support/managing-support-contacts/#managing-contacts) は最大 **3 名** までです。
 - 無償サポートには [Zendesk における共有組織のセットアップ](https://about.gitlab.com/support/managing-support-contacts/#shared-organizations) は含まれません。
 
-## プロスペクト向けサポートのリクエスト方法
+## プロスペクト向けサポートのリクエスト方法 {#how-to-request-support-for-a-prospect}
 
 メインのハンドブックページである [無償サポートのリクエスト](/handbook/support/gratis-support/) の手順に従ってください。
 
-## 延長のリクエスト方法
+## 延長のリクエスト方法 {#how-to-request-an-extension}
 
 **注意**: サービスの中断を避けるため、延長リクエストは有効期限の **1 週間前** までに提出してください。
 
 メインのハンドブックページである [無償サポートのリクエスト](/handbook/support/gratis-support/) の手順に従ってください。
 
-## プロスペクトへの情報提供
+## プロスペクトへの情報提供 {#information-for-the-prospect}
 
 プロスペクトは無償サポートのプロセスが完全に完了する前（サポート Operations が無償サポートリクエスト Issue で完了を示す前）に、サポートチケットを送信してはいけません。完了前に送信されたチケットは却下される場合があります。
 

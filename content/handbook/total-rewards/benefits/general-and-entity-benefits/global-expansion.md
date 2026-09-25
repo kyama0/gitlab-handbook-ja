@@ -2,20 +2,20 @@
 title: "Global Expansion"
 description: "Global Expansion"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/
-upstream_sha: 23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0
-translated_at: "2026-05-07T22:45:00Z"
+upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
+translated_at: "2026-09-25T21:07:10Z"
 translator: claude
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-09-25T08:40:12Z"
 ---
 
-## **Global Expansion 福利厚生**
+## **Global Expansion 福利厚生** {#global-expansion-benefits}
 
-## **わかりやすい福利厚生、確かなサポート**
+## **わかりやすい福利厚生、確かなサポート** {#clear-benefits-real-support}
 
 Global Expansion パートナーシップは、世界中のチームメンバーに対して包括的なカバレッジと透明性のある情報を提供するため、安心して仕事と生活に集中できます。
 
-## オーストリア 🇦🇹
+## オーストリア 🇦🇹 {#austria-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
@@ -82,7 +82,7 @@ Global Expansion パートナーシップは、世界中のチームメンバー
 
 **病気休暇**
 
-- **報告要件:** チームメンバーは、病気または怪我のために働けない場合、すぐに雇用主に通知する必要があります。連続 3 暦日以上不在の場合、医師からの医療証明書（Krankenstandsbestätigung）を提供する必要があります。
+- **報告要件:** チームメンバーは、病気または怪我のために働けない場合、すぐに雇用主に通知する必要があります。不在が連続 3 暦日を超える場合、医師からの医療証明書（Krankenstandsbestätigung）を提供する必要があります。
 - **支払い:** チームメンバーは、勤続年数に基づく特定期間にわたって全額給与を引き続き受け取ります。雇用主が支払う期間後、チームメンバーはオーストリア健康保険基金（ÖGK）から法定病気手当を受け取ることができます。
 
 </details>
@@ -103,125 +103,7 @@ Global Expansion パートナーシップは、世界中のチームメンバー
 
 </details>
 
-## チリ 🇨🇱
-
-**連絡先:** gx_employeeexperience@globalexpansion.com
-**プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
-
-以下に記載されているすべての福利厚生は、Global Expansion によって管理および運営され、チリで働く間にニーズを満たす包括的なサポートとカバレッジを確保します。
-
-<details markdown="1">
-<summary>チリ医療カバレッジ</summary>
-
-AXA を介したグローバル健康保険で、必要なときに質の高い医療へのアクセスをあなたとあなたの家族に提供します。
-
-**主な特徴**
-
-- [AXA 医療ガイド](https://drive.google.com/file/d/1PqIC6xjfthcX5PCkmsr1X6CLz8uEnkII/view) を確認してください。
-- GitLab がチームメンバーの保険料の 100% を負担
-- GitLab が対象扶養家族の保険料の 66% を負担
-- Global Expansion を通じた直接管理
-
-**アクセス方法:** Global Expansion はオンボーディング中に GX1 プラットフォーム経由でセンサス情報を収集します。扶養家族を追加する場合、給与控除のための承認フォームに署名する必要があります。カバレッジの変更や修正については、[Global Expansion](mailto:gx_employeeexperience@globalexpansion.com) チームにお問い合わせください。
-
-</details>
-
-<details markdown="1">
-<summary>チリ法定年金および生命保険</summary>
-
-**年金:** チリの包括的な年金システムでカバーされており、国家枠組みを通じて退職保障を提供します。この確立されたシステムにより、チリの法定年金構造を通じて退職計画がサポートされます。
-
-**生命保険:** あなたの保護はチリの社会保障システムにすでに組み込まれており、病気、怪我、障害に対する包括的なカバレッジを提供します。これにより、国家システムを通じて必要なサポートを確保できます。
-
-</details>
-
-<details markdown="1">
-<summary>チリの休暇ポリシー</summary>
-
-**年次休暇**
-
-- **権利:** 年間 15 日
-
-**育児休暇**
-
-- **産休:** 最大 30 週間（出産前 6 週間、出産後 12 週間、加えて 12 週間のフルタイムまたは 18 週間のハーフタイム育児休暇）
-- **父親休暇:** 最大 5 営業日
-- [**GitLab の強化**:](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) 対象の場合、最大 30 週間（産休）または 16 週間（父親休暇）の 100% 有給休暇。[GitLab の育児休暇ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) をよくご確認ください。
-
-**特別休暇**
-
-- **忌引:** 7 連続日（子/配偶者/パートナーの死亡）、3 日（親/未出生児の死亡）
-- **結婚:** 結婚または市民組合のための 5 連続営業日
-
-**申請方法**
-休暇開始の少なくとも 30 日前に Workday - Time Off 経由でリクエストを提出します。
-
-</details>
-
-## コスタリカ 🇨🇷
-
-**連絡先:** gx_employeeexperience@globalexpansion.com
-**プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
-
-以下に記載されているすべての福利厚生は、Global Expansion によって管理および運営され、コスタリカでの健康、財政、家族のニーズを満たすために設計された包括的なサポートを提供します。
-
-<details markdown="1">
-<summary>コスタリカ医療カバレッジ</summary>
-
-AXA を介したグローバル健康保険は、あなたとあなたの家族に包括的なカバレッジを提供し、最も必要なときに質の高い医療へのアクセスを確保します。
-
-**主な特徴**
-
-- [AXA 医療ガイド](https://drive.google.com/file/d/1PqIC6xjfthcX5PCkmsr1X6CLz8uEnkII/view) を確認してください
-- GitLab がチームメンバーの保険料の 100% を負担
-- GitLab が対象扶養家族の保険料の 66% を負担
-- Global Expansion を通じた直接管理
-
-**アクセス方法:** Global Expansion はオンボーディング中に GX1 プラットフォーム経由でセンサス情報を収集します。扶養家族を追加する場合、給与控除のための承認フォームに署名する必要があります。カバレッジの変更や修正については、[Global Expansion](mailto:gx_employeeexperience@globalexpansion.com) チームにお問い合わせください。
-
-</details>
-
-<details markdown="1">
-<summary>コスタリカの生命保険</summary>
-
-会社負担の国際 [AXA を通じたグループ生命および障害プラン](https://drive.google.com/file/d/1Nsdcwb3RGgbpA82nCWrFBz0wbf8vd6hW/view?usp=sharing) があなたとあなたの愛する人に経済的安全を提供します。
-
-</details>
-
-<details markdown="1">
-<summary>コスタリカの年金</summary>
-
-**年金:** コスタリカの公的年金スキームでカバーされており、国家システムを通じて退職保障を提供します。この包括的な枠組みにより、コスタリカの確立された年金構造を通じて退職計画がサポートされます。
-
-</details>
-
-<details markdown="1">
-<summary>コスタリカの Anguinaldo（13 か月目の給与）</summary>
-
-毎年 12 月の最初の 20 日以内に支払われる、1 か月分の給与に相当する年次ボーナス支払い。
-
-</details>
-
-<details markdown="1">
-<summary>コスタリカの休暇ポリシー</summary>
-
-**年次休暇**
-
-- **権利:** 年間 14 日
-
-**育児休暇**
-
-- **産休:** 最大 4 か月（対象の場合、GitLab が 50%、社会保障が 50%）
-- **父親休暇:** 最大 16 週間（対象の場合、GitLab が 100% 支給）
-- **養子縁組:** 子の出生日から 3 か月の有給休暇。
-- [GitLab の育児休暇ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) をよくご確認ください。
-
-**申請方法**
-休暇開始の少なくとも 30 日前に [Workday - Time Off](https://docs.google.com/document/d/1ZatJdGp485lOS2QVrxYJByQK8dD_CMGiLVOykgd338w/edit) 経由でリクエストを提出します。
-
-</details>
-
-## デンマーク 🇩🇰
+## デンマーク 🇩🇰 {#denmark-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
@@ -315,7 +197,7 @@ Payment Denmark は、雇用主から雇用と時間に関する情報を自動�
 **産休および父親休暇の支払い**
 デンマークの最大産休および父親休暇の支払いは、週 37 時間勤務するフルタイム従業員に対して **週 DKK 4,865（2025 年）** です。
 
-- フルタイム雇用で月次 DKK 21,092 以上を稼ぐ場合、税引前の最大週次給付 DKK 4,865 を受け取ります。
+- フルタイム雇用で月収が DKK 21,092 を超える場合、税引前の最大週次給付 DKK 4,865 を受け取ります。
 - 産休および父親休暇給付は、時給（労働市場拠出を除く）と週あたりに取った休暇時間数に基づいて計算されます。
 - 2025 年、産休給付の最大時給は時給 DKK 131.49（4,865 ÷ 37 時間）です。時給がこれより低い場合、給付は通常の時給で支払われます。
 - 教育に加えて永続的な仕事を持つ従業員は、勤務する時間に対して給与従業員として産休給付を申請できます。
@@ -346,7 +228,7 @@ Payment Denmark は、雇用主から雇用と時間に関する情報を自動�
 
 </details>
 
-## ケニア 🇰🇪
+## ケニア 🇰🇪 {#kenya-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
@@ -393,7 +275,7 @@ Payment Denmark は、雇用主から雇用と時間に関する情報を自動�
 **年次休暇**
 
 - **法定権利:** 年間 21 日
-- [Placeholder; GitLab ポリシー; Flexible Time Off と同時実行]
+- [プレースホルダー; GitLab ポリシー; Flexible Time Off と並行して適用]
 
 **育児休暇**
 
@@ -406,7 +288,7 @@ Payment Denmark は、雇用主から雇用と時間に関する情報を自動�
 
 </details>
 
-## **ラトビア 🇱🇻**
+## **ラトビア 🇱🇻** {#latvia-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
@@ -463,7 +345,7 @@ AXA を介したグローバル健康保険は、健康と健全性のニーズ�
 
 </details>
 
-## メキシコ 🇲🇽
+## メキシコ 🇲🇽 {#mexico-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
@@ -567,7 +449,7 @@ AXA を介したグローバル健康保険は、健康と健全性のニーズ�
 
 </details>
 
-## **フィリピン 🇵🇭**
+## **フィリピン 🇵🇭** {#philippines-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
@@ -635,7 +517,142 @@ AXA を介した包括的なグローバル健康保険で、フィリピンの�
 
 </details>
 
-## **南アフリカ 🇿🇦**
+## ポーランド 🇵🇱 {#poland-}
+
+**連絡先:** gx_employeeexperience@globalexpansion.com
+**プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
+
+以下の福利厚生はすべて Global Expansion が管理・運営します。ポーランドのチームメンバーは GX (PEO) を通じて雇用されるため、最新情報については必ず最初に GX に確認してください。
+
+<details markdown="1">
+<summary>ポーランドの追加福利厚生</summary>
+
+GitLab は、PEO の下での追加福利厚生を賄うため、以下の手当を提供する予定です:
+
+- **健康手当:** 月額 449 PLN の定額手当
+- **年金:**
+  - 法定年金: 従業員と雇用主がそれぞれ 9.76% を拠出
+  - 従業員資本制度 (PPK): 雇用主 1.5% / 従業員 2%
+- **在宅勤務手当:** インターネットと電気の費用として月額 185 PLN の定額手当。
+- **視力ケア手当:** 領収書に基づき最大 500 PLN を払い戻し
+
+</details>
+
+<details markdown="1">
+<summary>ポーランドの義務付けられている福利厚生</summary>
+
+- 産業医療: 雇用前および定期の健康診断が必須で、費用は雇用主が負担
+- 労働安全衛生 (OHS) サービス: チームメンバーのリスク評価とオンライントレーニング
+- 退職、障害、疾病、事故および公的医療保険: ZUS への拠出を通じて提供
+- 年次休暇: 最低 20 日
+- 祝日: 年間 13 日
+
+</details>
+
+<details markdown="1">
+<summary>ポーランドの法定年金および生命保険</summary>
+
+**年金:** 雇用主と従業員の双方が負担する ZUS（社会保障）への拠出を通じて、ポーランドの法定年金制度の対象となります。
+
+**生命保険:** ポーランドの社会保障の枠組みに保護が組み込まれており、ZUS を通じて病気、怪我、障害に対する保障が提供されます。
+
+| 雇用主の拠出 | 料率 |
+|---|---|
+| 退職年金（年間 234,720 PLN まで） | 9.76% |
+| 障害基金（年間 234,720 PLN まで） | 6.50% |
+| 事故基金 | 0.67% – 3.33% |
+| 労働基金 | 2.45% |
+| 従業員給付保証基金 | 0.10% |
+| **雇用主の合計** | **19.48% – 22.14%** |
+
+| 従業員の拠出 | 料率 |
+|---|---|
+| 退職年金（年間 234,720 PLN まで） | 9.76% |
+| 障害基金（年間 234,720 PLN まで） | 1.50% |
+| 疾病基金 | 2.45% |
+| 健康保険 | 9.00% |
+| **従業員の合計** | **22.71%** |
+
+</details>
+
+<details markdown="1">
+<summary>ポーランドの休暇ポリシー</summary>
+
+**年次休暇**
+付与日数: 年間最低 20 日。勤務期間と学歴による算入期間の合計が 10 年以上の従業員には、26 日が付与されます。
+
+学歴に応じて勤続年数に以下の年数が加算されます（各教育段階の年数は合算しません）:
+
+| 教育水準 | 加算年数 |
+|---|---|
+| 基礎職業教育 | 最大 3 年 |
+| 中等職業教育 | 最大 5 年 |
+| 高等学校 | 4 年 |
+| 中等後教育機関 | 6 年 |
+| 高等教育（大学） | 8 年 |
+
+大学卒業者は勤続年数 8 年として開始し、2 年間の勤務後に 26 日の休暇を取得する権利を得ます。雇用主は、少なくとも連続 14 日間の休暇を取得させる必要があります。従業員は、課税年度全体の休暇計画を提出する必要があります。
+
+**祝日**
+年間 13 日の有給の祝日があります。祝日が日曜日に当たる場合、追加の支払いはありません（振替休日もありません）。祝日が所定の休日に当たる場合、従業員は後日振替休日を取得できます。
+
+**病気休暇**
+
+| 期間 | 支給額 |
+|---|---|
+| 最初の 33 日（雇用主負担） | 給与の 80% |
+| 33 日経過後（ZUS 負担） | 基本給与の 80% |
+| 50 歳以上の従業員 | 雇用主は最初の 14 日のみ支払い、残りは ZUS が負担 |
+| 妊娠 / 労働災害 | 給与の 100%（差額は ZUS が負担） |
+
+有給病気休暇の上限: 暦年あたり 182 日。
+
+**育児休暇**
+
+*産休*
+
+| 子供の人数 | 休暇期間 |
+|---|---|
+| 1 人 | 20 週間 |
+| 2 人 | 31 週間 |
+| 3 人 | 33 週間 |
+| 4 人 | 35 週間 |
+| 5 人以上 | 37 週間 |
+
+ZUS が給与の 100% を支給します。出産予定日の最大 6 週間前から休暇を開始できます。出産直後に少なくとも 14 週間を取得する必要があります。残りの休暇は父親に譲渡できます。授乳休憩: 6 時間以上勤務する場合は 1 日に 30 分の休憩を 2 回、6 時間未満の場合は 30 分の休憩を 1 回取得できます。
+
+*父親休暇*
+
+最大 2 週間で、出生後 12 か月以内（または養子が 7 歳になる前）に取得します。それぞれ最低 1 週間の 2 つの期間に分割できます。ZUS が 100% を支給します。
+
+*育児休暇*
+産休をすべて使い終えた後に 41 週間（多胎出産の場合は 43 週間）を取得できます。片方の親が取得するか、両親で分割できます。
+
+| 期間 | 支給額 |
+|---|---|
+| 最初の 6 週間（多胎の場合は 8 週間、年齢の高い養子の場合は 3 週間） | 100%、ZUS が負担 |
+| 残りの期間 | 60%、ZUS が負担 |
+
+最大 4 つの期間に分割でき、各期間は最低 8 週間です。子供が 6 歳になる暦年の末までに取得する必要があります。
+
+**その他の休暇**
+
+- **障害者休暇:** 障害のある従業員に年間 10 営業日を追加付与
+- **介護休暇:** 重い病状の家族を介護するための年間 5 日の無給休暇。取得中は社会保障上の所得の算入が停止します。
+- **学習休暇:** 雇用主が開始する、または雇用主の許可を得た教育プログラムのための有給休暇。期間はプログラムによって異なります。
+- **学外試験:** 職業資格の認定に 6 日、卒業論文と試験に 21 日。
+- **特別な行事:** 家族の人生の節目（結婚、出産、葬儀）に 2 日、子供の結婚または姻族の死亡に 1 日。特別なケースとして、裁判所への出頭、義務付けられた健康診断、献血も対象となります。
+- **無給休暇:** 従業員は理由を問わず申請できますが、雇用主は拒否できます。3 か月を超える場合、雇用主は重要な理由により従業員に復職を求めることがあります。
+- **不可抗力による休暇:** 家族の緊急事態に 2 日、雇用主が 50% を支給（この場合も、より手厚い GitLab の看護・介護のための病気休暇 / 忌引休暇 / 緊急休暇の各ポリシーの対象となります）
+- **慶弔休暇:** 本人または親族の結婚、近親者の死亡に利用できる 2 日。全額有給で、年次休暇の付与日数は減りません。
+- **献血休暇:** 献血 1 回につき 1 営業日、全額有給。
+
+**申請方法**
+Workday - Time Off を通じて休暇を申請します。詳細については、GitLab の [GitLab の育児休暇ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)のポリシーを確認してください。
+
+</details>
+
+## **南アフリカ 🇿🇦** {#south-africa-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [プラットフォーム案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
@@ -708,7 +725,7 @@ AXA を介した包括的なグローバル健康保険で、フィリピンの�
 
 </details>
 
-## **アラブ首長国連邦 🇦🇪**
+## **アラブ首長国連邦 🇦🇪** {#united-arab-emirates-}
 
 **連絡先:** gx_employeeexperience@globalexpansion.com
 **プラットフォーム:** [プラットフォーム案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)

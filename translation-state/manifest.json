@@ -10506,11 +10506,11 @@
     },
     "content/handbook/engineering/development/growth/_index.md": {
       "path": "content/handbook/engineering/development/growth/_index.md",
-      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:18:23Z",
       "model": "codex",
-      "input_hash": "25a6a14fbfcc3ecb9a13b748307bc2abd5bfbcdcab7cc295a0fbba87c8ccade2",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "67b3762cfa4dfc236f12ebccecfc0d955a2a19a518d9dfb7d640d41cbbd9df46",
+      "upstream_committed_at": "2026-09-25T14:49:37-04:00"
     },
     "content/handbook/engineering/development/growth/ai-prompts/epic-summary-prompt.md": {
       "path": "content/handbook/engineering/development/growth/ai-prompts/epic-summary-prompt.md",
@@ -12954,11 +12954,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/_index.md",
-      "upstream_sha": "ad217b024ba77ae34e6f41cb4a28107135c5dba5",
-      "translated_at": "2026-08-01T15:50:15+09:00",
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:18:23Z",
       "model": "codex",
-      "input_hash": "3cc8351834288e15cbaf11cf2e6fa441b483bd3c4aa8bf5ef8aca55ccfee7eae",
-      "upstream_committed_at": "2026-07-29T16:00:30-06:00"
+      "input_hash": "009a8a3e17b7634eb941efe47c74531ebc7060416f16fd15907025248c8089de",
+      "upstream_committed_at": "2026-09-25T07:48:08+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/_index.md",
@@ -19458,11 +19458,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0010f8bcf4025a5a05e16ab8bf784b2d9434b80d65e9ced085a39df730b7c9a2",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:07:10Z",
+      "model": "codex",
+      "input_hash": "80072b337004980aaf8f33719f7a71e196e986fa27330c983eb2bb036d969d7c",
+      "upstream_committed_at": "2026-09-25T08:40:12Z"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
@@ -20082,11 +20082,11 @@
     },
     "content/handbook/support/priority_prospects.md": {
       "path": "content/handbook/support/priority_prospects.md",
-      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
-      "translated_at": "2026-05-08T18:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0a5385b6f4721d33f602adf505c58827f67e0d7a476db171ee2f03c29cf04061",
-      "upstream_committed_at": "2026-02-05T23:38:57+11:00"
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:07:10Z",
+      "model": "codex",
+      "input_hash": "9a4d58e3d4e926bc276978b109d2a45ff616e4dc999dc81063d78889c547fd00",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
     },
     "content/handbook/support/public-sector-knowledge/knowledgearticles.md": {
       "path": "content/handbook/support/public-sector-knowledge/knowledgearticles.md",
@@ -26122,11 +26122,11 @@
     },
     "content/handbook/security/product-security/infrastructure-security/_index.md": {
       "path": "content/handbook/security/product-security/infrastructure-security/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T17:22:11Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "522d9bddb85c757f9350a69567b3edfc2e366576fb3f68f500ebe854b974c99a",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:07:10Z",
+      "model": "codex",
+      "input_hash": "361ebe55c357c8ed27895604001477766537888ab717cccf227526f282e72485",
+      "upstream_committed_at": "2026-09-25T13:16:09+01:00"
     },
     "content/handbook/security/product-security/infrastructure-security/issue-lifecycle.md": {
       "path": "content/handbook/security/product-security/infrastructure-security/issue-lifecycle.md",
@@ -36890,11 +36890,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T20:59:59+09:00",
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:12:56Z",
       "model": "codex",
-      "input_hash": "726d0b0838b94b59cd3b58b6f65bd487653630ff4b0f6ce890d8a822fdb05cd0",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "81cc1a685b02aca9d970d918439e12373508d4f41890bedbb1b5833e5d3ae80a",
+      "upstream_committed_at": "2026-09-25T15:49:42+01:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md",
@@ -36914,11 +36914,11 @@
     },
     "content/handbook/sales/sales-development/_index.md": {
       "path": "content/handbook/sales/sales-development/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T03:28:53+00:00",
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:12:56Z",
       "model": "codex",
-      "input_hash": "a8c56915467d535e1d5d3eb07907971b6fd19d1ed519f20f5c6612316856cd01",
-      "upstream_committed_at": "2026-09-18T11:42:22+01:00"
+      "input_hash": "602cc9da4e7bb93c2aa5ca76059e4a7307af4a736788821680fcc0b8802275ab",
+      "upstream_committed_at": "2026-09-24T11:02:46-04:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/content/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/content/_index.md",
@@ -37386,11 +37386,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/content.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00",
-      "translated_at": "2026-09-20T01:42:40+00:00",
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:12:56Z",
       "model": "codex",
-      "input_hash": "5e6daa2559d124b806d6a898a25240f0e20c5a0500c31d40fe622569b3ad67fc"
+      "input_hash": "65591f37faf041bd40a2ef33e089376a56b03397179f2291e3b5e834f0dc36da",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments.md",
@@ -37679,6 +37679,14 @@
       "translated_at": "2026-09-22T21:16:35+00:00",
       "model": "codex",
       "input_hash": "40143fec9014a49f57d472d7d5f4d4ffd95ef9f6a5de1fba83db1e009ee04110"
+    },
+    "content/handbook/engineering/infrastructure-platforms/production-engineering/tenant-controls/_index.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/tenant-controls/_index.md",
+      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
+      "translated_at": "2026-09-25T21:18:23Z",
+      "model": "codex",
+      "input_hash": "5535e33901f24d2578508dd54e0f5dcab81486dba485289c21775bcaf4d73d5f",
+      "upstream_committed_at": "2026-09-25T07:48:08+02:00"
     }
   }
 }
