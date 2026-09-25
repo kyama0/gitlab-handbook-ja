@@ -2,14 +2,14 @@
 title: "インフラストラクチャセキュリティ"
 description: "GitLab のインフラストラクチャセキュリティチームは、SaaS のセキュリティ監督を提供します。"
 upstream_path: /handbook/security/product-security/infrastructure-security/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T17:22:11Z"
+upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
+translated_at: "2026-09-25T21:07:10Z"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-09-25T13:16:09+01:00"
 ---
 
-## チームのアイデンティティ
+## チームのアイデンティティ {#team-identity}
 
 GitLab のインフラストラクチャセキュリティチームは、GitLab のインフラストラクチャセキュリティに固有の取り組みの計画、実行、サポートを担当します。
 
@@ -27,7 +27,7 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 
 詳細は[ジョブファミリーの説明](/job-description-library/security/infrastructure-security)を参照してください。
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 <table>
 <thead>
@@ -76,7 +76,7 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 </tbody>
 </table>
 
-## 私たちと一緒に働く
+## 私たちと一緒に働く {#working-with-us}
 
 1. **インフラストラクチャセキュリティレビュー**を依頼するには、[セキュリティレビューテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-security-review)を使用して Issue を作成してください
 1. **本番環境準備状況レビュー**を依頼するには、[本番環境準備状況テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-production-readiness)を使用して Issue を作成してください
@@ -88,9 +88,9 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 - チームは毎日、すべての受信リクエストをトリアージし (適切に優先順位付け) します。
 - 緊急の依頼があり、通常のトリアージを待てない場合は、Slack チャンネルで連絡をしてお知らせください。
 
-## 私たちの働き方
+## 私たちの働き方 {#how-we-work}
 
-### ミーティングとスケジュール済みコール
+### ミーティングとスケジュール済みコール {#meetings-and-scheduled-calls}
 
 私たちの好みは、後述の[プロジェクト管理セクション](#project-management)で説明するように、プロジェクトの Issue トラッカー内で非同期に作業することです。
 
@@ -98,11 +98,10 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 
 - 進捗、ブロッカー、InfraSec チームに関連するすべてを議論する隔週のチームシンク。
   - 会社の誰でも参加を歓迎します。
-  - [アジェンダは GitLab 内で公開](https://docs.google.com/document/d/1mvmPrG66JpTkj3dbDpnhNybADrUVQwP96DM1trQT89Y)されています。
 - 前四半期にうまくいったことを振り返り、今後改善できることを議論する四半期ごとのチームレトロスペクティブ。
 - 個人貢献者とエンジニアリングマネージャー間の 1-1。
 
-### チームページ
+### チームページ {#team-pages}
 
 - チームに関する一般的な情報を含む[ハンドブックページ](/handbook/security/product-security/infrastructure-security/)
 - チームの運用上の信頼できる唯一の情報源である[内部ハンドブック](https://internal.gitlab.com/handbook/security/product_security/infrastructure_security/)。チーム情報については、誰もが**確認することが推奨**されます
@@ -117,14 +116,14 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 - このレベルですべてのプロジェクトを持つことで、優先順位付けに単一のリストを使用でき、異なるサービスの作業を並行して優先順位付けできます
 - プロジェクトは [InfraSec の目標](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/wikis/InfraSec-Goals)に沿って優先順位付けされます
 
-#### チーム計画
+#### チーム計画 {#team-planning}
 
 - InfraSec チームの**長期戦略**については、以下を参照してください:
   - 🎯 [InfraSec の目標](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/wikis/InfraSec-Goals)
 - **戦術的な観点**からは、以下を参照してください:
   - 🎛 [InfraSec 計画ボード](https://gitlab.com/groups/gitlab-com/-/boards/7549315?label_name%5B%5D=Department%3A%3AInfraSec) (現在取り組んでいるタスク)
 
-#### プロジェクトオーナーシップ
+#### プロジェクトオーナーシップ {#project-ownership}
 
 各プロジェクトには、プロジェクトの提供に責任を持つオーナーがいます。
 
@@ -133,7 +132,7 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 1. Epic の説明とマイルストーンのステータスを定期的に更新する。
 1. 他のメンバーと協力して、プロジェクトの Issue をボード間で移動させる。
 
-#### ラベル
+#### ラベル {#labels}
 
 **プロジェクトワークのみ**には、以下のラベルを使用してください:
 
@@ -143,7 +142,7 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 | `~"Infrastructure Security Team"`   | チームラベル          |
 | `~"InfraSec::triage"`       | トリアージが必要な新しい Issue 用                         |
 
-### デザインドキュメント
+### デザインドキュメント {#design-documents}
 
 新しいプロジェクトを開始する前に、チームはデザインドキュメントを通じてソフトウェア設計を定義することが**推奨**されます。
 これらのデザインドキュメントは、高レベルの実装戦略と主要な設計上の決定を文書化し、それらの決定の際に検討されたトレードオフに重点を置きます。
@@ -154,9 +153,9 @@ GitLab のインフラストラクチャセキュリティチームは、GitLab 
 2. 要求されるデータを記入します
 3. チームの他のメンバーをレビュアーとしてマークします
 
-## 追加リソース
+## 追加リソース {#additional-resources}
 
-### オンボーディング
+### オンボーディング {#onboarding}
 
 - インフラストラクチャセキュリティチームの[オンボーディングテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/team-charter/-/blob/master/onboarding/onboarding_template.md)
 - [InfraSec エンタイトルメントテンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/blob/master/.gitlab/issue_templates/role_baseline_access_request_tasks/department_security/role_security_engineer_infrastructure_security.md)

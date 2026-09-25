@@ -2,11 +2,11 @@
 title: "テクニカルライティング"
 description: "GitLab の Technical Writing チームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。"
 upstream_path: /handbook/marketing/product-and-technical-marketing/technical-writing/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-translated_at: "2026-09-04T20:59:59+09:00"
+upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
+translated_at: "2026-09-25T21:12:56Z"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-25T15:49:42+01:00"
 ---
 
 優れたドキュメントは、GitLab の顧客、ユーザー、管理者の進化するニーズに応えます。機能やベストプラクティスについて読者を教育します。GitLab を効率的に設定、利用、トラブルシューティングできるようにします。テクニカルライティングチームは [docs.gitlab.com](https://docs.gitlab.com) サイトとそのコンテンツ、プロセス、ツールを管理しています。
@@ -50,7 +50,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 | エイリアス                                                          | GitLab グループ                                                                                                                                                                                            | 説明 |
 |:---------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------|
 | `@gl-docsteam`                                                 | [gl-docsteam](https://gitlab.com/groups/gl-docsteam/-/group_members)                                                                                                                                    | テクニカルライティングチーム全体（リーダーシップ、ライター、エンジニア） |
-| `@gitlab-org/tw-leadership`                                    | [gitlab-org/tw-leadership](https://gitlab.com/groups/gitlab-org/tw-leadership/-/group_members?with_inherited_permissions=exclude)                                                                       | リーダーシップ（Manager、Staff テクニカルライター、Staff エンジニア） |
+| `@gitlab-org/tw-leadership`                                    | [gitlab-org/tw-leadership](https://gitlab.com/groups/gitlab-org/tw-leadership/-/group_members?with_inherited_permissions=exclude)                                                                       | リーダーシップ（Managers、Staff Technical Writers、Staff Engineers） |
 | `@gitlab-org/technical-writing/tw-docops`                      | [gitlab-org/technical-writing/tw-docops](https://gitlab.com/groups/gitlab-org/technical-writing/tw-docops/-/group_members?with_inherited_permissions=exclude)                                           | [DocOps](#docops-group) |
 | `@gitlab-org/technical-writing/tw-eng`                      | [gitlab-org/technical-writing/tw-eng](https://gitlab.com/groups/gitlab-org/technical-writing/tw-eng/-/group_members?with_inherited_permissions=exclude)                                           | エンジニア |
 | `@gitlab-org/maintainers/gitlab-development-kit/documentation` | [gitlab-org/maintainers/gitlab-development-kit/documentation](https://gitlab.com/groups/gitlab-org/maintainers/gitlab-development-kit/documentation/-/group_members?with_inherited_permissions=exclude) | [GDK](https://gitlab.com/gitlab-org/gitlab-development-kit) のドキュメントをレビューするテクニカルライター |
@@ -105,7 +105,7 @@ GitLab ドキュメントは、ユーザー、管理者、意思決定者が Git
 - ドキュメント計画をレビュー・協働し、ドキュメントのマージリクエストや最近マージされたドキュメントをレビューし、コンテンツがスタイルと言語の標準を満たすことを確認する。
 - 完全性とスムーズなユーザーエクスペリエンスを確保するために、改善されたドキュメントを再編成・刷新・執筆する。
 - マイクロコピー、UI からドキュメントへのリンク、エラーメッセージ、UI 要素のラベルなど、UI テキストについてプロダクトデザイナーと協働する。
-- 毎月の[リリースポスト](https://docs.gitlab.com/development/documentation/release_notes/)の Technical Writing Lead を務める。
+- 毎月の[リリースノート](https://docs.gitlab.com/development/documentation/release_notes/)の Technical Writing Lead を務める。
 
 ### 優先順位付け {#prioritization}
 
@@ -113,7 +113,7 @@ GitLab ドキュメントは、ユーザー、管理者、意思決定者が Git
 
 1. 機能作業（新機能のドキュメント化、UI テキストに関するガイダンスの提供を含む）
 1. OKR 関連作業
-1. ドキュメントの改善とバックログ Issue（ステージリード作業、ドキュメントの技術的負債、コンテンツトピック設計の実装を含む）
+1. ドキュメントの改善とバックログ Issue（ステージリード作業、ドキュメントの技術的負債、トピックタイプの実装を含む）
 1. その他すべてのタスク（DocOps タスクを含む）
 
 ### プロセス {#processes}
@@ -121,7 +121,7 @@ GitLab ドキュメントは、ユーザー、管理者、意思決定者が Git
 チームは、次のような効率的なプロセスの開発と保守に責任を負っています。
 
 - GitLab ドキュメントを最新に保つためのプロセスが整備され、遵守されていることを確認する。
-- プロダクト・エンジニアリングとのドキュメントワークフロー、ドキュメントチームのワークフロー、作業分担に従い、それらを最適化する。
+- Product および Engineering とのドキュメントワークフローと、Technical Writing チームのワークフローに従い、それらを最適化する。
 - ドキュメント関連の Issue をトリアージする。
 - [ドキュメントスタイルガイド](https://docs.gitlab.com/development/documentation/styleguide/)を改良し、GitLab ドキュメントとその貢献プロセスに関するコンテンツを継続的に改善する。
 - コミュニティからのドキュメント貢献を効率的に処理しつつ、誰でもドキュメントに貢献しやすくする。
@@ -129,7 +129,7 @@ GitLab ドキュメントは、ユーザー、管理者、意思決定者が Git
 #### スタイルガイド {#style-guide}
 
 [ドキュメントスタイルガイド](https://docs.gitlab.com/development/documentation/styleguide/)は、
-プロダクトドキュメントとリリースポストに関する言語とスタイルのガイダンスを提供します。
+プロダクトドキュメントとリリースノートに関する言語とスタイルのガイダンスを提供します。
 
 どのテクニカルライター（またはその他の貢献者）も、`~tw-style` ラベルを付けた Issue または
 マージリクエストを作成し、その Issue または MR を Style Guide DRI にアサインすることで、
@@ -158,7 +158,7 @@ GitLab での翻訳と国際化について詳しくは、
 
 docs.gitlab.com の一部のコンテンツは、[TW のレビュー対象外](#content-not-reviewed-by-tws)です。
 
-<a id="designated-technical-writers">
+<a id="designated-technical-writers"></a>
 
 ### DevOps ステージとグループへのアサインメント {#assignments-to-devops-stages-and-groups}
 
@@ -173,13 +173,13 @@ docs.gitlab.com の一部のコンテンツは、[TW のレビュー対象外](#
 <!--
   To update the table above:
 
-  - For tech writer's name per stage, change https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/stages.yml and https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/layouts/shortcodes/tech-writing.html
+  - For tech writer's name per stage, change https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/stages.yml and https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/layouts/_shortcodes/product/tech-writing.html
   - To turn off a stage, set tw: false in https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/stages.yml
 
 Reference: https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/24952
 -->
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注" color="primary" %}}
 **ドキュメントページのメタデータからこのページに案内された場合:**
 
 - メタデータは開発者の所有権を示すものではなく、適切なテクニカルライターに案内することを目的としています。
@@ -213,13 +213,7 @@ Technical Writing Manager は主要な[セクション](/handbook/product/catego
 
 ### ステージリード {#stage-leads}
 
-{{< alert type="note" >}}
-
-このセクションでは、FY2025 の Q1 と Q2 に試験的に実施し、2025 年の Q3 でより広く展開したプロセスについて概説します。このプロセスは変更される可能性があります。
-
-{{< /alert >}}
-
-一部のテクニカルライターは、特定の [DevOps ステージ](#stage-leads)の **ステージリード** としてアサインされます。
+一部のテクニカルライターは、特定の [DevOps ステージ](/handbook/product/categories/#devops-stages)の **ステージリード** としてアサインされます。
 
 | ステージ            | アサインされたステージリード |
 |:-----------------|:--------------------|
@@ -257,13 +251,14 @@ Issue ボードの作成に責任を負います。
 一部のテクニカルライターは [DocOps グループ](https://gitlab.com/gitlab-org/technical-writing/tw-docops)のメンバーであり、
 次の責任を負っています。
 
-- CI/CD パイプラインやローカルマシンでのテスト・リンティングを通じて、コンテンツの品質を維持する。
+- CI/CD パイプラインやローカルでのテスト・リンティングを通じて、コンテンツの品質を維持する。
 - 依頼があったとき、またはエンジニアがオンラインでないときに、[Docs Engineers](/job-description-library/product/ux-fullstack-engineer/) の運用タスクを支援する。たとえば、Pages の設定、デプロイ、スケジュールされたパイプライン、
   レビューアプリの支援。
 - リンティングツールの依存関係を更新し、それらの更新を上流のドキュメントプロジェクトに展開する。
-  DocOps グループは、ドキュメントウェブサイトのコード、インフラ、ビルドスクリプトには責任を負いません。
-  DocOps タスクは、機能作業や OKR 関連作業よりも下位に[優先順位付け](#prioritization)されます。
 - [TW: DocOps Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/9427118?label_name%5B%5D=tw-testing)を監視する。
+
+DocOps グループは、ドキュメントウェブサイトのコード、インフラ、ビルドスクリプトには責任を負いません。
+DocOps タスクは、機能作業や OKR 関連作業よりも下位に[優先順位付け](#prioritization)されます。
 
 DocOps グループへの参加は、チームの要件に基づきます。参加に興味がある場合は、マネージャーに相談してください。
 
@@ -326,7 +321,7 @@ DocOps グループは、この作業を他の[テクニカルライティング
 
 - ドキュメントプロジェクトには 3,100 を超えるドキュメントページと 4,400,000 を超える単語があります。
 - 2020 年 5 月以降、ページ数は 165% 以上、単語数は 270% 以上増加しています。
-- ページ（30%）と単語（30%）の大部分は、左ナビゲーションの **Use GitLab** セクションにあります。
+- ページ数（30%）と単語数（30%）で最大の割合を占めるのは、左ナビゲーションの **Use GitLab** セクションです。
 
 GitLab チームメンバーは、[ドキュメントメトリクスページ](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/technical-writing/metrics-kpis/)
 と docs.gitlab.com の [LookerStudio ダッシュボード](https://lookerstudio.google.com/reporting/d6af7a2b-2aaa-4f30-8742-811e62777c93/page/IeVBD)で追加のドキュメントメトリクスを表示できます。ダッシュボードの手順については、[Google Analytics](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/technical-writing/google-analytics/) を参照してください。
@@ -396,7 +391,8 @@ PTO を取得する際、テクニカルライターは次を行います。
 
 | バージョン | 月 | リリースノートとドキュメントリリース | メンテナンスタスク |
 |---------|-------|----------------------------------------|-------------------|
-| 19.8 | 2027 年 1 月 | TBD | {{< member-by-name "Marcel Amirault" >}} |
+| 19.9 | 2027 年 2 月 | TBD | {{< member-by-name "Evan Read" >}} |
+| 19.8 | 2027 年 1 月 | {{< member-by-name "Evan Read" >}} | {{< member-by-name "Marcel Amirault" >}} |
 | 19.7 | 2026 年 12 月 | {{< member-by-name "Marcel Amirault" >}} | {{< member-by-name "Isaac Durham" >}} |
 | 19.6 | 2026 年 11 月 | {{< member-by-name "Ashraf Khamis" >}} | {{< member-by-name "Lorena Ciutacu" >}} |
 | 19.5 | 2026 年 10 月 | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Zach Painter" >}} |
@@ -477,7 +473,7 @@ PTO を取得する際、テクニカルライターは次を行います。
   - 改善
   - バグ修正
   - コミュニティ貢献
-- リリースポストの項目
+- リリースノート
 
 次の項目は **heavy** 編集を受けます。
 
@@ -537,11 +533,11 @@ PTO を取得する際、テクニカルライターは次を行います。
 
 ### テクニカルライターの対応可否の判断 {#determining-technical-writer-availability}
 
-テクニカルライターが一般的なチームのマージリクエストレビューに対して忙しすぎて、自分のグループやその他の優先事項に集中する必要がある場合があります。そのような場合、テクニカルライターは **Busy** チェックボックスを選択し、🔴 `:red_circle:` を追加することで GitLab ステータスを更新でき、これによりレビュアールーレットに自分の名前が表示されなくなります。
+テクニカルライターが一般的なチームのマージリクエストレビューに対して忙しすぎて、自分のグループやその他の優先事項に集中する必要がある場合があります。そのような場合、テクニカルライターは **Busy** チェックボックスを選択し、🔴（`:red_circle:`）の絵文字を追加することで GitLab ステータスを更新でき、これによりレビュアールーレットに自分の名前が表示されなくなります。
 
-たとえば、あるマイルストーンのリリース担当のテクニカルライターは、リリースポストやその他の要件に集中するため、[リリース日](/handbook/engineering/releases/)の前の週に busy インジケーターをステータスに追加するべきです。
+たとえば、あるマイルストーンのリリース担当のテクニカルライターは、リリースノートやその他の要件に集中するため、[リリース日](/handbook/engineering/releases/)の前の週に busy インジケーターをステータスに追加するべきです。
 
-その他すべての場合、テクニカルライターは busy インジケーターをプロフィールに追加（および削除）できますが、busy インジケーターは一度に 2 日を超えて設定せず、2 週間に 1 回を超えて使用しないようお願いします。（リリース中の busy インジケーターの使用はこれに影響しないことに注意してください。）レビュールーレットに参加しない時間がもっと必要な場合は、マネージャーに相談して支援を得られるようにしてください（これには busy インジケーターの追加使用が含まれる場合があります）。
+その他すべての場合、テクニカルライターは busy インジケーターをプロフィールに追加（および削除）できますが、busy インジケーターは一度に 2 日を超えて設定せず、2 週間に 1 回を超えて使用しないようお願いします。（リリース中の busy インジケーターの使用は、この制限に含まれません。）レビュールーレットに参加しない時間がもっと必要な場合は、マネージャーに相談して支援を得られるようにしてください（これには busy インジケーターの追加使用が含まれる場合があります）。
 
 ## マージ権限 {#merge-rights}
 
@@ -594,7 +590,7 @@ Weekly Wednesday Question スタンドアップに新しいメンバーを追加
    求められたら Slack アカウントでサインインします。
 1. [Weekly Wednesday Question](https://app.geekbot.com/dashboard/standup/28408/manage?members)
    スタンドアップを選択し、**Add participants** エリアでメンバーを名前で検索します。
-1. 新しく追加したメンバーに manage アクセスを付与し、右上隅の **Save** を選択します。
+1. 新しく追加したメンバーに Manage アクセスを付与し、右上隅の **Save** を選択します。
 
 テクニカルライティングチームのメンバーとして、ランダムな水曜日の質問のリストに自分の
 質問を追加することが推奨されています！追加するには、次を行います。
@@ -615,7 +611,7 @@ Weekly Wednesday Question スタンドアップに新しいメンバーを追加
 - [対応可能な Issue のリスト](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=documentation&label_name%5B%5D=docs-only&label_name%5B%5D=Seeking%20community%20contributions)
 - [GitLab Docs リポジトリ](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com)
 
-## docs.gitlab.com で緊急のコンテンツ更新を行う {#make-an-urgent-content-update-on-docs-gitlab-com}
+## docs.gitlab.com で緊急のコンテンツ更新を行う {#make-an-urgent-content-update-on-docsgitlabcom}
 
 ドキュメントウェブサイトは 1 時間ごとに更新されます。まれに、ドキュメントの更新を
 もう少し早く公開しなければならない場合があります。緊急の更新が必要な場合は、[ドキュメントサイトを手動でデプロイする](https://docs.gitlab.com/development/documentation/site_architecture/deployment_process/#manually-deploy-to-production)手順に従ってください。
@@ -629,5 +625,5 @@ Weekly Wednesday Question スタンドアップに新しいメンバーを追加
 ## 関連トピック {#related-topics}
 
 - [ドキュメントワークフロー](https://docs.gitlab.com/development/documentation/workflow/)
-- [ローカル環境のセットアップ](https://docs.gitlab.com/development/documentation/authoring_environment.html)
+- [ローカル環境のセットアップ](https://docs.gitlab.com/development/documentation/authoring_environment/)
 - [ドキュメントサイトアーキテクチャ](https://docs.gitlab.com/development/documentation/site_architecture/)
