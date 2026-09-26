@@ -2,11 +2,11 @@
 title: "エンタープライズデータチーム"
 description: "GitLab エンタープライズデータチームは、すべての GitLab チームメンバーがデータプログラムに貢献し、データ資産からビジネス価値を生み出せるよう支援する責任を担っています。"
 upstream_path: /handbook/enterprise-data/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T08:36:01+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T14:38:08+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -38,7 +38,7 @@ GitLab のデータの状態を向上させることに集中する人々・プ�
 
 GitLab データプログラムには以下の分野に集中したチームが含まれます:
 
-* [カスタマーサクセス オペレーショナルデータチーム](/handbook/customer-success/product-usage-data/)
+* [カスタマーサクセス オペレーショナルデータチーム](/handbook/customer-experience/product-usage-data/)
 * [エンタープライズデータチーム](/handbook/enterprise-data/)
 * [Finance アナリティクス & インサイト](/handbook/enterprise-data/organization/analytics/)
 * [マーケティングアナリティクス](/handbook/enterprise-data/marketing-analytics/)

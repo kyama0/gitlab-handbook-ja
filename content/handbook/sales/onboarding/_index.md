@@ -2,11 +2,11 @@
 title: "GitLab Academy"
 description: "GitLab Academy は、CRO 組織の新入社員全員を対象としたオンボーディングプログラムです。これまでで最も野心的なオンボーディング体験であり、新しいフィールドチームメンバーが入社後 30 日以内にカスタマー対応可能になることを目的とした、ブレンデッドラーニングジャーニーです。"
 upstream_path: /handbook/sales/onboarding/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## GitLab Academy について
@@ -103,11 +103,11 @@ GitLab Academy には、各セグメントとロールの独自のニーズを�
 **以下からあなたのロール固有のオンボーディングハンドブックページを見つけてください。**
 
 - Enterprise, Commercial & Ecosystem Sales — [Sales Onboarding (Shadow Program) Handbook](/handbook/sales/shadow-program/)
-- Renewals Managers — [RM Onboarding Handbook](/handbook/customer-success/renewals-managers/rm-onboarding/)
-- Customer Success (CSM/A) — [CSM/A Onboarding Handbook](/handbook/customer-success/csm/csm-onboarding/)
-- Customer Success (CSE) — [CSE Onboarding Handbook](/handbook/customer-success/csm/segment/cse/cse-tm-onboarding/)
+- Renewals Managers — [RM Onboarding Handbook](/handbook/customer-experience/renewals-managers/rm-onboarding/)
+- Customer Success (CSM/A) — [CSM/A Onboarding Handbook](/handbook/customer-experience/csm/csm-onboarding/)
+- Customer Success (CSE) — [CSE Onboarding Handbook](/handbook/customer-experience/csm/segment/cse/cse-tm-onboarding/)
 - Solutions Architects — [SA Onboarding Handbook](/handbook/solutions-architects/sa-enablement/sa-onboarding/)
-- Professional Services — [Professional Services Handbook](/handbook/customer-success/professional-services-engineering/)
+- Professional Services — [Professional Services Handbook](/handbook/customer-experience/professional-services-engineering/)
 - Sales and Business Development — [SDR & BDR Onboarding (Tanuki Tech) Handbook](/handbook/sales/sales-development/tanuki-tech/)
 
 ---

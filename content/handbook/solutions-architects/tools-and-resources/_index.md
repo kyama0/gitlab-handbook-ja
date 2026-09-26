@@ -3,9 +3,9 @@ title: ツールとリソース
 description: "Solutions Architects が利用するツール、プラットフォーム、リソースのリファレンスインデックス"
 model: claude-opus-4-7
 upstream_path: /handbook/solutions-architects/tools-and-resources/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-16T23:38:14-04:00"
-translated_at: "2026-09-20T03:09:30+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
 ---
@@ -43,7 +43,7 @@ DAP トライアル、POV、または顧客デプロイ中に SA がバグや顧
 
 ### 学習プラットフォーム {#learning-platforms}
 
-Solutions Architect として、製品や関連業界トピックについて継続的に学び続けることは重要です。[エデュケーション＆イネーブルメントハンドブックページ](/handbook/customer-success/education-enablement/)には、習熟のためにご活用いただける集約リソースのダッシュボードが用意されています。
+Solutions Architect として、製品や関連業界トピックについて継続的に学び続けることは重要です。[エデュケーション＆イネーブルメントハンドブックページ](/handbook/customer-experience/education-enablement/)には、習熟のためにご活用いただける集約リソースのダッシュボードが用意されています。
 
 ### 製品リリース {#product-releases}
 
@@ -88,7 +88,7 @@ Solutions Architects は、デモ、プレゼンテーション、Q&A のため�
 
 ### O'Reilly ラーニングプラットフォーム {#oreilly-learning-platform}
 
-詳細は [カスタマーサクセス エデュケーション＆イネーブルメントページ](/handbook/customer-success/education-enablement/)で確認できます。
+詳細は [カスタマーサクセス エデュケーション＆イネーブルメントページ](/handbook/customer-experience/education-enablement/)で確認できます。
 
 ### LinkedIn Learning プラットフォーム {#linkedin-learning-platform}
 

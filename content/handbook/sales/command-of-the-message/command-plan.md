@@ -2,11 +2,11 @@
 title: "Command Plan"
 description: "Command Plan は、GitLab が顧客価値駆動型のセールス方法論と戦略的商談管理を商談管理プロセスに運用化した方法です"
 upstream_path: /handbook/sales/command-of-the-message/command-plan/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-translated_at: "2026-07-25T06:27:01+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-24T14:14:48+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -23,7 +23,7 @@ Command Plan は以下の 3 セクションで構成されます。Opportunity O
 1. [**MEDDPPICC**](/handbook/sales/command-of-the-message/command-plan/#meddppicc)
 1. [**Close Plan Details**](/handbook/sales/command-of-the-message/command-plan/#close-plan-details)
 
-セールスレベルでは、Command Plan は [Strategic Account Executive](/job-description-library/sales/enterprise-account-executive/) または [Commercial Account Executive](/job-description-library/sales/account-executive/) が所有し、計画を作成して内容を相応に更新します。これはリビングなプリセールス文書として使用され、その目的は [アカウントオンボーディング](/handbook/customer-success/csm/onboarding/) の時点で [Gainsight Success Plan objectives](/handbook/customer-success/csm/success-plans/#objectives) に変換されます。
+セールスレベルでは、Command Plan は [Strategic Account Executive](/job-description-library/sales/enterprise-account-executive/) または [Commercial Account Executive](/job-description-library/sales/account-executive/) が所有し、計画を作成して内容を相応に更新します。これはリビングなプリセールス文書として使用され、その目的は [アカウントオンボーディング](/handbook/customer-experience/csm/onboarding/) の時点で [Gainsight Success Plan objectives](/handbook/customer-experience/csm/success-plans/) に変換されます。
 
 Command Plan ボタンは Salesforce 商談オブジェクトの `Opportunity Detail` セクション (下記画像を参照) または Clari 内、もしくは Salesforce Lightning の商談レコードの右上のドロップダウンメニューで見つけられます。Command Plan は営業チームメンバーが簡潔かつ要を得ることを促すために、Salesforce 内では 5000 文字に制限されていることに注意してください。そのため、Command Plan は将来を見据えた計画に焦点を当て、現在のクローズプランに関連性がなくなった詳細は削除すべきです。Command Plan から削除したいが履歴目的で保持したい情報については、商談に新しいアクティビティレコードとして追加してください。
 

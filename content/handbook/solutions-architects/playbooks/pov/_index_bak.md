@@ -2,11 +2,11 @@
 title: 価値実証 (POV)
 description: 価値実証 (POV)
 upstream_path: /handbook/solutions-architects/playbooks/pov/_index_bak/
-upstream_sha: a0d167307f5d32554672c5cf99e3f47abb35e1dc
-translated_at: "2026-09-08T23:15:08+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-08T01:01:41-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 価値実証 (POV) {#proof-of-value-pov}
@@ -183,7 +183,7 @@ POV のその他のベストプラクティス:
 
 - SA: 顧客アーキテクチャが POV をサポートできる準備ができていることを確認 (self-managed の場合)
 - SA: 顧客ネットワークが GitLab.com にアクセスできることを確認 (SaaS 評価の場合)
-- SA: [CSM ハンドブックページ](/handbook/customer-success/csm/)に従って GitLab に Customer Success プロジェクトを作成
+- SA: [CSM ハンドブックページ](/handbook/customer-experience/csm/)に従って GitLab に Customer Success プロジェクトを作成
 - SA: 顧客が必要とする場合は POV ドキュメントを作成、それ以外は Customer Success プロジェクトをデフォルトとする
 - SA: キックオフ前に POV のゴールとビジネスアウトカムが明確に特定されていることを確認
 - SA: 大規模な戦略商談では、Self-Managed または GitLab.com サポート関連の該当 Slack チャンネルを使い、POV の日付、顧客、関連情報を GitLab Support に通知

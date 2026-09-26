@@ -3,11 +3,11 @@ title: 営業およびカスタマーサクセスへのエスカレーション
 description: "サポートから GitLab 営業またはカスタマーサクセスへエスカレーションする方法"
 category: Handling tickets
 upstream_path: /handbook/support/workflows/support-sales-escalations/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T03:10:58Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-07-22T02:37:39+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 目的
@@ -32,9 +32,9 @@ lastmod: "2025-07-22T02:37:39+00:00"
 
 ### **役割: カスタマーサクセスマネージャー (CSM)**
 
-カスタマーサクセスマネージャー（旧称 Technical Account Manager または TAM）は、通常、顧客との GitLab の関係を管理します。CSM が提供するサービスの包括的な一覧は [こちら](/handbook/customer-success/csm/services/#responsibilities-and-services) に記載されています。
+カスタマーサクセスマネージャー（旧称 Technical Account Manager または TAM）は、通常、顧客との GitLab の関係を管理します。CSM が提供するサービスの包括的な一覧は [こちら](/handbook/customer-experience/csm/services/#responsibilities-and-services) に記載されています。
 
-CSM は [特定の基準](/handbook/customer-success/csm/services/#csm-alignment) に基づいて割り当てられているため、すべての顧客に CSM が割り当てられているとは限りません。CSM が割り当てられている顧客については、SFDC で上記と同じプロセスに従いますが、`Customer Success Manager` フィールドを参照します。
+CSM は [特定の基準](/handbook/customer-experience/csm/services/#csm-alignment) に基づいて割り当てられているため、すべての顧客に CSM が割り当てられているとは限りません。CSM が割り当てられている顧客については、SFDC で上記と同じプロセスに従いますが、`Customer Success Manager` フィールドを参照します。
 
 |エスカレーションシナリオ|チャンネル|関連性|
 |--|--|--|
@@ -47,7 +47,7 @@ CSM は [特定の基準](/handbook/customer-success/csm/services/#csm-alignment
 
 ## Success On-Demand (CSE)（別名 Scale）エンゲージメント
 
-専任の CSM／A はいないものの、カスタマーサクセスのエンゲージメントから恩恵を受けられる組織もあります。Zendesk のノートで `Customer Success Manager: TAM Scale` と表示されている場合がそうです。適切な場合は、アカウントオーナーに連絡し、[CSE エンゲージメントリクエスト](/handbook/customer-success/csm/segment/cse/cse-operating-rhythm/) を開くことを相談できます。
+専任の CSM／A はいないものの、カスタマーサクセスのエンゲージメントから恩恵を受けられる組織もあります。Zendesk のノートで `Customer Success Manager: TAM Scale` と表示されている場合がそうです。適切な場合は、アカウントオーナーに連絡し、[CSE エンゲージメントリクエスト](/handbook/customer-experience/csm/segment/cse/cse-operating-rhythm/) を開くことを相談できます。
 
 これが適切となりうる例:
 
@@ -58,5 +58,5 @@ CSM は [特定の基準](/handbook/customer-success/csm/services/#csm-alignment
 
 ## リソース
 
-- [CSM の責任範囲とサービス](/handbook/customer-success/csm/services/#csm-alignment)
-- [カスタマーサクセスのエスカレーションプロセス](/handbook/customer-success/csm/escalations/)
+- [CSM の責任範囲とサービス](/handbook/customer-experience/csm/services/#csm-alignment)
+- [カスタマーサクセスのエスカレーションプロセス](/handbook/customer-experience/csm/escalations/)

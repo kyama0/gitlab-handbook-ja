@@ -2,11 +2,11 @@
 title: "フィールドとのコミュニケーション"
 description: "Slack と Email の両方を使って GitLab フィールドチームとコミュニケーションし、フィールド内でコミュニケーションするためのガイド"
 upstream_path: /handbook/sales/sales-google-groups/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:03:43+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 このページは、Slack と Email の両方を使ってフィールドとコミュニケーションし、フィールド内でコミュニケーションするためのガイドとして機能することを意図しています。CRO 組織のすべての Google グループ、Slack グループ、Slack チャネルの概要を見つけるには、以下を読んでください。
@@ -173,7 +173,7 @@ Slack グループは以下の場合にのみ使用してください。
 
 | チャネル名 | チャネルアクセス (Private/Public) | 説明 |
 | ------ | ------ | ------ |
-| #professional-services |  public | [Professional Services チームとコミュニケーション](/handbook/customer-success/professional-services-engineering/working-with/#slack)するために使用 |
+| #professional-services |  public | [Professional Services チームとコミュニケーション](/handbook/customer-experience/professional-services-engineering/working-with/#slack)するために使用 |
 | #ps-internal | private | Professional Services チームメンバーのチームチャネル |
 | #ps-managers | private | PS 組織のすべてのマネージャー以上のチャネル |
 | #ps-operations | private | PS 組織のオペレーションをサポートするすべてのチームメンバー |

@@ -2,11 +2,11 @@
 title: "セールス & カスタマーサクセス Quick Start 学習パス"
 description: "GitLab のセールス & カスタマーサクセスオンボーディングのコアカリキュラム"
 upstream_path: /handbook/sales/onboarding/sales-learning-path/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## セールス & カスタマーサクセス学習パス - コアカリキュラム
@@ -97,8 +97,8 @@ lastmod: "2026-08-27T23:30:57+02:00"
   - [GitLab Secure Doc](https://docs.gitlab.com/ee/user/application_security/index.html)
   - [GitLab セキュリティとコンプライアンス機能デック](https://docs.google.com/presentation/d/1WHTyUDOMuSVK9uK7hhSIQ_JbeUbo7k5AW3D6WwBReOg/edit)
 - **プロフェッショナルサービスの販売 (Material - ビデオ - 30 分)**
-  - 私たちの [Professional Services](/handbook/customer-success/professional-services-engineering/selling/) チームは、GitLab の主題専門家だけでなく、大規模なアプリケーションのデプロイと保守、および SDLC 全体のベストプラクティスの作成と教育の経験を持つ、経験豊富な DevOps プロフェッショナルで構成されています。私たちの専門家は、Concurrent DevOps Transformations をリードし、顧客の戦略的ビジネスイニシアチブに直接サポートを提供します。GitLab の Professional Services チームは、クライアントが GitLab インストールの完全な価値を実現できるように存在しています。GitLab インストールが堅牢でセキュアであることを保証するために、直接的な実装サポートを提供できます。また、移行サービスを提供して、クリーンなデータセットを提供することで GitLab への移行を促進し、すぐに業務を再開できるようにします。私たちの教育と専門的なトレーニングは、CI/CD、バージョン管理、メトリクスなどのベストプラクティスにおけるトレーニングを提供します。
-  - サービスの販売方法に関する [Sales Enablement Session](/handbook/customer-success/professional-services-engineering/sales-enablement/) も視聴できます。
+  - 私たちの [Professional Services](/handbook/customer-experience/professional-services-engineering/selling/) チームは、GitLab の主題専門家だけでなく、大規模なアプリケーションのデプロイと保守、および SDLC 全体のベストプラクティスの作成と教育の経験を持つ、経験豊富な DevOps プロフェッショナルで構成されています。私たちの専門家は、Concurrent DevOps Transformations をリードし、顧客の戦略的ビジネスイニシアチブに直接サポートを提供します。GitLab の Professional Services チームは、クライアントが GitLab インストールの完全な価値を実現できるように存在しています。GitLab インストールが堅牢でセキュアであることを保証するために、直接的な実装サポートを提供できます。また、移行サービスを提供して、クリーンなデータセットを提供することで GitLab への移行を促進し、すぐに業務を再開できるようにします。私たちの教育と専門的なトレーニングは、CI/CD、バージョン管理、メトリクスなどのベストプラクティスにおけるトレーニングを提供します。
+  - サービスの販売方法に関する [Sales Enablement Session](/handbook/customer-experience/professional-services-engineering/sales-enablement/) も視聴できます。
 - **GitLab の方向性と最新リリース**
   - 私たちのビジョンは、異種の DevOps ツールチェーンを、DevOps ライフサイクル全体にわたってデフォルトで動作するように事前構成された単一のアプリケーションに置き換えることです。私たちは、コントリビューターのグループがユーザーに価値を提供することをより速く、より簡単にすることを目指しており、以下を可能にすることでこれを達成します:
   - サイクルタイムの高速化、イノベーションまでの時間の改善
@@ -135,16 +135,16 @@ lastmod: "2026-08-27T23:30:57+02:00"
   - [Proof of Value Deliverable](/handbook/solutions-architects/playbooks/pov) について読む
 - **Customer Success Manager (Material、- ハンドブック - 15 分)**
   - GitLab の Customer Success Manager は、GitLab の顧客の信頼できるアドバイザーとしての役割を果たします。このセクションでは CSM の役割と、その主要な成果物（Health Checks、Success Plans、Executive Business Reviews）を概説します。
-  - [CSM ハンドブック](/handbook/customer-success/csm/#what-is-a-customer-success-manager-csm) を読む
-  - ハンドブックの [Customer Health Scores](/handbook/customer-success/csm/health-score-triage/) について読む
-  - ハンドブックの [Success Plans](/handbook/customer-success/csm/success-plans/) について読む
-  - ハンドブックの [Executive Business Reviews](/handbook/customer-success/csm/ebr/) について読む
+  - [CSM ハンドブック](/handbook/customer-experience/csm/#what-is-a-customer-success-manager-csm-at-gitlab) を読む
+  - ハンドブックの [Customer Health Scores](/handbook/customer-experience/csm/health-score-triage/) について読む
+  - ハンドブックの [Success Plans](/handbook/customer-experience/csm/success-plans/) について読む
+  - ハンドブックの [Executive Business Reviews](/handbook/customer-experience/csm/ebr/) について読む
 - **Professional Services Engineer (Material - ハンドブック - 10 分)**
    -Professional Services Engineer (PSE) は、GitLab テクノロジーとソリューションのオンサイトまたはリモートでのデプロイに関するプロフェッショナルサービス、およびトレーニングを提供します。PSE は、ベストプラクティスを展開することで、顧客の人員とプロジェクトチームとの直接的なやり取りを主導する技術的な代表者として機能します。
   - [PSE Role job description](/job-description-library/sales/professional-services-engineer/) を読む
-  - [ハンドブック](/handbook/customer-success/professional-services-engineering/) を読む
+  - [ハンドブック](/handbook/customer-experience/professional-services-engineering/) を読む
 - **Customer Success ハンドブック (Material - ハンドブック - 10 分)**
-  - [ハンドブック](/handbook/customer-success/) をざっと読みブックマークしてください
+  - [ハンドブック](/handbook/customer-experience/) をざっと読みブックマークしてください
 
 </details>
 
@@ -361,13 +361,13 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - **アクティビティ: GitLab.com のすべての機能を有効にするための Gold レベルアクセスの取得 (Assignment - 15 分 - 10 ポイント)**
    -[example request](https://gitlab.com/gitlab-com/support/internal-requests/issues/310)
 - **アクティビティ: gitlabdemo.com にデモアカウントを作成 (Assignment - 10 ポイント)**
-  - Okta を使用して GitLab 認証情報でログインします。ログイン後、GitLab グループが自動的に作成され、[Cloud Sandbox](https://gitlabsandbox.cloud) でアクセス可能になります。そこから、このグループは将来のデモプロジェクトのための基盤として機能します。デモシステムの概要については、[Demo Systems Handbook page](/handbook/customer-success/demo-systems/) をレビューしてください。Cloud Sandbox の概要については、[Sandbox Cloud Realm Handbook Page](/handbook/company/infrastructure-standards/realms/sandbox/) をレビューしてください。
+  - Okta を使用して GitLab 認証情報でログインします。ログイン後、GitLab グループが自動的に作成され、[Cloud Sandbox](https://gitlabsandbox.cloud) でアクセス可能になります。そこから、このグループは将来のデモプロジェクトのための基盤として機能します。デモシステムの概要については、[Demo Systems Handbook page](/handbook/customer-experience/demo-systems/) をレビューしてください。Cloud Sandbox の概要については、[Sandbox Cloud Realm Handbook Page](/handbook/company/infrastructure-standards/realms/sandbox/) をレビューしてください。
 - **アクティビティ: スタンバイデモプロジェクトのセットアップ (Assignment - 1 日 - 10 ポイント)**
   - 一日のいつでも、簡単なデモを行うために呼ばれる可能性があり、ポケットに一般的にリクエストされるワークフローを持つスタンバイプロジェクトを持っていると役立ちます。
   - スタンバイプロジェクトの作成について、チームのメンバーとペアになってください。ボーナス - スタンバイプロジェクトを作成するときに、ストーリーテリングのアイデアでコラボレーションしてください。
   - 馴染みのあるフレームワークと言語でプロジェクトを作成します。プロジェクトに以下の機能を追加します:
     - アプリケーションをコンテナ化し、コンテナレジストリにプッシュ
-    - GitLab Kubernetes 統合を有効にし、[demo cluster に接続](/handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster/)
+    - GitLab Kubernetes 統合を有効にし、[demo cluster に接続](/handbook/customer-experience/demo-systems/tutorials/getting-started/configuring-group-cluster/)
     - プロジェクトにユニットテストを追加し、[unit test reports](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html) を含める
     - コードベースの脆弱性を特定するための [static analysis](https://docs.gitlab.com/ee/user/application_security/sast/) を追加
     - プロジェクトの依存関係の脆弱性を特定するための [dependency scanning](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/) を追加
@@ -397,8 +397,8 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 - **Customer Onboarding (Material - ハンドブックとビデオ - 60 分)**
   - 顧客のオンボーディングは 45 日間です。Customer Success Manager と Professional Services Engineer は、適切な場合 Solutions Architect と Strategic Account Leader/Account Manager のサポートを受けながら、オンボーディングプロセス全体を通じて密に協力する必要があります。Customer Kickoff は顧客のジャーニーで重要な瞬間です。以下は、顧客とやり取りを始める準備をする際に慣れておくべきリソースです。
-  - [Customer Onboarding](/handbook/customer-success/csm/onboarding/)
-  - [Using Gainsight within Customer Success](/handbook/customer-success/csm/gainsight/)
+  - [Customer Onboarding](/handbook/customer-experience/csm/onboarding/)
+  - [Using Gainsight within Customer Success](/handbook/customer-experience/csm/gainsight/)
   - [Customer Onboarding Dashboard](https://gitlab--jbcxm.na129.visual.force.com/apex/GainsightNXT?sfdc.tabName=01r4M000000wqZv#home%2358502af5-e7c2-4cbd-8645-d612b74424ff)
 - **アクティビティ: Customer Kickoff Call の録画 (Assignment - 60 分 - 10 ポイント)**
    -Zoom を使用して、短いモック顧客キックオフコールを録画してください。マネージャーとオンボーディングバディを必ず招待してください。
@@ -413,7 +413,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 - **Statement of Work (SOW) プロセス (Material - ハンドブック - 20 分)**
   - SOW 作成プロセスをレビューし、Professional Services SOW の作成の詳細について以下のリファレンスデックをレビューしてください。
-  - [Workflow for the SOW](/handbook/customer-success/professional-services-engineering/selling/)
+  - [Workflow for the SOW](/handbook/customer-experience/professional-services-engineering/selling/)
   - [SOW Creation Instructions](https://docs.google.com/presentation/d/1ro9wlLHsoOMC-iYJpxy_RTCD4PfjDFZEdbuMyDD6WOk/edit#slide=id.g2823c3f9ca_0_9)
 - **アクティビティ: モック SOW の作成 (Assignment - 60 分 - 10 ポイント)**
    -以下の計算機とそのページの自動 SOW 作成機能を使用してモック SOW を作成してください。これは 1000 ユーザー向けです。見込み顧客は AWS 上の HA デプロイメント、20 人向けの管理者トレーニング、60 人向けの CI/CD トレーニング、既存の SVN システムからの既存データの移行（これに $15K かかると想定）を望んでいます。完了したら、作成した Google ドキュメントのリンクをマネージャーに送信してください。

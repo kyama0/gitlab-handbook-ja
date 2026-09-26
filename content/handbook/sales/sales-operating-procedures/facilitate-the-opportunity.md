@@ -2,11 +2,11 @@
 title: 商談の推進
 description: 商談を推進するための GitLab セールスプロセス
 upstream_path: /handbook/sales/sales-operating-procedures/facilitate-the-opportunity/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 リードを認定し、それをセールスに変える必要があります。このフェーズは **商談の推進 (Facilitate the Opportunity)** と呼ばれます。このフェーズの目的は、顧客から **テクニカルコミット**、続いて **エコノミックコミット** を獲得することです。コミットとは、買い手がディールを進めたいという口頭での承認です。このフェーズでは、テクニカルコミットとエコノミックコミットを獲得するために完了させる必要のある 4 つのハイレベルなタスクがあります。
@@ -121,7 +121,7 @@ GitLab セールス担当者として、ディスカバリーコールとリサ�
 1. **カスタマー要件** ドキュメントと関連するミーティングノートをレビューして、ギャップを特定し、技術機能に関連するより深いディスカバリーの質問を作成します。
 2. **ハイレベルな技術ディスカバリーコール** を顧客と実施し、一緒に[カスタマー要件ドキュメント](https://docs.google.com/spreadsheets/d/1y1nk7TmjxOxaO8nUg6w1YO04X9wwtz39MnP7NHXq6ec/edit#gid=0)をレビューし、顧客の要件についてのコンテキストとインサイトをさらに収集します。
 3. 更新された要件を GitLab 製品に対して **分析** し、フィット評価を判断します。フィットが判断されたら、技術評価を開始します。
-4. **[プロフェッショナルサービスを販売する機会を特定する](/handbook/customer-success/professional-services-engineering/selling/)**。SAE/ISR は、PS チームが提供する一般的なサービスをサービスページで、または特定の SKU 提供の詳細についてはフルカタログで見つけることができます。SAE/ISR は、顧客要件に基づいて必要なサービスの選択を支援するために SA を引き入れることができます。
+4. **[プロフェッショナルサービスを販売する機会を特定する](/handbook/customer-experience/professional-services-engineering/selling/)**。SAE/ISR は、PS チームが提供する一般的なサービスをサービスページで、または特定の SKU 提供の詳細についてはフルカタログで見つけることができます。SAE/ISR は、顧客要件に基づいて必要なサービスの選択を支援するために SA を引き入れることができます。
 
 ## ステップ 3: 技術評価
 

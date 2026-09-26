@@ -2,9 +2,9 @@
 title: "Solution Validation と方法"
 description: "Solution Validation リサーチは、プロダクト / 機能 / デザインが当初解決しようとした問題を実際に解決したかどうかを批判的に評価します"
 upstream_path: /handbook/upstream-studios/experience-research/solution-validation-and-methods/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:44-03:00"
-translated_at: "2026-07-17T08:00:00+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
 ---
@@ -42,7 +42,7 @@ GitLab UX Research プロジェクトのリサーチ Issue に `UX Solution Vali
 
 UX のテストおよびリサーチ用に予約された GitLab のインスタンスである [UX Cloud Sandbox](/handbook/upstream-studios/experience-research/ux-cloud-sandbox/)があります。参照先のハンドブックページには開始に必要なすべてがあり、支援を求めるための #ux-cloud-sandbox Slack チャンネルもあります。
 
-Sandbox とは別に、きれいなテスト環境を作る支援が必要な場合は、#demo-systems Slack チャンネルで [Demo Systems](/handbook/customer-success/demo-systems/)グループに必ず連絡してください。ユーザー用のデモ環境を作成し、テスト環境に必要な特定のパラメーターの構築を支援できます。この方法でリサーチ調査のテスト環境を設定するのは、時間がかかり難しい場合があることに注意してください。
+Sandbox とは別に、きれいなテスト環境を作る支援が必要な場合は、#demo-systems Slack チャンネルで [Demo Systems](/handbook/customer-experience/demo-systems/)グループに必ず連絡してください。ユーザー用のデモ環境を作成し、テスト環境に必要な特定のパラメーターの構築を支援できます。この方法でリサーチ調査のテスト環境を設定するのは、時間がかかり難しい場合があることに注意してください。
 
 適切な**Solution Validation**リサーチ方法を選ぶには、リサーチの目的を特定する必要があります。自分にこう問いかけてください。***「デザインへの確信を高めるために、どのような情報を学ぶ必要があるか？」***答えは、使用する方法を選ぶ助けになります。それでも不明な場合は、UX Researcher に連絡してください。
 

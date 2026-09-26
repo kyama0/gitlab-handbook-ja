@@ -2,11 +2,11 @@
 title: "Sales Order Processing"
 description: "このページは、アカウントとオポチュニティの作成から、クォート構成、承認、ブッキング要件、最終的な取引のクロージャまでの、Quote to Cash プロセスを概説します。"
 upstream_path: /handbook/sales/field-operations/order-processing/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T14:37:17+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-24T17:41:09-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 **Sales Order Processing ページへようこそ！**
@@ -1255,7 +1255,7 @@ ISR または Account manager が Distributor PO が正しいことを確認し�
 <details>
 <summary markdown="span"><b>Professional Services オポチュニティの Booking Requirements</b></summary>
 
-Professional Services と PS クォート作成の詳細については、[Professional Services handbook ページ](/handbook/customer-success/professional-services-engineering/) と [Deal Desk handbook ページ](/handbook/sales/field-operations/sales-operations/deal-desk/#quoting-professional-services) をレビューしてください。
+Professional Services と PS クォート作成の詳細については、[Professional Services handbook ページ](/handbook/customer-experience/professional-services-engineering/) と [Deal Desk handbook ページ](/handbook/sales/field-operations/sales-operations/deal-desk/#quoting-professional-services) をレビューしてください。
 
 1. Professional Services Opportunity がこれらの off-the-shelf SKU のいずれかのみを含む場合
    - 注: Professional Services は、***Opportunity Record Type*** が ***Professional Services Only*** に設定されたスタンドアロンオポチュニティで販売される必要があります。サブスクリプション製品と同じオポチュニティで販売してはなりません。オポチュニティは、Open または Closed Won ライセンスオポチュニティに移動して New PS Opportunity ボタンをクリックすることで作成する必要があります。これにより、関連する PS opp が生成されます。

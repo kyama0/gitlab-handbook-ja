@@ -2,22 +2,22 @@
 title: アカウントエスカレーションに関する Support Engineer ガイド
 description: Support Engineer がアカウントエスカレーションを取り扱う方法のガイダンス
 upstream_path: /handbook/support/workflows/escalations-support_engineer/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: 2026-05-20T16:17:05-03:00
-translated_at: "2026-05-22T21:16:58Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
 ---
 
 ## 概要
 
-このページは [Customer Account Escalations](/handbook/customer-success/csm/escalations/) において Lead Support Engineer の役割を担う Support Engineer 向けのガイドです。
+このページは [Customer Account Escalations](/handbook/customer-experience/csm/escalations/) において Lead Support Engineer の役割を担う Support Engineer 向けのガイドです。
 
-アカウントエスカレーションは、Support Engineering（Support Manager または Engineer）が [カスタマーエマージェンシーをエスカレーションに変換するプロセス](/handbook/support/workflows/emergency-to-escalation-process) を通じて開始する場合や、[STAR](/handbook/support/internal-support/support-ticket-attention-requests) の結果として開始される場合があります。Customer Success Team も [アカウントエスカレーションを開始する](/handbook/customer-success/csm/escalations/#initiating-managing-and-closing-an-escalation) ことができ、エスカレーションの種類（すべてのアカウントエスカレーションが Support の関与を必要とするわけではありません）と [重大度](/handbook/customer-success/csm/escalations/#definitions-of-severity-levels) に応じて Support team に支援を依頼します。
+アカウントエスカレーションは、Support Engineering（Support Manager または Engineer）が [カスタマーエマージェンシーをエスカレーションに変換するプロセス](/handbook/support/workflows/emergency-to-escalation-process) を通じて開始する場合や、[STAR](/handbook/support/internal-support/support-ticket-attention-requests) の結果として開始される場合があります。Customer Success Team も [アカウントエスカレーションを開始する](/handbook/customer-experience/csm/escalations/#initiating-managing-and-closing-an-escalation) ことができ、エスカレーションの種類（すべてのアカウントエスカレーションが Support の関与を必要とするわけではありません）と [重大度](/handbook/customer-experience/csm/escalations/#definitions-of-severity-levels) に応じて Support team に支援を依頼します。
 
 ### アカウントエスカレーションチーム
 
-各エスカレーションには [Escalation DRI](/handbook/customer-success/csm/escalations/#escalation-dri) がおり、エスカレーションを成功に導くために貢献するメンバーのチームを率います。チームは以下のロールの一部（最低でも Escalation DRI、Lead Support Engineer、および Support Manager DRI）またはすべてで構成されます。
+各エスカレーションには [Escalation DRI](/handbook/customer-experience/csm/escalations/#escalation-dri) がおり、エスカレーションを成功に導くために貢献するメンバーのチームを率います。チームは以下のロールの一部（最低でも Escalation DRI、Lead Support Engineer、および Support Manager DRI）またはすべてで構成されます。
 
 - Escalation DRI（CSM、AE、または CSE マネージャー）
 - Lead Support Engineer
@@ -52,7 +52,7 @@ Lead Support Engineer は以下の目標を持ちます。
 
 ### Support Manager DRI、CSM Leader、Account Manager とのコミュニケーションを調整する
 
-- お客様への最善の更新方法を判断します。定例の同期コール、サポートチケット内での更新、または外部 Slack チャンネルでの更新が考えられます。お客様とコミュニケーションを取る際は [重大度レベル](/handbook/customer-success/csm/escalations/#definitions-of-severity-levels) を考慮してください。
+- お客様への最善の更新方法を判断します。定例の同期コール、サポートチケット内での更新、または外部 Slack チャンネルでの更新が考えられます。お客様とコミュニケーションを取る際は [重大度レベル](/handbook/customer-experience/csm/escalations/#definitions-of-severity-levels) を考慮してください。
 - お客様と共有する技術的詳細のレベルを判断します。お客様はログ分析を一緒に行いたいかもしれませんし、調査結果と推奨事項のみを受け取りたい場合もあります。
 - 社内のステークホルダーが最新の状況を把握できるよう、エスカレーション用の Slack チャンネルに社内向けの更新を投稿します。1 日に複数回の更新が必要になる場合もあります。調査からの更新、根本原因の特定と解決に向けた全体的な進捗、GitLab とお客様が次に行うべきステップを含めてください。
 - エスカレーションの単一の信頼できる情報源として機能するエスカレーションドキュメント内の現在のステータスも更新する必要があります。

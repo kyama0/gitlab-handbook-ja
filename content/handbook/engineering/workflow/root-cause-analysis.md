@@ -1,11 +1,11 @@
 ---
 title: 根本原因分析
 upstream_path: /handbook/engineering/workflow/root-cause-analysis/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 GitLab では、[透明性](/handbook/values/#transparency)が私たちのコアバリューの一つです。これはオープンで誠実な職場環境とサービスを生み出し、成長とイノベーションを促進します。私たちは根本原因分析（RCA）を、プロジェクト・インシデント・Issue への取り組みの後に何がうまくいき、何がうまくいかなかったかを調査することで、組織とコミュニティに対して透明性を示す機会ととらえています。このページでは RCA の定義、実施の利点、および GitLab における成功する RCA の実施方法を説明します。
@@ -14,7 +14,7 @@ GitLab のすべてのチームメンバーは、自身が担当する Issue に
 
 ## 根本原因分析とは何か？
 
-根本原因分析（RCA）は、プロジェクトの完了後に失敗と成果の根本を特定するプロセスです。RCA はインシデント後に一般的に行われますが、インシデント管理のモデルにのみ適合するわけではありません。RCA は技術的・非技術的を問わず、あらゆるプロジェクトの後に実施できます。RCA はどのような形式でも実施できますが、複数のチームからの意見を集約して開発された [Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca.md) があります。エンジニアリングに加え、Customer Success チームが彼らの [RCA プロセス](/handbook/customer-success/professional-services-engineering/workflows/internal/root-cause-analysis/) の優れた概要を提供しています。
+根本原因分析（RCA）は、プロジェクトの完了後に失敗と成果の根本を特定するプロセスです。RCA はインシデント後に一般的に行われますが、インシデント管理のモデルにのみ適合するわけではありません。RCA は技術的・非技術的を問わず、あらゆるプロジェクトの後に実施できます。RCA はどのような形式でも実施できますが、複数のチームからの意見を集約して開発された [Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca.md) があります。エンジニアリングに加え、Customer Success チームが彼らの [RCA プロセス](/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis/) の優れた概要を提供しています。
 
 実施プロセスは異なる場合がありますが、RCA テンプレートは優れた出発点となります。
 
@@ -34,7 +34,7 @@ RCA で回答すべき質問のステップバイステップの概要につい�
 
 計画外のアップグレード停止には、[根本原因分析実施のための特別なテンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca_upgrade_stop.md)があります。詳細については、[計画外のアップグレード停止](/handbook/engineering/workflow/unplanned-upgrade-stop/)ページを参照してください。
 
-確立された RCA プロセスのより詳しい概要については、[こちらのハンドブックページ](/handbook/customer-success/professional-services-engineering/workflows/internal/root-cause-analysis/)をレビューしてください。
+確立された RCA プロセスのより詳しい概要については、[こちらのハンドブックページ](/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis/)をレビューしてください。
 
 ### 調査結果の共有
 

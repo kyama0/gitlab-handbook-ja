@@ -5,11 +5,11 @@ description: >-
   Job to be Done (JTBD)によって定義された全体的なエクスペリエンス
   を考慮します
 upstream_path: /handbook/product/ux/category-maturity/category-maturity-scorecards/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-17T06:29:12+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## イントロとゴール
@@ -95,7 +95,7 @@ JTBD作成と検証フェーズの間に、プロダクトデザイナーとプ�
 
 参加者がシナリオをどのように完了するかを徹底的に計画することが重要です。特に上記の質問のいずれかに「はい」と答えた場合はそうです。所望のフローを通じてユーザーを通すことについて不確実性がある場合は、プロセスの早い段階で技術的なカウンターパートを巻き込んでください。
 
-きれいなテスト環境を作成する助けが必要な場合は、必ず #demo-systems Slackチャンネルで [Demo Systems](/handbook/customer-success/demo-systems/) グループに連絡してください。彼らはユーザーのためのデモ環境を作成し、テスト環境に必要な特定のパラメーターを構築するのを助けることができます。リサーチ研究のためにテスト環境を設定するのは、時間がかかり、難しいことがある点に注意してください。あるいは、[UX Cloud Sandbox](/handbook/upstream-studios/experience-research/ux-cloud-sandbox/) を利用できます。
+きれいなテスト環境を作成する助けが必要な場合は、必ず #demo-systems Slackチャンネルで [Demo Systems](/handbook/customer-experience/demo-systems/) グループに連絡してください。彼らはユーザーのためのデモ環境を作成し、テスト環境に必要な特定のパラメーターを構築するのを助けることができます。リサーチ研究のためにテスト環境を設定するのは、時間がかかり、難しいことがある点に注意してください。あるいは、[UX Cloud Sandbox](/handbook/upstream-studios/experience-research/ux-cloud-sandbox/) を利用できます。
 
 JTBDが他のステージグループのエリアとやり取りする場合は、製品の彼らの部分があなたのシナリオをサポートすることを確実にするために、彼らに連絡してください。
 

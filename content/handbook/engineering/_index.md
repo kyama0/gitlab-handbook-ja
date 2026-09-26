@@ -1,11 +1,11 @@
 ---
 title: エンジニアリング
 upstream_path: /handbook/engineering/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T09:40:42-03:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 [GitLab プロダクトチーム](/handbook/product/) はプラットフォームを拡張するための「何を (What)」(顧客のニーズ) と「なぜ (Why)」(ビジネス戦略) を見据え、エンジニアリングはプラットフォームリリースの「どのように (How)」(技術的実装) と「いつ (When)」(スケジューリング) を決定します。このページのコンテンツでは、私たちが GitLab でどのようにエンジニアリングを行っているかを説明します。
@@ -420,11 +420,11 @@ GitLab Ultimate 用に構築された機能をテストする必要がある場�
 
 ## 重要顧客エスカレーション
 
-既存の [重要顧客エスカレーション](/handbook/customer-success/csm/escalations) でバグ修正や開発作業の即時スケジューリングが必要な場合は、以下のプロセスに従います。
+既存の [重要顧客エスカレーション](/handbook/customer-experience/csm/escalations) でバグ修正や開発作業の即時スケジューリングが必要な場合は、以下のプロセスに従います。
 
 ### 重要エスカレーションの要件
 
-- 顧客が [重要エスカレーション](/handbook/customer-success/csm/escalations/#escalation-for-non-professional-services-projects) 状態にある
+- 顧客が [重要エスカレーション](/handbook/customer-experience/csm/escalations/#escalation-for-non-professional-services-projects) 状態にある
 - エスカレーションされた Issue が顧客に重要なビジネス影響を与えると、Customer Success と Support Engineering のリーダーシップが判断
   - スケジューリングを迅速化しないと、GitLab に連鎖的なビジネス影響がある可能性がある
 - スケジューリングを迅速化するには、Customer Success の VP と Support Engineering のディレクターの両方からの承認が必要

@@ -2,11 +2,11 @@
 title: ソリューションアーキテクトのプロセス
 description: "明確なステップとシステム接点を伴う必須アクティビティ（例: アクティビティキャプチャ、テクニカルウィン、Opportunity ハイジーン、RFI/RFP、カスタマーサクセスプラン）"
 upstream_path: /handbook/solutions-architects/processes/
-upstream_sha: 5eeae5a75957f16a16538b0ec5f531ce723f3a8a
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## SA プロセスの概要
@@ -46,9 +46,9 @@ SA プロセスマッピングは、創造性、実験、改善を制限する�
 
 ## カスタマーサクセスプラン
 
-カスタマーサクセスプランは、GitLab の活用を通じて価値を実現するためにお客様向けに提示し、相互合意したロードマップです。これは GitLab Solution Architecture とお客様のコラボレーションの成果物であり、お客様が成功することを確実にするのが第一の目的です。このプロセスは、製品スコープの会話（特定の機能や機能群に焦点を当て、特定の DevSecOps ステージのサブセットに限定される）から、ソリューション（特定の課題に対処する）または戦略（最重要戦略イニシアチブに紐づく、組織横断的なプロセスイノベーションと変革を通じてビジネス成果を形作る）スコープへとシフトすることをサポートするように設計されています。このサクセスプランは[プリセールスプロセス](/handbook/solutions-architects/processes/customer-success-plan/)で開始され、ポストセールスの[サクセスプラン](/handbook/customer-success/csm/success-plans/)へと引き継がれることを意図しています。
+カスタマーサクセスプランは、GitLab の活用を通じて価値を実現するためにお客様向けに提示し、相互合意したロードマップです。これは GitLab Solution Architecture とお客様のコラボレーションの成果物であり、お客様が成功することを確実にするのが第一の目的です。このプロセスは、製品スコープの会話（特定の機能や機能群に焦点を当て、特定の DevSecOps ステージのサブセットに限定される）から、ソリューション（特定の課題に対処する）または戦略（最重要戦略イニシアチブに紐づく、組織横断的なプロセスイノベーションと変革を通じてビジネス成果を形作る）スコープへとシフトすることをサポートするように設計されています。このサクセスプランは[プリセールスプロセス](/handbook/solutions-architects/processes/customer-success-plan/)で開始され、ポストセールスの[サクセスプラン](/handbook/customer-experience/csm/success-plans/)へと引き継がれることを意図しています。
 
-注: カスタマーサクセス組織にもポストセールス向けの[カスタマーサクセスプラン](/handbook/customer-success/csm/success-plans/)があり、お客様向けドキュメントとして用いられ、ポストセールスのイニシアチブやマイルストーンを更新できる目的で運用されますが、ソリューションアーキテクトの[カスタマーサクセスプランプロセス](/handbook/solutions-architects/processes/customer-success-plan/)は、必要なすべてのコンテキストを提供し、プリセールス中にお客様と協働しながらお客様の声・要件・成果をキャプチャし、カスタマーサクセスへのスムーズな移行を確実にすることを目的としています。
+注: カスタマーサクセス組織にもポストセールス向けの[カスタマーサクセスプラン](/handbook/customer-experience/csm/success-plans/)があり、お客様向けドキュメントとして用いられ、ポストセールスのイニシアチブやマイルストーンを更新できる目的で運用されますが、ソリューションアーキテクトの[カスタマーサクセスプランプロセス](/handbook/solutions-architects/processes/customer-success-plan/)は、必要なすべてのコンテキストを提供し、プリセールス中にお客様と協働しながらお客様の声・要件・成果をキャプチャし、カスタマーサクセスへのスムーズな移行を確実にすることを目的としています。
 
 カスタマーサクセスプランニングのコアゴールは、以下を特定し明確化することです。
 
@@ -68,7 +68,7 @@ SA プロセスマッピングは、創造性、実験、改善を制限する�
 
 ## プロフェッショナルサービスへのエンゲージ
 
-[Working with Professional Services](/handbook/customer-success/professional-services-engineering/working-with/#for-sales-reps-and-sas-how-to-order-professional-services) ハンドブックページに記載されているプロセスに従ってください。
+[Working with Professional Services](/handbook/customer-experience/professional-services-engineering/working-with/#for-sales-reps-and-sas-how-to-order-professional-services) ハンドブックページに記載されているプロセスに従ってください。
 
 簡略化したプロセス説明:
 
@@ -203,7 +203,7 @@ _SA がタイミングや十分なコンテキストなしに関与する不適�
 - RFI/RFP の完了
 - PoV のプランニング、ドキュメント化、実行戦略
 - [セキュリティ監査](/handbook/security/security-assurance/field-security/customer-security-assessment-process/)
-- [Professional Services と SOW のスコーピング](/handbook/customer-success/professional-services-engineering/selling/)
+- [Professional Services と SOW のスコーピング](/handbook/customer-experience/professional-services-engineering/selling/)
 
 SA は CSM と連携して既存のお客様を支援することもあります。特にアカウント内に拡張 Opportunity が存在する場合に重要です。また SA は、CSM が割り当てられていないより小規模なお客様との定期的なタッチポイントを持つこともあります。
 
@@ -211,7 +211,7 @@ SA は CSM と連携して既存のお客様を支援することもあります
 
 - 大局的な観点では、SA は見込み顧客および既存顧客向けのプリセールスアドバイザーであり、CSM は既存顧客のポストセールスのリレーションシップを管理し、GitLab の活用に責任を持ちます。
 
-詳細は次のリンクをご覧ください: [Overlap Between Solution Architects and Customer Success Managers](/handbook/customer-success/#overlap-between-solution-architects-and-customer-success-managers-or-architects)
+詳細は次のリンクをご覧ください: [Overlap Between Solution Architects and Customer Success Managers](/handbook/customer-experience/#overlap-between-solution-architects-and-customer-success-managers-or-architects)
 
 #### テクニカルディスカバリーとデモ準備 {#technical-discovery-and-demo-preparation}
 

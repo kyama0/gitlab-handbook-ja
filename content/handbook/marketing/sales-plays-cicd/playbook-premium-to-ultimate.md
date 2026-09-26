@@ -2,11 +2,11 @@
 title: "Sales Play: Premium から Ultimate へのアップセル"
 description: "このページには GTM-CICD sales play のすべての情報が含まれています。"
 upstream_path: /handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 注: sales play はレシピだと考えてください。レシピに従えば、より予測可能で一貫した結果を達成できます。最適に機能する（または失敗する）アセットやアプローチを見つけたら、レシピを微調整して継続的に改善できます。**改善案があれば、[この MR](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/5095) にコメントで提案し、他の人の提案にアップボートしてください。
@@ -183,7 +183,7 @@ DevOps とセキュリティの単一アプリケーションの利点には、�
 GitLab（または GitLab パートナー）は、価値実現までの時間を加速し、リスクを軽減するために、以下のサービスを提供します:
 
 * 学生が [security specialist certification](https://about.gitlab.com/services/education/gitlab-security-specialist/) を取得できるようにする [Security Essentials Training](https://about.gitlab.com/services/education/security-essentials/)。
-* [Secure Advisory Services](https://gitlab.com/gitlab-com/customer-success/professional-services-group/global-practice-development/consulting/secure-advisory) は、シフトレフトおよび/または SDLC サプライチェーンの保護のためにセキュリティプロセスを再構築したい顧客にガイダンスを提供できます。これらのサービスのターゲットオーディエンスは中央セキュリティまたは SDLC ガバナンス/コンプライアンスチームです。この提供の価格は異なります。詳細については、[プロフェッショナルサービスの slack チャンネル](/handbook/customer-success/professional-services-engineering/working-with/#slack) で @em と話してください。
+* [Secure Advisory Services](https://gitlab.com/gitlab-com/customer-success/professional-services-group/global-practice-development/consulting/secure-advisory) は、シフトレフトおよび/または SDLC サプライチェーンの保護のためにセキュリティプロセスを再構築したい顧客にガイダンスを提供できます。これらのサービスのターゲットオーディエンスは中央セキュリティまたは SDLC ガバナンス/コンプライアンスチームです。この提供の価格は異なります。詳細については、[プロフェッショナルサービスの slack チャンネル](/handbook/customer-experience/professional-services-engineering/working-with/#slack) で @em と話してください。
 
 ## Sales Play Tactics {#sales-play-tactics}
 

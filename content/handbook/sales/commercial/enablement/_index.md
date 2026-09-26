@@ -2,11 +2,11 @@
 title: Commercial Sales イネーブルメント
 description: Commercial Sales イネーブルメントのハンドブックページへようこそ
 upstream_path: /handbook/sales/commercial/enablement/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## Commercial Sales イネーブルメントのハンドブックページへようこそ
@@ -220,7 +220,7 @@ GitLab 顧客との長続きする関係を作るために、顧客ヘルスチ�
 **Renewal (Day 270-365)**: 顧客ジャーニーのこの段階では、GitLab プロダクトの完全な適用と開発が進行中です。このステージの目的は、顧客がプラットフォームから追加価値を得て、プロジェクトタイムラインを最新に保てるようにすることです。
 
 - Day 270 コール - 初回更新ミーティングを実施する。キー統計をレビュー — GL ライセンス使用率、企業センチメント、プロダクト使用状況、評価したい追加領域 (ultimate またはサービス)、来期の更新に向けて提案するユーザー数/ティア
-  - 更新コールチェックリスト/デッキを使用して初回更新コールを実施: [EBR Template](/handbook/customer-success/csm/ebr/#impact-questions)
+  - 更新コールチェックリスト/デッキを使用して初回更新コールを実施: [EBR Template](/handbook/customer-experience/csm/ebr/)
 - 初回更新コールに基づいて、追加機能の評価、ユーザー数、調達、または法務プロセスの解決の時間を顧客に与えるため、適切にフォローアップコールをスケジュールする
 - Day 365 で更新成功
 

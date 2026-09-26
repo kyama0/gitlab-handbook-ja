@@ -2,11 +2,11 @@
 title: "Deal Desk ハンドブック"
 description: "Deal Desk チームのミッションは、フィールドセールスの信頼できるビジネスパートナーとして機能しながら、商談管理プロセスを合理化することです。"
 upstream_path: /handbook/sales/field-operations/sales-operations/deal-desk/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## **Deal Desk ハンドブックへようこそ**
@@ -939,7 +939,7 @@ SuperSonics Billing and Subscription Management experience と、それがクォ
 - すべての Custom Service SKU は、SKU と SOW 要件のアラインメントを保証するため、クォートで Revenue からの承認が必要です。
 - SAE/AE は、必要なすべての承認を取得する責任を引き続き負います。これには SKU や割引の承認に加えて、非標準の支払い条件も含まれます。承認されると、Custom SOW が署名のために顧客に送られます。
 
-- Custom SOW の Professional Services チームからのサポートを得るには、[Services Calculator](https://services-calculator.gitlab.io/) を使って scoping issue を開始し、Professional Services の [Engagement Manager](/handbook/customer-success/professional-services-engineering/engagement-mgmt/) と協働します。
+- Custom SOW の Professional Services チームからのサポートを得るには、[Services Calculator](https://services-calculator.gitlab.io/) を使って scoping issue を開始し、Professional Services の [Engagement Manager](/handbook/customer-experience/professional-services-engineering/engagement-mgmt/) と協働します。
 
 ##### Scoped/Custom Education または Professional Services 商談をクローズに提出する前に
 

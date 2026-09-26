@@ -1,11 +1,11 @@
 ---
 title: "補助ソリューションリソース: 継続的デリバリー"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:18:09+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 #### 連絡先
@@ -289,7 +289,7 @@ GitLab の CD ケイパビリティを示す短いデモのコレクションで
 
 1. ディスカバリー質問を行ってお客様のニーズを特定する
 2. デモ、プルーフポイント、バリューポジショニングなどを共有してより深いディスカバリーを完了する
-3. [パイプライン変換ワークショップ](/handbook/customer-success/playbooks/ci-verify/) とユーザー有効化の例を実施する
+3. [パイプライン変換ワークショップ](/handbook/customer-experience/playbooks/ci-verify/) とユーザー有効化の例を実施する
 4. 採用ロードマップ、タイムライン、変更管理計画に合意し、関連するサービスを提供（必要に応じて）し、サクセスプランを更新する（必要に応じて）
 5. お客様と一緒に採用計画をリードし、エンゲージメントや製品分析データを通じてユースケース採用を示しながら、チームを有効化し進捗を追跡する
 

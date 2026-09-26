@@ -2,11 +2,11 @@
 title: "カスタマーサクセス戦略 & アナリティクス"
 description: "カスタマーサクセス戦略 & アナリティクス（CSSA）チームのための GitLab ハンドブックページ"
 upstream_path: /handbook/sales/field-operations/customer-success-strategy/customer-success-strategy-analytics/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ### カスタマーサクセス戦略 & アナリティクス
@@ -53,8 +53,8 @@ CSSA チームは、さまざまな方法とモダリティでビジネスをサ
 
 GitLab はカスタマーサクセスとより広範な現場組織向けに多くの価値あるアナリティクスリソースを維持しています。レポートとダッシュボードは Tableau、Gainsight、Salesforce で見つけることができます。以下は利用可能な重要なリソースの一部です。
 
-- [Gainsight](/handbook/customer-success/csm/gainsight/_index.md)
-- [Use Case Adoption Scoring](/handbook/customer-success/product-usage-data/maturity-scoring.md)
+- [Gainsight](/handbook/customer-experience/csm/gainsight/)
+- [Use Case Adoption Scoring](/handbook/customer-experience/product-usage-data/maturity-scoring/)
 - [Account Landscape](https://10az.online.tableau.com/#/site/gitlab/views/AccountLandscape/Overview)
 - [Customer 360](https://10az.online.tableau.com/#/site/gitlab/views/Customer360_17097388485010/Customer360LandingPage)
 - [CS Leader Monthly Metrics](cs-monthly-metrics-dashboard/)

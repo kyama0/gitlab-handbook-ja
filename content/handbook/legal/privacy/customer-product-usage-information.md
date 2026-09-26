@@ -2,11 +2,11 @@
 title: "顧客製品使用状況情報"
 description: "GitLabの製品使用データポリシー"
 upstream_path: "/handbook/legal/privacy/customer-product-usage-information/"
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-06-02T12:29:08-07:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 GitLabは、無料のオープンソースソフトウェアおよび有料オファリング（総称して「ソフトウェア」）を通じて価値と機能を提供することに尽力しています。成長し続けるユーザーベースへのイノベーションとサポートを継続するために、ユーザーがソフトウェアをどのように活用しているかについての詳細な知識が役立ちます。これは、顧客やユーザーによるソフトウェアの使用から生成される特定のメトリクス（「メトリクス」）として収集されます。この目的を達成するため、GitLabはインスタンス、ネームスペース、またはユーザーレベルでソフトウェアの機能がどのように使用されているかについての情報を収集します。
@@ -21,7 +21,7 @@ GitLabは、無料のオープンソースソフトウェアおよび有料オ�
 
 ### Service Ping（旧称：Usage Ping）
 
-*目的*: GitLabはService Pingメトリクスを収集し、顧客との協力によって価値の帰属を加速し、投資対効果（ROI）目標を達成し、ソフトウェアによるビジネス成果を実現します。Service Pingメトリクスは、インスタンス、テナントまたはネームスペース全体に関連する集計カウントメトリクスと、特定の設定や機能の有効化に関するtrue/falseメトリクスで構成されます。集計カウントは「全期間」形式と「28日」形式で集計されます。Service Ping FAQは[こちら](/handbook/customer-success/csm/service-ping-faq/)をご覧ください。
+*目的*: GitLabはService Pingメトリクスを収集し、顧客との協力によって価値の帰属を加速し、投資対効果（ROI）目標を達成し、ソフトウェアによるビジネス成果を実現します。Service Pingメトリクスは、インスタンス、テナントまたはネームスペース全体に関連する集計カウントメトリクスと、特定の設定や機能の有効化に関するtrue/falseメトリクスで構成されます。集計カウントは「全期間」形式と「28日」形式で集計されます。Service Ping FAQは[こちら](/handbook/customer-experience/csm/service-ping-faq/)をご覧ください。
 
 *適用ソフトウェア*: Service Pingメトリクスは、セルフマネージド版、GitLab.com版、および[Dedicated](https://about.gitlab.com/dedicated/)版のソフトウェアで収集されます。一般的に、「Service Ping」は個々のセルフマネージドインストールおよびDedicatedから適用メトリクスを収集するテクノロジーの名称です。GitLab.comは本質的にGitLabがホストするセルフマネージドインスタンスのマルチテナント版であるため、GitLab.com向けのService Pingのバージョンが実装されており、セルフマネージドインスタンスで達成するものと同等のGitLab.comメトリクスを提供します。セルフマネージドインスタンス専用のService Pingの動作方法についての詳細は、[Service Pingガイド](https://docs.gitlab.com/ee/development/internal_analytics/service_ping/)をご参照ください。
 

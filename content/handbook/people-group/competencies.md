@@ -2,11 +2,11 @@
 title: "コンピテンシー"
 description: "GitLab には学習のための共通フレームワークとしてのコンピテンシーがあります。このページは、私たちのコンピテンシーに関する Single Source of Truth (SSoT) リソースです。"
 upstream_path: /handbook/people-group/competencies/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 GitLab には学習のための共通フレームワークとしてのコンピテンシーがあります。このページは、私たちのコンピテンシーに関する [Single Source of Truth (SSoT)](https://docs.gitlab.com/ee/development/documentation/styleguide/#why-a-single-source-of-truth) リソースです。
@@ -46,7 +46,7 @@ GitLab には学習のための共通フレームワークとしてのコンピ�
 1. [フィールドイネーブルメント](/handbook/sales/field-operations/field-enablement/)
 1. [GitLab University](https://university.gitlab.com/)
 1. [Customer Success Skills Exchange セッション](/handbook/sales/training/customer-success-skills-exchange/)
-1. [Professional services offerings](/handbook/customer-success/professional-services-engineering/framework/#service-offering-framework/)
+1. [Professional services offerings](/handbook/customer-experience/professional-services-engineering/framework/#service-offering-framework)
 1. [オンボーディング](/handbook/people-group/general-onboarding/) 一般および部門別の両方
 1. [Customer Success GitLab Demos platform & catalog](https://gitlabdemo.com/)
 1. [Customer Services Guided Explorations](https://gitlab.com/guided-explorations) ([How Guided Explorations are engineered for compounded reuse for competency development](https://gitlab.com/guided-explorations/guided-exploration-concept/-/blob/master/README.md))

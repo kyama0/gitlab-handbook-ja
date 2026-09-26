@@ -2,11 +2,11 @@
 title: サポートのオンボーディングバディ
 description: 新人サポートエンジニアのオンボーディングバディとして振る舞う方法
 upstream_path: /handbook/support/training/onboarding_buddy/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 新しいサポートエンジニアのオンボーディングバディに任命されました。おめでとうございます！あなたは、新しい人が私たちの顧客、チーム、そして製品に最大限貢献できるようになるために、その人を支援する重要な役割を担うことになりました。
@@ -50,7 +50,7 @@ lastmod: "2026-03-18T15:39:47+00:00"
 - 役立つ Slack チャンネルや、毎日チェックすべき Slack チャンネルを紹介する。
 - SWIR と、最新情報を得る方法（[ダイジェスト Issue](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/issues/?sort=created_date&state=all&label_name%5B%5D=SWIR%3A%3ADigest&first_page_size=50)（および「ニュースレター体験」のための [ラベル購読](https://docs.gitlab.com/user/project/labels/#receive-notifications-when-a-label-is-used)）、[#spt_swir](https://gitlab.enterprise.slack.com/archives/C05VDJX6KSR) Slack チャンネル、[音声版](https://drive.google.com/drive/u/0/folders/1qkKVAHg-kvtDrxWYmegNwmxc1MwuUn4D)）について説明する。
 - オンボーディング期間中に読むと役立つハンドブックページを紹介する。
-- GitLab の [アーキテクチャ図](/handbook/customer-success/professional-services-engineering/workflows/artifacts/arch-diagram/) を紹介する。
+- GitLab の [アーキテクチャ図](/handbook/customer-experience/professional-services-engineering/workflows/artifacts/arch-diagram/) を紹介する。
 - 製品関連や [support-team-meta](https://gitlab.com/gitlab-com/support/support-team-meta) の Issue をいくつか紹介し、何にでもコントリビュートできることを明確に伝える。
 - 書籍やトレーニングは経費精算可能であることを思い出させ、[Spending Company Money](/handbook/finance/spending-company-money/) ページを紹介する。高額な場合は先にマネージャーに相談する。
 - オフィス機器手当があることを伝え、[機器の経費精算ハンドブックページ](https://internal.gitlab.com/handbook/finance/expenses/#equipment) を紹介する。

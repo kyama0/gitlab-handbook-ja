@@ -2,11 +2,11 @@
 title: "Gainsight 管理"
 description: "このページは、GitLab が Gainsight をどのように管理しているかについて、データ構造、統合、その他の技術情報を示します。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/gainsight/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-01-16T10:16:27-05:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
@@ -292,7 +292,7 @@ Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tic
 
 </details>
 
-Gainsight から Salesforce に同期されるフィールドとオブジェクトの完全なリストについては、[Using Gainsight Data in SFDC](/handbook/customer-success/product-usage-data/using-gainsight-data-in-sfdc/)を参照してください。
+Gainsight から Salesforce に同期されるフィールドとオブジェクトの完全なリストについては、[Using Gainsight Data in SFDC](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)を参照してください。
 
 ## Gainsight のルールエンジン
 

@@ -2,11 +2,11 @@
 title: "マネージャーオペレーティングリズム"
 description: "一貫したマネジメントオペレーティングリズム (MOR) は、GitLab のフィールド組織のフロントラインマネージャーがチームをどのようにリードするかについてのベストプラクティスを体系化することで、効率的で予測可能な成長を促進します"
 upstream_path: /handbook/sales/manager-operating-rhythm/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -18,4 +18,4 @@ lastmod: "2024-06-27T22:14:31+00:00"
 - [SMB Area Sales Manager (ASM) MOR](/handbook/sales/manager-operating-rhythm/smb-sales/)
 - [Channel Sales/Account Manager (CSM/CAM) Leader MOR](/handbook/sales/manager-operating-rhythm/channel-sales/)
 - [Solution Architect (SA) Manager MOR](/handbook/solutions-architects/sa-manager/)
-- [Customer Success Manager (CSM) Leader MOR](/handbook/customer-success/csm/csm-manager/)
+- [Customer Success Manager (CSM) Leader MOR](/handbook/customer-experience/csm/csm-manager/)

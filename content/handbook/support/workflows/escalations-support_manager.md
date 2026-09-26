@@ -3,22 +3,22 @@ title: アカウントエスカレーションに関するサポートエンジ�
 description: アカウントエスカレーションをどのように扱うかをサポートマネージャー向けに案内します
 category: Manager
 upstream_path: /handbook/support/workflows/escalations-support_manager/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
 
-このページでは、[カスタマーアカウントエスカレーション](/handbook/customer-success/csm/escalations/) におけるサポートマネージャー DRI の役割について、サポートマネージャー向けにガイダンスを提供します。
+このページでは、[カスタマーアカウントエスカレーション](/handbook/customer-experience/csm/escalations/) におけるサポートマネージャー DRI の役割について、サポートマネージャー向けにガイダンスを提供します。
 
-アカウントエスカレーションは、サポートエンジニアリング（サポートマネージャーまたはエンジニア）から [カスタマー緊急事態をエスカレーションへ転換する](/handbook/support/workflows/emergency-to-escalation-process) ことで開始される場合や、[STAR](/handbook/support/internal-support/support-ticket-attention-requests) の結果として開始される場合があります。また、エスカレーションの種類（すべてのアカウントエスカレーションがサポートの関与を必要とするわけではありません）と [重大度](/handbook/customer-success/csm/escalations/#definitions-of-severity-levels) に応じて、カスタマーサクセスチームが [アカウントエスカレーションを開始](/handbook/customer-success/csm/escalations/#initiating-managing-and-closing-an-escalation) し、サポートチームに支援を依頼することもあります。
+アカウントエスカレーションは、サポートエンジニアリング（サポートマネージャーまたはエンジニア）から [カスタマー緊急事態をエスカレーションへ転換する](/handbook/support/workflows/emergency-to-escalation-process) ことで開始される場合や、[STAR](/handbook/support/internal-support/support-ticket-attention-requests) の結果として開始される場合があります。また、エスカレーションの種類（すべてのアカウントエスカレーションがサポートの関与を必要とするわけではありません）と [重大度](/handbook/customer-experience/csm/escalations/#definitions-of-severity-levels) に応じて、カスタマーサクセスチームが [アカウントエスカレーションを開始](/handbook/customer-experience/csm/escalations/#initiating-managing-and-closing-an-escalation) し、サポートチームに支援を依頼することもあります。
 
 ### アカウントエスカレーションチーム
 
-各エスカレーションには [エスカレーション DRI](/handbook/customer-success/csm/escalations/#escalation-dri) がいて、エスカレーションを成功裏に解決するために貢献するチームを率います。チームは以下の役割の一部（最低でもエスカレーション DRI、リードサポートエンジニア、サポートマネージャー DRI）または全てで構成されます。
+各エスカレーションには [エスカレーション DRI](/handbook/customer-experience/csm/escalations/#escalation-dri) がいて、エスカレーションを成功裏に解決するために貢献するチームを率います。チームは以下の役割の一部（最低でもエスカレーション DRI、リードサポートエンジニア、サポートマネージャー DRI）または全てで構成されます。
 
 - エスカレーション DRI（CSM、AE、または CSE マネージャー）
 - リードサポートエンジニア
@@ -59,7 +59,7 @@ lastmod: "2026-03-02T07:33:04-05:00"
 
 ### ステップ 0: 準備
 
-- [カスタマーサクセスエスカレーションプロセス](/handbook/customer-success/csm/escalations/) が遵守されていることを確認する。
+- [カスタマーサクセスエスカレーションプロセス](/handbook/customer-experience/csm/escalations/) が遵守されていることを確認する。
 - お客様のタイムゾーンを念頭に、エスカレーションに最適なリードサポートエンジニアを判断する助けとなるよう、エスカレーションが必要となった原因のお客様の課題を明確に把握する。お客様が最近開いたすべてのサポートチケットをレビューすることで、この範囲をさらに明確化できます。
 
     **NOTE:** 私たちは現在、AMER で [エスカレーションフォーカス型サポートエンジニア役](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/4545#designated-escalations-focused-engineers-for-this-trial) を [この Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/4545) に基づいて試行しています。最初の連絡先として、テクニカルリードを務めてもらうか、リードサポートエンジニアに技術的なガイダンスとサポートを提供してもらうため、指定されたエンジニアにご連絡ください。
@@ -125,7 +125,7 @@ lastmod: "2026-03-02T07:33:04-05:00"
 
 アカウントエスカレーションをクローズする前に:
 
-- [カスタマーサクセスエスカレーションページ](/handbook/customer-success/csm/escalations/#closing-the-escalation) に記載されたステップを確認し、必要に応じて協働してクロージングのステップを完了させます。
+- [カスタマーサクセスエスカレーションページ](/handbook/customer-experience/csm/escalations/#closing-the-escalation) に記載されたステップを確認し、必要に応じて協働してクロージングのステップを完了させます。
 
 - 組織のエスカレーションステータスは Salesforce アカウントから直接同期されます。つまり、組織のエスカレーション状態を解除するには、対応する Salesforce アカウント側でそのように表現されている必要があります。
   - お客様が今後開くチケットには `org_in_escalated_state` タグが付かなくなります。組織ノートにエスカレーション状態の見出し 1 ノートも表示されなくなります。

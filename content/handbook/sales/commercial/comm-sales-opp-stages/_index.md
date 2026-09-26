@@ -2,11 +2,11 @@
 title: "Commercial Sales 商談ステージ"
 description: "セールスステージのアクティビティと終了基準"
 upstream_path: /handbook/sales/commercial/comm-sales-opp-stages/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## <i class="fas fa-users fa-fw icon-color font-awesome"></i>なぜセールスステージが重要か?
@@ -108,7 +108,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - ビジネス要件の理解とドキュメント化
 - 技術要件の取得
 - [Metrics/ROI](/handbook/sales/command-of-the-message/metrics/) 会話の開始
-- GitLab がどう、誰によって実装されるかをレビュー、必要に応じて GitLab および/またはパートナーの [professional services](/handbook/customer-success/professional-services-engineering/selling/#selling-gitlab-professional-services) についてのディスカッションを開く
+- GitLab がどう、誰によって実装されるかをレビュー、必要に応じて GitLab および/またはパートナーの [professional services](/handbook/customer-experience/professional-services-engineering/selling/) についてのディスカッションを開く
 - 必要に応じて [パートナー/チャネル](https://docs.google.com/document/d/18xqRRCkIXlR7r4BvBQnK9n9zE70q-KPga-lVHhVw4n4/edit) を紹介
 - [競合差別化](https://internal.gitlab.com/handbook/sales/command-of-the-message/#gitlab-differentiators)
 - [proof points](/handbook/sales/command-of-the-message/proof-points/)、[ケーススタディ](https://gitlab.com/gitlab-com/marketing/strategic-marketing/customer-reference-content/case-study-content/-/boards/1804878?scope=all&utf8=%E2%9C%93)、[競合情報](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/#competitive-intelligence-at-gitlab) を提供 (防御可能な差別化要因)
@@ -241,9 +241,9 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 このステージで完了する **主要アクティビティ**:
 
-- $50K+ の取引- [SA/AE が CSM を紹介](/handbook/customer-success/comm-sales/#sa-to-csm-new-accounts) (該当する場合はパートナーも紹介)
+- $50K+ の取引- [SA/AE が CSM を紹介](/handbook/customer-experience/comm-sales/#csm-handoffs) (該当する場合はパートナーも紹介)
 - $50K 未満: SA と AE は取引クロージャー時に [デジタルオンボーディング](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/#digital-customer-programs) メールを受け取るコンタクトの準備を始められる
-- CSM が [Success Plan](/handbook/customer-success/csm/csm-manager/#success-plan-review) を作成 (該当する場合はパートナーと協力)
+- CSM が [Success Plan](/handbook/customer-experience/csm/csm-manager/#success-plan-review) を作成 (該当する場合はパートナーと協力)
 
 **終了基準:**
 
@@ -283,14 +283,14 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 *おめでとうございます!! 条件が両当事者によって合意され、見積もりが Finance によって承認されました。*
 
-- CSM が新規 [カスタマーエンゲージメント](/handbook/customer-success/comm-sales/#account-executive-to-csm-existing-accounts-without-a-csm) を開始 ($50K+)
+- CSM が新規 [カスタマーエンゲージメント](/handbook/customer-experience/comm-sales/) を開始 ($50K+)
 - AE が顧客とパートナー (該当する場合) と関わり成功を確保
 - パートナーサービスをキックオフ (該当する場合)
 - AE が顧客との初期 30 日フォローアップミーティングをスケジュール (Named/Territory、または高価値商談)
 - Named/Territory AE - 顧客とのアカウントレビューケイデンスを作成
 - Named/Territory AE が [Account Rank](/handbook/sales/commercial/#account-ranking) 1、1.5、2 に基づいて 18 〜 24 ヶ月の成長プランを作成
 - AE が顧客とケーススタディの期待値を構築 (何が機能しているか/していないかについていつ頃フィードバックをもらえるか、いつ法務にケーススタディを依頼できるか? あなたの尊敬を得てケーススタディを構築するためには何が必要か、または別の顧客とリファレンスとして会ってくれるか? パネルに参加してくれるかなど)
-- CSM 担当アカウント - 高優先度アカウントに対する [EBR](/handbook/customer-success/csm/ebr/) プロセスを確立
+- CSM 担当アカウント - 高優先度アカウントに対する [EBR](/handbook/customer-experience/csm/ebr/) プロセスを確立
 - 該当する場合は Professional Services を紹介
 - 顧客オンボーディングまたはプレミアムサポートオンボーディングを開始 (CSM のないアカウント)
 - [First Order ハンドオフ](/handbook/sales/commercial/#first-order-handoff-process) を Named Account AE へ

@@ -4,11 +4,11 @@ title: カスタマーサクセスプラン
 description: >-
   カスタマーサクセスプランは、技術評価基準、実装ロードマップ、サクセスメトリクスを文書化することで、販売前と販売後の活動を橋渡しします。これらのプランは顧客エンゲージメントの基盤として機能し、GitLab と顧客の目的の整合を確保し、評価フェーズと実装フェーズの両方を導く明確な文書を提供します。
 upstream_path: /handbook/solutions-architects/processes/activity-capture/customer-success-plans/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 **重要な注意:** このページは、SA ハンドブックを使いやすくするための再編成の最初のステップを表しており、そのため、このページではカスタマーサクセスプランをデータの観点から取り上げています。コンテンツとプランニングの観点からカスタマーサクセスプランに焦点を当てた [別のページ](/handbook/solutions-architects/processes/customer-success-plan) もあることに注意してください。
@@ -84,7 +84,7 @@ CSP コンテンツは、実行可能な GitLab アイテムに変換されま�
 - 実装フェーズは Epic グループとして整理される
 - 顧客ステークホルダーがプロジェクトメンバーとして追加される
 
-販売後のプラン管理と CSM の責任の詳細については、[CSM サクセスプランドキュメント](/handbook/customer-success/csm/success-plans/) を参照してください。
+販売後のプラン管理と CSM の責任の詳細については、[CSM サクセスプランドキュメント](/handbook/customer-experience/csm/success-plans/) を参照してください。
 
 ## リソース
 

@@ -5,11 +5,11 @@ description: >-
   商談駆動の会話を、顧客のバリュードライバーに焦点を当てた
   バリューベースの会話に引き上げるのに役立ちます。
 upstream_path: /handbook/sales/account-planning/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -164,7 +164,7 @@ AE がアカウントプランを構築し継続的に精緻化する際、以�
 - 何を測定できるか?
 - チャンピオンと理解を検証したか?
 
-このカスタマーに Customer Success Manager が割り当てられている場合、彼らの [Success Plan](/handbook/customer-success/csm/success-plans/#overview) についてチェックインし、彼らが [Executive Business Reviews](/handbook/customer-success/csm/ebr/) を計画しているか尋ねてください。これらの文書はアカウントプランを検証し、ビジョンが各顧客のゴールに整合しているか判断するのに役立ちます。
+このカスタマーに Customer Success Manager が割り当てられている場合、彼らの [Success Plan](/handbook/customer-experience/csm/success-plans/) についてチェックインし、彼らが [Executive Business Reviews](/handbook/customer-experience/csm/ebr/) を計画しているか尋ねてください。これらの文書はアカウントプランを検証し、ビジョンが各顧客のゴールに整合しているか判断するのに役立ちます。
 
 プランをレビュー・更新する四半期ごとのケイデンスは、プランがアカウントの現在の理解を反映し、アカウントチームをプラン戦略と実行について整合させ続けるのに役立ちます。人事異動、合併・買収、競合の脅威などの主要な変更は、即座のレビューと更新をトリガーする可能性があります。構造化されたレビューセッションは、アカウントチームを整合させ、顧客に関わる変更についてリーダーシップに情報を提供するのに役立ちます。
 

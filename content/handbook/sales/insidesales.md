@@ -3,11 +3,11 @@ title: インサイドセールス部門
 description: >-
   インサイドセールス部門は [GitLab セールス](/handbook/sales/) 機能の一部であり、セールスチームおよびカスタマーサクセスチームと連携して、GitLab を利用するお客様のジャーニー全体を通じて最大の価値を提供します。
 upstream_path: /handbook/sales/insidesales/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T07:54:58+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 エンタープライズインサイドセールスチームへの連絡は [Slack チャンネル](https://gitlab.slack.com/archives/C01P39947ND) （社内のみ）から可能です。
@@ -236,7 +236,7 @@ ISR は Commercial Sales ハンドブックで概説されているノートテ�
 | [Order Processing](/handbook/sales/field-operations/order-processing/) | Field Operations | ディール処理とファシリテーションのための go-to リソース |
 | [Deal Desk Handbook](/handbook/sales/field-operations/sales-operations/deal-desk/) | Field Operations | GitLab ディールデスクと関連プロセスのハンドブックページ |
 | [Renewals Process Guide](/handbook/sales/sales-renewal-process/) | Field Operations | 更新プロセスとポリシーを概説するハンドブックページ |
-| [Customer Renewal Tracking](/handbook/customer-success/csm/renewals/) | Technical Account Management |  より大きなアカウントチーム（SAE、CSM、カスタマーサクセスを含む）の一員として更新を管理するプロセスを概説するリソース |
+| [Customer Renewal Tracking](/handbook/customer-experience/csm/renewals/) | Technical Account Management |  より大きなアカウントチーム（SAE、CSM、カスタマーサクセスを含む）の一員として更新を管理するプロセスを概説するリソース |
 | [ISR Renewal Management](https://drive.google.com/drive/u/0/search?q=%22Renewal%20Oppty%20Management%22) | 共有ドキュメント | ISR の更新管理プロセスを概説する共有ドキュメント |
 | [Community Education / EDU Program](/handbook/marketing/developer-relations/programs/education-program/) | Developer Relations | 世界中の教育機関の学生や教職員に GitLab を無料で提供する GitLab for Education プログラムを概説するリソース |
 

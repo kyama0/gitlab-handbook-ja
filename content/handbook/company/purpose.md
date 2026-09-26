@@ -3,11 +3,11 @@ title: "GitLab パーパス"
 description: "GitLab は、ナレッジシェアリング、仕事へのアクセス、そして私たちのソフトウェアプラットフォームを通じて、すべての人をエンパワーします。"
 canonical_path: "/company/purpose/"
 upstream_path: "/handbook/company/purpose/"
-upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
-translated_at: "2026-09-03T23:03:08+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: "codex"
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## パーパス
@@ -43,7 +43,7 @@ GitLab のパーパスは、以下の 4 つの円の交点に位置していま�
 
 #### DevSecOps プラットフォームとしての GitLab の利用
 
-1. GitLab の熟練度を示す [認定](/handbook/customer-success/professional-services-engineering/gitlab-technical-certifications/)
+1. GitLab の熟練度を示す [認定](/handbook/customer-experience/professional-services-engineering/gitlab-technical-certifications/)
 1. DevSecOps のベストプラクティスを [GitLab を通じて容易に](https://about.gitlab.com/platform/) 実現
 1. 包摂性のあるベストプラクティスを GitLab を通じて容易に実現 ([デフォルトブランチ名の変更](https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/)、[プロダクト内の代名詞表示](https://twitter.com/gitlab/status/1402306208967561222))
 

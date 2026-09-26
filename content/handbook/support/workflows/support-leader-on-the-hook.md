@@ -3,9 +3,9 @@ title: Support Leader on the Hook (SLOTH 🦥) の役割
 category: On-call
 description: "Support Engineering における Support Leader on the Hook (SLOTH 🦥) ローテーションの役割と責任を説明します"
 upstream_path: /handbook/support/workflows/support-leader-on-the-hook/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-lastmod: "2026-08-11T11:43:02+10:00"
-translated_at: "2026-08-12T06:21:26+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
 ---
@@ -86,7 +86,7 @@ STARs（[Support Ticket Attention Requests](/handbook/support/internal-support/s
 
 **注:** このページでは説明しない、2 つの別の状況があります。
 
-1. [Account Escalations / Escalated Customers](/handbook/customer-success/csm/escalations/)
+1. [Account Escalations / Escalated Customers](/handbook/customer-experience/csm/escalations/)
 1. [Account Escalations に発展する緊急事態](/handbook/support/workflows/emergency-to-escalation-process)
 
 ### スター付きチケット処理の仕組み

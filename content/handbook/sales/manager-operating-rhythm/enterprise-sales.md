@@ -2,11 +2,11 @@
 title: "Enterprise Area Sales Manager ハンドブック"
 description: "成功するマネジメントには、オンボーディング、Command Plan のレビュー、機会コーチング、戦略的コーチング、キャリア開発、パフォーマンスマネジメントが含まれます"
 upstream_path: /handbook/sales/manager-operating-rhythm/enterprise-sales/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -48,7 +48,7 @@ AE は割り当てに基づいて、毎年新しいまたは更新されたテ�
 
 テリトリープランに続いて、AE は目標を達成するために集中するアカウントを特定し、優先順位付けしました。トップアカウントについて、各 AE は、アカウントプランを作成するアカウントを優先順位付けし、必要な詳細レベルについて ASM と合意するべきです。アカウントプランニングは、四半期ごとに、または可能な場合はそれ以上の頻度で行われるべきです。
 
-ハイレベルなアカウントプランは、しばしば [strategic account plan template](https://docs.google.com/presentation/d/1AcwkYebTZ9mPfGsKlzd5IvppB_cc8to9z_yUvievSL4/edit?usp=sharing) を使用して共有され、テリトリープランと並んで保管できます。詳細と月次のメンテナンスは、通常、Customer Success Manager (CSM) が割り当てられているエクスパンドアカウントについて、Customer Success Manager (CSM) と協力して Gainsight で行われます。CS チームメンバーと AE は、[Gainsight でジョイントサクセスプランを構築し、それを使用して顧客の製品使用状況とヘルススコアリングを表示](/handbook/customer-success/product-usage-data/using-product-usage-data-in-gainsight/#quick-links) できます。
+ハイレベルなアカウントプランは、しばしば [strategic account plan template](https://docs.google.com/presentation/d/1AcwkYebTZ9mPfGsKlzd5IvppB_cc8to9z_yUvievSL4/edit?usp=sharing) を使用して共有され、テリトリープランと並んで保管できます。詳細と月次のメンテナンスは、通常、Customer Success Manager (CSM) が割り当てられているエクスパンドアカウントについて、Customer Success Manager (CSM) と協力して Gainsight で行われます。CS チームメンバーと AE は、[Gainsight でジョイントサクセスプランを構築し、それを使用して顧客の製品使用状況とヘルススコアリングを表示](/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/#quick-links) できます。
 
 ## レビューとコンサルテーション
 

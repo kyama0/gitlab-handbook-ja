@@ -2,11 +2,11 @@
 title: "GitLab フィールドチームメンバー向け製品認定"
 description: "顧客、見込み顧客、パートナーに対する信頼されるアドバイザーとして、顧客や見込み顧客から表明されたニーズや課題に基づき、適切な GitLab ソリューションを正しくポジショニングするために必要な知識をフィールドチームメンバーに確実に身に付けさせるためのトレーニングおよび認定プログラム"
 upstream_path: /handbook/sales/training/product-certification/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -16,7 +16,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 注意：この GitLab 製品トレーニングおよび認定プログラムは、以下のような *GitLab の使い方* に焦点を当てたリソースとは異なります（ただし、フィールドチームメンバーがこれらも受講することは推奨します！）。
 
 - [GitLab Certifications](https://university.gitlab.com/certifications/public/)
-- [GitLab Technical Certifications](/handbook/customer-success/professional-services-engineering/gitlab-technical-certifications/)
+- [GitLab Technical Certifications](/handbook/customer-experience/professional-services-engineering/gitlab-technical-certifications/)
 
 ## アーキテクチャとアプローチ
 

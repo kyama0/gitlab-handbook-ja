@@ -2,11 +2,11 @@
 title: "Fulfillment: Seat Management の方向性"
 description: "Seat Management グループは、購入したシートとアドオンのユーザー割り当てを扱い、ネームスペースをまたいだシート利用状況の可視性を提供します。"
 upstream_path: /handbook/product/groups/fulfillment/direction/seat_management/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 **最終更新日**: 2025-08
@@ -82,7 +82,7 @@ Seat Management グループは以下にサービスを提供します:
 私たちがサービスを提供する社内チーム:
 
 - [Support](/handbook/support/)
-- [Customer Success](/handbook/customer-success/)
+- [Customer Success](/handbook/customer-experience/)
 - [Sales](/handbook/sales/)
 
 ## 機能の概要と成熟度

@@ -3,11 +3,11 @@ title: GitLab Dedicated 概要
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート概要。"
 upstream_path: /handbook/support/workflows/dedicated/
-upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
-translated_at: "2026-09-03T22:19:44+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T16:09:49-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ### 概要
@@ -35,7 +35,7 @@ GitLab 内の他の GitLab Dedicated 関連ページへのリンクは以下の�
 - ドキュメント: [Configure GitLab Dedicated](https://docs.gitlab.com/administration/dedicated/)
 - Product: [Switchboard](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/)
 - インフラストラクチャ: [GitLab Dedicated 内部ドキュメント](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/) (GitLab 内部のみ)
-- CSM: [GitLab Dedicated 顧客との関わり](https://internal.gitlab.com/handbook/customer-success/csm/gitlab-dedicated/) (GitLab 内部のみ)
+- CSM: [GitLab Dedicated 顧客との関わり](https://internal.gitlab.com/handbook/customer-experience/csm/gitlab-dedicated/) (GitLab 内部のみ)
 
 ### GitLab 製品自体ではなく、インフラストラクチャの取り扱いに関連するチケットへの対応
 

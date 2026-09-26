@@ -2,11 +2,11 @@
 title: サポートエンジニアの責務
 description: GitLab におけるサポートエンジニアの責務の詳細なリスト。Support Global Change Management Issue なしにこのページを移動しないでください。
 upstream_path: /handbook/support/support-engineer-responsibilities/
-upstream_sha: 18c3e90de89449f1cbbf92c21776a3ea7899476c
-translated_at: "2026-05-08T18:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T09:44:14+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## はじめに
@@ -168,7 +168,7 @@ GitLab サポートエンジニアのコアな責務は、サポートチケッ�
 1. 以下を処理する:
    - サポートエンジニアオンコールである場合の緊急事態、またはオンコールエンジニアが助けを必要とする場合
    - CMOC である場合のインシデント
-   - DRI またはアクティブなエスカレーションの貢献メンバーである場合の [アカウントエスカレーション](/handbook/customer-success/csm/escalations/)
+   - DRI またはアクティブなエスカレーションの貢献メンバーである場合の [アカウントエスカレーション](/handbook/customer-experience/csm/escalations/)
 1. 自分に割り当てられた [STAR されたチケット](/handbook/support/internal-support/support-ticket-attention-requests/) を処理する
    - STAR された割り当て済みチケットは、担当者とオンコールマネージャーに通知されます
    - ビジネスアワー中にチケットが STAR された場合は、#support_ticket-attention-requests Slack チャンネルで作成された STAR スレッドに関与し、質問や懸念事項に対処することを計画してください

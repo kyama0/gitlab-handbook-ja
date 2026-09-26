@@ -2,11 +2,11 @@
 title: Sec サポートポッド
 description: GitLab Sec セクションの機能に注力する技術的関心領域別サポートポッドです。
 upstream_path: /handbook/support/support-pods/sec/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-19T07:21:04-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 Sec ポッドは、GitLab の [Sec セクション](/handbook/product/categories/#sec-section) 機能に注力する技術的関心領域別の [サポートポッド](https://gitlab.com/groups/gitlab-com/support/-/epics/191) です。
@@ -174,5 +174,5 @@ Sec ポッドにはどうすれば参加できますか？
 
 - [GitLab Certified Security Specialist](https://gitlab.edcast.com/pathways/gitlab-certified-security-specialist-pathway)
 - [GitLab Security Essentials](https://university.gitlab.com/pages/security-training/)
-- [Security Essentials Hands-on](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials/)
+- [Security Essentials Hands-on](/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials/)
 - [Support DAST Deep Dive](https://youtu.be/-WeA12bl-Iw)

@@ -2,11 +2,11 @@
 title: "Go to Market"
 description: "オペレーション、手順、ドキュメント"
 upstream_path: /handbook/sales/field-operations/gtm-resources/
-upstream_sha: 6922a5910f731dd441f582511639aa3d8a4b4d70
-translated_at: "2026-09-16T21:07:55+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ---
@@ -672,7 +672,7 @@ Sales アカウントリーダー/エグゼクティブは、60 日以内に次�
 別途請求するには、新しい見積もりとオポチュニティを作成する必要があります。
 
 プロフェッショナルサービスの完全なリストは [こちら](about.gitlab.com/services/catalog) で確認できます。
-ワークフローの詳細については [Working with Professional Services](/handbook/customer-success/professional-services-engineering/working-with/) を参照してください。
+ワークフローの詳細については [Working with Professional Services](/handbook/customer-experience/professional-services-engineering/working-with/) を参照してください。
 
 ##### SFDC で Professional Services オポチュニティを作成する手順
 

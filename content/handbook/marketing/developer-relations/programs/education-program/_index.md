@@ -2,11 +2,11 @@
 title: "GitLab for Education プログラム"
 description: "GitLab の DevRel Programs チームが提供する GitLab for Education プログラムについて学びましょう"
 upstream_path: /handbook/marketing/developer-relations/programs/education-program/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T13:37:38+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-31T17:51:01Z"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -115,12 +115,12 @@ GitLab は中国の機関にはライセンスを発行しません。中国に�
 * **Sales**
   * [PubSec](/handbook/sales/public-sector/): 公共部門の営業機会
   * [High Velocity Sales and First Orders Team](/handbook/sales/high-velocity-sales-fo-team/): 追加のファーストオーダー営業サポート
-  * [Renewals Managers](/handbook/customer-success/renewals-managers/what/): 更新サポート
+  * [Renewals Managers](/handbook/customer-experience/renewals-managers/what/): 更新サポート
 
 * **Customer Success**
-  * [Customer Success](/handbook/customer-success/): 顧客の採用・エンゲージメントサポートおよび GitLab University プラットフォーム
+  * [Customer Success](/handbook/customer-experience/): 顧客の採用・エンゲージメントサポートおよび GitLab University プラットフォーム
   * [Digital Success](/job-description-library/sales/digital-success/): デジタル顧客プログラムとオンボーディング
-  * [Educational Services](/handbook/customer-success/education-services/gitlab-education-services-support/): GitLab University のコースコンテンツ
+  * [Educational Services](/handbook/customer-experience/education-services/gitlab-education-services-support/): GitLab University のコースコンテンツ
 
 * **サポート & コンプライアンス**
   * [GitLab Support](/handbook/support/): ライセンスサブスクリプションサポートおよび Zendesk 対応
