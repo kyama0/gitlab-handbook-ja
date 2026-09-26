@@ -3,9 +3,9 @@ title: "管理文書手順"
 description: "GitLab は、期待されることを確立するポリシーや標準と、ポリシーや標準を実行に移す手順を通じて、コントロール活動を展開します。"
 controlled_document: true
 upstream_path: /handbook/security/controlled-document-procedure/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-lastmod: "2026-07-26T22:43:19-07:00"
-translated_at: "2026-07-30T07:12:47+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-25T14:56:09-07:00"
+translated_at: "2026-09-26T21:05:51+00:00"
 translator: codex
 stale: false
 ---
@@ -42,7 +42,7 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 
 ### 階層別の定義
 
-![CD Pyramid](/images/security/security-assurance/CDPyramidv2.png)
+![管理文書のピラミッド](/images/security/security-assurance/CDPyramidv2.png)
 
 - ポリシー (Policy): ポリシーは意図の高レベルな表明であり、GitLab の目標、目的、文化を定義します。法的、規制的、または契約的義務がポリシー存在の根本原因となるのが一般的です。ポリシーは組織レベルで一元管理されるよう設計されています (例: Security Compliance チームや Legal & Ethics Compliance チーム)。
 - 標準 (Standard): 標準とは、ポリシーの実装を可能にする具体的な詳細を提供することで、正式なポリシーをサポートし方向性を与える、必須の行動またはルールです。標準は技術図の形を取ることがあります。
@@ -90,7 +90,7 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 
 #### 管理文書一覧 {#list-of-controlled-documents}
 
-現在の管理文書の正確なリストは[こちら](https://codeowners-report-schedule-gitlab-com-gl-securit-4422acedb936dd.gitlab.io/) で確認できます。
+[現在の管理文書一覧](https://codeowners-analysis-6022f6.gitlab.io/)。
 
 ## 例外 {#exceptions}
 
@@ -122,5 +122,5 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 ## 参考資料
 
 - [GCF Compliance Controls](/handbook/security/security-assurance/security-compliance/sec-controls/)
-- [Data Classifiation Standard](/handbook/security/policies_and_standards/data-classification-standard/)
+- [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)
 - [Controlled Documents Work Instruction](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/controlled-documents-program/-/blob/main/runbooks/controlled_document_annual_review_work_instruction.md)

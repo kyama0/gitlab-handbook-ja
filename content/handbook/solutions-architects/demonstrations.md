@@ -1,32 +1,32 @@
 ---
 title: デモンストレーション
-description: "ソリューションアーキテクトは時に短い予告でデモを行ったり、特定の GitLab 機能を見込み客や顧客に示すための通話に参加したりすることを求められます"
+description: "Solutions Architects は時に短い予告でデモを行ったり、特定の GitLab 機能を見込み客や顧客に示すための通話に参加したりすることを求められます"
 upstream_path: /handbook/solutions-architects/demonstrations/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
+translated_at: "2026-09-26T21:13:54+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## デモシステム概要と特定の環境
 
-[デモシステムハンドブックページ](/handbook/customer-success/demo-systems/)は、GitLab 機能、価値提案、ワークフローのデモンストレーションに使用されるデモシステムインフラの概要を提供します。
+[デモシステムハンドブックページ](/handbook/customer-experience/demo-systems/)は、GitLab 機能、価値提案、ワークフローのデモンストレーションに使用されるデモシステムインフラの概要を提供します。
 
-デモで使用する環境へのアクセス方法に関する具体的な詳細については、[環境サブページ](/handbook/customer-success/demo-systems/#shared-environments)を参照してください。
+デモで使用する環境へのアクセス方法に関する具体的な詳細については、[環境サブページ](/handbook/customer-experience/demo-systems/#shared-environments)を参照してください。
 
 ## デモの準備
 
-ソリューションアーキテクトは時に短い予告でデモを行ったり、特定の GitLab 機能を見込み客や顧客に示すための通話に参加したりすることを求められます。これらのデモリクエストに備える際のベストプラクティスは、ブラウザタブにさまざまなコンテンツをプリロードした最小化されたブラウザウィンドウを用意しておくことです。よく利用される環境の例を以下にリストします。これらのリンクの一部は GitLab チームメンバーのみアクセスが有効になっていることに注意してください。 (To-do: このリストをデモカタログに移植する)
+Solutions Architects は時に短い予告でデモを行ったり、特定の GitLab 機能を見込み客や顧客に示すための通話に参加したりすることを求められます。これらのデモリクエストに備える際のベストプラクティスは、ブラウザタブにさまざまなコンテンツをプリロードした最小化されたブラウザウィンドウを用意しておくことです。よく利用される環境の例を以下にリストします。これらのリンクの一部は GitLab チームメンバーのみアクセスが有効になっていることに注意してください。 （今後の作業：このリストをデモカタログに移す）
 
-- [GitLab デモシステム](/handbook/customer-success/demo-systems/) は、デモのカタログとデモを実行するためのサンドボックスインフラを提供します。
+- [GitLab デモシステム](/handbook/customer-experience/demo-systems/) は、デモのカタログとデモを実行するためのサンドボックスインフラを提供します。
 - [GitLab.org グループレベル](https://gitlab.com/groups/gitlab-org/-/roadmap)は、リリース計画に使用される GitLab エピック、ロードマップ、プロジェクト横断の Issue ビューを明確に表現します
-- Auto DevOps によって駆動される [GitLab.com プロジェクト](https://gitlab.com/jkrooswyk/joel-springsample/-/boards/579466)で、人口を持つ Issue ボードとアクティブなマージリクエストが含まれており、ビルド、テスト、セキュリティ、レビューに GitLab Auto DevOps を活用するワークフローの価値を説明するのに非常に役立ちます
+- Auto DevOps によって駆動される [GitLab.com プロジェクト](https://gitlab.com/jkrooswyk/joel-springsample/-/boards/579466)で、Issue が登録された Issue ボードとアクティブなマージリクエストが含まれており、ビルド、テスト、セキュリティ、レビューに GitLab Auto DevOps を活用するワークフローの価値を説明するのに非常に役立ちます
 - この [GitLab.com プロジェクト](https://gitlab.com/gitlab-examples/security/security-reports/merge_requests/2)は、特にセキュリティのディスカッションでよく利用されます
 - [GitLab.com の本番モニタリング](https://gitlab.com/gitlab-org/charts/gitlab/-/metrics?environment=190276)は、カスタムおよびアプリ内モニタリングに関するディスカッションで役立ちます
 - GitLab Runner の詳細を表示する[本番 Grafana インスタンス](https://dashboards.gitlab.com/d/000000159/ci?refresh=5m&orgId=1)は、モニタリングとダッシュボードに関する可能性の表現方法として優れています
 - ハンドブック内の GitLab [Direction](https://about.gitlab.com/direction/) ページは、将来を見据えた製品ビジョンの質問や今後の機能に関するディスカッションでよく役立ちます
-- オプション: 標準デモ環境を活用することで、[Integrations](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/integrations/) をロードしてディスカッションの準備ができます
+- オプション: 標準デモ環境を活用することで、[インテグレーション](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/integrations/) をロードしてディスカッションの準備ができます
 - 他の既存のデモグループとプロジェクトは次のセクションにリストされています
 
 ## GitLab Flow スタイルのデモ録画の保守の繰り返し可能なプロセス
@@ -35,7 +35,7 @@ FY23-Q1 に、私たちは[GitLab P2M スタイルのデモの録画の保守の
 
 ### デモと環境のセットアップ
 
-すべての GitLab アセットは[このグループ](https://gitlab.com/tanuki-workshops/emea-sa-tam/p2m)で利用可能です。Get Started する方法の詳細は [README](https://gitlab.com/tanuki-workshops/emea-sa-tam/p2m/README/-/blob/main/README.md) を参照してください。
+すべての GitLab アセットは[このグループ](https://gitlab.com/tanuki-workshops/emea-sa-tam/p2m)で利用可能です。利用を開始する方法の詳細は [README](https://gitlab.com/tanuki-workshops/emea-sa-tam/p2m/README/-/blob/main/README.md) を参照してください。
 
 ### GitLab Flow シナリオ
 
@@ -53,7 +53,7 @@ FY23-Q1 に、私たちは[GitLab P2M スタイルのデモの録画の保守の
 
 加えて、再利用可能なデモやプロジェクトを見つけるのに役立つさまざまなレガシーソースと場所があります:
 
-- [Demo カタログプロジェクト](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/demo-catalog)
+- [デモカタログプロジェクト](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/demo-catalog)
 - [GitLab Examples](https://gitlab.com/gitlab-examples) は、機能検証、スピードラン、デモ、ドキュメントでの機能展示のために製品グループによって使用されます。[GitLab CI/CD Examples ドキュメント](https://docs.gitlab.com/ee/ci/examples/)は、お客様も自分のために使えるようこれらを案内します。
 - [Guided Explorations](https://gitlab.com/guided-explorations) - 言語固有のフィーチャーフラグの例、さまざまな DevOps パターン、パイプラインのヒント、トリック、Windows のためのハックなど、さまざまなトピックのプロジェクトがあります。
 - [GitLab CS Tools](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools) - GitLab CS の自動化と移行ツール用のプロジェクトを提供するグループ
@@ -65,9 +65,9 @@ FY23-Q1 に、私たちは[GitLab P2M スタイルのデモの録画の保守の
 
 - [All the Things](https://docs.google.com/presentation/d/1AG6eDm8USqU7TG12Sp4UEc9B3P03pniQnVHZAGzyDAg/edit?usp=sharing) - すべての GitLab 機能と価値提案に関する包括的なスライドセットを含みます
 - [General Demo.pptx](https://drive.google.com/file/d/17SoRPxPCswT_FublXCsi3rm3TBnHAYI-/view?usp=sharing) - Cherry Han が作成・保守する製品ウォークスルーデッキ。ヒント: デッキのコピーを作成し、Google Slides で開いて自分の目的に合わせて編集できます。
-- Demo Prep
+- デモの準備
 
-<details><summary>こちらは、デモ提供前に Demo2Win 戦略を活用するために実施／検討すべきステップの詳細を示す Demo Preparation Roadmap です。</summary>
+<details><summary>こちらは、デモ提供前に Demo2Win 戦略を活用するために実施／検討すべきステップの詳細を示すデモ準備ロードマップです。</summary>
 
 <image>
 <iframe src="https://drive.google.com/file/d/1KIoJZ0Lcm83_gUHA5nzlFpgQ784xMHZp/preview" width="640" height="480" allow="autoplay"></iframe>

@@ -1,34 +1,34 @@
 ---
-title: "GitLabでGainsightを使用する"
-description: "GitLabでGainsightを使用してお客様の成功を推進するための主要な側面"
+title: "GitLab で Gainsight を使用する"
+description: "GitLab で Gainsight を使用してお客様の成功を推進するための主要な側面"
 upstream_path: /handbook/sales/gainsight/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:03:43+09:00"
+upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
+translated_at: "2026-09-26T21:13:54+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## Gainsight とは何ですか?
 
-Gainsight は、進行中の顧客ライフサイクルを管理するためにカスタマーサクセスマネージャー、リニューアルマネージャー、アカウントエグゼクティブ、ソリューションアーキテクトが使用するツールです。
+Gainsight は、進行中の顧客ライフサイクルを管理するために Customer Success Managers、Renewal Managers、Account Executives、Solutions Architects が使用するツールです。
 
 ### Gainsight の主な利点
 
 Gainsight は顧客のライフサイクルのいくつかの異なる領域で役立ちます。いくつかのハイライトには以下が含まれます:
 
-- 効率: 統合されたアカウントビュー(Book of Business、アカウント)、製品分析、Zendesk 統合、メモ、コラボプロジェクト、to-do
+- 効率: 統合されたアカウントビュー(Book of Business、アカウント)、製品分析、Zendesk 統合、メモ、コラボプロジェクト、タスク
 - 一貫性: 顧客ライフサイクルプロセスを確立し、エンゲージメントを管理・追跡
 - 可視性: ヘルススコア、リスク、採用、データビジュアル
 - 自動化: デジタルジャーニーのプロセス、採用、イネーブルメント
-- メトリックと分析: ステージ採用、顧客のヘルス、time-to-value、製品利用データ
+- メトリックと分析: ステージ採用、顧客のヘルス、価値実現までの時間、製品利用データ
 - ネットリテンションを成長させる: サクセスプラン主導のエンゲージメント、エクスパンドプレイ
 
 ## はじめに
 
 Gainsight にアクセスする方法は 2 つあります: [Salesforce 経由](#access-through-salesforce)(強く推奨)、および[直接ログイン](#logging-in-directly)。
 
-### Salesforce 経由でアクセス
+### Salesforce 経由でアクセス {#access-through-salesforce}
 
 *Salesforce は、商談、サブスクリプション情報、活動を含む完全なアカウント情報セットにアクセスできるため、Gainsight にアクセスする推奨される方法です。*
 
@@ -38,7 +38,7 @@ Gainsight の画面スペースを最大化するために Salesforce ヘッダ�
 
 Salesforce 経由でログインしている場合は、Gainsight アカウントページの右上(ユーザー画像の下)にある縦の 3 つの点をクリックし、"View Account"をクリックすることで、アクセスしている Gainsight アカウントの Salesforce リンクをすばやく開くこともできます。
 
-### 直接ログイン
+### 直接ログイン {#logging-in-directly}
 
 **注: Okta 経由で直接ログインできますが、サブスクリプションデータ、商談、Salesforce 活動はありません。**
 
@@ -47,7 +47,7 @@ Gainsight に直接アクセスするには、[gitlab.gainsightcloud.com](https:
 **ログインできませんか?ヘルプを得る方法は次のとおりです:**
 
 - Gainsight へのアクセスをリクエストする必要がある場合は、[Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)に記入し、マネージャーに manager approved ラベルを追加してもらってください。
-- Gainsight 関連のアクセスに関する質問がある場合は、[#gainsight-users](https://gitlab.enterprise.slack.com/archives/C011ACG9MJB) Slack チャンネルで Gainsight アドミンチームに ping してください。
+- Gainsight 関連のアクセスに関する質問がある場合は、[#gainsight-users](https://gitlab.enterprise.slack.com/archives/C011ACG9MJB) Slack チャンネルで Gainsight Admin チームに連絡してください。
 
 ### タイムゾーンを確認
 
@@ -57,9 +57,9 @@ Gainsight に直接アクセスするには、[gitlab.gainsightcloud.com](https:
 
 個別の通知を調整するには、右上の名前をクリックし、"My Settings"を選択し、上部中央の"Notifications"を選択します。下の写真はデフォルトを示しており、好みに基づいて選択できる以下のオプションがあります。詳細は Gainsight の[ドキュメント](https://support.gainsight.com/gainsight_nxt/Notifications/User_Guides/Setup_User_Notifications)を参照してください。
 
-![Gainsight チャネルのサブスクリプション](/images/handbook/customer-success/gainsight-channel-subscriptions.png "Gainsight チャネルのサブスクリプション")
+![Gainsight チャネルのサブスクリプション](/images/handbook/customer-experience/gainsight-channel-subscriptions.png "Gainsight チャネルのサブスクリプション")
 
-![Gainsight イベントのサブスクリプション](/images/handbook/customer-success/gainsight-event-subscriptions.png "Gainsight イベントのサブスクリプション")
+![Gainsight イベントのサブスクリプション](/images/handbook/customer-experience/gainsight-event-subscriptions.png "Gainsight イベントのサブスクリプション")
 
 ## Gainsight に関するフィードバック
 
@@ -69,13 +69,13 @@ Gainsight に直接アクセスするには、[gitlab.gainsightcloud.com](https:
 
 新しいメールテンプレートを Gainsight に追加するようリクエストするには、[Customer Success Operations プロジェクト](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/new)で Issue をオープンし、関連する場合は program request または new program テンプレートを適用します。Issue をオープンする前にチームメンバーの 1 人と接続している場合は、リクエストでそれらに@メンションしてください。それ以外の場合は、すべての要求を定期的にレビューし、受諾された場合は作業負荷に応じて今後のマイルストーンの 1 つにアサインします。
 
-Gainsight への最近の更新を表示するには、[ランニング変更履歴](https://docs.google.com/spreadsheets/d/1QknfSfX50JFOhkHZoz2VjovREWK2fJkYBxr5HEjkT9Q/edit#gid=0)を表示してください。
+Gainsight への最近の更新を表示するには、[随時更新される変更履歴](https://docs.google.com/spreadsheets/d/1QknfSfX50JFOhkHZoz2VjovREWK2fJkYBxr5HEjkT9Q/edit#gid=0)を表示してください。
 
-### サポートチケット
+### サポートチケット {#support-tickets}
 
 Gainsight に関するサポートチケットを提出するには、2 つのオプションがあります。
 
-1. support@gainsight.com にメールを送り、GitLab Gainsight アドミンチームを CC に入れます。オプションで、Gainsight CSM を CC に入れることができます。
+1. support@gainsight.com にメールを送り、GitLab Gainsight Admin チームを CC に入れます。オプションで、Gainsight CSM を CC に入れることができます。
 1. [Gainsight サポートウェブサイト](https://support.gainsight.com/)に移動し、Gainsight NXT を選択し、必須フィールドに記入します。
 
 ### 一般的なエラーとトラブルシューティング
@@ -84,7 +84,7 @@ Gainsight に関するサポートチケットを提出するには、2 つの�
 
 "Query API invalid response"エラーメッセージを受け取った場合は、ブラウザのキャッシュとクッキーをクリアしてみてください。プライベートブラウザ(Incognito Mode など)でもチェックして、ブラウザ構成の問題であることを確認することをお勧めします。
 
-#### Success plan objectives updated failed
+#### サクセスプランの目標の更新に失敗する
 
 サクセスプランまたはアカウントプランのステータスを Draft から Active に変更するときに"SUCCESS_PLAN_OBJECTIVES_UPDATED_FAILED"エラーメッセージを受け取った場合は、タスクの期日よりも早い期日を持つ CTA が 1 つ以上あるためかもしれません。これを修正するには、CTA の期日を更新するタスクの期日を再適用し、その後サクセスプランを Active に変更してみてください。
 
@@ -107,5 +107,5 @@ Gainsight に関するサポートチケットを提出するには、2 つの�
 
 ### 役割固有の Gainsight 利用
 
-- Sales がどのように gainsight を使用するかについての詳細は、[Using Gainsight within Sales](/handbook/sales/gainsight/account-planning/)ページで見つけることができます。
-- カスタマーサクセスマネージャーがどのように Gainsight を使用するかについての詳細は、[Using Gainsight for CSMs](/handbook/customer-success/csm/gainsight/)ページで見つけることができます。
+- Sales がどのように Gainsight を使用するかについての詳細は、[Sales での Gainsight の利用](/handbook/sales/gainsight/account-planning/)ページで見つけることができます。
+- Customer Success Managers がどのように Gainsight を使用するかについての詳細は、[CSM 向けの Gainsight の利用](/handbook/customer-experience/csm/gainsight/)ページで見つけることができます。

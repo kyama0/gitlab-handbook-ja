@@ -5,9 +5,9 @@ aliases:
   - /handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/
   - /handbook/engineering/ai/ai-clients/duo-cli/
 upstream_path: /handbook/engineering/ai/ai-clients/developer-clients/duo-cli/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:30:08+09:00"
+upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
+lastmod: "2026-09-25T17:24:03-04:00"
+translated_at: "2026-09-26T21:10:36+00:00"
 translator: codex
 stale: false
 ---
@@ -71,6 +71,8 @@ Duo CLI チームは、AI を活用したコマンドラインインターフェ
 ### はじめに
 
 [はじめにガイド](https://docs.gitlab.com/user/gitlab_duo_cli/#get-started)
+
+ベータ版の自動モードをテストするには、[Duo CLI 自動モード（ベータ版）](auto-mode/)を参照してください。
 
 ### フィードバックを提供して Duo CLI の形成にご協力ください
 
