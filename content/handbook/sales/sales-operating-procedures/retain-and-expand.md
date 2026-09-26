@@ -2,14 +2,14 @@
 title: "維持と拡大"
 description: "顧客を維持し、GitLab のフットプリントと顧客への価値を拡大するための GitLab セールスプロセス"
 upstream_path: /handbook/sales/sales-operating-procedures/retain-and-expand/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
+translated_at: "2026-09-26T21:13:54+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-28T11:19:46-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-アカウントを獲得したら、AE/SAE/CSM/PSE が協力して[カスタマーサクセス](/handbook/customer-success/)を確実なものにする時です。これには、すべての関係者による[アカウントエンゲージメント](/handbook/customer-success/csm/engagement/)が必要です。これの構成要素は次のとおりです。
+アカウントを獲得したら、AE/SAE/CSM/PSE が協力して[カスタマーサクセス](/handbook/customer-experience/)を確実なものにする時です。これには、すべての関係者による[アカウントエンゲージメント](/handbook/customer-experience/csm/engagement/)が必要です。これの構成要素は次のとおりです。
 
 - カスタマーオンボーディング
 - カスタマー実装
@@ -18,49 +18,49 @@ lastmod: "2026-04-28T11:19:46-04:00"
 
 維持と拡大フェーズでは、CSM/PSE/AE/SAE の役割と責任が並行して進み、すべての役割が顧客を成功させるために協力することが非常に重要です。維持と拡大は、通常、カスタマーサクセスのプロジェクト管理と技術的な側面に関する CSM の管轄ですが、AE/SAE がアカウントとの継続的なセールスエンゲージメント活動を行い、カスタマーサポートに信頼できるタッチポイントを提供することが重要です。この標準業務手順 (SOP) では、アカウント管理に関連する以下のすべての関係者に必要なステップ、タスク、成果物を示します。
 
-- ストラテジックアカウントエグゼクティブ ([Enterprise](/job-description-library/sales/enterprise-account-executive/)) またはアカウントエグゼクティブ ([SMB](/handbook/sales/commercial/#smb-account-executives) または [Mid Market](/handbook/sales/commercial/#mid-market-account-executive))
-- [カスタマーサクセスマネージャー](/handbook/customer-success/csm/#what-is-a-customer-success-manager-csm)
-- [ソリューションアーキテクト](/handbook/solutions-architects/)
-- [プロフェッショナルサービス](/handbook/customer-success/professional-services-engineering/)
+- Strategic Account Executive ([Enterprise](/job-description-library/sales/enterprise-account-executive/)) または Account Executive ([SMB](/handbook/sales/commercial/#smb-account-executives) または [Mid Market](/handbook/sales/commercial/#mid-market-account-executive))
+- [Customer Success Manager](/handbook/customer-experience/csm/#what-is-a-customer-success-manager-csm-at-gitlab)
+- [Solutions Architect](/handbook/solutions-architects/)
+- [Professional Services](/handbook/customer-experience/professional-services-engineering/)
 
-## 1. カスタマーオンボーディング
+## 1.カスタマーオンボーディング
 
-**[カスタマーオンボーディング](/handbook/customer-success/csm/onboarding/)** は、ユーザーが顧客になるためのジャーニーの開始からその先までに通るプロセスを説明するために通常使用される用語です。GitLab 内では、カスタマーオンボーディングは、SAE/AE が公式の紹介を行い、ウェルカムコールを通じて CSM と PSE への顧客のステークホルダーへのアカウント管理移行を行うことを包含します。さらに、CSM は、顧客のユースケースと技術スタックの理解を再検証し始めます。達成する必要のあるタスクは以下のとおりです。
+**[カスタマーオンボーディング](/handbook/customer-experience/csm/onboarding/)** は、ユーザーが顧客になるためのジャーニーの開始からその先までに通るプロセスを説明するために通常使用される用語です。GitLab 内では、カスタマーオンボーディングは、SAE/AE が公式の紹介を行い、ウェルカムコールを通じて CSM と PSE への顧客のステークホルダーへのアカウント管理移行を行うことを包含します。さらに、CSM は、顧客のユースケースと技術スタックの理解を再検証し始めます。達成する必要のあるタスクは以下のとおりです。
 
-1. プロフェッショナルサービス実装キックオフ。CSM が、顧客に合わせたキックオフと実装計画を管理します。
+1. Professional Services 実装キックオフ。CSM が、顧客に合わせたキックオフと実装計画を管理します。
 
-- [プロフェッショナルサービス](/handbook/customer-success/professional-services-engineering/sales-enablement/) は、業務効率の改善、市場投入時間の短縮、GitLab プロダクト採用を通じたリスクの低減のためのサービスを提供することで、お客様の DevOps 変革を加速させます。これを達成するために、最初の GitLab ロールアウトがスムーズに進み、エンドユーザーができるだけ早く価値を得られるようにするためのサービスのカテゴリを提供しています。ISR/SAE が、特定の種類の顧客が通常エンゲージするサービスと、サクセスプランを構築する際にそれらのサービスをどのように位置づけるかを理解することが重要です。顧客に提供されるすべてのサービスとそれらをどのようにマーケティングするかを理解するために、[プロフェッショナルサービスのポジショニング](/handbook/customer-success/professional-services-engineering/positioning/)ハンドブックページを活用してください。
+- [Professional Services](/handbook/customer-experience/professional-services-engineering/sales-enablement/) は、業務効率の改善、市場投入時間の短縮、GitLab プロダクト採用を通じたリスクの低減のためのサービスを提供することで、お客様の DevOps 変革を加速させます。これを達成するために、最初の GitLab ロールアウトがスムーズに進み、エンドユーザーができるだけ早く価値を得られるようにするためのサービスのカテゴリを提供しています。ISR/SAE が、特定の種類の顧客が通常エンゲージするサービスと、サクセスプランを構築する際にそれらのサービスをどのように位置づけるかを理解することが重要です。顧客に提供されるすべてのサービスとそれらをどのようにマーケティングするかを理解するために、[Professional Services のポジショニング](/handbook/customer-experience/professional-services-engineering/positioning/)ハンドブックページを活用してください。
 
-1. ソリューションアーキテクトが、顧客のメタレコードと技術プロファイルを PSE または CSM に移行します。
-2. アカウントエグゼクティブが、顧客のメタレコードとビジネスプロファイルを CSM に移行します。
-3. 顧客の移行プロセスを定義します。プランはサインで終わるのではなく、彼らのゴールから始めて逆算するべきです。
+1. Solutions Architect が、顧客のメタレコードと技術プロファイルを PSE または CSM に移行します。
+1. Account Executive が、顧客のメタレコードとビジネスプロファイルを CSM に移行します。
+1. 顧客の移行プロセスを定義します。プランはサインで終わるのではなく、彼らのゴールから始めて逆算するべきです。
     - SAE/AE が[コマンドプラン](/handbook/sales/command-of-the-message/command-plan/)を更新します。
-    - CSM が[サクセスプラン](/handbook/customer-success/csm/success-plans/)を構築します。
-4. CSM がオンボーディングと実装プランを作成して実行します。
-5. カスタマー実装。
+    - CSM が[サクセスプラン](/handbook/customer-experience/csm/success-plans/)を構築します。
+1. CSM がオンボーディングと実装プランを作成して実行します。
+1. カスタマー実装。
 
-## 2. 実装
+## 2.実装
 
 **実装** は、顧客が GitLab ソリューションの運用をサポートする適切なインフラストラクチャを持っていることを確認することに焦点を当てます。Self-managed の顧客の場合、これにはオンプレミス機器および/またはクラウドインフラストラクチャのセットアップが含まれます。GitLab.com を活用する顧客の場合、これには GitLab クラウドサービスと顧客環境との統合 (例えば SAML SSO 統合) が含まれます。本番インフラストラクチャが使用可能な状態になったときに、これは完了したと見なされます。
 
 ### 2.1 サクセスプランニング
 
-Gainsight には 2 種類の[サクセスプラン](/handbook/customer-success/csm/success-plans/)があります。1 つ目は上記で説明した **ROI サクセスプラン** です。2 つ目は **ステージ採用サクセスプラン** です。このサクセスプランは、CSM がアカウント内のステージ採用を推進する進捗とゴールを追跡できるようにする内部ドキュメントです。
+Gainsight には 2 種類の[サクセスプラン](/handbook/customer-experience/csm/success-plans/)があります。1 つ目は上記で説明した **ROI サクセスプラン** です。2 つ目は **ステージ採用サクセスプラン** です。このサクセスプランは、CSM がアカウント内のステージ採用を推進する進捗とゴールを追跡できるようにする内部ドキュメントです。
 
 **投資収益率 (ROI) サクセスプラン** は、CSM が作成する顧客向けインタラクティブマップで、購入 (または更新!) の理由を顧客の成果と整合させ、共同の説明責任を構築し、進捗を測定し、顧客のニーズが変化するに応じて進化していくものです。別の言い方をすれば、顧客が製品やサービスのコストよりもはるかに大きな価値を達成していることを見て知ることができる手段です。サクセスプランニングは、顧客が望む目標を達成するのを助けることに焦点を当て、購入取引は GitLab とのカスタマージャーニーの始まりに過ぎないことを認識します。これには、GitLab ロードマップと顧客のロードマップを組み合わせたビジョンを顧客にアウトラインすることが含まれます。
 
-- CSM の責任には、アカウントの顧客とのフルなユースケース、ステークホルダー、技術スタック、商談ディスカバリーが含まれます。顧客のサクセスプランのために収集された情報は **[GainSight](/handbook/customer-success/csm/gainsight/)** に格納され、Salesforce 内に追加リンクとして埋め込まれています。
+- CSM の責任には、アカウントの顧客とのフルなユースケース、ステークホルダー、技術スタック、商談ディスカバリーが含まれます。顧客のサクセスプランのために収集された情報は **[GainSight](/handbook/customer-experience/csm/gainsight/)** に格納され、Salesforce 内に追加リンクとして埋め込まれています。
 - CSM は、GitLab 101 で GitLab 認定の準備をするために、顧客を調整し教育します。
 
 ### 2.2 ステージ採用
 
-目的は、顧客が GitLab ソリューションを活用して、顧客の元の購入意図 (すなわち、製品ステージと機能、ライセンス) に対処することをサポートすることです。[ステージ採用](/handbook/customer-success/csm/stage-adoption/)は、以下の質問に答えられるときに完了です。
+目的は、顧客が GitLab ソリューションを活用して、顧客の元の購入意図 (すなわち、製品ステージと機能、ライセンス) に対処することをサポートすることです。[ステージ採用](/handbook/customer-experience/csm/stage-adoption/)は、以下の質問に答えられるときに完了です。
 
 - 元の購入から 80% のライセンスがアクティベートされているか?
 - 顧客は元の購入意図からの機能やステージを正常に採用しているか?
 - これらは、製品分析 (利用可能な場合) または顧客との合意を通じて測定されるか。
 
-カスタマージャーニーの一環として、私たちは顧客の最初の体験を非常に重視し、価値実現までの時間を測定します。これは、[Key Performance Indicators (KPI)](/handbook/customer-success/customer-success-vision/#measurement-and-kpis) に従って行われます。具体的には、最初の取引から以下までの暦日での時間を測定します。
+カスタマージャーニーの一環として、私たちは顧客の最初の体験を非常に重視し、価値実現までの時間を測定します。これは、[重要業績評価指標（KPI）](/handbook/customer-experience/customer-success-vision/#measurement-and-kpis) に従って行われます。具体的には、最初の取引から以下までの暦日での時間を測定します。
 
 - **エンゲージメント**: 顧客とエンゲージするまでの時間を表します。CSM が顧客との最初のミーティングを持ったときに完了として定義されます。
 - **オンボーディング**: すべてのオンボーディングタスクが完了したときに完了として定義されます。
@@ -70,14 +70,14 @@ Gainsight には 2 種類の[サクセスプラン](/handbook/customer-success/c
 
 ## 3. カスタマーアカウント管理 (維持)
 
-カスタマーサービスは、カスタマージャーニーの重要な側面です。これが非常に重要な理由は、アカウントからの収益のほとんどが更新とライセンスの成長から得られるためです。これを行うには、優れたカスタマーサービスとアカウント管理活動を通じて、一貫した顧客の購買体験を提供する必要があります。GitLab 内では、これは、アカウントの進行状況を追跡し、アカウントにとって重要な Issue とリクエストを理解し、主要なマイルストーン (オンボーディング、EBR、更新) の提供を進め、アカウントリスクをエスカレーションして迅速に対応することによって行われます。以下は、効果的なカスタマーアカウント管理のために実施する必要のある主なタスクです。
+カスタマーサービスは、カスタマージャーニーの重要な側面です。これが非常に重要な理由は、アカウントからの収益のほとんどが更新とライセンスの成長から得られるためです。これを行うには、優れたカスタマーサービスとアカウント管理活動を通じて、一貫した顧客の購買体験を提供する必要があります。GitLab 内では、これは、アカウントの進行状況を追跡し、アカウントにとって重要な問題とリクエストを理解し、主要なマイルストーン (オンボーディング、EBR、更新) の提供を進め、アカウントリスクをエスカレーションして迅速に対応することによって行われます。以下は、効果的なカスタマーアカウント管理のために実施する必要のある主なタスクです。
 
 ### 3.1 継続的な顧客エンゲージメント
 
 SAE/AE と CSM の両方が、継続的な顧客タッチポイントとエンゲージメントを行うことが重要です。以下は、継続的な顧客エンゲージメントの管轄に該当するタスクです。
 
 - SAE/CSM は、顧客のポジティブなビジネス成果を継続的に再検証してドキュメント化し、GitLab ソリューションを彼らのペインに接続します。
-  - GainSight 内の CSM 用[サクセスプラン](/handbook/customer-success/csm/success-plans/)
+  - GainSight 内の CSM 用[サクセスプラン](/handbook/customer-experience/csm/success-plans/)
   - Salesforce 内の SAE 用[コマンドプラン](/handbook/sales/command-of-the-message/command-plan/)
 - CSM は、サポートのエスカレーション (Sales、Support、Product、Engineering、CSM との協力) に対応する明確なプロセスを開発します。エスカレーションコールをホストし、顧客をエスカレーション状態から通常状態に戻すまで管理します。SAE は CSM をサポートします。
 - SAE/AE/CSM は、問題を捕捉し、計画を調整し、信頼を強化し、再販する新しい商談を特定するために、顧客と継続的にミーティングを行います。
@@ -91,21 +91,21 @@ SAE/AE と CSM の両方が、継続的な顧客タッチポイントとエン�
 
 - Salesforce を更新して次のステップ、日付を捕捉し、現在のステータスを維持し、アカウントの主要なイベントをログに記録します。
 - コマンドプランの商談概要を更新して、アカウント/商談の前提が現在のものであり正確であることを確認します。
-- [コマンドプラン](/handbook/sales/command-of-the-message/command-plan/)の [MEDDPPICC](/handbook/sales/meddppicc/) セクションを更新して、関連データが最新で正確であることを確認します。
+- [MEDDPPICC](/handbook/sales/meddppicc/) セクションを[コマンドプラン](/handbook/sales/command-of-the-message/command-plan/)内で更新して、関連データが最新で正確であることを確認します。
 - Close Plan と Close Date を更新して、正確に予測できていることを確認します。
 
 #### 3.2.3 週次アカウントメンテナンス活動 (SAE/AE)
 
 以下は、Clari 内で実行する必要がある **週次タスク** です。
 
-- **Clari-Forecast Values (Net New)** - 地域のニュース、サクセスストーリー、クローズ、勝利、組織的な Issue をドキュメント化します。
-- **Clari-Forecast Value (Renewal)** - パッチに関するフィールドマーケティングの詳細をドキュメント化して議論します。
+- **Clari-Forecast Values (Net New)** - 地域のニュース、サクセスストーリー、クローズ、勝利、組織的な問題をドキュメント化します。
+- **Clari-Forecast Value (Renewal)** - 担当地域の関係者とフィールドマーケティングの詳細を記録し、話し合います。
 
 Clari に関する詳細なトレーニングについては、[Clari for Salespeople 説明動画](https://internal.gitlab.com/handbook/sales/sales-forecasting/)に行ってください。
 
 ### 3.3 エグゼクティブビジネスレビューを実施する (CSM)
 
-[エグゼクティブビジネスレビュー (EBR)](/handbook/customer-success/csm/ebr/) は、GitLab と顧客の両方からのステークホルダーが参加する戦略的なミーティングです。SAE/AE と一緒に、CSM は EBR をスケジュールして実施し、顧客と協力して主な目的と望ましいビジネス成果を達成する責任があります。CSM がコンテンツの作成を所有し、SAE/AE と CSM が一緒にベストプラクティスと顧客関係への洞察に基づいてレビューの流れを決定します。
+[エグゼクティブビジネスレビュー (EBR)](/handbook/customer-experience/csm/ebr/) は、GitLab と顧客の両方からのステークホルダーが参加する戦略的なミーティングです。SAE/AE と一緒に、CSM は EBR をスケジュールして実施し、顧客と協力して主な目的と望ましいビジネス成果を達成する責任があります。CSM がコンテンツの作成を所有し、SAE/AE と CSM が一緒にベストプラクティスと顧客関係への洞察に基づいてレビューの流れを決定します。
 
 CSM は、顧客ごとに少なくとも年に 1 回 EBR を開催すべきです。より大きな ARR アカウントや、より戦略的なイニシアチブを持つアカウントは、四半期ごとのケイデンスから利益を得るかもしれませんし、必要とするかもしれません。これは CSM、SAE/AE、Sales/CS リーダーシップが行う決定です。
 
@@ -115,23 +115,23 @@ CSM は、適切な人々が部屋に入るようにステークホルダーを�
 
 ### 4.1 CSM のカスタマーアカウント拡大活動
 
-以下は、CSM マネージャーが繰り返しのケイデンスで実行するトッププロセスのいくつかです。全体的なゴールは、CSM マネージャーがチームの顧客グループをさまざまなデータポイント (ヘルス、サポートチケット、オンボーディングオブジェクト、更新など) を通じてしっかりと把握できるようにすることです。ダッシュボードや動画などのリソースは、参照しやすいように含まれています。
+以下は、CSM Manager が繰り返しのケイデンスで実行するトッププロセスのいくつかです。全体的なゴールは、CSM Manager がチームの顧客グループをさまざまなデータポイント (ヘルス、サポートチケット、オンボーディングオブジェクト、更新など) を通じてしっかりと把握できるようにすることです。ダッシュボードや動画などのリソースは、参照しやすいように含まれています。
 
-- 顧客との定期的な[ヘルスチェック](/handbook/customer-success/csm/health-score-triage/)を実施します。
-- SAE/AE と[更新レビューミーティング](/handbook/customer-success/csm/renewals/#renewal-review-meeting)を実施します。顧客関係ライフサイクルの重要な部分は更新フェーズです。CSM は顧客の更新日を積極的に追跡し、ストラテジックアカウントマネージャー (SAE) と整合して、顧客の更新が確実に行われるようにする必要があります。
-**毎月の初め** に、CSM は Salesforce のアカウントリストをレビューし、アカウントの更新日を記録すべきです。更新日が 6 ヶ月以内の場合、CSM は適切な SAE およびソリューションアーキテクト (SA) と 2 つの「更新レビュー」ミーティングをスケジュールすべきです。1 つ目の「更新レビュー」ミーティングは、更新日の 5 ヶ月前にスケジュールし、2 つ目は更新日の 3 ヶ月前にスケジュールすべきです。
+- 顧客との定期的な[ヘルスチェック](/handbook/customer-experience/csm/health-score-triage/)を実施します。
+- SAE/AE と[更新レビューミーティング](/handbook/customer-experience/csm/renewals/#renewal-review-meeting---internal-sync)を実施します。顧客関係ライフサイクルの重要な部分は更新フェーズです。CSM は顧客の更新日を積極的に追跡し、Strategic Account Manager (SAE) と整合して、顧客の更新が確実に行われるようにする必要があります。
+**毎月の初め** に、CSM は Salesforce のアカウントリストをレビューし、アカウントの更新日を記録すべきです。更新日が 6 ヶ月以内の場合、CSM は適切な SAE および Solutions Architect (SA) と 2 つの「更新レビュー」ミーティングをスケジュールすべきです。1 つ目の「更新レビュー」ミーティングは、更新日の 5 ヶ月前にスケジュールし、2 つ目は更新日の 3 ヶ月前にスケジュールすべきです。
 - 予測、パイプラインをレビューし、新しいセールス商談を特定するために **SAE/SA/CSM** ミーティングを実施します。
 - 一般的な顧客満足度を評価するために、年に 2 回 **Net Promoter Score** NPS/CSAT を開発します (ケースクローズ後)。
 
 ### 4.2 CSM レビューチェックリスト
 
-CSM マネージャー向けに、レビューを支援するための短いチェックリストを以下に示します。
+CSM Manager 向けに、レビューを支援するための短いチェックリストを以下に示します。
 
-- [アカウント割り当て](/handbook/customer-success/csm/csm-manager/#account-assignment): アカウントがレビューされ、割り当てられているかレビュー中である
-- [カスタマーオンボーディング](/handbook/customer-success/csm/csm-manager/#onboarding-object-review): オンボーディングフェーズの顧客がレビューされており、オンボーディングのステータスとノートが完了している
-- [サクセスプラン](/handbook/customer-success/csm/csm-manager/#success-plan-review): 顧客がサクセスプランを持っており、それが顧客とコミュニケーションされており、CSM がそれを指針となるドキュメントとして使用している
-- [トリアージとヘルス](/handbook/customer-success/csm/csm-manager/#triage-and-health-review): すべての CSM 割り当てアカウントのヘルスが過去 1 ヶ月以内に更新されており、トリアージ中のアカウントが評価されている
-- [更新レビュー](/handbook/customer-success/csm/csm-manager/#renewal-review): 今後の顧客の更新がレビューされている — CSM は顧客のヘルスを更新し、今後の更新について SAE および SA とコミュニケーションしている
+- [アカウント割り当て](/handbook/customer-experience/csm/csm-manager/#account-assignment): アカウントがレビューされ、割り当てられているかレビュー中である
+- [カスタマーオンボーディング](/handbook/customer-experience/csm/csm-manager/): オンボーディングフェーズの顧客がレビューされており、オンボーディングのステータスとノートが完了している
+- [サクセスプラン](/handbook/customer-experience/csm/csm-manager/#success-plan-review): 顧客がサクセスプランを持っており、それが顧客とコミュニケーションされており、CSM がそれを指針となるドキュメントとして使用している
+- [トリアージとヘルス](/handbook/customer-experience/csm/csm-manager/): すべての CSM 割り当てアカウントのヘルスが過去 1 ヶ月以内に更新されており、トリアージ中のアカウントが評価されている
+- [更新レビュー](/handbook/customer-experience/csm/csm-manager/#renewal-review): 今後の顧客の更新がレビューされている — CSM は顧客のヘルスを更新し、今後の更新について SAE および SA とコミュニケーションしている
 
 ### 4.3 SAE/AE のカスタマーアカウント拡大活動
 

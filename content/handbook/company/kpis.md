@@ -1,20 +1,20 @@
 ---
 title: KPI
 upstream_path: "/handbook/company/kpis/"
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T11:09:38+09:00"
+upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
+translated_at: "2026-09-26T21:13:54+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-08-24T16:35:52-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## KPI とは
 
-GitLab のあらゆる部分には Key Performance Indicators（KPI）があります。
+GitLab のあらゆる部分には重要業績評価指標（KPI）があります。
 より明示的に表現できる場面では metric という用語を避けます。
 代わりに KPI を使います。
 ある機能の KPI は、E-group の該当メンバーが所有します。
-1 つの機能は、追跡している多くの Performance Indicator（PI）を持つことができ、そのすべてが KPI になるわけではありません。
+1 つの機能は、追跡している多くのパフォーマンス指標（PI）を持つことができ、そのすべてが KPI になるわけではありません。
 KPI は PI のサブセットであるべきで、リーダーシップに対して可視化すべき最も重要な PI を示すために使われます。
 
 KPI の定義は、[機能と成果](/handbook/about/handbook-usage/#organized-by-function-and-results)で構成されたハンドブックの中で最も関連性の高い箇所に置く必要があります。
@@ -41,27 +41,27 @@ KPI に関連する目標は、定義と一緒に配置するべきです。
 
 ## GitLab KPI
 
-GitLab の **North Star metric** はランレート売上です。加えて他に 10 個のトップ KPI があります。
+GitLab の **北極星指標** はランレート売上です。加えて他に 10 個のトップ KPI があります。
 
 GitLab KPI はこのページの下にあるレポートの目標と重複します。
 GitLab KPI は会社のパフォーマンスを示す最も重要な 10 個の指標であり、最も重要な KPI は Net ARR です。
 これらは取締役会の四半期ごとの会議で毎回レビューします。
 これらの KPI は、会社にとっての単独での重要性と、その指標を改善するために割かれているマネジメントの集中度の組み合わせによって決定されます。
 
-1. [Revenue](/handbook/company/kpis/#sales-kpis) vs. plan（遅行指標）
-1. [R&D Overall MR Rate](/handbook/engineering/performance-indicators/#rd-overall-mr-rate)（先行指標）
-1. [Estimated Combined Monthly Active Users (CMAU)](https://internal.gitlab.com/handbook/company/performance-indicators/product/#estimated-combined-monthly-active-users)（先行指標）
-1. [Net New Business Pipeline Created ($s)](/handbook/marketing/performance-indicators/#net-new-business-pipeline-created) 🐔（先行指標）
-1. [Pipeline coverage start of quarter stage 3+](/handbook/marketing/performance-indicators/#pipeline-coverage)（先行指標）
-1. [Percent of Ramped Reps at or Above Quota](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#percent-of-ramped-reps-at-or-above-quota)（遅行指標）
-1. [Net Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
-1. [Gross Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
-1. [12 Month Team Member Voluntary Retention](https://10az.online.tableau.com/#/site/gitlab/workbooks/2147990?:origin=card_share_link) 🔗（遅行指標）
-1. [Unique Wider Community Contributors per Month](/handbook/marketing/developer-relations/performance-indicators/#unique-wider-community-contributors-per-month)（遅行指標）
+1. [売上](/handbook/company/kpis/#sales-kpis)の計画比（遅行指標）
+1. [R&D 全体の MR 率](/handbook/engineering/performance-indicators/#rd-overall-mr-rate)（先行指標）
+1. [推定合算月間アクティブユーザー数（CMAU）](https://internal.gitlab.com/handbook/company/performance-indicators/product/#estimated-combined-monthly-active-users)（先行指標）
+1. [新規ビジネスの純増パイプライン創出額（$）](/handbook/marketing/performance-indicators/#net-new-business-pipeline-created) 🐔（先行指標）
+1. [四半期初めのステージ 3 以上のパイプラインカバレッジ](/handbook/marketing/performance-indicators/#pipeline-coverage)（先行指標）
+1. [立ち上がり期間を終えた営業担当者のうちクオータ以上を達成した割合](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#percent-of-ramped-reps-at-or-above-quota)（遅行指標）
+1. [ネットリテンション](/handbook/customer-experience/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
+1. [グロスリテンション](/handbook/customer-experience/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
+1. [チームメンバーの 12 か月間の自発的定着率](https://10az.online.tableau.com/#/site/gitlab/workbooks/2147990?:origin=card_share_link) 🔗（遅行指標）
+1. [月間のワイダーコミュニティのユニークコントリビューター数](/handbook/marketing/developer-relations/performance-indicators/#unique-wider-community-contributors-per-month)（遅行指標）
 
-## Sales KPI
+## Sales KPI {#sales-kpis}
 
-[Sales KPI](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#kpi-summary) は [Not Public](/handbook/communication/confidentiality-levels/#not-public) であり、[Internal handbook](/handbook/about/handbook-usage/#the-internal-handbook) に文書化されています。
+[Sales KPI](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#kpi-summary) は [Not Public](/handbook/communication/confidentiality-levels/#not-public) であり、[社内ハンドブック](/handbook/about/handbook-usage/#the-internal-handbook) に文書化されています。
 
 {{< kpi "Sales" >}}
 
@@ -87,7 +87,7 @@ People KPI は [Not Public](/handbook/communication/confidentiality-levels/#not-
 
 ## Product KPI
 
-GitLab のチームメンバーは、`Okta > GitLab Internal Handbook` から Internal handbook 内のすべての Product Performance Indicator にアクセスし、更新できます。
+GitLab のチームメンバーは、`Okta > GitLab Internal Handbook` から社内ハンドブック内のすべての Product のパフォーマンス指標にアクセスし、更新できます。
 
 ## Engineering KPI
 
@@ -117,22 +117,22 @@ SAT の前に以下の略称を 1 文字つけます。前置の文字なしで 
 
 - C = 使用しません。customer は曖昧（プロダクトかサポートかが分からず、すべてのユーザーが顧客とは限らない）なため
 - E = 使用しません。他社では employee が使われるものの、私たちは使いません
-- I = Interviewee（ここに応募するよう人にすすめますか）
+- I = 面接対象者（ここに応募するよう人にすすめますか）
 - L = Leadership（専任の事務サポートを持つエグゼクティブとして、提供される秘書サポートはどうですか）
 - O = オンボーディング（オンボーディング体験はどうでしたか）
 - P = [Product](https://internal.gitlab.com/handbook/company/performance-indicators/product/)（GitLab プロダクトを他人にすすめますか）
 - S = [Support](/handbook/support/performance-indicators/#support-satisfaction-ssat)（私たちのサポートフォローアップを他人にすすめますか）
-- T = Team-members（ここで働くことを他人にすすめますか）
+- T = チームメンバー（ここで働くことを他人にすすめますか）
 
 ## リテンション
 
 私たちは多くの形でリテンションを追跡しているため、種類を示さずに単に「Retention」と表記するべきではありません。
 追跡しているもの:
 
-- [Net Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)
-- [Gross Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)
-- User Retention
-- [Team Member Retention](https://10az.online.tableau.com/#/site/gitlab/workbooks/2024177?:origin=card_share_link) 🔗
+- [ネットリテンション](/handbook/customer-experience/customer-success-vision/#retention-and-reasons-for-churn)
+- [グロスリテンション](/handbook/customer-experience/customer-success-vision/#retention-and-reasons-for-churn)
+- ユーザー定着率
+- [チームメンバー定着率](https://10az.online.tableau.com/#/site/gitlab/workbooks/2024177?:origin=card_share_link) 🔗
 
 ## KPI のレイヤー
 
@@ -144,7 +144,7 @@ KPI が会社（たとえば GitLab）レイヤーで存在できるのは、そ
 
 GitLab が成長するにつれて、このことはレイヤー全体にも当てはまるようになります。
 すべての部門 KPI が機能 KPI になるわけではありませんが、すべての機能 KPI は部門 KPI になります。
-これは組織全体にカスケードしていき、すべての職務ファミリーにそれに関連する Performance Indicator が紐づくようになります。
+これは組織全体にカスケードしていき、すべての職務ファミリーにそれに関連するパフォーマンス指標が紐づくようになります。
 
 [KPI インデックス](#kpi-index)は、会社、機能、部門の KPI を捕捉します。これらが最上位の 3 つのレイヤーであるためです。
 
@@ -157,10 +157,10 @@ GitLab が成長するにつれて、このことはレイヤー全体にも当�
 KPI または指標は複数の要素から構成されます。
 
 1. 定義: データソースは何か。どのように計算されるか。どのフィールドが含まれるか。どんな注意事項が考慮されているか。なぜ選ばれたのか。
-    - 注: 例として [Infrastructure Hosting Cost per MAU](/handbook/engineering/infrastructure/performance-indicators/#infrastructure-hosting-cost-per-gitlab-com-monthly-active-users) を参照してください。
+    - 注: 例として [MAU あたりのインフラストラクチャホスティングコスト](/handbook/engineering/infrastructure/performance-indicators/#infrastructure-hosting-cost-per-gitlab-com-monthly-active-users) を参照してください。
 1. ターゲット: 上回ることを目指すもの。たとえば ARR にはターゲットがあります
 1. 上限: 下回ることを目指すもの。たとえば離職率には上限があります
-1. [職務記述](/handbook/hiring/job-description-library/): この Performance Indicator を含む職務記述へのリンク
+1. [職務記述](/handbook/hiring/job-description-library/): このパフォーマンス指標を含む職務記述へのリンク
 1. 計画: 年次計画に組み込んでいるもの
 1. コミット: 最も悲観的な見通し
 1. 50/50: 中央値の見積もり。上振れと下振れが 50% ずつ

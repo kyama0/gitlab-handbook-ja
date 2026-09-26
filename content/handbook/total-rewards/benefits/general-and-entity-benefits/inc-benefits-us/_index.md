@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-18T21:06:29+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T21:05:51+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-16T15:10:00-07:00"
+lastmod: "2026-09-25T14:51:59-07:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -111,8 +111,8 @@ PlanSource（私たちの福利厚生システム）を通じて福利厚生に�
 Workday プロファイルを通じて PlanSource にアクセス:
 
 1. [Workday](https://www.myworkday.com/gitlab/d/home.htmld) にログイン
-2. **View All Apps** → **Personal Information** アプリをクリック
-3. **External Links** までスクロール → **US Benefits Enrollment - PlanSource** を選択
+2. サイドバーの **Personal** をクリックし、**Personal Information Hub** を選択します
+3. **Suggested Links** の下で **US Benefits Enrollment - PlanSource** を選択します
 4. 別画面で登録を完了
 
 ステップごとの手順については[PlanSource Login & Enrollment Guide](https://drive.google.com/file/d/1py7C8ngTpVlYNSKG4If3yBw43dg3F6Ml/view?usp=sharing) を確認してください。
@@ -346,7 +346,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 <details markdown="1">
 <summary>短期障害の NYLife 請求プロセス</summary>
 
-**ステップ 1: [Short-Term Disability](https://drive.google.com/file/d/1guydUTEc0vBFMaa_IsSktZ5hXAbOXdvD/view?usp=sharing) Application を提出する。** 請求者部分を完了し、医師に残りを完了してもらいます。以下のいずれかが可能です:
+**ステップ 1: [Short-Term Disability](https://drive.google.com/file/d/1guydUTEc0vBFMaa_IsSktZ5hXAbOXdvD/view?usp=sharing) の申請書を提出する。** 請求者部分を完了し、医師に残りを完了してもらいます。以下のいずれかが可能です:
 
 - NYLife に直接送信（フォーム上の郵送/ファックス番号を使用）、または
 - leaves@gitlab.com に返送し、leaves@gitlab.com 側で提出します
@@ -414,7 +414,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 <details markdown="1">
 <summary>401(k) ローン</summary>
 
-ベスト残高または $50,000（低い方）の最大 50% を Prime + 1% の金利で借りることができます。
+権利確定済み残高の 50% または $50,000 のいずれか少ない方を上限として、Prime + 1% の金利で借りられます。
 
 - オンラインで申請するか、Fidelity に 800-835-5097 で電話
 - 個人銀行口座から ACH で返済
