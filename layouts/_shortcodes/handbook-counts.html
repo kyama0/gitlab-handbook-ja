@@ -31,7 +31,7 @@
 {{- if eq $site "handbook" }}
 {{- $scratch := newScratch }}
 {{- $team := site.Data.public.team }}
-{{- /* These local, standalone shortcodes do not render another page or fetch remote data. */ -}}
+{{- /* These standalone shortcodes render independently of other pages. */ -}}
 {{- $localShortcodes := slice
     "label" "team-pets" "group-by-expertise" "release-managers" "release-schedule"
     "engineering/stable-counterparts" "engineering/workflow-labels" "engineering/create-retrospectives"
@@ -42,7 +42,8 @@
     "engineering/projects-body" "devops-diagram" "engineering/design-documents-list"
     "engineering/verify-team-communication" "engineering/create/career-development"
     "security/public-policy-standards-toc" "security/customer-support-operations-criticalities"
-    "tech-stack" }}
+    "tech-stack" "kpi" "performance-indicators" "include-readme" "include-remote"
+    "product/product-priorities" "peer-reviews" "pmm-inventory" }}
 {{- $localPattern := print `\{\{[<%]\s*(` (delimit $localShortcodes "|") `)(\s+[^{}]*)?[>%]\}\}` }}
 {{- range .Site.RegularPages }}
     {{- $page := . }}
@@ -69,6 +70,10 @@
     {{- range findRE `(?s)\{\{[<%]\s*details\b[^{}]*\ssummary="[^"]+"[^{}]*[>%]\}\}` $source }}
         {{- $summary := replaceRE `(?s)^.*?\ssummary="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($summary | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*card\b[^{}]*\s(header|footer)="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $label := replaceRE `(?s)^.*?\s(?:header|footer)="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($label | markdownify | plainify)) }}
     {{- end }}
     {{- /* This Markdown shortcode renders its words from data, not from page source. */ -}}
     {{- range findRE `\{\{%\s*all-tech-stack\s*%\}\}` $source }}
