@@ -19,7 +19,7 @@ GitLab の販売が増えるにつれて、プロフェッショナルサービ�
 
 私たちがパートナーと持ちうる関係にはさまざまなタイプがあり、その違いを概説することが重要です :point_down:。Direct と Indirect は、サービスがどのように販売されるかを指します - Direct はパートナーが顧客に直接販売することを意味し、Indirect は GitLab がサービスを販売してパートナーが実行を支援することを意味します。
 
-|   | Partner Indirect (Staff Augmentation)  | Partner Indirect (Project Based)  | Partner Direct |
+|   | Partner Indirect（人員補強）  | Partner Indirect（プロジェクトベース）  | Partner Direct |
 |---|---|---|---|
 | GitLab にサブコントラクトされている？  | はい | はい | いいえ |
 | アクセス  | Slack, www-gitlab-com, GDrive  | Slack, www-gitlab-com, GDrive | Partner Portal |
@@ -41,10 +41,10 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 - 顧客および PS 固有の Slack チャンネルへのアクセス
 - **Partner Indirect は、AWS、Azure、GitLab Demo などへのアクセスが可能です**
 - 顧客エンゲージメントのデリバリー作業について:
-  - Partner Indirect (Staff aug)
+  - Partner Indirect（人員補強）
     - [PS Plan](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ps-plan/-/issues_) のすべてのデリバリージャーナル Issue へのアクセス
     - すべての自動化付帯資料を持つ [global practice development](https://gitlab.com/gitlab-com/customer-success/professional-services-group/global-practice-development) グループへのアクセス
-  - Partner Indirect (project based)
+  - Partner Indirect（プロジェクトベース）
     - 顧客デリバリーへの特定のアクセス（? Melani に確認が必要）
     - 顧客プロジェクトを完了するための（適切に） [global practice development](https://gitlab.com/gitlab-com/customer-success/professional-services-group/global-practice-development) 配下の最も低いレベルでのアクセス
 
@@ -53,7 +53,7 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 ### 実装サービス
 
 - これらのサービスは、ほぼ常に実際にインフラストラクチャを構築し GitLab コンポーネントを設定することを伴うため、設定自動化の IaC のためのカスタマーフリーなリファレンスを維持することは難しい傾向があります
-- [Evaluate](https://gitlab.com/gitlab-org/professional-services-automation/tools/utilities/evaluate) はパートナー（Indirect）（プロジェクトベースおよびスタッフオーグメンテーション）が使用できます。
+- [Evaluate](https://gitlab.com/gitlab-org/professional-services-automation/tools/utilities/evaluate) はパートナー（Indirect）（プロジェクトベースおよび人員補強）が使用できます。
 - パートナー（Direct）TBD
 - パートナー（Indirect）が実装サービスプロジェクトをデリバリーする際、[実装デリバリーキット](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits/implementation-delivery-kits/implementation-delivery-kit) を使用できます
 あなた（および／またはパートナー）が実装サービスをデリバリーする際は、必ずデリバリーキットに貢献してください。
@@ -61,7 +61,7 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 ### マイグレーションサービス
 
 - gitlab.com へのマイグレーションはすべて、gitlab.com にユーザーを作成するために管理者トークンが必要なため、PSE の関与が必要です
-- パートナー（Indirect）（プロジェクトベースおよびスタッフオーグメンテーション）は [Congregate](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate) およびサポート自動化ユーティリティを使用できます。
+- パートナー（Indirect）（プロジェクトベースおよび人員補強）は [Congregate](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate) およびサポート自動化ユーティリティを使用できます。
 - パートナーがマイグレーションプロジェクトを開始する際、[Migration Plan](https://docs.google.com/document/d/1w3srV4CZQbNMqqMymH0l1CJhY2g33-p2rkmNm8Be3Bk/template/preview) または [Migration Delivery Kit](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits/migration-delivery-kits) を使用してデリバリーディスカッションを促進できます。
 - [Congregate](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate) を使用する際は、どこかにデプロイする必要があります。顧客のファイアウォール内にデプロイする必要がある場合は、マイグレーションサービスのソースコードに加えたホットフィックスをマイグレーションサービスプロジェクトに必ずポートバックしてください。
 
