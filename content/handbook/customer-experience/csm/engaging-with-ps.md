@@ -1,6 +1,6 @@
 ---
-title: "プロフェッショナルサービスとの連携"
-description: "プロフェッショナルサービスとの連携方法に関する CSM 向けガイドライン。"
+title: "Professional Services との連携"
+description: "Professional Services との連携方法に関する CSM 向けガイドライン。"
 upstream_path: /handbook/customer-experience/csm/engaging-with-ps/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -11,7 +11,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ### CSM ガイドライン - 顧客プロジェクトにおける PS との連携
 
-以下は、既存顧客との PS エンゲージメント全体を通じて、CSM がプロフェッショナルサービスと連携するためのステップ/手段の概要です。プロジェクトが Salesforce でクローズドウォンになると、PS オペレーションが顧客と連携して[主要なプロジェクト基準を確立します](/handbook/customer-experience/professional-services-engineering/project-mgmt/#project-initiate--plan)。この基準が受け取られると、プロジェクトマネージャーが割り当てられます。以下のステップはプロジェクトマネージャーが実施します:
+以下は、既存顧客との PS エンゲージメント全体を通じて、CSM がProfessional Services と連携するためのステップ/手段の概要です。プロジェクトが Salesforce でクローズドウォンになると、PS オペレーションが顧客と連携して[主要なプロジェクト基準を確立します](/handbook/customer-experience/professional-services-engineering/project-mgmt/#project-initiate--plan)。この基準が受け取られると、プロジェクトマネージャーが割り当てられます。以下のステップはプロジェクトマネージャーが実施します:
 
 1. CSM を内部 PS キックオフミーティング（PSE、PM、CSM）に招待する
 1. CSM をアカウントチーム（セールス）から PS への移行ミーティングに招待する

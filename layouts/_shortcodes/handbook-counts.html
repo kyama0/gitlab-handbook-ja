@@ -67,13 +67,21 @@
                 {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
                 {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
             {{- end }}
-            {{- range findRE `(?is)<img\b[^>]*\stitle="[^"]+"[^>]*>` $renderedIncluded }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\stitle="[^"]+"[^>]*>` $renderedIncluded }}
                 {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
                 {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
             {{- end }}
-            {{- range findRE `(?is)<img\b[^>]*\stitle='[^']+'[^>]*>` $renderedIncluded }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\stitle='[^']+'[^>]*>` $renderedIncluded }}
                 {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
                 {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label="[^"]+"[^>]*>` $renderedIncluded }}
+                {{- $label := replaceRE `(?is)^.*?\saria-label="([^"]+)".*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label='[^']+'[^>]*>` $renderedIncluded }}
+                {{- $label := replaceRE `(?is)^.*?\saria-label='([^']+)'.*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
             {{- end }}
             {{- $scratch.Add "wordcount" (countwords ($renderedIncluded | plainify)) }}
         {{- end }}
@@ -577,13 +585,21 @@
             {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
             {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
         {{- end }}
-        {{- range findRE `(?is)<img\b[^>]*\stitle="[^"]+"[^>]*>` $rendered }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\stitle="[^"]+"[^>]*>` $rendered }}
             {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
             {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
         {{- end }}
-        {{- range findRE `(?is)<img\b[^>]*\stitle='[^']+'[^>]*>` $rendered }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\stitle='[^']+'[^>]*>` $rendered }}
             {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
             {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label="[^"]+"[^>]*>` $rendered }}
+            {{- $label := replaceRE `(?is)^.*?\saria-label="([^"]+)".*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label='[^']+'[^>]*>` $rendered }}
+            {{- $label := replaceRE `(?is)^.*?\saria-label='([^']+)'.*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
         {{- end }}
         {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
         {{- $rendered = replaceRE `(?is)>\s*<` "> <" $rendered }}
@@ -603,13 +619,21 @@
         {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
     {{- end }}
-    {{- range findRE `(?is)<img\b[^>]*\stitle="[^"]+"[^>]*>` $renderedSource }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\stitle="[^"]+"[^>]*>` $renderedSource }}
         {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
     {{- end }}
-    {{- range findRE `(?is)<img\b[^>]*\stitle='[^']+'[^>]*>` $renderedSource }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\stitle='[^']+'[^>]*>` $renderedSource }}
         {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label="[^"]+"[^>]*>` $renderedSource }}
+        {{- $label := replaceRE `(?is)^.*?\saria-label="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label='[^']+'[^>]*>` $renderedSource }}
+        {{- $label := replaceRE `(?is)^.*?\saria-label='([^']+)'.*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
     {{- end }}
     {{- $renderedSource = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)>\s*<` "> <" $renderedSource }}
