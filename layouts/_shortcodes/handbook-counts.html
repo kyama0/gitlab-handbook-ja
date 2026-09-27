@@ -75,6 +75,10 @@
         {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
     {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*youtube\b[^{}]*\stitle="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
+    {{- end }}
     {{- range findRE `(?s)\{\{[<%]\s*(panel|tab)\b[^{}]*\sheader="[^"]+"[^{}]*[>%]\}\}` $source }}
         {{- $header := replaceRE `(?s)^.*?\sheader="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($header | markdownify | plainify)) }}
