@@ -549,7 +549,7 @@
         {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
-    {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z][^{}]*?[>%]\}\}` " " $rawSource }}
+    {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $rawSource }}
     {{- $renderedSource := $rawSource | markdownify }}
     {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
     {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
