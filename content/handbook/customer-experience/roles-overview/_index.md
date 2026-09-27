@@ -22,14 +22,14 @@ GitLab には、プリセールスからポストセールスのジャーニー�
 | **[CSA](/handbook/customer-experience/csm/segment/csa/)** | 最高評価のテクニカルエキスパート; アーキテクチャガイダンスと Accelerator デリバリー | 戦略的計画、成熟度評価、Accelerator の設計とデリバリー | Advanced および Signature ティアの指定 | 戦略的・アーキテクチャ的アドバイザリー — 実装は PS が担当 |
 | **[PSE](/handbook/customer-experience/professional-services-engineering/)** | プロジェクトベースの実装と移行 | SOW のもとでのインストール、移行、カスタム開発、トレーニング | プロジェクトスコープ、PS Engagement Management が販売 | 明示的にハンズオン — 「キーボードに手を置く」ことができる |
 | **[Renewals Manager (RM)](/handbook/customer-experience/renewals-managers/)** | リニューアル時点の所有; 顧客維持 | リニューアルパイプライン、契約、プレイブック、リスクと拡大 | CS 内のグローバルリニューアル組織 | コマーシャルおよびディール焦点 |
-| **[Solutions Architect (SA)](/handbook/solutions-architects/)** | プリセールスの技術的勝利 | ディスカバリー、デモ、POC、プリセールスサクセスプラン | AE に整列、機会ごとに関与 | アドバイザリーおよびデモンストレーション |
+| **[Solutions Architect (SA)](/handbook/solutions-architects/)** | プリセールスの技術的勝利 | ディスカバリー、デモ、POC、プリセールスサクセスプラン | AE と連携し、商談ごとに関与 | アドバイザリーおよびデモンストレーション |
 | **[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)** | Signature ティアのお客様向けの、プロアクティブなプラットフォームの安定性、アーキテクチャアドバイザリー、複雑なサポートのオーナーシップ | アーキテクチャの強化、パフォーマンス最適化、プラットフォームエンジニアリングアドバイザリー、複雑なサポートチケットの所有 | Signature ティアの指定 | 全体的なアーキテクチャやプラットフォーム改善についてアドバイスする指名サポートコンタクト — 手は出さないが、非常に具体的かつ指示的な推奨事項を提示できる; アーキテクチャやシステム制限を学ぶにつれて、ますますプロアクティブになる |
 
 ## 主要な区別
 
 ### 1. 「キーボードに手を置く」境界線
 
-Customer Success ロール（CSM、CSE、CSA）は **アドバイザリー** です — 彼らはガイドし、イネーブルし、推奨しますが、お客様の環境を直接変更したり本番コードを書いたりはしません。お客様が GitLab に積極的に実装、構成、またはオーダーメイドのソリューションを開発してほしい場合、その作業は **Professional Services (PSE)** によって処理されます。
+Customer Success ロール（CSM、CSE、CSA）は **アドバイザリー** です — これらのロールはガイドし、イネーブルし、推奨しますが、お客様の環境を直接変更したり本番コードを書いたりはしません。お客様が GitLab に積極的に実装、構成、またはオーダーメイドのソリューションを開発してほしい場合、その作業は **Professional Services (PSE)** によって処理されます。
 
 ### 2. エンゲージメントモデルのスペクトラム
 

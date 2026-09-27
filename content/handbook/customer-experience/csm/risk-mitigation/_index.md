@@ -40,7 +40,7 @@ SFDC の[コマンドプラン](/handbook/sales/command-of-the-message/command-p
   - Ultimate の場合: `「ゲストユーザー」機能についてご存知ですか？`
 - より大きな組織による買収
   - `新組織との統合計画とスケジュールはどのようになっていますか？`
-  - `彼らのツールチェーンを採用することが求められますか？`
+  - `新組織のツールチェーンを採用することが求められますか？`
   - `従う必要がある既存のマスターサービス契約（MSA）はありますか？`
   - `新組織はどのようなツールを使用していますか？`
 - 人員削減（例: レイオフ）
@@ -141,7 +141,7 @@ SFDC の[コマンドプラン](/handbook/sales/command-of-the-message/command-p
 #### Secure を使用していない Ultimate 顧客
 
 - GitLab Secure の価値を理解していない場合は、[Secure ワークショップ](/handbook/customer-experience/workshops/secure/)を提案します。
-- 開発チームリードに [DevSecOps 採用パス](https://docs.google.com/presentation/d/16dQw4KI-swX85G8utpdVUkT_BXGYsvtlu3Qb_-VP6Bg/edit#slide=id.g14710b3b06d_0_232) **[内部リンク]** を提示して、GitLab Secure 機能の採用に向けた指針を提供します。適切なペルソナへの提示が重要です。彼らは採用パスの推奨事項を実施/強制する影響力を持っているからです。
+- 開発チームリードに [DevSecOps 採用パス](https://docs.google.com/presentation/d/16dQw4KI-swX85G8utpdVUkT_BXGYsvtlu3Qb_-VP6Bg/edit#slide=id.g14710b3b06d_0_232) **[内部リンク]** を提示して、GitLab Secure 機能の採用に向けた指針を提供します。適切なペルソナへの提示が重要です。開発チームリードは採用パスの推奨事項を実施/強制する影響力を持っているからです。
 - 小規模で Secure 機能をテストする意欲のあるチームを特定するよう努めます。
 - セキュリティチームと連携して、どのポリシーが遵守されていないかを確認します。
 - エコノミックバイヤーと連携し、（DevSecOps 成熟度スコアの提示を通じて）採用不足についての懸念を伝えます。

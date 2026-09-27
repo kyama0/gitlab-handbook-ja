@@ -31,7 +31,7 @@ RAID によるリスクのレポート
 
 内部プロジェクトレトロスペクティブのプロセスは、プロジェクト開始時に始まります。これはチームの祝賀、学んだ教訓、改善できる点、質問、コメント、作成したアセットを集めたものです。これは内部のみの Issue で、GitLab チームにはプロジェクトを通して学びと祝賀を集めることが推奨されます。
 
-* 内部レトロ Issue は内部 Customer EPIC 内に存在し、Epic 作成時に作成されます。最新のテンプレートは Issue レベルで見つけられ、[こちら](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/blob/master/.gitlab/issue_templates/project_retrospective.md?ref_type=heads) にもあります
+* 内部レトロ Issue は内部 Customer EPIC 内に存在し、エピック作成時に作成されます。最新のテンプレートは Issue レベルで見つけられ、[こちら](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/blob/master/.gitlab/issue_templates/project_retrospective.md?ref_type=heads) にもあります
 * PM はこの Issue が内部プロジェクト Slack チャンネルにリンクされていることを確認します
 
 カスタマーウィン、学んだ教訓、Delivery Kit 更新のレポート

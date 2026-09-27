@@ -157,8 +157,8 @@ _Billable と NonBillable の情報_ については、[Team Metrics](/handbook/
          - プロジェクトが T&M から FF（またはその逆）に変わる場合。
          - プロジェクトに CO が必要だと感じる場合（特に FF プロジェクトの場合）。
       - CO が不要なケース:
-         - SOW の期間と予算内でプロジェクトスコープ定義に変更がある場合、Change Order は不要です。PM はスコープ定義の変更について顧客から書面による確認を得る必要があります。この書面による確認はスクリーンショット撮影の上、関連するプロジェクト Epic に添付する必要があります。
-         - SOW 期限から 2 か月未満の延長については、PM は[書面による確認](https://docs.google.com/document/d/1t2mkVr0eRs67rFkEOJVRLzC6u55aLWwGB5VCZm6G-iU/edit)（メールまたは Slack から）を取得し、その確認を顧客 Epic 内の _「Scope Engagement and Write SoW」_ Issue に添付します。
+         - SOW の期間と予算内でプロジェクトスコープ定義に変更がある場合、Change Order は不要です。PM はスコープ定義の変更について顧客から書面による確認を得る必要があります。この書面による確認はスクリーンショット撮影の上、関連するプロジェクトエピックに添付する必要があります。
+         - SOW 期限から 2 か月未満の延長については、PM は[書面による確認](https://docs.google.com/document/d/1t2mkVr0eRs67rFkEOJVRLzC6u55aLWwGB5VCZm6G-iU/edit)（メールまたは Slack から）を取得し、その確認を顧客エピック内の _「Scope Engagement and Write SoW」_ Issue に添付します。
 
 2. **Work at Risk (WaR)**
    - [WaR Issue](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/issues/new?issue%5Bmilestone_id%5D=&issuable_template=work-at-risk&issue%5Btitle%5D=Work%20at%20Risk) は、すべての書類が確定する前にプロジェクトのスタッフィングや開始に着手するため、PS リーダーシップの承認を得る手段として機能します。この承認は、Opportunity が完全にクローズする前にプロジェクトの開始日にコミットする必要が生じた場合に必要です。これはコンサルティングプロジェクトとトレーニングプロジェクトの両方で必須です。WaR を開始する責任は、EM/AE チームとともにアサインされた Project Manager または Program Manager にあります。これにより、Delivery チームは速やかにプロジェクトのスタッフィングを開始できます。Work at Risk の承認を求める際は、上記の WaR テンプレートに記載された手順に従ってください。

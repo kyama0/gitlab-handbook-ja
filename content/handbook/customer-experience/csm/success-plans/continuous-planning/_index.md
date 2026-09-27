@@ -47,7 +47,7 @@ __継続的プランニング__ は、GitLab グループやプロジェクト�
 
 ## 現在取り組んでいること
 
-詳細については[イシューボード](https://gitlab.com/groups/gitlab-sales-continuous-planning/-/boards)で現在進行中のすべての内容を確認できます。
+詳細については[Issue ボード](https://gitlab.com/groups/gitlab-sales-continuous-planning/-/boards)で現在進行中のすべての内容を確認できます。
 
 - 継続的プランニングに関連する更新（[SP Viewer](https://success-plan-viewer-c27524.gitlab.io/group) や [Blueprint](https://gitlab.com/gitlab-com/account-management/emea/continuous-planning-and-success-plan-blueprint) を含む）を文書化するための[リリースノートの自動化](https://gitlab.com/gitlab-sales-continuous-planning/gitlab-profile/-/issues/21)を検討中です。
 

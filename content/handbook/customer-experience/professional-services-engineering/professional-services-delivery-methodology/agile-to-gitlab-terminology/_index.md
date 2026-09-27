@@ -40,7 +40,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 <td>エピック</td>
 <td>
 
-[Epics](https://docs.gitlab.com/ee/user/group/epics/)
+[エピック](https://docs.gitlab.com/ee/user/group/epics/)
 </td>
 </tr>
 <tr>
