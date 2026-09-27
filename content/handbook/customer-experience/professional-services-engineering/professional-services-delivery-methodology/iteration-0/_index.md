@@ -1,6 +1,6 @@
 ---
 title: "イテレーション 0"
-description: "イテレーション 0 は私たちの内部 EM>PS Transition ミーティングから始まり、顧客との Planning and Design Sessions まで続きます。この重要なフェーズはプロジェクトの基盤を確立し、GitLab と顧客チーム間の整合性を確保します。"
+description: "イテレーション 0 は私たちの内部の EM から PS への移管ミーティングから始まり、顧客との計画・設計セッションまで続きます。この重要なフェーズはプロジェクトの基盤を確立し、GitLab と顧客チーム間の整合性を確保します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -15,16 +15,16 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 イテレーション 0 は、互いに積み重なる 4 つの主要な活動で構成されます。
 
-1. [EM>PS Transition](#emps-transition) - 内部の知識移管
-2. [Stakeholder Planning Meeting](#stakeholder-planning-meeting) - 顧客との初期整合
-3. [Customer Kickoff](#customer-kickoff) - チーム全体のエンゲージメント
-4. [Support Preparation](#prepare-support-for-issues) - 先回りした Issue 管理
+1. [EM から PS への移管](#emps-transition) - 内部の知識移管
+2. [ステークホルダープランニングミーティング](#stakeholder-planning-meeting) - 顧客との初期整合
+3. [顧客キックオフ](#customer-kickoff) - チーム全体のエンゲージメント
+4. [サポート準備](#prepare-support-for-issues) - 先回りした Issue 管理
 
 各活動には、プロジェクトの円滑なスタートを確保するための具体的なインプット、プロセス、アウトプットがあります。
 
 ---
 
-## EM>PS Transition
+## EM から PS への移管 {#emps-transition}
 
 **目的:** アカウントの背景を集め、SOW を検証し、顧客対応活動の準備を行う。
 
@@ -55,7 +55,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - ビジネスドライバーと文脈
 - SOW の検証と明確化
 - 技術要件の概要
-- Stakeholder Planning と Kickoff のスケジュール計画
+- ステークホルダープランニングとキックオフ のスケジュール計画
 - リスクと依存関係
 
 ### 主要なアウトプット
@@ -64,7 +64,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - [ ] 内部チームが最新ステータスをどこで確認できるかを理解している
 - [ ] [Collaboration Project](/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/cp/) のセットアップを開始し、Slack チャンネルにピン留め、内部レトロスペクティブ Issue（Customer Epic に添付）も同様
-- [ ] 顧客との Stakeholder Planning ミーティングがスケジュールされている
+- [ ] 顧客とのステークホルダープランニングミーティングがスケジュールされている
 - [ ] 顧客との議論のための技術的前提条件が特定されている
 - [ ] 初期リスクがドキュメント化されている
 
@@ -72,14 +72,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ---
 
-## Stakeholder Planning Meeting
+## ステークホルダープランニングミーティング {#stakeholder-planning-meeting}
 
 **目的:** プロジェクトのスコープ、リソース、管理アプローチ、依存関係を整合させ、チーム全体のキックオフ前に期待のずれを明らかにする。
 
 ### ミーティングのセットアップ
 
 1. 顧客 PM および GitLab と顧客チーム双方の主要ステークホルダーとの専用ミーティングをスケジュールします。
-2. [Stakeholder Planning Template](https://docs.google.com/presentation/d/1vVJQrJeGG-yLAeso_iKkb80H5kE7wStyBAj1sj45sY4/edit#slide=id.g923452f41b_1_5) を使って議論をガイドします
+2. [ステークホルダープランニングテンプレート](https://docs.google.com/presentation/d/1vVJQrJeGG-yLAeso_iKkb80H5kE7wStyBAj1sj45sY4/edit#slide=id.g923452f41b_1_5) を使って議論をガイドします
 3. プロジェクトパラメータの相互理解に焦点を当てます
 
 ### 主な議論トピック
@@ -110,14 +110,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 7. **次のステップ**
    - オーナーと期日を伴うアクションアイテムをドキュメント化
-   - Customer Kickoff と Discovery セッションの計画
+   - 顧客キックオフと Discovery セッションの計画
 
 ### 主要なアウトプット
 
 - [ ] 検証されたステークホルダーリストと役割
 - [ ] タイムラインとベロシティに関する期待の整合
 - [ ] ドキュメント化された前提条件と依存関係
-- [ ] Customer Kickoff のアジェンダ準備
+- [ ] 顧客キックオフのアジェンダ準備
 - [ ] 明確なオーナーシップを伴うアクションアイテム
 - [ ] Customer Slack チャンネルを作成し、Customer Project チームメンバーを招待。AR は [テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Individual_Bulk_Access_Request) として使用できます
 
@@ -125,13 +125,13 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ---
 
-## Customer Kickoff
+## 顧客キックオフ {#customer-kickoff}
 
 **目的:** すべての関連プロジェクトステークホルダーを集め、プロジェクトの目的、アプローチ、次のステップを整合させ、迅速な実行を可能にする。
 
 ### 準備
 
-1. EM>PS Transition と Stakeholder Planning から得たインサイトを統合
+1. EM から PS への移管とステークホルダープランニングから得たインサイトを統合
 2. [Kickoff デッキテンプレート](https://docs.google.com/presentation/d/1Sva2u7NGxUTmDxQNBpqmFm_ep9HHlU86WyhON-To5lU/edit#slide=id.g3427bc5c553_0_243) を使ってプレゼンテーションを準備
 3. ステアリングコミッティのあるプロジェクトには、[SteerCO テンプレート](https://docs.google.com/presentation/d/1TDKOJeuzR1uy18umu6ovy30l_A986pOEatFn_7eiNbQ/edit#slide=id.g2e563e08cf5_0_1) も準備
 4. すべての主要ステークホルダーが招待されていることを確認

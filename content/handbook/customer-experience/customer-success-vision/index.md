@@ -25,17 +25,17 @@ GitLab アプリケーションの全機能を活用し、世界クラスの顧�
 
 [顧客ジャーニーとプロセスフレームワークの動画紹介](https://youtu.be/LIroDgZOWLc)
 
-![GitLab Customer Journey](/images/customer-experience/customer-success-vision/customer-journey.png)
+![GitLab カスタマージャーニー](/images/customer-experience/customer-success-vision/customer-journey.png)
 [顧客ジャーニーの PDF](/pdfs/customer-experience/customer-success-vision/gitlab-customer-journey.pdf)
 
 ## GitLab 採用ジャーニーの高レベルビジュアル {#high-level-visual-of-gitlab-adoption-journey}
 
-![GitLab Adoption Journey](/images/customer-experience/customer-success-vision/gitlab-adoption-journey.jpeg)
+![GitLab 採用ジャーニー](/images/customer-experience/customer-success-vision/gitlab-adoption-journey.jpeg)
 
 ## 機能ロードマップ
 
 以下は、カスタマーサクセスチーム、プロセス、システムが成熟するにつれて開発する機能の高レベルビューを示します。[閲覧用の PDF バージョン。](/pdfs/customer-experience/customer-success-vision/gitlab_customer_success_capabilities_roadmap.pdf)
-![GitLab Capabilities Roadmap](/images/customer-experience/customer-success-vision/capabilities-roadmap.jpeg)
+![GitLab 機能ロードマップ](/images/customer-experience/customer-success-vision/capabilities-roadmap.jpeg)
 
 ## 戦略と優先事項ページ
 
@@ -87,7 +87,7 @@ GitLab アプリケーションの全機能を活用し、世界クラスの顧�
 
 P.R.O.V.E. コンポーネントと全体的な哲学の両方の意図は、顧客に「価値を証明する」必要があるということです。
 
-![Customer Health Vision](/images/customer-experience/customer-success-vision/customer-health-score-vision.jpeg)
+![顧客ヘルスビジョン](/images/customer-experience/customer-success-vision/customer-health-score-vision.jpeg)
 
 顧客ヘルスと Early Warning System の方法論の詳細については、[顧客ヘルススコアリング](/handbook/customer-experience/customer-health-scoring/)を参照してください。これにはアカウントのヘルスをスコアリングする方法論と、チームをプロアクティブな更新アプローチに向けて有効化する方法が含まれます。
 

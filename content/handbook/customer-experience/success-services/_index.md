@@ -90,17 +90,13 @@ Regional Champion は、Success Tier のポジショニングに関するエキ�
 
 ##### 地域連絡先
 
-- **EMEA**: 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/customer-experience/success-services/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+- **EMEA**: {{< member-by-gitlab "kgoossens" >}}
 
-- **AMER**: 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/customer-experience/success-services/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+- **AMER**: {{< member-by-gitlab "Tiffanymcatee.gitlab" >}}
 
-- **APJ**: 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/customer-experience/success-services/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+- **APJ**: {{< member-by-gitlab "catherineballantyne" >}}
 
-- **エスカレーション**: 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/customer-experience/success-services/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+- **エスカレーション**: {{< member-by-gitlab "kgeorgeson" >}}
 
 
 ### Success Tier カスタマーオンボーディング
