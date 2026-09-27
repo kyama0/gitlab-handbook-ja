@@ -1,5 +1,5 @@
 ---
-title: リニューアルマネージャー
+title: Renewals Managers
 upstream_path: /handbook/customer-experience/renewals-managers/home/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -14,12 +14,12 @@ Global Renewals Organization（グローバルリニューアル組織）
 
 ---
 
-リニューアルマネージャーのハンドブックページを参照してください:
+Renewals Manager のハンドブックページを参照してください:
 
-- [How We Do It（私たちのやり方）](/handbook/customer-experience/renewals-managers/how) - リニューアルマネージャーがミッションをどのように実行するかについての情報。
-- [What we do（私たちが行うこと）](/handbook/customer-experience/renewals-managers/what) - リニューアルマネージャーが行うタスクや活動についての情報。
+- [How We Do It（私たちのやり方）](/handbook/customer-experience/renewals-managers/how) - Renewals Manager がミッションをどのように実行するかについての情報。
+- [What we do（私たちが行うこと）](/handbook/customer-experience/renewals-managers/what) - Renewals Manager が行うタスクや活動についての情報。
 
-リニューアルマネージャー（その他のリソース）
+Renewals Managers（その他のリソース）
 
 - 内部ハンドブック[ページ](https://internal.gitlab.com/handbook/sales/go-to-market/renewals/)を参照してください
 - グローバルリニューアル組織の Issue [ボード](https://gitlab.com/gitlab-com/customer-success/global-renewals-organization/-/boards/5465302?label_name[]=Global%20Renewals)に貢献してください
@@ -28,7 +28,7 @@ Global Renewals Organization（グローバルリニューアル組織）
 
 グローバルリニューアル組織は、[GitLab Customer Success](/handbook/customer-experience/) ファンクションの一部です。私たちは Customer Success、フィールドセールス、パートナーエコシステム、サポート、マーケティング組織と連携し、サブスクリプションのライフサイクル全体を通じて GitLab のお客様に最大限の価値を提供します。
 
-グローバルリニューアル組織は *リニューアルマネージャー* で構成されています。リニューアルマネージャーは、お客様の更新可能なビジネス全体を担当し、それらのリニューアル機会を Salesforce で開始時点（新規販売の翌日）からリニューアル成立まで管理します。リニューアルマネージャーは特定のテリトリーに割り当てられ、アカウントチーム（通常は Customer Success Manager / Engineer、Solutions Architect、Account Executive で構成される）と連携してそのテリトリー内のお客様をサポートします。
+グローバルリニューアル組織は *Renewals Manager* で構成されています。Renewals Manager は、お客様の更新可能なビジネス全体を担当し、それらのリニューアル機会を Salesforce で開始時点（新規販売の翌日）からリニューアル成立まで管理します。Renewals Manager は特定のテリトリーに割り当てられ、アカウントチーム（通常は Customer Success Manager / Engineer、Solutions Architect、Account Executive で構成される）と連携してそのテリトリー内のお客様をサポートします。
 
 グローバルリニューアル組織は、地理的に 4 つのカバレッジエリアに分かれています:
 
@@ -39,7 +39,7 @@ Global Renewals Organization（グローバルリニューアル組織）
 
 グローバルリニューアル組織のメンバーに連絡を取るその他の方法は次のとおりです:
 
-- グローバルリニューアルマネージャー Slack チャンネル --> [#global-renewals-managers]（パブリック、ベストプラクティス・質問・更新情報のために使用される世界規模のチームチャンネル）
+- Renewals Manager 向けグローバル Slack チャンネル --> [#global-renewals-managers]（パブリック、ベストプラクティス・質問・更新情報のために使用される世界規模のチームチャンネル）
 - グローバルリニューアルリーダーシップ Slack チャンネル: [#global-renewals-leadership]（プライベート、更新情報・質問・ベストプラクティスのために使用されるマネージャー全体のチャンネル）
 - グローバルリニューアル組織フィードバックチャンネル: [#renewals-org-ideas-and-feedback]（パブリック、世界規模のフィードバックチャンネル）
 
@@ -82,4 +82,4 @@ SaaS 業界のピアの中で、決定版となるサブスクリプションリ
 
 ### RM 新メンバーオンボーディング
 
-[リニューアルマネージャー (RM) としてのオンボーディング](/handbook/customer-experience/renewals-managers/rm-onboarding) は、バーチャル同期ミーティング、GitLab University の自己ペースのロールベース学習パス、および Sales Quick Start (SQS) と呼ばれるハンズオンのバーチャルワークショップを含むブレンディッドラーニング体験になります。あなたのロールベース学習パスは、この[ロール固有のオンボーディングガイド](https://docs.google.com/document/d/1zAKuWnUUyy4oB741hX2jBL5OZM2Dk5pqA8EwEe0TYLI/edit?usp=sharing)に記載されています。このドキュメントのコピーを作成し、完了したアイテムをチェックしてください。
+[Renewals Manager (RM) としてのオンボーディング](/handbook/customer-experience/renewals-managers/rm-onboarding) は、バーチャル同期ミーティング、GitLab University の自己ペースのロールベース学習パス、および Sales Quick Start (SQS) と呼ばれるハンズオンのバーチャルワークショップを含むブレンディッドラーニング体験になります。あなたのロールベース学習パスは、この[ロール固有のオンボーディングガイド](https://docs.google.com/document/d/1zAKuWnUUyy4oB741hX2jBL5OZM2Dk5pqA8EwEe0TYLI/edit?usp=sharing)に記載されています。このドキュメントのコピーを作成し、完了したアイテムをチェックしてください。

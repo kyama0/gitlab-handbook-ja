@@ -54,7 +54,7 @@ SA を使用したすべてのコマーシャルセールスのセールスエ�
 ### SA から SA へ（新規アカウント）
 
 - Salesforce のアカウントチームで SA 名を更新する
-- アカウントのメモ、[テックスタックディスカバリー](https://docs.google.com/spreadsheets/d/1sOeluQhMO4W0wWIC6rbSE_E1NzTj7eTaR-FDKLYlLb4/edit#gid=912439232)、[テクニカルブリーフ](https://gitlab.com/gitlab-com/customer-success/tko/technical-followup-briefs/-/tree/master)、または進行中のコールメモが Salesforce にリンクされ、新しい SA と共有されていることを確認する
+- アカウントのメモ、[Tech Stack Discovery](https://docs.google.com/spreadsheets/d/1sOeluQhMO4W0wWIC6rbSE_E1NzTj7eTaR-FDKLYlLb4/edit#gid=912439232)、[テクニカルブリーフ](https://gitlab.com/gitlab-com/customer-success/tko/technical-followup-briefs/-/tree/master)、または進行中のコールメモが Salesforce にリンクされ、新しい SA と共有されていることを確認する
 - クライアントコールで新しい SA をライブで紹介する
 - [POV](/handbook/solutions-architects/playbooks/pov) が保留中または進行中の場合、必要に応じて Salesforce の POV レコードを更新する
 - [コマーシャル SA トリアージボード](https://gitlab.com/gitlab-com/customer-success/sa-triage-boards/commercial-triage/-/boards/1006966)の Issue を通じて現在のアクションアイテムが特定されていることを確認する
