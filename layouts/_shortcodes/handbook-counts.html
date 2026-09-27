@@ -606,20 +606,20 @@
         {{- $rendered = replaceRE `(?is)>\s*<` "> <" $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
-    {{- /* Shortcodes inside fenced examples are rendered as visible code; retain them. */ -}}
-    {{- $strippedSource := "" }}
+    {{- /* Count shortcode examples in fenced code before removing executable calls. */ -}}
     {{- $insideFence := false }}
     {{- range $i, $segment := split $rawSource "```" }}
         {{- if gt $i 0 }}
-            {{- $strippedSource = printf "%s```" $strippedSource }}
             {{- $insideFence = not $insideFence }}
         {{- end }}
-        {{- if not $insideFence }}
-            {{- $segment = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $segment }}
+        {{- if $insideFence }}
+            {{- range findRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` $segment }}
+                {{- $scratch.Add "wordcount" (countwords .) }}
+            {{- end }}
         {{- end }}
-        {{- $strippedSource = printf "%s%s" $strippedSource $segment }}
     {{- end }}
-    {{- $renderedSource := $strippedSource | markdownify }}
+    {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $rawSource }}
+    {{- $renderedSource := $rawSource | markdownify }}
     {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
     {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}
