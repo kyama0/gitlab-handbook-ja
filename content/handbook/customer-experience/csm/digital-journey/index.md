@@ -33,5 +33,5 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - [オンボーディングクイックガイドプロジェクトテンプレート](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools/onboarding-quick-guide)
 - [オンボーディングイネーブルメント](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/320)
-- [Epic](https://gitlab.com/groups/gitlab-com/customer-success/-/epics/65)
+- [エピック](https://gitlab.com/groups/gitlab-com/customer-success/-/epics/65)
 - [オンボーディング後のアンケートのメールコピー](https://docs.google.com/document/d/1B3RV2RuUkb3RzuQeNUTDz1BnpZLRwInnb_igm4ra7aw/edit?usp=sharing)

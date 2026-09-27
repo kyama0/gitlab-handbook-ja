@@ -1,6 +1,6 @@
 ---
 title: "プロフェッショナルサービス エンゲージメントマネジメント"
-description: "GitLab のプロフェッショナルサービス エンゲージメントマネージャーのワークフローと責務について説明します。"
+description: "GitLab の Professional Services Engagement Manager のワークフローと責務について説明します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/engagement-mgmt/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -9,9 +9,9 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-## エンゲージメントマネージャーの役割
+## Engagement Manager の役割
 
-[プロフェッショナルサービス（PS）エンゲージメントマネージャー](/job-description-library/sales/job-professional-services-engagement-manager/) は、ソリューションアーキテクト（SA）と営業チームがカスタムの作業範囲記述書（SoW）を策定し、その承認を得るのを支援する責任を負います。プロセスには通常、以下の活動が含まれます。
+[Professional Services (PS) Engagement Manager](/job-description-library/sales/job-professional-services-engagement-manager/) は、Solution Architect（SA）と営業チームがカスタムの作業範囲記述書（SoW）を策定し、その承認を得るのを支援する責任を負います。プロセスには通常、以下の活動が含まれます。
 
 - 目的および/または具体的な要件を理解するための、SA または顧客との初回ミーティング
 - サービスカリキュレーターに基づく初期見積もりの作成
@@ -27,7 +27,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## チームを紹介します
 
-エンゲージメントマネージャーのチームについては [チームページ](/handbook/company/team/?department=practice-management) をご覧ください。
+Engagement Manager のチームについては [チームページ](/handbook/company/team/?department=practice-management) をご覧ください。
 
 ## お問い合わせ・コラボレーション方法
 
@@ -41,11 +41,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - [プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling/)
 - [プロフェッショナルサービス提供フレームワーク](/handbook/customer-experience/professional-services-engineering/framework/)
 - [サービスカリキュレーター](https://services-calculator.gitlab.io)
-- [認定 GitLab エンゲージメントマネージャー ラーニングジャーニー](gitlab-certified-engagement-manager)
+- [認定 GitLab Engagement Manager ラーニングジャーニー](gitlab-certified-engagement-manager)
 - [メイン顧客向けスライドテンプレート](https://gitlab.highspot.com/items/629a6d7cf089bbaa9e0d4fa7?lfrm=srp.0)
 - [サービスデータシート](https://gitlab.highspot.com/search?q=data+sheet)
 
-## エンゲージメントマネージャー - プロセス
+## Engagement Manager - プロセス
 
 - [プロフェッショナルサービスのオポチュニティの追跡](tracking-opps/)
 - [エンゲージメントスコーピング情報](scoping-information/)

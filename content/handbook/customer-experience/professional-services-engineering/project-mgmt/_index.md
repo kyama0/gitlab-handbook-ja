@@ -184,13 +184,13 @@ _Billable と NonBillable の情報_ については、[Team Metrics](/handbook/
 
 3. **Revenue サインオフ**
 
-   **T&M プロジェクトの Revenue Release**
+   **T&M プロジェクトの収益認識**
 
-   - 収益は毎月末に認識・解放されます。
+   - 収益は毎月末に認識されます。
    - プロジェクト工数は Kantata のタイムシート機能を通じて毎週ログする必要があります。Professional Services Engineer (PSE) または Project Manager (PM) はプロジェクトに対して工数を記録し、Project Lead または PM がこれらのエントリを毎週承認します。
-   - 毎月末に、Project Coordinator (PC) はすべての承認済みタイムシートをまとめ、レビューと収益解放のために集計レポートを Finance に提出します。
+   - 毎月末に、Project Coordinator (PC) はすべての承認済みタイムシートをまとめ、レビューと収益認識のために集計レポートを Finance に提出します。
 
-   **FP プロジェクトの Revenue Release**
+   **FP プロジェクトの収益認識**
 
    - 収益は、顧客マイルストーン承認の受領時、または Passive Acceptance（SOW の条件に従う）の完了時に認識されます。
    - PM は [Project Milestone/Closure ドキュメント](https://docs.google.com/document/d/1RiS5TY5484nQuDTW8YMiB-CibVfoni7NJ8IUG2osUD0/edit?tab=t.0) のコピーを作成し、クローズのために Operations Coordinator を Cc に入れて顧客にドキュメントを添付します。顧客はドキュメント自体に署名するか、「approved」と返信します。

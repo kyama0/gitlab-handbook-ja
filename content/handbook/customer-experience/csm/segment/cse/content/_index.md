@@ -72,9 +72,9 @@ CSE コンテンツチームの主な目標は次のとおりです:
 
 | チームメンバー | 責任 |
 |-------------|-------------|
-| [Nicole Esplin](https://gitlab.com/nesplin) <br/> コンテンツストラテジスト | クロスファンクショナルコラボレーション、コンテンツ戦略、マーケティング/プロモーション、コンテンツ最適化、コンテンツデリバリー |
-| [Tearyne Almendariz](https://gitlab.com/talmendariz) <br/> コンテンツアーキテクト | 四半期計画/バックログ管理、コンテンツ作成（デモ以外）、コンテンツオペレーション |
-| [James Wormwell](https://gitlab.com/jwormwell) <br/> デモアーキテクト | コンテンツ作成（デモ）、デモ/ラボコンテンツ作成、デモオペレーション、デモアセットのメンテナンス |
+| [Nicole Esplin](https://gitlab.com/nesplin) <br/> Content Strategist | クロスファンクショナルコラボレーション、コンテンツ戦略、マーケティング/プロモーション、コンテンツ最適化、コンテンツデリバリー |
+| [Tearyne Almendariz](https://gitlab.com/talmendariz) <br/> Content Architect | 四半期計画/バックログ管理、コンテンツ作成（デモ以外）、コンテンツオペレーション |
+| [James Wormwell](https://gitlab.com/jwormwell) <br/> Demo Architect | コンテンツ作成（デモ）、デモ/ラボコンテンツ作成、デモオペレーション、デモアセットのメンテナンス |
 
 <details>
 <summary>
@@ -87,19 +87,19 @@ CSE コンテンツチームの主な目標は次のとおりです:
 
 ### コンテンツチームの責任マトリクス
 
-| 責任 | コンテンツストラテジスト | コンテンツアーキテクト | デモアーキテクト | CSEs | CSSO | CSE リーダーシップ |
+| 責任 | Content Strategist | Content Architect | Demo Architect | CSEs | CSSO | CSE リーダーシップ |
 | ------------------------------------------------------------ | --------------------------- | ---------------------------------------- | ---------------------------------------- | --------- | -------------- | -------------- |
-| **クロスファンクショナルコラボレーション**: 他のコンテンツステークホルダー（EDU、フィールドマーケティング、SA、DevRel）とのアライメントを維持する | DRI | Consulted | Consulted | Informed | Informed | Consulted |
-| **コンテンツ戦略**: 複数のコンテンツ配信方法を通じて規模で GitLab 採用を促進するための戦略と実行を監督する（CSE の四半期目標/イニシアチブに合わせて） | DRI | Consulted | Consulted | Consulted | Informed | Consulted |
-| **四半期計画/バックログ管理**: 戦略/四半期目標に合わせてコンテンツ作成がアラインされるよう、見えるバックログを整理・維持する。 | Consulted | DRI | Consulted | Informed | Informed | Consulted |
-| **マーケティング/プロモーション**: 様々なチャネルを通じて可視性、エンゲージメント、インパクトを最大化するよう設計された内外の戦略を作成・実行する | DRI | Consulted | Consulted | Informed | Informed | Informed |
-| **コンテンツ作成**: コンテンツ戦略に対して開発・実行する。SME と連携してデリバリーのワークバックプランを確保する | Consulted | DRI（ウェビナー、ブログ） | DRI（ラボ） | Consulted | Informed | Informed |
-| **デモ/ラボコンテンツ作成** | Consulted | Consulted（デッキ、トークトラック、デリバリー） | DRI（構造、アーキテクチャ、メッセージング） | Consulted | Informed | Informed |
-| **コンテンツ最適化**: データを使用して様々なチャネルにわたってコンテンツのパフォーマンス、リーチ、エンゲージメントを改善・強化する。メールテキストの作成/イテレーションとキャンペーンの有効性のモニタリングを含む | DRI | Consulted | Consulted | Informed | Consulted | Consulted |
-| **コンテンツデリバリー**: スケジュールを監督し、適切な SME が最も効果的な方法でデリバリーしていることを確保する | DRI | Consulted | Consulted | Informed | Informed | Consulted |
-| **コンテンツオペレーション**: GLU カレンダー（Thought Industries）の更新、Zoom 登録プロセス、すべてのコンテンツのアップロード。GS でのメールキャンペーン管理も含む。 | Informed | DRI | Informed | Informed | Consulted | Informed |
-| **デモオペレーション**: ハンズオンラボのデモコードを管理する。CSE ニーズのためにアーキテクチャチームと協力する（PTO カバレッジのために SA DA が対応） | Informed | Informed | DRI | Informed | Informed | Informed |
-| **GL リリース管理**: 各 GL リリース後にラーンラボを更新する。CSE 組織向けに月次 TLDR を作成し、すべてのコンテンツデリバリーに使用する。リリースにより変更されたコンテンツアセットを更新し、CSE が価値とトークトラックを理解していることを確認する | Consulted | Consulted | DRI | Informed | Informed | Informed |
+| **クロスファンクショナルコラボレーション**: 他のコンテンツステークホルダー（EDU、フィールドマーケティング、SA、DevRel）とのアライメントを維持する | DRI | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Informed（報告先） | Consulted（相談先） |
+| **コンテンツ戦略**: 複数のコンテンツ配信方法を通じて規模で GitLab 採用を促進するための戦略と実行を監督する（CSE の四半期目標/イニシアチブに合わせて） | DRI | Consulted（相談先） | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Consulted（相談先） |
+| **四半期計画/バックログ管理**: 戦略/四半期目標に合わせてコンテンツ作成がアラインされるよう、見えるバックログを整理・維持する。 | Consulted（相談先） | DRI | Consulted（相談先） | Informed（報告先） | Informed（報告先） | Consulted（相談先） |
+| **マーケティング/プロモーション**: 様々なチャネルを通じて可視性、エンゲージメント、インパクトを最大化するよう設計された内外の戦略を作成・実行する | DRI | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Informed（報告先） | Informed（報告先） |
+| **コンテンツ作成**: コンテンツ戦略に対して開発・実行する。SME と連携してデリバリーのワークバックプランを確保する | Consulted（相談先） | DRI（ウェビナー、ブログ） | DRI（ラボ） | Consulted（相談先） | Informed（報告先） | Informed（報告先） |
+| **デモ/ラボコンテンツ作成** | Consulted（相談先） | Consulted（相談先：デッキ、トークトラック、デリバリー） | DRI（構造、アーキテクチャ、メッセージング） | Consulted（相談先） | Informed（報告先） | Informed（報告先） |
+| **コンテンツ最適化**: データを使用して様々なチャネルにわたってコンテンツのパフォーマンス、リーチ、エンゲージメントを改善・強化する。メールテキストの作成/イテレーションとキャンペーンの有効性のモニタリングを含む | DRI | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Consulted（相談先） | Consulted（相談先） |
+| **コンテンツデリバリー**: スケジュールを監督し、適切な SME が最も効果的な方法でデリバリーしていることを確保する | DRI | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Informed（報告先） | Consulted（相談先） |
+| **コンテンツオペレーション**: GLU カレンダー（Thought Industries）の更新、Zoom 登録プロセス、すべてのコンテンツのアップロード。GS でのメールキャンペーン管理も含む。 | Informed（報告先） | DRI | Informed（報告先） | Informed（報告先） | Consulted（相談先） | Informed（報告先） |
+| **デモオペレーション**: ハンズオンラボのデモコードを管理する。CSE ニーズのためにアーキテクチャチームと協力する（PTO カバレッジのために SA DA が対応） | Informed（報告先） | Informed（報告先） | DRI | Informed（報告先） | Informed（報告先） | Informed（報告先） |
+| **GL リリース管理**: 各 GL リリース後にラーンラボを更新する。CSE 組織向けに月次 TLDR を作成し、すべてのコンテンツデリバリーに使用する。リリースにより変更されたコンテンツアセットを更新し、CSE が価値とトークトラックを理解していることを確認する | Consulted（相談先） | Consulted（相談先） | DRI | Informed（報告先） | Informed（報告先） | Informed（報告先） |
 
 </details>
 
@@ -175,7 +175,7 @@ CSE コンテンツチームは、GitLab の機能、ツール、ベストプラ
 
 私たちは常に顧客をイネーブルするための新しいコンテンツの提案を受け付けています。まず[こちらのコンテンツアイデアバックログ](https://gitlab.com/gitlab-com/customer-success/customer-success-engineering/scale-cse/-/boards/7694684)でトピックが既に存在するか確認してください。また、まだ提案されていないコンテンツがある場合は、[アイデアテンプレートを使用してこちらからアイデアを提出](https://gitlab.com/gitlab-com/customer-success/customer-success-engineering/scale-cse/-/issues/new?issuable_template=content-idea-template)してください。
 
-提出物は、チームのコンテンツアーキテクトが主導するバックログレビューの中で、四半期ごとにレビューおよび精査されます。アイデアが作成のために選ばれた場合、カスタマーサクセスエンジニアリンググループのエピックに昇格し、そのコンテンツタイプに関連する作成プロセスの Issue が割り当てられます。これは協力的なプロセスですが、カスタマーサクセスエンジニアリングチームのディレクターが各四半期に作成するコンテンツについての最終決定権を持っています。
+提出物は、チームの Content Architect が主導するバックログレビューの中で、四半期ごとにレビューおよび精査されます。アイデアが作成のために選ばれた場合、カスタマーサクセスエンジニアリンググループのエピックに昇格し、そのコンテンツタイプに関連する作成プロセスの Issue が割り当てられます。これは協力的なプロセスですが、カスタマーサクセスエンジニアリングチームのディレクターが各四半期に作成するコンテンツについての最終決定権を持っています。
 
 私たちの目標は、測定可能で顧客に価値を提供できる、より構造化されたプロセスを確立することですが、CSE は顧客のニーズや個人の成長のために必要なトピックを研究することが推奨されています。CSE は、公式の CSE コンテンツチームのプロセスとワークフロー以外のコンテンツプロジェクトについては、マネージャーと直接話し合うよう求められています。将来のウェビナーやラボに適応することを提案したい個人プロジェクトを独自に評価するために使用できる品質保証ガイドラインと基準の策定に取り組んでいます。
 

@@ -330,7 +330,7 @@ Customer Success Manager/Engineer チームのイネーブルメント施策に�
 
 新しいチームメンバーは、特に CSMA チームでの開始の最初の数週間に、参加すべき適切な Slack チャンネルのセットを見つけ、自分に関係のないノイズを除外するのに苦労することがよくあります。以下のリストは、新入社員に役立つチャンネルの初期セットを提供します。
 
-- **CSMA - General**
+- **CSMA - 一般**
 
   - #customer-experience
   - #cx-internal
@@ -338,7 +338,7 @@ Customer Success Manager/Engineer チームのイネーブルメント施策に�
   - #field-fyi
   - #tim-tams
 
-- **GitLab - General**
+- **GitLab - 一般**
 
   - #questions
   - #whats-happening-at-gitlab
@@ -348,7 +348,7 @@ Customer Success Manager/Engineer チームのイネーブルメント施策に�
   - #thanks
   - #dap-gtm-help
 
-- **CSMA - Regional**
+- **CSMA - 地域別**
 
   - #team-csm-dach
   - #emea-customer-success
