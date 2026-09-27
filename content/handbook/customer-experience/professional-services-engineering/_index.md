@@ -29,7 +29,7 @@ GitLab のプロフェッショナルサービスチームは [カスタマー�
 * [プロフェッショナルサービスオペレーション](professional-services-operations/)
 * [エスカレーションプロセス](/handbook/customer-experience/csm/escalations/)
 
-## チームの機能
+## チームの機能 {#team-functions}
 
 プロフェッショナルサービスチームは、専門的な機能と責任に基づいて組織されています。以下の機能リンクをクリックすると、特定のチームワークフローと責任の詳細を確認できます。
 
@@ -74,7 +74,7 @@ GitLab プロフェッショナルサービスのオファリングは、PS エ�
 
 [プロフェッショナルサービスチームページ](/handbook/company/team/?department=professional-services)をご覧ください。
 
-## チームメトリクス
+## チームメトリクス {#team-metrics}
 
 GitLab プロフェッショナルサービスは、ビジネス収益性とリソース稼働率の追跡を通じて成功を測定します。
 
