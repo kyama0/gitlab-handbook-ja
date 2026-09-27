@@ -57,7 +57,17 @@
             {{- $included := replaceRE `(?s)<!--.*?-->` " " .Content }}
             {{- $included = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $included }}
             {{- $included = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $included }}
-            {{- $scratch.Add "wordcount" (countwords ($included | markdownify | plainify)) }}
+            {{- $included = replaceRE `(?is)>\s*<` "> <" $included }}
+            {{- $renderedIncluded := $included | markdownify }}
+            {{- range findRE `(?is)<img\b[^>]*\balt="[^"]+"[^>]*>` $renderedIncluded }}
+                {{- $alt := replaceRE `(?is)^.*?\balt="([^"]+)".*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<img\b[^>]*\balt='[^']+'[^>]*>` $renderedIncluded }}
+                {{- $alt := replaceRE `(?is)^.*?\balt='([^']+)'.*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+            {{- end }}
+            {{- $scratch.Add "wordcount" (countwords ($renderedIncluded | plainify)) }}
         {{- end }}
     {{- end }}
     {{- /* Alert titles and panel headers are visible even though their shortcode attributes are removed below. */ -}}
@@ -548,6 +558,7 @@
         {{- $rendered := $page.RenderString . }}
         {{- $rendered = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $rendered }}
         {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
+        {{- $rendered = replaceRE `(?is)>\s*<` "> <" $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
     {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $rawSource }}
@@ -565,6 +576,7 @@
         {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
     {{- end }}
     {{- $renderedSource = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $renderedSource }}
+    {{- $renderedSource = replaceRE `(?is)>\s*<` "> <" $renderedSource }}
     {{- $scratch.Add "wordcount" (countwords ($renderedSource | plainify)) }}
 {{- end }}
 <tr>
