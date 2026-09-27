@@ -21,14 +21,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - [Strategic Account Executive（SAE）](/job-description-library/sales/enterprise-account-executive/#strategic-account-executive)
 - [Solutions Architect（SA）](/job-description-library/sales/solutions-architect/)
-- [カスタマーサクセスマネージャー（CSM）](/job-description-library/sales/customer-success-management/)（[該当するアカウント](/handbook/customer-experience/csm/services/#csm-alignment)向け）
+- [Customer Success Manager（CSM）](/job-description-library/sales/customer-success-management/)（[該当するアカウント](/handbook/customer-experience/csm/services/#csm-alignment)向け）
 
 ### コマーシャル／ミッドマーケット
 
 ミッドマーケットのアカウントチームは、以下のメンバーで構成されます。
 
 - [Account Executive（AE）](/job-description-library/sales/account-executive/)
-- [カスタマーサクセスマネージャー（CSM）](/job-description-library/sales/customer-success-management/)（[該当するアカウント](/handbook/customer-experience/csm/services/#csm-alignment)向け）
+- [Customer Success Manager（CSM）](/job-description-library/sales/customer-success-management/)（[該当するアカウント](/handbook/customer-experience/csm/services/#csm-alignment)向け）
 
 ミッドマーケットでは、Solutions Architect はプールされており、特定のアカウントチームには割り当てられていません。
 
@@ -39,7 +39,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - 初期販売および更新の契約と価格を交渉する
 - 見込み顧客と成約方法に関する戦略を持つ必要がある
 - プリセールスの見込み顧客とポストセールスのアップグレードについて Solutions Architect（SA）と連携する
-- アカウントプランニングと更新についてカスタマーサクセスマネージャー（CSM）と連携する
+- アカウントプランニングと更新について Customer Success Manager（CSM）と連携する
 
 ### Solutions Architect（SA）
 
@@ -49,7 +49,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - テクニカルウィンのステージ後に CSM に引き継がれるすべてのプリセールス技術アクティビティを処理する
 - RFP／RFI への対応の技術面を担当する
 
-### カスタマーサクセスマネージャー（CSM） {#customer-success-manager-csm}
+### Customer Success Manager（CSM） {#customer-success-manager-csm}
 
 - お客様にとって信頼できる戦略的アドバイザー
 - ポストセールスのカスタマージャーニーを[担当](/handbook/customer-experience/csm/#high-level-responsibilities-of-a-csm)する
@@ -200,7 +200,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
         - アップセルおよびクロスセルの機会を特定し追求する
     3. シームレスな移行のためにセールスから CS への詳細な情報移転を確実にする
 
-  - カスタマーサクセスマネージャーが担当するもの:
+  - Customer Success Manager が担当するもの:
     1. ポストセールスの顧客関係:
         - 新しい機会と関連しないデモやその他の製品ワークショップ
     2. 既存顧客内でのライセンス拡張
@@ -260,7 +260,7 @@ CSM Manager がミーティングの DRI であり、マネジメントレベル
 
 SA はすべてのプリセールス技術的な関係とアクティビティを担当します。SA は、販売前のプロダクト、セールス、ビジネス、技術的イニシアティブに関連する会話を調整します。プリセールスにおける CSM の関与は、販売後の顧客関係に対する期待をモデル化しますが、技術的な勝利を達成した後に限定すべきです。CSM の関与は、SA のプリセールス アカウント オーナーシップを置き換えるのではなく、補完する必要があります。
 
-アカウントがプリセールスからポストセールスに移行する際は、[Account Executive/Solutions Architect からカスタマーサクセスマネージャーに引き継がれます](/handbook/customer-experience/pre-sales-post-sales-transition/)。
+アカウントがプリセールスからポストセールスに移行する際は、[Account Executive/Solutions Architect から Customer Success Manager に引き継がれます](/handbook/customer-experience/pre-sales-post-sales-transition/)。
 
 顧客が CSM 対象となった時点で、CSM がアカウントの主要な責任を負い、カスタマーサクセスと採用の推進に注力します。SA は、以下の状況で再導入されることがあります。
 

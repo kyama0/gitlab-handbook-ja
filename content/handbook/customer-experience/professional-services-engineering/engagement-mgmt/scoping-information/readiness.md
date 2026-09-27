@@ -22,7 +22,7 @@ Readiness Assessment は、顧客のアーキテクチャ図のレビューと�
 1. 成長を計画している - 追加のユーザー（例: 500 から 2,000）または追加の使用（例: 大規模に CI を採用）のいずれか
 1. GitLab セルフマネージドの新規実装をデプロイしており、大多数のユーザーをオンボーディングする前にアーキテクチャを検証したい
 
-Readiness Assessment **は**、GitLab デプロイメントの現在の問題を解決する方法を調査するサービス**ではありません**。GitLab サポートは、これらの種類の問題の解決を顧客に支援するためにチャーターされています。
+Readiness Assessment **は**、GitLab デプロイメントの現在の問題を解決する方法を調査するサービス**ではありません**。GitLab サポートは、これらの種類の問題をお客様が解決できるよう支援する役割を担っています。
 
 Health check の成果は、[Health Check Report](https://docs.google.com/document/d/1j4Jmz_SCJEeeQT4uCIHiw6ngwsZyW_aAMVvSIyO2ndc/edit) における発見と推奨事項のリストです。レポートの推奨事項を実装することはありません。これは 2 つ目の SOW または変更注文でスコーピングする必要があります。
 

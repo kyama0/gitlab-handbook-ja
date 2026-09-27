@@ -59,13 +59,21 @@
             {{- $included = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $included }}
             {{- $included = replaceRE `(?is)>\s*<` "> <" $included }}
             {{- $renderedIncluded := $included | markdownify }}
-            {{- range findRE `(?is)<img\b[^>]*\balt="[^"]+"[^>]*>` $renderedIncluded }}
-                {{- $alt := replaceRE `(?is)^.*?\balt="([^"]+)".*$` "$1" . }}
+            {{- range findRE `(?is)<img\b[^>]*\salt="[^"]+"[^>]*>` $renderedIncluded }}
+                {{- $alt := replaceRE `(?is)^.*?\salt="([^"]+)".*$` "$1" . }}
                 {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
             {{- end }}
-            {{- range findRE `(?is)<img\b[^>]*\balt='[^']+'[^>]*>` $renderedIncluded }}
-                {{- $alt := replaceRE `(?is)^.*?\balt='([^']+)'.*$` "$1" . }}
+            {{- range findRE `(?is)<img\b[^>]*\salt='[^']+'[^>]*>` $renderedIncluded }}
+                {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
                 {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<img\b[^>]*\stitle="[^"]+"[^>]*>` $renderedIncluded }}
+                {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<img\b[^>]*\stitle='[^']+'[^>]*>` $renderedIncluded }}
+                {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
             {{- end }}
             {{- $scratch.Add "wordcount" (countwords ($renderedIncluded | plainify)) }}
         {{- end }}
@@ -561,6 +569,22 @@
     {{- range findRE $localPattern $source }}
         {{- $rendered := $page.RenderString . }}
         {{- $rendered = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $rendered }}
+        {{- range findRE `(?is)<img\b[^>]*\salt="[^"]+"[^>]*>` $rendered }}
+            {{- $alt := replaceRE `(?is)^.*?\salt="([^"]+)".*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<img\b[^>]*\salt='[^']+'[^>]*>` $rendered }}
+            {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<img\b[^>]*\stitle="[^"]+"[^>]*>` $rendered }}
+            {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<img\b[^>]*\stitle='[^']+'[^>]*>` $rendered }}
+            {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+        {{- end }}
         {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
         {{- $rendered = replaceRE `(?is)>\s*<` "> <" $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
@@ -571,13 +595,21 @@
     {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}
     {{- /* Image alternatives remain available to screen readers after the image tag renders. */ -}}
-    {{- range findRE `(?is)<img\b[^>]*\balt="[^"]+"[^>]*>` $renderedSource }}
-        {{- $alt := replaceRE `(?is)^.*?\balt="([^"]+)".*$` "$1" . }}
+    {{- range findRE `(?is)<img\b[^>]*\salt="[^"]+"[^>]*>` $renderedSource }}
+        {{- $alt := replaceRE `(?is)^.*?\salt="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
     {{- end }}
-    {{- range findRE `(?is)<img\b[^>]*\balt='[^']+'[^>]*>` $renderedSource }}
-        {{- $alt := replaceRE `(?is)^.*?\balt='([^']+)'.*$` "$1" . }}
+    {{- range findRE `(?is)<img\b[^>]*\salt='[^']+'[^>]*>` $renderedSource }}
+        {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<img\b[^>]*\stitle="[^"]+"[^>]*>` $renderedSource }}
+        {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<img\b[^>]*\stitle='[^']+'[^>]*>` $renderedSource }}
+        {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
     {{- end }}
     {{- $renderedSource = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)>\s*<` "> <" $renderedSource }}
