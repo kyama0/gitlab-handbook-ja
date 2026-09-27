@@ -55,12 +55,12 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ```mermaid
 flowchart TD;
-    A[アカウントエスカレーションの特定] --> B{これはプロフェッショナルサービスプロジェクトに関連していますか？};
-    B -->|はい| C[プロフェッショナルサービスプロジェクトマネージャーが DRI];
-    B -->|いいえ| D{顧客に割り当てられた CSM はいますか？};
-    D -->|はい| E[CSM が DRI];
-    D -->|いいえ| F[顧客が TAM スケールに割り当て];
-    F --> G[地域 CSE リーダーが DRI];
+    A[Account Escalation Identified] --> B{Is this related to a Professional Services Project?};
+    B -->|Yes| C[Professional Services Project Manager is DRI];
+    B -->|No| D{Does customer have an assigned CSM?};
+    D -->|Yes| E[CSM is DRI];
+    D -->|No| F[Customer assigned to TAM Scale];
+    F --> G[Regional CSE leader is DRI];
 ```
 
 エスカレーション開始時に DRI を決定する必要があります。DRI は以下の責任と主要なステップを持ちます:
@@ -267,17 +267,17 @@ __ステップバイステッププロセス:__
 
 ```mermaid
 flowchart TD
-    Start([CSM がエスカレーション<br/>作業をログする必要がある]) --> SFDC[SFDC エスカレーションケース作成]
-    SFDC -->|自動作成| CTA[Gainsight のエスカレーション CTA]
+    Start([CSM needs to log<br/>escalation work]) --> SFDC[SFDC Escalation Case Created]
+    SFDC -->|Auto-creates| CTA[Escalation CTA in Gainsight]
     
-    CTA --> Cockpit[CSM が Gainsight の<br/>コックピットビューを開く]
-    Cockpit --> Select[特定の<br/>エスカレーション CTA を選択]
-    Select --> Timeline[CTA 内の<br/>タイムラインタブに移動]
-    Timeline --> Log[活動をログ:<br/>• アップデート<br/>• 通話<br/>• メール<br/>• その他のアクション]
+    CTA --> Cockpit[CSM opens Cockpit view<br/>in Gainsight]
+    Cockpit --> Select[Select the specific<br/>Escalation CTA]
+    Select --> Timeline[Navigate to Timeline tab<br/>within the CTA]
+    Timeline --> Log[Log activity:<br/>• Updates<br/>• Calls<br/>• Emails<br/>• Other actions]
     
-    Log --> Report[エスカレーション CTA に<br/>リンクされた活動]
-    Report --> Dashboard[レポートとダッシュボードが<br/>エスカレーション努力を表示]
-    Dashboard --> Visibility[エスカレーション作業の<br/>マネジメントへの可視性]
+    Log --> Report[Activities linked to<br/>Escalation CTA]
+    Report --> Dashboard[Reports & Dashboards<br/>show escalation effort]
+    Dashboard --> Visibility[Management visibility<br/>of escalation work]
     
     style Start fill:#e1f5ff
     style SFDC fill:#fff4e1

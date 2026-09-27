@@ -23,8 +23,8 @@ Instruqt の実装は SaaS アプリであり、[Thought Industries LMS](https:/
 
 ```mermaid
 graph TD
-A[Thought Industries LMS] -->|ユーザー名とメール| B(Instruqt)
-B -->|完了したバーチャルラボ| C[完了データが Thought Industries に転送される]
+A[Thought Industries LMS] -->|User name and email| B(Instruqt)
+B -->|Virtual Labs completed| C[Completion data transferred back to Thought Industries]
 ```
 
 ### データモデル

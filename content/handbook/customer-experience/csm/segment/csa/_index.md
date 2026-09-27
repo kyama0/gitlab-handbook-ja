@@ -54,7 +54,7 @@ Customer Success Architect (CSA) は、深い GitLab の専門知識と豊富な
 
 4. **クロスファンクショナルコラボレーション**: CSA は GitLab チームと緊密に連携してお客様の成功を確保します:
    - お客様のニーズに基づいてロードマップに影響を与えるためにプロダクトエンジニアリングと協力する
-   - 強化されたサポートのために[担当サポートエンジニア（ASE）](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)（Signature ティア）と連携する
+   - 強化されたサポートのために[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)（Signature ティア）と連携する
    - 学習メリットを最大化するために Education サービスと調整する
    - イノベーションを加速するために広い内部ネットワークを活用する
 
@@ -66,7 +66,7 @@ Customer Success Architect (CSA) は、深い GitLab の専門知識と豊富な
 
 CSA はお客様の GitLab との長期的な成功にコミットしています。深い専門知識、戦略的ガイダンス、献身的なパートナーシップを通じて、GitLab プラットフォームの可能性を最大限に引き出し、DevSecOps 目標を達成するお手伝いをします。新しい機能の実装、ワークフローの最適化、DevSecOps プラクティスのスケールアップなど、CSA は旅全体を通じて信頼できるアドバイザーとなります。
 
-Advanced ティアのお客様には、CSA がアクセラレータプログラムと拡張サポートカバレッジを含む包括的なガイダンスを提供します。Signature ティアのお客様は、担当サポートエンジニア（ASE）、より多くのアクセラレータプログラム、強化されたサポート SLA などの追加メリットを受け取り、プレミアムのホワイトグローブサポート体験が提供されます。
+Advanced ティアのお客様には、CSA がアクセラレータプログラムと拡張サポートカバレッジを含む包括的なガイダンスを提供します。Signature ティアのお客様は、Assigned Support Engineer (ASE)、より多くのアクセラレータプログラム、強化されたサポート SLA などの追加メリットを受け取り、プレミアムのホワイトグローブサポート体験が提供されます。
 
 ## CSA との連携
 
@@ -89,7 +89,7 @@ CSA は定期的なタッチポイントを維持して、戦略的・技術的�
 
 CSA は、アライメントを確保して複雑な問題を解決するために、プロダクトマネジメント、エンジニアリング、プロフェッショナルサービス、サポート、Solutions Architect など他の GitLab チームと調整します。顧客は必要に応じてこれらのチームと直接連携することもできます。
 
-**Signature** ティアの顧客の場合、CSA は[担当サポートエンジニア（ASE）](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)とも連携して、プロアクティブなモニタリングと加速されたインシデント解決を提供します。
+**Signature** ティアの顧客の場合、CSA は[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)とも連携して、プロアクティブなモニタリングと加速されたインシデント解決を提供します。
 
 CSA を持つすべての顧客は、より広いユーザーベース向けに CSE チームがリードする[オンデマンドプログラム](/handbook/customer-experience/csm/segment/cse/)（ウェビナー、ハンズオンラボ、オフィスアワー）にもアクセスできます。
 
@@ -106,7 +106,7 @@ Customer Success Architect (CSA) は、GitLab の Advanced および Signature S
 
 **Signature ティア**
 
-- 専任 CSA と[担当サポートエンジニア（ASE）](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)
+- 専任 CSA と[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)
 - 強化された教育メリット（20% 割引、認定バウチャー 60 枚）
 - 年間最大 4 回のアクセラレータ
 - Severity 2 チケットの 24x7 カバレッジと高速レスポンスタイム（2 時間 vs 4 時間）
@@ -118,7 +118,7 @@ CSA を始めるには:
 3. Advanced または Signature Success Tier を購入する
 4. 専任 CSA がアカウントに割り当てられる
 
-CSA は一貫した連絡窓口として機能し、担当サポートエンジニア（Signature ティア）および Education チームと緊密に連携して GitLab での成功を支援します。
+CSA は一貫した連絡窓口として機能し、Assigned Support Engineer（Signature ティア）および Education チームと緊密に連携して GitLab での成功を支援します。
 
 ## CSA チームについて
 

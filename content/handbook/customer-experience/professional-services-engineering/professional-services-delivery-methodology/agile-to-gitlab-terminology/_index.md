@@ -26,7 +26,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 <td>ユーザーストーリー</td>
 <td>
 
-[Issues](https://docs.gitlab.com/ee/user/project/issues/)
+[Issue](https://docs.gitlab.com/ee/user/project/issues/)
 </td>
 </tr>
 <tr>
@@ -47,7 +47,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 <td>ポイントと見積もり</td>
 <td>
 
-[Weights](https://docs.gitlab.com/ee/user/project/issues/issue_weight.html)
+[ウェイト](https://docs.gitlab.com/ee/user/project/issues/issue_weight.html)
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 <td>スプリント/イテレーション</td>
 <td>
 
-[Milestones](https://docs.gitlab.com/ee/user/project/milestones/)
+[マイルストーン](https://docs.gitlab.com/ee/user/project/milestones/)
 </td>
 </tr>
 <tr>

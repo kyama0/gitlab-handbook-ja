@@ -21,7 +21,7 @@ Gainsight プロセスについて CSM をガイドする YouTube 動画（非�
    - Ultimate を購入した理由（戦略セクションに記載）
    - タイムラインを持つタスクを含む、実装に焦点を当てた Objective
    - タスクに記載された顧客 DRI
-1. DevSecOps プレイブックの手順に従って顧客を進め、[Get Started ガイド](https://docs.gitlab.com/ee/user/application_security/get-started-security.html)および [DevSecOps & コンプライアンス機能とベストプラクティス](/handbook/customer-experience/workshops/secure/)の両方についてイネーブルメントセッションを提供する。
+1. DevSecOps プレイブックの手順に従って顧客を進め、[利用開始ガイド](https://docs.gitlab.com/ee/user/application_security/get-started-security.html)および [DevSecOps & コンプライアンス機能とベストプラクティス](/handbook/customer-experience/workshops/secure/)の両方についてイネーブルメントセッションを提供する。
 1. 顧客が実装を進められない場合
    - イネーブルメント CTA のステータスを「blocked（ブロック）」に変更する
    - ブロック状態の日付と理由をコメントセクションに記録する

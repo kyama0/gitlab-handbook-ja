@@ -100,17 +100,17 @@ Issue のコメントに以下を入力して送信:
 ```markdown
 ## Summary
 
-[顧客が達成しようとしていることは何か、それはビジネスにとってなぜ重要か？
-経営幹部のステークホルダー向けに記述してください — GitLab の機能ではなく、ビジネスへの影響に焦点を当てます。]
+[What is the customer trying to achieve, and why does it matter to their business?
+Write for an executive stakeholder — focus on business impact, not GitLab features.]
 
 ## Success Criteria
 
-- [具体的で測定可能な条件 #1 — ベースライン、ターゲット、日付を含める]
-- [具体的で測定可能な条件 #2]
+- [Specific, measurable condition #1 — include baseline, target, and date]
+- [Specific, measurable condition #2]
 
 ## Updates
 
-- [ステータス更新、目標クローズの理由]
+- [Status updates, close objective reason]
 ```
 
 ---

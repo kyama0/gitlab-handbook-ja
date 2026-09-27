@@ -36,7 +36,7 @@ Customer Success ロール（CSM、CSE、CSA）は **アドバイザリー** で
 エンゲージメントモデルは、プールおよびオンデマンドから完全に専任、プロジェクトスコープまで多岐にわたります:
 
 ```text
-プール (CSE) → 指名/指定 (CSM, CSA, ASE) → プロジェクトスコープ (PSE) → 機会スコープ (SA)
+Pooled (CSE) → Named/Designated (CSM, CSA, ASE) → Project-scoped (PSE) → Opportunity-scoped (SA)
 ```
 
 ### 3. プリセールスからポストセールスへのハンドオフ
