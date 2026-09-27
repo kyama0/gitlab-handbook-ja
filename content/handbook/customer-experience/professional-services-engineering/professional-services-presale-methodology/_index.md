@@ -13,7 +13,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 プロフェッショナルサービスのプロセスと方法論は、カスタマーサクセスが支える Customer Journey の中に組み込まれています。プロフェッショナルサービスは **SOW Close** から **Project Close** フェーズまでの Customer Journey に貢献します。
 
-![PS Delivery Customer Journey Flow](/images/professional-services/customer-journey-mapped-ps-process.png)
+![PS デリバリーのカスタマージャーニーフロー](/images/professional-services/customer-journey-mapped-ps-process.png)
 
 [出典: GitLab チームメンバー限定](https://docs.google.com/presentation/d/1eC_ocJkzNkH4Vw3v4Vkd3S58a0NALYxXtnb6BZ7pJdc/edit?usp=sharing)
 
@@ -23,7 +23,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 以下にリンクされたページでは、各ステージのステップを詳細に確認でき、各ステージで望ましいアウトカムを実現するために個人がアクティビティをどのように実行するかを理解できます。これらのページはセールスプロセスのフェーズ（プリセールス vs ポストセールス）で分かれています。
 
-![Pre-Sales Stages & Steps](/images/professional-services/professional-services-scoping-workflow.png)
+![プリセールスのステージとステップ](/images/professional-services/professional-services-scoping-workflow.png)
 
 ## プリセールスの概要
 

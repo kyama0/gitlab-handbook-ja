@@ -99,7 +99,7 @@ flowchart TD;
 - GitLab.com での広範な問題が疑われる場合は [GitLab.com インシデントを宣言する](/handbook/engineering/infrastructure-platforms/incident-management/#report-an-incident-via-slack)
 - 標準の優先順序外での処理が必要なコンテキストがあるケースについては[個別のサポートチケットをサポートマネジメントにエスカレーションする](/handbook/support/internal-support/support-ticket-attention-requests)
 - S1/インスタンスダウンの問題でオンコールのサポートエンジニアに直接連絡するには、顧客に[緊急サポートをトリガー](https://about.gitlab.com/support/#how-to-trigger-emergency-support)してもらう
-  - 顧客が緊急事態を起こそうとしたがオンコールエンジニアがページされなかったという情報を受け取った場合は、[オンコールサポートマネージャーをページ](/handbook/support/on-call/#engaging-the-on-call-manager)することもできます。
+  - 顧客が緊急サポートを起動しようとしたものの、オンコールエンジニアがページされなかったという情報を受け取った場合は、[オンコールサポートマネージャーをページ](/handbook/support/on-call/#engaging-the-on-call-manager)することもできます。
 - このページでは、アカウントエスカレーションのさまざまなレベルに対する追加のサポートと運用手順を概説しています。
 
 ## エスカレーションの開始、管理、クローズ
@@ -186,16 +186,16 @@ Salesforce ケースは、その特定の顧客の Gainsight CTA を作成しま
 
 Salesforce でエスカレーションケースが開始された後、エスカレーションを宣言するための投稿が自動的に `#escalated_customers` チャンネルに追加されます。このプロセスは PubSec 顧客を除くすべての顧客に適用されます。PubSec 顧客の場合は、以下のテンプレートを使用してエスカレーションを手動で投稿する必要があります:
 
-- New Escalation
-- __Customer__: "顧客名"
-- __Slack Channel__: "#esc_顧客名"
-- __Meeting Notes__: "<リンク: 顧客ミーティングノート>"
-- __SFDC Escalation case URL__: "<リンク: エスカレーションケース>
-- __Severity__: High
-- __Status__: Opened
-- __Product DRI__: "[割り当てられた製品 DRI](https://docs.google.com/spreadsheets/d/124nDAb7p6yViLCsEHaqQTcDTMMT2-FPxeTwZxKOyLwM/edit?gid=0#gid=0)"
-- __Support DRI__: "サポートの関与が必要な場合は @support-manager-oncall Slack ハンドルを使用します。問題の説明を含むサポートチケットが開かれていることを確認してください。サポートは[RFH プロセス](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team)に従ってエンジニアリングと連携します。"
-- __Description__: "<例: 顧客プラットフォームは数週間前からパフォーマンス問題の影響を受けており、ユーザーは日常的に影響を受けています。これにより顧客は重大な状態に陥っています。パフォーマンス問題はライセンス拡張にもリスクをもたらしています。>"
+- 新規エスカレーション
+- __顧客__: "顧客名"
+- __Slack チャンネル__: "#esc_顧客名"
+- __ミーティングノート__: "<リンク: 顧客ミーティングノート>"
+- __SFDC エスカレーションケース URL__: "<リンク: エスカレーションケース>
+- __重大度__: 高
+- __ステータス__: 開始済み
+- __製品 DRI__: "[割り当てられた製品 DRI](https://docs.google.com/spreadsheets/d/124nDAb7p6yViLCsEHaqQTcDTMMT2-FPxeTwZxKOyLwM/edit?gid=0#gid=0)"
+- __サポート DRI__: "サポートの関与が必要な場合は @support-manager-oncall Slack ハンドルを使用します。問題の説明を含むサポートチケットが開かれていることを確認してください。サポートは[RFH プロセス](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team)に従ってエンジニアリングと連携します。"
+- __説明__: "<例: 顧客プラットフォームは数週間前からパフォーマンス問題の影響を受けており、ユーザーは日常的に影響を受けています。これにより顧客は重大な状態に陥っています。パフォーマンス問題はライセンス拡張にもリスクをもたらしています。>"
 - __FYI__: "<自分のマネージャーをタグ>"
 
 エスカレーションが製品に関連する場合は、製品 DRI が必要です。この[リスト](https://docs.google.com/spreadsheets/d/1x44kzJE4_Ixj20utn4g5Mggn1Jc3kKMWaY16F2WmLWg/edit#gid=242012002)から該当する製品 DRI を割り当ててください。製品 DRI は #esc_顧客名チャンネルに追加され、エスカレーション全体を通じて製品関連の項目を推進します。

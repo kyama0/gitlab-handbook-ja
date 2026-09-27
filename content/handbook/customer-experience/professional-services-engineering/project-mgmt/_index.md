@@ -10,7 +10,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 - [プロジェクトの開始 & 計画](#project-initiate--plan)
-  - [Iteration 0](#iteration-0)
+  - [イテレーション 0](#iteration-0)
   - [初回 Kantata レビュー](#initial-kantata-review)
 - [デリバリー、トレーニング、モニタリング](#deliver-train-and-monitor)
   - [プロフェッショナルサービス デリバリー方法論](#professional-services-delivery-methodology)
@@ -26,13 +26,13 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 PS Project Management と PS Operations の[チーム機能](/handbook/customer-experience/professional-services-engineering/#team-functions)は緊密に連携しているため、スケジューリング、レポート、請求、パートナープロセスなどのプロセスについての詳細は [PS Operations Wiki](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ps-leadership-team/ps-operations/-/wikis/home) を参照してください。
 
-### Iteration 0 {#iteration-0}
+### イテレーション 0 {#iteration-0}
 
-[Iteration 0](/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/) は、GitLab と顧客のプロジェクトチーム間の初期計画を含みます。Iteration 0 を適切に準備することで、リスクと期待値に早期に対処できます。
+[イテレーション 0](/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/) は、GitLab と顧客のプロジェクトチーム間の初期計画を含みます。イテレーション 0 を適切に準備することで、リスクと期待値に早期に対処できます。
 
-**Iteration 0 の内容サマリー:**
+**イテレーション 0 の内容サマリー:**
 
-Iteration 0 では、プロジェクトの重要な準備段階として、以下を扱います:
+イテレーション 0 では、プロジェクトの重要な準備段階として、以下を扱います:
 
 - Engagement Manager から PS Delivery チームへのトランジションプロセス
 - 顧客のサポートアクセスのセットアップ

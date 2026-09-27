@@ -174,7 +174,7 @@ CSM マネージャーはチームと連携して、CSM が顧客への価値向
 | AMER COM  | 週次 | CSM: ディレクター、マネージャー; Sales: AVP、ASMs |
 | EMEA COM  | 週次 | CSM: ディレクター、マネージャー; Sales: AVP、ASMs |
 | APAC  | 隔週 | CSM: マネージャー; Sales: AVP、ENT & COM ASMs |
-| Public Sector | 隔週 | VP of Customer Success、VP of Public Sector、Director of Customer Success、ASMs、CSM and Renewals チームマネージャー |
+| Public Sector | 隔週 | VP of Customer Success、VP of Public Sector、Director of Customer Success、ASMs、CSM および Renewals のチームマネージャー |
 
 ##### リスクレビューミーティングの目的と成果
 

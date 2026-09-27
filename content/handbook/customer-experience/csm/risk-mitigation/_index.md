@@ -1,6 +1,6 @@
 ---
-title: "顧客アカウントのリスク軽減に向けたCSM戦略"
-description: "顧客アカウントのリスク軽減に向けたCSM戦略"
+title: "顧客アカウントのリスク軽減に向けた CSM 戦略"
+description: "顧客アカウントのリスク軽減に向けた CSM 戦略"
 upstream_path: /handbook/customer-experience/csm/risk-mitigation/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
