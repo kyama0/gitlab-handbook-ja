@@ -24,8 +24,8 @@ Success On-Demand（CSE）チームが顧客と関わる方法はいくつかあ
 
 Customer Success Operations と CS リーダーは、GitLab のさまざまなヘルスメトリクスに基づいて、顧客インタラクションを促進し GitLab の採用・活用を改善するための一連のアウトリーチキャンペーンを決定します。キャンペーンの例を以下に示します。
 
-- 21日チェックイン
-- 90日低ライセンス活用率
+- 21 日チェックイン
+- 90 日低ライセンス活用率
 - CI プロダクトコーチ
 
   既存のキャンペーンメール下書きは [Automated CSE Campaigns Content google doc](https://docs.google.com/document/d/1Db6y_i2gPQrPnJkJpAAbfFKQtw4c5VgSFJcHKDG-4hk/edit?usp=sharing) に掲載されています。メールキャンペーンは地域と ARR に基づいて対象グループに送信され、通常はそのセグメントを担当する特定の CSE の Calendly リンクが含まれます。
@@ -44,7 +44,7 @@ CSE チームはコンテンツチームと連携してウェビナーのコン�
 
 ##### ラボ環境リクエスト
 
-> ラボ DRI として、環境のラボリクエストを提出する責任があります。理想的には、実施日の少なくとも1週間前に提出してください。サポートや質問については、`#demo-architect-partners` Slack チャンネルにお問い合わせください。
+> ラボ DRI として、環境のラボリクエストを提出する責任があります。理想的には、実施日の少なくとも 1 週間前に提出してください。サポートや質問については、`#demo-architect-partners` Slack チャンネルにお問い合わせください。
 
 1. [Demo Architect Portal](https://cloud.gitlabdap.com/) にアクセスしてログインします。
 1. ドロップダウンリストから **Content/Lab Request** を選択します。
@@ -69,13 +69,13 @@ CSE チームはコンテンツチームと連携してウェビナーのコン�
 
 また、ラボ参加者のチャットに入力したいすべての情報とリンクを含む貼り付けメモドキュメントを作成してください。[セキュリティ＆コンプライアンスラボのサンプル貼り付けメモ](https://docs.google.com/document/d/1rNF2PvfJrunZgoI9PW4mPIirLLhyXH9ohXgLEmsXeRI/edit?usp=sharing)を参考にしてください。Q&A を手伝う方のために、#scale-workshops-planning Slack チャンネルにリンクを提供してください。#scale-workshops-planning Slack チャンネルはラボ前の質問、セットアップ、デモ環境の問題などに使用されます。
 
-ラボ当日は、セットアップのためにラボ開始の少なくとも10分前にログインしてください。
+ラボ当日は、セットアップのためにラボ開始の少なくとも 10 分前にログインしてください。
 
 ラボのハウスキーピング事項（ラボのスライドデッキにも記載する必要があります）:
 
 - 全参加者はミュート — 参加者にはミュートを維持し、Q&A パネルに質問を入力するよう依頼する
 - 開始前に gitlab.com のアカウントが必要
-- x 日間のラボ環境へのアクセス（一部のラボは2日間、他は4日間 — 適切なスライドデッキに明記すること）
+- x 日間のラボ環境へのアクセス（一部のラボは 2 日間、他は 4 日間 — 適切なスライドデッキに明記すること）
 
 発表のヒント:
 
@@ -109,9 +109,9 @@ Success On-Demand（CSE）の[対象](https://gitlab.com/gitlab-com/customer-suc
 ![ケース種別で CSE Help と Escalations を選ぶ画面](/images/customer-experience/csm/segment/cse/sfdc-cse-help-vs-esc.png)
 ![Salesforce の CSE ケース作成フォーム](/images/customer-experience/csm/segment/cse/sfdc-cse-case-creation-view.png)
 
-ケースが作成されると、アカウントと Opportunity の両方の関連ケースリストに自動的に表示されます。その後、Success On-Demand（CSE）チームが対応するための Call to Action（CTA）が Gainsight で生成されます。ただし、これはリアルタイムではありません（バッチルールは毎日太平洋時間12:30〜1時から4時間ごとに実行されます）。
+ケースが作成されると、アカウントと Opportunity の両方の関連ケースリストに自動的に表示されます。その後、Success On-Demand（CSE）チームが対応するための Call to Action（CTA）が Gainsight で生成されます。ただし、これはリアルタイムではありません（バッチルールは毎日太平洋時間 12:30〜1 時から 4 時間ごとに実行されます）。
 
-注意: 特に指定がない限り、ケースが作成されるとチームメンバーが AE/RM を CC して自動的に連絡先に連絡します。AE/RM がそれを望まない場合は、ケースの「Challenges/Pain Points（1000文字制限）」フィールドにメモを記載できます。
+注意: 特に指定がない限り、ケースが作成されるとチームメンバーが AE/RM を CC して自動的に連絡先に連絡します。AE/RM がそれを望まない場合は、ケースの「Challenges/Pain Points（1000 文字制限）」フィールドにメモを記載できます。
 
 - CSE エンゲージメントの範囲と要件の詳細については、以下のリンクをご参照ください:
   - [CSE: CSE エンゲージメントの要件/スコープドキュメント](https://docs.google.com/document/d/1UVUPVTpEd3uYN8X1a_-LgB0GVY3fW6Y-S8sXfh-W65M/edit#)
@@ -163,7 +163,7 @@ CSE は、タスク `Follow Up Email Post One-off CSE Outreach Call Completion` 
 
 エスカレーションは、サポート、プロダクト、エンジニアリングチームが全体的な GitLab ビジネス目標に沿って取り組みを優先できるよう、成長の可能性が高いセグメント内の大きなアカウントに対してのみ、控えめに使用してください。
 
-エスカレーションには2種類あります: サポートエスカレーションとアカウントエスカレーションです。
+エスカレーションには 2 種類あります: サポートエスカレーションとアカウントエスカレーションです。
 
 1. サポートエスカレーションは、顧客のビジネスに非常に大きな影響を与えており、感情が高ぶっている既存のチケットに対するものです。エスカレーションプロセスによって問題に注目を集め、サポート内での優先度を上げることができます。[サポートチケット対応リクエストページ](/handbook/support/internal-support/support-ticket-attention-requests/#submitting-a-support-ticket-attention-request-star--starring-a-ticket)に記載されているサポートチケットエスカレーションの定義されたプロセスに従うことで十分です。
 1. アカウントエスカレーションは、サポートチケットに関連する場合とそうでない場合があります。製品バグや機能リクエストに関するオープン Issue に関連することもあります。例えば、重要なユースケースをブロックしており、GitLab 以外のソリューションで他のベンダーを評価させるほどの影響力がある、高インパクトな問題について顧客がコミュニケーションしている場合に有効です。これは GitLab に対する解約または縮小リスクをもたらします。
@@ -190,7 +190,7 @@ CSE は、タスク `Follow Up Email Post One-off CSE Outreach Call Completion` 
 1. AE からの**カスタムピッチデッキ**を見つけて学習する（**Salesforce Opportunity** で**カスタムピッチデッキ**リンクを見つけるか、AE に直接お問い合わせください）
 1. 会社と関連業界についての一般的なリサーチを行い、より良いコンテキストを得る。
 1. AE/SAE に連絡してミーティングについて知らせ、戦略やインサイトについて話し合う。すべての通話に AE/SAE を任意出席者として追加する。
-1. 準備を整え、待機室から顧客が参加できるようにするために、少なくとも10〜15分前に通話に参加する。
+1. 準備を整え、待機室から顧客が参加できるようにするために、少なくとも 10〜15 分前に通話に参加する。
 1. Chorus が録音していること、顧客がそれを認識していることを確認する（通常、Calendly 招待で通知される）
 1. 以下への素早いアクセスを確保する:
    1. [ノート](https://docs.google.com/document/u/0/d/159Bxv_H7Ds9QoGsmFW7c7Zoq5nqugAChN_a7XuKUeLs/edit)
@@ -198,7 +198,7 @@ CSE は、タスク `Follow Up Email Post One-off CSE Outreach Call Completion` 
    1. 参考用の [GitLab 機能](https://about.gitlab.com/features/)
    1. その他の関連リソース（アイデアについては [CSE - キックオフ / ディスカバリー質問テンプレート](https://docs.google.com/document/d/159Bxv_H7Ds9QoGsmFW7c7Zoq5nqugAChN_a7XuKUeLs/edit?usp=sharing)の付録を参照）
 1. 短期的なエンゲージメントについての期待値を管理し、永続的に担当するわけではないことを伝えることを忘れない。
-1. 通話完了後、2〜3日以内にフォローアップメールを送信することを伝える。
+1. 通話完了後、2〜3 日以内にフォローアップメールを送信することを伝える。
 1. 通話完了後、Gainsight の顧客タイムラインに[活動として記録](/handbook/customer-experience/csm/cadence-calls/#review-and-update-account-details)する。
 1. 通話を見直し、AE と同期して顧客へのフォローアップメールを作成する。
 
@@ -229,7 +229,7 @@ CSE は、エンゲージメントの結果と将来の参照のための重要�
 
 **重要な注意事項**:
 
-- 顧客が対処したいトピックが新しいトピックである場合は、異なるトピック/リクエストを明確に区別するために新しいリクエストを開いてください。また、4週間以上経過したものも新しいリクエストとして扱います。
+- 顧客が対処したいトピックが新しいトピックである場合は、異なるトピック/リクエストを明確に区別するために新しいリクエストを開いてください。また、4 週間以上経過したものも新しいリクエストとして扱います。
 - 原則として: 同じトピックについてのフォローアップは 3 回を超えないようにします。
 - 前の四半期のリクエストは、以前のトピックに関連する場合でも再開しないでください。メトリクスに意図しない影響が生じる可能性があります。
 

@@ -53,8 +53,8 @@ version.gitlab.com に現在顧客のデータが記録されていない場合�
 version.gitlab.com のデータと[メトリクスディクショナリ](https://docs.gitlab.com/ee/development/internal_analytics/metrics/metrics_dictionary.html)を使用して、顧客が以下を行っているかを確認できます:
 
 - 開発ライフサイクルの一部としてマージリクエストを使用している。（counts.merge_requests）
-- 3ヶ月以上継続的に増加しているリポジトリを持つプロジェクト数が増加している（counts.projects_with_repositories_enabled）
-- 3ヶ月以上継続的に増加しているソースコードのプッシュ/コミット数が増加している（counts.source_code_pushes）
+- 3 ヶ月以上継続的に増加しているリポジトリを持つプロジェクト数が増加している（counts.projects_with_repositories_enabled）
+- 3 ヶ月以上継続的に増加しているソースコードのプッシュ/コミット数が増加している（counts.source_code_pushes）
 
 使用状況のディスカバリー質問:
 
@@ -72,7 +72,7 @@ version.gitlab.com に現在顧客のデータが記録されていない場合�
 version.gitlab.com のデータと[メトリクスディクショナリ](https://docs.gitlab.com/ee/development/internal_analytics/metrics/metrics_dictionary.html)を使用して、顧客が以下を行っているかを確認できます:
 
 - インスタンスレベルの共有ランナーを利用可能にしている。（gitlab_shared_runners_enabled）
-- 3ヶ月以上継続的に増加している継続的インテグレーション（CI）を使用している（ci_internal_pipelines）
+- 3 ヶ月以上継続的に増加している継続的インテグレーション（CI）を使用している（ci_internal_pipelines）
 - CI ランナーを使用してパイプラインをビルドしている（counts.ci_builds）
 
 使用状況のディスカバリー質問:
@@ -94,11 +94,11 @@ version.gitlab.com のデータと[メトリクスディクショナリ](https:/
 
 version.gitlab.com に現在顧客のデータが記録されていない場合は、以下を行っているか確認できます:
 
-- 3ヶ月以上継続的に増加している 1 つ以上のセキュリティテストツール（SAST、DAST、コンテナスキャン、依存関係スキャン）を使用している
+- 3 ヶ月以上継続的に増加している 1 つ以上のセキュリティテストツール（SAST、DAST、コンテナスキャン、依存関係スキャン）を使用している
 
 version.gitlab.com のデータと[メトリクスディクショナリ](https://docs.gitlab.com/ee/development/internal_analytics/metrics/metrics_dictionary.html)を使用して、顧客が以下を行っているかを確認できます:
 
-- 3ヶ月以上継続的に増加している 1 つ以上のセキュリティテストツール（SAST、DAST、コンテナスキャン、依存関係スキャン）を使用している
+- 3 ヶ月以上継続的に増加している 1 つ以上のセキュリティテストツール（SAST、DAST、コンテナスキャン、依存関係スキャン）を使用している
 - SAST ジョブ（counts.sast_jobs）
 - DAST ジョブ（counts.dast_jobs）
 - 依存関係スキャンジョブ（counts.dependency_scanning_jobs）
