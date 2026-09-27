@@ -73,7 +73,7 @@
         {{- $scratch.Add "wordcount" (countwords ($summary | markdownify | plainify)) }}
     {{- end }}
     {{- range findRE `(?s)\{\{[<%]\s*card\b[^{}]*\s(header|footer)="[^"]+"[^{}]*[>%]\}\}` $source }}
-        {{- $label := replaceRE `(?s)^.*?\s(?:header|footer)="([^"]+)".*$` "$1" . }}
+        {{- $label := replaceRE `(?s)^.*?\s(header|footer)="([^"]+)".*$` "$2" . }}
         {{- $scratch.Add "wordcount" (countwords ($label | markdownify | plainify)) }}
     {{- end }}
     {{- /* This Markdown shortcode renders its words from data, not from page source. */ -}}
