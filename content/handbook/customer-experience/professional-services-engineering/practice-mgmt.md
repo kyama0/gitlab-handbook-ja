@@ -94,7 +94,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
   - edEx、EdCast Leapest Marketplace、LinkedIn、Dice.com
   - ブログ記事 -- GitLab およびサードパーティサイト（StackOverflow、FB など）
 
-## プラクティスマネジメント How To
+## プラクティスマネジメントの方法
 
 ### 新しいサービス SKU の作成方法
 

@@ -48,7 +48,8 @@
 {{- range .Site.RegularPages }}
     {{- $page := . }}
     {{- /* Avoid rendering every page from this shortcode, which can deadlock Hugo's content cache. */ -}}
-    {{- $source := replaceRE `(?s)<!--.*?-->` " " .RawContent }}
+    {{- $rawSource := .RawContent }}
+    {{- $source := replaceRE `(?s)<!--.*?-->` " " $rawSource }}
     {{- /* Count the visible content of local includes without rendering their parent pages. */ -}}
     {{- range findRE `\{\{%\s*include\s+"includes/[^"]+"\s*%\}\}` $source }}
         {{- $path := replaceRE `\{\{%\s*include\s+"([^"]+)"\s*%\}\}` "$1" . }}
@@ -548,10 +549,12 @@
         {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
-    {{- $source = replaceRE `(?s)\{\{[%<].*?[>%]\}\}` " " $source }}
-    {{- $renderedSource := $source | markdownify }}
-    {{- /* Raw style/script bodies are hidden; fenced examples are escaped by markdownify and remain visible. */ -}}
+    {{- $rawSource = replaceRE `(?s)\{\{[%<].*?[>%]\}\}` " " $rawSource }}
+    {{- $renderedSource := $rawSource | markdownify }}
+    {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
+    {{- $renderedSource = replaceRE `(?s)<!--.*?-->` " " $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}
+    {{- $renderedSource = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $renderedSource }}
     {{- $scratch.Add "wordcount" (countwords ($renderedSource | plainify)) }}
 {{- end }}
 <tr>
