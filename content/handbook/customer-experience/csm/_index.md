@@ -1,6 +1,6 @@
 ---
-title: "カスタマーサクセスマネジメント ハンドブック"
-description: "GitLab のカスタマーサクセスマネジメントチームはカスタマーサクセス部門の一部であり、顧客の信頼できるアドバイザーとして、より迅速に価値を実現するために支援します。"
+title: "Customer Success Management ハンドブック"
+description: "GitLab の Customer Success Management チームは Customer Success 部門の一部であり、顧客の信頼できるアドバイザーとして、より迅速に価値を実現するために支援します。"
 upstream_path: /handbook/customer-experience/csm/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-## カスタマーサクセスセグメント
+## Customer Success セグメント
 
 [<button class="btn btn-primary" type="button"  style="padding: 15px 30px; font-size: 24px;">CSM AMER</button>](/handbook/customer-experience/csm/segment/amer/)
 [<button class="btn btn-primary" type="button"  style="padding: 15px 30px; font-size: 24px;">CSM EMEA</button>](/handbook/customer-experience/csm/segment/emea/)
@@ -31,7 +31,7 @@ CSM の役割は GitLab の**エッセンシャル**[サクセスティア](/han
 - 現在および将来の GitLab ユースケースにおける顧客のイネーブルメント
 - GitLab からの ROI の拡大
 
-## GitLab における カスタマーサクセスマネージャー（CSM）とは? {#what-is-a-customer-success-manager-csm-at-gitlab}
+## GitLab における Customer Success Manager（CSM）とは? {#what-is-a-customer-success-manager-csm-at-gitlab}
 
 CSM は顧客の採用、測定可能な成果、顧客満足度、そして真の顧客アドボカシーの創出に対して責任を持ちます。顧客のジャーニー全体を通じてイネーブルメント、トレーニング、育成を行うことで成功する顧客を創出します。以下の領域が CSM の職務範囲に含まれます:
 
@@ -249,7 +249,7 @@ CSM が関与する領域の概要については[CSM エンゲージメント�
 
 ### 教育とイネーブルメント
 
-カスタマーサクセスマネジメントでは、製品や関連業界トピックに関する学習を継続的に行うことが重要です。[教育・イネーブルメントハンドブックページ](/handbook/customer-experience/education-enablement)には、活用を推奨するリソースの集約ダッシュボードがあります。
+Customer Success Management では、製品や関連業界トピックに関する学習を継続的に行うことが重要です。[教育・イネーブルメントハンドブックページ](/handbook/customer-experience/education-enablement)には、活用を推奨するリソースの集約ダッシュボードがあります。
 
 ## SFDC の便利なレポート
 
