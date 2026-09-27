@@ -1,5 +1,5 @@
 ---
-description: "このページでは、顧客のヘルスを考慮するための要素、適切な評価の選択ガイドライン、コミュニケーションガイドライン、CSMの責任、アカウントトリアージのIssue作成手順について説明します。"
+description: "このページでは、顧客のヘルスを考慮するための要素、適切な評価の選択ガイドライン、コミュニケーションガイドライン、CSM の責任、アカウントトリアージの Issue 作成手順について説明します。"
 title: "顧客ヘルスの評価と管理"
 upstream_path: /handbook/customer-experience/csm/health-score-triage/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244

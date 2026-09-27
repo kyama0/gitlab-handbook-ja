@@ -57,7 +57,7 @@ SAE/ISR は[Professional Services Only Opportunity を作成](/handbook/sales/fi
 
 上記の手順に従った後、`Generate PDF` をクリックして、署名のために顧客と共有する Order Form を取得します。AE は顧客と会ってサービスの成果物、期間、価格を確認し、カスタマイズが不要であることを確認すべきです。必要に応じて、再度 EM の支援を得ることができます。
 
-### Custom-Scoped Services {#custom-scoped-services}
+### カスタムスコープサービス {#custom-scoped-services}
 
 アカウントチーム（SAE/ISR/SA/CSM）が、顧客が[フルカタログ](https://about.gitlab.com/services/catalog/)に記載されているもの以外のサービスを必要とすると判断した場合は、標準の親ライセンスまたはサブスクリプション Opportunity から `Create Services Opportunity` ボタンを使用して、子の PS Opportunity を作成し、PS Epic と関連スコーピング Issue の作成を開始します。これにより、[アサインされた PS Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) のキューに Issue が追加され、次のステップについてフォローアップされます。カスタムスコープの契約に関する詳細は、[詳細手順](#custom-scoped-services-detailed-workflow) を参照してください。
 
@@ -83,7 +83,7 @@ Deal Desk は、上記いずれのサービスオプションでも見積を必�
 
 SFDC で GitLab プロフェッショナルサービス Opportunity を作成した後、何らかの理由で作業がパートナーによる販売・提供に移行した場合は、SFDC のプロフェッショナルサービス Opportunity を **「closed lost」** に更新することを忘れないでください。次に、その作業に対してパートナーが登録する Services Attach Registration が、SFDC の関連するライセンス Opportunity に必ず紐付けられるようにします。このプロセスについて質問があれば、（SFDC のパートナーアカウントで確認できる）パートナー担当の Channel Account Manager と連携してください。
 
-### Custom-Scoped Services 詳細ワークフロー {#custom-scoped-services-detailed-workflow}
+### カスタムスコープサービスの詳細ワークフロー {#custom-scoped-services-detailed-workflow}
 
 1. アカウントチーム: 標準のライセンスまたはサブスクリプション親 Opportunity から `Create Services Opportunity` ボタンを使用して、子の PS Opportunity を作成します。
 1. SA/CSM: 顧客要件に関する初期スコーピング詳細を、自動生成されるスコーピング Issue に追加します。

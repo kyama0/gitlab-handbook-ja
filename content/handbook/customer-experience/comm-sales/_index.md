@@ -46,7 +46,7 @@ SA を使用したすべてのコマーシャルセールスのセールスエ�
 
 シームレスなカスタマージャーニーには、顧客成果に焦点を当てた GitLab の各役割間での関連情報の継続的な流れが必要です。以下は、必要となる可能性がある役割間の情報移転の例です。
 
-### CSM ハンドオフ
+### CSM ハンドオフ {#csm-handoffs}
 
 - [CSM から CSM へのハンドオフ](/handbook/customer-experience/csm/account-handoff/)
 - [プリセールスから CSM へのハンドオフ](/handbook/customer-experience/pre-sales-post-sales-transition/#csm-transition-process)

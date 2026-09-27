@@ -56,6 +56,15 @@
             {{- $scratch.Add "wordcount" (countwords ($included | markdownify | plainify)) }}
         {{- end }}
     {{- end }}
+    {{- /* Alert titles and panel headers are visible even though their shortcode attributes are removed below. */ -}}
+    {{- range findRE `(?s)\{\{[<%]\s*alert\b[^{}]*\stitle="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*panel\b[^{}]*\sheader="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $header := replaceRE `(?s)^.*?\sheader="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($header | markdownify | plainify)) }}
+    {{- end }}
     {{- /* This Markdown shortcode renders its words from data, not from page source. */ -}}
     {{- range findRE `\{\{%\s*all-tech-stack\s*%\}\}` $source }}
         {{- range site.Data.public.tech_stack }}

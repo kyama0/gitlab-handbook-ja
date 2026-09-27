@@ -78,7 +78,7 @@ Professional Services を顧客に対してどのようにポジショニング�
 
 ##### 見積もり作成
 
-- アカウントチーム（SAE/ISR/SA/CSM）は、標準の親 SFDC Opportunity から `Create Services Opportunity` ボタンを使って、新しい Professional Services Epic と関連する子のスコーピング Issue を作成することでプロセスを開始できます（[上記参照](#sales-rep-および-sa-向け-professional-services-の発注方法)）。スコーピング Issue 上に SSOT のテーブルが表示され、これがスコーピングプロセスを駆動します。SA/CSM は最初に顧客と協力してこれをできる限り埋めてください。Professional Services Engagement Manager は提供されたインプットを基に Estimate を作成し、レビュー用のリンクを提供します。
+- アカウントチーム（SAE/ISR/SA/CSM）は、標準の親 SFDC Opportunity から `Create Services Opportunity` ボタンを使って、新しい Professional Services Epic と関連する子のスコーピング Issue を作成することでプロセスを開始できます（[上記参照](#for-sales-reps-and-sas-how-to-order-professional-services)）。スコーピング Issue 上に SSOT のテーブルが表示され、これがスコーピングプロセスを駆動します。SA/CSM は最初に顧客と協力してこれをできる限り埋めてください。Professional Services Engagement Manager は提供されたインプットを基に Estimate を作成し、レビュー用のリンクを提供します。
 
 ##### SOW 作成
 

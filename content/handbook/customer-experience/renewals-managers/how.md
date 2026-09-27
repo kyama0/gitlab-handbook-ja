@@ -188,7 +188,7 @@ Order Type は以下のために使用します:
 
 これは、Salesforce の Requesting Internal Support ワークフローと、Order Type の変更を機会の Request Support → Sales Ops から依頼するよう定めた Go To Market RoE のガイダンスに従っています。
 
-## チャーン例外
+## チャーン例外 {#churn-exceptions}
 
 - チャーン例外は可能ですが、保証はされません。各状況は個別に検討されます。チャーン例外として検討される一般的なシナリオは次のとおりです:
   1. 誤って表現された、または一時的なチャーン/縮小
