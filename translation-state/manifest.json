@@ -38528,6 +38528,806 @@
       "model": "codex",
       "input_hash": "4707f9cf6d0423173186e1f7825e6e650c6e2a004a7eb7375bbc5ccadc47bf14"
     },
+    "content/handbook/customer-experience/customer-content.md": {
+      "path": "content/handbook/customer-experience/customer-content.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b666eebc4d9cb25b022990cb9e66dc2b421101f1992592ff0c0b77afdac56978"
+    },
+    "content/handbook/customer-experience/pre-sales-post-sales-transition.md": {
+      "path": "content/handbook/customer-experience/pre-sales-post-sales-transition.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "bce7245648bdf91bc8c8e324dd499a5dfa2763d01dbc1b0511609a272957116a"
+    },
+    "content/handbook/customer-experience/apj-customer-success.md": {
+      "path": "content/handbook/customer-experience/apj-customer-success.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "3f2fd2770c03417c2d910d83101165b11567ad9f6982d9e29cb518ea0c1754f3"
+    },
+    "content/handbook/customer-experience/submitting-customer-feedback.md": {
+      "path": "content/handbook/customer-experience/submitting-customer-feedback.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "6da1c8a54ecd902ecc49286c8706e7ed19b5913a912ac1bd31b89117f7536b5b"
+    },
+    "content/handbook/customer-experience/gitlab-university.md": {
+      "path": "content/handbook/customer-experience/gitlab-university.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "04b7753afc947e5f816540b4fd18406ee5694d7a0eb3b3c054c9a4fb4b03160b"
+    },
+    "content/handbook/customer-experience/reporting-and-dashboarding-framework.md": {
+      "path": "content/handbook/customer-experience/reporting-and-dashboarding-framework.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9d0a1d303be80d298e9564efe48a30ec759615943506dee860b127723746e5b1"
+    },
+    "content/handbook/customer-experience/education-enablement.md": {
+      "path": "content/handbook/customer-experience/education-enablement.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "1b3ba3a6ba474c53366a8ab835229078f49727880d0d1a6bf31e6d0e278a3a71"
+    },
+    "content/handbook/customer-experience/gitlab-training-seminar.md": {
+      "path": "content/handbook/customer-experience/gitlab-training-seminar.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "15cf021fa6667d4f74d0619f598af1fcdbbb6a81011914164002d04973532b20"
+    },
+    "content/handbook/customer-experience/initiatives/communities-of-practice.md": {
+      "path": "content/handbook/customer-experience/initiatives/communities-of-practice.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "114680245a2d7a1fe7c8c6de02ce7b3a5a0e5c7b5d5a46b13bb882588136c617"
+    },
+    "content/handbook/customer-experience/customer-onboarding/index.md": {
+      "path": "content/handbook/customer-experience/customer-onboarding/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4177d942ac1413432cecf0496b7606616d242bf50ba1e22d6d8b4481e879ceb7"
+    },
+    "content/handbook/customer-experience/csm/fy24.md": {
+      "path": "content/handbook/customer-experience/csm/fy24.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9ee16e3a22f9059f4f64b2d37ddd48ffb67e3380d19523c5ddb441389972566f"
+    },
+    "content/handbook/customer-experience/csm/executive-relationships.md": {
+      "path": "content/handbook/customer-experience/csm/executive-relationships.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "f6d660064ebb24f97d3f115a4edc8f0bb5d0ee1a50f01b70e3550de3e9813b5f"
+    },
+    "content/handbook/customer-experience/csm/aspiring-leaders-program.md": {
+      "path": "content/handbook/customer-experience/csm/aspiring-leaders-program.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8076038e43f58787f5ca5da7f4ba6bddefd5f493b737f7ed264e57f0ffd60746"
+    },
+    "content/handbook/customer-experience/csm/roleplays.md": {
+      "path": "content/handbook/customer-experience/csm/roleplays.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8d8f6c2d76d8683c6eed648c9c5e720ebd083d4620fee62e5a77511793726059"
+    },
+    "content/handbook/customer-experience/csm/service-ping-faq.md": {
+      "path": "content/handbook/customer-experience/csm/service-ping-faq.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8db9391d9b957954f3c77008c78a60624bdb5b0f8a3606c35b0cb5fb12549134"
+    },
+    "content/handbook/customer-experience/csm/pto.md": {
+      "path": "content/handbook/customer-experience/csm/pto.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "780d6c7c961c457d45ce4f6860b53532f295659746fa577ed72f76d799e8353b"
+    },
+    "content/handbook/customer-experience/csm/fy23.md": {
+      "path": "content/handbook/customer-experience/csm/fy23.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b773fd8306ab47df28c51a77ccac9817516e5706f84a4ffb8de3b14c593fe61d"
+    },
+    "content/handbook/customer-experience/csm/csm-okrs.md": {
+      "path": "content/handbook/customer-experience/csm/csm-okrs.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a46607ac76f6255cf661b50f32f7a6546de32da80ea1d9e945747bb2475c69ba"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/remote-training-tips.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/remote-training-tips.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8b2a3eefd7005b47b9f608d4bc6a8f584fab5ee44b56de511fffced1994c0543"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/gitlab-certified-training-partner-award.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/gitlab-certified-training-partner-award.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a982fb467db1612757049eb3b02c5c8217820c7423a533f600fe52f6d4eadb5d"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/development-environment.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/development-environment.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "2316aa22a621d0fa98bf7ed5bc718361b9de0d5487707a69264f95536278235a"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-tooling.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-tooling.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "627faf541c4d00349ea81e1acce5e77fa1bbc32674cb75a156f6ff9fbc4d16bd"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/remote-training-session-setup.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/remote-training-session-setup.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "f462ed87f22fb8368fda4458cb2a4fae8b7481d6fadaed7c71e07137aa877043"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/framework.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/framework.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "aa10f4cccef2e2786429a27f30401e8ee85d7d03fc635a2c7438c94b92a00967"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/sales-enablement.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/sales-enablement.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "1fb31732561d984f21fdee757898285e6563c8b5af14e2e8f54f85b8fa31d13e"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/offerings.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/offerings.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "70d8e661f54121bc5ad0d9b774ce1a8c2e4bb17c18e2678f3a31faa044d2d36e"
+    },
+    "content/handbook/customer-experience/product-usage-data/freemium-saas-usage-data.md": {
+      "path": "content/handbook/customer-experience/product-usage-data/freemium-saas-usage-data.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4ac19d1c3208637ebac040ba5032d4388815029e68091be8e620ea91f3c75791"
+    },
+    "content/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight.md": {
+      "path": "content/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "415de813b700270cecb6d70d38fa0b2817343eef6d5c32c42823cdf7589db6dc"
+    },
+    "content/handbook/customer-experience/product-usage-data/maturity-scoring.md": {
+      "path": "content/handbook/customer-experience/product-usage-data/maturity-scoring.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "373d8b060fc37307100775dc29ef4bdf1dfbba873e49908b6081980e13b11695"
+    },
+    "content/handbook/customer-experience/demo-systems/onboarding.md": {
+      "path": "content/handbook/customer-experience/demo-systems/onboarding.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "190754c276712f047b2a11c03e91773ab2e7e21463365c68461e0a5870fbaf54"
+    },
+    "content/handbook/customer-experience/playbooks/server-migrations.md": {
+      "path": "content/handbook/customer-experience/playbooks/server-migrations.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b6162e8fdcf80fa0bfa96ad375053328fc81588c37c800b34767daecec9b9877"
+    },
+    "content/handbook/customer-experience/playbooks/cd-release.md": {
+      "path": "content/handbook/customer-experience/playbooks/cd-release.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "0a33f6b385364a3672f91730d574688c7c2c1a96693371cc1560b6a33560ba0f"
+    },
+    "content/handbook/customer-experience/playbooks/ci-verify.md": {
+      "path": "content/handbook/customer-experience/playbooks/ci-verify.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "ee8d05a679a84e5695ea8a5c43f47e9bb9d29d420941b1cc751a31cb6f95a852"
+    },
+    "content/handbook/customer-experience/education-services/gitlab-education-services-support.md": {
+      "path": "content/handbook/customer-experience/education-services/gitlab-education-services-support.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "998153adf0d818d9fe7cd5a520bb880af3d9d64270d98d00d5b71b023387167c"
+    },
+    "content/handbook/customer-experience/workshops/ci-workshop.md": {
+      "path": "content/handbook/customer-experience/workshops/ci-workshop.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "cab82454066477532318aabd0803c33920cbead2fa01576cdd64b9e5293510a8"
+    },
+    "content/handbook/customer-experience/workshops/innersource-workshop.md": {
+      "path": "content/handbook/customer-experience/workshops/innersource-workshop.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "16a522f0990db2dff31fcac64d3eee56d8b2b1588d803ed4f786bb404448dd76"
+    },
+    "content/handbook/customer-experience/renewals-managers/rm-onboarding.md": {
+      "path": "content/handbook/customer-experience/renewals-managers/rm-onboarding.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9d614d4ce13a4e3f82a10d837662c35ffc93361b91b37b4bfcc53135532a425e"
+    },
+    "content/handbook/customer-experience/renewals-managers/what.md": {
+      "path": "content/handbook/customer-experience/renewals-managers/what.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "767a4ef47ecf78501b90dea1569a186d17801a9b2f4761b5396a9e11a2839821"
+    },
+    "content/handbook/customer-experience/workshops/secure/questionnaire.md": {
+      "path": "content/handbook/customer-experience/workshops/secure/questionnaire.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "5dbbaaf2e79e179e36c30088717099169edc98948329539b81779428dd884314"
+    },
+    "content/handbook/customer-experience/education-services/tech-stack/credly.md": {
+      "path": "content/handbook/customer-experience/education-services/tech-stack/credly.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "58ff703a22335f424fbfafab6c3b7283669f4b64502aa5c2c9e16c15db800ed8"
+    },
+    "content/handbook/customer-experience/demo-systems/environments/training-cloud.md": {
+      "path": "content/handbook/customer-experience/demo-systems/environments/training-cloud.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "c306e50e8de9b9189b461ba2b24c7847bb4c028f5dacc86191d2aee8593b1684"
+    },
+    "content/handbook/customer-experience/demo-systems/infrastructure/networking.md": {
+      "path": "content/handbook/customer-experience/demo-systems/infrastructure/networking.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fd22fcd716706b4445788cc754d1b5ac7fef05bfb7e1abb6e96da6214be2fc3a"
+    },
+    "content/handbook/customer-experience/demo-systems/infrastructure/kubernetes.md": {
+      "path": "content/handbook/customer-experience/demo-systems/infrastructure/kubernetes.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "f3e9eba387b466e17768d47a536414472d1fa68fcd6ed000196e18b233d43097"
+    },
+    "content/handbook/customer-experience/demo-systems/tutorials/getting-started/configuring-group-cluster.md": {
+      "path": "content/handbook/customer-experience/demo-systems/tutorials/getting-started/configuring-group-cluster.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "17994c4c3174e7e2fd1b57489871344949ae7d3f562572bfed35605297407228"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/tracking-opps.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/tracking-opps.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "5c5a1bf95e45f571c5d7a68033d5beb59db4147ef43e45a7e713e620e6ea6848"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/sow-processing.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/sow-processing.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "2d78b727eb616e1a8a763d91e4ff5fc5562d6dd91dca664177b8ff5794ca23a3"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/aws-marketplace.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/aws-marketplace.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "42d321df0027346c4fd05779bc3ac674bcc9fa4be85ce4badebd0f4a45ca594a"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/task-prioritization.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/task-prioritization.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "28e5b4cffcc6cfe5d2585cbf48d7c8812e631f1ee25aa84d15f76ce39f95219d"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/technical-architect/index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/technical-architect/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "5f547303e619ae1eb44b19bcda4a408011b32e8a02a3bbaab013ddbed76dfcca"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a9c4a84a2b4379130b19c89129e4fcb986ca7f86cc6b2e0272ec3bdb40c384bf"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab7.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab7.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "e9ee1fdf688495c17d5746e4049a10eca9061489b0727c866ce2f316185522a6"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "13c65fce4b71eeac2afe76dd8b284bdf3110ba814d90766262eb4c98ab6f91f4"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab1k8s.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab1k8s.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "191548e8ef74185a7492f182768e82f524f0a5db39ed4aac9ed2c7aa494c7eaf"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "180d5302cfe545e7476e4316bf69a18d29e21df1c37e52bb2fc49c1fded955a5"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "eab32fd184e0a13d41a271d002344d41cb5354b29dfc4f17ee15aa4a8e36c998"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3k8s.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3k8s.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "c6edd3861c2501843250ce90f2bf4d923184d8c26f77c38e5546e40e8710ece0"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4k8s.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4k8s.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9207754958222f83892f70172c796d36e690bc42eabc6f23d71d002be5535592"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab6.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab6.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "168983ccad7aa9d5fd2acfbb1bab092419046103563c4e2b2fdf2b49f8596230"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2k8s.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2k8s.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4685b51ccd54b0ffc5435b22d362bd52cbfcd45749bc5de2cec877e4457f5479"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab6.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab6.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "61ebfc39e7f5ea6315a31ed99e876a3c47ad773175a0a723580ed8c1afc3e1fa"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "cc66f450d1547cdf44e6ba75cce98c0e14db6204b661c7117eec9afda5213438"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "2314e0d2a0554456dbfd8cc7571c64d82ee309a9e89f9024d6e5616ca6779b28"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "00c49071cdb848f6169ac9510f05a62c45550ec268724938b23116da88a89783"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "ee8818a15173875a3d44b35c2220a127c7ad39abb36d4c63deb01b95d9e5a774"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab6k8s.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab6k8s.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b9c92c3a8bd30338bede1c617915e8d384d7e40aee02bb97b7ee7e0326f92c2e"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fae6533cccc9527c843610e493cb72f6111e80889b1d6695b402f07b11448c34"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab6.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab6.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "dbdaeede64682b4777143cf7d5bc92ea685d9a20546507037d0fdc9044ab3998"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "62fac000aa5e6ceddd1a4af13bf070e591859ab67ae000e5ed6c0efe6c1fb849"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "80b314868329c8b77aa210355f6a3adcdc8a9a558cdb089df57f8dc208704943"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "bf65be3de7e850db2d9d65f324ae24f2c0006da4f4c80dda6563df3c7cc2f941"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "bf99c447d6c7a9f582a0cc3668505726996f094c64602ccaa940d34948dddf1a"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "47aa21331d15f0c3cea5e595cdbe914dfbbb6a75190c1a7195bc871fa90c1f09"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "438a8749614c98ca3c6c121581bf8a9743115dfd5f22fc1ecb590cf074d7a2ce"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "af09e37f803aeb04eb8cc0e9092899fdadd4126c5f4b4aa5e2579fee587f4640"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "5c3d46f7473db50bd069930dc13ad58e4ec013869e293f98b2c8afd7bcd2c136"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "3fb83ca7f5724b181ae37fda2fc014d85bb82a1455dcc9d6de9599ade8357567"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "ac8b010ecea619865e13c67ecad222a85539cdf2e8bfeb13ac27c286e629e3af"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9d7eaed17bca130cda9191144b49d51bd177a1ddf1fde3216aced34ab8962bb5"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9f4b69777e111d3457fccd4f6f33c247731a05979b23a244272834f96827cdc5"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab6.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab6.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a8627546e826a1b90e976b76e01320e6b5b0541e2d91b6f75cd486223f21c442"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "275af06c38d33d000867a11a83e522792aa1a8068e6187ba4ea1e6ccea5c03fa"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4b52dbd03c76026361b5d440aaf166b35d46df87e93a95a7b6edc483a73e30d8"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "d05d9866373698a91f5fb87ef2fb3b79379b805ea631b9c4c4c7d7b0093ef8e7"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "d5e5f04bb8e0c2aa131cc1ac0aea32b68cf63f9e09f6bee128e18c1bfae02d6f"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "1094b6a7e0fc5c1feff45d5f19147a90ddbde5d0ab8133150b8160275ffad228"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b873e6d5cb951d8abff0e0d054858410ccedbc6faf546ee3e43cd8afd57bb705"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "54441007d97609fbac597f5c211610bc74214a6728bbe1a92687a801901c0385"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5k8s.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5k8s.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fd82da3fe1c620ca0f2de7de2683ad75dad03fa0240ce8cd4c6dc1dd5ec58af3"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "468987fc17ad6d9b32c4c5f4fedeb28e1f475275730577f0d08ca148f221152c"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "e9aad37024a7aeec6a9375ec4eaba82a3d6bc5e3d8c37bf91ef1649962c09ad6"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "1aa7ba054ee2bf50421563f5864bde07ce4ccfb74809f1a1d1709214958b66b5"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab6.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab6.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9d5516fee2067b3f63d0f3ddc2e37923868707651b35ad2251c566571b4abdfa"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "25ba0f2b55fd63b04baeed02c0ad5f86a71b9f96f49675dad2aa729d31ded05c"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "d1f11fed08a93682759e26333ce142e206ea7a46126a6feaf28578c0217fe938"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "34a95db08bf0d770003fa53fa9d1038b4a590aa9ea85a131ea9cff7eb34931c9"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab8.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab8.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4a9c836c7130778a2a6bf41b9c05ea1af3889b01a7d83f06754ae46126ab7311"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "ccfbe697d5768333390ab37b1d9f7f65a8191b751d35df262b343e1f05a31431"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "18a6ea78d736a5aa9bd235bd56982b315a7f060177991f1d70b35253e666ec67"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fb04b432f377ec3f9cfb2f834cfb1e15453aa609440ac813095fec98bcf395f1"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8245a3b3b18530eb4096fb970e43813a7d3742b4e16505c7a76838926df30f6d"
+    },
     "content/handbook/customer-experience/governance-question-bank.md": {
       "path": "content/handbook/customer-experience/governance-question-bank.md",
       "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
