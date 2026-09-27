@@ -49,7 +49,22 @@
     {{- $page := . }}
     {{- /* Avoid rendering every page from this shortcode, which can deadlock Hugo's content cache. */ -}}
     {{- $rawSource := .RawContent }}
-    {{- $source := replaceRE `(?s)<!--.*?-->` " " $rawSource }}
+    {{- /* Scan only executable shortcode calls; fenced examples are counted as literal text below. */ -}}
+    {{- $source := "" }}
+    {{- $insideFence := false }}
+    {{- range $i, $segment := split $rawSource "```" }}
+        {{- if gt $i 0 }}
+            {{- $insideFence = not $insideFence }}
+        {{- end }}
+        {{- if $insideFence }}
+            {{- range findRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` $segment }}
+                {{- $scratch.Add "wordcount" (countwords .) }}
+            {{- end }}
+        {{- else }}
+            {{- $source = printf "%s %s" $source $segment }}
+        {{- end }}
+    {{- end }}
+    {{- $source = replaceRE `(?s)<!--.*?-->` " " $source }}
     {{- /* Count the visible content of local includes without rendering their parent pages. */ -}}
     {{- range findRE `\{\{%\s*include\s+"includes/[^"]+"\s*%\}\}` $source }}
         {{- $path := replaceRE `\{\{%\s*include\s+"([^"]+)"\s*%\}\}` "$1" . }}
@@ -95,6 +110,14 @@
     {{- range findRE `(?s)\{\{[<%]\s*youtube\b[^{}]*\stitle="[^"]+"[^{}]*[>%]\}\}` $source }}
         {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*youtube\b[^{}]*[>%]\}\}` $source }}
+        {{- if not (findRE `\btitle\s*=` .) }}
+            {{- $scratch.Add "wordcount" (countwords "YouTube video") }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*note\b[^{}]*[>%]\}\}` $source }}
+        {{- $scratch.Add "wordcount" (countwords "Note:") }}
     {{- end }}
     {{- range findRE `(?s)\{\{[<%]\s*(panel|tab)\b[^{}]*\sheader="[^"]+"[^{}]*[>%]\}\}` $source }}
         {{- $header := replaceRE `(?s)^.*?\sheader="([^"]+)".*$` "$1" . }}
@@ -605,18 +628,6 @@
         {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
         {{- $rendered = replaceRE `(?is)>\s*<` "> <" $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
-    {{- end }}
-    {{- /* Count shortcode examples in fenced code before removing executable calls. */ -}}
-    {{- $insideFence := false }}
-    {{- range $i, $segment := split $rawSource "```" }}
-        {{- if gt $i 0 }}
-            {{- $insideFence = not $insideFence }}
-        {{- end }}
-        {{- if $insideFence }}
-            {{- range findRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` $segment }}
-                {{- $scratch.Add "wordcount" (countwords .) }}
-            {{- end }}
-        {{- end }}
     {{- end }}
     {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $rawSource }}
     {{- $renderedSource := $rawSource | markdownify }}

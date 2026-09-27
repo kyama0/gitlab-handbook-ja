@@ -69,7 +69,7 @@ GitLab のプロフェッショナルサービスチームは、貴社の GitLab
 - [マイグレーション](https://about.gitlab.com/services/migration/)（SCM データおよびユーザーマイグレーション）
 - [エデュケーション](https://about.gitlab.com/services/education/)（ベーシック、CI/CD、Admin）
 
-### gitlab.com に移行する SMB〜ミッドマーケット
+### GitLab.com に移行する SMB〜ミッドマーケット
 
 これらの顧客は通常、ツールチェーンタックスを削減するためのオールインワンの SDLC プラットフォームの利点のために GitLab に移行します。
 

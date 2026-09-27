@@ -60,7 +60,7 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 
 ### マイグレーションサービス
 
-- gitlab.com へのマイグレーションはすべて、gitlab.com にユーザーを作成するために管理者トークンが必要なため、PSE の関与が必要です
+- GitLab.com へのマイグレーションはすべて、GitLab.com にユーザーを作成するために管理者トークンが必要なため、PSE の関与が必要です
 - パートナー（Indirect）（プロジェクトベースおよび人員補強）は [Congregate](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate) およびサポート自動化ユーティリティを使用できます。
 - パートナーがマイグレーションプロジェクトを開始する際、[Migration Plan](https://docs.google.com/document/d/1w3srV4CZQbNMqqMymH0l1CJhY2g33-p2rkmNm8Be3Bk/template/preview) または [Migration Delivery Kit](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits/migration-delivery-kits) を使用してデリバリーディスカッションを促進できます。
 - [Congregate](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate) を使用する際は、どこかにデプロイする必要があります。顧客のファイアウォール内にデプロイする必要がある場合は、マイグレーションサービスのソースコードに加えたホットフィックスをマイグレーションサービスプロジェクトに必ずポートバックしてください。
