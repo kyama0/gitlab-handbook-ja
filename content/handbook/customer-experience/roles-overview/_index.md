@@ -23,7 +23,7 @@ GitLab には、プリセールスからポストセールスのジャーニー�
 | **[PSE](/handbook/customer-experience/professional-services-engineering/)** | プロジェクトベースの実装と移行 | SOW のもとでのインストール、移行、カスタム開発、トレーニング | プロジェクトスコープ、PS Engagement Management が販売 | 明示的にハンズオン — 「キーボードに手を置く」ことができる |
 | **[Renewals Manager (RM)](/handbook/customer-experience/renewals-managers/)** | リニューアル時点の所有; 顧客維持 | リニューアルパイプライン、契約、プレイブック、リスクと拡大 | CS 内のグローバルリニューアル組織 | コマーシャルおよびディール焦点 |
 | **[Solutions Architect (SA)](/handbook/solutions-architects/)** | プリセールスの技術的勝利 | ディスカバリー、デモ、POC、プリセールスサクセスプラン | AE に整列、機会ごとに関与 | アドバイザリーおよびデモンストレーション |
-| **[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)** | Signature ティアのお客様向けの、プロアクティブなプラットフォームの安定性、アーキテクチャアドバイザリー、複雑なサポートのオーナーシップ | アーキテクチャの強化、パフォーマンス最適化、プラットフォームエンジニアリングアドバイザリー、複雑なサポートチケットの所有 | Signature ティアの指定 | 全体的なアーキテクチャやプラットフォーム改善についてアドバイスする指名サポートコンタクト — 手は出さないが、推奨事項に対して非常に処方的になり得る; アーキテクチャやシステム制限を学ぶにつれて、ますますプロアクティブになる |
+| **[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)** | Signature ティアのお客様向けの、プロアクティブなプラットフォームの安定性、アーキテクチャアドバイザリー、複雑なサポートのオーナーシップ | アーキテクチャの強化、パフォーマンス最適化、プラットフォームエンジニアリングアドバイザリー、複雑なサポートチケットの所有 | Signature ティアの指定 | 全体的なアーキテクチャやプラットフォーム改善についてアドバイスする指名サポートコンタクト — 手は出さないが、非常に具体的かつ指示的な推奨事項を提示できる; アーキテクチャやシステム制限を学ぶにつれて、ますますプロアクティブになる |
 
 ## 主要な区別
 

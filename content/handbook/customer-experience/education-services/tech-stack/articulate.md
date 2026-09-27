@@ -1,6 +1,6 @@
 ---
-title: "Articulate 360 テックスタックガイド"
-description: "Articulate 360 コンテンツオーサリングツールのテックスタックガイドです。"
+title: "Articulate 360 Tech Stack ガイド"
+description: "Articulate 360 コンテンツオーサリングツールの Tech Stack ガイドです。"
 upstream_path: /handbook/customer-experience/education-services/tech-stack/articulate/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-テックスタックの唯一の情報源は [Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリについての詳細情報が含まれています。
+Tech Stack の唯一の情報源は [Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリについての詳細情報が含まれています。
 
 {{% tech-stack "Articulate 360" %}}
 
