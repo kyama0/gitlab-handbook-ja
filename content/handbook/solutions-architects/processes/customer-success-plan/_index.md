@@ -47,7 +47,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 相互カスタマーサクセスプランは、ステージ 4より前のいずれかの時点で顧客とレビューされ、受け入れられる必要があります。
 
-### 相互カスタマーサクセスプランを作成・レビューする商談の閾値？
+### 相互カスタマーサクセスプランを作成・レビューする商談の閾値？ {#opportunity-thresholds-for-creating-and-reviewing-mutual-customer-success-plans}
 
 1. ステージ 2（技術評価）以降にあり、$100k net ARR 以上のすべてのファーストオーダーまたは成長商談。*（SA が DRI で、CSM に引き継がれます）*
 1. SA が [*SA Validated Tech Evaluation*](/handbook/solutions-architects/processes/activity-capture/sfdc-logging/#sa-validated-tech-evaluation) に関与しているすべての商談。これは、ソリューションアーキテクトが真の [テクニカルウィン](/handbook/solutions-architects/processes/technical-win/) に向けて取り組んでいることを意味します。
