@@ -1,5 +1,5 @@
 ---
-title: "CSM オペレーションマネージャー"
+title: "CSM Operations Manager"
 description: "CSM チームのオペレーションを管理する地域ロール。"
 upstream_path: /handbook/customer-experience/csm/csm-manager/roles/operations-manager/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
@@ -11,9 +11,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## 概要
 
-オペレーションマネージャーは地域ロールであり、[シニア CSM マネージャー](/job-description-library/sales/customer-success-management/#senior-customer-success-manager) が担います。オペレーションマネージャーは [CSM 地域ディレクター](/job-description-library/sales/customer-success-leadership/#director-of-customer-success) と連携して、オペレーション計画が明確に定義され、地域内チーム全体で一貫性が確立・維持されるよう努めます。また、地域内の [CSM マネージャー](/job-description-library/sales/customer-success-management/#manager-customer-success-managers) と協力してオペレーション計画を実施し、ガイダンスを提供し、チーム全体でのオペレーションの一貫性を確認します。
+Operations Manager は地域ロールであり、[Senior CSM Manager](/job-description-library/sales/customer-success-management/#senior-customer-success-manager) が担います。Operations Manager は [CSM Regional Director](/job-description-library/sales/customer-success-leadership/#director-of-customer-success) と連携して、オペレーション計画が明確に定義され、地域内チーム全体で一貫性が確立・維持されるよう努めます。また、地域内の [CSM Manager](/job-description-library/sales/customer-success-management/#manager-customer-success-managers) と協力してオペレーション計画を実施し、ガイダンスを提供し、チーム全体でのオペレーションの一貫性を確認します。
 
-このロールは、シニア CSM マネージャーとしてのチーム [マネジメント責務](/job-description-library/sales/customer-success-management/#senior-csm-responsibilities) に加えて担うものです。
+このロールは、Senior CSM Manager としてのチーム [マネジメント責務](/job-description-library/sales/customer-success-management/#senior-csm-responsibilities) に加えて担うものです。
 
 ## 責務
 

@@ -1,6 +1,6 @@
 ---
-title: "CSM マネージャーハンドブック"
-description: "標準的・定期的なプラクティスに関する CSM マネージャー向けフィールドガイド。"
+title: "CSM Manager ハンドブック"
+description: "標準的・定期的なプラクティスに関する CSM Manager 向けフィールドガイド。"
 upstream_path: /handbook/customer-experience/csm/csm-manager/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -22,22 +22,22 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | 名前 | 地域 | レベル | チーム |
 |---|---|---|---|
 | [Sherrod Patching](https://gitlab.com/spatching) | グローバル | VP | CS |
-| [Ally Frusciano](https://gitlab.com/afrusciano) | グローバル | ディレクター | CSE |
-| [Erica Sivak](https://gitlab.com/esivak) | AMER | シニアマネージャー | CSE |
-| [Oliver Falk](https://gitlab.com/ofalk) | EMEA | マネージャー | CSE |
-| [Catherine Ballantyne](https://gitlab.com/cballantyne) | APJ | ディレクター | CSM/E |
-| [Kent Georgeson](https://gitlab.com/kgeorgeson) | グローバル | ディレクター | Success Services |
-| [Sophie Pouliquen](https://gitlab.com/spouliquen1) | AMER East | シニアマネージャー | CSM |
-| [Chloe Whitestone](https://gitlab.com/chloe) | AMER East | マネージャー | CSM |
-| [Tiffany McAtee](https://gitlab.com/tiffanymcatee.gitlab) | AMER East | シニアマネージャー | CSM |
-| [Jamie Reid](https://gitlab.com/jrreid) | AMER West | マネージャー | CSM |
-| [Cedric Stapleton](https://gitlab.com/c.stapleton) | AMER West | マネージャー | CSM |
-| [Michael Leutz](https://gitlab.com/mrleutz) | EMEA | ディレクター | CSM |
-| [Christina Souleles](https://gitlab.com/csouleles) | DACH | シニアマネージャー | CSM |
-| [Robert Clark](https://gitlab.com/robclark14) | PubSec | マネージャー | CSM & CSE |
-| [Steven Terhar](https://gitlab.com/steveterhar) | PubSec | マネージャー | CSM & CSE |
+| [Ally Frusciano](https://gitlab.com/afrusciano) | グローバル | Director | CSE |
+| [Erica Sivak](https://gitlab.com/esivak) | AMER | Senior Manager | CSE |
+| [Oliver Falk](https://gitlab.com/ofalk) | EMEA | Manager | CSE |
+| [Catherine Ballantyne](https://gitlab.com/cballantyne) | APJ | Director | CSM/E |
+| [Kent Georgeson](https://gitlab.com/kgeorgeson) | グローバル | Director | Success Services |
+| [Sophie Pouliquen](https://gitlab.com/spouliquen1) | AMER East | Senior Manager | CSM |
+| [Chloe Whitestone](https://gitlab.com/chloe) | AMER East | Manager | CSM |
+| [Tiffany McAtee](https://gitlab.com/tiffanymcatee.gitlab) | AMER East | Senior Manager | CSM |
+| [Jamie Reid](https://gitlab.com/jrreid) | AMER West | Manager | CSM |
+| [Cedric Stapleton](https://gitlab.com/c.stapleton) | AMER West | Manager | CSM |
+| [Michael Leutz](https://gitlab.com/mrleutz) | EMEA | Director | CSM |
+| [Christina Souleles](https://gitlab.com/csouleles) | DACH | Senior Manager | CSM |
+| [Robert Clark](https://gitlab.com/robclark14) | PubSec | Manager | CSM & CSE |
+| [Steven Terhar](https://gitlab.com/steveterhar) | PubSec | Manager | CSM & CSE |
 
-## CSM マネージャーの職責と要件
+## CSM Manager の職責と要件
 
 <table>
 <thead>
@@ -55,17 +55,17 @@ lastmod: "2026-09-24T21:34:11+02:00"
   </tr>
   <tr>
     <td>レビューとコーチング</td>
-    <td><ul><li>CSM マネージャーが上記の要件について CSM を積極的にコーチングすることが重要</li><li>マネージャーは、コーチングの機会のために顧客コールアジェンダ、サクセスプラン、ワークショップ、アカウント健全性のレビューに時間を確保することが奨励されている。詳細は以下を参照</li></ul></td>
+    <td><ul><li>CSM Manager が上記の要件について CSM を積極的にコーチングすることが重要</li><li>マネージャーは、コーチングの機会のために顧客コールアジェンダ、サクセスプラン、ワークショップ、アカウント健全性のレビューに時間を確保することが奨励されている。詳細は以下を参照</li></ul></td>
     <td>マネージャーは<a href="/handbook/customer-experience/csm/csm-manager/#customer-onboarding-review">文書化されたレビューガイドライン</a>に従い、1:1 の外でレビューを行う</td>
   </tr>
   <tr>
     <td>コールレビュー</td>
-    <td><ul><li>コーチングのために、CSM マネージャーは CSM のコールをレビューする</li><li>CSM がレビューのためにコールを提案することが推奨される。特に非常によくいったコールや課題があったコールを取り上げ、コーチングについて話し合うことが CSM にとって価値がある</li></ul></td>
+    <td><ul><li>コーチングのために、CSM Manager は CSM のコールをレビューする</li><li>CSM がレビューのためにコールを提案することが推奨される。特に非常によくいったコールや課題があったコールを取り上げ、コーチングについて話し合うことが CSM にとって価値がある</li></ul></td>
     <td>チームの Chorus から週 1 〜 2 件のコール</td>
   </tr>
   <tr>
     <td>チーム開発（四半期ごと）</td>
-    <td><ul><li>マネージャーは IDP と進捗/障害を話し合うための追加の 1 時間の同期をスケジュールする</li><li>CSM がこのドキュメントをマネージャーとのパートナーシップで構築・維持する責任を持つ</li><li>CSM が昇進に向けて取り組んでいる場合、昇進ドキュメントは CSM と CSM マネージャーのパートナーシップで構築・協力される。昇進に向けて開発が必要な領域を明確に伝えることがマネージャーの役割</li></ul></td>
+    <td><ul><li>マネージャーは IDP と進捗/障害を話し合うための追加の 1 時間の同期をスケジュールする</li><li>CSM がこのドキュメントをマネージャーとのパートナーシップで構築・維持する責任を持つ</li><li>CSM が昇進に向けて取り組んでいる場合、昇進ドキュメントは CSM と CSM Manager のパートナーシップで構築・協力される。昇進に向けて開発が必要な領域を明確に伝えることがマネージャーの役割</li></ul></td>
     <td>すべてのチームメンバーにアクティブな IDP があり、四半期ごとにレビューされる</td>
   </tr>
   <tr>
@@ -78,11 +78,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## レビュープロセス
 
-以下は、CSM マネージャーが定期的なケイデンスで実行するトッププロセスのいくつかです。全体的な目標は、CSM マネージャーがさまざまなデータポイント（健全性、サポートチケット、オンボーディングオブジェクト、更新など）を通じてチームの顧客グループをしっかりと把握することです。参照しやすいようにダッシュボードと動画のリソースが含まれています。
+以下は、CSM Manager が定期的なケイデンスで実行するトッププロセスのいくつかです。全体的な目標は、CSM Manager がさまざまなデータポイント（健全性、サポートチケット、オンボーディングオブジェクト、更新など）を通じてチームの顧客グループをしっかりと把握することです。参照しやすいようにダッシュボードと動画のリソースが含まれています。
 
 ### レビューチェックリスト
 
-CSM マネージャーのために、レビューを支援する簡単なチェックリストを以下に示します:
+CSM Manager のために、レビューを支援する簡単なチェックリストを以下に示します:
 
 - [アカウント割り当て:](#account-assignment) アカウントがレビューされ、割り当てられているかレビュー中である
 - [顧客オンボーディング:](#customer-onboarding-review) オンボーディングフェーズの顧客がレビューされ、オンボーディングステータスとメモが完了している
@@ -92,15 +92,15 @@ CSM マネージャーのために、レビューを支援する簡単なチェ�
 
 ### アカウント割り当て {#account-assignment}
 
-アカウントは、新しいアカウントが[CSM の職責とサービス](/handbook/customer-experience/csm/services/#csm-alignment)の基準に合致した場合、販売時点で CSM マネージャーによって割り当てられます。
+アカウントは、新しいアカウントが[CSM の職責とサービス](/handbook/customer-experience/csm/services/#csm-alignment)の基準に合致した場合、販売時点で CSM Manager によって割り当てられます。
 
 アカウントが基準を満たした場合、以下が行われます:
 
-- CSM マネージャーが Gainsight の C360 アカウントページの `CSM Name` フィールドを入力して CSM を割り当てる（このフィールドを編集できるのはマネージャーのみ）
+- CSM Manager が Gainsight の C360 アカウントページの `CSM Name` フィールドを入力して CSM を割り当てる（このフィールドを編集できるのはマネージャーのみ）
 - フィールドが CSM 名で更新されると、Gainsight はオンボーディングプレイブックを起動する
-- **もし**アカウントが上記の基準を満たしているにもかかわらず CSM が割り当てられていない場合、Gainsight は CSM マネージャーにアカウントを割り当てるよう求める CTA（コールトゥアクション）を起動する。Gainsight は CSM フィールドが入力されるまで「待機」し、CSM 名でフィールドが更新されると、オンボーディングプレイブックを起動する
+- **もし**アカウントが上記の基準を満たしているにもかかわらず CSM が割り当てられていない場合、Gainsight は CSM Manager にアカウントを割り当てるよう求める CTA（コールトゥアクション）を起動する。Gainsight は CSM フィールドが入力されるまで「待機」し、CSM 名でフィールドが更新されると、オンボーディングプレイブックを起動する
 
-SAE が CSM への移行側面を所有している一方で、CSM マネージャーは新しいアカウントが CSM に割り当てられオンボーディングが開始されていることを確認します。
+SAE が CSM への移行側面を所有している一方で、CSM Manager は新しいアカウントが CSM に割り当てられオンボーディングが開始されていることを確認します。
 
 #### 割り当てリソース
 
@@ -109,7 +109,7 @@ SAE が CSM への移行側面を所有している一方で、CSM マネージ�
 
 ### 顧客オンボーディングレビュー {#customer-onboarding-review}
 
-定期的に、CSM マネージャーはチームのアクティブなオンボーディングプレイをレビューする必要があります。オンボーディングプレイは個別の 1:1 ミーティングで各担当者とレビューできます。オンボーディングは[Time to Value 指標](/handbook/customer-experience/customer-success-vision/#time-to-value-kpis)で測定されます。以下を考慮してください:
+定期的に、CSM Manager はチームのアクティブなオンボーディングプレイをレビューする必要があります。オンボーディングプレイは個別の 1:1 ミーティングで各担当者とレビューできます。オンボーディングは[Time to Value 指標](/handbook/customer-experience/customer-success-vision/#time-to-value-kpis)で測定されます。以下を考慮してください:
 
 1. オンボーディング中のアカウント数とアカウントはどれですか？
 2. Time to Value 指標はどのような状態ですか？
@@ -136,7 +136,7 @@ SAE が CSM への移行側面を所有している一方で、CSM マネージ�
 
 ### サクセスプランレビュー {#success-plan-review}
 
-定期的に、CSM マネージャーはチームの[サクセスプラン](/handbook/customer-experience/csm/success-plans/)をレビューする必要があります。少なくとも、レビューには以下を含めてください:
+定期的に、CSM Manager はチームの[サクセスプラン](/handbook/customer-experience/csm/success-plans/)をレビューする必要があります。少なくとも、レビューには以下を含めてください:
 
 1. 顧客の文書化された戦略は、購入理由と一致していますか？
 1. すべての関係者（SAE/AE、SA、CSM、顧客）は明記された目標に合意していますか？
@@ -145,7 +145,7 @@ SAE が CSM への移行側面を所有している一方で、CSM マネージ�
 1. 顧客はビジネスアウトカムを達成または超える軌道にありますか？
 1. 価値を示す次のステップが定義され、実行されていますか？
 
-CSM マネージャーはチームと連携して、CSM が顧客への価値向上・証明を推進するよう支援してください。
+CSM Manager はチームと連携して、CSM が顧客への価値向上・証明を推進するよう支援してください。
 
 #### サクセスプランリソース
 
@@ -184,7 +184,7 @@ CSM マネージャーはチームと連携して、CSM が顧客への価値向
 - リスクを解決するために達成すべきことを決定する
 - 次のステップとそのアクションのオーナーシップについて合意する
 
-CSM マネージャーはチームメンバーと合意されたアクション項目または顧客の更新について調整し、それらの詳細は CSM が[At-Risk Update](/handbook/customer-experience/csm/health-score-triage/#health-update-template) にキャプチャします。CSM は定義された次のステップを管理・調整します。
+CSM Manager はチームメンバーと合意されたアクション項目または顧客の更新について調整し、それらの詳細は CSM が[At-Risk Update](/handbook/customer-experience/csm/health-score-triage/#health-update-template) にキャプチャします。CSM は定義された次のステップを管理・調整します。
 
 #### 地域レビューアジェンダ {#regional-review-agenda}
 
@@ -209,11 +209,11 @@ CSM マネージャーはチームメンバーと合意されたアクション�
 
 レポートの上部にある `Close Date` の日付範囲を更新して、関連する会計四半期を確認してください。この方法で行うことで、すべての関連する顧客コホートにわたって単一のレポートで作業できます。このミーティングの優先事項は現在の FQ と次の FQ ですが、時間が許す限り他のリスクのある顧客もレビューすべきです。
 
-地域内の CSM マネージャーがミーティングを主導し、各顧客に適切な Renewal Manager リーダーシップと ASM と協力します。ディスカッションとアクションは、`At-Risk Update` の詳細と Renewal Manager のメモを参照して、地域の Salesforce レポートによって促進されるべきです。
+地域内の CSM Manager がミーティングを主導し、各顧客に適切な Renewal Manager リーダーシップと ASM と協力します。ディスカッションとアクションは、`At-Risk Update` の詳細と Renewal Manager のメモを参照して、地域の Salesforce レポートによって促進されるべきです。
 
 ### 更新レビュー {#renewal-review}
 
-少なくとも月 2 回、CSM マネージャーは地域のダッシュボードの今後の更新をレビューし、以下のような質問を確認します:
+少なくとも月 2 回、CSM Manager は地域のダッシュボードの今後の更新をレビューし、以下のような質問を確認します:
 
 1. 今四半期に更新があるものはどれですか？
 1. 次の 2 〜 3 四半期に更新があるものはどれですか？
@@ -221,7 +221,7 @@ CSM マネージャーはチームメンバーと合意されたアクション�
 1. 各アカウントの健全性は最新の状態ですか？
 1. この分析に基づいて、顧客の成功と Gross および Net Retention の目標に向けた次のステップは何ですか？
 
-CSM マネージャーはその後、CSM と連携して GitLab チーム（SAE/AE、SA、CSM）のコラボレーションによる成功した更新を確保してください。
+CSM Manager はその後、CSM と連携して GitLab チーム（SAE/AE、SA、CSM）のコラボレーションによる成功した更新を確保してください。
 
 このレビューは、適切な情報と計画が文書化されていることを確認するために[地域レビューミーティング](#regional-review-agenda)にもつながります。
 
@@ -229,7 +229,7 @@ CSM マネージャーはその後、CSM と連携して GitLab チーム（SAE/
 
 #### 現在の例外プロセス
 
-1. Chatter - CSM マネージャーは Pooled CSM チームの更新のために VP of CSMs *と* Sales-comp に Chatter メッセージを送ります。承認されると、Sales チームが処理してマネージャーへの返信があります。
+1. Chatter - CSM Manager は Pooled CSM チームの更新のために VP of CSMs *と* Sales-comp に Chatter メッセージを送ります。承認されると、Sales チームが処理してマネージャーへの返信があります。
 2. 例外スプレッドシート - [FY23 Deal Exceptions/Accounts Requiring Review CSM](https://docs.google.com/spreadsheets/d/1BsA2Sas7LwtR6r8OY1O3T8cfKius6k_DFuKEXJWoX7U/edit#gid=1297618482)（内部のみ）マネージャーはこのスプレッドシートで更新レート例外を主に説明し、承認を得て、comp チームが処理します。
 
 #### 将来の例外プロセス
@@ -244,13 +244,13 @@ SFDC Chatter を通じた 1 つの例外プロセスに移行します。Sales-c
 
 ## 四半期ビジネスレビュー（QBR）
 
-CSM マネージャーは、各四半期においてチームの[四半期ビジネスレビュー](/handbook/sales/qbrs/)を作成・提供する責任があります。
+CSM Manager は、各四半期においてチームの[四半期ビジネスレビュー](/handbook/sales/qbrs/)を作成・提供する責任があります。
 
-[CSM マネージャー QBR の詳細](/handbook/customer-experience/csm/csm-manager/qbr/)
+[CSM Manager QBR の詳細](/handbook/customer-experience/csm/csm-manager/qbr/)
 
-## ディレクター/CSM マネージャー 1:1 ケイデンスでの Gainsight/顧客レビュー
+## Director/CSM Manager 1:1 ケイデンスでの Gainsight/顧客レビュー
 
-これは、地域の CSM マネージャーが CSM VP との週次 1:1 や、その他の CSM マネージャーの 1:1 ミーティングでも使用できる推奨ケイデンスです。
+これは、地域の CSM Manager が CSM VP との週次 1:1 や、その他の CSM Manager の 1:1 ミーティングでも使用できる推奨ケイデンスです。
 
 `第 1 週`は月の最初の**完全な**週として定義されます。
 
@@ -294,4 +294,4 @@ CSM マネージャーは、各四半期においてチームの[四半期ビジ
 
 ### 昇進計画
 
-CSM マネージャーは、CSM が昇進の資格を得る前に CSM の立ち位置とギャップを埋める方法について定期的なコーチングと指導を提供してください。CSM が昇進の準備ができたら、CSM マネージャーは CSM と[昇進ドキュメント](/handbook/people-group/promotions-transfers/#planning)で協力すべきです。ドキュメントを構築する際には、コンテンツ、Issue、MR などへのリンクと共に、CSM が達成した結果を中心に置くことが重要です。
+CSM Manager は、CSM が昇進の資格を得る前に CSM の立ち位置とギャップを埋める方法について定期的なコーチングと指導を提供してください。CSM が昇進の準備ができたら、CSM Manager は CSM と[昇進ドキュメント](/handbook/people-group/promotions-transfers/#planning)で協力すべきです。ドキュメントを構築する際には、コンテンツ、Issue、MR などへのリンクと共に、CSM が達成した結果を中心に置くことが重要です。
