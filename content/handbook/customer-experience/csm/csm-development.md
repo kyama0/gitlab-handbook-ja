@@ -22,17 +22,17 @@ GitLab の Customer Success Manager として、あなたは自分自身とキ�
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTB9tOQWZ771-M2nrIQkqIpx3XF7f9q1xXbBRkW5D-_UAyksak626FVn0Ovrj0j7rHDurML4N8f83IY/embed?start=false&loop=false&delayms=3000&slide=id.g23e582b58af_0_829" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-## Customer Success Management - 学習と開発のリソース
+## カスタマーサクセスマネジメント - 学習と開発のリソース {#customer-success-management---learning-and-development-resources}
 
 コンテンツは 3 つの主要なコンピテンシーカテゴリに分かれています。[LevelUp](https://levelup.edcast.com/home) は、認定資格、ラーニングパスなどのための GitLab の Learning Experience Platform です！開発したいコースについてのアイデアがあれば、#learninganddevelopment チャンネルで連絡してください。L&D チームがセットアップを支援できます。
 
-**💡 [Customer Success Management](#general-csm)     💬 [ソフトスキル](#soft-skills)     🚀 [テクノロジーとドメイン知識](#tech-domain)**
+**💡 [カスタマーサクセスマネジメント](#general-csm)     💬 [ソフトスキル](#soft-skills)     🚀 [テクノロジーとドメイン知識](#tech-domain)**
 
 ---
 
 <a name="general-csm"></a>
 
-### 💡 Customer Success Management {#general-csm}
+### 💡 カスタマーサクセスマネジメント {#general-csm}
 
 #### GitLab における CSM のベストプラクティスと事例
 
@@ -43,7 +43,7 @@ GitLab の Customer Success Manager として、あなたは自分自身とキ�
 - [学習のための CSM インターンシップ](/handbook/customer-experience/csm/csm-internship/)
 - [CSMA メンターシッププログラム](/handbook/customer-experience/csm/csm-mentorship/)
 
-#### Customer Success Management
+#### カスタマーサクセスマネジメント {#customer-success-management}
 
 - [Customer Success Management Fundamentals](https://www.linkedin.com/learning/customer-success-management-fundamentals)（LinkedIn Learning）
 - [Business Fundamentals for Customer Success Managers](https://www.linkedin.com/learning/business-fundamentals-for-customer-success-managers)（LinkedIn Learning）

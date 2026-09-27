@@ -64,11 +64,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - 顧客のヘルスに関する [Gainsight](/handbook/customer-experience/csm/gainsight/) のレコードを維持し、必要に応じてトリアージを行う
 - [High または Critical のエスカレーション](/handbook/customer-experience/csm/escalations/)に関するアカウントエスカレーションの窓口
 
-以下で提供する [Account Team Roles & Responsibilities Framework](/handbook/people-group/directly-responsible-individuals) は、チーム間のコラボレーションを改善するためのガイドフレームワークとして機能するように設計されています。これは CSM または CSA が管理するアカウントにのみ適用されることに注意してください。CSE が管理するアカウントについては、エンゲージメントルールに関する [CSE のハンドブック](/handbook/customer-experience/csm/segment/cse/)を参照してください。通常、アカウントは CSM または CSA のいずれかが監督し、Account Team Roles & Responsibilities Framework で概説される責任は、'Comments' セクションで明記されている場合を除いて等しく適用されます。
+以下で提供する [アカウントチームの役割と責任のフレームワーク](/handbook/people-group/directly-responsible-individuals) は、チーム間のコラボレーションを改善するためのガイドフレームワークとして機能するように設計されています。これは CSM または CSA が管理するアカウントにのみ適用されることに注意してください。CSE が管理するアカウントについては、エンゲージメントルールに関する [CSE のハンドブック](/handbook/customer-experience/csm/segment/cse/)を参照してください。通常、アカウントは CSM または CSA のいずれかが監督し、アカウントチームの役割と責任のフレームワークで概説される責任は、「コメント」セクションで明記されている場合を除いて等しく適用されます。
 
-以下の Account Team Roles & Responsibilities Framework は、この [OKR](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6329) の成果であり、[DCI マトリックス](/handbook/people-group/directly-responsible-individuals)を活用しています。
+以下のアカウントチームの役割と責任のフレームワークは、この [OKR](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6329) の成果であり、[DCI マトリックス](/handbook/people-group/directly-responsible-individuals)を活用しています。
 
-#### Account Team Roles & Responsibilities Framework - CSM/A
+#### アカウントチームの役割と責任のフレームワーク - CSM/A {#account-team-roles--responsibilities-framework---csma}
 
 ##### **ジャーニーステージ: プリセールスとアラインメント**
 

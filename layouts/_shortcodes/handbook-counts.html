@@ -33,6 +33,33 @@
 {{- range .Site.RegularPages }}
     {{- /* Avoid rendering every page from this shortcode, which can deadlock Hugo's content cache. */ -}}
     {{- $source := replaceRE `(?s)<!--.*?-->` " " .RawContent }}
+    {{- /* Count the visible content of local includes without rendering their parent pages. */ -}}
+    {{- range findRE `\{\{%\s*include\s+"includes/[^"]+"\s*%\}\}` $source }}
+        {{- $path := replaceRE `\{\{%\s*include\s+"([^"]+)"\s*%\}\}` "$1" . }}
+        {{- with resources.Get $path }}
+            {{- $included := replaceRE `(?s)<!--.*?-->` " " .Content }}
+            {{- $included = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $included }}
+            {{- $scratch.Add "wordcount" (countwords ($included | markdownify | plainify)) }}
+        {{- end }}
+    {{- end }}
+    {{- /* This Markdown shortcode renders its words from data, not from page source. */ -}}
+    {{- range findRE `\{\{%\s*all-tech-stack\s*%\}\}` $source }}
+        {{- range site.Data.public.tech_stack }}
+            {{- $scratch.Add "wordcount" (countwords (.title | markdownify | plainify)) }}
+            {{- $scratch.Add "wordcount" (countwords (.description | markdownify | plainify)) }}
+            {{- with .handbook_link }}
+                {{- $scratch.Add "wordcount" (countwords (. | markdownify | plainify)) }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- /* The data-warehouse table is also supplied by data rather than page source. */ -}}
+    {{- range findRE `\{\{%\s*all-data-warehouse-sources\s*%\}\}` $source }}
+        {{- $table := "| Name | Pipeline | Raw Schema | Prep Schema | Audience | RF / SLO | MNPI | Tier |\n|------|----------|------------|-------------|----------|----------|------|------|\n" }}
+        {{- range site.Data.public.data_warehouse_sources }}
+            {{- $table = printf "%s| %v | %v | `%v` | `%v` | %v | %v | %v | %v |\n" $table .name .pipeline .raw_schema .prep_schema .audience .rf_slo .mnpi .tier }}
+        {{- end }}
+        {{- $scratch.Add "wordcount" (countwords ($table | markdownify | plainify)) }}
+    {{- end }}
     {{- $source = replaceRE `(?s)\{\{[%<].*?[>%]\}\}` " " $source }}
     {{- $scratch.Add "wordcount" (countwords ($source | markdownify | plainify)) }}
 {{- end }}
