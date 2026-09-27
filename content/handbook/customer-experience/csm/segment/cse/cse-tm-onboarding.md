@@ -75,7 +75,7 @@ Revenue Academy コンポーネント 3 の一環として、CSE は 4 つのロ
 **カバーする内容:**
 
 - One CX モデルと、カスタマージャーニー全体での全役割のつながり
-- サクセスティアの概要 — セルフガイドからシグネチャまで、各ティアの意味
+- Success Tier の概要 — Self-Guided から Signature まで、各ティアの意味
 - Professional Services と Education Services の概要 — 何が利用可能で、それぞれいつ適用されるか
 - 実際の CX コラボレーションの成功事例
 - チームとして PS、CS、Renewals とどのように連携するか

@@ -107,6 +107,11 @@
         {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
     {{- end }}
+    {{- /* Figure alternatives are available to screen readers after Hugo renders the image. */ -}}
+    {{- range findRE `(?s)\{\{[<%]\s*figure\b[^{}]*\salt="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $alt := replaceRE `(?s)^.*?\salt="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($alt | markdownify | plainify)) }}
+    {{- end }}
     {{- range findRE `(?s)\{\{[<%]\s*youtube\b[^{}]*\stitle="[^"]+"[^{}]*[>%]\}\}` $source }}
         {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}

@@ -17,11 +17,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 [<button class="btn btn-primary" type="button"  style="padding: 15px 30px; font-size: 24px;">CSE</button>](/handbook/customer-experience/csm/segment/cse/)
 [<button class="btn btn-primary" type="button"  style="padding: 15px 30px; font-size: 24px;">CSA</button>](/handbook/customer-experience/csm/segment/csa/)
 
-## サクセスティアのコンテキスト
+## Success Tier のコンテキスト {#success-tier-context}
 
-CSM の役割は GitLab の**エッセンシャル**[サクセスティア](/handbook/customer-experience/success-services/)の一部です。エッセンシャルティアの顧客には、サクセスプラン、ケイデンスコール、更新戦略を担当する専任の CSM がアサインされます。
+CSM の役割は GitLab の **Essentials** [Success Tier](/handbook/customer-experience/success-services/) の一部です。Essentials ティアの顧客には、サクセスプラン、ケイデンスコール、更新戦略を担当する専任の CSM がアサインされます。
 
-より深い技術的イネーブルメントと構造化されたアクセラレータープログラムを求める顧客には、GitLab の**アドバンスド**および**シグネチャー**ティアで専任の[カスタマーサクセスアーキテクト（CSA）](/handbook/customer-experience/csm/segment/csa/)が提供されます。すべてのティアの概要と比較については、[サクセスティアページ](/handbook/customer-experience/success-services/)をご覧ください。
+より深い技術的イネーブルメントと構造化されたアクセラレータープログラムを求める顧客には、GitLab の **Advanced** および **Signature** ティアで専任の [Customer Success Architect（CSA）](/handbook/customer-experience/csm/segment/csa/) が提供されます。すべてのティアの概要と比較については、[Success Tier のページ](/handbook/customer-experience/success-services/) をご覧ください。
 
 ## ミッションステートメント
 

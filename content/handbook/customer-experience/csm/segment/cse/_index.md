@@ -12,17 +12,17 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ---
 
-## Success On-Demand ティア {#success-on-demand-tier}
+## Success On-Demand Tier {#success-on-demand-tier}
 
-CSE チームは GitLab の **On-Demand サクセスティア** を提供し、ウェビナー、ハンズオンラボ、オフィスアワー、オンデマンドエンゲージメントを通じて、すべての GitLab 顧客に技術的な製品専門知識とベストプラクティスガイダンスを提供します。CSE はプール型モデルで働き、特定のアカウントに専任として配置されることはありません。
+CSE チームは GitLab の **On-Demand Success Tier** を提供し、ウェビナー、ハンズオンラボ、オフィスアワー、オンデマンドエンゲージメントを通じて、すべての GitLab 顧客に技術的な製品専門知識とベストプラクティスガイダンスを提供します。CSE はプール型モデルで働き、特定のアカウントに専任として配置されることはありません。
 
-専任の指名リソースを希望する顧客のために、GitLab は有料のサクセスティアを提供しています:
+専任の指名リソースを希望する顧客のために、GitLab は有料の Success Tier を提供しています:
 
 - **Essentials** — 採用、サクセスプランニング、更新戦略のための専任 [CSM](/handbook/customer-experience/csm/)
 - **Advanced** — 深い技術イネーブルメントとアクセラレータプログラムのための専任 [CSA](/handbook/customer-experience/csm/segment/csa/)
-- **Signature** — 最高レベルのホワイトグローブサポートのための専任 CSA と[担当サポートエンジニア（ASE）](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)
+- **Signature** — 最高レベルのホワイトグローブサポートのための専任 CSA と [Assigned Support Engineer（ASE）](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)
 
-すべてのティアの概要については、[サクセスティアページ](/handbook/customer-experience/success-services/)をご覧ください。
+すべてのティアの概要については、[Success Tier のページ](/handbook/customer-experience/success-services/) をご覧ください。
 
 ---
 **概要**
