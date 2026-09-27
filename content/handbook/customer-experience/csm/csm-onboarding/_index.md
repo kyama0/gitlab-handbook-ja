@@ -104,7 +104,7 @@ CSMA オンボーディングジャーニーを修了したとみなされるに
 - GitLab University で GitLab Academy の eLearning 事前作業を完了している
 - Command of the Message クラスを含むすべての GitLab Academy セッションに出席している（出席は必須）
 - 4 回すべてのロールベースのライブスキルセッションに出席している
-- 対面の地域別 Academy Graduation Bootcamp に出席し、stand-and-deliver のキャップストーン評価に合格している
+- 対面の地域別 Academy Graduation Bootcamp に出席し、実演形式のキャップストーン評価に合格している
 - GitLab University でロールベースの学習パスを完了している
 - Pulse+ CSM Certificate I と Advanced CSM Certificate II を完了している
 - 以下の認定を取得している:

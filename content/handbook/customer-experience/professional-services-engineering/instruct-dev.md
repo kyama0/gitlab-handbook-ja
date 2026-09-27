@@ -13,8 +13,8 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 GitLab プロフェッショナルエデュケーションサービスチームは現在、次のオファリングを提供しています:
 
-- [Live Instructor-led training (ILT)](https://about.gitlab.com/services/education/)
-- [Self Paced training](https://university.gitlab.com/)
+- [講師によるライブトレーニング (ILT)](https://about.gitlab.com/services/education/)
+- [自分のペースで進められるトレーニング](https://university.gitlab.com/)
 - プロフェッショナルサービスオファリングとしての [GitLab テクニカル認定](/handbook/customer-experience/professional-services-engineering/gitlab-technical-certifications/)。
 - [Train-the-Trainer](https://university.gitlab.com/pages/train-the-trainer-training/)
 

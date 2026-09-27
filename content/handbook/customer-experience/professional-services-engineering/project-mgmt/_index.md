@@ -20,7 +20,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## プロジェクトの開始 & 計画 {#project-initiate--plan}
 
-1. _Customer Epic_（SOW# + 顧客名としてラベル付けされる）には、関連するすべての顧客情報・契約情報への内部リンクが含まれます。プロフェッショナルサービス契約のリーガル承認を得た後、PS Quote が GitLab.com の [Professional Services Group](https://gitlab.com/gitlab-com/customer-success/professional-services-group) レベルで、最近販売されたプロフェッショナルサービスプロジェクトに関する Epic をトリガーします。
+1. _Customer Epic_（SOW# + 顧客名としてラベル付けされる）には、関連するすべての顧客情報・契約情報への内部リンクが含まれます。プロフェッショナルサービス契約のリーガル承認を得た後、PS Quote が GitLab.com の [Professional Services Group](https://gitlab.com/gitlab-com/customer-success/professional-services-group) レベルで、最近販売されたプロフェッショナルサービスプロジェクトに関するエピックをトリガーします。
 2. PS Customer Journey において見込みのサービスディールが「Stage 6」（クロージング）に到達すると、PSOps チームは _Customer Epic_ を参照して [_Scheduling Intake Issue_](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/blob/master/.gitlab/issue_templates/SchedulingIntakeQuestions.md?ref_type=heads) を見つけます。この Issue から、Resource Scheduling チームが PS リソース（PM、PSE、TA）をアサインするために必要な初期情報を集めます。ここで PM がプロジェクトに紹介されます。
 3. アサインされた PM は Scheduling intake をレビューし、[Sales to Delivery Transition](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/blob/master/.gitlab/issue_templates/sales-to-delivery-transition.md?ref_type=heads) フェーズのレビュー／実施を開始します。
 

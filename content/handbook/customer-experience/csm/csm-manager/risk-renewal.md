@@ -15,15 +15,15 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## 更新管理と予測
 
-CSM マネージャーは、チームメンバーや他のグループ（例: [Sales](/handbook/sales)、[Renewals Management](/handbook/customer-experience/renewals-managers/what/)）の同僚と協力して、今後の更新を管理・計画します。
+CSM Manager は、チームメンバーや他のグループ（例: [Sales](/handbook/sales)、[Renewals Management](/handbook/customer-experience/renewals-managers/what/)）の同僚と協力して、今後の更新を管理・計画します。
 
-### CSM マネージャーと更新マネージャーの連携
+### CSM Manager と Manager of Renewals の連携
 
-週次ベースで、[CSM マネージャー](/job-description-library/sales/customer-success-management/#manager-customer-success-managers) と [更新マネージャー](/job-description-library/sales/renewal-manager/#manager-renewals) が今後の更新に関する詳細を議論・更新します。
+週次ベースで、[CSM Manager](/job-description-library/sales/customer-success-management/#manager-customer-success-managers) と [Manager of Renewals](/job-description-library/sales/renewal-manager/#manager-renewals) が今後の更新に関する詳細を議論・更新します。
 
 ### 地域フィールドリーダーによるリスク & 更新レビュー
 
-Sales と CS の地域フィールドリーダー（CSM マネージャー、ASM、AVP など）が定期的に集まり、担当地域のリスクのあるアカウントと今後の更新を確認します。
+Sales と CS の地域フィールドリーダー（CSM Manager、ASM、AVP など）が定期的に集まり、担当地域のリスクのあるアカウントと今後の更新を確認します。
 
 *プレースホルダー: ここに連携の詳細を追加*
 
