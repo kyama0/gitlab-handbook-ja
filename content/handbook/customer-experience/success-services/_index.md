@@ -1,5 +1,5 @@
 ---
-title: サクセスティア
+title: Success Tier
 
 
 upstream_path: /handbook/customer-experience/success-services/
@@ -10,9 +10,9 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-GitLab のサクセスティアは、お客様に専任の技術的専門知識、構造化されたイネーブルメントプログラム、強化されたサポートを提供する有料サービスオファリングです。各ティアは、オンデマンドのプールリソースから完全に指定されたチームまで、お客様のニーズの異なるレベルに合わせて設計されています。
+GitLab の Success Tier は、お客様に専任の技術的専門知識、構造化されたイネーブルメントプログラム、強化されたサポートを提供する有料サービスオファリングです。各ティアは、オンデマンドのプールリソースから完全に指定されたチームまで、お客様のニーズの異なるレベルに合わせて設計されています。
 
-サクセスティアチームには [Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C05US54ETB3)（内部のみ）で連絡を取ることができます。
+Success Tier チームには [Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C05US54ETB3)（内部のみ）で連絡を取ることができます。
 
 ティアの価値のポジショニング、ティアの価格設定/見積もり、異議処理に関するコンテンツは、内部ハンドブックページ [Success Services (aka Success Plan Services)](https://internal.gitlab.com/handbook/customer-experience/success-services/) を参照してください。
 
@@ -30,7 +30,7 @@ GitLab のサクセスティアは、お客様に専任の技術的専門知識�
 - **Advanced** は、より深い技術的専門知識と構造化された Accelerator プログラムを持つ指名 CSA を提供します。
 - **Signature** は、最高レベルのホワイトグローブサポートのために、CSA と並んで Assigned Support Engineer (ASE) を追加します。
 
-有料のサクセスティアを始めるには、[about.gitlab.com/services/](https://about.gitlab.com/services/) にアクセスしてください。
+有料の Success Tier を始めるには、[about.gitlab.com/services/](https://about.gitlab.com/services/) にアクセスしてください。
 
 ## Accelerator とは何か?
 
@@ -49,25 +49,25 @@ Accelerator は、お客様の CSA によって提供される 12 週間の構�
 
 すべての CS および SA ロールのサイドバイサイド比較については、[CS および SA ロール概要](/handbook/customer-experience/roles-overview/)を参照してください。
 
-## サクセスティア {#success-tier}
+## Success Tier {#success-tier}
 
 ### 概要
 
-私たちのサクセスティアは、お客様にベストプラクティスとより高ティアのホワイトグローブサポートを提供しながら、GitLab 製品の採用と価値の実現を推進します。これは、[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)、[Customer Success Architect (CSA)](/job-description-library/sales/customer-success-architect/)/[Customer Success Manager (CSM)](/handbook/customer-experience/csm/#what-is-a-customer-success-manager-csm-at-gitlab)、Education Services を年間更新可能サービスとして単一の SKU にバンドルすることで実現します。
+私たちの Success Tier は、お客様にベストプラクティスとより高ティアのホワイトグローブサポートを提供しながら、GitLab 製品の採用と価値の実現を推進します。これは、[Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/)、[Customer Success Architect (CSA)](/job-description-library/sales/customer-success-architect/)/[Customer Success Manager (CSM)](/handbook/customer-experience/csm/#what-is-a-customer-success-manager-csm-at-gitlab)、Education Services を年間更新可能サービスとして単一の SKU にバンドルすることで実現します。
 
 [Assigned Support Engineer (ASE)](/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/) は、お客様のプライマリコンタクトポイントであり、そのお客様によってログされたサポートチケットのトリアージを行い、Signature ティアに含まれます。一貫したリソーシングのため、お客様のニーズ、環境、アーキテクチャに関する知識が時間とともに蓄積され、最も一般的にログされる問題に対する解決時間が短縮されます。
 
-[Customer Success Architect (CSA)](/job-description-library/sales/customer-success-architect/) は、よく理解されたベストプラクティスを使用した GitLab 製品の採用を通じて、お客様の成功に責任を負います。CSA は、業界の伝統的な CSM ロールよりも深い製品知識と技術的深さを持ちます。多くのお客様にわたる経験から、彼らは機能が最大限の価値を得るために正しい方法で活用されるよう確実にするエキスパートです。このカスタマーエクスペリエンスは、ベストプラクティスのコンテンツと処方的なロードマップの開発につながりました。このコンテンツは、サクセスティアオファリングに「Accelerator」として組み込まれています。
+[Customer Success Architect (CSA)](/job-description-library/sales/customer-success-architect/) は、よく理解されたベストプラクティスを使用した GitLab 製品の採用を通じて、お客様の成功に責任を負います。CSA は、業界の伝統的な CSM ロールよりも深い製品知識と技術的深さを持ちます。多くのお客様にわたる経験から、彼らは機能が最大限の価値を得るために正しい方法で活用されるよう確実にするエキスパートです。このカスタマーエクスペリエンスは、ベストプラクティスのコンテンツと処方的なロードマップの開発につながりました。このコンテンツは、Success Tier オファリングに「Accelerator」として組み込まれています。
 
 > Customer Success は、お客様の環境を直接操作することは許可されていません。私たちはベストプラクティス、アーキテクチャガイダンスを提供し、特定のお客様のニーズに合わせて採用とサクセスプランをカスタマイズすることはできますし、実際にしています。お客様が GitLab にオーダーメイドのソリューションを開発したり、構成を積極的に変更または管理したりすることを必要とする場合、私たちは [Professional Services](/handbook/customer-experience/professional-services-engineering/) チームを巻き込む必要があります。
 
-サクセスティアに含まれる Education Services は、1 日のインストラクター主導トレーニングと、トレーニング認定試験バウチャーの大幅な数を網羅しています。これにより、特定の Accelerator の実行をトレーニングと認定に整列させて、チームが GitLab がもたらすコストメリットを推進する準備と能力を確保することができます。
+Success Tier に含まれる Education Services は、1 日のインストラクター主導トレーニングと、トレーニング認定試験バウチャーの大幅な数を網羅しています。これにより、特定の Accelerator の実行をトレーニングと認定に整列させて、チームが GitLab がもたらすコストメリットを推進する準備と能力を確保することができます。
 
-### サクセスティアのリソースとサポート
+### Success Tier のリソースとサポート
 
-#### 1. サクセスティア資格認定フレームワーク
+#### 1. Success Tier 資格認定フレームワーク
 
-Sales チームがサクセスティアを効果的にポジショニングして販売できるよう、[包括的なフレームワーク](https://gitlab.highspot.com/items/68138e0af1e7d5daacbfcfae#1)を作成しました。このフレームワークは以下を提供します:
+Sales チームが Success Tier を効果的にポジショニングして販売できるよう、[包括的なフレームワーク](https://gitlab.highspot.com/items/68138e0af1e7d5daacbfcfae#1)を作成しました。このフレームワークは以下を提供します:
 
 - 各ティアの明確な資格認定基準
 - お客様のニーズに合わせた価値提案
@@ -76,7 +76,7 @@ Sales チームがサクセスティアを効果的にポジショニングし�
 
 #### 2. Regional Champion サポート
 
-Regional Champion は、サクセスティアのポジショニングに関するエキスパートガイダンスを提供できます。
+Regional Champion は、Success Tier のポジショニングに関するエキスパートガイダンスを提供できます。
 
 ##### サポートをリクエストする方法
 
@@ -99,7 +99,7 @@ Regional Champion は、サクセスティアのポジショニングに関す�
 - **エスカレーション**: {{< member-by-gitlab "kgeorgeson" >}}
 
 
-### サクセスティアカスタマーオンボーディング
+### Success Tier カスタマーオンボーディング
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ graph LR
 
 完全に新規ではないアカウントをオンボーディングしている可能性があることに注意してください。アカウントチームとのスムーズなコラボレーションとハンドオーバーを確保するため、責任マトリックスの[Issue](https://gitlab.com/gitlab-com/customer-success/success-services/csa/-/issues/16)を参照することをお勧めします。
 
-### サクセスティアカスタマーオンボーディングの成果物
+### Success Tier カスタマーオンボーディングの成果物
 
 1. 紹介メール
    1. このメールは、CSA と ASE の両方のリソースが特定されてから 24 時間以内に、お客様から注文書を受領した時点にできるだけ近いタイミングで送信されます。
@@ -121,7 +121,7 @@ graph LR
       3. [Essentials | Success Tiers - Welcome Email](https://gitlab.highspot.com/items/67fe7212040d7ea6e1af7af0?lfrm=srp.6)
    3. 最優先事項は、プログラムをレビューしてお客様の前に立てるよう、キックオフコールを確定することです
 
-### サクセスティアカスタマーオンボーディング活動
+### Success Tier カスタマーオンボーディング活動
 
 1. 内部キックオフコール
    1. CSA がナレッジ転送を行い、Accelerator で取り組む優先作業についてアカウントチームと調整するための内部準備コール。
@@ -152,7 +152,7 @@ graph LR
 
 ### GitLab University Panorama
 
-GitLab University Panorama は、**Signature サクセスティア** に含まれる、専用の管理された学習ポータルです。GitLab University Enterprise を別途購入したお客様も対象となります。SSO 統合、カスタムコンテンツホスティング、お客様固有のレポーティングを提供し、GitLab トレーニングと認定資格のための一元化されたハブをチームに提供します。
+GitLab University Panorama は、**Signature Success Tier** に含まれる、専用の管理された学習ポータルです。GitLab University Enterprise を別途購入したお客様も対象となります。SSO 統合、カスタムコンテンツホスティング、お客様固有のレポーティングを提供し、GitLab トレーニングと認定資格のための一元化されたハブをチームに提供します。
 
 **オンボーディングのための主要な議論ポイント**
 
@@ -178,7 +178,7 @@ CSM ロールを超えた CSA 固有のプロセスがあります。これは�
 
 ##### Accelerator {#accelerators}
 
-サクセスティアには、Signature ティア用に最大 4 つ、Advanced 用に 2 つの Accelerator が含まれており、[Customer Success Architect (CSA)](/handbook/customer-experience/csm/segment/csa/) が提供します。
+Success Tier には、Signature ティア用に最大 4 つ、Advanced 用に 2 つの Accelerator が含まれており、[Customer Success Architect (CSA)](/handbook/customer-experience/csm/segment/csa/) が提供します。
 
 > Accelerator は、GitLab CSA が定義してお客様に提供するカスタマイズされた形式のイネーブルメントです。これらの Accelerator は四半期にわたり、相互のサクセスプランにマッピングされています。
 
@@ -213,16 +213,16 @@ Accelerator は、お客様の要件と定義された成果に応じて、以�
 
 <br>
 
-### Gainsight でのサクセスティアタイムライン活動の記録
+### Gainsight での Success Tier タイムライン活動の記録
 
-主要なサクセスティア活動を Gainsight で一貫して記録することは、私たちのカスタマーサクセスオペレーションに不可欠です。このドキュメンテーションにより、すべてのチームメンバーがお客様のインタラクションをログする際に標準化された手順に従うことが保証されます。
+主要な Success Tier 活動を Gainsight で一貫して記録することは、私たちのカスタマーサクセスオペレーションに不可欠です。このドキュメンテーションにより、すべてのチームメンバーがお客様のインタラクションをログする際に標準化された手順に従うことが保証されます。
 
 Gainsight での正確な活動追跡により以下が可能になります:
 
 - お客様エンゲージメント履歴の完全な可視性
-- サクセスティアデリバリーメトリクスに関する正確なレポーティング
+- Success Tier デリバリーメトリクスに関する正確なレポーティング
 - 同じお客様と作業するチーム間でのより良いコラボレーション
-- サクセスティアオファリングを改善するためのデータ駆動型インサイト
+- Success Tier オファリングを改善するためのデータ駆動型インサイト
 - チームメンバーの移行中のサービスの継続性
 
 これらのガイドラインに従うことで、運用効率と戦略的意思決定の両方をサポートする信頼できる記録システムを維持します。
