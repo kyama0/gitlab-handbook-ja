@@ -24,7 +24,7 @@ QBR は次の 2 種類に分類されます:
 1. 四半期ビジネスレビュー（QBR） - これらはチーム／IC レベルで開催され、マネージャーによって編成されます。
 1. Field Manager QBR - これらは Field Manager 以上が参加し、QBR 計画チームによって編成されます。以下のページの大部分は、Field Manager QBR のプロセスについて扱います。
 
-### QBR スケジュール
+### QBR スケジュール {#qbr-schedules}
 
 Field Manager QBR は次の月に開催され、*通常* は対面とバーチャルの混合形式です。これは、チームの旅行が安全でない外部条件（COVID-19 など）や [GitLab の出張ポリシー](/handbook/finance/travel/)に基づき変更される可能性があります。
 

@@ -418,7 +418,7 @@ FCL のスコープを決定する際には、副作用と関連原因を区別�
 
 GitLab Ultimate 用に構築された機能をテストする必要がある場合は、[#development](https://gitlab.slack.com/archives/C02PF508L) Slack チャンネルで尋ねることで、本番環境とステージング環境の [issue-reproduce](https://gitlab.com/issue-reproduce) グループに追加してもらえます。これらのグループは Ultimate プランです。
 
-## 重要顧客エスカレーション
+## 重要顧客エスカレーション {#critical-customer-escalations}
 
 既存の [重要顧客エスカレーション](/handbook/customer-experience/csm/escalations) でバグ修正や開発作業の即時スケジューリングが必要な場合は、以下のプロセスに従います。
 

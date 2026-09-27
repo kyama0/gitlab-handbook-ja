@@ -15,7 +15,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 デモで使用する環境へのアクセス方法に関する具体的な詳細については、[環境サブページ](/handbook/customer-experience/demo-systems/#shared-environments)を参照してください。
 
-## デモの準備
+## デモの準備 {#demo-readiness}
 
 Solutions Architects は時に短い予告でデモを行ったり、特定の GitLab 機能を見込み客や顧客に示すための通話に参加したりすることを求められます。これらのデモリクエストに備える際のベストプラクティスは、ブラウザタブにさまざまなコンテンツをプリロードした最小化されたブラウザウィンドウを用意しておくことです。よく利用される環境の例を以下にリストします。これらのリンクの一部は GitLab チームメンバーのみアクセスが有効になっていることに注意してください。 （今後の作業：このリストをデモカタログに移す）
 
@@ -47,7 +47,7 @@ FY23-Q1 に、私たちは[GitLab P2M スタイルのデモの録画の保守の
 - 選定された数の追加機能とその価値のハイライト (可能ならリリース MVP に感謝を述べる)
 - GitLab Flow のデモ
 
-## 既存のデモンストレーション
+## 既存のデモンストレーション {#existing-demonstrations}
 
 [Demo Architect オファリングハンドブックページ](/handbook/solutions-architects/center-of-excellence/demo-architecture/)は、Demo Engineering によって保守・所有される、現在利用可能な共有 CS デモ、ランチ＆ラーン、ワークショップをリストしています。
 

@@ -39,7 +39,7 @@ stale: false
 
 バディの割り当ては、[オンボーディング Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) で `Before Starting at GitLab` の最初のマネージャータスクとして示されているとおり、新しいチームメンバーのマネージャーの責任です。GitLab に 3 か月以上在籍していて、オンボーディングバディプログラムへの参加に興味がある場合は、マネージャーに関心を伝えてください。
 
-## マネージャー: オンボーディングバディとして誰を選ぶべきですか？
+## マネージャー: オンボーディングバディとして誰を選ぶべきですか？ {#managers-who-should-i-pick-as-an-onboarding-buddy}
 
 理想的なオンボーディングバディは:
 

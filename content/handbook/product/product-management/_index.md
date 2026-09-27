@@ -69,7 +69,7 @@ Issue でフィードバックを共有する際 (例: "顧客 X がこれを望
 
 これを容易にするために、以下のフィードバックテンプレートを使用することを強く推奨します。
 
-#### フィードバックテンプレート
+#### フィードバックテンプレート {#feedback-template}
 
 Issue で顧客フィードバックを提供する推奨方法は、**internal comment** (内部コメント) と [Customer Issues Prioritization Framework](/handbook/product/product-processes/customer-issues-prioritization-framework/#quick-start) を使用することです。内部コメントは顧客のプライバシーを守り、機密性の高いビジネス情報が公に見えないようにします。
 
