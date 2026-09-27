@@ -4,7 +4,7 @@ description: "このページは、GitLab チーム全体が Salesforce で利�
 upstream_path: /handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -42,7 +42,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | [GS] Triage Issue URL | トリアージ Issue へのディープリンク。トリアージ期間が完了したらリンクを削除してください。CSM が手動で入力します | 顧客がリスクにある場合の GitLab トリアージ Issue へのクイックリンク | [リンク](/handbook/sales/field-operations/customer-success-operations/gainsight/#gainsight-to-salesforce-sync-data) |
 | [GS] Support Issues Measure | これは Gainsight から Salesforce にプッシュされる製品リスク指標です |  |  |
 
-### 顧客の健全性
+### 顧客の健全性 {#customer-health}
 
 | フィールド名 | 説明 | ベストプラクティス | 参照 |
 |:---|:---|:---|:---|

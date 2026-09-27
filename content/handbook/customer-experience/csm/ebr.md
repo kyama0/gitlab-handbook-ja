@@ -3,7 +3,7 @@ title: "Executive Business Reviews (EBR)"
 upstream_path: /handbook/customer-experience/csm/ebr/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -12,7 +12,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ---
 
-## 概要
+## 概要 {#overview}
 
 **Executive Business Review (EBR)** は、両組織の主要なステークホルダーが進捗を評価し、将来の優先事項について整合性を確認する戦略的パートナーシップミーティングです。標準的な指標を超えて、これらのセッションは測定可能なビジネスアウトカムと投資対効果に焦点を当て、パートナーシップが引き続き意味のある価値をもたらすことを確保します。
 EBR は、顧客リーダーシップが進化するビジネス目標を共有し、それらを達成するためのアクションプランを共同で策定するための集中的な環境を作り出します。このアプローチにより、リソースとイニシアティブが顧客の成功にとって最も重要なことと整合し続けることが確保されます。

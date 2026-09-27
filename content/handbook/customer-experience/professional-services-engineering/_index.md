@@ -4,7 +4,7 @@ description: "GitLab のプロフェッショナルサービスチームはカ�
 upstream_path: /handbook/customer-experience/professional-services-engineering/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -70,7 +70,7 @@ GitLab プロフェッショナルサービスのオファリングは、PS エ�
 * GitLab のビジネス成長に合わせてプロフェッショナルサービスをスケールさせる
 * パートナー向け収益ストリームを創出する
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 [プロフェッショナルサービスチームページ](/handbook/company/team/?department=professional-services)をご覧ください。
 

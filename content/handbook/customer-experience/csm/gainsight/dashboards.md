@@ -5,7 +5,7 @@ description: >-
 upstream_path: /handbook/customer-experience/csm/gainsight/dashboards/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -14,7 +14,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 以下は厳選されたダッシュボードで、Gainsightユーザーが情報の内容と必要なアクションを理解できるよう、各ダッシュボードのウィジェットの意味を説明しています。
 
-### CSMバーンダウンダッシュボード
+### CSMバーンダウンダッシュボード {#csm-burn-down-dashboard}
 
 #### オンボーディング
 
@@ -108,7 +108,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 1. **Customers Using Secure**
     1. このレポートは `SAST`、`Container Scanning`、`Secret Detection` などのFree/Premiumスキャン機能の顧客の使用状況を示します。これにより、CSMは顧客のDevSecOpsへの関心を測り、Ultimateへのアップグレードに関する会話を促せます。
 
-### CSMキーメトリクスダッシュボード
+### CSMキーメトリクスダッシュボード {#csm-key-metrics-dashboard}
 
 このダッシュボードは、CSMが「チーム/個人のメトリクス目標に対してどのくらい達成できているか？」という質問に簡単に答えられるようにするための手段です。このダッシュボードは、FY22プレジデントクラブのメトリクスに対するパフォーマンスの洞察も提供します。FY22のCSMのプレジデントクラブメトリクスは以下のとおりです。
 

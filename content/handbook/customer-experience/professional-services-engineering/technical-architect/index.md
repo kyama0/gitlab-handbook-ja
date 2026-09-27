@@ -27,7 +27,7 @@ TA チームは、[MEDDPICC](/handbook/sales/meddppicc/) セールスクオリ�
 - Engagement Manager がお客様が現在直面している技術的課題のスコーピングを支援する。
 - 成果物と労力レベルを含む Statement of Work (SOW) を承認する。
 
-## Architect とのエンゲージメント
+## Architect とのエンゲージメント {#engage-with-an-architect}
 
 ### 一般的なエンゲージメントルール
 

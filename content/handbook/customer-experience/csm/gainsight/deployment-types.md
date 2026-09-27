@@ -4,7 +4,7 @@ description: "顧客デプロイメントタイプ、コンバージョンソー
 upstream_path: /handbook/customer-experience/csm/gainsight/deployment-types/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -21,7 +21,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - New Customer（新規顧客） - 既存のGitLabデプロイメントを持っていない（または持っていなかった）まったく新しい顧客。
 - Existing - New CSM（ファーストバリュー免除） - すでに有料顧客であり、CSMが割り当てられる（または割り当てられた）顧客（例えば、小規模デプロイメントから大規模デプロイメントにアップグレードした場合など）。
 
-### ホスティング
+### ホスティング {#hosting}
 
 顧客の主なデプロイメントタイプは何ですか？
 
@@ -39,7 +39,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - GitLabサービス
 - パートナーサービス
 
-### プロバイダー
+### プロバイダー {#provider}
 
 顧客が使用している（クラウド）プロバイダー、またはオンプレミスかどうかをログ記録します。
 

@@ -3,7 +3,7 @@ title: "SaaS への移行を顧客が決断するための支援"
 upstream_path: /handbook/customer-experience/csm/risk-mitigation/self-managed-vs-saas/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -37,7 +37,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 1. SaaS への移行について意思決定者にフォローアップする
 1. 移行のための PS を提案する
 
-## 調査質問
+## 調査質問 {#discovery-questions}
 
 移行プロセスを開始する前に、SaaS への移行を望む理由を確認し、特定のアクセス制御項目・機能・API がビジネスに必須でないことを確認するため、ケイデンスコール中にチャンピオンに以下の調査質問をすることをお勧めします。
 

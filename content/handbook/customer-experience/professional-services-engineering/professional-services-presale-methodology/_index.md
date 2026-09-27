@@ -64,7 +64,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 顧客がプロフェッショナルサービスを利用したいと判明したら、アカウントチームの責任で[Engagement Manager に連絡](/handbook/customer-experience/professional-services-engineering/engagement-mgmt/#how-to-contact-or-collaborate-with-us)します。
 
-## 2. スコーピング
+## 2. スコーピング {#2-scoping}
 
 - **DRI**: Engagement Manager
 - **サポート**: PS Practice、アカウントチーム (SAE/AE, SA, CSM)

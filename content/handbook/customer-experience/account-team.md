@@ -4,7 +4,7 @@ description: "アカウントチームは、顧客の価値、成功、成長を
 upstream_path: /handbook/customer-experience/account-team/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -49,7 +49,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - テクニカルウィンのステージ後に CSM に引き継がれるすべてのプリセールス技術アクティビティを処理する
 - RFP／RFI への対応の技術面を担当する
 
-### カスタマーサクセスマネージャー（CSM）
+### カスタマーサクセスマネージャー（CSM） {#customer-success-manager-csm}
 
 - お客様にとって信頼できる戦略的アドバイザー
 - ポストセールスのカスタマージャーニーを[担当](/handbook/customer-experience/csm/#high-level-responsibilities-of-a-csm)する
@@ -216,7 +216,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
   - 即時対応が必要なチケット（[STAR](/handbook/support/internal-support/support-ticket-attention-requests/)）の緊急度と依存関係を明確に伝える
   - CSM は組織のメモを最新の状態に保つことを確実にすべきである
 
-## アカウントチームミーティング
+## アカウントチームミーティング {#account-team-meetings}
 
 アカウントチームは、アカウントの戦略的成長を推進するためにミーティングを行う必要があります。顧客アカウントチームとミーティングする理由には以下が含まれます。
 

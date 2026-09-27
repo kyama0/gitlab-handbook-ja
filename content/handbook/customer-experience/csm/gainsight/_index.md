@@ -4,7 +4,7 @@ description: "カスタマーサクセスマネージャーが顧客の成功を
 upstream_path: /handbook/customer-experience/csm/gainsight/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -119,7 +119,7 @@ CSMはGainsightを多目的に活用しています。顧客との通話の記�
 - [製品使用状況データ - 概要](https://youtu.be/5_J9Kfbu5JA)
 - [リスクあり顧客動画](https://www.youtube.com/watch?v=MQqfL3WT1zo)
 
-### Sally（Slackbot）
+### Sally（Slackbot） {#sally-the-slack-bot}
 
 SallyはAI搭載のSlackボットで、顧客との通話の記録、顧客データの更新、ヘルススコアリング・現在のリスク・機会に関する情報提供を行います。
 
@@ -129,7 +129,7 @@ Sallyを使い始めるには、「help」というメッセージを送ると�
 
 アカウント情報を更新する際は、正しいアカウントを選択するように注意してください。大規模な組織はSalesforceに複数のエントリがある場合があります。要求された更新はGainsightですぐに反映されます。
 
-### メール
+### メール {#emails}
 
 GainsightはEmail Assistという半自動メール機能を提供しており、コックピットのコールトゥアクション（CTA）からアクセスできます。CSMがメールのスケジュールや内容をより細かく管理する必要がある場合は、Email Assistタスクを使用することをお勧めします。CSMは送信先の個別コンタクトを選択し、メールの内容を必要に応じてカスタマイズできます。
 
@@ -143,7 +143,7 @@ CSMはこれらのメールを顧客に送信する方法が2つあります。
 
 なお、すべてのメールをGainsightと同期させるのではなく、[SalesforceにBCCする](/handbook/customer-experience/using-salesforce-within-customer-success/#tracking-emails-within-salesforce)ことを推奨しています。ただし、[GainsightにBCCする](/handbook/customer-experience/csm/gainsight/timeline/#bccing-emails)こともできます。
 
-## SalesforceとZendeskの同期
+## SalesforceとZendeskの同期 {#salesforce-and-zendesk-syncing}
 
 GainsightはSalesforceと同期されているため、Gainsightで起こったことはすべてSalesforceに反映されます。これにより、SalesforceをSSoT（信頼できる唯一の情報源）として維持しながら、情報の重複入力を避けることができます。GainsightはZendeskとも統合・同期されているため、CSMはGainsight内で顧客のサポートチケットを閲覧できます。
 
@@ -161,7 +161,7 @@ Gainsightの「CSM Name」フィールドは、どのCSMが特定のアカウン
 
 「Account Owner」、「Solutions Architect」、「Renewal Date」、「ARR」、サブスクリプションおよびオポチュニティ情報などは、Salesforceで更新され、毎日Gainsightに同期されます。
 
-### 顧客コンタクト
+### 顧客コンタクト {#customer-contacts}
 
 顧客コンタクトをアカウントに追加するには、SalesforceまたはGainsightのいずれかで追加できます（双方向の同期を利用しています）。以下の理由から、エンゲージするすべての顧客コンタクトがGainsightに登録されているか確認することが良い習慣です。
 

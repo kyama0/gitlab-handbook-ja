@@ -38,7 +38,7 @@ The services maturity framework provides for 5 maturity levels for offerings: pl
 - **Complete**: An offering that can be consistently delivered: predictability in timing, results, and margin.
 - **Lovable**: The offering is at full maturity, positive NPS & impact on customer's adoption of GitLab product -->
 
-## サービスオファリングフレームワーク
+## サービスオファリングフレームワーク {#service-offering-framework}
 
 一般的には、私たちが公に展開しているサービスは [サービスカタログページ](https://about.gitlab.com/professional-services/catalog/) で見ることができ、より詳しい情報は [Consulting Delivery Kits](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits) と [Education Service Info](https://about.gitlab.com/professional-services/education/) にあります。
 

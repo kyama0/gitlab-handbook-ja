@@ -224,7 +224,7 @@ VO は **SMART** である必要があります: Specific（具体的）、Measu
 
 ---
 
-## Gainsight
+## Gainsight {#gainsight}
 
 GitLab.com はサクセスプランの唯一の情報源です。Gainsight はそれを反映し、ビジネス全体のパターン分析を可能にします。
 

@@ -3,7 +3,7 @@ title: ケイデンスコール
 upstream_path: /handbook/customer-experience/csm/cadence-calls/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -51,7 +51,7 @@ CSM が信頼できるアドバイザーになり、アカウントの[健全性
 
 アジェンダを作成し事前に準備することで、CSM（および[アカウントチーム](/handbook/customer-experience/account-team/)の残りのメンバー）は顧客のために関連する質問と情報を準備できます。
 
-#### 最初のケイデンスコールのタスクリスト
+#### 最初のケイデンスコールのタスクリスト {#tasklist-for-the-first-cadence-call}
 
 顧客との最初のケイデンスコール/キックオフコールでカバー/完了すべき項目:
 
@@ -114,7 +114,7 @@ CSM はコールを積極的に推進し、顧客がコールに価値を感じ�
 
 **ケイデンスコールから行動項目やフォローアップが何も生まれなければ、そのコールは効果的ではありませんでした。** 少なくとも、CSM はコールの終わりに話し合われたサマリー情報をカバーするフォローアップメールを送るか、参加者のためのフォローアップ Issue を作成し、コール中に提起された質問に答え、コールの行動項目が全員に周知されていることを確認してください。
 
-#### アカウント詳細の確認と更新
+#### アカウント詳細の確認と更新 {#review-and-update-account-details}
 
 コール後、コールの内容が失われないようにし、顧客との良好な関係を維持するために確認・更新する項目がいくつかあります。
 
@@ -178,7 +178,7 @@ CSM が Gainsight の[タイムライン](/handbook/customer-experience/csm/gain
 
 2 つのセクションがあります。[一般的な提案](/handbook/customer-experience/csm/cadence-calls/#general-suggestions)はいつでも適したトピックで、[一時的な提案](/handbook/customer-experience/csm/cadence-calls/#ephemeral-suggestions)はリリース固有のトピックや Product Manager からのリクエストなど一時的なトピックです。
 
-### 一般的な提案
+### 一般的な提案 {#general-suggestions}
 
 これらはいつでも顧客コールで使用できる提案です。
 
@@ -204,6 +204,6 @@ CSM が Gainsight の[タイムライン](/handbook/customer-experience/csm/gain
 - セルフマネージドの場合、セキュリティアラートへのオプトインの重要性を強調する
 - コラボレーションプロジェクトを使用している場合、CSM は月次頻度でアジェンダ Issue を作成するスケジュールジョブを設定できます。手順は各コラボレーションプロジェクトの[インストラクションファイル](https://gitlab.com/gitlab-com/account-management/templates/customer-collaboration-project-template/-/blob/master/PLEASE-READ-THESE-INSTRUCTIONS.md)に記載されています。
 
-### 一時的な提案
+### 一時的な提案 {#ephemeral-suggestions}
 
 より時事的なディスカッショントピックについては、[CSM ホットシート](https://gitlab.com/gitlab-com/customer-success/csm/-/wikis/CSM-Hot-Sheet)（GitLab 内部リンク）をご参照ください。

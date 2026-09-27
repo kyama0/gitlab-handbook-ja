@@ -4,7 +4,7 @@ description: "会社全体のカスタマーサクセスアプローチを構築
 upstream_path: /handbook/customer-experience/customer-success-vision/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -28,7 +28,7 @@ GitLab アプリケーションの全機能を活用し、世界クラスの顧�
 ![GitLab Customer Journey](/images/customer-experience/customer-success-vision/customer-journey.png)
 [顧客ジャーニーの PDF](/pdfs/customer-experience/customer-success-vision/gitlab-customer-journey.pdf)
 
-## GitLab 採用ジャーニーの高レベルビジュアル
+## GitLab 採用ジャーニーの高レベルビジュアル {#high-level-visual-of-gitlab-adoption-journey}
 
 ![GitLab Adoption Journey](/images/customer-experience/customer-success-vision/gitlab-adoption-journey.jpeg)
 
@@ -45,7 +45,7 @@ GitLab アプリケーションの全機能を活用し、世界クラスの顧�
 
 製品使用データは、ライセンス、ユースケース、機能の顧客採用に対する可視性を提供することで、顧客と GitLab の成果を促進するための鍵です。このデータをどのように使用し、使用する予定かについては、[「製品使用データビジョン」ページ](/handbook/customer-experience/product-usage-data/)を参照してください。
 
-## ライフサイクルステージ
+## ライフサイクルステージ {#lifecycle-stages}
 
 各顧客デプロイメントは以下のライフサイクルステージを経ます。
 
@@ -65,7 +65,7 @@ GitLab アプリケーションの全機能を活用し、世界クラスの顧�
 
 ## 測定と KPI
 
-### 価値実現までの時間 KPI
+### 価値実現までの時間 KPI {#time-to-value-kpis}
 
 顧客ジャーニーの一部として、顧客の初期体験を非常に重視し、価値実現までの時間を測定します。具体的には、初期トランザクションから以下までのカレンダー日数を測定します:
 
@@ -99,7 +99,7 @@ P.R.O.V.E. コンポーネントと全体的な哲学の両方の意図は、顧
 
 （前年同期と比較した）維持率（MRR の減少（チャーン）または増加（拡大））の原因の測定。チャーンはキャンセルまたはダウングレードとして指定されます。拡大はシート拡大、製品変更、製品変更/シート変更ミックス、または割引/価格変更として指定されます。これらは、チャーンまたは拡大カテゴリーのすべてのタイプの合計 MRR 変化に対する特定の理由の MRR 変化を使用してパーセンテージとして報告されます。Trueup はこれらのメトリクスから除外されます。
 
-## プロフェッショナルサービスの標準コスト
+## プロフェッショナルサービスの標準コスト {#professional-services-standard-cost}
 
 PS の Statement of Work のマージンを予測するために標準コスト見積もりを使用します。標準レートは、推定年間請求可能時間で平均年間 OTE プラス福利厚生を割って計算されます。この計算では、年間 1,880 請求可能時間を想定しています。標準コスト見積もりは四半期ごとに更新されます。
 

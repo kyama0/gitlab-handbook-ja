@@ -103,7 +103,7 @@ GitLab のユースケースに新機能を追加しながら毎月更新され�
 
 </details>
 
-### CI 採用スコアリング
+### CI 採用スコアリング {#ci-adoption-scoring}
 
 顧客の CI 採用スコアを決定するために、以下の主要および補助指標が使用されます。
 <br>
@@ -130,7 +130,7 @@ GitLab のユースケースに新機能を追加しながら毎月更新され�
   - [セッション 2](https://chorus.ai/meeting/E4F00AFC0C4A4036A7AC370653A50112?)（内部のみ）
   - [CI 採用のバリューステートメント](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation/#customer-adoption-and-value)
 
-### セキュリティ（DevSecOps）採用スコアリング
+### セキュリティ（DevSecOps）採用スコアリング {#security-devsecops-adoption-scoring}
 
 顧客のセキュリティ採用スコアを決定するために、以下の指標が使用されます。
 <br>

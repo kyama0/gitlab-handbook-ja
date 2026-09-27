@@ -5,7 +5,7 @@ title: Success Tier
 upstream_path: /handbook/customer-experience/success-services/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -180,7 +180,7 @@ GitLab University Panorama は、**Signature Success Tier** に含まれる、�
 
 CSM ロールを超えた CSA 固有のプロセスがあります。これは、CSM プロセスと責任の上に重ねられることが期待されています。
 
-##### Accelerator
+##### Accelerator {#accelerators}
 
 Success Tier には、Signature ティア用に最大 4 つ、Advanced 用に 2 つの Accelerator が含まれており、[Customer Success Architect (CSA)](/handbook/customer-experience/csm/segment/csa/) が提供します。
 

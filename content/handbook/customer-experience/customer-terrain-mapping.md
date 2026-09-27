@@ -3,7 +3,7 @@ title: "顧客テレインマッピングエンゲージメント"
 upstream_path: /handbook/customer-experience/customer-terrain-mapping/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -39,7 +39,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 背景として、元の CS イネーブルメントセッションも視聴してください — リンクと手順は [テレインマッピングの概要と設計原則（GitLab チームメンバー限定）](https://docs.google.com/document/d/1aphwxd6LwwyfVlqNbbTzLgKyjZEX-jvpmEWEyC4XXQg/edit?usp=sharing)の上部近くに記載されています。
 
-## 顧客テレインマッピングエンゲージメントのカタログ
+## 顧客テレインマッピングエンゲージメントのカタログ {#catalog-of-customer-terrain-mapping-engagements}
 
 準備手順は以下の各項目に含まれています。一部の項目は GitLab チームメンバーのみがアクセスできます。
 

@@ -3,7 +3,7 @@ title: "GitLab プロフェッショナルサービスの販売"
 upstream_path: /handbook/customer-experience/professional-services-engineering/selling/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -57,7 +57,7 @@ SAE/ISR は[Professional Services Only Opportunity を作成](/handbook/sales/fi
 
 上記の手順に従った後、`Generate PDF` をクリックして、署名のために顧客と共有する Order Form を取得します。AE は顧客と会ってサービスの成果物、期間、価格を確認し、カスタマイズが不要であることを確認すべきです。必要に応じて、再度 EM の支援を得ることができます。
 
-### Custom-Scoped Services
+### Custom-Scoped Services {#custom-scoped-services}
 
 アカウントチーム（SAE/ISR/SA/CSM）が、顧客が[フルカタログ](https://about.gitlab.com/services/catalog/)に記載されているもの以外のサービスを必要とすると判断した場合は、標準の親ライセンスまたはサブスクリプション Opportunity から `Create Services Opportunity` ボタンを使用して、子の PS Opportunity を作成し、PS Epic と関連スコーピング Issue の作成を開始します。これにより、[アサインされた PS Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) のキューに Issue が追加され、次のステップについてフォローアップされます。カスタムスコープの契約に関する詳細は、[詳細手順](#custom-scoped-services-detailed-workflow) を参照してください。
 

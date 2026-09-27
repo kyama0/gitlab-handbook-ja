@@ -4,7 +4,7 @@ description: "GitLab のカスタマーサクセスマネジメントチーム�
 upstream_path: /handbook/customer-experience/csm/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -31,7 +31,7 @@ CSM の役割は GitLab の**エッセンシャル**[サクセスティア](/han
 - 現在および将来の GitLab ユースケースにおける顧客のイネーブルメント
 - GitLab からの ROI の拡大
 
-## GitLab における カスタマーサクセスマネージャー（CSM）とは?
+## GitLab における カスタマーサクセスマネージャー（CSM）とは? {#what-is-a-customer-success-manager-csm-at-gitlab}
 
 CSM は顧客の採用、測定可能な成果、顧客満足度、そして真の顧客アドボカシーの創出に対して責任を持ちます。顧客のジャーニー全体を通じてイネーブルメント、トレーニング、育成を行うことで成功する顧客を創出します。以下の領域が CSM の職務範囲に含まれます:
 
@@ -41,7 +41,7 @@ CSM は顧客の採用、測定可能な成果、顧客満足度、そして真�
 - **アカウントの拡大 -** 顧客の望むユースケースを超えた採用の拡大と顧客の投資収益率（ROI）の向上をリードします。セールスと連携して拡大機会を特定し、顧客アカウントの拡大ポテンシャルを確実に実現します。
 - **ビジネスレビューのリード -** 顧客の望むビジネス成果に向けた進捗の確認と祝福を行います。軽減計画とともに課題に対処し、今後の顧客ビジネス目標に整合します。
 
-## CSM の高レベルな責任
+## CSM の高レベルな責任 {#high-level-responsibilities-of-a-csm}
 
 <table><thead>
   <tr>

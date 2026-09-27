@@ -4,14 +4,14 @@ description: "GainsightのタイムラインビューにはCSMの顧客とのア
 upstream_path: /handbook/customer-experience/csm/gainsight/timeline/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 GainsightのタイムラインビューにはCSMの顧客とのアクティビティの時系列概要が表示されます。時間の経過とともにやりとりとサクセスへの取り組みの進捗を確認するための貴重なツールです。
 
-## タイムラインビュー
+## タイムラインビュー {#timeline-views}
 
 - **グローバルタイムライン**: 左のサイドバーからタイムラインを開く場合（特定の顧客向けではない場合）、すべてのCSMのすべてのタイムラインイベントであるグローバルタイムラインが表示されます。そこから、3本の水平線をクリックして表示されるイベントをカスタマイズできます（下の画像を参照）。例えば、作成者として自分を検索して自分が作成したすべてのタイムラインイベントを見つけたり、会社名で検索して特定の顧客のすべてのタイムラインイベントを見つけたりできます。
 
@@ -21,7 +21,7 @@ GainsightのタイムラインビューにはCSMの顧客とのアクティビ�
 
 - **CTAビュー**: 特定のCTAまたはサクセスプランの目標の詳細をクリックすると、Timelineタブがあります。ここからCTAにリンクされたエントリを追加できます。これらのタイムラインエントリは会社のタイムラインとグローバルタイムラインにも表示されます。
 
-## アクティビティタイプ
+## アクティビティタイプ {#activity-types}
 
 以下のアクティビティをGainsightにログ記録でき、自動的にSalesforceと同期されます。
 
@@ -42,7 +42,7 @@ Gong を使用して通話を録音すると、Gainsight タイムラインに�
 
 注意: これらのアクティビティは、CSMによって作成された場合（言い換えれば、CSMがGong通話の所有者であった場合）のみ、「Last Activity Date」とEngagementスコアにカウントされます。
 
-### 最終アクティビティ日
+### 最終アクティビティ日 {#last-activity-date}
 
 顧客のレコードの「Last Activity Date」フィールドは、顧客に対してログ記録された最新の「Call」または「Meeting」アクティビティエントリを反映しています。顧客との同期的な会話を追跡したいため、Last Activity Dateに影響するのはこれらのエントリタイプのみです。
 
@@ -50,7 +50,7 @@ Gong を使用して通話を録音すると、Gainsight タイムラインに�
 
 関連して、「Last Timeline Activity」があり、タイムライン上のあらゆるアクティビティ（更新、メール、コールなど）を参照します。
 
-## タイムラインへのアクティビティのログ記録方法
+## タイムラインへのアクティビティのログ記録方法 {#how-to-log-activities-in-timeline}
 
 Gainsight全体のさまざまな場所からタイムラインにアクティビティをログ記録できます。
 
@@ -114,7 +114,7 @@ GainsightタイムラインはまたSalesforceのアクティビティも表示�
 - 説明に内容がないSalesforceアクティビティ
   - 例: 件名があるが本文がない通話は[同期に失敗します](https://support.gainsight.com/gainsight_nxt/Timeline/02Admin_Guides/Integrate_Salesforce_Activities_in_Gainsight_Timeline#Limitations)
 
-## メールのBCC
+## メールのBCC {#bccing-emails}
 
 Gainsightの代わりにSalesforceにメールをBCCすることをお勧めしていますが、Gainsightに同様のことを行うことも可能です。個人のメールアドレスを取得するには、設定に移動してください。
 

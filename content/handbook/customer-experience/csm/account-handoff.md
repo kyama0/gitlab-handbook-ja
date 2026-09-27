@@ -3,7 +3,7 @@ title: "アカウントハンドオフ CSM 間チェックリスト"
 upstream_path: /handbook/customer-experience/csm/account-handoff/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -16,7 +16,7 @@ CSM は、担当してきたアカウントを別の CSM に移管する必要�
 
 以下はアカウントハンドオフプロセス中のチェックポイントです。CSM はこれを使用して、アカウントを正常に移管するために必要な情報を把握できます。このページの大部分のガイダンスは新しい CSM に向けて書かれていますが、関係者全員にとって有用な情報です。
 
-## アカウントハンドオフ CTA
+## アカウントハンドオフ CTA {#account-handoff-cta}
 
 ハンドオフを把握したら最初のステップとして、新しい CSM が [Gainsight で CTA をオープン](/handbook/customer-experience/csm/gainsight/)します。これで、正常なハンドオフに必要なタスクの完了を追跡します。「アカウントハンドオフ」プレイブックを選択し、関連するタスクを前の CSM と新しい CSM に割り当ててください。
 

@@ -3,7 +3,7 @@ title: "カスタマーサクセスにおける Salesforce の活用"
 upstream_path: /handbook/customer-experience/using-salesforce-within-customer-success/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -148,7 +148,7 @@ POV のドキュメントについては[このページ](/handbook/solutions-ar
 
 新規 Zendesk チケットが作成されるたびに、チケットが関連付けられているアカウントのカスタマーサクセスマネージャーと Account Owner に新規チケットを知らせるメール通知が送信されます。これは現在、Zendesk チケットが Salesforce で最初に作成された時に発生する 1 回限りの通知です。
 
-### Salesforce 内でのメール追跡
+### Salesforce 内でのメール追跡 {#tracking-emails-within-salesforce}
 
 メールで顧客とコミュニケーションを取る人は、自分のメールがアカウントのアクティビティ履歴内で Salesforce 内で追跡されることを確実にする必要があります。[Gainsight](/handbook/customer-experience/csm/gainsight/) の展開後も、Gainsight のタイムライン内のメールは価値よりノイズを生み出す可能性があるため、引き続き Salesforce にメールをログします。
 

@@ -4,7 +4,7 @@ description: "GitLab Professional Services チームと協働する方法をご�
 upstream_path: /handbook/customer-experience/professional-services-engineering/working-with/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -13,7 +13,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 GitLab において、Professional Services（PS）は [Customer Success 部門](/handbook/customer-experience/) の一部です。そのため、PS と関わる際には、[Solutions Architect（SA）](/handbook/solutions-architects/processes/#engaging-an-sa-during-the-sales-cycle) と関わるためのガイドラインに従ってください。このプロセスにより、Customer Success 部門全体としてアカウントエグゼクティブと顧客のインバウンドニーズを把握できます。
 
-#### Slack
+#### Slack {#slack}
 
 PS は [#professional-services](https://gitlab.slack.com/archives/CFRLYG77X) Slack チャンネルを使用して、サービスに関する一般的な質問への回答や、PS Engagement Estimate や SOW などの PS スコープ業務の納品連絡を行います。プライベートな [#professional-services-us-pubsec](https://gitlab.slack.com/archives/C025UHLTR50/p1625778195002900) Slack チャンネルは US Public Sector のサービス向けに使用されます。[#professional-services-us-pubsec](https://gitlab.slack.com/archives/C025UHLTR50/p1625778195002900) へのアクセス権は [#professional-services](https://gitlab.slack.com/archives/CFRLYG77X) でリクエストしてください。
 
@@ -63,7 +63,7 @@ Professional Services の販売に関する詳細は、[Selling Professional Ser
 
 Professional Services を顧客に対してどのようにポジショニングするかについての情報は、[Positioning Professional Services](/handbook/customer-experience/professional-services-engineering/positioning) を参照してください。
 
-#### Professional Services エンゲージメント開始までのリードタイム
+#### Professional Services エンゲージメント開始までのリードタイム {#lead-time-for-starting-a-professional-services-engagement}
 
 「プロジェクトを開始するまでのリードタイムはどれくらいですか？」と聞かれることがしばしばあります。また、顧客が特定の期間内にプロジェクトを納品してほしいと希望する場合もあります。
 常時多くのプロジェクトや提案が進行中である可能性があるため、エンゲージメントの優先順位付けとスケジューリングにあたっていくつかのルールがあります。
@@ -103,7 +103,7 @@ Professional Services を顧客に対してどのようにポジショニング�
 - `proposal::Ready For Approval`: Engagement Manager が必要な SOW を準備し、承認リクエストをトリガーしました。SOW をリリースする前に承認が必要です。
 - `proposal::Approved`: SOW が承認され、実行準備が整いました。SAE/AE は SOW を署名のためにリリースする前に、SFDC で Legal Case を起こして Legal の承認を得る必要があります。
 
-### Professional Services のスケジューリング
+### Professional Services のスケジューリング {#scheduling-professional-services}
 
 現在、顧客プロジェクトは Opportunity が Closed-Won となった順にスケジューリングされます。プロジェクトのスケジューリングに関する懸念は、スコーピングプロセスの Discovery フェーズで議論してください。Discovery フェーズの一環として、Project Scheduling Intake Issue を更新してください。Project Coordinator はこの情報を用いて要員配置をレビューします。リードタイムや空き状況に関する質問がある場合は、professional services Slack チャンネル（#professional-services）で @ps-scheduling グループにメンションして Engagement Manager または Project Coordinator に確認してください。
 SOW／契約書の署名前に、PS Project Coordinator の確認なしにプロジェクト開始日をコミットすることは控えてください。

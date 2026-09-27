@@ -3,7 +3,7 @@ title: "カスタマーオンボーディング"
 upstream_path: /handbook/customer-experience/csm/onboarding/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -137,7 +137,7 @@ CSM は、[Customer Journey Spreadsheet](https://docs.google.com/spreadsheets/d/
 **この指標が重要な理由:**
 顧客との最初のエンゲージメントにかかった時間を把握するのに役立ちます。エンゲージメントは、顧客との最初の CSM ミーティングとして定義されます。
 
-### タイム・トゥ・ファーストバリュー
+### タイム・トゥ・ファーストバリュー {#time-to-first-value}
 
 **目標:** 30 日
 

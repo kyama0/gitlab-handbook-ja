@@ -5,7 +5,7 @@ description: "GitLab プロフェッショナルサービスの運用プロセ�
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -356,7 +356,7 @@ Project Health Report は、Mavenlink プロジェクトの右側のフライア
 
 Health Report は 1 日に 1 件のみ追加できます
 
-#### Mavenlink プロジェクトステータス / カラー
+#### Mavenlink プロジェクトステータス / カラー {#mavenlink-project-status-colors}
 
 | Mavenlink Status |  |
 | ------ | ------ |

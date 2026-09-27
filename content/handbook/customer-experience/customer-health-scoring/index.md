@@ -4,7 +4,7 @@ description: "顧客アカウントスコアリングの概要と方法論フレ
 upstream_path: /handbook/customer-experience/customer-health-scoring/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
@@ -41,7 +41,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | **DevOps 採用** | DevOps 採用は組織内のグループが GitLab の最も重要な機能を採用・使用する方法を示す | GitLab 顧客 | SaaS ではグループとプロジェクトレベル、セルフマネージドではインスタンスレベルで設定が必要な Dev、Sec、Ops にわたる顧客の全体的な採用を示す特定のメトリクス（[GitLab 機能](https://about.gitlab.com/features/)） | [ドキュメントリンク](https://docs.gitlab.com/ee/user/group/devops_adoption/) |
 | **DevOps レポート** | これは DevOps 採用と統合されており、最終的に顧客エグゼクティブダッシュボードに置き換えられる | GitLab 顧客 | Dev、Sec、Ops の機能利用（[ドキュメント](https://docs.gitlab.com/ee/administration/analytics/dev_ops_reports.html)） | |
 
-## アカウントヘルス
+## アカウントヘルス {#account-health}
 
 アカウントヘルスは、以下を特定する洞察を提供する主要メトリクスの集約です:
 
@@ -130,7 +130,7 @@ CSM センチメントが更新されたタイムラインエントリを表示�
 
 ## Gainsight
 
-### Gainsight スコアカード属性と計算
+### Gainsight スコアカード属性と計算 {#gainsight-scorecard-attributes-and-calculations}
 
 ヘルススコアの基準は、手動または自動的に適用されて全体的なメジャーを決定します。個々のメジャーが欠落している場合、ウェイトは完成したメジャーに再配分されます。
 
@@ -159,7 +159,7 @@ CSM センチメントが更新されたタイムラインエントリを表示�
 
 <br>
 
-### CSM センチメント
+### CSM センチメント {#csm-sentiment}
 
 CSM は全体的なアカウントヘルスを決定する際に CSM センチメントを更新します。ガイドラインは以下の通りです:
 
