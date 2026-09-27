@@ -19,13 +19,13 @@ Definition of Done と Definition of Ready は密接に関連しています。�
 
 詳細レベルに関係なく、プロジェクトのスコープ内とみなされるすべての項目は製品バックログにあり、単に優先順位が付けられるのではなく、順序付けられます - つまり、上位のものは 5 番目の位置のものより重要であり、それは 23 番目の位置のものより重要です。順序はプログラムマネージャー / プロダクトマネージャーによって決定され、通常はビジネス価値によって駆動されます - 顧客開発チームと相談して決定します。
 
-![Example Backlog](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/backlog.png)
+![バックログの例](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/backlog.png)
 
 プロジェクトのスコープについて分かっていることは、ディスカバリが変化につながるという期待のもと、ユーザーストーリーの形で書き留められ文書化されます。製品バックログは生きたリポジトリであり、プログラムマネージャー / プロジェクトマネージャーが所有します。
 
 製品バックログはスプリントバックログのソースです。製品バックログがプロジェクト / エンゲージメントの要件リポジトリを表すのに対し、スプリントバックログは次のスプリントに合意されたスコープであり、GitLab 実装チームと顧客開発チームのデリバリーコミットメントを表します。GitLab 実装チームは真空中で動作するわけではなく、顧客開発チームと優先順位を密に調整します。
 
-![Iteration Cycle](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/iterationcycle.jpg)
+![イテレーションサイクル](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/iterationcycle.jpg)
 
 合意されコミットされた後、スプリントバックログは通常、GitLab 実装チームと顧客開発チームがそのコミットメントに対してデリバリーできることを保証するために変更されません。
 

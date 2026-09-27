@@ -170,9 +170,9 @@ GitLab Education Services のインストラクター主導コースを提供す
 
 1. 提供するコースの train-the-trainer (T3) 動画をレビューします。
 
-1. デリバリーの準備が適切に整っていることを確認するため、[Instructor Pre-Training Checklist](/handbook/customer-experience/professional-services-engineering/processes/delivery-checklists/) をレビューして従ってください。
+1. デリバリーの準備が適切に整っていることを確認するため、[インストラクターのトレーニング前チェックリスト](/handbook/customer-experience/professional-services-engineering/processes/delivery-checklists/) をレビューして従ってください。
 
-1. これらの [PS Remote Training Tips and Tricks](/handbook/customer-experience/professional-services-engineering/remote-training-tips/) をレビュー、練習、使用してください。
+1. これらの [リモートトレーニング進行のベストプラクティス](/handbook/customer-experience/professional-services-engineering/remote-training-tips/) をレビュー、練習、使用してください。
 
 1. 以下の GitLab Training Lab セットアップステップを完了します。クラスの初日前に、ラボの演習をレビューし、ラボが正しく動作していることを確認してください。
 
@@ -194,7 +194,7 @@ PS は、ハンズオンのコースラボアクティビティとハンズオ�
 
 #### トレーニングのクローズアウト
 
-1. トレーニングクラスをクローズアウトするためのすべてのステップに従ったことを確認するため、[Instructor Post-Training Checklist](/handbook/customer-experience/professional-services-engineering/processes/delivery-checklists/) をレビューします。
+1. トレーニングクラスをクローズアウトするためのすべてのステップに従ったことを確認するため、[インストラクターのトレーニング後チェックリスト](/handbook/customer-experience/professional-services-engineering/processes/delivery-checklists/) をレビューします。
 1. Professional Services Operations は出席レポートをダウンロードし、[メールコミュニケーションテンプレート](https://docs.google.com/document/d/1rJ9q9gEzsumRxDhoWEe45u70efmKA0eWNg69WONuCYs/edit?usp=sharing) にあるメールテンプレートを使用してクローズアウトメールを顧客に送信します。
 
 ---
@@ -288,7 +288,7 @@ GitLab パートナーに Kantata アクセスを提供するには、以下の�
 - PS Time Tracking - Non Creditable プロジェクトにはノートは不要です
 - 顧客プロジェクトにはノートが必要な場合があります。時間提出前に Project/Program Manager に確認してください
 
-  - PTO は Kantata の time off 機能で提出し、企業ガイドライン [time off process](/handbook/people-group/time-off-and-absence/time-off-types/) にも従うべきです
+  - PTO は Kantata の time off 機能で提出し、企業ガイドライン [休暇申請の手続き](/handbook/people-group/time-off-and-absence/time-off-types/) にも従うべきです
   - 祝日と Family and Friends day は Kantata カレンダーでスケジュールされます
 
 - 時間は最も近い 15 分単位に丸める必要があります、例:

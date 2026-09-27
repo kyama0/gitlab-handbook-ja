@@ -39,7 +39,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 プログラムマネージャー / プロジェクトマネージャーは、プロジェクトの戦略と方向性を提供します。つまり、彼/彼女はビジョン、製品ロードマップ、リリースゴール、スプリントゴールを提供する責任があります。プログラムマネージャー / プロジェクトマネージャーは、製品バックログから項目を挿入、再優先順位付け、リファイン、または削除することが期待されます。これは、スプリントスコープが定義され開発チームによってコミットされるまで、いつでも発生する可能性があります。
 
-![Backlog Change](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/refine-backlog.png)
+![バックログの変更](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/refine-backlog.png)
 
 製品バックログの [サイジングと見積もり](../good-estimation-techniques/_index.md) は通常、スプリントプランニングミーティングや進行中のスプリント中の定期的な間隔で行われます。プログラムマネージャー / プロジェクトマネージャーがユーザーストーリーを追加する速さによっては、より頻繁な、おそらく毎日の見積もりセッションが必要になる場合もあります。GitLab 実装チーム、顧客開発チーム、プログラムマネージャー / プロジェクトマネージャーは、スプリントプランニングミーティングや進行中の定期セッションのいずれかで、バックログ項目を見積もるために協力する必要があります。
 
@@ -63,19 +63,19 @@ GitLab には、ユーザーがバックログを追跡するために表示で�
 2. **リリースバックログ**: 製品ロードマップとリリースプランに従って特定のリリース（一連のスプリントで構成）で提供される機能のサブセット - 特定のリリース期間中アクティブ
 3. **スプリントバックログ**: 次のスプリントで実行される作業を表す - スプリント期間中アクティブ
 
-![Product Backlog](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/agile-release-planning-sprint.jpg)
+![プロダクトバックログ](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/agile-release-planning-sprint.jpg)
 
 ラベルを使用してユーザーストーリー / Issue にタグを付けることができます。
 
-![Release Labels](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/release-label.jpg)
+![リリースラベル](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/release-label.jpg)
 
 このようなタグ付けにより、特定のユーザーストーリーとそれがどのような状態にあるかについての関連情報を簡単に表示できます。
 
 通常、次に行う予定のスプリントは Estimation Poker を使用して詳細にサイジングおよび見積もられ、その次の 2〜3 のスプリントとそれらの内容は Estimation Poker または T-Shirt Sizing のいずれかを使用してサイジングおよび見積もられます。スプリントがチームによってコミットされたら、「進行中」であるためスコープは変更されないようにすることを覚えておいてください - 「進行中」のストーリーを変更すると、不必要なコンテキストスイッチが発生し、生産性の面でコストがかかります。将来のスプリントは、Product Owner と開発チームが合意するように、引き続き調整やアイテムの並べ替えが可能です。
 
-![Release Backlog](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/agile-release-planning-sprint.jpg)
+![リリースバックログ](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/agile-release-planning-sprint.jpg)
 
-![Sprint Backlog](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/Sprint-Backlog.jpg)
+![スプリントバックログ](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/Sprint-Backlog.jpg)
 
 製品バックログ項目とスプリントバックログ項目には、ユーザーストーリー以外のものも含まれる場合がありますが、特定のバックログに何が含まれているかに関係なく、チームのキャパシティを消費するすべての作業項目を表現することになっています。これには、実装するエンゲージメント機能を記述する実際のユーザーストーリー、欠陥、調査、その他の技術的タスクが含まれます。
 
@@ -99,7 +99,7 @@ GitLab には、ユーザーがバックログを追跡するために表示で�
 
 アジャイルはシンプルなプロセスで、6 つのロール、5 つのイベント、9 つのアーティファクトがあります。
 
-![Roles Events Artifacts](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/Roles-Events-Artifacts.png)
+![役割・イベント・成果物](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/Roles-Events-Artifacts.png)
 
 上には 8 つのアーティファクトしか表示されていません - 残された動作するシステムは暗黙的に 9 番目とみなされます。
 

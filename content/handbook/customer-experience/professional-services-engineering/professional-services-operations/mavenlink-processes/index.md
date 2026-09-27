@@ -58,15 +58,15 @@ Mavenlink のメンバーは、プロジェクト参加者にならなくても�
 
 - メンバーは、Projects の Project List タブに移動し、Show ドロップダウンメニューから Guest Projects を選択することで、ゲストアクセスを持つプロジェクトを見つけられます。チームメンバーは、自分が参加しているプロジェクトに対してゲストアクセスを持つことはできません。
 
-![Read Only](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/mavenlinkguestaccess3.png)
+![読み取り専用](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/mavenlinkguestaccess3.png)
 
-![Read Only 2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/mavenlinkguestaccess2.png)
+![読み取り専用 2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/mavenlinkguestaccess2.png)
 
 ### Mavenlink ユーザープロフィールの更新
 
 - ダッシュボードから Edit Profile をクリックします
 
-![User Profile](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/profile.png)
+![ユーザープロフィール](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/profile.png)
 
 - プロフィール情報と写真を更新し、保存します
 

@@ -133,7 +133,7 @@ Cone of Uncertainty は、プロジェクト管理用語で、プロジェクト
 
 次の図は違いを明確にしようとしています。
 
-![Absolute-Relative](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/absolute-relative.jpg)
+![絶対見積もりと相対見積もり](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/absolute-relative.jpg)
 
 ここでの _絶対的_ な指標はミリリットル (ml) で、これは国際単位系の液体の指標です。意味の解釈の余地はありません。絶対的です。ワインボトルはこれに従って分類されます。
 
@@ -141,11 +141,11 @@ _相対的_ な指標は、T シャツサイジングで使われる small、med
 
 次の表は、絶対見積もりと相対見積もりの比較を示しています。
 
-![Absolute-Relative-Table](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/absolute-relative-table.jpg){width="544" height="380"}
+![絶対見積もりと相対見積もりの比較表](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/absolute-relative-table.jpg){width="544" height="380"}
 
 ## エスティメーションポーカー
 
-![Estimation Poker](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/estimation-poker.jpg){width="523" height="285"}
+![見積もりポーカー](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/estimation-poker.jpg){width="523" height="285"}
 
 前述のとおり、エスティメーションポーカーは、精密さよりも正確さを重視する相対見積もり手法です。一般にフィボナッチ数列 (1, 2, 3, 5, 8, 13, 21, 34, 55, …) を使用します [^2]。
 
@@ -206,7 +206,7 @@ _相対的_ な指標は、T シャツサイジングで使われる small、med
 
 ## T シャツサイジングと Affinity Estimation
 
-![T-Shirt Sizing](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/t-shirt-sizing.jpg){width="521" height="326"}
+![T シャツサイズ見積もり](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/t-shirt-sizing.jpg){width="521" height="326"}
 
 T シャツサイジング（別名 Affinity Estimation）は、通常必要となるすべての詳細を持たずに素早く何かを見積もる必要性に基づいています。T シャツサイジングが使える例をいくつか示します。
 
@@ -260,7 +260,7 @@ T シャツサイジング（別名 Affinity Estimation）は、通常必要と�
 
 組織は時々、見積もりに人を増やせば見積もりが良くなると考えますが、これは一般に受け入れられている誤解です。チームが大きいほど良い見積もりを生み出すわけではありません。
 
-![Estimation Accuracy](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/estimateaccuracy.jpg){width="600" height="377"}
+![見積もりの精度](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/estimateaccuracy.jpg){width="600" height="377"}
 
 **見積もり精度は、チームサイズが大きくなるにつれて実際には低下します。**
 
@@ -270,7 +270,7 @@ T シャツサイジング（別名 Affinity Estimation）は、通常必要と�
 
 見積もりの効率と同様にチームのダイナミクスでも重要なのは、以下のことを理解することです。
 
-![Team Dynamics](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/teamdynamics.jpg)
+![チームのダイナミクス](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/teamdynamics.jpg)
 
 チームが大きくなるほど、効果的にコミュニケーションし、見積もり、コンセンサスに達するのが難しくなります。チームが大きくなるほど、誤コミュニケーションによって何かが見落とされる可能性が高まります。私たちの PS エンゲージメントのほとんどはリモートで実施されるため、この問題はさらに増幅されます。
 
@@ -280,7 +280,7 @@ T シャツサイジング（別名 Affinity Estimation）は、通常必要と�
 
 ベロシティとは、開発チームが信頼できる形でストーリーポイントを納品できるレートです（通常はタイムボックスされたスプリントにパッケージされ、動作するプロダクトインクリメントとなります）。
 
-![Velocity Table](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/velocity.jpg)
+![ベロシティ表](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/velocity.jpg)
 
 ## 見積もりは自己補正する
 
@@ -296,7 +296,7 @@ T シャツサイジング（別名 Affinity Estimation）は、通常必要と�
 
 実装チームが「forming–storming–norming–performing」プロセスを経ると、チームのベロシティが確立されます。見積もり精度と予測可能なベロシティにより、より長期の予測が可能になります。
 
-![Velocity Over Time](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/velocity-forecast.jpg)
+![時間経過に伴うベロシティ](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/velocity-forecast.jpg)
 
 **簡単に言えば、プロダクトバックログに 2,400 ストーリーポイントを表す 450 のユーザーストーリーがあり、開発チームが 2 週間スプリントごとに 60 ストーリーポイントの安定したベロシティで納品しているなら、プロジェクトの残りはあと 40 スプリント、つまり 80 週間、おおよそ 1 年半かかると予測できます。**
 

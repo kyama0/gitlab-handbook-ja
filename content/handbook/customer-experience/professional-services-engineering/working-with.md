@@ -59,9 +59,9 @@ graph LR;
 
 ![create-services-opportunity.png](/images/customer-experience/professional-services-engineering/working-with-ps/create-services-opportunity.png)
 
-Professional Services の販売に関する詳細は、[Selling Professional Services](/handbook/customer-experience/professional-services-engineering/selling) を参照してください。
+Professional Services の販売に関する詳細は、[GitLab プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling) を参照してください。
 
-Professional Services を顧客に対してどのようにポジショニングするかについての情報は、[Positioning Professional Services](/handbook/customer-experience/professional-services-engineering/positioning) を参照してください。
+Professional Services を顧客に対してどのようにポジショニングするかについての情報は、[プロフェッショナルサービスのポジショニング](/handbook/customer-experience/professional-services-engineering/positioning) を参照してください。
 
 #### Professional Services エンゲージメント開始までのリードタイム {#lead-time-for-starting-a-professional-services-engagement}
 
@@ -87,7 +87,7 @@ Professional Services を顧客に対してどのようにポジショニング�
 
 ##### SOW Proposal Approval Board
 
-![SOW proposal board screenshot](/images/customer-experience/professional-services-engineering/sow-approvals-board.png)
+![SOW 提案承認ボードのスクリーンショット](/images/customer-experience/professional-services-engineering/sow-approvals-board.png)
 
 [SOW Proposal Approval Board](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/-/boards/1353982?label_name[]=Services%20Calculator) は、すべての SOW をスコーピングと承認プロセスを通して進行させ、顧客にレビューと署名のために送付するまで管理するために使用されます。
 
@@ -99,7 +99,7 @@ Professional Services を顧客に対してどのようにポジショニング�
 - `proposal::Awaiting_Discovery`: エンゲージメントをスコープするために必要な情報を、アカウントチームと顧客から収集中です。
 - `proposal::Strawman_WIP`: Engagement Manager がレビュー用の初期見積もりをドラフト中です。
 - `proposal::Estimate_Feedback`: Estimate がアカウントチームおよび／または顧客によるレビュー中です。Engagement Manager は SOW へ進む前にフィードバックと確認を待っています。
-- `proposal::SOW_WIP`: Engagement Manager が SOW をドラフト中で、マージン計算のために [SOW Cost Estimate Calculator](https://docs.google.com/spreadsheets/d/16KFNRFe4E_oaqU7_ZGivoO7eU3-65dkMgVvK5Jvb7ZQ/edit#gid=158441360) を使って [Cost Estimate](/handbook/customer-experience/customer-success-vision/#professional-services-standard-cost) を準備しています。なお、この Cost Estimate Calculator は、Engagement Manager が幅広い PS エンゲージメントの見積もり作成に使用するより大きな見積もりツールに組み込まれています。
+- `proposal::SOW_WIP`: Engagement Manager が SOW をドラフト中で、マージン計算のために [SOW Cost Estimate Calculator](https://docs.google.com/spreadsheets/d/16KFNRFe4E_oaqU7_ZGivoO7eU3-65dkMgVvK5Jvb7ZQ/edit#gid=158441360) を使って [コスト見積もり](/handbook/customer-experience/customer-success-vision/#professional-services-standard-cost) を準備しています。なお、この Cost Estimate Calculator は、Engagement Manager が幅広い PS エンゲージメントの見積もり作成に使用するより大きな見積もりツールに組み込まれています。
 - `proposal::Ready For Approval`: Engagement Manager が必要な SOW を準備し、承認リクエストをトリガーしました。SOW をリリースする前に承認が必要です。
 - `proposal::Approved`: SOW が承認され、実行準備が整いました。SAE/AE は SOW を署名のためにリリースする前に、SFDC で Legal Case を起こして Legal の承認を得る必要があります。
 

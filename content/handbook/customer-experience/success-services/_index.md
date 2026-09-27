@@ -184,7 +184,7 @@ Success Tier には、Signature ティア用に最大 4 つ、Advanced 用に 2 
 
 Accelerator は、お客様の要件と定義された成果に応じて、以下のコンテンツモジュールの 1 つ以上をまとめます。通常、Accelerator は 12 週間にわたって実行されます。必要なお客様の成果を文書化するためのディスカバリーワークショップで開始されます。それから、お客様と一緒に成果を達成するために必要なステップをアウトラインする計画ワークショップを実行します。計画ワークショップの成果は、GitLab プロジェクトでログされた Issue のバックログで、それらの成果を達成して Accelerator をクローズアウトするために次の 10 週間にわたって管理されるすべての必要な活動を含みます
 
-![Accelerator Timeline](/images/customer-experience/success-services/accelerator-timeline-graphic.png "Accelerator Timeline")
+![アクセラレーターのタイムライン](/images/customer-experience/success-services/accelerator-timeline-graphic.png "Accelerator Timeline")
 
 ###### Accelerator コンテンツモジュール
 

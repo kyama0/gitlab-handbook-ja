@@ -134,4 +134,4 @@ PS の Statement of Work のマージンを予測するために標準コスト�
 
 ## プロセスフレームワーク
 
-![Process Framework](/images/customer-experience/customer-success-vision/process-framework.jpg)
+![プロセスフレームワーク](/images/customer-experience/customer-success-vision/process-framework.jpg)

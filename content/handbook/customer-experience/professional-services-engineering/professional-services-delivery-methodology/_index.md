@@ -53,7 +53,7 @@ GitLab をプロジェクト管理ツールとして初期設定するには、[
 | Iterations    | アジャイルセレモニー中にレビューされるタイムボックス化されたイベント（一般的には 2 週間）です。      |
 | Milestones    | プロジェクトフェーズに対する進捗の追跡に使用します    |
 | Labels    | さまざまな方法で使用されますが、最も重要な用途は次のとおりです: </br> <ul><li>左から右へのワークフローによるデリバリー中の進捗管理</li><li>優先順位付けの管理</li><li>作業の特定のサブカテゴリの整理</li><li>リスクの追跡と軽減</li></ul> |
-| Weight | Issue のサイズや工数レベルを示します。Weight の割り当てに関するガイダンスは [Good Estimation Techniques](./good-estimation-techniques/_index.md) を参照してください    |
+| Weight | Issue のサイズや工数レベルを示します。Weight の割り当てに関するガイダンスは [良い見積もり手法](./good-estimation-techniques/_index.md) を参照してください    |
 
 アジャイル用語の GitLab へのマッピングについて、より明確な情報は [このガイド](./agile-to-gitlab-terminology/_index.md) を参照してください。
 

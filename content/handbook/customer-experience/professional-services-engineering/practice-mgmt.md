@@ -21,7 +21,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## チームの紹介 - お話しましょう
 
-私たちのチームは [team page here](/handbook/company/team/?department=practice-management) で確認できます。最も連絡しやすいのは [#ps-practice](https://gitlab.slack.com/archives/C02DWMKHGRG) Slack チャンネルです。
+私たちのチームは [チームページ](/handbook/company/team/?department=practice-management) で確認できます。最も連絡しやすいのは [#ps-practice](https://gitlab.slack.com/archives/C02DWMKHGRG) Slack チャンネルです。
 
 ## バックログ、ワークフロー、カンバンボード
 
@@ -144,8 +144,8 @@ PS は services.yml というファイルを、オファリングの説明と仕
 
 ### 新しいサービス/イニシアチブのためのソフトウェア開発
 
-共通のソフトウェアスタックと開発プロセスについては [Developing Software For Professional Services](/handbook/customer-experience/professional-services-engineering/professional-services-tooling/) を参照してください。
+共通のソフトウェアスタックと開発プロセスについては [プロフェッショナルサービスのソフトウェア開発](/handbook/customer-experience/professional-services-engineering/professional-services-tooling/) を参照してください。
 
 ### 開発環境のセットアップ
 
-新しいプラクティスエンジニアおよびプロフェッショナルサービスエンジニアは、開発に使用する基盤ツールをすべてインストールするために [setting up a development environment](/handbook/customer-experience/professional-services-engineering/development-environment/) チュートリアルを参照してください。
+新しいプラクティスエンジニアおよびプロフェッショナルサービスエンジニアは、開発に使用する基盤ツールをすべてインストールするために [開発環境のセットアップ](/handbook/customer-experience/professional-services-engineering/development-environment/) チュートリアルを参照してください。

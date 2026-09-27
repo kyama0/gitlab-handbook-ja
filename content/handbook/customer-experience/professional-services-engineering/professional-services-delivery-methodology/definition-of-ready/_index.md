@@ -19,7 +19,7 @@ Definition of Ready と Definition of Done は密接に関連しています。�
 
 詳細レベルに関係なく、プロジェクトのスコープ内とみなされるすべての項目は製品バックログにあり、単に優先順位が付けられるのではなく、順序付けられます - つまり、上位のものは 5 番目の位置のものより重要であり、それは 23 番目の位置のものより重要です。順序はプログラムマネージャー / プロダクトマネージャーによって決定され、通常はビジネス価値によって駆動されます - 顧客開発チームと相談して決定します。
 
-![Example Backlog](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/backlog.png)
+![バックログの例](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/backlog.png)
 
 プロジェクトのスコープについて分かっていることは、ディスカバリが変化につながるという期待のもと、ユーザーストーリーの形で書き留められ文書化されます。製品バックログは生きたリポジトリであり、プログラムマネージャー / プロジェクトマネージャーが所有します。
 
