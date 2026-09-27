@@ -307,7 +307,7 @@ GitLab PTY Ltd NZ に雇用されているチームメンバーは、ニュー�
 
 シフトがまだ **終わっておらず**、*今後* のオンコール サポートエンジニアと調整したい場合は、[オンコール サポートエンジニアの確認](#determining-the-on-call-support-engineer-ceoc) を参照してください。
 
-### オンコール マネージャーを巻き込む
+### オンコール マネージャーを巻き込む {#engaging-the-on-call-manager}
 
 状況によっては、支援のために [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook) を巻き込む必要があります。
 

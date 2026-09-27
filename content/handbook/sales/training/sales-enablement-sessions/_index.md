@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-## Field Enablement Spotlight セッション
+## Field Enablement Spotlight セッション {#field-enablement-spotlight-sessions}
 
 Field Enablement Spotlight は、GitLab のセールス、セールスデベロップメント、カスタマーサクセス、ソリューションアーキテクト、パートナーエコシステム、リニューアル、プロフェッショナルサービス & オペレーションの各チームメンバー全員を対象とした、毎週開催される継続教育シリーズです。
 

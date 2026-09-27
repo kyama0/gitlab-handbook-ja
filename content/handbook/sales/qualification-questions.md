@@ -278,7 +278,7 @@ GitLab Premium および GitLab Ultimate Opportunity をより多く特定する
 
 - ゲストユーザー - ゲストユーザーはライセンスカウントにカウントされません
 
-## **追加質問**
+## **追加質問** {#additional-questions-if}
 
 ### 見込み客が無料トライアルにサインアップした場合（目標: トライアルの成功を確保する）
 

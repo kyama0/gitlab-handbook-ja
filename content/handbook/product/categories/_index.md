@@ -28,7 +28,7 @@ stale: false
 - [私たちのピッチデック](https://gitlab.highspot.com/spots/615dd7e3911d70c4887812a7)。会社を説明するために使用するスライド
 - [Strategic marketing](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) の専門分野
 
-## 階層
+## 階層 {#hierarchy}
 
 カテゴリは階層を形成します:
 
