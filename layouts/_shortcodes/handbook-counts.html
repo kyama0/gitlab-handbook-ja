@@ -64,7 +64,7 @@
         {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
     {{- end }}
-    {{- range findRE `(?s)\{\{[<%]\s*panel\b[^{}]*\sheader="[^"]+"[^{}]*[>%]\}\}` $source }}
+    {{- range findRE `(?s)\{\{[<%]\s*(panel|tab)\b[^{}]*\sheader="[^"]+"[^{}]*[>%]\}\}` $source }}
         {{- $header := replaceRE `(?s)^.*?\sheader="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($header | markdownify | plainify)) }}
     {{- end }}
@@ -549,7 +549,7 @@
         {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
-    {{- $rawSource = replaceRE `(?s)\{\{[%<].*?[>%]\}\}` " " $rawSource }}
+    {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z][^{}]*?[>%]\}\}` " " $rawSource }}
     {{- $renderedSource := $rawSource | markdownify }}
     {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
     {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
