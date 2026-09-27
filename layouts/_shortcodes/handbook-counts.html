@@ -31,6 +31,18 @@
 {{- if eq $site "handbook" }}
 {{- $scratch := newScratch }}
 {{- $team := site.Data.public.team }}
+{{- /* These local, standalone shortcodes do not render another page or fetch remote data. */ -}}
+{{- $localShortcodes := slice
+    "label" "team-pets" "group-by-expertise" "release-managers" "release-schedule"
+    "engineering/stable-counterparts" "engineering/workflow-labels" "engineering/create-retrospectives"
+    "handbook-data-toc" "people-group/entities-with-probation" "people-group/entities-without-probation"
+    "engineering/support-glossary" "support/runbooks" "engineering/section-counterparts"
+    "engineering/stages-counterparts" "group-pages-by-category" "engineering/support-skill-areas"
+    "all-remote/country-select" "eta/css-criticalities" "engineering/projects-table"
+    "engineering/projects-body" "devops-diagram" "engineering/design-documents-list"
+    "engineering/verify-team-communication" "engineering/create/career-development"
+    "security/public-policy-standards-toc" "security/customer-support-operations-criticalities" }}
+{{- $localPattern := print `\{\{[<%]\s*(` (delimit $localShortcodes "|") `)(\s+[^{}]*)?[>%]\}\}` }}
 {{- range .Site.RegularPages }}
     {{- $page := . }}
     {{- /* Avoid rendering every page from this shortcode, which can deadlock Hugo's content cache. */ -}}
@@ -510,6 +522,12 @@
         {{- $name := replaceRE `\{\{[<%]\s*product/([a-z-]+)\s*[>%]\}\}` "$1" . }}
         {{- $shortcode := os.ReadFile (printf "layouts/_shortcodes/product/%s.html" $name) }}
         {{- $scratch.Add "wordcount" (countwords ($shortcode | plainify)) }}
+    {{- end }}
+    {{- range findRE $localPattern $source }}
+        {{- $rendered := $page.RenderString . }}
+        {{- $rendered = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $rendered }}
+        {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
+        {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
     {{- $source = replaceRE `(?s)\{\{[%<].*?[>%]\}\}` " " $source }}
     {{- $scratch.Add "wordcount" (countwords ($source | markdownify | plainify)) }}
