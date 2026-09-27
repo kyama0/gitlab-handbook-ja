@@ -116,7 +116,7 @@ SFDC で GitLab プロフェッショナルサービス Opportunity を作成し
 
 ### 利用できる SKU はありますか？
 
-はい - off the shelf のアイテムについては [SKU](https://about.gitlab.com/services/catalog/) があります。
+はい - 既製のアイテムについては [SKU](https://about.gitlab.com/services/catalog/) があります。
 
 ### 1 日または 1 時間あたりの料金はいくらですか？
 

@@ -68,13 +68,13 @@ CSM は顧客の採用、測定可能な成果、顧客満足度、そして真�
   <tr>
     <td><a href="/handbook/customer-experience/csm/cadence-calls/">ケイデンスコール</a></td>
     <td>ケイデンスコールはプロアクティブなコールです。このコールがプロアクティブであるために、CSM の責任にはリンク先のケイデンスコールページに記載されているものが含まれます</td>
-    <td>コール頻度:<br><ul><li>顧客は毎週または隔週、最低でも月 1 回はエンゲージされること</li></ul><br><br>CSM/CSE は以下の最低コール数を実施することが期待されます:<br><ul><li>CSM: 週 5〜7 コール</li><li>CSE: 週 15 コール</li></ul></td>
+    <td>コール頻度:<br><ul><li>顧客は毎週または隔週、最低でも月 1 回はエンゲージされること</li></ul><br><br>CSM/CSE は以下の最低コール数を実施することが期待されます:<br><ul><li>CSM: 週 5 〜 7 コール</li><li>CSE: 週 15 コール</li></ul></td>
     <td>DRI: CSM<br><br>Consulted: AE, 顧客<br><br>Informed: SA, リーダーシップ</td>
   </tr>
   <tr>
     <td><a href="/handbook/customer-experience/csm/workshops/">採用と拡大</a></td>
     <td><ul><li>顧客の望むビジネス成果に沿ったプラットフォーム採用（ユースケースとライセンス）の推進は CSM の役割の中心です</li><li>顧客が現在採用しているものを理解し、このユースケース/機能のイネーブルメントについて顧客と連携する</li><li>イネーブルメントまたは拡大プレイブックがオープンな場合、CSM は顧客アカウントで関連するモーションを積極的に推進します</li></ul></td>
-    <td>常に、CSM は担当顧客の半数（3〜4 顧客）について積極的に拡大を推進していること</td>
+    <td>常に、CSM は担当顧客の半数（3 〜 4 顧客）について積極的に拡大を推進していること</td>
     <td>DRI: CSM<br><br>Consulted: AE, 顧客<br><br>Informed: SA, リーダーシップ</td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ CSM は顧客の採用、測定可能な成果、顧客満足度、そして真�
   </tr>
   <tr>
     <td><a href="/handbook/customer-experience/csm/renewals/">更新</a></td>
-    <td><ul><li>CSM の仕事は、更新の 3〜4 ヶ月前に「ソフト」な<a href="/handbook/customer-experience/csm/renewals/#renewal-question">更新質問</a>をすることです</li><li>この会話とその結果は、Gainsight の「更新コール」ミーティングタイプ（タイムラインエントリ内）を使用して追跡されます</li></ul></td>
+    <td><ul><li>CSM の仕事は、更新の 3 〜 4 ヶ月前に「ソフト」な<a href="/handbook/customer-experience/csm/renewals/#renewal-question">更新質問</a>をすることです</li><li>この会話とその結果は、Gainsight の「更新コール」ミーティングタイプ（タイムラインエントリ内）を使用して追跡されます</li></ul></td>
     <td>セグメントや地域に関わらず、すべての顧客</td>
     <td>DRI: CSM, AE, リニューアルチーム<br><br>Consulted: 顧客<br><br>Informed: リーダーシップ</td>
   </tr>
