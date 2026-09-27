@@ -228,10 +228,10 @@ CSM が関与する領域の概要については[CSM エンゲージメント�
 - [デジタル顧客プログラム ハンドブックページ](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/)
   - [利用可能な顧客プログラム](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/available-programs/)
 
-### CSM マネージャー
+### CSM Managers
 
-- [CSM マネージャープロセスと CSM リーダーシップチーム](/handbook/customer-experience/csm/csm-manager/)
-- [CSM マネージャー QBR テンプレート](https://docs.google.com/presentation/d/1M18LeKTrzTIKNgl3Y_URC3z9xBUNUtPRJFiWXaEUuzM/edit?usp=sharing)（GitLab 社内）
+- [CSM Manager のプロセスと CSM Leadership Team](/handbook/customer-experience/csm/csm-manager/)
+- [CSM Manager QBR テンプレート](https://docs.google.com/presentation/d/1M18LeKTrzTIKNgl3Y_URC3z9xBUNUtPRJFiWXaEUuzM/edit?usp=sharing)（GitLab 社内）
 - [CSM 昇進テンプレート](https://docs.google.com/document/d/1UOcfUtrseaucIbnFmJkL8XsQwz4xKfj0IQcYbcRGSvI/edit)（GitLab 社内）
 
 ---
@@ -253,7 +253,7 @@ Customer Success Management では、製品や関連業界トピックに関す�
 
 ## SFDC の便利なレポート
 
-### 担当する戦略的アカウントエグゼクティブ（SAE）の商談の追跡
+### 担当する Strategic Account Executive（SAE）の商談の追跡
 
 商談が正しいオーダータイプでリストされていることを確認するために、[この Salesforce レポート](https://gitlab.my.salesforce.com/00O4M000004agfP)で SAE が担当するすべてのクローズ済みまたは近くクローズする商談を確認できます。オーダータイプの追跡は、CSM チームのクォータと報酬がこれに依存するため重要です。カウントされるものについては、最新の[セールス報酬プラン](/handbook/finance/sales-comp-plan/)情報を参照してください。
 

@@ -40,10 +40,10 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - `ProServ-practice::Education` （カスタマーサクセスグループレベルにある [これらのスコープ付きラベル](https://gitlab.com/groups/gitlab-com/customer-success/-/labels?utf8=%E2%9C%93&subscribed=&search=PS-Practice) に置き換えられ非推奨予定）
 - `Workflow::validation backlog` - チームメンバーが対象者のニーズと潜在的なエデュケーションサービスオファリングを特定する
-- `Workflow::problem validation` - プラクティスマネージャーが提案されたエデュケーションサービスで対応するニーズを検証する
-- `Workflow::design` - プラクティスマネージャーがソリューションコンポーネントの要件を定義し、提案ソリューションが実現可能であることを ID に確認する
-- `Workflow::solution validation` - プラクティスマネージャーが提案されたエデュケーションサービスソリューションがビジネス目標を満たすことを検証する
-- `Workflow::planning breakdown` - プラクティスマネージャーが ID と協力し、Issue と Epic でプロジェクト作業を計画する
+- `Workflow::problem validation` - Practice Manager が提案されたエデュケーションサービスで対応するニーズを検証する
+- `Workflow::design` - Practice Manager がソリューションコンポーネントの要件を定義し、提案ソリューションが実現可能であることを ID に確認する
+- `Workflow::solution validation` - Practice Manager が提案されたエデュケーションサービスソリューションがビジネス目標を満たすことを検証する
+- `Workflow::planning breakdown` - Practice Manager が ID と協力し、Issue と Epic でプロジェクト作業を計画する
 
 ## 新しいオファリングの市場投入ワークフロー
 
@@ -98,7 +98,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ### 新しいサービス SKU の作成方法
 
-新しい PS オファリングの SKU は PS プラクティスマネージャーから依頼されます。新しい SKU を依頼するには、プラクティスマネージャーは以下の項目とステップを決定・完了して承認を得る必要があります。
+新しい PS オファリングの SKU は PS Practice Manager から依頼されます。新しい SKU を依頼するには、Practice Manager は以下の項目とステップを決定・完了して承認を得る必要があります。
 
 #### 必要な項目
 
@@ -110,7 +110,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 #### SKU 作成のステップ
 
-プラクティスマネージャーは新しい SKU の作成依頼に以下のステップを踏みます。
+Practice Manager は新しい SKU の作成依頼に以下のステップを踏みます。
 
 1. 上記の要件を参照しながら、[Finance Issue トラッカーに Issue を作成](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new?issuable_template=CM:%20Add_New_PS_SKU)
 1. セールス担当の Finance Business Partner とレビュー
@@ -136,7 +136,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ### サービス SKU の廃止方法
 
-PS オファリングの SKU の廃止は PS プラクティスマネージャーから依頼されます。SKU の廃止を依頼するには、プラクティスマネージャーは SKU の作成と同じ基本的なステップに従い、同じ Issue テンプレートを使用して適切な承認を得ます。
+PS オファリングの SKU の廃止は PS Practice Manager から依頼されます。SKU の廃止を依頼するには、Practice Manager は SKU の作成と同じ基本的なステップに従い、同じ Issue テンプレートを使用して適切な承認を得ます。
 
 ### プロフェッショナルサービス製品ページの編集方法
 
@@ -148,4 +148,4 @@ PS は services.yml というファイルを、オファリングの説明と仕
 
 ### 開発環境のセットアップ
 
-新しいプラクティスエンジニアおよびプロフェッショナルサービスエンジニアは、開発に使用する基盤ツールをすべてインストールするために [開発環境のセットアップ](/handbook/customer-experience/professional-services-engineering/development-environment/) チュートリアルを参照してください。
+新しい Practice Engineers および Professional Services Engineers は、開発に使用する基盤ツールをすべてインストールするために [開発環境のセットアップ](/handbook/customer-experience/professional-services-engineering/development-environment/) チュートリアルを参照してください。

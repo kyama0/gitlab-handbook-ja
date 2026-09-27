@@ -35,12 +35,12 @@ Professional Services チームは、専門的な機能と責任に基づいて�
 
 | 機能 | 責任 |
 |---|---|
-| [デリバリー & プロジェクトマネジメント](/handbook/customer-experience/professional-services-engineering/project-mgmt/#deliver-train-and-monitor) | 専門エンジニアおよびプロジェクト/プログラムマネージャーによるサービスデリバリーの計画と実行 |
+| [デリバリー & プロジェクトマネジメント](/handbook/customer-experience/professional-services-engineering/project-mgmt/#deliver-train-and-monitor) | 専門エンジニアおよび Project/Program Managers によるサービスデリバリーの計画と実行 |
 | [エンゲージメントマネジメント](engagement-mgmt/) | GitLab セールスチームメンバーと連携したオポチュニティおよび SOW のスコーピングとクローズ |
 | [インストラクショナルデザイン & 開発](instruct-dev/) | 教育コンテンツの作成、展開、維持管理 |
 | [プラクティスマネジメント](practice-mgmt/) | Professional Services オファリングの定義、計画、市場投入、デリバリーツール/メンテナンス |
 | [Professional Services オペレーション](professional-services-operations/) | プロジェクトコーディネーション、スケジューリング、バックエンドプロセス |
-| [Professional Services テクニカルアーキテクト](technical-architect/) | チームの技術リーダーシップ、プロジェクト品質、技術的エスカレーション |
+| [Professional Services Technical Architect](technical-architect/) | チームの技術リーダーシップ、プロジェクト品質、技術的エスカレーション |
 
 ## 方向性
 
@@ -81,8 +81,8 @@ GitLab Professional Services は、ビジネス収益性とリソース稼働率
 <!-- 目標値は以下の通りです。
 
 * **長期収益性目標**: 粗利益率 30%
-* **プロジェクトマネージャー、プログラムマネージャー、Professional Services エンジニアの稼働目標**: 請求可能時間 ~70%
-* **テクニカルアーキテクトの稼働目標**: 請求可能時間 ~55%
+* **Project Manager、Program Manager、Professional Services Engineer の稼働目標**: 請求可能時間 ~70%
+* **Technical Architect の稼働目標**: 請求可能時間 ~55%
 * **トレーナー**: 請求可能時間 ~55% -->
 
 * **請求可能稼働率** とは、契約上の SOW に従いお客様に請求される、定義されたスコープに対して費やされた時間です。
@@ -100,14 +100,14 @@ GitLab Professional Services は、ビジネス収益性とリソース稼働率
 | 平日総時間 | (8 時間 × 5 日 × 52 週) | 2080 時間 |
 | 利用可能時間 | 平日総時間 - 非稼働時間 | 1696 時間 |
 | 四半期時間合計 | 総利用可能時間 / 4 | 424 時間 |
-| プログラム/プロジェクトマネージャー、エンジニアの四半期目標 | 四半期時間合計 × 0.7 | 296.8 時間 |
-| テクニカルアーキテクト | 四半期時間合計 × 0.55 | 233.2 時間 | -->
+| Program/Project Manager、エンジニアの四半期目標 | 四半期時間合計 × 0.7 | 296.8 時間 |
+| Technical Architect | 四半期時間合計 × 0.55 | 233.2 時間 | -->
 
 ### 請求可能時間とは?
 
 最も簡単に言えば、お客様のエンゲージメントを前進させるために行われたすべての作業が「請求可能時間」とみなされます。これには、ホワイトボードの時間、機能やツールの調査、GitLab 社内エンジニアリングチームとのディスカッションが含まれます。
 
-迷った場合は、担当のプログラム/プロジェクトマネージャーまたはデリバリーマネージャーにご相談ください。特定のツールイネーブルメントについては、エンジニアはエンゲージメントに対して時間をログし、時間エントリ（Kantata 内）の「請求可能」チェックボックスをオフにして、作業内容を説明するメモを追加してください。
+迷った場合は、担当の Program/Project Manager または Delivery Manager にご相談ください。特定のツールイネーブルメントについては、エンジニアはエンゲージメントに対して時間をログし、時間エントリ（Kantata 内）の「請求可能」チェックボックスをオフにして、作業内容を説明するメモを追加してください。
 
 **顧客満足度 (CSAT)**
 このパフォーマンス指標は、お客様が GitLab PS チームとのやり取りにどれだけ満足しているかを測定します。これは、各エンゲージメント終了時にお客様に送付されるアンケートの回答に基づいています。1〜5 のスケールで、お客様が 4 または 5 を回答した場合、そのお客様は提供されたサービスに `Satisfied（満足）` しているとみなします。

@@ -43,7 +43,7 @@ AMER の顧客を担当する CSM は、このハンドブックページを使�
 | 顧客が迅速に価値を得て購入理由の ROI を確保するための、主要な[ユースケースイネーブルメント](/handbook/customer-experience/csm/workshops/)。 | - ステージ採用プレイブックの開始と完了（QoQ） <br> - [ユースケースヘルススコア](/handbook/customer-experience/product-usage-data/use-case-adoption/) |
 | [EBR](/handbook/customer-experience/csm/ebr/)は、望むビジネス成果に対する進捗が確認され、共に取り組むチームと主要なインフルエンサー/意思決定者に報告されるための戦略的なタッチポイントです。 | 過去 12 ヶ月以内に全アカウントの 75% で EBR が完了していること |
 | 継続的な採用を確保し、改善領域を特定するためのユースケース成熟度[ワークショップ](/handbook/customer-experience/csm/workshops/)と[イネーブルメントセッション](/handbook/customer-experience/csm/workshops/)。 | - [CI と DevSecOps 成熟度スコア](/handbook/customer-experience/product-usage-data/maturity-scoring/)  <br> - [ユースケースヘルススコア](/handbook/customer-experience/product-usage-data/use-case-adoption/) |
-| 顧客ラウンドテーブルは、カスタマーサクセスマネージャーが主催・運営する業界固有のイベントです。これらのイベントは、顧客が規制要件などの業界固有のトピックに関するアイデアやソリューションを交換する機会を提供します。共通のユースケースを持つ場合、業界をまたがったラウンドテーブルも開催できます。 | 四半期ごとに業界ごとに 1 回のラウンドテーブル。 |
+| 顧客ラウンドテーブルは、Customer Success Manager が主催・運営する業界固有のイベントです。これらのイベントは、顧客が規制要件などの業界固有のトピックに関するアイデアやソリューションを交換する機会を提供します。共通のユースケースを持つ場合、業界をまたがったラウンドテーブルも開催できます。 | 四半期ごとに業界ごとに 1 回のラウンドテーブル。 |
 
 ### 拡張と更新
 

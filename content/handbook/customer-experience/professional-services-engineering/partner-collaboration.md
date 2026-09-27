@@ -90,7 +90,7 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
         - マイグレーション（プロファイル近日公開）
         - プロジェクトマネジメント（プロファイル近日公開）
         - トレーニング（プロファイル近日公開）
-    - シニアチャネルソリューションズマネージャーが Establish PS Partnership Issue を作成し、必要なすべての書類の完了を追跡します。また、必要なシステムおよびツールでの企業プロファイルの作成および完了も追跡します。下記のリストを参照してください:
+    - Sr. Channel Solutions Mgr が Establish PS Partnership Issue を作成し、必要なすべての書類の完了を追跡します。また、必要なシステムおよびツールでの企業プロファイルの作成および完了も追跡します。下記のリストを参照してください:
         - Master Subcontracting & Training Agreement のレビューと署名
         - Data Privacy Addendum & SCC のレビューと署名
         - 調達ツール（Coupa）でのパートナー企業プロファイルの作成
@@ -99,14 +99,14 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
         - Slack でのパートナーチャンネルの作成
 
 1. パートナーの審査
-    - シニアチャネルソリューションズマネージャーは、PS チームメンバーとのミーティング前にコンサルタントが完了するように [Skills Matrix Form](https://docs.google.com/forms/d/e/1FAIpQLScxgCHtbuLl53HrzH55hTpXxCSCXeUDRo6uyM2YKxy9QHMI0w/viewform?usp=sf_link) を送信します。
-    - シニアチャネルソリューションズマネージャーは、コンサルタントがソフトスキルおよびコンサルティングスキルを示す 2〜3 分のビデオを録画する方法について、パートナープリンシパルと一緒に確認します。
+    - Sr. Channel Solutions Manager は、PS チームメンバーとのミーティング前にコンサルタントが完了するように [Skills Matrix Form](https://docs.google.com/forms/d/e/1FAIpQLScxgCHtbuLl53HrzH55hTpXxCSCXeUDRo6uyM2YKxy9QHMI0w/viewform?usp=sf_link) を送信します。
+    - Sr. Channel Solutions Manager は、コンサルタントがソフトスキルおよびコンサルティングスキルを示す 2〜3 分のビデオを録画する方法について、Partner Principal と一緒に確認します。
     - コンサルタントはソフトスキルコースを完了する必要があります（ビデオを Google Drive にアップロードしてリンクを共有）
-    - シニアチャネルソリューションズマネージャー／PS ディレクターがソフトスキルコース提出をレビュー／承認します
-    - シニアチャネルソリューションズマネージャーは、コンサルタントが [PSE 認定](https://university.gitlab.com/learn/learning-path/gitlab-certified-services-engineer-professional-learning-path) を完了したこと（少なくともマイグレーションおよび PM 認定）を確認します
+    - Sr. Channel Solutions Mgr／Director of PS がソフトスキルコース提出をレビュー／承認します
+    - Sr. Channel Solutions Mgr は、コンサルタントが [PSE 認定](https://university.gitlab.com/learn/learning-path/gitlab-certified-services-engineer-professional-learning-path) を完了したこと（少なくともマイグレーションおよび PM 認定）を確認します
 
 1. パートナーオンボーディング
-    - パートナープリンシパルはコンサルタントに [GitLab の Partner Portal](https://partners.gitlab.com) への登録を依頼します。
+    - Partner principals はコンサルタントに [GitLab の Partner Portal](https://partners.gitlab.com) への登録を依頼します。
         - GitLab Learn (Thought Industries)
             - [Migration](https://gitlab.edcast.com/pathways/gitlab-migration-services-engineer-pathway)
             - [Implementation](https://gitlab.edcast.com/pathways/gitlab-implementation-engineer-specialist-pathway)
@@ -116,20 +116,20 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
                 - [GitLab Certified Associate Pathway](https://gitlab.edcast.com/pathways/gitlab-certified-associate-pathway-for-gitlab-partners)
                 - [GitLab Certfied Project Management Specialist](https://gitlab.edcast.com/pathways/gitlab-certified-project-management-specialist-pathway-for-g-this)
         - PSE コンサルタントオンボーディング
-            - プロジェクトコーディネーターは、コンサルタントがプロジェクトに正しくマッチすることを確認するため、シニア PSE との 30〜45 分のテクニカルディープダイブをスケジュールします。
+            - Project Coordinator は、コンサルタントがプロジェクトに正しくマッチすることを確認するため、シニア PSE との 30〜45 分のテクニカルディープダイブをスケジュールします。
             - インタビュー結果はパートナー追跡シートに記録されます
             - オンボーディングを進めるにはシニア PSE の承認が必要です
-            - シニアチャネルソリューションズマネージャーは、コンサルタントがプロジェクトを完了するために必要なシステムおよびツールへのアクセスを得るためのアクセスリクエストを作成します。
-            - シニアチャネルソリューションズマネージャーは、コンサルタントにオンボーディング Issue を作成およびアサインします。また、運用タスク（プロジェクト経費の提出（プロセスについてはページの最後を参照）およびタイムシート提出プロセスを含む）について確認するために PS Ops チームとのコールをスケジュールします。
-            - プロジェクトコーディネーターは、コンサルタントをプロジェクト PM に紹介し、プロジェクトをキックオフします。
+            - Sr. Channel Solutions Mgr. は、コンサルタントがプロジェクトを完了するために必要なシステムおよびツールへのアクセスを得るためのアクセスリクエストを作成します。
+            - Sr. Channel Solutions Mgr は、コンサルタントにオンボーディング Issue を作成およびアサインします。また、運用タスク（プロジェクト経費の提出（プロセスについてはページの最後を参照）およびタイムシート提出プロセスを含む）について確認するために PS Ops チームとのコールをスケジュールします。
+            - Project Coordinator は、コンサルタントをプロジェクト PM に紹介し、プロジェクトをキックオフします。
 
-        - プロジェクトマネージャーオンボーディング
+        - Project Manager オンボーディング
             - コンサルタント PM は GitLab Certfied Project Management Specialist を完了します
-            - シニアチャネルソリューションズマネージャーは、コンサルタントがプロジェクトに適合することを確認するため、PS ディレクターまたはシニア PM との 30 分のコールをスケジュールします。オンボーディングを進めるには承認が必要です。
-            - シニアチャネルソリューションズマネージャーは、コンサルタントがプロジェクトを完了するために必要なシステムおよびツールへのアクセスを得るためのアクセスリクエストを作成します。
-            - シニアチャネルソリューションズマネージャーは、コンサルタントにオンボーディング Issue を作成およびアサインします。また、運用タスク（プロジェクト経費の提出（プロセスについてはページの最後を参照）およびタイムシート提出プロセスを含む）について確認するために PS Ops チームとのコールをスケジュールします。
+            - Sr. Channel Solutions Mgr は、コンサルタントがプロジェクトに適合することを確認するため、Director of PS または Sr. PM との 30 分のコールをスケジュールします。オンボーディングを進めるには承認が必要です。
+            - Sr. Channel Solutions Mgr. は、コンサルタントがプロジェクトを完了するために必要なシステムおよびツールへのアクセスを得るためのアクセスリクエストを作成します。
+            - Sr. Channel Solutions Mgr は、コンサルタントにオンボーディング Issue を作成およびアサインします。また、運用タスク（プロジェクト経費の提出（プロセスについてはページの最後を参照）およびタイムシート提出プロセスを含む）について確認するために PS Ops チームとのコールをスケジュールします。
             - コンサルタントはオンボーディング Issue を完了し、オンボーディング Issue を完了済みとマークする必要があります
-            - プロジェクトコーディネーターは、コンサルタントをプロジェクトチームに紹介し、プロジェクトをキックオフします。
+            - Project Coordinator は、コンサルタントをプロジェクトチームに紹介し、プロジェクトをキックオフします。
     - Professional Services オペレーションチームのタスク
         - PS Ops チームはオンボーディングバディをアサインします
         - オンボーディングバディは、プロジェクトを通してコンサルタントをフォローします
@@ -143,10 +143,10 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 - PS Ops チームはアクセスリクエスト Issue を提出します
   - 適切な技術ツール（ハードウェアおよびソフトウェア）へのアクセスをリクエスト
   - 適切な Slack チャンネルへのコンサルタントの追加をリクエスト
-  - PS GitLab プロジェクトマネージャーがコンサルタントとプロジェクトを開始
-- PS GitLab プロジェクトマネージャーは SOW に対するコンサルタントの稼働時間を追跡します
-- PS GitLab プロジェクトマネージャーは、コンサルタントが SOW の条件に従ってプロジェクトを完了できるよう、総バーン対プロジェクトバーンを監視します
-- PS GitLab プロジェクトマネージャーは、適切に Change Order のリスクを PS Ops に提起します
+  - PS GitLab Project Manager がコンサルタントとプロジェクトを開始
+- PS GitLab Project Manager は SOW に対するコンサルタントの稼働時間を追跡します
+- PS GitLab Project Manager は、コンサルタントが SOW の条件に従ってプロジェクトを完了できるよう、総バーン対プロジェクトバーンを監視します
+- PS GitLab Project Manager は、適切に Change Order のリスクを PS Ops に提起します
 - コンサルタントは、オンボーディングバディとのミーティングを含む、顧客ミーティング外での週次チェックインを実施します。*コンサルタントと PS オンボーディングバディは、明確なコミュニケーションを確保します（コンサルタントは Slack へのアクセスが少ないため）。*
 
 ### コンサルティングサブコントラクター プライムパートナー Statement of Work（SOW）プロセス
@@ -155,37 +155,37 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 
 コンサルティングサブコントラクティングプライムパートナー SOW は Master Professional Services Agreement を参照しているため、この契約も Data Processing Agreement と共に完全に締結されている必要があります。
 
-シニアチャネルソリューションズマネージャーは、サブコントラクティングパートナーとの関係を管理する責任を持ちます。
+Sr. Channel Solutions Manager は、サブコントラクティングパートナーとの関係を管理する責任を持ちます。
 
 **プロセス**
 
-- シニアチャネルソリューションズマネージャーおよびプロジェクトコーディネーターは、顧客と Master Professional Services Agreement および Data Processing Agreement が完全に締結されていることを確認します。必要に応じて PS シニアチャネルソリューションズマネージャーにフォローアップします。
-- パートナーシップに関する相互合意が達成された後、シニアチャネルソリューションズマネージャーはコンサルティングサブコントラクティングプライムパートナー SOW の初期版をパートナーにレビュー用に送信します。
-- パートナーが SOW にレッドラインを引いた場合、シニアチャネルソリューションズマネージャーは GitLab の法務チームおよびパートナーと協力して、相互合意の SOW を取得します。
-- シニアチャネルソリューションズマネージャーは、パートナーコンサルティングサブコントラクティングプライムパートナー SOW の開始についてプロジェクトコーディネーターに通知します。プロジェクトコーディネーターは、追跡目的で PC Partner SOW Tracker ボードに追加される新しいチェックリスト Issue を作成します。
-- GitLab とパートナーの間で SOW の相互合意を受け取った後、シニアチャネルソリューションズマネージャーは、プライムパートナー SOW にリーガルスタンプを追加するためのリーガルケースを提出します。
-- リーガルスタンプ済みのプライムパートナー SOW のバージョンを受け取った後、シニアチャネルソリューションズマネージャーは DocuSign 経由で GitLab およびパートナーの署名のためにそれを送信します。DocuSign の基本については、このビデオを参照してください。
-- 完全に締結された SOW を受け取った後、プロジェクトコーディネーターは Zip プロセスステップに従い、プライムパートナー SOW のリクエストおよび PO を提出します。
-- プライムパートナー SOW が署名および承認プロセス中、プロジェクトコーディネーターはステータスを監視し、PC Partner SOW Tracker ボードのチェックリスト Issue を適切に更新します。
+- Sr. Channel Solutions Manager および Project Coordinator は、顧客と Master Professional Services Agreement および Data Processing Agreement が完全に締結されていることを確認します。必要に応じて PS Sr. Channel Solutions Manager にフォローアップします。
+- パートナーシップに関する相互合意が達成された後、Sr. Channel Solutions Manager はコンサルティングサブコントラクティングプライムパートナー SOW の初期版をパートナーにレビュー用に送信します。
+- パートナーが SOW にレッドラインを引いた場合、Sr. Channel Solutions Manager は GitLab の法務チームおよびパートナーと協力して、相互合意の SOW を取得します。
+- Sr. Channel Solutions Manager は、パートナーコンサルティングサブコントラクティングプライムパートナー SOW の開始について Project Coordinator に通知します。Project Coordinator は、追跡目的で PC Partner SOW Tracker ボードに追加される新しいチェックリスト Issue を作成します。
+- GitLab とパートナーの間で SOW の相互合意を受け取った後、Sr. Channel Solutions Manager は、プライムパートナー SOW にリーガルスタンプを追加するためのリーガルケースを提出します。
+- リーガルスタンプ済みのプライムパートナー SOW のバージョンを受け取った後、Sr Channel Solutions Manager は DocuSign 経由で GitLab およびパートナーの署名のためにそれを送信します。DocuSign の基本については、このビデオを参照してください。
+- 完全に締結された SOW を受け取った後、Project Coordinator は Zip プロセスステップに従い、プライムパートナー SOW のリクエストおよび PO を提出します。
+- プライムパートナー SOW が署名および承認プロセス中、Project Coordinator はステータスを監視し、PC Partner SOW Tracker ボードのチェックリスト Issue を適切に更新します。
 - SOW、Coupa 申請、PO が承認された後:
-  - プロジェクトコーディネーターは、完全に締結されたプライムパートナー SOW のコピーをパートナー SFDC アカウントおよび該当するパートナー Google Drive フォルダに保存します。
-  - プロジェクトコーディネーターは、該当するパートナー G-Drive フォルダ内に、パートナーおよび SOW 固有のバージョンの Partner Invoicing SOW Consulting Funds Tracker を作成します。
-  - シニアチャネルソリューションズマネージャーは、完全に締結されたプライムパートナー SOW のコピーをパートナーに送信します。
+  - Project Coordinator は、完全に締結されたプライムパートナー SOW のコピーをパートナー SFDC アカウントおよび該当するパートナー Google Drive フォルダに保存します。
+  - Project Coordinator は、該当するパートナー G-Drive フォルダ内に、パートナーおよび SOW 固有のバージョンの Partner Invoicing SOW Consulting Funds Tracker を作成します。
+  - Sr. Channel Solutions Manager は、完全に締結されたプライムパートナー SOW のコピーをパートナーに送信します。
 
 ### パートナースケジューリングプロセス
 
 パートナースケジューリングプロセスは次のとおりです:
 
-1. プロジェクトコーディネーターは、プロジェクトデリバリーをパートナーにアウトソースする前に、まず内部キャパシティをレビューします。
-2. プロジェクトをパートナーがスタッフィングする必要があると判断されたら、プロジェクトコーディネーターはパートナー Slack チャンネルでパートナーリードにプロジェクト情報をタグ付けします。
-3. プロジェクトコーディネーターがパートナーリードと合意したプロジェクトアサインメントについて作業した後、プロジェクトコーディネーターはパートナーが Docusign 経由でレビューおよび実行するための Work Authorization フォームを送信します。
-4. パートナーエンジニアが審査されていない場合、プロジェクトコーディネーターは前述のパートナー審査プロセスを進めます。
-5. パートナーエンジニアが審査されている場合、プロジェクトコーディネーターは進めて Work Authorization フォームを送信します。
-6. プロジェクトコーディネーターは、プライムパートナー SOW の資金に対する Work Authorization を追跡します。
+1. Project Coordinator は、プロジェクトデリバリーをパートナーにアウトソースする前に、まず内部キャパシティをレビューします。
+2. プロジェクトをパートナーがスタッフィングする必要があると判断されたら、Project Coordinator はパートナー Slack チャンネルでパートナーリードにプロジェクト情報をタグ付けします。
+3. Project Coordinator がパートナーリードと合意したプロジェクトアサインメントについて作業した後、Project Coordinator はパートナーが Docusign 経由でレビューおよび実行するための Work Authorization フォームを送信します。
+4. Partner Engineer が審査されていない場合、Project Coordinator は前述のパートナー審査プロセスを進めます。
+5. Partner Engineer が審査されている場合、Project Coordinator は進めて Work Authorization フォームを送信します。
+6. Project Coordinator は、プライムパートナー SOW の資金に対する Work Authorization を追跡します。
 
 ### コンサルティング Work Authorization フォーム
 
-コンサルティングサブコントラクティングプライムパートナー SOW には、Work Authorization フォームが含まれます。Work Authorization フォームは、コンサルティングおよびトレーニングデリバリーのためにパートナーエンジニアおよびトレーナーを契約上確保するために使用されます。1 つのコンサルティングまたはトレーニングプロジェクトが、コンサルティングまたはトレーニング Work Authorization フォームに記載される必要があります。PS オペレーションチームが、パートナー向けの Work Authorization フォームを開始します。
+コンサルティングサブコントラクティングプライムパートナー SOW には、Work Authorization フォームが含まれます。Work Authorization フォームは、コンサルティングおよびトレーニングデリバリーのために Partner Engineers およびトレーナーを契約上確保するために使用されます。1 つのコンサルティングまたはトレーニングプロジェクトが、コンサルティングまたはトレーニング Work Authorization フォームに記載される必要があります。PS オペレーションチームが、パートナー向けの Work Authorization フォームを開始します。
 
 - Work Authorization に含まれるもの（これに限定されない）:
         - スコープ
@@ -212,7 +212,7 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 
 毎週、パートナーは営業日の終わりまでに PSA ツールにタイムシートを提出します。
 タイムシートは毎週金曜日が期限です。すべてのタイムシートを期限までに毎週 PSA ツールに提出することが必須です！
-タイムシート提出の月末期限は、月末にパートナー Slack チャンネルに掲載されます。月末期限が近づくと月の半ばにリマインダーが提出されます。さらにご質問がある場合は、プロジェクトマネージャーまたはオペレーションチームにご確認ください。
+タイムシート提出の月末期限は、月末にパートナー Slack チャンネルに掲載されます。月末期限が近づくと月の半ばにリマインダーが提出されます。さらにご質問がある場合は、Project Managers またはオペレーションチームにご確認ください。
 
 ### パートナー月次請求
 
@@ -233,7 +233,7 @@ GitLab PS は、パートナーが（ひいては私たちの）顧客にサー�
 [サンプルを見る](/handbook/customer-experience/professional-services-engineering/examples/partner_invoice_mockup/)
 
 各パートナーごとに毎月 1 つの請求書が提出され、各プロジェクトごとに行を分割するべきです。
-毎月複数の請求書を提出する必要がある場合は、オペレーションマネージャーから承認を得る必要があります
+毎月複数の請求書を提出する必要がある場合は、Operations Manager から承認を得る必要があります
 
 追加のサポートが必要な場合は、必ずパートナー Slack チャンネルでお問い合わせください。
 
@@ -247,7 +247,7 @@ Coupa 関連の役立つリソース:
 
 GitLab パートナーが出張する際:
 
-顧客プロジェクトのために何らかの購入または出張予約を行う前に、必ずプロジェクトマネージャーまたはプロジェクトコーディネーターから承認を得てください。プロジェクトマネージャーまたはプロジェクトコーディネーターは、出張予算をパートナーに提供します。出張が発生したら、経費は Coupa を介して請求のために提出されるべきであり、次の詳細を含む必要があります:
+顧客プロジェクトのために何らかの購入または出張予約を行う前に、必ず Project Manager または Project Coordinator から承認を得てください。Project Manager または Project Coordinator は、出張予算をパートナーに提供します。出張が発生したら、経費は Coupa を介して請求のために提出されるべきであり、次の詳細を含む必要があります:
 
 - 各経費ごとに個別の項目を含む、この[テンプレート](https://docs.google.com/spreadsheets/d/1fSn1G4opUDpnmGlcd35Zi_Mks5zTFoeg03FP__Xghes/edit?usp=sharing) に従った経費レポート
 - 各経費の領収書を含む 1 つの PDF ドキュメント
@@ -258,8 +258,8 @@ GitLab パートナーが出張する際:
 
 ### パートナーオフボーディング
 
-- PS プロジェクトマネージャーは、コンサルタントを Project Retrospective ミーティングに招待します（適切に）
-- PS プロジェクトマネージャーは、次のためのアクセスリクエストを提出します:
+- PS Project Manager は、コンサルタントを Project Retrospective ミーティングに招待します（適切に）
+- PS Project Manager は、次のためのアクセスリクエストを提出します:
 - 顧客プロジェクトの Slack チャンネルからコンサルタントを削除
 - プロジェクト固有の GitLab ツールまたは開発作業スペースへのアクセスを削除
 - コンサルタントが他の進行中のプロジェクトに従事していないことを確認

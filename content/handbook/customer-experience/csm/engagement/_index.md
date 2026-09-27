@@ -14,29 +14,29 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## カスタマーエンゲージメントの管理
 
-カスタマーサクセスマネージャーは通常、[`account-management` グループ](https://gitlab.com/gitlab-com/account-management/)内の GitLab プロジェクトを通じてカスタマーエンゲージメントを管理します。このプロジェクトは[エンタープライズ](https://gitlab.com/gitlab-com/account-management/customer-collaboration-project-template)または[コマーシャル](https://gitlab.com/gitlab-com/account-management/commercial/templates/new-customer-project/)カスタマーサクセスプランテンプレートをベースに、上記で説明した顧客のニーズに合わせてカスタマイズされます。プロジェクトにはマイルストーン、Issue、ラベル、および README テンプレートがあらかじめ読み込まれており、プロジェクトの立ち上げ、概念実証、実装、顧客オンボーディングの概要把握を支援します。以下は GitLab のカスタマーサクセスプランの最初のイテレーションに関する短い[紹介動画](https://youtu.be/b8D67EJjL9w)です。
+Customer Success Managers は通常、[`account-management` グループ](https://gitlab.com/gitlab-com/account-management/)内の GitLab プロジェクトを通じてカスタマーエンゲージメントを管理します。このプロジェクトは[エンタープライズ](https://gitlab.com/gitlab-com/account-management/customer-collaboration-project-template)または[コマーシャル](https://gitlab.com/gitlab-com/account-management/commercial/templates/new-customer-project/)カスタマーサクセスプランテンプレートをベースに、上記で説明した顧客のニーズに合わせてカスタマイズされます。プロジェクトにはマイルストーン、Issue、ラベル、および README テンプレートがあらかじめ読み込まれており、プロジェクトの立ち上げ、概念実証、実装、顧客オンボーディングの概要把握を支援します。以下は GitLab のカスタマーサクセスプランの最初のイテレーションに関する短い[紹介動画](https://youtu.be/b8D67EJjL9w)です。
 
 ### 新規カスタマーエンゲージメントの開始
 
-1. カスタマージャーニーのステップ 3 からステップ 7 の間のどこかで、ソリューションアーキテクトが GitLab 上に顧客のプロジェクトを作成し、顧客アカウントに最も適したプロフェッショナルサービスエンジニアおよびカスタマーサクセスマネージャーを含めます。これは通常、エンタープライズアカウントにのみ適用されます。
-2. カスタマーサクセスマネージャーがアカウントにアラインされた後、Salesforce 内の「カスタマーサクセスマネージャー」フィールドに自分自身を割り当てます。
-3. カスタマーサクセスマネージャーは、[エンタープライズ](https://gitlab.com/gitlab-com/account-management/customer-collaboration-project-template)または[コマーシャル](https://gitlab.com/gitlab-com/account-management/commercial/templates/new-customer-project/)カスタマーサクセスプランテンプレートに基づいた新規顧客プロジェクトが作成されていることを確認します。作成されていない場合は、アカウントエグゼクティブおよびソリューションアーキテクトと協力してプロジェクトを作成・完成させる必要があります。これは SA が CSM 関与前に行っている場合もありますが、そうでない場合は CSM が作成する必要があります。
+1. カスタマージャーニーのステップ 3 からステップ 7 の間のどこかで、Solutions Architect が GitLab 上に顧客のプロジェクトを作成し、顧客アカウントに最も適した Professional Services Engineer および Customer Success Manager を含めます。これは通常、エンタープライズアカウントにのみ適用されます。
+2. Customer Success Manager がアカウントにアラインされた後、Salesforce 内の「Customer Success Manager」フィールドに自分自身を割り当てます。
+3. Customer Success Manager は、[エンタープライズ](https://gitlab.com/gitlab-com/account-management/customer-collaboration-project-template)または[コマーシャル](https://gitlab.com/gitlab-com/account-management/commercial/templates/new-customer-project/)カスタマーサクセスプランテンプレートに基づいた新規顧客プロジェクトが作成されていることを確認します。作成されていない場合は、Account Executive および Solutions Architect と協力してプロジェクトを作成・完成させる必要があります。これは SA が CSM 関与前に行っている場合もありますが、そうでない場合は CSM が作成する必要があります。
 4. PLEASE-READ-THESE-INSTRUCTIONS.md ファイルの手順に従ってください。
 
 ### カスタマーアップグレードエンゲージメントの開始
 
-1. カスタマーサクセスマネージャーがアカウントにアラインされた後、Salesforce 内の「カスタマーサクセスマネージャー」フィールドに自分自身を割り当てます。
-1. 顧客が [CSM 担当セグメント](/handbook/customer-experience/csm/segment/)に属している場合、カスタマージャーニー中に顧客プロジェクトが以前に作成されていることを確認し、利用できない場合は GitLab 上に顧客のプロジェクトを作成し、アカウント移行に最も適したカスタマーサクセスマネージャーを含めます。コマーシャルアカウントの場合、CSM は顧客プロジェクトを持つことが有益かどうかを判断します。
+1. Customer Success Manager がアカウントにアラインされた後、Salesforce 内の「Customer Success Manager」フィールドに自分自身を割り当てます。
+1. 顧客が [CSM 担当セグメント](/handbook/customer-experience/csm/segment/)に属している場合、カスタマージャーニー中に顧客プロジェクトが以前に作成されていることを確認し、利用できない場合は GitLab 上に顧客のプロジェクトを作成し、アカウント移行に最も適した Customer Success Manager を含めます。コマーシャルアカウントの場合、CSM は顧客プロジェクトを持つことが有益かどうかを判断します。
 1. プロジェクトが[エンタープライズ](https://gitlab.com/gitlab-com/account-management/customer-collaboration-project-template)または[コマーシャル](https://gitlab.com/gitlab-com/account-management/commercial/templates/new-customer-project/)カスタマーサクセスプランテンプレートに準拠していることを確認します。
 1. PLEASE-READ-THESE-INSTRUCTIONS.md ファイルの手順に従ってください。
 
-### カスタマーサクセスマネージャーはどこに関与するか？
+### Customer Success Manager はどこに関与するか？
 
-エンタープライズアカウントのプリセールスプロセスでは、ソリューションアーキテクトがアカウントエグゼクティブのサポートを受けてプロジェクトを所有し、担当のプロフェッショナルサービスエンジニアがいる場合は含めます。カスタマーサクセスマネージャーは関与しますが、可視性のためだけです。アカウントが有料顧客になるまで、プロジェクトはプリセールス段階に留まります。顧客が支払いを行った後、アカウントエグゼクティブが主要な GitLab 従業員（SAE、SA、PSE、カスタマーサクセスマネージャー）と顧客とともに「GitLab へようこそ」コールをセットアップします。プロジェクトテンプレートにはこのための Issue がプリロードされています。
+エンタープライズアカウントのプリセールスプロセスでは、Solutions Architect が Account Executive のサポートを受けてプロジェクトを所有し、担当の Professional Services Engineer がいる場合は含めます。Customer Success Manager は関与しますが、可視性のためだけです。アカウントが有料顧客になるまで、プロジェクトはプリセールス段階に留まります。顧客が支払いを行った後、Account Executive が主要な GitLab 従業員（SAE、SA、PSE、Customer Success Manager）と顧客とともに「GitLab へようこそ」コールをセットアップします。プロジェクトテンプレートにはこのための Issue がプリロードされています。
 
-コマーシャルアカウントの場合、アカウントエグゼクティブがプリセールスプロセスを所有し、必要に応じて[ソリューションアーキテクトを関与させます](/handbook/solutions-architects/)。アカウントが有料顧客になった後、カスタマーサクセスマネージャーは顧客との関係に有用であれば顧客プロジェクトを作成し、アカウントエグゼクティブが顧客とカスタマーサクセスマネージャーとの「GitLab へようこそ」コールをスケジュールします。
+コマーシャルアカウントの場合、Account Executive がプリセールスプロセスを所有し、必要に応じて[Solutions Architect を関与させます](/handbook/solutions-architects/)。アカウントが有料顧客になった後、Customer Success Manager は顧客との関係に有用であれば顧客プロジェクトを作成し、Account Executive が顧客と Customer Success Manager との「GitLab へようこそ」コールをスケジュールします。
 
-「GitLab へようこそ」コールでは、顧客をカスタマーサクセスマネージャーに紹介し、引き継ぎプロセスを開始します。カスタマーサクセスマネージャーはその後、コールの残りを主導し、顧客プロジェクトを所有します。プロジェクトが [`pre-sales account-management` グループ](https://gitlab.com/gitlab-com/account-management/pre-sales)のプリセールスプロジェクト下に作成されている場合は、[`account-management` グループ](https://gitlab.com/gitlab-com/account-management)のポストセールスプロジェクトに移動されます。
+「GitLab へようこそ」コールでは、顧客を Customer Success Manager に紹介し、引き継ぎプロセスを開始します。Customer Success Manager はその後、コールの残りを主導し、顧客プロジェクトを所有します。プロジェクトが [`pre-sales account-management` グループ](https://gitlab.com/gitlab-com/account-management/pre-sales)のプリセールスプロジェクト下に作成されている場合は、[`account-management` グループ](https://gitlab.com/gitlab-com/account-management)のポストセールスプロジェクトに移動されます。
 
 ### カスタマーエンゲージメントのヒント {#customer-engagement-tips}
 
@@ -88,15 +88,15 @@ CSM が顧客とのエンゲージメントを終了する必要がある状況�
 
 ## 顧客ペルソナ {#customer-personas}
 
-カスタマーサクセスマネージャーは、GitLab 機能の使用に関するアドバイスと有効化を通じて、顧客がビジネス成果を達成するのを支援することに注力しています。GitLab が提供する機能を担当する顧客ペルソナと関わる場合に、最も効果的にこれを実現できます。
+Customer Success Managers は、GitLab 機能の使用に関するアドバイスと有効化を通じて、顧客がビジネス成果を達成するのを支援することに注力しています。GitLab が提供する機能を担当する顧客ペルソナと関わる場合に、最も効果的にこれを実現できます。
 
 CSM が定期的に関わり、成果とユースケースについてアラインする必要がある 2 つの主要ペルソナを定義しています:
 
-### 開発リード {#development-lead}
+### Development Lead {#development-lead}
 
 顧客の開発またはエンジニアリング部門のメンバーで、リーダーシップの役割を担っています。この人物は、顧客のソフトウェア生産に関連した顧客のビジネス目標について認識しており、かつ/または責任を持っています。開発ワークフロー、SDLC、DevOps のプラクティスと課題について話せます。
 
-### ソフトウェアセキュリティリード {#software-security-lead}
+### Software Security Lead {#software-security-lead}
 
 顧客が開発するソフトウェアのセキュリティに責任を持っています。この人物は、顧客が生産するソフトウェアに関連したビジネス要件、目標、コンプライアンスフレームワークなどについて話せます。顧客の現在のセキュリティスキャン＆管理ツールについての知識を持っており、それを所有している可能性があります。
 
@@ -123,7 +123,7 @@ Gainsight の属性セクションで、CSM は顧客ごとに優先度レベル
 
 - 成長の差し迫ったチャンスがある顧客、または短期的なリスク軽減が必要な顧客への注力を可能にするため
 - CSM の担当顧客ポートフォリオが過度な負担にならないようにするため
-- ポートフォリオ全体の構成についてより多くのコンテキストを提供することで、CSM マネージャーがチームの潜在的なワークロードをより見やすくするため
+- ポートフォリオ全体の構成についてより多くのコンテキストを提供することで、CSM Managers がチームの潜在的なワークロードをより見やすくするため
 - [セールスセグメンテーション](/handbook/sales/field-operations/gtm-resources/#segmentation)を超えて、顧客をさらにセグメント化するために使用
 
 `CSM Portfolio` ダッシュボードは、各クライアントの優先度レベルを含めてハイライトし、レビューするために使用されます。
@@ -139,11 +139,11 @@ Gainsight の属性セクションで、CSM は顧客ごとに優先度レベル
 
 ### 初回顧客エンゲージメント
 
-**件名: GitLab カスタマーサクセスマネージャーと連携することの価値**
+**件名: GitLab Customer Success Manager と連携することの価値**
 
 > `[顧客名]` 様、
 >
-> お世話になっております。本日は、専任のカスタマーサクセスマネージャー（CSM）として、CSM と連携することの価値と、それがあなたとあなたのビジネスにどのようなメリットをもたらすかについてご連絡しております。
+> お世話になっております。本日は、専任の Customer Success Manager（CSM）として、CSM と連携することの価値と、それがあなたとあなたのビジネスにどのようなメリットをもたらすかについてご連絡しております。
 >
 > ご存知のとおり、私たちの主な目標は、お客様が製品またはサービスで成功を収めるお手伝いをすることです。CSM として、私はお客様の信頼できるアドバイザー兼アドボケートとして、製品を最大限に活用し、全体的な体験に満足していただけるよう努めています。
 >
@@ -160,4 +160,4 @@ Gainsight の属性セクションで、CSM は顧客ごとに優先度レベル
 >
 > よろしくお願いいたします。
 > `[お名前]`
-> GitLab カスタマーサクセスマネージャー
+> GitLab Customer Success Manager

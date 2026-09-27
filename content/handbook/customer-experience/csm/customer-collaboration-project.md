@@ -39,7 +39,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - [@ メンション](https://docs.gitlab.com/ee/user/discussions/#mentions) で他の GitLab メンバーとコラボレーションしながら、顧客とのイニシアティブに関する会話を行う。
 - [@ メンション](https://docs.gitlab.com/ee/user/discussions/#mentions) で GitLab コントリビューターに参加してもらい、イネーブルメントセッションの非同期計画を行う。
 - [振り返り Issue 作成](https://gitlab.com/gitlab-org/async-retrospectives)を使った非同期レトロスペクティブ。
-- デモや POV などを追跡する SA（ソリューションアーキテクト）の活動。
+- デモや POV などを追跡する SA（Solution Architect）の活動。
 - アーキテクチャダイアグラムと履歴（git 履歴）。
 - ガバナンスのための完全な履歴（git 履歴）を持つ、[Zendesk サポート](https://about.gitlab.com/support/managing-support-contacts/#managing-contacts)の[共有組織](https://about.gitlab.com/support/managing-support-contacts/#shared-organizations)の顧客によって管理されたメンバーのリスト。
 - [TAM Issue トラッカー](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools/tam-issue-tracking) 製品機能リクエストの追跡。

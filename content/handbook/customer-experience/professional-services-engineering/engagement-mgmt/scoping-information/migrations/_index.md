@@ -17,7 +17,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 このページでは、GitLab、Bitbucket Server、または GitHub（Enterprise または .com）から、宛先 GitLab インスタンス（セルフマネージドまたは SaaS）へのマイグレーションのスコーピングについて説明します。これらのマイグレーションでは、通常、自動化ツールである [Congregate](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate) を使用します。他の SCM システムからのマイグレーションや、GitLab 以外の CI/CD マイグレーションは、このマイグレーションツールの対象外であり、別途スコーピングする必要があります。
 
-[services calculator](https://services-calculator.gitlab.io/) を使用して、SA、CSM/CSM がスコーピング Issue を作成し、エンゲージメントマネージャーと協力して顧客向けのサービス見積りを反復・改善できます。この Issue では、SCM マイグレーションスコーピング質問に追加コンテキストを含めており、以下でプレビューできます。
+[services calculator](https://services-calculator.gitlab.io/) を使用して、SA、CSM/CSM がスコーピング Issue を作成し、Engagement Manager と協力して顧客向けのサービス見積りを反復・改善できます。この Issue では、SCM マイグレーションスコーピング質問に追加コンテキストを含めており、以下でプレビューできます。
 
 <!--DEBT: below should be embedded from the SSOT locaed https://gitlab.com/services-calculator/services-calculator.gitlab.io/-/blob/master/make-ps-creates.py#L25-->
 

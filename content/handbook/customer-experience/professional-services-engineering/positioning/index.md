@@ -95,7 +95,7 @@ PS チームは、2019 年後半から 2020 年初頭にかけて、サービス
 
 ### ピッチデッキ {#pitch-deck}
 
-サービスオファリングについて見込み客と話し合う際、プロフェッショナルサービスチームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[エンゲージメントマネージャー](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください
+サービスオファリングについて見込み客と話し合う際、プロフェッショナルサービスチームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください
 
 [プロフェッショナルサービス提案資料](https://docs.google.com/presentation/d/1M-7aA7f9S6dULvzuKuTJs4j3A4V1z2DtMsoN0T0SMZg/edit#slide=id.g277ce56021a_0_2036)
 

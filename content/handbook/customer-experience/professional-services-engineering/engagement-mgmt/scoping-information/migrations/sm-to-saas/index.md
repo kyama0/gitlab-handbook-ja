@@ -23,7 +23,7 @@ PS は、各顧客エンゲージメントから得られる学びに基づい�
 
 自動マイグレーションツールは UI または API ベースのアプローチよりも多くのデータを処理します - レジストリデータ、CI/CD 変数、フック、統合された K8s クラスター設定、環境、デプロイキーなど（詳細は [Congregate 機能リスト - GitLab to GitLab](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/gitlab-migration-features-matrix.md) を参照）。また、すべてのユーザーとそのグループおよびプロジェクトの権限を自動マイグレーションの一部としてマイグレーションします。MR、ノート、Issue の作者に関する履歴ユーザー情報は、PS マイグレーションで保存されます。この情報は [ダイレクト転送を使用したグループとプロジェクトのマイグレーション](https://docs.gitlab.com/ee/user/group/import/index.html#migrate-groups-by-direct-transfer-recommended) でも保存されます。ただし、エクスポートファイルをアップロードしてグループとプロジェクトをインポートする場合（つまりグループとプロジェクトのインポート/エクスポート）には保存されません。（プロジェクトインポート/エクスポートの [Important Notes](https://docs.gitlab.com/ee/user/project/settings/import_export.html#important-notes) セクションを参照してください。なお、エンドユーザーは GitLab.com で管理者権限を付与できないことに注意してください。）
 
-最も重要なのは、GitLab Professional Services エンジニアがマイグレーション作業の多くを非同期で処理することで、顧客の管理者は GitLab マイグレーションをすべての労力を必要とするイニシアティブにする代わりに、他の価値ある作業に集中できるようになることです。
+最も重要なのは、GitLab Professional Services Engineers がマイグレーション作業の多くを非同期で処理することで、顧客の管理者は GitLab マイグレーションをすべての労力を必要とするイニシアティブにする代わりに、他の価値ある作業に集中できるようになることです。
 
 ## セルフマネージドから GitLab.com への Professional Services マイグレーションの費用はどれくらいですか?
 
@@ -42,7 +42,7 @@ PS は、各顧客エンゲージメントから得られる学びに基づい�
 | 1001 - 2000 | $50-60k | $65-75k | $85-95k | $100-110k | $120-130k | $135-145k | $155-165k | $170-180k | $190-200k | $205-215k |
 | 2001 - 3000 | $60-70k | $75-85k | $90-100k | $110-120k | $125-135k | $145-155k | $160-170k | $175-185k | $195-205k | $210-220k |
 
-10,000 を超えるプロジェクトまたは 3000 を超えるユーザーがある場合は、エンゲージメントマネージャーに連絡してください。ROM 見積りを提供するために協力します。
+10,000 を超えるプロジェクトまたは 3000 を超えるユーザーがある場合は、Engagement Managers に連絡してください。ROM 見積りを提供するために協力します。
 
 ## 顧客が GitLab.com へのマイグレーションのために PS を進めたい - 次のステップは?
 
@@ -50,9 +50,9 @@ PS は、各顧客エンゲージメントから得られる学びに基づい�
 
 calculator により、顧客名のエピックの子として `<Customer Name> - Scope Issue and Write SOW` という Issue が作成されます。この Issue には、説明にスコーピングに必要な情報がテーブルとして事前入力されています（「single source of truth」を意味する SSOT という見出しで）。テーブル内の適切なフィールドを記入してください。マイグレーションの作業をスコーピングするには、太字フォントのフィールドが必要です。
 
-必要なスコーピング情報を提供したら、エンゲージメントマネージャーが、私たちがスコーピングのために作成した標準計算式を使用してエンゲージメント見積りを生成します。顧客との議論（メールでの非同期またはライブミーティングでの同期）に使用できる Google sheet を作成し、PDF にできます。エンゲージメントマネージャーは、スケジュールが許せば、顧客と情報をレビューするためのライブミーティングをサポートできます。各アクティビティの説明とともに [サンプルエンゲージメント見積り](https://docs.google.com/spreadsheets/d/1-RuKHcijvHyyZJeYL1jSJrn5olqDODJjz6lf9y2ZIOc/edit?usp=sharing) を確認できます。
+必要なスコーピング情報を提供したら、Engagement Manager が、私たちがスコーピングのために作成した標準計算式を使用してエンゲージメント見積りを生成します。顧客との議論（メールでの非同期またはライブミーティングでの同期）に使用できる Google sheet を作成し、PDF にできます。Engagement Manager は、スケジュールが許せば、顧客と情報をレビューするためのライブミーティングをサポートできます。各アクティビティの説明とともに [サンプルエンゲージメント見積り](https://docs.google.com/spreadsheets/d/1-RuKHcijvHyyZJeYL1jSJrn5olqDODJjz6lf9y2ZIOc/edit?usp=sharing) を確認できます。
 
-顧客が見積りに同意し、スコーピングで使用された情報が顧客の状況に対して正確であることを会話で検証したら、最終ステップは、エンゲージメントマネージャーが SOW を作成し、内部承認を得て、顧客に署名のために送信することです。このプロセスの追加詳細については [GitLab プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling/) を参照してください。
+顧客が見積りに同意し、スコーピングで使用された情報が顧客の状況に対して正確であることを会話で検証したら、最終ステップは、Engagement Manager が SOW を作成し、内部承認を得て、顧客に署名のために送信することです。このプロセスの追加詳細については [GitLab プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling/) を参照してください。
 
 ## マイグレーションのスコーピングを支援するためのデータ収集
 

@@ -61,8 +61,8 @@ CSM は赤、黄、緑を使用して、顧客ヘルスに対するセンチメ�
   - [エコノミックバイヤー](/handbook/sales/meddppicc/#economic-buyer)
   - [チャンピオン](/handbook/sales/meddppicc/#champion)
   - 主要[ペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
-    - [Cameron（コンプライアンスマネージャー）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)
-    - [Delaney（開発チームリード）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
+    - [Cameron（Compliance Manager）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)
+    - [Delaney（Development Team Lead）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
 - 製品がサクセスプランで定義された期待する価値や成果を提供しない
 - 製品の採用なしまたは低採用で進捗がない
 - 不良なセンチメントのコミュニケーション
@@ -213,15 +213,15 @@ CSM がアカウントを[レッド](/handbook/customer-experience/csm/health-sc
 
 ### イエローヘルス評価
 
-- アカウントチーム（つまり、アカウントエグゼクティブとソリューションアーキテクト）
-- 地域 CSM マネージャー
-- CSM ディレクター（Public Sector 以外のすべての顧客）または Director of Customer Success Public Sector（Public Sector 顧客向け）
+- アカウントチーム（つまり、Account Executive と Solution Architect）
+- Regional CSM Manager
+- CSM Director（Public Sector 以外のすべての顧客）または Director of Customer Success Public Sector（Public Sector 顧客向け）
 
 ### レッドヘルス評価
 
 - 上記のリストに加えて...
-- エリアセールスマネージャーとリージョナルディレクター
-- カスタマーサクセス担当バイスプレジデント
+- Area Sales Manager と Regional Director
+- Vice President of Customer Success
 
 ## 関連プロセス
 

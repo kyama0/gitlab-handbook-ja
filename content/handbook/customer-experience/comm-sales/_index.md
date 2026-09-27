@@ -15,7 +15,7 @@ GitLab はコマーシャルセールスをミッドマーケットおよびス�
 
 ### Solutions Architect
 
-Solutions Architect はプールモデルでコマーシャルセールスのアカウントエグゼクティブに整合しています。SA へのリクエストは、可用性、適切な専門知識、現在の作業量など複数の要素を考慮して、SA がトリアージボードから引き受けます。
+Solutions Architect はプールモデルでコマーシャルセールスの Account Executives に整合しています。SA へのリクエストは、可用性、適切な専門知識、現在の作業量など複数の要素を考慮して、SA がトリアージボードから引き受けます。
 
 - [コマーシャル Solutions Architect へのエンゲージ](/handbook/solutions-architects/processes/commercial/)
 - [Solutions Architect 役割の詳細](/job-description-library/sales/solutions-architect/)

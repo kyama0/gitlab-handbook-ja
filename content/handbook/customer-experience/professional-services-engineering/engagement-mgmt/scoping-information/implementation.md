@@ -27,7 +27,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - 私たちの PSE チームは、インフラストラクチャのプロビジョニングおよびプロビジョニングされたサーバーの設定に Infrastructure as Code 自動化を使用しています。ツールは [Proliferate](https://gitlab.com/gitlab-com/customer-success/professional-services-group/global-practice-development/implementation/proliferate) プロジェクトで管理されています。プロジェクトの readme には、現在サポートされている Infrastructure as Code に関する情報があります。これは、Terraform と Ansible を使用して新しいシステムをプロビジョニングするために QA チームが使用するオープンソースの [GitLab Environment Toolkit](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) とは異なることに注意してください。
 
-[services calculator](https://services-calculator.gitlab.io/) を使用して、SA/SAE/AE/CSM がスコーピング Issue を作成し、[エンゲージメントマネージャー](/handbook/customer-experience/professional-services-engineering/engagement-mgmt/) と協力して顧客向けのサービス見積りを反復・改善できます。この Issue では、実装スコーピング質問に追加コンテキストを含めており、以下でプレビューできます。
+[services calculator](https://services-calculator.gitlab.io/) を使用して、SA/SAE/AE/CSM がスコーピング Issue を作成し、[Engagement Manager](/handbook/customer-experience/professional-services-engineering/engagement-mgmt/) と協力して顧客向けのサービス見積りを反復・改善できます。この Issue では、実装スコーピング質問に追加コンテキストを含めており、以下でプレビューできます。
 
 <!--DEBT: below should be embedded from the SSOT locaed https://gitlab.com/services-calculator/services-calculator.gitlab.io/-/blob/master/make-ps-creates.py#L46-->
 

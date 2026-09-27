@@ -169,7 +169,7 @@ GitLab の会社ポリシーでは、Time Off の申請は Workday を通して�
 Mavenlink で Time Off を管理するメリット
 
 - 工数が Master Planning スケジューリングカレンダーに含まれる
-- これにより、PC とプロジェクトマネージャーは Time Off に合わせて顧客プロジェクトを計画できる
+- これにより、PC と Project Managers は Time Off に合わせて顧客プロジェクトを計画できる
 - 顧客プロジェクトのスケジュールに矛盾がないことを保証できる
 
 プロセス:

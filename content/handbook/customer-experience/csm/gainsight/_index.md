@@ -1,6 +1,6 @@
 ---
 title: "CSM としての Gainsight の使い方"
-description: "カスタマーサクセスマネージャーが顧客の成功を推進するために Gainsight をどのように活用するかについての重要事項。"
+description: "Customer Success Managers が顧客の成功を推進するために Gainsight をどのように活用するかについての重要事項。"
 upstream_path: /handbook/customer-experience/csm/gainsight/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -11,7 +11,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 *Gainsight の概要およびログイン方法については、[Gainsight 概要ページ](/handbook/sales/gainsight/)を参照してください。*
 
-## カスタマーサクセスマネージャーのための Gainsight
+## Customer Success Managers のための Gainsight
 
 CSM は Gainsight を多目的に活用しています。顧客との通話の記録、コールトゥアクション（CTA）の更新、サクセスプランの更新、顧客の製品使用状況データのインサイト取得などが含まれます。
 

@@ -68,7 +68,7 @@ Revenue Academy コンポーネント 3 の一環として、CSE は 4 つのロ
 
 ### セッション 0 — One CX: 役割、カスタマージャーニー、概要
 
-**対象者:** 全 CX 新入社員（CSM、CSA、CSE、RM、PS エンゲージメントマネージャー、PS テクニカルアーキテクト、PS プロジェクトマネージャー）
+**対象者:** 全 CX 新入社員（CSM、CSA、CSE、RM、PS Engagement Manager、PS Technical Architect、PS Project Manager）
 
 **形式:** 視聴と AMA — 約 60 分の非同期の事前視聴と 30 分のライブ AMA セッション
 

@@ -10,7 +10,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - カスタマーサクセスにおける Salesforce の活用 *（現在のページ）*
 - [アカウントオンボーディング](/handbook/customer-experience/csm/onboarding/)
-- [カスタマーサクセスマネージャーサマリー](/handbook/customer-experience/csm/)
+- [Customer Success Manager サマリー](/handbook/customer-experience/csm/)
 - [アカウントトリアージ](/handbook/customer-experience/csm/health-score-triage/)
 - [アカウントエンゲージメント](/handbook/customer-experience/csm/engagement/)
 
@@ -21,7 +21,7 @@ CSM Sentiment - CSM が[顧客のヘルス](/handbook/customer-experience/csm/he
 - GitLab Customer Success Project - 上記で説明したテンプレートを使って作成したプロジェクトの URL を入力するフィールド
 - Customer Slack Channel - 顧客の内部および外部コラボレーションに使用される Slack チャンネルを記録するフィールド。チャンネルが内部のものである場合、[コミュニケーションチャット](/handbook/communication/chat/#channel-categories)に従って `#a_<customer-name>-internal` という命名規則に従うことを確認する
 - Solutions Architect - アカウントに割り当てられた Solutions Architect
-- Customer Success Manager - アカウントに割り当てられたカスタマーサクセスマネージャー
+- Customer Success Manager - アカウントに割り当てられた Customer Success Manager
 
 ## Salesforce オブジェクト
 
@@ -146,7 +146,7 @@ POV のドキュメントについては[このページ](/handbook/solutions-ar
 
 ### 新規 Zendesk チケット通知
 
-新規 Zendesk チケットが作成されるたびに、チケットが関連付けられているアカウントのカスタマーサクセスマネージャーと Account Owner に新規チケットを知らせるメール通知が送信されます。これは現在、Zendesk チケットが Salesforce で最初に作成された時に発生する 1 回限りの通知です。
+新規 Zendesk チケットが作成されるたびに、チケットが関連付けられているアカウントの Customer Success Manager と Account Owner に新規チケットを知らせるメール通知が送信されます。これは現在、Zendesk チケットが Salesforce で最初に作成された時に発生する 1 回限りの通知です。
 
 ### Salesforce 内でのメール追跡 {#tracking-emails-within-salesforce}
 
