@@ -1,6 +1,6 @@
 ---
 title: "CSM 四半期ビジネスレビュー"
-description: "CSM マネージャーが QBR デッキを発表するための手順。"
+description: "CSM Manager が QBR デッキを発表するための手順。"
 upstream_path: /handbook/customer-experience/csm/csm-manager/qbr/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -13,9 +13,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ---
 
-CSM マネージャーは、各四半期においてチームの[四半期ビジネスレビュー](/handbook/sales/qbrs/)を作成・提供する責任があります。
+CSM Manager は、各四半期においてチームの[四半期ビジネスレビュー](/handbook/sales/qbrs/)を作成・提供する責任があります。
 
-四半期ビジネスレビューは、四半期を通じてのチームのアクションとパフォーマンスを評価・報告・学習し、次の四半期の依頼事項と優先事項を共有するためのツールです。CSM の QBR は[セールス QBR と同じスケジュールに従い](/handbook/sales/qbrs/#qbr-schedules)、CSM マネージャーの地域の[セールス QBR セッション中に発表](#presenting-a-csm-qbr)されるべきです。
+四半期ビジネスレビューは、四半期を通じてのチームのアクションとパフォーマンスを評価・報告・学習し、次の四半期の依頼事項と優先事項を共有するためのツールです。CSM の QBR は[セールス QBR と同じスケジュールに従い](/handbook/sales/qbrs/#qbr-schedules)、CSM Manager の地域の[セールス QBR セッション中に発表](#presenting-a-csm-qbr)されるべきです。
 
 ## CSM QBR の準備
 
@@ -23,6 +23,6 @@ CSM マネージャーは、各四半期においてチームの[四半期ビジ
 
 ## CSM QBR の発表 {#presenting-a-csm-qbr}
 
-CSM QBR 発表のスケジュールは各四半期に異なる場合がありますが、通常 QBR は各マネージャーが専用のセッションで CSM リーダーシップ全体に発表し、次に各 CSM マネージャーが地域のセールス QBR セッション中に QBR を発表します。
+CSM QBR 発表のスケジュールは各四半期に異なる場合がありますが、通常 QBR は各マネージャーが専用のセッションで CSM リーダーシップ全体に発表し、次に各 CSM Manager が地域のセールス QBR セッション中に QBR を発表します。
 
 セールス QBR セッションで QBR を発表する際には、プレゼンテーションに割り当てられる時間が非常に限られている場合があります。ハイライトに焦点を当てた QBR の発表計画を立て、プレゼンテーションの短縮バージョンの組み立てを検討してください。

@@ -29,7 +29,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 Engagement Manager のチームについては [チームページ](/handbook/company/team/?department=practice-management) をご覧ください。
 
-## お問い合わせ・コラボレーション方法
+## お問い合わせ・コラボレーション方法 {#how-to-contact-or-collaborate-with-us}
 
 - AE は SFDC で `professional services only` オポチュニティを作成できます。これにより、PS のディスカバリー、スコーピング、提案プレゼンテーション中のコラボレーションに使用される [スコーピング Issue](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/boards/5968112?label_name[]=Services%20Calculator) が自動で作成されます。
 - 非公式・一般的な質問や調整には [Slack](/handbook/customer-experience/professional-services-engineering/working-with/#slack) を利用します。
