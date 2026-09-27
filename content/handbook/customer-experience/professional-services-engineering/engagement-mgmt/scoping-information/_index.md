@@ -13,11 +13,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 私たちは [Engagement Estimate TEMPLATES](https://docs.google.com/spreadsheets/d/1YKMyflzsA-VPEVobB82zC8-n0hlC-uRBtiNB7Fm-kZg/edit?usp=sharing) ワークブックを、Professional Services の機会のアクティビティ、期間、価格を決定するための起点として使用します。
 
-見積り合計が 50,000 USD を超える Professional Services の機会では、SOW を作成する前にテクニカルアーキテクト（Technical Architect、TA）によるスコーピング Issue のレビューが必要です。エンゲージメントマネージャーは、見積りが 50,000 ドルを超えるスコーピング Issue に `TA::Needs-Review` ラベルを追加してください。TA が見積りをレビューしたら、ラベルを `TA:Approved` に変更し、スコーピング Issue をレビューおよび承認したことを示します。
+見積り合計が 50,000 USD を超える Professional Services の機会では、SOW を作成する前に Technical Architect (TA) によるスコーピング Issue のレビューが必要です。Engagement Manager は、見積りが 50,000 ドルを超えるスコーピング Issue に `TA::Needs-Review` ラベルを追加してください。TA が見積りをレビューしたら、ラベルを `TA:Approved` に変更し、スコーピング Issue をレビューおよび承認したことを示します。
 
-エンゲージメントマネージャーが、複雑な技術要件や技術的な入力が必要なその他の要因によりスコーピングのサポートを必要とする場合、スコーピング Issue に `Scoping::Needs_TA_Assistance` ラベルを追加できます。このラベルは、TA にスコーピングコールへの参加を依頼する場合や、技術的に複雑なソリューション提案への入力を求める場合に使用できます。GitLab アーキテクチャに関する内容、現在の実装に関するパフォーマンス問題の評価、モニタリングのリクエスト、その他の技術的な実装トピックに関するスコーピング Issue や会話には、テクニカルアーキテクトのアシスタンスを依頼してください。
+Engagement Manager が、複雑な技術要件や技術的な入力が必要なその他の要因によりスコーピングのサポートを必要とする場合、スコーピング Issue に `Scoping::Needs_TA_Assistance` ラベルを追加できます。このラベルは、TA にスコーピングコールへの参加を依頼する場合や、技術的に複雑なソリューション提案への入力を求める場合に使用できます。GitLab アーキテクチャに関する内容、現在の実装に関するパフォーマンス問題の評価、モニタリングのリクエスト、その他の技術的な実装トピックに関するスコーピング Issue や会話には、Technical Architect のアシスタンスを依頼してください。
 
-このラベルを適用すると、スコーピング Issue が [TA Board](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/boards/4566296?label_name[]=Services%20Calculator) に追加されます。エンゲージメントマネージャーは Slack で `@ps-ta` をメンションしてヘルプを依頼していることを伝え、TA が対応するための追加詳細を提供することも必要です。
+このラベルを適用すると、スコーピング Issue が [TA Board](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/boards/4566296?label_name[]=Services%20Calculator) に追加されます。Engagement Manager は Slack で `@ps-ta` をメンションしてヘルプを依頼していることを伝え、TA が対応するための追加詳細を提供することも必要です。
 
 TA が依頼されたアシスタンスを提供したら、ラベルを `Scoping::TA_Assisted` に変更します。これらのラベルを一貫して使用することで、現在 TA のアシスタンスが必要な機会の可視性が向上するとともに、TA の関与が必要だった機会の履歴データも得られます。
 
