@@ -42,7 +42,7 @@ CSM はまずオンボーディング中にイネーブルメントセッショ�
 
 イネーブルメントセッションは一般的に 1 時間で、プレゼンテーション、デモ、Q&A が含まれ、通常は CSM 自身が実施します。
 
-### 現在利用可能なセッション
+### 現在利用可能なセッション {#currently-available-sessions}
 
 以下はすでに開発済みで、複数の顧客に提供され、[こちら](https://drive.google.com/drive/folders/1NnDsqoc-KRdy7hF1jbo6H_59FwzpiKUc)で利用可能です:
 

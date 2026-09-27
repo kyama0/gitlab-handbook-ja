@@ -145,7 +145,7 @@ PM は Kantata のプロジェクトマイルストーンについて以下を�
 
 ## プロジェクトコーディネーション - トレーニング
 
-### Train
+### トレーニング {#train}
 
 GitLab Education Services のインストラクター主導コースを提供する PSE または Technical Instructor は、以下のワークフローを使用して顧客との円滑なやりとりを確保できます。さらに、PSE と Technical Instructor は、提供する予定の各コースについて [GitLab Certified Trainer](/handbook/customer-experience/professional-services-engineering/gitlab-certified-trainer-process/) のステップを完了すべきです。
 

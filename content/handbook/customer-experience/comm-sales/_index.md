@@ -23,7 +23,7 @@ GitLab はコマーシャルセールスをミッドマーケットおよびス�
 
 ### カスタマーサクセスマネージャー
 
-カスタマーサクセスマネージャーは、各[セグメント](/handbook/customer-experience/csm/segment/)（スケール、グロース、ストラテジック）および地域（AMER または EMEA）のビジネス書に整合しています。
+カスタマーサクセスマネージャーには、各[セグメント](/handbook/customer-experience/csm/segment/)（スケール、グロース、ストラテジック）および地域（AMER または EMEA）に応じて担当顧客アカウントが割り当てられます。
 
 - [カスタマーサクセスマネージャー役割の詳細](/job-description-library/sales/customer-success-management/)
 - [カスタマーサクセスマネージャーの概要と責任](/handbook/customer-experience/csm/)
