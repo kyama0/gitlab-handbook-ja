@@ -35,7 +35,7 @@ PS は [#professional-services](https://gitlab.slack.com/archives/CFRLYG77X) Sla
 1. Issue 説明文の Requestor Tasks を完了します。
 1. PS Project Coordinator が日程を確認し、登録リンクを案内します。
 
-### Sales Rep および SA 向け: Professional Services の発注方法
+### Sales Rep および SA 向け: Professional Services の発注方法 {#for-sales-reps-and-sas-how-to-order-professional-services}
 
 1. Professional Services を発注するには、SAE または ISR が標準ライセンスもしくはサブスクリプションの親 Opportunity から `Create Services Opportunity` ボタンを使って [SFDC 上で子の PS Opportunity を作成](/handbook/sales/field-operations/gtm-resources/#creating-a-professional-services-opportunity) します。
 

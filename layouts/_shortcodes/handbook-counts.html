@@ -530,7 +530,10 @@
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
     {{- $source = replaceRE `(?s)\{\{[%<].*?[>%]\}\}` " " $source }}
-    {{- $scratch.Add "wordcount" (countwords ($source | markdownify | plainify)) }}
+    {{- $renderedSource := $source | markdownify }}
+    {{- /* Raw style/script bodies are hidden; fenced examples are escaped by markdownify and remain visible. */ -}}
+    {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}
+    {{- $scratch.Add "wordcount" (countwords ($renderedSource | plainify)) }}
 {{- end }}
 <tr>
     <td style="text-align:center">{{ time.Format "2006-01-02" time.Now }}</td>

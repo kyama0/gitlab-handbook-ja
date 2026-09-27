@@ -48,7 +48,7 @@ Project Coordinator にはグループ `@ps-scheduling` をタグ付けして連
 
 SF Stage 5 より前にプロジェクトを計画する状況があることは理解していますが、PS Operations に連絡する前にほとんどの情報を満たしておきたいと考えています。
 
-| Action |DRI |
+| アクション |DRI |
 | ------ | ------ |
 | SF オポチュニティが少なくとも Stage 5 | オポチュニティ オーナー |
 | Forecast カテゴリが Commit | オポチュニティ オーナー |
