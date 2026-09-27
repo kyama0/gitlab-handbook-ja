@@ -45,7 +45,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 どちらの場合も、`Requested` または `Updated` をクリックして最新順にソートすれば、
 より新しい情報を得られます。
 
-#### アーキテクチャ図と Customer Collaboration Project
+#### アーキテクチャ図と Customer Collaboration Project {#architecture-diagram-and-customer-collaboration-project}
 
 Architecture Diagrams アプリは、顧客が Salesforce に [Customer Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/)
 の URL を入力していれば、関連する図の有無を自動的にチェックします。

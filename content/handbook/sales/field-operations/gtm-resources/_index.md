@@ -666,7 +666,7 @@ Sales アカウントリーダー/エグゼクティブは、60 日以内に次�
 
 すべての最終 ARR（勝った Upside ARR を含む）は PARENT オポチュニティに帰属します。
 
-#### Professional Services オポチュニティを作成する
+#### Professional Services オポチュニティを作成する {#creating-a-professional-services-opportunity}
 
 `Professional Services` オポチュニティは、セールス担当者が見込み顧客/クライアントに販売し、別途請求する必要がある（または希望する）統合、コンサルティング、トレーニング、その他のサービスをカバーするために使用されます。
 別途請求するには、新しい見積もりとオポチュニティを作成する必要があります。

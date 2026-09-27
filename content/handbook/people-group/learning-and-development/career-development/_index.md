@@ -77,7 +77,7 @@ GitLab ハンドブック全体に配置されたキャリア開発リソース�
 | マネージャーがファシリテート | - チームメンバーと時間をとってキャリア願望について話し合う <br/> - 耳を傾け、フィードバック、アイデア、コンタクトを提供する <br/> - チームメンバーの開発をサポートする選択をする |
 | GitLab が支援 | - 将来の方向性とスキル要件を伝える <br/> - 該当する場合に情報とツールを提供する <br/> - 社内機会を伝える |
 
-### 開発のための 70-20-10 ルール
+### 開発のための 70-20-10 ルール {#70-20-10-rule-for-development}
 
 <div style="width: 100%;"><div style="position: relative; padding-bottom: 75.93%; padding-top: 0; height: 0;"><iframe frameborder="0" width="400" height="350" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/62fd2aa9021efd0018b7c8eb" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 

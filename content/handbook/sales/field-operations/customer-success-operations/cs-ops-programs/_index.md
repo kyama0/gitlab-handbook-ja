@@ -75,7 +75,7 @@ Customer Programs は、Gainsight を使ってコミュニケーションパス�
 
 ## プログラムの受信者
 
-### GitLab Admin コンタクト
+### GitLab Admin コンタクト {#gitlab-admin-contacts}
 
 GitLab Admin コンタクトユーザーは、Digital Customer Success (DCS) Team によって送信されるコミュニケーションの主要な受信者です。このコンタクトは、DCS からのオンボーディング、イネーブルメント、全体的な顧客健全性に関するすべての主要なコミュニケーションを受信します。1 つのアカウントに複数の GitLab Admin を設定できます。
 

@@ -146,7 +146,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - コマンドプラン: MEDDPPICC データ - リアルタイム
 - コマンドプラン: クローズプラン - リアルタイム
 
-## ステップ 5. 商談を認定する
+## ステップ 5. 商談を認定する {#step-5-qualify-the-opportunity}
 
 初期の認定ミーティングを実施したら、皆さんとチームは[コマンドプラン](/handbook/sales/command-of-the-message/command-plan/)で収集したすべてのデータをレビューすべきです。これには、実施したリサーチ、尋ねたディスカバリーの質問、コマンドプランで捕捉した [MEDDPPICC](/handbook/sales/meddppicc/) データの量、まだ捕捉していないギャップのレビューが含まれます。捕捉されたデータのレベルに応じて、リードは以下にリストされた基準に従って評価され、リードから <b>[セールス受け入れ商談](/handbook/sales/field-operations/gtm-resources/)</b> に再分類できます。
 

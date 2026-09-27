@@ -902,7 +902,7 @@ SuperSonics Billing and Subscription Management experience と、それがクォ
 
 **Professional Services をクォーティングする方法は 2 つあり、サービスが標準であるか scoped/custom であるかによって異なります。**
 
-##### 標準サービスの Professional Services クォートを作成する
+##### 標準サービスの Professional Services クォートを作成する {#creating-a-professional-services-quote-for-standard-services}
 
 - 標準 PS SKU を販売している場合、これは設定されたスコープと納品物に関連付けられた時間数を持つテンプレート化されたパッケージで、既製の価格設定を提供します。これは custom scoping や追加の SOW 条件を必要としません。SKU は Zuora のクォートに追加し、注文書に含める必要があります。
 - 標準サービスは、サブスクリプション製品 SKU と並んで、任意の New Business、Add-On、または Renewal クォートに追加できます（例: 12 ヶ月の SaaS Ultimate ディールを販売している場合、同じクォート上で別個の SKU を追加して instructor-led training オファリングを販売できます）。

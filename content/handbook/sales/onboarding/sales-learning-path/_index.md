@@ -292,7 +292,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 </details>
 
-## カスタマーサクセス Quick Start - 役割ベースのカリキュラム
+## カスタマーサクセス Quick Start - 役割ベースのカリキュラム {#customer-success-quick-start---role-based-curriculum}
 
 <details>
 <summary markdown="span">テクニカルディープダイブ (SA、CSM、PSE のみ</summary>

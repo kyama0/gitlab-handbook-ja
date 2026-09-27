@@ -41,7 +41,7 @@ Issue の作成には、機能、バグ、その他、優先順位付け、変�
 
 すべてのフィードバックは [GitLab Community Code of Conduct](https://about.gitlab.com/community/contribute/code-of-conduct/) に従う必要があります。従わない場合、Issue やコメントは削除されます。
 
-#### 顧客の機能リクエスト
+#### 顧客の機能リクエスト {#customer-feature-requests}
 
 顧客から既存にない機能リクエストがあった場合は、[gitlab-org issue tracker](https://gitlab.com/gitlab-org/gitlab/-/issues) で [Issue を作成するプロセス](https://docs.gitlab.com/user/project/issues/create_issues/) を参照し、[Feature Proposal](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Feature%20Proposal%20-%20lean) テンプレートを選択して、指示に従い可能な限り多くの情報を提供してください。Issue を作成したら、わかる場合は [製品ステージとグループ](/handbook/product/categories/) の適切なラベル (例: `~"devops::plan"`) を必ず追加し、適切なプロダクトマネージャーをタグ付けしたコメントを追加してください。Issue が既に存在する場合は、その Issue に情報とユースケースを示すコメントを追加してください。
 

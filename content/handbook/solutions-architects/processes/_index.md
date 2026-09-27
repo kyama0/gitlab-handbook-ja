@@ -167,7 +167,7 @@ SA は、Notable Opportunities セクションで技術的な勝利と成功基�
 
 スライドは [Solutions Architects QBR フォルダ](https://drive.google.com/drive/folders/1pO58rT1jO3jCPxM-_tqQzhnjnGM_E7mK?usp=drive_link) の四半期サブフォルダ内に保存されます。
 
-### 営業サイクル中の SA エンゲージ
+### 営業サイクル中の SA エンゲージ {#engaging-an-sa-during-the-sales-cycle}
 
 ソリューションアーキテクトは初期の qualifying meeting (IQM) に参加することも、SDR と SAE/AE が初期コールを担当し、そこから得られた情報を追加準備に活用することも可能です。チームはケースバイケースで対応できます。
 
