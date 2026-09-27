@@ -17,7 +17,7 @@ GitLab には、プリセールスからポストセールスのジャーニー�
 
 | ロール | 主なフォーカス | 典型的な活動 | エンゲージメントモデル | ハンズオン vs アドバイザリー |
 |------|---------------|--------------------|------------------|-----------------------|
-| **[CSM](/handbook/customer-experience/csm/)** | 採用、成果、満足度を推進; 整合、イネーブル、拡大 | サクセスプラン、オンボーディング、ケイデンスコール、EBR、リスク管理 | Essentials ティアアカウントの指定オーナー | アドバイザリー — キーボードに手を置かない |
+| **[CSM](/handbook/customer-experience/csm/)** | 活用、成果、満足度を推進; 整合、イネーブル、拡大 | サクセスプラン、オンボーディング、ケイデンスコール、EBR、リスク管理 | Essentials ティアアカウントの指定オーナー | アドバイザリー — キーボードに手を置かない |
 | **[CSE](/handbook/customer-experience/csm/segment/cse/)** | スケールでの技術的製品エキスパート | ウェビナー、ハンズオンラボ、プールセッション、スケールされたイネーブルメント | プール / オンデマンド (Success On-Demand ティア) | テクニカルアドバイザリー — キーボードに手を置かない |
 | **[CSA](/handbook/customer-experience/csm/segment/csa/)** | 最高水準のテクニカルエキスパート; アーキテクチャガイダンスと Accelerator デリバリー | 戦略的計画、成熟度評価、Accelerator の設計とデリバリー | Advanced および Signature ティアの指定 | 戦略的・アーキテクチャ的アドバイザリー — 実装は PS が担当 |
 | **[PSE](/handbook/customer-experience/professional-services-engineering/)** | プロジェクトベースの実装と移行 | SOW のもとでのインストール、移行、カスタム開発、トレーニング | プロジェクトスコープ、PS Engagement Management が販売 | 明示的にハンズオン — 「キーボードに手を置く」ことができる |

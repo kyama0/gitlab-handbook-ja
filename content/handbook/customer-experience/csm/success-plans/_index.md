@@ -84,7 +84,7 @@ Issue のコメントに以下を入力して送信:
 `~UseCase::` — 以下から 1 つ選択: `AI` · `CD` · `CI` · `Dedicated` · `Developer Experience` · `Infrastructure` · `Other` · `Plan` · `SCM` · `Security`
 
 **オプションラベル:**
-`~Priority::` (`Low` · `Medium` · `High`) · `~Success Accelerator`（Success Tier の採用アクセラレーター向け）
+`~Priority::` (`Low` · `Medium` · `High`) · `~Success Accelerator`（Success Tier の導入アクセラレーター向け）
 
 **期日** — レポートにおけるターゲット完了日として扱われます。
 
@@ -191,7 +191,7 @@ VO は **SMART** である必要があります: Specific（具体的）、Measu
 - オープンエンドな TED 質問をしてください: *「チームの優先事項について教えてください... どのように... どのような...を説明してください」*
 - 投資家報告書、プレスリリース、GitLab のケーススタディを参照してビジネスへのインパクトを組み立てる
 - GitLab Duo を使って成功基準が真に SMART かどうかテストする
-- [continuous triage bot](https://gitlab.com/gitlab-com/account-management/continuous-planning-triage/) が毎週オープンな目標をレビューし、ドラフト成功基準がある場合に SMART な基準を提案する
+- [継続的トリアージボット](https://gitlab.com/gitlab-com/account-management/continuous-planning-triage/) が毎週オープンな目標をレビューし、ドラフト成功基準がある場合に SMART な基準を提案する
 
 追加のディスカバリー質問とテクニックについては、[サクセスプランディスカバリーのための質問とテクニック](/handbook/customer-experience/csm/success-plans/questions-techniques/)を参照してください。
 

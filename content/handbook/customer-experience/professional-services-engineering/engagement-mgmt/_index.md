@@ -18,7 +18,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - 顧客や営業チームからの初期フィードバックに基づく見積もりの更新
 - 合意後、それを支える作業範囲記述書（SoW）の生成
 - コスト見積もり（COGS）の作成
-- SoW の承認を得るために PS ディレクターへ補足説明を行う
+- SoW の承認を得るために PS Directorへ補足説明を行う
 - 署名を得るためにアカウントチームに SoW を提示する
 - 署名までの SoW の進捗を追跡する
 - 署名後、デリバリーチームへスムーズに引き継げるよう、SoW のソフトハンドオフを行う
@@ -37,7 +37,7 @@ Engagement Manager のチームについては [チームページ](/handbook/co
 
 ## 役立つリソース
 
-- [顧客の採用を加速するサービス](/handbook/customer-experience/professional-services-engineering/sales-enablement/)
+- [顧客の導入・活用を加速するサービス](/handbook/customer-experience/professional-services-engineering/sales-enablement/)
 - [プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling/)
 - [プロフェッショナルサービス提供フレームワーク](/handbook/customer-experience/professional-services-engineering/framework/)
 - [サービスカリキュレーター](https://services-calculator.gitlab.io)

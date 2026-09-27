@@ -44,7 +44,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ### MEDDPICC
 
-プロフェッショナルサービスは、見込み客が顧客になるとき（例: 新規ディールの Land 時）や、既存顧客がスタッフを増員したり GitLab の新機能を採用しようとしているとき（例: 拡大時）にポジショニングできます。SA、SAE、AE、または CSM（つまり「アカウントチーム」）が、[Command of the Message](/handbook/sales/command-of-the-message/) と [MEDDPICC](../../../sales/meddppicc.md) のメッセージングフレームワークに従って、このプロセスを主に担当します。
+プロフェッショナルサービスは、見込み客が顧客になるとき（例: 新規ディールの Land 時）や、既存顧客がスタッフを増員したり GitLab の新機能を導入しようとしているとき（例: 拡大時）にポジショニングできます。SA、SAE、AE、または CSM（つまり「アカウントチーム」）が、[Command of the Message](/handbook/sales/command-of-the-message/) と [MEDDPICC](../../../sales/meddppicc.md) のメッセージングフレームワークに従って、このプロセスを主に担当します。
 
 より大規模で戦略的な顧客では、PS の Engagement Manager がセリングプロセスの早い段階で関与し、ディスカバリーを支援したり、過去の契約から得られたロールアウトの教訓を提供したりします。中規模の顧客では、Engagement Manager は SFDC ステージ 4（Proposal）に到達したタイミングでアカウントチームに関与する傾向があります。
 

@@ -60,7 +60,7 @@ CSE コンテンツチームの主な目標は次のとおりです:
 
 チームのコンテンツは [Highspot](https://gitlab.highspot.com/) で配布されています...
 
-### プロダクト採用イニシアチブ
+### 製品活用イニシアチブ
 
 - [タイトル](Issue/Epic)（内部）。
 - [タイトル](Issue/Epic)（内部）。
@@ -90,7 +90,7 @@ CSE コンテンツチームの主な目標は次のとおりです:
 | 責任 | Content Strategist | Content Architect | Demo Architect | CSEs | CSSO | CSE リーダーシップ |
 | ------------------------------------------------------------ | --------------------------- | ---------------------------------------- | ---------------------------------------- | --------- | -------------- | -------------- |
 | **クロスファンクショナルコラボレーション**: 他のコンテンツステークホルダー（EDU、フィールドマーケティング、SA、DevRel）とのアライメントを維持する | DRI | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Informed（報告先） | Consulted（相談先） |
-| **コンテンツ戦略**: 複数のコンテンツ配信方法を通じて規模で GitLab 採用を促進するための戦略と実行を監督する（CSE の四半期目標/イニシアチブに合わせて） | DRI | Consulted（相談先） | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Consulted（相談先） |
+| **コンテンツ戦略**: 複数のコンテンツ配信方法を通じて規模で GitLab の活用を促進するための戦略と実行を監督する（CSE の四半期目標/イニシアチブに合わせて） | DRI | Consulted（相談先） | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Consulted（相談先） |
 | **四半期計画/バックログ管理**: 戦略/四半期目標に合わせてコンテンツ作成がアラインされるよう、見えるバックログを整理・維持する。 | Consulted（相談先） | DRI | Consulted（相談先） | Informed（報告先） | Informed（報告先） | Consulted（相談先） |
 | **マーケティング/プロモーション**: 様々なチャネルを通じて可視性、エンゲージメント、インパクトを最大化するよう設計された内外の戦略を作成・実行する | DRI | Consulted（相談先） | Consulted（相談先） | Informed（報告先） | Informed（報告先） | Informed（報告先） |
 | **コンテンツ作成**: コンテンツ戦略に対して開発・実行する。SME と連携してデリバリーのワークバックプランを確保する | Consulted（相談先） | DRI（ウェビナー、ブログ） | DRI（ラボ） | Consulted（相談先） | Informed（報告先） | Informed（報告先） |
@@ -162,14 +162,14 @@ CSE コンテンツチームの主な目標は次のとおりです:
 | タイトル | プロジェクト | グループ | 最終更新 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------ |
 | [DevSecOps における AI](https://docs.google.com/presentation/d/1GdS0MQI53_mxQG-VvPxK2g9AmeJDmm403vSl8zZvy7I/edit?usp=drive_link) | [DevSecOps における AI](https://gitlab.com/gitlab-learn-labs/onboarding-cohort-projects/ai-in-dev-sec-ops/) | Data Science | 2024-04-30 |
-| [GitLab CI](https://docs.google.com/presentation/d/1IiRo4KHAgYqmzNiLkNYEatzHo75ax1BNKy-HsHoZW3k/edit?usp=drive_link) | [CICD 採用ワークショップ](https://gitlab.com/gitlab-learn-labs/sample-projects/cicd-adoption-workshop) | Verify | 2023-10-23 |
+| [GitLab CI](https://docs.google.com/presentation/d/1IiRo4KHAgYqmzNiLkNYEatzHo75ax1BNKy-HsHoZW3k/edit?usp=drive_link) | [CI/CD 活用ワークショップ](https://gitlab.com/gitlab-learn-labs/sample-projects/cicd-adoption-workshop) | Verify | 2023-10-23 |
 | [GitLab 高度な CI](https://docs.google.com/presentation/d/1g36th6wlPUj9YMHooAr7M0koscEdDAnxJULTu3F93Fg/edit?usp=drive_link) | [高度な CI ラボ](https://gitlab.com/gitlab-learn-labs/onboarding-cohort-projects/advanced-ci-lab/-/tree/main?ref_type=heads) | Package/Verify | 2024-05-10 |
-| [Jenkins ユーザー向け CI/CD 採用](https://docs.google.com/presentation/d/1d2u6Ls_ELgEAv8VXMatljVkPydOelUQ3_hsOvUe2k28/edit?usp=drive_link) | [CICD 採用ワークショップ](https://gitlab.com/gitlab-learn-labs/sample-projects/cicd-adoption-workshop) | Verify | 2024-01-10 |
+| [Jenkins ユーザー向け CI/CD 導入](https://docs.google.com/presentation/d/1d2u6Ls_ELgEAv8VXMatljVkPydOelUQ3_hsOvUe2k28/edit?usp=drive_link) | [CI/CD 活用ワークショップ](https://gitlab.com/gitlab-learn-labs/sample-projects/cicd-adoption-workshop) | Verify | 2024-01-10 |
 | [セキュリティとコンプライアンス](https://docs.google.com/presentation/d/1_o1UbmM0u96f9XTpjYBLG3jnHeJuwJAVOrCg7Ri4ti4/edit#slide=id.g2e71b1d1f20_1_598) | [Tanuki Racing セキュリティとコンプライアンス](https://gitlab.com/gitlab-learn-labs/onboarding-cohort-projects/tanuki-racing-security-and-compliance) | Software Supply Chain Security/Secure | 2024-06-26 |
 
 ## <i class="fa-solid fa-folder-plus" style="color: #B197FC;"></i> コンテンツ作成プロセス
 
-CSE コンテンツチームは、GitLab の機能、ツール、ベストプラクティスの顧客イネーブルメントと採用に焦点を当てたコンテンツを作成、プロモーション、配布します。現在作成しているコンテンツの種類は**ショートフォームデモ、ラボ、ウェビナー**です。このコンテンツは、CSE（カスタマーサクセスエンジニア）による 1:many オーディエンス向けに当初設計されていますが、1:1 の顧客エンゲージメントや GitLab 内の他の用途にも適用・活用できることを目指しています。
+CSE コンテンツチームは、GitLab の機能、ツール、ベストプラクティスの顧客イネーブルメントと活用に焦点を当てたコンテンツを作成、プロモーション、配布します。現在作成しているコンテンツの種類は**ショートフォームデモ、ラボ、ウェビナー**です。このコンテンツは、CSE（カスタマーサクセスエンジニア）による 1:many オーディエンス向けに当初設計されていますが、1:1 の顧客エンゲージメントや GitLab 内の他の用途にも適用・活用できることを目指しています。
 
 ### コンテンツの提案
 

@@ -22,7 +22,7 @@ Accelerator は、GitLab CSA がチームと連携して定義し提供する、
 - 4 段階のライフサイクルに従います: **Discovery → Design → Deliver → Measure**
 - 共有 GitLab コラボレーションプロジェクトで追跡される測定可能な成果を生み出します
 
-> Customer Success はお客様に対して「キーボードに手を置く」ことは許可されていません。CSA はベストプラクティス、アーキテクチャガイダンス、合わせた採用計画を提供します。お客様が GitLab に環境の積極的な実装や構成を必要とする場合、その作業は [Professional Services](/handbook/customer-experience/professional-services-engineering/) によって処理されます。
+> Customer Success はお客様に対して「キーボードに手を置く」ことは許可されていません。CSA はベストプラクティス、アーキテクチャガイダンス、ニーズに合わせた導入計画を提供します。お客様が GitLab に環境の積極的な実装や構成を必要とする場合、その作業は [Professional Services](/handbook/customer-experience/professional-services-engineering/) によって処理されます。
 
 ## Accelerator ライフサイクル
 
@@ -70,7 +70,7 @@ Accelerator は、GitLab CSA がチームと連携して定義し提供する、
 | Accelerator | 説明 |
 |-------------|-------------|
 | **AI/ML Hands-on Lab** | ハンズオンサンドボックスアクセスを使用して、すべての GitLab AI/ML 機能について開発者をブートストラップ |
-| **Duo Enterprise Onboarding** | カスタマイズされたデモンストレーション、ガイドされた採用戦略、チャンピオンネットワーク開発を含む、組織全体に AI 駆動の開発ツールを実装する 12 週間プログラム |
+| **Duo Enterprise Onboarding** | カスタマイズされたデモンストレーション、導入を支援する戦略、チャンピオンネットワーク開発を含む、組織全体に AI 駆動の開発ツールを実装する 12 週間プログラム |
 
 ### システム管理
 
