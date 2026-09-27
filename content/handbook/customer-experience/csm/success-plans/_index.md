@@ -84,7 +84,7 @@ Issue のコメントに以下を入力して送信:
 `~UseCase::` — 以下から 1 つ選択: `AI` · `CD` · `CI` · `Dedicated` · `Developer Experience` · `Infrastructure` · `Other` · `Plan` · `SCM` · `Security`
 
 **オプションラベル:**
-`~Priority::` (`Low` · `Medium` · `High`) · `~Success Accelerator`（Success Tier 導入促進者向け）
+`~Priority::` (`Low` · `Medium` · `High`) · `~Success Accelerator`（Success Tier の採用アクセラレーター向け）
 
 **期日** — レポートにおけるターゲット完了日として扱われます。
 
