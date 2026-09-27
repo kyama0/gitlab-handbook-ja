@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-![Discovery.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/discovery/discovery.jpg)
+![仮説の検証、実現可能性の確認、スコープ定義を行うディスカバリの概要](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/discovery/discovery.jpg)
 
 ## ディスカバリはどのように実施されるか?
 

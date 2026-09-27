@@ -224,7 +224,7 @@ https://gitlab-core.us.gitlabdemo.cloud/demosys-users/yourname/tutorial-app-jenk
 > `integ_jenkins` オプションを選択すると、Jenkins サーバーは GitLab インスタンスの API に接続してリポジトリ URL を検索しようとします。成功した場合、エラーメッセージは自動的に消えます。
 
 1. **Branch Specifier** フィールドの `*/master` を `origin/$gitlabSourceBranch` に置き換えます。
-![image.png](/images/customer-experience/demo-systems/tutorials/integrations/8D6SVFUIdQolYAAAAASUVORK5CYII=)
+![Branch Specifier フィールドの設定画面](/images/customer-experience/demo-systems/tutorials/integrations/8D6SVFUIdQolYAAAAASUVORK5CYII=)
 1. Script Path はデフォルトの `Jenkinsfile` のままにします。
 1. `Lightweight checkout` はチェックしたままにします。
 1. Save をクリックします。

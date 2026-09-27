@@ -27,13 +27,13 @@ Calendly が GDPR やそれに類するプライバシー法に準拠するよ�
 - 静的リンクの作成・確認手順
   - [Zoom PMI](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066271)を Chorus Scheduler 設定でリンクします（1 回のみ）
   - 次に、Google カレンダーでテストイベントを作成し、「ビデオ会議を追加」をクリックして Chorus Meeting を選択します。これで Chorus Go の静的リンク（ドメイン: go.chorus.ai）を確認できます。
-  - ![static-chorus-go-link](/images/customer-experience/csm/calendly/grab-static-chorus-go-link.png)
+  - ![Google カレンダーのイベントに表示された Chorus Go の固定リンク](/images/customer-experience/csm/calendly/grab-static-chorus-go-link.png)
 
 ### Calendly イベントタイプの作成
 
 顧客がミーティングに適した時間の長さやトピック・フォーカス領域を選べるよう、Calendly には複数のイベントタイプを作成することを推奨します。以下は、複数のイベントタイプを持つ CSE の Calendly ホームページの例です。
 
-![calendly-home-example](/images/customer-experience/csm/calendly/calendly-home-example.png)
+![複数のイベントタイプを設定した Calendly ホームページの例](/images/customer-experience/csm/calendly/calendly-home-example.png)
 
 #### Calendly イベントの作成手順
 
@@ -45,7 +45,7 @@ Calendly が GDPR やそれに類するプライバシー法に準拠するよ�
       - *重要*: Calendly 経由で予約する人は、ミーティングごとに自動生成されるユニークなミーティング ID ではなく、同じ場所のリンクを使ってイベントを予約することになります。Zoom Personal Meeting が GitLab の [プライバシー・セキュリティ](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-security) ベストプラクティスに従っていることを必ず確認してください。
 
       - 確認後にのみ場所を表示するオプションを必ず選択してください
-      - ![calendly-location](/images/customer-experience/csm/calendly/calendly-location-chorus-go.jpeg)
+      - ![Calendly の場所に Chorus Go リンクを設定し、予約確認後に表示する画面](/images/customer-experience/csm/calendly/calendly-location-chorus-go.jpeg)
 
 - *説明・指示*（以下の推奨テキストを追加してください）
 

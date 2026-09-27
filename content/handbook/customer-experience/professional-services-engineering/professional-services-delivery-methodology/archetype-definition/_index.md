@@ -31,9 +31,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
   * Black Friday
   * 7 月 4 日のセールイベント
 
-![ScalingCharacteristics.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/archetype-definition/scalingcharacteristics.jpg)
+![リスクと規模別のエンゲージメントモデルの特徴](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/archetype-definition/scalingcharacteristics.jpg)
 
-![ScalingTeamCompositions.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/archetype-definition/scalingteamcompositions.jpg)
+![エンゲージメント規模別の GitLab チーム構成例](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/archetype-definition/scalingteamcompositions.jpg)
 
 ### スケーリングに関する考慮事項
 

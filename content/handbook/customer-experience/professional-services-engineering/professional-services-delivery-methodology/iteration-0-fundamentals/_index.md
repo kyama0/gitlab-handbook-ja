@@ -16,9 +16,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
 3. 作業のケイデンスについて合意する。
 4. 自分のチーム固有のビジョン、スコープ、ゴールについて整合させる。
 
-![Iteration-0-Fundamentals.png](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/iteration-0-fund.png)
+![イテレーション 0 でチームの目標と作業の進め方をすり合わせる流れ](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/iteration-0-fund.png)
 
-![Iteration-Execution.png](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/iterative-exec-delivery.png)
+![反復的な実行とデリバリーに向けたイテレーション 0 の活動](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/iterative-exec-delivery.png)
 
 ### 作業合意
 
@@ -63,9 +63,9 @@ EM から PS へのデリバリー移管から始まり、ステークホルダ�
 3. [Definition of Done (DoD)](../definition-of-done/_index.md) を定義し、必要であれば [Definition of Ready (DoR)](../definition-of-ready/_index.md) も定義する。
 4. 自分のチーム固有の制約、阻害要因、リスクを理解する。
 
-![Team-Norms.png](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/align-team-norms.png)
+![チームの規範と作業合意をすり合わせる手順](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/align-team-norms.png)
 
-![Orient-Team.png](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/orient-roles-responsibilities.png)
+![チーム内の役割と責任を確認する手順](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/orient-roles-responsibilities.png)
 
 ## 技術的・ビジネス的基盤の構築
 

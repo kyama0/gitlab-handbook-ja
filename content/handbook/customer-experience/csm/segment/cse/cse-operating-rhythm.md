@@ -103,11 +103,11 @@ Success On-Demand（CSE）の[対象](https://gitlab.com/gitlab-com/customer-suc
 
 以下のスクリーンショットが、Salesforce でのヘルプリクエストプロセスのナビゲーションに役立ちます:
 
-![sfdc-opp-view-w_request_help_button](/images/customer-experience/csm/segment/cse/sfdc-opp-view-w_request_help_button.png)
+![Salesforce の商談画面にある Request Support ボタン](/images/customer-experience/csm/segment/cse/sfdc-opp-view-w_request_help_button.png)
 
-![sfdc-request-help-dropdown](/images/customer-experience/csm/segment/cse/sfdc-request-help-dropdown.png)
-![sfdc-cse-help-vs-esc](/images/customer-experience/csm/segment/cse/sfdc-cse-help-vs-esc.png)
-![sfdc-cse-case-creation-view](/images/customer-experience/csm/segment/cse/sfdc-cse-case-creation-view.png)
+![Salesforce のサポート依頼先メニューで CS Help を選択](/images/customer-experience/csm/segment/cse/sfdc-request-help-dropdown.png)
+![ケース種別で CSE Help と Escalations を選ぶ画面](/images/customer-experience/csm/segment/cse/sfdc-cse-help-vs-esc.png)
+![Salesforce の CSE ケース作成フォーム](/images/customer-experience/csm/segment/cse/sfdc-cse-case-creation-view.png)
 
 ケースが作成されると、アカウントと Opportunity の両方の関連ケースリストに自動的に表示されます。その後、Success On-Demand（CSE）チームが対応するための Call to Action（CTA）が Gainsight で生成されます。ただし、これはリアルタイムではありません（バッチルールは毎日太平洋時間12:30〜1時から4時間ごとに実行されます）。
 

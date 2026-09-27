@@ -141,7 +141,7 @@ PM は Kantata のプロジェクトマイルストーンについて以下を�
 
 **トップレベル** のマイルストーンフィールドのみ更新すべきであることに注意してください。マイルストーン内のサブアクティビティは更新 **しない** でください。
 
-![fprevenuerelease](/images/customer-experience/professional-services-engineering/professional-services-operations/fprevenuerelease.png)
+![FP プロジェクトの収益リリース画面](/images/customer-experience/professional-services-engineering/professional-services-operations/fprevenuerelease.png)
 
 ## プロジェクトコーディネーション - トレーニング
 
@@ -237,7 +237,7 @@ Professional Services Operations のプロセスについての詳細は、こ�
 - Sign Off received を、トレーニングが完了したとき、受諾が受領されたとき、または Passive Acceptance に達したときに更新し、クラスのロスターまたは受諾の PDF メールをマイルストーンに追加
 - Sign Off に Passive Acceptance が利用された場合に更新
 
-![trainingrelease](/images/customer-experience/professional-services-engineering/professional-services-operations/trainingrelease.png)
+![トレーニングプロジェクトの収益リリース画面](/images/customer-experience/professional-services-engineering/professional-services-operations/trainingrelease.png)
 
 ---
 

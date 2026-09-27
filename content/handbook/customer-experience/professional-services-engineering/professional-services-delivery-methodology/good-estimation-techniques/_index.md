@@ -53,7 +53,7 @@ Cone of Uncertainty は、プロジェクト管理用語で、プロジェクト
 
 **プロジェクト完了に近づくほど、見積もりのばらつきは減少します。**
 
-![ConeOfUncertainty.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/coneofuncertainty.jpg)
+![不確実性のコーン](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/coneofuncertainty.jpg)
 
 唯一の例外は、100% 理解されているプロセスを扱う場合です。生産ラインが良い例で、各工程をピースが移動する正確な時間がわかっており、製品 1 個を完成させるのにどれだけかかるかを正確に見積もれます。
 
@@ -75,17 +75,17 @@ Cone of Uncertainty は、プロジェクト管理用語で、プロジェクト
 
 ソフトウェアプロジェクトの見積もりにおいて、これは伝統的な「Planning Onion」として表現されます。
 
-![PlanningOnion.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/planningonion.jpg)
+![計画のオニオンモデル](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/planningonion.jpg)
 
 この「Planning Onion」は基本的に外側から内側に向かって、段階的に詳細度を増していきます。これは Cone of Uncertainty で示された概念と密接に関連しています。
 
 タイミングの側面と見積もりの詳細度を反映させると、「Planning Onion」を次のように考えられます。
 
-![PlanningOnionTiming.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/planningoniontiming.jpg)
+![計画のオニオンモデルとタイミング](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/planningoniontiming.jpg)
 
 最後に、Agile / Scrum の見積もりの時間ホライズンに関しては、長期と短期の計画ホライズンを次のように考えられます。
 
-![ShortLongHorizon.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/shortlonghorizon.jpg)
+![短期・長期の計画期間](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/shortlonghorizon.jpg)
 
 ビジョンとロードマップの計画は長期ホライズンの活動であり、スプリント計画は短期ホライズンの活動に分類されます。
 
@@ -103,13 +103,13 @@ Cone of Uncertainty は、プロジェクト管理用語で、プロジェクト
 2. 顧客マネジメントの交代 — 顧客／クライアントのマネジメントや主要ステークホルダーが交代し、「新しいチーム」がプロジェクトに対して入力（読み: 新しい方向性）を提供したいと考え、リセットを引き起こす
 3. テクノロジーイノベーション — 新しいテクノロジーがプロジェクトを提供する良い方法を可能にし、チームに既存の Analysis、Design、Code を再評価して最初からやり直すことを強制する
 
-![WaterfallModel.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/waterfallmodel.jpg)
+![ウォーターフォールモデル](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/waterfallmodel.jpg)
 
 **Waterfall プロジェクトでは、これが常に起きます。価値を提供せずにリセットしてしまうのです。**
 
 一方 Agile を使用すると、小さなプロダクトインクリメントを迅速に提供できます。計画ホライズンは短く、Agile チームは基本的に各スプリントの終わりに動作するインクリメントを提供することにコミットします。
 
-![AgilePlanning Model.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/agileplanning_model.jpg)
+![アジャイル計画モデル](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/agileplanning_model.jpg)
 
 スプリントの途中で要件が変更されても、そのスプリント終了時のプロダクトインクリメントは提供されます。新しい要件はプロダクトバックログに登録され、後のスプリントで優先順位付けされます。
 
@@ -155,35 +155,35 @@ _相対的_ な指標は、T シャツサイジングで使われる small、med
 
 以下の 8 ステップで基本的なエスティメーションポーカーのプロセスを説明します。
 
-### STEP 1
+### ステップ 1
 
 「アンカーストーリー」を特定します — 全員が合意できる最もよく理解されているストーリーで、サイズ／工数の参照として機能します
 
-### STEP 2
+### ステップ 2
 
 プロダクトオーナーがストーリーを説明します
 
-### STEP 3
+### ステップ 3
 
 各開発チームメンバーが（秘密裏に）カードを選びます
 
-### STEP 4
+### ステップ 4
 
 開発チームメンバー全員が一緒にカードを公開します
 
-### STEP 5
+### ステップ 5
 
 カードが異なる場合、最高と最低の見積もり者が自分の選択と前提を簡潔に説明します
 
-### STEP 6
+### ステップ 6
 
 プロダクトオーナーが必要に応じて追加情報を提供します
 
-### STEP 7
+### ステップ 7
 
 開発チームは合意に達するまで、最大 3 回プロセスを繰り返します
 
-### STEP 8
+### ステップ 8
 
 アンカーストーリーを常に念頭に置きながら、見積もりが必要な全ストーリーに対して繰り返します
 
@@ -226,19 +226,19 @@ T シャツサイジング（別名 Affinity Estimation）は、通常必要と�
 
 そして、次の 4 つの簡単なステップに従います。
 
-### STEP 1
+### ステップ 1
 
 1 分かけて、開発チームに 1 つの「small」ユーザーストーリーで合意してもらいます。XS、medium、large、XL、XXL、EPIC のサイズのストーリーで繰り返します
 
-### STEP 2
+### ステップ 2
 
 10 〜 30 分かけて、開発チームに残りのすべてのユーザーストーリーを XS、small、medium、XL、XXL、EPIC のカテゴリに分類してもらいます
 
-### STEP 3
+### ステップ 3
 
 さらに 10 〜 30 分かけて、開発チームに必要に応じてユーザーストーリーの分類をレビューして調整してもらいます — 完了！
 
-### STEP 4
+### ステップ 4
 
 プロダクトオーナーに分類をレビューしてもらいます
 
@@ -246,7 +246,7 @@ T シャツサイジング（別名 Affinity Estimation）は、通常必要と�
 
 エスティメーションポーカーを使っているか、T シャツサイジングを使っているかにかかわらず、Cone of Uncertainty は依然として適用されます。プロセスの早い段階で T シャツサイジングを使うと、ばらつきの大きな見積もりが生じることに注意してください。
 
-![ConeTShirtPoker.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/conetshirtpoker.jpg)見積もる対象に応じて、適切な見積もり方法を選択してください。
+![不確実性のコーンと T シャツサイズ見積もり・見積もりポーカー](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/conetshirtpoker.jpg)見積もる対象に応じて、適切な見積もり方法を選択してください。
 
 * ロードマップ計画 => T シャツサイジングを使用
 * リリース計画 => ユーザーストーリーの数に応じて T シャツサイジングまたはエスティメーションポーカーを使用
@@ -286,7 +286,7 @@ T シャツサイジング（別名 Affinity Estimation）は、通常必要と�
 
 エスティメーションポーカーを使うと、通常最初の 4 〜 6 スプリントの過程で見積もりのばらつきが減少します。安定したチームが 5 〜 6 スプリント一緒に働いた後にかなり正確な見積もりを達成できなかったケースは、私はほとんど見たことがありません。
 
-![Estimation Accuracty](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/estimationaccuracyselfcorrect.jpg)
+![見積もりの精度](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/estimationaccuracyselfcorrect.jpg)
 
 ここで「安定したチーム」がキーであることに注意してください。チームは安定している必要があり、チームメンバーは互いを知り、共に働き、チームを成功裏に形成している必要があります。これは、[1965 年に Bruce Tuckman が最初に提案した](https://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development) 標準的な「forming–storming–norming–performing」グループ発達モデルに従います。
 

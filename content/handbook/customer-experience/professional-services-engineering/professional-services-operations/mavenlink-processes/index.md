@@ -24,19 +24,19 @@ Mavenlink にログインするには、GitLab の Okta アカウントへアク
 
 - Okta 内で Mavenlink をクリックします
 
-![mavenlinkokta](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/mavenlinkokta.png)
+![Okta 内の Mavenlink](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/mavenlinkokta.png)
 
 - メールアドレスを確認します
 - パスワードを入力します
 - 「Sign On with Okta」をクリックします
 
-![verification1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification1.png)
+![Mavenlink のログイン確認画面 1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification1.png)
 
-![verification2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification2.png)
+![Mavenlink のログイン確認画面 2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification2.png)
 
-![verification3](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification3.png)
+![Mavenlink のログイン確認画面 3](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification3.png)
 
-![verification4](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification4.png)
+![Mavenlink のログイン確認画面 4](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/verification4.png)
 
 これで Mavenlink にログインできます。お楽しみください！
 
@@ -161,7 +161,7 @@ Mavenlink のメンバーは、プロジェクト参加者にならなくても�
 
 地域の祝日と Family and Friends Days は、各メンバーのカレンダーに Mavenlink 上で含まれており、[Time Off プロセス](/handbook/people-group/time-off-and-absence/time-off-types/)に従います。日付がカレンダーに含まれているため、Mavenlink の PTO 機能やユーザーのタイムシートで時間を申請する必要はありません。タイムシートにログインすると、必要な勤務週がタイムシートエントリに表示されます。
 
-![TimeOff](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeoff.png)
+![Mavenlink の Time Off カレンダー](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeoff.png)
 
 GitLab の会社ポリシーでは、Time Off の申請は Workday を通して行い、この[ハンドブックのプロセス](/handbook/people-group/time-off-and-absence/time-off-types/)に従います。
 プロフェッショナルサービスグループでは、Time Off を Mavenlink にも申請することを義務付けています:
@@ -192,13 +192,13 @@ Time Off のキャンセル
 - 右側にプロフィールが表示され、Upcoming Time Off のセクションがあります
 - プラス記号をクリックし、日付を選択して時間数を「0」に更新します
 
-![PTOFeature2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/ptofeature2.png)
+![Mavenlink の PTO 機能](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/ptofeature2.png)
 
 #### Mavenlink 時間管理 - タイムシート
 
-![tmesheets](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/tmesheets.png)
+![Mavenlink のタイムシート](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/tmesheets.png)
 
-![timesheetoptions](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timesheetoptions.png)
+![タイムシートのオプション](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timesheetoptions.png)
 
 #### Mavenlink 時間承認プロセス
 
@@ -248,28 +248,28 @@ Report Viewer（またはそれ以上）のアカウント権限を持たない�
 
 - タイムシートが提出されると、Mavenlink から自動でタイムシート承認メールが届きます
 
-![emailapproval](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/emailapproval.png)
+![タイムシート承認メール](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/emailapproval.png)
 
 - **view the timesheet** リンクをクリックしてタイムシートを確認します。
 - Approve ボタンでタイムシートを承認、または Reject ボタンで却下します。却下する場合はノートを入力します。
 
 方法 2 - Mavenlink Time Sheet Approvals
 
-![timeapprovals1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals1.png)
+![タイムシート承認画面 1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals1.png)
 
-![timeapprovals2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals2.png)
+![タイムシート承認画面 2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals2.png)
 
-![timeapprovals3](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals3.png)
+![タイムシート承認画面 3](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals3.png)
 
-![timeapprovals4](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals4.png)
+![タイムシート承認画面 4](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals4.png)
 
-![timeapprovals5](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals5.png)
+![タイムシート承認画面 5](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeapprovals5.png)
 
 方法 3 - Mavenlink プロジェクトの Activity Feed
 
-![projectactivity1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/projectactivity1.png)
+![Mavenlink プロジェクトの Activity Feed 1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/projectactivity1.png)
 
-![projectactivity2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/projectactivity2.png)
+![Mavenlink プロジェクトの Activity Feed 2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/projectactivity2.png)
 
 #### Mavenlink プロジェクト作成
 
@@ -344,15 +344,15 @@ PS Opportunity が Closed / Won になると、SFDC から通知が送信され�
 
 Project Health Report は、Mavenlink プロジェクトの右側のフライアウトパネルにあります
 
-![healthreport1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/healthreport1.png)
+![プロジェクトのヘルスレポート画面 1](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/healthreport1.png)
 
 新しいレポートを作成するには New Health Report をクリックします
 
-![healthreport2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/healthreport2.png)
+![プロジェクトのヘルスレポート画面 2](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/healthreport2.png)
 
 各セクションを記入して保存します
 
-![healthreport3](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/healthreport3.png)
+![プロジェクトのヘルスレポート画面 3](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/healthreport3.png)
 
 Health Report は 1 日に 1 件のみ追加できます
 

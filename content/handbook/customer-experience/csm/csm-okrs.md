@@ -57,7 +57,7 @@ GitLab.com（Epic/Issue）は私たちが行っている作業を追跡するの
 
 OKR はインクルーシブ（セグメント、地域など）であるべきであり、私たちの[非同期コントリビューションへのバイアス](/handbook/values/#bias-towards-asynchronous-communication)に強く傾倒する必要があります。
 
-### Objectives
+### 目標 {#objectives}
 
 - アウトプットよりアウトカム
 

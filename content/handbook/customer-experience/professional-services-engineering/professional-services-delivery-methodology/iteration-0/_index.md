@@ -189,12 +189,12 @@ Customer Support Operations（Zendesk US Government にアクセスできる人�
 
 1. [Organizations Repository](https://gitlab.com/gitlab-com/support/zendesk-global/organizations/-/tree/master/organizations) にアクセス
 2. 顧客名を検索（ハッシュに続いて Salesforce 名が表示されます）
-   ![ZenDesk Search Image](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/zen-search.png)
+   ![Zendesk の組織リポジトリで顧客名を検索した画面](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/zen-search.png)
 
 #### ステップ 2: YAML ファイルを編集
 
 1. 検索から YAML を選択し、`Edit > Open in Web IDE` をクリック
-   ![Edit YAML Image](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/edit-yaml.png)
+   ![YAML ファイルを Web IDE で編集する操作画面](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/edit-yaml.png)
 
 2. notes セクションの後（パイプ `|` で始まる）に情報を追加:
 

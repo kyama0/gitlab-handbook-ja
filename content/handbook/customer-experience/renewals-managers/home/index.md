@@ -8,7 +8,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-![Global Renewals Organiztion](/images/customer-experience/renewals-managers/home/gitlab_gr_blk.gif)
+![グローバルリニューアル組織](/images/customer-experience/renewals-managers/home/gitlab_gr_blk.gif)
 
 Global Renewals Organization（グローバルリニューアル組織）
 

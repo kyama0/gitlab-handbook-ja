@@ -57,7 +57,7 @@ graph LR;
   b-->z;
 ```
 
-![create-services-opportunity.png](/images/customer-experience/professional-services-engineering/working-with-ps/create-services-opportunity.png)
+![サービス商談の作成画面](/images/customer-experience/professional-services-engineering/working-with-ps/create-services-opportunity.png)
 
 Professional Services の販売に関する詳細は、[GitLab プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling) を参照してください。
 

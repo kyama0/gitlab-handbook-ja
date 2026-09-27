@@ -23,7 +23,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 以下の図は、これらの事項がいかに強く関連しているかを示しています:
 
-![IntegrateBizAndIT.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/integratebizandit.jpg)
+![ビジネスと IT の統合を示す図](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/integratebizandit.jpg)
 
 ## 前提条件
 

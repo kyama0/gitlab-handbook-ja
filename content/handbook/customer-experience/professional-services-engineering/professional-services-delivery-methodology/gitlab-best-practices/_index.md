@@ -224,7 +224,7 @@ CI/CD はシフトレフトなので、プロセスの早い段階でセキュ�
 
 ステージングブランチに自動的に更新される[環境](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)を持つのは良い考えかもしれません。ただしこの場合、この環境の名前はブランチ名と異なる場合があります。ステージング環境、プレ本番環境、本番環境があるとします:
 
-![GitLab Flow](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/gitlab-best-practices/gitlab-flow.png){width="356" height="340"}
+![GitLab Flow のブランチ戦略](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/gitlab-best-practices/gitlab-flow.png){width="356" height="340"}
 
 この場合、ステージングブランチをステージング環境にデプロイします。プレ本番にデプロイするには、ステージングブランチからプレ本番ブランチへのマージリクエストを作成します。プレ本番ブランチを本番ブランチにマージして本番稼働させます。コミットが下流にのみ流れるこのワークフローにより、すべてがすべての環境でテストされることが保証されます。
 

@@ -25,7 +25,7 @@ Definition of Ready と Definition of Done は密接に関連しています。�
 
 製品バックログはスプリントバックログのソースです。製品バックログがプロジェクト / エンゲージメントの要件リポジトリを表すのに対し、スプリントバックログは次のスプリントに合意されたスコープであり、GitLab 実装チームと顧客開発チームのデリバリーコミットメントを表します。GitLab 実装チームは真空中で動作するわけではなく、顧客開発チームと優先順位を密に調整します。
 
-![IterationCycle.jpg](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/iterationcycle.jpg)
+![製品バックログからスプリントの振り返りまでのイテレーションサイクル](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/iterationcycle.jpg)
 
 合意されコミットされた後、スプリントバックログは通常、GitLab 実装チームと顧客開発チームがそのコミットメントに対してデリバリーできることを保証するために変更されません。
 

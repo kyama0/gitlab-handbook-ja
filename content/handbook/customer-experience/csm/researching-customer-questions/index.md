@@ -44,7 +44,7 @@ Zendesk は、GitLab が Zendesk を導入してから長年にわたってす�
 1. [Product Categories](/handbook/product/categories/) ハンドブックページ内で検索します。このページでは、対象の機能を Command ⌘ + F で検索できます。例えば、Review Apps に関する質問の場合、Command ⌘ + F で Review Apps 機能が [Pipeline Security](/handbook/product/categories/#pipeline-security-group) グループの下にあることを確認できます。製品ロードマップに関する質問の場合は、各プロダクトグループに関連するディレクションページを確認できます。
 
 1. ドキュメント内で検索します。例えば、[GitLab のセキュリティダッシュボード](https://docs.gitlab.com/ee/user/application_security/security_dashboard/)に関する質問でどのプロダクトグループが役立つか確認したい場合、ページの下部にスクロールして `View page source` をクリックすると、セキュリティダッシュボードがどの製品ステージとグループに属しているかがわかります。この場合は Security Insights グループです。
-![image-1.png](/images/customer-experience/csm/researching-customer-questions/image-1.png)
+![ドキュメントのソースに記載された製品ステージとグループ](/images/customer-experience/csm/researching-customer-questions/image-1.png)
 
 1. 機能に関連するエピック/Issue を確認することでも、適切なプロダクトグループを特定できます。例えば、[カスタマイズ可能な役割と権限](https://gitlab.com/groups/gitlab-org/-/epics/4035)を調査している場合、右側のラベルで Authentication and Authorization が適切なグループであることがわかります。
 
