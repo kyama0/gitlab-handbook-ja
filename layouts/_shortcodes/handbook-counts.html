@@ -43,7 +43,7 @@
     "engineering/verify-team-communication" "engineering/create/career-development"
     "security/public-policy-standards-toc" "security/customer-support-operations-criticalities"
     "tech-stack" "kpi" "performance-indicators" "include-readme" "include-remote"
-    "product/product-priorities" "peer-reviews" "pmm-inventory" }}
+    "product/product-priorities" "peer-reviews" "pmm-inventory" "yes" "no" }}
 {{- $localPattern := print `\{\{[<%]\s*(` (delimit $localShortcodes "|") `)(\s+[^{}]*)?[>%]\}\}` }}
 {{- range .Site.RegularPages }}
     {{- $page := . }}
