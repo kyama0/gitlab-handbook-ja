@@ -15,4 +15,4 @@ GitLab は、GitLab コミュニティおよびチームメンバーが日常の
 
 ### 利用可能な GitLab 認定
 
-利用可能な認定の最新情報については、**[Public GitLab Certifications](https://university.gitlab.com/pages/certifications)** を参照してください。
+利用可能な認定の最新情報については、**[公開 GitLab 認定資格](https://university.gitlab.com/pages/certifications)** を参照してください。

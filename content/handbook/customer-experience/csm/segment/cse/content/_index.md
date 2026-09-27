@@ -153,7 +153,7 @@ CSE コンテンツチームの主な目標は次のとおりです:
 | [最新情報！GitLab 17.0](https://drive.google.com/file/d/11EhjSsgMepd9iZYY9vNz8LFoQPLGVNuS/view?usp=drive_link) | All | 2024-06-04 | https://youtu.be/3gROieX0-9Q |
 | [CI/CD コンポーネント](https://drive.google.com/file/d/1mSj3YhvTu5llgRzqRMZ0Lk08KlFLlhp4/view?usp=drive_link) | Create | 2024-07-11 | https://youtu.be/2MosExpnxsw |
 | [DAST API とセキュリティテスト](https://drive.google.com/file/d/1G8XeiaQDpGQAyd1gwLsYmaf-tp3N4p91/view?usp=drive_link) | Secure | 2024-07-12 | https://youtu.be/R6nO_0u2UqA |
-| [GitLab Duo Pro AI ウェビナーのロック解除](https://drive.google.com/file/d/11zmxdA7XUGeqrHwZ2LuCtgdctajT5qu7/view?usp=drive_link) | AI | 2024-08-29 | https://youtu.be/mI9F6QCtEI4 |
+| [GitLab Duo Pro AI の可能性を引き出すウェビナー](https://drive.google.com/file/d/11zmxdA7XUGeqrHwZ2LuCtgdctajT5qu7/view?usp=drive_link) | AI | 2024-08-29 | https://youtu.be/mI9F6QCtEI4 |
 
 > **注**: 録音は[ウェビナーマスター録音フォルダ](https://drive.google.com/drive/folders/1x0_7J30cTpfbRXjrXgG_2XOIARLusNt3?usp=drive_link)（内部）に保存されています。
 
