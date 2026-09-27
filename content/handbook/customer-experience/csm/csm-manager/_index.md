@@ -100,7 +100,7 @@ CSM Manager のために、レビューを支援する簡単なチェックリ�
 - フィールドが CSM 名で更新されると、Gainsight はオンボーディングプレイブックを起動する
 - **もし**アカウントが上記の基準を満たしているにもかかわらず CSM が割り当てられていない場合、Gainsight は CSM Manager にアカウントを割り当てるよう求める CTA（コールトゥアクション）を起動する。Gainsight は CSM フィールドが入力されるまで「待機」し、CSM 名でフィールドが更新されると、オンボーディングプレイブックを起動する
 
-SAE が CSM への移行側面を所有している一方で、CSM Manager は新しいアカウントが CSM に割り当てられオンボーディングが開始されていることを確認します。
+SAE が CSM への引き継ぎを担当する一方で、CSM Manager は新しいアカウントが CSM に割り当てられ、オンボーディングが開始されていることを確認します。
 
 #### 割り当てリソース
 
@@ -168,13 +168,13 @@ CSM Manager はチームと連携して、CSM が顧客への価値向上・証�
 
 | 地域/テリトリー | ケイデンス | 役割 |
 |---|---|---|
-| グローバル CSM | 週次; EMEA および APAC フレンドリーな時間帯に隔週で交互 | VP of Customer Success、VP of CSMs、CSM 地域ディレクターおよびマネージャー、Renewals ディレクター |
-| AMER ENT West | 隔週 | CSM: ディレクター、マネージャー; Sales: AVP、ASMs; Renewals: RM マネージャー |
-| AMER ENT East | 隔週 | CSM: ディレクター、マネージャー; Sales: AVP、ASMs; Renewals: RM マネージャー |
-| AMER COM  | 週次 | CSM: ディレクター、マネージャー; Sales: AVP、ASMs |
-| EMEA COM  | 週次 | CSM: ディレクター、マネージャー; Sales: AVP、ASMs |
-| APAC  | 隔週 | CSM: マネージャー; Sales: AVP、ENT & COM ASMs |
-| Public Sector | 隔週 | VP of Customer Success、VP of Public Sector、Director of Customer Success、ASMs、CSM および Renewals のチームマネージャー |
+| グローバル CSM | 週次; EMEA および APAC フレンドリーな時間帯に隔週で交互 | VP of Customer Success, VP of CSMs, CSM Regional Directors and/or Managers, Director of Renewals |
+| AMER ENT West | 隔週 | CSM: Director, Managers; Sales: AVP, ASMs; Renewals: RM Manager |
+| AMER ENT East | 隔週 | CSM: Director, Managers; Sales: AVP, ASMs; Renewals: RM Manager |
+| AMER COM  | 週次 | CSM: Director, Managers; Sales: AVP, ASMs |
+| EMEA COM  | 週次 | CSM: Director, Managers; Sales: AVP, ASMs |
+| APAC  | 隔週 | CSM: Manager; Sales: AVP, ENT & COM ASMs |
+| Public Sector | 隔週 | VP of Customer Success, VP of Public Sector, Director of Customer Success, ASMs, CSM and Renewals Team Managers |
 
 ##### リスクレビューミーティングの目的と成果
 

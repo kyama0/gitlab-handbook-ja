@@ -32,7 +32,7 @@ GitLab Certified Migration Services Engineer 認定を取得するために必�
 
 **ステップ 1**: GitLab チームメンバーであればマネージャーに、パートナーであれば GitLab 担当者に連絡し、この認定の取得に対する関心について話し合います。
 
-**ステップ 2**: GitLab 担当者から提供されたネームスペースに、[migration-onboarding.md issue テンプレート](https://gitlab.com/-/ide/project/gitlab-com/www-gitlab-com/tree/master/-/sites/handbook/source/handbook/customer-experience/professional-services-engineering/gitlab-certified-migration-services-engineer/) を使用して新しい Issue を作成します。パートナーの場合は、ネームスペースへのアクセスを得るため、または Issue の作成に支援が必要な場合は、GitLab 担当者に連絡してください。
+**ステップ 2**: GitLab 担当者から提供されたネームスペースに、[migration-onboarding.md Issue テンプレート](https://gitlab.com/-/ide/project/gitlab-com/www-gitlab-com/tree/master/-/sites/handbook/source/handbook/customer-experience/professional-services-engineering/gitlab-certified-migration-services-engineer/) を使用して新しい Issue を作成します。パートナーの場合は、ネームスペースへのアクセスを得るため、または Issue の作成に支援が必要な場合は、GitLab 担当者に連絡してください。
 
 **ステップ 3**: Issue 説明の Candidate Tasks セクションに記載された各項目を完了します。タスクを進めながら、Issue に記載された GitLab プロジェクトコーディネーターに連絡し、シャドウイングおよび最初のリードエンゲージメントをスケジュールしてください。完了する必要がある主要なタスクは次のとおりです。
 
