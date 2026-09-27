@@ -60,7 +60,7 @@ EM から PS へのデリバリー移管から始まり、ステークホルダ�
 
 1. プロジェクトバックログ（ユーザーストーリーと受け入れ基準 - 2 イテレーション）を洗練し優先順位付けする。
 2. 初期リリース計画（初期計画と設計）に Issue を割り当てる。
-3. [Definition of Done (DoD)](../definition-of-done/_index.md) を定義し、必要であれば [Definition of Ready (DoR)](../definition-of-ready/_index.md) も定義する。
+3. [完了の定義（DoD）](../definition-of-done/_index.md) を定義し、必要であれば [準備完了の定義（DoR）](../definition-of-ready/_index.md) も定義する。
 4. 自分のチーム固有の制約、阻害要因、リスクを理解する。
 
 ![チームの規範と作業合意をすり合わせる手順](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/align-team-norms.png)

@@ -41,7 +41,8 @@
     "all-remote/country-select" "eta/css-criticalities" "engineering/projects-table"
     "engineering/projects-body" "devops-diagram" "engineering/design-documents-list"
     "engineering/verify-team-communication" "engineering/create/career-development"
-    "security/public-policy-standards-toc" "security/customer-support-operations-criticalities" }}
+    "security/public-policy-standards-toc" "security/customer-support-operations-criticalities"
+    "tech-stack" }}
 {{- $localPattern := print `\{\{[<%]\s*(` (delimit $localShortcodes "|") `)(\s+[^{}]*)?[>%]\}\}` }}
 {{- range .Site.RegularPages }}
     {{- $page := . }}
@@ -64,6 +65,10 @@
     {{- range findRE `(?s)\{\{[<%]\s*panel\b[^{}]*\sheader="[^"]+"[^{}]*[>%]\}\}` $source }}
         {{- $header := replaceRE `(?s)^.*?\sheader="([^"]+)".*$` "$1" . }}
         {{- $scratch.Add "wordcount" (countwords ($header | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*details\b[^{}]*\ssummary="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $summary := replaceRE `(?s)^.*?\ssummary="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($summary | markdownify | plainify)) }}
     {{- end }}
     {{- /* This Markdown shortcode renders its words from data, not from page source. */ -}}
     {{- range findRE `\{\{%\s*all-tech-stack\s*%\}\}` $source }}

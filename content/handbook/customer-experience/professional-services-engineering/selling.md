@@ -29,10 +29,10 @@ GitLab プロフェッショナルサービスの販売には主に 4 つのス�
 
 ```mermaid
 graph LR;
-  a["Standard services?"]-- Yes ---b["Add SKU to quote"];
-  a-- No ---c["AE/SA auto creates PS epic with Create Services Opportunity button"];
-  c-->d["AE/SA works w/PS to finalize SOW"];
-  z["Send customer proposal"];
+  a["標準サービスですか？"]-- はい ---b["見積に SKU を追加"];
+  a-- いいえ ---c["AE/SA が Create Services Opportunity ボタンで PS Epic を自動作成"];
+  c-->d["AE/SA が PS と SOW を確定"];
+  z["顧客に提案書を送付"];
   d-->z;
   b-->z;
 ```

@@ -102,14 +102,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | ケイデンスコールを設定する | 顧客との定期的な進捗確認のスケジュールを設定し実施する。 |DRI||I|I|I|I||I||
 | Mutual Success Plan を維持する | 顧客の目標と成功指標の概要を示す相互成功計画を維持・更新する。 |DRI||C|I|C|I||C,I||
 
-##### **ジャーニーステージ: Enable**
+##### **ジャーニーステージ: イネーブル**
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
 | ユースケースイネーブルメントワークショップ＆ハンズオントレーニング | お客様がすでに購入またはライセンスを持っている機能に関連するユースケースの理解を深めるためのワークショップを開催する。標準コンテンツが提供される。カスタマイズコンテンツについては、お客様はプロフェッショナルサービス（PS）と連携する必要がある。 |DRI||I|I|I|||||
 | 主要ユースケース採用の測定 | 主要ユースケースの採用率を追跡し分析する。 |DRI||I|I|I|||||
 
-##### **ジャーニーステージ: Expand**
+##### **ジャーニーステージ: 拡張**
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
@@ -120,7 +120,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | co-create キックオフ＆紹介 | お客様を co-create チームに紹介する。 |DRI||C|I|I|I||I||
 | コミュニケーションの円滑化 | co-create チームとお客様間のコミュニケーションをサポートする。 |DRI - ここでの CSM は、キックオフまでは DRI であり、キックオフ後 co-create チームが追加のサポートを必要とする場合（イニシアティブがリスクにさらされる場合）にのみ介入する||C|I|I|I||I||
 
-##### **ジャーニーステージ: Optimize & Renew**
+##### **ジャーニーステージ: 最適化と更新**
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
@@ -238,7 +238,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ### ミーティング中に使用するツール
 
-- [Working Agreement](/handbook/solutions-architects/processes/#working-agreements)
+- [ワーキングアグリーメント](/handbook/solutions-architects/processes/#working-agreements)
 - Salesforce
 - Gainsight
 - [Customer Collaboration プロジェクト](/handbook/customer-experience/csm/customer-collaboration-project/)

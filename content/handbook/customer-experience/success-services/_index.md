@@ -103,10 +103,10 @@ Regional Champion は、サクセスティアのポジショニングに関す�
 
 ```mermaid
 graph LR
-    A[Order Form Received] --> B[<b>Welcome Email Sent</b><br><i>24hrs after resources identified</i>]
-    B --> C[<b>Internal Account Team Handover</b><br><i>within first week</i>]
-    C --> D[<b>Customer Kick-Off Call</b><br><i>within first 1 to 2 weeks</i>]
-    D --> E[<b>Accelerator Begins]
+    A[注文書を受領] --> B[<b>ウェルカムメールを送信</b><br><i>リソース確定から 24 時間以内</i>]
+    B --> C[<b>社内アカウントチームへ引き継ぎ</b><br><i>最初の 1 週間以内</i>]
+    C --> D[<b>顧客キックオフコール</b><br><i>最初の 1～2 週間以内</i>]
+    D --> E[<b>Accelerator を開始]
 ```
 
 完全に新規ではないアカウントをオンボーディングしている可能性があることに注意してください。アカウントチームとのスムーズなコラボレーションとハンドオーバーを確保するため、責任マトリックスの[Issue](https://gitlab.com/gitlab-com/customer-success/success-services/csa/-/issues/16)を参照することをお勧めします。

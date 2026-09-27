@@ -20,7 +20,7 @@ CSM がインフラアップグレードを調整するための高レベルの�
 
 1. CSM は顧客のハードウェアアップグレードに関する具体的な要件を確立する（例: 顧客が見込む成長量）。
 1. 推奨: CSM は Professional Services に参加を依頼し、新しいハードウェアへの移行を促進するために [Dedicated Implementation Services](https://about.gitlab.com/services/catalog/) の使用を推奨する。
-   1. **注意**: 大規模なハードウェアアップグレード（5000ユーザー以上）の場合は、[Dedicated Implementation Services](https://about.gitlab.com/services/catalog/) を通じた Professional Services への参加を**強くお勧めします**。これにより、顧客のハードウェアアップグレード計画が十分であり、最小限の中断で移行を実施できることが確保されます。このサイズの移行は、計画と実施に少なくとも3ヶ月かかることが多いです。
+   1. **注意**: 大規模なハードウェアアップグレード（5000 ユーザー以上）の場合は、[Dedicated Implementation Services](https://about.gitlab.com/services/catalog/) を通じた Professional Services への参加を**強くお勧めします**。これにより、顧客のハードウェアアップグレード計画が十分であり、最小限の中断で移行を実施できることが確保されます。このサイズの移行は、計画と実施に少なくとも 3 ヶ月かかることが多いです。
 1. 顧客が Professional Services を調達しない選択をした場合、CSM は[リファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/#available-reference-architectures)などの関連ドキュメントを提供できますが、詳細なハードウェアアップグレード計画は提供しません。
    1. 特定の質問が生じた場合は、他の内部チーム（プロダクト、品質、サポートなど）がアシストすることができます。
 1. Professional Services または顧客によってハードウェアアップグレード計画が作成されたら、CSM はその計画をサポートと共有します。サポートチームは計画をレビューしてフィードバックします。
