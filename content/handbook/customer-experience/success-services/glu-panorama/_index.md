@@ -47,7 +47,7 @@ Signature Success ティアの顧客は、GitLab University Enterprise / Panoram
    - コンテンツの除外: 公開 GitLab University カタログから除外するコンテンツはありますか？
    - カスタムコンテンツのアップロード: アップロードする顧客提供のコンテンツはありますか？
 4. **レポートのニーズ**
-   - 顧客の GLUE 管理者の Email（必須）: レポートダッシュボード（ユーザー登録、コース完了、アクティブユーザー、採用活動など）にアクセスするために、顧客には管理者アカウントが必要です。レポートアクセスを必要とする顧客ステークホルダーの Email アドレスを収集し、リクエスト Issue に含めてください。
+   - 顧客の GLUE 管理者のメールアドレス（必須）: レポートダッシュボード（ユーザー登録、コース完了、アクティブユーザー、採用活動など）にアクセスするために、顧客には管理者アカウントが必要です。レポートアクセスを必要とする顧客ステークホルダーのメールアドレスを収集し、リクエスト Issue に含めてください。
 
 ## Panorama のリクエスト方法
 
@@ -68,14 +68,14 @@ Signature Success ティアの顧客は、GitLab University Enterprise / Panoram
 
 3. **4 ステップのテンプレートを完成させる**
    以下を記入します:
-   - **Step 1:** あなたの詳細と顧客情報
-   - **Step 2:** ポータル作成の理由
-   - **Step 3:** カスタマイズの選好:
+   - **ステップ 1:** あなたの詳細と顧客情報
+   - **ステップ 2:** ポータル作成の理由
+   - **ステップ 3:** カスタマイズの選好:
      - 公開カタログから除外するコンテンツ
      - アップロードするカスタムコンテンツ
-     - レポートダッシュボードへのアクセス（登録、完了、採用活動などの利用分析にアクセスする必要がある顧客ステークホルダーの Email アドレスを提供）
+     - レポートダッシュボードへのアクセス（登録、完了、採用活動などの利用分析にアクセスする必要がある顧客ステークホルダーのメールアドレスを提供）
      - 認証方法（SSO またはサイト登録コード）
-   - **Step 4:** 管理者チェックリスト（承認後に GitLab University チームが完了）
+   - **ステップ 4:** 管理者チェックリスト（承認後に GitLab University チームが完了）
 
 4. **緊急度レベルを選択する**
    リクエストに適切な緊急度を選択します:
@@ -87,7 +87,7 @@ Signature Success ティアの顧客は、GitLab University Enterprise / Panoram
 
 5. **送信して進捗を追跡する**
    - 送信をクリックして CX-Platform-Engineering プロジェクトに Issue を作成します
-   - その Issue を記録のシステムとして使用します
+   - その Issue を正式な記録元として使用します
    - Issue を以下で更新し続けます:
      - GitLab University チームからのステータスアップデート
      - プロビジョニング後のライブ Panorama へのリンク
@@ -124,7 +124,7 @@ Signature Success ティアの顧客は、GitLab University Enterprise / Panoram
 
 ### 顧客向け
 
-- 顧客は university@gitlab.com に Email を送信して、Panorama に関するヘルプを GitLab University チームに直接連絡できます
+- 顧客は university@gitlab.com にメールを送信して、Panorama に関するヘルプを GitLab University チームに直接連絡できます
 
 ## カスタムコンテンツのアップロードをリクエストする
 
@@ -148,7 +148,7 @@ Signature Success ティアの顧客は、GitLab University Enterprise / Panoram
 1. [CX intake request form](https://cx-requests-c0b2c7.gitlab.io/) を介してリクエストを送信
 2. リクエストに以下を含める:
    - 顧客名と Panorama 名
-   - レポートアクセスを必要とする顧客ステークホルダーの Email アドレス
+   - レポートアクセスを必要とする顧客ステークホルダーのメールアドレス
 3. GitLab University チームは 5 営業日以内に管理者アクセスをプロビジョニングします
 
 管理者は、ユーザー登録、コース完了、アクティブユーザー、採用活動など、GitLab University Enterprise で利用状況レポートとダッシュボードを表示できます。

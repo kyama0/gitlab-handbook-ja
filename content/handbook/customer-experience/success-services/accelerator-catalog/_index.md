@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-Accelerator は、[Customer Success Architect (CSA)](/handbook/customer-experience/csm/segment/csa/) が提供する 12 週間の構造化されたイネーブルメントプログラムで、相互のサクセスプランと戦略的目標に整列しています。これらは GitLab の **Advanced**（年 2 回）および **Signature**（年 4 回）[Success Tier](/handbook/customer-experience/success-services/) に含まれます。
+Accelerator は、[Customer Success Architect (CSA)](/handbook/customer-experience/csm/segment/csa/) が提供する 12 週間の構造化されたイネーブルメントプログラムで、相互のサクセスプランおよび戦略的目標と整合しています。これらは GitLab の **Advanced**（年 2 回）および **Signature**（年 4 回）[Success Tier](/handbook/customer-experience/success-services/) に含まれます。
 
 完全なインタラクティブマーケットプレイスについては、[GitLab Accelerator Marketplace](https://cloud.gitlab-accelerator-marketplace.com/available_products) を参照してください。
 
@@ -50,10 +50,10 @@ Accelerator は、GitLab CSA がチームと連携して定義し提供する、
 
 | Accelerator | 説明 |
 |-------------|-------------|
-| **Intro to Security Workshop** | GitLab セキュリティの概念、スキャナー、脆弱性ダッシュボード、開始時の推奨事項の 60〜90 分の概要 |
-| **Hands-on Security Lab** | セキュリティスキャナーの構成、セキュリティポリシー、コンプライアンスフレームワーク、脆弱性のトリアージをカバーする 90〜120 分のインタラクティブラボ |
+| **Intro to Security Workshop** | GitLab セキュリティの概念、スキャナー、脆弱性ダッシュボード、開始時の推奨事項の 60 〜 90 分の概要 |
+| **Hands-on Security Lab** | セキュリティスキャナーの構成、セキュリティポリシー、コンプライアンスフレームワーク、脆弱性のトリアージをカバーする 90 〜 120 分のインタラクティブラボ |
 | **Ultimate Onboarding** | セキュリティスキャン、ポリシー構成、脆弱性管理ワークフローを実装する包括的な 12 週間プログラム |
-| **Intro to Audit, Compliance, and Separation of Duties** | 監査の概念、コンプライアンスポリシー、監査に合格して一貫性を強制するためのベストプラクティスに関する 60〜90 分のワークショップ |
+| **Intro to Audit, Compliance, and Separation of Duties** | 監査の概念、コンプライアンスポリシー、監査に合格して一貫性を強制するためのベストプラクティスに関する 60 〜 90 分のワークショップ |
 | **Security Rollout Strategy** | タイムライン、マイルストーン、追跡されたコラボレーションプロジェクトのバックログを含む、セキュリティとコンプライアンス機能をロールアウトするための完全な計画 |
 | **Product Coach (Security)** | セキュリティポリシー、開発者ワークフロー、職務分掌に関する深い掘り下げのコンサルティングガイダンスで、詳細なガイダンスレポートを生成 |
 | **Security Policy Rollout Strategy** | 5 つのフェーズ（Architecture & Design、Compliance、Audit & Enablement、Dashboards & Integration、Scaling）にわたってセキュリティポリシーの実装をガイドするマルチクォータープログラム |

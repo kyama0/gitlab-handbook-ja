@@ -1,5 +1,5 @@
 ---
-title: "カスタマーサクセスアーキテクト（CSA）"
+title: "Customer Success Architect (CSA)"
 upstream_path: /handbook/customer-experience/csm/segment/csa/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -10,13 +10,13 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 [CSM ハンドブックホームページ](/handbook/customer-experience/csm/)で、CSM に関連するその他のハンドブックページをご覧ください。
 
-GitLab では、顧客の成功が私たちの成功であると理解しています。そのため、カスタマーサクセスアーキテクト（CSA）ロールを導入しました。CSA は、カスタマーサクセス内で最高評価の技術プロダクトエキスパートとして、GitLab との旅全体を通じてトップレベルの専門知識とガイダンスを提供します。
+GitLab では、顧客の成功が私たちの成功であると理解しています。そのため、Customer Success Architect (CSA) ロールを導入しました。CSA は、カスタマーサクセス内で最高水準の技術プロダクトエキスパートとして、GitLab との旅全体を通じてトップレベルの専門知識とガイダンスを提供します。
 
 ## CSA エンゲージメントの仕組み
 
-CSA エンゲージメントは、GitLab のサブスクリプションと共に購入する有料サービスオファリングである GitLab の **Advanced** および **Signature** [サクセスティア](/handbook/customer-experience/success-services/)を通じて利用できます。CSA は、あなたのアカウントに割り当てられた専任の指名リソースとして、継続的な技術ガイダンスを提供し、戦略的ゴールに合わせた構造化された[アクセラレータプログラム](#accelerator-lifecycle)をリードします。
+CSA エンゲージメントは、GitLab のサブスクリプションと共に購入する有料サービスオファリングである GitLab の **Advanced** および **Signature** [Success Tier](/handbook/customer-experience/success-services/) を通じて利用できます。CSA は、あなたのアカウントに割り当てられた専任の指名リソースとして、継続的な技術ガイダンスを提供し、戦略的ゴールに合わせた構造化された[アクセラレータプログラム](#accelerator-lifecycle)をリードします。
 
-すべてのサクセスティアの概要については、[サクセスティアページ](/handbook/customer-experience/success-services/)をご覧ください。
+すべての Success Tier の概要については、[Success Tier ページ](/handbook/customer-experience/success-services/)をご覧ください。
 
 ## CSA と CSM の違い
 
@@ -28,9 +28,9 @@ Advanced または Signature ティアの顧客は CSA と連携します。Esse
 | **主要な成果物** | サクセスプラン、ケイデンスコール（月最大 2 回）、EBR（年最大 1 回）、ヘルスモニタリング | アクセラレータ（年 2〜4 回）、アーキテクチャレビュー、カスタムイネーブルメントワークショップ、EBR（年最大 4 回） |
 | **技術的な深さ** | 戦略的アドバイザリー — 会話のガイド、使用データの分析、機会の特定 | CS 内で最も深い製品専門知識 — デプロイメントのベストプラクティス、センター・オブ・エクセレンスの設計、実装ガイダンス |
 
-## カスタマーサクセスアーキテクトに何を期待できますか？
+## Customer Success Architect に何を期待できますか？
 
-カスタマーサクセスアーキテクト（CSA）は、深い GitLab の専門知識と豊富な DevSecOps の知識を兼ね備えた経験豊富なアドバイザーであり、GitLab 投資を最大化するお手伝いをします。CSA に期待できることを以下に示します:
+Customer Success Architect (CSA) は、深い GitLab の専門知識と豊富な DevSecOps の知識を兼ね備えた経験豊富なアドバイザーであり、GitLab 投資を最大化するお手伝いをします。CSA に期待できることを以下に示します:
 
 1. **戦略的エキスパートリーダーシップ**: CSA は豊富な GitLab および DevSecOps の専門知識を活かして戦略を推進します。具体的には:
    - お客様の具体的なニーズに合わせた最適なソリューションを設計する
@@ -93,9 +93,9 @@ CSA は、アライメントを確保して複雑な問題を解決するため�
 
 CSA を持つすべての顧客は、より広いユーザーベース向けに CSE チームがリードする[オンデマンドプログラム](/handbook/customer-experience/csm/segment/cse/)（ウェビナー、ハンズオンラボ、オフィスアワー）にもアクセスできます。
 
-## カスタマーサクセスアーキテクト（CSA）への割り当て方法
+## Customer Success Architect (CSA) への割り当て方法
 
-カスタマーサクセスアーキテクト（CSA）は、GitLab の Advanced および Signature サクセスティアに含まれています。各ティアには次のものが含まれます:
+Customer Success Architect (CSA) は、GitLab の Advanced および Signature Success Tier に含まれています。各ティアには次のものが含まれます:
 
 **Advanced ティア**
 
@@ -113,15 +113,15 @@ CSA を持つすべての顧客は、より広いユーザーベース向けに 
 
 CSA を始めるには:
 
-1. [GitLab にお問い合わせ](https://about.gitlab.com/services/)してサクセスティアについて学ぶ
-2. 共同でニーズに合った適切なサクセスティアを決定する
-3. Advanced または Signature サクセスティアを購入する
+1. [GitLab にお問い合わせ](https://about.gitlab.com/services/)して Success Tier について学ぶ
+2. 共同でニーズに合った適切な Success Tier を決定する
+3. Advanced または Signature Success Tier を購入する
 4. 専任 CSA がアカウントに割り当てられる
 
 CSA は一貫した連絡窓口として機能し、担当サポートエンジニア（Signature ティア）および Education チームと緊密に連携して GitLab での成功を支援します。
 
 ## CSA チームについて
 
-CSA チームは GitLab の[カスタマーサクセスマネジメント](/handbook/customer-experience/csm/)組織の一部です。CSA は CSM および CSE と連携して、GitLab の[サクセスティア](/handbook/customer-experience/success-services/)全体で統合された顧客体験を提供します。
+CSA チームは GitLab の[カスタマーサクセスマネジメント](/handbook/customer-experience/csm/)組織の一部です。CSA は CSM および CSE と連携して、GitLab の[Success Tier](/handbook/customer-experience/success-services/) 全体で統合された顧客体験を提供します。
 
 キャリア情報については、[CSA 職種ページ](/job-description-library/sales/customer-success-architect/)をご覧ください。

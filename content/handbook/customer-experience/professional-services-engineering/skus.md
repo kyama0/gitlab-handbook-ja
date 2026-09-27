@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-カスタマイズされていないエデュケーションサービスコース、Health Check、CI/CD および DevSecOps Workshop、Implementation/Migration QuickStart SKU、その他の out-of-the-box パッケージなど、一部のプロフェッショナルサービス提供物は標準 SKU として販売できます。プロフェッショナルサービス SKU は Zuora 内で簡単に注文に追加でき、カスタム SOW の作成は不要です。
+カスタマイズされていないエデュケーションサービスコース、Health Check、CI/CD および DevSecOps Workshop、Implementation/Migration QuickStart SKU、その他の そのまま利用できるパッケージなど、一部のプロフェッショナルサービス提供物は標準 SKU として販売できます。プロフェッショナルサービス SKU は Zuora 内で簡単に注文に追加でき、カスタム SOW の作成は不要です。
 
 <!-- **Important Note:** The GitLab System Administration Basics and GitLab Advanced System Administration courses should always be ordered using the custom SOW process so that we can review the customer's deployment variables and create a custom list of topics for them with the appropriate pricing depending on the scope of the topics needed. Once the trainings are scoped, they can be ordered using the new hourly rate Training SKU for ProServ Education Services in Zuora/SFDC.
 
@@ -41,7 +41,7 @@ Here are answers to anticipated frequently-asked questions.
 
 #### 計画中の SKU
 
-コンサルティングサービスは、サービスライフサイクルの最終ステップとして SKU 化されます。これは、サービスが正常に複数回提供された後で、価格、スコープ、タイムラインに必要な調整を加えるとともに、十分な product-market fit を確保するためです。
+コンサルティングサービスは、サービスライフサイクルの最終ステップとして SKU 化されます。これは、サービスが正常に複数回提供された後で、価格、スコープ、タイムラインに必要な調整を加えるとともに、十分な プロダクトマーケットフィット を確保するためです。
 
 ##### 新しい SKU のアイデアがありますか？
 

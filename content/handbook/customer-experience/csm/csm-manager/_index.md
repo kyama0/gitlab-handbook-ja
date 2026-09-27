@@ -124,7 +124,7 @@ SAE が CSM への移行側面を所有している一方で、CSM マネージ�
 
 <!-- blank line -->
 <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/Vm32wtRqkK8" title="Onboarding Metrics - Why and Where/How They Are Tracked - Gainsight" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe src="https://www.youtube.com/embed/Vm32wtRqkK8" title="オンボーディング指標 — 追跡する理由と場所／方法 — Gainsight" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->
 
