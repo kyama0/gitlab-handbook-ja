@@ -151,7 +151,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - [ ] プロジェクト目的とアプローチに対する理解の確認
 - [ ] Discovery & Planning セッションのスケジュール
-- [ ] [Iteration Cadences](../iteration-scheduling/_index.md) の確認
+- [ ] [イテレーションのケイデンス](../iteration-scheduling/_index.md) の確認
 - [ ] 明確なオーナーシップを伴うアクションアイテムのドキュメント化
 
 ---
