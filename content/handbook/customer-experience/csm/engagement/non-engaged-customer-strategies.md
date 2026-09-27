@@ -51,31 +51,31 @@ Gainsight には、エンゲージメントのない顧客向けのプレイブ�
 
 ##### サンプルメール 1
 
-Hi [XXX],
+[XXX] 様、
 
-I hope this finds you well. As an introduction, my name is [YYY], and I lead the global customer success management (CSM) team here at GitLab.
+お元気でお過ごしでしょうか。はじめまして。GitLab でグローバル Customer Success Management（CSM）チームを率いている [YYY] と申します。
 
-I wanted to get in touch to see how your experience with GitLab has been over the past year, and to connect on how we can partner to further enable your teams on GitLab. You have available to you a number of workshops and enablement sessions on DevOps best practices that your CSM can facilitate - we are finding our customers are reaching maturity and finding value faster as a result of engaging their broader teams in these sessions.
+この 1 年間の GitLab のご利用経験を伺い、GitLab を活用するチームの皆様をさらに支援するために、私たちがどのように協力できるかお話ししたく、ご連絡しました。お客様には、CSM が進行できる DevOps のベストプラクティスに関するワークショップやイネーブルメントセッションを多数ご用意しています。こうしたセッションに幅広いチームの皆様が参加することで、お客様がより早く成熟度を高め、価値を得られるようになっていると私たちは感じています。
 
-How would a 30-minute call over the next couple of weeks work to connect on progress to date and look at how we can support you and your team moving forward?
+今後数週間のうちに 30 分ほどお電話で、これまでの進捗を伺い、今後お客様とチームをどう支援できるかお話しできればと思います。ご都合はいかがでしょうか。
 
-Best,
+どうぞよろしくお願いいたします。
 
 [YYY]
 
 ##### サンプルメール 2
 
-Hello [XXX],
+[XXX] 様、
 
-My name is [YYY], and I am the director of global customer success management (CSM) team at GitLab.
+GitLab のグローバル Customer Success Management（CSM）チームでディレクターを務めている [YYY] と申します。
 
-I wanted to touch base to see how your usage of GitLab is going and what your experience has been over the past [ZZZ] months. I understand your primary business driver is {a} which will help you achieve {b}. Your CSM can help enable your teams to drive this successfully across your organization.
+GitLab のご利用状況と、過去 [ZZZ] ヶ月間のご利用経験を伺いたく、ご連絡しました。お客様にとって主な事業上の推進要因は {a} であり、それが {b} の達成につながると理解しています。CSM は、お客様の組織全体でこれを成功させられるよう、チームを支援できます。
 
-We would love to have a call with you to work together to plan your continued success, and discuss any questions or concerns you may have.
+今後も成果を上げ続けられるよう、ぜひお電話で一緒に計画を立て、ご質問や懸念事項についてお話しできれば幸いです。
 
-Thank you, and we look forward to building our partnership with you!
+ありがとうございます。今後もパートナーシップを築いていけることを楽しみにしています！
 
-Best,
+どうぞよろしくお願いいたします。
 
 [YYY]
 

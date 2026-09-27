@@ -15,19 +15,19 @@ stale: false
 
 定義された標準に関する関連情報については、この[記事](https://www.cisa.gov/news-events/alerts/2023/06/28/cisa-and-nsa-release-joint-guidance-defending-continuous-integrationcontinuous-delivery-cicd)を参照できます。
 
-## 1. main ブランチへの直接コミットではなくフィーチャーブランチを使う
+## 1. main ブランチへの直接コミットではなく機能ブランチを使う
 
-フィーチャーブランチを使うことは、開発を進めつつ[ソースコード](https://about.gitlab.com/solutions/source-code-management/)をクリーンに保つシンプルな方法です。たとえば、あるチームが最近 SVN から Git に移行したばかりであれば、トランクベースのワークフローに慣れているでしょう。Git を使う場合、開発者は取り組むものごとにブランチを作成し、マージ前にコントリビューターが容易に[コードレビュープロセス](https://about.gitlab.com/topics/version-control/what-is-code-review/)を開始できるようにすべきです。
+機能ブランチを使うことは、開発を進めつつ[ソースコード](https://about.gitlab.com/solutions/source-code-management/)をクリーンに保つシンプルな方法です。たとえば、あるチームが最近 SVN から Git に移行したばかりであれば、トランクベースのワークフローに慣れているでしょう。Git を使う場合、開発者は取り組むものごとにブランチを作成し、マージ前にコントリビューターが容易に[コードレビュープロセス](https://about.gitlab.com/topics/version-control/what-is-code-review/)を開始できるようにすべきです。
 
 ## 2. main ブランチ上のコミットだけでなく、すべてのコミットをテストする
 
 一部の開発者は、main ブランチにマージされたものだけをテストするように CI を設定しますが、これはソフトウェア開発ライフサイクルの中では遅すぎます。開発者からプロダクトマネージャーまで、全員が main ブランチのテストが常にグリーンであると確信できるべきです。新機能の開発を始める前に開発者が main をテストしなければならないのは非効率です。
 
-各コミットについて、SAST、Secret Detection、Dependency Scanning、Container Scanning などの[アプリケーションセキュリティ](https://docs.gitlab.com/ee/user/application_security/)スキャンをフィーチャーブランチに含めます。
+各コミットについて、SAST、Secret Detection、Dependency Scanning、Container Scanning などの[アプリケーションセキュリティ](https://docs.gitlab.com/ee/user/application_security/)スキャンを機能ブランチに含めます。
 
 ## 3. すべてのコミットですべてのテストを実行する。（テストの実行が 5 分を超える場合は、並列で実行できます）
 
-フィーチャーブランチで作業して新しいコミットを追加するときは、すぐにテストを実行します。テストに時間がかかる場合は、並列で実行してみてください。これをマージリクエストでサーバーサイドで行い、完全なテストスイートを実行します。開発用のテストスイートと、新しいバージョン専用のテストスイートがある場合は、\[並列\]テストをセットアップしてすべて実行する価値があります。
+機能ブランチで作業して新しいコミットを追加するときは、すぐにテストを実行します。テストに時間がかかる場合は、並列で実行してみてください。これをマージリクエストでサーバーサイドで行い、完全なテストスイートを実行します。開発用のテストスイートと、新しいバージョン専用のテストスイートがある場合は、\[並列\]テストをセットアップしてすべて実行する価値があります。
 
 これらを[各マージリクエストに表示](https://docs.gitlab.com/ee/user/application_security/#view-security-scan-information-in-merge-requests)させることもできます。
 

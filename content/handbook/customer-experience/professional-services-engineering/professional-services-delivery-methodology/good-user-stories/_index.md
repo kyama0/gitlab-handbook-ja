@@ -21,9 +21,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ユーザーストーリーの基本的な理解には、すべてのチームメンバーが次の点について明確であることが求められます。
 
-* [ ] 誰が？... As a \<user\>
-* [ ] 何を？... I want to \<action\>
-* [ ] なぜ？... So that \<result / benefit\>
+* [ ] 誰が？... \<user\> として
+* [ ] 何を？... \<action\> をしたい
+* [ ] なぜ？... \<result / benefit\> のために
 
 すべてのチームメンバーは、各ユーザーストーリーについて「誰が？」「何を？」「なぜ？」を説明できる必要があります。これを明示的に強調することは重要です。なぜなら各チームメンバーが各ストーリーの本質を理解していなければ、チーム全体として問題空間に対する必要な理解を欠くことになるからです。各チームメンバーがユーザーストーリーをどう実装するかを理解する必要はありませんが、各メンバーは本質を理解すべきであることに注意してください。たとえば、複雑なマルチステージの CI yaml ファイルを構築する詳細を知る必要はありませんが、私たちの顧客が Dev、Test、Integration、Security、Staging、Production のステージ構成を持ち、システムを段階的に安定化させていることを知る必要があります。
 
@@ -66,35 +66,35 @@ _どの SSO_？ SAML、OIDC、OAuth、JWT、その他？
 
 **_ポイントは、一般的な単語は特定性に欠けるということです。_** これを説明する例を見てみましょう。
 
-> As a credit card transaction,
+> クレジットカード取引として、
 >
-> We want activities to be logged,
+> 私たちは活動を記録したい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 
-このストーリーで、「activities」という単語はかなり一般的です。「activities」を _debits, credits, voided transactions_ などのより特定的な単語に置き換えられます。次のストーリーが得られます。
+このストーリーで、「活動」という単語はかなり一般的です。「活動」を _引き落とし、入金、取り消された取引_ などのより具体的な言葉に置き換えられます。次のストーリーが得られます。
 
-> As a credit card transaction,
+> クレジットカード取引として、
 >
-> We want _debits_ to be logged,
+> 私たちは _引き落とし_ を記録したい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **AND**
+> **そして**
 >
-> As a credit card transaction,
+> クレジットカード取引として、
 >
-> We want _credits_ to be logged,
+> 私たちは _入金_ を記録したい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **AND**
+> **そして**
 >
-> As a credit card transaction,
+> クレジットカード取引として、
 >
-> We want _voided transactions_ to be logged,
+> 私たちは _取り消された取引_ を記録したい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 
 特定性を提供することで、チームメンバーが実装に必要なものを現実的に評価できるようになり、さらに重要なことに、個人が同じユーザーストーリーを異なる方法で解釈するという曖昧さを避けられます。
 
@@ -104,11 +104,11 @@ _どの SSO_？ SAML、OIDC、OAuth、JWT、その他？
 
 もう一度、例を見てみましょう。
 
-> As a credit card user,
+> クレジットカード利用者として、
 >
-> I want voided transactions to be logged,
+> 取り消された取引を記録してほしい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 
 このストーリーの受け入れ基準の例:
 
@@ -121,89 +121,89 @@ _どの SSO_？ SAML、OIDC、OAuth、JWT、その他？
 * 取引は Diners Club カードをサポートしない
 * 500 ドルを超える取引はない
 
-各受け入れ基準を検討し、「誰がこれを望むのか？」と問えます。この質問への答えが「As a (type of user)」のユーザーになります。
+各受け入れ基準を検討し、「誰がこれを望むのか？」と問えます。この質問への答えが「（ユーザーの種類）として」のユーザーになります。
 
-次に「彼らはなぜそれを望むのか？」と問います。この質問への答えが「so that (some value is created)」の価値を特定します。
+次に「彼らはなぜそれを望むのか？」と問います。この質問への答えが「（何らかの価値が生まれる）ために」の価値を特定します。
 
-受け入れ基準の本体が「I want (something)」の部分を提供します。上記の受け入れ基準から派生できるユーザーストーリーは次のとおりです。
+受け入れ基準の本体が「（何か）をしたい」の部分を提供します。上記の受け入れ基準から派生できるユーザーストーリーは次のとおりです。
 
-> As a Visa credit card user,
+> Visa クレジットカード利用者として、
 >
-> I want US dollar voided transactions to be logged,
+> 米ドルでの取り消された取引を記録してほしい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **_AND_**
+> **_そして_**
 >
-> As a Visa credit card user,
+> Visa クレジットカード利用者として、
 >
-> I want Canadian dollar voided transactions to be logged,
+> カナダドルでの取り消された取引を記録してほしい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **_AND_**
+> **_そして_**
 >
-> As a MasterCard credit card user,
+> MasterCard クレジットカード利用者として、
 >
-> I want US dollar voided transactions to be logged,
+> 米ドルでの取り消された取引を記録してほしい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **_AND_**
+> **_そして_**
 >
-> As an American Express credit card user,
+> アメリカン・エキスプレスのクレジットカード利用者として、
 >
-> I want Canadian dollar voided transactions to be logged,
+> カナダドルでの取り消された取引を記録してほしい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **_AND_**
+> **_そして_**
 >
-> As a Diners Club credit card user,
+> Diners Club クレジットカード利用者として、
 >
-> I want to receive an error message denying the transaction,
+> 取引を拒否するエラーメッセージを受け取りたい。
 >
-> So that the user has a clear understanding that Diners Club is not supported.
+> そうすれば、Diners Club がサポートされていないことを明確に理解できる。
 >
-> **_ETC…_**
+> **_など…_**
 
 受け入れ基準を使ってより大きなユーザーストーリーを消化しやすいものに分割するのは、シンプルで素早く、バックログを洗練させて曖昧さを排除するのに役立ちます。これにより、プロダクトオーナーはより効果的に作業の優先順位を付けられるようになります。上記の例では、ビジネスニーズと各カードが提供する価値に応じて、Sprint 1 で Visa カードサポートを実装し、Sprint 2 で MasterCard サポートを実装し、アメリカン・エキスプレスカードサポートは Sprint 7 まで遅らせるかもしれません。
 
 **接続詞や接続語によるユーザーストーリー分割**
 
-このアプローチは、チームメンバーにユーザーストーリーをレビューし、**and、or、if、when、but、then、as-well-as** のような接続語を探すことを促すだけです。コンマやセミコロンも接続詞として機能することがあります。
+このアプローチは、チームメンバーにユーザーストーリーをレビューし、**そして、または、もし、〜するとき、しかし、その後、〜に加えて** のような接続語を探すことを促すだけです。コンマやセミコロンも接続詞として機能することがあります。
 
 接続語の両側にあるピースを分離することで、ユーザーストーリーを 2 つのユーザーストーリーに分割できると一般に仮定して安全です。たとえば:
 
-> As a credit card user,
+> クレジットカード利用者として、
 >
-> I want US dollar voided transactions to be logged, **as well** Canadian dollars, **but not** Euros,
+> 米ドル**に加えて**カナダドルでの取り消された取引を記録してほしい。**ただし**ユーロは除く。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 
 これを簡単に 3 つの異なるユーザーストーリーに変えられます。
 
-> As a credit card user,
+> クレジットカード利用者として、
 >
-> I want US dollar voided transactions to be logged,
+> 米ドルでの取り消された取引を記録してほしい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **_AND_**
+> **_そして_**
 >
-> As a credit card user,
+> クレジットカード利用者として、
 >
-> I want Canadian dollar voided transactions to be logged,
+> カナダドルでの取り消された取引を記録してほしい。
 >
-> So that the account ledger is up to date.
+> そうすれば、口座元帳を最新の状態に保てる。
 >
-> **_AND_**
+> **_そして_**
 >
-> As a credit card user,
+> クレジットカード利用者として、
 >
-> I want to receive an error message denying the transaction when trying to void a transaction in Euros,
+> ユーロでの取引を取り消そうとしたときに、取引を拒否するエラーメッセージを受け取りたい。
 >
-> So that the user has a clear understanding that Euros are not supported.
+> そうすれば、ユーロがサポートされていないことを明確に理解できる。
 >
 > もちろん、これらのそれぞれを今度は他の基準（Visa カードユーザー、MasterCard ユーザーなど）に基づいて分析できます。
 
