@@ -39,7 +39,7 @@ Verifiable Outcomes の概念的な紹介を先に見たい場合は、以下の
 
 サクセスプランは、顧客と共有する GitLab 顧客コラボレーショングループに保存されます。目標はエピックで、イニシアチブは Issue で管理します。[Success Plan Viewer](https://success-plan-viewer-c27524.gitlab.io/group) はこのグループから直接データを読み取ります — 追加のツールやパイプラインのセットアップは不要です。
 
-> **グループの作成場所:** 顧客コラボレーショングループは、[account-management](https://gitlab.com/gitlab-com/account-management) グループ下の各リージョン（**Western North America**、**Eastern North America**、**EMEA**、**APAC**）に作成します。不明な場合は CSM マネージャーにお問い合わせください。
+> **グループの作成場所:** 顧客コラボレーショングループは、[account-management](https://gitlab.com/gitlab-com/account-management) グループ下の各リージョン（**Western North America**、**Eastern North America**、**EMEA**、**APAC**）に作成します。不明な場合は CSM Manager にお問い合わせください。
 
 ---
 

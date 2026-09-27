@@ -418,7 +418,7 @@ CSMA が最初の 3 ヶ月のオンボーディング時に読んで集中すべ
 私たちの見込み客や顧客の多くは、リファレンスアーキテクチャに基づいて自分の Self Managed GitLab インストールを維持するオプションを選択します。顧客の立場に立って同じ可能性や課題を体験できるよう、CSMA が使用できる[共有 GitLab Omnibus 環境](/handbook/customer-experience/demo-systems/#shared-environments)があります。
 
 1. [共有 Omnibus インスタンスへのアクセスを取得するためのこれらの手順](/handbook/customer-experience/demo-systems/#access-shared-omnibus-instances)に従ってください
-1. [Get started administering GitLab](https://docs.gitlab.com/ee/administration/get_started.html) ガイドは優れた出発点です
+1. [GitLab の管理を開始する](https://docs.gitlab.com/ee/administration/get_started.html) ガイドは優れた出発点です
 1. インスタンスから [Service Ping](https://docs.gitlab.com/ee/development/internal_analytics/service_ping/) データファイルを[エクスポート](https://docs.gitlab.com/ee/administration/settings/usage_statistics.html#manually-upload-service-ping-payload)し、[Service ping analysis engine](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools/service-ping-analysis-engine)を通じてプロダクトの使用状況データを探索できます
 
 ## 答えを見つける

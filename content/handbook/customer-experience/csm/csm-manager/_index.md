@@ -248,7 +248,7 @@ CSM Manager は、各四半期においてチームの[四半期ビジネスレ�
 
 [CSM Manager QBR の詳細](/handbook/customer-experience/csm/csm-manager/qbr/)
 
-## Director/CSM Manager 1:1 ケイデンスでの Gainsight/顧客レビュー
+## Director/CSM Manager 1:1 ケイデンスでの Gainsight/顧客レビュー {#gainsightcustomer-review-in-directorcsm-manager-11-cadence}
 
 これは、地域の CSM Manager が CSM VP との週次 1:1 や、その他の CSM Manager の 1:1 ミーティングでも使用できる推奨ケイデンスです。
 

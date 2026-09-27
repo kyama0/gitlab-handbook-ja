@@ -1,6 +1,6 @@
 ---
 title: "CSM としての Issue 優先順位付けダッシュボードの使い方"
-description: "カスタマーサクセスマネージャーが顧客の成功を推進するために Sisense の Issue 優先順位付けダッシュボードをどのように活用するかについての重要事項。"
+description: "Customer Success Managers が顧客の成功を推進するために Sisense の Issue 優先順位付けダッシュボードをどのように活用するかについての重要事項。"
 upstream_path: /handbook/customer-experience/csm/issue-prioritization/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -19,7 +19,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## CSM がダッシュボードをどのように使用するか
 
-カスタマーサクセスマネージャーは、ダッシュボードをフィルタリングできます。これにより、CSM の担当アカウント全体の顧客から要求されたすべての Issue が表示されます。また、特定の顧客または見込み客でフィルタリングすることもできます。これにより、顧客固有の要求 Issue のビューが表示されます。
+Customer Success Manager は、ダッシュボードをフィルタリングできます。これにより、CSM の担当アカウント全体の顧客から要求されたすべての Issue が表示されます。また、特定の顧客または見込み客でフィルタリングすることもできます。これにより、顧客固有の要求 Issue のビューが表示されます。
 
 ### カデンスコール
 

@@ -1,6 +1,6 @@
 ---
 title: "CSM 2021 年 11 月 エンゲージメントサーベイ"
-description: "カスタマーサクセスマネージャー向けの GitLab 年次エンゲージメントサーベイの結果とアクション。"
+description: "Customer Success Managers 向けの GitLab 年次エンゲージメントサーベイの結果とアクション。"
 upstream_path: /handbook/customer-experience/csm/engagement-survey/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -27,5 +27,5 @@ GitLab は、チームメンバーが私たちの取り組みの何を良いと�
 ## アクションの実施と結果の報告方法
 
 1. [このエピックボード](https://gitlab.com/groups/gitlab-com/customer-success/-/epic_boards/14748?label_name[]=TAM) には、以下の各ポイントに関連するエピックが表示されています
-1. 各 Big Rock イニシアティブは、CSM マネージャーを DRI として エピック内に収容されています。CSM はコントリビュートが推奨されており、進捗は隔週のチームミーティングでチームに報告されます
+1. 各 Big Rock イニシアティブは、CSM Manager を DRI として エピック内に収容されています。CSM はコントリビュートが推奨されており、進捗は隔週のチームミーティングでチームに報告されます
 1. CSM セグメンテーションも エピック内に収容されており、ロールアウトの状況もチームミーティングで報告されます
