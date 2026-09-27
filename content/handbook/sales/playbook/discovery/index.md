@@ -2,11 +2,11 @@
 title: "効果的なディスカバリー"
 description: "効果的なディスカバリーは、顧客のニーズを徹底的に理解するために重要であり、GitLab の価値と差別化を魅力的で顧客中心の方法で効果的に明確化できる基盤を確立します"
 upstream_path: /handbook/sales/playbook/discovery/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -110,7 +110,7 @@ TED 質問モデル（下記参照）を活用して、見込み顧客が課題�
 
 #### Five Whys
 
-[Five Whys](/handbook/customer-success/csm/success-plans/questions-techniques/#five-whys) テクニックを使用して、根本原因を特定し「So what?」を理解してください。下の短い動画をチェックし、[Why Salespeople Should Ask The Same Question 5 Times In A Row](https://blog.hubspot.com/sales/the-five-whys-sales-strategy) ブログを読んでもっと学びましょう。
+[Five Whys](/handbook/customer-experience/csm/success-plans/questions-techniques/#five-whys) テクニックを使用して、根本原因を特定し「So what?」を理解してください。下の短い動画をチェックし、[Why Salespeople Should Ask The Same Question 5 Times In A Row](https://blog.hubspot.com/sales/the-five-whys-sales-strategy) ブログを読んでもっと学びましょう。
 
 <!-- blank line -->
 <figure class="video_container">

@@ -2,11 +2,11 @@
 title: "DevOps ソリューションリソース: DevSecOps"
 description: "GitLab が DevSecOps ソリューションをどのように実現するか、メッセージングや、マーケティングと営業を支援する主要リソースを含めて解説します。"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T16:45:41+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 **GitLab の DevSecOps 機能の顧客向け概要をお探しですか？ [DevSecOps ソリューション](https://about.gitlab.com/solutions/security-compliance/)をご覧ください**
@@ -398,7 +398,7 @@ GitLab のお客様 Arctic Engine は、GitLab のファズテストを使って
 
 GitLab の DevSecOps ワークフローを採用する道筋は、お客様の現状によって複数あります。次の図は採用シーケンスとシナリオ間の関係を示しています。
 
-![セキュアな導入パス](/images/handbook/customer-success/adoption-path-secure.png "セキュアな導入パス")
+![セキュアな導入パス](/images/handbook/customer-experience/adoption-path-secure.png "セキュアな導入パス")
 
 この表は、採用すべきユースケース、製品ドキュメントへのリンク、ユースケースに対応するサブスクリプションティアを示します。
 

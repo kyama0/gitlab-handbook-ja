@@ -2,11 +2,11 @@
 title: "テックスタックガイドリファレンス"
 description: "テックスタックガイドの作成と維持管理のためのリファレンス。"
 upstream_path: "/handbook/business-technology/tech-stack-guide/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T09:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-04-01T09:22:28+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## テックスタックガイドとは？
@@ -63,11 +63,11 @@ lastmod: "2025-04-01T09:22:28+00:00"
 
 ## テックスタックガイド例 #1: Thought Industries LMS テックスタックガイド
 
-[Thought Industries LMS テックスタックガイド](/handbook/customer-success/professional-services-engineering/education-services/lms/)
+[Thought Industries LMS テックスタックガイド](/handbook/customer-experience/professional-services-engineering/education-services/lms/)
 
 重要な注意事項：
 
-1. このテックスタックガイドは、Professional Services がアプリのビジネスオーナーであるため、[GitLab Professional Education Services](/handbook/customer-success/professional-services-engineering/education-services) ハンドブック内に配置されています
+1. このテックスタックガイドは、Professional Services がアプリのビジネスオーナーであるため、[GitLab Professional Education Services](/handbook/customer-experience/professional-services-engineering/education-services) ハンドブック内に配置されています
 2. Thought Industries Learning Management System の [テックスタック YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) の `handbook_link` キーがテックスタックガイドを参照しています
 
 ## テックスタックガイド例 #2: Zuora Billing

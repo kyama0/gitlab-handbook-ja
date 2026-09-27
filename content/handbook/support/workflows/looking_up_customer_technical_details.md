@@ -4,11 +4,11 @@ description: "Zendesk と Architecture インテグレーション、または A
 category: Handling tickets
 subcategory: Customer Info
 upstream_path: /handbook/support/workflows/looking_up_customer_technical_details/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-04-03T23:25:36+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 チケットで顧客の問題のトラブルシューティングを行う際、追加のコンテキストが必要になることがあります。
@@ -29,7 +29,7 @@ lastmod: "2025-04-03T23:25:36+00:00"
 チケットの作業中に、組織について記載する価値のある追加情報がある場合は、
 [組織の編集](/handbook/support/workflows/working-on-zendesk-content.md)に従って追加できます。
 
-以下で説明する [GitLab.com 内](#within-gitlabcom)の[Customer Collaboration Project](/handbook/customer-success/csm/customer-collaboration-project/)
+以下で説明する [GitLab.com 内](#within-gitlabcom)の[Customer Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/)
 の更新も検討してください。
 
 #### 過去のチケットを閲覧する
@@ -47,7 +47,7 @@ lastmod: "2025-04-03T23:25:36+00:00"
 
 #### アーキテクチャ図と Customer Collaboration Project
 
-Architecture Diagrams アプリは、顧客が Salesforce に [Customer Collaboration Project](/handbook/customer-success/csm/customer-collaboration-project/)
+Architecture Diagrams アプリは、顧客が Salesforce に [Customer Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/)
 の URL を入力していれば、関連する図の有無を自動的にチェックします。
 
 アプリにアクセスするには:
@@ -64,7 +64,7 @@ Architecture Diagrams アプリは、顧客が Salesforce に [Customer Collabor
 
 顧客の技術詳細を確認できるもう 1 つの場所は、GitLab.com 上の
 [Account Management グループ](https://gitlab.com/gitlab-com/account-management)です。
-顧客名で親グループ内を検索すれば、[Customer Collaboration Project](/handbook/customer-success/csm/customer-collaboration-project/)を
+顧客名で親グループ内を検索すれば、[Customer Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/)を
 見つけられるはずです。すべてではありませんが、ほとんどの Premium および Ultimate 顧客には
 1 つ存在しているはずです。
 

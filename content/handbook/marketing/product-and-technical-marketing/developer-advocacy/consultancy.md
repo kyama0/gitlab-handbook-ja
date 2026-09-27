@@ -3,9 +3,9 @@ linkTitle: "Consulting"
 title: "Developer Advocate のコンサルティングワークフロー"
 description: "Developer Advocacy チームのコンサルティングワークフローとリクエストについて学びます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/consultancy/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:36:34+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
 ---
@@ -46,7 +46,7 @@ Developer Advocate には、次のような支援が推奨されます。
 - ベストプラクティスのリソース、デモ、プロダクトツアー、ユースケース（[コンテンツライブラリ](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#content-library)を参照）
 - Slack [#sme-ai](https://gitlab.enterprise.slack.com/archives/C05GK6M7FBQ)でのフィールドチームのサポート
 
-顧客向けワークショップでは、部門横断的なコラボレーションが必要です。[Solution Architects](/handbook/solutions-architects/)が [GitLab Duo と AI の Proof of Value (PoV) ワークショップ](/handbook/solutions-architects/playbooks/pov/ai/)をリードします。彼らは [SA Demo Architects](/handbook/solutions-architects/center-of-excellence/demo-architecture/)と [Customer Success Management チーム](/handbook/customer-success/)から、ワークショップのアウトラインを作成する支援を受けます。Developer Advocate には、プログラミングワークショップ、IDE のセットアップとトラブルシューティング、そして顧客の（エンジニアリング）チームとともに開発者としてベストプラクティスを広く共有することによる支援が推奨されます。
+顧客向けワークショップでは、部門横断的なコラボレーションが必要です。[Solution Architects](/handbook/solutions-architects/)が [GitLab Duo と AI の Proof of Value (PoV) ワークショップ](/handbook/solutions-architects/playbooks/pov/ai/)をリードします。彼らは [SA Demo Architects](/handbook/solutions-architects/center-of-excellence/demo-architecture/)と [Customer Success Management チーム](/handbook/customer-experience/)から、ワークショップのアウトラインを作成する支援を受けます。Developer Advocate には、プログラミングワークショップ、IDE のセットアップとトラブルシューティング、そして顧客の（エンジニアリング）チームとともに開発者としてベストプラクティスを広く共有することによる支援が推奨されます。
 
 顧客からのフィードバックは、バグレポート、機能提案、ドキュメントの更新、ブログのチュートリアル、デモのストーリーなど、さまざまなものを生み出すきっかけになります。顧客とのエンゲージメント中は、必ず耳を傾け、メモを取るようにしてください。
 

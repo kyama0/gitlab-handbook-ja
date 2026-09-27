@@ -2,11 +2,11 @@
 title: Alliance パートナー
 description: "Alliance パートナー向けのサポート固有の情報"
 upstream_path: /handbook/support/partnerships/alliance/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-08-27T18:13:57+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## サポートへの問い合わせ
@@ -41,6 +41,6 @@ Slack ワークフローフォームでは以下の情報を尋ねます:
 - **どのようなアクションを行ってほしいですか?**
   - これはエスカレーションによって達成したい望ましい最終結果です。
 
-このフォームはチケットを特定し、そのチケット/ケースに対して [STAR](/handbook/customer-success/csm/escalations/) をトリガーします。
+このフォームはチケットを特定し、そのチケット/ケースに対して [STAR](/handbook/customer-experience/csm/escalations/) をトリガーします。
 
 **注** このプロセスは、緊急事態の登録が必要な場合にも使用されます。

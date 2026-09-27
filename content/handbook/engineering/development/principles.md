@@ -1,11 +1,11 @@
 ---
 title: エンジニアリング原則
 upstream_path: "/handbook/engineering/development/principles/"
-upstream_sha: "1099e381063485f55ad7088a1ce8b80dd7077696"
-translated_at: "2026-08-11T06:40:00+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-10T20:46:47+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## エンジニアリング原則
@@ -161,7 +161,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 - [フィーチャーフラグの使用](https://docs.gitlab.com/ee/development/feature_flags/index.html)
 - [コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)
 
-私たちはメトリクスを分析してトレンドを特定し、レトロスペクティブを開催し（例: [グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)、[イテレーションレトロスペクティブ](/handbook/engineering/devops/create/engineers/iteration/)）、[根本原因分析](/handbook/customer-success/professional-services-engineering/workflows/internal\root-cause-analysis/)を実施し、チームメンバーからフィードバックを受けることで改善の機会を見つけます。チームメンバーはプロセスを改善する機会を特定し解決策を提案することが奨励されており、その例として MR または Issue でこれらの機会を説明することが考えられます。
+私たちはメトリクスを分析してトレンドを特定し、レトロスペクティブを開催し（例: [グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)、[イテレーションレトロスペクティブ](/handbook/engineering/devops/create/engineers/iteration/)）、[根本原因分析](/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis/)を実施し、チームメンバーからフィードバックを受けることで改善の機会を見つけます。チームメンバーはプロセスを改善する機会を特定し解決策を提案することが奨励されており、その例として MR または Issue でこれらの機会を説明することが考えられます。
 
 誰でも新しいプロセスを提案したり既存のプロセスを改善したりすることで貢献できます。
 

@@ -2,11 +2,11 @@
 title: AI POV のスコープと受け入れ基準
 description: AI POV のスコープと受け入れ基準
 upstream_path: /handbook/solutions-architects/playbooks/pov/ai_bank/
-upstream_sha: a0d167307f5d32554672c5cf99e3f47abb35e1dc
-translated_at: "2026-09-08T23:21:17+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-08T01:01:41-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 その他の AI 関連リソース: [Lab](https://gitlab.com/gitlab-learn-labs/sample-projects/tanuki-racing) | *Demo* | *Guided Trial* | **POV** | *Education Services* | [Professional Services](https://about.gitlab.com/services/#advisory-services)
@@ -342,7 +342,7 @@ Dedicated インスタンスはアップデートが遅延スケジュールで�
 
 ##### 成功メトリクス
 
-定量的および定性的な観点から成功がどのように見えるかを定義します。DAP の価値を定量化するために、[Verifiable Outcomes フレームワーク](/handbook/customer-success/csm/success-plans/) (SMART: ベースラインメトリクス、成功基準、ビジネスインパクト、タイムライン) と [Business Value Consulting](/handbook/solutions-architects/sa-practices/business-value-consulting/) 手法を使用します。
+定量的および定性的な観点から成功がどのように見えるかを定義します。DAP の価値を定量化するために、[Verifiable Outcomes フレームワーク](/handbook/customer-experience/csm/success-plans/) (SMART: ベースラインメトリクス、成功基準、ビジネスインパクト、タイムライン) と [Business Value Consulting](/handbook/solutions-architects/sa-practices/business-value-consulting/) 手法を使用します。
 
 **ステークホルダーごとの成功基準:**
 
@@ -386,8 +386,8 @@ Dedicated インスタンスはアップデートが遅延スケジュールで�
 | DAP Pricing Message House | 顧客向け価格メッセージング | [Highspot](https://gitlab.highspot.com/) |
 | Value Stream Discovery | POV 前のベースラインメトリクスワークショップ | [ハンドブック](/handbook/solutions-architects/sa-practices/value-stream-discovery/) |
 | Business Value Consulting | ROI、TCO、Cost of Inaction フレームワーク | [ハンドブック](/handbook/solutions-architects/sa-practices/business-value-consulting/) |
-| Success Services (Duo Onboarding) | トライアル後の Duo Enterprise オンボーディング加速器 | [ハンドブック](/handbook/customer-success/success-services/) |
-| Customer Terrain Mapping | トピック領域別の構造化ディスカバリーセッション | [ハンドブック](/handbook/customer-success/customer-terrain-mapping/) |
+| Success Services (Duo Onboarding) | トライアル後の Duo Enterprise オンボーディング加速器 | [ハンドブック](/handbook/customer-experience/success-services/) |
+| Customer Terrain Mapping | トピック領域別の構造化ディスカバリーセッション | [ハンドブック](/handbook/customer-experience/customer-terrain-mapping/) |
 
 #### セルフサービス購入の適格性
 

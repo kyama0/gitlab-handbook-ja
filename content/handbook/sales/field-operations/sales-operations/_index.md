@@ -2,11 +2,11 @@
 title: 'セールスオペレーション'
 description: "セールスオペレーションは、システム、ポリシー、直接的なサポートを通じて、フィールド組織全体で新規および既存のプロセスを推進することを目的としています。"
 upstream_path: /handbook/sales/field-operations/sales-operations/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2024-10-29T23:31:43+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -20,7 +20,7 @@ lastmod: "2024-10-29T23:31:43+00:00"
 ## **密に協働するチーム**
 
 <div class="flex-row" markdown="0" style="height:80px">
-    <a href="/handbook/customer-success/" class="btn btn-purple-inv" style="width:20%;height:100%;margin:1px;display:flex;justify-content:center;align-items:center;">Customer Success</a>
+    <a href="/handbook/customer-experience/" class="btn btn-purple-inv" style="width:20%;height:100%;margin:1px;display:flex;justify-content:center;align-items:center;">Customer Success</a>
     <a href="/handbook/sales/field-operations/sales-systems/" class="btn btn-purple-inv" style="width:20%;height:100%;margin:1px;display:flex;justify-content:center;align-items:center;">Sales Systems</a>
     <a href="/handbook/sales/commissions/" class="btn btn-purple-inv" style="width:20%;height:100%;margin:1px;display:flex;justify-content:center;align-items:center;">Commissions</a>
     <a href="/handbook/marketing/marketing-operations/" class="btn btn-purple-inv" style="width:20%;height:100%;margin:1px;display:flex;justify-content:center;align-items:center;">Marketing Operations</a>

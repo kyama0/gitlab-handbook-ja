@@ -2,11 +2,11 @@
 title: "Renewals Operations チーム"
 description: "Renewals Operations チームのハンドブックページでは、私たちのミッション、戦略、責任、プロセスをカバーしています。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/renewal-ops/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-10T14:06:37+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
@@ -21,7 +21,7 @@ Renewal Operations チームは、Net Revenue Retention を増加させるため
 - ツールとシステム内で例外的なレベルのデータ品質を確保する
 - アカウント管理の有効性を向上させるためのプロセス改善を特定、構築、反復する
 
-上記のイニシアチブをどのように推進するかについての詳細は、[Renewals Managers - What we Do](/handbook/customer-success/renewals-managers/what/) ページを参照してください。
+上記のイニシアチブをどのように推進するかについての詳細は、[Renewals Managers - What we Do](/handbook/customer-experience/renewals-managers/what/) ページを参照してください。
 
 以下は、4つのパートからなる [Renewal Operations Strategy](https://docs.google.com/document/d/1W63d98cMVXfMvqAey8vbd2JRlfOWHLK-Yu23hhZQGTI/edit#heading=h.xion0u9mlv5c) の内訳です。
 
@@ -53,7 +53,7 @@ Renewal Operations チームは、Net Revenue Retention を増加させるため
 
 Renewal Operations は、Renewals、Success、Sales Teams: Directors & Area Sales Managers、Renewals Managers、Account Executives、Strategic Account Executives をサポートし、Customer Success Operations、Sales Operations、Sales Strategy と協力します。
 
-[**Renewals Team**](/handbook/customer-success/renewals-managers/home/) は Renewal Operations の直接的な焦点であり、私たちの主要な顧客は Renewals リーダーです。インサイト、戦略、実行可能なキャンペーンは、Renewal Managers と Account Executives が更新プロセスを支援するために構築されています。Renewals Operations は、Account Teams が管理する大量の今後の更新に対してインテリジェントなインサイトを提供し、より集中的なアプローチを可能にします。
+[**Renewals Team**](/handbook/customer-experience/renewals-managers/home/) は Renewal Operations の直接的な焦点であり、私たちの主要な顧客は Renewals リーダーです。インサイト、戦略、実行可能なキャンペーンは、Renewal Managers と Account Executives が更新プロセスを支援するために構築されています。Renewals Operations は、Account Teams が管理する大量の今後の更新に対してインテリジェントなインサイトを提供し、より集中的なアプローチを可能にします。
 
 **Customer Success Operations** は、Renewal Operations チームがインサイトとエンゲージメント戦略を特定するために使用する、関連する製品の利用データと顧客の健全性データを整理し収集するのに役立ちます。たとえば、製品の採用をサポートするために Gainsight で自動化された one-to-many キャンペーンを作成することです。
 
@@ -72,8 +72,8 @@ Renewal Operations は以下を支援できます。
 - テリトリーアサインメントの質問または修正（[テリトリー変更リクエストについてはこちらの手順に従ってください](/handbook/sales/field-operations/gtm-resources/rules-of-engagement/#territory-ownership-renewals-managers)）
 - Renewal Manager オポチュニティアサインメント
 - Renewal Ownership（ティア）の再割り当て
-- [Renewal Forecast](/handbook/customer-success/renewals-managers/what/#forecasting) フィールドの更新
-- [Closed Details](/handbook/customer-success/renewals-managers/what/#analytics) の更新
+- [Renewal Forecast](/handbook/customer-experience/renewals-managers/what/#forecasting) フィールドの更新
+- [Closed Details](/handbook/customer-experience/renewals-managers/what/#analytics) の更新
 - Renewal Forecast のガイダンス
 - サブスクリプションレビュー
 - Renewal Manager オポチュニティ分割
@@ -86,7 +86,7 @@ Renewal Operations は以下を支援できます。
 
 ### 報酬
 
-報酬関連の質問については、[内部サポートリクエスト](/handbook/sales/field-operations/requesting-internal-support/)経由で Sales Comp にお問い合わせください。Renewal Operations は Churn 例外リクエストを承認しません。Churn 例外をリクエストするには、[こちらに概説されているプロセスに従ってください](/handbook/customer-success/renewals-managers/how/#churn-exceptions)。
+報酬関連の質問については、[内部サポートリクエスト](/handbook/sales/field-operations/requesting-internal-support/)経由で Sales Comp にお問い合わせください。Renewal Operations は Churn 例外リクエストを承認しません。Churn 例外をリクエストするには、[こちらに概説されているプロセスに従ってください](/handbook/customer-experience/renewals-managers/how/#churn-exceptions)。
 
 ## Renewal Operations プロセスのケイデンス
 

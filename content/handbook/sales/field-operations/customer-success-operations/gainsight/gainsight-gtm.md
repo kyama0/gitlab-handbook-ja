@@ -2,11 +2,11 @@
 title: "Gainsight: Go-To-Market 技術ドキュメント"
 description: "このページは、Gainsight に関連するすべての技術ドキュメントを扱う GitLab ハンドブックの主要ページです。ツールのさまざまな機能と、統合と自動化のニーズを達成するために各機能をどのように使用するかが含まれています。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-gtm/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## Gainsight
@@ -136,7 +136,7 @@ Activity Timeline は Gainsight から Salesforce に自動的に同期されま
 
 ### Push to SFDC
 
-さまざまなデータポイントが Gainsight から Salesforce にプッシュバックされます。Gainsight から Salesforce に同期されるフィールドとオブジェクトの完全なリストについては、[Using Gainsight Data in SFDC](/handbook/customer-success/product-usage-data/using-gainsight-data-in-sfdc/) を参照してください。
+さまざまなデータポイントが Gainsight から Salesforce にプッシュバックされます。Gainsight から Salesforce に同期されるフィールドとオブジェクトの完全なリストについては、[Using Gainsight Data in SFDC](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/) を参照してください。
 
 このルールはまた、誰かが Gainsight で連絡先を marketing communication からオプトアウトした人としてマークした場合、および Gainsight で作成されて Salesforce に存在しない連絡先について、Salesforce の連絡先にプッシュバックします。
 

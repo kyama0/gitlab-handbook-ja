@@ -2,11 +2,11 @@
 title: ASE - アカウント業務をどこに記録し管理するか
 description: ASE がチケット、Issue、その他の場所でアカウント業務を追跡・管理する方法に関するガイド
 upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-tickets-or-issues/
-upstream_sha: c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-09T23:51:37+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## はじめに
@@ -24,7 +24,7 @@ lastmod: "2025-01-09T23:51:37+00:00"
 
 ## チケットと Issue の使い分け
 
-多くの ASE アカウントは [Customer Collaboration Project](/handbook/customer-success/csm/customer-collaboration-project/) を持っており、それを通してあなたと協業したいと考えるかもしれません。どの業務を Collaboration Project で行い、どの業務をサポートチケットで行うべきでしょうか。
+多くの ASE アカウントは [Customer Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/) を持っており、それを通してあなたと協業したいと考えるかもしれません。どの業務を Collaboration Project で行い、どの業務をサポートチケットで行うべきでしょうか。
 
 - **リアクティブ業務**: 製品およびライセンスに関する問題や質問は、サポートチケットで追跡するのが最適です
 - **プロアクティブ業務**:
@@ -35,7 +35,7 @@ lastmod: "2025-01-09T23:51:37+00:00"
 
 担当アカウントが Collaboration Project を通してあなたと協業したい場合：
 
-1. [Customer Collaboration Project](/handbook/customer-success/csm/customer-collaboration-project/)（`https://gitlab.com/gitlab-com/account-management` グループ配下にあります）で、そのアカウント用に `ASE Work - ACCOUNT` という名前のラベルを作成します。
+1. [Customer Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/)（`https://gitlab.com/gitlab-com/account-management` グループ配下にあります）で、そのアカウント用に `ASE Work - ACCOUNT` という名前のラベルを作成します。
 1. そのラベルを購読します。
 1. 顧客の連絡先とアカウントチームに、あなたに貢献してほしい Issue や Epic にそのラベルを付けるよう通知します。
 1. プロジェクト内に `ASE Work - ACCOUNT` ラベルが付いたアイテムだけを表示する Issue ボードの作成を検討します。ボードを使ってアイテムを優先度、ステージ、その他そのアカウントとの業務にとって意味のあるカテゴリで並び替えられます。
@@ -76,7 +76,7 @@ lastmod: "2025-01-09T23:51:37+00:00"
 
 ##### これらはどこに文書化すべきか？
 
-各アカウントとの業務記録を顧客とアカウントチームが容易に参照できるようにするため、アカウントの [Collaboration Project](/handbook/customer-success/csm/customer-collaboration-project/) を使用してください。
+各アカウントとの業務記録を顧客とアカウントチームが容易に参照できるようにするため、アカウントの [Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/) を使用してください。
 
 1. 通話用の Issue を作成します:
    1. \<YYYY-MM-DD> Call: \<Purpose> という名前を付けます

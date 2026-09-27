@@ -3,11 +3,11 @@ description: "GitLab がソフトウェアデリバリー自動化ソリュー�
 
 title: "DevSecOps ソリューションリソース: 自動化されたソフトウェアデリバリー"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T16:30:53+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## GitLab の自動化されたソフトウェアデリバリー機能の顧客向け概要をお探しですか？
@@ -342,4 +342,4 @@ GitOps 導入を支援するアドバイザリ／コンサルティングサー�
 
 サービスを提案する際は、PS とのエンゲージメントの価値を確立するための [Services Pitch Deck](https://docs.google.com/presentation/d/1CFR8_ZyE9r4Dk_mjoWGe4ZkhtBimSdN0pylIPu-NAeU/edit#slide=id.g2823c3f9ca_0_9) を活用できます。その他のサービスは、[プロフェッショナルサービス提供の全リスト](https://about.gitlab.com/services/) をご覧ください。
 
-詳しくは [プロフェッショナルサービス Slack チャンネル](/handbook/customer-success/professional-services-engineering/working-with/#slack) で @em までお問い合わせください。
+詳しくは [プロフェッショナルサービス Slack チャンネル](/handbook/customer-experience/professional-services-engineering/working-with/#slack) で @em までお問い合わせください。

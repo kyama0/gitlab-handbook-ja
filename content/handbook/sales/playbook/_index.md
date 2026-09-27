@@ -2,11 +2,11 @@
 title: "Enterprise Sales"
 description: "GitLab の Enterprise Sales 部門は、戦略的および大規模な見込み顧客と顧客に対し、GitLab とのジャーニー全体を通じて最大限の価値を提供することに注力しています。"
 upstream_path: /handbook/sales/playbook/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -38,7 +38,7 @@ Enterprise Sales 部門は [GitLab Sales](/handbook/sales/#welcome-to-the-sales-
 |拡張ディールチームメンバー | 協業方法 |
 |---------------------------|---------------------|
 |[Channel Account Manager (CAM)](https://partners.gitlab.com/English/directory/):| パートナーランドスケープを理解しマッピング: 機会と協業、オンボーディングとリクルートのためのパートナーを提案、システムインテグレーターをプランに組み込む、[Partner Directory](https://partners.gitlab.com/English/directory/) で現在のパートナーを表示 |
-|[Professional services](/handbook/customer-success/professional-services-engineering/working-with/):| あなたのソリューションや顧客のニーズを、このチームが提供するトレーニング、教育、採用、または展開サポートにマッチさせる。または、見込み顧客や顧客にサービスを提案する手助けに招き入れる。|
+|[Professional services](/handbook/customer-experience/professional-services-engineering/working-with/):| あなたのソリューションや顧客のニーズを、このチームが提供するトレーニング、教育、採用、または展開サポートにマッチさせる。または、見込み顧客や顧客にサービスを提案する手助けに招き入れる。|
 | [Regional Marketing](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support) とアカウントベースマーケティング:| テリトリー、アカウント、パイプライン生成の戦略的計画にこのチームを含める。イベントやウェビナーを開催・ホストする計画を立てる際、関連する第三者イベントに参加する。スケジュールを把握: [GitLab event site](https://about.gitlab.com/events/)、[All marketing activities (internal)](https://docs.google.com/spreadsheets/d/1ni6gKeWhjtrNppMdYvPESsCRjDbfVdYjTNtUtcNBFGg/edit#gid=571560493)。優先アカウントを [Account-based marketing (ABM) サポート](/handbook/marketing/account-based-marketing/) にノミネート。Slack: #abmteam、#emea_marketing (EMEA)、#regional-partner-marketing (Global)|
 | Sales leaders と executives | アカウントのエグゼクティブスポンサーシップを提供、[ミーティングへの e-group メンバー参加をリクエスト](/handbook/eba/#customer-prospect-and-partner-meetings-with-an-e-group-member)、または [CEO がミーティングに参加することをリクエスト](/handbook/eba/ceo-scheduling/#how-to-request-a-meeting-with-ceo) する必要があるかもしれません |
 |[Sales operations と deal desk:](/handbook/sales/field-operations/sales-operations/deal-desk/) |ディールの構造化とクロージングのため、特に非標準見積もりに対しては、Deal Desk と頻繁に作業します。#sales-support は、私たちのプロセスを通じてディールを進めることに関する緊急の質問の go-to チャネルでもあります。 |

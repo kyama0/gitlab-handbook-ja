@@ -1,11 +1,11 @@
 ---
 title: "セールスプレイ: GitOps によるインフラストラクチャ自動化"
 upstream_path: /handbook/marketing/sales-plays/gitops/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -305,7 +305,7 @@ GitOps のロールアウトを支援するアドバイザリー/コンサルテ
 
 サービスをポジショニングする際には、[Services Pitch Deck](https://docs.google.com/presentation/d/1CFR8_ZyE9r4Dk_mjoWGe4ZkhtBimSdN0pylIPu-NAeU/edit#slide=id.g2823c3f9ca_0_9) を使用して PS と関わる価値を確立するのに役立てることができます。その他のサービスは、[プロフェッショナルサービス提供の完全一覧](https://about.gitlab.com/services/)で確認できます。
 
-詳細は、[professional services Slack チャネル](/handbook/customer-success/professional-services-engineering/working-with/#slack)で @em と話してください。
+詳細は、[professional services Slack チャネル](/handbook/customer-experience/professional-services-engineering/working-with/#slack)で @em と話してください。
 
 ### ウェビナー、e-book、ホワイトペーパー、動画 {#resources-list}
 

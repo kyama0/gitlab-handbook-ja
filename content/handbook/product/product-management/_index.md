@@ -1,11 +1,11 @@
 ---
 title: GitLab プロダクトマネジメント
 upstream_path: /handbook/product/product-management/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T08:02:21+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 このドキュメントでは、プロダクトマネジメントの業務内容、関わり方の場、タイミング、そしてプロダクトマネジメントチームとの関わり方について説明します。
@@ -105,15 +105,15 @@ The following ~customer is interested in this capability
 
 #### 顧客とのコラボレーションプロジェクト
 
-Customer Success Manager が割り当てられている顧客には、通常 GitLab.com 上に [コラボレーションプロジェクト](/handbook/customer-success/csm/customer-collaboration-project/) があり、GitLab チームと顧客のチーム双方がアクセスできる場所で、情報の共有、顧客の詳細のドキュメント化、Issue のトラッキングに使用されます。
+Customer Success Manager が割り当てられている顧客には、通常 GitLab.com 上に [コラボレーションプロジェクト](/handbook/customer-experience/csm/customer-collaboration-project/) があり、GitLab チームと顧客のチーム双方がアクセスできる場所で、情報の共有、顧客の詳細のドキュメント化、Issue のトラッキングに使用されます。
 
 通常、CSM はメイン Issue を維持し、または [CS-Tool - TAM issue tracker](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools/tam-issue-tracking) を有効化します。これは顧客が関心のあるすべての機能リクエストを、公開 GitLab Issue へのリンクとともにリストアップします。
 
-顧客が機能に興味を示したとき、CSM は公開 GitLab Issue にそれを記録し、また [顧客のコラボレーションプロジェクト](/handbook/customer-success/csm/customer-collaboration-project/) のメイン機能トラッキング Issue にもエントリとして追加する必要があります。
+顧客が機能に興味を示したとき、CSM は公開 GitLab Issue にそれを記録し、また [顧客のコラボレーションプロジェクト](/handbook/customer-experience/csm/customer-collaboration-project/) のメイン機能トラッキング Issue にもエントリとして追加する必要があります。
 
 機能トラッキング Issue は、顧客の製品ニーズに関する唯一の情報源として、優先順位 (後述) とマイルストーンを更新し、定期的に維持されるべきです。これは過去に提供された機能リクエストのメトリクスをレビューするためにも使用できます。
 
-特定の機能リクエストについて顧客との議論が多い場合、その顧客 [コラボレーションプロジェクト](/handbook/customer-success/csm/engagement/) に Issue を作成し、その Issue をメイン GitLab Issue 上の関連 Issue としてリストアップしてください。これは、メインの製品 Issue に対する顧客の関心の別のシグナルとなり、また顧客と内部 GitLab チームメンバーが彼らのニーズと懸念について議論することも可能にします。
+特定の機能リクエストについて顧客との議論が多い場合、その顧客 [コラボレーションプロジェクト](/handbook/customer-experience/csm/engagement/) に Issue を作成し、その Issue をメイン GitLab Issue 上の関連 Issue としてリストアップしてください。これは、メインの製品 Issue に対する顧客の関心の別のシグナルとなり、また顧客と内部 GitLab チームメンバーが彼らのニーズと懸念について議論することも可能にします。
 
 #### 機能リクエストのエスカレーション方法
 
@@ -121,7 +121,7 @@ Issue の作成 / コメントのプロセスを経たが反応がない場合�
 
 顧客が高優先度の Issue (作業停止につながるバグや、期限を守るために必要な機能など) を特定した場合、上記の顧客機能リクエストのログ作成と追跡の期待されるステップに従い、GitLab Issue に顧客の関心を追加し、コラボレーションプロジェクト Issue に含めます。さらに、[該当グループを担当する](/handbook/product/product-management/#which-product-manager-should-i-contact) [プロダクトマネージャーに連絡](/handbook/product/product-management/#where-to-reach-product-managers) し、直接議論してください。高優先度の一般的な目安は、顧客がその特定の機能をできるだけ早く必要としていることです。
 
-**Critical Priority Requests** は非常にまれですが、発生した場合は Product と Engineering の両者が合意し、CSM がリクエストをファシリテートします。顧客が特定の機能なしで GitLab を継続利用できない場合、CSM は [アカウントのトリアージを開始](/handbook/customer-success/csm/health-score-triage/) し、Issue で顧客の関心を示すプロセスに従い、Product チームと Engineering チームと定期的なチェックインを設定して、機能のステータス、期待値、潜在的なセカンダリプランを評価します。製品およびエンジニアリングプロセスについては、[critical customer merge request](https://docs.gitlab.com/development/code_review/#customer-critical-merge-requests) の詳細を参照してください。
+**Critical Priority Requests** は非常にまれですが、発生した場合は Product と Engineering の両者が合意し、CSM がリクエストをファシリテートします。顧客が特定の機能なしで GitLab を継続利用できない場合、CSM は [アカウントのトリアージを開始](/handbook/customer-experience/csm/health-score-triage/) し、Issue で顧客の関心を示すプロセスに従い、Product チームと Engineering チームと定期的なチェックインを設定して、機能のステータス、期待値、潜在的なセカンダリプランを評価します。製品およびエンジニアリングプロセスについては、[critical customer merge request](https://docs.gitlab.com/development/code_review/#customer-critical-merge-requests) の詳細を参照してください。
 
 ### 製品チームはなぜ解決策ではなく問題について尋ねることを好むのか?
 
@@ -239,7 +239,7 @@ PM に連絡する前に、[PM Customer Meeting Briefing Document](https://docs.
 
 ### EBR の準備
 
-CSM は顧客と定期的に [Executive Business Reviews](/handbook/customer-success/csm/ebr/) を開催し、しばしばプロダクトマネージャーの参加を要請します。CSM が Product の参加を求めるとき、(グループの Slack チャンネルで) PM に日付、時刻、希望するトピックとともに連絡します。
+CSM は顧客と定期的に [Executive Business Reviews](/handbook/customer-experience/csm/ebr/) を開催し、しばしばプロダクトマネージャーの参加を要請します。CSM が Product の参加を求めるとき、(グループの Slack チャンネルで) PM に日付、時刻、希望するトピックとともに連絡します。
 
 CSM は EBR の準備に PM を巻き込み、内容、タイミング、望ましい成果の期待値を完全に確立できるよう協力します。
 

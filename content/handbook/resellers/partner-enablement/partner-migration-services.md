@@ -1,11 +1,11 @@
 ---
 title: "チャネルパートナーマイグレーションサービス"
 upstream_path: /handbook/resellers/partner-enablement/partner-migration-services/
-upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-21T09:08:15+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -25,7 +25,7 @@ _このセクションのリンクについては、先に [GitLab Partner Porta
 
 1. 移行のスコープ／サイズ: ユーザー数は何人か? コードリポジトリはいくつか? グループ構造はそのまま維持するのか、それとも移行を機に GitLab 内の「未使用プロジェクトを整理」するのか? GitLab インスタンスおよび／またはグループ（サブグループを含む）のすべてのプロジェクトに関する情報を収集するために実行できるオープンソーススクリプト [GitLab Evaluate](https://gitlab.com/gitlab-org/professional-services-automation/tools/utilities/evaluate) の実行を検討してください。また、プロジェクトストレージ使用量の CSV レポートを作成する [Project storage report](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools/project-storage-report) の実行も検討してください。単一グループおよびセルフマネージドインスタンス上のすべてのプロジェクトのレポートがサポートされています。
 1. 顧客のビジネスを理解する: 移行すべきアーティファクトは何か? ユーザー、Issue、マージリクエストの監査コンプライアンス履歴は会社にとって重要か? それとも Git コードリポジトリの移行だけで十分か? お客様が移行に対して機密と考えるデータは何か? [GitLab Partner Led Optimization Service](https://partners.gitlab.com/prm/English/s/assets?collectionId=55025&id=459892&renderMode=Collection) を最初のステップとしたほうがよいか?
-1. ヘルスチェック: インポートデータソースは健全か、それとも [Readiness Assessment](/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/readiness/) で GitLab ソースのヘルス状況を確認するべきか? クローンできない Git リポジトリや、クリーンアップが必要なリポジトリはあるか? 長期にわたる履歴を持つ大規模なコードリポジトリはあるか?
+1. ヘルスチェック: インポートデータソースは健全か、それとも [Readiness Assessment](/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/readiness/) で GitLab ソースのヘルス状況を確認するべきか? クローンできない Git リポジトリや、クリーンアップが必要なリポジトリはあるか? 長期にわたる履歴を持つ大規模なコードリポジトリはあるか?
 1. 移行後のニーズ: 移行および GitLab または GitLab.com への採用の一環として構成が必要な、アクセス制御や Single-Sign-On (SSO) など、他のコンサルティング上の考慮事項はあるか?
 
 技術的なスコープ／サイズに関する会話をお客様と行った後、GitLab パートナーは [GitLab Channel Service Packages](https://partners.gitlab.com/prm/English/c/Channel_Service_Packages) が役立つと感じるでしょう。これらにはテンプレートのデータシート、Statement of Work (SOW)、プロジェクトプランが含まれています。GitLab パートナーは、これらの GitLab Channel Service Packages をお客様の業務向けのテンプレートとして自由に利用できます。独自のテクニカルサービスオファリングに合わせてリブランド・リワードすることが推奨されます。表には、`Aligned Partner Certification` 列でパートナーが保有すべき認定に関する GitLab の期待も示されています。
@@ -99,7 +99,7 @@ direct transfer が対応できない、または対応しない場合のため�
 
 file exports と同様に、direct transfer が対応できない／対応しない場合のために、[Congregate](https://gitlab-org.gitlab.io/professional-services-automation/tools/migration/congregate/) があります。
 
-これは [GitLab Professional Services](#gitlab-professional-migration-services) が使用しており、GitLab で最も成熟した移行ソリューションで、多くのオプションをサポートします。**SaaS への移行は、GitLab SaaS（マルチテナント）データへのアクセスが制限されているため、GitLab PS の関与が必要であることに注意してください。** 後者に関する詳細は [こちら](/handbook/customer-success/csm/risk-mitigation/self-managed-vs-saas/) で確認できます。
+これは [GitLab Professional Services](#gitlab-professional-migration-services) が使用しており、GitLab で最も成熟した移行ソリューションで、多くのオプションをサポートします。**SaaS への移行は、GitLab SaaS（マルチテナント）データへのアクセスが制限されているため、GitLab PS の関与が必要であることに注意してください。** 後者に関する詳細は [こちら](/handbook/customer-experience/csm/risk-mitigation/self-managed-vs-saas/) で確認できます。
 
 Congregate について重要な点:
 

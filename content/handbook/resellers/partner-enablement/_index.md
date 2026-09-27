@@ -1,11 +1,11 @@
 ---
 title: "パートナーテクニカルプリセールスイネーブルメント"
 upstream_path: /handbook/resellers/partner-enablement/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:22:16+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -24,7 +24,7 @@ lastmod: "2026-09-18T21:20:33+02:00"
 
 ## 基礎知識
 
-[新規 GitLab.com 顧客向け GitLab クイックスタート](/handbook/customer-success/customer-onboarding/)
+[新規 GitLab.com 顧客向け GitLab クイックスタート](/handbook/customer-experience/customer-onboarding/)
 
 - GitLab.com、Namespaces、Groups、Projects、Members、GitLab Customer Portal の基本に関する優れた入門書を提供します。
 
@@ -191,21 +191,21 @@ GitLab プラクティスエンジニア向けのデリバリードキュメン�
 
 ### Professional Services チームハンドブックのクイックリンク
 
-[Professional Services チームハンドブックページ](/handbook/customer-success/professional-services-engineering/) から最も人気のあるトピックへのリンクは以下のとおりです。
+[Professional Services チームハンドブックページ](/handbook/customer-experience/professional-services-engineering/) から最も人気のあるトピックへのリンクは以下のとおりです。
 
 - [Marketed Offerings](https://about.gitlab.com/services/)
-- [Offerings Framework & Delivery Kits](/handbook/customer-success/professional-services-engineering/framework/)
-- [Positioning](/handbook/customer-success/professional-services-engineering/positioning/)
-- [Professional Services Methodology](/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/)
-- [Selling](/handbook/customer-success/professional-services-engineering/selling/)
-- [Working with PS](/handbook/customer-success/professional-services-engineering/working-with/)
-- [SKUs](/handbook/customer-success/professional-services-engineering/skus/)
-- [Education Services](/handbook/customer-success/professional-services-engineering/education-services/)
-- [GitLab Technical Certifications](/handbook/customer-success/professional-services-engineering/gitlab-technical-certifications/)
-- [Partner Collaboration](/handbook/customer-success/professional-services-engineering/partner-collaboration/)
-- [Sales enablement](/handbook/customer-success/professional-services-engineering/sales-enablement/)
-- [Professional Services Operations](/handbook/customer-success/professional-services-engineering/professional-services-operations/)
-- [Escalation Process](/handbook/customer-success/csm/escalations/)
+- [Offerings Framework & Delivery Kits](/handbook/customer-experience/professional-services-engineering/framework/)
+- [Positioning](/handbook/customer-experience/professional-services-engineering/positioning/)
+- [Professional Services Methodology](/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/)
+- [Selling](/handbook/customer-experience/professional-services-engineering/selling/)
+- [Working with PS](/handbook/customer-experience/professional-services-engineering/working-with/)
+- [SKUs](/handbook/customer-experience/professional-services-engineering/skus/)
+- [Education Services](/handbook/customer-experience/professional-services-engineering/education-services/)
+- [GitLab Technical Certifications](/handbook/customer-experience/professional-services-engineering/gitlab-technical-certifications/)
+- [Partner Collaboration](/handbook/customer-experience/professional-services-engineering/partner-collaboration/)
+- [Sales enablement](/handbook/customer-experience/professional-services-engineering/sales-enablement/)
+- [Professional Services Operations](/handbook/customer-experience/professional-services-engineering/professional-services-operations/)
+- [Escalation Process](/handbook/customer-experience/csm/escalations/)
 
 ## 追加リソース
 

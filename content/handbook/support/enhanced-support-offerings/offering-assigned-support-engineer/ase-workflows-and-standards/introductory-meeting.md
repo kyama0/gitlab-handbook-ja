@@ -2,11 +2,11 @@
 title: 紹介ミーティング
 description: ASE と新規アカウント間の紹介ミーティングの目的、構成、目標、およびミーティングを成功させるためのヒント
 upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting/
-upstream_sha: c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-04-04T15:43:07-10:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要と目的
@@ -66,7 +66,7 @@ lastmod: "2025-04-04T15:43:07-10:00"
    1. 現在どのように製品を使っているのか？
    1. 何が順調で、何が順調ではないか？
    1. GitLab を使用することの目標は何か？
-   1. [Collaboration Project](../../../../customer-success/csm/customer-collaboration-project.html)を使って長期的な計画を追跡することが意味を成すかどうかを判断する
+   1. [Collaboration Project](/handbook/customer-experience/csm/customer-collaboration-project/)を使って長期的な計画を追跡することが意味を成すかどうかを判断する
 1. 定期ミーティング（毎週または隔週）のスケジュールについて合意する。これは以下のために使用される。
    1. 前回ミーティング以降に行った業務のレビュー
    1. 次回ミーティングまでに行う業務の優先順位設定

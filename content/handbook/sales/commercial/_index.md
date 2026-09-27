@@ -3,11 +3,11 @@ title: Commercial Sales
 department: >-
   GitLab の Commercial Sales 部門は、SMB および Mid-Market のお客様が GitLab と共に歩む全ジャーニーを通じて最大の価値を提供することに注力しています
 upstream_path: /handbook/sales/commercial/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## Commercial Sales ハンドブックへようこそ
@@ -422,7 +422,7 @@ AMER SMB Pooled Account Executives は、GitLab を使い始めた 1 日目の�
 - [Troubleshooting Resource for Licensing/Subscription Management](/handbook/sales/commercial/#troubleshooting--how-to-resources-for-licensing--subscription-management)
 - [Quotes / Sales Order Processing](/handbook/sales/commercial/#quotes--sales-order-processing)
 - [Customer Health Check Process](/handbook/sales/commercial/enablement/#commercial-sales-account-health-check-process)
-- [Gainsight Data in SFDC Definitions](/handbook/customer-success/product-usage-data/using-gainsight-data-in-sfdc/)
+- [Gainsight Data in SFDC Definitions](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)
 
 ### Inbound Queue Management
 
@@ -540,7 +540,7 @@ Mid-Market AEs はビジネス開発チームと営業マネジメントと密�
 - [Troubleshooting Resource for Licensing/Subscription Management](/handbook/business-technology/enterprise-applications/)
 - [Quotes / Sales Order Processing](/handbook/sales/commercial/#quotes--sales-order-processing)
 - [Customer Health Check Process](/handbook/sales/commercial/enablement/#commercial-sales-account-health-check-process)
-- [Gainsight Data in SFDC Definitions](/handbook/customer-success/product-usage-data/using-gainsight-data-in-sfdc/)
+- [Gainsight Data in SFDC Definitions](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)
 
 ## Commercial Sales 向けアカウント所有のルールオブエンゲージメント 2022-09-22 更新
 
@@ -784,5 +784,5 @@ GitLab Commercial 部門は、すべてのチームメンバーが GitLab の CR
 
 ## その他の関連ページ
 
-- [Commercial Sales - Customer Success](/handbook/customer-success/comm-sales/)
+- [Commercial Sales - Customer Success](/handbook/customer-experience/comm-sales/)
 - [Territories](/handbook/sales/territories/)

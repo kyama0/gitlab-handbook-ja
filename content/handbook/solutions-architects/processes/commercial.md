@@ -1,11 +1,11 @@
 ---
 title: High Velocity SA エンゲージメントモデル
 upstream_path: /handbook/solutions-architects/processes/commercial/
-upstream_sha: 5eeae5a75957f16a16538b0ec5f531ce723f3a8a
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T13:35:07+00:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## ビジョン
@@ -143,7 +143,7 @@ SA が受信したリードを評価するときに、しばしば「もしも�
 
 _Customer Success Manager の割り当ては、コマーシャルアカウントの大半では利用できません_
 
-Opportunity が[Negotiating または Awaiting Signature](/handbook/sales/field-operations/gtm-resources/#opportunity-stages) ステージに入るとき、ソリューションアーキテクトと Account Executive は[High Velocity CSM Transition Process](/handbook/customer-success/pre-sales-post-sales-transition)に従って、Customer Success Manager をお客様に紹介し始めるべきです。
+Opportunity が[Negotiating または Awaiting Signature](/handbook/sales/field-operations/gtm-resources/#opportunity-stages) ステージに入るとき、ソリューションアーキテクトと Account Executive は[High Velocity CSM Transition Process](/handbook/customer-experience/pre-sales-post-sales-transition)に従って、Customer Success Manager をお客様に紹介し始めるべきです。
 
 ソリューションアーキテクトは、Salesforce にアクティブな Opportunity があるアカウントに主にエンゲージすべきです。お客様と作業する際、商談終了後も持続する信頼されるアドバイザー関係を築きやすくなります。これらのケースでは、SA はフォローアップの質問のためにお客様を適切なサポートチャンネルにリダイレクトするタイミングを判断する必要があります。
 

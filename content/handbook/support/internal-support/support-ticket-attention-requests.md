@@ -2,11 +2,11 @@
 title: GitLab Support - Support Ticket Attention Requests (STAR)
 description: サポートリーダーシップにチケットへの追加的な注目を求めるためのプロセスドキュメント。
 upstream_path: /handbook/support/internal-support/support-ticket-attention-requests/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T11:27:49+08:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -39,7 +39,7 @@ lastmod: "2026-05-22T11:27:49+08:00"
 
 ### いつ STAR が適切でないか
 
-1. 既存または将来のビジネスがリスクにさらされており、CSM の注目が必要な GitLab にとっての **business-critical** な状況である場合 -> [アカウントエスカレーションを起票する](/handbook/customer-success/csm/escalations/#initiating-managing-and-closing-an-escalation)
+1. 既存または将来のビジネスがリスクにさらされており、CSM の注目が必要な GitLab にとっての **business-critical** な状況である場合 -> [アカウントエスカレーションを起票する](/handbook/customer-experience/csm/escalations/#initiating-managing-and-closing-an-escalation)
 1. **emergency**（緊急事態）である場合 -> 顧客に [emergency を起票する](https://internal.gitlab.com/handbook/support/workflows/raising-an-emergency)よう助言する（社内ハンドブックリンク、GitLab チームメンバー専用。Premium/Ultimate の顧客のみが emergency をトリガーする資格があります）
 1. **SaaS インシデント** である場合 -> [GitLab Status Page を確認する](https://status.gitlab.com/)、または[インシデントを報告する](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)
 1. チケットに取り組んでいるエンジニアに追加情報を伝えたい場合 --> Zendesk のチケットに内部ノートを残すか、`#support_gitlab-com` や `#support_self-managed` のような Slack チャンネルでチケットに取り組んでいる Support Engineer に連絡する。

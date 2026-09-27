@@ -2,9 +2,9 @@
 title: "UX Cloud Sandbox"
 description: "ユーザビリティテスト用に UX 部門のクラウドサンドボックスへサインアップして使用する方法です。"
 upstream_path: /handbook/upstream-studios/experience-research/ux-cloud-sandbox/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T08:32:10+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
 ---
@@ -32,7 +32,7 @@ UX チームは、この空間をユーザビリティテスト、ワークフ�
 
 ### UX Cloud Sandbox へのアクセス {#access-to-the-ux-cloud-sandbox}
 
-UX Cloud Sandbox へのアクセスを取得する最初の手順は、認証情報を生成することです。[このハンドブックページ](/handbook/customer-success/demo-systems/#access-shared-omnibus-instances)の「Access Shared Omnibus Instances」にある手順に従うことで、セルフサービスで実行できます。
+UX Cloud Sandbox へのアクセスを取得する最初の手順は、認証情報を生成することです。[このハンドブックページ](/handbook/customer-experience/demo-systems/#access-shared-omnibus-instances)の「Access Shared Omnibus Instances」にある手順に従うことで、セルフサービスで実行できます。
 
 認証情報を生成して[サンドボックスインスタンス](https://ux.gitlabdemo.cloud/)にアクセスすると、自分の名前の付いたグループ空間が自動的に付与されます（下の画像を参照）。このグループは GitLab の他のグループと同様ですが、自分の名前が付いており、サンドボックスで行うすべての作業のコンテナとして機能します。
 

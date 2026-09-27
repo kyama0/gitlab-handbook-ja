@@ -2,11 +2,11 @@
 title: "全顧客向け CSAT サーベイ（CS）"
 description: "Customer Success (CS) の年 2 回の CSAT サーベイの詳細解説"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T12:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-03T15:49:43-05:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 ## *「全顧客向け CSAT サーベイ」とは*
 
@@ -74,7 +74,7 @@ Customer Success チームが Gainsight を通じて広範な対象に実施す�
 
 **Gainsight、Salesforce**
 
-* **Gainsight:** CSAT スコアは Customer 360 のスコアカードに書き込まれます。CSM が Customer360（または C360）をどのように使用するかの概要については、[Gainsight CSM C360 概要ページ](/handbook/customer-success/csm/gainsight/c360-overview/)を参照してください
+* **Gainsight:** CSAT スコアは Customer 360 のスコアカードに書き込まれます。CSM が Customer360（または C360）をどのように使用するかの概要については、[Gainsight CSM C360 概要ページ](/handbook/customer-experience/csm/gainsight/c360-overview/)を参照してください
 * **Salesforce**: サーベイ回答は、Salesforce のアカウントページに埋め込まれた Gainsight ウィジェットでも確認できます。
 
 ## **フィードバックへの対応**

@@ -3,11 +3,11 @@ title: 顧客との通話
 category: Handling tickets
 description: "サポートエンジニアリングにおける顧客通話実施のためのワークフロー"
 upstream_path: /handbook/support/workflows/customer_calls/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:11:46+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T18:14:16+12:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## はじめに
@@ -133,7 +133,7 @@ GitLab サポートでは、時に矛盾するガイダンスを解釈するた�
 
 #### 目的
 
-リセット & レビュー通話は、長期間または優先度の高いチケットについて、エンジニアが顧客とつながり、これまでに行われたトラブルシューティングをレビューし、解決に向けて取られる次のステップを説明する機会です。特に [緊急対応とまではいかない](/handbook/support/workflows/customer_emergencies_workflows#situations-that-might-or-might-not-be-emergencies) 優先度の高いチケットでは、早い段階でリセット & レビュー通話のリズムを確立することが、[アカウントエスカレーション](/handbook/customer-success/csm/escalations/) を回避する (またはスムーズに移行する) のに役立ちます。
+リセット & レビュー通話は、長期間または優先度の高いチケットについて、エンジニアが顧客とつながり、これまでに行われたトラブルシューティングをレビューし、解決に向けて取られる次のステップを説明する機会です。特に [緊急対応とまではいかない](/handbook/support/workflows/customer_emergencies_workflows#situations-that-might-or-might-not-be-emergencies) 優先度の高いチケットでは、早い段階でリセット & レビュー通話のリズムを確立することが、[アカウントエスカレーション](/handbook/customer-experience/csm/escalations/) を回避する (またはスムーズに移行する) のに役立ちます。
 
 #### 所要時間
 

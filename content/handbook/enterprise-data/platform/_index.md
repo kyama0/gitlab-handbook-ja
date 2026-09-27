@@ -2,11 +2,11 @@
 title: "データチームプラットフォーム"
 description: "GitLabデータチームプラットフォーム"
 upstream_path: /handbook/enterprise-data/platform/
-upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
-translated_at: "2026-09-08T21:05:07+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-08T21:16:07+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## データプラットフォームのビジョン
@@ -1270,7 +1270,7 @@ Daily Data Science Scores pumpのソースモデルである [mart_crm_account_i
 
 #### Trusted Data ModelからGainsightへ
 
-[Data Model to Gainsight Pump](/handbook/customer-success/product-usage-data/using-product-usage-data-in-gainsight/) は、Customer Successが顧客のGitLab使用を成功させるための視覚化、アクションプラン、戦略の作成を可能にするため、Gainsightへの更新を自動的に駆動するように設計されています。
+[Data Model to Gainsight Pump](/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/) は、Customer Successが顧客のGitLab使用を成功させるための視覚化、アクションプラン、戦略の作成を可能にするため、Gainsightへの更新を自動的に駆動するように設計されています。
 
 #### Qualtrics Mailing List Data Pump / Qualtrics SheetLoad
 

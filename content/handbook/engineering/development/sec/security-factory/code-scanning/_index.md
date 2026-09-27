@@ -2,11 +2,11 @@
 title: "Code Scanning グループ"
 description: "Code Scanning グループは、お客様のソフトウェアリポジトリ向けに GitLab の Static Application Security Testing（SAST）機能を開発します。"
 upstream_path: /handbook/engineering/development/sec/security-factory/code-scanning/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T08:35:00+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 Code Scanning グループは [Security Factory ステージ](/handbook/engineering/development/sec/security-factory/)の一部です。FY27 Sec 再編以前は Static Analysis という名称で、Code Scanning と [Code Security](/handbook/engineering/development/sec/security-factory/code-security/)に分割されました。Code Scanning は `group::static analysis` ラベルの履歴を引き継ぎ、現在は `group::code scanning` となっています。
@@ -237,4 +237,4 @@ golang 自体のセキュリティ更新のためにアナライザーを更新�
 トリアージの目的は他のチームメンバーが前進できるようにサポートすることです。問題に対処するために開発作業が必要な場合、それは自動的にグループの最優先事項にはならず、既存の計画済み作業を自動的に置き換えることはありません。
 バグ修正や改善をすぐに取り上げるべきかどうかに疑問がある場合は、エンジニアリングマネージャーとプロダクトマネージャーに決断を促すために警告すべきです。
 
-[顧客サクセスのエスカレーション](/handbook/customer-success/csm/escalations/)が宣言された場合、エンジニアリングマネージャーとプロダクトマネージャーの両方に警告し、適切なチームメンバーが既存の作業の優先度を下げてできるだけ早くエスカレーションに対応するよう指定すべきです。
+[顧客サクセスのエスカレーション](/handbook/customer-experience/csm/escalations/)が宣言された場合、エンジニアリングマネージャーとプロダクトマネージャーの両方に警告し、適切なチームメンバーが既存の作業の優先度を下げてできるだけ早くエスカレーションに対応するよう指定すべきです。

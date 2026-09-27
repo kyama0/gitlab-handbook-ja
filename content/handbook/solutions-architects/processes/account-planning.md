@@ -1,11 +1,11 @@
 ---
 title: ソリューションアーキテクトのアカウントプランニング
 upstream_path: /handbook/solutions-architects/processes/account-planning/
-upstream_sha: 5eeae5a75957f16a16538b0ec5f531ce723f3a8a
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## Gainsight におけるアカウントプランニングの概要
@@ -76,4 +76,4 @@ Gainsight は、アカウントチーム全体を 1 つのプラットフォー�
 
 - Gainsight Go-To-Market 技術ドキュメントに関するドキュメントは[こちら](/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-gtm/)に配置されています
 - Sales が Gainsight をどのように使用しているかについての詳細は、[Sales 内での Gainsight 利用ページ](/handbook/sales/gainsight/account-planning/)を参照してください
-- Customer Success が Gainsight をどのように使用しているかについての情報は、[Customer Success 内での Gainsight 利用ページ](/handbook/customer-success/csm/gainsight/)に配置されています
+- Customer Success が Gainsight をどのように使用しているかについての情報は、[Customer Success 内での Gainsight 利用ページ](/handbook/customer-experience/csm/gainsight/)に配置されています

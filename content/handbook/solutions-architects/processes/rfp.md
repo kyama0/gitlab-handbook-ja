@@ -3,11 +3,11 @@ title: RFI/RFP プロセス
 description: >-
   ソリューションアーキテクトが支援する RFI/RFP プロセス
 upstream_path: /handbook/solutions-architects/processes/rfp/
-upstream_sha: 5eeae5a75957f16a16538b0ec5f531ce723f3a8a
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## RFI/RFP プロセス
@@ -46,7 +46,7 @@ Issue が作成されたら、Google Docs を作成し詳細を埋め始めま�
 RFx が以下を必要とする場合:
 
 - セキュリティアンケートまたは法的レビュー: ハンドブックの [RFP Process ページ](/handbook/security/security-assurance/field-security/)で説明されているプロセスに従ってください。
-- プロフェッショナルサービスのコンポーネント: [Selling Professional Services](/handbook/customer-success/professional-services-engineering/selling/) ハンドブックページが役立ちます。
+- プロフェッショナルサービスのコンポーネント: [Selling Professional Services](/handbook/customer-experience/professional-services-engineering/selling/) ハンドブックページが役立ちます。
 
 これらのプロセスのそれぞれは、Issue の作成を必要とする可能性があります。追跡目的で、これらの Issue をメインの応答 Issue にリンクしてください。
 

@@ -3,9 +3,9 @@ linkTitle: "Cloud resources"
 description: "Developer Advocacy プロジェクトのクラウドインフラストラクチャーへのアクセス、所有、リソース管理。"
 title: "Developer Advocacy のクラウドリソース"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/cloud-resources/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:59:12+00:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
 ---
@@ -46,7 +46,7 @@ Google Cloud プロジェクト `group-community-a29572` は、次の用途に�
 
 顧客向けデモ環境の場合は、新しい環境を作成する前に既存のリソースを確認してください:
 
-1. [デモシステムのハンドブック](/handbook/customer-success/demo-systems/): [GitLab Learn Labs](https://gitlab.com/gitlab-learn-labs)。
+1. [デモシステムのハンドブック](/handbook/customer-experience/demo-systems/): [GitLab Learn Labs](https://gitlab.com/gitlab-learn-labs)。
 1. [Developer Advocacy コンテンツのハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/): プロダクトツアー、クリックスルーデモ、ワークショップなど。
 
 ### 長期的な本番環境 {#long-term-production-environments}

@@ -2,9 +2,9 @@
 title: "Field Enablement"
 description: "Field Enablement チームのミッションは、フィールドチームメンバーおよびパートナーに対して、GitLab の効率的・予測可能・スケーラブルな成長を推進するために必要な専門知識と自信を育てる効果的なイネーブルメントソリューションを設計・提供することです。"
 upstream_path: "/handbook/sales/field-operations/field-enablement/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-25T17:39:49+00:00
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
 ---
@@ -108,7 +108,7 @@ Field Enablement チームに Slack で連絡するには、#field-enablement-te
     - [Enterprise Enablement](/handbook/sales/playbook/)
     - [Commercial Enablement](/handbook/sales/commercial/enablement/)
 1. Customer Success Enablement
-    - [Customer Success Manager (CSM) Enablement](/handbook/customer-success/csm/csm-development/)
+    - [Customer Success Manager (CSM) Enablement](/handbook/customer-experience/csm/csm-development/)
 1. Partner Enablement
      - [Channel Partner Training, Accreditations and Enablement](/handbook/resellers/training/)
 1. Field Onboarding & Ramp

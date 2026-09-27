@@ -3,11 +3,11 @@ title: 顧客緊急対応業務の遂行方法
 category: On-call
 description: "サポートエンジニアリングにおける顧客緊急対応ローテーションの役割と責任の説明"
 upstream_path: /handbook/support/workflows/customer_emergencies_workflows/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:25:26+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## はじめに
@@ -500,7 +500,7 @@ SME にエスカレートする際、状況が進化するにつれて、顧客�
 
 ## その他の緊急対応の形態
 
-カスタマーサポートは、GitLab の Advanced および Signature Success Tier に加入している顧客に 24/7 のカバレッジを提供します。これらのプレミアムティアには [Customer Success Architect (CSA)](/handbook/customer-success/csm/segment/csa/) へのアクセスが含まれており、Severity 2 の Issue (Zendesk で High Priority チケットとしてラベル付け) には継続的なサポートとより速い応答時間が必要です。
+カスタマーサポートは、GitLab の Advanced および Signature Success Tier に加入している顧客に 24/7 のカバレッジを提供します。これらのプレミアムティアには [Customer Success Architect (CSA)](/handbook/customer-experience/csm/segment/csa/) へのアクセスが含まれており、Severity 2 の Issue (Zendesk で High Priority チケットとしてラベル付け) には継続的なサポートとより速い応答時間が必要です。
 
 | Success Tier | カバレッジ                                   |
 | ------------ | ------------------------------------------ |
@@ -818,7 +818,7 @@ U.S. Government オンコールサポートは、12x5 U.S. Government サポー�
 
 ### Advanced または Signature Success Tier の顧客への 24/7 カバレッジのサポート - フェーズ 1
 
-カスタマーサポートは、GitLab の Advanced および Signature Success Tier に加入している顧客に 24/7 のカバレッジを提供します。これらのプレミアムティアには [Customer Success Architect (CSA)](/handbook/customer-success/csm/segment/csa/) へのアクセスが含まれており、Severity 2 の Issue (Zendesk で High Priority チケットとしてラベル付け) には継続的なサポートとより速い応答時間が必要です。
+カスタマーサポートは、GitLab の Advanced および Signature Success Tier に加入している顧客に 24/7 のカバレッジを提供します。これらのプレミアムティアには [Customer Success Architect (CSA)](/handbook/customer-experience/csm/segment/csa/) へのアクセスが含まれており、Severity 2 の Issue (Zendesk で High Priority チケットとしてラベル付け) には継続的なサポートとより速い応答時間が必要です。
 
 | Success Tier | カバレッジ                                   |
 | ------------ | ------------------------------------------ |

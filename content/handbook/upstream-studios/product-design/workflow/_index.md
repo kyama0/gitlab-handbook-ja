@@ -2,9 +2,9 @@
 title: Product Designer のワークフロー
 description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとして働く Product Designer のための、デザインプロセス、協働の実践、クラフトに関する包括的なガイド。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/
-upstream_sha: 4aea490fd6276e4dc6a9fba4f36820790b265fe9
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-03T21:26:54+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
 ---
@@ -39,7 +39,7 @@ Product Designer として、チーム内でのアイデア創出を主導し、
 **創造性を刺激する活動とリソース:**
 
 - **ワークショップを開催する**: アイデアをブレインストーミングするために、同期型（例: [ThinkBig!](/handbook/product/ux/thinkbig/)）または非同期型のワークショップを企画する
-- **カウンターパートと関わる**: 新鮮な視点を得るために、[Sales](/handbook/sales/)、[Customer Success](/handbook/customer-success/)、[Marketing](/handbook/marketing/brand-experience/brand-creative/)のカウンターパートに連絡する
+- **カウンターパートと関わる**: 新鮮な視点を得るために、[Sales](/handbook/sales/)、[Customer Success](/handbook/customer-experience/)、[Marketing](/handbook/marketing/brand-experience/brand-creative/)のカウンターパートに連絡する
 - **問題検証リサーチを実施する**: PM と UX Researcher と協働して、[問題検証リサーチ](/handbook/upstream-studios/experience-research/problem-validation-and-methods/)のラウンドに優先順位を付ける
 - **顧客との通話に参加する**: PM と顧客との通話に参加し、ユーザーが課題やワークフローをどのように説明するかを直接聞く
 - **未知のペインポイントを発見する**:

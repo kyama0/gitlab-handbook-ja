@@ -1,14 +1,14 @@
 ---
 title: プロフェッショナルサービスの販売
 upstream_path: /handbook/solutions-architects/playbooks/selling-professional-services/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-これは、ソリューションアーキテクト (SA) が販売サイクル中に顧客に対してプロフェッショナルサービスをポジショニングし、必要に応じてカスタムスコーピングのために Professional Services Engagement Management チームに渡す適切な情報を収集するための実務ガイドです。プロフェッショナルサービスを販売する全体的なワークフローは、[Professional Services ハンドブック - Selling Professional Services ページ](/handbook/customer-success/professional-services-engineering/selling/)で定義されています。
+これは、ソリューションアーキテクト (SA) が販売サイクル中に顧客に対してプロフェッショナルサービスをポジショニングし、必要に応じてカスタムスコーピングのために Professional Services Engagement Management チームに渡す適切な情報を収集するための実務ガイドです。プロフェッショナルサービスを販売する全体的なワークフローは、[Professional Services ハンドブック - Selling Professional Services ページ](/handbook/customer-experience/professional-services-engineering/selling/)で定義されています。
 
 ## サービスの種類
 
@@ -26,7 +26,7 @@ GitLab は、顧客が GitLab プラットフォームの導入や DevOps プラ
 
 ## 複数チームでのコラボレーション
 
-新規ライセンス商談がステージ 3 - Technical Evaluation からステージ 4 - Proposal へ移行する際、ソリューションアーキテクトがプロフェッショナルサービスのポジショニングを主導することが期待されています。ソリューションアーキテクトは、顧客が自前で作業する場合と比較してプロフェッショナルサービスを利用する価値を明確に説明できる必要があり、顧客にとって最も有益な適切なプロフェッショナルサービスを選定できる必要があります。カスタムサービスパッケージが最良の選択肢である可能性が高いと判断した場合、ソリューションアーキテクトまたは適切なセールスロール (AE、SAE) は、サービス計算ツールを使ってスコーピング Issue を作成することで、[カスタムサービススコーピングワークフロー](/handbook/customer-success/professional-services-engineering/selling/#custom-scoped-services)を開始してください。Professional Services Engagement Manager がスコーピング Issue を引き取り、アカウントチームと協力して適切なサービスパッケージをスコーピングします。
+新規ライセンス商談がステージ 3 - Technical Evaluation からステージ 4 - Proposal へ移行する際、ソリューションアーキテクトがプロフェッショナルサービスのポジショニングを主導することが期待されています。ソリューションアーキテクトは、顧客が自前で作業する場合と比較してプロフェッショナルサービスを利用する価値を明確に説明できる必要があり、顧客にとって最も有益な適切なプロフェッショナルサービスを選定できる必要があります。カスタムサービスパッケージが最良の選択肢である可能性が高いと判断した場合、ソリューションアーキテクトまたは適切なセールスロール (AE、SAE) は、サービス計算ツールを使ってスコーピング Issue を作成することで、[カスタムサービススコーピングワークフロー](/handbook/customer-experience/professional-services-engineering/selling/#custom-scoped-services)を開始してください。Professional Services Engagement Manager がスコーピング Issue を引き取り、アカウントチームと協力して適切なサービスパッケージをスコーピングします。
 
 既存顧客がプロフェッショナルサービスに関心を持ち、現時点でライセンス商談がない場合は、CSM が AE/SAE と協力し、適切なサービスを特定し、必要に応じてカスタムスコーピングを行うのが一般的です。CSM および／または PS Engagement Manager は、顧客がプロフェッショナルサービスのオプションを検討する際に GitLab の機能に関する具体的な質問がある場合、SA の支援を要請することがあります。たとえば、顧客が self-managed から SaaS への移行を検討している場合、self-managed GitLab 機能と SaaS プラットフォームの違い、SaaS の制約、SaaS のセキュリティに関する考慮点、消費型課金などについて質問が出る可能性があります。
 
@@ -57,4 +57,4 @@ GitLab は、顧客が GitLab プラットフォームの導入や DevOps プラ
 - 顧客はどのバージョンの GitLab を使用していますか、もしくはデプロイを計画していますか? また、ライセンス階層は Premium か Ultimate か?
 - 顧客が GitLab self-managed から SaaS への移行を検討している場合、顧客に [Evaluate](https://gitlab.com/gitlab-org/professional-services-automation/tools/utilities/evaluate) スクリプトを実行してもらうと有益です。このツールはユーザー数とリポジトリ数のカウントを提供し、各プロジェクトでどの GitLab 機能が使用されているかを示し、データの種類や量が移行に問題となりそうなプロジェクトをフラグ付けします。
 
-Professional Services チームは、顧客から要望される異なる種類のサービスに関するスコーピング質問のより詳細なリストを保持しています。詳細は [Professional Services EM Scoping Guidelines](/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/#scoping-specific-types-of-services) ページで確認できます。
+Professional Services チームは、顧客から要望される異なる種類のサービスに関するスコーピング質問のより詳細なリストを保持しています。詳細は [Professional Services EM Scoping Guidelines](/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/#scoping-specific-types-of-services) ページで確認できます。

@@ -1,9 +1,9 @@
 ---
 title: 製品セクション、ステージ、グループ、カテゴリ
 upstream_path: /handbook/product/categories/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
 ---
@@ -321,7 +321,7 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
 - [Zero Downtime Testing Tool](https://gitlab.com/gitlab-org/quality/zero-downtime-testing-tool)
 - [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)
 
-内部のお客様: [Gitaly](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/)、[SaaS Platforms セクション](/handbook/engineering/infrastructure-platforms/)、[Infrastructure 部門](/handbook/engineering/infrastructure/)、[Support 部門](/handbook/support/)、[Customer Success](/handbook/customer-success/)
+内部のお客様: [Gitaly](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/)、[SaaS Platforms セクション](/handbook/engineering/infrastructure-platforms/)、[Infrastructure 部門](/handbook/engineering/infrastructure/)、[Support 部門](/handbook/support/)、[Customer Success](/handbook/customer-experience/)
 
 ### Facilitated functionality
 

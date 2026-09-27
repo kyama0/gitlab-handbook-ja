@@ -1,11 +1,11 @@
 ---
 title: "DevOps ソリューションリソース: 継続的インテグレーション"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T16:41:10+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 **GitLab の継続的インテグレーション（CI）ケイパビリティに関するお客様向けの概要をお探しですか？ [CI Solution](https://about.gitlab.com/solutions/continuous-integration/) を参照してください**
@@ -307,13 +307,13 @@ DevOps 領域の多くの競合の中で、Jenkins と CircleCI が継続的イ�
 
 1. ディスカバリー質問を行ってお客様のニーズを特定する
 2. デモ、プルーフポイント、バリューポジショニングなどを共有してより深いディスカバリーを完了する
-3. [パイプライン変換ワークショップ](/handbook/customer-success/playbooks/ci-verify/) とユーザー有効化の例を実施する
+3. [パイプライン変換ワークショップ](/handbook/customer-experience/playbooks/ci-verify/) とユーザー有効化の例を実施する
 4. 採用ロードマップ、タイムライン、変更管理計画に合意し、関連するサービスを提供（必要に応じて）し、サクセスプランを更新する（必要に応じて）
 5. お客様と一緒に採用計画をリードし、エンゲージメントや製品分析データを通じてユースケース採用を示しながら、チームを有効化し進捗を追跡する
 
 ### 採用レコメンデーション {#adoption-recommendation}
 
-この表は、採用が推奨される機能、製品ドキュメントへのリンク、それぞれのサブスクリプション層、および [Service Ping](/handbook/customer-success/csm/service-ping-faq/) メトリクスを示しています。
+この表は、採用が推奨される機能、製品ドキュメントへのリンク、それぞれのサブスクリプション層、および [Service Ping](/handbook/customer-experience/csm/service-ping-faq/) メトリクスを示しています。
 
 | 機能                                           | F  | P  | U  | Service Ping メトリクス | メモ |
 | ------------------------------------------------------------ | -----| ---- | ---- | --------- | ---- |

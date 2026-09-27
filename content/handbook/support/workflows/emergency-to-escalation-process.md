@@ -3,9 +3,9 @@ title: サポートの Emergency をアカウントエスカレーションへ�
 description: Emergency をアカウントエスカレーションに変換するタイミングと方法に関する、サポートエンジニアおよびマネージャー向けのガイダンス
 category: On-call
 upstream_path: /handbook/support/workflows/emergency-to-escalation-process/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-22T11:27:49+08:00"
-translated_at: "2026-05-22T21:47:45Z"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+lastmod: "2026-09-24T21:34:11+02:00"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
 ---
@@ -20,7 +20,7 @@ stale: false
 
 ## アカウントエスカレーションを開始するタイミング
 
-[Customer Success Escalations Process](/handbook/customer-success/csm/escalations/) のガイドラインに従ってください。判断は [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook/) と相談のうえで一緒に行うべきです。
+[Customer Success Escalations Process](/handbook/customer-experience/csm/escalations/) のガイドラインに従ってください。判断は [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook/) と相談のうえで一緒に行うべきです。
 
 判断の助けになるいくつかの質問:
 
@@ -31,9 +31,9 @@ stale: false
 
 ## アカウントエスカレーションを開始する方法
 
-1. 使用するエスカレーションレベルを決めるため、[エスカレーションレベルの定義に関する CSM ハンドブック](/handbook/customer-success/csm/escalations/#definitions-of-severity-levels) を参照します。
-1. [エスカレーション DRI](/handbook/customer-success/csm/escalations/#escalation-dri) となる、アカウントの CSM に支援を求めます。顧客に CSM がいない場合は、アサインされている AE、CSE、またはそのリージョナルマネージャーに連絡します。
-1. 応答がない場合は、Manager On-call と一緒に [エスカレーションを開く](/handbook/customer-success/csm/escalations/#opening-the-escalation) 手順に従ってください（現時点ではエスカレーションを開始できるのは SalesForce にアクセス権を持つ人のみであることに留意してください）。
+1. 使用するエスカレーションレベルを決めるため、[エスカレーションレベルの定義に関する CSM ハンドブック](/handbook/customer-experience/csm/escalations/#definitions-of-severity-levels) を参照します。
+1. [エスカレーション DRI](/handbook/customer-experience/csm/escalations/#escalation-dri) となる、アカウントの CSM に支援を求めます。顧客に CSM がいない場合は、アサインされている AE、CSE、またはそのリージョナルマネージャーに連絡します。
+1. 応答がない場合は、Manager On-call と一緒に [エスカレーションを開く](/handbook/customer-experience/csm/escalations/#opening-the-escalation) 手順に従ってください（現時点ではエスカレーションを開始できるのは SalesForce にアクセス権を持つ人のみであることに留意してください）。
 
 ## アカウントエスカレーション中の期待事項
 
@@ -50,4 +50,4 @@ stale: false
 
 ## アカウントエスカレーションのクローズ
 
-エスカレーション DRI がクローズに同意したら、[エスカレーションをクローズする](/handbook/customer-success/csm/escalations/#closing-the-escalation) 手順に従ってください。
+エスカレーション DRI がクローズに同意したら、[エスカレーションをクローズする](/handbook/customer-experience/csm/escalations/#closing-the-escalation) 手順に従ってください。

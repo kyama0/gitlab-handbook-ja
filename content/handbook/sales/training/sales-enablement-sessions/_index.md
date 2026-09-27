@@ -2,11 +2,11 @@
 title: "Field Enablement Spotlight: GitLab における継続教育"
 description: "GitLab のフィールドセールス & カスタマーサクセスチームメンバー全員のための継続教育ウェブキャストシリーズ"
 upstream_path: /handbook/sales/training/sales-enablement-sessions/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## Field Enablement Spotlight セッション
@@ -512,5 +512,5 @@ Spotlight Attendance Report は FY25-Q3 から利用可能で、Highspot 経由�
 - [Cloud Native Ecosystem](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem/)
 - [Enterprise IT Roles](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enterprise-it-roles/)
 - [GitLab.com Subscriptions](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/)
-- [Services to Accelerate Customer Adoption](/handbook/customer-success/professional-services-engineering/sales-enablement)
+- [Services to Accelerate Customer Adoption](/handbook/customer-experience/professional-services-engineering/sales-enablement)
 - [Collaborating with Community Programs](/handbook/sales/training/sales-enablement-sessions/enablement/collaborating-community-programs/)

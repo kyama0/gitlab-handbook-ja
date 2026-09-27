@@ -2,11 +2,11 @@
 title: GitLab サポートとの連携
 description: GitLab チームメンバーが GitLab サポートと連携する方法とサポートに連絡する最善の方法。
 upstream_path: /handbook/support/internal-support/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:14:05+09:00"
+upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
+translated_at: "2026-09-26T23:49:49.632104+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
 ## 概要
@@ -374,7 +374,7 @@ U.S. Government Support の顧客に関連する機密ライセンス Issue に�
 
 ### チケットをエスカレートしたい {#i-want-to-escalate-a-ticket}
 
-「*エスカレーション*」という用語を [MECEFU](/handbook/communication/#mecefu-terms) に保つため、サポートは「**サポートチケット注目リクエスト**」（STAR）という用語を使用して、[アカウントエスカレーション](/handbook/customer-success/csm/escalations/) と区別します。「Escalation」は「Emergency」または「Incident」と混同される可能性もあります。
+「*エスカレーション*」という用語を [MECEFU](/handbook/communication/#mecefu-terms) に保つため、サポートは「**サポートチケット注目リクエスト**」（STAR）という用語を使用して、[アカウントエスカレーション](/handbook/customer-experience/csm/escalations/) と区別します。「Escalation」は「Emergency」または「Incident」と混同される可能性もあります。
 
 [GitLab グローバルサポート時間](https://about.gitlab.com/support/#definitions-of-gitlab-global-support-hours) 中にのみ、以下のいずれかが該当する場合は **サポートチケット注目リクエスト** を開いてください。
 
@@ -385,12 +385,12 @@ U.S. Government Support の顧客に関連する機密ライセンス Issue に�
 
 [サポートチケット注目リクエストの詳細](/handbook/support/internal-support/support-ticket-attention-requests)
 
-以下の場合は **[アカウントエスカレーション](/handbook/customer-success/csm/escalations/)** を開いてください。
+以下の場合は **[アカウントエスカレーション](/handbook/customer-experience/csm/escalations/)** を開いてください。
 
 - 単一のチケットまたは複数の Issue の集積によるアカウントレベルのリスクがある。
 - 顧客の信頼を回復し Issue を解決するため、複数の部門からの可視性と注意が必要。
 
-[アカウントエスカレーションの詳細](/handbook/customer-success/csm/escalations)
+[アカウントエスカレーションの詳細](/handbook/customer-experience/csm/escalations)
 
 以下の場合は **緊急チケット** を開いてください。
 
