@@ -552,7 +552,7 @@
     {{- $rawSource = replaceRE `(?s)\{\{[%<].*?[>%]\}\}` " " $rawSource }}
     {{- $renderedSource := $rawSource | markdownify }}
     {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
-    {{- $renderedSource = replaceRE `(?s)<!--.*?-->` " " $renderedSource }}
+    {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}
     {{- $renderedSource = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $renderedSource }}
     {{- $scratch.Add "wordcount" (countwords ($renderedSource | plainify)) }}
