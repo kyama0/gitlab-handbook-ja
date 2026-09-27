@@ -1,6 +1,6 @@
 ---
-title: "Iteration 0"
-description: "Iteration 0 は私たちの内部 EM>PS Transition ミーティングから始まり、顧客との Planning and Design Sessions まで続きます。この重要なフェーズはプロジェクトの基盤を確立し、GitLab と顧客チーム間の整合性を確保します。"
+title: "イテレーション 0"
+description: "イテレーション 0 は私たちの内部 EM>PS Transition ミーティングから始まり、顧客との Planning and Design Sessions まで続きます。この重要なフェーズはプロジェクトの基盤を確立し、GitLab と顧客チーム間の整合性を確保します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -9,11 +9,11 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-**クイックリンク:** | [Iteration 0 の基本](../iteration-0-fundamentals/_index.md) | [Delivery Kits](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits)
+**クイックリンク:** | [イテレーション 0 の基本](../iteration-0-fundamentals/_index.md) | [Delivery Kits](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits)
 
 ## フェーズ概要
 
-Iteration 0 は、互いに積み重なる 4 つの主要な活動で構成されます。
+イテレーション 0 は、互いに積み重なる 4 つの主要な活動で構成されます。
 
 1. [EM>PS Transition](#emps-transition) - 内部の知識移管
 2. [Stakeholder Planning Meeting](#stakeholder-planning-meeting) - 顧客との初期整合
@@ -44,7 +44,7 @@ Iteration 0 は、互いに積み重なる 4 つの主要な活動で構成さ�
 
 3. **前提データの収集**
    - 関連情報については [Delivery Kits](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits) を参照
-   - [Iteration 0 の基本](../iteration-0-fundamentals/_index.md) をレビュー
+   - [イテレーション 0 の基本](../iteration-0-fundamentals/_index.md) をレビュー
    - [discovery のベストプラクティス](../discovery/_index.md) を考慮
    - 複雑なプログラムの場合は [RACI テンプレート](https://docs.google.com/spreadsheets/d/1nb_sEI-M3IwNgkYQA2uKAo9IDijstPtUGCtLsHlwrtI/edit?gid=1394419027#gid=1394419027) を準備
 

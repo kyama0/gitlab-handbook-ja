@@ -18,7 +18,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 このページは、ISR/SAE が、特定タイプの顧客が通常エンゲージするサービスや、サクセスプランを構築する際にこれらのサービスをどのようにポジショニングするかを理解するのに役立つことを目指しています。
 
-## GitLab プロフェッショナルサービスの価値
+## GitLab プロフェッショナルサービスの価値 {#value-of-gitlab-professional-services}
 
 ![プロフェッショナルサービスの価値](/images/customer-experience/professional-services-engineering/positioning/ps-value.png)
 

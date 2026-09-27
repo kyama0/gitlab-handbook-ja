@@ -1,6 +1,6 @@
 ---
-title: "Iteration 0 の基本"
-description: "GitLab PS と顧客とのエンゲージメントにおける Iteration 0 のコアとなる要素について学びます。"
+title: "イテレーション 0 の基本"
+description: "GitLab PS と顧客とのエンゲージメントにおける イテレーション 0 のコアとなる要素について学びます。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -56,7 +56,7 @@ PMO 組織として、私たちは GitLab 内部および外部の GitLab パー
 
 ## エンゲージメント計画
 
-EM>PS デリバリー移管から始まり、Stakeholder Planning Meeting と Customer Kickoff まで続きます。Iteration 0 全体を通して、継続的に取り組みます...
+EM>PS デリバリー移管から始まり、Stakeholder Planning Meeting と Customer Kickoff まで続きます。イテレーション 0 全体を通して、継続的に取り組みます...
 
 1. プロジェクトバックログ（ユーザーストーリーと受け入れ基準 - 2 イテレーション）を洗練し優先順位付けする。
 2. 初期リリース計画（初期計画と設計）に Issue を割り当てる。
