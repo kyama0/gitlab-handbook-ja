@@ -59,6 +59,7 @@
             {{- $included = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $included }}
             {{- $included = replaceRE `(?is)>\s*<` "> <" $included }}
             {{- $renderedIncluded := $included | markdownify }}
+            {{- $renderedIncluded = replaceRE `(?is)>\s*<` "> <" $renderedIncluded }}
             {{- range findRE `(?is)<img\b[^>]*\salt="[^"]+"[^>]*>` $renderedIncluded }}
                 {{- $alt := replaceRE `(?is)^.*?\salt="([^"]+)".*$` "$1" . }}
                 {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
@@ -605,8 +606,20 @@
         {{- $rendered = replaceRE `(?is)>\s*<` "> <" $rendered }}
         {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
     {{- end }}
-    {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $rawSource }}
-    {{- $renderedSource := $rawSource | markdownify }}
+    {{- /* Shortcodes inside fenced examples are rendered as visible code; retain them. */ -}}
+    {{- $strippedSource := "" }}
+    {{- $insideFence := false }}
+    {{- range $i, $segment := split $rawSource "```" }}
+        {{- if gt $i 0 }}
+            {{- $strippedSource = printf "%s```" $strippedSource }}
+            {{- $insideFence = not $insideFence }}
+        {{- end }}
+        {{- if not $insideFence }}
+            {{- $segment = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $segment }}
+        {{- end }}
+        {{- $strippedSource = printf "%s%s" $strippedSource $segment }}
+    {{- end }}
+    {{- $renderedSource := $strippedSource | markdownify }}
     {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
     {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}

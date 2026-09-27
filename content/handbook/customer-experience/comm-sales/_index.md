@@ -9,24 +9,24 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-GitLab はコマーシャルセールスをミッドマーケットおよびスモール・ミディアムビジネスセグメント向けの全世界のセールスとして定義しています。[セールスセグメント](/handbook/sales/field-operations/gtm-resources/)はグローバルアカウントの従業員総数によって定義されます。コマーシャルセールスセグメントは、スモールビジネス（SMB）とミッドマーケット（MM）という 2 つのセールスチームで構成されています。コマーシャルセールスセグメントは、専任のソリューションアーキテクト（SA）とカスタマーサクセスマネージャー（CSM）のチームによってサポートされています。
+GitLab はコマーシャルセールスをミッドマーケットおよびスモール・ミディアムビジネスセグメント向けの全世界のセールスとして定義しています。[セールスセグメント](/handbook/sales/field-operations/gtm-resources/)はグローバルアカウントの従業員総数によって定義されます。コマーシャルセールスセグメントは、スモールビジネス（SMB）とミッドマーケット（MM）という 2 つのセールスチームで構成されています。コマーシャルセールスセグメントは、専任の Solutions Architect（SA）と Customer Success Manager（CSM）のチームによってサポートされています。
 
 ## 役割と責任
 
-### ソリューションアーキテクト
+### Solutions Architect
 
-ソリューションアーキテクトはプールモデルでコマーシャルセールスのアカウントエグゼクティブに整合しています。SA へのリクエストは、可用性、適切な専門知識、現在の作業量など複数の要素を考慮して、SA がトリアージボードから引き受けます。
+Solutions Architect はプールモデルでコマーシャルセールスのアカウントエグゼクティブに整合しています。SA へのリクエストは、可用性、適切な専門知識、現在の作業量など複数の要素を考慮して、SA がトリアージボードから引き受けます。
 
-- [コマーシャルソリューションアーキテクトへのエンゲージ](/handbook/solutions-architects/processes/commercial/)
-- [ソリューションアーキテクト役割の詳細](/job-description-library/sales/solutions-architect/)
-- [ソリューションアーキテクトの概要](/handbook/solutions-architects/)
+- [コマーシャル Solutions Architect へのエンゲージ](/handbook/solutions-architects/processes/commercial/)
+- [Solutions Architect 役割の詳細](/job-description-library/sales/solutions-architect/)
+- [Solutions Architect の概要](/handbook/solutions-architects/)
 
-### カスタマーサクセスマネージャー
+### Customer Success Manager
 
-カスタマーサクセスマネージャーには、各[セグメント](/handbook/customer-experience/csm/segment/)（スケール、グロース、ストラテジック）および地域（AMER または EMEA）に応じて担当顧客アカウントが割り当てられます。
+Customer Success Manager には、各[セグメント](/handbook/customer-experience/csm/segment/)（スケール、グロース、ストラテジック）および地域（AMER または EMEA）に応じて担当顧客アカウントが割り当てられます。
 
-- [カスタマーサクセスマネージャー役割の詳細](/job-description-library/sales/customer-success-management/)
-- [カスタマーサクセスマネージャーの概要と責任](/handbook/customer-experience/csm/)
+- [Customer Success Manager 役割の詳細](/job-description-library/sales/customer-success-management/)
+- [Customer Success Manager の概要と責任](/handbook/customer-experience/csm/)
 
 ## セールスエンゲージメントガイドライン
 
