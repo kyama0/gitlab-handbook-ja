@@ -68,7 +68,7 @@ Calendly が GDPR やそれに類するプライバシー法に準拠するよ�
       - [Working hours](https://help.calendly.com/hc/en-us/articles/360055073694-How-to-set-up-and-edit-your-available-hours-)
 - イベントの前後に時間を追加しますか?
   - イベント前: 15 分
-- (Additional rules for your availability セクション・リンクを展開)
+- （「予約可能時間の追加ルール」セクションのリンクを展開）
   - 開始時刻の刻み: 30 分（顧客に予約オプションを多く提供できます）
   - スケジューリング条件
     - 招待者がイベント開始時刻の 2 日以内には予約できないように設定

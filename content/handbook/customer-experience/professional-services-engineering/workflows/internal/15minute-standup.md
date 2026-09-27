@@ -1,5 +1,5 @@
 ---
-title: 15分間スタンドアップ
+title: 15 分間スタンドアップ
 category: Internal
 upstream_path: /handbook/customer-experience/professional-services-engineering/workflows/internal/15minute-standup/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244

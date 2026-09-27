@@ -29,7 +29,7 @@ graph TD
     CreateIssue --> CSEReview{CSE テリトリーオーナー<br/>ゲートキーパーレビュー}
     CSEReview -->|問題あり| DataCleanup
     CSEReview -->|承認| ManagerActions[マネージャーアクション:<br/>- ティア更新<br/>- 補償プール調整]
-    ManagerActions --> HandoverCall[内部引き継ぎ通話<br/>30〜60分]
+    ManagerActions --> HandoverCall[内部引き継ぎ通話<br/>30 〜 60 分]
     HandoverCall --> CustomerComm[顧客コミュニケーション]
     CustomerComm --> SendLetter[CSM が AE 経由でレターを送信<br/>BCC: Gainsight]
     SendLetter --> NoCSECall[CSE は顧客移管通話に<br/>参加しない]

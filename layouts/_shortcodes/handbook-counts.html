@@ -56,6 +56,7 @@
         {{- with resources.Get $path }}
             {{- $included := replaceRE `(?s)<!--.*?-->` " " .Content }}
             {{- $included = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $included }}
+            {{- $included = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $included }}
             {{- $scratch.Add "wordcount" (countwords ($included | markdownify | plainify)) }}
         {{- end }}
     {{- end }}
@@ -554,6 +555,15 @@
     {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
     {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
     {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}
+    {{- /* Image alternatives remain available to screen readers after the image tag renders. */ -}}
+    {{- range findRE `(?is)<img\b[^>]*\balt="[^"]+"[^>]*>` $renderedSource }}
+        {{- $alt := replaceRE `(?is)^.*?\balt="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<img\b[^>]*\balt='[^']+'[^>]*>` $renderedSource }}
+        {{- $alt := replaceRE `(?is)^.*?\balt='([^']+)'.*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+    {{- end }}
     {{- $renderedSource = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $renderedSource }}
     {{- $scratch.Add "wordcount" (countwords ($renderedSource | plainify)) }}
 {{- end }}
