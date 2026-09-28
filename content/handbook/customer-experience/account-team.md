@@ -181,9 +181,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
   - [Expert Services](https://about.gitlab.com/services/catalog/) などの追加のフォローアップ オプションを提供する
 
 - **[Renewal Managers](/job-description-library/sales/renewal-manager/)との関わり**
-  - 更新の 4 か月前からrenewal manager とエンゲージする
-  - renewal manager との更新ディスカッションを準備しサポートする
-  - リスクがある場合は[AE](/handbook/sales/) と renewal manager と積極的に協働する
+  - 更新の 4 か月前から Renewal Manager とエンゲージする
+  - Renewal Manager との更新ディスカッションを準備しサポートする
+  - リスクがある場合は[AE](/handbook/sales/) と Renewal Manager と積極的に協働する
 
 - **[Sales Development Representatives（SDRs）](/handbook/sales/sales-development/) および [Business Development Representatives（BDRs）](/handbook/sales/sales-development/)との関わり**
   - [AE](/handbook/sales/) はファシリテーターとして機能し、アカウント拡張のための統一された戦略に CSM の専門知識とセールス／ビジネス開発活動を橋渡しし、CSM は必要に応じてサポートと洞察を提供する
