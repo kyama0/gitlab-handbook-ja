@@ -1,5 +1,5 @@
 ---
-title: "プロフェッショナルサービスのポジショニング"
+title: "Professional Services のポジショニング"
 upstream_path: /handbook/customer-experience/professional-services-engineering/positioning/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -18,9 +18,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 このページは、ISR/SAE が、特定タイプの顧客が通常エンゲージするサービスや、サクセスプランを構築する際にこれらのサービスをどのようにポジショニングするかを理解するのに役立つことを目指しています。
 
-## GitLab プロフェッショナルサービスの価値 {#value-of-gitlab-professional-services}
+## GitLab Professional Services の価値 {#value-of-gitlab-professional-services}
 
-![プロフェッショナルサービスの価値](/images/customer-experience/professional-services-engineering/positioning/ps-value.png)
+![Professional Services の価値](/images/customer-experience/professional-services-engineering/positioning/ps-value.png)
 
 <!-- ### Elevator Pitch
 
@@ -47,11 +47,11 @@ PS エンゲージメントにより、顧客は GitLab のフル機能をより
 
 ### ロングメッセージ
 
-GitLab を採用すると、市場で唯一の単一プラットフォーム型 DevOps を手に入れることができます。GitLab プロフェッショナルサービスは、これに合わせて人とプロセスをアラインするのを支援します。
+GitLab を採用すると、市場で唯一の単一プラットフォーム型 DevOps を手に入れることができます。GitLab Professional Services は、これに合わせて人とプロセスをアラインするのを支援します。
 
-私たちのプロフェッショナルサービスチームは、GitLab のサブジェクトマターエキスパートだけでなく、大規模アプリケーションのデプロイとメンテナンス、SDLC 全体にわたるベストプラクティスの作成と教育の経験を持つ熟練した DevOps プロフェッショナルで構成されています。私たちのエキスパートは、DevOps トランスフォーメーションを主導し、お客様の戦略的なビジネスイニシアチブに直接サポートを提供します。他の Fortune 500 エンタープライズで培った経験により、貴社のエンタープライズのデジタルトランスフォーメーションをクラウドソーシングできます。
+私たちの Professional Services チームは、GitLab のサブジェクトマターエキスパートだけでなく、大規模アプリケーションのデプロイとメンテナンス、SDLC 全体にわたるベストプラクティスの作成と教育の経験を持つ熟練した DevOps プロフェッショナルで構成されています。私たちのエキスパートは、DevOps トランスフォーメーションを主導し、お客様の戦略的なビジネスイニシアチブに直接サポートを提供します。他の Fortune 500 エンタープライズで培った経験により、貴社のエンタープライズのデジタルトランスフォーメーションをクラウドソーシングできます。
 
-GitLab のプロフェッショナルサービスチームは、貴社の GitLab インストールのフルバリューを実現できるようにするために存在します。私たちは、貴社の GitLab インストールが回復力があり安全であることを保証する直接の実装サポートを提供できます。また、操作をすぐに再開するためのクリーンなデータセットを提供することで、GitLab への移行を促進するマイグレーションサービスも提供します。私たちのエデュケーションおよび専門トレーニングは、CI/CD、バージョン管理、メトリクスなどのベストプラクティスのトレーニングを提供します。
+GitLab の Professional Services チームは、貴社の GitLab インストールのフルバリューを実現できるようにするために存在します。私たちは、貴社の GitLab インストールが回復力があり安全であることを保証する直接の実装サポートを提供できます。また、操作をすぐに再開するためのクリーンなデータセットを提供することで、GitLab への移行を促進するマイグレーションサービスも提供します。私たちのエデュケーションおよび専門トレーニングは、CI/CD、バージョン管理、メトリクスなどのベストプラクティスのトレーニングを提供します。
 
 ## 顧客アーキタイプ
 
@@ -95,15 +95,15 @@ PS チームは、2019 年後半から 2020 年初頭にかけて、サービス
 
 ### ピッチデッキ {#pitch-deck}
 
-サービスオファリングについて見込み客と話し合う際、プロフェッショナルサービスチームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください
+サービスオファリングについて見込み客と話し合う際、Professional Services チームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください
 
-[プロフェッショナルサービス提案資料](https://docs.google.com/presentation/d/1M-7aA7f9S6dULvzuKuTJs4j3A4V1z2DtMsoN0T0SMZg/edit#slide=id.g277ce56021a_0_2036)
+[Professional Services 提案資料](https://docs.google.com/presentation/d/1M-7aA7f9S6dULvzuKuTJs4j3A4V1z2DtMsoN0T0SMZg/edit#slide=id.g277ce56021a_0_2036)
 
 ### データシート
 
-プロフェッショナルサービスデータシートは、マーケティングサイトのサブページとして利用可能です。[カタログページ](https://about.gitlab.com/professional-services/catalog/) にリンクが掲載されています。
+Professional Services データシートは、マーケティングサイトのサブページとして利用可能です。[カタログページ](https://about.gitlab.com/professional-services/catalog/) にリンクが掲載されています。
 
 ### その他の付帯資料
 
-- [プロフェッショナルサービスの売り方](/handbook/customer-experience/professional-services-engineering/selling/)
-- [プロフェッショナルサービスとの協業](/handbook/customer-experience/professional-services-engineering/working-with/) の一般ガイドライン
+- [Professional Services の売り方](/handbook/customer-experience/professional-services-engineering/selling/)
+- [Professional Services との協業](/handbook/customer-experience/professional-services-engineering/working-with/) の一般ガイドライン

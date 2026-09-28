@@ -63,7 +63,7 @@ GitLab をプロジェクト管理ツールとして初期設定するには、[
 
 私たちの [CP (Customer Project) 自動化](./cp/_index.md) には、以下のデフォルトラベルが含まれています:
 
-- SOW-# または PO# - GitLab チームがプロフェッショナルサービスグループ内のプロジェクトを検索するのに役立ちます
+- SOW-# または PO# - GitLab チームが Professional service グループ内のプロジェクトを検索するのに役立ちます
 - PM 名 - GitLab チームが PM 名でソートするのに役立ちます
 - PSD ワークフロー（Issue ボード管理用）
 

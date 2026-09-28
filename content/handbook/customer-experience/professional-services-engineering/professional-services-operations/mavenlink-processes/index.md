@@ -1,7 +1,7 @@
 ---
 title: Mavenlink プロセス
 category: Internal
-description: "GitLab プロフェッショナルサービスの運用プロセスとワークフローについて学びます。"
+description: "GitLab Professional Services の運用プロセスとワークフローについて学びます。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -14,7 +14,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 Mavenlink は私たちが現在利用している PSA です。プロセス手順とガイドラインは以下のリンクから確認してください。
 
-プロフェッショナルサービス運用に関するその他のすべてのプロセスは、[このページ](/handbook/customer-experience/professional-services-engineering/professional-services-operations/)で確認できます。
+Professional Services 運用に関するその他のすべてのプロセスは、[このページ](/handbook/customer-experience/professional-services-engineering/professional-services-operations/)で確認できます。
 
 ### Mavenlink ログイン
 
@@ -164,7 +164,7 @@ Mavenlink のメンバーは、プロジェクト参加者にならなくても�
 ![Mavenlink の Time Off カレンダー](/images/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/timeoff.png)
 
 GitLab の会社ポリシーでは、Time Off の申請は Workday を通して行い、この[ハンドブックのプロセス](/handbook/people-group/time-off-and-absence/time-off-types/)に従います。
-プロフェッショナルサービスグループでは、Time Off を Mavenlink にも申請することを義務付けています:
+Professional Services グループでは、Time Off を Mavenlink にも申請することを義務付けています:
 
 Mavenlink で Time Off を管理するメリット
 

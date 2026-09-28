@@ -1,6 +1,6 @@
 ---
 title: "顧客の導入を加速するサービス"
-description: "GitLab プロフェッショナルサービスを利用するメリットと顧客にとっての価値を紹介します。"
+description: "GitLab Professional Services を利用するメリットと顧客にとっての価値を紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/sales-enablement/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -26,11 +26,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 1. Services: Positioning and Process
 1. Where to go for help -->
 
-## プロフェッショナルサービス: 何を、なぜ、どのように提供するか {#professional-services-what-why-and-how}
+## Professional Services: 何を、なぜ、どのように提供するか {#professional-services-what-why-and-how}
 
 ### 何を提供するか {#what}
 
-GitLab を利用するサブスクリプションディールで顧客のビジネスを獲得しましたね、おめでとうございます！次は、関係を成長させるために信頼の基盤を築くことに集中できます。お客様が GitLab を最大限に活用できるよう、プロフェッショナルサービスでの関わりを検討してください。
+GitLab を利用するサブスクリプションディールで顧客のビジネスを獲得しましたね、おめでとうございます！次は、関係を成長させるために信頼の基盤を築くことに集中できます。お客様が GitLab を最大限に活用できるよう、Professional Services での関わりを検討してください。
 
 私たちのチームは、GitLab 製品の採用を通じて運用効率の向上、市場投入までの時間短縮、リスク低減を実現するサービスを提供することで、お客様の GitLab Adoption Journey を Onboarding から Source Code Management Consolidation、CI/CD Modernization、DevSecOps Transformation、Value Stream Management まで加速できます。
 
@@ -60,9 +60,9 @@ Implementation QuickStart GitLab.com および Self-Managed (HA) パッケージ
 
 #### セキュリティサービス {#security-services}
 
-GitLab Ultimate を利用する場合、プロフェッショナルサービスは [DevSecOps Workshop SKU](https://drive.google.com/file/d/1mZm_DiwPdtssFqBolrDqPooaH6kA5Y5u/view) を提供できます。これにより、GitLab Ultimate のキーセキュリティ機能をデモし、GitLab Ultimate 採用を促進するために戦略・ロードマップアドバイザリーセッションを提供できます。さらに、大規模および／またはカスタムの Security Transformation の取り組みを支援するため、T&M サービスも提供しています。
+GitLab Ultimate を利用する場合、Professional Services は [DevSecOps Workshop SKU](https://drive.google.com/file/d/1mZm_DiwPdtssFqBolrDqPooaH6kA5Y5u/view) を提供できます。これにより、GitLab Ultimate のキーセキュリティ機能をデモし、GitLab Ultimate 採用を促進するために戦略・ロードマップアドバイザリーセッションを提供できます。さらに、大規模および／またはカスタムの Security Transformation の取り組みを支援するため、T&M サービスも提供しています。
 
-### なぜ GitLab プロフェッショナルサービスを選ぶのか？ {#why-gitlab-professional-services}
+### なぜ GitLab Professional Services を選ぶのか？ {#why-gitlab-professional-services}
 
 #### お客様 {#customer}
 
@@ -77,13 +77,13 @@ GitLab Ultimate を利用する場合、プロフェッショナルサービス�
 
 ### どのように提供するか？ {#how-will-we-deliver}
 
-1. [GitLab プロフェッショナルサービス エンジニアリング Delivery チーム](/handbook/customer-experience/professional-services-engineering/#team-members) 経由で直接
+1. [GitLab Professional Services Engineering Delivery チーム](/handbook/customer-experience/professional-services-engineering/#team-members) 経由で直接
 1. パートナー経由
 
 ## 注文方法 {#how-to-order}
 
 サービスの注文は、**Off-the-shelf SKU** またはカスタムスコープの **Statement of Work** を通じて行います。詳細は[サービス販売ワークフロー](/handbook/customer-experience/professional-services-engineering/selling/)を参照してください。
-カスタム SOW については、`Create Services Opportunity` ボタンを使って親ライセンスまたはサブスクリプション SFDC Opportunity から子の PS Opportunity を作成し、要件を捉えるために PS Epic と関連スコーピング Issue プロセスを開始し、ローカルの[プロフェッショナルサービス Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) と協力します。
+カスタム SOW については、`Create Services Opportunity` ボタンを使って親ライセンスまたはサブスクリプション SFDC Opportunity から子の PS Opportunity を作成し、要件を捉えるために PS Epic と関連スコーピング Issue プロセスを開始し、ローカルの[Professional Services Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) と協力します。
 
 ## リソース {#resources}
 

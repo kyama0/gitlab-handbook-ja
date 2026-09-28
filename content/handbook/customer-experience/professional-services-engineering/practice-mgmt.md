@@ -1,5 +1,5 @@
 ---
-title: "プロフェッショナルサービス プラクティスマネジメント"
+title: "Professional Services プラクティスマネジメント"
 description: "GitLab のプラクティスマネジメントチームがどのように協力して働いているかをご紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/practice-mgmt/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
@@ -11,7 +11,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## プラクティスマネジメントの概要
 
-プロフェッショナルサービスのプラクティスマネジメントチームは、[現行のサービスオファリング](https://about.gitlab.com/services/) を成熟させ、新しいオファリングを作成・市場投入することを担当します。このページでは、プラクティスマネジメントチームの責任範囲、運営方法、そして組織化の進め方について説明します。
+Professional Services のプラクティスマネジメントチームは、[現行のサービスオファリング](https://about.gitlab.com/services/) を成熟させ、新しいオファリングを作成・市場投入することを担当します。このページでは、プラクティスマネジメントチームの責任範囲、運営方法、そして組織化の進め方について説明します。
 
 ## 機能領域
 
@@ -138,13 +138,13 @@ Practice Manager は新しい SKU の作成依頼に以下のステップを踏�
 
 PS オファリングの SKU の廃止は PS Practice Manager から依頼されます。SKU の廃止を依頼するには、Practice Manager は SKU の作成と同じ基本的なステップに従い、同じ Issue テンプレートを使用して適切な承認を得ます。
 
-### プロフェッショナルサービス製品ページの編集方法
+### Professional Services 製品ページの編集方法
 
 PS は services.yml というファイルを、オファリングの説明と仕様の Single Source of Truth (SSoT) として使用しています。このファイルはドキュメントマクロと組み合わせて使用され、GitLab ドキュメントのさまざまな部分にデータを供給するほか、[Services Calculator](https://services-calculator.gitlab.io/) でも使用されます。[Services SSOT Wiki Page](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ps-process/-/wikis/Services-Single-Source-of-Truth) では、その様々な用途、属性、メンテナンスプロセスについて説明しています。オファリングを更新または追加したいチームメンバーは、Wiki ページに記載されている手順に従ってください。
 
 ### 新しいサービス/イニシアチブのためのソフトウェア開発
 
-共通のソフトウェアスタックと開発プロセスについては [プロフェッショナルサービスのソフトウェア開発](/handbook/customer-experience/professional-services-engineering/professional-services-tooling/) を参照してください。
+共通のソフトウェアスタックと開発プロセスについては [Professional Services のソフトウェア開発](/handbook/customer-experience/professional-services-engineering/professional-services-tooling/) を参照してください。
 
 ### 開発環境のセットアップ
 

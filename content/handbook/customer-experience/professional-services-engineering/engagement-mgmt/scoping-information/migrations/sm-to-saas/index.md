@@ -52,7 +52,7 @@ calculator により、顧客名のエピックの子として `<Customer Name> 
 
 必要なスコーピング情報を提供したら、Engagement Manager が、私たちがスコーピングのために作成した標準計算式を使用してエンゲージメント見積りを生成します。顧客との議論（メールでの非同期またはライブミーティングでの同期）に使用できる Google sheet を作成し、PDF にできます。Engagement Manager は、スケジュールが許せば、顧客と情報をレビューするためのライブミーティングをサポートできます。各アクティビティの説明とともに [サンプルエンゲージメント見積り](https://docs.google.com/spreadsheets/d/1-RuKHcijvHyyZJeYL1jSJrn5olqDODJjz6lf9y2ZIOc/edit?usp=sharing) を確認できます。
 
-顧客が見積りに同意し、スコーピングで使用された情報が顧客の状況に対して正確であることを会話で検証したら、最終ステップは、Engagement Manager が SOW を作成し、内部承認を得て、顧客に署名のために送信することです。このプロセスの追加詳細については [GitLab プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling/) を参照してください。
+顧客が見積りに同意し、スコーピングで使用された情報が顧客の状況に対して正確であることを会話で検証したら、最終ステップは、Engagement Manager が SOW を作成し、内部承認を得て、顧客に署名のために送信することです。このプロセスの追加詳細については [GitLab Professional Services の販売](/handbook/customer-experience/professional-services-engineering/selling/) を参照してください。
 
 ## マイグレーションのスコーピングを支援するためのデータ収集
 

@@ -59,9 +59,9 @@ graph LR;
 
 ![サービス商談の作成画面](/images/customer-experience/professional-services-engineering/working-with-ps/create-services-opportunity.png)
 
-Professional Services の販売に関する詳細は、[GitLab プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling) を参照してください。
+Professional Services の販売に関する詳細は、[GitLab Professional Services の販売](/handbook/customer-experience/professional-services-engineering/selling) を参照してください。
 
-Professional Services を顧客に対してどのようにポジショニングするかについての情報は、[プロフェッショナルサービスのポジショニング](/handbook/customer-experience/professional-services-engineering/positioning) を参照してください。
+Professional Services を顧客に対してどのようにポジショニングするかについての情報は、[Professional Services のポジショニング](/handbook/customer-experience/professional-services-engineering/positioning) を参照してください。
 
 #### Professional Services エンゲージメント開始までのリードタイム {#lead-time-for-starting-a-professional-services-engagement}
 

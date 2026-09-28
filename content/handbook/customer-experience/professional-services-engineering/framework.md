@@ -1,6 +1,6 @@
 ---
-title: "プロフェッショナルサービス オファリングフレームワーク"
-description: "GitLab のさまざまなプロフェッショナルサービスオファリングと、それらがカテゴリおよびタイプにどのように組織化されているかを紹介します。"
+title: "Professional Services オファリングフレームワーク"
+description: "GitLab のさまざまな Professional Service オファリングと、それらがカテゴリおよびタイプにどのように組織化されているかを紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/framework/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -23,8 +23,8 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ### サービスタクソノミー
 
-1. **顧客の GitLab 採用ジャーニー**: プロフェッショナルサービスは、顧客の GitLab ジャーニーに対応するようサービスを組織化しており、次のサービスピラーがあります: `ソースコード管理（SCM）コンソリデーション`、`CI/CD モダナイゼーション`、`DevSecOps トランスフォーメーション`、`バリューストリーム管理`。一部のサービスは、複数のピラーをまたぐ可能性があります（例: オンボーディング、エデュケーション、Duo）。
-1. **カテゴリ**: 現在、プロフェッショナルサービスは 2 つの主要なカテゴリのサービスを提供しています: `エデュケーション` と `コンサルティング`。
+1. **顧客の GitLab 採用ジャーニー**: Professional Services は、顧客の GitLab ジャーニーに対応するようサービスを組織化しており、次のサービスピラーがあります: `ソースコード管理（SCM）コンソリデーション`、`CI/CD モダナイゼーション`、`DevSecOps トランスフォーメーション`、`バリューストリーム管理`。一部のサービスは、複数のピラーをまたぐ可能性があります（例: オンボーディング、エデュケーション、Duo）。
+1. **カテゴリ**: 現在、Professional Services は 2 つの主要なカテゴリのサービスを提供しています: `エデュケーション` と `コンサルティング`。
 1. **タイプ**: サービスのタイプをさらに分類することで、ビジネストレンドの分析、投資の優先順位付け、デリバリーのスケジューリングに役立ちます。サービスのタイプは、サービスのカテゴリごとに分類されます。これらのサービスタイプはユビキタス言語を使用しています。これらは、顧客のバイヤー、アカウントチーム、エンゲージメントマネージャー、デリバリーチームに対して同じ意味を持つべきです。`マイグレーション`、`実装（Implementation）`、`CI/CD`、`セキュリティ` は、`コンサルティング` カテゴリのサービスタイプの例です。`カスタム` および `スタンダード` は、`エデュケーション` カテゴリのサービスタイプです。
 1. **オファリング**: 各サービスタイプには複数のオファリングがあります。市場のトレンドを特定するにつれて、サービスタイプごとにより多くのオファリングを蓄積し構築していきます。例えば、`コンサルティング` カテゴリの `実装` タイプには、[セルフマネージドヘルスチェック](https://drive.google.com/file/d/1OWZdw44MMaYLyrvxGo96vYuzz5wTXeaq/view) およびその他の一般的な実装サービスがあります。
 
@@ -89,12 +89,12 @@ The services maturity framework provides for 5 maturity levels for offerings: pl
 - **マーケティングページの更新**: プラクティスは必要に応じてマーケティングページを更新します。
   - [サービスカタログ](https://about.gitlab.com/professional-services/catalog/)
   - [about.gitlab.com/services](https://about.gitlab.com/services/) ページを [Contentful](https://be.contentful.com/) で更新
-  - [プロフェッショナルサービスリソースページ](https://gitlab.highspot.com/spots/66e33314264c184203383750?list=all&overview=true) を HighSpot で更新
+  - [Professional Services リソースページ](https://gitlab.highspot.com/spots/66e33314264c184203383750?list=all&overview=true) を HighSpot で更新
 
 ### 継続的なイネーブルメントセッション
 
 - **デイリー PS オファリングワーキングセッション**: プラクティスマネジメントが主導
-- **金曜日 PS イネーブルメントセッション**: プロフェッショナルサービスエンジニアおよびテクニカルアーキテクトが主導
+- **金曜日 PS イネーブルメントセッション**: Professional Service Engineers および Technical Architects が主導
 
 ### SKU の追加ステップ
 

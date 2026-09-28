@@ -55,7 +55,7 @@ CSM チームでのインターンシップは通常 3 ヶ月間で、インタ�
    1. [アカウントチーム](/handbook/customer-experience/account-team/)
    1. [Solutions Architect と CSM の重複領域](/handbook/customer-experience/#overlap-between-solution-architects-and-customer-success-managers-or-architects)
    1. [サポートチームの概要](/handbook/support/)
-   1. [プロフェッショナルサービスオファリング](https://about.gitlab.com/services/)
+   1. [Professional Services オファリング](https://about.gitlab.com/services/)
    1. [バージョン管理とは](https://docs.google.com/presentation/d/16sX7hUrCZyOFbpvnrAFrg6tVO5_yT98IgdAqOmXwBho/edit#slide=id.g72f2e4906_2_29)
    1. [Git を始めよう](https://www.youtube.com/watch?v=Ce5nz5n41z4)
    1. [コマンドラインで Git を使い始める](https://docs.gitlab.com/ee/topics/git/commands.html)

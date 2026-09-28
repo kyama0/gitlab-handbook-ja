@@ -1,5 +1,5 @@
 ---
-title: プロフェッショナルサービスオペレーション
+title: Professional Service Operations
 category: Internal
 description: "GitLab Professional Services のオペレーションプロセスとワークフローについて学びます。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-operations/

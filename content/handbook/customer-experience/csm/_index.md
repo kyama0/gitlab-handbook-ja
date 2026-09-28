@@ -178,7 +178,7 @@ CSM が関与する領域の概要については[CSM エンゲージメント�
 - [CSM 四半期ビジネスレビュー](/handbook/customer-experience/csm/qbr/)
 - [CSM の責任とサービス](/handbook/customer-experience/csm/services/)
 - [CSM とプロダクトのインタラクション](/handbook/product/product-management/#how-to-engage-product-managers)
-- [CSM とプロフェッショナルサービスのインタラクション](/handbook/customer-experience/csm/engaging-with-ps/)
+- [CSM と Professional Services のインタラクション](/handbook/customer-experience/csm/engaging-with-ps/)
 - [CSM とサポートのインタラクション](/handbook/customer-experience/csm/support/)
 - [CSM とパートナーのインタラクション](/handbook/customer-experience/csm/engaging-with-partners/)
 - [エスカレーションプロセス](/handbook/customer-experience/csm/escalations/)
