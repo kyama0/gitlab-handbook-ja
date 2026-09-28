@@ -69,7 +69,7 @@ lastmod: "2026-08-11T11:43:02+10:00"
 
 [Support Leaders on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook) は、シフト中に受け取ったチケット途中のフィードバックの初回トリアージを担当します。通知は `#support_ticket-attention-requests` チャンネルに投稿されます。
 
-### フィードバックのソース
+### フィードバックのソース {#sources-of-feedback}
 
 現在、以下の方法でレビュー用のフィードバック Issue が作成されます:
 

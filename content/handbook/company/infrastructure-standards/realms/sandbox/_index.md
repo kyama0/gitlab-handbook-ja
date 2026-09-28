@@ -50,7 +50,7 @@ Sandbox Cloud は [CorpSec Identity](/handbook/security/corporate/) チームに
 
 ### はじめ方 {#how-to-get-started}
 
-#### 個人 AWS アカウントまたは GCP プロジェクト
+#### 個人 AWS アカウントまたは GCP プロジェクト {#individual-aws-account-or-gcp-project}
 
 すべてのチームメンバーは、以下のセルフサービス手順を使用して、個人用（サンドボックス、テストなど）の AWS アカウントまたは GCP プロジェクトをプロビジョニングできます。セキュリティ上の理由から、個人アカウントには他のチームメンバーを招待できません。
 
@@ -138,7 +138,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 
 詳細については [Domain Names and DNS Records](https://internal.gitlab.com/handbook/security/product_security/infrastructure_security/guides/domains-dns/) InfraSec ガイドの内部ハンドブックページを参照してください。
 
-## Terraform 環境
+## Terraform 環境 {#terraform-environments}
 
 ### Terraform 環境の仕組み
 
@@ -148,7 +148,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 - 今後数か月で、わずか数回のクリックでプロビジョニングできる事前構成済み環境を提供する追加のプロジェクトテンプレートをリリースする予定です。これには [Omnibus/Runner/Cluster オールインワン環境](https://gitlab.com/gitlab-com/infra-standards/terraform-modules/gcp/gitlab-omnibus-sandbox-tf-module)、Kubernetes クラスター環境などが含まれます。[GitLab Environment Toolkit](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) のサポート方法を探求できる基盤もあります。
 - 同じ Cloud Account 内の異なる環境や設定のために Sandbox Cloud UI で簡単に追加の Terraform プロジェクトを作成することもでき、実験中のユースケースに基づいてモジュール/リソース設定を分離できます。
 
-### Terraform 環境の作成方法
+### Terraform 環境の作成方法 {#how-to-create-a-terraform-environment}
 
 1. [https://gitlabsandbox.cloud](https://gitlabsandbox.cloud) にサインインします
 1. GCP で Cloud Account（GCP プロジェクト）を作成するか、既存のプロジェクトに移動します。

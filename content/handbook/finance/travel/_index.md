@@ -129,6 +129,6 @@ International SOSは保険会社への請求提出の手順についてもサポ
 - 出発前に、絶対に必要ではない機密データをローカルマシンから削除してください。詳細については、[データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-standards)を参照してください。
 - Defconのような特殊なカンファレンスへの出張など、特有のセキュリティリスクをもたらす可能性のある状況の出張に気づいている場合は、Slackの[#security-division](https://gitlab.slack.com/archives/CM74JMLTU)チャンネルでアドバイスを求めることができます。
 
-### 出張中の経費
+### 出張中の経費 {#expenses-while-traveling}
 
 出張前に[グローバル出張・経費ポリシー](/handbook/finance/expenses/)のガイドラインを理解してください。

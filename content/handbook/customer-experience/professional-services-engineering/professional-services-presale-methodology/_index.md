@@ -1,6 +1,6 @@
 ---
-title: "プロフェッショナルサービス プリセールス方法論"
-description: "プリセールスサイクルにおいて GitLab がプロフェッショナルサービスをどのようにスコープし、Customer Journey に組み込んでいくかを紹介します。"
+title: "Professional Services のプリセールス方法論"
+description: "プリセールスサイクルにおいて GitLab が Professional Services をどのようにスコープし、Customer Journey に組み込んでいくかを紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T00:10:26+00:00"
@@ -11,7 +11,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## Customer Journey に対応付けた PS プロセスと方法論
 
-プロフェッショナルサービスのプロセスと方法論は、カスタマーサクセスが支える Customer Journey の中に組み込まれています。プロフェッショナルサービスは **SOW Close** から **Project Close** フェーズまでの Customer Journey に貢献します。
+Professional Services のプロセスと方法論は、カスタマーサクセスが支える Customer Journey の中に組み込まれています。Professional Services は **SOW Close** から **Project Close** フェーズまでの Customer Journey に貢献します。
 
 ![PS デリバリーのカスタマージャーニーフロー](/images/professional-services/customer-journey-mapped-ps-process.png)
 
@@ -27,13 +27,13 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## プリセールスの概要
 
-このページの目的は、プロフェッショナルサービスの Engagement Manager と Regional Delivery Manager が用いる、セールス支援型のセリングモーションを文書化することです。GitLab の営業アカウントチームに所属していて情報をお探しの場合は、[プロフェッショナルサービスのポジショニング](/handbook/customer-experience/professional-services-engineering/positioning)や[プロフェッショナルサービスの販売](/handbook/customer-experience/professional-services-engineering/selling/#custom-scoped-services)に関するページをご覧ください。
+このページの目的は、Professional Services Engagement Manager と Regional Delivery Manager が用いる、セールス支援型のセリングモーションを文書化することです。GitLab の営業アカウントチームに所属していて情報をお探しの場合は、[Professional Services のポジショニング](/handbook/customer-experience/professional-services-engineering/positioning)や[Professional Services の販売](/handbook/customer-experience/professional-services-engineering/selling/#custom-scoped-services)に関するページをご覧ください。
 
 このページでは、サービスのポジショニングとスコーピングに関与するタイミングと方法、見積もり方法、SOW 生成ソフトウェアの使い方、承認を得るためのプロセスを説明します。
 
 > *注: サービス契約には[2 つの形態](/handbook/customer-experience/professional-services-engineering/selling)があります。本ページでは、Standard SKU プロセスではなく **カスタム SOW スコーピング** プロセスに焦点を当てます。*
 
-カスタム SOW については、[SOW 作成のワークフロー](/handbook/customer-experience/professional-services-engineering/selling/#custom-scoped-services)はアカウントチームとプロフェッショナルサービスチームのパートナーシップによって進められます。
+カスタム SOW については、[SOW 作成のワークフロー](/handbook/customer-experience/professional-services-engineering/selling/#custom-scoped-services)はアカウントチームと Professional Services チームのパートナーシップによって進められます。
 
 [出典: GitLab チームメンバー限定](https://docs.google.com/presentation/d/1TOI2aoseBoyWYQC6-xpJVMknEncCNreSFfMvOHO7EBA/edit#slide=id.gbfb62d0c00_0_58)
 
@@ -64,7 +64,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 顧客がプロフェッショナルサービスを利用したいと判明したら、アカウントチームの責任で[Engagement Manager に連絡](/handbook/customer-experience/professional-services-engineering/engagement-mgmt/#how-to-contact-or-collaborate-with-us)します。
 
-## 2. スコーピング
+## 2. スコーピング {#2-scoping}
 
 - **DRI**: Engagement Manager
 - **サポート**: PS Practice、アカウントチーム (SAE/AE, SA, CSM)
@@ -79,7 +79,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ### 契約見積もりのイテレーション／レビュー
 
-たたき台に詳細を肉付けする最初のイテレーションを終えたら、Engagement Manager は[プロフェッショナルサービスの Slack チャンネル](/handbook/customer-experience/professional-services-engineering/working-with/#slack)でアカウントチームにレビューを依頼します。多くの場合、Engagement Manager は顧客と Zoom コールを行い、コンテキストを提供してフィードバックを集めます。
+たたき台に詳細を肉付けする最初のイテレーションを終えたら、Engagement Manager は[Professional Services の Slack チャンネル](/handbook/customer-experience/professional-services-engineering/working-with/#slack)でアカウントチームにレビューを依頼します。多くの場合、Engagement Manager は顧客と Zoom コールを行い、コンテキストを提供してフィードバックを集めます。
 
 ### SOW の生成
 
@@ -91,7 +91,7 @@ SOW が生成されたら、アカウントチームによるレビューが可�
 
 ### SOW レビュー／承認
 
-アカウントチームからのフィードバックに対して 1 回または複数回のイテレーションを経た後、SOW は Sr. Director of Professional Services のレビュー・承認待ちとなります。レビュープロセスは[プロフェッショナルサービスの Slack チャンネル](/handbook/customer-experience/professional-services-engineering/working-with/#slack)で告知され、GitLab 側の契約ステークホルダーに **at-mention** されます。
+アカウントチームからのフィードバックに対して 1 回または複数回のイテレーションを経た後、SOW は Sr. Director of Professional Services のレビュー・承認待ちとなります。レビュープロセスは[Professional Services の Slack チャンネル](/handbook/customer-experience/professional-services-engineering/working-with/#slack)で告知され、GitLab 側の契約ステークホルダーに **at-mention** されます。
 
 ## 3. デリバリー準備
 

@@ -1,5 +1,5 @@
 ---
-title: "プロフェッショナルサービス Technical Architect"
+title: "Professional Services Technical Architect"
 upstream_path: /handbook/customer-experience/professional-services-engineering/technical-architect/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -10,7 +10,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## 私たちは何者か
 
-GitLab のプロフェッショナルサービス Technical Architect (TA) チームは、技術リーダーシップ、プリセールスサポート、デリバリー監督、職能横断的な役割間の協業促進を担う、高いスキルを持つ専門家で構成されています。GitLab プラットフォーム、DevOps プラクティス、業界のベストプラクティスへの深い知識を持ち、お客様と緊密に連携してそれぞれ固有の課題を理解し、ビジネス目標に沿ったテーラーメイドのソリューションを提供します。私たちのチームは技術的・非技術的なステークホルダー間のギャップを埋め、スコーピングプロセスや契約全体を通じて明確なコミュニケーションとアラインメントを確保します。私たちは、サービスの改善、卓越した価値の提供、お客様が DevOps Transformation Journey において GitLab プラットフォームの利点を最大化できるようにする方法を継続的に模索しています。
+GitLab の Professional Services Technical Architect (TA) チームは、技術リーダーシップ、プリセールスサポート、デリバリー監督、職能横断的な役割間の協業促進を担う、高いスキルを持つ専門家で構成されています。GitLab プラットフォーム、DevOps プラクティス、業界のベストプラクティスへの深い知識を持ち、お客様と緊密に連携してそれぞれ固有の課題を理解し、ビジネス目標に沿ったテーラーメイドのソリューションを提供します。私たちのチームは技術的・非技術的なステークホルダー間のギャップを埋め、スコーピングプロセスや契約全体を通じて明確なコミュニケーションとアラインメントを確保します。私たちは、サービスの改善、卓越した価値の提供、お客様が DevOps Transformation Journey において GitLab プラットフォームの利点を最大化できるようにする方法を継続的に模索しています。
 
 ## プリセールスサポート
 
@@ -27,7 +27,7 @@ TA チームは、[MEDDPICC](/handbook/sales/meddppicc/) セールスクオリ�
 - Engagement Manager がお客様が現在直面している技術的課題のスコーピングを支援する。
 - 成果物と労力レベルを含む Statement of Work (SOW) を承認する。
 
-## Architect とのエンゲージメント
+## Architect とのエンゲージメント {#engage-with-an-architect}
 
 ### 一般的なエンゲージメントルール
 

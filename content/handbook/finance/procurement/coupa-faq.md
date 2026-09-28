@@ -64,7 +64,7 @@ lastmod: "2025-01-09T01:20:19+00:00"
 
 - Coupa システムで適切に設定するために、最初のメールへの返信が依然として必要です。設定が完了すると、GitLab を Coupa サプライヤーポータルアカウントに簡単にリンクできるようになります。
 
-### Coupa サプライヤーポータルに関する詳細情報はどこで見つかりますか？
+### Coupa サプライヤーポータルに関する詳細情報はどこで見つかりますか？ {#where-can-i-find-more-information-on-the-coupa-supplier-portal}
 
 - Coupa サプライヤーポータルに関する有用なリンクをご紹介します：
   - <https://compass.coupa.com/en-us/products/product-documentation/supplier-resources/for-suppliers>

@@ -62,7 +62,7 @@ GitLab のリーダーとのミーティングを設定したい場合は、適�
 1. ミーティングの議題
 1. コンテキストの提供: [アジェンダドキュメント](https://docs.google.com/document/d/1NOrWfwnbnas4jktAsgiFKSKY787xNKbBx1siLIAoV4M/edit?usp=sharing)へのリンクを含め、ドキュメント内にもコンテキストを記載してください。これにより、EBA が E-Group とのミーティング内容を適切に理解し、優先順位を付けられます。この Google Docs はカレンダー招待に必ず含める必要があります。ミーティングを依頼する側は、アジェンダドキュメントを準備する責任があります。
 
-### E-Group メンバーとの顧客・見込み顧客・パートナーとのミーティング
+### E-Group メンバーとの顧客・見込み顧客・パートナーとのミーティング {#customer-prospect-and-partner-meetings-with-an-e-group-member}
 
 GitLab の E-Group メンバーとあなたの顧客、見込み顧客またはパートナーとの通話をスケジュールするには、上記の指示に従ってください。顧客、パートナー、見込み顧客とのミーティングをスケジュールするには、以下のドキュメントが必要です。
 

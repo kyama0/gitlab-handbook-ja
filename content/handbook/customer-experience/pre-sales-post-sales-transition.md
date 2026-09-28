@@ -23,7 +23,7 @@ CSM の担当割り当てに関する質問（既存顧客または新規適格�
 
 顧客が Dedicated を利用予定の場合、アカウントチームは連携している CSM マネージャーに通知し、プリセールスプロセス中に CSM をエンゲージするために[Dedicated 顧客向けの CSM エンゲージメントのベストプラクティス](https://internal.gitlab.com/handbook/customer-experience/csm/gitlab-dedicated/)を把握しておく必要があります。
 
-## 引き継ぎクイックサマリー
+## 引き継ぎクイックサマリー {#transition-quick-summary}
 
 | ---  |  ---   |
 | CSM の紹介を**誰が**コーディネートするか？ | ソリューションアーキテクト |
@@ -32,7 +32,7 @@ CSM の担当割り当てに関する質問（既存顧客または新規適格�
 | 紹介の**方法**は？ | SA は、CSM を含む[アカウントチーム](/handbook/customer-experience/account-team/)全体と内部で同期した後、顧客チームとの「GitLab へようこそ」コールをスケジュールします。 |
 | CSM がアカウント情報に**どこで**アクセスできるか？ | - 顧客ミーティングノートドキュメント <br> - コマンドプラン <br> - アカウントプラン <br> - 顧客戦略/バリュープラン |
 
-## CSM 引き継ぎプロセス
+## CSM 引き継ぎプロセス {#csm-transition-process}
 
 私たちは、顧客がまだ見込み客として[ステージ](/handbook/sales/field-operations/gtm-resources/) `3-Technical Evaluation` の終盤にいる段階、または `4-Proposal` に移行するタイミングで CSM を紹介したいと考えています。
 

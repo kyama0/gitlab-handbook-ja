@@ -39327,6 +39327,814 @@
       "translated_at": "2026-09-27T06:13:05+00:00",
       "model": "codex",
       "input_hash": "8245a3b3b18530eb4096fb970e43813a7d3742b4e16505c7a76838926df30f6d"
+    },
+    "content/handbook/customer-experience/governance-question-bank.md": {
+      "path": "content/handbook/customer-experience/governance-question-bank.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4225796e69326e9c27e6d3e4ba4b7715da329abafde89cf16a9403f1e46d9055"
+    },
+    "content/handbook/customer-experience/using-salesforce-within-customer-success.md": {
+      "path": "content/handbook/customer-experience/using-salesforce-within-customer-success.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "58d8b6d140b9b378a215fd6b03a01585a57aa2a0b4623ab6e8814ef404fa57de"
+    },
+    "content/handbook/customer-experience/customer-terrain-mapping.md": {
+      "path": "content/handbook/customer-experience/customer-terrain-mapping.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "717d09e59d944bbe49e400219c52cd63ad80bb02cba598ebda533356de00baf6"
+    },
+    "content/handbook/customer-experience/account-team.md": {
+      "path": "content/handbook/customer-experience/account-team.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "93ae69d612689c37b7e9ce1d941149ad989e3b7df56c14afcb8b41eabe33b03e"
+    },
+    "content/handbook/customer-experience/success-services/_index.md": {
+      "path": "content/handbook/customer-experience/success-services/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9a4cb254efa111b529097670ddc3c64b3dd4eb86ac8064dbaef5e46a488ada59"
+    },
+    "content/handbook/customer-experience/partners/capabilities-journey.md": {
+      "path": "content/handbook/customer-experience/partners/capabilities-journey.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "cd6c4958e03872eb572068cc8a54dbfcf477b873d863efc46033cbeb8b8d1722"
+    },
+    "content/handbook/customer-experience/comm-sales/_index.md": {
+      "path": "content/handbook/customer-experience/comm-sales/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "07d1022bdba5710b383f49a99ddefec39055135eaef7f9cf377541db5d5596e9"
+    },
+    "content/handbook/customer-experience/csm/csm-development.md": {
+      "path": "content/handbook/customer-experience/csm/csm-development.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "32b6e7cfe66924415391567c786fbec2e0d2711c9438088997aafcd51aa72d96"
+    },
+    "content/handbook/customer-experience/csm/support.md": {
+      "path": "content/handbook/customer-experience/csm/support.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b6650379c7ae9abf6d7ea65894d571e62fa0f1d0b1934be8f2d2046bde3b69b6"
+    },
+    "content/handbook/customer-experience/csm/engaging-with-partners.md": {
+      "path": "content/handbook/customer-experience/csm/engaging-with-partners.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "86425ff2d2edad134995e780c4ba9d7f812dddf048a643fade781d2a5e2ce1ee"
+    },
+    "content/handbook/customer-experience/csm/_index.md": {
+      "path": "content/handbook/customer-experience/csm/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "45fd1fee4e9f318bb55be8c6f292893d7de7731ea4b3fe1ba55b923ae7db7e95"
+    },
+    "content/handbook/customer-experience/csm/retrospectives.md": {
+      "path": "content/handbook/customer-experience/csm/retrospectives.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4d2b42811b907b4c5a435d25eb924566d7f43e6b3c4fcb766b1231a4470a4074"
+    },
+    "content/handbook/customer-experience/csm/ebr.md": {
+      "path": "content/handbook/customer-experience/csm/ebr.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "ea41e3ac08a991682edcb52453e7d9292cd56a3cef34c7897ed0d327b1b76df3"
+    },
+    "content/handbook/customer-experience/csm/engaging-with-ps.md": {
+      "path": "content/handbook/customer-experience/csm/engaging-with-ps.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "0c1d012becf9404eca457a25c6a660cd7d763c0c6c6fa0132c623a964eac8705"
+    },
+    "content/handbook/customer-experience/csm/csm-internship.md": {
+      "path": "content/handbook/customer-experience/csm/csm-internship.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fde439a9020c41f6e28318e611cbe3df4400bcb95e554edcd55c8d658e58b185"
+    },
+    "content/handbook/customer-experience/csm/customer-collaboration-project.md": {
+      "path": "content/handbook/customer-experience/csm/customer-collaboration-project.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fb0f118b286abc8b928323695ffebbd4aa726624a2e9319f99336c371595531d"
+    },
+    "content/handbook/customer-experience/csm/account-handoff.md": {
+      "path": "content/handbook/customer-experience/csm/account-handoff.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "914bb4a7e015cfc501222277dd6adcb23e5c4f338c6c1d4b73883f6797a629ab"
+    },
+    "content/handbook/customer-experience/csm/cadence-calls.md": {
+      "path": "content/handbook/customer-experience/csm/cadence-calls.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fd11b8e76c5b67032acd86a75e482e401784900d1a61e12289637bf096cd40cf"
+    },
+    "content/handbook/customer-experience/csm/stage-adoption.md": {
+      "path": "content/handbook/customer-experience/csm/stage-adoption.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "68823a718cceb7f9254d8d4823d6f96af080b8de9eb837716b59bc1e33101ccb"
+    },
+    "content/handbook/customer-experience/csm/workshops.md": {
+      "path": "content/handbook/customer-experience/csm/workshops.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "5f627e0629da12f90ad0954cef4968e3cffaec98ae556b08e3ca3db8547a3e35"
+    },
+    "content/handbook/customer-experience/csm/onboarding.md": {
+      "path": "content/handbook/customer-experience/csm/onboarding.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "6a17726bdb5eff077da880bfdd380ccf1f46b9ea78680f66438d978a6b9a605b"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/partner-collaboration.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/partner-collaboration.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "dd37ad86a5a73ad11d3efe89e9c0ca870bbfa3d7207faf8f733b719c85c768a0"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/selling.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/selling.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "ac8c936e3cc1e4dd3b822a26caa8acdf0ee49d3e3b4d45e74929400f579c5c06"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a937cf6f859154f79fb97cdfc39a2023697933583ddbad9b724b0a61130e58ae"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/working-with.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/working-with.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "58da82f0d8d7c300b6c42116310762fc4db372cbc3670248d84ab24100eed07b"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/practice-mgmt.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/practice-mgmt.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "0eae342321bd6b5162c08551a6ac8becaf56f4e1bd1515c314d0da8e77b994bf"
+    },
+    "content/handbook/customer-experience/customer-success-vision/index.md": {
+      "path": "content/handbook/customer-experience/customer-success-vision/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9aeeea69730492bc5df2d46b545ea0c51a6a1a0ff7b006df27b0022000f82ca4"
+    },
+    "content/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc.md": {
+      "path": "content/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a17ece37230b4a171d55ae4d1df251544b32e050e137c9b4b7d252321b594cc7"
+    },
+    "content/handbook/customer-experience/customer-health-scoring/index.md": {
+      "path": "content/handbook/customer-experience/customer-health-scoring/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "6e6d9ea577d440c4b9832c7008bb067bc64622f15c077bf61936840f6f3361fd"
+    },
+    "content/handbook/customer-experience/playbooks/_index.md": {
+      "path": "content/handbook/customer-experience/playbooks/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "c4a8030a3f5969fcfbbe283e65f0a9b59cc678da9366d75698dae1175b5890b9"
+    },
+    "content/handbook/customer-experience/public-sector/solutions-architects.md": {
+      "path": "content/handbook/customer-experience/public-sector/solutions-architects.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "54ef60301b5c05fbaca3102e4961e1700c5667a34e9e6c905adfa5b81f52b238"
+    },
+    "content/handbook/customer-experience/renewals-managers/home/index.md": {
+      "path": "content/handbook/customer-experience/renewals-managers/home/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "3bc18d6dd6c82d8dc087c3dc8a0af23ef60af6a3355b88546b642458736f4c28"
+    },
+    "content/handbook/customer-experience/demo-systems/tutorials/integrations/create-jenkins-pipeline.md": {
+      "path": "content/handbook/customer-experience/demo-systems/tutorials/integrations/create-jenkins-pipeline.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "74eccd4e1be9ba7745f566f9eacee58a40bd790b2b14b1f019e740d47953e2bf"
+    },
+    "content/handbook/customer-experience/product-usage-data/use-case-adoption/index.md": {
+      "path": "content/handbook/customer-experience/product-usage-data/use-case-adoption/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4f3e05b20f5e75dfe9c3a5a07f24cdc150c119a86371101ca228b4db48c1264d"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a4f4b7346f05cb232160b2ed541a171cdd7464f633e2317a8e41251a94d8a72b"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-operations/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-operations/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "0c5369af1d58552f7f49cffe37b2a930d09478e0b9157216b22b1bb33625f3a8"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/positioning/index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/positioning/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "39e3cdffa86779ab53809f86a23de9aa346f715d60c12c8aed9c3e968ad4f236"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/workflows/process.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/workflows/process.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "e430f1b9b1369845fcd6b2eb951c482035bd5c402de6711abfc51883190ec430"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "7218d1b147221f331940ad5d3da4684366c4e5b77d9394796a7c3343a01c1789"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a6692933e896f623d6ff39bf39d302fb18d0f91eac939a97c3fc677c71b79304"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "f7d02f564027d581bb9fe355b20beabbf2765cafd311644b43dee65f0e45a933"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fbb666de51a931f89ab51164a1aa7b42babe23f663fcdf2216f5362bb85754ea"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "41ad96ac581af1269fb0ed371251632e4f5bb05acee805783011786a77c8a3f9"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab1.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab1.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "aa36c3a70b0688a0a1c2d1ffef6ab39bc5c7ce53353481971d11d86697e3d009"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "fbe20e55d6d9469a59d9e182a6c051423ab3057fca2c620cb9ea4e5266b5b337"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab4.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab4.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8d54f5180223a6ec76b31e3af39be411d0479bf28299200391deaf2c56dcaeeb"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab3.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab3.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "6345a62d8ff05c4fc010cd31b595e57666b15e0c98ba34f1d12471de4159ddef"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/workflows/internal/biz-ops.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/workflows/internal/biz-ops.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "098525b331e0d391aa77b127fe409fcfec05a76cdb125cfc4751a9e904a51db8"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "f9e8467b2f6b1b0e77c9acb9a1b1a90467d3a948b7fe388395f68c1c4eb3da9b"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/workflows/internal/15minute-standup.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/workflows/internal/15minute-standup.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8147ce9f9d16ec414c8928c507a0e53c07d4ef79d1545e5468b2b32494cd8979"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/workflows/project-execution/kick-off.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/workflows/project-execution/kick-off.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "31018fb5bd07936d358c61ce330c000f7fd0448ea90bb127f50a2c5a1ca18284"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/workflows/intake/on-prem.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/workflows/intake/on-prem.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "2c26b95b1bc41a73bb11c339fcb0efa700b9ee3fb276add058729361ad92e6f0"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/workflows/intake/aws.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/workflows/intake/aws.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "cf68ffe8115247f2c39e132584fc1d792dd69d517e86d71c3c6e94f1b2963e9b"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-operations/mavenlink-processes/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "d481cd5cac3ddf81b7278ed477070beec549fe6fddb36a6784a5a7372a631e10"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/readiness.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/readiness.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "4f7002d353b82291fd629a1f77864c0a236b9843cb4afe0c4ec35db1368653d3"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/ci-pipeline.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/ci-pipeline.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "3b168b3326fbf4769af9ee8287046a42c3528d0233dffcd266cf4dae6823f629"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/implementation.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/implementation.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "657fbea92a0288f6d7bb7dd3e5fef23ed150c169ac20b7767856224b1adb0666"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/migrations/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/migrations/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b4a036ead41d9952011aa2fc7a1bb5270aae8eb916b5436f6cc2a9023d4ccac1"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/migrations/sm-to-saas/index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/migrations/sm-to-saas/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "d166905a8a5ea19652b3d95da388ab9c7e546403584cf81c55780f716dcefd50"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/gitlab-best-practices/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/gitlab-best-practices/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "53f1ed6c259cd563043e232739873bf481e819d9f57dc748428d405eb6fe16db"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-ready/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-ready/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "febaa49dda859a0c2c2dd246df9f5734b0c867a6beba98679a5c258e4bd8b322"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/backlog-management/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "e8356eb4a21c42b741aba425cce08ba95b08d8835519eb027cfb1decd21d57aa"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-user-stories/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-user-stories/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b7ab872a3e4469e90d863d8fa4124af37eba0a4c107209202fe4360c5eef069d"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "397a01ae7a99bd01586eb4d086c4d18b5a7bf4476e292c34bf0adb343cc02bf3"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-scheduling/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-scheduling/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "e835e4e7d1fb05ad9c50313afbe93107dfeff5468c0eb6ee2506be6a5aa2c143"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "10cf7f9764385aed5f6ae848f2c3ca07ad1b8ed72c796b8182949f5c2f981d37"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9a4001e7055ec14e04e1e1aa3ea220ba5346dcae854e0293498bd8caf5520d8d"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/archetype-definition/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/archetype-definition/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "8cd5d9309053eb8674242413d768392c98c5923170b8cc841babf15c6e43b30e"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "ef2ad385cb57c1db66d15c43f0eaa41b064bff44b7a9aa667c04c0ec663d5ad1"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/discovery/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/discovery/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "96dacc427d47ad179b6970e2183f8d3e36133f98565844715c71b8819e95c88a"
+    },
+    "content/handbook/customer-experience/csm/success-plans/questions-techniques.md": {
+      "path": "content/handbook/customer-experience/csm/success-plans/questions-techniques.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "bbf310ba86455255b90f96246c6871d6bf1aa9520dfeaedb82d43ca0f5f96cf8"
+    },
+    "content/handbook/customer-experience/csm/services/infrastructure-upgrade.md": {
+      "path": "content/handbook/customer-experience/csm/services/infrastructure-upgrade.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9f808eeee0bfca44427ed4c5de7d5afecd979335454e737f9d0f415bccc1cdc5"
+    },
+    "content/handbook/customer-experience/csm/engagement/_index.md": {
+      "path": "content/handbook/customer-experience/csm/engagement/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9b399edce079fbd1061443bb922c70371adee6832fbaee3ff18db46cb8f0a556"
+    },
+    "content/handbook/customer-experience/csm/engagement/non-engaged-customer-strategies.md": {
+      "path": "content/handbook/customer-experience/csm/engagement/non-engaged-customer-strategies.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "943f4d23dad83fc335386488f186ef579e9e22aea0bd53b140f820f01b85ab5b"
+    },
+    "content/handbook/customer-experience/csm/segment/amer.md": {
+      "path": "content/handbook/customer-experience/csm/segment/amer.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "6eb41b95a14bd36219bc196d8feb4714ee6fa5b0a30963c8be1155ebf2b399e4"
+    },
+    "content/handbook/customer-experience/csm/segment/emea.md": {
+      "path": "content/handbook/customer-experience/csm/segment/emea.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "95132efb96d452b9148ece412eff5755726f0aada361af593116ec8469565b50"
+    },
+    "content/handbook/customer-experience/csm/escalations/infrastructure.md": {
+      "path": "content/handbook/customer-experience/csm/escalations/infrastructure.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "c9347bf3bf0f7f7a75d2f0dc690952b85c4478043b0107941503fd31e37ef544"
+    },
+    "content/handbook/customer-experience/csm/health-score-triage/index.md": {
+      "path": "content/handbook/customer-experience/csm/health-score-triage/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "eb5d50fc8cfccce4ff63909aa2b31ca07772b4ad47b93e8acc1a6f138828b54e"
+    },
+    "content/handbook/customer-experience/csm/renewals/index.md": {
+      "path": "content/handbook/customer-experience/csm/renewals/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "c811b8c94aca9ca9009a4c1a2f0f46bebc284fb297b0cb57a7dd92c3d466104e"
+    },
+    "content/handbook/customer-experience/csm/risk-mitigation/self-managed-vs-saas.md": {
+      "path": "content/handbook/customer-experience/csm/risk-mitigation/self-managed-vs-saas.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "5212616a79a85ff2fda425e94a9709859e019dc54c67595c32124fb5ea3b6ae9"
+    },
+    "content/handbook/customer-experience/csm/gainsight/_index.md": {
+      "path": "content/handbook/customer-experience/csm/gainsight/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "aab5ddc1fa7f5b20760fd087a675723a0a45f6507ff5de77bcc5f6feff7f60b9"
+    },
+    "content/handbook/customer-experience/csm/gainsight/ctas.md": {
+      "path": "content/handbook/customer-experience/csm/gainsight/ctas.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "0484d84f139e13bdec181becb3de154d49e7fd2e6b1e5bc5f279e87765f21262"
+    },
+    "content/handbook/customer-experience/csm/gainsight/deployment-types.md": {
+      "path": "content/handbook/customer-experience/csm/gainsight/deployment-types.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a018886745cbddd54b80bd2b35ca6f5868186e93964a6c4448b61736b79fe3a5"
+    },
+    "content/handbook/customer-experience/csm/gainsight/c360-overview.md": {
+      "path": "content/handbook/customer-experience/csm/gainsight/c360-overview.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "2890b930c1986eb95abf59ed6ad8777d71e95776f42bbada4e4a1b36beecf70f"
+    },
+    "content/handbook/customer-experience/csm/gainsight/dashboards.md": {
+      "path": "content/handbook/customer-experience/csm/gainsight/dashboards.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "e461ba523957acfbbbd49bb7db860291893ecfc7f24d717c5e1ed343a26aef94"
+    },
+    "content/handbook/customer-experience/csm/gainsight/timeline.md": {
+      "path": "content/handbook/customer-experience/csm/gainsight/timeline.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "1f8ec9ee2cda643bf250261b526e8f092da5ff4f5f58f85b8f637fc15156d532"
+    },
+    "content/handbook/customer-experience/csm/gainsight/dashboards-overview.md": {
+      "path": "content/handbook/customer-experience/csm/gainsight/dashboards-overview.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "475c6da753a931e0da39111eeb3ea572a738c2d5c9af111b89658f8f0ab97e48"
+    },
+    "content/handbook/customer-experience/csm/csm-onboarding/shadowing.md": {
+      "path": "content/handbook/customer-experience/csm/csm-onboarding/shadowing.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "9f2e38d9ed5b987b190bbb134fbcf097269923396d2441223a3b91563f0e4d27"
+    },
+    "content/handbook/customer-experience/csm/adoption-landing-zones/ai-ml.md": {
+      "path": "content/handbook/customer-experience/csm/adoption-landing-zones/ai-ml.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "d31de6e3c119164f3f609fd8b5da23bf6d718a85f5f32829c3c87fc9c44e3b0a"
+    },
+    "content/handbook/customer-experience/csm/adoption-landing-zones/devsecops.md": {
+      "path": "content/handbook/customer-experience/csm/adoption-landing-zones/devsecops.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "63eebeb4682af863172f5d9a39d4284a7f5e948a98582c3b1d8f1ca78069b0b7"
+    },
+    "content/handbook/customer-experience/csm/adoption-landing-zones/ci.md": {
+      "path": "content/handbook/customer-experience/csm/adoption-landing-zones/ci.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "b6cfc6ddf13738f0f1b38bd79ab3affd9bfd18714e39d83b13e797021ca58dc8"
+    },
+    "content/handbook/customer-experience/csm/researching-customer-questions/index.md": {
+      "path": "content/handbook/customer-experience/csm/researching-customer-questions/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "a791626c39a32eaed6ac960dc167f05af5bd544e8ff4e37e5cc8d070b53c2563"
+    },
+    "content/handbook/customer-experience/csm/calendly/index.md": {
+      "path": "content/handbook/customer-experience/csm/calendly/index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "1235547e6a219de9d159f1b42b636d6999ca13cc969c5452784a880f9e5703ac"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/_index.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/_index.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "0115cdbdf9d289755a04f242fc4e62e07dde2d86a8c669bab5fa6e637a8fe0fe"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-tm-onboarding.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-tm-onboarding.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "311448027806cd31ee41a9e8929027a11cc9c350f8eb505a4494a625d615ba04"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-assigned-qa.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned-qa.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "418773e275a24efd9e8001db4cb6d3fb088b2f30b65c73e731edc2172a34f0d8"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-operating-rhythm.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-operating-rhythm.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "dae73ec384aa888601a8fe7a25ee36f614a538134dc1d57f4c299c0cc0e9472b"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-assigned-roles-responsibilities.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned-roles-responsibilities.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "208da5cb70392aa7ed3c867feac26457b99232ec1fe536c9833e9e2f963feb6d"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/csm-to-cse-handover.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/csm-to-cse-handover.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
+      "translated_at": "2026-09-27T06:13:05+00:00",
+      "model": "codex",
+      "input_hash": "7c6dc0c2d561c61570d521eaba1a888087e53c0b8e65af9157c52b0611d9e3b3"
+    },
+    "content/handbook/customer-experience/renewals-managers/how.md": {
+      "path": "content/handbook/customer-experience/renewals-managers/how.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "translated_at": "2026-09-27T06:11:05Z",
+      "model": "codex",
+      "input_hash": "9d791f7d48e3fd3178c7833341f5a88bc736e8939bd96780d85b77adbfbc773a",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+    },
+    "content/handbook/customer-experience/product-usage-data/usage-statistics.md": {
+      "path": "content/handbook/customer-experience/product-usage-data/usage-statistics.md",
+      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
+      "translated_at": "2026-09-27T06:11:05Z",
+      "model": "codex",
+      "input_hash": "39ce21d8346b2951397c32ef22afda4043def14191a28434f92fed7b4c579cf0",
+      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
     }
   }
 }

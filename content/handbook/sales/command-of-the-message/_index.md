@@ -9,11 +9,11 @@ stale: false
 lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 GitLab は Force Management の Command of the Message バリューベースのセールスメッセージング方法論を採用し、運用化しています。IP の制約により、このページから内容を GitLab の内部ハンドブックに移行しました。GitLab チームメンバーは [Command of the Message Internal GitLab ハンドブックページ](https://internal.gitlab.com/handbook/sales/command-of-the-message/) で追加のコンテンツとリソースにアクセスできます (注: GitLab チームメンバーで内部ハンドブックにアクセスできない場合は、[Okta](https://gitlab.okta.com/) 経由で GitLab Internal Handbook アプリにサインインしてください)。
 
-## カスタマーバリュードライバー
+## カスタマーバリュードライバー {#customer-value-drivers}
 
 バリュードライバーは、組織がプロアクティブに探しているか、必要としている可能性が高いものを記述し、GitLab が存在しなくても顧客のトップオブマインドのトピックとして存在します。バリュードライバーは買い手に裁量的な資金の再配分を促す可能性があり、バリューベースの顧客会話をサポートします。組織は以下のバリュードライバーのために GitLab を採用・実装します:
 

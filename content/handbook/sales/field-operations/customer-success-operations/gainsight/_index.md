@@ -155,7 +155,7 @@ Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tic
 
 ユーザー名とパスワードは Jeff Beaumont の 1Password アカウントに保存されています。権限をリセットする必要がある場合は、彼にお尋ねください。
 
-### Salesforce コネクタ
+### Salesforce コネクタ {#salesforce-connector}
 
 `Connectors` は、Salesforce から Gainsight へのデータの主要なインポート方法の1つとして使用され、2つのシステム間に存在するネイティブの統合です。コネクタは、Salesforce インスタンスの Gainsight Integration ユーザーを使用して認証されます。コネクタとそのセットアップ方法の詳細については、[Gainsight ナレッジベース](https://support.gainsight.com/gainsight_nxt/Connectors/CRM_Integrations/Salesforce_Connector)を参照してください。
 
@@ -252,7 +252,7 @@ Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tic
 
 </details>
 
-### Gainsight から Salesforce への同期データ
+### Gainsight から Salesforce への同期データ {#gainsight-to-salesforce-sync-data}
 
 以下のフィールドが Gainsight から関連する Salesforce フィールドにプッシュされます:
 

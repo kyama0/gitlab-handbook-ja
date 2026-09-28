@@ -30,8 +30,645 @@
 
 {{- if eq $site "handbook" }}
 {{- $scratch := newScratch }}
+{{- $team := site.Data.public.team }}
+{{- /* These standalone shortcodes render independently of other pages. */ -}}
+{{- $localShortcodes := slice
+    "label" "team-pets" "group-by-expertise" "release-managers" "release-schedule"
+    "engineering/stable-counterparts" "engineering/workflow-labels" "engineering/create-retrospectives"
+    "handbook-data-toc" "people-group/entities-with-probation" "people-group/entities-without-probation"
+    "engineering/support-glossary" "support/runbooks" "engineering/section-counterparts"
+    "engineering/stages-counterparts" "group-pages-by-category" "engineering/support-skill-areas"
+    "all-remote/country-select" "eta/css-criticalities" "engineering/projects-table"
+    "engineering/projects-body" "devops-diagram" "engineering/design-documents-list"
+    "engineering/verify-team-communication" "engineering/create/career-development"
+    "security/public-policy-standards-toc" "security/customer-support-operations-criticalities"
+    "tech-stack" "kpi" "performance-indicators" "include-readme" "include-remote"
+    "product/product-priorities" "peer-reviews" "pmm-inventory" "yes" "no" }}
+{{- $localPattern := print `\{\{[<%]\s*(` (delimit $localShortcodes "|") `)(\s+[^{}]*)?[>%]\}\}` }}
 {{- range .Site.RegularPages }}
-    {{- $scratch.Add "wordcount" .WordCount }}
+    {{- $page := . }}
+    {{- /* Avoid rendering every page from this shortcode, which can deadlock Hugo's content cache. */ -}}
+    {{- $rawSource := .RawContent }}
+    {{- /* Scan only executable shortcode calls; fenced examples are counted as literal text below. */ -}}
+    {{- $source := "" }}
+    {{- $insideFence := false }}
+    {{- range $i, $segment := split $rawSource "```" }}
+        {{- if gt $i 0 }}
+            {{- $insideFence = not $insideFence }}
+        {{- end }}
+        {{- if $insideFence }}
+            {{- range findRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` $segment }}
+                {{- $scratch.Add "wordcount" (countwords .) }}
+            {{- end }}
+        {{- else }}
+            {{- $source = printf "%s %s" $source $segment }}
+        {{- end }}
+    {{- end }}
+    {{- $source = replaceRE `(?s)<!--.*?-->` " " $source }}
+    {{- /* Count the visible content of local includes without rendering their parent pages. */ -}}
+    {{- range findRE `\{\{%\s*include\s+"includes/[^"]+"\s*%\}\}` $source }}
+        {{- $path := replaceRE `\{\{%\s*include\s+"([^"]+)"\s*%\}\}` "$1" . }}
+        {{- with resources.Get $path }}
+            {{- $included := replaceRE `(?s)<!--.*?-->` " " .Content }}
+            {{- $included = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $included }}
+            {{- $included = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $included }}
+            {{- $included = replaceRE `(?is)>\s*<` "> <" $included }}
+            {{- $renderedIncluded := $included | markdownify }}
+            {{- $renderedIncluded = replaceRE `(?is)>\s*<` "> <" $renderedIncluded }}
+            {{- range findRE `(?is)<img\b[^>]*\salt="[^"]+"[^>]*>` $renderedIncluded }}
+                {{- $alt := replaceRE `(?is)^.*?\salt="([^"]+)".*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<img\b[^>]*\salt='[^']+'[^>]*>` $renderedIncluded }}
+                {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\stitle="[^"]+"[^>]*>` $renderedIncluded }}
+                {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\stitle='[^']+'[^>]*>` $renderedIncluded }}
+                {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label="[^"]+"[^>]*>` $renderedIncluded }}
+                {{- $label := replaceRE `(?is)^.*?\saria-label="([^"]+)".*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+            {{- end }}
+            {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label='[^']+'[^>]*>` $renderedIncluded }}
+                {{- $label := replaceRE `(?is)^.*?\saria-label='([^']+)'.*$` "$1" . }}
+                {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+            {{- end }}
+            {{- $scratch.Add "wordcount" (countwords ($renderedIncluded | plainify)) }}
+        {{- end }}
+    {{- end }}
+    {{- /* Alert titles and panel headers are visible even though their shortcode attributes are removed below. */ -}}
+    {{- range findRE `(?s)\{\{[<%]\s*alert\b[^{}]*\stitle="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
+    {{- end }}
+    {{- /* Figure alternatives are available to screen readers after Hugo renders the image. */ -}}
+    {{- range findRE `(?s)\{\{[<%]\s*figure\b[^{}]*\salt="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $alt := replaceRE `(?s)^.*?\salt="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($alt | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*youtube\b[^{}]*\stitle="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $title := replaceRE `(?s)^.*?\stitle="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*youtube\b[^{}]*[>%]\}\}` $source }}
+        {{- if not (findRE `\btitle\s*=` .) }}
+            {{- $scratch.Add "wordcount" (countwords "YouTube video") }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*note\b[^{}]*[>%]\}\}` $source }}
+        {{- $scratch.Add "wordcount" (countwords "Note:") }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*(panel|tab)\b[^{}]*\sheader="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $header := replaceRE `(?s)^.*?\sheader="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($header | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*details\b[^{}]*\ssummary="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $summary := replaceRE `(?s)^.*?\ssummary="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($summary | markdownify | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?s)\{\{[<%]\s*card\b[^{}]*\s(header|footer)="[^"]+"[^{}]*[>%]\}\}` $source }}
+        {{- $label := replaceRE `(?s)^.*?\s(header|footer)="([^"]+)".*$` "$2" . }}
+        {{- $scratch.Add "wordcount" (countwords ($label | markdownify | plainify)) }}
+    {{- end }}
+    {{- /* This Markdown shortcode renders its words from data, not from page source. */ -}}
+    {{- range findRE `\{\{%\s*all-tech-stack\s*%\}\}` $source }}
+        {{- range site.Data.public.tech_stack }}
+            {{- $scratch.Add "wordcount" (countwords (.title | markdownify | plainify)) }}
+            {{- $scratch.Add "wordcount" (countwords (.description | markdownify | plainify)) }}
+            {{- with .handbook_link }}
+                {{- $scratch.Add "wordcount" (countwords "Handbook Guide:") }}
+                {{- $scratch.Add "wordcount" (countwords (. | markdownify | plainify)) }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- /* The data-warehouse table is also supplied by data rather than page source. */ -}}
+    {{- range findRE `\{\{%\s*all-data-warehouse-sources\s*%\}\}` $source }}
+        {{- $table := "| Name | Pipeline | Raw Schema | Prep Schema | Audience | RF / SLO | MNPI | Tier |\n|------|----------|------------|-------------|----------|----------|------|------|\n" }}
+        {{- range site.Data.public.data_warehouse_sources }}
+            {{- $table = printf "%s| %v | %v | `%v` | `%v` | %v | %v | %v | %v |\n" $table .name .pipeline .raw_schema .prep_schema .audience .rf_slo .mnpi .tier }}
+        {{- end }}
+        {{- $scratch.Add "wordcount" (countwords ($table | markdownify | plainify)) }}
+    {{- end }}
+    {{- /* Count the visible data cells of the misused-terms table. */ -}}
+    {{- range findRE `\{\{[<%]\s*misused-terms\s*[>%]\}\}` $source }}
+        {{- $scratch.Add "wordcount" (countwords "Misused terms Alternatives Reason Why") }}
+        {{- range site.Data.misused_terms }}
+            {{- range .avoid }}
+                {{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}
+            {{- end }}
+            {{- with .avoid_footnote }}
+                {{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}
+            {{- end }}
+            {{- range .use_instead }}
+                {{- $scratch.Add "wordcount" (countwords (printf "%v" . | markdownify | plainify)) }}
+            {{- end }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v" .reason | markdownify | plainify)) }}
+        {{- end }}
+    {{- end }}
+    {{- /* These existing partials only read team data; they do not render another page. */ -}}
+    {{- range findRE `\{\{[<%]\s*member-by-name\s+"[^"]+"\s*[>%]\}\}` $source }}
+        {{- $name := replaceRE `\{\{[<%]\s*member-by-name\s+"([^"]+)"\s*[>%]\}\}` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords (partial "member-by-name" $name | plainify)) }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*member-by-gitlab\s+"[^"]+"\s*[>%]\}\}` $source }}
+        {{- $username := replaceRE `\{\{[<%]\s*member-by-gitlab\s+"([^"]+)"\s*[>%]\}\}` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords (partial "member-by-gitlab" $username | plainify)) }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*manager-by-report-name\s+"[^"]+"\s*[>%]\}\}` $source }}
+        {{- $name := replaceRE `\{\{[<%]\s*manager-by-report-name\s+"([^"]+)"\s*[>%]\}\}` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords (partial "manager-by-report-name" $name | plainify)) }}
+    {{- end }}
+    {{- /* Mirror the local team-table filters, then count only the visible cells. */ -}}
+    {{- range findRE `\{\{[<%]\s*team-by-manager-slug\b[^{}]*[>%]\}\}` $source }}
+        {{- $call := . }}
+        {{- $slug := "" }}
+        {{- with findRE `manager\s*=\s*"[^"]+"` $call }}
+            {{- $slug = replaceRE `manager\s*=\s*"([^"]+)"` "$1" (index . 0) }}
+        {{- else }}
+            {{- with findRE `team-by-manager-slug\s+"[^"]+"` $call }}
+                {{- $slug = replaceRE `team-by-manager-slug\s+"([^"]+)"` "$1" (index . 0) }}
+            {{- end }}
+        {{- end }}
+        {{- $members := slice }}
+        {{- $manager := dict }}
+        {{- with where $team "slug" "eq" $slug }}
+            {{- $manager = index . 0 }}
+            {{- $members = where $team "reports_to" "eq" $slug }}
+        {{- end }}
+        {{- with findRE `team\s*=\s*"[^"]+"` $call }}
+            {{- $pattern := replaceRE `team\s*=\s*"([^"]+)"` "$1" (index . 0) }}
+            {{- $members = where $members "role" "like" $pattern }}
+        {{- end }}
+        {{- with findRE `department\s*=\s*"[^"]+"` $call }}
+            {{- $department := replaceRE `department\s*=\s*"([^"]+)"` "$1" (index . 0) }}
+            {{- $departmentMembers := where $members "departments" "intersect" (slice $department) }}
+            {{- $tagMembers := where $members "team_tags" "intersect" (slice $department) }}
+            {{- $members = $departmentMembers | append $tagMembers | uniq }}
+        {{- end }}
+        {{- $scratch.Add "wordcount" (countwords "Name Role") }}
+        {{- with $manager }}
+            {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}
+            {{- $scratch.Add "wordcount" (countwords (.role | plainify)) }}
+        {{- end }}
+        {{- range $members }}
+            {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}
+            {{- $scratch.Add "wordcount" (countwords (.role | plainify)) }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*team-by-manager-role\b[^{}]*[>%]\}\}` $source }}
+        {{- $call := . }}
+        {{- $role := "" }}
+        {{- with findRE `role\s*=\s*"[^"]+"` $call }}
+            {{- $role = replaceRE `role\s*=\s*"([^"]+)"` "$1" (index . 0) }}
+        {{- else }}
+            {{- with findRE `team-by-manager-role\s+"[^"]+"` $call }}
+                {{- $role = replaceRE `team-by-manager-role\s+"([^"]+)"` "$1" (index . 0) }}
+            {{- end }}
+        {{- end }}
+        {{- $members := slice }}
+        {{- $manager := dict }}
+        {{- with where $team "role" "like" $role }}
+            {{- $manager = index . 0 }}
+            {{- $members = where $team "reports_to" "eq" $manager.slug }}
+        {{- end }}
+        {{- with findRE `team\s*=\s*"[^"]+"` $call }}
+            {{- $pattern := replaceRE `team\s*=\s*"([^"]+)"` "$1" (index . 0) }}
+            {{- $members = where $members "role" "like" $pattern }}
+        {{- end }}
+        {{- $scratch.Add "wordcount" (countwords "Name Role") }}
+        {{- with $manager }}
+            {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}
+            {{- $scratch.Add "wordcount" (countwords (.role | plainify)) }}
+        {{- end }}
+        {{- range $members }}
+            {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}
+            {{- $scratch.Add "wordcount" (countwords (.role | plainify)) }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*team-by-departments\b[^{}]*[>%]\}\}` $source }}
+        {{- $call := . }}
+        {{- $departments := slice }}
+        {{- with findRE `departments\s*=\s*"[^"]+"` $call }}
+            {{- $departments = strings.Split (replaceRE `departments\s*=\s*"([^"]+)"` "$1" (index . 0)) "," }}
+        {{- end }}
+        {{- with findRE `department\s*=\s*"[^"]+"` $call }}
+            {{- $departments = append (strings.Split (replaceRE `department\s*=\s*"([^"]+)"` "$1" (index . 0)) ",") $departments }}
+        {{- end }}
+        {{- if eq (len $departments) 0 }}
+            {{- with findRE `team-by-departments\s+"[^"]+"` $call }}
+                {{- $departments = slice (replaceRE `team-by-departments\s+"([^"]+)"` "$1" (index . 0)) }}
+            {{- end }}
+        {{- end }}
+        {{- $departmentMembers := where $team "departments" "intersect" $departments }}
+        {{- $tagMembers := where $team "team_tags" "intersect" $departments }}
+        {{- $members := sort (uniq ($departmentMembers | append $tagMembers)) "name" }}
+        {{- $scratch.Add "wordcount" (countwords "Name Role") }}
+        {{- with findRE `manager-role\s*=\s*"[^"]+"` $call }}
+            {{- $pattern := replaceRE `manager-role\s*=\s*"([^"]+)"` "$1" (index . 0) }}
+            {{- with where $team "role" "like" $pattern }}
+                {{- $manager := index . 0 }}
+                {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" $manager | plainify)) }}
+                {{- $scratch.Add "wordcount" (countwords ($manager.role | plainify)) }}
+            {{- end }}
+        {{- end }}
+        {{- range $members }}
+            {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}
+            {{- $scratch.Add "wordcount" (countwords (.role | plainify)) }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*group-by-slugs\b[^{}]*[>%]\}\}` $source }}
+        {{- $slugs := replaceRE `\s*[>%]\}\}$` "" (replaceRE `^\{\{[<%]\s*group-by-slugs\s*` "" .) }}
+        {{- $slugs = strings.TrimSpace (replaceRE `\s+` " " $slugs) }}
+        {{- $scratch.Add "wordcount" (countwords "Name Role") }}
+        {{- range strings.Split $slugs " " }}
+            {{- range where $team "slug" "eq" . }}
+                {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}
+                {{- $scratch.Add "wordcount" (countwords (.role | plainify)) }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*member-and-role-by-gitlab\b[^{}]*[>%]\}\}` $source }}
+        {{- $found := false }}
+        {{- range findRE `"[^"]+"` . }}
+            {{- $username := strings.Trim . `"` }}
+            {{- range where $team "gitlab" "eq" $username }}
+                {{- $found = true }}
+                {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}
+                {{- $scratch.Add "wordcount" (countwords (.role | plainify)) }}
+            {{- end }}
+        {{- end }}
+        {{- if $found }}{{- $scratch.Add "wordcount" (countwords "Name Role") }}{{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*team-size\s*[>%]\}\}` $source }}
+        {{- $scratch.Add "wordcount" (countwords (lang.FormatNumber 0 (len $team))) }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*engineering/design-document-header\s*[>%]\}\}` $source }}
+        {{- $notice := "This page contains information related to upcoming products, features, and functionality. It is important to note that the information presented is for informational purposes only. Please do not rely on this information for purchasing or planning purposes. The development, release, and timing of any products, features, or functionality may be subject to change or delay and remain at the sole discretion of GitLab Inc." }}
+        {{- $scratch.Add "wordcount" (countwords $notice) }}
+        {{- $scratch.Add "wordcount" (countwords "Status Authors Coach DRIs Owning Stage Created") }}
+        {{- $scratch.Add "wordcount" (countwords (partial "gitlab/label" (dict "name" $page.Params.Status) | plainify)) }}
+        {{- $scratch.Add "wordcount" (countwords (partial "gitlab/profile-links" (dict "handles" $page.Params.authors) | plainify)) }}
+        {{- $scratch.Add "wordcount" (countwords (partial "gitlab/profile-links" (dict "handles" $page.Params.Coach) | plainify)) }}
+        {{- $scratch.Add "wordcount" (countwords (partial "gitlab/profile-links" (dict "handles" $page.Params.Coaches) | plainify)) }}
+        {{- $scratch.Add "wordcount" (countwords (partial "gitlab/profile-links" (dict "handles" $page.Params.Approvers) | plainify)) }}
+        {{- $scratch.Add "wordcount" (countwords (partial "gitlab/profile-links" (dict "handles" $page.Params.Dris) | plainify)) }}
+        {{- $scratch.Add "wordcount" (countwords (partial "gitlab/label" (dict "name" (index $page.Params "owning-stage")) | plainify)) }}
+        {{- with index $page.Params "creation-date" }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}
+        {{- end }}
+    {{- end }}
+    {{- /* The categories shortcode combines local data and page-independent partials. */ -}}
+    {{- range findRE `\{\{[<%]\s*product/categories\s*[>%]\}\}` $source }}
+        {{- $categories := site.Data.public.categories }}
+        {{- $stages := site.Data.public.stages.stages }}
+        {{- range $sectionKey, $section := site.Data.public.sections }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v section" $section.name)) }}
+            {{- $scratch.Add "wordcount" (countwords (partial "categories/section-heading.html" $section | plainify)) }}
+            {{- $graph := partial "categories/section-stages-graph.md" (dict "section_key" $sectionKey "section_name" $section.name) }}
+            {{- $scratch.Add "wordcount" (countwords ($graph | markdownify | plainify)) }}
+            {{- range $stages }}
+                {{- if eq $sectionKey .section }}
+                    {{- $scratch.Add "wordcount" (countwords (printf "%v stage" .display_name)) }}
+                    {{- $scratch.Add "wordcount" (countwords (partial "categories/section-heading.html" . | plainify)) }}
+                    {{- range .groups }}
+                        {{- $scratch.Add "wordcount" (countwords (printf "%v group" .name)) }}
+                        {{- $group := merge . (dict "group" true "display_name" .name) }}
+                        {{- $scratch.Add "wordcount" (countwords (partial "categories/section-heading.html" $group | plainify)) }}
+                        {{- with .categories }}
+                            {{- $scratch.Add "wordcount" (countwords "Name Maturity Links") }}
+                            {{- range . }}
+                                {{- with index $categories . }}
+                                    {{- $scratch.Add "wordcount" (countwords (printf "%v" .name)) }}
+                                    {{- $maturity := strings.Title .maturity }}
+                                    {{- if eq .maturity "planned" }}
+                                        {{- $maturity = printf "Planned %s" (time.Format "2006" (time .available)) }}
+                                    {{- end }}
+                                    {{- $scratch.Add "wordcount" (countwords $maturity) }}
+                                    {{- with .marketing_page }}{{- $scratch.Add "wordcount" (countwords "Marketing Page") }}{{- end }}
+                                    {{- with .documentation }}{{- $scratch.Add "wordcount" (countwords "Documentation Page") }}{{- end }}
+                                    {{- with .direction }}{{- $scratch.Add "wordcount" (countwords "Direction Page") }}{{- end }}
+                                {{- end }}
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/categories-features\s*[>%]\}\}` $source }}
+        {{- $categories := site.Data.public.categories }}
+        {{- $stages := site.Data.public.stages.stages }}
+        {{- $features := site.Data.public.features.features }}
+        {{- range $sectionKey, $section := site.Data.public.sections }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v Section" $section.name)) }}
+            {{- range $stages }}
+                {{- if eq .section $sectionKey }}
+                    {{- $stageName := .display_name }}
+                    {{- $scratch.Add "wordcount" (countwords (printf "%v" $stageName)) }}
+                    {{- range .groups }}
+                        {{- $scratch.Add "wordcount" (countwords (printf "%v: %v Group" $stageName .name)) }}
+                        {{- $scratch.Add "wordcount" (countwords (partial "categories/section-heading" . | plainify)) }}
+                        {{- with .categories }}
+                            {{- $scratch.Add "wordcount" (countwords "Category Features in Core Features in Premium Features in Ultimate") }}
+                            {{- range . }}
+                                {{- $categoryKey := . }}
+                                {{- with index $categories $categoryKey }}
+                                    {{- $scratch.Add "wordcount" (countwords (printf "%v" .name)) }}
+                                    {{- range $features }}
+                                        {{- if in .category $categoryKey }}
+                                            {{- if or .gitlab_core .gitlab_premium .gitlab_ultimate }}
+                                                {{- $scratch.Add "wordcount" (countwords (printf "%v" .title)) }}
+                                            {{- end }}
+                                        {{- end }}
+                                    {{- end }}
+                                {{- end }}
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/categories-index\s*[>%]\}\}` $source }}
+        {{- $scratch.Add "wordcount" (countwords "Category Group") }}
+        {{- range $key, $category := site.Data.public.categories }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v %v" $category.name $key)) }}
+            {{- range site.Data.public.stages.stages }}
+                {{- range .groups }}
+                    {{- if in .categories $key }}
+                        {{- $scratch.Add "wordcount" (countwords (printf "%v" .name)) }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/categories-lookup\s*[>%]\}\}` $source }}
+        {{- /* Count cells separately: plainify alone joins words across <br> and &nbsp;. */ -}}
+        {{- $categories := dict }}
+        {{- range $stageKey, $stage := site.Data.public.stages.stages }}
+            {{- range $groupKey, $group := $stage.groups }}
+                {{- range $group.categories }}
+                    {{- $categories = merge $categories (dict . (dict "group" (merge $group (dict "id" $groupKey)) "stage" $stage "type" "direction")) }}
+                {{- end }}
+                {{- range $group.maintained_categories }}
+                    {{- $categories = merge $categories (dict . (dict "group" (merge $group (dict "id" $groupKey)) "stage" $stage "type" "maintained")) }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+        {{- $teamData := partial "categories/team-members" }}
+        {{- $scratch.Add "wordcount" (countwords "Category Details") }}
+        {{- range $category, $entry := $categories }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v" $category)) }}
+            {{- $scratch.Add "wordcount" (countwords "Group:") }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v" (or $entry.group.display_name $entry.group.name))) }}
+            {{- $scratch.Add "wordcount" (countwords "Slack:") }}
+            {{- $scratch.Add "wordcount" (countwords (printf "#%v" $entry.group.slack.channel)) }}
+            {{- with (or $entry.group.em $entry.group.backend_engineering_manager) }}
+                {{- $scratch.Add "wordcount" (countwords "Engineering Manager:") }}
+                {{- range (cond (reflect.IsSlice .) . (slice .)) }}
+                    {{- with $teamData.Get . }}
+                        {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" (index . 0) | plainify)) }}
+                    {{- else }}
+                        {{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+            {{- with $entry.group.pm }}
+                {{- $scratch.Add "wordcount" (countwords "Product Manager:") }}
+                {{- range (cond (reflect.IsSlice .) . (slice .)) }}
+                    {{- with $teamData.Get . }}
+                        {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" (index . 0) | plainify)) }}
+                    {{- else }}
+                        {{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+            {{- $scratch.Add "wordcount" (countwords (printf "Category type: %v" $entry.type)) }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/section-group-table\s+"[^"]+"\s*[>%]\}\}` $source }}
+        {{- $sectionGroup := replaceRE `\{\{[<%]\s*product/section-group-table\s+"([^"]+)"\s*[>%]\}\}` "$1" . }}
+        {{- $found := dict }}
+        {{- $engineers := dict }}
+        {{- $ux := dict }}
+        {{- $pm := slice }}
+        {{- $em := slice }}
+        {{- $fem := slice }}
+        {{- range site.Data.public.stages.stages }}
+            {{- range .groups }}
+                {{- if eq .name $sectionGroup }}
+                    {{- $engTag := .eng_ic_team_tag }}
+                    {{- $pmName := .pm }}
+                    {{- $uxNames := .ux }}
+                    {{- $emName := .backend_engineering_manager }}
+                    {{- $femName := .frontend_engineering_manager }}
+                    {{- range $team }}
+                        {{- if in .departments $engTag }}
+                            {{- if and (ne (lower .name) (lower $emName)) (ne (lower .name) (lower $femName)) }}
+                                {{- $engineers = merge $engineers (dict (lower .gitlab) .) }}
+                                {{- $found = merge $found (dict (lower .gitlab) .) }}
+                            {{- end }}
+                        {{- end }}
+                        {{- if eq (lower .name) (lower $pmName) }}
+                            {{- $pm = append . $pm }}
+                            {{- $found = merge $found (dict (lower .gitlab) .) }}
+                        {{- end }}
+                        {{- if eq (lower .name) (lower $emName) }}
+                            {{- $em = append . $em }}
+                            {{- $found = merge $found (dict (lower .gitlab) .) }}
+                        {{- end }}
+                        {{- if and (eq (lower .name) (lower $femName)) (ne $femName $emName) }}
+                            {{- $fem = append . $fem }}
+                            {{- $found = merge $found (dict (lower .gitlab) .) }}
+                        {{- end }}
+                        {{- if in $uxNames .name }}
+                            {{- $ux = merge $ux (dict (lower .gitlab) .) }}
+                            {{- $found = merge $found (dict (lower .gitlab) .) }}
+                        {{- end }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+        {{- $scratch.Add "wordcount" (countwords $sectionGroup) }}
+        {{- $scratch.Add "wordcount" (countwords "Type Names Count PM UX EM FEM Engineering Total") }}
+        {{- /* The table renders these abbreviation titles as accessible tooltip text. */ -}}
+        {{- $scratch.Add "wordcount" (countwords "Product Manager User Research Engineering Manager Frontend Engineering Manager Engineering") }}
+        {{- range (slice $pm $ux $em $fem $engineers $found) }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%d" (len .))) }}
+        {{- end }}
+        {{- with index $pm 0 }}{{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}{{- end }}
+        {{- range $ux }}{{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}{{- end }}
+        {{- with index $em 0 }}{{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}{{- end }}
+        {{- with index $fem 0 }}{{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}{{- end }}
+        {{- range $engineers }}{{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" . | plainify)) }}{{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/tech-writing\s*[>%]\}\}` $source }}
+        {{- $scratch.Add "wordcount" (countwords "Section Stage Group Assigned technical writer") }}
+        {{- $stages := sort site.Data.public.stages.stages "display_name" }}
+        {{- range $sectionKey, $section := site.Data.public.sections }}
+            {{- range where $stages "section" "eq" $sectionKey }}
+                {{- $stage := . }}
+                {{- range .groups }}
+                    {{- $scratch.Add "wordcount" (countwords (printf "%v %v %v" $section.name $stage.display_name .name)) }}
+                    {{- with .tech_writer }}
+                        {{- range (slice | append .) }}
+                            {{- if hasPrefix . "#" }}
+                                {{- $scratch.Add "wordcount" (countwords .) }}
+                            {{- else }}
+                                {{- $writer := . }}
+                                {{- with where $team "name" "eq" $writer }}
+                                    {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" (index . 0) | plainify)) }}
+                                {{- else }}
+                                    {{- $scratch.Add "wordcount" (countwords $writer) }}
+                                {{- end }}
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/tech-writing-sections\s*[>%]\}\}` $source }}
+        {{- $scratch.Add "wordcount" (countwords "Section Assigned Manager") }}
+        {{- range site.Data.public.sections }}
+            {{- $section := . }}
+            {{- with .twm }}
+                {{- $scratch.Add "wordcount" (countwords (printf "%v" $section.name)) }}
+                {{- range (slice | append .) }}
+                    {{- $writer := . }}
+                    {{- with where $team "name" "eq" $writer }}
+                        {{- $scratch.Add "wordcount" (countwords (partial "member/with-gitlab-link" (index . 0) | plainify)) }}
+                    {{- else }}
+                        {{- $scratch.Add "wordcount" (countwords $writer) }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/pricing-themes\b[^{}]*[>%]\}\}` $source }}
+        {{- range findRE `"[^"]+"` . }}
+            {{- $tier := strings.Trim . `"` }}
+            {{- $scratch.Add "wordcount" (countwords $tier) }}
+            {{- range site.Data.public.pricing_themes }}
+                {{- if eq .tier $tier }}
+                    {{- $scratch.Add "wordcount" (countwords (printf "%v" .name)) }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/navigation-inventory\s*[>%]\}\}` $source }}
+        {{- $navigation := site.Data.navigation }}
+        {{- $scratch.Add "wordcount" (countwords (printf "Last updated at %v from %v." (index $navigation "generated_at") (index $navigation "commit_sha"))) }}
+        {{- range $navigation.contexts }}
+            {{- $scratch.Add "wordcount" (countwords (printf "%v" .title)) }}
+            {{- $scratch.Add "wordcount" (countwords "Nav item Sample URL Conditions") }}
+            {{- range .items }}
+                {{- $group := . }}
+                {{- $scratch.Add "wordcount" (countwords (printf "%v %v" .title .link)) }}
+                {{- range .tags }}{{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}{{- end }}
+                {{- range .items }}
+                    {{- $scratch.Add "wordcount" (countwords (printf "%v > %v %v" $group.title .title .link)) }}
+                    {{- range .tags }}{{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}{{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/jtbd\s+"[^"]+"\s*[>%]\}\}` $source }}
+        {{- $group := replaceRE `\{\{[<%]\s*product/jtbd\s+"([^"]+)"\s*[>%]\}\}` "$1" . }}
+        {{- range site.Data.public.jobs_to_be_done }}
+            {{- if and (not .parent) (eq .group $group) }}
+                {{- $slug := .slug }}
+                {{- $scratch.Add "wordcount" (countwords (printf "%v" .short_jtbd | markdownify | plainify)) }}
+                {{- $scratch.Add "wordcount" (countwords (printf "%v" .jtbd | markdownify | plainify)) }}
+                {{- $scratch.Add "wordcount" (countwords "Micro Job Job statement Maturity Confidence Source") }}
+                {{- range site.Data.public.jobs_to_be_done }}
+                    {{- if eq .parent $slug }}
+                        {{- $scratch.Add "wordcount" (countwords (printf "%v" .micro_job)) }}
+                        {{- $scratch.Add "wordcount" (countwords (printf "%v" .jtbd)) }}
+                        {{- $scratch.Add "wordcount" (countwords "Grade") }}
+                        {{- $scratch.Add "wordcount" (countwords (partial "ux-grade" .grade | plainify)) }}
+                        {{- with .confidence }}{{- $scratch.Add "wordcount" (countwords (printf "%v" .)) }}{{- end }}
+                        {{- with .source }}{{- $scratch.Add "wordcount" (countwords "Issue") }}{{- end }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- range findRE `\{\{[<%]\s*product/(upstream-forum|ux-forum)\s*[>%]\}\}` $source }}
+        {{- $name := replaceRE `\{\{[<%]\s*product/([a-z-]+)\s*[>%]\}\}` "$1" . }}
+        {{- $shortcode := os.ReadFile (printf "layouts/_shortcodes/product/%s.html" $name) }}
+        {{- $scratch.Add "wordcount" (countwords ($shortcode | plainify)) }}
+    {{- end }}
+    {{- range findRE $localPattern $source }}
+        {{- $rendered := $page.RenderString . }}
+        {{- $rendered = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $rendered }}
+        {{- range findRE `(?is)<img\b[^>]*\salt="[^"]+"[^>]*>` $rendered }}
+            {{- $alt := replaceRE `(?is)^.*?\salt="([^"]+)".*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<img\b[^>]*\salt='[^']+'[^>]*>` $rendered }}
+            {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\stitle="[^"]+"[^>]*>` $rendered }}
+            {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\stitle='[^']+'[^>]*>` $rendered }}
+            {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label="[^"]+"[^>]*>` $rendered }}
+            {{- $label := replaceRE `(?is)^.*?\saria-label="([^"]+)".*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+        {{- end }}
+        {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label='[^']+'[^>]*>` $rendered }}
+            {{- $label := replaceRE `(?is)^.*?\saria-label='([^']+)'.*$` "$1" . }}
+            {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+        {{- end }}
+        {{- $rendered = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $rendered }}
+        {{- $rendered = replaceRE `(?is)>\s*<` "> <" $rendered }}
+        {{- $scratch.Add "wordcount" (countwords ($rendered | plainify)) }}
+    {{- end }}
+    {{- $rawSource = replaceRE `(?s)\{\{[<%]\s*/?\s*[A-Za-z].*?[>%]\}\}` " " $rawSource }}
+    {{- $renderedSource := $rawSource | markdownify }}
+    {{- /* Remove hidden HTML after Markdown rendering so fenced examples remain visible. */ -}}
+    {{- $renderedSource = replaceRE `(?s)<!--.*?-->` "" $renderedSource }}
+    {{- $renderedSource = replaceRE `(?is)<(style|script)(\s[^>]*)?>.*?</(style|script)>` " " $renderedSource }}
+    {{- /* Image alternatives remain available to screen readers after the image tag renders. */ -}}
+    {{- range findRE `(?is)<img\b[^>]*\salt="[^"]+"[^>]*>` $renderedSource }}
+        {{- $alt := replaceRE `(?is)^.*?\salt="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<img\b[^>]*\salt='[^']+'[^>]*>` $renderedSource }}
+        {{- $alt := replaceRE `(?is)^.*?\salt='([^']+)'.*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($alt | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\stitle="[^"]+"[^>]*>` $renderedSource }}
+        {{- $title := replaceRE `(?is)^.*?\stitle="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\stitle='[^']+'[^>]*>` $renderedSource }}
+        {{- $title := replaceRE `(?is)^.*?\stitle='([^']+)'.*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($title | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label="[^"]+"[^>]*>` $renderedSource }}
+        {{- $label := replaceRE `(?is)^.*?\saria-label="([^"]+)".*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+    {{- end }}
+    {{- range findRE `(?is)<[A-Za-z][^>]*\saria-label='[^']+'[^>]*>` $renderedSource }}
+        {{- $label := replaceRE `(?is)^.*?\saria-label='([^']+)'.*$` "$1" . }}
+        {{- $scratch.Add "wordcount" (countwords ($label | plainify)) }}
+    {{- end }}
+    {{- $renderedSource = replaceRE `(?i)<br\s*/?>|&nbsp;?` " " $renderedSource }}
+    {{- $renderedSource = replaceRE `(?is)>\s*<` "> <" $renderedSource }}
+    {{- $scratch.Add "wordcount" (countwords ($renderedSource | plainify)) }}
 {{- end }}
 <tr>
     <td style="text-align:center">{{ time.Format "2006-01-02" time.Now }}</td>

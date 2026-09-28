@@ -19,7 +19,7 @@ GitLabは、無料のオープンソースソフトウェアおよび有料オ�
 
 上述のとおり、GitLabが製品使用データを生成するために使用する3つの収集サービスがあり、これらによってより効率的に投資を行い、オープンソースおよび有料ソフトウェアの両方のオファリングを継続的に拡大することができます。
 
-### Service Ping（旧称：Usage Ping）
+### Service Ping（旧称：Usage Ping） {#service-ping-formerly-known-as-usage-ping}
 
 *目的*: GitLabはService Pingメトリクスを収集し、顧客との協力によって価値の帰属を加速し、投資対効果（ROI）目標を達成し、ソフトウェアによるビジネス成果を実現します。Service Pingメトリクスは、インスタンス、テナントまたはネームスペース全体に関連する集計カウントメトリクスと、特定の設定や機能の有効化に関するtrue/falseメトリクスで構成されます。集計カウントは「全期間」形式と「28日」形式で集計されます。Service Ping FAQは[こちら](/handbook/customer-experience/csm/service-ping-faq/)をご覧ください。
 

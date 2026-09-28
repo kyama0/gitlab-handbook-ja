@@ -132,7 +132,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 
 > 2FA 確認コードを求められた場合は、認証アプリを起動して最新のコードを入力してください。
 
-### 購買依頼の作成方法
+### 購買依頼の作成方法 {#how-to-create-a-requisition}
 
 
 {{% alert color="info" %}}
@@ -356,7 +356,7 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 {{% /panel %}}
 
 
-### 新規サプライヤーを申請する方法
+### 新規サプライヤーを申請する方法 {#how-to-request-a-new-supplier}
 
 サプライヤーへの購買依頼を送信する前に、そのサプライヤーが `Zip` に存在している必要があります。新規サプライヤーの申請方法については、[`Zip ハンドブックページ`](/handbook/business-technology/enterprise-applications/guides/zip-guide)をご確認ください。
 

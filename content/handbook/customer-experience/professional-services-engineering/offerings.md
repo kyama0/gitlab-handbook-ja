@@ -1,6 +1,6 @@
 ---
-title: "プロフェッショナルサービスオファリング"
-description: "GitLab プロフェッショナルサービスオファリングに関する情報を見つけてください。"
+title: "Professional Services オファリング"
+description: "GitLab Professional Services オファリングに関する情報を見つけてください。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/offerings/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -9,9 +9,9 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-## ディスカバリーエンゲージメント
+## ディスカバリーエンゲージメント {#discovery-engagement}
 
-ディスカバリーエンゲージメントの間、プロフェッショナルサービスエンジニアリンググループは、設定された期間（通常 1 週間）と設定された価格で顧客にエンゲージします。プロフェッショナルサービスエンジニアリンググループは顧客とコンサルし、次のようなアドバイスを提供します:
+ディスカバリーエンゲージメントの間、Professional Services Engineering グループは、設定された期間（通常 1 週間）と設定された価格で顧客にエンゲージします。Professional Services Engineering グループは顧客とコンサルし、次のようなアドバイスを提供します:
 
 - 高可用性モードでの GitLab デプロイメント成功に向けた、短期、中期、長期の目標のオンサイトディスカバリー。
 - 既存のインフラストラクチャ（ネットワークトポロジー、VM 環境、データセンター間接続性、セキュリティ制約）に関する技術的なディープダイブ。
@@ -42,11 +42,11 @@ GitLab はあなたと協力して、貴チームのトレーニングニーズ�
 - GitHub、Bitbucket、GitLab.com、FogBugz、SVN からプロジェクトを GitLab にインポートする
 - SVN からのマイグレーション: SVN リポジトリを Git および GitLab に変換する
 
-すべてのケースで、マイグレーションおよび採用の目標、ならびに顧客または GitLab プロフェッショナルサービスのアクションを伴うプランを概説した GitLab Adoption Plan が顧客と共に作成されます。
+すべてのケースで、マイグレーションおよび採用の目標、ならびに顧客または GitLab Professional Services のアクションを伴うプランを概説した GitLab Adoption Plan が顧客と共に作成されます。
 
 ## インテグレーションサービス
 
-GitLab プロフェッショナルサービスエンジニアリンググループは、顧客の技術チームと協力して GitLab 実装の Integration Plan を作成します。通常はプロフェッショナルサービスプラン全体の一部であり、この Integration Plan は、顧客の既存システムおよび企業ポリシーに関して次のことを考慮します:
+GitLab Professional Services Engineering グループは、顧客の技術チームと協力して GitLab 実装の Integration Plan を作成します。通常は Professional Service Plan 全体の一部であり、この Integration Plan は、顧客の既存システムおよび企業ポリシーに関して次のことを考慮します:
 
 - LDAP/AD またはその他の OAuth サービスとの認証統合
 - Jira、Jenkins、Redmine、Mattermost への統合

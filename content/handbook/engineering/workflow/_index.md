@@ -41,7 +41,7 @@ GitLab のプロダクトは [GitLab Flow](https://about.gitlab.com/blog/2023/07
 
 `master` を修正するマージリクエストには、MR パイプラインを高速化するため、いくつかの非必須ジョブをスキップする目的で `pipeline::expedited` ラベルと、`master:broken` または `master:foss-broken` ラベルを設定する必要があります。
 
-## `master` の破損
+## `master` の破損 {#broken-master}
 
 [GitLab](https://gitlab.com/gitlab-org/gitlab) または [GitLab FOSS](https://gitlab.com/gitlab-org/gitlab-foss) の `master` ブランチのパイプラインが失敗していることに気づいた場合、ビルドを成功状態に戻すことは他のすべての開発関連作業に優先します。テストが壊れている間に行うすべての作業は、次のような可能性があるためです:
 
@@ -263,7 +263,7 @@ DRI が修正への取り組みを認識または示していない場合、開�
   [マージ済み結果パイプライン](https://docs.gitlab.com/ee/ci/pipelines/merged_results_pipelines.html)
   がサポートされていないため）。
 
-### 破損 master 中のマージ
+### 破損 master 中のマージ {#merging-during-broken-master}
 
 マージリクエストは、インシデントステータスが `Resolved` に変更されるまで `master` に **マージできません**。
 
@@ -271,7 +271,7 @@ DRI が修正への取り組みを認識または示していない場合、開�
 
 マージリクエストが[緊急](#criteria-for-merging-during-broken-master)で、**即座に** マージする必要があるまれなケースでは、チームメンバーは破損 `master` 中にマージリクエストをマージするため、以下のプロセスに従えます。
 
-#### 破損 master 中にマージするための基準
+#### 破損 master 中にマージするための基準 {#criteria-for-merging-during-broken-master}
 
 `master` が壊れている間のマージは、次のものに対してのみ実行できます:
 

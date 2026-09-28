@@ -44,7 +44,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
     - [バイヤー情報シート](https://docs.google.com/document/d/1Zuy4z2YHZR0GXdQB_zexiknDKllgRab59wFWj3kpVnU/edit)
     - [セラー情報シート](https://docs.google.com/document/d/1jwLo3GYA81VNcXg7vHTRF7iMkF7YihV7a362yPtZx0o/edit)
 
-### 顧客ペルソナ
+### 顧客ペルソナ {#customer-personas}
 
 これらのロールプレイシナリオは、[ペルソナ](/handbook/customer-experience/csm/engagement#customer-personas)として記載されている人々を特定し、アクセスするための練習を目的としています。
 

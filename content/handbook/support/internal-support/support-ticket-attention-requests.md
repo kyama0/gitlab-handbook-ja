@@ -76,7 +76,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 1. 顧客の Organization 情報が欠落しているチケット（「Needs Org」）。代わりに、Needs Org ワークフローの要件を確認し、`#support_operations` Slack チャンネルで ping してください。
 1. 正しい SLA が割り当てられていないように見えるチケット。代わりに、[SLA ワークフロー](/handbook/support/workflows/sla_and_views)の要件を確認し、`#support_operations` Slack チャンネルで ping してください。
 
-## サポートチケット注目リクエスト (STAR) の送信 / チケットの STAR 付け
+## サポートチケット注目リクエスト (STAR) の送信 / チケットの STAR 付け {#submitting-a-support-ticket-attention-request-star--starring-a-ticket}
 
 ### **重要**
 

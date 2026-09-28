@@ -96,7 +96,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
   - [ソフトウェアセキュリティのための GitLab の使用ビデオ](https://youtu.be/SP0VSH-NqJs)
   - [GitLab Secure Doc](https://docs.gitlab.com/ee/user/application_security/index.html)
   - [GitLab セキュリティとコンプライアンス機能デック](https://docs.google.com/presentation/d/1WHTyUDOMuSVK9uK7hhSIQ_JbeUbo7k5AW3D6WwBReOg/edit)
-- **プロフェッショナルサービスの販売 (Material - ビデオ - 30 分)**
+- **Professional Services の販売 (Material - ビデオ - 30 分)**
   - 私たちの [Professional Services](/handbook/customer-experience/professional-services-engineering/selling/) チームは、GitLab の主題専門家だけでなく、大規模なアプリケーションのデプロイと保守、および SDLC 全体のベストプラクティスの作成と教育の経験を持つ、経験豊富な DevOps プロフェッショナルで構成されています。私たちの専門家は、Concurrent DevOps Transformations をリードし、顧客の戦略的ビジネスイニシアチブに直接サポートを提供します。GitLab の Professional Services チームは、クライアントが GitLab インストールの完全な価値を実現できるように存在しています。GitLab インストールが堅牢でセキュアであることを保証するために、直接的な実装サポートを提供できます。また、移行サービスを提供して、クリーンなデータセットを提供することで GitLab への移行を促進し、すぐに業務を再開できるようにします。私たちの教育と専門的なトレーニングは、CI/CD、バージョン管理、メトリクスなどのベストプラクティスにおけるトレーニングを提供します。
   - サービスの販売方法に関する [Sales Enablement Session](/handbook/customer-experience/professional-services-engineering/sales-enablement/) も視聴できます。
 - **GitLab の方向性と最新リリース**
@@ -292,7 +292,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 </details>
 
-## カスタマーサクセス Quick Start - 役割ベースのカリキュラム
+## カスタマーサクセス Quick Start - 役割ベースのカリキュラム {#customer-success-quick-start---role-based-curriculum}
 
 <details>
 <summary markdown="span">テクニカルディープダイブ (SA、CSM、PSE のみ</summary>

@@ -72,7 +72,7 @@ Gainsight 内の顧客の製品利用レポーティングの活用方法をガ�
   <a href="/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/#frequently-asked-questions" class="btn btn-purple"> 製品利用レポーティング FAQ </a>
 </div>
 
-## Gainsight のレポートとダッシュボード
+## Gainsight のレポートとダッシュボード {#gainsight-reports-and-dashboards}
 
 [製品利用レポーティング — v2](https://gitlab--jbcxm.vf.force.com/one/one.app#eyJjb21wb25lbnREZWYiOiJvbmU6YWxvaGFQYWdlIiwiYXR0cmlidXRlcyI6eyJhZGRyZXNzIjoiaHR0cHM6Ly9naXRsYWItLWpiY3htLnZmLmZvcmNlLmNvbS9hcGV4L0dhaW5zaWdodE5YVCNkYXNoYm9hcmQlMjMlMkYxNzE0MTVhNy04ZTJhLTQ3YWYtODFmMy1iYTU1N2IxNjlhOGQifX0=) ダッシュボードを使用して、すべてのアカウントの完全な一覧を確認できます。
 
@@ -180,9 +180,9 @@ GitLab と顧客にとって、顧客が本番コードを開発する`本番`�
 2. 小規模アカウントの自動化が必要なため、一部のインスタンスを本番として誤ってラベル付けし、他のインスタンスを見落としてしまうことがあります
 3. Strategic/Growth の CSM 所有アカウントは手動でラベル付けされるため、すべてのシステムへの伝播に遅延が生じます
 
-### **CSM/CSE アクション**
+### **CSM/CSE アクション** {#csmcse-actions}
 
-#### **未確認のセルフマネージドインスタンスをすべて表示する**
+#### **未確認のセルフマネージドインスタンスをすべて表示する** {#viewing-all-unknown-self-managed-instances}
 
 新しいセルフマネージドインスタンスは常に登場しています。さまざまなタイプには以下が含まれます。
 
@@ -212,7 +212,7 @@ GitLab と顧客にとって、顧客が本番コードを開発する`本番`�
 
 インスタンスタイプは Gainsight から Snowflake に週次で同期され、日曜日の夜（PST）に更新されます。Gainsight はデータを収集し、ルール *[Admin - Drop Instance Type to S3 for Snowflake Pickup](https://gitlab.gainsightcloud.com/v1/ui/rules#v2/rule/46570bbe-742c-4e2a-8475-1dd1973b7b49/basicInfo)* を使用して S3 バケットにアップロードし、Snowflake が毎週日曜日の夜にテーブルを処理・更新します。
 
-### 複数の本番インスタンスの健全スコアリング
+### 複数の本番インスタンスの健全スコアリング {#multiple-production-instances-health-scoring}
 
 アカウントが本番として識別された複数の GitLab インスタンスを持っている場合（[セルフマネージドインスタンスタイプの更新](#self-managed)方法の手順を参照）。
 
@@ -258,7 +258,7 @@ CSM が Premium サブスクリプション下で本番インスタンスをマ�
 
 ![製品利用データフロー図](https://lucid.app/publicSegments/view/cba91861-d0aa-4f96-8848-56a2eec5798b/image.jpeg)
 
-### データ品質のトリアージ
+### データ品質のトリアージ {#triaging-data-quality}
 
 1. CS オペレーションにデータ品質の問題が Gainsight 固有か上流にあるかを確認します（#cs-product-analytics に投稿）。
    1. または、Gainsight と LicensesDot を比較します。
