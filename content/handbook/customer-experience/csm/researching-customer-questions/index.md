@@ -52,7 +52,7 @@ Zendesk は、GitLab が Zendesk を導入してから長年にわたってす�
 
 質問に適切なプロダクトグループを見つけたら、Slack でそのプロダクトグループの公開 Slack チャンネルを検索して質問を投稿してください。
 
-顧客を Product の誰かと直接つなぐことが役立つ場合は、[コラボレーションプロジェクト](/handbook/customer-experience/csm/customer-collaboration-project/)の Issue にできる限り詳細を記載し、[Product Categories](/handbook/product/categories/) ページで確認できるプロダクトマネージャーを @ メンションしてください。プロダクトマネージャーにチームの誰かが問い合わせを支援できるか確認してください。
+顧客を Product の誰かと直接つなぐことが役立つ場合は、[コラボレーションプロジェクト](/handbook/customer-experience/csm/customer-collaboration-project/)の Issue にできる限り詳細を記載し、[Product Categories](/handbook/product/categories/) ページで確認できる Product Manager を @ メンションしてください。Product Manager にチームの誰かが問い合わせを支援できるか確認してください。
 
 **注意:** 他者を巻き込む前に、このページで提供されている方法に基づいて回答を調査するための十分な検討を行い、GitLab の価値観の一部として[非同期コミュニケーションを優先する](/handbook/values/#bias-towards-asynchronous-communication)ことを忘れないでください。
 
