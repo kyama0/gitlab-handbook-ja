@@ -497,6 +497,8 @@
         {{- end }}
         {{- $scratch.Add "wordcount" (countwords $sectionGroup) }}
         {{- $scratch.Add "wordcount" (countwords "Type Names Count PM UX EM FEM Engineering Total") }}
+        {{- /* The table renders these abbreviation titles as accessible tooltip text. */ -}}
+        {{- $scratch.Add "wordcount" (countwords "Product Manager User Research Engineering Manager Frontend Engineering Manager Engineering") }}
         {{- range (slice $pm $ux $em $fem $engineers $found) }}
             {{- $scratch.Add "wordcount" (countwords (printf "%d" (len .))) }}
         {{- end }}

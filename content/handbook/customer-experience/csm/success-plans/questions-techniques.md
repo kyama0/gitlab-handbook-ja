@@ -217,7 +217,7 @@ HA のセットアップを望むという最初の言及の後で「これは�
 
 ある顧客が GitLab のメトリクスに関連して GitLab が提供できるものを理解するためのミーティングを希望しており、具体的には [DORA メトリクス](https://docs.gitlab.com/ee/user/analytics/ci_cd_analytics.html#dora4-metrics)をトピックとして挙げ、[Developer Experience Lead](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) が出席する予定です。メトリクス採用のサクセスプランを構築するための貴重な情報を集める機会を逃さないようにしましょう。
 
-[Orit Golowinski](https://gitlab.com/ogolowinski)（Release Stage シニアプロダクトマネージャー）は、上記で示した別の類似シナリオで有用なオープンエンドな質問をいくつか共有しています。
+[Orit Golowinski](https://gitlab.com/ogolowinski)（Release Stage Senior Product Manager）は、上記で示した別の類似シナリオで有用なオープンエンドな質問をいくつか共有しています。
 
 - 今日は何を測定していますか？
 - 何を測定したいですか？なぜですか？
