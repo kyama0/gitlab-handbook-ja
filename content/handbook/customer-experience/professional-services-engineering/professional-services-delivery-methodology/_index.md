@@ -1,6 +1,6 @@
 ---
-title: "プロフェッショナルサービス デリバリーメソドロジー"
-description: "GitLab プロフェッショナルサービスがカスタマーサクセスを実現するために使用しているプロセスとメソドロジーを学びます。"
+title: "Professional Services デリバリーメソドロジー"
+description: "GitLab Professional Services がカスタマーサクセスを実現するために使用しているプロセスとメソドロジーを学びます。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-- [プロフェッショナルサービス デリバリーメソドロジー (PSDM) とは](#what-is-the-professional-services-delivery-methodology-psdm)
+- [Professional Services デリバリーメソドロジー (PSDM) とは](#what-is-the-professional-services-delivery-methodology-psdm)
 - [GitLab でのプロジェクト管理](#managing-a-project-in-gitlab)
 - [プロジェクトベロシティとイテレーションスケジューリング](#project-velocity-and-iteration-scheduling)
 - [ステータスプランニング](#status-planning)
@@ -19,9 +19,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - [カスタマーレトロスペクティブガイドライン](#customer-retrospective-guidelines)
 - [イテレーションベース PSDM のガイドライン](#guidelines-for-iteration-based-psdm)
 
-## プロフェッショナルサービス デリバリーメソドロジー (PSDM) とは {#what-is-the-professional-services-delivery-methodology-psdm}
+## Professional Services デリバリーメソドロジー (PSDM) とは {#what-is-the-professional-services-delivery-methodology-psdm}
 
-プロフェッショナルサービス デリバリーメソドロジー (PSDM) は、GitLab 内のプログラムおよびプロジェクトデリバリーのためのガイディングフレームワークです。その目的は、PS デリバリーチームがカスタマーサクセスを優先しながら、プロジェクトスコープに対して予測可能なタイムフレーム内で運営できるようにすることです。これは以下によって実現されます:
+Professional Services デリバリーメソドロジー (PSDM) は、GitLab 内のプログラムおよびプロジェクトデリバリーのためのガイディングフレームワークです。その目的は、PS デリバリーチームがカスタマーサクセスを優先しながら、プロジェクトスコープに対して予測可能なタイムフレーム内で運営できるようにすることです。これは以下によって実現されます:
 
 - GitLab.com を Single Source of Truth (SSOT) として使用
 - 進捗の管理とレポートのためのラベルガイドラインに従う
@@ -33,7 +33,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## GitLab でのプロジェクト管理 {#managing-a-project-in-gitlab}
 
-GitLab はすべてのプロフェッショナルサービスエンゲージメントにおいて、プロジェクト管理プラットフォームとコラボレーションプラットフォームの両方の役割を果たします。私たちはプロジェクト管理に GitLab の以下の機能/用語を活用しています:
+GitLab はすべての Professional Services エンゲージメントにおいて、プロジェクト管理プラットフォームとコラボレーションプラットフォームの両方の役割を果たします。私たちはプロジェクト管理に GitLab の以下の機能/用語を活用しています:
 
 GitLab を操作する際は [GitLab ベストプラクティス](./gitlab-best-practices/_index.md) を参照してください。
 
@@ -155,7 +155,7 @@ RAID（Risks、Actions、Issues、Decisions）フレームワークは、プロ�
 
 6. **エスカレーションプロセス:**
    - プロジェクトの進捗に影響を与える緊急対応が必要なリスクには "Escalated" ラベルを使用
-   - エスカレートされた項目はプロフェッショナルサービスポートフォリオレポートに表面化されるべきです
+   - エスカレートされた項目は Professional Services ポートフォリオレポートに表面化されるべきです
 
 ## 社内レトロスペクティブガイドライン {#internal-retrospective-guidelines}
 
@@ -262,7 +262,7 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
 
 ## カスタマーレトロスペクティブガイドライン {#customer-retrospective-guidelines}
 
-カスタマーレトロスペクティブは、プロフェッショナルサービス デリバリーメソドロジーの重要な構成要素であり、お客様と一緒にエンゲージメントに関する構造化されたフィードバックを提供します。これは以下の役割を果たします:
+カスタマーレトロスペクティブは、Professional Services デリバリーメソドロジーの重要な構成要素であり、お客様と一緒にエンゲージメントに関する構造化されたフィードバックを提供します。これは以下の役割を果たします:
 
 - エンゲージメントに対する顧客の視点をキャプチャ
 - うまくいったこと、改善が必要な領域を特定
