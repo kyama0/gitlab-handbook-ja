@@ -1,6 +1,6 @@
 ---
-title: "コマーシャルセールス - カスタマーサクセス"
-description: "コマーシャルセールスセグメントは、スモールビジネス（SMB）とミッドマーケット（MM）という 2 つのセールスチームで構成されています"
+title: "Commercial Sales - Customer Success"
+description: "Commercial Sales セグメントは、Small Business（SMB）と Mid-Market（MM）という 2 つのセールスチームで構成されています"
 upstream_path: /handbook/customer-experience/comm-sales/
 upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
 translated_at: "2026-09-27T06:13:05+00:00"
@@ -9,15 +9,15 @@ stale: false
 lastmod: "2026-09-24T21:34:11+02:00"
 ---
 
-GitLab はコマーシャルセールスをミッドマーケットおよびスモール・ミディアムビジネスセグメント向けの全世界のセールスとして定義しています。[セールスセグメント](/handbook/sales/field-operations/gtm-resources/)はグローバルアカウントの従業員総数によって定義されます。コマーシャルセールスセグメントは、スモールビジネス（SMB）とミッドマーケット（MM）という 2 つのセールスチームで構成されています。コマーシャルセールスセグメントは、専任の Solutions Architect（SA）と Customer Success Manager（CSM）のチームによってサポートされています。
+GitLab は Commercial Sales をミッドマーケットおよびスモール・ミディアムビジネスセグメント向けの全世界のセールスとして定義しています。[セールスセグメント](/handbook/sales/field-operations/gtm-resources/)はグローバルアカウントの従業員総数によって定義されます。Commercial Sales セグメントは、Small Business（SMB）と Mid-Market（MM）という 2 つのセールスチームで構成されています。Commercial Sales セグメントは、専任の Solutions Architect（SA）と Customer Success Manager（CSM）のチームによってサポートされています。
 
 ## 役割と責任
 
 ### Solutions Architect
 
-Solutions Architect はプールモデルでコマーシャルセールスの Account Executives に整合しています。SA へのリクエストは、可用性、適切な専門知識、現在の作業量など複数の要素を考慮して、SA がトリアージボードから引き受けます。
+Solutions Architect はプールモデルで Commercial Sales の Account Executives に整合しています。SA へのリクエストは、可用性、適切な専門知識、現在の作業量など複数の要素を考慮して、SA がトリアージボードから引き受けます。
 
-- [コマーシャル Solutions Architect へのエンゲージ](/handbook/solutions-architects/processes/commercial/)
+- [Commercial Solutions Architect へのエンゲージ](/handbook/solutions-architects/processes/commercial/)
 - [Solutions Architect 役割の詳細](/job-description-library/sales/solutions-architect/)
 - [Solutions Architect の概要](/handbook/solutions-architects/)
 
@@ -30,7 +30,7 @@ Customer Success Manager には、各[セグメント](/handbook/customer-experi
 
 ## セールスエンゲージメントガイドライン
 
-SA を使用したすべてのコマーシャルセールスのセールスエンゲージメントは、[コマーシャルプロセス](/handbook/solutions-architects/processes/commercial/)ページに文書化されています。
+SA を使用したすべての Commercial Sales のセールスエンゲージメントは、[Commercial Process](/handbook/solutions-architects/processes/commercial/)ページに文書化されています。
 
 ## 顧客エンゲージメントガイドライン
 
@@ -57,4 +57,4 @@ SA を使用したすべてのコマーシャルセールスのセールスエ�
 - アカウントのメモ、[Tech Stack Discovery](https://docs.google.com/spreadsheets/d/1sOeluQhMO4W0wWIC6rbSE_E1NzTj7eTaR-FDKLYlLb4/edit#gid=912439232)、[テクニカルブリーフ](https://gitlab.com/gitlab-com/customer-success/tko/technical-followup-briefs/-/tree/master)、または進行中のコールメモが Salesforce にリンクされ、新しい SA と共有されていることを確認する
 - クライアントコールで新しい SA をライブで紹介する
 - [POV](/handbook/solutions-architects/playbooks/pov) が保留中または進行中の場合、必要に応じて Salesforce の POV レコードを更新する
-- [コマーシャル SA トリアージボード](https://gitlab.com/gitlab-com/customer-success/sa-triage-boards/commercial-triage/-/boards/1006966)の Issue を通じて現在のアクションアイテムが特定されていることを確認する
+- [Commercial SA Triage ボード](https://gitlab.com/gitlab-com/customer-success/sa-triage-boards/commercial-triage/-/boards/1006966)の Issue を通じて現在のアクションアイテムが特定されていることを確認する
