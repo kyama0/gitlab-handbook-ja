@@ -56,7 +56,7 @@ SF Stage 5 より前にプロジェクトを計画する状況があることは
 | PS Quote がオポチュニティに作成された | オポチュニティ オーナー |
 | MSA/PSA が締結済み | オポチュニティ オーナー |
 | 顧客と合意したクローズ計画 | オポチュニティ オーナー |
-| Customer Epic にスキルがプッシュされた | アサインされた Engagement Manager |
+| 顧客のエピックにスキルがプッシュされた | アサインされた Engagement Manager |
 | [Project Scheduling Intake Issue](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/blob/master/.gitlab/issue_templates/SchedulingPreparation.md) に必要な詳細が記入された | アサインされた Engagement Manager |
 
 スタッフィング要件や質問については、Project Scheduling Intake Issue に詳細を追加し、アサインされた Project Coordinator にタグ付けしてください。Project Coordinator がアサインされていない場合は、Operations Manager にタグ付けして支援を求めると、その時点でアサインが完了します。今後、Project Scheduling Intake Issue にスケジューリングに関するすべての情報と議論が格納されます。PC Checklist は Project Coordinator が内部用に使用するだけです。
@@ -479,31 +479,31 @@ COUPA を介した現在のプロセス:
 - パートナーのタイムシート情報の PDF バージョンを作成します。
 - [テンプレート](https://docs.google.com/document/d/1lr156fdAM24GGWkqpLtkaJ5ofv3uoVx0lC9UDS9m3B0/edit?usp=sharing) を使用して、パートナーの A/R ポイントオブコンタクトにメールを送信します。
 
-#### エンゲージメント Epic と Issue をパートナーアクセス可能にする
+#### エンゲージメントエピックと Issue をパートナーアクセス可能にする
 
 ##### 背景
 
-- [PS automation](https://gitlab.com/services-calculator/services-calculator.gitlab.io) は [Professional-Services-Group](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/-/epics) にエンゲージメント epic を、[PS-Plan](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/issues) に Issue を作成します。
-- パートナーアクセスが必要なエンゲージメントの epic を [Professional-Servies-Group > Consulting Delivery](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/ww-consulting/-/epics) に移動するのが便利です
+- [PS automation](https://gitlab.com/services-calculator/services-calculator.gitlab.io) は [Professional-Services-Group](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/-/epics) にエンゲージメントエピックを、[PS-Plan](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/issues) に Issue を作成します。
+- パートナーアクセスが必要なエンゲージメントのエピックを [Professional-Servies-Group > Consulting Delivery](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/ww-consulting/-/epics) に移動するのが便利です
 
 ##### ノート
 
-- Epic は現在移動できないため、代わりに新しい場所で epic を再作成し、従属する Issue を新しい場所に移動し、元の epic をクローズします。詳細は以下の _手順_ で説明します。
-- 元の epic と新しい epic は、Issue 移動の監査エントリを介してリンクされます。
+- エピックは現在移動できないため、代わりに新しい場所でエピックを再作成し、従属する Issue を新しい場所に移動し、元のエピックをクローズします。詳細は以下の _手順_ で説明します。
+- 元のエピックと新しいエピックは、Issue 移動の監査エントリを介してリンクされます。
 - 手順では、[このエピック検索の Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/233729) のため [bulk edit](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#bulk-edit-issues-from-a-project) を使用しません。
 
 ##### 手順
 
-- 再作成する epic をブラウザタブで開きます
-- もう 1 つのブラウザタブで [destination epics list UI](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/ww-consulting/-/epics) を開きます
+- 再作成するエピックをブラウザタブで開きます
+- もう 1 つのブラウザタブで [移動先のエピック一覧 UI](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/ww-consulting/-/epics) を開きます
   - _New Epic_
     - Title - `Customer Name` Customer Project Epic
-    - Description - 元の epic（現在もう 1 つのブラウザタブにある）から description の markdown をコピー&ペースト
+    - Description - 元のエピック（現在もう 1 つのブラウザタブにある）から description の markdown をコピー&ペースト
     - _Create epic_
-  - 新しい epic の URL をコピー&ペーストバッファに入れて以下で使用します
-- 再作成する epic 内の各 Issue について:
+  - 新しいエピックの URL をコピー&ペーストバッファに入れて以下で使用します
+- 再作成するエピック内の各 Issue について:
   - Issue を参照
-    - Issue を新しい epic に移動するために `/epic <url>` [スラッシュコマンド](https://docs.gitlab.com/ee/user/project/quick_actions.html) を使用
+    - Issue を新しいエピックに移動するために `/epic <url>` [スラッシュコマンド](https://docs.gitlab.com/ee/user/project/quick_actions.html) を使用
       - 例: `/epic https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/ww-consulting/-/epics/2`
       - スラッシュコマンドを使用するには、コメントインターフェースにコマンドのテキストを入力し、_Comment_ ボタンで適用します
 

@@ -28,7 +28,7 @@ CSM EMEA はさらに異なる地域に分かれています。4 つの異なる
 
 ## チームの連絡先と責任
 
-Elaine Barry が CS EMEA のディレクターです。DACH チームは [Christina Souleles](https://gitlab.com/csouleles) が率いており、Amy Walker が NORTH/SOUTH チームをリードしています。
+Elaine Barry が Director of CS EMEA です。DACH チームは [Christina Souleles](https://gitlab.com/csouleles) が率いており、Amy Walker が NORTH/SOUTH チームをリードしています。
 GitLab _SME コラボレーションリクエスト_ プロジェクトには、CSM EMEA 内の[サブジェクトマターエキスパート](https://gitlab.com/gitlab-com/customer-success/emea/sme-collaboration-requests/-/blob/main/emea_sme_map.yml?ref_type=heads)の一覧が含まれています。
 
 * **スタッフチーム - EMEA CSM の特定エキスパート / DRI**
