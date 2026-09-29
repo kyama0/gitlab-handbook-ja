@@ -19106,11 +19106,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "67bc662bf3f5d3f1c3cbf290ead2d6027341155d",
-      "translated_at": "2026-09-24T21:08:13+00:00",
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:09:28+00:00",
       "model": "codex",
-      "input_hash": "cadc4f0b9cce3974665442f4c651b7b6a6926d13d15ef3ef02922784127dcd2e",
-      "upstream_committed_at": "2026-09-24T08:56:32-04:00"
+      "input_hash": "2936fb398867350d9b45cc157f878e58125773ed69dbe89db0889462c29f6462",
+      "upstream_committed_at": "2026-09-29T15:57:32+02:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -19386,11 +19386,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-18T21:06:29+00:00",
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:09:28+00:00",
       "model": "codex",
-      "input_hash": "64f3214d794e3447b58f7ea40a4f6c55235d86a032340576a1232216cc3fd6be",
-      "upstream_committed_at": "2026-09-17T12:56:13Z"
+      "input_hash": "bad1cd52632a91be8c8a999586154d20b4071032ad3c91f811e748013c9d82be",
+      "upstream_committed_at": "2026-09-28T06:52:39-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
@@ -19458,11 +19458,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
-      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
-      "translated_at": "2026-09-25T21:07:10Z",
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:09:28+00:00",
       "model": "codex",
-      "input_hash": "80072b337004980aaf8f33719f7a71e196e986fa27330c983eb2bb036d969d7c",
-      "upstream_committed_at": "2026-09-25T08:40:12Z"
+      "input_hash": "4c1b3481e5d1487f976c2868ee2db50630410d05162b4320b37106956463a69f",
+      "upstream_committed_at": "2026-09-28T06:52:39-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
@@ -20178,11 +20178,11 @@
     },
     "content/handbook/support/support-time-off.md": {
       "path": "content/handbook/support/support-time-off.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-29T21:19:18Z",
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:09:28+00:00",
       "model": "codex",
-      "input_hash": "5fecae7f0198dfec70b9d5a508c9d5fba37539cee00185133a896bf1be2fa5b4",
-      "upstream_committed_at": "2026-07-29T12:39:09-04:00"
+      "input_hash": "e040644f2a5b5193ec9e2698c2e7f6398aeab3d95acabc7de565f95e234ce6d9",
+      "upstream_committed_at": "2026-09-28T18:57:11Z"
     },
     "content/handbook/support/support-pods/_index.md": {
       "path": "content/handbook/support/support-pods/_index.md",
@@ -22770,11 +22770,11 @@
     },
     "content/handbook/security/isms.md": {
       "path": "content/handbook/security/isms.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "533125152b1944d2c7b75324f42f0d98fa56e3927493a65d2f5acf2c28d24be8",
-      "upstream_committed_at": "2026-03-04T13:32:11-08:00"
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:11:30+00:00",
+      "model": "codex",
+      "input_hash": "a28c9ce1ff520e6b6ec6fcb2df34e2f451bdd6a6d19069019f225dde046edbb0",
+      "upstream_committed_at": "2026-09-29T11:24:47-07:00"
     },
     "content/handbook/security/learning-and-development.md": {
       "path": "content/handbook/security/learning-and-development.md",
@@ -23210,11 +23210,11 @@
     },
     "content/handbook/security/security-assurance/security-risk/_index.md": {
       "path": "content/handbook/security/security-assurance/security-risk/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-19T21:18:00+00:00",
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:11:30+00:00",
       "model": "codex",
-      "input_hash": "c63e6d5c987fc2262ce3579f4903cb0252564853eb3c1d4073097d8280e6d4c8",
-      "upstream_committed_at": "2026-09-17T12:39:20-07:00"
+      "input_hash": "118de13787a50b747667fb0df4f2073a9376dfd6e03fb3177de92e938ca71c4e",
+      "upstream_committed_at": "2026-09-29T12:06:31-07:00"
     },
     "content/handbook/security/security-assurance/security-risk/sox_cuec_mapping_procedure.md": {
       "path": "content/handbook/security/security-assurance/security-risk/sox_cuec_mapping_procedure.md",
@@ -23306,19 +23306,19 @@
     },
     "content/handbook/security/security-assurance/security-compliance/pci-charter.md": {
       "path": "content/handbook/security/security-assurance/security-compliance/pci-charter.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T06:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ebf42cfbd7fbddfa81fc791c20dd76c1c6717a28bc9186047b4364fae28632cc",
-      "upstream_committed_at": "2026-03-23T14:02:58-05:00"
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:11:30+00:00",
+      "model": "codex",
+      "input_hash": "0c4727e18031fa61bb70506873d1b65e48c9dfad620595129c98e7223ede2db7",
+      "upstream_committed_at": "2026-09-28T13:23:01-07:00"
     },
     "content/handbook/security/security-assurance/security-compliance/pci-internal-control-review.md": {
       "path": "content/handbook/security/security-assurance/security-compliance/pci-internal-control-review.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T06:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ddb43ba293c3615daf26e62a80fe4adbc076828d69a1dca863ad69e6cbcdbbac",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:11:30+00:00",
+      "model": "codex",
+      "input_hash": "0357e15bcffd93c0dcf40ef612aba51ffa11146c9fc097d66b62f8365d739e2f",
+      "upstream_committed_at": "2026-09-28T13:42:44-07:00"
     },
     "content/handbook/security/security-assurance/security-compliance/poam-deviation-request-procedure.md": {
       "path": "content/handbook/security/security-assurance/security-compliance/poam-deviation-request-procedure.md",
@@ -30586,11 +30586,11 @@
     },
     "content/handbook/people-policies/leave-of-absence/_index.md": {
       "path": "content/handbook/people-policies/leave-of-absence/_index.md",
-      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
-      "translated_at": "2026-09-15T06:10:24+09:00",
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "translated_at": "2026-09-29T21:16:53+00:00",
       "model": "codex",
-      "input_hash": "d0f342f7eb2d9cd93090e86cabfa876ddec4fd8057f5df7edd7872adfd924cf7",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "3557f25dde83ff1710840d6f22edd5bcdf8c6ecb707392abaac74b59c282bac1",
+      "upstream_committed_at": "2026-09-28T06:52:39-07:00"
     },
     "content/handbook/people-policies/leave-of-absence/us.md": {
       "path": "content/handbook/people-policies/leave-of-absence/us.md",
@@ -40135,6 +40135,14 @@
       "model": "codex",
       "input_hash": "39ce21d8346b2951397c32ef22afda4043def14191a28434f92fed7b4c579cf0",
       "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+    },
+    "content/handbook/security/product-security/mentorship.md": {
+      "path": "content/handbook/security/product-security/mentorship.md",
+      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
+      "upstream_committed_at": "2026-09-30T08:57:56+13:00",
+      "translated_at": "2026-09-29T21:16:53+00:00",
+      "model": "codex",
+      "input_hash": "4d96bd3a012acc9828cd2bcde0417d430c8387713ebe745b26ea7b33c793a5b7"
     }
   }
 }
