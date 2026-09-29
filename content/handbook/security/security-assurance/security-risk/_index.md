@@ -2,11 +2,11 @@
 title: "Security Risk チーム"
 description: "Security Risk チームのチャーター"
 upstream_path: /handbook/security/security-assurance/security-risk/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-19T21:18:00+00:00"
+upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
+translated_at: "2026-09-29T21:11:30+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-17T12:39:20-07:00"
+lastmod: "2026-09-29T12:06:31-07:00"
 ---
 ## ミッションステートメント
 
@@ -41,6 +41,7 @@ GitLab は、AI による自動化と継続的なセキュリティモニタリ�
 |機能     |DRI|
 |:----------:|:----------:|
 |[年次リスク評価（ARA）](/handbook/security/security-assurance/security-risk/storm-program/#storm-procedures)     |Kyle Smith|
+|[人工知能のリスク評価](/handbook/security/security-assurance/security-risk/storm-program/#risks-identified-during-risk-assessments)|Ryan Lawson|
 |[ビジネス影響分析（BIA）](/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis/)|Kyle Smith|
 |[導入後チェックリスト（PIC）](/handbook/security/security-assurance/security-risk/third-party-risk-management/#new-system-onboarding--post-implementation-controls-pic)|Ryan Lawson|
 |[重要システムの階層化（CST）](/handbook/security/security-assurance/security-risk/storm-program/critical-systems/#designating-critical-system-tiers)|Kyle Smith|

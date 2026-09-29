@@ -95,7 +95,7 @@ lastmod: "2026-08-04T09:49:53+00:00"
 
 以下のリソースは、同期と非同期の両方の形式でメンター/メンティー関係をガイドするように設計されています。フィットするものを採用し、合わないものは置いていってください。
 
-### メンターおよびメンティートレーニング
+### メンターおよびメンティートレーニング {#mentor-and-mentee-training}
 
 メンターの見つけ方、明確な期待の設定、メンターシップを通じた目標達成について、以下の [Google スライドプレゼンテーション](https://docs.google.com/presentation/d/1QPx9ZGa051Jhwwfb78cKW1LD0uVTUdKxRdElBk4Ku9I/edit?usp=sharing) をお楽しみください。
 

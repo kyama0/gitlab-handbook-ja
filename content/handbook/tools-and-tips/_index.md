@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
-translated_at: "2026-09-24T21:08:13+00:00"
+upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
+translated_at: "2026-09-29T21:09:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T08:56:32-04:00"
+lastmod: "2026-09-29T15:57:32+02:00"
 ---
 
 ## 概要
@@ -200,7 +200,7 @@ mogrify -format jpg icloudphoto.HEIC
 find . -type f -iname '*.heic' -exec sh -c 'mogrify -format jpg \"{}\"' \;
 ```
 
-シェルエイリアスの例は [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/.oh-my-zsh/custom/aliases.zsh?ref_type=heads) にあります。
+シェルエイリアスの例は [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/701851b5cb36dc3fc2796e2e0f7fa3038fbd611a/.oh-my-zsh/custom/aliases.zsh) にあります。
 
 ### 画像にドロップシャドウを追加
 
@@ -342,7 +342,7 @@ alias s='www;subl .;gco master;gl'
 vim ~/.oh-my-zsh/custom/aliases.zsh
 ```
 
-例は [Michael Friedrich の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/tree/main/.oh-my-zsh/custom) にあります。
+例は [Michael Friedrich の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/tree/701851b5cb36dc3fc2796e2e0f7fa3038fbd611a/.oh-my-zsh/custom) にあります。
 
 #### リモートブランチが削除されたローカル Git ブランチを削除する
 

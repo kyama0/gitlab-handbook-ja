@@ -30,7 +30,7 @@ GitLab では、以下のためにコーチングを使用します:
 1. チームメンバーが、オープンで正直なフィードバックを与えることに焦点を当てて、コミュニケーションスタイルを改善したい。
 1. チームメンバーが緊急性と成果に基づいて自分の作業の優先順位を付けるシステムを構築するためのガイダンスが必要。
 
-## コーチの選択
+## コーチの選択 {#selecting-a-coach}
 
 GitLab でコーチを見つける方法はさまざまあります:
 
@@ -155,7 +155,7 @@ graph TD
 - コーチングの会話への自分の意図に根付く。
 {{% /details %}}
 
-### 異なる会話のための異なる帽子
+### 異なる会話のための異なる帽子 {#different-hats-for-different-conversations}
 
 コーチングは、[リーダー](_index.md) として使用するかもしれない会話のモードの1つに過ぎません。エンジニアリングプログラムを運営するチームリードかもしれません。[私たちの TMRG の1つ](/handbook/company/culture/inclusion/tmrg-tmag/) を管理しているかもしれません。[メンター](/handbook/people-group/learning-and-development/mentor/) または [オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/) かもしれません。あなたはまた、ほぼ確実に他の誰かの直属の部下でもあります。これらの役割を `異なる帽子` を被ることのように考えてください。
 
@@ -246,7 +246,7 @@ graph TD
 - [Stop Fixing & Start Coaching](https://baird-group.com/stop-fixing-start-coaching/)
 - [In Coaching: Is Asking The Right Questions More Important Than Having All The Answers?](https://www.fourstreamscoaching.com/in-coaching-is-asking-the-right-questions-more-important-than-having-all-the-answers/)
 
-## GROWモデル
+## GROWモデル {#grow-model}
 
 GROWモデルは、コーチを受ける人とコーチングの会話を持つための4ステップの方法です。コーチングセッション中に適用して、未来に焦点を当てたディスカッションを通じてコーチを受ける人を導けます。
 

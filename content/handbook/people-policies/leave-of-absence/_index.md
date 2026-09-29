@@ -2,11 +2,11 @@
 title: 休職
 description: "GitLab の全社的な休職ポリシー。"
 upstream_path: /handbook/people-policies/leave-of-absence/
-upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
-translated_at: "2026-09-15T06:10:24+09:00"
+upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
+translated_at: "2026-09-29T21:16:53+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-09-28T06:52:39-07:00"
 ---
 
 ## 全社的な休職ポリシー
@@ -19,7 +19,6 @@ Absence Managment チームは、休暇の前、最中、後に支援するた�
 
 - [GitLab B.V. Netherlands](/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/)
 - [GitLab B.V. Belgium](/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/#time-off--leave-benefits)
-- [GitLab B.V. Finland](/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland/#family--life-transitions)
 - [GitLab Inc (US)](/handbook/people-policies/leave-of-absence/us/)
 - [GitLab Israel Ltd.](/handbook/entity/israel-ltd/#leave-policy)
 - [GitLab LTD (UK)](/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/)
@@ -33,7 +32,7 @@ Absence Managment チームは、休暇の前、最中、後に支援するた�
 - [GitLab Singapore Pte. Ltd.](/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/)
 - [GitLab Iberia s.r.l Spain](/handbook/entity/iberia-srl-spain/)
 - [Remote Technology (Brazil, Denmark, Italy, Switzerland, Hungary, and Sweden)](/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/)
-- [Global Expansion (Austria, Chile, Costa Rica, Kenya, Latvia, Mexico, Philippines, South Africa, and UAE)](/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/)
+- [Global Expansion (Austria, Kenya, Mexico, Philippines, South Africa, and UAE)](/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/)
 
 ### 育児休暇
 

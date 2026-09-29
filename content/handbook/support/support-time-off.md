@@ -2,11 +2,11 @@
 title: サポートチームメンバーの休暇
 description: サポートチームメンバーに休暇がどのように適用され、どのような対応が必要かのガイドライン。Support Global Change Management の Issue 抜きでこのページを移動しないでください。
 upstream_path: /handbook/support/support-time-off/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-29T21:19:18Z"
+upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
+translated_at: "2026-09-29T21:09:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-09-28T18:57:11Z"
 ---
 
 ## サポートチームメンバーの休暇
@@ -210,6 +210,8 @@ AMER サポートマネージャーは、9 月下旬に
   - 聖霊降臨祭の月曜日（5 月または 6 月）
   - 昇天祭（5 月）
   - レイバーデー（9 月の第 1 月曜日）
+
+**注: AMER の祝日とカバレッジ要件については、[AMER の祝日カバレッジ目標](/handbook/support/amer/#amer-holiday-coverage-targets)を参照してください**。
 
 ### ピーク祝日中に休暇を取る予定がある場合
 

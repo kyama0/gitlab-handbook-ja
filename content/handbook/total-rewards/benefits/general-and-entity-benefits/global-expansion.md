@@ -2,11 +2,11 @@
 title: "Global Expansion"
 description: "Global Expansion"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/
-upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
-translated_at: "2026-09-25T21:07:10Z"
+upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
+translated_at: "2026-09-29T21:09:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-25T08:40:12Z"
+lastmod: "2026-09-28T06:52:39-07:00"
 ---
 
 ## **Global Expansion 福利厚生** {#global-expansion-benefits}
@@ -285,63 +285,6 @@ Payment Denmark は、雇用主から雇用と時間に関する情報を自動�
 
 **申請方法**
 休暇開始の少なくとも 30 日前に [Workday - Time Off](https://docs.google.com/document/d/1ZatJdGp485lOS2QVrxYJByQK8dD_CMGiLVOykgd338w/edit) 経由でリクエストを提出します。
-
-</details>
-
-## **ラトビア 🇱🇻** {#latvia-}
-
-**連絡先:** gx_employeeexperience@globalexpansion.com
-**プラットフォーム:** [Global Expansion 案内ガイド](https://drive.google.com/file/d/1l68UexMJxglZ1dkcqbeGRdjf9Ym8sxVl/view)
-
-以下に記載されているすべての福利厚生は、Global Expansion によって管理および運営され、ラトビアでのニーズを満たすために設計された医療カバレッジと柔軟な育児休暇サポートを提供します。
-
-<details markdown="1">
-<summary>ラトビアの医療カバレッジ</summary>
-
-AXA を介したグローバル健康保険は、健康と健全性のニーズをサポートするように設計された包括的なカバレッジを提供します。
-
-**主な特徴**
-
-- [AXA 福利厚生ガイド](https://drive.google.com/file/d/1EW0J9S3kEnNxOk9UpoHhNL4EKVUdfPIZ/view) を確認してください。
-- GitLab がチームメンバーの保険料の 100% を負担
-- GitLab が対象扶養家族の保険料の 66% を負担
-- Global Expansion を通じた直接管理
-
-**アクセス方法:** Global Expansion はオンボーディング中に GX1 プラットフォーム経由でセンサス情報を収集します。扶養家族を追加する場合、給与控除のための承認フォームに署名する必要があります。カバレッジの変更や修正については、[Global Expansion](mailto:gx_employeeexperience@globalexpansion.com) チームにお問い合わせください。
-
-</details>
-
-<details markdown="1">
-<summary>ラトビアの法定年金および生命保険</summary>
-
-**年金:** [ラトビアの国家資金年金スキーム](https://latvija.gov.lv/Services/) でカバーされており、国家年金システムを通じて退職保障を提供します。この包括的な枠組みにより、ラトビアの確立された年金構造を通じて退職計画がサポートされます。
-
-**生命保険:** GitLab の全社的な生命保険ポリシーを利用できます。
-
-</details>
-
-<details markdown="1">
-<summary>ラトビアの休暇ポリシー</summary>
-
-**年次休暇**
-
-- **権利:** 年間 20 日
-
-**育児休暇**
-
-- **包括的サポート:** 子が 8 歳になるまで最大 1 年半の育児休暇
-- **柔軟性:** 単一期間または部分的に取得可能
-- **産休:** 最大 112 日（出産前 56 日、出産後 56 日）、14 日延長の可能性あり
-- **父親休暇:** 出生から最初の 2 か月以内に最大 10 日
-- **拡張介護者休暇:** 母親が死亡、病気、またはその他の理由で子を世話できない場合、父親または主な介護者は子の 70 日目まで休暇の権利あり（出産後 42 日目まで）
-- **養子縁組:** 18 歳までの子を養子縁組する家族に 10 日
-- **GitLab 育児休暇強化:** 対象の場合、最大 16 週間 100% の給与補完。[GitLab の育児休暇ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) をよくご確認ください
-
-**申請方法**
-
-- **事前通知:** 育児休暇には 1 か月、早期復帰には 2 週間
-- **連絡先:** 育児休暇の調整には leaves@gitlab.com
-- **システム:** その他の休暇リクエストには [Workday - Time Off](https://docs.google.com/document/d/1ZatJdGp485lOS2QVrxYJByQK8dD_CMGiLVOykgd338w/edit)
 
 </details>
 

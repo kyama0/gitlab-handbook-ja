@@ -2,11 +2,11 @@
 title: "PCI チャーター"
 controlled_document: true
 upstream_path: /handbook/security/security-assurance/security-compliance/pci-charter/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T06:00:00Z"
+upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
+translated_at: "2026-09-29T21:11:30+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-23T14:02:58-05:00"
+lastmod: "2026-09-28T13:23:01-07:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -33,11 +33,11 @@ lastmod: "2026-03-23T14:02:58-05:00"
 
 GitLab はカード保有者データ (CHD) または機密認証データ (SAD) を保存、処理、または転送 **しません** 。ただし、私たちの製品が顧客のカード保有者データ環境 (CDE)（コードリポジトリや CI/CD ワークフローなど）のセキュリティに影響を与える可能性があるため、PCI DSS の対象範囲です。GitLab はまた、Customer Portal 支払いフォームのアウトソーシングにより、限定的な能力でも対象範囲です。
 
-そのため、GitLab は GitLab.com をカバーするサービスプロバイダー (SAQ D) と、customers.GitLab.com をカバーする Merchant (SAQ A) の両方として、PCI DSS の対象範囲です。PCI DSS の対象範囲のシステムコンポーネントのインベントリと、それらの機能/用途の説明を含む詳細については、[external audit technical scope](https://gitlab.com/groups/gitlab-com/gl-security/security-assurance/security-compliance/-/wikis/External-Audit-'Technical-Scope'#pci) を参照してください。
+そのため、GitLab は GitLab.com をカバーするサービスプロバイダー (SAQ D) と、GitLab.com 上の顧客をカバーする Merchant (SAQ A) の両方として、PCI DSS の対象範囲です。PCI DSS の対象範囲のシステムコンポーネントのインベントリと、それらの機能/用途の説明を含む詳細については、[external audit technical scope](https://gitlab.com/groups/gitlab-com/gl-security/security-assurance/security-compliance/-/wikis/External-Audit-'Technical-Scope'#pci) を参照してください。
 
 ### プログラム図
 
-[ネットワーク](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance/team/-/blob/main/Certifications-Attestations/PCI%20DSS/pci-networking-diagram.md) と [データフロー](https://docs.gitlab.com/ee/development/architecture.html#component-diagram) 図は、PCI 要件の対象範囲環境を図示するために維持されます。これらの図は、環境への重要な変更があった際に必要に応じて維持・更新されます。
+[ネットワーク](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance/team/-/blob/main/Certifications-Attestations/PCI%20DSS/pci-networking-diagram.md) と [データフロー](https://docs.gitlab.com/development/architecture/#component-diagram) 図は、PCI 要件の対象範囲環境を図示するために維持されます。これらの図は、環境への重要な変更があった際に必要に応じて維持・更新されます。
 
 ### スコープのドキュメント化と継続的な確認
 
@@ -53,7 +53,7 @@ GitLab は、少なくとも 6 か月ごと、および対象範囲環境への�
 
 ## 重要な変更
 
-PCI 要件 6.5.2、11.3.1.3、11.4.2、11.4.3、12.5.3 では、重要な変更が発生したときはいつでも、GitLab がさまざまなタスクを実施することが要求されます。
+PCI 要件 6.5.2、11.3.1.3、11.3.2.1、11.4.2、11.4.3、12.5.2.1、12.5.3 では、重要な変更が発生したときはいつでも、GitLab がさまざまなタスクを実施することが要求されます。
 
 - 6.5.2 および 12.5.3: 重要な変更の完了時に、すべての該当する PCI DSS 要件がすべての新しいまたは変更されたシステムおよびネットワークに整備されていることが確認され、ドキュメントが必要に応じて更新されます。
 - 11.3.1.3: 内部脆弱性スキャンは、重要な変更後に次のように実施されます。

@@ -2,11 +2,11 @@
 title: 一般および事業体別の福利厚生と情報
 description: GitLab が提供する一般および事業体別の福利厚生のリストとその他の事業体別の情報。
 upstream_path: "/handbook/total-rewards/benefits/general-and-entity-benefits/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-18T21:06:29+00:00"
+upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
+translated_at: "2026-09-29T21:09:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-17T12:56:13Z"
+lastmod: "2026-09-28T06:52:39-07:00"
 ---
 
 
@@ -25,8 +25,8 @@ lastmod: "2026-09-17T12:56:13Z"
 | EMEA  | Americas | APAC | Global Partners |
 |------|-----------|----------|----------|
 | [GitLab BV (オランダ)](/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/) | [GitLab Inc and GitLab Fed (米国)](/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/) | [GitLab PTY (オーストラリア)](/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/) | [Remote Technology (ブラジル、イタリア、スイス、ハンガリー、ルクセンブルク、スウェーデン)](/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/) |
-| [GitLab BV (ベルギー)](/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/) | [GitLab Canada Corp](/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/) | [GitLab GK (日本)](/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk/) | [Global Expansion (オーストリア、デンマーク、ケニア、ラトビア、メキシコ、フィリピン、ポーランド、南アフリカ、UAE)](/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/) |
-| [GitLab BV (フィンランド)](/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland/) |  | [GitLab Korea LTD](/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits/) | [Papaya Global（イタリア Dirigente）](/handbook/total-rewards/benefits/general-and-entity-benefits/papaya-global-benefits/) |
+| [GitLab BV (ベルギー)](/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/) | [GitLab Canada Corp](/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/) | [GitLab GK (日本)](/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk/) | [Global Expansion (オーストリア、デンマーク、ケニア、メキシコ、フィリピン、ポーランド、南アフリカ、UAE)](/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/) |
+|  |  | [GitLab Korea LTD](/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits/) | [Papaya Global（イタリア Dirigente）](/handbook/total-rewards/benefits/general-and-entity-benefits/papaya-global-benefits/) |
 | [GitLab LTD (英国)](/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/) |  | [GitLab Singapore Pte Ltd](/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/) | |
 | [GitLab GmbH (ドイツ)](/handbook/entity/gmbh-germany/) |  | [GitLab India Private Limited](/handbook/entity/india-pvt-ltd/) | |
 | [GitLab Ireland LTD](/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/) |  | [GitLab PTY New Zealand](/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand/) | |
