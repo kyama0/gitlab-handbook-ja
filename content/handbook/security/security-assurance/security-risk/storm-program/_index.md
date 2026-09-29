@@ -90,7 +90,7 @@ GitLab は次のリスクアペタイトマトリクスを利用しています�
 
 リスクを文書化する際、チームメンバーは既存の Issue/観察事項に対して [所見説明ガイダンス](/handbook/security/security-observations-risk-management/#drafting-finding-description-guidance) を活用するか、新規リスクに対して [リスクドラフトガイダンス](#risk-drafting-guidance) を活用できます。
 
-#### リスクアセスメント中に特定されたリスク
+#### リスクアセスメント中に特定されたリスク {#risks-identified-during-risk-assessments}
 
 Security Risk Team は、セキュリティおよびテクノロジー運用リスクを特定するために、GitLab でリーダーシップの立場で活動する GitLab チームメンバーをインタビュー/調査する場合があります。特定されたリスクは、脅威ソースと脅威イベントの観点から枠組みされ、その後、発生可能性とリスクイベントが発生した場合の GitLab への影響について評価されます。さらに、これらのリスクは、全体的な残留リスクを判定するために、現在整備されている内部統制に対して評価されます。AI 関連のリスクは、年次で、または GitLab の運用内の AI システム、モデル、または使用パターンに重大な変更が発生したときに評価されます。
 
