@@ -9,11 +9,11 @@ owning-stage: "~devops::data stores"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/cell_arch_tooling/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
+translated_at: "2026-09-30T21:09:44+00:00"
 translator: claude
 stale: false
-lastmod: "2025-11-03T17:49:46+01:00"
+lastmod: "2026-09-29T10:30:26+02:00"
 ---
 
 
@@ -72,7 +72,6 @@ GitLab.com のスケーラビリティの限界に達していることはしば
 ```plantuml
 @startuml
 !include <k8s/Common>
-!include <k8s/Context>
 !include <k8s/Simplified>
 !include <k8s/OSS/all>
 !include <gcp/GCPCommon>
