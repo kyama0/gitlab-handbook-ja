@@ -8,11 +8,11 @@ coach: [ "@andrewn" ]
 status: proposed
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-20T02:57:18+00:00"
+upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
+translated_at: "2026-09-30T21:09:44+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-14T10:35:55+12:00"
+lastmod: "2026-09-29T10:30:26+02:00"
 ---
 
 
@@ -64,7 +64,6 @@ lastmod: "2026-09-14T10:35:55+12:00"
 ```plantuml
 @startuml
 !include <k8s/Common>
-!include <k8s/Context>
 !include <k8s/Simplified>
 !include <k8s/OSS/all>
 !include <gcp/GCPCommon>

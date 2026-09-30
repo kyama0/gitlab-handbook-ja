@@ -2,9 +2,9 @@
 title: "Create:Source Code Hardening & Modernization チーム"
 description: "Source Code の構造的なセキュリティとフロントエンドの問題に対処し、成果を機能担当チームに引き渡した後に解散する一時的なチーム。"
 upstream_path: /handbook/engineering/devops/create/source-code/hardening-and-modernization/
-upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
-lastmod: "2026-09-24T15:36:57+02:00"
-translated_at: "2026-09-24T21:11:16+00:00"
+upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
+lastmod: "2026-09-28T11:04:43+01:00"
+translated_at: "2026-09-30T21:07:20+00:00"
 translator: codex
 stale: false
 ---
@@ -32,8 +32,8 @@ Source Code は GitLab のコードベースで最も古い部分の 1 つで、
 | 氏名 | 役職 | 復帰先 |
 |---|---|---|
 | Vladimir Shushlin | Engineering Manager | Plan |
-| Kerri Miller | Staff Backend Engineer | Create:Source Code Repository Services |
-| Emma Park | Backend Engineer | Create:Source Code Repository Services |
+| Kerri Miller | Staff Backend Engineer | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) |
+| Emma Park | Backend Engineer | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) |
 | Chaoyue Zhao | Frontend Engineer | Create:Source Code Investigation |
 | Anastasia Khomchenko | Senior Frontend Engineer | Plan:Portfolio Planning |
 

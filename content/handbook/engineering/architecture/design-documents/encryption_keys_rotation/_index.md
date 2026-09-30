@@ -9,11 +9,11 @@ owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/encryption_keys_rotation/
-upstream_sha: ec55f130cc95389b6faf798cebffd864abdbb4c5
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
+translated_at: "2026-09-30T21:09:44+00:00"
 translator: claude
 stale: false
-lastmod: "2025-11-27T20:17:50+00:00"
+lastmod: "2026-09-30T09:24:17+02:00"
 ---
 
 
@@ -290,7 +290,7 @@ end
 
 `db_key_base` シークレットが使用されている箇所がいくつかあります（主に JWT 生成で）:
 
-- `app/services/auth/dependency_proxy_authentication_service.rb` 内の `Auth::DependencyProxyAuthenticationService#secret`
+- `app/services/auth/container_proxy_authentication_service.rb` 内の `Auth::ContainerProxyAuthenticationService#secret`
 - `ee/lib/gitlab/geo/oauth/logout_state.rb` 内の `Gitlab::Geo::Oauth::LogoutState#with_cipher`
   - 注意: `Gitlab::Geo::Oauth::LoginState#key` では `Gitlab::Application.credentials.secret_key_base` を使用しています...
 - `lib/gitlab/conan_token.rb` 内の `Gitlab::ConanToken#secret`
