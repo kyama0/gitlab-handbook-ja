@@ -1,9 +1,9 @@
 ---
 title: 内部リリース
 upstream_path: /handbook/engineering/releases/internal-releases/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: 2026-06-17T16:22:24-06:00
-translated_at: "2026-06-20T13:54:37Z"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+lastmod: "2026-10-01T14:22:07-06:00"
+translated_at: "2026-10-03T00:54:37+00:00"
 translator: claude
 stale: false
 ---
@@ -73,7 +73,8 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
 ## リクエストプロセス {#request-process}
 
 > [!IMPORTANT]
-> **バグ修正** のために承認されたすべての内部リリースには、[Feature Change Lock (FCL)](/handbook/engineering/#feature-change-locks) が必要です。承認されたすべての内部リリースには、リリース後の[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)が必要です。**これらは任意ではありません。**
+> **重大なバグ修正**のために承認されたすべての内部リリースには、[Feature Change Lock (FCL)](/handbook/engineering/#feature-change-locks)とリリース後の[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)が必要です。これらは**任意ではありません**。
+> **重大なセキュリティ脆弱性**のために承認されたすべての内部リリースでは、リリース後の SIRT/PSIRT の振り返りへの参加が強く推奨されます。また、脆弱性が製品機能に関連する場合は、[根本原因分析（RCA）](/handbook/security/root-cause-analysis/)が**必須**です。これには、GitLab の判断や遅延が脆弱性への露出の一因となった場合の、アップストリームのサードパーティコードの脆弱性も含まれます。RCA 要件が適用される場合、例外はありません。
 
 内部リリースは、Dedicated の可用性に影響し、次回の予定パッチリリースまで待てない高重大度のバグまたはセキュリティ脆弱性に限定されます。
 
@@ -86,9 +87,11 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
 1. **依頼者** は [内部リリースリクエスト Issue](https://gitlab.com/gitlab-org/release/tasks/-/work_items/new?description_template=Internal-Release-Request) を開き、Dedicated への影響評価を文書化し、必要なすべての手順を完了します。
 1. **依頼者** は、影響を受ける領域の **Engineering Manager** に連絡し、その人を Issue にアサインし、バグ修正について [Feature Change Lock (FCL)](/handbook/engineering/#feature-change-locks) プロセスを開始してもらうことを確認します（**必須**）。
 1. **Dedicated Engineering Manager**（スポンサー）が Issue 上で書面による承認を提供します。
-1. **Software Delivery Engineering Leadership**（Release & Deploy Manager、Senior Product Manager 以上）が書面による承認を提供します。
+1. **[Software Delivery Engineering Leadership](/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/#software-delivery-engineering-leadership)**（またはそれ以上）が書面による承認を提供します。
 1. **依頼者** は、上記のすべてが完了した後、最終レビューと実行のために [active Release Managers](/handbook/engineering/releases/release-managers/) を Issue にアサインします。
-1. **リリース後:** リリース前に検出を逃れた理由を調査するため、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)を実施します（**必須**）。
+1. **バグ修正のリリース後:** リリース前に検出を逃れた理由を調査するため、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)を実施します（**必須**）。
+1. **セキュリティ脆弱性のリリース後:** SIRT/PSIRT の振り返り Issue への参加が**強く推奨されます**。脆弱性が製品機能に関連する場合、その脆弱性を導入した責任を負うチームが[根本原因分析（RCA）](/handbook/security/root-cause-analysis/)を完了しなければなりません。この要件に例外はありません。
+   * アップストリームのサードパーティコードの脆弱性の場合、利用可能な修正を適用しなかった、サポートが終了した依存関係に頼っていたなど、GitLab の判断や遅延が脆弱性への露出の一因となった場合にのみ RCA が必須です。それ以外の場合、RCA は任意です。
 
 このプロセス外で承認された内部リリースは、リリース安定性と GitLab Dedicated の信頼性を損なう前例を作ります。
 

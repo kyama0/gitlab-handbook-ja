@@ -2,9 +2,9 @@
 title: "Product Security メンターシッププログラム"
 description: "学びたいことがある ProdSec チームメンバーと、それを支援できる人を組み合わせる、任意参加のメンターシップ試験プログラム。"
 upstream_path: "/handbook/security/product-security/mentorship/"
-upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
-lastmod: "2026-09-30T08:57:56+13:00"
-translated_at: "2026-09-29T21:16:53+00:00"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+lastmod: "2026-10-02T02:25:59+13:00"
+translated_at: "2026-10-03T00:49:31+00:00"
 translator: codex
 stale: false
 ---
@@ -101,6 +101,7 @@ GitLab にとっての目標は、有能なチームメンバーが最高の仕�
 
 1. [期待されること](#expectations)を含め、このページを読んでください。
 1. プロフィールテンプレートを使って[プログラムのプロジェクト](https://gitlab.com/gitlab-com/gl-security/product-security/mentorship)に MR を作成し、参加する期を選んでください。メンティーは、学びたいこと、希望するコース、「完了」がどのような状態かを記述します。メンターは支援できることと、対応できるコースを記述します。プロフィールには参加した期を記載します。ある期を見送る場合は追加せず、準備ができたら次の期を追加してください。
+1. [#security-mentorship-program](https://gitlab.enterprise.slack.com/archives/C0C5R9VPWCW)に参加してください。プログラムの更新情報や状況確認を投稿するチャンネルで、質問もできます。
 
 プロフィールは GitLab 社内の全員に公開されます。その人たちに見られてもよい内容だけを記載してください。
 
@@ -126,7 +127,7 @@ GitLab にとっての目標は、有能なチームメンバーが最高の仕�
 
 ### メンターへの支援
 
-初回のミーティングまでにメンターガイドを読んでください。GitLab の[メンターとメンティーのトレーニング](/handbook/people-group/learning-and-development/mentor/#mentor-and-mentee-training)も、自分のペースで学び始めるのに適しています。試験運用に参加するメンターは、方法を比較したり互いに助けを求めたりするための非公開 Slack チャンネル #security-mentor-club に招待されます。メンターが仲間として互いに信頼関係を築けるよう、意図的に非公開にしています。話し合うのはメンティーについてではなく、自分がどのようにメンタリングするかについてにしてください。自分とメンティーが話したことは、二人の間にとどめます。参加登録の締め切り後、初めてのメンターが何人いるかを確認し、必要に応じて支援を追加します。
+初回のミーティングまでにメンターガイドを読んでください。GitLab の[メンターとメンティーのトレーニング](/handbook/people-group/learning-and-development/mentor/#mentor-and-mentee-training)も、自分のペースで学び始めるのに適しています。試験運用に参加するメンターは、方法を比較したり互いに助けを求めたりするための非公開 Slack チャンネル #security-mentor-club に招待されます。メンターが仲間として互いに信頼関係を築けるよう、意図的に非公開にしています。話し合うのはメンティーについてではなく、自分がどのようにメンタリングするかについてにしてください。自分とメンティーが話したことは、二人の間にとどめます。このチャンネルは、メンティーを含むプログラム参加者全員向けの公開チャンネル [#security-mentorship-program](https://gitlab.enterprise.slack.com/archives/C0C5R9VPWCW)とは別のものです。特定のペアについて支援が必要な場合は、プログラムチームに DM を送ってください。参加登録の締め切り後、初めてのメンターが何人いるかを確認し、必要に応じて支援を追加します。
 
 ### 必要な時間 {#time-commitment}
 
@@ -219,4 +220,4 @@ GitLab の[メンタリングで期待されること](/handbook/people-group/le
 
 ## 質問とフィードバック
 
-プログラムの進め方についてのフィードバックを歓迎します。特に最初の参加期が始まる前にお寄せください。[#product-security-department-only](https://gitlab.enterprise.slack.com/archives/C08Q13QKQE4)で質問するか、[プログラムのプロジェクト](https://gitlab.com/gitlab-com/gl-security/product-security/mentorship/-/issues)に Issue を作成してください。
+プログラムの進め方についてのフィードバックを歓迎します。特に最初の参加期が始まる前にお寄せください。[#security-mentorship-program](https://gitlab.enterprise.slack.com/archives/C0C5R9VPWCW)で質問するか、[プログラムのプロジェクト](https://gitlab.com/gitlab-com/gl-security/product-security/mentorship/-/issues)に Issue を作成してください。

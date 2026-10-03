@@ -2,12 +2,12 @@
 title: GitLab Dedicated Switchboard のトラブルシューティング
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート - Switchboard"
-upstream_path: /handbook/support/workflows/dedicated_switchboard/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-19T21:13:38+00:00"
+upstream_path: "/handbook/support/workflows/dedicated_switchboard/"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+translated_at: "2026-10-03T00:49:31+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-14T11:39:01+08:00"
+lastmod: "2026-10-01T10:28:17-04:00"
 ---
 
 ## 概要
@@ -91,11 +91,25 @@ Switchboard の Overview ページには、各 GitLab Dedicated インスタン�
 
 Switchboard では [Communications Lead](/handbook/engineering/infrastructure-platforms/incident-management/roles/communications-lead/)がアウトバウンドのコミュニケーションを作成できます（[Switchboard を使用した通知の送信](dedicated_cmoc/#sending-notifications-using-switchboard)を参照）。Dedicated サポートチケットをトラブルシューティングする際、通知が送信されたかどうかを確認することは便利な最初のステップです。
 
-すべての顧客通知は Switchboard に記録されます。過去の通知を表示するには:
+すべての顧客通知は Switchboard に記録されます。
 
-1. 左上隅のプロフィールをクリック
-2. `Customer notifications` を選択
-3. 関連する通知のタイトルをクリックして、メッセージとその受信者を表示
+#### 特定のテナントへの通知の表示 {#view-notifications-for-a-specific-tenant}
+
+特定のテナントに送信された過去の通知を表示するには:
+
+1. 対象のテナントを選択します。
+1. 左サイドバーで **Notifications** を選択します。
+1. 通知のタイトルを選択して、メッセージと受信者を表示します。
+
+リストはタイトル、ステータス、トリガーの種類で絞り込めます。
+
+#### すべてのテナントへの通知の表示 {#view-notifications-sent-to-all-tenants}
+
+すべてのテナントに送信された過去の通知を表示するには:
+
+1. 左上隅のプロフィールをクリックします。
+1. **Customer notifications** を選択します。
+1. 対象の通知のタイトルをクリックして、メッセージと受信者を表示します。
 
 これらの通知がどのように作成され、Switchboard でどのように表示できるかについての [YouTube の概要](https://www.youtube.com/watch?v=e2ZRD8csjow)を視聴してください。
 

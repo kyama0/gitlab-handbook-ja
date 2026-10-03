@@ -1,9 +1,9 @@
 ---
 title: "パッチリリース"
 upstream_path: /handbook/engineering/releases/patch-releases/
-upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
-lastmod: "2026-08-05T08:42:06+09:00"
-translated_at: "2026-08-06T06:38:11+09:00"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+lastmod: "2026-10-01T14:22:07-06:00"
+translated_at: "2026-10-03T00:54:37+00:00"
 translator: claude
 stale: false
 ---
@@ -89,27 +89,35 @@ GitLab には、2 種類のパッチリリースプロセスがあります:
    [セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)に準拠します。
    [`critical` 脆弱性](/handbook/security/product-security/vulnerability-management/sla/)を含むパッチは、critical パッチとみなされます。
 1. **アウトオブバンド**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外で行うパッチで、
-   高重大度のバグまたは critical 脆弱性の緩和に厳密に限定されます。これらのアドホックな
-   パッチは、期限の超過に対応したり、標準のリリースポリシーを回避したりするために使用してはなりません。
-   パッチリリースのケイデンスに従い、アウトオブバンドパッチは水曜日に提供されます。
+   高重大度のバグまたは critical 脆弱性の緩和に厳密に限定されます。アウトオブバンドパッチは、
+   期限の超過に対応したり、標準のリリースポリシーを回避したりするために使用してはならず、
+   通常のパッチリリースのケイデンスに従い、水曜日に提供されます。
 
    バグ修正かセキュリティ脆弱性かを問わず、すべてのアウトオブバンドパッチは次の要件を
-   満たす必要があります:
+   例外なく満たす必要があります:
 
-   - **例外プロセス**: [例外リクエスト](/handbook/engineering/releases#exception-process)は
-     **必須**であり、アウトオブバンドパッチを実行する前に従う必要があります。Release Managers は、
-     ビジネス上のプレッシャーに関係なく、このプロセスを完了していないリクエストを却下する権限を持ちます。
+   - **例外プロセス**: アウトオブバンドパッチを実行する前に、[例外リクエスト](/handbook/engineering/releases#exception-process)が
+     **必須**です。Release Managers は、ビジネス上のプレッシャーに関係なく、
+     このプロセスを完了していないリクエストを却下する権限を持ちます。
    - **インシデント宣言**: 次の属性を持つ[インシデントを宣言する必要があります](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident):
      - 「Out-of-Band Patch」としてマークされている
      - Severity S1 または S2
      - Contributing Factor が「Inadequate testing or QA」または「Miscommunication or coordination gap」である
-   - **FCL とインシデントレビュー**: あらゆる GitLab プラットフォームの信頼性と可用性を維持するため、
-     [インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と
-     [FCL](/handbook/engineering/#feature-change-locks)を完了することが**必須**です。
+   - **インシデントレビュー**: **バグ修正**に対処するアウトオブバンドパッチでは、GitLab プラットフォームの
+     信頼性と可用性を維持するため、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)を
+     完了することが**必須**です。**セキュリティ脆弱性**に対処するアウトオブバンドパッチでは、
+     代わりに SIRT のインシデント振り返り Issue に
+     参加することが強く推奨されます。
+   - **FCL**: **バグ修正**に対処するアウトオブバンドパッチには、[FCL](/handbook/engineering/#feature-change-locks)が
+     必要です。セキュリティ脆弱性には適用されず、代わりに PSIRT が
+     セキュリティインシデント全体のレベルでレビューします。
 
-   さらに、**critical セキュリティ脆弱性**の場合は、[セキュリティ RCA](/handbook/security/root-cause-analysis/)が
-   **必須**であり、アウトオブバンドリリースを強いた脆弱性を導入した責任を負うチームが完了しなければなりません。
-   この説明責任に例外はありません。
+さらに、**critical セキュリティ脆弱性**がエンジニアリングチームの所有する製品機能およびコードに
+関連する場合、[セキュリティ RCA](/handbook/security/root-cause-analysis/)が例外なく**必須**です。
+これには、利用可能な修正を速やかに適用しなかった、サポートが終了した依存関係に頼っていたなど、
+GitLab の判断や遅延が脆弱性への露出の一因となった場合の、
+アップストリームのサードパーティコードの脆弱性も含まれます。担当チームが
+RCA を完了しなければなりません。それ以外の場合、RCA は任意です。
 
 ## パッチリリースのプロセス {#patch-release-process}
 

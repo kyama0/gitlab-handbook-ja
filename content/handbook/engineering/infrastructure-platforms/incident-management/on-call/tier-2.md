@@ -1,11 +1,11 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: "81725dc1fe315a2e7d8a91637eb11f77d81b0ff7"
-translated_at: "2026-09-23T21:13:12.279317+00:00"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+translated_at: "2026-10-03T00:54:37+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-23T02:08:37+02:00"
+lastmod: "2026-10-01T08:11:54+02:00"
 ---
 
 Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
@@ -143,8 +143,8 @@ Fleet Visibility、Design Management、Environments、Deployments、Release Mana
 - カバレッジ: 24x5 (月曜日〜金曜日、営業時間)
 - スケジュール: [スケジュール](https://app.incident.io/gitlab/on-call/schedules/01K99JAT82M1D5HB1MVXX79WHR)
 - エスカレーション履歴リンク: [エスカレーション](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01K99K4HEXYB7Z7P21BTCY44BF)
-- 主な Slack チャンネル: #s_fulfillment_engineering
-- [詳細情報](/handbook/engineering/development/fulfillment/#escalation-process-for-incidents-or-outages)
+- 主な Slack チャンネル: #fulfillment_monetization_engineering
+- [詳細情報](/handbook/engineering/development/monetization/#escalation-process-for-incidents-or-outages)
 
 **専門領域:**
 
