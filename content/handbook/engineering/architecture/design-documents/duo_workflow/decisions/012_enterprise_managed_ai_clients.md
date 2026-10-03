@@ -10,9 +10,9 @@ participating-stages: []
 toc_hide: true
 description: "ユーザー、プロジェクト、管理者が管理する複数のソースから、文書化された優先順位とマージ戦略によって GitLab AI クライアントの設定を解決するためのアーキテクチャ決定記録。"
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/012_enterprise_managed_ai_clients/
-upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
-lastmod: "2026-09-29T15:22:20+01:00"
-translated_at: "2026-09-30T21:13:13+00:00"
+upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
+lastmod: "2026-09-30T10:15:12+13:00"
+translated_at: "2026-10-03T21:08:02+00:00"
 translator: codex
 stale: false
 ---
@@ -99,7 +99,7 @@ GitLab インスタンス設定、バージョン付き API エンドポイン�
 
 | # | ソース | 場所 | 強制適用 | ステータス |
 |---|---|---|---|---|
-| 1 | MDM、Jamf、グループポリシーを通じて配布する管理設定ファイル | 提案: macOS `/Library/Application Support/GitLab/duo/settings.managed.json`、Linux `/etc/gitlab/duo/settings.managed.json`、Windows `%ProgramData%\GitLab\duo\settings.managed.json` | はい | 最初のイテレーション |
+| 1 | MDM、Jamf、グループポリシーを通じて配布する管理設定ファイル | プラットフォームごとの固定パス。[管理設定ファイルの場所](#managed-settings-file-location)を参照 | はい | 最初のイテレーション |
 | 2 | リモートの管理設定 | `$root_namespace/duo-workspace` プロジェクト内の `settings.managed.json` | はい | 将来 |
 | 3 | クライアントが提供するセッションの上書き | CLI フラグと環境変数、IDE 設定、CI ジョブ変数 | いいえ | 最初のイテレーション |
 | 4 | ローカルのプロジェクト上書き | 作業ディレクトリ内の `.gitlab/duo/settings.local.json` | いいえ | 将来 |
@@ -251,6 +251,27 @@ resolver.get(settings.telemetry.enabled);   // Resolved<boolean>
 強制適用の対象は、管理ソースが実際に設定した設定だけです。管理者が何も指定していないものについては、ユーザーが制御を維持します。
 
 管理者による推奨は、強制適用の弱い段階ではなく、別の設定として表現します。たとえば `recommendedPlugins` はインストールするものとしてクライアントとユーザーに提示しますが、`requiredPlugins` はクライアントがインストールする強制適用リストです。
+
+### 管理設定ファイルの場所 {#managed-settings-file-location}
+
+管理設定ファイルは、各プラットフォームの固定パスから読み込みます。デフォルトでは、
+管理者だけがこれらの場所に書き込めるため、
+ファイルの値を強制適用することに意味があります。
+
+- Linux: `/etc/gitlab/duo/settings.managed.json`
+- macOS: `/Library/Application Support/GitLab/duo/settings.managed.json`
+- Windows: `C:\Program Files\GitLab\duo\settings.managed.json`
+
+Windows では、このファイルを `%ProgramData%` から読み込みません。標準ユーザーは
+`C:\ProgramData` の下にフォルダーを作成し、その所有者になれるため、ポリシーの配布前に
+`GitLab\duo` を作成して、後からファイルを置き換えたり削除したりできてしまいます。
+
+環境変数はユーザーが制御できるため、このパスはリテラルで指定し、
+`%ProgramFiles%` などの環境変数から組み立てません。そのため、`Program Files` が
+`C:` にないマシンでは、クライアントはこのファイルを見つけられません。
+
+WSL は対象外です。WSL 内で実行されるクライアントは、Windows のグループポリシーでは管理されない、
+ディストリビューション内の Linux パスを読み込みます。
 
 ### マージ戦略 {#merge-strategies}
 

@@ -10,11 +10,11 @@ participating-stages: []
 
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cdot_error_reporting/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
+translated_at: "2026-10-03T21:08:02+00:00"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-10-01T08:11:54+02:00"
 ---
 
 <!-- This renders the design document header on the detail page, so don't remove it-->
@@ -45,7 +45,7 @@ SOX コンプライアンスの観点から、CustomersDot アプリケーショ
 
 ## 提案
 
-[Fulfillment Platform グループ](../../../development/fulfillment/fulfillment-platform/) は現在、上述のエラーをモニタリングする手動プロセスを担っています。毎週、エンジニアが [ジョブモニタリング issue](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/.gitlab/issue_templates/Job%20monitoring%20weekly.md?ref_type=heads) にアサインされ、毎日スクリプトを実行してエラーのコレクションを収集する必要があります。これらのエラーは個別にレビューされ、ユーザーバリデーション、支払方法バリデーション、ロケーション問題に関連しないものなど、対応すべき項目を特定します。エンジニアはコンソールまたは Admin パネルを使ってこれらのエラーを手動で解決します。
+[Monetization Platform グループ](../../../development/monetization/#teams)は現在、上述のエラーをモニタリングする手動プロセスを担っています。毎週、エンジニアが [ジョブモニタリング issue](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/.gitlab/issue_templates/Job%20monitoring%20weekly.md?ref_type=heads) にアサインされ、毎日スクリプトを実行してエラーのコレクションを収集する必要があります。これらのエラーは個別にレビューされ、ユーザーバリデーション、支払方法バリデーション、ロケーション問題に関連しないものなど、対応すべき項目を特定します。エンジニアはコンソールまたは Admin パネルを使ってこれらのエラーを手動で解決します。
 
 効率と結果を改善するため、このプロセスを自動化する必要があります。
 

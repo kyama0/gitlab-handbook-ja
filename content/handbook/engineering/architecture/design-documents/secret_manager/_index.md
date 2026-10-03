@@ -2,18 +2,18 @@
 title: "GitLab Secrets Manager"
 status: ongoing
 creation-date: "2023-08-07"
-authors: [ "@alberts-gitlab", "@iamricecake", "@cipherboy-gitlab" ]
+authors: [ "@alberts-gitlab", "@iamricecake", "@cipherboy-gitlab", "@fcatteau"]
 coach: [ "@grzesiek", "@fabiopitino" ]
-approvers: [ "@jocelynjane", "@shampton" ]
-owning-stage: "~sec::govern"
+approvers: [ "@jrandazzo", "@cfleming3" ]
+owning-stage: "~devops::security platform"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T15:31:13+09:00"
+upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
+translated_at: "2026-10-03T21:08:02+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-04T14:27:38+12:00"
+lastmod: "2026-10-01T07:48:18+02:00"
 ---
 
 
@@ -772,11 +772,9 @@ DRI:
 |---------------------|------------------------------------------------|
 | 著者              | Erick Bajao, Senior Engineer                   |
 | 共著者           | Alex Scheel, Staff Engineer                    |
+| 共著者           | Fabien Catteau, Staff Engineer                    |
 | 推薦者         | Fabio Pitino, Principal Engineer               |
-| プロダクトリーダーシップ  | Jocelyn Eillis, Product Manager               |
-| エンジニアリングリーダーシップ | Scott Hampton, Engineering Manager          |
-| リードエンジニア       | Erick Bajao, Senior Backend Engineer           |
-| シニアエンジニア     | Maxime Orefice, Senior Backend Engineer        |
-| エンジニア            | Shabini Rajadas, Backend Engineer              |
+| プロダクトリーダーシップ  | Joe Randazzo, Product Manager               |
+| エンジニアリングリーダーシップ | Connor Fleming, Engineering Manager          |
 
 <!-- vale gitlab.Spelling = YES -->

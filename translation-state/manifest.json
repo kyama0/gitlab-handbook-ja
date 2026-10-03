@@ -5778,11 +5778,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md",
-      "upstream_sha": "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152",
-      "translated_at": "2026-08-08T09:00:12+09:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:15:10+00:00",
       "model": "codex",
-      "input_hash": "db120692e563e18ec17292858c30695534b63dd7001e95ae5f249d6e96fce2f3",
-      "upstream_committed_at": "2026-08-07T17:13:39+01:00"
+      "input_hash": "ac697336d46f83e7b4f4c8e79e7603905eb15b3dd451e46e4f04b5d7f28f9215",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md",
@@ -6010,11 +6010,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cdot_error_reporting/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cdot_error_reporting/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1bee5204be5b7233ab8f23533850fd01639ebea61e33a65dd21a7b7365b813d7",
-      "upstream_committed_at": "2025-04-28T10:53:04-07:00"
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:08:02+00:00",
+      "model": "codex",
+      "input_hash": "4f45de0f23950e3750a0a5b7c4230a75f10e5c77c5e49a5ab79cbd43b51ae340",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/cdot_namespace_provision_sync/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cdot_namespace_provision_sync/_index.md",
@@ -8970,11 +8970,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/_index.md",
-      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
-      "translated_at": "2026-09-04T15:31:13+09:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:08:02+00:00",
       "model": "codex",
-      "input_hash": "52ec76781535f38e68fe9d02a0c689ad4ab46361fe73110d217f003991e5e783",
-      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
+      "input_hash": "ea1869eb8efe08255be41ee3d4f05aed447ba7f32c353c77ee5e276d91c8af78",
+      "upstream_committed_at": "2026-10-01T07:48:18+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/001_envelop_encryption.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/001_envelop_encryption.md",
@@ -10154,11 +10154,11 @@
     },
     "content/handbook/engineering/data-engineering/_index.md": {
       "path": "content/handbook/engineering/data-engineering/_index.md",
-      "upstream_sha": "ddd8c35a844608b54fcc88bfd8bbe61807f4c820",
-      "translated_at": "2026-09-22T21:08:10+00:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:17:25+00:00",
       "model": "codex",
-      "input_hash": "f7b90abf985db180d8c699fce7ca998f60e5905997a5d456a222f498e00b7610",
-      "upstream_committed_at": "2026-09-22T02:49:28Z"
+      "input_hash": "185e857ac878ff0a4f076b1fda805cd04963759edf3f5635882f0306b7f88779",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00"
     },
     "content/handbook/engineering/data-engineering/analytics/_index.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/_index.md",
@@ -32578,11 +32578,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/_index.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T06:15:42+09:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:15:10+00:00",
       "model": "codex",
-      "input_hash": "3bbf668e0c182165d072cd852824d913188b5510b67d09f8a02dc6faa96c8949",
-      "upstream_committed_at": "2026-07-15T12:33:58+02:00"
+      "input_hash": "247e235c8322ac75731205bf729fe2c58a90c5ffcc41ab169b1f7ca17f950995",
+      "upstream_committed_at": "2026-10-01T09:57:33+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/secret_detection_validity_checks/decisions/005_use_token_type_for_verification_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_detection_validity_checks/decisions/005_use_token_type_for_verification_flow.md",
@@ -34746,19 +34746,19 @@
     },
     "content/handbook/engineering/ai/agent-foundations/ai-catalog/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/ai-catalog/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T02:57:18+00:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:17:25+00:00",
       "model": "codex",
-      "input_hash": "27e9da0a1809c06f0f9884b9e3599a58fd5d7860f5a4f1cbb9e0b29f2c75d56d",
-      "upstream_committed_at": "2026-09-17T14:47:13+02:00"
+      "input_hash": "edcfd8446c2f963ce10701a755dc0bc25b3f4bf845dd98914ca1c9dc6b3eaec5",
+      "upstream_committed_at": "2026-10-02T10:58:50+01:00"
     },
     "content/handbook/engineering/ai/agent-foundations/agent-execution/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/agent-execution/_index.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T11:16:44+09:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:17:25+00:00",
       "model": "codex",
-      "input_hash": "7f4f3e1fc05199d7740f955cc42042899b6dde98d4838184a9b37423900bf465",
-      "upstream_committed_at": "2026-08-18T13:41:28+02:00"
+      "input_hash": "8872f59793adea152acc274db9c7d3e030a37c86117f85ee230b91d8b755ccde",
+      "upstream_committed_at": "2026-09-29T10:59:36+02:00"
     },
     "content/handbook/engineering/ai/agent-foundations/agent-developer/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/agent-developer/_index.md",
@@ -35602,11 +35602,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/data_retention_policy_framework/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/data_retention_policy_framework/_index.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T12:49:40+00:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:08:02+00:00",
       "model": "codex",
-      "input_hash": "73b151bcd367e8f1f074731d30e85907b48d16578b0b30bf262cd43b4b4d18fa",
-      "upstream_committed_at": "2026-09-10T14:45:41+02:00"
+      "input_hash": "179d4e2e8af90e69bc662b05b899eb4db4ad211a016af1647e9c759e4427af2a",
+      "upstream_committed_at": "2026-10-01T14:41:42+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/ai_chat/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/ai_chat/_index.md",
@@ -37578,11 +37578,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/012_enterprise_managed_ai_clients.md": {
       "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/012_enterprise_managed_ai_clients.md",
-      "upstream_sha": "06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9",
-      "translated_at": "2026-09-30T21:13:13+00:00",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "translated_at": "2026-10-03T21:08:02+00:00",
       "model": "codex",
-      "input_hash": "f9e4c4858222e35d8d928d81d474c21f4cd03005cc62d1e8800386161d45a24d",
-      "upstream_committed_at": "2026-09-29T15:22:20+01:00"
+      "input_hash": "51dd19137e4afedacd99b11b42bae66dcce2222f88c1b52eb45e7082131e1ef8",
+      "upstream_committed_at": "2026-09-30T10:15:12+13:00"
     },
     "content/handbook/engineering/architecture/design-documents/data_insights_platform_querying_api/decisions/001_structured_requests_with_ontology.md": {
       "path": "content/handbook/engineering/architecture/design-documents/data_insights_platform_querying_api/decisions/001_structured_requests_with_ontology.md",
@@ -40151,6 +40151,14 @@
       "translated_at": "2026-09-30T21:07:20+00:00",
       "model": "codex",
       "input_hash": "aa1349ad228ad572b56cfc51c30e13d347e7921075646bd9b9629260e47aa1a6"
+    },
+    "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/008_openapi_specification_for_modular_http_apis.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/008_openapi_specification_for_modular_http_apis.md",
+      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
+      "upstream_committed_at": "2026-10-01T09:57:33+01:00",
+      "translated_at": "2026-10-03T21:15:10+00:00",
+      "model": "codex",
+      "input_hash": "ad7a5c1284536e7cbfa7adb308d147dba75f1b313f616f32c138472f0688bd4d"
     }
   }
 }
