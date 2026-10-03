@@ -2,12 +2,12 @@
 title: チケットへの対応
 category: Handling tickets
 description: サポートチケットの探し方、選び方、着手方法
-upstream_path: /handbook/support/workflows/working-on-tickets/
-upstream_sha: "5934211cb62d0c36181bc3a4be1381e5e07aef42"
-translated_at: "2026-07-29T06:25:33+09:00"
+upstream_path: "/handbook/support/workflows/working-on-tickets/"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+translated_at: "2026-10-03T00:49:31+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-30T13:43:01Z"
 ---
 
 ## はじめに
@@ -35,15 +35,15 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 - `The Global Support Ticket View` の上から順に対応します。チケットは `Ticket Weight` でソートされており、影響度の高いチケットを優先するようになっています。チケットは FRT および NRT のライフサイクルを進むにつれて追加の重みを獲得するため、まもなく違反となるチケットがビューの下位に留まらないようになっています。全員がキューの先頭から取り組むことを目指せば、SLA 達成能力を支えることができます。
 - 自分のリージョンを希望リージョンとするチケットは、自分でアサインを受けて保持してください。
-  他のリージョンを希望リージョンとするチケットについては、品質の高い first response を出して対応します。
-  その後、[ticket rehome のガイドライン](/handbook/support/workflows/ticket-transfers/#ticket-rehome-transfer-to-the-preferred-region)に従って、顧客が指定した希望リージョンへチケットを移管してください。（注: APAC は希望リージョンが AMER の低優先度チケットについてもアサインを保持してかまいません。）
+  他のリージョンを希望リージョンとするチケットについては、品質の高い 初回応答を出して対応します。
+  その後、[希望リージョンへのチケット移管のガイドライン](/handbook/support/workflows/ticket-transfers/#ticket-rehome-transfer-to-the-preferred-region)に従って、顧客が指定した希望リージョンへチケットを移管してください。（注: APAC は希望リージョンが AMER の低優先度チケットについてもアサインを保持してかまいません。）
 - このビューでは、アサインのない FRT および NRT のチケットがどちらも表示されます。
   ステータスが `open` または `pending` で、自分のリージョンを希望リージョンとするチケットのアサインを受けることを検討してください。
-  これらは、他のリージョンから rehome された当日に希望リージョン内でオーナーが必要となるチケットです。これらのチケットへの対応指針については、本ページの [receiving a ticket rehome](/handbook/support/workflows/ticket-transfers/#receiving-a-ticket-rehome) セクションを参照してください。
+  これらは、他のリージョンから移管された当日に希望リージョン内でオーナーが必要となるチケットです。これらのチケットへの対応指針については、本ページの [希望リージョンへ移管されたチケットの受け取り](/handbook/support/workflows/ticket-transfers/#receiving-a-ticket-rehome) セクションを参照してください。
 - ハンドオーバーチケットについては、open のチケットをまず優先し、その後 pending のチケットに対応します。
-- 他のリージョンから rehome されたチケットは、その日のうちにアサインされるようにします。
+- 他のリージョンから移管されたチケットは、その日のうちにアサインされるようにします。
 - 顧客の希望リージョンの選択は、チケット作成から 8 営業時間以内に尊重するか、または問い合わせるようにします。
-- 受信したチケットは、リージョン指定にかかわらず、その時間帯の担当チームメンバーが受け取り、自分自身にアサインしてください。First response は、自分のカバレッジ時間内で 100% FRT SLA 達成を目標とし、ストレッチ目標として 70% を超えるチケットに FRT SLA の半分の時間内に応答することを目指します。
+- 受信したチケットは、リージョン指定にかかわらず、その時間帯の担当チームメンバーが受け取り、自分自身にアサインしてください。初回応答は、自分のカバレッジ時間内で 100% FRT SLA 達成を目標とし、ストレッチ目標として 70% を超えるチケットに FRT SLA の半分の時間内に応答することを目指します。
 - 顧客の連絡先リージョンは、アサインされたエンジニアの 1 日の終わりにのみ考慮し、その時点でアサイン担当者が顧客のインプットに基づき、ハンドオーバーするか保持するかを判断します。
 
 ## チケットのアサイン
@@ -66,7 +66,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ## Zendesk 添付ファイルの管理
 
-Zendesk チケットを扱う際、添付ファイルをノートPCにダウンロードする必要が生じる場合があります。[ノートPCはフルディスク暗号化されています](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/encryption)が、ダウンロードした添付ファイルは [RED データ（顧客データ）](/handbook/security/policies_and_standards/data-classification-standard/#red) を含む可能性があるため、慎重に扱う必要があります。
+Zendesk チケットを扱う際、添付ファイルをノート PC にダウンロードする必要が生じる場合があります。[ノート PC はフルディスク暗号化されています](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/encryption)が、ダウンロードした添付ファイルは [RED データ（顧客データ）](/handbook/security/policies_and_standards/data-classification-standard/#red))を含む可能性があるため、慎重に扱う必要があります。
 
 1. 管理しやすいよう、ダウンロードを専用フォルダに保存します。例: [Zendesk Download Router](https://gitlab.com/gitlab-com/support/toolbox/zd-dl-router) を使用
 1. チケットを解決した後はできるだけ早く、ダウンロードした添付ファイルの削除を自動化します
@@ -90,12 +90,12 @@ Zendesk Download Router を使用している場合は、`crontab` を使用し�
    0 12 * * * find ~/Downloads -type d -name "zd-*" -mtime +30 -exec rm -rf {} +
    ```
 
-## First response と継続的なコミュニケーション {#first-response-and-ongoing-communication}
+## 初回応答と継続的なコミュニケーション {#first-response-and-ongoing-communication}
 
 チケットへの対応を開始する際は、顧客のニーズに効果的に対処し、解決プロセスを円滑に進めるため、以下の手順を優先してください。
 
 1. **すぐに対応を開始する:** チケットを引き受けたらすぐに、トラブルシューティングや確認の応答を開始します。
-2. **理解を確認する:** First response では、まず顧客の状況、ニーズ、解決すべき問題や質問への自分の理解を確認します。
+2. **理解を確認する:** 初回応答では、まず顧客の状況、ニーズ、解決すべき問題や質問への自分の理解を確認します。
    不明な点があれば、明確化を依頼するか、詳細を議論する短いミーティングを提案します。
 3. **過去のやり取りを確認する:** 関連する問題や有用な背景情報がないか、顧客の最近のチケットを確認します。
    関連する環境の詳細を顧客と確認し、特定のアクションやコミュニケーション手段を指示している可能性のある Zendesk 上の組織ノートを確認します。
@@ -134,7 +134,7 @@ GitLab チームメンバーが起票したサポートチケットは、Zendesk
 
 内部リクエストチケットに対して初めて公開応答を作成しようとすると、Zendesk は以下の警告を表示します。
 
-> This ticket has no public comments, so the requester can't see it. If you add a public comment, they'll start to be notified (but internal notes will stay private). Do you want to add a public comment?
+> このチケットには公開コメントがないため、リクエストした人は閲覧できません。公開コメントを追加すると、その人に通知が届くようになります（内部ノートは非公開のままです）。公開コメントを追加しますか？
 
 `OK` をクリックして公開応答を続行してください。この警告は無視して問題ありません。
 
@@ -183,14 +183,14 @@ GitLab の [Success Signature](https://gitlab.zendesk.com/agent/search/1?copy&ty
 
 ### 毎週どのくらいの数の新規チケットを受け持つべきですか？
 
-毎週、すべてのサポートエンジニアは、自分の役割に当てはまるチケットタイプについて、以下のリストから[適切なベースライン](/handbook/support/support-engineer-responsibilities/#ticket-baseline)を満たす（できれば上回る）first response の数を目指してください。
+毎週、すべてのサポートエンジニアは、自分の役割に当てはまるチケットタイプについて、以下のリストから[適切なベースライン](/handbook/support/support-engineer-responsibilities/#ticket-baseline)を満たす（できれば上回る）初回応答の数を目指してください。
 
 | チケットタイプ   | アサインチケットの目標   |
 | ------------- | ---------- |
-| Self-managed  | 5 件  |
-| SaaS          | 5 件  |
-| SaaS Accounts | 20 件  |
-| L&R           | 15 件 |
+| Self-managed  | 7 件  |
+| SaaS          | 7 件  |
+| SaaS Accounts | 28 件  |
+| L&R           | 14 件 |
 
 これらの目標は、自分の役割に該当するチケットタイプについて、毎週最初の実質的な応答を提供すべき新規チケットの平均数を表します。意図は、業務量、エスカレーション、プロジェクト作業に基づく週ごとの変動を許容しつつ、チーム全体でチケットの公平な分配を確保することです。コア L&R および Associate SE 役職を除く中堅およびシニアエンジニアは、Self-managed、SaaS、Dedicated チケットのバランスの取れた組み合わせを一貫して取り組むことで、バランスの取れた貢献者として育成することが期待されます。
 これらのアサインチケットベースラインは、サポートエンジニアにとって 2 つの主要なチケット関連ベースラインの 1 つです。もう 1 つは、チケットタイプ別の目標を持つ Median Time to Resolve（TTR/MTTR）です:
@@ -200,7 +200,7 @@ GitLab の [Success Signature](https://gitlab.zendesk.com/agent/search/1?copy&ty
 - Median TTR – SaaS Account: 目標 25 時間
 - Median TTR – L&R: 目標 7 時間
 
-これらの期待値は、全体のチケットボリューム、チームサイズ、平均 PTO 率 15% に基づいています。これらのガイドラインが正確かつ適切であり続けることを確実にするため、私たちはチケットボリューム、人員レベル、パフォーマンス指標を継続的に監視しています。これらのベースラインがパフォーマンス指標とダッシュボードでどのように使用されているかを含む詳細については、Support Engineer Performance Indicators FY26 work item、[Support Engineer Performance Indicators FY26 Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6635#note_2498022715)、および [Median TTR ダッシュボード](https://gitlab.zendesk.com/explore/studio#/dashboards/5CB98A840DDD3FFF1A274944BCC070229D377C1D23901AF90988FBD0CA79C706)を確認してください。
+これらの期待値は、全体のチケットボリューム、チームサイズ、平均 PTO 率 15% に基づいています。これらのガイドラインが正確かつ適切であり続けることを確実にするため、私たちはチケットボリューム、人員レベル、パフォーマンス指標を継続的に監視しています。これらのベースラインがパフォーマンス指標とダッシュボードでどのように使用されているかを含む詳細については、Support Engineer Performance Indicators FY26 の作業アイテム、[Support Engineer Performance Indicators FY26 Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6635#note_2498022715)、および [Median TTR ダッシュボード](https://gitlab.zendesk.com/explore/studio#/dashboards/5CB98A840DDD3FFF1A274944BCC070229D377C1D23901AF90988FBD0CA79C706)を確認してください。
 
 **ご注意:** EMEA のサポートエンジニアは、チケットを選択する際に [Shift Chair](/handbook/support/workflows/team/shift_chair/) ワークフローに従ってください。
 
@@ -226,7 +226,7 @@ GitLab の [Success Signature](https://gitlab.zendesk.com/agent/search/1?copy&ty
 1. 顧客の復帰予定日の 1〜2 日後に確認するためのリマインダーを設定します。
 
 [`On-Hold` チケットの動作](/handbook/support/workflows/zendesk-ticket-basics/#behavior-of-on-hold-tickets)により、顧客が復帰するまでチケットは `on-hold` 状態のまま保たれます。
-これは顧客が 1〜2 週間応答できない場合に有用です。顧客がより長期間応答できない場合は、同僚にチケットをハンドオーバーするか、復帰時に新規チケットを起票するよう依頼することを検討してください。
+これは顧客が 1〜2 週間応答できない場合に有用です。顧客がより長期間応答できない場合は、顧客の同僚にチケットを引き継ぐか、復帰時に新規チケットを起票するよう、顧客に依頼することを検討してください。
 
 ### 別の人にチケットを再アサインしてもよいですか？
 
@@ -267,9 +267,9 @@ GitLab の [Success Signature](https://gitlab.zendesk.com/agent/search/1?copy&ty
    - 私たちが応答する前に顧客が解決した場合は、自分自身にチケットをアサインします。結局のところ、顧客の更新を確認し、チケットを解決する作業をしているのですから！
 1. チケットを `solved` としてマークします
 
-### 1 つのサポートチケットでいくつの Issue またはインシデントを扱うべきですか？
+### 1 つのサポートチケットでいくつの問題またはインシデントを扱うべきですか？
 
-[Support General Policies](https://about.gitlab.com/support/general-policies/#we-handle-each-incident-within-a-single-support-ticket) に詳述されているとおり、各 Issue またはインシデントは単一のサポートチケット内で扱うことが GitLab のポリシーです。
+[Support General Policies](https://about.gitlab.com/support/general-policies/#we-handle-each-incident-within-a-single-support-ticket) に詳述されているとおり、個々の問題またはインシデントは単一のサポートチケット内で扱うことが GitLab のポリシーです。
 
 ### 顧客に代わって新規チケットを起票するにはどうしますか？
 
@@ -292,7 +292,7 @@ GitLab Duo のようなツールは、調査時や顧客への返信文を作成
   - 環境変数、設定オプション、UI 設定、ドキュメント URL などが実際に存在するかどうかを特に注意して確認してください
   - 識別された不具合や機能の利用可能性が、顧客が使用している GitLab のバージョン／エディション／ティア／インストール方法と一致しているかを再確認してください
   - LLM によって生成され、顧客と共有するコマンドやコードスニペットを理解し、説明でき、テスト済みであることを確認してください
-  - **少なくとも** 技術的正確性を検証する前に、LLM のテキストを顧客に逐語的に送ってはいけません
+  - ***少なくとも*** 技術的正確性を検証する前に、LLM のテキストを顧客に逐語的に送ってはいけません
 - ツールを選択する際は、GitLab の[データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/)と、念頭に置いている[入力の種類](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/ai-tool-usage-guidelines/#input)に留意してください
   - 顧客データを扱う場合は、LLM と共有する前に情報を匿名化する必要があるかを常に検討してください
   - 機密情報や識別情報を含む可能性のある顧客のスクリーンショット、ログ、設定ファイルには特に注意してください

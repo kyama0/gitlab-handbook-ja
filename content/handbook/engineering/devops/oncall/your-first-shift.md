@@ -1,11 +1,11 @@
 ---
 title: 最初のシフト
 upstream_path: /handbook/engineering/devops/oncall/your-first-shift/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+translated_at: "2026-10-03T00:54:37+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-10-01T13:52:13-07:00"
 ---
 
 最初のオンコールローテーションに向けて準備していますか？以下が必要な手順です。
@@ -46,7 +46,7 @@ lastmod: "2026-02-09T20:42:10+00:00"
 
 ページを受けてどうすれば良いかわからない場合は誰に連絡しますか？
   
-- [オンコールのインシデントローテーションリーダー](https://app.incident.io/gitlab/on-call/schedules/01K611ZT9YX2PSA8WAMEP6A66G?startTime=2025-10-13T00%3A00%3A00.000%2B00%3A00&timePeriodOption=two_weeks&calendarToggle=timeline)に連絡してください
+- ローテーションリーダー（[Tier 2 ハンドブックページ](../../infrastructure-platforms/incident-management/on-call/tier-2.md)に記載）に連絡してください。
 
 ## シフト前夜
 
@@ -60,7 +60,7 @@ lastmod: "2026-02-09T20:42:10+00:00"
 
 ### すぐに
 
-1. **Incident.io でアラートを確認する**（通常5分以内）
+1. **Incident.io でアラートの受領確認（acknowledge）を行う**（通常 5 分以内）
 2. **アラートの詳細を読む** — どのサービス？どのメトリクス？しきい値は？
 3. **Slack のインシデントチャンネルに参加する**（通常ページにリンクが含まれています）
 

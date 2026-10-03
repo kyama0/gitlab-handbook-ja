@@ -106,7 +106,7 @@ GitLab Duo/AI を私たちのワークフローに組み込む方法のアイデ
 1. GitLab 内で機能を構築または強化することによるカスタムツールの使用の最小化 (例: [Create a Changelog feature](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/351))。
 1. GitLab SaaS 上のソフトウェアデリバリーに関連する他チームのニーズのサポート (例: [New Container Registry deployment](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/412))。
 
-### Software Delivery Engineering リーダーシップ
+### Software Delivery Engineering Leadership {#software-delivery-engineering-leadership}
 
 | 名前 | 役割 |
 |------|------|

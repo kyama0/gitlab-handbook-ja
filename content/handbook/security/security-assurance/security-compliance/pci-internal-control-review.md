@@ -2,19 +2,19 @@
 title: "PCI 内部統制レビュー手順"
 description: "PCI DSS コンプライアンス要件を支えるため、選択されたコントロールについて四半期ごとに PCI 内部統制レビューを実施する手順。"
 controlled_document: true
-upstream_path: /handbook/security/security-assurance/security-compliance/pci-internal-control-review/
-upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
-translated_at: "2026-09-29T21:11:30+00:00"
+upstream_path: "/handbook/security/security-assurance/security-compliance/pci-internal-control-review/"
+upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
+translated_at: "2026-10-03T00:49:31+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-28T13:42:44-07:00"
+lastmod: "2026-09-29T11:27:33-07:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
 ## 目的
 
-[継続的なコントロール監視](./sec-controls.md)の一環として、また PCI 要件 12.4.1 および 12.4.1.1 をサポートするために、選択されたコントロールの内部統制レビューを実施します。
+[継続的なコントロール監視](./sec-controls.md)の一環として、また PCI 要件 12.4.1 および 12.4.2.1 をサポートするために、選択されたコントロールの内部統制レビューを実施します。
 
 ## プロセス
 
@@ -30,8 +30,8 @@ lastmod: "2026-09-28T13:42:44-07:00"
 - セキュリティアラートへの対応。
 - 変更管理プロセス。
 
-12.4.2.1: サービスプロバイダーのみの追加要件: Requirement 12.4.2 に従って実施されるレビューは、以下を含めてドキュメント化されます。
+12.4.2.1: サービスプロバイダーのみの追加要件: 要件 12.4.2 に従って実施されるレビューは、以下を含めてドキュメント化されます。
 
 - レビューの結果。
-- Requirement 12.4.2 で実施されていないことが判明したタスクに対して取られたドキュメント化された是正措置。
+- 要件 12.4.2 で実施されていないことが判明したタスクに対して取られたドキュメント化された是正措置。
 - PCI DSS コンプライアンスプログラムの責任を割り当てられた担当者による結果のレビューおよびサインオフ。
