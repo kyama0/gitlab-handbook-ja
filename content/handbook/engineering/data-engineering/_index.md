@@ -2,9 +2,9 @@
 title: "Data Engineering and Monetization"
 description: "あらゆる展開モデルで GitLab をスケールし、インテリジェントなマネタイゼーションを実現する、運用・分析両面の統合データ基盤を構築します。"
 upstream_path: /handbook/engineering/data-engineering/
-upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
-lastmod: "2026-09-22T02:49:28Z"
-translated_at: "2026-09-22T21:08:10+00:00"
+upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
+lastmod: "2026-10-01T08:11:54+02:00"
+translated_at: "2026-10-03T21:17:25+00:00"
 translator: claude
 stale: false
 ---
@@ -39,17 +39,22 @@ flowchart LR
 
     MON --> Growth
     click Growth "/handbook/engineering/development/growth"
+    MON --> MONS[Monetization Section]
+    click MONS "/handbook/engineering/development/monetization"
     MON --> Fulfillment
     click Fulfillment "/handbook/engineering/development/fulfillment"
 
-    Fulfillment --> FP[Fulfillment Platform]
-    click FP "/handbook/engineering/development/fulfillment/fulfillment-platform"
-    Fulfillment --> Provision
-    click Provision "/handbook/engineering/development/fulfillment/provision"
+    MONS --> PUR[Purchase]
+    MONS --> SUBL[Subscription Lifecycle]
+    MONS --> BE[Billing Engine]
+    MONS --> MP[Monetization Platform]
+    MONS --> OMI[Observability, Monitoring, and Integrations]
+    MONS --> COMP[Compliance]
+
+    Fulfillment --> ENT[Entitlements]
     Fulfillment --> SEATM[Seat Management]
-    click SEATM "/handbook/engineering/development/fulfillment/seat-management"
-    Fulfillment --> SUBM[Subscription Management]
-    click SUBM "/handbook/engineering/development/fulfillment/subscription-management"
+    Fulfillment --> UV[Usage Visibility]
+    Fulfillment --> CM[Cost Management]
 
     Growth --> Acquisition
     click Acquisition "/handbook/engineering/development/growth"

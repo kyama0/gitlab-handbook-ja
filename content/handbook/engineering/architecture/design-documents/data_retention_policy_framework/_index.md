@@ -10,9 +10,9 @@ owning-stage: "~devops::data stores"
 participating-stages: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/data_retention_policy_framework/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-lastmod: "2026-09-10T14:45:41+02:00"
-translated_at: "2026-09-11T12:49:40+00:00"
+upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
+lastmod: "2026-10-01T14:41:42+02:00"
+translated_at: "2026-10-03T21:08:02+00:00"
 translator: codex
 stale: false
 ---
@@ -44,7 +44,7 @@ stale: false
 
 | フィールド                   | 説明                                                          | 値の型                                                     |
 |-------------------------|----------------------------------------------------------------------|----------------------------------------------------------------|
-| `exclude`               | 理由を指定してテーブルをデータ保持から除外する                | `reason` を持つオブジェクト：`indefinite_retention`、`technical_complexity`。未設定の場合は除外しない |
+| `exclude`               | 理由を指定してテーブルをデータ保持から除外する                | `reason` を持つオブジェクト：`indefinite_retention`、`needs_archival`、`technical_complexity`。未設定の場合は除外しない |
 | `retention_window`      | 最初に作成されてからデータベースにデータを保持する期間 | 数値（日数）。`-1` は `exclude` が設定されている場合のみ                |
 | `enforcement_strategy`  | システムで保持期間を適用する方法                  | `drop_partition`、`delete_rows`、`transient_data`。`none` は `exclude` が設定されている場合のみ |
 | `enforcing`             | 保持ポリシーが能動的に適用されているかどうか                    | ブール値                                                        |
@@ -63,10 +63,11 @@ stale: false
 
 **許可される理由：**
 
-1. `indefinite_retention` — コンプライアンスや監査目的などでデータを無期限に保持する必要がある場合、または
-  古くなって削除できる行が蓄積されないコアエンティティテーブル（`organizations` など）の場合。これは
-  暫定措置です。最終的な目標は、無期限に保持するデータをホット OLTP データベースからコールドストレージへ移すことであるため、
-  この理由を使用するテーブルは見直されることが期待されます。
+1. `indefinite_retention` — アーカイブでは組織の要件を満たせないため、データを Postgres に無期限に保持する必要がある場合。
+  たとえば、古くなって削除できる行が蓄積されない
+  コアエンティティテーブル（`organizations` など）が該当します。
+1. `needs_archival` — 先にアーカイブシステムへ移す必要があるため、データを OLTP から削除できない場合。
+  アーカイブの要件とその根拠を `work_item` に必ず記録しなければなりません。
 1. `technical_complexity` — 50 GB のソフトリミットを超え、パーティション化できないテーブルで、`drop_partition`
   を実現できない場合。パーティション化を不可能にする具体的な技術的制約を `work_item` で説明しなければなりません。
 
@@ -111,8 +112,8 @@ stale: false
 flowchart TD
     A{"Is the data naturally deleted<br>by the feature lifecycle?"}
     A -->|Yes| B(["transient_data<br>(no-op; handled by the feature lifecycle)"])
-    A -->|No| G{"Can the data be deleted?"}
-    G -->|No| I(["none<br>(set exclude.reason: indefinite_retention)"])
+    A -->|No| G{"Can the data be deleted<br>without archival?"}
+    G -->|No| M(["none<br>(set exclude.reason: needs_archival)"])
     G -->|Yes| C{"Is the table larger than 50 GB?"}
     C -->|Yes| J{"Is partitioning possible?"}
     J -->|Yes| D(["drop_partition"])

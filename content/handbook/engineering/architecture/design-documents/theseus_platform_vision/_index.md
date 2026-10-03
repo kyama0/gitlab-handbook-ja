@@ -10,9 +10,9 @@ owning-stage: ""
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-lastmod: "2026-07-15T12:33:58+02:00"
-translated_at: "2026-07-16T06:15:42+09:00"
+upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
+lastmod: "2026-10-01T09:57:33+01:00"
+translated_at: "2026-10-03T21:15:10+00:00"
 translator: codex
 stale: false
 ---
@@ -49,6 +49,7 @@ stale: false
 | [005](decisions/005_labkit_go_native_go_library.md) | LabKit Go はネイティブ Go ライブラリのままとする | 提案中 |
 | [006](decisions/006_lab_bench_assemblies_are_first_class.md) | Lab Bench アセンブリを第一級のプラットフォームコンポーネントとする | 提案中 |
 | [007](decisions/007_prefer_labkit_library_over_assembly.md) | アセンブリフレームワークによる実装よりも LabKit ライブラリコードを優先する | 提案中 |
+| [008](decisions/008_openapi_specification_for_modular_http_apis.md) | モジュール型 HTTP API にプラットフォームの品質基準を満たす OpenAPI 仕様を同梱する | ドラフト |
 
 ---
 

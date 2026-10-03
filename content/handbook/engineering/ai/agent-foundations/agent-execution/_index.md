@@ -2,9 +2,9 @@
 title: Agent Execution グループ
 description: "Agent Execution グループは、開発ワークフローのタスクを自動化して生産性向上を支援する AI システム、GitLab Duo Workflow の開発に注力しています。"
 upstream_path: /handbook/engineering/ai/agent-foundations/agent-execution/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-lastmod: "2026-08-18T13:41:28+02:00"
-translated_at: "2026-09-04T11:16:44+09:00"
+upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
+lastmod: "2026-09-29T10:59:36+02:00"
+translated_at: "2026-10-03T21:17:25+00:00"
 translator: codex
 stale: false
 ---
@@ -44,7 +44,7 @@ Runner Execution は、GitLab runner をエージェントが実行されるネ�
 
 #### チームメンバー
 
-{{< group-by-slugs ssuman3 andrasherczeg alperakgun>}}
+{{< group-by-slugs ssuman3 andrasherczeg alperakgun clinacre>}}
 
 ## 📦 チームプロセス
 
