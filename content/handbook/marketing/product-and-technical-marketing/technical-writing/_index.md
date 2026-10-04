@@ -2,11 +2,11 @@
 title: "テクニカルライティング"
 description: "GitLab の Technical Writing チームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。"
 upstream_path: /handbook/marketing/product-and-technical-marketing/technical-writing/
-upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
-translated_at: "2026-09-25T21:12:56Z"
+upstream_sha: 9e86f098ae65daef23f14ddf0e7d8172bd565a6b
+translated_at: "2026-10-04T21:11:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-25T15:49:42+01:00"
+lastmod: "2026-10-02T09:21:12+02:00"
 ---
 
 優れたドキュメントは、GitLab の顧客、ユーザー、管理者の進化するニーズに応えます。機能やベストプラクティスについて読者を教育します。GitLab を効率的に設定、利用、トラブルシューティングできるようにします。テクニカルライティングチームは [docs.gitlab.com](https://docs.gitlab.com) サイトとそのコンテンツ、プロセス、ツールを管理しています。
@@ -291,7 +291,7 @@ DocOps グループは、この作業を他の[テクニカルライティング
 | [GitLab Design System ("Pajamas")](https://design.gitlab.com/) の [`content`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/contents/content) 配下の情報 | {{< member-by-name "Fiona Neill" >}} |
 | [スタイルガイド](#style-guide)                                                          | {{< member-by-name "Fiona Neill" >}} |
 | [ドキュメントテスト](#documentation-testing)（DocOps/Vale/markdownlint）           | {{< member-by-name "Sarah Watt" >}} |
-| [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) | {{< member-by-name "Ashraf Khamis" >}}, {{< member-by-name "Achilleas Pipinellis" >}}, {{< member-by-name "Evan Read" >}}, {{< member-by-name "Lorena Ciutacu" >}}, {{< member-by-name "Marcel Amirault" >}} |
+| [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) | {{< member-by-name "Ashraf Khamis" >}}, {{< member-by-name "Evan Read" >}}, {{< member-by-name "Lorena Ciutacu" >}}, {{< member-by-name "Marcel Amirault" >}} |
 
 ### TW がレビューしないコンテンツ {#content-not-reviewed-by-tws}
 

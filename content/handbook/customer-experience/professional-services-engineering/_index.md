@@ -2,11 +2,11 @@
 title: "Professional Services チーム ハンドブック"
 description: "GitLab の Professional Services チームは Customer Success 部門の一部であり、お客様がより早く価値を実現できるよう支援します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 9e86f098ae65daef23f14ddf0e7d8172bd565a6b
+translated_at: "2026-10-04T21:06:32+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-09-29T14:09:20-04:00"
 ---
 
 GitLab の Professional Services チームは [Customer Success](/handbook/customer-experience/) 部門の一部です。
@@ -38,7 +38,7 @@ Professional Services チームは、専門的な機能と責任に基づいて�
 | [デリバリー & プロジェクトマネジメント](/handbook/customer-experience/professional-services-engineering/project-mgmt/#deliver-train-and-monitor) | 専門エンジニアおよび Project/Program Managers によるサービスデリバリーの計画と実行 |
 | [エンゲージメントマネジメント](engagement-mgmt/) | GitLab セールスチームメンバーと連携したオポチュニティおよび SOW のスコーピングとクローズ |
 | [インストラクショナルデザイン & 開発](instruct-dev/) | 教育コンテンツの作成、展開、維持管理 |
-| [プラクティスマネジメント](practice-mgmt/) | Professional Services オファリングの定義、計画、市場投入、デリバリーツール/メンテナンス |
+| [CX Engineering](cx-engineering/) | Professional Services オファリングの定義、計画、市場投入、デリバリーツール/メンテナンス |
 | [Professional Services オペレーション](professional-services-operations/) | プロジェクトコーディネーション、スケジューリング、バックエンドプロセス |
 | [Professional Services Technical Architect](technical-architect/) | チームの技術リーダーシップ、プロジェクト品質、技術的エスカレーション |
 
@@ -110,7 +110,7 @@ GitLab Professional Services は、ビジネス収益性とリソース稼働率
 迷った場合は、担当の Program/Project Manager または Delivery Manager にご相談ください。特定のツールイネーブルメントについては、エンジニアはエンゲージメントに対して時間をログし、時間エントリ（Kantata 内）の「請求可能」チェックボックスをオフにして、作業内容を説明するメモを追加してください。
 
 **顧客満足度 (CSAT)**
-このパフォーマンス指標は、お客様が GitLab PS チームとのやり取りにどれだけ満足しているかを測定します。これは、各エンゲージメント終了時にお客様に送付されるアンケートの回答に基づいています。1〜5 のスケールで、お客様が 4 または 5 を回答した場合、そのお客様は提供されたサービスに `Satisfied（満足）` しているとみなします。
+このパフォーマンス指標は、お客様が GitLab PS チームとのやり取りにどれだけ満足しているかを測定します。これは、各エンゲージメント終了時にお客様に送付されるアンケートの回答に基づいています。1〜5 のスケールで、お客様が 4 または 5 を回答した場合、そのお客様は提供されたサービスに `Satisfied`（満足）しているとみなします。
 
 ## Professional Services のオファリング
 

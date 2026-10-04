@@ -1,11 +1,11 @@
 ---
 title: "Professional Services のポジショニング"
 upstream_path: /handbook/customer-experience/professional-services-engineering/positioning/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 9e86f098ae65daef23f14ddf0e7d8172bd565a6b
+translated_at: "2026-10-04T21:08:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-09-29T14:09:20-04:00"
 ---
 
 ## 顧客ジャーニーで PS をどこにポジショニングするか
@@ -49,9 +49,11 @@ PS エンゲージメントにより、顧客は GitLab のフル機能をより
 
 GitLab を採用すると、市場で唯一の単一プラットフォーム型 DevOps を手に入れることができます。GitLab Professional Services は、これに合わせて人とプロセスをアラインするのを支援します。
 
-私たちの Professional Services チームは、GitLab のサブジェクトマターエキスパートだけでなく、大規模アプリケーションのデプロイとメンテナンス、SDLC 全体にわたるベストプラクティスの作成と教育の経験を持つ熟練した DevOps プロフェッショナルで構成されています。私たちのエキスパートは、DevOps トランスフォーメーションを主導し、お客様の戦略的なビジネスイニシアチブに直接サポートを提供します。他の Fortune 500 エンタープライズで培った経験により、貴社のエンタープライズのデジタルトランスフォーメーションをクラウドソーシングできます。
+私たちの Professional Services チームは、GitLab のサブジェクトマターエキスパートだけでなく、大規模アプリケーションのデプロイとメンテナンス、SDLC 全体にわたるベストプラクティスの作成と教育の経験を持つ熟練した DevSecOps プロフェッショナルで構成されています。私たちのエキスパートは、DevSecOps トランスフォーメーションを主導し、お客様の戦略的なビジネスイニシアチブに直接サポートを提供します。他の Fortune 500 エンタープライズで培った経験により、貴社のエンタープライズのデジタルトランスフォーメーションをクラウドソーシングできます。
 
-GitLab の Professional Services チームは、貴社の GitLab インストールのフルバリューを実現できるようにするために存在します。私たちは、貴社の GitLab インストールが回復力があり安全であることを保証する直接の実装サポートを提供できます。また、操作をすぐに再開するためのクリーンなデータセットを提供することで、GitLab への移行を促進するマイグレーションサービスも提供します。私たちのエデュケーションおよび専門トレーニングは、CI/CD、バージョン管理、メトリクスなどのベストプラクティスのトレーニングを提供します。
+GitLab の Professional Services チームは、貴社の GitLab インストールのフルバリューを実現できるようにするために存在します。私たちは、貴社の GitLab インストールが回復力があり安全であることを保証する直接の実装サポートを提供できます。また、操作をすぐに再開するためのクリーンなデータセットを提供することで、GitLab への移行を促進するマイグレーションサービスも提供します。私たちは、中核となる CI/CD とセキュリティのワークフローの変革を支援し、Duo Agent Platform (DAP) を活用して GitLab プラットフォームから得られる ROI を最大化できるよう支援します。私たちのエデュケーションおよび専門トレーニングでは、CI/CD、セキュリティとコンプライアンス、git の基礎、システム管理などのベストプラクティスを学べます。
+
+GitLab Professional Services は、[Platform Adoption Maturity Assessment](https://drive.google.com/file/d/15XfEYM32lkAOsTU1Ay8HGNsnFllUkXlj/view?usp=sharing)を通じて、すべての顧客に現在の DevSecOps ワークフローの詳細な評価を提供できます。この評価では、GitLab の現在の利用状況を、業界で定められた DevSecOps のベストプラクティスと比較します。
 
 ## 顧客アーキタイプ
 
@@ -77,27 +79,27 @@ GitLab の Professional Services チームは、貴社の GitLab インストー
 
 可能な限り早く顧客に最大の[価値](/handbook/customer-experience/customer-success-vision/#time-to-value-kpis) を提供するには、次を検討すべきです:
 
-- [マイグレーション](https://about.gitlab.com/services/migration/)（エントリーポイントに基づいて SCM および／または CI/CD）
-- [インテグレーション](https://about.gitlab.com/services/implementation/integration/)（LDAP/SSO、Jira、Jenkins）
-- [エデュケーション](https://about.gitlab.com/services/education/)（ベーシックおよび／または CI/CD）
+- [マイグレーション](https://about.gitlab.com/professional-services/migration/)（エントリーポイントに基づいて SCM および／または CI/CD）
+- [インテグレーション](https://about.gitlab.com/professional-services/implementation/integration/)（LDAP/SSO、Jira、Jenkins）
+- [エデュケーション](https://about.gitlab.com/professional-services/education/)（ベーシックおよび／または CI/CD）
 
 ### マイグレーションが不要な SMB またはミッドマーケット
 
 一部の顧客は、マイグレーションとセットアップを素早く管理できる git の達人チームを持っていますが、残りのエンジニアはそれほどスキルフルではないかもしれません。エデュケーションサービスを提案するのは常に良いアイデアです。なぜなら、顧客のエンドユーザーは、後期段階の採用を推進する可能性が高くなるからです。この種の草の根の動機は、コンバージョンオポチュニティを調査する際に大いに役立ちます。
 
-これらの顧客には、私たちの [エデュケーションサービス](https://about.gitlab.com/services/education/) を検討してください
+これらの顧客には、私たちの [エデュケーションサービス](https://about.gitlab.com/professional-services/education/) を検討してください
+
+### 大規模顧客
+
+GitLab Professional Services は、大規模な変革を伴うエンゲージメントについて豊富な専門知識を持っています。これには、既存の SCM を置き換える大規模移行、複雑な Self-Managed のデプロイ、アップグレード、ヘルスチェック、アーキテクチャの最適化などが含まれます。また、レガシー CI から GitLab CI への大規模な移行や、Ultimate による GitLab Security へのセキュリティワークフローの変革も含まれます。さらに、GitLab Duo Agent Platform は、中核となる DevSecOps ワークフローのベストプラクティスの効果を高め、Professional Services は顧客が DAP の価値を引き出せるよう支援します。
+
+詳細については、[PS カタログ](https://about.gitlab.com/professional-services/catalog/)ページを確認し、[担当の Engagement Manager にお問い合わせください](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.b4x70ea3f0er#heading=h.qzgxpwqxme5)。
 
 ## セールス付帯資料
 
-### 内部の証言
-
-PS チームは、2019 年後半から 2020 年初頭にかけて、サービスの成熟度と再現性を構築してきました。最近のいくつかの勝利を内部の証言として、[こちらの highspot ページ](https://gitlab.highspot.com/items/65047cc5d2ccf775a19de0f6) に記録しています。
-
 ### ピッチデッキ {#pitch-deck}
 
-サービスオファリングについて見込み客と話し合う際、Professional Services チームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください
-
-[Professional Services 提案資料](https://docs.google.com/presentation/d/1M-7aA7f9S6dULvzuKuTJs4j3A4V1z2DtMsoN0T0SMZg/edit#slide=id.g277ce56021a_0_2036)
+サービスオファリングについて見込み客と話し合う際、Professional Services チームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください。
 
 ### データシート
 

@@ -2,11 +2,11 @@
 title: "カスタマーサクセスビジョン"
 description: "会社全体のカスタマーサクセスアプローチを構築し、Customer Success 組織のエンゲージメントフレームワークを提供します。"
 upstream_path: /handbook/customer-experience/customer-success-vision/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 9e86f098ae65daef23f14ddf0e7d8172bd565a6b
+translated_at: "2026-10-04T21:08:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-09-29T14:09:20-04:00"
 ---
 
 *「カスタマーサクセスとは、顧客が適切な体験を通じて貴社との関わりの中で望む成果を達成することです。」* - Lincoln Murphy
@@ -101,11 +101,9 @@ P.R.O.V.E. コンポーネントと全体的な哲学の両方の意図は、顧
 
 ## Professional Services の標準コスト {#professional-services-standard-cost}
 
-PS の Statement of Work のマージンを予測するために標準コスト見積もりを使用します。標準レートは、推定年間請求可能時間で平均年間 OTE プラス福利厚生を割って計算されます。この計算では、年間 1,880 請求可能時間を想定しています。標準コスト見積もりは四半期ごとに更新されます。
+PS の Statement of Work のマージンを予測するため、リソースごとに異なる単価、割引、マージンを確保するための上乗せを基にコストを見積もります。このプロセスを標準化するために、PS Compass という社内のサービス見積もりツールを使用しています。このツールはプロジェクトのコスト見積もりを生成し、財務数値の詳細な内訳を示します。
 
-プロジェクトのコスト見積もりを標準化するには、[SOW コスト見積もり計算機](https://docs.google.com/spreadsheets/d/16KFNRFe4E_oaqU7_ZGivoO7eU3-65dkMgVvK5Jvb7ZQ/edit#gid=158441360)のコピーを作成して、対象 SOW の Issue に添付してください。この計算機は標準コスト見積もりへの変更を反映するように更新されます。
-
-標準コストレートの決定またはプロジェクトへの適用可能性について支援が必要な場合は、[Finance Business Partner](/handbook/finance/financial-planning-and-analysis/#finance-business-partners--talent-acquisition-managers-forecast-interlock) にお問い合わせください。
+コスト単価やマージンの算定、その他の情報について支援が必要な場合は、担当の [Professional Services Engagement Manager](/job-description-library/sales/job-professional-services-engagement-manager/)にお問い合わせください。
 
 ## スコープ
 

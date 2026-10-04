@@ -2,28 +2,20 @@
 title: "Professional Services のプリセールス方法論"
 description: "プリセールスサイクルにおいて GitLab が Professional Services をどのようにスコープし、Customer Journey に組み込んでいくかを紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T00:10:26+00:00"
+upstream_sha: 9e86f098ae65daef23f14ddf0e7d8172bd565a6b
+translated_at: "2026-10-04T21:08:34+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-09-29T14:09:20-04:00"
 ---
 
 ## Customer Journey に対応付けた PS プロセスと方法論
 
 Professional Services のプロセスと方法論は、カスタマーサクセスが支える Customer Journey の中に組み込まれています。Professional Services は **SOW Close** から **Project Close** フェーズまでの Customer Journey に貢献します。
 
-![PS デリバリーのカスタマージャーニーフロー](/images/professional-services/customer-journey-mapped-ps-process.png)
+方法論の各ステージには、Directly Responsible Individuals（DRI）、アクティビティ、アウトカム、ツール／資料があります。プリセールスとポストセールスのフェーズで、ステージが明確に分類されていることもわかります。
 
-[出典: GitLab チームメンバー限定](https://docs.google.com/presentation/d/1eC_ocJkzNkH4Vw3v4Vkd3S58a0NALYxXtnb6BZ7pJdc/edit?usp=sharing)
-
-## PS プロセス方法論のステージ
-
-上記の図（スライド 4）は、方法論の各ステージにおける Directly Responsible Individuals (DRI)、アクティビティ、アウトカム、ツール／コラテラルを表しています。プリセールスとポストセールスのフェーズで、ステージが明確に分類されていることもわかります。
-
-以下にリンクされたページでは、各ステージのステップを詳細に確認でき、各ステージで望ましいアウトカムを実現するために個人がアクティビティをどのように実行するかを理解できます。これらのページはセールスプロセスのフェーズ（プリセールス vs ポストセールス）で分かれています。
-
-![プリセールスのステージとステップ](/images/professional-services/professional-services-scoping-workflow.png)
+これらはすべて、[Professional Services の社内ハンドブックページ](https://internal.gitlab.com/handbook/customer-experience/professional-services/)にまとめられています。
 
 ## プリセールスの概要
 

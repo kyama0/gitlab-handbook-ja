@@ -909,7 +909,7 @@ GitLab の自社主催イベントでは、参加している GitLab CXO と 10 
 
 イベントでの講演に関する情報をお探しの場合は、[Corporate Communications ページ](/handbook/marketing/corporate-communications/speaking-resources/) で完全な詳細をご確認ください。
 
-### Corp Events および Growth Community Programs の講演者経費プロセス
+### Corp Events および Growth Community Programs の講演者経費プロセス {#speaker-expense-process-for-corp-events--growth-community-programs}
 
 1. GitLab DRI は、講演者に [GitLab Speaker & Customer Travel Stipend Form](https://docs.google.com/forms/d/e/1FAIpQLSdq1dqE5QGTjQ3eL6yR3SJavg7JVk-SA6R0kl3_5AdPHNN6xg/viewform?usp=sharing&ouid=105213572985369295202)を送信し、記入を依頼します。フォームを提出すると、AP は講演者を ZIP にオンボーディングし（システムにまだ存在しない場合）、PO に裏付けられていない請求書として処理します。
 1. GitLab DRI は、講演者が旅行を予約できるよう Navan の招待を送信します。DRI が Navan の招待を送信するアクセス権を持っていない場合は、Navan の AR（Access Request）を提出し、個人の Navan プロフィールに旅行権限を追加するようリクエストします。DRI は、Navan の招待を送信するために以下の手順に従います。
