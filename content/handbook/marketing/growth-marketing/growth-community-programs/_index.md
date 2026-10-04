@@ -2,19 +2,18 @@
 title: "Growth Community Programs"
 description: "Growth Community Programs は、関係性を魅力的なストーリーと収益に変え、コミュニティ、戦略的アカウント、アドボカシーを横断する成長の好循環を生み出すことで、将来のお客様を育て、現在のお客様を活性化します。"
 upstream_path: /handbook/marketing/growth-marketing/growth-community-programs/
-upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
-translated_at: "2026-09-21T23:30:42+00:00"
+upstream_sha: 9e86f098ae65daef23f14ddf0e7d8172bd565a6b
+translated_at: "2026-10-04T21:11:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-21T18:53:56Z"
+lastmod: "2026-10-02T18:07:11Z"
 ---
 
 ## チームを紹介
 
 - Director, Growth Community Programs - Nicole Smith
 - Staff Marketing Program Manager, Ops - Katie Rogel
-- Sr. Developer Relations Program Manager, EDU, OSS - Ashley Sezer
-- Program Support, EDU, OSS - Dmytro Havrosh
+- Sr. Program Manager - Ashley Sezer
 - Program Manager, SELF - Karen Chi
 - Customer Advocacy - Rachel Lurie
 - Customer Advocacy - Leon Donnelly
@@ -52,10 +51,6 @@ SELF プログラムに関する質問は、Karen Chi までお問い合わせ�
 - [SELF Program Overview（WIP）](https://docs.google.com/presentation/d/1Yff36--PdghAy1ThyYwmosu1KQPJIn74sgVZxstaJRk/edit?slide=id.g3d432dc5dd5_0_0#slide=id.g3d432dc5dd5_0_0)
 - [SELF Program Brief](https://docs.google.com/document/d/1a0g24m5sQvTNBeGb682NrI8sfdOb9PLEF4wbPey3T3s/edit?tab=t.eawrnwg4qad#heading=h.jr7hyp34hbyn)
 - [SELF Program Tracker](https://docs.google.com/spreadsheets/d/1VPdicrId1L8XSDPg7NIdjSzNbCqjncpLPJg-a-1-S5c/edit?gid=1117930087#gid=1117930087)
-
-### GitLab for Education Program
-
-このプログラムの詳細については、[GitLab for Education Program のハンドブックページ](/handbook/marketing/developer-relations/programs/education-program/)を参照してください。
 
 ### GitLab for Startups Program
 
@@ -203,6 +198,10 @@ Growth Community Programs チームは、Investor Relations、Sales、PMM とパ
 GitLab の Growth Community Programs チームは、ケーススタディ、動画、ブログ、ロゴと名前のリファレンス契約、登壇案件、プレス、アナリスト・投資家リレーション、アドバイザリープログラムなど、幅広い領域でお客様のストーリーと声を大規模に押し上げます。
 
 イベントでお客様に登壇いただく、またはイベントを支援していただく依頼の場合は、イベントの 60 日以上前に [Customer Speaker Request](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/product-marketing/-/issues/new?issuable_template=customer-speaker-request) Issue テンプレートを開き、Nicole Smith にアサインしてください。
+
+#### 登壇者経費の手続き {#speaker-expense-process}
+
+チームは[登壇者経費の手続き](/handbook/marketing/events/#speaker-expense-process-for-corp-events--growth-community-programs)に従います。
 
 #### Corporate Events
 

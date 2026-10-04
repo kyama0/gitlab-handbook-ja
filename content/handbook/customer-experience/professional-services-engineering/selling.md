@@ -1,14 +1,16 @@
 ---
 title: "GitLab Professional Services の販売"
 upstream_path: /handbook/customer-experience/professional-services-engineering/selling/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 9e86f098ae65daef23f14ddf0e7d8172bd565a6b
+translated_at: "2026-10-04T21:06:32+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-09-29T14:09:20-04:00"
 ---
 
 サービスの販売方法については、[セールスイネーブルメントセッション](/handbook/customer-experience/professional-services-engineering/sales-enablement)もご視聴いただけます。
+
+社内のチームメンバーは、Professional Services のプロセス全体を理解するために、詳細な[社内ハンドブックページ](https://internal.gitlab.com/handbook/customer-experience/professional-services/)を参照してください。
 
 ## パートナーのプロフェッショナルサービスについての注意
 
@@ -23,53 +25,53 @@ lastmod: "2026-09-24T21:34:11+02:00"
 GitLab Professional Services の販売には主に 4 つのステップがあります:
 
 1. 必要な適切なサービスを特定する。
-1. SFDC で GitLab Professional Services Opportunity を作成する（非 SKU の場合）。
-1. SOW / Service Description Doc を生成する。
-1. Opportunity をクローズする。
+1. SFDC に適切なライセンスまたは子 Opportunity が存在することを確認する（[詳細は後述](#step-2-create-the-opportunity-in-sfdc)）。
+1. [担当の Professional Services Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.b4x70ea3f0er#heading=h.qzgxpwqxme5)に連絡し、必要に応じて提案資料、概算、見積、SOW を作成するか、Professional Services 全般のポジショニングについて支援を受ける。
+1. 見積を確認し、Opportunity をクローズする。
 
 ```mermaid
 graph LR;
-  a["標準サービスですか？"]-- はい ---b["見積に SKU を追加"];
-  a-- いいえ ---c["AE/SA が Create Services Opportunity ボタンで PS Epic を自動作成"];
-  c-->d["AE/SA が PS と SOW を確定"];
-  z["顧客に提案書を送付"];
+  a["Standard services (SKU), no SOW?"]-- Yes ---b["Add SKU to quote"];
+  a-- No ---c["AE auto creates PS epic with Create Services Opportunity button"];
+  c-->d["AE/SA works w/PS EM to finalize pitch, estimate, SOW, and quote"];
+  z["Send order form or SOW to Customer for closure"];
   d-->z;
   b-->z;
 ```
 
 ### ステップ 1: 適切なサービスを特定する
 
-SAE/ISR は、PS チームが提供する一般的なサービスを[フルカタログ](https://about.gitlab.com/professional-services/catalog/)で確認できます。SAE/ISR は、顧客要件に基づいて必要なサービスを選択するために、SA/CSM の支援を得ることができます。
+AE は、PS チームが提供する一般的なサービスを[フルカタログ](https://about.gitlab.com/professional-services/catalog/)で確認できます。AE は、顧客要件に基づいて必要なサービスを選択するために、SA/CSM の支援を得ることができます。
 
-### ステップ 2: SFDC で Opportunity を作成する
+### ステップ 2: SFDC で Opportunity を作成する {#step-2-create-the-opportunity-in-sfdc}
 
-SAE/ISR は[Professional Services Only Opportunity を作成](/handbook/sales/field-operations/gtm-resources/)します。
+AE は[Professional Services Only Opportunity を作成](/handbook/sales/field-operations/gtm-resources/#creating-a-professional-services-opportunity)します。
 
-### Standard Services のみの場合
+### 標準サービスのみの場合
 
-顧客がサービスカタログから標準サービスのみを必要とする場合、SAE/ISR は新しく作成された SFDC PS Opportunity 内から以下の手順で見積を生成できます:
+顧客がサービスカタログから標準サービスのみを必要とする場合、AE は新しく作成された SFDC PS Opportunity 内から以下の手順で見積を生成できます:
 
 1. `New Quote` をクリックします。
 1. 適切な請求先アカウントを選択します。_Quote Type_ セクションで `New Subscription` を選択します。`Next` をクリックします。
 1. _Create New Subscription Quote_ 画面で、必要に応じて必須フィールド（例: _Start Date_）を更新します。`Next` をクリックします。
 1. _New Quote Flow_ 画面で、_New Quote Flow_ の隣のドロップダウンボックスをクリックし、`Add Add on Products` を選択します。
-1. Professional Services and Training の行で、`Select Plan` のドロップダウンをクリックして、Opportunity に追加できる現在の SKU 提供物を確認します。`Next` をクリックします。
+1. `Professional Services and Training` の行で、`Select Plan` のドロップダウンをクリックして、Opportunity に追加できる現在の SKU 提供物を確認します。`Next` をクリックします。
 
 上記の手順に従った後、`Generate PDF` をクリックして、署名のために顧客と共有する Order Form を取得します。AE は顧客と会ってサービスの成果物、期間、価格を確認し、カスタマイズが不要であることを確認すべきです。必要に応じて、再度 EM の支援を得ることができます。
 
 ### カスタムスコープサービス {#custom-scoped-services}
 
-アカウントチーム（SAE/ISR/SA/CSM）が、顧客が[フルカタログ](https://about.gitlab.com/services/catalog/)に記載されているもの以外のサービスを必要とすると判断した場合は、標準の親ライセンスまたはサブスクリプション Opportunity から `Create Services Opportunity` ボタンを使用して、子の PS Opportunity を作成し、PS Epic と関連スコーピング Issue の作成を開始します。これにより、[アサインされた PS Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) のキューに Issue が追加され、次のステップについてフォローアップされます。カスタムスコープの契約に関する詳細は、[詳細手順](#custom-scoped-services-detailed-workflow) を参照してください。
+アカウントチーム（AE/SA/CSM）が、顧客が[フルカタログ](https://about.gitlab.com/services/catalog/)に記載されているもの以外のサービスを必要とすると判断した場合は、標準の親ライセンスまたはサブスクリプション Opportunity から `Create Services Opportunity` ボタンを使用して、子の PS Opportunity を作成し、PS Epic と関連スコーピング Issue の作成を開始します。これにより、[アサインされた PS Engagement Manager](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) のキューに Issue が追加され、次のステップについてフォローアップされます。カスタムスコープの契約に関する詳細は、[詳細手順](#custom-scoped-services-detailed-workflow) を参照してください。
 
 ### Professional Services 見積の作成手順
 
-Deal Desk は、上記いずれのサービスオプションでも見積を必要とします。見積の作成方法は[こちら](/handbook/sales/field-operations/sales-operations/deal-desk/#creating-a-professional-services-quote-for-standard-services)で確認できます。
+Deal Desk は、上記いずれのサービスオプションでも見積を必要とします。見積の作成方法は[こちら](/handbook/sales/field-operations/sales-operations/deal-desk/#quoting-professional-services)で確認できます。
 
-### ステップ 3: SOW を作成・追加する
+### ステップ 3: サービス Opportunity のポジショニングとクローズに向けて担当の PS EM に連絡する
 
-標準 SKU の場合、Order Form は SFDC の Quote オブジェクトから直接[こちら](/handbook/sales/field-operations/sales-operations/deal-desk/#creating-a-professional-services-quote-for-standard-services)で生成されます。顧客から受領したら、署名済みバージョンをアップロードします。
+標準 SKU の場合、Order Form は SFDC の Quote オブジェクトから直接[こちら](/handbook/sales/field-operations/sales-operations/deal-desk/#quoting-professional-services)で生成されます。顧客から受領したら、署名済みバージョンをアップロードします。
 
-カスタムスコープの SOW については、アサインされた Engagement Manager から SOW を受け取り、顧客から署名付きで戻ってきたら、SOW ドキュメントを SFDC の PS Opportunity に添付します。
+カスタムスコープの SOW については、Professional Services Engagement Manager に顧客との会話に参加してもらい、プロフェッショナルサービスの提案と正確な概算の提示を支援してもらいます。アサインされた Engagement Manager から SOW を受け取り、顧客から署名付きで戻ってきたら、SOW ドキュメントを SFDC の PS Opportunity に添付します。
 
 ### ステップ 4: Opportunity をクローズする
 
@@ -126,7 +128,7 @@ SFDC で GitLab Professional Services Opportunity を作成した後、何らか
 
 ### 顧客がトレーニングのみを希望する場合はどうしますか？
 
-顧客が EE 顧客の場合、トレーニングを提供できます。トレーニング SKU は上記の SKU リンクにも記載されています。ただし、カスタムトレーニングは、価格を見積る前に Customer Success 部門でスコープを確定する必要があります。Account Executive はまた、トレーニングのみが必要な理由のユースケースを提供する必要があります。
+顧客が EE 顧客の場合、トレーニングを提供できます。トレーニング SKU は上記の SKU リンクに加え、[GitLab University](https://university.gitlab.com/learn/dashboard)にも記載されています。ただし、カスタムトレーニングは、価格を見積る前に Customer Success 部門でスコープを確定する必要があります。Account Executive はまた、トレーニングのみが必要な理由のユースケースを提供する必要があります。
 
 ユースケースの例:
 

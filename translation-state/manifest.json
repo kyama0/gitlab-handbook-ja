@@ -36778,11 +36778,11 @@
     },
     "content/handbook/marketing/growth-marketing/growth-community-programs/_index.md": {
       "path": "content/handbook/marketing/growth-marketing/growth-community-programs/_index.md",
-      "upstream_sha": "945c1a5211612e55d2a9e0b08b59ebb80548de60",
-      "translated_at": "2026-09-21T23:30:42+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "translated_at": "2026-10-04T21:11:10+00:00",
       "model": "codex",
-      "input_hash": "dd7652012df7ee84d53f5b02554efa70554bed7b3c3830752c9491a3a775c309",
-      "upstream_committed_at": "2026-09-21T18:53:56Z"
+      "input_hash": "a096e1709f9c24649250624a8e9004f7455a2727230953f0825e1893d2698f50",
+      "upstream_committed_at": "2026-10-02T18:07:11Z"
     },
     "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/_index.md": {
       "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/_index.md",
@@ -36890,11 +36890,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md",
-      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
-      "translated_at": "2026-09-25T21:12:56Z",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "translated_at": "2026-10-04T21:11:10+00:00",
       "model": "codex",
-      "input_hash": "81cc1a685b02aca9d970d918439e12373508d4f41890bedbb1b5833e5d3ae80a",
-      "upstream_committed_at": "2026-09-25T15:49:42+01:00"
+      "input_hash": "f350bf19a129518a4e6d560819f5d957370787ab292d8f8c0a62fd3904531a0f",
+      "upstream_committed_at": "2026-10-02T09:21:12+02:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md",
@@ -38010,11 +38010,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T00:10:26+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:08:34+00:00",
       "model": "codex",
-      "input_hash": "eb81784e65d5d624177444ceb4857c9303104f72756488c0f596eb780300a2d9"
+      "input_hash": "ed4fd613c630ec1aa06db85b22e257235188ec5c652d61afed3fa64379b08fad"
     },
     "content/handbook/customer-experience/professional-services-engineering/project-mgmt/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/project-mgmt/_index.md",
@@ -38722,11 +38722,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/sales-enablement.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/sales-enablement.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:06:32+00:00",
       "model": "codex",
-      "input_hash": "1fb31732561d984f21fdee757898285e6563c8b5af14e2e8f54f85b8fa31d13e"
+      "input_hash": "feaa84c1285d639a9982a39566fa50f629222a24c22e0ce72c7f284853452eb5"
     },
     "content/handbook/customer-experience/professional-services-engineering/offerings.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/offerings.md",
@@ -39434,11 +39434,11 @@
     },
     "content/handbook/customer-experience/csm/engaging-with-ps.md": {
       "path": "content/handbook/customer-experience/csm/engaging-with-ps.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:06:32+00:00",
       "model": "codex",
-      "input_hash": "0c1d012becf9404eca457a25c6a660cd7d763c0c6c6fa0132c623a964eac8705"
+      "input_hash": "13e718765ff2b6d78c7cab27e22dc85aee555d78cb4fdf680ce0df318b9efd3b"
     },
     "content/handbook/customer-experience/csm/csm-internship.md": {
       "path": "content/handbook/customer-experience/csm/csm-internship.md",
@@ -39506,19 +39506,19 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/selling.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/selling.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:06:32+00:00",
       "model": "codex",
-      "input_hash": "ac8c936e3cc1e4dd3b822a26caa8acdf0ee49d3e3b4d45e74929400f579c5c06"
+      "input_hash": "af0d4b11e9a2a7cada697668f16ddcf6804f6f895c31856c5273ece1219bf6f6"
     },
     "content/handbook/customer-experience/professional-services-engineering/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:06:32+00:00",
       "model": "codex",
-      "input_hash": "a937cf6f859154f79fb97cdfc39a2023697933583ddbad9b724b0a61130e58ae"
+      "input_hash": "4ff17ac9a97b22f6590250680b6058c39690a6a9ff0054c99ebdd2e38c348360"
     },
     "content/handbook/customer-experience/professional-services-engineering/working-with.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/working-with.md",
@@ -39538,11 +39538,11 @@
     },
     "content/handbook/customer-experience/customer-success-vision/index.md": {
       "path": "content/handbook/customer-experience/customer-success-vision/index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:08:34+00:00",
       "model": "codex",
-      "input_hash": "9aeeea69730492bc5df2d46b545ea0c51a6a1a0ff7b006df27b0022000f82ca4"
+      "input_hash": "3a3d1393512289becd41caa085cea8ca69c3bdb67f0fa3729ebc755f098654a1"
     },
     "content/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc.md": {
       "path": "content/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc.md",
@@ -39618,11 +39618,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/positioning/index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/positioning/index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:08:34+00:00",
       "model": "codex",
-      "input_hash": "39e3cdffa86779ab53809f86a23de9aa346f715d60c12c8aed9c3e968ad4f236"
+      "input_hash": "41f76374696e8473f31931dab7dc9e02801a027494ced3f65bf6aca79db709bc"
     },
     "content/handbook/customer-experience/professional-services-engineering/workflows/process.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/workflows/process.md",
@@ -40159,6 +40159,14 @@
       "translated_at": "2026-10-03T21:15:10+00:00",
       "model": "codex",
       "input_hash": "ad7a5c1284536e7cbfa7adb308d147dba75f1b313f616f32c138472f0688bd4d"
+    },
+    "content/handbook/customer-experience/professional-services-engineering/cx-engineering/_index.md": {
+      "path": "content/handbook/customer-experience/professional-services-engineering/cx-engineering/_index.md",
+      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
+      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
+      "translated_at": "2026-10-04T21:11:10+00:00",
+      "model": "codex",
+      "input_hash": "892bf5b51624e70ff32c3f8255a27e1421ac3003e3d8cb5a043a2bb0d361e68f"
     }
   }
 }
