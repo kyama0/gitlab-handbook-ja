@@ -2,11 +2,11 @@
 title: "GitLab LTD (UK) の福利厚生"
 description: "イギリスを拠点とするチームメンバー向けの GitLab LTD (UK) の福利厚生です。"
 upstream_path: "/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/"
-upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
-translated_at: "2026-09-11T21:22:25+00:00"
+upstream_sha: 59a18d6d88e73b26232d1d6773e5d793fcb29e49
+translated_at: "2026-10-05T21:09:19+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-11T12:52:41-07:00"
+lastmod: "2026-10-05T09:05:35-07:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -21,6 +21,8 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 ### AXA PPP 医療保険
 
 GitLab は、AXA PPP を通じてあなたの健康と福祉をサポートするための民間医療保険を提供します。GitLab はメンバーシップ費用の 100% を負担し、扶養家族を追加することができます。GitLab はその費用の 66% を負担します。
+
+**重要:** このプランへの加入は自動ではありません。保障を受けるには、チームメンバーが加入を申請する必要があります。また、この福利厚生に適用される現物給付（BIK）の税金はチームメンバーが負担します。詳しくは、以下の現物給付に関するセクションを参照してください。
 
 <details markdown="1">
 <summary>適格性要件</summary>
@@ -182,7 +184,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <summary>アクセス方法</summary>
 
 - 自動加入 — 操作は不要
-- [Expression of Wishes Form](https://docs.google.com/forms/d/e/1FAIpQLSdWOCht3imjJpcUhgyWuYmVMMlyf0COShqOal9xs74V_g-BqQ/viewform?usp=preview) を使用して受益者を指定
+- [Expression of Wishes Form](https://drive.google.com/file/d/1m68nqgQyZvuY7VoJPo1to5XDpecduJ2y/view?usp=sharing) を使用して受益者を指定
 - 完了したフォームを Workday の「Benefit Documents and Forms」にアップロード
 
 </details>
@@ -390,6 +392,19 @@ National Insurance 拠出を節約しながら年金を構築できます。2022
 - 過去のパフォーマンスなどの通常の情報を含む各ファンドのファンドファクトシート
 
 管理料はファンドによって異なり、ファクトシートには記載されていません: [ワークプレース年金ページ](https://drive.google.com/file/d/1e38np_Q8_s9Ty5JdbXTiMFXYVPTa20UQ/view?usp=sharing) の料金シートツールを使用してください。
+
+</details>
+
+<details markdown="1">
+<summary>英国の年金への賞与の拠出</summary>
+
+賞与を英国の年金に拠出したい場合は、給与計算の締め切り前に [Compass](https://app.serval.com/new-request)から申請できます。以下の点に注意してください。
+
+- 全社的な賞与の支給（5 月と 11 月）に先立ち、その月の[締め切り](https://internal.gitlab.com/handbook/finance/payroll/)前に Payroll チームへ通知する必要があります。この申請は賞与の支給の都度、個別に提出する必要があり、継続的・恒久的な申請として設定することはできません。
+- この制度の給与犠牲の仕組みに加入している場合、賞与の拠出は給与犠牲として適用されます。2022 年 12 月 13 日より後に入社した場合、給与犠牲に自動加入しています。給与犠牲に加入していない場合は、代わりに源泉で税控除を受ける拠出（relief-at-source）となります。
+- 賞与は全額を拠出する必要があり、一部のみの拠出は認められません。
+- 各自、年間拠出限度額（繰越額を含む）と、年間拠出限度額の段階的な引き下げが及ぼし得る影響を考慮してください。これらの金額の把握は各自の責任です。
+
 </details>
 
 <details markdown="1">

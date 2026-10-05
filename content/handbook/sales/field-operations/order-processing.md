@@ -2,11 +2,11 @@
 title: "Sales Order Processing"
 description: "このページは、アカウントとオポチュニティの作成から、クォート構成、承認、ブッキング要件、最終的な取引のクロージャまでの、Quote to Cash プロセスを概説します。"
 upstream_path: /handbook/sales/field-operations/order-processing/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "59a18d6d88e73b26232d1d6773e5d793fcb29e49"
+translated_at: "2026-10-05T21:07:17.647597+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-09-30T17:30:44-04:00"
 ---
 
 **Sales Order Processing ページへようこそ！**
@@ -192,6 +192,7 @@ Deal Desk は、正確性と完全性を確保するためにあらゆるクォ�
 1. Tax Exempt - クライアントが税免除されているか確認し、SFDC のアカウントに tax exempt 証明書を読み込む必要があります。
 1. Tax Exempt - 税免除の場合、ドロップダウンメニューで yes をクリックし、必要に応じて追加のメモを追加します。
 1. Tax/VAT ID フィールド - 有効な VAT ID を追加することは、欧州連合諸国へのクロスカントリートランザクションの税コンプライアンスに必要です。これらは、GitLab Inc から任意の EU 国、GitLab BV からオランダを除く他の任意の EU 国、GitLab Ltd から英国を除く他の任意の EU 国、GitLab GmbH からドイツを除く他の任意の EU 国に請求する場合です。**Salesforce には[自動化ルール](https://gitlab.my.salesforce.com/01Q4M000000oVDi)があり、クォートの `VAT ID` の内容をクォートの `VAT/Tax ID` から自動的に入力します - VAT ID を更新しようとして上書きされた場合は、関連するオポチュニティで[サポートのケースを開いてください](/handbook/sales/field-operations/sales-operations/)**
+1. 新規の海外見込み顧客アカウントでは、商談を承認申請する前に VAT ID と法人名の検証が必要です。[VAT ID と法人名の検証](/handbook/sales/field-operations/vat-id-legal-entity-validation/)を参照してください。
 1. Special Terms and Notes - 上記の設定で指定されていない追加のメモを入力します。
 
 #### Draft Proposal を作成する方法

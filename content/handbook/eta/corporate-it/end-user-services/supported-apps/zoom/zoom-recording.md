@@ -4,9 +4,9 @@ description: Zoom 録画 - セットアップと設定
 aliases:
   - /handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording/
 upstream_path: /handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:07:25+09:00"
+upstream_sha: "59a18d6d88e73b26232d1d6773e5d793fcb29e49"
+lastmod: "2026-09-24T15:21:04+12:00"
+translated_at: "2026-10-05T21:13:10+00:00"
 translator: codex
 stale: false
 ---
@@ -67,10 +67,9 @@ Zoom を設定して、クラウドに自動保存することもできます。
 
 ### 共有ドライブ録画 {#shared-drive-recording}
 
-<div class="w3-panel w3-yellow">
-  <h3>注意！</h3>
-  <p>この方法で保存した録画は、会社全体に表示されます。プライベートまたは機密情報を含むミーティングには使用しないでください。</p>
-</div>
+{{% alert title="注意！" color="warning" %}}
+この方法で保存した録画は、会社全体に表示されます。プライベートまたは機密情報を含むミーティングには使用しないでください。
+{{% /alert %}}
 
 - Zoom のミーティングトピック（<https://zoom.us/> にログインして編集可能）に `[REC]` というテキストが含まれている場合、これらの録画は `GitLab Videos Recorded` の下にある Google Drive のフォルダーに自動保存されます（[Google Hidden shared drives](https://drive.google.com/drive/shared-drives-hidden)からアクセス可能）
 - フォルダー名の先頭にはホストのメールアドレスが付きます。例えば、ホストが `someuser@gitlab.com` でミーティングタイトルが `Company Training [REC]` の場合、フォルダーは `someuser@gitlab.com-Company Training` と表示されます
