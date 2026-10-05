@@ -19130,11 +19130,11 @@
     },
     "content/handbook/tools-and-tips/ai/gitlab-duo.md": {
       "path": "content/handbook/tools-and-tips/ai/gitlab-duo.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-18T21:10:59+00:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:13:10+00:00",
       "model": "codex",
-      "input_hash": "6c0559b29ab250e848074da6c809f51ebebf644f46513ad402b9294b095db665",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
+      "input_hash": "df3062c96bc1b082ba4e389ea47e7b05aedf3c7d7609bf68669604b1bab0830d",
+      "upstream_committed_at": "2026-09-30T19:05:18+02:00"
     },
     "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md": {
       "path": "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md",
@@ -19450,11 +19450,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
-      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
-      "translated_at": "2026-09-15T06:08:13+09:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:09:19+00:00",
       "model": "codex",
-      "input_hash": "2e1288fff7689c5bddc69d09341a85f4e3d1264969c66ca3986abf7e50234bd5",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "f3a1c440aab405d9079ace9e47695193240ff402cf0305328bcb24029822eeca",
+      "upstream_committed_at": "2026-09-29T15:04:38-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
@@ -19482,11 +19482,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
-      "upstream_sha": "4246c71d16beefada2a847b698b152ff280860c5",
-      "translated_at": "2026-09-11T21:22:25+00:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:09:19+00:00",
       "model": "codex",
-      "input_hash": "780be44112fb86f143fbe4ade2fc64da45ecb20037098616ddf8d7b015df47c6",
-      "upstream_committed_at": "2026-09-11T12:52:41-07:00"
+      "input_hash": "be47d1699ee7654cc0faf1c690aa150cec5d960e58f8885cbf929f8ad28cf39c",
+      "upstream_committed_at": "2026-10-05T09:05:35-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
@@ -27898,11 +27898,11 @@
     },
     "content/handbook/sales/field-operations/order-processing.md": {
       "path": "content/handbook/sales/field-operations/order-processing.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:07:17.647597+00:00",
       "model": "codex",
-      "input_hash": "6fb5b4d88981a67110b70274bad5e099d0d9fe2a86c74235a70f7370845cfe21",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "fe85839c6b1aed271a26965499d6590dc2f92b40f875e3c2fd7a4db693f64126",
+      "upstream_committed_at": "2026-09-30T17:30:44-04:00"
     },
     "content/handbook/sales/field-operations/release-schedule.md": {
       "path": "content/handbook/sales/field-operations/release-schedule.md",
@@ -28074,11 +28074,11 @@
     },
     "content/handbook/sales/field-operations/sales-operations/deal-desk.md": {
       "path": "content/handbook/sales/field-operations/sales-operations/deal-desk.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:07:17.647597+00:00",
       "model": "codex",
-      "input_hash": "df3275aabbd519df0104e2e4feecc737f3e10e93fdf669fe8a8b62211c50c819",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "559d2c3e7c194e36c427b4e84d0e9869a3f8b3be2886453a32c165581c2748b8",
+      "upstream_committed_at": "2026-09-30T17:30:44-04:00"
     },
     "content/handbook/sales/field-operations/sales-operations/linkedin-sales-insights.md": {
       "path": "content/handbook/sales/field-operations/sales-operations/linkedin-sales-insights.md",
@@ -28762,11 +28762,11 @@
     },
     "content/handbook/resellers/partner-enablement/power.md": {
       "path": "content/handbook/resellers/partner-enablement/power.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T01:22:16+00:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:09:19+00:00",
       "model": "codex",
-      "input_hash": "6964925a7a240c45f2a12aa3b11699942fad7d75cb225b8d07c811c62ab5b3f2",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
+      "input_hash": "b9ce5e099377110e397637e2a2fc74bbcc412882f7d7d5fc7a70b3f39625ea47",
+      "upstream_committed_at": "2026-09-24T08:04:05Z"
     },
     "content/handbook/resellers/partner-champions-program/_index.md": {
       "path": "content/handbook/resellers/partner-champions-program/_index.md",
@@ -30962,11 +30962,11 @@
     },
     "content/handbook/people-group/offboarding/offboarding_standards.md": {
       "path": "content/handbook/people-group/offboarding/offboarding_standards.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T08:53:50+09:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:09:19+00:00",
       "model": "codex",
-      "input_hash": "52e65f3f08fe55bc098c15722eafc24254b40658c1ff42c5284b4c22ad50aec4",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "7e2cbc42b09cb534aa0e6d5a48f7938cd7e9785f55e766b7a708e96819144d24",
+      "upstream_committed_at": "2026-10-05T16:03:00-04:00"
     },
     "content/handbook/people-group/learning-and-development/_index.md": {
       "path": "content/handbook/people-group/learning-and-development/_index.md",
@@ -34306,11 +34306,11 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:07:25+09:00",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:13:10+00:00",
       "model": "codex",
-      "input_hash": "c7756029a8444e64c03b0be4ee72d58c0892a6e7c980581ffa269534f4a65f63",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "0aa3e56fd038ac8ba24d9f97f0a5270dc9a6894a43a9479bc993ae036a5cb8a9",
+      "upstream_committed_at": "2026-09-24T15:21:04+12:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-security.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-security.md",
@@ -36914,11 +36914,11 @@
     },
     "content/handbook/sales/sales-development/_index.md": {
       "path": "content/handbook/sales/sales-development/_index.md",
-      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
-      "translated_at": "2026-09-25T21:12:56Z",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "translated_at": "2026-10-05T21:13:10+00:00",
       "model": "codex",
-      "input_hash": "602cc9da4e7bb93c2aa5ca76059e4a7307af4a736788821680fcc0b8802275ab",
-      "upstream_committed_at": "2026-09-24T11:02:46-04:00"
+      "input_hash": "e7652d0547305daf844c15ec1ecd314800a33df39692a17212b81d7d636e5466",
+      "upstream_committed_at": "2026-09-29T11:24:01-04:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/content/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/content/_index.md",
@@ -40167,6 +40167,14 @@
       "translated_at": "2026-10-04T21:11:10+00:00",
       "model": "codex",
       "input_hash": "892bf5b51624e70ff32c3f8255a27e1421ac3003e3d8cb5a043a2bb0d361e68f"
+    },
+    "content/handbook/sales/field-operations/vat-id-legal-entity-validation.md": {
+      "path": "content/handbook/sales/field-operations/vat-id-legal-entity-validation.md",
+      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
+      "upstream_committed_at": "2026-10-04T13:21:35-04:00",
+      "translated_at": "2026-10-05T21:07:17.647597+00:00",
+      "model": "codex",
+      "input_hash": "2604ffbe5a10821c48899330f786fe1bfc40d239725195e55c0f1820edae7944"
     }
   }
 }

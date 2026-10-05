@@ -2,9 +2,9 @@
 title: "GitLab Ireland Ltd"
 description: "アイルランドのチームメンバー向けの GitLab の福利厚生を見つけよう"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/
-upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
-lastmod: "2026-09-13T04:09:59-04:00"
-translated_at: "2026-09-15T06:08:13+09:00"
+upstream_sha: 59a18d6d88e73b26232d1d6773e5d793fcb29e49
+lastmod: "2026-09-29T15:04:38-07:00"
+translated_at: "2026-10-05T21:09:19+00:00"
 translator: claude
 stale: false
 ---
@@ -120,7 +120,7 @@ GitLab は、NFP Ireland が運営する Aviva を通じて確定拠出年金ス
 
 - 2026 年 1 月 1 日より、アイルランドの新しい自動加入年金スキーム（「My Future Fund」と呼ばれる）が義務化されます。職場の年金スキームにまだ拠出していないすべての対象従業員は、この政府運営の年金プログラムに自動的に登録されます。
 - **機会**: チームメンバーは当社の優れた確定拠出年金プランに加入することで、より有利でない政府スキームへの自動加入を回避できます。
-- **当社プランの主な利点**: 5% の雇用主拠出マッチング（自動加入の第 1 フェーズの 1.5% の雇用主拠出と比較して）、完全な拠出の柔軟性 - 1.75% 以上であれば任意の金額を拠出でき、それでも自動加入から免除される、拠出に対する所得税の軽減により実質的なコストが下がる、専門的なファンド運用による柔軟な投資オプション、必須の待機期間や制限されたオプトアウト期間がない。
+- **当社プランの主な利点**: 3-5% の雇用主によるマッチング拠出（自動加入の第 1 フェーズでは雇用主拠出は 1.5%）、完全に柔軟な拠出、所得税の軽減、柔軟な投資オプション、必須の待機期間がないこと。
 - 詳細については[アイルランド自動加入年金移行 FAQ](https://docs.google.com/document/d/1m2wG90cXvKGB7IK4IR22sbfp5GzTntZw/edit?usp=sharing&ouid=108025801343696146787&rtpof=true&sd=true)を参照してください
 
 </details>
@@ -128,7 +128,7 @@ GitLab は、NFP Ireland が運営する Aviva を通じて確定拠出年金ス
 <details markdown="1">
 <summary> GitLab 年金スキームのカバレッジ </summary>
 
-- 新規入社者は Aviva プランに自動的に登録され、1.75% の従業員拠出および雇用主拠出が適用される
+- 新規入社者は Aviva プランに自動的に登録され、3% の従業員拠出および雇用主拠出が適用される
 - チームメンバーは拠出額を増やすことができ、GitLab は年間基本給の最大 5% までマッチングする
 - チームメンバーは追加任意拠出 (AVC) を行うオプションがある
 - NFP Ireland による専門的な運営
@@ -140,7 +140,7 @@ GitLab は、NFP Ireland が運営する Aviva を通じて確定拠出年金ス
 <details markdown="1">
 <summary>登録方法または拠出額の変更方法</summary>
 
- [Aviva 年金フォーム](https://forms.gle/Y4QEr2eTakgWBMRb6)に記入します。Total Rewards チームがあなたの拠出登録を Payroll および Aviva と共有します。
+1. [Aviva 年金フォーム](https://docs.google.com/forms/d/e/1FAIpQLScdCoeWdGTGpiucDaY5nxIhiMKGd3JJBoynKTwNCbAueMsRnQ/viewform?usp=sharing)にご自身の情報を記入して提出してください
 
 </details>
 

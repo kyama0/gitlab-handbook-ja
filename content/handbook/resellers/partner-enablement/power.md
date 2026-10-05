@@ -2,11 +2,11 @@
 title: "GitLab POWER"
 description: "GitLab パートナーのオンボーディングワークフローとイネーブルメントリソース"
 upstream_path: /handbook/resellers/partner-enablement/power/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:22:16+00:00"
+upstream_sha: 59a18d6d88e73b26232d1d6773e5d793fcb29e49
+translated_at: "2026-10-05T21:09:19+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-09-24T08:04:05Z"
 ---
 
 このページは、パートナー向けの GitLab イネーブルメントリソースを集めたものです。主な目的は、パートナーのテクニカルプリセールスチームを私たちの [Channel Partner Program](/handbook/resellers/) にオンボーディングすることです。他のセールスプロフェッショナルやサービスエンジニアにとっても、有用な情報が多数含まれています。
@@ -181,6 +181,8 @@ GitLab は、開発ツールの競争が激しい市場における複雑な製�
   [**Tanuki Racing プロジェクトのセルフガイドワークショップ**](https://gitlab.com/gitlab-learn-labs/sample-projects/tanuki-racing) を使用して、より高度なシナリオを学び、製品のハンズオン経験を積んでください。コンテンツのほとんどはワークショップとして提示されていますが、顧客のユースケースに応じて、自身のデモの基礎として使用できます。[Demo Architect](/job-description-library/sales/demo-architect/) チームがこのリポジトリのコンテンツを最新に保っています。使用手順は、リポジトリのルートにある [README ファイル](https://gitlab.com/gitlab-learn-labs/sample-projects/tanuki-racing/-/blob/main/README.md?ref_type=heads) にあります。
 
   執筆時点（2026-07-21）では、**Duo Agent Platform** モジュールは別リポジトリの [**DAP Swag Shop**](https://gitlab.com/gitlab-learn-labs/sample-projects/dap-swag-shop) で利用でき、独自の[ワークショップ手順](https://gitlab.com/gitlab-learn-labs/sample-projects/dap-swag-shop/-/blob/main/RunBooks/DAP-Workshop.md)があります。
+
+  [Demo Project Pull 起動パイプライン](https://gitlab.com/gitlab-learn-labs/sample-projects/demo-project-pull)を使用して、デモプロジェクトのセットアップと後片付けを自動化してください。
 
 * **インタラクティブ製品ツアー**
 

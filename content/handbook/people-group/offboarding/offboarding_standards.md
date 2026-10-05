@@ -6,11 +6,11 @@ tags:
   - security_standard
   - security_standard_ps
 upstream_path: /handbook/people-group/offboarding/offboarding_standards/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:53:50+09:00"
+upstream_sha: 59a18d6d88e73b26232d1d6773e5d793fcb29e49
+translated_at: "2026-10-05T21:09:19+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-10-05T16:03:00-04:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -35,7 +35,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ### オフボーディングの通知
 
-Workday で退職するチームメンバーの[直属マネージャー](https://docs.google.com/document/d/1Fr1G1i1kssfADgDf3D6LbZHR8RZmWKZYDNV8AfduZ1c/edit)（自発的）または [Team Member Relations](https://docs.google.com/document/d/1nMokz03AiUQtb0XV5zpD9CjaQKcX5Lu8p5ASZy3cJVA/edit)（非自発的）によって退職プロセスが承認・完了されると、所定の自動化が新しいオフボーディングを検出し、指定された日の有効なオフボーディング期間内であれば Issue を開こうとします。自発的退職の場合、このプロセスはチームメンバーが Workday で直接開始した[辞任プロセス](https://docs.google.com/document/d/1AVHHBKd6dtyn0DOl4_UydbdEhectLpH5aMh17r9Sg_4/edit)に従います。
+Workday で退職するチームメンバーの[直属マネージャー](https://docs.google.com/document/d/1Fr1G1i1kssfADgDf3D6LbZHR8RZmWKZYDNV8AfduZ1c/edit)（自発的）または [Team Member Relations](https://docs.google.com/document/d/1nMokz03AiUQtb0XV5zpD9CjaQKcX5Lu8p5ASZy3cJVA/edit)（非自発的）によって退職プロセスが承認・完了されると、チームメンバーの最終勤務日のあらかじめ決められた時刻に、指定された日の有効なオフボーディング時間帯内であれば、[Compass](/handbook/eta/corporate-it/compass/)でオフボーディングの親ケースと子ケースが自動的に作成されます。すべてのシステムオーナーに担当の子ケースを通知するメールが届き、アクセスの取り消しを開始できます。自発的退職の場合、このプロセスはチームメンバーが Workday で直接開始した[辞任プロセス](https://docs.google.com/document/d/1AVHHBKd6dtyn0DOl4_UydbdEhectLpH5aMh17r9Sg_4/edit)に従います。
 
 People Operations と IT Operations のニーズに沿って、予定されたオフボーディングは、Slack で月曜日から金曜日の **チームメンバーの現地タイムゾーン**の午後 4:00 - 5:00 の間に開かれます。
 
@@ -45,19 +45,21 @@ People Operations と IT Operations のニーズに沿って、予定された�
 
 ### オフボーディングの割り当て
 
-People Operations のローテーションに従い、オフボーディング Issue でオフボーディングが直接割り当てられます。
+People Operations のローテーションに従い、オフボーディングの親ケースが Compass で直接割り当てられます。
 
-### オフボーディング Issue の作成
+### オフボーディングケースの作成 {#creating-the-offboarding-case}
 
-オフボーディング Issue は、Workday によって入力されたデータを使用して[自動的に](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)作成されます。オフボーディング Issue が作成されると、割り当てられた People Operations チームメンバーがアサイニーリストに自動的に追加されます。
+オフボーディングの親ケースと子ケースは、Workday によって入力されたデータを使用して Compass で[自動的に](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)作成されます。システムオーナー（アクセス削除担当者）には、退職するチームメンバーのアクセスを取り消す必要があることを示す子ケースが届きます。
 
-IT Operations を含む多くのチームがアクセスの deprovisioning に取り組みます。これは緊急とみなされ、[ラップトップの返却](/handbook/eta/corporate-it/end-user-services/laptop-management/)（2-4 週間かかることがある）を除き、すべてのタスクが 5 営業日以内に完了することが期待されます。
+IT Operations を含む多くのチームがアクセスの deprovisioning に取り組みます。これは緊急とみなされ、[ラップトップの返却](/handbook/eta/corporate-it/end-user-services/laptop-management/)（2-4 週間かかることがある）を除き、すべてのタスクが 5 営業日以内に完了することが期待されます（子ケースは 5 日後に自動的にクローズされます）。
 
 **注：** チームメンバーが一時的に[契約者またはコンサルタントロール](/handbook/finance/procurement/contingent-worker-policy/)に移行する場合、完全なオフボーディングプロセスを進め、契約上の義務を果たすために必要な特定の一時的アクセスのみを付与するための別個のオンボーディング Issue を作成してください。
 
-#### オフボーディング Issue を手動で作成する
+#### オフボーディングケースを手動で作成する {#creating-the-offboarding-case-manually}
 
-オフボーディング Issue が自動的に開かれない場合や緊急の Issue を開く必要がある場合、People Operations メンバーは以下の手順に従って手動でオフボーディング Issue を開くことができます：
+**注：** 以下の手順で参照している Slack コマンド `/pops run offboarding` は、GitLab の Issue を作成します。このプロセスは、オフボーディングの追跡を Compass に移行する前のものであり、IT Operations/People Engineering による確認または更新が必要です。この点は別途指摘済みですが、ここではまだ修正していません。
+
+オフボーディングケースが自動的に開かれない場合や緊急のケースを開く必要がある場合、People Operations メンバーは以下の手順に従って手動でオフボーディング Issue を開くことができます：
 
 1. Slack で、自分にメッセージを送るかのように自分のプロファイルに移動します。コマンド `/pops run offboarding <EMPLOYEE_NUMBER>` を入力します。
 1. オフボーディング Issue が作成されると Slack で ping を受け取ります。これは通常 30 秒ほどかかります。ping にはオフボーディング Issue とチームページから削除するマージリクエストへのリンクが含まれます。
@@ -71,7 +73,7 @@ IT Ops は次のステップに従って、送信者にメッセージを送ろ�
 
 1. Google admin ポータルに移動し、メールアカウントを検索します。
 1. アカウントを unsuspend し、サインインクッキーをリセットし、パスワードをリセットします（パスワードはメールで送らない）。
-1. アカウントを Former Team Memebers Organizational Unit に移動します。
+1. アカウントを Former Team Members Organizational Unit に移動します。
 1. GAM を使用してアカウントに Out of Office メッセージを設定します。
 1. `Customize rejection notice` の下でチームメンバーの部門ごとに[適切なテンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/email_templates/offboarding_rejection.md)を追加します。
 
@@ -103,11 +105,11 @@ People Operations チームメンバーは以下を完了する必要があり�
 
 ### オフボーディングコンプライアンス
 
-People Operations チームは、オフボーディング有効日（最終勤務日）の各週内にすべてのオフボーディング Issue が開かれることを確認します。
+People Operations チームは、オフボーディング有効日（最終勤務日）の各週内にすべてのオフボーディングケースが開かれることを確認します。
 
-すべての部門によるすべてのオフボーディングタスクは、オフボーディング日から 5 日以内に完了する必要があります。1Password、Slack など、より重要で時間に敏感なシステムについては、関連する部門により最初の 24 時間以内に完了されます。アプリケーションとシステムの deprovisioner に関する情報は、[Tech Stack Applications ハンドブックページ](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)にあります。
+すべての部門によるすべてのオフボーディングタスクは、オフボーディング日から 5 日以内に完了する必要があります。1Password、Slack など、より重要で時間に敏感なシステムについては、関連する部門により最初の 24 時間以内に完了されます。アプリケーションとシステムの deprovisioner に関する情報は、[Tech Stack](https://techstack.gtlb.com)にあります。
 
-オフボーディング Issue を正常に完了させるためには、システム／ツールがオフボーディングするチームメンバーに該当するかどうかにかかわらず、すべてのタスクにチェックを入れることが重要です。ボックスをチェックすることは、次のいずれかを示します：
+オフボーディングケースを正常に完了させるためには、システム／ツールがオフボーディングするチームメンバーに該当するかどうかにかかわらず、すべてのタスクにチェックを入れることが重要です。ボックスをチェックすることは、次のいずれかを示します：
 
 - この特定のシステム／ツールへのチームメンバーアクセスを取り消しました
 - 確認した結果、このチームメンバーにはこの特定のシステム／ツールへのアクセスは付与されていませんでした

@@ -2,11 +2,11 @@
 title: "Deal Desk ハンドブック"
 description: "Deal Desk チームのミッションは、フィールドセールスの信頼できるビジネスパートナーとして機能しながら、商談管理プロセスを合理化することです。"
 upstream_path: /handbook/sales/field-operations/sales-operations/deal-desk/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "59a18d6d88e73b26232d1d6773e5d793fcb29e49"
+translated_at: "2026-10-05T21:07:17.647597+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-09-30T17:30:44-04:00"
 ---
 
 ## **Deal Desk ハンドブックへようこそ**
@@ -421,6 +421,7 @@ GitLab では、デフォルトの請求/支払いスケジュールは全額前
 #### VAT ID
 
 - 顧客またはリセラーが EU 拠点の場合は、「VAT ID」番号を入力します。これは注文をブッキングするために必要です。
+- 新規の海外見込み顧客アカウントでは、商談を承認申請する前に、Salesforce から Fonoa を通じて VAT ID と法人名を検証します。[VAT ID と法人名の検証](/handbook/sales/field-operations/vat-id-legal-entity-validation/)を参照してください。
 
 #### Payment Capture Link ステップバイステップガイド
 
