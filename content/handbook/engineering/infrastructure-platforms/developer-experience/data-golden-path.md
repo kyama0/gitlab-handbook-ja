@@ -2,11 +2,11 @@
 title: "データゴールデンパス"
 description: "Developer Experience チームのためのデータストレージと可視化に関するガイダンス"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/data-golden-path/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T06:52:34+09:00"
+upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
+translated_at: "2026-10-06T22:25:54+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T17:51:54+00:00"
+lastmod: "2026-10-05T13:20:55-07:00"
 ---
 
 製品機能が不足しているためにカスタムツールを構築すると、カスタムデータも作成されます。このカスタムデータは監視とアラートができるようにどこかに保存する必要があります。カスタムツールを製品機能にすること（該当する場合）で、データも製品の一部になります — 私たちのメンテナンス作業を削減しながら顧客を支援します。
@@ -35,7 +35,7 @@ lastmod: "2026-07-15T17:51:54+00:00"
 
 製品の一部でないカスタムデータ、またはリアルタイム更新が必要な運用モニタリングに使用します。
 
-**共有 Devex ClickHouse インスタンス**: ほとんどのデータセット（異常に大きくない限り）に対して、Development Analytics は Developer Experience 全体で使用できる ClickHouse インスタンスを維持しています。詳細については #g_development_analytics にお問い合わせください。
+**共有 Devex ClickHouse インスタンス**: ほとんどのデータセット（異常に大きくない限り）に対して、Development Health は Developer Experience 全体で使用できる ClickHouse インスタンスを維持しています。詳細については #g_development_health にお問い合わせください。
 
 ### ブロンズパス（レガシー/特殊ケースのみ）
 
@@ -195,7 +195,7 @@ flowchart LR
 
 チームはデータパスとドッグフーディングの機会への可視性を維持する必要があります。**構築していることだけでなく、なぜそれがまだ製品機能になっていないかも記録してください。**
 
-#### Development Analytics
+#### Development Health
 
 | データタイプ | 現在のパス | カスタムツール/プロセス | 理由 | 製品としての可能性 | 移行先 | タイムライン |
 |-----------|--------------|---------------------|-----------|-------------------|------------------|----------|

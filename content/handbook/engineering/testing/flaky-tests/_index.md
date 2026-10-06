@@ -1,11 +1,11 @@
 ---
 title: "フレーキーテスト"
 upstream_path: /handbook/engineering/testing/flaky-tests/
-upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
-translated_at: "2026-08-06T06:38:11+09:00"
+upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
+translated_at: "2026-10-06T22:28:57+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-05T01:54:25-04:00"
+lastmod: "2026-10-05T13:20:55-07:00"
 ---
 
 ## はじめに
@@ -46,7 +46,7 @@ ci-alerts システムは ClickHouse からのテスト失敗データを分析�
 
 ### トリアージプロセス
 
-自動化によって作成された Issue は Development Analytics チームによってトリアージされ、責任あるエンジニアリングマネージャーに振り分けられます。完全なトリアージワークフローは[ci-alerts TRIAGE.md](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/blob/main/TRIAGE.md)に文書化されています。
+自動化によって作成された Issue は Development Health チームによってトリアージされ、責任あるエンジニアリングマネージャーに振り分けられます。完全なトリアージワークフローは[ci-alerts TRIAGE.md](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/blob/main/TRIAGE.md)に文書化されています。
 
 **主なステップ:**
 

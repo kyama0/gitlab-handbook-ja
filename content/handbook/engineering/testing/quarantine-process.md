@@ -2,11 +2,11 @@
 title: テスト検疫プロセス
 description: GitLab のテスト検疫プロセスの完全ガイド
 upstream_path: /handbook/engineering/testing/quarantine-process/
-upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
-translated_at: "2026-09-03T22:50:04+09:00"
+upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
+translated_at: "2026-10-06T22:28:57+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-20T14:51:55+01:00"
+lastmod: "2026-10-05T13:20:55-07:00"
 ---
 
 このページでは、フレーキーおよび壊れたテストを管理するための GitLab の検疫プロセスについて説明します。技術的な実装の構文（RSpec と Jest）については、[テストの検疫（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/quarantining_tests/)を参照してください。フレーキーテストのデバッグについては、[不健全なテスト（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/unhealthy_tests/)を参照してください。
@@ -257,7 +257,7 @@ Issue には以下が含まれていなければなりません：
 - **週次サマリー**：現在の検疫ステータスとテスト解決の奨励を含む、エンジニアリングチームへの週次サマリーが送られる。
 - **月次ロールアップ**：テスト健全性メトリクスに関する上級管理職への月次ロールアップが提供される。
 - **チームダッシュボード**：機能カテゴリ別にチームの検疫されたテストを追跡するために利用可能。
-- **Test Health スコア**：検疫されたテストは経過期間に応じて点数化され、グループの Quarantine pillar スコアに算入される。スコアの仕組みは [Test Health](/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/test-health)を参照。
+- **Test Health スコア**：検疫されたテストは経過期間に応じて点数化され、グループの Quarantine pillar スコアに算入される。スコアの仕組みは [Test Health](/handbook/engineering/infrastructure-platforms/developer-experience/development-health/test-health)を参照。
 
 これらのレポートは、検疫がバックログではなく一時的な状態であることを確保するのに役立ちます。
 

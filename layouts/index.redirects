@@ -476,3 +476,7 @@
 
 # GitLab BV (Finland) benefits page removed - remove 2027-09-25
 /handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland/ /handbook/total-rewards/benefits/general-and-entity-benefits/ 301
+
+# Development Analytics group renamed to Development Health - remove 2027-10-01
+/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/ /handbook/engineering/infrastructure-platforms/developer-experience/development-health/ 301
+/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/* /handbook/engineering/infrastructure-platforms/developer-experience/development-health/:splat 301

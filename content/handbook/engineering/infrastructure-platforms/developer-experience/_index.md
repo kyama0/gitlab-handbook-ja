@@ -2,11 +2,11 @@
 title: "Developer Experience"
 description: "Developer Experience セクションは、すべてのチームが高品質な変更をリリースできるよう、開発者体験の向上に取り組んでいます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/"
-upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
-translated_at: "2026-09-11T21:12:37+00:00"
+upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
+translated_at: "2026-10-06T22:25:54+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-11T15:26:39Z"
+lastmod: "2026-10-06T14:53:30+02:00"
 ---
 
 ## ミッション
@@ -124,8 +124,8 @@ graph TD
 
     DE --> AP[API Platforms]
     click AP "/handbook/engineering/infrastructure-platforms/developer-experience/api"
-    DE --> DA[Development Analytics]
-    click DA "/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics"
+    DE --> DH[Development Health]
+    click DH "/handbook/engineering/infrastructure-platforms/developer-experience/development-health"
     DE --> DI[Deployment Interfaces]
     click DI "/handbook/engineering/infrastructure-platforms/developer-experience/deployment-interfaces"
     DE --> DT[Development Tooling]
@@ -150,11 +150,11 @@ graph TD
 
 {{< team-by-manager-slug manager="pjphillips" team="Developer Experience:API(.*)" >}}
 
-#### Development Analytics
+#### Development Health
 
-次のメンバーが [Development Analytics グループ](development-analytics)に所属しています:
+次のメンバーが [Development Health グループ](development-health)に所属しています:
 
-{{< team-by-manager-slug manager="pjphillips" team="Development Analytics(.*)" >}}
+{{< team-by-manager-slug manager="pjphillips" department="DevEx Development Health Team" >}}
 
 #### Deployment Interfaces
 

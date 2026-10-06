@@ -2,11 +2,11 @@
 title: "エンジニアリングワークフロー"
 description: "このドキュメントは GitLab Inc. において Issue を扱うすべての人のワークフローを説明します。"
 upstream_path: "/handbook/engineering/workflow/"
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
+translated_at: "2026-10-06T22:28:57+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-06-02T14:47:42-06:00"
+lastmod: "2026-10-05T13:20:55-07:00"
 ---
 
 このドキュメントは GitLab Inc. において Issue を扱うすべての人のワークフローを説明します。
@@ -57,7 +57,7 @@ GitLab のプロダクトは [GitLab Flow](https://about.gitlab.com/blog/2023/07
 
 私たちの目標は、`master` を失敗から自由に保つことであり、壊れた後にだけ `master` を修正することではありません。
 
-破損 `master` 自動化プロセスを所有する `#g_development_analytics` チャンネルでの質問や提案を歓迎します。
+破損 `master` 自動化プロセスを所有する `#g_development_health` チャンネルでの質問や提案を歓迎します。
 
 ### 破損 `master` のサービスレベル目標
 
@@ -249,7 +249,7 @@ DRI が修正への取り組みを認識または示していない場合、開�
 1. 修正がマージされたら `#master-broken` で伝えます。
 1. インシデントが解決されたら、`#master-broken` チャンネルで `Broadcast Master Fixed` ワークフローを選択し、`Continue the broadcast` をクリックして伝えます。
 1. `master` のビルドが失敗していて、基礎となる問題が隔離／リバート／一時的回避策が作成されたが、根本原因がまだ発見されていない場合は、調査はインシデント内で直接続けるべきです。
-1. [Development Analytics group](/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/) のために[Issue を作成](https://gitlab.com/gitlab-org/quality/analytics/team/-/issues/new)し、破損 `master` インシデントがマージリクエストパイプラインでどう防げたかを記述します。
+1. [Development Health group](/handbook/engineering/infrastructure-platforms/developer-experience/development-health/) のために[Issue を作成](https://gitlab.com/gitlab-org/quality/analytics/team/-/issues/new)し、破損 `master` インシデントがマージリクエストパイプラインでどう防げたかを記述します。
 1. 解決ステップが完了し、必要なすべての修正がマージされたら、インシデントをクローズします。
 
 #### 作成者とメンテナの責任
