@@ -2,9 +2,9 @@
 title: "Infrastructure Platforms"
 description: "Infrastructure Platforms 部門は GitLab SaaS プラットフォームおよびサポートサービスの可用性、信頼性、パフォーマンス、スケーラビリティに責任を持ちます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/"
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-lastmod: "2026-08-28T15:18:47+10:00"
-translated_at: "2026-09-04T08:02:21+09:00"
+upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
+lastmod: "2026-10-05T13:20:55-07:00"
+translated_at: "2026-10-06T22:28:57+00:00"
 translator: codex
 stale: false
 ---
@@ -63,8 +63,8 @@ flowchart LR
     PRODENG --> Fleet[Fleet Management]
     click Fleet "/handbook/engineering/infrastructure-platforms/production-engineering/fleet-management/"
 
-    DE --> DevA[Development Analytics]
-    click DevA "/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/"
+    DE --> DevH[Development Health]
+    click DevH "/handbook/engineering/infrastructure-platforms/developer-experience/development-health/"
 
     DE --> DT[Development Tooling]
     click DT "/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/"
