@@ -2,9 +2,9 @@
 title: 'Issue の作業'
 description: 'Issue の作業に関するドキュメント'
 upstream_path: "/handbook/eta/css/gitlab/issues/working-issues/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-lastmod: "2026-08-14T13:09:20-05:00"
-translated_at: "2026-08-15T06:34:22+09:00"
+upstream_sha: "a2f17ddfb308ad2cf8c33a838af1d4b482818d17"
+lastmod: "2026-10-07T13:11:23-05:00"
+translated_at: "2026-10-07T21:09:39+00:00"
 translator: codex
 stale: false
 ---
@@ -75,7 +75,7 @@ graph TD;
   End(Issue closed)
 ```
 
-## どの Issue を誰が起票できるか
+## どの Issue を誰が起票できるか {#who-can-file-what-issues}
 
 - `Feature` Issue は、リクエスト元または対象となるチームによって異なります。
   - Global Support チームからのリクエストは、[SIG チーム](https://gitlab.com/support-innovation-group)のメンバーが起票する必要があります。
@@ -193,7 +193,7 @@ Due to this, we will be closing this out. Should the above mentioned reasons be 
 /status "Won't do" 
 ```
 
-### 計画
+### 計画 {#planning}
 
 {{% alert title="ステージの詳細" color="primary" %}}
 
@@ -238,7 +238,7 @@ Due to this, we will be closing this out. Should the above mentioned reasons be 
 - `Planning -> Development`
 - `Planning -> Scheduling`
 
-#### RICE スコア
+#### RICE スコア {#rice-score}
 
 Customer Support Systems は、機能 Issue に対して [RICE Framework](/handbook/product/product-processes/#using-the-rice-framework)を修正したバージョンを使用しています。
 
@@ -286,7 +286,7 @@ Due to this, we will be closing this out. Should the above mentioned reasons be 
 /status "Won't do" 
 ```
 
-### スケジューリング
+### スケジューリング {#scheduling}
 
 {{% alert title="ステージの詳細" color="primary" %}}
 
@@ -295,7 +295,7 @@ Due to this, we will be closing this out. Should the above mentioned reasons be 
 - このステージを使用するリクエストタイプ:
   - 機能
 - 目的
-  - 帯域の妥当性・実現可能性を判断する。
+  - 対応余力の面での妥当性・実現可能性を判断する。
   - イテレーションとマイルストーンを割り当てる。
   - 開発 DRI を割り当てる。
 - 主なアクティビティ
@@ -346,7 +346,7 @@ Issue はイテレーションが始まるまでここに置かれます。イ�
 
 - `Queued -> Development`
 
-### 開発
+### 開発 {#development}
 
 {{% alert title="ステージの詳細" color="primary" %}}
 
@@ -383,83 +383,7 @@ Issue はイテレーションが始まるまでここに置かれます。イ�
 
 ```
 
-必要なセットアップをすべて完了したら、実行する必要があるテストスイートを含むタスク項目を Issue 上に作成する必要があります。実施する必要があるテストごとに、子タスク項目を作成します。
-
-各子タスク項目では、次のようにします。
-
-- 件名／タイトルはテスト対象の名前にします（例として、SLA ポリシー `Priority Support - FRT` をテストする場合、件名／タイトルは `Priority Support - FRT` にします）。
-- 本文／説明には次の 3 つのセクションを含めます。
-  - `Prerequisites`: テストを実施するための前提条件。
-  - `Steps`: テストを行う正確な手順。
-  - `Expected Result`: テストで期待される結果の詳細。
-
-<details>
-<summary>「Support Readiness SLA」を使用するテスト項目の例</summary>
-
-```plaintext
-
-## Prerequisites
-
-- A test ticket must exist that is open
-- A test ticket must use the `Support Ops` form
-
-## Steps
-
-1. Login to [Zendesk Global's Sandbox](https://gitlab1707170878.zendesk.com/) using the end-user `will@example.com` (login details can be found [here](https://docs.google.com/spreadsheets/d/1g6lJ3AUS4EYqoBYzAdExp4v1dkzOb3GWKaMIoZikjts/edit?usp=sharing))
-2. Create a new ticket using the [Support Ops form](https://gitlab1707170878.zendesk.com/hc/en-us/requests/new?ticket_form_id=12510630404508) with the following information
-   - Subject: `Test from issue xxx`
-   - Description: `Testing`
-   - What type of product are you using: `GitLab.com`
-   - Email associated with your subscription: `will@example.com`
-   - Subscription number: `A-S123456789`
-3. Note the ticket ID to help locate it later
-4. Logout of [Zendesk Global's Sandbox](https://gitlab1707170878.zendesk.com/)
-5. Login to [Zendesk Global's Sandbox](https://gitlab1707170878.zendesk.com/) as an agent account. If you do not have your own agent account, you can use `agent@example.com` (login details can be found [here](https://docs.google.com/spreadsheets/d/1g6lJ3AUS4EYqoBYzAdExp4v1dkzOb3GWKaMIoZikjts/edit?usp=sharing))
-6. Locate the previously created ticket in Zendesk
-7. Check the events of the ticket to confirm the SLA policy is set to `Support Readiness SLA`
-
-## Expected Result
-
-The ticket is using the SLA policy `Support Readiness SLA`
-```
-
-</details>
-
-テストスイート用の子タスク項目をすべて生成したら、親 Issue にそれを要約するコメントを追加します。次のような内容にします。
-
-```plaintext
-## QA Test Plan
-
-The following child test issues were created for this MR:
-
-- LINK_TO_CHILD_TASK_ITEM
-- LINK_TO_CHILD_TASK_ITEM
-- LINK_TO_CHILD_TASK_ITEM
-- LINK_TO_CHILD_TASK_ITEM
-- LINK_TO_CHILD_TASK_ITEM
-```
-
-{{% alert title="GitLab Duo エージェントの使用" color="primary" %}}
-
-私たちは `CustSuppOps Zendesk Test Suite Generator` という名前の GitLab Duo エージェントを開発しました。このエージェントは、作業中のマージリクエスト（およびリンクされた Issue）を使用して、テストスイートを生成します。
-
-使用方法:
-
-1. マージリクエストを作成します（説明に親 Issue へのリンクが含まれていることを確認します）。
-1. ページ右上（プロフィールアイコンの下）にある `Add new chat` をクリックします。
-1. エージェント `CustSuppOps Zendesk Test Suite Generator` を見つけてクリックします。
-1. チャットでエージェントにテストスイートの生成を依頼します。
-
-エージェントの実行中には、次を行います。
-
-- 実施していること、確認していること、使用しているロジックを説明します。
-- 子タスク項目の内容について承認を求めます。
-- 親 Issue に要約コメントを追加するための承認を求めます。
-- 実行したすべてのアクションを要約します。
-
-`CustSuppOps Zendesk Test Suite Generator` を作業中のプロジェクトで実行できるかどうかを判断するには、該当する項目のハンドブックページを参照してください。
-
-{{% /alert %}}
+開発が完了したら、テストを実施する必要があります。テストについては、[CSS のテストに関するドキュメント](/handbook/eta/css/testing/)を参照してください
 
 完全なテストスイートを生成した後は、テストを実施する必要があります（または SIG チームにテスト実施の支援を依頼します）。
 
@@ -482,7 +406,7 @@ The following child test issues were created for this MR:
 - `Development -> Validation`
 - `Development -> Implementation`
 
-### 検証
+### 検証 {#validation}
 
 {{% alert title="ステージの詳細" color="primary" %}}
 
@@ -519,7 +443,7 @@ The following child test issues were created for this MR:
 - `Validation received`
 - `Validation rejected`
 
-### 実装
+### 実装 {#implementation}
 
 {{% alert title="ステージの詳細" color="primary" %}}
 
@@ -546,7 +470,7 @@ The following child test issues were created for this MR:
 
 すべての実装タスクが完了したら（デプロイを使用する項目では、MR をマージすれば十分です）、Issue を[完了ステージ](#completed)に変更します。
 
-### 完了
+### 完了 {#completed}
 
 {{% alert title="ステージの詳細" color="primary" %}}
 

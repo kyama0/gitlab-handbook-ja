@@ -2,9 +2,9 @@
 title: 'グループ'
 description: 'Zendesk グループに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/groups/"
-upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
-lastmod: "2026-08-19T13:20:01-05:00"
-translated_at: "2026-09-03T22:50:04+09:00"
+upstream_sha: "a2f17ddfb308ad2cf8c33a838af1d4b482818d17"
+lastmod: "2026-10-07T13:11:23-05:00"
+translated_at: "2026-10-07T21:08:10+00:00"
 translator: codex
 stale: false
 ---
@@ -17,7 +17,7 @@ stale: false
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/groups)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/groups)
-- `CustSuppOps Zendesk Test Suite Generator` が有効化されています
+- テスト情報: [ドキュメント](/handbook/eta/css/testing/zendesk/groups/)
 
 {{% /alert %}}
 
@@ -43,7 +43,7 @@ Support チームのメンバーのグループメンバーシップは、[エ�
 
 #### その他すべての方
 
-これらの変更は技術スタックプロビジョナーが手動で行う必要があるため、[アクセスリクエスト Issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new)を作成してください。
+これらの変更は Tech Stack のプロビジョナーが手動で行う必要があるため、[アクセスリクエスト Issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new)を作成してください。
 
 ## 非管理者としてグループを作成する
 
@@ -87,7 +87,7 @@ Support チームのメンバーのグループメンバーシップは、[エ�
 - `Support Operations`
 - `Support`
 
-## 管理者タスク
+## 管理者タスク {#administrator-tasks}
 
 {{% alert title="注記" color="primary" %}}
 
