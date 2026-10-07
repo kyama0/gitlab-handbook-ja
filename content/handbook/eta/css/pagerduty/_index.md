@@ -2,11 +2,11 @@
 title: 'Pagerduty'
 description: 'Pagerduty のドキュメント'
 upstream_path: "/handbook/eta/css/pagerduty/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T06:15:29+09:00"
+upstream_sha: "a2f17ddfb308ad2cf8c33a838af1d4b482818d17"
+translated_at: "2026-10-07T21:09:39+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-10-05T11:56:10-05:00"
 ---
 
 このガイドでは、GitLab で Customer Support Systems が Pagerduty をどのように使用し、運用するかを説明します。
@@ -29,7 +29,7 @@ Customer Support Systems のページングまたはオンコール担当に関�
 
 現在、次のスケジュールを使用しています:
 
-- [Customer Support Operations](https://gitlab.pagerduty.com/schedules/PXYIFEP)
+- [Customer Support Systems](https://gitlab.pagerduty.com/schedules/PXYIFEP)
   - タイムゾーン: UTC
   - レイヤー:
     - AMER
@@ -57,10 +57,10 @@ Customer Support Systems のページングまたはオンコール担当に関�
 
 現在、次のエスカレーションポリシーを使用しています:
 
-- [Customer Support Operations](https://gitlab.pagerduty.com/escalation_policies/PKNCI0R)
+- [Customer Support Systems](https://gitlab.pagerduty.com/escalation_policies/PKNCI0R)
   - インシデントがトリガーされた直後
   - 次のユーザーまたはスケジュールに通知
-    - [Customer Support Operations](https://gitlab.pagerduty.com/schedules#PXYIFEP)
+    - [Customer Support Systems](https://gitlab.pagerduty.com/schedules#PXYIFEP)
     - 10 分後にエスカレーション
   - 次のユーザーまたはスケジュールに通知
     - Jason
@@ -74,14 +74,14 @@ Customer Support Systems のページングまたはオンコール担当に関�
 
 現在、次のサービスを使用しています:
 
-- [Customer Support Operations](https://gitlab.pagerduty.com/service-directory/PIETVIG)
+- [Customer Support Systems](https://gitlab.pagerduty.com/service-directory/PIETVIG)
   - 統合
     - なし
   - ワークフロー
     - なし
   - 設定
     - 割り当てと通知
-      - エスカレーションポリシーへの割り当て: [Customer Support Operations](https://gitlab.pagerduty.com/escalation_policies/PKNCI0R)
+      - エスカレーションポリシーへの割り当て: [Customer Support Systems](https://gitlab.pagerduty.com/escalation_policies/PKNCI0R)
       - 対応者への通知方法: 高緊急度の通知。必要に応じてエスカレーション
       - インシデントに対応しない場合の自動処理:
         - すべてのオプションのチェックを解除

@@ -22970,11 +22970,11 @@
     },
     "content/handbook/security/security-operations/_index.md": {
       "path": "content/handbook/security/security-operations/_index.md",
-      "upstream_sha": "401db1960414fc91f11d1a68caf048b4d9aec1be",
-      "translated_at": "2026-09-08T21:10:47+00:00",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "translated_at": "2026-10-07T21:11:30+00:00",
       "model": "codex",
-      "input_hash": "f28db8c2d86df4c057da0e39b79b806ffae0912d783c4e44b03c739e3a70a176",
-      "upstream_committed_at": "2026-09-08T20:14:58Z"
+      "input_hash": "58d7e10a3891dc9b2ccfc54655eaec5452f132845fa7bd23679cc1cc84468679",
+      "upstream_committed_at": "2026-10-07T10:33:04-07:00"
     },
     "content/handbook/security/security-operations/secops-oncall.md": {
       "path": "content/handbook/security/security-operations/secops-oncall.md",
@@ -33186,11 +33186,11 @@
     },
     "content/handbook/eta/css/zendesk/tickets/processor.md": {
       "path": "content/handbook/eta/css/zendesk/tickets/processor.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T12:58:54+00:00",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "translated_at": "2026-10-07T21:09:39+00:00",
       "model": "codex",
-      "input_hash": "2fd68960992276aeac93dcd20b0bcf42be5483d02e7cf154c30878818cc2ff4c",
-      "upstream_committed_at": "2026-09-10T09:47:50-05:00"
+      "input_hash": "e15b5b8004027783496d6d4b82997b80c05e6991cfd8d72c7fc538f70cbef6b9",
+      "upstream_committed_at": "2026-09-29T12:04:10-05:00"
     },
     "content/handbook/eta/css/zendesk/users/_index.md": {
       "path": "content/handbook/eta/css/zendesk/users/_index.md",
@@ -33458,19 +33458,19 @@
     },
     "content/handbook/eta/css/pagerduty/oncall.md": {
       "path": "content/handbook/eta/css/pagerduty/oncall.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T06:15:29+09:00",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "translated_at": "2026-10-07T21:09:39+00:00",
       "model": "codex",
-      "input_hash": "a0d7b471c3682cb7372b9858b04c0401fd7ce66c4400b2c63b47f670d3202b7d",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "c0261e4a5f58b7e23e1a95f9c19439432b7f3289a993f4c75d204a1105a7d99f",
+      "upstream_committed_at": "2026-10-05T11:56:10-05:00"
     },
     "content/handbook/eta/css/pagerduty/_index.md": {
       "path": "content/handbook/eta/css/pagerduty/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T06:15:29+09:00",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "translated_at": "2026-10-07T21:09:39+00:00",
       "model": "codex",
-      "input_hash": "7208b610db6370e539df2ec5f88a54b4ad14a7d0e9caaed8569f0b3b4473ccbb",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "d87dfe28f243878872569058edeca1c81202d85e45691fc2b2c76fd1365aad7c",
+      "upstream_committed_at": "2026-10-05T11:56:10-05:00"
     },
     "content/handbook/eta/css/audits/_index.md": {
       "path": "content/handbook/eta/css/audits/_index.md",
@@ -33754,11 +33754,11 @@
     },
     "content/handbook/eta/css/zendesk/groups/_index.md": {
       "path": "content/handbook/eta/css/zendesk/groups/_index.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T22:50:04+09:00",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "translated_at": "2026-10-07T21:08:10+00:00",
       "model": "codex",
-      "input_hash": "9ca99700d4d5f10d28132140364c39cf3c63e61411de0dbbeefdbb2051916ed0",
-      "upstream_committed_at": "2026-08-19T13:20:01-05:00"
+      "input_hash": "54fdaeeee3c50f6a1c592dda33c07bd09fbaec8050143180979c56d18d582f9e",
+      "upstream_committed_at": "2026-10-07T13:11:23-05:00"
     },
     "content/handbook/eta/css/incidents/_index.md": {
       "path": "content/handbook/eta/css/incidents/_index.md",
@@ -33954,11 +33954,11 @@
     },
     "content/handbook/eta/css/gitlab/issues/working-issues.md": {
       "path": "content/handbook/eta/css/gitlab/issues/working-issues.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:34:22+09:00",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "translated_at": "2026-10-07T21:09:39+00:00",
       "model": "codex",
-      "input_hash": "8f89bc39e0e8ca8a2ec74e2217e4f40a8354b52ff9f8539a0dbc7818809e16b8",
-      "upstream_committed_at": "2026-08-14T13:09:20-05:00"
+      "input_hash": "174a61de02f042abfa08bcc74b58a37a420684b8d324fcedff70ae5267b8072a",
+      "upstream_committed_at": "2026-10-07T13:11:23-05:00"
     },
     "content/handbook/eta/css/zendesk-salesforce-sync/_index.md": {
       "path": "content/handbook/eta/css/zendesk-salesforce-sync/_index.md",
@@ -40138,11 +40138,11 @@
     },
     "content/handbook/security/product-security/mentorship.md": {
       "path": "content/handbook/security/product-security/mentorship.md",
-      "upstream_sha": "1baa88ac2579deb214fe3750bbd0b21139610306",
-      "upstream_committed_at": "2026-10-02T02:25:59+13:00",
-      "translated_at": "2026-10-03T00:49:31+00:00",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "upstream_committed_at": "2026-10-07T11:36:50+13:00",
+      "translated_at": "2026-10-07T21:11:30+00:00",
       "model": "codex",
-      "input_hash": "9abf167e0d377e285c3d882dbfb1718a5d707565f1c55bac7e19865809bbc2d0"
+      "input_hash": "947793aaa159bdf29b482e0986dced14adb1676fa746fa5419f65baea7b21f03"
     },
     "content/handbook/engineering/devops/create/source-code/repository-services/_index.md": {
       "path": "content/handbook/engineering/devops/create/source-code/repository-services/_index.md",
@@ -40191,6 +40191,38 @@
       "translated_at": "2026-10-06T22:27:38+00:00",
       "model": "codex",
       "input_hash": "6acc68c4d10cc6aa85d7a7ee378c5a825203927710a49fd2aa771b51be33e7ed"
+    },
+    "content/handbook/eta/css/testing/_index.md": {
+      "path": "content/handbook/eta/css/testing/_index.md",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "upstream_committed_at": "2026-10-07T13:11:23-05:00",
+      "translated_at": "2026-10-07T21:08:10+00:00",
+      "model": "codex",
+      "input_hash": "0d3cec058a7051fda653778e0517dd4827727738338d2531d0966221d99838dd"
+    },
+    "content/handbook/eta/css/testing/zendesk/_index.md": {
+      "path": "content/handbook/eta/css/testing/zendesk/_index.md",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "upstream_committed_at": "2026-10-07T13:11:23-05:00",
+      "translated_at": "2026-10-07T21:08:10+00:00",
+      "model": "codex",
+      "input_hash": "bbf64e72e8ae001d9f98879f16b7c66e4d7fa76d4fdecece73e73836bbd0bf16"
+    },
+    "content/handbook/eta/css/testing/zendesk/groups.md": {
+      "path": "content/handbook/eta/css/testing/zendesk/groups.md",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "upstream_committed_at": "2026-10-07T13:11:23-05:00",
+      "translated_at": "2026-10-07T21:08:10+00:00",
+      "model": "codex",
+      "input_hash": "485c40041d4d09f2da1b491450a3a65ea224ecc4e14ba0acac348cbdf70576f1"
+    },
+    "content/handbook/security/security-operations/threat-hunting/_index.md": {
+      "path": "content/handbook/security/security-operations/threat-hunting/_index.md",
+      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
+      "upstream_committed_at": "2026-10-05T16:18:10-07:00",
+      "translated_at": "2026-10-07T21:11:30+00:00",
+      "model": "codex",
+      "input_hash": "9b1cfe695ae2e879ce9e298196a015820b53243d1b635a325829f6468514139c"
     }
   }
 }

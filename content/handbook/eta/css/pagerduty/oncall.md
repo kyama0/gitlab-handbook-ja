@@ -2,11 +2,11 @@
 title: 'オンコール'
 description: 'Customer Support Systems のオンコールに関するドキュメント'
 upstream_path: "/handbook/eta/css/pagerduty/oncall/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T06:15:29+09:00"
+upstream_sha: "a2f17ddfb308ad2cf8c33a838af1d4b482818d17"
+translated_at: "2026-10-07T21:09:39+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-10-05T11:56:10-05:00"
 ---
 
 Customer Support Systems チームは、Support Systems に注力するメンバーのためにオンコールローテーションを維持しています。このローテーションにより、サポートチームは常にサポートを提供できます。
@@ -32,11 +32,11 @@ Customer Support Systems チームをページングするには、Pagerduty で
 1. インシデントに適切な `Title` を入力します
    - 簡潔でありながら説明的にします
 1. `Incident Type` には `Base Incident` を選択します
-1. `Impacted Service` には `Customer Support Operations` を選択します
+1. `Impacted Service` には `Customer Support Systems` を選択します
 1. `Description` には、ページングする理由の詳細な説明を入力します。関連する Issue リンクがある場合は含めてください。
 1. `Urgency` には `High` を選択します
 1. `Priority` には `P1` を選択します
-1. `Assignee` には `Customer Support Operations` を選択します
+1. `Assignee` には `Customer Support Systems` を選択します
 1. `Advanced Options` セクションには何も必要ないため、スキップできます
 1. ページ下部にある `Create Incident` ボタンをクリックします
 
@@ -50,7 +50,7 @@ Customer Support Systems チーム内の特定の人をページングする必�
 1. インシデントに適切な `Title` を入力します
    - 簡潔でありながら説明的にします
 1. `Incident Type` には `Base Incident` を選択します
-1. `Impacted Service` には `Customer Support Operations` を選択します
+1. `Impacted Service` には `Customer Support Systems` を選択します
 1. `Description` には、ページングする理由の詳細な説明を入力します。関連する Issue リンクがある場合は含めてください。
 1. `Urgency` には `High` を選択します
 1. `Priority` には `P1` を選択します
