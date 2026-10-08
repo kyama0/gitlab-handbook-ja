@@ -2,18 +2,18 @@
 title: "データベース"
 controlled_document: true
 upstream_path: "/handbook/engineering/infrastructure-platforms/database/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T16:26:29Z"
+upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
+translated_at: "2026-10-08T21:04:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-22T12:58:30+10:00"
+lastmod: "2026-10-08T00:02:34Z"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
 ## GitLab におけるデータベース信頼性
 
-データベース信頼性エンジニア（DBRE）のグループは、GitLab.com を運用する Reliability Engineering チームに所属しています。私たちはインフラストラクチャと GitLab のプロダクトにおけるデータベース信頼性の側面を最も重視しています。
+Database Reliability Engineers（DBRE）は、Data Engineering and Monetization 内の Database Excellence ステージに所属し、Platform Engineering と連携します。私たちはインフラストラクチャと GitLab のプロダクトにおけるデータベース信頼性の側面を最も重視しています。
 
 私たちは可能な限りデータ駆動の観点からデータベース信頼性にアプローチするよう努めています。そのため、以下でサービスレベル目標を定義することから始め、GitLab.com に対して現在維持することを目標としているサービスレベルをドキュメント化しています。
 

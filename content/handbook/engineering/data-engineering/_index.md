@@ -2,9 +2,9 @@
 title: "Data Engineering and Monetization"
 description: "あらゆる展開モデルで GitLab をスケールし、インテリジェントなマネタイゼーションを実現する、運用・分析両面の統合データ基盤を構築します。"
 upstream_path: /handbook/engineering/data-engineering/
-upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
-lastmod: "2026-10-01T08:11:54+02:00"
-translated_at: "2026-10-03T21:17:25+00:00"
+upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
+lastmod: "2026-10-05T12:56:44-07:00"
+translated_at: "2026-10-08T21:04:47+00:00"
 translator: claude
 stale: false
 ---
@@ -73,4 +73,6 @@ flowchart LR
 
 ## 私たちの働き方 {#how-we-work}
 
+- [四半期計画](/handbook/engineering/data-engineering/quarterly-planning/)：Search and Data Platform が四半期を計画する方法です。作業可能量の上限内で優先順位と規模を適切に設定した重点施策、14 日ごとの 20 分間のレビュー、入れ替えと優先順位引き下げのルール、四半期末の say/do スコアを扱います。
+- [優先事項トラッカーガイド](/handbook/engineering/data-engineering/priorities-tracker/)：トラッカーのスプレッドシートに対応するリファレンスです。タブ、Two-pager、各行の列、作業可能量の計算、計画確定前に各行が満たす必要があるチェック項目を説明します。
 - [リリース前のプレモーテム](/handbook/engineering/data-engineering/pre-mortems/)：リリース日より前に、そのリリースに固有のリスクを洗い出すための、任意の 45 分間の取り組みです。実施するかどうかはリリースの DRI が決定します。

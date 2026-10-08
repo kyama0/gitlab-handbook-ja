@@ -2,18 +2,18 @@
 title: "データチーム CI ジョブ"
 description: "GitLab データチーム CI ジョブ"
 upstream_path: /handbook/enterprise-data/platform/ci-jobs/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T12:58:42+09:00"
+upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
+translated_at: "2026-10-08T21:01:35+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-17T14:13:39+02:00"
+lastmod: "2026-10-05T10:53:47-06:00"
 ---
 
 ---
 
-このページでは、[Data Tests](https://gitlab.com/gitlab-data/data-tests) プロジェクトと [Analytics](https://gitlab.com/gitlab-data/analytics) プロジェクトの両方においてマージリクエストでデータチームが使用する CI ジョブについて説明します。マージリクエストの開始と CI ジョブの使用方法のクイックスタートガイドは、「How We Work」にある[この実践ガイド](/handbook/enterprise-data/how-we-work/practical-guide/)を参照してください。
+このページでは、[Analytics](https://gitlab.com/gitlab-data/analytics) プロジェクトにおいてマージリクエストでデータチームが使用する CI ジョブについて説明します。マージリクエストの開始と CI ジョブの使用方法のクイックスタートガイドは、「How We Work」にある[この実践ガイド](/handbook/enterprise-data/how-we-work/practical-guide/)を参照してください。
 
-## パイプラインが失敗した場合の対処
+## パイプラインが失敗した場合の対処 {#what-to-do-if-a-pipeline-fails}
 
 - 週末が過ぎていた場合は、以前に実行した CLONE ステップを再実行してください。毎週日曜日（5:00AM UTC）に 14 日以上経過した古いパイプラインデータベースがすべて Snowflake から[削除](https://gitlab.com/gitlab-data/analytics/-/blob/master/orchestration/drop_snowflake_objects.py)されます。
 ![ci-db-deletion-schema.png](/images/enterprise-data/platform/ci-jobs/ci-db-deletion-schema.png)
@@ -417,23 +417,3 @@ CI 引数とそのデフォルト値は、CI ジョブの入力で明確に確�
 #### `clone_stop`
 
 MR がマージまたはクローズされると自動的に実行されます。通常、手動で実行する必要はありませんが、MR 開発データベースの削除にも使用できます。完了すると、新しいパイプラインを開始するか `clone_prod` ジョブを再実行すると空のデータベースが再クローンされ、最初から始めることができます
-
-## データテストパイプライン
-
-以下はすべてリポジトリで提供される変更を使用して Prod DB に対して実行されます。以下を実行するためにクローニングは不要です。
-
-### `🧠 all_tests_prod`
-
-analytics と data tests リポジトリのすべてのテストを実行します。
-
-### `💾 data_tests_prod`
-
-analytics と data tests リポジトリのすべてのデータテストを実行します。
-
-### `schema_tests_prod`
-
-analytics と data tests リポジトリのすべてのスキーマテストを実行します。
-
-### `specify_tests_prod`
-
-変数 `DBT_MODELS` で指定されたモデルテストを実行します
