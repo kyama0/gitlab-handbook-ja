@@ -10154,11 +10154,11 @@
     },
     "content/handbook/engineering/data-engineering/_index.md": {
       "path": "content/handbook/engineering/data-engineering/_index.md",
-      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
-      "translated_at": "2026-10-03T21:17:25+00:00",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:04:47+00:00",
       "model": "codex",
-      "input_hash": "185e857ac878ff0a4f076b1fda805cd04963759edf3f5635882f0306b7f88779",
-      "upstream_committed_at": "2026-10-01T08:11:54+02:00"
+      "input_hash": "632c86566a0569e4cbe7c6a04e3fa9e1ac04fd995eaab8052d192682635aa8bc",
+      "upstream_committed_at": "2026-10-05T12:56:44-07:00"
     },
     "content/handbook/engineering/data-engineering/analytics/_index.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/_index.md",
@@ -12130,11 +12130,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/database/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/database/_index.md",
-      "upstream_sha": "6a459a3ca969603754a3b5133342edb804d3012c",
-      "translated_at": "2026-04-28T16:26:29Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "28be08c7cc028888211f688acdf5359ef9a1b5458041494df5056ca77048a7aa",
-      "upstream_committed_at": "2026-04-22T12:58:30+10:00"
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:04:47+00:00",
+      "model": "codex",
+      "input_hash": "88ff77a59ecc65b309ca74e5c46e96969564aad5cda0e3338c4a4040d06bae7d",
+      "upstream_committed_at": "2026-10-08T00:02:34Z"
     },
     "content/handbook/engineering/infrastructure-platforms/database/disaster-recovery.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/database/disaster-recovery.md",
@@ -12170,11 +12170,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/api/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/api/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ed667de1a5d50b6f33945a4f686e539a859631ce176bef7cb19130432f17806b",
-      "upstream_committed_at": "2026-05-05T14:52:16+01:00"
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:04:47+00:00",
+      "model": "codex",
+      "input_hash": "a36aa96848f04ea2d032c64f203914a8b564368961ce3e53865bcd0f837e7da4",
+      "upstream_committed_at": "2026-10-08T16:39:44+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization.md",
@@ -14762,11 +14762,11 @@
     },
     "content/handbook/enterprise-data/platform/ci-jobs/index.md": {
       "path": "content/handbook/enterprise-data/platform/ci-jobs/index.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T12:58:42+09:00",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:01:35+00:00",
       "model": "codex",
-      "input_hash": "7ae6a00e061471bbc8b84eb188ca511ad37166f660a3d05bbf4f0ae44de3edbc",
-      "upstream_committed_at": "2026-08-17T14:13:39+02:00"
+      "input_hash": "ed723725c3b9e82a2086ec8164965657b8b0869145d1c7ac25d7e3a71a63963e",
+      "upstream_committed_at": "2026-10-05T10:53:47-06:00"
     },
     "content/handbook/enterprise-data/platform/data-enablement.md": {
       "path": "content/handbook/enterprise-data/platform/data-enablement.md",
@@ -14810,11 +14810,11 @@
     },
     "content/handbook/enterprise-data/platform/dbt-guide.md": {
       "path": "content/handbook/enterprise-data/platform/dbt-guide.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T12:58:42+09:00",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:01:35+00:00",
       "model": "codex",
-      "input_hash": "8cfa3d0d0b795734b9a4c5ef857541fcc3fec74c9421078cfb89c65136e3cb6d",
-      "upstream_committed_at": "2026-08-20T08:15:32-06:00"
+      "input_hash": "acbef822272d8c7d61e778af731d868f423c7256a3fffb4e80c6d49b6e6d52ba",
+      "upstream_committed_at": "2026-10-05T10:53:47-06:00"
     },
     "content/handbook/enterprise-data/platform/edw/index.md": {
       "path": "content/handbook/enterprise-data/platform/edw/index.md",
@@ -14898,11 +14898,11 @@
     },
     "content/handbook/enterprise-data/platform/python-tool-package-management/index.md": {
       "path": "content/handbook/enterprise-data/platform/python-tool-package-management/index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T09:03:55+09:00",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:01:35+00:00",
       "model": "codex",
-      "input_hash": "4032f18da46d966d5a59a3808a655d6b03de3e5ccfea69866e11832e0aaedd9d",
-      "upstream_committed_at": "2026-07-08T14:38:08+02:00"
+      "input_hash": "1adcce63263ceb92c97e982f49403e060c84baaa53726787682f4a3b31013425",
+      "upstream_committed_at": "2026-10-05T10:53:47-06:00"
     },
     "content/handbook/enterprise-data/platform/rstudio/index.md": {
       "path": "content/handbook/enterprise-data/platform/rstudio/index.md",
@@ -37530,11 +37530,11 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T02:04:59.673212+00:00",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:04:47+00:00",
       "model": "codex",
-      "input_hash": "d5afd6eef0c355ab722dbd6f9a4af54eb4dc7ca71defa247914f00b0fb6b2f47",
-      "upstream_committed_at": "2026-09-18T12:11:14-05:00"
+      "input_hash": "7f80f9060a0d5c310e5b91996027869044668eaf7a692dc66af218d152c26796",
+      "upstream_committed_at": "2026-10-08T20:28:57+13:00"
     },
     "content/handbook/engineering/architecture/design-documents/work_item_rest_api/endpoints.md": {
       "path": "content/handbook/engineering/architecture/design-documents/work_item_rest_api/endpoints.md",
@@ -40178,11 +40178,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/_index.md",
-      "upstream_sha": "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a",
-      "upstream_committed_at": "2026-10-06T14:53:30+02:00",
-      "translated_at": "2026-10-06T22:27:38+00:00",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:04:47+00:00",
       "model": "codex",
-      "input_hash": "fd55310df7c54e65d4e561788074f8e0c72498614b20f56c64c21df190546e39"
+      "input_hash": "8aeee7f53e25a8ba0d227c560879e65bb216844f29f0f70f0a555e8456f47eac",
+      "upstream_committed_at": "2026-10-08T14:15:26+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/test-health.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/test-health.md",
@@ -40223,6 +40223,22 @@
       "translated_at": "2026-10-07T21:11:30+00:00",
       "model": "codex",
       "input_hash": "9b1cfe695ae2e879ce9e298196a015820b53243d1b635a325829f6468514139c"
+    },
+    "content/handbook/engineering/data-engineering/priorities-tracker.md": {
+      "path": "content/handbook/engineering/data-engineering/priorities-tracker.md",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:11:23+00:00",
+      "model": "codex",
+      "input_hash": "3c6761ebdc516fc4351253788f2ce8ea65f63fa8b0dd12cee96a25f203f0579c",
+      "upstream_committed_at": "2026-10-05T13:04:47-07:00"
+    },
+    "content/handbook/engineering/data-engineering/quarterly-planning.md": {
+      "path": "content/handbook/engineering/data-engineering/quarterly-planning.md",
+      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
+      "translated_at": "2026-10-08T21:11:23+00:00",
+      "model": "codex",
+      "input_hash": "d2af851325bf88870bf641ff7d27ffe13accfb964360332bab218565104fd5c4",
+      "upstream_committed_at": "2026-10-05T13:04:47-07:00"
     }
   }
 }

@@ -2,11 +2,11 @@
 title: "Development Health グループ"
 description: "Developer Experience セクション配下の Development Health グループ"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/development-health/"
-upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
-translated_at: "2026-10-06T22:27:38+00:00"
+upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
+translated_at: "2026-10-08T21:04:47+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-06T14:53:30+02:00"
+lastmod: "2026-10-08T14:15:26+02:00"
 ---
 
 ## 戦略 {#strategy}
@@ -159,9 +159,9 @@ DH で Tier-1 エージェントを責任を持って運用するための設計
 
 #### サポートリクエスト {#support-requests}
 
-- バグを発見したり、支援が必要な場合、または改善の機会を特定した場合は、`~"group::development health"` と `~"development-analytics::support-request"` ラベルを使用してサポートリクエストを提出してください。緊急の場合は、指定された Slack チャンネル - [`#g_development_health`](https://gitlab.enterprise.slack.com/archives/C064M4D2V37) にエスカレーションしてください。
+- バグを発見したり、支援が必要な場合、または改善の機会を特定した場合は、`~"group::development health"` と `~"development-health::support-request"` ラベルを使用してサポートリクエストを提出してください。緊急の場合は、指定された Slack チャンネル - [`#g_development_health`](https://gitlab.enterprise.slack.com/archives/C064M4D2V37) にエスカレーションしてください。
 - リクエストが最初に Slack 経由で来た場合は、リクエスト者または `group::development health` メンバーが適切なラベルで Issue を開いて、適切なトラッキングとトリアージを確保してください。
-- チームは[サポートリクエストボード](https://gitlab.com/groups/gitlab-org/-/boards/9098093?label_name%5B%5D=development-analytics%3A%3Asupport-request)をレビューし、それに応じて優先順位を付けます。一般的に、チームはサポートタスクに週次時間の約 20% を確保していますが、現在の優先事項によって異なる場合があります。
+- チームは[サポートリクエストボード](https://gitlab.com/groups/gitlab-org/-/boards/9098093?label_name%5B%5D=development-health%3A%3Asupport-request)をレビューし、それに応じて優先順位を付けます。一般的に、チームはサポートタスクに週次時間の約 20% を確保していますが、現在の優先事項によって異なる場合があります。
 
 ### ツール/リポジトリのメンテナンス {#toolsrepository-maintenance}
 
@@ -223,9 +223,9 @@ Development Health のダッシュボードは [Developer Experience ダッシ�
 
 | **カテゴリ**            | **ハンドル**                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| **GitLab グループハンドル** | [`@gl-dx/development-analytics`](https://gitlab.com/gl-dx/development-analytics)                                           |
+| **GitLab グループハンドル** | [`@gl-dx/development-health`](https://gitlab.com/gl-dx/development-health)                                           |
 | **Slack チャンネル**       | [`#g_development_health`](https://gitlab.enterprise.slack.com/archives/C064M4D2V37)                                     |
-| **Slack ハンドル**        | `@dx-development-analytics`                                                                                                |
-| **チームボード**         | [`チーム Issue ボード`](https://gitlab.com/groups/gitlab-org/-/boards/8966549?label_name%5B%5D=group::development%20health), [`チームエピックボード`](https://gitlab.com/groups/gitlab-org/-/epic_boards/2068920?label_name[]=group%3A%3Adevelopment%20health), [`サポートリクエスト`](https://gitlab.com/groups/gitlab-org/-/boards/9098093?label_name%5B%5D=development-analytics::support-request)                                           |
-| **Issue トラッカー**       | [`Development Health の Issue`](https://gitlab.com/groups/gitlab-org/quality/dx/analytics/-/issues)                       |
-| **チームリポジトリ** | [development-analytics](https://gitlab.com/gitlab-org/quality/analytics)                                                   |
+| **Slack ハンドル**        | `@dx-development-health`                                                                                                |
+| **チームボード**         | [`チーム Issue ボード`](https://gitlab.com/groups/gitlab-org/-/boards/8966549?label_name%5B%5D=group::development%20health), [`チームエピックボード`](https://gitlab.com/groups/gitlab-org/-/epic_boards/2068920?label_name[]=group%3A%3Adevelopment%20health), [`サポートリクエスト`](https://gitlab.com/groups/gitlab-org/-/boards/9098093?label_name%5B%5D=development-health::support-request)                                           |
+| **Issue トラッカー**       | [`Development Health の Issue`](https://gitlab.com/gitlab-org/quality/analytics/-/issues)                       |
+| **チームリポジトリ** | [Development Health](https://gitlab.com/gitlab-org/quality/analytics)                                                   |

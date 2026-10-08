@@ -2,9 +2,9 @@
 title: "Python/ツールのパッケージ管理とインベントリ"
 description: "Python バージョン、ツール、ライブラリのインベントリ一覧"
 upstream_path: "/handbook/enterprise-data/platform/python-tool-package-management/"
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-lastmod: "2026-07-08T14:38:08+02:00"
-translated_at: "2026-07-09T09:03:55+09:00"
+upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
+lastmod: "2026-10-05T10:53:47-06:00"
+translated_at: "2026-10-08T21:01:35+00:00"
 translator: claude
 stale: false
 ---
@@ -169,7 +169,6 @@ Python バージョンのアップグレードは、イメージへの影響が�
 | パッケージ名                                                                                | 使用中のバージョン |  DRI  | ユーザー                               |
 |---------------------------------------------------------------------------------------------|--------------------|-------|----------------------------------------|
 | [snowflake_spend](https://gitlab.com/gitlab-data/snowflake_spend)                           | `1.1`              | `N\A` |-Data Engineers<br>-Analytics Engineers |
-| [data-tests](https://gitlab.com/gitlab-data/data-tests)                                     | `N\A`              | `N\A` |-Data Engineers<br>-Analytics Engineers |
 | [dbt-labs/audit_helper](https://github.com/dbt-labs/dbt-audit-helper)                       | `0.9.0`            | `N\A` |-Data Engineers<br>-Analytics Engineers |
 | [dbt-labs/dbt_utils](https://github.com/dbt-labs/dbt-utils)                                 | `1.1.1`            | `N\A` |-Data Engineers<br>-Analytics Engineers |
 | [dbt-labs/snowplow](https://github.com/dbt-labs/snowplow/tree/0.15.1/)                      | `0.15.1`           | `N\A` |-Data Engineers<br>-Analytics Engineers |
@@ -205,7 +204,7 @@ python3 gitnventory.py [--dry-run] [--logging [print/logging]] [--report_folder 
 
 プログラムがどのように実行されているかの詳細は、[**source code**](https://gitlab.com/gitlab-data/package_inventory/-/tree/master/README.md)を参照してください。
 
-**注:** 私たちは、ライブラリの最新バージョンの主な情報源として [PyPi](pypi.org) と [GitLab Data](https://gitlab.com/groups/gitlab-data) グループに依存していることを念頭に置いてください。
+**注:** 私たちは、ライブラリの最新バージョンの主な情報源として [PyPI](https://pypi.org) と [GitLab Data](https://gitlab.com/groups/gitlab-data) グループに依存していることを念頭に置いてください。
 
 > **表 3:** Python ライブラリの DRI
 
@@ -249,7 +248,7 @@ python3 gitnventory.py [--dry-run] [--logging [print/logging]] [--report_folder 
 🛑 **やらないこと**:
 
 - ソフトウェアの `pre-release` バージョンにはアップグレードせず、常に[stable release](https://en.wikipedia.org/wiki/Software_release_life_cycle#Stable_release) バージョンを使用する
-- `non-trusted` ソースを使用しない。インストール元としては [PyPi](pypi.org) または [GitLab Data](https://gitlab.com/groups/gitlab-data) グループのパッケージを推奨します。
+- `non-trusted` ソースを使用しない。インストール元としては [PyPI](https://pypi.org) または [GitLab Data](https://gitlab.com/groups/gitlab-data) グループのパッケージを推奨します。
 
 ### アップグレードログ
 

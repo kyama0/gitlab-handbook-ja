@@ -3,9 +3,9 @@ title: "dbt ガイド"
 description: "data build tool (dbt) ガイド"
 math: true
 upstream_path: /handbook/enterprise-data/platform/dbt-guide/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-lastmod: "2026-08-20T08:15:32-06:00"
-translated_at: "2026-09-04T12:58:42+09:00"
+upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
+lastmod: "2026-10-05T10:53:47-06:00"
+translated_at: "2026-10-08T21:01:35+00:00"
 translator: codex
 stale: false
 ---
@@ -132,7 +132,6 @@ eval "$(pyenv init -)"
 
 - `.dbt/profiles.yml` を自分固有のユーザー設定で更新したことを確認します
 - SSH 設定が [GitLab の手順](https://docs.gitlab.com/user/ssh/)に従ってセットアップされていることを確認します。鍵は `~/.ssh/` にあるはずで、パスワードなしで生成されているはずです。
-  - メインプロジェクトで `dbt deps` を実行するために、[このプロジェクト](https://gitlab.com/gitlab-data/data-tests)へのアクセス権も必要になります。
 - **注**： デフォルトのブラウザが chrome に設定されていることを確認します。組み込みの SSO ログインは chrome でのみ動作します
 - **注**： `/analytics` リポジトリがある場所のフォルダにいることを確認します。すべてを適切にインストールしていれば、`jump analytics` で `dbt` コマンドを正常に実行するために必要な場所に移動できます。
 - **注**： dbt を初めて実行する前に `make prepare-dbt` を実行します。これにより venv がインストールされていることが保証されます。
@@ -173,7 +172,7 @@ eval "$(pyenv init -)"
     ```
 
 - `dbt` コンテナを起動してその中のシェルからコマンドを実行するには、`make run-dbt` を使います。このコマンドは dbt の実行に必要な依存関係をインストールまたは更新します。
-- 依存関係の更新なしで `dbt` コンテナを起動するには、`make run-dbt-no-deps` を使います。このコマンドは、すでに dbt の依存関係がインストールされていることを前提とします。このコマンドを使う場合、いずれかの依存パッケージ（例: data-tests）に変更を加えると、それらの変更をリポジトリに反映させるために（シェル内から）`dbt deps` を実行するか、再度 `make run-dbt` を実行する必要があります。
+- 依存関係の更新なしで `dbt` コンテナを起動するには、`make run-dbt-no-deps` を使います。このコマンドは、すでに dbt の依存関係がインストールされていることを前提とします。このコマンドを使う場合、いずれかの依存パッケージに変更を加えると、それらの変更をリポジトリに反映させるために（シェル内から）`dbt deps` を実行するか、再度 `make run-dbt` を実行する必要があります。
 - これにより、ローカルの `profiles.yml` やリポジトリのファイルを含め、`dbt` の実行に必要なすべてが自動的にインポートされます
 - 現在のブランチのドキュメントを見るには、`make run-dbt-docs` を実行してから web ブラウザで `localhost:8081` にアクセスします。これには `profiles.yml` で `docs` プロファイルが設定されている必要があることに注意してください
 
@@ -380,7 +379,6 @@ jobs:
   "terminal.integrated.env.osx": {
   "SHELL":"/bin/zsh",
   "DBT_PROFILES_DIR": "../../../.dbt/",
-  "DATA_TEST_BRANCH":"main",
   "SNOWFLAKE_PROD_DATABASE":"PROD",
   "SNOWFLAKE_PREP_DATABASE":"PREP",
   "SNOWFLAKE_SNAPSHOT_DATABASE":"SNOWFLAKE",
@@ -998,7 +996,7 @@ seed ファイルは、そこに含まれる情報を所有する機能チーム
 
 タグは YAML ファイルか、任意のモデルの config 設定で追加できます。タグの使い方のいくつかの例については、[`dbt_project.yml`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/dbt_project.yml) ファイルを確認してください。[Trusted Data Framework](/handbook/enterprise-data/platform/dbt-guide/#tagging) のためにタグを追加する具体的な例は以下に示します。
 
-`analytics` および `data-tests` プロジェクト内では、すべてのタグに対する単一の信頼できる情報源（Single Source of Truth）を強制しています。私たちは、どのタグが使われているかを文書化するために [Valid Tags CSV](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/data/valid_tags.csv) を使います。マージリクエスト内では、すべての dbt CI ジョブに、この csv をプロジェクトで使われるすべてのタグと照合し、不一致があればジョブを失敗させる検証ステップがあります。将来的には、この csv ファイル内にタグに関するより多くのメタデータを含めることを目指しています。
+`analytics` プロジェクト内では、すべてのタグに対する単一の信頼できる情報源（Single Source of Truth）を強制しています。私たちは、どのタグが使われているかを文書化するために [Valid Tags CSV](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/data/valid_tags.csv) を使います。マージリクエスト内では、すべての dbt CI ジョブに、この csv をプロジェクトで使われるすべてのタグと照合し、不一致があればジョブを失敗させる検証ステップがあります。将来的には、この csv ファイル内にタグに関するより多くのメタデータを含めることを目指しています。
 
 どのレベルで適用されたタグも、いかなるテストにも適用されないことに注意してください。テストのタグは、`schema.yml` ファイル内のすべてのテストに対して明示的に適用する必要があります。
 
@@ -1141,11 +1139,11 @@ Trusted Data Framework の背後にある哲学のより深い掘り下げにつ
 1. 事前定義された期間にわたるテーブルの行数が、事前定義されたしきい値やリテラルと一致するかを判断する[行数テスト](/handbook/enterprise-data/platform/dbt-guide/#rowcount-tests)
 1. 上記のカテゴリに適合しない任意の有効な SQL である[カスタム SQL テスト](/handbook/enterprise-data/platform/dbt-guide/#custom-sql)
 
-私たちのテストは、主に 2 つの場所に格納されています。私たちの[メインプロジェクト](https://gitlab.com/gitlab-data/analytics)内の YAML ファイル、または [Data Tests](https://gitlab.com/gitlab-data/data-tests) プロジェクト内のいずれかです。
+私たちのテストは、すべて [analytics](https://gitlab.com/gitlab-data/analytics) プロジェクトに格納されています。
 
-スキーマテストと列値テストは通常メインプロジェクトにあります。これらは、表すモデルと同じディレクトリの `schema.yml` および `sources.yml` ファイル内にあります。
+スキーマテストと列値テストは通常、対象モデルと同じディレクトリの `schema.yml` および `sources.yml` ファイル内にあります。
 
-行数テストやその他のカスタム SQL テストは、常に [Data Tests](https://gitlab.com/gitlab-data/data-tests) プロジェクトにあります。これは GitLab 社内専用のプライベートプロジェクトです。
+行数テストやその他のカスタム SQL テストは、[`transform/snowflake-dbt/tests/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/tests) にあり、ビジネスドメイン別に整理されています。
 
 ##### タグ付け {#tagging}
 
@@ -1268,7 +1266,7 @@ WITH test AS (...)
 このテストは [dbt マクロ](https://docs.getdbt.com/docs/build/jinja-macros)として実装されています。これは、SQL を書く代わりに、ユーザーが単にマクロを呼び出すだけでテストを追加できることを意味します。これは [`source_rowcount`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.source_rowcount) マクロによって制御されます。
 
 ```sql
--- https://gitlab.com/gitlab-data/data-tests/-/blob/main/tests/sources/zuora/rowcount/zuora_subscription_source_rowcount_2019.sql
+-- https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/tests/sources/zuora/rowcount/zuora_subscription_source_rowcount_2019.sql
 {{ config({
     "tags": ["tdf","zuora"]
     })
@@ -1288,7 +1286,7 @@ WITH test AS (...)
 目的: 私たちは急成長中のビジネスであり、前日から読み込まれる新しい Subscription は常に最低 50 件、最大 200 件あるべきです。これは [`model_new_records_per_day`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.model_new_rows_per_day) マクロによって制御されます。
 
 ```sql
--- https://gitlab.com/gitlab-data/data-tests/-/blob/main/tests/sources/zuora/rowcount/zuora_subscription_source_model_new_records_per_day.sql
+-- https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/tests/sources/zuora/rowcount/zuora_subscription_source_model_new_records_per_day.sql
 {{ config({
     "tags": ["tdf","zuora"],
     "severity": "warn",
@@ -1331,52 +1329,16 @@ HAVING total_amount < 0
 
 #### マージリクエストのワークフロー {#merge-request-workflow}
 
-テストを追加または更新するときに考えるべきシナリオがいくつかあります。
+YAML ベースのテストもカスタム SQL テストも、すべて `analytics` リポジトリにあるため、作成する MR は常に 1 つだけです。
 
-1 つ目のシナリオは、私たちのメインプロジェクト内の YAML ファイルでテストを変更または追加することです。これは私たちの標準的な MR ワークフローに従い、何も違いはありません。通常どおり [CI ジョブ](/handbook/enterprise-data/platform/ci-jobs)を実行します。
-
-2 つ目のシナリオは、`analytics` プロジェクトの MR を介して更新または追加されるテーブルに対して、`data-tests` プロジェクト内に任意のテストやゴールデンデータレコードを追加することです。これは最も一般的なシナリオです。この場合、`data-tests` プロジェクトの MR でパイプラインを実行する必要はありません。`analytics` の MR の通常の dbt パイプラインを実行でき、唯一の変更は、`data-tests` プロジェクトのブランチ名を `DATA_TEST_BRANCH` 環境変数を介してジョブに渡す必要があることです。
-
-3 つ目のシナリオは、テストが `data-tests` プロジェクトに追加されるが、ゴールデンデータの CSV ファイルは更新も追加もされず、かつ `analytics` プロジェクトに対応する MR がない場合です。このシナリオでは、本番データに対してテストを実行する CI ジョブがいくつか表示されます。これは、軽微な変更（構文、タグなど）が動作することを確認するのに有用です。
-
-4 つ目のシナリオは、ゴールデンデータの CSV ファイルが追加または更新され、対応する `analytics` MR がない場合です。この場合、ゴールデンデータファイルはテーブルとしてデータベースに挿入されるため、本番に対してテストしたくありません。このシナリオでは、追加の CI ジョブが表示されます。ウェアハウスのクローンを作成するもの、`analytics` プロジェクトに格納された dbt モデルをクローンに対して実行するもの、テストをクローンに対して実行するものがあります。
-
-このフローチャートは、何をすべきかの大まかなガイドになるはずです。より詳細な手順については、プロジェクト内の関連 MR テンプレートの指示に従ってください。
-
-```mermaid
-graph TD
-  A[Do you want to add YAML or SQL tests?] -->|YAML| B[Open an Analytics MR <br/>and proceed as usual]
-  A -->|SQL| C[Open a Data Tests MR]
-  A -->|Both| D[Open an Analytics and Data Tests MR]
-
-
-  D --> E[Run dbt jobs as usual in analytics <br/>but provide the branch name of the <br/> Data Tests project as `DATA_TEST_BRANCH`]
-
-  C --> F[Are you updating or adding<br/> a Golden Data CSV?]
-
-  F -->|Yes| G[Run a clone - full or shallow - then run dbt jobs]
-  F -->|No| H[Run dbt jobs against production]
-```
-
-`data-tests` に MR があり、`analytics` にも 1 つある場合、`analytics` の [MR は `data-tests` MR の依存関係として設定](https://docs.gitlab.com/ee/user/project/merge_requests/dependencies.html)すべきです。これは、`analytics` MR が `data-tests` MR のマージ前にマージされなければならないことを意味します。
-
-#### data-tests プロジェクトで新しく導入された dbt テストの実行 {#running-the-newly-introduced-dbt-tests-in-the-data-tests-project}
-
-data-tests プロジェクトで実装したテストを、開発中に自分のマシンから実行するために従う手順:
-
-1. data-tests プロジェクトで作業しているリモートブランチに変更をプッシュします
-2. ローカルの `analytics` プロジェクトに移動し、`data-tests` のものと同じ名前で新しいブランチを作成し（`git checkout -b <branch_name>`）、`Makefile` を編集して `DATA_TEST_BRANCH` を `data-test` プロジェクトの自分のブランチ名に合わせます
-3. `analytics` プロジェクトから `make run-dbt` を実行します
-4. いくつかのログが表示されるはずで、そこには data-tests がインストールされたリビジョンも表示され、自分のブランチが見えるはずです
-5. 現在いる場所（`snowflake-dbt` ディレクトリのはずです）から、自分のモデルをテストするための対応するコマンドを実行します
+- **YAML テストの追加または変更**（`schema.yml` / `sources.yml`）: 標準の MR ワークフローに従い、通常どおり [CI ジョブ](/handbook/enterprise-data/platform/ci-jobs)を実行します。
+- **カスタム SQL テストの追加または変更**: 同じ `analytics` MR 内で、SQL ファイルを [`transform/snowflake-dbt/tests/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/tests) に追加します。標準の dbt CI ジョブを実行して検証します。
 
 #### 例 {#example-1}
 
-`zuora_revenue_revenue_contract_line_source` の行数テストを実行するには、次のコマンドを使えます。これは問題なく動作するはずです。
+`zuora_revenue_revenue_contract_line_source` の行数テストを実行するには、venv シェル内から次のコマンドを使います。
 
 `dbt --partial-parse test --models zuora_revenue_revenue_contract_line_source`
-
-> :warning:  data-tests プロジェクトの基礎となるテストに変更を加えるたびに、それらの変更をリモートにプッシュし、自分のブランチの最新の変更で dbt コンテナを起動するために、手順 3〜5 を再実行する必要があることに注意してください。
 
 ##### データ抽出（RAW データレイヤー） {#data-extraction-raw-data-layer}
 

@@ -2,11 +2,11 @@
 title: "API Platformチーム"
 description: "API Platformチームは、GitLab のコントリビューターが顧客向けに発見しやすく安定した API を効率的に構築・維持できるよう支援します"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/api/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
+translated_at: "2026-10-08T21:04:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-05T14:52:16+01:00"
+lastmod: "2026-10-08T16:39:44+01:00"
 ---
 
 ## チームのスコープ
@@ -59,35 +59,58 @@ API Platformチームは、4名のエンジニア（Staff 2名、Intermediate 2�
 
 ### Now（今）
 
-**フォーカス: Documentation - API 戦略と発見可能性、Platform Health** (FY27-Q2)
+**重点領域: ドキュメントと開発 - モジュール型機能のための単一 API モデル** (FY27-Q3)
 
-- [REST API DocsのProduction ReadinessおよびGAローンチ](https://gitlab.com/groups/gitlab-org/quality/-/work_items/402)
-- [Grapeを2.0.0から2.4.xにアップグレード](https://gitlab.com/groups/gitlab-org/quality/-/work_items/385)
-- [OpenAPI アノテーション - RESTエンドポイントティア](https://gitlab.com/groups/gitlab-org/quality/-/work_items/366)
+- [REST API ドキュメントの本番運用準備とパブリックベータ公開](https://gitlab.com/groups/gitlab-org/quality/-/work_items/402)
+- [REST API ドキュメントの一般提供: Markdown リファレンスの廃止](https://gitlab.com/groups/gitlab-org/quality/-/work_items/471)
+- [OpenAPI アノテーション - REST エンドポイントのティア](https://gitlab.com/groups/gitlab-org/quality/-/work_items/366)
+- [GitLab のすべてのモジュール型機能に共通する単一の API 定義モデルの確立](https://gitlab.com/groups/gitlab-org/quality/-/work_items/465)
+- [新しいモジュール型機能には標準で API 仕様を同梱](https://gitlab.com/groups/gitlab-org/quality/-/work_items/429)
+- [すべてのモジュール型機能の API で認証方法を明示](https://gitlab.com/groups/gitlab-org/quality/-/work_items/466)
 
-現在のプロジェクトの詳細については、[トップレベルエピック](https://gitlab.com/groups/gitlab-org/quality/-/epics/218)を参照してください。
+進行中、着手準備済み、完了済みの作業の全一覧については、[親エピック](https://gitlab.com/groups/gitlab-org/quality/-/work_items/200)を参照してください。
 
 ### Next（次）
 
-**フォーカス: Data-driven - 信頼と可視性の構築** (FY27-Q3)
+**重点領域: 廃止予定管理とデータ駆動 - GraphQL の品質とチーム別の API の可視性** (FY27-Q4)
 
-- GraphQLエンドポイントのライフサイクル管理ポリシーを確立
-- GraphQL API の観測性と監視機能の向上
-- RESTおよびGraphQL API の API 使用パターンと顧客ニーズへの可視性の構築
+- **GraphQL スキーマのライフサイクル**: GitLab 20.0 に先立ち、廃止予定のフィールドを予定どおり削除し、実験的機能を正式機能へ移行し、CI でスキーマの破壊的変更を阻止します。
+- **GraphQL の N+1 とクエリコスト**: 効率的なデータ読み込みを標準にし、マージ前に N+1 クエリを検出します。
+- **GraphQL スキーマの一貫性**: CI で新しく追加されたスキーマに lint を実行し、単一のエラーモデルを定義します。
+- **チーム別の API スコアカード**: 各ステージグループが所有する REST API と GraphQL API の品質を、グループごとに 1 つのビューで確認できるようにします。
+- [Scalar の upstream に GraphQL サポートを追加](https://gitlab.com/groups/gitlab-org/quality/-/work_items/439)
 
 ### Later（後で）
 
-**フォーカス: Development - デフォルトで API ファーストを有効化** (FY27-Q3以降)
+**重点領域: 開発 - GitLab コンポーネント全体で安全で一貫した API を実現** (FY28 以降)
 
-- RESTおよびGraphQL API の API 開発を効率的にするツールを作成
-- RESTおよびGraphQL API 間の同等性と一貫性のためのアーキテクチャ改善を探索
-- チームが開発から廃止予定までの API ニーズ全体をセルフサービスで対応できるようにする
+- [OpenAPI アノテーション - REST パラメーター](https://gitlab.com/groups/gitlab-org/quality/-/work_items/474)
+- [GitLab の全コンポーネントで API の破壊的変更を CI で阻止](https://gitlab.com/groups/gitlab-org/quality/-/work_items/432)
+- [GitLab API のコントラクトテストフレームワークを提供](https://gitlab.com/groups/gitlab-org/quality/-/work_items/434)
+- [Rails に到達する前のリクエスト検証により、事後対応の API セキュリティ作業を削減](https://gitlab.com/groups/gitlab-org/quality/-/work_items/430)
+- [共有の GitLab protobuf モノレポを所有し、提供](https://gitlab.com/groups/gitlab-org/quality/-/work_items/431)
+- [GitLab モノリスの REST API フレームワーク（Grape）を 3.2 から 4.0 にアップグレード](https://gitlab.com/groups/gitlab-org/quality/-/work_items/473)
+- [API ファースト開発の導入を促進](https://gitlab.com/groups/gitlab-org/quality/-/work_items/383)
+
+### 最近提供したもの {#recently-delivered}
+
+2026 年 5 月の前回のロードマップ更新以降、以下を提供しました。
+
+- [すべての Grape キーワードをサポート](https://gitlab.com/groups/gitlab-org/quality/-/work_items/321)
+- [REST API ドキュメントの社内ベータ公開](https://gitlab.com/groups/gitlab-org/quality/-/work_items/369)
+- [Redocly OpenAPI 3.0 仕様のエラーと警告を解消](https://gitlab.com/groups/gitlab-org/quality/-/work_items/363)
+- [Grape を 2.0.0 から 2.4.x にアップグレード](https://gitlab.com/groups/gitlab-org/quality/-/work_items/385)
+- [Canary 環境を壊す GraphQL フロントエンドおよびバックエンドの変更の検出を改善](https://gitlab.com/groups/gitlab-org/quality/-/work_items/436)
+- [REST Entity の公開範囲の拡大を防止](https://gitlab.com/groups/gitlab-org/-/work_items/20829)
+- [対話型リファレンスで複数の API 仕様を表示](https://gitlab.com/groups/gitlab-org/quality/-/work_items/433)
+- [GitLab モノリスの REST API フレームワーク（Grape）を 2.4.0 から 3.2.1 にアップグレード](https://gitlab.com/groups/gitlab-org/quality/-/work_items/438)
+- [公開 API リファレンスに Orbit と Artifact Registry の REST API を掲載](https://gitlab.com/groups/gitlab-org/quality/-/work_items/428)
 
 ### Keeping The Lights On (KTLO)
 
 計画された作業に加えて、API Platformチームは、セキュリティ脆弱性や重要なバグ修正など、API 表面領域全体の共有機能に影響する継続的なメンテナンスも担当します。
 
-## 私たちとの協働
+## 私たちとの協働 {#working-with-us}
 
 **チーム形成期間中:**
 

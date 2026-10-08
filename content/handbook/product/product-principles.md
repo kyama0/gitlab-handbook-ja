@@ -264,7 +264,7 @@ GitLab の Product Manager は、新しい設定を追加するかどうかと�
 
 [![xkcd.com](https://imgs.xkcd.com/comics/squirrel_plan.png)](https://xkcd.com/1503/)
 
-#### これが計画に与える影響
+#### これが計画に与える影響 {#how-this-impacts-planning}
 
 ここ GitLab では、私たちは[野心的](#be-ambitious)な企業であり、これは私たちがリリースごとに大きなことを目指すことを意味します。チャンスを取り、野心的に計画するという現実は、私たちがリリースごとに試したかったすべてを常に届けられるとは限らないことを意味します。そして私たちはこれを良いことだと信じています。私たちは自分自身に挑戦することから尻込みしたくないし、常に切迫感を保ちたいと考えており、より多くを目指すことがそれを助けます。[ベロシティの重要性](/handbook/engineering/development/principles/#velocity)も参照してください。
 
