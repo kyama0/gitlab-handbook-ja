@@ -1,10 +1,10 @@
 ---
-title: "Create:Source Code Hardening & Modernization チーム"
+title: "Create:Source Code Hardening and Modernization チーム"
 description: "Source Code の構造的なセキュリティとフロントエンドの問題に対処し、成果を機能担当チームに引き渡した後に解散する一時的なチーム。"
 upstream_path: /handbook/engineering/devops/create/source-code/hardening-and-modernization/
-upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
-lastmod: "2026-09-28T11:04:43+01:00"
-translated_at: "2026-09-30T21:07:20+00:00"
+upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
+lastmod: "2026-10-05T12:43:57+02:00"
+translated_at: "2026-10-09T21:12:45+00:00"
 translator: codex
 stale: false
 ---
@@ -29,6 +29,12 @@ Source Code は GitLab のコードベースで最も古い部分の 1 つで、
 
 チームの活動期間は **2026-09-21 → 2027-09-10**（マイルストーン 20.4 の終了時）で、6 ヶ月後（19.10）に継続するかどうかをレビューします。独自の担当領域を維持しないため、構造的な問題を修正して引き渡した後は、担当するものは残りません。
 
+### チームメンバー {#team-members}
+
+{{< team-by-manager-role role="Engineering Manager(.*)Create:Source Code Hardening and Modernization" team="Create:Source Code Hardening and Modernization" >}}
+
+### 復帰先チーム {#return-teams}
+
 | 氏名 | 役職 | 復帰先 |
 |---|---|---|
 | Vladimir Shushlin | Engineering Manager | Plan |
@@ -36,6 +42,10 @@ Source Code は GitLab のコードベースで最も古い部分の 1 つで、
 | Emma Park | Backend Engineer | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) |
 | Chaoyue Zhao | Frontend Engineer | Create:Source Code Investigation |
 | Anastasia Khomchenko | Senior Frontend Engineer | Plan:Portfolio Planning |
+
+## ステーブルカウンターパート {#stable-counterparts}
+
+{{< engineering/stable-counterparts manager-role="Engineering Manager(.*)Create:Source Code Hardening and Modernization" role="(Product Manager|Product Designer|Security Engineer|Technical Writer)(.*)Create:Source Code(,|$)|Director of Engineering(.*), Plan$" >}}
 
 ## 成功の測定方法 {#how-we-measure-success}
 

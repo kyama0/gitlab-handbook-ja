@@ -11194,19 +11194,19 @@
     },
     "content/handbook/engineering/devops/_index.md": {
       "path": "content/handbook/engineering/devops/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "translated_at": "2026-10-09T21:11:50.063787+00:00",
       "model": "codex",
-      "input_hash": "551cf1c17d08b21db0606e76412a351b6bea9c8a055984c14a7d72f5345f1a5d",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "afa4af6e1fabb876790177be10ff9ce3b34d6af0001de5ffc9bcdf262ab3fccc",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00"
     },
     "content/handbook/engineering/devops/create/_index.md": {
       "path": "content/handbook/engineering/devops/create/_index.md",
-      "upstream_sha": "06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9",
-      "translated_at": "2026-09-30T21:07:20+00:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "translated_at": "2026-10-09T21:12:45+00:00",
       "model": "codex",
-      "input_hash": "2ed02ac13b08d1236c2ff5611502818dd4ef4e95385450c4d843f411ea7b2b1f",
-      "upstream_committed_at": "2026-09-28T11:04:43+01:00"
+      "input_hash": "7e17b49c1270806a8f69906a31e0983855af459cff58f218ce274c36dd510620",
+      "upstream_committed_at": "2026-10-05T12:43:57+02:00"
     },
     "content/handbook/engineering/devops/create/code-review/_index.md": {
       "path": "content/handbook/engineering/devops/create/code-review/_index.md",
@@ -11418,11 +11418,11 @@
     },
     "content/handbook/engineering/devops/create/source-code/_index.md": {
       "path": "content/handbook/engineering/devops/create/source-code/_index.md",
-      "upstream_sha": "06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9",
-      "translated_at": "2026-09-30T21:07:20+00:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "translated_at": "2026-10-09T21:12:45+00:00",
       "model": "codex",
-      "input_hash": "df864c0883d8858eb83e5409e06b7038368319209688aefbc5625e5d6e940644",
-      "upstream_committed_at": "2026-09-28T11:04:43+01:00"
+      "input_hash": "f2e09913384406ace51a1e08f04802acf797387437cc4a517f586da94bd10e84",
+      "upstream_committed_at": "2026-10-05T12:43:57+02:00"
     },
     "content/handbook/engineering/devops/create/source-code/ai-prompts.md": {
       "path": "content/handbook/engineering/devops/create/source-code/ai-prompts.md",
@@ -11538,11 +11538,11 @@
     },
     "content/handbook/engineering/devops/plan/_index.md": {
       "path": "content/handbook/engineering/devops/plan/_index.md",
-      "upstream_sha": "ddd8c35a844608b54fcc88bfd8bbe61807f4c820",
-      "translated_at": "2026-09-22T21:08:10+00:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "translated_at": "2026-10-09T21:11:50.063787+00:00",
       "model": "codex",
-      "input_hash": "526cc93797bfd0a6ff5a430b1fb2834a78a1ced27e91ac9db04847d814b4d920",
-      "upstream_committed_at": "2026-09-22T19:31:48+03:00"
+      "input_hash": "67e648e92a5d6117aba28d643a555e1fe738dc62a9ac6c98f933ccfd471de710",
+      "upstream_committed_at": "2026-10-06T15:47:25+03:00"
     },
     "content/handbook/engineering/devops/plan/internship.md": {
       "path": "content/handbook/engineering/devops/plan/internship.md",
@@ -11554,11 +11554,11 @@
     },
     "content/handbook/engineering/devops/plan/planner-intelligence.md": {
       "path": "content/handbook/engineering/devops/plan/planner-intelligence.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T20:38:00+09:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "translated_at": "2026-10-09T21:11:50.063787+00:00",
       "model": "codex",
-      "input_hash": "955667442e8563cebe19065031bf005d496f6b0c916c29ee31912060d689bba8",
-      "upstream_committed_at": "2026-09-04T13:17:59+02:00"
+      "input_hash": "88df8a8cf97057d400943cc1580b099720b88c2f7c6ef98af6e794d1ec92475b",
+      "upstream_committed_at": "2026-09-28T11:04:43+01:00"
     },
     "content/handbook/engineering/devops/plan/portfolio-planning/_index.md": {
       "path": "content/handbook/engineering/devops/plan/portfolio-planning/_index.md",
@@ -11586,11 +11586,11 @@
     },
     "content/handbook/engineering/devops/plan/work-items.md": {
       "path": "content/handbook/engineering/devops/plan/work-items.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T20:38:00+09:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "translated_at": "2026-10-09T21:10:17+00:00",
       "model": "codex",
-      "input_hash": "aa9909218ad925b2b789273b60550b4f8fd66b5cd826ceeda1defa37248c9db9",
-      "upstream_committed_at": "2026-09-04T13:17:59+02:00"
+      "input_hash": "0cc58591f999919466447f6226c2b779128f31d556c5ddab1a0123149d98d75e",
+      "upstream_committed_at": "2026-10-06T15:47:25+03:00"
     },
     "content/handbook/engineering/devops/plan/working-groups/_index.md": {
       "path": "content/handbook/engineering/devops/plan/working-groups/_index.md",
@@ -30298,11 +30298,11 @@
     },
     "content/handbook/product/groups/work-items.md": {
       "path": "content/handbook/product/groups/work-items.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T07:12:58+09:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "translated_at": "2026-10-09T21:10:17+00:00",
       "model": "codex",
-      "input_hash": "9ad0249ef98a6a4a559b49532b215c3d5d98dd1bec5808c9e09afd9ee61056c7",
-      "upstream_committed_at": "2026-08-14T14:39:01+02:00"
+      "input_hash": "e6b37b7737eb111d67af914ea943de4c7d85614e9875f0b26208b2920180880e",
+      "upstream_committed_at": "2026-10-06T15:47:25+03:00"
     },
     "content/handbook/product/groups/verify.md": {
       "path": "content/handbook/product/groups/verify.md",
@@ -37658,19 +37658,19 @@
     },
     "content/handbook/engineering/devops/plan/spec-driven-development/_index.md": {
       "path": "content/handbook/engineering/devops/plan/spec-driven-development/_index.md",
-      "upstream_sha": "ddd8c35a844608b54fcc88bfd8bbe61807f4c820",
-      "upstream_committed_at": "2026-09-22T19:31:48+03:00",
-      "translated_at": "2026-09-22T21:16:35+00:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "upstream_committed_at": "2026-10-06T15:47:25+03:00",
+      "translated_at": "2026-10-09T21:10:17+00:00",
       "model": "codex",
-      "input_hash": "32bcb71aef1eb582aec31ae942168256b7b69a6ba4205e1b115d0fd1b019cfc8"
+      "input_hash": "554bebc4ba346d967319a3cfc9cc020c99e89ef07fc8956d851ce740a2062dcd"
     },
     "content/handbook/engineering/devops/create/source-code/hardening-and-modernization/_index.md": {
       "path": "content/handbook/engineering/devops/create/source-code/hardening-and-modernization/_index.md",
-      "upstream_sha": "06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9",
-      "upstream_committed_at": "2026-09-28T11:04:43+01:00",
-      "translated_at": "2026-09-30T21:07:20+00:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "upstream_committed_at": "2026-10-05T12:43:57+02:00",
+      "translated_at": "2026-10-09T21:12:45+00:00",
       "model": "codex",
-      "input_hash": "340922e4d3d0095bedf05c7c54a31915e6db3fd27cf617cead724288722fc99c"
+      "input_hash": "d97eb72e804ade3995478d4ad6b0c3bbc9c48c7fe2114006bcc9a30ad3b7b873"
     },
     "content/handbook/engineering/data-engineering/pre-mortems.md": {
       "path": "content/handbook/engineering/data-engineering/pre-mortems.md",
@@ -40146,11 +40146,11 @@
     },
     "content/handbook/engineering/devops/create/source-code/repository-services/_index.md": {
       "path": "content/handbook/engineering/devops/create/source-code/repository-services/_index.md",
-      "upstream_sha": "06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9",
-      "upstream_committed_at": "2026-09-28T11:04:43+01:00",
-      "translated_at": "2026-09-30T21:07:20+00:00",
+      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
+      "upstream_committed_at": "2026-10-05T12:43:57+02:00",
+      "translated_at": "2026-10-09T21:12:45+00:00",
       "model": "codex",
-      "input_hash": "aa1349ad228ad572b56cfc51c30e13d347e7921075646bd9b9629260e47aa1a6"
+      "input_hash": "651036f12652a932e52a580ddddb7fbad345fde57c40453648773ff81954c2f0"
     },
     "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/008_openapi_specification_for_modular_http_apis.md": {
       "path": "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/008_openapi_specification_for_modular_http_apis.md",

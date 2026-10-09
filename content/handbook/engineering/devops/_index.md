@@ -1,11 +1,11 @@
 ---
 title: DevOpsエンジニアリング
 upstream_path: /handbook/engineering/devops/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "48abec5939783dec7dd722f4427e0eba53023f6f"
+translated_at: "2026-10-09T21:11:50.063787+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-01T08:11:54+02:00"
 ---
 
 ## ビジョン
@@ -95,7 +95,7 @@ GitLabへようこそ！あなたが私たちに加わることを楽しみに�
 始めるためのいくつかの厳選されたリソースは以下のとおりです:
 
 - [エンジニアとして参加する](/handbook/engineering/workflow/developer-onboarding/)
-- [エンジニアリングマネージャーとして参加する](/handbook/engineering/workflow/development-onboarding/manager/)
+- [Engineering Manager として参加する](/handbook/engineering/workflow/development-onboarding/manager/)
 - [Core DevOps GitLabプロジェクト](https://gitlab.com/gitlab-org/core-devops)
 - [Core DevOps Google Calendar](https://calendar.google.com/calendar/u/0?cid=Y19jYjBhZmU1Y2Y4MTZiYmI3Mzk4OTM0MTQ3MGIwMzFkZDY3NjNjYWQ3MTI3MGQ1MjllYTA3YjM3NzAyMGRjYzdkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 
@@ -141,9 +141,9 @@ Core DevOpsは、E-Groupおよび[Operating Model](https://internal.gitlab.com/h
 
 ### インシデント管理
 
-1. [エンジニアリングマネージャーとStaff+](/handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding/#incident-manager-participants)は、Tier 1（製品全体）インシデントリード（インシデントマネージャーとも呼ばれる）として直接的にインシデント管理に貢献します。
+1. [Engineering Manager とStaff+](/handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding/#incident-manager-participants)は、Tier 1（製品全体）インシデントリード（インシデントマネージャーとも呼ばれる）として直接的にインシデント管理に貢献します。
 1. 適格性基準を満たすすべてのエンジニアは、Core DevOps [Tier 2オンコールプロセス](/handbook/engineering/devops/oncall/)を通じてインシデント管理に貢献します。
-1. 一部のエンジニアリングマネージャーは、Core DevOps [Tier 2オンコールプロセス](/handbook/engineering/devops/oncall/)の[ローテーションリーダー](/handbook/engineering/devops/oncall/rotation-leader/)です。
+1. 一部の Engineering Manager は、Core DevOps [Tier 2オンコールプロセス](/handbook/engineering/devops/oncall/)の[ローテーションリーダー](/handbook/engineering/devops/oncall/rotation-leader/)です。
 
 私たちは、個人が[複数のローテーション](/handbook/engineering/devops/oncall/coverage-and-scheduling/#multiple-rotations)に参加することを期待**していません**。
 
@@ -153,7 +153,7 @@ Core DevOpsは、E-Groupおよび[Operating Model](https://internal.gitlab.com/h
 
 ### 横断的なコラボレーション
 
-別のチームの製品ステージのコードに影響を与えるIssueは、作業が開始される前に関連するProduct、UX、エンジニアリングマネージャーと協調的にアプローチし、そのステージを担当するエンジニアによってレビューされる必要があります。
+別のチームの製品ステージのコードに影響を与えるIssueは、作業が開始される前に関連するProduct、UX、Engineering Manager と協調的にアプローチし、そのステージを担当するエンジニアによってレビューされる必要があります。
 
 これは、コードベースのその領域を担当するチームが、変更の影響を認識し、ステージのロードマップを満たす方法でアーキテクチャ、保守性、アプローチに影響を与えることができるようにするためです。
 
@@ -168,7 +168,7 @@ Core DevOpsは、E-Groupおよび[Operating Model](https://internal.gitlab.com/h
 #### セキュリティ脆弱性の処理
 
 1. 懸念のある依存関係（例: gems、libs、ベースイメージなど）を導入または消費する開発グループは、依存関係に対して検出された脆弱性を解決する責任があります。
-2. ベースイメージを提供するビジネス選択のベンダー（例: RHELのUBI8）の場合、公式アップストリームリリースの一部になる前にパッチを待つか、実行可能な解決策として偏差リクエスト（DR）をログに記録する必要があります。Threat Managementチームが開発した自動化である[VulnMapper](https://gitlab.com/gitlab-com/gl-security/product-security/vulnerability-management/vulnerability-management-internal/vulnmapper/-/tree/main)は、大部分のベンダー依存関係DRを作成できますが、DRを手動でレポートする必要があるケースもあります。
+2. ベースイメージを提供するビジネス選択のベンダー（例: RHELのUBI8）の場合、ベンダーのパッチを待つか、実行可能な解決策として偏差リクエスト（DR）をログに記録する必要があります。Threat Managementチームが開発した自動化である[VulnMapper](https://gitlab.com/gitlab-com/gl-security/product-security/vulnerability-management/vulnerability-management-internal/vulnmapper/-/tree/main)は、大部分のベンダー依存関係DRを作成できますが、DRを手動でレポートする必要があるケースもあります。
 3. 割り当てられた開発グループは、最初の割り当てが不正確だった場合に、[共有責任Issue](/handbook/product-development/how-we-work/issue-triage/#shared-responsibility-issues)および/または[共有責任機能](/handbook/product/categories/#shared-responsibility-functionality)のプロセスに従って、Issueをリダイレクトできます。
 
 #### 共有サービスとコンポーネントの所有権
@@ -180,21 +180,21 @@ GitLabアプリケーションは、PostgreSQLデータベース、Redis、Sidek
 特定の共有サービスとコンポーネントに最適なものを合理化するために、柔軟性を最大化するためにいくつかの利用可能なモデルから選択できます。
 
 1. 特定のチームでの集中型
-    1. 単一のグループが、新機能リクエスト、バグ修正、技術的負債を含む特定の共有サービスのバックログを所有しています。対応するProduct Managerがいる場合といない場合があります。
-    1. 単一のグループは特定のチームを意味し、つまりエンジニアリングマネージャーがおり、すべてのドメインオーナーの個人がこのチームに所属しています。DRIはエンジニアリングマネージャーです。
+    1. 単一のグループが、新機能リクエスト、バグ修正、技術的負債を含む特定の共有サービスのバックログを所有しています。対応する Product Manager がいる場合といない場合があります。
+    1. 単一のグループは特定のチームを意味し、つまり Engineering Manager がおり、すべてのドメインオーナーの個人がこのチームに所属しています。DRIは Engineering Manager です。
     1. この単一のグループは、バックログの整理と計画で密接かつ定期的にコラボレーションすることが期待されます。
     1. このモデルはProduct Managementの対応者からの合意が必要な場合があります。
     1. このモデルは、活発な開発を経験するサブジェクトドメインに適合する可能性があります。
 1. バーチャルチームでの集中型
-    1. 単一のグループが、新機能リクエスト、バグ修正、技術的負債を含む特定の共有サービスのバックログを所有しています。対応するProduct Managerがいる場合といない場合があります。
-    1. 単一のグループはバーチャルチームを意味し、つまり、メンテナーまたは対象分野の専門家など、さまざまなエンジニアリングチームからのエンジニアで構成されています。通常、このバーチャルチームのエンジニアリングマネージャーはいません。DRIは必ずしもエンジニアリングマネージャーではない、グループの任命された人です。
+    1. 単一のグループが、新機能リクエスト、バグ修正、技術的負債を含む特定の共有サービスのバックログを所有しています。対応する Product Manager がいる場合といない場合があります。
+    1. 単一のグループはバーチャルチームを意味し、つまり、メンテナーまたは対象分野の専門家など、さまざまなエンジニアリングチームからのエンジニアで構成されています。通常、このバーチャルチームの Engineering Manager はいません。DRIは必ずしも Engineering Manager ではない、グループの任命された人です。
     1. この単一のグループは、バックログの精緻化と計画で密接かつ定期的にコラボレーションすることが期待されます。
     1. このモデルは、メンテナンスモードのサブジェクトドメインに適合する可能性があります。
 1. 集合体（Collectives）
     1. 集合体は、共有された関心または責任を中心に自発的に集まる既存のチームの個人で構成されますが、ワーキンググループとは異なり、永続的に存在することがあります。共有された関心は、特定のテクノロジーまたはシステムである可能性があります。集合体のメンバーは、彼らが統治するサブジェクトを弱く所有、改善、または別の方法で操縦するための集団的責任を感じます。
     1. これはバーチャルチームのより弱い形ですが、完全に分散化されたモデルよりも構造を導入します。サブジェクトが横断的な影響と広い範囲を持ち、特定のチームに明確に割り当てることができない場合に、何らかの形式の所有権が望ましい場合に適切である可能性があります。
-    1. 集合体にはプロダクトマネージャーやエンジニアリングマネージャーがおらず、完全に自治されています。
-    1. 集合体のメンバーは定期的に同期し、共有された関心について互いに情報を提供し合います。問題領域は集合体で特定され、形式化されますが、集合体のバックログにログインされません。代わりに、問題を解決する必要が最も大きいチームにタスクを提出するべきDRIが割り当てられます。これは、作業が公正に分配され、優先順位を競合する2つのバックログがないことを確認するためです。
+    1. 集合体には Product Manager や Engineering Manager がおらず、完全に自治されています。
+    1. 集合体のメンバーは定期的に同期し、共有された関心について互いに情報を提供し合います。問題領域は集合体で特定され、形式化されますが、集合体のバックログには登録しません。代わりに、問題を解決する必要が最も大きいチームにタスクを提出するべきDRIが割り当てられます。これは、作業が公正に分配され、優先順位を競合する2つのバックログがないことを確認するためです。
     1. 集合体は、製品とエンジニアリングのさまざまな領域からの多様な個人で構成される場合に最適に機能します。情報が集合体のチームから最初に交換され、その後、個人によって特定のチームに戻される、知識共有ハブとして二重に機能します。
 1. 分散化
     1. 共有サービスの特定の機能を実装するか、特定の機能を利用するチームは、ローカル開発環境から本番デプロイメント、デプロイメント後の継続的なメンテナンスまで、その変更について責任を負います。共有サービスの一部または全体を所有する開発全体の単一のDRIはいません。
@@ -311,7 +311,7 @@ Remind GitLab team members in Slack to update the status of items they are the D
 | 認証および認可製品領域    | アプリケーションの複数の領域に触れる    | [ドキュメント](/handbook/engineering/development/sec/security-platform/authorization/#code-review)            |
 | Compliance製品領域 | 法律、セキュリティ、またはコンプライアンスの結果を引き起こす可能性がある | [コードレビュードキュメント](/handbook/engineering/development/sec/security-governance/compliance/#code-review)                     |
 | Workspace製品領域    | アプリケーションの複数の領域に触れる    | [ドキュメント](/handbook/engineering/architecture/design-documents/workspaces/)                                   |
-| [特定のフルフィルメント製品領域](/handbook/engineering/development/fulfillment/#revenue-impacting-changes) | 収益に影響を与える可能性がある |                                                                                                                       |
+| [特定の収益化製品領域](/handbook/engineering/development/monetization/#revenue-impacting-changes) | 収益に影響を与える可能性がある |                                                                                                                       |
 | ランタイム言語の更新 | 複数のサービスへの影響 | [Rubyアップグレードガイドライン](https://docs.gitlab.com/ee/development/ruby_upgrade.html#ruby-upgrade-guidelines)           |
 | アプリケーションフレームワークの更新 | 複数のサービスへの影響 | [Railsアップグレードガイドライン](https://docs.gitlab.com/ee/development/rails_update.html)                                  |
 | ナビゲーション | アプリケーション全体への影響 | [ナビゲーションに影響する変更を提案する](/handbook/product/ux/navigation)                  |
