@@ -1,11 +1,11 @@
 ---
 title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
-upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
-translated_at: "2026-09-22T21:08:10+00:00"
+upstream_sha: "48abec5939783dec7dd722f4427e0eba53023f6f"
+translated_at: "2026-10-09T21:11:50.063787+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-22T19:31:48+03:00"
+lastmod: "2026-10-06T15:47:25+03:00"
 ---
 
 Plan チーム:
@@ -16,13 +16,13 @@ Plan チーム:
 - [Plan:Planner Intelligence チーム](/handbook/engineering/devops/plan/planner-intelligence/)
 - [Plan:Spec-Driven Development チーム](/handbook/engineering/devops/plan/spec-driven-development/)
 
-このチームの責務は [Plan ステージ](/handbook/product/categories/#plan-stage) によって定義されています。具体的には、Issue、ボード、マイルストーン、Todo リスト、Issue リストとフィルタリング、ロードマップ、タイムトラッキング、要件管理、通知、バリューストリーム分析（VSA）、Wiki、Pages など、GitLab の機能について取り組んでいます。
+このチームの責務は [Plan ステージ](/handbook/product/categories/#plan-stage)で説明されています。具体的には、Issue、サービスデスク、ボード、マイルストーン、Todo リスト、Issue リストとフィルタリング、ロードマップ、タイムトラッキング、要件管理、通知、作業計画と仕様駆動開発、Wiki、Pages など、GitLab の機能に取り組みます。
 
 - 質問があります。誰に聞けばいいですか？
 
-GitLab の Issue では、まず [対応する Plan ステージグループ](/handbook/product/categories/#plan-stage) のプロダクトマネージャーを @ メンションすることから始めてください。GitLab チームメンバーは [#s_plan](https://gitlab.slack.com/messages/C72HPNV97) も利用できます。
+GitLab の Issue では、まず [対応する Plan ステージグループ](/handbook/product/categories/#plan-stage) の Product Manager を @ メンションすることから始めてください。GitLab チームメンバーは [#s_plan](https://gitlab.slack.com/messages/C72HPNV97) も利用できます。
 
-UX に関する質問は、Plan ステージのプロダクトデザイナーを @ メンションしてください。Plan:Portfolio Planning は [Nick Brandt](https://gitlab.com/nickbrandt) です。Plan:Planner Intelligence はデザイナーを持たないグループの[プロセス](/handbook/product/product-processes/)に従ってください。
+UX に関する質問は、Plan ステージの全グループの Product Design 窓口である [Nick Brandt](https://gitlab.com/nickbrandt)または [Sunjung Park](https://gitlab.com/sunjungp)を @ メンションしてください。
 
 ### 私たちの働き方
 
@@ -76,7 +76,7 @@ Issue が `> 3 ウェイト` の場合は、エピックに昇格させ（クイ
 このアプローチにはいくつかのメリットがあります:
 
 1. **単一情報源（SSOT）**： 設計ドキュメントはイニシアチブに関連するすべての重要な情報の中心的な場所となり、様々な場所にある意思決定を検索する時間を削減します。
-2. **可視性の向上**： 設計ドキュメントを作成することで、[ワークアイテムフレームワーク](../../architecture/design-documents/work_items/)、[設定可能なワークアイテムタイプ](../../architecture/design-documents/configurable_work_item_types/)、[カスタムフィールド](../../architecture/design-documents/work_items_custom_fields/)、[カスタムステータス](../../architecture/design-documents/work_items_custom_status/)、[GLQL](../../architecture/design-documents/glql/)、フロントエンド主導のビューなど、Plan ステージで行われた作業の認知度を高めます。
+2. **可視性の向上**： 設計ドキュメントを作成することで、[ワークアイテムフレームワーク](../../architecture/design-documents/work_items/)、[仕様駆動開発](../../architecture/design-documents/spec_driven_development/)、[設定可能なワークアイテムタイプ](../../architecture/design-documents/configurable_work_item_types/)、[カスタムフィールド](../../architecture/design-documents/work_items_custom_fields/)、[カスタムステータス](../../architecture/design-documents/work_items_custom_status/)、[GLQL](../../architecture/design-documents/glql/)、フロントエンド主導のビューなど、Plan ステージで行われた作業の認知度を高めます。
 3. **発見可能性**： 設計ドキュメントは[公開ハンドブックを通じて](../../architecture/design-documents/)簡単にアクセスでき、エンジニアリングのベストプラクティスに沿っています。
 4. **協働的な意思決定**： [変更と議論はマージリクエストを通じて行われます](../../architecture/workflow/#why-are-design-documents-tracked-in-merge-requests)。これにより、関係するすべてのチームメンバーに可視性が確保されます。
 5. **包括的なエントリポイント**： 設計ドキュメントはイニシアチブの主要なエントリポイントとして機能し、以下が含まれます:
@@ -107,13 +107,13 @@ GitLab のプロダクト開発において、プロダクトは **何を** お�
 
 プロダクトロードマップは、チームが4〜6四半期のタイムラインで達成しようとすることを概説します。Go-to-Market 戦略との整合性を確保し、顧客への確実なコミットメントを可能にするために、組織全体で共有されます。
 
-プロダクトマネージャーによる Plan プロダクトロードマップへの変更は、影響を受けるグループのエンジニアリングマネージャーによってレビューおよび承認されます。これは少なくとも月に1回行われ、[Wiki ページ](https://gitlab.com/gitlab-org/plan-stage/plan-engineering/-/wikis/Plan-Roadmap-Signoffs) に記録されます。
+Product Manager による Plan プロダクトロードマップへの変更は、影響を受けるグループの Engineering Manager によってレビューおよび承認されます。これは少なくとも月に1回行われ、[Wiki ページ](https://gitlab.com/gitlab-org/plan-stage/plan-engineering/-/wikis/Plan-Roadmap-Signoffs) に記録されます。
 
 ロードマッププランニング中にレビューされるほとんどの項目は、エンジニアリングからの詳細な技術調査がまだ行われていません。この解像度でのプランニングは、思慮深くあることを意図しているものの、完璧である必要はありません。速度は[私たちの優先事項](/handbook/engineering/development/principles/#velocity) であり続けます。
 
 #### ロードマップのレビュー
 
-レビューを行うことで、エンジニアリングマネージャーはロードマップが達成可能かどうかを確認し、速度を最大化するための効果的なシーケンスを確保するという重要な役割を担います。思慮深いレビューをガイドするいくつかのベストプラクティスを以下に示します:
+レビューを行うことで、Engineering Manager はロードマップが達成可能かどうかを確認し、速度を最大化するための効果的なシーケンスを確保するという重要な役割を担います。思慮深いレビューをガイドするいくつかのベストプラクティスを以下に示します:
 
 - 達成可能性の評価: チームの現在のキャパシティ、スキル、依存関係を考慮した場合、タイムラインは現実的ですか？
 - 技術的準備の考慮: ロードマップはスパイクや調査などの必要な技術的準備のための時間を確保していますか？
@@ -142,7 +142,7 @@ graph TD;
 
 ### ロードマップの実行
 
-すべてのロードマップのコミットメントには、その成果に対して直接責任を負う個人（DRI）がいます。これは通常、スコープの明確化、依存関係の調整、進捗のコミュニケーションなどのプロジェクト管理活動をリードする [Tech Lead](/handbook/engineering/careers/ic-leadership/tech-lead/#the-tech-lead-role) です。グループ内のエンジニアが Tech Lead の役割を担うキャパシティを持たない場合、エンジニアリングマネージャー（EM）が代わりに担当することがあります。いずれの場合も、EM はロードマップ全体の実行とクロスチームの調整に最終的な責任を負います。
+すべてのロードマップのコミットメントには、その成果に対して直接責任を負う個人（DRI）がいます。これは通常、スコープの明確化、依存関係の調整、進捗のコミュニケーションなどのプロジェクト管理活動をリードする [Tech Lead](/handbook/engineering/careers/ic-leadership/tech-lead/#the-tech-lead-role) です。グループ内のエンジニアが Tech Lead の役割を担うキャパシティを持たない場合、Engineering Manager（EM）が代わりに担当することがあります。いずれの場合も、EM はロードマップ全体の実行とクロスチームの調整に最終的な責任を負います。
 
 プロジェクトマネージャーはスコープを明確にし、依存する作業を特定し、ワークストリームの DRI を任命し、リスクとブロッカーが優先されることを確保します。
 
@@ -163,7 +163,7 @@ Plan Engineering は、顧客にリリースする前に定期的に新機能を
 
 ##### エンドオブラインテスト
 
-エンドオブライン（EOL）テストは、顧客へのリリース前の最終ステップです。完成したプロダクトはすべての GitLab チームメンバーに提供され、通常は `gitlab-com` および `gitlab-org` グループに対して有効化されます。これにはフィードバック Issue を使った内部フィードバックの収集が伴います。このテスト期間の最低期間はエンジニアリングマネージャーが決定します。
+エンドオブライン（EOL）テストは、顧客へのリリース前の最終ステップです。完成したプロダクトはすべての GitLab チームメンバーに提供され、通常は `gitlab-com` および `gitlab-org` グループに対して有効化されます。これにはフィードバック Issue を使った内部フィードバックの収集が伴います。このテスト期間の最低期間は Engineering Manager が決定します。
 
 この時点では、重大な正当性がなく、テスト期間を再スタートしない限り、新しいスコープは受け付けられません。テスト中に特定された欠陥とフィット＆フィニッシュの問題のみが対応されます。
 
@@ -191,7 +191,7 @@ Plan Engineering は、顧客にリリースする前に定期的に新機能を
 
 すべてのチームメンバーは顧客コールへの参加を歓迎されており、ただ聞いてコンテキストを得るだけでも参加が推奨されます。
 
-今後のコールがカレンダーに表示されるようにするには、Plan 顧客との会話カレンダーを購読してください。プロダクトマネージャーは今後の顧客インタビューをこのカレンダーに追加するので、どのコールにもシャドウとして参加できます。
+今後のコールがカレンダーに表示されるようにするには、Plan 顧客との会話カレンダーを購読してください。Product Manager は今後の顧客インタビューをこのカレンダーに追加するので、どのコールにもシャドウとして参加できます。
 
 1. GCal の左サイドバーで「その他のカレンダー」の横にある + をクリックする
 1. 「カレンダーを購読」を選択する
@@ -219,7 +219,7 @@ UX リサーチコールは、バイアスを軽減し、ユーザーニーズ�
 
 私たちは継続的な Kanban 方式で作業していますが、Issue やエピックがマイルストーンの期限までに完了するかどうかを報告し、伝達できるようにしたいと思っています。ステータスの洞察と明確さを提供するために、優先 Issue に [Issue/エピックヘルスステータス](https://docs.gitlab.com/ee/user/project/issues/index.html#health-status) を活用します。
 
-### ヘルスステータスを正確に保つ
+### ヘルスステータスを正確に保つ {#keeping-health-status-accurate}
 
 マイルストーンの開始時に、Deliverable Issue は自動的に「On Track」に更新されます。マイルストーンが進むにつれて、担当者はリスクや懸念を迅速に表面化させ、Issue を「On Track」に戻すためのコラボレーションを開始するために、必要に応じてヘルスステータスを更新する必要があります。
 
@@ -235,48 +235,6 @@ UX リサーチコールは、バイアスを軽減し、ユーザーニーズ�
 
 いかなる項目のヘルスステータスを「Needs Attention」または「At Risk」に変更することも、否定的な行動でも、不安や懸念の原因でもないことを、文書化して伝達することが重要だと感じています。リスクを早期に提起することで、チームがより迅速に問題に対応して解決できるようになり、奨励されるべきことです。
 
-### OKR
-
-#### 現在の四半期の OKR
-
-FY25-Q2 ステージレベルの目標は[こちら](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=created_date&state=opened&label_name%5B%5D=devops%3A%3Aplan&label_name%5B%5D=division%3A%3AEngineering&amp;not%5Blabel_name%5D%5B%5D=group%3A%3A%2a&type%5B%5D=objective&milestone_title=FY25-Q2&first_page_size=20)（社内限定）から確認できます。
-
-#### 前の四半期の OKR
-
-FY25-Q1 ステージレベルの目標はすべて 74% から 88% の間で達成済みであり、[こちら](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=created_date&state=closed&label_name%5B%5D=devops%3A%3Aplan&label_name%5B%5D=division%3A%3AEngineering&amp;not%5Blabel_name%5D%5B%5D=group%3A%3A%2a&type%5B%5D=objective&milestone_title=FY25-Q1&first_page_size=20)（社内限定）から確認できます。
-
-#### GitLab を使った OKR の作成
-
-GitLab での OKR へのアプローチについては、ビデオガイドを含むガイダンスが [GitLab での OKR へのアプローチ](/handbook/company/okrs/) に掲載されています。
-GitLab は現在、OKR 階層の構造化についていくらかの自由度を提供しています。Plan では以下のアプローチをとっています:
-
-- EM は独自の OKR 構造を作成せず、ステージレベルの目標の直下にグループレベルの KR を作成することを推奨します。
-- グループの KR とステージの目標は、組織のどこかに存在できる上位の目標に紐付けられるべきです。OKR の策定において、ステージレベルの目標は CEO の KR に直接紐付けられました。
-- 進捗のロールアップが見えるように、親の**子目標およびキーリザルト**として作成または追加する必要があります。
-- プロダクト開発の目標はマイルストーンプランニングで確立され、通常の[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に従いますが、OKR では行いません。
-
-このようにすることで、階層ができる限りシンプルで、一貫性があり、浅いものになることを確保します。これにより、OKR の階層の視覚化が現在良好でないため、ナビゲーションと可視性が向上します。
-
-有効な単一の OKR 階層の例:
-
-```mermaid
-flowchart TD
-    A[Plan Objective] --> B(Work Items KR)
-    A --> C[Portfolio Planning KR]
-    A --> D[Optimize KR]
-    A --> E[Planner Intelligence KR]
-    A --> K[Principal Engineer KR]
-    A --> L[SEM KR]
-```
-
-オーナーシップはラベルと担当者を使って示します。ラベルはグループおよび/またはステージを示し、担当者は DRI を示します。
-
-OKR には以下のラベルが必要です:
-
-- グループ、ステージ、およびセクション（適切な場合）。
-- 他の機能と区別するための部門（~"Division::Engineering"）。
-- DRI が OKR を更新することが期待される頻度に応じた updates::[weekly, semi-monthly, monthly]。
-
 ### 回顧 {#retrospectives}
 
 Plan ステージは [GitLab Issue を使って毎月非同期で回顧を実施](https://gitlab.com/groups/gl-retrospectives/plan-stage/-/issues/?label_name%5B%5D=retrospective)しています。毎月の回顧は、クローズ時に公開される機密 Issue で実施されます。これらの Issue のオープン中の機密性は [GitLab SAFE フレームワーク](/handbook/legal/safe-framework/) に準拠しています。
@@ -288,7 +246,7 @@ SAFE ガイドラインに従って機密のままにすべき情報の例とし
 回顧 Issue は
 [async-retrospectives](https://gitlab.com/gitlab-org/async-retrospectives) プロジェクトのスケジュールされたパイプラインによって作成されます。その後、マイルストーンが完了すると、出荷された成果物と見逃した成果物で更新されます。仕組みの詳細については、そのプロジェクトの README を参照してください。
 
-各 EM は、要約と是正措置とともに、グループの回顧を実施および締めくくる DRI です。
+回顧を実施するグループでは、各 EM がその実施と締めくくり、および要約と是正措置の DRI を担います。
 
 DRI の役割は、チームメンバーが率直なフィードバックを提供できる心理的に安全な環境を促進することです。そのため、直接参加は控え、代わりに回顧プロセス自体を宣伝し、締めくくり、改善することに専念してください。
 
@@ -329,13 +287,13 @@ DRI は以下のアクションを完了する責任があります:
 
 リグレッションは、プロダクトが脆く信頼できないという印象に貢献します。これらは無駄の一形態であり、元の（失われた）努力を修正または元の意図した動作の再実装でさらに複雑にする必要があります。
 
-エンジニアリングマネージャーは、グループが所有する機能でリグレッションが発生した場合に、シンプルな[根本原因分析](/handbook/engineering/workflow/root-cause-analysis/#what-is-a-root-cause-analysis)（RCA）を実施することを強く推奨されています。これは以下の目的のためです:
+Engineering Manager は、グループが所有する機能でリグレッションが発生した場合に、シンプルな[根本原因分析](/handbook/engineering/workflow/root-cause-analysis/#what-is-a-root-cause-analysis)（RCA）を実施することを強く推奨されています。これは以下の目的のためです:
 
 - 元の MR の著者とレビュアーに、それがリグレッションを引き起こしたことを知らせる。
 - 将来の同様のリグレッションを防ぐまたは可能性を減らすための是正措置を定義する。
 - ヒューマンエラーにつながるトレンドやパターンを特定する。
 
-以下の RCA フォーマットは FY23 Q2 OKR でトライアルされたものです。リグレッションが正常に元に戻されたら、元の MR のコメントとして投稿できます。
+以下の RCA フォーマットは FY23 Q2 に試行されたものです。リグレッションが正常に元に戻されたら、元の MR のコメントとして投稿できます。
 
 ```markdown
 **Description of the regression:**
@@ -370,7 +328,7 @@ _One-line description of the regression in behavior._
 
 ### UX
 
-Plan UX チームは [Portfolio Planning](/handbook/product/categories/#portfolio-planning-group)、[Work Items](/handbook/product/categories/#work-items-group)、および [Planning Views](/handbook/product/categories/#planning-views-group) をサポートしています。Portfolio Planning と Work Items はワークアイテムアーキテクチャの取り組みに注力しています。このページでは、整合性とクロスグループのコラボレーションが必要なため、私たちがこれをどのようにサポートするかについての詳細に焦点を当てています。
+Plan UX チームは [Portfolio Planning](/handbook/product/categories/#portfolio-planning-group)、[Work Items](/handbook/product/categories/#work-items-group)、[Planning Views](/handbook/product/categories/#planning-views-group)、および [Spec-Driven Development](/handbook/product/categories/#spec-driven-development-group)をサポートしています。Portfolio Planning と Work Items はワークアイテムアーキテクチャの取り組みに注力しています。このページでは、整合性とクロスグループのコラボレーションが必要なため、私たちがこれをどのようにサポートするかについての詳細に焦点を当てています。
 
 #### UX Issue 管理、ウェイト、キャパシティプランニング
 
@@ -378,7 +336,7 @@ Portfolio Planning、Work Items、Planning Views は UX 作業の Issue を作�
 
 - UX Issue は、設計目標、設計ドラフト、設計の会話と批評、および実装される選択した設計方向の SSOT です。
 - プロダクト要件の議論は、できる限りメインの Issue またはエピックで続けてください。
-- プロダクトデザイナーがデザインが ~"workflow::planning breakdown" の準備ができたことを示したい場合は、このラベルを Issue に適用し、PM と EM に通知して、Issue をクローズしてください。
+- Product Designer がデザインが ~"workflow::planning breakdown" の準備ができたことを示したい場合は、このラベルを Issue に適用し、PM と EM に通知して、Issue をクローズしてください。
 
 _UX Issue を使うのはいつですか？_
 
@@ -390,7 +348,7 @@ _UX Issue のウェイト付け_
 
 - Issue ウェイトは [Upstream Studios 部門の定義](/handbook/upstream-studios/product-design/workflow/capacity-management/#ux-issue-weights) に従う必要があります。
 - Issue が専用の [UX] Issue である場合、Issue ウェイトを `weight` フィールドに追加できますが、~'design weight:' ラベルとしても複製する必要があります。これは UX 部門の計画目的のためです。実装と UX 作業が同じ Issue で行われる小さい Issue の場合、UX ウェイトは ~'design weight:' ラベルを使って追加すべきです（`weight` フィールドはエンジニアリングによって使用されます）。
-- プロダクトマネージャーとプロダクトデザイナーは Issue ウェイトを使用して、マイルストーンに適切な作業量があることを確認したり、トレードオフを議論したり、ウェイトの高い項目のために作業を小さなピースに分割することに関する会話を始めたりできます。
+- Product Manager と Product Designer は Issue ウェイトを使用して、マイルストーンに適切な作業量があることを確認したり、トレードオフを議論したり、ウェイトの高い項目のために作業を小さなピースに分割することに関する会話を始めたりできます。
 
 #### ワークアイテム {#work-items}
 
@@ -424,7 +382,7 @@ _UX Issue のウェイト付け_
 
 ##### 基本原則
 
-- ユーザーエクスペリエンスの DRI は、そのオブジェクトのワークアイテムアーキテクチャを使用するグループにアサインされたプロダクトデザイナーです。
+- ユーザーエクスペリエンスの DRI は、そのオブジェクトのワークアイテムアーキテクチャを使用するグループにアサインされた Product Designer です。
 - 技術ファーストではなく、ユーザーファーストの考え方で作業します。
 - [Pajamas](https://design.gitlab.com/) は私たちのデザインシステムであり、ワークアイテムの取り組みを通じて導入される新しいパターンは、ユーザーが抱える実際の問題を解決し、ユーザーリサーチによって検証され、[Pajamas 貢献プロセス](https://design.gitlab.com/get-started/contributing/)に従う必要があります。
 - [プロダクト原則](/handbook/product/product-principles/#the-minimal-valuable-change-mvc)に記載されているように、MVC はユーザーに価値を提供し、バグがなく、高いユーザビリティを持つ体験です。
@@ -432,12 +390,12 @@ _UX Issue のウェイト付け_
 
 #### アーキテクチャが機能する仕組み
 
-ワークアイテムアーキテクチャで設計する際、プロダクトデザイナーはアーキテクチャがどのように機能し、ユーザーエクスペリエンスにどのような影響があるかをおおまかに理解する必要があります。
+ワークアイテムアーキテクチャで設計する際、Product Designer はアーキテクチャがどのように機能し、ユーザーエクスペリエンスにどのような影響があるかをおおまかに理解する必要があります。
 
 - ワークアイテムにはタイプ（エピック、インシデント）があり、これによってワークアイテムで利用可能なウィジェットと、ワークアイテムが他のワークアイテムや非ワークアイテムオブジェクトとどのような関係を持てるかが制御されます。
 - ターゲットとする JTBD を実行するという意味でのワークアイテムの動作は、ワークアイテムタイプに対して有効化されたウィジェットのコレクションによって動作します。
 - タイプに固有のロジックやビューを構築することを避けたいです。現在サポートされていないワークフローをサポートする必要がある場合は、ウィジェット（フィールド、アプリ、アクション）を通じて新しい動作を導入できます。実際の例: エピックは他のエピックや Issue の親になれます。エピックと Issue を相互接続する代わりに、この動作は「階層」ウィジェットにカプセル化されており、階層を実装する他のワークアイテムタイプ（目標とキーリザルトなど）で利用できます。
-- 同様に、ワークアイテムビューはタイプに対して直接カスタマイズすべきではありません。ただし、プロダクトデザイナーは異なるユーザーエクスペリエンスを提案でき、ワークアイテムを実装するチームは必要なユースケースをワークアイテムアーキテクチャに組み込みます。
+- 同様に、ワークアイテムビューはタイプに対して直接カスタマイズすべきではありません。ただし、Product Designer は異なるユーザーエクスペリエンスを提案でき、ワークアイテムを実装するチームは必要なユースケースをワークアイテムアーキテクチャに組み込みます。
 - ワークアイテムは、すべてのビューが同じ SSoT グルーピング FE コンポーネント（リスト、ボード、ロードマップ、グリッドなど）を活用する限り、IA/ナビゲーションの観点から任意のグルーピングでユーザーに提示できます。各グルーピングビューの1つのバージョンのみを構築・維持し、そのワークアイテムのセットを表示したい場所で再利用できるようにすべきです。グルーピングはユーザーのニーズに基づいてイテレーティブに決定されます。
 
 クアッドが望ましいユーザーエクスペリエンスを実現するために、当初の予想よりもワークアイテムアーキテクチャへの大きな貢献が必要であることを発見した場合、チームとしてトレードオフを議論し、進めるかオブジェクトを別にするかを決定します。
@@ -446,15 +404,15 @@ _UX Issue のウェイト付け_
 
 _問題の検証_
 
-オブジェクト（インシデント、エピックなど）のコードを所有するクアッドが、コードの再利用とユーザーエクスペリエンスに関するトレードオフに基づいて、ワークアイテムアーキテクチャを使用すべきかどうかを決定します。これはクロスファンクショナルな意思決定であるべきで、グループのプロダクトデザイナーは、ユーザーの理想的なワークフローがワークアイテムアーキテクチャによってサポートできるかどうかについてチームにアドバイスする必要があります。これにより、チームは既存のフロントエンドアーキテクチャのどの部分を再利用できるか、および望ましい体験をサポートするために何を追加またはカスタマイズする必要があるかを評価できます。
+オブジェクト（インシデント、エピックなど）のコードを所有するクアッドが、コードの再利用とユーザーエクスペリエンスに関するトレードオフに基づいて、ワークアイテムアーキテクチャを使用すべきかどうかを決定します。これはクロスファンクショナルな意思決定であるべきで、グループの Product Designer は、ユーザーの理想的なワークフローがワークアイテムアーキテクチャによってサポートできるかどうかについてチームにアドバイスする必要があります。これにより、チームは既存のフロントエンドアーキテクチャのどの部分を再利用できるか、および望ましい体験をサポートするために何を追加またはカスタマイズする必要があるかを評価できます。
 
-1. 意思決定プロセスの一環として、プロダクトデザイナーは問題検証のユーザーリサーチを行う（または既存のものを活用する）べきで、ユーザーの目標、タスク、コンテンツ/データフィールドのニーズ、およびこのワークアイテムタイプがリレーションシップを持つかどうかとその性質を含む望ましいユーザーエクスペリエンスを理解します。
-1. このフェーズ中に、プロダクトデザイナーとプロダクトマネージャーは、ワークアイテムリサーチプロセス（リンクは TBD）に従って成功指標が定義されることを確認する必要があります。
+1. 意思決定プロセスの一環として、Product Designer は問題検証のユーザーリサーチを行う（または既存のものを活用する）べきで、ユーザーの目標、タスク、コンテンツ/データフィールドのニーズ、およびこのワークアイテムタイプがリレーションシップを持つかどうかとその性質を含む望ましいユーザーエクスペリエンスを理解します。
+1. このフェーズ中に、Product Designer と Product Manager は、ワークアイテムリサーチプロセス（リンクは TBD）に従って成功指標が定義されることを確認する必要があります。
 1. 全員が望まれるものについての共通理解を確保し、中期的なビジョンを確立するために、高レベルのワイヤーフレームを作成すべきです。
 
 _ソリューションの検証_
 
-クアッドがワークアイテムアーキテクチャが適切であると決定した後、プロダクトデザイナーは体験を詳細に設計します。詳細な設計の一環として、プロダクトデザイナーはクアッドと協力して以下を行います:
+クアッドがワークアイテムアーキテクチャが適切であると決定した後、Product Designer は体験を詳細に設計します。詳細な設計の一環として、Product Designer はクアッドと協力して以下を行います:
 
 1. 既存のウィジェットの活用方法と、必要な新しいウィジェット、または既存のウィジェットを新しいユースケースに合わせて抽象化できるかどうかを設計する。例: インシデントのタイムラインウィジェットはインシデントのユースケースに特定して個別に設計されました。目標やキーリザルトのチェックインなど、より多くのユースケースをサポートするために若干リワークされる可能性があります。
 1. ユーザーがこのワークアイテムにどのようにアクセスするかを定義する。このワークアイテムが既存のビュー（リストなど）にどのように表示されるか、またはこのワークアイテムに必要な新しいビューを設計する。
@@ -475,14 +433,14 @@ _ソリューションの検証_
 
 Plan では、今週の重要な作業の進捗をチームメンバーに伝えるために、Plan 週次ダイジェストと呼ばれる非同期週次アップデートを使用しています。
 
-Plan ステージのエンジニアリングマネージャーは、毎週交替で DRI を務めます。Plan ステージには3つのグループと1人の SEM がいるため、各 EM はおよそ4週間に1回 DRI を務めます。
+Plan ステージの Engineering Manager は、毎週交替で DRI を務めます。Plan ステージには3つのグループと1人の SEM がいるため、各 EM はおよそ4週間に1回 DRI を務めます。
 
 DRI の責任は、週の始めまでに Issue が公開できる準備ができるよう、全員に貢献を促すことだけです。すべてのチームメンバーはディスカッションを使ってコンテンツを提案したり、説明を直接編集することで追加したりすることを歓迎されます。
 
 #### プロセス
 
 1. 毎週**月曜日 8 UTC** に新しい機密 Issue が作成されます（自動的に）。
-1. Issue は以下のスケジュールに従って Plan エンジニアリングマネージャーにアサインされます。その役割は他の人に貢献を促すことです。
+1. Issue は以下のスケジュールに従って Plan Engineering Manager にアサインされます。その役割は他の人に貢献を促すことです。
 1. **土曜日 8 UTC** にすべてのチームメンバーが Issue のアップデートを読むよう自動コメントでリマインドされます（自動的に）。
 1. 翌週の金曜日 8 UTC に Issue はクローズされます。
 
@@ -538,14 +496,15 @@ Plan は 2023-11-01 まで週次チームミーティングをステージとし
 #### リンク/参照
 
 - `~group::work items`
-  - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/1285239)
+  - [Issue](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=group%3A%3Awork%20items&milestone_title=%23started)
   - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Awork+items)
 - `~group::portfolio planning`
   - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/1569369?not[milestone_title]=Backlog)
   - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aportfolio+planning)
-- `~group::optimize`
-  - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/1401511)
-  - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aoptimize)
+- `~group::planning views`
+  - [Issue](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=group%3A%3Aplanning%20views)
+- `~group::spec-driven development`
+  - [Issue](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=group%3A%3Aspec-driven%20development)
 - `~group::planner intelligence`
   - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)
   - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aplanner+intelligence)
@@ -637,7 +596,7 @@ Plan ステージ内の各グループは、GitLab の[プロダクト開発フ�
 
 GitLab のすべてのグループと同様に、ワーキンググループはさまざまな機能の人々の集まりです。ワーキンググループをユニークにしているのは、明確な役割と責任が定義されており、高インパクトなビジネス目標を迅速に達成することを任務としている点です。目標が達成されると（終了基準で定義）、GitLab が官僚主義を蓄積しないよう、ワーキンググループは解散します。
 
-ステージワーキンググループは、ステージ内の複数のグループ間のコラボレーションを必要とするイニシアチブに焦点を当てています。ステージワーキンググループの構造は[会社全体のワーキンググループ](/handbook/company/working-groups/)に似ており、DRI と明確に定義された役割があります。イニシアチブは[エグゼクティブスポンサー](/handbook/company/working-groups/#executive-sponsor)ではなく、ステージレベルの製品方針によって推進され、終了基準を満たすために参加する機能リードとメンバーのみで構成できます。
+ステージワーキンググループは、ステージ内の複数のグループ間のコラボレーションを必要とするイニシアチブに焦点を当てています。ステージワーキンググループの構造は[会社全体のワーキンググループ](/handbook/company/working-groups/)に似ており、DRI と明確に定義された役割があります。イニシアチブは[エグゼクティブスポンサー](/handbook/company/working-groups/#executive-sponsor)ではなく、ステージレベルの製品方針によって推進され、終了基準を満たすために参加するファンクショナルリードとメンバーのみで構成できます。
 
 #### アーカイブ済みのステージワーキンググループ
 

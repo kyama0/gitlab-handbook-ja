@@ -4,11 +4,11 @@ description: >-
   Create ステージは、Code Review、Remote Development、Source Code を含む
   チームグループです。
 upstream_path: /handbook/engineering/devops/create/
-upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
-translated_at: "2026-09-30T21:07:20+00:00"
+upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
+translated_at: "2026-10-09T21:12:45+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-28T11:04:43+01:00"
+lastmod: "2026-10-05T12:43:57+02:00"
 ---
 
 ## こんにちは
@@ -21,7 +21,7 @@ lastmod: "2026-09-28T11:04:43+01:00"
 | [Create:Code Review](/handbook/engineering/devops/create/code-review/) | [François Rosé](https://gitlab.com/francoisrose) |
 | [Create:Source Code Triage and Investigation](/handbook/engineering/devops/create/source-code/) | [Daniel Lanthier](https://gitlab.com/dclannn) |
 | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) | [Armin Pašalić](https://gitlab.com/armin.pasalic) |
-| [Create:Source Code Hardening & Modernization](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)（一時的、2027-09-10 まで） | [Vladimir Shushlin](https://gitlab.com/vshushlin) |
+| [Create:Source Code Hardening and Modernization](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)（一時的、2027-09-10 まで） | [Vladimir Shushlin](https://gitlab.com/vshushlin) |
 | [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](https://gitlab.com/thiagocsf) (フルスタック) — レポート先 {{< manager-by-report-name "Thiago Figueiró" >}} |
 | [Create:Remote Development](/handbook/engineering/devops/create/remote-development/) | — |
 
@@ -64,7 +64,7 @@ Create ステージは、効率とコラボレーションを改善すること�
 
 もっと学びたい分野がある場合は、マネージャーに連絡して、好みの分野で成長できる環境を提供してもらってください。推奨されるリソースは以下のとおりです:
 
-**エンジニアリングマネージャー**
+**Engineering Manager**
 
 - [推奨書籍](/handbook/engineering/devops/create/engineering-managers/books/)
 - [トレーニング教材](/handbook/engineering/devops/create/engineering-managers/training/)
@@ -82,7 +82,7 @@ Create ステージは、効率とコラボレーションを改善すること�
 
 各チームは、自分たちの製品とチームのニーズに最も適した方法で作業します。
 
-- [Create エンジニアリングマネージャー](/handbook/engineering/devops/create/engineering-managers/)
+- [Create Engineering Manager](/handbook/engineering/devops/create/engineering-managers/)
 - [Remote Development チーム](/handbook/engineering/devops/create/remote-development/)
 - [Code Review チーム](/handbook/engineering/devops/create/code-review/#work)
 - Source Code チーム [バックエンド](/handbook/engineering/devops/create/source-code/backend/#workflow)、[フロントエンド](/handbook/engineering/devops/create/code-review/frontend/#work)
@@ -91,11 +91,11 @@ Create ステージは、効率とコラボレーションを改善すること�
 
 可能な場合は、[製品開発フロー](/handbook/product-development/how-we-work/product-development-flow)に従います。
 
-プロダクトマネージャーとエンジニアリングマネージャー間の週次コールは、各グループの共有カレンダーにリストされています。誰でも参加でき、これらのコールはグループに影響を与える障害、懸念、ステータス更新、成果物、その他の考えについて議論するために使用されます。
+Product Manager と Engineering Manager 間の週次コールは、各グループの共有カレンダーにリストされています。誰でも参加でき、これらのコールはグループに影響を与える障害、懸念、ステータス更新、成果物、その他の考えについて議論するために使用されます。
 
 月次マイルストーン計画 Issue は、次のマイルストーンが始まる前の週に作成されるようトリガーされます。PM（Product Manager）、EM（Engineering Manager）、PD（Product Designer）が一緒にマイルストーンを計画します。
 
-### 製品と完了の定義を定義する
+### Product と完了条件を定義する
 
 [ビルドトラック](/handbook/product-development/how-we-work/product-development-flow/#build-track)中、Issue またはエピックの説明内で、成功の測定値が定量的または定性的な成功メトリクスで何であるかを文書化します。Product Manager と Product Designer は、これらのメトリクスを提案し、Engineering とコラボレートして計測および検証する責任があります。
 
@@ -143,7 +143,7 @@ Issue を精緻化するように割り当てられたエンジニアは、Issue
 ##### 実装計画
 
 この要求に対処するために更新する必要のあるステップとコードの一部のリスト。
-実装計画では、他のチームメンバーまたはチームの責任を明示し、関連するエンジニアリングマネージャーが計画に同意していることを確認する必要があります。
+実装計画では、他のチームメンバーまたはチームの責任を明示し、関連する Engineering Manager が計画に同意していることを確認する必要があります。
 
 実装計画の目的は、Issue の批判的分析を促し、DRI にアプリケーションのどの部分がタッチされるかを考えさせることです。実装計画はまた、他のエンジニアが Issue をレビューし、依存関係を持つ可能性のあるアプリケーションの領域や、見落とされている可能性のある領域をハイライトすることを許可します。
 
@@ -205,7 +205,7 @@ infradev Issue、バグ、エラーバジェット、インシデント、また
 
 3. **一貫した週次スループット**
 
-   - マイルストーンあたり最低 X 個のバグをクローズ（X はチームキャパシティと過去のスループットに基づいてエンジニアリングマネージャーが決定）
+   - マイルストーンあたり最低 X 個のバグをクローズ（X はチームキャパシティと過去のスループットに基づいて Engineering Manager が決定）
    - 持続可能なペースを示すために、このしきい値を一貫して維持
 
 4. **終了後のレビュー**
@@ -238,9 +238,9 @@ Create ステージのチームは一緒に仕事をし、一緒に遊びます�
 
 ## 私たちの価値観を生きる方法
 
-エンジニアリングマネージャーは毎日[私たちの価値観](/handbook/values/)を生きています。
+Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生きています。
 
-[エンジニアリングマネージャーが GitLab Values をどう生きているかについて詳しく読む](/handbook/engineering/devops/create/engineering-managers/live/)
+[Engineering Manager が GitLab Values をどう生きているかについて詳しく読む](/handbook/engineering/devops/create/engineering-managers/live/)
 
 ## 結果を測定する方法
 
@@ -256,7 +256,7 @@ Create ステージのチームは一緒に仕事をし、一緒に遊びます�
 
 ## 生産性を追跡する方法
 
-タレントアセスメント中、エンジニアリングマネージャーはチームメンバーのパフォーマンスを評価するために包括的なアプローチを取ります。彼らは、各[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)の期待に対する公平な評価を確保するために、私たちのエコシステム全体にわたる多様な相互接続されたメトリクスのセットを検討します。これらのメトリクスには以下が含まれます:
+タレントアセスメント中、Engineering Manager はチームメンバーのパフォーマンスを評価するために包括的なアプローチを取ります。彼らは、各[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)の期待に対する公平な評価を確保するために、私たちのエコシステム全体にわたる多様な相互接続されたメトリクスのセットを検討します。これらのメトリクスには以下が含まれます:
 
 - マージされたマージリクエスト
 - 実施されたコードレビュー
@@ -312,7 +312,7 @@ Create ステージのチームは一緒に仕事をし、一緒に遊びます�
 
 ### 各ジョブレベルのベースライン目標
 
-下記の表では、シニアリティレベルに関連する各メトリクスのベースライン数値をアウトラインします。これらの数値は、ステージのエンジニアリングマネージャーとのコラボレーションから導出されました。上記でアウトラインされているように、それらはチームの健全性と個々のワークロードパターンを理解するための _判断材料の 1 つにすぎないもの_ として扱われます。 **それらは生産性またはパフォーマンスの完全な測定値として扱われません** が、方向性のガイドとして設定されています。
+下記の表では、シニアリティレベルに関連する各メトリクスのベースライン数値をアウトラインします。これらの数値は、ステージの Engineering Manager とのコラボレーションから導出されました。上記でアウトラインされているように、それらはチームの健全性と個々のワークロードパターンを理解するための _判断材料の 1 つにすぎないもの_ として扱われます。 **それらは生産性またはパフォーマンスの完全な測定値として扱われません** が、方向性のガイドとして設定されています。
 
 | メトリクス      | Associate | Intermediate | Senior | Staff |
 |-------------|-----------|--------------|--------|-------|
@@ -321,7 +321,7 @@ Create ステージのチームは一緒に仕事をし、一緒に遊びます�
 
 注意: 数値は Source Code Backend、Source Code Frontend、Code Review Backend、Code Review Frontend、Code Creation、Editor Extensions、Remote Development のチームメンバーの過去データを活用して、2024 年 12 月頃に最終更新されました。
 
-これらのベースラインは、エンジニアリングマネージャーが、作業、責任、ローカルチームの条件のコンテキストでチームメンバーと議論できるトレンドと異常値を浮上させるのに役立ち、常により広範なシグナルセット（例: インシデント対応、アーキテクチャ作業、メンタリング、インタビュー、ヘルプ要求、クロスチームコラボレーション）と組み合わせて使用されます。
+これらのベースラインは、Engineering Manager が、作業、責任、ローカルチームの条件のコンテキストでチームメンバーと議論できるトレンドと異常値を浮上させるのに役立ち、常により広範なシグナルセット（例: インシデント対応、アーキテクチャ作業、メンタリング、インタビュー、ヘルプ要求、クロスチームコラボレーション）と組み合わせて使用されます。
 
 私たちの CREDIT 価値観に沿って、バイアスを減らし、倒錯したインセンティブ（MR 分割や表面的なレビューなど）を回避し、顧客のための意味のある成果と持続可能な働き方に焦点を維持するために、これらのベースラインを定期的にレビューおよび調整します。
 
@@ -333,6 +333,6 @@ Create ステージのチームは一緒に仕事をし、一緒に遊びます�
 
 **個人コントリビューターの場合、** これらの目標は、彼らが従事している役割とシニアリティの期待に合わせたヘルスステータスシグナルを提供できます。
 
-**エンジニアリングマネージャーの場合、** これらの目標は、チームメンバーをよりよくサポートするために、チームプロセス、計画、または個々のケースをレビューするシグナルを提供できます。
+**Engineering Manager の場合、** これらの目標は、チームメンバーをよりよくサポートするために、チームプロセス、計画、または個々のケースをレビューするシグナルを提供できます。
 
 逸脱を正当化する特定の文脈を持つチームがある場合、その余分なコンテキストは、可能な限りハンドブックのチームページに文書化する必要があります。

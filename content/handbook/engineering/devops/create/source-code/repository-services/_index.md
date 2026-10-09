@@ -2,9 +2,9 @@
 title: "Create:Repository Services チーム"
 description: GitLab のリポジトリ領域を担当し、Gitaly チームの基本機能の上にアクセスレイヤーを構築する、常設の Source Code チーム。
 upstream_path: /handbook/engineering/devops/create/source-code/repository-services/
-upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
-lastmod: "2026-09-28T11:04:43+01:00"
-translated_at: "2026-09-30T21:07:20+00:00"
+upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
+lastmod: "2026-10-05T12:43:57+02:00"
+translated_at: "2026-10-09T21:12:45+00:00"
 stale: false
 translator: codex
 ---
@@ -21,7 +21,7 @@ Repository Services は、Source Code のリポジトリ領域を担当するバ
 
 ## 担当する予定の領域 {#what-we-expect-to-own}
 
-Source Code の領域を 4 チーム間でどう分担するかについては、Source Code Triage、Source Code Investigation、Hardening & Modernization の各チームと引き続き合意に向けて調整中です。以下は Repository Services に移管される予定の機能です。バックログの移管が完了したら、このリストを更新します。
+Source Code の領域を 4 チーム間でどう分担するかについては、Source Code Triage、Source Code Investigation、Hardening and Modernization の各チームと引き続き合意に向けて調整中です。以下は Repository Services に移管される予定の機能です。バックログの移管が完了したら、このリストを更新します。
 
 - リポジトリミラーリング（プッシュ、プル、双方向）
 - Git LFS
@@ -33,7 +33,7 @@ Source Code の領域を 4 チーム間でどう分担するかについては�
 ## 担当しない領域 {#what-we-do-not-own}
 
 - **Source Code のその他の領域。** 分担について合意するまでは、Source Code Triage と Source Code Investigation の各チームが、上記のリストに含まれない Source Code の機能を担当します。
-- **構造的なセキュリティ対策とフロントエンドのモダナイゼーション。** 一時的に設置された [Source Code Hardening & Modernization チーム](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)がこの作業を担当し、成果を機能担当チームに引き渡します。
+- **構造的なセキュリティ対策とフロントエンドのモダナイゼーション。** 一時的に設置された [Source Code Hardening and Modernization チーム](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)がこの作業を担当し、成果を機能担当チームに引き渡します。
 - **Gitaly 自体。** [Gitaly チーム](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/)が Gitaly を担当します。私たちはその基本機能の上に構築します。
 
 ## チームメンバー {#team-members}

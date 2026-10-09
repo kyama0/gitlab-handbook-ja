@@ -1,11 +1,11 @@
 ---
 title: Plan:Planner Intelligence エンジニアリングチーム
 upstream_path: /handbook/engineering/devops/plan/planner-intelligence/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-translated_at: "2026-09-04T20:38:00+09:00"
+upstream_sha: "48abec5939783dec7dd722f4427e0eba53023f6f"
+translated_at: "2026-10-09T21:11:50.063787+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-04T13:17:59+02:00"
+lastmod: "2026-09-28T11:04:43+01:00"
 ---
 
 ## Plan:Planner Intelligence チーム
@@ -21,7 +21,7 @@ Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/hand
 
 ### チームメンバー
 
-{{< team-by-manager-role role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" >}}
+{{< team-by-manager-role role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" team="Plan:Planner Intelligence" >}}
 
 ### 安定したカウンターパート
 
@@ -37,7 +37,7 @@ Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/hand
 
 [ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)には今後のリリース作業が表示されます。~"workflow::ready for development" 列は優先度順に並んでいます。
 
-エンジニアリングマネージャーはマイルストーンの開始時に以下のラベルを追加します:
+Engineering Manager はマイルストーンの開始時に以下のラベルを追加します:
 
 | ラベル | 意味 |
 | ---   | ---     |
@@ -62,7 +62,7 @@ PM と EM はチームのキャパシティの最大 75% に ~Deliverable Issue 
 
 #### リファインメント
 
-エンジニアリングマネージャーは毎週のチームミーティングで `~"workflow::refinement"` の Issue をレビューします。
+Engineering Manager は毎週のチームミーティングで `~"workflow::refinement"` の Issue をレビューします。
 [最高優先度](#priority-labels)の Issue は個々のエンジニアにアサインされ、そのエンジニアが Issue を `~workflow::ready for development` に移動させる責任を持ちます。
 
 エンジニアは以下のテンプレートを Issue の説明に追加できます:
@@ -132,7 +132,7 @@ DRI はこのミーティングを待つのではなく、[ワークフローラ
 
 #### プランニングミーティング（月次）
 
-プランニングミーティングはマイルストーン開始前に月に 1 回開催されます。プロダクトマネージャーがスケジュールの DRI です。
+プランニングミーティングはマイルストーン開始前に月に 1 回開催されます。Product Manager がスケジュールの DRI です。
 
 エンジニアの出席はオプションですが、参加は必須です。ミーティングにはアジェンダがあり、録画されます。以下のどれかまたはすべてが含まれる場合があります:
 
@@ -162,7 +162,7 @@ DRI はこのミーティングを待つのではなく、[ワークフローラ
 
 ほとんどのプランニングは非同期で行われます。これをより効率的にするために、いくつかのツールとプロセスが観察されています。
 
-Issue には 1 つのマイルストーンしか添付できないため、`~"Next Up"` ラベルを使って、マイルストーンがあるかどうかに関係なく、今後のマイルストーンの項目をマークします。PM と EM は、プランニングプロセス中の現在のマイルストーンを slip する可能性のある Item やプロスペクティブな Issue に追加する前に、このラベルをすべての Issue から削除する必要があります。
+Issue には 1 つのマイルストーンしか添付できないため、`~"Next Up"` ラベルを使って、マイルストーンがあるかどうかに関係なく、今後のマイルストーンの項目をマークします。PM と EM はプランニングの開始前にすべての Issue からこのラベルを削除し、その後、プランニング中に候補となる Issue と現在のマイルストーンから持ち越す見込みの Issue に追加してください。
 
 このラベルを使用することで、今後のマイルストーンを簡単に分析できます。[プランニングボード](https://gitlab.com/groups/gitlab-org/-/boards/7109724)は、現在のマイルストーンではなくこのラベルにスコープされているビルドボードを模倣しています。以下のために使用します:
 
@@ -182,7 +182,7 @@ Issue の適切なラベル付けは、チームができる作業とやって�
 |---    | --- | ---               | --- |
 | ~workflow::* | Issue の現在のワークフロー状態を伝えます。進捗を理解し、マイルストーン期間中のリスクを定量化するために重要です。 | 開発全体を通じた Issue の更新 | エンジニア |
 | ~type::* | 行われている作業の種類を伝えます。GitLab 内外の役割に対して作業の分割を定量化・報告するために使用されます。 | [作業タイプの分類](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification) | |
-| ~Deliverable/~Stretch | ~Deliverable は、アサインされたマイルストーン内に Issue を届ける意図があることを顧客とステークホルダーに伝えます。~Stretch は、マイルストーン中に着手する可能性はあるが完了は期待されないことを示します。 | [リリーススコーピングラベル](https://docs.gitlab.com/ee/development/labels/#release-scoping-labels) | エンジニアリングマネージャー |
+| ~Deliverable/~Stretch | ~Deliverable は、アサインされたマイルストーン内に Issue を届ける意図があることを顧客とステークホルダーに伝えます。~Stretch は、マイルストーン中に着手する可能性はあるが完了は期待されないことを示します。 | [リリーススコーピングラベル](https://docs.gitlab.com/ee/development/labels/#release-scoping-labels) | Engineering Manager |
 
 #### 非同期更新
 
@@ -211,7 +211,7 @@ group = "gitlab-org" and assignee = currentUser() and label in ("workflow::in de
 
 `~Knowledge::P1/P2/P3` ラベルを使用して、`~workflow::*` ステップとマイルストーン内の Issue の優先度を示します。
 
-- プロダクトマネージャーがこれらのラベルの DRI ですが、チームの全員がアサイン/調整できます。
+- Product Manager がこれらのラベルの DRI ですが、チームの全員がアサイン/調整できます。
 - マイルストーンの開始前に、PM と EM はそのマイルストーンに含まれるすべての Issue の優先度を確認します。期待値は以下の通りです:
       - Issue の 40% が `~Knowledge::P1`
       - Issue の 30% が `~Knowledge::P2`
