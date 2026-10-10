@@ -2,9 +2,9 @@
 title: "キャンペーンとプログラム"
 description: "Campaign は、マーケティング施策の取り組みを追跡するために使用します"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-lastmod: "2026-09-09T09:54:36-06:00"
-translated_at: "2026-09-10T11:11:28+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+lastmod: "2026-10-01T17:06:48-06:00"
+translated_at: "2026-10-10T21:11:07.012339+00:00"
 translator: codex
 stale: false
 ---
@@ -156,10 +156,14 @@ Brilliant はプログラムステータスの更新を通じて配送ステー�
 
 | Member Status | 定義 | Success |
 | ------------- | ---------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  |
-| Requested Support | handraise アクションを取り、GitLab チームにサポートを要求した ||
-| Waitlisted | 将来の SKU の購入リクエストを送信した  ||
-| Requested Contact | Contact、Professional Services、Demo、または Pricing Request に記入した | Yes |
+| No Action | すべてのレコードのデフォルトの開始状態。スコアは加算されません |  |
+| Requested Support | GitLab チームにサポートを求める意思表示をしました。スコアは加算されません ||
+|Waitlisted|将来の SKU の購入リクエストを送信しました||
+|Non Profit or Start Up| 非営利団体向けまたはスタートアップ向けプログラムの申請を送信しました。スコアは加算されません||
+|Beta - No Score|ベータプログラムの申請を送信しました。スコアは加算されません||
+|Beta - Score|ベータプログラムの申請を送信しました。自動的に MQL になります| Yes|
+| Requested Contact - Medium | Educational Services またはその他の目立たないプログラムへのリクエストに記入しました。スコアが +50 加算されます   |Yes |
+| Requested Contact - High | Contact、Professional Services、Demo、または Pricing Request に記入しました。自動的に MQL になります | Yes |
 
 #### Live Event
 
@@ -389,11 +393,11 @@ GitLab がホストおよび開催するあらゆるウェブキャスト。ウ�
 | Attended | ワークショップのイベントに参加 | Yes | Yes |
 | Follow Up Requested | イベント後に GitLab に関する追加詳細の送付を要求 | Yes | Yes |
 
-## SFDC Campaign の手順
+## SFDC Campaign の手順 {#sfdc-campaign-instructions}
 
 SFDC キャンペーンには、一般的な必須フィールドのセットがあります。このセクションでは、それらのフィールドと、いつ入力する必要があるかを説明します。この手順は、Marketo から Campaign を同期した後（または Content Syndication/LinkedIn キャンペーンを設定する際）に実施します。必須フィールドへの変更が一元的に管理され、手順が古くならないように、手順はこのセクションに含めています。
 
-### SFDC フィールドの更新
+### SFDC フィールドの更新 {#updating-sfdc-fields}
 
 - Salesforce.com にアクセスし、[All Campaigns by create date](https://gitlab.lightning.force.com/lightning/o/Campaign/list?filterName=00B4M000004oVF9) ビューを確認します。作成日でソートすると、あなたの Campaign が一番上に表示されるはずです。検索ボックスで Campaign タグを検索することもできます。Campaign を選択します。
   - イベントを Accelevents で管理している場合は、SFDC Campaign の名前を更新する必要があります。このステップは Accelevents で管理されるイベントにのみ適用されます。他のすべての Campaign タイプは正しい命名フォーマットになっているためです。Campaign 名の横にある「Edit campaign name」アイコンをクリックし、命名規則を反映するように名前を更新します: YYYYMMDD_OwnedEventName_RegionOrCity。Marketo では名前を変更せず、SFDC でのみ変更してください。
@@ -433,7 +437,7 @@ SFDC キャンペーンには、一般的な必須フィールドのセットが
 - 「Save」をクリックします
 - Marketo プログラムのリンクと SFDC キャンペーンのリンクをエピックに追加します。
 
-#### Allocadia を利用する場合の SFDC キャンペーン作成手順
+#### Allocadia を利用する場合の SFDC キャンペーン作成手順 {#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia}
 
 Allocadia > Marketo > SFDC のインテグレーションを使用すると、Allocadia で提供した情報が SFDC キャンペーンにプッシュされます。
 
@@ -445,7 +449,7 @@ Allocadia > Marketo > SFDC のインテグレーションを使用すると、Al
   - SFDC の `Budgeted Cost` は、Allocadia の `forecast` 数値ではなく `plan` 数値から取得されます。Allocadia に plan 数値がない場合、SFDC の `Budgeted Cost` は空白のままになります。Allocadia に plan 金額がある場合、その金額は夜間同期で SFDC に取り込まれます。
   - 施策のコストが $0 の場合（例: バーチャルワークショップ）は、`Budgeted Cost` フィールドに `1` をリストします。ROI 計算のためにここには少なくとも 1 の値が必要です。そうしないと、pipeline を `0` で割ると、pipe2spend の計算で常に `0` が得られます。
 
-### Parent/Child Campaign のセットアップ
+### Parent/Child Campaign のセットアップ {#parentchild-campaigns-setup}
 
 一部の施策では、単一のイニシアチブの一部として複数の Campaign が発生します。これらの例としては、スピーキングセッションや付随イベントを伴うカンファレンス、content syndication、ハイブリッドイベント（対面とバーチャルのリードを別々に追跡する）などが挙げられます。この場合、SFDC に `parent` Campaign を作成し、各 `child` Campaign が個々の施策を表すようにする必要があります。
 
@@ -498,7 +502,7 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 
 ネストされたプログラムを持つ Marketo プログラムフォルダーの例は[こちら](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/MF25757A1)で確認できます。
 
-### 重要な注意事項
+### 重要な注意事項 {#important-notes}
 
 1. Marketo が Campaign を「見る」ことができるようにするには、SFDC キャンペーンで `Active` チェックボックスをチェックする必要があります。以下のプロセスに従えば自動的に行われますが、Marketo で SFDC キャンペーンが見つからない場合は、SFDC でそのボックスがチェックされていることを確認してください。さらに、このボックスがチェックされていないと、Marketo はその SFDC キャンペーンに対してリードを送信したり、Campaign メンバーのステータスを更新したりできません。
 1. parent Campaign を作成する場合は、Campaign 名の末尾に `_Parent` を追加することで、それが parent であるという事実を parent Campaign の Campaign 名が反映していることを確認してください。万が一、responded の Campaign メンバーを格納するために parent Campaign が誤ってセットアップされた場合、Campaign 名の末尾に `_Parent` を追加することで、[オフライン Campaign のタッチポイント生成を制御する](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564) Campaign 同期ルールがそれを確実に認識し、parent と child の両方の Campaign に格納されている可能性のある Campaign メンバーに対して二重のタッチポイントを作成しないようにします。
@@ -525,7 +529,7 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 
 その他すべての Campaign タイプについては、以下のステップに従ってください。すべてのステップが必須です。
 
-## Marketo プログラムと Salesforce キャンペーンのセットアップ手順
+## Marketo プログラムと Salesforce キャンペーンのセットアップ手順 {#steps-to-setup-marketo-programs-and-salesforce-campaigns}
 
 ### ステップ 1: 以下に示す Marketo プログラムをクローンする
 
@@ -543,7 +547,7 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 - `Description` フィールドにエピックの URL を貼り付けます
 - `Create` をクリックします
 
-#### パートナー Campaign のセットアップ
+#### パートナー Campaign のセットアップ {#partner-campaign-setup}
 
 現在、Channel MDF キャンペーン、Joint GitLab/Partner キャンペーン、Hyperscaler キャンペーン、Hyperscaler Funded キャンペーンなど、いくつかのタイプのパートナー Campaign があります。
 
@@ -576,7 +580,7 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 
 **重要なリードオーナーシップに関する注意:** Hyperscaler キャンペーンを通じて生成されたすべてのリードは、GitLab の排他的なオーナーシップの下にとどまります。これらのコンタクトは私たちの標準ナーチャリングプロセスに入り、エンゲージメント指標に応じてリードスコアを蓄積していきます。MQL ステータスに達すると、パーソナライズされたフォローアップのために自動的に適切な BDR/SDR チームに割り当てられます。
 
-##### Hybrid Marketo テンプレート
+##### Hybrid Marketo テンプレート {#hybrid-marketo-templates}
 
 - Executive Roundtables - `Hybrid template`: [YYYYMMDD_ExecutiveRoundtable_Topic_Region_EventType_template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6028A1)
 - Speaking Session - `Hybrid template`: [YYYYMMDD_SpeakingSession_EventType_Template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME5092A1)
@@ -591,7 +595,7 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
   - GitLab Basics: [YYYYMMDD_Workshop_GitLabBasics_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME17530A1)
   - GitLab Platform Engineering Workshop: [YYYYMMDD_Workshop_PlatformEngineering_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME22364A1)
 
-##### Other Tactic Marketo テンプレート
+##### Other Tactic Marketo テンプレート {#other-tactic-marketo-templates}
 
 - Conference - `Virtual`: [YYYYMMDD_YYYYMMDD_Vendor_VirtualConfName1 (Virtual Conference Template)](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME7624A1)
 - Conference - `In person`: [特定のセットアップ詳細はこちらにスキップ](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-in-person-conferences)
@@ -718,7 +722,7 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-5-update-the-salesforce-campaign)の手順を参照してください。
 
-### ステップ 8: Salesforce キャンペーンの更新 - Allocadia を使用する場合
+### ステップ 8: Salesforce キャンペーンの更新 - Allocadia を使用する場合 {#step-8-update-the-salesforce-campaign---using-allocadia}
 
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
@@ -806,7 +810,7 @@ waitlist 機能を有効にしたイベントで定員に達した状況では�
 - プログラムを右クリックして、**すべての** `late registration` アセットの asset expiration の日付を設定します。これらは有効のままにしておくべきではなく、イベント終了の翌日、またはこれ以上登録者が受け入れられないと推定される時点で期限切れになるように設定すべきです
 - 今後のイベントに参加する適切なチームと `late registration page` の URL を共有し、ページを GitLab 所有の `tablets` や `laptops` などのチェックインデバイスに追加して、イベントフロアで簡単にアクセスできるようにします
 
-## 対面 Conference のセットアップ手順
+## 対面 Conference のセットアップ手順 {#steps-to-setup-in-person-conferences}
 
 ### ステップ 1: このプログラムをクローンする
 
@@ -849,7 +853,7 @@ waitlist 機能を有効にしたイベントで定員に達した状況では�
   - そのようなイベントはプログラムの registation フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
 - 後で有効期限を削除するには、プログラムを右クリックして対象アセットに戻り、変更を送信します。
 
-### ステップ 5: Salesforce キャンペーンの更新
+### ステップ 5: Salesforce キャンペーンの更新 {#step-5-update-the-salesforce-campaign}
 
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-5-update-the-salesforce-campaign)の手順を参照してください。
 
@@ -858,7 +862,7 @@ waitlist 機能を有効にしたイベントで定員に達した状況では�
 
 Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
-## 対面 Conference Meetings のセットアップ手順
+## 対面 Conference Meetings のセットアップ手順 {#steps-to-setup-in-person-conference-meetings}
 
 以下の手順は、大規模なカンファレンスで Field Marketing がリードするミーティング向けに設計されています。
 
@@ -905,7 +909,7 @@ Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-oper
 
 Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
-## Marketo と SFDC での Content Syndication のセットアップ手順
+## Marketo と SFDC での Content Syndication のセットアップ手順 {#steps-to-setup-content-syndication-in-marketo-and-sfdc}
 
 ### ステップ 1: このプログラムをクローンする
 
@@ -964,7 +968,7 @@ Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-oper
 
 Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
-## Marketo と SFDC でのサーベイのセットアップ手順
+## Marketo と SFDC でのサーベイのセットアップ手順 {#steps-to-setup-surveys-in-marketo-and-sfdc}
 
 **注意: サーベイプログラムを作成したら、`#mktops` Slack チャンネルで Marketing Ops に ping を送り、レビューのためにプログラムをリンクしてください。各サーベイはユニークであり、セットアップに微調整が必要な場合があります。**
 
@@ -985,7 +989,7 @@ Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-oper
 - サーベイがリストアップロードを介した手動アップロードを必要とする場合は、`01 Processing` バッチスマートキャンペーンの更新に注意を集中します。手動リストアップロードの場合、バッチはアップロードプロセス中に MktgOps によって手動で活性化されます。
 - サーベイが Zapier 自動化を必要とする場合は、自動化の構築について [Issue を介して](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/blob/master/.gitlab/issue_templates/zapier_connection_request.md) MktgOps に相談してください。MktgOps が `01 processing` Campaign を活性化する担当者にもなります
 
-### ステップ 4: Salesforce キャンペーンの更新
+### ステップ 4: Salesforce キャンペーンの更新 {#step-4-update-the-salesforce-campaign}
 
 - [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#updating-sfdc-fields)の手順を参照してください。
 - Marketo プログラムのリンクと SFDC キャンペーンのリンクをエピックに追加します。
@@ -1052,7 +1056,7 @@ Brilliant チームは、Marketo プログラムと webhook がバックエン�
 
 Campaign の終了時に、Qualified のロジックを取り下げるようリクエストします。Brilliant のストアフロントと Preferred キャンペーンへの更新は未定ですが、新しいキャンペーンごとに Brilliant に連絡し、電子ギフトの金額と確認メールを更新する必要があります
 
-## LinkedIn Lead Gen Form のセットアップ手順
+## LinkedIn Lead Gen Form のセットアップ手順 {#steps-to-setup-linkedin-lead-gen-form}
 
 私たちは Marketo に特定のパラメータをリッスンするリスナーをセットアップしています。プログラムがすでに Marketo にセットアップされているかどうかを確認するには、以下の `Marketo Listener` 列を確認してください。セットアップされている場合は、新しいリスナーを作成する必要はなく、コンテンツをプログラムに追加するだけです。それ以外の場合は、リードがキャプチャされるように、以下に概説するプロセスに従ってください。
 
@@ -1189,7 +1193,7 @@ _例: 2020_Social_AutomatedSoftwareDelivery_autoSD_LinkedIn Lead Gen_
 
 - この[ハンドブックページをパラメータで](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-linkedin-lead-gen-form)、`yes` と、セットアップしたパラメータと Campaign へのリンクで更新します。
 
-## Marketo プログラムのセットアップをテストする
+## Marketo プログラムのセットアップをテストする {#test-your-marketo-program-setup}
 
 1. この Campaign のウェブページでテスト登録を送信します。（既存のメールアドレスを使用する代わりに）新しいテストレコードを作成する必要がある場合は、ユーザー名の後に `+` を追加できます: 例 `jdoe+testuser@gitlab.com`。テストを実行する際は、フローに GitLab メールアドレス用の「Remove from flow」があるかどうかに注目してください。これがある場合は、そのフローステップを削除するか、別のメールアドレスでテストする必要があります。
 1. テストリードが送信されたら、Marketo ナビゲーションの `Database` をクリックして Marketo データベースに移動します。次に、左側のメニューで `Default` をクリックします。
@@ -1358,7 +1362,7 @@ Marketo ドキュメント:
 - [メールプログラムの中止](https://experienceleague.adobe.com/docs/marketo/using/product-docs/email-marketing/email-programs/email-program-actions/abort-email-program.html?lang=en)
 - [メールプログラムの未承認](https://experienceleague.adobe.com/docs/marketo/using/product-docs/email-marketing/email-programs/email-program-actions/approve-unapprove-an-email-program.html?lang=en)
 
-### 手順: 5,000 名を超える参加者がいる Conference を更新する方法
+### 手順: 5,000 名を超える参加者がいる Conference を更新する方法 {#instructions-how-to-update-conferences-with-more-than-5000-attendees}
 
 5,000 名を超える参加者がいるカンファレンスのリストロードでは、それらを `success` としてマークしないことを検討してください。担当の `Field Marketing Director` がこれらのメンバーを `success` としてマークしないことに同意した場合、それが起こらないようにするためのステップは以下のとおりです。**これは MktgOps チームのメンバーのみが行えます！**
 

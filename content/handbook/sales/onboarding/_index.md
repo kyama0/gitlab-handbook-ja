@@ -2,11 +2,11 @@
 title: "GitLab Academy"
 description: "GitLab Academy は、CRO 組織の新入社員全員を対象としたオンボーディングプログラムです。これまでで最も野心的なオンボーディング体験であり、新しいフィールドチームメンバーが入社後 30 日以内にカスタマー対応可能になることを目的とした、ブレンデッドラーニングジャーニーです。"
 upstream_path: /handbook/sales/onboarding/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+translated_at: "2026-10-10T21:04:20.427762+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-09T17:05:37Z"
 ---
 
 ## GitLab Academy について
@@ -46,7 +46,7 @@ GitLab Academy は、オンボーディングの最初の 6 〜 8 週間にわ�
 - Product, Positioning, and Differentiation（「私たちが何を販売するか」）— AI Modernization（DAP 認定を含む）、DevOps Modernization、Security Modernization
 - 次のロール向けのロールベースの学習パス: xDR、Enterprise/Commercial Sales、New Business Sales、Ecosystem Sales、SA、CSM/A、CSE、Renewals Manager、PS、その他すべてのロール
 
-**チェックポイント:** Week 3 の終わりまでにすべてのコースワークを完了し、知識チェックに合格する
+**チェックポイント:** 3 週目の終わりまでにすべてのコースワークを完了し、知識チェックに合格する
 
 ---
 
@@ -67,7 +67,7 @@ GitLab の価値販売フレームワークとディスカバリー方法論を�
 
 ---
 
-### 構成要素 3: Role Based Skills Development Sessions
+### 構成要素 3: ロール別スキル開発セッション
 
 ビジネス SME とステークホルダーがファシリテートするライブのバーチャルワークショップで、ロール固有のスキル、ツール、プロセスに焦点を当てます。ツールとプロセスのコンテンツは非同期（ドキュメントとビデオ）で提供され、ライブセッションは異議への対応や交渉のようなスキルと行動のために確保されます。
 
@@ -79,7 +79,7 @@ GitLab の価値販売フレームワークとディスカバリー方法論を�
 
 ---
 
-### 構成要素 4: In-Person Bootcamp
+### 構成要素 4: 対面ブートキャンプ
 
 クロスファンクショナルなコラボレーションの機会と Academy のキャップストーンの両方を兼ねる、2 日間の地域イベントです。
 
@@ -102,13 +102,13 @@ GitLab Academy には、各セグメントとロールの独自のニーズを�
 
 **以下からあなたのロール固有のオンボーディングハンドブックページを見つけてください。**
 
-- Enterprise, Commercial & Ecosystem Sales — [Sales Onboarding (Shadow Program) Handbook](/handbook/sales/shadow-program/)
-- Renewals Managers — [RM Onboarding Handbook](/handbook/customer-experience/renewals-managers/rm-onboarding/)
-- Customer Success (CSM/A) — [CSM/A Onboarding Handbook](/handbook/customer-experience/csm/csm-onboarding/)
-- Customer Success (CSE) — [CSE Onboarding Handbook](/handbook/customer-experience/csm/segment/cse/cse-tm-onboarding/)
-- Solutions Architects — [SA Onboarding Handbook](/handbook/solutions-architects/sa-enablement/sa-onboarding/)
-- Professional Services — [Professional Services Handbook](/handbook/customer-experience/professional-services-engineering/)
-- Sales and Business Development — [SDR & BDR Onboarding (Tanuki Tech) Handbook](/handbook/sales/sales-development/tanuki-tech/)
+- Enterprise, Commercial & Ecosystem Sales — [Sales オンボーディング（シャドープログラム）ハンドブック](/handbook/sales/shadow-program/)
+- Renewals Managers — [RM オンボーディングハンドブック](/handbook/customer-experience/renewals-managers/rm-onboarding/)
+- Customer Success (CSM/A) — [CSM/A オンボーディングハンドブック](/handbook/customer-experience/csm/csm-onboarding/)
+- Customer Success (CSE) — [CSE オンボーディングハンドブック](/handbook/customer-experience/csm/segment/cse/team-member-onboarding/)
+- Solutions Architects — [SA オンボーディングハンドブック](/handbook/solutions-architects/sa-enablement/sa-onboarding/)
+- Professional Services — [Professional Services ハンドブック](/handbook/customer-experience/professional-services-engineering/)
+- Sales and Business Development — [SDR & BDR オンボーディング（Tanuki Tech）ハンドブック](/handbook/sales/sales-development/tanuki-tech/)
 
 ---
 

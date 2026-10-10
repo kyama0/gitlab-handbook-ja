@@ -2,11 +2,11 @@
 title: "コミュニティ貢献を扱うワークフロー"
 description: Co-Create & Community Engineering チームが扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:30:32+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+translated_at: "2026-10-10T21:10:21.636842+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-10-08T17:43:12-04:00"
 ---
 
 ## ワークフロー
@@ -175,11 +175,9 @@ GitLab チームメンバーが完了する必要があります:
 
 サポートチームは、24 時間以内に[このワークフロー](/handbook/support/license-and-renewals/workflows/self-managed/creating-wider-community-license)に従って応答します。
 
-
 {{% alert title="注" color="primary" %}}
 (GitLab チームメンバー) Google Drive で[ここで](https://drive.google.com/drive/u/0/search?q=Wider_EE_Developer_License_Renewal.mov)検索することで、これのビデオを見つけることができます
 {{% /alert %}}
-
 
 #### クローズ
 
@@ -282,7 +280,7 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 ### ソーシャル
 
-- 「Join the upcoming GitLab hackathon (link) on the N.」のような短いアクション指向のコピーを起草します。
+- 「N 日開催の GitLab ハッカソン（リンク）に参加してください。」のような短いアクション指向のコピーを起草します。
 - イベントの少なくとも 2 週間前、1 週間前、前日に、次のチャンネルでメッセージを共有します:
   - Twitter: 自分のアカウントを使用しますが `@gitlab` をメンションします (注: Twitter で Zoom リンクを共有しないでください)
   - [GitLab Community Discord](https://discord.gg/gitlab)
@@ -420,17 +418,54 @@ Issue が `quick win` に該当しないと AI が判断した場合、ラベル
 
 貢献者が GitLab 名前空間に対して初めてマージリクエストを開くたびに、ラベル「~1st contribution」が自動的にマージリクエストに適用されます。
 
-### Core チームとの作業
+### Core Team との作業
 
-[Core チーム](https://about.gitlab.com/community/core-team/)に関する詳細情報は、[Core チームハンドブックページ](/handbook/marketing/developer-relations/engineering/core-team/)で利用できます。
+[Core Team](https://about.gitlab.com/community/core-team/)に関する詳細情報は、[Core Team ハンドブックページ](/handbook/marketing/developer-relations/engineering/core-team/)で利用できます。
 
 ### 貢献者向け GitLab Duo
 
-誰もが貢献できるという私たちのミッションをサポートするため、私たちはすべての広範コミュニティ貢献者向けに、GitLab コミュニティフォーク全体で無料の GitLab Duo Enterprise
-ライセンスを提供しています。
-[GitLab Duo](https://about.gitlab.com/gitlab-duo/) は、Code Suggestions、Chat、Root Cause Analysis
-など、コードとパイプラインの記述・理解に必要な時間を削減することで効率と効果を高める、AI を活用した機能を備えています。
-コミュニティ貢献者は、[コミュニティフォークへのアクセスをリクエスト](https://gitlab.com/groups/gitlab-community/community-members/-/group_members/request_access)した後に承認されると、GitLab Duo を受け取ります。
+誰もが貢献できるようにするという私たちのミッションを支えるため、より広いコミュニティのすべての貢献者に、
+GitLab のコミュニティフォーク全体で利用できる GitLab Duo Enterprise の無償ライセンスと
+[GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/) へのアクセスを提供します。
+[GitLab Duo](https://about.gitlab.com/gitlab-duo/) は、Code Suggestions、Chat、Root Cause Analysis などの
+AI を活用した機能を備え、コードやパイプラインの記述と理解に必要な時間を減らすことで、
+効率と有効性を高めます。
+コミュニティ貢献者は、[コミュニティフォークへのアクセス申請](https://gitlab.com/groups/gitlab-community/community-members/-/group_members/request_access)が承認されると GitLab Duo を利用できるようになります。
+利用制限と期待事項は、[コミュニティ貢献者向け GitLab Duo 利用ガイドライン](https://gitlab.com/gitlab-community/meta/-/blob/main/docs/duo-usage-guidelines.md)で定めています。
+
+#### コミュニティの GitLab Duo 利用量の管理 {#managing-community-gitlab-duo-usage}
+
+`gitlab-community` グループの GitLab Duo Agent Platform の利用量は GitLab Credits で計測し、ユーザーごとに上限を設けています
+（現在の値は利用ガイドラインを参照してください）。管理には、
+[`gitlab-community`](https://gitlab.com/gitlab-community) トップレベルグループの Owner ロールが必要です。
+
+利用量を確認するには:
+
+1. `gitlab-community` > **Settings > GitLab Credits** に移動するか、
+   [グループのクレジットダッシュボード](https://gitlab.com/groups/gitlab-community/-/settings/gitlab_credits_dashboard)を開きます。
+1. **Usage by user** タブで、**Total credits used** により並べ替えます。上限に達したユーザーについては、**Usage control status** 列に
+   **Blocked usage** と表示されます。
+1. ユーザー名を選択すると、Duo Agent Platform のセッション詳細へのリンクを含む、そのユーザーの個別の利用イベントを確認できます。
+
+貢献に関連しているように見えない大量の利用について連絡するには、`Duo usage` コメントテンプレートを使って、貢献者の
+[オンボーディング Issue](https://gitlab.com/gitlab-community/community-members/onboarding/-/issues)にコメントします。
+まず、その人の[貢献者プロフィール](https://contributors.gitlab.com/)と最近の
+マージリクエストを確認してください。
+
+ユーザーの上限を引き上げ、引き下げ、または解除するには:
+
+1. グループのクレジットダッシュボードで、**Credit caps** を選択します。
+1. **Per-user cap overrides** で **Add override** を選択し（または既存の行を調整し）、ユーザーを選び、
+   上限を設定して **Save** を選択します。上書き設定の **Enabled** トグルをオフにすると、そのユーザーにはデフォルトの一律の上限が適用されます。
+1. 記録を残すため、貢献者のオンボーディング Issue に返信し、新しい上限とその理由を記載します。
+
+ブロックされているユーザーは、上書き設定の上限が現在の利用量を上回ると、すぐにブロックが解除されます。
+全ユーザーに適用するデフォルトの一律の上限も、同じページで設定します。
+
+Duo のシートは個別には削除できません。トップレベルグループで管理され、
+`gitlab-community/community-members` のメンバーから自動的に同期されます。コミュニティフォークのメンバーシップを維持したまま、
+ユーザーによる GitLab Duo Agent Platform の利用をブロックするには、そのユーザーの上限の上書き設定を `0` にします。
+コミュニティフォークから完全に削除するには、`gitlab-community/community-members` グループからそのユーザーを削除します。
 
 ### 製品ボーナスによる高価値貢献のハイライト {#highlighting-high-value-contributions-with-product-bonuses}
 

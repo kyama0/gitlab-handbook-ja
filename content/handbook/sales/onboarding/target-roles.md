@@ -1,11 +1,11 @@
 ---
 title: "Sales Quick Start (SQS) の対象セールス & カスタマーサクセス職"
 upstream_path: /handbook/sales/onboarding/target-roles/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+translated_at: "2026-10-10T21:04:20.427762+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-09T17:05:37Z"
 ---
 
 ## Sales Quick Start (SQS) の対象セールス & カスタマーサクセス職
@@ -22,7 +22,7 @@ Sales Quick Start (SQS) ワークショップは、新規のフィールドセ�
   - Renewals Manager (RM)
   - Solution Architect (SA)
   - Customer Success Manager (CSM)
-  - [Customer Success Engineer (CSE)](/handbook/customer-experience/csm/segment/cse/cse-tm-onboarding/)
+  - [Customer Success Engineer (CSE)](/handbook/customer-experience/csm/segment/cse/team-member-onboarding/)
   - Professional Services Engagement Manager、Practice Manager、Technical Architect
   - Area Sales Manager (ASM)、Regional Director (RD)、Vice President (VP)
   - Customer Success Manager および Director

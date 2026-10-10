@@ -10,7 +10,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 [Claude.ai](https://claude.ai/) を使って AI をワークフロー、ツール、プロセスに取り入れ、効率を高める方法を学びましょう。Claude を使うと、コンテンツの執筆、アウトラインやドキュメントの作成、コンテンツの要約、データベースマイグレーションや SQL ステートメントの生成、リファクタリングの推奨など、さまざまな作業ができます。
 
-## アクセス
+## アクセス {#access}
 
 [claude.ai](https://claude.ai/) を開き、SSO ログインにチームメンバーのメールアドレスを使用します。[Okta](/handbook/eta/corporate-it/end-user-services/okta/) の Claude タイルからもアクセスできます。[利用ガイドラインと FAQ](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#usage-guidelines-and-faqs)（社内）も確認してください。
 

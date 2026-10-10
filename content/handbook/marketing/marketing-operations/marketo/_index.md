@@ -2,11 +2,11 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: "/handbook/marketing/marketing-operations/marketo/"
-upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
-translated_at: "2026-09-23T21:05:43+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+translated_at: "2026-10-10T21:11:07.012339+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-09-22T17:08:38-06:00"
+lastmod: "2026-10-01T17:06:48-06:00"
 ---
 
 ## Marketo について {#about-marketo}
@@ -256,8 +256,8 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 | ------ | ------ | ------ | ------|
 | Follow Up Requested  | Workshop > Follow Up Requested, <br> Vendor Arranged Meetings > Follow Up Requested, <br> Sponsored Webcast > Follow Up Requested, <br> Survey > Follow up Requested, <br> Owned Event > Follow Up Requested, <br> Webcast > Follow Up Requested, <br> Field Event > Follow Up Requested, <br> Conference > Follow Up Requested, <br> Executive Roundtables > Follow Up Requested| +100 | 毎回 |
 | Meeting Requested, <br> Meeting Attended  | Conference > Meeting Attended, <br> Vendor Arranged Meeting > Meeting Requested   | +100 | 毎回 |
-| Inbound - High  | Contact Request, <br> Renewals, <br> In-app Health Check, <br> Duo Requests <br> | +100 | 1日1回 |
-| Inbound - Hand Raise  | [Hand Raise PQL](/handbook/product/product-principles/#a-pql-can-be-further-broken-down-into-two-types-usage-and-hand-raise) | +100 | 1日1回 |
+| Inbound - High  | Contact Request, <br> Renewals, <br> In-app Health Check, <br> Duo Requests <br> Beta - Score | +100 | 1 日 1 回 |
+| Inbound - Hand Raise  | [Hand Raise PQL](/handbook/product/product-principles/#a-pql-can-be-further-broken-down-into-two-types-usage-and-hand-raise) | +100 | 1 日 1 回 |
 | Web Chat - <br>Qualified  |ウェブチャットインタラクションまたはミーティング予約 | +100 | 30 日に 1 回 |
 |User Gems Past Champ |User Gems によって以前の champion としてタグ付けされた人物|+100|3 ヶ月に 1 回|
 <!--| [PTP Score](https://internal.gitlab.com/handbook/sales/propensity_models/)  |Propensity Model 経由で新たに 4 または 5 のスコアが割り当てられ、Lead Score Classification 経由で `A` または `B` のランキングが割り当てられた場合。<br> 詳細は[教育用デッキ](https://docs.google.com/presentation/d/1dxSXekzw-SIF1g4pjNf6QGNBUY1L6euggsqqr9BTHUY/edit#slide=id.g1d24c3e4ddd_5_252)またはハンドブックを参照 <br>  | +100 | 90日に1回 |-->
@@ -646,20 +646,20 @@ Marketo セグメンテーションはスマートリストに似ていますが
 
 ### アカウントベースドマーケティングリスト {#account-based-marketing-list}
 
-ABM リストは、フィールドマーケティングおよびマーケティングプログラムチームが、セールスによって優先度が高いと判断されたアカウントをターゲットにしてメール/招待状を送信するために、リクエストに応じて構築されます。これらのリストは [Marketo データベース](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52943077A1)の DMA フォルダで見つけることができます。
+ABM リストは、Field Marketing および Marketing Program チームが、Sales によって優先度が高いと判断されたアカウントをターゲットにしてメール/招待状を送信するために、リクエストに応じて構築されます。これらのリストは [Marketo データベース](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52943077A1)の DMA フォルダで見つけることができます。
 **MktgOps** チームは、これらのリストの作成と維持を担当しています。
 
 新しい ABM リストが必要な場合は、[Target list issue テンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して Issue を開き、marketing ops をタグ付けしてください。
 
 ### 地理的 DMA リスト {#geographic-dma-list}
 
-地理的 DMA（direct marketing area）は、フィールドマーケティングおよびマーケティングキャンペーンチームが、フィールド &/または企業マーケティングイベントに関連するメール/招待状をターゲットに送信するために構築されました。**MktgOps** チームは、これらのリストの作成と維持を担当しています。これらのリストは Marketo の `Database` の `Geographic DMA List` [フォルダ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52900024A1)で見つけることができます。
+地理的 DMA（direct marketing area）は、Field Marketing および Marketing Campaigns チームが、フィールド &/または企業マーケティングイベントに関連するメール/招待状をターゲットに送信するために構築されました。**MktgOps** チームは、これらのリストの作成と維持を担当しています。これらのリストは Marketo の `Database` の `Geographic DMA List` [フォルダ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52900024A1)で見つけることができます。
 
 新しい DMA リストが必要な場合は、Marketing Operations プロジェクトで Issue を開き、[DMA_request issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issuable_template=dma_request)を活用してください。
 
 #### フォーカスメールリスト {#focused-email-lists}
 
-フィールドマーケティングおよびマーケティングキャンペーンチームは、特定のリージョン、セクター、または企業を追求する際のツールとしてターゲットメールリストを使用します。メールリストリクエストは、[このテンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して提出する必要があります。そこから、キャンペーンマネージャーまたは marketing ops がリストを構築またはレビューします。
+Field Marketing および Marketing Campaigns チームは、特定のリージョン、セクター、または企業を追求する際のツールとしてターゲットメールリストを使用します。メールリストリクエストは、[このテンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して提出する必要があります。そこから、キャンペーンマネージャーまたは marketing ops がリストを構築またはレビューします。
 
 #### ターゲットリストの SLA {#sla-for-targeted-lists}
 
