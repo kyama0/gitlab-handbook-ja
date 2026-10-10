@@ -1,11 +1,11 @@
 ---
 title: Salesforce で社内サポートをリクエストする
 upstream_path: /handbook/sales/field-operations/requesting-internal-support/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+translated_at: "2026-10-10T21:04:20.427762+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-09T17:05:37Z"
 ---
 
 ## サポートを得る方法
@@ -61,7 +61,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
 - [Legal](/handbook/legal/customer-negotiations/#how-to-reach-commercial-legal)
   - Legal ケースは、Salesforce の商談からページ上部の「Legal Request」ボタンを選択して作成できます。
   - 貿易コンプライアンス管理のためにロックされたアカウントのレビューには @Legal
-- [CS サポートの依頼](/handbook/customer-experience/csm/segment/cse/cse-operating-rhythm/)
+- [CS サポートの依頼](/handbook/customer-experience/csm/segment/cse/pooled/)
   - 商談で、ドロップダウンメニューに移動して「CS Support」を選択し、以下のいずれかを依頼します。
     - CSE Help（エスカレーションではない）
     - At-Risk Account Help（CSM の赤アカウントと CSM/CSE エスカレーション）

@@ -1,10 +1,10 @@
 ---
-title: "Partner & Industry Marketing - MDF オペレーションプロセス"
+title: "Partner & Industry Marketing - Marketing Development Fund (MDF) の運用プロセス"
 description: "このページでは、MDF プログラムの運用プロセスについて詳しく説明します。"
 upstream_path: /handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-04T20:51:48+09:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+lastmod: "2026-10-09T14:49:22+02:00"
+translated_at: "2026-10-10T21:11:07.012339+00:00"
 translator: codex
 stale: false
 ---

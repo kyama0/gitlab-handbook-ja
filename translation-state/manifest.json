@@ -17730,11 +17730,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T01:30:32+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:10:21.636842+00:00",
       "model": "codex",
-      "input_hash": "ceff825ffd39bfff1bffee8f1abeafc08662a440f2d94dbb92b3d2915dc2a55b",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00"
+      "input_hash": "d97e48b796ad1384b889bef2e84c6d7ade75ccdbdba8948f8b6b9077d9d5c935",
+      "upstream_committed_at": "2026-10-08T17:43:12-04:00"
     },
     "content/handbook/marketing/developer-relations/engineering/community-hackathons.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-hackathons.md",
@@ -17754,11 +17754,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/core-team.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/core-team.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:31:06+09:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:04:20.427762+00:00",
       "model": "codex",
-      "input_hash": "52a8eb418a83fb476a295c1f8cf8c1362fcffd0a99e497c79d45f7a0a9b73881",
-      "upstream_committed_at": "2026-08-14T14:39:01+02:00"
+      "input_hash": "0a13d2f1d13040cb5cff9bf490ab9b27ab4b44062263b6b67a294b46208ec84e",
+      "upstream_committed_at": "2026-10-05T13:20:55-07:00"
     },
     "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md",
@@ -18682,11 +18682,11 @@
     },
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
-      "upstream_sha": "7a4e62958b31234a80d386bf4b7c8dd855df2cb8",
-      "translated_at": "2026-09-10T11:11:28+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:11:07.012339+00:00",
       "model": "codex",
-      "input_hash": "5d6e62d363ed7593dfab0372f39be7d06930074bf632568222a95fdc08a473e2",
-      "upstream_committed_at": "2026-09-09T09:54:36-06:00"
+      "input_hash": "fdebed898e3688c7bb07de921d7ca815c3613b78074e7b62b8db5d176c28e98b",
+      "upstream_committed_at": "2026-10-01T17:06:48-06:00"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
@@ -18810,11 +18810,11 @@
     },
     "content/handbook/marketing/marketing-operations/marketo/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/_index.md",
-      "upstream_sha": "81725dc1fe315a2e7d8a91637eb11f77d81b0ff7",
-      "translated_at": "2026-09-23T21:05:43+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:11:07.012339+00:00",
       "model": "codex",
-      "input_hash": "e2f5e775601e6e5d5d9778cd5e9ad6a9d95f17d3d907be35ade21dfba6d15863",
-      "upstream_committed_at": "2026-09-22T17:08:38-06:00"
+      "input_hash": "4eee7e7eff955dc9aed371ca0ec32b6844f854b49021d38ac7b586dac04260e6",
+      "upstream_committed_at": "2026-10-01T17:06:48-06:00"
     },
     "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md",
@@ -27722,11 +27722,11 @@
     },
     "content/handbook/sales/onboarding/_index.md": {
       "path": "content/handbook/sales/onboarding/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:04:20.427762+00:00",
       "model": "codex",
-      "input_hash": "743fe62c5e37989a0e7bcd231a68a66c52ee0d5d5b6c1532e43d3fa0bbfd9c7e",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "2995649de353e932ee42ced9ec81f15748a2b60c50e9bf161a0f654e4259e62f",
+      "upstream_committed_at": "2026-10-09T17:05:37Z"
     },
     "content/handbook/sales/onboarding/graduating-sqs.md": {
       "path": "content/handbook/sales/onboarding/graduating-sqs.md",
@@ -27754,11 +27754,11 @@
     },
     "content/handbook/sales/onboarding/target-roles.md": {
       "path": "content/handbook/sales/onboarding/target-roles.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:04:20.427762+00:00",
       "model": "codex",
-      "input_hash": "e1c1c074b0b95c9a18dfca22739bd87c5209775ac0375c5c4e8791cc575b9e28",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "092c7a72d317d1386782a581322ca7ea1442ccf1aa1d5b854735bb582ba30349",
+      "upstream_committed_at": "2026-10-09T17:05:37Z"
     },
     "content/handbook/sales/onboarding/sales-learning-path/_index.md": {
       "path": "content/handbook/sales/onboarding/sales-learning-path/_index.md",
@@ -28130,11 +28130,11 @@
     },
     "content/handbook/sales/field-operations/requesting-internal-support/_index.md": {
       "path": "content/handbook/sales/field-operations/requesting-internal-support/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:04:20.427762+00:00",
       "model": "codex",
-      "input_hash": "aceb45c0a105094de52e9f46e92ad3353426a781298a2608800bee15a4ae765f",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "529de28c3ef92a2e03fe0315e0b4fc9196dca99208a1c3be73e0b67382be317b",
+      "upstream_committed_at": "2026-10-09T17:05:37Z"
     },
     "content/handbook/sales/field-operations/gtm-resources/_index.md": {
       "path": "content/handbook/sales/field-operations/gtm-resources/_index.md",
@@ -36802,11 +36802,11 @@
     },
     "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process.md": {
       "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T20:51:48+09:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:11:07.012339+00:00",
       "model": "codex",
-      "input_hash": "48ae06f8409d0011db157531aee2d7628c0571dfdac02a2a4e6d53eb00d89958",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "a14e04cee9f25a43e88888d813ffe8ce9a6eff1d11476b88f92f0806cfb4527d",
+      "upstream_committed_at": "2026-10-09T14:49:22+02:00"
     },
     "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/partner-marketing-epics/_index.md": {
       "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/partner-marketing-epics/_index.md",
@@ -36890,11 +36890,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md",
-      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
-      "translated_at": "2026-10-04T21:11:10+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-10T21:07:58.905067+00:00",
       "model": "codex",
-      "input_hash": "f350bf19a129518a4e6d560819f5d957370787ab292d8f8c0a62fd3904531a0f",
-      "upstream_committed_at": "2026-10-02T09:21:12+02:00"
+      "input_hash": "f668bee655749bb72e60d4a2429e02d24c84772fb7e3ed558d3ecf758c60c7e1",
+      "upstream_committed_at": "2026-10-09T15:32:58+01:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md",
@@ -37394,11 +37394,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00",
-      "translated_at": "2026-09-20T01:42:40+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "upstream_committed_at": "2026-09-29T20:25:23+02:00",
+      "translated_at": "2026-10-10T21:10:21.636842+00:00",
       "model": "codex",
-      "input_hash": "f44a456827bab47cd92f0710526868afb25d250544c413ebb0205d53ee8409d8"
+      "input_hash": "1694d80b5ec96bc4ac1886804fa69b58ae394f2de7d9db209bae1c331396fa0b"
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/events.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/events.md",

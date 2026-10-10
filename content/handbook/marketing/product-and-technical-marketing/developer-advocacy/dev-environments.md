@@ -3,9 +3,9 @@ description: "Developer Advocacy のデモや技術作業のための開発環�
 linkTitle: "Development environments"
 title: "Developer Advocates の開発環境"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:42:40+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+lastmod: "2026-09-29T20:25:23+02:00"
+translated_at: "2026-10-10T21:10:21.636842+00:00"
 translator: codex
 stale: false
 ---
@@ -51,31 +51,34 @@ GitLab Duo は、[VS Code マーケットプレイスの GitLab Workflow 拡張�
 
 #### 推奨される設定と拡張機能 {#recommended-settings-and-extensions}
 
-1. 編集中の自動保存を有効にします。これにより、コードを書いているときのデータ損失や Git コミットデータの欠落を回避できます。
-   - UI: 左下隅の歯車アイコンをクリックして設定を開きます（ショートカット: macOS では `cmd ,`）。`auto save` を検索します。
-   - VS Code `settings.json`: `"files.autoSave": "afterDelay"` の新しいキー/値を追加します。
-1. デフォルトで折り返しを有効にします。これにより、横スクロールなしで長い行を読みやすくなります。
-   - UI: 左下隅の歯車アイコンをクリックして設定を開きます（ショートカット: macOS では `cmd ,`）。`word wrap` を検索します。
-   - VS Code `settings.json`: `"editor.wordWrap": "on"` の新しいキー/値を追加します。
-1. 定期的に必要な拡張機能をインストールし、信頼できるソースのみを使用します。
-   - [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/vscode-extensions-install.sh?ref_type=heads)でメンテナンスされているリストを確認してください
-   - CLI で `code --install-extension` を使って拡張機能をインストールできます。例: `code --install-extension gitlab.gitlab-workflow`。
+1. 編集中の自動保存を有効にします。コードを書くときのデータ損失や Git コミットへのデータの入れ忘れを防ぎます。
+   - UI：左下の歯車アイコンをクリックして設定を開きます（macOS のショートカット：`cmd ,`）。`auto save` を検索します。
+   - VS Code の `settings.json`：`"files.autoSave": "afterDelay"` の新しいキーと値を追加します。
+1. デフォルトで行の折り返しを有効にします。横にスクロールせずに長い行を読めるようになります。
+   - UI：左下の歯車アイコンをクリックして設定を開きます（macOS のショートカット：`cmd ,`）。`word wrap` を検索します。
+   - VS Code の `settings.json`：`"editor.wordWrap": "on"` の新しいキーと値を追加します。
+1. 日常的に必要な拡張機能をインストールし、信頼できる提供元のみを使用します。
+   - [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/vscode/extensions.txt?ref_type=heads)で保守されている拡張機能一覧を確認します。
+   - `code --install-extension` を使って CLI から拡張機能をインストールできます。例：`code --install-extension gitlab.gitlab-workflow`。
+   - [vscode-extensions-install.sh](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/vscode-extensions-install.sh?ref_type=heads) スクリプトは、一覧にあるすべての拡張機能をインストールします。`--discover` を使うと手動でインストールした拡張機能を表示し、`--update-inventory` を使うとそれらを基に一覧ファイルを更新できます。
 
 #### デモ設定: VS Code のプロファイルとテーマ {#demo-settings-profiles-and-themes-in-vs-code}
 
-VS Code のデフォルトプロファイルはダークテーマを使用します。
-
-```json
-"workbench.colorTheme": "Default Dark Modern",
-```
-
 ライトテーマは対面イベントのプロジェクターでよりよく機能し、[デモ録画](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#content-creation-guidelines)にも役立ちます。
 
+VS Code を macOS の外観設定に従わせ、デモ用のライトモードとダークモードの切り替えを 1 か所で行えるようにします。
+
 ```json
-"workbench.colorTheme": "Default Light Modern",
+{
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Dark Modern",
+    "workbench.preferredLightColorTheme": "Light Modern"
+}
 ```
 
-異なるテーマやインストールされた拡張機能を管理するため、`Default` と `Light theme for demos` など、複数のプロファイルを作成することが推奨されます。
+詳細は、[カラーテーマの自動検出に関する VS Code ドキュメント](https://code.visualstudio.com/docs/configure/themes#_automatically-switch-based-on-os-color-scheme)を確認してください。[@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles#whats-inside)は Ghostty、Starship、neovim にも同じ方法を使用しています。macOS の外観を切り替えると、すべてのツールが一斉に切り替わります。
+
+別の方法として、`Default` や `Light theme for demos` などの複数のプロファイルを作成し、異なるテーマやインストール済みの拡張機能を管理できます。
 
 必要なデモ録画設定については、[動画ガイドラインハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#content-creation-guidelines)を確認してください。
 
@@ -91,31 +94,13 @@ Chat を右サイドバーに移動するには:
 
 @dnsmichi はこのセットアップをデフォルトで使用しています。
 
-##### GitLab Duo Code Suggestions で追加の言語を有効にする {#enable-additional-languages-for-gitlab-duo-code-suggestions}
+##### GitLab Duo Code Suggestions {#gitlab-duo-code-suggestions}
 
-1. 2 つの方法から選択します:
-   - UI: 左下隅の歯車アイコンをクリックして設定を開きます。`gitlab.duoCodeSuggestions` を検索します。
-   - VS Code `settings.json`: macOS で `cmd shift p` を押してコマンドパレットを開き、`settings.json` を検索します。`"gitlab.duoCodeSuggestions.additionalLanguages"` のエントリを、文字列の配列を値として追加/変更します。
-1. `README.md` ファイルを編集する際にもっと多くのコード提案を見たい場合は、配列に `markdown` を追加します。
-   - @dnsmichi は、`settings.json` の以下の言語の品質と関連性に自信を持っています（開発テストサイクル: 1 年以上）:
+すべての言語に対応する Code Suggestions のサポートが、各 IDE に順次展開されています。現在の状況は、[Duo Agent Platform 全体で「すべて」のプログラミング言語をサポートする](https://gitlab.com/gitlab-org/gitlab/-/work_items/571515)を確認してください。VS Code では、`gitlab.duoCodeSuggestions.additionalLanguages` の設定は不要になりました。
 
-    ```json
-    {
-        "gitlab.duoCodeSuggestions.additionalLanguages": [
-            "powershell",
-            "yaml",
-            "ansible",
-            "perl",
-            "dockerfile",
-            "markdown",
-            "json"
-        ],
-    }
-    ```
+Code Suggestions には適切なコンテキストが重要です。現在のタスクに関連するタブをさらに開いてください。それらが[コンテキスト](https://docs.gitlab.com/user/project/repository/code_suggestions/context/)として使用されます。
 
-1. Code Suggestions が適切なコンテキストを持つことは重要です: 現在のタスクに関連するタブをもっと多く開いてください。それらは[コンテキスト](https://docs.gitlab.com/user/project/repository/code_suggestions/#the-context-code-suggestions-is-aware-of)として使用されます。
-
-完全な VS Code `settings.json` の例は [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/vscode/settings.json?ref_type=heads)にあります。
+VS Code の `settings.json` の完全な例は、[@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/.config/vscode/settings.json?ref_type=heads)にあります。
 
 #### VS Code 拡張機能と GitLab Duo Agent Platform をデバッグする {#debug-vs-code-extensions-and-gitlab-duo-agent-platform}
 
@@ -132,8 +117,6 @@ Chat を右サイドバーに移動するには:
 1. オプション: ログの詳細度を `debug` に上げます:
    - 左下隅の歯車アイコンをクリックして設定を開きます（ショートカット: macOS では `cmd ,`）。設定ツリーで `GitLab` または `gitlab` を検索します。
    - `GitLab: Debug` チェックボックスにチェックを入れ、VS Code を再起動します。
-
-[GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/)は、コマンドを実行するためにターミナルも生成します。実行がブロックされたり無限に実行されたりする場合は、[Oh-My-ZSH や Powerlevel10k などのターミナル統合を無効にする](https://docs.gitlab.com/user/duo_agent_platform/troubleshooting/#ide-commands-fail-or-run-indefinitely)かどうかを調査してください。
 
 ### JetBrains IDE {#jetbrains-ides}
 
@@ -162,11 +145,10 @@ GitLab Duo は、[JetBrains マーケットプレイスの GitLab Duo プラグ�
 
 #### JetBrains IDE のヒントとベストプラクティス {#tips-and-best-practices-for-jetbrains-ides}
 
-1. [利用可能な IDE ライセンス](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/licenses/)を確認し、必要に応じて追加の恒久的な IDE ライセンスのアクセスリクエストを作成します。
-1. [セットアップと設定のガイド](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/)を読み、[JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/)をインストールして個々の IDE とそのアップデートを管理します。
-   - オプションのヒント: デフォルトでは、ツールボックスは古いインストール済みバージョンを保持します。この動作がストレージ消費の問題を引き起こす場合は、`Tools > Keep previous versions to enable instant rollback` の設定を無効にします。
-   - JetBrains IDE は、既存のセットアップから設定を移行/インポートできます。これは、GitLab Duo プラグインを一度インストール/設定し、それを別の JetBrains IDE にインポートするのに便利です。
-1. [GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/)は、コマンドを実行するためにターミナルも生成します。実行がブロックされたり無限に実行されたりする場合は、[Oh-My-ZSH や Powerlevel10k などのターミナル統合を無効にする](https://docs.gitlab.com/user/duo_agent_platform/troubleshooting/#ide-commands-fail-or-run-indefinitely)かどうかを調査してください。
+1. [利用可能な IDE ライセンス](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/licenses/)を確認し、必要に応じて追加の永続的な IDE ライセンスの Access Request を作成します。
+1. [セットアップと設定ガイド](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/)を読み、[JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/) をインストールして、個々の IDE とその更新を管理します。
+   - 任意のヒント：デフォルトでは、Toolbox はインストール済みの古いバージョンを保持します。この動作でストレージ消費に問題が生じる場合は、`Tools > Keep previous versions to enable instant rollback` の設定を無効にしてください。
+   - JetBrains IDEs は、既存のセットアップから設定を移行またはインポートできます。GitLab Duo プラグインを一度インストールして設定し、別の JetBrains IDE にインポートできるため便利です。
 
 #### デモ設定: JetBrains IDE の外観 {#demo-settings-appearance-in-jetbrains-ides}
 
@@ -194,7 +176,7 @@ GitLab Duo は、[Eclipse マーケットプレイスの GitLab 拡張機能](ht
 
 ### neovim {#neovim}
 
-> ヒント: [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)のフォークを使って新しい neovim 設定を開始し、neovim 体験をブートストラップして最適化します。
+> ヒント：[LazyVim](https://www.lazyvim.org/) で neovim の新しい設定を始めると、適切なデフォルト値で事前設定された環境を利用し、プラグインでカスタマイズできます。実運用の例は、[@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/tree/main/.config/nvim?ref_type=heads)にあります。
 
 GitLab Duo は、[neovim プラグイン](https://docs.gitlab.com/editor_extensions/neovim/)を使って統合できます。
 
@@ -204,19 +186,12 @@ GitLab Duo は、[neovim プラグイン](https://docs.gitlab.com/editor_extensi
 
 GitLab Duo CLI は、ターミナルで [GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/)へのアクセスを提供します。
 
-要件:
+インストールと設定は、[GitLab Duo CLI ドキュメント](https://docs.gitlab.com/user/gitlab_duo_cli/)に従ってください。
 
-1. NodeJS 22+ をインストールします。例えば [mise](#mise-for-managing-language-runtimes)を使用します
-1. `api` スコープを持つパーソナルアクセストークンを作成します。
-1. CLI をインストールします。
-1. CLI を実行して設定ダイアログを開始します。
+ヒント：たとえば `~/.zshrc` に、`duo` で Duo CLI を起動するシェルエイリアスを追加します。実運用の例は、[@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/.config/zsh/aliases.zsh?ref_type=heads)にあります。
 
 ```shell
-mise install node@22
-
-npm i -g @gitlab/duo-cli
-
-duo
+alias duo='glab duo cli'
 ```
 
 使用例:
@@ -241,13 +216,12 @@ CLI は [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)
 
 Claude Code へのアクセスを得ることは、コンテンツ作成に役立ちます。例えば、このブログチュートリアル [Claude Code と GitLab：成果につながる 3 つのワークフロー](https://about.gitlab.com/blog/claude-code-and-gitlab/)があります。
 
-1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認し、Anthropic API キーの[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)を作成します。[例（内部向け）](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/39031)
-1. [Claude Console](https://platform.claude.com/settings/keys)で API キーを作成します
-1. [Claude Code](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code)をインストールします
-1. Console API キーで Claude Code に認証します。
+1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認します。Claude Code には GitLab の Claude Enterprise サブスクリプションへのアクセスが必要です。[Claude のハンドブックページ](/handbook/tools-and-tips/ai/claude/#access)を参照してください。
+1. [Claude Code](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code) をインストールします。
+1. `claude` を実行し、ログイン方法として `Claude account with subscription` を選択します。ブラウザのログインフローに従い、チームメンバーのメールアドレスを使って SSO でログインします。
 
 ```shell
-claude auth login
+claude
 ```
 
 プロジェクトに移動し、Claude Code に `What is this project about?` とプロンプトを送ります。
@@ -287,6 +261,24 @@ codex login status
 プロジェクトの例:
 
 - [dnsmichi の文体](https://gitlab.com/dnsmichi/dotfiles/-/tree/main/skills/tone-of-voice?ref_type=heads)
+
+ヒント：スキルを 1 つの Git リポジトリで管理し、シンボリックリンクを使って AI ツール間で共有します。各ツールは専用のディレクトリからスキルを読み込みます。
+
+| AI ツール | スキルのディレクトリ |
+| --- | --- |
+| GitLab Duo Agent Platform | `~/.gitlab/duo/skills/` |
+| Claude Code | `~/.claude/skills/` |
+| Codex および Agent Skills 標準に従うその他のツール | `~/.agents/skills/` |
+
+```shell
+mkdir -p ~/.gitlab/duo/skills ~/.claude/skills ~/.agents/skills
+
+ln -sfn ~/dotfiles/skills/tone-of-voice ~/.gitlab/duo/skills/tone-of-voice
+ln -sfn ~/dotfiles/skills/tone-of-voice ~/.claude/skills/tone-of-voice
+ln -sfn ~/dotfiles/skills/tone-of-voice ~/.agents/skills/tone-of-voice
+```
+
+[@dnsmichi の dotfiles プロジェクトの setup.sh スクリプト](https://gitlab.com/dnsmichi/dotfiles/-/blob/main/setup.sh?ref_type=heads)は、セットアップ時にすべてのスキルをリンクする作業を自動化します。
 
 ### AGENTS.md {#agentsmd}
 
@@ -498,7 +490,7 @@ Developer Advocates は `mise` を以下の用途に使用できます:
 
 ### チームメンバーの例 {#team-member-examples}
 
-- [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles)。IDE や開発ツールを含む作業環境のセットアップを文書化しています。
+- [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles)は、ターミナル、IDE、エージェント型 AI、開発ツールを含む作業環境のセットアップを文書化した実運用の例です。
 
 ### 開発環境を取り上げた講演とデモ {#talks-and-demos-highlighting-dev-environments}
 

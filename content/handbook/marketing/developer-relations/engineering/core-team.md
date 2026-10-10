@@ -1,9 +1,9 @@
 ---
 title: "Core Team"
 upstream_path: /handbook/marketing/developer-relations/engineering/core-team/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-lastmod: "2026-08-14T14:39:01+02:00"
-translated_at: "2026-08-15T06:31:06+09:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+lastmod: "2026-10-05T13:20:55-07:00"
+translated_at: "2026-10-10T21:04:20.427762+00:00"
 translator: codex
 stale: false
 ---
@@ -111,7 +111,7 @@ details summary * {
 - frontend_maintainers
 - frontend_pairs
 - g_development_tooling
-- g_development-analytics
+- g_development_health
 - g_engineering_productivity
 - g_gitaly
 - g_monitor_platform_insights
