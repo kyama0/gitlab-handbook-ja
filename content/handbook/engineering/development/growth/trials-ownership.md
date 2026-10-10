@@ -2,9 +2,9 @@
 title: トライアルのオーナーシップとコラボレーションのフレームワーク
 description: "Growth と Fulfillment/Monetization にまたがるトライアル業務の概念的なオーナーシップモデルと意思決定フレームワーク"
 upstream_path: /handbook/engineering/development/growth/trials-ownership/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-07-03T00:57:12+00:00"
-translated_at: "2026-07-10T20:10:12+09:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+lastmod: "2026-10-01T08:11:54+02:00"
+translated_at: "2026-10-10T06:55:21.889977+00:00"
 translator: codex
 stale: false
 ---
@@ -50,7 +50,7 @@ CustomersDot 内の境界線は深さです。Growth はトライアルの **エ
 ユーザー向けの機能ではないものの、トライアルシステムを健全に保つ業務、すなわちトライアルコードベース内の **可観測性、監視、パフォーマンス改善、信頼性、技術的負債、リファクタリング** は、コードベースオーナーである **Fulfillment/Monetization** が所有します。これは、そのコードに最後に機能をリリースしたチームに関係なく適用されます。
 
 {{% alert title="サポートとオンコールは Fulfillment が引き続き担当します" color="warning" %}}
-**Growth が作成または変更した場合でも、薄いトライアルエントリーレイヤーを含め、CustomersDot のすべての運用サポート、インシデント、オンコールは Fulfillment/Monetization が引き続き担当します。** エントリーレイヤーのコードにコントリビュートしても、CustomersDot のサポート負担が Growth に移ることはありません。これにより、有料顧客を支える本番システムの責任が分断されることを避け、CustomersDot のオンコールとインシデント対応を 1 人のオーナーのもとに維持します。
+**Growth が作成または変更した場合でも、薄いトライアルエントリーレイヤーを含め、CustomersDot のすべての運用サポート、インシデント、オンコールは Fulfillment/Monetization が引き続き担当します。** エントリーレイヤーのコードにコントリビュートしても、CustomersDot のサポート負担が Growth に移ることはありません。これにより、有料顧客を支える本番システムの責任が分断されることを避け、CustomersDot のオンコールとインシデント対応を 単一のオーナーのもとに維持します。
 {{% /alert %}}
 
 実際には、以下のようになります。
@@ -109,7 +109,7 @@ Growth のチームメンバーは、**トライアルのエントリーレイ�
 Growth は、請求、サブスクリプション、プロビジョニングインフラストラクチャ、または有料顧客に影響する共有システムに関する変更について、Fulfillment/Monetization のトライアルコードベースオーナーに関与を求める必要があります。
 
 {{% alert title="チーム名に関する注記" color="info" %}}
-このページでは、一元化されたオーナーシップモデルを反映し、トライアルコードベースオーナーを **Fulfillment/Monetization** と表記します。現在この業務を行うチームは、Fulfillment 組織のもとで活動しています（以前の Provision チーム）。以下のリンクは、組織再編がハンドブックに完全に反映されるまで、現在の Fulfillment/Provision のハンドブックページを指します。
+このページでは、一元化されたオーナーシップモデルを反映し、トライアルコードベースオーナーを **Fulfillment/Monetization** と表記します。現在この業務を行うのは、[Fulfillment セクション](../fulfillment/#teams)の Entitlements グループ（旧 Provision チーム）です。
 {{% /alert %}}
 
 **コードベースオーナーが所有する変更の例:**
@@ -126,7 +126,7 @@ Growth は、請求、サブスクリプション、プロビジョニングイ�
 1. 適切な受付テンプレートを使用し、[fulfillment-meta](https://gitlab.com/gitlab-org/fulfillment-meta)プロジェクトで Issue を作成する
 2. [#s_fulfillment](https://gitlab.slack.com/channels/s_fulfillment)で連絡し、リクエストについて話し合う
 3. アプローチとタイムラインを合わせるため、必要に応じて同期ミーティングを設定する
-4. コードベースオーナーの [プロジェクト管理プロセス](../fulfillment/provision/#project-management-process)に従う
+4. コードベースオーナーの [プロジェクト管理プロセス](../fulfillment-monetization/#project-management-process)に従う
 5. DRI として Fulfillment/Monetization のチームメンバーと実装について協力する
 
 ### 判断と相談
@@ -266,12 +266,12 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 **既存の有料顧客が、プロダクト内からアドオンまたは上位ティアを試用する。**
 
 - **オーナー:** 共有。Growth はアドオントライアルを開始するプロダクト内の拡張／アップグレードの接点（エントリーポイント、ステップ 1～3）を所有し、Fulfillment/Monetization はその付与に関するエンタイトルメント、プロビジョニング、請求（ステップ 4～6）を所有します。これは、モデルにおける既存の有料顧客の状態です。
-- **行うこと:** Growth がエントリーポイント／CTA を実装して計測 → エンタイトルメントとプロビジョニングについて Fulfillment/Monetization に関与を求める → **申請契約**（トライアルのエンタイトルメントを付与、追跡、失効する方法）について合意 → 共同レビュー → 調整されたデプロイ。
+- **行うこと:** Growth がエントリーポイント／CTA を実装して計測 → エンタイトルメントとプロビジョニングについて Fulfillment/Monetization に関与を求める → **申請データの受け渡し仕様**（トライアルのエンタイトルメントを付与、追跡、失効する方法）について合意 → 共同レビュー → 調整されたデプロイ。
 
 **新しいエントリー体験と新しいプロビジョニングの両方を備えた新しいトライアルタイプ。**
 
 - **オーナー:** 共有 — 業務を分割します。Growth がエントリーポイント（ステップ 1～3）のスコープを定め、Fulfillment/Monetization が作成／エンタイトルメント／プロビジョニング（ステップ 4～6）のスコープを定めます。
-- **行うこと:** 2 つの部分の間の申請契約について事前に合意 → 両方のバックログにまたがるリンクされた Issue として追跡 → エントリーポイントの変更は通常プロビジョニング側に依存するため、マイルストーンを調整。
+- **行うこと:** 2 つの部分の間の申請データの受け渡し仕様について事前に合意 → 両方のバックログにまたがるリンクされた Issue として追跡 → エントリーポイントの変更は通常プロビジョニング側に依存するため、マイルストーンを調整。
 
 ### 判断が必要 — 最初に相談する
 
@@ -296,10 +296,10 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 
 ### 関連ドキュメント
 
-- [Provision チームのハンドブック](../fulfillment/provision/) - Provision チームのプロセスとプロジェクト管理
+- [Fulfillment セクションのハンドブック](../fulfillment/#teams) - Entitlements グループ（旧 Provision）
 - [Growth チームのハンドブック](./) - Growth チームのプロセスと実験ガイドライン
 - [Growth の実験ガイドライン](./experimentation/) - Growth が実験を実施する方法
-- [Fulfillment のプロジェクト管理プロセス](../fulfillment/#project-management-process) - Fulfillment の受付と計画
+- [Fulfillment のプロジェクト管理プロセス](../fulfillment-monetization/#project-management-process) - Fulfillment の受付と計画
 - [Growth-Feature Product Owner のコラボレーションプロセス](../../../product/groups/growth/#collaboration-process-with-other-product-teams) - Growth の一般的なコラボレーションモデル
 
 ### 技術リソース
@@ -312,8 +312,8 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 
 - **Growth Product Director:** [Growth チームのハンドブック](./#leadership)を参照
 - **Growth Engineering Director:** [Growth チームのハンドブック](./#leadership)を参照
-- **Trial Codebase Engineering Manager（Fulfillment/Monetization）:** [Provision チームのハンドブック](../fulfillment/provision/#team-members)を参照
-- **Fulfillment/Monetization Product Management:** [Provision のステーブルカウンターパート](../fulfillment/provision/#stable-counterparts)を参照
+- **Trial Codebase Engineering Manager（Fulfillment/Monetization）:** [Fulfillment のチーム](../fulfillment/#teams)の Entitlements グループを参照
+- **Fulfillment/Monetization Product Management:** [Fulfillment のチームの Entitlements](../fulfillment/#teams)と[共有のステーブルカウンターパート](../fulfillment-monetization/#stable-counterparts)を参照
 
 ## フィードバックとイテレーション
 

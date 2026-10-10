@@ -4,18 +4,18 @@ owning-stage: "~devops::package"
 description: "Artifact Registry のストレージ、アーティファクトサイズ、API レート、並行数、エンティティ数の上限"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits/
-upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
-translated_at: "2026-06-23T06:53:07+09:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-10T07:02:52+00:00"
 translator: codex
 stale: false
-lastmod: "2026-06-22T08:45:45+01:00"
+lastmod: "2026-10-07T10:11:21+01:00"
 ---
 
-## 背景
+## 背景 {#context}
 
-Artifact Registry は、システム安定性を確保し、不正利用を防ぎ、予測可能なリソース消費を可能にするため、明示的な上限を定義する必要があります。これらの上限は、データの保持期間を管理するデータ保持ポリシー（[ADR-010](010_data_retention.md) を参照）とは異なります。ここでの上限は、任意の時点でどれだけのデータと操作が許可されるかを管理します。
+Artifact Registry は、システム安定性を確保し、不正利用を防ぎ、予測可能なリソース消費を可能にするため、明示的な上限を定義する必要があります。これらの上限は、データの保持期間を管理するデータ保持ポリシー（[ADR-010](010_data_retention.md)を参照）とは異なります。ここでの上限は、任意の時点でどれだけのデータと操作が許可されるかを管理します。
 
-定義された上限がなければ、少数のテナントが不釣り合いなリソースを消費し、すべての顧客のサービス品質を劣化させる可能性があります。CI/CD ワークロードは非常にスパイクのあるトラフィックを生み出します（[ADR-003](003_system_requirements.md) を参照）。バースト制御は特に重要です。
+定義された上限がなければ、少数のテナントが不釣り合いなリソースを消費し、すべての顧客のサービス品質を劣化させる可能性があります。CI/CD ワークロードは非常にスパイクのあるトラフィックを生み出します（[ADR-003](003_system_requirements.md)を参照）。バースト制御は特に重要です。
 
 本 ADR では、3 つのタイプの制約を区別します。
 
@@ -27,32 +27,32 @@ Artifact Registry は、システム安定性を確保し、不正利用を防�
 
 本 ADR では、**上限**（アーティファクトサイズ、API レート、エンティティ数）と **クォータ**（ストレージ）を扱います。
 
-Artifact Registry は GitLab.com 規模をターゲットとします: 定常状態で毎秒数千の API リクエスト、合計数十ペタバイトのデータ、大規模 Organization あたり数百万のアーティファクト（[ADR-003](003_system_requirements.md) を参照）。上限は正当なエンタープライズワークロードを支えるのに十分高く、かつ単一の namespace がサービスを不安定にしないように低くする必要があります。
+Artifact Registry は GitLab.com 規模をターゲットとします: 定常状態で毎秒数千の API リクエスト、合計数十ペタバイトのデータ、大規模 Organization あたり数百万のアーティファクト（[ADR-003](003_system_requirements.md)を参照）。上限は正当なエンタープライズワークロードを支えるのに十分高く、かつ単一の namespace がサービスを不安定にしないように低くする必要があります。
 
 該当する場合、上限はパッケージレジストリとコンテナレジストリで既に確立されたものと整合または拡張し、GitLab レジストリ全体で一貫した体験を提供します。
 
-## 決定
+## 決定 {#decision}
 
 **Artifact Registry は、Artifact Registry のテナンシーおよびパーティション境界である namespace レベルで、ストレージ（クォータ）、アーティファクトサイズ（上限）、API レート（上限）、エンティティ数（上限）の 4 つの次元にわたってクォータと上限を強制します。レート上限とストレージクォータのプランティアごとのデフォルトは、請求アンカー（Organization）から継承されますが、すべての上限は namespace ごとに強制および計測されます。複数の namespace を所有する Organization は、それらの namespace の利用量合計に対して請求されます。namespace をまたいだ重複排除やプーリングはありません。**
 
 アーティファクトサイズ上限とエンティティ数上限は、すべてのインストールタイプで同じデフォルトを使用します。レート上限は GitLab.com ではプラン依存です。各プランティアが独自のデフォルトレート上限を定義し、個別の namespace は正当な高負荷利用に対してカスタムオーバーライドを受け取れます。Self-Managed では、管理者がインスタンスレベルですべての上限を調整できます。
 
-### ストレージクォータ
+### ストレージクォータ {#storage-quota}
 
-ストレージクォータは namespace レベルで強制されます。ストレージは namespace 内のすべての一意な Blob の重複排除済み合計として計測されます。重複排除は [ADR-002](002_storage_deduplication_scope.md) と整合して namespace ごとにスコープされます。namespace をまたいだ重複排除はありません。複数の namespace を所有する Organization は、各 namespace のストレージ合計を消費し、その合計に対して請求されます。Organization は引き続き請求アンカーです（[ADR-001](001_organizations_as_anchor_point.md)）。
+ストレージクォータは namespace レベルで強制されます。ストレージは namespace 内のすべての一意な Blob の重複排除済み合計として計測されます。重複排除は [ADR-002](002_storage_deduplication_scope.md)と整合して namespace ごとにスコープされます。namespace をまたいだ重複排除はありません。複数の namespace を所有する Organization は、各 namespace のストレージ合計を消費し、その合計に対して請求されます。Organization は引き続き請求アンカーです（[ADR-001](001_organizations_as_anchor_point.md)）。
 
 | クォータ | デフォルト | 注 |
 | ----- | ------- | ----- |
-| namespace あたり最大ストレージ | プラン依存（SKU ベース） | Artifact Registry は新しい premium SKU です（[概要](../_index.md) を参照）。ストレージクォータは購入したアドオンによって定義されます |
+| namespace あたり最大ストレージ | プラン依存（SKU ベース） | Artifact Registry は新しいプレミアム SKU です（[概要](../_index.md)を参照）。ストレージクォータは購入したアドオンによって定義されます |
 | リポジトリあたり最大ストレージ | デフォルトでは厳格な制限なし | namespace レベルで構成可能なオプショナルな警告閾値。超過時に namespace オーナーに通知されますが、アップロードはブロックされません |
 
 警告閾値（例: クォータの 80%）は namespace ごとに構成できます。利用がこの閾値を超えると、namespace オーナーに通知されますが、クォータに完全に達するまでアップロードはブロックされません。
 
 新しいアップロードセッションを受け入れる前に、システムは namespace がストレージクォータに達しているか超過しているかを確認します。namespace にまだ余裕がある場合、アップロードは受け入れられ、利用カウンターは正常完了後に更新されます。namespace が既にクォータに達しているか超過している場合、アップロードセッションは拒否されます。
 
-利用カウンターは正常アップロードごとに更新されるため、並行アップロードセッションはそれぞれ独立してクォータチェックを通過し、合計でクォータをわずかに超過する可能性があります。これは許容されます。厳密な強制はすべてのアップロードを直列化することを必要とし、[ADR-003](003_system_requirements.md) の並行性目標と矛盾します。超過は並行アップロード数によって境界付けられ、次のクォータチェックで修正されます。
+利用カウンターは正常アップロードごとに更新されるため、並行アップロードセッションはそれぞれ独立してクォータチェックを通過し、合計でクォータをわずかに超過する可能性があります。これは許容されます。厳密な強制はすべてのアップロードを直列化することを必要とし、[ADR-003](003_system_requirements.md)の並行性目標と矛盾します。超過は並行アップロード数によって境界付けられ、次のクォータチェックで修正されます。
 
-### アーティファクトサイズ上限
+### アーティファクトサイズ上限 {#artifact-size-limits}
 
 アーティファクトサイズ上限はアーティファクトタイプによって異なります。以下のデフォルト値はすべてのインストールタイプに適用されます。Self-Managed では、管理者がインスタンスレベルでこれらのデフォルトをオーバーライドできます。
 
@@ -71,33 +71,35 @@ Artifact Registry は GitLab.com 規模をターゲットとします: 定常状
 
 アップロードセッションには非アクティブタイムアウトが課されます。タイムアウトウィンドウ内にデータが受信されない場合、セッションは終了し、部分的にアップロードされたデータは破棄されます。これにより、Slowloris のような低速 DoS 攻撃を緩和し、アイドル状態のセッションがリソースを無期限に保持することを防ぎます。
 
-### レート上限
+### レート上限 {#rate-limits}
 
 レート上限は API を不正利用から保護し、単一のユーザーまたは namespace が共有インフラを使い果たすのを防ぎます。レート上限違反は HTTP 429（Too Many Requests）と `Retry-After` ヘッダーを返します。
 
 Self-Managed では、管理者がインスタンスレベルでレート上限のデフォルトをオーバーライドできます。
 
-GitLab.com では、レート上限は最初はロギング／警告モードでデプロイされ、トラフィック分布が分析された後にのみ強制されます（[ロールアウト戦略](#implementation-notes) を参照）。この段階的ロールアウトは、合理的なデフォルトを確立するための一回限りのプロセスです。Self-Managed では、管理者は直接レート上限を構成し強制できます。
+GitLab.com では、レート上限は最初はロギング／警告モードでデプロイされ、トラフィック分布が分析された後にのみ強制されます（[ロールアウト戦略](#implementation-notes)を参照）。この段階的ロールアウトは、合理的なデフォルトを確立するための一回限りのプロセスです。Self-Managed では、管理者は直接レート上限を構成し強制できます。
 
-#### IP ベースの上限
+Artifact Registry サービスは制限を段階的に提供します。まず namespace ごとの制限を Maven の仮想リポジトリの読み取り経路とともに提供し、IP ベースとユーザーごとの制限は、それぞれを利用する機能とともに導入します。
 
-IP ベースのレート上限は、不正利用に対する最外層の防御を提供し、ロールアウト中に最初に導入される上限です（[ロールアウト戦略](#implementation-notes) を参照）。これは [コンテナレジストリの GCRA ベースのミドルウェア](https://gitlab.com/gitlab-org/container-registry/-/issues/1225) を再利用します。初期デフォルト値は、本番トラフィック分析に基づいて Observe フェーズ中に決定されます。
+#### IP ベースの上限 {#ip-based-limits}
 
-#### ユーザーごとの上限
+IP ベースのレート上限は、不正利用に対する最外層の防御を提供します。[Container Registry のレート制限ミドルウェア](https://gitlab.com/gitlab-org/container-registry/-/issues/1225)のパターンを再利用します。これは GCRA と名付けられたトークンバケットで、`gcra.lua` が `tokens += elapsed × refill_rate` によってトークンを補充し、拒否時にはバケットをゼロにします。IP をキーとし、呼び出し元の時計を使用します。Artifact Registry サービスが取り入れるのはコードではなく、このパターンです。単一の Lua スクリプトを介して Redis 側にキーごとのセルを 1 つ持ち、`go-redis/redis_rate` を通じて GCRA を実装します。この実装は Redis サーバーの時計を読み取り、拒否時にはトークンを消費しません。初期デフォルト値は、本番トラフィック分析に基づいて Observe フェーズ中に決定されます。
 
-ユーザーごとのレート上限はプラン依存です。Organization 内のユーザーは、その Organization のプランティアからデフォルトを継承します。プランごとのデフォルト値は、ユーザーごとのトラフィック分布に基づいて [ロールアウト戦略](#implementation-notes) の Observe フェーズ中に決定されます。既存の [パッケージレジストリレート上限](https://docs.gitlab.com/administration/settings/package_registry_rate_limits/) がベースライン参照として機能します。
+#### ユーザーごとの上限 {#per-user-limits}
 
-#### Namespace ごとの上限
+ユーザーごとのレート上限はプラン依存です。Organization 内のユーザーは、その Organization のプランティアからデフォルトを継承します。プランごとのデフォルト値は、ユーザーごとのトラフィック分布に基づいて [ロールアウト戦略](#implementation-notes)の Observe フェーズ中に決定されます。既存の [パッケージレジストリレート上限](https://docs.gitlab.com/administration/settings/package_registry_rate_limits/)がベースライン参照として機能します。
 
-Namespace ごとのレート上限はプラン依存です。各プランティア（Premium、Ultimate）が独自のデフォルトレート上限を定義し、namespace の請求アンカーから継承されます。個別の namespace は構成のファーストクラスのプロパティとして独自のレート上限を持つことができ、例外単位で管理されるのではなく、同じプランのすべての namespace のデフォルトを引き上げずに正当な高負荷利用に対応します。プランごとのデフォルト値は、namespace ごとのトラフィック分布に基づいて [ロールアウト戦略](#implementation-notes) の Observe フェーズ中に決定されます。
+#### Namespace ごとの上限 {#per-namespace-limits}
+
+Namespace ごとのレート上限はプラン依存です。各プランティア（Premium、Ultimate）が独自のデフォルトレート上限を定義し、namespace の請求アンカーから継承されます。個別の namespace は構成のファーストクラスのプロパティとして独自のレート上限を持つことができ、例外単位で管理されるのではなく、同じプランのすべての namespace のデフォルトを引き上げずに正当な高負荷利用に対応します。プランごとのデフォルト値は、namespace ごとのトラフィック分布に基づいて [ロールアウト戦略](#implementation-notes)の Observe フェーズ中に決定されます。
 
 このティア分けされたアプローチは、単一のグローバルデフォルトの問題を回避します。重い正当ユーザー向けに 1 つの値を高く設定すると、残り全員にレート上限を実質的に無効にします。プランベースのデフォルトと namespace ごとのオーバーライドにより、プラットフォームは下位ティアでは不正利用から保護し、上位ティアでは大量利用顧客をサポートできます。
 
 Namespace レベルの上限は、プラットフォームの主要な保護メカニズムです。ユーザーごとの上限は、単一のユーザーが namespace の全クォータを消費するのを防ぐための二次層を提供します。
 
-#### 並行アップロードセッション
+#### 並行アップロードセッション {#concurrent-upload-sessions}
 
-並行アップロードセッション上限は、ユーザーあたりおよび namespace あたりの進行中アップロード数をキャップします。これにより、単一のアクターがアップロードインフラを独占するのを防ぎます。レート上限と同様、並行アップロードセッション上限はプラン依存です。プランごとのデフォルト値は [ロールアウト戦略](#implementation-notes) の Observe フェーズ中に決定されます。
+並行アップロードセッション上限は、ユーザーあたりおよび namespace あたりの進行中アップロード数をキャップします。これにより、単一のアクターがアップロードインフラを独占するのを防ぎます。レート上限と同様、並行アップロードセッション上限はプラン依存です。プランごとのデフォルト値は [ロールアウト戦略](#implementation-notes)の Observe フェーズ中に決定されます。
 
 ### エンティティ数上限 {#entity-count-limits}
 
@@ -113,9 +115,9 @@ Namespace レベルの上限は、プラットフォームの主要な保護メ�
 
 アップストリームソースとライフサイクルポリシールールの上限は、書き込み時に同期的に強制されます。これらの上限を超えようとする試みは HTTP 422（Unprocessable Entity）を返します。
 
-## 結果
+## 結果 {#consequences}
 
-### ポジティブ
+### ポジティブ {#positive}
 
 1. **システム安定性**: 明示的な上限により、ランナウェイワークロードが共有インフラを不安定にするのを防ぐ
 2. **予測可能なパフォーマンス**: 境界のあるポリシー評価とプロキシチェーンの複雑さにより、メタデータクエリがスケールでも高性能を保つ
@@ -123,57 +125,57 @@ Namespace レベルの上限は、プラットフォームの主要な保護メ�
 4. **公平なマルチテナンシー**: namespace スコープのレート上限、ストレージクォータ、エンティティキャップにより、テナント間でリソースを分配する
 5. **強制可能な SLA**: 定義された上限は、API 応答時間に対する意味のある SLO 設定の前提条件
 
-### ネガティブ
+### ネガティブ {#negative}
 
 1. **顧客摩擦**: 正当な大量利用ワークロードがデフォルト上限に達し、手動でのクォータ増加が必要になる可能性
 2. **運用オーバーヘッド**: クォータ管理は利用のモニタリングと上限増加リクエストの処理という継続的な作業を追加
 3. **結果整合性のあるストレージアカウンティング**: 利用カウンターは非同期に更新される。大規模アップロード後の短時間、古い使用量が表示される可能性
 4. **上限チューニングが必要**: デフォルト値は初期見積もりであり、観測される本番トラフィックパターンに基づいて調整が必要
 
-## 検討した代替案
+## 検討した代替案 {#alternatives-considered}
 
-### 代替案 1: 明示的な上限なし（公正な利用を信頼）
+### 代替案 1: 明示的な上限なし（公正な利用を信頼） {#alternative-1-no-explicit-limits-trust-fair-use}
 
 プロアクティブな上限ではなく、モニタリングとリアクティブな介入に依存。
 
-#### ポジティブ
+#### ポジティブ {#positive-1}
 
 - 上限に達することからの顧客摩擦なし
 - 上限チューニングのオーバーヘッドなし
 
-#### ネガティブ
+#### ネガティブ {#negative-1}
 
 - 単一の不適切なテナントがすべての顧客のサービスを劣化させる可能性
 - リアクティブな介入は自動強制より遅い
 - インシデント中の顧客コミュニケーションの明確な根拠がない
 
-**却下理由:** GitLab.com 規模では、信頼性のあるマルチテナンシーのためにプロアクティブな上限が必要です。コンテナレジストリの Organization ごとの上限の欠如は [運用上の複雑さ](https://gitlab.com/gitlab-org/container-registry/-/issues/1242) に寄与しました。
+**却下理由:** GitLab.com 規模では、信頼性のあるマルチテナンシーのためにプロアクティブな上限が必要です。コンテナレジストリの Organization ごとの上限の欠如は [運用上の複雑さ](https://gitlab.com/gitlab-org/container-registry/-/issues/1242)に寄与しました。
 
-### 代替案 2: インスタンスレベルの上限のみ
+### 代替案 2: インスタンスレベルの上限のみ {#alternative-2-instance-level-limits-only}
 
 namespace ごとではなく、インスタンスレベルでグローバルに上限を適用。
 
-#### ポジティブ
+#### ポジティブ {#positive-2}
 
 - 実装と推論がシンプル
 
-#### ネガティブ
+#### ネガティブ {#negative-2}
 
 - 単一の大規模 namespace がインスタンス全体のキャパシティを消費するのを防げない
 - ビリングとキャパシティプランニングのために、リソース使用量を特定の namespace に按分できない
 
 **却下理由:** namespace ごとの上限は GitLab.com での公平なマルチテナンシーに必要です。Organization は引き続きアンカーおよび請求ポイントであり（[ADR-001](001_organizations_as_anchor_point.md)）、その namespace の利用量を集約します。
 
-### 代替案 3: CDN／ロードバランサーのみで上限
+### 代替案 3: CDN／ロードバランサーのみで上限 {#alternative-3-limit-at-cdnload-balancer-only}
 
 すべてのレート上限をアプリケーションではなく CDN またはロードバランサー層（Cloudflare）で強制。
 
-#### ポジティブ
+#### ポジティブ {#positive-3}
 
 - レート上限の計算をアプリケーションからオフロード
 - スロットルされたリクエストの拒否レイテンシが低い
 
-#### ネガティブ
+#### ネガティブ {#negative-3}
 
 - CDN 層の上限は GitLab.com にのみ適用される。Self-Managed インストールには同等の保護がない
 - 複雑な CDN 構成なしに namespace ごとの上限を強制できない
@@ -182,11 +184,11 @@ namespace ごとではなく、インスタンスレベルでグローバルに�
 
 ## 実装ノート {#implementation-notes}
 
-Artifact Registry はスタンドアローンサービスです。**未解決の質問:** 上限とクォータの構成がどこに保存・管理されるか（例: Rails モノリス内に保存しレジストリが API 経由で取得するか、レジストリ内で直接管理するか）はまだ決定されていません。
+Artifact Registry はスタンドアローンサービスです。**レート上限については解決済み：** レート上限の設定はサービス自身の設定内で保存・管理し、次のロールアウトで適用します。namespace ごとの値は、その設定の正式なプロパティとして扱います。**未解決の質問：** プランティアごとのデフォルト値をサービスにどのように届けるかは未決定です。ロールアウト時に適用する静的な設定では、namespace の請求アンカーからそれらを継承できません。また、ストレージクォータ、アーティファクトサイズ上限、エンティティ数上限の設定をどこで保存・管理するか（たとえば、Rails モノリス内に保存し、レジストリが API 経由で取得するか、レジストリ内で直接管理するか）も未決定です。
 
 1. ストレージクォータ: アップロードと GC サイクル後に更新される Redis カウンターを使用した、アップロードセッション開始時の非同期チェック
 2. アーティファクトサイズ: リクエストボディから読み取られるバイトをカウントすることでアップロード中に強制（クライアントが省略または誤報告できる `Content-Length` ヘッダーを信頼しない）。バイト数が上限を超えると読み取りは中断され、リクエストは拒否される。これは Workhorse がアップロードサイズ強制に使用するのと同じアプローチ
-3. レート上限: GCRA アルゴリズムを使用した Redis カウンター。違反時に `Retry-After` 付き HTTP 429。レート上限実装は、[コンテナレジストリ](https://gitlab.com/gitlab-org/container-registry/-/issues/1225) で確立された GCRA ベースのミドルウェアと Redis カウンターパターンを再利用し、構成スキーマを Artifact Registry 固有の操作に適合させる
+3. レート上限: GCRA アルゴリズムを使用した Redis カウンター。違反時に `Retry-After` 付き HTTP 429。レート上限実装は、[コンテナレジストリ](https://gitlab.com/gitlab-org/container-registry/-/issues/1225)で確立されたミドルウェアと Redis カウンターパターンを再利用し、構成スキーマを Artifact Registry 固有の操作に適合させる
 4. エンティティ数（アップストリームソース、ライフサイクルポリシールール）: 挿入前のデータベースクエリ。違反時に HTTP 422
 
 GitLab.com では、Runway を介したインフラレベルのレート上限が、IP ベースのスロットリングに追加の防御層を提供します。これらはアプリケーションレベルの上限を補完しますが、置き換えるものではありません。アプリケーションレベルの上限は、すべてのインストールタイプにわたる namespace ごとおよびユーザーごとの強制に必要です。
@@ -195,19 +197,19 @@ GitLab.com では、Runway を介したインフラレベルのレート上限�
 
 **ロールアウト戦略:** レート上限と namespace ごとのクォータは 3 フェーズで導入されます。
 
-1. **Observe** — すべての上限（IP ベース、namespace ごと、ユーザーごと）が構成されますが、メトリクスを発行し警告をログに記録するのみ（ブロックなし）。IP ベースの上限はコンテナレジストリの既存の GCRA ミドルウェアを再利用。このフェーズは、すべての次元にわたるトラフィック分布を収集するために、少なくとも 1 マイルストーン実行されます。
-1. **Warn** — namespace ごとまたはユーザーごとの上限を超えるリクエストは警告ヘッダー（例: `X-RateLimit-Remaining`）を返しますが、まだサービスされます。上限に近づいている namespace に通知が行われます。
+1. **Observe** — その時点で提供されている上限を設定しますが、メトリクスの出力と警告のログ記録のみを行います（ブロックしません）。最初に namespace ごとの制限を設定し、IP ベースとユーザーごとの制限は導入され次第、このフェーズに加わります。IP ベースの上限は、Container Registry のミドルウェアのパターンを再利用します。このフェーズは、すべての次元のトラフィック分布を収集するために、少なくとも 1 マイルストーン継続します。
+1. **Warn** — namespace ごとまたはユーザーごとの上限を超えるリクエストには、警告ヘッダー（例：`X-RateLimit-Remaining`）を返しますが、引き続き処理します。namespace が上限に近づくと、処理されたすべてのレスポンスに付くこの警告ヘッダーを通じて、上限の影響が生じる前にクライアントへ通知します。
 1. **Enforce** — namespace ごとおよびユーザーごとの上限は HTTP 429 応答で能動的に強制されます。デフォルト値はフェーズ 1 と 2 で収集されたデータに基づいて調整されます。
 
-## 参考文献
+## 参考文献 {#references}
 
-- [Rate Limiting Architecture Blueprint](/handbook/engineering/architecture/design-documents/rate_limiting/) - 上限、クォータ、ポリシーの区別を定義
-- [ADR-001: Organizations as Anchor Point](001_organizations_as_anchor_point.md) - 主要リソース境界としての Organization
-- [ADR-002: Storage Deduplication Scope](002_storage_deduplication_scope.md) - 重複排除済みストレージの計測方法
-- [ADR-003: System Requirements](003_system_requirements.md) - スケール目標と強制に使用されるインフラコンポーネント
-- [Package Registry Rate Limits](https://docs.gitlab.com/administration/settings/package_registry_rate_limits/) - ベースラインとして使用される既存のレート上限デフォルト
-- [Container Registry Rate Limiting Spec](https://gitlab.com/gitlab-org/container-registry/-/blob/main/docs/spec/gitlab/rate-limiting.md) - GCRA ベースのレート制限アプローチ
-- [Container Registry Rate Limiting Implementation](https://gitlab.com/gitlab-org/container-registry/-/issues/1225) - GCRA ベースのレート制限ミドルウェアと構成、Artifact Registry に再利用可能
+- [レート制限アーキテクチャのブループリント](/handbook/engineering/architecture/design-documents/rate_limiting/) - 上限、クォータ、ポリシーの区別を定義
+- [ADR-001: アンカーポイントとしての Organizations](001_organizations_as_anchor_point.md) - 主要リソース境界としての Organization
+- [ADR-002: ストレージ重複排除の範囲](002_storage_deduplication_scope.md) - 重複排除済みストレージの計測方法
+- [ADR-003: システム要件](003_system_requirements.md) - スケール目標と強制に使用されるインフラコンポーネント
+- [Package Registry のレート上限](https://docs.gitlab.com/administration/settings/package_registry_rate_limits/) - ベースラインとして使用される既存のレート上限デフォルト
+- [Container Registry のレート制限仕様](https://gitlab.com/gitlab-org/container-registry/-/blob/main/docs/spec/gitlab/rate-limiting.md) - GCRA ベースのレート制限アプローチ
+- [Container Registry のレート制限実装](https://gitlab.com/gitlab-org/container-registry/-/issues/1225) - トークンバケット方式のレート制限ミドルウェアと設定。Artifact Registry のパターンとして再利用可能
 - [GitLab Plan Limits API](https://docs.gitlab.com/api/plan_limits/) - 既存のタイプごとアーティファクトサイズ上限
-- [Managing Limits](/handbook/engineering/infrastructure-platforms/rate-limiting/managing-limits/) - レート上限の導入と変更のプロセス
+- [上限の管理](/handbook/engineering/infrastructure-platforms/rate-limiting/managing-limits/) - レート上限の導入と変更のプロセス
 <!-- - [ADR-010: Data Retention](010_data_retention.md) - Retention policies (distinct from limits) -->

@@ -9,11 +9,11 @@ owning-stage: "~devops::data_access"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/postgresql/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T15:26:53+09:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-10T06:59:43+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-04T14:27:38+12:00"
+lastmod: "2026-10-08T16:42:37-07:00"
 ---
 
 
@@ -23,7 +23,7 @@ lastmod: "2026-09-04T14:27:38+12:00"
 ## 現在の GitLab.com アーキテクチャ
 
 GitLab.com は、Terraform、Chef、および複雑なタスクのための Ansible によって GCP の仮想マシン上で管理される 4 つの PostgreSQL クラスターを使用しています。
-Cells では、大幅に多くの PostgreSQL クラスターを作成したいと考えており、50 Cell が必要な場合は 50 以上の PostgreSQL クラスターが必要になります。
+Cells では、4 つを大幅に上回る数の PostgreSQL クラスターを作成したいと考えており、50 Cell が必要な場合は 50 以上の PostgreSQL クラスターが必要になります。
 
 ```plantuml
 @startuml
@@ -33,12 +33,12 @@ component "Container Registry"
 database "main"
 database "ci"
 database "registry"
-database "embedding"
+database "sec"
 
 component "pgbouncer" as pgbouncermain
 component "pgbouncer" as pgbouncerci
 component "pgbouncer" as pgbouncerregistry
-component "pgbouncer" as pgbouncerembedding
+component "pgbouncer" as pgbouncersec
 
 "Rails" --> pgbouncermain
 pgbouncermain --> "main"
@@ -46,8 +46,8 @@ pgbouncermain --> "main"
 "Rails" --> pgbouncerci
 pgbouncerci --> "ci"
 
-"Rails" --> pgbouncerembedding
-pgbouncerembedding --> "embedding"
+"Rails" --> pgbouncersec
+pgbouncersec --> "sec"
 
 
 "Container Registry" --> pgbouncerregistry
@@ -59,14 +59,14 @@ pgbouncerregistry --> "registry"
 @enduml
 ```
 
-現在、単一の本番データベースをホストする 4 つの異なるデータベースクラスターがあります。
+現在、4 つのデータベースクラスターがあり、それぞれが単一の本番データベースをホストしています（サイズは 2026 年 10 月時点）。
 
-| データベース | 説明 | サイズ | スケーリングの余裕 |
-| ----------- | ---------------------------------------------------------------------------------- | ------------- | ---------------- |
-| `Main` | すべてのデータのデフォルトの場所 | 20TB 以上 | ほぼない |
-| `CI` | すべての CI/CD 関連データ | 20TB 以上 | ほぼない |
-| `Registry` | Container Registry データ | 2TB 未満 | 余裕あり |
-| `Embedding` | AI トレーニングデータを保存するための [pgvector](https://github.com/pgvector/pgvector) の実行 | 2TB 未満 | 余裕あり |
+| データベース | 説明 | サイズ（ディスク上のデータ） | スケーリングの余裕 |
+| ---------- | --------------------------------------------------------------- | ------------------- | ---------------- |
+| `Main` | すべてのデータのデフォルトの保存先 | ~55 TB | ほとんどなし |
+| `CI` | すべての CI/CD 関連データ | ~35 TB | わずか |
+| `Sec` | `Main` から分離したセキュリティとソフトウェアサプライチェーンのデータ | ~9 TB | ある程度の余裕あり |
+| `Registry` | Container Registry のデータ | ~4 TB | 十分な余裕あり |
 
 データは `organization_id` によってシャーディングされ、`organization_id` は 1 つの Cell に存在できます。
 
@@ -106,33 +106,35 @@ Cells のロールアウト中、データのほとんどは現在のデータ�
 
 ### 共通要件
 
+*注：Cloud SQL、Kubernetes Operator、Amazon RDS の各列は、2024–2025 年の評価を反映しています。これらのサービスはその後進化しているため、個々の項目は当時の評価として扱ってください。*
+
 | 要件 | 説明 | 優先度 | Cloud SQL | Crunchy K8s Operator | Amazon RDS |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------- | ------------ | ------------------- |
 | GitLab のサポート | 最小限の変更、または変更なしで GitLab アプリケーションをサポートする能力 | 高い | ✅ | ✅ | ✅ |
 | PostgreSQL メジャーリリース | 開発チームとインフラチームが統合に取り組めるよう、6 ヶ月以内に安定版リリースをサポートする | 高い | ❌ | ✅ | ✅ |
-| PostgreSQL メジャーリリース | 開発チームとインフラチームが統合に取り組めるよう、3 ヶ月以内に安定版リリースをサポートする | 中程度 | ❌ | ✅ | ✅/partial |
+| PostgreSQL メジャーリリース | 開発チームとインフラチームが統合に取り組めるよう、3 ヶ月以内に安定版リリースをサポートする | 中程度 | ❌ | ✅ | ✅/一部対応 |
 | PostgreSQL パッチリリース | 7 日以内のマイナーリリース（バグ修正）のサポート | 高い | ❌ | ✅ | ✅ |
-| PostgreSQL セキュリティ修正 | [セキュリティ SLA](../../../../threat-management/vulnerability-management/#remediation-slas) に従ったセキュリティ修正、クリティカルは 24 時間以内 | 高い | ❌ | ✅/partial | ✅ |
-| PostgreSQL ベータリリース | 開発チームとインフラチームが早期にテストできるよう、現在の PostgreSQL ベータリリースをサポートする | 低い | ❌ | ✅ | ✅/only preview env |
-| ほぼゼロダウンタイムアップグレード | APDEX 劣化が分や時間ではなく秒単位でのみアップグレードを可能にする | 高い | ❌ | ✅/partial, requires engineering efforts | ✅/partial |
+| PostgreSQL セキュリティ修正 | [セキュリティ SLA](../../../../threat-management/vulnerability-management/#remediation-slas) に従ったセキュリティ修正、クリティカルは 24 時間以内 | 高い | ❌ | ✅/一部対応 | ✅ |
+| PostgreSQL ベータリリース | 開発チームとインフラチームが早期にテストできるよう、現在の PostgreSQL ベータリリースをサポートする | 低い | ❌ | ✅ | ✅/プレビュー環境のみ |
+| ほぼゼロダウンタイムアップグレード | APDEX 劣化が分や時間ではなく秒単位でのみアップグレードを可能にする | 高い | ❌ | ✅/一部対応、エンジニアリング作業が必要 | ✅/一部対応 |
 | HA ソリューション | 現在の Patroni ソリューションと同等以上の高可用性とフェイルオーバー自動化。人間の介入なしに秒単位のスイッチオーバー/フェイルオーバーで、スプリットブレーンシナリオを許可しない | 高い | ✅ | ✅ | ✅ |
-| ロギング統合 | Postgres 上で構造化ロギングが利用可能 | 高い | ✅ | ✅/Configurable & Sidecar option | ✅ |
+| ロギング統合 | Postgres 上で構造化ロギングが利用可能 | 高い | ✅ | ✅/設定可能 & サイドカーの選択肢あり | ✅ |
 | メトリクス | Prometheus / Grafana 監視セットアップへの統合 | 高い | ✅ | ✅ | ✅ |
-| PostgreSQL 拡張機能 - 運用（高） | 現在必要な拡張機能: <br> - pg_stat_statements <br> - pg_wait_sampling <br> - amcheck <br> - [pgvector](https://github.com/pgvector/pgvector) <br> - pg_trgm <br> - btree_gin <br> - btree_gist <br> - plpgsql <br> - pg_repack | 高い | ✅ | ✅/not wait_sampling, repack;but option to rebuild image | ✅ |
-| PostgreSQL 拡張機能 - デバッグ（中程度） | デバッグに使用する拡張機能: - pg_stat_kcache <br> - pgstattuple <br> - pageinspect <br> - pg_buffercache <br> | 中程度 | ❌ | ✅/not kcache;but option to rebuild image | ✅/not kcache |
-| PostgreSQL 拡張機能 - マイグレーション / シャーディング（低） | 現在は使用していないが将来重要になる可能性がある拡張機能: <br> - postgres_fdw <br> - file_fdw | 低い | ❌ | ✅ | ✅/not file_fdw |
-| デバッグツール | 現在、strace などのツールを使用して PostgreSQL プロセスにフックしてパフォーマンスの根本原因を見つけています。SaaS では、代わりにサービスプロバイダーがそのような分析を行う意志と能力があることを確認する必要があります。 | 中程度 | ❌ | ✅/On-demand package install or container image rebuild | ❌ |
+| PostgreSQL 拡張機能 - 運用（高） | 現在必要な拡張機能: <br> - pg_stat_statements <br> - pg_wait_sampling <br> - amcheck <br> - [pgvector](https://github.com/pgvector/pgvector) <br> - pg_trgm <br> - btree_gin <br> - btree_gist <br> - plpgsql <br> - pg_repack | 高い | ✅ | ✅/wait_sampling、repack は非対応、ただしイメージを再ビルドする選択肢あり | ✅ |
+| PostgreSQL 拡張機能 - デバッグ（中程度） | デバッグに使用する拡張機能: - pg_stat_kcache <br> - pgstattuple <br> - pageinspect <br> - pg_buffercache <br> | 中程度 | ❌ | ✅/kcache は非対応、ただしイメージを再ビルドする選択肢あり | ✅/kcache は非対応 |
+| PostgreSQL 拡張機能 - マイグレーション / シャーディング（低） | 現在は使用していないが将来重要になる可能性がある拡張機能: <br> - postgres_fdw <br> - file_fdw | 低い | ❌ | ✅ | ✅/file_fdw は非対応 |
+| デバッグツール | 現在、strace などのツールを使用して PostgreSQL プロセスにフックしてパフォーマンスの根本原因を見つけています。SaaS では、代わりにサービスプロバイダーがそのような分析を行う意志と能力があることを確認する必要があります。 | 中程度 | ❌ | ✅/必要に応じたパッケージインストールまたはコンテナイメージの再ビルド | ❌ |
 | サードパーティツールによるバックアップ | カスタムバックアップ/アーカイブリポジトリと保持ポリシーを持つ wal-g、pgBackRest などのサードパーティツールによる自動および手動ベースバックアップ | 高い | ❌ | ✅ | ❌ |
-| ディスクベースのバックアップ/リストア | ディスク/ボリュームスナップショットのような自動および手動の高速バックアップ、設定可能な保持ポリシー、アトミックスナップショットまたは一貫したデータを保証する [pg_start_backup / pg_stop_backup](https://www.postgresql.org/docs/14/functions-admin.html#FUNCTIONS-ADMIN-BACKUP-TABLE) との統合 | 高い | ✅ | ✅/Clone-only, no multi-AZ support yet; on roadmap. | ✅ |
+| ディスクベースのバックアップ/リストア | ディスク/ボリュームスナップショットのような自動および手動の高速バックアップ、設定可能な保持ポリシー、アトミックスナップショットまたは一貫したデータを保証する [pg_start_backup / pg_stop_backup](https://www.postgresql.org/docs/14/functions-admin.html#FUNCTIONS-ADMIN-BACKUP-TABLE) との統合 | 高い | ✅ | ✅/クローンのみ、マルチ AZ は未対応、ロードマップに記載あり。 | ✅ |
 | 増分バックアップ | 増分バックアップの実行をカスタマイズし、より頻繁なバックアップを実行できるようにして RTO を削減する | 中程度 | ✅ | ✅ | ✅ |
-| バックアップエクスポート | GCS バケットなどの汎用ストレージへのバックアップエクスポート能力 | 高い | ❌ | ✅ | ❌/only S3 .parquet |
+| バックアップエクスポート | GCS バケットなどの汎用ストレージへのバックアップエクスポート能力 | 高い | ❌ | ✅ | ❌/S3 の .parquet のみ |
 | ローカルストリーミングレプリケーション | 読み取り専用ワークロードのオフロードと水平スケーリングのために、同一リージョンへのストリーミング物理レプリケーションが必要 | 高い | ✅ | ✅ | ✅ |
 | マルチリージョンストリーミングレプリケーション | DR と将来のマイグレーションのために、マルチリージョンなどのリモートロケーションへの SR が必要 | 高い | ✅ | ✅ | ✅ |
 | 外部ストリーミングレプリケーション | 本番環境外、別のアカウント、または別のクラウドプロバイダーの外部 PostgreSQL データベースへの SR は、DR、テスト、将来のマイグレーションに必要になる場合がある | 中程度 | ❌ | ✅ | ❌ |
 | WAL アーカイブレプリケーション | WAL アーカイブレプリケーションはホットスタンバイフィードバックとストリーミングレプリケーションの影響を排除し、分析（例: 長い/遅いクエリやレポートの実行）、クエリテスト、パフォーマンスデバッグに有用 | 高い | ✅ | ✅ | ✅ |
 | WAL 遅延アーカイブレプリケーション | WAL 遅延アーカイブレプリケーションにより、レプリカが継続的に以前の時点（例: 8 時間前）で回復し続けることができ、人的エラーなどの問題に対して非常に迅速なディザスタリカバリ方法を提供する | 中程度 | ❌ | ✅ | ❌ |
 | 論理レプリケーション | 論理レプリケーションはゼロダウンタイムアップグレード、将来のマイグレーション、またはあらゆる種類のインフラストラクチャ変更（PostgreSQL の物理レプリケーションをサポートしない可能性がある）に必要 | 高い | ✅ / ? | ✅ | ✅ |
-| 読み取り負荷分散 | 読み取り負荷を分散するためのスタンバイは、パフォーマンスのボトルネックを軽減するために短期間でデプロイ可能である必要があり、適切な自動化も許容される | 高い | ✅ | ✅/use pgBackRest instead of volume snapshot | ✅ |
+| 読み取り負荷分散 | 読み取り負荷を分散するためのスタンバイは、パフォーマンスのボトルネックを軽減するために短期間でデプロイ可能である必要があり、適切な自動化も許容される | 高い | ✅ | ✅/ボリュームスナップショットの代わりに pgBackRest を使用 | ✅ |
 | リージョンデプロイ | DR 要件のために個々のスタンバイのリージョンを定義できる必要がある | 低い | ✅ | ✅ | ✅ |
 | Database Lab 統合 | [Database Lab](https://postgres.ai/docs/platform) はバックエンド開発者が使用しており、統合される必要がある | 低い | ✅ / ? | ✅ | ✅ / ? |
 
@@ -171,7 +173,7 @@ TODO: パフォーマンス要件を定義し、異なるステークホルダ�
 [GitLab.com](https://gitlab.com/) のアプリケーションデータは現在、`Main` と `CI` の 2 つの別々のデータベースクラスターに分解されています。
 [分解「セキュアおよびソフトウェアサプライチェーンセキュリティ関連テーブルを別の Postgres DB に分解する」](https://gitlab.com/gitlab-org/gitlab/-/issues/427973)によって、現在のプラットフォームにより多くのヘッドルームとスケーラビリティを得るために `Main` データベースをさらに分解できるかどうかを評価しています。
 
-Cells では、組織をより少ない飽和 Cell に移動することで水平スケーリングするという設計上の選択があります。
+Cells では、Cell を追加して水平スケーリングし、組織をより余裕のある Cell に移動して負荷を再分散する設計を選択しています。
 Cells は分解が合理的な規模になるまで垂直スケールすべきではありません。
 そのため、Cells 内での分解は必要なく、現在の Dedicated / GET / Cells ツールではサポートされて **いません**。
 将来的に GET と Dedicated で分解のサポートを追加することは、中程度の複雑さのタスクとして可能です。
@@ -188,8 +190,8 @@ Cells は分解が合理的な規模になるまで垂直スケールすべき�
 
 詳細は以下を参照してください:
 
-- [Alternatives To Postgres DB (Google Spanner vs AlloyDB)](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/24662)
-- [Switching to a proprietary database, instead of PostgreSQL](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/24673)
+- [Postgres DB の代替（Google Spanner と AlloyDB の比較）](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/24662)
+- [PostgreSQL の代わりにプロプライエタリなデータベースへ切り替える](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/24673)
 
 ### Cloud SQL
 
@@ -213,11 +215,11 @@ GitLab は現在、Cloud SQL を[サポートされた PostgreSQL 実装](https:
 | ベースバックアップ | テスト、データ分析、データベースチーム用の Database Labs へのエクスポート、またはディザスタリカバリ準備のためにベースバックアップを定期的にエクスポートしています。Google は現在、GCS バケットなどの汎用ストレージへのバックアップのエクスポートを許可していません。 | 高い / ブロッカー |
 | 外部ストリーミングレプリケーション | CloudSQL は[マルチリージョン物理レプリケーション](https://cloud.google.com/sql/docs/postgres/replication/cross-region-replicas)をサポートしていますが、外部データベースへの物理レプリケーションはサポートしていません。 | 中程度 |
 | WAL アーカイブ遅延レプリケーション | CloudSQL は遅延レプリケーションを設定するための `recovery_min_apply_delay` をサポートしていません。ただし、`hot_standby_feedback` が無効になっており、大規模なクエリにより遅延が生じる場合、CloudSQL は自動的にレプリカをストリーミングからアーカイブレプリケーションに移動します。 | 中程度 |
-| 可観測性: DB | データベースマシンへのフルアクセスを持たないことで可観測性（例: `strace`/`perf`）が失われます。低レベルのデバッグには GCP が必要ですが、現在これが適時に行われるという証拠はありません。 | 中程度 |
+| 可観測性: DB | データベースマシンへのフルアクセスを持たないことで可観測性（例: `strace`/`perf`）が失われます。低レベルのデバッグには GCP が必要ですが、現在これが適時に行われることを示す情報があります。 | 中程度 |
 | 可観測性: クエリ | 現在持っている可観測性のほとんどは得られますが、Cloud SQL ではデータベースプロセスへのアクセスがないため、ロック競合などのデータベース内部を掘り下げる能力がありません。50k ユーザーなどの小さなインスタンスでは中程度かもしれませんが、より大きなインスタンスでは高くなる可能性があります。 | 中程度 |
 | データベースエンジニアへのエスカレーション | Cloud SQL の専門家に適時に確実に連絡できる特定のサポートパスは見つかりませんでした。S1 インシデントでは Cloud SQL の専門家が数分以内に連携できる必要があります。 | 高い |
 
-上記の情報のほとんどは公式の [Cloud SQL ドキュメント](https://cloud.google.com/sql/docs/postgres/)にあります。GCP チームから口頭で見積もりをもらいました（ミーティングノート [Discuss Cloud SQL and AlloyDB with GitLab (internal)](https://docs.google.com/document/d/1axwqnCJLzy0RfcPF5HAeowmg3fjf5iC1Wp9V-Vdp_EU)を参照）。
+上記の情報のほとんどは公式の [Cloud SQL ドキュメント](https://cloud.google.com/sql/docs/postgres/)にあります。GCP チームから口頭で見積もりをもらいました（ミーティングノート [GitLab と Cloud SQL および AlloyDB について議論（社内向け）](https://docs.google.com/document/d/1axwqnCJLzy0RfcPF5HAeowmg3fjf5iC1Wp9V-Vdp_EU)を参照）。
 
 #### 検証すべき事項
 
@@ -248,7 +250,7 @@ Cells 1.5 の目標は、SaaS の GitLab.com サービスを利用する既存�
 
 - 書き込みと読み取り専用ワークロードの両方に対して接続プーリングソリューションを検証する:
   - VM 上の PgBouncer
-  - [CloudSQL データベース接続管理](https://cloud.google.com/sql/docs/postgres/manage-connections) / [Managed Connection Pooling (MCP)](https://www.youtube.com/watch?v=rGI3hIBl2s0)。セルフマネージドの PgBouncer と比較して機能が制限されています。
+  - [CloudSQL データベース接続管理] (https://cloud.google.com/sql/docs/postgres/manage-connections) / [Managed Connection Pooling (MCP)](https://www.youtube.com/watch?v=rGI3hIBl2s0)。セルフマネージドの PgBouncer と比較して機能が制限されています。
 - [CloudSQL Proxy](https://cloud.google.com/sql/docs/postgres/sql-proxy) を評価する
 - データベース移行オプションを比較する:
   - ネイティブ論理レプリケーション - [論理レプリケーション機能](https://cloud.google.com/sql/docs/postgres/replication/configure-external-replica)（[pglogical](https://github.com/2ndQuadrant/pglogical)）
@@ -271,7 +273,7 @@ Cells 1.5 の目標は、SaaS の GitLab.com サービスを利用する既存�
 - `pg_stat_statements` 設定を構成する。
 - `auto_explain` をロードして設定する。
 - 「論理バックアップ」ソリューションを実装する。
-- [Cloud Monitoring](https://cloud.google.com/monitoring) と [Alerting](https://cloud.google.com/monitoring/alerts) を確認する。
+- [Cloud Monitoring](https://cloud.google.com/monitoring)と (アラート](https://cloud.google.com/monitoring/alerts)を確認する。
 
 ### k8s Operator
 
@@ -293,7 +295,7 @@ Cells 1.5 の目標は、SaaS の GitLab.com サービスを利用する既存�
 
 | デメリット / リスク | 説明 | 優先度 |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------- |
-| ノウハウ | k8s はインフラストラクチャ全体で広く使用されていますが、データベース信頼性には使用されていません。チームでの知識を積み上げる必要があります。 | 中程度 |
+| ノウハウ | k8s はインフラストラクチャ全体で広く使用されていますが、Database Reliability チームでは使用されていません。チームでの知識を積み上げる必要があります。 | 中程度 |
 | 欠けている機能 | 欠けている機能（サポートされていない拡張機能など）は私たちが実装する必要があります。 | 中程度 |
 
 #### 検証すべき事項
@@ -324,7 +326,7 @@ GitLab は現在、Amazon RDS PostgreSQL を[サポートされた PostgreSQL �
 
 | デメリット / リスク | 説明 | 優先度/重要度 |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| サードパーティツールによるバックアップのエクスポート | テスト、データ分析、データベースチーム用の Database Labs へのエクスポート、またはディザスタリカバリ準備のためにベースバックアップを定期的にエクスポートしていますが、RDS ではサードパーティのバックアップツールはサポートされていません。外部使用のためのデータエクスポートの唯一のオプションは、すべての消費者がサポートしていない可能性がある [Snapshot Export into Apache Parquet 形式](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html)、または処理が遅い [pg_dump を S3 にエクスポートする](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/postgresql-s3-export.html)です。 | 高い / ブロッカー |
+| サードパーティツールによるバックアップのエクスポート | テスト、データ分析、データベースチーム用の Database Labs へのエクスポート、またはディザスタリカバリ準備のためにベースバックアップを定期的にエクスポートしていますが、RDS ではサードパーティのバックアップツールはサポートされていません。外部使用のためのデータエクスポートの唯一のオプションは、すべての消費者がサポートしていない可能性がある [Apache Parquet 形式へのスナップショットのエクスポート](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html)、または処理が遅い [pg_dump を S3 にエクスポートする](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/postgresql-s3-export.html)です。 | 高い / ブロッカー |
 | 外部ストリーミングレプリケーション | RDS は[クロスリージョン物理レプリケーション](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.html#Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.pg)をサポートしていますが、外部データベースへの物理レプリケーションはサポートしていません。 | 中程度 |
 | WAL アーカイブ遅延レプリケーション | RDS PostgreSQL は遅延レプリケーションを設定するための `recovery_min_apply_delay` をサポートしていません。 | 中程度 |
 | デバッグ能力 | データベースマシンへのフルアクセスを持たないことで可観測性（例: `strace`/`perf`）が失われますが、絶対に必要な場合は RDS の内部エンジニアが低レベルのデバッグを実行するためにエスカレートされる可能性があります。現在、これが適時に行われるという証拠があります。 | 中程度 |
@@ -423,4 +425,4 @@ Cells 1.0 で強調されているように、長期的な要件に十分なプ�
 
 データベースが 2 倍のサイズになるまでの時間についての予測は現在ありませんが、次の 24 ヶ月以内（2026 年まで）にはそれが起きないと見込むのが妥当です。
 
-これは、重要なデータを Cell に移行するか、ここでもデータベースプラットフォームを改善/変更するための十分な時間を与えます。
+これは、相当量のデータを Cell に移行するか、ここでもデータベースプラットフォームを改善/変更するための十分な時間を与えます。

@@ -4,11 +4,11 @@ owning-stage: "~devops::tenant scale"
 group: Organizations
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/users/
-upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
-translated_at: "2026-08-04T06:12:43+09:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-10T06:59:43+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-03T15:47:52+08:00"
+lastmod: "2026-10-09T15:02:49+13:00"
 ---
 
 GitLab は設立当初から、シングルサーバー・グローバルユーザーアーキテクチャを採用してきました。GitLab.com のスケーリングの懸念とプラットフォーム間の製品機能セットの分化により、このモデルはもはや十分ではありません。これらの制限が、マルチ Cell・マルチテナントアーキテクチャという新時代への進化を促しています。私たちは現在、予測可能な顧客体験を維持しながら、現在のアーキテクチャと目指すアーキテクチャのギャップを埋めるという課題に直面しています。
@@ -39,40 +39,76 @@ User のホーム Organization は、`User.organization_id` に記録された O
 
 この問題を解決するために、Organization ごとのボット ID の概念を導入し、`organization_user_details` テーブルを追加します。具体的には、Organization 内でユニークな `username` カラムを追加します。この `organization_user_details.username` は事実上、`users.username` に対するユーザー名エイリアスとなります。
 
-## Organization メンバーシップ
+## Organization メンバーシップ {#organization-membership}
 
-ユーザーは以下の方法で Organization のメンバーになることができます:
+Organization Owners は以下を制御します。
 
-- Organization オーナーがユーザーに代わってアカウントを作成し、そのユーザーと共有する。
+- どのユーザーを Organization のメンバーとして追加するか。
+  非隔離 Organization では、デフォルトでこれを Group Owners と Project Owners に委任します。
+  Organization Owners はこの委任を取り消せます。
+- 追加されたユーザーがシートを消費するかどうか。
+- 1 回の操作で行う、Organization からのユーザーの削除。
 
-Organization メンバーは、以下として Organization 内のグループとプロジェクトにアクセスできます:
+`organization_users` は、Organization 内のユーザーの完全なリストであり、
+Organization メンバーシップの唯一の情報源です。
+グループおよびプロジェクトの `members` は別のリストです。
+`organization_users` は追加のアクセスチェックです。グループまたは
+プロジェクトのメンバーシップを持っていても、`organization_users` に行がないユーザーは、
+現在のブロックされたユーザーと同様に、そのメンバーシップによるアクセス権を得られません。
+そのユーザーのアクセス権は、公開グループやプロジェクトへのアクセスなど、
+[メンバーではないユーザー](#organization-non-users)のものに戻ります。
 
-- グループメンバー: グループとそのすべてのプロジェクトへのアクセスを付与します（公開設定に関わらず）。
-- プロジェクトメンバー: プロジェクトへのアクセスと、公開設定に関わらず親グループへの限定的なアクセスを付与します。
-- 非メンバー: その Organization のパブリックおよびインターナルなグループとプロジェクトへのアクセスを付与します。Organization 内のプライベートグループまたはプロジェクトにアクセスするには、ユーザーはメンバーになる必要があります。インターナル公開設定は最初は Organization に対して利用できません。
+シート管理は、課金対象メンバーとは別の新機能です。
+`organization_users` のカラム、またはこれを参照するテーブルとして構築する必要があります。
 
-Organization メンバーは以下の方法で管理できます:
+ユーザーはすべての Organization にわたって表示されます。これにより、ユーザーは
+Organization 間を移動できます。ユーザーは以下の方法で Organization に参加できます。
 
-- [エンタープライズユーザー](https://docs.gitlab.com/ee/user/enterprise_user/index.html)として、Organization によって管理される。これにはユーザーアカウントの制御とユーザーをブロックする機能が含まれます。Protocells のコンテキストでは、Organization メンバーは本質的にエンタープライズユーザーとして機能します。
-- 非エンタープライズユーザーとして、デフォルト Organization によって管理される。非エンタープライズユーザーは Organization から削除できますが、ユーザーはユーザーアカウントの所有権を保持します。これは Protocells 後にのみ考慮されます。
+1. Organization Owners がユーザーに代わってアカウントを作成し、
+   そのユーザーに共有する。
 
-エンタープライズユーザーは Premium または Ultimate サブスクリプションを持つ Organization のみが利用できます。フリーティアの Organization は非エンタープライズユーザーのみをホストできます。
+1. Organization Owners が既存のユーザーを Organization に追加する。
 
-## ユーザーはどのようにして Organization に参加するのか？
-
-ユーザーはすべての Organization にわたって表示されます。これにより、ユーザーは Organization 間を移動できます。ユーザーは以下の方法で Organization に参加できます:
-
-1. Organization オーナーにアカウントを作成するよう招待される。
-
-1. Organization 内に含まれるネームスペース（グループ、サブグループ、またはプロジェクト）のメンバーになる。ユーザーは以下の方法でネームスペースのメンバーになれます:
+1. Organization 内のネームスペース（グループ、サブグループ、またはプロジェクト）のメンバーになる。
+   ただし、Organization Owner がこの委任を取り消している場合や、
+   Organization が隔離されている場合を除きます。ユーザーは以下の方法で
+   ネームスペースのメンバーになれます。
 
    - ユーザー名で招待される
    - メールアドレスで招待される
-   - アクセスをリクエストする。これは Organization とネームスペースの公開設定が必要で、ネームスペースのオーナーによって承認される必要があります。プライベートグループやプロジェクトへのアクセスはリクエストできません。
+   - アクセスをリクエストする。これには Organization とネームスペースが見えることが必要で、
+     ネームスペースのオーナーによる承認が必要です。プライベートなグループや
+     プロジェクトへのアクセスはリクエストできません。
 
-1. Organization のエンタープライズユーザーになる。エンタープライズユーザーを Organization レベルに移行することは MVC 後に計画されています。Organization MVC では、エンタープライズユーザーはトップレベルグループに留まります。
+1. Organization の Enterprise User になる。Enterprise Users を
+   Organization レベルに移行することは MVC 後に計画されています。Organization MVC では、
+   Enterprise Users はトップレベルグループに留まります。
 
-Organization の作成者は自動的に Organization オーナーになります。例えば、すべての公開 Issue にコメントしたり作成したりするために、特定の Organization のユーザーになる必要はありません。既存のすべてのユーザーはすべての公開 Issue を作成したりコメントしたりできます。
+非隔離 Organization では、デフォルトで、ネームスペースのメンバーになると
+そのユーザーは Organization にも追加されます。そのため Group Owners と Project Owners は、
+招待を通じて誰を追加するかを決めます。Organization Owner がこの委任を取り消した場合、
+ネームスペースのメンバーになっても Organization には追加されません。
+隔離 Organization では、より厳格な制御が求められ、
+自動的な追加は行わない想定です。
+
+Organization の作成者は自動的に Organization Owner になります。
+たとえば、公開 Issue にコメントしたり、公開 Issue を作成したりするために、
+特定の Organization のユーザーになる必要はありません。既存のすべてのユーザーは、
+すべての公開 Issue を作成したりコメントしたりできます。
+
+Organization メンバーは、以下のように Organization 内のグループとプロジェクトにアクセスできます。
+グループおよびプロジェクトのメンバーとしてのアクセス権は、
+`organization_users` にも含まれているユーザーにのみ適用されます。
+
+- グループメンバー：公開設定にかかわらず、グループとそのすべてのプロジェクトへの
+  アクセス権を付与します。
+- プロジェクトメンバー：公開設定にかかわらず、プロジェクトへのアクセス権と、
+  親グループへの限定的なアクセス権を付与します。
+- グループ/プロジェクトのメンバーシップを持たない Organization メンバー：その Organization の
+  パブリックおよびインターナルなグループとプロジェクトへのアクセス権を付与します。
+  Organization 内のプライベートなグループまたはプロジェクトにアクセスするには、
+  ユーザーはメンバーになる必要があります。インターナル公開設定は、
+  当初は Organization では利用できません。
 
 ## ユーザーはどのようにして Organization にサインインするのか？
 
@@ -90,7 +126,7 @@ Organization の公開設定の詳細については、[公開設定](_index.md#
 
 課金対象メンバーの定義は GitLab の 2 つの主要なオファリング間で異なります:
 
-- セルフマネージド（SM）: [課金対象メンバーは SM ライセンスに対してシートを消費するユーザーです](https://docs.gitlab.com/ee/subscriptions/self_managed/index.html#subscription-seats)。ゲストロール以上に昇格されたカスタムロールはシートを消費します。
+- セルフマネージド（SM）: [課金対象メンバーは SM ライセンスに対してシートを消費するユーザーです](https://docs.gitlab.com/ee/subscriptions/self_managed/index.html#subscription-seats)。Guest ロールを超える権限を持つカスタムロールはシートを消費します。
 - GitLab.com（SaaS）: [課金対象メンバーはトップレベルグループの SaaS サブスクリプションに対してシートを消費する名前空間（グループまたはプロジェクト）のメンバーであるユーザーです](https://docs.gitlab.com/ee/subscriptions/gitlab_com/index.html#how-seat-usage-is-determined)。現在、[最小アクセス権を持つユーザー](https://docs.gitlab.com/ee/user/permissions.html#users-with-minimal-access) とグループのないユーザーはライセンスシートにカウントされますが、[それは変わりつつあります](https://gitlab.com/gitlab-org/gitlab/-/issues/330663#note_1133361094)。
 
 これらの違いとその計算・表示方法は混乱を招くことがよくあります。SM と SaaS の両方において、ユーザーがシートを消費するかどうかを同じコアルールセットで評価します:
@@ -157,11 +193,11 @@ User は同じアカウントですでに複数の非隔離 Organization に参�
 1. バン: ユーザーがバンされます。これは不正行為の場合に起こりますが、バンが解除されるまでユーザーは Organization に再追加できません。この場合、organization_users エントリを保持し、権限を none に変更します。
 1. アカウント削除: ユーザーが削除されます。ユーザーが作成したすべてのものをゴーストユーザーに割り当て、organization_users テーブルからエントリを削除します。
 
-Organization MVC の一環として、Organization オーナーは Organization メンバーを削除できます。これは、ユーザーのメンバーシップエントリが Organization 内に含まれるすべてのグループとプロジェクトから削除されることを意味します。さらに、ユーザーエントリが `organization_users` テーブルから削除されます。
+Organization MVC の一環として、Organization Owners は Organization メンバーを削除できます。まず、ユーザーの `organization_users` エントリを削除済みとしてマークし、アクセス権を即座に失効させます。その後、Organization 内のすべてのグループとプロジェクトから、ユーザーのメンバーシップエントリを同期または非同期で削除します。アクセス権はこのクリーンアップの完了に依存しません。クリーンアップが完了すると、`organization_users` エントリを削除します。
 
 ユーザーのバンや削除などのアクションは、後で Organization に追加されます。
 
-## Organization 非ユーザー
+## Organization 非ユーザー {#organization-non-users}
 
 非ユーザーは Organization の外部にあり、パブリックプロジェクトなど Organization のパブリックリソースにのみアクセスできます。
 

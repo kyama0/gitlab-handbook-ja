@@ -2,9 +2,9 @@
 title: リリースステージ
 description: "Organizations チームが協調された一連のフィーチャーフラグステージを通じて作業をリリースする方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/release-stages/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: 2026-07-07T09:35:07-07:00
-translated_at: "2026-07-10T07:03:07+09:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+lastmod: "2026-09-30T13:27:00-05:00"
+translated_at: "2026-10-10T06:53:00+00:00"
 translator: claude
 stale: false
 ---
@@ -26,7 +26,7 @@ Stable 層に落ち着きます。ステージは一時的なものです。機�
 対象者は、次の 2 つの軸に沿って拡大する一方です:
 
 - **セグメント** — 機能を利用できる人: Organizations チーム、次に GitLab チーム
-  メンバーとオプトインした顧客、次にすべての GitLab.com 顧客、最後に全員。
+  メンバー、次にオプトインした顧客、次にすべての GitLab.com 顧客、最後に全員。
 - **プラットフォーム** — 機能が動作する場所: 最初は GitLab.com、GA では GitLab Self-Managed と
   GitLab Dedicated。
 
@@ -44,8 +44,11 @@ flowchart TB
         LAf["Feature Z"]
         subgraph BETA["Beta"]
           BETAf["(no features in flight)"]
-          subgraph EXP["Experimental"]
-            EXPf["Feature X · Feature Y"]
+          subgraph INTERNAL["Internal"]
+            INTERNALf["(no features in flight)"]
+            subgraph EXP["Experimental"]
+              EXPf["Feature X · Feature Y"]
+            end
           end
         end
       end
@@ -64,26 +67,27 @@ flowchart TB
 | ステージ      | 対象者                                 | フラグ (`default_enabled`)            | プラットフォーム                      | 緊急ブレーキ                                           |
 | ------------- | -------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------------------------ |
 | Experimental  | Organizations チームと選ばれた仲間     | `org_stage_experimental` (`false`) | GitLab.com                            | フラグ（GitLab が運用）                                |
-| Beta          | GitLab チーム + オプトインした顧客     | `org_stage_beta` (`false`)         | GitLab.com                            | フラグ（GitLab が運用）                                |
+| Internal      | GitLab チームメンバー                  | `org_stage_internal` (`false`)    | GitLab.com                            | フラグ（GitLab が運用）                                |
+| Beta          | オプトインした顧客     | `org_stage_beta` (`false`)         | GitLab.com                            | フラグ（GitLab が運用）                                |
 | LA 25→100     | 顧客、25 / 50 / 75 / 100%              | `org_stage_la_25…100` (`false`)    | GitLab.com                            | フラグ（GitLab が運用）                                |
-| GA            | 全員                                   | `org_stage_ga` (`true`)            | GitLab.com + Self-Managed + Dedicated | 保持 — .com + Self-Managed；**Dedicated では無効**     |
+| GA            | 全員                                   | `org_stage_ga` (`true`)            | GitLab.com + Self-Managed + Dedicated | 保持 — .com + Self-Managed；**Dedicated では緊急ブレーキとして使用不可**     |
 | Stable        | 全員                                   | *(フラグ削除済み)*                    | すべてのプラットフォーム              | なし — 恒久的なプロダクト                              |
 
 ## ステージ {#stages}
 
-作業は 5 つのステージを通って進みます。すべてのステージは最初に GitLab.com で実行されます。Self-Managed
+作業は 6 つのステージを通って進みます。すべてのステージは最初に GitLab.com で実行されます。Self-Managed
 と Dedicated は、機能が GA に到達して初めてそれを受け取ります:
 
 ```mermaid
 block-beta
-  columns 5
-  E["Exp."] B["Beta"] LA["LA"] GA["GA"] S["Stable"]
-  COM["GitLab.com"]:5
-  space:3 SM["Self-Managed"]:2
-  space:3 DED["Dedicated"]:2
+  columns 6
+  E["Exp."] I["Int."] B["Beta"] LA["LA"] GA["GA"] S["Stable"]
+  COM["GitLab.com"]:6
+  space:4 SM["Self-Managed"]:2
+  space:4 DED["Dedicated"]:2
 ```
 
-**Exp.** = Experimental · **LA** = Limited Availability (25 → 50 → 75 → 100%)。
+**Exp.** = Experimental · **Int.** = Internal · **LA** = Limited Availability (25 → 50 → 75 → 100%)。
 
 ### 1. Experimental {#1-experimental}
 
@@ -92,17 +96,24 @@ block-beta
 - これは、大規模および／または複雑で反復的な改善を必要とするために未完成な作業のための
   場所です。たとえば、オンボーディング、管理エリア、認証作業など。
 
-### 2. Beta {#2-beta}
+### 2. Internal {#2-internal}
 
-- .com 上の GitLab チームとオプトインした顧客にリリースします。
+- .com 上の GitLab チームメンバーにリリースします。
+- `org_stage_internal` フィーチャーフラグの背後に実装し、
+  `gitlab_team_members` 機能グループで有効にします。
+- Experimental や Beta と同様に後続ステージにも適用されます。Beta 以降の機能も、チームメンバーに対して有効なままです。
+
+### 3. Beta {#3-beta}
+
+- .com 上のオプトインした顧客にリリースします。
 - `org_stage_beta` フィーチャーフラグの背後に実装されます。
 
-### 3. Limited Availability (LA) {#3-limited-availability-la}
+### 4. Limited Availability (LA) {#4-limited-availability-la}
 
 - すべての .com ユーザーに、25%、50%、75%、100% の増分でリリースされます。
 - `org_stage_la_<increment>` フィーチャーフラグを利用します。
 
-### 4. Generally Available (GA) {#4-generally-available-ga}
+### 5. Generally Available (GA) {#5-generally-available-ga}
 
 - すべての顧客にリリースされます。
 - すべてのプラットフォームでリリースされます。
@@ -110,13 +121,13 @@ block-beta
   Organizations はこれを特別に扱います。
 - `default_enabled: true` を持つ `org_stage_ga` フィーチャーフラグを使用します。
 - このフラグは、.com と Self-Managed における緊急ブレーキとして保持されます。
-- Dedicated では、このフラグは事実上無効です。デフォルトで有効になっているため
+- Dedicated では、このフラグを緊急ブレーキとして操作することはできません。デフォルトで有効になっているため
   機能は利用可能であり、Dedicated の顧客は
   [フィーチャーフラグを変更できません](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#feature-flags)。
   [Dedicated での機能の有効化](https://docs.gitlab.com/development/enabling_features_on_dedicated/)に関する
   開発者向けガイダンスも参照してください。
 
-### 5. Stable {#5-stable}
+### 6. Stable {#6-stable}
 
 - 内部の議論のために定義するステージですが、顧客にとっては重要ではありません。
 - フィーチャーフラグステージのトンネルを終わらせます。
@@ -125,9 +136,11 @@ block-beta
 ## ステージ間の移動 {#moving-through-the-stages}
 
 機能はすべてのステージに触れる必要はありません。デフォルトのパスは
-Experimental → Beta → LA → GA → Stable で、いくつかのルールがあります:
+Experimental → Internal → Beta → LA → GA → Stable で、いくつかのルールがあります:
 
-1. **Experimental は任意です** — 適切な場合はスキップしてください。機能は Beta から始めることができます。
+1. **Experimental は任意です** — 適切な場合はスキップしてください。機能は
+   Internal または Beta から始められます。
+1. **Internal は任意です** — Experimental と同様に、機能はこの段階をスキップして Beta から始められます。
 1. **Beta は必須です** — スキップしないでください。
 1. **LA は 100% に到達する必要があります** — 中間の増分（25 / 50 / 75）はスキップできますが、
    機能は GA の前に LA 100% に到達します。
@@ -151,21 +164,23 @@ Experimental → Beta → LA → GA → Stable で、いくつかのルールが
 
 この構造のもとで、私たちは以下にリリースします:
 
-1. Beta では選ばれた顧客。
-2. LA 100 ではすべての .com 顧客。
-3. GA ではすべての顧客。
+1. Internal では GitLab チームメンバー。
+2. Beta では選ばれた顧客。
+3. LA 100 ではすべての .com 顧客。
+4. GA ではすべての顧客。
 
 対象者のアクセスは累積的です。各グループは 1 つ後のステージで加わり、
 Stable を通じてアクセスを保持するため、GA と Stable は全員に同時にサービスを提供します:
 
 ```mermaid
 block-beta
-  columns 5
-  E["Experimental"] B["Beta"] LA["LA 25→100%"] GA["GA"] S["Stable"]
-  ORG["Organizations team + peers"]:5
-  space:1 GLT["GitLab team + opted-in customers"]:4
-  space:2 COMU["All .com users"]:3
-  space:3 ALLC["All customers · all platforms"]:2
+  columns 6
+  E["Experimental"] I["Internal"] B["Beta"] LA["LA 25→100%"] GA["GA"] S["Stable"]
+  ORG["Organizations team + peers"]:6
+  space:1 GLT["GitLab team members"]:5
+  space:2 OPT["Opted-in customers"]:4
+  space:3 COMU["All .com users"]:3
+  space:4 ALLC["All customers · all platforms"]:2
 ```
 
 ## なぜこの構造なのか {#why-this-structure}
@@ -195,6 +210,9 @@ block-beta
 Experimental ステージは、Beta に入れることができないエンジニアリング作業を着地させる
 ための受け皿を提供します。このステージがなければ、作業は「未完成」の MR として滞留することになります。
 
+Internal ステージは、顧客が機能を利用する前に、GitLab チームメンバーがドッグフーディングを行うための
+専用の段階です。
+
 ## 全社的なフィーチャーフラグライフサイクルとの関係 {#relationship-to-the-company-wide-feature-flag-lifecycle}
 
 これらのステージは、GitLab の標準的な
@@ -207,7 +225,7 @@ Organizations の面については、上記で説明した追加の構造を適
 
 - **機能ごとのライフサイクルではなく、共有のステージフラグ。** すべての機能が
   独自のフィーチャーフラグライフサイクルを定義し駆動する代わりに、この面は小さく固定された一連の
-  名前付きステージフラグ（`org_stage_experimental`、`org_stage_beta`、
+  名前付きステージフラグ（`org_stage_experimental`、`org_stage_internal`、`org_stage_beta`、
   `org_stage_la_<increment>`、`org_stage_ga`）を使用します。機能は成熟するにつれてこれらのフラグを
   通って移動するため、エンジニアは機能ごとにロールアウト計画（対象者、プラットフォーム、
   増分）を再計算しません。
@@ -219,6 +237,6 @@ Organizations の面については、上記で説明した追加の構造を適
 - **Experimental ステージ。** Beta の準備ができていない大規模／複雑で
   未完成な作業のために、明示的な Beta 前の場所を追加します。
 
-## 開発におけるリリースステージ
+## 開発におけるリリースステージ {#release-stages-in-development}
 
 Organization リリースステージを使って機能をゲートする方法については、[Organizations のリリースプロセス](https://docs.gitlab.com/development/organizations/release_process/)を参照してください。

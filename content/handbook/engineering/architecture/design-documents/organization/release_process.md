@@ -1,31 +1,29 @@
 ---
 title: 'Organizations リリースプロセス'
-description: 'Organization 機能に固有のリリースプロセス。'
+description: 'Organization の機能とステージのリリースプロセス。'
 owning-stage: "~devops::tenant scale"
 group: Organizations
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/organization/release_process/"
-upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
-translated_at: "2026-09-22T21:11:03+00:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-10T06:59:43+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-22T12:50:13-07:00"
+lastmod: "2026-10-06T07:52:18-07:00"
 ---
 
-このドキュメントでは、特定の Organization 機能と[ステージ](../../../infrastructure-platforms/tenant-scale/organizations/release-stages.md)のリリースプロセスの概要を説明します。
+このドキュメントでは、どのフィーチャーフラグをどのように有効にするかなど、Organization の機能をリリースするために必要な手順を説明します。各[リリースステージ](../../../infrastructure-platforms/tenant-scale/organizations/release-stages.md)の意味、対象者、機能が[ステージ間を移行する方法](../../../infrastructure-platforms/tenant-scale/organizations/release-stages.md#moving-through-the-stages)については、リリースステージのページを参照してください。
 
 ## ベータ
 
-### Artifact Registry（デザインパートナー）
+### Artifact Registry（Central）のリリースプロセス {#artifact-registry-central-release-process}
 
-私たちは、少数のデザインパートナーを手動で Organizations にオンボーディングし、Artifact Registry の使用を開始できるようにします。これは、[スタンドアロンの組織のベータ](#standalone-organizations-with-self-serve-onboarding)が利用可能になるまでの暫定的なリリースプロセスです。
-
-#### 手順 1 - フィーチャーフラグを有効にする
+#### 前提条件 - フィーチャーフラグを有効にする {#prerequisites---enable-feature-flags}
 
 **担当：** ~group::organizations
 
 [Organization のフラグ](https://docs.gitlab.com/development/organizations/release_status/)を以下の状態に移行する必要があります。
-この状態はベータに固有のものです。ベータ後は、これらのフラグを他のステージへ移行できます。
+この状態は Artifact Registry のベータにのみ適用されます。その後は、これらのフラグを他のステージへ移行できます。
 
 | フラグ                              | ステージ        | 説明                                                            |
 | --------------------------------- | ------------ | ---------------------------------------------------------------------- |
@@ -48,13 +46,17 @@ lastmod: "2026-09-22T12:50:13-07:00"
 /chatops gitlab run feature set ui_for_organizations true
 ```
 
-#### 手順 2 - デザインパートナーのトップレベルグループ（TLG）を特定する
+#### Artifact Registry（デザインパートナー） {#artifact-registry-design-partners}
+
+私たちは、少数のデザインパートナーを手動で Organizations にオンボーディングし、Artifact Registry の使用を開始できるようにします。これは、[スタンドアロンの Organizations ベータ](#standalone-organizations-with-self-serve-onboarding)が利用可能になるまでの暫定的なリリースプロセスです。
+
+#### 手順 1 - デザインパートナーのトップレベルグループ（TLG）を特定する
 
 **担当：** ~devops::package
 
 Organizations にオンボーディングするデザインパートナーを特定し、TLG のフルパスのリストを提供します。
 
-#### 手順 3 - 新しい Organization で TLG をバックフィルする
+#### 手順 2 - 新しい Organization で TLG をバックフィルする
 
 **担当：** ~group::organizations
 
@@ -69,7 +71,7 @@ Organizations にオンボーディングするデザインパートナーを特
 1. TLG と同じ名前およびパスの Organization を作成する
 1. TLG をこの Organization に移管する
 
-#### 手順 4 - Organization を確定し、TLG メンバーを同期する
+#### 手順 3 - Organization を確定し、TLG メンバーを同期する
 
 **担当：** ~group::organizations
 
@@ -82,9 +84,9 @@ Organizations にオンボーディングするデザインパートナーを特
 これにより、次が実行されます。
 
 1. Organization を確定する
-1. TLG メンバーを Organization Members として追加する。Owners は Organization Administrators になり、その他すべての Members は Organization Regular Members になります。
+1. TLG メンバーを Organization に追加する。Owners は Organization Administrators になり、その他すべての Members は Organization Regular Users になります。
 
-#### 手順 5 - Artifact Registry UI のフィーチャーフラグを有効にする
+#### 手順 4 - Artifact Registry UI のフィーチャーフラグを有効にする
 
 **担当：** ~group::organizations
 
@@ -96,13 +98,13 @@ Organizations にオンボーディングするデザインパートナーを特
 
 これにより、Organization に Artifact Registry UI が表示されます。
 
-#### 手順 6 - デザインパートナーに通知する
+#### 手順 5 - デザインパートナーに通知する
 
 **担当：** ~devops::package
 
 Artifact Registry を有効化して使い始める方法を説明するドキュメントへのリンクをデザインパートナーに通知します。
 
-#### 手順 7 - Artifact Registry を有効にする
+#### 手順 6 - Artifact Registry を有効にする
 
 **担当：** ~devops::package
 
@@ -119,28 +121,24 @@ Artifact Registry を有効化して使い始める方法を説明するドキ�
 
 ### セルフサービスのオンボーディングを備えたスタンドアロンの組織 {#standalone-organizations-with-self-serve-onboarding}
 
-#### 手順 1
+#### 手順 1 - フィーチャーフラグを有効にする
 
 **担当：** ~group::organizations
 
-[Organization のフラグ](https://docs.gitlab.com/development/organizations/release_status/)を以下の状態に移行する必要があります。
+[前提条件のフラグ](#prerequisites---enable-feature-flags)に加えて、[Organization のフラグ](https://docs.gitlab.com/development/organizations/release_status/)を以下の状態に移行する必要があります。
 
 | フラグ                              | ステージ        | 説明                                                            |
 | --------------------------------- | ------------ | ---------------------------------------------------------------------- |
-| `org_creation`                    | Experimental | グローバルページまたは公開 API から組織を作成します。               |
-| `org_switcher`                    | Experimental | 組織切り替え用のドロップダウンコンポーネント。                          |
 | `create_org_from_group_settings`  | Beta         | グループ設定からトップレベルグループの組織を作成します。  |
 | `org_admin_area`                  | LA (100%)    | 組織オーナー向けの組織管理エリア。                       |
-| `org_pages`                       | LA (100%)    | `Organizations::ApplicationController` を継承する組織ページ。 |
-| `your_work_sidebar_org_menu_item` | LA (100%)    | `Your work` サイドバーに `Organizations` メニュー項目を表示します。            |
 
-`create_org_from_group_settings` は `--group` アクターで使用できるため、Beta のままとします。`org_admin_area`、`org_pages`、`your_work_sidebar_org_menu_item` は、お客様が Organization を作成した後にこれらを利用可能にするためのアクターがないため、LA (100%) に移行する必要があります。これらのフラグは Organization を持つユーザーのみが利用できる機能を制御し、Organization の作成自体は引き続きグループアクターで制御されるため、安全に LA (100%) にできます。
+`create_org_from_group_settings` は `--group` アクターで使用できるため、Beta のままとします。`org_admin_area` は、お客様が Organization を作成した後にこれを利用可能にするためのアクターがないため、LA (100%) に移行する必要があります。これらのフラグは Organization を持つユーザーのみが利用できる機能を制御し、Organization の作成自体は引き続きグループアクターで制御されるため、安全に LA (100%) にできます。
 
-#### 手順 2 - デザインパートナーのトップレベルグループ（TLG）を特定する
+#### 手順 2 - ベータのお客様のトップレベルグループ（TLG）を特定する
 
 **担当：** ~group::organizations
 
-Organizations にオンボーディングするデザインパートナーを特定し、TLG のフルパスのリストを提供します。
+Organizations にオンボーディングするベータのお客様を特定し、TLG のフルパスのリストを提供します。
 
 #### 手順 3 - TLG から Organization を作成する機能を有効にする
 
