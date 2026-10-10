@@ -2,16 +2,16 @@
 title: チームプロセス
 description: "Organizations チームの運営方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-11T10:03:08+08:00
-translated_at: "2026-06-12T21:15:09Z"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+lastmod: "2026-10-02T15:40:10+01:00"
+translated_at: "2026-10-10T06:53:00+00:00"
 translator: claude
 stale: false
 ---
 
 ## 作業 {#work}
 
-プロダクトマネージャー（PM）は、チーム、エンジニアリングマネージャー（EM）、その他のステークホルダーからの
+Product Manager（PM）は、チーム、Engineering Manager（EM）、その他のステークホルダーからの
 インプットを受けて、[プロダクトの優先順位付けプロセス](/handbook/product/product-processes/#prioritization)に従って
 Issue のリストをまとめます。
 イテレーションサイクルは月の第 2 金曜日まで続き、翌週の月曜日から新たに開始します。
@@ -19,7 +19,7 @@ Issue のリストをまとめます。
 
 ### マイルストーンプランニング {#milestone-planning}
 
-マイルストーンを開始する前に、グループは[プランニング Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=Planning%20Issue) を使用して調整します。
+マイルストーンを開始する前に、グループは[プランニング Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=Planning%20Issue)を使用して調整します。
 私たちは次のプロセスに従います:
 
 - PM がマイルストーンの目標を定義します。
@@ -52,7 +52,7 @@ Issue のリストをまとめます。
 
 - `workflow::ready for design` は、Issue がデザイン作業を開始する準備ができていることを示します
 - `workflow::design` は、デザイナーが Issue に積極的に取り組んでいることを示します
-- `workflow::planning breakdown` は、デザインが完了し、実装のためにサブ Issue に分解する準備ができていることを示します。デザインプロセス中のコンテキストと決定を保持するため、可能な場合は、デザイン Issue をエピックに昇格させて再利用し、実装 Issue を追加します。そうすることで、エピックをデザインの [SSOT](/teamops/shared-reality/#single-source-of-truth-ssot) として使用でき、すべての議論が 1 か所にまとまり、元のデザイン Issue と対応する実装 Issue の間に不整合が生じることがなくなります。
+- `workflow::planning breakdown` は、デザインが完了し、実装のためにサブ Issue に分解する準備ができていることを示します。デザインプロセス中のコンテキストと決定を保持するため、可能な場合は、デザイン Issue をエピックに昇格させて再利用し、実装 Issue を追加します。そうすることで、エピックをデザインの [SSOT](/teamops/shared-reality/#single-source-of-truth-ssot)として使用でき、すべての議論が 1 か所にまとまり、元のデザイン Issue と対応する実装 Issue の間に不整合が生じることがなくなります。
 - `workflow::refinement` は、Issue がエンジニアリングによる整理が必要であることを示します。このステップでは、実装ガイドとウェイトを Issue に追加する必要があります。
 - `workflow::ready for development` は、項目がエンジニアリングによって取り組まれる準備ができていることを示します
 
@@ -109,17 +109,17 @@ graph LR
 
 Issue ボードに加えて、私たちは以下のような専用ダッシュボードでも主要なイニシアチブの進捗を追跡しています:
 
-- [Schema migration](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/schema_migration)
-- [Sharding key migration](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/sharding_keys)
+- [スキーマ移行](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/schema_migration)
+- [シャーディングキーの移行](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/sharding_keys)
 
 これらのダッシュボードは [Cells Progress Tracker](https://gitlab.com/gitlab-org/tenant-scale-group/cells-progress-tracker) プロジェクトの一部です。
-チームはまた、[Epic Dashboards](https://gitlab.com/gitlab-org/tenant-scale-group/epic-dashboard) を、他のチームが独自のエピックベースの追跡ダッシュボードを作成するために使用できるプロジェクトとしてスピンオフしました。
+チームはまた、[Epic Dashboards](https://gitlab.com/gitlab-org/tenant-scale-group/epic-dashboard)を、他のチームが独自のエピックベースの追跡ダッシュボードを作成するために使用できるプロジェクトとしてスピンオフしました。
 
 ### キャパシティプランニング {#capacity-planning}
 
 私たちはキャパシティプランニングにシンプルな Issue ウェイトシステムを使用し、各マイルストーンに対して
 管理可能な量の作業を確保します。私たちは、チームのスループットと、Time Off by Deel から得られる
-各エンジニアの今後の稼働可能状況の両方を、[Google Apps Script](https://script.google.com/home/projects/1cH4Hrv03Kf_dlqPyxPdoyxWcV_x2d2u2PKNnGP_YwNjGifjcD4c29GKJ/edit) を使って考慮します。
+各エンジニアの今後の稼働可能状況の両方を、[Google Apps Script](https://script.google.com/home/projects/1cH4Hrv03Kf_dlqPyxPdoyxWcV_x2d2u2PKNnGP_YwNjGifjcD4c29GKJ/edit)を使って考慮します。
 
 ウェイトは集計して使用することを意図しており、ある人にとって一定の時間がかかるものが、
 Issue に関する知識のレベルに応じて、別の人にとっては異なる場合があります。私たちは正確であるよう
@@ -164,7 +164,7 @@ Issue にウェイトを付けるには、以下の重要な要素を考慮し�
 要件が不明確など）がある場合は、このラベルを使用してください。私たちは
 週あたり最大 5 件の Issue を整理します。
 
-[整理 Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/blob/main/scripts/refinement) は毎週の初めに自動生成されます。
+[整理 Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/blob/main/scripts/refinement)は毎週の初めに自動生成されます。
 スクリプトは私たちの[ステージプロジェクト](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks)で調整できます。
 
 #### ステップ 2: Issue の整理 {#step-2-refining-issues}
@@ -189,7 +189,7 @@ Issue を整理する際は、以下を考慮してください:
 エンジニアがインプットを提供する機会を得た後、EM または PM が以下を行います:
 
 - ウェイトを割り当てる
-- 懸念がある場合は stable カウンターパートに知らせる
+- 懸念がある場合は 固定の連携担当者に知らせる
 - `workflow::refinement` ラベルを削除する
 - `workflow::ready for development` ラベルを追加する
 
@@ -203,8 +203,8 @@ PM や UX からより多くの情報を得る必要があるかどうかを確�
 
 #### マイルストーンごと {#per-milestone}
 
-私たちには[マイルストーンレトロスペクティブ Issue](https://gitlab.com/gl-retrospectives/enablement-section/tenant-scale/-/issues) があります。
-これらには EM、PM、エンジニア、UX、そしてすべての stable カウンターパートが含まれます。
+私たちには[マイルストーンレトロスペクティブ Issue](https://gitlab.com/gl-retrospectives/enablement-section/tenant-scale/-/issues)があります。
+これらには EM、PM、エンジニア、UX、そしてすべての 固定の連携担当者が含まれます。
 すべてのマイルストーンへの参加が強く奨励されています。詳細については、毎月 26 日に
 現在進行中のマイルストーンについて作成される[グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)を参照してください。
 
@@ -252,13 +252,13 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 - 2 週間ごとに、[#g_organizations_standup](https://gitlab.enterprise.slack.com/archives/C054LN3G0CE) チャンネルの Slack リマインダーが、技術評価トリアージの新しいサポートシフトが始まることをグループに知らせます。
 - 各エンジニアは、今後の自分のローテーション（以下のスケジュールに従う）を認識し、Slack リマインダーに従って行動することが求められます。
 - 現在ローテーション中の DRI は、その 2 週間を以下の作業に充てるべきです（優先順位順）:
-    1. [#g_organizations](https://gitlab.slack.com/archives/g_organizations) でトリガーされた壊れた `master` パイプラインの失敗に関する[アラート](https://gitlab.com/gitlab-org/gitlab/-/pipelines/1858249063)に対応する
+    1. [#g_organizations](https://gitlab.slack.com/archives/g_organizations)でトリガーされた壊れた `master` パイプラインの失敗に関する[アラート](https://gitlab.com/gitlab-org/gitlab/-/pipelines/1858249063)に対応する
     1. 現在のマイルストーンでスケジュールされたサポート Issue に取り組む
     1. 現在のマイルストーンでスケジュールされたバグ Issue に取り組む
     1. 顧客サポートの[バックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AOrganizations&first_page_size=20)から新しい Issue をトリアージし、必要に応じてフォローアップ情報を求める
 - 上記の項目を一覧表示したライブ更新の Issue がここにあります: https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/2
 - DRI が何らかの理由（例: 休暇、病欠、他の責務が優先されるなど）で今後のトリアージローテーションシフトを実行できない場合は、別のチームメンバーとローテーションを交換するか、EM に通知して調整してもらうことが求められます。交換が特定されたら、スケジュールを更新する必要があります。
-- DRI は、次の参加者に引き継ぐ際に、2026 年のローテーション用のこの [Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) を更新する必要があります。
+- DRI は、次の参加者に引き継ぐ際に、2026 年のローテーション用のこの [Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8)を更新する必要があります。
 
 ローテーションの終わりに、各エンジニアは[チームサポート Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) 内に引き継ぎノートを提供すべきです:
 
@@ -270,3 +270,102 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 ### ローテーションスケジュール {#rotation-schedule}
 
 スケジュールは [Google スプレッドシート（内部リンク）](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?usp=sharing)で追跡されます。変更する前にお尋ねください。
+
+## Support から Incident Management へのエスカレーションプロセス {#support-to-incident-escalation-process}
+
+このセクションでは、顧客への影響を示す兆候を Support から Incident Management へ
+エスカレーションするプロセスを説明します。このプロセスは
+[INC-13111](https://app.incident.io/gitlab/incidents/13111)を受けて策定されました。このインシデントでは、
+体系的なエスカレーションプロセスが存在しなかったため、本番環境の障害に関する顧客の報告が
+数日間 Zendesk に蓄積した後で、ようやくインシデントが宣言されました。
+
+このプロセスの正式な追跡用 Issue は、
+[gitlab-com/gl-infra/production-engineering#29567](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/29567)です。
+
+### エスカレーションの条件 {#escalation-triggers}
+
+以下の条件の**いずれか**が満たされた場合、Support は Incident Management へ
+エスカレーションしなければなりません。
+
+1. 同じ本番環境の障害について、**互いに独立した顧客報告を 2 件以上**、
+   24 時間以内に受け取った場合。エンジニアリングの Issue やインシデントが
+   すでに存在するかどうかは問いません。
+2. **顧客への影響が確認された場合** — 顧客がデータ損失、サービスの利用不能、
+   または主要なワークフローの障害を明確に報告した場合。
+3. 重大度 1 または重大度 2 の SLA 契約を持つ顧客から、**重大度の高い報告を 1 件**受け取り、
+   報告された問題が、既知または疑いのある
+   本番環境の障害と一致する場合。
+
+条件が満たされた場合、Support DRI はそれを確認してから
+**30 分以内**に対応しなければなりません。
+
+### 双方向リンクの基準 {#bidirectional-linking-standards}
+
+同じ本番環境の事象に関連するすべての記録を、相互にリンクしなければなりません。
+
+| 記録の種類 | 必須のリンク先 |
+|---|---|
+| Zendesk チケット | エンジニアリングの Issue（GitLab.com）と incident.io の記録（宣言済みの場合） |
+| エンジニアリングの Issue | Zendesk チケットと incident.io の記録（宣言済みの場合） |
+| incident.io の記録 | エンジニアリングの Issue と Zendesk チケット |
+
+**リンクの方法：**
+
+- Zendesk：チケットの内部メモに GitLab の Issue の URL と incident.io の URL を
+  追加します。
+- GitLab の Issue：Issue の説明またはコメントに Zendesk チケットの URL を追加し、
+  関連する Issue ウィジェットを使用して incident.io の記録をリンクします。
+- incident.io：インシデントのリンクされたリソースのセクションに、GitLab の Issue の URL と
+  Zendesk チケットの URL を追加します。
+
+### 責任者と受領確認の SLA {#ownership-and-acknowledgment-slas}
+
+エスカレーションの各引き継ぎには、明確な責任者と受領確認の
+SLA があります。
+
+| 引き継ぎ | 引き継ぎ元 | 引き継ぎ先 | 受領確認の SLA |
+|---|---|---|---|
+| 顧客報告 → エスカレーションの判断 | ローテーション中の Support DRI | Support Team Lead | 条件成立から 30 分 |
+| エスカレーションの判断 → インシデントの宣言 | Support Team Lead | Incident Manager on-call（IMOC） | エスカレーションから 15 分 |
+| インシデントの宣言 → エンジニアリングの対応開始 | Incident Manager on-call（IMOC） | Engineering DRI | 宣言から 30 分 |
+
+役割の定義：
+
+- **Support DRI**：現在、
+  [エンジニアリングの顧客/サポートローテーション](#engineering-customersupport-rotation-process)を担当しているエンジニア。
+  現在、このローテーションの対象はチームのうち Groups & Projects 側のみです。
+  Organizations に同等のローテーションが設けられるまでは、Organizations 固有の
+  兆候を担当する Support DRI はいません。その場合、Support は DRI を待たず、
+  Incident Manager on-call（IMOC）に直接その兆候を報告します。
+- **Support Team Lead**：Support を代表してエスカレーションを判断する、
+  当番の Support チームリード。
+- **Incident Manager on-call（IMOC）**：incident.io の
+  [Incident Manager - GitLab.com SaaS スケジュール](https://app.incident.io/gitlab/on-call/schedules/01K77XZFD7X7E3W8T6GDVMKAFF)の
+  当番エンジニア。この役割の責任については、[インシデント管理](/handbook/engineering/infrastructure-platforms/incident-management/)を
+  参照してください。
+- **Engineering DRI**：影響を受けた領域を担当するチームのエンジニアで、
+  インシデント宣言後に IMOC が対応を依頼します。
+
+### 判断の記録 {#decision-recording}
+
+条件が満たされた場合、Support DRI は受領確認の SLA の時間内に、
+関連する Zendesk チケットと GitLab の Issue に判断を記録しなければなりません。
+判断は、次のいずれかである必要があります。
+
+- **インシデントを宣言する**：直ちに Incident Management のオンコール担当者へエスカレーションします。
+- **監視する**：再評価する時刻（最大 2 時間後）を設定し、
+  直ちに宣言しない理由を記録します。
+- **宣言しない**：理由（問題がすでに解決している、
+  顧客への影響が確認されていない、など）を記録します。
+
+GitLab の Issue または Zendesk の内部メモで、以下のテンプレートを使用してください。
+
+```markdown
+**Escalation Decision** — [DATE TIME UTC]
+
+Trigger: [describe the trigger condition met]
+Decision: [Declare incident / Monitor / Do not declare]
+Rationale: [brief explanation]
+Support DRI: @username
+Next action: [e.g., "Escalated to @on-call-engineer" or "Re-evaluate at HH:MM UTC"]
+```

@@ -2,9 +2,9 @@
 title: Abuse Engineering グループ
 description: "Abuse Engineering グループは、GitLab プロダクトの不正利用を防止するコントロールを作成します"
 upstream_path: /handbook/engineering/development/sec/security-platform/abuse-engineering/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: 2026-08-13T15:10:33+03:00
-translated_at: "2026-08-14T06:30:00+09:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+lastmod: "2026-10-01T08:11:54+02:00"
+translated_at: "2026-10-10T06:55:21.889977+00:00"
 translator: codex
 stale: false
 ---
@@ -65,7 +65,7 @@ FY27 の Sec 再編以前は Anti-Abuse という名称でした。`group::anti-
 
 - [Sec:Authentication](/handbook/engineering/development/sec/security-platform/authentication/)
 - [Growth:Acquisition and Activation](/handbook/engineering/development/growth/)
-- [Fulfillment:Fulfillment Platform](/handbook/engineering/development/fulfillment/fulfillment-platform/#team-members)
+- [Monetization:Monetization Platform](/handbook/engineering/development/monetization/#teams)
 
 カウンターパートに協力を求める状況の例を次に示します。
 

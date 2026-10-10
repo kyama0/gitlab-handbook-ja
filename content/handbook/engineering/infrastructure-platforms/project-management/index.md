@@ -1,31 +1,31 @@
 ---
 title: "インフラストラクチャプラットフォームのプロジェクト管理"
 upstream_path: /handbook/engineering/infrastructure-platforms/project-management/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T06:52:34+09:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-10T06:53:00+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T17:51:54+00:00"
+lastmod: "2026-10-05T13:20:55-07:00"
 ---
 
-## プラットフォームにおけるプロジェクト管理
+## プラットフォームにおけるプロジェクト管理 {#project-management-in-platforms}
 
 私たちは GitLab のエピックと Issue を使用して、作業の進捗とステータスを伝達しています。
 インフラプラットフォームのすべてのチームは、チームメンバーが必要に応じて異なるプロジェクトに貢献しやすいよう、これらのガイドラインに従っています。
 
-### プロジェクトはグランドレビューで毎週レビューされます
+### プロジェクトはグランドレビューで毎週レビューされます {#projects-are-reviewed-weekly-in-the-grand-review}
 
-#### エピック更新タイムライン
+#### エピック更新タイムライン {#epic-update-timeline}
 
 インフラプラットフォームのエピックは[GitLab オペレーティングモデル（GOM）](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)と整合しています。多くのエピックは次のいずれかです:
 
 1. [グランドレビューエピック](https://gitlab.com/groups/gitlab-com/-/work_items/2115)の子エピック
-2. [オペレーティングモデル機能リードエピック](https://gitlab.com/groups/gitlab-operating-model/-/work_items?label_name%5B%5D=Owner%3A%3AInfrastructure%20Platforms&type%5B%5D=epic)にリンク済み
+2. [オペレーティングモデルファンクショナルリードエピック](https://gitlab.com/groups/gitlab-operating-model/-/work_items?label_name%5B%5D=Owner%3A%3AInfrastructure%20Platforms&type%5B%5D=epic)にリンク済み
 
 更新スケジュールは、これらのレベルを通じて情報をカスケードするよう設計されています:
 
 - **木曜日 EoD（金曜日 02:00 UTC）**: DRI がプロジェクトエピックを更新します（自動化が木曜日 00:00 UTC にプロンプトを送ります）
-- **金曜日**: リードが木曜日の情報を使用してグランドレビューと GOM 機能リードエピックを更新します
+- **金曜日**: リードが木曜日の情報を使用してグランドレビューと GOM ファンクショナルリードエピックを更新します
 - **月曜日**: リーダーシップチームが更新を議論します
 - **火曜日**: プラットフォームグランドレビューが行われます
 - **水曜日**: インフラ VP と PM がカスケードされた情報を使用する会社全体のオペレーティングモデルレビュー
@@ -38,7 +38,7 @@ lastmod: "2026-07-15T17:51:54+00:00"
 私たちは[自動化](https://gitlab.com/gitlab-com/gl-infra/epic-issue-summaries/)を使用して各グループのトップレベルエピックにステータス情報を収集し、エピックのノートからステータス更新を収集します。
 この自動化は毎日数回実行され、[プロジェクトページに記載されているパイプラインを実行することで](https://gitlab.com/gitlab-com/gl-infra/epic-issue-summaries/-/pipeline_schedules)トリガーできます。
 
-#### プロジェクトエピックのステータス更新
+#### プロジェクトエピックのステータス更新 {#status-updates-on-project-epics}
 
 プロジェクトエピックで週次ステータス更新が有効になると、ステータス更新の提供方法についての指示を含むコメントが表示されます。
 
@@ -59,7 +59,7 @@ lastmod: "2026-07-15T17:51:54+00:00"
 ...
 ```
 
-GitLab Duo エージェントチャットは更新の開始点を生成するのに役立ちます:
+GitLab Duo Agentic Chatは更新の開始点を生成するのに役立ちます:
 
 1. エピックを読み込み、メンションされているステータスノートに移動します（有効化後）。
 2. サイドバーの「GitLab Duo Chat」をクリックし、エージェントモードを有効にします。
@@ -80,7 +80,7 @@ Please provide a terse high level summary of the last 7 days of activity using t
 Give the status update in raw markdown (preformatted text) and do not use any markdown headings.
 ```
 
-#### プロジェクトが完了したとき
+#### プロジェクトが完了したとき {#when-a-project-is-finished}
 
 1. エピックは「オープン」のままで ~"workflow-infra::In Progress" ラベルを保持し、次のプラットフォームグランドレビューのためにまだリストされるようにします。
 1. DRI はエピックの説明を更新し、`Participants` セクションを含む各セクションが最新であることを確認する責任があります。
@@ -97,7 +97,7 @@ Give the status update in raw markdown (preformatted text) and do not use any ma
 
 クロージングステータスは年末チームサマリーを作成する際に役立ちます。
 
-## エピック
+## エピック {#epics}
 
 エピックには常に以下のセクションが必要です:
 
@@ -108,13 +108,13 @@ Give the status update in raw markdown (preformatted text) and do not use any ma
 - エピックの最新ステータス更新を含むステータス更新
 - 開始日と推定完了日
 
-### セクションのフォーマット
+### セクションのフォーマット {#sections-format}
 
 エピックの DRI はアサイニーにし、エピックのアサイニーは 1 人のみにしてください。
 
 エピックの説明では以下の見出しと構造を使用してください:
 
-#### 参加者セクション
+#### 参加者セクション {#participants-section}
 
 このセクションは動的で、現在エピックの作業に貢献している人々を含みます。
 DRI と EM は参加者リストを適切に更新する責任があります。
@@ -127,20 +127,20 @@ DRI と EM は参加者リストを適切に更新する責任があります。
 - @participantN
 ```
 
-#### ステータスセクション
+#### ステータスセクション {#status-section}
 
 ステータスセクションはサブエピックで自動的に生成されます。
 詳細については[プロジェクトエピックのステータス更新](#status-updates-on-project-epics)セクションを参照してください。
 
-### これは Issue であるべきか、エピックであるべきか?
+### これは Issue であるべきか、エピックであるべきか? {#should-this-be-an-issue-or-an-epic}
 
 私たちはエピックを使用して、特定の目標を達成したり特定のインパクトにつながる一連の作業を一つのテーマの下に統合できることを示します。
 エピックは 2 週間以上かかる可能性が高い、または既に 2 週間以上続いている任意の作業セットをカバーできます。
 その後、その目標に向けた進捗を定期的に報告し、完了したときに作業のインパクトを明確に示すことができます。
 
-## 特定の Issue タイプ
+## 特定の Issue タイプ {#specific-issue-types}
 
-### 是正措置とセキュリティ Issue
+### 是正措置とセキュリティ Issue {#corrective-actions-and-security-issues}
 
 私たちは `~"corrective action"` または `~"security"` とラベル付けされた是正措置とセキュリティ Issue にも取り組んでいます。
 これらの Issue では、特定の SLO を満たすために `severity::*` ラベルが設定されます。
@@ -148,7 +148,7 @@ DRI と EM は参加者リストを適切に更新する責任があります。
 - セキュリティ Issue については[深刻度別の解決までの時間の表](/handbook/security/engaging-with-security/#severity-and-priority-labels-on-security-issues)を参照してください
 - 是正措置の SLO は現在[品質](/handbook/product-development/how-we-work/issue-triage/#severity-slos)の定義に基づいています:
 
-## ラベル
+## ラベル {#labels}
 
 インフラプラットフォームチームは以下のラベルセットを使用しています:
 
@@ -156,12 +156,12 @@ DRI と EM は参加者リストを適切に更新する責任があります。
 |-------------|--------|
 | セクションラベル | `section::developer experience`<br/>`section::gitlab delivery`<br/>`section::gitlab dedicated`<br/>`section::production engineering`<br/>`section::tenant scale` |
 | ステージラベル | `devops::developer experience`<br/>`devops::gitlab delivery`<br/>`devops::gitlab dedicated`<br/>`devops::production engineering`<br/>`devops::data access`<br/>`devops::runtime` |
-| グループラベル | `group::build`<br/>`group::Cloud Cost Utilization`<br/>`group::development analytics`<br/>`group::development tooling`<br/>`group::environment automation`<br/>`group::Foundations`<br/>`group::geo`<br/>`group::git`<br/>`group::gitaly`<br/>`group::Observability`<br/>`group::operate`<br/>`group::Ops`<br/>`group::organizations`<br/>`group::performance enablement`<br/>`group::release-and-deploy`<br/>`group::Runners Platform`<br/>`group::runway`<br/>`group::switchboard`<br/>`group::tenant services`<br/>`group::US PubSec` |
+| グループラベル | `group::build`<br/>`group::Cloud Cost Utilization`<br/>`group::development health`<br/>`group::development tooling`<br/>`group::environment automation`<br/>`group::Foundations`<br/>`group::geo`<br/>`group::git`<br/>`group::gitaly`<br/>`group::Observability`<br/>`group::operate`<br/>`group::Ops`<br/>`group::organizations`<br/>`group::performance enablement`<br/>`group::release-and-deploy`<br/>`group::Runners Platform`<br/>`group::runway`<br/>`group::switchboard`<br/>`group::tenant services`<br/>`group::US PubSec` |
 | スコープ付き `workflow-infra::*` ラベル | （以下参照） |
 | スコープ付き `infra-category::*` ラベル | （以下参照） |
 | オプションのスコープ付き `Service` ラベル | `Service::*` |
 
-### ワークフローラベル
+### ワークフローラベル {#workflow-labels}
 
 私たちはスコープ付きワークフローラベルを活用して、作業のさまざまなステージを追跡します。
 これらは各 Issue の作業の進行を示し、ブロッカーを取り除いたりフォーカスを変更しやすくします。
@@ -183,36 +183,36 @@ Issue はすべての状態を経由する必要はないかもしれません�
 | 状態ラベル | 説明 |
 | ----------- | ----------- |
 | ![キャンセル](/images/engineering/infrastructure-platforms/project-management/label-cancelled.png) | Issue の作業は外部要因または Issue を解決しないという決定により放棄されます。このラベルを適用した後、Issue はクローズされます。 |
-| ![停滞](/images/engineering/infrastructure-platforms/project-management/label-stalled.png) | 作業は放棄されませんが、他の作業の優先度が高いです。このラベルを適用した後、チームのエンジニアリングマネージャーが Issue でメンションされ、優先度を変更するかさらなる支援を見つけます。 |
-| ![ブロック中](/images/engineering/infrastructure-platforms/project-management/label-blocked.png) | 作業は外部依存関係または他の外部要因によりブロックされています。可能であれば、[ブロッキング Issue](https://docs.gitlab.com/ee/user/project/issues/related_issues.html) も設定する必要があります。このラベルを適用した後、ラベルを削除できるまでチームによって定期的にトリアージされます。 |
+| ![停滞](/images/engineering/infrastructure-platforms/project-management/label-stalled.png) | 作業は放棄されませんが、他の作業の優先度が高いです。このラベルを適用した後、チームのEngineering Managerが Issue でメンションされ、優先度を変更するかさらなる支援を見つけます。 |
+| ![ブロック中](/images/engineering/infrastructure-platforms/project-management/label-blocked.png) | 作業は外部依存関係または他の外部要因によりブロックされています。可能であれば、[ブロッキング Issue](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)も設定する必要があります。このラベルを適用した後、ラベルを削除できるまでチームによって定期的にトリアージされます。 |
 
-### カテゴリラベル
+### カテゴリラベル {#category-labels}
 
 私たちはスコープ付きカテゴリラベルを使用して、実施される作業のタイプまたは領域を分類します。
 これらのラベルは機能的カテゴリによって Issue を整理してフィルタリングするのに役立ちます。
 
 | カテゴリラベル | 説明 |
 | -------------- | ----------- |
-| `infra-category::KTLO` | Keep the lights on（ライトを維持する）。システムの安定性、信頼性、パフォーマンスを維持するために必要な運用作業。モニタリング、アラート、インシデント対応、定期的なメンテナンスを含みます。 |
+| `infra-category::KTLO` | 日常運用の維持。システムの安定性、信頼性、パフォーマンスを維持するために必要な運用作業。モニタリング、アラート、インシデント対応、定期的なメンテナンスを含みます。 |
 | `infra-category::Tech Debt` | 技術的負債とリファクタリング作業。将来のメンテナンス負担を削減するコード品質、アーキテクチャ、テスト、ドキュメント、インフラの改善またはバグ修正。 |
 | `infra-category::Customer innovation` | 顧客のニーズとフィードバックによって直接推進される作業。顧客体験を向上させ、顧客から報告された問題に対処する機能、改善、ソリューション。 |
 | `infra-category::Internal innovation` | 内部改善と探求。開発者体験、チームの生産性を向上させる、または将来の採用のための新しい技術とアプローチを探求する作業。複数クラスの技術的負債に対処する場合、基盤/アーキテクチャ作業が含まれる場合があります。 |
 
-### gitlab-org グループのラベル
+### gitlab-org グループのラベル {#labels-in-gitlab-org-group}
 
 ステージグループは [type ラベル](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification)を使用して `gitlab-org` グループのプロジェクトのマージリクエストにラベル付けします。
 ステージグループに作業を実施させる必要がある場合、Issue の作成時に関連するステージグループラベルを適用するのが最善です。
 
-## トリアージ Ops
+## トリアージ Ops {#triage-ops}
 
-[gitlab-com/gl-infra](https://gitlab.com/gitlab-com/gl-infra) 配下のラベリングとボット通知については、[gitlab-triage](https://gitlab.com/gitlab-org/ruby/gems/gitlab-triage) と [triage-ops](https://gitlab.com/gitlab-com/gl-infra/triage-ops/) プロジェクトを使用しています。
+[gitlab-com/gl-infra](https://gitlab.com/gitlab-com/gl-infra) 配下のラベリングとボット通知については、[gitlab-triage](https://gitlab.com/gitlab-org/ruby/gems/gitlab-triage)と [triage-ops](https://gitlab.com/gitlab-com/gl-infra/triage-ops/) プロジェクトを使用しています。
 ラベリング、SLO の適用、ワークフローラベル管理については、インフラプラットフォームのプロジェクトに対して均一に設定された共通ポリシーがあります。
-追加のポリシーを追加する方法の詳細については[プロジェクトの README.md](https://gitlab.com/gitlab-com/gl-infra/triage-ops/-/blob/master/README.md?ref_type=heads) を参照してください。
+追加のポリシーを追加する方法の詳細については[プロジェクトの README.md](https://gitlab.com/gitlab-com/gl-infra/triage-ops/-/blob/master/README.md?ref_type=heads)を参照してください。
 
-## レトロスペクティブ
+## レトロスペクティブ {#retrospectives}
 
 四半期末または大きな成果物の完了時に、チームはレトロスペクティブを実施して学びを記録する必要があります。
-レトロスペクティブに決まったフォーマットはありませんが、エンジニアリングマネージャーは[GitLab レトロスペクティブガイドライン](/handbook/engineering/careers/management/group-retrospectives/)を把握しておく必要があります。
+レトロスペクティブに決まったフォーマットはありませんが、Engineering Managerは[GitLab レトロスペクティブガイドライン](/handbook/engineering/careers/management/group-retrospectives/)を把握しておく必要があります。
 レトロスペクティブ DRI はアクションのリストを特定し、Issue の説明のアクションサマリーセクションに統合します。
 
 アクションを特定するプロセス:
@@ -220,5 +220,5 @@ Issue はすべての状態を経由する必要はないかもしれません�
 1. 各スレッドにアクションをタイトルとしたコメントを追加します（H3 レベル）
 1. 一部のスレッドはアクションを必要としない場合があり、透明性のためにスレッドの最後にこれを明示的に述べるとよいでしょう
 1. アクションコメントの下に、チームが取れるアクションの提案を追加します
-1. 貢献者にピンして、アクションと潜在的な改善に対してラウンドのバリデーションを得ます
+1. 貢献者にメンションして、アクションと改善案を確認してもらいます
 1. 各アクションに Issue を作成し、アクションサマリーセクションにリストアップします
