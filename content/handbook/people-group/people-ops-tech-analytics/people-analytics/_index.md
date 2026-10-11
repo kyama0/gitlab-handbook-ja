@@ -2,9 +2,9 @@
 title: "People Analytics"
 description: "GitLab People Analytics チームハンドブックページ"
 upstream_path: /handbook/people-group/people-ops-tech-analytics/people-analytics/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-12T09:20:53-04:00
-translated_at: "2026-06-12T21:15:15Z"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+lastmod: "2026-10-09T13:19:36-04:00"
+translated_at: "2026-10-11T21:02:41+00:00"
 translator: claude
 stale: false
 ---
@@ -16,6 +16,7 @@ People Analytics は、データに基づくインサイトを活用して、Git
 ## People Analytics チームメンバー
 
 - [Shane McCormack](https://gitlab.com/mccormack514): [Manager, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#manager-people-analytics)
+- [Danielle Allen](https://gitlab.com/danielleallen): [Senior Analyst, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#senior-analyst-people-analytics)
 
 ## 私たちの活動
 
@@ -24,7 +25,7 @@ People Analytics は、データに基づくインサイトを活用して、Git
 **主要な目標:**
 
 - **レポーティングソリューション** - ステークホルダーと協力して、関連する People の指標を効率的かつ正確に提供する自動化されたレポーティングソリューションを開発します
-- **データソリューション** - [データチーム](/handbook/enterprise-data/)と協力して、レポーティングと分析を支えるスケーラブルなデータモデルを構築します
+- **データソリューション** - [Data Team](/handbook/enterprise-data/)と協力して、レポーティングと分析を支えるスケーラブルなデータモデルを構築します
 - **分析ソリューション** - 高度な統計手法（クラスタリング、回帰、生存時間分析）を適用して、GitLab 全体の People Group とリーダーシップ向けに、実行可能なインサイトとデータに基づく意思決定を生み出します
 
 ## ツールとリソース

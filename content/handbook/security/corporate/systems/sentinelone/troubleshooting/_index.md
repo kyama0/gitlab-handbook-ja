@@ -1,11 +1,11 @@
 ---
-title: SentinelOne EDR トラブルシューティングガイド
+title: SentinelOne エンドポイントの検知と対応（EDR）トラブルシューティングガイド
 upstream_path: /handbook/security/corporate/systems/sentinelone/troubleshooting/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-11T21:08:19+00:00"
 translator: claude
 stale: false
-lastmod: "2025-06-26T03:27:50+00:00"
+lastmod: "2026-10-09T14:49:22+02:00"
 ---
 
 SentinelOne で問題が発生している場合は、以下のトラブルシューティング手順をお試しください。
@@ -97,12 +97,12 @@ SentinelOne は CPU パワー全体の 10% 未満を使用することが期待�
 
 4. 画面右上にレポートが生成されていることを示す通知が表示されるはずです。
 
-    ![S1 Report Generation](/images/security/corporate/systems/sentinelone/troubleshooting/S1ReportProgress.png)
+    ![S1 レポートの生成](/images/security/corporate/systems/sentinelone/troubleshooting/S1ReportProgress.png)
 
 5. しばらくするとレポートが完成し、SentinelOne からログファイルが完成したことを示す別の通知が表示されます。通知をクリックすると、SentinelAgent にデスクトップフォルダ内のファイルへのアクセスを許可するよう求められる場合があります。その後、ファイルがデスクトップフォルダにダウンロードされます。
 
-    ![S1 Completion](/images/security/corporate/systems/sentinelone/troubleshooting/S1ProfileComplete.png)
-    ![S1 Allow Desktop Folder](/images/security/corporate/systems/sentinelone/troubleshooting/S1AllowDesktop.png)
+    ![S1 完了](/images/security/corporate/systems/sentinelone/troubleshooting/S1ProfileComplete.png)
+    ![S1 にデスクトップフォルダへのアクセスを許可](/images/security/corporate/systems/sentinelone/troubleshooting/S1AllowDesktop.png)
 
 6. レポートが生成するデータを分析し、必要に応じて #sentinelone Slack チャンネルでファイルを共有してください。SentinelOne サポートに対するチケットを起票します。
 
