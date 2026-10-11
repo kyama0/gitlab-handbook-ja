@@ -3,11 +3,11 @@ title: プリセールスからポストセールスへのアカウント引き�
 description: >-
   顧客がプリセールスエンゲージメントからポストセールスへ円滑に移行し、成功を収めるための方法。
 upstream_path: /handbook/customer-experience/pre-sales-post-sales-transition/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-11T21:08:19+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-09T17:05:37Z"
 ---
 
 プリセールスチームのメンバーとして、GitLab の商談を成功裏にクローズした後は、CSM のために道を整えることが重要です。CSM の紹介は、カスタマーライフサイクルにおける重要なステップです。効果的な CSM の紹介は、顧客の製品に対する期待感を高め、オンボーディング・実装・採用を通じて顧客を支援する CSM の信頼性を向上させます。
@@ -17,16 +17,16 @@ lastmod: "2026-09-24T21:34:11+02:00"
 すべてのアカウントが CSA/M/E の対象となるわけではありません。
 一般的に、CSA/M アカウントには Success Tier が付随しています。CSE が担当するアカウントは一定の閾値を超えており、Success Tier は付与されていません。
 
-アカウントにすでに CSA/M が割り当てられているかどうかを確認するには、Salesforce のアカウントページに移動し、`Customer Success` セクションまでスクロールし、`Customer Success Manager` のエントリがあるか確認してください（ソリューションアーキテクトのすぐ下に表示されます）。担当者が記載されている場合、その人が CSM であり、アカウントについて直接連絡できます。担当者の代わりに `TAM Scale` と表示されている場合、そのアカウントは Success On-Demand（CSE）でサポートされています。CSE をアカウントにエンゲージするには、エンゲージメントをリクエストする方法について[こちらのハンドブックページ](/handbook/customer-experience/csm/segment/cse/cse-operating-rhythm/)を参照してください。
+アカウントにすでに CSA/M が割り当てられているかどうかを確認するには、Salesforce のアカウントページに移動し、`Customer Success` セクションまでスクロールし、`Customer Success Manager` のエントリがあるか確認してください（Solutions Architect のすぐ下に表示されます）。担当者が記載されている場合、その人が CSM であり、アカウントについて直接連絡できます。担当者の代わりに `TAM Scale` と表示されている場合、そのアカウントは Success On-Demand（CSE）でサポートされています。CSE をアカウントにエンゲージするには、エンゲージメントをリクエストする方法について[こちらのハンドブックページ](/handbook/customer-experience/csm/segment/cse/pooled/)を参照してください。
 
-CSM の担当割り当てに関する質問（既存顧客または新規適格顧客を問わず）は、その地域をサポートする CSM マネージャーにお問い合わせください（詳細については[こちらのハンドブックページ](/handbook/customer-experience/csm/csm-manager/)を参照してください）。
+CSM の担当割り当てに関する質問（既存顧客または新規適格顧客を問わず）は、その地域をサポートする CSM Manager にお問い合わせください（詳細については[こちらのハンドブックページ](/handbook/customer-experience/csm/csm-manager/)を参照してください）。
 
-顧客が Dedicated を利用予定の場合、アカウントチームは連携している CSM マネージャーに通知し、プリセールスプロセス中に CSM をエンゲージするために[Dedicated 顧客向けの CSM エンゲージメントのベストプラクティス](https://internal.gitlab.com/handbook/customer-experience/csm/gitlab-dedicated/)を把握しておく必要があります。
+顧客が Dedicated を利用予定の場合、アカウントチームは連携している CSM Manager に通知し、プリセールスプロセス中に CSM をエンゲージするために[Dedicated 顧客向けの CSM エンゲージメントのベストプラクティス](https://internal.gitlab.com/handbook/customer-experience/csm/gitlab-dedicated/)を把握しておく必要があります。
 
 ## 引き継ぎクイックサマリー {#transition-quick-summary}
 
 | ---  |  ---   |
-| CSM の紹介を**誰が**コーディネートするか？ | ソリューションアーキテクト |
+| CSM の紹介を**誰が**コーディネートするか？ | Solutions Architect |
 | 紹介は**いつ**行われるか？ | `3-Technical Evaluation` または `4-Proposal` |
 | この段階で紹介を行う**理由**は？ | アカウント内でビジネス価値の議論がまだ行われている段階で CSM を紹介することで、重要な戦略的意思決定者との関係を構築し、顧客が実装の旅を具体的にイメージできるよう支援します。これにより、CSM はアカウント内の適切なレベルで継続的なエンゲージメントを維持できます。 |
 | 紹介の**方法**は？ | SA は、CSM を含む[アカウントチーム](/handbook/customer-experience/account-team/)全体と内部で同期した後、顧客チームとの「GitLab へようこそ」コールをスケジュールします。 |
@@ -38,7 +38,7 @@ CSM の担当割り当てに関する質問（既存顧客または新規適格�
 
 ### 商談成立前に引き継ぎを始める理由
 
-SA がまだ定期的な連絡を持ち、緊密な作業関係を維持している間に、CSM を意思決定者や主要なステークホルダーに紹介するのに最適なタイミングです。これらのビジネスの相手方は通常、将来のカレンスコールには参加しないため、早い段階で関係を育てることで、CSM は採用を推進するために最適な立場にあるビジネスステークホルダーと関わることができます。これにより、成功計画や EBR 等において成果志向のパートナーシップを構築できます。
+SA がまだ定期的な連絡を持ち、緊密な作業関係を維持している間に、CSM を意思決定者や主要なステークホルダーに紹介するのに最適なタイミングです。これらのビジネスの相手方は通常、将来のケイデンスコールには参加しないため、早い段階で関係を育てることで、CSM は採用を推進するために最適な立場にあるビジネスステークホルダーと関わることができます。これにより、成功計画や EBR 等において成果志向のパートナーシップを構築できます。
 
 また、次のような状況では、CSM のエンゲージメントを[ステージ](/handbook/sales/field-operations/gtm-resources/) `3-Technical Evaluation` のより早い段階（ただしそれ以前は不可）でリクエストできます。
 
@@ -54,7 +54,7 @@ NOTE: I'm not convinced these are valid reasons to engage a CSM prior to stage 3
 
 ### SA は CSM とどのように連携するか？
 
-CSM のワークロードを効果的に分散させるために、SA は担当地域の CSM マネージャーに連絡し、アカウントに CSM を割り当てるよう依頼する必要があります。このプロセスの一環として、SA は少なくとも以下の情報を提供する必要があります。
+CSM のワークロードを効果的に分散させるために、SA は担当地域の CSM Manager に連絡し、アカウントに CSM を割り当てるよう依頼する必要があります。このプロセスの一環として、SA は少なくとも以下の情報を提供する必要があります。
 
 - アカウントへの Salesforce リンク
 - 商談への Salesforce リンク
@@ -104,7 +104,7 @@ CSM のワークロードを効果的に分散させるために、SA は担当�
   - 主要ステークホルダー
 - オープンなサポートチケット
 
-ソリューションアーキテクトがコラボレーションプロジェクトを作成している場合、[アカウントチーム](/handbook/customer-experience/account-team/)は一緒にレビューし、`readme.md` の詳細と Issue が最新の状態であることを確認する必要があります。
+Solutions Architect がコラボレーションプロジェクトを作成している場合、[アカウントチーム](/handbook/customer-experience/account-team/)は一緒にレビューし、`readme.md` の詳細と Issue が最新の状態であることを確認する必要があります。
 
 ### 顧客への CSM の紹介
 

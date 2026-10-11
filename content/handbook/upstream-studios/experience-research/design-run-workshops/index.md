@@ -2,9 +2,9 @@
 title: "独自の部門横断ワークショップを設計して実施する"
 description: "このページは、目の前の課題を全体的な視点で捉えるために同期ワークショップを実施したい GitLab のすべての人を対象としています。このガイドでは、3 種類のワークショップ（問題のフレーミング、ジャーニーマッピング、アイデア創出）、各ワークショップが答える中心的な問い、ワークショップを設計して実施するエンドツーエンドのプロセス（Claude Skill を含む）について説明します"
 upstream_path: /handbook/upstream-studios/experience-research/design-run-workshops/
-upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
-lastmod: "2026-09-01T18:13:59+02:00"
-translated_at: "2026-09-04T22:10:08+09:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+lastmod: "2026-10-07T09:03:11-04:00"
+translated_at: "2026-10-11T21:08:19+00:00"
 translator: codex
 stale: false
 ---
@@ -24,7 +24,18 @@ design-workshop という名称の Claude Skill は、[GitLab AI Marketplace 内
 | **ジャーニーマッピング** | 体験が複数の段階にまたがり、グループで全体像を捉える必要がある場合 | マッピングされたジャーニー + 対応すべき重要な瞬間 | 観点を持たずにすべてをマッピングすること |
 | **アイデア創出** | 問題について合意しており、異なるコンセプトの方向性を探る必要がある場合 | ランク付けされた候補リスト + 各候補の次のステップ 1 つ | 最初のアイデアに固執すること |
 
-それまでに完了した作業に応じて、セッションで複数の種類を組み合わせることもできます。GitLab の UX Researcher は、関心を持ってもらえそうなリサーチ中心のワークショップ（ふりかえり、リサーチ計画、推奨事項に関する認識合わせなど）もいくつかまとめています。詳細は[こちらのハンドブックページ](/handbook/upstream-studios/experience-research/how-to-conduct-ux-research-workshops/)で確認できます。
+それまでに完了した作業に応じて、セッションで複数の種類を組み合わせることもできます。GitLab の UX Researcher は、関心を持ってもらえそうなリサーチ中心のワークショップ（ふりかえり、リサーチ計画、推奨事項に関する認識合わせなど）もいくつかまとめています。
+
+### **リサーチワークショップの例とテンプレート** {#research-workshop-examples-and-templates}
+
+*リサーチの初期段階*
+
+* **リサーチプロジェクト計画ワークショップ：** 今後のリサーチプロジェクトの方向性とビジョンについて合意を形成するプロセスです。この種類のワークショップは、リサーチを始める前にステークホルダーの賛同を得るために使用します。([FigJam ボードテンプレート](https://www.figma.com/file/xrI7hK8PrX8z5NgaTZnRbI/Research-Project-Planning-Workshop-Template?type=whiteboard&node-id=0-1&t=iGsKsCszM2IkhEBQ-0))
+
+*リサーチの終盤*
+
+* **リサーチの推奨事項に関する認識合わせワークショップ：** リサーチで特定したユーザーのペインポイントのうち、チームがどれをどのように解消するかについて、Product チームと合意を形成するプロセスです。この種類のワークショップでは、チームが事前に推奨事項について話し合い、合意するため、最終的なリサーチレポートに予想外の内容が含まれることを防げます。([非同期ワークショップ用の FigJam ボードテンプレート](https://www.figma.com/file/a21e4ULruQzsO4fyhZaQuU/Recommendations-Alignment-Workshop-Template?type=whiteboard&node-id=0-1&t=BPMkNjhREFLGyYzS-0); ([同期ワークショップ用の FigJam ボードテンプレート](https://www.figma.com/file/bNZAvYidhtMXJUFl7PeO88/Recommendations-Alignment-Workshop-(Sync-based)-Template?type=whiteboard&node-id=0-1&t=SttgOyzOTq40QJpg-0)))
+* **リサーチのふりかえりワークショップ：** UX Researcher やステークホルダーが、リサーチプロジェクトの良かった点と悪かった点を振り返るために行う、率直な対話です。また、このワークショップは、今後の関連プロジェクトに向けた改善点やアクションアイテムを特定するためにも使用します。([FigJam ボードテンプレート](https://www.figma.com/file/UwcCFflMdTKU9yuODH14Vm/Research-Retrospective-Workshop-Template?type=whiteboard&node-id=0-1&t=R6aJN08Ek2aQOtTR-0))
 
 ### **各ワークショップの開始時に用意するものと、終了時に得られるもの：** {#what-you-go-in-with-what-you-walk-out-with-for-each-workshop-type}
 
@@ -120,7 +131,7 @@ design-workshop という名称の Claude Skill は、[GitLab AI Marketplace 内
 * 上記のワークショップの構成に従って、そのアジェンダとアクティビティを作成します。ワークショップアクティビティの外部ライブラリとして、[NN/group](https://www.nngroup.com/articles/workshop-activities/)と [SessionLab](https://www.sessionlab.com/library/design)へのリンクをそれぞれ示します。
 * すべてのアクティビティに目的を持たせてください。あるブロックの成果を次のブロックへつなげるか、トピックが変わる前にアクションアイテムとしてまとめます。アクティビティが必要な理由を 1 行で説明できなければ、削除します。
 * 5 分刻み（5 分、10 分など）の時間設定にすると、追加のディスカッションにも対応できます。
-  * 大まかな配分：フレームとコンテキストに 15 〜 20%、最も大きな割合を占める発散ブロックに各 20 〜 25 分、収束と共有に 10 〜 15 分、終了に 10 〜 15 分。
+  * 大まかな配分：フレームとコンテキストに 15 〜 20%、最も大きな割合を占める発散ブロックに各 20 〜 25 分、収束と共有に 10 〜 15 分、終了に 10 〜 15%。
 * **グループでの作業方法を決めます。** より充実した貢献を得られるよう、ブレイクアウトグループはデフォルトで 2 〜 3 人にします。全員が貢献できるよう、グループでの時間の前に、静かに個人で考える時間を割り当てます。
 * **声に出すときと同じ言葉でボードを書きます。** プロンプトには、人々が答えられる問いを使用します（「信頼や関心を損なうものは何か？」であり、「信頼体験における摩擦点を特定する」ではありません）。ファシリテーターのメモは話し言葉で記述します（「まず 5 分間、各自で考えてからディスカッションすることを提案します」であり、「参加者は個人でのアイデア創出に取り組みます」ではありません）。収束ポイントには主要な問いのボックスがあり、明白な答えを超えるための問いを 1 つ用意する必要があります。
 * **終了：** 全員にそれぞれ 1 つの学び、セッションへのフィードバック（非同期で行うことも可能）、フォローアップのアクションや問いを尋ねます。

@@ -2,9 +2,9 @@
 title: "Upstream Studios の Experience Research"
 description: "私たちは Brand から Product まで、何を構築し、どのように位置づけるかに情報を与えるエンドツーエンドのインサイトを提供し、すべての段階の意思決定を形作ります。"
 upstream_path: /handbook/upstream-studios/experience-research/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T06:46:21+09:00"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+lastmod: "2026-10-07T09:03:11-04:00"
+translated_at: "2026-10-11T21:08:19+00:00"
 translator: codex
 stale: false
 ---
@@ -17,20 +17,20 @@ stale: false
 
 ## 私たちの構造 {#how-we-are-structured}
 
-ExR チームは [Karen Li](https://gitlab.com/karenyli) がリードしています。GitLab [Upstream Studios](/handbook/upstream-studios/)の 8 チームのうちの 1 つです。チームは UX Research、[Service Design](/handbook/upstream-studios/experience-research/service-design/)、[Research Operations (ReOps)](/handbook/upstream-studios/research-operations/)という 3 つの専門分野で構成されます。
+ExR チームは [Karen Li](https://gitlab.com/karenyli)がリードしています。GitLab [Upstream Studios](/handbook/upstream-studios/)の 8 チームのうちの 1 つです。チームは UX Research、[Service Design](/handbook/upstream-studios/experience-research/service-design/)、[Research Operations (ReOps)](/handbook/upstream-studios/research-operations/)という 3 つの専門分野で構成されます。
 
 4 つのプロダクトスタジオのそれぞれに 1 人のリサーチャーが組み込まれ、**トリオのレベルで**、VP of Product Management、VP of Engineering、Product Design Manager とともに、意思決定が行われる過程でその形成に携わります。さらに 2 人のリサーチャーが中央集約チームに組み込まれ、**チームリードと直接協働して**、Design Strategy と Brand Experience を支援します。Service Design はすべてのスタジオと中央集約チームを対象に、最も断絶が表れる可能性のある場所に注意を向けます。Research Operations は、大規模なリサーチの効率と品質を可能にします。
 
 | チーム | ExR チームメンバー | 注記 |
 |------|-----------------|-------|
-| Design Strategy | [Jessica Kane](https://gitlab.com/jlkane), [Will Leidheiser](https://gitlab.com/wleidheiser) | 中央集約チーム |
-| Brand Experience | [Jessica Kane](https://gitlab.com/jlkane) (相談) | 中央集約チーム |
+| Design Strategy | [Jessica Kane](https://gitlab.com/jlkane)、[Will Leidheiser](https://gitlab.com/wleidheiser) | 中央集約チーム |
+| Brand Experience | [Jessica Kane](https://gitlab.com/jlkane) （相談） | 中央集約チーム |
 | Core DevOps and Data Studio | [Ben Leduc-Mills](https://gitlab.com/leducmills) | プロダクトスタジオ |
 | AI Studio | [Nick Hertz](https://gitlab.com/NickHertz) | プロダクトスタジオ |
 | PLG/Monetisation/Platforms Studio | [Anne Lasch](https://gitlab.com/alasch) | プロダクトスタジオ |
 | Security Studio | [Nikki Shechtman](https://gitlab.com/nshechtmann) | プロダクトスタジオ |
 | Service Design | [Bindu Upadhyay](https://gitlab.com/binduupadhyay) | チーム横断 |
-| Research Operations | [Cait Faughnan](https://gitlab.com/cfaughnan), [Mariana Cardinali](https://gitlab.com/marianacardinali) | チーム横断 |
+| Research Operations | [Cait Faughnan](https://gitlab.com/cfaughnan)、[Mariana Cardinali](https://gitlab.com/marianacardinali) | チーム横断 |
 
 ## 私たちの働き方 {#how-we-work}
 
@@ -125,9 +125,9 @@ UX Researcher は、ユーザーリサーチを行う多くの GitLab チーム�
 私たちはあなたと協働し、視点を集め、顧客と関わるパートナーになりたいと考えています。あなたのチームが日常のロールの一部として顧客やユーザーとやり取りする場合、または GitLab プロダクトの顧客/ユーザー体験に影響する意思決定を行う場合は、ぜひお話しください。以下の方法で私たちと協働できます:
 
 - **顧客が私たちのリサーチで代表されるようにする:** #reops チャンネルで詳細を共有して顧客をリサーチ参加者として推薦するか、顧客を[Experience Research Panel](https://research.rallyuxr.com/gitlab/lp/csmsignup?channel=app)に案内して関心を登録してもらえます。
-- **GitLab User Insight Repository を通じて、知っていることを共有する:** 顧客について学んだことを #experience_research チャンネルで共有するか、特定のステージまたはテーマを担当する UX リサーチャーとつながります。
-- **追加のリサーチが必要な改善領域を特定する（未知事項）:** より深い調査が役立つ領域に気づいた場合は、#experience_research チャンネルで自由に言及するか、[該当するステージまたはテーマの UX リサーチャー](/handbook/upstream-studios/experience-research/how-uxr-team-operates/#how-team-members-are-assigned)に連絡してください。参照用の関連 Issue を提供すると、さらに役立ちます!
-- **リサーチのインサイトを活用して作業を導く:** 最新のインサイトについては #experience_research_reports チャンネルを確認して最新情報を保ってください。また、リサーチインサイト管理ツールである [Dovetail](https://gitlab.dovetail.com/start/)でキーワード検索をしたり、インタビューセッションの録画を視聴したりできます。デザイン、プロダクト、顧客エンゲージメントの意思決定を行う際に、より多くの情報を得るために、[該当するステージまたはテーマの UX リサーチャー](/handbook/upstream-studios/experience-research/how-uxr-team-operates/)に相談することもできます。
+- **GitLab User Insight Repository を通じて、知っていることを共有する:** 顧客について学んだことを #experience_research チャンネルで共有するか、特定のステージまたはテーマを担当する UX Researcher とつながります。
+- **追加のリサーチが必要な改善領域を特定する（未知事項）:** より深い調査が役立つ領域に気づいた場合は、#experience_research チャンネルで自由に言及するか、[該当するステージまたはテーマの UX Researcher](/handbook/upstream-studios/experience-research/how-uxr-team-operates/#how-team-members-are-assigned)に連絡してください。参照用の関連 Issue を提供すると、さらに役立ちます!
+- **リサーチのインサイトを活用して作業を導く:** 最新のインサイトについては #experience_research_reports チャンネルを確認して最新情報を保ってください。また、リサーチインサイト管理ツールである [Dovetail](https://gitlab.dovetail.com/start/)でキーワード検索をしたり、インタビューセッションの録画を視聴したりできます。デザイン、プロダクト、顧客エンゲージメントの意思決定を行う際に、より多くの情報を得るために、[該当するステージまたはテーマの UX Researcher](/handbook/upstream-studios/experience-research/how-uxr-team-operates/)に相談することもできます。
 
 **見返りとして得られるもの**:
 
@@ -217,8 +217,6 @@ Experience Research チームはいつでも支援します! リサーチに関�
 - [ユーザーインタビューのメモテンプレート（内部リンク）](https://docs.google.com/spreadsheets/d/1_zFp_WXg9jM84dBqv4ARPFTtwPlJGxAi_IVDeED8VFY/copy)
 - [ユーザビリティテストスクリプトテンプレート（内部リンク）](https://docs.google.com/document/d/15tvKXmFUxOT7fo550efuFLQ_ZSDZ2fyuVX_XTQSDBJk/copy)
 - [ユーザビリティテストのレインボー分析チャートテンプレート（内部リンク）](https://docs.google.com/spreadsheets/d/1_bGO9uUxWL5dKe5r1vxTo4J4QAEHfp6mu7VIQDsTu_E/copy)
-- [推奨事項の整合 Figjam テンプレート（内部リンク）](https://www.figma.com/file/a21e4ULruQzsO4fyhZaQuU/Recommendations-Alignment-Workshop-Template?type=whiteboard&node-id=0-1&t=0LqkJLlll3QfLy41-0)
-- [ユーザビリティベンチマーキングの整合 Figjam テンプレート（内部リンク）](https://www.figma.com/file/QQ30XlTxTSFx80lq8UpNDo/Usability-Benchmarking-Alignment-Template?type=whiteboard&node-id=0-1&t=0O9YiYfk2KYVNGfv-0)
 - [Auto Time on Task（内部リンク）](https://docs.google.com/spreadsheets/d/1rvhUcNlSzs6STv3EGWDddohxOo3F99ZRHN9W7wjBzIo/copy)
 
 #### チェックリスト {#checklists}
@@ -243,8 +241,8 @@ Experience Research チームはいつでも支援します! リサーチに関�
 - [UX Research の成長と開発](/handbook/upstream-studios/experience-research/ux-research-growth-and-development/)
 - [UX Research のための秘密保持契約](/handbook/upstream-studios/research-operations/ndas)
 - [Actionable Insights でコミュニティからの貢献を促すブログ記事の公開方法](/handbook/upstream-studios/experience-research/community-contributions-for-actionable-insights/)
-- [UX Research ワークショップの実施方法](/handbook/upstream-studios/experience-research/how-to-conduct-ux-research-workshops)
 - [UX リサーチで AI を使用する方法](/handbook/upstream-studios/how-we-work/ai-usage/)
+- [独自の部門横断ワークショップを設計して実施する](/handbook/upstream-studios/experience-research/design-run-workshops/)
 
 #### UX Research Operations Coordinator のためのリソース {#resources-for-ux-research-operations-coordinators}
 

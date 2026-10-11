@@ -2,33 +2,33 @@
 title: Fulfillment ガイド
 description: "Fulfillment サブ部署は、ユーザー購入プロセスに影響を与えるシステム間のインフラストラクチャに責任を持ちます。"
 upstream_path: /handbook/product/groups/fulfillment/
-upstream_sha: 7d467b8ae210e5b3bb843857cd3639cbc27af386
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
+translated_at: "2026-10-11T21:05:33+00:00"
 translator: claude
 stale: false
-lastmod: "2026-06-02T16:10:55-05:00"
+lastmod: "2026-10-01T08:11:54+02:00"
 ---
 
 ## 主要な Fulfillment ドキュメントリンク
 
 | リソース  | カバーする領域 |
 | --------  | ------------- |
-| [Fulfillment Direction](/handbook/product/groups/fulfillment/direction/fulfillment_section/) | Fulfillment のビジョンと次に取り組むこと。 |
-| [docs.gitlab.com Subscription](https://docs.gitlab.com/subscriptions/) | GitLab サブスクリプションに関する顧客向けドキュメント。Customer Portal (customers.gitlab.com) 情報を含みます。 |
-| Fulfillment ガイド (このページ) | CustomersDot 管理ツールと、上記の docs.gitlab.com Subscription ドキュメントの一部ではないプロセスドキュメントについてのドキュメント。 |
+| [Fulfillment の方針](/handbook/product/groups/fulfillment/direction/fulfillment_section/) | Fulfillment のビジョンと次に取り組むこと。 |
+| [docs.gitlab.com のサブスクリプション](https://docs.gitlab.com/subscriptions/) | GitLab サブスクリプションに関する顧客向けドキュメント。Customer Portal (customers.gitlab.com) 情報を含みます。 |
+| Fulfillment ガイド (このページ) | CustomersDot 管理ツールと、上記の docs.gitlab.com のサブスクリプションドキュメントの一部ではないプロセスドキュメントについてのドキュメント。 |
 | [Fulfillment Development サブ部署](/handbook/engineering/development/fulfillment/) | チームメンバー、安定したカウンターパート (PM、UX、Quality、Security、EntApps、Field Ops、Sales、Billing、Customer Success、Support Engineering)、プロジェクト管理プロセスなど。 |
-| [Internal Handbook - Fulfillment](https://internal.gitlab.com/handbook/product/fulfillment/) | パブリックハンドブックに置けないドキュメント。これは [Not Public](/handbook/communication/confidentiality-levels/#not-public) 情報のみに最小化してください。 |
-| [Cloud Licesing Overview (External)](https://about.gitlab.com/pricing/licensing-faq/cloud-licensing/) | なぜ Cloud Licensing なのか、収集されるデータ、顧客の前提条件 |
-| [Licensing FAQ](https://about.gitlab.com/pricing/licensing-faq/) | 購入、ライセンス、請求、セールス連絡などについてのよくある質問 |
-| [Inventory of Fulfillment Emails](https://docs.google.com/spreadsheets/d/1SwEYmLD5Eoa5wM399frPoNGPQ3OUTGBKOOs9z6nB2tc/edit#gid=0) | すべての Fulfillment メールのリスト |
-| [GitLab Company Quote-to-Cash documentation](/handbook/company/quote-to-cash/) | 全社的な quote-to-cash ドキュメント |
+| [内部ハンドブック - Fulfillment](https://internal.gitlab.com/handbook/product/fulfillment/) | パブリックハンドブックに置けないドキュメント。これは [非公開](/handbook/communication/confidentiality-levels/#not-public) 情報のみに最小化してください。 |
+| [クラウドライセンスの概要（外部）](https://about.gitlab.com/pricing/licensing-faq/cloud-licensing/) | なぜ Cloud Licensing なのか、収集されるデータ、顧客の前提条件 |
+| [ライセンス FAQ](https://about.gitlab.com/pricing/licensing-faq/) | 購入、ライセンス、請求、セールス連絡などについてのよくある質問 |
+| [Fulfillment メール一覧](https://docs.google.com/spreadsheets/d/1SwEYmLD5Eoa5wM399frPoNGPQ3OUTGBKOOs9z6nB2tc/edit#gid=0) | すべての Fulfillment メールのリスト |
+| [GitLab 全社の見積もりから入金までのドキュメント](/handbook/company/quote-to-cash/) | 全社的な見積もりから入金までのドキュメント |
 
 ## 私たちと連絡を取る方法
 
 上記の主要なリンクやこのガイドで質問が解決されない場合:
 
-- ライセンスエラー、ライセンスの再送、その他の顧客固有のサポートリクエストについては、[サポートチーム用に内部 Issue を作成](/handbook/support/internal-support)してください。
-- 顧客固有でない購入や provisioning の質問、または購入ワークフローでの障害をエスカレートするには、[#s_fulfillment](https://gitlab.slack.com/archives/CMJ8JR0RH) に連絡してください。
+- ライセンスエラー、ライセンスの再送、その他の顧客固有のサポートリクエストについては、[Support チーム用に内部 Issue を作成](/handbook/support/internal-support)してください。
+- 顧客固有でない購入やプロビジョニングの質問、または購入ワークフローでの障害をエスカレートするには、[#s_fulfillment](https://gitlab.slack.com/archives/CMJ8JR0RH) に連絡してください。
 
 ## Fulfillment 機能の利用可能性
 
@@ -38,67 +38,67 @@ lastmod: "2026-06-02T16:10:55-05:00"
 
 | 顧客タイプ | Cloud Licensing (Y/N) | Auto-Renewals (Y/N) | Quarterly Subscription Reconciliation (Y/N) | Operational Data (Y/N) |
 | ------------- | --------------------- | ------------------- | ------------------------------------------- | ----------------------- |
-| クレジットカード登録済みの顧客 | Yes | Yes | Yes | Yes |
-| 請求書で支払う顧客 | Yes | Yes | Yes | Yes |
-| PO を必要とする顧客 | Yes | No | No | Yes |
-| MSA を持つ顧客 | Yes | No | No | No |
-| 複数年契約を持つ顧客 | Yes | No | No | Yes |
-| GitLab リセラーまたはその他のチャネル/アライアンスパートナーを通じて購入する顧客 | Yes | No | No | Yes |
-| 公共部門の顧客 | Yes | No | No | Yes |
-| オフライン/エアギャップ環境を持つ顧客 | Yes<br>*([Offline cloud license](https://about.gitlab.com/pricing/licensing-faq/cloud-licensing/#offline-cloud-licenses) は GitLab 15.0 でリリース)* | No | No | No |
-| GitLab for Education、Open Source、Startups の顧客 | No | No | No | No |
-| Free Tier ユーザー | No | No | No | No |
+| クレジットカード登録済みの顧客 | はい | はい | はい | はい |
+| 請求書で支払う顧客 | はい | はい | はい | はい |
+| PO を必要とする顧客 | はい | いいえ | いいえ | はい |
+| MSA を持つ顧客 | はい | いいえ | いいえ | いいえ |
+| 複数年契約を持つ顧客 | はい | いいえ | いいえ | はい |
+| GitLab リセラーまたはその他のチャネル/アライアンスパートナーを通じて購入する顧客 | はい | いいえ | いいえ | はい |
+| 公共部門の顧客 | はい | いいえ | いいえ | はい |
+| オフライン/エアギャップ環境を持つ顧客 | はい<br>*([オフラインクラウドライセンス](https://about.gitlab.com/pricing/licensing-faq/cloud-licensing/#offline-cloud-licenses) は GitLab 15.0 でリリース)* | いいえ | いいえ | いいえ |
+| GitLab for Education、Open Source、Startups の顧客 | いいえ | いいえ | いいえ | いいえ |
+| Free Tier ユーザー | いいえ | いいえ | いいえ | いいえ |
 
-## GitLab トライアル: 利用可能性と provisioning
+## GitLab トライアル: 利用可能性とプロビジョニング
 
 ### セルフサーブトライアル
 
-| ベースプラン | アドオン | デプロイメントとライセンスタイプ | 期間 | 制限 | 延長 | provisioning ワークフロー |
+| ベースプラン | アドオン | デプロイメントとライセンスタイプ | 期間 | 制限 | 延長 | プロビジョニングワークフロー |
 | ---------- | -------- | --------------- | -------- | ------------ | ---------- | --------- |
-| Premium または Ultimate (Duo Core を含む) | None | SM (online cloud licensing) | 現在提供されていない | NA | NA | NA |
-| Ultimate (Duo Core を除く)| None | SM (legacy license) | 30 日 | Free、Premium 顧客、100 ユーザー | 不可、新しい $0 quote が必要 | ユーザーがフォームに記入し、marketo が CDot から生成された legacy license を発行 |
-| Premium | Duo Pro | SM (online cloud licensing) | 60 日 | Premium 顧客のみ、100 ユーザー | 不可、新しい $0 quote が必要 | ユーザーが Subscription ID とともにフォームに記入し、既存の cloud license に基づいて Duo Pro アクセスを追加 |
-| Premium | Duo Enterprise | SM (online cloud licensing) | 現在提供されていない | NA | NA | NA |
-| Ultimate | Duo Pro | SM (online cloud licensing) | 現在提供されていない | NA | NA | NA |
-| Ultimate | Duo Enterprise | SM (online cloud licensing) | 60 日 | アクティブなサブスクリプションが必要、100 ユーザー | 不可、新しい $0 quote が必要 | ユーザーが Subscription ID とともにフォームに記入し、既存の cloud license に基づいて Duo Enterprise アクセスを追加 |
+| Premium または Ultimate (Duo Core を含む) | なし | SM (オンラインクラウドライセンス) | 現在提供されていない | NA | NA | NA |
+| Ultimate (Duo Core を除く)| なし | SM (従来型ライセンス) | 30 日 | Free、Premium 顧客、100 ユーザー | 不可、新しい $0 の見積もりが必要 | ユーザーがフォームに記入し、marketo が CDot から生成された従来型ライセンスを発行 |
+| Premium | Duo Pro | SM (オンラインクラウドライセンス) | 60 日 | Premium 顧客のみ、100 ユーザー | 不可、新しい $0 の見積もりが必要 | ユーザーが Subscription ID とともにフォームに記入し、既存のクラウドライセンスに基づいて Duo Pro アクセスを追加 |
+| Premium | Duo Enterprise | SM (オンラインクラウドライセンス) | 現在提供されていない | NA | NA | NA |
+| Ultimate | Duo Pro | SM (オンラインクラウドライセンス) | 現在提供されていない | NA | NA | NA |
+| Ultimate | Duo Enterprise | SM (オンラインクラウドライセンス) | 60 日 | アクティブなサブスクリプションが必要、100 ユーザー | 不可、新しい $0 の見積もりが必要 | ユーザーが Subscription ID とともにフォームに記入し、既存のクラウドライセンスに基づいて Duo Enterprise アクセスを追加 |
 | Premium (Duo Core を含む)| NA | .Com | 現在提供されていない | NA | NA | NA |
-| Ultimate (Duo Core を含む) | NA | .Com | 30 日 | Free、Premium、Ultimate 顧客 | サポートチーム内部リクエスト経由で可能 | NA |
+| Ultimate (Duo Core を含む) | NA | .Com | 30 日 | Free、Premium、Ultimate 顧客 | Support チーム内部リクエスト経由で可能 | NA |
 | Premium | Duo Enterprise | .Com | 現在提供されていない | NA | NA | NA |
-| Ultimate | Duo Enterprise | .Com | 無料名前空間は 30 日、Premium および Ultimate 顧客は 60 日 | Free EE、Premium、Ultimate 顧客 | サポートチーム内部リクエスト経由で可能 | ユーザーは名前空間またはマーケティングランディングページからトライアルを開始可能 |
-| Ultimate | Duo Enterprise | Dedicated | 公開されていないが、既存の Self-managed フォームでセルフサーブトライアルをサポート | Ultimate dedicated 商用顧客、Dedicated PubSec 顧客には不可 | 不可、新しい $0 quote が必要 | NA |
+| Ultimate | Duo Enterprise | .Com | 無料名前空間は 30 日、Premium および Ultimate 顧客は 60 日 | Free EE、Premium、Ultimate 顧客 | Support チーム内部リクエスト経由で可能 | ユーザーは名前空間またはマーケティングランディングページからトライアルを開始可能 |
+| Ultimate | Duo Enterprise | Dedicated | 公開されていないが、既存の Self-managed フォームでセルフサーブトライアルをサポート | Ultimate Dedicated の商用顧客、Dedicated PubSec 顧客には不可 | 不可、新しい $0 の見積もりが必要 | NA |
 
 **セルフサーブトライアルの資格基準:**
 
 - セルフサーブトライアルは顧客あたり 1 回に制限されています
-- ほとんどのセルフサーブトライアルでは、.Com の制限は名前空間に基づき、Self-managed では Subscription 番号に基づきます (例外は legacy license での Ultimate のみのトライアル)
+- ほとんどのセルフサーブトライアルでは、.Com の制限は名前空間に基づき、Self-managed ではサブスクリプション番号に基づきます (例外は従来型ライセンスでの Ultimate のみのトライアル)
 - 期間は 30 日または 60 日の間で、トライアル期間中はシート数に制限があります
-- Dedicated 顧客は、Self-managed 顧客用の既存のトライアルフォームを使用する場合に、Ultimate with Duo Enterprise のセルフサーブトライアルを利用できます (dedicated 商用顧客には制限を設けていません)
+- Dedicated 顧客は、Self-managed 顧客用の既存のトライアルフォームを使用する場合に、Ultimate with Duo Enterprise のセルフサーブトライアルを利用できます (Dedicated の商用顧客には制限を設けていません)
 
 ### セールス支援トライアル
 
 - これらは、顧客が評価を完了するために延長された期間または追加のシート数を必要とする、非標準的なトライアルです。
 - セールス支援トライアルは、顧客向けのセルフサーブフローでは利用できない製品/プランを試したい顧客にも提供されます (例: オフラインまたはエアギャップの顧客 (SM) がセルフホスト機能を試したい、Duo with Amazon Q、Dedicated など)。
-- ほとんどのセールス支援トライアルは、$0 quote と Deal desk および Revenue チームからの承認を必要とします
+- ほとんどのセールス支援トライアルは、$0 の見積もりと Deal desk および Revenue チームからの承認を必要とします
 
 | トライアル | デプロイメントタイプ | 支援タイプ | 期間 | トライアル作成 | 制限 |
 | ------------------- | --------------- | --------------- | -------- | ------------------ | ------------ |
-| Premium (Duo Core を除く) | SM (legacy license) | セールスおよびサポートチーム (サポートチームが legacy license を作成するには内部リクエストが必要) | 30 日 | $0 quote 不要 | Free EE、Premium、Ultimate 顧客、100 ユーザー |
-| Ultimate (Duo Core を除く) | SM (legacy license) | セールスおよびサポートチーム (サポートチームが legacy license を作成するには内部リクエストが必要) | 30 日 | $0 quote 不要 | Free EE、Premium 顧客、100 ユーザー |
-| Premium with Duo Pro | SM (online cloud licensing) | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Premium with Duo Enterprise | SM (online cloud licensing) | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Ultimate with Duo Pro | SM (online cloud licensing) | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Ultimate with Duo Enterprise | SM (online cloud licensing) | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Premium with Duo Enterprise | SM (offline cloud licensing) | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Ultimate with Duo Enterprise | SM (offline cloud licensing) | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Premium (Duo Core を含む) | .Com | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Ultimate (Duo Core を含む) | .Com | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Premium with Duo Pro | .Com | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Ultimate with Duo Pro | .Com | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | Free EE、Premium、Ultimate 顧客 |
-| Ultimate with Duo Enterprise | .Com | セールスチーム | カスタマイズ可能な終了日 | $0 order で必要 | Free EE、Premium、Ultimate 顧客 |
-| Ultimate with Duo with Amazon Q | SM (online cloud license) | セールスチーム | 30 日、リーダーシップ承認が必要 | $0 quote で必要 | NA |
-| Ultimate with Duo with Amazon Q | Dedicated | セールスチーム | 30 日、リーダーシップ承認が必要 | $0 quote で必要 | NA |
-| Ultimate (Duo Core を含む) | Dedicated | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | NA |
-| Ultimate with Duo Pro または Duo Enterprise | Dedicated | セールスチーム | カスタマイズ可能な終了日 | $0 quote で必要 | NA |
+| Premium (Duo Core を除く) | SM (従来型ライセンス) | Sales および Support チーム (Support チームが従来型ライセンスを作成するには内部リクエストが必要) | 30 日 | $0 の見積もり不要 | Free EE、Premium、Ultimate 顧客、100 ユーザー |
+| Ultimate (Duo Core を除く) | SM (従来型ライセンス) | Sales および Support チーム (Support チームが従来型ライセンスを作成するには内部リクエストが必要) | 30 日 | $0 の見積もり不要 | Free EE、Premium 顧客、100 ユーザー |
+| Premium with Duo Pro | SM (オンラインクラウドライセンス) | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Premium with Duo Enterprise | SM (オンラインクラウドライセンス) | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Ultimate with Duo Pro | SM (オンラインクラウドライセンス) | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Ultimate with Duo Enterprise | SM (オンラインクラウドライセンス) | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Premium with Duo Enterprise | SM (オフラインクラウドライセンス) | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Ultimate with Duo Enterprise | SM (オフラインクラウドライセンス) | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Premium (Duo Core を含む) | .Com | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Ultimate (Duo Core を含む) | .Com | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Premium with Duo Pro | .Com | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Ultimate with Duo Pro | .Com | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | Free EE、Premium、Ultimate 顧客 |
+| Ultimate with Duo Enterprise | .Com | Sales チーム | カスタマイズ可能な終了日 | $0 の注文で可能 | Free EE、Premium、Ultimate 顧客 |
+| Ultimate with Duo with Amazon Q | SM (オンラインクラウドライセンス) | Sales チーム | 30 日、リーダーシップ承認が必要 | $0 の見積もりで可能 | NA |
+| Ultimate with Duo with Amazon Q | Dedicated | Sales チーム | 30 日、リーダーシップ承認が必要 | $0 の見積もりで可能 | NA |
+| Ultimate (Duo Core を含む) | Dedicated | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | NA |
+| Ultimate with Duo Pro または Duo Enterprise | Dedicated | Sales チーム | カスタマイズ可能な終了日 | $0 の見積もりで可能 | NA |
 
 ## DAP ボーナストライアルクレジット
 
@@ -132,7 +132,7 @@ CustomersDot はプロビジョニング時に適格性を検証します。サ�
 
 #### リトライアルおよび延長リクエスト
 
-すべてのリトライアルおよび期限延長リクエストには、クレジット金額に関係なく **SA リーダーシップの承認** (SA マネージャー、SA ディレクター、または VP of Solutions Architecture) が必要です。Solution Architect は、正当な問題 (DAP のバグ、停止、または顧客側のブロッカー) が適切な評価を妨げたことをまず検証する必要があり、以前のトライアルの評価後レビューが完了している必要があります。標準的な延長期間は 30 日です。
+すべてのリトライアルおよび期限延長リクエストには、クレジット金額に関係なく **SA リーダーシップの承認** (SA Manager、SA Director、または VP of Solutions Architecture) が必要です。Solution Architect は、正当な問題 (DAP のバグ、停止、または顧客側のブロッカー) が適切な評価を妨げたことをまず検証する必要があり、以前のトライアルの評価後レビューが完了している必要があります。標準的な延長期間は 30 日です。
 
 ### ボーナストライアルクレジットのプロビジョニング (初回およびトップアップ)
 
@@ -184,17 +184,17 @@ CustomersDot はプロビジョニング時に適格性を検証します。サ�
 
 ## 内部 GitLab Duo ライセンスリクエスト
 
-Support Operations が処理するチームメンバーライセンスプロセスでは、Self-managed インスタンスで GitLab Premium または Ultimate をテストまたは使用するチームメンバー向けに legacy ライセンスファイルを生成できます。このライセンスタイプは GitLab Duo と互換性がありません。
+Support Operations が処理するチームメンバーライセンスプロセスでは、Self-managed インスタンスで GitLab Premium または Ultimate をテストまたは使用するチームメンバー向けに従来型ライセンスファイルを生成できます。このライセンスタイプは GitLab Duo と互換性がありません。
 
-- GitLab Duo のテストには、ステージング cloud license をチームメンバーに提供できます。Slack チャンネル [#g_provision](https://gitlab.enterprise.slack.com/archives/C01BPM66KNE) でリクエストを提出してください。
-- 特定の状況に限り、GitLab Duo のテストに本番 cloud license が必要な場合、$0 サブスクリプションを作成することができます。Slack チャンネル [#sales-support](https://gitlab.enterprise.slack.com/archives/CNLBL40H4) で Order Management チームに相談してください。
-- legacy ライセンスは有効期限まで有効ですが、cloud license は Zuora と CustomersDot 内でアクティブなステージングまたは本番データが必要です。ステージングリフレッシュ中にアクセスを失った場合は、#g_provision に連絡してください。
+- GitLab Duo のテストには、ステージングクラウドライセンスをチームメンバーに提供できます。Slack チャンネル [#g_provision](https://gitlab.enterprise.slack.com/archives/C01BPM66KNE) でリクエストを提出してください。
+- 特定の状況に限り、GitLab Duo のテストに本番クラウドライセンスが必要な場合、$0 サブスクリプションを作成することができます。Slack チャンネル [#sales-support](https://gitlab.enterprise.slack.com/archives/CNLBL40H4) で Order Management チームに相談してください。
+- 従来型ライセンスは有効期限まで有効ですが、クラウドライセンスは Zuora と CustomersDot 内でアクティブなステージングまたは本番データが必要です。ステージングリフレッシュ中にアクセスを失った場合は、#g_provision に連絡してください。
 
-## 一時的な更新延長
+## 一時的な更新延長 {#temporary-renewal-extensions}
 
 *2025-08-14、GitLab は Docs、ウェブサイト、更新バナー、メールから 14 日間の猶予期間への外部参照を削除しました。ただし、猶予期間はまだアプリケーションとシステムに存在します。[詳細はこちら](https://gitlab.com/groups/gitlab-org/-/epics/18050)。*
 
-セールス担当者は、承認された理由のいずれかについて SFDC で一時的な延長を生成できます。延長はサブスクリプション終了日の 1-15 日前またはサブスクリプション終了日の 1-13 日後に生成でき、デフォルトの有効期限はサブスクリプション終了日後 21 日です ([SaaS 延長のみ 14 日の猶予期間](https://docs.gitlab.com/subscriptions/self_managed/#subscription-expiry) が続きます)。
+Sales Rep は、承認された理由のいずれかについて SFDC で一時的な延長を生成できます。延長はサブスクリプション終了日の 1-15 日前またはサブスクリプション終了日の 1-13 日後に生成でき、デフォルトの有効期限はサブスクリプション終了日後 21 日です ([SaaS 延長のみ 14 日の猶予期間](https://docs.gitlab.com/subscriptions/self_managed/#subscription-expiry) が続きます)。
 
 Self Managed 延長に関する注意:
 
@@ -224,7 +224,7 @@ SFDC から一時更新延長を作成するプロセスは以下のとおりで
       1. `Exempt Late Renewal Automation` が true に設定されます。
       1. `Late Renewal Exception Expiration Date` が `Temporary License Extension End Date` と同じ値で更新されます。
    1. 一時延長のレコードが [CustomersDot Admin > Temporary Extensions ページ](https://customers.gitlab.com/admin/temporary_extension_history)に表示されます。
-   1. self-managed の場合、legacy トライアルライセンスが作成され、CustomersDot Admin の Temporary extension レコードからアクセスできます。
+   1. self-managed の場合、従来型トライアルライセンスが作成され、CustomersDot Admin の Temporary extension レコードからアクセスできます。
    1. SaaS の場合、新しい一時延長 (有効化後) は gitlab.com グループ請求ページに表示されます。
    1. 件名 `[GitLab Transactions] GitLab Temporary Renewal Extension` のメールが顧客に送信されます。self-managed の場合、メールにライセンスキーが含まれます。
       - このメールは Revenue チームにも送信され、SFDC にコピーされて Contact Activity の下に表示されます。
@@ -246,7 +246,7 @@ SFDC から一時更新延長を作成するプロセスは以下のとおりで
 
 | エラー | 説明 |
 |---------|-----------|
-| 一時延長はサブスクリプション有効期限の 15 日前からサブスクリプション有効期限の 13 日後までリクエストできます | 一時延長は、サブスクリプション終了日の 15 日前またはサブスクリプション終了日の 13 日後までに作成する必要があります。 |
+| 一時延長はサブスクリプション有効期限の 15 日前からサブスクリプション有効期限の 13 日後までリクエストできます | 一時延長は、サブスクリプション終了日の 15 日前から終了日の 13 日後までの間に作成する必要があります。 |
 | サブスクリプションは現在の更新期間中にすでに延長を利用しました | 更新ごとに 21 日の一時延長は 1 回だけ可能です。追加の延長は許可されません。 |
 | サブスクリプションは YYYY-MM-DD に開始予定の延長を持っています | 更新のための既存の一時延長があり、まだ開始されていません。 |
 | 顧客アカウントは不良債権ありとラベル付けされています | Billing チームがこのアカウントを不良債権ありと特定しました。Zuora Billing Account の `Support hold`、`Credit hold` のいずれかが入力されています。 |
@@ -263,8 +263,8 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 | ワークフロー | フィルター | 例 |
 |--------------|-------------- |------------------|
 | API リクエスト | `jsonPayload.workflow="api_request"` | [例へのリンク](https://cloudlogging.app.goo.gl/KYHFRHAitHVnVFsL9) |
-| Guardrail | `jsonPayload.workflow="guardrail_check"` | [例へのリンク](https://cloudlogging.app.goo.gl/A41vZPYJSM8RwdpP6) |
-| Self-managed extension | `jsonPayload.workflow="create_sm_extension"` | [例へのリンク](https://cloudlogging.app.goo.gl/UsWNtG3HPS8XaHqu9) |
+| ガードレール | `jsonPayload.workflow="guardrail_check"` | [例へのリンク](https://cloudlogging.app.goo.gl/A41vZPYJSM8RwdpP6) |
+| Self-managed の延長 | `jsonPayload.workflow="create_sm_extension"` | [例へのリンク](https://cloudlogging.app.goo.gl/UsWNtG3HPS8XaHqu9) |
 
 追加の属性も適用できます:
 
@@ -305,9 +305,9 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 1. 非標準期間 (12 か月期間ではない) のサブスクリプション。
 1. Enterprise Agile Planning 製品のサブスクリプション。
 1. Zuora で以下の設定があるアカウント:
-   1. `Account.PO Required = Yes` (顧客が GitLab に "no PO, no Pay policy"、予約要件、事前請求があることを通知)。
+   1. `Account.PO Required = Yes` (顧客が GitLab に 「PO がなければ支払わない方針」、予約要件、事前請求があることを通知)。
    1. `Account.Portal Required = Yes` (顧客が GitLab に、請求書を手動で請求ポータルにアップロードする必要があり、非 PO、PO、契約、SOW を含むことを通知)。
-   1. `Account.Support Hold = Yes` (アカウントが支払いコミットメントなしで 90 日以上延滞すると、顧客はサポート保留にされる)。
+   1. `Account.Support Hold = Yes` (アカウントが支払いコミットメントなしで 90 日を超えて延滞すると、顧客はサポート保留にされる)。
    1. `Account.Credit Hold = Yes` (任意の残高が不良債権に書き落とされた場合、顧客はクレジット保留にされる)
 
 上記のユースケースに対して `Subscription.TurnOnAutoRenew__c` を `No` に設定する自動プロセス (Zuora Workflow) があります。
@@ -322,7 +322,7 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 
 #### 開発者ドキュメント
 
-- [Renewal: UX Scorecard](https://gitlab.com/gitlab-org/gitlab-design/-/issues/2160)
+- [更新: UX スコアカード](https://gitlab.com/gitlab-org/gitlab-design/-/issues/2160)
 - [ローカル環境で更新するための Zuora でのサブスクリプションの作成](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/zuora/zuora_tips_and_tricks.md#create-a-subscription)
 - [Auto-Renew: カスタム自動更新機能](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/flows/custom_auto_renew/index.md)
 - [Auto-Renew: 体験フローチャート](https://www.figma.com/file/4IAnGWRKIxIKqMLUDxWf1A/Autorenew-experience-flowchart?node-id=0%3A1&t=x31XThz7dVzhhIaK-0)
@@ -332,11 +332,11 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 #### 関連する用語
 
 - [QSR](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/#quarterly-reconciliation)
-- [Annual True-up](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/#annual-true-up)
+- [年間トゥルーアップ](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/#annual-true-up)
 - [シート使用状況](https://docs.gitlab.com/subscriptions/manage_users_and_seats/#billable-users)
-- [Seats owed](https://docs.gitlab.com/subscriptions/manage_users_and_seats/#users-over-subscription-limit)
+- [未払いシート](https://docs.gitlab.com/subscriptions/manage_users_and_seats/#users-over-subscription-limit)
 
-#### Quarterly Subscription Reconciliation (QSR)
+#### 四半期サブスクリプション精算 (QSR) {#quarterly-subscription-reconciliation-qsr}
 
 [パブリック QSR ドキュメント](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/) を参照してください。
 
@@ -344,9 +344,9 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 
 [文書化された対象ケース](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/#eligibility)に加えて、Zuora で次の設定のいずれかをアカウントが持つサブスクリプションは QSR から除外します:
 
-1. `Account.PO Required = Yes` (顧客が GitLab に "no PO, no Pay policy"、予約要件、事前請求があることを通知)。
+1. `Account.PO Required = Yes` (顧客が GitLab に 「PO がなければ支払わない方針」、予約要件、事前請求があることを通知)。
 2. `Account.Portal Required = Yes` (顧客が GitLab に、請求書を手動で請求ポータルにアップロードする必要があり、非 PO、PO、契約、SOW を含むことを通知)。
-3. `Account.Support Hold = Yes` (アカウントが支払いコミットメントなしで 90 日以上延滞すると、顧客はサポート保留にされる)。
+3. `Account.Support Hold = Yes` (アカウントが支払いコミットメントなしで 90 日を超えて延滞すると、顧客はサポート保留にされる)。
 4. `Account.Credit Hold = Yes` (任意の残高が不良債権に書き落とされた場合、顧客はクレジット保留にされる)
 
 上記のユースケースに対して `Subscription.TurnOnSeatReconciliation__c` を No に設定する自動プロセス (Zuora Workflow) があります。
@@ -358,7 +358,7 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
    2. `Subscription.ContractSeatReconciliation__c` 変数が Yes に設定されます。
 2. 使用状況データは、Cloud Licensing (SM/Dedicated) または名前空間 API (gitlab.com) を通じて毎日収集されます
 
-その他の詳細は [QSR invoicing and payment docs](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/#invoicing-and-payment) で確認できます。
+その他の詳細は [QSR の請求と支払いのドキュメント](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/#invoicing-and-payment) で確認できます。
 
 **個別自動リコンシリエーションの仕組み:**
 
@@ -370,22 +370,22 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
    1. 正確なオーバーエージ数量と支払いが見込まれる請求書金額を含むメールを顧客に送信 (件名: "Important information about your GitLab subscription")。
    2. このメールを SFDC にコピーし、Contact Activity の下に表示。
 4. オープンな SFDC Opportunity を作成し、その OpportunityId を Reconciliation レコードに保存します。
-5. 7 日後、Zuora に修正を作成して、Effective Price で追加シートを追加します。新しいシート数は四半期の終わりに有効になり、サブスクリプション期間の終わりまで続きます (オーバーエージに対する過去の遡及課金はありません)。
+5. 7 日後、Zuora に修正を作成して、実効価格で追加シートを追加します。新しいシート数は四半期の終わりに有効になり、サブスクリプション期間の終わりまで続きます (オーバーエージに対する過去の遡及課金はありません)。
    1. Amendment Name は `Automated seat reconciliation` に設定されます。
 6. 請求書を生成し、支払いを適用します。
    1. 支払いが失敗した場合、または支払い方法が登録されていない場合、リコンシリエーションは発生しません。メールが送信されます (件名: "Your GitLab subscription failed to reconcile")。このメールを SFDC にコピーし、Contact Activity の下に表示。
    2. Sales Assisted 顧客の場合、請求書が生成され、支払いのために送信されます (Zuora から)。アカウント固有の支払い条件が適用されます。
-7. Zuora からの Receipt 付きのメールを送信 (スケジュール済み Zuora Workflow を介して)。
-8. リコンシリエーションが発生したことを示すメールを送信し、provisioning の指示を含めます (件名: "Your GitLab subscription has been reconciled")。このメールは SFDC にコピーされ、Contact Activity の下に表示されます。
-9. 追加シートが provisioning されます。
-   1. SaaS 顧客の場合、追加シートを即時に provisioning。
-   2. Self-managed 顧客の場合、次のインスタンス同期 (24 時間) で追加シートを provisioning、または顧客がインスタンス内から更新をトリガーできます。
+7. Zuora からの領収書付きのメールを送信 (スケジュール済み Zuora Workflow を介して)。
+8. リコンシリエーションが発生したことを示すメールを送信し、プロビジョニングの指示を含めます (件名: "Your GitLab subscription has been reconciled")。このメールは SFDC にコピーされ、Contact Activity の下に表示されます。
+9. 追加シートがプロビジョニングされます。
+   1. SaaS 顧客の場合、追加シートを即時にプロビジョニング。
+   2. Self-managed 顧客の場合、次のインスタンス同期 (24 時間) で追加シートをプロビジョニング、または顧客がインスタンス内から更新をトリガーできます。
 10. SFDC Opportunity を Closed Won に更新し、関連する SFDC Quote および Quote オブジェクトを作成します。
 11. 何らかの理由でリコンシリエーションが失敗した場合、SFDC Opportunity はオープンのままになります。
 
 ##### QSR と SFDC Opportunity
 
-2023-05-22 以降、QSR 用に作成された SFDC Opportunities には 2 つの新しいフィールドが追加されました: `QSR Status` と `QSR Notes`。これらのフィールドに表示されることが予想される内容と、セールス担当者向けの推奨アクションのまとめを以下に示します。
+2023-05-22 以降、QSR 用に作成された SFDC Opportunities には 2 つの新しいフィールドが追加されました: `QSR Status` と `QSR Notes`。これらのフィールドに表示されることが予想される内容と、Sales Reps 向けの推奨アクションのまとめを以下に示します。
 
 | QSR ステータス | QSR Notes | ステージ | 推奨アクション | 追加メモ |
 | :-------- | :-------- |:-------- |:-------- |:-------- |
@@ -401,12 +401,12 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
    1. [Customers Portal Admin](https://customers.gitlab.com/admin) にログインし、[Reconciliations](https://customers.gitlab.com/admin/reconciliation) セクションに移動します。
    2. フィルターボックスにサブスクリプション名 (例: "A-S00039268") を入力し、検索します。
    3. これにより、そのサブスクリプションのすべてのリコンシリエーションレコードが表示され、それぞれのステータスを確認できます。
-2. **顧客は QSR に登録されていますが、リコンシリエーションが実行されていません。**
+2. **顧客は QSR に登録されていますが、リコンシリエーションが実行されていません。**。
    1. 拒否された支払いを含む様々な理由で QSR がスキップされた可能性があります。QSR のステータスを調べるには、ポイント `1` の指示に従ってください。
 3. **顧客は QSR に登録されていますが、`reconciliations_disabled` 理由コードでリコンシリエーションがスキップされました。**
    1. 顧客の Self-Managed インスタンスは Cloud License でアクティベートされている必要があります。これにより、シート使用状況の収集が有効になり、リコンシリエーションを実行できるようになります。
-4. **顧客は EOA または割引されたシートあたり価格の別のプラン上にいます。彼らの QSR 修正は割引/Effective 価格に基づくのか、それともリスト価格に基づくのか？**
-   1. 追加シートの QSR Amendment は effective 価格に基づきます。
+4. **顧客は EOA または割引されたシートあたり価格の別のプラン上にいます。彼らの QSR 修正は割引価格/実効価格に基づくのか、それともリスト価格に基づくのか？**
+   1. 追加シートの QSR Amendment は実効価格に基づきます。
 5. **QSR は割引価格で 25 シートが最大という EOA ビジネスルールを尊重しますか？**
    1. ある意味では - 25 シートを超える EOA タイプのサブスクリプションを修正しようとした場合、QSR をスキップします。このルールが原因でエラーになったすべての QSR のリストを見るには、[こちらをクリック](https://customers.gitlab.com/admin/reconciliation?&f%5Berror_message%5D%5B98073%5D%5Bo%5D=like&f%5Berror_message%5D%5B98073%5D%5Bv%5D=MaxAdditionalSeatsExceededError&model_name=reconciliation&sort=reconcile_on&sort_reverse=true)してください。
 
@@ -420,9 +420,9 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 
 1. セールス支援サブスクリプションの場合、単一のサブスクリプション期間に複数のプラン (例: premium、ultimate) があるケースがあり得ます。これは、サブスクリプションがあるプランで販売され、期間途中で別のプランに変更されたためです。新しいサブスクリプションカードのデザインでは、このような場合、サブスクリプションの最新バージョンのみが表示され、古いプランの詳細は表示されません。新プランの開始日は、新プランが有効になった日から始まるように正しく表示される必要があります。詳細はこの [Issue](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/6103) (内部) を参照してください。
 
-## CustomersDot Admin Panel
+## CustomersDot 管理パネル {#customersdot-admin-panel}
 
-ターゲットオーディエンスは内部の GitLab チームで、[Customers Portal](https://customers.gitlab.com) の [admin panel](https://customers.gitlab.com/admin/) をカバーしています。顧客またはサブスクリプションマネージャーは、ポータルの使用に関するヘルプは GitLab ユーザードキュメントの [Customers](https://docs.gitlab.com/subscriptions/) セクションを、ユーザーのカウント方法などのサブスクリプションに関する質問は [licensing FAQ](https://about.gitlab.com/pricing/licensing-faq/) を参照してください。
+ターゲットオーディエンスは内部の GitLab チームで、[Customers Portal](https://customers.gitlab.com) の [管理パネル](https://customers.gitlab.com/admin/) をカバーしています。顧客またはサブスクリプションマネージャーは、ポータルの使用に関するヘルプは GitLab ユーザードキュメントの [Customers](https://docs.gitlab.com/subscriptions/) セクションを、ユーザーのカウント方法などのサブスクリプションに関する質問は [ライセンス FAQ](https://about.gitlab.com/pricing/licensing-faq/) を参照してください。
 
 ### ログイン
 
@@ -432,7 +432,7 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 
 ### 検索
 
-admin panel 検索を使用する際は、結果は一度に 1 フィールドのみを検索することに基づいていることに注意してください。たとえば、人のフルネームを入力しても、システムは姓と名を同時に検索せず、いずれかのみを検索するため、結果が得られない可能性があります。
+管理パネル検索を使用する際は、結果は一度に 1 フィールドのみを検索することに基づいていることに注意してください。たとえば、人のフルネームを入力しても、システムは姓と名を同時に検索せず、いずれかのみを検索するため、結果が得られない可能性があります。
 
 メールアドレス、部分的なメールアドレス (例: 会社のドメイン)、または会社名で検索することをお勧めします。名前で検索する場合は、姓または名のみを入力してください。
 
@@ -444,7 +444,7 @@ admin panel 検索を使用する際は、結果は一度に 1 フィールド�
 
 #### 顧客の検索
 
-1. admin panel で `Customers` に移動します。
+1. 管理パネルで `Customers` に移動します。
 1. 空のテキストボックスに検索する顧客の詳細を入力します (例: 顧客のメールアドレスやドメイン)。
 1. `Refresh` をクリックするか、キーボードで `Enter` を押して検索を開始します。
 1. `Add filter` をクリックして現在の検索を絞り込むことができます。
@@ -498,7 +498,7 @@ admin panel 検索を使用する際は、結果は一度に 1 フィールド�
 1. 目的の顧客の詳細ビューで、`History` をクリックします。
 1. 顧客レコードに発生したすべてのイベントとログのリストが表示されます。
 
-**注:** ログ行で、ユーザーが `admin:xyz@gitlab.com` の場合、それは admin panel 経由で顧客レコードへの変更があったことを示します。
+**注:** ログ行で、ユーザーが `admin:xyz@gitlab.com` の場合、それは管理パネル経由で顧客レコードへの変更があったことを示します。
 
 #### ワンタイムサインイン URL
 
@@ -510,7 +510,7 @@ admin panel 検索を使用する際は、結果は一度に 1 フィールド�
 
 **注:** 新しいワンタイムサインインリンクは、前のリンクが使用された後に生成されます。`one-time sign in url` は、顧客を GitLab.com アカウントにログインさせるのではなく、Customers Portal アカウントにのみログインさせます。
 
-#### GitLab Groups
+#### GitLab グループ {#gitlab-groups}
 
 顧客が接続された GitLab.com ユーザーアカウントを持っている場合、現在のプランを含む関連情報を伴う名前空間のリストが表示されます。
 
@@ -521,36 +521,36 @@ admin panel 検索を使用する際は、結果は一度に 1 フィールド�
 - 個人の名前空間
 - ユーザーが `Owner` であるトップレベルグループ名前空間
 
-### Billing Accounts
+### 請求アカウント
 
-billing account は、主に組織に接続されている請求エンティティの表現です。billing account には Zuora、SFDC、重要な企業情報、すべての billing account メンバーシップに関連するデータがあります。
+請求アカウントは、主に組織に接続されている請求エンティティの表現です。請求アカウントには Zuora、SFDC、重要な企業情報、すべての請求アカウントメンバーシップに関連するデータがあります。
 
-#### billing account の検索
+#### 請求アカウントの検索
 
-1. admin panel で `Billing accounts` に移動します。
-1. 空のテキストボックスに検索する billing account の詳細を入力します (例: 名前)。
+1. 管理パネルで `Billing accounts` に移動します。
+1. 空のテキストボックスに検索する請求アカウントの詳細を入力します (例: 名前)。
 1. `Refresh` をクリックするか、キーボードで `Enter` を押して検索を開始します。
 1. `Add filter` をクリックして現在の検索を絞り込むことができます。
 1. 適用する追加のフィルターを 1 つ以上選択します。
 1. もう一度 `Refresh` をクリックします。
 
-#### billing account 変更の履歴を表示
+#### 請求アカウント変更の履歴を表示
 
-1. 目的の billing account の詳細ビューで、`History` をクリックします。
-1. billing account に発生したすべてのイベントとログのリストが表示されます。
+1. 目的の請求アカウントの詳細ビューで、`History` をクリックします。
+1. 請求アカウントに発生したすべてのイベントとログのリストが表示されます。
 
-#### billing account の Bill_To と Sold_To コンタクトを確認
+#### 請求アカウントの Bill_To と Sold_To コンタクトを確認
 
-1. 目的の billing account の詳細ビューに移動します。
+1. 目的の請求アカウントの詳細ビューに移動します。
 1. ℹ️ `Show` の下に、`Bill_To` と `Sold_To` コンタクトが表示されます。
 1. 詳細情報を確認したい場合は、目的のコンタクトをクリックします。
 
-**注:** billing account には 1 つの `Bill_To` と 1 つの `Sold_To` コンタクトしか関連付けられません。同じコンタクトにできます。
+**注:** 請求アカウントには 1 つの `Bill_To` と 1 つの `Sold_To` コンタクトしか関連付けられません。同じコンタクトにできます。
 
-#### billing account のすべての請求書を確認
+#### 請求アカウントのすべての請求書を確認
 
-1. 目的の billing account の詳細ビューで、`List Invoices` をクリックします。
-1. その billing account のすべての請求書のリストが表示されます。含まれるもの:
+1. 目的の請求アカウントの詳細ビューで、`List Invoices` をクリックします。
+1. その請求アカウントのすべての請求書のリストが表示されます。含まれるもの:
    - ID
    - 日付
    - 金額
@@ -560,10 +560,10 @@ billing account は、主に組織に接続されている請求エンティテ�
 
 **注:** このビューは `read only` 権限を持つ CDot 管理者もアクセスできます。
 
-#### billing account に登録されているすべての支払い方法を確認
+#### 請求アカウントに登録されているすべての支払い方法を確認
 
-1. 目的の billing account の詳細ビューで、`List Payment Methods` をクリックします。
-1. その billing account に登録されているすべての支払い方法のリストが表示されます。含まれるもの:
+1. 目的の請求アカウントの詳細ビューで、`List Payment Methods` をクリックします。
+1. その請求アカウントに登録されているすべての支払い方法のリストが表示されます。含まれるもの:
    - クレジットカード:
      - 末尾
      - カードタイプ
@@ -579,10 +579,10 @@ billing account は、主に組織に接続されている請求エンティテ�
 
 **注:** このビューは `read only` 権限を持つ CDot 管理者もアクセスできます。
 
-#### billing account のすべての Zuora サブスクリプションを確認
+#### 請求アカウントのすべての Zuora サブスクリプションを確認
 
-1. 目的の billing account の詳細ビューで、`Zuora Subscriptions` をクリックします。
-1. その billing account のすべての Zuora サブスクリプションのリストが表示されます。含まれるもの:
+1. 目的の請求アカウントの詳細ビューで、`Zuora Subscriptions` をクリックします。
+1. その請求アカウントのすべての Zuora サブスクリプションのリストが表示されます。含まれるもの:
    - サブスクリプション名
    - タイプ (SaaS または SM)
    - 開始日
@@ -595,32 +595,32 @@ billing account は、主に組織に接続されている請求エンティテ�
 
 **注:** 未払いシート = 使用された最大シート - サブスクリプション内のシート。
 
-### Billing Account Contacts
+### 請求アカウントの連絡先
 
-billing account contact は、請求書や通知などを送信するために使用される billing account のコンタクト詳細を表します。位置ベースのデータなどの他の情報は、税務関連の計算に使用されます。コンタクトは `Bill_To` または `Sold_To` コンタクト (または両方同じであれば同様) になることができます。
+請求アカウントの連絡先は、請求書や通知などを送信するために使用される請求アカウントのコンタクト詳細を表します。位置ベースのデータなどの他の情報は、税務関連の計算に使用されます。コンタクトは `Bill_To` または `Sold_To` コンタクト (または両方同じであれば同様) になることができます。
 
-billing account には 1 つの `Bill_To` と 1 つの `Sold_To` コンタクトしか持てません。同じ連絡先情報 (例: メールアドレス) を複数の billing account で使用することは可能です。
+請求アカウントには 1 つの `Bill_To` と 1 つの `Sold_To` コンタクトしか持てません。同じ連絡先情報 (例: メールアドレス) を複数の請求アカウントで使用することは可能です。
 
-#### billing account contact の検索
+#### 請求アカウントの連絡先の検索
 
-1. admin panel で `Billing account contacts` に移動します。
-1. 空のテキストボックスに検索する billing account contact の詳細を入力します (例: 名前、メール)。
+1. 管理パネルで `Billing account contacts` に移動します。
+1. 空のテキストボックスに検索する請求アカウントの連絡先の詳細を入力します (例: 名前、メール)。
 1. `Refresh` をクリックするか、キーボードで `Enter` を押して検索を開始します。
 1. `Add filter` をクリックして現在の検索を絞り込むことができます。
 1. 適用する追加のフィルターを 1 つ以上選択します。
 1. もう一度 `Refresh` をクリックします。
 
-#### 既存の billing account contact の更新
+#### 既存の請求アカウントの連絡先の更新
 
 1. `Billing account contacts` セクションに移動します。
-1. 必要な billing account contact を検索します (例: `email address` を使用)。
-1. 適切な billing account contact を選択して `Edit` をクリックします。
+1. 必要な請求アカウントの連絡先を検索します (例: `email address` を使用)。
+1. 適切な請求アカウントの連絡先を選択して `Edit` をクリックします。
 1. 以下を更新するかどうかを選択できます:
    - 名
    - 姓
    - 仕事のメール
-   - Address 1
-   - Address 2
+   - 住所 1
+   - 住所 2
    - 国
    - 州
    - 市
@@ -628,46 +628,46 @@ billing account には 1 つの `Bill_To` と 1 つの `Sold_To` コンタクト
 1. `Save` をクリックします。
 1. 変更は対応する Zuora コンタクトに即座に同期されます。
 
-#### 新しい billing account contact を CustomersDot に追加
+#### 新しい請求アカウントの連絡先を CustomersDot に追加
 
-Zuora コンタクトが CustomersDot に利用できない場合でも、Zuora に存在する場合、admin panel を通じてコンタクトを追加できます。
+Zuora コンタクトが CustomersDot に利用できない場合でも、Zuora に存在する場合、管理パネルを通じてコンタクトを追加できます。
 
 1. `Billing account contacts` セクションに移動します。
 1. `+ Add New` をクリックします。
 1. `Zuora contact ID` を提供します。
 1. `Save` をクリックします。
 
-これにより、Zuora と同期した CustomersDot のコンタクトレコードが作成されます。これは、作成されたコンタクトに Zuora からすべての billing account contact 属性を直接割り当てます。
+これにより、Zuora と同期した CustomersDot のコンタクトレコードが作成されます。これは、作成されたコンタクトに Zuora からすべての請求アカウントの連絡先属性を直接割り当てます。
 
 **注:** コンタクトが CustomersDot に `Billing account` が付属していない可能性があります (例: Customers Portal に存在しない場合)。
 
-#### billing account contact 変更の履歴を表示
+#### 請求アカウントの連絡先変更の履歴を表示
 
-1. 目的の billing account contact の詳細ビューで、`History` をクリックします。
-1. billing account contact に発生したすべてのイベントとログのリストが表示されます。
+1. 目的の請求アカウントの連絡先の詳細ビューで、`History` をクリックします。
+1. 請求アカウントの連絡先に発生したすべてのイベントとログのリストが表示されます。
 
-### Billing Acccount Memberships
+### 請求アカウントのメンバーシップ
 
-billing account membership は、顧客と billing account 間の関係を定義します。アクティブなサブスクリプションを伴う billing account membership があれば、顧客は Customers Portal アカウントでサブスクリプションを表示できます。
+請求アカウントのメンバーシップは、顧客と請求アカウント間の関係を定義します。アクティブなサブスクリプションを伴う請求アカウントのメンバーシップがあれば、顧客は Customers Portal アカウントでサブスクリプションを表示できます。
 
-現在、顧客は 1 つの billing account membership しか持てません。
+現在、顧客は 1 つの請求アカウントのメンバーシップしか持てません。
 
-#### 新しい billing account membership を追加
+#### 新しい請求アカウントのメンバーシップを追加
 
-顧客と billing account の間に新しい billing account membership を追加すると、顧客は [サブスクリプション管理コンタクト](/handbook/support/license-and-renewals/workflows/customersdot/associating_purchases) になります。
+顧客と請求アカウントの間に新しい請求アカウントのメンバーシップを追加すると、顧客は [サブスクリプション管理コンタクト](/handbook/support/license-and-renewals/workflows/customersdot/associating_purchases) になります。
 
 1. `Billing account memberships` セクションに移動します。
 1. `+ Add new` アクションを選択します。
-1. 新しいサブスクリプション管理リクエストに適切な顧客と CustomersDot billing account を選択します。
+1. 新しいサブスクリプション管理リクエストに適切な顧客と CustomersDot 請求アカウントを選択します。
 1. `Save` をクリックします。
 
-**注:** billing account のリストには `Zuora account name` と `Zuora account ID (in brackets)` を表示します。
+**注:** 請求アカウントのリストには `Zuora account name` と `Zuora account ID (in brackets)` を表示します。
 
-#### 顧客の billing account membership を削除
+#### 顧客の請求アカウントのメンバーシップを削除
 
 1. `Billing account memberships` セクションに移動します。
-1. 目的の billing account membership を開き、`x Delete` アクションを選択します。
-1. 正しい billing account membership が選択されたことを確認します。
+1. 目的の請求アカウントのメンバーシップを開き、`x Delete` アクションを選択します。
+1. 正しい請求アカウントのメンバーシップが選択されたことを確認します。
 1. `Yes, I'm sure` を選択します。
 1. `Billing account membership successfully deleted` 成功通知を確認します。
 
@@ -690,7 +690,7 @@ billing account membership は、顧客と billing account 間の関係を定義
 
 ライセンスの詳細には以下の情報が含まれます:
 
-- タイプ: Cloud、offline cloud、または legacy license。
+- タイプ: クラウド、オフラインクラウド、または従来型ライセンス。
 - トライアル: トライアルライセンスかどうかを表示。
 - 名前
 - 会社
@@ -717,7 +717,7 @@ billing account membership は、顧客と billing account 間の関係を定義
 
 この [ビデオチュートリアル](https://gitlab.edcast.com/insights/card-e7589a95-0229-4d20-9c54-ee84750020df) は、特定の顧客のライセンスの詳細を見つける例を説明しています。
 
-### License Seat Links
+### ライセンスとシートの紐付け {#license-seat-links}
 
 CustomersDot の `License seat links` ページでは、[Cloud Licensing](https://about.gitlab.com/pricing/licensing-faq/cloud-licensing/) または [Offline Cloud Licensing](https://about.gitlab.com/pricing/licensing-faq/cloud-licensing/#offline-cloud-licensing) 上の Self Managed 顧客の現在の使用状況とバージョンデータを可視化できます。データ同期ごとに 1 レコードが作成され、使用状況の経時的な変化や顧客が特定のシート数を超えた日付を示すのに役立つポイントインタイムデータを表します。Cloud License 対応顧客の場合、[License Sync](https://docs.gitlab.com/subscriptions/self_managed/#subscription-data-synchronization) の一部として 1 日に 1 回レコードが作成されます。Offline License 対応顧客の場合、顧客が使用状況データを手動で GitLab に送信するたびにレコードが作成され、月に 1 回の頻度で要求されます。
 
@@ -728,19 +728,19 @@ CustomersDot の `License seat links` ページでは、[Cloud Licensing](https:
 1. `Max historical user count` - 現在のサブスクリプション期間中に記録された請求可能ユーザーの最高値
 1. `GitLab version` - 同期時の顧客が使用している GitLab のバージョン
 
-### Orders
+### 注文
 
 1. `Orders` セクションに移動します。
 1. 検索ボックスを使用して注文を検索します。検索には以下のパラメータを使用できます:
    - 注文 ID
-   - billing account
+   - 請求アカウント
    - サブスクリプション名
-   - Gl namespace
-   - Gl namespace 名
+   - Gl 名前空間
+   - Gl 名前空間名
 1. 右の ℹ️ アイコンをクリックすると、注文のすべての詳細が表示されます。
 1. 右の 📕 アイコンをクリックすると、注文の履歴が表示されます。
 
-### Reconciliations
+### リコンシリエーション
 
 1. `Reconciliations` セクションに移動します。
 1. 検索ボックスを使用して顧客を検索します (Salesforce にあるとおりに名前を検索していることを確認)。
@@ -755,11 +755,11 @@ CustomersDot の `License seat links` ページでは、[Cloud Licensing](https:
    - 請求金額
    - エラーメッセージ (該当する場合)
 
-### CustomersDot Admin panel の Sales ユースケース
+### CustomersDot 管理パネルの Sales ユースケース {#sales-use-cases-of-customersdot-admin-panel}
 
 #### 顧客/見込み客に対して発行されたすべてのライセンスを検索
 
-これは、誰が、何回、いつ、何人のユーザー向けにトライアルをリクエストしたかを理解できます。[Self-Requested Trials](https://about.gitlab.com/free-trial/) は簡単にレポートできません。
+これは、誰が、何回、いつ、何人のユーザー向けにトライアルをリクエストしたかを理解できます。[セルフサービスでリクエストされたトライアル](https://about.gitlab.com/free-trial/) は簡単にレポートできません。
 
 #### version.gitlab.com でライセンスをクロスリファレンス
 
@@ -772,7 +772,7 @@ CustomersDot がライセンス情報の SSOT であるため、さらなるト�
 ##### 参考資料
 
 - [トラブルシューティング: ライセンス](/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/#licenses)
-- [ライセンス所有者の変更 (Contact Support)](/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/#how-do-i-change-the-license-owner-for-self-managed-instances-with-licensegitlab)
+- [ライセンス所有者の変更 (Support に問い合わせ)](/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/#how-do-i-change-the-license-owner-for-self-managed-instances-with-licensegitlab)
 
 ## Fulfillment Support Admin ツール
 
@@ -780,7 +780,7 @@ CustomersDot がライセンス情報の SSOT であるため、さらなるト�
 
 ### 概要
 
-このドキュメントでは、[mechanizer](https://gitlab.com/gitlab-com/support/toolbox/mechanizer) から CustomersDot admin ダッシュボードに移行された Support Admin 機能について説明します。これらのツールは、Support Licensing & Renewals (L&R) チームに不可欠な機能を提供します。
+このドキュメントでは、[mechanizer](https://gitlab.com/gitlab-com/support/toolbox/mechanizer) から CustomersDot 管理ダッシュボードに移行された Support Admin 機能について説明します。これらのツールは、Support Licensing & Renewals (L&R) チームに不可欠な機能を提供します。
 
 **現在のステータス**: 移行はほぼ完了しており、最後の機能 ([まもなく期限切れの SaaS サブスクリプションを延長](https://gitlab.com/groups/gitlab-org/-/epics/17745)) が本番に実装されています。
 
@@ -788,7 +788,7 @@ CustomersDot がライセンス情報の SSOT であるため、さらなるト�
 
 ### アクセス要件
 
-Support Admin 機能は現在、L&R サポートチームの選ばれたメンバーに限定されており、アクセスを拡大する計画があります。
+Support Admin 機能は現在、L&R Support チームの選ばれたメンバーに限定されており、アクセスを拡大する計画があります。
 
 #### 必要な権限
 
@@ -799,7 +799,7 @@ Support Admin 機能は現在、L&R サポートチームの選ばれたメン�
 
 #### アクセスのリクエスト方法
 
-1. [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=role_support-CDot-full-access-request-template) を提出します
+1. [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=role_support-CDot-full-access-request-template) を提出します
 2. テンプレート `role_support-CDot-full-access-request-template` を選択 (上記のリンクが自動的にテンプレートを適用します)
 3. Support チームマネージャーから承認を取得
 4. Fulfillment チームマネージャー (`@jameslopez` / `@rhardarson` / `@dzubova`) から承認を取得
@@ -846,7 +846,7 @@ Support 管理機能を使用するために、顧客とライセンスの書き
 
 この機能は SM トライアルの Mechanizer の Emergency license 機能を置き換えます。
 
-##### Self-Managed Legacy トライアルライセンスを生成
+##### Self-Managed の従来型トライアルライセンスを生成
 
 1. `Add new License` タブをクリックします
 2. 必要な詳細を入力します:
@@ -856,7 +856,7 @@ Support 管理機能を使用するために、顧客とライセンスの書き
     - 終了日
     - Zendesk チケットリンク
 3. 'Save' をクリックします
-4. legacy ライセンスを含むメールが提供されたメールアドレスに送信されます
+4. 従来型ライセンスを含むメールが提供されたメールアドレスに送信されます
 
 #### 3. 名前空間コントロール
 
@@ -873,7 +873,7 @@ Support 管理機能を使用するために、顧客とライセンスの書き
 **手順:**
 
 1. `Set extra CI minutes` タブを選択します
-2. Namespace ID またはパスを入力します
+2. 名前空間 ID またはパスを入力します
 3. 追加分の新しい合計を入力します
 4. Zendesk チケットリンクを入力します
 5. 'Submit' をクリックします
@@ -885,14 +885,14 @@ Support 管理機能を使用するために、顧客とライセンスの書き
 **手順:**
 
 1. `Set additional storage` タブを選択します
-2. Namespace ID またはパスを入力します
+2. 名前空間 ID またはパスを入力します
 3. 追加ストレージを MiB 単位で入力します
 4. Zendesk チケットリンクを入力します
 5. 'Submit' をクリックします
 
 ##### 3.3 サブスクリプションのクリア
 
-**目的**: サブスクリプションを名前空間からリンク解除し、名前空間を Free tier にダウングレードする
+**目的**: サブスクリプションを名前空間からリンク解除し、名前空間を Free ティアにダウングレードする
 
 **手順:**
 
@@ -903,12 +903,12 @@ Support 管理機能を使用するために、顧客とライセンスの書き
 
 ##### 3.4 強制的に再関連付け
 
-**目的**: 別の名前空間とサブスクリプションを再関連付ける (前の名前空間は Free tier にダウングレードされます)
+**目的**: 別の名前空間とサブスクリプションを再関連付ける (前の名前空間は Free ティアにダウングレードされます)
 
 **手順:**
 
 1. `Force re-associate` タブを選択します
-2. ターゲット Namespace ID またはパスを入力します
+2. 対象の名前空間 ID またはパスを入力します
 3. Zuora Subscription ID または名前を入力します
 4. Zendesk チケットリンクを入力します
 5. 'Submit' をクリックします
@@ -920,7 +920,7 @@ Support 管理機能を使用するために、顧客とライセンスの書き
 **手順:**
 
 1. `Reset max seats` タブを選択します
-2. Namespace ID またはパスを入力します
+2. 名前空間 ID またはパスを入力します
 3. 新しい最大シート数を入力します
 4. Zendesk チケットリンクを入力します
 5. 'Submit' をクリックします
@@ -929,21 +929,21 @@ Support 管理機能を使用するために、顧客とライセンスの書き
 
 **目的**: まもなく期限切れになるサブスクリプションを一時的に延長する
 
-**現在の制限**: 名前空間がトライアルに関連付けられている場合、一時延長を provisioning するためにトライアルを延長するようにリダイレクトされます
+**現在の制限**: 名前空間がトライアルに関連付けられている場合、一時延長をプロビジョニングするためにトライアルを延長するようにリダイレクトされます
 
 **将来の開発**: 以前のトライアルがない名前空間のサブスクリプション延長のサポートは [Issue #12874](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/12874) で実装中です
 
 ### 将来の改善 / バグ修正
 
-将来の改善またはバグ修正については、[CustomersDot project](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/new) で Issue を作成し、適切なチームをタグ付けしてください:
+将来の改善またはバグ修正については、[CustomersDot プロジェクト](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/new) で Issue を作成し、適切なチームをタグ付けしてください:
 
-1. Trial、ライセンス、名前空間ツール > Provision
+1. トライアル、ライセンス、名前空間ツール > Provision
 2. 消耗品と最大シートツール > Utilization
-3. Billing account/contact と QSR ツール > Subscription management
+3. 請求アカウント/連絡先と QSR ツール > Subscription management
 
 ## Fulfillment に影響するバグの対応計画
 
-provisioning、購入、請求、サブスクリプションデータなどを含む、Fulfillment に影響するバグが発見された場合、以下を実行してください:
+プロビジョニング、購入、請求、サブスクリプションデータなどを含む、Fulfillment に影響するバグが発見された場合、以下を実行してください:
 
 **Issue の報告**
 
@@ -966,10 +966,10 @@ provisioning、購入、請求、サブスクリプションデータなどを�
 
 ### ライセンスアクティベーションの問題
 
-**True-up またはシートオーバーエージの不一致でライセンスがアクティベートされない**
+**トゥルーアップまたはシートオーバーエージの不一致でライセンスがアクティベートされない**
 
-1. 14.3+ の顧客では、10% のシートオーバーエージがあってもライセンスのアクティベーションを許可しています [issue #333851](https://gitlab.com/gitlab-org/gitlab/-/issues/333851)。詳細については [こちら](https://gitlab.com/gitlab-org/gitlab/-/blob/master/doc/administration/license.md#users-exceed-license-limit-upon-renewal) を確認し、関連する [MR #67507](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/67507) および [MR #67508](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/67508) を参照してください
-1. Cloud Licensing では、シート数の不一致でアクティベーションをブロックしません。顧客が現在のアクティブユーザーよりも少ないシートを持つライセンスを適用する場合、次の QSR または true-up イベントでリコンシリエーションします。
+1. 14.3+ の顧客では、10% のシートオーバーエージがあってもライセンスのアクティベーションを許可しています [Issue #333851](https://gitlab.com/gitlab-org/gitlab/-/issues/333851)。詳細については [こちら](https://gitlab.com/gitlab-org/gitlab/-/blob/master/doc/administration/license.md#users-exceed-license-limit-upon-renewal) を確認し、関連する [MR #67507](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/67507) および [MR #67508](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/67508) を参照してください
+1. Cloud Licensing では、シート数の不一致でアクティベーションをブロックしません。顧客が現在のアクティブユーザーよりも少ないシートを持つライセンスを適用する場合、次の QSR またはトゥルーアップイベントでリコンシリエーションします。
 
 **Cloud Licensing をアクティベートするために GitLab インスタンスはどのような接続を必要としますか？**
 
@@ -994,7 +994,7 @@ Cloud License で送信されるデータは [このドキュメント](https://
 
 詳細については [Offline Cloud Licensing](https://about.gitlab.com/pricing/licensing-faq/cloud-licensing/#offline-cloud-licensing) を参照してください。
 
-## Fulfillment ロードマップ優先順位付け
+## Fulfillment ロードマップ優先順位付け {#fulfillment-roadmap-prioritization}
 
 ### 原則
 
@@ -1008,15 +1008,15 @@ Cloud License で送信されるデータは [このドキュメント](https://
 
 **GitLab がスケールできるように強固な基盤を構築する**
 
-Fulfillment システムは、GitLab 内の多くのコマースアクティビティの基盤層です。私たちのシステムは、顧客にライセンスを provisioning し、複数の KPI とデータモデルのデータソースであり、[Zuora](/handbook/business-technology/enterprise-applications/guides/zuora/) と Salesforce と直接相互作用します。これらのシステムは信頼性が高く、需要に応じてスケールでき、他のチームが協力できる必要があります。
+Fulfillment システムは、GitLab 内の多くのコマースアクティビティの基盤層です。私たちのシステムは、顧客にライセンスをプロビジョニングし、複数の KPI とデータモデルのデータソースであり、[Zuora](/handbook/business-technology/enterprise-applications/guides/zuora/) と Salesforce と直接相互作用します。これらのシステムは信頼性が高く、需要に応じてスケールでき、他のチームが協力できる必要があります。
 
 私たちは定期的に基盤に投資し、基盤システムが十分に堅牢でないと感じるたびに新機能開発を中断し基盤に集中することを続けます。FY23 にこのエリアの集中した努力のために Fulfillment Platform グループを設立しました。
 
 **データを使用して決定を行いインパクトを測定する**
 
-私たちには多くのセンシングメカニズムがあります: GTM チーム経由のフィードバック、ビジネスカウンターパートとのミーティング、ユーザー研究からの顧客フィードバック、GitLab チームメンバーや広いコミュニティのメンバーが Issue tracker で提起した改善提案。
+私たちには多くのセンシングメカニズムがあります: GTM チーム経由のフィードバック、ビジネスカウンターパートとのミーティング、ユーザー研究からの顧客フィードバック、GitLab チームメンバーや広いコミュニティのメンバーが Issue トラッカーで提起した改善提案。
 
-方向と優先順位を設定するためにデータをセンシングメカニズムとして使用する方法も改善しています。ファネルを理解することは、顧客にとってシームレスなコマース体験を構築する上で最重要です。Growth との協力で Fulfillment チームは、取引ファネルの各ポイントをインストルメンテーションし、私たちの戦略と方向性を情報する形でデータを使用できるようにしています。
+方向と優先順位を設定するためにデータをセンシングメカニズムとして使用する方法も改善しています。ファネルを理解することは、顧客にとってシームレスなコマース体験を構築する上で最重要です。Growth との協力で Fulfillment チームは、取引ファネルの各ポイントをインストルメンテーションし、私たちの戦略と方向性の判断にデータを活用できるようにしています。
 
 **変更のインパクトが大きい場合は特に、イテレートする**
 
@@ -1030,9 +1030,9 @@ Fulfillment システムは、GitLab 内の多くのコマースアクティビ�
 
 ### 優先順位付けプロセス
 
-私たちのロードマップは、[Project management process](/handbook/engineering/development/fulfillment/#project-management-process) に従って優先順位付けされ、スケジュールされます。マイルストーンの[計画プロセス](/handbook/engineering/development/fulfillment/#planning)の一部として、このロードマップを毎月更新することを目指しています。
+私たちのロードマップは、[プロジェクト管理プロセス](/handbook/engineering/development/fulfillment-monetization/#project-management-process) に従って優先順位付けされ、スケジュールされます。マイルストーンの[計画プロセス](/handbook/engineering/development/fulfillment-monetization/#planning)の一部として、このロードマップを毎月更新することを目指しています。
 
-Fulfillment ロードマップに作業を追加するようリクエストするには、[受付リクエストプロセス](/handbook/engineering/development/fulfillment/#intake-request) に従ってください。このロードマップの優先順位の変更は、[優先順位付けプロセス](/handbook/engineering/development/fulfillment/#prioritization) に従います。
+Fulfillment ロードマップに作業を追加するようリクエストするには、[受付リクエストプロセス](/handbook/engineering/development/fulfillment-monetization/#intake-request) に従ってください。このロードマップの優先順位の変更は、[優先順位付けプロセス](/handbook/engineering/development/fulfillment-monetization/#prioritization) に従います。
 
 特定の四半期の優先順位の SSOT は、Fulfillment OKR です。
 
@@ -1045,7 +1045,7 @@ Fulfillment ロードマップに作業を追加するようリクエストす�
 
 1. GitLab, Inc の価値への長期的なインパクトで測定された、最高 ROI のイニシアチブを優先する。(注: 「構築コスト」は ROI 計算の I の重要な考慮事項です)
 1. クロスチームおよびクロスファンクショナルなリソースニーズを十分に計画するために、優先順位への将来の可視性を提供する。
-1. 実行途中の再優先順位付けによる無駄と離脱を最小限に抑える。
+1. 実行途中の再優先順位付けによる無駄と手戻りを最小限に抑える。
 
 #### 優先順位付け基準
 
@@ -1053,14 +1053,14 @@ Fulfillment ロードマップに作業を追加するようリクエストす�
 
 1. 収益への潜在的影響
    1. 新しいセールスチャネルを解放する価値
-   1. セールス効率の改善と取引を成立させるためにフィールドチームメンバーが費やす時間の削減。これには、ほとんどの取引でのセールスチーム関与の排除が含まれます
+   1. セールス効率の改善と取引を成立させるためにフィールドチームメンバーが費やす時間の削減。これには、ほとんどの取引での Sales チーム関与の排除が含まれます
    1. コンバージョンの改善
    1. リスクとコンプライアンスの問題 (負の収益の可能性)
 1. 運用コストの削減
    1. サポートコストの削減
    1. GitLab とのシームレスな取引、効率性の向上、顧客満足度の改善。
 1. 機会を解放するための基盤
-   1. 将来の機会を情報するための新規または改善されたデータの価値
+   1. 将来の機会の判断材料となる新規または改善されたデータの価値
    1. 10 倍の顧客をサポートするためのシステムの堅牢性
    1. 他の機会を解放するための基盤作業の価値
    1. e コマース改善に貢献できる GitLab チームメンバーの数
@@ -1090,13 +1090,13 @@ Fulfillment ロードマップに作業を追加するようリクエストす�
 
 パートナーチームへの影響を最小限に抑え、より予測可能性を与えるために、進行中の四半期内に行うことについてクロスファンクショナルパートナーとすでに合意したイニシアチブへの変更を最小化します。
 
-[受付リクエスト](/handbook/engineering/development/fulfillment/#intake-request) を経由して、誰でもロードマップに追加する新しいアイテムをリクエストできます。
+[受付リクエスト](/handbook/engineering/development/fulfillment-monetization/#intake-request) を経由して、誰でもロードマップに追加する新しいアイテムをリクエストできます。
 
 #### 四半期クロスファンクショナルレビュー
 
 私たちの優先順位付けの目標の 1 つは、Fulfillment とクロスファンクショナルパートナー全体のチーム全体のアウトプットを最大化することです。私たちは、Fulfillment とそのパートナーチームが提供する予定の作業について、すべての GitLab チームメンバーに透明性を提供したいと考えています。
 
-これを可能にするために、新しい会計四半期の開始前に[安定したカウンターパート](/handbook/engineering/development/fulfillment/#stable-counterparts)とロードマップレビューを行います。このレビューの一部として、ロードマップの優先順位についてフィードバックを集め、フィードバックに基づいてロードマップを更新し、今後 3-6 か月のスコープと配信マイルストーンについてパートナーと合意します。
+これを可能にするために、新しい会計四半期の開始前に[安定したカウンターパート](/handbook/engineering/development/fulfillment-monetization/#stable-counterparts)とロードマップレビューを行います。このレビューの一部として、ロードマップの優先順位についてフィードバックを集め、フィードバックに基づいてロードマップを更新し、今後 3-6 か月のスコープと配信マイルストーンについてパートナーと合意します。
 
 これらの四半期レビュー中に、Fulfillment エンジニアリングキャパシティの最大 70% を次の四半期に、それ以降の四半期に対してはキャパシティの 30% を超えないようにコミットすることを目指します。これは、クロスファンクショナルパートナーが計画するための今後の活動への十分な可視性を提供しつつ、必要に応じて再優先順位付けと変更のための余地を残すことを目的としています。
 
@@ -1135,4 +1135,4 @@ OKR のレビュー:
 
 OKR の最終化とクローズ:
 
-四半期の終わりに、ステージリーダーが OKR をスコアリングし、トップレベルの目的にそれを要約するコメントを残します。([FY25 Q1 example](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5573#note_1883160327))。この最終ステップは、振り返り、自分自身に責任を持ち、そうでなければしばしば見過ごされる達成したことを祝福するのに役立つため、重要です。私たちはこの最後の更新を、私たちの #s_fulfillment_fyi チャンネルでより多くの可視性のために Slack にクロスポストします。
+四半期の終わりに、ステージリーダーが OKR をスコアリングし、トップレベルの目的にそれを要約するコメントを残します。([FY25 Q1 の例](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5573#note_1883160327))。この最終ステップは、振り返り、自分自身に責任を持ち、そうでなければしばしば見過ごされる達成したことを祝福するのに役立つため、重要です。私たちはこの最後の更新を、私たちの #s_fulfillment_fyi チャンネルでより多くの可視性のために Slack にクロスポストします。

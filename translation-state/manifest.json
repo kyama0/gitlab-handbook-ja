@@ -2586,11 +2586,11 @@
     },
     "content/handbook/company/working-groups/task-groups/_index.md": {
       "path": "content/handbook/company/working-groups/task-groups/_index.md",
-      "upstream_sha": "401db1960414fc91f11d1a68caf048b4d9aec1be",
-      "translated_at": "2026-09-08T21:08:18+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:02:41+00:00",
       "model": "codex",
-      "input_hash": "3ea857cf48465918f0a5c3eaf00d69e347cdea99dac0c5eb9b48a697822d2a25",
-      "upstream_committed_at": "2026-09-08T19:46:21+02:00"
+      "input_hash": "3804dad5e0c1075857b3308f9b5f7d610cefb27a4b5449eb142a725708387b9b",
+      "upstream_committed_at": "2026-10-02T11:35:57+02:00"
     },
     "content/handbook/company/working-groups/task-groups/bootstrap-vue-removal.md": {
       "path": "content/handbook/company/working-groups/task-groups/bootstrap-vue-removal.md",
@@ -10458,11 +10458,11 @@
     },
     "content/handbook/engineering/development/fulfillment/_index.md": {
       "path": "content/handbook/engineering/development/fulfillment/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T08:19:21+09:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:05:33+00:00",
       "model": "codex",
-      "input_hash": "5a048d1908f194e0d61543c0c4d7773877358a710006b39a6adb17372ca783e8",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "6c41571aab016ef1bed2a5bbb9f15897368733ebdfea2cfda52c6564e3cad5c1",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00"
     },
     "content/handbook/engineering/development/fulfillment/dib.md": {
       "path": "content/handbook/engineering/development/fulfillment/dib.md",
@@ -24794,11 +24794,11 @@
     },
     "content/handbook/security/corporate/systems/sentinelone/troubleshooting/_index.md": {
       "path": "content/handbook/security/corporate/systems/sentinelone/troubleshooting/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0d090ac84d18a54fc16983bae053699761813000c5eaaa03393fbb02d8e9b54f",
-      "upstream_committed_at": "2025-06-26T03:27:50+00:00"
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:08:19+00:00",
+      "model": "codex",
+      "input_hash": "d416999fd3abb7df7006bb8dd6c0a7a2e6a6b27c1add620a866c4f8ea3b7a805",
+      "upstream_committed_at": "2026-10-09T14:49:22+02:00"
     },
     "content/handbook/security/corporate/systems/slack/_index.md": {
       "path": "content/handbook/security/corporate/systems/slack/_index.md",
@@ -30402,11 +30402,11 @@
     },
     "content/handbook/product/groups/fulfillment/_index.md": {
       "path": "content/handbook/product/groups/fulfillment/_index.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0393a6b0842f522d77fe18a39a48f20bc33b7418f1c0d1b67b0f0f5688d2fc4e",
-      "upstream_committed_at": "2026-06-02T16:10:55-05:00"
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:05:33+00:00",
+      "model": "codex",
+      "input_hash": "d3ff2820a8aa763ce5133d3c0f7c149b0d5926f8cb53a04a60db5da8a3ecd012",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00"
     },
     "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md": {
       "path": "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md",
@@ -30874,11 +30874,11 @@
     },
     "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md": {
       "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:15Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2c2d96ff846e522a64d207d809e8ffeb56937f0ac7707405d94bc21c8d076265",
-      "upstream_committed_at": "2026-06-12T09:20:53-04:00"
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:02:41+00:00",
+      "model": "codex",
+      "input_hash": "4540b388c996a0b69a7af03c316d76f4ef834daa48cf0f54c563e02599f4a09a",
+      "upstream_committed_at": "2026-10-09T13:19:36-04:00"
     },
     "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance.md": {
       "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance.md",
@@ -31522,11 +31522,11 @@
     },
     "content/handbook/company/working-groups/task-groups/sentry-signal-loop.md": {
       "path": "content/handbook/company/working-groups/task-groups/sentry-signal-loop.md",
-      "upstream_sha": "401db1960414fc91f11d1a68caf048b4d9aec1be",
-      "translated_at": "2026-09-08T21:08:18+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:02:41+00:00",
       "model": "codex",
-      "input_hash": "8b922915b22eb93828cdf09c8cc77e7b8e1b7999fcc6a2fede916f6fcfbc948a",
-      "upstream_committed_at": "2026-08-27T11:37:04+02:00"
+      "input_hash": "7d43c7b5f85aaa9794e6f0b7785401b962b3d686019de332f28b9538b23016de",
+      "upstream_committed_at": "2026-10-02T11:35:57+02:00"
     },
     "content/handbook/support/workflows/escalations-support_engineer.md": {
       "path": "content/handbook/support/workflows/escalations-support_engineer.md",
@@ -32602,11 +32602,11 @@
     },
     "content/handbook/upstream-studios/experience-research/_index.md": {
       "path": "content/handbook/upstream-studios/experience-research/_index.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T06:46:21+09:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:08:19+00:00",
       "model": "codex",
-      "input_hash": "7bd2ae82a33a404a9c8637b1ab94343bd6484eca4f8cd2f160be10740a37187d",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "bfbb631143cfc19ce866ad93bd6601980f87b637d177dec52a851c87ee00c71d",
+      "upstream_committed_at": "2026-10-07T09:03:11-04:00"
     },
     "content/handbook/upstream-studios/experience-research/analyzing-research-data.md": {
       "path": "content/handbook/upstream-studios/experience-research/analyzing-research-data.md",
@@ -37002,11 +37002,11 @@
     },
     "content/handbook/upstream-studios/experience-research/design-run-workshops/index.md": {
       "path": "content/handbook/upstream-studios/experience-research/design-run-workshops/index.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T22:10:08+09:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "translated_at": "2026-10-11T21:08:19+00:00",
       "model": "codex",
-      "input_hash": "97079b55a6505bf47db68c6508080f17171caa94fde67261b5822ffbdccbf70d",
-      "upstream_committed_at": "2026-09-01T18:13:59+02:00"
+      "input_hash": "8f2ad3342baa2e21f24829e9377dad3fb838c0cd7509e64879c8f9d6a868178a",
+      "upstream_committed_at": "2026-10-07T09:03:11-04:00"
     },
     "content/handbook/support/workflows/organization-association.md": {
       "path": "content/handbook/support/workflows/organization-association.md",
@@ -38538,11 +38538,11 @@
     },
     "content/handbook/customer-experience/pre-sales-post-sales-transition.md": {
       "path": "content/handbook/customer-experience/pre-sales-post-sales-transition.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-11T21:08:19+00:00",
       "model": "codex",
-      "input_hash": "bce7245648bdf91bc8c8e324dd499a5dfa2763d01dbc1b0511609a272957116a"
+      "input_hash": "3fa3562f532f2f717ffadb8d1303b6ce1304fb4a277deb3d24de8f210638a8c2"
     },
     "content/handbook/customer-experience/apj-customer-success.md": {
       "path": "content/handbook/customer-experience/apj-customer-success.md",
@@ -39458,11 +39458,11 @@
     },
     "content/handbook/customer-experience/csm/account-handoff.md": {
       "path": "content/handbook/customer-experience/csm/account-handoff.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-11T21:08:19+00:00",
       "model": "codex",
-      "input_hash": "914bb4a7e015cfc501222277dd6adcb23e5c4f338c6c1d4b73883f6797a629ab"
+      "input_hash": "83429395581b71c3b6b2a3ba251ec7ccb0d3e2c0165e3bf9cae0d8bf27c6e6ab"
     },
     "content/handbook/customer-experience/csm/cadence-calls.md": {
       "path": "content/handbook/customer-experience/csm/cadence-calls.md",

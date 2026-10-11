@@ -2,11 +2,11 @@
 title: "タスクグループ"
 description: "クロスファンクショナルな性質の特定タスクに対処するためのアプローチ。タスクグループは、専門知識を持つ特定分野の専門家で構成される、DRI（直接責任者）が率いるリーンで集中したグループです。"
 upstream_path: /handbook/company/working-groups/task-groups/
-upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
-translated_at: "2026-09-08T21:08:18+00:00"
+upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
+translated_at: "2026-10-11T21:02:41+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-08T19:46:21+02:00"
+lastmod: "2026-10-02T11:35:57+02:00"
 ---
 
 ## タスクグループとは？
@@ -76,11 +76,11 @@ lastmod: "2026-09-08T19:46:21+02:00"
 1. [アクセシビリティ監査トリアージ](https://internal.gitlab.com/handbook/company/internal-working-groups/internal-task-groups/accessibility-audit-triage)
 1. [BootstrapVue 削除](bootstrap-vue-removal/)
 1. [インテリジェントなモデル選択](intelligent-model-selection/)
-1. [Sentry Signal Loop](sentry-signal-loop/)
 
 ## 過去のタスクグループ（アルファベット順）
 
 1. [CSS ユーティリティ](css-utils/)
 1. [GitLab UI @vue/compat 互換性](gitlab-ui-vue-compat/)
+1. [Sentry Signal Loop](sentry-signal-loop/)
 1. [Vue 3 検疫済みテスト](vue3-quarantined-tests/)
 1. [Vue 3 Router 4 テスト互換性](vue3-router4-tests/)
