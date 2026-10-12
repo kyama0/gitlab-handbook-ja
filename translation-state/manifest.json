@@ -38336,14 +38336,6 @@
       "model": "codex",
       "input_hash": "8d83a82b629b00fcca04733d490faee11704dd8ca726f1d471590b07e50476ae"
     },
-    "content/handbook/customer-experience/csm/segment/cse/cse-assigned.md": {
-      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T00:10:26+00:00",
-      "model": "codex",
-      "input_hash": "cee4730175fac5c1267b6184e2c39126d955ffd7e8e32f2e2a2899534c71ac0a"
-    },
     "content/handbook/customer-experience/professional-services-engineering/workflows/project-execution/welcome-email.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/workflows/project-execution/welcome-email.md",
       "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
