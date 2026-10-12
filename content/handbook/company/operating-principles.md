@@ -78,7 +78,7 @@ _顧客が勝つとき、私たちが勝つ。_
 
 ---
 
-## CREDIT への感謝
+## CREDIT への感謝 {#acknowledging-credit}
 
 CREDIT — Collaboration（コラボレーション）、Results（成果）、Efficiency（効率）、Diversity & Inclusion（ダイバーシティ＆インクルージョン）、Iteration（イテレーション）、Transparency（透明性）— は、GitLab を広く知られる存在にした時代にふさわしいフレームワークでした。これらのバリューは、最初の 10 年間を通じて繁栄する会社を形作り、DevSecOps において最も認知される名前の 1 つへと押し上げました。
 

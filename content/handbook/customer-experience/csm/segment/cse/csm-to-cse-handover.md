@@ -1,11 +1,11 @@
 ---
 title: "CSM から CSE+ へのアカウント移管プロセス"
 upstream_path: /handbook/customer-experience/csm/segment/cse/csm-to-cse-handover/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 2dbfc49e47c784740ced3e2c617530f365412492
+translated_at: "2026-10-12T00:04:07+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-09T17:05:37Z"
 ---
 
 **概要**
@@ -23,18 +23,18 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ```mermaid
 graph TD
-    Start([顧客移管<br/>CSM から CSE+]) --> PreHandover[移管前の準備]
-    PreHandover --> DataCleanup[CSM データクリーンアップ:<br/>- サクセスプランと CTA をクローズ<br/>- インスタンス確認<br/>- システム更新]
-    DataCleanup --> CreateIssue[チェックリストと全リンクを含む<br/>GitLab 引き継ぎ Issue 作成]
-    CreateIssue --> CSEReview{CSE テリトリーオーナー<br/>ゲートキーパーレビュー}
-    CSEReview -->|問題あり| DataCleanup
-    CSEReview -->|承認| ManagerActions[マネージャーアクション:<br/>- ティア更新<br/>- 補償プール調整]
-    ManagerActions --> HandoverCall[内部引き継ぎ通話<br/>30 〜 60 分]
-    HandoverCall --> CustomerComm[顧客コミュニケーション]
-    CustomerComm --> SendLetter[CSM が AE 経由でレターを送信<br/>BCC: Gainsight]
-    SendLetter --> NoCSECall[CSE は顧客移管通話に<br/>参加しない]
-    NoCSECall --> Complete[Gainsight 更新 &<br/>引き継ぎ Issue クローズ]
-    Complete --> CSEEngagement[CSE+ オンデマンドエンゲージメント<br/>AE 経由で必要に応じて]
+    Start([Customer Transitioning<br/>CSM to CSE+]) --> PreHandover[Pre-Handover Preparation]
+    PreHandover --> DataCleanup[CSM Data Cleanup:<br/>- Close Success Plans & CTAs<br/>- Verify instances<br/>- Update systems]
+    DataCleanup --> CreateIssue[Create GitLab Handover Issue<br/>with checklist & all links]
+    CreateIssue --> CSEReview{CSE Territory Owner<br/>Gatekeeper Review}
+    CSEReview -->|Issues Found| DataCleanup
+    CSEReview -->|Approved| ManagerActions[Manager Actions:<br/>- Update tier<br/>- Adjust comp pool]
+    ManagerActions --> HandoverCall[Internal Handover Call<br/>30-60 min]
+    HandoverCall --> CustomerComm[Customer Communication]
+    CustomerComm --> SendLetter[CSM sends letter via AE<br/>BCC: Gainsight]
+    SendLetter --> NoCSECall[NO CSE participation<br/>in customer transition calls]
+    NoCSECall --> Complete[Update Gainsight &<br/>Close Handover Issue]
+    Complete --> CSEEngagement[CSE+ On-Demand Engagement<br/>via AE as needed]
     style Start fill:#e1f5ff
     style Complete fill:#d4edda
     style CSEEngagement fill:#d4edda
@@ -60,12 +60,12 @@ graph TD
 - [CSM-to-CSE-Handover プロジェクト](https://gitlab.com/gitlab-com/customer-success/csm-to-cse-handover/-/issues)の[Issue テンプレート](https://gitlab.com/gitlab-com/customer-success/csm-to-cse-handover/-/issues/new?issuable_template=CSM_to_CSE_handover)を使用する
 - 必要なすべての情報を記入する
 - リンクを追加する: コラボレーションプロジェクト、顧客ノート GDoc、Gong 録画
-- `@mention` で CSE テリトリーオーナーにタグを付ける
+- `@mention` で CSE Territory Owner にタグを付ける
 - Gainsight タイムラインに Issue をリンクする
 
 ### 2. レビューと承認（2 週目）
 
-**CSE テリトリーオーナーレビュー**（3 営業日以内）:
+**CSE Territory Owner のレビュー**（3 営業日以内）:
 
 - すべてのサクセスプラン/CTA がクローズされていることを確認する
 - インスタンス分類が正確であることを確認する
@@ -74,12 +74,12 @@ graph TD
 **マネージャーアクション**（CSE 承認後）:
 
 - アカウントを TAM Scale ティアに更新する
-- 補償プールを調整する
+- 報酬プールを調整する
 - Issue の「マネージャーアクション完了」にチェックを入れる
 
 ### 3. 内部引き継ぎ（2〜3 週目）
 
-**引き継ぎ通話**（30〜60 分 | CSM + CSE テリトリーオーナー）:
+**引き継ぎ通話**（30〜60 分 | CSM + CSE Territory Owner）:
 
 - 引き継ぎ Issue を一緒に確認する
 - 知っておくべき上位 3 事項を話し合う
@@ -113,11 +113,11 @@ graph TD
 
 ## RACI
 
-| アクティビティ | CSM | CSE テリトリーオーナー | CSM マネージャー | AE |
+| アクティビティ | CSM | CSE Territory Owner | CSM Manager | AE |
 |----------|-----|---------------------|-------------|----|
 | データクリーンアップと Issue 作成 | R/A | I | I | I |
 | 引き継ぎのレビュー/承認 | C | R/A | I | - |
-| ティアと補償プールの更新 | I | I | R/A | I |
+| ティアと報酬プールの更新 | I | I | R/A | I |
 | 引き継ぎ通話 | R/A | R/A | I | - |
 | 顧客レターの下書き/送信 | R/A | I | C | C |
 | タイミングの調整 | C | - | - | R/A |
@@ -136,7 +136,7 @@ graph TD
 
 ### 1. 引き継ぎ Issue を確認する
 
-CSM が[標準テンプレート](https://gitlab.com/gitlab-com/customer-success/csm-to-cse-handover/-/blob/master/.gitlab/issue_templates/CSM_to_CSE_handover.md)を使用して引き継ぎ Issue を作成し、**CSE テリトリーオーナー**が承認したら、**担当 CSE** は以下を確認することが推奨されます:
+CSM が[標準テンプレート](https://gitlab.com/gitlab-com/customer-success/csm-to-cse-handover/-/blob/master/.gitlab/issue_templates/CSM_to_CSE_handover.md)を使用して引き継ぎ Issue を作成し、**CSE Territory Owner** が承認したら、**担当 CSE** は以下を確認することが推奨されます:
 
 - 確認事項:
   - **アカウント概要**と**知っておくべき上位 3 事項**
@@ -161,14 +161,14 @@ CSM が[標準テンプレート](https://gitlab.com/gitlab-com/customer-success
 
 - **スコープの確認:**
   - CSE+ サポートの対象となるチーム/インスタンス
-  - 他のチーム（サポート、PS、SA など）が主に担当し続ける領域
+  - 他のチーム（Support、PS、SA など）が主に担当し続ける領域
 - **主要コンテキストの明確化:**
   - 主要な**ペルソナ、チャンピオン、デトラクター**
   - 既知の**リスク/注意点**
   - 今後の**プロジェクト、更新、拡張**
 - **フォローアップ成果物の特定**（アーキテクチャ図、デッキ、過去のイネーブルメント）を引き継ぎ Issue にリンクする。
 
-将来の CSE と広いアカウントチームが見えるように、主要ポイントを**引き継ぎ Issue** に直接記録します（例えば「知っておくべき上位 3 事項」の下や短いコメントとして）。
+他の CSE やアカウントチーム全体が参照できるように、主要ポイントを**引き継ぎ Issue** に直接記録します（例えば「知っておくべき上位 3 事項」の下や短いコメントとして）。
 
 > **注意:** これは**内部**の CSM ↔ CSE 通話です。CSE が顧客移管通話に参加**しない**というプリンシプルを変更するものではありません。
 
@@ -209,7 +209,7 @@ CSE は、必要に応じてこのテキストを最新の状態に保ってく�
   - 特定の GitLab 機能の採用と活用に関する質問
   - ユースケース中心のイネーブルメントと「ハウツー」ガイダンス
   - イネーブルメントセッション、ラボ、またはウェビナーへの準備
-- AE が顧客の代わりに **CSE エンゲージメントをリクエスト**する方法（例えば、[CSE オペレーティングリズムページ](/handbook/customer-experience/csm/segment/cse/cse-operating-rhythm/)に説明されている CSE ヘルプリクエストプロセス経由）。
+- AE が顧客の代わりに **CSE エンゲージメントをリクエスト**する方法。
 
 この連携は非同期（Slack、引き継ぎ Issue へのコメント）または短い内部通話で行うことができ、CSM → CSE+ 引き継ぎ完了後に AE が CSE をいつどのように参加させるかを理解していることを確保し、移管後の顧客エンゲージメントの摩擦を減らすのに役立ちます。
 

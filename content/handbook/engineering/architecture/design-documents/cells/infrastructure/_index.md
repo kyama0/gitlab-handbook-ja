@@ -2,17 +2,17 @@
 title: "Cells: インフラストラクチャ"
 stage: core platform
 group: Tenant Scale
-description: 'Cells: インフラストラクチャ'
+description: 'GitLab.com Cells のプロビジョニング、デプロイメント、運用のためのインフラストラクチャ設計'
 authors: [ "@sxuereb" ]
 coach: [ "@andrewn" ]
 status: proposed
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/
-upstream_sha: 06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9
-translated_at: "2026-09-30T21:09:44+00:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/cells/infrastructure/"
+upstream_sha: "2dbfc49e47c784740ced3e2c617530f365412492"
+translated_at: "2026-10-11T23:57:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-29T10:30:26+02:00"
+lastmod: "2026-10-12T12:09:42+13:00"
 ---
 
 
@@ -28,7 +28,7 @@ lastmod: "2026-09-29T10:30:26+02:00"
 ## 哲学 {#philosophy}
 
 - **デフォルトでセルローカル**: すべてのサービスはセルローカルにすべきであり、セルローカルでない正当な理由が文書化されていない限り、グローバルであってはなりません。
-  セルローカルを維持することで、Cell とサービス間の通信が内部にとどまり、サービスはより小さなスケールで動作し、爆発半径がはるかに小さくなります。
+  セルローカルを維持することで、Cell とサービス間の通信が内部にとどまり、サービスはより小さなスケールで動作し、影響範囲がはるかに小さくなります。
   例: Gitaly と GitLab Registry はセルローカルです。
 - **均質な環境**: 現在のところ、すべての GitLab Cell は同じ外観であるべきです。ブートストラップとプロビジョニングは自動化された方法で行われるべきです。
   最初のイテレーションではすべての Cell が同じサイズであり、異なるサイズを実行することにはメリットがありますが、複雑さとスコープが増します。
@@ -59,7 +59,10 @@ lastmod: "2026-09-29T10:30:26+02:00"
 
 ## アーキテクチャ {#architecture}
 
-以下は Cell アーキテクチャです。現在の GitLab.com アーキテクチャ（Cell 導入前）は <https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/architecture/> で確認できます。
+以下は Cell アーキテクチャの詳細なインフラストラクチャ図（GCP プロジェクト、VPC、Cell ごとのリソース）です。簡略化した概念図については、
+[Cells: アーキテクチャ概要](../_index.md#architecture-overview)を参照してください。
+
+現在の GitLab.com アーキテクチャ（Cells 導入前）は <https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/architecture/> で確認できます。
 
 ```plantuml
 @startuml
@@ -323,19 +326,19 @@ together {
 
 ### リング {#rings}
 
-`リング`は、プロビジョニングする Cell と既存のインフラストラクチャをどのようにグループ化するかというメンタルモデルの基礎となります。
+`Rings` は、プロビジョニングする Cell と既存のインフラストラクチャをどのようにグループ化するかというメンタルモデルの基礎となります。
 リングの内部には X 個の Cell があり、後続のリングはより多くの Cell を含み、フリート全体を段階的にカバーします。
 各リングは前のリングのスーパーセットになります。
 例えばリングゼロにはリングゼロの Cell のみが含まれ、
-リング 5 には `リング 5` の Cell とその前のすべてのリングが含まれます。
+リング 5 には `ring 5` の Cell とその前のすべてのリングが含まれます。
 変更は内側のリングから外側のリングへと段階的にカスケードします。
-例えば変更が `リング 5` に達した場合、リング 4、3、2、1 にも達しています。
+例えば変更が `ring 5` に達した場合、リング 4、3、2、1 にも達しています。
 
-どのタイプのロールアウトも `リング 0` から始まり、変更が成功すれば後続のリングに移行します。
+どのタイプのロールアウトも `ring 0` から始まり、変更が成功すれば後続のリングに移行します。
 失敗した場合はロールアウトを停止でき、すべての顧客に影響を与えません。
 このような段階的なロールアウトにより、以下のメリットが得られます:
 
-1. 変更の爆発半径が小さくなり、すべての顧客に一度に影響を与えません。
+1. 変更の影響範囲が小さくなり、すべての顧客に一度に影響を与えません。
 1. 変更をロールアウトする方法に明確な境界があります。
 1. [ステージング](#staging)のような異なる環境を持つ必要がなくなり、すべての Cell が本番環境になります。
 1. 変更への信頼度が高まるほど、対象者が広がります。
@@ -343,23 +346,15 @@ together {
 ```plantuml
 @startuml
 
-skinparam frame {
-  borderColor<<Cells 1.0>> #0F9D58
-}
-
-skinparam frame {
-  borderColor<<Cells 1.5+>> #F4B400
-}
-
 left to right direction
 
-frame "Ring 3" <<cells 1.5+>> {
+frame "Ring 3" {
   component "01HWRY6Y73W6TW3BHC"
   component "01HWRY6Y740CZSBCGB"
   component "01HWRY6Y74AHZ0AFZ1"
   component "01HWRY6Y743018H2N7"
 
-  frame "Ring 2" <<Cells 1.0>> {
+  frame "Ring 2" {
     component "01HWRY6Y74HM0SKTZ9"
     component "01HWRY6Y74YZF5DX5C"
     component "01HWRY6Y74QYG7VV2Y"
@@ -371,8 +366,8 @@ frame "Ring 3" <<cells 1.5+>> {
     component "01HWRY6Y74AR5HHJ4H"
     component "01HWRY6Y743V5085XK"
 
-    frame "Ring 1" <<Cells 1.0>> {
-      frame "Ring 0" <<Cells 1.0>> {
+    frame "Ring 1" {
+      frame "Ring 0" {
         component "Canary stage" <<legacy>> as cny
         component "01HWRY6Y745RS405F6"
       }
@@ -385,7 +380,11 @@ frame "Ring 3" <<cells 1.5+>> {
 @enduml
 ```
 
-Protocells では、`ring 2` 内に最大 10 個の Cell を目標としています。
+Protocells では、[ADR 022](../decisions/022_ring_definition_for_protocells.md)でリングを定義しています：
+Ring 0 には QA Cell のみが含まれ、Ring 1 には最初のユーザー群にサービスを提供する 1 つ以上の Cells が含まれます。初回のロールアウトでは Ring 2 以降は計画されていません。
+Legacy Cell はリングの外にあり、独自のデプロイメントパイプラインを維持します。リングとの関係は順序のルールに限られます。変更は `gprd-cny` ステージより前に Ring 0 にデプロイし、`gprd` と並行して Ring 1 にデプロイします。Ring 1 へのデプロイには、Ring 0 の QA ジョブの成功が前提条件となります。
+いずれかのリングでデプロイメントや QA が失敗しても、Legacy Cell のステージへのデプロイメントはブロックされません。
+
 リング内の Cell 数は任意であり、そのサイズはまだ決定されていません。
 [公開リリース前に auto-deploy パッケージを適切にテストする](deployments.md#package-rollout-policy)必要性、
 セキュリティ修正のための本番ロールアウトの速度、
@@ -416,15 +415,15 @@ Cell 以外のインフラストラクチャには引き続き使用されます
 | ドメイン                           | オーナー                             | ブループリント                                                                 | 信頼度 |
 |----------------------------------|-----------------------------------|---------------------------------------------------------------------------|------------|
 | ルーティング                          | group::tenant scale               | [ブループリント](../http_routing_service.md)                                   | 👍         |
-| Cell コントロールプレーン               | group::Delivery/team::Foundations | To-Do                                                                     | 👎         |
-| Cell サイジング                      | team::Scalability-Observability   | [To-Do](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2838) | 👎         |
+| Cell コントロールプレーン               | group::Delivery/team::Foundations | 未対応                                                                     | 👎         |
+| Cell サイジング                      | team::Scalability-Observability   | [未対応](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2838) | 👎         |
 | CI ランナー                       | team::Scalability-Practices       | [ブループリント](runner.md)                                                    | 👎         |
 | データベース                        | team::Database Reliability        | [ブループリント](postgresql.md)                                                | 👍         |
 | デプロイメント                      | group::Delivery                   | [ブループリント](deployments.md)                                               | 👍         |
 | オブザーバビリティ                    | team::Scalability-Observability   | [ブループリント](observability.md)                                             | 👎         |
 | Cell アーキテクチャとツール    | team::Foundations                 | [ブループリント](cell_arch_tooling.md)                                         | 👍         |
-| プロビジョニング                     | team::Foundations                 | To-Do                                                                     | 👎         |
-| 設定管理/ロールアウト | team::Foundations                 | To-Do                                                                     | 👎         |
+| プロビジョニング                     | team::Foundations                 | 未対応                                                                     | 👎         |
+| 設定管理/ロールアウト | team::Foundations                 | 未対応                                                                     | 👎         |
 | 障害復旧                | team::Production Engineering       | [ブループリント](disaster_recovery.md)                                        | 👎         |
 
 ```plantuml
@@ -470,7 +469,7 @@ Cell の運用には複数のチームが参加しています。
 | エリア                                             | 機能                                                  | オーナー                          |
 |---------------------------------------------------|-----------------------------------------------------------|---------------------------------|
 | Dedicated ツールとの統合*                 |                                                           |                                 |
-|                                                   | リリースマネージャーのワークフローとの統合              | team::Delivery-Deployments      |
+|                                                   | Release Managers のワークフローとの統合              | team::Delivery-Deployments      |
 |                                                   | `Instrumentor` と `AMP` を使用したデプロイメントの仕組み       | team::Foundations               |
 |                                                   | Cell アプリケーションの参照アーキテクチャとオーバーレイ     | team::Ops                       |
 |                                                   | Cell のブートストラップ、ツール、および補助インフラストラクチャ | team::Ops                       |
@@ -490,7 +489,7 @@ Cell の運用には複数のチームが参加しています。
 |                                                   | フリートヘルスメトリクス                                       | team::Scalability-Observability |
 |                                                   | パッケージ状態                                            | team::Delivery-Deployments      |
 | インシデントライフサイクル管理                     |                                                           |                                 |
-|                                                   | エンジニア・オン・コールへのページング                                   | team::Ops                       |
+|                                                   | Engineer On Call へのページング                                   | team::Ops                       |
 |                                                   | インシデントツール                                          | team::Ops                       |
 | ネットワークエッジ                                      |                                                           |                                 |
 |                                                   | Web アプリケーションファイアウォール                                  | team::Foundations               |
@@ -498,18 +497,18 @@ Cell の運用には複数のチームが参加しています。
 |                                                   | 負荷分散とネットワーキング                             | team::Foundations               |
 |                                                   | レート制限                                             | team::Foundations               |
 
-> \* これらのアイテムは、SaaS プラットフォームとコアプラットフォームのさまざまなステークホルダーからの貢献が必要な場合があります。ステークホルダーはオーナーチームと顧客チームのニーズを満たすための適切なアライメントを確保するためにこの作業を緊密に連携すべきです。
+> \* これらのアイテムは、SaaS Platforms と Core Platform のさまざまなステークホルダーからの貢献が必要な場合があります。ステークホルダーはオーナーチームと顧客チームのニーズを満たすための適切なアライメントを確保するためにこの作業を緊密に連携すべきです。
 >
 > \*\* これらのアイテムは Cell 2.0 イテレーション後の検討事項です。
 
-これらの機能のユーザーは、リリースマネージャー、エンジニア・オン・コール、および Team:Ops です。
+これらの機能のユーザーは、Release Managers、Engineer On Call、および Team:Ops です。
 以下のリストは、これらのグループが Cell クラスターで実行できるタスクを定義しています:
 
-1. リリースマネージャー
+1. Release Managers
    - 境界内のデプロイメントの指揮
    - 「graduated」パッケージの宣言
    - 境界内のデプロイメントのロールバック
-1. エンジニア・オン・コール
+1. Engineer On Call
    - 失敗したデプロイメントのアラート受信
    - パッケージロールアウトの一時停止（次のリングへの到達を阻止）
    - 失敗したデプロイメントの調査の推進

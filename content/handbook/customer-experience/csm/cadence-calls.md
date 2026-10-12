@@ -1,11 +1,11 @@
 ---
 title: ケイデンスコール
 upstream_path: /handbook/customer-experience/csm/cadence-calls/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 2dbfc49e47c784740ced3e2c617530f365412492
+translated_at: "2026-10-12T00:04:07+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-09T17:05:37Z"
 ---
 
 追加の CSM 関連ハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-experience/csm/)をご覧ください。
@@ -14,14 +14,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## 概要
 
-CSM が信頼できるアドバイザーになり、アカウントの[健全性](/handbook/customer-experience/csm/health-score-triage/)を評価・向上させるための主要なツールのひとつが、顧客ケイデンスコールです。これは CSM と顧客チームがビジネスアウトカム、優先事項、イニシアティブの進捗、懸念事項について同期する機会であり、CSM が参加すべきと感じる他の GitLab チームメンバーを呼び込む絶好の機会でもあります（例えば、機能リクエストやロードマップを確認するためにプロダクトチームを招くなど）。
+CSM が信頼できるアドバイザーになり、アカウントの[健全性](/handbook/customer-experience/csm/health-score-triage/)を評価・向上させるための主要なツールのひとつが、顧客ケイデンスコールです。これは CSM と顧客チームがビジネスアウトカム、優先事項、イニシアティブの進捗、懸念事項について同期する機会であり、CSM が参加すべきと感じる他の GitLab チームメンバーを呼び込む絶好の機会でもあります（例えば、機能リクエストやロードマップを確認するために Product チームを招くなど）。
 
-ケイデンスコールは CSM エンゲージメントの重要な側面です。顧客の進化するニーズを継続的に把握し、GitLab が価値とアウトカムを提供していること、障壁を取り除き、Issue に対処し、フィードバックを収集し、関係を育み、顧客が引き続きポジティブな体験を持てるようにします。
+ケイデンスコールは CSM エンゲージメントの重要な側面です。顧客の進化するニーズを継続的に把握し、GitLab が価値とアウトカムを提供していること、障壁を取り除き、問題に対処し、フィードバックを収集し、関係を育み、顧客が引き続きポジティブな体験を持てるようにします。
 
 ## 頻度
 
 - **CSM**: ケイデンスコールはオンボーディング中は週次で行い、それ以外は顧客の具体的なニーズと顧客ライフサイクルのステージを考慮した上で、少なくとも隔週で行うべきです。
-- **スケール CSE**: スケール CSE の顧客には継続的なケイデンスコールは設定されません。顧客とのコールは、[スケール CSE の顧客ライフサイクル](/handbook/customer-experience/csm/segment/cse/#cse-operating-rhythm)で定義された主要なポイントに基づいてプログラム的に提供されます。
+- **Scale CSE**: Scale CSE の顧客には継続的なケイデンスコールは設定されません。CSE が割り当てられた顧客には四半期ごとにコールを提供し、Pooled の案件では必要に応じて随時提供します。
 
 ケイデンスコールは [Gainsight にキャプチャ](/handbook/customer-experience/csm/gainsight/timeline/#how-to-log-activities-in-timeline)し、[エンゲージメントスコアカード指標を促進](/handbook/customer-experience/csm/health-score-triage/)します。
 
@@ -41,11 +41,11 @@ CSM が信頼できるアドバイザーになり、アカウントの[健全性
   - 顧客が計画外のトピックや質問を持ち込めるスペースを残しておく
 - まとめと次のステップ
 
-コラボレーションプロジェクトテンプレートには、このフォーマットに従って構成された[ミーティングアジェンダ Issue テンプレート](https://gitlab.com/gitlab-com/account-management/templates/customer-collaboration-project-template/-/blob/master/.gitlab/issue_templates/Meeting%20Agenda.md)が含まれています。（注: スケール CSM の顧客はコラボレーションプロジェクトを使用しません）
+コラボレーションプロジェクトテンプレートには、このフォーマットに従って構成された[ミーティングアジェンダ Issue テンプレート](https://gitlab.com/gitlab-com/account-management/templates/customer-collaboration-project-template/-/blob/master/.gitlab/issue_templates/Meeting%20Agenda.md)が含まれています。（注: Scale CSM の顧客はコラボレーションプロジェクトを使用しません）
 
 ケイデンスコールのトピックと名称（顧客に招待状を送る際）も CSM エンゲージメントの重要な部分です。以下はケイデンスコールに使用されてきた名称で、成功事例として推奨されます。人気順に記載します:
 
-- "GitLab / <顧客名> CSM コール"
+- "GitLab / <CUSTOMER_NAME> CSM コール"
 - "GitLab - 隔週コラボレーション"（頻度に応じて調整）
 - "GitLab - CSM コール"
 
@@ -91,7 +91,7 @@ CSM が信頼できるアドバイザーになり、アカウントの[健全性
 - 月次リリースについて話し合い、計画したアップグレードの頻度について確認し、[メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)について知らせる
 - [リファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/)についてお知らせし、これらがサポートされている唯一のアーキテクチャであることを伝える
   - 現在および予想されるユーザー数について確認し、アーキテクチャが将来の成長に対応できる適切なスケールであることを確認する
-- [GitLab パフォーマンスツール](https://gitlab.com/gitlab-org/quality/performance)についてお知らせする
+- [GitLab Performance Tool](https://gitlab.com/gitlab-org/quality/performance)についてお知らせする
 - [スケールアーキテクチャのサポートオファリング](https://about.gitlab.com/support/definitions/#definition-of-scaled-architecture)についてお知らせする
 - アーキテクチャ図を提供してもらい、コラボレーションプロジェクトにアップロードするよう依頼する
 - 顧客が[バックアップ/リストア](https://docs.gitlab.com/ee/administration/backup_restore/index.html)とディザスタリカバリの計画を持っていることを確認する
@@ -105,7 +105,7 @@ CSM はコールを積極的に推進し、顧客がコールに価値を感じ�
 [GitLab 外部コミュニケーションガイドライン](/handbook/communication/#external-communication)に加えて、強力なケイデンスコールを行うためのいくつかのヒントを以下に示します:
 
 - **積極的に参加する。** [GitLab ではミーティング中のマルチタスクや注意の分散は許容される](/handbook/communication/)ですが、ケイデンスコールではそれは良くありません。CSM がこのコールをリードしており、割り当てられた時間を最大限に活用するために話し合われている内容に従い、会話を進め続けることが重要です。CSM はディスカッションをガイドし、[メモを取る](#cadence-call-notes)必要があります（または、すでに[アカウントチーム](/handbook/customer-experience/account-team/)の別のメンバーにメモ担当を依頼している）。
-- **柔軟に対応する。** アジェンダは適切に運営されたケイデンスコールに不可欠ですが、台本から外れる準備も同様に重要です。顧客が緊急に話し合う必要があること、または価値ある情報が得られる可能性のある方向に会話が流れた場合、準備したアジェンダに無理に戻そうとしないでください。顧客の懸念に対処し、関連する質問で新しい情報を受け入れ、重要でないアジェンダ項目は次のケイデンスコールまで延期できます。これは顧客との会話で[「聞く準備ができている」](/handbook/sales/command-of-the-message/#overview)状態に関係しています。
+- **柔軟に対応する。** アジェンダは適切に運営されたケイデンスコールに不可欠ですが、台本から外れる準備も同様に重要です。顧客が緊急に話し合う必要があること、または価値ある情報が得られる可能性のある方向に会話が流れた場合、準備したアジェンダに無理に戻そうとしないでください。顧客の懸念に対処し、関連する質問で新しい情報を受け入れ、重要でないアジェンダ項目は次のケイデンスコールまで延期できます。これは顧客との会話で[「状況に応じて柔軟に対応できる」](/handbook/sales/command-of-the-message/#overview)状態に関係しています。
 - **素早く対応する。** CSM と[アカウントチーム](/handbook/customer-experience/account-team/)がどれほど準備していても、顧客は予想外の質問をすることがあります。誰もコール中に知らない情報を求められた場合は、正直にそれを認め、その情報を入手して[フォローアップする](#after-the-call)計画を立ててください。質問に答えられると思う場合は努力しつつ、最善の答えを確認することも保証してください。その場でできる最善を尽くし、[その他のことは適時フォローアップしてください](#after-the-call)。
 
 コールを終える前に、数分間かけて話し合った内容のハイライトをまとめ、行動項目とそれぞれの担当者を確認してください。*次回*のケイデンスコールがいつあるかも全員に思い出させる価値があります。
@@ -131,7 +131,7 @@ CSM はコールを積極的に推進し、顧客がコールに価値を感じ�
 
 顧客へのフォローアップメッセージを作成する際は、ポジティブな体験を確保するために以下のガイドラインに従ってください。
 
-1. フォローアップメールを送るか、コールから 1 営業日以内にフォローアップ Issue をオープンするよう努めてください。それ以上かかる場合は、顧客に事前に期待値を設定し、進捗を（たとえ何もなくても）報告してください。
+1. フォローアップメールの送信やフォローアップ Issue の起票は、できるだけ早く、遅くともコールから 1 営業日以内に行うよう努めてください。それ以上かかる場合は、顧客に事前に期待値を設定し、進捗を（たとえ何もなくても）報告してください。
 1. すべての行動項目に対応し、まだ更新がない場合は取り組んでいること及び見込み所要時間を知らせてください。
 1. 顧客は長いメールを読みたくない可能性があるため、メール/Issue はできる限り簡潔にしてください。
 1. 可能な限りリンクを共有してください。ただし、以下に注意してください。
@@ -143,21 +143,21 @@ CSM はコールを積極的に推進し、顧客がコールに価値を感じ�
 
 ## ケイデンスコールメモ {#cadence-call-notes}
 
-すべての顧客コールのメモは、次の形式に従って [Google ドライブに保存](https://drive.google.com/drive/folders/0B-ytP5bMib9Ta25aSi13Q25GY1U)してください: `/Sales/Customers & Prospects/A/Acme/Acme - Meeting Notes`。[ミーティングメモの例はこちら](https://docs.google.com/document/d/1dAcHBqoRTY6qqSw27VQstCCnk5Fxc2oIsbpKs014h3g)をご覧ください。数年来の顧客など長いメモドキュメントを持つ顧客については、顧客フォルダ内で会計年度ごとに別々のドキュメントに分割することをお勧めします。その際、ドキュメントタイトルに会計年度を追加してください（例: `/Sales/Customers & Prospects/A/Acme/Acme - Meeting Notes - FYXX`）。また、現在のメモドキュメントの先頭に過去の年度のドキュメントへのリンクをすべて貼り付けて、簡単にアクセスできるようにしてください。
+すべての顧客コールのメモは、次の形式に従って [Google Drive に保存](https://drive.google.com/drive/folders/0B-ytP5bMib9Ta25aSi13Q25GY1U)してください: `/Sales/Customers & Prospects/A/Acme/Acme - Meeting Notes`。[ミーティングメモの例はこちら](https://docs.google.com/document/d/1dAcHBqoRTY6qqSw27VQstCCnk5Fxc2oIsbpKs014h3g)をご覧ください。数年来の顧客など長いメモドキュメントを持つ顧客については、顧客フォルダ内で会計年度ごとに別々のドキュメントに分割することをお勧めします。その際、ドキュメントタイトルに会計年度を追加してください（例: `/Sales/Customers & Prospects/A/Acme/Acme - Meeting Notes - FYXX`）。また、現在のメモドキュメントの先頭に過去の年度のドキュメントへのリンクをすべて貼り付けて、簡単にアクセスできるようにしてください。
 
 このようにコールメモを保存する理由は以下のとおりです:
 
-- 命名規則「`顧客名` - Meeting Notes」は [Google Cloud Search for Work](https://cloudsearch.google.com/) を使った高速検索を可能にします。
-- コールメモには機密情報が頻繁に含まれており、必要とする可能性のある人全員が見つけられる場所に保管される必要があります。
-- フォルダ構造により、カスタマーサクセス以外のエグゼクティブやサポートスタッフがエスカレーション時にメモを簡単に見つけられます。
+- 命名規則「`Customer` - Meeting Notes」は [Google Cloud Search for Work](https://cloudsearch.google.com/) を使った高速検索を可能にします。
+- コールメモには機密情報が頻繁に含まれており、社内の Sales チームと経営陣が確認するものなので、アクセスを必要とする可能性のある人全員が見つけられる場所に保管する必要があります。
+- フォルダ構造により、Customer Success 以外のエグゼクティブやサポートスタッフがエスカレーション時にメモを簡単に見つけられます。
 - コールメモは[健全性スコア](/handbook/customer-experience/csm/health-score-triage/)と密接に関連しており、Gainsight の健全性スコアカードと同じ場所で参照できる必要があります。
-- Gainsight へのアクセスは CSM に限られているため、Sales とカスタマーサクセス組織の他のメンバーは Google ドライブでメモを探します。
-- Google Doc を作成したチームメンバーが GitLab を離れた場合でも、共有 Google ドライブフォルダに保存されているためメモは全員がアクセスできます。
+- Gainsight へのアクセスは CSM に限られているため、Sales と Customer Success 組織の他のメンバーは Google Drive でメモを探します。
+- Google Doc を作成したチームメンバーが GitLab を離れた場合でも、共有 Google Drive フォルダに保存されているためメモは全員がアクセスできます。
 - メモを会計年度ごとに別々のドキュメントに分割することで、ドキュメントの読み込みと入力の遅さを避け、データをより効果的に解析できます。
 
 顧客コールメモは、アカウントの C360 の「サマリー」タブ「アカウント属性（編集可能）」セクションの「Google ドキュメントメモ」フィールドにも常にリンクしてください。
 
-CSM が Gainsight の[タイムライン](/handbook/customer-experience/csm/gainsight/timeline/)にコールをログ記録する際には、Google ドキュメントへのリンクをコピー＆ペーストする必要があります。コール日付へのディープリンクとするか、コールの簡単なサマリーと共にリンクを記載し、努力の重複を避けてください。
+CSM が Gainsight の[タイムライン](/handbook/customer-experience/csm/gainsight/timeline/)にコールをログ記録する際には、Google Doc へのリンクをコピー＆ペーストする必要があります。コール日付へのディープリンクとするか、コールの簡単なサマリーと共にリンクを記載し、努力の重複を避けてください。
 
 各顧客コールの終わりに、顧客の健全性への変更を顧客の Gainsight アカウントに反映させてください。[CSM センチメントとプロダクトリスクの判断](/handbook/customer-experience/csm/health-score-triage/)に記載されているように、アカウントの健全性スコアの CSM センチメントとプロダクトセンチメントを更新する方法はいくつかあります。最も簡単なのは、コールをログ記録する際に直接更新することです。
 
@@ -169,7 +169,7 @@ CSM が Gainsight の[タイムライン](/handbook/customer-experience/csm/gain
 - コールの会話をゆっくりにする練習をしてください。数秒間話を止めて「書き留めます」と言うことは、顧客に彼らが言ったことが重要であることを伝えます。
 - SAE/AE/SA に一緒にメモを取るよう依頼してください。ミーティング後にメモを合体させて詳細を追加してください。
 - [Chorus](/handbook/business-technology/tech-stack/#chorus) を使用してコールを録音し、すべてを書き留めるプレッシャーを軽減してください。
-- [アカウントチーム](/handbook/customer-experience/account-team/)の誰かが Chorus でコールをスクリプト化するために振り返ることが理にかなっている場合もあります。
+- [アカウントチーム](/handbook/customer-experience/account-team/)の誰かが Chorus でコールを文字起こしするために聞き返すことが理にかなっている場合もあります。
 - 最も書きやすい方法でメモを取り、常に正式なミーティングメモドキュメントにコピーしてください。最初からそこに直接書けば、より効率的で一貫性があり、アカウントチームがリアルタイムで追いかけられます。
 
 ## ケイデンスコールのトピック {#cadence-call-topics}
