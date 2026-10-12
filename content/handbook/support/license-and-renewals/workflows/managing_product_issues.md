@@ -32,7 +32,7 @@ Zendesk チケットの作業中にプロダクト問題に遭遇した場合、
 - Fulfillment Product Management が、各新規 Issue を割り当てる適切なセクションと PM を決定します。
 - 高優先度の Issue が十分に迅速に対応されていないと感じる場合は、L&R Support の [Regional DRI](/handbook/support/license-and-renewals/#support-management-contacts) のいずれかに連絡してください。
 
-### Fulfillment 向けの Support Issue リスト
+### Fulfillment 向けの Support Issue リスト {#supports-issue-list-for-fulfillment}
 
 Support と Fulfillment のチームは、Support にとって関心のある Issue と Epic に優先順位を付けて管理するために、1 つの Epic ボードと 2 つの Issue ボードを組み合わせて使用しています。これらは集合的に `Support's Issue List for Fulfillment` と考えることができます。
 

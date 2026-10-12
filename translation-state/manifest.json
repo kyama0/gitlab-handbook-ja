@@ -6050,11 +6050,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T02:52:48+00:00",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "translated_at": "2026-10-11T23:57:10+00:00",
       "model": "codex",
-      "input_hash": "f0466ed8319571abee4766caa0ebabf147994e2cc3a8d3645ed121ccaf1946c4",
-      "upstream_committed_at": "2026-09-16T14:23:05-10:00"
+      "input_hash": "542c1e30083594855b55b3b28165873ce21f4a1165c5170f5291706143f00b45",
+      "upstream_committed_at": "2026-10-12T12:09:42+13:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md",
@@ -6554,11 +6554,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/infrastructure/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/infrastructure/_index.md",
-      "upstream_sha": "06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9",
-      "translated_at": "2026-09-30T21:09:44+00:00",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "translated_at": "2026-10-11T23:57:10+00:00",
       "model": "codex",
-      "input_hash": "7eba270cc8f3a6a150a81008b15c0918d532dd033c6c5bd2f055a50f2c2fc5d9",
-      "upstream_committed_at": "2026-09-29T10:30:26+02:00"
+      "input_hash": "4dac4ba73265bc5e6226522a68ec7aa1e48d97b8d6e4a42d6d8adfb928aa0b8c",
+      "upstream_committed_at": "2026-10-12T12:09:42+13:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/infrastructure/cell_arch_tooling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/infrastructure/cell_arch_tooling.md",
@@ -39466,11 +39466,11 @@
     },
     "content/handbook/customer-experience/csm/cadence-calls.md": {
       "path": "content/handbook/customer-experience/csm/cadence-calls.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:04:07+00:00",
       "model": "codex",
-      "input_hash": "fd11b8e76c5b67032acd86a75e482e401784900d1a61e12289637bf096cd40cf"
+      "input_hash": "c463c5a7895c82fbd34aa2ebb44649c4b7afd5b5b34f76e8071872288a20ec3b"
     },
     "content/handbook/customer-experience/csm/stage-adoption.md": {
       "path": "content/handbook/customer-experience/csm/stage-adoption.md",
@@ -40074,11 +40074,11 @@
     },
     "content/handbook/customer-experience/csm/segment/cse/_index.md": {
       "path": "content/handbook/customer-experience/csm/segment/cse/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:04:07+00:00",
       "model": "codex",
-      "input_hash": "0115cdbdf9d289755a04f242fc4e62e07dde2d86a8c669bab5fa6e637a8fe0fe"
+      "input_hash": "96e2cfe427fe9a8885f9f09bf0e8d1a6a23ff644375c8a69c99d2856b89d8b67"
     },
     "content/handbook/customer-experience/csm/segment/cse/cse-tm-onboarding.md": {
       "path": "content/handbook/customer-experience/csm/segment/cse/cse-tm-onboarding.md",
@@ -40114,11 +40114,11 @@
     },
     "content/handbook/customer-experience/csm/segment/cse/csm-to-cse-handover.md": {
       "path": "content/handbook/customer-experience/csm/segment/cse/csm-to-cse-handover.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:04:07+00:00",
       "model": "codex",
-      "input_hash": "7c6dc0c2d561c61570d521eaba1a888087e53c0b8e65af9157c52b0611d9e3b3"
+      "input_hash": "a74f244a290571a8a5bd626e183a6f876d93b1ddd7320c564e59f0daffe3dfa4"
     },
     "content/handbook/customer-experience/renewals-managers/how.md": {
       "path": "content/handbook/customer-experience/renewals-managers/how.md",
@@ -40239,6 +40239,126 @@
       "model": "codex",
       "input_hash": "d2af851325bf88870bf641ff7d27ffe13accfb964360332bab218565104fd5c4",
       "upstream_committed_at": "2026-10-05T13:04:47-07:00"
+    },
+    "content/handbook/engineering/development/monetization/_index.md": {
+      "path": "content/handbook/engineering/development/monetization/_index.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00",
+      "translated_at": "2026-10-11T23:57:10+00:00",
+      "model": "codex",
+      "input_hash": "d5620fdec1484fad036879fded64296f462eb5c2d3559e911f2a3d37345bc810"
+    },
+    "content/handbook/engineering/development/fulfillment-monetization/_index.md": {
+      "path": "content/handbook/engineering/development/fulfillment-monetization/_index.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-01T08:11:54+02:00",
+      "translated_at": "2026-10-11T23:57:10+00:00",
+      "model": "codex",
+      "input_hash": "f7325ad078f4d068183fb4e026aff2bdd7459f2080ce7167d7281d397afc4e59"
+    },
+    "content/handbook/support/knowledge-base/article-creation-workflow.md": {
+      "path": "content/handbook/support/knowledge-base/article-creation-workflow.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-07T13:14:40+01:00",
+      "translated_at": "2026-10-11T23:57:10+00:00",
+      "model": "codex",
+      "input_hash": "8ecce0381d4465b3b9d54485aafd80fecde9f5334ad8a769052e749d757cf1b0"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/pooled/_index.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/pooled/_index.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:04:07+00:00",
+      "model": "codex",
+      "input_hash": "017302b0a45666871ea0c998914411ebebb66df76637154fc77e4eeba6f78ad7"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/pooled/offerings.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/pooled/offerings.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:04:07+00:00",
+      "model": "codex",
+      "input_hash": "a6df4c9e9ed5a50af74b827fb4277bf5a1301cbb41a4fa73a62fb1b013a2d597"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-assigned/_index.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned/_index.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:08:52+00:00",
+      "model": "codex",
+      "input_hash": "e1e66838db63c7c394b18c09ca4077174b3d53763d583a031b64cd55a20590bf"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-assigned/assessments-ctas.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned/assessments-ctas.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:08:52+00:00",
+      "model": "codex",
+      "input_hash": "a43505d52172e9036da0602bba1b030ef46bf1fdda6d0fbb9ae9c3e46f974860"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-assigned/engagement.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned/engagement.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:08:52+00:00",
+      "model": "codex",
+      "input_hash": "d5a78714fd0325c10dd06bbc5f0c70d204684dc6dcee46ab19dcb2a12a7042fd"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-assigned/roles-responsibilities.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned/roles-responsibilities.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:08:52+00:00",
+      "model": "codex",
+      "input_hash": "0b94d1a20a7d0dde94de53378bc7c6bc8ed34dfd490900a6a062a9c5eff7f011"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/cse-assigned/scope.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned/scope.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:08:52+00:00",
+      "model": "codex",
+      "input_hash": "fc0e9f68986822640ac3ceb85f45f2e80637262d8234b8d86166f8a89566f149"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/customer-onboarding/_index.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/customer-onboarding/_index.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:15:24+00:00",
+      "model": "codex",
+      "input_hash": "24b943f4a204611a12c5416007b98ab31dc13724a1a883126e255a1593ce5bc3"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/team-member-onboarding.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/team-member-onboarding.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:15:24+00:00",
+      "model": "codex",
+      "input_hash": "da3c300ed911058eb639de30ff5073cad37d5e9e5496b6f3e895c0a25dc613a4"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/customer-engagements.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/customer-engagements.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:15:24+00:00",
+      "model": "codex",
+      "input_hash": "530fb5f17de7f4b5dc8666ca05350aca49e09d27b12a0187fe5928d7a03a0eb0"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/day-in-the-life.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/day-in-the-life.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:15:24+00:00",
+      "model": "codex",
+      "input_hash": "41bf580df687ce998e5d379e263d67794a4968d3287ad7dbf0f52b8c10b5fe19"
+    },
+    "content/handbook/customer-experience/csm/segment/cse/webinars-and-labs.md": {
+      "path": "content/handbook/customer-experience/csm/segment/cse/webinars-and-labs.md",
+      "upstream_sha": "2dbfc49e47c784740ced3e2c617530f365412492",
+      "upstream_committed_at": "2026-10-09T17:05:37Z",
+      "translated_at": "2026-10-12T00:15:24+00:00",
+      "model": "codex",
+      "input_hash": "ac26eef70eb3d80df9cfc94bb2271ba7a7c191c9276c891be8a6bb86e69e9b25"
     }
   }
 }

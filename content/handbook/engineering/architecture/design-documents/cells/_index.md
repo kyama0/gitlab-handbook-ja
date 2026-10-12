@@ -9,10 +9,10 @@ owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
 no_list: true
-upstream_path: /handbook/engineering/architecture/design-documents/cells/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-16T14:23:05-10:00"
-translated_at: "2026-09-20T02:52:48+00:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/cells/"
+upstream_sha: "2dbfc49e47c784740ced3e2c617530f365412492"
+lastmod: "2026-10-12T12:09:42+13:00"
+translated_at: "2026-10-11T23:57:10+00:00"
 translator: codex
 stale: false
 ---
@@ -154,6 +154,8 @@ Organizations をまたぐ操作の例:
 
 ## アーキテクチャ概要 {#architecture-overview}
 
+これは Cells アーキテクチャの概念図です。インフラストラクチャの詳細図（GCP プロジェクト、VPC、Cell ごとのリソース）については、[Cells: インフラストラクチャのアーキテクチャ](infrastructure/_index.md#architecture)を参照してください。
+
 ```plantuml
 @startuml
 
@@ -188,7 +190,7 @@ node "GitLab Inc. Infrastructure" {
           [gitlab_main_org] as Cell_PSQL_gitlab_main_org
         }
 
-        PC_PSQL_main -[hidden]-> Cell_PSQL_ci
+        Cell_PSQL_main -[hidden]-> Cell_PSQL_ci
       }
 
       frame "Redis Cluster" as Cell_Redis {
@@ -205,8 +207,6 @@ node "GitLab Inc. Infrastructure" {
 
 }
 
-CF_RSW --> Cell_Puma
-CF_RSW --> Cell_Registry
 CF_RSW --> Cell_Puma
 CF_RSW --> Cell_Registry
 CF_RSW --> TS
@@ -351,6 +351,8 @@ Cells は [the tissue](https://ops.gitlab.net/gitlab-com/gl-infra/cells/tissue/-
 3. GET がインフラをデプロイし、プロビジョニングされた Kubernetes Cluster に GitLab をインストールするために [`Helm Installation`](https://docs.gitlab.com/install/install_methods/#helm-chart)を使用します。
 
 このアプローチは、ステージングおよび本番環境において [Kubernetes ワークロード](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com)を経由して既存のレガシー Cell インフラに GitLab をデプロイする方法と整合しています。
+
+ここで説明しているのは、新しい Cell のプロビジョニングです。その後、既存の Cells にコード変更をロールアウトする方法については、[Cell ベースのアーキテクチャでのアプリケーションのデプロイメント](infrastructure/deployments.md)を参照してください。
 
 > [!note]
 > これは高レベルの概要です。より詳細については、[Dedicated アーキテクチャドキュメント](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/architecture/Architecture.html)を参照してください。

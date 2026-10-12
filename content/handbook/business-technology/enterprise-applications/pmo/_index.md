@@ -73,7 +73,7 @@ IT EntApps ポートフォリオの計画・優先順位付けプロセスには
 - リリースの一貫性と予測可能性を維持する。
 - 変更内容を定期的かつ透明に伝達する。
 
-### リリースカレンダー
+### リリースカレンダー {#release-calendar}
 
 ![it-pmo](/images/handbook/entapps/release-calendarfy27.png)
 
