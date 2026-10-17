@@ -3,9 +3,9 @@ title: "サスペンド可能な環境：Kubernetes エグゼキューター"
 owning-stage: "~devops::verify"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/runner_suspendable_environments/kubernetes/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-06-29T14:59:05+05:30"
-translated_at: "2026-07-10T20:28:00+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-14T09:05:18+05:30"
+translated_at: "2026-10-17T08:39:16+00:00"
 translator: codex
 stale: false
 ---
@@ -14,7 +14,7 @@ stale: false
 
 共有設計（環境キーの形式、セキュリティモデル、未解決の質問）については、[メインのブループリント](_index.md)を参照してください。Fleeting ベースの実装（Instance と Docker Autoscaler）については、[fleeting.md](fleeting.md)を参照してください。
 
-## アーキテクチャ
+## アーキテクチャ {#architecture}
 
 エントリーポイントスクリプトは、下位レイヤーにコンテナのベースイメージ（読み取り専用）を使用し、上位ディレクトリと作業ディレクトリを `/persist` にマウントされた PVC 上に配置した overlayfs をマウントします。overlay のマウント後、スクリプトは `/proc`、`/sys`、`/dev`、`/persist`、および kubelet が注入する `/etc/resolv.conf`、`/etc/hosts`、`/etc/hostname` をマージ済みツリーにバインドマウントし、`pivot_root` でマージ済みツリーをマウント名前空間の新しいルートにして、古いルートをアンマウントします。スクリプト自体は Kubernetes ConfigMap に格納されます。Runner は環境ごとに PVC とともに ConfigMap を作成し、両者は同じライフサイクルを共有します。その環境のすべての Pod（初回実行、サスペンド、再開）は ConfigMap を `/scripts` にマウントし、そのスクリプトをコマンドとして実行します。`/persist` と `/scripts` はどちらも Pod の起動時に kubelet によってマウントされるため、overlay のセットアップを実行する前からエントリーポイントで利用できます。
 
@@ -44,9 +44,9 @@ stale: false
 - **プロセス状態は保持されない** - ライブプロセス、メモリ、開いているファイルディスクリプタではなく、rootfs を保持します。再開時にはジョブスクリプトが最初から再実行されます。実行中の作業をチェックポイントすること（エージェントの状態ファイル、ビルドキャッシュなど）はユーザーの責任です。
 - **イメージの一貫性はユーザーとの契約であり、Runner による強制ではない** - overlay の上位ディレクトリは、再開するジョブが指定したベースイメージ上に重ねられます。そのため、イメージドリフト（タグの変更、または同じタグをレジストリで再ビルドしたことにより、再開時のイメージがサスペンド時に使用したイメージと異なること）があると、わかりにくいランタイム障害が発生する可能性があります。エントリーポイントは再開時にドリフトを検出してジョブログに警告を出しますが、再開を拒否しません。運用経験に基づいて、より強力な緩和策（ダイジェストの自動解決、不一致時の再開の強制失敗）を将来の機能強化として検討する可能性があります。
 
-## サスペンド/再開フロー
+## サスペンド/再開フロー {#suspendresume-flow}
 
-### サスペンド
+### サスペンド {#suspend}
 
 ```mermaid
 sequenceDiagram
@@ -61,7 +61,7 @@ sequenceDiagram
     Note over K: compute released, PVC persists
 ```
 
-### 再開
+### 再開 {#resume}
 
 ```mermaid
 sequenceDiagram
@@ -78,11 +78,11 @@ sequenceDiagram
     Note over R: full rootfs preserved, job runs against prior state
 ```
 
-## GitLab Runner
+## GitLab Runner {#gitlab-runner}
 
 GitLab Runner のすべての新しい変更は、フィーチャーフラグ `FF_SUSPENDABLE_ENVIRONMENTS` の背後に置かれます。
 
-### エグゼキューターのサスペンド/再開インターフェース
+### エグゼキューターのサスペンド/再開インターフェース {#executor-suspendresume-interface}
 
 Kubernetes エグゼキューターは、Fleeting ベースのエグゼキューターが使用するものと同じ `SuspendableExecutor` インターフェースを実装します。
 
@@ -97,6 +97,9 @@ type SuspendableExecutor interface {
     // Resume rebuilds the workload state from the fields produced by a prior
     // Suspend call.
     Resume(ctx context.Context, fields url.Values) error
+    // Release removes what Suspend preserved. The cleanup loop calls it, possibly after a
+    // restart and with no job attached, with the fields it has for the environment.
+    Release(ctx context.Context, fields url.Values) error
 }
 
 // EnvironmentKey identifies a suspended environment. The runner produces it
@@ -114,7 +117,7 @@ type EnvironmentKey struct {
 
 Kubernetes の場合、`Suspend` は `url.Values{"namespace": []string{ns}, "pvc": []string{pvcName}}` を返し、Runner はそれらを出力する `EnvironmentKey.Fields` に配置します。
 
-### ジョブ完了時のサスペンド
+### ジョブ完了時のサスペンド {#suspension-on-job-completion}
 
 サスペンド時、エグゼキューターは次の処理を行います。
 
@@ -122,22 +125,23 @@ Kubernetes の場合、`Suspend` は `url.Values{"namespace": []string{ns}, "pvc
 1. Runner ID、system ID、名前空間、PVC 名を使用して環境キーを構成します。
 1. 環境キーをジョブアーティファクトとして出力します。
 
-### ジョブディスパッチ時の再開
+### ジョブディスパッチ時の再開 {#resume-on-job-dispatch}
 
 再開時、エグゼキューターは次の処理を行います。
 
 1. キーから名前空間と PVC 名を解析します。
+1. PVC の経過時間を確認し、TTL を超えていれば、環境が利用できないことを理由にジョブを失敗させます。
 1. 再開するジョブに設定されたイメージを使用して新しい Pod を作成し、既存の PVC を `/persist` に、エントリーポイント ConfigMap を `/scripts` にマウントします。Pod のコマンドはエントリーポイントを指し、Runner は再開するイメージの参照をエントリーポイントに渡して、前回の実行からのドリフトを検出できるようにします。
 1. その後、Pod 内の処理はエントリーポイントが引き継ぎます。再開するイメージが前回の実行で使用したものと異なるかどうかを検出し、異なる場合は stdout に警告を出力します（以前の参照が存在しない初回実行時はスキップします）。続いて、PVC 上の上位ディレクトリに overlay をマウントし、マージ済みツリーに `pivot_root` して、ジョブコマンドを exec します。
 1. Pod が実行中かつ準備完了になるまで待機します。
 
-### 環境キーのフィールド
+### 環境キーのフィールド {#environment-key-fields}
 
 | エグゼキューター | キー形式 |
 |---|---|
 | Kubernetes | `<runner-id>/<system-id>/namespace=<ns>&pvc=<pvc-name>` |
 
-### PVC のライフサイクル
+### PVC のライフサイクル {#pvc-lifecycle}
 
 - **作成**: 最初のジョブが開始され、既存の環境が参照されていない場合、Runner はサスペンド可能な環境ごとに PVC と付随するエントリーポイント ConfigMap（overlay セットアップスクリプトを含む）を動的に作成します。PVC はクラスタのデフォルトの StorageClass または設定された StorageClass を使用します。2 つのリソースはライフサイクルを共有します。初回実行時に一緒に作成され、サスペンドと再開をまたいで一緒に保持され、環境の破棄時に一緒に削除されます。
 - **PVC 上のレイアウト**: PVC は `/persist` にマウントされ、次の内容を含みます。
@@ -145,38 +149,51 @@ Kubernetes の場合、`Suspend` は `url.Values{"namespace": []string{ns}, "pvc
   - `work/` - overlayfs の管理情報。マウントのたびに再作成されます。
   - `merged/` - pivot 中に使用される overlay のマウントポイント。
   - `.image-tag` - 上位ディレクトリの作成元となったイメージ参照（タグとダイジェスト）を記録します。
-- **保持**: PVC と付随する ConfigMap は、Pod を削除しても保持されます。明示的に環境を終了した場合（TTL の期限切れまたは明示的な解放）にのみ削除されます。
+- **保持**: PVC と付随する ConfigMap は、Pod を削除しても保持されます。明示的に環境を終了した場合（TTL の期限切れまたは明示的な解放）にのみ削除されます。[環境のクリーンアップ](#environment-cleanup)を参照してください。
 - **StorageClass の要件**: StorageClass は `ReadWriteOnce` アクセスモードと動的プロビジョニングをサポートする必要があります。これは事実上すべての Kubernetes クラスタ（GKE Persistent Disk、EKS EBS、AKS Managed Disk、local-path-provisioner など）で利用できます。ノードをまたいで再開するには、`ReadWriteMany` StorageClass（NFS、CephFS）が必要です。
 
-## 障害モード
+## 環境のクリーンアップ {#environment-cleanup}
+
+Runner は PVC を作成するときに、自身の Runner ID をラベル `environment.runner.gitlab.com/runner-id` として付けます。同じ登録に属するすべてのマネージャーはこの ID を共有し、トークンをローテーションしても ID は変わりません。`NamespacePerJob` を使用する場合、PVC の作成後に名前空間にも同じラベルを付けるため、セットアップ中の名前空間をループが削除することはありません。PVC の作成タイムスタンプが環境の作成時刻であるため、他には何も記録しません。
+
+すべてのランナーマネージャーが定期的にクリーンアップループを実行します。自身の Runner ID のラベルが付いた PVC を一覧表示します。TTL を超え（[Runner の TTL](_index.md#runner-ttl)を参照）、どの Pod もマウントしていない PVC ごとに、エグゼキューターの `Release` を呼び出し、PVC とその ConfigMap を削除します。名前空間の Pod 一覧でマウント中の Pod を確認するため、TTL を超えて実行されるジョブも、ストレージを保持したまま完了します。ラベルが付いた名前空間は、PVC がなくなると削除されます。TTL 経過後にループが待機することで、経過時間のチェックを通過した再開処理が Pod をスケジュールする時間を確保します。Pod がスケジュールされると、その Pod が PVC を保持します。
+
+通常、1 つの登録を複数のマネージャーが担当し、どのマネージャーもクリーンアップできるため、PVC を作成したマネージャーがなくなってもクリーンアップは機能し続けます。Runner ID は GitLab インスタンスごとに割り当てられるため、異なる 2 つのインスタンスの Runner は同じ名前空間を共有してはならず、`NamespacePerJob` が有効な場合は同じクラスタを共有してはなりません。登録が削除された場合、その PVC は運用者が削除するまで残ります。同じ登録の 2 つのマネージャーが同じ PVC を削除しようとする場合があります。削除時の `NotFound` は成功と見なします。
+
+クリーンアップループには、エグゼキューターの名前空間での PersistentVolumeClaims に対する `list` と `delete`、ConfigMaps に対する `delete` が必要です。その名前空間での Pod の `list` は、すでにエグゼキューターのドキュメントに記載された RBAC に含まれています。`NamespacePerJob` を使用する場合、PVC はジョブごとの名前空間に存在するため、Pods に対する `list` を含むこれらの権限と、Namespaces に対する `list` と `delete` がクラスタ全体で必要です。これらは、エグゼキューターのドキュメントに記載された RBAC に追加する権限です。
+
+## 障害モード {#failure-modes}
 
 | 障害 | 挙動 |
 |---|---|
-| 再開時に PVC が見つからない | 再開時、Runner はジョブを失敗させます。 |
+| 再開時に PVC が見つからない | 再開時、Runner は環境が利用できないことを理由にジョブを失敗させます。 |
 | StorageClass が動的プロビジョニングをサポートしていない | ジョブ開始時、PVC の作成に失敗すると Runner はジョブを失敗させます。 |
 | PVC が誤った可用性ゾーンまたはノードにある | 再開時のスケジューリングで、PVC のアフィニティを満たす適格なノードがないため、Runner はジョブを失敗させます。ゾーンストレージを使用する `ReadWriteOnce` PVC は 1 つのゾーンにバインドされ、一部のブロックストレージドライバーではさらに 1 つのノードに固定されます。ノードをまたいだ再開が必要な場合、運用者はリージョナルストレージクラスまたは `ReadWriteMany` ストレージクラスを使用する必要があります。 |
-| 名前空間が削除された（`NamespacePerJob`） | 再開時、Runner はジョブを失敗させます。 |
-| Runner が再起動してメモリ内の状態を失った | 影響はありません。環境キーには PVC 名と名前空間が含まれており、再接続にはそれで十分です。再開に Runner ローカルの状態は不要です。 |
+| 名前空間が削除された（`NamespacePerJob`） | 再開時、Runner は環境が利用できないことを理由にジョブを失敗させます。 |
+| Runner が再起動してメモリ内の状態を失った | 影響はありません。環境キーには PVC 名と名前空間が含まれており、再接続にはそれで十分です。再開にもクリーンアップにも Runner ローカルの状態は不要です。経過時間は PVC の作成タイムスタンプから求めます。 |
 | 再開するイメージがサスペンド時に使用したイメージと異なる | 再開時、エントリーポイントはジョブの stdout に警告を出力して続行します。Runner はイメージの一貫性を強制しません。ファイルシステムの状態がパッケージマネージャーの状態と微妙な形で同期しなくなる可能性があります（ABI ドリフト、古いパッケージ DB、隠れた drop-in 設定）。 |
 | 正常でない Pod 終了後に overlayfs の作業ディレクトリが残っている | 再開時、エントリーポイントはマウント時に作業ディレクトリを再作成します。上位ディレクトリは保持されます。 |
+| ジョブの実行中に TTL を経過 | Pod がマウントしている間、ループは PVC をスキップします。ジョブがサスペンドした場合は次の周期で PVC を削除し、解放した場合はジョブ自身のクリーンアップ処理が削除します。 |
+| TTL 経過後の再開 | 経過時間のチェックで拒否され、環境が利用できないことを理由にジョブが失敗します。 |
+| マネージャーにクリーンアップ用の RBAC がない | サスペンドと再開は引き続き動作します。期限切れの PVC が蓄積し、Runner は各周期でエラーをログに記録します。 |
 
-## 評価した代替案
+## 評価した代替案 {#alternatives-evaluated}
 
 PVC で永続化した overlayfs と `pivot_root` を採用するまでに、Kubernetes のサスペンド/再開について複数のアプローチを評価しました。採用しなかった代替案を以下にまとめます。調査の全文については、[Kubernetes 上のサスペンド可能な環境](https://gitlab.com/-/snippets/5973444)および [`duo` タグ向けに最新エグゼキューターを使用した Runner フリートをプロビジョニング](https://gitlab.com/gitlab-org/gitlab/-/work_items/597038)を参照してください。
 
-### Pod を稼働させ続ける
+### Pod を稼働させ続ける {#keep-the-pod-alive}
 
 サスペンド中も Pod をアイドル状態（`sleep infinity`）で実行し続けます。すべてを保持できますが、コンピュートリソースは解放されません。これは使用分だけ支払うという目標に真っ向から反します。スポット環境にも対応できません。
 
-### Docker commit でレジストリへ保存
+### Docker commit でレジストリへ保存 {#docker-commit-to-registry}
 
 `docker commit` を使用してコンテナの書き込み可能レイヤーを新しいイメージとして取得し、レジストリにプッシュします。コンテナランタイムへのアクセス（Docker ソケットまたは containerd ソケット）が必要ですが、標準の Kubernetes エグゼキューター Pod では利用できません。gVisor やその他のサンドボックス化されたランタイムとは互換性がありません。イメージの push/pull によって大きな遅延が加わります。
 
-### Kubelet チェックポイント API（CRIU）
+### Kubelet チェックポイント API（CRIU） {#kubelet-checkpoint-api-criu}
 
 Kubelet チェックポイント API を使用して CRIU ベースのチェックポイントを作成します。`ContainerCheckpoint` フィーチャーゲートは alpha（Kubernetes 1.25 以降）であり、どのマネージド Kubernetes サービスでもデフォルトでは有効になっていません。Kubelet への直接の HTTPS アクセスが必要ですが、Runner Pod にはそのアクセス権がありません。
 
-### gVisor rootfs tar スナップショット
+### gVisor rootfs tar スナップショット {#gvisor-rootfs-tar-snapshot}
 
 gVisor の `runsc tar rootfs-upper` は overlay の上位レイヤー（すべてのファイルシステム変更）を取得し、対応するアノテーション（`dev.gvisor.tar.rootfs.upper.*`）が新しいサンドボックスに復元します。当初の障害は、GitLab.com の本番 gVisor 環境が **GKE Sandbox**（完全マネージド）を使用しているため、`runsc` の設定にアクセスできず、`--allow-rootfs-tar-annotation` フラグをすぐには有効にできないことでした。
 
@@ -190,6 +207,6 @@ gVisor の `runsc tar rootfs-upper` は overlay の上位レイヤー（すべ�
 
 選択した PVC と overlayfs の設計自体が gVisor で動作するようになれば、このアプローチ全体は不要になります。現時点の障害は、gVisor のコンテナ内 overlay `mount(2)` が不完全であること（[google/gvisor#4768](https://github.com/google/gvisor/issues/4768)）です。アップストリームで [google/gvisor#12982](https://github.com/google/gvisor/pull/12982)による修正が進行中であり、パッチ適用済みの gVisor ビルドで、選択したアプローチがエンドツーエンドで動作することが確認されています。この修正はまだアップストリームに取り込まれていません。取り込まれた後、GKE Sandbox は独自のマネージドリリースのサイクルで修正を採用します。
 
-### PVC にマウントした作業ディレクトリのみ
+### PVC にマウントした作業ディレクトリのみ {#pvc-mounted-working-directory-only}
 
 以前のイテレーションでは、PVC を `/builds` にマウントして作業ディレクトリのみを保持し、コンテナの書き込み可能レイヤー（システムパッケージ、グローバルインストール、`/tmp`、`/home`）は一時的なままにしていました。これはより単純で `CAP_SYS_ADMIN` も不要でしたが、再開するたびに新しい書き込み可能レイヤーから始まるため、ツールチェーンには事前ビルド済みのイメージが必要となり、保持する必要があるすべての状態には環境変数によるリダイレクト（`PIP_TARGET`、`npm_config_prefix`、`GEM_HOME`、`GOPATH`、`CARGO_HOME`）が必要でした。overlay ベースのアプローチは rootfs 全体を保持することでこれらの緩和策を完全に不要にするため、この方法に取って代わりました。

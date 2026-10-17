@@ -32394,27 +32394,27 @@
     },
     "content/handbook/engineering/architecture/design-documents/runner_suspendable_environments/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/runner_suspendable_environments/_index.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T20:21:33+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T08:39:16+00:00",
       "model": "codex",
-      "input_hash": "87f65c74018e6631ed47dc74d203d8ef184128623e048e625f7e12fce7ab62f3",
-      "upstream_committed_at": "2026-06-29T14:59:05+05:30"
+      "input_hash": "287de7e0f453bb4a310b6b13f00e8ed1d8a3f5973ea8b78f7b8e217dbbc06f21",
+      "upstream_committed_at": "2026-10-14T09:05:18+05:30"
     },
     "content/handbook/engineering/architecture/design-documents/runner_suspendable_environments/kubernetes.md": {
       "path": "content/handbook/engineering/architecture/design-documents/runner_suspendable_environments/kubernetes.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T20:28:00+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T08:39:16+00:00",
       "model": "codex",
-      "input_hash": "8b31a5e7e59bc0e98f30ae8d0c05df332e2dbfbf37d12c157335a72bc89dbabc",
-      "upstream_committed_at": "2026-06-29T14:59:05+05:30"
+      "input_hash": "b39d54300a600a5edf5553975ff5ffb65f85db086a7377e7484d919536dcbf27",
+      "upstream_committed_at": "2026-10-14T09:05:18+05:30"
     },
     "content/handbook/engineering/architecture/design-documents/runner_suspendable_environments/fleeting.md": {
       "path": "content/handbook/engineering/architecture/design-documents/runner_suspendable_environments/fleeting.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T20:28:07+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T08:39:16+00:00",
       "model": "codex",
-      "input_hash": "5fae9a05a0a0fbbf31e17826b3a0fa1541d33eef77e7fd39188d6264cad6d749",
-      "upstream_committed_at": "2026-06-29T14:59:05+05:30"
+      "input_hash": "de67aae300f1ea6cbbba27cef8459d064eb14286dfe2922b85ecd04a9fd2a3c5",
+      "upstream_committed_at": "2026-10-14T09:05:18+05:30"
     },
     "content/handbook/engineering/ai/ai-model-services/_index.md": {
       "path": "content/handbook/engineering/ai/ai-model-services/_index.md",
