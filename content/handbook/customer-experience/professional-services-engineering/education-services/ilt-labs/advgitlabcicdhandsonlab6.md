@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: 複雑なプロセスの設定"
 description: "このハンズオンガイドでは、複雑な CI/CD プロセスの一般的な設定について説明します"
 upstream_path: /handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T08:57:27+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-15T09:21:24-04:00"
 ---
 
 このラボでは、マージトレインとマージコンフリクトを中心に、より複雑なマージプロセスを分析します。まず、マージトレインから始めます。
@@ -183,7 +183,13 @@ lastmod: "2026-09-24T21:34:11+02:00"
           reports:
             junit: junit.xml
 
-      install deps: &cachedef
+      .cachedef: &cachedef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+
+      install deps:
         stage: deps
         script:
           - npm install jest jest-junit

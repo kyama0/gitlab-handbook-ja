@@ -2,14 +2,14 @@
 title: "Professional Services と協働する"
 description: "GitLab Professional Services チームと協働する方法をご紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/working-with/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T08:53:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-14T13:22:17-04:00"
 ---
 
-### Professional Services への問い合わせ方法
+### Professional Services への問い合わせ方法 {#how-to-contact-professional-services}
 
 GitLab において、Professional Services（PS）は [Customer Success 部門](/handbook/customer-experience/) の一部です。そのため、PS と関わる際には、[Solutions Architect（SA）](/handbook/solutions-architects/processes/#engaging-an-sa-during-the-sales-cycle) と関わるためのガイドラインに従ってください。このプロセスにより、Customer Success 部門全体としてアカウントエグゼクティブと顧客のインバウンドニーズを把握できます。
 
@@ -17,7 +17,7 @@ GitLab において、Professional Services（PS）は [Customer Success 部門]
 
 PS は [#professional-services](https://gitlab.slack.com/archives/CFRLYG77X) Slack チャンネルを使用して、サービスに関する一般的な質問への回答や、PS Engagement Estimate や SOW などの PS スコープ業務の納品連絡を行います。プライベートな [#professional-services-us-pubsec](https://gitlab.slack.com/archives/C025UHLTR50/p1625778195002900) Slack チャンネルは US Public Sector のサービス向けに使用されます。[#professional-services-us-pubsec](https://gitlab.slack.com/archives/C025UHLTR50/p1625778195002900) へのアクセス権は [#professional-services](https://gitlab.slack.com/archives/CFRLYG77X) でリクエストしてください。
 
-#### GitLab メンバー向けのトレーニング依頼
+#### GitLab チームメンバー向けのトレーニング依頼 {#requesting-training-for-gitlab-team-members}
 
 **チームリード向け**
 
@@ -29,7 +29,7 @@ PS は [#professional-services](https://gitlab.slack.com/archives/CFRLYG77X) Sla
 
 **個別のチームメンバー向け**
 
-個別の GitLab メンバーは、Professional Services が提供する顧客向けトレーニングセッションの聴講をリクエストできます。参加リクエストの手順は以下のとおりです。
+個別の GitLab チームメンバーは、Professional Services が提供する顧客向けトレーニングセッションの聴講をリクエストできます。参加リクエストの手順は以下のとおりです。
 
 1. Education Services 名前空間で internal-team-member-training-request テンプレートを使い、[新しい Issue を作成](https://gitlab.com/gitlab-com/customer-success/professional-services-group/education-services/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=#) します。
 1. Issue 説明文の Requestor Tasks を完了します。
@@ -49,10 +49,10 @@ PS は [#professional-services](https://gitlab.slack.com/archives/CFRLYG77X) Sla
 
 ```mermaid
 graph LR;
-  a["標準サービスですか？"]-- はい ---b["見積に SKU を追加"];
-  a-- いいえ ---c["AE/SA が Create Services Opportunity ボタンで PS Epic を自動作成"];
-  c-->d["AE/SA が PS と SOW を確定"];
-  z["顧客に提案書を送付"];
+  a["Standard services?"]-- Yes ---b["Add SKU to quote"];
+  a-- No ---c["AE/SA auto creates PS epic with Create Services Opportunity button"];
+  c-->d["AE/SA works w/PS to finalize SOW"];
+  z["Send customer proposal"];
   d-->z;
   b-->z;
 ```
@@ -72,36 +72,13 @@ Professional Services を顧客に対してどのようにポジショニング�
 - 最新のリードタイムについて、より正確な見積もりが必要な場合は、[professional services Slack チャンネル](#slack) で `@ps-scheduling` グループにメンションして PS Operations チームに確認してください。
 - PS Operations チームは SFDC ステージ 5 のプロジェクトをレビューします。私たちは SFDC ステージが Closed/Won となってから数日以内にプロジェクトを開始することを目指しています。
 
-#### カスタムサービス SOW の作成と承認
+#### カスタムサービス SOW の作成と承認 {#custom-services-sow-creation-and-approval}
 
-カスタム SOW のスコーピングにあたっては、Professional Services Engagement Manager が SA/CSM/SAE と連携し、顧客のニーズを満たすカスタムエンゲージメントを作成し、SOW を適切な承認プロセスに通します。すべての Custom SOW には PS Leadership の承認が必要です。
+カスタムサービスでは、Professional Services Engagement Manager がアカウントチーム（SAE/AE、SA、CSM）と連携し、顧客とともにエンゲージメントのスコープを定めます。Engagement Manager は GitLab の社内見積もりツールである PS Compass で見積もりを作成し、アカウントチームおよび顧客とレビューしたうえで SOW を作成します。すべてのカスタム SOW は、署名のために顧客へ送付する前に PS Leadership の承認を受けます。
 
-##### 見積もり作成
+顧客が変更を希望する場合は、私たちの契約書および SOW 文書に修正を加えてもらうことを推奨します。顧客自身のサービス条項や SOW の使用が必要な場合は、PS チームに連絡してください。
 
-- アカウントチーム（SAE/ISR/SA/CSM）は、標準の親 SFDC Opportunity から `Create Services Opportunity` ボタンを使って、新しい Professional Services Epic と関連する子のスコーピング Issue を作成することでプロセスを開始できます（[上記参照](#for-sales-reps-and-sas-how-to-order-professional-services)）。スコーピング Issue 上に SSOT のテーブルが表示され、これがスコーピングプロセスを駆動します。SA/CSM は最初に顧客と協力してこれをできる限り埋めてください。Professional Services Engagement Manager は提供されたインプットを基に Estimate を作成し、レビュー用のリンクを提供します。
-
-##### SOW 作成
-
-- Estimate がアカウントチームと顧客によってレビューされ、フィードバックが反映され、調整が完了したら、SOW の生成に進めます。スコーピング Issue の中で Engagement Manager は MSA が締結されているか、または標準条項を使用するかを把握する必要があります。
-- 顧客が変更を希望する場合は、私たちの契約書および SOW 文書にマークアップしてもらうことを推奨します。顧客自身のサービス条項や SOW の使用が必要な場合は、PS チームに連絡してください。
-
-##### SOW Proposal Approval Board
-
-![SOW 提案承認ボードのスクリーンショット](/images/customer-experience/professional-services-engineering/sow-approvals-board.png)
-
-[SOW Proposal Approval Board](https://gitlab.com/groups/gitlab-com/customer-success/professional-services-group/-/boards/1353982?label_name[]=Services%20Calculator) は、すべての SOW をスコーピングと承認プロセスを通して進行させ、顧客にレビューと署名のために送付するまで管理するために使用されます。
-
-**SOW 承認ワークフローのラベル**
-
-ラベル（左から右）は以下のとおりです。
-
-- `Open`: Services Calculator によって Issue が作成され、Engagement Manager の確認待ちです。
-- `proposal::Awaiting_Discovery`: エンゲージメントをスコープするために必要な情報を、アカウントチームと顧客から収集中です。
-- `proposal::Strawman_WIP`: Engagement Manager がレビュー用の初期見積もりをドラフト中です。
-- `proposal::Estimate_Feedback`: Estimate がアカウントチームおよび／または顧客によるレビュー中です。Engagement Manager は SOW へ進む前にフィードバックと確認を待っています。
-- `proposal::SOW_WIP`: Engagement Manager が SOW をドラフト中で、マージン計算のために [SOW Cost Estimate Calculator](https://docs.google.com/spreadsheets/d/16KFNRFe4E_oaqU7_ZGivoO7eU3-65dkMgVvK5Jvb7ZQ/edit#gid=158441360) を使って [コスト見積もり](/handbook/customer-experience/customer-success-vision/#professional-services-standard-cost) を準備しています。なお、この Cost Estimate Calculator は、Engagement Manager が幅広い PS エンゲージメントの見積もり作成に使用するより大きな見積もりツールに組み込まれています。
-- `proposal::Ready For Approval`: Engagement Manager が必要な SOW を準備し、承認リクエストをトリガーしました。SOW をリリースする前に承認が必要です。
-- `proposal::Approved`: SOW が承認され、実行準備が整いました。SAE/AE は SOW を署名のためにリリースする前に、SFDC で Legal Case を起こして Legal の承認を得る必要があります。
+GitLab チームメンバーは、社内ハンドブックの[特定、スコーピング、見積もり](https://internal.gitlab.com/handbook/customer-experience/professional-services/identify-scope-estimate/)および[契約と見積書作成](https://internal.gitlab.com/handbook/customer-experience/professional-services/contracting-and-quoting/)で詳細なプロセスを確認できます。
 
 ### Professional Services のスケジューリング {#scheduling-professional-services}
 

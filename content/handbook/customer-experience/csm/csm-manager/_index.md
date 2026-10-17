@@ -2,22 +2,22 @@
 title: "CSM Manager ハンドブック"
 description: "標準的・定期的なプラクティスに関する CSM Manager 向けフィールドガイド。"
 upstream_path: /handbook/customer-experience/csm/csm-manager/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T00:10:26+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T09:00:26+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-16T09:24:31-07:00"
 ---
 
 追加の CSM 関連ハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-experience/csm/)をご覧ください。
 
 ---
 
-## 目的
+## 目的 {#purpose}
 
 このページでは、関連する CSM リーダーシッププロセスの概要を提供します。
 
-## CS リーダーシップ
+## CS リーダーシップ {#cs-leadership}
 
 | 名前 | 地域 | レベル | チーム |
 |---|---|---|---|
@@ -37,7 +37,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | [Robert Clark](https://gitlab.com/robclark14) | PubSec | Manager | CSM & CSE |
 | [Steven Terhar](https://gitlab.com/steveterhar) | PubSec | Manager | CSM & CSE |
 
-## CSM Manager の職責と要件
+## CSM Manager の職責と要件 {#csm-manager-responsibilities--requirements}
 
 <table>
 <thead>
@@ -76,11 +76,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 </tbody>
 </table>
 
-## レビュープロセス
+## レビュープロセス {#review-processes}
 
 以下は、CSM Manager が定期的なケイデンスで実行するトッププロセスのいくつかです。全体的な目標は、CSM Manager がさまざまなデータポイント（健全性、サポートチケット、オンボーディングオブジェクト、更新など）を通じてチームの顧客グループをしっかりと把握することです。参照しやすいようにダッシュボードと動画のリソースが含まれています。
 
-### レビューチェックリスト
+### レビューチェックリスト {#review-checklist}
 
 CSM Manager のために、レビューを支援する簡単なチェックリストを以下に示します:
 
@@ -102,7 +102,7 @@ CSM Manager のために、レビューを支援する簡単なチェックリ�
 
 SAE が CSM への引き継ぎを担当する一方で、CSM Manager は新しいアカウントが CSM に割り当てられ、オンボーディングが開始されていることを確認します。
 
-#### 割り当てリソース
+#### 割り当てリソース {#assignment-resources}
 
 - [オンボーディングハンドブック](/handbook/customer-experience/csm/onboarding/)
 - Gainsight ダッシュボード - **CS リーダーシップ**
@@ -115,12 +115,12 @@ SAE が CSM への引き継ぎを担当する一方で、CSM Manager は新し�
 2. Time to Value 指標はどのような状態ですか？
 3. 詳細を確認した後、改善したい領域と称賛すべき領域はどこですか？
 
-#### オンボーディングリソース
+#### オンボーディングリソース {#onboarding-resources}
 
 - [アカウントオンボーディングハンドブック](/handbook/customer-experience/csm/onboarding/)
 - Gainsight ダッシュボード - **CSM ポートフォリオ**または**顧客オンボーディング**
 
-#### Gainsight での KPI 追跡
+#### Gainsight での KPI 追跡 {#kpi-tracking-in-gainsight}
 
 <!-- blank line -->
 <figure class="video_container">
@@ -147,7 +147,7 @@ SAE が CSM への引き継ぎを担当する一方で、CSM Manager は新し�
 
 CSM Manager はチームと連携して、CSM が顧客への価値向上・証明を推進するよう支援してください。
 
-#### サクセスプランリソース
+#### サクセスプランリソース {#success-plan-resources}
 
 - [サクセスプランハンドブック](/handbook/customer-experience/csm/success-plans/)
 - Gainsight ダッシュボード - **CSM ポートフォリオ**または**CS リーダーシップ**
@@ -162,7 +162,7 @@ CSM Manager はチームと連携して、CSM が顧客への価値向上・証�
 
 すべてのリスクのあるアカウントの詳細は、`At-Risk Update` タイムラインエントリを使用して Gainsight にキャプチャされる必要があります。これらの更新は Salesforce に同期され、リスクのあるアカウントのレビューに使用されるレポートはこれらの更新を参照します。
 
-#### リスクレビューミーティング
+#### リスクレビューミーティング {#at-risk-review-meetings}
 
 リスクのある顧客ミーティングは、地域ごとおよびグローバルレベルで定期的に実施されます。以下の表は、実施されるさまざまなミーティングの概要です。
 
@@ -176,7 +176,7 @@ CSM Manager はチームと連携して、CSM が顧客への価値向上・証�
 | APAC  | 隔週 | CSM: Manager; Sales: AVP, ENT & COM ASMs |
 | Public Sector | 隔週 | VP of Customer Success, VP of Public Sector, Director of Customer Success, ASMs, CSM and Renewals Team Managers |
 
-##### リスクレビューミーティングの目的と成果
+##### リスクレビューミーティングの目的と成果 {#purpose-and-output-of-at-risk-review-meetings}
 
 地域リスクレビューミーティングは、リスクのあるアカウントについてクロスファンクショナルな連携を確保するためのものです。ミーティングの目的は以下のとおりです:
 
@@ -225,24 +225,24 @@ CSM Manager はその後、CSM と連携して GitLab チーム（SAE/AE、SA、
 
 このレビューは、適切な情報と計画が文書化されていることを確認するために[地域レビューミーティング](#regional-review-agenda)にもつながります。
 
-### コミッション例外レビュープロセス
+### コミッション例外レビュープロセス {#commission-exception-review-process}
 
-#### 現在の例外プロセス
+#### 現在の例外プロセス {#current-exception-process}
 
 1. Chatter - CSM Manager は Pooled CSM チームの更新のために VP of CSMs *と* Sales-comp に Chatter メッセージを送ります。承認されると、Sales チームが処理してマネージャーへの返信があります。
 2. 例外スプレッドシート - [FY23 Deal Exceptions/Accounts Requiring Review CSM](https://docs.google.com/spreadsheets/d/1BsA2Sas7LwtR6r8OY1O3T8cfKius6k_DFuKEXJWoX7U/edit#gid=1297618482)（内部のみ）マネージャーはこのスプレッドシートで更新レート例外を主に説明し、承認を得て、comp チームが処理します。
 
-#### 将来の例外プロセス
+#### 将来の例外プロセス {#future-exception-process}
 
 SFDC Chatter を通じた 1 つの例外プロセスに移行します。Sales-comp は必要な承認を伴う例外について Chatter でタグ付けされます。CSM のプールフィールド変更リクエストの場合、comp チームが処理して Chatter で返信します。Renewal Rate/Growth ARR の商談例外の場合、該当する例外チェックボックスが comp チームによって商談にチェックされ、リクエスト元をタグ付けしてチームに返信されます。システムチームは、すべてのリクエストを 1 か所で確認できるよう Chatter レポートの作成を支援します。
 
-## 更新リソース
+## 更新リソース {#renewal-resources}
 
 - [更新レビューハンドブック](/handbook/customer-experience/csm/renewals/)
 - [CSM 地域ダッシュボード](https://gitlab.my.salesforce.com/01Z4M000000slMT)
 - Gainsight ダッシュボード
 
-## 四半期ビジネスレビュー（QBR）
+## 四半期ビジネスレビュー（QBR） {#quarterly-business-review-qbr}
 
 CSM Manager は、各四半期においてチームの[四半期ビジネスレビュー](/handbook/sales/qbrs/)を作成・提供する責任があります。
 
@@ -280,18 +280,18 @@ CSM Manager は、各四半期においてチームの[四半期ビジネスレ�
    1. ARR 別
 1. OKR / Big Rock イニシアティブの進捗
 
-## 年次プロセス
+## 年次プロセス {#annual-processes}
 
-### プレジデントズクラブの計算
+### プレジデントズクラブの計算 {#presidents-club-calculations}
 
 プレジデントズクラブの基準とプロセスは [GitLab 内部ハンドブック](https://internal.gitlab.com/handbook/sales/presidents-club/)に文書化されています。
 
-## チームメンバーのパフォーマンス
+## チームメンバーのパフォーマンス {#team-member-performance}
 
 マネージャーはチームメンバーのパフォーマンスを評価しフィードバックを提供する責任があります。このための利用可能なリソースがあります:
 
 - [個人 FY 計画](https://docs.google.com/document/d/1Etn2bCNewGYe6BLv4VmrjuGfEqtxqzUk14f0geTaVBM/edit?usp=sharing): 特定の会計年度にチームメンバーが達成すべき主要な指標と基準の 1 ページの概要。チームメンバーに合わせてカスタマイズされており、会計年度の開始時にマネージャーが組み立て、チームメンバーと話し合うのが最適です。カテゴリーと指標はマネージャーとチームメンバーが合意し、年間を通じて定期的にパフォーマンスをレビューします。
 
-### 昇進計画
+### 昇進計画 {#promotion-planning}
 
-CSM Manager は、CSM が昇進の資格を得る前に CSM の立ち位置とギャップを埋める方法について定期的なコーチングと指導を提供してください。CSM が昇進の準備ができたら、CSM Manager は CSM と[昇進ドキュメント](/handbook/people-group/promotions-transfers/#planning)で協力すべきです。ドキュメントを構築する際には、コンテンツ、Issue、MR などへのリンクと共に、CSM が達成した結果を中心に置くことが重要です。
+CSM Manager は、CSM が昇進の資格を得る前に CSM の立ち位置とギャップを埋める方法について定期的なコーチングと指導を提供してください。CSM が昇進の準備ができたら、CSM Manager は CSM と[昇進ドキュメント](/handbook/people-group/promotions-transfers/)で協力すべきです。ドキュメントを構築する際には、コンテンツ、Issue、MR などへのリンクと共に、CSM が達成した結果を中心に置くことが重要です。
