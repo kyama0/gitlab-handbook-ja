@@ -2,16 +2,22 @@
 title: "Figma のプロビジョニングとデプロビジョニング"
 description: "Figma をプロビジョニング/デプロビジョニングする方法に関するガイダンス"
 upstream_path: /handbook/upstream-studios/how-we-work/figma-provisioning/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: 2026-06-16T09:26:31-04:00
-translated_at: "2026-06-20T20:58:39+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T19:52:00+02:00"
+translated_at: "2026-10-17T21:06:41Z"
 translator: codex
 stale: false
 ---
 
-Figma のプロビジョニング担当者/デプロビジョニング担当者は、[Tech Stack YAML ファイル](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml#L1780)に記載されています。
+Figma のプロビジョニング担当者/デプロビジョニング担当者は、[Tech Stack](/handbook/business-technology/tech-stack-applications/)に記載されています。
 
 複数の部門に、有料シートとして [Editor](https://help.figma.com/hc/en-us/articles/360039960434-Roles-in-Figma#editor) ロールを持つチームメンバーがいますが、ビジネスオーナーは UX 部門です。
+
+## Figma ファイルのレビューと承認 {#figma-file-review-and-approval}
+
+プロビジョニングで管理するのは、Figma シートを持つ人であり、Figma ファイルをレビューまたは承認する人ではありません。[Pajamas UI Kit](https://design.gitlab.com/get-started/uik-file-structure)に含まれない Figma ファイルとブランチのレビューおよび承認は、各チーム、場合によっては各デザイナーが責任を持ち、Figma の組織設定を通じて管理します。詳細は、[Figma ファイルのレビューと承認](/handbook/upstream-studios/product-design/workflow/figma/#review-and-approval-of-figma-files)を参照してください。
+
+このチーム単位およびデザイナー単位のモデルは、Design System チームが Pajamas UI Kit ファイルに責任を持つモデルとは異なります。UI Kit ファイルのレビュー方法については、[Design System のレビュープロセス](/handbook/upstream-studios/design-expression/design-system/design-review/)を参照してください。
 
 ## Figma シート
 

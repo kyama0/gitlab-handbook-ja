@@ -31842,11 +31842,11 @@
     },
     "content/handbook/upstream-studios/how-we-work/ai-usage.md": {
       "path": "content/handbook/upstream-studios/how-we-work/ai-usage.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T20:58:39+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T21:06:41Z",
       "model": "codex",
-      "input_hash": "ffaf0ad455015392da4167e567deeb65ce034cf71b0e4a0f8d0ce4f97c296a55",
-      "upstream_committed_at": "2026-06-18T10:24:03-05:00"
+      "input_hash": "8a86d77bec3f2bd3a5aeeee72a8aa67ec1d44b4a86511da4afe9067b1aafd2d8",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/upstream-studios/how-we-work/cross-stage-design-collaboration.md": {
       "path": "content/handbook/upstream-studios/how-we-work/cross-stage-design-collaboration.md",
@@ -31858,11 +31858,11 @@
     },
     "content/handbook/upstream-studios/how-we-work/figma-provisioning.md": {
       "path": "content/handbook/upstream-studios/how-we-work/figma-provisioning.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T20:58:39+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T21:06:41Z",
       "model": "codex",
-      "input_hash": "76cfdd0cb89912f98156693d967e42c941e2a6f0c7e4f8dcb8377b3dfbc075cf",
-      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+      "input_hash": "3a96bfbf6b4f2ae15bb48e28b3cc90cebaa92676bed2adf54faa28d19114a238",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/upstream-studios/design-strategy/_index.md": {
       "path": "content/handbook/upstream-studios/design-strategy/_index.md",
@@ -33114,11 +33114,11 @@
     },
     "content/handbook/upstream-studios/experience-research/ux-research-growth-and-development.md": {
       "path": "content/handbook/upstream-studios/experience-research/ux-research-growth-and-development.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T08:32:10+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T21:06:41Z",
       "model": "codex",
-      "input_hash": "d83c50b48d025617013e57734200da21bcde222f3653960596105dde71b3ac2e",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "b60e29c0cadf492b4c7f846c661251585fd6018068e9895389d9cdacb05178aa",
+      "upstream_committed_at": "2026-10-16T09:24:31-07:00"
     },
     "content/handbook/upstream-studios/experience-research/ux-researcher-pairings.md": {
       "path": "content/handbook/upstream-studios/experience-research/ux-researcher-pairings.md",
@@ -34034,11 +34034,11 @@
     },
     "content/handbook/upstream-studios/product-design/workflow/figma/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/figma/_index.md",
-      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
-      "translated_at": "2026-07-22T06:32:52+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T21:06:41Z",
       "model": "codex",
-      "input_hash": "f065f225fafdd6a07d8974062e36cf9fec1e7f89267b2a5ef7758f5c41d7688a",
-      "upstream_committed_at": "2026-07-21T08:59:24-03:00"
+      "input_hash": "463d9256f987c08b817f4aff6aca117c7fc29e82c24dc0af02ea685a63852eb8",
+      "upstream_committed_at": "2026-10-14T14:35:19-07:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/capacity-management/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/capacity-management/_index.md",
@@ -34066,11 +34066,11 @@
     },
     "content/handbook/upstream-studios/design-expression/design-system/design-review.md": {
       "path": "content/handbook/upstream-studios/design-expression/design-system/design-review.md",
-      "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-07-21T06:21:42+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T21:06:41Z",
       "model": "codex",
-      "input_hash": "cb87f86d3f91c2926843c96334ef7c68a74e6768ab9e852ce8cbb893fb287fb7",
-      "upstream_committed_at": "2026-07-20T13:03:25-03:00"
+      "input_hash": "a12cda6f141109faef28bf45b2b6a69315195e3d2cc3647b64fffe1ca44ac94a",
+      "upstream_committed_at": "2026-10-14T15:13:25-07:00"
     },
     "content/handbook/upstream-studios/design-expression/accessibility/_index.md": {
       "path": "content/handbook/upstream-studios/design-expression/accessibility/_index.md",
@@ -34090,11 +34090,11 @@
     },
     "content/handbook/upstream-studios/product-design/design-pair-rotation.md": {
       "path": "content/handbook/upstream-studios/product-design/design-pair-rotation.md",
-      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
-      "translated_at": "2026-09-03T21:26:54+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T21:06:41Z",
       "model": "codex",
-      "input_hash": "21aeda840187592d711ac0558934ab7a2503855ac04c8f90bd1ebe6e624c4504",
-      "upstream_committed_at": "2026-08-24T06:19:20-07:00"
+      "input_hash": "8a9dce3862faf5209c0e2d1031c692b5886bfacbc6b78821da240d37cdd5b8cb",
+      "upstream_committed_at": "2026-10-15T11:57:18Z"
     },
     "content/handbook/upstream-studios/product-design/hiring-product-designers.md": {
       "path": "content/handbook/upstream-studios/product-design/hiring-product-designers.md",

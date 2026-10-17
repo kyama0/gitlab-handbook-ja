@@ -2,9 +2,9 @@
 title: Product Designer のデザインツール
 description: "Product Designer のためのデザインツールに関する情報。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/figma/
-upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
-lastmod: "2026-07-21T08:59:24-03:00"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-14T14:35:19-07:00"
+translated_at: "2026-10-17T21:06:41Z"
 translator: codex
 stale: false
 ---
@@ -13,7 +13,7 @@ stale: false
 
 **注: 特に明記がない限り、このセクションの `Figma` に関する情報は `FigJam` にも適用されます。**
 
-主なデザインツールは [Figma](https://www.figma.com/) です。UX Department のプロダクトデザイナーまたはプロダクトデザインマネージャーには、Professional Figma ライセンスと Figma の GitLab チームへのアクセス権があります。オンボーディング中に GitLab のメールアカウント宛てに送られる招待を承諾する以外に、必要なことはありません。
+主なデザインツールは [Figma](https://www.figma.com/) です。UX Department の product designer または product design manager には、Professional Figma ライセンスと Figma の GitLab チームへのアクセス権があります。オンボーディング中に GitLab のメールアカウント宛てに送られる招待を承諾する以外に、必要なことはありません。
 
 GitLab の他のメンバーは、ファイル URL を共有するか、メールで直接招待するとファイルにアクセスできます。ただし、付与する権限は「閲覧可」のみにしてください。「編集可」の権限を持つ人は有料シートとみなされ、承認が必要です。「閲覧可」の権限があるユーザーも、デザインファイルにコメントし、検査できます。
 
@@ -27,7 +27,7 @@ GitLab には公開 Figma プロフィールがあり、誰でも私たちが公
 
 Figma の Professional チームには、Permissions とも呼ばれる 4 段階のアクセスレベルがあります。権限はチーム、プロジェクト、ファイルのレベルで設定できます。
 
-1. **Editors** - UX Department の GitLab プロダクトデザイナーとプロダクトデザインマネージャーのみがエディターです。特に変更されない限り、エディターはプロジェクトとファイルへの「編集可」アクセスを持ちます。
+1. **Editors** - UX Department の GitLab product designers と product design managers のみがエディターです。特に変更されない限り、エディターはプロジェクトとファイルへの「編集可」アクセスを持ちます。
 1. **Viewers** - GitLab チームの閲覧者は、特に変更されない限り、任意のプロジェクトまたはファイルへの「閲覧可」アクセスを持ちます。
 1. **Admins** - 管理者は、請求を含む Team Settings および Admin Dashboard にアクセスできます。
 1. **Owners** - チーム、プロジェクト、またはファイルを作成した人が、そのデフォルトのオーナーになります。
@@ -36,6 +36,13 @@ Figma の Professional チームには、Permissions とも呼ばれる 4 段階
 
 Figma の[コンポーネント](https://design.gitlab.com/get-started/uik-components)、[ライブラリ](https://design.gitlab.com/get-started/uik-libraries)、[アノテーション](https://design.gitlab.com/get-started/uik-annotation)の使用や、[Figma アーティファクトの共有](https://design.gitlab.com/get-started/uik-sharing)については、Pajamas のガイダンスを参照してください。
 
+### Figma ファイルのレビューと承認 {#review-and-approval-of-figma-files}
+
+Figma ファイルまたはブランチを誰がレビューし、承認するかは、Pajamas UI Kit の一部であるかどうかによって異なります。
+
+* **Pajamas UI Kit ファイル:** [Design System チーム](/handbook/upstream-studios/design-expression/design-system/)が [Pajamas UI Kit](https://design.gitlab.com/get-started/uik-file-structure) ファイルに責任を持ち、保守します。これらのファイルへの貢献をどのようにレビューするかについては、[Design System のレビュープロセス](/handbook/upstream-studios/design-expression/design-system/design-review/)を参照してください。
+* **その他すべての Figma ファイル:** 各チーム、場合によっては各デザイナーが、自分たちのファイルのレビューと承認に責任を持ちます。これは、中央のメンテナーロールではなく、前述のチーム、プロジェクト、ファイルの権限など、各チームの Figma の組織設定を通じて管理します。
+
 ### ファイルのバックアップ
 
-Figma のクラウドストレージには Organization アカウント配下のすべてのデザインファイルがあり、Pajamas UI Kit のファイルだけが [GitLab Product Design](https://www.figma.com/@gitlabdesign) のコミュニティページで公開され、一般に利用できます。将来の参照またはポートフォリオ利用のために記録として残したい非機密のデザインファイルは、`.fig` ファイルとして保存し、任意の方法で保管することを推奨します。
+Figma のクラウドストレージには Organization アカウント配下のすべてのデザインファイルがあり、Pajamas UI Kit のファイルだけが [GitLab Product Design](https://www.figma.com/@gitlabdesign)のコミュニティページで公開され、一般に利用できます。将来の参照またはポートフォリオ利用のために記録として残したい非機密のデザインファイルは、.fig ファイルとして保存し、任意の方法で保管することを推奨します。

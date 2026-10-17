@@ -3,9 +3,9 @@ title: "AI の利用"
 description: "デザイン業務で AI を使うタイミングを学びます: ベストプラクティス、避けるべきこと、ユーザーを中心に据え続ける方法。"
 date: 2026-06-15
 upstream_path: /handbook/upstream-studios/how-we-work/ai-usage/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: 2026-06-18T10:24:03-05:00
-translated_at: "2026-06-20T20:58:39+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T19:52:00+02:00"
+translated_at: "2026-10-17T21:06:41Z"
 translator: codex
 stale: false
 ---
@@ -36,7 +36,7 @@ GitLab で AI ツールを使う前に、以下を読んでください:
 | Rally | インタビューの文字起こし |
 
 **注:** Figma Make は、有料の Figma シートで利用できるプロトタイピングツールです。利用可能なクレジットを使い切らないよう、まず Claude Design または Claude Code を検討してください。
-私たちの [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)には、利用できる AI 機能を持つ他のツールが記載されている場合があります。
+私たちの [Tech Stack](/handbook/business-technology/tech-stack-applications/)には、利用できる AI 機能を持つ他のツールが記載されている場合があります。
 
 ## AI が得意なこと
 
