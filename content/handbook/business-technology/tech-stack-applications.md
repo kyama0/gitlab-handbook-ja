@@ -1,34 +1,31 @@
 ---
 title: "Tech Stack アプリケーション"
 description: "GitLab Tech Stack へのアクセス方法および更新リクエストの手順"
-extra_js:
-  - libs/vue.min.js
-  - tech-stack.js
 upstream_path: "/handbook/business-technology/tech-stack-applications/"
-upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
-translated_at: "2026-09-13T21:06:55+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T09:00:26+00:00"
 translator: "codex"
 stale: false
-lastmod: "2026-09-13T10:44:23-04:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
-## Tech Stack のプロセスは Compass に移行しました
+## Tech Stack のプロセスは Compass に移行しました {#tech-stack-process-has-now-moved-to-compass}
 
 **Tech Stack の管理プロセス全体は、10 月 22 日 (水) に正式に Compass へ移行しました**。
 
 - システム情報は現在 [Compass 上の Tech Stack](https://app.serval.com/new-request) にあります。Tech Stack にはこちらからアクセスできます - [Tech Stack](https://techstack.gtlb.com)。
 
-### 既存のマージリクエストがありますか?
+### 既存のマージリクエストがありますか? {#have-an-existing-merge-request}
 
 - 心配は不要です。進捗状況に応じて、変更を完了し、[Tech Stack](https://techstack.gtlb.com)に反映します。
 
-### 新しいマージリクエストを作成する予定ですか?
+### 新しいマージリクエストを作成する予定ですか? {#planning-to-create-a-new-merge-request}
 
 MR を提出する代わりに、新しい **Tech Stack 更新フォーム** をご利用ください。
 
 - Compass の **[Tech Stack 更新フォーム](https://app.serval.com/new-request)** を使用してください。
 
-## 定義とアクセス
+## 定義とアクセス {#definition-and-access}
 
 Tech Stack は、事業を支えるために GitLab が現在使用しているすべてのテクノロジーのリストです。すべての部門で使用されるシステム、アプリケーション、ツール、データに加えて、ビジネス目的/説明、オーナー、プロビジョナー、アクセスチーム、その他の関連属性が記載されています。
 
@@ -41,7 +38,7 @@ Tech Stack は、事業を支えるために GitLab が現在使用している�
 
 Tech Stack の [Jupyter Notebook ビュー](https://colab.research.google.com/drive/1C0sikfvoY46p2-dbYNtHwo77VJLixCe2?usp=sharing) を使うと、データのフィルタリングや CSV、JSON、Markdown 形式へのエクスポートが可能です。
 
-## 役割と責任
+## 役割と責任 {#roles-and-responsibilities}
 
 |役割|責任|
 |----------|------------------------------|
@@ -49,17 +46,17 @@ Tech Stack の [Jupyter Notebook ビュー](https://colab.research.google.com/dr
 |IT Business Technology| Tech Stack の Code Owner。サポートシステムについてビジネスオーナーおよびテクニカルオーナーに助言する。 |
 |Security Risk|新規および既存システムの Tech Stack 更新を支援する。これには [ビジネス影響度分析](/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis/) の実施も含まれる。|
 
-## Tech Stack の定義
+## Tech Stack の定義 {#tech-stack-definitions}
 
 - **ビジネスオーナー**: ツールに関する予算と意思決定のすべてを担う個人 (複数の場合あり)。ツールがどのように、誰によって使われるかを定義します。通常はツールに `Owner` としてのログインアクセスを持ちますが、すべての場合でログインアクセスが必須というわけではありません。このフィールドには、チームではなく必ず個人の名前を記載してください。
 - **テクニカルオーナー**: システムの性質によっては、ビジネスオーナーと同じ場合があります。たとえば、一元管理されておらず、設定がほとんど必要ないシステムなどです。中央集権的に管理されている、あるいは設定が多いシステムの場合、テクニカルオーナーは、アプリケーションのアーキテクチャや機能 (扱うデータの種類を含む)、GitLab に対する全体的な重要度や影響を理解している人物です。テクニカルオーナーは通常、ツールの `administrators` です。これには、ツールのアクセスをプロビジョニング/デプロビジョニングする管理者権限を持つすべての人、および/またはツールを管理するために必要な技術的専門性を持つ人が含まれます。
 - **プロビジョナー/デプロビジョナー**: ツールへのチームメンバーのアクセスを付与・削除する責任者。ハンドブックに記載されるすべてのツールには、少なくとも 2 名のプロビジョナー/デプロビジョナーを指名する必要があります。プロビジョナーは Slack では `@provisioners` ハンドルで、GitLab では `@tech-stack-provisioner` ハンドルでグループとして連絡できます。
 
-## Tech Stack の更新
+## Tech Stack の更新 {#tech-stack-updates}
 
 Tech Stack のすべての変更は、Compass の **[Tech Stack 更新フォーム](https://app.serval.com/new-request)** を使って提出する必要があります。
 
-### Tech Stack 更新リクエストの提出方法
+### Tech Stack 更新リクエストの提出方法 {#how-to-submit-a-tech-stack-update-request}
 
 1. **Compass → New Request → Service Catalog → Tech Stack Update** にアクセスします。
 2. Compass で Service Catalog セクション配下の **[Tech Stack 更新フォーム](https://app.serval.com/new-request)** を開きます。
@@ -68,13 +65,13 @@ Tech Stack のすべての変更は、Compass の **[Tech Stack 更新フォー�
 
 4. 必要な詳細をすべて入力し、リクエストを送信します。
 
-### 処理とワークフロー
+### 処理とワークフロー {#processing--workflow}
 
 - すべてのリクエストは Compass を介してルーティングされます。
 - **Corporate IT Team / IT EntApps Team** がエントリーをレビュー、検証、更新します。
 - オーナーシップの役割は変わりません。引き続き、各システムのビジネスオーナー、テクニカルオーナー、プロビジョナーを指定します。
 
-### **Tech Stack にはどのようなデータが格納されますか?**
+### **Tech Stack にはどのようなデータが格納されますか?** {#what-data-lives-in-the-tech-stack}
 
 Tech Stack を更新する際は、以下の手順に従い、各フィールドに正しい種類のデータを入力してください。
 
@@ -106,7 +103,7 @@ Tech Stack を更新する際は、以下の手順に従い、各フィールド
 - *ブール値の場合、`true` または `false` のいずれかを明示的に入力する必要があります。
 - **Unknown: 情報が不明な場合は、フィールドを空欄にせず、代わりに `null` と入力してください。
 
-### Tech Stack への新規システムの追加
+### Tech Stack への新規システムの追加 {#adding-a-new-system-to-the-tech-stack}
 
 新規システムを Tech Stack に追加するプロセスは、完全に Compass へ移行しました。`tech_stack.yml` ファイルへのマージリクエスト作成ではなく、以下のプロセスに従ってください。
 
@@ -120,7 +117,7 @@ Tech Stack を更新する際は、以下の手順に従い、各フィールド
 
 > **注意:** Legal、IT Compliance、Internal Audit、Security Risk、Business Systems の各チームがワークフローに自動的に組み込まれ、リクエストが確定する前にそれぞれの担当セクションを完了します。
 
-### Tech Stack 内の既存システムの更新
+### Tech Stack 内の既存システムの更新 {#updating-an-existing-system-in-tech-stack}
 
 すべてのシステム更新は Compass を通じて行う必要があります。`tech_stack.yml` ファイルへのマージリクエスト作成ではなく、以下のプロセスに従ってください。
 
@@ -131,7 +128,7 @@ Tech Stack を更新する際は、以下の手順に従い、各フィールド
 
 該当するレビューグループが Compass ワークフローの一部として更新を検証・処理します。
 
-### Tech Stack からのシステムの削除
+### Tech Stack からのシステムの削除 {#removing-a-system-from-tech-stack}
 
 Tech Stack からシステムを削除するには、`tech_stack.yml` ファイルへのマージリクエスト提出ではなく、[Tech Stack 更新](https://app.serval.com/new-request) フォームを使用してください。
 
@@ -144,21 +141,21 @@ Tech Stack からシステムを削除するには、`tech_stack.yml` ファイ�
 
 このプロセスの一環として、ビジネスオーナーは Legal および IT Compliance と協力し、ベンダー契約に従ってデータ削除と契約上の要件がすべて完了することを保証する必要があります。すべてのステップが検証されると、システムは Compass ワークフローを通じて Tech Stack から削除されます。
 
-## その他の関連プロセス
+## その他の関連プロセス {#other-related-processes}
 
-### アクセスリクエスト
+### アクセスリクエスト {#access-requests}
 
 システムへのアクセスをリクエストする方法の詳細は、[アクセスリクエストハンドブックページ](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を参照してください。ユースケースに合った正しいテンプレートを選択し、手順に従ってください。
 
-### 調達
+### 調達 {#procurement}
 
 新しいアプリケーション/システムを調達したい場合は、[調達ハンドブックページ](/handbook/finance/procurement/) を参照して開始方法の詳細を確認してください。このプロセスを経たアプリケーションのみが Tech Stack に追加できます。
 
-### サポート
+### サポート {#support}
 
-アプリケーション/システムに問題が発生していますか? [Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) で `Group Owner/Slack Channel` を確認すれば、サポートを依頼すべき Slack チャンネルが分かります。
+アプリケーション/システムに問題が発生していますか? [Tech Stack](https://techstack.gtlb.com) で `Group Owner/Slack Channel` を確認すれば、サポートを依頼すべき Slack チャンネルが分かります。
 
-### コンプライアンス
+### コンプライアンス {#compliance}
 
 Tech Stack に掲載されている多くのアプリケーションは、規制対応やその他のコンプライアンス活動の対象となっています。詳細は以下の DRI までお問い合わせください。
 
@@ -168,7 +165,7 @@ Tech Stack に掲載されている多くのアプリケーションは、規制
 - ISO 27001: Liz Coleman (@lcoleman), Security Compliance
 - SOX: Sean Brown (@sbrown10), Internal Audit
 
-### オフボーディングテンプレートの更新
+### オフボーディングテンプレートの更新 {#updating-the-offboarding-templates}
 
 新しいシステムが Tech Stack に追加されると、GitLab がコンプライアンスを保ち、退職後のチームメンバーをシステムから削除するために、オフボーディングテンプレートを更新する必要があります。オフボーディングテンプレートを更新する方法は 2 種類あります。新しいシステムの使用状況に最も適したオプションを選んでください。MR がマージ可能な状態になったら、People Operations チーム (`@gl-people-ops-team`) にタグ付けして承認とマージを依頼します。
 
@@ -216,6 +213,6 @@ Tech Stack に掲載されている多くのアプリケーションは、規制
 完了したら、'Tech Stack - Add New System' MR の "Access Tasks" セクションに当該 MR をリンクしてください。
 </details>
 
-### 例外
+### 例外 {#exceptions}
 
 Tech Stack へのテクノロジー追加には例外があり、それらはケースバイケースで処理されます。

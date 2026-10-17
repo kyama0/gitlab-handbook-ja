@@ -2,11 +2,11 @@
 title: "Professional Services デリバリーメソドロジー"
 description: "GitLab Professional Services がカスタマーサクセスを実現するために使用しているプロセスとメソドロジーを学びます。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T08:53:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-14T13:22:17-04:00"
 ---
 
 - [Professional Services デリバリーメソドロジー (PSDM) とは](#what-is-the-professional-services-delivery-methodology-psdm)
@@ -41,7 +41,7 @@ GitLab をプロジェクト管理ツールとして初期設定するには、[
 
 > **注意:** "internal" としてマークされた Issue でも、GitLab Collaboration プロジェクトに "developer" アクセス権を持つ人は誰でも閲覧できます。これには GitLab 外部の人も含まれます。機密のコミュニケーションには Project の "Internal Epic" を使用することを推奨します。
 
-### GitLab でのプロジェクト管理マッピング
+### GitLab でのプロジェクト管理マッピング {#project-management-mapping-in-gitlab}
 
 | PM 用語    | GitLab での定義 |
 | -------- | ------- |
@@ -57,7 +57,7 @@ GitLab をプロジェクト管理ツールとして初期設定するには、[
 
 アジャイル用語の GitLab へのマッピングについて、より明確な情報は [このガイド](./agile-to-gitlab-terminology/_index.md) を参照してください。
 
-### ラベルガイドライン
+### ラベルガイドライン {#label-guidelines}
 
 ラベルは、プロジェクトに関するレポートを生成し、プロジェクトチームのニーズに応じて情報を整理するための最も効果的な方法です。チームには特定のプロジェクトレポート要件を満たすラベルを作成する柔軟性がありますが、内部使用のためのラベル生成については確立されたガイドラインがあります。
 
@@ -93,7 +93,7 @@ GitLab をプロジェクト管理ツールとして初期設定するには、[
 
 ## ステータスとバーンダウンレポート {#status-and-burndown-reporting}
 
-### 誰が何を更新するか?
+### 誰が何を更新するか? {#who-updates-what}
 
 PM はセレモニーの準備、ステータス報告、Issue 管理を担当しますが、GitLab PSE（Professional Services Engineer）、TA（Technical Architect）、および顧客チームメンバーはすべて、プロジェクトボード内で割り当てられた Issue（タスク）に貢献し更新することが期待されます。これはイテレーション 0 中に効果的なワーキングアグリーメントを確立することの重要性を強調しています。
 
@@ -108,7 +108,7 @@ PM はセレモニーの準備、ステータス報告、Issue 管理を担当�
 - [ステータス更新の例 2](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/gitlab-professional-services/smartsheet/SOW-2163/-/issues/2)
 - GitLab CP がステータス報告に推奨されるプラットフォームですが、顧客がプレゼンテーション形式を希望する場合は、こちらの [テンプレート](https://docs.google.com/presentation/d/1jSc5vAID3DMMwojyZnAnOT0aKY2UwDfH2Si-XxEHjLU/edit#slide=id.g2e5808acdbf_0_252) を参照してください。
 
-### プロジェクトバーンダウン
+### プロジェクトバーンダウン {#project-burndown}
 
 Kantata は財務管理の Single Source of Truth ですが、プロジェクトの進捗に対する追加の監査と進行状況のために、PM は時間と財務のバーンを別途追跡することを推奨します。テンプレートは [こちら](https://drive.google.com/drive/folders/1SKUu-nVP8c1rt0VKv8-7U5Yfk_6CWBYe) にあります。週次ステータスレポート内で時間/財務の進捗を追跡することは必須です。
 
@@ -120,14 +120,14 @@ RAID（Risks、Actions、Issues、Decisions）フレームワークは、プロ�
 - Yellow/Red ヘルスステータスを持つプロジェクトのプロアクティブな監視を可能にする
 - リスク文書化と緩和戦略を一元化する
 
-### RAID のセットアップ
+### RAID のセットアップ {#setting-up-raid}
 
 - RAID ボードは PM が CP テンプレートを初期化するときに自動的に作成されます
 - テンプレートを「RAID - [Customer Name] - [SOW/PO#]」にリネームします
 - PM は RAID の作成と管理を担当しますが、課題と緩和策が変化するにつれ、社内チームメンバーと顧客代表者の両方が更新することが推奨されます
 - [RAID ログの例](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/gitlab-professional-services/autozone/SOW-2464/-/boards/7689705?label_name[]=PS%20RAID%20Log) を参照してください
 
-### RAID 経由でのリスクのレポート
+### RAID 経由でのリスクのレポート {#reporting-on-risk-via-raid}
 
 リスクを文書化する際は、以下のガイドラインに従ってください:
 
@@ -169,7 +169,7 @@ RAID（Risks、Actions、Issues、Decisions）フレームワークは、プロ�
 
 プロジェクトのマイルストーンで発生し顧客とレビューされるカスタマーレトロスペクティブとは異なり、社内レトロスペクティブは、プロセスを改善するために必要な改善点をキャプチャし、チームの勝利を祝う方法として機能します。
 
-### 社内レトロスペクティブのセットアップ
+### 社内レトロスペクティブのセットアップ {#setting-up-the-internal-retrospective}
 
 社内レトロスペクティブは、カスタマー EPIC が確立されたときに自動的に作成されます:
 
@@ -185,11 +185,11 @@ RAID（Risks、Actions、Issues、Decisions）フレームワークは、プロ�
    - これは社内専用 Issue です - 顧客アクセスは付与されるべきではありません
    - プロジェクトに従事するすべての GitLab チームメンバーがアクセス権を持つべきです
 
-### 社内レトロスペクティブへの貢献
+### 社内レトロスペクティブへの貢献 {#contributing-to-the-internal-retrospective}
 
 チームメンバーはプロジェクト全体を通じて社内レトロスペクティブに貢献するべきです:
 
-### 何を文書化するか
+### 何を文書化するか {#what-to-document}
 
 1. **プロジェクトの勝利と称賛:**
    - 技術的成果
@@ -216,13 +216,13 @@ RAID（Risks、Actions、Issues、Decisions）フレームワークは、プロ�
    - 再利用可能性のある顧客固有のソリューション
    - デリバリーキット関連の更新
 
-### 貢献方法
+### 貢献方法 {#how-to-contribute}
 
 - **継続的に:** チームメンバーは注目すべきイベントが発生するたびに Issue にコメントを追加するべきです
 - **週次チェック:** PM は週次チームミーティング中に更新を促すべきです
 - **フェーズ移行時:** 各プロジェクトフェーズの終わりに学習をキャプチャすることに特に注意するべきです
 
-### 社内レトロスペクティブの最終化
+### 社内レトロスペクティブの最終化 {#finalizing-the-internal-retrospective}
 
 プロジェクト完了時、PM は以下を行うべきです:
 
@@ -241,7 +241,7 @@ RAID（Risks、Actions、Issues、Decisions）フレームワークは、プロ�
 
 社内レトロスペクティブの例は [こちら](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ww-consulting/ps-plan/-/issues/18060)] にあります。実施中および完了した社内レトロのリストは、「PS-Plan」GitLab プロジェクト内で「Titles」と「Internal Retro」というテキストを検索することで見つけることができます。
 
-### ナレッジ共有
+### ナレッジ共有 {#knowledge-sharing}
 
 PS リーダーシップは定期的にレトロスペクティブデータをレビューし以下を行います:
 
@@ -251,7 +251,7 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
 - デリバリーキットとメソドロジーの更新
 - 将来のサービスオファリングの形成
 
-### ベストプラクティス
+### ベストプラクティス {#best-practices}
 
 - エントリーは客観的で解決策志向に保つ
 - 一般化ではなく具体的な例を含める
@@ -271,7 +271,7 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
 - 将来のエンゲージメントに情報を提供できる洞察を生成
 - CSAT 参加を促進
 
-### カスタマーレトロスペクティブのセットアップ
+### カスタマーレトロスペクティブのセットアップ {#setting-up-the-customer-retrospective}
 
 カスタマーレトロスペクティブ Issue は、コラボレーションプロジェクトをセットアップする際に自動的に作成されます:
 
@@ -283,9 +283,9 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
    - 社内レトロスペクティブと同様に、エンゲージメント全体を通じて顧客にフィードバックを文書化することを促す
    - 定期的な更新は、新鮮で関連性のある間に洞察をキャプチャするのに役立ちます
 
-### カスタマーレトロスペクティブの実施
+### カスタマーレトロスペクティブの実施 {#conducting-the-customer-retrospective}
 
-### 準備
+### 準備 {#preparation}
 
 1. **セッションをスケジュール:**
    - PS エンゲージメントの終わりに顧客とのクロージャー/レトロスペクティブミーティングを計画
@@ -295,7 +295,7 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
    - 各メインセクションの下のフィードバックの前にイニシャルを追加するよう、チームメンバーに依頼
    - 既存のフィードバックに同意する場合、元の貢献者と共にイニシャルを追加するべきです
 
-### セッション中
+### セッション中 {#during-the-session}
 
 レトロスペクティブミーティングは、Issue テンプレートに含まれる以下の主要セクションをカバーするべきです:
 
@@ -309,7 +309,7 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
 5. PS プロセスまたはメソドロジーに関するフィードバック
 6. 顧客の声
 
-### 文書化とフォローアップ
+### 文書化とフォローアップ {#documenting-and-following-up}
 
 レトロスペクティブセッション後:
 
@@ -318,7 +318,7 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
 3. アクションアイテムを作成
 4. #ps-internal 内で洞察を共有
 
-### カスタマーレトロスペクティブのベストプラクティス
+### カスタマーレトロスペクティブのベストプラクティス {#best-practices-for-customer-retrospectives}
 
 - トーンを協調的かつ建設的に保つ
 - 具体的で実行可能なフィードバックに焦点を当てる
@@ -328,7 +328,7 @@ PS リーダーシップは定期的にレトロスペクティブデータを�
 - 引用と推薦を文書化（適切な許可付き）
 - レトロスペクティブを使って顧客との関係を強化する
 
-### 追加リソース
+### 追加リソース {#additional-resources}
 
 - [レトロスペクティブファシリテーション Issue/ガイド](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/cpr_gitops/-/blob/main/cpr_gitops/issue_templates/retrospective.md)
 - [カスタマーサーベイテンプレート](https://gitlab.gainsightcloud.com/v1/sites/survey/SurveyResponse?at=1I0025DXE6KKG8JCV1GWLAUNW5DYWBNMUL90)
@@ -409,7 +409,7 @@ Because industry parlance and GitLab terminology only differ slightly (for examp
 
 ##### Principles
 
-There are eight (8) key principles to make any GitLab engagement successful. These are generally acknowledged to be industry best practice, and customers that understand and fully embrace these principles are more likely to succeed. This is important for PS to stress with customers before and during engagements.
+There are eight (8) key principles to make any GitLab engagement successful. These are generally acknowledged to be industry best practice, and customers that understand and fully embrace these principles are more likely to succeed. This is important for PS to stress with customers before and during engagements.
 
 The key principles are:
 
@@ -450,7 +450,7 @@ Each engagement will successfully deliver one or several [MVP pilot(s)](professi
 
 MVP Pilot Phases of an engagement consist of:
 
-1. [Discovery](professional-services-delivery-methodology/discovery/_index.md) - The initial phase to assess capabilities  and validate assumptions to ensure we’re **building the right thing and meeting customer needs**
+1. [Discovery](professional-services-delivery-methodology/discovery/_index.md) - The initial phase to assess capabilities  and validate assumptions to ensure we’re **building the right thing and meeting customer needs**
 2. [Team Readiness](professional-services-delivery-methodology/team-readiness/_index.md) - The process to define people, process and structures to **prepare teams operating in an iterative way**
 3. [Sprint 0](professional-services-delivery-methodology/sprint0/_index.md) - The initial sprint where the **team aligns on norms and objectives, and key technology choices**
 4. [Sprinting](professional-services-delivery-methodology/cadence-backlog-sprints/_index.md) - The execution and delivery process for teams to **deliver the GitLab engagement**
@@ -554,32 +554,7 @@ Once its identified that the customer will likely want to engage with profession
 
 ## 2. Scoping
 
-- **DRI**: Engagement Manager
-- **Supported By**: PS Practice, Account Team (SAE/AE, SA, CSM)
-
-### Gather Data
-
-After the [services calculator](https://services-calculator.gitlab.io/) is run by the Account Team, scoping issues and Project Scheduling Intake issues are automatically created and land in the [PS Plan](https://gitlab.com/gitlab-com/customer-success/professional-services-group/ps-plan/-/issues) Project. Using this customer scoping issue and Project Scheduling Intake issue, the engagement manager gathers data asynchronously from the account team. Questions about the potential engagement can sometimes be answered by the Account Team from the discovery that was done already. We want to make sure we avoid asking duplicate questions to the customer. In some cases when the account team cannot provide the level of detail to create an egagement, the EM will meet with the Account team and Customer to ask additional discovery questions to get to a level of detail needed. Once the data has been gathered, the EM will populate the answers to the Project Scheduling Intake issue.
-
-### Create Engagement Estimate
-
-A PS Engagement Estimate spreadsheet used for scoping services. The Engagement Manager uses the [PS engagement estimate spreadsheet](https://docs.google.com/spreadsheets/d/1wkmKhhGyLoxqWCXFtiI99tNgVaEJ-hTQJRwTOsU0j_Y/edit#gid=1815139260) to define the services in scope and estimate the amount of time for each activity. There is a catalog of activities in the [SOW generation automation](https://gitlab.com/services-calculator/services-calculator.gitlab.io) project or a list of services can be found at our [offerings framework](/handbook/customer-experience/professional-services-engineering/framework) page.
-
-### Iterate / Review Engagement Estimate
-
-After the first iteration of building detail into the straw-man, the Engagement manager posts a request for review in the [professional services slack channel](/handbook/customer-experience/professional-services-engineering/working-with/#slack) to the Account team. Often the Engagement Manager will get on a zoom call with the customer and provide context and gather feedback from the customer.
-
-### Generate SOW
-
-Once the Engagement Manager can get buy in from the account team and/or customer on the size and activities included in the services engagement, the [SOW generation automation](https://gitlab.com/services-calculator/services-calculator.gitlab.io) can be run using the straw-man as an input.  The engagement manager is responsible for running this automation which can be done by following the instructions on the readme in the above project.
-
-### Iterate/Review SOW Data
-
-Once the SOW is generated, it is ready for review by the account team. Iteration can occur here but should be minimized if the proper iteration was done on the Straw-man Steps.
-
-### SOW Review/Approval
-
-After one or more rounds of iteration on feedback from the account team, the SOW will be ready for Review and Approval by Sr. Director of Professional Services. The review processes are signaled in the [professional services slack channel](/handbook/customer-experience/professional-services-engineering/working-with/#slack) and **at-mention** the GitLab engagement stakeholders.
+Scoping, estimating and SOW approval are described in [Professional Services Pre-Sales Methodology](/handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/#2-scoping).
 
 ## 3. Delivery Prep
 
@@ -604,23 +579,7 @@ Check out the PS Delivery methodology to understand the details around pre-sales
 
 ### 4. SOW Execution/Close
 
-- **DRI** Engagement Manager
-- **Supported By**: PS Leader, Sr. PSE, SAE/AE, Legal, Finance, Deal Desk
-
-Finance Approval
-The engagement manager can kick off the finance approval process in Salesforce. TODO: Add more details.
-
-### Legal Approval
-
-The Engagement Manager is responsible for creating a Legal Approval Case in Salesforce from the associated opportunity. This process often involves reviewing and accepting redlines from the customer and from our legal team. The source of truth for the latest SOW is managed in the SFDC legal case. The EM should coordinate who "holds the pen" to ensure we maintain version control of the SOW with the latest redlines.
-
-### Customer Signature
-
-Once the SOW has been approved by PS leadership, Legal and Revenue, the account team is owns the process of executing the SOW. They should take the approved SOW from the legal case and route it for signature with the customer.
-
-### Deal Desk updates SFDC
-
-Once the SOW is fully executed, the deal desk team updates the Salesforce PS-Only opportunity to `closed-won`.
+SOW approval, signature and closing the opportunity are described in [Professional Services Pre-Sales Methodology](/handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/#4-sow-executionclose).
 
 ### Journal Epic (Delivery Kit)
 

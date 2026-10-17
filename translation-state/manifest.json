@@ -650,27 +650,27 @@
     },
     "content/handbook/business-technology/tech-stack-applications.md": {
       "path": "content/handbook/business-technology/tech-stack-applications.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:06:55+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T09:00:26+00:00",
       "model": "codex",
-      "input_hash": "c0aec7dd4c24ad3a5ba01b5dfa40611b713dc8ab05d887b33323fe500e670555",
-      "upstream_committed_at": "2026-09-13T10:44:23-04:00"
+      "input_hash": "ad7cc2162a504860b9f4eb8d41b8278c4d7caa189383f264acdd805fa455f994",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/business-technology/tech-stack-guide/index.md": {
       "path": "content/handbook/business-technology/tech-stack-guide/index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T09:00:26+00:00",
       "model": "codex",
-      "input_hash": "5e54fd7799397f4836bcfc5213e91947cc549f184f3df586adbeca3550d0783e",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "98244215fe3265fd940d11da02a768ee0b3d48b405cc12c1835908b404c75afe",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/business-technology/tech-stack.md": {
       "path": "content/handbook/business-technology/tech-stack.md",
-      "upstream_sha": "ad217b024ba77ae34e6f41cb4a28107135c5dba5",
-      "translated_at": "2026-08-01T16:25:30+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-17T09:00:26+00:00",
       "model": "codex",
-      "input_hash": "06120ec71db5dc9ce0664acd81acee32b2c0f8fb3039ea4ae637df2919b3a400",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "b325ee42e88d88478cca494d8398345d7ae567a578148ab4e302c4b5459467d8",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/business-technology/tools/_index.md": {
       "path": "content/handbook/business-technology/tools/_index.md",
@@ -37738,11 +37738,11 @@
     },
     "content/handbook/customer-experience/csm/csm-manager/_index.md": {
       "path": "content/handbook/customer-experience/csm/csm-manager/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T00:10:26+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T09:24:31-07:00",
+      "translated_at": "2026-10-17T09:00:26+00:00",
       "model": "codex",
-      "input_hash": "148d990b183ca703777a8ecaef0736abc5038de74efc48abdde1b2e0f83508b8"
+      "input_hash": "8d0f97a8405f0d49227049824bc136f106cc44308b76a0f6c2784625b2116fce"
     },
     "content/handbook/customer-experience/csm/csm-manager/roles/_index.md": {
       "path": "content/handbook/customer-experience/csm/csm-manager/roles/_index.md",
@@ -37954,11 +37954,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T00:10:26+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-14T13:22:17-04:00",
+      "translated_at": "2026-10-17T08:56:07+00:00",
       "model": "codex",
-      "input_hash": "b69c81987ee45cf588e3ef0383619dc127eeef9f9d76a8c61a49da06286499c3"
+      "input_hash": "50112d7659cf63b4cabfe4ae9cf3f5e3dbb679891381779a6c699884d656cbf9"
     },
     "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/scoping-information/_index.md",
@@ -38010,11 +38010,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-presale-methodology/_index.md",
-      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
-      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
-      "translated_at": "2026-10-04T21:08:34+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-14T13:22:17-04:00",
+      "translated_at": "2026-10-17T08:53:47+00:00",
       "model": "codex",
-      "input_hash": "ed4fd613c630ec1aa06db85b22e257235188ec5c652d61afed3fa64379b08fad"
+      "input_hash": "fb9c8aed83afa4178b1a327b1e850c73ed78d7625a6d1b66736aebcdd3889a11"
     },
     "content/handbook/customer-experience/professional-services-engineering/project-mgmt/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/project-mgmt/_index.md",
@@ -38362,11 +38362,11 @@
     },
     "content/handbook/customer-experience/education-services/tech-stack/articulate.md": {
       "path": "content/handbook/customer-experience/education-services/tech-stack/articulate.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T00:10:26+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00",
+      "translated_at": "2026-10-17T08:57:27+00:00",
       "model": "codex",
-      "input_hash": "d69f468bf9af4a75b0c945b4eed630496528b984329db2fc5bcc3b73f449e3f7"
+      "input_hash": "20530ae5ff65b96bc47d64fc1327ab496b5c3a8a9210c8008ff81d10e301e313"
     },
     "content/handbook/customer-experience/product-usage-data/metrics-based-playbooks.md": {
       "path": "content/handbook/customer-experience/product-usage-data/metrics-based-playbooks.md",
@@ -38394,11 +38394,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/lms.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/lms.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T00:10:26+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00",
+      "translated_at": "2026-10-17T08:56:07+00:00",
       "model": "codex",
-      "input_hash": "5687101ab42b058b6d7d0e00b04c6dab3a9f941c74c82c996499407e44ba2712"
+      "input_hash": "80339963facac07417d2ee9fb66f90b1deb1a65c6ca23f0e2abfe129773ea266"
     },
     "content/handbook/customer-experience/csm/segment/cse/cse-assigned-operating-rhythm.md": {
       "path": "content/handbook/customer-experience/csm/segment/cse/cse-assigned-operating-rhythm.md",
@@ -38434,11 +38434,11 @@
     },
     "content/handbook/customer-experience/education-services/tech-stack/instruqt.md": {
       "path": "content/handbook/customer-experience/education-services/tech-stack/instruqt.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T00:10:26+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00",
+      "translated_at": "2026-10-17T08:57:27+00:00",
       "model": "codex",
-      "input_hash": "70a79f6e40714590a7188313f59dc2fea6644a14bb4da70c00e4e2acd5c67422"
+      "input_hash": "78b794030a395aa14032ae970388780a915e0bc35a5376ca3147133c53f3e80b"
     },
     "content/handbook/customer-experience/professional-services-engineering/skus.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/skus.md",
@@ -38786,11 +38786,11 @@
     },
     "content/handbook/customer-experience/education-services/gitlab-education-services-support.md": {
       "path": "content/handbook/customer-experience/education-services/gitlab-education-services-support.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00",
+      "translated_at": "2026-10-17T08:57:27+00:00",
       "model": "codex",
-      "input_hash": "998153adf0d818d9fe7cd5a520bb880af3d9d64270d98d00d5b71b023387167c"
+      "input_hash": "646bbc9293eccf54037d77f0928122ecfcb7e6fe858af9370d00ca48a3ba545c"
     },
     "content/handbook/customer-experience/workshops/ci-workshop.md": {
       "path": "content/handbook/customer-experience/workshops/ci-workshop.md",
@@ -38834,11 +38834,11 @@
     },
     "content/handbook/customer-experience/education-services/tech-stack/credly.md": {
       "path": "content/handbook/customer-experience/education-services/tech-stack/credly.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00",
+      "translated_at": "2026-10-17T08:57:27+00:00",
       "model": "codex",
-      "input_hash": "58ff703a22335f424fbfafab6c3b7283669f4b64502aa5c2c9e16c15db800ed8"
+      "input_hash": "f5d8f61ea4a498ee82d51a052254922165145af1a5aee70a724f67a1940ef787"
     },
     "content/handbook/customer-experience/demo-systems/environments/training-cloud.md": {
       "path": "content/handbook/customer-experience/demo-systems/environments/training-cloud.md",
@@ -38890,11 +38890,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/aws-marketplace.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/aws-marketplace.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-14T13:22:17-04:00",
+      "translated_at": "2026-10-17T08:56:07+00:00",
       "model": "codex",
-      "input_hash": "42d321df0027346c4fd05779bc3ac674bcc9fa4be85ce4badebd0f4a45ca594a"
+      "input_hash": "e4a47e5f0a5c41df5b9305100fbc1149c205c5320ecb2c9b9fb23d960d1d4cfe"
     },
     "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/task-prioritization.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/engagement-mgmt/task-prioritization.md",
@@ -38946,11 +38946,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-15T09:21:24-04:00",
+      "translated_at": "2026-10-17T08:57:27+00:00",
       "model": "codex",
-      "input_hash": "180d5302cfe545e7476e4316bf69a18d29e21df1c37e52bb2fc49c1fded955a5"
+      "input_hash": "7b3b34b684abce68dd8b43f61b420e2f85bd83f40e681fc1baf1051112213e18"
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1.md",
@@ -39018,11 +39018,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-15T09:21:24-04:00",
+      "translated_at": "2026-10-17T08:57:27+00:00",
       "model": "codex",
-      "input_hash": "00c49071cdb848f6169ac9510f05a62c45550ec268724938b23116da88a89783"
+      "input_hash": "4736e55d8b200e854c1dbce0c55cd2422cde711eb58a76d430303707f84d523d"
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5.md",
@@ -39202,11 +39202,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-15T09:21:24-04:00",
+      "translated_at": "2026-10-17T08:56:07+00:00",
       "model": "codex",
-      "input_hash": "b873e6d5cb951d8abff0e0d054858410ccedbc6faf546ee3e43cd8afd57bb705"
+      "input_hash": "3be560448385efe6f98d33708c565457f833250e521c5a8b0b0b99690dea0c12"
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab5.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab5.md",
@@ -39498,27 +39498,27 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/selling.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/selling.md",
-      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
-      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
-      "translated_at": "2026-10-04T21:06:32+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-14T13:22:17-04:00",
+      "translated_at": "2026-10-17T08:53:47+00:00",
       "model": "codex",
-      "input_hash": "af0d4b11e9a2a7cada697668f16ddcf6804f6f895c31856c5273ece1219bf6f6"
+      "input_hash": "297331dbaa94cf1165d96a7a8857afe076d432bbb9fc7e728e14f66f8e69b127"
     },
     "content/handbook/customer-experience/professional-services-engineering/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/_index.md",
-      "upstream_sha": "9e86f098ae65daef23f14ddf0e7d8172bd565a6b",
-      "upstream_committed_at": "2026-09-29T14:09:20-04:00",
-      "translated_at": "2026-10-04T21:06:32+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-14T13:22:17-04:00",
+      "translated_at": "2026-10-17T08:53:47+00:00",
       "model": "codex",
-      "input_hash": "4ff17ac9a97b22f6590250680b6058c39690a6a9ff0054c99ebdd2e38c348360"
+      "input_hash": "73d5896ffcbec1a60ecdbbb0522f325a49d3e4a4c67488fb405b301d0e5bb928"
     },
     "content/handbook/customer-experience/professional-services-engineering/working-with.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/working-with.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-14T13:22:17-04:00",
+      "translated_at": "2026-10-17T08:53:47+00:00",
       "model": "codex",
-      "input_hash": "58da82f0d8d7c300b6c42116310762fc4db372cbc3670248d84ab24100eed07b"
+      "input_hash": "a34b41211915a8bc8d93f1a7235dd428ad0815a4b9006d6b618eddaa304f902d"
     },
     "content/handbook/customer-experience/professional-services-engineering/practice-mgmt.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/practice-mgmt.md",
@@ -39594,11 +39594,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-14T13:22:17-04:00",
+      "translated_at": "2026-10-17T08:53:47+00:00",
       "model": "codex",
-      "input_hash": "a4f4b7346f05cb232160b2ed541a171cdd7464f633e2317a8e41251a94d8a72b"
+      "input_hash": "b26eb606bc8f358afa0225d6261ccf394f5722d388d5584b7e056f71d69753d9"
     },
     "content/handbook/customer-experience/professional-services-engineering/professional-services-operations/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-operations/_index.md",
@@ -39826,11 +39826,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00",
+      "translated_at": "2026-10-17T08:56:07+00:00",
       "model": "codex",
-      "input_hash": "397a01ae7a99bd01586eb4d086c4d18b5a7bf4476e292c34bf0adb343cc02bf3"
+      "input_hash": "a9bec64376775302b62166099727d8ce72f8b275a89a68dbe41ec07166f92678"
     },
     "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-scheduling/_index.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-scheduling/_index.md",

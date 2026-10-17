@@ -2,23 +2,23 @@
 title: "イテレーション 0"
 description: "イテレーション 0 は私たちの内部の EM から PS への移管ミーティングから始まり、顧客との計画・設計セッションまで続きます。この重要なフェーズはプロジェクトの基盤を確立し、GitLab と顧客チーム間の整合性を確保します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T08:56:07+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
 **クイックリンク:** | [イテレーション 0 の基本](../iteration-0-fundamentals/_index.md) | [Delivery Kits](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits)
 
-## フェーズ概要
+## フェーズ概要 {#phase-overview}
 
 イテレーション 0 は、互いに積み重なる 4 つの主要な活動で構成されます。
 
 1. [EM から PS への移管](#emps-transition) - 内部の知識移管
 2. [ステークホルダープランニングミーティング](#stakeholder-planning-meeting) - 顧客との初期整合
 3. [顧客キックオフ](#customer-kickoff) - チーム全体のエンゲージメント
-4. [サポート準備](#prepare-support-for-issues) - 先回りした Issue 管理
+4. [サポート準備](#prepare-support-for-issues) - 先回りした問題管理
 
 各活動には、プロジェクトの円滑なスタートを確保するための具体的なインプット、プロセス、アウトプットがあります。
 
@@ -28,7 +28,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 **目的:** アカウントの背景を集め、SOW を検証し、顧客対応活動の準備を行う。
 
-### 事前ミーティング準備
+### 事前ミーティング準備 {#pre-meeting-preparation}
 
 移管ミーティングの前に:
 
@@ -48,7 +48,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
    - [discovery のベストプラクティス](../discovery/_index.md) を考慮
    - 複雑なプログラムの場合は [RACI テンプレート](https://docs.google.com/spreadsheets/d/1nb_sEI-M3IwNgkYQA2uKAo9IDijstPtUGCtLsHlwrtI/edit?gid=1394419027#gid=1394419027) を準備
 
-### ミーティングの実施
+### ミーティングの実施 {#meeting-execution}
 
 議論は次に焦点を当てます。
 
@@ -58,7 +58,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - ステークホルダープランニングとキックオフ のスケジュール計画
 - リスクと依存関係
 
-### 主要なアウトプット
+### 主要なアウトプット {#key-outputs}
 
 ミーティング後、以下の完了を確認します。
 
@@ -76,13 +76,13 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 **目的:** プロジェクトのスコープ、リソース、管理アプローチ、依存関係を整合させ、チーム全体のキックオフ前に期待のずれを明らかにする。
 
-### ミーティングのセットアップ
+### ミーティングのセットアップ {#meeting-setup}
 
 1. 顧客 PM および GitLab と顧客チーム双方の主要ステークホルダーとの専用ミーティングをスケジュールします。
 2. [ステークホルダープランニングテンプレート](https://docs.google.com/presentation/d/1vVJQrJeGG-yLAeso_iKkb80H5kE7wStyBAj1sj45sY4/edit#slide=id.g923452f41b_1_5) を使って議論をガイドします
 3. プロジェクトパラメータの相互理解に焦点を当てます
 
-### 主な議論トピック
+### 主な議論トピック {#key-discussion-topics}
 
 1. **プロジェクトステークホルダー**
    - すべての主要参加者とその役割を特定
@@ -112,7 +112,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
    - オーナーと期日を伴うアクションアイテムをドキュメント化
    - 顧客キックオフと Discovery セッションの計画
 
-### 主要なアウトプット
+### 主要なアウトプット {#key-outputs-1}
 
 - [ ] 検証されたステークホルダーリストと役割
 - [ ] タイムラインとベロシティに関する期待の整合
@@ -129,14 +129,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 **目的:** すべての関連プロジェクトステークホルダーを集め、プロジェクトの目的、アプローチ、次のステップを整合させ、迅速な実行を可能にする。
 
-### 準備
+### 準備 {#preparation}
 
 1. EM から PS への移管とステークホルダープランニングから得たインサイトを統合
 2. [Kickoff デッキテンプレート](https://docs.google.com/presentation/d/1Sva2u7NGxUTmDxQNBpqmFm_ep9HHlU86WyhON-To5lU/edit#slide=id.g3427bc5c553_0_243) を使ってプレゼンテーションを準備
 3. ステアリングコミッティのあるプロジェクトには、[SteerCO テンプレート](https://docs.google.com/presentation/d/1TDKOJeuzR1uy18umu6ovy30l_A986pOEatFn_7eiNbQ/edit#slide=id.g2e563e08cf5_0_1) も準備
 4. すべての主要ステークホルダーが招待されていることを確認
 
-### ミーティングコンテンツ
+### ミーティングコンテンツ {#meeting-content}
 
 以下の包括的な概要を提示します。
 
@@ -147,7 +147,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - コミュニケーションとレポーティングのケイデンス
 - 次のステップと即時のアクション
 
-### 主要なアウトプット
+### 主要なアウトプット {#key-outputs-2}
 
 - [ ] プロジェクト目的とアプローチに対する理解の確認
 - [ ] Discovery & Planning セッションのスケジュール
@@ -156,13 +156,13 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ---
 
-## Issue 対応のサポート準備 {#prepare-support-for-issues}
+## 問題対応のサポート準備 {#prepare-support-for-issues}
 
-**目的:** Support チームに主要なプロジェクト情報を提供し、エンゲージメント中の Issue 解決を効率化する。
+**目的:** Support チームに主要なプロジェクト情報を提供し、エンゲージメント中の問題解決を効率化する。
 
-> このプロセスは実装などのインフラ関連プロジェクトでは特に重要ですが、サポート Issue が発生する可能性のあるあらゆるエンゲージメントでも価値があります。
+> このプロセスは実装などのインフラ関連プロジェクトでは特に重要ですが、サポート上の問題が発生する可能性のあるあらゆるエンゲージメントでも価値があります。
 
-### ZenDesk アクセス
+### ZenDesk アクセス {#zendesk-access}
 
 ZenDesk light（読み取り専用）アクセスを持っていない場合:
 
@@ -172,10 +172,10 @@ ZenDesk light（読み取り専用）アクセスを持っていない場合:
   1. [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を起票
   1. `System name` の値が `Zendesk - US Federal, light agent access` であることを確認
   1. マネージャーにアサイン
-  1. マネージャーが承認したら（AR の指示に従って）、`Zendesk - US Federal` の [tech_stack オーナー](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) に通知
+  1. マネージャーが承認したら（AR の指示に従って）、マネージャーが `Zendesk - US Federal` の [Tech Stack オーナー](/handbook/business-technology/tech-stack-applications/)に通知します
      - このアクセスを得るには米国市民権が必要であることに留意してください
 
-### サポートノートの作成
+### サポートノートの作成 {#creating-a-support-note}
 
 
 {{% alert title="注記" color="danger" %}}
@@ -185,13 +185,13 @@ Customer Support Operations（Zendesk US Government にアクセスできる人�
 {{% /alert %}}
 
 
-#### ステップ 1: 顧客組織を見つける
+#### ステップ 1: 顧客組織を見つける {#step-1-find-the-customer-organization}
 
 1. [Organizations Repository](https://gitlab.com/gitlab-com/support/zendesk-global/organizations/-/tree/master/organizations) にアクセス
 2. 顧客名を検索（ハッシュに続いて Salesforce 名が表示されます）
    ![Zendesk の組織リポジトリで顧客名を検索した画面](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/zen-search.png)
 
-#### ステップ 2: YAML ファイルを編集
+#### ステップ 2: YAML ファイルを編集 {#step-2-edit-the-yaml-file}
 
 1. 検索から YAML を選択し、`Edit > Open in Web IDE` をクリック
    ![YAML ファイルを Web IDE で編集する操作画面](/images/customer-experience/professional-services-engineering/professional-services-delivery-methodology/iteration-0/edit-yaml.png)

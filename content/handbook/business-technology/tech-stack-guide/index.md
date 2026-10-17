@@ -1,98 +1,90 @@
 ---
-title: "テックスタックガイドリファレンス"
-description: "テックスタックガイドの作成と維持管理のためのリファレンス。"
+title: "Tech Stack ガイドリファレンス"
+description: "Tech Stack ガイドの作成と維持管理のためのリファレンス。"
 upstream_path: "/handbook/business-technology/tech-stack-guide/"
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T09:00:26+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
-## テックスタックガイドとは？
+## Tech Stack ガイドとは？ {#what-is-a-tech-stack-guide}
 
-> **注意:** テックスタックアプリを閲覧するには **[テックスタックインデックス](/handbook/business-technology/tech-stack/)** を使用してください。
+> **注意:** Tech Stack アプリを閲覧するには **[Tech Stack インデックス](/handbook/business-technology/tech-stack/)** を使用してください。
 
-すべてのアプリケーションには、そのアプリの使用方法・管理方法・他のシステムとのインテグレーション方法を誰もが理解できるように、専用の `テックスタックガイド` ハンドブックページが必要です。テックスタックガイドの対象読者は、そのアプリを使用したり、拡張したり、連携したり、あるいは GitLab テックスタックエコシステム全体の中でどのように位置づけられているかを理解する必要があるすべての人です。各ガイドの作成・維持管理はチームの共同作業であり、ビジネスシステムオーナー、テクニカルオーナー、および実装・運用に関わるその他のメンバーとのコラボレーションが必要です。各テックスタックガイドは、他の機能ベースのハンドブックコンテンツとともに、ビジネスオーナーの機能セクション内に配置されます。
+すべてのアプリケーションには、そのアプリの使用方法・管理方法・他のシステムとのインテグレーション方法を誰もが理解できるように、専用の `Tech Stack Guide` ハンドブックページが必要です。Tech Stack ガイドの対象読者は、そのアプリを使用したり、拡張したり、連携したり、あるいは GitLab Tech Stack エコシステム全体の中でどのように位置づけられているかを理解する必要があるすべての人です。各ガイドの作成・維持管理はチームの共同作業であり、ビジネスシステムオーナー、テクニカルオーナー、および実装・運用に関わるその他のメンバーとのコラボレーションが必要です。各 Tech Stack ガイドは、他の部門別のハンドブックコンテンツとともに、Business Owner の部門のセクション内に配置されます。
 
-## アプローチ
+## アプローチ {#approach}
 
-このページの目標は、アプリケーションの `テックスタックガイド` を文書化する方法を説明することです。**アプリのテックスタックガイドは、そのテクノロジーの機能ビジネスオーナーのセクションに配置する必要があります。** すべてのアプリの SSOT は [テックスタック YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) となり、YAML がページの主要部分を自動入力します。ただし、データモデル・インテグレーション・主要レポート/ダッシュボードなど、YAML ファイルに含まれていないセクションも必要に応じてドキュメントを完全なものにするために追加できます。
+このページでは、アプリケーションの `Tech Stack Guide` を文書化する方法を説明します。**アプリの Tech Stack ガイドは、そのテクノロジーの Functional Business Owner のセクションに配置する必要があります**。すべてのアプリの SSOT は [Tech Stack](/handbook/business-technology/tech-stack-applications/)です。ドキュメントを完全なものにするため、データモデル、インテグレーション、主要レポート/ダッシュボードなど、ページの他のセクションを必要に応じて記入してください。
 
-テックスタック YAML とテックスタックガイドの関係について考える方法：
+Tech Stack と Tech Stack ガイドの関係は、次のように考えてください：
 
-- テックスタック YAML は GitLab が所有・運用するすべてのアプリのレジストリです（何が？）
-- テックスタックガイドは各テックスタックアプリのビジネス・技術ワークフローをカバーします（なぜ？どのように？）
-- YAML の `handbook_link` キー/プロパティが対応するテックスタックガイドへリンクします
+- Tech Stack は GitLab が所有または運用するすべてのアプリのレジストリです（何か）
+- Tech Stack ガイドは各 Tech Stack アプリのビジネス・技術ワークフローをカバーします（なぜ？どのように？）
+- Tech Stack のエントリーが対応する Tech Stack ガイドへリンクします
 
 また、内部ハンドブックに置かれるセキュリティアプリケーション用の Security Stack YAML という 2 番目の YAML ファイルを作成する予定です。これらのアプリケーションにも同じテンプレートアプローチを使用します。
 
 
 {{% alert color="warning" %}}
-テックスタックガイドテンプレート
+Tech Stack ガイドテンプレート
 {{% /alert %}}
 
 
-## テックスタックアプリケーション名
+## Tech Stack アプリケーション名 {#tech-stack-application-name}
 
-テックスタックの唯一の情報源は [テックスタック YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリの詳細情報が含まれています。
+[Tech Stack](/handbook/business-technology/tech-stack-applications/)が唯一の情報源であり、このアプリについての詳細情報が含まれています。
 
-```markdown
-{{%/* tech-stack "Application Name" */%}}
-```
-
-### 実装
+### 実装 {#implementation}
 
 アプリがどのように実装されたかに関する情報。GitLab のエピックや Issue へのリンクを含め、出発点とこのソリューションに至った経緯を理解できるようにしてください。
 
-### システム図
+### システム図 {#system-diagram}
 
 システムがどのようにデプロイされ、他のアプリとどのように接続されているかを示す図を含めてください。[Mermaid 図](https://mermaid-js.github.io/docs/mermaid-live-editor-beta/#/edit/)が理想的ですが、どんな図でも無いよりはましです。
 
-### データモデル
+### データモデル {#data-model}
 
 主要なデータオブジェクトとその相互関係を示す ER 図を含めてください。（理想的には）[Mermaid ER 図](https://mermaid-js.github.io/docs/mermaid-live-editor-beta/)、LucidChart、またはその他の図作成ツールで作成できます。
 
-### インテグレーション
+### インテグレーション {#integrations}
 
-このアプリと他のテックスタックアプリやシステムとのインテグレーションを一覧します。開発プロジェクト、コード、図、Issue へのリンクなど、利用可能な追加資料へのリンクも含めてください。
+このアプリと他の Tech Stack アプリやシステムとのインテグレーションを一覧します。開発プロジェクト、コード、図、Issue へのリンクなど、利用可能な追加資料へのリンクも含めてください。
 
-### 主要レポート / ダッシュボード
+### 主要レポート / ダッシュボード {#key-reports--dashboards}
 
 アプリケーションの運用に使用される重要なレポートとダッシュボードを、利用可能な場合はリンクとともに一覧します。
 
-## テックスタックガイド例 #1: Thought Industries LMS テックスタックガイド
+## Tech Stack ガイド例 #1: Thought Industries LMS Tech Stack ガイド {#tech-stack-guide-example-1-thought-industries-lms-tech-stack-guide}
 
-[Thought Industries LMS テックスタックガイド](/handbook/customer-experience/professional-services-engineering/education-services/lms/)
+[Thought Industries LMS Tech Stack ガイド](/handbook/customer-experience/professional-services-engineering/education-services/lms/)
 
 重要な注意事項：
 
-1. このテックスタックガイドは、Professional Services がアプリのビジネスオーナーであるため、[GitLab Professional Education Services](/handbook/customer-experience/professional-services-engineering/education-services) ハンドブック内に配置されています
-2. Thought Industries Learning Management System の [テックスタック YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) の `handbook_link` キーがテックスタックガイドを参照しています
+1. この Tech Stack ガイドは、Professional Services がアプリのビジネスオーナーであるため、[GitLab Professional Education Services](/handbook/customer-experience/professional-services-engineering/education-services) ハンドブック内に配置されています
+2. [Tech Stack](/handbook/business-technology/tech-stack-applications/)の Thought Industries Learning Management System エントリーが Tech Stack ガイドを参照しています
 
-## テックスタックガイド例 #2: Zuora Billing
+## Tech Stack ガイド例 #2: Zuora Billing {#tech-stack-guide-example-2-zuora-billing}
 
-### コード
+### コード {#code}
 
 ```markdown
-テックスタックの唯一の情報源は [テックスタック YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリの詳細情報が含まれています。
-
-{{%/* tech-stack "Zuora Billing" */%}}
+The [Tech Stack](/handbook/business-technology/tech-stack-applications/) is the single source of truth and contains more detail about this app.
 ```
 
-### 結果
+### 結果 {#result}
 
-テックスタックの唯一の情報源は [テックスタック YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリの詳細情報が含まれています。
-
-
-{{% tech-stack "Zuora Billing" %}}
+[Tech Stack](/handbook/business-technology/tech-stack-applications/)が唯一の情報源であり、このアプリについての詳細情報が含まれています。
 
 
-### 実装
+
+### 実装 {#implementation-1}
 
 Zuora は [Zuora Central Platform](https://www.zuora.com/products/zuora-platform/) 上に構築された複数のアプリモジュールで構成されています。[Zuora Billing](https://www.zuora.com/products/billing-software/) はそのモジュールの一つです。
 
-### システム図
+### システム図 {#system-diagrams}
 
 [Zuora Billing](https://www.zuora.com/products/billing-software/) は、より大きな [Zuora Central Platform](https://www.zuora.com/products/zuora-platform/) 内の複数モジュールの一つです。
 
@@ -104,7 +96,7 @@ graph TD
     Z --> ZCPQ[Zuora CPQ]
 ```
 
-### Quote to Cash ワークフロー
+### Quote to Cash ワークフロー {#quote-to-cash-workflow}
 
 Zuora Billing は **[Quote to Cash ワークフロー](/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/#quote-to-cash-introduction)** の中核モジュールであり、他の多くのアプリと連携しています。
 
@@ -132,13 +124,13 @@ graph TD
     ZB ---> |Platypus|N
 ```
 
-### Lead to Cash ワークフロー
+### Lead to Cash ワークフロー {#lead-to-cash-workflow}
 
 Zuora Billing は **[Lead to Cash ワークフロー](/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/#lead-to-cash-flow)** の主要モジュールです。
 
-![Lead to Cash Workflow](/images/business-technology/tech-stack-guide/2022-06-03_lead_to_cash_flow.png)
+![Lead to Cash ワークフロー](/images/business-technology/tech-stack-guide/2022-06-03_lead_to_cash_flow.png)
 
-### 主要レポート / ダッシュボード
+### 主要レポート / ダッシュボード {#key-reports--dashboards-1}
 
 Zuora Billing では、チームが [Zuora Standard Reports](https://knowledgecenter.zuora.com/Zuora_Platform/Data/Reporting/AB_Reporting_Quick_Reference/C_Standard_Reports) を使用しており、最も重要なレポートは以下のとおりです：
 
@@ -148,13 +140,13 @@ Zuora Billing では、チームが [Zuora Standard Reports](https://knowledgece
 
 また、Zuora データを含む Tableau ダッシュボードのコレクションもあります。これらのダッシュボードには Salesforce など他のデータソースのデータも含まれています。
 
-### データモデル
+### データモデル {#data-model-1}
 
 [Zuora Billing ビジネスオブジェクトモデル](https://knowledgecenter.zuora.com/Get_Started/Zuora_business_object_model)は、Zuora が内部でどのように構成されているかを示しています。
 
-![Zuora Billing Data Model](/images/business-technology/tech-stack-guide/2020_08_01_Zuora_Billing_object_model.png)
+![Zuora Billing データモデル](/images/business-technology/tech-stack-guide/2020_08_01_Zuora_Billing_object_model.png)
 
-### 主要データオブジェクト
+### 主要データオブジェクト {#key-data-objects}
 
 Zuora はこれらのオブジェクトの SSOT であり、データはそこで確認できます。また、主要オブジェクトは Snowflake でも確認できます：
 
@@ -169,11 +161,11 @@ Zuora はこれらのオブジェクトの SSOT であり、データはそこ�
   - [`dim_product_detail`](https://gitlab-data.gitlab.io/analytics/#!/model/model.gitlab_snowflake.dim_product_detail)
   - [`dim_subscription`](https://gitlab-data.gitlab.io/analytics/#!/model/model.gitlab_snowflake.dim_subscription)
 
-#### プロダクトカタログ
+#### プロダクトカタログ {#product-catalog}
 
 Zuora エンタープライズアプリガイドには、[GitLab のすべての SKU を管理するプロダクトカタログ](/handbook/business-technology/enterprise-applications/guides/zuora/#product-catalog)が含まれています。
 
-### インテグレーション
+### インテグレーション {#integrations-1}
 
 ```mermaid
 graph TD
@@ -190,19 +182,19 @@ subgraph Zuora Billing Integrations
 end
 ```
 
-#### Zuora から Salesforce へ
+#### Zuora から Salesforce へ {#zuora-to-salesforce}
 
 Zuora CPQ 経由で Zuora データを Salesforce に連携します。
 
-#### Customers Dot から Zuora Billing へ
+#### Customers Dot から Zuora Billing へ {#customers-dot-to-zuora-billing}
 
 CustomersDot データを [IronBank GEM](https://gitlab.com/gitlab-org/customers-gitlab-com/-/tree/main/#ironbank) を使用して [Zuora Subscribe API](https://developer.zuora.com/v1-api-reference/introduction/#tag/Subscriptions) と [Zuora Amend API](https://developer.zuora.com/v1-api-reference/introduction/#tag/Amendments) 経由で Zuora に連携します。
      * [Orders Harmonization は](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/intake/-/issues/616) [Zuora Orders API](https://developer.zuora.com/v1-api-reference/introduction/#tag/Orders) への移行を計画しています。
 
-#### Zuora から Snowflake へ
+#### Zuora から Snowflake へ {#zuora-to-snowflake}
 
 [Stitch Zuora インテグレーション](https://www.stitchdata.com/integrations/zuora)を使用して Zuora データを [Snowflake エンタープライズデータウェアハウス](/handbook/enterprise-data/platform/#our-data-stack)に連携します。
 
-#### Zuora から NetSuite へ
+#### Zuora から NetSuite へ {#zuora-to-netsuite}
 
 Zuora Revenue データは [Zuora Revenue to NetSuite インテグレーション](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/integrations/platypus/-/wikis/Integrations/Zuora-Revenue-to-Netsuite)を使用して NetSuite と同期されます。

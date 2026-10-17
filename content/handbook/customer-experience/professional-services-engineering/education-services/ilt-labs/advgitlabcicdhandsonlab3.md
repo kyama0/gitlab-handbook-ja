@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: レビューアプリ"
 description: "このハンズオンガイドでは、レビューアプリの作成プロセスについて説明します"
 upstream_path: /handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T08:56:07+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-15T09:21:24-04:00"
 ---
 
 このラボの目的は、Node.js アプリケーションからレビューアプリを作成することです。レビューアプリとは、プロジェクト内の各マージリクエストのために自動的に作成される一時的なアプリケーション環境です。これにより、開発者やステークホルダーは、変更をメインブランチにマージする前に、ライブの独立した環境で提案された変更をプレビューしてインタラクションできます。
@@ -17,7 +17,47 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 - Node.js アプリケーションからレビューアプリを作成する
 
-## タスク A. レビューアプリを作成する {#task-a-creating-a-review-app}
+## タスク A. Web アプリを作成する {#task-a-creating-a-web-app}
+
+このタスクでは、レビュー環境で実行する Web アプリケーションを作成します。後続のラボで使用する検索コードとテストを `main` ブランチに保持できるように、別の `review-app` ブランチで作業します。
+
+1. プロジェクトのリポジトリに移動します。
+
+1. **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチ名を `review-app` に設定し、**Create from** は `main` のままにして、**Create branch** を選択します。
+
+1. **Build > Pipeline Editor** を選択し、ブランチを **review-app** に設定します。
+
+1. `index.js` ファイルに express のコードを追加すると、その実行によって接続を待機する Web サーバーが作成されるため、`index.js` に対してテストを実行できなくなります。そのため、ファイルから `install deps`、`test binarysearch`、`test linearsearch` のジョブを削除します。`.gitlab-ci.yml` ファイルからこれらのジョブを削除し、**Commit changes** を選択します。
+
+1. プロジェクトのリポジトリに戻り、ブランチを **review-app** に設定します。
+
+1. `index.js` ファイルを選択します。
+
+1. **Edit > Edit single file** を選択します。
+
+1. 二分探索と線形探索のメソッドを削除し、Web アプリケーションを実行する次のコードを追加します。
+
+      ```js
+      const express = require('express')
+      const app = express()
+      const port = 4001
+
+      app.get('/', (req, res) => {
+        res.send('Hello World!')
+      })
+
+      app.listen(port, () => {
+        console.log(`Example app listening on port ${port}`)
+      })
+      ```
+
+1. 変更を `review-app` ブランチにコミットします。
+
+## タスク B. レビューアプリを作成する {#task-b-creating-a-review-app}
 
 1. 左サイドバーで **Operate > Environments** を選択します。
 
@@ -100,7 +140,8 @@ lastmod: "2026-09-24T21:34:11+02:00"
           - ssh root@$ip 'cd /www/ && npm i express'
           - ssh root@$ip 'cd /www/ && npm i -g pm2'
           - scp index.js root@$ip:/www
-          - ssh root@$ip 'pm2 start -f /www/index.js'
+          - ssh root@$ip 'pm2 delete index || true'
+          - ssh root@$ip 'pm2 start /www/index.js --name index'
       ```
 
 1. 最終的なジョブスクリプトは次のようになります:
@@ -125,7 +166,8 @@ lastmod: "2026-09-24T21:34:11+02:00"
           - ssh root@$ip 'cd /www/ && npm i express'
           - ssh root@$ip 'cd /www/ && npm i -g pm2'
           - scp index.js root@$ip:/www
-          - ssh root@$ip 'pm2 start -f /www/index.js'
+          - ssh root@$ip 'pm2 delete index || true'
+          - ssh root@$ip 'pm2 start /www/index.js --name index'
         environment:
           name: review/$CI_COMMIT_REF_NAME
           url: http://$ip:4001
@@ -143,9 +185,9 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. **New branch** を選択します。
 
-1. ブランチ名を `test_review` に設定して **Create branch** を選択します。
+1. ブランチ名を `test_review` に設定し、**Create from** を `review-app` に設定して、**Create branch** を選択します。
 
-1. このブランチのマージリクエストを作成します。
+1. このブランチのマージリクエストを作成します。ターゲットブランチを `review-app` に設定します。
 
 1. マージリクエストを作成したら、**Code > Open in Web IDE** を選択してマージリクエストから Web IDE を開きます。
 
@@ -155,19 +197,19 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
       ```js
       const express = require('express')
-          const app = express()
-          const port = 4001
+      const app = express()
+      const port = 4001
 
-          app.get('/', (req, res) => {
-            res.send('Our app is running!')
-          })
+      app.get('/', (req, res) => {
+        res.send('Our app is running!')
+      })
 
-          app.listen(port, () => {
-            console.log(`Example app listening on port ${port}`)
+      app.listen(port, () => {
+        console.log(`Example app listening on port ${port}`)
       })
       ```
 
-1. **source control** アイコンを選択します。コミットメッセージを入力し、**Commit and put to...** ボタンをクリックしてコード変更をコミットします。
+1. **source control** アイコンを選択します。コミットメッセージを入力し、**Commit and push to...** ボタンをクリックしてコード変更をコミットします。
 
 1. パイプラインが完了するまで待ちます。
 
