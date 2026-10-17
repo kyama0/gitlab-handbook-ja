@@ -2,9 +2,9 @@
 title: "リサーチの成長と能力開発"
 description: "Experience Research チームは、GitLab の Career Development プロセスに加えて 2 つの取り組みを追加しました。"
 upstream_path: /handbook/upstream-studios/experience-research/ux-research-growth-and-development/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T08:32:10+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T09:24:31-07:00"
+translated_at: "2026-10-17T21:06:41Z"
 translator: codex
 stale: false
 ---
@@ -19,7 +19,7 @@ UX Research チームメンバー向けの過去の Pulse Survey の結果に基
 
 ## 昇進文書 {#promotion-document}
 
-[昇進文書](/handbook/people-group/promotions-transfers/#promotion-document)は、UX Research チームメンバーごとに作成されます。個人はマネージャーとともに、この文書の作業版を維持します。UX Research チームメンバーは、昇進の根拠として使用できる影響力のある事例を特定するため、マネージャーと緊密に連携します。
+[昇進文書](/handbook/people-group/promotions-transfers/)は、UX Research チームメンバーごとに作成されます。個人はマネージャーとともに、この文書の作業版を維持します。UX Research チームメンバーは、昇進の根拠として使用できる影響力のある事例を特定するため、マネージャーと緊密に連携します。
 
 UX Research チームメンバーは毎月、文書を更新し、1:1 でマネージャーと話し合う必要があります。
 

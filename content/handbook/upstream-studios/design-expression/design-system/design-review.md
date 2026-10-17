@@ -1,12 +1,12 @@
 ---
-title: "Pajamas デザインレビュープロセス"
+title: "Design System のレビュープロセス"
 description: "Pajamas デザインシステムに関連するプロジェクトでマージリクエストを承認しマージするレビュアーとメンテナーの役割、およびメンテナーになる方法。"
 upstream_path: /handbook/upstream-studios/design-expression/design-system/design-review/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:21:42+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-17T21:06:41Z"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-10-14T15:13:25-07:00"
 ---
 
 ## 概要 {#overview}
@@ -17,16 +17,16 @@ Pajamas デザインシステムは、さまざまなプロジェクトで構成
 1. [`gitlab-svgs`](https://gitlab.com/gitlab-org/gitlab-svgs)
 1. [`gitlab-ui`](https://gitlab.com/gitlab-org/gitlab-ui)
 
-このページでは、あなた（またはコミュニティメンバー）のマージリクエスト（MR）を承認しマージする際の、[レビュアー](#reviewer)と[メンテナー](#maintainer)の役割について説明します。また、[メンテナーになるためのプロセス](#how-to-become-a-maintainer)についても説明します。
+このページでは、あなた（またはコミュニティメンバー）のマージリクエスト（MR）を承認しマージする際の、[レビュアー](#reviewer)と[メンテナー](#maintainer)の役割について説明します。また、[メンテナーになるためのプロセス](#how-to-become-a-maintainer)についても説明します。Figma ファイルについては、[Figma ファイルのレビュー](#figma-file-reviews)を参照してください。
 
 ## レビュアー {#reviewer}
 
-すべての GitLab プロダクトデザイナーは、Pajamas に影響を与える MR に対してデザインレビューとコードレビューを実行できます（そして推奨されます）。これには、[GitLab チームメンバー](/handbook/communication/top-misused-terms/)とより広い GitLab コミュニティからの貢献が含まれます。MR をレビューしたい場合、誰かがあなたに割り当てるまで待つこともできますが、オープンな MR のリストを閲覧し、あなたが持っているフィードバックや質問を残すことも大歓迎です。
+すべての GitLab Product Designers は、Pajamas に影響を与える MR に対してデザインレビューとコードレビューを実行できます（そして推奨されます）。これには、[GitLab チームメンバー](/handbook/communication/top-misused-terms/)とより広い GitLab コミュニティからの貢献が含まれます。MR をレビューしたい場合、誰かがあなたに割り当てるまで待つこともできますが、オープンな MR のリストを閲覧し、あなたが持っているフィードバックや質問を残すことも大歓迎です。
 
 レビューを実行するには、以下を理解し従う必要があります:
 
 - 一般的な[コードレビューガイドライン](https://docs.gitlab.com/development/code_review/)。
-- [プロダクトデザイナー向けの一般的な MR レビューガイドライン](/handbook/upstream-studios/product-design/workflow/mr-reviews/)。
+- [Product Designers 向けの一般的な MR レビューガイドライン](/handbook/upstream-studios/product-design/workflow/mr-reviews/)。
 - [Pajamas プロジェクト](#overview)の貢献ガイドライン。
 
 すべてのデザイナーがすべての MR をレビューできる一方で、MR を受け入れる能力はメンテナーに制限されていることに注意してください。すべてのデザインレビュアーとメンテナーは、[GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)のリストで見つけることができます。
@@ -67,11 +67,11 @@ Pajamas デザインシステムは、さまざまなプロジェクトで構成
 
 #### トレーニーメンテナー {#trainee-maintainer}
 
-- エンジニアリングのカウンターパートと同じトレーニーメンテナープログラム（トレーニーシップ）に従います。誰でも、[Trainee design maintainer テンプレート](https://gitlab.com/gitlab-com/www-gitlab-com/issues/new?issuable_template=trainee-design-maintainer)を使用してトラッキング Issue を開くことで、トレーニーとして自分を推薦できます。
+- 私たちは、Engineering のカウンターパートと同じトレーニーメンテナープログラムに従います。誰でも、[Trainee design maintainer テンプレート](https://gitlab.com/gitlab-com/www-gitlab-com/issues/new?issuable_template=trainee-design-maintainer)を使用してトラッキング Issue を開くことで、トレーニーとして自分を推薦できます。
 
-- トレーニーシップでは、各トレーニーにデザインメンテナーがサポートメンテナーとして割り当てられます。サポートメンテナーは、レビュー用の MR を指示し、提案にフィードバックを与え、1:1 セッション中にプロセスや進捗について話し合います。トレーニーは、いつでもマネージャーや他のメンテナーに、専任のサポートメンテナーとは別にフィードバックとガイダンスを求めることができます。トレーニーメンテナーが Pajamas MR のレビューを学ぶ際にガイドするのに役立つよう、[Pajamas UX メンテナーレビューチェックリスト](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/maintainer-checklist.md)も作成しました。
+- このプログラムでは、各トレーニーにデザインメンテナーが Support Maintainer として割り当てられます。Support Maintainer は、レビューする MR を案内し、提案にフィードバックを与え、1:1 セッション中にプロセスや進捗について話し合います。トレーニーは、専任の Support Maintainer に加えて、マネージャーや他のメンテナーにもいつでもフィードバックとガイダンスを求められます。トレーニーメンテナーが Pajamas MR のレビューを学ぶ際のガイドとして、[Pajamas UX メンテナーレビューチェックリスト](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/maintainer-checklist.md)も作成しました。
 
-- メンテナーが追加のサポートメンテナーとしての役割で過負荷にならず、適切なガイダンスを提供できるよう、メンテナーごとに最大 1 人のトレーニーを保つようにしています。[現在のトレーニーメンテナー](#current-trainee-maintainers)を参照してください。
+- メンテナーが追加の Support Maintainer としての役割で過負荷にならず、適切なガイダンスを提供できるよう、メンテナーごとに最大 1 人のトレーニーを保つようにしています。
 
 ##### 期間
 
@@ -80,17 +80,14 @@ Pajamas デザインシステムは、さまざまなプロジェクトで構成
 トレーニーシップの期間には、それに専念する時間数と、トレーニーが利用できる MR の数の 2 つの側面が大きく影響します。これらの 2 つの側面が互いに対立するとき、トレーニーシップは予想より長くかかる可能性があります:
 
 1. **多くの時間、少ない MR**: MR の数を増やすために、トレーニーはいつでも自分の貢献を行うことができます。他の人からの MR をレビューすることだけが、メンテナーになる唯一の方法ではありません。トレーニーは創造的でなければならず、可能な限り「メンテナーレベル」の MR に取り組むようにしなければなりません。
-1. **少ない時間、多くの MR**: 少ない時間で多くの MR をレビューしたり貢献したりすることは、品質に悪影響を与える可能性があります。トレーニーは、評価される対象である品質に焦点を当てるべきです。また、[レビュー応答 SLO](/handbook/engineering/workflow/code-review/#review-response-slo)に従うべきです。トレーニーがトレーニーシップをスピードアップしたい場合は、マネージャーと話して、ワークロードのバランスを取り、このプログラムのためにより多くの時間を確保する方法を見つけるべきです。
+1. **少ない時間、多くの MR**: 少ない時間で多くの MR をレビューしたり貢献したりすることは、品質に悪影響を与える可能性があります。トレーニーは、評価される対象である品質に焦点を当てるべきです。また、[レビュー応答 SLO](/handbook/engineering/workflow/code-review/#review-response-slo)に従うべきです。トレーニーがプログラムをスピードアップしたい場合は、マネージャーと話して、ワークロードのバランスを取り、このプログラムのためにより多くの時間を確保する方法を見つけるべきです。
 
-進捗を追跡するのに役立てるため、トレーニーはトレーニーシップを個人の OKR の 1 つにすることを推奨します。
+進捗を追跡しやすくするため、トレーニーには、このプログラムを個人目標の 1 つにすることを推奨します。
 
 ### メンテナー比率
 
 [Pajamas メンテナー比率ダッシュボード（internal）](https://10az.online.tableau.com/t/gitlab/views/UXPajamasMaintainers/PajamasDesignSystem?:origin=card_share_link&:embed=n)を参照してください。
 
-#### 現在のトレーニーメンテナー {#current-trainee-maintainers}
+## Figma ファイルのレビュー {#figma-file-reviews}
 
-| プロジェクト                                | トレーニー                                       | サポートメンテナー                                 |
-| -------------------------------------- | --------------------------------------------- | -------------------------------------------------- |
-| Pajamas Design System (Figma) - 一時停止中 | [Michael Le](https://gitlab.com/mle)          | [Jeremy Elder](https://gitlab.com/jeldergl)        |
-| design.gitlab.com (Brand) | [Monica Galletto](https://gitlab.com/monica_galletto) | [Pedro Moreira da Silva](https://gitlab.com/pedroms) |
+Design System チームのデザイナーが、[Pajamas UI Kit](https://design.gitlab.com/get-started/uik-file-structure)の Figma ファイルを保守します。Figma ファイルには、このページで説明しているメンテナーまたはトレーニーのプロセスは適用しません。その他すべての Figma のレビューは、各チームの Figma の組織設定を通じて、チーム単位、場合によってはデザイナー単位で対応します。

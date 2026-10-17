@@ -2,9 +2,9 @@
 title: "Product Design のペア"
 description: "Product Designer のペアローテーションスケジュール"
 upstream_path: /handbook/upstream-studios/product-design/design-pair-rotation/
-upstream_sha: 4aea490fd6276e4dc6a9fba4f36820790b265fe9
-lastmod: "2026-08-24T06:19:20-07:00"
-translated_at: "2026-09-03T21:26:54+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-15T11:57:18Z"
+translated_at: "2026-10-17T21:06:41Z"
 translator: codex
 stale: false
 ---
@@ -56,4 +56,5 @@ stale: false
 | Bonnie Tsang           | Katie Macoy        |
 | Marcel van Remmerden   | Celeste North      |
 | Paul Wright            | Tim Noah           |
-| Ilonah Pelaez          | Sunjung Park & Bindu Upadhyay |
+| Ilonah Pelaez          | Sunjung Park       |
+| Bindu Upadhyay         | Simon Kim          |
