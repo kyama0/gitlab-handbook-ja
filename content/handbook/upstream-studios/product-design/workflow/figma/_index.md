@@ -40,7 +40,7 @@ Figma の[コンポーネント](https://design.gitlab.com/get-started/uik-compo
 
 Figma ファイルまたはブランチを誰がレビューし、承認するかは、Pajamas UI Kit の一部であるかどうかによって異なります。
 
-* **Pajamas UI Kit ファイル:** [Design System チーム](/handbook/upstream-studios/design-expression/design-system/)が [Pajamas UI Kit](https://design.gitlab.com/get-started/uik-file-structure)ファイルに責任を持ち、保守します。これらのファイルへの貢献をどのようにレビューするかについては、[Design System のレビュープロセス](/handbook/upstream-studios/design-expression/design-system/design-review/)を参照してください。
+* **Pajamas UI Kit ファイル:** [Design System チーム](/handbook/upstream-studios/design-expression/design-system/)が [Pajamas UI Kit](https://design.gitlab.com/get-started/uik-file-structure) ファイルに責任を持ち、保守します。これらのファイルへの貢献をどのようにレビューするかについては、[Design System のレビュープロセス](/handbook/upstream-studios/design-expression/design-system/design-review/)を参照してください。
 * **その他すべての Figma ファイル:** 各チーム、場合によっては各デザイナーが、自分たちのファイルのレビューと承認に責任を持ちます。これは、中央のメンテナーロールではなく、前述のチーム、プロジェクト、ファイルの権限など、各チームの Figma の組織設定を通じて管理します。
 
 ### ファイルのバックアップ
