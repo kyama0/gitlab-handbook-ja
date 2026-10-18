@@ -4,24 +4,24 @@ category: GitLab.com
 subcategory: Security
 description: ブロックされたユーザーを復活させられるか判断する方法
 upstream_path: /handbook/support/workflows/reinstating-blocked-accounts/
-upstream_sha: "50ee631c98005b47a0caea9d46e4ba5cfc62891a"
-translated_at: "2026-07-23T06:22:46+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:35:31Z"
 translator: codex
 stale: false
-lastmod: "2026-07-22T18:30:05+12:00"
+lastmod: "2026-10-16T18:56:09+08:00"
 ---
 
 このワークフローページでは、**Locked**、**Blocked**、および **Banned** アカウントへの対応方法を説明します。ユーザーは自分がブロックされていると思っていても、実際にはアカウントがロックされているだけというケースがあります。これを確認する方法はいくつかあります:
 
-1. この情報を確認する最良の方法は、[Zendesk User Lookup app（GitLab Super App の一部）](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) の `Locked` および `State` フィールドを使うことです。
+1. この情報を確認する最良の方法は、[Zendesk User Lookup app（GitLab Super App の一部）](/handbook/eta/css/zendesk/apps/global#gitlab-super-app)の `Locked` および `State` フィールドを使うことです。
 1. 管理ユーザー UI の `/admin/user/USERNAME` には、上部の名前の隣に `(Locked)`、`(Blocked)`、または `(Banned)` と表示されます。
-1. [Users API](https://docs.gitlab.com/api/users/#get-a-single-user) を使って、管理ユーザーとしてログインしている状態でブラウザから URL `https://gitlab.com/api/v4/users/<user_id>` を開くと、ユーザーの `locked` および `state` ステータスも確認できます。
+1. [Users API](https://docs.gitlab.com/api/users/#get-a-single-user)を使って、管理ユーザーとしてログインしている状態でブラウザから URL `https://gitlab.com/api/v4/users/<user_id>` を開くと、ユーザーの `locked` および `state` ステータスも確認できます。
 
-私たちが実装している [Arkose Protect](https://docs.gitlab.com/integration/arkose/#arkose-protect) は、アカウントロックには影響を与え *ません* が、代わりにユーザーがチャレンジを解決せずにサインインするのを防ぐことができます。
+私たちが実装している [Arkose Protect](https://docs.gitlab.com/integration/arkose/#arkose-protect)は、アカウントロックには影響を与え *ません* が、代わりにユーザーがチャレンジを解決せずにサインインするのを防ぐことができます。
 
 ## ロックされたアカウント
 
-ユーザーがロックされていることが判明した場合、[`Support::SaaS::Account Locked` マクロ](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Account%20Locked.md?ref_type=heads) を使用してユーザーに状況を説明できます。ユーザーがロックされる条件は次のとおりです:
+ユーザーがロックされていることが判明した場合、[`Support::SaaS::Account Locked` マクロ](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Account%20Locked.md?ref_type=heads)を使用してユーザーに状況を説明できます。ユーザーがロックされる条件は次のとおりです:
 
 2FA が **無効** の場合:
 
@@ -33,13 +33,13 @@ lastmod: "2026-07-22T18:30:05+12:00"
 - 10 分以内に 5 回以上のログイン失敗があった。
 - アカウントは 10 分間の待機期間後に自動的にロック解除されます。
 
-ユーザーが 6 桁のコードを含む検証メールを受信できない場合は、プライマリメールアドレスが無効か、アクセスできない可能性が高いです。ユーザーがプライマリメールアドレスにアクセスできない場合、アカウントのロック解除やパスワードリセットができません。ユーザーがプライマリメールにアクセスできない場合は、[メールアドレスの入れ替え](/handbook/support/workflows/account_changes#account-access-requests) などの他のワークフローを検討してください。
+ユーザーが 6 桁のコードを含む検証メールを受信できない場合は、プライマリメールアドレスが無効か、アクセスできない可能性が高いです。ユーザーがプライマリメールアドレスにアクセスできない場合、アカウントのロック解除やパスワードリセットができません。ユーザーがプライマリメールにアクセスできない場合は、[メールアドレスの入れ替え](/handbook/support/workflows/account_changes#account-access-requests)などの他のワークフローを検討してください。
 
 ロック解除コードを含むすべての検証メールおよびパスワードリセットメールは、Mailgun のサプレッションをバイパスします。これらのメールの配信状況は Mailgun でも確認できます。
 
-[Kibana](/handbook/support/workflows/kibana/) で `json.message: Account Locked` を検索することで、`Account Locked` の状態を確認できます。Kibana での見え方の例は次のとおりです:
+[Kibana](/handbook/support/workflows/kibana/)で `json.message: Account Locked` を検索することで、`Account Locked` の状態を確認できます。Kibana での見え方の例は次のとおりです:
 
-![locked_account](/images/support/locked_example.png)
+![ロックされたアカウント](/images/support/locked_example.png)
 
 ### 手動ロック解除
 
@@ -51,19 +51,19 @@ lastmod: "2026-07-22T18:30:05+12:00"
 
 1. 上記のロックされたアカウントワークフローに従い、ユーザーがすべてのセルフサーブ手段を尽くしていることを確認します。
 1. それ以外のケースでは、必要に応じて [コメントするか Issue を作成](/handbook/support/workflows/working-with-issues/) します。
-1. [アカウント所有権の検証](/handbook/support/workflows/account_verification/) を行います。
+1. [アカウント所有権の検証](/handbook/support/workflows/account_verification/)を行います。
 1. [管理エリアからアカウントのロックを解除](https://docs.gitlab.com/security/unlock_user/#unlock-user-accounts-from-the-admin-area) します。
-1. [admin note を追加](/handbook/support/workflows/admin_note/) します。
+1. [管理者メモ を追加](/handbook/support/workflows/admin_note/) します。
 
-グループオーナーがセルフサーブで対応できるようにする機能リクエストは [anti-abuse#339](https://gitlab.com/gitlab-org/modelops/anti-abuse/team-tasks/-/issues/339) にあります。
+グループオーナーがセルフサーブで対応できるようにする機能リクエストは [anti-abuse#339](https://gitlab.com/gitlab-org/modelops/anti-abuse/team-tasks/-/issues/339)にあります。
 
-### Identity verification 例外リクエスト
+### 本人確認の免除リクエスト {#identity-verification-exemption-requests}
 
-### クレジットカードや電話番号での検証に問題が発生しているアカウント
+### クレジットカードや電話番号での検証に問題が発生しているアカウント {#accounts-experiencing-problems-verifying-with-a-credit-card-andor-phone-number}
 
 ユーザーがクレジットカードや電話番号の検証を完了できない場合。
 
-サポートチームメンバーは、[Internal Handbook](https://internal.gitlab.com/handbook/support/workflows/identity-verification-exemptions/) に記載されている手順に従って例外を作成できます。
+サポートチームメンバーは、[Internal Handbook](https://internal.gitlab.com/handbook/support/workflows/identity-verification-exemptions/)に記載されている手順に従って例外を作成できます。
 
 ## ブロックされたアカウント
 
@@ -71,18 +71,18 @@ lastmod: "2026-07-22T18:30:05+12:00"
 
 ### なぜアカウントがブロックされたか？
 
-アカウントがブロックされている場合、admin note を確認してブロックされた理由を調べてください。
-    - Zendesk の [GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) は、ユーザーがアカウントに紐づくメールアドレスでサポートに問い合わせた場合に、そのユーザーの admin notes を表示します。あるいは、
-    - ChatOps へのアクセス権がある場合は、chatops が有効な任意の Slack チャンネルで以下のコマンドを使ってユーザーの admin notes を読むことができます。
-        > `/chatops run user find <username or email>`
+アカウントがブロックされている場合、管理者メモ を確認してブロックされた理由を調べてください。
+    - Zendesk の [GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app)は、ユーザーがアカウントに紐づくメールアドレスでサポートに問い合わせた場合に、そのユーザーの 管理者メモ を表示します。あるいは、
+    - ChatOps へのアクセス権がある場合は、chatops が有効な任意の Slack チャンネルで以下のコマンドを使ってユーザーの 管理者メモ を読むことができます。
+        > `/chatops gitlab run user find <username or email>`
 
 ### Trust and Safety Team によるブロック
 
 T&S は現在アカウントをブロックしません。BAN のみを行います。
 
-### admin note がない状態でブロックされているユーザー
+### 管理者メモがない状態でブロックされているユーザー
 
-状況によっては、Admin Note がないままユーザーがブロックされていることがあります。この場合は、ブロックされた理由を調査する必要があります。
+状況によっては、管理者メモがないままユーザーがブロックされていることがあります。この場合は、ブロックされた理由を調査する必要があります。
 
 #### アカウントを確認せず、削除がスケジュールされているユーザー
 
@@ -92,7 +92,7 @@ T&S は現在アカウントをブロックしません。BAN のみを行いま
 
 検証済みドメインなしで SAML または SCIM を介してユーザーアカウントをプロビジョニングする組織でも、ユーザーメールの確認が必要です。アカウントのメールは検証済みであっても、ユーザーがメール検証を完了していないことがあります。この場合、ユーザーの削除がスケジュールされているかどうかを確認するためにログを確認する必要があります:
 
-- ユーザー削除イベントを、[query](https://log.gprd.gitlab.net/app/r/s/Ot5q3) で Kibana 検索します:
+- ユーザー削除イベントを、[クエリ](https://log.gprd.gitlab.net/app/r/s/Ot5q3)で Kibana 検索します:
 
     `json.meta.caller_id.keyword: DeleteUserWorker and json.details.custom_message: '<username>'`
 
@@ -100,18 +100,18 @@ T&S は現在アカウントをブロックしません。BAN のみを行いま
 
     `User <username> scheduled for deletion. Reason: GitLab automatically deletes unconfirmed users after 3 days since their creation`
 
-注: 未確認のアカウントを削除キューから取り除く仕組みはありません。詳細は [work item 7646](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7646) を参照してください。
+注: 未確認のアカウントを削除キューから取り除く仕組みはありません。詳細は [作業アイテム 7646](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7646)を参照してください。
 
 ### ユーザー起点のセルフサーブ削除
 
-Admin Note が `User deleted own account on {timestamp}` の場合、これはユーザーがセルフサーブ削除を起動したことを意味します。[遅延アカウント削除のキャンセル](#cancelling-delayed-account-deletion) を参照してください。
+管理者メモが `User deleted own account on {timestamp}` の場合、これはユーザーがセルフサーブ削除を起動したことを意味します。[遅延アカウント削除のキャンセル](#cancelling-delayed-account-deletion)を参照してください。
 
 1. **Free ユーザー** のアカウントは、削除リクエストの当日から 7 日間待ってから、同じメールアドレスやユーザー名で新しいアカウントを作成する必要があります。[`Support::SaaS::Gitlab.com::Blocked Accounts::Blocked due to account deletion`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Blocked%20Accounts/Blocked%20due%20to%20account%20deletion.md?ref_type=heads) マクロを使ってください。
-1. **サポートが強制削除を実行できる例外** - ユーザーが有償ネームスペースの一員ではないが有償ネームスペースに追加される必要がある場合（ユーザーまたはトップレベルグループオーナーがチケットを作成）、または有償ユーザーがトップレベルグループ配下に追加されてもなお 7 日間の遅延期間に従う場合（[この Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/416651) が修正されるまで該当）: サポートは以下の手順で 7 日間の遅延をバイパスできます:
+1. **サポートが強制削除を実行できる例外** - ユーザーが有償ネームスペースの一員ではないが有償ネームスペースに追加される必要がある場合（ユーザーまたはトップレベルグループオーナーがチケットを作成）、または有償ユーザーがトップレベルグループ配下に追加されてもなお 7 日間の遅延期間に従う場合（[この Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/416651)が修正されるまで該当）: サポートは以下の手順で 7 日間の遅延をバイパスできます:
    - [`Support::SaaS::Gitlab.com::Blocked Accounts::Blocked due to account deletion`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Blocked%20Accounts/Blocked%20due%20to%20account%20deletion.md?ref_type=heads) マクロを使い、7 日間の待機期間をバイパスしてアカウントを削除する明示的な許可をユーザーに依頼します。
    - 確認が得られたら、SE（Admin アクセス権あり）がアカウントを削除します。
    - SE は削除の結果でチケットを更新します。
-1. **有償ユーザー** のアカウントで、トップレベル有償ネームスペースの直接メンバーである場合は削除遅延がなく、アカウントは即座に（1 時間以内に）削除されます。詳細は [この MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/121912) を参照。
+1. **有償ユーザー** のアカウントで、トップレベル有償ネームスペースの直接メンバーである場合は削除遅延がなく、アカウントは即座に（1 時間以内に）削除されます。詳細は [この MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/121912)を参照。
 
 ### 禁輸国
 
@@ -121,13 +121,13 @@ Admin Note が `User deleted own account on {timestamp}` の場合、これは�
 
 ### ビジネス上および規制上の義務（中国地域）
 
-中国本土、香港、マカオでのビジネス上および規制上の義務を遵守するためにユーザーがブロックされる場合があります。これはユーザーアカウントの admin note に反映されます。
+中国本土、香港、マカオでのビジネス上および規制上の義務を遵守するためにユーザーがブロックされる場合があります。これはユーザーアカウントの 管理者メモ に反映されます。
 
-これらのアカウントの詳細情報とサポートワークフローについては、[Internal Handbook](https://internal.gitlab.com/handbook/support/workflows/regulatory-region-blocks/) を参照してください。
+これらのアカウントの詳細情報とサポートワークフローについては、[Internal Handbook](https://internal.gitlab.com/handbook/support/workflows/regulatory-region-blocks/)を参照してください。
 
 ### Professional Services マイグレーション
 
-Professional Services マイグレーションも、プロセスの一環としてユーザーをブロックすることがあります。マイグレーション用の admin notes は `2022-08-19` から [この Issue](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/issues/818) を通じて追加されています。それより前にマイグレーションされたアカウントには admin note がない場合があります。`2024-09-18` 時点では、Professional Services マイグレーションでブロックされたアカウントのブロック解除リクエストは自動的に処理されます（[STM #6336](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6336) を参照）。
+Professional Services マイグレーションも、プロセスの一環としてユーザーをブロックすることがあります。マイグレーション用の 管理者メモ は `2022-08-19` から [この Issue](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/issues/818)を通じて追加されています。それより前にマイグレーションされたアカウントには 管理者メモがない場合があります。`2024-09-18` 時点では、Professional Services マイグレーションでブロックされたアカウントのブロック解除リクエストは自動的に処理されます（[STM #6336](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6336)を参照）。
 
 ブロック解除リクエストのチケットを受け取り、自動処理されるべきだったと考える場合は、次の対応をしてください:
 
@@ -137,15 +137,15 @@ Professional Services マイグレーションも、プロセスの一環とし�
 
 チケットが自動処理されなかった場合、サポートは次のケースでユーザーを手動でブロック解除できます:
 
-- ブロックされたユーザーまたはトップレベルグループオーナーは、ブロック解除のためにサポートチケットを送信できます。顧客が [検証された](/handbook/support/workflows/account_verification) 後、ユーザーをブロック解除できます。ユーザーに [admin note](/handbook/support/workflows/admin_note) を残し、ブロック解除されたこと、日付、チケット番号を記載します。
-- [Enterprise users](/handbook/support/workflows/gitlab-com_overview/#enterprise-users) の場合、ユーザーが所属するトップレベルネームスペースの `owner` がチケットを送信できます。[アカウント検証](/handbook/support/workflows/account_verification/) に従い、通常どおり [admin note](/handbook/support/workflows/admin_note/) を追加してください。ユーザーまたはオーナーのどちらがリクエストしたかも含めます。
+- ブロックされたユーザーまたはトップレベルグループオーナーは、ブロック解除のためにサポートチケットを送信できます。顧客が [検証された](/handbook/support/workflows/account_verification) 後、ユーザーをブロック解除できます。ユーザーに [管理者メモ](/handbook/support/workflows/admin_note)を残し、ブロック解除されたこと、日付、チケット番号を記載します。
+- [Enterprise users](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)の場合、ユーザーが所属するトップレベルネームスペースの `owner` がチケットを送信できます。[アカウント検証](/handbook/support/workflows/account_verification/)に従い、通常どおり [管理者メモ](/handbook/support/workflows/admin_note/)を追加してください。ユーザーまたはオーナーのどちらがリクエストしたかも含めます。
 - 必要に応じて、[#professional_services](https://gitlab.slack.com/archives/CFRLYG77X) チャンネルで明確化や支援を求めることもできます。
 - **Free** および **有償** の両方のユーザーに対してこのアクションを実施します。
 
-### admin note がなく、上記のいずれにも該当しない場合
+### 管理者メモがなく、上記のいずれにも該当しない場合
 
-- **有償アカウント** は、トップレベルネームスペースで Owner ロールを持つユーザーの承認を得てブロック解除できます。[アカウント所有権の検証](/handbook/support/workflows/account_verification) は、最初にグループ Owner が完了する必要があります。
-- **Free アカウント** は、例外的な状況で、かつリーダーシップの承認と組み合わせる場合にのみブロック解除できます。[アカウント所有権の検証](/handbook/support/workflows/account_verification) を最初に完了する必要があります。
+- **有償アカウント** は、トップレベルネームスペースで Owner ロールを持つユーザーの承認を得てブロック解除できます。[アカウント所有権の検証](/handbook/support/workflows/account_verification)は、最初にグループ Owner が完了する必要があります。
+- **Free アカウント** は、例外的な状況で、かつリーダーシップの承認と組み合わせる場合にのみブロック解除できます。[アカウント所有権の検証](/handbook/support/workflows/account_verification)を最初に完了する必要があります。
 
 ### アカウントが正常にブロック解除された
 
@@ -161,7 +161,7 @@ Professional Services マイグレーションも、プロセスの一環とし�
 
 1. 次の少なくとも 1 つのシナリオが成立する場合 **のみ** 次のステップに進んでください:
     1. ユーザーがリクエストを送るために使用したメールアドレスが、リクエストが対象とするアカウントに紐づくメールアドレスと一致する。この基準は Free ユーザーにもカスタマーにも適用できます。
-    1. ユーザーアカウントが [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users) として分類されており、トップレベルグループのオーナーがチケットを起票している。
+    1. ユーザーアカウントが [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users)として分類されており、トップレベルグループのオーナーがチケットを起票している。
 
 ### Trust and Safety による BAN
 
@@ -195,36 +195,36 @@ BAN の理由は、Custom attributes セクションの `auto_banned_by` フィ�
 
 Support には、Trust and Safety による自動化なしで BAN されたアカウントの例は現在ありません。
 
-上記に記載されていない例に遭遇した場合は、[Account Reinstatement Request](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/TS_Operations/account-reinstatements/-/issues/new?issuable_template=Account%20Reinstatement) を作成すべきか、Support がユーザーの BAN を解除できるかを確認するため、[#abuse](https://gitlab.enterprise.slack.com/archives/C0HPYBJ3D) Slack チャンネルに連絡してください。
+上記に記載されていない例に遭遇した場合は、[Account Reinstatement Request](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/TS_Operations/account-reinstatements/-/issues/new?issuable_template=Account%20Reinstatement)を作成すべきか、Support がユーザーの BAN を解除できるかを確認するため、[#abuse](https://gitlab.enterprise.slack.com/archives/C0HPYBJ3D) Slack チャンネルに連絡してください。
 
-ユーザーの BAN を解除するよう指示された場合は、日付と実施したアクションを記載した admin note を残してください。
+ユーザーの BAN を解除するよう指示された場合は、日付と実施したアクションを記載した 管理者メモ を残してください。
 
-上記のいずれのシナリオにも該当しない、その他すべてのブロックまたは BAN については、ユーザーのブロックまたは BAN を解除し、日付と実施したアクションを記載した admin note を残してください。
+上記のいずれのシナリオにも該当しない、その他すべてのブロックまたは BAN については、ユーザーのブロックまたは BAN を解除し、日付と実施したアクションを記載した 管理者メモ を残してください。
 
 ## 遅延アカウント削除のキャンセル {#cancelling-delayed-account-deletion}
 
-ユーザー自身による開始のアカウント削除は、7 日間の遅延期間内であればキャンセルすることが可能です。[Unblocking the account will cancel the account deletion](https://gitlab.com/gitlab-org/modelops/anti-abuse/team-tasks/-/issues/423) を参照してください。
+ユーザー自身による開始のアカウント削除は、7 日間の遅延期間内であればキャンセルすることが可能です。[Unblocking the account will cancel the account deletion](https://gitlab.com/gitlab-org/modelops/anti-abuse/team-tasks/-/issues/423)を参照してください。
 
-アカウント削除のキャンセルリクエストは、*有償* グループのメンバー、またはユーザーが [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users) の場合はトップレベルオーナーが行うことができます。Free ユーザーに対してはアカウント削除のキャンセルは行いません。
+アカウント削除のキャンセルリクエストは、*有償* グループのメンバー、またはユーザーが [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users)の場合はトップレベルオーナーが行うことができます。Free ユーザーに対してはアカウント削除のキャンセルは行いません。
 
 プロセス:
 
-1. 有償ユーザーまたはトップレベルオーナーは、[アカウント検証](/handbook/support/workflows/account_verification) に合格する必要があります。
-1. [ユーザーをブロック解除](https://docs.gitlab.com/administration/moderate_users/#unblock-a-user) し、ユーザーに [admin note](/handbook/support/workflows/admin_note) を残してブロック解除されたこと、日付、チケット番号を記載します。
+1. 有償ユーザーまたはトップレベルオーナーは、[アカウント検証](/handbook/support/workflows/account_verification)に合格する必要があります。
+1. [ユーザーをブロック解除](https://docs.gitlab.com/administration/moderate_users/#unblock-a-user) し、ユーザーに [管理者メモ](/handbook/support/workflows/admin_note)を残してブロック解除されたこと、日付、チケット番号を記載します。
 
-### ネームスペース管理者が claim 済みユーザーの削除キャンセルをリクエストする場合
+### ネームスペース管理者が管理下のユーザーの削除キャンセルをリクエストする場合 {#namespace-admin-requests-deletion-cancel-for-claimed-user}
 
-ネームスペース管理者（トップレベルグループの Owner）は、7 日間の遅延期間内に [claim された（Enterprise）ユーザー](/handbook/support/workflows/gitlab-com_overview#enterprise-users) の保留中のアカウント削除のキャンセルをリクエストできます。これは、ユーザーがセルフサーブ削除を開始したが、ネームスペース管理者が業務継続性のためにアカウントを残しておく必要がある場合に該当します。
+ネームスペース管理者（トップレベルグループの Owner）は、7 日間の遅延期間内に [管理下に置かれた（Enterprise）ユーザー](/handbook/support/workflows/gitlab-com_overview#enterprise-users)の保留中のアカウント削除のキャンセルをリクエストできます。これは、ユーザーがセルフサーブ削除を開始したが、ネームスペース管理者が業務継続性のためにアカウントを残しておく必要がある場合に該当します。
 
 **シナリオ例:** `acme-corp` トップレベルグループ配下の Enterprise user である開発者（`@dev-user`）がセルフサーブのアカウント削除を開始しました。グループの Owner（`@acme-admin`）が保留中の削除に気づき、そのユーザーがまだ必要であるためキャンセルを依頼するサポートチケットを送信しました。
 
 プロセス:
 
-1. リクエスター が、そのユーザーを claim しているトップレベルグループの Owner であることを確認します。Owner ロールを確認するには [GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) または [Members API](https://docs.gitlab.com/api/members/) を使います。
-1. 対象アカウントが、リクエスターのネームスペースが claim している [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users) であることを確認します。
-1. ネームスペース Owner は [アカウント検証](/handbook/support/workflows/account_verification) に合格する必要があります。
+1. リクエスト者が、そのユーザーを管理下に置いているトップレベルグループの Owner であることを確認します。Owner ロールを確認するには [GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) または [Members API](https://docs.gitlab.com/api/members/)を使います。
+1. 対象アカウントが、リクエスト者のネームスペースが管理下に置いている [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users)であることを確認します。
+1. ネームスペース Owner は [アカウント検証](/handbook/support/workflows/account_verification)に合格する必要があります。
 1. [ユーザーをブロック解除](https://docs.gitlab.com/administration/moderate_users/#unblock-a-user) して保留中の削除をキャンセルします。
-1. ユーザーに [admin note](/handbook/support/workflows/admin_note) を残し、ネームスペース Owner のリクエストにより削除がキャンセルされたこと、日付、チケット番号を記載します。
+1. ユーザーに [管理者メモ](/handbook/support/workflows/admin_note)を残し、ネームスペース Owner のリクエストにより削除がキャンセルされたこと、日付、チケット番号を記載します。
 1. ネームスペース Owner に削除がキャンセルされたことを通知します。
 
 > **注意:** このアクションにユーザー本人の同意は必要ありません。
@@ -234,7 +234,7 @@ Support には、Trust and Safety による自動化なしで BAN されたア�
 
 ---
 
-NOTE:
+注意:
 このページの残りの部分は **参考** のためだけのものであり、Security のワークフローを指すように更新する必要があります。
 
 ### ポリシー参照
@@ -255,5 +255,5 @@ NOTE:
 1. ユーザーがアカウントに対する是正措置を拒否する場合。
 1. ユーザーが私たちの ToS に違反し続ける場合。
 1. ユーザーが意図的に私たちの ToS に違反する場合。
-1. サポートエンジニアに対する罵詈雑言や敵対的な行為があった場合。
+1. support engineer に対する罵詈雑言や敵対的な行為があった場合。
 1. アカウントが GitLab のビジネスやブランドに損害を与える場合。

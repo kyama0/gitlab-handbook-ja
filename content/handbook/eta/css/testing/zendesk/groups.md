@@ -2,9 +2,9 @@
 title: 'グループ'
 description: 'Zendesk グループの変更のテストに関するドキュメント'
 upstream_path: "/handbook/eta/css/testing/zendesk/groups/"
-upstream_sha: "a2f17ddfb308ad2cf8c33a838af1d4b482818d17"
-lastmod: "2026-10-07T13:11:23-05:00"
-translated_at: "2026-10-07T21:08:10+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T09:59:20-05:00"
+translated_at: "2026-10-18T09:37:28Z"
 translator: codex
 stale: false
 ---
@@ -12,10 +12,11 @@ stale: false
 {{% alert title="技術的な詳細" color="primary" %}}
 
 - Zendesk Global で有効なテストの仕組み:
-  - [CustSuppOps Zendesk Test Suite Generator](./#custsuppops-zendesk-test-suite-generator)
+  - [CustSuppOps Zendesk Test Suite Generator](/handbook/eta/css/testing/zendesk/#custsuppops-zendesk-test-suite-generator)
+  - [テストスイートスクリプト](/handbook/eta/css/testing/zendesk/#test-suite-script)
 - Zendesk US Government で有効なテストの仕組み:
-  - [CustSuppOps Zendesk Test Suite Generator](./#custsuppops-zendesk-test-suite-generator)
-  - [テストスイートスクリプト](./#test-suite-script)
+  - [CustSuppOps Zendesk Test Suite Generator](/handbook/eta/css/testing/zendesk/#custsuppops-zendesk-test-suite-generator)
+  - [テストスイートスクリプト](/handbook/eta/css/testing/zendesk/#test-suite-script)
 
 {{% /alert %}}
 
@@ -83,4 +84,4 @@ Zendesk サンドボックスから取得した API オブジェクトと、編�
   - このステージでは、親 Issue に概要コメントを追加します（すべての子タスク項目へのリンクを含みます）
     - いずれかのテストでアップロードが失敗した場合に備え、作成されたすべてのスクリーンショットの場所も示します
 
-詳しい説明は、[対応する録画](https://drive.google.com/drive/folders/1NaVVlblqe_erqNXhBmQnRsK_epb3sbSR?usp=sharing)（社内リンク）を参照してください。
+詳しい説明は、[対応する録画](https://drive.google.com/file/d/1Z7wChmjcBvnr-XsfP9nsoffKULLE4oSs/view?usp=drive_link)（社内リンク）を参照してください。

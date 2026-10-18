@@ -1,13 +1,13 @@
 ---
-title: GitLab.com 向けChatOps コマンド
+title: GitLab.com 向け ChatOps コマンド
 category: GitLab.com
-description: "Support Engineering が使用する一般的なChatOps コマンドのガイド"
+description: "Support Engineering が使用する一般的な ChatOps コマンドのガイド"
 upstream_path: /handbook/support/workflows/chatops/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:14:55Z"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:33:43Z"
 translator: claude
 stale: false
-lastmod: "2025-03-17T22:13:57+00:00"
+lastmod: "2026-10-15T03:51:39-07:00"
 ---
 
 ## 概要
@@ -16,32 +16,32 @@ lastmod: "2025-03-17T22:13:57+00:00"
 
 **注意**: ChatOps を使用する前に、[アクセス権をリクエスト](https://docs.gitlab.com/development/chatops_on_gitlabcom/#requesting-access) する必要があります。
 
-## Namespace
+## ネームスペース {#namespace}
 
-ネームスペースを管理するためにGitLab API を使用します。
+ネームスペースを管理するために GitLab API を使用します。
 
-`/chatops run namespace --help`
+`/chatops gitlab run namespace --help`
 
 > **注意:**
 トップレベルのグループではなくサブグループを検索しようとする場合は、スラッシュ `/` を `%2F` にエンコードする必要があります。たとえば、サブグループ `gitlab-com/support` のパスは `gitlab-com%2Fsupport` として入力する必要があります。
 
 ### ネームスペースに分単位のクォータを設定する
 
-`/chatops run namespace minutes cutecat 10000`
+`/chatops gitlab run namespace minutes cutecat 10000`
 
 使用する数値は、完了時に `extra_shared_runners_minutes_limit` であるべき合計値です。たとえば、`extra_shared_runners_minutes_limit` の値が 1,337 で、ネームスペース `cutecat` に追加で 1,000 分を加えたい場合、完了時に `extra_shared_runners_minutes_limit` の値が 2,337 になるようにします。コマンドは次のようになります。
 
-`/chatops run namespace minutes cutecat 2337`
+`/chatops gitlab run namespace minutes cutecat 2337`
 
-## User
+## ユーザー {#user}
 
-ユーザーを管理するためにGitLab API を使用します。
+ユーザーを管理するために GitLab API を使用します。
 
-`/chatops run user --help`
+`/chatops gitlab run user --help`
 
-## Feature Flags
+## フィーチャーフラグ {#feature-flags}
 
-- 特定のフィーチャーフラグがGitLab.com で有効になっているかどうかを確認するために使用します。
+- 特定のフィーチャーフラグが GitLab.com で有効になっているかどうかを確認するために使用します。
 - プロジェクトまたはグループ上でフィーチャーフラグを有効化するために使用します。
 
-`/chatops run feature --help`
+`/chatops gitlab run feature --help`

@@ -3,18 +3,18 @@ title: CustomersDot 管理者サポートツール
 category: CustomersDot
 description: L&R リクエストで CustomersDot 管理者サポートツールを使用する方法。
 upstream_path: /handbook/support/license-and-renewals/workflows/customersdot/support_tools/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:21:18+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:31:30Z"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-10-14T20:25:01-07:00"
 ---
 
 ## 概要
 
 このワークフローでは、L&R 関連タスクで CustomersDot 管理者サポートツールを使用する方法を詳しく説明します。
 
-CustomersDot 管理者サポートツールの実装は、この [エピック](https://gitlab.com/groups/gitlab-org/-/epics/6828) で追跡されています。
+CustomersDot 管理者サポートツールの実装は、この [エピック](https://gitlab.com/groups/gitlab-org/-/epics/6828)で追跡されています。
 
 ## ツールの場所
 
@@ -26,31 +26,31 @@ CustomersDot 管理者サポートツールは https://customers.gitlab.com/admi
 
 名前空間制御には複数のタブがあります。
 
-> **重要**: 変更前 **と** 変更後 で追加の compute 分数およびストレージを必ず再確認し、メモを取ってください。
+> **重要**: 変更の **前** と **後** に、追加のコンピューティング時間とストレージを必ず再確認し、記録してください。
 
-名前空間は、管理者として、または [API を使って](https://docs.gitlab.com/api/namespaces/)、または [Zendesk Super App](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) で表示できます。
+名前空間は、管理者として、または [API を使って](https://docs.gitlab.com/api/namespaces/)、または [Zendesk Super App](/handbook/eta/css/zendesk/apps/global#gitlab-super-app)で表示できます。
 
 #### 追加 CI 分数を設定
 
-`New minutes total` フィールドで指定した値を、顧客の名前空間への追加 compute 分として設定できます。
+`New minutes total` フィールドで指定した値を、顧客の名前空間への追加コンピューティング時間として設定できます。
 
-> **警告:** この方法で追加された compute 分数は、使い切るまで **無期限** に残ります。「extra compute minutes」をトライアル期間中だけ提供したい場合は、Manage GitLab Plan and Trials オプションを使ってください。これはトライアル期間中、有料プランのクォータに合わせて *使用クォータ* を変更します。トライアルプランの月次クォータを編集できるようにするための [open issue 13063](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/13063) があります。
+> **警告:** この方法で追加されたコンピューティング時間は、使い切るまで **無期限** に残ります。「extra compute minutes」をトライアル期間中だけ提供したい場合は、Manage GitLab Plan and Trials オプションを使ってください。これはトライアル期間中、有料プランのクォータに合わせて *使用クォータ* を変更します。トライアルプランの月次クォータを編集できるようにするための [未解決の Issue 13063](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/13063)があります。
 
 フォームには 3 つの必須フィールドがあります:
 
 - **Namespace ID/Path**: URL に表示される顧客の名前空間パス、または ID。
-- **New minutes total**: 設定する compute 単位の値。名前空間に X 単位の compute を追加したい場合:
+- **New minutes total**: 設定するコンピューティングユニットの値。名前空間に X 単位のコンピューティングユニットを追加したい場合:
   - 現在の "Additional Units" の値（Y）を確認する
   - 現在の単位（Y）+ 追加したい新しい単位（X）を加算する
   - その合計を "New minutes total" フィールドに入力する
-たとえば、追加 Compute Units が合計 6000 の名前空間に 1000 単位を追加するには、"New minutes total" フィールドに 7000 を設定します。（***注:** これにより、名前空間の「使用クォータ」ページの「Additional Units」の値が更新されます。* ）
+たとえば、追加コンピューティングユニットが合計 6000 の名前空間に 1000 単位を追加するには、"New minutes total" フィールドに 7000 を設定します。（***注:** これにより、名前空間の「使用クォータ」ページの「Additional Units」の値が更新されます。* ）
 - **Zendesk ticket link**: リクエストが送られた関連 Zendesk チケットへのリンク。
 
 ##### パイプライン実行のクレジットカード検証をバイパスする
 
 *以前の名称: `Enable CI Minutes`*
 
-セールス支援トライアルに参加しているグループの compute 分数の使用制限を解除します。これは [GitLab.com アカウント作成時の本人確認](/handbook/support/workflows/reinstating-blocked-accounts/#accounts-experiencing-problems-verifying-with-a-credit-card-andor-phone-number) と混同しないでください。制限を解除するには、名前空間に追加の compute 分数がない場合に 10 分の追加 compute を加算します。
+セールス支援トライアルに参加しているグループのコンピューティング時間の使用制限を解除します。これは [GitLab.com アカウント作成時の本人確認](/handbook/support/workflows/reinstating-blocked-accounts/#accounts-experiencing-problems-verifying-with-a-credit-card-andor-phone-number)と混同しないでください。制限を解除するには、名前空間に追加のコンピューティング時間がない場合に 10 分の追加コンピューティング時間を加算します。
 
 - **Namespace ID/Path**: URL に表示される顧客の名前空間パス、または ID。
 - **New minutes total**:
@@ -61,7 +61,7 @@ CustomersDot 管理者サポートツールは https://customers.gitlab.com/admi
 
 #### 追加ストレージを設定
 
-`New extra storage (MiB)` フィールドで指定した値に、名前空間の [追加ストレージ](https://docs.gitlab.com/user/usage_quotas/#excess-storage-usage) を設定します。
+`New extra storage (MiB)` フィールドで指定した値に、名前空間の [追加ストレージ](https://docs.gitlab.com/user/usage_quotas/#excess-storage-usage)を設定します。
 
 - **Namespace ID/Path**: URL に表示される顧客の名前空間パス、または ID。
 - **New extra storage (MiB)**: 設定する新しいストレージ容量（MiB 単位）
@@ -86,7 +86,7 @@ CustomersDot 管理者サポートツールは https://customers.gitlab.com/admi
 
 #### Reset max seats
 
-現在のサブスクリプション期間中に、その名前空間で使われた最大シート数を変更します。これは通常、[QSR 用の reset max seats ワークフロー](/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations/#resolving-max-seats-overages) でのみ使用すべきです。
+現在のサブスクリプション期間中に、その名前空間で使われた最大シート数を変更します。これは通常、[QSR 用の reset max seats ワークフロー](/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations/#resolving-max-seats-overages)でのみ使用すべきです。
 
 ##### 注意
 
@@ -123,7 +123,7 @@ Support Audit Events ページは、Support Admin Tools 経由で実行された
 
 - 名前空間に CustomersDot のトライアルがすでに存在する場合のみ、トライアルを延長または編集できます。顧客がトライアルを開始していない場合は、グループの請求ページ（https://gitlab.com/groups/[NAMESPACE-PATH]/-/billings）からトライアルを開始するよう依頼してください。
 - CustomersDot でトライアルを変更または延長しても、有料プランに合わせた CI 分数の自動増加は行われません。追加の CI 分数が必要な場合は、Set extra CI minutes ツールまたは GitLab Admin を適切に使ってください。
-- 有料サブスクリプション期間の延長（一時的なサブスクリプション延長）は CustomersDot サポートツールではまだ利用できません。これは EPIC [[Phase 2c] Add Support admin capability to extend an almost expiring subscription](https://gitlab.com/groups/gitlab-org/-/work_items/17745) で追跡しています。このような状況では、アカウントエグゼクティブに更新オポチュニティから既存の [SFDC の一時的な更新延長プロセス](/handbook/product/groups/fulfillment/#temporary-renewal-extensions) を使うよう案内してください。
+- 有料サブスクリプション期間の延長（一時的なサブスクリプション延長）は CustomersDot サポートツールではまだ利用できません。これは EPIC [[Phase 2c] Add Support admin capability to extend an almost expiring subscription](https://gitlab.com/groups/gitlab-org/-/work_items/17745)で追跡しています。このような状況では、Account Executive に更新オポチュニティから既存の [SFDC の一時的な更新延長プロセス](/handbook/product/groups/fulfillment/#temporary-renewal-extensions)を使うよう案内してください。
 
 #### Cancel Add-on Trial
 
@@ -139,7 +139,7 @@ Support Audit Events ページは、Support Admin Tools 経由で実行された
 
 ##### Update
 
-**Edit** を選択 ![icon](https://gitlab.com/gitlab-org/gitlab-svgs/-/raw/main/sprite_icons/pencil.svg)
+**Edit** を選択 ![アイコン](https://gitlab.com/gitlab-org/gitlab-svgs/-/raw/main/sprite_icons/pencil.svg)
 
 - **End Date**: 更新後にプランが終了する日付。
 - **Plan**: 顧客のグループに適用したいトライアルプラン。`x Clear` オプションが選択された場合、顧客の名前空間は即座にダウングレードされ、トライアルが終了します。
@@ -147,25 +147,25 @@ Support Audit Events ページは、Support Admin Tools 経由で実行された
 
 ##### Cancel
 
-**Cancel trial** を選択 ![icon](https://gitlab.com/gitlab-org/gitlab-svgs/-/raw/main/sprite_icons/cancel.svg)
+**Cancel trial** を選択 ![アイコン](https://gitlab.com/gitlab-org/gitlab-svgs/-/raw/main/sprite_icons/cancel.svg)
 
 - **Zendesk ticket link**: リクエストが送られた関連 Zendesk チケットへのリンク。
 
-### Trials for SM
+### レガシーライセンスのトライアル {#legacy-license-trials}
 
 選択した日付に期限切れとなるレガシートライアルライセンスを作成し、フォームで指定された顧客のメールアドレスに送信します。
 この機能の使用は、L&R が対応できないとき（週末など）の緊急ライセンスリクエストに限定すべきです。
 
 - **Email**: ライセンスを送信するメールアドレス。特に指定がない限り、チケットリクエスト者のメールアドレスへの送信を推奨します。
 - **Users count**: ライセンスのユーザー総数。
-  - Self-Managed ライセンスの場合、GitLab は現在の請求対象ユーザー数より少ないライセンスキーのインストールを拒否します。したがって、トライアルライセンスの **User Count** は、*少なくとも* 現在の請求対象ユーザー数 + 未払いの true-up（あれば）と同じ数にする必要があります。たとえば、現在の請求対象ユーザーが 25 人で、true-up 未払いが 5 件あれば、**User Count** を少なくとも 30 にしてください。
+  - Self-Managed ライセンスの場合、GitLab は現在の請求対象ユーザー数より少ないライセンスキーのインストールを拒否します。したがって、トライアルライセンスの **User Count** は、*少なくとも* 現在の請求対象ユーザー数 + 未払いのトゥルーアップ（あれば）と同じ数にする必要があります。たとえば、現在の請求対象ユーザーが 25 人で、トゥルーアップの未払いが 5 件あれば、**User Count** を少なくとも 30 にしてください。
 - **Plan code**: ライセンスのプラン。
 - **Starts at**: ライセンスの開始日。
 - **Expires at**: ライセンスの有効期限。
 - **Note**: 必要に応じた追加メモ。
 - **Zendesk ticket link**: リクエストが送られた関連 Zendesk チケットへのリンク。
 
-ライセンスメールには `10-day Trial GitLab License` と記載されることに注意してください。混乱を避けるため、有効期限は今から 10 日後に設定することを推奨します。**Starts at** や **Expires at** などの不要なフィールドを削除する [Issue](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/12035) があります。
+ライセンスメールには `10-day Trial GitLab License` と記載されることに注意してください。混乱を避けるため、有効期限は今から 10 日後に設定することを推奨します。**Starts at** や **Expires at** などの不要なフィールドを削除する [Issue](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/12035)があります。
 
 ### GitLab.com アカウントのリンクを解除
 

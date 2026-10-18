@@ -2,9 +2,9 @@
 title: Support Innovation Group (SIG)
 description: Support Innovation Group（SIG）は、Support、IT、Product をつなぎ、AI を活用したワークフロー、ナレッジ、サポートイノベーションを推進する、GitLab の部門横断的な取り組みです。
 upstream_path: /handbook/support/sig/
-upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
-lastmod: "2026-09-07T05:44:28-04:00"
-translated_at: "2026-09-08T07:04:23+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-12T17:33:23-04:00"
+translated_at: "2026-10-18T09:31:30Z"
 translator: codex
 stale: false
 ---
@@ -13,11 +13,11 @@ stale: false
 
 SIG は Support チームと IT および Product チームをつなぎ、業務を適切に遂行するために必要なツールや改善を確実に用意します。私たちは機会を特定し、必要なものを定義し、ソリューションを検証し、構築されたものをチームが導入できるよう支援します。
 
-SIG と Support Ops（IT）は緊密に連携します —
+SIG と CSS（Customer Support Systems）は緊密に連携します —
 
 - 何かを進める前に、SIG がすべてのリクエストを精査して承認する
-- Support Ops は Support の個人から直接リクエストを **受け付けない** — **すべてのリクエストは、まず SIG を経由します。**
-- SIG と Support Ops は、各サイクルで共通のロードマップと目標について認識を合わせる
+- CSS は Support の個人から直接リクエストを **受け付けない** — **すべてのリクエストは、まず SIG を経由します。**
+- SIG と CSS は、各サイクルで共通のロードマップと目標について認識を合わせる
 
 ## 受付プロセス
 

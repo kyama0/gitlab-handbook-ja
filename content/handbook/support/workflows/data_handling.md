@@ -1,31 +1,31 @@
 ---
-title: サポートエンジニアとしてのデータの取り扱い
+title: Support Engineer としてのデータの取り扱い
 description: サポートにおけるデータ取り扱いのベストプラクティスのガイド
 category: References
 upstream_path: /handbook/support/workflows/data_handling/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:21:07+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:35:31Z"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
 ### 概要
 
-顧客と直接やり取りすることで、平均的なサポートエンジニアは私たちのビジネスが扱う中で最も機密性の高いデータの一部を扱うことになります。適切なデータ取り扱いは、顧客の信頼を維持するためだけでなく、法的・規制上の義務を満たすためにも重要です。このワークフローでは、サポートチームメンバーが安全かつ効率的なデータ取り扱いを確保するためのベストプラクティスを概説します。
+顧客と直接やり取りすることで、平均的な Support Engineer は私たちのビジネスが扱う中で最も機密性の高いデータの一部を扱うことになります。適切なデータ取り扱いは、顧客の信頼を維持するためだけでなく、法的・規制上の義務を満たすためにも重要です。このワークフローでは、サポートチームメンバーが安全かつ効率的なデータ取り扱いを確保するためのベストプラクティスを概説します。
 
 #### データ分類標準
 
-[データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/) は、サポートの日常業務において最も重要なフレームワークです。同僚と協力する際に、どのデータがどのシステムで許可されているかを知ることは不可欠です。
+[データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/)は、サポートの日常業務において最も重要なフレームワークです。同僚と協力する際に、どのデータがどのシステムで許可されているかを知ることは不可欠です。
 
 データ _と_ システムの両方にデータ分類があります。_データ_ に分類標準がある場合、それはそのデータの開示の影響を表します。システムにデータ分類標準が関連付けられている場合、それはそのシステムで許可されるデータの分類を表します。
 
-Tech Stack 内のシステムは、[データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/) に従って関連付けられたレベルのデータを処理することが認可されています。許可されていないシステムで機密データを保存または処理することは、顧客のセキュリティとプライバシーにリスクを及ぼし、法的・規制上の結果を招く可能性があります。たとえば、契約違反や、私たちの GDPR や SOX 義務を満たさないことなどです。
+Tech Stack 内のシステムは、[データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/)に従って関連付けられたレベルのデータを処理することが認可されています。許可されていないシステムで機密データを保存または処理することは、顧客のセキュリティとプライバシーにリスクを及ぼし、法的・規制上の結果を招く可能性があります。たとえば、契約違反や、私たちの GDPR や SOX 義務を満たさないことなどです。
 
 参考:
 
 - [データ分類の例](https://internal.gitlab.com/handbook/security/data_classification/) (GitLab 社内ハンドブック - チームメンバーのみ)
-- [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)
+- [Tech Stack](/handbook/business-technology/tech-stack-applications/)
 - [GitLab データサブプロセッサー](https://about.gitlab.com/privacy/subprocessors/)
 
 ### サポートチームメンバーにとっての意味
@@ -34,11 +34,11 @@ Tech Stack 内のシステムは、[データ分類標準](/handbook/security/po
 
 - 自分が扱っているデータのデータ分類標準を認識してください
 - 決して、より低い分類のシステムにデータを移動しないでください
-- 公開で作業するときは、機密性レベルと [SAFE フレームワーク](/handbook/legal/safe-framework/) について考えてください。たとえば、GitLab.com は RED データに対してクリアされている場合がありますが、それでも公開プロジェクトに投稿したり、Issue が公開であることを忘れたりすることでそのデータを露出させてしまう可能性があります
+- 公開で作業するときは、機密性レベルと [SAFE フレームワーク](/handbook/legal/safe-framework/)について考えてください。たとえば、GitLab.com は RED データに対してクリアされている場合がありますが、それでも公開プロジェクトに投稿したり、Issue が公開であることを忘れたりすることでそのデータを露出させてしまう可能性があります
 
 #### 例
 
-以下は例にすぎません。システム分類の唯一の信頼できる情報源は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) です。
+以下は例にすぎません。システム分類の唯一の信頼できる情報源は [Tech Stack](/handbook/business-technology/tech-stack-applications/)です。
 
 ##### Slack (ORANGE)
 
@@ -79,7 +79,7 @@ Issue の議論中、顧客名を列挙する関連するスクリーンショ�
 
 このような連携を見たら、SIRT を宣言してください。
 
-加えて、連携で支援が必要な場合は、以下のチームに連絡してください。Google、Slack、Zoom、Okta などに関する連携については、Corp Sec チームに [こちら](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/app-integrations/?search=integration+request) から連絡してください。エンタープライズアプリケーション関連については、こちらのチーム [こちら](https://internal.gitlab.com/handbook/it-enterprise-applications/enterprise-applications/enterprise-applications-integrations/) に連絡してください。
+加えて、連携で支援が必要な場合は、以下のチームに連絡してください。Google、Slack、Zoom、Okta などに関する連携については、Corp Sec チームに [こちら](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/app-integrations/?search=integration+request)から連絡してください。エンタープライズアプリケーション関連については、こちらのチーム [こちら](https://internal.gitlab.com/handbook/it-enterprise-applications/enterprise-applications/enterprise-applications-integrations/)に連絡してください。
 
 ### 要点
 

@@ -3,11 +3,11 @@ title: Sentry
 category: Infrastructure for troubleshooting
 description: Sentry を使って GitLab.com または CustomersDot のエラーを調査する方法
 upstream_path: /handbook/support/workflows/sentry/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:16:12+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:35:31Z"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-10-16T18:56:09+08:00"
 ---
 
 ## 概要
@@ -34,17 +34,17 @@ GitLab.com の特定のページについては、`user.id:` または `url:` �
 
 `user.id` を取得するには、以下のいずれかの方法を使用します:
 
-- ChatOps: `/chatops run user find <username or email>` を実行
+- ChatOps: `/chatops gitlab run user find <username or email>` を実行
 - 管理者アカウント: [GitLab User Lookup](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) Zendesk アプリで管理者リンクに移動
 - [Users API](https://docs.gitlab.com/api/users/#as-a-regular-user): メールまたはユーザー名でユーザーを検索
 
 検索によって、報告したユーザーではなく別のユーザーの情報（ユーザー ID、URL など）を参照しているように見える Sentry の Issue が見つかることがあります。これが起こり、その特定の報告者向けに Issue を作成する必要がある場合は、以下のように `Events` タブをクリックするだけで、その Issue の影響を受けたすべてのユーザーのリストを表示できます。
 
-![Sentry events タブ](/images/support/sentry-events-tab.png)
+![Sentry の Events タブ](/images/support/sentry-events-tab.png)
 
 その後、特定のイベントをクリックすると、そのユーザーの Sentry Issue を確認できます。
 
-詳しい情報については、[Sentry ガイド](https://docs.sentry.io/concepts/search/) と [このプレゼンテーション](https://drive.google.com/drive/u/0/search?q=Sentry%20parent:1UT1VKASEzvCzWVX9fDLkYhDju35NxiLT)（GitLab 内部のみ）を参照してください。
+詳しい情報については、[Sentry ガイド](https://docs.sentry.io/concepts/search/)と [このプレゼンテーション](https://drive.google.com/drive/u/0/search?q=Sentry%20parent:1UT1VKASEzvCzWVX9fDLkYhDju35NxiLT)（GitLab 内部のみ）を参照してください。
 
 ### `gitlabcom` Sentry プロジェクトでユーザー名を使って検索する
 

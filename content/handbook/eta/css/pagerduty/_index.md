@@ -2,11 +2,11 @@
 title: 'Pagerduty'
 description: 'Pagerduty のドキュメント'
 upstream_path: "/handbook/eta/css/pagerduty/"
-upstream_sha: "a2f17ddfb308ad2cf8c33a838af1d4b482818d17"
-translated_at: "2026-10-07T21:09:39+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:37:28Z"
 translator: codex
 stale: false
-lastmod: "2026-10-05T11:56:10-05:00"
+lastmod: "2026-10-12T12:33:51-05:00"
 ---
 
 このガイドでは、GitLab で Customer Support Systems が Pagerduty をどのように使用し、運用するかを説明します。
@@ -36,22 +36,12 @@ Customer Support Systems のページングまたはオンコール担当に関�
       - ローテーションタイプ: 毎週
       - 引き継ぎ時刻: 月曜日 04:00 PM
       - オンコールシフトを特定の時刻に制限:
-        - 04:00 PM から 12:00 AM
-    - APAC 1
+        - 10:00 AM から 10:00 PM
+    - APAC
       - ローテーションタイプ: 毎週
       - 引き継ぎ時刻: 月曜日 12:00 AM
       - オンコールシフトを特定の時刻に制限:
-        - 12:00 AM から 4:00 AM
-    - APAC 2
-      - ローテーションタイプ: 毎週
-      - 引き継ぎ時刻: 月曜日 04:00 AM
-      - オンコールシフトを特定の時刻に制限:
-        - 04:00 AM から 08:00 AM
-    - EMEA
-      - ローテーションタイプ: 毎週
-      - 引き継ぎ時刻: 月曜日 08:00 AM
-      - オンコールシフトを特定の時刻に制限:
-      - 08:00 AM から 04:00 PM
+        - 10:00 PM から 10:00 AM
 
 ### エスカレーションポリシー
 
@@ -66,7 +56,7 @@ Customer Support Systems のページングまたはオンコール担当に関�
     - Jason
     - 10 分後にエスカレーション
   - 次のユーザーまたはスケジュールに通知
-    - Dylan
+    - TJ
     - 10 分後にエスカレーション
   - 誰も確認しない場合、このポリシーを 5 回繰り返す
 

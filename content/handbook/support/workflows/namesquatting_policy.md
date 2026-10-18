@@ -4,18 +4,18 @@ description: "GitLab の Name-squatting ポリシーで休眠とみなされた�
 category: GitLab.com
 subcategory: Accounts
 upstream_path: /handbook/support/workflows/namesquatting_policy/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:35:31Z"
 translator: claude
 stale: false
-lastmod: "2026-02-05T23:38:57+11:00"
+lastmod: "2026-10-16T18:56:09+08:00"
 ---
 
 ### 概要
 
 [サポートのステートメント](https://support.gitlab.com/hc/en-us/articles/11626493890844-GitLab-com-Specific-Support-Policies#name-squatting-policy)によれば、ネームスペースは適切な基準を満たし、**有償顧客**（有償ネームスペースのメンバー、または SaaS に移行する Self-managed 顧客）から要求された場合に解放される可能性があります。
 
-**重要な注:** 通常と異なる状況、または以下のワークフローに当てはまらない状況がある場合は、Security Operations に[Issue を起票](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/operations/-/issues/new?issuable_template=General%2BUncategorized)してください。状況を説明し、レビューとガイダンスの提供を依頼してください。
+**重要な注:** 通常と異なる状況、または以下のワークフローに当てはまらない状況がある場合は、Security Operations に [Issue を起票](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/operations/-/issues/new?issuable_template=General%2BUncategorized)してください。状況を説明し、レビューとガイダンスの提供を依頼してください。
 
 **注:** マクロを適用する際は、プレースホルダー **"REQUESTEDNAME"** を要求されたネームスペースに置き換えるようにしてください。
 
@@ -37,7 +37,7 @@ lastmod: "2026-02-05T23:38:57+11:00"
 1. [`Support::SaaS::Gitlab.com::Name Squatting Policy::Contact Namespace Owner`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Namesquatting%20Policy/Contact%20Namespace%20Owner.md) マクロを適用し、チケットを **On-hold** とマークします。
 1. **ネームスペース要求者のチケット**へのリンクを内部コメントとして残します。
 
-グループに複数のオーナーが含まれている場合、1 つのチケットにつき 1 人のオーナーに連絡してください。複数いる場合は 3 人までに制限してください（`https://gitlab.com/groups/<group_name>/-/group_members` ページで *Last activity* が最も新しいオーナーや、namesquatting リクエスト時にまだオーナーである場合に *Source* として記載されているオーナーを選ぶことができます）。
+グループに複数のオーナーが含まれている場合、1 つのチケットにつき 1 人のオーナーに連絡してください。複数いる場合は 3 人までに制限してください（`https://gitlab.com/groups/<group_name>/-/group_members` ページで *Last activity* が最も新しいオーナーや、名前占有リクエスト時にまだオーナーである場合に *Source* として記載されているオーナーを選ぶことができます）。
 
 要求者のチケット:
 
@@ -51,16 +51,16 @@ lastmod: "2026-02-05T23:38:57+11:00"
 1. 以下のスニペットを**ネームスペースオーナーの**チケットへの返信として使用し、チケットを `solved` に設定します:
 
 <details>
-  <summary markdown="span">Namespace Owner Response - Received</summary>
+  <summary markdown="span">ネームスペースオーナーの返信を受信</summary>
 
-  <p>Hi,</p>
+  <p>こんにちは、</p>
 
-  <p>Thank you for confirming that you wish to maintain control of the requested namespace. As per our [Name Squatting Policy](https://support.gitlab.com/hc/en-us/articles/11626493890844-GitLab-com-Specific-Support-Policies#name-squatting-policy), we have cancelled this request and will not release your namespace.</p>
+  <p>対象のネームスペースの管理を継続するご意向を確認いただき、ありがとうございます。私たちの[名前占有ポリシー](https://support.gitlab.com/hc/en-us/articles/11626493890844-GitLab-com-Specific-Support-Policies#name-squatting-policy)に従い、このリクエストをキャンセルしました。お客様のネームスペースを解放することはありません。</p>
 
-  <p>We will mark this ticket as solved, please reach out if you have any further questions.</p>
+  <p>このチケットは解決済みにします。ご不明な点がございましたら、ご連絡ください。</p>
 </details>
 
-1. [`Support::SaaS::Gitlab.com::Name Squatting Policy::Failed Namespace Request`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Namesquatting%20Policy/Failed%20Namespace%20Request.md) を**ネームスペース要求者のチケット**に適用します。
+1. [`Support::SaaS::Gitlab.com::Name Squatting Policy::Failed Namespace Request`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Namesquatting%20Policy/Failed%20Namespace%20Request.md)を**ネームスペース要求者のチケット**に適用します。
 
 #### ネームスペースのオーナーが応答しない場合
 
@@ -74,17 +74,17 @@ lastmod: "2026-02-05T23:38:57+11:00"
 
 リクエストが成功した場合、以下の手順に従います:
 
-ユーザーの場合、[Chatops](https://docs.gitlab.com/development/chatops_on_gitlabcom/) でオーナーのユーザー名を変更します:
+ユーザーの場合、[Chatops](https://docs.gitlab.com/development/chatops_on_gitlabcom/)でオーナーのユーザー名を変更します:
 
-1. Slack で `/chatops run user idle <owner_username>` を実行します。
-1. [Admin note](/handbook/support/workflows/admin_note) を追加します。
+1. Slack で `/chatops gitlab run user idle <owner_username>` を実行します。
+1. [管理者メモ](/handbook/support/workflows/admin_note)を追加します。
 
 admin の使用を希望する場合、またはグループの場合、以下の手順でオーナーのネームスペースをリネームします:
 
 1. admin でネームスペースに移動します - [ユーザー](https://gitlab.com/admin/users)または[グループ](https://gitlab.com/admin/groups)
 1. プロフィールで「Edit」を選択します。
 1. ユーザーの場合はユーザー名に、グループの場合はグループ URL に "_idle" を追加します。
-1. [Admin note](/handbook/support/workflows/admin_note) を追加します。
+1. [管理者メモ](/handbook/support/workflows/admin_note)を追加します。
 1. 変更を保存します。
 
 Zendesk で:
@@ -97,9 +97,9 @@ Zendesk で:
 
 ### FAQ
 
-1. **name squatting リクエストへの応答としてのログインは、アカウントがアクティブであることを意味するか?**
+1. **名前占有リクエストへの応答としてのログインは、アカウントがアクティブであることを意味するか?**
 
-   いいえ、ユーザーは name squatting リクエストに対して「自分のネームスペースを保持したい」と明示的に返信する必要があります。ユーザーが応答せずログインしただけの場合は、「X 時にログインされたことを確認しましたが、ネームスペースを保持したい場合はここで知らせる必要があります」のような最終メッセージを送信してください。
+   いいえ、ユーザーは 名前占有リクエストに対して「自分のネームスペースを保持したい」と明示的に返信する必要があります。ユーザーが応答せずログインしただけの場合は、「X 時にログインされたことを確認しましたが、ネームスペースを保持したい場合はここで知らせる必要があります」のような最終メッセージを送信してください。
 
 1. **アカウント内のデータとは何を指すか?**
 
@@ -115,7 +115,7 @@ Zendesk で:
 
 1. **リクエストが疑わしく見えても、ネームスペースを解放するべきか?**
 
-   はい、解放基準を満たす限り、常にネームスペースを解放するべきです。Trust and Safety が、その後ネームスペースから発生する可能性のある悪用行為を緩和するために必要な措置を講じます。Support、Legal、Trust and Safety からの議論と追加コンテキストについては、[Support Team Meta issue 3145](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/3145) を参照してください。
+   はい、解放基準を満たす限り、常にネームスペースを解放するべきです。Trust and Safety が、その後ネームスペースから発生する可能性のある悪用行為を緩和するために必要な措置を講じます。Support、Legal、Trust and Safety からの議論と追加コンテキストについては、[Support Team Meta Issue 3145](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/3145)を参照してください。
 
 ---
 
