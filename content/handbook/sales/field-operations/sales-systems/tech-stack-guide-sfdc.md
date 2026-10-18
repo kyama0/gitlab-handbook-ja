@@ -1,23 +1,21 @@
 ---
-title: "Salesforce 技術スタックガイド"
+title: "Salesforce Tech Stack ガイド"
 description: "Salesforce がどのように実装されているかのリファレンス。"
 upstream_path: /handbook/sales/field-operations/sales-systems/tech-stack-guide-sfdc/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T10:00:00Z"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T21:05:51Z"
 translator: claude
 stale: false
-lastmod: "2025-01-23T11:43:11+00:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
-## Salesforce 技術スタックガイド
+## Salesforce Tech Stack ガイド
 
-> **注:** アプリの閲覧は **[Tech Stack Index](/handbook/business-technology/tech-stack/)** を、アプリの管理は **[Tech Stack Applications](/handbook/business-technology/tech-stack-applications/)** を参照してください。
-
-{{% tech-stack "Salesforce" %}}
+> **注:** アプリの閲覧は **[Tech Stack Index](/handbook/business-technology/tech-stack/)**を、アプリの管理は **[Tech Stack Applications](/handbook/business-technology/tech-stack-applications/)**を参照してください。
 
 ### 実装
 
-Salesforce は複数のモジュールとインストール済みの [パッケージ](/handbook/sales/field-operations/sales-systems/salesforce-config/#installed-packages) で構成されています。
+Salesforce は複数のモジュールとインストール済みの[パッケージ](/handbook/sales/field-operations/sales-systems/salesforce-config/#installed-packages)で構成されています。
 
 ### システム図
 

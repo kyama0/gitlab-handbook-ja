@@ -6,9 +6,9 @@ build:
 aliases:
   - /handbook/security/corporate/end-user-services/access-requests/access-requests/
 upstream_path: /handbook/eta/corporate-it/end-user-services/access-requests/access-requests/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: 2026-07-28T15:04:15+01:00
-translated_at: "2026-07-31T08:01:44+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T19:52:00+02:00"
+translated_at: "2026-10-18T21:07:28Z"
 translator: codex
 stale: false
 ---
@@ -46,7 +46,7 @@ stale: false
 
 1. アクセスが必要なシステムに合わせて行を削除または追加します。**テンプレートの形式に必ず従ってください（以下にも記載しています）**。リクエストするロール、ボルト、グループ、チャンネル、またはプロジェクトを追加して、リクエストするアクセスをできるだけ具体的に示してください。
 1. 管理アクセスが付与される場合は、admin-access ラベルを追加してください。[最小権限レビュー](https://internal.gitlab.com/handbook/security/access-management-standard/#least-privilege-reviews-for-access-requests)に従って必要最小限のアクセスをリクエストし、根拠セクションでアクセスが必要な理由を説明してください。
-1. リクエストに Infrastructure チームが所有するシステムへのアクセスが含まれる場合は（[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に従って）、`@gitlab-com/gl-infra/managers` にメンションし、~InfrastructureApproved ラベルを追加して承認するよう依頼してください。
+1. リクエストに Infrastructure チームが所有するシステムへのアクセスが含まれる場合は（[Tech Stack](/handbook/business-technology/tech-stack-applications/)に従って、`@gitlab-com/gl-infra/managers` にメンションし、~InfrastructureApproved ラベルを追加して承認するよう依頼してください。
 
    ```text
    - [ ] System name: Which vault, which group, which channel, which project, which role?
@@ -62,7 +62,7 @@ stale: false
 **ステップ 4: Managers が行うこと**
 
 1. この人の Manager である場合は、Issue に `AR-Approval::Manager Approved` と `ReadyForProvisioning` のラベルを追加してください。自分がアクセスを求める人である場合は、承認のために*自分の* Manager に割り当てる必要があり、その Manager が `AR-Approval::Manager Approved` と `ready for provisioning` のラベルを追加する必要があります。
-1. 承認後、**必ず Issue を[Tech Stack に一覧化されているシステムのプロビジョニング担当者](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に割り当ててください。**
+1. 承認後、**Issue をシステムのプロビジョニング担当者に必ず割り当ててください**。担当者は [Tech Stack に記載されています](/handbook/business-technology/tech-stack-applications/)。
 
 **ステップ 5: プロビジョニング担当者が行うこと**
 
@@ -93,13 +93,13 @@ stale: false
 1. 必要なシステムだけが Issue に残るよう、アクセスが必要なシステムの**行を追加**してください。**チェックを入れないでください。**
    - *[最小権限レビュー](https://internal.gitlab.com/handbook/security/access-management-standard/#least-privilege-reviews-for-access-requests)に従って必要最小限のアクセスをリクエストし、根拠セクションでアクセスが必要な理由を説明して、リクエストするロールを指定してください。具体的に記載してください。*
 1. この人の Manager である場合は、Issue に `AR-Approval::Manager Approved` と `ready for provisioning` のラベルを追加してください。自分がアクセスを求める人である場合は、承認のために*自分の* Manager に割り当てる必要があり、その Manager が `AR-Approval::Manager Approved` と `ready for provisioning` のラベルを追加する必要があります。
-1. 承認後、**必ず Issue を[Tech Stack に一覧化されているシステムのプロビジョニング担当者](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に割り当ててください。**
+1. 承認後、**Issue をシステムのプロビジョニング担当者に必ず割り当ててください**。担当者は [Tech Stack に記載されています](/handbook/business-technology/tech-stack-applications/)。
 1. 完了したら Issue をクローズしてください。
 {{% /panel %}}
 
 #### 共有アカウントに関する IT 向けの手順とガイダンス
 
-1. 共有アカウントのアクセスリクエストをレビューし、共有アカウントに追加する各ユーザーについて[Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/compliance/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Exception%20Request)があることを確認してください。Exception Request をレビューし、アクセスリクエスト Issue に例外期間を記載してください。承認を追加したり共有アカウントを設定したりする前に、Exception Request が Security によりレビューおよび承認されていることを確認してください。
+1. 共有アカウントのアクセスリクエストをレビューし、共有アカウントに追加する各ユーザーについて [Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/compliance/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Exception%20Request)があることを確認してください。Exception Request をレビューし、アクセスリクエスト Issue に例外期間を記載してください。承認を追加したり共有アカウントを設定したりする前に、Exception Request が Security によりレビューおよび承認されていることを確認してください。
 1. すべての共有アカウントは Okta 経由で管理する必要があります。1Password を使用する必要がある場合（Okta を技術的に使用できない場合）は、そのことをアクセスリクエストに明記する必要があります。
 1. 共有アカウントを Okta で管理する場合 - 例外のタイムラインに応じて共有アカウントアクセスをレビューし、Issue をクローズするためのレビュー／リマインダー日を Okta に設定してください。
    1. タイムラインの期限が近づいていることに関する通知を Okta から受け取った場合は、新しい共有アカウントのアクセスリクエストを記録し、完了するために Shared Account Owner に割り当ててください。
@@ -116,7 +116,7 @@ stale: false
 Okta にはプロビジョニング／プロビジョニング解除の自動化がありますが、これはアクセスのプロビジョニングおよびプロビジョニング解除を完全かつ正確に反映するものではないことに注意してください。
 Okta は、ユーザーのロール／グループに基づいて統合済み／実装済みのアプリケーションを割り当てるよう設定されています。
 これによりアプリケーションには Okta 経由でアクセスできますが、ユーザーはシステムに直接アクセスすることも可能です。
-Okta で設定されているアプリケーションの一覧については、[Okta Application Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)を参照してください。
+Okta で設定されているアプリケーションの一覧については、[Okta Application Stack](/handbook/business-technology/tech-stack-applications/)を参照してください。
 
 これは、次のことを意味します。
 
@@ -139,7 +139,7 @@ Okta で設定されているアプリケーションの一覧については、
 
 1. **タイトル**には、自分の情報を使用して「Full Name - System - Role」（例：Laura Croft Google Group: adventurer）と入力します。
 1. 必要なアクセスの行を**削除または追加**します。
-1. このリクエストが以下に該当する場合は、ラベルによる承認を得るために Manager に割り当ててください**（Manager は `AR-Approval::Manager Approved` と `ReadyForProvisioning` のラベルを適用する必要があります）：**
+1. このリクエストが以下に該当する**場合**は、ラベルによる承認を得るために Manager に割り当ててください（Manager は `AR-Approval::Manager Approved` と `ReadyForProvisioning` のラベルを適用する必要があります:
    - 1Password ボルトまたはグループへのアクセス
    - 管理アクセス
    - 共有 Slack チャンネルを含む、社内関係者以外の人の Slack グループへのアクセス
@@ -166,7 +166,7 @@ Okta で設定されているアプリケーションの一覧については、
 ### 部門のアクセスリクエストボード
 
 - 完全に自動化できるまでの間に追加のラベルが必要な場合や、プロセス改善の提案がある場合は、[Issue を作成してください](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-help-issue-tracker/-/issues/new)。
-- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
+- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 
@@ -189,6 +189,6 @@ Okta で設定されているアプリケーションの一覧については、
 
 Tech Stack の新しい項目に対するアクセスリクエストプロセスを開始する必要がある場合：
 
-1. ツールが [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認してください。
+1. ツールが [Tech Stack](/handbook/business-technology/tech-stack-applications/)に追加されていることを確認してください。
 1. チームメンバーが `provisioner` `deprovisioner` として含まれていることを確認してください。
 1. 関連するハンドブックページにアクセスリクエストを送信する要件を文書化してください。

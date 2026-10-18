@@ -1,11 +1,11 @@
 ---
 title: "macOS のツールとヒント"
 upstream_path: /handbook/tools-and-tips/mac/
-upstream_sha: 68af60af15ea4dcb51c3d985f7473b212e4f2cb4
-translated_at: "2026-05-07T15:33:18Z"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T21:05:51Z"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
 このページでは macOS 向けの様々なヒントとツールを紹介します。
@@ -13,9 +13,9 @@ lastmod: "2025-10-14T17:59:32+00:00"
 ## macOS のヒント
 
 macOS を使い始めたばかりの方に役立つヒントをいくつか紹介します。
-すでに使い慣れている方でも、これらの [キーボードショートカット](https://support.apple.com/en-us/102650) は便利かもしれません。
+すでに使い慣れている方でも、これらの[キーボードショートカット](https://support.apple.com/en-us/102650)は便利かもしれません。
 
-Windows から macOS に切り替えた場合、[こちらのヒント](https://support.apple.com/en-us/102323) が役立つかもしれません。
+Windows から macOS に切り替えた場合、[こちらのヒント](https://support.apple.com/en-us/102323)が役立つかもしれません。
 
 ## スクリーンショットや動画の撮影 {#taking-screenshots-and-videos}
 
@@ -36,7 +36,7 @@ macOS には、便利なスクリーンショットのキーボードショー�
 
 ### スクリーンショットの生産性向上のヒント
 
-スクリーンショットを自動的に圧縮して指定のディレクトリに移動させ、`Desktop` ディレクトリがスクリーンショットファイルで散らからないようにするには、GitLab Unfiltered のブログ記事をチェックしてください: [One simple trick to make your screenshots 80% smaller](https://about.gitlab.com/blog/2020/01/30/simple-trick-for-smaller-screenshots/)。
+スクリーンショットを自動的に圧縮して指定のディレクトリに移動させ、`Desktop` ディレクトリがスクリーンショットファイルで散らからないようにするには、GitLab Unfiltered のブログ記事をチェックしてください: [スクリーンショットを 80% 小さくする簡単な方法](https://about.gitlab.com/blog/2020/01/30/simple-trick-for-smaller-screenshots/)。
 
 ## macOS の通知センターを無効化する
 
@@ -54,21 +54,21 @@ macOS には、便利なスクリーンショットのキーボードショー�
 
 ### macOS のメニューバーから
 
-1. アップルロゴ メニューをクリックします
+1. Apple ロゴ  メニューをクリックします
 1. 「画面をロック」をクリックします
 
 あるいは、キーボードショートカット `⌃+⌘+Q` (`ctrl+cmd+Q`) を使うか、Mac または Magic Keyboard で利用可能な場合は Touch ID を押すことができます。
 
 ### macOS の Touch Bar から
 
-1. `システム環境設定 > キーボード` を開きます
-1. `Control Strip をカスタマイズ…` をクリックします
+1. `System Preferences > Keyboard` を開きます
+1. `Customize Control Strip…` をクリックします
 1. `Screen Lock` アイコンを Touch Bar にドラッグします
-1. 完了です！
+1. 完了です!
 
 ## Docker Desktop
 
-Docker Desktop はライセンスツールであり、利用が承認されています。アクセスについては [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) の手順を参照してください。
+Docker Desktop はライセンスツールであり、利用が承認されています。アクセスについては [Tech Stack](/handbook/business-technology/tech-stack-applications/)の手順を参照してください。
 
 Docker Desktop の有償ライセンスは限られた数しか利用できません。以下のオープンソース代替（2025-02-28 時点でメンテナンスされている模様）が無償の代替として利用可能で、まずこれらを試すべきです:
 
@@ -78,14 +78,14 @@ Docker Desktop の有償ライセンスは限られた数しか利用できま�
 これらの代替が動作しない場合は、以下のステップに従って Docker へのアクセスをリクエストしてください:
 
 1. `@gitlab.com` メールアドレスで [hub.docker.com](https://hub.docker.com) のアカウントを作成します。会社のメールアドレス以外でアクセスすることはできません。
-1. Access_Change_Request テンプレートで [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issue%5Bmilestone_id%5D=) を作成し、（上記の通り）なぜ代替案が選択肢にならないのかを詳述します。
+1. Access_Change_Request テンプレートで [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issue%5Bmilestone_id%5D=)を作成し、（上記の通り）なぜ代替案が選択肢にならないのかを詳述します。
 1. マネージャーがリクエストを承認したら、このシステムについて [Tech Stack] にリストされている System Provisioner にアサインしてください。
 
-アクセスがプロビジョニングされると、特定の `dockerdesktop` チームに追加された旨のメール通知を受け取ります。その後、[Docker desktop をインストール](https://www.docker.com/products/docker-desktop/) し、登録したアカウントでログインできます。
+アクセスがプロビジョニングされると、特定の `dockerdesktop` チームに追加された旨のメール通知を受け取ります。その後、[Docker desktop をインストール](https://www.docker.com/products/docker-desktop/)し、登録したアカウントでログインできます。
 
 ライセンスの数は限られているため、プロビジョニングに時間がかかったり、一時的にチームへのアクセスが取得できないことがあります。
 
-将来このプロダクトを使いたくなくなった場合は、[アクセス変更リクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issue%5Bmilestone_id%5D=#) を提出し、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) にリストされている provisioner にアサインしてください。これにより、ライセンスを別の人に割り当てられるようになります。
+将来このプロダクトを使いたくなくなった場合は、[アクセス変更リクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issue%5Bmilestone_id%5D=#)を提出し、[Tech Stack](/handbook/business-technology/tech-stack-applications/)にリストされている provisioner にアサインしてください。これにより、ライセンスを別の人に割り当てられるようになります。
 
 ## Java の利用
 
