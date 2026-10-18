@@ -4,9 +4,9 @@ description: "End User Services は、アクセス管理、ハードウェアの
 aliases:
   - /handbook/security/corporate/end-user-services/
 upstream_path: /handbook/eta/corporate-it/end-user-services/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T16:24:24+01:00"
-translated_at: "2026-07-31T07:01:08+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T19:52:00+02:00"
+translated_at: "2026-10-18T21:07:28Z"
 translator: codex
 stale: false
 ---
@@ -22,20 +22,20 @@ End User Services (EUS) チームは GitLab の IT ヘルプデスクです。�
 
 ## 提供内容
 
-私たちは、アクセスリクエスト、アカウントロックアウト、認証の問題、ラップトップハードウェア、ラップトップのソフトウェア設定の問題、不慣れなテクノロジーに関する 1:1 トレーニング、および任意の [Corporate Security System](/handbook/security/corporate/systems) の問題のトリアージを支援できるヘルプデスクサポートアナリストにより、24x5 のサポートを提供します。
+私たちは、アクセスリクエスト、アカウントロックアウト、認証の問題、ラップトップハードウェア、ラップトップのソフトウェア設定の問題、不慣れなテクノロジーに関する 1:1 トレーニング、および任意の [Corporate Security System](/handbook/security/corporate/systems)の問題のトリアージを支援できる Helpdesk Support Analysts により、24x5 のサポートを提供します。
 
-**Corporate IT / EUS はリクエストと有効化を担当します。[Corporate Security Identity Engineering](/handbook/security/corporate/engineering/identity) はアーキテクチャ、セキュリティ制御、ID プロビジョニング自動化を担当します。**
+**Corporate IT / EUS はリクエストと有効化を担当します。[Corporate Security Identity Engineering](/handbook/security/corporate/engineering/identity)はアーキテクチャ、セキュリティ制御、ID プロビジョニング自動化を担当します。**
 
 ### 担当範囲
 
 1. [アドホックなアクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)とその実行
-1. [Temporary Service Provider](/handbook/eta/corporate-it/end-user-services/temporary-users/)および[外部コラボレーター](/handbook/eta/corporate-it/end-user-services/external-collaborators/)向けのアクセス構築
+1. [Temporary Service Providers](/handbook/eta/corporate-it/end-user-services/temporary-users/)および [External Collaborators](/handbook/eta/corporate-it/end-user-services/external-collaborators/)向けのアクセス構築
 1. [アカウントパスワードと 2FA のリセット](/handbook/eta/corporate-it/end-user-services/account-resets/)
 1. [ラップトップの調達、修理、ワイプ](/handbook/eta/corporate-it/end-user-services/laptop-management/)
 1. [IT オンボーディングの有効化](/handbook/eta/corporate-it/end-user-services/onboarding101/)とエンドユーザートレーニング
-1. [サポート対象アプリケーション](/handbook/eta/corporate-it/end-user-services/supported-apps/)および[Zoom](/handbook/eta/corporate-it/zoom/)のエンドユーザーサポート
+1. [サポート対象アプリケーション](/handbook/eta/corporate-it/end-user-services/supported-apps/)および [Zoom](/handbook/eta/corporate-it/zoom/)のエンドユーザーサポート
 
-[CorpSec Devices](/handbook/security/corporate/engineering/devices) は、モバイル
+[CorpSec Devices](/handbook/security/corporate/engineering/devices)は、モバイル
 デバイス管理 (MDM) とエンドポイントの検知と対応 (EDR) の
 設定、エンドポイントセキュリティベースライン、ブラウザセキュリティ制御、ソフトウェア
 更新ポリシー、デバイス信頼の強制を担当します。EUS は、これらの制御内でユーザーサポート、
@@ -49,18 +49,18 @@ End User Services (EUS) チームは GitLab の IT ヘルプデスクです。�
 1. [オンボーディング](/handbook/security/corporate/services/onboarding)と[オフボーディング](/handbook/security/corporate/services/offboarding)の自動化と全体設計
 1. [サービスアカウント](/handbook/security/corporate/services/service-accounts)
 
-Corporate IT または Corporate Security が管理していないシステムについては、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) で所有者を確認できます。どこに問い合わせればよいかわからない場合は、私たちに連絡してください。適切な担当者または場所に案内します。
+Corporate IT または Corporate Security が管理していないシステムについては、[Tech Stack](/handbook/business-technology/tech-stack-applications/)で所有者を確認できます。どこに問い合わせればよいかわからない場合は、私たちに連絡してください。適切な担当者または場所に案内します。
 
 ## ヘルプ記事
 
-1. [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/) - [AR サービス](/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/)と[FAQ](/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions/)を含む
+1. [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/) - [AR サービス](/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/)と [FAQ](/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions/)を含む
 1. [アカウントパスワードと 2FA のリセット](/handbook/eta/corporate-it/end-user-services/account-resets/)
-1. [外部コラボレーター（顧客、パートナー、ベンダー）](/handbook/eta/corporate-it/end-user-services/external-collaborators/)
+1. [External Collaborators（顧客、パートナー、ベンダー）](/handbook/eta/corporate-it/end-user-services/external-collaborators/)
 1. [IT オンボーディング 101](/handbook/eta/corporate-it/end-user-services/onboarding101/)
 1. [ラップトップ管理](/handbook/eta/corporate-it/end-user-services/laptop-management/) - [ラップトップのワイプ（工場出荷時リセット）プロセス](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-wipe/)を含む
 1. [Okta エンドユーザーガイド](/handbook/eta/corporate-it/end-user-services/okta/)
 1. [サポート対象アプリケーション](/handbook/eta/corporate-it/end-user-services/supported-apps/)
-1. [Temporary Service Provider（契約ユーザー）](/handbook/eta/corporate-it/end-user-services/temporary-users/)
+1. [Temporary Service Providers（契約ユーザー）](/handbook/eta/corporate-it/end-user-services/temporary-users/)
 1. [Compass](/handbook/eta/corporate-it/compass/) - IT サポートリクエストプラットフォーム
 1. [Zoom](/handbook/eta/corporate-it/zoom/)
 

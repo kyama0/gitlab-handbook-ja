@@ -15218,19 +15218,19 @@
     },
     "content/handbook/finance/accounts-payable/tech-stack-guide-coupa.md": {
       "path": "content/handbook/finance/accounts-payable/tech-stack-guide-coupa.md",
-      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1af9e05cb9d0e289b60030da02f87c25cfdbc94e37b50c64f4e42d94799a2460",
-      "upstream_committed_at": "2025-01-30T16:32:21+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:05:51Z",
+      "model": "codex",
+      "input_hash": "93e86418276c8c666626d5fafb8be6450b389cf2ed99d907e6d1eea4be993a83",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/finance/accounts-payable/tech-stack-guide-liquid.md": {
       "path": "content/handbook/finance/accounts-payable/tech-stack-guide-liquid.md",
-      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "19eb165b5f72572e296fb81f2622ca784170abc8f76e4d40833dc4b128f0a487",
-      "upstream_committed_at": "2023-11-07T21:47:02+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:05:51Z",
+      "model": "codex",
+      "input_hash": "064b64de46ff5499a72003f18135cc5da06b649b5b0044db4074268b3886afe8",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/finance/authorization-matrix.md": {
       "path": "content/handbook/finance/authorization-matrix.md",
@@ -15538,11 +15538,11 @@
     },
     "content/handbook/finance/procurement/individual-use-software.md": {
       "path": "content/handbook/finance/procurement/individual-use-software.md",
-      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "944c8ea8767d58070afbffa5d5d93930d5197b58c5cbc1b4122191f490cde309",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:05:51Z",
+      "model": "codex",
+      "input_hash": "a8e5565724f599e12390f7c397f3748bcbfee99093be8aab4924a47de4f6ca40",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/finance/procurement/office-equipment-supplies.md": {
       "path": "content/handbook/finance/procurement/office-equipment-supplies.md",
@@ -18826,11 +18826,11 @@
     },
     "content/handbook/marketing/marketing-operations/marketo/tech-stack-guide-marketo.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/tech-stack-guide-marketo.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d569169f2c40eaed284c66ca2a762f8aa9b508bced4cfd03a916ad300ea696bc",
-      "upstream_committed_at": "2024-05-30T08:11:40+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:07:28Z",
+      "model": "codex",
+      "input_hash": "4ab7f5a429d6101a3c7f82214d168747c52b92cb0011ecacb09e03dc1e552699",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/marketing/marketing-operations/mql-sla.md": {
       "path": "content/handbook/marketing/marketing-operations/mql-sla.md",
@@ -19290,11 +19290,11 @@
     },
     "content/handbook/tools-and-tips/mac.md": {
       "path": "content/handbook/tools-and-tips/mac.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4fcc86d0aff07fa35381e69d941b95e296209f3e9282984b7737b2bc476b1b22",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:05:51Z",
+      "model": "codex",
+      "input_hash": "1adc1ed793cd511eba10748e471c569ab682ef4fcf5b4874589906c35cc707e3",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/tools-and-tips/mermaid.md": {
       "path": "content/handbook/tools-and-tips/mermaid.md",
@@ -27986,11 +27986,11 @@
     },
     "content/handbook/sales/field-operations/sales-systems/tech-stack-guide-sfdc.md": {
       "path": "content/handbook/sales/field-operations/sales-systems/tech-stack-guide-sfdc.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-12T10:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "187dc010fd3427955449b9bdd7c0fbf395ada4350604e77ed7b7f4594473a5f8",
-      "upstream_committed_at": "2025-01-23T11:43:11+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:05:51Z",
+      "model": "codex",
+      "input_hash": "83419b1f28f8b54a2b92be226dbe4ebab7e955292c2eb4157e86c4730bee802b",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/sales/field-operations/sales-systems/license-usage-app/index.md": {
       "path": "content/handbook/sales/field-operations/sales-systems/license-usage-app/index.md",
@@ -34250,11 +34250,11 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:01:08+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:07:28Z",
       "model": "codex",
-      "input_hash": "82778366295ada4327447d794573536b1a4ee4cbb7394de2642e9ca3e404c3c5",
-      "upstream_committed_at": "2026-07-28T16:24:24+01:00"
+      "input_hash": "292ab34689a941466dc16bac714a4400bdf8a8a558d138d60e89730c3e424405",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/temporary-users/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/temporary-users/_index.md",
@@ -34626,11 +34626,11 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/access-requests/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/access-requests/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:54:55+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:07:28Z",
       "model": "codex",
-      "input_hash": "4e1d8153d1ff2df68af6af14c48aa1b32ac57e2fbe24a34456ea9ffc0f0714f2",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "208fc94c1848f388dc89a67469d2b340e12c2690c5a3bfc53c6aa521438660e2",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions.md",
@@ -34642,19 +34642,19 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T07:54:55+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:07:28Z",
       "model": "codex",
-      "input_hash": "11b66965b475ba9f29d0dbcdcd3d7befd896bb12d6c053c5c38eaf7174e2329e",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "ecdf7fa2df78246bcbc16371879e988aa395a7860dacf2e038b8a28381f7761a",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00",
-      "translated_at": "2026-07-31T08:01:44+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T21:07:28Z",
       "model": "codex",
-      "input_hash": "73681cd1ae02739549692374edde1feb841f7106bf300eb17e1bcdbb102bd995"
+      "input_hash": "1f7c51cf20c0d9b14360508f08ea41f1190807872887dbdedd3bcddb45b03a8f",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization/decisions/015_non_isolation_is_permanent.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/015_non_isolation_is_permanent.md",

@@ -7,9 +7,9 @@ tags:
 aliases:
   - /handbook/security/corporate/end-user-services/access-requests/
 upstream_path: /handbook/eta/corporate-it/end-user-services/access-requests/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:54:55+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T19:52:00+02:00"
+translated_at: "2026-10-18T21:07:28Z"
 translator: codex
 stale: false
 ---
@@ -51,7 +51,7 @@ Slack またはメールで通知を開くか、Okta タイルから Lumos に�
 ## アクセスリクエストに関連するページ {#access-requests-related-pages}
 
 - [よくある質問](/handbook/eta/corporate-it/end-user-services/access-requests/#application-specific-templates)
-- [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)
+- [Tech Stack](/handbook/business-technology/tech-stack-applications/)
 - [ベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)
 - [一時的なサービスプロバイダーのアクセスリクエストとオンボーディング](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/temporary-service-providers/)
 
@@ -80,7 +80,7 @@ Slack またはメールで通知を開くか、Okta タイルから Lumos に�
 Okta にはプロビジョニング／プロビジョニング解除の自動化がありますが、これはアクセスのプロビジョニングおよびプロビジョニング解除を完全かつ正確に反映するものではないことに注意してください。
 Okta は、ユーザーのロール／グループに基づいて統合済み／実装済みのアプリケーションを割り当てるよう設定されています。
 これによりアプリケーションには Okta 経由でアクセスできますが、ユーザーはシステムに直接アクセスすることも可能です。
-Okta で設定されているアプリケーションの一覧については、[Okta Application Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)を参照してください。
+Okta で設定されているアプリケーションの一覧については、[Okta Application Stack](/handbook/business-technology/tech-stack-applications/)を参照してください。
 
 ### アプリケーション固有のテンプレート {#application-specific-templates}
 
@@ -114,7 +114,7 @@ Okta、1Password、Google Workspace など、さまざまなコアサービス�
 ### 部門のアクセスリクエストボード
 
 - 完全に自動化できるまでの間に追加のラベルが必要な場合や、プロセス改善の提案がある場合は、[Issue を作成してください](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-help-issue-tracker/-/issues/new)。
-- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
+- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 
@@ -137,7 +137,7 @@ Okta、1Password、Google Workspace など、さまざまなコアサービス�
 
 Tech Stack の新しい項目に対するアクセスリクエストプロセスを開始する必要がある場合：
 
-1. ツールが [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認してください。
+1. ツールが [Tech Stack](/handbook/business-technology/tech-stack-applications/)に追加されていることを確認してください。
 1. チームメンバーが `provisioner` `deprovisioner` として含まれていることを確認してください。
 1. 関連するハンドブックページにアクセスリクエストを送信する要件を文書化してください。
 
