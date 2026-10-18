@@ -2,9 +2,9 @@
 title: 'ユーザーセグメント'
 description: 'Zendesk ユーザーセグメントに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/knowledge-center/user-segments/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-lastmod: "2026-07-21T11:29:58-05:00"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-16T09:01:14-05:00"
+translated_at: "2026-10-18T09:37:28Z"
 translator: codex
 stale: false
 ---
@@ -17,7 +17,7 @@ stale: false
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/help-center-user-segments)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/help-center-user-segments)
-- `CustSuppOps Zendesk Test Suite Generator` が有効
+- テスト情報: [ドキュメント](/handbook/eta/css/testing/zendesk/help-center-user-segments/)
 
 {{% /alert %}}
 
@@ -77,7 +77,7 @@ Zendesk は UI を通じてユーザーセグメントを完全に管理する�
 | Support Editors | `article_editor` | なし | なし | なし | N |
 | Support Publishers | `article_publisher` | なし | なし | なし | N |
 
-## 管理者タスク
+## 管理者タスク {#administrator-tasks}
 
 {{% alert title="注記" color="primary" %}}
 
@@ -85,7 +85,7 @@ Zendesk は UI を通じてユーザーセグメントを完全に管理する�
 
 {{% /alert %}}
 
-### ユーザーセグメントを表示する
+### ユーザーセグメントを表示する {#viewing-user-segments}
 
 Zendesk で現在のユーザーセグメントを確認するには:
 

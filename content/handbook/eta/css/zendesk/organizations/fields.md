@@ -2,9 +2,9 @@
 title: '組織フィールド'
 description: 'Zendesk 組織フィールドに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/organizations/fields/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T08:46:00+09:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+lastmod: "2026-10-14T12:44:07-05:00"
+translated_at: "2026-10-18T09:37:28Z"
 translator: codex
 stale: false
 ---
@@ -17,7 +17,7 @@ stale: false
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/organizations/fields)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/organizations/fields)
-- `CustSuppOps Zendesk Test Suite Generator` が有効
+- テスト情報: [ドキュメント](/handbook/eta/css/testing/zendesk/organization-fields/)
 
 {{% /alert %}}
 
@@ -46,7 +46,7 @@ GitLab で最もよく使用する種類は次のとおりです:
 | 複数選択 | `multiselect` | 複数選択を許可するドロップダウン用 | 「購入済みサブスクリプションレベル」 |
 | 数値 | `integer` | 小数を使用しない数値用 | 「シート数」 |
 | 正規表現 | `regexp` | Regex 検証が必要なテキスト形式フィールド用 | 「Salesforce 連絡先 ID」 |
-| テキスト | `text` | 自由形式フィールド用 | 「アカウントマネージャー」 |
+| テキスト | `text` | 自由形式フィールド用 | 「Account Manager」 |
 
 完全な一覧については、[Zendesk のドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください
 
@@ -55,7 +55,7 @@ GitLab で最もよく使用する種類は次のとおりです:
 現在のフィールドでは、データソースは次の 3 つの領域のいずれかです:
 
 - Salesforce: データは Salesforce アカウントから直接取得されます
-- Zendesk-Salesforce sync: データは[Zendesk-Salesforce sync](/handbook/eta/css/zendesk-salesforce-sync/)を通じて決定されます
+- Zendesk-Salesforce sync: データは [Zendesk-Salesforce sync](/handbook/eta/css/zendesk-salesforce-sync/)を通じて決定されます
 - エージェント: エージェントからリクエストされます（通常は内部リクエストフォーム経由）
 
 <details>
@@ -140,7 +140,7 @@ GitLab で最もよく使用する種類は次のとおりです:
 | `support_hold` | Support Hold | Checkbox | アカウントが保留中かどうか | Salesforce |
 | `support_level` | Support Level | Drop-down | サブスクリプションの最高レベルプラン | Salesforce |
 
-## 管理者タスク
+## 管理者タスク {#administrator-tasks}
 
 {{% alert title="注記" color="primary" %}}
 
@@ -148,7 +148,7 @@ GitLab で最もよく使用する種類は次のとおりです:
 
 {{% /alert %}}
 
-### 組織フィールドを表示する
+### 組織フィールドを表示する {#viewing-organization-fields}
 
 Zendesk で組織フィールドを表示するには:
 
@@ -176,7 +176,7 @@ Zendesk で組織フィールドを表示するには:
 
 組織フィールドを作成するには、同期リポジトリで MR を作成する必要があります。正確な変更内容はリクエスト自体によって異なります。正確なコンテンツは組織フィールドの種類によって異なる場合があります。
 
-**注記:** 一般的なフィールドタイプのテンプレートを表示します。その他のタイプ（date、decimal、textarea、multiselect、regexp）では、`type` 属性を適宜変更し、タイプ固有の要件について[Zendesk フィールドのドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください。
+**注記:** 一般的なフィールドタイプのテンプレートを表示します。その他のタイプ（date、decimal、textarea、multiselect、regexp）では、`type` 属性を適宜変更し、タイプ固有の要件について [Zendesk フィールドのドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください。
 
 **ヒント:** 下の各フィールドタイプをクリックすると、テンプレートが表示されます。
 

@@ -1,35 +1,35 @@
 ---
 title: サポートのオンボーディングバディ
-description: 新人サポートエンジニアのオンボーディングバディとして振る舞う方法
+description: 新人 Support Engineer のオンボーディングバディとして振る舞う方法
 upstream_path: /handbook/support/training/onboarding_buddy/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:33:43Z"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-14T08:38:52-04:00"
 ---
 
-新しいサポートエンジニアのオンボーディングバディに任命されました。おめでとうございます！あなたは、新しい人が私たちの顧客、チーム、そして製品に最大限貢献できるようになるために、その人を支援する重要な役割を担うことになりました。
+新しい Support Engineer のオンボーディングバディに任命されました。おめでとうございます！あなたは、新しい人が私たちの顧客、チーム、そして製品に最大限貢献できるようになるために、その人を支援する重要な役割を担うことになりました。
 
 ## 責務
 
-サポートのオンボーディングバディの責務は、[GitLab のオンボーディングバディの責務](/handbook/people-group/general-onboarding/onboarding-buddies/#buddy-responsibilities) を拡張したものです。まずそのページに目を通してください。
+サポートのオンボーディングバディの責務は、[GitLab のオンボーディングバディの責務](/handbook/people-group/general-onboarding/onboarding-buddies/#buddy-responsibilities)を拡張したものです。まずそのページに目を通してください。
 
-1. 新人サポートエンジニアが [オンボーディングモジュール](/handbook/support/training/) で詰まっている箇所をすべて支援する。
+1. 新人 Support Engineer が [オンボーディングモジュール](/handbook/support/training/)で詰まっている箇所をすべて支援する。
 1. 新メンバーと頻繁にコミュニケーションを取り、行き詰まったときには直接助けるか、助けを得られる先を案内する。
-1. 日々の業務について学べるよう、頻繁にコールやペアリングセッションを行い、新人サポートエンジニアが役割に適応・習熟できるよう支援する。
-1. 新人サポートエンジニアが当初のコンフォートゾーンを越えるようなチケットに取り組むよう促す。
-1. 最初の 2 週間に外出予定がある、または多数のコミットメントを抱えている場合は、自分以外の人にこの役割を引き受けてもらうか、コミットメントを整理してこの役割に確実に時間を割けるようにできないか、マネージャーと相談しましょう。
+1. 日々の業務について学べるよう、頻繁にコールやペアリングセッションを行い、新人 Support Engineer が役割に適応・習熟できるよう支援する。
+1. 新人 Support Engineer が当初のコンフォートゾーンを越えるようなチケットに取り組むよう促す。
+1. 最初の 2 週間に不在の予定がある、または多数のコミットメントを抱えている場合は、自分以外の人にこの役割を引き受けてもらうか、コミットメントを整理してこの役割に確実に時間を割けるようにできないか、マネージャーと相談しましょう。
 1. モジュール、アクセスリクエスト、オンボーディング Issue は頻繁に更新されるため、変更内容をレビューして適切にガイドできるようにする。
 1. 進捗のペースや取り組むモジュールについて、新メンバーの直属マネージャーが望む方向性と認識を合わせる。
 
 ## 構造
 
-オンボーディングバディとしての期間中、新人サポートエンジニアがオンボーディングを完了するまでの間、隣で並走することになります。下記の期間はあくまで目安と捉えてください。実際のペースは新人サポートエンジニアの進み具合によって決まります。
+オンボーディングバディとしての期間中、新人 Support Engineer がオンボーディングを完了するまでの間、隣で並走することになります。下記の期間はあくまで目安と捉えてください。実際のペースは新人 Support Engineer の進み具合によって決まります。
 
 | 週（目安）     | タスク |
 | ----------- | ----------- |
-| [1〜2 週目](#first-1-2-weeks) | 新人サポートエンジニアと顔合わせのコールを実施し、慣れる手助けをし、一般的な質問に答え、スケジュールについて話し合い、その他始めるにあたって役立つ情報を共有する。       |
+| [1〜2 週目](#first-1-2-weeks) | 新人 Support Engineer と顔合わせのコールを実施し、慣れる手助けをし、一般的な質問に答え、スケジュールについて話し合い、その他始めるにあたって役立つ情報を共有する。       |
 |   | Slack でのコミュニケーションラインを開く。このプロセス全体を通じて、定期的に状況を確認し、オンボーディングモジュールの進み具合を聞き、助けが必要かどうか尋ねる。        |
 | | チームページ、GitLab Sandbox Cloud for GCP、GDK、その他質問や問題があるものについて更新を支援するコールを行う。 |
 | [3 週目以降](#pairings)| 少なくとも 2 回、可能であればさらに頻繁にペアリングする。理想は週 1 回。 |
@@ -38,7 +38,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ## アイデアと提案
 
-人それぞれニーズは異なるため、以下は個別ニーズに合わせてカスタマイズするためのアイデアの一覧と捉えてください。下記すべてが必要な人もいませんが、誰でも少なくとも一部は役立つはずです。
+人それぞれニーズは異なるため、以下は個別ニーズに合わせてカスタマイズするためのアイデアの一覧と捉えてください。以下のすべてが全員に必要なわけではありませんが、誰でも少なくとも一部は役立つはずです。
 
 ### 最初の 1〜2 週間 {#first-1-2-weeks}
 
@@ -50,14 +50,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - 役立つ Slack チャンネルや、毎日チェックすべき Slack チャンネルを紹介する。
 - SWIR と、最新情報を得る方法（[ダイジェスト Issue](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/issues/?sort=created_date&state=all&label_name%5B%5D=SWIR%3A%3ADigest&first_page_size=50)（および「ニュースレター体験」のための [ラベル購読](https://docs.gitlab.com/user/project/labels/#receive-notifications-when-a-label-is-used)）、[#spt_swir](https://gitlab.enterprise.slack.com/archives/C05VDJX6KSR) Slack チャンネル、[音声版](https://drive.google.com/drive/u/0/folders/1qkKVAHg-kvtDrxWYmegNwmxc1MwuUn4D)）について説明する。
 - オンボーディング期間中に読むと役立つハンドブックページを紹介する。
-- GitLab の [アーキテクチャ図](/handbook/customer-experience/professional-services-engineering/workflows/artifacts/arch-diagram/) を紹介する。
-- 製品関連や [support-team-meta](https://gitlab.com/gitlab-com/support/support-team-meta) の Issue をいくつか紹介し、何にでもコントリビュートできることを明確に伝える。
+- GitLab の [リファレンスアーキテクチャ](https://docs.gitlab.com/administration/reference_architectures/)を紹介する。
+- 製品関連や [support-team-meta](https://gitlab.com/gitlab-com/support/support-team-meta)の Issue をいくつか紹介し、何にでもコントリビュートできることを明確に伝える。
 - 書籍やトレーニングは経費精算可能であることを思い出させ、[Spending Company Money](/handbook/finance/spending-company-money/) ページを紹介する。高額な場合は先にマネージャーに相談する。
-- オフィス機器手当があることを伝え、[機器の経費精算ハンドブックページ](https://internal.gitlab.com/handbook/finance/expenses/#equipment) を紹介する。
-- 手当の使い方、[Navan](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/) での経費申請方法を説明する。
-- [テスト環境](/handbook/support/workflows/test_env) を紹介し、GitLab Sandbox Cloud for GCP に触れてもらう。
+- オフィス機器手当があることを伝え、[機器の経費精算ハンドブックページ](https://internal.gitlab.com/handbook/finance/expenses/#equipment)を紹介する。
+- 手当の使い方、[Navan](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/)での経費申請方法を説明する。
+- [テスト環境](/handbook/support/workflows/test_env)を紹介し、GitLab Sandbox Cloud for GCP に触れてもらう。
 - ハンドブックやドキュメントで更新が必要な箇所を見つけたら、MR を作成するよう促す。
-- [GitLab チームページ](/handbook/company/team/) を自分の情報で更新する手助けをする（オンボーディング Issue のチェックリスト項目の 1 つです）。
+- [GitLab チームページ](/handbook/company/team/)を自分の情報で更新する手助けをする（オンボーディング Issue のチェックリスト項目の 1 つです）。
 - 質問しづらいことや助けが欲しいことがないか、非同期で Slack の状況確認をすることも検討する。
 - 一度に圧倒されないよう、共有する情報を複数のミーティング／ペアリングに分割することも検討する。
 
@@ -75,19 +75,19 @@ lastmod: "2026-09-24T21:34:11+02:00"
   - Zendesk と使い方を一通り案内する
     - さまざまなマクロの使い方を紹介し、最もよく使われるものについてアドバイスする。
     - Zendesk のさまざまなアプリの活用方法を紹介する。
-  - [チケットワークフローのハンドブックページ](/handbook/support/workflows/) について質問があれば答える
+  - [チケットワークフローのハンドブックページ](/handbook/support/workflows/)について質問があれば答える
   - 自分が普段、どうチケットを選び、どう回答しているかのプロセスを共有する
-  - [署名内の挨拶文の設定](https://gitlab.com/gitlab-support-readiness/support-team/-/wikis/Support-team-entry/Zendesk#zendesk-hash-object) について話す
+  - [署名内の挨拶文の設定](https://gitlab.com/gitlab-support-readiness/support-team/-/wikis/Support-team-entry/Zendesk#zendesk-hash-object)について話す
 
 - チケット業務:
-  - [pairfy](https://gitlab.com/gitlab-com/support/toolbox/pairify) を使ったチケットペアリング Issue の作成方法を見せる
-  - 安心して取り組んでもらいたい一方で、新メンバーには [低い恥の閾値](/handbook/values/#low-level-of-shame-when-dogfooding) というバリューに沿って、コンフォートゾーンを越えてもらいたいとも考えています。「愚かな質問は存在しない」ことを強調し（直近で自分がした「素朴な質問」を共有してもよいでしょう）、いろいろな公開 Slack チャンネルで質問するよう促す
+  - [pairfy](https://gitlab.com/gitlab-com/support/toolbox/pairify)を使ったチケットペアリング Issue の作成方法を見せる
+  - 安心して取り組んでもらいたい一方で、新メンバーには [低い恥の閾値](/handbook/values/#low-level-of-shame-when-dogfooding)というバリューに沿って、コンフォートゾーンを越えてもらいたいとも考えています。「愚かな質問は存在しない」ことを強調し（直近で自分がした「素朴な質問」を共有してもよいでしょう）、いろいろな公開 Slack チャンネルで質問するよう促す
   - あるトピックで詰まりを感じたときに、その分野の専門家とペアリングをセットアップしてもらう。混乱を避けるため、専門家のフルネームまたは GitLab ユーザー名で具体的に伝える。
   - GitLab のカレンダーを案内し、自分のリージョンで成長に役立ちそうなグループペアリングを紹介する。リンクを送ることも検討してください。
 
 - チケットでのペアリング:
   - 画面共有して、簡単なチケットをいくつか一緒に回答する
-  - コールに自分のチケットを持ってきていれば、それから先に回答する
+  - 新メンバーがコールに持ってきたチケットがあれば、それらから先に回答する
   - 画面共有とチケット回答を交互に担当する
   - 可能なときは問題を再現する。お気に入りの方法（Docker、GitLab Sandbox Cloud for GCP など）でインスタンスを素早く立ち上げる方法を見せる
   - ワークフローを確認するときには「ハンドブックファースト」のバリューに従い、模範を示す

@@ -2,46 +2,46 @@
 title: GitLab サポートとの連携
 description: GitLab チームメンバーが GitLab サポートと連携する方法とサポートに連絡する最善の方法。
 upstream_path: /handbook/support/internal-support/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
+translated_at: "2026-10-18T09:31:30Z"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-16T18:56:09+08:00"
 ---
 
 ## 概要
 
-このページの目的は、サポート以外の GitLab チームメンバーに対して、GitLab サポートが何を行うか、私たちにどのように連絡するか、そして私たちの関与が必要な一般的な依頼をどこに向けるべきかを案内することです。**技術サポートを求めているお客様ですか？その場合は、代わりに [サポートページ](https://about.gitlab.com/support/) をご覧ください。**
+このページの目的は、サポート以外の GitLab チームメンバーに対して、GitLab サポートが何を行うか、私たちにどのように連絡するか、そして私たちの関与が必要な一般的な依頼をどこに向けるべきかを案内することです。**技術サポートを求めているお客様ですか？その場合は、代わりに [サポートページ](https://about.gitlab.com/support/)をご覧ください。**
 
 ## クイックリファレンス
 
 このページに記載されていない場合、それはおそらくカスタマーサポートの対象ではありません。
 
-詳細については、次の [GitLab サポートの目的](#gitlab-supports-purpose) と [GitLab サポートに連絡すべきか？セクション](#should-i-contact-gitlab-support) をお読みください。
+詳細については、次の [GitLab サポートの目的](#gitlab-supports-purpose)と [GitLab サポートに連絡すべきか？セクション](#should-i-contact-gitlab-support)をお読みください。
 
 | 問題 | 対応方法 |
 | ------ | ------ |
-| チケットを見たい | [Light エージェント Zendesk アカウント](#requesting-a-zendesk-light-agent-account) を取得します。 |
-| 顧客がチケットを開けない（または閉じられる）  | 顧客が [サポート連絡先](https://about.gitlab.com/support/managing-support-contacts/#managing-contacts) であることを確認します。あるいは、[Zendesk にログインできない](#if-a-customer-cannot-login-to-gitlab-support-zendesk--customer-portal) のかもしれません。  |
-| 顧客がチケットについて質問している | Light エージェントアカウントで Zendesk のチケットステータスを確認します。アサインされているサポートエンジニアに連絡するか、顧客の質問を社内ノートとして追加します。必要に応じて [Support Ticket Attention Request（STAR）](#i-want-to-escalate-a-ticket) を開けます。チケットがない場合は、[新しく開きます](#requesting-support-for-customers)。|
-| 顧客が [緊急事態](https://about.gitlab.com/support/definitions/#Definitions%20of%20Support%20Impact) に遭遇している！ | サポートを受ける権利のある顧客が緊急事態を起こす必要がある場合、まず [緊急サポートの利用方法](https://about.gitlab.com/support/#how-to-trigger-emergency-support) に記載されているサポートポータルフォームから行うべきです。フォームが利用できない、または顧客が連絡できない場合は、新しい [メール](https://internal.gitlab.com/handbook/support/workflows/raising-an-emergency)（社内）を送ることもできます。Issue がサポートの緊急事態の定義に該当しない場合は、[STAR](#i-want-to-escalate-a-ticket) を開くことができます。 |
-| 顧客にサブスクリプション/ライセンスの問題がある  | [顧客とのチケット](#requesting-support-for-customers) が不可能な場合は、[社内リクエスト](#internal-requests) を開いてください。  |
+| チケットを見たい | [Light エージェント Zendesk アカウント](#requesting-a-zendesk-light-agent-account)を取得します。 |
+| 顧客がチケットを開けない（または閉じられる）  | 顧客が [サポート連絡先](https://about.gitlab.com/support/managing-support-contacts/#managing-contacts)であることを確認します。あるいは、[Zendesk にログインできない](#if-a-customer-cannot-login-to-gitlab-support-zendesk--customer-portal)のかもしれません。  |
+| 顧客がチケットについて質問している | Light エージェントアカウントで Zendesk のチケットステータスを確認します。アサインされている Support Engineer に連絡するか、顧客の質問を社内ノートとして追加します。必要に応じて [Support Ticket Attention Request（STAR）](#i-want-to-escalate-a-ticket)を開けます。チケットがない場合は、[新しく開きます](#requesting-support-for-customers)。|
+| 顧客が [緊急事態](https://about.gitlab.com/support/definitions/#Definitions%20of%20Support%20Impact)に遭遇している！ | サポート対象の顧客が緊急サポートを依頼する必要がある場合、まず [緊急サポートの利用方法](https://about.gitlab.com/support/#how-to-trigger-emergency-support)に記載されているサポートポータルフォームから行うべきです。フォームが利用できない、または顧客が連絡できない場合は、**新しい** [メール](https://internal.gitlab.com/handbook/support/workflows/raising-an-emergency)（社内）を送ることもできます。問題がサポートの緊急事態の定義に該当しない場合は、[STAR](#i-want-to-escalate-a-ticket)を開くことができます。 |
+| 顧客にサブスクリプション/ライセンスの問題がある  | [顧客とのチケット](#requesting-support-for-customers)が不可能な場合は、[社内リクエスト](#internal-requests)を開いてください。  |
 
 これは網羅的なリストではありません。サポートチームが対応すると思われるその他のものについては、目次を確認するか、このページを検索してください。
 
 ## GitLab サポートの目的 {#gitlab-supports-purpose}
 
-GitLab サポートは、GitLab.com およびセルフマネージド GitLab の顧客に対して技術サポートを提供します。IT（1Password、Slack、Mac など）の問題を抱えている GitLab チームメンバーにサポートを **提供しません**。そういった性質の問題で支援が必要な場合は、[Team Member Enablement](/handbook/eta/corporate-it/end-user-services/) に連絡してください。
+GitLab サポートは、GitLab.com およびセルフマネージド GitLab の顧客に対して技術サポートを提供します。IT（1Password、Slack、Mac など）の問題を抱えている GitLab チームメンバーにサポートを **提供しません**。そういった性質の問題で支援が必要な場合は、[Team Member Enablement](/handbook/eta/corporate-it/end-user-services/)に連絡してください。
 
 ## GitLab サポートに連絡すべきか？ {#should-i-contact-gitlab-support}
 
-GitLab に関する一般的な質問（「GitLab で x はできるか？」「GitLab で y を行う方法は？」）については、[#questions](https://gitlab.slack.com/messages/questions) で質問してください。あるいは、GitLab を使用中にバグまたは正しく動作していない何かに遭遇したと思った場合は、[#is-this-known](https://gitlab.slack.com/archives/CETG54GQ0) で質問してみてください。そうすることで、[誰もが回答に貢献できる](/handbook/company/mission/#mission) ようになります。
+GitLab に関する一般的な質問（「GitLab で x はできるか？」「GitLab で y を行う方法は？」）については、[#questions](https://gitlab.slack.com/messages/questions)で質問してください。あるいは、GitLab を使用中にバグまたは正しく動作していない何かに遭遇したと思った場合は、[#is-this-known](https://gitlab.slack.com/archives/CETG54GQ0)で質問してみてください。そうすることで、[誰もが回答に貢献できる](/handbook/company/mission/#mission) ようになります。
 
-GitLab サポートの Slack チャンネルは、GitLab サポートのさまざまな **チーム** 専用であり、GitLab 製品に関する質問用ではありません。技術サポートを必要とする顧客と作業している場合は、その顧客に [GitLab サポートへの連絡](#requesting-support-for-customers) を案内してください。
+GitLab サポートの Slack チャンネルは、GitLab サポートのさまざまな **チーム** 専用であり、GitLab 製品に関する質問用ではありません。技術サポートを必要とする顧客と作業している場合は、その顧客に [GitLab サポートへの連絡](#requesting-support-for-customers)を案内してください。
 
 ### Support Team Meta プロジェクト
 
-長期的または広範な質問をしたい、GitLab サポートにアイデアを提案したい、何かについて議論したい、ワークフローへの改善や変更を提案したい場合は、**[Support Team Meta](https://gitlab.com/gitlab-com/support/support-team-meta)** プロジェクトの [Issue トラッカー](https://gitlab.com/gitlab-com/support/support-team-meta/issues) にアクセスして Issue を作成してください。コミュニティに対して公開されているため、**機密情報を含めるべきではない** ことに注意してください。Zendesk へのリンクや他の参照は推奨されています。
+長期的または広範な質問をしたい、GitLab サポートにアイデアを提案したい、何かについて議論したい、ワークフローへの改善や変更を提案したい場合は、**[Support Team Meta](https://gitlab.com/gitlab-com/support/support-team-meta)** プロジェクトの [Issue トラッカー](https://gitlab.com/gitlab-com/support/support-team-meta/issues)にアクセスして Issue を作成してください。コミュニティに対して公開されているため、**機密情報を含めるべきではない** ことに注意してください。Zendesk へのリンクや他の参照は推奨されています。
 
 ## サポートチケットと顧客情報
 
@@ -49,15 +49,15 @@ GitLab サポートの Slack チャンネルは、GitLab サポートのさま�
 
 顧客が技術サポートを必要としてあなたに連絡してきた場合、以下のオプションが利用可能です。
 
-1. （推奨）多くの場合、[サポートポータル経由でチケットを開く](https://gitlab.zendesk.com) ように案内してください。私たちの顧客に技術サポートを提供することがサポートの主要な機能であり、有料ユーザーとして顧客は私たちにアクセスする権利があります。このオプションは、顧客が自分自身の Issue とニーズを最もよく説明できる立場にあるため推奨されます。サポートに直接連絡することがほぼ常に最も早い回答への道であることを顧客が理解していることを確認してください。
+1. （推奨）多くの場合、[サポートポータル経由でチケットを開く](https://gitlab.zendesk.com) ように案内してください。私たちの顧客に技術サポートを提供することがサポートの主要な機能であり、有料ユーザーとして顧客は私たちにアクセスする権利があります。このオプションは、顧客が自分自身の問題とニーズを最もよく説明できる立場にあるため推奨されます。サポートに直接連絡することがほぼ常に最も早い回答への道であることを顧客が理解していることを確認してください。
 
-1. 顧客を **GitLab サポートポータル** に案内する際、[サポート連絡先として追加されている](https://about.gitlab.com/support/managing-support-contacts/) ことを確認するように知らせてください。そうしないと、チケットが自動的にクローズされる可能性があります（ライセンスと更新のチケットを除く）。これに関連して、顧客の同僚もサポートチケットを送信できるようにしたい場合、管理対象連絡先のリストも提供する必要があります。顧客は [連絡先の管理](https://about.gitlab.com/support/managing-support-contacts/) の手順に従ってサポート連絡先を追加または管理できます。有効なサポートポータルアカウントを持つことを顧客に促すことで、サポートプロセスが合理化され、顧客と私たちのサポートチームの双方にとってよりスムーズな体験が保証されることに注意してください。
+1. 顧客を **GitLab サポートポータル** に案内する際、[サポート連絡先として追加されている](https://about.gitlab.com/support/managing-support-contacts/) ことを確認するように知らせてください。そうしないと、チケットが自動的にクローズされる可能性があります（ライセンスと更新のチケットを除く）。これに関連して、顧客の同僚もサポートチケットを送信できるようにしたい場合、管理対象連絡先のリストも提供する必要があります。顧客は [連絡先の管理](https://about.gitlab.com/support/managing-support-contacts/)の手順に従ってサポート連絡先を追加または管理できます。有効なサポートポータルアカウントを持つことを顧客に促すことで、サポートプロセスが合理化され、顧客と私たちのサポートチームの双方にとってよりスムーズな体験が保証されることに注意してください。
 
 1. ライセンス、サブスクリプション、更新、トライアル、トライアル延長、一時ライセンスなどの調整を依頼するには、[LnR 社内リクエストを開く](#internal-requests) ことができます（[詳細は下記](#internal-requests)）。
     - **注:** 顧客がすでにライセンス/サブスクリプションを所有しており、それを適用する際にエラーが発生している場合は、顧客が直接私たちにサポートチケットを開くのが最善です。
-    - **注:** フォームを送信するには、[Zendesk Light エージェントアカウント](#requesting-a-zendesk-light-agent-account) が必要です。すべての GitLab チームメンバーがリクエストできます。このアカウントにより、チームメンバーは Zendesk で顧客チケットを表示し、サポートチームにメモを残すこともできます。
+    - **注:** フォームを送信するには、[Zendesk Light エージェントアカウント](#requesting-a-zendesk-light-agent-account)が必要です。すべての GitLab チームメンバーがリクエストできます。このアカウントにより、チームメンバーは Zendesk で顧客チケットを表示し、サポートチームにメモを残すこともできます。
 
-1. 顧客にチケットを開くよう依頼することが状況を悪化させるような繊細なケースでは、[Zendesk グローバル社内リクエストフォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783651259548) を介して顧客の代理でサポートチケットを開くことができます。これを行うには、`Customer Support Internal Requests` を選択し、次に `What is this request concerning?` ドロップダウンで `Create a support ticket on behalf of a prospect or customer` を選択します。提供できる情報を可能な限り使ってすべての必須フィールドを埋めてください。
+1. 顧客にチケットを開くよう依頼することが状況を悪化させるような繊細なケースでは、[Zendesk グローバル社内リクエストフォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783651259548)を介して顧客の代理でサポートチケットを開くことができます。これを行うには、`Customer Support Internal Requests` を選択し、次に `What is this request concerning?` ドロップダウンで `Create a support ticket on behalf of a prospect or customer` を選択します。提供できる情報を可能な限り使ってすべての必須フィールドを埋めてください。
    - **注:** このプロセスは以下には **使用しないでください**:
      - 組織のサポート連絡先の追加。この場合、顧客は自分でサポートチームに直接連絡する必要があります。
      - L&R 社内リクエスト。
@@ -84,19 +84,19 @@ GitLab サポートの Slack チャンネルは、GitLab サポートのさま�
 
 ### 顧客が GitLab サポート Zendesk / 顧客ポータルにログインできない場合 {#if-a-customer-cannot-login-to-gitlab-support-zendesk--customer-portal}
 
-Zendesk 顧客ポータルへのログインに困難がある顧客は、まず [文書化されたトラブルシューティング手順](https://about.gitlab.com/support/portal/#support-portal-troubleshooting) を試す必要があります。これらの手順でほぼ常に困難が解決されます。
+Zendesk 顧客ポータルへのログインに困難がある顧客は、まず [文書化されたトラブルシューティング手順](https://about.gitlab.com/support/portal/#support-portal-troubleshooting)を試す必要があります。これらの手順でほぼ常に困難が解決されます。
 
-これらのヒントで問題が解決しない場合は、顧客の代理で [社内リクエスト > その他](#internal-requests) を開けます。
+これらのヒントで問題が解決しない場合は、顧客の代理で [社内リクエスト > その他](#internal-requests)を開けます。
 
 ### 顧客情報の閲覧をリクエストする
 
-[プライバシーポリシー](https://about.gitlab.com/privacy/) に従い、サポートは公開されていない顧客、グループ、プロジェクトなどに関する情報をあなたに提供しません。これは、顧客が自分自身のプロジェクト、グループなどについての情報をリクエストしている状況も含みます。認証できない場合、私たちはその人が本人であると仮定できません。ロックアウトされた場合は、サポートチケットを送信してもらってください。
+[プライバシーポリシー](https://about.gitlab.com/privacy/)に従い、サポートは公開されていない顧客、グループ、プロジェクトなどに関する情報をあなたに提供しません。これは、顧客が自分自身のプロジェクト、グループなどについての情報をリクエストしている状況も含みます。認証できない場合、私たちはその人が本人であると仮定できません。ロックアウトされた場合は、サポートチケットを送信してもらってください。
 
 ### Zendesk「Light エージェント」アカウントを依頼する {#requesting-a-zendesk-light-agent-account}
 
 サポートチケットを表示するには Zendesk Light エージェントアカウントが必要で、マネージャーの承認なしに取得できます。Zendesk グローバル Light エージェントアカウントをリクエストするには、[Lumos](https://app.lumosidentity.com/app_store?domainAppId=1115644&permissionIds=6102631) 経由でリクエストしてください。
 
-Light エージェントアカウントでは、顧客への公開返信を送信できないことに注意してください。これを行う必要がある場合は、[フルエージェントアカウントの新しいアクセスリクエスト Issue を提出](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) し、予算承認のためにマネージャーをタグ付けしてください。必要に応じて、Zendesk から Light エージェントアカウントに関する [詳細情報を読むこと](https://support.zendesk.com/hc/en-us/articles/4408829504154-Collaboration-overview) ができます。
+Light エージェントアカウントでは、顧客への公開返信を送信できないことに注意してください。これを行う必要がある場合は、[フルエージェントアカウントの新しいアクセスリクエスト Issue を提出](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) し、予算承認のためにマネージャーをタグ付けしてください。必要に応じて、Zendesk から Light エージェントアカウントに関する [詳細情報を読むこと](https://support.zendesk.com/hc/en-us/articles/4408829504154-Collaboration-overview)ができます。
 
 ## 一般的なリクエスト {#common-requests}
 
@@ -105,21 +105,23 @@ Light エージェントアカウントでは、顧客への公開返信を送�
 | リクエスト    | 対応方法                                                   |
 | ---------- | ------------------------------------------------------------ |
 | アップグレード支援 | **グローバル組織:** [サービスを確認](https://about.gitlab.com/support/scheduling-upgrade-assistance/) してから、グローバルサポートポータルで新しいチケットを開く <br> **米国政府組織:** U.S. Government サポートポータルで [チケットを開く](https://about.gitlab.com/support/scheduling-upgrade-assistance/#us-federal-support) |
-| 顧客の緊急事態の対応者は誰か？ | `GitLab Chatops` へのダイレクトメッセージで `/chatops run oncall support` を実行し、結果を確認します。これによりオンコールエンジニアに **ページングは送信されません**。 |
-| GitLab.com CMOC の対応者は誰か？ | `GitLab Chatops` へのダイレクトメッセージで `/chatops run oncall cmoc` を実行し、結果を確認します。これによりオンコールエンジニアに **ページングは送信されません**。 |
-| GitLab.com で過剰な reCaptcha が発生 | 発生中に [#support_gitlab-com](https://gitlab.slack.com/messages/C4XFU81LG/) に投稿し、対象の Issue/MR へのリンクを貼って許可リストに追加してもらいます。 |
+| 顧客の緊急事態の対応者は誰か？ | `GitLab Chatops` へのダイレクトメッセージで `/chatops gitlab run oncall support` を実行し、結果を確認します。これによりオンコールエンジニアに **ページングは送信されません**。 |
+| GitLab.com CMOC の対応者は誰か？ | `GitLab Chatops` へのダイレクトメッセージで `/chatops gitlab run oncall cmoc` を実行し、結果を確認します。これによりオンコールエンジニアに **ページングは送信されません**。 |
+| GitLab.com で過剰な reCaptcha が発生 | 発生中に [#support_gitlab-com](https://gitlab.slack.com/messages/C4XFU81LG/)に投稿し、対象の Issue/MR へのリンクを貼って許可リストに追加してもらいます。 |
 | クライアントや見込み顧客から受けたサポートに関する苦情を報告 | `Indirect Feedback` テンプレートを使用して [Issue を開いて](https://gitlab.com/gitlab-com/support/feedback/-/issues/new?issuable_template=Indirect%20Feedback) ください。 |
-| GitLab.com ネームスペースの利用可能性を確認 | GitLab チームメンバーで、ネームスペースの利用可能性を確認したい場合は、[Zendesk グローバル社内リクエストフォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783651259548) を使用し、`What is this request concerning?` フィールドの記入時に `Check Namespace Availability` を選択してください。GitLab.com で有料サブスクリプションを持つ顧客がネームスクワッティングリクエストを進めたい場合、[GitLab.com user accounts and login issues](https://support.gitlab.com/hc/en-us/requests/new?ticket_form_id=360000803379) フォームを使用してチケットを送信し、Problem Type として `Namesquatting Assistance` を選択できます。見込み顧客、無料ユーザー、GitLab チームメンバーはネームスクワッティングリクエストの対象ではありません。|
+| GitLab.com ネームスペースの利用可能性を確認 | GitLab チームメンバーで、ネームスペースの利用可能性を確認したい場合は、[Zendesk グローバル社内リクエストフォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783651259548)を使用し、`What is this request concerning?` フィールドの記入時に `Check Namespace Availability` を選択してください。GitLab.com で有料サブスクリプションを持つ顧客がネームスクワッティングリクエストを進めたい場合、[GitLab.com user accounts and login issues](https://support.gitlab.com/hc/en-us/requests/new?ticket_form_id=360000803379) フォームを使用してチケットを送信し、Problem Type として `Namesquatting Assistance` を選択できます。見込み顧客、無料ユーザー、GitLab チームメンバーはネームスクワッティングリクエストの対象ではありません。|
 
 ### チームメンバー向け self-managed / GDK での Premium/Ultimate 機能のアンロック {#unlock-premiumultimate-features-on-self-managed--gdk-for-team-members}
 
 ローカルまたはサンドボックステストの目的では、GitLab チームメンバーは独自のエンタープライズエディションサブスクリプションをプロビジョニングできます。これを行う手順:
 
-1. **Continue with GitLab.com account** ボタンを選択して [ステージング Customers Portal](https://customers.staging.gitlab.com) にサインインします。既存のアカウントがない場合、作成するように促されます。
-1. 選択したいサブスクリプションの購入ページにアクセスします。ステージング Customers Portal のリンクは価格ページにリダイレクトされるので、購入 URL に直接ナビゲートする必要があります。ステージングサブスクリプションの URL の完全なリストは [こちら](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/flows/self_service_flow_urls.md#new-subscription-purchase-links) にドキュメント化されています。どのサブスクリプションが必要かわからない場合は、**Self-Managed Ultimate** が良いデフォルトです。
-1. [テストクレジットカード](https://gitlab.com/gitlab-org/customers-gitlab-com/#testing-credit-card-information) を使用してサブスクリプションを購入します。
+1. **Continue with GitLab.com account** ボタンを選択して [ステージング Customers Portal](https://customers.staging.gitlab.com)にサインインします。既存のアカウントがない場合、作成するように促されます。
+1. 選択したいサブスクリプションの購入ページにアクセスします。ステージング Customers Portal のリンクは価格ページにリダイレクトされるので、購入 URL に直接ナビゲートする必要があります。ステージングサブスクリプションの URL の完全なリストは [こちら](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/flows/self_service_flow_urls.md#new-subscription-purchase-links)にドキュメント化されています。どのサブスクリプションが必要かわからない場合は、**Self-Managed Ultimate** が良いデフォルトです。
+1. [テストクレジットカード](https://gitlab.com/gitlab-org/customers-gitlab-com/#testing-credit-card-information)を使用してサブスクリプションを購入します。
 
-これは **ステージングサブスクリプション** であるため、GitLab インスタンスをステージング Customers Portal を使用するように設定する必要があることに注意してください。Omnibus インストールの場合、ステージング Customers Portal を指す方法は [こちら](https://docs.gitlab.com/omnibus/development/setup.html#use-customers-portal-staging-in-gitlab) です。GDK の場合、環境は [デフォルト](https://gitlab-org.gitlab.io/gitlab-development-kit/#use-gitlab-enterprise-features) でステージング Customers Portal を指しているため、アクションは必要ありません。
+これは **ステージングサブスクリプション** であるため、GitLab インスタンスをステージング Customers Portal を使用するように設定する必要があることに注意してください。Omnibus インストールの場合、ステージング Customers Portal を指す方法は [こちら](https://docs.gitlab.com/omnibus/development/setup.html#use-customers-portal-staging-in-gitlab)です。GDK の場合、環境は [デフォルト](https://gitlab-org.gitlab.io/gitlab-development-kit/#use-gitlab-enterprise-features)でステージング Customers Portal を指しているため、アクションは必要ありません。
+
+**注:** この方法でライセンスを設定した後、ローカル GDK のシート数がライセンスのシート数を超えていると、GitLab Staging から精算に関するメールが届く場合があります。上記の手順に従っていれば、これらの通知は無視できます。判断に迷う場合は、`#s_fulfillment` で Fulfillment チームに確認してください。
 
 何らかの理由でセルフプロビジョニングが機能しない場合は、`#s_fulfillment` または `#gdk` に支援を求めてください。
 
@@ -127,7 +129,7 @@ Light エージェントアカウントでは、顧客への公開返信を送�
 
 GitLab チームメンバーが GitLab.com の Ultimate ライセンスを希望する場合、2 つのオプションがあります。
 
-1. [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=GitlabCom_Licensed_Demo_Group_Request) を介してデモ目的の Ultimate グループライセンスをリクエストします。
+1. [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=GitlabCom_Licensed_Demo_Group_Request)を介してデモ目的の Ultimate グループライセンスをリクエストします。
 1. [個人ネームスペース用の Ultimate ライセンスをリクエスト](/handbook/total-rewards/incentives/#gitlab-ultimate-with-duo-enterprise) します。
 
 ### GitLab のインシデントや変更についてユーザーに連絡する
@@ -135,7 +137,7 @@ GitLab チームメンバーが GitLab.com の Ultimate ライセンスを希望
 サポートに依頼して、あなたに代わって GitLab.com ユーザーに連絡してもらうことができます。ユーザーへの連絡を依頼できる場合の例を以下に示します。
 
 - GitLab に対して計画されている本番変更がユーザーに大きな影響を与える、または多数のチケットが発生すると考えられる場合
-- 緊急のセキュリティ関連 Issue について顧客に通知する必要がある場合
+- 緊急のセキュリティ関連の問題 について顧客に通知する必要がある場合
 - GitLab.com 上のユーザーをブロックした場合
 - 通常とは異なる使用パターンや行動を示しているため、特定のアカウントにインタビューする必要がある場合
 - プロジェクト/グループに影響する重要な変更がある場合
@@ -155,10 +157,10 @@ GitLab チームメンバーが GitLab.com の Ultimate ライセンスを希望
 社内リクエスト（IR）には通常 2 つのタイプがあります。
 
 1. カスタマーサポート社内リクエスト
-詳細は [Gratis サポート](../gratis-support/) を参照してください。
+詳細は [Gratis サポート](../gratis-support/)を参照してください。
 
 1. L&R 社内リクエスト
-ライセンス、サブスクリプション、トライアルに関するすべての社内リクエストは、[グローバルサポート](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780) または [米国政府サポート](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588) のいずれかの GitLab Support Internal Zendesk インスタンスを使用して提出する必要があります。`Customer Support Internal Request` ではなく、`L&R Internal Request` フォームを選択していることを確認してください。これらは別々のキューにルーティングされ、そうしないとあなたや顧客、見込み顧客にとって遅延が発生する可能性があります。
+ライセンス、サブスクリプション、トライアルに関するすべての社内リクエストは、[グローバルサポート](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780) または [米国政府サポート](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588)のいずれかの GitLab Support Internal Zendesk インスタンスを使用して提出する必要があります。`Customer Support Internal Request` ではなく、`L&R Internal Request` フォームを選択していることを確認してください。これらは別々のキューにルーティングされ、そうしないとあなたや顧客、見込み顧客にとって遅延が発生する可能性があります。
 
 **顧客は社内リクエストの cc に含めるべきではありません。**
 
@@ -243,7 +245,7 @@ GitLab チームメンバーが GitLab.com の Ultimate ライセンスを希望
 
 ### QSR の最大シート数をリセット
 
-[超過分の免除に対する承認](/handbook/sales/field-operations/order-processing/#waived-true-ups-policy-and-approval-requirements) が付与され、SFDC chatter 経由でドキュメント化された後にこれを使用します。これが完了したら、フォームを提出してサポートに最大シート数のリセットを依頼してください。
+[超過分の免除に対する承認](/handbook/sales/field-operations/order-processing/#waived-true-ups-policy-and-approval-requirements)が付与され、SFDC chatter 経由でドキュメント化された後にこれを使用します。これが完了したら、フォームを提出してサポートに最大シート数のリセットを依頼してください。
 
 ### SaaS NFR ライセンスリクエスト
 
@@ -271,7 +273,7 @@ GitLab.com のグループでトライアルが開始されていることを確
 
 ### 期限切れ間近（または期限切れ）のサブスクリプションを延長する
 
-顧客がライセンスを所有しており、（ほぼ）期限切れの場合に使用してください。実際のライセンスを延長することはできないことに注意してください。代わりに、顧客にトライアルライセンスを作成し、それを延長に使用します。次の動画 [How to extend an extension for an almost-expired subscription (self-managed)](https://www.youtube.com/watch?v=g8k8PAUY2pM) は `Extend an (almost) expired subscription` リクエストを正しく送信する方法を示しています。
+顧客がライセンスを所有しており、（ほぼ）期限切れの場合に使用してください。実際のライセンスを延長することはできないことに注意してください。代わりに、顧客にトライアルライセンスを作成し、それを延長に使用します。次の動画 [How to extend an extension for an almost-expired subscription (self-managed)](https://www.youtube.com/watch?v=g8k8PAUY2pM)は `Extend an (almost) expired subscription` リクエストを正しく送信する方法を示しています。
 
 ### 既存ライセンスをライセンス上のメールに再送する
 
@@ -292,7 +294,7 @@ GitLab.com のグループでトライアルが開始されていることを確
 
 ### クラウドライセンスの除外
 
-SCL 除外のために使用します。次の動画 [How to submit a Cloud License Exemption Internal Request form](https://www.youtube.com/watch?v=pvj59EhATIw) は `Strict Cloud licensing exemption request` を正しく送信する方法を示しています。
+SCL 除外のために使用します。次の動画 [How to submit a Cloud License Exemption Internal Request form](https://www.youtube.com/watch?v=pvj59EhATIw)は `Strict Cloud licensing exemption request` を正しく送信する方法を示しています。
 
 ## セルフマネージドトライアル関連
 
@@ -342,18 +344,18 @@ Hacker One レポーター用のライセンス生成をリクエストするた
 
 ### U.S. Government Support の社内リクエスト
 
-U.S. Government Support の顧客に関連する機密ライセンス Issue については、GitLab チームメンバーは [U.S. Government Support にケースを開く](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588) ことができます。
+U.S. Government Support の顧客に関連するライセンスに関する機密の問題 については、GitLab チームメンバーは [U.S. Government Support にケースを開く](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588) ことができます。
 
 ### GitLab.com 課金可能メンバーリスト
 
-製品が [#27074](https://gitlab.com/gitlab-org/gitlab/-/issues/27074) と [#35454](https://gitlab.com/gitlab-org/gitlab/-/issues/35454) の最小限の実装可能なバージョンを実装したため、サポートはこのプロセスを非推奨にし始めています。製品が取り組んでいる改善とその進捗については、[エピック 4547](https://gitlab.com/groups/gitlab-org/-/epics/4547) も参照できます。
+Product が [#27074](https://gitlab.com/gitlab-org/gitlab/-/issues/27074)と [#35454](https://gitlab.com/gitlab-org/gitlab/-/issues/35454)の最小限の実装可能なバージョンを実装したため、サポートはこのプロセスを非推奨にし始めています。Product が取り組んでいる改善とその進捗については、[エピック 4547](https://gitlab.com/groups/gitlab-org/-/epics/4547)も参照できます。
 
 #### GitLab チームメンバーのセルフサービスオプション
 
 基本的なシート数情報を取得するためのオプションを以下に示します。
 
 1. *Plan* および *Seats Currently in Use*:
-    - [chatops](https://docs.gitlab.com/development/chatops_on_gitlabcom/#chatops-on-gitlabcom)（dev.gitlab.org アカウントが必要）でコマンド: `/chatops run namespace find group-path`
+    - [chatops](https://docs.gitlab.com/development/chatops_on_gitlabcom/#chatops-on-gitlabcom)（dev.gitlab.org アカウントが必要）でコマンド: `/chatops gitlab run namespace find group-path`
 1. 1 の情報に加えてサブスクリプション（またはトライアル）の *End Date*
 1. 2 の情報に加えて *Seats in Subscription*、*Max Seats Used*、*Start Date*
     - [Customers ポータル管理](https://customers.gitlab.com/admin/customer)（Okta 経由のアクセスが必要）
@@ -366,15 +368,15 @@ U.S. Government Support の顧客に関連する機密ライセンス Issue に�
 
 ##### 顧客向けのセルフサービスオプション
 
-> **注:** この情報のパブリック向けバージョンは、[ライセンスとサブスクリプションの FAQ ページ](https://about.gitlab.com/pricing/licensing-faq/#how-can-i-get-a-list-of-billable-users-for-my-plan) にあります。
+> **注:** この情報のパブリック向けバージョンは、[ライセンスとサブスクリプションの FAQ ページ](https://about.gitlab.com/pricing/licensing-faq/#how-can-i-get-a-list-of-billable-users-for-my-plan)にあります。
 
-顧客は、グループの **Billing** ページ（グループ **Settings** 配下）でサブスクリプション情報とシートを使用しているユーザーのリストを取得できます。または [Billable members API エンドポイント](https://docs.gitlab.com/api/members/#list-all-billable-members-of-a-group) を使用できます。
+顧客は、グループの **Billing** ページ（グループ **Settings** 配下）でサブスクリプション情報とシートを使用しているユーザーのリストを取得できます。または [Billable members API エンドポイント](https://docs.gitlab.com/api/members/#list-all-billable-members-of-a-group)を使用できます。
 
 ---
 
 ### チケットをエスカレートしたい {#i-want-to-escalate-a-ticket}
 
-「*エスカレーション*」という用語を [MECEFU](/handbook/communication/#mecefu-terms) に保つため、サポートは「**サポートチケット注目リクエスト**」（STAR）という用語を使用して、[アカウントエスカレーション](/handbook/customer-experience/csm/escalations/) と区別します。「Escalation」は「Emergency」または「Incident」と混同される可能性もあります。
+「*エスカレーション*」という用語を [MECEFU](/handbook/communication/#mecefu-terms)に保つため、サポートは「**サポートチケット注目リクエスト**」（STAR）という用語を使用して、[アカウントエスカレーション](/handbook/customer-experience/csm/escalations/)と区別します。「Escalation」は「Emergency」または「Incident」と混同される可能性もあります。
 
 [GitLab グローバルサポート時間](https://about.gitlab.com/support/#definitions-of-gitlab-global-support-hours) 中にのみ、以下のいずれかが該当する場合は **サポートチケット注目リクエスト** を開いてください。
 
@@ -387,28 +389,28 @@ U.S. Government Support の顧客に関連する機密ライセンス Issue に�
 
 以下の場合は **[アカウントエスカレーション](/handbook/customer-experience/csm/escalations/)** を開いてください。
 
-- 単一のチケットまたは複数の Issue の集積によるアカウントレベルのリスクがある。
-- 顧客の信頼を回復し Issue を解決するため、複数の部門からの可視性と注意が必要。
+- 単一のチケットまたは複数の問題の積み重なりによるアカウントレベルのリスクがある。
+- 顧客の信頼を回復し問題を解決するため、複数の部門からの可視性と注意が必要。
 
 [アカウントエスカレーションの詳細](/handbook/customer-experience/csm/escalations)
 
 以下の場合は **緊急チケット** を開いてください。
 
-- 顧客が「緊急」のサポートインパクトについての [私たちの定義](https://about.gitlab.com/support/definitions/#Definitions%20of%20Support%20Impact) を満たす状況に直面している
+- 顧客が「緊急」のサポートインパクトについての [私たちの定義](https://about.gitlab.com/support/definitions/#Definitions%20of%20Support%20Impact)を満たす状況に直面している
 
-[サポートエンジニアによる緊急チケットの処理についての詳細](/handbook/support/workflows/customer_emergencies_workflows)
+[Support Engineers による緊急チケットの処理についての詳細](/handbook/support/workflows/customer_emergencies_workflows)
 
 以下の場合は **GitLab.com インシデント** を宣言してください。
 
 - SaaS 顧客の間で報告された問題の共通パターンに気づいた
-- [5 分以上続く機能の喪失](/handbook/engineering/infrastructure-platforms/incident-management/#definition-of-outage-vs-degraded-vs-disruption-and-when-to-communicate) を経験し検証した
-- [深刻度の高いバグ](/handbook/engineering/infrastructure-platforms/incident-management/#high-severity-bugs) が GitLab.com にデプロイされた疑いがある
+- [5 分を超えて続く機能の喪失](/handbook/engineering/infrastructure-platforms/incident-management/#definition-of-outage-vs-degraded-vs-disruption-and-when-to-communicate)を経験し検証した
+- [深刻度の高いバグ](/handbook/engineering/infrastructure-platforms/incident-management/#high-severity-bugs)が GitLab.com にデプロイされた疑いがある
 
 [GitLab.com インシデントの詳細](/handbook/engineering/infrastructure-platforms/incident-management/)
 
 以下の場合は **セキュリティインシデント** を宣言してください。
 
-- GitLab サービスやデータの機密性、完全性、または可用性に影響する可能性のあるクリティカルな Issue に関する情報を持っている
+- GitLab サービスやデータの機密性、完全性、または可用性に影響する可能性のある重大な問題に関する情報を持っている
 
 [セキュリティインシデントの詳細](/handbook/security/security-operations/sirt/engaging-security-on-call#incident-severity)
 
@@ -416,16 +418,16 @@ U.S. Government Support の顧客に関連する機密ライセンス Issue に�
 
 ### GitLab.com 管理インターフェイスの設定を変更したい
 
-インフラストラクチャチームが GitLab.com の管理者であり、製品の調整可能項目への変更は [変更リクエストワークフロー](/handbook/engineering/infrastructure-platforms/change-management/#change-request-workflows) を経由します。
+インフラストラクチャチームが GitLab.com の管理者であり、製品の調整可能項目への変更は [変更リクエストワークフロー](/handbook/engineering/infrastructure-platforms/change-management/#change-request-workflows)を経由します。
 
 ### トライアルおよび見込み顧客のサポート
 
 優先見込み顧客に関する情報については、
-[Priority Prospects](../priority_prospects) を参照してください。
+[Priority Prospects](../priority_prospects)を参照してください。
 
 ### 顧客が GitLab.com サブスクリプションの適用に困っている
 
-顧客は購入プロセス中に問題に遭遇したか、グループにサブスクリプションを適用する方法を知らない可能性が高いです。次のドキュメントは、GitLab.com にサブスクライブし、GitLab.com アカウントを [CustomersDot](https://customers.gitlab.com) にリンクし、そのサブスクリプションをグループに適用する方法を説明しています。
+顧客は購入プロセス中に問題に遭遇したか、グループにサブスクリプションを適用する方法を知らない可能性が高いです。次のドキュメントは、GitLab.com にサブスクライブし、GitLab.com アカウントを [CustomersDot](https://customers.gitlab.com)にリンクし、そのサブスクリプションをグループに適用する方法を説明しています。
 
 - [GitLab サブスクリプションを取得する](https://docs.gitlab.com/subscriptions/manage_subscription/#buy-a-subscription)
 - [サブスクリプションを管理する](https://docs.gitlab.com/subscriptions/manage_subscription/#renew-subscription)
@@ -436,22 +438,22 @@ U.S. Government Support の顧客に関連する機密ライセンス Issue に�
 他のケースでは、アカウントの特定のユーザーが、組織からのすべてのチケットを閲覧して応答できるようにしたいことがあります。
 これを有効にしたい場合は、以下を行ってください。
 
-1. 顧客に [Support Ops フォーム](https://support.gitlab.com/hc/en-us/requests/new?ticket_form_id=360001801419) を使用してサポートチケットを送信し、`Problem type` フィールドで `Shared organization requests` を選択するように依頼します。
+1. 顧客に [Support Ops フォーム](https://support.gitlab.com/hc/en-us/requests/new?ticket_form_id=360001801419)を使用してサポートチケットを送信し、`Problem type` フィールドで `Shared organization requests` を選択するように依頼します。
 1. チケットが作成されると、Support Ops がレビューし、チケットに対応します。
 
 **注:** 顧客が別のサポートフォームを使用して共有組織リクエストを送信した場合、フォームを `Support Ops` に変更し、`Problem type` フィールドで `Shared organization requests` を選択するだけです。Support Ops はチケットをレビューし、必要に応じてフォローアップの質問をします。
 
 ### 顧客がグループ構造内のすべてのユーザーのレポートを必要としている
 
-グループの課金可能メンバー数を表示するには、グループの `Owner` 権限を持つメンバーが内訳を見るために **Settings -> Billing** セクションを訪問できます。課金可能メンバーの数は `Seats currently in use` の下にリストされる量で、これは有料サブスクリプションにグループをリンクするときに表示される量です。課金可能メンバーは、有料ネームスペース内のグループ、サブグループ、またはプロジェクトに追加された [すべてのユーザー](https://about.gitlab.com/pricing/licensing-faq/#who-gets-counted-in-the-subscription) で構成されます。例外は、特定のサブスクリプションレベルのネームスペース内のゲストユーザーのみです。
+グループの課金可能メンバー数を表示するには、グループの `Owner` 権限を持つメンバーが内訳を見るために **Settings -> Billing** セクションを訪問できます。課金可能メンバーの数は `Seats currently in use` の下にリストされる量で、これは有料サブスクリプションにグループをリンクするときに表示される量です。課金可能メンバーは、有料ネームスペース内のグループ、サブグループ、またはプロジェクトに追加された [すべてのユーザー](https://about.gitlab.com/pricing/licensing-faq/#who-gets-counted-in-the-subscription)で構成されます。例外は、特定のサブスクリプションレベルのネームスペース内のゲストユーザーのみです。
 
-[課金可能メンバー API エンドポイント](https://docs.gitlab.com/api/members/#list-all-billable-members-of-a-group) があり、グループのすべての課金可能メンバーのリストを生成します。これは自分の PAT で実行する必要があります。
+[課金可能メンバー API エンドポイント](https://docs.gitlab.com/api/members/#list-all-billable-members-of-a-group)があり、グループのすべての課金可能メンバーのリストを生成します。これは自分の PAT で実行する必要があります。
 
-すべての課金可能メンバーは現在、グループ請求ページにソートされていないリストとしても表示されます。これは最初のイテレーションで、興味があれば、計画されている作業を確認するために [エピック](https://gitlab.com/groups/gitlab-org/-/epics/4547) を表示できます。課金可能メンバーリストに関するフィードバックや、エピックで計画されていない機能や UI の変更をリクエストしたい場合は、エピックにコメントを残してください。
+すべての課金可能メンバーは現在、グループ請求ページにソートされていないリストとしても表示されます。これは最初のイテレーションで、興味があれば、計画されている作業を確認するために [エピック](https://gitlab.com/groups/gitlab-org/-/epics/4547)を表示できます。課金可能メンバーリストに関するフィードバックや、エピックで計画されていない機能や UI の変更をリクエストしたい場合は、エピックにコメントを残してください。
 
 ### 組織/ユーザーに関する重要な情報を追加したい {#i-want-to-add-important-information-about-the-organizationuser}
 
-Zendesk には組織とユーザーノートを保存する機能があります。Zendesk のトリガーを使用して、これらをその組織またはユーザーが送信した各チケットに入れます。組織またはユーザーのチケットに含めたい重要な情報がある場合は、組織の ID（Zendesk の組織の URL から ID をコピーすることで見つけることができます）を [こちら](https://gitlab.com/gitlab-com/support/zendesk-global/organizations/-/tree/master/organizations) で検索して MR を作成し、関連する組織のファイルに必要な変更を加えてください。
+Zendesk には組織とユーザーノートを保存する機能があります。Zendesk のトリガーを使用して、これらをその組織またはユーザーが送信した各チケットに入れます。組織またはユーザーのチケットに含めたい重要な情報がある場合は、組織の ID（Zendesk の組織の URL から ID をコピーすることで見つけることができます）を [こちら](https://gitlab.com/gitlab-com/support/zendesk-global/organizations/-/tree/master/organizations)で検索して MR を作成し、関連する組織のファイルに必要な変更を加えてください。
 情報が特定の期間のみ有効かどうかを必ず示してください。これによりノートにその事実を含めることができます。
 
 追加したいかもしれないノートの例:

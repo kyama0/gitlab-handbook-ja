@@ -19706,11 +19706,11 @@
     },
     "content/handbook/support/managers/promoting-a-support-team-member.md": {
       "path": "content/handbook/support/managers/promoting-a-support-team-member.md",
-      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
-      "translated_at": "2026-05-08T09:50:12Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5f7c97a323b96a118efa85f534057cf28f9c896c60fc21855384ce953d5743c0",
-      "upstream_committed_at": "2025-11-27T20:17:50+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:31:30Z",
+      "model": "codex",
+      "input_hash": "cdca1ceffe51dc3c1508b308737893fadc5070bc18ae5ae210310bff75afa340",
+      "upstream_committed_at": "2026-10-16T09:24:31-07:00"
     },
     "content/handbook/support/managers/senior-leadership-sync.md": {
       "path": "content/handbook/support/managers/senior-leadership-sync.md",
@@ -19954,11 +19954,11 @@
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/license_for_weekend_emergencies.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/license_for_weekend_emergencies.md",
-      "upstream_sha": "460f0fe6722bfe52b151b6a8641368ea38885df5",
-      "translated_at": "2026-05-08T20:30:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1b2ba57ef2bd426bced7f46c78cbdbcb11f4d401f52d971379e0e5689885c31f",
-      "upstream_committed_at": "2026-02-23T12:49:58+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:31:30Z",
+      "model": "codex",
+      "input_hash": "8ddc7a0a61cb2b06ee704b42f54103b5b08f1d1c8af511489447c0b39066bb5b",
+      "upstream_committed_at": "2026-10-14T20:25:01-07:00"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/opt-out_service-usage-data.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/opt-out_service-usage-data.md",
@@ -20386,11 +20386,11 @@
     },
     "content/handbook/support/training/onboarding_buddy.md": {
       "path": "content/handbook/support/training/onboarding_buddy.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:33:43Z",
       "model": "codex",
-      "input_hash": "81306477a984c2fda58075c9756c0eebe46ac8d26134679b7572c2a9915ab609",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "aeea55da7f5bcf056cacb3a669a5ca05bbed50a5df21d1380405b868551f5dce",
+      "upstream_committed_at": "2026-10-14T08:38:52-04:00"
     },
     "content/handbook/support/training/onboarding_hybrid_path_checkpoints.md": {
       "path": "content/handbook/support/training/onboarding_hybrid_path_checkpoints.md",
@@ -20458,11 +20458,11 @@
     },
     "content/handbook/support/workflows/abuse_report_review_request.md": {
       "path": "content/handbook/support/workflows/abuse_report_review_request.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T07:04:40+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:33:43Z",
       "model": "codex",
-      "input_hash": "6f10056f308c66852cc31088c94841d0980301edba9f6d7d7465ed94269411a1",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "a9543f2dead863e22d3c3ad1b9bf9beba40904781be6aae6eab27f933c1b3ea4",
+      "upstream_committed_at": "2026-10-16T18:56:09+08:00"
     },
     "content/handbook/support/workflows/account_changes.md": {
       "path": "content/handbook/support/workflows/account_changes.md",
@@ -20490,11 +20490,11 @@
     },
     "content/handbook/support/workflows/admin_note.md": {
       "path": "content/handbook/support/workflows/admin_note.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T19:23:50Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b1a57a08f44923800bb23ae1991601e3b0b602b6e3e29badcf42d784ccd6bbcd",
-      "upstream_committed_at": "2026-01-13T13:57:51+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:33:43Z",
+      "model": "codex",
+      "input_hash": "2b27e80f795f838f847e695d6cbf2394b5133a12cc7131ad099faad1cf7ccbd5",
+      "upstream_committed_at": "2026-10-16T18:56:09+08:00"
     },
     "content/handbook/support/workflows/advanced-sast-code-request.md": {
       "path": "content/handbook/support/workflows/advanced-sast-code-request.md",
@@ -20530,11 +20530,11 @@
     },
     "content/handbook/support/workflows/chatops.md": {
       "path": "content/handbook/support/workflows/chatops.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T20:14:55Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "abdebb0a8183f3d03767f8e0368241c448717ed0b4c01b29a08a96773f8f0e66",
-      "upstream_committed_at": "2025-03-17T22:13:57+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:33:43Z",
+      "model": "codex",
+      "input_hash": "9b07452913af6904dc57352c5c42c8c2d51a41b7fc50ff661472dde0346bbb9c",
+      "upstream_committed_at": "2026-10-15T03:51:39-07:00"
     },
     "content/handbook/support/workflows/ci_minute_limit_removal.md": {
       "path": "content/handbook/support/workflows/ci_minute_limit_removal.md",
@@ -20618,11 +20618,11 @@
     },
     "content/handbook/support/workflows/data_handling.md": {
       "path": "content/handbook/support/workflows/data_handling.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:21:07+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:35:31Z",
       "model": "codex",
-      "input_hash": "04c5e37bfcb47e50c05f565e25657f414b949cb13d96a1e67e6489ec23317040",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "f834ffb3759e302dde3784dac0db00fc8a7d988722e852d0c38ca2087251d7fc",
+      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
     },
     "content/handbook/support/workflows/data_processing_addendums.md": {
       "path": "content/handbook/support/workflows/data_processing_addendums.md",
@@ -21050,11 +21050,11 @@
     },
     "content/handbook/support/workflows/namesquatting_policy.md": {
       "path": "content/handbook/support/workflows/namesquatting_policy.md",
-      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b8215657a65446fc446878ddadd2741273d4da58ff7ba24fd47bf129b215b55d",
-      "upstream_committed_at": "2026-02-05T23:38:57+11:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:35:31Z",
+      "model": "codex",
+      "input_hash": "a0d2f24cef200d8cec7beded93f7f75889cd1f026651543d2725738b655b63c4",
+      "upstream_committed_at": "2026-10-16T18:56:09+08:00"
     },
     "content/handbook/support/workflows/ooo-ticket-management.md": {
       "path": "content/handbook/support/workflows/ooo-ticket-management.md",
@@ -21138,11 +21138,11 @@
     },
     "content/handbook/support/workflows/reinstating-blocked-accounts.md": {
       "path": "content/handbook/support/workflows/reinstating-blocked-accounts.md",
-      "upstream_sha": "50ee631c98005b47a0caea9d46e4ba5cfc62891a",
-      "translated_at": "2026-07-23T06:22:46+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:35:31Z",
       "model": "codex",
-      "input_hash": "a2c9e29c25d67ac57d57cebd6c1ad06b8946fef1bf7966e2884d9deac9dcddc8",
-      "upstream_committed_at": "2026-07-22T18:30:05+12:00"
+      "input_hash": "d2fc008358700ff434ff959c382b0bfde2e0da830e16215683425f66f22f7787",
+      "upstream_committed_at": "2026-10-16T18:56:09+08:00"
     },
     "content/handbook/support/workflows/remove_validation.md": {
       "path": "content/handbook/support/workflows/remove_validation.md",
@@ -21210,11 +21210,11 @@
     },
     "content/handbook/support/workflows/sentry.md": {
       "path": "content/handbook/support/workflows/sentry.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T07:16:12+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:35:31Z",
       "model": "codex",
-      "input_hash": "143b8507072545d345106b358866b946fad20167440e92a9ed674387f36ae881",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "d37966afa8195ee7d08ad8a30f19ad6eaada7eb6cb0ecbdd33c1aeef02cd6f10",
+      "upstream_committed_at": "2026-10-16T18:56:09+08:00"
     },
     "content/handbook/support/workflows/service_desk_troubleshooting.md": {
       "path": "content/handbook/support/workflows/service_desk_troubleshooting.md",
@@ -21498,11 +21498,11 @@
     },
     "content/handbook/support/workflows/team/promotions.md": {
       "path": "content/handbook/support/workflows/team/promotions.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T05:34:58Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1e65cfe03641b0c51edca4609eb1b504ae428bbc00d0969632ba09f419a69315",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:35:31Z",
+      "model": "codex",
+      "input_hash": "2d8cf24f0bce0960484ec72dc7a5e23d14485d02a915919d04500323f3700fda",
+      "upstream_committed_at": "2026-10-16T09:24:31-07:00"
     },
     "content/handbook/support/workflows/team/shift_chair.md": {
       "path": "content/handbook/support/workflows/team/shift_chair.md",
@@ -21682,11 +21682,11 @@
     },
     "content/handbook/support/license-and-renewals/workflows/customersdot/support_tools.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/customersdot/support_tools.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T07:21:18+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:31:30Z",
       "model": "codex",
-      "input_hash": "ad57366145338cb06e41647a9fda0e82ea70a753dbf430ce595cc369bff11086",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "4b6f288f168962ebb4ca2beba8a27cedd1ec3db45d93a8daf31f7d0918648a3a",
+      "upstream_committed_at": "2026-10-14T20:25:01-07:00"
     },
     "content/handbook/support/license-and-renewals/workflows/customersdot/troubleshoot_errors_while_making_purchases.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/customersdot/troubleshoot_errors_while_making_purchases.md",
@@ -21810,11 +21810,11 @@
     },
     "content/handbook/support/internal-support/_index.md": {
       "path": "content/handbook/support/internal-support/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:31:30Z",
       "model": "codex",
-      "input_hash": "036f9e71893534345f42d6c1eb2fe5eeb580cd8f97197fbbb51087a6c47fd340",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "23b70a2edd9f3e60dd6222366edd359862a648e6d9a3a1b4b3a713eab93267fa",
+      "upstream_committed_at": "2026-10-16T18:56:09+08:00"
     },
     "content/handbook/support/internal-support/support-ticket-attention-requests.md": {
       "path": "content/handbook/support/internal-support/support-ticket-attention-requests.md",
@@ -32322,19 +32322,19 @@
     },
     "content/handbook/support/sig/_index.md": {
       "path": "content/handbook/support/sig/_index.md",
-      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
-      "translated_at": "2026-09-08T07:04:23+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:31:30Z",
       "model": "codex",
-      "input_hash": "46cd9d9712a23b3df1bd8dce28372f9c5d3c8796c5e344441457d61363442195",
-      "upstream_committed_at": "2026-09-07T05:44:28-04:00"
+      "input_hash": "aa39abcfa3ad3c30d3d5ff8b8b77a5c7bf48de1abe7bb9f181e704abc3c2870c",
+      "upstream_committed_at": "2026-10-12T17:33:23-04:00"
     },
     "content/handbook/support/sig/support-innovation-group.md": {
       "path": "content/handbook/support/sig/support-innovation-group.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T07:16:12+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:33:43Z",
       "model": "codex",
-      "input_hash": "597679be3a905e9e7e8a12fe57a7e28acde2047b305778000e2d00c19c58fb6b",
-      "upstream_committed_at": "2026-07-14T13:40:35-04:00"
+      "input_hash": "e420743591d5627f70c853207c3da6cfbcc42d83d0fac908350df7cbf1ac7b6c",
+      "upstream_committed_at": "2026-10-13T07:38:25-04:00"
     },
     "content/handbook/product/ux/upstream-forum.md": {
       "path": "content/handbook/product/ux/upstream-forum.md",
@@ -33466,11 +33466,11 @@
     },
     "content/handbook/eta/css/pagerduty/_index.md": {
       "path": "content/handbook/eta/css/pagerduty/_index.md",
-      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
-      "translated_at": "2026-10-07T21:09:39+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:37:28Z",
       "model": "codex",
-      "input_hash": "d87dfe28f243878872569058edeca1c81202d85e45691fc2b2c76fd1365aad7c",
-      "upstream_committed_at": "2026-10-05T11:56:10-05:00"
+      "input_hash": "ee3997c585581f6e4ff471775d6818e49d37479878d96f7d675e64c8d71cff17",
+      "upstream_committed_at": "2026-10-12T12:33:51-05:00"
     },
     "content/handbook/eta/css/audits/_index.md": {
       "path": "content/handbook/eta/css/audits/_index.md",
@@ -33578,11 +33578,11 @@
     },
     "content/handbook/eta/css/zendesk/apps/us-government.md": {
       "path": "content/handbook/eta/css/zendesk/apps/us-government.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-18T21:56:20Z",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:37:28Z",
       "model": "codex",
-      "input_hash": "dea522907e6e62d064feb60a4a505b3e69d873ca73bc05e083e2a0e8ef143527",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "5c2a6864d6010541904255ebc3bed53738a68a09f65ade8974b21e0e354ed3a2",
+      "upstream_committed_at": "2026-10-12T12:54:47-05:00"
     },
     "content/handbook/eta/css/zendesk/analytics/dashboards.md": {
       "path": "content/handbook/eta/css/zendesk/analytics/dashboards.md",
@@ -33666,11 +33666,11 @@
     },
     "content/handbook/eta/css/zendesk/knowledge-center/user-segments.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/user-segments.md",
-      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
-      "translated_at": "2026-07-22T06:32:52+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:37:28Z",
       "model": "codex",
-      "input_hash": "37be6fd5ff15da32d4f7be8bfe6dd65b5f68ab4f08d081eae354c779decf8256",
-      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
+      "input_hash": "e54211ecebd363b2c87761047dbd6f799a117ddb0df48ac887a6ad26ed7f418c",
+      "upstream_committed_at": "2026-10-16T09:01:14-05:00"
     },
     "content/handbook/eta/css/zendesk/users/roles.md": {
       "path": "content/handbook/eta/css/zendesk/users/roles.md",
@@ -33922,11 +33922,11 @@
     },
     "content/handbook/eta/css/zendesk/organizations/fields.md": {
       "path": "content/handbook/eta/css/zendesk/organizations/fields.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:46:00+09:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "translated_at": "2026-10-18T09:37:28Z",
       "model": "codex",
-      "input_hash": "9cd3cc8cbb6dafd3034902f76a838cffbc413e23ff82148edc67e07687bb0c0c",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "711d5359b7aae8287d676f9a07c0013971808ba6865b64ef32be7b261047c2e9",
+      "upstream_committed_at": "2026-10-14T12:44:07-05:00"
     },
     "content/handbook/eta/css/zendesk/tickets/fields.md": {
       "path": "content/handbook/eta/css/zendesk/tickets/fields.md",
@@ -40202,11 +40202,11 @@
     },
     "content/handbook/eta/css/testing/zendesk/groups.md": {
       "path": "content/handbook/eta/css/testing/zendesk/groups.md",
-      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
-      "upstream_committed_at": "2026-10-07T13:11:23-05:00",
-      "translated_at": "2026-10-07T21:08:10+00:00",
+      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
+      "upstream_committed_at": "2026-10-16T09:59:20-05:00",
+      "translated_at": "2026-10-18T09:37:28Z",
       "model": "codex",
-      "input_hash": "485c40041d4d09f2da1b491450a3a65ea224ecc4e14ba0acac348cbdf70576f1"
+      "input_hash": "4aa8d973f68cb100a3c1c4db62debf2396faa7092c7fff9af544ebef66389fcd"
     },
     "content/handbook/security/security-operations/threat-hunting/_index.md": {
       "path": "content/handbook/security/security-operations/threat-hunting/_index.md",
