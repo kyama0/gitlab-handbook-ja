@@ -1,26 +1,26 @@
 ---
 title: 根本原因分析
 upstream_path: /handbook/engineering/workflow/root-cause-analysis/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:27:20Z"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-14T08:38:52-04:00"
 ---
 
-GitLab では、[透明性](/handbook/values/#transparency)が私たちのコアバリューの一つです。これはオープンで誠実な職場環境とサービスを生み出し、成長とイノベーションを促進します。私たちは根本原因分析（RCA）を、プロジェクト・インシデント・Issue への取り組みの後に何がうまくいき、何がうまくいかなかったかを調査することで、組織とコミュニティに対して透明性を示す機会ととらえています。このページでは RCA の定義、実施の利点、および GitLab における成功する RCA の実施方法を説明します。
+GitLab では、[透明性](/handbook/values/#transparency)が私たちのコアバリューの一つです。これはオープンで誠実な職場環境とサービスを生み出し、成長とイノベーションを促進します。私たちは根本原因分析（RCA）を、プロジェクト・インシデント・ Issue への取り組みの後に何がうまくいき、何がうまくいかなかったかを調査することで、組織とコミュニティに対して透明性を示す機会ととらえています。このページでは RCA の定義、実施の利点、および GitLab における成功する RCA の実施方法を説明します。
 
 GitLab のすべてのチームメンバーは、自身が担当する Issue に対して RCA を実施できます。失敗と成功から学ぶのに間違ったタイミングなどありません。
 
 ## 根本原因分析とは何か？
 
-根本原因分析（RCA）は、プロジェクトの完了後に失敗と成果の根本を特定するプロセスです。RCA はインシデント後に一般的に行われますが、インシデント管理のモデルにのみ適合するわけではありません。RCA は技術的・非技術的を問わず、あらゆるプロジェクトの後に実施できます。RCA はどのような形式でも実施できますが、複数のチームからの意見を集約して開発された [Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca.md) があります。エンジニアリングに加え、Customer Success チームが彼らの [RCA プロセス](/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis/) の優れた概要を提供しています。
+根本原因分析（RCA）は、プロジェクトの完了後に失敗と成果の根本を特定するプロセスです。RCA はインシデント後に一般的に行われますが、インシデント管理のモデルにのみ適合するわけではありません。RCA は技術的・非技術的を問わず、あらゆるプロジェクトの後に実施できます。RCA はどのような形式でも実施できますが、複数のチームからの意見を集約して開発された [Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca.md)があります。
 
 実施プロセスは異なる場合がありますが、RCA テンプレートは優れた出発点となります。
 
 ### RCA はどのように役立つか？
 
-RCA は、ワークフローの中で何がうまくいき、何がうまくいかなかったかを学ぶ機会です。ただし、責任の追及や非難のために使用するものではありません。これらはプロジェクト中に取ったワークフローとプロセスの無責任なレビューであり、経験からの学習を深め、プロセスのイテレーションをよりダイナミックにするためのものです。Issue は個人でも、チームでも、そして頻繁にチーム間のコラボレーションを伴いながら取り組むことができます。RCA は、Issue への関与の有無にかかわらず、組織全体でミスと成功から学ぶ機会をすべての人に提供します。GitLab は RCA を活用してプロジェクト情報を集約し、プロジェクト完了後の信頼できる単一の情報源としての有用性をさらに高めます。
+RCA は、ワークフローの中で何がうまくいき、何がうまくいかなかったかを学ぶ機会です。ただし、責任の追及や非難のために使用するものではありません。これらはプロジェクト中に取ったワークフローとプロセスについて個人を責めずに行うレビューであり、経験からの学習を深め、プロセスのイテレーションをよりダイナミックにするためのものです。Issue は個人でも、チームでも、そして頻繁にチーム間のコラボレーションを伴いながら取り組むことができます。RCA は、Issue への関与の有無にかかわらず、組織全体でミスと成功から学ぶ機会をすべての人に提供します。GitLab は RCA を活用してプロジェクト情報を集約し、プロジェクト完了後の信頼できる単一の情報源としての有用性をさらに高めます。
 
 各チームの機能は独自ですが、GitLab 組織全体での過去のパフォーマンスから学ぶ能力により、問題解決へのアプローチを変革し、データに基づいてプロセスをイテレーションし、同じ過ちを繰り返さないようにすることができます。
 
@@ -33,8 +33,6 @@ RCA を実施するには、以下に記載のテンプレートを活用し、�
 RCA で回答すべき質問のステップバイステップの概要については、[RCA テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca.md)を参照してください。
 
 計画外のアップグレード停止には、[根本原因分析実施のための特別なテンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca_upgrade_stop.md)があります。詳細については、[計画外のアップグレード停止](/handbook/engineering/workflow/unplanned-upgrade-stop/)ページを参照してください。
-
-確立された RCA プロセスのより詳しい概要については、[こちらのハンドブックページ](/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis/)をレビューしてください。
 
 ### 調査結果の共有
 
@@ -52,4 +50,4 @@ RCA で回答すべき質問のステップバイステップの概要につい�
 
 以下のリンクは RCA の詳細、内容、実施方法、価値を拡充します:
 
-- [Quality One International - Root Cause Analysis](https://quality-one.com/rca/)
+- [Quality One International - 根本原因分析](https://quality-one.com/rca/)

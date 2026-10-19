@@ -2,9 +2,9 @@
 title: "Tenant Controls チーム"
 description: "Tenant Controls チームは GitLab.com のアプリケーションのレート制限を担当します。このページでは、ミッション、担当範囲、作業を追跡するボードとラベルを説明します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/tenant-controls/"
-upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
-lastmod: "2026-09-25T07:48:08+02:00"
-translated_at: "2026-09-25T21:18:23Z"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+lastmod: "2026-10-19T12:11:40+05:30"
+translated_at: "2026-10-19T10:23:32Z"
 translator: codex
 stale: false
 ---
@@ -26,7 +26,7 @@ Production Engineering 内で、Tenant Controls チームは GitLab.com のア�
 [統一レート制限アーキテクチャ](/handbook/engineering/architecture/design-documents/unified_rate_limiting/)で定められており、
 [ボード](#boards)に記載したワークストリームとして実行します:
 
-1. **統一 SDK:** 共通のレート制限 SDK としての [labkit](https://gitlab.com/gitlab-org/labkit) と、
+1. **統一 SDK:** 共通のレート制限 SDK としての [labkit](https://gitlab.com/gitlab-org/labkit)と、
    呼び出し側の SDK への準拠。
 1. **アプリケーションの統一:** 既存の実装である `Rack::Attack` と
    `ApplicationRateLimiter` を、破壊的変更を加えずにその SDK を経由するようにします。
@@ -75,6 +75,7 @@ Production Engineering 内で、Tenant Controls チームは GitLab.com のア�
 | [Hardik Gala](https://gitlab.com/hardikgala) | Backend Engineer |
 | [Sankalp Das](https://gitlab.com/sankalp_gl) | Backend Engineer |
 | [Nidhey Indurkar](https://gitlab.com/nindurkar) | Backend Engineer |
+| [Navjot Bansal](https://gitlab.com/navjotbans) | Backend Engineer |
 
 ## 作業の追跡方法 {#how-work-is-tracked}
 
@@ -135,12 +136,12 @@ Production Engineering 内で、Tenant Controls チームは GitLab.com のア�
 例として `rate-limits::config-externalization` があります。現在使用しているラベルは、
 [ボード](#boards)の表に記載しています。
 
-- 成果物ではなく、**成果**を名前にします。`yaml-file` ではなく `config-externalization` を使用します。
+- 成果物ではなく、**成果**を名前にします。`config-externalization` を使用し、`yaml-file` は使用しません。
   形式は変わっても、通常、成果は変わらないためです。
 - **短く**します。1 〜 3 語とし、ワークストリームのエピックのタイトルやボード名に近い名前にして、
   その 3 つの対応が一目でわかるようにします。
 - エピックのタイトルがイギリス式の綴りでも、**アメリカ式の綴り**を使用します。
-  `-isation` ではなく `-ization` とし、フィルタリングの際に綴りを推測する必要がないようにします。
+  `-ization` を使用し、`-isation` は使用せず、フィルタリングの際に綴りを推測する必要がないようにします。
 - **エピックごとにワークストリームのラベルは 1 つにします。** 2 つ付けるとボード間の分割が崩れます。また、ラベルは
   スコープ付きのため、いずれにしても GitLab は通知なしで一方を他方に置き換えます。
 - **Issue でラベルを勝手に作らないでください。** エピックに `rate-limits::` ラベルがない場合は、

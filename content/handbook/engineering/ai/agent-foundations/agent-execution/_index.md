@@ -2,9 +2,9 @@
 title: Agent Execution グループ
 description: "Agent Execution グループは、開発ワークフローのタスクを自動化して生産性向上を支援する AI システム、GitLab Duo Workflow の開発に注力しています。"
 upstream_path: /handbook/engineering/ai/agent-foundations/agent-execution/
-upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
-lastmod: "2026-09-29T10:59:36+02:00"
-translated_at: "2026-10-03T21:17:25+00:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+lastmod: "2026-10-14T15:10:29+02:00"
+translated_at: "2026-10-19T10:08:35Z"
 translator: codex
 stale: false
 ---
@@ -15,11 +15,12 @@ Agent Execution グループは、SDLC 全体でエージェントを実行す�
 
 ## 👥 リーダーシップ
 
-{{< group-by-slugs bastirehm arueda emilybauman >}}
+{{< group-by-slugs bastirehm fdegier arueda emilybauman >}}
 
 ## 🧭 チーム
 
 このグループは、Agent Tools、Agent Observability、Runner Execution という 3 つのファンクショナルチームで構成されています。各チームがそれぞれの機能領域を担当します。
+Agent Tools と Agent Observability の暫定 Engineering Manager は Fred de Gier、Runner Execution の暫定 Engineering Manager は Sebastian Rehm が務めます。
 
 ### Agent Tools
 
@@ -28,7 +29,7 @@ Agent Tools は、エージェントが GitLab や外部サービスとやり取
 
 #### チームメンバー
 
-{{< group-by-slugs terrichu adruid afilatov fdegier>}}
+{{< group-by-slugs terrichu adruid afilatov >}}
 
 ### Agent Observability
 
@@ -65,7 +66,7 @@ Runner Execution は、GitLab runner をエージェントが実行されるネ�
 Agent Execution グループでは、寄せられる Request-for-Help、質問、Issue がトリアージされ、適切な人やチームに振り分けられるように、Goalkeeper ローテーションを実施しています。Goalkeeper はチーム自身による第一線のサポートとして機能し、作業をスムーズに進め、ボトルネックを防ぎます。寄せられるすべての Issue に自ら取り組んだり、解決したりすることは期待されていません。適切なカバレッジを確保するため、毎週 1 人のエンジニアが担当します。
 
 責任と詳細なプロセスは [Goalkeeper Issue テンプレート](https://gitlab.com/gitlab-org/ai-engineering/agent-execution/tasks/-/blob/main/.gitlab/issue_templates/goalkeeper.md)に記載され、現在の Goalkeeper は [Google スプレッドシート](https://docs.google.com/spreadsheets/d/1BP_b3AttMmAG-Vf9RZ6sMBEoGdJk2-2iKbGxHYshCV4/edit?gid=0#gid=0)に記録されています。
-Goalkeeper の担当期間に対応できない場合は、`#g_agent-execution` チャンネルで他のチームメンバーと担当を交代してください。
+Goalkeeper の担当期間に対応できない場合は、#g_agent-execution チャンネルで他のチームメンバーと担当を交代してください。
 
 ### 共有カレンダー
 
@@ -98,7 +99,7 @@ Issue に取り組む順序を理解しやすくするために、ラベルを�
 1. **Deliverable**: これらの項目はイテレーションの主要な成果物であるため、最初に着手する必要があります。
 1. **Stretch**: これらの項目の一部を提供することを目指しますが、野心的に計画する一環として、間に合わない可能性があります。
 
-各ファンクショナルチームには、チームを区別するために同等のカテゴリラベルがあります（例: `~category:agent tools`）。
+各ファンクショナルチームには、チームを区別するために同等のカテゴリラベルがあります（例: "~category:agent tools"）。
 
 ## 👏 コミュニケーション
 
@@ -138,7 +139,7 @@ _Remember to update the status!_
 /cc @bastirehm @amandarueda [@emilybauman if design involvement]
 ```
 
-エンジニアリングマネージャー、プロダクトマネージャー、そして協働しているチームメンバーを必ずタグ付けしてください。Issue にデザイン要素がある場合は、デザイン担当者もタグ付けします。
+Engineering Manager、Product Manager、そして協働しているチームメンバーを必ずタグ付けしてください。Issue にデザイン要素がある場合は、デザイン担当者もタグ付けします。
 
 #### ベストプラクティス
 

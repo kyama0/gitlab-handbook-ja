@@ -6,11 +6,11 @@ authors: [ "@skarbek" ]
 coach: "@rymai"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/feature_flags/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:08:10+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:12:40Z"
 translator: codex
 stale: false
-lastmod: "2026-09-01T12:49:01+05:30"
+lastmod: "2026-10-15T14:01:05Z"
 ---
 
 
@@ -25,7 +25,7 @@ lastmod: "2026-09-01T12:49:01+05:30"
 - [Blueprint 実装](../feature_flags_development/)
 - [Blueprint 運用提案](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/)
 
-:warning: GitLab アプリケーションの機能セットである [フィーチャーフラグ](https://docs.gitlab.com/ee/operations/feature_flags.html) と混同しないようにしてください。
+:warning: GitLab アプリケーションの機能セットである [フィーチャーフラグ](https://docs.gitlab.com/ee/operations/feature_flags.html)と混同しないようにしてください。
 
 :information_source: 現在の実装方針（Cell ローカルのコントロールプレーンサービスである Membrane とグローバルフィーチャーフラグサービス）については、[Cells ADR 028: Membrane とグローバルフィーチャーフラグサービスの方針](decisions/028_membrane_and_global_feature_flag_service_direction.md)を参照してください。
 
@@ -35,10 +35,10 @@ lastmod: "2026-09-01T12:49:01+05:30"
 
 ### Cells における課題
 
-- どのアクターがどの Cell に存在するかを把握するためのディスカバリー機能がない
+- どのアクターがどの Cell に存在するかを把握するためのディスカバリー機能
 - Cell ごとのロールアウト機能が存在しない
 - フィーチャーフラグの状態管理が一元化されていない
-- Cells の拡張は開発チームと運用チームへの負担増大につながる
+- Cells の拡張は Development チームと Operations チームへの負担増大につながる
 
 ## 提案
 
@@ -60,7 +60,7 @@ Cells がより安定したバージョンの GitLab をホストすることを
 
 例を挙げましょう。特定のインシデントに関連して Cell 7 上のフィーチャーフラグ `lorem_ipsum_dolar` を変更したいとします。以下のコマンドを使用します:
 
-> `/chatops run feature set lorem_ipsum_dolar false --cell 7`
+> `/chatops gitlab run feature set lorem_ipsum_dolar false --cell 7`
 
 このコマンドにより Cell 7 にアクセスしてフィーチャーフラグが無効になります。
 
@@ -68,9 +68,9 @@ Cells がより安定したバージョンの GitLab をホストすることを
 
 開発を支援するための情報収集に活用されるフィーチャーフラグは、特定のプロジェクト、ユーザー、またはパーセンテージベースのアクターをターゲットにする場合があります。これをすべての Cells にまたがって設定することを難しくする問題が存在します。そのため、アクターベースのフィーチャーフラグの変更は、レガシー Cell のみに限定されます。
 
-例を挙げましょう。アクター `@ayufan` に対してフィーチャーフラグ `lorem_ipsum_dolar` を変更したいとします。このユーザーは合計 3 つの Cell に分散している可能性があります。以下のコマンドを使用します:
+例を挙げましょう。フィーチャーフラグ `lorem_ipsum_dolar` をアクター `@ayufan` に対して変更したいとします。このユーザーは合計 3 つの Cell に分散している可能性があります。以下のコマンドを使用します:
 
-> `/chatops run feature set lorem_ipsum_dolar ayufan`
+> `/chatops gitlab run feature set lorem_ipsum_dolar ayufan`
 
 このコマンドはレガシー Cell 上のそのアクターに対してのみフラグを変更します。他のすべての
 Cell は無視されます。特定の Cell 上のアクターを直接設定できるような追加フラグを
@@ -94,7 +94,7 @@ _何らかのサービス_ をクエリする必要がなく、結果として�
 
 例を挙げましょう。本番環境全体でフラグ `lorem_ipsum_dolar` を有効にしたいとします。以下のコマンドを使用します:
 
-> `/chatops run feature set lorem_ipsum_dolar true --production`
+> `/chatops gitlab run feature set lorem_ipsum_dolar true --production`
 
 このコマンドは多くの処理を行う必要があります。まず、このフィーチャーフラグが存在する
 すべての Cells を収集する必要があります。フラグがいずれの Cell にも存在しない場合は、

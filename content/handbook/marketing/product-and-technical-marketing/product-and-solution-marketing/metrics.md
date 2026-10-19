@@ -1,11 +1,11 @@
 ---
-title: "プロダクト＆ソリューションマーケティングのメトリクス"
+title: "Product and Solution Marketing のメトリクス"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/metrics/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T15:57:36+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:30:18Z"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
 ## 北極星指標（北極星指標に関する CEO の依頼）
@@ -24,13 +24,13 @@ lastmod: "2026-08-27T23:30:57+02:00"
 ## 用語の定義
 
 - **Impressions（インプレッション）**: コンテンツを閲覧した人数の合計カウント。
-  - ウェブページの場合は、ページビュー。（ソース: Google アナリティクス?）
+  - ウェブページの場合は、ページビュー。（ソース: Google Analytics?）
   - ダウンロード可能なアセットの場合は、ダウンロード数。（ソース: ??）
   - YouTube ビデオは、視聴数。（ソース: YouTube?...）
   - ウェビナー、ワークショップなど（ライブビュー）。（ソース）（注: ウェビナーは YouTube ビデオとなり「視聴数」を蓄積します）。
   - 私たちが講演する対面イベントの場合は、観客数。
 - **Content Created（作成コンテンツ）:** 新規に作成された、または大幅に改善・更新されたコンテンツの合計カウント。（ソース: SM Inventory）
-- **IACV Attribution:** - パイプラインへの私たちの貢献（ソース: Sisense - attribution dashboard）??  注: キャンペーンには Product and Solution Marketing フィールドが含まれており、私たちのキャンペーンへの貢献を文書化するために使用すべきです。
+- **IACV Attribution:** - パイプラインへの私たちの貢献（ソース: Sisense - アトリビューションダッシュボード）??  注: キャンペーンには Product and Solution Marketing フィールドが含まれており、私たちのキャンペーンへの貢献を文書化するために使用すべきです。
 - **SFDC の SM フィールド:** - キャンペーンへの私たちの「アクティブな貢献」を測定するために、SFDC キャンペーンに新しいフィールドが作成されました。 私たちの貢献を判断するために以下のルーブリックを使用します:
   - **None または Blank**: アクティブな貢献なし
   - **Low**: コンテンツのレビュー、メッセージングの検証
@@ -50,7 +50,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
     - 活性化方法のリストの例: ウェブサイト、SFDC、メールキャンペーン、イベントブース、キャンペーンデザイン、カンファレンス、イネーブルメントセッション
 1. 何人の人がそれを見る（閲覧する）か？ 頻度
     - 例: 四半期あたり 3000 人のウェブサイト訪問者、月あたり 45 人のセールス担当者、四半期の 12 イベントでデモ x の 25,000 人の見込み客、ハンドブックビュー、何人のセールス／チャネルがイネーブルメントを受けたか？
-    - なぜ: 特定のアセットのある時間枠における全体的なアクティビティを示します。 タイトル、説明、ランディングページ、アセットに関連するキャンペーンの効果を示す指標です。 内部コンテンツの品質や効果については何も教えてくれません。 何を教えてくれるか: 特定のアセットがアクティブかどうかの度合い。
+    - なぜ: 特定のアセットのある時間枠における全体的なアクティビティを示します。 タイトル、説明、ランディングページ、アセットに関連するキャンペーンの効果を示す指標です。 コンテンツ自体の品質や効果については何も教えてくれません。 何を教えてくれるか: 特定のアセットがアクティブかどうかの度合い。
 1. コンテンツに何が起こるか？
     - プログラムにおけるコンテンツの線形アトリビューション？
     - 何件がコンバージョンしたか？
@@ -59,7 +59,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
     - そのアセットは何件の SAO を作成したか？
     - そのアセットは何件の機会の作成に貢献したか？
     - そのアセットはいくらの $（ARR）の作成に貢献したか？
-        - なぜ: 特定のアセットが収益を支援したことを示します。 エンドユーザーがアセットを消費し、その後購買プロセスを継続したため、アセットコンテンツの品質について何かを推測できる可能性がありますが、他のデータポイントの分析が必要です。 何を教えてくれるか: これは、収益生成と最も結びついているアセットを理解するのに役立ち、したがって促進・再利用すべきです。
+        - なぜ: 特定のアセットが収益を支援したことを示します。 エンドユーザーがアセットを消費し、その後購買プロセスを継続したため、アセットコンテンツの品質について何かを推測できる可能性がありますが、他のデータポイントの分析が必要です。 何を教えてくれるか: これにより、どのアセットが収益生成に最も結びついており、優先して紹介・再利用すべきかを理解できます。
 
 課題: なぜ測定するのか？ 学んだことに基づく次のステップ／アクションは何か？
 
@@ -70,7 +70,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 ## CMO（Todd）の測定方法に関する課題
 
 - 出力メトリクスのビュー:
-    1. 閲覧／読み取り - Google アナリティクスダッシュボードは目標を設定できるので素晴らしい。 推奨される修正:
+    1. 閲覧／読み取り - Google Analytics ダッシュボードは目標を設定できるので素晴らしい。 推奨される修正:
         - YouTube とブログコンテンツにタグを付けてフィルタリングできるようにする
         - ユースケースページを公開ウェブサイトページに変更する
     1. プログラムとキャンペーンにおけるコンテンツの線形アトリビューション
@@ -89,7 +89,7 @@ Product and Solution Marketing は、何を作成し公開するかについて�
 - [Product and Solution Marketing コンテンツインベントリ Issue](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/3353)
 - [Google スプレッドシート上の MVC1](https://docs.google.com/spreadsheets/d/1W5oAlbPV610-ylM7LWv_zc6bEqQK9dI0H9Hrn2f6Jwc/edit#gid=0)
 - [Google DataStudio ダッシュボード](https://datastudio.google.com/u/0/reporting/bb7a37e5-d63e-421a-9b3b-8d1ec80f72dd/page/OjYYB?s=jsv8OeXU4KI)
-- YAML ベースのインベントリモデル（MVC） - 追加／変更を行う詳細は [asset_inventory ページ](./asset_inventory/) で説明されています。 ご自身のチームインベントリファイルを追加する場合は、そのページの情報に従ってください。
+- YAML ベースのインベントリモデル（MVC） - 追加／変更を行う詳細は [asset_inventory ページ](./asset_inventory/)で説明されています。 ご自身のチームインベントリファイルを追加する場合は、そのページの情報に従ってください。
 
 ## Web トラフィック分析
 
@@ -132,7 +132,7 @@ Product and Solution Marketing は、何を作成し公開するかについて�
 ## 競合インテリジェンス分析
 
 - 検討すべきアイデア:
-    1. DevOps Landscape comparisons page の利用状況を追跡する
+    1. DevOps ランドスケープ比較ページの利用状況を追跡する
         - ページ訪問数
         - セッション数
         - 新規訪問者
@@ -187,12 +187,12 @@ Forrester 再版情報（閲覧数、ダウンロード数、滞在時間）
 - サーベイ（セールスチーム）
 - 管理されている Issue の分析 - オープン／クローズ、内部 vs 外部
 - Pathfactory
-- SM Issues 分析
+- SM の Issue 分析
 - SM 予算支出分析
 
 ## 役立つリンク
 
 - [マーケティング KPI](/handbook/company/kpis/#marketing-kpis)
 - Slack チャンネル - #keymonthlymarketingmetric
-- [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)
+- [Tech Stack](/handbook/business-technology/tech-stack-applications/)
   - [Pathfactory](/handbook/marketing/marketing-operations/pathfactory/)

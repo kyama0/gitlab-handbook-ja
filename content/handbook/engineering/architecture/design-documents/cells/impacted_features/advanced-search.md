@@ -4,11 +4,11 @@ group: Tenant Scale
 title: 'Cells: 高度な検索'
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/impacted_features/advanced-search/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T10:00:00Z"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:12:40Z"
 translator: claude
 stale: false
-lastmod: "2024-11-11T01:02:35+00:00"
+lastmod: "2026-10-16T14:15:54+13:00"
 ---
 
 
@@ -19,13 +19,13 @@ lastmod: "2024-11-11T01:02:35+00:00"
 
 ## 概要
 
-[高度な検索機能](https://docs.gitlab.com/ee/user/search/advanced_search.html) により、ユーザーは GitLab インスタンス全体を検索できます。高度な検索は Elasticsearch と OpenSearch を検索バックエンドとしてサポートします。
+[高度な検索機能](https://docs.gitlab.com/ee/user/search/advanced_search.html)により、ユーザーは GitLab インスタンス全体を検索できます。高度な検索は Elasticsearch と OpenSearch を検索バックエンドとしてサポートします。
 
-**注意:** グローバル検索も影響を受ける機能であり、[別の設計ドキュメント](global-search.md) で取り上げられます。
+**注意:** グローバル検索も影響を受ける機能であり、[別の設計ドキュメント](global-search.md)で取り上げられます。
 
-GitLab.com は高度な検索をサポートするためにすべてのインデックスデータを収容する 1 つの Elasticsearch クラスターを持っています。高度な検索には[自動インデックスパイプライン](https://docs.gitlab.com/ee/development/advanced_search.html#deep-dive)とデータマイグレーション用の[マイグレーションフレームワーク](https://about.gitlab.com/blog/2021/06/01/advanced-search-data-migrations/) が含まれます。ほとんどのインフラストラクチャとインデックスのメンテナンスタスクは、[変更リクエストワークフロー](../../../../change-management.md/#change-request-workflows) を通じて Global Search チームが手動で実施しています。
+GitLab.com は高度な検索をサポートするためにすべてのインデックスデータを収容する 1 つの Elasticsearch クラスターを持っています。高度な検索には[自動インデックスパイプライン](https://docs.gitlab.com/ee/development/advanced_search.html#deep-dive)とデータマイグレーション用の[マイグレーションフレームワーク](https://about.gitlab.com/blog/2021/06/01/advanced-search-data-migrations/)が含まれます。ほとんどのインフラストラクチャとインデックスのメンテナンスタスクは、[変更リクエストワークフロー](../../../../change-management.md/#change-request-workflows)を通じて Global Search チームが手動で実施しています。
 
-複数の [Cells](../goals.md#cell) を導入する際、高度な検索は以下をサポートする必要があります:
+複数の [Cells](../goals.md#cell)を導入する際、高度な検索は以下をサポートする必要があります:
 
 1. インフラストラクチャのメンテナンス
    - Elasticsearch クラスターのバージョンアップグレード
@@ -53,7 +53,7 @@ GitLab.com は高度な検索をサポートするためにすべてのインデ
 
 これをサポートするために、以下が必要です:
 
-- インデックスパイプラインの一時停止フレームワークを、[特定のインデックスのインデックス作成を一時停止](https://gitlab.com/gitlab-org/gitlab/-/issues/381705) できるように変更する必要があります。
+- インデックスパイプラインの一時停止フレームワークを、[特定のインデックスのインデックス作成を一時停止](https://gitlab.com/gitlab-org/gitlab/-/issues/381705)できるように変更する必要があります。
   特定のインデックスを一時停止することで、他のデータタイプに影響を与えずにそのインデックスでメンテナンスタスクを実行できます。インデックス作成が遅れているために検索結果が古くなる影響を軽減するために重要です。
 - 検索とインデックス作成の検証を自動化する必要があります。
   `Search::ClusterHealthCheck` クラスを拡張して検索とインデックス作成の検証を含めることができます。[gitlab#499586](https://gitlab.com/gitlab-org/gitlab/-/issues/499586)
@@ -61,7 +61,7 @@ GitLab.com は高度な検索をサポートするためにすべてのインデ
 ### インデックスのメンテナンス
 
 すべてのインデックスメンテナンスタスクは最初に
-[高度な検索マイグレーションフレームワーク](https://docs.gitlab.com/ee/development/search/advanced_search_migration_styleguide.html) を使用して完了します。
+[高度な検索マイグレーションフレームワーク](https://docs.gitlab.com/ee/development/search/advanced_search_migration_styleguide.html)を使用して完了します。
 マイグレーションプロセスが検証されたら、すべてのインデックスメンテナンスマイグレーションは Cron ワーカーによって実行されます。メンテナンスタスクごとに 1 つの Cron ワーカーが必要です:
 
 1. シャードリサイズ Cron ワーカーは各インデックスをレビューし、しきい値を超えた場合にシャードサイズを調整します
@@ -69,6 +69,8 @@ GitLab.com は高度な検索をサポートするためにすべてのインデ
 1. スローログ Cron ワーカーは ops フィーチャーフラグ（またはアプリケーション設定）が有効な場合にスローログを有効にします
 
 ### Organization の移行
+
+[Zoekt](zoekt.md#organization-migration-workflow)も同様の移行戦略を採用しています。Organization が所有する状態は移行先の Cell へ直接移行し、Cell ローカルの運用状態はそこでゼロから再構築します。
 
 Organization の移行にはいくつかのアプローチがあり、それぞれトレードオフがあります。Cells はフェーズに分けてロールアウトされるため、この提案にはフェーズごとの推奨事項が含まれています。
 
@@ -101,7 +103,7 @@ Organization の移行は既存のインデックスフレームワークを使�
 
 以下の計画は提案のみです。Cells の検索プラットフォームはまだ決定されていません。Cells 間で検索プラットフォームが異なる場合は、提案を更新する必要があります。
 
-ベンチマーク結果が既存のインデックスフレームワークが十分に速くないことを示す場合、Organization の移行は [Elasticsearch Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html) を使用して自動化できます。このAPIは Organization のすべてのインデックスデータを新しい Cell の Elasticsearch クラスターに移動します。API は 2 つの異なるクラスター（またはホスト）間でのデータ移動をサポートしています。
+ベンチマーク結果が既存のインデックスフレームワークが十分に速くないことを示す場合、Organization の移行は [Elasticsearch Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html)を使用して自動化できます。この API は Organization のすべてのインデックスデータを新しい Cell の Elasticsearch クラスターに移動します。API は 2 つの異なるクラスター（またはホスト）間でのデータ移動をサポートしています。
 
 これをサポートするために、以下が必要です:
 

@@ -5,14 +5,14 @@ tags:
   - security_policy
   - security_policy_caplscsi
 upstream_path: /handbook/security/security-and-technology-policies/software-development-lifecycle-policy/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-translated_at: "2026-08-01T15:25:19+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:31:49Z"
 translator: codex
 stale: false
-lastmod: "2026-07-30T17:38:52-07:00"
+lastmod: "2026-10-13T15:22:43-07:00"
 ---
 
-{{< label name="可視性: 非監査" color="#428BCA" >}}
+{{< label name="Visibility: Non-Audit" color="#428BCA" >}}
 
 ## 目的
 
@@ -26,21 +26,27 @@ lastmod: "2026-07-30T17:38:52-07:00"
 
 | 役割  | 責任 |
 |-----------|-----------|
-| セキュリティガバナンス | 本ポリシーを作成および実施する責任を負います |
+| Security Governance | 本ポリシーを作成および実施する責任を負います |
 | チームメンバー | ポリシーステートメントの実行に責任を負います |
 
 ## ポリシー
 
-対象範囲の開発活動は、GitLab の [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/) に従って実施されます。
+対象範囲の開発活動は、GitLab の [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に従って実施されます。
 
 開発活動は、セキュリティ、機密性、および可用性の原則を念頭に置いて実施されます。
 
-開発プロセス全体で使用されるテストデータは、GitLab の [データ分類基準](/handbook/security/policies_and_standards/data-classification-standard) の対象となります。
+開発プロセス全体で使用されるテストデータは、GitLab の [データ分類基準](/handbook/security/policies_and_standards/data-classification-standard)の対象となります。
+
+すべてのマージリクエストは、その変更を自ら作成しておらず、エージェントに作成を指示したこともなく、レビューにおいて独立した判断を行うレビュアーによるレビューと承認を受けなければなりません。
+
+GitLab は、各マージリクエストのレビュアーおよび承認者の身元を、それぞれが人であるかエージェントであるかも含めて記録しなければなりません。GitLab は、これらの記録を証拠として保持しなければなりません。
+
+法律、規制、または契約によって人による明示的な承認が求められる場合は、人が変更を承認しなければなりません。例として、SOX または FedRAMP の統制の対象となる変更が挙げられます。
 
 ## 標準
 
-詳細については、GitLab の [ソフトウェア開発ライフサイクル標準](/handbook/security/policies_and_standards/software-development-lifecycle-standard) を参照してください。
+詳細については、GitLab の [ソフトウェア開発ライフサイクル標準](/handbook/security/policies_and_standards/software-development-lifecycle-standard)を参照してください。
 
 ## 例外
 
-本手順への例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure#exceptions) に従って追跡されます。
+本手順への例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure#exceptions)に従って追跡されます。

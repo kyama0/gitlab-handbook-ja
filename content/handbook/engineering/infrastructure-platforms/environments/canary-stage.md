@@ -2,11 +2,11 @@
 title: "環境のカナリアステージ"
 description: "私たちの環境でカナリアステージがどのように機能するかに関する詳細情報"
 upstream_path: "/handbook/engineering/infrastructure-platforms/environments/canary-stage/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T21:28:32Z"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:23:32Z"
 translator: claude
 stale: false
-lastmod: "2025-11-25T13:09:27+00:00"
+lastmod: "2026-10-15T14:01:05Z"
 ---
 
 ## 環境のカナリアステージ
@@ -31,7 +31,7 @@ GitLab で使用されている一部の環境は、「ステージ」と呼ば�
 * Gitaly *（下記参照）
 * Praefect *（下記参照）
 
-現在、カナリアステージは以下のサービスをカバーしていません（これらのサービスにカナリアを使用している場合、「メイン」ステージで実行されているバージョンを使用しています）
+現在、カナリアステージは以下のサービスを*カバーしていません*（これらのサービスにカナリアを使用している場合、「メイン」ステージで実行されているバージョンを使用しています）
 
 * Sidekiq
 * GitLab Agent for Kubernetes
@@ -43,7 +43,7 @@ GitLab で使用されている一部の環境は、「ステージ」と呼ば�
 
 Gitaly と Praefect ノードは Git データを保存するためにランダムに（重み付けあり）選択されるため、ステージ間で Gitaly/Praefect ノードを完全に分離することは不可能です。
 
-これが意味することは、環境を使用する際に、Web フロントエンドを通じてどのステージを使用しているか、または [next.gitlab.com](https://next.gitlab.com) で何を選択しているかに関わらず、使用される Gitaly/Praefect コード（対象のリポジトリによる、以下を参照）はいずれかのステージ（メインまたはカナリア）からのものになる可能性があるということです。どの Gitaly/Praefect ノードが使用されるかは以下のルールに従います
+これが意味することは、環境を使用する際に、Web フロントエンドを通じてどのステージを使用しているか、または [next.gitlab.com](https://next.gitlab.com)で何を選択しているかに関わらず、使用される Gitaly/Praefect コード（対象のリポジトリによる、以下を参照）はいずれかのステージ（メインまたはカナリア）からのものになる可能性があるということです。どの Gitaly/Prafect ノードが使用されるかは以下のルールに従います
 
 * 既存のリポジトリを変更している場合、シャードが現在割り当てられている Gitaly サーバーを使用します。
 * リポジトリをフォークしている場合、同じシャードに留まります。
@@ -60,7 +60,7 @@ Gitaly と Praefect ノードは Git データを保存するためにランダ�
 技術的なレベルでは、環境のカナリアステージへのアクセスは以下のいずれかの方法で実現されます
 
 * 環境への通信に使用しているブラウザ/ツールで手動で `gitlab_canary` クッキーを `true` に設定する
-* [next.gitlab.com](https://next.gitlab.com) にアクセスし、ページのトグルで「Current」の代わりに「Next」を選択する。**注意**: これにより、**すべての**環境で使用するステージ（メインまたはカナリア）が変更されます。
+* [next.gitlab.com](https://next.gitlab.com)にアクセスし、ページのトグルで「Current」の代わりに「Next」を選択する。**注意**: これにより、**すべての**環境で使用するステージ（メインまたはカナリア）が変更されます。
 
 カナリアステージは以下の状況でも自動的に使用されます（注意点あり）
 
@@ -69,8 +69,8 @@ Gitaly と Praefect ノードは Git データを保存するためにランダ�
   * [GitLab.com](https://gitlab.com/gitlab-com)
   * [GitLab.org](https://gitlab.com/gitlab-org)
   * [charts](https://gitlab.com/charts)
-  [next.gitlab.com](https://next.gitlab.com) で Canary を手動でオプトアウトしない限り
-* トラフィックシェアは正確に 5% ではありません。[現在のベースラインは 4.7%](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1745) で HAProxy の重みによって決定されますが、実際の量は GCP のゾーンの可用性、時刻、GitLab グループへのトラフィックシェアなど複数の要因に依存します。
+  [next.gitlab.com](https://next.gitlab.com)で Canary を手動でオプトアウトしない限り
+* トラフィックシェアは正確に 5% ではありません。[現在のベースラインは 4.7%](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1745)で HAProxy の重みによって決定されますが、実際の量は GCP のゾーンの可用性、時刻、GitLab グループへのトラフィックシェアなど複数の要因に依存します。
 
 ### 「カナリア」ステージを使用していることの確認
 
@@ -82,23 +82,23 @@ Elasticsearch で環境のログを表示する際、`json.stage.keyword` が `c
 
 ### 環境のカナリアステージに固有のメトリクスを表示するには
 
-環境の [dashboards.gitlab.net](https://dashboards.gitlab.net) でメトリクスダッシュボードを表示する際、上部の `stage` ドロップダウンから `cny` を選択してください。
+環境の [dashboards.gitlab.net](https://dashboards.gitlab.net)でメトリクスダッシュボードを表示する際、上部のドロップダウンで `cny` を `stage` として選択してください。
 
 ### カナリアステージのフィーチャーフラグを変更するには
 
-フィーチャーフラグはデータベース（フィーチャーフラグが保存される場所）がメインとカナリアステージで共有されているため、環境に対して通常の [chatops プロセス](/handbook/support/workflows/chatops/#feature-flags)) に従ってフィーチャーフラグを有効にすると、環境のメインとカナリアの両方のステージで変更されます。
+フィーチャーフラグはデータベース（フィーチャーフラグが保存される場所）がメインとカナリアステージで共有されているため、環境に対して通常の [chatops プロセス](/handbook/support/workflows/chatops/#feature-flags))に従ってフィーチャーフラグを有効にすると、環境のメインとカナリアの両方のステージで変更されます。
 
 最もよく使用される環境の例は以下のとおりです
 
 ステージングと staging-canary のフィーチャーフラグ:
 
-* 有効化: `/chatops run feature set feature_flag_name true --staging`
-* 無効化: `/chatops run feature set feature_flag_name false --staging`
+* 有効化: `/chatops gitlab run feature set feature_flag_name true --staging`
+* 無効化: `/chatops gitlab run feature set feature_flag_name false --staging`
 
 本番と production-canary のフィーチャーフラグ:
 
-* 有効化: `/chatops run feature set feature_flag_name true`
-* 無効化: `/chatops run feature set feature_flag_name false`
+* 有効化: `/chatops gitlab run feature set feature_flag_name true`
+* 無効化: `/chatops gitlab run feature set feature_flag_name false`
 
 ### カナリアステージへのコンソールアクセスを取得するには
 
@@ -113,11 +113,11 @@ Infrastructure 部門のチームは、必要と判断された場合に環境�
 環境のカナリアを無効化する chatops コマンドは以下のとおりです
 
 ```markdown
-## production-canary の無効化
-/chatops run canary --disable --production
+## Disable production-canary
+/chatops gitlab run canary --disable --production
 
-## staging-canary の無効化
-/chatops run canary --disable
+## Disable staging-canary
+/chatops gitlab run canary --disable
 ```
 
 #### 環境のカナリアステージの再有効化
@@ -125,9 +125,9 @@ Infrastructure 部門のチームは、必要と判断された場合に環境�
 環境のカナリアを再有効化する chatops コマンドは以下のとおりです
 
 ```markdown
-## production-canary の有効化
-/chatops run canary --enable --production
+## Disable production-canary
+/chatops gitlab run canary --enable --production
 
-## staging-canary の有効化
-/chatops run canary --enable
+## Disable staging-canary
+/chatops gitlab run canary --enable
 ```

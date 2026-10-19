@@ -1,11 +1,11 @@
 ---
 title: "シークレットプッシュ保護 トラブルシューティング"
 upstream_path: /handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-troubleshooting/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T08:15:00+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:19:40Z"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-10-15T14:01:05Z"
 ---
 
 ### このランブックをいつ使用しますか？
@@ -33,7 +33,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 **GitLab.com 全体で機能を無効化する**には、2 つの方法があります。
 
-最初の方法（最も迅速な可能性が高い）は、ChatOps 経由で機能を無効化することです。次のコマンドを使用してください：`/chatops run feature set pre_receive_secret_detection_push_check false`
+最初の方法（最も迅速な可能性が高い）は、ChatOps 経由で機能を無効化することです。次のコマンドを使用してください：`/chatops gitlab run feature set pre_receive_secret_detection_push_check false`
 
 2 番目の方法は、[ドキュメントに記載されているように](https://docs.gitlab.com/ee/user/application_security/secret_detection/secret_push_protection/index.html#enable-secret-push-protection) pre-receive シークレット検出を無効化することです。管理者アクセスが必要なため、変更アクセスリクエスト（[本番環境の例](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/17907)）が必要です。
 
@@ -58,15 +58,17 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ステータスの確認：
 
-`/chatops run feature get pre_receive_secret_detection_push_check`
+`/chatops gitlab run feature get pre_receive_secret_detection_push_check`
 
 プロジェクトに対して有効化：
 
-`/chatops run feature set --project=the-namespace/of-the-project pre_receive_secret_detection_push_check true`
+`/chatops gitlab run feature set --project=the-namespace/of-the-project
+pre_receive_secret_detection_push_check true`
 
 プロジェクトに対して無効化：
 
-`/chatops run feature set --project=the-namespace/of-the-project pre_receive_secret_detection_push_check false`
+`/chatops gitlab run feature set --project=the-namespace/of-the-project
+pre_receive_secret_detection_push_check false`
 
 ### `pre_receive_secret_detection_beta_release` フラグ
 
@@ -74,15 +76,16 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 `pre_receive_secret_detection_beta_release` フィーチャーフラグのステータス確認：
 
-`/chatops run feature get pre_receive_secret_detection_beta_release`
+`/chatops gitlab run feature get pre_receive_secret_detection_beta_release`
 
 フィーチャーフラグを有効化：
 
-`/chatops run feature set pre_receive_secret_detection_beta_release true`
+`/chatops gitlab run feature set pre_receive_secret_detection_beta_release true`
 
 フィーチャーフラグを無効化：
 
-`/chatops run feature set pre_receive_secret_detection_beta_release false`
+`/chatops gitlab run feature set pre_receive_secret_detection_beta_release
+false`
 
 ## ブロックされたプッシュの解決とスキップ
 
@@ -96,7 +99,7 @@ GitLab.com のログイベントはすべて[こちら](https://log.gprd.gitlab.
 
 ## SDS を使用したモノリスの負荷削減
 
-シークレット検出サービス（SDS）は、負荷が懸念される場合にモノリスからのシークレットスキャンをオフロードするために、GitLab.com でオプションとして有効化できます。これは [`use_secret_detection_service` 運用フィーチャーフラグ](https://docs.gitlab.com/administration/feature_flags/list/#eeonlyproduct)で制御されます。
+Secret Detection Service (SDS)は、負荷が懸念される場合にモノリスからのシークレットスキャンをオフロードするために、GitLab.com でオプションとして有効化できます。これは [`use_secret_detection_service` 運用フィーチャーフラグ](https://docs.gitlab.com/administration/feature_flags/list/#eeonlyproduct)で制御されます。
 
 ### 動作の仕組み
 
@@ -107,16 +110,16 @@ GitLab.com のログイベントはすべて[こちら](https://log.gprd.gitlab.
 
 GitLab.com でシークレットプッシュ保護に SDS を有効化するには、ChatOps を使用します：
 
-`/chatops run feature set use_secret_detection_service true`
+`/chatops gitlab run feature set use_secret_detection_service true`
 
 ### SDS の無効化
 
 SDS を無効化してモノリスに組み込まれた gem の使用に戻すには：
 
-`/chatops run feature set use_secret_detection_service false`
+`/chatops gitlab run feature set use_secret_detection_service false`
 
 ### ステータスの確認
 
 フラグの現在のステータスを確認するには：
 
-`/chatops run feature get use_secret_detection_service`
+`/chatops gitlab run feature get use_secret_detection_service`
