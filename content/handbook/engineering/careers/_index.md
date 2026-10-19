@@ -100,14 +100,14 @@ GitLab Engineering キャリアトラックは、個人がコントリビュー�
 
 | 現在のレベル | 希望するレベル | 以前のマネジメント経験（3 ヶ月以上） | 暫定期間の適用 |
 |--------------------|----------------|--------------------------------------------|-------------------------------|
-| Senior             | Manager        | No                                         | Yes                           |
-|                    |                | Yes                                        | Yes                           |
-| Staff              | Manager        | No                                         | Yes                           |
-|                    |                | Yes                                        | No                            |
-| Manager            | Senior Manager | No (managing managers)                     | Yes                           |
-|                    |                | Yes (managing managers)                    | No                            |
-| Manager/Sr Manager | Director       | No (managing managers)                     | Yes                           |
-|                    |                | Yes (managing managers)                    | No                            |
+| Senior             | Manager        | なし                                         | あり                           |
+|                    |                | あり                                        | あり                           |
+| Staff              | Manager        | なし                                         | あり                           |
+|                    |                | あり                                        | なし                            |
+| Manager            | Senior Manager | なし（マネージャーの管理経験）                     | あり                           |
+|                    |                | あり（マネージャーの管理経験）                    | なし                            |
+| Manager/Sr Manager | Director       | なし（マネージャーの管理経験）                     | あり                           |
+|                    |                | あり（マネージャーの管理経験）                    | なし                            |
 
 *`previous management experience`は前の組織でのマネジメント経験、または GitLab でのマネジメント経験を指します。採用マネージャーが評価するように、Acting ロールのスコープと影響が想定される Interim 期間と同程度であった場合、GitLab での[「Acting」](/handbook/people-group/promotions-transfers/#acting)ロールのマネジメント経験も 3 ヶ月の閾値に向けてカウントできます。*
 
