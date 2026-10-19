@@ -1,16 +1,16 @@
 ---
 title: Plan:Planner Intelligence エンジニアリングチーム
 upstream_path: /handbook/engineering/devops/plan/planner-intelligence/
-upstream_sha: "48abec5939783dec7dd722f4427e0eba53023f6f"
-translated_at: "2026-10-09T21:11:50.063787+00:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+translated_at: "2026-10-19T21:04:57+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-28T11:04:43+01:00"
+lastmod: "2026-10-19T15:33:10+02:00"
 ---
 
 ## Plan:Planner Intelligence チーム
 
-Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/handbook/product/categories/#planner-intelligence-group)を開発しています:
+Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/handbook/product/categories/#planner-intelligence-group)を開発しています：
 
 - Wiki
 - GitLab Pages
@@ -25,7 +25,7 @@ Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/hand
 
 ### 安定したカウンターパート
 
-{{% engineering/stable-counterparts manager-role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" role="Plan:Planner Intelligence|Product Manager(.*)Plan Stage|Security(.*)Plan|Engineering(.*)Plan$|Principal(.*)Plan$|Group(.*)Plan" %}}
+{{% engineering/stable-counterparts manager-role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" role="Plan:Planner Intelligence|Product Manager(.*)Plan Stage|Security(.*), Plan|Engineering(.*)Plan$|Principal(.*)Plan$|Group(.*)Plan" %}}
 
 ### 採用チャート
 
@@ -37,7 +37,7 @@ Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/hand
 
 [ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)には今後のリリース作業が表示されます。~"workflow::ready for development" 列は優先度順に並んでいます。
 
-Engineering Manager はマイルストーンの開始時に以下のラベルを追加します:
+Engineering Manager はマイルストーンの開始時に以下のラベルを追加します：
 
 | ラベル | 意味 |
 | ---   | ---     |
@@ -62,10 +62,10 @@ PM と EM はチームのキャパシティの最大 75% に ~Deliverable Issue 
 
 #### リファインメント
 
-Engineering Manager は毎週のチームミーティングで `~"workflow::refinement"` の Issue をレビューします。
+Engineering Manager は毎回のチームミーティングで `~"workflow::refinement"` の Issue をレビューします。
 [最高優先度](#priority-labels)の Issue は個々のエンジニアにアサインされ、そのエンジニアが Issue を `~workflow::ready for development` に移動させる責任を持ちます。
 
-エンジニアは以下のテンプレートを Issue の説明に追加できます:
+エンジニアは以下のテンプレートを Issue の説明に追加できます：
 
 ```markdown
 ### Implementation plan
@@ -119,9 +119,9 @@ Links to previous examples. Discussions on prior art. Notice examples of the sim
 
 #### ボードウォーク（週次）
 
-チームメンバーは週に 1 回、[ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)を歩く集まりを行います。25 分がこのシンクコールに割り当てられていますが、それよりはるかに早く完了することもあります。EM が DRI であり、PM を除いて出席はオプションです。録画されて [#g_planner-intelligence Slack チャンネル](https://app.slack.com/client/T02592416/C04R571QF5E)で共有されます。セキュリティや他の機密 Issue が議論されない場合のみ、録画は公開されます。[アジェンダ](https://docs.google.com/document/d/1SZrFiipmH5GX5CYL-nOuc8NNqSs-AXCvHOzajwy06vk/edit?usp=sharing)は社内でアクセス可能であり、すべてのチームメンバーがアップデートと質問を追加することを推奨されます。
+チームメンバーは週に 1 回集まり、[ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)を順に確認します。25 分がこのシンクコールに割り当てられていますが、それよりはるかに早く完了することもあります。EM が DRI であり、PM を除いて出席はオプションです。録画されて [#g_planner-intelligence Slack チャンネル](https://app.slack.com/client/T02592416/C04R571QF5E)で共有されます。セキュリティやその他の機密事項が議論されない場合のみ、録画は公開されます。[アジェンダ](https://docs.google.com/document/d/1SZrFiipmH5GX5CYL-nOuc8NNqSs-AXCvHOzajwy06vk/edit?usp=sharing)は社内でアクセス可能であり、すべてのチームメンバーがアップデートと質問を追加することを推奨されます。
 
-このミーティングの目的は:
+このミーティングの目的は：
 
 - 進行中の作業の状況を更新する
 - ブロッカーとリスクを特定する
@@ -134,7 +134,7 @@ DRI はこのミーティングを待つのではなく、[ワークフローラ
 
 プランニングミーティングはマイルストーン開始前に月に 1 回開催されます。Product Manager がスケジュールの DRI です。
 
-エンジニアの出席はオプションですが、参加は必須です。ミーティングにはアジェンダがあり、録画されます。以下のどれかまたはすべてが含まれる場合があります:
+エンジニアの出席はオプションですが、参加は必須です。ミーティングにはアジェンダがあり、録画されます。以下のどれかまたはすべてが含まれる場合があります：
 
 - 優先事項と期待値の設定。
 - タスクの見積もり。
@@ -149,7 +149,7 @@ DRI はこのミーティングを待つのではなく、[ワークフローラ
 チームメンバーは大きな Issue や新機能のためのリファインメントシンクミーティングを提案することを推奨されています。
 目標は、問題に対するさまざまな視点を共有し、知識を共有しながら懸念点と未知の事項を探ることです。
 
-リファインメントミーティングのアジェンダには以下のようなトピックが含まれる場合があります:
+リファインメントミーティングのアジェンダには以下のようなトピックが含まれる場合があります：
 
 - 製品要件
 - 技術的な課題
@@ -160,11 +160,11 @@ DRI はこのミーティングを待つのではなく、[ワークフローラ
 
 #### 非同期ファースト
 
-ほとんどのプランニングは非同期で行われます。これをより効率的にするために、いくつかのツールとプロセスが観察されています。
+ほとんどのプランニングは非同期で行われます。これをより効率的にするために、いくつかのツールとプロセスを取り入れています。
 
 Issue には 1 つのマイルストーンしか添付できないため、`~"Next Up"` ラベルを使って、マイルストーンがあるかどうかに関係なく、今後のマイルストーンの項目をマークします。PM と EM はプランニングの開始前にすべての Issue からこのラベルを削除し、その後、プランニング中に候補となる Issue と現在のマイルストーンから持ち越す見込みの Issue に追加してください。
 
-このラベルを使用することで、今後のマイルストーンを簡単に分析できます。[プランニングボード](https://gitlab.com/groups/gitlab-org/-/boards/7109724)は、現在のマイルストーンではなくこのラベルにスコープされているビルドボードを模倣しています。以下のために使用します:
+このラベルを使用することで、今後のマイルストーンを簡単に分析できます。[プランニングボード](https://gitlab.com/groups/gitlab-org/-/boards/7109724)は、現在のマイルストーンではなくこのラベルにスコープされているビルドボードを模倣しています。以下のために使用します：
 
 - 提案されたすべての Issue の現在のワークフロー状態を表示する。
 - 各リストのウェイト値を合計してキャパシティを計画する。
@@ -193,7 +193,7 @@ Issue の適切なラベル付けは、チームができる作業とやって�
 しかし、Issue が `~"workflow::in dev"`、`~"workflow::in review"` または `~"workflow::verification"` で 1 週間以上費やす場合、DRI は
 ["Knowledge - async update" コメントテンプレート](https://gitlab.com/groups/gitlab-org/-/comment_templates/1000436)を使って Issue に非同期更新を残します。
 
-非同期更新が必要な Issue を追跡するには、以下の GLQL クエリを使用できます:
+非同期更新が必要な Issue を追跡するには、以下の GLQL クエリを使用できます：
 
 ````markdown
 ```glql
@@ -212,7 +212,7 @@ group = "gitlab-org" and assignee = currentUser() and label in ("workflow::in de
 `~Knowledge::P1/P2/P3` ラベルを使用して、`~workflow::*` ステップとマイルストーン内の Issue の優先度を示します。
 
 - Product Manager がこれらのラベルの DRI ですが、チームの全員がアサイン/調整できます。
-- マイルストーンの開始前に、PM と EM はそのマイルストーンに含まれるすべての Issue の優先度を確認します。期待値は以下の通りです:
+- マイルストーンの開始前に、PM と EM はそのマイルストーンに含まれるすべての Issue の優先度を確認します。期待値は以下の通りです：
       - Issue の 40% が `~Knowledge::P1`
       - Issue の 30% が `~Knowledge::P2`
       - Issue の 30% が `~Knowledge::P3` で、これらの Issue は `~Deliverable` にできません
@@ -224,7 +224,7 @@ group = "gitlab-org" and assignee = currentUser() and label in ("workflow::in de
 
 ### 他のチームとのコラボレーション
 
-手戻りを避けるため、以下のドメインで作業する際は早期に他のチームに働きかけます:
+手戻りを避けるため、以下のドメインで作業する際は早期に他のチームに働きかけます：
 
 | チーム | ドメインの重複 |
 | ---  | ---    |

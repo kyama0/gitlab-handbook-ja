@@ -4,22 +4,23 @@ description: >-
   Create ステージは、Code Review、Remote Development、Source Code を含む
   チームグループです。
 upstream_path: /handbook/engineering/devops/create/
-upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
-translated_at: "2026-10-09T21:12:45+00:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+translated_at: "2026-10-19T21:04:57+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-05T12:43:57+02:00"
+lastmod: "2026-10-09T16:27:20-04:00"
 ---
 
 ## こんにちは
 
-[私たちは Create ステージ](/handbook/engineering/devops/create/engineering-managers/)であり、DevOps 部門内のチームグループです。私たちは[GitLab 製品内](/handbook/product/categories/#create-stage)の 3 つの領域で構成されています。
+[私たちは Create ステージ](/handbook/engineering/devops/create/engineering-managers/)であり、DevOps 部門内のチームグループです。私たちは [GitLab 製品内](/handbook/product/categories/#create-stage)の 3 つの領域で構成されています。
 
 | チーム | Engineering Managers |
 | ---- | -------------------- |
 | [Create ステージ](/handbook/engineering/devops/create/) | [André Luís](https://gitlab.com/andr3) |
 | [Create:Code Review](/handbook/engineering/devops/create/code-review/) | [François Rosé](https://gitlab.com/francoisrose) |
-| [Create:Source Code Triage and Investigation](/handbook/engineering/devops/create/source-code/) | [Daniel Lanthier](https://gitlab.com/dclannn) |
+| [Create:Agentic Preview](/handbook/engineering/devops/create/source-code/agentic-preview/) | [Daniel Lanthier](https://gitlab.com/dclannn) |
+| [Create:Change Record](/handbook/engineering/devops/create/source-code/change-record/) | [Daniel Lanthier](https://gitlab.com/dclannn) |
 | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) | [Armin Pašalić](https://gitlab.com/armin.pasalic) |
 | [Create:Source Code Hardening and Modernization](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)（一時的、2027-09-10 まで） | [Vladimir Shushlin](https://gitlab.com/vshushlin) |
 | [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](https://gitlab.com/thiagocsf) (フルスタック) — レポート先 {{< manager-by-report-name "Thiago Figueiró" >}} |
@@ -33,13 +34,13 @@ Create ステージは、効率とコラボレーションを改善すること�
 
 ### 誰にサービスを提供しますか？
 
-私たちは以下のためのツールを構築します:
+私たちは以下のためのツールを構築します：
 
 - ソフトウェア開発者
 - DevOps エンジニア
 - 開発チームリード
-- プロダクトマネージャー
-- プロダクトデザイナー
+- Product Managers
+- Product Designers
 
 ### どのようにサービスを提供しますか？
 
@@ -47,7 +48,7 @@ Create ステージは、効率とコラボレーションを改善すること�
 
 ## ビジョン
 
-次の領域は、年内の私たちの方向性として定義されています:
+次の領域は、今年の私たちの方向性として定義されています：
 
 - [高速で信頼性が高く、簡単に管理できる Git ストレージ](https://about.gitlab.com/direction/create/#fast-reliable-and-easily-managed-git-storage)
 - [バイナリファイルワークフロー](https://about.gitlab.com/direction/create/#binary-file-workflows)
@@ -62,7 +63,7 @@ Create ステージは、効率とコラボレーションを改善すること�
 
 **スキルセットの成長**は、GitLab 製品へのより洞察に富んだコントリビューションにつながります。専門知識が成長するにつれて、製品と企業への影響も成長します。GitLab では、チームメンバーのプロフェッショナル開発に投資することが重要です。
 
-もっと学びたい分野がある場合は、マネージャーに連絡して、好みの分野で成長できる環境を提供してもらってください。推奨されるリソースは以下のとおりです:
+もっと学びたい分野がある場合は、マネージャーに連絡して、好みの分野で成長できる環境を提供してもらってください。推奨されるリソースは以下のとおりです：
 
 **Engineering Manager**
 
@@ -105,20 +106,20 @@ Product Manager と Engineering Manager 間の週次コールは、各グルー�
 
 #### 計画の詳細化 {#planning-breakdown}
 
-`Planning Breakdown`ステージで回答する主な質問は次のとおりです:
+`Planning Breakdown` ステージで回答する主な質問は次のとおりです：
 
 - 要求の意図を理解するのに十分なほど要件が明確か？
-- 達成する作業の境界を知っているか？（例: 別のチームが維持するコード）
+- 達成する作業の境界を知っているか？（例： 別のチームが維持するコード）
 
 どちらかの答えが「いいえ」の場合、DRI の要求の理解を向上させるためにディスカッションが継続されます。
 
-エンジニアリング出力:
+エンジニアリング出力：
 
 - 未解決の質問またはディスカッションを識別し解決する。
-- Issue が他のチームに関連する場合に他のチームに関与する（例: 共有コードに触れる、API に影響する、ロードマップに影響する）。
+- Issue が他のチームに関連する場合に他のチームに関与する（例： 共有コードに触れる、API に影響する、ロードマップに影響する）。
 - 説明で他のチームへの依存関係を説明し、EM、PM、安定したカウンターパートに関与し、早期コラボレーションを促進する。
-- エピックの場合: エピック内に下書きの実装 Issue を作成する。
-- すべての Issue に`Refinement`ステータスを適用する。
+- エピックの場合： エピック内に下書きの実装 Issue を作成する。
+- すべての Issue に `Refinement` ステータスを適用する。
 
 #### 精緻化 {#refinement}
 
@@ -126,12 +127,12 @@ Issue を精緻化するように割り当てられたエンジニアは、Issue
 
 ##### 精緻化ガイドライン
 
-1. Issue の完全性を確認します:
+1. Issue の完全性を確認します：
    - 該当する場合、UI を含む必要なデザインがある。
    - 機能が明確に明示されている。
    - 技術的な詳細がアウトラインされており、ディスカッションが解決されている。
    - 依存関係が明示されている。
-1. Issue が完全でない場合:
+1. Issue が完全でない場合：
    - Issue を完成させるのに役立つ関連する人々をタグ付けし、必要なものをアウトラインする。
    - EM と PM をタグ付けし、ブロッカーを認識させる。
 1. Issue が完全に理解されていることを確認します。
@@ -188,7 +189,7 @@ infradev Issue、バグ、エラーバジェット、インシデント、また
 
 **バグバーンダウンサイクル**は、システムヘルスを回復し品質基準を満たすために、チームが既存のバグの解決を優先する集中的でフォーカスされた期間です。チームは、バグの負債が重要なしきい値に達したときにこのサイクルに入ります。
 
-### 終了基準: バグバーンダウンサイクルから離れる
+### 終了基準： バグバーンダウンサイクルから離れる
 
 #### 終了するための要件（すべての重大度レベルに適用）
 
@@ -229,7 +230,7 @@ infradev Issue、バグ、エラーバジェット、インシデント、また
 
 ## チーム間の働き方
 
-Create ステージのチームは一緒に仕事をし、一緒に遊びます。私たちは互いに依存し、機能をサポートし補完することができて幸運です。クロスチームコラボレーションの例:
+Create ステージのチームは一緒に仕事をし、一緒に遊びます。私たちは互いに依存し、機能をサポートし補完することができて幸運です。クロスチームコラボレーションの例：
 
 - Source Code チームと Gitaly チームはしばしば Issue で一緒にコラボレートします
 - Gitaly チームメンバーは Source Code チームメンバーに Go プログラミング言語のメンタリングを行っています
@@ -256,7 +257,7 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
 
 ## 生産性を追跡する方法
 
-タレントアセスメント中、Engineering Manager はチームメンバーのパフォーマンスを評価するために包括的なアプローチを取ります。彼らは、各[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)の期待に対する公平な評価を確保するために、私たちのエコシステム全体にわたる多様な相互接続されたメトリクスのセットを検討します。これらのメトリクスには以下が含まれます:
+タレントアセスメント中、Engineering Manager はチームメンバーのパフォーマンスを評価するために包括的なアプローチを取ります。各[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)の期待に対する公平な評価を確保するために、私たちのエコシステム全体にわたる多様な相互接続されたメトリクスのセットを検討します。これらのメトリクスには以下が含まれます：
 
 - マージされたマージリクエスト
 - 実施されたコードレビュー
@@ -272,43 +273,43 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
 
 ### どのメトリクスに焦点を当てるか？
 
-現在、次のメトリクスについて月次の期待を設定しています:
+現在、次のメトリクスについて月次の期待を設定しています：
 
 - **マージリクエスト率**:
-  - **グループ**に適用する場合: 分子はプロジェクトのセットにマージされたマージリクエストの数（[以下のメモ](#metrics_notes)を参照）。分母はグループの人数。
-  - **個人**に適用する場合: プロジェクトのセットにマージされたマージリクエストの数（[以下のメモ](#metrics_notes)を参照）。
+  - **グループ**に適用する場合： 分子はプロジェクトのセットにマージされたマージリクエストの数（[以下のメモ](#metrics_notes)を参照）。分母はグループの人数。
+  - **個人**に適用する場合： プロジェクトのセットにマージされたマージリクエストの数（[以下のメモ](#metrics_notes)を参照）。
 - **レビュー率**:
-  - **グループ**に適用する場合: 分子は、指定された期間（通常は月）にプロジェクトのセットにマージされたマージリクエストに提供されたコードレビューの数（[以下のメモ](#metrics_notes)を参照）。分母はグループの人数。
-  - **個人**に適用する場合: 指定された期間（通常は月）にプロジェクトのセット（[以下のメモ](#metrics_notes)を参照）にマージされたマージリクエストに提供されたコードレビューの数。
+  - **グループ**に適用する場合： 分子は、指定された期間（通常は月）にプロジェクトのセットにマージされたマージリクエストに提供されたコードレビューの数（[以下のメモ](#metrics_notes)を参照）。分母はグループの人数。
+  - **個人**に適用する場合： 指定された期間（通常は月）にプロジェクトのセット（[以下のメモ](#metrics_notes)を参照）にマージされたマージリクエストに提供されたコードレビューの数。
 
 ### マネージャーがこれらのメトリクスを使用する方法
 
-マネージャーは以下を行う必要があります:
+マネージャーは以下を行う必要があります：
 
 - MR とレビュー率を診断シグナルとして扱い、ハードな生産性目標やノルマとして扱わない。持続的な逸脱は、自動的な判断ではなく、会話のトリガーとなるべきです。
-- メトリクスを常に文脈で解釈する、以下を含む:
+- メトリクスを常に文脈で解釈する、以下を含む：
   - 作業のタイプ（複雑な機能、リファクタリング、実験、インフラ作業、技術的負債、インシデント）;
   - 非コーディング責任（メンタリング、インタビュー、メンテナーシップ、ヘルプ要求 Issue、クロスチーム作業）;
   - 一時的な要因（オンボーディング、PTO、インシデント、役割の変更）。
-- 次のことにつながるコーチングまたはインセンティブを避ける:
+- 次のことにつながるコーチングまたはインセンティブを避ける：
   - MR 数を増やすためだけに作業を不自然に分割する;
   - レビュー数を増やすためだけに表面的または急いだレビューをする;
-  - 複雑で目立たない作業を優先しない（例: マイグレーション、信頼性、他者を可能にすること）。
-- エンジニア自身のデータを定期的に共有してレビューし、それが何を意味するか、何を意味しないかを説明し、それが彼らの作業をどのように反映しているかについての彼らの視点を招待する。
-- メトリクスの解釈方法に重要な影響を与える場合は、チーム固有のコンテキスト（例: 重いインシデント負荷、レガシーオーナーシップ、または大規模なリファクタリング）をチームのハンドブックページに積極的に文書化する。
+  - 複雑で目立たない作業を優先しない（例： マイグレーション、信頼性、他者を可能にすること）。
+- エンジニア自身のデータを定期的に共有してレビューし、それが何を意味するか、何を意味しないかを説明し、それが本人の作業をどのように反映しているかについて、本人の見解を聞く。
+- メトリクスの解釈方法に重要な影響を与える場合は、チーム固有のコンテキスト（例： 重いインシデント負荷、レガシーオーナーシップ、または大規模なリファクタリング）をチームのハンドブックページに積極的に文書化する。
 - パフォーマンス決定のための唯一の信頼できる情報源として企業全体の[タレントアセスメント](/handbook/people-group/talent-assessment/)ガイダンスを使用し、MR とレビュー関連のデータは決定的な要因ではなく、複数の入力の 1 つとして扱う。
 
 #### ダッシュボード
 
-- マージリクエスト率: [tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/MTTMAllMRs/MTTMDashboard)
-- レビュー率: [tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/AverageReviewTime/ReviewStatsbyUser?:iid=4)
+- マージリクエスト率： [tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/MTTMAllMRs/MTTMDashboard)
+- レビュー率： [tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/AverageReviewTime/ReviewStatsbyUser?:iid=4)
 
-注意: **Tableau へのアクセスがない場合**、直接のマネージャーに連絡して、希望の期間のスクリーンショットを提供してもらうか、該当する場合は永続的なアクセスを提供するためのアクセス要求を開いてもらいます。
+注意： **Tableau へのアクセスがない場合**、直接のマネージャーに連絡して、希望の期間のスクリーンショットを提供してもらうか、該当する場合は永続的なアクセスを提供するためのアクセス要求を開いてもらいます。
 
-#### メモ: {#metrics_notes}
+#### メモ： {#metrics_notes}
 
 1. これらのメトリクスには、製品に影響するすべての MR が含まれます。データセットに含まれる特定のプロジェクトは、[このシードファイル](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/seeds/seed_engineering/projects_part_of_product.csv?ref_type=heads)にリストされています。
-1. このプロセスは、メトリクスセットを拡張し、チームのコントリビューションと進化する役割の期待との整合性を確保するために洗練することで、時間とともにイテレートします。変更はすべてのチームメンバーに明確に伝えられます。
+1. 時間をかけてこのプロセスをイテレーションし、メトリクスの範囲を拡張して改善することで、チームの貢献と変化する役割の期待に合うようにします。変更はすべてのチームメンバーに明確に伝えられます。
 
 ### 各ジョブレベルのベースライン目標
 
@@ -319,19 +320,19 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
 | MR 率     | 5         | 5            | 8      | 13    |
 | レビュー率 | 3         | 10           | 16     | 16    |
 
-注意: 数値は Source Code Backend、Source Code Frontend、Code Review Backend、Code Review Frontend、Code Creation、Editor Extensions、Remote Development のチームメンバーの過去データを活用して、2024 年 12 月頃に最終更新されました。
+注意： 数値は Source Code Backend、Source Code Frontend、Code Review Backend、Code Review Frontend、Code Creation、Editor Extensions、Remote Development のチームメンバーの過去データを活用して、2024 年 12 月頃に最終更新されました。
 
-これらのベースラインは、Engineering Manager が、作業、責任、ローカルチームの条件のコンテキストでチームメンバーと議論できるトレンドと異常値を浮上させるのに役立ち、常により広範なシグナルセット（例: インシデント対応、アーキテクチャ作業、メンタリング、インタビュー、ヘルプ要求、クロスチームコラボレーション）と組み合わせて使用されます。
+これらのベースラインは、Engineering Manager が、作業、責任、ローカルチームの条件のコンテキストでチームメンバーと議論できるトレンドと異常値を浮上させるのに役立ち、常により広範なシグナルセット（例： インシデント対応、アーキテクチャ作業、メンタリング、インタビュー、ヘルプ要求、クロスチームコラボレーション）と組み合わせて使用されます。
 
 私たちの CREDIT 価値観に沿って、バイアスを減らし、倒錯したインセンティブ（MR 分割や表面的なレビューなど）を回避し、顧客のための意味のある成果と持続可能な働き方に焦点を維持するために、これらのベースラインを定期的にレビューおよび調整します。
 
 ### 目標は何を意味するか？
 
-経験則として、明確な文脈的理由（例: 延長されたインシデント対応、主要なアーキテクチャ作業、重要なメンタリングまたはリーダーシップ責任、または長期休暇）がない限り、ほとんどのチームメンバーが**特定の年の 12 か月のうち少なくとも 6 か月**、これらのベースラインに近いまたは上回ることを期待します。
+経験則として、明確な文脈的理由（例： 延長されたインシデント対応、主要なアーキテクチャ作業、重要なメンタリングまたはリーダーシップ責任、または長期休暇）がない限り、ほとんどのチームメンバーが**特定の年の 12 か月のうち少なくとも 6 か月**、これらのベースラインに近いまたは上回ることを期待します。
 
 これらの期待は、会話とサポートを促進するためのガイドラインであり、厳密なノルマや自動的なパフォーマンス結果ではありません。チームまたは個人がどのように広く動作しているかを評価するためのキャリブレーション支援として使用できますが、評価は**常に完全なタレントアセスメントフレームワークと組み合わせて**行われます。
 
-**個人コントリビューターの場合、** これらの目標は、彼らが従事している役割とシニアリティの期待に合わせたヘルスステータスシグナルを提供できます。
+**個人コントリビューターの場合、** これらの目標は、本人が従事している役割とシニアリティの期待に合わせたヘルスステータスシグナルを提供できます。
 
 **Engineering Manager の場合、** これらの目標は、チームメンバーをよりよくサポートするために、チームプロセス、計画、または個々のケースをレビューするシグナルを提供できます。
 

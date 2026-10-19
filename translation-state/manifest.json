@@ -5458,11 +5458,11 @@
     },
     "content/handbook/engineering/ai/_index.md": {
       "path": "content/handbook/engineering/ai/_index.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:08:10+09:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T12:44:48+02:00",
+      "translated_at": "2026-10-19T21:01:48+00:00",
       "model": "codex",
-      "input_hash": "d5da8099df5e476baa11c80705352c56b361d7b8dbcc988488c82e49af2d668a",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "322d4695be2632ce53c54845af077fc2e50ed27213b0d667e3a7db2f4a81e4fc"
     },
     "content/handbook/engineering/ai/agent-foundations/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/_index.md",
@@ -11202,11 +11202,11 @@
     },
     "content/handbook/engineering/devops/create/_index.md": {
       "path": "content/handbook/engineering/devops/create/_index.md",
-      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
-      "translated_at": "2026-10-09T21:12:45+00:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-09T16:27:20-04:00",
+      "translated_at": "2026-10-19T21:04:57+00:00",
       "model": "codex",
-      "input_hash": "7e17b49c1270806a8f69906a31e0983855af459cff58f218ce274c36dd510620",
-      "upstream_committed_at": "2026-10-05T12:43:57+02:00"
+      "input_hash": "93ca7816fb7ac57fc343567506057a0082a21de02019f42897e3f1bb2c786f8d"
     },
     "content/handbook/engineering/devops/create/code-review/_index.md": {
       "path": "content/handbook/engineering/devops/create/code-review/_index.md",
@@ -11266,11 +11266,11 @@
     },
     "content/handbook/engineering/devops/create/engineering-managers/_index.md": {
       "path": "content/handbook/engineering/devops/create/engineering-managers/_index.md",
-      "upstream_sha": "06f4e849c04bda6918ddb0bbe7ec9ea3f55eb5e9",
-      "translated_at": "2026-09-30T21:07:20+00:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T14:59:17+02:00",
+      "translated_at": "2026-10-19T21:04:57+00:00",
       "model": "codex",
-      "input_hash": "91afa9c9640fc5afeee478405665be54682fbe4f415b2ec89a1d87cda81ccf2f",
-      "upstream_committed_at": "2026-09-28T11:04:43+01:00"
+      "input_hash": "cdbb1bb38d71ec6074621e1059f39817a20d0ed2ad25b62668f2898e027fc427"
     },
     "content/handbook/engineering/devops/create/engineering-managers/books.md": {
       "path": "content/handbook/engineering/devops/create/engineering-managers/books.md",
@@ -11554,27 +11554,27 @@
     },
     "content/handbook/engineering/devops/plan/planner-intelligence.md": {
       "path": "content/handbook/engineering/devops/plan/planner-intelligence.md",
-      "upstream_sha": "48abec5939783dec7dd722f4427e0eba53023f6f",
-      "translated_at": "2026-10-09T21:11:50.063787+00:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T15:33:10+02:00",
+      "translated_at": "2026-10-19T21:04:57+00:00",
       "model": "codex",
-      "input_hash": "88df8a8cf97057d400943cc1580b099720b88c2f7c6ef98af6e794d1ec92475b",
-      "upstream_committed_at": "2026-09-28T11:04:43+01:00"
+      "input_hash": "eb84446e39aea7158dbccf6eee03af09c4eca8aecd1f6113873cbbfa123c8476"
     },
     "content/handbook/engineering/devops/plan/portfolio-planning/_index.md": {
       "path": "content/handbook/engineering/devops/plan/portfolio-planning/_index.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T07:00:16+09:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T15:33:10+02:00",
+      "translated_at": "2026-10-19T21:01:48+00:00",
       "model": "codex",
-      "input_hash": "32d45e608e32ca4233715f72b35f74550ae5200d5b21f9b1a0ef155553a1d269",
-      "upstream_committed_at": "2026-08-14T14:39:01+02:00"
+      "input_hash": "2fc880b9aa5f95360548c30ff1b0d03d2d4b1279655b8e01b4734a414d2a0161"
     },
     "content/handbook/engineering/devops/plan/portfolio-planning/how-we-work.md": {
       "path": "content/handbook/engineering/devops/plan/portfolio-planning/how-we-work.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T07:00:16+09:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T15:33:10+02:00",
+      "translated_at": "2026-10-19T21:04:57+00:00",
       "model": "codex",
-      "input_hash": "eb8d8066309615afcfebce6143ad7dc493e29320eecf4a91115b1453b9a4b485",
-      "upstream_committed_at": "2026-08-14T14:39:01+02:00"
+      "input_hash": "ab336ed354234895db8dddcb57fd7d21ab48e549ff1ea81e49ea27fab22c31d7"
     },
     "content/handbook/engineering/devops/plan/planning-views/project-example-boards.md": {
       "path": "content/handbook/engineering/devops/plan/planning-views/project-example-boards.md",
@@ -24178,11 +24178,11 @@
     },
     "content/handbook/engineering/devops/create/source-code/backend/index.md": {
       "path": "content/handbook/engineering/devops/create/source-code/backend/index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c50db99926b04e6d56acc220e9f0e200b47b758d185da36c8bc803d342c395c9",
-      "upstream_committed_at": "2026-05-29T14:02:52-04:00"
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T14:59:17+02:00",
+      "translated_at": "2026-10-19T21:04:57+00:00",
+      "model": "codex",
+      "input_hash": "8c6c5175f7058032142432d0e217c4ba0a2949ff5ac9c72d40f42701e551e318"
     },
     "content/handbook/engineering/devops/create/talent-assessments/index.md": {
       "path": "content/handbook/engineering/devops/create/talent-assessments/index.md",
@@ -32442,11 +32442,11 @@
     },
     "content/handbook/engineering/devops/plan/planning-views/_index.md": {
       "path": "content/handbook/engineering/devops/plan/planning-views/_index.md",
-      "upstream_sha": "2e7a8730e4bbae1125f2d28ea6f22b445742c723",
-      "translated_at": "2026-07-10T21:27:59+09:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T15:33:10+02:00",
+      "translated_at": "2026-10-19T21:01:48+00:00",
       "model": "codex",
-      "input_hash": "c14355f84af4e8372d2ffc9cbd453b0bd97abbb0bdc2875afa7221d9fe463032",
-      "upstream_committed_at": "2026-07-10T12:19:01+02:00"
+      "input_hash": "d166594a57077dd3b899a81ec63d3c0d542e6d83787f9c616cae27a7c9b98daa"
     },
     "content/handbook/upstream-studios/research-operations/_index.md": {
       "path": "content/handbook/upstream-studios/research-operations/_index.md",
@@ -33970,11 +33970,11 @@
     },
     "content/handbook/engineering/ai/ai-clients/_index.md": {
       "path": "content/handbook/engineering/ai/ai-clients/_index.md",
-      "upstream_sha": "4246c71d16beefada2a847b698b152ff280860c5",
-      "translated_at": "2026-09-11T21:09:10+00:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T12:44:48+02:00",
+      "translated_at": "2026-10-19T21:01:48+00:00",
       "model": "codex",
-      "input_hash": "55fbbd79a38b46eeaabb52430dc7ab9c86128ca9bcef55bde3f1bc0a078e5e79",
-      "upstream_committed_at": "2026-09-11T15:01:30+02:00"
+      "input_hash": "148a33558795887ed9dd5d18c8a7bc0040abc9ff08b32b7bed818a8f8b6a89cb"
     },
     "content/handbook/engineering/ai/ai-clients/duo-client-sdk/_index.md": {
       "path": "content/handbook/engineering/ai/ai-clients/duo-client-sdk/_index.md",
@@ -34826,11 +34826,11 @@
     },
     "content/handbook/engineering/ai/ai-clients/developer-clients/_index.md": {
       "path": "content/handbook/engineering/ai/ai-clients/developer-clients/_index.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T11:16:44+09:00",
+      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
+      "upstream_committed_at": "2026-10-19T12:44:48+02:00",
+      "translated_at": "2026-10-19T21:01:48+00:00",
       "model": "codex",
-      "input_hash": "9c8e769eadfd4a424d47412cad0e5e20e8505231a23053cbb995691f34948b51",
-      "upstream_committed_at": "2026-08-25T18:08:04+02:00"
+      "input_hash": "1f441c801152a798342daccb200c158266a840a81cce5c7143032e586ce26ccf"
     },
     "content/handbook/engineering/ai/ai-clients/developer-clients/duo-cli/_index.md": {
       "path": "content/handbook/engineering/ai/ai-clients/developer-clients/duo-cli/_index.md",

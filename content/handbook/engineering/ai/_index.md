@@ -1,9 +1,9 @@
 ---
 title: AI Engineering
 upstream_path: /handbook/engineering/ai/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-03T23:08:10+09:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+lastmod: "2026-10-19T12:44:48+02:00"
+translated_at: "2026-10-19T21:01:48+00:00"
 translator: codex
 stale: false
 ---
@@ -81,7 +81,7 @@ GitLab 独自の非同期な働き方、ハンドブックファーストの手�
 | [AI Coding](/handbook/engineering/ai/ai-coding/) | Code Suggestions、Duo Code Review、コード関連のスラッシュコマンド (/explain, /refactor, /tests, /fix)、Semantic Indexing、Duo Context Exclusion、Repository X-Ray  |
 | [AI Core Infra](/handbook/engineering/ai/ai-core-infra/) | アプリケーション（GitLab Chat、Code Suggestions、その他の AI 機能）に LLM を統合するための Abstraction Layer / AI Gateway |
 | [AI Core Infra](/handbook/engineering/ai/ai-core-infra/)（旧 Model Validation） | 機能別のカスタム評価機能、評価サポート、自動評価ツール |
-| [AI Clients: Developer Clients](/handbook/engineering/ai/ai-clients/developer-clients/) | VS Code 拡張機能、JetBrains プラグイン、Duo CLI |
+| [AI Clients: Developer Clients](/handbook/engineering/ai/ai-clients/developer-clients/) | VS Code 拡張機能、JetBrains プラグイン、Duo CLI、glab（GitLab CLI） |
 | [AI Clients: Duo Client SDK](/handbook/engineering/ai/ai-clients/duo-client-sdk/) | GitLab Language Server、およびすべてのエディター拡張機能にわたる AI 機能を支える共有クライアント SDK |
 | [AI Clients: Duo Chat](/handbook/engineering/ai/ai-clients/duo-chat/) | Web と IDE の各サーフェスにわたる Duo Chat（Web Chat、Chat Engine） |
 | [AI Model Services](/handbook/engineering/ai/ai-model-services/) | Model Selection（モデルのライフサイクル、選択エンジンと UI）/ Health & Connectivity（Duo Health Check、セットアップ、接続性）/ Gateway Services（Prompt Registry、イベント追跡、AIGW 請求） |
