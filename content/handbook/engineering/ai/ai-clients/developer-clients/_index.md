@@ -1,12 +1,12 @@
 ---
 title: Developer Clients グループ
-description: "Developer Clients グループは、VS Code および JetBrains IDE 向けのエディター拡張機能と Duo CLI を所有・保守し、GitLab のコア機能と AI 機能を開発者のワークフローに直接届けます。"
+description: "Developer Clients グループは、VS Code および JetBrains IDE 向けのエディター拡張機能、Duo CLI、および GitLab CLI（glab）を所有・保守し、GitLab のコア機能と AI 機能を開発者のワークフローに直接届けます。"
 aliases:
   - /handbook/engineering/ai/editor-extensions-multi-platform/
 upstream_path: /handbook/engineering/ai/ai-clients/developer-clients/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-lastmod: "2026-08-25T18:08:04+02:00"
-translated_at: "2026-09-04T11:16:44+09:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+lastmod: "2026-10-19T12:44:48+02:00"
+translated_at: "2026-10-19T21:01:48+00:00"
 translator: codex
 stale: false
 ---
@@ -49,6 +49,7 @@ stale: false
   - Duo CLI： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
   - VS Code 拡張機能： [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
   - JetBrains プラグイン： [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH)
+  - glab（GitLab CLI）： [#f_cli](https://gitlab.enterprise.slack.com/archives/C0380FL4K1R)
 - **私たちが管理するその他の Slack チャンネル：**
   - Visual Studio 拡張機能： [#f_visual_studio_extension](https://gitlab.enterprise.slack.com/archives/C0581SE363C)
   - Eclipse プラグイン： [#f_eclipse_plugin](https://gitlab.enterprise.slack.com/archives/C07MKHCFGHG)
@@ -68,6 +69,7 @@ stale: false
 | [Duo CLI](/handbook/engineering/ai/ai-clients/developer-clients/duo-cli/) | AI を活用したコマンドラインインターフェース | [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli) |
 | [VS Code](/handbook/engineering/ai/ai-clients/developer-clients/vscode/) | GitLab Workflow VS Code 拡張機能と Web IDE | [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL) |
 | [JetBrains](/handbook/engineering/ai/ai-clients/developer-clients/jetbrains/) | JetBrains IDE 向け GitLab プラグイン | [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH) |
+| [glab](/handbook/engineering/ai/ai-clients/developer-clients/glab/) | GitLab CLI (`glab`) | [#f_cli](https://gitlab.enterprise.slack.com/archives/C0380FL4K1R) |
 
 ---
 
@@ -89,6 +91,10 @@ stale: false
    1. [リポジトリ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/tree/main/packages/cli)
    2. [バックログ](https://gitlab.com/groups/gitlab-org/-/boards/9839597?epic_id=3743089)
    3. Slack チャンネル： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
+4. **GitLab CLI (glab)**
+   1. [リポジトリ](https://gitlab.com/gitlab-org/cli)
+   2. [ドキュメント](https://docs.gitlab.com/cli/)
+   3. Slack チャンネル： [#f_cli](https://gitlab.enterprise.slack.com/archives/C0380FL4K1R)
 
 ---
 
@@ -126,7 +132,7 @@ stale: false
 
 > このプロセスは意図的に最小限にしています。小さく始め、[フィードバックループ](#feedback-loop)に基づいてイテレーションします。
 
-概要は、2 つの成果物と 2 つの定例活動です:
+概要は、2 つの成果物と 2 つの定例活動です：
 
 | 成果物 | 使用時期 | 答える問い |
 |---|---|---|
@@ -154,16 +160,18 @@ stale: false
 | Duo CLI | [dc-duo-cli](https://milestone-planning-board-0c5b79.gitlab.io/?board=dc-duo-cli) | `category:duo cli` ラベル、または [gitlab-lsp](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp) リポジトリでタイトルに「cli」を含むもの |
 | VS Code | [dc-vs-code](https://milestone-planning-board-0c5b79.gitlab.io/?board=dc-vs-code) | `category:vs code` ラベル、または [gitlab-vscode-extension](https://gitlab.com/gitlab-org/gitlab-vscode-extension) リポジトリのもの |
 | JetBrains | [dc-jetbrains](https://milestone-planning-board-0c5b79.gitlab.io/?board=dc-jetbrains) | `category:jetbrains` ラベル、または [gitlab-jetbrains-plugin](https://gitlab.com/gitlab-org/editor-extensions/gitlab-jetbrains-plugin) リポジトリのもの |
+| glab | [dc-glab](https://milestone-planning-board-0c5b79.gitlab.io/?board=dc-glab) | `category:gitlab cli` ラベル、または [gitlab-org/cli](https://gitlab.com/gitlab-org/cli) リポジトリのもの |
 
 #### チームバックログ {#team-backlogs}
 
-各ファンクショナルチームにはライブのバックログ Wiki ページがあります。テーブルはページ読み込み時に自動更新され、**このマイルストーンで追加**、**次に優先**、**コミュニティからの上位リクエスト**、**バックログ全体**を網羅します:
+各ファンクショナルチームにはライブのバックログ Wiki ページがあります。テーブルはページ読み込み時に自動更新され、**このマイルストーンで追加**、**次に優先**、**コミュニティからの上位リクエスト**、**バックログ全体**を網羅します：
 
 - [Duo CLI バックログ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Developer-Clients:-Duo-CLI-Backlog)
 - [VS Code バックログ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Developer-Clients:-VS-Code-Backlog)
 - [JetBrains バックログ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Developer-Clients:-JetBrains-Backlog)
+- [glab バックログ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Developer-Clients:-glab-Backlog)
 
-> 💡 Issue がチームのバックログページに表示されるのは、チームのカテゴリーラベル（`category:duo cli`、`category:vs code`、`category:jetbrains`）が付いている場合だけです。各ページには、チームのリポジトリ内でラベルの付いていない Issue を表示する「missing category label」セクションがあり、ラベル付けの自動化は [meta#398](https://gitlab.com/gitlab-org/editor-extensions/meta/-/work_items/398) で追跡されています。
+> 💡 Issue がチームのバックログページに表示されるのは、チームのカテゴリーラベル（`category:duo cli`、`category:vs code`、`category:jetbrains`、`category:gitlab cli`）が付いている場合だけです。各ページには、チームのリポジトリ内でラベルの付いていない Issue を表示する「カテゴリラベルがない Issue」セクションがあり、ラベル付けの自動化は [meta#398](https://gitlab.com/gitlab-org/editor-extensions/meta/-/work_items/398) で追跡されています。
 
 #### 参加方法（チーム外のメンバー向け） {#how-to-participate-for-non-team-members}
 
@@ -185,7 +193,7 @@ stale: false
 
 積極的に取り組んでいる各 Issue に、[Dev Check-in (editor-extensions)](https://gitlab.com/groups/gitlab-org/editor-extensions/-/comment_templates) コメントテンプレートを使用してアップデートを投稿します。
 
-**注意: 非同期アップデートは毎週火曜日の EOD までに投稿してください**（休暇の場合はそれより前に投稿します）。
+**注意：非同期アップデートは毎週火曜日の EOD までに投稿してください**（休暇の場合はそれより前に投稿します）。
 
 アップデートは、ファンクショナルチームごとのセクションを持つ 1 つの週次 Developer Clients Issue に自動集約されます（[Issue の例](https://gitlab.com/gitlab-org/editor-extensions/meta/-/work_items/400)）。
 
@@ -202,7 +210,7 @@ stale: false
 
 ### Issue のウェイト {#issues-weight}
 
-ウェイトは、[フィボナッチ数列](https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating)（`1, 2, 3, 5`）を使用し、複雑さの大まかな見積もりとして[マイルストーンプランニング](#milestone-planning)中に割り当てます:
+ウェイトは、[フィボナッチ数列](https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating)（`1, 2, 3, 5`）を使用し、複雑さの大まかな見積もりとして[マイルストーンプランニング](#milestone-planning)中に割り当てます：
 
 | ウェイト | 大まかな工数 |
 |---|---|

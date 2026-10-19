@@ -1,9 +1,9 @@
 ---
 title: Plan:Planning Views エンジニアリングチーム
 upstream_path: /handbook/engineering/devops/plan/planning-views/
-upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
-lastmod: 2026-07-10T12:19:01+02:00
-translated_at: "2026-07-10T21:27:59+09:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+lastmod: "2026-10-19T15:33:10+02:00"
+translated_at: "2026-10-19T21:01:48+00:00"
 translator: codex
 stale: false
 ---
@@ -22,7 +22,7 @@ GitLab の [Planning Views](/handbook/product/categories/#planning-views-group) 
 
 ### 安定したカウンターパート
 
-{{% engineering/stable-counterparts manager-role="Engineering Manager(.*)Plan:Planning Views" role="Planning Views|Security(.*)Plan|Principal(.*)Plan$" %}}
+{{% engineering/stable-counterparts manager-role="Engineering Manager(.*)Plan:Planning Views" role="Planning Views|Security(.*), Plan|Principal(.*)Plan$" %}}
 
 ### 採用チャート
 
@@ -34,4 +34,4 @@ GitLab の [Planning Views](/handbook/product/categories/#planning-views-group) 
 
 ## 役立つリンク
 
-- [#g_planning-views](https://gitlab.enterprise.slack.com/archives/C08E78XAUCW in Slack
+- Slack の [#g_planning-views](https://gitlab.enterprise.slack.com/archives/C08E78XAUCW)

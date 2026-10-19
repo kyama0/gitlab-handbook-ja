@@ -2,16 +2,16 @@
 title: "Create:Source Code BE チーム"
 description: Create:Source Code BE チームは、Create ステージの Source Code グループに属するプロダクトカテゴリのすべてのバックエンド側面を担当します。
 upstream_path: /handbook/engineering/devops/create/source-code/backend/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-translated_at: "2026-06-01T12:00:00Z"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+translated_at: "2026-10-19T21:04:57+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-29T14:02:52-04:00"
+lastmod: "2026-10-19T14:59:17+02:00"
 ---
 
-Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツールに焦点を当て、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [Create ステージ](/handbook/product/categories/#create-stage)における [Source Code グループ](/handbook/product/categories/#source-code-group)のプロダクトカテゴリのすべてのバックエンド側面を担当します。プロダクトの方向性については、[カテゴリ方向 - Source Code Management](https://about.gitlab.com/direction/create/source_code_management/) ページをご覧ください。
+Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツールに焦点を当て、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [Create ステージ](/handbook/product/categories/#create-stage)における [Source Code グループ](/handbook/product/categories/#source-code-group)のプロダクトカテゴリのすべてのバックエンド側面を担当します。プロダクトの方向性については、[カテゴリ方向 - Source Code Management](https://about.gitlab.com/direction/create/source_code_management/)ページをご覧ください。
 
-私たちは Gitaly チームおよび Code Review チームと連携し、[Create:Source Code Frontend チーム](/handbook/engineering/devops/create/source-code/frontend/)と密接に協働しています。私たちが扱う機能は [グループ別機能ページ](/handbook/product/categories/features/#code-creation)に記載されており、技術ドキュメントは [Create: Source Code Backend](https://docs.gitlab.com/ee/development/backend/create_source_code_be/index.html) ページにあります。
+私たちは Gitaly チームおよび Code Review チームと連携しています。私たちが扱う機能は [グループ別機能ページ](/handbook/product/categories/features/#code-creation)に記載されており、技術ドキュメントは [Create: Source Code Backend](https://docs.gitlab.com/ee/development/backend/create_source_code_be/index.html)ページにあります。
 
 ## 私たちのチームハンドブックページについて
 
@@ -22,7 +22,7 @@ Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツ
 私たちのチームハンドブックページを更新する DRI になるには、次の手順に従うことを検討してください。
 
 - 私たちの[ハンドブック更新エピック](https://gitlab.com/groups/gitlab-org/-/epics/14740)に移動します。
-- このページへの変更が必要な理由を説明するサブイシューを作成します。
+- このページへの変更が必要な理由を説明するサブ Issue を作成します。
 - 簡単でコンテキストがある場合は、重みを 1 として変更を加える MR を作成します。
 - より多くの労力を要する場合は、より高い重みを付け、変更を成功させるために必要なものを説明します。次のマイルストーン計画中に検討できます。
 - MR の準備ができたら、コメントで `@gitlab-com/create-team/source-code/backend` にメンションしてフィードバックを求めます。チーム全体にメンションすることで、チームの全員がチームの運営方法に貢献できるようになります。
@@ -44,8 +44,8 @@ Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツ
 
 ## 共通リンク
 
-- GitLab チームハンドル: `@gitlab-com/create-team/source-code/backend`
-- Slack チャンネル: `#g_create_source-code-be`、`#g_create_source-code_stand-up`、`#g_create_source-code`、`#s_create`
+- GitLab チームハンドル： `@gitlab-com/create-team/source-code/backend`
+- Slack チャンネル： `#g_create_source-code-be`、`#g_create_source-code_stand-up`、`#g_create_source-code`、`#s_create`
 - [チームエラーバジェット - グループダッシュボード](https://dashboards.gitlab.net/goto/ffnjqazeymlfkd?orgId=1)
 - [チームエラーバジェット - 詳細ダッシュボード](https://dashboards.gitlab.net/goto/efnjpeanxliwwe?orgId=1)
 
@@ -53,9 +53,9 @@ Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツ
 
 より効率的に作業するために使用する[共通の AI プロンプト](/handbook/engineering/devops/create/source-code/ai-prompts/)のリストを維持しています。
 
-## ワークフロー
+## ワークフロー {#workflow}
 
-標準の GitLab [エンジニアリングワークフロー](/handbook/engineering/workflow/)を使用しています。Create:Source Code BE チームのイシューを作成するには、これらのラベルを追加します。
+標準の GitLab [エンジニアリングワークフロー](/handbook/engineering/workflow/)を使用しています。Create:Source Code BE チームの Issue を作成するには、これらのラベルを追加します。
 
 - ~backend
 - ~"devops::create"
@@ -68,22 +68,22 @@ Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツ
 
 ### プロダクトチームとの連携
 
-プロダクトマネージャーとエンジニアリングマネージャー（フロントエンドとバックエンド）の週次通話は、「Source Code Group」カレンダーに記載されています。誰でも参加でき、これらの通話は、グループに影響を与えるブロッカー、懸念事項、ステータス更新、成果物、その他の考えを議論するために使用されます。
+Product Manager と Engineering Manager（フロントエンドとバックエンド）の週次通話は、「Source Code Group」カレンダーに記載されています。誰でも参加でき、これらの通話は、グループに影響を与えるブロッカー、懸念事項、ステータス更新、成果物、その他の考えを議論するために使用されます。
 
-#### イシューのリファインメント
+#### Issue のリファインメント {#issue-refinement}
 
 1. 問題を検証したら、プロダクト、UX、エンジニアリングが協力して解決策を提案し、技術的に実現可能なものを決定します。提案された解決策は、問題を解決することを検証するためにユーザーと共有される場合があります。
-    1. デザイン作業が必要なイシューには `UX` と `workflow::ready for design` がマークされます。
-    1. デザインプロセス中のイシューには `workflow::design` がマークされます。
+    1. デザイン作業が必要な Issue には `UX` と `workflow::ready for design` がマークされます。
+    1. デザインプロセス中の Issue には `workflow::design` がマークされます。
     1. デザインの準備ができ、提案された解決策が実行可能になったら、`workflow::planning breakdown` ラベルが付けられます。
-1. 提案された解決策が実行可能であることを確認したら、できるだけ細かく分解する作業に移ります。イシューがこの段階に達したら、PM が次のステップを示すためにイシューに `workflow::refinement` ラベルを付けます。
-1. EM がリファインメントイシュー（[例](https://gitlab.com/gitlab-com/create-stage/source-code-be/-/issues/249)）を作成し、`workflow::refinement` のタスクをエンジニアに配分します。
-1. エンジニアまたは EM がアサインされたイシューのチェックリストに従い、必要に応じて PM、UX、その他のエンジニアリングカウンターパートと協力して質問や懸念に対処します。
-1. イシューの計画された実装をさらに分解できる場合、エンジニア／EM が PM と協力してスコープを縮小し、そうできるようになるまで新しいイシューを作成します（PM またはエンジニア／EM のいずれかが新しいワークアイテムを作成できます）。
-1. イシューが完全にリファインメントされたら、エンジニアまたは EM が適切な[重み](/handbook/engineering/devops/create/source-code/backend/#weight-categories)を追加し、`workflow::ready for development` としてラベル付けします。これらのイシューはその後マイルストーンに追加できます。
-1. 他のチームが現在のマイルストーンで計画された Source Code Backend のイシューに依存している場合、それらのイシューには `SCM::AwaitingBackend` がラベル付けされます。
+1. 提案された解決策が実行可能であることを確認したら、できるだけ細かく分解する作業に移ります。Issue がこの段階に達したら、PM が次のステップを示すために Issue に `workflow::refinement` ラベルを付けます。
+1. EM がリファインメント Issue（[例](https://gitlab.com/gitlab-com/create-stage/source-code-be/-/issues/249)）を作成し、`workflow::refinement` のタスクをエンジニアに配分します。
+1. エンジニアまたは EM がアサインされた Issue のチェックリストに従い、必要に応じて PM、UX、その他のエンジニアリングカウンターパートと協力して質問や懸念に対処します。
+1. Issue の計画された実装をさらに分解できる場合、エンジニア／EM が PM と協力してスコープを縮小し、そうできるようになるまで新しい Issue を作成します（PM またはエンジニア／EM のいずれかが新しいワークアイテムを作成できます）。
+1. Issue が完全にリファインメントされたら、エンジニアまたは EM が適切な[重み](/handbook/engineering/devops/create/source-code/backend/#weight-categories)を追加し、`workflow::ready for development` としてラベル付けします。これらの Issue はその後マイルストーンに追加できます。
+1. 他のチームが現在のマイルストーンで計画された Source Code Backend の Issue に依存している場合、それらの Issue には `SCM::AwaitingBackend` がラベル付けされます。
 
-**注**: このプロセスの後にイシューが 3 を超える重みを受け取った場合、IC が必要なものを完全に把握しておらず、さらなる調査が必要であることを示している可能性があります。
+**注**: このプロセスの後に Issue が 3 を超える重みを受け取った場合、IC が必要なものを完全に把握しておらず、さらなる調査が必要であることを示している可能性があります。
 
 #### 図
 
@@ -140,9 +140,9 @@ flowchart TD
     class AddMilestone sharedStyle
 ```
 
-### イシューリファインメントチェックリスト
+### Issue リファインメントチェックリスト
 
-リファインメントが必要なイシューについては、エンジニア／EM がこのテンプレートを使ってコメントを追加し、すべてのチェックリスト項目を完了すべきです。
+リファインメントが必要な Issue については、エンジニア／EM がこのテンプレートを使ってコメントを追加し、すべてのチェックリスト項目を完了すべきです。
 
 これらのステップのいずれかを完了できない場合は、EM／PM にメンションしてください。
 
@@ -200,7 +200,7 @@ flowchart TD
 
 ### 実装計画
 
-提供されたテンプレートを使用して、リファインメント中のイシューにコメントを追加します。
+提供されたテンプレートを使用して、リファインメント中の Issue にコメントを追加します。
 
 ```plaintext
 ### Implementation Plan
@@ -253,31 +253,31 @@ Pick a peer engineer following this criteria:
 -->
 ```
 
-#### エピック、イシュー、タスク
+#### エピック、Issue、タスク
 
 Source Code チームは作業を整理するために、以下の計画オブジェクトの構造を使用します。
 
-1. **エピック:** 複数のイシューを配信し、複数のマイルストーン分の作業にまたがる、特定のカテゴリ／テーマ（最も広範）または機能（最も具体的）に沿った、より大きな作業のまとまりを特定するために使用します。
-1. **イシュー:** 計画され、単一のマイルストーンで配信できる個別のアイテムに使用します。
-1. **タスク:** イシューの DRI が、イシューの完了の一部として配信する必要のある部分をさらに定義するために、イシュー内に作成できます。例: ペアプログラミング用、進捗の詳細な記録用など。
+1. **エピック：** 複数の Issue を配信し、複数のマイルストーン分の作業にまたがる、特定のカテゴリ／テーマ（最も広範）または機能（最も具体的）に沿った、より大きな作業のまとまりを特定するために使用します。
+1. **Issue:** 計画され、単一のマイルストーンで配信できる個別のアイテムに使用します。
+1. **タスク：** Issue の DRI が、Issue の完了の一部として配信する必要のある部分をさらに定義するために、Issue 内に作成できます。例： ペアプログラミング用、進捗の詳細な記録用など。
 
 ### 設定よりも規約
 
-私たちの方向性で述べているとおり、私たちは[設定よりも規約](https://about.gitlab.com/direction/create/source_code_management/#critical-product-principles)の原則を特に重視しなければなりません。Create:Source Code 内の機能セットが増えるにつれ、設定で問題を解決するのが自然に感じられるかもしれません。そうならないようにするため、私たちは意図的に MVC と新機能イシューに対してこの点をチェックすべきです。最良の結果を得るために、次の手順を検討しましょう。
+私たちの方向性で述べているとおり、私たちは[設定よりも規約](https://about.gitlab.com/direction/create/source_code_management/#critical-product-principles)の原則を特に重視しなければなりません。Create:Source Code 内の機能セットが増えるにつれ、設定で問題を解決するのが自然に感じられるかもしれません。そうならないようにするため、私たちは意図的に MVC と新機能 Issue に対してこの点をチェックすべきです。最良の結果を得るために、次の手順を検討しましょう。
 
-1. イシューに `workflow::needs issue review` がラベル付けされたら、PM が提案をピアまたはマネージャー、ならびにエンジニアリング（EM または IC）とプロダクトデザイナーと共有します。
+1. Issue に `workflow::needs issue review` がラベル付けされたら、PM が提案をピアまたはマネージャー、ならびにエンジニアリング（EM または IC）とプロダクトデザイナーと共有します。
 
-1. イシューをレビューするプロダクトおよびエンジニアリングのピアは、可能な限り設定を排除する機会を探すべきです。機会が特定された場合、イシューは `workflow::refinement` に戻されます。
+1. Issue をレビューするプロダクトおよびエンジニアリングのピアは、可能な限り設定を排除する機会を探すべきです。機会が特定された場合、Issue は `workflow::refinement` に戻されます。
 
-1. PM とピアが提案に満足し、それが設定よりも規約の原則に可能な限り従っている場合、イシューをレビューした人々が提案への同意を示します（👍 またはイシューへのコメントのいずれかで）。最後に、PM または EM がイシューに `workflow:: ready for development` をラベル付けします。
+1. PM とピアが提案に満足し、それが設定よりも規約の原則に可能な限り従っている場合、Issue をレビューした人々が提案への同意を示します（👍 または Issue へのコメントのいずれかで）。最後に、PM または EM が Issue に `workflow:: ready for development` をラベル付けします。
 
 ### カウンターパートとの協働
 
-PM 以外の安定したカウンターパートと必要なだけ密接に協働することが推奨されます。私たちは特に、リリース Kickoff の前と、コードレビュー中やイシューの懸念事項に応じて必要に応じて、品質エンジニアリングとアプリケーションセキュリティのカウンターパートを含めます。
+PM 以外の安定したカウンターパートと必要なだけ密接に協働することが推奨されます。私たちは特に、リリースキックオフ の前と、コードレビュー中や Issue の懸念事項に応じて必要に応じて、品質エンジニアリングとアプリケーションセキュリティのカウンターパートを含めます。
 
 品質エンジニアリングは、[Quad 計画プロセス](https://gitlab.com/gitlab-com/www-gitlab-com/issues/6318)を通じて私たちのワークフローに含まれます。
 
-アプリケーションセキュリティは、Kickoff メールがチームに送信されるのと同時に私たちのワークフローに関与し、今後のマイルストーンの作業をレビューし、私たちが認識すべき懸念事項や潜在的リスクを記録できるようにします。
+Application Security は、キックオフメールがチームに送信されるのと同時に私たちのワークフローに関与し、今後のマイルストーンの作業をレビューし、私たちが認識すべき懸念事項や潜在的リスクを記録できるようにします。
 
 ### コミュニケーション
 
@@ -310,17 +310,17 @@ PM 以外の安定したカウンターパートと必要なだけ密接に協�
 
 トリアージレポートはかなり長くなることがあり、効率的に処理することが重要です。効果的なアプローチは次のとおりです。
 
-- すべてのイシューを別々のブラウザータブで開き、レビュー後に「edit issue」を使ってチェック済みとマークし、タブを閉じます。
-- イシューが ~"group::source code" に属するか確認し、必要に応じてグループラベルを変更します。この評価には[グループ別機能](/handbook/product/categories/features/#code-creation)ページが良い出発点です。
-- フロントエンドのイシューの場合は ~frontend を適用します。
+- すべての Issue を別々のブラウザータブで開き、レビュー後に「Issue を編集」を使ってチェック済みとマークし、タブを閉じます。
+- Issue が ~"group::source code" に属するか確認し、必要に応じてグループラベルを変更します。この評価には[グループ別機能](/handbook/product/categories/features/#code-creation)ページが良い出発点です。
+- フロントエンドの Issue の場合は ~frontend を適用します。
 - 重複かどうかを評価するために簡単に検索し、重複の場合は ~Duplicate ラベルでクローズします。
 - ~"support request" ですか？ ~"needs investigation" ですか？ そうであればラベルを適用します。
 - リグレッションであれば ~regression ラベルを適用し、最近のものであれば重大度の数値を上げることを検討します。
-- 大きな影響のない小さなイシューであれば ~"severity::4"、~"priority::4"、%Backlog を適用します。
+- 大きな影響のない小さな Issue であれば ~"severity::4"、~"priority::4"、%Backlog を適用します。
 - 明確な解決策がある議論の余地のない問題であれば、~"Seeking community contributions" を適用することを検討します。
-- 新しいコミュニティコントリビューターが興味を持ちそうな、より簡単なイシューであれば、~"quick win" を適用することを検討します。
+- 新しいコミュニティコントリビューターが興味を持ちそうな、より簡単な Issue であれば、~"quick win" を適用することを検討します。
 - 回避策のあるバグであれば ~"priority::3" ~"severity::3" を適用します。
-- データ損失、深刻なパフォーマンスへの影響、またはセキュリティを引き起こすものは ~"severity::1" と ~"priority::1" または ~"priority::2" を適用し、チームメンバーにアサインします。
+- データ損失、深刻なパフォーマンスへの影響、またはセキュリティ上の問題を引き起こすものは ~"severity::1" と ~"priority::1" または ~"priority::2" を適用し、チームメンバーにアサインします。
 - トリアージレポートから自分のアサインを外します。
 
 ### エンジニアリングサイクル
@@ -331,7 +331,7 @@ PM 以外の安定したカウンターパートと必要なだけ密接に協�
 
 これらのドキュメントは、リリース計画と実行中に文書化されるすべてを構成します。
 
-##### イシューボード
+##### Issue ボード
 
 Create Source Code BE の計画は、以下のソースから入力を受け取ります。
 
@@ -348,93 +348,93 @@ Create Source Code UX の計画は、以下のソースから入力を受け取�
 - [SCM UX 計画ボード](https://gitlab.com/groups/gitlab-org/-/boards/5092292?label_name[]=UX&label_name[]=group%3A%3Asource%20code)
 - [SCM UX ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/5092276?label_name[]=UX&label_name[]=group%3A%3Asource%20code)
 
-##### 計画イシュー
+##### 計画 Issue
 
-毎月、いずれかの EM が [Source Code イシューテンプレート](https://gitlab.com/gitlab-org/create-stage/-/blob/master/.gitlab/issue_templates/source-code-planning.md)に基づき[自動化ツール](https://gitlab.com/gitlab-com/create-stage/source-code-be/-/blob/main/doc/planning/index.md)を使用して計画イシューを作成します。
+毎月、いずれかの EM が [Source Code Issue テンプレート](https://gitlab.com/gitlab-org/create-stage/-/blob/master/.gitlab/issue_templates/source-code-planning.md)に基づき[自動化ツール](https://gitlab.com/gitlab-com/create-stage/source-code-be/-/blob/main/doc/planning/index.md)を使用して計画 Issue を作成します。
 
-##### 計画ボード
+##### 計画ボード {#planning-board}
 
-[計画ボード](https://gitlab.com/groups/gitlab-org/-/boards/2822491?milestone_title=14.1&label_name%5B%5D=group%3A%3Asource%20code)は各リリースごとに PM によって作成され、カテゴリ別に厳選されたイシューのリストです。EM はエンジニアにイシューのリファインメントを支援するよう依頼し、[リファインメント](/handbook/engineering/devops/create/source-code/backend/#issue-refinement)プロセスを通じて重みを割り当てます。
+[計画ボード](https://gitlab.com/groups/gitlab-org/-/boards/2822491?milestone_title=14.1&label_name%5B%5D=group%3A%3Asource%20code)は各リリースごとに PM によって作成され、カテゴリ別に厳選された Issue のリストです。EM はエンジニアに Issue のリファインメントを支援するよう依頼し、[リファインメント](/handbook/engineering/devops/create/source-code/backend/#issue-refinement)プロセスを通じて重みを割り当てます。
 
 ##### キャパシティ計画スプレッドシート
 
-EM はチームのキャパシティを計算するために [Google Sheet](https://docs.google.com/spreadsheets/d/1A7Xgz4IrksKYbTbSVgvRPEV8CQgUe9hQC2A9tS-SEa8/edit#gid=1568889265) を維持しており、同じスプレッドシートは重みと優先度に基づいてイシューをリリースに割り当てるプロセスの実行にも使用されます。
+EM はチームのキャパシティを計算するために [Google Sheet](https://docs.google.com/spreadsheets/d/1A7Xgz4IrksKYbTbSVgvRPEV8CQgUe9hQC2A9tS-SEa8/edit#gid=1568889265)を維持しており、同じスプレッドシートは重みと優先度に基づいて Issue をリリースに割り当てるプロセスの実行にも使用されます。
 
 ##### ビルドボード
 
-EM は以下に基づいて[計画ボード](#planning-board)からイシューを選択します。
+EM は以下に基づいて[計画ボード](#planning-board)から Issue を選択します。
 
-- スリップしたイシュー
+- スリップした Issue
 - 重み
 - 優先度
 - PM の希望
 
-その後、EM はリリース内の各イシューに ~Deliverable ラベルを適用し、エンジニアにアサインします。イシューはビルドボードを通じてリリースの間追跡されます。
+その後、EM はリリース内の各 Issue に ~Deliverable ラベルを適用し、エンジニアにアサインします。Issue はビルドボードを通じてリリースの間追跡されます。
 
-#### 候補イシュー
+#### 候補 Issue
 
-緊急のイシューは、他のチームが可視性を得られるよう、暫定的にリリースにアサインされます。
+緊急の Issue は、他のチームが可視性を得られるよう、暫定的にリリースにアサインされます。
 
-この時点では、イシューは*候補*イシューであり、マイルストーンは確実にスケジュールされることを確定しません。イシューは[イシュー選定](#issue-selection)プロセス中に*候補*ステータスから確定に移行します。
+この時点では、Issue は*候補*Issue であり、マイルストーンは確実にスケジュールされることを確定しません。Issue は [Issue 選定](#issue-selection)プロセス中に*候補*ステータスから確定に移行します。
 
 #### 重要な日付
 
 | 日付 | イベント |
 | ------ | ------ | ------ |
-| マイルストーンが終了する週の月曜日 |**PM** が計画ボードを作成し、計画イシューでレビューと重み付けのために EM にメンションします。<br><br> **EM** がキャパシティを計算し、計画イシューに追加します。<br><br>**PM** がレビューのために RPI を提出します。|
-| マイルストーンが終了する週の月曜から金曜 |**EM** と **IC** が計画ボードのイシューに重みを追加します|
-| マイルストーンが終了する金曜 | **EM** がイシューに ~Deliverable ラベルを追加し、ビルドボードに*ドラフトとして*表示されるようにします<br><br>リリースポスト: **EM**、**PM**、**PD** がユーザビリティ、パフォーマンス改善、バグ修正の MR に貢献します|
+| マイルストーンが終了する週の月曜日 |**PM** が計画ボードを作成し、計画 Issue でレビューと重み付けのために EM にメンションします。<br><br> **EM** がキャパシティを計算し、計画 Issue に追加します。<br><br>**PM** がレビューのために RPI を提出します。|
+| マイルストーンが終了する週の月曜から金曜 |**EM** と **IC** が計画ボードの Issue に重みを追加します|
+| マイルストーンが終了する金曜 | **EM** が Issue に ~Deliverable ラベルを追加し、ビルドボードに*ドラフトとして*表示されるようにします<br><br>リリースポスト： **EM**、**PM**、**PD** がユーザビリティ、パフォーマンス改善、バグ修正の MR に貢献します|
 | マイルストーンが終了する金曜 | **EM** がスリップに対応して ~Deliverable ラベルを調整し、最終的なアサインを行います<br><br>**PM** がビルドボードでマイルストーンの最終計画をレビューします<br><br>**EM** がマージされた機能の RPI MR をマージします。|
 | 月の第 3 木曜日 | リリース |
 
-#### イシューの重み付け {#weighting-issues}
+#### Issue の重み付け {#weighting-issues}
 
-各イシューの完了に必要なキャパシティを予測するのを助けるために、重みのシステムを使用します。
+各 Issue の完了に必要なキャパシティを予測するのを助けるために、重みのシステムを使用します。
 
 これらは EM またはエンジニアによってアドホックに、あるいは[リファインメント](/handbook/engineering/devops/create/source-code/backend/#issue-refinement)プロセスに従って割り当てられます。
 
-##### 重みのカテゴリ
+##### 重みのカテゴリ {#weight-categories}
 
 私たちが使用する重みは次のとおりです。
 
 <!-- include omitted: includes/engineering/create/weight_table.md (no localized version under content/ja/) -->
 
-重み 5 は通常、問題が明確でないか、解決策が代わりにサブイシューを持つエピックに変換されるべきであることを示します。
+重み 5 は通常、問題が明確でないか、解決策が代わりにサブ Issue を持つエピックに変換されるべきであることを示します。
 
-###### イシューを分解すべき場合
+###### Issue を分解すべき場合
 
 問題が明確に定義されているが大きすぎる（重み 5 以上）場合は、いずれかを行います。
 
-- イシューをエピックに昇格させ、作業をサブイシューに分解します。可能であれば個々のイシューに重みを付けます。
-- EM と PM にメンションし、イシューをエピックに昇格させる必要があった理由を概説します。
+- Issue をエピックに昇格させ、作業をサブ Issue に分解します。可能であれば個々の Issue に重みを付けます。
+- EM と PM にメンションし、Issue をエピックに昇格させる必要があった理由を概説します。
 
-###### イシューの SSOT が明確でない場合
+###### Issue の SSOT が明確でない場合
 
 - 重みを割り当てず、代わりに明確化が必要なものを示すコメントを追加して EM と PM にメンションします。
 
-###### イシューにスパイクが必要な場合
+###### Issue にスパイクが必要な場合
 
 - 重みを割り当てず、代わりにスパイクの必要性（および調査される可能性のあるもの）についてコメントを追加して EM または PM にメンションします。
 - スパイクは重み 2 でスケジュールされます。
 - スパイクは重み 2（タイムボックス付き）でスケジュールされます。
 
-これらのイシューの詳細については、[スパイクイシュー](#spike-issues)セクションを参照してください。
+これらの Issue の詳細については、[スパイク Issue](#spike-issues)セクションを参照してください。
 
-##### セキュリティイシュー
+##### セキュリティ Issue
 
-セキュリティイシューは通常、上記の表で通常表示されるよりも 1 レベル高い重みが付けられます。これは、[パッチリリースプロセス](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/engineer.md)における追加作業とバックポートを考慮するためです。
+セキュリティ Issue は通常、上記の表で通常表示されるよりも 1 レベル高い重みが付けられます。これは、[パッチリリースプロセス](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/engineer.md)における追加作業とバックポートを考慮するためです。
 
-#### 計画イシューレビュー
+#### 計画 Issue レビュー
 
-Source Code の安定したカウンターパート（BE、FE、PM、UX）が集まり、次のリリースで取り組むイシューを提案します。[Mural](https://www.mural.co/) ビジュアルコラボレーションツールを使用して、候補イシューがグループによって投票されます。
+Source Code の安定したカウンターパート（BE、FE、PM、UX）が集まり、次のリリースで取り組む Issue を提案します。[Mural](https://www.mural.co/)ビジュアルコラボレーションツールを使用して、候補 Issue がグループによって投票されます。
 
-#### キャパシティ計画
+#### キャパシティ計画 {#capacity-planning}
 
-キャパシティ計画は、すべての Source Code チームメンバーとフロントエンド、UX、プロダクトの安定したカウンターパートが関与する共同作業です。毎月の Source Code Group 計画イシュー（[例](https://gitlab.com/gitlab-org/create-stage/-/issues/12783)）でイシューの初期リストが追跡されます。
+キャパシティ計画は、すべての Source Code チームメンバーと Frontend、UX、Product の安定したカウンターパートが関与する共同作業です。毎月の Source Code Group 計画 Issue（[例](https://gitlab.com/gitlab-org/create-stage/-/issues/12783)）で Issue の初期リストが追跡されます。
 
 ##### チームの稼働可能性
 
-新しいリレースが始まる約 5〜10 営業日前に、EM はチームがどれだけ「稼働可能」かを判断し始めます。稼働可能性を判断する際に考慮されることには次のようなものがあります。
+新しいリリースが始まる約 5〜10 営業日前に、EM はチームがどれだけ「稼働可能」かを判断し始めます。稼働可能性を判断する際に考慮されることには次のようなものがあります。
 
 - 今後のトレーニング
 - 今後の休暇／祝日
@@ -443,55 +443,55 @@ Source Code の安定したカウンターパート（BE、FE、PM、UX）が集
 
 稼働可能性は *(稼働可能な勤務日数 / リリース内の勤務日数) * 100* で計算されるパーセンテージです。
 
-すべての個人コントリビューターは「重みバジェット」10 から始まります。つまり、（過去のデータに基づいて）合計 10 重みポイント分のイシューを最大限完了できる能力があることを意味します（例: 5 と 5 で重み付けされた 2 イシュー、または各 1 で重み付けされた 10 イシューなど）。その後、稼働可能性のパーセンテージに基づいて、重みバジェットが個別に削減されます。例えば、80% 稼働可能な場合、重みバジェットは 8 になります。
+すべての個人コントリビューターは「重みバジェット」10 から始まります。つまり、（過去のデータに基づいて）合計 10 重みポイント分の Issue を最大限完了できる能力があることを意味します（例： 5 と 5 で重み付けされた 2 Issue、または各 1 で重み付けされた 10 Issue など）。その後、稼働可能性のパーセンテージに基づいて、重みバジェットが個別に削減されます。例えば、80% 稼働可能な場合、重みバジェットは 8 になります。
 
-プロダクトは、チームの合計重みバジェットに基づいてイシューに優先順位を付けます。私たちの[計画ローテーション](#capacity-planning)は、プロダクトが優先順位付けする予定のイシューに重みを割り当てるのを助け、Kickoff 前に優先順位付けされた作業量と処理可能な作業量を測るのに役立ちます。
+Product は、チームの合計重みバジェットに基づいて Issue に優先順位を付けます。私たちの[計画ローテーション](#capacity-planning)は、Product が優先順位付けする予定の Issue に重みを割り当てるのを助け、キックオフ前に優先順位付けされた作業量と処理可能な作業量を測るのに役立ちます。
 
-##### Source Code イシューパイプライン
+##### Source Code Issue パイプライン
 
-Source Code イシューパイプラインは幅広く、PM と EM は計画プロセス全体を通じて協働し、最終リストはイシュー選定ミーティング中に選択されます。イシューパイプラインには以下が含まれます。
+Source Code Issue パイプラインは幅広く、PM と EM は計画プロセス全体を通じて協働し、最終リストは Issue 選定ミーティング中に選択されます。Issue パイプラインには以下が含まれます。
 
 - 機能
 - バグ
-- セキュリティイシュー
-- [Infradev ボードのイシュー](https://gitlab.com/gitlab-org/gitlab/-/boards/706619?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Asource%20code&label_name[]=infradev)
-- [パフォーマンスボードのイシュー](https://gitlab.com/gitlab-org/gitlab/-/boards/706619?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Asource%20code&label_name[]=performance-refinement)
-- [アプリケーション制限ボードのイシュー](https://gitlab.com/gitlab-org/gitlab/-/boards/706619?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Asource%20code&label_name[]=Application%20Limits)
+- セキュリティ Issue
+- [Infradev ボードの Issue](https://gitlab.com/gitlab-org/gitlab/-/boards/706619?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Asource%20code&label_name[]=infradev)
+- [パフォーマンスボードの Issue](https://gitlab.com/gitlab-org/gitlab/-/boards/706619?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Asource%20code&label_name[]=performance-refinement)
+- [アプリケーション制限ボードの Issue](https://gitlab.com/gitlab-org/gitlab/-/boards/706619?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Asource%20code&label_name[]=Application%20Limits)
 
-#### イシュー選定
+#### Issue 選定 {#issue-selection}
 
-16 日頃に、PM と EM がもう一度会合し、リリースのイシューリストを確定します。そのリリースのイシューボードが更新され、選択されなかった候補マイルストーンのイシューはバックログに移動されるか、将来のリリースの候補として追加されます。
+16 日頃に、PM と EM がもう一度会合し、リリースの Issue リストを確定します。そのリリースの Issue ボードが更新され、選択されなかった候補マイルストーンの Issue はバックログに移動されるか、将来のリリースの候補として追加されます。
 
-リリースにスケジュールされたイシューには ~"workflow::ready for development" がマークされます。
+リリースにスケジュールされた Issue には ~"workflow::ready for development" がマークされます。
 
-#### イシューのアサイン
+#### Issue のアサイン
 
-イシューのアサインは、毎月のバックログリファインメントミーティングとマイルストーン計画ミーティング中に共同で行われます。
-これらのミーティングの後に優先度の高いイシューが発生した場合、またはこれらのミーティング中にアサインができない場合、EM はマイルストーン開始前にイシューを直接アサインします。
+Issue のアサインは、毎月のバックログリファインメントミーティングとマイルストーン計画ミーティング中に共同で行われます。
+これらのミーティングの後に優先度の高い Issue が発生した場合、またはこれらのミーティング中にアサインができない場合、EM はマイルストーン開始前に Issue を直接アサインします。
 
-#### フォローアップイシュー
+#### フォローアップ Issue
 
-リリースで何かに取り組んだが、技術的負債、フィーチャーフラグのロールアウトや削除、イシューのブロッキングではない作業などのタスクが残っている場合、フォローアップイシューを収集し始めます。これらについては、少なくとも 2 つの方法で対処できます。
+リリースで何かに取り組んだが、技術的負債、フィーチャーフラグのロールアウトや削除、Issue のブロッキングではない作業などのタスクが残っている場合、フォローアップ Issue を収集し始めます。これらについては、少なくとも 2 つの方法で対処できます。
 
-- フォローアップイシューに、重みとこのイシューに取り組むことの重要性に関する良い説明を付けて、適切な将来のマイルストーンを追加します
-- 親イシューが修正されたがフィーチャーフラグによる有効化が保留中の場合、親イシューの説明を次のように更新します。「この変更はマージされました。ロールアウトはこのロールアウトイシューで管理されます。ロールアウトイシューがクローズされると、この変更はライブになります。」。また、関連するフィーチャーフラグイシューを親イシューにリンクします。
-- イシューを関連する[計画イシュー](https://gitlab.com/gitlab-org/create-stage/-/issues?scope=all&utf8=%E2%9C%93&state=opened&search=source+code+group+planning)に追加します
+- フォローアップ Issue に、重みとこの Issue に取り組むことの重要性に関する良い説明を付けて、適切な将来のマイルストーンを追加します
+- 親 Issue が修正されたがフィーチャーフラグによる有効化が保留中の場合、親 Issue の説明を次のように更新します。「この変更はマージされました。ロールアウトはこのロールアウト Issue で管理されます。ロールアウト Issue がクローズされると、この変更はライブになります。」。また、関連するフィーチャーフラグ Issue を親 Issue にリンクします。
+- Issue を関連する[計画 Issue](https://gitlab.com/gitlab-org/create-stage/-/issues?scope=all&utf8=%E2%9C%93&state=opened&search=source+code+group+planning)に追加します
 
 一般に、[完了の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)の一部であるフォローアップ作業は、できれば元の作業と同じマイルストーン、またはその直後のマイルストーンで引き受けるべきです。これがかなりの量の作業を表す場合は、スケジューリングの決定に影響する可能性があるため、マネージャーの注意を促してください。
 
-フォローアップイシューが多い場合は、エピックの作成を検討してください。
+フォローアップ Issue が多い場合は、エピックの作成を検討してください。
 
-#### スパイクイシュー
+#### スパイク Issue {#spike-issues}
 
 <!-- include omitted: includes/engineering/create/spike-issues.md (no localized version under content/ja/) -->
 
-##### 過度に複雑または時間的制約のあるイシューのダブルアサイン
+##### 過度に複雑または時間的制約のある Issue のダブルアサイン
 
-[以前のレトロスペクティブ](https://gitlab.com/gl-retrospectives/create-stage/source-code/-/issues/74#note_1914857307)で議論したとおり、イシューを分解することに加え、過度に複雑または時間的制約のあるイシューには、1 人ではなく 2 人のエンジニアを各タスクにアサインすべきです。この共同所有は、複数 MR のタスクで作業を並列化し、即時のコードレビューを高速化し、最終的により速い結果の配信につながります。
+[以前のレトロスペクティブ](https://gitlab.com/gl-retrospectives/create-stage/source-code/-/issues/74#note_1914857307)で議論したとおり、Issue を分解することに加え、過度に複雑または時間的制約のある Issue には、1 人ではなく 2 人のエンジニアを各タスクにアサインすべきです。この共同所有は、複数 MR のタスクで作業を並列化し、即時のコードレビューを高速化し、最終的により速い結果の配信につながります。
 
-#### バックエンドとフロントエンドのイシュー
+#### バックエンドとフロントエンドの Issue
 
-多くのイシューはバックエンドとフロントエンドの両方の作業を必要としますが、その作業の重みは同じでない場合があります。1 つのイシューには 1 つの重みしか設定できないため、この場合は代わりにスコープ付きラベルを使用します: `~backend-weight::<number>` と `~frontend-weight::<number>`。
+多くの Issue はバックエンドとフロントエンドの両方の作業を必要としますが、その作業の重みは同じでない場合があります。1 つの Issue には 1 つの重みしか設定できないため、この場合は代わりにスコープ付きラベルを使用します： `~backend-weight::<number>` と `~frontend-weight::<number>`。
 
 ### ワークフローラベル
 
@@ -507,13 +507,13 @@ Source Code イシューパイプラインは幅広く、PM と EM は計画プ�
 
 #### プロジェクトごと
 
-特定のイシュー、機能、またはその他の種類のプロジェクトが特に有用な学びの経験になった場合、それから学ぶために同期または非同期のレトロスペクティブを行うことがあります。取り組んでいる何かがレトロスペクティブに値すると感じた場合は、
+特定の Issue、機能、またはその他の種類のプロジェクトが特に有用な学びの経験になった場合、それから学ぶために同期または非同期のレトロスペクティブを行うことがあります。取り組んでいる何かがレトロスペクティブに値すると感じた場合は、
 
-1. レトロスペクティブを行いたい理由を説明する[イシューを作成](https://gitlab.com/gl-retrospectives/create-stage/source-code/issues)し、これが同期か非同期かを示します
+1. レトロスペクティブを行いたい理由を説明する [Issue を作成](https://gitlab.com/gl-retrospectives/create-stage/source-code/issues)し、これが同期か非同期かを示します
 1. EM および関与すべきその他の人（PM、カウンターパートなど）を含めます
 1. 該当する場合は同期ミーティングを調整します
 
-レトロスペクティブからのすべてのフィードバックは、参照目的で最終的にイシューに集約されるべきです。
+レトロスペクティブからのすべてのフィードバックは、参照目的で最終的に Issue に集約されるべきです。
 
 ### ディープダイブ
 
@@ -525,7 +525,7 @@ Source Code イシューパイプラインは幅広く、PM と EM は計画プ�
 
 ### パフォーマンスモニタリング
 
-Create:Source Code BE チームは、いくつかの API エンドポイントとコントローラーアクションのパフォーマンスを維持する（例: 目標速度インデックス以下に保つ）責任があります。
+Create:Source Code BE チームは、いくつかの API エンドポイントとコントローラーアクションのパフォーマンスを維持する（例： 目標速度インデックス以下に保つ）責任があります。
 
 それらがどのようにパフォーマンスを発揮しているかを素早く概観できる Kibana のビジュアライゼーションを以下に示します。
 
@@ -546,7 +546,7 @@ Create:Source Code BE チームは、いくつかの API エンドポイント�
 
 ### プレイブック
 
-プレイブックは [Tier 2](https://internal.gitlab.com/handbook/engineering/tier2-oncall/) オンコールエンジニアを支援するために設計されています。プレイブックはランブックよりも高いレベルの技術的・ドメイン的知識を必要とし、標準的な Tier 1 ランブック手順では解決できなかった複雑な問題のトラブルシューティングのための詳細な技術ガイダンスを提供します。
+プレイブックは [Tier 2](https://internal.gitlab.com/handbook/engineering/tier2-oncall/)オンコールエンジニアを支援するために設計されています。プレイブックはランブックよりも高いレベルの技術的・ドメイン的知識を必要とし、標準的な Tier 1 ランブック手順では解決できなかった複雑な問題のトラブルシューティングのための詳細な技術ガイダンスを提供します。
 
 現在、以下のサービス固有のプレイブックを公開しています。
 

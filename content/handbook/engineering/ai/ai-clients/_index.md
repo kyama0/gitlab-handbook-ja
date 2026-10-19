@@ -2,9 +2,9 @@
 title: AI Clients
 description: "AI Clients ステージは、開発者とユーザーが GitLab Duo の AI 機能を利用するサーフェスを担当します。これには、エディター拡張機能、Duo CLI、Duo Chat の Web インターフェース、共有クライアント SDK が含まれます。"
 upstream_path: /handbook/engineering/ai/ai-clients/
-upstream_sha: "4246c71d16beefada2a847b698b152ff280860c5"
-lastmod: "2026-09-11T15:01:30+02:00"
-translated_at: "2026-09-11T21:09:10+00:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+lastmod: "2026-10-19T12:44:48+02:00"
+translated_at: "2026-10-19T21:01:48+00:00"
 translator: codex
 stale: false
 ---
@@ -27,6 +27,7 @@ graph TD
     DC --> CLI[Duo CLI]
     DC --> VSC[VS Code]
     DC --> JB[JetBrains]
+    DC --> GLAB[glab]
     SDK --> SDKT[Duo Client SDK]
     CHAT --> WC[Web Chat]
     CHAT --> CE[Chat Engine]
@@ -34,7 +35,7 @@ graph TD
 
 | グループ | Engineering Manager | Product Manager | UX | 機能別チーム |
 |---|---|---|---|---|
-| [Developer Clients](developer-clients/) | Amr Elhusseiny | James Casey | Yi-Ann Chen | Duo CLI、VS Code、JetBrains |
+| [Developer Clients](developer-clients/) | Amr Elhusseiny | James Casey | Yi-Ann Chen | Duo CLI、VS Code、JetBrains、glab |
 | [Duo Client SDK](duo-client-sdk/) | Donald Cook | James Casey | Yi-Ann Chen | Duo Client SDK |
 | [Duo Chat](duo-chat/) | Donald Cook | Dasha Adushkina | Nick Leonard | Web Chat、Chat Engine |
 
@@ -61,11 +62,12 @@ graph TD
 
 ### Developer Clients
 
-エディター拡張機能との統合と Duo CLI を担当します。[Developer Clients グループのページ](developer-clients/)を参照してください。機能別チームは以下のとおりです。
+エディター拡張機能との統合、Duo CLI、および GitLab CLI（glab）を担当します。[Developer Clients グループのページ](developer-clients/)を参照してください。機能別チームは以下のとおりです。
 
 - [Duo CLI](developer-clients/duo-cli/)
 - [VS Code](developer-clients/vscode/)
 - [JetBrains](developer-clients/jetbrains/)
+- [glab](developer-clients/glab/)
 
 ### Duo Client SDK
 
@@ -91,6 +93,7 @@ graph TD
 | Duo CLI（ターミナルクライアント） | `section::ai`、`devops::ai clients`、`group::developer clients`、`category: duo cli` |
 | VS Code 拡張機能 | `section::ai`、`devops::ai clients`、`group::developer clients`、`category: vs code` |
 | JetBrains プラグイン | `section::ai`、`devops::ai clients`、`group::developer clients`、`category: jetbrains` |
+| glab（GitLab CLI） | `section::ai`、`devops::ai clients`、`group::developer clients`、`category:gitlab cli` |
 | Duo Client SDK / Language Server | `section::ai`、`devops::ai clients`、`group::duo client sdk`、`category: duo client sdk` |
 | Duo Chat（UI と GitLab 内のチャット体験） | `section::ai`、`devops::ai clients`、`group::duo chat`、`category: web chat` |
 | Duo Chat（バックエンド / Chat Engine の機能作業） | `section::ai`、`devops::ai clients`、`group::duo chat`、`category: chat engine` |
@@ -117,6 +120,7 @@ graph TD
 | [`#f_duo_cli`](https://gitlab.enterprise.slack.com/archives/C09GLR7UK0D) | Duo CLI 機能別チーム |
 | [`#f_vscode_extension`](https://gitlab.enterprise.slack.com/archives/C013QJ9NEPL)  | VS Code 拡張機能の機能別チーム |
 | [`#f_jetbrains_plugin`](https://gitlab.enterprise.slack.com/archives/C02UY9XKABH) | JetBrains プラグインの機能別チーム |
+| [`#f_cli`](https://gitlab.enterprise.slack.com/archives/C0380FL4K1R) | glab（GitLab CLI）機能別チーム |
 | [`#f_duo-client-sdk`](https://gitlab.enterprise.slack.com/archives/C05B1PFHRPU) | Duo Client SDK 機能別チーム（`#f_language_server` から名称変更） |
 | [`#duo-chat-lounge`](https://gitlab.enterprise.slack.com/archives/C06LWENL58F) | Duo Chat ラウンジ |
 
@@ -153,6 +157,6 @@ OOO に入るときは、GitLab プロフィールのステータスを `:palm_t
 
 各 AI Clients グループはプロダクトカテゴリを担当します。詳しくは[プロダクトカテゴリのページ](/handbook/product/categories/)に記載されています。
 
-- [Developer Clients グループ](/handbook/product/categories/#developer-clients-group) — Duo CLI、VS Code、JetBrains
+- [Developer Clients グループ](/handbook/product/categories/#developer-clients-group) — Duo CLI、VS Code、JetBrains、glab
 - [Duo Chat グループ](/handbook/product/categories/#duo-chat-group) — Web Chat、Chat Engine
 - [Duo Client SDK グループ](/handbook/product/categories/#duo-client-sdk-group) — Duo Client SDK
