@@ -10,9 +10,9 @@ owning-stage: "~group::Networking & Incident Management"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/haproxy_control_plane/
-upstream_sha: 945c1a5211612e55d2a9e0b08b59ebb80548de60
-lastmod: "2026-09-21T08:09:18Z"
-translated_at: "2026-09-21T23:40:12+00:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+lastmod: "2026-10-15T14:01:05Z"
+translated_at: "2026-10-19T22:16:04+00:00"
 translator: codex
 stale: false
 ---
@@ -57,7 +57,7 @@ GitLab.com の HAProxy は Chef で管理する VM 群です。main、ci、pages
 `gprd` に 80 台、`gstg` に 10 台のロードバランサーがあります。
 3 つのツールがサーバーの状態を変更しており、いずれも管理ソケットと通信します:
 
-- **ChatOps `canary`**: `/chatops run canary --gprd --disable|--enable` は、
+- **ChatOps `canary`**: `/chatops gitlab run canary --gprd --disable|--enable` は、
   人がカナリアをトラフィックの振り分け対象から外し、再び戻すために使います。
   Chef サーバー API に各ノードの IP を問い合わせ、それぞれの `ipv4@<node-ip>:23646` に接続し、
   名前に `-cny-` を含むサーバーを照合して、`set server <backend>/<server> state ...` を発行します。
@@ -147,7 +147,7 @@ Kubernetes 移行が進めば、Pod は同じレスポンダーを実行する�
 
 ### 維持すべき動作 {#what-must-keep-working}
 
-- `/chatops run canary --gprd|--gstg --disable|--enable` は、実行する人にとって同じままです。
+- `/chatops gitlab run canary --gprd|--gstg --disable|--enable` は、実行する人にとって同じままです。
 - SRE のゾーン単位のドレインワークフロー（`set-server-state -z`）には、KV のオーバーライド名前空間を通じて
   同等の機能を提供します。
 - ChatOps の `canary_active_deployment` チェックは引き続き機能します。
@@ -188,7 +188,7 @@ Kubernetes 移行が進めば、Pod は同じレスポンダーを実行する�
 
 ```mermaid
 graph TB
-    rm["human"] -->|"/chatops run canary --disable"| chatops["ChatOps"]
+    rm["human"] -->|"/chatops gitlab run canary --disable"| chatops["ChatOps"]
     chatops -->|"search nodes with role haproxy"| chef["Chef server API"]
     chef -->|"list of node IPs"| chatops
 
@@ -217,7 +217,7 @@ HAProxy は、登録済みのすべてのサーバーについて 2 秒ごとに
 
 ```mermaid
 graph TB
-    rm["human"] -->|"/chatops run canary --disable"| chatops["ChatOps"]
+    rm["human"] -->|"/chatops gitlab run canary --disable"| chatops["ChatOps"]
     chatops -->|"put gitlab-haproxy-agent/state/canary = drain"| kv["Consul KV"]
 
     subgraph fleet[" "]

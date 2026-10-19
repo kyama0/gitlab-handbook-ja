@@ -1,11 +1,11 @@
 ---
 title: "シークレットプッシュ保護 パフォーマンステスト"
 upstream_path: /handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-performance-testing/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T08:15:00+09:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+translated_at: "2026-10-19T22:26:12+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-10-19T18:59:08+11:00"
 ---
 
 ### このランブックをいつ使用しますか？
@@ -71,7 +71,7 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 
 初回ステップ：
 
-* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)をクローンして cd で移動
+* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)をクローンして `cd` で移動
 * [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から `bootstrap.sh` をルートにコピーし、必要に応じて更新
 * 実行可能にする必要がある場合があります：`chmod +x bootstrap.sh`
 
@@ -87,7 +87,7 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 * SSH キーがサービスアカウントに追加されたときに作成されたユーザー名をメモ（後で使用）
 * `mkdir -p terraform/environments/$GCP_ENV_PREFIX` を実行
 * [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から `environment.tf`、`main.tf`、`variables.tf` を対応するディレクトリにコピー
-* 必要に応じてこれらの `*.tf` ファイルを更新：
+* 必要に応じてこれらの *.tf ファイルを更新：
   * `variables.tf` の `external_ip` の下に先ほど取得した IP アドレスを追加
   * `environment.tf` に[適切なサービスアカウントプレフィックス](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_provision.md#service-account-prefix-gcp)を追加
   * `main.tf` のプレフィックスを `$GCP_ENV_PREFIX` の値と一致するように更新
@@ -113,7 +113,7 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 * 必要に応じて[他の変数](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#environment-config-varsyml)（パスワード／シークレット）を設定してください（リファレンスアーキテクチャによって異なりますが、少なくとも `gitlab_root_password`、`postgres_password`、`gitaly_token`、`redis_password` が必要です）
 * `prefix`、`external_url` の更新と `gitlab_license_file` などのいくつかの行のコメント解除も必要になる場合があります
 * その他の変数については[ドキュメント](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#environment-config-varsyml)と他のリファレンスアーキテクチャファイル（例：[25k リファレンスアーキテクチャのもの](https://gitlab.com/gitlab-com/gl-infra/software-delivery/framework/get-environments/ra-test-environments/-/blob/main/configs/reference_architectures/25k/ansible/inventory/vars.yml?ref_type=heads)）を参照してください
-* [Support Super Form を使用して](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)新しい Ultimate ライセンスを取得
+* [チームメンバー向けの GitLab Self Managed 社内ライセンス](/handbook/security/corporate/systems/gitlab/self/licenses/)の手順に従って、新しい Ultimate ライセンスを取得
 * ライセンスファイルを（リネームせず）`/ansible/environments/$GCP_ENV_PREFIX/files` に追加
 * ルートディレクトリから、[仮想環境での Ansible のインストール](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#installing-ansible-with-a-virtual-environment)の手順に従ってください
 * `ansible` ディレクトリに cd
@@ -122,7 +122,7 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 
 #### 既存の環境のセットアップ（$GCP_ENV_PREFIX）
 
-* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)をクローン（まだ存在しない場合）して cd で移動
+* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)をクローン（まだ存在しない場合）して `cd` で移動
 * `mkdir terraform/environments/$GCP_ENV_PREFIX` を実行
 * `mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_tasks` を実行
 * https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs に移動（[この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)のマージ待ち）
@@ -167,11 +167,11 @@ docker run -it \
 
 ### 新しいビルドの再デプロイ {#re-deploying-a-new-build}
 
-* 今後の `GET のセットアップ` セクションでカバーされる前提条件ステップがあります
-* クローンした [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)に移動して cd で移動
+* 今後の `Setting up a GET` セクションでカバーされる前提条件ステップがあります
+* クローンした [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)に移動して `cd` で移動
 * ターミナルでまだアクティベートされていない場合は、`. ./get-python-env/bin/activate` を実行
 * クローンした GET リポジトリの `ansible` ディレクトリに cd
-* どの 3 つのデプロイ方法を対象としているかを確認し、デプロイ前に変更が必要かどうかを `ansible/environments/$GCP_ENV_PREFIX/inventory/vars.yml` で確認
+* 3 つのデプロイ方法のうち、どれを対象としているかを確認し、デプロイ前に変更が必要かどうかを `ansible/environments/$GCP_ENV_PREFIX/inventory/vars.yml` で確認
 * セットアップステップと同じ ansible コマンドで再デプロイ：`ansible-playbook -i environments/$GCP_ENV_PREFIX/inventory playbooks/all.yml`
 
 ### モニタリング

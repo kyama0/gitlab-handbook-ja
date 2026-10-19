@@ -9,11 +9,11 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-translated_at: "2026-10-10T07:02:52+00:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:16:04+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-09T16:35:17-07:00"
+lastmod: "2026-10-19T10:33:34+01:00"
 ---
 
 <!--
@@ -108,7 +108,7 @@ GitLab の現在のプロジェクトレベルのパッケージレジストリ�
 
 私たちは後方互換性の制約から解放された新しいレジストリをゼロから構築しており、最初からモダンなイベント駆動アーキテクチャを採用しています。
 
-このイニシアチブは [内部提案](https://gitlab.com/gitlab-org/gitlab/-/issues/568349) から始まり、ユーザージャーニー、機能、データベーススキーマ、実装ロードマップを含む [拡張仕様](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md)（内部）へと発展しました。このブループリントは、公開可能な高レベルの設計とアーキテクチャ上の意思決定を扱います。内部ドキュメントには追加の戦略的な詳細が含まれています。
+このイニシアチブは [内部提案](https://gitlab.com/gitlab-org/gitlab/-/issues/568349)から始まり、ユーザージャーニー、機能、データベーススキーマ、実装ロードマップを含む [拡張仕様](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md)（内部）へと発展しました。このブループリントは、公開可能な高レベルの設計とアーキテクチャ上の意思決定を扱います。内部ドキュメントには追加の戦略的な詳細が含まれています。
 
 ## 用語集 {#glossary}
 
@@ -460,6 +460,7 @@ each alternative solution/path.
 1. [ADR-024: GitLab.com ベータ提供のためのインフラストラクチャ](decisions/024_infrastructure_delivery.md) - Theseus に必要な最小限の実行可能なプラットフォームとして、Artifact Registry と Auth を用い、GKE v2 向け Runway 上で GitLab.com ベータを提供します。Cells アーキテクチャ対応のターゲットは後続フェーズへ延期します
 1. [ADR-025: ガベージコレクション](decisions/025_garbage_collection.md) - ネームスペースごとにオンラインで実行する、参照されていない blob ストレージの遅延回収
 1. [ADR-026: ライフサイクル管理機能（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/026_lifecycle_management_functionality/) - ライフサイクル管理機能の一覧と段階ごとの対象範囲
+1. [ADR-027: レジストリデータの Orbit への複製](decisions/027_replicating_registry_data_to_orbit.md) - Siphon CDC を使用して固定された一群のレジストリテーブルを Orbit に複製します。認可は Artifact Registry が引き続き担当します
 
 ## インターフェース合意事項 {#interface-agreements}
 

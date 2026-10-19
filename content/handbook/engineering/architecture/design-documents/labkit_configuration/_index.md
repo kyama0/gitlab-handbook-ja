@@ -9,11 +9,11 @@ owning-stage: "~devops::systems"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/labkit_configuration/
-upstream_sha: 33ef35e4327874fd4153c5606125f5de47ff7924
-translated_at: "2026-04-27T05:00:00Z"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:21:24+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-05T09:42:34-08:00"
+lastmod: "2026-10-16T10:09:22+01:00"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
@@ -24,10 +24,10 @@ lastmod: "2026-03-05T09:42:34-08:00"
 
 ## 概要
 
-このデザインドキュメントでは、[LabKit](https://gitlab.com/gitlab-org/labkit) のための標準化された
+このデザインドキュメントでは、[LabKit](https://gitlab.com/gitlab-org/labkit)のための標準化された
 protobuf ファーストの設定管理モジュール（`v2/config`）について説明します。このモジュールは、
 Protocol Buffers を設定スキーマの唯一の真実の情報源として使用する GitLab の Go サービス全体での統一された
-設定処理アプローチを提供します。フォーマットの自動検出（YAML、JSON、TOML）、[protovalidate](https://protovalidate.com/) による
+設定処理アプローチを提供します。フォーマットの自動検出（YAML、JSON、TOML）、[protovalidate](https://protovalidate.com/)による
 強力な検証、型付きバージョン移行、前方互換性のあるパースによるロールバックの安全性を含みます。
 
 ## モチベーション
@@ -45,7 +45,7 @@ Protocol Buffers を設定スキーマの唯一の真実の情報源として使
   コンテキストスイッチする必要があります。
 - **ドキュメントのずれ**: 機械可読なスキーマがなければ、ドキュメントは手動で作成する必要があり、
   実際の設定構造と乖離する可能性があります。
-- **ライフサイクルステージの強制なし**: GitLab には、設定設定が実験的、アルファ、ベータ、または
+- **ライフサイクルステージの強制なし**: GitLab には、設定項目が実験的、アルファ、ベータ、または
   安定しているかどうかを示すメカニズムがありません。
 
 集中型の LabKit モジュールは、すべての LabKit 統合ツールに規約優先の設定を提供することで
@@ -67,7 +67,7 @@ Protocol Buffers を設定スキーマの唯一の真実の情報源として使
 - このプロポーザルはインフラストラクチャレベルの設定（Kubernetes マニフェスト、Terraform 変数）を置き換えません。
 - このプロポーザルは既存のすべてのツール設定の即時移行を義務付けません。採用は段階的に行われます。
 - 環境変数のオーバーライドは将来のプロポーザルに明示的に延期されています。
-- 標準化されたデフォルト管理は、モジュールが既存ツールにレトロフィットされた後に延期されます。
+- 標準化されたデフォルト管理は、モジュールを既存のツールに組み込むまで延期します。
 
 ## 提案
 
@@ -156,7 +156,7 @@ message ServerConfig {
 
 ### 検証
 
-検証はインラインで定義された制約を持つ [protovalidate](https://protovalidate.com) を使用します:
+検証はインラインで定義された制約を持つ [protovalidate](https://protovalidate.com)を使用します:
 
 **標準制約:**
 
@@ -216,7 +216,7 @@ message Config {
 }
 
 message ServerConfig {
-  string address = 1;  // "host" から名前変更
+  string address = 1;  // renamed from "host"
   uint32 port = 2;
   google.protobuf.Duration timeout = 3;
 }
@@ -229,7 +229,7 @@ func migrateV1ToV2(source *configv1.Config) (*configv2.Config, error) {
     return &configv2.Config{
         Version: 2,
         Server: &configv2.ServerConfig{
-            Address: source.Server.Host, // 型安全な名前変更
+            Address: source.Server.Host, // Type-safe rename
             Port:    source.Server.Port,
             Timeout: durationpb.New(30 * time.Second),
         },
@@ -245,7 +245,7 @@ loader, _ := config.New(config.WithMigration(migrateV1ToV2))
 2. バージョンの不一致を検出します（例: ファイルに v1 があるが、バイナリは v2 を期待しています）
 3. ソースタイプ（v1）に設定ファイルを再解析します
 4. **移行前の検証**: v1 スキーマに対して検証します
-5. 型付き移行関数を実行して v1 を v2 に変換します
+5. 型付き移行関数を実行して v1 → v2 に変換します
 6. **移行後の検証**: v2 スキーマに対して検証します
 
 単一ステップの移行（N-1 → N）のみがサポートされています。これは設定バージョンの負債の蓄積を防ぐための
@@ -269,7 +269,7 @@ func main() {
         log.Fatal(err)
     }
 
-    // cfg が読み込まれ検証されています
+    // cfg is loaded and validated
 }
 ```
 
@@ -318,7 +318,7 @@ loader, _ := config.New(
 - 厳格モードは CI パイプラインとデプロイ前の検証でのみ使用すべきです
 
 ```go
-// CI 検証のみ — 本番には使用しないこと
+// For CI validation only - NOT for production
 loader, _ := config.New(config.WithStrictMode())
 ```
 
@@ -386,7 +386,7 @@ IDE サポート、テストの容易さを提供します。
 
 ## 採用パス
 
-1. **フェーズ 1 — モジュールの実装**: ✅ [labkit!345](https://gitlab.com/gitlab-org/labkit/-/merge_requests/345) で実装済み
+1. **フェーズ 1 — モジュールの実装**: ✅ [labkit!345](https://gitlab.com/gitlab-org/labkit/-/merge_requests/345)で実装済み
 2. **フェーズ 2 — パイロット統合**: Donkey と Caproni に統合して API を検証する
 3. **フェーズ 3 — ダウンストリームスキーマ検証**: Helm Charts CI と Omnibus パイプラインに proto ベースの検証を追加する
 4. **フェーズ 4 — 広範な採用**: 追加ツールを段階的に移行する; TOML オプトインにより Gitaly/Workhorse の移行が容易になる
@@ -431,3 +431,4 @@ protovalidate の実装がさまざまなエコシステムに存在するため
 - 元のプロポーザル: [gitlab#591894](https://gitlab.com/gitlab-org/gitlab/-/work_items/591894)
 - 実装: [labkit!345](https://gitlab.com/gitlab-org/labkit/-/merge_requests/345)
 - ライフサイクルステージの探索: [gitlab-org/charts/gitlab#6219](https://gitlab.com/gitlab-org/charts/gitlab/-/work_items/6219)
+- モジュラー機能の OpenAPI 公開規約: [モジュラー機能の OpenAPI 仕様の公開](/handbook/engineering/architecture/design-documents/theseus_platform_vision/openapi_publishing/)

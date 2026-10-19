@@ -3,9 +3,9 @@ linkTitle: "Forum"
 description: "GitLab コミュニティフォーラムのアカウントアクセス、モデレーション、管理のワークフロー。"
 title: "フォーラムのワークフロー"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/forum/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T02:00:03+00:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+lastmod: "2026-10-16T19:52:00+02:00"
+translated_at: "2026-10-19T22:38:26+00:00"
 translator: codex
 stale: false
 ---
@@ -36,7 +36,7 @@ Discourse はユーザー向けに一般的な [FAQ](https://forum.gitlab.com/fa
 - 関連トピックをフォーラムで検索する — 似たことを既に解決したコミュニティメンバーが見つかるかもしれません。会話に呼び込んだり、参考になりそうなスレッドを案内したりできます。
 - [GitLab のドキュメント](https://docs.gitlab.com)を検索し、トラブルシューティングに役立つ情報を探す。
 - [GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/)、[Claude](/handbook/tools-and-tips/ai/claude/)、または [Glean](/handbook/eta/ai/tools/glean/)を使って質問を調査する。
-  - 公の場に投稿する前に、必ず[AI 生成された出力をレビュー](/handbook/communication/#communicating-when-using-generative-ai-tools)し、正確性と [SAFE 要件](/handbook/legal/safe-framework/)を確認してください。
+  - 公の場に投稿する前に、必ず [AI 生成された出力をレビュー](/handbook/communication/#communicating-when-using-generative-ai-tools)し、正確性と [SAFE 要件](/handbook/legal/safe-framework/)を確認してください。
 
 ### より広いコミュニティと協働する {#working-alongside-the-wider-community}
 
@@ -299,7 +299,7 @@ Discourse 上でバナーを設定するステップ:
 ## 管理 {#administration}
 
 - Developer Relations DRI: @sugaroverflow @dnsmichi
-- [Tech Stack オーナー](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml): @sugaroverflow @dnsmichi
+- [Tech Stack オーナー](/handbook/business-technology/tech-stack-applications/): @sugaroverflow @dnsmichi
 - [フォーラムのスタッフメンバー](https://forum.gitlab.com/about)
 
 ### Discourse プラットフォーム {#discourse-platform}
@@ -353,7 +353,7 @@ Core team メンバーは、[core-team](https://forum.gitlab.com/g/core-team)グ
 
 ##### カテゴリートピックテンプレート {#category-topic-templates}
 
-Discourse は、Issue/エピック/MR の GitLab 説明テンプレートと同様の[カテゴリートピックテンプレート](https://meta.discourse.org/t/using-topic-templates-for-categories/38295)をサポートしています。テンプレートは、質問のすべての詳細（設定、再現手順、バージョンなど）を提供するようユーザーをガイドし、フォーラムコントリビューターがより効率的に支援できるようにします。カテゴリーは、サポート（「How to use GitLab」など）、コミュニティのエンゲージメントとプログラム、GitLab University にフォーカスしています。一般的なキャッチオールカテゴリーは、ユーザーをデフォルトテンプレートとして特定のカテゴリーを選択するよう導きます。
+Discourse は、Issue/エピック/MR の GitLab 説明テンプレートと同様の[カテゴリートピックテンプレート](https://meta.discourse.org/t/using-topic-templates-for-categories/38295)をサポートしています。テンプレートは、質問のすべての詳細（設定、再現手順、バージョンなど）を提供するようユーザーをガイドし、フォーラムコントリビューターがより効率的に支援できるようにします。カテゴリーは、サポート（「How to use GitLab」など）、コミュニティのエンゲージメントとプログラム、GitLab University にフォーカスしています。汎用カテゴリーのデフォルトテンプレートでは、具体的なカテゴリーを選択するようユーザーに案内します。
 
 管理者は各カテゴリーを編集し、`Templates` に移動してテンプレートを変更できます。サブカテゴリーはトップレベルテンプレートのコピーが必要であり、これによりすべてのカテゴリーがデフォルトでテンプレートを使用するようになります。過去に、テンプレートのないカテゴリーをユーザーが意図的に選び、間違った場所で新しいトピックを作成したことがありました。
 
@@ -423,7 +423,7 @@ Discourse は、ユーザーがフォーラム活動、ライク、返信への�
 
 カスタマイズを適用するワークフロー:
 
-1. 変更案を提案するため、デザインモックアップやスクリーンショットなどを含めて[Developer Advocate Meta プロジェクトで新しい Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues)を作成します。
+1. 変更案を提案するため、デザインモックアップやスクリーンショットなどを含めて [Developer Advocate Meta プロジェクトで新しい Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues)を作成します。
 1. カスタムテーマ、カラーなどに変更を適用します。
 1. カスタムテーマの変更を [discourse-assets](https://gitlab.com/gitlab-da/projects/discourse-assets)プロジェクトに永続化します。
 1. ロードされるスクリプト URL の変更には、[Content-Security-Policy 設定](https://forum.gitlab.com/admin/site_settings/category/all_results?filter=csp)の更新が必要な場合があります。フォーラム管理者に依頼してください。

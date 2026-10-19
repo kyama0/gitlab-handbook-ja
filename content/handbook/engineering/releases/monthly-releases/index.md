@@ -1,11 +1,11 @@
 ---
 title: "マンスリーリリース"
 upstream_path: /handbook/engineering/releases/monthly-releases/
-upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
-translated_at: "2026-07-10T07:06:25+09:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:30:34+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-07-07T16:51:00+02:00"
+lastmod: "2026-10-15T14:01:05Z"
 ---
 
 ## マンスリーリリースポリシー
@@ -15,14 +15,14 @@ lastmod: "2026-07-07T16:51:00+02:00"
 所有権、例外プロセス、エスカレーションパスを含む一般的なリリースポリシーのフレームワークについては、[リリースポリシー](/handbook/engineering/releases/#release-policy)セクションを参照してください。
 
 {{< alert color="info" >}}
-**プロダクトチームおよびマーケティングチームへ:** イベント、アナウンス、機能リリースは [マンスリーリリーススケジュール](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule) に沿って行う必要があります。機能はマンスリーリリースでのみリリースされます — パッチリリースおよび内部リリースには新機能は含まれません。機能がマンスリーの締切に間に合わなかった場合は、ステークホルダーに遅延を伝えてください。次のマンスリーリリースがその機能をリリースするための適切な手段です。[期限を逃した場合のオーナーシップ](/handbook/engineering/releases/#ownership-when-deadlines-are-missed) を参照してください。
+**プロダクトチームおよびマーケティングチームへ：** イベント、アナウンス、機能リリースは [マンスリーリリーススケジュール](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)に沿って行う必要があります。機能はマンスリーリリースでのみリリースされます — パッチリリースおよび内部リリースには新機能は含まれません。機能がマンスリーの締切に間に合わなかった場合は、ステークホルダーに遅延を伝えてください。次のマンスリーリリースがその機能をリリースするための適切な手段です。[期限を逃した場合のオーナーシップ](/handbook/engineering/releases/#ownership-when-deadlines-are-missed)を参照してください。
 {{< /alert >}}
 
 ## マンスリーリリースの概要
 
-マンスリーリリースは、[GitLab.com への多数のデプロイ](/handbook/engineering/deployments-and-releases/deployments/)からの変更を含む [semver](https://semver.org) バージョン管理されたパッケージです。したがって GitLab.com のユーザーは、セルフマネージドのインストールのユーザーよりも早く機能とバグ修正を受け取ります。
+マンスリーリリースは、[GitLab.com への多数のデプロイ](/handbook/engineering/deployments-and-releases/deployments/)からの変更を含む [semver](https://semver.org)バージョン管理されたパッケージです。したがって GitLab.com のユーザーは、セルフマネージドのインストールのユーザーよりも早く機能とバグ修正を受け取ります。
 
-[デプロイとリリースのページ](/handbook/engineering/deployments-and-releases/) では、2 つのプロセスがどのように連携して機能するかを詳しく説明しています。
+[デプロイとリリースのページ](/handbook/engineering/deployments-and-releases/)では、2 つのプロセスがどのように連携して機能するかを詳しく説明しています。
 
 ### 他のリリースタイプとの関係
 
@@ -32,15 +32,15 @@ lastmod: "2026-07-07T16:51:00+02:00"
 * **[パッチリリース](/handbook/engineering/releases/patch-releases/)** はこれらのステーブルブランチからカットされ、セルフマネージドのお客様にバグおよびセキュリティ修正を提供します
 * **[内部リリース](/handbook/engineering/releases/internal-releases/)** は同じステーブルブランチを使用して、公開前に GitLab Dedicated にクリティカルな修正を提供します
 
-## マンスリーリリーススケジュール
+## マンスリーリリーススケジュール {#monthly-release-schedule}
 
 {{< release-schedule >}}
 
 ### マンスリーリリースプロセス {#monthly-release-process}
 
-マンスリーリリースのタイムラインは [リリース日](/handbook/engineering/releases/) を中心に集中しています。
+マンスリーリリースのタイムラインは [リリース日](/handbook/engineering/releases/)を中心に集中しています。
 
-マンスリーリリースプロセスに含まれる手順の概要:
+マンスリーリリースプロセスに含まれる手順の概要：
 
 ![マンスリーリリース概要](/images/engineering/releases/monthly-releases/monthly-release-overview.jpg)
 
@@ -50,8 +50,8 @@ lastmod: "2026-07-07T16:51:00+02:00"
 
 1. **最初のステップ** - マンスリーリリースのセットアップを行う初期ステップ。リリーススケジュールとデプロイケイデンスの設定を含みます。
 1. **GitLab.com へのデプロイ** - マイルストーンの開始からリリース日の 1 週間前まで、GitLab.com は 1 日に複数回のデプロイを受けます。アプリケーションの変更がマンスリーリリースに含まれるためには、GitLab.com に正常にデプロイされる必要があります。
-1. **リリース候補** - テスト用 [リリース候補 (RC)](#what-is-a-release-candidate-and-when-are-they-created) が、対象とする [semver](https://semver.org) バージョンのステーブルブランチとともに作成されます。リリース候補パッケージがビルド、テストされ、[pre 環境](/handbook/engineering/infrastructure-platforms/environments/#pre) にデプロイされます。成功した結果は、このパッケージが最終バージョンとして使用できることを示します。この時点で [リリースマネージャー](/handbook/engineering/releases/release-managers/) がリリースに含まれる最終コミットをアナウンスします。
-1. **タグ** - リリースマネージャーがリリース候補に基づいて最終バージョンにタグを付けます。
+1. **リリース候補** - テスト用 [リリース候補 (RC)](#what-is-a-release-candidate-and-when-are-they-created)が、対象とする [semver](https://semver.org)バージョンのステーブルブランチとともに作成されます。リリース候補パッケージがビルド、テストされ、[pre 環境](/handbook/engineering/infrastructure-platforms/environments/#pre)にデプロイされます。成功した結果は、このパッケージが最終バージョンとして使用できることを示します。この時点で [Release Manager](/handbook/engineering/releases/release-managers/)がリリースに含まれる最終コミットをアナウンスします。
+1. **タグ** - Release Manager がリリース候補に基づいて最終バージョンにタグを付けます。
 1. **リリース** - リリース日に、リリースパッケージが公開されます。
 
 ### リリース手順
@@ -77,7 +77,7 @@ lastmod: "2026-07-07T16:51:00+02:00"
 
 | ステップ | 目的 |
 | --- | --- |
-| バージョンタグ付け | 公式バージョンタグの作成 (例: 18.8.0) |
+| バージョンタグ付け | 公式バージョンタグの作成 (例： 18.8.0) |
 | パッケージビルド | すべてのプラットフォーム向け Omnibus パッケージのビルド |
 | コンテナイメージビルド | CE、EE、UBI、FIPS コンテナイメージのビルド |
 | QA アップデートシナリオ | 以前のバージョンからのアップグレードパスのテスト |
@@ -93,12 +93,12 @@ lastmod: "2026-07-07T16:51:00+02:00"
 
 ### タイムライン {#timelines}
 
-リリースサイクル全体を通じて保証される唯一の日付は [リリース日](/handbook/engineering/releases/) です。この日に、`マンスリーリリース` がリリースアナウンスとともに公開されます。
+リリースサイクル全体を通じて保証される唯一の日付は [リリース日](/handbook/engineering/releases/)です。この日に、`monthly release` がリリースアナウンスとともに公開されます。
 
-**その他の日付はすべて**、**ガイドラインのみ** であり、いかなるタイプのリリースに含まれるものに関して期限とは見なせません。これには [開発月](/handbook/engineering/workflow/#product-development-timeline) とそこで定義された日付、および顧客への約束も含まれます。これは厳密には、セキュリティ関連の Issue を含む最優先度かつ最高重大度の Issue への対応など、リリースの準備に考慮すべき多くの要素があるためです。
+**その他の日付はすべて**、**ガイドラインのみ** であり、いかなるタイプのリリースに含まれるものに関して期限とは見なせません。これには [開発月](/handbook/engineering/workflow/#product-development-timeline)とそこで定義された日付、および顧客への約束も含まれます。これは厳密には、セキュリティ関連の Issue を含む最優先度かつ最高重大度の Issue への対応など、リリースの準備に考慮すべき多くの要素があるためです。
 
 特定のバージョンに特定の機能を絶対に間に合わせる必要がある場合は、開発サイクルの早い段階で機能をマージしてください。
-リリース日の近くでのマージは、その特定の `マンスリーリリース` に含まれることは絶対に保証されません。
+リリース日の近くでのマージは、その特定の `monthly release` に含まれることは絶対に保証されません。
 
 ## マージリクエストがマンスリーリリースに含まれるかどうかをどのように判断できますか？ {#how-can-i-determine-if-my-merge-request-will-make-it-into-the-monthly-release}
 
@@ -114,7 +114,7 @@ lastmod: "2026-07-07T16:51:00+02:00"
 
 ### 次回マンスリーリリースへの包含を示すラベル {#labels-indicating-inclusion-in-upcoming-monthly-release}
 
-リリース候補 (RC) に含まれたマージリクエストは、マンスリーリリースの一部になります。リリース候補の詳細については [「リリース候補とは何ですか？ いつ作成されますか？」](#what-is-a-release-candidate-and-when-are-they-created) を参照してください。マージリクエストは、RC への包含を示すために `released::candidate` ラベルを受け取ります。
+リリース候補 (RC) に含まれたマージリクエストは、マンスリーリリースの一部になります。リリース候補の詳細については [「リリース候補とは何ですか？ いつ作成されますか？」](#what-is-a-release-candidate-and-when-are-they-created)を参照してください。マージリクエストは、RC への包含を示すために `released::candidate` ラベルを受け取ります。
 
 マージリクエストが `13.6.0` や `13.5.2` などの最終リリースに含まれると、`released::candidate` ラベルを置き換える `released::published` ラベルを受け取ります。
 
@@ -128,8 +128,8 @@ lastmod: "2026-07-07T16:51:00+02:00"
 
 マージリクエストウィジェットは、デプロイプロセスのどこにあるかを参照するためにも使用できます。
 
-* `gstg-cny` は GitLab SaaS ステージング環境の [カナリアステージ](https://about.gitlab.com/handbook/engineering/infrastructure-platforms/environments/canary-stage/) です
-* `gprd-cny` は GitLab SaaS 本番環境の [カナリアステージ](https://about.gitlab.com/handbook/engineering/infrastructure-platforms/environments/canary-stage/) です
+* `gstg-cny` は GitLab SaaS ステージング環境の [カナリアステージ](https://about.gitlab.com/handbook/engineering/infrastructure-platforms/environments/canary-stage/)です
+* `gprd-cny` は GitLab SaaS 本番環境の [カナリアステージ](https://about.gitlab.com/handbook/engineering/infrastructure-platforms/environments/canary-stage/)です
 * `gstg` は GitLab SaaS のステージング環境です - [staging.gitlab.com](https://staging.gitlab.com/)
 * `gprd` は GitLab SaaS の本番環境です - [GitLab.com](https://gitlab.com/)
 * `db/gstg` はマージリクエストに含まれるポストマイグレーションがステージング環境で実行されたことを示します。
@@ -146,22 +146,22 @@ GitLab チームメンバーは Slack の `#releases` チャンネルで ChatOps
 マンスリーリリースに関する MR のステータスを確認するために使用できる ChatOps コマンドがあります。
 
 ```bash
-/chatops run release check <MR URL> <upcoming release version (optional)>
+/chatops gitlab run release check <MR URL> <upcoming release version (optional)>
 ```
 
-例: `/chatops run release check https://gitlab.com/gitlab-org/gitlab/-/merge_requests/12345 14.4`。
+例： `/chatops gitlab run release check https://gitlab.com/gitlab-org/gitlab/-/merge_requests/12345 14.4`。
 
 `gitlab-org/gitlab`、`gitlab-org/security/gitlab`、`gitlab-org/omnibus-gitlab`、`gitlab-org/security/omnibus-gitlab` プロジェクトの MR がこのコマンドでサポートされています。
 
-このコマンドが役立つ 2 つのシナリオ:
+このコマンドが役立つ 2 つのシナリオ：
 
-1. **MR が最初にリリースされたバージョンを確認する**: `/chatops run release check <MR URL>` (バージョンを省略した場合、MR がすでにリリースされているかどうかのみ確認します)
+1. **MR が最初にリリースされたバージョンを確認する**: `/chatops gitlab run release check <MR URL>` (バージョンを省略した場合、MR がすでにリリースされているかどうかのみ確認します)
 
-1. **次回マンスリーリリースに MR が含まれる可能性を確認する**: `/chatops run release check <MR URL> <upcoming release version>`
+1. **次回マンスリーリリースに MR が含まれる可能性を確認する**: `/chatops gitlab run release check <MR URL> <upcoming release version>`
 
 ### マンスリーリリース情報ダッシュボード {#monthly-release-information-dashboard}
 
-GitLab チームメンバーは [内部 Grafana ダッシュボード「Release Information」](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1) で以下の情報を確認できます。
+GitLab チームメンバーは [内部 Grafana ダッシュボード「Release Information」](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)で以下の情報を確認できます。
 
 * 次回マンスリーリリースのバージョン
 * 次回マンスリーリリースの日付
@@ -172,21 +172,21 @@ GitLab チームメンバーは [内部 Grafana ダッシュボード「Release 
 
 マンスリーリリースダッシュボードには、デプロイ済み MR を受け入れているオープン状態か、すでにクローズされて新しい機能を追加できないかを示す現在のステータスを説明するパネルも含まれています。
 
-この情報を表示するために使用されるメトリクスは、[マンスリーリリースプロセス](#monthly-release-process) 全体を通じて自動的に更新されます。
+この情報を表示するために使用されるメトリクスは、[マンスリーリリースプロセス](#monthly-release-process)全体を通じて自動的に更新されます。
 
 #### Slack の #releases チャンネルのアナウンス {#slack-announcements-on-releases-channel}
 
-[リリース日](/handbook/engineering/releases/) の直前に、リリースマネージャーはリリースに含まれる最終コミットをアナウンスします。このような通知は Slack [#releases](https://gitlab.slack.com/archives/C0XM5UU6B) チャンネルで共有され、次のようになります (フォーマットは [release-tools のマンスリーテンプレート](https://gitlab.com/gitlab-org/release-tools/-/blob/master/templates/monthly.md.erb) で定義されています)。
+[リリース日](/handbook/engineering/releases/)の直前に、Release Manager はリリースに含まれる最終コミットをアナウンスします。このような通知は Slack [#releases](https://gitlab.slack.com/archives/C0XM5UU6B)チャンネルで共有され、次のようになります (フォーマットは [release-tools のマンスリーテンプレート](https://gitlab.com/gitlab-org/release-tools/-/blob/master/templates/monthly.md.erb)で定義されています)。
 
 > :mega: ステーブルブランチが作成され、リリース候補にタグが付けられました。重大な問題がなければ、これが 21 日にリリースされる最終コミットです。 https://gitlab.com/gitlab-org/security/gitlab/-/commits/18-3-stable-ee
 
-マンスリーリリースに含まれたマージリクエストは [包含を示すラベル](#labels-indicating-inclusion-in-upcoming-monthly-release) を受け取ります。
+マンスリーリリースに含まれたマージリクエストは [包含を示すラベル](#labels-indicating-inclusion-in-upcoming-monthly-release)を受け取ります。
 
 ## よくある質問
 
-### リリース X のリリースマネージャーは誰ですか？
+### リリース X の Release Manager は誰ですか？
 
-[GitLab リリースマネージャー](/handbook/engineering/releases/release-managers/) のスケジュールを確認することで分かります。
+[GitLab Release Managers](/handbook/engineering/releases/release-managers/)のスケジュールを確認することで分かります。
 
 ### リリース候補とは何ですか？ いつ作成されますか？ {#what-is-a-release-candidate-and-when-are-they-created}
 
@@ -195,7 +195,7 @@ GitLab チームメンバーは [内部 Grafana ダッシュボード「Release 
 リリース候補は、リリース日の 2 日前に、最終リリースの直前に作成されます。必要な場合は、より早くリリース候補を作成することもあります。これは以下のような要因に依存します。
 
 * リリース直前に発生中または発生していた GitLab.com 上のインシデント。
-* リリースマネージャーの注意を必要とする (クリティカルな) [パッチリリース](/handbook/engineering/releases/patch-releases)。
+* Release Manager の注意を必要とする (クリティカルな) [パッチリリース](/handbook/engineering/releases/patch-releases)。
 * オートデプロイパイプラインの問題。
 * リリース候補の作成を遅延または妨げる可能性のあるその他のリリース関連作業。
 
@@ -204,20 +204,20 @@ GitLab チームメンバーは [内部 Grafana ダッシュボード「Release 
 * [#releases](https://gitlab.slack.com/archives/C0XM5UU6B)
 * [#f_upcoming_release](https://gitlab.slack.com/archives/f_upcoming_release)
 
-リリース候補は、自動テストと手動テストの両方のために [`pre.gitlab.com`](/handbook/engineering/infrastructure-platforms/environments/#pre) にデプロイされます。
+リリース候補は、自動テストと手動テストの両方のために [`pre.gitlab.com`](/handbook/engineering/infrastructure-platforms/environments/#pre)にデプロイされます。
 
-### リリースマネージャーに依頼すれば、より早くリリース候補を作成してもらえますか？
+### Release Manager に依頼すれば、より早くリリース候補を作成してもらえますか？
 
-リリース候補をいつ作成するかは、デプロイメントと GitLab.com の状態を考慮した上で、リリースマネージャーが決定します。
+リリース候補をいつ作成するかは、デプロイメントと GitLab.com の状態を考慮した上で、Release Manager が決定します。
 
-リリース関連の質問やリクエストについて、リリースマネージャーに個人的にメッセージを送らないでください。代わりに、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B) チャンネルにリクエスト／質問を投稿してください。
+リリース関連の質問やリクエストについて、Release Manager に個人的にメッセージを送らないでください。代わりに、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B)チャンネルにリクエスト／質問を投稿してください。
 
 ### マンスリーリリースに含まれるためには、いつまでに MR をマージする必要がありますか？
 
 > [!WARNING] :warning:
 > MR がマンスリーサイクルの早い段階でマージされるほど、そのマンスリーリリースに含まれる可能性が高くなります。
 
-**マンスリーリリースに MR を含めるための目標期日: リリース手順が始まる日の前日 16:00 UTC** (通常は [リリース日](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule) の 2 日前)。
+**マンスリーリリースに MR を含めるための目標期日： リリース手順が始まる日の前日 16:00 UTC** (通常は [リリース日](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)の 2 日前)。
 
 全員が提供するものの品質と安定性が、マンスリーリリースに含まれる MR の最終リストを決定します。GitLab.com が安定している場合、リリースの 2 日前にマージされた MR が含まれる可能性があります。いずれかのチームの変更によって安定性が低下している場合、リリースの 1 週間前にマージされた MR でも含まれない可能性があります。
 
@@ -233,7 +233,7 @@ MR がリリースに含まれるためには、以下が必要です。
 2. GitLab.com 本番環境に正常に **デプロイ** されている
 3. ロールバックされずに **デプロイされ続けている**
 
-MR のリアルタイムステータスについては、[利用可能なツール](#how-can-i-determine-if-my-merge-request-will-make-it-into-the-monthly-release) を使用してください。
+MR のリアルタイムステータスについては、[利用可能なツール](#how-can-i-determine-if-my-merge-request-will-make-it-into-the-monthly-release)を使用してください。
 
 ### 高重大度のバグ修正をリリースするにはどうすればよいですか？
 
@@ -241,8 +241,8 @@ MR のリアルタイムステータスについては、[利用可能なツー�
 
 バグの詳細に応じて、以下のいずれかのプロセスに従ってください。
 
-* [高重大度のセキュリティバグ](/handbook/engineering/releases/patch-releases/#patch-release-types) の場合
-* [セルフマネージドユーザーに影響する高重大度のバグ](/handbook/engineering/releases/patch-releases/#patch-release-types) の場合。バグがその月の [リリース日](/handbook/engineering/releases/) の近くに発見された場合は、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B) のリリースマネージャーにも通知してください。
-* [GitLab.com に影響する高重大度のバグ](/handbook/engineering/deployments-and-releases/deployments/#gitlabcom-pick-label) の場合
-* [セキュリティマージリクエストによって引き起こされる高重大度のバグ](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/bugs_introduced_by_security_merge_request.md) の場合
-* [Dedicated に影響する高重大度のバグ](/handbook/engineering/releases/internal-releases/) の場合
+* [高重大度のセキュリティバグ](/handbook/engineering/releases/patch-releases/#patch-release-types)の場合
+* [セルフマネージドユーザーに影響する高重大度のバグ](/handbook/engineering/releases/patch-releases/#patch-release-types)の場合。バグがその月の [リリース日](/handbook/engineering/releases/)の近くに発見された場合は、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B)の Release Manager にも通知してください。
+* [GitLab.com に影響する高重大度のバグ](/handbook/engineering/deployments-and-releases/deployments/#gitlabcom-pick-label)の場合
+* [セキュリティマージリクエストによって引き起こされる高重大度のバグ](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/bugs_introduced_by_security_merge_request.md)の場合
+* [Dedicated に影響する高重大度のバグ](/handbook/engineering/releases/internal-releases/)の場合

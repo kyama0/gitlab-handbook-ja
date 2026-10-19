@@ -1,12 +1,12 @@
 ---
 title: "Technical Writing"
 description: "Technical Writing チームは、GitLab のエンジニア、プロダクトマネージャー、デザイナー、UX リサーチャーと連携し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、拡張可能なドキュメントに落とし込みます。"
-upstream_path: /handbook/marketing/product-and-technical-marketing/technical-writing/
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-translated_at: "2026-10-10T21:07:58.905067+00:00"
+upstream_path: "/handbook/marketing/product-and-technical-marketing/technical-writing/"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:38:26+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-09T15:32:58+01:00"
+lastmod: "2026-10-15T10:07:37+01:00"
 ---
 
 Technical Writers は、ユーザーが GitLab の機能を理解し、操作し、導入する方法を左右するコンテンツに
@@ -95,7 +95,6 @@ Slack チャンネルまたは専用の GitLab グループエイリアスを通
 | `@gitlab-org/tw-leadership`                                    | [gitlab-org/tw-leadership](https://gitlab.com/groups/gitlab-org/tw-leadership/-/group_members?with_inherited_permissions=exclude)                                                                       | リーダーシップ（Managers、Staff Technical Writers、Staff Engineers） |
 | `@gitlab-org/technical-writing/tw-docops`                      | [gitlab-org/technical-writing/tw-docops](https://gitlab.com/groups/gitlab-org/technical-writing/tw-docops/-/group_members?with_inherited_permissions=exclude)                                           | [DocOps](#docops-group) |
 | `@gitlab-org/technical-writing/tw-eng`                      | [gitlab-org/technical-writing/tw-eng](https://gitlab.com/groups/gitlab-org/technical-writing/tw-eng/-/group_members?with_inherited_permissions=exclude)                                           | エンジニア |
-| `@gitlab-org/maintainers/gitlab-development-kit/documentation` | [gitlab-org/maintainers/gitlab-development-kit/documentation](https://gitlab.com/groups/gitlab-org/maintainers/gitlab-development-kit/documentation/-/group_members?with_inherited_permissions=exclude) | [GDK](https://gitlab.com/gitlab-org/gitlab-development-kit)のドキュメントをレビューする Technical Writer |
 
 ## 責任 {#responsibilities}
 
@@ -213,7 +212,7 @@ Technical Writing Managers は主要な[セクション](/handbook/product/categ
 
 | ステージ            | アサインされたステージリード |
 |:-----------------|:--------------------|
-| Verify           | {{< member-by-name "Lysanne Pinto" >}} |
+| Verify           | {{< member-by-name "Marcel Amirault" >}} |
 | Create           | {{< member-by-name "Brendan Lynch" >}} |
 | Plan             | TBD（保留中） |
 | Application Security Testing | TBD（保留中） |
@@ -285,7 +284,6 @@ DocOps グループは、GitLab ドキュメントやその他の技術コンテ
 | [`content`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/contents/content)配下の [GitLab Design System ("Pajamas")](https://design.gitlab.com/)の情報 | {{< member-by-name "Fiona Neill" >}} |
 | [ドキュメントスタイルガイド](#documentation-style-guide)                              | {{< member-by-name "Fiona Neill" >}} |
 | [ドキュメントテスト](#documentation-testing) (DocOps/Vale/markdownlint)           | {{< member-by-name "Sarah Watt" >}} |
-| [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) | {{< member-by-name "Ashraf Khamis" >}}, {{< member-by-name "Evan Read" >}}, {{< member-by-name "Lorena Ciutacu" >}}, {{< member-by-name "Marcel Amirault" >}} |
 
 ### Technical Writers がレビューしないコンテンツ {#content-not-reviewed-by-technical-writers}
 
@@ -386,7 +384,8 @@ Technical Writers は、担当業務とともに、毎月次の定期タスク�
 
 | バージョン | 月 | リリースノートとドキュメントリリース | メンテナンスタスク |
 |---------|-------|----------------------------------------|-------------------|
-| 19.9 | 2027 年 2 月 | TBD | {{< member-by-name "Evan Read" >}} |
+| 19.10 | 2027 年 3 月 | TBD | {{< member-by-name "Brendan Lynch" >}} |
+| 19.9 | 2027 年 2 月 | {{< member-by-name "Brendan Lynch" >}} | {{< member-by-name "Evan Read" >}} |
 | 19.8 | 2027 年 1 月 | {{< member-by-name "Evan Read" >}} | {{< member-by-name "Marcel Amirault" >}} |
 | 19.7 | 2026 年 12 月 | {{< member-by-name "Marcel Amirault" >}} | {{< member-by-name "Isaac Durham" >}} |
 | 19.6 | 2026 年 11 月 | {{< member-by-name "Ashraf Khamis" >}} | {{< member-by-name "Lorena Ciutacu" >}} |
@@ -419,7 +418,7 @@ Technical Writers は、担当業務とともに、毎月次の定期タスク�
 
 ## レビュー {#reviews}
 
-Technical Writer は、GitLab チームメンバーやコミュニティ貢献者が作成したドキュメント変更を含むマージリクエストのレビューにアサインされます。レビューは、[ステージグループ](/handbook/product/categories/#devops-stages)またはその他の専門分野への[Technical Writer のアサイン](#assignments)に従って、主題ごとにアサインされます。
+Technical Writer は、GitLab チームメンバーやコミュニティ貢献者が作成したドキュメント変更を含むマージリクエストのレビューにアサインされます。レビューは、[ステージグループ](/handbook/product/categories/#devops-stages)またはその他の専門分野への [Technical Writer のアサイン](#assignments)に従って、主題ごとにアサインされます。
 
 ### 編集レベル {#levels-of-edit}
 
@@ -496,7 +495,7 @@ Technical Writer 自身が必要な知識を持っているか、必要な検証
     - ドキュメントのマージリクエストの準備が整ったら、承認してマージします。
   - マージリクエストが主にコードの変更であり、ドキュメントの更新も含む場合、Technical Writer は次のように対応します。
     - ドキュメント、UI テキスト、エラーメッセージの変更について提案しますが、自ら提案を適用してはいけません。
-      コードのマージリクエストに変更を加えると、パイプラインが失敗する場合があります。テクニカルライティングの提案に合わせて、エンジニアがコードや仕様を更新する必要があることが多いためです。
+      コードのマージリクエストに変更を加えると、パイプラインが失敗する場合があります。テクニカルライティングの提案に合わせて、エンジニアがコードやテストを更新する必要があることが多いためです。
     - ドキュメントの変更がマージ可能であれば、マージリクエストを承認します。
     - コードの変更はマージしません。コードの変更もレビューするエンジニアが、マージリクエストをマージしなければなりません。
   - マージリクエストが主にドキュメントの変更であり、変更に合わせてリンクを更新する小規模なコードの変更も含む場合、Technical Writer は次のように対応します。
@@ -527,7 +526,7 @@ Technical Writer 自身が必要な知識を持っているか、必要な検証
 
 Technical Writers が多忙でチーム全般のマージリクエストのレビューに対応できず、自分のグループや他の優先事項に集中する必要がある場合があります。その場合は、GitLab のステータスで **Busy** チェックボックスを選択し、🔴（`:red_circle:`）絵文字を追加することで、Reviewer Roulette に名前が表示されないようにできます。
 
-たとえば、あるマイルストーンのリリース担当の Technical Writer は、リリースノートやその他の要件に集中するため、[リリース日](/handbook/engineering/releases/)の前の週に 多忙インジケーターをステータスに追加するべきです。
+たとえば、あるマイルストーンのリリース担当の Technical Writer は、リリースノートやその他の要件に集中するため、[リリース日](/handbook/engineering/releases/)の前の週に多忙インジケーターをステータスに追加するべきです。
 
 それ以外の場合も、Technical Writers はプロフィールに多忙インジケーターを追加したり削除したりできますが、1 回につき 2 日以内とし、使用頻度は 2 週間に 1 回までにしてください。（リリース中の多忙インジケーターの使用は、この制限に含まれません。）Reviewer Roulette に参加しない期間がさらに必要な場合は、必ずマネージャーに相談してください。マネージャーが支援します（多忙インジケーターの追加使用を含む場合があります）。
 

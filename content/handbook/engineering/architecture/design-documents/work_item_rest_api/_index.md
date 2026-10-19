@@ -9,9 +9,9 @@ dris: []
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/work_item_rest_api/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-16T20:18:13-04:00"
-translated_at: "2026-09-20T02:14:23.155976+00:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+lastmod: "2026-10-14T11:13:51+02:00"
+translated_at: "2026-10-19T22:21:24+00:00"
 translator: codex
 stale: false
 ---
@@ -196,7 +196,7 @@ API は `experimental` とマークされ、すべてのルートが `hidden` �
 
 フラグの適用範囲は一様ではなく、何をまだ変更できるかを判断する際には、その違いが重要です。
 
-1. 単一ワークアイテムの取得、作成、更新、削除、サブリソースの各エンドポイントは、`work_item_rest_api` フラグ（ユーザーをアクターとし、デフォルトはオフ）で制御されます。無効な場合は `403` を返します。
+1. 単一ワークアイテムの取得、作成、更新、削除、サブリソースの各エンドポイントは、`work_item_rest_api` フラグ（ユーザーをアクターとし、デフォルトはオフ）で制御されます。無効な場合は `404` を返し、レスポンスからエンドポイントの存在が分からないようにします。
 1. リストエンドポイントはロールアウトが完了しており、フラグによる制御を終了しています。ロールアウト中は `work_item_rest_api_index` で制御していましたが、このフラグを全体で有効にして 1 週間問題がなかったため削除しました。このエンドポイントは認証も不要で、GraphQL API と同様に、公開プロジェクトとグループのワークアイテムへの匿名リクエストが成功します。破壊的な変更に対する保護は、現在では `hidden` と `experimental` のステータスのみです。
 1. `work_item_rest_api_frontend_users` はどのエンドポイントも制御しません。ワークアイテムのリストとボードのフロントエンドが、GraphQL の代わりに REST からリストを読み取るかどうかだけを制御します。
 
@@ -273,5 +273,7 @@ API は `experimental` とマークされ、すべてのルートが `hidden` �
    参加者は、従来パフォーマンスのボトルネックでした。追跡対象のエピックでこの作業を「実施しない」としてクローズすることで、除外を監査可能かつ撤回可能な状態に保ち、コミュニティの貢献も受け入れられます。[参加者ウィジェットをクローズする Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/601069#note_3516576976)も参照してください。
 1. [すべてのエンドポイントでキーセットページネーションを使用し、不透明なカーソルとして公開します](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/20950#note_3788496964)。
    クライアントが、特定のソートにどの方式を使用しているかを知るためにレスポンスヘッダーを調べる必要はないはずです。統一されたカーソルのコントラクトにより、実装は自由に変更できます。並び順にキーセット形式がない場合、サーバーは同じカーソルの内部でオフセットによってページを取得します。実装は [gitlab-org/gitlab#628176](https://gitlab.com/gitlab-org/gitlab/-/work_items/628176)で追跡しています。
+1. [`per_page` は 1 から 100 までを受け付け、その範囲外では 400 を返します](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/261072)。
+   カーソルページネーションには制限がなく、1 回のリクエストで数千行を要求できました。範囲外の値を通知なしに引き下げるのではなく拒否することで、クライアントが 1 ページに含められる行数を常に把握できるようにします。この API のディスカッションノートのエンドポイントは、すでにこの範囲を使用しています。REST API の別の部分にある CI ユーザーパイプラインのエンドポイントも同様です。実装は [gitlab-org/gitlab#628176](https://gitlab.com/gitlab-org/gitlab/-/work_items/628176)で追跡しています。
 1. [不明な `fields` と `features` の値には `400` を返し、アイテムのタイプがサポートしていない機能やライセンスのない機能は省略します](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/20950#note_3788728139)。
    `200` はリクエストを完全に理解したことを意味するべきであるため、GraphQL がクエリの検証時に行うように、認識できない名前は破棄せず拒否します。有効な機能でも、個々のアイテムが持てない場合は、そのアイテムから省略します。これも GraphQL と同じ動作です。リストのレスポンスには複数のワークアイテムタイプが含まれ、単一の `400` によって複数タイプが混在するリストが利用できなくなるためです。[明示的に失敗させることについての議論](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/20950#note_3822228190)も参照してください。実装は [gitlab-org/gitlab#629477](https://gitlab.com/gitlab-org/gitlab/-/work_items/629477)で追跡しています。

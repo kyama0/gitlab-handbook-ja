@@ -3,9 +3,9 @@ title: "ワークアイテム REST API のエンドポイント"
 description: "ワークアイテム REST API のエンドポイントリファレンス。ルート、パラメータ、ペイロード、ページネーション、認可、フィーチャーフラグを説明します。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/work_item_rest_api/endpoints/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-16T20:18:13-04:00"
-translated_at: "2026-09-20T02:14:23.155976+00:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+lastmod: "2026-10-14T11:13:51+02:00"
+translated_at: "2026-10-19T22:21:24+00:00"
 translator: codex
 stale: false
 ---
@@ -123,6 +123,8 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 
 すべてのコレクションエンドポイントはキーセットページネーションを使用し、クライアントには不透明なカーソルとして公開します。リクエストは `cursor` と `per_page` を受け取ります。レスポンスには `X-Next-Cursor` と `X-Prev-Cursor` に加えて、`rel="next"` と `rel="prev"` を持つ `Link` ヘッダーが含まれます。
 
+`per_page` はデフォルトで `20`、`1` から `100` までの値を受け付けます。この範囲外の値には HTTP 400 を返します。サーバーは値を範囲内に補正しません。
+
 リストエンドポイントの `popularity` や `milestone_due` によるソートなど、一部の並び順にはキーセット形式がありません。その場合、サーバーは同じ不透明なカーソルの内部でオフセットによってページを取得するため、ソートやエンドポイントによってコントラクトが変わることはありません。
 
 読み取り不可のレコードは、ページを取得した**後**に除外されるため、`X-Next-Cursor` が存在していても、ページ内のアイテム数が `per_page` 未満になったり、まったくなくなったりする場合があります。クライアントは、件数が少ないページや空のページをコレクションの終端と見なさず、カーソルをたどる必要があります。
@@ -137,8 +139,8 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 
 | グループ | 認証 | 権限 | CI ジョブトークン |
 |---|---|---|---|
-| 一覧取得 | 不要 | `:read_work_item` | `namespaces` と `projects` 形式では `read_work_items` |
-| 単一アイテムの取得、すべての GET サブリソース | 必要 | `:read_work_item` | `namespaces` と `projects` 形式では `read_work_items`（下記の例外を参照） |
+| 一覧取得 | 不要 | `:read_work_item` | `projects` 形式のみで `read_work_items` |
+| 単一アイテムの取得、すべての GET サブリソース | 必要 | `:read_work_item` | `projects` 形式のみで `read_work_items`（下記の例外を参照） |
 | 作成 | 必要 | `:create_work_item` | 受け付けない |
 | 更新、子の追加/関連付け解除/並べ替え | 必要 | `:update_work_item` | 受け付けない |
 | 削除 | 必要 | `:delete_work_item` | 受け付けない |
@@ -149,11 +151,11 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 
 例外: email_participants の `groups` 形式は、他の GET サブリソースとは異なり、ジョブトークンポリシーを宣言しています。
 
-コンテナー自体が不可視の場合も、個別のアイテムが読み取り不可の場合も、拒否されたリクエストは `403` ではなく `404` を返します。フィーチャーフラグがオフの場合は別で、`403` を返します。
+コンテナー自体が不可視の場合も、個別のアイテムが読み取り不可の場合も、拒否されたリクエストは `403` ではなく `404` を返します。フィーチャーフラグが無効な場合も、同じ理由で `404` を返します。
 
 ## フィーチャーフラグ {#feature-flags}
 
-1. `work_item_rest_api`（タイプ `wip`、デフォルトはオフ、ユーザー単位、18.9 で導入）は、単一アイテムの取得、作成、更新、削除、および GET サブリソースを制御します。オフの間、これらは `403` を返します。リストエンドポイントは制御し**ません**。[ロールアウトの Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/588874)。
+1. `work_item_rest_api`（タイプ `wip`、デフォルトはオフ、ユーザー単位、18.9 で導入）は、単一アイテムの取得、作成、更新、削除、および GET サブリソースを制御します。オフの間、これらは `404` を返し、レスポンスからエンドポイントの存在が分からないようにします。リストエンドポイントは制御し**ません**。[ロールアウトの Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/588874)。
 1. `work_item_rest_api_index`（タイプ `wip`、19.1 で導入、削除済み）は、以前リストエンドポイントを独立して制御していました。[ロールアウトの Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/601895)。
 1. `work_item_rest_api_frontend_users`（タイプ `wip`、デフォルトはオフ、19.0 で導入）は、どのエンドポイントも制御しません。Vue のリストビューとボードビューが GraphQL の代わりに REST でワークアイテムを取得するかどうかだけを制御します。[ロールアウトの Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/596882)。
 
@@ -174,7 +176,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 
 | パラメータ | 型 | 必須 | 説明 |
 |---|---|---|---|
-| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20` |
+| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 | `cursor` | string | いいえ | キーセットページネーションのカーソル |
 | `order_by` | string | いいえ | デフォルトは `created_at` |
 | `sort` | string | いいえ | デフォルトは `desc` |
@@ -211,7 +213,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧 |
 | `features` | string | いいえ | カンマ区切りの機能一覧 |
 
-レスポンス: `WorkItemDetail`。ルートのフィールドは `WorkItemBasic` と同一です。Ultimate では、`health_status` 機能に追加の詳細（`count`、`rolled_up_health_status`）が含まれます。`ai_workflows` スコープのトークンでアクセスできる唯一のエンドポイントです。
+レスポンス: `WorkItemDetail`。ルートのフィールドは `WorkItemBasic` と同一です。Ultimate では、`health_status` 機能に追加の詳細（`count`、`rolled_up_health_status`）が含まれます。取得、作成、更新は `ai_workflows` スコープのトークンを受け付けますが、一覧取得と削除は受け付けません。
 
 </details>
 
@@ -319,7 +321,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧 |
 | `features` | string | いいえ | カンマ区切りの機能一覧 |
 | `cursor` | string | いいえ | キーセットページネーションのカーソル |
-| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20` |
+| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `WorkItemBasic` の配列。
 
@@ -405,7 +407,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `sort` | string | いいえ | デフォルトは `asc`、ほかに `desc` |
 | `activity_filter` | string | いいえ | デフォルトは `all_notes`、ほかに `only_comments`、`only_activity` |
 | `cursor` | string | いいえ | キーセットページネーションのカーソル |
-| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20` |
+| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 `:read_work_item` に加えて `:read_note` が必要です。
 
@@ -432,7 +434,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `sort` | string | いいえ | デフォルトは `asc`、ほかに `desc` |
 | `activity_filter` | string | いいえ | デフォルトは `all_notes`、ほかに `only_comments`、`only_activity` |
 | `cursor` | string | いいえ | キーセットページネーションのカーソル |
-| `per_page` | integer | いいえ | デフォルトは `20`、最大 `100` |
+| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `Discussion` の配列。
 
@@ -549,7 +551,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧 |
 | `features` | string | いいえ | カンマ区切りの機能一覧 |
 | `cursor` | string | いいえ | キーセットページネーションのカーソル |
-| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20` |
+| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `WorkItemBasic` に `link_id`、`link_type`、`link_created_at`、`link_updated_at` を追加した `LinkedWorkItem` の配列。
 
@@ -599,7 +601,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `work_item_iid` | integer | はい | ワークアイテムの IID。パスパラメータ |
 | `state` | string | いいえ | `pending` または `done`。省略すると両方を返します |
 | `cursor` | string | いいえ | キーセットページネーションのカーソル |
-| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20` |
+| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `Todo` の配列。
 
@@ -619,7 +621,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `work_item_iid` | integer | はい | ワークアイテムの IID。パスパラメータ |
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧。以下を参照してください |
 | `cursor` | string | いいえ | キーセットページネーションのカーソル |
-| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20` |
+| `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 このエンドポイントには、ワークアイテムのフィールド一覧とは関係のない独自の `fields` があります。デフォルトの `id` と `email` に加え、`created_at` と `updated_at` を指定できます。メールアドレスは呼び出し元の権限に応じてマスクされます。
 

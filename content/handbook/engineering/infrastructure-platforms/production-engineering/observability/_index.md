@@ -2,11 +2,11 @@
 title: "Observability チーム"
 description: "Observability は、メトリクス、ロギング、トレーシングを担う技術要素と、それらを活用するツールおよびプロセス全体を包含します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/observability/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:30:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-01T07:28:41-06:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
 Observability は、メトリクス、ロギング、トレーシングを担う技術要素と、それらを活用するツールおよびプロセス全体を包含します。
@@ -49,7 +49,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 1. [キャパシティプランニング](/handbook/engineering/infrastructure-platforms/production-engineering/observability/capacity_planning/)
    1. [.com 向けトリアージローテーション](/handbook/engineering/infrastructure-platforms/capacity-planning/#gitlabcom-capacity-planning)
    1. [GitLab Dedicated キャパシティプランニングの運用面](https://docs.gitlab.com/ee/architecture/blueprints/capacity_planning/)
-   1. 予測ツールである [Tamland](https://gitlab.com/gitlab-com/gl-infra/tamland) の開発
+   1. 予測ツールである [Tamland](https://gitlab.com/gitlab-com/gl-infra/tamland)の開発
    1. [GitLab Dedicated のキャパシティレポート](https://gitlab.com/gitlab-com/gl-infra/capacity-planning-trackers/gitlab-dedicated)
 1. GitLab.com のプロダクションサービスを対象とする[サービス成熟度モデル](/handbook/engineering/infrastructure-platforms/service-maturity-model/)。
 1. [GitLab.com の可用性レポート](/handbook/engineering/monitoring/): 基盤となるデータと集計値の提供
@@ -93,7 +93,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 チーム内利用の観点でも、所有するサービスとその運用方法について検討するためにドキュメントハブを使います。
 これはチームの全員に役立ち、チーム内の様々な役割や視点を持つメンバーが共通理解を育むのに役立つと期待しています。
 
-ドキュメントの種類とその整理方法に関するおすすめの読み物として、[Divio Documentation System](https://docs.divio.com/documentation-system/) があります。
+ドキュメントの種類とその整理方法に関するおすすめの読み物として、[Divio Documentation System](https://docs.divio.com/documentation-system/)があります。
 
 #### どのようにドキュメントを作成するか?
 
@@ -104,7 +104,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 1. 既存ドキュメントを集約し、適切な場所に移動する
 1. システムアーキテクチャや運用原則に関する文章・図の執筆
 
-私たちは [Handbook First](/handbook/company/culture/all-remote/handbook-first/) の考え方と同じように、ドキュメントを主要な存在として作成・維持することを目指しています。
+私たちは [ハンドブックファースト](/handbook/company/culture/all-remote/handbook-first/)の考え方と同じように、ドキュメントを主要な存在として作成・維持することを目指しています。
 たとえば、チームメンバーからの個別の質問（Slack 上の質問など）に個別に答える代わりに、これをドキュメントを書く機会として捉え、書いたものをレビューしてもらい、それを使って作業してもらうことができます。
 
 ### 指標
@@ -125,10 +125,10 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 ### プロビジョニングされたサービス
 
-チームは、[tech_stack.yml](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) ファイルに従って、以下のサービスへのアクセスのプロビジョニングを担当します。
+チームは、[Tech Stack](/handbook/business-technology/tech-stack-applications/)に従って、以下のサービスへのアクセスのプロビジョニングを担当します。
 
-1. **Kibana** は Okta 経由でアクセスします。チームメンバーは以下のいずれかの Okta グループに所属する必要があります: `gl-engineering`（Engineering 部門全体）、`okta-kibana-users`。後者は Engineering 外のチームメンバーへのアクセスをアドホックに管理するために使われます ([背景](https://gitlab.com/gitlab-com/business-technology/change-management/-/issues/958))。チームメンバーは Access Request ([例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/28421)) を通じてプロビジョニング／デプロビジョニングされる必要があります。アクセスリクエストが承認されたら、プロビジョナーがユーザーを[このグループ](https://groups.google.com/a/gitlab.com/g/okta-kibana-users)に追加すると、Okta 内の同名グループに自動同期されます。
-1. **Elastic Cloud** は、Elastic スタックへの管理アクセスのためのものです。ログイン画面は[こちら](https://cloud.elastic.co/)で、Google SSO 経由でアクセスします。チームメンバーは Access Request ([例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/28457)) を通じてプロビジョニング／デプロビジョニングされる必要があります。承認されたら、プロビジョナーは[メンバーシップページ](https://cloud.elastic.co/account/members)でアクセスが必要なインスタンスに対する適切な権限とともにメンバーを追加/削除できます。
+1. **Kibana** は Okta 経由でアクセスします。チームメンバーは以下のいずれかの Okta グループに所属する必要があります： `gl-engineering`（Engineering 部門全体）、`okta-kibana-users`。後者は Engineering 外のチームメンバーへのアクセスをアドホックに管理するために使われます ([背景](https://gitlab.com/gitlab-com/business-technology/change-management/-/issues/958))。チームメンバーは Access Request ([例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/28421))を通じてプロビジョニング／デプロビジョニングされる必要があります。アクセスリクエストが承認されたら、プロビジョナーがユーザーを[このグループ](https://groups.google.com/a/gitlab.com/g/okta-kibana-users)に追加すると、Okta 内の同名グループに自動同期されます。
+1. **Elastic Cloud** は、Elastic スタックへの管理アクセスのためのものです。ログイン画面は[こちら](https://cloud.elastic.co/)で、Google SSO 経由でアクセスします。チームメンバーは Access Request ([例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/28457))を通じてプロビジョニング／デプロビジョニングされる必要があります。承認されたら、プロビジョナーは[メンバーシップページ](https://cloud.elastic.co/account/members)でアクセスが必要なインスタンスに対する適切な権限とともにメンバーを追加/削除できます。
 1. **Grafana** は Okta 経由でアクセスします。ログイン画面は[こちら](https://dashboards.gitlab.net)です。GitLab のチームメンバーであれば誰でも Grafana にアクセスできます。プロビジョニング／デプロビジョニングは Okta を通じて処理されます。
 
 ## 私たちの働き方
@@ -142,7 +142,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 ### プロジェクト管理
 
-私たちが取り組むほとんどのプロジェクトは、複数の Issue を含む[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/)で表現されます。シンプルなタスクは、親エピックなしの [Issue](https://gitlab.com/gitlab-com/gl-infra/observability/team/-/issues) で進められます。
+私たちが取り組むほとんどのプロジェクトは、複数の Issue を含む[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/)で表現されます。シンプルなタスクは、親エピックなしの [Issue](https://gitlab.com/gitlab-com/gl-infra/observability/team/-/issues)で進められます。
 
 ### プロジェクトのサイジング
 
@@ -154,7 +154,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 私たちのチームに関連するすべてのエピック／Issue には `~"group::Observability"` ラベルが付いています。
 
-チームの現在の優先順位を表すために、以下の `roadmap::` ラベルを使用します:
+チームの現在の優先順位を表すために、以下の `roadmap::` ラベルを使用します：
 
 * `roadmap::now` 現在取り組んでいる項目
 * `roadmap::next` 次に取り組む候補の項目
@@ -163,7 +163,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 `Category:` ラベルは、作業項目の機能領域を表すために使います。例として `Category:Logging` や `Category:Capacity Planning` があります。
 
-`theme::` ラベルは作業の種類とその利点をグループ化するために使います。ラベルには以下があります:
+`theme::` ラベルは作業の種類とその利点をグループ化するために使います。ラベルには以下があります：
 
 * `theme::Operational Excellence` プロダクションでシステムを稼働させ続けるための運用プロセス
 * `theme::Performance Enablement` システムが負荷変動に適応する能力
@@ -207,9 +207,9 @@ Production Engineering グループレビューは毎週木曜日に開催され
 
 ### Slack での更新
 
-週次更新には [GeekBot](https://app.geekbot.com/dashboard/w/184476) を使用しており、#g_observability チャンネルに投稿されます。
+週次更新には [GeekBot](https://app.geekbot.com/dashboard/w/184476)を使用しており、#g_observability チャンネルに投稿されます。
 
-更新を投稿する際は、関心のあるチームメンバーが自身で深く調べられるように、十分なコンテキスト（リンクなど）を提供することを心がけてください ([low context](/handbook/communication/#low-context))。
+更新を投稿する際は、関心のあるチームメンバーが自身で深く調べられるように、十分なコンテキスト（リンクなど）を提供することを心がけてください ([ローコンテキスト](/handbook/communication/#low-context))。
 
 ### チームのハッピネス
 
@@ -223,9 +223,9 @@ Production Engineering グループレビューは毎週木曜日に開催され
 
 このセクションには、チームの歴史と成果に関するメモが含まれます。網羅的なものではありません。
 
-* 2024-02、キャパシティプランニング: [飽和度予測で見られた postgres CPU スパイクの先回り調査](https://gitlab.com/gitlab-com/gl-infra/capacity-planning-trackers/gitlab-com/-/issues/1668#note_1807225359)で[データベース設計の問題](https://gitlab.com/gitlab-org/gitlab/-/issues/435250)を発見
-* 2024-03、キャパシティプランニング: [Tamland が redis CPU の飽和を予測し、Practices による Redis の先回りスケーリングにつながった](https://gitlab.com/gitlab-com/gl-infra/capacity-planning-trackers/gitlab-com/-/issues/1712) ([スライド](https://docs.google.com/presentation/d/1y58mgaUrpu1dBO_bKVLfDUez9lz-ETLE7E1yksDjAbY/edit#slide=id.g2cc1c00d163_5_4))
-* 2024-05、メトリクス: [Thanos から Mimir への移行が完了](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1107)し、メトリクスの精度とダッシュボードのパフォーマンスに[大きな改善](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1107#outcome)をもたらしました。
+* 2024-02、キャパシティプランニング： [飽和度予測で見られた postgres CPU スパイクの先回り調査](https://gitlab.com/gitlab-com/gl-infra/capacity-planning-trackers/gitlab-com/-/issues/1668#note_1807225359)で[データベース設計の問題](https://gitlab.com/gitlab-org/gitlab/-/issues/435250)を発見
+* 2024-03、キャパシティプランニング： [Tamland が redis CPU の飽和を予測し、Practices による Redis の先回りスケーリングにつながった](https://gitlab.com/gitlab-com/gl-infra/capacity-planning-trackers/gitlab-com/-/issues/1712) ([スライド](https://docs.google.com/presentation/d/1y58mgaUrpu1dBO_bKVLfDUez9lz-ETLE7E1yksDjAbY/edit#slide=id.g2cc1c00d163_5_4))
+* 2024-05、メトリクス： [Thanos から Mimir への移行が完了](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1107)し、メトリクスの精度とダッシュボードのパフォーマンスに[大きな改善](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1107#outcome)をもたらしました。
 
 ### Year-in-Review の Issue
 
