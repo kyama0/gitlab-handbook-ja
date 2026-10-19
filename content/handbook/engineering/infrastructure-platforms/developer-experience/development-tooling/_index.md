@@ -1,51 +1,58 @@
 ---
 title: "Development Tooling チーム"
-description: "Development Tooling チームは、GitLab の R&D とコントリビューターが GitLab に効率的かつ確実にコントリビュートできるようにします"
+description: "Development Tooling チームは、Theseus を通じて GitLab でのモジュール型サービス開発を可能にします"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:03:07+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:23:32Z"
 translator: claude
 stale: false
-lastmod: "2026-07-01T17:57:50+02:00"
+lastmod: "2026-10-14T17:52:56+02:00"
 ---
 
 ## ミッション
 
-- 効率的かつ信頼性の高い最先端の開発者ツールを構築し、開発者が苦痛なく開発環境を最新の状態に保てるようにします。
+- [Theseus](https://theseus.gitlab.net/) プラットフォームを通じて、GitLab でのモジュール型サービス開発を可能にします。
 - チームメンバーとより広いコミュニティが、私たちのツールとプロダクトに効率的にコントリビュートできるようにします。
 - 重要なものを測定する: 開発者体験、効率性、トイル削減における改善を、定量的および定性的なメトリクスの両方を使って測定します。
 
 ## ビジョン
 
-私たちのビジョンは、GitLab のチームメンバーとより広いコミュニティが GitLab に迅速、効率的、信頼性高くコントリビュートできるツールを作成することです。
+GitLab で新しいモジュール型サービスを出荷するには、チームがビジネスロジックを書き始めるまでに数週間かかります。私たちのビジョンは、[Theseus のビジョン](https://theseus.gitlab.net/overview/vision/)の一環として、この期間を数時間に短縮することです。開発者のノート PC から、デプロイ済みで運用可能なサービスまでの道筋を整備します。
+
+- LabKit は、最初のコミットから、すべてのサービスに共通のロギング、メトリクス、トレーシングを提供します。
+- Caproni は、すべてのコントリビューターに、ローカルと CI で本番環境に近い開発環境を提供します。
 
 ## 責任の領域
 
+チームは [Theseus](https://theseus.gitlab.net/)に注力し、その構成要素である LabKit と Caproni を提供します。
+
 ```mermaid
 flowchart LR
-    DT[Development Tooling] --> DevEnv[Development Environments]
-    DevEnv --> GDK[GitLab Development Kit]
-    click GDK "https://gitlab.com/gitlab-org/gitlab-development-kit"
-    DevEnv --> Caproni[Caproni]
+    DT[Development Tooling] --> Theseus[Theseus]
+    click Theseus "https://theseus.gitlab.net/"
+    Theseus --> Caproni[Caproni]
     click Caproni "https://gitlab.com/gitlab-org/caproni"
-
-    DT --> ObservabilityTooling[Observability Tooling]
-    ObservabilityTooling --> labkit[LabKit]
+    Theseus --> labkit[LabKit]
     click labkit "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/labkit/"
-    
-    DT --> DeliveryTooling[Delivery Tooling]
-    DeliveryTooling --> featuregates[Feature Gates]
 
     DT --> CanonicalTooling[gitlab-org/gitlab Tooling]
     CanonicalTooling --> StaticAnalysis[Static Analysis]
 
     DT --> AuxTooling[Auxiliary Tooling<br><small>Useful tools for GitLab.com.</small>]
     AuxTooling --> civiz[Pipeline Visualizer]
-    AuxTooling --> subparticle[Subparticle]
 
     click civiz "https://gitlab.com/gitlab-org/quality/engineering-productivity/pipeline-visualizer"
-    click subparticle "https://gitlab.com/gitlab-org/quality/engineering-productivity/subparticle"
 ```
+
+### GitLab Development Kit (GDK)
+
+私たちは、[GitLab Development Kit](https://gitlab.com/gitlab-org/gitlab-development-kit/)にはもはや注力していません。Caproni は現在、[GitLab の戦略的な開発プラットフォーム](https://theseus.gitlab.net/changelog/2026-09-03-caproni-strategic-development-platform/)であり、今後の数四半期にわたって、チームメンバー、[Co-Create Program](https://about.gitlab.com/community/co-create/)のお客様、コミュニティコントリビューターを含む、すべての GitLab コントリビューター向けに GDK を置き換えていきます。
+
+- GDK での作業は、主に重大なバグの修正に限定します。
+- 本番環境に近い開発環境を必要とする新しいサービスは、今から Caproni を使用してください。
+- GDK 上で開発しているチームは Caproni への移行を計画し、[Caproni ドキュメント](https://gitlab-org.gitlab.io/caproni/)を読んでください。
+
+Caproni についての質問は、[`#proj_caproni`](https://gitlab.enterprise.slack.com/archives/C0ACPMUMETZ) Slack チャンネルまたは [Caproni Issue トラッカー](https://gitlab.com/gitlab-org/caproni)へお寄せください。
 
 ## チーム体制
 
@@ -55,40 +62,25 @@ flowchart LR
 
 継続的ロードマップ作成の一部として、私たちは四半期ごとにロードマップをレビューし、アプローチを検証または改良し、新しい優先順位を反映するためにそれを更新します。
 
-### Now
+### 現在 {#now}
 
-**フォーカス:** Development Environments での開発者体験を改善し、FY'27 (FY26Q4) の基盤を築く
+**フォーカス:** Caproni と LabKit を通じて Theseus の採用を可能にする
 
-- Development Environments のための GitLab エンジニアリングチームのオンボーディング体験を改善する
-- Development Environments の可観測性とモニタリング機能を改善する
-- FY'27 計画と基礎作業:
-  - モジュール化されたコンテナ化された Development Environment のアーキテクチャコンセプトを構築する
-  - SaaS でのロールアウト健康性向上のための Feature Gates システムの技術要件、概念実証、ツールをキュレートする
-  - 本番デバッグ向上のための LabKit のロギング標準化メカニズムをプロビジョニングする
+### 次 {#next}
 
-### Next
+未定
 
-**フォーカス:** 機能の安定性向上のための基盤を構築 (FY27Q1/Q2)
+### 将来 {#later}
 
-- エンジニアリングチームが Development Environments への自分のコンポーネントの統合をセルフサーブできるようにする
-- LabKit を使った標準化されたロギングとメトリクスで本番デバッグを改善する
-- SaaS でのロールアウト健康性向上のための Feature Gates システムの技術的解決を完了する
+未定
 
-### Later
-
-**フォーカス:** 機能の安定性向上のための基盤を構築 (FY27Q3+)
-
-- 出荷された変更に対するチームの信頼を向上させるために、本番準拠の Development Environments を構築する
-- 本番デバッグとインシデント解決を改善するために LabKit 内にトレーシング機能をプロビジョニングする
-- SaaS でのロールアウト健康性を向上させるための Feature Gates システムを構築する
-
-### Keeping The Lights On (KTLO)
+### 稼働維持（KTLO） {#keeping-the-lights-on-ktlo}
 
 計画された作業に加えて、私たちのチームは、依存関係のアップグレード、セキュリティ脆弱性、重要なバグ修正など、共有ツールの機能性とインフラストラクチャに影響する継続的な保守とサポートも担当します。
 
 ## 私たちとの連携
 
-問題、機能リクエスト、機能強化について: 私たちの [RFH リポジトリ](https://gitlab.com/gitlab-org/quality/request-for-help#developer-experience---request-for-help) で **[Issue を作成](https://gitlab.com/gitlab-org/quality/request-for-help/-/issues/new?description_template=developer_experience_request)** してください。あるいは、`#g_development_tooling` で私たちに連絡することもできます。
+問題、機能リクエスト、機能強化について: **[Issue を作成](https://gitlab.com/gitlab-org/quality/request-for-help/-/issues/new?description_template=developer_experience_request)**してください。作成先は私たちの [RFH リポジトリ](https://gitlab.com/gitlab-org/quality/request-for-help#developer-experience---request-for-help)です。あるいは、`#g_development_tooling` で私たちに連絡することもできます。
 
 個別の質問については、GitLab.com で直接チームメンバーに言及するか、私たちの Slack チャンネルを通じてチームに連絡してください。
 
@@ -103,15 +95,14 @@ flowchart LR
 
 ## 私たちの働き方
 
-私たちは AMER、APAC、EMEA の地域に地理的に分散しており、デフォルトで非同期で作業します。
+私たちは AMER と EMEA の地域に地理的に分散しており、デフォルトで非同期で作業します。
 
 ### ミーティング
 
-私たちは週に 1 回同期的に集まり、イテレーションを計画し、優先順位を揃え、進行中のトピックについて議論します。現在のスケジュールは、関与するすべてのタイムゾーンのメンバーに対応するために隔週で交互です。
-生産的な議論を促進するために、トピックは週の初めまでに議題に入れるべきです。
+私たちはチーム全体で週に 1 回同期的に集まり、進行中のトピックについて議論します。生産的な議論のために、週の初めまでにトピックをアジェンダに記入してください。
 
 ### プロジェクト管理
 
-私たちは [Infrastructure Platforms 部門](/handbook/engineering/infrastructure-platforms/project-management/) のプロジェクト管理プロセスに従います。
+私たちは [Infrastructure Platforms 部門](/handbook/engineering/infrastructure-platforms/project-management/)のプロジェクト管理プロセスに従います。
 
-現在のプロジェクトの詳細については、私たちの [親エピック](https://gitlab.com/groups/gitlab-org/quality/-/epics/114) を参照してください。
+現在のプロジェクトの詳細については、私たちの [親エピック](https://gitlab.com/groups/gitlab-org/quality/-/epics/114)を参照してください。

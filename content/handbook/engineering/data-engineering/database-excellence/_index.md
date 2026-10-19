@@ -2,16 +2,16 @@
 title: "Database Excellence ステージ"
 description: "Database Excellence セクションは、GitLab のデータベースがスケールにおいて確実に稼働することを保証しながら、すべてのデータストアにわたるデータアーキテクチャ、配置、ライフサイクル管理についてチームが情報に基づいた意思決定を行えるようにします。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T12:11:14-05:00"
-translated_at: "2026-09-20T02:04:59.673212+00:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+lastmod: "2026-10-16T11:46:58+13:00"
+translated_at: "2026-10-19T10:15:57Z"
 translator: codex
 stale: false
 ---
 
 ## ミッション {#mission}
 
-GitLab.com と GitLab を自ら運用するお客様の両方で、GitLab のデータベースの信頼性と運用上の余力を維持します。GitLab.com では、Postgres 群の運用、ハードウェアの追加だけに頼らずデータの増加を制御して飽和を未然に防ぐこと、Cells を含むすべてのプロダクトデータベース向けに単一の管理された経路を構築することを意味します。セルフマネージドのお客様には、実行の可否を判定する整合性チェック、すべてのマイグレーションが実行されることを保証するテストフレームワーク、より短いアップグレード経路によって、信頼できるアップグレードを提供します。これらすべてを通じて、私たちはコードベースの拡大に合わせてデータベースレビューをスケールさせ、少人数のレビュアーがボトルネックにならずに、チームがデータを使って持続可能な形で構築できるようにします。
+GitLab.com と GitLab を自ら運用するお客様の両方で、GitLab のデータベースの信頼性と運用上の余力を維持します。GitLab.com では、Postgres 群の運用、ハードウェアの追加だけに頼らずデータの増加を制御して飽和を未然に防ぐこと、Cells を含むすべてのプロダクトデータベース向けに単一の管理された経路を構築することを意味します。Self-Managed のお客様には、実行の可否を判定する整合性チェック、すべてのマイグレーションが実行されることを保証するテストフレームワーク、より短いアップグレード経路によって、信頼できるアップグレードを提供します。これらすべてを通じて、私たちはコードベースの拡大に合わせてデータベースレビューをスケールさせ、少人数のレビュアーがボトルネックにならずに、チームがデータを使って持続可能な形で構築できるようにします。
 
 ## ステージのリーダーシップ {#stage-leadership}
 
@@ -35,13 +35,14 @@ GitLab.com と GitLab を自ら運用するお客様の両方で、GitLab のデ
 
 ### Self-Managed Database Experience {#self-managed-database-experience}
 
-[Self-Managed Database Experience](/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/) グループは、飽和ポイントのシフトレフトでの特定を含め、GitLab.com とセルフマネージドの両方のデプロイメントでデータベースを健全に保つためのモニタリング、オブザーバビリティ、ヘルスフレームワークを提供します。
+[Self-Managed Database Experience](/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/)グループは、Self-Managed のお客様に、データベースの状態の可視性、より高速なデータベースマイグレーション、明確なアップグレード経路を提供します。
 
 優先事項:
 
-* データベースの飽和ポイントを積極的に管理することでオペレーションの余力を維持する
-* すべてのデプロイメントタイプにわたってデータベースのヘルスを可視化する
-* データベースのリソース利用とコスト効率を最適化する
+* アップグレード前にデータベースの整合性を、アップグレードの間にデータベースの健全性をチェックする
+* すべてのマイグレーションを、お客様に届く前にデータを使ってテストする
+* 管理者自身のインスタンスのデータに基づき、アップグレード経路を示す
+* マイグレーションを依存関係の順序で実行し、中間バージョンで停止することなくアップグレードを短縮する
 
 {{< group-by-slugs nbelokolodov amsingh6 imanpalsingh krasimirangelov >}}
 
@@ -65,7 +66,7 @@ FY27 の Q1 に、私たちはいくつかのことを達成するためにチ�
 
 * プロジェクトや領域の間を行き来することによる疲労を防ぐために、チームの範囲を狭める
 * チームが現在のサイズの制限を超えて成長できるように、より多くのマネジメントサポートを提供する
-* セルフマネージドのお客様に影響を与えるトピックを含めるように、部門全体の範囲を拡大する
+* Self-Managed のお客様に影響を与えるトピックを含めるように、部門全体の範囲を拡大する
 
 #### Database Frameworks {#database-frameworks}
 
@@ -77,7 +78,7 @@ FY27 の Q1 に、私たちはいくつかのことを達成するためにチ�
 
 #### Database Health {#database-health}
 
-[Database Health](/handbook/engineering/data-engineering/database-excellence/database-health/) グループは FY27-Q1 の再編成から 2026 年 9 月まで活動し、その時点でセルフマネージドのヘルスに関する業務は Self-Managed Database Experience に、GitLab.com の飽和に関する業務は Database Automation に移管されました。
+[Database Health](/handbook/engineering/data-engineering/database-excellence/database-health/) グループは FY27-Q1 の再編成から 2026 年 9 月まで活動し、その時点で Self-Managed のヘルスに関する業務は Self-Managed Database Experience に、GitLab.com の飽和に関する業務は Database Automation に移管されました。
 
 ## 私たちの働き方 {#how-we-work}
 
@@ -91,26 +92,26 @@ Database Excellence 内の各チームは、バックエンドエンジニアと
 
 ### インシデントのエスカレーション {#incident-escalation}
 
-データベースインシデントのエスカレーションは、オンコールのルーティングに [incident.io](https://app.incident.io/gitlab/on-call/schedules/01JXJ7MN4T14008GQKWYYNT6E8) を使用します。
+データベースインシデントのエスカレーションは、オンコールのルーティングに [incident.io](https://app.incident.io/gitlab/on-call/schedules/01JXJ7MN4T14008GQKWYYNT6E8)を使用します。
 
-* **範囲**: Incident Manager On Call、Engineer On Call、Security チームが提起した GitLab.com の S1 および S2 本番インシデント。GitLab Dedicated のサポートはコンサルティング的です。セルフマネージドのサポートは裁量的で、ケースバイケースで評価されます。
+* **範囲**: Incident Manager On Call、Engineer On Call、Security チームが提起した GitLab.com の S1 および S2 本番インシデント。GitLab Dedicated のサポートはコンサルティング的です。Self-Managed のサポートは裁量的で、ケースバイケースで評価されます。
 * **エスカレーション**: インシデントの Slack チャンネルで `/inc escalate` を使用します。緊急でない問題については、[トリアージローテーション](#triage-rotations)を使用するか、`#s_database_excellence` に投稿します。
 * **対応**: ベストエフォート、現地タイムゾーン、平日のみのカバレッジ（24/5）。オンコールエンジニアは、コンサルティング的な立場で主題の専門家として参加します。
 * **プロセスの詳細**: 対応手順とシャドーイングの指示については、[完全なエスカレーションプロセス](/handbook/engineering/data-engineering/database-excellence/help/#step-4-escalate-to-database-excellence)を参照してください。
 
 ### リライアビリティ関連の依頼 {#reliability-requests}
 
-TBD
+未定
 
 ### Tier-2 オンコール {#tier-2-on-call}
 
-[Database Excellence オンコール](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#database-excellence) は Tier-2 ローテーションです。
+[Database Excellence オンコール](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#database-excellence)は Tier-2 ローテーションです。
 
 24x5 のカバレッジ体制で、チームのキャパシティにより 05:00 - 07:00 および 22:00 - 23:00 がローテーションにおける既知のギャップです。
 
 ### 長期的な Stable Counterpart またはレビュアーの依頼 {#long-term-stable-counterpart-or-reviewer-requests}
 
-stable counterpart やレビュアーといった長期的な依頼は、ステージレベルで処理されます。これらの依頼は [カウンターパート依頼](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items/new?description_template=counterpart_request) として提出してください。
+Stable Counterpart やレビュアーといった長期的な依頼は、ステージレベルで処理されます。これらの依頼は [カウンターパート依頼](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items/new?description_template=counterpart_request)として提出してください。
 
 ### トリアージローテーション {#triage-rotations}
 
@@ -125,4 +126,4 @@ Database Excellence には[毎週のトリアージ Issue](https://gitlab.com/gi
 
 ## 計画プロセス {#planning-process}
 
-TBA
+後日発表

@@ -2,11 +2,11 @@
 title: Growth マイルストーン計画・リファインメント・見積もり
 description: "Growth チームの継続的リファインメントプロセスと見積もりガイドライン"
 upstream_path: "/handbook/engineering/development/growth/initiative_refinement_estimation/"
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-translated_at: "2026-10-10T06:55:21.889977+00:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:19:40Z"
 translator: claude
 stale: false
-lastmod: "2026-10-09T22:03:57Z"
+lastmod: "2026-10-14T13:54:16-04:00"
 ---
 
 ## マイルストーン計画フェーズ
@@ -19,7 +19,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 - PM、EM、UXM、デザイナー、エンジニアが機能・実験・バグにわたるエピックと Issue を特定し、ターゲットマイルストーンで注釈を付けます
 - PM は EM と協力して優先プロジェクトを（必要に応じて）マイルストーン開始日前に通常は実装 Issue に分解します
 - 理想的には、ターゲットマイルストーンに割り当てられた Issue はマイルストーン開始前にデザインステージをクリアしているべきです。これにより、エンジニアリングが確信を持って成果物のスコープを計画できます。市場のコミットメントによってデザインが完了する前にターゲットマイルストーンをロックする必要がある場合は、例外として扱います。
-- EM はターゲットマイルストーンの開始日にマイルストーンキックオフミーティングを開催します。エンジニアは事前にマイルストーン Issue をレビューし、関心、キャパシティ、複雑さに基づいて[DRI](./engineering_dri.md)として自己割り当てすることが期待されます。キックオフはアサインメントセッションではなく、業務開始前のブロッカー、依存関係、未解決の質問を表面化するためのディスカッションフォーラムです。
+- EM はターゲットマイルストーンの開始日にマイルストーンキックオフミーティングを開催します。エンジニアは事前にマイルストーン Issue をレビューし、関心、キャパシティ、複雑さに基づいて [DRI](./engineering_dri.md)として自己割り当てすることが期待されます。キックオフはアサインメントセッションではなく、業務開始前のブロッカー、依存関係、未解決の質問を表面化するためのディスカッションフォーラムです。
 
 ## 実行フェーズ
 
@@ -40,12 +40,10 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 
 ### 業務キューボード {#work-queue-boards .h5}
 
-マイルストーンの実行は、マイルストーン計画 Issue のトラックに対応する 4 つのボードを中心に進めます。これらのボード上の Issue は、上から下へ優先順位順に並んでいます。順番に引き取ってください。
+マイルストーンの実行は、[部門横断の優先順位付け](/handbook/product/product-processes/cross-functional-prioritization/)の構成要素に従ってマイルストーン計画 Issue のトラックをまとめた、2 つのボードを中心に進めます。これらのボード上の Issue は、上から下へ優先順位順に並んでいます。順番に引き取ってください。
 
-1. [Growth - 機能業務](https://gitlab.com/groups/gitlab-org/-/boards/11511990?not[label_name][]=Category%3AEngineering%20Excellence&not[label_name][]=type%3A%3Amaintenance&label_name[]=section%3A%3Agrowth&label_name[]=Growth%3A%20Driving%20First%20Orders&milestone_title=Started)
-1. [Growth - 優先バグ](https://gitlab.com/groups/gitlab-org/-/boards/11512116?milestone_title=Started&label_name[]=section%3A%3Agrowth&label_name[]=type%3A%3Abug)
-1. [Growth - 技術的負債の業務](https://gitlab.com/groups/gitlab-org/-/boards/11512114?not[label_name][]=Category%3AEngineering%20Excellence&not[label_name][]=Engineering%20Time&label_name[]=section%3A%3Agrowth&label_name[]=type%3A%3Amaintenance&milestone_title=Started)
-1. [Growth - Engineering Excellence の業務](https://gitlab.com/groups/gitlab-org/-/boards/11512115?milestone_title=Started&label_name[]=section%3A%3Agrowth&label_name[]=Engineering%20Time&label_name[]=Category%3AEngineering%20Excellence)
+1. [Growth - 機能開発](https://gitlab.com/groups/gitlab-org/-/boards/11511990) - Driving First Orders の機能開発（`type::feature`）。PM がこのボードの優先順位を付けます。
+1. [Growth - Product Foundations](https://gitlab.com/groups/gitlab-org/-/boards/11512114?or%5Blabel_name%5D%5B%5D=type%3A%3Amaintenance&or%5Blabel_name%5D%5B%5D=type%3A%3Abug&or%5Blabel_name%5D%5B%5D=Category%3AEngineering%20Excellence&or%5Blabel_name%5D%5B%5D=Engineering%20Time&label_name[]=section%3A%3Agrowth&milestone_title=Started) - バグ（`type::bug`）、技術的負債（`type::maintenance`）、[Engineering Time](/handbook/engineering/#engineering-initiatives)／Engineering Excellence の作業。EM と Staff+ エンジニアがこのボードの優先順位を付け、バグには[バグの優先順位付け](/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization/)と[重大度 SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)を使用します。
 
 ## マイルストーンクローズフェーズ
 
@@ -53,9 +51,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 - ボットはスピルオーバーを管理し、まだオープンな Issue にマイルストーン不達ラベルを追加して次のマイルストーンに移動させます
 - ボットはマイルストーンをクローズします
 
-<span id="work-progression-guidelines"></span>
-
-## 業務進行ガイドライン
+## 業務進行ガイドライン {#work-progression-guidelines}
 
 ### 問題の検証 {.h5}
 
@@ -76,7 +72,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 
 リファインメントという名前ですが、これは計画を細分化し、エンジニアリングの実現可能性を検討するステップであり、単に重みに投票することではありません。チームが、技術的なアプローチ、依存関係、リスク、スコープが適切かどうかといった、Issue を実際に*どのように*実装するかを検討する場です。実際の進め方については、[リファインメントへのチームの参加](#team-participation-in-refinement)を参照してください。重みの見積もりは、この分析の*結果*であり、目的ではありません。
 
-- Issue は優先度順（上から下）にトリアージボットによって `Planning Breakdown` ステータスから `Refinement` ステータスへ自動的に移動されます。Issue は、`Next Up` ラベルが付いているか、現在または将来のマイルストーン（期限が今日以降のアクティブなマイルストーン）に割り当てられている場合に、自動リファインメントの対象になります。両方のプールが同じ限られたリファインメント枠を取り合います。`Next Up` の Issue が先に枠を埋め、残りの枠をマイルストーンに割り当てられた Issue が優先度順に補完します。ボットはこの列の最大制限よりも Issue 数が少い場合にのみリファインメントに移動します。これは PM が `planning breakdown` 列で上位に移動させることで Issue を優先する最初の機会です。Issue がリファインメントに移動されると、専用の `refinement thread` が作成され、ディスカッションと重み見積もりの場所として機能します。
+- Issue は優先度順（上から下）にトリアージボットによって `Planning Breakdown` ステータスから `Refinement` ステータスへ自動的に移動されます。Issue は、`Next Up` ラベルが付いているか、現在または将来のマイルストーン（期限が今日以降のアクティブなマイルストーン）に割り当てられている場合に、自動リファインメントの対象になります。両方のプールが同じ限られたリファインメント枠を取り合います。`Next Up` の Issue が先に枠を埋め、残りの枠をマイルストーンに割り当てられた Issue が優先度順に補完します。ボットはこの列の最大制限よりも Issue 数が少ない場合にのみリファインメントに移動します。これは PM が `planning breakdown` 列で上位に移動させることで Issue を優先する最初の機会です。Issue がリファインメントに移動されると、専用の `refinement thread` が作成され、ディスカッションと重み見積もりの場所として機能します。
   - リファインメントスレッドが作成されると、ボットは Growth エンジニア全員ではなく、ローテーションする対応可能な 3 人のエンジニアにタグを付けます（休暇中のエンジニアは除外されます）。タグ付けは、その Issue のリファインメント担当グループに入ったことを意味します。タグ付けされたエンジニアは、遅くとも 48 時間以内、理想的には 24 時間以内に重みの見積もりとフィードバックを提供することが期待されます。
   - 💡 ヒント: 稀な場合で Issue を急ぎで処理する必要がある場合、Issue のステータスを `Refinement` に設定することで、手動でリファインメントに移動できます。これによりトリアージボットが反応し、その Issue に即座に `refinement thread` を追加するため、自動パスと同じようにリファインメントを進められます。
 - リファインメント中、チームは Issue が適切に説明され、要件が明確であることを確認します。`refinement thread` で議論できますが、そこで行われた変更や決定は Issue の説明にも反映してください。リファインメントを行うエンジニアが Issue の説明に納得したら、[ガイドライン](#estimation-guidelines)に基づいて Issue に直接重みを設定し、見積もりの根拠を説明する短いコメントを追加してください。根拠のコメントには、見積もりを左右する主な要因（複雑さ、不明点、変更するコードの範囲、依存関係）を明記します。数値だけではチームに判断の手がかりを提供できません。実現可能性やスコープに懸念がある場合は、スレッドで議論を始めてください。数値そのものよりも、共通の理解に至ることが重要です。
@@ -89,7 +85,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 ### 開発フェーズ {#development-phase .h5}
 
 - 重みが設定され、リファインメントが完了し（かつ Issue を分割する必要がない場合）、エンジニアが Issue を `Ready for Development` ステータスに移動します。
-  - 💡 ヒント: Issue に問題があり、先に進めるべきでない場合は、問題が解決するまで `Ready for Development` に進めてはならないことを視覚的に示すため、`refinement thread` に ❌ のリアクションを追加してください。追加した人は、問題が解消されたらリアクションを削除する責任もあります。
+  - 💡 ヒント: Issue に問題があり、先に進めるべきでない場合は、`refinement thread` に ❌ のリアクションを追加して、問題が解決するまで `Ready for Development` に進めてはならないことを視覚的に示してください。追加した人は、問題が解消されたらリアクションを削除する責任もあります。
 - 準備済み業務の優先順位付けはマイルストーンの割り当てを通じて行われます。PM は Issue のマイルストーンを設定して、スケジュール済みであることを示します。個別のスケジューリングステータスはなく、マイルストーンがスケジューリングのシグナルとして機能します。
 - エンジニアが `Ready for Development` から Issue を引き取り、ステータスを `In Dev` に変更します。Issue がまだマイルストーンに割り当てられていない場合、トリアージボットが現在のマイルストーンを割り当てます。
 - Issue に関連する MR がレビューステージに達したら、Issue のステータスが `In Review` に変更されます
@@ -100,30 +96,28 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 
 - Engineering DRI が適切な検証レベルを決定します。シンプルな完了の場合は PM にメンションしてクローズするか、複雑な変更については正式な PM 検証をリクエストします。
 
-<span id="estimation-guidelines"></span>
-
-## 見積もりガイドライン
+## 見積もりガイドライン {#estimation-guidelines}
 
 [開発の見積もりは、Issue が `In dev` ステータスで過ごし、`Complete` に移動するまでの時間です。パイプラインの失敗やレビュアーの可用性によって不確実なレビューサイクルが主要な要因です]
 
 | 重み | 通常のタイムライン | 説明 |
 | ------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1      | 1週間未満           | 最もシンプルな変更。副作用がないことが確認されています。 |
-| 2      | 1〜2週間            | すべての要件を理解したシンプルな変更（コードの変更が最小限）。 |
-| 3      | 2〜3週間            | シンプルな変更だが、コードのフットプリントが大きい（例: 多くの異なるファイルやテストへの影響）。要件は明確です。 |
-| 5      | 3〜4週間            | コードベースの複数の領域に影響を与えるより複雑な変更。リファクタリングも含まれる場合があります。要件は理解されていますが、途中でいくつかのギャップが生じる可能性があります。 |
-| 5+     | 4週間以上            | 依存関係（他のチームまたはサードパーティ）がある可能性があり、すべての要件をまだ理解していない大きな変更。マイルストーンでこれをコミットするのは難しく、要件をさらに明確にするか、より小さな Issue に分割することが望ましいです。 |
+| 1      | < 1 週間           | 最もシンプルな変更。副作用がないことが確認されています。 |
+| 2      | 1-2 週間            | すべての要件を理解したシンプルな変更（コードの変更が最小限）。 |
+| 3      | 2-3 週間            | シンプルな変更だが、コードのフットプリントが大きい（例: 多くの異なるファイルやテストへの影響）。要件は明確です。 |
+| 5      | 3-4 週間            | コードベースの複数の領域に影響を与えるより複雑な変更。リファクタリングも含まれる場合があります。要件は理解されていますが、途中でいくつかのギャップが生じる可能性があります。 |
+| 5+     | 4 週間+            | 依存関係（他のチームまたはサードパーティ）がある可能性があり、すべての要件をまだ理解していない大きな変更。マイルストーンでこれをコミットするのは難しく、要件をさらに明確にするか、より小さな Issue に分割することが望ましいです。 |
 
 計画と見積もりにおいて、私たちは[予測可能性よりもベロシティ](/handbook/engineering/development/principles/#velocity)を重視します。計画と見積もりの主な目標は、[MVC](/handbook/values/#minimal-valuable-change-mvc)に焦点を当て、盲点を発見し、過度に最適化することなく基本的な予測可能性を達成することです。90% ではなく 70% の予測可能性を目指します。ベロシティ（マージリクエスト率）の最適化が Growth チームの[週次実験カデンス](/handbook/product/groups/growth/#weekly-growth-meeting)達成を可能にすると考えています。
 
 - Issue に多くの未知事項があり、1 か 5 かが不明な場合は、慎重に高め（5）で見積もります。
 - Issue に多くの未知事項がある場合は、2 つの Issue に分割できます。最初の Issue は未知事項のリスクを軽減し潜在的なソリューションを探る調査（[スパイク](<https://en.wikipedia.org/wiki/Spike_(software_development)>)とも呼ばれる）のためです。2 番目の Issue は実装のためです。
-- 初期見積もりが誤りで修正が必要な場合は、すぐに見積もりを修正してProduct Manager に通知します。Product Manager とチームは、マイルストーンのコミットメントを調整する必要があるかどうかを決定します。
+- 初期見積もりが誤りで修正が必要な場合は、すぐに見積もりを修正して Product Manager に通知します。Product Manager とチームは、マイルストーンのコミットメントを調整する必要があるかどうかを決定します。
 
 ## リファインメントへのチーム参加 {#team-participation-in-refinement}
 
 <!-- markdownlint-disable-next-line MD051 : the anchor is valid; lint miscomputes it because of the {.h5} heading attribute -->
-非同期で運営するということは、リファインメントが全員が同時に参加するスケジュールされたミーティングに依存できないことを意味します。代わりに、チームはエンジニアが定期的に[Growth エピックボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/2079888)と[業務キューボード](#work-queue-boards)でリファインメントステータスの項目を確認する、継続的リファインメントの考え方を採用すべきです。エピックが `Refinement` ステータスに現れたら、エンジニアはそれをレビューし、明確化の質問をし、技術的実現可能性を評価し、提案された方向についてフィードバックを提供すべきです。リファインメント中に関心とコンテキストを発展させたエンジニアは、エピックを自己割り当てして Engineering DRI としてボランティア参加することを奨励されます。これは受動的な活動ではありません - 目標は懸念事項を表面化し、代替案を提案し、エピックが十分に理解されていることを確認し、理想的には分解と実装のオーナーシップをボランティアで引き受けることです。
+非同期で運営するということは、リファインメントが全員が同時に参加するスケジュールされたミーティングに依存できないことを意味します。代わりに、チームはエンジニアが定期的に [Growth エピックボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/2079888)と[業務キューボード](#work-queue-boards)でリファインメントステータスの項目を確認する、継続的リファインメントの考え方を採用すべきです。エピックが `Refinement` ステータスに現れたら、エンジニアはそれをレビューし、明確化の質問をし、技術的実現可能性を評価し、提案された方向についてフィードバックを提供すべきです。リファインメント中に関心とコンテキストを発展させたエンジニアは、エピックを自己割り当てして Engineering DRI としてボランティア参加することを奨励されます。これは受動的な活動ではありません - 目標は懸念事項を表面化し、代替案を提案し、エピックが十分に理解されていることを確認し、理想的には分解と実装のオーナーシップをボランティアで引き受けることです。
 
 <!-- markdownlint-disable-next-line MD051 : the anchor is valid; lint miscomputes it because of the {.h5} heading attribute -->
 同様に、[業務キューボード](#work-queue-boards)は `Refinement` と `Ready for Development` ステータスにある Issue についてモニタリングされるべきです。リファインメント中の Issue には重みの見積もりと技術的フィードバックが必要です。開発準備完了の Issue は即座に引き取り可能です。これらの列を定期的にスキャンすることで、エンジニアは今後の業務の認識を維持し、専門知識や関心に合致する Issue を特定し、パイプラインを動かし続けることができます。

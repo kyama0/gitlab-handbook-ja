@@ -6,11 +6,11 @@ tags:
   - security_standard
   - security_standard_caplscsi
 upstream_path: /handbook/security/policies_and_standards/software-development-lifecycle-standard/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:31:49Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-10-13T15:22:43-07:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -21,7 +21,7 @@ lastmod: "2026-02-12T20:47:52+00:00"
 
 ## 適用範囲
 
-本標準は、GitLab の本番アプリケーションを支えるために GitLab でコードを開発するすべての人に適用されます。開発プロセスの詳細については [product development flow](/handbook/product-development/how-we-work/product-development-flow/) を参照してください。
+本標準は、GitLab の本番アプリケーションを支えるために GitLab でコードを開発するすべての人に適用されます。開発プロセスの詳細については [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)を参照してください。
 
 ## 役割と責任
 
@@ -70,9 +70,13 @@ GitLab でのソフトウェア開発は、業界標準の開発プラクティ�
 
 ソフトウェア開発は、GitLab の開発プラットフォームを使用してバージョン管理された方法で行わなければなりません。
 
-開発は [Code review guidelines](/handbook/engineering/workflow/code-review/) と [secure coding best practices](https://docs.gitlab.com/ee/development/secure_coding_guidelines.html)（脆弱性の混入を避けるため）を遵守しなければなりません。
+開発は [コードレビューガイドライン](/handbook/engineering/workflow/code-review/)と [セキュアコーディングのベストプラクティス](https://docs.gitlab.com/ee/development/secure_coding_guidelines.html)（脆弱性の混入を避けるため）を遵守しなければなりません。
 
 開発作業は、本番環境へのデプロイメント前にテストと承認を受けなければなりません。これには、「開発」作業とはみなされない可能性のある構成変更やその他関連する変更も含まれます。
+
+GitLab は、各マージリクエストのレビュアーおよび承認者の身元を、それぞれが人であるかエージェントであるかも含めて記録しなければなりません。GitLab は、これらの記録を証拠として保持しなければなりません。
+
+エージェントが変更の作成と承認の両方を行う場合は、マージ後に人がその変更をレビューしなければなりません。
 
 ### デプロイメント
 
@@ -84,4 +88,4 @@ GitLab におけるソフトウェアのデプロイメントは、定義され�
 
 GitLab はそのプラットフォームの状態と安定性を継続的に監視しています。
 
-GitLab のプラットフォームの保守は [GitLab's release and maintenance policy](https://docs.gitlab.com/ee/policy/maintenance.html) に従って実施されます。
+GitLab のプラットフォームの保守は [GitLab のリリースおよび保守ポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って実施されます。

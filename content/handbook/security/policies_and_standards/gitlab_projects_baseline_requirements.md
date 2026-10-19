@@ -6,18 +6,18 @@ tags:
   - security_standard
   - security_standard_cmma
 upstream_path: /handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/
-upstream_sha: 2ea342c4234f3820e0bad8565152836e52df6849
-translated_at: "2026-07-03T20:37:21+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:31:49Z"
 translator: codex
 stale: false
-lastmod: "2026-06-29T08:59:00-04:00"
+lastmod: "2026-10-13T15:22:43-07:00"
 ---
 
 ## 目的
 
 このページの目的は、GitLab 製品を構成するコードに最終的に影響を与える、および/または GitLab のビルド、リリース、デプロイに影響を与える GitLab プロジェクトを構成する際に遵守すべき最小限の要件セットを概説することです。最終的な目標は、GitLab のコードベースに最終的に影響を与える変更がレビューなしで行われないようにすることです。このページはまた、GitLab のユーザーが重要だと考えるプロジェクトを保護するためのいくつかの可能な構成を提供することで、ユーザーを支援できます。
 
-GitLab の[ドッグフーディングへのコミットメント](/handbook/engineering/development/principles/#dogfooding) と GitLab の[効率の価値](/handbook/values/#efficiency) を念頭に置くと、これらのベースラインプロジェクト構成は*すべての*プロジェクトで必要とされるわけではなく、(直接的または間接的に) GitLab のコードベースに影響を与えるプロジェクト、または別の伝達された理由で重要であると見なされるプロジェクトでのみ必要とされることを理解することが重要です (これらのインスタンスでは、これらのベースライン構成の必要性の背後にある「理由」の根拠が明確に伝えられる必要があることに注意してください)。
+GitLab の[ドッグフーディングへのコミットメント](/handbook/engineering/development/principles/#dogfooding)と GitLab の[効率の価値](/handbook/values/#efficiency)を念頭に置くと、これらのベースラインプロジェクト構成は*すべての*プロジェクトで必要とされるわけではなく、(直接的または間接的に) GitLab のコードベースに影響を与えるプロジェクト、または別の伝達された理由で重要であると見なされるプロジェクトでのみ必要とされることを理解することが重要です (これらのインスタンスでは、これらのベースライン構成の必要性の背後にある「理由」の根拠が明確に伝えられる必要があることに注意してください)。
 
 ただし、チームメンバーがプロジェクトを作成または作業する際に、これらのベースライン構成を念頭に置くことが推奨されます。これらは、GitLab プロジェクトでなされる貢献のセキュリティと品質を向上させるように設計されているためです。
 
@@ -36,11 +36,11 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 - コードを持たないプロジェクト
 - GitLab のコードベースに影響を与えないボットをビルドするプロジェクト (例: YAML ファイルを CSV に変換するスクリプト)
 
-プロジェクトの使用法は時間の経過とともに自然にシフトする可能性があり、継続的にプロジェクトの使用法を再評価することが重要です。プロジェクトはどちらのカテゴリーにも入ったり出たりする可能性があるため、毎日プロジェクトで作業する際にそれを念頭に置いてください。期待されるのは、プロジェクトにこれらのベースライン構成が設定されている場合でも、チームメンバーが作業で協力し合い、個人が単一障害点になるリスクを高める知識のサイロでの作業を避けることで、効率が低下しないことです。これらの価値観はまた、変更に複数のチームメンバーを関与させることで、私たちの[透明性の価値](/handbook/values/#transparency) を促進します。
+プロジェクトの使用法は時間の経過とともに自然にシフトする可能性があり、継続的にプロジェクトの使用法を再評価することが重要です。プロジェクトはどちらのカテゴリーにも入ったり出たりする可能性があるため、毎日プロジェクトで作業する際にそれを念頭に置いてください。期待されるのは、プロジェクトにこれらのベースライン構成が設定されている場合でも、チームメンバーが作業で協力し合い、個人が単一障害点になるリスクを高める知識のサイロでの作業を避けることで、効率が低下しないことです。これらの価値観はまた、変更に複数のチームメンバーを関与させることで、私たちの[透明性の価値](/handbook/values/#transparency)を促進します。
 
 ### 自分のプロジェクトがどこに当てはまるかわかりません
 
-それは大丈夫です! そして、確かに珍しいことではありません。質問がある場合は、私たちが対処し、適切なカテゴリーに当てはめられるよう、提起してください。プロジェクトの分類方法をここで反復することができ、セキュリティと品質、そして効率へのコミットメントを確保できます。
+それは大丈夫です! そして、確かに珍しいことではありません。質問がある場合は、私たちが対処し、適切なカテゴリーに当てはめられるよう、提起してください。プロジェクトの分類方法をここでイテレーションを行い、セキュリティと品質、そして効率へのコミットメントを確保できます。
 
 ### 自分のプロジェクトは基準に当てはまらないようですが、それでもこれらの構成が必要ですか?
 
@@ -48,17 +48,19 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 
 ## 保護されたブランチのベースライン構成
 
-一般的なルールとして、私たちは[誰もが保護されたブランチに MR を提出することを要求する](https://docs.gitlab.com/ee/user/project/repository/branches/protected.html#require-everyone-to-submit-merge-requests-for-a-protected-branch) ような方法でブランチを保護したいと考えています。MR を使用するこの要件により、なされた変更とその背後にある根拠の追跡がより容易になり、最も重要なことは、保護されたブランチに変更を加えるために MR を使用する必要があることです。これは、構成された MR 承認ルールと密接に連携します。アカウントが保護されたブランチに直接プッシュできる場合、そのアカウントは MR を使用する必要がなく、別のチームメンバーの関与なしに変更を加えることができます。
+一般的なルールとして、私たちは[誰もが保護されたブランチに MR を提出することを要求する](https://docs.gitlab.com/ee/user/project/repository/branches/protected.html#require-everyone-to-submit-merge-requests-for-a-protected-branch) ような方法でブランチを保護したいと考えています。MR を使用するこの要件により、なされた変更とその背後にある根拠の追跡がより容易になり、最も重要なことは、保護されたブランチに変更を加えるために MR を使用する必要があることです。これは、構成された MR 承認ルールと密接に連携します。アカウントが保護されたブランチに直接プッシュできる場合、そのアカウントは MR を使用する必要がなく、独立したレビューを受けることなく変更を加えられます。
+
+法律、規制、または契約によって人による明示的な承認が求められる場合は、人が変更を承認しなければなりません。例として、SOX または FedRAMP の統制の対象となる変更が挙げられます。
 
 ### MR を要求するように構成された保護されたブランチ設定の例 1
 
 ![MR を要求するように構成された保護されたブランチ設定の例 1](/images/protected_branch_settings_example.jpg "保護されたブランチ設定の例")
 
-[Code Owners の使用に関する注意](/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/#note-on-usage-of-code-owners) を参照
+[Code Owners の使用に関する注意](/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/#note-on-usage-of-code-owners)を参照
 
 ## MR 承認ルールの構成
 
-MR は GitLab の[コードレビューガイドライン](/handbook/engineering/workflow/code-review/) に従ってレビューされる必要があります。レビューされていないコミットで MR がマージされないようにするため、[MR 承認ルール](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/settings.html#approval-settings) を以下の 2 つの方法のいずれかで有効にする必要があります。
+MR は GitLab の[コードレビューガイドライン](/handbook/engineering/workflow/code-review/)に従ってレビューされる必要があります。レビューされていないコミットで MR がマージされないようにするため、[MR 承認ルール](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/settings.html#approval-settings)を以下の 2 つの方法のいずれかで有効にする必要があります。
 
 ### Code Owners なしで構成された MR 承認ルールの例 1
 
@@ -68,30 +70,30 @@ MR は GitLab の[コードレビューガイドライン](/handbook/engineering
 
 ![Code Owners ありで構成された MR 承認ルールの例 2](/images/mr-approvals-with-code-owners.png "Code Owners ありで構成された MR 承認ルールの例 2")
 
-[Code Owners の使用に関する注意](/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/#note-on-usage-of-code-owners) を参照
+[Code Owners の使用に関する注意](/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/#note-on-usage-of-code-owners)を参照
 
 ## Code Owners の使用に関する注意 {#note-on-usage-of-code-owners}
 
 すべてのプロジェクトで Code Owners が有効になっているわけではないことに注意してください。すべてのインスタンスで必要ないかもしれません。
 
-プロジェクトが Code Owners を使用する場合、保護されたブランチ設定は「Code owner approval」を**ON** に切り替えるように構成し、適切に構成された Code Owners ファイルを作成する必要があります。GitLab Docs では Code Owners の動作と[Code Owners の設定方法](https://docs.gitlab.com/ee/user/project/codeowners/#set-up-code-owners) を定義しています。
+プロジェクトが Code Owners を使用する場合、保護されたブランチ設定は「Code owner approval」を**ON** に切り替えるように構成し、適切に構成された Code Owners ファイルを作成する必要があります。GitLab Docs では Code Owners の動作と [Code Owners の設定方法](https://docs.gitlab.com/ee/user/project/codeowners/#set-up-code-owners)を定義しています。
 
-[MR 承認ルールも Code Owners を利用するように構成](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/rules.html#code-owners-as-eligible-approvers) し、影響を受けるファイルタイプを持つ MR を承認するために少なくとも 1 人の Code Owner を要求する必要があります
+[MR 承認ルールも Code Owners を利用するように構成](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/rules.html#code-owners-as-eligible-approvers)し、影響を受けるファイルタイプを持つ MR を承認するために少なくとも 1 人の Code Owner を要求する必要があります
 
 徹底的にレビューし、`#sec-assurance` Slack チャンネルで、または混乱がある場合は Code Owners を設定している MR でタグを付けて質問してください!
 
 ## 継続的なモニタリング
 
-これらのベースライン構成を要求する基準を満たすプロジェクトは、私たちのこのページに示されているガイダンスに従っていることを確認する継続的コントロールモニタリングプログラムの一環として、[GitLab セキュリティコンプライアンスチーム](/handbook/security/security-assurance/security-compliance/) によって構成テストのためにいつでも選択される可能性があることに注意してください。プログラムの概要については、[GCF セキュリティコントロールライフサイクル](/handbook/security/security-assurance/security-compliance/security-control-lifecycle/) ページを参照してください。
+これらのベースライン構成を要求する基準を満たすプロジェクトは、私たちのこのページに示されているガイダンスに従っていることを確認する継続的コントロールモニタリングプログラムの一環として、[GitLab Security Compliance チーム](/handbook/security/security-assurance/security-compliance/)によって構成テストのためにいつでも選択される可能性があることに注意してください。プログラムの概要については、[GCF セキュリティコントロールライフサイクル](/handbook/security/security-assurance/security-compliance/security-control-lifecycle/) ページを参照してください。
 
-セキュリティコンプライアンスチームはまた、上記で概説されたすべての MR 承認および保護されたブランチ設定について、[Devo SIEM ツールでの検出/アラート](https://gitlab.com/gitlab-com/gl-security/security-operations/sirt/devo/-/tree/main/detections/secassurance?ref_type=heads) と Slack を使用してライブモニタリングを実装しています。設定の変更の結果として、適切な承認/SOD なしに MR がマージされた場合、根本原因を特定して修復を実行するための[観察](/handbook/security/security-assurance/observation-management-procedure/) Issue が開かれます。修復には、なぜ変更されたかを理解する、設定をコンプライアンスに戻す、適切な承認や職務分掌 (SOD) なしにマージされた MR をレビューして悪意のある変更が含まれていないことを確認する、必要に応じて遡及的な承認を取得するなどのステップが含まれます。セキュリティコンプライアンスはまた、変更の根本原因を特定し、設定がチームの開発作業を完了するために変更される必要がないようにワークフローの変更を実装することに向けて作業するために、変更を行った個人とプロジェクトを所有/作業するチームの管理を巻き込みます。
+Security Compliance チームはまた、上記で概説されたすべての MR 承認および保護されたブランチ設定について、[Devo SIEM ツールでの検出/アラート](https://gitlab.com/gitlab-com/gl-security/security-operations/sirt/devo/-/tree/main/detections/secassurance?ref_type=heads)と Slack を使用してライブモニタリングを実装しています。設定の変更の結果として、適切な承認/SOD なしに MR がマージされた場合、根本原因を特定して修復を実行するための[観察](/handbook/security/security-assurance/observation-management-procedure/) Issue が開かれます。修復には、なぜ変更されたかを理解する、設定をコンプライアンスに戻す、適切な承認や職務分掌 (SOD) なしにマージされた MR をレビューして悪意のある変更が含まれていないことを確認する、必要に応じて遡及的な承認を取得するなどのステップが含まれます。Security Compliance はまた、変更の根本原因を特定し、設定がチームの開発作業を完了するために変更される必要がないようにワークフローの変更を実装することに向けて作業するために、変更を行った個人とプロジェクトを所有/作業するチームの管理を巻き込みます。
 
 ### さらなるセキュリティ推奨事項
 
-1. 変数を平文で保存したり、包括的なシークレット管理のためにマスクされた環境変数に依存したりしないでください。代わりに、[外部シークレットストレージソリューション](/handbook/security/external-secret-storage) を設定してください
-1. プロジェクトの[脅威モデルの作成](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/howto/) を強く検討してください。
-1. プロジェクトがより確立された時点で、[AppSec レビュー](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/) を依頼することを検討してください。
-1. さらに質問がある場合は、AppSec チーム (`@gitlab-com/gl-security/appsec` および `#security_help`) に連絡してください。
+1. 変数を平文で保存したり、包括的なシークレット管理のためにマスクされた環境変数に依存したりしないでください。代わりに、[外部シークレットストレージソリューション](/handbook/security/external-secret-storage)を設定してください
+1. プロジェクトの[脅威モデルの作成](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/howto/)を強く検討してください。
+1. プロジェクトがより確立された時点で、[AppSec レビュー](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)を依頼することを検討してください。
+1. さらに質問がある場合は、AppSec チーム (`@gitlab-com/gl-security/appsec` および `#security_help`)に連絡してください。
 
 ## 参考文献
 

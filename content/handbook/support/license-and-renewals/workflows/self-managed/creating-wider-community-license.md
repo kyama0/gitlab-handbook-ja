@@ -3,20 +3,20 @@ title: ワイダーコミュニティライセンスの作成
 description: "ワイダーコミュニティライセンスを作成する方法"
 category: GitLab Self-Managed licenses
 upstream_path: /handbook/support/license-and-renewals/workflows/self-managed/creating-wider-community-license/
-upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
-translated_at: "2026-05-08T11:18:50Z"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:36:19Z"
 translator: claude
 stale: false
-lastmod: "2026-02-27T11:47:23+01:00"
+lastmod: "2026-10-19T18:59:08+11:00"
 ---
 
 ## 概要
 
-GitLab ではコミュニティのコントリビューターが GitLab Enterprise Edition にコントリビュートすることを許可しています。ワイダーコミュニティのメンバーは [こちらに記載されているプロセス](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#contributing-to-the-gitlab-enterprise-edition-ee) に従ってください。本ページは GitLab チームメンバー向けです。30 日間のトライアル後、Developer Relations Engineering チームメンバーから [社内リクエストフォーム](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) 経由でリクエストがあれば、90 日間の EE ライセンスを生成できます。**GitLab Support Internal Requests for Global customers** リクエストオプションを使用し、内部リクエストタイプとして **Wider Community License** を選択します。後続のリクエストも必要に応じて処理できます。
+GitLab ではコミュニティのコントリビューターが GitLab Enterprise Edition にコントリビュートすることを許可しています。ワイダーコミュニティのメンバーは [こちらに記載されているプロセス](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#contributing-to-the-gitlab-enterprise-edition-ee)に従ってください。本ページは GitLab チームメンバー向けです。30 日間のトライアル後、Developer Relations Engineering チームメンバーから [L&R Internal Requests フォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)経由でリクエストがあれば、90 日間の EE ライセンスを生成できます。`What category of request?` で `Other > Wider Community License` を選択してください。後続のリクエストも必要に応じて処理できます。
 
 ## 対応
 
-[この例と同様の](https://gitlab.zendesk.com/agent/tickets/293087) 内部リクエストを受け取ります。これにはライセンス生成に必要な情報が含まれているはずです。[新しいライセンス作成手順](/handbook/support/license-and-renewals/workflows/self-managed/creating_licenses/#create-a-new-license) に従い、以下を確認してください。
+[この例と同様の](https://gitlab.zendesk.com/agent/tickets/293087) 内部リクエストを受け取ります。これにはライセンス生成に必要な情報が含まれているはずです。[新しいライセンス作成手順](/handbook/support/license-and-renewals/workflows/self-managed/creating_licenses/#create-a-new-license)に従い、以下を確認してください。
 
 - Plan: `Ultimate`、特に指定がない限り。
 - Trial: `Yes`（チェックを入れる）
@@ -25,4 +25,4 @@ GitLab ではコミュニティのコントリビューターが GitLab Enterpri
 
 ## 応答
 
-ライセンスを生成したら、内部リクエストに公開返信を送信し、リクエスターを CC に追加してライセンスが生成され、提供されたメールアドレスの連絡先に直接送信されたことを確認します。
+ライセンスを生成したら、内部リクエストに公開返信を送信し、すでに CC に含まれている依頼者も宛先に含め、ライセンスが生成され、提供されたメールアドレスの連絡先に直接送信されたことを確認します。

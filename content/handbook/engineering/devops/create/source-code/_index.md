@@ -2,14 +2,18 @@
 title: "Create:Source Code チーム"
 description: Create:Source Code チームは、Create ステージの Source Code グループに属するプロダクトカテゴリのバックエンドとフロントエンドの両側面を担当します。
 upstream_path: /handbook/engineering/devops/create/source-code/
-upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
-translated_at: "2026-10-09T21:12:45+00:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:19:40Z"
 translator: claude
 stale: false
-lastmod: "2026-10-05T12:43:57+02:00"
+lastmod: "2026-10-09T16:27:20-04:00"
 ---
 
 Source Code Management グループを構成するエンジニアリングチームのページにアクセスするには、以下のリンクをご利用ください。
+
+常設の [Agentic Preview チーム](/handbook/engineering/devops/create/source-code/agentic-preview/)は、コミットに至るまでのユーザージャーニーを担当し、エージェントのメタデータを取得・処理して、処理が先に進む前に人間が確認できるプレビューに変換します。
+
+常設の [Change Record チーム](/handbook/engineering/devops/create/source-code/change-record/)は、コードのコミットとマージ後に変更を追跡するジャーニーに注力し、変更の台帳とその表示方法を担当します。
 
 一時的に設置された [Source Code Hardening and Modernization チーム](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)（2026-09-21 → 2027-09-10）は、Source Code 全体にわたる構造的なセキュリティとフロントエンドの問題に対処します。
 

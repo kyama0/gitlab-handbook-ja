@@ -1,10 +1,10 @@
 ---
 title: Fulfillment と Monetization の業務の進め方
-description: "Fulfillment セクションと Monetization セクションに共通する、プロジェクト管理プロセス、安定したカウンターパート、チャンネル。"
+description: "Fulfillment セクションと Monetization セクションに共通する、プロジェクト管理プロセス、Stable Counterpart、チャンネル。"
 upstream_path: "/handbook/engineering/development/fulfillment-monetization/"
-upstream_sha: "2dbfc49e47c784740ced3e2c617530f365412492"
-lastmod: "2026-10-01T08:11:54+02:00"
-translated_at: "2026-10-11T23:57:10+00:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+lastmod: "2026-10-19T18:59:08+11:00"
+translated_at: "2026-10-19T10:15:57Z"
 stale: false
 translator: codex
 ---
@@ -22,9 +22,9 @@ translator: codex
 | [#fulfillment_monetization_design](https://gitlab.slack.com/app_redirect?channel=fulfillment_monetization_design), [#fulfillment_monetization_research](https://gitlab.slack.com/app_redirect?channel=fulfillment_monetization_research) | Product Design と UX Research |
 | [#fulfillment_monetization_speak_spark](https://gitlab.slack.com/app_redirect?channel=fulfillment_monetization_speak_spark) | 交流 |
 
-窓口チャンネルで質問した場合は、回答を得たら ✅ のリアクションを付けてください。お客様の緊急の問題には [STAR エスカレーション](/handbook/support/internal-support/support-ticket-attention-requests/)を利用します。お客様に関わるライセンスやサブスクリプションのリクエストには、[内部リクエストフォーム](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)を利用してください。
+窓口チャンネルで質問した場合は、回答を得たら ✅ のリアクションを付けてください。お客様の緊急の問題には [STAR エスカレーション](/handbook/support/internal-support/support-ticket-attention-requests/)を利用します。お客様に関わるライセンスやサブスクリプションのリクエストには、[L&R Internal Requests フォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)を利用してください。
 
-## 安定したカウンターパート {#stable-counterparts}
+## Stable Counterpart {#stable-counterparts}
 
 ### Sales と Go-To-Market {#sales-and-go-to-market}
 
@@ -75,7 +75,7 @@ translator: codex
 | 3 | 単純ですが影響範囲がより広い変更です。要件は明確です。 |
 | 5 | 複数の領域にまたがる複雑な変更で、リファクタリングを伴う可能性があります。いくらか不明な点が残っていると考えられます。 |
 | 8 | コードベースの多くに関わる、または多くの意見を必要とする複雑な変更です。 |
-| 13 | 依存関係と不明確な要件を伴う大きな変更です。コミットする前に分割してください。 |
+| 13 | 依存関係と不明確な要件を伴う大きな変更です。実施を確約する前に分割してください。 |
 
 私たちは[予測可能性よりも開発速度](/handbook/engineering/development/principles/#velocity)を重視しますが、業務が部門横断にわたるため、80% の予測可能性を目指します。確信が持てない場合は、多めに見積もるか、[スパイク](/handbook/product/product-processes/#spikes)と実装の Issue に分割します。見積もりが変わった場合はすぐに修正し、PM に伝えてください。
 

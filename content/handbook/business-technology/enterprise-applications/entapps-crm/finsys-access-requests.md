@@ -2,11 +2,11 @@
 title: Finance Systems アクセスリクエスト
 description: Finance Systems アクセスリクエスト
 upstream_path: /handbook/business-technology/enterprise-applications/entapps-crm/finsys-access-requests/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-translated_at: "2026-08-01T16:25:30+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:08:35Z"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
 ## <i class="fas fa-book" id="biz-tech-icons"></i> アクセスリクエスト
@@ -31,26 +31,26 @@ lastmod: "2026-07-28T15:04:15+01:00"
 [GitLab アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)プロセスに加えて、チームは以下を実施します:
 
 - リクエストされているアクセスが対象システムに固有のものであることを確認・明確化します。
-  - 例: `NetSuite への読み取り専用アクセスが必要` という代わりに、チームはリクエスターに対して NetSuite の `Custom Auditor (read only)` ロールを求めているのかを確認します。
+  - 例: `Needs read only access to Netsuite` という代わりに、チームはリクエスターに対して NetSuite の `Custom Auditor (read only)` ロールを求めているのかを確認します。
   - システム固有の要件については[こちら](/handbook/business-technology/enterprise-applications/finsys-access-requests/#-system-specific-access-request-requirements)のマトリクスを参照してください。
-- [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に記載されている担当者に従って、リクエストされている正確なロールや権限についてビジネスオーナーの承認を求めます。これには[ベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)も含まれます。
+- [Tech Stack](/handbook/business-technology/tech-stack-applications/)に記載されている担当者に従って、リクエストされている正確なロールや権限について Business Owner の承認を求めます。これには[ベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)も含まれます。
 - 承認後、チームはシステム内でユーザーをプロビジョニングし、対応する Okta Google グループに追加します（必要な場合）。
 - プロビジョニング後、チームはシステム内のタイムスタンプ付きユーザーレコードのスクリーンショットを撮影し、Issue に添付してクローズします。
 
-**注:** [AR](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) に本番環境以外の環境が明示されていない限り、チームはリクエスターが本番環境のアクセスのみをリクエストしているものとして常に想定します。
+**注:** [AR](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)に本番環境以外の環境が明示されていない限り、チームはリクエスターが本番環境のアクセスのみをリクエストしているものとして常に想定します。
 
 ### 完了の定義
 
 - AR は FinSys の観点から、以下が揃っている場合のみ `Done` と見なされます:
   - 明確なシステム固有のロールと権限のリクエスト
-  - マネージャーおよびビジネスオーナーの承認者
+  - Manager および Business Owner Approver
   - タイムスタンプ付きのプロビジョニング済みユーザーレコードのスクリーンショット
 
 ## システム固有のアクセスリクエスト要件
 
 | システム | AR 要件 | 注意事項 |
 |-------------------|----------------------------------------|-------------------|
-| Adaptive Insights | AR には以下を明示的に記載すること: | James Shen（FP&A シニアディレクター）がすべての AI AR を承認する必要があります。 |
+| Adaptive Insights | AR には以下を明示的に記載すること: | James Shen (Sr. Director of FP&A) がすべての AI AR を承認する必要があります。 |
 | | **権限セット（いずれか 1 つ）:** | AI はさまざまな「レベル」で設定されており、基本的に私たちの部門に対応しています。AI には多くの機密データが格納されているため、ほとんどのユーザーは、すべてのレベルへのアクセス権を持つべきではなく、また実際に持つこともありません。 |
 | | - Administrative | |
 | | - Analysis | |
@@ -68,11 +68,11 @@ lastmod: "2026-07-28T15:04:15+01:00"
 | | - Read-only account access | |
 | | - Read-only company access | |
 | | - No access | |
-| Coupa | | 注: リクエスター/購買担当者は常に ***Custom User*** ロールのみ取得します。昇格されたアクセスには調達チームの承認が必要です。 |
+| Coupa | | 注: リクエスター/購買担当者は常に ***Custom User*** ロールのみ取得します。昇格されたアクセスには Procurement の承認が必要です。 |
 | Navan | AR にはリクエストするアクセスの**正確な**ロール**および**ポリシーを明記すること。 | Navan には多くのポリシーがあります。通常、チームが受け取る AR は Navan 管理者向けです。チームメンバーは自動的にプロビジョニングされます。 |
 | | | ほとんどの AR はファイナンスシステム管理者向けであるため、通常はすべてのポリシーへのアクセスが必要で、その場合は AR にすべてのポリシーを列挙する必要はありません。 |
-| NetSuite | AR では、ビジネスオーナーが AR を承認する前に、リクエストする NetSuite ロールを正確に明記すること。 | |
-| Stripe | AR にはリクエストするアクセスの**正確な**ロールおよび Stripe アカウントを明記すること: | ロールはカスタマイズできません。 |
+| NetSuite | AR では、Business Owner が AR を承認する前に、リクエストする**正確な** NetSuite ロールを明記すること。 | |
+| Stripe | AR にはリクエストするアクセスの**正確な**ロール**および** Stripe アカウントを明記すること: | ロールはカスタマイズできません。 |
 | | - about.gitlab | |
 | | - Bizzabo | |
 | | - GitHost | |
@@ -83,11 +83,11 @@ lastmod: "2026-07-28T15:04:15+01:00"
 | | - Developer | |
 | | - Support Specialist | |
 | | - View Only | |
-| Zuora Billing | AR には各モジュールについてリクエストするロールを明記すること: | |
+| Zuora Billing | AR には**各**モジュールについてリクエストするロールを明記すること: | |
 | | - Platform | |
 | | - Billing | |
 | | - Payments | |
 | | - Finance | |
 | | - Commerce | |
 | | - Reporting | |
-| Zuora Revenue | AR では、ビジネスオーナーが AR を承認する前に、リクエストする ZREV ロールを正確に明記すること。 | |
+| Zuora Revenue | AR では、Business Owner が AR を承認する前に、リクエストする**正確な** ZREV ロールを明記すること。 | |

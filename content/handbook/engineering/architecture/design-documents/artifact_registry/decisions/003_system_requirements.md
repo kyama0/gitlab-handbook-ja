@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "Artifact Registry のインフラ要件とパフォーマンス制約"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/003_system_requirements/
-upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
-translated_at: "2026-09-22T21:11:03+00:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:12:40Z"
 translator: claude
 stale: false
-lastmod: "2026-09-22T13:53:26+02:00"
+lastmod: "2026-10-15T07:39:45+02:00"
 ---
 
 ## 背景
@@ -24,7 +24,7 @@ Artifact Registry は、エンタープライズ規模のアーティファク�
 - 頻繁にアクセスされるデータ、レート制限、セッション管理向けの **分散キャッシュ**
 - リアルタイム通知とプラットフォーム統合向けの **イベント駆動アーキテクチャ**
 
-これらの要件を満たす技術選択は [ADR-006](006_technology_stack.md) に文書化されています<!-- 、Rails モノリス内に構築する決定（[ADR-005](005_implementation_architecture.md)）に基づいています -->。
+これらの要件を満たす技術選択は [ADR-006](006_technology_stack.md)に文書化されています<!-- , based on the decision to build within the Rails monolith ([ADR-005](005_implementation_architecture.md)) -->。
 
 ## 決定
 
@@ -65,7 +65,7 @@ Artifact Registry は次のインフラ機能を必要とします。
 **ユースケース**:
 
 - 実際のアーティファクトデータ（コンテナレイヤー、パッケージファイル、バイナリ Blob）の保存
-- Organization 重複排除のサポート（[ADR-002](002_storage_deduplication_scope.md) を参照）
+- Organization 重複排除のサポート（[ADR-002](002_storage_deduplication_scope.md)を参照）
 - 効率的なガベージコレクションとライフサイクル管理を可能にする
 - マルチリージョンレプリケーションとディザスタリカバリのサポート
 
@@ -78,7 +78,7 @@ Artifact Registry は次のインフラ機能を必要とします。
 - ユーザーに近いエッジロケーションでアーティファクト Blob のダウンロードをキャッシュ
 - オブジェクトストレージとオリジンサーバーの負荷を削減
 - 地理的に分散したチームのダウンロードレイテンシを改善
-- プライマリストレージからの egress 削減によるコスト最適化
+- プライマリストレージからのエグレス削減によるコスト最適化
 
 ### 5. アナリティクスエンジン
 
@@ -139,9 +139,9 @@ Artifact Registry は大規模エンタープライズ組織と GitLab.com 規�
 
 Artifact Registry は初期データなしの新規サービスとしてローンチします。成長は顧客が提供を採用するにつれて自然に進みます。マイグレーションツールは後のフェーズで計画されており、顧客が時間をかけて既存レジストリからアーティファクトを移動できるようにします。
 
-顧客がマイグレーションするにつれ、負荷とストレージは既存のレジストリ（コンテナレジストリ、パッケージレジストリ）から Artifact Registry へ徐々にシフトします。すべてのレジストリにわたる結合負荷は安定したままで、既存レジストリが縮小するにつれて統合レジストリが成長するはずです。
+顧客がマイグレーションするにつれ、負荷とストレージは既存のレジストリ（Container Registry、Package Registry）から Artifact Registry へ徐々にシフトします。すべてのレジストリにわたる結合負荷は安定したままで、既存レジストリが縮小するにつれて統合レジストリが成長するはずです。
 
-現在の GitLab.com レジストリメトリクスは、Artifact Registry が最終的に達するであろうスケールの指針を提供します。詳細なメトリクスは [内部キャパシティプランニングノート](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3024864366) を参照してください。
+現在の GitLab.com レジストリメトリクスは、Artifact Registry が最終的に達するであろうスケールの指針を提供します。詳細なメトリクスは [内部キャパシティプランニングノート](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3024864366)を参照してください。
 
 - **トラフィック (GitLab.com の予測)**:
 
@@ -160,14 +160,12 @@ Artifact Registry は初期データなしの新規サービスとしてロー�
 
   - 既存レジストリは、ほとんどのアーティファクトデータが初期 push/pull サイクル後にあまりアクセスされないことを示しており、ストレージの大部分は最終的にコールド／アーカイブティアに移動します（80% 以上がコールドストレージクラス）。Artifact Registry はコストを最適化するため、同様の階層化ストレージを計画する必要があります。
 
-ストレージスループットの予測は、セッションごとの速度ではなく、サービス全体に対するものです。レジストリは、Pod が保持するステージングメモリに上限を設けるために、Pod が受け入れる同時アップロードセッション数を制限します。そのため、予測のアップロード側を満たすのは、受け入れたセッション数とセッションごとの速度の積が予測値に達する場合のみです。ダウンロードはアップロードセッションを開かず、ステージングバッファも保持しないため、この上限はダウンロード側を制限しません。サポートされる構成の少なくとも 1 つは、アップロード側の予測を満たしません。S3 ドライバーの出荷時のデフォルト設定では、デプロイメントが最小レプリカ数で稼働している間に予測値に達するには、受け入れるセッション数が少なすぎます。また、その状態では、この上限を算出した際の予算を超えるステージングメモリも許容してしまいます。スロットを待つリクエストは CPU を消費しないため、ゲートの飽和はデプロイメントの CPU 使用率を目標とするオートスケーリングにスケールのシグナルを与えません。そのため、最小レプリカ数が実際の基準になります。この不足が続いても、空きスロットのないリクエストは限られた時間だけ待機した後、クライアントが再試行可能な `503` を受け取るため、過剰な負荷は広範な障害を引き起こすのではなく、上記の応答性の目標が求めるとおり、予測可能な形で性能を低下させます。GCS のデフォルト設定など、他の構成では十分なセッション数を受け入れるため、予測から導かれるセッションごとの速度範囲の上限は、単一の転送で達成できる速度です。この解釈は測定結果ではなくエンジニアリング上の判断であり、単一セッションのスループット測定値がその上限を下回った場合は、その構成について再検討が必要です。上限を導くチャンクサイズの計算、スロットごとの予約量、不足によって起動時に発生する警告は、この ADR ではなく、[Artifact Registry 設定リファレンス](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/dev/configuration-reference.md)の `storage.max_concurrent_upload_sessions` とドライバーごとの `storage.s3.chunk_size` および `storage.gcs.chunk_size` に引き続き記載します。
-
 詳細なインフラサイジング、デプロイメントトポロジ、環境固有の SLA は本 ADR のスコープ外です。
 
 ## 参考文献
 
-- [ADR-002: Storage Deduplication Scope](002_storage_deduplication_scope.md) - 重複排除を Organization にスコープ
-- [ADR-008: Content-Addressable Storage](008_content_addressable_storage.md) - 重複排除を可能にするストレージアプローチ
+- [ADR-002: ストレージの重複排除スコープ](002_storage_deduplication_scope.md) - 重複排除を Organization にスコープ
+- [ADR-008: コンテンツアドレッサブルストレージ](008_content_addressable_storage.md) - 重複排除を可能にするストレージアプローチ
 <!-- - [ADR-005: Implementation Architecture](005_implementation_architecture.md) - Rails monolith decision -->
-- [ADR-006: Technology Stack](006_technology_stack.md) - これらの要件に基づく技術選定
-- [ADR-010: Data Retention](010_data_retention.md) - アーティファクト、監査ログ、キャッシュコンテンツの保持ポリシー
+- [ADR-006: 技術スタック](006_technology_stack.md) - これらの要件に基づく技術選定
+- [ADR-010: データ保持](010_data_retention.md) - アーティファクト、監査ログ、キャッシュコンテンツの保持ポリシー

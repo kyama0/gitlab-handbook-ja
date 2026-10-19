@@ -1,11 +1,11 @@
 ---
 title: "Sentry で Semver Dialect エラーを有効化する"
 upstream_path: /handbook/engineering/development/sec/security-factory/composition-analysis/runbooks/semver-dialect-errors-in-sentry/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T08:35:00+09:00"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:19:40Z"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-10-15T14:01:05Z"
 ---
 
 ## 概要
@@ -16,9 +16,9 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ### 手順
 
-1. 本番環境でフィーチャーフラグを有効化します：`/chatops run feature set track_semver_dialect_errors_for_cvs_in_sentry true --production`
+1. 本番環境でフィーチャーフラグを有効化します：`/chatops gitlab run feature set track_semver_dialect_errors_for_cvs_in_sentry true --production`
 2. Sentry で SemverDialects エラーを監視します：https://new-sentry.gitlab.net/organizations/gitlab/issues/?query=is%3Aunresolved+SemverDialects
 3. 対処が必要な報告されたエラーについて Issue を作成します。
-4. 本番環境でフィーチャーフラグを無効化します：`/chatops run feature set track_semver_dialect_errors_for_cvs_in_sentry false --production`
-5. Issue を修正します。
+4. 本番環境でフィーチャーフラグを無効化します：`/chatops gitlab run feature set track_semver_dialect_errors_for_cvs_in_sentry false --production`
+5. 問題を修正します。
 6. 繰り返します。

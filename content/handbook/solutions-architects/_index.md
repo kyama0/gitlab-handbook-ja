@@ -1,15 +1,15 @@
 ---
-title: ソリューションアーキテクトハンドブック
-description: "ソリューションアーキテクト (SA) は、プリセールスのモーション中に GitLab の見込み客や顧客にとっての信頼されるアドバイザーであり、GitLab アプリケーションと GitLab プロフェッショナルサービスが、共通および固有のビジネス要件にどのように対応するかをデモンストレーションします"
+title: Solutions Architects ハンドブック
+description: "Solutions Architects (SA) は、プリセールスのモーション中に GitLab の見込み客や顧客にとっての信頼されるアドバイザーであり、GitLab アプリケーションと GitLab Professional Services が、共通および固有のビジネス要件にどのように対応するかをデモンストレーションします"
 upstream_path: /handbook/solutions-architects/
-upstream_sha: cf317047d2c9678524c0db59ab7ed8c050713245
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:33:55Z"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-10-15T09:13:55+01:00"
 ---
 
-## ソリューションアーキテクチャのミッション
+## Solutions Architecture のミッション
 
 **ミッションステートメント:**
 
@@ -17,10 +17,10 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 **詳細:**
 
-技術的・ドメイン固有の専門知識と強力な部門横断的なコラボレーションを活用し、ソリューションアーキテクトは信頼されるアドバイザーになることを目指し、見込み客、顧客、パートナー、社内チームと協力的な学習環境を育みます。私たちの主な目的は以下のとおりです:
+技術的・ドメイン固有の専門知識と強力な部門横断的なコラボレーションを活用し、Solutions Architects は信頼されるアドバイザーになることを目指し、見込み客、顧客、パートナー、社内チームと協力的な学習環境を育みます。私たちの主な目的は以下のとおりです:
 
 - 見込み客に響くインパクトのある価値提案を作り、GitLab 採用による変革的な成果の可能性を示す。
-- GitLab プラットフォームの成功した採用を擁護し、お客様が投資から最大の価値を実現することを保証する。
+- GitLab プラットフォームの導入の成功を推進し、お客様が投資から最大の価値を実現することを保証する。
 - パートナーの能力を育成し、市場リーチと顧客価値を拡大する革新的なソリューションを共同開発することで、繁栄するビジネスパートナーエコシステムを培う。
 
 学習する組織と DevOps カルチャーのレンズを通じて SA 組織が価値創造を促進する方法は以下のとおりです:
@@ -61,35 +61,35 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 ## 役割と責任
 
-### ソリューションアーキテクト (フィールド)
+### Solutions Architects (Field)
 
-フィールド[ソリューションアーキテクト](/job-description-library/sales/solutions-architect/) (SA) は、プリセールスのモーション中に GitLab の見込み客や顧客にとっての信頼されるアドバイザーです。私たちは GitLab プラットフォームと GitLab プロフェッショナルサービスが、共通および固有のビジネス要件にどのように対応するかをデモンストレーションします。SA は販売プロセス全体を通じて主題の専門知識と業界経験を提供し、社内では製品チームと協力することで GitLab のお客様に価値を加えます。
+Field [Solutions Architects](/job-description-library/sales/solutions-architect/) (SA) は、プリセールスのモーション中に GitLab の見込み客や顧客にとっての信頼されるアドバイザーです。私たちは GitLab プラットフォームと GitLab Professional Services が、共通および固有のビジネス要件にどのように対応するかをデモンストレーションします。SA は販売プロセス全体を通じて主題の専門知識と業界経験を提供し、社内では製品チームと協力することで GitLab のお客様に価値を加えます。
 
 加えて、SA は顧客リクエストからの会話で得たインプットを集めた後、複雑なビジネス問題やワークフローシナリオに対する包括的なソリューションを特定して提案します。望ましいインプットには、痛点、ロールベースの可視性に関する懸念、効率改善の機会、現在のテクノロジーとツール (GitLab に対するサードパーティ)、したがって統合改善の機会、企業イニシアチブ、目標とする成果などが含まれます。SA はまた、販売チームと GitLab 内の他のグループとの間の技術的な連絡役として機能し、顧客のニーズを満たすために必要に応じて他のチームの GitLab 従業員を巻き込みます。
 
-私たちのフィールド SA は既存の GitLab 顧客にも積極的に関与し、ソートリーダーシップを提供し、革新的なソリューションに関与し、固有の顧客要件 (ミートアップやプレゼンテーションなど) に関する伝道活動について協力し、GitLab プラットフォームを改善するために継続的に市場のフィードバックを求めます。
+私たちの Field SAs は既存の GitLab 顧客にも積極的に関与し、ソートリーダーシップを提供し、革新的なソリューションに関与し、固有の顧客要件（例えば、ミートアップやプレゼンテーション）に関するエバンジェリズム活動について協力し、GitLab プラットフォームを改善するために継続的に市場のフィードバックを求めます。
 
-### センター・オブ・エクセレンス
+### Center of Excellence
 
-ソリューションアーキテクチャの[センター・オブ・エクセレンス](/handbook/solutions-architects/center-of-excellence/)は、専門家、[デモアーキテクト](./center-of-excellence/demo-architecture/)、ビジネスバリューマネージャーで構成されるチームで、専門的な専門性を大規模に提供することで GitLab の市場リーダーシップと収益成長を加速することに焦点を当てています。
+Solutions Architecture の [Center of Excellence](/handbook/solutions-architects/center-of-excellence/)は、Subject Matter Experts、[Demo Architects](./center-of-excellence/demo-architecture/)、Business Value Managers で構成されるチームで、専門的な専門性を大規模に提供することで GitLab の市場リーダーシップと収益成長を加速することに焦点を当てています。
 
-### 戦略的フィールド組織
+### Strategic Field Organization
 
-[戦略的フィールド組織](/handbook/solutions-architects/strategic-field-org/)は、グローバルな戦略的販売機会と顧客をサポートする[プリンシパルソリューションアーキテクト](/job-description-library/sales/solutions-architect/#principal-solutions-architect-responsibilities)のチームです。このチームは地域のアカウントチームと協力して、より高度な戦略的計画、コンサルティング、エグゼクティブレベルの技術的リーダーシップ、社内の GitLab 部門横断的な協力が必要な大規模なエンゲージメントに取り組みます。
+[Strategic Field Organization](/handbook/solutions-architects/strategic-field-org/)は、グローバルな戦略的販売機会と顧客をサポートする [Principal Solutions Architects](/job-description-library/sales/solutions-architect/#principal-solutions-architect-responsibilities)のチームです。このチームは地域のアカウントチームと協力して、より高度な戦略的計画、コンサルティング、エグゼクティブレベルの技術的リーダーシップ、社内の GitLab 部門横断的な協力が必要な大規模なエンゲージメントに取り組みます。
 
-### エコシステムソリューションアーキテクト
+### Ecosystem Solutions Architects
 
-[エコシステムソリューションアーキテクト](/job-description-library/sales/solutions-architect/#specialties)は、戦略的アライアンスパートナー、プロフェッショナルサービスパートナー、チャネルリセラーにとっての信頼されるアドバイザーです。このチームの焦点は関係を構築し、共同 GTM 戦略を推進する技術的支援とリーダーシップを提供することです。このチームはパートナーエコシステムの拡大と強化を支援し、新しい能力を構築し、パートナーとともに GitLab の収益を成長させます。
+[Ecosystem Solutions Architects](/job-description-library/sales/solutions-architect/#specialties)は、戦略的アライアンスパートナー、プロフェッショナルサービスパートナー、チャネルリセラーにとっての信頼されるアドバイザーです。このチームの焦点は関係を構築し、共同 GTM 戦略を推進する技術的支援とリーダーシップを提供することです。このチームはパートナーエコシステムの拡大と強化を支援し、新しい能力を構築し、パートナーとともに GitLab の収益を成長させます。
 
-コアな責任に加えて、ソリューションアーキテクトはブログ、動画、ウェビナー、プレゼンテーション、業界展示会への出展など、パートナーや戦略的マーケティングに整合した他の顧客対応活動を支援することがあります。
+コアな責任に加えて、Solutions Architects はブログ、動画、ウェビナー、プレゼンテーション、業界展示会への出展など、Partner および Strategic Marketing に整合した他の顧客対応活動を支援することがあります。
 
-詳細については[ソリューションアーキテクトの役割の説明](/job-description-library/sales/solutions-architect/)を参照してください。また、パートナー協力的機会で支援が必要な場合は[エコシステム SA への関与](/handbook/solutions-architects/processes/ecosystem/)を参照してください。
+詳細については [Solutions Architect の役割の説明](/job-description-library/sales/solutions-architect/)を参照してください。また、パートナー協力的機会で支援が必要な場合は[エコシステム SA への関与](/handbook/solutions-architects/processes/ecosystem/)を参照してください。
 
-### SA マネージャー
+### SA Managers
 
-- [SA マネージャープロセス](/handbook/solutions-architects/sa-manager/)
+- [SA Manager プロセス](/handbook/solutions-architects/sa-manager/)
 
-世界中のフィールドおよびパートナー SA 管理 (以降、SA 管理) は、固有の要件について協力し、go-to-market アプローチでの改善を特定し、市場の要件に対応するための戦略の優先順位付けに焦点を当てます。SA 管理は、顧客から提起された既存のニーズに対応し、革新的な要件を優先する技術的事項に関心を整合します。SA 管理は必要な成果を達成するために製品チームと協力します。
+世界中の Field and Partner SA Management (以降、SA management) は、固有の要件について協力し、go-to-market アプローチでの改善を特定し、市場の要件に対応するための戦略の優先順位付けに焦点を当てます。SA management は、顧客から提起された既存のニーズに対応し、革新的な要件を優先する技術的事項に関心を整合します。SA management は必要な成果を達成するために製品チームと協力します。
 
 ## 信頼されるアドバイザー
 
@@ -106,12 +106,12 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 これらのオファリングはそれぞれ、特定の顧客ジャーニーの特定のコンテキスト内で提供されます。
 
-- **ラボ/ワークショップ**: 招待制で、通常は対面イベント (または Zoom ミーティング) で、独占的なリストの顧客 (通常は 1 社) にラボ環境へのアクセスを提供します。SA は質問が出てきたときに顧客に個別のガイダンスを提供し、現在支払っていないものの価値を顧客が理解するのを助けます。
+- **ラボ/ワークショップ**: 招待制で、通常は対面イベント (または Zoom ミーティング) で、独占的なリストの顧客 (通常は 1 社)にラボ環境へのアクセスを提供します。SA は質問が出てきたときに顧客に個別のガイダンスを提供し、現在支払っていないものの価値を顧客が理解するのを助けます。
 - **技術ディスカバリー**: GitLab がニーズに対応し、より良い長期的な状態に向けて取り組めるところに固有の痛点を特定するのに役立つ、企業の現在の実践への深い掘り下げ。
 - **デモンストレーション**: 技術ディスカバリー内で行われた作業を中心に構築されます。デモンストレーションはディスカバリー中に特定された少なくとも 3 つの特定の痛点に対処することを目指し、GitLab の DevSecOps プラットフォームアプローチのビジョンを売り込みます。
 - **ガイド付きトライアル**: GitLab トライアルの利用を通じて 30 日間で 3 つのゴール。これはより形式的な Proof of Value の必要性を置き換えるためによく使われます。
 - **Proof of Value**: ガイド付きトライアルよりも複雑な技術評価。最大 8 週間続くことがあります。
 
-## ソリューションアーキテクトハンドブックコンテンツの変更
+## Solutions Architects ハンドブックコンテンツの変更
 
-これはソリューションアーキテクトのハンドブックです。タイポ、コピーライティングの改善、コンテンツの明確化など貢献したいものを見つけたら、マージリクエストを作成し、マネージャーにマージを依頼してください。マージリクエストに「SA-HANDBOOK」ラベルを追加し、[solutions-architects](https://gitlab.slack.com/archives/C01788YAY58) Slack チャンネルへのリンクを投稿し、@sa_leaders に言及してください。これは前置きとしてですが、感謝も伝えられます！私たちには行動へのバイアスがあるので、あなたの判断を信頼します。
+これは Solutions Architect のハンドブックです。タイポ、コピーライティングの改善、コンテンツの明確化など貢献したいものを見つけたら、マージリクエストを作成し、マネージャーにマージを依頼してください。マージリクエストに「SA-HANDBOOK」ラベルを追加し、[solutions-architects](https://gitlab.slack.com/archives/C01788YAY58) Slack チャンネルにマージリクエストへのリンクを投稿し、@sa_leaders にメンションしてください。事前に知らせてもらうことで、私たちから感謝を伝えることもできます！私たちには行動へのバイアスがあるので、あなたの判断を信頼します。

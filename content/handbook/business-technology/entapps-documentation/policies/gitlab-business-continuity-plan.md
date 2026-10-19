@@ -5,22 +5,22 @@ tags:
   - security_policy
   - security_policy_cpir
 upstream_path: /handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T22:00:00Z"
+upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
+translated_at: "2026-10-19T10:08:35Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T07:28:41-06:00"
+lastmod: "2026-10-16T19:52:00+02:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
 ## 目的
 
-事業継続計画 (Business Continuity Plan: BCP) は、GitLab に対する潜在的な脅威からの予防と復旧の仕組みを構築するプロセスです。本計画は、業務中断が発生した場合でも、人員と資産が保護され、迅速に機能できるようにすることを目的としています。
+事業継続計画 (Business Continuity Plan: BCP) は、GitLab に対する潜在的な脅威からの予防と復旧の仕組みを構築するプロセスです。本計画は、業務中断が発生した場合でも、人員と資産が保護され、迅速に機能できるようにすることを目的としています。これには、通常のインシデントを超える、より広範な危機的状況への GitLab の対応方針も含まれます。
 
 ## 範囲
 
-GitLab は、オールリモートという性質上、機器の局所的な故障、電力供給の障害、通信障害、社会不安、テロ攻撃、火災、自然災害といった業務中断の典型的な原因による影響を受けにくくなっています。事業継続計画の立案やテストの一環として、[ビジネス影響度分析](/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis/) のシステムデータを活用することができます。
+GitLab は、オールリモートという性質上、機器の局所的な故障、電力供給の障害、通信障害、社会不安、テロ攻撃、火災、自然災害といった業務中断の典型的な原因にさらされる可能性が低くなっています。こうした状況が、主要な人員やインフラストラクチャが長期間利用できなくなる事態など、より広範な危機に発展した場合も、本書に記載する同じプロセスを通じて管理します。事業継続計画の立案やテストの一環として、[ビジネス影響度分析](/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis/)のシステムデータを活用することができます。
 
 ## 役割と責任
 
@@ -35,21 +35,31 @@ GitLab は、オールリモートという性質上、機器の局所的な故�
 
 ### リモートワーカー向けの BCP
 
-GitLab のようなオールリモート企業の場合、当社のデータやサービスをホストする企業との SLA という形式のシンプルなコンティンジェンシープランで十分です。GitLab のようなオールリモートのワークフォースの利点は、利用できない人員やシステムのクラスタがあっても、会社の残りの部分は通常どおり稼働し続けられる点にあります。GitLab はオールリモート企業として構築されているため、インシデント対応プロセスが当社の事業継続計画の大部分を占めています。インシデント対応とその事業継続との関係性についての詳細は[こちらを参照](/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan/)してください。
+GitLab のようなオールリモート企業の場合、私たちのデータやサービスをホストする企業との SLA という形式のシンプルなコンティンジェンシープランで十分です。GitLab のようなオールリモートのワークフォースの利点は、利用できない人員やシステムのクラスタがあっても、会社の残りの部分は通常どおり稼働し続けられる点にあります。GitLab はオールリモート企業として構築されているため、インシデント対応プロセスが私たちの事業継続計画の大部分を占めています。インシデント対応とその事業継続との関係性についての詳細は[こちらを参照](/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan/)してください。
+
+### 危機的状況
+
+危機とは、通常のインシデントよりも広範囲または長期間にわたる業務中断です。主要な人員が長期間対応できない事態、物理的な拠点に影響する自然災害、パンデミック、長期にわたるインフラストラクチャの停止などが該当します。主要な人員が対応できなくなる危機的状況については、GitLab の People Safety & Security (PSS) チームが、チームメンバーの所在地にかかわらず[世界中の状況を監視](https://theloop.gitlab.com/site/6eee53ed-6460-4dbd-9fe8-3a6a87c46c67/page/1bfc1163-7a06-4b0f-a943-b539bf21aac9)し、影響を受ける可能性のある人を特定して直接連絡します。
+
+GitLab は、危機専用のチームやプロセスを別途設けるのではなく、本計画に記載する同じエスカレーション、調整、コミュニケーションの体制を通じてこうした状況を管理します。危機が以下のビジネスへの影響の表に示す複数の領域に及ぶ場合、関係するステークホルダーは個別に対応するのではなく、連携して対応を調整します。
+
+こうした状況では、GitLab は生命と健康の保護、中核的な事業運営の継続、情報セキュリティの順に優先します。危機の際に主要なコミュニケーション手段が利用できない場合は、代替の連絡手段を使用して連携を維持します。
 
 ### エスカレーション
 
 インシデントを GitLab 内でエスカレートする必要がある場合の[手順はこちら](/handbook/security/security-operations/sirt/sec-incident-response/#internal-engagement--escalation-for-high-severity-incidents)で確認できます。SIRT はインシデント対応手順を継続的にカバーし、相互トレーニングを行うため、[オンコールスケジュール](/handbook/security/security-operations/sirt/engaging-security-on-call/)を維持しています。
 
-個別のシステム停止については、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) に従って各システムオーナーへエスカレートしてください。
+個別のシステム停止については、[Tech Stack](/handbook/business-technology/tech-stack-applications/)に従って各システムオーナーへエスカレートしてください。
 
 ### 事業継続計画の発動条件
 
-事業継続計画は、SIRT の標準オペレーションを超えるサポートが必要となった場合に [SIRT のインシデント対応手順](/handbook/security/security-operations/sirt/sec-incident-response/) の中で発動されます。
+事業継続計画は、SIRT の標準オペレーションを超えるサポートが必要となった場合に [SIRT のインシデント対応手順]((/handbook/security/security-operations/sirt/sec-incident-response/)の中で発動されます。
 
 発動時、SIRT はトリアージのため #BCP_Events チャンネルにメンションします。
 
-個別システム停止に対する BCP は、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) に従って各システムオーナーが管理します。
+上記のような危機的状況も、この同じプロセスを通じてエスカレートし、管理します。
+
+個別システム停止に対する BCP は、[Tech Stack](/handbook/business-technology/tech-stack-applications/)に従って各システムオーナーが管理します。
 
 #### 関係者連絡用メッセージテンプレート
 
@@ -63,7 +73,7 @@ GitLab のようなオールリモート企業の場合、当社のデータや�
 | 人事面への影響はあるか? | [ハンドブックページ](/handbook/people-group/people-ops-tech-analytics/) | #peopleops-eng |
 | インフラストラクチャへの影響はあるか? | [ハンドブックページ](/handbook/engineering/infrastructure/) | #infrastructure_platforms |
 | 法務上の影響はあるか? | [ハンドブックページ](/handbook/legal/) | #legal |
-| システムへの影響はあるか? | 該当なし - [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) のオーナーシップを参照 | 該当なし - Tech Stack の technical_owner を参照 |
+| システムへの影響はあるか | 該当なし - [Tech Stack](/handbook/business-technology/tech-stack-applications/)のオーナーシップを参照 | 該当なし - Tech Stack の technical_owner を参照 |
 
 ### ベンダーとのコミュニケーションおよびサービス復旧計画
 
@@ -75,13 +85,13 @@ GitLab のようなオールリモート企業の場合、当社のデータや�
 
 ### 外部コミュニケーション
 
-外部コミュニケーションは、インシデントの範囲と影響が判明した時点で発信します。[手順はこちら](/handbook/security/security-operations/sirt/security-incident-communication-plan/#communicating-externally)で確認できます。
+外部コミュニケーションは、インシデントの範囲と影響が判明した時点で発信します。[手順はこちら](/handbook/security/security-operations/sirt/security-incident-communication-plan/#communicating-externally)で確認できます。危機レベルの状況では、通常のインシデント時のコミュニケーションで扱う範囲を超えて、より幅広い対象者や追加の法的・規制上の考慮事項が関わる場合があるため、それらを踏まえて公開前にレビューします。
 
 ## 事業継続テスト
 
 事業継続計画 (BCP) を策定した後の次の重要なステップは、その計画をテストすることです。テストにより、計画の有効性を検証し、実際のシナリオで何をすべきかを参加者に周知し、計画の強化が必要な領域を特定できます。計画のテストは少なくとも年に 1 回実施しなければならず、テストに先立って明確なテスト目標と成功基準を定義しておく必要があります。
 
-なお、GitLab の運用構造は完全リモート企業であるため、インシデント対応プロセスが事業継続計画の大部分を構成しています。インシデント対応テストのスコープは、インシデントによって影響を受ける可能性のある他の関係者を含めるように拡張することができ、BCP テスト活動の証跡として活用できます。
+なお、GitLab の運用構造はオールリモート企業であるため、インシデント対応プロセスが事業継続計画の大部分を構成しています。インシデント対応テストのスコープは、インシデントによって影響を受ける可能性のある他の関係者を含めるように拡張することができ、BCP テスト活動の証跡として活用できます。
 
 ### 計画のテスト
 
@@ -128,11 +138,15 @@ BCP テストを実施する際は、以下の基準を満たす必要があり�
 
     - システムオーナーは、システム停止が発生した場合にも主要な業務機能が継続できる計画を持つべきです。これには、主要なシステムの SLA、エスカレーション経路、必要に応じたバックアップ運用の理解が含まれます。
 
+1. 危機シナリオ
+
+    - 主要な人員が長期間対応できない事態など、より広範な業務中断を伴うシナリオは、上記と同じテーブルトップ演習／シミュレーションの手法でテストします。
+
 この計画は、年次または組織に重大な変更があった後にレビューされ、更新されます。
 
 ## 例外
 
-本手順への例外は、[Information Security Policy Exception Management Process](/handbook/security/controlled-document-procedure/#exceptions) に従って追跡されます。
+本手順への例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions)に従って追跡されます。
 
 ## 参考資料
 
@@ -140,3 +154,4 @@ BCP テストを実施する際は、以下の基準を満たす必要があり�
 - [災害復旧計画 (DRP)](https://gitlab.com/gitlab-com/gl-infra/readiness/-/blob/master/library/disaster-recovery/index.md)
 - [Security Risk Team](/handbook/security/security-assurance/security-risk/)
 - [SIRT](/handbook/security/security-operations/sirt/)
+- [People Safety & Security](https://theloop.gitlab.com/site/6eee53ed-6460-4dbd-9fe8-3a6a87c46c67/landing-page/dashboard)
