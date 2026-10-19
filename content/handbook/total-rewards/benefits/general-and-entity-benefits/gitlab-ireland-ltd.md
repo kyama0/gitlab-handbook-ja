@@ -2,9 +2,9 @@
 title: "GitLab Ireland Ltd"
 description: "アイルランドのチームメンバー向けの GitLab の福利厚生を見つけよう"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/
-upstream_sha: 59a18d6d88e73b26232d1d6773e5d793fcb29e49
-lastmod: "2026-09-29T15:04:38-07:00"
-translated_at: "2026-10-05T21:09:19+00:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+lastmod: "2026-10-14T15:43:05-07:00"
+translated_at: "2026-10-19T22:50:18+00:00"
 translator: claude
 stale: false
 ---
@@ -56,10 +56,12 @@ GitLab は VHI を通じて包括的な民間医療カバレッジを提供し�
 <details markdown="1">
 <summary>登録方法</summary>
 
-1. [VHI オンラインポータル](https://www.vhi.ie/groups/?token=1EFD9A4A7D274CF193FDD729F3AFC145)にアクセスするか、VHI に電話する
-2. GitLab の従業員 ID を「Employee Number」として入力する  
-3. GitLab の部門（Workday から）を「Cost Centre」として入力する
-4. PMI 4316 を選択するか、056 777 5800 に電話してニーズを相談する
+1. [VHI オンラインポータル](https://www.vhi.ie/groups/?token=1EFD9A4A7D274CF193FDD729F3AFC145)にアクセスするか、VHI に電話します
+2. GitLab の従業員 ID を「Employee Number」として入力します  
+3. GitLab の部門（Workday から）を「Cost Centre」として入力します
+4. PMI 4316 を選択するか、056 777 5800 に電話してニーズを相談します
+
+**注**: 医療プランと歯科プランの両方に加入する場合は、同じリンクから登録フォームを 2 回（プランごとに 1 回）提出してください
 
 </details>  
 
@@ -87,6 +89,40 @@ GitLab は VHI を通じて包括的な民間医療カバレッジを提供し�
 
 </details>  
 
+### 民間歯科保険 {#private-dental-insurance}  
+
+2026 年 11 月 1 日から、GitLab は Vhi（Vhi Dental Corporate 1）を通じて、チームメンバーとその扶養家族に歯科保険を提供します。GitLab は保険料を 100% 負担します。歯科プランに加入するために、Vhi の医療プランに加入している必要はありません。
+
+<details markdown="1">
+<summary>カバレッジと主な特徴</summary>
+
+- カバレッジの主な特徴については、[歯科福利厚生の概要](https://docs.google.com/presentation/d/14_dvRGqy6zqnUwzh-tGQpdVqmEvOjkwl/edit?slide=id.p2#slide=id.p2)を参照してください
+- ポリシーの詳細については、[Vhi Dental Corporate 1 の給付一覧](https://drive.google.com/file/d/1zmICqGp8nFlaF0qWemOpH9FNdmMLGLt4/view?usp=sharing)を参照してください
+- 歯科プランに加入するために、医療プランに加入している必要はありません。
+
+</details>
+
+<details markdown="1">
+<summary>登録方法</summary>
+
+歯科保険は Vhi 制度の任意の追加プランです。Vhi 医療保険に使用するものと同じオンライン登録リンクから登録してください:
+
+1. [VHI オンラインポータル](https://www.vhi.ie/groups/?token=1EFD9A4A7D274CF193FDD729F3AFC145)にアクセスするか、VHI に電話します
+2. GitLab の従業員 ID を「Employee Number」として入力します  
+3. GitLab の部門（Workday から）を「Cost Centre」として入力します
+4. 「Dental Corporate 1」を選択するか、056 777 5800 に電話してニーズを相談します
+
+- 医療プランと歯科プランの両方に初めて加入する場合は、同じリンクから登録フォームを 2 回（プランごとに 1 回）提出してください
+
+</details>
+
+<details markdown="1">
+<summary>保険料と課税（現物給付）</summary>
+
+GitLab は、あなたと扶養家族の歯科保険料を 100% 負担します。雇用主が支払う歯科保険料は、Revenue の規則では現物給付（BIK）に該当します。BIK は保険料の総額に基づいて計算され、関連する税金は給与から控除されます。
+
+</details>
+
 ### アイケア {#eye-care}
 
 Safety, Health, and Welfare at Work Regulations 2007 のもとで、GitLab はチームメンバーにアイケアの福利厚生を提供します。  
@@ -103,9 +139,9 @@ Safety, Health, and Welfare at Work Regulations 2007 のもとで、GitLab は�
 <details markdown="1">
 <summary>請求方法</summary>
 
-1. 眼科検査と処方箋を取得する
-2. 対象となる費用をまず VHI を通じて請求する
-3. 残りの領収書を Navan 経由で提出し、処方箋を total-rewards@gitlab.com にメールする
+1. 眼科検査と処方箋を取得します
+2. 対象となる費用をまず VHI を通じて請求します
+3. 残りの領収書を Navan 経由で提出し、処方箋を total-rewards@gitlab.com にメールします
 
 </details>  
 
@@ -147,7 +183,7 @@ GitLab は、NFP Ireland が運営する Aviva を通じて確定拠出年金ス
 <details markdown="1">
 <summary>重要な詳細とリソース</summary>
 
-- 7 日以降の登録は翌月に処理される
+- 7 日を過ぎてからの登録は翌月に処理される
 - Aviva の Fund Centre を通じて投資を確認する
 - [新規加入者 FAQ](https://drive.google.com/file/d/10VEGE29XqHfCpM-axOXrW2vpmBgL3umn/view?usp=sharing)
 - [退職者向けオプションガイド](https://drive.google.com/file/d/1GJpVSKGanT6xNg9wfKAd20N2trVjCGL5/view?usp=sharing)
@@ -162,7 +198,7 @@ GitLab は、NFP Ireland が運営する Aviva を通じて確定拠出年金ス
 
 </details>
 
-### 生命保険 (Death in Service) {#life-insurance-death-in-service}
+### 生命保険（在職中の死亡） {#life-insurance-death-in-service}
 
 すべてのフルタイムのチームメンバーは、Aviva を通じて年間基本給の 4 倍の生命保険カバレッジを自動的に受け取ります。
 
@@ -178,8 +214,8 @@ GitLab は、NFP Ireland が運営する Aviva を通じて確定拠出年金ス
 <details markdown="1">
 <summary>受取人の指定方法</summary>
 
-1. [Expression of Wish Form](https://docs.google.com/spreadsheets/d/1hM7jZbBVFRRNsSqm02QBWYU4d4WLJ6pw/edit?gid=917049255#gid=917049255)に記入する  
-2. employeebenefits@nfpireland.ie に直接送信する  
+1. [受取人希望指定フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdNSKQeWXrhG5hhYveF45wW-VmLz2a_Z7eNsk6XRQaAGtjZHQ/viewform?usp=header)に記入します  
+2. employeebenefits@nfpireland.ie に直接送信します  
 
 </details>  
 
@@ -241,9 +277,9 @@ GitLab は法定要件を超える包括的な出産休暇サポートを提供�
 <details markdown="1">
 <summary>申請方法</summary>
 
-1. 開始日／終了日を添えて leaves@gitlab.com に通知する
-2. Absence Management から記入済みの MB2 フォームを受け取る
-3. 休暇の少なくとも 6 週間前に [gov.ie](https://www.gov.ie/en/service/apply-for-maternity-benefit/) 経由で申請する
+1. 開始日／終了日を添えて leaves@gitlab.com に通知します
+2. Absence Management から記入済みの MB2 フォームを受け取ります
+3. 休暇の少なくとも 6 週間前に [gov.ie](https://www.gov.ie/en/service/apply-for-maternity-benefit/) 経由で申請します
 4. Workday で休暇を提出する（Parental Leave カテゴリ）
 
 </details>  
@@ -272,9 +308,9 @@ GitLab は法定要件を超える包括的な出産休暇サポートを提供�
 <details markdown="1">
 <summary>申請方法</summary>
 
-1. 日付を添えて leaves@gitlab.com に通知する
-2. 休暇の少なくとも 6 週間前に [gov.ie](https://www.gov.ie/en/service/295b84-adoptive-benefit/) 経由で申請する
-3. Workday で休暇を提出する
+1. 日付を添えて leaves@gitlab.com に通知します
+2. 休暇の少なくとも 6 週間前に [gov.ie](https://www.gov.ie/en/service/295b84-adoptive-benefit/) 経由で申請します
+3. Workday で休暇を提出します
 
 </details>  
 
@@ -303,9 +339,9 @@ GitLab は法定要件を超える包括的な出産休暇サポートを提供�
 <details markdown="1">
 <summary>申請方法</summary>
 
-1. 出産予定日を添えて leaves@gitlab.com に通知する
-2. Absence Management から PB2 フォームを受け取る
-3. 休暇の少なくとも 4 週間前に [gov.ie](https://www.gov.ie/en/service/apply-for-paternity-benefit/) 経由で申請する
+1. 出産予定日を添えて leaves@gitlab.com に通知します
+2. Absence Management から PB2 フォームを受け取ります
+3. 休暇の少なくとも 4 週間前に [gov.ie](https://www.gov.ie/en/service/apply-for-paternity-benefit/) 経由で申請します
 
 </details>  
 
@@ -319,15 +355,15 @@ GitLab は法定要件を超える包括的な出産休暇サポートを提供�
 - 子どもの最初の 2 年間に 9 週間の休暇  
 - 連続または分割して取得可能  
 - 国の親給付が利用可能（PRSI の対象）  
-- GitLab の Parental Leave の最初の 16 週間以内に取得した場合、GitLab の給与上乗せが適用される
+- GitLab の Parental Leave の最初の 16 週間以内に取得した場合、GitLab の給与への上乗せが適用される
 
 </details>  
 
 <details markdown="1">
 <summary>申請方法</summary>
 
-1. 6 週間前までに leaves@gitlab.com に通知する
-2. 休暇の 4 週間前に [gov.ie](https://www.gov.ie/en/service/b321b1-parents-benefit/) 経由で給付を申請する
+1. 6 週間前までに leaves@gitlab.com に通知します
+2. 休暇の 4 週間前に [gov.ie](https://www.gov.ie/en/service/b321b1-parents-benefit/) 経由で給付を申請します
 
 </details>  
 
@@ -348,8 +384,8 @@ GitLab は法定要件を超える包括的な出産休暇サポートを提供�
 <details markdown="1">
 <summary>申請方法</summary>
 
-1. 6 週間前までに leaves@gitlab.com に通知する
-2. 休暇の 4 週間前に確認書類に署名する
+1. 6 週間前までに leaves@gitlab.com に通知します
+2. 休暇の 4 週間前に確認書類に署名します
 
 </details>
 
@@ -360,7 +396,7 @@ VHI の助産師サポートサービスは、妊娠中および出産後を通�
 <details markdown="1">
 <summary>主な特徴</summary>
 
-- 3 回の出生前相談（各三半期に 1 回）  
+- 3 回の出生前相談（妊娠の各期に 1 回）  
 - 最初の 6 週間に 4 回の産後相談  
 - 妊娠の過程を通じた個別ガイダンス  
 - 各段階での教育とサポート
@@ -393,9 +429,9 @@ VHI の助産師サポートサービスは、妊娠中および出産後を通�
 <details markdown="1">
 <summary>申請方法</summary>
 
-1. 6 週間前までに leaves@gitlab.com に書面で通知を提出する
-2. 介護要件に関する Department の決定を提出する
-3. 休暇の 2 週間前に確認書類に記入する
+1. 6 週間前までに leaves@gitlab.com に書面で通知を提出します
+2. 介護要件に関する担当省庁の決定を提出します
+3. 休暇の 2 週間前に確認書類に記入します
 
 </details>  
 
@@ -460,17 +496,17 @@ TravelHub を通じて、自転車と公共交通機関の税金節約を利用�
   - 電動自転車: EUR 1500
   - カーゴバイク: EUR 3000
 - 月次または年次の交通チケット  
-- 給与天引き (salary sacrifice) による税金節約
+- 給与の一部を福利厚生に振り替える仕組み（salary sacrifice）による節税
 
 </details>  
 
 <details markdown="1">
 <summary>申請方法</summary>
 
-1. [GitLab Travel Hub](https://gitlab.travelhub.ie/) で登録する  
-2. 自転車店または交通事業者を選択する
+1. [GitLab Travel Hub](https://gitlab.travelhub.ie/)で登録します  
+2. 自転車店または交通事業者を選択します
 3. 見積もりをアップロードして承認を受ける
-4. 承認後にバウチャーを受け取る
+4. 承認後にバウチャーを受け取ります
 
 </details>
 

@@ -1,11 +1,11 @@
 ---
 title: エンジニアリング原則
 upstream_path: "/handbook/engineering/development/principles/"
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
+translated_at: "2026-10-19T22:26:12+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-14T08:38:52-04:00"
 ---
 
 ## エンジニアリング原則
@@ -31,10 +31,10 @@ GitLab では、[企業文化](/handbook/company/culture)を非常に重視し�
 
 複雑なイニシアチブでは、[アーキテクチャデザインワークフロー](/handbook/engineering/architecture/workflow/)を使用して目標を定義し、特定の取り組みのイテレーション計画を説明します。何かをどのようにイテレーションするかは、中長期的なビジョンによって異なる場合があります。イテレーションを可能な限り効率的で実用的なものにすることが目標です。
 
-また、確立された「スクーターの発見的方法」を時折使用します: 顧客が使用できる最小限のプロダクトをリリースし、それをイテレーションしていきます。
+また、確立された「スクーターの発見的方法」を時折使用します： 顧客が使用できる最小限のプロダクトをリリースし、それをイテレーションしていきます。
 
 ![スクーターの発見的方法](https://gitlab.com/gitlab-org/gitlab/uploads/590251a5311fb50e4dcb174f214e1340/Screen_Shot_2020-02-06_at_3.29.48_PM.png)
-画像クレジット: [Crisp の Henrik Kniberg](https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp)
+画像クレジット： [Crisp の Henrik Kniberg](https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp)
 
 できるだけ速く最小限の変更をリリースすることは、特に中間ステップがユーザーに価値を提供し有意義なフィードバックを収集できる場合に、イテレーションについて考える良い方法です。これは多くの場合、私たちのデフォルトのイテレーションアプローチです。
 
@@ -42,7 +42,7 @@ GitLab では、[企業文化](/handbook/company/culture)を非常に重視し�
 
 GitLab では、[アーキテクチャデザインワークフロー](/handbook/engineering/architecture/workflow/)を使用して、中長期的なビジョンに沿ったより実用的なイテレーション計画を構築できます。これは通常、最小実行可能プロダクト（MVP）の構築もカバーします。しかしこの場合、MVP がどのように見えるかは、組織全体でフィードバックを収集した後に書面で説明された思慮深い計画に依存します。
 
-「次のマイルストーンで最小限のものを構築する」パターンに先行する可能性があり、イテレーションの効率性を高めることを目的としたいくつかのパターンを以下に示します:
+「次のマイルストーンで最小限のものを構築する」パターンに先行する可能性があり、イテレーションの効率性を高めることを目的としたいくつかのパターンを以下に示します：
 
 1. 基本的なデザインの問題を特定し、デザインドキュメントで説明する。
 1. それらに関連する最も重要なリスクを特定し、リスクを軽減する方法を見つける。
@@ -59,7 +59,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 エンジニアリングでの業務の仕方は、中長期的に大きな複利効果をもたらす可能性があります。短期的な実用的目標を考慮しながら、「中長期的にどのようにしてこれを実装すればより効率的になれるか？」と常に自問することで、複利が富を構築するのと同様に、時間の経過とともに多くの価値が構築されることを期待できます。短期的な目標に過度に集中すると、この機会を逃す可能性があります。
 
-より効率的になるのに役立つ短くて不完全なリスト:
+より効率的になるのに役立つ短くて不完全なリスト：
 
 1. 有用でよく設計された抽象化を構築する。
 1. 簡単なソリューションよりも[シンプルなソリューション](#simplicity)を選択する。
@@ -77,13 +77,13 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 **可用性/信頼性**、**品質**、**セキュリティ**、および**パフォーマンス**は、信頼性の高いソフトウェアを構築するための柱です。信頼性は、利用可能で信頼できるプロダクトを提供できるという顧客との契約です。組織全員がそれぞれの役割を担います。
 
-エンジニア、プロダクトマネージャー、デザイナーは、計画、実装、モニタリング（例: [Kibana](/handbook/support/workflows/kibana/)、[Sentry](/handbook/support/workflows/sentry/)、Grafana、その他の [GitLab.com モニタリングツール](/handbook/engineering/monitoring/#monitoring)）、または業務の優先順位付けを通じて、コードの信頼性に最も直接的な影響を持ちます。プロダクトとエンジニアリングの管理者は（例: [エラーバジェット](/handbook/engineering/error-budgets/)を使用して）機能の信頼性をモニタリング・測定し、必要に応じて推奨事項を作成します。[学習と開発](/handbook/people-group/learning-and-development/)への注力により、チームが信頼性の高いソフトウェアを構築するために必要なツールとトレーニングを確保します。[インフラストラクチャプラットフォーム](/handbook/engineering/infrastructure-platforms/)、[アプリケーションセキュリティ](/handbook/security/product-security/security-platforms-architecture/application-security/#application-security-mission)、[データベース](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)、[デベロッパーエクスペリエンス](/handbook/engineering/infrastructure-platforms/developer-experience)チームは、プロダクト開発チームをサポートする対象分野の専門家です。
+エンジニア、Product Managers、デザイナーは、計画、実装、モニタリング（例： [Kibana](/handbook/support/workflows/kibana/)、[Sentry](/handbook/support/workflows/sentry/)、Grafana、その他の [GitLab.com モニタリングツール](/handbook/engineering/monitoring/#monitoring)）、または業務の優先順位付けを通じて、コードの信頼性に最も直接的な影響を持ちます。プロダクトとエンジニアリングの管理者は（例： [エラーバジェット](/handbook/engineering/error-budgets/)を使用して）機能の信頼性をモニタリング・測定し、必要に応じて推奨事項を作成します。[学習と開発](/handbook/people-group/learning-and-development/)への注力により、チームが信頼性の高いソフトウェアを構築するために必要なツールとトレーニングを確保します。[Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)、[Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/#application-security-mission)、[Database](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)、[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience)チームは、プロダクト開発チームをサポートする対象分野の専門家です。
 
 ## ベロシティ {#velocity}
 
 私たちのベロシティは本質的にインクリメンタルであるべきです。それは[イテレーション](#iteration)と[効率性](#efficiency)の原則から導かれます。
 
-ベロシティを高く維持することの重要性を認識しています:
+ベロシティを高く維持することの重要性を認識しています：
 
 - GitLab がユーザーに新しい価値を提供する速度は、会社の競争優位性です。
 - オープンソースプロジェクトとして、フォークは歓迎されます。しかし、GitLab に貢献するコミュニティが無傷を保つために、フォークがすぐに時代遅れになるよう速く動くことが重要です。
@@ -112,7 +112,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 例えば、実験的機能に取り組んでいる場合は、時間のかかるプロセスを最小限に抑えることを目指すべきです。[GitLab ではプロセスを出荷しません](https://www.youtube.com/watch?v=3EegHi0fdPQ&t=4846s)。これは、コードでの業務と UX リサーチ、顧客検証、または長いブレインストーミングセッションに時間を費やすことの適切なバランスを見つけるために実用的なアプローチが必要かもしれません。これらのいくつかはまだ必要ですが、[効率的](#efficiency)であることを目指し、ベロシティを高く保つ必要性を念頭に置いてください。
 
-例えば、出荷するものがユーザビリティの問題をもたらさず、顧客のニーズを効果的に満たし、ワークフローの問題をもたらさないと確信しているなら、調査を実施せずに前進する自信を持つべきです。
+例えば、出荷するものがユーザビリティの問題をもたらさず、顧客のニーズを効果的に満たし、かつ／またはワークフローの問題をもたらさないと確信しているなら、調査を実施せずに前進する自信を持つべきです。
 
 ベロシティを得るためにプロセスをスキップできる場合は、そうすることを検討してください。ただし、GA 機能にはこのルールを適用できない場合があります。ベータ機能に取り組む際にプロセスをスキップすることが顧客に与える影響に注意してください。実験的機能に取り組んでいる場合は、思慮深い検討の後でベロシティを得るためにいくつかのプロセスをスキップすることが推奨されます。
 
@@ -120,7 +120,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ### リスクを受け入れる
 
-実験的（Experimental）およびベータ（Beta）機能に取り組む際は、いくつかのリスクを取ることが大丈夫です。実験的機能を提供する際に高いベロシティを維持するために追加のリスクを取ることができる、多くの便利なツールと自動化が利用可能です:
+実験的（Experimental）およびベータ（Beta）機能に取り組む際は、いくつかのリスクを取ることが大丈夫です。実験的機能を提供する際に高いベロシティを維持するために追加のリスクを取ることができる、多くの便利なツールと自動化が利用可能です：
 
 1. フィーチャーフラグを使用できます。
 1. サーキットブレーカーを実装できます。
@@ -128,7 +128,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 機能が GitLab の他の部分からより独立しているほど、より多くのリスクを取ることができます。なぜなら、実験的機能の問題が一般提供（GA）機能やプロダクト全体に悪影響を与える可能性が低いからです。
 
-このルールには 1 つの例外があります: 可用性とセキュリティです。成熟度モデルに関わらず、コードは常にできる限り安全であるべきで、GitLab.com をダウンさせるべきではありません。
+このルールには 1 つの例外があります： 可用性とセキュリティです。成熟度モデルに関わらず、コードは常にできる限り安全であるべきで、GitLab.com をダウンさせるべきではありません。
 
 ### メンテナンスのバランスを取る
 
@@ -136,7 +136,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ### 積極的であること
 
-ベロシティに悪影響を与えるプロセスがある場合は、積極的に行動してください: 声を上げ、改善方法についてマネージャーと協力してください。
+ベロシティに悪影響を与えるプロセスがある場合は、積極的に行動してください： 声を上げ、改善方法についてマネージャーと協力してください。
 
 プロセスが存在する理由を常に説明できるべきです。それができない場合、「プロセスのためのプロセス」である可能性があります。価値の低いプロセスである可能性があります。または、現在の規模や戦略的目標に合わなくなった可能性があります。その場合は、プロセスを排除、修正、または自動化できる可能性があります。
 
@@ -146,7 +146,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 業務の優先順位付け方法、および私たちの技術的意思決定を導くべき[プロダクトマネジメントセクション](/handbook/product/product-processes/cross-functional-prioritization/)を参照してください。
 
-プロジェクトと会社にとってのベロシティの高い優先度にもかかわらず、それよりも優先しなければならない 1 つのことがあります: GitLab の可用性とセキュリティです。私たちや顧客はどちらも、ユーザーの生産性とデータをリスクにさらすことをいとわないならば、エンタープライズグレードのサービスを運営できません。
+プロジェクトと会社にとってのベロシティの高い優先度にもかかわらず、それよりも優先しなければならない 1 つのことがあります： GitLab の可用性とセキュリティです。私たちや顧客はどちらも、ユーザーの生産性とデータをリスクにさらすことをいとわないならば、エンタープライズグレードのサービスを運営できません。
 
 数百人のエンジニアが毎日何千もの独立した意思決定を行い、GitLab.com とそこのユーザーと顧客に影響を与える可能性があります。私たちが世界で最も生産的なエンジニアリング組織になることを目指す中で、全員が可用性とセキュリティを念頭に置く必要があります。GitLab.com が可用性を持ち安全である限りにおいてのみ、速く動くことができます。Self-Managed の GitLab インスタンスの可用性も私たちの成功にとって非常に重要であり、これは（GitLab.com の管理者が私たちであるのに対して）顧客の管理者とのパートナーシップで実現される必要があります。
 
@@ -156,12 +156,12 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 より良い結果を達成するのに役立つよう設計されたプロセスを開発・文書化しています。
 
-例えば、以下のプロセスはリスクを減らしコード品質を向上させるために存在しています:
+例えば、以下のプロセスはリスクを減らしコード品質を向上させるために存在しています：
 
 - [フィーチャーフラグの使用](https://docs.gitlab.com/ee/development/feature_flags/index.html)
 - [コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)
 
-私たちはメトリクスを分析してトレンドを特定し、レトロスペクティブを開催し（例: [グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)、[イテレーションレトロスペクティブ](/handbook/engineering/devops/create/engineers/iteration/)）、[根本原因分析](/handbook/customer-experience/professional-services-engineering/workflows/internal/root-cause-analysis/)を実施し、チームメンバーからフィードバックを受けることで改善の機会を見つけます。チームメンバーはプロセスを改善する機会を特定し解決策を提案することが奨励されており、その例として MR または Issue でこれらの機会を説明することが考えられます。
+私たちはメトリクスを分析してトレンドを特定し、レトロスペクティブを開催し（例： [グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)、[イテレーションレトロスペクティブ](/handbook/engineering/devops/create/engineers/iteration/)）、[根本原因分析](/handbook/engineering/workflow/root-cause-analysis/)を実施し、チームメンバーからフィードバックを受けることで改善の機会を見つけます。チームメンバーはプロセスを改善する機会を特定し解決策を提案することが奨励されており、その例として MR または Issue でこれらの機会を説明することが考えられます。
 
 誰でも新しいプロセスを提案したり既存のプロセスを改善したりすることで貢献できます。
 
@@ -171,14 +171,14 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ### 準備ができたらリリースする
 
-[リリースページ](/handbook/engineering/releases/)では、2 つの主要なリリースチャンネルについて説明しています:
+[リリースページ](/handbook/engineering/releases/)では、2 つの主要なリリースチャンネルについて説明しています：
 
 1. Self-Managed ユーザーは[月次 Self-Managed リリース](/handbook/engineering/releases/#self-managed-releases)を使用します。
 1. GitLab.com は[自動デプロイリリース](https://gitlab.com/gitlab-org/release/docs/blob/master/general/deploy/auto-deploy.md)を使用します。
 
 最初のものが月次リリースであるため、月次の Self-Managed リリースに間に合わせるために急ごうとする誘惑があります。しかし、これはアンチパターンです。ほとんどの Issue には厳格な期限がありません。期限のある Issue は例外であり、そのように扱われるべきです。
 
-期限のプレッシャーは論理的にいくつかの結果につながります:
+期限のプレッシャーは論理的にいくつかの結果につながります：
 
 1. [人々は燃え尽き症候群のリスクが高まります](/handbook/people-group/time-off-and-absence/time-off-types/)。
 1. [完了の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)を妥協する可能性があります。
@@ -187,22 +187,22 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 一般的なルールとして、最後の 2 つの結果のみが受け入れ可能です。割り当てられたマイルストーンという形での「期限」を逃すことは、[予測可能性よりもベロシティを優先する](/handbook/engineering/development/principles/#velocity)ため、多くの場合 OK です。月次の Self-Managed リリースを逃しても、コードが GitLab.com に届くことを防ぎません。
 
-これらの理由などから、私たちは意図的に Self-Managed の月次リリースに含めるためにマージすべきコードの[特定の日付を定義しません](/handbook/engineering/releases/monthly-releases#timelines)。早くマージされるほど良いです。これはまた以下を意味します:
+これらの理由などから、私たちは意図的に Self-Managed の月次リリースに含めるためにマージすべきコードの[特定の日付を定義しません](/handbook/engineering/releases/monthly-releases#timelines)。早くマージされるほど良いです。これはまた以下を意味します：
 
 1. マージリクエストの著者が期限に間に合わせるために[時間外に作業する](/handbook/values/#measure-impact-not-activity)ことや急ぐことを望みません。
 1. [レビュアーとメンテナー](/handbook/engineering/workflow/code-review/)が[通常の SLO](/handbook/engineering/workflow/code-review/#review-response-slo)を満たす以外のことをするためにプレッシャーをかけられることを望みません。
 
-マージリクエストが特定のリリースに入ることが不可欠な場合は、エンジニアとすべてのレビュアーがそのコミットメントを果たせるよう、事前に十分に伝えることが必要です。重大なバグに急きょ対処する必要がある場合は、修正を急いだり、修正が完了するまでリリースを遅らせたりするよりも、原因となった変更を元に戻す方が適切です。
+マージリクエストが特定のリリースに入ることが不可欠な場合は、エンジニアとすべてのレビュアーがそのコミットメントを果たせるよう、事前に十分に伝えることが必要です。重大なバグを短い準備期間で修正する必要がある場合は、修正を急ぐより、原因となった変更を元に戻すか、場合によっては修正の準備が整うまでリリースを遅らせる方が適切です。
 
 一般的に、Self-Managed リリース間近に行動を変える必要はありません。
 
-### ドッグフーディング
+### ドッグフーディング {#dogfooding}
 
-私たちは[すべてのものをドッグフードします](/handbook/product/product-processes/dogfooding-for-r-d/)。[プロダクト原則](/handbook/product/#product-principles)に基づき、機能のドッグフードやプロダクトへのフィードバックのために必要な調査業務を行うことは、エンジニアリング部門の責任です。改善の優先順位付けや GitLab 内での機能の再構築はプロダクトの責任です。
+私たちは[すべてのものをドッグフーディングします](/handbook/product/product-processes/dogfooding-for-r-d/)。[プロダクト原則](/handbook/product/#product-principles)に基づき、機能のドッグフーディングや Product へのフィードバックのために必要な調査業務を行うことは、Engineering 部門の責任です。改善の優先順位付けや GitLab 内での機能の再構築は Product の責任です。
 
 #### ドッグフーディングのアンチパターン {#dogfooding-antipatterns}
 
-陥りやすいアンチパターンは、プロダクトが提供するものの外で問題を解決することです。以下はドッグフーディングではありません:
+陥りやすいアンチパターンは、プロダクトが提供するものの外で問題を解決することです。以下はドッグフーディングではありません：
 
 1. GitLab の外でボットを構築する。
 1. GitLab API を活用するスクリプトを書く（機能がロードマップにあり、GitLab プロジェクト内で出荷できる場合）。
@@ -221,7 +221,7 @@ GitLab の外でツールを構築することを検討する際は、[プロダ
 
 ### コード品質と標準 {#code-quality-and-standards}
 
-コード品質と標準を維持する必要があります。一般的に[開発ガイド](https://docs.gitlab.com/ee/development/)、特に自分のグループに関連するガイドに精通していることが非常に重要です:
+コード品質と標準を維持する必要があります。一般的に[開発ガイド](https://docs.gitlab.com/ee/development/)、特に自分のグループに関連するガイドに精通していることが非常に重要です：
 
 - [UX ガイド](https://docs.gitlab.com/ee/development/ux/)
 - [バックエンドガイド](https://docs.gitlab.com/ee/development/#backend-guides)
@@ -230,7 +230,7 @@ GitLab の外でツールを構築することを検討する際は、[プロダ
 
 コードを柔軟にする唯一の方法は、できる限りシンプルにすることだと覚えておいてください。
 
-[Nearby Cats (@BaseCase)](https://twitter.com/BaseCase/status/1085686616499183616) は 2019 年 1 月 16 日に次のように書いています:
+[Nearby Cats (@BaseCase)](https://twitter.com/BaseCase/status/1085686616499183616)は 2019 年 1 月 16 日に次のように書いています：
 
 > 多くのプログラマーは、コードを柔軟にする方法とは、将来の用途をできる限り多く予測することだと考える間違いを犯します。しかし、これは逆説的に*柔軟性の低い*コードにつながります。
 > 柔軟性を実現する唯一の方法は、物事をできる限りシンプルで変更しやすくすることです。
@@ -241,13 +241,13 @@ GitLab の外でツールを構築することを検討する際は、[プロダ
 
 複雑なアプリケーションを構築する際には、完全に計画された機能などの多くの要因を考慮することが重要です。複雑さが増すにつれて後で Vue で書き直す必要が生じるだけのために HAML で MVC を構築するような状況を避けるためです。
 
-視覚的な一貫性とアクセシブルな UI を促進するために、Vue と HAML の両方のビューで[GitLab UI コンポーネントライブラリ](https://gitlab.com/gitlab-org/gitlab-ui/)が提供するシンプルで再利用可能な UI コンポーネントを常に使用することを目指すべきです。GitLab UI コンポーネントは Pajamas デザインシステムに基づいて実装しており、現在これらは主に Vue にありますが、いくつかのシンプルなコンポーネントを HAML でも使用できる[アダプター](https://docs.gitlab.com/ee/development/fe_guide/haml.html#available-components)を提供しています。
+視覚的な一貫性とアクセシブルな UI を促進するために、Vue と HAML の両方のビューで [GitLab UI コンポーネントライブラリ](https://gitlab.com/gitlab-org/gitlab-ui/)が提供するシンプルで再利用可能な UI コンポーネントを常に使用することを目指すべきです。GitLab UI コンポーネントは Pajamas デザインシステムに基づいて実装しており、現在これらは主に Vue にありますが、いくつかのシンプルなコンポーネントを HAML でも使用できる[アダプター](https://docs.gitlab.com/ee/development/fe_guide/haml.html#available-components)を提供しています。
 
 HAML で GitLab UI コンポーネントが本質的な複雑さのために利用できない場合、それは代わりに Vue を使用して機能を実装すべきサインです。
 
 #### VueJS を使用する場合
 
-- ([gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui)) ライブラリからすでに確立されたコンポーネントを使用しようとしている。
+- ([gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui))ライブラリからすでに確立されたコンポーネントを使用しようとしている。
 - 単一ページアプリケーションでインタラクティビティを提供するために接続された複数の[複雑なコンポーネント](#complex-components)を必要とする複雑な機能を構築している。
 - バニラ JavaScript / jQuery で HAML ビューの動作を強化していることに気づく（リアクティブまたは非同期の動作）。
 - 中程度またはより大きなクライアントサイドのインタラクティビティが必要。
@@ -257,7 +257,7 @@ HAML で GitLab UI コンポーネントが本質的な複雑さのために利�
 
 - シンプルな静的ビューが必要。
 - 複数のコンポーネントや状態管理を使用する必要がない。
-- ([gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui)) ライブラリの[複雑なコンポーネント](#complex-components)を使用する必要がない（HAML でラベルなどの使用できるシンプルなコンポーネントへの使用には及ばない）。
+- ([gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui))ライブラリの[複雑なコンポーネント](#complex-components)を使用する必要がない（HAML でラベルなどの使用できるシンプルなコンポーネントへの使用には及ばない）。
 
 #### 複雑なコンポーネント {#complex-components}
 

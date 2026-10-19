@@ -1,11 +1,11 @@
 ---
 title: "GitLab セールス FAQ - パートナーとの販売"
 upstream_path: /handbook/sales/field-operations/channel-operations/sales-faq/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T06:32:43+09:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:50:18+00:00"
 translator: claude
 stale: false
-lastmod: "2026-06-30T11:28:44-07:00"
+lastmod: "2026-10-19T18:59:08+11:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -19,7 +19,7 @@ lastmod: "2026-06-30T11:28:44-07:00"
 パートナーはいつディール登録を提出すればよいですか？どのような商談を登録できますか？
 </summary>
 
-GitLab には、リセール、MSP、リファラルの商談を対象とした [Partner Sourced Deal Registration](/handbook/sales/field-operations/channel-operations/#partner-sourced-deal-registration)（DR）プログラムがあります。**GitLab に新規ビジネスをもたらしている**商談については、パートナーが Partner Sourced DR を提出する必要があります。これは新規ロゴ、コタームでのアドオン／アップセル、または更新の一部としてのアドオン／アップセル商談に適用できます。なお、1 つの商談に対して承認できる Partner Sourced DR は 1 件のみです。これは、1 件のディールをソーシングできるパートナーは 1 社のみであるためです。パートナーは商談をソーシングしていない場合に Partner Sourced DR を提出するべきではなく、通常はこれらのディールに対して Co-Sell 割引を受けることになります。パートナープログラム割引に関する詳細は、GitLab の [Internal Incentive Guide](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1) をご参照ください。
+GitLab には、リセール、MSP、リファラルの商談を対象とした [Partner Sourced Deal Registration](/handbook/sales/field-operations/channel-operations/#partner-sourced-deal-registration)（DR）プログラムがあります。**GitLab に新規ビジネスをもたらしている**商談については、パートナーが Partner Sourced DR を提出する必要があります。これは新規ロゴ、コタームでのアドオン／アップセル、または更新の一部としてのアドオン／アップセル商談に適用できます。なお、1 つの商談に対して承認できる Partner Sourced DR は 1 件のみです。これは、1 件のディールをソーシングできるパートナーは 1 社のみであるためです。パートナーは商談をソーシングしていない場合に Partner Sourced DR を提出するべきではなく、通常はこれらのディールに対して Co-Sell 割引を受けることになります。パートナープログラム割引に関する詳細は、GitLab の [社内インセンティブガイド](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1)をご参照ください。
 
 GitLab には [Service Attach DR](/handbook/sales/field-operations/channel-operations/#service-attach-opportunities) プログラムもあり、これは GitLab 製品の販売時にパートナーが自社のプロフェッショナルサービスを顧客環境に販売する商談に適用されます。
 
@@ -41,7 +41,7 @@ GitLab には [Service Attach DR](/handbook/sales/field-operations/channel-opera
 パートナーと商談に取り組んでいますが、ディール登録（DR）の有効期限が切れています。DR を延長することはできますか？
 </summary>
 
-はい、期限切れの DR は、チャネルアカウントマネージャーが [30 日間延長](/handbook/sales/field-operations/channel-operations/#rules-of-engagement-for-partner-sourced-deal-registration)できます。DR の延長を依頼するには、チャネルアカウントマネージャーに chatter してください。30 日を超える延長が必要な場合は、`@Partner Operations` に chatter し、登録の新しい有効期限を提示してください。
+はい、期限切れの DR は、Channel Account Manager が [30 日間延長](/handbook/sales/field-operations/channel-operations/#rules-of-engagement-for-partner-sourced-deal-registration)できます。DR の延長を依頼するには、Channel Account Manager に chatter してください。30 日を超える延長が必要な場合は、`@Partner Operations` に chatter し、登録の新しい有効期限を提示してください。
 
 </details>
 
@@ -50,7 +50,7 @@ GitLab には [Service Attach DR](/handbook/sales/field-operations/channel-opera
 ディール登録（DR）のステータスが「Returned」になっているのはどういう意味ですか？
 </summary>
 
-DR に割り当てられたチャネルアカウントマネージャー（CAM）が DR をレビューし、追加情報／背景の提供のためリセールパートナーに差し戻したことを意味します。リセールパートナーが CAM のフィードバックを確認して回答すると、CAM に通知が送られ、更新された DR をレビューしてアクションを取ります。
+DR に割り当てられた Channel Account Manager（CAM）が DR をレビューし、追加情報／背景の提供のためリセールパートナーに差し戻したことを意味します。リセールパートナーが CAM のフィードバックを確認して回答すると、CAM に通知が送られ、更新された DR をレビューしてアクションを取ります。
 
 </details>
 
@@ -65,11 +65,11 @@ DR 情報は商談内の 2 箇所で確認できます:
 
 - 商談の上部にある「Related list quick links」セクション内の「Registrations」セクション。このセクションには、承認済み、期限切れ、却下、保留中の Partner Sourced DR と Service Attach DR を含め、商談に紐づいたすべての DR が含まれています。
 
-![Opp DR Top Section](/images/sales/field-operations/channel-operations/opp_top_section.png "Deal Registration Opp")
+![商談上部のディール登録セクション](/images/sales/field-operations/channel-operations/opp_top_section.png "Deal Registration Opp")
 
 - 商談本体の「Partner Sourced Deal Registration」セクション。承認された Partner Sourced DR が表示されます。
 
-![DR Section](/images/sales/field-operations/channel-operations/dr_section.png "Deal Registration Section in Opp")
+![ディール登録セクション](/images/sales/field-operations/channel-operations/dr_section.png "Deal Registration Section in Opp")
 
 </details>
 
@@ -80,7 +80,7 @@ DR 情報は商談内の 2 箇所で確認できます:
 
 商談の「Primary Quote Partner Details」セクションをご参照ください。プライマリ見積のパートナー情報が表示されます。
 
-![Primary Quote Section](/images/sales/field-operations/channel-operations/quote_section.png "Primary Quote Section")
+![プライマリ見積セクション](/images/sales/field-operations/channel-operations/quote_section.png "Primary Quote Section")
 
 </details>
 
@@ -89,7 +89,7 @@ DR 情報は商談内の 2 箇所で確認できます:
 商談の `Sales Qualified Source`（SQS）が「Partner Generated」になる原因は何ですか？
 </summary>
 
-商談の SQS は、(i) 承認された Partner Sourced ディール登録がある場合、または Initial Source が Partner Qualified Lead の場合に「Partner Generated」になります。詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#sfdc-opportunity-source-field-values-for-channel)をご参照ください。
+商談の SQS は、(i) 承認された Partner Sourced ディール登録がある場合、または Initial Source が Partner Qualified Lead の場合に「Partner Generated」になります。詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#sfdc-opportunity-source-field-values-for-channel)をご参照ください。
 
 </details>
 
@@ -102,7 +102,7 @@ DR 情報は商談内の 2 箇所で確認できます:
 GitLab のパートナー割引、インセンティブ、リベートプログラムに関する情報はどこで見つけられますか？
 </summary>
 
-パートナー割引、インセンティブ、リベートプログラム等に関する情報が掲載されている [Internal Incentive Guide](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1) をご参照ください。
+パートナー割引、インセンティブ、リベートプログラム等に関する情報が掲載されている [社内インセンティブガイド](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1)をご参照ください。
 
 </details>
 
@@ -111,7 +111,7 @@ GitLab のパートナー割引、インセンティブ、リベートプログ�
 パートナー（ディストリビューター、リセラー、MSP）向けに製品やサービスをどのように割引しますか？
 </summary>
 
-製品とサービスのパートナープログラム割引については、[Internal Incentive Guide](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1) をご参照ください。
+製品とサービスのパートナープログラム割引については、[社内インセンティブガイド](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1)をご参照ください。
 
 </details>
 
@@ -125,9 +125,9 @@ Partner Sourced と Co-Sell のパートナー割引は、それぞれどのよ�
 - パートナーが**ソーシング**した商談（更新商談の一部としてライセンスを追加する場合を含む）については、パートナーが Partner Sourced ディール登録（DR）を提出する必要があります。GitLab CAM と ASM が DR を承認した後、ディールの新規またはアドオン部分について DR パートナーに Partner Sourced 割引を提供できます。
 - パートナーが**ソーシングしていない**商談については、通常パートナーは Co-Sell 割引を受けることになります。
 
-商談がフラットな更新の場合は、パートナーの既存契約権に関するルールについて、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
+商談がフラットな更新の場合は、パートナーの既存契約権に関するルールについて、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
 
-見積のパートナープログラム割引に関する情報は、[Internal Incentive Guide](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1) をご参照ください。
+見積のパートナープログラム割引に関する情報は、[社内インセンティブガイド](https://gitlab.highspot.com/items/672950b937a5d0282b99cb96?lfrm=shp.0#1)をご参照ください。
 
 </details>
 
@@ -158,7 +158,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 リセラー直販ではなく、ディストリビューター経由で見積を作成することの利点は何ですか？
 </summary>
 
-ディストリビューションを活用する利点の詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#why-does-gitlab-leverage-distribution)をご参照ください。
+ディストリビューションを活用する利点の詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#why-does-gitlab-leverage-distribution)をご参照ください。
 
 </details>
 
@@ -167,7 +167,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 リセラー直販ではなくディストリビューター経由で見積を作成すべきなのはいつですか？
 </summary>
 
-ディストリビューターの要件と地域・市場別のカバレッジの詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
+ディストリビューターの要件と地域・市場別のカバレッジの詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
 
 </details>
 
@@ -176,7 +176,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 リセラー直販、ディストリビューター、または MSP の見積はどのように作成しますか？
 </summary>
 
-パートナー見積プロセスの概要、およびステップバイステップの見積ガイド等の主要リソースへのリンクについては、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#partner-quoting-overview-and-resources)をご参照ください。
+パートナー見積プロセスの概要、およびステップバイステップの見積ガイド等の主要リソースへのリンクについては、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#partner-quoting-overview-and-resources)をご参照ください。
 
 </details>
 
@@ -188,7 +188,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 見積は顧客ではなくパートナーに送信する必要があります。具体的には:
 
 - リセラー直販の場合、リセラー担当者にのみ見積を送信してください（顧客を CC に入れないようにしてください）。
-- ディストリビューション経由の場合、ディストリビューター担当者にのみ見積を送信してください（リセラーや顧客を CC に入れないようにしてください）。ディストリビューションの連絡先情報については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
+- ディストリビューション経由の場合、ディストリビューター担当者にのみ見積を送信してください（リセラーや顧客を CC に入れないようにしてください）。ディストリビューションの連絡先情報については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
 
 </details>
 
@@ -197,7 +197,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 パートナーが請求アカウント（つまり `Invoice Owner`）と請求アカウント担当者（つまり `Invoice Owner Contact`）情報を持っていない、または新規／更新された情報を提供してきました。見積を作成するためにこの情報をパートナーのアカウントに追加するにはどうすればよいですか？
 </summary>
 
-パートナーアカウントレコードに請求情報を追加または更新する方法の詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#billing-account-and-billing-account-contact-on-partner-account-record)をご参照ください。
+パートナーアカウントレコードに請求情報を追加または更新する方法の詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#billing-account-and-billing-account-contact-on-partner-account-record)をご参照ください。
 
 </details>
 
@@ -206,7 +206,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 パートナー見積の `Invoice Owner` と `Invoice Owner Contact` はどう見つけますか？
 </summary>
 
-パートナー見積上の `Invoice Owner` と `Invoice Owner Contact` は、それぞれパートナーの請求アカウントと請求アカウント担当者のレコードを表します。SFDC でこれらのレコードを見つけて見積に使用する方法の詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#how-to-find-partner-billing-records-in-sfdc-and-use-for-quoting)をご参照ください。
+パートナー見積上の `Invoice Owner` と `Invoice Owner Contact` は、それぞれパートナーの請求アカウントと請求アカウント担当者のレコードを表します。SFDC でこれらのレコードを見つけて見積に使用する方法の詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#how-to-find-partner-billing-records-in-sfdc-and-use-for-quoting)をご参照ください。
 
 </details>
 
@@ -215,7 +215,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 見込み客／未認定のリセラーが GitLab から見積を依頼してきました。直接または間接的にディストリビューション経由で見積を提供することは可能ですか？
 </summary>
 
-未認定のリセラーに見積を提供することはできません。リセラーが GitLab 見積を受け取れるよう、[パートナーとして登録する](https://partners.gitlab.com/English/register_email.aspx)よう促してください。これが不可能な場合、商談オーナーおよび／またはチャネルアカウントマネージャー（CAM）は商談に法務ケースを作成し、パートナーが GitLab と取引するための一回限りの認可を依頼できます。リクエストがレビューされて承認された場合、Legal は商談オーナー、CAM、Sales Support と協力し、一回限りの認可を提供するために必要な手順を進めます。
+未認定のリセラーに見積を提供することはできません。リセラーが GitLab 見積を受け取れるよう、[パートナーとして登録する](https://partners.gitlab.com/English/register_email.aspx)よう促してください。これが不可能な場合、商談オーナーおよび／または Channel Account Manager（CAM）は商談に法務ケースを作成し、パートナーが GitLab と取引するための一回限りの認可を依頼できます。リクエストがレビューされて承認された場合、Legal は商談オーナー、CAM、Sales Support と協力し、一回限りの認可を提供するために必要な手順を進めます。
 
 </details>
 
@@ -224,7 +224,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 パートナーの `Partner Status` が「Prospect」のため、パートナーに見積を出せません。なぜこのパートナーアカウントは「Prospect」ステータスになっており、どうすれば Authorized／Active に更新できますか？
 </summary>
 
-パートナーアカウントが[「Prospect」ステータス](/handbook/sales/field-operations/channel-operations/#standard-channel-practices)になっているのは、パートナーがまだ当社のパートナー契約に署名していない、または必須の販売トレーニングを完了していないためです。SFDC でパートナーアカウントを所有するチャネルアカウントマネージャーに連絡し、パートナーを認定するための作業を進めてもらうよう依頼してください。
+パートナーアカウントが[「Prospect」ステータス](/handbook/sales/field-operations/channel-operations/#standard-channel-practices)になっているのは、パートナーがまだ当社のパートナー契約に署名していない、または必須の販売トレーニングを完了していないためです。SFDC でパートナーアカウントを所有する Channel Account Manager に連絡し、パートナーを認定するための作業を進めてもらうよう依頼してください。
 
 </details>
 
@@ -260,7 +260,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 パートナーから見積の更新依頼がありましたが、既に承認のために提出してしまったためレコードがロックされています。承認を取り下げて更新できますか？
 </summary>
 
-はい、見積を承認から取り下げるガイダンスについては、[Deal Desk Handbook](/handbook/sales/field-operations/sales-operations/deal-desk/#recall-a-quote-from-approvals)をご参照ください。
+はい、見積を承認から取り下げるガイダンスについては、[Deal Desk ハンドブック](/handbook/sales/field-operations/sales-operations/deal-desk/#recall-a-quote-from-approvals)をご参照ください。
 
 </details>
 
@@ -278,7 +278,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 顧客が更新で別のリセラーと取引したいと考えています。新しいリセラーに対して既存パートナー割引で見積を提示できますか？
 </summary>
 
-はい、顧客がメールで正式に連絡し、更新で新しいリセラーと取引したいことを確認した場合、既存契約権の割引を移管できます。詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
+はい、顧客がメールで正式に連絡し、更新で新しいリセラーと取引したいことを確認した場合、既存契約権の割引を移管できます。詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
 
 </details>
 
@@ -296,7 +296,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 パートナーから、顧客がアクセスを失う前に更新できないかもしれないと懸念が示されました。更新を処理するための追加時間を確保するため、一時的なライセンス延長を許可できますか？
 </summary>
 
-はい、更新処理中に顧客のアクセスが失われるのを防ぐため、[内部サポートチケットを提出](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)して一時的なライセンスを依頼できます。
+はい、更新処理中に顧客のアクセスが失われるのを防ぐため、[L&R の社内リクエストを提出](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)して一時的なライセンスを依頼できます。
 
 </details>
 
@@ -358,7 +358,7 @@ ECCN については、[Trade Compliance ハンドブック](/handbook/legal/tra
 クローズドウォン注文の請求書はパートナーにいつ届きますか？
 </summary>
 
-請求書は[商談クローズの 24〜48 時間後](/handbook/finance/accounting/finance-ops/billing-ops/#standard-operating-process)に送付されます。
+請求書は[商談クローズの 24 〜 48 時間後](/handbook/finance/accounting/finance-ops/billing-ops/#standard-operating-process)に送付されます。
 
 </details>
 
@@ -367,7 +367,7 @@ ECCN については、[Trade Compliance ハンドブック](/handbook/legal/tra
 パートナーから、クローズドウォン注文の GitLab 請求書および／または顧客購入確認の納品証明（POD）を依頼されました。販売後に GitLab 請求書および／または POD を受け取るのはパートナーの誰ですか？
 </summary>
 
-プライマリ見積の `Invoice Owner Contact` が GitLab 請求書を受領し、`Invoice Owner` の `Sold To Work Email` が POD（つまり、フルフィルメントからの顧客プロビジョニングメールのコピー）を受領します。なお、これら 2 つの担当者は見積上で揃っている必要があります。`Invoice Owner Contact`（つまり、請求アカウント担当者）は `Invoice Owner`（つまり、請求アカウント）から作成され、その詳細と一致している必要があるためです。パートナー請求レコードとパートナーディールの見積への適用方法の詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#how-to-find-partner-billing-records-in-sfdc-and-use-for-quoting)をご参照ください。
+プライマリ見積の `Invoice Owner Contact` が GitLab 請求書を受領し、`Invoice Owner` の `Sold To Work Email` が POD（つまり、フルフィルメントからの顧客プロビジョニングメールのコピー）を受領します。なお、これら 2 つの担当者は見積上で揃っている必要があります。`Invoice Owner Contact`（つまり、請求アカウント担当者）は `Invoice Owner`（つまり、請求アカウント）から作成され、その詳細と一致している必要があるためです。パートナー請求レコードとパートナーディールの見積への適用方法の詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#how-to-find-partner-billing-records-in-sfdc-and-use-for-quoting)をご参照ください。
 
 **注意**: 2 ティアディールでは、ディストリビューターが GitLab から請求を受けるため、ディストリビューターが POD を受け取ります。リセラーがディストリビューション経由で購入した場合は、POD を取得するためにリセラーをディストリビューターにつないでください。
 
@@ -378,9 +378,9 @@ ECCN については、[Trade Compliance ハンドブック](/handbook/legal/tra
 パートナーから、PO／見積に記載された同じエンドユーザー担当者にライセンス／アクティベーションコード付きの購入確認メールを再送してほしいと依頼がありました。購入確認メールを再送するにはどうすればよいですか？
 </summary>
 
-これは GitLab 営業担当者またはパートナーのいずれかが実行できます:
+これは GitLab Sales Rep またはパートナーのいずれかが実行できます:
 
-- GitLab 営業担当者は、[内部サポートチケットを提出](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)し、サポートチームに同じエンドユーザー担当者への購入確認メール送信を依頼できます。
+- GitLab Sales Rep は、[L&R の社内リクエストを提出](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)し、サポートチームに同じエンドユーザー担当者への購入確認メール送信を依頼できます。
 - GitLab 請求書を受領したパートナー（つまり、2 ティアディールの場合はディストリビューター、1 ティアディールの場合はリセラー）は、GitLab 請求書を添付して[サポートチケットを提出](https://support.gitlab.com/hc/en-us/requests/new)し、同じエンドユーザー担当者への購入確認メールの再送を依頼できます。
 
 </details>
@@ -392,7 +392,7 @@ ECCN については、[Trade Compliance ハンドブック](/handbook/legal/tra
 
 GitLab 請求書を受領したパートナー（つまり、2 ティアディールの場合はディストリビューター、1 ティアディールの場合はリセラー）が、GitLab 請求書を添付して[サポートチケットを提出](https://support.gitlab.com/hc/en-us/requests/new)し、新しいエンドユーザー担当者への購入確認メールの送信を依頼する必要があります。
 
-**重要**: GitLab 営業担当者は、パートナーや顧客に代わって販売後のエンドユーザー担当者を変更することはできません。エンドユーザー担当者の変更依頼は、(i) 上述のとおり GitLab の請求書を受領したパートナー、または (ii) 最終的な見積に `Sold To Contact` として記載されている顧客担当者（つまり、ライセンスを受け取った人物）が提出する必要があります。
+**重要**: GitLab Sales Rep は、パートナーや顧客に代わって販売後のエンドユーザー担当者を変更することはできません。エンドユーザー担当者の変更依頼は、(i) 上述のとおり GitLab の請求書を受領したパートナー、または (ii) 最終的な見積に `Sold To Contact` として記載されている顧客担当者（つまり、ライセンスを受け取った人物）が提出する必要があります。
 
 </details>
 
@@ -401,7 +401,7 @@ GitLab 請求書を受領したパートナー（つまり、2 ティアディ�
 パートナーから、顧客がオフラインまたはエアギャップ環境のため GitLab Self-Managed アクティベーションコードを使用できないと連絡がありました。販売後にレガシーまたはオフラインライセンスを提供するにはどうすればよいですか？
 </summary>
 
-クローズドウォンの商談に対してオフラインまたはレガシーライセンスキーを提供するため、SFDC chatter を介して VP に承認を依頼してください。VP の承認が得られた場合、[内部サポートチケットを提出](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)し、顧客への更新ライセンスの発行を依頼してください。
+クローズドウォンの商談に対してオフラインまたはレガシーライセンスキーを提供するため、SFDC chatter を介して VP に承認を依頼してください。VP の承認が得られた場合、[L&R の社内リクエストを提出](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)し、顧客への更新ライセンスの発行を依頼してください。
 
 </details>
 

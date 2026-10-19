@@ -2,11 +2,11 @@
 title: コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須です。コードレビューガイドラインに慣れ、それに従ってください。"
 upstream_path: "/handbook/engineering/workflow/code-review/"
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T12:58:42+09:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:34:30+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-25T15:12:19+12:00"
+lastmod: "2026-10-13T15:22:43-07:00"
 ---
 
 ## 概要
@@ -25,16 +25,16 @@ GitLab のすべてのエンジニアは、同僚やコミュニティ貢献者�
 
 マージリクエストをレビューしてくれる人は、[チームページ](/handbook/company/team/)または [GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)のリストから見つけることができます。どちらも `data/team_members/person/*` 配下の YAML ファイルから供給されています。
 
-[マージリクエストコーチ](/job-description-library/expert/merge-request-coach/)になることで、コミュニティ貢献者がマージリクエストを準備するのを助けることもできます。
+[Merge Request Coach](/job-description-library/expert/merge-request-coach/)になることで、コミュニティ貢献者がマージリクエストを準備するのを助けることもできます。
 
-すべてのエンジニアがすべてのマージリクエストをレビューできますが、マージリクエストを*承認*する能力はメンテナに制限されている点に注意してください。
+すべてのエンジニアがマージリクエストをレビューできますが、受け入れられるのはメンテナのみです。メンテナは、以下の要件に従って、承認のためのレビューを独立したレビューエージェントに委任できます。
 
 ### PTO の前にレビューアサインメントを管理する
 
 有給休暇を取る前に、レビュアーは次のことを行うべきです:
 
 - PTO 前の最後の労働日に、自分にアサインされているすべての MR レビューを確認する
-- [レビュー SLO](#review-response-slo) を尊重し、次のいずれかを行う:
+- [レビュー SLO](#review-response-slo)を尊重し、次のいずれかを行う:
   - PTO の日付と復帰予定を MR にコメントとして残す
   - 別の利用可能なレビュアーにレビューを再アサインする
 - PTO の開始前にレビューを完了できない場合は、MR の作成者に直接通知する
@@ -43,11 +43,53 @@ GitLab のすべてのエンジニアは、同僚やコミュニティ貢献者�
 
 ## メンテナ {#maintainer}
 
-メンテナはコードレビューの専門家である GitLab エンジニアであり、GitLab プロダクトおよびコードベースを非常によく知っており、1 つまたは複数の [GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)でマージリクエストを承認する権限を持っています。
+メンテナはコードレビューの専門家である GitLab エンジニアであり、GitLab プロダクトおよびコードベースを非常によく知っており、1 つまたは複数の [GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)でマージリクエストを受け入れる権限を持っています。
+
+メンテナは、マージリクエストのレビューと承認を独立したレビューエージェントに委任できます。別の評価エージェント、決定論的なルール、またはその両方を使い、メンテナが承認したリスク基準に照らして各マージリクエストを評価し、判断とその根拠を記録する必要があります。委任に対する説明責任は引き続きメンテナが負います。
+
+リスク基準を満たすだけでは、マージリクエストはエージェントによる承認の対象にはなりません。エージェントがマージリクエストを承認する前に、適格性の評価を行う側は次の点も確認する必要があります。
+
+- 作成者とソースプロジェクトが信頼境界の要件を満たしていること。
+- リポジトリとマージリクエストが、割り当てられたリスク階層に必要な統制を満たしていること。
+- 必要な能力を持つ独立したレビューエージェントが、変更の影響を受けるすべてのドメインを網羅していること。
+
+評価を行う側は、マージリクエストの現在のコミットについて、これらの結果を記録する必要があります。いずれかの確認に失敗した場合、または根拠が不足している場合は、独立した人間が変更を承認する必要があります。新しいコミットが追加されると、適格性の判断は無効になります。
+
+作成者は、自分の変更に使用される評価基準、評価設定、レビューエージェントの設定を管理してはいけません。作成者は独立したレビューを指揮してはいけません。自分で書いた変更や、エージェントに指示して書かせた変更を自分で承認することは、誰にも認められません。
+
+人間によるレビューや承認に関する既存の要件は変わりません。次の変更には、人間の承認が必要です。
+
+- SOX または FedRAMP の統制対象となる変更。
+- より広いコミュニティからの貢献。
+- 法律、規制、契約により、明示的な人間の承認が求められる変更。
+
+判断に迷う場合は人間の承認を必須とし、Compliance チームに相談してください。
+
+自動評価でこれらの要件を覆してはいけません。
+
+リスク基準を定義するには、次を使用してください。
+
+- [Crawl-Walk-Run フレームワーク](/handbook/eta/ai/strategy/guiding-principles/#the-crawl-walk-run-framework)。
+- [AI アクションの権限階層](/handbook/eta/ai/strategy/guiding-principles/#permission-tiers-for-ai-actions)。
+- [影響に応じて精査の程度を合わせる](/handbook/engineering/infrastructure-platforms/ai_usage_principles/#match-scrutiny-to-impact)ためのガイダンス。
+
+メンテナは、プロジェクト内で次の事項を文書化し、承認する必要があります。
+
+- どの変更をエージェントによる承認の対象とするかを決めるリスク基準。
+- 変更の評価に使用する評価エージェント、決定論的なルール、またはその組み合わせ。
+- 独立したレビューエージェントとその設定。
+- 説明責任を負うメンテナ。
+- 人間の承認を受けずにマージされた変更に対し、人間がレビューする期限。
+
+各評価では、使用した基準、ルール、エージェント設定のバージョンを記録する必要があります。
+
+評価エージェントとレビューエージェントは、保護されたデフォルトブランチから指示を読み込む必要があります。評価基準、決定論的なルール、エージェントの指示と設定、CODEOWNERS、承認ルールの変更は、人間が承認する必要があります。
+
+あるエージェントが変更を書き、別のエージェントがそれを承認した場合、説明責任を負うメンテナは、文書化された期限内にマージ済みの変更をレビューし、その結果を記録する必要があります。
 
 すべてのプロジェクトには少なくとも 2 人のメンテナがいるべきですが、ほとんどのプロジェクトにはそれ以上いる必要があります。一部のプロジェクトには専門分野ごとに別のメンテナがいます。たとえば、[メインの GitLab コードベース](https://gitlab.com/gitlab-org/gitlab)では、フロントエンド、バックエンド、データベースに別々のメンテナがいます。
 
-優れたエンジニアはしばしば優れたレビュアーでもありますが、コードレビューはそれ自体のスキルであり、シニアリティに関係なく、すべてのエンジニアがそのスキルを磨く機会を同じように得てきたわけではありません。良いメンテナの大きな部分は既存のプロダクトとコードベースを非常によく知っていることに由来し、それによって他のフィーチャーとの一貫性のなさ、エッジケース、または容易に見逃される非自明な相互作用を見つけられる、という点にも注意することが重要です。
+優れたエンジニアはしばしば優れたレビュアーでもありますが、コードレビューはそれ自体のスキルであり、シニアリティに関係なく、すべてのエンジニアがそのスキルを磨く機会を同じように得てきたわけではありません。良いメンテナの大きな部分は既存のプロダクトとコードベースを非常によく知っていることに由来し、それによって他の機能との一貫性のなさ、エッジケース、または容易に見逃される非自明な相互作用を見つけられる、という点にも注意することが重要です。
 
 レビュアー／メンテナになることは、直近のグループを超えてより広い責任を引き受けることを意味します。効果的に作業できる余地を作るために、利用可能なキャパシティを調整する必要があります。各プロジェクトには異なるワークロードが伴うため厳密な公式はありませんが、バーンアウトを避け、これがチームのキャパシティにどう影響するかをマネージャーが理解できるよう、必ずマネージャーと議論してください。
 
@@ -57,7 +99,7 @@ GitLab のすべてのエンジニアは、同僚やコミュニティ貢献者�
 
 ### Senior+ メンテナ
 
-Senior+ エンジニアにとって、マネージャーまたはチームメンバーリレーションズと[合理的配慮プロセス](/handbook/people-policies/inc-usa/#reasonable-accommodation)に沿って議論していない限り、メンテナであることは職務ファミリーの一部です。個人がそのプロジェクトの貢献者であり、アクティブなレビュアーであるかぎり、プロダクトの一部と見なされる[エンジニアリングプロジェクト](/handbook/engineering/projects/)はどれも適切です。2022-08-01 以降、メンテナシップのタイムフレーム期待値については次の表を使用しています:
+Senior+ エンジニアにとって、マネージャーまたは Team Member Relations と[合理的配慮プロセス](/handbook/people-policies/inc-usa/#reasonable-accommodation)に沿って議論していない限り、メンテナであることは職務ファミリーの一部です。個人がそのプロジェクトの貢献者であり、アクティブなレビュアーであるかぎり、プロダクトの一部と見なされる[エンジニアリングプロジェクト](/handbook/engineering/projects/)はどれも適切です。2022-08-01 以降、メンテナシップのタイムフレーム期待値については次の表を使用しています:
 
 | 説明 | タイムフレーム |
 | ----------- | --------- |
@@ -68,19 +110,19 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 
 ### レビュアー／メンテナとの面会
 
-コードをレビューする人を知っていれば、コミュニケーションがより容易になります。機会（たとえばコーヒーチャット）を捉えて、レビュアーを知り、氷を砕き、将来のコミュニケーションを促進してください。
+コードをレビューする人を知っていれば、コミュニケーションがより容易になります。機会（たとえばコーヒーチャット）を捉えて、レビュアーと知り合い、打ち解けて、今後のコミュニケーションを円滑にしてください。
 
 ### プロジェクトメンテナになる方法 {#how-to-become-a-project-maintainer}
 
 **これは特にバックエンド、フロントエンド、データベースのメンテナに適用されます。他の領域（ドキュメントなど）には、以下に文書化された別のプロセスがあるかもしれません。**
 
-メンテナシップを考える前に、まず貢献者である必要があります。トレイニーメンテナプロセスでレビュアーになる前に、プロジェクトに少なくとも数件のフィーチャーまたはメンテナンスの貢献を行う必要があります。これらの貢献は、プロジェクト独自のドメインと設計を理解できるほど十分に複雑である必要があります。
+メンテナシップを考える前に、まず貢献者である必要があります。トレイニーメンテナプロセスでレビュアーになる前に、プロジェクトに少なくとも数件の機能またはメンテナンスの貢献を行う必要があります。これらの貢献は、プロジェクト独自のドメインと設計を理解できるほど十分に複雑である必要があります。
 
 #### メンテナシップのチェックインとメンターシップ
 
 関心のあるレビュアーは、メンテナシップへの進捗状況を議論し、最近の詳細なレビューをレビューするため、定期的にマネージャー／メンターとチェックインする必要があります。たとえば 1-on-1 中などです。レビュアーは、レビューに関する追加の視点を得るため、[メンテナメンター](#reviewer-mentorship-program)を探すことも奨励されています。レビュアーは、メンテナシップへの適格性について、「正当化されれば、いつでもメンテナになる準備ができている」という観点で考えるよう奨励されます。
 
-このテンプレート [トレイニーメンテナ Issue テンプレート](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/.gitlab/issue_templates/trainee-maintainer.md) を使って **トレイニーメンテナ Issue** を開くこともでき、最終マージリクエストに反映される例を積み上げることができます。
+このテンプレート [トレイニーメンテナ Issue テンプレート](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/.gitlab/issue_templates/trainee-maintainer.md)を使って **トレイニーメンテナ Issue** を開くこともでき、最終マージリクエストに反映される例を積み上げることができます。
 
 #### レビュアー向けのマージリクエストフィードバック
 
@@ -105,7 +147,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 1. マージリクエストを 1 週間オープンのままにし、メンテナがマネージャー／メンターにフィードバックを提供する時間を与える。
 1. 既存のメンテナから少なくとも 2 件の承認を得る。
 
-##### ネガティブフィードバックの管理
+##### ネガティブフィードバックの管理 {#managing-negative-feedback}
 
 **マネージャー／メンターがレビュアーはメンテナになる準備ができていないことを示すプライベートフィードバックを受け取った場合**：
 
@@ -139,7 +181,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 #### `gitlab-rails` のプロジェクトメンテナプロセス
 
 - バックエンドメンテナの場合は、`@gitlab-org/maintainers/rails-backend` にピングしてください
-  - バックエンドメンテナは [Rails コアフレームワーク gem](https://docs.gitlab.com/development/feature_categorization/#rails-platform-feature-category) を担当します。
+  - バックエンドメンテナは [Rails コアフレームワーク gem](https://docs.gitlab.com/development/feature_categorization/#rails-platform-feature-category)を担当します。
     これらの gem をアップグレードするためにアプリケーションを更新する作業に加え、これらの gem に関連する GitLab の安定性と可用性のために必要なその他の作業を含みます。
 - フロントエンドメンテナの場合は、`@gitlab-org/maintainers/rails-frontend` にピングしてください
 
@@ -149,8 +191,8 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 - [マイグレーションヘルパー](https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/database/migration_helpers.rb)に慣れ、既存のマイグレーションでの使用をレビューする。
 - [データベースガイド](https://docs.gitlab.com/ee/development/database/index.html)のベストプラクティスに慣れる。
 - [EXPLAIN プランの理解](https://docs.gitlab.com/ee/development/database/understanding_explain_plans.html)を読む。
-- [`@gl-database`](https://gitlab.com/groups/gl-database/-/group_members) グループに追加してもらい、グループへの @ メンションに応答する（グループのいずれかのメンテナに連絡して追加してもらう）。グループメンションに対して gitlab.com で TODO を受け取ります。
-- [`psql`/`AllFeaturesUser` の database lab/postgres.ai へのアクセス](https://docs.gitlab.com/ee/development/database/database_lab.html#access-database-lab-engine) を持っていない場合は、[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new)を作成する。
+- [`@gl-database`](https://gitlab.com/groups/gl-database/-/group_members)グループに追加してもらい、グループへの @ メンションに応答する（グループのいずれかのメンテナに連絡して追加してもらう）。グループメンションに対して gitlab.com で TODO を受け取ります。
+- `AllFeaturesUser` へのアクセスをまだ持っていない場合は、[`psql`/`AllFeaturesUser` の database lab/postgres.ai へのアクセス](https://docs.gitlab.com/ee/development/database/database_lab.html#access-database-lab-engine)を取得するための[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new)を作成する。
 
 ヒント:
 
@@ -170,14 +212,14 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 承認後、MR をマージするメンテナは次のことを行います:
 
 - 新しく承認されたメンテナを CI コンポーネントメンテナグループ（`@gitlab-org/maintainers/ci-components`）に追加する。
-- [`#ci_components_maintainers`](https://gitlab.slack.com/archives/C06AQBJETRR) で発表し、*Engineering Week-in-Review document* にアップデートを投稿する
+- [`#ci_components_maintainers`](https://gitlab.slack.com/archives/C06AQBJETRR)で発表し、*Engineering Week-in-Review document* にアップデートを投稿する
 
 #### `design.gitlab.com` または `gitlab-svgs` のプロジェクトメンテナプロセス
 
-[`design.gitlab.com`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com) または [`gitlab-svgs`](https://gitlab.com/gitlab-org/gitlab-svgs)
+[`design.gitlab.com`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)または [`gitlab-svgs`](https://gitlab.com/gitlab-org/gitlab-svgs)
 
 - [メンテナになる方法](/handbook/upstream-studios/design-expression/design-system/design-review/#how-to-become-a-maintainer)を理解する。
-- すべてのデザイナーは [`gitlab-design`](https://gitlab.com/gitlab-org/gitlab-design) プロジェクトのメンテナです。`gitlab` および `gitlab-ui` プロジェクトの UI（`.scss`）のメンテナになることに関心がある場合は、[エンジニアリングレビューワークフロー](/handbook/engineering/workflow/code-review)に従ってください。
+- すべてのデザイナーは [`gitlab-design`](https://gitlab.com/gitlab-org/gitlab-design)プロジェクトのメンテナです。`gitlab` および `gitlab-ui` プロジェクトの UI（`.scss`）のメンテナになることに関心がある場合は、[エンジニアリングレビューワークフロー](/handbook/engineering/workflow/code-review)に従ってください。
 - 十分な MR をレビューでき、多様な種類が含まれるようにするのはあなた次第です。チームからのレビューを求めることも、`#upstream-studios` や `#g_pajamas-design-system` Slack チャンネルでレビューを依頼することもできます。トレーニングを進めるのに十分な MR を受け取っていない場合は、能動的に Pajamas への自分自身の改善に取り組んでください。これは、プロダクトの全体的な理解と品質の高い貢献を示し、進捗を後押しするのに役立ちます。メンテナはあなたを導く準備ができています。
 - あなたのレビューは、レビュアーの責任に加えてメンテナの責任もカバーすることを目指すべきです。デザインメンテナは、使いやすさに影響を与え、既存のユーザー体験をイテレートする MR、および／またはデザインガイドライン、標準、パターンの使用を含む MR に焦点を当てるべきです。あなたの承認は、マージ準備ができていると考えていることを意味します。
 - メンテナとして、自分が持っていない専門知識を他者に[頼り続ける](/handbook/values/#its-impossible-to-know-everything)必要があります。MR の説明では、メンテナレベルでの結果を示す取り組みを強調し、続けて取り組みたいスキルと、この Issue へのリンクを追加してください。([例](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/2395))。
@@ -236,7 +278,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 [`gitlab-secure-license-db`](https://gitlab.com/gitlab-org/security-products/license-db)
 
 - [GitLab Go の標準とスタイルガイドライン](https://docs.gitlab.com/ee/development/go_guide/)に慣れる。
-- Go の経験がない場合は、[Golang トレーニング Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/issue_templates/golang_training.md) を完了する。
+- Go の経験がない場合は、[Golang トレーニング Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/issue_templates/golang_training.md)を完了する。
 - [External License DB のアーキテクチャとリポジトリウォークスルー](https://www.youtube.com/watch?v=5b5QNJNwoJ8)を見る
 - [LicenseDB のフルスタック開発ガイドライン](https://gitlab.com/gitlab-org/security-products/license-db/deployment/-/blob/main/docs/fullstack_development.md)をレビューする。
 - コンポーネントに新しい変更をリリースして[デプロイする](https://gitlab.com/gitlab-org/security-products/license-db/deployment/-/merge_requests/162)方法を理解する。
@@ -324,13 +366,13 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 
 1. 参加は、メンテナとレビュアーの両方にとって任意です。
 1. メンテナは、一度に最大 4 人のレビュアーを直接メンタリングできます。
-1. メンター／レビュアーの割り当ては [maintainer_mentorship.yml](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/maintainer_mentorship.yml) ファイル内で調整されます。
-1. 新しいレビュアーは、[maintainer_mentorship.yml](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/maintainer_mentorship.yml) で空きのある既存メンテナを探し、メンテナに直接連絡する必要があります。
+1. メンター／レビュアーの割り当ては [maintainer_mentorship.yml](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/maintainer_mentorship.yml)ファイル内で調整されます。
+1. 新しいレビュアーは、[maintainer_mentorship.yml](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/maintainer_mentorship.yml)で空きのある既存メンテナを探し、メンテナに直接連絡する必要があります。
 1. 6 週間ごとに、メンテナは各レビュアーとチェックインします。これは非同期またはコーヒーチャットで行えます。
 1. チェックインのゴールは: MR をレビューし、質問に答え、疑問を明確化し、卒業に向けた準備状況を追跡することです。
 1. メンターシップは 12 か月でキャップされ、その時までにレビュアーは卒業の準備ができているはずです。
 1. レビュアーが卒業した後、達成を祝い、さらなる質問に答えるため、少なくとも 1 回の追加チェックインをスケジュールするべきです。
-1. 新しい受講者のために空間を確保するため、卒業したレビュアーを [maintainer_mentorship.yml](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/maintainer_mentorship.yml) ファイルから必ず削除してください。
+1. 新しい受講者のために空間を確保するため、卒業したレビュアーを [maintainer_mentorship.yml](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/maintainer_mentorship.yml)ファイルから必ず削除してください。
 
 #### 利点
 
@@ -341,9 +383,9 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 
 ##### レビュアー／メンテナの役割からの移行
 
-マネージャーとの相談後、レビュアー／メンテナの役割から離れたいか、離れる必要があるかもしれません。状況に関係なく、これが起こるのはまったく問題ありません！ 責任やワークロードは変わります。プロジェクトは進化します。だから、最も重要な領域に時間を費やすことを確実にすることが重要です。変更を公式にし、[reviewer roulette](https://docs.gitlab.com/ee/development/code_review.html#reviewer-roulette) から削除されるには:
+マネージャーとの相談後、レビュアー／メンテナの役割から離れたいか、離れる必要があるかもしれません。状況に関係なく、これが起こるのはまったく問題ありません！ 責任やワークロードは変わります。プロジェクトは進化します。だから、最も重要な領域に時間を費やすことを確実にすることが重要です。変更を公式にし、[reviewer roulette](https://docs.gitlab.com/ee/development/code_review.html#reviewer-roulette)から削除されるには:
 
-1. YAML ファイルを更新する方法については [Team Member Database](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/doc/team_database.md) ドキュメントを参照してください。
+1. YAML ファイルを更新する方法については [Team Member Database](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/doc/team_database.md)ドキュメントを参照してください。
 1. 新しい MR を作成し、MR をマネージャーにアサインします。
 
 ##### レビュアー／メンテナへの復帰
@@ -357,8 +399,8 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 プロジェクトはこれらのメンテナシップのガイドラインを採用して、メンテナが足りないプロジェクトでメンテナを育てるのに役立てることができます。
 
 - すべてのチームメンバーは [エンジニアリング開発の役割](/job-description-library/engineering/development/)に相談し、レビュアーまたはメンテナになるべきです。
-- [プロジェクトメンテナになる方法](#how-to-become-a-project-maintainer) の下に、プロジェクト固有のメンテナプロセスを追加する。[軽量テンプレート](#maintainer-process-template)が提供されています。
-- MR レビュアーを特定するために、プロジェクト内で [`simple_roulette`](https://gitlab.com/gitlab-org/ruby/gems/gitlab-dangerfiles/-/tree/master#simple_roulette) を使用して Danger Review を有効にする。
+- [プロジェクトメンテナになる方法](#how-to-become-a-project-maintainer)の下に、プロジェクト固有のメンテナプロセスを追加する。[軽量テンプレート](#maintainer-process-template)が提供されています。
+- MR レビュアーを特定するために、プロジェクト内で [`simple_roulette`](https://gitlab.com/gitlab-org/ruby/gems/gitlab-dangerfiles/-/tree/master#simple_roulette)を使用して Danger Review を有効にする。
 - メンテナと見なすために必要なマージリクエストレビュー数を減らす。
 - プロジェクト自体への作業をメンテナシップの進捗としてカウントする。
 - プロセスを速めるためにメンテナメンターを必要とする。
@@ -381,9 +423,9 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 - パイロットプログラムでは、各潜在的なメンテナが X 回の MR レビューを行うことも検討しましたが、プロジェクト内に十分な MR がありませんでした。
 - プロセスを設計した後、潜在的な新しいメンテナからフィードバックを求める。彼らはウォークスルー、ペアリングセッション、その他のリソースの異なる組み合わせを好むかもしれません。
 
-このオンボーディングプロセスに従うことで、プロジェクトはコードベースとプロジェクトのビジネスロジックを十分に理解した新しいメンテナを効率的に追加できます。このプロセスの実例は [GitLab VS Code Extension](https://gitlab.com/gitlab-org/gitlab-vscode-extension/-/issues/656) プロジェクトで見られます。
+このオンボーディングプロセスに従うことで、プロジェクトはコードベースとプロジェクトのビジネスロジックを十分に理解した新しいメンテナを効率的に追加できます。このプロセスの実例は [GitLab VS Code Extension](https://gitlab.com/gitlab-org/gitlab-vscode-extension/-/issues/656)プロジェクトで見られます。
 
-#### メンテナプロセステンプレート
+#### メンテナプロセステンプレート {#maintainer-process-template}
 
 プロジェクトのメンテナ要件を定義するための出発点として、この軽量テンプレートを使用してください。
 
@@ -391,14 +433,14 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 - メインの GitLab プロジェクトで使われていないプログラミング言語の場合は、プロジェクト固有の言語トレーニングを完了する（例: [golang トレーニング](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/issue_templates/golang_training.md)）。
 - プロジェクト固有のリリースプロセス（存在する場合）をレビューする。
 - `[project or team]` Slack チャンネルに参加する。
-- マージリクエストを作成し、[チームメンバーエントリー](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person) で `project-name: trainee_maintainer` として役割を示します。マージのため MR をマネージャーにアサインします。
+- マージリクエストを作成し、[チームメンバーエントリー](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person)で `project-name: trainee_maintainer` として役割を示します。マージのため MR をマネージャーにアサインします。
 - *オプション:* 利用可能であれば、練習用 MR でシミュレートしたレビューを実行する。
 - *オプション:* MR のピアレビューを行う。
 - *オプション:* メンテナになるのを手伝う既存のメンテナに連絡する([メンテナになる方法](/handbook/engineering/workflow/code-review/#reviewer-mentorship-program))。
 
 ### メンテナ比率
 
-私たちは、フロントエンドとバックエンドの両方で、エンジニア : メンテナ比率を 6 以下に保つことを目指しています。これは Engineer : Maintainer Ratio ダッシュボードで追跡しています:
+私たちは、フロントエンドとバックエンドの両方で、エンジニア : メンテナ比率を 6 未満に保つことを目指しています。これは Engineer : Maintainer Ratio ダッシュボードで追跡しています:
 
 https://10az.online.tableau.com/t/gitlab/views/DraftEngineerMaintainerRatio/EngineerMaintainerRatio_1
 
@@ -430,9 +472,9 @@ https://10az.online.tableau.com/#/site/gitlab/views/MaintainershipDemand/Maintai
 - Unhealthy Core Areas of Maintainership Health - Minimum Maintainers Required を満たしておらず、かつ月あたり 100 件を超える Incoming Merge Requests を受け取っているプロジェクト (GitLab) または領域 (backend) のパーセンテージを時間経過とともに表示。
 - Part of Product Repos - Full Data - 上記のすべてのメトリクスを含む、各プロジェクト、領域、月のオールインクルーシブチャート。
 
-#### 月次レビューターゲット
+#### 月次レビューターゲット {#monthly-review-targets}
 
-ターゲットは、Available Maintainers の数（上記の説明参照）と、「合理的な」メンテナごとの月次レビュー数に基づいて計算されます。「合理的」は[別途の分析 Issue](https://gitlab.com/groups/gitlab-com/-/epics/1817) で一部の領域について定義されています。これらは "maintainer_custom_targets" Sisense スニペットで定義されたカスタムターゲットです。Incoming Merge Requests の数に基づいて、他のすべてのプロジェクト向けの一般的なターゲットがあります。これらの数値は最初のイテレーションで、分析 Issue に基づいています。需要の少ないプロジェクトでは、メンテナが少ない（したがってより多くの月次レビュー件数を 1 人あたり要求する）一方、需要の多いプロジェクトではメンテナが多い（したがってより少ない月次レビュー件数を 1 人あたり要求する）というものでした:
+ターゲットは、Available Maintainers の数（上記の説明参照）と、「合理的な」メンテナごとの月次レビュー数に基づいて計算されます。「合理的」は[別途の分析 Issue](https://gitlab.com/groups/gitlab-com/-/epics/1817)で一部の領域について定義されています。これらは "maintainer_custom_targets" Sisense スニペットで定義されたカスタムターゲットです。Incoming Merge Requests の数に基づいて、他のすべてのプロジェクト向けの一般的なターゲットがあります。これらの数値は最初のイテレーションで、分析 Issue に基づいています。需要の少ないプロジェクトでは、メンテナが少ない（したがってより多くの月次レビュー件数を 1 人あたり要求する）一方、需要の多いプロジェクトではメンテナが多い（したがってより少ない月次レビュー件数を 1 人あたり要求する）というものでした:
 
 - デフォルトのターゲットはメンテナごとに 5 件のレビュー
 - 領域が 10 件超のマージリクエストを受け取る場合、月次ターゲットはメンテナごとに 10 件のレビュー
@@ -467,19 +509,19 @@ https://10az.online.tableau.com/#/site/gitlab/workbooks/2286852/views
 暗黙的:
 
 - 特定のステージ／グループ（例: Create: Source Code）で働くチームメンバーは、彼らが取り組むアプリの領域について暗黙的にドメインエキスパートと見なされます。
-- 特定のフィーチャー（例: 検索）で働くチームメンバーは、そのフィーチャーについて暗黙的にドメインエキスパートと見なされます。
+- 特定の機能（例: 検索）で働くチームメンバーは、その機能について暗黙的にドメインエキスパートと見なされます。
 
 自己識別:
 
-- チームメンバーは、特定のフィーチャー（例: ファイルアップロード）についてドメインエキスパートとして自己識別できます。
-- チームメンバーは、特定のテクノロジー（例: GraphQL）、プロダクトフィーチャー（例: ファイルアップロード）、またはコードベースの領域（例: CI）についてドメインエキスパートとして自己識別できます。
+- チームメンバーは、特定の機能（例: ファイルアップロード）についてドメインエキスパートとして自己識別できます。
+- チームメンバーは、特定のテクノロジー（例: GraphQL）、プロダクト機能（例: ファイルアップロード）、またはコードベースの領域（例: CI）についてドメインエキスパートとして自己識別できます。
 
 ### ドメインエキスパートとして自己識別する方法
 
-ドメインエキスパートと見なされるための唯一の要件は、特定のテクノロジー、プロダクトフィーチャー、またはコードベースの領域での十分な経験を持っていることです。この基準を満たすかどうかは、チームメンバー本人に委ねます。
+ドメインエキスパートと見なされるための唯一の要件は、特定のテクノロジー、プロダクト機能、またはコードベースの領域での十分な経験を持っていることです。この基準を満たすかどうかは、チームメンバー本人に委ねます。
 
-1. [`data/domain_expertise.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/domain_expertise.yml) にある新しい、または既存のドメイン専門知識キーを定義します。
-1. 自分の[YAML ファイル](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person)で、新しい `domain_expertise` プロパティを追加し、すべてのドメイン専門知識キーをリストします。
+1. [`data/domain_expertise.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/domain_expertise.yml)にある新しい、または既存のドメイン専門知識キーを定義します。
+1. 自分の [YAML ファイル](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person)で、新しい `domain_expertise` プロパティを追加し、すべてのドメイン専門知識キーをリストします。
 
 例:
 
@@ -502,7 +544,7 @@ domain_expertise:
     - frontend_architecture
 ```
 
-ドメインエキスパートとして自己識別するときは、すでに確立されたドメインエキスパートまたは対応するエンジニアリングマネージャーにマージしてもらうよう MR をアサインすることをお勧めします。
+ドメインエキスパートとして自己識別するときは、すでに確立されたドメインエキスパートまたは対応する Engineering Manager にマージしてもらうよう MR をアサインすることをお勧めします。
 
 ### ドメインの専門知識を持つ人のリストはどこにありますか?
 
@@ -529,7 +571,7 @@ SLO 値はマージリクエストの作成者によって異なります:
 
 `Review-response` SLO の時間枠内にマージリクエストをレビューできないと思う場合は、コメントでできるだけ早く（レビューリクエストを最初に受け取ってから 36 時間以内まで）作成者に知らせ、他のレビュアーまたはメンテナを探すのを手伝うようにしてください。これにより、作成者はブロックを解除して、自分の仕事を素早く進められます。レビュアーから自分を外してください。
 
-レビュアーは、いくつかの他の絵文字を使用してステータスを伝えることもできます。これらの他のステータスの詳細については、開発者ドキュメントの [code review](https://docs.gitlab.com/ee/development/code_review.html#reviewer-roulette) ページを参照してください。
+レビュアーは、いくつかの他の絵文字を使用してステータスを伝えることもできます。これらの他のステータスの詳細については、開発者ドキュメントの [コードレビュー](https://docs.gitlab.com/ee/development/code_review.html#reviewer-roulette)ページを参照してください。
 
 もちろん、不在で GitLab.com ステータスを通じてこれを[伝えている](/handbook/people-group/time-off-and-absence/time-off-types/)場合、作成者はこれを認識し、別のレビュアーを自分で見つけることを期待されます。
 

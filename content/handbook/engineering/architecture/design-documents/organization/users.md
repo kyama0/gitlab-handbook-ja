@@ -4,22 +4,22 @@ owning-stage: "~devops::tenant scale"
 group: Organizations
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/users/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-translated_at: "2026-10-10T06:59:43+00:00"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:21:24+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-09T15:02:49+13:00"
+lastmod: "2026-10-14T16:36:50+13:00"
 ---
 
 GitLab は設立当初から、シングルサーバー・グローバルユーザーアーキテクチャを採用してきました。GitLab.com のスケーリングの懸念とプラットフォーム間の製品機能セットの分化により、このモデルはもはや十分ではありません。これらの制限が、マルチ Cell・マルチテナントアーキテクチャという新時代への進化を促しています。私たちは現在、予測可能な顧客体験を維持しながら、現在のアーキテクチャと目指すアーキテクチャのギャップを埋めるという課題に直面しています。
 
 以前のアーキテクチャは、単一のデータベース内の単一の Users テーブルを持つ単一の GitLab インスタンスを前提とし、すべてのトラフィックがこの 1 つのインスタンスにルーティングされていました。ユーザーはプライベートグループやプロジェクトによってセグメント化できましたが、ユーザーは常にグローバルなユーザープールの一部と見なされていました。
 
-最終的な目的地では、複数の GitLab インスタンスが存在し、それぞれが Users テーブルを持ち、必要に応じてインスタンス間でトラフィックがルーティングされます。ユーザーは Organization によって完全に管理され、ユーザーが他の Organization にアクセスすることを防いだり、ユーザーアカウントを完全に削除したりする機能を持つことができます。レガシーユーザーは影響を受けず、新しいアーキテクチャに移行するオプションが提供されます。
+最終的な目的地では、複数の GitLab インスタンスが存在し、それぞれが Users テーブルを持ち、必要に応じてインスタンス間でトラフィックがルーティングされます。ユーザーは Organization によって完全に管理されるようになり、Organization はそのユーザーが他の Organization にアクセスすることを防いだり、ユーザーアカウントを完全に削除したりできます。レガシーユーザーは影響を受けず、新しいアーキテクチャに移行するオプションが提供されます。
 
 ## ユーザーのホーム Organization {#the-users-home-organization}
 
-User のホーム Organization は、`User.organization_id` に記録された Organization です。このフィールドは必須で、Cells の `users` テーブルをシャードするためにも使用されます。すべての User の ID は常に 1 つの Organization に関連付けられます。つまり、所有権は常に排他的です。メンバーシップもその Organization に限定されるかどうかは、その Organization が隔離されているかによって決まります。非隔離 Organization ではメンバーシップは排他的になりません。User は同じアカウントで、任意の数の他の非隔離 Organization のメンバーにもなれ、User コンテキストはそれらすべてを横断して集約します。隔離 Organization ではメンバーシップが排他的になります。`organization_id` はその Organization に再割り当てされ、User の ID はその Organization の外部には存在しません。モデル全体については[リクエストコンテキスト](contexts.md)を、.com にとっての意味を含め、このフィールドのエンコード方法については [ADR 016](decisions/016_user_context.md)を参照してください。
+User のホーム Organization は、`User.organization_id` に記録された Organization です。このフィールドは必須で、Cells の `users` テーブルをシャードするためにも使用されます。すべての User のアイデンティティ は常に 1 つの Organization に関連付けられます。つまり、所有権は常に排他的です。メンバーシップもその Organization に限定されるかどうかは、その Organization が隔離されているかによって決まります。非隔離 Organization ではメンバーシップは排他的になりません。User は同じアカウントで、任意の数の他の非隔離 Organization のメンバーにもなれ、User コンテキストはそれらすべてを横断して集約します。隔離 Organization ではメンバーシップが排他的になります。`organization_id` はその Organization に再割り当てされ、User のアイデンティティ はその Organization の外部には存在しません。モデル全体については[リクエストコンテキスト](contexts.md)を、.com にとっての意味を含め、このフィールドのエンコード方法については [ADR 016](decisions/016_user_context.md)を参照してください。
 
 既存のユーザーは GitLab が管理するデフォルト Organization に所属します。私たちはユーザーがデフォルト Organization から移行して独自の Organization に入れるようにするマイグレーションパスを開発しています。
 
@@ -116,24 +116,35 @@ TBD
 
 ## ユーザーはいつ Organization を見ることができるのか？
 
-Organization の公開設定の詳細については、[公開設定](_index.md#visibility) を参照してください。
+Organization の公開設定の詳細については、[公開設定](_index.md#visibility)を参照してください。
 
 ## ユーザーは Organization 内で何を見ることができるのか？
 
 ユーザーは Organization 内でアクセス権を持つものを見ることができます。例えば、Organization メンバーはメンバーであるプライベートグループとプロジェクトにのみアクセスできますが、すべてのパブリックグループとプロジェクトを見ることができます。Issue、マージリクエスト、To-do リストなどのアクション可能なアイテムは Organization のコンテキストで表示されます。これは、ユーザーが `Organization A` で 10 件の作成したマージリクエストと `Organization B` で 7 件の作成したマージリクエストを見ることができますが、合計では両方の Organization にわたって 17 件のマージリクエストを作成したことになることを意味します。
 
-## 課金対象メンバーとは何か？
+## 課金対象メンバーとは何か？ {#what-is-a-billable-member}
+
+{{% alert title="注記" color="info" %}}
+このセクションと [SaaS](#saas-billable-members-chart)および [SM](#sm-billable-members-chart)の課金対象メンバーチャートは、参考情報としてのみ提供しています。2023 年の情報（<https://gitlab.com/gitlab-org/gitlab/-/merge_requests/124344>を参照）に基づいており、古くなっている可能性があります。
+{{% /alert %}}
 
 課金対象メンバーの定義は GitLab の 2 つの主要なオファリング間で異なります:
 
-- セルフマネージド（SM）: [課金対象メンバーは SM ライセンスに対してシートを消費するユーザーです](https://docs.gitlab.com/ee/subscriptions/self_managed/index.html#subscription-seats)。Guest ロールを超える権限を持つカスタムロールはシートを消費します。
-- GitLab.com（SaaS）: [課金対象メンバーはトップレベルグループの SaaS サブスクリプションに対してシートを消費する名前空間（グループまたはプロジェクト）のメンバーであるユーザーです](https://docs.gitlab.com/ee/subscriptions/gitlab_com/index.html#how-seat-usage-is-determined)。現在、[最小アクセス権を持つユーザー](https://docs.gitlab.com/ee/user/permissions.html#users-with-minimal-access) とグループのないユーザーはライセンスシートにカウントされますが、[それは変わりつつあります](https://gitlab.com/gitlab-org/gitlab/-/issues/330663#note_1133361094)。
+- Self-Managed（SM）: [課金対象メンバーは SM ライセンスに対してシートを消費するユーザーです](https://docs.gitlab.com/ee/subscriptions/self_managed/index.html#subscription-seats)。Guest ロールを超える権限を持つカスタムロールはシートを消費します。
+- GitLab.com（SaaS）: [課金対象メンバーはトップレベルグループの SaaS サブスクリプションに対してシートを消費する名前空間（グループまたはプロジェクト）のメンバーであるユーザーです](https://docs.gitlab.com/ee/subscriptions/gitlab_com/index.html#how-seat-usage-is-determined)。現在、[最小アクセス権を持つユーザー](https://docs.gitlab.com/ee/user/permissions.html#users-with-minimal-access)とグループのないユーザーはライセンスシートにカウントされますが、[それは変わりつつあります](https://gitlab.com/gitlab-org/gitlab/-/issues/330663#note_1133361094)。
+
+2 つの計算が異なるのは、それぞれが異なるモデルに基づいているためです。SM ライセンスはインスタンスのユーザーを数え、SaaS サブスクリプションはトップレベルグループ階層のメンバーを数えます。今後は、両方のオファリングを Organization を中心に統一する方向です。
+
+- SM: インスタンスのユーザーが Organization のユーザーになります。
+- SaaS: サブスクリプションを持つトップレベルグループが Organization となり、課金対象メンバーは Organization のユーザーから算出します。
+
+Organization メンバーシップの唯一の情報源を [`organization_users`](#organization-membership)とすることで、両方のオファリングで同じ母集団、つまりサブスクリプションまたはライセンスを持つ Organization のユーザーに基づいて、シートの消費を評価できます。
 
 これらの違いとその計算・表示方法は混乱を招くことがよくあります。SM と SaaS の両方において、ユーザーがシートを消費するかどうかを同じコアルールセットで評価します:
 
 1. アクティブユーザーである
 1. ボットユーザーでない
-1. Ultimate ティアの場合、ゲストでない
+1. Ultimate ティアの場合、Guest でない
 
 （1）については、アクティブとは何かという点と、参照する基盤モデル（ユーザー vs メンバー）の違いにより、オファリングごとに異なる方法で判断されます。GitLab の課金対象メンバーに関する様々な関連を示すために、以下の関係図を用意しています:
 
@@ -174,14 +185,14 @@ SaaS では、ユーザーが課金対象メンバーとみなされるかどう
 
 フローはそれぞれ異なるため、2 つのチャートがあります:
 
-- [SaaS チャート](#saas-chart)
-- [SM チャート](#sm-chart)
+- [SaaS の課金対象メンバーチャート](#saas-billable-members-chart)
+- [SM の課金対象メンバーチャート](#sm-billable-members-chart)
 
 （これらのチャートは長さの関係でページの下部に配置されています。）
 
 ## ユーザーはどのようにして異なる Organization を切り替えるのか？
 
-User は同じアカウントですでに複数の非隔離 Organization に参加できます。[ユーザーのホーム Organization](#the-users-home-organization)を参照してください。User のホーム Organization が隔離されると、その Organization が User の ID を所有します。そこから別の Organization への切り替えは、ここで決定した内容ではなく、将来の隔離 Organization 切り替え UX に依存します。
+User は同じアカウントですでに複数の非隔離 Organization に参加できます。[ユーザーのホーム Organization](#the-users-home-organization)を参照してください。User のホーム Organization が隔離されると、その Organization が User のアイデンティティ を所有します。そこから別の Organization への切り替えは、ここで決定した内容ではなく、将来の隔離 Organization 切り替え UX に依存します。
 
 後ほど、Cells 1.5 のコンテキストで、ユーザーは[コンテキストスイッチャー](https://gitlab.com/gitlab-org/gitlab/-/issues/411637)を使用できるようになります。この機能により、異なる Organization のコンテンツと設定への簡単なナビゲーションとアクセスが可能になります。コンテキストスイッチャーをクリックして提供されたリストから特定の Organization を選択することで、ユーザーは表示と権限をシームレスに切り替えられ、選択した Organization のリソースと機能を操作できるようになります。
 
@@ -191,7 +202,7 @@ User は同じアカウントですでに複数の非隔離 Organization に参�
 
 1. 削除: ユーザーが organization_users テーブルから削除されます。これはユーザーが会社を離れることに似ていますが、アクセス承認後に再び Organization に参加できます。
 1. バン: ユーザーがバンされます。これは不正行為の場合に起こりますが、バンが解除されるまでユーザーは Organization に再追加できません。この場合、organization_users エントリを保持し、権限を none に変更します。
-1. アカウント削除: ユーザーが削除されます。ユーザーが作成したすべてのものをゴーストユーザーに割り当て、organization_users テーブルからエントリを削除します。
+1. アカウント削除: ユーザーが削除されます。ユーザーが作成したすべてのものを Ghost User に割り当て、organization_users テーブルからエントリを削除します。
 
 Organization MVC の一環として、Organization Owners は Organization メンバーを削除できます。まず、ユーザーの `organization_users` エントリを削除済みとしてマークし、アクセス権を即座に失効させます。その後、Organization 内のすべてのグループとプロジェクトから、ユーザーのメンバーシップエントリを同期または非同期で削除します。アクセス権はこのクリーンアップの完了に依存しません。クリーンアップが完了すると、`organization_users` エントリを削除します。
 
@@ -201,7 +212,13 @@ Organization MVC の一環として、Organization Owners は Organization メ�
 
 非ユーザーは Organization の外部にあり、パブリックプロジェクトなど Organization のパブリックリソースにのみアクセスできます。
 
-## SaaS チャート {#saas-chart}
+<span id="saas-chart"></span>
+
+## SaaS の課金対象メンバーチャート {#saas-billable-members-chart}
+
+このチャートは参考情報であり、2023 年の情報に基づいています。[課金対象メンバーとは何か？](#what-is-a-billable-member)を参照してください。
+
+このチャートで「メンバー」は、課金対象メンバーの判定に用いるグループまたはプロジェクトの `Member` を指します。[Organization メンバーシップ](#organization-membership)とは無関係であり、ユーザーが Organization のメンバーであるかどうかを示すものではありません。
 
 ```mermaid
 flowchart TD
@@ -258,7 +275,20 @@ flowchart TD
         end
 ```
 
-## SM チャート {#sm-chart}
+注記（課金対象メンバーのコードから再構成しました。元の注記はチャートを最初に追加したときに失われました）:
+
+1. 「招待されたグループのメンバー」には、継承されたメンバーシップを含みます。[`invited_or_shared_group_members`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/models/concerns/gitlab_subscriptions/billing/group.rb)は、招待されたグループ**とその祖先グループ**のメンバーを収集します。それらのユーザーは招待されたグループのメンバーシップを継承するためです。[`Namespaces::BilledUsersFinder`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/finders/namespaces/billed_users_finder.rb)が集計するどの情報源にも `Member` レコードがないユーザーだけが「メンバーではない」に該当し、公開グループやプロジェクトで何を見たり実行したりできるかにかかわらず、課金対象になりません。
+2. メンバーの各情報源は、[`billed_users_from_members`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/models/concerns/gitlab_subscriptions/billing/group.rb)を通じてユーザーをフィルタリングします。これは `User.without_bots` を使用して、プロジェクトボット（リソースアクセストークン）、Service Accounts、サポートボットやセキュリティボットなどの内部ボットを含む、すべての [`BOT_USER_TYPES`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/models/concerns/has_user_type.rb)を除外します。
+3. メンバーの情報源は、[`active_without_invites_and_requests`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/models/member.rb)スコープを使用し、保留中のアクセスリクエスト（`Member.requested_at` が設定されているもの）を除外します。リクエストを承認すると `requested_at` がクリアされ、そのメンバーを集計します。
+4. 同じ [`active_without_invites_and_requests`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/models/member.rb)スコープは、保留中の招待、つまり `invite_token` を持ち、まだユーザーに関連付けられていない `Member` レコードも除外します。招待を承諾すると、メンバーをユーザーに関連付け、集計します。
+
+<span id="sm-chart"></span>
+
+## SM の課金対象メンバーチャート {#sm-billable-members-chart}
+
+このチャートは参考情報であり、2023 年の情報に基づいています。[課金対象メンバーとは何か？](#what-is-a-billable-member)を参照してください。
+
+このチャートで「メンバー」は、課金対象メンバーの判定に用いるグループまたはプロジェクトの `Member` を指します。[Organization メンバーシップ](#organization-membership)とは無関係であり、ユーザーが Organization のメンバーであるかどうかを示すものではありません。
 
 ```mermaid
 flowchart TD

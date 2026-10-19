@@ -1,16 +1,16 @@
 ---
 title: GitLab India Private Limited の情報と福利厚生
 description: インド在住チームメンバー向けの GitLab India Private Limited の福利厚生と情報
-upstream_path: /handbook/entity/india-pvt-ltd/
-upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
-translated_at: "2026-09-15T06:11:27+09:00"
+upstream_path: "/handbook/entity/india-pvt-ltd/"
+upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
+translated_at: "2026-10-19T22:38:26+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-10-01T19:40:16+01:00"
 ---
 
 {{% panel header="**これはセキュアなドキュメントです**" header-bg="orange" %}}
-記載の [Roles & Responsibilities](/handbook/entity/india-pvt-ltd/#roles--responsibilities) に従い、このページへの変更は code owner による承認またはマージが必要です。あらゆるコントリビューションを歓迎し、奨励します。
+記載の [役割と責任](/handbook/entity/india-pvt-ltd/#roles--responsibilities)に従い、このページへの変更は コードオーナーによる承認またはマージが必要です。あらゆるコントリビューションを歓迎し、奨励します。
 {{% /panel %}}
 
 このハンドブックページは、GitLab India Private Limited に雇用されているチームメンバー向けで、必要となりうるあらゆる情報を含んでいます。ここに掲載されていないもので、含めるべきだと思うものがあれば、お気軽に提案してください。
@@ -55,7 +55,7 @@ lastmod: "2026-09-13T04:09:59-04:00"
 - 入院前後の補償
 - 出産・不妊治療の補償
 - OPD（外来）給付
-- [GitLab India Benefits Summary](https://drive.google.com/file/d/1Tva0RqIEOBvdFx2RqcDSEnhw7Wl4O67F/view) を参照
+- [GitLab India Benefits Summary](https://drive.google.com/file/d/1Tva0RqIEOBvdFx2RqcDSEnhw7Wl4O67F/view)を参照
 - [詳細は India Benefits Slide Deck を参照](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view)
 
 </details>
@@ -69,7 +69,7 @@ lastmod: "2026-09-13T04:09:59-04:00"
         例: チームメンバーが 1 月 10 日に入社した場合、登録の詳細は 2 月 5 日に送信され、会員情報は 2 月末までに届きます
         例 2: チームメンバーが 3 月 4 日に入社した場合、登録の詳細は 3 月 5 日に送信され、会員情報は 3 月末までに届きます
 3. 会員情報を受け取る前に補償へのアクセスが必要な場合は、Ritesh Baria に連絡してください: Ritesh.Baria@wtwco.com
-4. ライフイベント（結婚、出産、死亡）の際に扶養家族を追加または削除するには、[Life Event Form](https://docs.google.com/forms/d/e/1FAIpQLSd_q5OFt2kvhV4SvR8aghgGdpG_WzhEf8Jdb81I1PYnlRzSMA/viewform?usp=sharing&ouid=115600862362829120699) に記入してください。People Team がプランの 30 日間のポリシー期間内に登録を処理できるよう、ライフイベントから 15 日以内にリクエストを提出する必要があります。15 日を過ぎて提出されたリクエストは期限内に処理されない可能性があり、変更を行うには 11 月のオープン登録期間まで待つ必要があります。
+4. ライフイベント（結婚、出産、死亡）の際に扶養家族を追加または削除するには、[Life Event Form](https://docs.google.com/forms/d/e/1FAIpQLSd_q5OFt2kvhV4SvR8aghgGdpG_WzhEf8Jdb81I1PYnlRzSMA/viewform?usp=sharing&ouid=115600862362829120699)に記入してください。People Team がプランの 30 日間のポリシー期間内に登録を処理できるよう、ライフイベントから 15 日以内にリクエストを提出する必要があります。15 日を過ぎて提出されたリクエストは期限内に処理されない可能性があり、変更を行うには 11 月のオープン登録期間まで待つ必要があります。
 
 </details>
 
@@ -82,13 +82,13 @@ lastmod: "2026-09-13T04:09:59-04:00"
 
 #### 年次健康診断
 
-GitLab は、すべての GitLab India チームメンバーに対し、Connect and Heal を通じて年次健康診断（プレミアムスキャン）を提供します。この包括的な検診は、予防的なケアによってあなたの健康管理に役立ちます。詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing) を参照してください。
+GitLab は、すべての GitLab India チームメンバーに対し、Connect and Heal を通じて年次健康診断（プレミアムスキャン）を提供します。この包括的な検診は、予防的なケアによってあなたの健康管理に役立ちます。詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing)を参照してください。
 
 <details markdown="1">
 
 <summary>含まれるもの</summary>
 
-- 利用可能な検査の一覧については、[India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view) のスライド 30 を参照してください。
+- 利用可能な検査の一覧については、[India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view)のスライド 30 を参照してください。
 
 </details>
 
@@ -100,9 +100,9 @@ GitLab は、すべての GitLab India チームメンバーに対し、Connect 
 2. CNH アプリをダウンロードし、GitLab のメールアドレスと公式メールに届いた OTP でログインします
 3. 個人情報を更新し、アプリから予約します
 4. 予約確認は 48 時間以内、健康診断後のレポートは注文概要の下のアプリ内で確認できます
-5. 完全な手順については [India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view) のスライド 31-35 を参照してください
+5. 完全な手順については [India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view)のスライド 31-35 を参照してください
 
-詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing) を参照してください。
+詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing)を参照してください。
 
 </details>
 
@@ -114,7 +114,7 @@ GitLab は、すべての GitLab India チームメンバーに対し、Connect 
 - Dr Mansi Pandit:  `mansi.pandit@connectandheal.com`
 - エスカレーション: Ritesh Baria - `Ritesh.Baria@wtwco.com`
 
-詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing) を参照してください。
+詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing)を参照してください。
 
 </details>
 
@@ -126,9 +126,9 @@ GitLab は、Axis Max Life Insurance を通じて会社負担の団体定期生�
 
 ##### 給付の概要
 
-- 詳細とクレームのプロセスについては、[India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view) のスライド 44-49 を参照してください
+- 詳細と保険金請求手続きについては、[India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view)のスライド 44-49 を参照してください
 - ご質問は Ritesh Baria に連絡してください: Ritesh.Baria@wtwco.com
-- チームメンバーは [このフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdtcAHEi5CDKE2jhZcksEspkIcTRqmI6qv818N64cMSUQlgYA/viewform?usp=sharing&ouid=115600862362829120699) を使って受取人を更新／指定できます
+- チームメンバーは [このフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdtcAHEi5CDKE2jhZcksEspkIcTRqmI6qv818N64cMSUQlgYA/viewform?usp=sharing&ouid=115600862362829120699)を使って受取人を更新／指定できます
 
 #### 個人傷害保険
 
@@ -139,9 +139,9 @@ ICICI Lombard を通じて、チームメンバーは CTC の 3 倍までの団�
 - 事故死
 - 全部および一部の障害
 - 事故による医療費
-- 詳細とクレームのプロセスについては、[India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view) のスライド 37-43 を参照してください
+- 詳細と保険金請求手続きについては、[India Benefit Deck](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view)のスライド 37-43 を参照してください
 
-### Provident Fund と National Pension Scheme
+### Provident Fund と National Pension Scheme {#provident-fund-and-national-pension-scheme}
 
 #### Provident Fund
 
@@ -160,7 +160,7 @@ GitLab は、雇用契約に記載されているとおり、チームメンバ�
 
 チームメンバーは GitLab に入社する際に Provident Fund の選択を行います。当初 PF 拠出に上限を設けることを選択した場合、後でそれを引き上げるリクエストはできません。12% の PF 拠出を選択した場合、4 月の登録期間中に上限額への引き下げをリクエストできますが、次の点に注意してください: これにより雇用主のマッチング拠出と全体の CTC の両方が減少します。あなたの「固定報酬」の構成要素は変更されず、減額を相殺するための調整は行われません。
 
-引き下げをリクエストするには、CTC と雇用主拠出への影響を承知したうえで、4 月 6 日より前に [Compass](https://app.serval.com/new-request) を通じて正式な書面でのリクエストを提出し、次の税年度に変更が反映されるようにします。
+引き下げをリクエストするには、CTC と雇用主拠出への影響を承知したうえで、4 月 6 日より前に [Compass](https://app.serval.com/new-request)を通じて正式な書面でのリクエストを提出し、次の税年度に変更が反映されるようにします。
 
 </details>
 
@@ -180,8 +180,8 @@ GitLab は、雇用契約に記載されているとおり、チームメンバ�
 1. Payroll はオンボーディング中にチームメンバーの UAN（Universal Account Number）を収集します。
 1. これがチームメンバーにとって初めての Provident Fund で、UAN を持っていない場合、チームメンバーが Workday と Papaya のオンボーディングタスクを完了した後、Payroll が UAN を生成できます。
 1. 月次拠出は給与から自動的に控除されます。
-1. 年次 PF ステートメントは、UAN とパスワードを使って [EPFO のウェブサイト](https://unifiedportal-mem.epfindia.gov.in/) で確認できます。
-1. PF の引き出しには適切な書類が必要です。詳細は [EPFO ポータル](https://www.epfindia.gov.in/site_en/WhichClaimForm.php) を参照してください。
+1. 年次 PF ステートメントは、UAN とパスワードを使って [EPFO のウェブサイト](https://unifiedportal-mem.epfindia.gov.in/)で確認できます。
+1. PF の引き出しには適切な書類が必要です。詳細は [EPFO ポータル](https://www.epfindia.gov.in/site_en/WhichClaimForm.php)を参照してください。
 
 なお、チームメンバーは、以下のすべての条件を満たす場合、Provident fund のオプトアウトの資格を得られることがあります:
 
@@ -193,7 +193,7 @@ GitLab は、雇用契約に記載されているとおり、チームメンバ�
 
 #### National Pension Scheme
 
-GitLab India は National Pension Scheme（NPS）を提供しています。これは、Pension Fund Regulatory and Development Authority（PFRDA）が規制する、任意の政府後援の退職貯蓄プログラムです。NPS では、給与の一部を長期の退職貯蓄に拠出でき、それが投資され、退職年齢で引き出すまで時間をかけて成長します。プランの仕組み、資格、拠出金がどうなるかの全体像については、[NPS FAQ](https://docs.google.com/document/d/1xoUo5NOZU8-k9kpcn7AEa_kXC2jjiU7kieQWxXXB3Hw/edit?tab=t.0) を参照してください
+GitLab India は National Pension Scheme（NPS）を提供しています。これは、Pension Fund Regulatory and Development Authority（PFRDA）が規制する、任意の政府後援の退職貯蓄プログラムです。NPS では、給与の一部を長期の退職貯蓄に拠出でき、それが投資され、退職年齢で引き出すまで時間をかけて成長します。プランの仕組み、資格、拠出金がどうなるかの全体像については、[NPS FAQ](https://docs.google.com/document/d/1xoUo5NOZU8-k9kpcn7AEa_kXC2jjiU7kieQWxXXB3Hw/edit?tab=t.0)を参照してください
 
 <details markdown="1">
 
@@ -220,15 +220,15 @@ NPS は任意です。基本給の 1% から 14% の間で拠出を選択でき�
 PRAN は、拠出金をあなたの NPS 口座にルーティングする一意の識別子です。
 
 すでに PRAN をお持ちですか？ それなら準備完了です — 登録プロセス中にそれを提供してください。
-PRAN をお持ちでないですか？ [KFintech CRA を通じて Corporate NPS 口座](https://cra.kfintech.com/poponline/popverification?AuthID=37BD5C5346F9171C7A1DBEE97E20F90DB0B1061F064A8B8A0C27C37CE272DD8E0DFF1C72A0590DA64BF1D2A953A7DFBB) に登録してください。ガイダンスについては [ステップバイステップの登録手順](https://drive.google.com/file/d/1tg9pegN3GLWqdTDHXscfpWgraU21TP0I/view?usp=sharing) を参照してください。
+PRAN をお持ちでないですか？ [KFintech CRA を通じて Corporate NPS 口座](https://cra.kfintech.com/poponline/popverification?AuthID=37BD5C5346F9171C7A1DBEE97E20F90DB0B1061F064A8B8A0C27C37CE272DD8E0DFF1C72A0590DA64BF1D2A953A7DFBB)に登録してください。ガイダンスについては [ステップバイステップの登録手順](https://drive.google.com/file/d/1tg9pegN3GLWqdTDHXscfpWgraU21TP0I/view?usp=sharing)を参照してください。
 
 ⚠️ 重要: 新しい PRAN に登録する際は、Applicant Type として「Corporate Subscriber」を選択してください。これにより、あなたの PRAN が GitLab の法人 NPS 口座にマッピングされます。誤ったタイプを選択すると、登録が遅れます。
 
 </details>
 
-### Gratuity Bonus
+### 退職給付金
 
-Gratuity Bonus の詳細については、まもなく共有されます。
+退職給付金の詳細については、まもなく共有されます。
 
 ### 雇用契約
 
@@ -236,17 +236,17 @@ GitLab の雇用契約テンプレートは [こちら](http://internal.gitlab.c
 
 ### People および雇用ポリシー
 
-ハンドブックの [People Policies](/handbook/people-policies/) ページは、関連するポリシーのディレクトリとして機能し、該当する場合はエンティティ固有の雇用ポリシーも掲載しています。インド固有のポリシーは、追って順次ここに追加されます。
+ハンドブックの [People Policies](/handbook/people-policies/)ページは、関連するポリシーのディレクトリとして機能し、該当する場合はエンティティ固有の雇用ポリシーも掲載しています。インド固有のポリシーは[こちら](/handbook/people-policies/#india)にあります。
 
 ### Legal ポリシー
 
-ハンドブックの [Legal Policies](/handbook/legal/#gitlab-policies) ページは、関連するポリシーのディレクトリとして機能します。
+ハンドブックの [Legal Policies](/handbook/legal/#gitlab-policies)ページは、関連するポリシーのディレクトリとして機能します。
 
 ### Payroll の詳細
 
 #### 給与支払日
 
-給与支払日の情報については、[内部ハンドブックの Payroll ページ](https://internal.gitlab.com/handbook/finance/payroll/#pay-dates) を参照してください。
+給与支払日の情報については、[内部ハンドブックの Payroll ページ](https://internal.gitlab.com/handbook/finance/payroll/#pay-dates)を参照してください。
 
 #### 給与明細へのアクセス
 
@@ -255,7 +255,7 @@ GitLab の雇用契約テンプレートは [こちら](http://internal.gitlab.c
 
 #### 報酬構造の詳細
 
-あなたの報酬構造は、Basic Salary、Leave Travel Allowance、House Rent Allowance、Conveyance Allowance で構成されます。旧税制の対象者については、LTA、HRA、conveyance allowance の各項目の利用方法について、[Tax-Savings Details Document](https://docs.google.com/document/d/1Vg2vT4cMZze0nLa-asyoQxb1AYHM2aZcPBoGrbTH-gY/edit?tab=t.0) を参照してください。
+あなたの報酬構造は、Basic Salary、Leave Travel Allowance、House Rent Allowance、Conveyance Allowance で構成されます。旧税制の対象者については、LTA、HRA、通勤手当 の各項目の利用方法について、[Tax-Savings Details Document](https://docs.google.com/document/d/1Vg2vT4cMZze0nLa-asyoQxb1AYHM2aZcPBoGrbTH-gY/edit?tab=t.0)を参照してください。
 
 ### 勤務時間
 
@@ -286,7 +286,7 @@ _チームメンバーは、給与の遅延や不一致を防ぐため、予定�
 
 <summary>育休（父親）</summary>
 
-育休（父親）の法定の付与はありませんが、チームメンバーは [GitLab の Parental Leave ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) の資格を得られます。
+育休（父親）の法定の付与はありませんが、チームメンバーは [GitLab の Parental Leave ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)の資格を得られます。
 
 </details>
 
@@ -294,8 +294,8 @@ _チームメンバーは、給与の遅延や不一致を防ぐため、予定�
 
 <summary>産休の支払い</summary>
 
-- [資格がある](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) 場合、GitLab から最大 26 週間、100% 有給の Parental Leave を受けられます。
-- ICICI プランでの出産補償の詳細については、[Benefits Deck の 9 ページ](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view) を参照してください。
+- [資格がある](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)場合、GitLab から最大 26 週間、100% 有給の Parental Leave を受けられます。
+- ICICI プランでの出産補償の詳細については、[Benefits Deck の 9 ページ](https://drive.google.com/file/d/1sqHJEL28ZFwDYq3Y5B5TIqTLIGkf7Z8Z/view)を参照してください。
 
 </details>
 
@@ -303,7 +303,7 @@ _チームメンバーは、給与の遅延や不一致を防ぐため、予定�
 
 <summary>育休（父親）の支払い</summary>
 
-[資格がある](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) 場合、GitLab から最大 16 週間、100% 有給の Parental Leave を受けられます。
+[資格がある](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)場合、GitLab から最大 16 週間、100% 有給の Parental Leave を受けられます。
 
 </details>
 
@@ -311,7 +311,7 @@ _チームメンバーは、給与の遅延や不一致を防ぐため、予定�
 
 <summary>インドでの Parental Leave の申請</summary>
 
-parental leave を開始するには、休暇開始の少なくとも 30 日前に Workday で Parental Leave を選択して休暇を提出してください。[GitLab の Parental Leave ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) をよく確認してください。
+育児休暇を開始するには、休暇開始の少なくとも 30 日前に Workday で Parental Leave を選択して休暇を提出してください。[GitLab の Parental Leave ポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)をよく確認してください。
 
 </details>
 
@@ -319,12 +319,12 @@ parental leave を開始するには、休暇開始の少なくとも 30 日前�
 
 <summary>インドの Sick Leave と Casual Leave</summary>
 
-- **インドの Sick Leave**: 年間 12 日。断続的にも連続しても取得でき、[GitLab の Sick Time](/handbook/people-group/time-off-and-absence/time-off-types/#sick-time) ポリシーと同時に適用されます。
+- **インドの Sick Leave**: 年間 12 日。断続的にも連続しても取得でき、[GitLab の Sick Time](/handbook/people-group/time-off-and-absence/time-off-types/#sick-time)ポリシーと同時に適用されます。
   - 繰り越しや現金化は不可。残高は暦年の末日に失効します。
 - **インドの Casual Leave**: 年間 3 日。断続的にも連続しても取得できます。
   - 繰り越しや現金化は不可。残高は暦年の末日に失効します。
 
-**注:** 1 つの例外: チームメンバーが現に sick/casual leave を取得中に雇用が終了した場合、その休暇の残高分の支払いを受ける資格があります。
+**注:** 1 つの例外: チームメンバーが現に病気休暇または私用休暇を取得中に雇用が終了した場合、その休暇の残高分の支払いを受ける資格があります。
 
 これらの休暇は、Workday の Leaves または Intermittent Leaves のドロップダウンから選択してリクエストできます。リクエストは Absence Management チームのレビューにルーティングされ、私たちが詳細とともにフォローアップします。
 
@@ -332,16 +332,16 @@ parental leave を開始するには、休暇開始の少なくとも 30 日前�
 
 <summary>その他の休暇ポリシー</summary>
 
-[GitLab の有給休暇ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/#overview-2) を参照してください。
+[GitLab の有給休暇ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/#overview-2)を参照してください。
 
 </details>
 
 ### GitLab グローバル福利厚生
 
-上記の国別の福利厚生に加えて、すべての GitLab チームメンバーは追加の福利厚生を享受でき、これは [ハンドブックに記載](/handbook/total-rewards/benefits/general-and-entity-benefits/) されています。
+上記の国別の福利厚生に加えて、すべての GitLab チームメンバーは追加の福利厚生を享受でき、これは [ハンドブックに記載](/handbook/total-rewards/benefits/general-and-entity-benefits/)されています。
 
 ### 健康と安全
 
-旅行の安全とセキュリティについては、この [ハンドブックのセクション](/handbook/finance/travel/#when-to-use-international-sos) を参照してください。
+旅行の安全とセキュリティについては、この [ハンドブックのセクション](/handbook/finance/travel/#when-to-use-international-sos)を参照してください。
 
 国別の要件がある場合は、これらの詳細が追って順次追加されます。
