@@ -2,9 +2,9 @@
 title: GitLab のコミュニケーション
 description: "オールリモートの企業として、つながりを保ちながらより効率的に働くために、明確なコミュニケーションを実践することが私たちにとって重要です。"
 upstream_path: /handbook/communication/
-upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
-lastmod: "2026-09-24T08:56:35-04:00"
-translated_at: "2026-09-24T21:08:13+00:00"
+upstream_sha: "ddc319726d9e3f1cfd7f88faf4798bf31af6bf10"
+lastmod: "2026-10-15T21:00:48+02:00"
+translated_at: "2026-10-20T11:20:37+00:00"
 translator: codex
 stale: false
 ---
@@ -93,7 +93,7 @@ GitLab では、私たちは[デフォルトでパブリック](/handbook/values
 ### リスクとは何か? {#what-are-the-risks}
 
 1. **法的リスク:** これらは、GitLab またはその事業を展開する市場を規制する規則や法律から生じるリスクです。これには、GitLab のチームメンバー、顧客、ユーザーの個人データやプライバシーを損なうようなコンテンツが含まれますが、これに限定されません。
-1. **モラルリスク:** 明確化のための質問をする機会がないまま誤解される可能性のある GitLab にとって機微なトピックを提起すると、チームの文化やモラルにリスクを生む可能性があります。
+1. **士気へのリスク:** 明確化のための質問をする機会がないまま誤解される可能性のある GitLab にとって機微なトピックを提起すると、チームの文化や士気にリスクを生む可能性があります。
 1. **PR リスク:** あなたが文書化したものはすべて、最終的に外部に共有・閲覧される可能性があることを忘れないでください。パブリックな MR や Issue での議論は、私たちがどのように協力しているかをもっと知ろうとする GitLab 外部の人々に対して、私たちの[バリュー](/handbook/values/)を示すものであることを考慮してください。
 
 私たちは、GitLab、そのチームメンバー、または顧客に対するリスクを、同期的な 1:1 の場で伝えることをお勧めします。
@@ -134,7 +134,7 @@ GitLab では、意図的な透明性やオープンな対話への人々の参�
 1. [Slack プロフィール](/handbook/tools-and-tips/slack/#profile)。チームメンバーがあなたの役割を理解し、勤務時間を確認し、どのように呼びかければよいかを把握できるようにします。
 1. [Google プロフィール](/handbook/tools-and-tips/#google-profile)。ドキュメントでの共同作業やメールでのコミュニケーションの際に、チームメンバーがあなたを認識できるようにします。
 1. [GitLab プロフィール](/handbook/tools-and-tips/#gitlab-profile)。Issue やマージリクエストで共同作業をする際に、あなたが誰で、どのような役割を担っているかをチームメンバーやコミュニティの貢献者に伝えます。
-1. [GitLab チームページの項目](/handbook/about/editing-handbook/edit-team-page/)。GitLab 全体の人々が、あなたについて、また組織内のどこで働いているかを知ることができるようにします。この情報を最新の状態に保つことは、Product と Engineering の自動化にも不可欠です。
+1. [GitLab チームメンバーのデータ](/handbook/about/editing-handbook/edit-team-data/)。GitLab 全体の人々が、あなたについて、また組織内のどこで働いているかを知ることができるようにします。この情報を最新の状態に保つことは、Product と Engineering の自動化にも不可欠です。
 1. [Zoom プロフィール](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)。ミーティングの参加者があなたを認識し、役割を理解できるようにします。詳しいガイダンスは、[Zoom のヒント](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips/)を参照してください。
 1. [個人の README](/handbook/leadership/#your-individual-readme)（作成している場合）。あなたが好む働き方や、あなたとの協働の仕方をチームメンバーが理解できるようにします。
 
@@ -238,7 +238,7 @@ ACK プロセスを開始するには:
 
 #### 感謝を伝える {#say-thanks}
 
-私たちがインクルージョンを築き続ける中で、認知は重要かつ変革的な戦術です。チームメンバーに感謝することは、彼らの貢献が認められる機会を提供し、エンゲージメント行動に影響を与え、彼らの仕事が見られていることをチームメンバーに認めさせます。
+私たちがインクルージョンを築き続ける中で、認知は重要かつ変革的な戦術です。チームメンバーに感謝することは、貢献を認められる機会を提供し、エンゲージメント行動に影響を与え、仕事ぶりが見られていることをチームメンバーに伝えます。
 
 1. 素晴らしい仕事をした人に、私たちの `#thanks` Slack チャンネルで感謝しましょう。
 1. 認知を示せる他のチャンネルも検討してください: チームミーティング、Issue、会社の全体会議、1 対 1 ミーティングなど。
@@ -277,7 +277,7 @@ Google の["不在"](https://www.theverge.com/2018/6/27/17510656/google-calendar
 1. 顧客などの外部ステークホルダーがいる議論では、コミュニケーションを積極的かつ一貫して行ってください。全員を最新の状態に保つために、コミュニケーションを流し続けることが重要です。最近の議論がなく、フィードバックに基づいて次の更新がいつ提供されるかの明確な定義がないと、MR は停滞しているように見えることがあります。これにより購読者は暗中模索の状態になり、何かが遅延して突然次のマイルストーンに飛んだときに不要な驚きを引き起こします。MR が、オープンなリクエストを承認または却下することでタイムリーにクローズされることが重要です。
 1. **アクション志向** を持ち、[コンセンサスを目指さないでください](/handbook/leadership/#making-decisions)。すべての MR は[提案](/handbook/values/#make-a-proposal)です。MR の作者が反応しない場合は、その当事者意識を持って完成させてください。何らかの改善は、まったくないよりも良いものです。
 1. 関連する会話のある Issue や他の MR を **相互リンク** してください。たとえば、GitLab.com の MR を作成するきっかけになった Zendesk チケットがある場合、Zendesk チケットに MR のリンクを文書化し、逆も同様にしてください。そして MR を承認または却下するときは、Zendesk からの理由や応答を含めてください。各 MR の説明の冒頭にリンクを置き、その関係（Report、Dependency など）を短く記し、一方を中心とし、重複している場合は理想的にはもう一方をクローズしてください。
-   1. MR に関連する特定のコード行へのリンクを提供するときは、**常にパーマリンク**（そのファイルの特定のコミットへのリンク）を使ってください。これにより、ファイルが変更されても参照が有効なままになります。詳細は [Link to specific lines of code](https://docs.gitlab.com/ee/development/documentation/styleguide/index.html#link-to-specific-lines-of-code) をご覧ください。
+   1. MR に関連する特定のコード行へのリンクを提供するときは、**常にパーマリンク**（そのファイルの特定のコミットへのリンク）を使ってください。これにより、ファイルが変更されても参照が有効なままになります。詳細は [特定のコード行へのリンク](https://docs.gitlab.com/ee/development/documentation/styleguide/index.html#link-to-specific-lines-of-code) をご覧ください。
 1. 機能の変更を提出する場合は、**最終的な結論で説明を更新** してください（MR がなぜ却下されたか、またはなぜ承認されたか）。これにより、実装に関わる全員が Issue の現在の状態をはるかに見やすくなり、後の混乱や議論を防ぎます。
 1. [**最小限の** 実行可能で価値あるもの](/handbook/values/#iteration)を提出してください。変更を提案するときは、最小限の合理的なコミットを提出し、他の機能強化への提案は別の Issue/MR に入れてリンクしてください。MR は[問題の説明と TODO コメント](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/35239/diffs?diff_id=97449459)だけから始めてもかまいません。GitLab に新しく、ドキュメントや手順を書いている場合は、最初のマージリクエストを最大 20 行にしてください。
 1. MR を長期間オープンにしたままにしないでください。MR は **実行可能** であるべきです——ステークホルダーは、何が変わり、最終的に何を承認または却下しているのかを明確に理解しているべきです。
@@ -288,7 +288,7 @@ Google の["不在"](https://www.theverge.com/2018/6/27/17510656/google-calendar
 1. MR にフィードバックや質問を受け取ったら、コメントに応答するよう努めてください。[そうすることで、すべてのチームメンバーにとってのビロンギングの環境を作れるからです](/handbook/company/culture/inclusion/#gitlabs-definition-of-diversity-inclusion--belonging)。回答や応答をせずに MR をそのままマージすると、コメントした人は自分の意見が聞かれていないと感じます。あなたが素早い意思決定をする必要のない[直接の責任者](/handbook/people-group/directly-responsible-individuals/)（DRI）である場合、MR を変更しないことを選べますが、コメントやフィードバックには応答し、それらが MR の変更に値するかを検討し、[何をだけでなくなぜかを言う](/handbook/values/#say-why-not-just-what)べきです。
    コメントが多い場合は、主要なフィードバック領域を要約し、高いレベルで応答を共有することを選べます。私たちは、[DRI に説明させすぎると、こっそりとプロジェクトを出荷するインセンティブを作ってしまうことを理解しています。永遠の説明ループに陥る恐れは DRI を脱線させ、アクション志向で働くのではなく先送りさせる原因になります](/handbook/people-group/directly-responsible-individuals/#empowering-dris)。これは私たちが避けたいことです。
    素早い意思決定が必要なときは、[人々が私たちの話を聞いてくれたが、全員のインプットに基づく素早い意思決定のために説明する義務はないことを受け入れなければなりません](/handbook/leadership/#making-decisions)。目標は透明性を持って協働することであり、効率を失うことではありません。全員が同意するわけではありませんが、すべての人が[同意しなくてもコミットし、決定を支持する](/handbook/values/#disagree-and-commit)ことを期待しています。
-1. GitLab については、プロダクトのマージリクエストガイドラインは [Contribution guide](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#merge-request-guidelines) にあり、レビュアーやメンテナー向けのコードレビューガイドラインは私たちの [Code Review Guidelines](https://docs.gitlab.com/ee/development/code_review.html) で説明されています。
+1. GitLab については、プロダクトのマージリクエストガイドラインは [貢献ガイド](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#merge-request-guidelines) にあり、レビュアーやメンテナー向けのコードレビューガイドラインは私たちの [コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html) で説明されています。
 1. 何かが完了していないときでも、人々が早期にコメントして手戻りを防げるよう、社内で共有してください。
 1. 誤って早期にマージされるのを防ぐために、<b>[ドラフト](https://docs.gitlab.com/ee/user/project/merge_requests/drafts.html)</b> マージリクエストを作成してください。ドラフトは、マージすることが **事態を悪化させる** 場合にのみ使ってください。ハンドブックへの貢献ではめったにそうなりません。進行中のほとんどのマージリクエストは事態を悪化させません。この場合はドラフトを使わないでください。誰かが予想より早くマージしたら、追加の項目について新しいマージリクエストを作成するだけです。まだドラフトステータスのものについて、最終レビューやマージを誰かに依頼しないでください。その時点で、あなたはそれが世に出すのに十分良いと確信しているべきです。
 1. マージリクエストがマージされた後に Issue でフォローアップのアクションが必要な場合（顧客への報告やドキュメントの作成など）は、Issue の自動クローズを避けてください。
@@ -311,14 +311,14 @@ Issue を作成するときに覚えておくべきことをいくつか挙げ�
 1. 私たちは **約束** を守り、社内の合意なしに外部への約束をしません。
 1. 顧客などの外部ステークホルダーがいる議論では、コミュニケーションを積極的かつ一貫して行ってください。全員を最新の状態に保つために、コミュニケーションを流し続けることが重要です。最近の議論がなく、フィードバックに基づいて次の更新がいつ提供されるかの明確な定義がないと、Issue は停滞しているように見えることがあります。これにより購読者は暗中模索の状態になり、何かが遅延して突然次のマイルストーンに飛んだときに不要な驚きを引き起こします。Issue がタイムリーにクローズされることが重要です。これを行う 1 つの方法は、現在の担当者が次の更新を提供する期限を設定することです。状況、優先順位付け、利用可能なキャパシティに応じて、数日先でも数週間先でもかまいません。
 
-<i>**プロのヒント:**</i> マージリクエストを作成するとき、`closes: #[ここに Issue 番号を挿入]` を追加でき、マージリクエストがマージされると Issue が自動的にクローズされます。例は[こちら](https://gitlab.com/gitlab-com/people-group/peopleops-eng/employment-automation/-/merge_requests/60)で確認できます。**注:** [Issue の自動クローズ](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#disable-automatic-issue-closing)は一部のプロジェクトで無効化されています。
+<i>**プロのヒント:**</i> マージリクエストを作成するとき、`closes: #[insert issue number here]` を追加でき、マージリクエストがマージされると Issue が自動的にクローズされます。例は[こちら](https://gitlab.com/gitlab-com/people-group/peopleops-eng/employment-automation/-/merge_requests/60)で確認できます。**注:** [Issue の自動クローズ](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#disable-automatic-issue-closing)は一部のプロジェクトで無効化されています。
 
 1. ユーザーが機能強化を提案したら、その懸念に対処する既存の Issue を見つけるか、新しいものを作成してください。後続の MR を通じて最初の MVC を定義する助けとして、Issue でアイデアを詳しく述べたいか尋ねてください。
 1. 関連する会話のある Issue や MR を **相互リンク** してください。別の例として、関連する Issue や機能リクエストへのリンクを含む「Report: 」行を Issue の説明に追加することがあります。完了したら、関連する Issue にコメントを追加します（報告する責任があるならクローズし、そうでないなら再アサインします）。これにより、社内の混乱や報告者への報告漏れを防げます。
 1. Issue や MR を相互リンクするときは、[ローコンテキストコミュニケーション](/handbook/communication/#low-context)を促進するために、リンクしているコンテンツのプレビューを含めてください:
    1. 良い例: `this would cause performance issue similar to #123456`。読者は最初に読んだ時点で完全な情報を得られ、詳細はリンクを参照できます。
    1. 避ける例: `this would cause issue similar to #123456`。読者はリンクをクリックし、他の議論スレッドの中から関連情報を見つけ、元の議論に戻る必要があります。
-1. Issue に関連する特定のコード行へのリンクを提供するときは、**常にパーマリンク**（そのファイルの特定のコミットへのリンク）を使ってください。これにより、ファイルが変更されても参照が有効なままになります。詳細は [Link to specific lines of code](https://docs.gitlab.com/ee/development/documentation/styleguide/#link-to-specific-lines-of-code) をご覧ください。
+1. Issue に関連する特定のコード行へのリンクを提供するときは、**常にパーマリンク**（そのファイルの特定のコミットへのリンク）を使ってください。これにより、ファイルが変更されても参照が有効なままになります。詳細は [特定のコード行へのリンク](https://docs.gitlab.com/ee/development/documentation/styleguide/#link-to-specific-lines-of-code) をご覧ください。
 1. 現在の[マイルストーン](https://gitlab.com/groups/gitlab-org/-/milestones)の Issue で自分の仕事に優先順位を付けてください。
 1. [私たちはオープンに働いている](https://about.gitlab.com/blog/2015/08/03/almost-everything-we-do-is-now-open/)ので、すべてに GitLab.com のパブリックな Issue トラッカーを使ってください。Issue トラッカーは、ハンドブックの関連ページや [gitlab-com グループ](https://gitlab.com/gitlab-com/)配下のプロジェクトで見つけられます。
 1. Issue に取り組み始めたらすぐに自分にアサインしてください。ただし、それより前にはしないでください。Issue の一部を完了し、誰か他の人に次のステップを取ってもらう必要がある場合は、その人に Issue を **再アサイン** してください。
@@ -351,7 +351,7 @@ Issue を作成するときに覚えておくべきことをいくつか挙げ�
 私たちの会社全体のアナウンスチャンネルは **#company-fyi** です。
 これは **アナウンス専用** チャンネルです。つまり、投稿する前にコミュニケーションが承認される必要があります。ノイズを最小限にするため、`#company-fyi` で行われたアナウンスを `#whats-happening-at-gitlab` で重複させるべきではありません。[アテンションエコノミー](https://en.wikipedia.org/wiki/Attention_economy)に留意してください。
 
-`#company-fyi` に投稿する、またはメッセージを投稿してもらうには、メッセージを承認して投稿できる[社内コミュニケーションチーム](/handbook/people-group/employment-branding/people-communications/)またはあなたの機能のエグゼクティブに連絡してください。
+`#company-fyi` に投稿する、またはメッセージを投稿してもらうには、メッセージを承認して投稿できる[社内コミュニケーションチーム](/handbook/people-group/employment-branding/people-communications/)またはあなたの所属部門のエグゼクティブに連絡してください。
 
 **#company-fyi** に投稿す **べきでない** ものの例（新しいグループのガイドラインに従う）:
 
@@ -438,7 +438,7 @@ to post in #company-fyi"]
 ミーティングに関わっていて、そうするキャパシティがある人は、GitLab の [Live Doc Meetings の原則](/handbook/company/culture/all-remote/live-doc-meetings/)を使ってメモを取るべきです。これが重要な理由は:
 
 1. GitLab のミーティングにはメモがあるべきです（信頼できる唯一の情報源のため、また非同期での参加を可能にするためなど）
-1. このメモ取りへの共同のコミットメントがないと、これは[過小評価されたグループ](https://amp-theguardian-com.cdn.ampproject.org/c/s/amp.theguardian.com/society/2022/may/09/they-feel-guilty-why-women-should-say-no-to-office-housework)に不釣り合いに偏りがちな種類の仕事です。これは私たちの[ダイバーシティ、インクルージョン、ビロンギングのバリュー](/handbook/company/culture/inclusion/)に沿っていません。
+1. このメモ取りへの共同のコミットメントがないと、これは[十分な代表性のないグループ](https://amp-theguardian-com.cdn.ampproject.org/c/s/amp.theguardian.com/society/2022/may/09/they-feel-guilty-why-women-should-say-no-to-office-housework)に不釣り合いに偏りがちな種類の仕事です。これは私たちの[ダイバーシティ、インクルージョン、ビロンギングのバリュー](/handbook/company/culture/inclusion/)に沿っていません。
 
 すでに数人がメモを取っているように見えるかもしれませんが、これを手助けの妨げとは見ないでください。最初のメモ取りの人は最初に現れた人で、他の誰も手を挙げないなら続けるのが自分の責任だと考えているのかもしれません。
 
@@ -527,7 +527,7 @@ GitLab には、どのミーティングがプレゼンテーションを持つ�
 
 ### ミーティングのスケジュール {#scheduling-meetings}
 
-1. スケジュールされたすべてのミーティングには、Google プレゼンテーション（たとえば参加を必要としない機能の更新のため）または Google Doc（ほとんどのミーティング）のいずれかがリンクされているべきです。Google Doc の場合は、準備資料（プレゼンテーションでもよい）を含む[アジェンダ](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)があるべきです。GitLab のミーティングのベストプラクティスのステップバイステップガイドについては、[Live Doc Meetings ページ](/handbook/company/culture/all-remote/live-doc-meetings/)をご覧ください。
+1. スケジュールされたすべてのミーティングには、Google プレゼンテーション（たとえば参加を必要としない部門の近況報告のため）または Google Doc（ほとんどのミーティング）のいずれかがリンクされているべきです。Google Doc の場合は、準備資料（プレゼンテーションでもよい）を含む[アジェンダ](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)があるべきです。GitLab のミーティングのベストプラクティスのステップバイステップガイドについては、[Live Doc Meetings ページ](/handbook/company/culture/all-remote/live-doc-meetings/)をご覧ください。
    - [コーヒーチャット](/handbook/company/culture/all-remote/informal-communication/#coffee-chats)にアジェンダは不要です。主に社交的な性質のミーティングのみを、カレンダーの招待でコーヒーチャットとラベル付けすべきであることに注意してください。
    - 1:1 のアジェンダの推奨フォーマットは [1:1 リーダーシップページ](/handbook/leadership/1-1/)にあります。
 1. EMEA のチームメンバーと定期的に協働する AMER タイムゾーンで働くチームメンバーについて:
@@ -538,10 +538,10 @@ GitLab には、どのミーティングがプレゼンテーションを持つ�
    - PST の午後のブロックは、タイムゾーンの都合で日中の早い時間に会うのが難しいチームメンバーとの[地域横断的なコラボレーション](/handbook/communication/#cross-regional-working-hours-recommendations)のために確保すべきです。
    - APAC でカバーされるタイムゾーンの数のため、[PST の午後のブロック](/handbook/communication/#apacamer)は最も東にある APAC 諸国とのみ重なります
 1. GitLab のチームメンバーがイベントに対応可能か尋ねたい場合は、Google GitLab アカウントを使って Google Calendar でカレンダー招待を相手の Google GitLab アカウントに送ってください。Google Calendar で GitLab のチームメンバーを「ゲスト」として追加すると、See Guest Availability ボタンをクリックして対応可能状況を確認し、彼らのカレンダーで時間を見つけられます。これらのカレンダー招待は、メールが開かれていなくても自動的にすべての当事者のカレンダーに表示されます。これは、全員がミーティングとメンバーのステータスを把握できるようにする簡単な方法です。人々が必要な計画を立てられるよう、招待には素早く返信してください。
-1. チームメンバーが外部ミーティングに対応可能か確認したい場合は、カレンダーの予定を作成し、チームメンバーが yes と答えてから外部の人を招待してください。
+1. チームメンバーが外部ミーティングに対応可能か確認したい場合は、カレンダーの予定を作成し、チームメンバーが参加できると答えてからそのメンバーを招待してください。その後で外部の人を招待してください。
 1. 複数人と通話をスケジュールするときは、自分自身の Google Calendar、または参加する人々に特化したものを使って招待してください。そうすれば、カレンダー項目が他の人のカレンダーに不必要に表示されません。
 1. ミーティングを移動したい場合は、他のチャンネルを通じて連絡するのではなく、カレンダーの予定を移動してください。変更点を説明の冒頭に記してください。
-1. 人々が他のチャンネルを通じて連絡する必要なくカレンダーで時間を更新できるよう、'Guests can modify event' をクリックしてください。これは[イベント設定](https://calendar.google.com/calendar/r/settings)でデフォルトでチェックされるよう設定できます。
+1. 人々が他のチャンネルを通じて連絡する必要なくカレンダーで時間を更新できるよう、'Guests can modify event' をクリックしてください。これは[イベント設定](https://calendar.google.com/calendar/r/settings)でデフォルトでチェックされるよう設定できます。)
 1. ミーティングをスケジュールするとき、私たちは人々の時間を大切にし、[Google Calendar の設定](https://calendar.google.com/calendar/r/settings)の「speedy meetings」を好みます。これにより、たとえば 25 分や 50 分のミーティングになり、以下のための時間が残ります:
    - メモを書き、振り返る
    - 緊急のメッセージに返信する
@@ -638,7 +638,7 @@ GitLab には、どのミーティングがプレゼンテーションを持つ�
    - 他のことをしていて[ミーティングに集中できなくても](/handbook/communication/)心配しないでください。あなたは自分の注意のマネージャーです。自分の注意のマネージャーであることの裏面は、他の人が必要なときにあなたの注意を求めることをためらうべきではないということです。
    - 社内通話中は、お腹が空いていたり通話がランチタイムだったりする場合、ビデオで食事をしても問題ありません（マイクはオフにしてください）。プロフェッショナリズムを保つため、顧客通話でプレゼンテーションやファシリテーションをしている場合は、食事を避けるようにしてください。顧客通話中の食事が避けられない場合は、ビデオをオフにしマイクをミュートしてください。
    - すべてのビデオ通話に適切に身なりを整えているべきです。適切に身なりを整えているとは、体の上半身と下半身を覆う服を着ていることを意味します。厳格なドレスコードのポリシーはありませんが、ビデオ通話のすべての参加者が快適に感じられるようにしたいと考えています。通話の全体を通して適切に身なりを整えられない場合は、参加せず、後で録画を視聴してください。
-   - ビデオチャット中にペット、子ども、配偶者、友人、家族が映ることは推奨されています。彼らが人間なら、リモートのチームメンバーに手を振って[「あなたの母語でこんにちは」](https://www.araioflight.com/hello-in-different-languages-world/)と言うよう頼んでください。
+   - ビデオチャット中にペット、子ども、パートナー、友人、家族が映ることは推奨されています。彼らが人間なら、リモートのチームメンバーに手を振って[「あなたの母語でこんにちは」](https://www.araioflight.com/hello-in-different-languages-world/)と言うよう頼んでください。
    - ビデオをオンにすることを強制されたと感じないでください。最善の判断を使ってください。
 1. 顧客やパートナーとのビデオ通話に関する追加のポイント:
    - 結果が最優先です。あなたの外見、ロケーション、背景は、顧客を成功させることほど重要ではありません。完璧な時間/場所を待たず、すぐに顧客と関われるときに関わってください。
@@ -684,7 +684,7 @@ GitLab には、どのミーティングがプレゼンテーションを持つ�
 
 一方で、ミーティングのすべての部分が関連しているわけではありませんが、通話により多くの人がいると役立つこともあります。
 議論したい点が 1 つだけなら、可能であれば、自分の点を最初に持ってくるようミーティングのアジェンダを並べ替え、その後通話から抜けるようにしてください。
-注意を払っていないときに質問されたら、時々質問を繰り返すのは時間の良い使い方です。
+注意を払っていないときに質問されたら、ときどき質問を繰り返してもらうために時間を使ってもかまいません。
 役割に研修が必要な場合、チームメンバーは研修に十分な注意を払う計画を立てるべきです——特に議論やブレイクアウトルームへの関与が必要な場合は。研修がチームメンバーにとって「学べると良い」または「任意」のものなら、マルチタスクはチームメンバーの裁量で行えます。
 
 私たちは、[Amazon でしているように](https://www.forbes.com/sites/carminegallo/2019/06/18/how-the-first-15-minutes-of-amazons-leadership-meetings-sparks-great-ideas-and-better-conversations/#6be165bd54ca)ミーティングの最初の 15 分を資料を読むために使うことはしません。必要なら、ミーティングの開始時に資料をレビューするのに使えますが（注意を払う必要はないので）、それが資料に基づく質問をすでに持っている人々のためのミーティング開始を遅らせるべきではありません。[GitLab ではミーティングは時間どおりに始まります。](/handbook/communication/#scheduling-meetings)
@@ -845,7 +845,7 @@ GitLab のために外部向けまたはビジネス向けのコンテンツを�
 1. 会計年度や四半期との混同を防ぐため、年は CY18（決して 2018 ではなく）で、四半期は CY18-Q1 で参照してください。コンテキストから年が明らかな場合は Dec 4 を使ってもかまいませんが、12/4 はだめです。
 1. GitLab は暦年からずれた[会計年度](/handbook/finance/#fiscal-year)で運営されています。会計年度や四半期を参照するときは、以下の略語を使ってください:
    1. 「FY20」が推奨フォーマットで、意味は: 会計年度 2020、2019 年 2 月 1 日から 2020 年 1 月 31 日までの期間です
-   1. 「Q1」= 現在の会計年度の第 1 四半期です。ですから 2020 年 2 月 1 日には、「Q1」は 2020 年 2 月 1 日から 2020 年 4 月 30 日までの期間です。GitLab の Epic は暦年と暦四半期に従うことに注意してください。
+   1. 「Q1」= 現在の会計年度の第 1 四半期です。ですから 2020 年 2 月 1 日には、「Q1」は 2020 年 2 月 1 日から 2020 年 4 月 30 日までの期間です。GitLab のエピックは暦年と暦四半期に従うことに注意してください。
    1. 将来または過去の年の四半期を参照するときは、上記の 2 つを組み合わせます: 「FY21-Q1」
    1. 財務データを提示するときは、会計年度を示すための注記を含めてください（例: 「Fiscal Year ending January, 31 'YYYY」）
 1. 時刻フォーマットのガイドラインについては、[GitLab Content Style Guide](/handbook/marketing/brand-experience/content-style-guide/#time-formatting)を参照してください。
@@ -909,7 +909,7 @@ MECEFU 用語の例は、私たちの[セールスセグメンテーション](/
 
 シンプルな言葉は、GitLab の全員に、私たちが使う言葉をシンプルにするよう促すためのものです。
 私たちはあらゆる会話で、常に可能な限り明確で、率直で、意味のある言葉を使うべきです。
-価値を加えない「ふわふわした」言葉、専門用語、「企業っぽい」フレーズの使用は避けてください。
+価値を加えない「中身のない」言葉、専門用語、「企業っぽい」フレーズの使用は避けてください。
 
 シンプルな言葉を **使わない** と、あなたは:
 
@@ -939,7 +939,7 @@ MECEFU 用語の例は、私たちの[セールスセグメンテーション](/
 
 書面によるコミュニケーションでも必ずシンプルな言葉を使ってください。
 私たちのハンドブック、ウェブサイト、ドキュメント、マーケティング資料、候補者や顧客へのメールは、明確で、簡潔で、効果的であるべきです。
-コーポレートマーケティングは [GitLab のトーン・オブ・ボイス](https://design.gitlab.com/brand/overview/#tone-of-voice)に関するガイドラインを維持しています。
+Corporate marketing は [GitLab のトーン・オブ・ボイス](https://design.gitlab.com/brand/overview/#tone-of-voice)に関するガイドラインを維持しています。
 
 | 以下の代わりに...                       | こうしてみてください...                                        |
 | ----------------------------------- | --------------------------------------------- |
@@ -947,7 +947,7 @@ MECEFU 用語の例は、私たちの[セールスセグメンテーション](/
 | Synergy                             | 効果的なコラボレーション                       |
 | Get all your ducks in a row         | 整理する                                  |
 | Do not let the grass grow too long  | 素早く働く                                  |
-| Leverage                            | より明示的な言い回しを使う- debt など        |
+| Leverage                            | より明示的な言い回しを使う- 負債など        |
 | Send it over the wall               | 顧客と共有する                       |
 | Boil the ocean                      | 時間を浪費する                                    |
 | Punt                                | 優先度を下げる                          |
@@ -1004,7 +1004,7 @@ Note to table contributors:
 
 私たちは、他の形式のコミュニケーション（Slack など）の方が効率が高いと考えているため、社内のメール文化は低いです。メールを送る場合は、以下のガイドラインを使ってください:
 
-1. 1 件のメールにつき 1 つの件名を送ってください。1 件のメールに複数の項目があると、遅延（すべてに返信しなければならない）や見落とし（項目の 1 つを忘れる）の原因になります。
+1. メールは話題ごとに分けて送ってください。1 件のメールに複数の項目があると、遅延（すべてに返信しなければならない）や見落とし（項目の 1 つを忘れる）の原因になります。
 1. アクションが不要な場合でも、常に全員に返信することでメールに返信してください。これにより、相手はあなたが受け取ったことを知ります。スレッドは、OK、thanks、done のような一語の返信があれば完了です。
 1. 大人数（または配信リスト）にメールを送る場合は、全員返信が何百人もの人を呼び出さないよう、それらの受信者を「To」フィールドではなく BCC に入れてください。
 1. 他のコメントなしにメールを転送する場合は、FYI（for your information）、FYA（for your action）、または FYC（for your consideration）を追加してください。外部のリクエストを FYC で転送する場合、それは転送した人がそのリクエストをフォローアップせず、あなたがフォローアップすべきかどうかを判断することを期待していることを意味します。この用語は[投票者への映画プロモーション](<https://en.wikipedia.org/wiki/For_Your_Consideration_(advertising)>)に由来します。
@@ -1032,7 +1032,7 @@ Slack は以下に使われます:
 
 コラボレーションとアクションを必要とする会話を、素早く Slack から Issue に移すために[アクション志向](/handbook/values/#operate-with-a-bias-for-action)を使ってください。
 
-Slack のアクティビティは 90 日間のみ保持されるので、Slack は特に以下には使うべきでは **ありません**:
+Slack のアクティビティは 90 日間のみ保持されるので、Slack は特に以下には使うべきではありません:
 
 - 承認の取得
 - 意思決定の文書化
@@ -1041,7 +1041,7 @@ Slack のアクティビティは 90 日間のみ保持されるので、Slack �
 
 チームメンバー間の社内 Slack メッセージは、依然としてプロフェッショナルなコミュニケーションとみなされます。政治的、宗教的、または性的な性質の絵文字を Slack で使ったり追加したりしないでください。ハンドブックの[職場における宗教と政治](/handbook/values/#religion-and-politics-at-work)セクションを参照できます。疑問があるときは、その絵文字を使ったり追加したりしないでください。使われた絵文字について懸念がある場合は、作者に連絡するか、それが心地よくない場合はあなたの [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡してください。
 
-Slack は GitLab のコミュニケーションの重要な部分なので、Slack に関する情報は多くあります。[Slack tools and tips ページ](/handbook/tools-and-tips/slack)をご覧ください。
+Slack は GitLab のコミュニケーションの重要な部分なので、Slack に関する情報は多くあります。[Slack のツールとヒントのページ](/handbook/tools-and-tips/slack)をご覧ください。
 
 ### 一般ガイドライン {#general-guidelines}
 
@@ -1053,7 +1053,7 @@ Slack は GitLab のコミュニケーションの重要な部分なので、Sla
 1. メッセージについていくのが大変な場合は、Slack がすべての通知をメールで送るよう設定を更新できます。設定を変更するには、`Preferences > Notifications > When I'm not active on desktop...` に移動し、「send me email notifications」を選んでください。
 1. メッセージでビデオ通話を始めることに同意した場合（通常は「Call?」と尋ねることで）、最後のコメントを残さなかった人が通話を始めます。ですから、「Call?」リクエストにビデオリンクで応答するか、「Yes」と言って相手に始めさせてください。「Yes」と言って 5 秒後に通話を始めないでください。おそらく 2 人とも同時にビデオ通話リンクを作ることになるからです。
 1. Slack ワークスペースの管理者として、メッセージから添付ファイルを削除するときに *"Disable future attachments from this website"* オプションが与えられた場合、**これは Slack ワークスペース全体でそのリンク/ドメインが[アンファール](/handbook/tools-and-tips/slack/#unfurling-links-in-messages)されるのをブロックします**。これはワークスペースのすべてのユーザーに影響するので、このオプションを選ぶときは注意深く慎重に行ってください。
-1. GitLab.com の Issue で Slack スレッドを参照するときは、スレッドにリンクするだけにしないでください。GitLab 組織外の人々がコンテンツにアクセスできないだけでなく、Slack の保持期間が切れた後にリンクが期限切れになります。代わりに:
+1. GitLab.com の Issue で Slack スレッドを参照するときは、スレッドにリンクする *だけ* にしないでください。GitLab 組織外の人々がコンテンツにアクセスできないだけでなく、Slack の保持期間が切れた後にリンクが期限切れになります。代わりに:
    1. 投稿する前に、ユーザー、顧客、その他の機微な情報の機密性について **内容をレビュー** してください。
    1. ブロッククォートのフォーマットを使って、スレッドの関連部分を Issue にコピー＆ペーストしてください。
    1. Slack スレッドにリンクし、リンクの後に `(internal)` を含めてください。例: https://gitlab.slack.com/archives/C0AR2KW4B/p1555347101079800 (internal)
@@ -1179,7 +1179,7 @@ Hangouts Chat の [Slack Down!](https://chat.google.com/preview/room/AAAAGAd_BaQ
 
 ウェブサイトや **ハンドブック** に最終的に載せる必要のある機密でないものに、決して Google Doc / プレゼンテーションを使わないでください。これらの編集はマージリクエストへのコミットを通じて行ってください。それからマージリクエストや diff にリンクして、変更を人々に提示してください。これにより、取り組みの重複や古いハンドブックを防げます。
 
-Google Docs は、コンテンツを素早く[イテレーション](/handbook/values/#iteration)/コメント/提案するときに役立ちますが、コンテンツが長期間存続することを意図している場合は、SSOT としてハンドブックに移し、ハンドブックページへのリンクとともに非推奨にすべきです。コンテンツが短期間のもの、たとえば 2〜3 週間を超えて参照されない 1 回限りのレポートなら、Google Doc や[プレゼンテーション](#presentations)に残せます。
+Google Docs は、コンテンツを素早く[イテレーション](/handbook/values/#iteration)/コメント/提案するときに役立ちますが、コンテンツが長期間存続することを意図している場合は、SSOT としてハンドブックに移し、ハンドブックページへのリンクとともに非推奨にすべきです。コンテンツが短期間のもの、たとえば 2 〜 3 週間を超えて参照されない 1 回限りのレポートなら、Google Doc や[プレゼンテーション](#presentations)に残せます。
 
 #### Pageless が GitLab の推奨フォーマット {#pageless-is-the-gitlab-preferred-format}
 
@@ -1219,7 +1219,7 @@ GitLab 社内目的でドキュメントを共有するときの推奨デフォ�
 1. ハンドブックで、Google Doc へのパブリックリンクを提供するのとウェブサイトにコンテンツを書き出すのとどちらが良いか迷ったら、以下のガイドラインを使ってください: このドキュメントは頻繁に適応/カスタマイズされるか? もしそうなら、リンクを提供し、リンクを持つ *誰もが* ドキュメントに *コメントできる* ことを確認してください。たとえば、これが私たちが雇用[契約](/handbook/people-group/contracts-probation-periods/)を共有する方法です。ドキュメントがめったにカスタマイズされないなら、サイトに直接コンテンツを提供し、Google Doc を非推奨にしてください。
 1. Google Doc 内でチームメンバーのカーソルがどこにあるか素早く見つけたい場合は、ドキュメント上部の彼らのアイコンをクリックすると、アプリが現在の場所にジャンプします。これは Sheets や Presentations でも機能します。
 1. Google Doc の通知を設定すると、すべてのコメントでメールを受け取る代わりに、誰かがあなたを直接タグ付けしたときだけメールを受け取れます。「notifications」をクリックして「Only yours」を選んでください。ちなみに、ドキュメントを作成するときはデフォルトで All ですが、ただ共有された場合はデフォルトで Only yours です。[グローバルなデフォルトはありません](https://productforums.google.com/forum/#!msg/docs/1C3PZX1AY7Q/6EXXQKQSPCMJ)。<br>
-    ![Google Doc Notifications](/images/communication/google-docs-notifications.png)
+    ![Google Doc の通知](/images/communication/google-docs-notifications.png)
 1. 共有 Google Drive に [GitLab レターヘッド](https://docs.google.com/document/d/1gN1Z2FHPIfPk7QLIey1KF9dR1yTl0R7QrMSb5_Iqfh4/edit)のテンプレートがあります。テンプレートを自分の用途にカスタマイズする前に、必ずドキュメントを自分の Google Drive にコピーしてください。
 1. Google Doc を一般に読めるようにしたい場合は、共有設定を「Editable by Everyone at GitLab」から変更せず、代わりに[ドキュメントを公開](https://support.google.com/docs/answer/183965)してください。
 1. いずれの場合も、Google Doc の共有設定（ドキュメントが誰と共有されているか、会社全体に見えるかなど）は、ドキュメントの機密性の信頼できる唯一の情報源であるべきです。
@@ -1268,7 +1268,7 @@ GitLab の全員とカレンダーを共有することには、いくつかの�
 - 透明性は私たちのバリューの 1 つであり、自分が取り組んでいることを共有することは、「可能な限り多くのことについてオープンである」という私たちのメッセージに沿っています。
 - タイムゾーンの違いのため、私たちの対応可能時間が重なる小さな窓があります。他のメンバーが新しいミーティングをスケジュールする必要がある場合、定期的なミーティング（1-1 など）の詳細を見られれば、チームメンバーからの確認を待つ必要なく、より柔軟にスケジュールできます。これは、より効率的であるという私たちのバリューを物語っています。
 
-![Google Calendar - make calendar available setting](/images/handbook/google-calendar-share.png)
+![Google Calendar - カレンダーを共有する設定](/images/handbook/google-calendar-share.png)
 
 物事をするのを思い出すために定期的なタスクに費やす時間のブロックを Google Calendar に追加する場合（例: 「Check Google Analytics」）は、それらのイベントで自分を「Free」とマークすることを検討してください。そうすれば、同僚は他に都合の良い時間が見つからない場合、その時間にミーティングをスケジュールできると分かります。
 
@@ -1334,7 +1334,7 @@ GitLab のチームメンバーは、私たちの Marketing 部門に承認さ�
 - 提案やフィードバックに感謝してください。
 - 守れない約束をしないでください。
 - [決まり文句](https://en.wikipedia.org/wiki/Platitude)を提供しないでください。直接的かつ敬意を持ってください。[例](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/105891)として、私たちの行動が実際には他の理由で行われているとき、「フィードバックを聞いた」からだと示唆する必要はありません。
-- 助けを求めたり提案をしたりするユーザーを導き、リンクを共有してください。[Improving Open Development for Everyone](https://about.gitlab.com/blog/2015/12/16/improving-open-development-for-everyone/)、[Types of requests](https://about.gitlab.com/blog/2014/12/08/explaining-gitlab-bugs/)。
+- 助けを求めたり提案をしたりするユーザーを導き、リンクを共有してください。[すべての人にとってオープンな開発を改善する](https://about.gitlab.com/blog/2015/12/16/improving-open-development-for-everyone/)、[リクエストの種類](https://about.gitlab.com/blog/2014/12/08/explaining-gitlab-bugs/)。
 - ネガティブなコメントに直面したときは、辛抱強く応答し、すべてのユーザーを個人として扱ってください。最も強い意見を持つ人々が、[最も強い支持者](https://about.gitlab.com/blog/2015/05/20/gitlab-gitorious-free-software/)になることがあります。
 - デフォルトで、Issue や MR での議論はパブリックであり、より広いコミュニティメンバーの参加を含むことがあります。より広いコミュニティメンバーが議論に参加し、自分の見解を共有することを歓迎されていると感じられるようにすることが重要です。より広いコミュニティメンバーは、[私たちのウェブサイト/ハンドブックを改善する助けとなる MR を提出する](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&label_name[]=Community%20contribution)こともあり、これはしばしば彼らの GitLab への最初の貢献です。私たちは彼らの貢献に応答し、GitLab の改善を助けてくれたことに感謝するようにしたいと考えています。
 - すべてのコミュニケーションで[行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/)に従ってください。同様に、GitLab チームや GitLab コミュニティの他のメンバーとコミュニケーションを取るとき、ユーザーが同じ規範に従うことを期待してください。誰も不当に扱われることを受け入れるべきではありません。
@@ -1373,7 +1373,7 @@ GitLab におけるコミュニケーションに関連するトピックにつ�
 - 重要な意思決定をブロードキャストするためにマルチモーダルコミュニケーションを活用する。
 - ローコンテキストコミュニケーションを実践し、混乱を避けるためにテキストでコミュニケーションを取るときにできる限り多くの背景を提供する。
 
-**ピープルマネージャーとして効果的なコミュニケーションを適用するスキルと行動**:
+**People Manager として効果的なコミュニケーションを適用するスキルと行動**:
 
 - チーム、部門、または会社全体で非同期に働くことを実装する。可能な場合はコミュニケーションを非同期のチャンネルに向ける。
 - チームメンバーがテキストで効果的にコミュニケーションを取る責任を持たせる。

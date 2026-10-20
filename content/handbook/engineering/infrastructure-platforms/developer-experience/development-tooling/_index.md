@@ -2,11 +2,11 @@
 title: "Development Tooling チーム"
 description: "Development Tooling チームは、Theseus を通じて GitLab でのモジュール型サービス開発を可能にします"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-translated_at: "2026-10-19T10:23:32Z"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+translated_at: "2026-10-20T10:43:24Z"
 translator: claude
 stale: false
-lastmod: "2026-10-14T17:52:56+02:00"
+lastmod: "2026-10-20T11:20:57+02:00"
 ---
 
 ## ミッション
@@ -66,6 +66,8 @@ Caproni についての質問は、[`#proj_caproni`](https://gitlab.enterprise.s
 
 **フォーカス:** Caproni と LabKit を通じて Theseus の採用を可能にする
 
+Caproni の採用状況は、[Caproni ダッシュボード](https://dashboards.gitlab.net/d/development-tooling-caproni/development-tooling3a-caproni)（社内）で追跡します。
+
 ### 次 {#next}
 
 未定
@@ -80,7 +82,7 @@ Caproni についての質問は、[`#proj_caproni`](https://gitlab.enterprise.s
 
 ## 私たちとの連携
 
-問題、機能リクエスト、機能強化について: **[Issue を作成](https://gitlab.com/gitlab-org/quality/request-for-help/-/issues/new?description_template=developer_experience_request)**してください。作成先は私たちの [RFH リポジトリ](https://gitlab.com/gitlab-org/quality/request-for-help#developer-experience---request-for-help)です。あるいは、`#g_development_tooling` で私たちに連絡することもできます。
+問題、機能リクエスト、機能強化について: **[Issue を作成](https://gitlab.com/gitlab-org/quality/request-for-help/-/issues/new?description_template=developer_experience_request)** してください。作成先は私たちの [RFH リポジトリ](https://gitlab.com/gitlab-org/quality/request-for-help#developer-experience---request-for-help)です。あるいは、`#g_development_tooling` で私たちに連絡することもできます。
 
 個別の質問については、GitLab.com で直接チームメンバーに言及するか、私たちの Slack チャンネルを通じてチームに連絡してください。
 

@@ -2,11 +2,11 @@
 title: Fulfillment ガイド
 description: "Fulfillment サブ部署は、ユーザー購入プロセスに影響を与えるシステム間のインフラストラクチャに責任を持ちます。"
 upstream_path: /handbook/product/groups/fulfillment/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-translated_at: "2026-10-11T21:05:33+00:00"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+translated_at: "2026-10-20T10:55:56Z"
 translator: claude
 stale: false
-lastmod: "2026-10-01T08:11:54+02:00"
+lastmod: "2026-10-19T18:59:08+11:00"
 ---
 
 ## 主要な Fulfillment ドキュメントリンク
@@ -252,7 +252,7 @@ SFDC から一時更新延長を作成するプロセスは以下のとおりで
 | 顧客アカウントは不良債権ありとラベル付けされています | Billing チームがこのアカウントを不良債権ありと特定しました。Zuora Billing Account の `Support hold`、`Credit hold` のいずれかが入力されています。 |
 | 顧客アカウントは貿易制限国に属します | SoldTo アドレスが [これらの国](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues/6431#proposal) にある顧客は、一時延長の対象外です。 |
 
-すべての技術的な問題は、[こちらの指示](https://gitlab.com/gitlab-org/fulfillment/meta/-/issues/1514#instructions-please-read-before-posting) に従って Fulfillment と共有する必要があります。問題が報告されたら、顧客がサブスクリプションの延長を受けられるように、サポートへ [内部リクエスト](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) を提出する既存のプロセスに従ってください。**GitLab Support Internal Requests for Global customers** または **GitLab Support Internal Requests for Federal customers** リクエストオプションのいずれかを使用してから、SaaS または Self-Managed 用の適切な内部リクエストタイプを選択してください。
+すべての技術的な問題は、[こちらの指示](https://gitlab.com/gitlab-org/fulfillment/meta/-/issues/1514#instructions-please-read-before-posting)に従って Fulfillment と共有する必要があります。問題が報告されたら、顧客がサブスクリプションの延長を受けられるように、Support へ内部リクエストを提出する既存のプロセスに従ってください。Global 顧客向けの [L&R Internal Requests フォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)、または **GitLab Support Internal Requests for Federal customers** リクエストオプションを使用してから、SaaS または Self-Managed 用の適切な内部リクエストタイプを選択してください。
 
 ### GCP ログへのアクセス
 
@@ -434,7 +434,7 @@ Temporary Renewals Extension 機能に関連するログは、このフィルタ
 
 管理パネル検索を使用する際は、結果は一度に 1 フィールドのみを検索することに基づいていることに注意してください。たとえば、人のフルネームを入力しても、システムは姓と名を同時に検索せず、いずれかのみを検索するため、結果が得られない可能性があります。
 
-メールアドレス、部分的なメールアドレス (例: 会社のドメイン)、または会社名で検索することをお勧めします。名前で検索する場合は、姓または名のみを入力してください。
+メールアドレス、部分的なメールアドレス (例: 会社のドメイン)、または会社名で検索することをお勧めします。名前で検索する場合は、姓 *または* 名のみを入力してください。
 
 最初の検索の後、検索結果をさらに絞り込むことができます。
 
@@ -776,7 +776,7 @@ CustomersDot がライセンス情報の SSOT であるため、さらなるト�
 
 ## Fulfillment Support Admin ツール
 
-*最終更新: 2025年5月21日*
+*最終更新: 2025 年 5 月 21 日*
 
 ### 概要
 
@@ -1098,7 +1098,7 @@ Fulfillment ロードマップに作業を追加するようリクエストす�
 
 これを可能にするために、新しい会計四半期の開始前に[安定したカウンターパート](/handbook/engineering/development/fulfillment-monetization/#stable-counterparts)とロードマップレビューを行います。このレビューの一部として、ロードマップの優先順位についてフィードバックを集め、フィードバックに基づいてロードマップを更新し、今後 3-6 か月のスコープと配信マイルストーンについてパートナーと合意します。
 
-これらの四半期レビュー中に、Fulfillment エンジニアリングキャパシティの最大 70% を次の四半期に、それ以降の四半期に対してはキャパシティの 30% を超えないようにコミットすることを目指します。これは、クロスファンクショナルパートナーが計画するための今後の活動への十分な可視性を提供しつつ、必要に応じて再優先順位付けと変更のための余地を残すことを目的としています。
+これらの四半期レビュー中に、Fulfillment エンジニアリングキャパシティの最大 70% を次の四半期に、その次の四半期にはキャパシティの 30% を超えないようにコミットすることを目指します。これは、クロスファンクショナルパートナーが計画するための今後の活動への十分な可視性を提供しつつ、必要に応じて再優先順位付けと変更のための余地を残すことを目的としています。
 
 #### ロードマップの変更を伝える
 

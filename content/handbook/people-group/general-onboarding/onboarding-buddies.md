@@ -2,9 +2,9 @@
 title: GitLab オンボーディングバディ
 description: オンボーディングの責任とプロセス
 upstream_path: /handbook/people-group/general-onboarding/onboarding-buddies/
-upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
-lastmod: "2026-09-13T04:09:59-04:00"
-translated_at: "2026-09-15T21:58:18Z"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+lastmod: "2026-10-20T12:23:04+02:00"
+translated_at: "2026-10-20T10:43:24Z"
 translator: claude
 stale: false
 ---
@@ -78,7 +78,7 @@ stale: false
 >
 > オンボーディング期間中、私はオンボーディング、あなたの役割、または必要となる情報の在り処に関するあらゆる質問のコンタクトポイントになります。このメールに加えて、初日には GitLab へようこそと挨拶し、質問があれば答えるための Zoom 通話の招待を送ります。私たちが話す時までに GitLab Zoom アカウントの設定が完了していない可能性があるため、個人の Zoom アカウントで通話に参加してください。私は {バディタイムゾーン} にいますので、必要に応じて別の時間を提案してください。
 >
-> GitLab Development Kit のセットアップなど、技術的な問題についてもお手伝いできます。{新入社員が Engineering Division 所属でない場合は、この行を削除してください}
+> Caproni を使った開発環境のセットアップなど、技術的な問題についてもお手伝いできます。{新入社員が Engineering Division 所属でない場合は、この行を削除してください}
 >
 > Slack 上の楽しいソーシャルチャンネルも紹介し、できるだけ多くの人と出会えるようサポートします！（私の個人的なお気に入りは #dog、#dad_jokes、#all-caps です。）
 >

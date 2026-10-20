@@ -2,11 +2,11 @@
 title: "開発者オンボーディング"
 description: "これから GitLab の開発者になります！ここでは開発を始めるために必要なすべてのものを見つけることができます。"
 upstream_path: "/handbook/engineering/workflow/developer-onboarding/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+translated_at: "2026-10-20T10:43:24Z"
 translator: claude
 stale: false
-lastmod: "2026-05-21T21:56:48+01:00"
+lastmod: "2026-10-20T12:23:13+02:00"
 ---
 
 これから GitLab の開発者になります！
@@ -23,11 +23,11 @@ lastmod: "2026-05-21T21:56:48+01:00"
 
 ## GitLab 開発を始める
 
-開発を始めるには、[GitLab Development Kit](https://gitlab.com/gitlab-org/gitlab-development-kit) の手順に従ってください。
+開発を始めるには、[Caproni for GitLab](https://gitlab-org.gitlab.io/caproni/gitlab/)の手順に従ってください。
 
 ## GitLab リポジトリ
 
-GitLab は多くのサブプロジェクトで構成されています。GitLab リポジトリのキュレーション済みリストは[GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)ページで確認できます。
+GitLab は多くのサブプロジェクトで構成されています。GitLab リポジトリのキュレーション済みリストは [GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)ページで確認できます。
 
 ほぼすべてのリポジトリは GitLab.com と dev.gitlab.org の両方で利用可能です。可用性のために dev.gitlab.org にもミラーリングし、歴史的な理由から [GitHub](https://github.com/gitlabhq) にもミラーリングしています。
 
@@ -50,9 +50,9 @@ GitLab は多くのサブプロジェクトで構成されています。GitLab 
 
 セキュリティ Issue に取り組む前に[開発者セキュリティドキュメント](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/engineer.md)をお読みください。
 
-### Quality
+### 品質 {#quality}
 
-GitLab の強みの1つはソフトウェアの高い品質です。これを達成するために、コントリビュートされるすべてのソースコードに要件を設けています。すべての要件は[コントリビューションガイド](https://about.gitlab.com/community/contribute/)に記載されています。必ず読んで従ってください。
+GitLab の強みの 1 つはソフトウェアの高い品質です。これを達成するために、コントリビュートされるすべてのソースコードに要件を設けています。すべての要件は[コントリビューションガイド](https://about.gitlab.com/community/contribute/)に記載されています。必ず読んで従ってください。
 
 ### 依存関係
 
@@ -66,14 +66,14 @@ GitLab では、すべてのコードはマージ可能になる前にレビュ�
 オプションとして、コメントを書いて別の開発者に助けやレビューをリクエストすることもできます。
 マージリクエストが割り当てられていない場合、おそらく無視されて不必要な遅延が生じます。
 
-複数日にわたって1つのタスクに取り組んでからマージリクエストを提出しないでください。
+複数日にわたって 1 つのタスクに取り組んでからマージリクエストを提出しないでください。
 最大のタスクでも小さなタスクに分割できます。
 機能の各部分のマージリクエストを提出するようにしてください。
 これは毎週複数のマージリクエストが期待されることを意味します。
 小さなマージリクエストは良いフィードバックを受ける可能性が高く、より早くマージされます。
 
 変更が非常に軽微でない限り、または同じバージョンで導入されたバグを修正する場合を除き、[`Changelog` Git コミットトレーラー](https://docs.gitlab.com/ee/development/changelog.html)を使用してチェンジログエントリを作成してください。
-ボランティアコントリビューターに認識を与えるためにのみ名前を含めるため、エントリに自分の名前を含めないでください。
+名前を記載するのはボランティアコントリビューターの貢献を称えるためだけなので、エントリに自分の名前を含めないでください。
 
 ### GitLab EE での作業（開発者ライセンス） {#working-on-gitlab-ee-developer-licenses}
 
@@ -81,7 +81,7 @@ Premium および Ultimate 機能のロックを解除するには、有効な�
 
 GitLab チームメンバーは[これらの手順](/handbook/support/internal-support/#unlock-premiumultimate-features-on-self-managed--gdk-for-team-members)に従ってサブスクリプションを取得または更新できます。
 
-より広いコミュニティメンバーは [Developer Relations エンジニアリングチーム](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)に連絡してください。
+より広いコミュニティメンバーは [Developer Relations Engineering チーム](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)に連絡してください。
 
 ### Ruby Gems
 
@@ -89,13 +89,13 @@ GitLab チームメンバーは[これらの手順](/handbook/support/internal-s
 
 ## より広いコミュニティへの参加
 
-- [マージリクエストコーチ](/job-description-library/expert/merge-request-coach/)になる
+- [Merge Request Coach](/job-description-library/expert/merge-request-coach/)になる
 - [コミュニティ Discord](https://discord.gg/gitlab)に参加する
 - チームが[コミュニティオフィスアワー](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#community-office-hours)を開催することを奨励する
-- Slack の `#developer-relations-engineering` で[Developer Relations エンジニアリングチーム](/handbook/marketing/developer-relations/engineering)に連絡する
+- Slack の `#developer-relations-engineering` で [Developer Relations Engineering チーム](/handbook/marketing/developer-relations/engineering)に連絡する
 - あなたの活動にコミュニティを巻き込む
 - 公開で会話する
-- チームの Issue をトリアージし、特に[ハッカソン](https://about.gitlab.com/community/hackathon/)に向けて `quick win` でラベル付けする
+- チームの Issue をトリアージし、特に[ハッカソン](https://about.gitlab.com/community/hackathon/)に向けて、該当する Issue に `quick win` ラベルを付ける
 - [コミュニティフォーク](https://gitlab.com/gitlab-community)を使用する
 - チームメンバーおよび/またはコミュニティと[ライブストリーミング](/handbook/marketing/marketing-operations/youtube/#public-or-private-streaming)と[ペアリングセッション](/handbook/marketing/developer-relations/engineering/community-pairing-sessions/)を検討する
 - [GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) YouTube チャンネルのミーティングを録画する（ハンドブック情報は[こちら](/handbook/marketing/marketing-operations/youtube/)）

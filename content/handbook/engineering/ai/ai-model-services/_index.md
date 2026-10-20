@@ -2,9 +2,9 @@
 title: AI Model Services グループ
 description: "AI Model Services グループは、GitLab Duo の顧客向けモデルのオペレーション／インテリジェンスレイヤー、すなわちどのモデルが利用可能でどう選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービスのサーフェス（プロンプト、内部イベント、AIGW 課金）を所有します。"
 upstream_path: /handbook/engineering/ai/ai-model-services/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: 2026-07-02T12:12:56+02:00
-translated_at: "2026-07-10T20:37:23+09:00"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+lastmod: "2026-10-20T10:51:06+02:00"
+translated_at: "2026-10-20T10:43:24Z"
 translator: codex
 stale: false
 ---
@@ -17,7 +17,7 @@ AI Model Services グループは、顧客固有のデータとユースケー�
 
 AI Model Services は、GitLab の **顧客向けモデルインテリジェンスレイヤー** のエンドツーエンドのオーナーです。すなわち、どのモデルが利用可能か、どう選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービスのサーフェス（プロンプト、内部イベント、AIGW 課金）です。Customer zero、SaaS、Self-Managed、Dedicated にまたがる 1 つのフルスタックチームです。
 
-私たちは、[AI Model Services グループ](/handbook/product/categories/#ai-model-services-group)に属する製品カテゴリの、すべてのバックエンド領域に責任を持ちます。このグループは、[AI Powered ステージ](/handbook/product/categories/#ai-powered-stage)として[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)に含まれます。製品の方向性は [Category Direction, AI Model Services Management](https://about.gitlab.com/direction/ai-powered/custom_models/)ページにあり、私たちが扱う機能は[グループ別機能ページ](/handbook/product/categories/features/#custom-models)に記載されています。
+私たちは、[AI Model Services グループ](/handbook/product/categories/#ai-model-services-group)に属する製品カテゴリの、すべてのバックエンド領域に責任を持ちます。このグループは、[AI Powered ステージ](/handbook/product/categories/#ai-powered-stage)として [DevOps ライフサイクル](/handbook/product/categories/#devops-stages)に含まれます。製品の方向性は [Category Direction, AI Model Services Management](https://about.gitlab.com/direction/ai-powered/custom_models/)ページにあり、私たちが扱う機能は[グループ別機能ページ](/handbook/product/categories/features/#custom-models)に記載されています。
 
 ## 組織
 
@@ -85,7 +85,7 @@ Model Evaluation Infra からの評価結果は、両グループ間の共有レ
 
 | **名前** | **ロール** |
 | --- | --- |
-| Jordan Janes | [Principal Product Manager](/job-description-library/product/product-manager/) |
+| Sam Wiskow | [Principal Product Manager](/job-description-library/product/product-manager/) |
 
 ## 私たちのスコープ外にあるもの {#what-falls-outside-our-scope}
 
@@ -267,8 +267,8 @@ say-do ratio（言ったことを必ずやる比率）は `Completed Issues / As
 
 | ボード | フィルター | カラム |
 | --- | --- | --- |
-| 計画ボード | Milestone, `~group::ai model services` | `~type::bug`, `~type::maintenance`, `~type::feature` |
-| ビルドボード | Milestone, `~group::ai model services`, `~Deliverable` | `~workflow::ready for development`, `~workflow::in dev`, `~workflow::in review`, `~workflow::awaiting security release`, `~workflow::blocked` |
+| 計画ボード | マイルストーン、 `~group::ai model services` | `~type::bug`, `~type::maintenance`, `~type::feature` |
+| ビルドボード | マイルストーン、 `~group::ai model services`, `~Deliverable` | `~workflow::ready for development`, `~workflow::in dev`, `~workflow::in review`, `~workflow::awaiting security release`, `~workflow::blocked` |
 | Next 1-3 Milestones | `%Next 1-3 Milestones` | `~workflow::problem validation`, `~workflow::design`, `~workflow::solution validation`, `~workflow::planning breakdown`, `~workflow::ready for development` |
 | Next 4-6 Milestones | `%Next 4-6 Milestones` | Next 1-3 Milestones と同じ |
 
@@ -336,6 +336,6 @@ Slack または GitLab で名前を指名してメンションされた場合は
 
 AI Model Services チームメンバーが執筆したブログ記事：
 
-- [Developing GitLab Duo: How we validate and test AI models at scale](https://about.gitlab.com/blog/2024/05/09/developing-gitlab-duo-how-we-validate-and-test-ai-models-at-scale/)、[@susie.bee](https://gitlab.com/susie.bee)
-- [GitLab Duo Self-Hosted: Enterprise AI built for data privacy](https://about.gitlab.com/blog/2025/02/27/gitlab-duo-self-hosted-enterprise-ai-built-for-data-privacy/)、[@susie.bee](https://gitlab.com/susie.bee)
-- [Speed meets governance: Model Selection comes to GitLab Duo](https://about.gitlab.com/blog/speed-meets-governance-model-selection-comes-to-gitlab-duo/)、[@susie.bee](https://gitlab.com/susie.bee)
+- [GitLab Duo の開発：AI モデルを大規模に検証・テストする方法](https://about.gitlab.com/blog/2024/05/09/developing-gitlab-duo-how-we-validate-and-test-ai-models-at-scale/)、[@susie.bee](https://gitlab.com/susie.bee)
+- [GitLab Duo Self-Hosted：データプライバシーのために構築されたエンタープライズ AI](https://about.gitlab.com/blog/2025/02/27/gitlab-duo-self-hosted-enterprise-ai-built-for-data-privacy/)、[@susie.bee](https://gitlab.com/susie.bee)
+- [スピードとガバナンスの両立：GitLab Duo に Model Selection が登場](https://about.gitlab.com/blog/speed-meets-governance-model-selection-comes-to-gitlab-duo/)、[@susie.bee](https://gitlab.com/susie.bee)
