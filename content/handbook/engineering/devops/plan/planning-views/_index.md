@@ -1,9 +1,9 @@
 ---
 title: Plan:Planning Views エンジニアリングチーム
 upstream_path: /handbook/engineering/devops/plan/planning-views/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-lastmod: "2026-10-19T15:33:10+02:00"
-translated_at: "2026-10-19T21:01:48+00:00"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+lastmod: "2026-10-20T15:14:04+02:00"
+translated_at: "2026-10-20T21:00:28Z"
 translator: codex
 stale: false
 ---
@@ -27,6 +27,10 @@ GitLab の [Planning Views](/handbook/product/categories/#planning-views-group) 
 ### 採用チャート
 
 現在募集中のポジションについては、[採用情報ページ](https://about.gitlab.com/jobs/)をご覧ください。
+
+## 生産性の測定方法 {#how-we-measure-productivity}
+
+私たちは、休暇を考慮して調整したエンジニア 1 人あたりの MR 率、レビュー収支、マージまでの時間を、28 日間の移動期間で追跡します。定義、目標、ダッシュボードは、[チームの生産性の測定方法](/handbook/engineering/devops/measuring-productivity/)に記載しています。
 
 ## 私たちの働き方
 

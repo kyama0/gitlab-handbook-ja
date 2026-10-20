@@ -1,30 +1,26 @@
 ---
 title: Create
 description: >-
-  Create ステージは、Code Review、Remote Development、Source Code を含む
-  チームグループです。
+  Create ステージは、Source Code を含むチームグループです。
 upstream_path: /handbook/engineering/devops/create/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-translated_at: "2026-10-19T21:04:57+00:00"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+translated_at: "2026-10-20T20:57:57Z"
 translator: claude
 stale: false
-lastmod: "2026-10-09T16:27:20-04:00"
+lastmod: "2026-10-20T10:12:47-04:00"
 ---
 
 ## こんにちは
 
-[私たちは Create ステージ](/handbook/engineering/devops/create/engineering-managers/)であり、DevOps 部門内のチームグループです。私たちは [GitLab 製品内](/handbook/product/categories/#create-stage)の 3 つの領域で構成されています。
+[私たちは Create ステージ](/handbook/engineering/devops/create/engineering-managers/)であり、DevOps 部門内のチームグループです。私たちは、[GitLab 製品内](/handbook/product/categories/#create-stage)の領域を担当する、以下のチームで構成されています。
 
 | チーム | Engineering Managers |
 | ---- | -------------------- |
-| [Create ステージ](/handbook/engineering/devops/create/) | [André Luís](https://gitlab.com/andr3) |
-| [Create:Code Review](/handbook/engineering/devops/create/code-review/) | [François Rosé](https://gitlab.com/francoisrose) |
 | [Create:Agentic Preview](/handbook/engineering/devops/create/source-code/agentic-preview/) | [Daniel Lanthier](https://gitlab.com/dclannn) |
 | [Create:Change Record](/handbook/engineering/devops/create/source-code/change-record/) | [Daniel Lanthier](https://gitlab.com/dclannn) |
 | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) | [Armin Pašalić](https://gitlab.com/armin.pasalic) |
 | [Create:Source Code Hardening and Modernization](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)（一時的、2027-09-10 まで） | [Vladimir Shushlin](https://gitlab.com/vshushlin) |
 | [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](https://gitlab.com/thiagocsf) (フルスタック) — レポート先 {{< manager-by-report-name "Thiago Figueiró" >}} |
-| [Create:Remote Development](/handbook/engineering/devops/create/remote-development/) | — |
 
 ## ミッション
 
@@ -84,9 +80,10 @@ Create ステージは、効率とコラボレーションを改善すること�
 各チームは、自分たちの製品とチームのニーズに最も適した方法で作業します。
 
 - [Create Engineering Manager](/handbook/engineering/devops/create/engineering-managers/)
-- [Remote Development チーム](/handbook/engineering/devops/create/remote-development/)
-- [Code Review チーム](/handbook/engineering/devops/create/code-review/#work)
-- Source Code チーム [バックエンド](/handbook/engineering/devops/create/source-code/backend/#workflow)、[フロントエンド](/handbook/engineering/devops/create/code-review/frontend/#work)
+- [Agentic Preview チーム](/handbook/engineering/devops/create/source-code/agentic-preview/)
+- [Change Record チーム](/handbook/engineering/devops/create/source-code/change-record/)
+- [Repository Services チーム](/handbook/engineering/devops/create/source-code/repository-services/)
+- [Source Code Hardening and Modernization チーム](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)
 
 ### 製品とデザインとの協働
 
@@ -221,7 +218,7 @@ infradev Issue、バグ、エラーバジェット、インシデント、また
 ##### トリガー条件
 
 - 単一のマイルストーン内で SLO を逃した**2 つ以上のバグ**が存在
-- バグが**"Backlog"**ステータス（マイルストーンに割り当てられていない）で蓄積し始める
+- バグが **"Backlog"** ステータス（マイルストーンに割り当てられていない）で蓄積し始める
 - チームが、マイルストーンあたりのバグクローズの**最小 Issue 数**しきい値を下回る
 
 ### 継続的な持続可能性プラクティス

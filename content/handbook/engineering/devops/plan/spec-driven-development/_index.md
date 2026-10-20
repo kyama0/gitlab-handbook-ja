@@ -2,9 +2,9 @@
 title: "Plan:Spec-Driven Development Engineering チーム"
 description: "Plan:Spec-Driven Development グループのエンジニアリングチームのページ。"
 upstream_path: /handbook/engineering/devops/plan/spec-driven-development/
-upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
-lastmod: "2026-10-06T15:47:25+03:00"
-translated_at: "2026-10-09T21:10:17+00:00"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+lastmod: "2026-10-20T13:32:50-04:00"
+translated_at: "2026-10-20T21:00:28Z"
 translator: codex
 stale: false
 ---
@@ -42,21 +42,21 @@ Spec-Driven Development グループのビジョンは Intent-to-Code です。�
 
 - ワークアイテム上の Workplan。作業をどのように進めるかを示す計画です。[ユーザードキュメント](https://docs.gitlab.com/user/work_items/workplan/)を参照してください。
 - 意思決定ログ。ワークアイテムに関する決定の記録です。
-- 準備状況スコア（ドキュメントでは信頼度スコアと呼ばれています）。計画をエージェントが実行できる状態かどうかを示します。
-- 準備が整ったワークアイテムを Duo Developer と Duo Review に引き渡すフロー。
+- 準備状況。ワークアイテムをエージェントが実行できる状態かどうかを示します。
+- 準備が整ったワークアイテムを Duo Developer に引き渡すフロー。
 
 ### 設計ドキュメント {#design-documents}
 
-[設計ドキュメント](/handbook/engineering/architecture/design-documents/spec_driven_development/)では、製品で Workplan と呼んでいるものに「Agent plan」という名称を使用しています。
+[設計ドキュメント](/handbook/engineering/architecture/design-documents/spec_driven_development/)では、Workplan とそれを支える機能を説明しています。
 
-- [作業計画](/handbook/engineering/architecture/design-documents/spec_driven_development/work_plan/)：計画を保存するウィジェット。
+- [Workplan](/handbook/engineering/architecture/design-documents/spec_driven_development/workplan/)：計画を保存するウィジェット。
 - [意思決定ログ](/handbook/engineering/architecture/design-documents/spec_driven_development/decision_log/)：構造化された決定を扱うウィジェット。
-- [スコアリング](/handbook/engineering/architecture/design-documents/spec_driven_development/scoring/)：準備状況スコア。
-- [メモリ](/handbook/engineering/architecture/design-documents/spec_driven_development/memory/)：計画の生成に投入するプロジェクトの背景情報とメモリ。
-- [対話型ビルダー](/handbook/engineering/architecture/design-documents/spec_driven_development/interactive_builder/)：出力を繰り返し改善するための Duo Chat とライブプレビューの UI。
-- [下流の利用者](/handbook/engineering/architecture/design-documents/spec_driven_development/downstream_consumers/)：Duo Developer と Duo Review が計画をどのように使用するか。
+- [準備状況](/handbook/engineering/architecture/design-documents/spec_driven_development/readiness/)：ワークアイテムがエージェントによる実行に向けてどの程度準備できているか。
+- [非同期 Workplan フロー](/handbook/engineering/architecture/design-documents/spec_driven_development/workplan-flow/)：バックグラウンドでの調査、計画、準備状況のスコアリング。
+- [人の関与](/handbook/engineering/architecture/design-documents/spec_driven_development/human-in-the-loop/)：明確化のための質問、意思決定、フローの再開。
+- [下流の利用者](/handbook/engineering/architecture/design-documents/spec_driven_development/downstream_consumers/)：Duo Developer が計画をどのように使用するか。Duo Review による検証は先送りされています。
 - [ワークアイテムとマージリクエストの関係](/handbook/engineering/architecture/design-documents/spec_driven_development/wi_mr_relationship/)：SDD に必要な双方向リンク。
-- [テストシナリオ](/handbook/engineering/architecture/design-documents/spec_driven_development/test_scenarios/)：テスト要件。
+- [テストとフィードバック](/handbook/engineering/architecture/design-documents/spec_driven_development/#testing-and-feedback)：ドッグフーディングと利用状況の測定。
 
 ### チームメンバー {#team-members}
 

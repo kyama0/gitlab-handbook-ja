@@ -1,11 +1,11 @@
 ---
 title: Plan:Portfolio Planning エンジニアリングチーム
 upstream_path: /handbook/engineering/devops/plan/portfolio-planning/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-translated_at: "2026-10-19T21:01:48+00:00"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+translated_at: "2026-10-20T21:00:28Z"
 translator: claude
 stale: false
-lastmod: "2026-10-19T15:33:10+02:00"
+lastmod: "2026-10-20T15:14:04+02:00"
 ---
 
 ## Plan:Portfolio Planning チーム
@@ -26,9 +26,9 @@ Plan:Portfolio Planning チームは、[Plan ステージ](/handbook/engineering
 
 現在の募集職種については、[採用ページ](https://about.gitlab.com/jobs/)をご覧ください。
 
-## チームメトリクスダッシュボード
+## 生産性の測定方法 {#how-we-measure-productivity}
 
-私たちには[メトリクスダッシュボード](https://us-west-2b.online.tableau.com/t/gitlabpublic/views/TopEngineeringMetrics/TopEngineeringMetricsDashboard)があり、特にマージリクエストの作成と受け入れに関する [Development Department KPI](/handbook/company/kpis/#development-department-kpis)の一部を追跡することを意図しています。そのダッシュボードのうち、以下のチャートは [MR レート](/handbook/engineering/performance-indicators/#engineering-mr-rate)を表示します。
+私たちは、休暇を考慮して調整したエンジニア 1 人あたりの MR 率、レビュー収支、マージまでの時間を、28 日間の移動期間で追跡します。定義、目標、ダッシュボードは、[チームの生産性の測定方法](/handbook/engineering/devops/measuring-productivity/)に記載しています。
 
 ## 私たちの働き方
 
