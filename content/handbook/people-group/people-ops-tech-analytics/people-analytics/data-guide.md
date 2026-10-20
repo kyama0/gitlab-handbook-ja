@@ -1,27 +1,27 @@
 ---
 title: "ピープルデータ分析のためのデータガイド"
 upstream_path: /handbook/people-group/people-ops-tech-analytics/people-analytics/data-guide/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+translated_at: "2026-10-20T10:47:04Z"
 translator: claude
 stale: false
-lastmod: "2026-04-01T15:05:59-04:00"
+lastmod: "2026-10-16T09:24:31-07:00"
 ---
 
-## このページの目的
+## このページの目的 {#objectives-for-this-page}
 
 このハンドブックページでは、People Analytics チームが使用するデータの定義およびデータモデルの概要を示します。用語、計算式、ピープルデータを利用したモデルについて明確にしたいときに、このページを参照してください。質問がある場合は、遠慮なくチームメンバーに連絡してサポートを受けてください。
 
-## 出発点として役立つ場所
+## 出発点として役立つ場所 {#helpful-places-to-start}
 
 - [DBT Docs](https://dbt.gitlabdata.com/#!/overview) - このリソースには利用可能なすべての dbt モデルに関する包括的なドキュメントが含まれています。私たちのモデルを理解する良い出発点です。People 固有のモデルについては、以下の **よく使われるデータモデル** セクションを起点として参照してください。
 - Data チームが管理する[データ主題領域の決定版ガイド](/handbook/enterprise-data/data-governance/data-catalog/)。
 - 技術的に好奇心旺盛なアナリスト向けの[データパイプラインのドキュメント](/handbook/enterprise-data/platform/pipelines/)。このページでは各データソースと抽出の詳細について説明しています。
 - [People Group Tech Stack Guide](/handbook/people-group/) - 私たちの HR システムへの／からのすべての統合と、私たちが使用するすべてのツールの概要。
 
-## People Group データディクショナリ
+## People Group データディクショナリ {#people-group-data-dictionary}
 
-### 雇用データ
+### 雇用データ {#employment-data}
 
 採用後の GitLab における労働者および雇用に関するデータ
 
@@ -52,7 +52,7 @@ lastmod: "2026-04-01T15:05:59-04:00"
 
 </details>
 
-### Diversity, Inclusion, and Belonging（DIB）
+### Diversity, Inclusion, and Belonging（DIB） {#diversity-inclusion-and-belonging-dib}
 
 労働者の属性（demographics）と、彼ら自身がどう識別するかに関するデータ
 
@@ -67,7 +67,7 @@ lastmod: "2026-04-01T15:05:59-04:00"
 
 </details>
 
-### ポジション
+### ポジション {#position}
 
 チームメンバーが GitLab で就いているポジションに関する情報
 
@@ -86,16 +86,16 @@ lastmod: "2026-04-01T15:05:59-04:00"
 | Average Span of Control | ピープルマネージャーに平均で割り当てられている direct reports の数 | Direct Reports の数 / People Managers の数 |  |
 | Manager Ratio | チームメンバーのうち people managers である割合 | People Managers の数 / 総チームメンバー数 | |
 | Range of Span | 特定の日付時点での span of control の最小値と最大値 | | |
-| Compa-Ratio | Compa-ratio は、チームメンバーの給与を社内または対象市場の類似ポジションの中央値報酬と比較する指標です。 | チームメンバーの給与を市場レートの報酬中央値で割る | はい |
+| Compa-Ratio | Compa-ratio は、チームメンバーの給与を社内または対象市場の類似ポジションの中央値報酬と比較する指標です。 | チームメンバーの給与を市場レートの報酬範囲の中間値で割る | はい |
 | [Discretionary Bonus](/handbook/incentives/#discretionary-bonuses) | 会社のマネジメントの裁量で授与される追加のボーナス額。標準のボーナスプランとは別で、特定のパフォーマンスメトリクスには基づきません。Discretionary Bonus は会社が突出したチームメンバーを報酬する柔軟性を提供します。 |  |  |
 | Discretionary Bonus Rate | 母集団のうち discretionary bonus を受け取ったチームメンバーの割合。KPI ではローリング 3 か月平均として報告されます。 | Discretionary Bonuses の数 / 平均ヘッドカウント |  |
-| [Promotion](/handbook/people-group/promotions-transfers/#promotions) | HRMS で送信されたビジネスプロセスタイプが "Promote Employee Inbound" の場合、昇進としてカウントされます |  |  |
-| [Lateral Transfer](/handbook/people-group/promotions-transfers/) | HRMS で送信されたビジネスプロセスカテゴリが "Lateral Move" で、職務名（job title）に変更があった場合、lateral move としてカウントされます |  |  |
-| [Internal Mobility Rate](/handbook/people-group/promotions-transfers/#internal-mobility) | Internal Mobility Rate は、組織内でチームメンバーがポジションを変更する頻度を示し、社員が利用可能な内部の異動とキャリア進展の機会、また成長のパスを提供することで人材を維持する会社の能力を示します。 | Lateral Transfers と Promotions の数 / 平均ヘッドカウント |  |
+| [Promotion](/handbook/people-group/promotions-transfers/) | HRMS で送信されたビジネスプロセスタイプが "Promote Employee Inbound" の場合、昇進としてカウントされます |  |  |
+| [Lateral Transfer](/handbook/people-group/promotions-transfers/) | HRMS で送信されたビジネスプロセスカテゴリが "Lateral Move" で、職務名に変更があった場合、水平異動としてカウントされます |  |  |
+| [Internal Mobility Rate](/handbook/people-group/promotions-transfers/) | Internal Mobility Rate は、組織内でチームメンバーがポジションを変更する頻度を示し、社員が利用可能な内部の異動とキャリア進展の機会、また成長のパスを提供することで人材を維持する会社の能力を示します。 | Lateral Transfers と Promotions の数 / 平均ヘッドカウント |  |
 
 </details>
 
-### 有給休暇および欠勤
+### 有給休暇および欠勤 {#paid-time-off-and-absence}
 
 有給休暇（PTO）および欠勤に関する情報
 
@@ -110,7 +110,7 @@ lastmod: "2026-04-01T15:05:59-04:00"
 
 </details>
 
-### 採用とオンボーディング
+### 採用とオンボーディング {#recruiting-and-onboarding}
 
 Talent Acquisition が使用するオンボーディングプロセスおよび採用メトリクスに関するデータ
 
@@ -123,20 +123,20 @@ Talent Acquisition が使用するオンボーディングプロセスおよび�
 | External Applicants | ソースが "Internal Applicant" ではない応募者。応募提出時点で GitLab を通じて雇用されていない |  |  |
 | Internal Applicants | ソースが "Internal Applicant" の応募者。応募提出時点で GitLab を通じて雇用されている |  |  |
 | Time to Hire / Candidate Throughput | 応募提出日と、受諾されたオファーがある場合に応募が "Hire" ステージに移動した日の間の日数。 |  |  |
-| Verbal Accepted Offer % | Offer ステージに移動し承諾された応募 / Offer ステージに移動し決着した応募数 | Offer Stage に移動して Offers を受諾した応募数 / Offer Stage に移動して受諾または拒否された応募数 |  |
+| Verbal Accepted Offer % | Offer ステージに移動し承諾された応募 / Offer ステージに移動し決着した応募数 | オファーステージに移動してオファーを受諾した応募数 / オファーステージに移動してオファーを受諾または拒否した応募数 |  |
 | Written Offer Accept % | 日付範囲内に決着したオファー。受諾されたオファー数 / 決着したオファー数。 | オファーを受諾した応募数 / オファーを受諾または拒否した応募数 |  |
 | Internal Mobility Rate % | 日付範囲内に決着したオファー。内部応募者からの受諾オファー数 / 受諾オファー数 | オファーを受諾した内部応募数 / オファーを受諾した応募数 |  |
-| Source Rate | 日付範囲内に提出された応募のうち、sourced（Sourcing Strategy が "Prospecting" で Source が "SocialReferral" ではない）であり、候補者が（候補者タグに基づき）多様なソースから来たものの割合。sourced 応募全体に対する割合。 | 多様な候補者タグ付きで提出された Sourced Applications 数 / Sourced Applications 数 |  |
-| Source Mix | 日付範囲内に決着日を持つ外部ソーシング戦略（内部応募者または買収を除く）による受諾オファーの割合 | 特定の Sourcing Strategy で Accepted Offers を持つ外部応募数 / Accepted Offers を持つ外部応募数 |  |
+| Source Rate | 日付範囲内に提出された応募のうち、ソーシングされたもの（Sourcing Strategy が "Prospecting" で Source が "SocialReferral" ではない）であり、候補者が（候補者タグに基づき）多様なソースから来たものの割合。ソーシング経由の応募全体に対する割合。 | 多様な候補者タグ付きで提出された ソーシング経由の応募数 / ソーシング経由の応募数 |  |
+| Source Mix | 日付範囲内に決着日を持つ外部ソーシング戦略（内部応募者または買収を除く）による受諾オファーの割合 | 特定の Sourcing Strategy で 受諾されたオファーを持つ外部応募数 / 受諾されたオファーを持つ外部応募数 |  |
 | Conversion Rate | 日付範囲内に提出された応募数と、それらが進んだ採用プロセスの各ステージ。前ステップから次ステップへ進んだ応募の割合を示す（例：Initial Interview に 10 件あり Team Interview フェーズに 2 件進んだ場合、Initial Interview のコンバージョン率は 20%）。 | 第二ステージの応募数 / 第一ステージの応募数 |  |
 | Pending Offers | 送信済みだが受諾も拒否もされていないオファー |  |  |
-| Time to Fill | 指定された日付範囲内にクローズし、採用された応募を持つ Openings の、open 日とクローズ日の間の日数 |  |  |
-| Time to Start | 採用された応募について、Opening の open 日と予定開始日の間の日数 |  |  |
-| Requisition Aging | 日付範囲内のいずれかの時点で open だった Openings の平均日数。この計算ではレポート期間中の全日について open 日数を平均します。 |  |  |
+| Time to Fill | 指定された日付範囲内にクローズし、採用された応募を持つ募集枠の、募集開始日と終了日の間の日数 |  |  |
+| Time to Start | 採用された応募について、募集枠の募集開始日と予定入社日の間の日数 |  |  |
+| Requisition Aging | 日付範囲内のいずれかの時点で募集中だった募集枠の平均募集日数。この計算ではレポート期間中の全日について募集日数を平均します。 |  |  |
 
 </details>
 
-### システム
+### システム {#systems}
 
 People Group が使用するシステム
 
@@ -156,16 +156,16 @@ People Group が使用するシステム
 
 </details>
 
-## データモデル
+## データモデル {#data-models}
 
 Data チームは People Analytics チームと協力して、さまざまなピープルデータソースを探索できるデータマートを構築しています。
 
-- "mart" モデルは、簡単に分析できるように結合された dimensions と facts の組み合わせです。
+- "mart" モデルは、簡単に分析できるように結合されたディメンションとファクトの組み合わせです。
 - "rpt"（"report"）モデルは特定のユースケースのための特定のビジネスロジックで構築されます。
 
-各モデルの下には、分析にも使用できるクリーンな dimensions と facts の系譜があります。このリストには、ピープル分析のために作成されたすべての prep テーブル、dimensions、facts、および [Team Member Common ERD](https://lucid.app/lucidchart/17fbbbe5-f652-40e9-905e-1b07ec040520/edit?viewport_loc=153%2C6%2C1472%2C542%2CC6RZ78OfF1Bh&invitationId=inv_f6b923fd-02bb-4786-abd7-bf205c7d1da2) に基づいて今後の四半期で構築予定のものが含まれます。
+各モデルの下には、分析にも使用できるクリーンなディメンションとファクトの系譜があります。このリストには、ピープル分析のために作成されたすべての prep テーブル、ディメンション、ファクト、および [Team Member Common ERD](https://lucid.app/lucidchart/17fbbbe5-f652-40e9-905e-1b07ec040520/edit?viewport_loc=153%2C6%2C1472%2C542%2CC6RZ78OfF1Bh&invitationId=inv_f6b923fd-02bb-4786-abd7-bf205c7d1da2) に基づいて今後の四半期で構築予定のものが含まれます。
 
-### Prep、dimension、fact テーブル
+### Prep、ディメンション、ファクトテーブル {#prep-dimension-and-fact-tables}
 
 |モデル名|テーブル種別|粒度|ソース|状態|ドキュメント|
 | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -181,14 +181,14 @@ Data チームは People Analytics チームと協力して、さまざまなピ
 |fct_team_member_locality|Fact||Workday|計画中| DBT docs |
 |fct_team_demographic|Fact||Workday|計画中| DBT docs |
 
-### Marts
+### データマート {#marts}
 
 |モデル名|テーブル種別|粒度|状態|ドキュメント|
 | ------ | ------ | ------ | ------ | ------ |
 |mart_team_member_directory| Mart | employee ID ごとに 1 行| 完了 | [DBT docs](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_team_member_directory) |
 |mart_team_member_absence| Mart | Team Member ID、pto_uuid、absence_date の組み合わせごとに 1 行| 完了 | [DBT docs](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_team_member_absence) |
 
-## モデルの利用
+## モデルの利用 {#model-usage}
 
 ### dim_team_member
 
@@ -247,9 +247,9 @@ GROUP BY 1
 
 ### dim_team
 
-**dim_team** には team（組織）情報が含まれます。各チームとその階層に関する情報が含まれます。これは [Type 2 SCD](/handbook/enterprise-data/platform/edw/#slowly-changing-dimensions--snapshots) です。
+**dim_team** にはチーム（組織）情報が含まれます。各チームとその階層に関する情報が含まれます。これは [Type 2 SCD](/handbook/enterprise-data/platform/edw/#slowly-changing-dimensions--snapshots) です。
 
-このテーブルの目的は、Workday の各組織の上位組織と階層を判定することです。さらに、このテーブルでは team name、manager、team member count、各組織の非アクティブ化日付などのチームデータも提供します。
+このテーブルの目的は、Workday の各組織の上位組織と階層を判定することです。さらに、このテーブルではチーム名、マネージャー、チームメンバー数、各組織の非アクティブ化日付などのチームデータも提供します。
 
 このテーブルの粒度は、Team ID × イベントごとに 1 行です。
 
@@ -411,7 +411,7 @@ WHERE
 
 ### fct_team_status
 
-このテーブルは `fct_team_member_status` と `fct_team_member_position` から派生した fact です。機密性のあるカラムはマスクされ、Snowflake で `analyst_people` ロールが割り当てられているチームメンバーにのみ表示されます。このテーブルは、`fct_team_member_position` テーブル（チームメンバーのポジションプロファイルへのすべての変更が、有効になったかどうかに関わらず含まれる）とは対照的に、effective date ごとにチームメンバーのポジションの変更を 1 つだけ含みます。このテーブルには将来の採用者は含まれず、今日時点で GitLab で勤務している人だけが含まれます。
+このテーブルは `fct_team_member_status` と `fct_team_member_position` から派生したファクトです。機密性のあるカラムはマスクされ、Snowflake で `analyst_people` ロールが割り当てられているチームメンバーにのみ表示されます。このテーブルは、`fct_team_member_position` テーブル（チームメンバーのポジションプロファイルへのすべての変更が、有効になったかどうかに関わらず含まれる）とは対照的に、発効日ごとにチームメンバーのポジションの変更を 1 つだけ含みます。このテーブルには将来の採用者は含まれず、今日時点で GitLab で勤務している人だけが含まれます。
 
 <details>
 <summary markdown="span">クエリ - フランスのバックエンドエンジニアであるアクティブなチームメンバー  </summary>
@@ -452,8 +452,7 @@ GROUP BY 1;
 
 </details>
 
-<details>
-<summary markdown="span">クエリ - マネジメントレベル別の辞職数（voluntary 対 involuntary） </summary>
+<summary markdown="span">クエリ - マネジメントレベル別の辞職数（自発的対非自発的） </summary>
 
 *Termination type と termination reason はマスクされたフィールドで、Snowflake で `analyst_people` ロールを持つチームメンバーのみクエリできます*
 
@@ -533,7 +532,7 @@ ORDER BY transition_count DESC;
 </details>
 
 <details>
-<summary markdown="span">クエリ - ジョブファミリー別のチームメンバーリテンション</summary>
+<summary markdown="span">クエリ - ジョブファミリー別のチームメンバーリテンション/</summary>
 
 ```sql
 WITH retention_by_job_family AS (
@@ -561,7 +560,7 @@ WHERE NOT active_team_members = 0 --Excluded deprecated job families
 
 ### mart_team_member_absence
 
-このテーブルは `fct_team_member_absence` と `dim_team_member` から派生した mart です。機密性のあるカラムはマスクされ、Snowflake で `analyst_people` ロールが割り当てられているチームメンバーにのみ表示されます。このテーブルはワークスペーステーブル `wk_pto` の置き換えとなります。このテーブルは[ハイブリッド SCD（Type 0 + Type 2）](/handbook/enterprise-data/platform/edw/#slowly-changing-dimensions--snapshots)です。
+このテーブルは `fct_team_member_absence` と `dim_team_member` から派生したデータマートです。機密性のあるカラムはマスクされ、Snowflake で `analyst_people` ロールが割り当てられているチームメンバーにのみ表示されます。このテーブルはワークスペーステーブル `wk_pto` の置き換えとなります。このテーブルは[ハイブリッド SCD（Type 0 + Type 2）](/handbook/enterprise-data/platform/edw/#slowly-changing-dimensions--snapshots)です。
 
 このテーブルの粒度は、`team member ID` × `pto_uuid` × `absence_date` の組み合わせごとに 1 行です。
 
@@ -604,7 +603,7 @@ ORDER BY quarter ASC, absence_count DESC;
 
 ### mart_team_member_directory
 
-このテーブルは `fct_team_member_position` と `dim_team` から派生した fact です。機密性のあるカラムはマスクされ、Snowflake で `analyst_people` ロールが割り当てられているチームメンバーにのみ表示されます。このテーブルは、すべての Workday データが上流テーブルに含まれるようになった時点でレガシーテーブル `employee_directory_*` の置き換えとなります。
+このテーブルは `fct_team_member_position` と `dim_team` から派生したファクトです。機密性のあるカラムはマスクされ、Snowflake で `analyst_people` ロールが割り当てられているチームメンバーにのみ表示されます。このテーブルは、すべての Workday データが上流テーブルに含まれるようになった時点でレガシーテーブル `employee_directory_*` の置き換えとなります。
 
 このテーブルの粒度は、チームメンバー × valid_from/valid_to の組み合わせごとに 1 行です。
 
@@ -652,11 +651,11 @@ WHERE is_current AND is_current_team_member
 
 </details>
 
-## レガシーおよびその他のデータモデル
+## レガシーおよびその他のデータモデル {#legacy-and-other-data-models}
 
 レガシーモデルとは、いずれは移行する予定だが、現在もまだレポーティングに使用されているモデルです。
 
-### レガシー Workday データモデル
+### レガシー Workday データモデル {#legacy-workday-data-models}
 
 <details>
 <summary markdown="span">クリックして展開</summary>
@@ -670,15 +669,15 @@ WHERE is_current AND is_current_team_member
 
 </details>
 
-### Greenhouse データモデル
+### Greenhouse データモデル {#greenhouse-data-models}
 
 <details>
 <summary markdown="span">クリックして展開</summary>
 
 | データベース | スキーマ | テーブル名 | データ粒度 | 説明 | 備考 |
 | --- | --- | --- | --- | --- | --- |
-| prod | workspace_people | [rpt_hires](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.rpt_hires) | `application_id` | これは talent acquisition 専用のレポートで、受諾されたオファーを採用としてカウントします。 |  |
+| prod | workspace_people | [rpt_hires](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.rpt_hires) | `application_id` | これは採用専用のレポートで、受諾されたオファーを採用としてカウントします。 |  |
 | prep | greenhouse | [greenhouse_application_stages_source](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.greenhouse_application_stages_source) | `application_id` × `stage_id` × `stage_entered_on` | このテーブルは、応募が取りうるすべてのステージの履歴アクティビティです。各行は応募が取りうるステージと、応募がそのステージに入った／離れたタイムスタンプを表します。注意点：このテーブルには、応募が属するジョブから取得した、応募が取りうるそれぞれのステージに対する行が含まれます。したがって、応募がまだ到達していない、または到達しない（応募が拒否された場合）ステージの行が存在することがあります。 |  |
-| prep | sensitive | [greenhouse_recruiting_xf](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.greenhouse_recruiting_xf) | `application_id` | 提出されたすべての応募と、オファーデータ、greenhouse の部署（関連 division）、ソースデータを 1 箇所にまとめて表示します。 |  |
+| prep | sensitive | [greenhouse_recruiting_xf](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.greenhouse_recruiting_xf) | `application_id` | 提出されたすべての応募と、オファーデータ、Greenhouse の部署（関連する部門）、ソースデータを 1 箇所にまとめて表示します。 |  |
 
 </details>

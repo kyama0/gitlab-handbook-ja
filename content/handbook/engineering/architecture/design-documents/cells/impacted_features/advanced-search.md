@@ -68,7 +68,7 @@ GitLab.com は高度な検索をサポートするためにすべてのインデ
 1. マイグレーションクリーンアップ Cron ワーカーはコードベースに存在しないマイグレーションをマイグレーションインデックスから削除します
 1. スローログ Cron ワーカーは ops フィーチャーフラグ（またはアプリケーション設定）が有効な場合にスローログを有効にします
 
-### Organization の移行
+### Organization の移行 {#organization-migration}
 
 [Zoekt](zoekt.md#organization-migration-workflow)も同様の移行戦略を採用しています。Organization が所有する状態は移行先の Cell へ直接移行し、Cell ローカルの運用状態はそこでゼロから再構築します。
 

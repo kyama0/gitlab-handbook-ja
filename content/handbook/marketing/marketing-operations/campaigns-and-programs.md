@@ -1,33 +1,33 @@
 ---
 title: "キャンペーンとプログラム"
-description: "Campaign は、マーケティング施策の取り組みを追跡するために使用します"
+description: "キャンペーンは、マーケティング施策の取り組みを追跡するために使用します"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-lastmod: "2026-10-01T17:06:48-06:00"
-translated_at: "2026-10-10T21:11:07.012339+00:00"
+upstream_sha: "ddc319726d9e3f1cfd7f88faf4798bf31af6bf10"
+lastmod: "2026-10-16T19:52:00+02:00"
+translated_at: "2026-10-20T11:12:11+00:00"
 translator: codex
 stale: false
 ---
 
-## キャンペーン
+## キャンペーン {#campaigns}
 
 Campaign は、マーケティング施策（フィールドイベント、ウェブキャスト、コンテンツダウンロードなど）の取り組みを追跡するために使用します。Campaign タイプは、マーケティングがどのように支出を追跡するかに合わせて整理されており、私たちの 3 つのコアシステム（Marketo、Salesforce、Bizible）でレコードが追跡される方法を一貫した追跡のために揃えています。Campaign を活用することで、Marketing、Sales、Finance をまたいだ取り組みを揃えられます。
 
 Marketing Ops は Field Marketing チームおよび Corporate Events チームと連携し、Marketo プログラムのセットアップと設定を提供します。これにより、これらのチームに対して、目標達成のための最適な技術的セットアップに関するアドバイスを提供し、より複雑なプログラム要件を効率化する社内パートナーとして機能します。詳細は [Marketo Program/Campaign Support ページ](/handbook/marketing/marketing-operations/campaign-operations/)を参照してください。
 
-以下の表で「Valid for List Import」は、この特定のステータスが[セルフサービスのリストインポート](/handbook/marketing/marketing-operations/automated-list-import/)で使用できるかどうかを示しています。ごくまれに、イベントによっては MOps への相談が必要な特別な考慮事項があり、それらは表内でフラグが付けられています。
+以下の表で「リストインポートで使用可能」は、この特定のステータスが[セルフサービスのリストインポート](/handbook/marketing/marketing-operations/automated-list-import/)で使用できるかどうかを示しています。ごくまれに、イベントによっては MOps への相談が必要な特別な考慮事項があり、それらは表内でフラグが付けられています。
 
-### Campaign のコスト追跡
+### キャンペーンのコスト追跡 {#campaign-cost-tracking}
 
-マーケティングが Campaign のコストをどのように追跡するかについては、[このページ](/handbook/marketing/marketing-team-processes/#how-marketing-tracks-campaign-expenses)を参照してください。
+マーケティングがキャンペーンのコストをどのように追跡するかについては、[このページ](/handbook/marketing/marketing-team-processes/#how-marketing-tracks-campaign-expenses)を参照してください。
 
-### Campaign タイプとステータスの進行
+### キャンペーンタイプとステータスの進行 {#campaign-type--progression-status}
 
 レコードは一連のイベントステータスを**一方向にのみ**進行できます。レコードはステータスを逆方向に移動 _できません_。
 
 例: `Registered` に設定されたレコードを `Waitlisted` に戻すことはできません。
 
-#### Conference
+#### カンファレンス {#conference}
 
 スポンサー費用を支払い、ブース／プレゼンスを設け、GitLab から代表者を派遣しているあらゆるイベント（例: AWS re:Invent、DevOps Enterprise Summit）。これには、登録を私たちが所有していないものの参加者リストやエンゲージメントが生成される、スポンサーまたは参加するバーチャルイベントも含まれます。
 
@@ -37,43 +37,43 @@ Marketing Ops は Field Marketing チームおよび Corporate Events チーム�
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。登録ページをホストしておらず、イベント後にブース来訪者のリストを受け取るためです。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success | Valid for list import |
+| メンバーステータス | 定義 | 成功 | リストインポートで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | No |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | No |
-| Marketing Invited | Marketing の地域ターゲットメール |  | No |
-| Waitlisted| 登録が満員の場合の保留状態。空きが出れば Registered に移動| | No |
-| Registered | イベントに登録|| No（特別条件については MOps に確認） |
-| No Show | 登録したが参加の確認なし、欠席と推定 | | Yes |
-| Meeting Requested | カンファレンスで開催予定のミーティングを設定 |  | No（特別条件については MOps に確認） |
-| Meeting No Show | カンファレンスで予定されたミーティングがキャンセルまたは不参加 |  | Yes |
-| Meeting Attended | カンファレンスで予定されたミーティングに参加 | Yes | Yes |
-| Attended| イベントに参加、ブースではエンゲージしなかった、または expo フロアのスピーキングセッションに参加 | Yes | Yes |
-| Visited Booth | 何らかの理由でブースに立ち寄った（最も一般的なカンファレンスステータス） | Yes | Yes |
-| Follow Up Requested | イベント後に Sales によるフォローアップを要求 | Yes | Yes |
-| Attended On-Demand | イベント後にオンデマンドでカンファレンス資料を視聴／消費 | Yes| Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
+| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
+| Waitlisted| 登録が満員の場合の保留状態。空きが出れば Registered に移動| | いいえ |
+| Registered | イベントに登録|| いいえ（特別条件については MOps に確認） |
+| No Show | 登録したが参加の確認なし、欠席と推定 | | はい |
+| Meeting Requested | カンファレンスで開催予定のミーティングを設定 |  | いいえ（特別条件については MOps に確認） |
+| Meeting No Show | カンファレンスで予定されたミーティングがキャンセルまたは不参加 |  | はい |
+| Meeting Attended | カンファレンスで予定されたミーティングに参加 | はい | はい |
+| Attended| イベントに参加、ブースではエンゲージしなかった、または展示会場の登壇セッションに参加 | はい | はい |
+| Visited Booth | 何らかの理由でブースに立ち寄った（最も一般的なカンファレンスステータス） | はい | はい |
+| Follow Up Requested | イベント後に Sales によるフォローアップを要求 | はい | はい |
+| Attended On-Demand | イベント後にオンデマンドでカンファレンス資料を視聴／消費 | はい| はい |
 
-#### Content Syndication
+#### コンテンツシンジケーション {#content-syndication}
 
 サードパーティがホストするホワイトペーパーまたはその他のコンテンツオファー。
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success | Valid for list import |
+| メンバーステータス | 定義 | 成功 | リストインポートで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Downloaded | コンテンツをダウンロード | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Downloaded | コンテンツをダウンロード | はい | はい |
 
-#### Direct Mail（Brilliant 向けに最適化）
+#### ダイレクトメール（Brilliant 向けに最適化） {#direct-mail-brilliant-optimized}
 
 パッケージまたは郵送物が発送される場合です。現在の手順では Brilliant Gifts と Qualified の使用が必要です。配送プログラムのステータスとアラートを利用するには、Marketing チームメンバーが Brilliant のインターフェースを通じて受信者に注文フォームメールを送信し、Marketo または SFDC のいずれかでプログラムステータスを手動で変更する必要があります。受信者にギフトを選択するオプションが与えられる場合は、Brilliant 内で `Send a Gift -> Campaign or Quick Send` を使用します。ギフトが Marketing または Sales チームによって選択される場合は、`Send a Gift -> Surprise Send` を利用します。`Meeting Booked` ステータスは Qualified を介して更新され、`Meeting Attended` はミーティング成功後に Sales または Marketing が手動で更新する必要があります。`Meeting No Show` は、Qualified の自動メールを介して Sales/Sales Dev が更新します。
 
-Brilliant はプログラムステータスの更新を通じて配送ステータスを Marketo と SFDC に同期できるようになりましたが、これは [Direct_Mail_eGift_Global - Brilliant connected](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1) でのみ機能します。また、Brilliant の webhook 呼び出しはすべて、メインのスマートキャンペーン [Send to Brilliant webhook (do not alter)](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC77009A1ZN19) を使用して行う**必要があります**。Brilliant を正常に呼び出せるのは、このプログラムとスマートキャンペーンのみです。注意: このプログラムタイプ内には、私たちが必ずしも使用しない Brilliant 用のステータスがいくつかありますが、これらは配送ステータスの追跡に役立ちます
+Brilliant はプログラムステータスの更新を通じて配送ステータスを Marketo と SFDC に同期できるようになりましたが、これは [Direct_Mail_eGift_Global - Brilliant connected](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)でのみ機能します。また、Brilliant の webhook 呼び出しはすべて、メインのスマートキャンペーン [Send to Brilliant webhook (do not alter)](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC77009A1ZN19)を使用して行う**必要があります**。Brilliant を正常に呼び出せるのは、このプログラムとスマートキャンペーンのみです。注意: このプログラムタイプ内には、私たちが必ずしも使用しない Brilliant 用のステータスがいくつかありますが、これらは配送ステータスの追跡に役立ちます
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success | ギフトの webhook をトリガーするか？|
+| メンバーステータス | 定義 | 成功 | ギフトの webhook をトリガーするか？|
 | ------------- | ---------- | ------- | ------------ |
 | No Action | すべてのレコードのデフォルトの開始位置 |  |  |
 | **Created** | | | |
@@ -86,29 +86,29 @@ Brilliant はプログラムステータスの更新を通じて配送ステー�
 | In Fulfillment | ギフトが Brilliant で注文された  | | |
 | Partially Shipped <br> Externally Shipped <br> Shipped | ギフトが発送され、Sales に知らせるためプログラムステータスが Brilliant によって自動で変更された | | |
 | Out for Delivery <br> Partially Delivered <br> Delivered | ギフトが配達され、Sales に知らせるためプログラムステータスが Brilliant によって自動で変更された | | |
-| Meeting Booked | ミーティング招待の受信者が Qualified を介してミーティングをスケジュール | Yes | |
-| Meeting Attended | 受信者が予定されたミーティングで No Show とラベル付けされなかった | Yes | Yes |
+| Meeting Booked | ミーティング招待の受信者が Qualified を介してミーティングをスケジュール | はい | |
+| Meeting Attended | 受信者が予定されたミーティングで No Show とラベル付けされなかった | はい | はい |
 |Cancelled | 本人が予定されたミーティングの前にキャンセルした  | | |
 | No Show | Sales Dev が Qualified の自動メールを介してミーティングが行われなかったことを示した  | | |
 
-#### Email Send
+#### メール送信 {#email-send}
 
 このプログラムタイプは Marketo のメールプログラムと組み合わせて使用します。このプログラムタイプは SFDC への同期が可能ですが、SFDC に同期すべきなのは、対象のメール送信が関連する商談追跡を必要とする重要なビジネス上の影響を持つ場合に限られます。一部のメールアドレスは Marketo のトラッキングをブロックするため、これらは 100% 正確にはならない点に留意してください。
 
 **Bizible:** 技術的には、これは _オンライン_ チャネルでも _オフライン_ チャネルでもありません。タッチポイントは技術的にはプログラムタイプ自体によって作成されるのではなく、メール受信者がメール内リンクをクリックし、タッチポイント対応のウェブサイトを訪問するというアクションによって作成されます。
 
-| Member Status | 定義 | Success |
+| メンバーステータス | 定義 | 成功 |
 | ------------- | ---------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  |
 | Member | プログラムに追加された。メール送信後もこのステータスのままの場合、メールの送信がブロックされたと推定できる |  |
 | Email Bounced | Marketo のメールトラッキングが、受信者のメールアドレスがバウンスしたことを検出   |  |
 | Email Delivered | Marketo のメールトラッキングが、受信者のメールアドレスが送信されたメールを受信したことを検出 |  |
 | Email Opened | Marketo のメールトラッキングが、受信者がメールを開封したことを検出 |  |
-| Clicked In-Email Link | Marketo のメールトラッキングが、受信者がメール内のリンクを開いたことを検出 | Yes |
+| Clicked In-Email Link | Marketo のメールトラッキングが、受信者がメール内のリンクを開いたことを検出 | はい |
 | Replied to Email | メール返信を促していないため、おそらく未使用のステップ |  |
 | Unsubscribed | Marketo のメールトラッキングが、受信者がメール内の設定リンクを介して以降の通信を購読解除したことを検出 |  |
 
-#### Executive Roundtables
+#### エグゼクティブラウンドテーブル {#executive-roundtables}
 
 これは、サードパーティのベンダーまたは GitLab のいずれかを通じて開催できる Campaign に使用され、対面とバーチャルの両方の Roundtable をカバーします。これは高レベルの CxO 参加者の集まりで、モデレーター／ホスト、GitLab エキスパート、デリゲートの間でのオープンなディスカッションとして実施されます。通常プレゼンテーションはなく、代わりに誰もが発言に加われるディスカッションが行われます。ホストはディスカッショントピックをリードする質問を準備し、デリゲートに順番に質問して回答を求めます。[詳細はこちら](/handbook/marketing/virtual-events/external-virtual-events/#overview)。
 
@@ -116,88 +116,88 @@ Brilliant はプログラムステータスの更新を通じて配送ステー�
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success | Valid for list import |
+| メンバーステータス | 定義 | 成功 | リストインポートで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | No |
-| Waitlisted | 登録が満員の場合の保留状態。空きが出れば `Registered` に移動 |  | No |
-| Registered | イベントに登録 |  | No（特別条件については MOps に確認） |
-| Cancelled | 登録したが、イベント前にキャンセル | | No |
-| No Show | 登録したが、イベントに参加しなかった |  | Yes |
-| Attended | イベントに参加 | Yes | Yes |
-| Follow Up Requested | イベント中にフォローアップを要求 | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Waitlisted | 登録が満員の場合の保留状態。空きが出れば `Registered` に移動 |  | いいえ |
+| Registered | イベントに登録 |  | いいえ（特別条件については MOps に確認） |
+| Cancelled | 登録したが、イベント前にキャンセル | | いいえ |
+| No Show | 登録したが、イベントに参加しなかった |  | はい |
+| Attended | イベントに参加 | はい | はい |
+| Follow Up Requested | イベント中にフォローアップを要求 | はい | はい |
 
-#### Gated Content
+#### ゲート付きコンテンツ {#gated-content}
 
 ホワイトペーパーまたはその他のコンテンツオファー。
 
 **Bizible:** これは _オンライン_ チャネルとして追跡されます。
 
-| Member Status | 定義 | Success |
+| メンバーステータス | 定義 | 成功 |
 | ------------- | ---------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  |
-| Downloaded | コンテンツをダウンロード | Yes |
+| Downloaded | コンテンツをダウンロード | はい |
 
-#### Inbound - offline
+#### インバウンド - オフライン {#inbound---offline}
 
-**Bizible:** これは _オフライン_ チャネルとして追跡されます。タッチポイントを Qualified や PQL の handraise などのオンライン手段で直接適用できないためです。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
+**Bizible:** これは _オフライン_ チャネルとして追跡されます。タッチポイントを Qualified や PQL の意思表示などのオンライン手段で直接適用できないためです。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success |
+| メンバーステータス | 定義 | 成功 |
 | ------------- | ---------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  |
-| Requested Support | handraise アクションを取り、GitLab チームにサポートを要求した ||
-| Requested Contact | Contact、Professional Services、Demo、または Pricing Request に記入した | Yes |
+| Requested Support | 支援を求める意思表示を取り、GitLab チームにサポートを要求した ||
+| Requested Contact | Contact、Professional Services、Demo、または Pricing Request に記入した | はい |
 
-#### Inbound Request
+#### インバウンドリクエスト {#inbound-request}
 
 フォローアップを必要とするあらゆるタイプのインバウンドリクエスト。
 
 **Bizible:** これは _オンライン_ チャネルとして追跡されます。
 
-| Member Status | 定義 | Success |
+| メンバーステータス | 定義 | 成功 |
 | ------------- | ---------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始状態。スコアは加算されません |  |
 | Requested Support | GitLab チームにサポートを求める意思表示をしました。スコアは加算されません ||
 |Waitlisted|将来の SKU の購入リクエストを送信しました||
 |Non Profit or Start Up| 非営利団体向けまたはスタートアップ向けプログラムの申請を送信しました。スコアは加算されません||
 |Beta - No Score|ベータプログラムの申請を送信しました。スコアは加算されません||
-|Beta - Score|ベータプログラムの申請を送信しました。自動的に MQL になります| Yes|
-| Requested Contact - Medium | Educational Services またはその他の目立たないプログラムへのリクエストに記入しました。スコアが +50 加算されます   |Yes |
-| Requested Contact - High | Contact、Professional Services、Demo、または Pricing Request に記入しました。自動的に MQL になります | Yes |
+|Beta - Score|ベータプログラムの申請を送信しました。自動的に MQL になります| はい|
+| Requested Contact - Medium | Educational Services またはその他の目立たないプログラムへのリクエストに記入しました。スコアが +50 加算されます   |はい |
+| Requested Contact - High | Contact、Professional Services、Demo、または Pricing Request に記入しました。自動的に MQL になります | はい |
 
-#### Live Event
+#### ライブイベント {#live-event}
 
 このイベントタイプは `Owned Event` と同様に機能しますが、対面イベントプラットフォームである Accelevents でのみ使用されるという条件があります。Accelevents が製品を拡充するにつれて、より多くのステータスが含まれるようになります。これは、私たちが作成し、登録を所有し、スピーカー／会場を手配するイベントです（例: GitLab Commit や Meetup）。このグループに含まれると考えられるのは、カンファレンススポンサーシップに付随して追加されるサードパーティの補助的イベント（カンファレンスでのハッピーアワーや VIP ディナーなど）です。
 
 **Bizible:** これは _オンライン_ チャネルおよび _オフライン_ チャネルとして追跡されます。登録プロセスを私たちのウェブサイトを通じて管理しているためです。誰かが登録するたびに、そのオンラインアクティビティに基づいて TP が作成され、さらに success ステータスを持つ Campaign メンバーについては Campaign 同期ルールに基づいて別の TP が追加されます。
 
-| Member Status | 定義 | Success | Valid for list import |
+| メンバーステータス | 定義 | 成功 | リストインポートで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | No |
-|Pending|承認のための保留ステータス||No|
-| Waitlisted | 登録が満員の場合の保留状態。空きが出れば `Registered` に移動 |  | No |
-| Denied | ユーザーがイベントに承認されなかった | | No |
-| Approved | ユーザーがイベントに承認されたが、Registered よりも使用される可能性は低い| | No |
-| Registered | イベントに登録 |  | Yes |
-| No Show | 登録したがイベントに参加しなかった |  | Yes |
-| Attended | イベントにライブで参加 | Yes | Yes |
-| Canceled| 本人がイベント前に登録をキャンセルした| | No |
-| Refunded | 本人がイベント前にイベント関連の支払いを返金された| |  No |
+| Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
+|Pending|承認のための保留ステータス||いいえ|
+| Waitlisted | 登録が満員の場合の保留状態。空きが出れば `Registered` に移動 |  | いいえ |
+| Denied | ユーザーがイベントに承認されなかった | | いいえ |
+| Approved | ユーザーがイベントに承認されたが、Registered よりも使用される可能性は低い| | いいえ |
+| Registered | イベントに登録 |  | はい |
+| No Show | 登録したがイベントに参加しなかった |  | はい |
+| Attended | イベントにライブで参加 | はい | はい |
+| Canceled| 本人がイベント前に登録をキャンセルした| | いいえ |
+| Refunded | 本人がイベント前にイベント関連の支払いを返金された| |  いいえ |
 
-#### Operational
+#### 運用 {#operational}
 
 これは、非伝統的なリストアップロードに使用されます。具体的には、a) アップロードされたリードのスコアリングを回避する、b) 伝統的なナーチャリングメールを回避する、c) その他のさまざまな運用関連タスクを実行する、といった目的です。例: 教育的なカンファレンスリストのアップロード。
 
 **Bizible:** これは _オンライン_ チャネルとして追跡されます。該当する場合、私たちがイベントに参加したためです。
 
-| Member Status | 定義 | Success | Valid for list import |
+| メンバーステータス | 定義 | 成功 | リストインポートで使用可能 |
 | ------------- | ---------- | ------- | ------- |
 | Member | すべてのレコードのデフォルトの開始位置 |  | MOps のみ |
 | Registered | 登録した（おそらく参加しなかった） |  | MOps のみ |
-| Attended | ライブイベントに参加 |  Yes | MOps のみ |
-| Attended Virtually | イベントにバーチャルで参加。参加はライブまたはイベント後のいずれか | Yes | MOps のみ |
+| Attended | ライブイベントに参加 |  はい | MOps のみ |
+| Attended Virtually | イベントにバーチャルで参加。参加はライブまたはイベント後のいずれか | はい | MOps のみ |
 
-#### Owned Event
+#### 主催イベント {#owned-event}
 
 これは、私たちが作成し、登録を所有し、スピーカー／会場を手配するイベントです（例: GitLab Commit や Meetup）。このグループに含まれると考えられるのは、カンファレンススポンサーシップに付随して追加されるサードパーティの補助的イベント（カンファレンスでのハッピーアワーや VIP ディナーなど）です。
 
@@ -205,75 +205,75 @@ Brilliant はプログラムステータスの更新を通じて配送ステー�
 
 プログラムタイプは、`dietary restriction`（食事制限）関連のフィールドをクリアするスマートキャンペーンに含まれています。イベントのプログラムステータスが記録されてから 7 日後に、フィールドは自動的にクリアされます。
 
-| Member Status | 定義 | Success | Valid for list import |
+| メンバーステータス | 定義 | 成功 | リストインポートで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Subscribed to Updates | フォーム記入を介して GitLab イベントの更新を購読 |  | No |
-| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | No |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | No |
-| Marketing Invited | Marketing の地域ターゲットメール |  | No |
-| Declined Invitation | 受信者がイベント招待を辞退 | | No |
-| Waitlisted | 参加人数が限られるイベントの保留状態。空きが出れば `Registered` に、出なければ `Declined` に移動 |  | No |
-| Declined | 空きがない場合のステータス | | No |
-| Registered | イベントに登録 |  | No（特別条件については MOps に確認） |
-| Cancelled | 登録したが、イベント前にキャンセル |  | No |
-| No Show | 登録したがイベントに参加しなかった |  | Yes |
-| Attended | イベントにライブで参加| Yes | Yes |
-| Attended On-demand| イベント後にオンデマンドでプレゼンテーション資料を視聴／消費| Yes | Yes |
-| Follow Up Requested | イベント後に GitLab に関する追加詳細の送付を要求 | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Subscribed to Updates | フォーム記入を介して GitLab イベントの更新を購読 |  | いいえ |
+| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
+| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
+| Declined Invitation | 受信者がイベント招待を辞退 | | いいえ |
+| Waitlisted | 参加人数が限られるイベントの保留状態。空きが出れば `Registered` に、出なければ `Declined` に移動 |  | いいえ |
+| Declined | 空きがない場合のステータス | | いいえ |
+| Registered | イベントに登録 |  | いいえ（特別条件については MOps に確認） |
+| Cancelled | 登録したが、イベント前にキャンセル |  | いいえ |
+| No Show | 登録したがイベントに参加しなかった |  | はい |
+| Attended | イベントにライブで参加| はい | はい |
+| Attended On-demand| イベント後にオンデマンドでプレゼンテーション資料を視聴／消費| はい | はい |
+| Follow Up Requested | イベント後に GitLab に関する追加詳細の送付を要求 | はい | はい |
 
-#### Paid Social
+#### 有料ソーシャル広告 {#paid-social}
 
 **Bizible:** このプログラムは、ソーシャル関連の Campaign（例: LinkedIn キャンペーン）によって取り込まれたリードとプログラムを格納するために指定されており、_オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success |
+| メンバーステータス | 定義 | 成功 |
 | ------------- | ---------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  |
-| Responded | フォーム記入などのソーシャルキャンペーンに関連するアクションを取った  | Yes |
+| Responded | フォーム記入などのソーシャルキャンペーンに関連するアクションを取った  | はい |
 
-#### Partner - MDF
+#### パートナー - MDF {#partner---mdf}
 
 これは、Channel Partner が MDF 資金を活用して実行するアクティビティ向けです。私たちはメンバーシップを追跡しますが、これらのリードに対するフォローアップは GitLab ではなくパートナーが行います。詳細は[こちら](/handbook/marketing/marketing-operations/campaigns-and-programs/#partner---mdf)を参照してください。
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success | Valid for list upload |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| Member | すべてのレコードのデフォルトの開始位置 |  | Yes |
-| Sales Nominated | リードがプログラムのために sales nominated された場合のステータス |  | No |
-| Responded | イベントまたは Campaign に参加 |Yes| Yes |
+| Member | すべてのレコードのデフォルトの開始位置 |  | はい |
+| Sales Nominated | リードがプログラムのために Sales が指名した場合のステータス |  | いいえ |
+| Responded | イベントまたは Campaign に参加 |はい| はい |
 
-#### Prospecting
+#### プロスペクティング {#prospecting}
 
 このプログラムタイプは、パートナーリストやデータアップロード中心のリストなど、非イベント関連のリストアップロードに特化しています。
 
 **Bizible:** これは Bizible では追跡されません。
 
-| Member Status | 定義 | Success | Valid for list uploads |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ----- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  | MOps のみ |
 | Uploaded | アップロード成功時にリードが通常移行するステータス |  | MOps のみ |
-| Do Not Use (Responded) | 使用しないこと。Marketo が `success` ステップを要求するために含まれている  | Yes  | No |
+| Do Not Use (Responded) | 使用しないこと。Marketo が `success` ステップを要求するために含まれている  | はい  | いいえ |
 | Member | このプログラムタイプの特別なメンバーステータスを示す。「特別」の意味はユースケースに依存する |  | MOps のみ |
 
-#### Speaking Session
+#### 登壇セッション {#speaking-session}
 
 この Campaign タイプは、より大規模な Field/Conference/Owned イベントの一部となることがありますが、影響を測定するために、より大きなイベントとは独立してエンゲージメントのやり取りを追跡します。これは私たちが登録を促進できるものです。私たちのスピーキング登壇への参加を追跡するためのものです。
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success | Valid for list upload |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | No |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | No |
-| Marketing Invited | Marketing の地域ターゲットメール |  | No |
-| Registered | セッションに登録または参加を表明 |  | No（特別条件については MOps に確認） |
-| No Show | 登録したがイベントに参加しなかった |  | Yes |
-| Attended | スピーキングセッションのイベントに参加 | Yes | Yes |
-| Follow Up Requested | スピーカーと会話した、またはイベント後に Sales によるフォローアップを要求 | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
+| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
+| Registered | セッションに登録または参加を表明 |  | いいえ（特別条件については MOps に確認） |
+| No Show | 登録したがイベントに参加しなかった |  | はい |
+| Attended | スピーキングセッションのイベントに参加 | はい | はい |
+| Follow Up Requested | スピーカーと会話した、またはイベント後に Sales によるフォローアップを要求 | はい | はい |
 
-#### Sponsored Webcast
+#### スポンサー付きウェブキャスト {#sponsored-webcast}
 
 これは、外部パートナー／ベンダーのプラットフォームでホストされるウェブキャストです。`Attended On-demand` ステータスは、GitLab ホストのオンデマンドと GitLab 以外がホストするオンデマンドの両方のウェブキャストを考慮します。[詳細はこちら](/handbook/marketing/virtual-events/external-virtual-events/#overview)。
 
@@ -287,53 +287,53 @@ Marketo Program メンバーシップのルールは、フォルダー名に "Sp
 
 1. **Responded Status TP**。これは、responded ステータスの Campaign メンバーのみを対象に、[AMM Channel/Sub-Channel Rules for Offline Touchpoints](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit?gid=92970564#gid=92970564)（19 行目のルール）に基づいて作成されます。これらの TP の TP Date は、関連付けられた SFDC Campaign 内の `Member First Associated Date` です。Sponsored Webcast Campaign タイプの Campaign ステータスについては、以下を参照してください。
 
-| Member Status | 定義 | Success | Valid for list upload |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Sales Nominated | 招待者追跡のために Marketing が使用 | | No |
-| Registered | ウェブキャストに登録 |  | No |
-| No Show| 登録したがイベントに参加しなかった |  | Yes |
-| Attended | イベントに参加 | Yes | Yes |
-| Follow Up Requested | GitLab からのフォローアップを要求 | Yes | Yes |
-| Attended On-demand | イベント後にオンデマンドでプレゼンテーション資料を視聴／消費 | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Sales Nominated | 招待者追跡のために Marketing が使用 | | いいえ |
+| Registered | ウェブキャストに登録 |  | いいえ |
+| No Show| 登録したがイベントに参加しなかった |  | はい |
+| Attended | イベントに参加 | はい | はい |
+| Follow Up Requested | GitLab からのフォローアップを要求 | はい | はい |
+| Attended On-demand | イベント後にオンデマンドでプレゼンテーション資料を視聴／消費 | はい | はい |
 
-#### Survey
+#### アンケート {#survey}
 
 私たちまたはサードパーティが送信するサーベイ。回答者と、受け取った新規リードを追跡します。
 
 **Bizible:** これは _オフライン_ の Bizible チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
-| Member Status | 定義 | Success | Valid for list upload |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| Member | すべてのレコードのデフォルトの開始位置 |  | No |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | No |
-| Invited | 招待されたが、サーベイに参加しなかった |  | Yes |
-| Filled-out Survey | サーベイに記入 | Yes | Yes |
-| Follow Up Requested | サーベイに記入し、Sales からの連絡を要求 | Yes | Yes |
+| Member | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Invited | 招待されたが、サーベイに参加しなかった |  | はい |
+| Filled-out Survey | サーベイに記入 | はい | はい |
+| Follow Up Requested | サーベイに記入し、Sales からの連絡を要求 | はい | はい |
 
-#### Trial
+#### トライアル {#trial}
 
 各製品ライン（Self-managed または SaaS）の Trial のコホートを追跡し、その影響を確認します。
 
 **Bizible:** プロダクト内の self-managed および SaaS のトライアルは、**オフライン** の Bizible タッチポイントとして追跡されます。Marketo フォームを利用する self-managed トライアルは **オンライン** の Bizible タッチポイントです。
 
-| Member Status | 定義 | Success |
+| メンバーステータス | 定義 | 成功 |
 | ------------- | ---------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  |
-| Signed Up | Trial にサインアップ | Yes |
+| Signed Up | Trial にサインアップ | はい |
 
-#### User Signal
+#### ユーザーシグナル {#user-signal}
 
 User Gems によって特定された、過去に「GitLab Champion」であり、現在の会社で GitLab を推進できる元 GitLab ユーザーを示すリードのコホートを追跡します。
 
 _Bizible:_ 意図したとおり、この Campaign タイプは Bizible タッチポイントを作成しません。
 
-| Member Status | 定義 | Success |
+| メンバーステータス | 定義 | 成功 |
 | ------------- | ---------- | ------- |
 | Member | すべてのレコードのデフォルトの開始位置 |  |
-| User Signal > Signal Detected | この人物の以前の「GitLab champion」ステータスに関するシグナルが、トラッキングツールによって検出された | Yes |
+| User Signal > Signal Detected | この人物の以前の「GitLab champion」ステータスに関するシグナルが、トラッキングツールによって検出された | はい |
 
-#### Vendor Arranged Meetings
+#### ベンダー手配のミーティング {#vendor-arranged-meetings}
 
 サードパーティのベンダーが見込み客または顧客アカウントとの 1 対 1 のミーティングを組織する Campaign に使用します。これは GitLab チームメンバーが社内で設定するミーティングは組織しません。例としては、ベンダーが GitLab にとって関心のある見込み客とのミーティングを組織する「スピードデーティング」スタイルのミーティングセットアップが挙げられます。[詳細はこちら](/handbook/marketing/virtual-events/external-virtual-events/#overview)。
 
@@ -341,15 +341,15 @@ _Bizible:_ 意図したとおり、この Campaign タイプは Bizible タッ�
 
 プログラムタイプは、`dietary restriction`（食事制限）関連のフィールドをクリアするスマートキャンペーンに含まれています。イベントのプログラムステータスが記録されてから 7 日後に、フィールドは自動的にクリアされます。
 
-| Member Status | 定義 | Success | Valid for list upload |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------ |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Registered | イベントに登録 |  | No |
-| No Show | 登録したが、イベントに参加しなかった |  | Yes |
-| Attended | イベントに参加 | Yes | Yes |
-| Follow Up Requested | スピーカーと会話した、またはイベント後に追加詳細の送付を要求 | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Registered | イベントに登録 |  | いいえ |
+| No Show | 登録したが、イベントに参加しなかった |  | はい |
+| Attended | イベントに参加 | はい | はい |
+| Follow Up Requested | スピーカーと会話した、またはイベント後に追加詳細の送付を要求 | はい | はい |
 
-#### Webcast
+#### ウェブキャスト {#webcast}
 
 GitLab がホストおよび開催するあらゆるウェブキャスト。ウェブキャストを実施するグループはいくつかあります。セットアップの追加詳細については、それぞれの専用ページを参照してください。
 
@@ -359,19 +359,19 @@ GitLab がホストおよび開催するあらゆるウェブキャスト。ウ�
 
 **Bizible:** これは _オンライン_ の Bizible チャネルおよび _オフライン_ チャネルとして追跡されます。登録プロセスを私たちが所有しているため、誰かがウェブキャストに登録するたびに、ランディングページ上に置かれた Bizible スニペットに基づいて TP が作成され、さらに success/responded ステータスを持つ Campaign メンバーについては別の TP が作成されます。
 
-| Member Status | 定義 | Success | Valid for list upload |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | No |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | No |
-| Marketing Invited | Marketing の地域ターゲットメール |  | No |
-| Registered | オンラインフォームを通じて登録 |  | No（特別条件については MOps に確認） |
-| No Show | 登録したが、ライブウェブキャストに参加しなかった |  | Yes |
-| Attended | ライブウェブキャストに参加 | Yes | Yes |
-| Follow Up Requested | イベント後に Sales によるフォローアップを要求 | Yes | Yes |
-| Attended On-demand | 録画されたウェブキャストを視聴 | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
+| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
+| Registered | オンラインフォームを通じて登録 |  | いいえ（特別条件については MOps に確認） |
+| No Show | 登録したが、ライブウェブキャストに参加しなかった |  | はい |
+| Attended | ライブウェブキャストに参加 | はい | はい |
+| Follow Up Requested | イベント後に Sales によるフォローアップを要求 | はい | はい |
+| Attended On-demand | 録画されたウェブキャストを視聴 | はい | はい |
 
-#### Workshop
+#### ワークショップ {#workshop}
 
 参加者が GitLab 内での実際のユースケースのアジェンダに沿ってガイドされる、対面またはバーチャルのワークショップ。
 
@@ -380,26 +380,26 @@ GitLab がホストおよび開催するあらゆるウェブキャスト。ウ�
 
 プログラムタイプは、`dietary restriction`（食事制限）関連のフィールドをクリアするスマートキャンペーンに含まれています。イベントのプログラムステータスが記録されてから 7 日後に、フィールドは自動的にクリアされます。
 
-| Member Status | 定義 | Success | Valid for list upload |
+| メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------- |
-| No Action | すべてのレコードのデフォルトの開始位置 |  | No |
-| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | No |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | No |
-| Marketing Invited | Marketing の地域ターゲットメール |  | No |
-| Waitlisted | 登録が満員の場合の保留状態。空きが出れば Registered に移動 |  | No |
-| Registered | セッションに登録または参加を表明 |  | No（特別条件については MOps に確認） |
-| Cancelled | 登録したが、イベント前にキャンセル |  | No |
-| No Show | 登録したが、イベントに参加しなかった |  | Yes |
-| Attended | ワークショップのイベントに参加 | Yes | Yes |
-| Follow Up Requested | イベント後に GitLab に関する追加詳細の送付を要求 | Yes | Yes |
+| No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
+| Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
+| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
+| Waitlisted | 登録が満員の場合の保留状態。空きが出れば Registered に移動 |  | いいえ |
+| Registered | セッションに登録または参加を表明 |  | いいえ（特別条件については MOps に確認） |
+| Cancelled | 登録したが、イベント前にキャンセル |  | いいえ |
+| No Show | 登録したが、イベントに参加しなかった |  | はい |
+| Attended | ワークショップのイベントに参加 | はい | はい |
+| Follow Up Requested | イベント後に GitLab に関する追加詳細の送付を要求 | はい | はい |
 
-## SFDC Campaign の手順 {#sfdc-campaign-instructions}
+## SFDC キャンペーンの手順 {#sfdc-campaign-instructions}
 
 SFDC キャンペーンには、一般的な必須フィールドのセットがあります。このセクションでは、それらのフィールドと、いつ入力する必要があるかを説明します。この手順は、Marketo から Campaign を同期した後（または Content Syndication/LinkedIn キャンペーンを設定する際）に実施します。必須フィールドへの変更が一元的に管理され、手順が古くならないように、手順はこのセクションに含めています。
 
 ### SFDC フィールドの更新 {#updating-sfdc-fields}
 
-- Salesforce.com にアクセスし、[All Campaigns by create date](https://gitlab.lightning.force.com/lightning/o/Campaign/list?filterName=00B4M000004oVF9) ビューを確認します。作成日でソートすると、あなたの Campaign が一番上に表示されるはずです。検索ボックスで Campaign タグを検索することもできます。Campaign を選択します。
+- Salesforce.com にアクセスし、[All Campaigns by create date](https://gitlab.lightning.force.com/lightning/o/Campaign/list?filterName=00B4M000004oVF9)ビューを確認します。作成日でソートすると、あなたの Campaign が一番上に表示されるはずです。検索ボックスで Campaign タグを検索することもできます。Campaign を選択します。
   - イベントを Accelevents で管理している場合は、SFDC Campaign の名前を更新する必要があります。このステップは Accelevents で管理されるイベントにのみ適用されます。他のすべての Campaign タイプは正しい命名フォーマットになっているためです。Campaign 名の横にある「Edit campaign name」アイコンをクリックし、命名規則を反映するように名前を更新します: YYYYMMDD_OwnedEventName_RegionOrCity。Marketo では名前を変更せず、SFDC でのみ変更してください。
   - `Campaign owner` を自分の名前に変更します
   - `Active` ボックスがチェックされていることを確認します
@@ -407,7 +407,7 @@ SFDC キャンペーンには、一般的な必須フィールドのセットが
   - 開始日と終了日が正しく入力されていることを確認します（これは自動化されています）。
   - `in-person` か `virtual` かのタイプに基づいて `Is this an in person event` ドロップダウンを更新します
   - `Budget Holder` を更新します - `Budget Holder` フィールドは **以下の場合にのみ** 更新すべき点に留意してください:
-    - Campaign タイプに基づいて Campaign がオフラインの Bizible タッチポイントをもたらす場合（例: content syndication、sponsored webcast など） - **注意:** オフラインの Bizible タッチポイントは、リードをオフラインで収集した場合に発生し、システムがこの名前を持つためには[リストアップロードプロセス](/handbook/marketing/marketing-operations/list-import/)を通す必要があります
+    - Campaign タイプに基づいて Campaign がオフラインの Bizible タッチポイントをもたらす場合（例: コンテンツシンジケーション、スポンサー付きウェブキャストなど） - **注意:** オフラインの Bizible タッチポイントは、リードをオフラインで収集した場合に発生し、システムがこの名前を持つためには[リストアップロードプロセス](/handbook/marketing/marketing-operations/list-import/)を通す必要があります
   - `Is a Channel Partner involved?` を更新します - 「No」の場合は空白のままで構いません
     - Yes の場合は `Channel Partner Name` を追加します
   - `Is an Alliance Partner involved?` を更新します - 「No」の場合は空白のままで構いません
@@ -426,14 +426,14 @@ SFDC キャンペーンには、一般的な必須フィールドのセットが
   - イベントのエピックを更新します
   - 説明を更新します（ある場合）
   - わかっている場合は `Form submission page` を入力します。それ以外の場合は、ランディングページが作成された後に追加する必要があります（該当する場合）
-  - `Budgeted Cost` を更新します - コストが $0 の場合は `Budgeted Cost` フィールドに `1` をリストします。- 注意: ROI 計算のためにここには少なくとも 1 の値が必要です。そうしないと、pipeline を `0` で割ると、pipe2spend の計算で常に `0` が得られます。
+  - `Budgeted Cost` を更新します - コストが $0 の場合は `Budgeted Cost` フィールドに `1` をリストします。- 注意: ROI 計算のためにここには少なくとも 1 の値が必要です。そうしないと、パイプラインを `0` で割ると、pipe2spend の計算で常に `0` が得られます。
   - これらがローカルまたは特定の地域をターゲットとしている場合は、`Region` と `Sub-region` を更新します
   - Corporate Events または Field Marketing が実行するすべての SFDC Campaign タイプについては、Campaign レベルで `High Priority` チェックボックスをチェックしてください。
     - これを追加することにつながった business development チームと実施した[パイロット](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/6905)の詳細！
 
     **または:**
 
-    - Campaign で GitLab Dollars が支出された場合（Field、Digital、Corporate、Community など） - 予算を利用しない Campaign がある場合は空白のままで構いません。- **注意:** budget holder を更新しても、タッチポイントを二重カウントするリスクは **ない** ものの、このフィールドは常に入力されているわけではないため、各チームのパフォーマンス測定には使用すべきではない点に留意してください。
+    - Campaign で GitLab Dollars が支出された場合（Field、Digital、Corporate、Community など） - 予算を利用しない Campaign がある場合は空白のままで構いません。- **注意:** 予算責任者を更新しても、タッチポイントを二重カウントするリスクは **ない** ものの、このフィールドは常に入力されているわけではないため、各チームのパフォーマンス測定には使用すべきではない点に留意してください。
 - 「Save」をクリックします
 - Marketo プログラムのリンクと SFDC キャンペーンのリンクをエピックに追加します。
 
@@ -443,26 +443,26 @@ Allocadia > Marketo > SFDC のインテグレーションを使用すると、Al
 
 **注意:** Allocadia コネクタが同期を完了するまで、SFDC キャンペーンを編集してはいけません。これは通常ほぼリアルタイムで行われますが、データがすぐにプッシュされない場合は、数分から数時間かかることがある点に注意してください。Allocadia コネクタが作業を完了したことは、SFDC キャンペーンのオーナーが Marketo Integration から Campaign を実行している人の名前に変わったとき、および Allocadia から SFDC にすべての詳細が入力されたときにわかります。コネクタがデータをプッシュする前に Campaign を編集すると、ビルドが壊れ、リストされたすべてのフィールドを手動で編集する必要が生じます。Allocadia の追加詳細は[こちら](/handbook/enterprise-data/marketing-analytics/allocadia/#salesforcecom-sfdc)を参照してください。
 
-- Salesforce.com にアクセスし、[All Campaigns by create date](https://gitlab.my.salesforce.com/701?fcf=00B4M000004oVF9) ビューを確認します。作成日でソートすると、あなたの Campaign が一番上に表示されるはずです。検索ボックスで Campaign タグを検索することもできます。Campaign を選択します。
+- Salesforce.com にアクセスし、[All Campaigns by create date](https://gitlab.my.salesforce.com/701?fcf=00B4M000004oVF9)ビューを確認します。作成日でソートすると、あなたの Campaign が一番上に表示されるはずです。検索ボックスで Campaign タグを検索することもできます。Campaign を選択します。
 - 開始日と終了日が正しく入力されていることを確認します（これは自動化されています）
 - `Budgeted Cost` を追加します
   - SFDC の `Budgeted Cost` は、Allocadia の `forecast` 数値ではなく `plan` 数値から取得されます。Allocadia に plan 数値がない場合、SFDC の `Budgeted Cost` は空白のままになります。Allocadia に plan 金額がある場合、その金額は夜間同期で SFDC に取り込まれます。
-  - 施策のコストが $0 の場合（例: バーチャルワークショップ）は、`Budgeted Cost` フィールドに `1` をリストします。ROI 計算のためにここには少なくとも 1 の値が必要です。そうしないと、pipeline を `0` で割ると、pipe2spend の計算で常に `0` が得られます。
+  - 施策のコストが $0 の場合（例: バーチャルワークショップ）は、`Budgeted Cost` フィールドに `1` をリストします。ROI 計算のためにここには少なくとも 1 の値が必要です。そうしないと、パイプラインを `0` で割ると、pipe2spend の計算で常に `0` が得られます。
 
-### Parent/Child Campaign のセットアップ {#parentchild-campaigns-setup}
+### 親／子キャンペーンのセットアップ {#parentchild-campaigns-setup}
 
-一部の施策では、単一のイニシアチブの一部として複数の Campaign が発生します。これらの例としては、スピーキングセッションや付随イベントを伴うカンファレンス、content syndication、ハイブリッドイベント（対面とバーチャルのリードを別々に追跡する）などが挙げられます。この場合、SFDC に `parent` Campaign を作成し、各 `child` Campaign が個々の施策を表すようにする必要があります。
+一部の施策では、単一のイニシアチブの一部として複数の Campaign が発生します。これらの例としては、スピーキングセッションや付随イベントを伴うカンファレンス、コンテンツシンジケーション、ハイブリッドイベント（対面とバーチャルのリードを別々に追跡する）などが挙げられます。この場合、SFDC に `parent` Campaign を作成し、各 `child` Campaign が個々の施策を表すようにする必要があります。
 
-parent Campaign を作成／編集する際に避けるべき重要な点が 2 つあります:
+親キャンペーンを作成／編集する際に避けるべき重要な点が 2 つあります:
 
-1. parent Campaign には Campaign メンバーを一切追加しないでください。同じアクティビティに対して重複した bizible タッチポイントが作成されるリスクを最小限にしたいためです。
-1. parent Campaign を作成する際は、必ず Campaign 名の末尾に `_PARENT` を付けて名前を付けるべきです。これは、Campaign を二重に報告しないようにするためです。
-1. parent Campaign は `Actual Cost in Campaign` フィールドに値を持つべきではなく、`Budgeted Cost in Campaign` フィールドには $1 を超える値を入れないでください。真の Budgeted Cost と Actual Cost は child Campaign にのみ更新し、parent Campaign には更新しないでください。parent Campaign では ROI を実行すべきではないためです。
-1. Allocadia ユーザーの場合、parent Campaign にはサブカテゴリ ID を含めません。Allocadia ID を使用するのは child Campaign を作成するときだけです。Marketo には同じ parent/child の関係構造が用意されていないため、共有するすべての施策をまとめて格納するフォルダーを作成します。
+1. 親キャンペーンには Campaign メンバーを一切追加しないでください。同じアクティビティに対して重複した bizible タッチポイントが作成されるリスクを最小限にしたいためです。
+1. 親キャンペーンを作成する際は、必ず Campaign 名の末尾に `_PARENT` を付けて名前を付けるべきです。これは、Campaign を二重に報告しないようにするためです。
+1. 親キャンペーンは `Actual Cost in Campaign` フィールドに値を持つべきではなく、`Budgeted Cost in Campaign` フィールドには $1 を超える値を入れないでください。真の Budgeted Cost と Actual Cost は子キャンペーンにのみ更新し、親キャンペーンには更新しないでください。親キャンペーンでは ROI を実行すべきではないためです。
+1. Allocadia ユーザーの場合、親キャンペーンにはサブカテゴリ ID を含めません。Allocadia ID を使用するのは子キャンペーンを作成するときだけです。Marketo には同じ parent/child の関係構造が用意されていないため、共有するすべての施策をまとめて格納するフォルダーを作成します。
 
-#### parent SFDC Campaign の作成
+#### 親 SFDC キャンペーンの作成 {#create-a-parent-sfdc-campaign}
 
-- [以下の手順](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-marketo-programs-and-salesforce-campaigns)を使用して、最初の child Campaign を作成します
+- [以下の手順](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-marketo-programs-and-salesforce-campaigns)を使用して、最初の子キャンペーンを作成します
 - 完了したら、Campaign の右上に移動して `Clone` をクリックします
 - Campaign 名を編集し、末尾に _PARENT を含めます（例: 20250409_GoogleCloudNext_PARENT）
 - `Active` ボックスがチェックされていることを確認します
@@ -470,27 +470,27 @@ parent Campaign を作成／編集する際に避けるべき重要な点が 2 �
 - `Budgeting Cost in Campaign` を $1 に調整します
 - `Save` をクリックします
 
-#### SFDC で child Campaign を parent Campaign に関連付ける方法
+#### SFDC で子キャンペーンを親キャンペーンに関連付ける方法 {#how-to-associate-a-child-campaign-to-a-parent-campaign-in-sfdc}
 
-- SFDC にログインし、child Campaign を検索します
+- SFDC にログインし、子キャンペーンを検索します
 - Campaign に入ったら、`Parent Campaign` フィールドの横にある編集ボタンをクリックします
-- parent Campaign 名（例: 20250409_GoogleCloudNext_PARENT）をフィールドにコピー＆ペーストするか、parent Campaign 名を入力し始めて `Save` をクリックします
-- 追加の child Campaign についても同じ操作を続けます
+- 親キャンペーン名（例: 20250409_GoogleCloudNext_PARENT）をフィールドにコピー＆ペーストするか、親キャンペーン名を入力し始めて `Save` をクリックします
+- 追加の子キャンペーンについても同じ操作を続けます
 - Campaign 階層は右側のパネルで確認できます（`View All` をクリックすると完全な階層ビューが表示されます）
 
-#### Allocadia ID と Parent/Child Campaign
+#### Allocadia ID と親／子キャンペーン {#allocadia-ids-and-parentchild-campaigns}
 
-Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使用している場合、個々の child Campaign のいずれにおいても Allocadia サブカテゴリ ID を利用しない点に注意してください。各 Campaign には、その特定の Campaign 用の独自の line item ID があり、それらはすべて parent Campaign にロールアップされます。以下に例を示します。
+Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使用している場合、個々の子キャンペーンのいずれにおいても Allocadia サブカテゴリ ID を利用しない点に注意してください。各 Campaign には、その特定の Campaign 用の独自の明細項目 ID があり、それらはすべて親キャンペーンにロールアップされます。以下に例を示します。
 
 **AWS Summit London - PARENT (Allocadia ID なし)**
 
-- AWS Summit Conference/Booth - 個別の Line Item ID
-- AWS Summit Speaking Session - 個別の Line Item ID
-- AWS Summit Executive Meetings - 個別の Line Item ID
+- AWS Summit Conference/Booth - 個別の明細項目 ID
+- AWS Summit Speaking Session - 個別の明細項目 ID
+- AWS Summit Executive Meetings - 個別の明細項目 ID
 
-**Parent/Child の SFDC 階層の例は[こちら](https://gitlab.lightning.force.com/one/one.app#eyJjb21wb25lbnREZWYiOiJzZmE6aGllcmFyY2h5RnVsbFZpZXciLCJhdHRyaWJ1dGVzIjp7InJlY29yZElkIjoiNzAxUEwwMDAwMFVqMGs5WUFCIiwic09iamVjdE5hbWUiOiJDYW1wYWlnbiIsInRyZWVEaXJlY3Rpb24iOiJjdXJyZW50VG9Eb3duIiwibGF5b3V0VHlwZSI6IlJFTEFURURfTElTVCIsImxheW91dE92ZXJyaWRlIjoiQ2hpbGRDYW1wYWlnbnMifSwic3RhdGUiOnt9fQ%3D%3D)で確認できます。**
+**親／子の SFDC 階層の例は[こちら](https://gitlab.lightning.force.com/one/one.app#eyJjb21wb25lbnREZWYiOiJzZmE6aGllcmFyY2h5RnVsbFZpZXciLCJhdHRyaWJ1dGVzIjp7InJlY29yZElkIjoiNzAxUEwwMDAwMFVqMGs5WUFCIiwic09iamVjdE5hbWUiOiJDYW1wYWlnbiIsInRyZWVEaXJlY3Rpb24iOiJjdXJyZW50VG9Eb3duIiwibGF5b3V0VHlwZSI6IlJFTEFURURfTElTVCIsImxheW91dE92ZXJyaWRlIjoiQ2hpbGRDYW1wYWlnbnMifSwic3RhdGUiOnt9fQ%3D%3D)で確認できます。**
 
-#### parent Marketo プログラム（別名フォルダー）の作成
+#### 親 Marketo プログラム（別名フォルダー）の作成 {#create-a-parent-marketo-program-aka-folder}
 
 - Marketo にログインします
 - 会計年度と四半期に基づいて正しいイベントタイプのフォルダーに移動します（例: FY26 - Q1 Conference）
@@ -505,7 +505,7 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 ### 重要な注意事項 {#important-notes}
 
 1. Marketo が Campaign を「見る」ことができるようにするには、SFDC キャンペーンで `Active` チェックボックスをチェックする必要があります。以下のプロセスに従えば自動的に行われますが、Marketo で SFDC キャンペーンが見つからない場合は、SFDC でそのボックスがチェックされていることを確認してください。さらに、このボックスがチェックされていないと、Marketo はその SFDC キャンペーンに対してリードを送信したり、Campaign メンバーのステータスを更新したりできません。
-1. parent Campaign を作成する場合は、Campaign 名の末尾に `_Parent` を追加することで、それが parent であるという事実を parent Campaign の Campaign 名が反映していることを確認してください。万が一、responded の Campaign メンバーを格納するために parent Campaign が誤ってセットアップされた場合、Campaign 名の末尾に `_Parent` を追加することで、[オフライン Campaign のタッチポイント生成を制御する](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564) Campaign 同期ルールがそれを確実に認識し、parent と child の両方の Campaign に格納されている可能性のある Campaign メンバーに対して二重のタッチポイントを作成しないようにします。
+1. 親キャンペーンを作成する場合は、Campaign 名の末尾に `_Parent` を追加することで、それが親であるという事実を親キャンペーンの Campaign 名が反映していることを確認してください。万が一、responded の Campaign メンバーを格納するために親キャンペーンが誤ってセットアップされた場合、Campaign 名の末尾に `_Parent` を追加することで、[オフライン Campaign のタッチポイント生成を制御する](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564) Campaign 同期ルールがそれを確実に認識し、親と子の両方の Campaign に格納されている可能性のある Campaign メンバーに対して二重のタッチポイントを作成しないようにします。
 1. オフラインタッチポイント生成に依存する Campaign を作成する場合は、Campaign タイプが適切に選択されていること、および Campaign 名に `test`、`DONTUSE`、`template`、`parent` のような単語が含まれていないことをダブルチェックしてください。[オフラインタッチポイントの作成を管理する Campaign 同期ルール](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)に基づき、これらの Campaign にはタッチポイントが作成されないためです。
 1. SFDC には、Campaign 名の最初の 8 文字（それらが数字の場合）を取得して日付に変換することで、開始日、終了日、レポート日、会計四半期をスタンプするトリガーがあります（例: 20210505 == 5/5/2021、つまり YYYYMMDD）。したがって、数字で始まる Campaign には有効な日付が含まれている必要があり、そうでない場合はエラーを受け取ります。
 1. `Aborted` 以外の Campaign ステータスは、開始日と終了日に基づいて SFDC ワークフローによって自動的に設定されます。
@@ -517,7 +517,7 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 |Aborted|Campaign が一時停止、キャンセル、中止された|Campaign が中止されたときに手動で|
 |Completed|Campaign が実施され、終了した|Campaign 終了日の後|
 
-## Marketo プログラムと Salesforce キャンペーンのセットアップ
+## Marketo プログラムと Salesforce キャンペーンのセットアップ {#marketo-program-and-salesforce-campaign-set-up}
 
 対応する Campaign タイプの Marketo プログラムは、プログラムの構築で活用される、必要となりうるすべてのスマートキャンペーン、メールプログラム、リマインダーメール、トークンを含めて事前構築されています。
 
@@ -531,13 +531,13 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 
 ## Marketo プログラムと Salesforce キャンペーンのセットアップ手順 {#steps-to-setup-marketo-programs-and-salesforce-campaigns}
 
-### ステップ 1: 以下に示す Marketo プログラムをクローンする
+### ステップ 1: 以下に示す Marketo プログラムをクローンする {#step-1-clone-the-marketo-program-indicated-below}
 
 一部のテンプレートは `in-person`（対面）と `virtual events`（バーチャルイベント）の両方に使用されている点に注意してください。これらのテンプレートには `Hybrid template` というマークが付いています。これらのテンプレートでは、追加の Campaign 情報が名前に表示されるため、命名規則がわずかに異なります。プログラムに名前を付ける際、`EventType` は `Virtual`、`In-Person`、または `Hybrid`（イベントが対面とバーチャルの両方になる場合）のいずれかに置き換えます。
 
 これがチャネルパートナーを含むプログラムのセットアップである場合は、その[セットアップページ](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#joint-gitlab-and-partner-campaigns)の指示にも従う必要があります。開始するには、引き続き以下のリストからプログラムをクローンします。
 
-#### Marketo プログラムをクローンする方法
+#### Marketo プログラムをクローンする方法 {#how-to-clone-the-marketo-program}
 
 - 以下の施策に適したテンプレートをクリックします（続行するには Marketo にログインしている必要があります）
 - Marketo でテンプレートを右クリックし、`Clone` を選択します
@@ -547,23 +547,23 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 - `Description` フィールドにエピックの URL を貼り付けます
 - `Create` をクリックします
 
-#### パートナー Campaign のセットアップ {#partner-campaign-setup}
+#### パートナーキャンペーンのセットアップ {#partner-campaign-setup}
 
 現在、Channel MDF キャンペーン、Joint GitLab/Partner キャンペーン、Hyperscaler キャンペーン、Hyperscaler Funded キャンペーンなど、いくつかのタイプのパートナー Campaign があります。
 
-##### Channel MDF Campaign
+##### Channel MDF キャンペーン {#channel-mdf-campaign}
 
 Channel MDF は、Partner Marketing チームが管理する、パートナーが開始した Campaign の 50% を GitLab がカバーする場合です。生成されたすべてのリードは Channel Partner に帰属し、Partner Queue のオーナーシップの下にあります。Channel MDF には専用の Marketo テンプレートがあります。Campaign のセットアップ手順については[このページ](/handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process/)を参照してください。
 
-#### Joint GitLab/Partner Campaign
+#### GitLab／パートナーの共同キャンペーン {#joint-gitlabpartner-campaign}
 
 Joint GitLab/Partner キャンペーンは、GitLab Field Marketing チームがマーケティング Campaign を全額出資し、管理する場合です。パートナーがソースとなったリードはチャネルパートナーにルーティングされますが、BDR/SDR が積極的にリードに取り組んでいる場合は GitLab のオーナーシップにとどまります。パートナーがリードを受け取ったものの、30 日以内に正式に受諾しない（共有ステータスを更新しない）場合、私たちのシステムは自動的にそのリードをリコールし、「Recycled」とマークして、GitLab のナーチャープログラムに戻します。以下の各 Campaign タイプの Campaign セットアップ手順に従ってください。Joint/Partner キャンペーンの詳細については[こちら](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#joint-gitlab-and-partner-campaigns)を参照してください - これらのステップが完了していることを確認してください。
 
-##### Hyperscaler Campaign
+##### ハイパースケーラーのキャンペーン {#hyperscaler-campaigns}
 
 Hyperscaler キャンペーンは、私たちの Hyperscaler アライアンスとのパートナーシップで実施される戦略的マーケティングイニシアチブです。これらのマーケティングアクティビティには、Executive Roundtable、Vendor-Arranged Meetings、Conference、Owned イベントなどが含まれます。
 
-Campaign のセットアップには、以下の [Hybrid](/handbook/marketing/marketing-operations/campaigns-and-programs/#hybrid-marketo-templates) と [Other Tactic](/handbook/marketing/marketing-operations/campaigns-and-programs/#other-tactic-marketo-templates) セクションで利用できる Marketo テンプレートを利用します。
+Campaign のセットアップには、以下の [Hybrid](/handbook/marketing/marketing-operations/campaigns-and-programs/#hybrid-marketo-templates)と [Other Tactic](/handbook/marketing/marketing-operations/campaigns-and-programs/#other-tactic-marketo-templates)セクションで利用できる Marketo テンプレートを利用します。
 
 Executive Roundtable を使用する例: `YYYYMMDD_HyperscalerPartner_ExecutiveRoundtable_Topic_Region_EventType`
 
@@ -580,13 +580,13 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 
 **重要なリードオーナーシップに関する注意:** Hyperscaler キャンペーンを通じて生成されたすべてのリードは、GitLab の排他的なオーナーシップの下にとどまります。これらのコンタクトは私たちの標準ナーチャリングプロセスに入り、エンゲージメント指標に応じてリードスコアを蓄積していきます。MQL ステータスに達すると、パーソナライズされたフォローアップのために自動的に適切な BDR/SDR チームに割り当てられます。
 
-##### Hybrid Marketo テンプレート {#hybrid-marketo-templates}
+##### ハイブリッド用 Marketo テンプレート {#hybrid-marketo-templates}
 
 - Executive Roundtables - `Hybrid template`: [YYYYMMDD_ExecutiveRoundtable_Topic_Region_EventType_template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6028A1)
 - Speaking Session - `Hybrid template`: [YYYYMMDD_SpeakingSession_EventType_Template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME5092A1)
 - Vendor Arranged Meetings (1:1 meetings) - `Hybrid template`: [YYYYMMDD_ArrangedMeetingsVendorName_Region_EventType_template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG5698A1)
 - GitLab Hosted Workshops - `Hybrid template`:
-[バーチャルワークショップについては、バーチャルワークショップのセットアップセクションの指示に従ってください。](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#virtual-workshop-logistical-set-up) 対面ワークショップは同様のセットアップを利用しますが、Zoom 要件は含みません。以下にリストされていないワークショップをセットアップする場合でも、これらのテンプレートのいずれかをバックエンドのセットアップに利用し、その後[コピードキュメント](https://docs.google.com/document/d/1j43mf7Lsq2AXoNwiygGAr_laiFzmokNCfMHi7KNLjuA/edit#heading=h.tl82wncgutxu)を使用して、必要なすべてのコピー調整を示すことができます（セットアッププロセス中にベースラインの Marketo トークンも更新します）。
+[バーチャルワークショップについては、バーチャルワークショップのセットアップセクションの指示に従ってください。](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#virtual-workshop-logistical-set-up)対面ワークショップは同様のセットアップを利用しますが、Zoom 要件は含みません。以下にリストされていないワークショップをセットアップする場合でも、これらのテンプレートのいずれかをバックエンドのセットアップに利用し、その後[コピードキュメント](https://docs.google.com/document/d/1j43mf7Lsq2AXoNwiygGAr_laiFzmokNCfMHi7KNLjuA/edit#heading=h.tl82wncgutxu)を使用して、必要なすべてのコピー調整を示すことができます（セットアッププロセス中にベースラインの Marketo トークンも更新します）。
   - Project Management: [YYYYMMDD_Workshop_ProjectManagement_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6536A1)
   - Security: [YYYYMMDD_Workshop_SecurityWorkshop_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6521A1)
   - CI Workshop: [YYYYMMDD_Workshop_CI_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6807A1)
@@ -595,7 +595,7 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
   - GitLab Basics: [YYYYMMDD_Workshop_GitLabBasics_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME17530A1)
   - GitLab Platform Engineering Workshop: [YYYYMMDD_Workshop_PlatformEngineering_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME22364A1)
 
-##### Other Tactic Marketo テンプレート {#other-tactic-marketo-templates}
+##### その他の施策用の Marketo テンプレート {#other-tactic-marketo-templates}
 
 - Conference - `Virtual`: [YYYYMMDD_YYYYMMDD_Vendor_VirtualConfName1 (Virtual Conference Template)](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME7624A1)
 - Conference - `In person`: [特定のセットアップ詳細はこちらにスキップ](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-in-person-conferences)
@@ -608,19 +608,19 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 - Surveys - サーベイのテンプレートとセットアップ手順については、[こちら](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-surveys-in-marketo-and-sfdc)の特定のセットアップ詳細にスキップしてください。
 - Owned Event - `Hybrid`: [YYYYMMDD_OwnedEvent_EventType_Template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME4722A1)
 
-##### Webcast Marketo テンプレート
+##### ウェブキャスト用 Marketo テンプレート {#webcasts-marketo-templates}
 
 - Zoom GitLab Hosted Webcast: [YYYYMMDD_WebcastTopic_Region](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME5512A1)
 - Sponsored Webcast: [YYYYMMDD_ExternalWebcastVendorName_Topic_Region](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG5523A1)
 
-### ステップ 2: Salesforce への同期
+### ステップ 2: Salesforce への同期 {#step-2-sync-to-salesforce}
 
 - Marketo のプログラムメイン画面で、`Salesforce Sync` が "not set" となっている箇所の "not set" をクリックします
   - 「Create New」をクリックします。プログラムが自動的に Campaign タグを入力するため、何も編集する必要はありません。
   - Allocadia のユーザーの場合は、`Description` フィールドに Allocadia サブカテゴリ ID を追加する必要があります。
   - 「Save」をクリックします
 
-### ステップ 3: Marketo トークンの更新
+### ステップ 3: Marketo トークンの更新 {#step-3-update-marketo-tokens}
 
 - 各トークンの情報を入力します。各トークンに何を入力するかの手順はテンプレートに含まれています。
   - 「Interesting Moments」スマートキャンペーンがトークンに基づいて情報を Salesforce にプッシュするため、すべてのトークンを入力することが重要です。Campaign によっては、一部の自動応答メールやメールもトークンに依存します。
@@ -631,18 +631,18 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 - [こちら](/handbook/marketing/utm-strategy/#the-new-utm_campaign-structure)に概説されているプロセスに従って、utm_campaign フィールドを更新します。
 - プログラムが Action Streams の対象となる場合（現在は Security のみで利用可能）は、[こちら](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)の関連タイプで {{my.Action Stream}} トークンを更新してください。[動画による手順](https://drive.google.com/file/d/1hBuYcScoJGVo8VUhKbiwToSE1g4Kr8Tl/view?usp=sharing) - 手順はカンファレンスでは異なり、以下のカンファレンス手順に概説されている点に注意してください。
 
-### ステップ 4: Marketo スマートキャンペーンの活性化
+### ステップ 4: Marketo スマートキャンペーンの有効化 {#step-4-activate-marketo-smart-campaigns}
 
 - プログラムの Action Stream タグ付け: 以下は、Content Syndication と LinkedIn Lead Gen フォームを除くすべての Campaign タイプに関連します。これらは異なる方法で処理されます。ウェブキャスト、ワークショップ、イベント、Gated Content については、リードを Action Streams に適切にルーティングするために以下の手順に従ってください。
   - [関連するストリームタイプ](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)を {{my.Action Stream}} トークンに追加します
   - `Processing` フローで、右側のパネルから「Execute Campaign」を選択し、フローにドラッグします。これは、「Remove from Flow」ステップの前、フローの下部付近に配置すべきです。
-  - `Execute Campaign` フローステップを完了します: Executed Campaign: *Air Traffic Control Automation.Action Stream tagging (programs)、Use Parent Campaign Token Context: True
+  - `Execute Campaign` フローステップを完了します: Executed Campaign: *Air Traffic Control Automation.Action Stream tagging (programs), Use Parent Campaign Token Context: True  
 - これが `Gated Content` Campaign の場合は、[content in campaigns ページ](/handbook/marketing/demand-generation/campaigns/content-in-campaigns/#steps-gated-landing-pages)の詳細なセットアップ手順に従ってください。
 - これが `Vendor Arranged Meeting` の場合:
   - `Smart Campaigns` フォルダーをクリックします
   - `01 Interesting Moments` スマートキャンペーンを選択します
     - クローン時に正しいプログラムが自動的に適用されるはずなので、_ここで何もする必要はありません。_ ただし、Campaign を確認できます
-- これが `Speaking Session` の場合は、以下の活性化手順に従ってください:
+- これが `Speaking Session` の場合は、以下の有効化手順に従ってください:
   - `Smart Campaigns` フォルダーをクリックします
   - `01a Registration Flow` スマートキャンペーンを選択します
     - クローン時に正しいプログラムが自動的に適用されるはずなので、_ここで何もする必要はありません。_ ただし、Campaign タグが Smart List と Flow に表示されることを確認できます。テンプレートの名前がどこかに表示される場合は、Campaign タグに置き換えてください。
@@ -656,13 +656,13 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
   - `Campaigns` フォルダーをクリックします
   - `Interesting Moments` をクリックし、`Schedule` タブをクリックして `Activate` をクリックします
   - このイベント用に Marketo ランディングページを作成している場合は、`01 Registration Flow` をクリックし、`Schedule` タブをクリックして `Activate` をクリックします。リストアップロードを行っている場合、このステップは不要です。
-- これが `Workshop` の場合は、以下の活性化手順に従ってください:
+- これが `Workshop` の場合は、以下の有効化手順に従ってください:
   - `Smart Campaigns` フォルダーをクリックします
   - `00 Interesting Moment` スマートキャンペーンを選択し、Schedule タブに移動して `Activate` を選択します
   - `01a Registration Flow` スマートキャンペーンを選択します
   - クローン時に正しいプログラムが自動的に適用されるはずなので、_ここで何もする必要はありません。_ ただし、Campaign タグが Smart List と Flow に表示されることを確認できます。テンプレートの名前がどこかに表示される場合は、Campaign タグに置き換えてください。
   - `Schedule` タブをクリックし、`Activate` をクリックします
-- これが `Owned Event` の場合は、以下の活性化手順に従ってください:
+- これが `Owned Event` の場合は、以下の有効化手順に従ってください:
   - `Campaigns` フォルダーをクリックします
   - このイベント用に Marketo 登録ページがある場合は、`01b - Registration` スマートキャンペーンを選択します
   - クローン時に正しいプログラムが自動的に適用されるはずなので、_ここで何もする必要はありません。_ ただし、Campaign タグが Smart List と Flow に表示されることを確認できます。テンプレートの名前がどこかに表示される場合は、Campaign タグに置き換えてください。
@@ -670,8 +670,8 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
   - `02a - Interesting Moments` スマートキャンペーンを選択します
   - クローン時に正しいプログラムが自動的に適用されるはずなので、_ここで何もする必要はありません。_ ただし、Campaign タグが Smart List と Flow に表示されることを確認できます。テンプレートの名前がどこかに表示される場合は、Campaign タグに置き換えてください。
   - `Schedule` タブをクリックし、`Activate` をクリックします
-  - リストアップロードのみ: 登録ページがなく、回答がリストロードでアップロードされる場合、必要に応じて MOps が `02b - Manual Upload Processing` Campaign を活性化します。
-- その他すべての Campaign タイプについては、以下の活性化手順に従ってください:
+  - リストアップロードのみ: 登録ページがなく、回答がリストロードでアップロードされる場合、必要に応じて MOps が `02b - Manual Upload Processing` Campaign を有効化します。
+- その他すべての Campaign タイプについては、以下の有効化手順に従ってください:
   - 「Smart Campaigns」フォルダーをクリックします
   - `Interesting Moments` スマートキャンペーンを選択します。
   - クローン時に正しいプログラムが自動的に適用されるはずなので、_ここで何もする必要はありません。_ ただし、Campaign タグが Smart List と Flow に表示されることを確認できます。テンプレートの名前がどこかに表示される場合は、Campaign タグに置き換えてください。
@@ -681,24 +681,24 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
   - 「Schedule」タブをクリックし、`Activate` をクリックします。
 
 - `Interesting Moments` Campaign が表示されない場合は、そのステップが `01 Processing` または `Viewed on Demand` Campaign にあるかどうかを確認してください。
-- 事前登録のある `Speaking Sessions` については、`Pre-Registration` フォルダーを見つけ、正しいフォームとランディングページで smart list を入力した後、`01 - Form Fill` ステップを活性化します。
+- 事前登録のある `Speaking Sessions` については、`Pre-Registration` フォルダーを見つけ、正しいフォームとランディングページでスマートリストを入力した後、`01 - Form Fill` ステップを有効化します。
 
-### ステップ 5: ランディングページ／スマートキャンペーンの有効期限の設定（Asset Expiration）
+### ステップ 5: ランディングページ／スマートキャンペーンの有効期限の設定（アセットの有効期限） {#step-5-setting-landing-page--smart-campaign-expiration-asset-expiration}
 
 2022 年初頭、Adobe は Marketo に `asset expiration` という新機能を導入しました。これについては Marketo のドキュメント[こちら](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/programs/working-with-programs/local-asset-expiration.html?lang=en#:~:text=Right%2Dclick%20on%20your%20desired,Choose%20an%20expiration%20date)で読むことができます。これはスマートキャンペーンとランディングページに適用されます。GitLab のユースケースでは、以下のロール権限に対してこの機能を有効にしています: `Field Marketing User`、`Marketing Program Managers`、`Marketing User`。これらの権限を持っておらず、この機能を有効にしたい場合は、`access request` を送信してください。
 
-#### Asset Expiration のユースケース
+#### アセットの有効期限のユースケース {#asset-expiration-use-cases}
 
 すべてのプログラムには異なる必要性があるため、さまざまなプログラムタイプで `asset expiration` をどのように利用すべきかを判断することが重要になります。必要に応じて MktgOps からガイダンスを提供できますが、大半のケースでは以下の方法を利用してください:
 
-- `Conference`、`Direct Mail`、`Executive Roundtable`、`Owned Event`、`Speaking Session`、`Sponsored Webcast`（オンデマンドコンポーネントがない場合）、`Survey`、`Vendor Arranged Meeting`、`Workshop`: 特定の日付の後に完全に終了し、時間の経過とともに `Attended On-Demand` メンバーステータスを使用しない一回限りのプログラムについては、アセットの有効期限をイベントの 4 週間後の終日、つまり 23:55 PST に設定します。例えば、`conference` または `executive roundtable` プログラムタイプが 4 月 3 日に発生する場合、アセットの有効期限を 5 月 1 日の終日にスケジュールします。
+- `Conference`、`Direct Mail`、`Executive Roundtable`、`Owned Event`、`Speaking Session`、`Sponsored Webcast`（オンデマンドコンポーネントがない場合）、`Survey`、`Vendor Arranged Meeting`、`Workshop`: 特定の日付の後に完全に終了し、時間の経過とともに `Attended On-Demand` メンバーステータスを使用しない一回限りのプログラムについては、アセットの有効期限をイベントの 4 週間後のその日の終わり、つまり 23:55 PST に設定します。例えば、`conference` または `executive roundtable` プログラムタイプが 4 月 3 日に発生する場合、アセットの有効期限を 5 月 1 日の終わりにスケジュールします。
 - `Content syndication` または Campaign の終了を特定するのが難しい Campaign: 考慮すべき 2 つの異なるオプションがあります:
-  - **推定 Campaign 終了の 12 週間後** に有効期限を設定し、これも終日とします。これは、サードパーティが私たちに代わってリード収集を行い、私たちがリードリストを手動でアップロードしている Campaign に役立ちます。これはまた、SLA が予定どおりに満たされず、Campaign が予想よりも長く実行される場合のバッファも提供します。
-  - **asset expiration をまったく使用しない**。content syndication 中心のプログラムは無期限に続くことが多いため、この場合は有効期限を利用するのは理にかなっていません。アセットは将来的に廃止できます。
-- `Gated Content`: これらは長期間使用され続けるため、asset expiration の使用は推奨されません。
-- `Webcast`: これらは通常オンデマンドコンポーネントを持つため、asset expiration の使用は推奨されません。
+  - **推定 Campaign 終了の 12 週間後** に有効期限を設定し、これもその日の終わりとします。これは、サードパーティが私たちに代わってリード収集を行い、私たちがリードリストを手動でアップロードしている Campaign に役立ちます。これはまた、SLA が予定どおりに満たされず、Campaign が予想よりも長く実行される場合のバッファも提供します。
+  - **アセットの有効期限をまったく使用しない**。コンテンツシンジケーション中心のプログラムは無期限に続くことが多いため、この場合は有効期限を利用するのは理にかなっていません。アセットは将来的に廃止できます。
+- `Gated Content`: これらは長期間使用され続けるため、アセットの有効期限の使用は推奨されません。
+- `Webcast`: これらは通常オンデマンドコンポーネントを持つため、アセットの有効期限の使用は推奨されません。
 
-#### プログラムへの Asset Expiration の設定
+#### プログラムへのアセットの有効期限の設定 {#setting-asset-expiration-on-a-program}
 
 - Marketo プログラムを右クリックしてプログラムメニューを開き、`Set local asset expiration` を選択します。これは正しい権限がないと機能しない点に注意してください。
 - 有効期限を設定できるすべてのアセットがセグメント化されたリストとして表示されます。表示されうるアセットの例は、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。
@@ -707,18 +707,18 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
   - そのようなイベントはプログラムの `registation` および `on-demand` フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
 - 後で有効期限を削除するには、プログラムを右クリックして対象アセットに戻り、変更を送信します。
 
-### ステップ 6 オプションのセルフサービスキャンセルのセットアップ
+### ステップ 6 オプションのセルフサービスキャンセルのセットアップ {#step-6-setting-up-optional-self-service-cancellation}
 
 *このオプションは特定のプログラムテンプレート（Owned Event テンプレートと Executive Roundtable テンプレート）でのみ利用可能です。Workshop テンプレートは後日追加される可能性があります。_ 誰かがキャンセルフォームに記入すると、プログラム内のステータスが cancelled に更新され、トークンにリストされたイベントオーナーにアラートが送信されます。別のメールアドレスを使用してキャンセルした場合、その人は cancelled として Campaign に追加され、イベントオーナーは元の登録を cancelled に更新する必要があります。
 
 - セルフサービスキャンセルは、Field Marketing の Owned Event および Executive Roundtable プログラムには常に利用すべきです。
 - 前述のテンプレートには、`Self Service Cancellation Assets` フォルダー内に 2 つのランディングページと 2 つのメールテンプレートが含まれています。受信者が予約をキャンセルするためのセルフサービスオプションを提供するには、これらのランディングページとメールテンプレートを更新する必要があります。
 - `Cancel Page` ランディングページの URL を取得し、`my.cancellation page` というトークンに配置します。**これを行わないと、登録確認メールに含まれるリンクが壊れます**。
-- `01 Cancellation Flow` スマートキャンペーンを活性化します
+- `01 Cancellation Flow` スマートキャンペーンを有効化します
 - `Send Alert` ステップでは、キャンセルアラートを受け取る GitLab の優先内部メールアドレスを決定します。このフローステップのアラートは、ステークホルダーにキャンセルを通知します。1 つのメールのみに通知すべき場合は、プログラムトークンの {{my.event owner email address}} トークンに適切なメールを入力します。複数のメールに通知すべき場合は、前述のとおりトークンを変更し、その後 `3 - Send Alert` フローステップ内で、トークンの後の `To Other Emails` フィールドに追加の各メールを、各メールをカンマで区切って追加します
-- すべてのライブキャンセルアセットについて、イベント終了の 2〜3 日後に asset expiration を活性化します
+- すべてのライブキャンセルアセットについて、イベント終了の 2〜3 日後にアセットの有効期限を有効化します
 
-### ステップ 7: Salesforce キャンペーンの更新
+### ステップ 7: Salesforce キャンペーンの更新 {#step-7-update-the-salesforce-campaign}
 
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-5-update-the-salesforce-campaign)の手順を参照してください。
 
@@ -726,24 +726,24 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
-#### SFDC キャンペーンのセットアップのトレーニング動画 - Allocadia を使用する場合
+#### SFDC キャンペーンのセットアップのトレーニング動画 - Allocadia を使用する場合 {#training-videos-for-setting-up-sfdc-campaign---using-allocadia}
 
 - [説明動画](https://youtu.be/1681EBw5344)
 - [同期結果動画](https://youtu.be/PocOPnJY4w0)
 
-### Waitlist 処理 - Owned Event、Workshop、Webcast
+### 待機リスト処理 - 主催イベント、ワークショップ、ウェブキャスト {#waitlist-processing---owned-event-workshop-webcasts}
 
-イベントを登録から waitlist に変更する必要がある場合、または waitlist から開始したい場合は、これらの手順を使用してください。
+イベントを登録から待機リストに変更する必要がある場合、または waitlist から開始したい場合は、これらの手順を使用してください。
 
 - 使用したいメールコピーが `Confirm - Waitlist` メールにセットアップされていることを確認します。このメールはトークンを使用しており、設定されているはずですが、必要に応じてカスタマイズできます。
 - トークンセクションで `{{my.event owner email address}}` が入力されていることを確認します。Waitlist プログラムはこのメールアドレスにアラートを送信するため、このトークンに基づいて、誰かが待機リストに追加されるたびに通知を受け取れます。
 - `01b Registration` スマートキャンペーンを無効化します
-- `01a Waitlist` スマートキャンペーンを活性化します
-- `01c Waitlist to Registered` スマートキャンペーンを活性化します
-- イベントで受け入れられない登録者に通知を送信したい場合は、`01d Waitlist to Declined` スマートキャンペーンを活性化します。通知が不要な場合でも、`Declined` ステータスを使用でき、通知は送信されません。このオプションを使用するにはメールコピーを提供する必要があります。
-これで待機リスト処理が活性化されました。Registration を再度有効化する必要がある場合は、Waitlist キャンペーンを無効化し、`01b Registration` を再活性化します。
+- `01a Waitlist` スマートキャンペーンを有効化します
+- `01c Waitlist to Registered` スマートキャンペーンを有効化します
+- イベントで受け入れられない登録者に通知を送信したい場合は、`01d Waitlist to Declined` スマートキャンペーンを有効化します。通知が不要な場合でも、`Declined` ステータスを使用でき、通知は送信されません。このオプションを使用するにはメールコピーを提供する必要があります。
+これで待機リスト処理が有効化されました。Registration を再度有効化する必要がある場合は、Waitlist キャンペーンを無効化し、`01b Registration` を再有効化します。
 
-### Waitlist からの移動 - Owned Event、Workshop、Webcast
+### 待機リストからの移動 - 主催イベント、ワークショップ、ウェブキャスト {#moving-from-waitlist---owned-event-workshop-webcasts}
 
 待機リストから Registered または Declined に人を移動するには、これらの手順を使用してください。
 
@@ -767,90 +767,90 @@ Waitlist > Declined
 - `Change Status` をクリックします
 - `Declined` を選択します
 
-`Declined` をクリックすると、ステータスが変更され、活性化されている場合は `01d Waitlist to Declined` スマートキャンペーンが通知メールを送信します。通知を送信したい場合はメールコピーを提供する必要がある点に注意してください。
+`Declined` をクリックすると、ステータスが変更され、有効化されている場合は `01d Waitlist to Declined` スマートキャンペーンが通知メールを送信します。通知を送信したい場合はメールコピーを提供する必要がある点に注意してください。
 
-### Waitlisted メンバーのイベント後処理 - Owned Event、Workshop、Webcast
+### 待機リストのメンバーのイベント後処理 - 主催イベント、ワークショップ、ウェブキャスト {#post-event-processing-for-waitlisted-members---owned-event-workshop-webcasts}
 
-waitlist 機能を有効にしたイベントで定員に達した状況では、これらのステップに従って waitlisted リードを処理します。No Show + Attended リードを処理した後、Waitlisted リードを処理する必要があります。これらは技術的には `Attended` でも `No Show` でもないためです。ここで重要なのは、彼らが No Show や Attended のフォローアップメールを受け取らないようにすることです。メールが送信されず、interesting moments と behavior score が更新されるように、これらのステップに従ってください。
+待機リスト機能を有効にしたイベントで定員に達した状況では、これらのステップに従って待機リストのリードを処理します。No Show + Attended リードを処理した後、Waitlisted リードを処理する必要があります。これらは技術的には `Attended` でも `No Show` でもないためです。ここで重要なのは、彼らが No Show や Attended のフォローアップメールを受け取らないようにすることです。メールが送信されず、interesting moments と behavior score が更新されるように、これらのステップに従ってください。
 
 - Marketo プログラム（Campaign の名前）をクリックします
 - `Campaigns Folder` に移動します
 - `01c Waitlist to Registered` Campaign に移動します。
 - 「Schedule」に移動し、`Deactivate` をクリックします
 - `01d Waitlist to Declined` Campaign に移動します。
-- 「Schedule」に移動し、`Deactivate` をクリックします。これは Campaign が現在活性化されている場合にのみ行ってください。ボタンが `Activate` と表示されている場合は、ここで何もしないでください。
+- 「Schedule」に移動し、`Deactivate` をクリックします。これは Campaign が現在有効化されている場合にのみ行ってください。ボタンが `Activate` と表示されている場合は、ここで何もしないでください。
 - イベントの `Member list` に戻ります。
 - ステータスを `waitlisted` でフィルタリングするか、Registered に移動したい人をクリックします。選択されるとハイライトされます。
 - `Change Status` をクリックします
 - `Registered` を選択します
-`Registered` をクリックすると、ステータスが変更され、`Interesting Moments` と `behavior score` が更新され、登録確認メールは送信され **ません**。これが完了し、registered ステータスに移動された後も、registered ステータスに基づいてフォローアップメールを送信できます。no show、attended、registered（すべて別々のコピー）のメール案件を完了する必要があります。
+`Registered` をクリックすると、ステータスが変更され、`Interesting Moments` と `behavior score` が更新され、登録確認メールは送信されません。これが完了し、登録済みステータスに移動された後も、登録済みステータスに基づいてフォローアップメールを送信できます。no show、attended、registered（すべて別々のコピー）のメール Issue を完了する必要があります。
 
-### 複数日イベントのコントローラー Marketo プログラムのセットアップ
+### 複数日イベントのコントローラー Marketo プログラムのセットアップ {#setting-up-a-controller-marketo-program-for-a-muti-day-event}
 
-これは、含まれるすべての日で同じフォームとランディングページを使用しながら、複数日にわたってイベントを実行したい人向けのオプション機能です。ただし、各日には独自の Marketo プログラム／SFDC キャンペーンがあります。この合理化されたワークフローは現在 2 つのテンプレートにのみ存在しますが、両方のテンプレートで同様に機能します: [YYYYMMDD_EventName_Webcast_On24_template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME12620A1) と [YYYYMMDD_WebcastTopic_Region](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME5512A1)。需要があれば、他のプログラムテンプレートに対しても Issue を介してこれをリクエストできます。
+これは、含まれるすべての日で同じフォームとランディングページを使用しながら、複数日にわたってイベントを実行したい人向けのオプション機能です。ただし、各日には独自の Marketo プログラム／SFDC キャンペーンがあります。この合理化されたワークフローは現在 2 つのテンプレートにのみ存在しますが、両方のテンプレートで同様に機能します: [YYYYMMDD_EventName_Webcast_On24_template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME12620A1)と [YYYYMMDD_WebcastTopic_Region](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME5512A1)。需要があれば、他のプログラムテンプレートに対しても Issue を介してこれをリクエストできます。
 
 - まず、イベントに必要な日数を決定します。イベントに 3 日とは異なる日数が必要な場合は、以下の指示に従って可能な限りセットアップを完了し、その後現在の Issue で MktgOps に ping を送り、セットアップを完了できるようにします。ここでの意図は、各プログラムに個別のフォームではなく、トークン化されたグローバルフォームの使用を可能にすることです。フォームは `FORM 1419: Webcast_MultipleTimeSlots` です。イベントに異なる日数が必要な場合、MktgOps は `1419` をクローンし、ドロップダウンで割り当てられた日数を変更する必要があります
-- 複数日イベントに必要な日数分、必要なプログラムテンプレートをクローンし、さらにもう 1 つクローンして、その追加プログラムを `controller` プログラムとして、child プログラムを何となく示唆する名前で名付けます。可能であれば、すべてのプログラムを互いに近くに、同じ Q1/2/3 または Q4 フォルダー内に保管します。MktgOps による仕上げが必要な場合は、対象のプログラムを必ず Issue にリストしてください
+- 複数日イベントに必要な日数分、必要なプログラムテンプレートをクローンし、さらにもう 1 つクローンして、その追加プログラムを `controller` プログラムとして、子プログラムを何となく示唆する名前で名付けます。可能であれば、すべてのプログラムを互いに近くに、同じ Q1/2/3 または Q4 フォルダー内に保管します。MktgOps による仕上げが必要な場合は、対象のプログラムを必ず Issue にリストしてください
 - `controller` プログラムで、Marketo ランディングページに `FORM 1419: Webcast_MultipleTimeSlots` を追加します。`FORM 1419` は、これらのローカルプログラムトークンでトークン化されています: `Date 1`、`Date 2`、`Date 3`、`Date 1 Option`、`Date 2 Option`、`Date 3 Option`。`Date` トークンには、ランディングページのドロップダウンメニューに表示されるべきとおりに、時刻、日付、タイムゾーンを **正確に** 入力します。ドロップダウンはユーザーが選択するためにランディングページに表示されるため、フォーマットが重要です。`Option` トークンには、個々の複数日イベントに関連するキーワードを入力します。例: `Day 1 = Aug 23 7:00`、`Day 2 = Sept 1 5:00` の場合、`Day 1 Option = August`、`Day 2 Option = September`。`Option` トークンは処理スマートキャンペーンの一部の `contains` ロジックの一部であるため、重複する情報を持つことはできません
 - それに関連して、引き続き `controller` プログラムで、スマートキャンペーン `01 Registration Flow (Multi-timeslot)` に進みます。このセットアップの残りは、通常のプログラムセットアップと同様に続きます。`Flow` をクリックし、`step 3` までスクロールダウンします。`Option 1`、`Option 2`、`Option 3` を `Date 1/2/3 Option` トークンのキーワードに一致するように変更します。これにより、リードが安全保管のために静的リストに追加されます。また、エラーの監視にも役立ちます。イベントが 2 日間のみの場合は `Option 3` を削除し、3 日を超える場合は、より多くのロジックとトークンが必要になるため、MktgOps が日数の追加を処理します
-- `Flow Step 4` でも、`Option 1/2/3` をトークンのキーワードに一致するように変更します。`Requested Campaign` フィールドで、`child` プログラムの `registration` スマートキャンペーンを見つけ、ここに接続します。ここで正しいスマートキャンペーンを選択するよう注意してください。それらの名前は child Campaign の名前で始まりますが、すべて `01a Registration Flow - Form fill` という同じまたは類似のスマートキャンペーン名を持ちます
-  - 注意: child プログラムの registration 処理スマートキャンペーンは、`controller` プログラムの `Multi-timeslot` スマートキャンペーンで `request campaign` オプションとして表示されるために **活性化される必要があります**
-- registration フローに不具合がある場合、選択したメールにアラートが設定される点に注意してください
-- controller Campaign 自体には、これ以上セットアップするものはありません。`Interesting moments`、`Attended` フロー、`Follow up Requested` など、必要なすべての処理を含め、child プログラムで適切な処理スマートキャンペーンを活性化します（通常どおり）。child Campaign を sfdc に同期することを忘れないでください。ただし、`controller` プログラムは関連するプログラムステータスを持つプログラムメンバーを格納しないため、sfdc に同期する必要はありません
+- `Flow Step 4` でも、`Option 1/2/3` をトークンのキーワードに一致するように変更します。`Requested Campaign` フィールドで、`child` プログラムの `registration` スマートキャンペーンを見つけ、ここに接続します。ここで正しいスマートキャンペーンを選択するよう注意してください。それらの名前は子キャンペーンの名前で始まりますが、すべて `01a Registration Flow - Form fill` という同じまたは類似のスマートキャンペーン名を持ちます
+  - 注意: 子プログラムの登録処理スマートキャンペーンは、`controller` プログラムの `Multi-timeslot` スマートキャンペーンで `request campaign` オプションとして表示されるために **有効化される必要があります**
+- 登録フローに不具合がある場合、選択したメールにアラートが設定される点に注意してください
+- controller Campaign 自体には、これ以上セットアップするものはありません。`Interesting moments`、`Attended` フロー、`Follow up Requested` など、必要なすべての処理を含め、子プログラムで適切な処理スマートキャンペーンを有効化します（通常どおり）。子キャンペーンを sfdc に同期することを忘れないでください。ただし、`controller` プログラムは関連するプログラムステータスを持つプログラムメンバーを格納しないため、sfdc に同期する必要はありません
 
-### Late/In-person Registration 用アセットのセットアップ
+### 直前／現地登録用アセットのセットアップ {#setting-up-assets-for-latein-person-registration}
 
 これは `Owned Event` プログラムテンプレートでのみ利用可能な _オプション_ 機能です。`owned event` に `in-person`（対面）で現れた未登録の参加者を、ランディングページフォームによる通常の登録プロセスが以前に閉じられている場合でも `register` する柔軟性をチームが求める場合に、この機能を利用します。**イベントを担当するチームは、イベントの _前_ にこの機能を使用するかどうかについて合意し、セットアップはイベント開始前に行うべきです**。これにより、ランディングページ／フォームを GitLab 所有の `tablets` や `laptops` などの `check-in` デバイスにブックマークとして手動で追加できます。
 
 - `Assets` フォルダー内にある `Late Registration Assets` サブフォルダーを見つけます。これは `YYYYMMDD_OwnedEvent_EventType_Template` テンプレートにのみ存在します
-- Marketo プログラムアセットを承認するために必要な権限を持つ人に、`Late Registration page` と `Late Thank you page` のランディングページを活性化するよう、MktgOps の Slack チャンネルでリクエストします。これらはプログラムテンプレートでデフォルトで承認 `されていません`。ランディングページに含まれる `form` など、変更が必要なものがないか事前に確認してください。
+- Marketo プログラムアセットを承認するために必要な権限を持つ人に、`Late Registration page` と `Late Thank you page` のランディングページを有効化するよう、MktgOps の Slack チャンネルでリクエストします。これらはプログラムテンプレートではデフォルトで承認されていません（`not`）。ランディングページに含まれる `form` など、変更が必要なものがないか事前に確認してください。
   - ランディングページを承認する前に、ランディングページの URL を短く入力しやすいものに変更することを強く推奨します。例: `https://page.gitlab.com/EventNameLateReg.html`
 - `Late Registration page` の URL を取得し、`https://` を除いて {{my.late registration page}} という名前のプログラム `token` に配置します。これにより、登録の `Thank you` ページに循環パターンを持たせることができます。`Thank you` ページには、次の登録者が利用できるように `late registration page` への戻りリンクが表示されます
-- フローを活性化するために `01 Late Registration` スマートキャンペーンを活性化します
-- プログラムを右クリックして、**すべての** `late registration` アセットの asset expiration の日付を設定します。これらは有効のままにしておくべきではなく、イベント終了の翌日、またはこれ以上登録者が受け入れられないと推定される時点で期限切れになるように設定すべきです
+- フローを有効化するために `01 Late Registration` スマートキャンペーンを有効化します
+- プログラムを右クリックして、**すべての** `late registration` アセットのアセットの有効期限の日付を設定します。これらは有効のままにしておくべきではなく、イベント終了の翌日、またはこれ以上登録者が受け入れられないと推定される時点で期限切れになるように設定すべきです
 - 今後のイベントに参加する適切なチームと `late registration page` の URL を共有し、ページを GitLab 所有の `tablets` や `laptops` などのチェックインデバイスに追加して、イベントフロアで簡単にアクセスできるようにします
 
-## 対面 Conference のセットアップ手順 {#steps-to-setup-in-person-conferences}
+## 対面カンファレンスのセットアップ手順 {#steps-to-setup-in-person-conferences}
 
-### ステップ 1: このプログラムをクローンする
+### ステップ 1: このプログラムをクローンする {#step-1-clone-this-program}
 
 - [このプログラムをクローンする](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME12196A1)
-- フォーマット `YYYYMMDD_Hyperscaler(該当する場合)_Conference_EventType` を使用します
+- フォーマット `YYYYMMDD_Hyperscaler(if applicable)_Conference_EventType` を使用します
 - Executive Meetings または Booth Demos/Meetings の設定に Jifflenow を使用している場合は、各タイプごとに Marketo プログラムと SFDC キャンペーンが必要になる点に注意してください。これらはすべて `Conference` Campaign タイプであるため、これらの手順に従って最初のものを作成し（トークンの入力を含む）、そのプログラムをクローンできます。これにより、毎回すべてのトークンを完了する必要がなくなります（軽微な変更は必要ですが、この方法のほうが速くなります）。以下に説明するように、各プログラムを SFDC に同期して SFDC キャンペーンを作成します。
 
-### ステップ 2: Salesforce への同期
+### ステップ 2: Salesforce への同期 {#step-2-sync-to-salesforce-1}
 
 - Marketo のプログラムメイン画面で、`Salesforce Sync` が "not set" となっている箇所の "not set" をクリックします
   - 「Create New」をクリックします。プログラムが自動的に Campaign タグを入力するため、何も編集する必要はありません。
   - Allocadia のユーザーの場合は、`Description` フィールドに Allocadia ID サブカテゴリ ID を追加する必要があります。
   - 「Save」をクリックします
 
-### ステップ 3: Marketo トークンの更新
+### ステップ 3: Marketo トークンの更新 {#step-3-update-marketo-tokens-1}
 
 - すべてのトークンはメールと interesting moments に供給されるため、それらを更新します
   - カンファレンスのためにミーティングが設定されていない場合、`Request` トークンを更新する必要はありません
   - 対面ミーティングをスケジュールしている場合は、`reply email` トークンを必ず更新してください。これは確認メールで使用されます。キャンセルや特別な対応のために正しいメールアドレスを追加し、件名を説明的なものに更新する必要があります。件名が正しく入力されるように、各単語の間の `%20` を保持してください。
   - プログラムが Action Streams の対象となる場合（現在は Security のみで利用可能）は、[こちら](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)の関連タイプで {{my.Action Stream}} トークンを更新してください。
 
-### ステップ 4: Marketo スマートキャンペーンの活性化
+### ステップ 4: Marketo スマートキャンペーンの有効化 {#step-4-activate-marketo-smart-campaign}
 
-- `00 Send Sales-Driven Invite`（オプション）は、Sales と XDR がカンファレンスに人を招待する場合に、定期的に送信するようにオンにしてスケジュールできます。これはすべての Campaign で必須ではなく、Sales-Driven メールを構築した後に活性化すべきです。スケジュール後、Sales は SFDC で誰かを Campaign に追加でき、その人には自動的にメール招待が送信されます。`email` フォルダーには Sales 招待用の別のメールがリストされています
-- `01 Manual upload processing` これは、手動アップロードが必要な場合に MOps によって活性化されます。セルフサービスプロセスを使用してアップロードする場合、これは不要です。
-- `02 Add as Marketing Invited` は、XDR がフォローアップしてイベントへの参加を促進する予定がある場合にのみ使用すべきです。これは最初のメール招待がスケジュールされて送信された **後** にスケジュールすべきです。これにより、メール招待が送信されたすべての人が `Marketing Invited` として更新されます。彼らは Campaign で更新され、SFDC で表示されます。**計画されたイベントドライバーがない限り、これを使用しないでください**
-- `03 Interesting Moments` この Campaign を活性化します。これはリストがアップロードされる前にオンにすべきです。
-- `04 Action stream processing` カンファレンスが関連する [Action Stream トピック](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)をカバーする場合は、Action Stream をトークンに追加したことを確認してから、この Campaign を活性化します。
+- `00 Send Sales-Driven Invite`（オプション）は、Sales と XDR がカンファレンスに人を招待する場合に、定期的に送信するようにオンにしてスケジュールできます。これはすべての Campaign で必須ではなく、Sales-Driven メールを構築した後に有効化すべきです。スケジュール後、Sales は SFDC で誰かを Campaign に追加でき、その人には自動的にメール招待が送信されます。`email` フォルダーには Sales 招待用の別のメールがリストされています
+- `01 Manual upload processing` これは、手動アップロードが必要な場合に MOps によって有効化されます。セルフサービスプロセスを使用してアップロードする場合、これは不要です。
+- `02 Add as Marketing Invited` は、XDR がフォローアップしてイベントへの参加を促進する予定がある場合にのみ使用すべきです。これは最初のメール招待がスケジュールされて送信された後にスケジュールすべきです。これにより、メール招待が送信されたすべての人が `Marketing Invited` として更新されます。彼らは Campaign で更新され、SFDC で表示されます。**計画されたイベントドライバーがない限り、これを使用しないでください**
+- `03 Interesting Moments` この Campaign を有効化します。これはリストがアップロードされる前にオンにすべきです。
+- `04 Action stream processing` カンファレンスが関連する [Action Stream トピック](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)をカバーする場合は、Action Stream をトークンに追加したことを確認してから、この Campaign を有効化します。
 
-### ステップ 4a. Meeting Request 処理
+### ステップ 4a. ミーティングリクエストの処理 {#step-4a-meeting-request-processing}
 
 これらのステップはまだ設定されていません。次のイベントでこれを行う予定がある場合は、Marketing Operations チームと Issue を作成してください。
 
-### ステップ 4b. Asset Expiration のセットアップ
+### ステップ 4b. アセットの有効期限のセットアップ {#step-4b-set-up-asset-expiration}
 
 - Marketo プログラムを右クリックしてプログラムメニューを開き、`Set local asset expiration` を選択します。これは正しい権限がないと機能しない点に注意してください。
 - 有効期限を設定できるすべてのアセットがセグメント化されたリストとして表示されます。表示されうるアセットの例は、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。
 - アセットのチェックボックスを使用して、有効期限を設定したいすべてのアセットを選択し、準備ができたら `set expiration` を選択します。有効期限を設定すべきアセットは、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。日付と時刻を設定して送信します。
   - `smart campaigns` への有効期限設定を優先します。
-  - そのようなイベントはプログラムの registation フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
+  - そのようなイベントはプログラムの登録フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
 - 後で有効期限を削除するには、プログラムを右クリックして対象アセットに戻り、変更を送信します。
 
 ### ステップ 5: Salesforce キャンペーンの更新 {#step-5-update-the-salesforce-campaign}
@@ -858,74 +858,74 @@ waitlist 機能を有効にしたイベントで定員に達した状況では�
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-5-update-the-salesforce-campaign)の手順を参照してください。
 
 - Marketo プログラムのリンクと SFDC キャンペーンのリンクをエピックに追加します。
-- プログラムが Digital Marketing によって実行されている場合は、parent Campaign `Demand Gen Pulishers/Sponsorships` の下に SFDC キャンペーンを追加します
+- プログラムが Digital Marketing によって実行されている場合は、親キャンペーン `Demand Gen Pulishers/Sponsorships` の下に SFDC キャンペーンを追加します
 
 Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
-## 対面 Conference Meetings のセットアップ手順 {#steps-to-setup-in-person-conference-meetings}
+## 対面カンファレンスでのミーティングのセットアップ手順 {#steps-to-setup-in-person-conference-meetings}
 
 以下の手順は、大規模なカンファレンスで Field Marketing がリードするミーティング向けに設計されています。
 
-### ステップ 1: このプログラムをクローンする
+### ステップ 1: このプログラムをクローンする {#step-1-clone-this-program-1}
 
 - [このプログラムをクローンする](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME17801A1)
-- フォーマット `YYYYMMDD_Hyperscaler(該当する場合)_Conference_ExecutiveMeetings` を使用します
+- フォーマット `YYYYMMDD_Hyperscaler(if applicable)_Conference_ExecutiveMeetings` を使用します
 - Executive Meetings または Booth Demos/Meetings の設定に Jifflenow を使用している場合は、各タイプごとに Marketo プログラムと SFDC キャンペーンが必要になる点に注意してください。
 
-### ステップ 2: Salesforce への同期
+### ステップ 2: Salesforce への同期 {#step-2-sync-to-salesforce-2}
 
 - Marketo のプログラムメイン画面で、`Salesforce Sync` が "not set" となっている箇所の "not set" をクリックします
   - 「Create New」をクリックします。プログラムが自動的に Campaign タグを入力するため、何も編集する必要はありません。
   - Allocadia のユーザーの場合は、`Description` フィールドに Allocadia ID サブカテゴリ ID を追加する必要があります。
   - 「Save」をクリックします
 
-### ステップ 3: Marketo トークンの更新
+### ステップ 3: Marketo トークンの更新 {#step-3-update-marketo-tokens-2}
 
 - すべてのトークンはメールと interesting moments に供給されるため、それらを更新します。エピックトークンは内部アラートに含まれるため、スキップしないでください。
   - `reply email` トークンを必ず更新してください。これは確認メールで使用されます。キャンセルや特別な対応のために正しいメールアドレスを追加し、件名を説明的なものに更新する必要があります。件名が正しく入力されるように、各単語の間の `%20` を保持してください。
   - プログラムが Action Streams の対象となる場合（現在は Security のみで利用可能）は、[こちら](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)の関連タイプで {{my.Action Stream}} トークンを更新してください。
 
-### ステップ 4: Marketo スマートキャンペーンの活性化
+### ステップ 4: Marketo スマートキャンペーンの有効化 {#step-4-activate-marketo-smart-campaign-1}
 
 - `00 Send Sales-Driven Invite`（オプション）は、Sales と XDR がカンファレンスに人を招待する場合に、定期的に送信するようにオンにしてスケジュールできます。これは必須ではなく、スケジュール前にメールを更新する必要があります。スケジュール後、Sales は SFDC で誰かを Campaign に追加でき、その人には自動的にメール招待が送信されます。`email` フォルダーには Sales 招待用の別のメールがリストされています
-- `01 Manual upload processing` これは、手動アップロードが必要な場合に MOps によって活性化されます。セルフサービスプロセスを使用してアップロードする場合、これは不要です。
-- `02 Add as Marketing Invited` は、XDR がフォローアップしてイベントへの参加を促進する予定がある場合にのみ使用すべきです。これは最初のメール招待がスケジュールされて送信された **後** にスケジュールすべきです。これにより、メール招待が送信されたすべての人が `Marketing Invited` として更新されます。彼らは Campaign で更新され、SFDC で表示されます。**計画されたイベントドライバーがない限り、これを使用しないでください**
-- `03 Interesting Moments` この Campaign を活性化します。これはリストがアップロードされる前にオンにすべきです。
-- `01a Meeting Request Processing` ランディングページがある場合はこの Campaign を活性化します。リードをアップロードするだけの場合は活性化しないでください。
-- `04 Action stream processing` カンファレンスが関連する [Action Stream トピック](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)をカバーする場合は、Action Stream をトークンに追加したことを確認してから、この Campaign を活性化します。
+- `01 Manual upload processing` これは、手動アップロードが必要な場合に MOps によって有効化されます。セルフサービスプロセスを使用してアップロードする場合、これは不要です。
+- `02 Add as Marketing Invited` は、XDR がフォローアップしてイベントへの参加を促進する予定がある場合にのみ使用すべきです。これは最初のメール招待がスケジュールされて送信された後にスケジュールすべきです。これにより、メール招待が送信されたすべての人が `Marketing Invited` として更新されます。彼らは Campaign で更新され、SFDC で表示されます。**計画されたイベントドライバーがない限り、これを使用しないでください**
+- `03 Interesting Moments` この Campaign を有効化します。これはリストがアップロードされる前にオンにすべきです。
+- `01a Meeting Request Processing` ランディングページがある場合はこの Campaign を有効化します。リードをアップロードするだけの場合は有効化しないでください。
+- `04 Action stream processing` カンファレンスが関連する [Action Stream トピック](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)をカバーする場合は、Action Stream をトークンに追加したことを確認してから、この Campaign を有効化します。
 
-### ステップ 4b. Asset Expiration のセットアップ
+### ステップ 4b. アセットの有効期限のセットアップ {#step-4b-set-up-asset-expiration-1}
 
 - Marketo プログラムを右クリックしてプログラムメニューを開き、`Set local asset expiration` を選択します。これは正しい権限がないと機能しない点に注意してください。
 - 有効期限を設定できるすべてのアセットがセグメント化されたリストとして表示されます。表示されうるアセットの例は、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。
 - アセットのチェックボックスを使用して、有効期限を設定したいすべてのアセットを選択し、準備ができたら `set expiration` を選択します。有効期限を設定すべきアセットは、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。日付と時刻を設定して送信します。
   - `smart campaigns` への有効期限設定を優先します。
-  - そのようなイベントはプログラムの registation フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
+  - そのようなイベントはプログラムの登録フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
 - 後で有効期限を削除するには、プログラムを右クリックして対象アセットに戻り、変更を送信します。
 
-### ステップ 5: Salesforce キャンペーンの更新
+### ステップ 5: Salesforce キャンペーンの更新 {#step-5-update-the-salesforce-campaign-1}
 
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-5-update-the-salesforce-campaign)の手順を参照してください。
 
 Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
-## Marketo と SFDC での Content Syndication のセットアップ手順 {#steps-to-setup-content-syndication-in-marketo-and-sfdc}
+## Marketo と SFDC でのコンテンツシンジケーションのセットアップ手順 {#steps-to-setup-content-syndication-in-marketo-and-sfdc}
 
-### ステップ 1: このプログラムをクローンする
+### ステップ 1: このプログラムをクローンする {#step-1-clone-this-program-2}
 
 [このプログラムをクローンする](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG5149A1)。
 
 - フォーマット `YYYY_Vendor_NameofAsset` を使用します
-- content syndication が外部ベンダーとのパッケージの一部で、複数のアセットやウェブキャストをプロモーションする場合は、単一のベンダープログラムの一部としてアクセスしやすいように、すべての Marketo プログラムをフォルダーにまとめて保管します。
+- コンテンツシンジケーションが外部ベンダーとのパッケージの一部で、複数のアセットやウェブキャストをプロモーションする場合は、単一のベンダープログラムの一部としてアクセスしやすいように、すべての Marketo プログラムをフォルダーにまとめて保管します。
 
-### ステップ 2: Salesforce への同期
+### ステップ 2: Salesforce への同期 {#step-2-sync-to-salesforce-3}
 
 - Marketo のプログラムメイン画面で、`Salesforce Sync` が "not set" となっている箇所の "not set" をクリックします
   - 「Create New」をクリックします。プログラムが自動的に Campaign タグを入力するため、何も編集する必要はありません。
   - Allocadia のユーザーの場合は、`Description` フィールドに Allocadia ID サブカテゴリ ID を追加する必要があります。
   - 「Save」をクリックします
 
-### ステップ 3: Marketo トークンの更新
+### ステップ 3: Marketo トークンの更新 {#step-3-update-marketo-tokens-3}
 
 - `Content Title` を、Content Syndication プログラムに表示されるタイトルに変更します
   - 複数のアセットがある場合は、テキストトークンをメインウィンドウにドラッグして名前を付けることで（例: Content Title2）、追加のトークンを追加できます
@@ -933,38 +933,38 @@ Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-oper
   - 利用可能なオプションは `Whitepaper`、`eBook`、`Report`、`Video`、`General` のみです
   - 上記以外の Content Type 値を追加すると、これらが `Initial Source` の現在唯一利用可能なピックリスト項目であるため、Salesforce への同期時にレコードがエラーになります
 
-### ステップ 4: Marketo スマートキャンペーンの活性化
+### ステップ 4: Marketo スマートキャンペーンの有効化 {#step-4-activate-marketo-smart-campaign-2}
 
-- `02 Interesting Moments` 複数のアセットがある場合は、どのアセットがダウンロードされたかを示す異なる interesting moments を作成できます。これを行うには、Flow をクリックします。step 1（Interesting Moment）で Add Choice をクリックします。Choice 1 が表示されます。If `Last Event Notes` contains [アセット名] を選択します。次に、Type: Milestone、Description: 表示させたい Interesting Moment を入力します。これは持っているアセットの数だけ行えます。この Campaign を活性化します。これはリストがアップロードされる前にオンにすべきです。
+- `02 Interesting Moments` 複数のアセットがある場合は、どのアセットがダウンロードされたかを示す異なる interesting moments を作成できます。これを行うには、Flow をクリックします。step 1（Interesting Moment）で Add Choice をクリックします。Choice 1 が表示されます。If `Last Event Notes` contains [アセット名] を選択します。次に、Type: Milestone、Description: 表示させたい Interesting Moment を入力します。これは持っているアセットの数だけ行えます。この Campaign を有効化します。これはリストがアップロードされる前にオンにすべきです。
 - 「Schedule」タブをクリックし、`Activate` をクリックします。1 人がフローを 1 回だけ実行できるように設定すべきです。
   - 重要: リストアップロードを行う際は、自動化がトリガーされるように、`Last Event Notes` フィールドでまったく同じ文言を使用する必要があります。例えば、Last Events Notes フィールドに `Downloaded Guide to Software Supply Chain Security` と記載できます。Marketo では、choice で `software supply chain` を使用でき、正しい Description がトリガーされます。choice で同じ単語の文字列を使用しないでください。Interesting Moments のセットアップの例は、[プログラム](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC21549C3ZN19)のフローで確認できます。私たちのプロセスは変更されたため、残りの処理は無視してください。
-- `01 Manual upload processing` - これは、必要な場合に MOps によって活性化されます。手動アップロードでのみ使用され、セルフサービスアップロードプロセスを使用する場合は不要です。
+- `01 Manual upload processing` - これは、必要な場合に MOps によって有効化されます。手動アップロードでのみ使用され、セルフサービスアップロードプロセスを使用する場合は不要です。
   - リードが Campaign にロードされると、リードはすぐに interesting moment、+15 score、および必要に応じて initial source、person source、person status の更新を持ちます。
 - アセットが Finserv または PubSec 向けの場合、人々が現在のナーチャープログラムに入るように、SFDC キャンペーンをナーチャー処理に追加する必要があります。
-  - Finserv の場合: [00d - Add to Finserv nurture](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC62869A1ZN19) と [Vertical check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64233B2ZN19) の Smart List を更新します
-  - PubSec の場合: [Nurture - PubSec check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64118A1ZN19)、[00 - Add to PUBSEC](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC24342A1ZN19)、[PubSec - Action Stream check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64194A1ZN19) の Smart List を更新します
+  - Finserv の場合: [00d - Add to Finserv nurture](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC62869A1ZN19)と [Vertical check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64233B2ZN19)の Smart List を更新します
+  - PubSec の場合: [Nurture - PubSec check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64118A1ZN19)、[00 - Add to PUBSEC](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC24342A1ZN19)、[PubSec - Action Stream check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64194A1ZN19)の Smart List を更新します
 
-### ステップ 4a: Asset Expiration のセットアップ
+### ステップ 4a: アセットの有効期限のセットアップ {#step-4a-set-up-asset-expiration}
 
 - `Content syndication` または Campaign の終了を特定するのが難しい Campaign: 考慮すべき 2 つの異なるオプションがあります:
-  - **推定 Campaign 終了の 12 週間後** に有効期限を設定し、これも終日とします。これは、サードパーティが私たちに代わってリード収集を行い、私たちがリードリストを手動でアップロードしている Campaign に役立ちます。これはまた、SLA が予定どおりに満たされず、Campaign が予想よりも長く実行される場合のバッファも提供します。
-  - **asset expiration をまったく使用しない**。content syndication 中心のプログラムは無期限に続くことが多いため、この場合は有効期限を利用するのは理にかなっていません。アセットは将来的に廃止できます。
+  - **推定 Campaign 終了の 12 週間後** に有効期限を設定し、これもその日の終わりとします。これは、サードパーティが私たちに代わってリード収集を行い、私たちがリードリストを手動でアップロードしている Campaign に役立ちます。これはまた、SLA が予定どおりに満たされず、Campaign が予想よりも長く実行される場合のバッファも提供します。
+  - **アセットの有効期限をまったく使用しない**。コンテンツシンジケーション中心のプログラムは無期限に続くことが多いため、この場合は有効期限を利用するのは理にかなっていません。アセットは将来的に廃止できます。
 
-#### プログラムへの Asset Expiration の設定
+#### プログラムへのアセットの有効期限の設定 {#setting-asset-expiration-on-a-program-1}
 
 - Marketo プログラムを右クリックしてプログラムメニューを開き、`Set local asset expiration` を選択します。これは正しい権限がないと機能しない点に注意してください。
 - 有効期限を設定できるすべてのアセットがセグメント化されたリストとして表示されます。表示されうるアセットの例は、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。
 - アセットのチェックボックスを使用して、有効期限を設定したいすべてのアセットを選択し、準備ができたら `set expiration` を選択します。有効期限を設定すべきアセットは、`active trigger campaigns`、`Reocurring batch campaigns` です。日付と時刻を設定して送信します。
   - `smart campaigns` への有効期限設定を優先します。
-  - そのようなイベントはプログラムの registation フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
+  - そのようなイベントはプログラムの登録フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
 - 後で有効期限を削除するには、プログラムを右クリックして対象アセットに戻り、変更を送信します。
 
-### ステップ 5: Salesforce キャンペーンの更新
+### ステップ 5: Salesforce キャンペーンの更新 {#step-5-update-the-salesforce-campaign-2}
 
 [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-5-update-the-salesforce-campaign)の手順を参照してください。
 
 - Marketo プログラムのリンクと SFDC キャンペーンのリンクをエピックに追加します。
-- プログラムが Digital Marketing によって実行されている場合は、parent Campaign `Demand Gen Pulishers/Sponsorships` の下に SFDC キャンペーンを追加します
+- プログラムが Digital Marketing によって実行されている場合は、親キャンペーン `Demand Gen Pulishers/Sponsorships` の下に SFDC キャンペーンを追加します
 
 Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
@@ -972,22 +972,22 @@ Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-oper
 
 **注意: サーベイプログラムを作成したら、`#mktops` Slack チャンネルで Marketing Ops に ping を送り、レビューのためにプログラムをリンクしてください。各サーベイはユニークであり、セットアップに微調整が必要な場合があります。**
 
-### ステップ 1: プログラムテンプレートをクローンする
+### ステップ 1: プログラムテンプレートをクローンする {#step-1-clone-program-template}
 
 - [General survey template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG6402A1)
 - フォーマット `YYYY_MM_SurveyName` を使用します
 
-### ステップ 2: Salesforce への同期
+### ステップ 2: Salesforce への同期 {#step-2-sync-to-salesforce-4}
 
 - Marketo のプログラムメイン画面で、`Salesforce Sync` が "not set" となっている箇所の "not set" をクリックします
   - 「Create New」をクリックします。プログラムが自動的に Campaign タグを入力するため、何も編集する必要はありません。
   - Allocadia のユーザーの場合は、`Description` フィールドに Allocadia ID サブカテゴリ ID を追加する必要があります。
   - 「Save」をクリックします
 
-### ステップ 3: リードアップロードのための Issue を作成する
+### ステップ 3: リードアップロードのための Issue を作成する {#step-3-create-issue-for-lead-upload}
 
-- サーベイがリストアップロードを介した手動アップロードを必要とする場合は、`01 Processing` バッチスマートキャンペーンの更新に注意を集中します。手動リストアップロードの場合、バッチはアップロードプロセス中に MktgOps によって手動で活性化されます。
-- サーベイが Zapier 自動化を必要とする場合は、自動化の構築について [Issue を介して](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/blob/master/.gitlab/issue_templates/zapier_connection_request.md) MktgOps に相談してください。MktgOps が `01 processing` Campaign を活性化する担当者にもなります
+- サーベイがリストアップロードを介した手動アップロードを必要とする場合は、`01 Processing` バッチスマートキャンペーンの更新に注意を集中します。手動リストアップロードの場合、バッチはアップロードプロセス中に MktgOps によって手動で有効化されます。
+- サーベイが Zapier 自動化を必要とする場合は、自動化の構築について [Issue を介して](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/blob/master/.gitlab/issue_templates/zapier_connection_request.md) MktgOps に相談してください。MktgOps が `01 processing` Campaign を有効化する担当者にもなります
 
 ### ステップ 4: Salesforce キャンペーンの更新 {#step-4-update-the-salesforce-campaign}
 
@@ -996,42 +996,42 @@ Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-oper
 
 Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-for-sfdc-campaign-creation-when-utilizing-allocadia)の手順を参照してください。
 
-### ステップ 5: トラブルシューティング
+### ステップ 5: トラブルシューティング {#step-5-troubleshooting}
 
 1. スマートキャンペーンの `Results` タブを見ます。エラーがある場合は、そこに明確に表示されます。
 1. リードが SFDC にプッシュされていない場合は？ `Person Source` が `SurveyName` になっていないことを確認します
 1. 既存のリードがプログラムに取り込まれない場合は、`SurveyName` フィールドが間違った名前を取得している可能性が高いです。
-1. net-new のリードがプログラムに取り込まれない場合は、`Person Source` SurveyName が正しく更新されなかった可能性が高いです。
+1. 新規リードがプログラムに取り込まれない場合は、`Person Source` SurveyName が正しく更新されなかった可能性が高いです。
 
-## Direct Mail キャンペーンのセットアップ手順
+## ダイレクトメールキャンペーンのセットアップ手順 {#steps-to-setup-direct-mail-campaigns}
 
-Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の使用が必要な点に注意してください。私たちのマーチャンダイズベンダーである Brilliant Gifts は、自社側で Preferred Gift キャンペーンをセットアップする必要があり、これには最大 1 ヶ月かかることがあり、サポートへの連絡が必要です。Qualified のミーティング予約リンクのセットアップには、現在の Qualified テックオーナーが必要になります。適切な連絡先については、[tech stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) を参照してください。Marketo テンプレートは簡単にクローンできるようにセットアップされているため、セットアップ中はゆっくりと慎重に進めてください
+Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の使用が必要な点に注意してください。私たちのマーチャンダイズベンダーである Brilliant Gifts は、自社側で Preferred Gift キャンペーンをセットアップする必要があり、これには最大 1 ヶ月かかることがあり、サポートへの連絡が必要です。Qualified のミーティング予約リンクのセットアップには、現在の Qualified テックオーナーが必要になります。適切な連絡先については、[Tech Stack](/handbook/business-technology/tech-stack-applications/)を参照してください。Marketo テンプレートは簡単にクローンできるようにセットアップされているため、セットアップ中はゆっくりと慎重に進めてください
 
-### ステップ 1: Marketo プログラムと Salesforce キャンペーンを作成する
+### ステップ 1: Marketo プログラムと Salesforce キャンペーンを作成する {#step-1-create-the-marketo-program-and-salesforce-campaign}
 
-- [#TEMPLATE - FY00_Q0_Brilliant Gifts Direct Mail TEMPLATE](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG24060A1) を適切なフォルダーにクローンし、プログラムの名前を変更します。1 つの地域で実施する場合は、1 回クローンします。複数の地域で実施し、各地域を個別に追跡したい場合は、すべての地域（例: AMER、APJ、EMEA）に必要な数のプログラムをクローンし、メインの [Brilliant Gifts プログラムのフォルダー](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内にある、それぞれの `FYXX_QX` フォルダーに配置します。地域別／子プログラムの命名規則を揃え、プログラム名の末尾に地域タグを追加します（例: `FY00_Q0_Campaign_AMER`）。
+- [#TEMPLATE - FY00_Q0_Brilliant Gifts Direct Mail TEMPLATE](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG24060A1)を適切なフォルダーにクローンし、プログラムの名前を変更します。1 つの地域で実施する場合は、1 回クローンします。複数の地域で実施し、各地域を個別に追跡したい場合は、すべての地域（例: AMER、APJ、EMEA）に必要な数のプログラムをクローンし、メインの [Brilliant Gifts プログラムのフォルダー](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内にある、それぞれの `FYXX_QX` フォルダーに配置します。地域別／子プログラムの命名規則を揃え、プログラム名の末尾に地域タグを追加します（例: `FY00_Q0_Campaign_AMER`）。
 - すべてのプログラムを SFDC に同期します
-- テンプレートについて、いくつか注意点があります。[01 - Processing](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC63769A1ZN19) スマートキャンペーンが実行されるのは、特定のプログラムステータスで、かつ[リードがターゲットリストに含まれる場合のみ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL53588098A1LA1)です。必要に応じてターゲットリストを入れ替えられますが、その場合は必ず処理用のスマートキャンペーンを更新してください。フロー内では、`Meeting Attended` ステータスの場合のみ、リードがメインの Brilliant プログラムの静的リストに送られます。[メインの Brilliant プログラム](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内の適切な `FYXX_QX` フォルダーに新しい静的リストを作成し、クローンした各プログラムのフローステップ 6 に追加する必要があります。フローステップ 4 はリードを `Invite Sent` ステータスでメインの Brilliant プログラムに追加しますが、静的リストはメインのプログラム内での長期的な追跡と整理に使用します
-- 注: Brilliant に接続されたメインプログラムは、SFDC では [Direct_Mail_eGift_Global - Brilliant connected](https://gitlab.lightning.force.com/lightning/r/Campaign/701Qq00001Pkt5sIAB/view) というキャンペーンとして表示されます。配送情報に関するプログラム/キャンペーンステータスは、Marketo プログラムでも SFDC キャンペーンでも確認できます
+- テンプレートについて、いくつか注意点があります。[01 - Processing](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC63769A1ZN19)スマートキャンペーンが実行されるのは、特定のプログラムステータスで、かつ[リードがターゲットリストに含まれる場合のみ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL53588098A1LA1)です。必要に応じてターゲットリストを入れ替えられますが、その場合は必ず処理用のスマートキャンペーンを更新してください。フロー内では、`Meeting Attended` ステータスの場合のみ、リードがメインの Brilliant プログラムの静的リストに送られます。[メインの Brilliant プログラム](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内の適切な `FYXX_QX` フォルダーに新しい静的リストを作成し、クローンした各プログラムのフローステップ 6 に追加する必要があります。フローステップ 4 はリードを `Invite Sent` ステータスでメインの Brilliant プログラムに追加しますが、静的リストはメインのプログラム内での長期的な追跡と整理に使用します
+- 注: Brilliant に接続されたメインプログラムは、SFDC では [Direct_Mail_eGift_Global - Brilliant connected](https://gitlab.lightning.force.com/lightning/r/Campaign/701Qq00001Pkt5sIAB/view)というキャンペーンとして表示されます。配送情報に関するプログラム/キャンペーンステータスは、Marketo プログラムでも SFDC キャンペーンでも確認できます
 
-### ステップ 2: Marketo プログラムをセットアップする
+### ステップ 2: Marketo プログラムをセットアップする {#step-2-set-up-the-marketo-programs}
 
 - 必須のプログラムトークンを入力します。このプログラムタイプに固有のトークンは `my.qualifiedlink` トークンで、`Sales Nominated Invite` メールに表示されます。Qualified リンクは、準備ができたときに Qualified テックオーナーによって共有されます（詳細は以下）
 - プログラムは Qualified から `Meeting Booked` と `Meeting Attended` の入力を受け取り、Processing スマートキャンペーンが Brilliant への webhook を呼び出して、ギフト引き換えメールを送信します（プログラムステータスが `Meeting Attended` の場合のみ）
-- `no show` アクティビティを登録するために、単一または parent プログラムで `03 Change to No Show` を活性化します * この機能は現時点では実験的です
+- `no show` アクティビティを登録するために、単一または親プログラムで `03 Change to No Show` を有効化します * この機能は現時点では実験的です
 
-### ステップ 3: ターゲットリストと nominated リードのロード
+### ステップ 3: ターゲットリストと指名されたリードのロード {#step-3-target-lists-and-loading-nominated-leads}
 
 プログラムテンプレートには、ターゲットリスト用のスマートリストアセットが含まれています。この段階では MktgOps に相談することを推奨します。
 
 - ターゲットリストを計画するには、`Target List NEW` を使用します。ターゲットリストとして別のスマートリストを使用する場合は、処理用のスマートキャンペーン内の必要な箇所を更新します
 - ターゲットリスト全体を、クローンしたプログラムに `Nominated` ステータスで追加することを推奨します
 
-### ステップ 4: ターゲットリストへのメール送信
+### ステップ 4: ターゲットリストへのメール送信 {#step-4-emailing-target-list}
 
 スマートキャンペーン `02 Send Sales Nominated Invite` はテンプレートに存在しますが、他のアウトリーチ手法が使用される可能性もあります。`02a Sales Nominated Invite Sent` は、すでにメールが送信されたリードのプログラムステータスを変更する方法として存在します。このスマートキャンペーンを使用してプログラムステータスを変更するために、送信された正しいメールアセットを接続するか、レポートをリクエストすれば MktgOps がレポートの処理を支援します
 
-### ステップ 5: Brilliant のセットアップ
+### ステップ 5: Brilliant のセットアップ {#step-5-brilliant-set-up}
 
 このステップでは Brilliant サポートチームへの連絡が必要であり、完了までに 1 ヶ月以上かかることがあります。Brilliant テックオーナーに連絡を取ってください。テックオーナーは（リクエスト者を CC に入れて）私たちの Brilliant の連絡先にメールを送ります。そこから、Brilliant チームはリクエスト者に意図された Campaign に関する一連の質問をし、セットアップについて議論します。決定される項目のいくつか:
 
@@ -1041,18 +1041,18 @@ Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の�
 
 Brilliant チームは、Marketo プログラムと webhook がバックエンドに到達していることも確認する必要があります
 
-注意: MktgOps は、メインのプログラムにある [Call to Brilliant TEST](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC76999A1ZN19) を利用して webhook が機能していることを確認する必要があります。webhook をリクエストするスマートキャンペーンは、バッチ型ではなくトリガー型である必要があるため、2 つのスマートキャンペーンが関わります。TEST スマートキャンペーンは、Brilliant の webhook を呼び出せる唯一のスマートキャンペーン [Send to Brilliant webhook do not alter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC77009A1ZN19) にリンクしています
+注意: MktgOps は、メインのプログラムにある [Call to Brilliant TEST](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC76999A1ZN19)を利用して webhook が機能していることを確認する必要があります。webhook をリクエストするスマートキャンペーンは、バッチ型ではなくトリガー型である必要があるため、2 つのスマートキャンペーンが関わります。TEST スマートキャンペーンは、Brilliant の webhook を呼び出せる唯一のスマートキャンペーン [Send to Brilliant webhook do not alter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC77009A1ZN19)にリンクしています
 
-### ステップ 6: Qualified を活用したミーティング予約のセットアップ
+### ステップ 6: Qualified を活用したミーティング予約のセットアップ {#step-6-qualified-powered-meeting-booking-set-up}
 
-この次のステップでは、Qualified テックオーナーの支援が必要になります。そのキャンペーンで使用する SFDC キャンペーン（メインの Brilliant プログラムではなく、クローンしたもの）をテックオーナーに提供します。そこから、Qualified リンクが作成され、テックオーナーによってリクエスト者に共有されます。このリンクは、nominated された見込み客が Sales Dev とのミーティングを予約するために必要な手法として、見込み客へのアウトリーチ中に使用されます
+この次のステップでは、Qualified テックオーナーの支援が必要になります。そのキャンペーンで使用する SFDC キャンペーン（メインの Brilliant プログラムではなく、クローンしたもの）をテックオーナーに提供します。そこから、Qualified リンクが作成され、テックオーナーによってリクエスト者に共有されます。このリンクは、指名された見込み客が Sales Dev とのミーティングを予約するために必要な手法として、見込み客へのアウトリーチ中に使用されます
 
 - 見込み客がミーティングを予約すると、Qualified はプログラムステータスを `Meeting Booked` に変更します
 - ミーティングの 1 時間前にリマインダーメールが送信されます
 - ミーティングが行われた後、Qualified はミーティングが行われたか欠席だったかを確認するために、Sales Dev チームメンバーに確認メールを送信します
 - Qualified がミーティングのアクティビティを `not attended` で更新した場合に `no show` とマークするかどうかを監視する実験的な自動化があります
 
-### ステップ 7: Campaign の完了
+### ステップ 7: キャンペーンの完了 {#step-7-campaign-completion}
 
 Campaign の終了時に、Qualified のロジックを取り下げるようリクエストします。Brilliant のストアフロントと Preferred キャンペーンへの更新は未定ですが、新しいキャンペーンごとに Brilliant に連絡し、電子ギフトの金額と確認メールを更新する必要があります
 
@@ -1062,19 +1062,19 @@ Campaign の終了時に、Qualified のロジックを取り下げるようリ�
 
 **アクティブまたは進行中のキャンペーン**
 
-| Campaign                                 | 追跡用の Campaign パラメータ |Marketo Listener?|
+| キャンペーン                                 | 追跡用の Campaign パラメータ |Marketo リスナーの有無|
 |------------------------------------------|---------------------------------|-----------------|
-| Digital Retargeting                     | fy27_rtg                          |[Yes](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16666A1) |
-| Digital Retargeting                         | fy26_rtg_global               |[Yes](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16666A1)|
-| ABM - DevSecOps                    | abmkey_devsecops                       | [Yes](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1) |
-| ABM - DevOps GTM                    | abmkey_devopsgtm                     |[Yes](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1)  |
-| ABM - DevSecOps Plat                              | abmkey_devsecopsplat   |[Yes](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1)|
-| Digital Contact Us                       | fy27_rtg_2026_scaled_contactsales_amer |[Yes](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26750A1)|
-| Digital Contact Us Free to Paid       | fy27_rtg_2026_scaled_f2pcontactsales_amer  |[Yes](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26851A1)|
+| Digital Retargeting                     | fy27_rtg                          |[はい](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16666A1) |
+| Digital Retargeting                         | fy26_rtg_global               |[はい](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16666A1)|
+| ABM - DevSecOps                    | abmkey_devsecops                       | [はい](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1) |
+| ABM - DevOps GTM                    | abmkey_devopsgtm                     |[はい](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1)  |
+| ABM - DevSecOps Plat                              | abmkey_devsecopsplat   |[はい](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1)|
+| Digital Contact Us                       | fy27_rtg_2026_scaled_contactsales_amer |[はい](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26750A1)|
+| Digital Contact Us Free to Paid       | fy27_rtg_2026_scaled_f2pcontactsales_amer  |[はい](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26851A1)|
 
 **無効化された、または古いキャンペーン、もはや使用されていない** これらのリスナーはもはやアクティブではなく、それらに対して LinkedIn キャンペーンを実行する前にセットアップする必要があります。
 
-| Campaign                                 | 追跡用の Campaign パラメータ |Marketo Listener?|
+| キャンペーン                                 | 追跡用の Campaign パラメータ |Marketo リスナーの有無|
 |------------------------------------------|---------------------------------|-----------------|
 | Version Control & Collaboration Use Case | vccusecase                      |  |
 | Simplify DevOps                          | simplifydevops                  |  |
@@ -1104,9 +1104,9 @@ Campaign の終了時に、Qualified のロジックを取り下げるようリ�
 - German
 - Portuguese
 
-誰かがこれらのフォームに記入すると、自動的に [Language Segmentation](/handbook/marketing/marketing-operations/marketo/#segmentations) に追加され、現地の言語でメッセージを受け取れるようになります。
+誰かがこれらのフォームに記入すると、自動的に [Language Segmentation](/handbook/marketing/marketing-operations/marketo/#segmentations)に追加され、現地の言語でメッセージを受け取れるようになります。
 
-### LinkedIn で LinkedIn Lead Gen Form を作成する（digital marketing）
+### LinkedIn で LinkedIn Lead Gen Form を作成する（Digital Marketing） {#create-linkedin-lead-gen-form-in-linkedin-digital-marketing}
 
 - Campaign が所在する地域（AMER、EMEA/APAC）に応じてフォームテンプレートをクローンします。異なるフォームがある理由はコンプライアンス関連であるため、地域に合った正しいテンプレートを必ず使用してください。3 つすべての地域をセットアップする場合は、両方のテンプレートを使用する必要があります。
   - 「form name」に、上記の表に表示されているとおりに正確に utm_campaign が含まれていることを確認します
@@ -1118,14 +1118,14 @@ Campaign の終了時に、Qualified のロジックを取り下げるようリ�
 - 「offer headline」と「offer details」を入力します
 - 「confirmation message」と `landing page URL` を更新します
   - テンプレートには標準のランディングページ URL としてホームページがありますが、より適切なページがある場合は URL を更新し、UTM は同じに保ちます
-- `utm_campaign` と `utm_content` の hidden field を更新します
+- `utm_campaign` と `utm_content` の非表示フィールドを更新します
   - リードデータが Marketo に渡されるように、正しい Campaign 命名を持つことが非常に重要です
 - フォームを保存します
 - 新しいフォームを使用する Campaign に移動して編集します
-- `form details` で call-to-action として `download` を選択し、新しいフォームを選択します
+- `form details` で行動喚起として `download` を選択し、新しいフォームを選択します
   - 注意: 新しいアセットが複数の地域で立ち上げられる場合は、正しいフォームを正しい地域別 Campaign に追加していることを確認します
 
-### ステップ 1: Salesforce Campaign を作成する
+### ステップ 1: Salesforce キャンペーンを作成する {#step-1-create-salesforce-campaign}
 
 [このプログラムをクローンする](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG8361A1)
 
@@ -1138,23 +1138,23 @@ _例: 2020_Social_AutomatedSoftwareDelivery_autoSD_LinkedIn Lead Gen_
 
 - `2020_Social_LinkedIn_Lead Gen` の `Parent Campaign` を追加します
 - [上記](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-5-update-the-salesforce-campaign)の手順を参照してください。
-- budget holder を更新します
+- 予算責任者を更新します
 - GTM Motion を更新します
 - SFDC キャンペーンのリンクをエピックまたは Issue に追加します。
 
-### ステップ 3: 自動応答メール
+### ステップ 3: 自動応答メール {#step-3-auto-responder-email}
 
-- 複数のアセットを活性化する場合は、自動応答メールをクローンし、各アセットについてプログラムに追加した追加トークンに一致するように、メール内のすべてのトークンを更新する必要があります。
+- 複数のアセットを有効化する場合は、自動応答メールをクローンし、各アセットについてプログラムに追加した追加トークンに一致するように、メール内のすべてのトークンを更新する必要があります。
 
-### ステップ 4: Marketo プログラムの更新
+### ステップ 4: Marketo プログラムの更新 {#step-4-update-the-marketo-program}
 
-- Digital LinkedIn Lead Gen フォームを追加するには、[Digital Paid Social Marketo Program](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16666A1) に移動します。ABM LinkedIn Lead Gen フォームについては、[ABM Paid Social Marketo Program](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1) に移動します。
+- Digital LinkedIn Lead Gen フォームを追加するには、[Digital Paid Social Marketo Program](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16666A1)に移動します。ABM LinkedIn Lead Gen フォームについては、[ABM Paid Social Marketo Program](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG16770A1)に移動します。
 
-- ローカルプログラムトークンを作成します。これらのプログラムは複数の LI lead gen フォームを処理するようにセットアップされています。活性化しているアセットの新しいトークンを追加します。
+- ローカルプログラムトークンを作成します。これらのプログラムは複数の LI lead gen フォームを処理するようにセットアップされています。有効化しているアセットの新しいトークンを追加します。
 
 **Smart List**
 
-- `01 Filled Out Form - Autoresponder` Campaign の smart list フィルターを、`contains` とプレフィックスで確認します
+- `01 Filled Out Form - Autoresponder` Campaign のスマートリストフィルターを、`contains` とプレフィックスで確認します
   - `Fills out LinkedIn Lead Gen Form`、`Lead Gen Form Name contains [parameter]`
   - 利用可能なパラメータは[上記にリスト](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-linkedin-lead-gen-form)されているか、リストにない場合は新規作成します。
 - `Filled out LinkedIn Lead Gen Form` フィルター - 新しい Campaign が類似の LinkedIn Lead Gen フォーム名を使用する場合は、他のプログラムが除外されていることを確認します。一般的な除外は `amer-pubsec`、`contactsales`、`abmkey` で、これらは別々の Campaign を流れます。これは必要なすべての除外の完全なリストではなく、セットアップしている内容に基づきます。除外の例については、既存の LI Lead Gen プログラムを確認できます。
@@ -1165,20 +1165,20 @@ _例: 2020_Social_AutomatedSoftwareDelivery_autoSD_LinkedIn Lead Gen_
 - `3 - Change Program Status` に変更なし - これはテンプレートに自動的に含まれています。Program: [Marketo プログラム名] - New Status Paid Social > Responded
 - `4 - Interesting Moment` Send Email ロジックと同じ方法でこれをセットアップしますが、description をアセットに一致するように変更します。一般的には、Choice 1: Filled out LinkedIn Lead Gen Form が [フォームからのコンテンツ名] を含む場合、Type Milestone、Description: Filled out LinkedIn form to view asset: [アセット名] を設定します。Default choice は汎用的であるべきです: "Filled out LinkedIn form to view [GTM 名] asset."
   - 各アセットの追加トークンをセットアップした場合は、トークンを使用して Interesting Moments を入力できます
-- `5 - Add to SFDC Campaign` - Send Email ロジックと同じ方法でこれをセットアップしますが、Campaign ドロップダウンフィールドを LinkedIn Lead Gen フォーム用に作成した SFDC キャンペーンに設定し、Status = Responded とします。活性化している各フォームについてこのステップを繰り返します。
+- `5 - Add to SFDC Campaign` - Send Email ロジックと同じ方法でこれをセットアップしますが、Campaign ドロップダウンフィールドを LinkedIn Lead Gen フォーム用に作成した SFDC キャンペーンに設定し、Status = Responded とします。有効化している各フォームについてこのステップを繰り返します。
 - ステップ 6、7、8 に変更なし。
 - ステップ 9: `Execute campaign` - これは Action Stream タグ付けを処理します。このステップでアクションは不要です。これは次のようになるべきです: Executed Campaign: Action Stream tagging: (LinkedIn) Check Asset
 - ステップ 10 に変更なし。
-- スマートキャンペーンの `schedule` タブで、トリガー Campaign をオン／活性化します
+- スマートキャンペーンの `schedule` タブで、トリガー Campaign をオン／有効化します
 - フォームプレフィックスを持つすべての LinkedIn プログラムは、この Campaign を流れるようになります
-- 新しいフォームが [action stream の対象となる](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)アセットをプロモーションする場合は、[Action Stream tagging: (LinkedIn) Check Asset](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC58851A1ZN19) プログラムをクリックします。それ以外の場合は、このステップをスキップします。
+- 新しいフォームが [action stream の対象となる](/handbook/marketing/lifecycle-marketing/email-processes-requests/#action-streams)アセットをプロモーションする場合は、[Action Stream tagging: (LinkedIn) Check Asset](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC58851A1ZN19)プログラムをクリックします。それ以外の場合は、このステップをスキップします。
 - Smart List: filter 1 に LinkedIn Lead Gen フォームの名前を追加します。
 - Flow: filter 1 に LinkedIn Lead Gen フォームの名前を追加します。
 - アセットが Finserv または PubSec 向けの場合、人々が現在のナーチャープログラムに入るように、SFDC キャンペーンをナーチャー処理に追加する必要があります。
-  - Finserv の場合: [00d - Add to Finserv nurture](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC62869A1ZN19) と [Vertical check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64233B2ZN19) の Smart List を更新します
-  - PubSec の場合: [Nurture - PubSec check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64118A1ZN19)、[00 - Add to PUBSEC](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC24342A1ZN19)、[PubSec - Action Stream check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64194A1ZN19) の Smart List を更新します
+  - Finserv の場合: [00d - Add to Finserv nurture](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC62869A1ZN19)と [Vertical check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64233B2ZN19)の Smart List を更新します
+  - PubSec の場合: [Nurture - PubSec check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64118A1ZN19)、[00 - Add to PUBSEC](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC24342A1ZN19)、[PubSec - Action Stream check](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC64194A1ZN19)の Smart List を更新します
 
-### ステップ 6: LinkedIn Lead Gen のセットアップをテストする
+### ステップ 6: LinkedIn Lead Gen のセットアップをテストする {#step-6-test-your-linkedin-lead-gen-set-up}
 
 - Digital Marketing にフォームを通じてテストレコードを送信してもらいます。Issue で以下のテキストを使用して、指定されたセクションを更新してリクエストできます:   `The Marketo program has been set-up for [name of asset] in [segment/region if applicable - you will not always need to provide this]. The automation will trigger based on [gtm code] and [content name]. Please submit a test record.`
 - テストリードが送信されたら、Marketo データベースでテストレコードを開きます。`Activity History` に移動して確認します:
@@ -1189,7 +1189,7 @@ _例: 2020_Social_AutomatedSoftwareDelivery_autoSD_LinkedIn Lead Gen_
    1. テストレコードが SFDC キャンペーンに追加されたことを確認します（数分かかる場合があります）（campaigns）
    1. このテストの結果として、テストレコードが他のメールを送信されたり、他のプログラムに追加されたりしなかったことを確認します（campaigns）
 
-### ステップ 7: このハンドブックページを更新する
+### ステップ 7: このハンドブックページを更新する {#step-7-update-this-handbook-page}
 
 - この[ハンドブックページをパラメータで](/handbook/marketing/marketing-operations/campaigns-and-programs/#steps-to-setup-linkedin-lead-gen-form)、`yes` と、セットアップしたパラメータと Campaign へのリンクで更新します。
 
@@ -1204,19 +1204,19 @@ _例: 2020_Social_AutomatedSoftwareDelivery_autoSD_LinkedIn Lead Gen_
      1. 他の自動応答が送信されなかったことを確認します
      1. 正しい Interesting Moment がトリガーされたことを確認します
      1. テストレコードが SFDC キャンペーンに追加されたことを確認します（数分かかる場合があります）
-     1. このテストの結果として、テストレコードが他のメール（該当する場合、ドイツ向けの double opt-in メールを除く）を送信されたり、他のプログラムに追加されたりしなかったことを確認します
+     1. このテストの結果として、テストレコードが他のメール（該当する場合、ドイツ向けのダブルオプトインメールを除く）を送信されたり、他のプログラムに追加されたりしなかったことを確認します
 
-### LinkedIn Lead Gen Contact Us のセットアップ
+### LinkedIn Lead Gen Contact Us のセットアップ {#linkedin-lead-gen-contact-us-set-up}
 
-- LinkedIn Lead Gen Contact Us フォームは、Free to Paid ではない Campaign については [Request - Digital Contact Us](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26750A1) を通じて処理されます。Free to Paid LinkedIn Lead Gen Contact us フォームは [Request - Digital Contact Us Free to Paid](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26851A1) を通じて処理されます。
+- LinkedIn Lead Gen Contact Us フォームは、Free to Paid ではない Campaign については [Request - Digital Contact Us](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26750A1)を通じて処理されます。Free to Paid LinkedIn Lead Gen Contact us フォームは [Request - Digital Contact Us Free to Paid](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG26851A1)を通じて処理されます。
 **Smart List**
 - `01 - Filled-out form` Smart List の `Fills Out LinkedIn Lead Gen Form` トリガーに LinkedIn Lead Gen フォーム名を追加します。
 **Flow - Free to Paid ではないフォームのみ**
 - `6 - Interesting Moment` LinkedIn Lead Gen フォームを Choice 1 のオプションとして追加します。Free to Paid LinkedIn Lead Gen contact us フォームをセットアップしている場合は、このステップをスキップします。
 **Alert**
-- [Request - Contact](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG2466A1) の `02 Alert for Contact Us` Smart List の `Fills Out LinkedIn Lead Gen Form` トリガーに LinkedIn Lead Gen フォーム名を追加します。
+- [Request - Contact](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG2466A1)の `02 Alert for Contact Us` Smart List の `Fills Out LinkedIn Lead Gen Form` トリガーに LinkedIn Lead Gen フォーム名を追加します。
 
-## LinkedIn Lead Gen Contact Us のセットアップをテストする
+## LinkedIn Lead Gen Contact Us のセットアップをテストする {#test-your-linkedin-lead-gen-contact-us-set-up}
 
 - Digital Marketing にフォームを通じてテストレコードを送信してもらいます。Issue で以下のテキストを使用して、指定されたセクションを更新してリクエストできます:  `Marketo Contact Us processing has been set-up for form [form name]. Please submit a test record using a non-GitLab email address and non-GitLab company name.`
 - テストリードが送信されたら、Marketo データベースでテストレコードを開きます。`Activity History` に移動して確認します:
@@ -1230,7 +1230,7 @@ _例: 2020_Social_AutomatedSoftwareDelivery_autoSD_LinkedIn Lead Gen_
       1. MQL がトリガーされたことを確認します
       1. Sales Alert が送信されたことを確認します
 
-### イベント登録を促進するための LinkedIn Lead Gen フォームの追加
+### イベント登録を促進するための LinkedIn Lead Gen フォームの追加 {#adding-linkedin-lead-gen-forms-to-drive-event-registration}
 
 LinkedIn Lead Gen フォームは、新しい Marketo プログラムを追加せずにイベント登録を促進するために使用できます。
 
@@ -1238,14 +1238,14 @@ LinkedIn Lead Gen フォームは、新しい Marketo プログラムを追加�
 2) ABM LI Lead Gen フォームについては、イベント登録の促進には命名規則 `abmkey_region_gtm` を使用します。標準（非イベント）フォーマットは `abmkey_gtm_region` です。`region` と `gtm` の順序を変更することで、メインの LI Lead Gen フォーム処理に除外を追加する必要がなくなります。
 3) Digital Marketing フォームについては、フォーム名に `gtm` を使用しないでください。イベントを表すユニークな名前を使用します。
 4) Marketo で、プロモーションしているイベントの Marketo プログラムに移動します。
-5) ほとんどのイベントでは、LinkedIn からの回答に対して waitlist をセットアップすることを推奨します。これにより、イベント DRI が登録を承認できます。waitlist 処理 Campaign がすでにプログラムで活性化されている場合は、ステップ 6 にスキップできます。
-     a) WAITLIST 処理がアクティブでない場合にのみこれを行ってください: `Registration` 処理 Campaign のみがアクティブな場合は、LI 回答用に waitlist を活性化する必要があります。`Waitlist` をクリックし、"Filled out form" トリガーを **削除** します。次に、ステップ 6 のタスクを完了し、`Waitlist` Campaign を活性化します。また、"Waitlist to Registered" Campaign も活性化する必要があります。
+5) ほとんどのイベントでは、LinkedIn からの回答に対して待機リストをセットアップすることを推奨します。これにより、イベント DRI が登録を承認できます。待機リスト処理 Campaign がすでにプログラムで有効化されている場合は、ステップ 6 にスキップできます。
+     a) WAITLIST 処理がアクティブでない場合にのみこれを行ってください: `Registration` 処理 Campaign のみがアクティブな場合は、LI 回答用に待機リストを有効化する必要があります。`Waitlist` をクリックし、"Filled out form" トリガーを **削除** します。次に、ステップ 6 のタスクを完了し、`Waitlist` Campaign を有効化します。また、"Waitlist to Registered" Campaign も有効化する必要があります。
 6) "Fills out LinkedIn Lead Gen Form" のトリガーを追加します。Lead Gen Form Name: `contains`（ここにステップ 1 で作成した Lead Gen フォーム名を入力）。このイベントに複数のフォームがある場合は、`contains` の後のボックスで緑色のプラス記号をクリックして複数のフォームを追加できます。
 7) フォームが AMER の回答のみをターゲットとしている場合は、「Flow」ステップをクリックし、一番下に「Change Data Value」を追加します。Add Choice。LinkedIn Lead Gen Form name が `contains`（LI lead gen フォームの名前）。Attribute: Opt-in、New value: True
-8) 更新をテストします。何を確認すべきかの詳細は [Marketo プログラムのセットアップをテストする](/handbook/marketing/marketing-operations/campaigns-and-programs/#test-your-marketo-program-setup) で確認できます - 人が waitlist に追加されると、自動応答は受け取りませんが、プログラムに追加されたのが見えます。
+8) 更新をテストします。何を確認すべきかの詳細は [Marketo プログラムのセットアップをテストする](/handbook/marketing/marketing-operations/campaigns-and-programs/#test-your-marketo-program-setup)で確認できます - 人が待機リストに追加されると、自動応答は受け取りませんが、プログラムに追加されたのが見えます。
 9) 質問がある場合や、セットアップを確認してもらいたい場合は、Campaign を本番稼働させる前に Marketing Ops に連絡してください。
 
-## Accelevents 用の Marketo プログラムのセットアップ手順
+## Accelevents 用の Marketo プログラムのセットアップ手順 {#steps-to-set-up-marketo-programs-for-accelevents}
 
 1. [Accelevents ハンドブックページ](/handbook/marketing/marketing-operations/accelevents/)の手順を使用して、Accelevents でイベントを作成します。
 1. Accelevents を通じてテスト登録を送信します。これにより Marketo にプログラムが作成されます。MARKETO でプログラムの名前を変更しないでください。同期が壊れます。
@@ -1255,7 +1255,7 @@ LinkedIn Lead Gen フォームは、新しい Marketo プログラムを追加�
      - 「event」という単語を含むすべてのトークン（例: {{my.event name}}）。「Interesting Moments」スマートキャンペーンがトークンに基づいて情報を Salesforce にプッシュするため、すべてのイベント詳細関連トークンを完了することが重要です。Campaign によっては、一部の自動応答メールやメールもトークンに依存します。Event Location のトークンは、In-Person イベントでは City を、virtual events では Virtually を入力する必要があります。
      - {{my.epic link}} - これは GitLab エピックまたは Asana プロジェクトへのリンクであることができます
      - {{my.landingpageURL}}
-     - {{my.utm}} - utm_campaign 値を入力します（残りの utm はそのままにします）。[UTM Generator](/handbook/marketing/utm-strategy/#how-to-create-utms) を使用して Campaign UTM を作成できます。
+     - {{my.utm}} - utm_campaign 値を入力します（残りの utm はそのままにします）。[UTM Generator](/handbook/marketing/utm-strategy/#how-to-create-utms)を使用して Campaign UTM を作成できます。
      - {{my.reply email}}
      - プログラムが Action Streams の対象となる場合（現在は Security のみで利用可能）は、ここで関連タイプで {{my.Action Stream}} トークンを更新してください。
 1. 処理 Campaign とメールをプログラムにクローンします。
@@ -1270,28 +1270,28 @@ LinkedIn Lead Gen フォームは、新しい Marketo プログラムを追加�
 1. Schedule で、`Activate` をクリックします。このプログラムのセットアップについて質問がある場合は、MOps に連絡してレビューしてもらってください。
 1. セットアップを完了するために、[SFDC Campaign セクション](/handbook/marketing/marketing-operations/campaigns-and-programs/#sfdc-campaign-instructions)の手順に従ってください。
 
-## ラッフル
+## ラッフル {#raffles}
 
 ラッフルはさまざまな Campaign タイプに関連付けることができ、参加方法もさまざまです。ラッフルを開始する前に、[法的要件](/handbook/legal/marketing-collaboration/#engaging-legal-for-approval)を完了する必要があります。
 
 一般的に、ラッフルには [YYYYMMDD_SurveyName](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG6402A1) Marketo プログラムと Survey Campaign タイプが使用されます。ラッフルのセットアップは複雑になる可能性があるため、以下の手順を使用する場合でも Marketing Ops が関与する必要があります。プログラムを作成し、追加のセットアップやレビューのために Marketing Ops に関与してもらうには、これらの手順を使用してください。
 
-### ラッフルのために Smart List、Flow、Token を更新する
+### ラッフルのためにスマートリスト、フロー、トークンを更新する {#for-a-raffle-update-smart-lists-flows-and-tokens}
 
-- [YYYYMMDD_SurveyName](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG6402A1) をクローンします
+- [YYYYMMDD_SurveyName](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG6402A1)をクローンします
 - 以下の構文を使用してプログラムに名前を付けます: `YYYYMMDD_NameofProgram_Raffle`。おそらく別の Campaign タイプも関連付けられており（例えばカンファレンス）、このプログラムはそのイベントのフォルダーに格納すべきです。これはカンファレンスに関連付けられたスピーキングセッションを作成するのと同様のプロセスです。
 - Marketo のプログラムメイン画面で、Salesforce Sync が "not set" となっている箇所の "not set" をクリックして SFDC に同期し、「Create New」をクリックします。プログラムが自動的に Campaign タグを入力するため、`Save` をクリックする以外は何も編集する必要はありません。
-  - Allocadia のユーザーの場合は、`Description` フィールドに Allocadia raffle line item ID を追加する必要があります。`Save` をクリックします。
-- [SFDC キャンペーンを更新](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-4-update-the-salesforce-campaign)し、該当する場合は [parent campaign](/handbook/marketing/marketing-operations/campaigns-and-programs/#parentchild-campaigns-setup) に関連付けます。
+  - Allocadia のユーザーの場合は、`Description` フィールドに Allocadia のラッフルの明細項目 ID を追加する必要があります。`Save` をクリックします。
+- [SFDC キャンペーンを更新](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-4-update-the-salesforce-campaign)し、該当する場合は [parent campaign](/handbook/marketing/marketing-operations/campaigns-and-programs/#parentchild-campaigns-setup)に関連付けます。
   - Allocadia のユーザーの場合は、[こちら](/handbook/marketing/marketing-operations/campaigns-and-programs/#step-8-update-the-salesforce-campaign---using-allocadia)の手順を参照してください。
 - Marketo プログラムに戻り、トークンを完了します。{{my.Survey Name}} トークンを「Default」という単語で更新します - このトークンに別のエントリを使用しないでください。
 - ランディングページを使用している場合: [Registration ページ](/handbook/marketing/demand-generation/campaigns/landing-pages/#general-marketo-landing-page-creation-instructions)、thank you ページ、登録確認メールを更新します。
 - ランディングページを使用している場合: `01a Registration Flow` をクリックし、Smart List を "Form Name is any" に変更します。"Web page is" は、このプログラムの登録ページですでに入力されているはずです。Flow はすでに入力されているはずですが、Step 5 - Interesting Moment を更新して、Step 5 の `Description` フィールドに "Filled out form to enter raffle {{my.Survey Title}}" と読むようにします。`Schedule` に移動して「Activate」をクリックします。
-- フォームへの回答者は、`Filled out Survey` としてプログラムと SFDC キャンペーンに追加され、[scoring model](/handbook/marketing/marketing-operations/marketo/#behavior-scoring) の `Survey - Low` エントリに従ってスコアリングされます。
+- フォームへの回答者は、`Filled out Survey` としてプログラムと SFDC キャンペーンに追加され、[scoring model](/handbook/marketing/marketing-operations/marketo/#behavior-scoring)の `Survey - Low` エントリに従ってスコアリングされます。
 - ラッフルのセットアップは複雑になる可能性があるため、Marketing Ops が関与する必要があります。セットアップの支援のために、`Marketo LP and Automation` Issue に `MktgOps::00:Triage` と `MktgOps-Support` のラベルを追加できます。
 - ランディングページを使用していない場合は、MarketingOps がこの Campaign の正しい処理を決定する支援をします。
 
-## Marketo プログラムから Owned Event のメンバーステータスを更新する
+## Marketo プログラムから主催イベントのメンバーステータスを更新する {#updating-member-statuses-for-owned-events-from-marketo-programs}
 
 `Owned Event`（リードを収集した GitLab 運営のランディングページを含むもの）が完了すると、DRI は[リードリストアップロード](/handbook/marketing/marketing-operations/automated-list-import/)を送信する代わりに、Marketo から直接メンバーステータスを更新できます。**注意:** これはステータス変更 **のみ** に対するものです。リードにメモを追加する場合は、[リードリストアップロード](/handbook/marketing/marketing-operations/automated-list-import/)を送信する必要があります。
 
@@ -1302,7 +1302,7 @@ LinkedIn Lead Gen フォームは、新しい Marketo プログラムを追加�
 1. ドロップダウンで適切なステータス（`Attended`、`Follow up Requested`、`No Show` など）を選択します
 1. Marketo がステータスを調整するのに少し時間がかかり、その後ステータスが更新されます
 
-## Marketo プログラムから登録を削除する
+## Marketo プログラムから登録を削除する {#removing-registrations-from-marketo-programs}
 
 Campaign 用にランディングページがセットアップされたら、すべてが統合され適切に実行されていることを確認するために、複数の人に登録をテストしてもらうことが良いプラクティスです。その結果、Marketo プログラムにはさまざまなテスト登録が含まれることがよくあります。これらのテスト登録を削除するには、以下の手順に従ってください。
 
@@ -1313,7 +1313,7 @@ Campaign 用にランディングページがセットアップされたら、�
 1. ドロップダウンで `Not in Program` を選択します
 1. Marketo がステータスを調整するのに少し時間がかかり、その後名前が `Members` リストから削除されます
 
-### Marketo プログラムと Zoom から SPAM を削除する
+### Marketo プログラムと Zoom から SPAM を削除する {#removing-spam-from-marketo-programs-and-zoom}
 
 時折、SPAM ボットが私たちのウェブキャスト登録を攻撃します。Marketo と SFDC から削除するには、これらのステップに従ってください。完了するには Mops と Issue を開く必要があります。Issue リクエストに Marketo プログラムのリンクとイベントの日付を含めてください。SPAM 登録者は zoom からは削除されず、手動で削除する必要があります。ただし、Campaign の数値に影響しないため、zoom Campaign に残しておいても問題ありません。
 
@@ -1325,11 +1325,11 @@ Campaign 用にランディングページがセットアップされたら、�
 
 プログラム終了後、Marketo プログラムに SPAM がないかダブルチェックしてください。（登録フィルターから除外されたものの）登録した人々は、フォームがそのプログラムの一部であるため、`No Action` としてプログラムに追加されます。上記の手順を再実行して、それらをすべての Campaign 統計から完全に削除してください。
 
-## メール送信のキャンセル
+## メール送信のキャンセル {#canceling-an-email-send}
 
 メールが送信されるように設定されているものの、キャンセルする必要がある場合があります。プログラムのタイプに基づいて、これを行う方法がいくつかあります。
 
-### Smart Campaign - Scheduled Send
+### スマートキャンペーン - スケジュールされた送信 {#smart-campaign---scheduled-send}
 
 1. スマートキャンペーン > schedule に移動し、送信の日付と時刻の横にある赤い `x` をクリックすることで、特定の実行をキャンセルできます。
 1. 実行全体をキャンセルするには、スマートキャンペーン > schedule > campaign actions > `Abort Campaign` に移動します。
@@ -1340,7 +1340,7 @@ Marketo ドキュメント:
 - [Campaign 実行の停止](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-campaigns/using-smart-campaigns/cancel-a-scheduled-batch-campaign-run.html?lang=en)
 - [Campaign の中止](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-campaigns/using-smart-campaigns/abort-a-smart-campaign.html?lang=en)
 
-### Smart Campaign - Triggered Send
+### スマートキャンペーン - トリガーによる送信 {#smart-campaign---triggered-send}
 
 1. Campaign がトリガーベースで実行されている場合は、スマートキャンペーン > schedule に移動し、`deactivate` ボタンをクリックすべきです。これにより、リードが Campaign から再度資格を得るのを停止します。
 1. Campaign が複数のフローステップを実行している場合、リードがフローを継続するのを止めるには、スマートキャンペーン > schedule > campaign actions > `Abort Campaign` に移動する必要があります。これにより、リードがフローを継続するのを停止し、それ以上のメールが送信されるのを停止します。
@@ -1350,7 +1350,7 @@ Marketo ドキュメント:
 - [スマートキャンペーンの無効化](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-campaigns/using-smart-campaigns/deactivate-a-trigger-smart-campaign-schedule-tab.html?lang=en)
 - [スマートキャンペーンの中止](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-campaigns/using-smart-campaigns/abort-a-smart-campaign.html?lang=en)
 
-### Email Batch Campaign
+### メールバッチキャンペーン {#email-batch-campaign}
 
 このプログラムタイプにはメールボックスのアイコンがあります。
 
@@ -1362,7 +1362,7 @@ Marketo ドキュメント:
 - [メールプログラムの中止](https://experienceleague.adobe.com/docs/marketo/using/product-docs/email-marketing/email-programs/email-program-actions/abort-email-program.html?lang=en)
 - [メールプログラムの未承認](https://experienceleague.adobe.com/docs/marketo/using/product-docs/email-marketing/email-programs/email-program-actions/approve-unapprove-an-email-program.html?lang=en)
 
-### 手順: 5,000 名を超える参加者がいる Conference を更新する方法 {#instructions-how-to-update-conferences-with-more-than-5000-attendees}
+### 手順: 5,000 名を超える参加者がいるカンファレンスを更新する方法 {#instructions-how-to-update-conferences-with-more-than-5000-attendees}
 
 5,000 名を超える参加者がいるカンファレンスのリストロードでは、それらを `success` としてマークしないことを検討してください。担当の `Field Marketing Director` がこれらのメンバーを `success` としてマークしないことに同意した場合、それが起こらないようにするためのステップは以下のとおりです。**これは MktgOps チームのメンバーのみが行えます！**
 
@@ -1371,22 +1371,22 @@ Marketo ドキュメント:
 1. attended メンバーのリストをロードします
 1. リストの処理が完了し、Campaign メンバーが追加されたら、Admin>Tags>Channel>Conference に戻り、`Attended` の `Success` ボックスを再度チェックします
 
-## 手順: イベント登録で食事制限を収集し、回答を表示する方法
+## 手順: イベント登録で食事制限を収集し、回答を表示する方法 {#instructions-how-to-collect-dietary-restrictions-on-event-registration-and-view-responses}
 
 1. owned event（Field Marketing）については、`FORM 4286: Owned event with Dietary Restriction` を LP に追加します。このデータを収集する他のフォームもある点に注意してください。例えば DevSecOps World Tour フォームです。使用するフォームがわからない場合は MOps に確認してください。
 1. Registration Processing SC で `FORM 4286` を探すように Smart Campaign を更新します。
-1. フォームからの回答を探すために smartlist を作成します。プログラムから「New」、「New local asset」、「Smart List」の順にクリックします。smart list に「Dietary Requirements」と名前を付けます。フィルター `Member of Program`（プログラム名）と `Dietary Restriction Details`（is not empty）を追加します。
+1. フォームからの回答を探すためにスマートリストを作成します。プログラムから「New」、「New local asset」、「Smart List」の順にクリックします。スマートリストに「Dietary Requirements」と名前を付けます。フィルター `Member of Program`（プログラム名）と `Dietary Restriction Details`（is not empty）を追加します。
 1. 次に、詳細を表示するために Marketo で[カスタムビューを作成](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/using-smart-lists/create-and-change-views-for-lists-and-smart-list)する必要があります。ビューを作成すると、常にドロップダウンで選択できるようになります。
-1. 作成した `Dietary Requirements` smart list をクリックし、People タブに移動します。
+1. 作成した `Dietary Requirements` スマートリストをクリックし、People タブに移動します。
 1. `View: Default` と表示されている箇所をクリックします
 1. Create View を選択します
-1. ビューに Dietary Restrictions と名前を付け、hidden columns で `Dietary Restriction Detail` と `Dietary Restrictions: Other` を選択します
+1. ビューに Dietary Restrictions と名前を付け、非表示列で `Dietary Restriction Detail` と `Dietary Restrictions: Other` を選択します
 1. Create をクリックします
-1. Marketo レポートで Physical Accommodation リクエストを表示する必要がある場合も、上記と同じ手順に従える点に注意してください。これのフィールドは `Physical Assistance Needs` と `Physical Assistance Detail` です。
+1. Marketo レポートで身体的な配慮のリクエストを表示する必要がある場合も、上記と同じ手順に従える点に注意してください。これのフィールドは `Physical Assistance Needs` と `Physical Assistance Detail` です。
 
 作成したビューは今後の使用のために保存されるため、将来この特定のビューを表示する必要があるときはいつでも、View: Default をクリックしてドロップダウンから「Dietary Restrictions」を選択します（リストはあなた固有のものなので、他の人とは異なるオプションになります）。プライバシー要件のため、この情報を SFDC にプッシュしていませんが、イベントの 7 日後まで Marketo で確認できます。食事制限フィールドは、リードリストがロードされてから 7 日後に自動的にクリアされます。
 
-## Sales Play Salesforce Campaign のセットアップ手順
+## Sales Play の Salesforce キャンペーンのセットアップ手順 {#steps-to-set-up-sales-play-salesforce-campaign}
 
 1. Campaigns タブに移動します
 

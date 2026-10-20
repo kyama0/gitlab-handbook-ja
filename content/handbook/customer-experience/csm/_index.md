@@ -2,11 +2,11 @@
 title: "Customer Success Management ハンドブック"
 description: "GitLab の Customer Success Management チームは Customer Success 部門の一部であり、顧客の信頼できるアドバイザーとして、より迅速に価値を実現するために支援します。"
 upstream_path: /handbook/customer-experience/csm/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+translated_at: "2026-10-20T10:43:24Z"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-20T10:07:36Z"
 ---
 
 ## Customer Success セグメント
@@ -87,18 +87,18 @@ CSM は顧客の採用、測定可能な成果、顧客満足度、そして真�
     <td><a href="/handbook/customer-experience/csm/renewals/">更新</a></td>
     <td><ul><li>CSM の仕事は、更新の 3 〜 4 ヶ月前に「ソフト」な<a href="/handbook/customer-experience/csm/renewals/#renewal-question">更新質問</a>をすることです</li><li>この会話とその結果は、Gainsight の「更新コール」ミーティングタイプ（タイムラインエントリ内）を使用して追跡されます</li></ul></td>
     <td>セグメントや地域に関わらず、すべての顧客</td>
-    <td>DRI: CSM, AE, リニューアルチーム<br><br>Consulted: 顧客<br><br>Informed: リーダーシップ</td>
+    <td>DRI: CSM, AE, Renewals team<br><br>Consulted: 顧客<br><br>Informed: リーダーシップ</td>
   </tr>
   <tr>
   <td><a href="/handbook/customer-experience/csm/health-score-triage/">リスク管理</a></td>
     <td><ul><li>CSM は顧客アカウントのリスクを積極的に管理し、縮小やチャーンの潜在的なリスク（未確認であっても）がある場合は迅速に赤フラグを立てます</li><li>CSM は、アカウントチームにアカウントのリスクについて頻繁にコミュニケーションを取り、必要に応じて<a href="/handbook/customer-experience/csm/escalations/">エスカレーションプロセスを起動・リードする</a>責任があります</li></ul></td>
     <td>すべての顧客に対してリスクを積極的に管理すること</td>
-    <td>DRI: CSM<br><br>Consulted: AE, リーダーシップ<br><br>Informed: リニューアルチーム</td>
+    <td>DRI: CSM<br><br>Consulted: AE, リーダーシップ<br><br>Informed: Renewals team</td>
   </tr>
 </tbody></table>
 
 [CSM ビジネスリズム（日次〜年次）](/handbook/customer-experience/csm/rhythm/)の概要についてはこちらのページを参照してください。
-CSM が関与する領域の概要については[CSM エンゲージメントポイント](/handbook/customer-experience/csm/services/)のページを参照してください。
+CSM が関与する領域の概要については [CSM エンゲージメントポイント](/handbook/customer-experience/csm/services/)のページを参照してください。
 
 ### カスタマージャーニー
 
@@ -187,7 +187,6 @@ CSM が関与する領域の概要については[CSM エンゲージメント�
 - [CSM ロールプレイシナリオ](/handbook/customer-experience/csm/roleplays/)
 - [CSM レトロスペクティブ](/handbook/customer-experience/csm/retrospectives/)
 - [CSM PTO ガイドライン](/handbook/customer-experience/csm/pto/)
-- [CSM README](/handbook/customer-experience/csm/readmes/)（任意）
 
 ### プラットフォーム採用の推進
 
@@ -204,7 +203,7 @@ CSM が関与する領域の概要については[CSM エンゲージメント�
 - [顧客ユースケース採用](/handbook/customer-experience/product-usage-data/use-case-adoption/)
 - [ハウツー: Gainsight での DevSecOps 採用追跡](/handbook/customer-experience/csm/devsecops-adoption-tracking/)
 - [ユースケース採用メトリクス](/handbook/customer-experience/csm/stage-adoption/)
-- [サービスピングで得られる顧客価値](/handbook/customer-experience/csm/service-ping-faq/)
+- [Service Ping で得られる顧客価値](/handbook/customer-experience/csm/service-ping-faq/)
 - [製品使用データ - Gainsight での製品使用データの決定版ガイド](/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/)
 - [メトリクスベースの製品使用プレイブック](/handbook/customer-experience/product-usage-data/metrics-based-playbooks/)
 

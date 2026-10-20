@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
-translated_at: "2026-09-24T21:14:28+00:00"
+upstream_sha: "ddc319726d9e3f1cfd7f88faf4798bf31af6bf10"
+translated_at: "2026-10-20T11:28:40+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T14:34:29+02:00"
+lastmod: "2026-10-13T14:47:24+02:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -32,7 +32,7 @@ Artifact Registry は次の点を考慮したデータベース構成を必要�
 - すべてのテーブルは `namespace_id` カラムを含みます。[Cells のシャーディングキー要件](https://docs.gitlab.com/ee/development/database/multiple_databases/#guidelines-on-choosing-a-sharding-key) はサテライトサービスのデータベースには適用されません。行はネームスペースのアンカータプル（`platform`、`entity_type`、`entity_id`）を通じて間接的に Organization に帰属します。このカラムは以下のすべてのテーブル定義に明示的に示しています。
 - すべての `jsonb` カラムは、無制限なペイロードを防ぎ期待される構造を強制するために、永続化前に厳格な JSON スキーマに対して検証されなければなりません。これはこのドキュメント内のすべての `jsonb` カラムに適用されます（例: `rule_configuration` および `package_json`）。
 - リモートリポジトリテーブルの暗号化された認証情報カラムは、単独では成り立ちません。各行には、認証情報を復号するためのラップされたデータ暗号化キーと、それをラップしたネームスペースキーの識別情報（`wrapped_dek`、`ns_key_id`、`ns_key_version`）も保持されるため、この 3 つがなければ暗号文を読み取れません。この 3 つとテーブルの暗号文カラムは一括して有無が決まる単位を構成し、CHECK 制約により、この単位のすべてのカラムが設定されているか、すべてが `NULL` であるかのどちらかを強制しなければなりません。部分的な認証情報（例: パスワードのないユーザー名）は受け付けません。また、暗号文のないラップ済み DEK や、ラップ済み DEK のない暗号文など、この 3 つによって生じ得る部分的な状態も受け付けません。`npm_remote_repositories` のようにテーブルが 1 つの認証情報属性しか保存しない場合でも、このような部分的な状態はレコードが保持する属性数に左右されないため、制約は必要です。キーテーブルと共通のカラム構成については、[暗号化キー](#encryption-keys)を参照してください。
-- リモートリポジトリテーブルの暗号化された認証情報カラム（`encrypted_username`、`encrypted_password`、`encrypted_auth_token`）は、平文の入力を 2048 文字に制限し、暗号化前に Go の検証レイヤーで強制します。この上限は平文に対するものであり、平文はアプリケーションレイヤーにのみ存在します。データベースが見るのは `bytea` の暗号文だけなので、DB 側の CHECK（例: `octet_length(...) <= N`）は、暗号化方式の固定オーバーヘッド（IV、認証タグ、key-id ヘッダー）を介して間接的に平文を制約することしかできず、上限の近似となり、必須の Go チェックと冗長になります。CHECK を省略することで、スキーマを暗号フレーミングから切り離した状態にも保てます。暗号、key-id レイアウト、エンベロープ構造の変更がスキーママイグレーションを必要としません。
+- リモートリポジトリテーブルの暗号化された認証情報カラム（`encrypted_username`、`encrypted_password`、`encrypted_auth_token`）は、平文の入力を 2048 文字に制限し、暗号化前に Go の検証レイヤーで強制します。この上限は平文に対するものであり、平文はアプリケーションレイヤーにのみ存在します。データベースが見るのは `bytea` の暗号文だけなので、DB 側の CHECK（例: `octet_length(...) <= N`）は、暗号化方式の固定オーバーヘッド（IV、認証タグ、キー ID ヘッダー）を介して間接的に平文を制約することしかできず、上限の近似となり、必須の Go チェックと冗長になります。CHECK を省略することで、スキーマを暗号フレーミングから切り離した状態にも保てます。暗号、キー ID レイアウト、エンベロープ構造の変更がスキーママイグレーションを必要としません。
 - すべての `id` カラムは、Artifact Registry インスタンスのスコープ内で一意でなければなりません。`namespaces.id` は UUIDv7（[RFC 9562](https://datatracker.ietf.org/doc/rfc9562/)）を使用し、すべての Artifact Registry デプロイにまたがるグローバルな一意性を保証します。PostgreSQL の各バージョンで利用可能な生成方法を含む完全な根拠については、[ネームスペース ID の型](#namespace-id-type)を参照してください。その他すべての API 公開テーブルも `id` に UUIDv7 を使用し、アプリケーションレイヤーで生成します（カラムデフォルトもシーケンスも使用しません）。これにより、API に公開されるすべてのエンティティで単一の識別子型を維持し、調整なしでデプロイ間のグローバル一意性を保証します。アプリケーション生成の UUIDv7 は論理レプリケーションにも適しています（[出典](https://gitlab.com/gitlab-com/gl-infra/data-access/dbo/dbo-issue-tracker/-/work_items/691#note_3309931104)）。サブスクライバー間で調整すべきサーバー側シーケンスや `GENERATED` カラムがなく、UUIDv7 の時刻順序性により B-tree の挿入局所性は `BIGSERIAL` に近く保たれます。内部 blob ストレージ層（`blob_storage_attachments`、`blob_storage_blobs`、`upload_sessions`）は意図的な例外です。API には決して公開されず、最も大量の行を保持するため、`bigint DEFAULT nextval('<table>_id_seq')` の ID を維持します。その一意性は単一の Artifact Registry データベース内でローカルに強制されます。これらの行は常にネームスペース配下にスコープされるため、それで十分です。サーバー側デフォルトを持たないすべての `uuid` `id` カラムには値をバージョン 7 に制限する CHECK 制約があり、ジェネレーターを信頼するのではなくスキーマがバージョンを強制します。
 
 ## 決定事項
@@ -43,7 +43,7 @@ Artifact Registry は次の点を考慮したデータベース構成を必要�
 - [リポジトリコレクションテーブル](#repository-collections)。ネームスペース内のリポジトリの論理的なグループです。スキーマには初日から存在しますが、まだユーザーには公開されていません。すべてのネームスペースには「default」リポジトリコレクションが作成され、すべてのリポジトリが自動的にそこへ割り当てられます。
 - ネームスペースレベルのテーブル。これらは [ライフサイクルポリシーの設定とルール](#lifecycle-policies)、[ネームスペースレベルのストレージ統計](#storage-usage-calculation)、およびこのネームスペースに保存されたシークレットをラップする [暗号化キー](#encryption-keys)を、ネームスペースに直接スコープして扱います。
 - [リポジトリ親テーブル](#repositories)。すべてのフォーマットにまたがるすべてのリポジトリ（ホスト型、仮想型、リモート型）の統一されたレジストリであり、ランディングページのハイブリッドリストとクロスフォーマットクエリを支えます。
-- アーティファクトフォーマットレベルのテーブル。ここには各フォーマット専用のテーブルがあります。ホスト型リポジトリ（[Container](#container-repositories)、[Maven](#maven-repositories)、[NPM](#npm-repositories)）、リモートリポジトリ（[Container](#container-remote-repositories)、[Maven](#maven-remote-repositories)、[NPM](#npm-remote-repositories)）、仮想リポジトリ（[Container](#virtual-container-repositories)、[Maven](#maven-virtual-repositories)、[NPM](#npm-virtual-repositories)）。それぞれ `repository_id` を介して親の `repositories` テーブルを参照します。
+- アーティファクトフォーマットレベルのテーブル。ここには各フォーマット専用のテーブルがあります。ホスト型リポジトリ（[Container](#container-repositories)、[Maven](#maven-repositories)、[NPM](#npm-repositories)、[Generic](#generic-repositories)）、リモートリポジトリ（[Container](#container-remote-repositories)、[Maven](#maven-remote-repositories)、[NPM](#npm-remote-repositories)）、仮想リポジトリ（[Container](#virtual-container-repositories)、[Maven](#maven-virtual-repositories)、[NPM](#npm-virtual-repositories)）。それぞれ `repository_id` を介して親の `repositories` テーブルを参照します。Generic はホスト型のみです。リモートリポジトリがプロキシするメタデータインデックスも、仮想リポジトリがマージするメタデータインデックスも持たないため、リモート型や仮想型のテーブルはありません。
 - [blob ストレージレベルのテーブル](#blob-storage)。実際のストレージメタデータと [進行中のアップロードセッションの追跡](#upload-sessions) を扱います。
 
 ### ネームスペース {#namespaces}
@@ -68,8 +68,10 @@ erDiagram
     }
 ```
 
-- **namespaces**: 他のすべてのテーブルが `namespace_id` を介して参照するルートエンティティです。各ネームスペースは、URL やクライアント設定で使用される不変かつグローバルに一意な `slug` を持ちます（スラッグの設計とグローバルな一意性の強制については [ADR-022](022_namespace_decoupling.md) を参照）。`(platform, entity_type, entity_id)` タプルは、そのセマンティクスを解釈することなく、ネームスペースを外部エンティティ（デフォルトでは Organization）にリンクします。`entity_id` は、基となる値が数値であっても `TEXT` として保存され、アンカー型間でスキーマを統一して保ちます。Organizations v1 では、すべての行が `('gitlab', 'organization', '<organizations.uuid>')`、すなわち数値の `organizations.id` ではなく organization の UUIDv7 を持ちます。IAM の Relationships API は UUIDv7 でない object ID が現れるリクエスト全体を拒否するため、数値 ID では organization の祖先を名指しできません。`billing_entity_type` と `billing_entity_id` は、使用量イベントのための課金アンカーを識別します。外部から提供されるカラム（`platform`、`entity_type`、`entity_id`、`billing_entity_type`、`billing_entity_id`）のいずれもスキーマレベルのデフォルトを持ちません。その根拠については [ADR-022](022_namespace_decoupling.md) を参照してください。`delivery_mode_override` カラムは、[ADR-005](005_artifact_delivery_mode.md) で定義されたネームスペースごとのアーティファクトデリバリーのオーバーライドを保持します。`NULL` はインスタンスのデフォルト（`StorageConfig.delivery_mode`）を継承し、`0`（`redirect`）はこのネームスペースに対してリダイレクトを強制し、`1`（`proxy`）はプロキシを強制します。ダウンロードリクエストの有効なデリバリーパターンは `namespace.delivery_mode_override ?? instance.delivery_mode` です。このカラムは、リクエストハンドラーが認可とルーティングのために実行する既存のネームスペース検索の一環として読み取られるため、別個のクエリやインデックスは必要ありません。カラム型は `SMALLINT` で、整数からラベルへのマッピングは Go アプリケーションで定義されます（`0 = redirect`、`1 = proxy`）。PostgreSQL の `ENUM` 型は安全に変更するのが難しいため避けています。アーティファクトデリバリーの選択を保存する将来のカラム（例: S17 がリポジトリごとのオーバーライドを導入する場合）は、同じ整数マッピングを再利用します。
-- **ライフサイクルイベント**（`deleted_at`、`purged_at`）: [ADR-015（内部）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#slug-lifecycle)で定義されたスラッグのライフサイクルを実装します。`deleted_at` はソフト削除されたネームスペースを示し、[ADR-010](010_data_retention.md#subscription-expiration) のソフト削除ウィンドウ内で回収できます。`purged_at` はハード削除されたネームスペースを示します。スラッグは永久に廃止され、アンカーと課金のカラムは監査とフォレンジックのために保持されます。これら 2 つは一方向のイベント記録であり、一度設定されると設定されたままになります。purge 済みの行では両方が設定されます。
+- **namespaces**: 他のすべてのテーブルが `namespace_id` を介して参照するルートエンティティです。各ネームスペースは、URL やクライアント設定で使用される不変かつグローバルに一意な `slug` を持ちます（スラッグの設計とグローバルな一意性の強制については [ADR-022](022_namespace_decoupling.md) を参照）。`(platform, entity_type, entity_id)` タプルは、そのセマンティクスを解釈することなく、ネームスペースを外部エンティティ（デフォルトでは Organization）にリンクします。`entity_id` は、基となる値が数値であっても `TEXT` として保存され、アンカー型間でスキーマを統一して保ちます。Organizations v1 では、すべての行が `('gitlab', 'organization', '<organizations.uuid>')`、すなわち organization の
+  数値の `organizations.id` ではなく UUIDv7 を持ちます。IAM の Relationships API は、UUIDv7 でないオブジェクト ID が現れる
+  リクエスト全体を拒否するため、数値 ID では organization の祖先を名指しできません。`billing_entity_type` と `billing_entity_id` は、使用量イベントのための課金アンカーを識別します。外部から提供されるカラム（`platform`、`entity_type`、`entity_id`、`billing_entity_type`、`billing_entity_id`）のいずれもスキーマレベルのデフォルトを持ちません。その根拠については [ADR-022](022_namespace_decoupling.md) を参照してください。`delivery_mode_override` カラムは、[ADR-005](005_artifact_delivery_mode.md) で定義されたネームスペースごとのアーティファクトデリバリーのオーバーライドを保持します。`NULL` はインスタンスのデフォルト（`StorageConfig.delivery_mode`）を継承し、`0`（`redirect`）はこのネームスペースに対してリダイレクトを強制し、`1`（`proxy`）はプロキシを強制します。ダウンロードリクエストの有効なデリバリーパターンは `namespace.delivery_mode_override ?? instance.delivery_mode` です。このカラムは、リクエストハンドラーが認可とルーティングのために実行する既存のネームスペース検索の一環として読み取られるため、別個のクエリやインデックスは必要ありません。カラム型は `SMALLINT` で、整数からラベルへのマッピングは Go アプリケーションで定義されます（`0 = redirect`、`1 = proxy`）。PostgreSQL の `ENUM` 型は安全に変更するのが難しいため避けています。アーティファクトデリバリーの選択を保存する将来のカラム（例: S17 がリポジトリごとのオーバーライドを導入する場合）は、同じ整数マッピングを再利用します。
+- **ライフサイクルイベント**（`deleted_at`、`purged_at`）: [ADR-015（内部）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#slug-lifecycle)で定義されたスラッグのライフサイクルを実装します。`deleted_at` はソフト削除されたネームスペースを示し、[ADR-010](010_data_retention.md#subscription-expiration) のソフト削除ウィンドウ内で回収できます。`purged_at` はハード削除されたネームスペースを示します。スラッグは永久に廃止され、アンカーと課金のカラムは監査とフォレンジックのために保持されます。これら 2 つは一方向のイベント記録であり、一度設定されると設定されたままになります。パージ済みの行では両方が設定されます。
 - **サービス条件**（`blocked_at`、`disabled_at`、`suspended_at`）: それ以外は稼働中のネームスペースに対する、元に戻せる制限です。タイムスタンプは条件が課された時刻を記録します。`NULL` は条件が有効でないことを意味し、繰り返しサイクルの履歴は行ではなく監査イベントストリームに保持されます。`blocked_at` はセキュリティ上のブロックを示します（スラッグは予約され、リクエストは処理されませんが、ネームスペースはサブスクライブされたままです）。`disabled_at` は、所有 Organization がレジストリを無効にしたことを示します。リクエストは処理されず、データは保持されます。Rails 側の Organization レベルの設定に基づき、内部 API を通じて設定および解除されます。`suspended_at` は、内部 API を通じて課された課金上の一時停止を示します。サービスは読み取り専用に制限され、ダウンロードは処理されますが、書き込みは拒否されます。そのため、支払いの途絶によって本番環境のコンシューマーが機能しなくなることはありません。各カラムは独立しているため、複数の条件が共存でき、1 つを解除しても他の条件は解除されません。
 - **サービス提供可否の述語**: 書き込みを処理する検索（プッシュ、変更）では、5 つすべてのカラムが `NULL` である必要があります。読み取りを処理する検索（ルーティング、認証、ダウンロード）では、`deleted_at`、`purged_at`、`blocked_at`、`disabled_at` が `NULL` である必要があります。一時停止中のネームスペースは引き続き読み取りを処理します。サブスクリプションライフサイクルのクエリ（課金、保持、およびサブスクリプション状態だけを読むスケジュール検索）は、ブロック中、無効化中、一時停止中のネームスペースもサブスクライブされたままであるため、`deleted_at` と `purged_at` のみを除外します。述語は何が検索をスケジュールしたかではなく、検索が何を行うかに従います。クライアントがすでに要求した書き込みを完了するバックグラウンドジョブは書き込み処理の検索であり、そのリクエストを受け付けたときと同じく 5 つすべてのカラムが `NULL` である必要があります。これは、受け付け済みクライアント書き込みの延期された半分だけを対象とします。回収、カウンターの調整、ポリシー駆動の削除など、プラットフォーム駆動の書き込みはこの項目では分類しません。API は導出されたステータス（優先順位: purged、deleted、blocked、disabled、suspended、active）を公開し、Rails は表示用にこれをキャッシュします（[ADR-022](022_namespace_decoupling.md#slug-discovery)）。
 
@@ -79,7 +81,7 @@ PostgreSQL にはネイティブな不変カラムのサポートがありませ
 
 #### インデックス {#namespaces-indexes}
 
-- **`namespaces`**: `(slug)` に対するユニークインデックス — スラッグによってネームスペースを検索します。`(platform, entity_type, entity_id) WHERE purged_at IS NULL` に対する部分ユニークインデックス — purge されていない行の間でアンカーの重複を防ぎます。アクティブな行とソフト削除済みの行は対象になりますが、purge 済みの行は対象外です。そのため、以前 purge された Organization は新しいネームスペース行で再オンボーディングでき、purge 済みの行は監査のためにアンカーデータを保持できます。`delivery_mode_override`、`deleted_at`、`purged_at`、`blocked_at`、`disabled_at`、`suspended_at` にはインデックスを設けません。これらのカラムは `id` または `slug` をキーとする既存のネームスペース検索の一環として読み取られ、サービス提供可否の述語は取得された単一行に対してフィルタリングします。
+- **`namespaces`**: `(slug)` に対するユニークインデックス — スラッグによってネームスペースを検索します。`(platform, entity_type, entity_id) WHERE purged_at IS NULL` に対する部分ユニークインデックス — パージされていない行の間でアンカーの重複を防ぎます。アクティブな行とソフト削除済みの行は対象になりますが、パージ済みの行は対象外です。そのため、以前パージされた Organization は新しいネームスペース行で再オンボーディングでき、パージ済みの行は監査のためにアンカーデータを保持できます。`delivery_mode_override`、`deleted_at`、`purged_at`、`blocked_at`、`disabled_at`、`suspended_at` にはインデックスを設けません。これらのカラムは `id` または `slug` をキーとする既存のネームスペース検索の一環として読み取られ、サービス提供可否の述語は取得された単一行に対してフィルタリングします。
 
 [ADR-015（内部）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#reservation-taxonomy)で定義された予約済みスラッグリストはデータベースには保存しません。
 
@@ -156,13 +158,13 @@ erDiagram
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         text name "NOT NULL, limit 255"
         text description "nullable, limit 1024"
-        smallint format "NOT NULL, 0=docker, 1=maven, 2=npm, 3=oci"
-        smallint kind "NOT NULL, 0=hosted, 1=virtual, 2=remote"
+        smallint format "NOT NULL, 0=docker, 1=maven, 2=npm, 3=oci, 4=generic"
+        smallint kind "NOT NULL, 0=hosted, 1=virtual, 2=remote, CHECK (format <> 4 OR kind = 0)"
         smallint visibility "NOT NULL, 0=public, 1=private, 2=internal"
         bigint artifacts_count "NOT NULL, DEFAULT 0, buffered counter"
         bigint downloads_count "NOT NULL, DEFAULT 0, buffered counter"
         bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
-        timestamptz last_updated_at "nullable"
+        timestamptz last_updated_at "nullable, DEFAULT NOW()"
         timestamptz last_reconciled_at "NOT NULL, DEFAULT 'epoch', reconciliation bookkeeping"
         text gitlab_last_updated_by_user_id "nullable, opaque string, limit 255"
         timestamptz soft_deleted_at "nullable"
@@ -171,13 +173,13 @@ erDiagram
     }
 ```
 
-- **repositories**: すべてのリポジトリの親エンティティです。`format` はアーティファクトフォーマット（Docker、Maven、npm、OCI）を識別します。`kind` はリポジトリの種類（ホスト型、仮想型、リモート型）を識別します。リポジトリは [`repository_collection_repositories`](#repository-collection-repositories) 結合テーブルを介してリポジトリコレクションにリンクされ、リポジトリがそのネームスペース内の 1 つ以上のリポジトリコレクションに属することを可能にします。MVP の間、すべてのリポジトリはネームスペースのデフォルトのリポジトリコレクションにリンクされます。`name` はネームスペース内で一意でなければならず、これはすべての競合製品と一致しています。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）は、ホット行の競合を避けるために [バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`last_updated_at` は、ダウンロードではなくコンテンツの変更（アーティファクトの公開/変更/削除、キャッシュイベント）を追跡します。`last_reconciled_at` は、同名の `namespace_statistics` カラムに対応するリポジトリレベルのカラムです（[ストレージ使用量の計算](#storage-usage-calculation)を参照）。これは調整用の記録であり、リポジトリ自身の書き戻し時に記録され、API には決して表示されず、カウンターでもありません。ネームスペースレベルの対応するカラムとは異なり、独自のインデックスはありません。インデックスを必要とする古さのスキャンはネームスペースを選択し、リポジトリにはその独自の新しさではなく、選択済みのネームスペースを通じて到達するためです。`'epoch'` デフォルトによって、すでに行が存在するテーブルでもこのカラムを `NOT NULL` にできます。カラムを追加した時点ですべての既存行が有効になり、バックフィルも NULL 許容の暫定状態も不要です。`gitlab_created_by_user_id` と `gitlab_last_updated_by_user_id` は、どの GitLab ユーザーがリポジトリを作成し最後に変更したかを記録します。どちらも NULL 許容の不透明な参照で、外部キーもアプリケーション側の検証もありません。なぜなら、ユーザーレコードはモノリスに存在するためです。ユーザーハンドルとアバターのレンダリングはコンシューマーの責任であり、AR スキーマは ID のみを保存します。これらは `namespaces.entity_id` と同じ理由で `TEXT` として保存されます。上流のユーザー ID 形式が将来変更されても（例: UUID への変更）、スキーママイグレーションは不要です。`description` は、UI が仮想リポジトリだけでなくすべてのリポジトリ型の説明を表示するため、親テーブルにあります。`soft_deleted_at` タイムスタンプは、リポジトリがソフト削除された時刻を記録し、必要に応じて復元を可能にします。ソフト削除を親テーブルに置くことで、すべてのリポジトリ型（ホスト型、仮想型、リモート型）がフォーマット固有の処理なしに同じ削除セマンティクスを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **repositories**: すべてのリポジトリの親エンティティです。`format` はアーティファクトフォーマット（Docker、Maven、npm、OCI、generic）を識別します。`kind` はリポジトリの種類（ホスト型、仮想型、リモート型）を識別します。Generic はホスト型のみです（[Generic リポジトリ](#generic-repositories)を参照）。`CHECK (format <> 4 OR kind = 0)` がこれを強制するため、子テーブルや調整で考慮する必要のある Generic の仮想型やリモート型の行は存在できません。リポジトリは [`repository_collection_repositories`](#repository-collection-repositories) 結合テーブルを介してリポジトリコレクションにリンクされ、リポジトリがそのネームスペース内の 1 つ以上のリポジトリコレクションに属することを可能にします。MVP の間、すべてのリポジトリはネームスペースのデフォルトのリポジトリコレクションにリンクされます。`name` はネームスペース内で一意でなければならず、これはすべての競合製品と一致しています。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）は、ホット行の競合を避けるために [バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`last_updated_at` は、ダウンロードではなくコンテンツの変更（アーティファクトの公開/変更/削除、キャッシュイベント）を追跡します。`created_at` と同様に、デフォルトは `NOW()` です。`NOW()` はトランザクションの開始時刻を返すため、`created_at` も `last_updated_at` も指定しない `INSERT` は、両方に同じ時刻を保存します。コンテンツ変更のないリポジトリでは `last_updated_at = created_at` になります。1 回限りのバックフィルによって、既存のすべての `NULL` をその行の `created_at` に設定します。これを実行するまでは、デフォルトの導入前に書き込まれた行に `NULL` が残る場合があります。バックフィルをロールバックすると、挿入時にデフォルトを使用した行も含め、`last_updated_at` がまだ `created_at` と等しいすべての行が `NULL` に戻ります。後続の変更で `NOT NULL` を追加するまで、カラム自体は `NULL` を許容します。`last_reconciled_at` は、同名の `namespace_statistics` カラムに対応するリポジトリレベルのカラムです（[ストレージ使用量の計算](#storage-usage-calculation)を参照）。これは調整用の記録であり、リポジトリ自身の書き戻し時に記録され、API には決して表示されず、カウンターでもありません。ネームスペースレベルの対応するカラムとは異なり、独自のインデックスはありません。インデックスを必要とする古さのスキャンはネームスペースを選択し、リポジトリにはその独自の新しさではなく、選択済みのネームスペースを通じて到達するためです。`'epoch'` デフォルトによって、すでに行が存在するテーブルでもこのカラムを `NOT NULL` にできます。カラムを追加した時点ですべての既存行が有効になり、バックフィルも NULL 許容の暫定状態も不要です。`gitlab_created_by_user_id` と `gitlab_last_updated_by_user_id` は、どの GitLab ユーザーがリポジトリを作成し最後に変更したかを記録します。どちらも NULL 許容の不透明な参照で、外部キーもアプリケーション側の検証もありません。なぜなら、ユーザーレコードはモノリスに存在するためです。ユーザーハンドルとアバターのレンダリングはコンシューマーの責任であり、AR スキーマは ID のみを保存します。これらは `namespaces.entity_id` と同じ理由で `TEXT` として保存されます。上流のユーザー ID 形式が将来変更されても（例: UUID への変更）、スキーママイグレーションは不要です。`description` は、UI が仮想リポジトリだけでなくすべてのリポジトリ型の説明を表示するため、親テーブルにあります。`soft_deleted_at` タイムスタンプは、リポジトリがソフト削除された時刻を記録し、必要に応じて復元を可能にします。ソフト削除を親テーブルに置くことで、すべてのリポジトリ型（ホスト型、仮想型、リモート型）がフォーマット固有の処理なしに同じ削除セマンティクスを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 
 リポジトリをハード削除すると、その構造上の子へカスケードします。関連する外部キーは、次の参照アクションを持ちます。
 
-- フォーマットの子テーブル（`container_repositories`、`npm_repositories`、`maven_repositories`、およびそれぞれの仮想型とリモート型のバリアント）で、`repositories` を参照する FK `(repository_id, namespace_id)`: `ON DELETE CASCADE`。
+- フォーマットの子テーブル（`container_repositories`、`npm_repositories`、`maven_repositories`、`generic_repositories`、および `generic_repositories` 以外の各テーブルの仮想型とリモート型のバリアント）で、`repositories` を参照する FK `(repository_id, namespace_id)`: `ON DELETE CASCADE`。
 - `repository_collection_repositories`（コレクション結合テーブル）で、`repositories` を参照する FK `(repository_id, namespace_id)`: `ON DELETE CASCADE`。
-- アーティファクトテーブル（`container_images`、`npm_packages`、`maven_packages`）で、そのフォーマットの子テーブルを参照する FK `(<format>_repository_id, namespace_id)`: `NO ACTION`。
+- アーティファクトテーブル（`container_images`、`npm_packages`、`maven_packages`、`generic_packages`）で、そのフォーマットの子テーブルを参照する FK `(<format>_repository_id, namespace_id)`: `NO ACTION`。
 - 仮想 upstream 結合テーブル（`container_virtual_repository_upstreams`、`maven_virtual_repository_upstreams`、`npm_virtual_repository_upstreams`）で、`repositories` を参照する FK `(upstream_repository_id, namespace_id)`: `NO ACTION`。
 
 したがって、1 回の `DELETE FROM repositories` によってフォーマットの子行とすべてのコレクションリンクが削除されます。`NO ACTION` キーはそれを拒否でき、いずれか 1 つの拒否でステートメント全体が中止されます。アーティファクトから子へのキーは、リポジトリがまだアーティファクトを保持している間は拒否します。結合キーは、いずれかの仮想リポジトリがフォーマットを問わず、それを upstream として一覧に含めている間は拒否します。
@@ -186,11 +188,11 @@ erDiagram
 
 接続のアクションは 2 つのテストで決まり、カスケードするには両方を通過する必要があります。1 つ目は方向です。親から子への接続だけがカスケードするため、削除は `repositories` から構造チェーンを下り、横方向には進みません。2 つ目は子が保持するものです。下向きの接続のうち、子が純粋な構造（フォーマットの子行、コレクションリンク）ならカスケードし、ユーザーデータ（アーティファクト）なら拒否します。`upstream_repository_id` は 2 つ目ではなく 1 つ目のテストに失敗します。自身が所有しないリポジトリを名指すため、結合行が何を保持するかをどう解釈してもカスケードにはなりません。これらは合わせて、前述のソフト削除パスと、アプリケーションが管理する `blob_storage_attachments` のクリーンアップに対応する宣言的な仕組みです。
 
-どちらの拒否も、参照アクションだけではオペレーターに届かず、どのように失敗するかはステートメントの実行時期に依存します。削除が同期的な場合、拒否は失敗したステートメントとして到着し、API レイヤーが認識して変換する必要があります。削除が非同期、つまり今 tombstone を付け、後の purge で `DELETE FROM repositories` を実行する場合、拒否は停止した purge として現れ、呼び出し元には届きません。したがって、オペレーターが頼れる拒否は、どちらのパスよりも前の削除リクエスト時に管理 API から返されます。[Repository Deletion](009_api_design.md#repository-deletion) を参照してください。これらのキーはそのチェックの下にあるバックストップであり、シグナルではありません。
+どちらの拒否も、参照アクションだけではオペレーターに届かず、どのように失敗するかはステートメントの実行時期に依存します。削除が同期的な場合、拒否は失敗したステートメントとして到着し、API レイヤーが認識して変換する必要があります。削除が非同期、つまり今トゥームストーンを付け、後のパージで `DELETE FROM repositories` を実行する場合、拒否は停止したパージとして現れ、呼び出し元には届きません。したがって、オペレーターが頼れる拒否は、どちらのパスよりも前の削除リクエスト時に管理 API から返されます。[リポジトリの削除](009_api_design.md#repository-deletion) を参照してください。これらのキーはそのチェックの下にあるバックストップであり、シグナルではありません。
 
 #### インデックス {#repositories-indexes}
 
-- **`repositories`**: `(namespace_id, name)` に対するユニークインデックス — アクティブなリポジトリとソフト削除されたリポジトリの両方にまたがって名前の一意性を強制し、名前の衝突によって復元が失敗することがないようにします。名前を再利用するには、まずハード削除が必要です。`(namespace_id, name) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリの検索と名前順の一覧表示のために最適化されたスキャンパスです。`(namespace_id, format) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリをフォーマットでフィルタリングします。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリを種類でフィルタリングします。`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` に対するインデックス — リポジトリを可視性レベルでフィルタリングします（可視性監査クエリ「このネームスペースで現在公開されているリポジトリはどれか？」を支えます）。ランディングページでソート可能なカラムごとに 1 つのインデックスを設け、すべてに `WHERE soft_deleted_at IS NULL` と末尾の `id DESC` キーセットのタイブレーカーを付けます。対象は `(namespace_id, artifacts_count DESC, id DESC)`、`(namespace_id, downloads_count DESC, id DESC)`、`(namespace_id, size_bytes DESC, id DESC)`、および式インデックス `(namespace_id, COALESCE(last_updated_at, created_at) DESC, id DESC)` です。`ROW(<col>, id)` キーセット境界の `id` 側は、インデックス内に存在する必要があります。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）はデフォルトが `0` でカーディナリティが低いため、インデックスにタイブレーカーがないと、planner はスキャン後のソートまたはフィルターとして適用し、深いページではネームスペースに対して O(offset) に劣化します。式インデックスにも `id DESC` を含めます。これはカーディナリティのためではなく（`created_at` は行ごとに一意であるため、`COALESCE(last_updated_at, created_at)` はカーディナリティが高い）、キーセットに決定的なカーソルを与えるためです。新しさによるソートでは、生の `last_updated_at` ではなく `COALESCE(last_updated_at, created_at)` で並べます。更新されたことのないリポジトリ（新しいリポジトリで一般的な `last_updated_at` が `NULL` の状態）は、作成時刻に基づいて順位付けされ、`NULLS LAST` の下に沈むのではなく「最近更新された」一覧の上位に並びます。また、結合されたキーは決して NULL にならないため、キーセット境界は単純な `ROW(<col>, id)` 比較となり、NULL 領域の特別な処理なしでインデックス範囲に組み込まれます。シリアライズされる `last_updated_at` フィールドは nullable のままで、結合するのはソートキーだけです。`name` によるソートにはタイブレーカーが不要です。`(namespace_id, name)` ユニークインデックスが、すでに決定的なキーセットだからです。`(namespace_id, format, name) WHERE soft_deleted_at IS NULL` に対するインデックス — フォーマットでフィルタリングした名前順の一覧表示（主要な閲覧ビュー: フォーマットでフィルタリングし、名前でソート）に使用します。`format` をインデックス適用後のフィルターとして使用し、異なるフォーマットの行を飛ばしながら `(namespace_id, name)` ユニークインデックスを走査するのではなく、`(format, name)` の範囲を直接検索してインデックスオンリーの状態を維持します。インデックスを設けるのはフォーマットと名前の組み合わせだけです。使用頻度の低いカウンターまたはタイムスタンプによるソートでは、ソートとフィルターの組み合わせごとに複合インデックスを増やすのではなく、`format` または `kind` をインデックス適用後のフィルターとして維持します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — このネームスペース内のソフト削除されたリポジトリを削除時刻順に一覧します（ゴミ箱一覧クエリ「ゴミ箱には何があり、いつ削除されたか？」を支えます）。この逆の部分述語は、前述のアクティブ行に対する部分インデックスを反映したものです。このテーブルの他の部分インデックスはすべてゴミ箱を除外し、完全な `(namespace_id, name)` ユニークインデックスは `soft_deleted_at` をキーにしないため、これがなければゴミ箱の一覧表示では、フィルタリングとソートのためにネームスペース内のすべての行を確認しなければなりません。GC の適格性は [ADR-010](010_data_retention.md) に従い、`soft_deleted_at + retention_window` から導出します。別個のカラムは不要です。
+- **`repositories`**: `(namespace_id, name)` に対するユニークインデックス — アクティブなリポジトリとソフト削除されたリポジトリの両方にまたがって名前の一意性を強制し、名前の衝突によって復元が失敗することがないようにします。名前を再利用するには、まずハード削除が必要です。`(namespace_id, name) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリの検索と名前順の一覧表示のために最適化されたスキャンパスです。`(namespace_id, format) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリをフォーマットでフィルタリングします。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリを種類でフィルタリングします。`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` に対するインデックス — リポジトリを可視性レベルでフィルタリングします（可視性監査クエリ「このネームスペースで現在公開されているリポジトリはどれか？」を支えます）。ランディングページでソート可能なカラムごとに 1 つのインデックスを設け、すべてに `WHERE soft_deleted_at IS NULL` と末尾の `id DESC` キーセットのタイブレーカーを付けます。対象は `(namespace_id, artifacts_count DESC, id DESC)`、`(namespace_id, downloads_count DESC, id DESC)`、`(namespace_id, size_bytes DESC, id DESC)`、および式インデックス `(namespace_id, COALESCE(last_updated_at, created_at) DESC, id DESC)` です。`ROW(<col>, id)` キーセット境界の `id` 側は、インデックス内に存在する必要があります。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）はデフォルトが `0` でカーディナリティが低いため、インデックスにタイブレーカーがないと、プランナーはスキャン後のソートまたはフィルターとして適用し、深いページではネームスペースに対して O(offset) に劣化します。式インデックスにも `id DESC` を含めます。これはカーディナリティのためではなく（`created_at` は行ごとに一意であるため、`COALESCE(last_updated_at, created_at)` はカーディナリティが高い）、キーセットに決定的なカーソルを与えるためです。新しさによるソートでは、生の `last_updated_at` ではなく `COALESCE(last_updated_at, created_at)` で並べます。コンテンツ変更のないリポジトリは `last_updated_at` に作成時刻を保持するため、どちらの式でもその時刻に基づいて順位付けされます。ソートで `COALESCE` を維持する理由は 2 つあります。前述の式インデックスが対応するのはその式だけであり、カラムはまだ `NULL` を許容します。`NULL` を保持する行は作成時刻で順位付けされます。結合されたキーは決して `NULL` にならないため、キーセット境界は単純な `ROW(<col>, id)` 比較となり、`NULL` キーに対する特別な処理なしでインデックス範囲に組み込まれます。シリアライズされる `last_updated_at` フィールドは、[artifact-registry#1574](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/1574)でカラムに `NOT NULL` を追加するまで NULL 許容のままです。`name` によるソートにはタイブレーカーが不要です。`(namespace_id, name)` ユニークインデックスが、すでに決定的なキーセットだからです。`(namespace_id, format, name) WHERE soft_deleted_at IS NULL` に対するインデックス — フォーマットでフィルタリングした名前順の一覧表示（主要な閲覧ビュー: フォーマットでフィルタリングし、名前でソート）に使用します。`format` をインデックス適用後のフィルターとして使用し、異なるフォーマットの行を飛ばしながら `(namespace_id, name)` ユニークインデックスを走査するのではなく、`(format, name)` の範囲を直接検索してインデックスオンリーの状態を維持します。インデックスを設けるのはフォーマットと名前の組み合わせだけです。使用頻度の低いカウンターまたはタイムスタンプによるソートでは、ソートとフィルターの組み合わせごとに複合インデックスを増やすのではなく、`format` または `kind` をインデックス適用後のフィルターとして維持します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — このネームスペース内のソフト削除されたリポジトリを削除時刻順に一覧します（ゴミ箱一覧クエリ「ゴミ箱には何があり、いつ削除されたか？」を支えます）。この逆の部分述語は、前述のアクティブ行に対する部分インデックスを反映したものです。このテーブルの他の部分インデックスはすべてゴミ箱を除外し、完全な `(namespace_id, name)` ユニークインデックスは `soft_deleted_at` をキーにしないため、これがなければゴミ箱の一覧表示では、フィルタリングとソートのためにネームスペース内のすべての行を確認しなければなりません。GC の適格性は [ADR-010](010_data_retention.md) に従い、`soft_deleted_at + retention_window` から導出します。別個のカラムは不要です。
 
 MVP の間、すべてのリポジトリは単一のデフォルトのリポジトリコレクションにリンクされるため、`(namespace_id, ...)` ソートインデックスはネームスペース全体のクエリとコレクションでフィルターされたクエリの両方に対応します。MVP 後、ネームスペースが複数のリポジトリコレクションを持つようになると、コレクションでフィルターされたクエリは `repository_collection_repositories` を介して JOIN します。追加のサポートインデックスは、リポジトリコレクションが公開される際に評価されます。
 
@@ -378,7 +380,7 @@ erDiagram
 
 #### リポジトリレベルのオーバーライド {#repository-level-overrides}
 
-各リポジトリ型（[container](#container-repositories)、[maven](#maven-repositories)、[npm](#npm-repositories)）は、ネームスペースレベルの値に対するオーバーライドを提供する、同様の名前のテーブルを持ちます。これにより優先順位システムが構築されます: ネームスペース（最低）-> リポジトリ（最高）。オーバーライドは `repository_id` を介して親の `repositories` テーブルを参照します。
+各リポジトリ型（[container](#container-repositories)、[maven](#maven-repositories)、[npm](#npm-repositories)、[generic](#generic-repositories)）は、ネームスペースレベルの値に対するオーバーライドを提供する、同様の名前のテーブルを持ちます。これにより優先順位システムが構築されます: ネームスペース（最低）-> リポジトリ（最高）。オーバーライドは `repository_id` を介して親の `repositories` テーブルを参照します。
 
 ```mermaid
 erDiagram
@@ -401,7 +403,7 @@ erDiagram
     }
 ```
 
-（各アーティファクトフォーマットにオーバーライドテーブルがあるため、`artifact_type` は `container`、`maven`、`npm` に置き換える必要があります。これらのオーバーライドはホスト型、仮想型、リモート型のリポジトリに同様に適用されます。`repository_id` 外部キーは親の `repositories` テーブルを参照し、フォーマット固有のテーブルはリポジトリの `format` カラムによって決まります。）
+（各アーティファクトフォーマットにオーバーライドテーブルがあるため、`artifact_type` は `container`、`maven`、`npm`、`generic` に置き換える必要があります。これらのオーバーライドはホスト型、仮想型、リモート型のリポジトリに同様に適用されます（generic はホスト型のみです）。`repository_id` 外部キーは親の `repositories` テーブルを参照し、フォーマット固有のテーブルはリポジトリの `format` カラムによって決まります。）
 
 これらのテーブルは、ある意味で [カスケード設定](https://docs.gitlab.com/development/cascading_settings/) のように動作します。それらの説明は [ネームスペースレベル](#lifecycle-policies) の同様の名前のテーブルとまったく同じであり、パーティショニングも同様です。すべてのオーバーライドテーブルは `HASH(namespace_id)` で 64 パーティションにパーティショニングされます。現在の 2 層の優先順位システム（ネームスペース → リポジトリ）は、MVP 後にリポジトリコレクションが公開される際に 3 層（ネームスペース → リポジトリコレクション → リポジトリ）に拡張できます。これには同じパターンに従ってリポジトリコレクションレベルのオーバーライドテーブルを追加する必要がありますが、既存のネームスペースレベルやリポジトリレベルのテーブルへの変更は不要です。
 
@@ -423,7 +425,7 @@ erDiagram
     }
 ```
 
-- **namespace_encryption_keys**: ネームスペースが保持したキー暗号化キーごとに 1 行を保存し、各キーをデプロイのルートキーでラップします。ネームスペースが一度に持つアクティブなキーは 1 つです。以前のバージョンでラップされた行は引き続きそのバージョンを介してキーを解決するため、置き換えられたバージョンは削除せず、非アクティブ化してテーブルに残します。`id` は参照用の識別情報であり、認証情報の行は `ns_key_id` でこれを指定します。一方、`version` はネームスペース単位の序数で、ネームスペースのキーを順序付け、ローテーションの走査を制御します。この 2 つは相互に置き換えられません。暗号学的に消去されたネームスペースを再度有効にすると `version` は 1 から再開するため、ネームスペースの存続期間全体にわたってキーを識別できず、読み取りでは `ns_key_id` によってラップ用キーを解決します。暗号学的消去では、行を削除せず tombstone として保持します。`wrapped_key` を長さ 0 の `bytea` で上書きし、`active` を解除して `shredded_at` に時刻を記録するため、消去済みの状態が再起動後も維持され、すべてのインスタンスに適用されます。2 つの行単位の CHECK 制約によって、この構成を維持します。一方は tombstone がアクティブのままになることを拒否し、もう一方はキー素材と未消去状態を双方向に関連付けて、`shredded_at` が `NULL` の場合に限りキー素材が存在するようにします。いずれかの tombstone が存在すればネームスペース全体が消去済みであるという、ネームスペース全体の不変条件はアプリケーションレイヤーで強制します。これは行単位の CHECK で対応できる範囲の限界です。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **namespace_encryption_keys**: ネームスペースが保持したキー暗号化キーごとに 1 行を保存し、各キーをデプロイのルートキーでラップします。ネームスペースが一度に持つアクティブなキーは 1 つです。以前のバージョンでラップされた行は引き続きそのバージョンを介してキーを解決するため、置き換えられたバージョンは削除せず、非アクティブ化してテーブルに残します。`id` は参照用の識別情報であり、認証情報の行は `ns_key_id` でこれを指定します。一方、`version` はネームスペース単位の序数で、ネームスペースのキーを順序付け、ローテーションの走査を制御します。この 2 つは相互に置き換えられません。暗号学的に消去されたネームスペースを再度有効にすると `version` は 1 から再開するため、ネームスペースの存続期間全体にわたってキーを識別できず、読み取りでは `ns_key_id` によってラップ用キーを解決します。暗号学的消去では、行を削除せずトゥームストーンとして保持します。`wrapped_key` を長さ 0 の `bytea` で上書きし、`active` を解除して `shredded_at` に時刻を記録するため、消去済みの状態が再起動後も維持され、すべてのインスタンスに適用されます。2 つの行単位の CHECK 制約によって、この構成を維持します。一方はトゥームストーンがアクティブのままになることを拒否し、もう一方はキー素材と未消去状態を双方向に関連付けて、`shredded_at` が `NULL` の場合に限りキー素材が存在するようにします。いずれかのトゥームストーンが存在すればネームスペース全体が消去済みであるという、ネームスペース全体の不変条件はアプリケーションレイヤーで強制します。これは行単位の CHECK で対応できる範囲の限界です。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 
 #### インデックス {#encryption-keys-indexes}
 
@@ -535,7 +537,7 @@ erDiagram
 
 - **`container_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリ参照によってコンテナリポジトリを検索します。
 - **`container_images`**: `(namespace_id, container_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ名はリポジトリ内で一意なイメージを識別します。重複すると OCI の名前ベースの検索が壊れます。部分条件により、ソフト削除後に同じ名前のイメージを再作成できます。`(namespace_id, container_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのイメージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったイメージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないイメージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたイメージを削除時刻の順に一覧表示し、イメージ粒度のゴミ箱一覧とリーパーによるイメージレベルのスキャンを支えます。この形の `container_manifests` インデックスは、どちらにも使用できません。このインデックスはマニフェストをキーとし、ソフト削除されたイメージのマニフェストには独自の `soft_deleted_at` がないため、マニフェストのスキャンでもリポジトリの走査でも、リポジトリがまだ有効な削除マーカー付きのイメージには到達できません。
-- **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — blob のダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, digest)` に対するインデックス — コンテンツダイジェストによるイメージ横断の検索で、blob のマウントに使用します。コンテナ blob はコンテンツアドレス指定であるため、その `digest` は保存された `blob_sha256` と等しくなります。このため、このインデックスは別個の `(namespace_id, blob_sha256)` インデックスなしに、クロスフォーマットのチェックサム検索と脆弱性影響クエリ「この侵害されたダイジェストが与えられたとき、どのイメージがそれを参照しているか?」にも使用されます。このドキュメントの逆引きインデックスは無条件（`soft_deleted_at` 述語なし）なので、かつて参照されたダイジェストは監査証跡に引き続き表示されます。現在影響を受けているアーティファクトのみを必要とする脆弱性影響は、クエリ時に `soft_deleted_at IS NULL` を追加します。これは小さな中間集合に対する安価な後置フィルターです。Maven と npm のファイルはコンテンツアドレス指定ではなく、同等のダイジェストカラムもないため、これらのテーブルには専用の `(namespace_id, blob_sha256)` 逆引きインデックスがあり、コンテナテーブルにはありません。この等価性は sha256 が唯一のダイジェストアルゴリズムである間に成り立ちます。`digest` と `blob_sha256` はどちらも `octet_length = 32` CHECK の下で 32 バイトの値であり、コンテンツは書き込み時にダイジェストに対して検証されるため、`(namespace_id, digest)` インデックスは `blob_sha256` インデックスとまったく同じ行を返します。将来、sha256 以外のダイジェストアルゴリズムが導入される場合は、2 つのカラムを分離し、再検討します。
+- **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — blob のダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, digest)` に対するインデックス — コンテンツダイジェストによるイメージ横断の検索で、blob のマウントに使用します。コンテナ blob はコンテンツアドレス指定であるため、その `digest` は保存された `blob_sha256` と等しくなります。このため、このインデックスは別個の `(namespace_id, blob_sha256)` インデックスなしに、クロスフォーマットのチェックサム検索と脆弱性影響クエリ「この侵害されたダイジェストが与えられたとき、どのイメージがそれを参照しているか?」にも使用されます。これはレイヤーまたは設定のダイジェストの検索です。このドキュメントの逆引きインデックスは無条件（`soft_deleted_at` 述語なし）なので、かつて参照されたダイジェストは監査証跡に引き続き表示されます。現在影響を受けているアーティファクトのみを必要とする脆弱性影響は、クエリ時に `soft_deleted_at IS NULL` を追加します。これは小さな中間集合に対する安価な後置フィルターです。Maven、npm、generic のファイルはコンテンツアドレス指定ではなく、同等のダイジェストカラムもないため、これらのテーブルには専用の `(namespace_id, blob_sha256)` 逆引きインデックスがあり、コンテナテーブルにはありません。この等価性は sha256 が唯一のダイジェストアルゴリズムである間に成り立ちます。`digest` と `blob_sha256` はどちらも `octet_length = 32` CHECK の下で 32 バイトの値であり、コンテンツは書き込み時にダイジェストに対して検証されるため、`(namespace_id, digest)` インデックスは `blob_sha256` インデックスとまったく同じ行を返します。将来、sha256 以外のダイジェストアルゴリズムが導入される場合は、2 つのカラムを分離し、再検討します。
 - **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — マニフェストのダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってマニフェストを検索します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたマニフェストを削除時刻順に一覧し、コンテナイメージのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。無条件（`soft_deleted_at` 述語なし）なので、後でソフト削除された公開イベントも監査証跡に引き続き表示されます。`(namespace_id, container_image_id, id)` に対するユニークインデックス — `container_manifest_relationships` からの、イメージにスコープされた 2 つのマニフェスト参照のターゲットです。主キーによってこの 3 つの値の組はすでに一意なので、このインデックスは一意性の保証を追加しません。このインデックスが存在するのは、PostgreSQL が外部キーの参照先カラムに対して明示的に宣言されたユニーク制約またはインデックスを必要とし、主キーからそのような制約を推論しないためです。`container_blobs` とは異なり、`container_manifests` にはスタンドアロンの `(namespace_id, digest)` インデックスがありません。ダイジェストはイメージ内でのみ、ユニークな `(namespace_id, container_image_id, digest)` によってインデックス化されます。そのため、マニフェストペイロードのイメージ横断チェックサム検索（マニフェストの `digest` は保存された `blob_sha256` と等しい）は、ネームスペースで絞り込まれたパーティションをスキャンします。これは許容されています。これを発行する MVP エンドポイントはなく、脆弱性影響の検索は `container_blobs` の `(namespace_id, digest)` インデックスによって提供されるレイヤー/設定ダイジェスト検索であるためです。
 - **`container_manifest_relationships`**: `(namespace_id, parent_container_manifest_id, child_container_manifest_id)` に対するユニークインデックス — 親子関係の重複を防ぎ、特定の親マニフェストのすべての子を見つけます。`(namespace_id, child_container_manifest_id, parent_container_manifest_id)` に対するインデックス — 特定の子マニフェストのすべての親を、ソートではなくインデックスから親 ID 順に取得します。`(namespace_id, container_image_id)` に対するインデックス — 特定のイメージのすべてのマニフェスト関係を見つけます。
 - **`container_tags`**: `(namespace_id, container_image_id, name)` に対するユニークインデックス — イメージ内で名前によってタグを検索します。`(namespace_id, container_manifest_id, name)` に対するインデックス — 特定のマニフェストを指すすべてのタグを、ソートではなくインデックスから名前順に取得します。
@@ -575,7 +577,7 @@ erDiagram
     AND ci.soft_deleted_at IS NULL AND cm.soft_deleted_at IS NULL;
   ```
 
-- チェックサム検索と脆弱性影響: 保存された blob の `sha256` が与えられたとき、それを参照するネームスペース内のすべてのアーティファクトを見つけます。`namespace_id` の等価性により、テーブルごとに単一のパーティションに絞り込みます。Maven と npm のファイルは `(namespace_id, blob_sha256)` インデックスを使用し、パーティションをスキャンせずに一致する行を直接返します。コンテナテーブルはコンテンツアドレス指定です。blob またはマニフェストの `digest` は保存された `blob_sha256` と等しいため、`container_blobs` は `(namespace_id, digest)` インデックスを通じてこれに応答します。`container_manifests` にはスタンドアロンのダイジェストインデックスがないため、マニフェストペイロードの検索はネームスペースで絞り込まれたパーティションをスキャンします。チェックサム検索はすべての参照を返します。脆弱性影響（「この侵害されたダイジェストによって現在影響を受けているアーティファクトはどれか?」）は、結果をアクティブなアーティファクトに限定するために `soft_deleted_at IS NULL` を追加します。
+- チェックサム検索と脆弱性影響: 保存された blob の `sha256` が与えられたとき、それを参照するネームスペース内のすべてのアーティファクトを見つけます。`namespace_id` の等価性により、テーブルごとに単一のパーティションに絞り込みます。Maven、npm、generic のファイルは `(namespace_id, blob_sha256)` インデックスを使用し、パーティションをスキャンせずに一致する行を直接返します。コンテナテーブルはコンテンツアドレス指定です。blob またはマニフェストの `digest` は保存された `blob_sha256` と等しいため、`container_blobs` は `(namespace_id, digest)` インデックスを通じてこれに応答します。`container_manifests` にはスタンドアロンのダイジェストインデックスがないため、マニフェストペイロードの検索はネームスペースで絞り込まれたパーティションをスキャンします。チェックサム検索はすべての参照を返します。脆弱性影響（「この侵害されたダイジェストによって現在影響を受けているアーティファクトはどれか?」）は、結果をアクティブなアーティファクトに限定するために `soft_deleted_at IS NULL` を追加します。
 
   ```sql
   -- Single format: container layer/config blobs referencing the digest.
@@ -610,10 +612,15 @@ erDiagram
   SELECT 'npm_file', nf.id, nf.npm_version_id
   FROM npm_files nf
   WHERE nf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
-    AND nf.blob_sha256 = 'sha256:abcd1234...'::bytea AND nf.soft_deleted_at IS NULL;
+    AND nf.blob_sha256 = 'sha256:abcd1234...'::bytea AND nf.soft_deleted_at IS NULL
+  UNION ALL
+  SELECT 'generic_file', gf.id, gf.generic_version_id
+  FROM generic_files gf
+  WHERE gf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+    AND gf.blob_sha256 = 'sha256:abcd1234...'::bytea AND gf.soft_deleted_at IS NULL;
   ```
 
-  同じ `(namespace_id, blob_sha256)` アクセスパスは、キャッシュ側のテーブル（`container_remote_blobs`、`container_remote_manifests`、`maven_remote_files`、`npm_remote_files`）と、`npm_metadata_files` / `npm_remote_metadata_files` にも適用されます。キャッシュされた参照もカバーするには、`UNION ALL` をそれらのテーブルに拡張してください。
+  同じ `(namespace_id, blob_sha256)` アクセスパスは、キャッシュ側のテーブル（`container_remote_blobs`、`container_remote_manifests`、`maven_remote_files`、`npm_remote_files`）と、`npm_metadata_files` / `npm_remote_metadata_files` にも適用されます。キャッシュされた参照もカバーするには、`UNION ALL` をそれらのテーブルに拡張してください。Generic はホスト型のみなので、キャッシュ側のテーブルはありません。
 
 ### コンテナリモートリポジトリ {#container-remote-repositories}
 
@@ -813,15 +820,15 @@ erDiagram
 - `container_virtual_upstream_rules` の `namespaces` を参照する FK `namespace_id`: `NO ACTION`。
 - `container_virtual_upstream_rules` の `container_virtual_repository_upstreams` を参照する FK `(container_virtual_repository_upstream_id, namespace_id)`: `ON DELETE CASCADE`。
 
-`container_virtual_repository_upstreams` の 2 つの外部キーが反対のアクションを取るのは意図的です。`container_virtual_repository_id` は親から子へのリンクなので、仮想リポジトリを削除すると upstream の関連付けも削除されます。`upstream_repository_id` は兄弟参照なので、まだ upstream として一覧に含まれるリポジトリの削除は拒否されます。そこでカスケードすると、一覧に含めるすべての仮想リポジトリが縮小し、空になる可能性もありますが、オペレーターには見えません。キーはシグナルを出さずに縮小を拒否するため、[リポジトリの削除パス](#repositories)がそれを扱います。upstream の削除は意図的な管理操作でなければならず、以下の逆引きインデックスもそのために存在します。
+`container_virtual_repository_upstreams` の 2 つの外部キーが反対のアクションを取るのは意図的です。`container_virtual_repository_id` は親から子へのリンクなので、仮想リポジトリを削除すると upstream の関連付けも削除されます。`upstream_repository_id` は兄弟参照なので、まだ upstream として一覧に含まれるリポジトリの削除は拒否されます。そこでカスケードすると、一覧に含めるすべての仮想リポジトリが縮小し、空になる可能性もありますが、オペレーターには見えません。キーはシグナルを出さずに縮小を拒否するため、[`repositories` の削除パス](#repositories)がそれを扱います。upstream の削除は意図的な管理操作でなければならず、以下の逆引きインデックスもそのために存在します。
 
 #### インデックス {#virtual-container-repositories-indexes}
 
 - **`container_virtual_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によって仮想リポジトリを検索します。
-- **`container_virtual_repository_upstreams`**: `(namespace_id, container_virtual_repository_id, position)` に対する `DEFERRABLE INITIALLY DEFERRED` ユニーク制約 — 仮想リポジトリの順序付き上流を取得します。トランザクション内での並べ替えを可能にするために遅延可能（deferrable）です。`(namespace_id, container_virtual_repository_id, upstream_repository_id)` に対するユニークインデックス — 同じ上流が仮想リポジトリに二度追加されるのを防ぎます。`(namespace_id, upstream_repository_id)` に対するインデックス — 特定のリポジトリを upstream として一覧に含めるすべての仮想リポジトリを検索します。これは、上記の `NO ACTION` ガードと関連付けサーフェスが読み取るものです。どちらのユニークエントリにも、この列順を使用可能な接頭辞として持つものはなく、PostgreSQL は外部キーカラムを自動的にインデックス化しません。
+- **`container_virtual_repository_upstreams`**: `(namespace_id, container_virtual_repository_id, position)` に対する `DEFERRABLE INITIALLY DEFERRED` ユニーク制約 — 仮想リポジトリの順序付き上流を取得します。トランザクション内での並べ替えを可能にするために遅延可能（遅延可能）です。`(namespace_id, container_virtual_repository_id, upstream_repository_id)` に対するユニークインデックス — 同じ上流が仮想リポジトリに二度追加されるのを防ぎます。`(namespace_id, upstream_repository_id)` に対するインデックス — 特定のリポジトリを upstream として一覧に含めるすべての仮想リポジトリを検索します。これは、上記の `NO ACTION` ガードと関連付けサーフェスが読み取るものです。どちらのユニークエントリにも、この列順を使用可能な接頭辞として持つものはなく、PostgreSQL は外部キーカラムを自動的にインデックス化しません。
 - **`container_virtual_upstream_rules`**: `(namespace_id, container_virtual_repository_upstream_id)` に対するインデックス — 特定の上流のすべてのルールを取得します。
 
-順序付き upstream のエントリはユニーク**インデックス**ではなくユニーク**制約**です。遅延は制約の属性なので、`ALTER TABLE ... ADD CONSTRAINT ... UNIQUE (...) DEFERRABLE INITIALLY DEFERRED` で追加します。PostgreSQL では `CREATE UNIQUE INDEX ... DEFERRABLE` は構文エラーです。npm の仮想テーブルには同じ方法で追加された `unique_nvru_ns_id_repository_id_position` がすでにあります。コンテナのマイグレーションはパターンを新設せず、兄弟のものをコピーします。ただし、npm では `0`、ここでは `1` である `position` の下限はコピーしません。遅延可能なユニーク制約は `ON CONFLICT` の調停にも使えないため、`position` の書き込みはこのキーへの upsert ではなく、`UPDATE` の後に `INSERT` を行います。
+順序付き upstream のエントリはユニークインデックスではなくユニーク**制約**です。遅延は制約の属性なので、`ALTER TABLE ... ADD CONSTRAINT ... UNIQUE (...) DEFERRABLE INITIALLY DEFERRED` で追加します。PostgreSQL では `CREATE UNIQUE INDEX ... DEFERRABLE` は構文エラーです。npm の仮想テーブルには同じ方法で `npm_virtual_repository_upstreams` に追加された `unique_nvru_ns_id_repository_id_position` がすでにあります。コンテナのマイグレーションはパターンを新設せず、兄弟のものをコピーします。ただし、npm では `0`、ここでは `1` である `position` の下限はコピーしません。遅延可能なユニーク制約は `ON CONFLICT` の調停にも使えないため、`position` の書き込みはこのキーへのアップサートではなく、`UPDATE` の後に `INSERT` を行います。
 
 #### クエリ例 {#virtual-container-repositories-query-examples}
 
@@ -894,7 +901,7 @@ erDiagram
         uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid maven_package_id FK "NOT NULL, (maven_package_id, namespace_id) references maven_packages(id, namespace_id)"
-        uuid maven_version_id FK "nullable, (maven_version_id, namespace_id) references maven_versions(id, namespace_id)"
+        uuid maven_version_id FK "nullable, (maven_version_id, maven_package_id, namespace_id) references maven_versions(id, maven_package_id, namespace_id)"
         text file_name "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(id, namespace_id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
@@ -908,7 +915,7 @@ erDiagram
 - **maven_repositories**: 複数のパッケージのコンテナです。各リポジトリはグループ ID とアーティファクト ID で識別される複数のパッケージをホストできます。名前、可視性、クロスフォーマットクエリのために `repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **maven_packages**: [そのグループ ID とアーティファクト ID](https://maven.apache.org/pom.html#Maven_Coordinates) で識別される Maven パッケージ（例: `com.example:myapp`）を表します。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`NULL` はパッケージが一度もダウンロードされていないことを意味し、`keep_last_downloaded_at` ライフサイクルルールの評価では可能な限り最も古いダウンロード時刻として扱われます（すなわち、ダウンロードベースの保持の下で削除の対象となります）。`keep_last_downloaded_at` ライフサイクルルールによって、ダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **maven_versions**: Maven パッケージの個々の [バージョン](https://maven.apache.org/pom.html#Maven_Coordinates)（例: `1.0.0`、`2.1.3-SNAPSHOT`）を保存します。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールによって使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、どの GitLab ユーザーがこのバージョンを公開したか、および公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録し、[`container_manifests`](#container-repositories) の同等のカラムと同じ形状・根拠によります。`created_at` はバージョンが最初に公開された時刻を記録し、[`container_manifests`](#container-repositories) と同じ公開履歴・時間範囲出所スキャンを支えます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **maven_files**: Maven パッケージに関連付けられた個々のファイルを表します。ファイルは、`maven_version_id` が設定されたバージョン固有のもの（JAR、POM、ソース、Javadoc、チェックサム）か、`maven_version_id` が NULL のパッケージレベルのもの（`maven-metadata.xml` とそのチェックサムなど）のいずれかです。`maven_package_id` は常に設定されており、パッケージからそのすべてのファイルへの直接のパスを提供します。また、レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルである場合もあります。`sha1` と `md5` カラムは、整合性検証のために [Maven プロトコルが要求するチェックサム](https://maven.apache.org/resolver/about-checksums.html) を保存します。Maven クライアントは、すべてのアーティファクトとともに `.sha1` と `.md5` のサイドカーファイルを期待します。これらのカラムは `blob_storage_blobs` ではなく `maven_files` にあります。なぜなら、これらは Maven プロトコルの関心事であり、普遍的な blob プロパティではないためです。他のフォーマット（OCI コンテナ）は SHA256 のみを使用します。これらをここに置くことで、`blob_storage_blobs` をフォーマット固有のカラムやインデックスを持たないフォーマット非依存のテーブルとして保ちます。`sha1` は Maven プロトコルがそれを要求するため `NOT NULL` です。`md5` は Maven 3.9+ が [MD5 チェックサムを非推奨にした](https://maven.apache.org/resolver/about-checksums.html) ため nullable です。`sha512` は `NOT NULL` です。なぜなら、Maven プロトコルはレジストリが提供できなければならない `.sha512` サイドカーを公開しており、その値はバイトが永続化される前にハンドラーを通過する際のアップロード中に常に計算可能だからです。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **maven_files**: Maven パッケージに関連付けられた個々のファイルを表します。ファイルは、`maven_version_id` が設定されたバージョン固有のもの（JAR、POM、ソース、Javadoc、チェックサム）か、`maven_version_id` が NULL のパッケージレベルのもの（`maven-metadata.xml` とそのチェックサムなど）のいずれかです。`maven_package_id` は常に設定されており、パッケージからそのすべてのファイルへの直接のパスを提供します。また、レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルである場合もあります。`sha1` と `md5` カラムは、整合性検証のために [Maven プロトコルが要求するチェックサム](https://maven.apache.org/resolver/about-checksums.html) を保存します。Maven クライアントは、すべてのアーティファクトとともに `.sha1` と `.md5` のサイドカーファイルを期待します。これらのカラムは `blob_storage_blobs` ではなく `maven_files` にあります。なぜなら、これらは Maven プロトコルの関心事であり、普遍的な blob プロパティではないためです。他のフォーマット（OCI コンテナ）は SHA256 のみを使用します。これらをここに置くことで、`blob_storage_blobs` をフォーマット固有のカラムやインデックスを持たないフォーマット非依存のテーブルとして保ちます。`sha1` は Maven プロトコルがそれを要求するため `NOT NULL` です。`md5` は Maven 3.9+ が [MD5 チェックサムを非推奨にした](https://maven.apache.org/resolver/about-checksums.html) ため NULL 許容です。`sha512` は `NOT NULL` です。なぜなら、Maven プロトコルはレジストリが提供できなければならない `.sha512` サイドカーを公開しており、その値はバイトが永続化される前にハンドラーを通過する際のアップロード中に常に計算可能だからです。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **blob_storage_attachments**: 詳細は [blob ストレージ](#blob-storage) セクションを参照してください。
 
 私たちは、パッケージ名（この場合はグループ ID とアーティファクト ID）とバージョンを同じテーブルに保存していません。その理由は、UI がこのデータにパッケージ名でアクセスするためです。パッケージ名がフォルダであり、それを開くと各バージョンに 1 つずつサブフォルダがあるツリー状の UI を想像してください。この最初のリクエストはフォルダ、すなわちパッケージ名を一覧する必要があります。フォルダを開くと、すべてのサブフォルダ、すなわちパッケージバージョンを一覧するリクエストがトリガーされます。したがって、このアクセスパターンを容易にするために、2 つの専用テーブル（`maven_packages` と `maven_versions`）を持っています。
@@ -916,10 +923,9 @@ erDiagram
 #### インデックス {#maven-repositories-indexes}
 
 - **`maven_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリ参照によって Maven リポジトリを検索します。
-- **`maven_packages`**: `(namespace_id, maven_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — リポジトリ内で Maven 座標によってパッケージを検索します。部分条件により、ソフト削除後に同じ座標のパッケージを再作成できます。`(namespace_id, maven_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのパッケージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったパッケージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたパッケージを削除時刻順に一覧し、reaper のパッケージレベルスキャンを支えます。`maven_versions` の同形インデックスでは対応できません。パッケージ削除はパッケージ行をマークしますが子行を書き込まないため、tombstone が付いたパッケージ配下のバージョンは自身の `soft_deleted_at` を持たず、リポジトリが生存している間はバージョンレベルスキャンでもリポジトリ走査でもそのパッケージに到達できません。
-
-- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内の特定のバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `maven_packages` と同じ範囲スキャン戦略を使用し、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルールの評価を支えます。`(namespace_id, maven_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — ランディングページのリポジトリソートと同様に、バージョン一覧表示でパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、Maven アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンし、公開履歴のページネーションと時間範囲を指定したアーティファクトの来歴クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件のインデックスとします。
-- **`maven_files`**: `(namespace_id, maven_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除された行とパッケージレベルのファイルを除外します。`(namespace_id, maven_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名（`maven-metadata.xml` など）はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべての Maven ファイルへの逆引きで、クロスフォーマットのチェックサム検索を支えます。既存の親をキーとするインデックスはバージョンまたはパッケージをキーとするため、ダイジェストをキーとするスキャンを直接満たすことはできません。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL AND maven_version_id IS NULL AND file_name = 'maven-metadata.xml'` に対するインデックス — メタデータパージの検出スキャン用に、ネームスペース内のパッケージレベルの `maven-metadata.xml` のトゥームストーンを古い順に一覧表示します。メタデータのみを対象とする述語により、インデックスをパージ処理が読み取るパッケージレベルのメタデータファイルに限定します。また、`DESC` により、古い順に読み取る処理は、新しい順に読み取る処理が順方向にスキャンするのと同じコストで、インデックスを逆方向にスキャンできます。同じキーの単純なトゥームストーンインデックスでもこのスキャンに対応できますが、すべてのファイルのトゥームストーンを保持するため、3 条件の論理積からなる述語によってインデックスをパージ処理が読み取る行に限定します。`(namespace_id, maven_package_id, blob_sha256)` に対するインデックス — `maven_package_id` の外部キーチェックと、インデックスから `blob_sha256` を読み取るリポジトリレベルのサイズ走査の結合を支えます。チェックには述語がなく、走査はソフト削除された行にもバージョンに紐づく行にも到達するため、非部分インデックスです。
+- **`maven_packages`**: `(namespace_id, maven_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — リポジトリ内で Maven 座標によってパッケージを検索します。部分条件により、ソフト削除後に同じ座標のパッケージを再作成できます。`(namespace_id, maven_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのパッケージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったパッケージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたパッケージを削除時刻順に一覧し、リーパーのパッケージレベルスキャンを支えます。`maven_versions` の同形インデックスでは対応できません。パッケージ削除はパッケージ行をマークしますが子行を書き込まないため、トゥームストーンが付いたパッケージ配下のバージョンは自身の `soft_deleted_at` を持たず、リポジトリが生存している間はバージョンレベルスキャンでもリポジトリ走査でもそのパッケージに到達できません。このインデックスがなければ、リーパーはそのパッケージを見つけるために `maven_packages` をシーケンシャルスキャンする必要があります。
+- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内の特定のバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `maven_packages` と同じ範囲スキャン戦略を使用し、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルールの評価を支えます。`(namespace_id, maven_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — ランディングページのリポジトリソートと同様に、バージョン一覧表示でパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、Maven アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンし、公開履歴のページネーションと時間範囲を指定したアーティファクトの来歴クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件のインデックスとします。`(namespace_id, maven_package_id, id)` に対するインデックス — `maven_package_id` の外部キーチェックに対応します。チェックには述語がないため、非部分インデックスです。ソフト削除されたバージョンも自身のパッケージを参照するため、前述の部分ユニークインデックスでは対応できません。
+- **`maven_files`**: `(namespace_id, maven_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除された行とパッケージレベルのファイルを除外します。`(namespace_id, maven_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名（`maven-metadata.xml` など）はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべての Maven ファイルへの逆引きで、クロスフォーマットのチェックサム検索を支えます。既存の親をキーとするインデックスはバージョンまたはパッケージをキーとするため、ダイジェストをキーとするスキャンを直接満たすことはできません。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL AND maven_version_id IS NULL AND file_name = 'maven-metadata.xml'` に対するインデックス — メタデータパージの検出スキャン用に、ネームスペース内のパッケージレベルの `maven-metadata.xml` のトゥームストーンを古い順に一覧表示します。メタデータのみを対象とする述語により、インデックスをパージ処理が読み取るパッケージレベルのメタデータファイルに限定します。また、`DESC` により、古い順に読み取る処理は、新しい順に読み取る処理が順方向にスキャンするのと同じコストで、インデックスを逆方向にスキャンできます。同じキーの単純なトゥームストーンインデックスでもこのスキャンに対応できますが、すべてのファイルのトゥームストーンを保持するため、3 条件の論理積からなる述語によってインデックスをパージ処理が読み取る行に限定します。`(namespace_id, maven_package_id, blob_sha256)` に対するインデックス — `maven_package_id` の外部キーチェックと、インデックスから `blob_sha256` を読み取るリポジトリレベルのサイズ走査の結合を支えます。チェックには述語がなく、走査はソフト削除された行にもバージョンに紐づく行にも到達するため、非部分インデックスです。`(namespace_id, maven_version_id, blob_sha256)` に対するインデックス — `maven_version_id` の外部キーチェックと、インデックスから `blob_sha256` を読み取るアーティファクトレベルのサイズ再計算に対応します。チェックには述語がなく、再計算はソフト削除された行にも到達するため、非部分インデックスです。ソフト削除されたファイルも自身のバージョンを参照するため、`maven_version_id` に対する部分ユニークインデックスではどちらにも対応できません。
 
 #### クエリ例 {#maven-repositories-query-examples}
 
@@ -1025,7 +1031,7 @@ erDiagram
         uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid maven_remote_package_id FK "NOT NULL, (maven_remote_package_id, namespace_id) references maven_remote_packages(id, namespace_id)"
-        uuid maven_remote_version_id FK "nullable, (maven_remote_version_id, namespace_id) references maven_remote_versions(id, namespace_id)"
+        uuid maven_remote_version_id FK "nullable, (maven_remote_version_id, maven_remote_package_id, namespace_id) references maven_remote_versions(id, maven_remote_package_id, namespace_id)"
         text file_name "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(id, namespace_id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
@@ -1048,8 +1054,8 @@ erDiagram
 
 - **`maven_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。`(namespace_id, ns_key_id)` に対するインデックス — [暗号化キー](#encryption-keys)の外部キーを支え、キーの行を削除する際にテーブルを走査せず参照元の行を確認できるようにします。
 - **`maven_remote_packages`**: `(namespace_id, maven_remote_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — Maven 座標によってキャッシュされたパッケージを検索します。部分条件により、ソフト削除後に同じ座標のパッケージを再作成できます。
-- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内のキャッシュされたバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, maven_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示で、キャッシュされたパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた Maven アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンします。ローカルの [`maven_versions`](#maven-repositories) インデックスを反映し、キャッシュ側の公開履歴と来歴を対象にします。ローカルインデックスと同じ監査証跡上の理由から、無条件（`soft_deleted_at` の述語なし）のインデックスとします。
-- **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名は、バージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名は、パッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存済み blob の sha256 から、それを参照するすべてのキャッシュ済み Maven ファイルを逆引きします。ローカルの [`maven_files`](#maven-repositories) インデックスを反映し、チェックサム検索でキャッシュ側の参照も対象にします。
+- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内のキャッシュされたバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, maven_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示で、キャッシュされたパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた Maven アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンします。ホスト型の [`maven_versions`](#maven-repositories) インデックスを反映し、キャッシュ側の公開履歴と来歴を対象にします。ホスト型のインデックスと同じ監査証跡上の理由から、無条件（`soft_deleted_at` の述語なし）のインデックスとします。
+- **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名は、バージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名は、パッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存済み blob の sha256 から、それを参照するすべてのキャッシュ済み Maven ファイルを逆引きします。ホスト型の [`maven_files`](#maven-repositories) インデックスを反映し、チェックサム検索でキャッシュ側の参照も対象にします。
 
 #### クエリ例 {#maven-remote-repositories-query-examples}
 
@@ -1144,7 +1150,7 @@ erDiagram
 #### インデックス {#maven-virtual-repositories-indexes}
 
 - **`maven_virtual_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によって仮想リポジトリを検索します。
-- **`maven_virtual_repository_upstreams`**: `(namespace_id, maven_virtual_repository_id, position)` に対する `DEFERRABLE INITIALLY DEFERRED` ユニーク制約 — 仮想リポジトリの順序付き上流を取得します。トランザクション内での並べ替えを可能にするために遅延可能（deferrable）です。`(namespace_id, maven_virtual_repository_id, upstream_repository_id)` に対するユニークインデックス — 同じ上流が仮想リポジトリに二度追加されるのを防ぎます。`(namespace_id, upstream_repository_id)` に対するインデックス — 特定のリポジトリを upstream として一覧に含めるすべての仮想リポジトリを検索します。これは、上記の `NO ACTION` ガードが読み取るものです。どちらのユニークエントリにも、この列順を使用可能な接頭辞として持つものはなく、PostgreSQL は外部キーカラムを自動的にインデックス化しません。
+- **`maven_virtual_repository_upstreams`**: `(namespace_id, maven_virtual_repository_id, position)` に対する `DEFERRABLE INITIALLY DEFERRED` ユニーク制約 — 仮想リポジトリの順序付き上流を取得します。トランザクション内での並べ替えを可能にするために遅延可能（遅延可能）です。`(namespace_id, maven_virtual_repository_id, upstream_repository_id)` に対するユニークインデックス — 同じ上流が仮想リポジトリに二度追加されるのを防ぎます。`(namespace_id, upstream_repository_id)` に対するインデックス — 特定のリポジトリを upstream として一覧に含めるすべての仮想リポジトリを検索します。これは、上記の `NO ACTION` ガードが読み取るものです。どちらのユニークエントリにも、この列順を使用可能な接頭辞として持つものはなく、PostgreSQL は外部キーカラムを自動的にインデックス化しません。
 - **`maven_virtual_upstream_rules`**: `(namespace_id, maven_virtual_repository_upstream_id)` に対するインデックス — 特定の上流のすべてのルールを取得します。
 
 #### クエリ例 {#maven-virtual-repositories-query-examples}
@@ -1250,11 +1256,11 @@ erDiagram
 ```
 
 - **npm_repositories**: 複数のパッケージのコンテナです。各リポジトリはオプションのスコープを持つ複数のパッケージをホストできます。名前、可視性、クロスフォーマットクエリのために `repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **npm_packages**: npm パッケージを表します。`name` カラムはスコープを含む完全なパッケージ名（例: `@myorg/mypackage` または `lodash`）を保存します。`versions_count` はソフト削除されたものを含むパッケージの `npm_versions` 行をカウントし、ガベージコレクションが行をハード削除したときにのみデクリメントします。`tags_count` はその `npm_tags` 行をカウントします（`npm_tags` にはソフト削除カラムがないため、その問題は発生しません）。両方とも、[ADR-004](004_data_and_application_limits.md#entity-count-limits) のパッケージごとのエンティティ数制限（25,000 バージョン、1,000 タグ）を強制するバッファカウンターであり、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。ソフト削除されたバージョンを含めることは `namespace_statistics.deduplicated_size_bytes` の扱いを反映し、不正利用のベクトルを塞ぎます。すなわち、上限からソフト削除された行を除外できる顧客は、繰り返しソフト削除と再公開を行うことで 25,000 バージョンの制限を無期限に下回り続けることができてしまいますが、ソフト削除されたすべての行は依然としてストレージを占有し、復元可能なままです。両方の上限が 32 ビットの上限を十分に下回るため、`bigint` ではなく `integer` 型です。他の場所の上限のないカウンター（`downloads_count`、`size_bytes`）は無制限に増加するため `bigint` が必要です。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールによって使用されます。npm の単一バージョン非公開化では、最後のアクティブなバージョンがなくなるとこの行をソフト削除するため、ソフト削除されたパッケージは配下のすべてのバージョンがなくなった後も残り得ます。この非対称性が、このテーブルがバージョンレベルのものに頼らず独自の tombstone インデックスを持つ理由です。[`maven_packages`](#maven-repositories) は同じ形のインデックスを持ち、逆方向から同じ状態に到達します。Maven のパッケージ削除はパッケージ行をマークし、バージョンを生存させるため、親だけに tombstone が付き、子には付きません（以下のインデックス一覧を参照）。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **npm_packages**: npm パッケージを表します。`name` カラムはスコープを含む完全なパッケージ名（例: `@myorg/mypackage` または `lodash`）を保存します。`versions_count` はソフト削除されたものを含むパッケージの `npm_versions` 行をカウントし、ガベージコレクションが行をハード削除したときにのみデクリメントします。`tags_count` はその `npm_tags` 行をカウントします（`npm_tags` にはソフト削除カラムがないため、その問題は発生しません）。両方とも、[ADR-004](004_data_and_application_limits.md#entity-count-limits) のパッケージごとのエンティティ数制限（25,000 バージョン、1,000 タグ）を強制するバッファカウンターであり、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。ソフト削除されたバージョンを含めることは `namespace_statistics.deduplicated_size_bytes` の扱いを反映し、不正利用のベクトルを塞ぎます。すなわち、上限からソフト削除された行を除外できる顧客は、繰り返しソフト削除と再公開を行うことで 25,000 バージョンの制限を無期限に下回り続けることができてしまいますが、ソフト削除されたすべての行は依然としてストレージを占有し、復元可能なままです。両方の上限が 32 ビットの上限を十分に下回るため、`bigint` ではなく `integer` 型です。他の場所の上限のないカウンター（`downloads_count`、`size_bytes`）は無制限に増加するため `bigint` が必要です。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールによって使用されます。npm の単一バージョン非公開化では、最後のアクティブなバージョンがなくなるとこの行をソフト削除するため、ソフト削除されたパッケージは配下のすべてのバージョンがなくなった後も残り得ます。この非対称性が、このテーブルがバージョンレベルのものに頼らず独自のトゥームストーンインデックスを持つ理由です。[`maven_packages`](#maven-repositories) は同じ形のインデックスを持ち、逆方向から同じ状態に到達します。Maven のパッケージ削除はパッケージ行をマークし、バージョンを生存させるため、親だけにトゥームストーンが付き、子には付きません（以下のインデックス一覧を参照）。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_versions**: 埋め込まれた package.json メタデータとともに、npm パッケージの個々のバージョンを保存します。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールによって使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、どの GitLab ユーザーがこのバージョンを公開したか、および公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録し、[`container_manifests`](#container-repositories) の同等のカラムと同じ形状・根拠によります。`created_at` はバージョンが最初に公開された時刻を記録し、[`container_manifests`](#container-repositories) と同じ公開履歴・時間範囲出所スキャンを支えます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_tags**: 特定のパッケージバージョンを指す [NPM ディストリビューションタグ](https://docs.npmjs.com/cli/v11/commands/npm-dist-tag)（例: `latest`、`next`、`beta`）を提供します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_files**: npm パッケージバージョンのファイルを表します。これらは主に tarball アーカイブです。また、レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルである場合もあります。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **npm_metadata_files**: npm パッケージの事前計算されたメタデータファイルを、`kind` ごとに 1 つずつ保存します。`kind` カラムはメタデータのバリアントを区別します。`full`（0）はすべてのバージョンを含む完全な packument を含み、`dist_tags`（1）はディストリビューションタグのマッピングのみを含み、`abbreviated`（2）はリクエストが `Accept: application/vnd.npm.install-v1+json` を持つときに提供されるインストール専用の射影です。適切なファイルは、クライアントのリクエストに基づいて npm メタデータエンドポイントで提供されます。メタデータがパッケージのすべてのバージョンにまたがるため、（`npm_versions` ではなく）`npm_packages` にリンクされます。メタデータファイルはキャッシュ再構築によって生成されます。書き込みは非同期実行を 1 つ enqueue し、新鮮な行がないことを検出した読み取りは、応答前に同じ再構築をリクエスト goroutine 上で実行します。`expires_at` カラムはキャッシュの鮮度を駆動します。ライター（公開、非推奨化、非公開化、dist-tag の変更）は、データ書き込みと同じトランザクション内で、影響を受けるパッケージのすべての行に `expires_at = NOW()` を設定することでキャッシュを強制的に期限切れにします。再構築は、新しく生成された blob で行を upsert する際に `expires_at = NOW() + npm.packument_cache_ttl` を設定します。リーダーは `expires_at > NOW()` でフィルターし、ミス時には読み取り時 fill にフォールスルーするため、期限切れの行がクライアントに提供されることはありません。このカラムはハード削除の期限ではなく、キャッシュの鮮度シグナルです。強制的な期限切れは blob とアタッチメントをそのまま残すため、それらに対してすでに解決中のレスポンスは、再構築がアタッチメントを入れ替えるまで正常に完了します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **npm_metadata_files**: npm パッケージの事前計算されたメタデータファイルを、`kind` ごとに 1 つずつ保存します。`kind` カラムはメタデータのバリアントを区別します。`full`（0）はすべてのバージョンを含む完全な packument を含み、`dist_tags`（1）はディストリビューションタグのマッピングのみを含み、`abbreviated`（2）はリクエストが `Accept: application/vnd.npm.install-v1+json` を持つときに提供されるインストール専用の射影です。適切なファイルは、クライアントのリクエストに基づいて npm メタデータエンドポイントで提供されます。メタデータがパッケージのすべてのバージョンにまたがるため、（`npm_versions` ではなく）`npm_packages` にリンクされます。メタデータファイルはキャッシュ再構築によって生成されます。書き込みは非同期実行を 1 つキューに追加し、新鮮な行がないことを検出した読み取りは、応答前に同じ再構築をリクエスト goroutine 上で実行します。`expires_at` カラムはキャッシュの鮮度を駆動します。ライター（公開、非推奨化、非公開化、dist-tag の変更）は、データ書き込みと同じトランザクション内で、影響を受けるパッケージのすべての行に `expires_at = NOW()` を設定することでキャッシュを強制的に期限切れにします。再構築は、新しく生成された blob で行をアップサートする際に `expires_at = NOW() + npm.packument_cache_ttl` を設定します。キャッシュジョブと読み取り時の補充のどちらも、この再構築を実行できます。リーダーは `expires_at > NOW()` でフィルターし、ミス時には読み取り時補充にフォールスルーするため、期限切れの行がクライアントに提供されることはありません。このカラムはハード削除の期限ではなく、キャッシュの鮮度シグナルです。強制的な期限切れは blob とアタッチメントをそのまま残すため、それらに対してすでに解決中のレスポンスは、再構築がアタッチメントを入れ替えるまで正常に完了します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **blob_storage_attachments**: 詳細は [blob ストレージ](#blob-storage) セクションを参照してください。
 
 [Maven](#maven-repositories) と同様に、パッケージ名とバージョンはまったく同じ理由で 2 つの異なるテーブルに保存されます。
@@ -1262,11 +1268,10 @@ erDiagram
 #### インデックス {#npm-repositories-indexes}
 
 - **`npm_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリ参照によって NPM リポジトリを検索します。
-- **`npm_packages`**: `(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — リポジトリ内で名前によってパッケージを検索します。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。`(namespace_id, npm_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのパッケージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったパッケージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたパッケージを削除時刻順に一覧します。同じ形のバージョンレベルのインデックスとは異なり、主な目的はゴミ箱の一覧表示ではありません。最後のアクティブなバージョンがなくなったときにソフト削除されたパッケージは、その配下のバージョンより長く残ります。そのため、それらのバージョンがパージされると、バージョンレベルのスキャンでもリポジトリの走査でもパッケージ行に到達できず、このインデックスがなければリーパーはテーブルをシーケンシャルスキャンしてその行を探す必要があります。`(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — 公開座標にある tombstone 行の `versions_count` を合計し、ソフト削除をまたぐ公開前のバージョン上限チェックを支えます。パッケージ全体の非公開化ではカウント全体が tombstone 行に移る一方、部分的なユニーク名前インデックスにより再公開時にはゼロの新しいアクティブ行が挿入されるため、上限のリセットを防ぐには tombstone 行を名前で読む必要があります。
-
-- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内の特定のバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `npm_packages` と同じ範囲スキャン戦略を使用し、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルールの評価を支えます。`(namespace_id, npm_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — ランディングページのリポジトリソートと同様に、バージョン一覧表示でパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、npm アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンし、公開履歴のページネーションと時間範囲を指定したアーティファクトの来歴クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件のインデックスとします。
+- **`npm_packages`**: `(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — リポジトリ内で名前によってパッケージを検索します。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。`(namespace_id, npm_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのパッケージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったパッケージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたパッケージを削除時刻順に一覧します。同じ形のバージョンレベルのインデックスとは異なり、主な目的はゴミ箱の一覧表示ではありません。最後のアクティブなバージョンがなくなったときにソフト削除されたパッケージは、その配下のバージョンより長く残ります。そのため、それらのバージョンがパージされると、バージョンレベルのスキャンでもリポジトリの走査でもパッケージ行に到達できず、このインデックスがなければリーパーはテーブルをシーケンシャルスキャンしてその行を探す必要があります。`(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — 公開座標にあるトゥームストーン行の `versions_count` を合計し、ソフト削除をまたぐ公開前のバージョン上限チェックを支えます。`versions_count` はソフト削除されたバージョンもカウントし、ハード削除時にのみデクリメントします（前述の上限回避防止ルール）。パッケージ全体の非公開化ではカウント全体がトゥームストーン行に移る一方、部分的なユニーク名前インデックスにより再公開時にはゼロの新しいアクティブ行が挿入されるため、上限のリセットを防ぐにはトゥームストーン行を名前で読む必要があります。ユニーク名前インデックスではこの読み取りに対応できません。PostgreSQL が部分インデックスを使用するのは、クエリの述語がインデックスの述語を含意する場合だけであり、このクエリの述語はそのインデックスの述語の補集合だからです。
+- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内の特定のバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `npm_packages` と同じ範囲スキャン戦略を使用し、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルールの評価を支えます。`(namespace_id, npm_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — ランディングページのリポジトリソートと同様に、バージョン一覧表示でパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、npm アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンし、公開履歴のページネーションと時間範囲を指定したアーティファクトの来歴クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件のインデックスとします。`(namespace_id, npm_package_id, id)` に対するインデックス — `npm_package_id` の外部キーチェックに対応します。チェックには述語がないため、非部分インデックスです。ソフト削除されたバージョンも自身のパッケージを参照するため、前述の部分ユニークインデックスでは対応できません。
 - **`npm_tags`**: `(namespace_id, npm_package_id, name)` に対するユニークインデックス — パッケージ内で名前によってディストリビューションタグを検索します。`(namespace_id, npm_version_id)` に対するインデックス — 特定のバージョンを指すすべてのタグを見つけます。
-- **`npm_files`**: `(namespace_id, npm_version_id, file_name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件により、ソフト削除後に同じ名前のファイルを再作成できます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべての npm ファイルへの逆引きで、クロスフォーマットのチェックサム検索を支えます。既存のバージョンをキーとするインデックスは、ダイジェストをキーとするスキャンを直接満たすことはできません。
+- **`npm_files`**: `(namespace_id, npm_version_id, file_name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件により、ソフト削除後に同じ名前のファイルを再作成できます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべての npm ファイルへの逆引きで、クロスフォーマットのチェックサム検索を支えます。既存のバージョンをキーとするインデックスは、ダイジェストをキーとするスキャンを直接満たすことはできません。`(namespace_id, npm_version_id)` に対するインデックス — `npm_version_id` の外部キーチェックに対応します。チェックには述語がないため、非部分インデックスです。ソフト削除されたファイルも自身のバージョンを参照するため、前述の部分ユニークインデックスでは対応できません。
 - **`npm_metadata_files`**: `(namespace_id, npm_package_id, kind)` に対するユニークインデックス — パッケージごと・kind ごとに 1 つのメタデータファイル。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってメタデータファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのメタデータファイルへの逆引きで、[`npm_files`](#npm-repositories) を反映し、単一の sha256 検索で tarball と packument スタイルのメタデータの両方をカバーします。
 
 #### クエリ例 {#npm-repositories-query-examples}
@@ -1312,7 +1317,7 @@ erDiagram
   読み取りは `expires_at > NOW()` でフィルターします。ミス（行がない、またはライターが
   強制的に期限切れにしたか TTL が経過したために `expires_at <= NOW()`）では、リクエスト goroutine 上で
   下記のキャッシュ再構築を実行し、その再構築がコミットした行を提供します。したがってミスは、レスポンスへ直接
-  レンダリングされる本文ではなく、キャッシュ書き込みと blob の open で終わります。
+  レンダリングされる本文ではなく、キャッシュ書き込みと blob のオープンで終わります。
 
 - 書き込み時に packument キャッシュを強制的に期限切れにする
 
@@ -1328,11 +1333,11 @@ erDiagram
   ```
 
   初回公開の場合はまだ行が存在しないため、`UPDATE` は 0 行に影響します。最初に実行される再構築が、
-  キャッシュジョブと読み取り時 fill のどちらであっても、キャッシュ行を挿入します。
+  キャッシュジョブと読み取り時補充のどちらであっても、キャッシュ行を挿入します。
 
 - バージョンの公開または非公開化の後にメタデータファイルをアップサートする
 
-  キャッシュ再構築は、キャッシュジョブと読み取り時 fill のどちらが実行していても、パッケージの kind ごとにこれを 1 回実行します。古いアタッチメントは、
+  キャッシュ再構築は、キャッシュジョブと読み取り時補充のどちらが実行していても、パッケージの kind ごとにこれを 1 回実行します。古いアタッチメントは、
   孤立したアタッチメントが blob のガベージコレクションをブロックするのを防ぐために、
   同じトランザクション内で削除しなければなりません（[クリーンアップタスク](#cleanup-tasks) を参照）。
 
@@ -1372,11 +1377,8 @@ erDiagram
     repositories ||--|| npm_remote_repositories : "has one"
     npm_remote_repositories ||--o{ npm_remote_packages : "has many"
     npm_remote_packages ||--o{ npm_remote_versions : "has many"
-    npm_remote_packages ||--o{ npm_remote_tags : "has many"
     npm_remote_packages ||--o{ npm_remote_metadata_files : "has many"
-    npm_remote_metadata_files ||--o{ npm_remote_tags : "has many"
     npm_remote_versions ||--o{ npm_remote_files : "has many"
-    npm_remote_tags ||--|| npm_remote_versions : "has one"
     npm_remote_metadata_files ||--|| blob_storage_attachments : "has one"
     npm_remote_files ||--|| blob_storage_attachments : "has one"
 
@@ -1410,27 +1412,17 @@ erDiagram
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid npm_remote_package_id FK "NOT NULL, (npm_remote_package_id, namespace_id) references npm_remote_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
-        jsonb package_json "NOT NULL"
         bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 
-    npm_remote_tags {
-        uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
-        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
-        uuid npm_remote_package_id FK "NOT NULL, (npm_remote_package_id, namespace_id) references npm_remote_packages(id, namespace_id)"
-        uuid npm_remote_version_id FK "NOT NULL, (npm_remote_version_id, namespace_id) references npm_remote_versions(id, namespace_id)"
-        uuid npm_remote_metadata_file_id FK "NOT NULL, (npm_remote_metadata_file_id, namespace_id) references npm_remote_metadata_files(id, namespace_id)"
-        text name "NOT NULL, limit 255"
-    }
-
     npm_remote_metadata_files {
         uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid npm_remote_package_id FK "NOT NULL, (npm_remote_package_id, namespace_id) references npm_remote_packages(id, namespace_id)"
-        smallint kind "NOT NULL, 0=full, 1=dist_tags"
+        smallint kind "NOT NULL, 0=full, 1=dist_tags, 2=abbreviated"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(id, namespace_id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
         timestamptz upstream_checked_at "NOT NULL, DEFAULT NOW()"
@@ -1452,9 +1444,8 @@ erDiagram
 
 - **npm_remote_repositories**: 外部の npm レジストリを表します。URL、認証情報、アーティファクトのキャッシュ TTL（`cache_validity_hours`）、およびパッケージメタデータレスポンス用の別個の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックのステータスは監視のために追跡されます。`repository_id` を介して親の `repositories` テーブルを参照します。上流の認証情報は、それを復号するラップ済みデータ暗号化キーとともに暗号文として保存します。カラムの構成と制約については、[暗号化キー](#encryption-keys)を参照してください。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_remote_packages**: キャッシュされた npm パッケージです。`last_downloaded_at` はパッケージのいずれかのキャッシュされたファイルが最後にダウンロードされた時刻を記録し、ホット行の競合を避けるためにバッファ書き込み/非同期書き込みを介して維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **npm_remote_versions**: その `package_json` メタデータを持つキャッシュされたバージョンです。packument がフェッチされたときに（すべてのバージョンのメタデータを含むため）入力されます。`last_downloaded_at` はバージョンのいずれかのキャッシュされたファイルが最後にダウンロードされた時刻を記録し、ホット行の競合を避けるためにバッファ書き込み/非同期書き込みを介して維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用されます。`created_at` はバージョンが最初にキャッシュされた時刻を記録し、[`npm_versions`](#npm-repositories) を反映してキャッシュ側の公開履歴と出所スキャンを支えます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **npm_remote_tags**: キャッシュされた dist-tag からバージョンへのマッピング（例: `latest`、`next`）です。packument から入力されます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **npm_remote_metadata_files**: 上流レジストリからキャッシュされた事前計算されたメタデータファイルを、パッケージごと・kind ごとに 1 つずつ保存します。`kind` は、すべてのバージョンを含む完全な packument（`0`）と dist-tags のみのマッピング（`1`）を区別します。`upstream_checked_at` はメタデータが上流レジストリに対して最後に検証された時刻を記録し、`metadata_cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` は上流が返した ETag を保存し、変更されていないメタデータの再ダウンロードを回避するための条件付きリクエスト（`If-None-Match`）を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **npm_remote_versions**: キャッシュされたバージョンで、そのバージョンの最初の tarball がプルされたときに作成され、バージョンは tarball のファイル名から取得します。バージョンごとのメタデータは保持しません。リモートリポジトリは upstream 自身の packument ドキュメント（`npm_remote_metadata_files` を参照）を行に解析せずに中継するため、このテーブルは `npm_remote_files` のキーとなり、バージョンレベルのキャッシュライフサイクルを保持します。`last_downloaded_at` は、バージョン内のいずれかのキャッシュされたファイルが最後にダウンロードされた時刻を記録します。ホット行の競合を避けるため、バッファ書き込み/非同期書き込みによって維持します。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用します。`created_at` はバージョンが最初にキャッシュされた時刻を記録し、[`npm_versions`](#npm-repositories)と同様に、キャッシュ側の公開履歴と来歴のスキャンを支えます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **npm_remote_metadata_files**: upstream レジストリからキャッシュした事前計算済みのメタデータファイルを、パッケージごとに種類につき 1 つ保存します。`kind` は、すべてのバージョンを含む完全な packument（`0`）、dist-tags のみのマッピング（`1`）、およびリクエストに `Accept: application/vnd.npm.install-v1+json` が含まれる場合に提供するインストール専用の形式である簡略化された packument（`2`）を区別します。各行は、そのバリアントについて upstream 自身のドキュメントを保持し、すべての `dist.tarball` をリモートリポジトリに書き換えます。リモートリポジトリはタグごとの行を保持しません。クライアントは中継された packument の `dist-tags` メンバーからタグを解決します。`upstream_checked_at` は、メタデータを upstream レジストリに照らして最後に検証した時刻を記録し、`metadata_cache_validity_hours` と比較して再検証が必要かを判断します。`upstream_etag` は upstream が返した ETag を保存し、条件付きリクエスト（`If-None-Match`）によって変更のないメタデータの再ダウンロードを回避できます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_remote_files**: キャッシュされた tarball です。`file_name` は上流の `dist.tarball` から導出した名前を保持するため、上流がファイル名内でスコープを繰り返している場合は、パス区切り文字を含みます（[ADR-009](009_api_design.md)を参照）。したがって、`limit 255` は単一の名前ではなく相対パス全体を制限し、要素数を制限するルールはないため、これが唯一の制限です。対応するホスト型の `npm_files` は常に単一セグメントです。`upstream_checked_at` はファイルが上流レジストリに対して最後に検証された時刻を記録し、`cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` は上流が返した ETag を保存し、変更されていない tarball の再ダウンロードを回避するための条件付きリクエスト（`If-None-Match`）を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **blob_storage_attachments**: 詳細は [blob ストレージ](#blob-storage) セクションを参照してください。
 
@@ -1462,8 +1453,7 @@ erDiagram
 
 - **`npm_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。`(namespace_id, ns_key_id)` に対するインデックス — [暗号化キー](#encryption-keys)の外部キーを支え、キーの行を削除する際にテーブルを走査せず参照元の行を確認できるようにします。
 - **`npm_remote_packages`**: `(namespace_id, npm_remote_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — 名前によってキャッシュされたパッケージを検索します。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。
-- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内のキャッシュされたバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, npm_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示で、キャッシュされたパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた npm アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンします。ローカルの [`npm_versions`](#npm-repositories) インデックスを反映し、キャッシュ側の公開履歴と来歴を対象にします。ローカルインデックスと同じ監査証跡上の理由から、無条件（`soft_deleted_at` の述語なし）のインデックスとします。
-- **`npm_remote_tags`**: `(namespace_id, npm_remote_package_id, name)` に対するユニークインデックス — 名前によってディストリビューションタグを検索します。`(namespace_id, npm_remote_version_id)` に対するインデックス — 特定のバージョンを指すすべてのタグを見つけます。
+- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内のキャッシュされたバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, npm_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示で、キャッシュされたパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた npm アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンします。ホスト型の [`npm_versions`](#npm-repositories) インデックスを反映し、キャッシュ側の公開履歴と来歴を対象にします。ホスト型のインデックスと同じ監査証跡上の理由から、無条件（`soft_deleted_at` の述語なし）のインデックスとします。
 - **`npm_remote_metadata_files`**: `(namespace_id, npm_remote_package_id, kind)` に対するユニークインデックス — パッケージごと・kind ごとに 1 つのメタデータファイルを強制します。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってメタデータファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされたメタデータファイルへの逆引きで、ホスト型の [`npm_metadata_files`](#npm-repositories) インデックスを反映します。
 - **`npm_remote_files`**: `(namespace_id, npm_remote_version_id, file_name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件により、ソフト削除後に同じ名前のファイルを再作成できます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされた npm ファイルへの逆引きで、ホスト型の [`npm_files`](#npm-repositories) インデックスを反映し、チェックサム検索がキャッシュ側の参照もカバーするようにします。
 
@@ -1484,17 +1474,19 @@ erDiagram
   VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>, 'https://registry.npmjs.org', $1, $2, $3, $4);
   ```
 
-- パッケージのすべてのキャッシュされたバージョンを取得する（packument レスポンスを提供）
+- キャッシュされた packument を読み取る（packument レスポンスを提供）
 
   ```sql
-  SELECT nrv.version, nrv.package_json
-  FROM npm_remote_versions nrv
+  -- kind 0 serves the full packument; kind 2 serves the abbreviated one
+  SELECT nrmf.blob_storage_attachment_id, nrmf.blob_sha256, nrmf.upstream_etag, nrmf.upstream_checked_at
+  FROM npm_remote_metadata_files nrmf
   JOIN npm_remote_packages nrp
-    ON nrv.npm_remote_package_id = nrp.id AND nrv.namespace_id = nrp.namespace_id
+    ON nrmf.npm_remote_package_id = nrp.id AND nrmf.namespace_id = nrp.namespace_id
   WHERE nrp.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
     AND nrp.npm_remote_repository_id = '019a1b2c-0789-7abc-8def-000000000789'
     AND nrp.name = '@myorg/mypackage'
-    AND nrp.soft_deleted_at IS NULL AND nrv.soft_deleted_at IS NULL;
+    AND nrp.soft_deleted_at IS NULL
+    AND nrmf.kind = 0;
   ```
 
 - キャッシュされた tarball をプルする（読み取りパスのショートカット）
@@ -1545,9 +1537,9 @@ erDiagram
 
 - **npm_virtual_repositories**: npm パッケージの仮想リポジトリです。名前、可視性、クロスフォーマットクエリのために `repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_virtual_repository_upstreams**: 仮想リポジトリとその上流を結合するテーブルです。各仮想リポジトリは上流の順序付きリストを持ちます。各エントリは `upstream_repository_id` を介して上流リポジトリを参照し、これは `repositories(id, namespace_id)` を指します。複合外部キー `(namespace_id, upstream_repository_id)` は、上流が同じネームスペース内にあることを強制します。これはレジストリがネームスペースにスコープされること（[ADR-001](001_organizations_as_anchor_point.md)）と一貫しています。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **npm_virtual_upstream_rules**: 上流の許可/拒否フィルタールールを定義します。各ルールは、この上流を通じて解決する際にどのアーティファクトが含まれるか除外されるかを制御するために、ワイルドカードパターンと対象フィールドを指定します。パターンは MVP ではワイルドカードのみです。正規表現のサポートは顧客のフィードバックがそれを正当化するまで延期されます（[ディスカッション](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。データベースは列挙型とパターン長を `CHECK rule_type IN (0, 1)`、`CHECK target_field IN (0, 1, 2)`、`CHECK char_length(pattern) <= 255` で強制します。範囲外の識別子は読み取りパスに任せず、書き込み時に拒否されます。パターンの境界は byte ではなく文字数を数えるため、UTF-8 のサイズにかかわらず 255 文字のパターンを受け付けます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **npm_virtual_upstream_rules**: 上流の許可/拒否フィルタールールを定義します。各ルールは、この上流を通じて解決する際にどのアーティファクトが含まれるか除外されるかを制御するために、ワイルドカードパターンと対象フィールドを指定します。パターンは MVP ではワイルドカードのみです。正規表現のサポートは顧客のフィードバックがそれを正当化するまで延期されます（[ディスカッション](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。データベースは列挙型とパターン長を `CHECK rule_type IN (0, 1)`、`CHECK target_field IN (0, 1, 2)`、`CHECK char_length(pattern) <= 255` で強制します。範囲外の識別子は読み取りパスに任せず、書き込み時に拒否されます。パターンの境界はバイトではなく文字数を数えるため、UTF-8 のサイズにかかわらず 255 文字のパターンを受け付けます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 
-ここで `position` は 0 始まりです。`CHECK position >= 0` が下限を定め、0 が最優先の位置です。この下限は npm 固有で、リファレンス実装とは異なります。monolith の仮想レジストリは npm を含むすべての出荷済みフォーマットで 1 始まりかつ隙間を詰めます。[`virtual_registries_packages_npm_registry_upstreams`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/db/structure.sql) は `"position" smallint DEFAULT 1 NOT NULL` と `CHECK ((1 <= "position") AND ("position" <= 20))` を宣言し、共通の [`VirtualRegistries::RegistryUpstream`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/models/virtual_registries/registry_upstream.rb) は作成時に `maximum(:position).to_i + 1` を割り当て、削除時にはより大きいすべての位置をデクリメントします。コンテナテーブルの下限 1 はこの前例と一致します。[S32](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/specs/S32-container-virtual.md) は、S17 の 1 始まりの連続した番号振り直しと、このドキュメントの `position` が `1` から始まるクエリ例を根拠にしています。npm の `>= 0` と削除による隙間の許容は、[S31](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/specs/S31-npm-virtual.md) がその前例に反して意図的に選択したものです。
+ここで `position` は 0 始まりです。`CHECK position >= 0` が下限を定め、0 が最優先の位置です。この下限は npm 固有で、リファレンス実装とは異なります。モノリスの仮想レジストリは npm を含むすべての出荷済みフォーマットで 1 始まりかつ隙間を詰めます。[`virtual_registries_packages_npm_registry_upstreams`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/db/structure.sql) は `"position" smallint DEFAULT 1 NOT NULL` と `CHECK ((1 <= "position") AND ("position" <= 20))` を宣言し、共通の [`VirtualRegistries::RegistryUpstream`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/models/virtual_registries/registry_upstream.rb) は作成時に `maximum(:position).to_i + 1` を割り当て、削除時にはより大きいすべての位置をデクリメントします。コンテナテーブルの下限 1 はこの前例と一致します。[S32](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/specs/S32-container-virtual.md) は、S17 の 1 始まりの連続した番号振り直しと、このドキュメントの `position` が `1` から始まるクエリ例を根拠にしています。npm の `>= 0` と削除による隙間の許容は、[S31](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/specs/S31-npm-virtual.md) がその前例に反して意図的に選択したものです。
 
 2 つの下限は互いに調整されておらず、データベースに存在するのは一方だけです。npm は [artifact-registry!2066](https://gitlab.com/gitlab-org/ops/artifact-registry/-/merge_requests/2066) で出荷済みですが、コンテナは S32 で指定されているだけで、まだマイグレーションがありません。S32 は、`position` 値が書き込みサーフェスより下のレイヤーに届かず、解決では一覧を昇順に読み位置をインデックスとして扱わないことを理由に、差異の決着を S17 の管理 API またはこのドキュメントに委ねています。そのため、この段落は分岐を追認せず記録します。[#985](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/985) で追跡されています。
 
@@ -1571,7 +1563,7 @@ erDiagram
 - **`npm_virtual_repository_upstreams`**: `(namespace_id, npm_virtual_repository_id, position)` に対する `DEFERRABLE INITIALLY DEFERRED` ユニーク制約 — 仮想リポジトリの順序付き上流を取得します。トランザクション内での並べ替えを可能にします。`(namespace_id, npm_virtual_repository_id, upstream_repository_id)` に対するユニークインデックス — 同じ上流が仮想リポジトリに二度追加されるのを防ぎます。`(namespace_id, upstream_repository_id)` に対するインデックス — 特定のリポジトリを upstream として一覧に含めるすべての仮想リポジトリを検索します。これは、上記の `NO ACTION` ガードと関連付けサーフェスが読み取るものです。どちらのユニークエントリにも、この列順を使用可能な接頭辞として持つものはなく、PostgreSQL は外部キーカラムを自動的にインデックス化しません。
 - **`npm_virtual_upstream_rules`**: `(namespace_id, npm_virtual_repository_upstream_id)` に対するインデックス — 特定の上流のすべてのルールを取得します。`namespace_id` が先頭なので、読み取りは自身の `namespace_id` 等価条件を運ぶ必要があります。外部キーカラムだけでは使用可能な接頭辞に一致せず、すべてのパーティションを走査します。
 
-順序付き upstream のエントリはユニーク**インデックス**ではなくユニーク**制約**です。遅延は制約の属性なので、`ALTER TABLE ... ADD CONSTRAINT ... UNIQUE (...) DEFERRABLE INITIALLY DEFERRED` で追加します。PostgreSQL では `CREATE UNIQUE INDEX ... DEFERRABLE` は構文エラーです。遅延可能なユニーク制約は `ON CONFLICT` の調停にも使えないため、`position` の書き込みはこのキーへの upsert ではなく、`UPDATE` の後に `INSERT` を行います。
+順序付き upstream のエントリはユニークインデックスではなくユニーク**制約**です。遅延は制約の属性なので、`ALTER TABLE ... ADD CONSTRAINT ... UNIQUE (...) DEFERRABLE INITIALLY DEFERRED` で追加します。PostgreSQL では `CREATE UNIQUE INDEX ... DEFERRABLE` は構文エラーです。遅延可能なユニーク制約は `ON CONFLICT` の調停にも使えないため、`position` の書き込みはこのキーへのアップサートではなく、`UPDATE` の後に `INSERT` を行います。
 
 #### クエリ例 {#npm-virtual-repositories-query-examples}
 
@@ -1595,6 +1587,106 @@ erDiagram
   ```sql
   INSERT INTO npm_virtual_repository_upstreams (namespace_id, npm_virtual_repository_id, upstream_repository_id, position)
   VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', '019a1b2c-0123-7abc-8def-000000000123', '019a1b2c-0789-7abc-8def-000000000789', 1);
+  ```
+
+### Generic リポジトリ {#generic-repositories}
+
+Generic パッケージは、パッケージ名とバージョンの下で公開される不透明なファイルの集合です。レジストリはファイル内容の解析、検証、インデックス作成を行わず、生成または提供するフォーマット定義のメタデータドキュメントもありません。そのため、Generic リポジトリはこのドキュメントで最も薄いフォーマットであり、アーティファクトテーブルは 3 つ、補助テーブルはありません。
+
+```mermaid
+erDiagram
+    repositories ||--|| generic_repositories : "has one"
+    generic_repositories ||--o{ generic_packages : "has many"
+    generic_packages ||--o{ generic_versions : "has many"
+    generic_versions ||--o{ generic_files : "has many"
+    generic_files ||--|| blob_storage_attachments : "has one"
+
+    generic_repositories {
+        uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        uuid repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
+    }
+
+    generic_packages {
+        uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        uuid generic_repository_id FK "NOT NULL, (generic_repository_id, namespace_id) references generic_repositories(id, namespace_id)"
+        text name "NOT NULL, limit 255"
+        timestamptz last_downloaded_at "nullable, buffered"
+        timestamptz soft_deleted_at "nullable"
+    }
+
+    generic_versions {
+        uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        uuid generic_package_id FK "NOT NULL, (generic_package_id, namespace_id) references generic_packages(id, namespace_id)"
+        text version "NOT NULL, limit 255"
+        bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
+        timestamptz last_downloaded_at "nullable, buffered"
+        text gitlab_user_id "nullable, opaque string, limit 255"
+        text gitlab_project_id "nullable, opaque string, limit 255"
+        bytea gitlab_git_commit_sha "nullable"
+        timestamptz soft_deleted_at "nullable"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
+    }
+
+    generic_files {
+        uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        uuid generic_version_id FK "NOT NULL, (generic_version_id, namespace_id) references generic_versions(id, namespace_id)"
+        text file_path "NOT NULL, CHECK (octet_length(file_path) <= 1024)"
+        bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(id, namespace_id, sha256)"
+        bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        timestamptz soft_deleted_at "nullable"
+    }
+```
+
+- **generic_repositories**: 複数のパッケージを格納するコンテナです。名前、可視性、クロスフォーマットのクエリのために、`repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **generic_packages**: 単一の自由形式の名前（例: `release-artifacts`）で識別される Generic パッケージを表します。Maven とは異なり、カラムに分割する構造化された座標はないため、1 つの `name` カラムが識別子全体を保持します。`last_downloaded_at` は、パッケージ内のいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes)によって維持します。`NULL` はパッケージが一度もダウンロードされていないことを意味し、`keep_last_downloaded_at` ライフサイクルルールの評価では、可能な限り古いダウンロード時刻として扱います（[ADR-010](010_data_retention.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **generic_versions**: Generic パッケージの個々のバージョン（例: `1.0.0`、`2024-06-01-nightly`）を保存します。Generic はバージョンの文法を課さないため、このカラムは解析済みのバージョンではなく不透明な文字列です。レジストリはバージョンを等価性のみで比較し、意味的な順序では並べません。`last_downloaded_at`、`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha`、`created_at` は、[`maven_versions`](#maven-repositories)の同等のカラムと同じ形状、バッファリング動作、来歴の根拠を持ちます。Generic では複数回の公開によって既存のバージョンにファイルを追加でき、それらは異なるパイプラインやプロジェクトから来る場合があるため、来歴カラム（`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha`）はバージョンを作成した公開のみを記録し、その後のアップロードでは変更しません。よくあるケースである、1 つのパイプライン内の複数のジョブでは、同じプロジェクトとコミットを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **generic_files**: バージョンの下で公開される個々のファイルを表します。`generic_version_id` は `NOT NULL` であり、これが [`maven_files`](#maven-repositories)との構造上の違いです。Maven は `maven-metadata.xml` などのパッケージレベルのファイルをモデル化するためにバージョンの null を許容しますが、Generic はメタデータドキュメントを生成しないため、パッケージレベルのファイルを持ちません。構造は [`npm_files`](#npm-repositories)と一致するため、npm と同様に、このテーブルはパッケージの FK を持ちません。パッケージは常に `generic_versions.generic_package_id` であり、2 つ目の独立した FK はそれと不一致になる可能性があります。Generic の公開ではバージョンの下にファイルを入れ子にでき、レジストリはそのレイアウトを平坦化せずにそのまま保存するため、`file_path` はディレクトリセグメントを含めた、バージョンからの相対的な公開パス（例: `bin/linux/amd64/tool`）を保持します。無料プランと同様に、最後のセグメントは Generic のファイル名文法（ASCII の英字、数字、`.`、`_`、`-`、`+`、`~`、`@`。ただし `~` または `@` で始まったり終わったりしない）に従い、ディレクトリセグメントには `/` 以外の任意の文字を含められます。空のセグメント、`.`、`..` のセグメントは拒否するため、保存される各パスの表記は 1 つです。パスはデコードした状態で保存します。`CHECK (octet_length(file_path) <= 1024)` は文字数ではなくバイト数を制限するため、使用する文字にかかわらず、このカラムに対するユニークインデックスの btree エントリ上限内に収まります。値が単一の名前ではなくパスであるため、この制限は、このドキュメントの他のファイル名に使用する 255 よりも大きくなっています。バージョン内の既存の `file_path` を再公開すると、Maven のリリースファイルや npm のバージョンと同様に `409 Conflict` で拒否します。`(namespace_id, generic_version_id, file_path)` に対する部分ユニークインデックスが挿入を決定するため、同時アップロードでは成功するのは 1 つだけです。ファイルを変更する場合、ユーザーはそれを削除して再公開します。これは、_重複を許可_ を無効にした無料プランの Generic Package Registry と一致します。無料プランのデフォルト（重複を許可）、そのグループレベルの切り替え、および例外の正規表現は GA の対象範囲外なので、スキーマにはそれらの設定はありません。`maven_files` と異なり、ここにはフォーマット固有のチェックサムカラムはありません。Generic プロトコルが公開するのは `blob_sha256` がすでに保持する SHA256 のみなので、重複させるものがないためです。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **blob_storage_attachments**: 詳細は [Blob ストレージ](#blob-storage)セクションを参照してください。
+
+Generic がパッケージとバージョンを分離する理由は [Maven](#maven-repositories)と同じです。ツリー状の UI は、最初にパッケージ名を一覧表示し、展開するとバージョン識別子を表示するため、2 つのアクセスパターンには 2 つのテーブルが必要です。フォーマット自体にインデックスを作成するメタデータがないことは、UI が発行する読み取りの形状を変えません。
+
+#### インデックス {#indexes-15}
+
+- **`generic_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリへの参照によって Generic リポジトリを検索します。
+- **`generic_packages`**: `(namespace_id, generic_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — リポジトリ内で名前によってパッケージを検索します。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。`(namespace_id, generic_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — 境界のある範囲スキャンによって `keep_last_downloaded_at` ライフサイクルルールの評価を支え、`NULLS FIRST` によって一度もダウンロードされていないパッケージを最も古い行とグループ化します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — リーパーのパッケージレベルスキャンのために、ソフト削除されたパッケージを削除時刻順に一覧します。パッケージ削除では子行を書き込まないため、バージョンレベルのインデックスではこのスキャンに対応できません。
+- **`generic_versions`**: `(namespace_id, generic_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内の特定のバージョンを検索します。部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, generic_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `generic_packages` のライフサイクルスキャンに相当する、パッケージ単位のスキャンです。`(namespace_id, generic_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示のために、パッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — アーティファクト粒度のゴミ箱一覧です。`(namespace_id, created_at DESC)` に対するインデックス — 公開履歴と時間範囲を指定した来歴クエリを支える時系列スキャンです。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件とします。`(namespace_id, generic_package_id)` に対するインデックス — `generic_package_id` の外部キーチェックと、リポジトリレベルのサイズ走査でバージョンからパッケージに進む処理に対応します。チェックには述語がなく、走査はソフト削除されたバージョンにも到達するため、非部分インデックスです。
+- **`generic_files`**: `(namespace_id, generic_version_id, file_path) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — ファイルパスはバージョン内で一意でなければなりません。バージョンが null の状態は表現できないため、`maven_files` では 2 つ必要なユニークインデックスが、ここでは 1 つで十分です。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべての Generic ファイルへの逆引きで、クロスフォーマットのチェックサム検索を支えます。`(namespace_id, generic_version_id, blob_sha256)` に対するインデックス — `generic_version_id` の外部キーチェック、リポジトリレベルのサイズ走査の結合、アーティファクトレベルのサイズ再計算に対応し、これらはすべてインデックスから `blob_sha256` を読み取ります。チェックには述語がなく、走査はソフト削除された行にも到達するため、非部分インデックスです。ソフト削除されたファイルも自身のバージョンを参照するため、前述の部分ユニークインデックスでは外部キーチェックに対応できません。
+
+#### クエリ例 {#query-examples-13}
+
+- 指定されたリポジトリ ID とパッケージ名のパッケージバージョンを取得する。
+
+  ```sql
+  SELECT gv.*
+  FROM generic_versions gv
+  JOIN generic_packages gp
+    ON gv.generic_package_id = gp.id AND gv.namespace_id = gp.namespace_id
+  WHERE gp.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND gp.generic_repository_id = '019a1b2c-0123-7abc-8def-000000000123' AND gp.name = 'release-artifacts'
+    AND gv.version = '1.0.0'
+    AND gp.soft_deleted_at IS NULL AND gv.soft_deleted_at IS NULL;
+  ```
+
+- バージョン ID と公開パスを指定してファイルを取得する。
+
+  ```sql
+  SELECT gf.*
+  FROM generic_files gf
+  WHERE gf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND gf.generic_version_id = '019a1b2c-0456-7abc-8def-000000000456' AND gf.file_path = 'bin/linux/amd64/tool'
+    AND gf.soft_deleted_at IS NULL;
+  ```
+
+- バージョン詳細ビュー用に、バージョンの下で公開されたすべてのファイルを一覧する。
+
+  ```sql
+  SELECT gf.id, gf.file_path, gf.blob_sha256
+  FROM generic_files gf
+  WHERE gf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND gf.generic_version_id = '019a1b2c-0456-7abc-8def-000000000456'
+    AND gf.soft_deleted_at IS NULL
+  ORDER BY gf.file_path;
   ```
 
 ### blob ストレージ {#blob-storage}
@@ -1627,12 +1719,12 @@ erDiagram
     }
 ```
 
-- **blob_storage_attachments**: 特定の blob の使用を追跡します。各クライアント（Container、NPM、または Maven リポジトリテーブル）は、blob レコードを使用（作成または再利用）したいたびに、ここにレコードを作成する必要があります。各使用は、ここに単一のレコードを_持たなければなりません_。クライアントは、参照しているアーティファクトレコード（ファイル、blob、キャッシュエントリ）を削除する際に、アタッチメントレコードを削除する責任があります。両方の削除は、孤立したアタッチメントが blob クリーンアップをブロックするのを防ぐために、同じトランザクション内で行わなければなりません。クライアントテーブルから `blob_storage_attachments` への外部キーは参照整合性を強制しますが（ダングリング参照を防ぐ）、`ON DELETE CASCADE` は使用しません。クリーンアップはアプリケーション管理です。例えば、まったく同じファイルを持つ 2 つの Maven パッケージは、それぞれ異なるアタッチメントレコードを参照し、それが同じ blob レコードを参照する必要があります。`namespace_id` カラムは Cells のシャーディングに必要です。`sha256` カラムは、パーティションプルーニングされた JOIN を可能にするために、参照される `blob_storage_blobs` レコードから伝播されます（[パーティショニング戦略](#blob-storage-partitioning-strategy) を参照）。主キーは、従来の `(id)` ではなく `(id, namespace_id, sha256)` です。`sha256` が必要なのは、PostgreSQL がハッシュパーティショニングされたテーブルのすべてのユニーク制約にパーティションキーを含めることを強制するためであり、`namespace_id` が必要なのは、PK をデプロイ間でグローバルに一意に保つためです。ローカルな `bigint id` は単一の Artifact Registry データベース内でのみ一意なので（[ネームスペース ID 型](#namespace-id-type) を参照）、デプロイ間のネームスペースマイグレーション（[ADR-022](022_namespace_decoupling.md)）では、同じ `(id, sha256)` ペアがターゲットデータベースにすでに存在する可能性があります。UUIDv7 の `namespace_id` を PK に追加することで、その衝突を構造的に排除します。クライアントテーブルは、この複合 PK を `(namespace_id, blob_storage_attachment_id, blob_sha256)` を介して参照します。
-- **blob_storage_blobs**: このテーブルは、オブジェクトストレージ上に存在するすべてのファイルコンテンツを blob として一覧します。オブジェクトストレージキーは専用カラムに完全な形で保存され、blob が使用されるたびに計算されることはありません。`sha256` は基本となるコンテンツアドレス可能な識別子であり、常に存在します（`NOT NULL`）。`namespace_id` カラムは重複排除を Organization にスコープし、設計上 `namespaces(id)` への参照を持ちません。この行は保存オブジェクトへの唯一のハンドルである `object_storage_key` を所有し、[ADR-025](025_garbage_collection.md) では garbage collection が行より先にオブジェクトを削除します。そのため、`namespaces` からのカスケードはオブジェクトがまだ存在する間にハンドルを破壊して漏えいさせ、ブロックする参照は、意図的に延期された garbage collection サイクルの完了まで namespace の削除を止めます。したがって namespace のハード削除後も、garbage collection が回収するまで blob 行は残ります。フォーマット固有のチェックサム（例えば Maven の SHA1 と MD5）はここではなくフォーマット固有のファイルテーブルに保存し、このテーブルをフォーマットに依存しない状態に保ちます。同じ理由から、コンテンツタイプも除外します。これはフォーマットが blob をどのように解釈するかという特性であって blob 自体の特性ではなく、フォーマット固有のテーブルに属します。`metadata_sha1` カラムは、フォーマットに依存しないというルールに対する意図的かつ限定的な例外です。コミット時に blob に付加される MVP ユーザーメタデータの許可リストにある SHA-1 を反映し、SHA-1 が指定されなかった場合は `NULL` になります。このカラムをフォーマット固有のテーブルではなく `blob_storage_blobs` に置くのは、ストレージレイヤーの blob 情報の検索がプッシュとプルのホットパスで 1 回の DB ラウンドトリップとなることが契約上定められているためです。DB のミラーなしでユーザーメタデータを公開すると、ダイジェストごとのオブジェクトストレージ HEAD のファンアウト、または部分的な API 公開が必要になります。同じ値は、コミット時にバックエンドネイティブの `x-amz-meta-checksum-sha1` / `x-goog-meta-checksum-sha1` ヘッダーとしてストレージオブジェクトに付加されます。行は不変であるため、DB とストレージオブジェクトのコピーにずれは生じません。将来、許可リストに項目を追加する際は、改訂によって項目ごとの nullable カラムを追加します。主キーが `(id, namespace_id, sha256)` である理由は、前述の `blob_storage_attachments` と同じです。`sha256` は PostgreSQL のパーティションキー包含ルールを満たし、UUIDv7 の `namespace_id` は PK をデプロイ間でグローバルに一意に保ちます。また、代理 `bigint id` により、blob ストレージ層全体で行識別子の形を一貫させています。Organization ごとの重複排除は、別個の `UNIQUE (namespace_id, sha256)` 制約によって強制されます。この制約はコンテンツハッシュによる検索インデックスも兼ね、このテーブルを参照するすべての外部キーのターゲットになります。PK を直接参照する FK はありません。`(namespace_id, sha256)` はすでに行を一意に識別し、UUIDv7 の `namespace_id` によってそれ自体がグローバルに一意であるため、呼び出し元は代理 `id` を保持せずに自然キーで JOIN します。
+- **blob_storage_attachments**: 特定の blob の使用を追跡します。各クライアント（Container、Maven、npm、または Generic リポジトリテーブル）は、blob レコードを使用（作成または再利用）したいたびに、ここにレコードを作成する必要があります。各使用は、ここに単一のレコードを _持たなければなりません_。クライアントは、参照しているアーティファクトレコード（ファイル、blob、キャッシュエントリ）を削除する際に、アタッチメントレコードを削除する責任があります。両方の削除は、孤立したアタッチメントが blob クリーンアップをブロックするのを防ぐために、同じトランザクション内で行わなければなりません。クライアントテーブルから `blob_storage_attachments` への外部キーは参照整合性を強制しますが（ダングリング参照を防ぐ）、`ON DELETE CASCADE` は使用しません。クリーンアップはアプリケーション管理です。例えば、まったく同じファイルを持つ 2 つの Maven パッケージは、それぞれ異なるアタッチメントレコードを参照し、それが同じ blob レコードを参照する必要があります。`namespace_id` カラムは Cells のシャーディングに必要です。`sha256` カラムは、パーティションプルーニングされた JOIN を可能にするために、参照される `blob_storage_blobs` レコードから伝播されます（[パーティショニング戦略](#blob-storage-partitioning-strategy) を参照）。主キーは、従来の `(id)` ではなく `(id, namespace_id, sha256)` です。`sha256` が必要なのは、PostgreSQL がハッシュパーティショニングされたテーブルのすべてのユニーク制約にパーティションキーを含めることを強制するためであり、`namespace_id` が必要なのは、PK をデプロイ間でグローバルに一意に保つためです。ローカルな `bigint id` は単一の Artifact Registry データベース内でのみ一意なので（[ネームスペース ID 型](#namespace-id-type) を参照）、デプロイ間のネームスペースマイグレーション（[ADR-022](022_namespace_decoupling.md)）では、同じ `(id, sha256)` ペアがターゲットデータベースにすでに存在する可能性があります。UUIDv7 の `namespace_id` を PK に追加することで、その衝突を構造的に排除します。クライアントテーブルは、この複合 PK を `(namespace_id, blob_storage_attachment_id, blob_sha256)` を介して参照します。
+- **blob_storage_blobs**: このテーブルは、オブジェクトストレージ上に存在するすべてのファイルコンテンツを blob として一覧します。オブジェクトストレージキーは専用カラムに完全な形で保存され、blob が使用されるたびに計算されることはありません。`sha256` は基本となるコンテンツアドレス可能な識別子であり、常に存在します（`NOT NULL`）。`namespace_id` カラムは重複排除を Organization にスコープし、設計上 `namespaces(id)` への参照を持ちません。この行は保存オブジェクトへの唯一のハンドルである `object_storage_key` を所有し、[ADR-025](025_garbage_collection.md) ではガベージコレクションが行より先にオブジェクトを削除します。そのため、`namespaces` からのカスケードはオブジェクトがまだ存在する間にハンドルを破壊し、オブジェクトが回収されずに残り、ブロックする参照は、意図的に延期されたガベージコレクションサイクルの完了までネームスペースの削除を止めます。したがってネームスペースのハード削除後も、ガベージコレクションが回収するまで blob 行は残ります。フォーマット固有のチェックサム（例えば Maven の SHA1 と MD5）はここではなくフォーマット固有のファイルテーブルに保存し、このテーブルをフォーマットに依存しない状態に保ちます。同じ理由から、コンテンツタイプも除外します。これはフォーマットが blob をどのように解釈するかという特性であって blob 自体の特性ではなく、フォーマット固有のテーブルに属します。`metadata_sha1` カラムは、フォーマットに依存しないというルールに対する意図的かつ限定的な例外です。コミット時に blob に付加される MVP ユーザーメタデータの許可リストにある SHA-1 を反映し、SHA-1 が指定されなかった場合は `NULL` になります。このカラムをフォーマット固有のテーブルではなく `blob_storage_blobs` に置くのは、ストレージレイヤーの blob 情報の検索がプッシュとプルのホットパスで 1 回の DB ラウンドトリップとなることが契約上定められているためです。DB のミラーなしでユーザーメタデータを公開すると、ダイジェストごとのオブジェクトストレージ HEAD のファンアウト、または部分的な API 公開が必要になります。同じ値は、コミット時にバックエンドネイティブの `x-amz-meta-checksum-sha1` / `x-goog-meta-checksum-sha1` ヘッダーとしてストレージオブジェクトに付加されます。行は不変であるため、DB とストレージオブジェクトのコピーにずれは生じません。将来、許可リストに項目を追加する際は、改訂によって項目ごとの NULL 許容カラムを追加します。主キーが `(id, namespace_id, sha256)` である理由は、前述の `blob_storage_attachments` と同じです。`sha256` は PostgreSQL のパーティションキー包含ルールを満たし、UUIDv7 の `namespace_id` は PK をデプロイ間でグローバルに一意に保ちます。また、代理 `bigint id` により、blob ストレージ層全体で行識別子の形を一貫させています。Organization ごとの重複排除は、別個の `UNIQUE (namespace_id, sha256)` 制約によって強制されます。この制約はコンテンツハッシュによる検索インデックスも兼ね、このテーブルを参照するすべての外部キーのターゲットになります。PK を直接参照する FK はありません。`(namespace_id, sha256)` はすでに行を一意に識別し、UUIDv7 の `namespace_id` によってそれ自体がグローバルに一意であるため、呼び出し元は代理 `id` を保持せずに自然キーで JOIN します。
 
 blob ストレージテーブルは、Artifact Registry の外部でも再利用できるように設計されています。これにより、他の機能が同じ重複排除とストレージインフラを活用できます。
 
-すべてのハッシュカラム（`digest` と `sha256`、`sha1`、`md5`、`sha512` — Maven 固有）は、テキストエンコーディングやインラインアルゴリズムプレフィックスを持たない、生のハッシュバイトを保持する `bytea` として保存されます。コンテナの `digest` と `blob_sha256` カラムは生の 32 バイト SHA-256 を保持し、`CHECK octet_length = 32` によって強制されます。OCI のワイヤ形式 `sha256:<64 hex chars>` はサービスレイヤーで生のバイトへ、また生のバイトから変換されるため、`blob_sha256` は `blob_storage_blobs.sha256` と直接バイト比較で JOIN します。MVP は sha256 のみをサポートします。sha256 以外の参照はこれらのテーブルに到達する前にサービスレイヤーで拒否されるため、別個の `digest_algorithm` カラムは保存しません。コンテナ blob の `digest` と `blob_sha256` は同じバイトになるため、`(namespace_id, digest)` インデックスはコンテンツハッシュの逆引きインデックスも兼ね、ホスト型コンテナテーブルに別個の `blob_sha256` インデックスはありません（[Container Repositories のインデックス](#container-repositories) を参照）。将来、sha256 以外のダイジェストアルゴリズムが導入される場合は、2 つのカラムを分離し、再検討します。
+すべてのハッシュカラム（`digest` と `sha256`、`sha1`、`md5`、`sha512` — Maven 固有）は、テキストエンコーディングやインラインアルゴリズムプレフィックスを持たない、生のハッシュバイトを保持する `bytea` として保存されます。コンテナの `digest` と `blob_sha256` カラムは生の 32 バイト SHA-256 を保持し、`CHECK octet_length = 32` によって強制されます。OCI のワイヤ形式 `sha256:<64 hex chars>` はサービスレイヤーで生のバイトへ、また生のバイトから変換されるため、`blob_sha256` は `blob_storage_blobs.sha256` と直接バイト比較で JOIN します。MVP は sha256 のみをサポートします。sha256 以外の参照はこれらのテーブルに到達する前にサービスレイヤーで拒否されるため、別個の `digest_algorithm` カラムは保存しません。コンテナ blob の `digest` と `blob_sha256` は同じバイトになるため、`(namespace_id, digest)` インデックスはコンテンツハッシュの逆引きインデックスも兼ね、ホスト型コンテナテーブルに別個の `blob_sha256` インデックスはありません（[コンテナリポジトリのインデックス](#container-repositories) を参照）。将来、sha256 以外のダイジェストアルゴリズムが導入される場合は、2 つのカラムを分離し、再検討します。
 
 ### アップロードセッション {#upload-sessions}
 
@@ -1713,7 +1805,7 @@ erDiagram
 
 **`namespace_id` を含むすべてのテーブルはパーティショニングされます。** デフォルトのパーティションキーは `HASH(namespace_id)` で 64 パーティションです。特定のテーブルは、文書化された理由がある場合に異なるキーを使用することがあります（`HASH(sha256)` の例外については [blob ストレージのパーティショニング戦略](#blob-storage-partitioning-strategy) を参照）。`namespace_id` を含まないテーブルはパーティショニングされません。
 
-このルールは、テーブルごとの判断ではなく、行のプロパティとして述べられています。`namespace_id` がスキーマの一部であれば、テーブルはパーティショニングされます。「このテーブルは小さい」「このテーブルは親と 1:1 である」「後でパーティショニングを追加できる」といった例外はありません。小さなテーブルも大きなテーブルと同じようにパーティショニングされます。均一性が要点です。低ボリュームのテーブルをパーティショニングするコストは無視できます。64 個のほぼ空の子、計測可能なランタイムオーバーヘッドはありません。一方、後でパーティショニングを_追加する_コストは、本番データが配置された後のテーブルの書き換え、主キーの再構成、カスケードする外部キーの変更によって支配されます。
+このルールは、テーブルごとの判断ではなく、行のプロパティとして述べられています。`namespace_id` がスキーマの一部であれば、テーブルはパーティショニングされます。「このテーブルは小さい」「このテーブルは親と 1:1 である」「後でパーティショニングを追加できる」といった例外はありません。小さなテーブルも大きなテーブルと同じようにパーティショニングされます。均一性が要点です。低ボリュームのテーブルをパーティショニングするコストは無視できます。64 個のほぼ空の子、計測可能なランタイムオーバーヘッドはありません。一方、後でパーティショニングを _追加する_ コストは、本番データが配置された後のテーブルの書き換え、主キーの再構成、カスケードする外部キーの変更によって支配されます。
 
 以下の[例外](#exceptions)も同様に構造的であり、ここで却下した判断に基づく例外には該当しません。
 
@@ -1723,7 +1815,7 @@ PostgreSQL は、パーティショニングされたテーブルのすべての
 
 - **主キー。** すべてのパーティショニングされたテーブルの主キーは `namespace_id` を吸収します。`(id)` は `(id, namespace_id)` になります。パーティショニングされたテーブルのユニークインデックスは、先頭カラムとして `namespace_id` を含みます。
 - **パーティショニングされたテーブル間の外部キー。** `namespace_id` で複合になります。子は `(<parent>_id, namespace_id)` を介して親を参照し、親の `(id, namespace_id)` を参照します。`repositories`、`workspaces`、フォーマット固有のリポジトリテーブル、中間層テーブル、ファイルテーブル、リモートキャッシュテーブルではこの形式を使用しますが、祖先 ID を含む形式という 1 つのバリエーションがあります。親への参照とともに祖先 ID を非正規化して保持するテーブルは、その ID を含むように参照を拡張します。その結果、キーは `namespace_id`、祖先 ID、親 ID の組となり、親の同じ 3 カラムに対するセカンダリユニークインデックスを参照します。このスキーマのもう 1 つの 3 カラムの系列である `blob_storage_attachments` への参照は、このバリエーションではありません。それぞれが親 ID とともに保持するのは、非正規化された祖先 ID ではなく、親自身の `sha256` です。これにより、データベースは、行が指定する祖先とその親が属する祖先が異なる行を拒否します。2 カラム形式ではそのような行が許容されます。`container_manifest_relationships` は `container_manifests` への 2 つの参照を両方とも `container_image_id` で拡張し、`maven_files` は `maven_versions` への参照を `maven_package_id` で拡張し、`maven_remote_files` は `maven_remote_versions` への参照を `maven_remote_package_id` で拡張します。カラムの順序は共通の規約ではなく、それぞれの親のユニークインデックスに従うため、この 3 つで統一されてはいません。3 カラムのキーが存在すれば `(<parent>_id, namespace_id)` のペアも存在するため、拡張された参照は 2 カラムの参照に追加するのではなく、それを置き換えます。拡張は個々の参照に属するもので、祖先カラムが `NOT NULL` であることから導かれるわけではありません。`container_remote_manifest_relationships` は `container_remote_manifests` に対して 2 カラム形式を維持し、対応するホスト型では参照を拡張します。これは、現時点ではキャッシュ側の子リンクを書き込む処理がないためです（[artifact-registry#264](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/264)）。NULL を許容する祖先カラムでは、この拡張を行うこと自体ができません。MATCH SIMPLE はいずれかのカラムが NULL であるキーをスキップするため、そのような行では拡張された参照が何も強制しなくなるためです。
-- **`namespaces` への外部キー。** 単一カラムです。`namespace_id` は `namespaces(id)` を参照します。`namespaces` は主キーが `(id)` のままである唯一のテーブルです。これはパーティショニングされておらず、独自の `namespace_id` を持ちません（それを_定義する_）ため、子テーブルは複合 PK の小細工なしにそれを参照します。
+- **`namespaces` への外部キー。** 単一カラムです。`namespace_id` は `namespaces(id)` を参照します。`namespaces` は主キーが `(id)` のままである唯一のテーブルです。これはパーティショニングされておらず、独自の `namespace_id` を持ちません（それを _定義する_）ため、子テーブルは複合 PK の小細工なしにそれを参照します。
 
 複合外部キーの形状は、ネームスペース境界をスキーマレベルでエンコードします。任意のパーティショニングされたテーブルの行は、外部キーがそれを禁止するため、異なるネームスペースに属する別のパーティショニングされたテーブルの行を参照できません。これは Cells のシャーディングキー（`namespace_id`）がアプリケーションレベルで引く境界と同じものであり、データベース自体の中で冗長化されています。
 
@@ -1731,11 +1823,11 @@ PostgreSQL は、パーティショニングされたテーブルのすべての
 
 2 つの構造的条件のいずれかを満たす場合にのみ、テーブルはパーティショニングされません。
 
-**`namespace_id` を欠くテーブル。** 今日の主な例は `namespaces` 自体です。これは `namespace_id` が判明する前に `slug` から解決されるルーティングルートであり、`namespace_id` を定義するため `namespace_id` カラムを持ちません。`namespace_id` を持たない将来のテーブル（例: インスタンス全体の設定、グローバルな cron 状態、デプロイにスコープされたライフサイクルメタデータ）は、このデフォルトを自動的に継承し、パーティショニングされません。
+**`namespace_id` を欠くテーブル。** 今日の主な例は `namespaces` 自体です。これは `namespace_id` が判明する前に `slug` から解決されるルーティングルートであり、その ID を定義するため `namespace_id` カラムを持ちません。`namespace_id` を持たない将来のテーブル（例: インスタンス全体の設定、グローバルな cron 状態、デプロイにスコープされたライフサイクルメタデータ）は、このデフォルトを自動的に継承し、パーティショニングされません。
 
 **主キー全体が `namespace_id` であるテーブル。** 独立した `id` カラムを持たないため、ネームスペースごとに 1 行を保持し、2 行目を表現できず、どの外部キーからも参照されないテーブルです。現在、この条件を満たすのは `namespace_statistics` だけです。今後この条件を適用するテーブルは、主キーが正確に `(namespace_id)` であり、どこからも参照されないことを独自の説明に明記します。これにより、その主張は単なる表明ではなく監査可能になります。
 
-この 2 つ目の条件は、不変条件が却下する「このテーブルは親と 1:1 である」という例外とは意図的に異なります。それは実装者がどちらとも主張できる関係性に関する判断でしたが、こちらはキー定義と、そのテーブルを参照する制約のカタログ一覧によって確定するスキーマのプロパティです。独自の `id` を持つテーブルは、どれほど小さくても対象外です。また、`id` または参照元の外部キーを取得したテーブルは、その時点で対象外になります。不変条件の根拠はいずれも、この形状のテーブルには当てはまりません。パーティショニングは `namespace_id` にスコープされた読み取りが 64 ではなく 1 つのパーティションに触れるようにするために存在しますが、ここでは主キーが `namespace_id` そのものなので、すべての読み取りはすでに単一行のキー検索です。また、後からの変換は、両方が成立しなければならない 2 つの理由から低コストです。まず、不変条件が回避するために書かれた主キーの再構成、すなわち `(id)` から `(id, namespace_id)` への変更はすでに完了しています。`namespace_id` だけをキーとするテーブルは、パーティションキーをすべてのユニーク制約に含めるという PostgreSQL の要件を満たすためです。次に、PostgreSQL は通常のテーブルをパーティショニングされたテーブルへ `ALTER` できないため、変換ではパーティショニングされたテーブルを作成し、その下で既存テーブルと交換します。この処理では、すべての参照元の外部キーを削除して新しいテーブルに対して再作成し、各再作成時に参照元テーブルのスキャンを伴う再検証が必要です。どこからも参照されないテーブルには削除すべき外部キーがありません。そのため、参照元の外部キーがないことは、現在のスキーマに関する単なる観察ではなく条件の一部です。後から参照を取得したテーブルがこの例外にとどまると、その根拠がもはや成り立たなくなるためです。
+この 2 つ目の条件は、不変条件が却下する「このテーブルは親と 1:1 である」という例外とは意図的に異なります。それは実装者がどちらとも主張できる関係性に関する判断でしたが、こちらはキー定義と、そのテーブルを参照する制約のカタログ一覧によって確定するスキーマのプロパティです。独自の `id` を持つテーブルは、どれほど小さくても対象外です。また、`id` または参照元の外部キーを取得したテーブルは、その時点で対象外になります。不変条件の根拠はいずれも、この形状のテーブルには当てはまりません。パーティショニングは `namespace_id` にスコープされた読み取りが 64 ではなく 1 つのパーティションに触れるようにするために存在しますが、ここでは主キーが `namespace_id` _そのもの_ なので、すべての読み取りはすでに単一行のキー検索です。また、後からの変換は、両方が成立しなければならない 2 つの理由から低コストです。まず、不変条件が回避するために書かれた主キーの再構成、すなわち `(id)` から `(id, namespace_id)` への変更はすでに完了しています。`namespace_id` だけをキーとするテーブルは、パーティションキーをすべてのユニーク制約に含めるという PostgreSQL の要件を満たすためです。次に、PostgreSQL は通常のテーブルをパーティショニングされたテーブルへ `ALTER` できないため、変換ではパーティショニングされたテーブルを作成し、その下で既存テーブルと交換します。この処理では、すべての参照元の外部キーを削除して新しいテーブルに対して再作成し、各再作成時に参照元テーブルのスキャンを伴う再検証が必要です。どこからも参照されないテーブルには削除すべき外部キーがありません。そのため、参照元の外部キーがないことは、現在のスキーマに関する単なる観察ではなく条件の一部です。後から参照を取得したテーブルがこの例外にとどまると、その根拠がもはや成り立たなくなるためです。
 
 どちらの例外の述語も構造的です。行内の `namespace_id` の有無、およびそのカラムがどこからも参照されないテーブルの主キー全体であるかどうかです。いずれも行数、書き込み頻度、現在のアクセスパターンに依存せず、これらはすべてシステムが進化するにつれて変化し得ます。
 
@@ -1875,16 +1967,16 @@ Cells レベルのシャーディング（`namespace_id`）と標準的なイン
 
 - すべての主要なアクセスパターンが `namespace_id` スコープです（リポジトリとアーティファクト座標による検索、パッケージまたはイメージのファイルの一覧表示、上流のキャッシュエントリの一覧表示）。したがって、`HASH(namespace_id)` はすべての操作に対して単一パーティションのプルーニングを与えます。読み取りパスのショートカット（`(namespace_id, sha256)` を介した `*_files` → `blob_storage_blobs`、`blob_storage_attachments` をスキップ）、すなわちシステム内で最もホットなクエリは、このパーティショニングから直接恩恵を受けます。
 - `blob_storage_blobs` を `HASH(sha256)` に駆動するシングルテナント集中の懸念は適用されません。各フォーマット固有のテーブルは 1 つのフォーマット（リモートの場合は 1 つの上流）にスコープされるため、ネームスペースごとのフットプリントは構造的に、`blob_storage_blobs` が保持するクロスフォーマット集約の一部にすぎません。
-- `(namespace_id, blob_sha256)` を介した `blob_storage_blobs` への JOIN は、`namespace_id` リテラルでフォーマットテーブルのパーティションをプルーニングします。blob 側が計画時にプルーニングされるのは、クエリが digest を名指す場合だけです。`blob_storage_blobs.sha256 = maven_files.blob_sha256` のようなカラム間の述語では `sha256` がプランナーにとって不明なため、64 個すべての blob パーティションに対する `Append` を構築し、実行時に外側の行ごとにプルーニングします。スキャンは実行時に回避されますが、コストは計画時に発生します。
+- `(namespace_id, blob_sha256)` を介した `blob_storage_blobs` への JOIN は、`namespace_id` リテラルでフォーマットテーブルのパーティションをプルーニングします。blob 側が計画時にプルーニングされるのは、クエリがダイジェストを名指す場合だけです。`blob_storage_blobs.sha256 = maven_files.blob_sha256` のようなカラム間の述語では `sha256` がプランナーにとって不明なため、64 個すべての blob パーティションに対する `Append` を構築し、実行時に外側の行ごとにプルーニングします。スキャンは実行時に回避されますが、コストは計画時に発生します。
 
-PostgreSQL 17.10 上で、`blob_storage_blobs`、`blob_storage_attachments`、`maven_files` にそれぞれ単一 namespace の 5,000 行を持つ fixture を使用して計測しました。どちらの行も同じ読み取り、すなわち 1 つの `maven_files` 行とその blob のサイズで、blob 側が参照するテーブルだけが異なります。2 行目は[namespace レベルの調整](#namespace-level-storage-accounting-reconciliation)用 shadow である `blob_storage_blobs_by_namespace` です。これは `PARTITION BY HASH (namespace_id)` と `PRIMARY KEY (namespace_id, sha256) INCLUDE (size)` を持ちます。各値は同一セッションで 5 回繰り返した範囲です。
+PostgreSQL 17.10 上で、`blob_storage_blobs`、`blob_storage_attachments`、`maven_files` にそれぞれ単一ネームスペースの 5,000 行を持つフィクスチャを使用して計測しました。どちらの行も同じ読み取り、すなわち 1 つの `maven_files` 行とその blob のサイズで、blob 側が参照するテーブルだけが異なります。2 行目は[ネームスペースレベルの調整](#namespace-level-storage-accounting-reconciliation)用のシャドウです。これは `PARTITION BY HASH (namespace_id)` と `PRIMARY KEY (namespace_id, sha256) INCLUDE (size)` を持ちます。各値は同一セッションで 5 回繰り返した範囲です。
 
 | blob のサイズを得るために JOIN したテーブル | blob 側のプラン | 計画 | 実行 |
 | --- | --- | --- | --- |
 | `blob_storage_blobs` | 64 パーティションに対する `Append`、うち 63 は `never executed` | 3.85〜4.70 ms | 0.45〜0.72 ms |
 | `blob_storage_blobs_by_namespace` | 単一パーティションの `Index Only Scan`、`Heap Fetches: 0` | 0.26〜0.37 ms | 0.11〜0.17 ms |
 
-`namespace_id` リテラルは計画時に shadow をプルーニングしますが、ベーステーブルをプルーニングする digest リテラルはありません。新しい backend でのベーステーブルの最初のプランは計画に 22.07 ms を要し、5,738 個の計画 buffer を読みます。fan-out は fixture の行数ではなく、64 パーティションに対する `HASH(sha256)` と digest の欠如から生じます。`blob_storage_blobs [namespace_id, sha256]` のユニーク制約によってこれは変わりません。パーティショニングされたテーブルのインデックスは各パーティションにローカルなので、パーティションを開くコストは下げても `Append` の大きさは変えません。
+`namespace_id` リテラルは計画時にシャドウをプルーニングしますが、ベーステーブルをプルーニングするダイジェストリテラルはありません。新しいバックエンドでのベーステーブルの最初のプランは計画に 22.07 ms を要し、5,738 個の計画バッファを読みます。ファンアウトはフィクスチャの行数ではなく、64 パーティションに対する `HASH(sha256)` とダイジェストの欠如から生じます。`blob_storage_blobs [namespace_id, sha256]` のユニーク制約によってこれは変わりません。パーティショニングされたテーブルのインデックスは各パーティションにローカルなので、パーティションを開くコストは下げても `Append` の大きさは変えません。
 
 ### パーティション数の根拠 {#partition-count-rationale}
 
@@ -1903,7 +1995,7 @@ PostgreSQL 17.10 上で、`blob_storage_blobs`、`blob_storage_attachments`、`m
 
 ### バッファ書き込みと非同期書き込み {#buffered-and-asynchronous-writes}
 
-ダウンロードまたはアップロードのリクエストごとに、複数のカラムが更新されます。`repositories` のカウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）、エンティティ数の上限チェックに使用する `npm_packages` のパッケージごとのカウンター（`versions_count`、`tags_count`）、Maven と npm のバージョンテーブル（`maven_versions`、`maven_remote_versions`、`npm_versions`、`npm_remote_versions`）の `size_bytes` カウンター、そして `container_images`、`maven_packages`、`maven_versions`、`npm_packages`、`npm_versions` の `last_downloaded_at` タイムスタンプです。これらをリクエストパスで直接書き込むと、同じ行に対する同時リクエストが直列化され（人気のあるパッケージでホット行の競合が発生し）、リクエストのレイテンシがデータベースの書き込みスループットに結び付きます。
+ダウンロードまたはアップロードのリクエストごとに、複数のカラムが更新されます。`repositories` のカウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）、エンティティ数の上限チェックに使用する `npm_packages` のパッケージごとのカウンター（`versions_count`、`tags_count`）、Maven、npm、Generic のバージョンテーブル（`maven_versions`、`maven_remote_versions`、`npm_versions`、`npm_remote_versions`、`generic_versions`）の `size_bytes` カウンター、そして `container_images`、`maven_packages`、`maven_versions`、`npm_packages`、`npm_versions`、`generic_packages`、`generic_versions` の `last_downloaded_at` タイムスタンプです。これらをリクエストパスで直接書き込むと、同じ行に対する同時リクエストが直列化され（人気のあるパッケージでホット行の競合が発生し）、リクエストのレイテンシがデータベースの書き込みスループットに結び付きます。
 
 これを避けるために、これらのカラムはバッファ書き込み/非同期書き込みを介して維持されます。リクエストハンドラーは高速な中間ストア（例: Redis）に更新を記録し、バックグラウンドプロセスが定期的にバッファされたエントリを行にマージし直します。これは GitLab の `ProjectStatistics` と同じパターンを再利用します。
 
@@ -1920,7 +2012,7 @@ PostgreSQL 17.10 上で、`blob_storage_blobs`、`blob_storage_attachments`、`m
 
 #### トレードオフ {#buffered-writes-trade-offs}
 
-- **古さ**: バッファされたカラムは、最大 1 つのフラッシュ間隔だけ現実から遅れます。これは現在のコンシューマーにとって許容できます。ライフサイクルルールの評価（`keep_last_downloaded_at`）はフラッシュ間隔を十分に上回るスケジュールで実行され、ランディングページのカウンターは短時間の乖離を許容します。これは、自身の書き込みを同期的に観測しなければならない読み取りや、ダウンロードイベントの正確な順序を必要とする決定には_適していません_。
+- **古さ**: バッファされたカラムは、最大 1 つのフラッシュ間隔だけ現実から遅れます。これは現在のコンシューマーにとって許容できます。ライフサイクルルールの評価（`keep_last_downloaded_at`）はフラッシュ間隔を十分に上回るスケジュールで実行され、ランディングページのカウンターは短時間の乖離を許容します。これは、自身の書き込みを同期的に観測しなければならない読み取りや、ダウンロードイベントの正確な順序を必要とする決定には _適していません_。
 - **バッファ損失**: フラッシュ前にバッファが失われると、最近の更新が失われます。カウンターについてはこれは永続的なアンダーカウントです。タイムスタンプについては、次のダウンロードが正しい（ただしわずかに遅延した）値を復元します。
 
 ### ネームスペース ID 型 {#namespace-id-type}
@@ -1932,7 +2024,7 @@ PostgreSQL 17.10 上で、`blob_storage_blobs`、`blob_storage_attachments`、`m
 選択を駆動する 3 つのプロパティ:
 
 1. **デプロイモデル間でのグローバルな一意性。** Artifact Registry は、複数の独立したデプロイ（GitLab.com、Dedicated、Self-Managed、Cell ごと、および潜在的には GitLab Rails から独立したスタンドアロン製品）として実行されるように設計されています（[ADR-022](022_namespace_decoupling.md#consequences) を参照）。ローカルなシーケンスから引かれる連続した整数 ID はデプロイ間で衝突し、ネームスペース行が Artifact Registry インスタンス間を移動するあらゆるシナリオ（MVP 後のマイグレーションツール、Cell の統合、デプロイ間の参照）を排除します。
-2. **運用上のデバッグ容易性。** `namespace_id = 42` はデプロイ間で曖昧です。同じ整数が、異なる Cell やインストールで無関係なネームスペースを指し得ます。サポートチケット、インシデントの runbook、デプロイ間のログ相関はすべて、識別子が一見して一意であるときに恩恵を受けます。
+2. **運用上のデバッグ容易性。** `namespace_id = 42` はデプロイ間で曖昧です。同じ整数が、異なる Cell やインストールで無関係なネームスペースを指し得ます。サポートチケット、インシデントのランブック、デプロイ間のログ相関はすべて、識別子が一見して一意であるときに恩恵を受けます。
 3. **ID 生成のための調整依存がない。** デプロイ間で重複しない bigint 範囲を割り当てるには、中央権威（Topology サービスまたは同等のもの）が必要です。UUIDv7 はデータベース上でローカルに、調整なしで生成されます。
 
 #### オプション {#namespace-id-options}
@@ -2012,8 +2104,8 @@ PostgreSQL 17.10 上で、`blob_storage_blobs`、`blob_storage_attachments`、`m
   - **PG13〜17 で [`pg_uuidv7`](https://pgxn.org/dist/pg_uuidv7/) 拡張を使用**: カラムデフォルト `DEFAULT uuid_generate_v7()`。ネイティブパスとの関数名の違いに注意してください。マイグレーションとスキーマダンプは、ターゲット環境に対して正しい名前を参照しなければなりません。
   - **アプリケーション側生成**: 任意の PostgreSQL バージョン、拡張不要。Go サービスが [RFC 9562](https://datatracker.ietf.org/doc/rfc9562/) 準拠のライブラリで値を生成し、`INSERT` で供給します。
 - これらのパス間で後から切り替えるのはメタデータのみ（`ALTER COLUMN SET DEFAULT`）であり、すべてのジェネレーターが RFC 9562 準拠の UUIDv7 値を発行する限り、データを書き換えません。これにより、初期パスはスキーマのコミットメントではなくランタイム/運用上の選択になります。
-- その準拠はジェネレーターに任せず、データベースが強制します。サーバー側デフォルトを持たない `uuid` の `id` を持つすべてのテーブルには、`CHECK ((get_byte(uuid_send(id), 6) >> 4) = 7)` というバージョンチェックがあります。`uuid_send` は値の 16 個の raw byte を返し、byte 6 の上位 nibble が RFC 9562 のバージョンフィールドです。両方の関数は immutable なので、この式を `CHECK` に使用できます。UUIDv7 以外を発行するパスの値は、後から発見されるのではなく書き込み時に拒否されます。`INSERT` がフィールドを割り当てなかった場合の all-zero UUID や、紛れ込んだ `uuid.New()` によるバージョン 4 の値も同様です。
-- 残りのテーブルには制限対象の `uuid` `id` がないため、チェックを持ちません。blob ストレージ層、`id` カラムなしでキー付けされる 3 つの Artifact Registry テーブル（`repository_collection_repositories`、`namespace_statistics`、`(namespace_id, sha256)` をキーとする `blob_storage_blobs_by_namespace` shadow）、およびキー形状をこのスキーマが設定しないライブラリ所有の schema migration と job queue のテーブル `goose_db_version` と `river_*` です。
+- その準拠はジェネレーターに任せず、データベースが強制します。サーバー側デフォルトを持たない `uuid` の `id` を持つすべてのテーブルには、`CHECK ((get_byte(uuid_send(id), 6) >> 4) = 7)` というバージョンチェックがあります。`uuid_send` は値の 16 個の生のバイトを返し、バイト 6 の上位ニブルが RFC 9562 のバージョンフィールドです。両方の関数は不変なので、この式を `CHECK` に使用できます。UUIDv7 以外を発行するパスの値は、後から発見されるのではなく書き込み時に拒否されます。`INSERT` がフィールドを割り当てなかった場合のすべてゼロの UUID や、紛れ込んだ `uuid.New()` によるバージョン 4 の値も同様です。これら最後の 2 つの値は、どちらも正当な主キーとして読み取れますが、他のすべての行が占める時刻順の範囲から外れて並びます。
+- 残りのテーブルには制限対象の `uuid` `id` がないため、チェックを持ちません。blob ストレージ層、`id` カラムなしでキー付けされる 3 つの Artifact Registry テーブル（`repository_collection_repositories`、`namespace_statistics`、`(namespace_id, sha256)` をキーとする `blob_storage_blobs_by_namespace` シャドウ）、およびキー形状をこのスキーマが設定しないライブラリ所有のスキーママイグレーションとジョブキューのテーブル `goose_db_version` と `river_*` です。
 - すでに行を保持するテーブルへのバージョンチェック追加は、空のテーブルへの追加とは異なります。最初に `ADD CONSTRAINT ... NOT VALID`、次に別の `VALIDATE` を行い、1 つのトランザクションですべてを扱わず、マイグレーションごとに 1 テーブルを扱います。パーティショニングされた親の `CHECK` は親と 64 個すべてのパーティションで `ACCESS EXCLUSIVE` を取るためです。
 - **未解決の問題（GA に近づいたら解決）**: どの初期パスを取るかは、GA 時点で `.com`、Dedicated、Self-Managed にわたって利用可能な PostgreSQL バージョンに依存します。すべてのインストールタイプにわたって PG18 を保証できない場合、アプリケーション側生成が最も安全な暫定的選択です。カラムデフォルトは、PG18 がどこでも下限になったら、ネイティブの `uuidv7()` に移動できます。
 - この ADR のすべての Mermaid 図では、`namespace_id` カラムと API に公開されるすべてのテーブルの `id` を `uuid` として示します。blob ストレージ層（`blob_storage_attachments`、`blob_storage_blobs`、`upload_sessions`）だけが `bigint` の `id` を維持します。
@@ -2089,7 +2181,7 @@ blob を破棄のために扱う前に、バックエンドは（重複排除の
 
 ストレージ使用量は、ネームスペース、リポジトリ、アーティファクトという 3 つのスコープで追跡します。各スコープには、サブミリ秒の読み取りで表示パスを提供する事前計算済みのカウンターと、ドリフトが疑われる場合やオンデマンドの検証が必要な場合にソースデータから正確な値を計算する調整パスがあります。blob ストレージスキーマは、これらの計算と帰属を正確かつ効率的にするように設計されています。
 
-- blob とアタッチメントは Organization にスコープされ、重複排除は Organization _内_でのみ発生します（[ADR-002](002_storage_deduplication_scope.md) を参照）。
+- blob とアタッチメントは Organization にスコープされ、重複排除は Organization **内**でのみ発生します（[ADR-002](002_storage_deduplication_scope.md) を参照）。
 - `blob_storage_blobs` は **Organization ごとに一意の保存済み blob ごとに 1 行**を持ちます。オブジェクトストレージ内の各物理オブジェクトは、Organization ごとに一度表現されます。
 - 物理 blob と `blob_storage_blobs` レコードは、すべてのアタッチメントを失ったときに（[クリーンアッププロセス](#cleanup-tasks) を通じて）非同期にクリーンアップされるため、`blob_storage_blobs` はまだ使用中（または非同期削除を保留中）の blob のみを参照します。結果として、ストレージ使用量クエリはアタッチメント数でフィルターする必要がありません。
 
@@ -2109,12 +2201,13 @@ erDiagram
     }
 ```
 
-- **namespace_statistics**: バッファカウンター（非同期フラッシャー）を介して維持される、事前計算されたネームスペースレベルのカウンターを保存します。これは、表示パスと課金システムが読み取るテーブルであり、サブミリ秒のレスポンスを提供します（[ベンチマーク表](#namespace-level-storage-accounting-reconciliation) を参照）。[調整メカニズム](#namespace-level-storage-accounting-reconciliation) は、ドリフトが疑われるときにこれらのカウンターを検証・修正するために存在します。構造上、各ネームスペースには 1 行が存在します。テーブル作成時に存在するすべてのネームスペースをシードし、その後 `namespaces` に挿入されるネームスペースごとに `AFTER INSERT` トリガーが 1 行を作成するため、読み取りパスは行が存在しない場合とゼロになったカウンターを区別する必要がありません。`namespace_id` 外部キーは、このスキーマ内で `references namespaces(id)` に `ON DELETE CASCADE` を伴う 2 つの外部キーの一方です。もう一方は同じルールの同じ側にある [`blob_storage_blobs_by_namespace`](#namespace-level-storage-accounting-reconciliation) shadow テーブルのものであり、トリガーが必要とする参照アクションです。トリガーはすべてのネームスペースに子行があることを保証するため、カスケードがなければ、ネームスペース自身が存在させた行によってネームスペースのハード削除が拒否されます。この行はユーザーデータではなく導出された記録であるため、[repositories](#repositories) で述べたルール、すなわち子が純粋な構造であればカスケードし、ユーザーデータであれば拒否するというルールのカスケード側に該当します。主キーは正確に `(namespace_id)` で、独立した `id` カラムはなく、このスキーマ内のどの外部キーからも参照されないため、[パーティショニングの不変条件](#partitioning-invariant)の[例外](#exceptions)にある 2 つ目の条件によりパーティショニングされません。この条件を適用する唯一のテーブルです。
+- **namespace_statistics**: バッファカウンター（非同期フラッシャー）を介して維持される、事前計算されたネームスペースレベルのカウンターを保存します。これは、表示パスと課金システムが読み取るテーブルであり、サブミリ秒のレスポンスを提供します（[ベンチマーク表](#namespace-level-storage-accounting-reconciliation) を参照）。[調整メカニズム](#namespace-level-storage-accounting-reconciliation) は、ドリフトが疑われるときにこれらのカウンターを検証・修正するために存在します。構造上、各ネームスペースには 1 行が存在します。テーブル作成時に存在するすべてのネームスペースをシードし、その後 `namespaces` に挿入されるネームスペースごとに `AFTER INSERT` トリガーが 1 行を作成するため、読み取りパスは行が存在しない場合とゼロになったカウンターを区別する必要がありません。`namespace_id` 外部キーは、このスキーマ内で `references namespaces(id)` に `ON DELETE CASCADE` を伴う 2 つの外部キーの一方です。もう一方は同じルールの同じ側にある [`blob_storage_blobs_by_namespace`](#namespace-level-storage-accounting-reconciliation) シャドウテーブルのものであり、トリガーが必要とする参照アクションです。トリガーはすべてのネームスペースに子行があることを保証するため、カスケードがなければ、ネームスペース自身が存在させた行によってネームスペースのハード削除が拒否されます。この行はユーザーデータではなく導出された記録であるため、[repositories](#repositories) で述べたルール、すなわち子が純粋な構造であればカスケードし、ユーザーデータであれば拒否するというルールのカスケード側に該当します。主キーは正確に `(namespace_id)` で、独立した `id` カラムはなく、このスキーマ内のどの外部キーからも参照されないため、[パーティショニングの不変条件](#partitioning-invariant)の[例外](#exceptions)にある 2 つ目の条件によりパーティショニングされません。この条件を適用する唯一のテーブルです。
   - `deduplicated_size_bytes`: ネームスペースが使用する合計ストレージで、blob の重複排除がすでに適用されています（[ADR-002](002_storage_deduplication_scope.md) を参照）。このカラムは、将来の生サイズや論理サイズのメトリクスと区別するために、将来の互換性を持たせるべく（`size_bytes` ではなく）このように命名されています。
   - `components_count`: ネームスペースのホスト型およびリモート型リポジトリに保存されたアーティファクトバージョンの合計数:
     - Container: `container_manifests` + `container_remote_manifests`。
     - Maven: `maven_versions` + `maven_remote_versions`。
     - npm: `npm_versions` + `npm_remote_versions`。
+    - Generic: `generic_versions`（ホスト型のみ。リモート型のバリアントはありません）。
 
     ソフト削除された行は、[ソフト削除ウィンドウ](010_data_retention.md#soft-delete) が期限切れになった後にガベージコレクションがハード削除するまでカウントされ続けます。これは `deduplicated_size_bytes` と一致します。これは、ガベージコレクションが基となる blob を回収するまで、ソフト削除されたアーティファクトのバイトを保持します。仮想リポジトリは、独自のバージョンテーブルを持たないため、別途カウントされません。仮想リポジトリは上流の順序付きリストを通じてリクエストを解決し（[`container_virtual_repository_upstreams`](#virtual-container-repositories) とその Maven および npm の同等のものを参照）、各上流はそれ自体がホスト型またはリモート型のリポジトリであり、そのバージョンは上記のテーブルを介してすでに含まれています。その上で仮想リポジトリをカウントすると、その上流を二重カウントすることになります。これは消費ベースの価格設定とメータリングのためのネームスペースレベルの次元であり、`deduplicated_size_bytes` を補完します。ストレージ使用量とともにネームスペース概要に表示されます。
 
@@ -2144,11 +2237,18 @@ erDiagram
 
 `blob_storage_blobs` のトリガーがこのテーブルを維持します。`AFTER INSERT` は `(namespace_id, sha256, size)` をシャドウテーブルにコピーし、`AFTER DELETE` は一致する行を削除します。`AFTER UPDATE` トリガーは不要です。`blob_storage_blobs` の行は不変だからです。コンテンツアドレス可能なストレージは、コンテンツへの変更が新しい `sha256`、したがって新しい行を生成することを意味します（[ADR-008](008_content_addressable_storage.md) を参照）。主キー `(namespace_id, sha256) INCLUDE (size)` はパーティションキー（`namespace_id`）を含まなければならず、`blob_storage_blobs` のユニークキーを反映します。`size` も主キーに含まれるため、ダイジェストによる検索では一致する行ごとのヒープフェッチを避け、インデックスオンリーで処理できます。テーブルは他の `HASH(namespace_id)` テーブルと同じ 64 パーティション数を使用します。`(namespace_id) INCLUDE (size)` のカバリングインデックスは、ネームスペース全体の合計を求めるインデックスオンリースキャンを可能にします。主キーも `namespace_id` が先頭にあるため、その合計をインデックスオンリーで処理できます。それでもカバリングインデックスを維持するのは機能上の理由ではなくスキャンコストのためです。カバリングインデックスのエントリには、合計で読み取らない 32 バイトの `sha256` が含まれず、幅の広い主キーインデックスの大部分を占めるこのカラムを走査せずに済みます。
 
-`namespace_id` 外部キーは `namespaces(id)` を `ON DELETE CASCADE` で参照します。shadow 行はユーザーデータではなく `blob_storage_blobs` 行から導出されたコピーなので、`namespace_statistics` と同じ理由で [repositories](#repositories) のルールのカスケード側に置かれます。shadow 行の生存期間は 2 つのうち短い方で制限され、2 つの reaper がそれを強制します。garbage collection が `blob_storage_blobs` 行を回収すると `AFTER DELETE` トリガーが削除し、namespace がなくなるとこのカスケードが削除します。shadow は `blob_storage_blobs` のレプリカではなく、namespace ごとの読み取りを高速化する派生アクセラレーターなので、どちらが先でも正しい動作です。
+`namespace_id` 外部キーは `namespaces(id)` を `ON DELETE CASCADE` で参照するため、`namespace_statistics` と同じ理由で、[リポジトリ](#repositories)で述べたルールのカスケード側に置かれます。シャドウ行はユーザーデータではなく、`blob_storage_blobs` 行から導出されたコピーであるためです。
+シャドウ行の生存期間は 2 つのうち短い方で制限され、2 つのリーパーがこれを強制します。ガベージコレクションが対応する `blob_storage_blobs` 行を回収すると `AFTER DELETE` トリガーが行を削除し、ネームスペースがなくなるとこのカスケードが行を削除します。
+シャドウ行はネームスペースごとの読み取りを低コストにするためだけに存在し、どちらのイベントもその読み取りの可能性を終わらせるため、どちらが先に発火しても正しい動作です。
+シャドウとそのソースが同じ生存期間を持たないのは、設計が許容する乖離ではなく、設計そのものです。シャドウは `blob_storage_blobs` のレプリカではなく、そこから導出された読み取りアクセラレーターです。
 
-`blob_storage_blobs` は意図的に `namespaces(id)` 参照を持たず、未完の延期ではありません。行は保存オブジェクトへの唯一のハンドルである `object_storage_key` を所有し、[ADR-025](025_garbage_collection.md) ではオブジェクトを行より先に削除します。そのため、`namespaces` からのカスケードはオブジェクトが存在する間にハンドルを破壊して漏えいさせます。ブロックする参照も、意図的に延期されレート制限された garbage collection サイクルの完了まで namespace の削除を止めるため適切ではありません。テーブルを作成したマイグレーション `20260612130000_create_blob_storage_blobs.sql` は両方の欠けた参照を後続マイグレーションへ延期すると説明していますが、`namespaces(id)` 側についてはこの決定がそれに優先します。`repositories(id, namespace_id)` 側は別の問いであり、このセクションでは立場を取りません。
+`blob_storage_blobs` は意図的に `namespaces(id)` 参照を持たず、その欠如は未完の延期ではなく、決定です。
+この行は、保存オブジェクトへの唯一のハンドルである `object_storage_key` を所有し、[ADR-025](025_garbage_collection.md)ではガベージコレクションがそのオブジェクトを元の行より先に削除します。したがって、`namespaces` からのカスケードは、オブジェクトがまだ存在する間にハンドルを破壊し、その存在を把握するものがデータベースに何も残らない状態でオブジェクトを取り残します。
+ブロックする参照も適切ではありません。意図的に延期され、レート制限されるガベージコレクションのサイクルが終わるまで、すべてのネームスペース削除を停止させるためです。
+このテーブルを作成したマイグレーション `20260612130000_create_blob_storage_blobs.sql` は、欠けている 2 つの参照をどちらも後続のマイグレーションへ延期すると説明しています。`namespaces(id)` 側についてはその位置付けが置き換えられ、`repositories(id, namespace_id)` 側は別の問いであり、このセクションでは立場を取りません。
 
-したがって namespace のハード削除は shadow の行を削除し、それがコピーした `blob_storage_blobs` 行は garbage collection が独自のスケジュールで回収するまで残します。shadow の読者がそのずれを観測することはありません。`repositories` と `blob_storage_attachments` は参照アクションなしで `namespaces` を参照するため、その namespace 配下のすべてのリポジトリとアタッチメントがなくなるまで削除は進まず、調整を駆動する `namespace_statistics` 行も同じステートメントでカスケードされます。
+したがって、ネームスペースのハード削除はシャドウ行を削除し、それがコピーした `blob_storage_blobs` 行は、ガベージコレクションが独自のスケジュールで回収するまで残します。
+シャドウを読み取る処理がこの差を観測することはありません。`repositories` と `blob_storage_attachments` は参照アクションなしで `namespaces` を参照するため、ネームスペース配下のすべてのリポジトリとアタッチメントがなくなるまで削除は進まず、調整処理を駆動する `namespace_statistics` 行も同じステートメントでカスケード削除されます。
 
 | アプローチ | タイミング | バッファ | スキャンされたパーティション | 書き込みオーバーヘッド |
 | --- | --- | --- | --- | --- |
@@ -2166,8 +2266,10 @@ erDiagram
 1. **オンデマンドの検証**: 顧客（または課金）がコンポーネント数が正確かどうかを尋ね、私たちはそれをソース行から導出する必要があります。
 2. **ドリフトの修正**: 失敗したフラッシュ、部分的なバッファ損失、またはバックグラウンドジョブのバグがカウンターを非同期化し、私たちはそれを再計算する必要があります。
 
-調整は、ネームスペースの行にスコープされた 6 つの独立したカウントを合計します。3 つのホスト型（`container_manifests`、`maven_versions`、`npm_versions`）と 3 つのリモート型（`container_remote_manifests`、`maven_remote_versions`、`npm_remote_versions`）です。
-再計算された値が `components_count` が追跡するものと一致するように、ソフト削除された行も含まれます（挿入はインクリメント、ガベージコレクションのハード削除はデクリメント、ソフト削除と復元は no-op）。この括弧内の「garbage collection のハード削除」は、どのパスが実行するかにかかわらず、カウント対象行のあらゆるハード削除を含みます。フォーマット自身の削除は独自のトランザクションで行を削除し、そのようなルートで扱えない行は lifecycle purger が削除します。
+調整は、ネームスペースの行にスコープされた 7 つの独立したカウントを合計します。4 つのホスト型（`container_manifests`、`maven_versions`、`npm_versions`、`generic_versions`）と 3 つのリモート型（`container_remote_manifests`、`maven_remote_versions`、`npm_remote_versions`）です。
+再計算された値が `components_count` が追跡するものと一致するように、ソフト削除された行も含まれます（挿入はインクリメント、ガベージコレクションのハード削除はデクリメント、ソフト削除と復元は何も変更しない操作）。
+その括弧内の「ガベージコレクションによるハード削除」は、どのパスが実行するかにかかわらず、カウント対象の行のあらゆるハード削除を指し、それを実行するパスは 2 つあります。
+フォーマット自身の削除は独自のトランザクションで行を削除し、そのようなルートでは扱えない行はライフサイクルのパージ処理が削除します。
 
 ```sql
 SELECT
@@ -2177,10 +2279,11 @@ SELECT
 + (SELECT COUNT(*) FROM maven_remote_versions      WHERE namespace_id = $1)
 + (SELECT COUNT(*) FROM npm_versions               WHERE namespace_id = $1)
 + (SELECT COUNT(*) FROM npm_remote_versions        WHERE namespace_id = $1)
++ (SELECT COUNT(*) FROM generic_versions           WHERE namespace_id = $1)
   AS components_count;
 ```
 
-各サブクエリは単一のソーステーブルでの `namespace_id` によるカウントであり、`soft_deleted_at` 述語はありません。そのため、テーブルにまだある行（ライブ + [ソフト削除ウィンドウ](010_data_retention.md#soft-delete) 内のソフト削除されたもの）が `components_count` が追跡するものと一致します。6 つのソーステーブルはすべて `HASH(namespace_id)` でパーティショニングされているため、各サブクエリは単一のパーティションにプルーニングされ、そのパーティションでネームスペースの行をスキャンします。既存の部分ユニークインデックス（`WHERE soft_deleted_at IS NULL`）はライブ行のみをカバーするため、カウントを直接満たすことはできません。ネームスペースごとのカーディナリティはデータモデルによって境界づけられ（バージョンごとに 1 行、ファイルや blob 参照ごとではない）、調整は頻繁ではない（オンデマンドまたはドリフト修正であり、ホットパスではない）ため、境界のあるスキャンは許容できます。追加の保険ポリシー（カバリングインデックスやシャドウテーブル）は導入されません。本番メトリクスがこれが遅すぎることを示した場合、各ソーステーブルの非部分的な `(namespace_id)` インデックスが、シャドウテーブルを検討する前の最も安価な次のステップです。
+各サブクエリは単一のソーステーブルでの `namespace_id` によるカウントであり、`soft_deleted_at` 述語はありません。そのため、テーブルにまだある行（ライブ + [ソフト削除ウィンドウ](010_data_retention.md#soft-delete) 内のソフト削除されたもの）が `components_count` が追跡するものと一致します。7 つのソーステーブルはすべて `HASH(namespace_id)` でパーティショニングされているため、各サブクエリは単一のパーティションにプルーニングされ、そのパーティションでネームスペースの行をスキャンします。既存の部分ユニークインデックス（`WHERE soft_deleted_at IS NULL`）はライブ行のみをカバーするため、カウントを直接満たすことはできません。ネームスペースごとのカーディナリティはデータモデルによって境界づけられ（バージョンごとに 1 行、ファイルや blob 参照ごとではない）、調整は頻繁ではない（オンデマンドまたはドリフト修正であり、ホットパスではない）ため、境界のあるスキャンは許容できます。追加の保険ポリシー（カバリングインデックスやシャドウテーブル）は導入されません。本番メトリクスがこれが遅すぎることを示した場合、各ソーステーブルの非部分的な `(namespace_id)` インデックスが、シャドウテーブルを検討する前の最も安価な次のステップです。
 
 #### リポジトリレベルのストレージ会計の調整 {#repository-level-storage-accounting-reconciliation}
 
@@ -2194,40 +2297,49 @@ SELECT
 - **Container**: `container_images`（`container_repository_id` でフィルタリング）→ `container_blobs` と `container_manifests`。両方のテーブルが `blob_sha256` を保持し、UNION によってレイヤー blob とマニフェストペイロードを対象にします。
 - **Maven**: `maven_packages`（`maven_repository_id` でフィルタリング）→ `maven_files`。単一のファイルテーブルが、パッケージのバージョン固有ファイルとパッケージレベルファイルを対象にします。
 - **npm**: `npm_packages`（`npm_repository_id` でフィルタリング）→ `npm_versions` → `npm_files` に加え、`npm_metadata_files`（バージョンレベルではなくパッケージレベルをキーとする）との UNION を使用します。
+- **Generic**: `generic_packages`（`generic_repository_id` でフィルタリング）→ `generic_versions` → `generic_files`。npm と同様に、`generic_files` はパッケージの FK を持たないため、走査はバージョンを経由します。Generic にはメタデータファイルがないため、メタデータの結合はありません。この 3 階層の走査は計測されていません。計測されたのはコンテナ走査と Maven のパッケージを先頭とするインデックスだけです（後述）。
 - **リモート型のバリアント**（`kind = remote`）は、キャッシュテーブル（`*_remote_*`）に対して同じ形を使用します。キャッシュもリポジトリのフットプリントの一部です。
 
 `SUM(DISTINCT bsb.size)` は誤りです。異なる blob が同じ `size` 値を持つ場合があり、同じ長さの小さなファイルがまとめられてしまいます。調整では、最初に `SELECT DISTINCT blob_sha256` を実行し、その後でのみ合計を求めるために `blob_storage_blobs_by_namespace` へ JOIN しなければなりません。サイズは `blob_storage_blobs` 自体ではなく、ネームスペースのシャドウテーブルから取得します。このシャドウテーブルは `(namespace_id, sha256) INCLUDE (size)` をキーとしているため、各ダイジェストは 1 つのパーティション内でインデックスオンリーに解決されます。ここでは `namespace_id` がリテラルなので単一のパーティションに絞り込まれ、`size` が主キーに含まれるため、その後のヒープフェッチは発生しません。シャドウテーブルのもう 1 つのインデックスであるカバリングインデックス `(namespace_id) INCLUDE (size)` は、`sha256` で行を特定できないため、この読み取りには使用できません。リポジトリから到達できるすべての `sha256` は、そのリポジトリのネームスペースに必ず存在するよう設計されています。以下のクエリ例はすべて、この方法でサイズを解決します。
 
 再計算した値を `repositories.size_bytes` が追跡する値と一致させるため、ソフト削除された行も含めます。
-カウンターはリポジトリ内で重複排除されます（調整の `DISTINCT blob_sha256` と一致します）。ある `sha256` がリポジトリに初めてアタッチされた場合にのみインクリメントし、その `sha256` の最後のアタッチメントがリポジトリからなくなったときにデクリメントします。削除するパスは 2 つあります。フォーマット自身の削除は独自のトランザクションでアタッチメントを削除します。ソフト削除されたアーティファクト配下のアタッチメントはそのルートで扱えないため、lifecycle purger が削除します。どちらも garbage collection を待ちません。garbage collection は blob を回収し、別スコープのカウンターである namespace の `deduplicated_size_bytes` をデクリメントします。ソフト削除と復元は no-op であり、前述した namespace レベルの動作と一致します。
+カウンターはリポジトリ内で重複排除されます（調整の `DISTINCT blob_sha256` と一致します）。ある `sha256` がリポジトリに初めてアタッチされた場合にのみインクリメントし、その `sha256` の最後のアタッチメントがリポジトリからなくなったときにデクリメントします。削除するパスは 2 つあります。
+フォーマット自身の削除は、独自のトランザクションでアタッチメントを削除します。
+ソフト削除されたアーティファクト配下のアタッチメントはそのルートで扱えないため、代わりにライフサイクルのパージ処理が削除します。
+どちらのパスもガベージコレクションの実行を待ちません。ガベージコレクションは blob を回収し、別スコープのカウンターであるネームスペース単位の `deduplicated_size_bytes` をデクリメントします。
+ソフト削除と復元は何も変更せず、前述したネームスペースレベルの動作と一致します。
 
-調整のコストは、リポジトリのアーティファクト数ではなく、namespace がハッシュされるパーティションによって制限されます。フォーマット固有のファイル、blob、manifest テーブル（Container の `container_blobs` と `container_manifests`、Maven の `maven_files`、npm の `npm_files` と `npm_metadata_files`、さらにそれぞれの `*_remote_*` キャッシュバリアント）は `HASH(namespace_id)` で 64 パーティションに分割されるため、走査の各側は単一パーティションに絞り込まれます。その中でプランナーは sequential path を取ります。リポジトリ述語は blob 保持テーブルより 2 JOIN 上のフォーマット固有 stub テーブルにあり、PostgreSQL はこのパスのテーブル間相関統計を保持しないため、実際には 200 行でも 30,000 行と見積もります。PostgreSQL 17.10 で 11 個の `EXPLAIN (ANALYZE, BUFFERS)` プランを計測し（[artifact-registry!1712](https://gitlab.com/gitlab-org/ops/artifact-registry/-/merge_requests/1712)）、コンテナ走査でリポジトリを 200 digest に保った結果は次のとおりです。
+調整のコストは、リポジトリのアーティファクト数ではなく、ネームスペースがハッシュされるパーティションによって制限されます。フォーマット固有のファイル、blob、マニフェストテーブル（Container の `container_blobs` と `container_manifests`、Maven の `maven_files`、npm の `npm_files` と `npm_metadata_files`、Generic の `generic_files`、さらに Generic 以外の各フォーマットの `*_remote_*` キャッシュバリアント）は `HASH(namespace_id)` で 64 パーティションに分割されるため、走査の各側は単一パーティションに絞り込まれます。その中でプランナーは逐次走査のパスを取ります。リポジトリ述語は blob 保持テーブルより 2 JOIN 上のフォーマット固有スタブテーブルにあり、PostgreSQL はこのパスのテーブル間相関統計を保持しないため、実際には 200 行でも 30,000 行と見積もります。PostgreSQL 17.10 で 11 個の `EXPLAIN (ANALYZE, BUFFERS)` プランを計測し（[artifact-registry!1712](https://gitlab.com/gitlab-org/ops/artifact-registry/-/merge_requests/1712)）、コンテナ走査でリポジトリを 200 ダイジェストに保った結果は次のとおりです。
 
 | 収集テーブルのパーティションに共存するもの | 走査プラン | 時間 |
 | --- | --- | --- |
-| なし。対象リポジトリの行だけ | nested loop、`blob_storage_blobs_by_namespace` の `Index Only Scan` | 0.508 ms |
-| 同じ namespace の兄弟リポジトリ、59,800 行 | 収集テーブルと shadow に対する `Filter: (namespace_id = ...)` 付き `Seq Scan` | 18.157 ms |
+| なし。対象リポジトリの行だけ | ネステッドループ、`blob_storage_blobs_by_namespace` の `Index Only Scan` | 0.508 ms |
+| 同じネームスペースの兄弟リポジトリ、59,800 行 | 収集テーブルとシャドウに対する `Filter: (namespace_id = ...)` 付き `Seq Scan` | 18.157 ms |
 
-ハッシュパーティションは全 namespace の約 1/64 の行を保持するため、sequential pass は namespace 規模ではなく fleet 規模の量になります。この最後の点は計測ではなく、node type と partition count からの推論です。これらのテーブルのフォーマット固有インデックスは、一様に部分インデックスではありません。`npm_metadata_files` と `npm_remote_metadata_files` には `soft_deleted_at` カラム自体がありません。`container_blobs` と `container_manifests` では、このドキュメントが指定するカラムは GA 時にソフト削除とともに導入されるため（[ADR-010](010_data_retention.md#release-phasing)）、現時点のユニークインデックスは述語を持たず、ソフト削除を含めるこの枠組みはそれらには及びません。`npm_files`、`npm_remote_files`、`container_remote_blobs`、`container_remote_manifests` は正確に `soft_deleted_at IS NULL` の部分インデックスです。`maven_files` と `maven_remote_files` のユニークインデックスには version ID に関する 2 つ目の連言があり、パッケージレベルのインデックスでは `maven_version_id IS NULL`、バージョンレベルのインデックスでは `IS NOT NULL` で、`maven_remote_version_id` にも同じ組み合わせがあります。したがって、リポジトリ比例のコストは排除されておらず、走査を sequential path に保つのはインデックスの欠如や部分インデックスではなく、行数見積もりです。調整は頻繁ではなく（オンデマンドまたはドリフト修正であり、ホットパスではありません）、パーティションスキャンは許容できます。[namespace レベルの調整](#namespace-level-storage-accounting-reconciliation)からの最後の `blob_storage_blobs_by_namespace` 検索は、計測したすべてのプランで単一パーティションに絞り込まれ、プランナーが走査サイズを正しく見積もる場合は index-only で解決され、同じ過大見積もりではそのパーティションの sequential scan にフォールバックします。
+ハッシュパーティションは全ネームスペースの約 1/64 の行を保持するため、逐次走査はネームスペース規模ではなく全体規模の量になります。この最後の点は計測ではなく、ノードの種類とパーティション数からの推論です。これらのテーブルのフォーマット固有インデックスは、一様に部分インデックスではありません。`npm_metadata_files` と `npm_remote_metadata_files` には `soft_deleted_at` カラム自体がありません。`container_blobs` と `container_manifests` では、このドキュメントが指定するカラムは GA 時にソフト削除とともに導入されるため（[ADR-010](010_data_retention.md#release-phasing)）、現時点のユニークインデックスは述語を持たず、ソフト削除を含めるこの枠組みはそれらには及びません。`npm_files`、`npm_remote_files`、`generic_files`、`container_remote_blobs`、`container_remote_manifests` は正確に `soft_deleted_at IS NULL` の部分インデックスです。`maven_files` と `maven_remote_files` のユニークインデックスにはバージョン ID に関する 2 つ目の連言があり、パッケージレベルのインデックスでは `maven_version_id IS NULL`、バージョンレベルのインデックスでは `IS NOT NULL` で、`maven_remote_version_id` にも同じ組み合わせがあります。したがって、リポジトリ比例のコストは排除されておらず、走査を逐次走査のパスに保つのはインデックスの欠如や部分インデックスではなく、行数見積もりです。調整は頻繁ではなく（オンデマンドまたはドリフト修正であり、ホットパスではありません）、パーティションスキャンは許容できます。[ネームスペースレベルの調整](#namespace-level-storage-accounting-reconciliation)からの最後の `blob_storage_blobs_by_namespace` 検索は、計測したすべてのプランで単一パーティションに絞り込まれ、プランナーが走査サイズを正しく見積もる場合はインデックスオンリーで解決され、同じ過大見積もりではそのパーティションのシーケンシャルスキャンにフォールバックします。
 
-リポジトリレベルの調整には、現在、保険となる構造が 1 つあります。`maven_files (namespace_id, maven_package_id, blob_sha256)` に対する非部分インデックス `index_maven_files_on_ns_id_pkg_id_blob_sha256` です。これは `maven_package_id` の外部キーチェックを支えるために導入され、3 番目のカラムは `recomputeMavenFilesSizeStmt` が読み取るダイジェストです。このインデックスにより、解放バイト数の測定セルは 1,001,427 バッファ・3,066 ms から 318 バッファ・1.8 ms に減少します。したがって、これらの連鎖に含まれるすべてのテーブルが、`maven_files` も含め、`(namespace_id, <its parent id>)` で始まる非部分インデックスを持ちます。[artifact-registry#684](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/684)では 2 カラムの `(namespace_id, maven_package_id)` 形式を提案していましたが、決定となるのは導入済みの 3 カラム形式であり、3 番目のカラムは結合が読み取るものです。このインデックス以外では、走査は[namespace レベルの調整](#namespace-level-storage-accounting-reconciliation)ですでに導入する `blob_storage_blobs_by_namespace` の shadow を再利用し、独自の shadow テーブルは追加しません。アタッチ／デタッチ時にフォーマット固有テーブルから維持される、`(namespace_id, repository_id, sha256, size)` をマッピングするリポジトリパーティショニングの shadow テーブルであれば、[オプション B](#namespace-level-storage-accounting-reconciliation)の形をより細かいスコープで反映できます。
+リポジトリレベルの調整には、現在、保険となる構造が 1 つあります。`maven_files (namespace_id, maven_package_id, blob_sha256)` に対する非部分インデックス `index_maven_files_on_ns_id_pkg_id_blob_sha256` です。これは `maven_package_id` の外部キーチェックを支えるために導入され、3 番目のカラムは `recomputeMavenFilesSizeStmt` が読み取るダイジェストです。このインデックスにより、解放バイト数の測定セルは 1,001,427 バッファ・3,066 ms から 318 バッファ・1.8 ms に減少します。したがって、これらの連鎖に含まれるすべてのテーブルが、`maven_files` も含め、`(namespace_id, <its parent id>)` で始まる非部分インデックスを持ちます。[artifact-registry#684](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/684)では 2 カラムの `(namespace_id, maven_package_id)` 形式を提案していましたが、決定となるのは導入済みの 3 カラム形式であり、3 番目のカラムは結合が読み取るものです。このインデックス以外では、走査は[ネームスペースレベルの調整](#namespace-level-storage-accounting-reconciliation)ですでに導入する `blob_storage_blobs_by_namespace` のシャドウを再利用し、独自のシャドウテーブルは追加しません。アタッチ／デタッチ時にフォーマット固有テーブルから維持される、`(namespace_id, repository_id, sha256, size)` をマッピングするリポジトリパーティショニングのシャドウテーブルであれば、[オプション B](#namespace-level-storage-accounting-reconciliation)の形をより細かいスコープで反映できます。
 
 #### アーティファクトレベルのストレージ会計 {#artifact-level-storage-accounting}
 
-アーティファクトレベルのストレージ使用量は、単一のアーティファクトバージョン（Container マニフェスト、Maven バージョン、npm バージョン）のバイト単位のフットプリントです。アーティファクトごとの UI 表示（例えば「このイメージは 142 MB」「このパッケージバージョンは 4 MB」）を支え、サイズによるフィルタリングまたはソートを行う[ライフサイクルルール](010_data_retention.md)とレポートクエリによって使用されます。
+アーティファクトレベルのストレージ使用量は、単一のアーティファクトバージョン（Container マニフェスト、Maven バージョン、npm バージョン、Generic バージョン）のバイト単位のフットプリントです。アーティファクトごとの UI 表示（例えば「このイメージは 142 MB」「このパッケージバージョンは 4 MB」）を支え、サイズによるフィルタリングまたはソートを行う[ライフサイクルルール](010_data_retention.md)とレポートクエリによって使用されます。
 
 基となるアーティファクトの形が異なるため、会計モデルはフォーマットごとに異なります。
 
 - **Container マニフェスト**: `container_manifests.size` はプッシュ時に事前計算され、不変です。マニフェストはコンテンツアドレス可能であるため（[ADR-008](008_content_addressable_storage.md)）、バイトが変更されると、新しいダイジェストと新しい `size` を持つ新しいマニフェストが生成されます。このカラムが信頼できる唯一の情報源であるため、調整は不要です。リモートキャッシュでは `container_remote_manifests.size` がこれを反映し、子が遅延キャッシュされるマニフェストリストに対して[段階的なセマンティクス](#container-remote-repositories)を持ちます。
-- **Maven と npm のバージョン**: 各バージョン行は、バージョンのフットプリントについて信頼できる唯一の情報源となる事前計算済みの `size_bytes` カラム（`maven_versions`、`maven_remote_versions`、`npm_versions`、`npm_remote_versions`）を持ちます。
-  `container_manifests.size` とは異なり、プッシュ時に不変の値として設定することはできません。Maven と npm のバージョンはバージョンレベルでコンテンツアドレス可能ではなく、バージョンの存続期間中にファイルを追加または削除できるためです。
+- **Maven、npm、Generic のバージョン**: 各バージョン行は、バージョンのフットプリントについて信頼できる唯一の情報源となる事前計算済みの `size_bytes` カラム（`maven_versions`、`maven_remote_versions`、`npm_versions`、`npm_remote_versions`、`generic_versions`）を持ちます。
+  `container_manifests.size` とは異なり、プッシュ時に不変の値として設定することはできません。Maven、npm、Generic のバージョンはバージョンレベルでコンテンツアドレス可能ではなく、バージョンの存続期間中にファイルを追加または削除できるためです。
   そのため、`repositories.size_bytes` と同様に、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes)を介してバッファカウンターとして維持します。`blob_sha256` がバージョンに初めてアタッチされたときにインクリメントし、そのバージョンから当該 `sha256` の最後のアタッチメントがなくなったときにデクリメントします（バージョン内で重複排除し、調整で使用する `DISTINCT blob_sha256` と一致させます）。削除するパスは 2 つあります。
-  フォーマット自身のファイル削除は独自のトランザクションで行を削除し、カラムをそこで再計算します。そのルートで扱えないファイルは lifecycle purger が削除します。
-  どちらも garbage collection を待ちません。
+  フォーマット自身のファイル削除は独自のトランザクションで行を削除し、カラムをそこで再計算します。そのルートで扱えないファイルはライフサイクルのパージ処理が削除します。
+  どちらもガベージコレクションを待ちません。
   表示パスとバージョン一覧は、サイズでソートまたはフィルタリングする場合も含め、インデックス付きカラムを直接読み取ります。
 
-ソフト削除されたファイルは、ガベージコレクションによってハード削除されるまで、バージョンごとの `size_bytes` に引き続き寄与します。ソフト削除と復元はカウンターに対して no-op であり、ネームスペースおよびリポジトリのセマンティクスと一致します。
-寄与を終わらせるのはハード削除で、実行するパスは 2 つあります。Maven または npm のファイル削除は独自のトランザクションで行を削除し、そこでバージョンの `size_bytes` を再計算します。ソフト削除されたバージョン配下のファイルはそれらのルートで扱えないため、lifecycle purger が削除します。purger は同じ reap でバージョン行も削除するため、カウンターは再計算されず行とともになくなります。どちらも garbage collection を待ちません。garbage collection は blob を回収し、別スコープのカウンターである `deduplicated_size_bytes` をデクリメントします。
+ソフト削除されたファイルは、ガベージコレクションによってハード削除されるまで、バージョンごとの `size_bytes` に引き続き寄与します。ソフト削除と復元はカウンターに対して何も変更しない操作であり、ネームスペースおよびリポジトリのセマンティクスと一致します。
+寄与を終わらせるのはハード削除であり、実行するパスは 2 つあります。
+Maven、npm、Generic のファイル削除は、独自のトランザクションで行を削除し、そこでバージョンの `size_bytes` を再計算します。
+ソフト削除されたバージョン配下のファイルはそれらのルートで扱えないため、代わりにライフサイクルのパージ処理が削除します。
+パージ処理は同じ回収処理でバージョン行も削除するため、カウンターは再計算されず行とともになくなります。
+どちらのパスもガベージコレクションの実行を待ちません。ガベージコレクションは blob を回収し、別スコープのカウンターである `deduplicated_size_bytes` をデクリメントします。
 
 読み取り時に導出せずカラムを事前計算することで、バージョン一覧をサイズでソートおよびフィルタリングできます。単一バージョンのサイズを導出する処理はいずれの方法でも低コストです（少数のファイルに限定された JOIN）が、サイズがバージョン一覧でソートまたはフィルタリング可能なカラムになると、すべての行で導出する方法はスケールしません。Cloud SQL PostgreSQL 17 インスタンス（`large` プロファイル、最も深いネームスペースに約 26K の Maven バージョンと約 26K の npm バージョン）で検証しました。
 
@@ -2240,26 +2352,26 @@ SELECT
 
 #### アーティファクトレベルのストレージ会計の調整 {#artifact-level-storage-accounting-reconciliation}
 
-`container_manifests.size` は不変かつコンテンツアドレス可能であるため、調整は不要です。Maven と npm の `size_bytes` カウンターは、リポジトリレベルおよびネームスペースレベルのカウンターと同様に、失敗したフラッシュ、部分的なバッファ損失、またはバックグラウンドジョブのバグによってドリフトする可能性があります。そのため、オンデマンドの検証またはドリフトの修正のために、ソースデータから正確な値を再計算します。
+`container_manifests.size` は不変かつコンテンツアドレス可能であるため、調整は不要です。Maven、npm、Generic の `size_bytes` カウンターは、リポジトリレベルおよびネームスペースレベルのカウンターと同様に、失敗したフラッシュ、部分的なバッファ損失、またはバックグラウンドジョブのバグによってドリフトする可能性があります。そのため、オンデマンドの検証またはドリフトの修正のために、ソースデータから正確な値を再計算します。
 
-1 つのバージョンを調整する際は、フォーマット固有のファイルテーブルから、単一の `maven_version_id` または `npm_version_id` にスコープして、そのバージョンの重複しない `blob_sha256` 値を選択し、namespace・リポジトリレベルの走査と同じ shadow である `blob_storage_blobs_by_namespace` に対して各 digest のサイズを解決します。再計算した値をカウンターが追跡する値と一致させるため、ソフト削除されたファイルも含め、package レベルの行は version ID の等価条件で除外します。
+1 つのバージョンを調整する際は、フォーマット固有のファイルテーブルから、単一の `maven_version_id`、`npm_version_id`、または `generic_version_id` にスコープして、そのバージョンの重複しない `blob_sha256` 値を選択し、ネームスペース・リポジトリレベルの走査と同じシャドウである `blob_storage_blobs_by_namespace` に対して各ダイジェストのサイズを解決します。再計算した値をカウンターが追跡する値と一致させるため、ソフト削除されたファイルも含め、パッケージレベルの行はバージョン ID の等価条件で除外します。
 
-バージョンごとの走査はサイズを読む前に digest を保持するため、digest を事前に名指せない namespace・リポジトリレベルの読み取りを shadow に送るプルーニングの根拠は、このスコープには当てはまりません。digest セットを単一の `bytea[]` 配列引数（`blob_storage_blobs.sha256 = ANY($n)`）として束縛すると digest の hash partition へ静的にプルーニングできますが、各 surviving partition は自身のインデックスに対して配列全体を評価するため、コストは digest 数ではなく partition 数×digest 数になります。[本番カーディナリティでの計測](https://gitlab.com/gitlab-org/ops/artifact-registry/-/issues/564)では、PostgreSQL 16〜18、namespace の blob 数 100〜1,000,000、digest 数 1〜512 の全条件で shadow は 0.09〜2.44 ms でした。配列形式が勝るのは digest 数 1、3、5 だけで、15 以上では勝らず、15 で 2〜6 倍、100 で 9〜48 倍遅くなります。Maven で一般的な 4〜15 ファイルではどちらもサブミリ秒なので、shadow は通常のカーディナリティで何も犠牲にせず、15 digest 以上で優位です。
+バージョンごとの走査はサイズを読む前にダイジェストを保持するため、ダイジェストを事前に名指せないネームスペース・リポジトリレベルの読み取りをシャドウに送るプルーニングの根拠は、このスコープには当てはまりません。ダイジェストセットを単一の `bytea[]` 配列引数（`blob_storage_blobs.sha256 = ANY($n)`）として束縛するとダイジェストのハッシュパーティションへ静的にプルーニングでき、約 15 個のダイジェストまでは、異なるダイジェストごとに 1 パーティションという数が適切です。プルーニングが制限するのはパーティション数であってプローブ数ではありません。各残ったパーティションは自身のインデックスに対して配列全体を評価するため、コストはダイジェスト数ではなくパーティション数×ダイジェスト数になります。[本番カーディナリティでの計測](https://gitlab.com/gitlab-org/ops/artifact-registry/-/issues/564)では、PostgreSQL 16〜18、ネームスペースの blob 数 100〜1,000,000、ダイジェスト数 1〜512 の全条件でシャドウは 0.09〜2.44 ms でした。配列形式が勝るのはダイジェスト数 1、3、5 だけで、15 以上では勝らず、15 で 2〜6 倍、100 で 9〜48 倍遅くなります。Maven で一般的な 4〜15 ファイルではどちらもサブミリ秒なので、シャドウは通常のカーディナリティで何も犠牲にせず、15 ダイジェスト以上で優位です。
 
-digest を配列として束縛せず、派生テーブルとしてベーステーブルに JOIN するとまったくプルーニングされません。呼び出しごとに 64 パーティションすべてを開き、計測した 123 条件のどれでも shadow に勝りませんでした。Artifact Registry サービスは simple query protocol を使用し、ステートメントを毎回再計画するため、読み取りではなく 64 パーティションに対する計画が走査を支配します。
+ダイジェストを配列として束縛せず、派生テーブルとしてベーステーブルに JOIN するとまったくプルーニングされません。呼び出しごとに 64 パーティションすべてを開き、計測した 123 条件のどれでもシャドウに勝りませんでした。Artifact Registry サービスはシンプルクエリプロトコルを使用し、ステートメントを毎回再計画するため、読み取りではなく 64 パーティションに対する計画が走査を支配します。
 
-このスコープで shadow を読むことによって、スキーマがまだ支払っていないコストは生じません。トリガー維持の書き込み増幅は、[namespace レベル](#namespace-level-storage-accounting-reconciliation)とリポジトリレベルの走査のために `blob_storage_blobs` がすでに持つ `AFTER INSERT` と `AFTER DELETE` トリガーで blob 書き込みごとに発生するため、バージョンごとの読者は何も追加しません。blob サイズはコンテンツアドレス可能で、内容が変われば異なる `sha256` の別行になるため、存在する書き込みパスで `size` の 2 つ目のコピーが古くなることはありません。訂正は `UPDATE` ではなく削除と再挿入で、トリガーが伝播します。ただし、この不変性は規約でありスキーマによる強制ではありません。`blob_storage_blobs.size` の `UPDATE` を拒否するものはなく、`AFTER UPDATE` トリガーもないため、直接更新すれば shadow は更新前の値を保持します。このリスクは namespace・リポジトリレベルの走査がすでに持つもので、このスコープ固有ではありません。
+このスコープでシャドウを読み取っても、スキーマがまだ負担していないコストは生じません。トリガー維持による書き込み増幅は、ネームスペースレベルとリポジトリレベルの走査のために `blob_storage_blobs` がすでに持つ `AFTER INSERT` と `AFTER DELETE` トリガーで、blob 書き込みごとに発生するため、バージョンごとの読み取りはそれを増やしません。`size` の 2 つ目のコピーは、既存のどの書き込みパスでも古くなりません。blob サイズはコンテンツアドレス指定であり、blob のバイト列が変わると異なる `sha256`、したがって異なる行になるためであり、行をその場で更新する書き込みパスはありません。`size` は挿入後に不変で、訂正は削除と再挿入によって行い、トリガーがそれを伝播します。シャドウは更新を追跡しないため、`UPDATE` は決して行いません。この不変性はスキーマが強制するものではなく規約です。`blob_storage_blobs.size` の `UPDATE` を拒否するものはなく、`AFTER UPDATE` トリガーもないため、シャドウは更新前の値を保持し、例外を発生させずにその値から合計を返します。このリスクは、ネームスペースレベルとリポジトリレベルの走査がすでに持つものであり、このスコープが導入するものではありません。
 
-バージョンごとのカーディナリティはフォーマットのプロトコルによって制限されるため（通常、Maven は 4〜15 ファイル、npm は 1〜3 ファイル）、再計算はサブミリ秒の単一パーティション読み取りになります。
+バージョンごとのカーディナリティはフォーマットのプロトコルによって制限されるため（通常、Maven は 4〜15 ファイル、npm は 1〜3 ファイル）、再計算はサブミリ秒の単一パーティション読み取りになります。Generic はバージョンごとのファイル数にプロトコル上の制限を設けません。シャドウの読み取りは、この場合に拡張性があると計測された形式であり、512 個のダイジェストで最大 2.44 ms です。
 
-カラムの導入時に行うバックフィルは、バージョンでグループ化した集合ベースの再計算です。現在の量では低コストです（最も深いネームスペースにある約 26K バージョンを約 284 ms でバックフィルできるため、この規模ではテーブル全体でも数秒です）。事前計算を先送りし、後から本番環境の量に対してバックフィルするよりもはるかに低コストです。今実施することで、3 つすべてのフォーマットにわたってデータモデルと API の一貫性も保たれます。
+カラムの導入時に行うバックフィルは、バージョンでグループ化した集合ベースの再計算です。現在の量では低コストです（最も深いネームスペースにある約 26K バージョンを約 284 ms でバックフィルできるため、この規模ではテーブル全体でも数秒です）。事前計算を先送りし、後から本番環境の量に対してバックフィルするよりもはるかに低コストです。今実施することで、すべてのフォーマットにわたってデータモデルと API の一貫性も保たれます。
 
 ### インデックス {#indexes}
 
 - **`blob_storage_blobs`**: `(namespace_id, sha256)` に対するユニークインデックス — 重複排除を強制し、Organization 内で sha256 によって blob の存在を確認します。この制約はパーティションキー（`sha256`）を含むため、PostgreSQL はすべてのハッシュパーティションにわたって正しく強制します。`(namespace_id) INCLUDE (size)` のカバリングインデックス — ヒープフェッチなしで [ネームスペースレベルのストレージ会計の調整](#namespace-level-storage-accounting-reconciliation) のためのインデックスオンリースキャンを可能にします。
 - **`blob_storage_attachments`**: `(namespace_id, sha256)` に対するインデックス — blob のコンテンツハッシュが与えられたときにアタッチメントの存在を確認します（[クリーンアッププロセス](#cleanup-tasks) が孤立チェックに使用）。
 - **`blob_storage_blobs_by_namespace`**: `(namespace_id, sha256) INCLUDE (size)` に対する主キー — `blob_storage_blobs` 行との 1:1 対応を強制し、[リポジトリレベル](#repository-level-storage-accounting-reconciliation)および[アーティファクトレベル](#artifact-level-storage-accounting-reconciliation)の調整で行うダイジェストごとのサイズ検索を、ヒープフェッチなしで解決します。`(namespace_id) INCLUDE (size)` のカバリングインデックス — `sha256` を読み取らない [ネームスペースレベルのストレージ会計の調整](#namespace-level-storage-accounting-reconciliation) でネームスペース全体を合計するための、より低コストな単一パーティションのインデックスオンリースキャンです。主キーもこのスキャンに使用できますが、合計では使用しない 32 バイトのキーカラムを含むエントリを走査することになります。
-- **`namespace_statistics`**: `(namespace_id)` に対する主キー — ネームスペースごとに 1 つの統計レコード。このテーブルで必要な一意性は主キーだけで正確に満たされるため、同じ単一カラムに別のユニークインデックスは作成しません。追加しても、それ以上の制約は何も強制されません。`(last_reconciled_at, namespace_id)` に対するインデックス — 最後に成功した調整パスが最も過去のネームスペースを選択する、キャッチアップの古さのスキャンと、同じ述語によるバックログ数の計算に使用します。どちらもこのテーブルだけを読み取ります。ここに行がないネームスペースを捉えるために `namespaces` を join するスキャンでは、このインデックスをまったく使用できません。結果の `IS NULL` 選言はインデックス条件ではなく join 後のフィルターになるためです。したがって、このインデックスを使用するクエリは `namespace_statistics` に限定されます。このインデックスは、このドキュメントのほぼすべてのほかのインデックスと異なり、意図的に `namespace_id` を先頭にしません。スキャンはネームスペース内ではなく、テーブル全体を新しさで並べ替えます。また、このテーブルはパーティショニングされていないため、先頭の `namespace_id` はプルーニングにも順序付けにも役立ちません。`namespace_id` はフィルターではなく同順位を決めるカラムとして後ろに置きます。これによりソートキーが一意になり、スキャンをオフセットではなくキーセットでページングできます。特にカラムの作成直後は、すべての行が同じ `'epoch'` デフォルトを共有し、タイムスタンプだけでは順序が決まらないため重要です。また、各クエリがインデックスの 2 カラムだけを選択するため、両方のクエリをカバーし、vacuum 済みのテーブルではどちらもインデックスだけから応答できます。
+- **`namespace_statistics`**: `(namespace_id)` に対する主キー — ネームスペースごとに 1 つの統計レコード。このテーブルで必要な一意性は主キーだけで正確に満たされるため、同じ単一カラムに別のユニークインデックスは作成しません。追加しても、それ以上の制約は何も強制されません。`(last_reconciled_at, namespace_id)` に対するインデックス — 最後に成功した調整パスが最も過去のネームスペースを選択する、キャッチアップの古さのスキャンと、同じ述語によるバックログ数の計算に使用します。どちらもこのテーブルだけを読み取ります。ここに行がないネームスペースを捉えるために `namespaces` を結合するスキャンでは、このインデックスをまったく使用できません。結果の `IS NULL` 選言はインデックス条件ではなく結合後のフィルターになるためです。したがって、このインデックスを使用するクエリは `namespace_statistics` に限定されます。このインデックスは、このドキュメントのほぼすべてのほかのインデックスと異なり、意図的に `namespace_id` を先頭にしません。スキャンはネームスペース内ではなく、テーブル全体を新しさで並べ替えます。また、このテーブルはパーティショニングされていないため、先頭の `namespace_id` はプルーニングにも順序付けにも役立ちません。`namespace_id` はフィルターではなく同順位を決めるカラムとして後ろに置きます。これによりソートキーが一意になり、スキャンをオフセットではなくキーセットでページングできます。特にカラムの作成直後は、すべての行が同じ `'epoch'` デフォルトを共有し、タイムスタンプだけでは順序が決まらないため重要です。また、各クエリがインデックスの 2 カラムだけを選択するため、両方のクエリをカバーし、vacuum 済みのテーブルではどちらもインデックスだけから応答できます。
 
 ハッシュパーティショニングされたテーブルでは、インデックスはパーティションごとにローカルです。インデックス操作は単一のパーティションにスコープされ、テーブル全体をロックしません。
 
@@ -2334,7 +2446,7 @@ digest を配列として束縛せず、派生テーブルとしてベーステ�
   WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = '019a1b2c-0456-7abc-8def-000000000456';
   ```
 
-- [リポジトリレベルの調整](#repository-level-storage-accounting-reconciliation): 単一リポジトリの正確なストレージをフォーマット別に計算します。各先頭 CTE は、`repositories.id` からフォーマット固有のスタブ `id`（`container_repositories`、`maven_repositories`、`npm_repositories`）を解決します。中間層の `*_repository_id` カラムは `repositories.id` ではなく、スタブテーブル自体の `id` を参照します。
+- [リポジトリレベルの調整](#repository-level-storage-accounting-reconciliation): 単一リポジトリの正確なストレージをフォーマット別に計算します。各先頭 CTE は、`repositories.id` からフォーマット固有のスタブ `id`（`container_repositories`、`maven_repositories`、`npm_repositories`、`generic_repositories`）を解決します。中間層の `*_repository_id` カラムは `repositories.id` ではなく、スタブテーブル自体の `id` を参照します。
 
   - **Container**: イメージを走査し、`container_blobs` と `container_manifests` の blob 参照を UNION し、`blob_sha256` で重複排除して、ネームスペースのシャドウテーブルを介して合計します。
 
@@ -2418,6 +2530,30 @@ digest を配列として束縛せず、派生テーブルとしてベーステ�
       ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
     ```
 
+  - **Generic**: npm と同様にパッケージ → バージョン → ファイルを走査します。Generic にはメタデータファイルがないため、パッケージレベルの結合はなく、`blob_sha256` で重複排除します。
+
+    ```sql
+    WITH gr AS (
+      SELECT id
+      FROM generic_repositories
+      WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND repository_id = '019a1b2c-0456-7abc-8def-000000000456'
+    ),
+    uniq_blobs AS (
+      SELECT DISTINCT gf.blob_sha256
+      FROM generic_files gf
+      JOIN generic_versions gv
+        ON gv.namespace_id = gf.namespace_id AND gv.id = gf.generic_version_id
+      JOIN generic_packages gp
+        ON gp.namespace_id = gv.namespace_id AND gp.id = gv.generic_package_id
+      WHERE gp.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+        AND gp.generic_repository_id = (SELECT id FROM gr)
+    )
+    SELECT COALESCE(SUM(bsb.size), 0) AS total_size_bytes
+    FROM uniq_blobs u
+    JOIN blob_storage_blobs_by_namespace bsb
+      ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
+    ```
+
 - [アーティファクトレベル](#artifact-level-storage-accounting): 事前計算済みの Container マニフェストサイズを読み取る（不変、単一行の検索）
 
   ```sql
@@ -2445,7 +2581,7 @@ digest を配列として束縛せず、派生テーブルとしてベーステ�
   LIMIT 50;
   ```
 
-- [アーティファクトレベルの調整](#artifact-level-storage-accounting-reconciliation): カウンターを検証または修正するために、ソースデータから Maven バージョンの正確なサイズを再計算する（通常 4〜15 ファイル、カーディナリティは限定的）。ステップ 1 で `maven_files` からバージョンの重複しない digest を収集し、ステップ 2 で `blob_storage_blobs_by_namespace` からサイズを合計します。リテラルの `namespace_id` が 1 パーティションにプルーニングし、各 digest はその中で index-only に解決されます。
+- [アーティファクトレベルの調整](#artifact-level-storage-accounting-reconciliation): カウンターを検証または修正するために、ソースデータから Maven バージョンの正確なサイズを再計算する（通常 4〜15 ファイル、カーディナリティは限定的）。ステップ 1 で `maven_files` からバージョンの重複しないダイジェストを収集し、ステップ 2 で `blob_storage_blobs_by_namespace` からサイズを合計します。リテラルの `namespace_id` が 1 パーティションにプルーニングし、各ダイジェストはその中でインデックスオンリーに解決されます。
 
   ```sql
   -- Step 1: the version's distinct digests (keyset-paged on blob_sha256)
@@ -2467,13 +2603,35 @@ digest を配列として束縛せず、派生テーブルとしてベーステ�
   WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = '019a1b2c-0456-7abc-8def-000000000456';
   ```
 
-- [アーティファクトレベルの調整](#artifact-level-storage-accounting-reconciliation): ソースデータから npm バージョンの正確なサイズを再計算する（通常、バージョンごとに 1〜3 ファイル。`npm_metadata_files` はパッケージレベルをキーとし、単一バージョンのフットプリントには含まれない）。`blob_storage_blobs_by_namespace` から、バージョンの重複しない digest を JOIN してサイズを合計します。これは調整セクションで説明した読み取りです。
+- [アーティファクトレベルの調整](#artifact-level-storage-accounting-reconciliation): ソースデータから npm バージョンの正確なサイズを再計算する（通常、バージョンごとに 1〜3 ファイル。`npm_metadata_files` はパッケージレベルをキーとし、単一バージョンのフットプリントには含まれない）。`blob_storage_blobs_by_namespace` から、バージョンの重複しないダイジェストを JOIN してサイズを合計します。これは調整セクションで説明した読み取りです。
 
   ```sql
   WITH uniq_blobs AS (
     SELECT DISTINCT nf.blob_sha256
     FROM npm_files nf
     WHERE nf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND nf.npm_version_id = '019a1b2c-0456-7abc-8def-000000000456'
+  )
+  SELECT COALESCE(SUM(bsb.size), 0) AS bytes
+  FROM uniq_blobs u
+  JOIN blob_storage_blobs_by_namespace bsb
+    ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
+  ```
+
+- [アーティファクトレベル](#artifact-level-storage-accounting): 事前計算済みの Generic バージョンのサイズを読み取る（信頼できる唯一の情報源、単一行の検索）
+
+  ```sql
+  SELECT size_bytes
+  FROM generic_versions
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = '019a1b2c-0456-7abc-8def-000000000456';
+  ```
+
+- [アーティファクトレベルの調整](#artifact-level-storage-accounting-reconciliation): ソースデータから Generic バージョンの正確なサイズを再計算します。npm と同じ形状で、Generic には除外するメタデータファイルがないため、より単純です。`(namespace_id, generic_version_id, blob_sha256)` インデックスによって、ダイジェストの収集をインデックスオンリーで実行できます。
+
+  ```sql
+  WITH uniq_blobs AS (
+    SELECT DISTINCT gf.blob_sha256
+    FROM generic_files gf
+    WHERE gf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND gf.generic_version_id = '019a1b2c-0456-7abc-8def-000000000456'
   )
   SELECT COALESCE(SUM(bsb.size), 0) AS bytes
   FROM uniq_blobs u
@@ -2529,5 +2687,5 @@ digest を配列として束縛せず、派生テーブルとしてベーステ�
 
 - [ADR-001: アンカーポイントとしての Organization](001_organizations_as_anchor_point.md) - レジストリが Organization にアンカーする理由
 - [ADR-002: ストレージ重複排除のスコープ](002_storage_deduplication_scope.md) - 重複排除スコープに関する詳細な決定
-<!-- - [ADR-010: データ保持](010_data_retention.md) - ソフト削除と blob クリーンアップのタイミングを含む保持ポリシー -->
+<!-- - [ADR-010: Data Retention](010_data_retention.md) - Retention policies including soft delete and blob cleanup timing -->
 - [Package Registry の共通テーブルの分解](https://gitlab.com/groups/gitlab-org/-/work_items/16000) - 共通のアーティファクト関連データを中央テーブルに保存する際に直面する問題の詳細。

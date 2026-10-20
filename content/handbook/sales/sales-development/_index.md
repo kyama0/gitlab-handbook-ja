@@ -2,9 +2,9 @@
 title: セールス開発
 description: "このページの目的は、セールス開発組織のハンドブック上のホームページとして機能することです。"
 upstream_path: /handbook/sales/sales-development/
-upstream_sha: "59a18d6d88e73b26232d1d6773e5d793fcb29e49"
-lastmod: "2026-09-29T11:24:01-04:00"
-translated_at: "2026-10-05T21:13:10+00:00"
+upstream_sha: "ddc319726d9e3f1cfd7f88faf4798bf31af6bf10"
+lastmod: "2026-10-19T18:59:08+11:00"
+translated_at: "2026-10-20T11:35:31+00:00"
 translator: claude
 stale: false
 ---
@@ -40,7 +40,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 
 | あなたの役割と要望は何ですか | セールス開発組織はどう支援するか |
 | -------------------------- | ------------------------------- |
-| 私はField Marketer で、自分のイベントに人々を招待してほしい | 通常は[こちら](https://gitlab.com/gitlab-com/marketing/sales-development/-/issues/new)で見つけられる `FM-BDR-Collaboration-Template` という Issue テンプレートで概説されている[FM プロセス](/handbook/sales/sales-development/#field-marketing-and-bdr-collaboration-process)で協業しますが、あなたのイベントをより成功させるために常にコラボレーションに熱心です。テンプレートでカバーされていない要望の場合は、`#sales_dev_global` にご記入ください。すぐにサポートに入ります。 |
+| 私は Field Marketer で、自分のイベントに人々を招待してほしい | 通常は[こちら](https://gitlab.com/gitlab-com/marketing/sales-development/-/issues/new)で見つけられる `FM-BDR-Collaboration-Template` という Issue テンプレートで概説されている [FM プロセス](/handbook/sales/sales-development/#field-marketing-and-bdr-collaboration-process)で協業しますが、あなたのイベントをより成功させるために常にコラボレーションに熱心です。テンプレートでカバーされていない要望の場合は、`#sales_dev_global` にご記入ください。すぐにサポートに入ります。 |
 | 私は Account Executive で、アウトバウンド活動のためのアカウントをノミネートしたい | エンドツーエンドのアウトバウンドプロセスは[こちら](/handbook/sales/sales-development/#first-order-fo-outbound-process)です。ワークフローを自動化する最も簡単な方法は、SFDC Account レコードで **BDR Prospecting Status** フィールドを見つけ、`Queued` を選択することです。BDR チームがそれを拾い上げ、アウトバウンドパイプラインのために調査します。 |
 | 私は Account Executive で、自分のテリトリー内のアカウントの状態や見込み客の質をチェックしたい | BDR チームは、すべての関連リソースを 1 か所に集約した [1:1 ダッシュボード](/handbook/sales/sales-development/#salesforce-and-tableau-dashboards-for-team-members) のセットを使用しています。これらは通常、より良いアカウントとテリトリーのプランニングを促進するためにセールスチームとの 1:1 で使用しています。 |
 | 私は Sales Manager で、自分のチームに提供された SAO の品質と進捗を測りたい | 結果を細かい詳細に分解する強力な[パイプライン進捗ダッシュボード](/handbook/sales/sales-development/#salesforce-and-tableau-dashboards-for-leaders) のセットがあります。SDR/BDR チームから AE チームへ案件を引き継ぐための構造化されたパスもあります。 |
@@ -296,7 +296,7 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 
 > **注:** リード変換後、アカウント所有権の割り当ては約 4 時間間隔で実行されます — アカウントオーナーが即座に更新されない場合、それは想定どおりです。
 
-完全なウォークスルーについては、**[この動画](https://www.youtube.com/watch?v=QT-oOceFU6k&ab_channel=GitLabUnfiltered)**を参照してください。
+完全なウォークスルーについては、**[この動画](https://www.youtube.com/watch?v=QT-oOceFU6k&ab_channel=GitLabUnfiltered)** を参照してください。
 
 ### リードのマージ {#merging-leads}
 
@@ -490,7 +490,7 @@ FO アウトバウンドは、親レベルで以前のコマーシャル関係�
 | **Worked in FY Reason** | Worked in FY に遷移したときに自動入力。早期に移動する場合は手動で設定する必要があります（例: `No FO potential`、`Territory change`）。 |
 | **6QA Acceptance Status** | `Accepted` または `Disputed` — 6QA によって AW に自動移動されたアカウントについて**当日中に**設定する必要があります。 |
 | **6QA Dispute Reason** | 6QA Acceptance Status = Disputed のときに必須。SDR がアクティブな opp を持つ場合は `Account in open opportunity` を使用。アカウントの価値の潜在性が低い場合は `Low LAM Dev Count` を使用。 |
-| **Days in Actively Working Status** | Worked in FY に移動する前の Actively Working の自動計算された期間。サイクルタイムと衛生レポートに使用。 |
+| **Days in Actively Working Status** | Worked in FY に移動する前の Actively Working の自動計算された期間。サイクルタイムとデータの管理状態に関するレポートに使用。 |
 
 > **6QA 注:** 6QA アカウントが FO アカウントでない場合、BDR Prospecting Status はまず `SDR Hold` に 14 日間設定される場合があります。opp が作成されない場合、BDR 所有権で `Actively Working / Showing Intent` に自動遷移します。
 
@@ -544,7 +544,7 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 | 財務開示と 10-K レポート | 会社のウェブサイト（Investor Relations） | リーダーシップから直接の戦略的優先事項 — エグゼクティブアウトリーチの強力なアンカー。 |
 | LinkedIn コネクションとペルソナアクティビティ | LinkedIn、6Sense Persona Heatmap | ウォームな紹介経路と調査でアクティブなペルソナ — 最初のシーケンスで優先します。 |
 
-[BDR Account Research テンプレート](https://docs.google.com/document/d/1EN2U8wrUdti4MTxCNceoOlltAmtUt4pqN1GxwRTCnK4/edit?tab=t.0) を使用して調査結果を文書化します。調査は[Claude Sales Dev User Guide](/handbook/sales/sales-development/#claude-sales-dev-bdrsdr-user-guide) を使用して部分的に自動化できます。
+[BDR Account Research テンプレート](https://docs.google.com/document/d/1EN2U8wrUdti4MTxCNceoOlltAmtUt4pqN1GxwRTCnK4/edit?tab=t.0) を使用して調査結果を文書化します。調査は [Claude Sales Dev User Guide](/handbook/sales/sales-development/#claude-sales-dev-bdrsdr-user-guide) を使用して部分的に自動化できます。
 
 ### Claude Sales Dev BDR/SDR ユーザーガイド {#claude-sales-dev-bdrsdr-user-guide}
 
@@ -599,7 +599,7 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 
 純粋な FO プロスペクティングに加えて、BDR は既存のアカウント内および隣接する成長機会を特定し追求することが求められます。
 
-**既存顧客アカウント内の成長:** 追加のビジネスユニットを特定するために AE と戦略的にパートナーを組みます。更新日を会話を拡大するための興味深いイベントとして活用します。
+**既存顧客アカウント内の成長:** 追加のビジネスユニットを特定するために AE と戦略的にパートナーを組みます。更新日を購買判断を促すきっかけとして活用し、会話を広げます。
 
 **親/子/子会社への拡張:**
 
@@ -619,11 +619,11 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 
 ## エンゲージメントルール (RoE) {#rules-of-engagement-roe}
 
-これらのエンゲージメントルールは、Traction ルーティングが割り当てた後、SDR と BDR のリードと案件を誰が所有して扱うべきかを記述します。FY27 リード/コンタクトルーティングロジック（BDR、SDR、AE、キュー）は[Lead & Contact Routing (Traction) ハンドブックページ](https://internal.gitlab.com/handbook/marketing/marketing-ops-and-analytics/marketing-operations/traction/#fy27-lead-routing)で定義されています - この RoE はそのルーティングロジックと一緒に読むべきです。
+これらのエンゲージメントルールは、Traction ルーティングが割り当てた後、SDR と BDR のリードと案件を誰が所有して扱うべきかを記述します。FY27 リード/コンタクトルーティングロジック（BDR、SDR、AE、キュー）は [Lead & Contact Routing (Traction) ハンドブックページ](https://internal.gitlab.com/handbook/marketing/marketing-ops-and-analytics/marketing-operations/traction/#fy27-lead-routing)で定義されています - この RoE はそのルーティングロジックと一緒に読むべきです。
 
 ### SDR インバウンド RoE {#sdr-inbound-roe}
 
-> インバウンドリードを実行する前に、上記の[ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認します。満たす場合は、実行しないでください — ISR キューに保留します。
+> インバウンドリードを実行する前に、上記の [ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認します。満たす場合は、実行しないでください — ISR キューに保留します。
 
 **SMB (0〜250 従業員)**
 
@@ -645,7 +645,7 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 
 ### ISR インバウンド RoE {#isr-inbound-roe}
 
-Inside Sales Representative (ISR) チームは、プロダクトレッドグロースと従来のセールスの交差点に位置します。ISR は、資格のあるトライアルリードへの最初のコンタクトポイントで、Field Sales と複雑な案件でパートナーを組みながら、トランザクションの案件を直接クローズしてトライアルユーザーを顧客に変換することにフォーカスします。
+Inside Sales Representative (ISR) チームは、プロダクトレッドグロースと従来のセールスの交差点に位置します。ISR は、見込み評価済みのトライアルリードの最初の窓口で、Field Sales と複雑な案件でパートナーを組みながら、トランザクションの案件を直接クローズしてトライアルユーザーを顧客に変換することにフォーカスします。
 
 **ISR ルーティングは他のすべての RoE ステップより優先されます。** SDR または BDR ルーティングロジックを適用する前に、リードが以下のすべての基準を満たすかを確認します。満たす場合は、ISR チームに属します。
 
@@ -825,9 +825,9 @@ Opportunity が既存の中央 Opportunity を持つ Large アカウント内の
 
 #### トライアル延長と Ultimate から Premium へのダウングレード {#trial-extensions-and-ultimate-to-premium-downgrades}
 
-トライアル延長を提出するには: [社内リクエストフォーム](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) → **"GitLab L&R internal request for global customers"** → **"Extend a GitLab.com trial"**。SaaS のみ — self-managed では機能しません。
+トライアル延長を申請するには、Zendesk で [L&R Support Internal Requests フォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)を開き、`What category of request?` で `GitLab.com Trial Related > Extend a GitLab.com trial` を選択します。SaaS のみ — self-managed では機能しません。
 
-トライアルを Ultimate から Premium にダウングレードするには: 同じフォーム → **"Change existing GitLab.com Trial plan"**。
+トライアルを Ultimate から Premium にダウングレードするには、同じフォームで `GitLab.com Trial Related > Change existing GitLab.com Trial plan` を選択します。
 
 ### 引き継ぎミーティングと AE への Opportunity の引き継ぎ {#handoff-meetings-and-passing-opportunities-to-aes}
 
@@ -860,7 +860,7 @@ Joint IQM は、事前に合意された Actively Working アカウントから�
 
 1. AE のカレンダーに直接 Outreach を介してスケジュール — 15 分の Discovery Call 形式。
 2. SFDC opportunity を作成し、事前決定された調査をログ記録。
-3. AE とアライメントし、相互のコマンドプランを構築。キックオフ時に、BDR の調査と興味深いイベントを要約。見込み客が彼らの状況を認めた後、事前に合意された発見構造を続行。
+3. AE とアライメントし、相互のコマンドプランを構築。キックオフ時に、BDR の調査と購買判断を促すきっかけを要約。見込み客が彼らの状況を認めた後、事前に合意された発見構造を続行。
 
 #### IQM のスケジュール — チェックリスト {#scheduling-iqms--checklist}
 
@@ -1181,7 +1181,7 @@ Sales Navigator 経由でのリード/コンタクトの更新は許可されて
 
 ### 6Sense {#6sense}
 
-6Sense は、私たちのインテントデータと ABM プラットフォームです。購買シグナルと ICP フィットに基づいて、市場にいるアカウントを表示します。新しいセグメントやアラートをリクエストするには、[MktgOps リクエストフォーム](https://form.asana.com/?k=1i4lL5h0RLzfTqNWBTH84Q&d=306855239930259) を使用してください。
+6Sense は、私たちのインテントデータと ABM プラットフォームです。購買シグナルと ICP への適合性に基づいて、購入を検討中のアカウントを表示します。新しいセグメントやアラートをリクエストするには、[MktgOps リクエストフォーム](https://form.asana.com/?k=1i4lL5h0RLzfTqNWBTH84Q&d=306855239930259) を使用してください。
 
 #### 6QA 自動化 {#6qa-automations}
 
@@ -1311,7 +1311,7 @@ BDR Director として、最初に主要 DRI としてタグ付けされます�
 
 #### Status 関連の 6Sense レポート {#status-related-6sense-reports}
 
-テンプレートは[6Sense セグメントリスト](https://gitlab.abm.6sense.com/segments/manage)の #5 フォルダにあります。チーム用にクローンして編集します。
+テンプレートは [6Sense セグメントリスト](https://gitlab.abm.6sense.com/segments/manage)の #5 フォルダにあります。チーム用にクローンして編集します。
 
 **[Currently Actively Working Accounts Template](https://gitlab.abm.6sense.com/segments/segment/495284/accounts/?mode=edit&segment_type=6sense_network)**
 
@@ -1414,15 +1414,15 @@ President's Club への資格と立場は、各チームメンバー個別の報
 
 チームメンバーに通知された後の期待:
 
-→ 月 1: 80% 達成 + [Our Three Pillars](/handbook/sales/sales-development/#our-three-pillars) の遵守
+→ 月 1: 80% 達成 + [私たちの三つの柱](/handbook/sales/sales-development/#our-three-pillars)の遵守
 
-→ 月 2: 90% 達成 + [Our Three Pillars](/handbook/sales/sales-development/#our-three-pillars) の遵守
+→ 月 2: 90% 達成 + [私たちの三つの柱](/handbook/sales/sales-development/#our-three-pillars)の遵守
 
-→ 月 3 以降: 100% 達成 + [Our Three Pillars](/handbook/sales/sales-development/#our-three-pillars) の遵守
+→ 月 3 以降: 100% 達成 + [私たちの三つの柱](/handbook/sales/sales-development/#our-three-pillars)の遵守
 
 継続的な不足 → 正式な警告 → 解雇を含む懲戒処分の可能性。
 
-### Our Three Pillars {#our-three-pillars}
+### 私たちの三つの柱 {#our-three-pillars}
 
 | 柱 | 主な期待 |
 | ------ | ---------------- |
@@ -1601,7 +1601,7 @@ Sales Dev Ops チームは、AWA アカウントリストの管理を支援す�
 
 ### マネージャーツール認定 {#manager-tool-certification}
 
-エンドツーエンドのプロセスとツールウォークスルーで、マネージャーに期待されるすべてのインバウンドとアウトバウンドのテックスタック知識をカバーします。完全な動画プレイリストは[Unfiltered プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KpFZmMd8LLfqkcXr9lotTAb)。略式ノートは[こちら](https://docs.google.com/document/d/1chOoHvwk-dSsAwoloZhdGiJJoFz0yjjq07kOYmzQUvQ/edit)。期待されるマネージャー知識の質問と合格基準は[こちら](https://docs.google.com/spreadsheets/d/12YbsXUN6-ZeAFHjQa8YTdL1sNIPKiCh8QJmf__IAZkY/edit?gid=690387328#gid=690387328)。
+エンドツーエンドのプロセスとツールウォークスルーで、マネージャーに期待されるすべてのインバウンドとアウトバウンドのテックスタック知識をカバーします。完全な動画プレイリストは [Unfiltered プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KpFZmMd8LLfqkcXr9lotTAb)。略式ノートは[こちら](https://docs.google.com/document/d/1chOoHvwk-dSsAwoloZhdGiJJoFz0yjjq07kOYmzQUvQ/edit)。期待されるマネージャー知識の質問と合格基準は[こちら](https://docs.google.com/spreadsheets/d/12YbsXUN6-ZeAFHjQa8YTdL1sNIPKiCh8QJmf__IAZkY/edit?gid=690387328#gid=690387328)。
 
 ### 一般的なリーダーシップ原則 {#general-leadership-principles}
 
@@ -1631,7 +1631,7 @@ Manager Attention Needed ボードを、チームが BDR プロセスにどう�
 
 ### 1:1 アカウントとリードレベルのダッシュボードコーチングガイダンス {#11-account-and-lead-level-dashboard-coaching-guidance}
 
-以下の表は、SFDC と Tableau の 1:1 ダッシュボードをどう知覚し実行するかを構造化するのに役立ちます。これらは[アウトバウンド SLA](/handbook/sales/sales-development/#outbound-slas-and-kpis) と[こちらの動画](https://drive.google.com/file/d/1mOUGPVqhogmT0-mmqyhtiVKs4wmdHEZ_/view?usp=sharing)、[こちらの動画](https://drive.google.com/file/d/1L3a6-vpG562rY0u4Yve4d_y1148MIvNG/view?usp=sharing)に接続します。この[5 分の動画](https://drive.google.com/file/d/1dx57o5nu9xeHsvHUOC2XYryjxYmfdHvv/view?usp=sharing)はこれらのダッシュボードの目的を説明し、この[3 分の動画](https://drive.google.com/file/d/1Sf6vFSXb8iNaSGLGv-TtasuPS3xfz-Ni/view?usp=drive_link)は実用的なユースケースを順を追って説明します。
+以下の表は、SFDC と Tableau の 1:1 ダッシュボードをどう知覚し実行するかを構造化するのに役立ちます。これらは [アウトバウンド SLA](/handbook/sales/sales-development/#outbound-slas-and-kpis) と[こちらの動画](https://drive.google.com/file/d/1mOUGPVqhogmT0-mmqyhtiVKs4wmdHEZ_/view?usp=sharing)、[こちらの動画](https://drive.google.com/file/d/1L3a6-vpG562rY0u4Yve4d_y1148MIvNG/view?usp=sharing)に接続します。この [5 分の動画](https://drive.google.com/file/d/1dx57o5nu9xeHsvHUOC2XYryjxYmfdHvv/view?usp=sharing)はこれらのダッシュボードの目的を説明し、この [3 分の動画](https://drive.google.com/file/d/1Sf6vFSXb8iNaSGLGv-TtasuPS3xfz-Ni/view?usp=drive_link)は実用的なユースケースを順を追って説明します。
 
 | ダッシュボード | コンポーネント | 期待/アクション | コーチング機会 |
 | --------- | --------- | ------------------ | -------------------- |
@@ -1647,7 +1647,7 @@ Manager Attention Needed ボードを、チームが BDR プロセスにどう�
 | 1:1 Account Dashboard | 16. Individuals in flight | 現在 Outreach シーケンスにある見込み客。さらなるアクションのためにレビュー。 | 特定のアカウントのためにシーケンスにさらに多くの個人を追加することが理にかなっているかを検討。 |
 | 1:1 Account Dashboard | 17. Past Actively Worked Accounts | あなたのテリトリーで以前にアウトバウンドされたアカウント。再エンゲージメントを正当化するものはありますか？ | アウトバウンドは多くの場合変換に時間がかかります — 新しいインテントデータは再エンゲージメントタイミングの強いシグナルです。 |
 | 1:1 Account Dashboard | 18. CE User Accounts | Community Edition GitLab インスタンスを持つ非顧客アカウント。使用パターンと成長指標をレビュー。 | CE ユーザーはすでに GitLab を選択しています — コマーシャルライセンスなしでの高い使用量は、最も強力な FO トリガーの 1 つです。 |
-| 1:1 Account Dashboard | 20. Accounts with customers in hierarchy | GitLab を使用する他のビジネスユニットを持つ大きな親会社の一部である非顧客アカウント | 他の既存顧客に関する情報を使用して、非顧客アカウントが対応するカウンターパートと同様の課題に直面している可能性が高いため、それらに対する興味深いイベントを構築できます。 |
+| 1:1 Account Dashboard | 20. Accounts with customers in hierarchy | GitLab を使用する他のビジネスユニットを持つ大きな親会社の一部である非顧客アカウント | 非顧客アカウントは既存顧客と同様の課題に直面している可能性が高いため、他の既存顧客に関する情報を使用して、非顧客アカウントが購入を検討する動機を作れます。 |
 | Tableau Dashboard | Inbound Interest Dashboard | アカウントレベルダッシュボードを補完。事前構築されたレポートよりも柔軟性を持ってデータベースを探索するためにフィルターを使用。 | BDR が事前構築されたレポートロジックの外でデータベースを探索したい場合に有用。 |
 | Tableau Self-Dashboard | Self-Managed Instances | 見込み客またはクライアントによって自己デプロイされたインスタンスを追跡。 | アップグレードの可能性と Free-to-Paid 機会を特定。 |
 | Prospect 360 | Prospect 360 Dashboard | SFDC、6Sense、Qualified、Marketo のデータを 1 つのビューに統合した[ダッシュボード](https://internal.gitlab.com/handbook/enterprise-data/data-governance/data-catalog/customer-intelligence/#prospect-360)。[イネーブルメント動画はこちら。](https://www.youtube.com/watch?v=iYnSiISeXYQ) | アカウントアクティビティ、エンゲージメント履歴、リードインタラクションの全体的なビュー — アカウントレベルのプロスペクティングの素晴らしい開始点。 |
@@ -1661,7 +1661,7 @@ Manager Attention Needed ボードを、チームが BDR プロセスにどう�
 | Pipeline Dashboard | 3. Calls Per Outcome This Week | Golden Call 時間中の週 500 通話以上。アウトカムは SFDC にログ記録。 | 接続率は高いがコンバージョンが低い = メッセージングまたは認定の問題。接続率が低い = タイミングまたはコンタクトデータ品質の問題。 |
 | Pipeline Dashboard | 4. Unworked New Lead MQLs | 空またはほぼ空であるべきです。新規 MQL は 2 営業時間内に実行する必要があります。 | ここでの SLA 違反はインバウンドプロセスの破綻を示します — より速い応答を要求する前にルート原因を調査。 |
 | Pipeline Dashboard | 5. Unworked New Contact MQLs | リード MQL と同じ — 2 営業時間内に実行。1 日数回クリア。 | コンタクト MQL は既存アカウントからの拡張機会を表すことが多いです。遅延した応答は特にコストが高いです。 |
-| Pipeline Dashboard | 6. Leads In-Flight With Past Due Tasks | タスクの 10% 以下のみが保留中。90% は適切に完了され、スキップされていない。 | タスクが山積みになっていることは、パイプラインの衛生状態が悪いことを示します。シーケンスを使用するのではなく手動タスクにコミットしすぎていること、または日次プランニングが不十分であることが原因です。 |
+| Pipeline Dashboard | 6. Leads In-Flight With Past Due Tasks | タスクの 10% 以下のみが保留中。90% は適切に完了され、スキップされていない。 | タスクが山積みになっていることは、パイプラインの管理が不十分であることを示します。シーケンスを使用するのではなく手動タスクにコミットしすぎていること、または日次プランニングが不十分であることが原因です。 |
 | Pipeline Dashboard | 7. Overdue UserGems Tracked Leads | 作成から 48 時間以内にレビューおよび実行。標準 RoE が適用されます。 | UserGems のリードは効果的なウィンドウが限られています — 長く置かれるほど、競合が先に到達する可能性が高くなります。 |
 | Pipeline Dashboard | 8. Qualifying Leads Without Next Steps | Qualifying のすべてのリードにはアクティブシーケンス、アクティブタスク、または未来のミーティングが必要です。 | 停滞した認定リードは、認定の会話が曖昧であることを示します。コール終了前に明確な次のステップを設定するようコーチングします。 |
 | Pipeline Dashboard | 9. Qualifying Contacts Without Next Steps | 認定リードと同じ要件。週次でレビューおよびクリア。 | 次のステップのないコンタクトは、UFC が効果的に使用されていなかったことを示すことが多いです。 |
@@ -1713,7 +1713,7 @@ BDR および SDR として、オンボーディングはマーケティング�
 
 1. People Team が一般的な GitLab オンボーディング Issue を開始します。初日に、特定のオンボーディング Issue へのリンクが含まれたウェルカムメールを受け取ります。
 2. 3 日以内: [Command of the Message (CoM)](/handbook/sales/command-of-the-message/) e ラーニング教材へのアクセス。
-3. 2 週目: Sales Enablement Team が SQS のカレンダー招待と、Google Classroom の[Sales Quick Start learning path](/handbook/sales/onboarding/sales-learning-path/)へのアクセスを送信。
+3. 2 週目: Sales Enablement Team が SQS のカレンダー招待と、Google Classroom の [Sales Quick Start learning path](/handbook/sales/onboarding/sales-learning-path/)へのアクセスを送信。
 4. SQS 参加後 1 週間以内: 13 週間の CoM Fast Start プログラムへのアクセス。
 5. 最初の数週間: Sales Development Technical Development トレーニングへのアクセス。最初の 180 日以内に完了する必要があります — SDR の[進行](/handbook/sales/sales-development/#graduating-from-sales-development-onboarding) に直接結びついています。
 
@@ -1773,4 +1773,4 @@ XDR が長期にわたって不在になる場合は、適切なプロセスに�
 
 **マネージャーオフボーディングチェックリスト:** People チームの[オフボーディング Issue](/handbook/people-group/offboarding/#offboarding) のすべての 'Manager' タスクを完了。質問？`#managers` Slack チャネルを使用するか、Compass 経由で People Operations チームに連絡してください。
 
-**Sales Dev 引き継ぎ Issue:** チームメンバーが GitLab を離れる、Sales Dev 組織を離れる、または別の BDR チームに転送される場合、退職するチームのマネージャーは [Sales Dev Handover Issue](https://gitlab.com/gitlab-com/marketing/sales-development/-/blob/main/.gitlab/issue_templates/Exit_handover_template.md?ref_type=heads) を作成する必要があります。
+**Sales Dev 引き継ぎ Issue:** チームメンバーが GitLab を離れる、Sales Dev 組織を離れる、または別の BDR チームに転送される場合、そのチームメンバーの所属元チームのマネージャーは、[Sales Dev Handover Issue](https://gitlab.com/gitlab-com/marketing/sales-development/-/blob/main/.gitlab/issue_templates/Exit_handover_template.md?ref_type=heads)を作成する必要があります。

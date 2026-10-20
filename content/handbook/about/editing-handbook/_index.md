@@ -2,9 +2,9 @@
 title: "ハンドブックの編集"
 description: "編集方法を選び、変更をプレビューして、ハンドブックのマージリクエストを準備します。"
 upstream_path: /handbook/about/editing-handbook/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-17T22:07:50+02:00"
-translated_at: "2026-09-20T03:36:02+00:00"
+upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
+lastmod: "2026-10-15T21:00:48+02:00"
+translated_at: "2026-10-20T10:47:04Z"
 translator: codex
 stale: false
 ---
@@ -448,10 +448,13 @@ Give me the exact local page URL.
 文章の更新、ページの移動、画像の追加、ページメンテナーの変更に、これらの例を使用してください。
 作業に合う手順やエージェント向けプロンプトを選びます。
 
-### チームページに自分を追加する {#add-yourself-to-the-team-page}
+### 自分のチームメンバーデータを更新する {#add-yourself-to-the-team-page}
 
-[チームページのガイド](edit-team-page.md)を使ってプロフィールを編集するか、
-[エージェントに YAML エントリのレビューと更新を依頼](edit-team-page.md#ask-an-agent-for-help)してください。
+[www-gitlab-com プロジェクト](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person)にある
+チームメンバーデータのエントリは、Workday の情報で毎日更新されます。Product と Engineering のワークフローはこのデータを利用しており、たとえば
+レビュアールーレット、コードオーナーレビュー、ハンドブックの DRI 一覧などがあります。自分のエントリを確認して更新するには、
+[チームメンバーデータの編集ガイド](edit-team-data.md)を参照するか、
+[エージェントに YAML エントリのレビューと更新を依頼](edit-team-data.md#ask-an-agent-for-help)してください。
 
 ### Markdown の書式設定 {#markdown-formatting}
 
@@ -626,7 +629,7 @@ section-dir/
 
 最近作成したマージリクエストがコミュニティからの貢献としてラベル付けされた場合、チームメンバーディレクトリの自分のエントリにある GitLab ユーザー名を、業務で使用する GitLab アカウントと一致するように更新すると、今後の誤ったラベル付けを解消できます。
 
-[チームページの編集手順](edit-team-page.md)に従って自分のチームページのエントリファイルを探し、`gitlab` 属性（通常は 10 行目）を、業務で使用する GitLab.com ユーザー名と**完全に一致する**ように更新してください。
+[チームメンバーデータの編集ガイド](edit-team-data.md)に従って自分のチームメンバーデータのエントリファイルを探し、`gitlab` 属性（通常は 10 行目）を、業務で使用する GitLab.com ユーザー名と**完全に一致する**ように更新してください。
 
 ## マージリクエストでの作業 {#working-with-merge-requests}
 
