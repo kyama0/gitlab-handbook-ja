@@ -1,11 +1,11 @@
 ---
 title: Package グループ - GitLab 品質保証エンドツーエンドテスト
 upstream_path: /handbook/engineering/devops/package/quality/
-upstream_sha: bb4e4d0fc1a355c00a1d82b1528ff729c83af189
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+translated_at: "2026-10-20T20:57:57Z"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-10-20T14:59:33+02:00"
 ---
 
 ## テスト戦略
@@ -31,7 +31,7 @@ Package グループは E2E テストに [GitLab QA](https://gitlab.com/gitlab-o
 1. Container Registry
 
    ```ruby
-   # コンテナイメージの公開
+   # Publishing a container image
    Resource::Container::Image.fabricate_via_api! do |image|
      image.name = 'my-image'
      image.repository_name = 'my-project'
@@ -41,7 +41,7 @@ Package グループは E2E テストに [GitLab QA](https://gitlab.com/gitlab-o
 2. Package Registry
 
    ```ruby
-   # npm パッケージの公開
+   # Publishing an npm package
    Resource::Package::Npm.fabricate_via_api! do |package|
      package.name = 'my-package'
      package.version = '1.0.0'
@@ -59,7 +59,7 @@ Package グループは E2E テストに [GitLab QA](https://gitlab.com/gitlab-o
    export WEBDRIVER_HEADLESS=false
    ```
 
-2. GDK が[ループバックインターフェース](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/master/doc/index.md#create-loopback-interface-for-gdk)を使用していることを確認する
+2. GDK が[ループバックインターフェース](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/local_network/#create-loopback-interface)を使用していることを確認する
 3. ホスト名をループバックインターフェースにマップする
 
 #### ファイルアップロードのテスト
@@ -105,17 +105,17 @@ Omnibus と Container Registry を使った一時的なデモの場合:
 1. ストレージバックエンドの接続
 
    ```bash
-   # GCS 認証情報の確認
+   # Check GCS credentials
    gsutil ls gs://your-bucket
-   
-   # S3 アクセスの検証
+
+   # Verify S3 access
    aws s3 ls s3://your-bucket
    ```
 
 2. レジストリ認証
 
    ```bash
-   # レジストリへのログインテスト
+   # Test registry login
    docker login registry.gitlab.com
    ```
 

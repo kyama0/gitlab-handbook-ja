@@ -2,11 +2,11 @@
 title: Environments グループ
 description: "Environments グループは DevOps ライフサイクルの Deploy ステージにおける Environments を担当しています。"
 upstream_path: /handbook/engineering/devops/runner/environments/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-06T00:00:00Z"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+translated_at: "2026-10-20T20:57:57Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
+lastmod: "2026-10-20T14:59:33+02:00"
 ---
 
 ## ビジョン
@@ -74,7 +74,7 @@ Ops サブ部門のメンバーとして、[私たちの](https://about.gitlab.c
 
 ミーティング形式:
 
-- ミーティングの前後に、チームメンバーは口頭で伝えたいことをミーティングに添付されたメモに記入します。
+- ミーティングの前および進行中に、チームメンバーは口頭で伝えたいことをミーティングに添付されたメモに記入します。
 - 参加したいチームメンバーのために 1〜2 分待ってから、準備ができたら録画を開始します。
 - 録画中は、ドキュメント内の各ポイントを確認します。
 - 誰でも議論を進行できます。EM または PM がいる場合は、彼らが口火を切ります。
@@ -179,7 +179,7 @@ EM は承認された Issue を `~workflow::planning breakdown` から `~workflo
 
 #### チームドメインの制限
 
-Environments チームの規模は現在、フィーチャーカテゴリの全スコープを完全にサポートするには小さすぎます。私たちの優先度を示し、意味のある作業を行うために、**クリティカルメンテナンス** のみを行うフィーチャーカテゴリのリストを管理しています。
+Environments チームの規模は現在、機能カテゴリの全スコープを完全にサポートするには小さすぎます。私たちの優先度を示し、意味のある作業を行うために、**クリティカルメンテナンス** のみを行う機能カテゴリのリストを管理しています。
 
 - Auto DevOps
 - Feature Flags
@@ -233,7 +233,7 @@ Issue に重み 1 を与えることで、「この Issue を出荷可能な作�
 私たちの目標は継続的デリバリーモデルに移行することであり、チームが定期的にタスクを完了し、優先順位付けされたバックログ Issue から作業を続けていくことです。チームメンバーは自分の作業をデフォルトで自己スケジュールします。
 
 - チームメンバーは `workflow:ready for development` カラムで現在のマイルストーンの Issue を [マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/4176401?not[label_name][]=environments%3A%3Aparked) から自己割り当てします。
-- `~Deliverable` Issue は他のすべての作業より優先されます。これらは各マイルストーンの主要な焦点であり、[say-do 比率](#say-do-ratio) に影響します。
+- `~Deliverable` Issue は他のすべての作業より優先されます。これらは各マイルストーンの主要な焦点であり、[say-do ratio（言ったことを必ずやる比率）](#say-do-ratio)に影響します。
 - チームメンバーが割り当てられた Issue を完了したら、マイルストーンボードに移動して現在のマイルストーンの次の未割り当て Issue を自己割り当てすることが期待されます。
 - 現在のマイルストーンに Issue がなくなったら、エンジニアは次の未割り当て `workflow:ready for development` Issue を自己割り当てすることが期待されます。
 - ボード上の Issue は重要度に基づいて優先順位が付けられています（リストの上位にあるほど優先度が高い）。この順序はプロダクトマネージャーが設定します。
@@ -244,7 +244,7 @@ Issue に重み 1 を与えることで、「この Issue を出荷可能な作�
 
 目標を精力的に追求しながら、エンジニア個人が共鳴する作業の重要性も認識しています。これを促進するために、"~Environments::EngineeringChoice" ラベルを導入しました。仕組みは以下のとおりです。
 
-1. **マイルストーンでの選択**: 各マイルストーン計画において、エンジニアは特に興味深い、または価値があると感じる Issue を最大 5 件（グループ全体で合計）選択し、"~Environments::EngineeringChoice" ラベルを付けることが奨励されます。これらの Issue は GitLab プロダクトや開発者体験を向上させるものであればよく、`~"group::environments"` ドメインである必要はありません。
+1. **マイルストーンでの選択**: 各マイルストーン計画において、エンジニアは特に興味深い、または価値があると感じる Issue を最大 5 件（グループ全体で合計）選択し、"~Environments::EngineeringChoice" ラベルを付けることが奨励されます。これらの Issue は GitLab プロダクトや開発者体験を向上させるものであればよく、~"group::environments" ドメインである必要はありません。
 1. **マイルストーンごとの上限**: 集中力を維持するために、1 つのマイルストーン内で "~Environments::EngineeringChoice" ラベルが付けられる Issue は 5 件を超えてはなりません。
 1. **Deliverable の後の優先度**: すべての必須 ~Deliverable が完了したら、次の優先度は "~Environments::EngineeringChoice" ラベルの付いた Issue に対処することです。
 1. **リファインメント済み Issue のみ**: "~Environments::EngineeringChoice" ラベルを適用する前に、Issue は `worfklow::ready for development` であり、重みが必要です。
@@ -276,7 +276,7 @@ Issue に重み 1 を与えることで、「この Issue を出荷可能な作�
 
 問題点:
 
-- 複数部分のバグに対して明確な Issue 構造がないと、チームが助けやすく計画しやすい方法がわかりません。この困難さは say-do 比率に悪影響を与える可能性があります。
+- 複数部分のバグに対して明確な Issue 構造がないと、チームが助けやすく計画しやすい方法がわかりません。この困難さは say-do ratio に悪影響を与える可能性があります。
 
 複数部分のバグ Issue 管理のベストプラクティス:
 
@@ -316,15 +316,15 @@ Issue に重み 1 を与えることで、「この Issue を出荷可能な作�
 - レポーターが GitLab チームメンバーの場合、影響を受けるユーザー数や特定の機能など、Issue の影響に関する洞察があるか確認して解決の優先度付けに役立てます。
 - 実際にはバグではない可能性があると思う場合は PM と連携します。
 
-#### Say-do 比率 {#say-do-ratio}
+#### say-do ratio {#say-do-ratio}
 
 チームは `say-do` 比率でコミットメントを追跡します。2 つの指標が重要です: **say-do** と **reprioritized say-do**
 
 - Say-do は `~Deliverable` Issue **のみ** に適用されます。
 - 毎月 17 日までに、EM によって次のマイルストーンの Issue に `~Deliverable` ラベルが適用されます。
 - 各エンジニアに対して 1 件の `~Deliverable` を割り当てることを大まかな目標とし、マイルストーンごとに変動することがあります。
-- その時点で `~Deliverable` ラベルが付いている Issue は *「デリバリーを約束した」* とみなされ、say-do 比率の一部になります。
-- マイルストーン中に `~Deliverable` ラベルが削除されるか、Issue がマイルストーンから外れた場合、その Issue は `reprioritized say-do` 指標にはカウントされませんが、`say-do` にはカウントされます。
+- その時点で `~Deliverable` ラベルが付いている Issue は *「デリバリーを約束した」* とみなされ、say-do ratio の一部になります。
+- マイルストーン中に `~Deliverable` ラベルが削除されるか、Issue がマイルストーンから外れた場合、その Issue は `reprioritized say-do` 指標には**カウントされません**が、`say-do` にはカウントされます。
 
 私たちは 100% の `re-prioritized say-do` と少なくとも 80% の `say-do` を目標としています。
 
@@ -429,11 +429,11 @@ DRI は代わりにサポートのために [Observability チーム](/handbook/
 ### 例
 
 ```markdown
-## 非同期ステータスアップデート
+## Async status update
 
-- 完了率: 80%
-- 自信度: 90%
-- メモ: 明日レビューに入れる見込み
+- Complete: 80%
+- Confidence: 90%
+- Notes: expecting to go into review tomorrow
 ```
 
 非同期アップデートの追加と追跡の作業を簡略化するには [TalTal](https://taltal-new.netlify.app/) を使用できます。
@@ -495,9 +495,9 @@ GitLab Issue をできるだけ多く使用することが、透明性と効率�
 
 ### Auto DevOps へのコントリビューションに役立つリンク
 
-- [ヒントとトラブルシューティング](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/kubernetes/tips_and_troubleshooting.md)
-- [便利なコマンド](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/kubernetes/useful_commands.md)
-- [低速接続での作業方法](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/kubernetes/tips_and_troubleshooting.md#qa)
+- [ヒントとトラブルシューティング](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/kubernetes/tips_and_troubleshooting/)
+- [便利なコマンド](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/kubernetes/useful_commands/)
+- [低速接続での作業方法](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/kubernetes/tips_and_troubleshooting/#qa)
 - [開発目的でのプレミアム機能の有効化](/handbook/engineering/workflow/developer-onboarding/#working-on-gitlab-ee-developer-licenses)
 - [完全な Auto DevOps パイプラインの Grafana クエリ](https://dashboards.gitlab.net/goto/Jn7bY_aHg?orgId=1)
 

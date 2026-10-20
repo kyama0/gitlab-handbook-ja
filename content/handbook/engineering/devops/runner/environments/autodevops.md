@@ -2,11 +2,11 @@
 title: Auto DevOps
 description: "Auto DevOps はDevOps ベストプラクティスの自動適用を可能にするテクノロジーです。"
 upstream_path: /handbook/engineering/devops/runner/environments/autodevops/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:19:21+09:00"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+translated_at: "2026-10-20T20:57:57Z"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-10-20T14:59:33+02:00"
 ---
 
 ## 現在のエンドツーエンドテスト
@@ -25,7 +25,7 @@ qa ディレクトリの [`qa/specs/features/browser_ui/7_configure`](https://gi
 `Configure AutoDevOps Templates template: express|rails|spring works with Auto DevOps` テストは [`:staging`](https://ops.gitlab.net/gitlab-org/quality/staging/-/pipelines) 環境のみで実行するようにタグ付けされており、そのため以下で実行されます。
 
 - [`staging`](https://ops.gitlab.net/gitlab-org/quality/staging/-/pipelines)
-    - `qa-triggers-browser_ui-7_configure`
+    -`qa-triggers-browser_ui-7_configure`
 
 #### 隔離済みテスト
 
@@ -36,7 +36,7 @@ qa ディレクトリの [`qa/specs/features/browser_ui/7_configure`](https://gi
 - [`staging`](https://ops.gitlab.net/gitlab-org/quality/staging/-/pipelines)
   - `qa-triggers-browser_ui-quarantine`
 
-## テスト実行のための GDK 設定
+## テスト実行のための GDK 設定 {#configure-your-gdk-to-run-the-tests}
 
 [GKE クラスターで GDK を使用する方法](https://gitlab.com/gitlab-org/gitlab-development-kit/-/tree/master/doc/howto/kubernetes#use-gdk-with-a-gke-cluster) に関するドキュメントに従ってください。
 
@@ -44,7 +44,7 @@ qa ディレクトリの [`qa/specs/features/browser_ui/7_configure`](https://gi
 
 ### テストの実行
 
-`create_project_with_auto_devops_spec` テストを実行するには、GKE クラスターを実行するための GDK が設定されていることを確認し（[上記の手順](#テスト実行のための-gdk-設定)を参照）、`../gitlab/qa/` ディレクトリからテストを呼び出してください。
+`create_project_with_auto_devops_spec` テストを実行するには、GKE クラスターを実行するための GDK が設定されていることを確認し（[上記の手順](#configure-your-gdk-to-run-the-tests)を参照）、`../gitlab/qa/` ディレクトリからテストを呼び出してください。
 
 例: `CHROME_HEADLESS=true bundle exec bin/qa Test::Instance::All https://gdk.test:3000 -- qa/specs/features/browser_ui/7_configure/auto_devops/create_project_with_auto_devops_spec.rb --tag orchestrated --tag kubernetes`
 
@@ -59,9 +59,8 @@ qa ディレクトリの [`qa/specs/features/browser_ui/7_configure`](https://gi
 
 ### Auto DevOps へのコントリビューションに役立つリンク
 
-- [ヒントとトラブルシューティング](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/master/doc/howto/kubernetes/tips_and_troubleshooting.md)
-- [便利なコマンド](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/master/doc/howto/kubernetes/useful_commands.md)
-- [低速接続での作業方法](https://gitlab.com/gitlab-org/gitlab-development-kit/blob/master/doc/howto/auto_devops/tips_and_troubleshooting.md#qa)
+- [ヒントとトラブルシューティング](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/kubernetes/tips_and_troubleshooting/)
+- [便利なコマンド](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/kubernetes/useful_commands/)
 - [開発目的でのプレミアム機能の有効化](/handbook/engineering/workflow/developer-onboarding/#working-on-gitlab-ee-developer-licenses)
 - [完全な Auto DevOps パイプラインの Grafana クエリ](https://dashboards.gitlab.net/goto/Jn7bY_aHg?orgId=1)
 

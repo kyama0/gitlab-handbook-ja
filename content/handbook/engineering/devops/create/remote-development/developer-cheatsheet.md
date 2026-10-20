@@ -2,11 +2,11 @@
 title: 開発者チートシート
 description: Editor チームの開発者に役立つ情報。
 upstream_path: /handbook/engineering/devops/create/remote-development/developer-cheatsheet/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:03:07+09:00"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+translated_at: "2026-10-20T20:57:57Z"
 translator: claude
 stale: false
-lastmod: "2026-06-29T08:59:00-04:00"
+lastmod: "2026-10-20T14:59:33+02:00"
 ---
 
 ## 便利なコマンド
@@ -45,7 +45,7 @@ lastmod: "2026-06-29T08:59:00-04:00"
 
 RubyMine で QA スペックを実行するには、カスタム rspec ランナー設定を使用し（ガター内の矢印の隣にある例を右クリック）、カスタム RSpec ランナースクリプトとして `qa/bin/rubymine` スクリプトを設定し、作業ディレクトリを `qa` に設定してください。
 
-このプロセスの詳細な手順については <https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/end_to_end_test_configuration.md#starting-tests-using-the-rubymine-gutter> を参照してください。
+このプロセスの詳細な手順については <https://gitlab-org.gitlab.io/gitlab-development-kit/howto/end_to_end_test_configuration/#starting-tests-using-the-rubymine-gutter> を参照してください。
 
 ### gitlab-com/www-gitlab-com
 
@@ -64,7 +64,7 @@ RubyMine で QA スペックを実行するには、カスタム rspec ランナ
 
 ### GDK で Web IDE ターミナルを実行する
 
-- GDK ドキュメント: [Web IDE ターミナルの設定方法](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/web_ide_terminal_gdk_setup.md)
+- GDK ドキュメント: [Web IDE ターミナルの設定方法](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/web_ide_terminal_gdk_setup/)
 - YouTube: [Web IDE ターミナル - GDK を使った設定（23:44）](https://www.youtube.com/watch?v=MhwmqqaREw0)
 
 ### GDK のデバッグ
@@ -72,8 +72,8 @@ RubyMine で QA スペックを実行するには、カスタム rspec ランナ
 #### ログデバッグ
 
 - デバッグメッセージを出力したい場合:
-  - `puts` または `p` は `gdk tail rails` にのみ表示されます
-  - `logger.info('...')` は `tail -f log/development.log` にのみ表示されます
+  - `puts` または `p` は `gdk tail rails` に**のみ**表示されます
+  - `logger.info('...')` は `tail -f log/development.log` に**のみ**表示されます
 
 #### RubyMine デバッグ
 

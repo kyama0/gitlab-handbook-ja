@@ -2,9 +2,9 @@
 title: "Create:Source Code Hardening and Modernization チーム"
 description: "Source Code の構造的なセキュリティとフロントエンドの問題に対処し、成果を機能担当チームに引き渡した後に解散する一時的なチーム。"
 upstream_path: /handbook/engineering/devops/create/source-code/hardening-and-modernization/
-upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
-lastmod: "2026-10-05T12:43:57+02:00"
-translated_at: "2026-10-09T21:12:45+00:00"
+upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
+lastmod: "2026-10-20T10:13:04-04:00"
+translated_at: "2026-10-20T21:00:28Z"
 translator: codex
 stale: false
 ---
@@ -40,7 +40,7 @@ Source Code は GitLab のコードベースで最も古い部分の 1 つで、
 | Vladimir Shushlin | Engineering Manager | Plan |
 | Kerri Miller | Staff Backend Engineer | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) |
 | Emma Park | Backend Engineer | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) |
-| Chaoyue Zhao | Frontend Engineer | Create:Source Code Investigation |
+| Chaoyue Zhao | Frontend Engineer | [Create:Change Record](/handbook/engineering/devops/create/source-code/change-record/) |
 | Anastasia Khomchenko | Senior Frontend Engineer | Plan:Portfolio Planning |
 
 ## ステーブルカウンターパート {#stable-counterparts}
@@ -55,6 +55,10 @@ Source Code は GitLab のコードベースで最も古い部分の 1 つで、
 | Source Code のセキュリティバックログ — 副次指標 | 期限超過の Issue がなく、私たちが引き受けた種類の問題が解決済みであること |
 | フロントエンドのモダナイゼーション | チームと指標を定義予定 |
 | 機能カテゴリ | 各 Source Code チームが独自のエラーバジェットを持つこと |
+
+## 生産性の測定方法 {#how-we-measure-productivity}
+
+私たちは、休暇を考慮して調整したエンジニア 1 人あたりの MR 率、レビュー収支、マージまでの時間を、28 日間の移動期間で追跡します。定義、目標、ダッシュボードは、[チームの生産性の測定方法](/handbook/engineering/devops/measuring-productivity/)に記載しています。
 
 ## リンク {#links}
 
