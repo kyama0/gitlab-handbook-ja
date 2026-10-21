@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "Artifact Registry のストレージ、アーティファクトサイズ、API レート、並行数、エンティティ数の上限"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-translated_at: "2026-10-10T07:02:52+00:00"
+upstream_sha: 1d017e2417c7510ed270a22e03f038e968fdb679
+translated_at: "2026-10-21T21:00:03Z"
 translator: codex
 stale: false
-lastmod: "2026-10-07T10:11:21+01:00"
+lastmod: "2026-10-20T19:09:09+02:00"
 ---
 
 ## 背景 {#context}
@@ -29,21 +29,23 @@ Artifact Registry は、システム安定性を確保し、不正利用を防�
 
 Artifact Registry は GitLab.com 規模をターゲットとします: 定常状態で毎秒数千の API リクエスト、合計数十ペタバイトのデータ、大規模 Organization あたり数百万のアーティファクト（[ADR-003](003_system_requirements.md)を参照）。上限は正当なエンタープライズワークロードを支えるのに十分高く、かつ単一の namespace がサービスを不安定にしないように低くする必要があります。
 
-該当する場合、上限はパッケージレジストリとコンテナレジストリで既に確立されたものと整合または拡張し、GitLab レジストリ全体で一貫した体験を提供します。
+該当する場合、上限は Package Registry と Container Registry で既に確立されたものと整合または拡張し、GitLab レジストリ全体で一貫した体験を提供します。
 
 ## 決定 {#decision}
 
-**Artifact Registry は、Artifact Registry のテナンシーおよびパーティション境界である namespace レベルで、ストレージ（クォータ）、アーティファクトサイズ（上限）、API レート（上限）、エンティティ数（上限）の 4 つの次元にわたってクォータと上限を強制します。レート上限とストレージクォータのプランティアごとのデフォルトは、請求アンカー（Organization）から継承されますが、すべての上限は namespace ごとに強制および計測されます。複数の namespace を所有する Organization は、それらの namespace の利用量合計に対して請求されます。namespace をまたいだ重複排除やプーリングはありません。**
+**Artifact Registry は、Artifact Registry のテナンシーおよびパーティション境界である namespace レベルで、ストレージ（クォータ）、アーティファクトサイズ（上限）、API レート（上限）、エンティティ数（上限）の 4 つの次元にわたってクォータと上限を強制します。レート上限のプランティアごとのデフォルトは、請求アンカー（Organization）から継承されますが、すべての上限とクォータは namespace ごとに強制および計測されます。複数の namespace を所有する Organization は、それらの namespace の利用量合計に対して請求されます。namespace をまたいだ重複排除やプーリングはありません。**
 
-アーティファクトサイズ上限とエンティティ数上限は、すべてのインストールタイプで同じデフォルトを使用します。レート上限は GitLab.com ではプラン依存です。各プランティアが独自のデフォルトレート上限を定義し、個別の namespace は正当な高負荷利用に対してカスタムオーバーライドを受け取れます。Self-Managed では、管理者がインスタンスレベルですべての上限を調整できます。
+アーティファクトサイズ上限、エンティティ数上限、ストレージクォータは、すべてのインストールタイプで同じデフォルトを使用します。レート上限は GitLab.com ではプラン依存です。各プランティアが独自のデフォルトレート上限を定義し、個別の namespace は正当な高負荷利用に対してカスタムオーバーライドを受け取れます。Self-Managed では、管理者がインスタンスレベルですべての上限を調整できます。
 
 ### ストレージクォータ {#storage-quota}
 
 ストレージクォータは namespace レベルで強制されます。ストレージは namespace 内のすべての一意な Blob の重複排除済み合計として計測されます。重複排除は [ADR-002](002_storage_deduplication_scope.md)と整合して namespace ごとにスコープされます。namespace をまたいだ重複排除はありません。複数の namespace を所有する Organization は、各 namespace のストレージ合計を消費し、その合計に対して請求されます。Organization は引き続き請求アンカーです（[ADR-001](001_organizations_as_anchor_point.md)）。
 
+ストレージクォータは、アーティファクトサイズ上限やエンティティ数上限と同様に、不正利用に対するプラットフォームの安全上限です。課金を制御するものではありません。すべてのプランで同じ値を使用し、プランティアや購入内容によって定義されることはありません。ストレージは GitLab Credits を通じて GB 単位で課金されます（[ADR-012](012_usage_data_collection.md)）。課金上の制御としては、代わりに namespace を読み取り専用として利用停止にします（[ADR-010](010_data_retention.md#subscription-expiration)）。
+
 | クォータ | デフォルト | 注 |
 | ----- | ------- | ----- |
-| namespace あたり最大ストレージ | プラン依存（SKU ベース） | Artifact Registry は新しいプレミアム SKU です（[概要](../_index.md)を参照）。ストレージクォータは購入したアドオンによって定義されます |
+| namespace あたり最大ストレージ | すべてのプランで同じプラットフォームのデフォルト値 | 課金制御ではなく、不正利用に対する安全上限です。デフォルト値は[ロールアウト戦略](#implementation-notes)の Observe フェーズ中に決定します |
 | リポジトリあたり最大ストレージ | デフォルトでは厳格な制限なし | namespace レベルで構成可能なオプショナルな警告閾値。超過時に namespace オーナーに通知されますが、アップロードはブロックされません |
 
 警告閾値（例: クォータの 80%）は namespace ごとに構成できます。利用がこの閾値を超えると、namespace オーナーに通知されますが、クォータに完全に達するまでアップロードはブロックされません。
@@ -58,8 +60,8 @@ Artifact Registry は GitLab.com 規模をターゲットとします: 定常状
 
 | アーティファクトタイプ | 最大アーティファクトサイズ | 注 |
 | ------------- | ----------------- | ----- |
-| Maven | 5 GB | 既存のパッケージレジストリ上限と一致 |
-| npm | 5 GB | 既存のパッケージレジストリ上限と一致 |
+| Maven | 5 GB | 既存の Package Registry 上限と一致 |
+| npm | 5 GB | 既存の Package Registry 上限と一致 |
 | コンテナイメージ | 50 GB | Blob あたりの最大サイズ。 |
 
 加えて、コンテナイメージには次の上限が適用されます。
@@ -87,7 +89,7 @@ IP ベースのレート上限は、不正利用に対する最外層の防御�
 
 #### ユーザーごとの上限 {#per-user-limits}
 
-ユーザーごとのレート上限はプラン依存です。Organization 内のユーザーは、その Organization のプランティアからデフォルトを継承します。プランごとのデフォルト値は、ユーザーごとのトラフィック分布に基づいて [ロールアウト戦略](#implementation-notes)の Observe フェーズ中に決定されます。既存の [パッケージレジストリレート上限](https://docs.gitlab.com/administration/settings/package_registry_rate_limits/)がベースライン参照として機能します。
+ユーザーごとのレート上限はプラン依存です。Organization 内のユーザーは、その Organization のプランティアからデフォルトを継承します。プランごとのデフォルト値は、ユーザーごとのトラフィック分布に基づいて [ロールアウト戦略](#implementation-notes)の Observe フェーズ中に決定されます。既存の [Package Registry レート上限](https://docs.gitlab.com/administration/settings/package_registry_rate_limits/)がベースライン参照として機能します。
 
 #### Namespace ごとの上限 {#per-namespace-limits}
 
@@ -149,7 +151,7 @@ Namespace レベルの上限は、プラットフォームの主要な保護メ�
 - リアクティブな介入は自動強制より遅い
 - インシデント中の顧客コミュニケーションの明確な根拠がない
 
-**却下理由:** GitLab.com 規模では、信頼性のあるマルチテナンシーのためにプロアクティブな上限が必要です。コンテナレジストリの Organization ごとの上限の欠如は [運用上の複雑さ](https://gitlab.com/gitlab-org/container-registry/-/issues/1242)に寄与しました。
+**却下理由:** GitLab.com 規模では、信頼性のあるマルチテナンシーのためにプロアクティブな上限が必要です。Container Registry の Organization ごとの上限の欠如は [運用上の複雑さ](https://gitlab.com/gitlab-org/container-registry/-/issues/1242)に寄与しました。
 
 ### 代替案 2: インスタンスレベルの上限のみ {#alternative-2-instance-level-limits-only}
 
@@ -188,7 +190,7 @@ Artifact Registry はスタンドアローンサービスです。**レート上
 
 1. ストレージクォータ: アップロードと GC サイクル後に更新される Redis カウンターを使用した、アップロードセッション開始時の非同期チェック
 2. アーティファクトサイズ: リクエストボディから読み取られるバイトをカウントすることでアップロード中に強制（クライアントが省略または誤報告できる `Content-Length` ヘッダーを信頼しない）。バイト数が上限を超えると読み取りは中断され、リクエストは拒否される。これは Workhorse がアップロードサイズ強制に使用するのと同じアプローチ
-3. レート上限: GCRA アルゴリズムを使用した Redis カウンター。違反時に `Retry-After` 付き HTTP 429。レート上限実装は、[コンテナレジストリ](https://gitlab.com/gitlab-org/container-registry/-/issues/1225)で確立されたミドルウェアと Redis カウンターパターンを再利用し、構成スキーマを Artifact Registry 固有の操作に適合させる
+3. レート上限: GCRA アルゴリズムを使用した Redis カウンター。違反時に `Retry-After` 付き HTTP 429。レート上限実装は、[Container Registry](https://gitlab.com/gitlab-org/container-registry/-/issues/1225)で確立されたミドルウェアと Redis カウンターパターンを再利用し、構成スキーマを Artifact Registry 固有の操作に適合させる
 4. エンティティ数（アップストリームソース、ライフサイクルポリシールール）: 挿入前のデータベースクエリ。違反時に HTTP 422
 
 GitLab.com では、Runway を介したインフラレベルのレート上限が、IP ベースのスロットリングに追加の防御層を提供します。これらはアプリケーションレベルの上限を補完しますが、置き換えるものではありません。アプリケーションレベルの上限は、すべてのインストールタイプにわたる namespace ごとおよびユーザーごとの強制に必要です。

@@ -5834,11 +5834,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits.md",
-      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
-      "upstream_committed_at": "2026-10-07T10:11:21+01:00",
-      "translated_at": "2026-10-10T07:02:52+00:00",
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "upstream_committed_at": "2026-10-20T19:09:09+02:00",
+      "translated_at": "2026-10-21T21:00:03Z",
       "model": "codex",
-      "input_hash": "9d88d1f404ac2b988a3bd317c3dacabead0caf5d478367dbc1308cb3fbe90c70"
+      "input_hash": "cbb2e44c990494c1de6d20820252876c3d851bf2f132431bd3964f7492650e5d"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md",
@@ -5882,11 +5882,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md",
-      "upstream_sha": "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152",
-      "translated_at": "2026-08-08T09:11:37+09:00",
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "translated_at": "2026-10-21T21:00:03Z",
       "model": "codex",
-      "input_hash": "606523c02f634d509af33d9dcabf9d5bade07065f8115b239c2c45d2135dfe48",
-      "upstream_committed_at": "2026-08-07T17:13:39+01:00"
+      "input_hash": "90bc131b142c2dc4245a68ca5993377d512214d2afda2d787947ec520f479f56",
+      "upstream_committed_at": "2026-10-20T19:11:37+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md",
@@ -5898,11 +5898,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:12:40Z",
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "translated_at": "2026-10-21T21:00:03Z",
       "model": "codex",
-      "input_hash": "c49b5ecbcb5cc3d1383b7796fcb0c8425322d17bd2d618645ef4ab1a4e6f536a",
-      "upstream_committed_at": "2026-10-16T15:13:41+02:00"
+      "input_hash": "47ab0764eb250aa9698fcdc5b95ac184696067f2900d7fd63b3ef76610f5c6ac",
+      "upstream_committed_at": "2026-10-16T22:06:43+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
@@ -8970,11 +8970,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/_index.md",
-      "upstream_sha": "e3b4a7e417dc051c665375d9ef55272927dca0c6",
-      "translated_at": "2026-10-03T21:08:02+00:00",
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "translated_at": "2026-10-21T21:04:44Z",
       "model": "codex",
-      "input_hash": "ea1869eb8efe08255be41ee3d4f05aed447ba7f32c353c77ee5e276d91c8af78",
-      "upstream_committed_at": "2026-10-01T07:48:18+02:00"
+      "input_hash": "82280a04d3879063802dbb091d19fb6bf86c914e5efafcb6e4e84653f2f8c09e",
+      "upstream_committed_at": "2026-10-21T06:16:14+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/001_envelop_encryption.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/001_envelop_encryption.md",
@@ -9058,11 +9058,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/011_http_audit.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/011_http_audit.md",
-      "upstream_sha": "86cfa2bd7d73df5a673fe5ebd33b028d0f540434",
-      "translated_at": "2026-04-27T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a6c2c9fa90aed0169b64955776a3ae43a4274943327e878235516d83f8676ba0",
-      "upstream_committed_at": "2025-10-03T12:26:46+02:00"
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "translated_at": "2026-10-21T21:04:44Z",
+      "model": "codex",
+      "input_hash": "d9acf14aa9f5d346e1367e5af266773c53a12f3839f4bff9f2f9b5a5bf9b8aaf",
+      "upstream_committed_at": "2026-10-21T06:16:14+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/012_jwt_separation.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/012_jwt_separation.md",
@@ -9082,11 +9082,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/studies/ci_job_secrets.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/studies/ci_job_secrets.md",
-      "upstream_sha": "86cfa2bd7d73df5a673fe5ebd33b028d0f540434",
-      "translated_at": "2026-04-27T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "9659b0c63c43b3ad1844f785b5fa123985574c46be520f356eb379e7f45cfa4d",
-      "upstream_committed_at": "2024-11-14T23:18:47+00:00"
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "translated_at": "2026-10-21T21:04:44Z",
+      "model": "codex",
+      "input_hash": "8e7e268281004e0a83c8e82605bf6121217328118c40f5b881ab44619a067029",
+      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/security_analyzer_configuration_profiles/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/security_analyzer_configuration_profiles/_index.md",
@@ -31602,11 +31602,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md",
-      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
-      "upstream_committed_at": "2026-05-21T10:11:14+01:00",
-      "translated_at": "2026-05-22T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "79e2a46468003fce22f9133f5b76d933ea8ec1f7975f01cc7f073a8e499ca7e8"
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "upstream_committed_at": "2026-10-20T17:17:44+01:00",
+      "translated_at": "2026-10-21T21:00:03Z",
+      "model": "codex",
+      "input_hash": "57fe0495da8834094ce7cf7d7e353fa6ce73f0fcd4b610e756df5f47be498bf6"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md",
@@ -40719,6 +40719,14 @@
       "translated_at": "2026-10-20T21:12:55Z",
       "model": "codex",
       "input_hash": "63fdd4e7dfb9985b7b902857872bb3bb338f7d6ae364ec81473990ad9d69d747"
+    },
+    "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/015_audit_relay.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/015_audit_relay.md",
+      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
+      "translated_at": "2026-10-21T21:04:44Z",
+      "model": "codex",
+      "input_hash": "3013f6dd471b1bdb6d66fe8bd528f075f0b8c01d461ee42c991001a8acd2e202",
+      "upstream_committed_at": "2026-10-21T06:16:14+02:00"
     }
   }
 }

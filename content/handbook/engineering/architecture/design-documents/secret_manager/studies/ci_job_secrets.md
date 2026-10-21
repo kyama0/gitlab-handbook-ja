@@ -3,22 +3,22 @@ title: 'ユースケーススタディ: CI ジョブでのシークレット利�
 owning-stage: "~devops::verify"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/studies/ci_job_secrets/
-upstream_sha: 86cfa2bd7d73df5a673fe5ebd33b028d0f540434
-translated_at: "2026-04-27T08:00:00Z"
+upstream_sha: 1d017e2417c7510ed270a22e03f038e968fdb679
+translated_at: "2026-10-21T21:04:44Z"
 translator: claude
 stale: false
-lastmod: "2024-11-14T23:18:47+00:00"
+lastmod: "2026-10-20T14:59:33+02:00"
 ---
 
-## 目的
+## 目的 {#objectives}
 
 - ユーザーが CI ジョブでネイティブ GitLab シークレットを使用する方法をまとめます。
 - OpenBao は HashiCorp Vault のフォークであるため、[Runner における Vault インテグレーション](https://docs.gitlab.com/ee/ci/secrets/index.html)との互換性を確認します。
 - OpenBao の[ポリシー](https://openbao.org/docs/concepts/policies/)と[JWT ロール](https://openbao.org/docs/auth/jwt/#configuration)を、プロジェクトごとに異なる GitLab ユーザーロールのパーミッションと互換性を持つ形で構成する方法を高レベルで理解します。
 
-## 前提条件
+## 前提条件 {#prerequisites}
 
-このワークフローでは、[capabilities](https://openbao.org/docs/concepts/policies/#capabilities)（例: `read+update`、`read+update+create`）のすべての組み合わせに対する[テンプレート化されたポリシー](https://openbao.org/docs/concepts/policies/#templated-policies)が事前に定義されている必要があります。たとえば、プロジェクトのシークレットへの完全なアクセスを許可する次のテンプレート化されたポリシーを考えます。
+このワークフローでは、[ケイパビリティ](https://openbao.org/docs/concepts/policies/#capabilities)（例: `read+update`、`read+update+create`）のすべての組み合わせに対する[テンプレート化されたポリシー](https://openbao.org/docs/concepts/policies/#templated-policies)が事前に定義されている必要があります。たとえば、プロジェクトのシークレットへの完全なアクセスを許可する次のテンプレート化されたポリシーを考えます。
 
 ```shell
 bao policy write project_full_access - <<EOF
@@ -51,7 +51,7 @@ EOF
 
 OpenBao のポリシーはデフォルトで拒否されるため、プロジェクトオーナーにシークレットの読み書き完全アクセス権を付与するためにこの初期 JWT ロールが必要です。
 
-## 初期セットアップワークフロー
+## 初期セットアップワークフロー {#initial-setup-workflow}
 
 プロジェクトのネイティブシークレットが初めて設定される際の手順と技術情報を詳述します。
 
@@ -61,7 +61,7 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
    - たとえば、オーナーが `developer` ロールに読み取り専用アクセスを許可する場合、OpenBao API を通じて Rails バックエンドが `project_88_developer` を定義します。
 
      ```shell
-     # ロール名のフォーマットは `project_<project-id>_<user-role>`
+     # The format of the role name is `project_<project-id>_<user-role>`
      bao write auth/jwt/role/project_88_developer - <<EOF
       {
         "role_type": "jwt",
@@ -83,9 +83,9 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
    - `project_owner` の汎用ロールとは異なり、プロジェクトごとにユーザーロールのパーミッションの組み合わせが異なる可能性があるため、オーナー以外のロールをプロジェクトに紐付けて定義する必要があります。
 1. プロジェクトオーナーが GitLab UI からシークレットを定義します。
    - ユーザーは名前・キー・値などの詳細を定義します。入力例:
-     - name: `Production Database Password`
-     - key: `DB_PASS`
-     - value: `mydbpass`
+     - 名前: `Production Database Password`
+     - キー: `DB_PASS`
+     - 値: `mydbpass`
    - シークレットは `kv-v2/data/projects/88/ci/DB_PASS` の下に以下の JSON データで OpenBao に保存されます。
 
      ```json
@@ -102,7 +102,7 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
      job-with-secrets:
        secrets:
          MY_SECRET_ON_OPENBAO:
-           key: DB_PASS # kv-v2/data/projects/88/DB_PASS（フィールド `data`）に対応
+           key: DB_PASS # Translates to kv-v2/data/projects/88/DB_PASS, field `data`
      ```
 
    - `aud` のデフォルトが OpenBao サービスのある `https://secrets.gitlab.com` になるため、`id_tokens:VAULT_ID_TOKEN` を指定する必要はありません。
@@ -113,7 +113,7 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
    - OpenBao は ID トークンの整合性を検証し、`bound_claims` がカスタムクレーム（特に GitLab ユーザーロールを含む `user_access_level`）と一致するかを検証します。
    - HashiCorp Vault のシークレットと同様に、これは [`file` 変数](https://docs.gitlab.com/ee/ci/variables/index.html#use-file-type-cicd-variables)です。
 
-## 技術実装の知見
+## 技術実装の知見 {#technical-implementation-findings}
 
 ワークフローをサポートするための OpenBao と Rails に関する高レベルの技術実装詳細です。
 
@@ -128,14 +128,14 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
    - CI 設定で `id_tokens` を定義せずに ID トークンを使用できるよう、ID トークン関連の実装を更新します。
    - `VAULT_SERVER_URL` と `VAULT_AUTH_ROLE` のデフォルト値の適切なマッピング。
 
-## ローカルでのテスト方法
+## ローカルでのテスト方法 {#how-to-test-locally}
 
 ここで紹介するポリシーとロールの構成は、まず GDK セットアップと [`dev` モード](https://openbao.org/docs/get-started/developer-qs/)で動作する OpenBao サーバーを使ってローカルでテストしました。
 
 以下はローカルでテストするためのステップバイステップガイドです。
 
-1. [runner を使って GDK を適切にセットアップ](https://gitlab.com/gitlab-org/gitlab-development-kit/blob/main/doc/howto/runner.md)していることを確認します。
-   - [Docker executor を使った GDK](https://gitlab.com/gitlab-org/gitlab-development-kit/blob/main/doc/howto/runner.md#set-up-a-local-network)でテストし、`gdk.test` を `172.16.123.1` に向けましたが、shell executor でも動作するはずです。
+1. [runner を使って GDK を適切にセットアップ](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/runner/)していることを確認します。
+   - [Docker executor を使った GDK](https://gitlab-org.gitlab.io/gitlab-development-kit/howto/runner/#set-up-a-local-network)でテストし、`gdk.test` を `172.16.123.1` に向けましたが、shell executor でも動作するはずです。
    - テストプロジェクトで CI パイプラインを正常に実行できることを確認します。
 1. 後で OpenBao からシークレットを取得するためのテストプロジェクトを作成します。
    - プロジェクト ID をメモしておきます。この例ではプロジェクト ID は `53` でした。
@@ -150,7 +150,7 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
 1. kv-v2 シークレットエンジンを有効化します。
 
    ```shell
-   bao secrets enable kv-v2 # デフォルトで `kv-v2/data` にマウントされます
+   bao secrets enable kv-v2 # By default mounts to `kv-v2/data`
    ```
 
 1. JWT 認証を有効化します。
@@ -182,8 +182,8 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
      ```shell
      bao policy write project_full_access - <<EOF
 
-     # オーナーはプロジェクトのシークレットへの完全な読み書きアクセス権を持ちます
-     # `auth_jwt_02163755` マウントアクセサの値をコピーしてください
+     # owners have full read-write access to their project's secrets
+     # copy over the `auth_jwt_02163755` mount accessor value
      path "kv-v2/data/projects/{{identity.entity.aliases.auth_jwt_02163755.metadata.project_id}}/*" {
        capabilities = [ "read", "create", "update", "delete", "list" ]
      }
@@ -229,7 +229,7 @@ OpenBao のポリシーはデフォルトで拒否されるため、プロジェ
        aud: secrets.gitlab.com
      secrets:
        SECRET:
-         vault: projects/53/foo/val  # シークレット `kv-v2/data/projects/53/foo`（フィールド `val`）に対応
+         vault: projects/53/foo/val  # translates to secret `kv-v2/data/projects/53/foo`, field `val`
          token: $VAULT_ID_TOKEN
      script:
        - echo "testing..."

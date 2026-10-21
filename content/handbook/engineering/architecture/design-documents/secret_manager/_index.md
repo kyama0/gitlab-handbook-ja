@@ -9,22 +9,22 @@ owning-stage: "~devops::security platform"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/
-upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
-translated_at: "2026-10-03T21:08:02+00:00"
+upstream_sha: 1d017e2417c7510ed270a22e03f038e968fdb679
+translated_at: "2026-10-21T21:04:44Z"
 translator: codex
 stale: false
-lastmod: "2026-10-01T07:48:18+02:00"
+lastmod: "2026-10-21T06:16:14+02:00"
 ---
 
 
 {{< engineering/design-document-header >}}
 
 
-## 概要
+## 概要 {#summary}
 
-GitLab ユーザーは、機密情報（「シークレット」）を保管するための安全で使いやすいソリューションを必要としています。GitLab Secrets Manager は、サードパーティツールにアクセスすることなく、その要件を満たす GitLab ユーザー向けの望ましいシステムです。
+GitLab ユーザーは、秘密にしておくべき機密認証情報（「シークレット」）を保管するための、安全で使いやすいソリューションを必要としています。GitLab Secrets Manager は、サードパーティツールにアクセスすることなく、その要件を満たす GitLab ユーザー向けの望ましいシステムです。
 
-## モチベーション
+## モチベーション {#motivation}
 
 GitLab に機密認証情報を保存するために多くの人が使用している現在の実質的なアプローチは、[マスクされた変数](https://docs.gitlab.com/ee/ci/variables/index.html#mask-a-cicd-variable)または[ファイル変数](https://docs.gitlab.com/ee/ci/variables/index.html#use-file-type-cicd-variables)を使用することです。しかし、変数（マスクされたまたはファイル変数）に保存されたデータは、マスキングによっても意図せず公開される可能性があります。より安全なソリューションは、HashiCorp Vault や Azure Key Vault などの外部シークレットマネージャーとのネイティブ統合を使用することです。
 
@@ -32,7 +32,7 @@ GitLab に機密認証情報を保存するために多くの人が使用して�
 
 GitLab ネイティブのシークレットマネージャーがあれば、お客様はサードパーティツールのオーバーヘッドなしに、安全な方法でシークレットを保存してアクセスでき、他の GitLab 機能との緊密な統合を活用できます。
 
-### ゴール
+### ゴール {#goals}
 
 GitLab ユーザーに以下の方法を提供します。
 
@@ -41,39 +41,39 @@ GitLab ユーザーに以下の方法を提供します。
 - 外部環境（例: 本番インフラ）で保存されたシークレットを使用する
 - ルートネームスペース、サブグループ、プロジェクト全体でシークレットへのアクセスを管理する
 
-#### ユースケース
+#### ユースケース {#use-cases}
 
 アーキテクチャを設計するために、ユーザーがその役割においてシステムをどのように操作し使用するかを理解する必要があります。設計上の決定を推進するのに役立つ重要なユースケースシナリオを以下に示します。
 
-1. コンプライアンスマネージャーまたはセキュリティオペレーションエンジニアとして、システムに追加のセキュリティレイヤーを提供するためにダイナミックシークレットを使用したい。
-1. コンプライアンスマネージャーまたはセキュリティオペレーションエンジニアとして、システムに追加のセキュリティレイヤーを提供するために自動シークレットローテーションを使用したい。
-1. コンプライアンスマネージャーまたはセキュリティオペレーションエンジニアとして、システムに追加のセキュリティレイヤーを提供するためにシークレットの有効期限ポリシーを設定したい。
-1. 開発者として、機密認証情報が完全に暗号化されていることを望んでおり、成果物でこの情報が誤って漏洩しないようにしたい。
-1. 開発者として、コード内にこの情報を保存しないようにするために、機密認証情報を保存するためにシークレットを使用したい。
-1. GitLab 管理者および GitLab グループオーナーとして、組織がサードパーティツールの使用を必要とする場合に、シークレット管理機能を完全に無効にできるようにしたい。
-1. コンプライアンスマネージャーまたはセキュリティオペレーションエンジニアとして、シークレットとその使用状況のステータスを表示する監査ツールが必要であり、疑わしい動作を識別し、機密認証情報のセキュリティとコンプライアンスを確保できるようにしたい。
-1. コンプライアンスマネージャーとして、組織がコンプライアンスポリシーに従っていることを確認するために、シークレットの使用と管理の監査ログが必要。
-1. DevOps エンジニアとして、デプロイプロセスがシークレットマネージャーからデプロイに必要なシークレットを直接取得できるようにしたい。
+1. Compliance Manager または Security Ops engineer として、システムに追加のセキュリティレイヤーを提供するためにダイナミックシークレットを使用したい。
+1. Compliance Manager または Security Ops engineer として、システムに追加のセキュリティレイヤーを提供するために自動シークレットローテーションを使用したい。
+1. Compliance Manager または Security Ops engineer として、システムに追加のセキュリティレイヤーを提供するためにシークレットの有効期限ポリシーを設定したい。
+1. Developer として、機密認証情報が完全に暗号化されていることを望んでおり、成果物でこの情報が誤って漏洩しないようにしたい。
+1. Developer として、コード内にこの情報を保存しないようにするために、機密認証情報を保存するためにシークレットを使用したい。
+1. GitLab Admin および GitLab Group Owner として、組織がサードパーティツールの使用を必要とする場合に、シークレット管理機能を完全に無効にできるようにしたい。
+1. Compliance Manager または Security Ops engineer として、シークレットとその使用状況のステータスを表示する監査ツールが必要であり、疑わしい動作を識別し、機密認証情報のセキュリティとコンプライアンスを確保できるようにしたい。
+1. Compliance Manager として、組織がコンプライアンスポリシーに従っていることを確認するために、シークレットの使用と管理の監査ログが必要。
+1. DevOps Engineer として、デプロイプロセスがシークレットマネージャーからデプロイに必要なシークレットを直接取得できるようにしたい。
 1. 規制された業界のお客様として、FIPS 要件を満たすために HSM サポートを持つシークレットマネージャーが必要。
 1. 米国公共部門のお客様として、セキュリティ要件を満たすために FedRAMP 認定のシークレットマネージャーが必要。
 1. エアギャップシステムを持つお客様として、ネットワーク要件を満たすためにオンプレミスにインストールしてオンサイトで管理できるシークレットマネージャーが必要。
-1. シークレットオーナーとして、脆弱性がある場合にソフトウェアサプライチェーンのセキュリティを確保するためにシークレットを素早く更新またはローテーションする必要がある。
-1. シークレットオーナーとして、誤った変更が発生した場合にシークレットへの変更をロールバックできる機能が必要。
-1. セキュリティエンジニアとして、不要になったすべてのシークレットが適切に削除/破棄されるようにしたい。
+1. Secret Owner として、脆弱性がある場合にソフトウェアサプライチェーンのセキュリティを確保するためにシークレットを素早く更新またはローテーションする必要がある。
+1. Secret Owner として、誤った変更が発生した場合にシークレットへの変更をロールバックできる機能が必要。
+1. Security Engineer として、不要になったすべてのシークレットが適切に削除/破棄されるようにしたい。
 
-#### 非機能要件
+#### 非機能要件 {#non-functional-requirements}
 
 - セキュリティ
 - コンプライアンス
 - 監査可能性
 
-### 非ゴール
+### 非ゴール {#non-goals}
 
 このブループリントは以下をカバーしません。
 
 - 個人アクセストークンなどの外部リソースが GitLab にアクセスできるようにするために GitLab 内で作成されたシークレット。
 
-## 決定事項
+## 決定事項 {#decisions}
 
 - [ADR-005: OpenBao でのシークレットの非階層的なキー構造](decisions/005_secrets_key_structure/)
 - [ADR-007: シークレット管理サービスとして OpenBao を使用する](decisions/007_openbao/)
@@ -84,8 +84,9 @@ GitLab ユーザーに以下の方法を提供します。
 - [ADR-012: 別個の JWT ドメイン](decisions/012_jwt_separation.md)
 - [ADR-013: OpenBao 別個の論理データベース](decisions/013_openbao_separate_database.md)
 - [ADR-014: 非 CI/CD ワークロード向けの直接 API アクセス](decisions/014_non_ci_api_access.md)
+- [ADR-015: ローカルサイドカーを介した監査イベントの中継](decisions/015_audit_relay.md)
 
-### 廃止済み
+### 廃止済み {#superseded}
 
 これらのドキュメントは、このブループリントの初期イテレーションの一部です。
 
@@ -95,9 +96,9 @@ GitLab ユーザーに以下の方法を提供します。
 - [ADR-004: ステートレス Key Management Service](decisions/004_stateless_kms/)
 - [ADR-006: Rails と OpenBao 間で AppRole 認証メソッドを使用する](decisions/006_approle_authentication_rails/)
 
-## 提案
+## 提案 {#proposal}
 
-シークレットマネージャー機能は SaaS とセルフマネージドの両方のインストールで利用可能であり、2つのコアコンポーネントで構成されます。
+シークレットマネージャー機能は SaaS と Self-Managed の両方のインストールで利用可能であり、2 つのコアコンポーネントで構成されます。
 
 1. GitLab Rails
 1. OpenBao Server
@@ -113,11 +114,11 @@ p --fetches secrets<br/>(external URL)--> lb[Load Balancer]
 lb --routes to--> o
 ```
 
-パイプラインは GitLab インフラの外部に存在する可能性があるため、OpenBao は外部からアクセス可能で ACL 保護されている必要があります。ただし、当初はマルチテナンシー拡張を OpenBao に組み込むまで、GitLab Rails UI を通じたシークレットと認証ロールのプロビジョニングを制限し、JWT トークンの作成をパイプラインの実行に限定します。
+パイプラインは GitLab インフラの外部に存在する可能性があるため、OpenBao は外部からアクセス可能で ACL 保護されている必要があります。ただし、当初はマルチテナンシー拡張を OpenBao に組み込むまで、シークレットと認証ロールのプロビジョニングを GitLab Rails UI 経由に限定し、JWT トークンの作成をパイプラインの実行に限定します。
 
 <details>
 <summary> OpenBao の可視性に関する補足説明 </summary>
-技術的には、OpenBao を可視化する2つのアプローチがあります。
+技術的には、OpenBao を可視化する 2 つのアプローチがあります。
 
  1. API アドレスをグローバルにパブリックインターネットに開放する直接的な方法。
  2. GitLab Rails が呼び出し元に代わってリクエストをプロキシする方法。
@@ -126,12 +127,12 @@ lb --routes to--> o
 
 ダイナミックシークレットを提供するプロプライエタリなベンダーはごく一部しかないため、スイッチする場合はいずれにせよ機能をゼロから書き直す可能性が高いです。したがって、（クライアント向けに）おおまかに OpenBao/Vault 互換の API 設計を維持しながら、必要に応じて修正することができます。
 
-このトレードオフを考慮し、スタティックな K/V シークレットを超えた拡張（データベース、クラウドプロバイダー、さらには GitLab トークンのダイナミックシークレット）への関心があることを踏まえて、OpenBao を公開して前者のアプローチを使用することを提案します。これにより、将来的に（ポリシー作成を GitLab Rails に任せながら単純にシークレットを読む）非パイプラインワークロードが可能になり、GitLab Rails 内の他のソリューションに Transit などのより高度な機能を使用できます。
+このトレードオフを考慮し、スタティックな K/V シークレットを超えた拡張（データベース、クラウドプロバイダー、さらには GitLab トークンのダイナミックシークレット）への関心があることを踏まえて、OpenBao を公開して前者のアプローチを使用することを提案します。これにより、将来的に（ポリシー作成を GitLab Rails に任せながら単純にシークレットを読み取る）非パイプラインワークロードが可能になり、GitLab Rails 内の他のソリューションに Transit などのより高度な機能を使用できます。
 </details>
 
-OpenBao では、2つの認証エンジンを使用します。
+OpenBao では、2 つの認証エンジンを使用します。
 
- 1. [JWT](https://openbao.org/docs/auth/jwt/)。Rails から OpenBao への認証と、OpenBao への作成されたパイプラインジョブの認証に使用します。これらの JWT はすべて GitLab Rails によって発行され、既存の [HashiCorp Vault Runner 統合](https://docs.gitlab.com/ee/ci/secrets/hashicorp_vault.html)でサポートされている GitLab [OIDC ID トークン](https://docs.gitlab.com/ee/ci/secrets/id_token_authentication.html)を使用します。管理用途のトークンに対するクレームは GitLab の OIDC ID トークン用に発行されたものとは異なる値を持ちます。
+ 1. [JWT](https://openbao.org/docs/auth/jwt/)。Rails から OpenBao への認証と、OpenBao への作成されたパイプラインジョブの認証に使用します。これらの JWT はすべて GitLab Rails によって発行され、既存の GitLab [OIDC ID トークン](https://docs.gitlab.com/ee/ci/secrets/id_token_authentication.html)（既存の [HashiCorp Vault Runner 統合](https://docs.gitlab.com/ee/ci/secrets/hashicorp_vault.html)がサポート）を使用します。管理用途のトークンに対するクレームは GitLab の OIDC ID トークン用に発行されたものとは異なる値を持ちます。
 
 ```mermaid
 flowchart LR
@@ -204,10 +205,10 @@ proj --in the context of --> g
 ここで、パイプラインの実行は、ブランチまたは環境のマッチパターン（例: `main`、`*`、または `release/*`）のセットの制限の中で、以下からシークレットを取得できます。
 
  1. プロジェクト、
- 1. プロジェクトの（ユーザー）オーナーと同等、または
+ 1. プロジェクトの（ユーザー）オーナー、または同等に
  1. プロジェクトの組織オーナーまたは親グループ（組織の導入前）を含む上位の階層グループ。
 
-つまり、シークレットが複数のプロジェクトで使用される場合は、1レベル上でプロビジョニングし、ブランチおよび/または環境を適切に制限して、関連する環境が表示されるべきでないプロジェクト間で競合しないようにします。
+つまり、シークレットが複数のプロジェクトで使用される場合は、1 レベル上でプロビジョニングし、ブランチおよび/または環境を適切に制限して、関連する環境が表示されるべきでないプロジェクト間で競合しないようにします。
 
 同様に、シークレットのユーザーアクセスと管理のコンテキストでは、以下の階層が適用されます。
 
@@ -239,9 +240,9 @@ orgTeam -- granted --> sm
 
 どのレベル（プロジェクト、グループ、または組織）のチームも、そのレベル以下のすべてのシークレットを管理する権限を与えられます（上記の「シークレット管理機能」）。ただし、個々のシークレットに対しては、シークレット管理機能を持たないユーザーやチームにも直接アクセスを付与できます。
 
-当初、ユーザーは GitLab Rails とその広範な特権 JWT トークンを通じてシークレットを管理しますが、長期的にはユーザーごとの JWT を使用し、最終的にはクライアントが OpenBao に直接アクセスする（GitLab Rails に接触する必要なく）ようにする意図があります。これにより、ユーザー混乱攻撃が実行不可能になり、GitLab Rails がプロビジョニング中にシークレットを見ることがなくなり、将来的に誤ってログに記録されるリスクが防止されます。ただし、特権 JWT トークンは ACL ポリシーへの変更を安全に制限するために引き続き使用されます。
+当初、ユーザーは GitLab Rails とその広範な特権 JWT トークンを通じてシークレットを管理しますが、長期的にはユーザーごとの JWT を使用することを目指しています。現在の設計では、GitLab Rails がブラウザー UI に代わってシークレットを OpenBao にプロキシするため、シークレットの値を見る必要があります。ブラウザーセッションに発行して LocalStorage に保存したユーザーごとの JWT を使うことで、UI は公開 OpenBao インスタンスに直接接続できます。その結果、GitLab Rails はプロビジョニング中のシークレットにアクセスせず、誤ってログに記録するリスクもなくなります。ただし、特権 JWT トークンは ACL ポリシーへの変更を安全に制限するために引き続き使用します。
 
-### 設定オプション
+### 設定オプション {#configuration-options}
 
 ```yaml
 openbao:
@@ -249,13 +250,13 @@ openbao:
   internal_host: "http://openbao-internal:8200"   # Internal URL for Rails (optional)
 ```
 
-フォールバック動作: `internal_host` が設定されていない場合、Rails はすべての接続に標準の URL を使用します。
+フォールバック動作: internal_host が設定されていない場合、Rails はすべての接続に標準の URL を使用します。
 
-### シークレットと認証の階層
+### シークレットと認証の階層 {#secret-and-authentication-hierarchy}
 
-OpenBao のマウントパスの設計はセキュリティパラメーターに大きく影響します。ユーザー値（`{value}`）をエンコードする場合は16進数を使用します。これにより、パスに安全でない可能性のあるコンポーネントを個別のパスセグメントに変換するユニークで正規の変換が可能になります。動的な名前を持つコンポーネント（ユーザー、組織、グループ名など）の場合、それらはグロブ対応ではなく名前変更の対象となるため、人間が読めるパスや名前が変更された場合に基礎となるマウントの名前を変更せずに済むように、内部の整数データベース識別子を使用します。
+OpenBao のマウントパスの設計はセキュリティパラメーターに大きく影響します。ユーザー値（`{value}`）をエンコードする場合は 16 進数を使用します。これにより、パスに安全でない可能性のあるコンポーネントを個別のパスセグメントに変換するユニークで正規の変換が可能になります。動的な名前を持つコンポーネント（ユーザー、組織、グループ名など）の場合、それらはグロブ対応ではなく名前変更の対象となるため、人間が読めるパスや名前が変更された場合に基礎となるマウントの名前を変更せずに済むように、内部の整数データベース識別子を使用します。
 
-#### テナントの定義
+#### テナントの定義 {#tenant-definition}
 
 すべてのプロジェクトには親コンポーネントがあると仮定します。これはユーザー、グループ、または組織のいずれかです。`org_id=1` のレガシーグループの場合は、所有グループを使用します。
 
@@ -266,9 +267,9 @@ OpenBao のマウントパスの設計はセキュリティパラメーターに
 
 トップテナントレベルでは、ネームスペースは将来的に[シールメカニズム](https://github.com/openbao/openbao/issues/1170)をネームスペースごとに持つことができ、マルチテナントの暗号鍵分離を可能にします。
 
-スコープごとの追加ネームスペースにより、[Cells](#cells) のマウントの分割と移動を実現できます。
+スコープごとの追加ネームスペースにより、[Cells](#cells)のマウントの分割と移動を実現できます。
 
-#### シークレット
+#### シークレット {#secrets}
 
 ユーザー所有プロジェクトのマウント構造は以下のとおりです。
 
@@ -289,13 +290,13 @@ OpenBao のマウントパスの設計はセキュリティパラメーターに
 
 ここで、最初の `group_{groupid}` は最上位のグループ ID になりますが、ネストされたサブグループのシークレットには繰り返されません。
 
-`{namespace}_{nsid}` はネストされたエンティティ（トップレベルの組織またはグループ内のグループ、サブグループ、またはユーザーネームスペース）を示します。組織の導入後、`org_id=1` のメタ組織に属するグループにはグループベースのテナント分離を使用します。
+`{namespace}_{nsid}` はネストされたエンティティ（トップレベルの組織またはグループ内のグループ、サブグループ、またはユーザーネームスペース）を示します。将来的にトップレベルの組織を導入した際、orgid=1 のメタ組織に属するグループにはグループベースのテナント分離を使用します。
 
 まとめると、このパス構造は一般的なテンプレートの意味で `{tenant}_{tenantid}/{scope}_{scopeid}` と呼ばれます。ここで `group`、`user`、および `org` はテナントの例であり、`proj` および `group` はスコープの例です。
 
 各 `secrets` フォルダーには、当初は `/kv` に K/V シークレットエンジンをマウントします。将来的には、他のタイプのシークレットエンジンをマウントしてダイナミックシークレットを提供できます（エンジンの命名に関する考慮事項あり）。
 
-各 K/V シークレットエンジン内では、パイプラインで（指定された `<name>` で）シークレットへのアクセスを制限するために以下のネスト構造を使用します。
+各 K/V シークレットエンジン内では、以下のネスト構造を使用してシークレットへのアクセスを制限します（パイプライン内で指定された `<name>` を持つシークレットについて：
 
 - `.../secrets/kv/data/explicit/<name>`
 
@@ -303,13 +304,13 @@ OpenBao のマウントパスの設計はセキュリティパラメーターに
 
 - `.../secrets/<mount-name>/.../explicit-<role-name>`
 
-簡潔に言えば、シークレットが存在できる任意のパスはプレフィックスフリーである必要があります。`explicit` を使用して、プロビジョニング認証エンジンが特定のフィールドへのシークレットレベルアクセスを_明示的に_付与する必要があることを示します。後で他のタイプのシークレット保護スキームを使用する場合（そのブランチまたは環境のいずれかのシークレットへの広いアクセスを許可するために URL に環境またはブランチの保護を配置するなど）は、プレフィックスとして `env-` と `branch-` を使用することを提案します。
+簡潔に言えば、シークレットが存在できる任意のパスはプレフィックスフリーである必要があります。`explicit` を使用して、プロビジョニング認証エンジンが特定のフィールドへのシークレットレベルアクセスを _明示的に_ 付与する必要があることを示します。後で他のタイプのシークレット保護スキームを使用する場合（そのブランチまたは環境のいずれかのシークレットへの広いアクセスを許可するために URL に環境またはブランチの保護を配置するなど）は、プレフィックスとして `env-` と `branch-` を使用することを提案します。
 
-#### 認証
+#### 認証 {#authentication}
 
 JWT トークンの詳細については、[ADR-012: 別個の JWT ドメイン](decisions/012_jwt_separation.md)を参照してください。
 
-認証には3つのマウントセットを使用します。
+認証には 3 つのマウントセットを使用します。
 
 - `/auth/{tenant}_{tenantid}/{scope}_{scopeid}/pipeline_jwt`
 - `/auth/{tenant}_{tenantid}/{scope}_{scopeid}/user_jwt`
@@ -321,15 +322,15 @@ JWT トークンの詳細については、[ADR-012: 別個の JWT ドメイン]
 
 補足: 現在の順序は auth そしてテナントセグメントですが、適切なネームスペースのサポートを追加する場合、auth マウントはテナント内に配置されるため、順序は例えば `/user_{userid}/proj_{projectid}/auth/pipeline_jwt` のように入れ替わります。
 
-##### GitLab 特権 JWT
+##### GitLab 特権 JWT {#gitlab-privileged-jwt}
 
-当初は同じ JWT 発行者を使用し（ただし将来的に専用の発行者に移行する可能性あり）、GitLab は特権 `/auth/gitlab_jwt` パスに対して認証するための JWT を自己発行します。このトークンのサブジェクトと他のフィールドは、パイプラインに発行された OIDC ID トークンとは独自に異なり、このエンドポイントに対して正常に認証されることを防ぎます。
+当初は同じ JWT 発行者を使用し（ただし将来的に専用の発行者に移行する可能性あり）、GitLab は特権 `/auth/gitlab_jwt` パスに対して認証するための JWT を自己発行します。このトークンのサブジェクトとその他のフィールドには、パイプラインに発行する OIDC ID トークンとは明確に異なる値を設定し、パイプラインのトークンがこのエンドポイントで認証に成功するのを防ぎます。
 
-長期的には、カスタムクレームを通じて受信 GitLab Rails リクエストとユーザー開始の管理アクションを結びつけることを試み、ソースリクエストから OpenBao までの監査と帰属を可能にします。
+長期的には、カスタムクレームを通じて受信 GitLab Rails リクエストとユーザーが開始する送信側の管理アクションを結びつけることを試み、ソースリクエストから OpenBao までの監査と帰属を可能にします。
 
 AppRole の代わりに JWT を使用することで、GitLab Rails の運用側で追加の外部シークレット管理が不要になります。プロビジョニングされた JWT 発行者へのアクセスがすでにあるため、設計の特権的な場所に留まりながら OpenBao に対して自己発行 JWT で認証できます。
 
-#### ACL の設計
+#### ACL の設計 {#acl-design}
 
 ACL ポリシーに対するグループベースのアプローチを提案します。各スコープ（パイプライン用）とロール（ユーザー用、明示的な付与を使用しない場合）は特定のシークレットのサブセットへのアクセスを付与します。これらのポリシーは OpenBao に維持・保存されますが、GitLab Rails がそれらを管理・プロビジョニングする役割を担います。
 
@@ -337,15 +338,15 @@ ACL ポリシーに対するグループベースのアプローチを提案し�
 
 各ポリシーに対して、Rails が発行した JWT の `groups_claim` が適用可能な ACL ポリシーを選択できるように、[グループエイリアス](https://openbao.org/api-docs/secret/identity/group-alias/)を作成します。[将来の拡張](decisions/008_no_database.md#jwt-direct-profiles)により、[グロブベースのグループマッチ](decisions/008_no_database.md#group-alias-glob-matching)以外のすべてを排除できます。
 
-##### ポリシーの階層
+##### ポリシーの階層 {#hierarchy-of-policies}
 
 ポリシーはそれぞれのテナント（例: `user_{id}/`）とスコープネームスペース（例: `user_{userid}/proj_{projectid}/`）に配置されます。
 
 将来的には、`group_{id}` および他の構造をトップレベルのカテゴリーとしてサポートすることで、階層的なシークレットをサポートできます。マルチテナントのサポートにより、トップレベルのアイテムが少なくなり（テナントとスコープによって明示的に境界が設定されるため）、すべてのアイテムを反復処理しやすくなります。ただし、各スコープ内のアイテムは通常比較的少数です。階層的なシークレットは、パイプライン JWT が複数のコンテキスト（例: グループとプロジェクトの両方のレベル）で有効である必要があります。
 
-これらは必ずしもシークレットのパス（ACL ポリシーの内容）を反映するものではなく、OpenBao 内で ACL ポリシーが_存在する場所_を示すだけであることに注意してください。
+これらは必ずしもシークレットのパス（ACL ポリシーの内容）を反映するものではなく、OpenBao 内で ACL ポリシーが _存在する場所_ を示すだけであることに注意してください。
 
-##### パイプライン ACL
+##### パイプライン ACL {#pipeline-acl}
 
 パイプラインの JWT トークンを許可されたパスのみに制限するために、GitLab Rails を使用してパイプラインの ACL ポリシーと、[トークンメタデータ](https://openbao.org/api-docs/auth/jwt/#acl-policy-templating-examples)に基づいてポリシーのテンプレート化を許可する JWT ロールをプロビジョニングします。将来的には、[CEL JWT ポリシーエンジン](https://openbao.org/docs/rfcs/cel-jwt/)を使用してより細かい認証の決定が可能になります。
 
@@ -353,7 +354,7 @@ OpenBao の ACL は[ディスクに直接保存](https://github.com/openbao/open
 
 ロールの命名には、auth マウントがプロジェクトスコープ内にあるため `all-pipelines` という識別子を提案します。
 
-###### レイアウト
+###### レイアウト {#layout}
 
 `project_{id}/` スコープのネームスペース内では、追加のパスセグメント `pipelines/` をプロビジョニングして、プロジェクトのパイプライン関連のポリシーを他のタイプのアクセスから分離します。
 
@@ -377,7 +378,7 @@ ACL の完全なパスは以下の例のようになります。
 
 将来的には明示的な付与も可能になります。ステージにはパスセグメントとポリシー（`stages/{name}/global`）を持たせ、ステージ内の各ジョブにも直接シークレットアクセスを持たせることができます（`stages/{name}/job/{name}/global`）。また、これらの制限（環境/ブランチ）とステージ、名前の間の AND 演算をサポートして、これらのジョブにより細かい実行コンテキストをサポートすることもできます。この情報（ステージ/ジョブ名）は現在 ID トークンに存在しないため、ACL に使用できません。ただし、情報は `Ci::Build` オブジェクト（`stage` および `name` フィールド）に存在するため、簡単に追加できます。
 
-###### コンテンツ
+###### コンテンツ {#contents}
 
 各 ACL ポリシーはパスに対するケイパビリティの明示的な付与になります。GitLab Rails でこれらを設定し、複数のシークレットへのアクセスを付与するためのグロビング（`+` または `*`）は使用しません。特定のシークレットへのアクセスのみを許可します。
 
@@ -393,7 +394,7 @@ path "secrets/kv/data/explicit/PROD_DB_PASS" {
 
 パイプラインは異なる ACL ポリシーをプロビジョニングする可能性のある複数のコンテキストを持つことになるため、最終的には[ポリシーユニオン](decisions/008_no_database.md#policy-unions)または[CEL](https://openbao.org/docs/rfcs/cel-best-practices/)を使用した同様のソリューションを実装したいと考えます。
 
-##### ユーザー ACL
+##### ユーザー ACL {#user-acl}
 
 ユーザーは当初は OpenBao に直接コンタクトせず（代わりに GitLab Rails を通じてシークレット管理操作をプロキシする）、GitLab Rails をスコープを絞ったユーザーレベルの JWT に切り替え、最終的にはクライアントが OpenBao に直接アクセスできるようにしたいと考えています（GitLab Rails に必ずしも連絡する必要なく）。これにより、ユーザー混乱攻撃が実行不可能になり、GitLab Rails がプロビジョニング中にシークレットを見ることがなくなり、将来的に誤ってログに記録されるリスクが防止されます。
 
@@ -403,15 +404,15 @@ path "secrets/kv/data/explicit/PROD_DB_PASS" {
 
 ユーザーは実際のシークレットの読み取り権限がないことに注意してください。値を設定することしかできません。ダイナミックシークレットを展開する場合、ユーザーはロールに対する完全なアクセス許可を付与されますが、ダイナミックシークレットエンドポイントへのアクセス許可は付与されません（例: PKI の場合、`pki/roles/:name` に対する完全なアクセス許可はありますが、`pki/issue/:name` に対するアクセス許可はありません）。
 
-###### レイアウト
+###### レイアウト {#layout-1}
 
 パイプラインと同様に、関連するトップレベルのパスの下に `roles/` または `direct/` サブコンポーネントを持つポリシーを作成します。ここで `roles/` には、さまざまなレベルでシークレットへのアクセスを取得するデフォルトまたはカスタムロールがあります。例えば、`roles/maintainers` や `roles/owners`: これにより、各プロジェクトはデフォルトが理想的でない場合にこれらのロールがどのスコープのアクセスを取得するかを制御できます。
 
 さらに、`direct/user_{id}` ロールを使用して、ユーザーは通常のロールで見ることができるもの以外の特定のシークレットへの明示的な付与を受けます。
 
-###### コンテンツ
+###### コンテンツ {#contents-1}
 
-ロールと直接アクセスの両方に対して、2種類の付与があります。
+ロールと直接アクセスの両方に対して、2 種類の付与があります。
 
 1. シークレットのカテゴリー全体への広い付与。
 2. 個々のシークレットへの特定の付与。
@@ -438,7 +439,7 @@ path "secrets/kv/data/explicit/+" {
 
 シークレット管理ページにアクセスする際、GitLab Rails は関連するユーザーの詳細を含む JWT を内部で発行します。この JWT には、プロジェクト内の特定のポリシーを持つグループへの関連する `groups_claims` が含まれます。Rails はその後、この JWT を OpenBao へのアクセスに内部で使用し、ユーザーが見ることができるものだけにアクセスのスコープを効果的に制限します。将来的に、OpenBao は外部からアクセス可能になるため、このトークンをユーザーに渡して、GitLab Rails がアクセスする必要なく、基礎となるシークレットを直接プロビジョニングできます。
 
-##### ACL ポリシーの変更
+##### ACL ポリシーの変更 {#modifying-acl-policies}
 
 ACL ポリシーは HCL で記述されています。[Ruby には優れた HCL サポートがない](https://rubygems.org/search?query=hcl)ため、これが問題になります。ただし、[HCL は JSON 互換](https://developer.hashicorp.com/vault/tutorials/policies/policies#hashicorp-configuration-language-hcl)です。
 
@@ -468,7 +469,7 @@ path "secrets/kv/data/explicit/+" {
 
 これにより、GitLab Rails がクエリと更新を行うのがはるかに容易になります。関連する [OpenBao ドキュメント](https://openbao.org/docs/concepts/policies/#policy-syntax)を参照してください。
 
-### スタティックシークレットとダイナミックシークレット
+### スタティックシークレットとダイナミックシークレット {#static-vs-dynamic-secrets}
 
 GitLab Secrets Manager は当初、KVv2 エンジンに保存されたスタティックシークレットのみをサポートします。スタティックシークレットには OpenBao への改善を加えることができます。
 
@@ -482,15 +483,15 @@ GitLab Secrets Manager は当初、KVv2 エンジンに保存されたスタテ�
 
 最終的には、より多くのユーザーをダイナミックシークレットに向けたいと考えています。これらはより安全で、長期的なデータ保持やセキュリティの懸念がありません。
 
-### 真実の情報源
+### 信頼できる情報源 {#sources-of-truth}
 
-GitLab Rails は以下の真実の情報源です。
+GitLab Rails は以下の信頼できる情報源です。
 
 - OIDC を介した JWT 発行
   - パイプライン発行
   - ユーザーレベルの発行（将来的に）
 
-OpenBao は以下の真実の情報源です。
+OpenBao は以下の信頼できる情報源です。
 
 - シークレットの定義
   - パイプライン定義とプロジェクト、ネームスペースなどのコンテキスト情報から推測できる正規の場所
@@ -501,7 +502,7 @@ OpenBao は以下の真実の情報源です。
 - ACL ポリシー: これらは所有権情報に基づいて GitLab Rails からプッシュされます（パイプラインの場合は使用直前）。
 - ワンタイムユーズシークレットのための K/V 拡張機能や自動削除を含む、ダイナミックシークレットの設定。
 
-### GitLab Rails
+### GitLab Rails {#gitlab-rails}
 
 GitLab Rails は、Secrets Manager 機能を使用してシークレットを管理する際にユーザーが操作するメインインターフェースです。
 
@@ -532,13 +533,13 @@ ob --audit--> gl
 
 当初はシークレットへの CUD 操作を含むすべての操作が GitLab Rails を通じて行われますが、パイプラインからのシークレットのリクエストはそうではありません（したがって CRUD の R を除く — ただし、このアクションはもちろん GitLab Rails から開始され、GitLab Rails によって発行された JWT を持つパイプラインジョブによって開始されます）。最終的に CUD 操作の特権トークンはユーザー JWT に置き換えられ、その後直接ユーザーに（GitLab UI のコンテキストで実行される JavaScript OpenBao クライアントを通じて）置き換えられます。
 
-[GitLab Rails モノリス](https://docs.gitlab.com/ee/development/architecture.html#component-diagram)内では、2つのコンポーネントがシークレットマネージャーへのアクセスを必要とします。[Puma](https://docs.gitlab.com/ee/development/architecture.html#puma)（GitLab バックエンドコードのほとんどが実行される場所）と [Sidekiq](https://docs.gitlab.com/ee/development/architecture.html#sidekiq)（長命のバックグラウンド操作を許可するバックグラウンドジョブプロセッサ、OpenBao と シークレットエンジンマウントの初期プロビジョニングなど）です。
+[GitLab Rails モノリス](https://docs.gitlab.com/ee/development/architecture.html#component-diagram)内では、2 つのコンポーネントがシークレットマネージャーへのアクセスを必要とします。[Puma](https://docs.gitlab.com/ee/development/architecture.html#puma)（GitLab バックエンドコードのほとんどが実行される場所）と [Sidekiq](https://docs.gitlab.com/ee/development/architecture.html#sidekiq)（長命のバックグラウンド操作を許可するバックグラウンドジョブプロセッサ、OpenBao と シークレットエンジンマウントの初期プロビジョニングなど）です。
 
-より多くのリクエストフロー図については、[ADR 009](decisions/009_request_flows.md) を参照してください。
+より多くのリクエストフロー図については、[ADR 009](decisions/009_request_flows.md)を参照してください。
 
-#### シークレットの管理
+#### シークレットの管理 {#management-of-secrets}
 
-OpenBao は多くの決定の真実の情報源であるため、GitLab はプロジェクト上のシークレットの有効化ステータスを示す最小限のテーブルのみを保持できます。
+OpenBao は多くの決定の信頼できる情報源であるため、GitLab はプロジェクト上のシークレットの有効化ステータスを示す最小限のテーブルのみを保持できます。
 
 `SQL` では以下のようになります。
 
@@ -560,17 +561,17 @@ CREATE TABLE secrets (
 
 ここで、`group_id` はシークレットインスタンスを所有する最も近いサブグループを参照します。親のサブグループとネームスペースはその後クエリできます。
 
-#### 認証の管理
+#### 認証の管理 {#management-of-authentication}
 
-GitLab Rails は3種類の JWT を発行する必要があります。
+GitLab Rails は 3 種類の JWT を発行する必要があります。
 
 1. 特定のパイプライン実行のプロジェクトスコープ内の JWT。
 1. ユーザー認証用の JWT。
 1. ポリシーやマウントの作成などの特権操作のための独自の JWT。
 
-GitLab はすでに [CI/CD](https://docs.gitlab.com/ee/ci/secrets/id_token_authentication.html) の OIDC と [Identity Provider (IDP)](https://docs.gitlab.com/ee/integration/openid_connect_provider.html) として、両方の JWT タイプの発行をサポートしています。各[認証メソッド](#authentication)内では、OIDC トークンが適切な JWT 固有のポリシーが付与された OpenBao トークンと交換されるようにするために必要なロールを作成する必要があります。[ADR-008: Rails データベーステーブルなしでシークレットマネージャーを再設計する](decisions/008_no_database.md)で説明されているように、これには OpenBao への簡単な拡張が必要です。
+GitLab はすでに [CI/CD](https://docs.gitlab.com/ee/ci/secrets/id_token_authentication.html)の OIDC と [Identity Provider (IDP)](https://docs.gitlab.com/ee/integration/openid_connect_provider.html)として、両方の JWT タイプの発行をサポートしています。各[認証メソッド](#authentication)内では、OIDC トークンが適切な JWT 固有のポリシーが付与された OpenBao トークンと交換されるようにするために必要なロールを作成する必要があります。[ADR-008: Rails データベーステーブルなしでシークレットマネージャーを再設計する](decisions/008_no_database.md)で説明されているように、これには OpenBao への簡単な拡張が必要です。
 
-#### 必要なクリーンアップフック
+#### 必要なクリーンアップフック {#necessary-cleanup-hooks}
 
 以下の場所では、シークレット（データベース内と OpenBao の両方）を更新するためにフックが必要です。
 
@@ -584,37 +585,37 @@ GitLab はすでに [CI/CD](https://docs.gitlab.com/ee/ci/secrets/id_token_authe
 
 名前の代わりに ID が使用されているため、初めてマルチテナントネームスペースを有効にする場合を除いて、マウントの移動操作はほとんど発生しません。
 
-### OpenBao サーバー
+### OpenBao サーバー {#openbao-server}
 
 [OpenBao](https://openbao.org/) サーバーは GitLab の全体アーキテクチャの新しいコンポーネントになります。このコンポーネントはシークレット自体の保存を含むすべてのシークレット管理機能を提供します。[内部の概要](https://openbao.org/docs/internals/)と[脅威モデル](https://openbao.org/docs/internals/security/)はプロジェクトのウェブサイトで利用可能です。
 
 要約すると、ストレージはルートキーで暗号化され、ルートキーはバリアキーリングを暗号化し、バリアキーリングはストレージを暗号化します。ルートキーへのアクセスは、[Shamir の派生 AES キー](https://openbao.org/docs/concepts/seal/#shamir-seals)（アンシールするためのクォーラムが必要）または自動アンシールメカニズム（[GCP KMS](https://openbao.org/docs/configuration/seal/gcpckms/) など）によって保護されます。
 
-#### ストレージバックエンド
+#### ストレージバックエンド {#storage-backend}
 
 Runway 上の OpenBao は当初、[PostgreSQL エンジン](https://openbao.org/docs/configuration/storage/postgresql/)でデプロイされます。これはセルフホスティングのデフォルトとして適切です。GitLab Rails はすでにデータベースを必要とし、その中にテーブルを作成できます。ただし、将来的により広く展開されている Raft バックエンドのサポートも比較的簡単に追加できます。
 
-#### シールメカニズム
+#### シールメカニズム {#seal-mechanisms}
 
 GitLab.com のデプロイでは、OpenBao は [GCP KMS 自動アンシールメカニズム](https://openbao.org/docs/configuration/seal/gcpckms/)を使用します。セルフホスティング環境では、既存のサポートされている KMS メカニズムが提供されない場合、Kubernetes でのようなシークレットマネージャーを使用して[スタティックシール](https://openbao.org/docs/configuration/seal/static/)を使用できます。
 
-#### 監査ログ
+#### 監査ログ {#audit-logging}
 
 OpenBao はファイル、syslog、またはソケットメカニズムを通じた監査ログをサポートしています。OpenBao は必ずしも GitLab Rails または監査ログ（Postgres 内）と同じ場所にある必要はないため、ファイル（`/dev/stdout` へ）とカスタム監査ログバックエンド（お客様が利用できる[ストリーミング監査イベント](https://docs.gitlab.com/administration/compliance/audit_event_streaming/)を発行するため）の両方を使用することが提案されます。
 
-監査ログが停止した場合、OpenBao はこれが修正されるまでリクエストを処理できなくなることに注意してください。
+OpenBao は、監査デバイスがどれもリクエストを記録できない場合、または `required` としてマークされたデバイスが失敗した場合にのみ、リクエストを拒否します。
 
-詳細については、[ADR-011: 顧客監査 Ingress にストリーミング監査イベントを使用する](decisions/011_http_audit.md)を参照してください。
+詳細については、[ADR-011: 顧客監査の取り込みにストリーミング監査イベントを使用する](decisions/011_http_audit.md)と[ADR-015: ローカルサイドカーを介した監査イベントの中継](decisions/015_audit_relay.md)を参照してください。
 
-#### 高可用性
+#### 高可用性 {#high-availability}
 
-GitLab Rails にはセルフホストクラスタリングのための [Geo サポート](https://docs.gitlab.com/ee/administration/geo/)が含まれており、それぞれが独自のノードセットを持つ複数のサイトが存在できます。各サイトには独自の [PostgreSQL レプリカ](https://docs.gitlab.com/ee/administration/geo/#architecture)があります。1つのサイトがプライマリに指定され、そのサイトのノードは Postgres データベースへの書き込み操作を実行できます。すべての PostgreSQL データはすべてのサイトで利用可能です。Gitaly はリポジトリデータの選択的同期を行いますが、プロジェクトはすべてのサイトとノードからグローバルにアクセス可能です。現在は Secondary ノードのみがプライマリサイトと通信しますが、[双方向チャンネルであるべき](https://docs.gitlab.com/ee/administration/geo/replication/multiple_servers.html#architecture-overview)です。
+GitLab Rails にはセルフホストクラスタリングのための [Geo サポート](https://docs.gitlab.com/ee/administration/geo/)が含まれており、それぞれが独自のノードセットを持つ複数のサイトが存在できます。各サイトには独自の [PostgreSQL レプリカ](https://docs.gitlab.com/ee/administration/geo/#architecture)があります。1 つのサイトがプライマリに指定され、そのサイトのノードは Postgres データベースへの書き込み操作を実行できます。すべての PostgreSQL データはすべてのサイトで利用可能です。Gitaly はリポジトリデータの選択的同期を行いますが、プロジェクトはすべてのサイトとノードからグローバルにアクセス可能です。現在は Secondary ノードのみがプライマリサイトと通信しますが、[双方向チャンネルであるべき](https://docs.gitlab.com/ee/administration/geo/replication/multiple_servers.html#architecture-overview)です。
 
-OpenBao はネイティブに[高可用性](https://openbao.org/docs/internals/high-availability/)をサポートしています。これは [Raft](https://openbao.org/docs/internals/integrated-storage/) または [PostgreSQL](https://openbao.org/docs/configuration/storage/postgresql/) ストレージバックエンドによって提供されます。後者はロックテーブルを使用してリーダー選出を実装します。1つのノードのみがアクティブとしてマークされ、Secondary ノードはリクエストをプライマリに転送するだけで操作を実行しません。
+OpenBao はネイティブに[高可用性](https://openbao.org/docs/internals/high-availability/)をサポートしています。これは [Raft](https://openbao.org/docs/internals/integrated-storage/) または [PostgreSQL](https://openbao.org/docs/configuration/storage/postgresql/) ストレージバックエンドによって提供されます。後者はロックテーブルを使用してリーダー選出を実装します。1 つのノードのみがアクティブとしてマークされ、Secondary ノードはリクエストをプライマリに転送するだけで操作を実行しません。
 
 特に、Geo と OpenBao のセマンティクスはほぼ一致しています。Geo は GitLab Secrets Manager をサポートするために追加の拡張を必要とせず、PostgreSQL を使用する場合はレプリケーションが Geo によって処理されることを提案します。
 
-すべてのフロントエンドサービスノードで、セルフホスティングの OpenBao サーバーインスタンスを起動します。1つのノードが OpenBao HA 選出によってプライマリに指定されます。これはプライマリサイトのランダムなノードです。Secondary の Geo サイトは読み取り専用の PostgreSQL レプリカを持ち、OpenBao ロックを取得できないためです。
+すべてのフロントエンドサービスノードで、セルフホスティングの OpenBao サーバーインスタンスを起動します。1 つのノードが OpenBao HA 選出によってプライマリに指定されます。これはプライマリサイトのランダムなノードです。Secondary の Geo サイトは読み取り専用の PostgreSQL レプリカを持ち、OpenBao ロックを取得できないためです。
 
 ランナーが OpenBao インスタンスに接続する場合、リクエストがアクティブなノードに当たらなければ、OpenBao は GRPC リクエスト転送メカニズムを通じてリクエストをルーティングします。これは、Geo プライマリサイトまたは Secondary サイトに当たるかどうかに関わらず、既存の OpenBao HA サポートで動作します。
 
@@ -622,45 +623,45 @@ OpenBao はネイティブに[高可用性](https://openbao.org/docs/internals/h
 
 最終的な結果として、Geo は既知の PostgreSQL データベース（お客様が独自のデータベースを持参しない限り）を使用して OpenBao のデータレプリケーションを担当し、OpenBao は Geo のセマンティクスと統合されます。
 
-#### Cells
+#### Cells {#cells}
 
-当初は、インスタンスごとに1つのグローバルな OpenBao クラスターをサポートします。将来的に [Cells](/handbook/engineering/architecture/design-documents/cells/) を使用する場合、各テナントにクラスターアフィニティを持たせることを期待します。各 GitLab Cell は独自の OpenBao クラスターを持ちます。各 Cell には独自のローカルデータベース（中央データベースの一部またはシークレットマネージャー用の Secondary PostgreSQL インスタンス）があります。エンジニアリングの観点からは、すべてのデータは現在プロジェクトまたはグループ内に分離されており、1つの Cell に存在するため、クロス Cell データアクセスパターンは存在しません。したがって、Cells の統合はほぼ運用上のものです。
+当初は、インスタンスごとに 1 つのグローバルな OpenBao クラスターをサポートします。将来的に [Cells](/handbook/engineering/architecture/design-documents/cells/)を使用する場合、各テナントにクラスターアフィニティを持たせることを期待します。各 GitLab Cell は独自の OpenBao クラスターを持ちます。各 Cell には独自のローカルデータベース（中央データベースの一部またはシークレットマネージャー用の Secondary PostgreSQL インスタンス）があります。エンジニアリングの観点からは、すべてのデータは現在プロジェクトまたはグループ内に分離されており、1 つの Cell に存在するため、クロス Cell データアクセスパターンは存在しません。したがって、Cells の統合はほぼ運用上のものです。
 
-最大の課題は、お客様を Cells アーキテクチャに[移行](/handbook/engineering/architecture/design-documents/organization-data-migration/)して、オペレーターが Cells を再バランスできるようにする機能のサポートです。これには2つの部分が必要です。
+最大の課題は、お客様を Cells アーキテクチャに[移行](/handbook/engineering/architecture/design-documents/organization-data-migration/)して、オペレーターが Cells を再バランスできるようにする機能のサポートです。これには 2 つの部分が必要です。
 
 1. シークレットを持つ既存の組織またはリポジトリセットを[分割](https://gitlab.com/gitlab-org/gitlab/-/issues/543014)できること。
 2. さまざまな Cells 間で組織を[移動](https://gitlab.com/gitlab-org/gitlab/-/issues/543001)できること。
 
-Tenant Scale チームとの議論から、この機能を OpenBao にプッシュすることを選択しました。これにより、2つのアップストリーム [RFC](https://gist.github.com/cipherboy/d658f06b871d5bee0d9a5cd130b1173b)（ネームスペースのフェデレーションとクロスクラスターネームスペース移動）が生まれ、ほぼゼロダウンタイムの移行が可能になります。
+Tenant Scale チームとの議論から、この機能を OpenBao にプッシュすることを選択しました。これにより、2 つのアップストリーム [RFC](https://gist.github.com/cipherboy/d658f06b871d5bee0d9a5cd130b1173b)（ネームスペースのフェデレーションとクロスクラスターネームスペース移動）が生まれ、ほぼゼロダウンタイムの移行が可能になります。
 
-現在は実行中のパイプラインのみに焦点を当てています。組織が Cells 間を移動している際、[Org Mover](https://gitlab.com/groups/gitlab-org/-/epics/12859) はまず、既存の親 Cell のネームスペースに戻すフェデレーションを宛先 Cell のすべてのネームスペースに設定できます。これにより、パイプラインはどちらの Cell でもシームレスに実行でき、Rails は [インラインauth](https://openbao.org/docs/rfcs/inline-auth/) を使用して OpenBao への読み取り専用アクセスを維持できます。
+現在は実行中のパイプラインのみに焦点を当てています。組織が Cells 間を移動している際、[Org Mover](https://gitlab.com/groups/gitlab-org/-/epics/12859)はまず、既存の親 Cell のネームスペースに戻すフェデレーションを宛先 Cell のすべてのネームスペースに設定できます。これにより、パイプラインはどちらの Cell でもシームレスに実行でき、Rails は [インライン認証](https://openbao.org/docs/rfcs/inline-auth/)を使用して OpenBao への読み取り専用アクセスを維持できます。
 
 組織の残りの部分が移動した後、Org Mover は OpenBao データ移動をトリガーできます。これは上記のクロスクラスターネームスペース移動 RFC を通じて OpenBao によって処理されます。完了したら、Org Mover または Rails は移動を最終化し、宛先 Cell の OpenBao インスタンスのクローンされたネームスペースを有効化して、元のソース Cell の OpenBao インスタンスからネームスペースを削除できます（残留するジョブが新しい OpenBao インスタンスのネームスペースと通信し続けられるように、ソース Cell インスタンスにリバースフェデレーションを維持する可能性があります）。
 
 分割をサポートするために、OpenBao に追加のネームスペースを導入します。GitLab テナントレベルの単一のネームスペースではなく、各シークレットのスコープ（プロジェクトまたはグループ）にも独自のネームスペースが存在します。これにより、ネームスペースは分割されず、アトミックに保たれます。このアプローチは上記の階層に反映されています。
 
-#### デュアルネットワークパスアーキテクチャ
+#### デュアルネットワークパスアーキテクチャ {#dual-network-path-architecture}
 
-OpenBao は、2つの異なるネットワークルートを通じてアクセス可能な単一のサービスエンドポイントで動作します。
+OpenBao は、2 つの異なるネットワークルートを通じてアクセス可能な単一のサービスエンドポイントで動作します。
 
 1. **内部ルート（Rails）**: 外部インフラをバイパスした直接クラスター通信
 2. **外部ルート（Runners）**: ロードバランサーとパブリックエンドポイントを通じたインターネットアクセス可能なパス
 
 このアーキテクチャにより、同じ OpenBao インスタンスが内部の GitLab Rails リクエストを効率的に処理しながら、適切なネットワークインフラを通じて外部のランナーからもアクセス可能になります。
 
-#### 必要な拡張
+#### 必要な拡張 {#required-enhancements}
 
 この機能の GA 前にセキュリティを向上させるために OpenBao の拡張が必要です。これらについては以下で詳しく説明します。
 
-##### マルチアンシール機能
+##### マルチアンシール機能 {#multi-unseal-capabilities}
 
-アンシールメソッドが障害を起こして回復不能な状態になった場合、OpenBao は今日ではシークレットを復号化できず、起動に失敗します。インフラの停止の場合、これにより回復が困難になります。アップストリームの Vault Enterprise は [Seal HA 機能](https://developer.hashicorp.com/vault/docs/configuration/seal/seal-ha)を導入しており、その設計は [Seal Wrapping](https://developer.hashicorp.com/vault/docs/enterprise/sealwrap) の追加要件によって影響を受けています。OpenBao には Seal Wrapping がなく、[以前の撤回された PR](https://github.com/hashicorp/vault/pull/18683) に似た設計に依存できます。
+アンシールメソッドが障害を起こして回復不能な状態になった場合、OpenBao は今日ではシークレットを復号化できず、起動に失敗します。インフラの停止の場合、これにより回復が困難になります。アップストリームの Vault Enterprise は [Seal HA 機能](https://developer.hashicorp.com/vault/docs/configuration/seal/seal-ha)を導入しており、その設計は [Seal Wrapping](https://developer.hashicorp.com/vault/docs/enterprise/sealwrap)の追加要件によって影響を受けています。OpenBao には Seal Wrapping がなく、[以前の撤回された PR](https://github.com/hashicorp/vault/pull/18683)に似た設計に依存できます。
 
-複数の並列アンシールメカニズムを許可し、それぞれが同じルートキーを暗号化することができます。これにより、自動アンシールと Shamir の混合が可能になり、自動アンシールメカニズムが利用できなくなったり、キーが失われたりした場合のハイブリッド回復手順が可能になります。特に、ルートキーの再利用は問題ありません。別個のルートキーを持つアンシールキーマテリアルの損失（ルートキーの整合性を侵害する）は、バリア暗号化キーの回復を依然として可能にします。ルートキーのローテーションには、すべてのアンシールメカニズムがオンラインであるか、使用前に削除される必要があります。ただし、暗号化されたエントリはルートキーだけであるため、メカニズムの組み合わせで暗号化されたシークレットに対処する必要はありません。
+複数の並列アンシールメカニズムを許可し、それぞれが同じルートキーを暗号化することができます。これにより、自動アンシールと Shamir の混合が可能になり、自動アンシールメカニズムが利用できなくなったり、キーが失われたりした場合のハイブリッド回復手順が可能になります。特に、ルートキーの再利用は問題ありません。ルートキーを別々にした場合でも、アンシール鍵の素材が失われてルートキーの完全性が損なわれれば、バリア暗号化キーを復元できてしまいます。ルートキーのローテーションには、すべてのアンシールメカニズムがオンラインであるか、使用前に削除される必要があります。ただし、暗号化されたエントリはルートキーだけであるため、メカニズムの組み合わせで暗号化されたシークレットに対処する必要はありません。
 
-##### ネームスペースによるマルチテナンシー
+##### ネームスペースによるマルチテナンシー {#multi-tenancy-through-namespaces}
 
-これは [OpenBao v2.3.0 でランディング](https://github.com/openbao/openbao/releases/tag/v2.3.0)しました。
+これは [OpenBao v2.3.0 で実装](https://github.com/openbao/openbao/releases/tag/v2.3.0)しました。
 
 <details>
 <summary>OpenBao ネームスペースのレガシー説明</summary>
@@ -668,32 +669,32 @@ OpenBao は、2つの異なるネットワークルートを通じてアクセ�
 
 OpenBao には [Vault Enterprise のネームスペース](https://developer.hashicorp.com/vault/docs/enterprise/namespaces)がありません。これらはアップストリームで議論されているように、[テナントの論理的な分離](https://github.com/orgs/openbao/discussions/293)を可能にします。特に、ネームスペース内の管理者に限定されたスコープの `sys/` 機能を付与できます。
 
-- [`sys/auth`](https://openbao.org/api-docs/system/auth/): 新しい auth プラグインをマウントするため。
+- [`sys/auth`](https://openbao.org/api-docs/system/auth/): 新しい認証プラグインをマウントするため。
 - [`sys/mounts`](https://openbao.org/api-docs/system/mounts/): 新しいシークレットエンジンプラグインをマウントするため。
 - [`sys/namespaces`](https://openbao.org/api-docs/system/namespaces/): ネストされたネームスペースを許可するため。
 - [`sys/policies`](https://openbao.org/api-docs/system/policies/): ネームスペース制限されたポリシーを制御するため。
-- オプションとして [`sys/quotas/config`](https://openbao.org/api-docs/system/quotas-config/) と [`sys/quotas/rate-limit`](https://openbao.org/api-docs/system/rate-limit-quotas/): ネームスペース制限されたクォータを制御するため（テナントが独自のクォータを設定したい場合、グローバルクォータの制限に従います）。
+- オプションとして [`sys/quotas/config`](https://openbao.org/api-docs/system/quotas-config/)と [`sys/quotas/rate-limit`](https://openbao.org/api-docs/system/rate-limit-quotas/): ネームスペース制限されたクォータを制御するため（テナントが独自のクォータを設定したい場合、グローバルクォータの制限に従います）。
 
 この変更の目的は、お客様が OpenBao インスタンスと直接インタラクションできるようにし、パイプライン以外のワークロードを同じシークレットストアに持ち込めるようにすることです。
 
 さらに、ネームスペースにレイヤードシール暗号化を追加し、別個のルートキーとバリアキーリングを作成し、親ネームスペースのバリアキーと別個のアンシールメカニズムの両方で暗号化することができます。これにより、ネームスペース内で以下のスコープされた `sys/` ルートが公開される可能性があります。
 
 - [`sys/rotate`](https://openbao.org/api-docs/system/rotate/): ネームスペースごとのバリア暗号化キーのローテーション。
-- [`sys/rekey`](https://openbao.org/api-docs/system/rekey/) と [`sys/rekey-recovery-key`](https://openbao.org/api-docs/system/rekey-recovery-key/): ネームスペースごとのルートと回復キーのローテーション（ある場合）。
-- [`sys/seal`](https://openbao.org/api-docs/system/seal/) と [`sys/unseal`](https://openbao.org/api-docs/system/unseal/): ネームスペースのシールとアンシール。自動アンシールマウントをシールするには回復キーが必要です。
+- [`sys/rekey`](https://openbao.org/api-docs/system/rekey/)と [`sys/rekey-recovery-key`](https://openbao.org/api-docs/system/rekey-recovery-key/): ネームスペースごとのルートと回復キーのローテーション（ある場合）。
+- [`sys/seal`](https://openbao.org/api-docs/system/seal/)と [`sys/unseal`](https://openbao.org/api-docs/system/unseal/): ネームスペースのシールとアンシール。自動アンシールマウントをシールするには回復キーが必要です。
 
 お客様が GitLab からシークレットへのアクセスを取り消したい場合、ネームスペースをシールして GitLab が選択したアンシールメカニズムにアクセスできないようにすることができます。
 
 最後に、プラグインの多重化をネームスペース内でのみ許可することで、お客様のメモリ分離を強化できます。プラグインの外部ランナー（コンテナや cgroups など）と組み合わせることで、テナントデータをメモリ内でさらに分離できます。
 </details>
 
-##### 選択されたリーダー
+##### 選択されたリーダー {#chosen-leader}
 
 Geo クラスターで動作する場合、OpenBao のプライマリノードが Geo クラスターのプライマリサイトの定義と一致するようにしたいと考えます。Secondary サイトの OpenBao がリーダーになろうとしないように、PostgreSQL の読み取り専用レプリカで非投票ステータスを与えるように OpenBao を更新したいと思います。
 
-これは[アップストリームの PR](https://github.com/openbao/openbao/pull/1284) で提案されています。
+これは[アップストリームの PR](https://github.com/openbao/openbao/pull/1284)で提案されています。
 
-### デプロイメントシナリオ
+### デプロイメントシナリオ {#deployment-scenarios}
 
 シングルインスタンスのデプロイメント:
 
@@ -719,9 +720,9 @@ openbao:
   internal_host: "http://secrets-manager-internal.gitlab.net"  # Internal cluster
 ```
 
-### バックアップと復元
+### バックアップと復元 {#backup-and-restore}
 
-このソリューションのバックアップと復元は2つの側面に集約されます。
+このソリューションのバックアップと復元は 2 つの側面に集約されます。
 
 1. データベース
 2. シールメカニズム
@@ -734,20 +735,20 @@ openbao:
 
 復元後、新しいデータを取り込むために OpenBao サービスを再起動してください。
 
-### ユースケーススタディ
+### ユースケーススタディ {#use-case-studies}
 
 - [CI ジョブでシークレットを使用する](studies/ci_job_secrets/)
 
-### さらなる調査が必要な事項
+### さらなる調査が必要な事項 {#further-investigations-required}
 
 1. GitLab Runner 以外のクライアントの認証。GitLab Runner は JWT を使用して認証しますが、他のタイプのクライアントには、シークレットを復号化するリクエストを認証するための安全で信頼性の高いメソッドが必要です。
-1. OpenBao のセルフマネージドインスタンスへのインストール方法を含むインフラのセットアップ。
+1. OpenBao の Self-Managed インスタンスへのインストール方法を含むインフラのセットアップ。
 1. GitLab の複数のグループ間でシークレットを共有する最善の実装方法。
 1. シークレットボールトをシールする必要があるインシデントのためのプロトコルとプロセスの確立。
 1. シークレットの保護と環境固有のルールをサポートする方法。
 1. プロジェクトまたはサブグループが別のトップレベルグループ/組織に移動された場合、シークレットを取り消すべきか？
 
-## 代替ソリューション
+## 代替ソリューション {#alternative-solutions}
 
 検討した他のソリューション:
 
@@ -755,14 +756,14 @@ openbao:
 - [セキュアファイル](https://docs.gitlab.com/ee/ci/secure_files/index.html)
 - ゼロからシークレット管理を実装する（[廃止済み](#superseded)を参照）。
 
-## 参照
+## 参照 {#references}
 
 以下のリンクはシークレット管理の概念に関連する追加情報を提供します。
 
-- [OWASP Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html)
-- [OWASP Key Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html)
+- [OWASP シークレット管理チートシート](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html)
+- [OWASP 鍵管理チートシート](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html)
 
-## 担当者
+## 担当者 {#who}
 
 DRI:
 
