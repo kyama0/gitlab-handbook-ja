@@ -13914,19 +13914,19 @@
     },
     "content/handbook/engineering/releases/patch-releases/index.md": {
       "path": "content/handbook/engineering/releases/patch-releases/index.md",
-      "upstream_sha": "1baa88ac2579deb214fe3750bbd0b21139610306",
-      "translated_at": "2026-10-03T00:54:37+00:00",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:12:48Z",
       "model": "codex",
-      "input_hash": "9c02537b7cfb7d03f7a973757f27afcad443fa137074bee17b6d0f5808f8936c",
-      "upstream_committed_at": "2026-10-01T14:22:07-06:00"
+      "input_hash": "21b4003b7cbfd459c603d78876fb546435f26df483b3edf68abbcab37c8431ae",
+      "upstream_committed_at": "2026-10-21T10:21:07-06:00"
     },
     "content/handbook/engineering/releases/stable_branches.md": {
       "path": "content/handbook/engineering/releases/stable_branches.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a12b53b4ffba2c17ce05de66e215ab8b320765702e03b1e475f01f0b1b3eaba9",
-      "upstream_committed_at": "2026-04-22T13:35:43+00:00"
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:12:48Z",
+      "model": "codex",
+      "input_hash": "5303dbbba852c9bde05108cfa1262679e6132f31692f7e1dc9a71f76900a4acb",
+      "upstream_committed_at": "2026-10-22T13:26:35+02:00"
     },
     "content/handbook/engineering/tax-credits.md": {
       "path": "content/handbook/engineering/tax-credits.md",
@@ -13946,11 +13946,11 @@
     },
     "content/handbook/engineering/testing/deployment_paths.md": {
       "path": "content/handbook/engineering/testing/deployment_paths.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e279eb6e665bbbace69b04cdac070f521ba1a5664e9fba91b339c90534b0a1a0",
-      "upstream_committed_at": "2025-12-16T08:16:24+11:00"
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:09:46Z",
+      "model": "codex",
+      "input_hash": "0d7b23cae25fcd5447e17f802a60412b6ab6bd1ff430320535e9497f8f4f7828",
+      "upstream_committed_at": "2026-10-21T10:21:07-06:00"
     },
     "content/handbook/engineering/testing/distribution.md": {
       "path": "content/handbook/engineering/testing/distribution.md",
@@ -14042,11 +14042,11 @@
     },
     "content/handbook/engineering/testing/quarantine-process.md": {
       "path": "content/handbook/engineering/testing/quarantine-process.md",
-      "upstream_sha": "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a",
-      "translated_at": "2026-10-06T22:28:57+00:00",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:09:46Z",
       "model": "codex",
-      "input_hash": "dea66f11f078e98b8cb55c59a575002da580b423cd9c19739ae005860bc37001",
-      "upstream_committed_at": "2026-10-05T13:20:55-07:00"
+      "input_hash": "ee7d31ecca47e9e2cab20768c64f203adab6e7b8814a5be23041459016f04b4c",
+      "upstream_committed_at": "2026-10-21T13:26:38+01:00"
     },
     "content/handbook/engineering/testing/risk-mapping.md": {
       "path": "content/handbook/engineering/testing/risk-mapping.md",
@@ -14082,11 +14082,11 @@
     },
     "content/handbook/engineering/testing/using-duo-to-debug-test-failures.md": {
       "path": "content/handbook/engineering/testing/using-duo-to-debug-test-failures.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-15T21:34:06Z",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:09:46Z",
       "model": "codex",
-      "input_hash": "3687441085775cb31b94376f19cb53d75f8739c09faf7f9a446e8b52743f11fa",
-      "upstream_committed_at": "2026-07-15T17:51:54+00:00"
+      "input_hash": "fb5dee30ec4f952c64f712dbd81dcd56cdd4ae9ffa1d5b6e82b1c8fdeb0b5d59",
+      "upstream_committed_at": "2026-10-21T13:26:38+01:00"
     },
     "content/handbook/engineering/workflow/_index.md": {
       "path": "content/handbook/engineering/workflow/_index.md",
@@ -24154,11 +24154,11 @@
     },
     "content/handbook/engineering/deployments-and-releases/deployments/index.md": {
       "path": "content/handbook/engineering/deployments-and-releases/deployments/index.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "19a5b325355a128599ab72baaa04360a2b23225002fa83e8dede33a7fdb2863b",
-      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:12:48Z",
+      "model": "codex",
+      "input_hash": "c11c7486216ef51754a5596fd6fc5469af7c8636516edb881d834ab743ae4e8b",
+      "upstream_committed_at": "2026-10-22T22:19:59+02:00"
     },
     "content/handbook/engineering/development/fulfillment/utilization/index.md": {
       "path": "content/handbook/engineering/development/fulfillment/utilization/index.md",
@@ -26050,11 +26050,11 @@
     },
     "content/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements.md": {
       "path": "content/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements.md",
-      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
-      "upstream_committed_at": "2026-10-19T11:41:55Z",
-      "translated_at": "2026-10-19T22:10:47+00:00",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "upstream_committed_at": "2026-10-22T16:11:45Z",
+      "translated_at": "2026-10-22T21:16:55Z",
       "model": "codex",
-      "input_hash": "03e78f4ae4345c1c8751675378cd2c4f88b3c8691d92c79ecb9a94289582349f"
+      "input_hash": "ffd8158b661d5574c01a0356796d500e19be6f28f152eea0ba76e5ce33f5691b"
     },
     "content/handbook/security/policies_and_standards/password-standard.md": {
       "path": "content/handbook/security/policies_and_standards/password-standard.md",
@@ -26234,11 +26234,11 @@
     },
     "content/handbook/security/product-security/psirt/runbooks/verifying-security-fixes.md": {
       "path": "content/handbook/security/product-security/psirt/runbooks/verifying-security-fixes.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "68d4090bd4c1e359c248b98779e1163e60c361e32ae6175c7428cb82de0b4851",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:16:55Z",
+      "model": "codex",
+      "input_hash": "45ec8c1b4f58ecd1aac8a1db0f85229036fa5581d3453f0594c488933cd3bb7a",
+      "upstream_committed_at": "2026-10-20T18:40:19+02:00"
     },
     "content/handbook/security/product-security/psirt/runbooks/working-with-sirt.md": {
       "path": "content/handbook/security/product-security/psirt/runbooks/working-with-sirt.md",
@@ -26466,11 +26466,11 @@
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/local-setup.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/local-setup.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T06:15:47+09:00",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:16:55Z",
       "model": "codex",
-      "input_hash": "f102e670197d2cb1907ea48aa3ee28806cd49ec36f05197620f0def9ebea8750",
-      "upstream_committed_at": "2026-07-07T12:09:18+01:00"
+      "input_hash": "9352c5657724ef058dd74fc2ab09b9e4e845c22597697bd52aef9acefee93d31",
+      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process.md",
@@ -35178,19 +35178,19 @@
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/developer_setup.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/developer_setup.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T07:10:00+09:00",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:16:55Z",
       "model": "codex",
-      "input_hash": "5851de829fc72e19e9e7b671cbbe33b892f082932bf47f860082c34b3a7c3e64",
-      "upstream_committed_at": "2026-08-13T15:10:33+03:00"
+      "input_hash": "7e599dc0ae465329335b3bc36f23946587fe5e10f921140e23bd618076aae888",
+      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_setup.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_setup.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T07:10:00+09:00",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "translated_at": "2026-10-22T21:16:55Z",
       "model": "codex",
-      "input_hash": "760e4302bcc53bb7f28f074c497448c507468d4ae93888d8b1e6bc81985046bb",
-      "upstream_committed_at": "2026-08-13T15:10:33+03:00"
+      "input_hash": "06d45ba348bad07ca62b709321df84677d5b42aa83bb8e4ba9fbff309d449095",
+      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_troubleshooting.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_troubleshooting.md",
@@ -40362,11 +40362,11 @@
     },
     "content/handbook/security/ai/ato-program-plan.md": {
       "path": "content/handbook/security/ai/ato-program-plan.md",
-      "upstream_sha": "ddc319726d9e3f1cfd7f88faf4798bf31af6bf10",
-      "upstream_committed_at": "2026-10-15T21:17:52Z",
-      "translated_at": "2026-10-20T12:09:51+00:00",
+      "upstream_sha": "322e725aa43e37884fdc7aeb27f1e822a696a656",
+      "upstream_committed_at": "2026-10-20T18:47:58Z",
+      "translated_at": "2026-10-22T21:16:55Z",
       "model": "codex",
-      "input_hash": "ba219ee5204bab97894d509218d7c7a7063c32c36c4569e1d9e53d1d5e53f651"
+      "input_hash": "3eca6445b1c172bf69c429d399083ab7a30f95131b08d512e58e4393aa7665a6"
     },
     "content/handbook/people-policies/india-ltd/india-eop-policy.md": {
       "path": "content/handbook/people-policies/india-ltd/india-eop-policy.md",

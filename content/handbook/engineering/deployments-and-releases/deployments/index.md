@@ -1,18 +1,18 @@
 ---
 title: "デプロイメント"
 upstream_path: /handbook/engineering/deployments-and-releases/deployments/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
+translated_at: "2026-10-22T21:12:48Z"
 translator: claude
 stale: false
-lastmod: "2026-06-02T14:47:42-06:00"
+lastmod: "2026-10-22T22:19:59+02:00"
 ---
 
-## 概要と用語
+## 概要と用語 {#overview-and-terminology}
 
 このページでは、GitLab.com へのアプリケーション変更のデプロイに関わる個々のステップを説明します。デプロイメントプロセスの遵守方法についてのガイダンスも記載されています。デプロイメントとリリースアプローチ全体の高レベルなビューについては、[デプロイメントとリリースのハンドブックページ](/handbook/engineering/deployments-and-releases/)をご覧ください。
 
-### リリースマネージャーによる自動デプロイのツアー
+### Release Manager による自動デプロイのツアー {#a-tour-of-auto-deploy-with-a-release-manager}
 
 
 {{< youtube "zdVzX5ZY7o4" >}}
@@ -22,9 +22,9 @@ lastmod: "2026-06-02T14:47:42-06:00"
 
 GitLab.com は 1 日に複数回更新を受け取ります。
 
-[release-tools](https://gitlab.com/gitlab-org/release-tools) プロジェクトの自動タスクがパッケージのビルドとデプロイを設定しています。
+[release-tools](https://gitlab.com/gitlab-org/release-tools)プロジェクトには、パッケージをビルドしてデプロイする自動タスクが設定されています。
 
-#### パッケージのビルド
+#### パッケージのビルド {#building-packages}
 
 - デプロイメント用の新しいブランチが月曜日から金曜日の間、毎時間作成されます。ブランチは CI テストを通過した（「グリーンビルド」の）最新コミットから作成されます。つまり、[`gitlab-org/gitlab`](https://gitlab.com/gitlab-org/gitlab) でスペックが失敗している場合、デプロイメントはそれ以上進めません。
 - その後、最新コミットに新しいバージョンがタグ付けされ、新しいパッケージのビルドが開始されます。
@@ -40,9 +40,9 @@ GitLab.com は 1 日に複数回更新を受け取ります。
 1. パッケージがタグ付けされ、ビルドプロセスが開始できます
 1. 2a. タグから Omnibus パッケージがビルドされます。
 
-   2b. 並行してクラウドネイティブ GitLab パッケージがビルドされます。
+   2b. 並行して Cloud Native GitLab パッケージがビルドされます。
 
-#### パッケージのデプロイ
+#### パッケージのデプロイ {#deploying-packages}
 
 - 15 分ごとに、自動タスクがビルド完了した最新パッケージを選択し、デプロイメントプロセスを開始します。
 
@@ -58,27 +58,36 @@ GitLab.com は 1 日に複数回更新を受け取ります。
 
    1b. 並行して、同じパッケージが [Staging-ref 環境 gstg-ref](/handbook/engineering/infrastructure-platforms/environments/#staging-ref) にデプロイされます
 1. 自動化された QA エンドツーエンド/統合テストが実行されます。gstg-cny を対象とするものと staging（gstg）を対象とする 2 セットのブロッキング QA テストが実行されます。これは、データベースなどのサービスを共有する複数のバージョンの GitLab コンポーネントがデプロイされた混在デプロイメント環境で発生する問題を露出させるために設計されています
-1. テスト通過後、パッケージは自動的に gprd-cny（[gitlab.com のカナリアステージ](/handbook/engineering/infrastructure-platforms/environments/#production-canary)）にデプロイされます。これにより、特定のプロジェクト（`gitlab-org/gitlab` など）と少量のエンドユーザートラフィックが新しいパッケージを使用することになります
+1. テスト通過後、パッケージは自動的に gprd-cny（[gitlab.com のカナリアステージ](/handbook/engineering/infrastructure-platforms/environments/#production-canary)）にデプロイされ、[カナリアステージの概要と使用方法](/handbook/engineering/infrastructure-platforms/environments/canary-stage)を確認できます。これにより、特定のプロジェクト（`gitlab-org/gitlab` など）と少量のエンドユーザートラフィックが新しいパッケージを使用することになります
 1. ステージングカナリアへのデプロイメントと同様に、2 セットの自動 QA エンドツーエンド/統合テストが実行されます。1 セットは本番カナリーステージを対象とし、もう 1 セットはメインステージを対象とします（新旧のコードがまだ機能していることを確認するため）。本番カナリー（gprd-cny）を対象とする `smoke` および `reliable` テストはブロッキングです
 1. [gitlab.com のカナリアステージ](/handbook/engineering/infrastructure-platforms/environments/#production-canary)で 30 分経過し、新しい例外やアラートが報告されていない場合、パッケージは [gitlab.com](/handbook/engineering/infrastructure-platforms/environments/#production) および [staging.gitlab.com](/handbook/engineering/infrastructure-platforms/environments/#staging) へのデプロイメントの準備が完了したと見なされます
-1. [gitlab.com](/handbook/engineering/infrastructure-platforms/environments/#production) および [staging.gitlab.com](/handbook/engineering/infrastructure-platforms/environments/#staging) へのプロモーションはリリースマネージャーによって手動でトリガーされます。`blocks deployments` ラベル付きの進行中のインシデントや変更リクエストにより、パッケージが gstg（ステージング）と gprd（本番）にデプロイされることが妨げられます。カナリー（gstg-cny と gprd-cny の両方）へのデプロイメントはブロックされません。マイグレーションはカナリーデプロイメント中に実行されるため、ブロックされません。ただし、デプロイ後マイグレーションはブロックされます
+1. [gitlab.com](/handbook/engineering/infrastructure-platforms/environments/#production) および [staging.gitlab.com](/handbook/engineering/infrastructure-platforms/environments/#staging) へのプロモーションは Release Managers によって手動でトリガーされます。`blocks deployments` ラベル付きの進行中のインシデントや変更リクエストにより、パッケージが gstg（ステージング）と gprd（本番）にデプロイされることが妨げられます。カナリー（gstg-cny と gprd-cny の両方）へのデプロイメントはブロックされません。マイグレーションはカナリーデプロイメント中に実行されるため、ブロックされません。ただし、デプロイ後マイグレーションはブロックされます
 1. ステージング環境へのデプロイメント
 1. 環境の健全性を評価するための本番チェックが実行されます。健全と判断された場合、パイプラインは自動的に継続します
 1. 本番環境へのデプロイメントはステージングより遅延して実行されます
 各デプロイメントは Slack チャンネル [#announcements](https://gitlab.slack.com/archives/C8PKBH3M5) に通知を送信します。
 デプロイメントの一部として、[release/tasks](https://gitlab.com/gitlab-org/release/tasks/) Issue トラッカーに QA Issue が作成され、変更が環境を通過していることをプロセスに関与する人々に通知します
 
-### デプロイ後マイグレーション（PDM）の実行
+### デプロイ後マイグレーション（PDM）の実行 {#post-deploy-migration-pdm-execution}
 
-GitLab.com パッケージをロールバック可能にするために、[デプロイ後マイグレーション](https://docs.gitlab.com/ee/development/database/post_deployment_migrations.html)は GitLab.com デプロイメントプロセスから独立しています。これらのマイグレーションは、デプロイ後マイグレーション（PDM）パイプラインを通じてステージングと本番環境で実行されます。PDM はリリースマネージャーが標準的な運用手順の一部として手動で実行します。本番インシデントのリスクを最小化しつつ、最小限のオーガニックトラフィックを確保するために、リリースマネージャーは APAC 営業終了と EMEA 営業開始の間の移行期間（おおよそ UTC 06:00 から 09:00 の間）に PDM 実行をスケジュールします。
+GitLab.com パッケージをロールバック可能にするために、[デプロイ後マイグレーション](https://docs.gitlab.com/ee/development/database/post_deployment_migrations.html)は GitLab.com デプロイメントプロセスから独立しています。これらのマイグレーションは、デプロイ後マイグレーション（PDM）パイプラインを通じてステージングと本番環境で実行されます。PDM は Release Managers が標準的な運用手順の一部として手動で実行します。本番インシデントのリスクを最小化しつつ、自然流入のトラフィックが最小限となるように、Release Managers は APAC 営業終了と EMEA 営業開始の間の移行期間（おおよそ UTC 06:00 から 09:00 の間）に PDM 実行をスケジュールします。
 
-標準的なサイクルは毎日実行ですが、実際の PDM 実行は GitLab.com の可用性に依存しており、重要なリリース管理プロセスに対応するために延期される場合があります。
+標準的なサイクルでは毎日の実行を目指しますが、PDM の実行は裁量で判断され、**毎日実行される保証はありません**。本番環境で PDM を実行すると、そのデプロイメントはロールバックできなくなります。そのため、Release Managers はロールバックの選択肢を残しておく必要がある場合や、チームがほかの作業に注力する必要がある場合に PDM を延期します。以下の場合、PDM は**実行されません**。
+
+- パッチリリースの準備、タグ付け、公開を行う期間である[パッチウィンドウ](/handbook/engineering/releases/patch-releases/#patch-window)中。
+- [月次リリース](/handbook/engineering/releases/monthly-releases/)のウィンドウ中。
+- `blocks deployments` ラベルが付いたインシデントや変更リクエストがアクティブな間（[デプロイメントブロッカー](#deployment-blockers)を参照）。
+- [本番変更ロック期間](/handbook/engineering/infrastructure-platforms/change-management/#production-change-lock-pcl)中や、ほかのリリース管理作業を行っている間。
+
+PDM は通常、ウィンドウ終了後の次の適切な実行時間に再開します。最も早い場合でも AMER の終業間際や APAC の始業時となるため、延期によって 1 日以上遅れる場合があります。
+
+PDM が保留中か実行済みかを確認するには、[Delivery：リリース情報ダッシュボード](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information)（内部）と[デプロイ後マイグレーションパイプラインのドキュメント](https://gitlab.com/gitlab-org/release/docs/-/tree/master/general/database-migrations/post-deploy-migration)を参照してください。質問がある場合は、[Release Managers に連絡してください](/handbook/engineering/deployments-and-releases/#how-to-contact-a-release-manager)。
 
 ![デプロイ後マイグレーションパイプライン](/images/engineering/deployments-and-releases/deployments/post-deploy-migration-pipeline.png)
 
 - [ソース](https://docs.google.com/presentation/d/1YRjA1dYCXNXp06VltDYlik1MdFyzUvaeXKk69mMPcA4/edit?usp=sharing)
 
-リリースマネージャーがデプロイ後マイグレーションパイプラインを実行する際の手順:
+Release Managers がデプロイ後マイグレーションパイプラインを実行する際の手順:
 
 1. ステージングでデプロイ後マイグレーションスクリプトが実行されます
 1. ステージングに対して QA テストが実行されます
@@ -88,21 +97,21 @@ GitLab.com パッケージをロールバック可能にするために、[デ�
 
 デプロイ後マイグレーションが実行されたかどうかを確認するには、[このガイド](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/post_deploy_migration/readme.md)をご覧ください。
 
-### デプロイメントロールバック
+### デプロイメントロールバック {#deployment-rollbacks}
 
-ロールバックはインシデントを軽減するための迅速かつ安全な方法です。以前のパッケージにロールバックすることでインシデントの原因を取り除きますが、修正がマージされ、パッケージ化され、デプロイ準備が整うまで以降のすべてのデプロイメントがブロックされます。リリースプロセスへの潜在的な混乱があるため、ロールバックを実行する権限を持つのは[リリースマネージャー](/handbook/engineering/deployments-and-releases/#release-managers)のみです。
+ロールバックはインシデントを軽減するための迅速かつ安全な方法です。以前のパッケージにロールバックすることでインシデントの原因を取り除きますが、修正がマージされ、パッケージ化され、デプロイ準備が整うまで以降のすべてのデプロイメントがブロックされます。リリースプロセスへの潜在的な混乱があるため、ロールバックを実行する権限を持つのは[Release Managers](/handbook/engineering/deployments-and-releases/#release-managers)のみです。
 
 ロールバックを決定する前に考慮すべき要素:
 
 1. ロールバックは利用可能ですか？[デプロイ後マイグレーション](/handbook/engineering/deployments-and-releases/deployments/#post-deploy-migration-pdm-execution)の最後の実行のパッケージにのみロールバックできます。適合性をテストするための [chatops コマンド](https://gitlab.com/gitlab-org/release/docs/-/blob/master/runbooks/rollback-a-deployment.md#1-gather-package-information)が利用可能です。
-1. インシデントは機能フラグで緩和できますか？多くの新しい変更には機能フラグが含まれています。機能フラグを特定してオフにすることが通常最も速い緩和策です。
+1. インシデントはフィーチャーフラグで緩和できますか？多くの新しい変更にはフィーチャーフラグが含まれています。フィーチャーフラグを特定してオフにすることが通常最も速い緩和策です。
 1. パッケージには数百の変更が含まれている可能性があり、ロールバックするとすべてが取り消され、特に月次リリース期限が近い場合は複数のチームに影響を与える可能性があることに注意してください。
 
 ロールバックが引き起こす混乱のレベルのため、通常は S1 または S2 インシデントの場合にのみロールバックをオプションとして検討します。インシデント緩和オプションの評価に関するより詳細な情報は[インシデントランブック](https://gitlab.com/gitlab-org/release/docs/-/blob/master/runbooks/incident.md)にあります。
 
-ロールバックを進めることを決定した場合、リリースマネージャーは[ロールバックランブック](https://gitlab.com/gitlab-org/release/docs/-/blob/master/runbooks/rollback-a-deployment.md#overview)に従ってください。
+ロールバックを進めることを決定した場合、Release Managers は[ロールバックランブック](https://gitlab.com/gitlab-org/release/docs/-/blob/master/runbooks/rollback-a-deployment.md#overview)に従ってください。
 
-#### ロールバックパイプライン
+#### ロールバックパイプライン {#rollback-pipeline}
 
 ロールバックは本質的に以前にデプロイされたパッケージの新しいデプロイメントです。以前にデプロイされたパッケージとして既に安定していることがわかっているため、ロールアウト全体のテストに費やす時間を安全に削減できます。
 
@@ -114,7 +123,7 @@ Gitaly と Praefect は GitLab Rails バージョンへの依存関係がある�
 
 ### デプロイメントブロッカー {#deployment-blockers}
 
-#### インシデントによるデプロイメントのブロック
+#### インシデントによるデプロイメントのブロック {#blocking-deployments-with-an-incident}
 
 > **警告:** `blocks deployments` フラグがアクティブな場合、マイグレーション（デプロイ後マイグレーション以外）は引き続き実行されます。詳細は [`blocks deployments` フラグは何をするのか？](#what-does-the-blocks-deployments-flag-do)をご覧ください。
 
@@ -123,27 +132,27 @@ Gitaly と Praefect は GitLab Rails バージョンへの依存関係がある�
 1. [インシデントを宣言する](https://gitlab.com/gitlab-com/runbooks/docs/incident-io-onboard/incident-management.md#how-to-raise-an-incident)（[インシデント](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)として）:
    - **severity1** または **severity2** インシデントを宣言すると、デフォルトで **デプロイメントがブロック**されます。
    - **severity3** および **severity4** を宣言すると、*「Blocks Deployments」* はデフォルトで **「no」** になります。
-   - **severity3 以下から severity2 以上**へ変更すると、手動で変更されていない限り、*「Blocks Deployments」* フラグが**設定**されます。
+   - **severity3 以下**から **severity2 以上**へ変更すると、手動で変更されていない限り、*「Blocks Deployments」* フラグが**設定**されます。
    - **severity2 未満**に重大度を下げると、手動で変更されていない限り、フラグが**解除**されてデプロイメントが許可されます。
 
 2. インシデント Slack チャンネルから `/incident field` コマンドを実行して[カスタムフィールド](https://gitlab.com/gitlab-com/runbooks/docs/incident-io-onboard/oncall.md#on-call-alert-handling-process)を更新し、*Block Deployments* で **「Yes」** を選択します。
 
-3. [#releases](https://gitlab.slack.com/archives/C0XM5UU6B) チャンネルでリリースマネージャーに通知します。
+3. [#releases](https://gitlab.slack.com/archives/C0XM5UU6B) チャンネルで Release Managers に通知します。
 
 ##### `blocks deployments` フラグは何をするのか？ {#what-does-the-blocks-deployments-flag-do}
 
 `blocks deployments` フラグが設定されている場合:
 
 - **カナリーデプロイメントは継続**: ステージングカナリー（gstg-cny）および本番カナリー（gprd-cny）へのデプロイメントはブロックされません
-- **マイグレーションはブロックされません**: データベースマイグレーションはカナリーデプロイメントの一部として実行されます。マイグレーションをブロックしたい場合は、[リリースマネージャーに連絡](/handbook/engineering/deployments-and-releases/#how-to-contact-a-release-manager)してください
+- **マイグレーションはブロックされません**: データベースマイグレーションはカナリーデプロイメントの一部として実行されます。マイグレーションをブロックしたい場合は、[Release Managers に連絡](/handbook/engineering/deployments-and-releases/#how-to-contact-a-release-manager)してください
 - **メイン環境へのプロモーションはブロック**: ステージング（gstg）と本番（gprd）へのプロモーションが防がれます
 - **デプロイ後マイグレーションはブロック**: デプロイ後マイグレーションパイプラインがブロックされます
 
 この設計により、メイン環境へのプロモーションにのみデプロイプレッシャーを生じさせながら、コード変更とマイグレーションの継続的な検証が確保されます。
 
-#### 変更ロック期間中のデプロイメントのブロック
+#### 変更ロック期間中のデプロイメントのブロック {#blocking-deployments-during-change-lock-periods}
 
-さらに、**すべての本番環境**（[カナリー]を含む）への自動デプロイメントは、変更ロック期間中に停止されます。現在、変更ロック期間は**毎週金曜日 23:00 UTC から月曜日 06:00 UTC の間**と、[スケジュールされた本番変更期間](/handbook/engineering/infrastructure-platforms/change-management/#production-change-lock-pcl)中です。
+さらに、**すべての本番環境**（[canary]を含む）への自動デプロイメントは、変更ロック期間中に停止されます。現在、変更ロック期間は**毎週金曜日 23:00 UTC から月曜日 06:00 UTC の間**と、[スケジュールされた本番変更期間](/handbook/engineering/infrastructure-platforms/change-management/#production-change-lock-pcl)中です。
 
 変更ロック期間中は、デプロイメントが **severity::1 の可用性またはセキュリティの Issue を修正する**場合、GitLab ChatOps を通じて手動デプロイメントをトリガーできます。
 
@@ -153,11 +162,11 @@ Gitaly と Praefect は GitLab Rails バージョンへの依存関係がある�
 1. [`blocks deployment` ラベル付きの進行中の変更 Issue](/handbook/engineering/infrastructure-platforms/change-management/#change-criticalities)
 1. [ステージングカナリー（gstg-cny）、ステージング（gstg）、本番カナリー（gprd-cny）、本番（gprd）を対象とするブロッキング（`smoke` および `reliable`）の自動エンドツーエンドテストの失敗](/handbook/engineering/testing/end-to-end-pipeline-monitoring/)
 
-リリースマネージャーは [EOC](/handbook/engineering/infrastructure-platforms/incident-management/#incident-response-roles) からの意見を得て、ブロックを上書きしてデプロイメントを継続することを決定できます。
+Release Managers は [EOC](/handbook/engineering/infrastructure-platforms/incident-management/#incident-response-roles) からの意見を得て、ブロックを上書きしてデプロイメントを継続することを決定できます。
 
 ## 重要なラベル {#labels-of-importance}
 
-### GitLab.com ピックラベル
+### GitLab.com ピックラベル {#gitlabcom-pick-label}
 
 通常のサイクルよりも高い優先度で GitLab.com にデプロイする必要があるコードには、`~"Pick into auto-deploy"` ラベルがあります。ブランチは 1 日を通じて定期的に作成されるため、スケジュールされたデプロイメントに含めるためにこのラベルは必要ありません。
 
@@ -177,15 +186,15 @@ Gitaly と Praefect は GitLab Rails バージョンへの依存関係がある�
 
 MR が GitLab.com にデプロイされているかどうかを確認する方法については [release/docs](https://gitlab.com/gitlab-org/release/docs/blob/master/general%2Fdeploy%2Fauto-deploy.md#auto-deploy-status) をご覧ください。
 
-## よくある質問
+## よくある質問 {#frequently-asked-questions}
 
-### マージリクエストはいつデプロイされますか？
+### マージリクエストはいつデプロイされますか？ {#when-will-my-merge-request-be-deployed}
 
 現在、[特定のタイムライン](/handbook/engineering/deployments-and-releases/deployments/#gitlabcom-deployments-process)で自動デプロイブランチを作成しています。現在の Mean Time To Production の時間と目標については、[インフラストラクチャパフォーマンス指標ページ](/handbook/engineering/infrastructure/performance-indicators/#mean-time-to-production-mttp)で確認できます。
 
 [ピックラベル付き](/handbook/engineering/deployments-and-releases/deployments/#gitlabcom-pick-label)のマージリクエストの場合、プロセスは異なります。
 
-### マージリクエストが現在どの環境にあるかを確認するにはどうすればよいですか？
+### マージリクエストが現在どの環境にあるかを確認するにはどうすればよいですか？ {#how-can-i-determine-what-environment-my-merge-request-is-currently-in}
 
 [release tools](https://gitlab.com/gitlab-org/release-tools/) は MR の `workflow::` ラベルを使用して、マージリクエストが[デプロイメントプロセス](#gitlabcom-deployments-process)のどのステージにあるかを示します。例えば、マージリクエストに `workflow::production` ラベルがあれば、本番環境にデプロイされたことを示します。
 
@@ -195,19 +204,19 @@ MR が GitLab.com にデプロイされているかどうかを確認する方�
 
 高い[重大度](/handbook/product-development/how-we-work/issue-triage/#severity)の可能性があるリグレッションが見つかった場合は、すぐに[デプロイメントブロッカー](/handbook/engineering/deployments-and-releases/deployments/#deployment-blockers)の手順に従ってデプロイメントを停止してください。
 
-[月次リリース](/handbook/engineering/releases/)前の高重大度のバグについては、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B) でリリースマネージャーにも通知してください。
+[月次リリース](/handbook/engineering/releases/)前の高重大度のバグについては、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B) で Release Managers にも通知してください。
 
-### デプロイ後マイグレーションの問題が見つかりました。次は何をすればよいですか？
+### デプロイ後マイグレーションの問題が見つかりました。次は何をすればよいですか？ {#i-found-a-problem-with-a-post-deployment-migration-what-do-i-do-next}
 
-デプロイ後マイグレーションが GitLab.com で実行されないようにするには、すぐに[デプロイメントブロッカー](#deployment-blockers)の手順に従い、リリースマネージャーに通知してください。月次リリースに含まれないように、デプロイ後マイグレーションを元に戻す作業を進めてください。
+デプロイ後マイグレーションが GitLab.com で実行されないようにするには、すぐに[デプロイメントブロッカー](#deployment-blockers)の手順に従い、Release Managers に通知してください。月次リリースに含まれないように、デプロイ後マイグレーションを元に戻す作業を進めてください。
 
-## リソース
+## リソース {#resources}
 
 | 説明                     | 場所                |
 |--------------------|---------------------|
 | デプロイメントオーケストレーション | [リンク](https://gitlab.com/gitlab-org/release-tools/) |
 | デプロイメントドキュメント | [リンク](https://gitlab.com/gitlab-org/release/docs) |
 | リリース関連タスクの Issue トラッカー | [リンク](https://gitlab.com/gitlab-org/release/tasks/) |
-| デリバリーグループの Issue トラッカー | [リンク](https://gitlab.com/gitlab-com/gl-infra/delivery/issues) |
-| リリースマネージャースケジュール | [リンク](/handbook/engineering/releases/release-managers/) |
+| Delivery グループの Issue トラッカー | [リンク](https://gitlab.com/gitlab-com/gl-infra/delivery/issues) |
+| Release Managers スケジュール | [リンク](/handbook/engineering/releases/release-managers/) |
 | メンテナンスポリシー | [リンク](https://docs.gitlab.com/ee/policy/maintenance.html) |

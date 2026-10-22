@@ -2,9 +2,9 @@
 title: Security の ATO プログラム計画
 description: 戦略、役割、運営サイクル、AI Champions、スケジュールを含む、Security Division の AI トランスフォーメーションに向けたプログラム計画。
 upstream_path: "/handbook/security/ai/ato-program-plan/"
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-15T21:17:52Z"
-translated_at: "2026-10-20T12:09:51+00:00"
+upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
+lastmod: "2026-10-20T18:47:58Z"
+translated_at: "2026-10-22T21:16:55Z"
 translator: codex
 stale: false
 ---
@@ -23,12 +23,12 @@ Security は、GitLab が AI を拡大するために採用している [Hub & S
 
 ### プログラムに含まれるもの {#what-the-program-includes}
 
-- **AI Champions：** Security の AI 戦略を策定し、成果を出す、最大 10 人のチーム横断グループです。
+- **AI Champions：** Security の AI 戦略を形成し、成果を出す、最大 10 人のチーム横断グループです。
 - **AI オフィスアワー：** Security の誰でも参加できる、2 週間ごとのセッションです。
 - **AI パターンライブラリ：** 各チームの意見を取り入れて開発する、AI ツールの標準パターンです（リンクは後日追加）。
 - **報告：** ATO Council への週次の進捗報告と、Security のリーダー向けの定期的な要約です。
 
-プログラムは Bryan Lokey（ATO）が主導し、Destiny Jenkins（Program Coordinator）が調整します。すべての役割と責任は、[役割と担当者](#roles-and-owners)を参照してください。
+プログラムは Security ATO が主導し、Security Program Coordinator が調整します。すべての役割と責任は、[役割と担当者](#roles-and-owners)を参照してください。
 
 ### 支援を受ける {#getting-help}
 
@@ -38,7 +38,7 @@ Security は、GitLab が AI を拡大するために採用している [Hub & S
 
 ### 指針 {#guiding-principles}
 
-- AI 固有の防御策よりも、基本的なセキュリティ対策を優先します。
+- 強固なセキュリティの基本対策を最優先にします。AI 固有の防御策は基本対策に追加するものであり、置き換えるものではありません。
 - AI Champions は、状況の報告に加えて、成果を出す責任を負います。
 - 各取り組みの開始時に、現実的な期待値を設定します。
 - パターンは、それを利用するチームと共同で開発します。
@@ -47,7 +47,7 @@ Security は、GitLab が AI を拡大するために採用している [Hub & S
 
 ## 戦略 {#strategy}
 
-AI Champions が Security の AI 戦略を策定し、ATO がそのプロセスを支援します。AI Champions は優先順位を決め、実践方法を定義し、目指す成果を選びます。ATO はグループを招集し、障害を取り除き、取り組みを Enterprise AI および ATO Council につなぎます。
+AI Champions が Security の AI 戦略を形成し、ATO がそのプロセスを支援し、引き続き説明責任を負います。AI Champions は優先順位を決め、実践方法を定義し、目指す成果を選びます。ATO はグループを招集し、障害を取り除き、取り組みを Enterprise AI および ATO Council につなぎます。
 
 以下の柱は、出発点として提案するものです。AI Champions はキックオフ時に、これらを維持、変更、または置き換えることができます。
 
@@ -55,7 +55,7 @@ AI Champions が Security の AI 戦略を策定し、ATO がそのプロセス�
 
 | 柱 | 説明 | 指標の案 |
 | --- | --- | --- |
-| 統一 | [Corporate Security](/handbook/security/corporate/)、[Security Operations](/handbook/security/security-operations/)、[Product Security](/handbook/security/product-security/)を横断する 1 つの AI 戦略と、共通のツールパターン群 | ライブラリ内のパターンを複数のチームが利用していること |
+| 統一 | [Corporate Security](/handbook/security/corporate/)、[Security Assurance](/handbook/security/security-assurance/)、[Security Operations](/handbook/security/security-operations/)、[Product Security](/handbook/security/product-security/)を横断する 1 つの AI 戦略と、共通のツールパターン群 | ライブラリ内のパターンを複数のチームが利用していること |
 | 反復的な手作業の削減 | AI を利用して、反復的で手作業のセキュリティ業務を減らします | 反復的な手作業について合意した定義、基準値、削減量の追跡 |
 | 導入の促進 | AI Champions、オフィスアワー、共通パターンを通じて導入を支援します | オフィスアワーが予定どおり開催され、AI Champions が各チームで活動していること |
 
@@ -78,14 +78,13 @@ AI Champions が Security の AI 戦略を策定し、ATO がそのプロセス�
 
 | 役割 | 担当者 | 責任 |
 | --- | --- | --- |
-| AI Transformation Owner (ATO) | Bryan Lokey | AI Champions による Security の AI 戦略とロードマップの策定を支援し、ユースケースを評価し、部門内での構築内容をレビューし、exec sponsor と ATO Council に成果を報告します |
-| Program Coordinator | Destiny Jenkins | ミーティングを運営し、アクションアイテムを追跡し、週次報告をまとめ、プログラムのスケジュールを管理します |
-| AI Champions | Security 全体からの最大 10 人の推薦された人 | Security の AI 戦略を策定し、成果を出し、パターンを提供し、AI Champions ミーティングを交代で進行します |
-| 代理担当者 | 各チーム 1 人 | 所属チームの AI Champion が参加できない場合に、ミーティングに参加し、進捗を共有します |
-| Security のリーダー | Vice presidents、directors、managers | AI Champions を推薦し、活動時間を確保できるよう支援します |
-| Enterprise AI | Enterprise AI チーム | プラットフォーム、ツール、ガバナンスとセキュリティレビュー、部門横断の標準を担います |
-| 担当の AI Engineer | Enterprise AI 所属 | ATO とともにソリューション設計、プロトタイプ、本番環境への提供に取り組み、オフィスアワーに参加します |
-| Exec sponsor | Chaim Mazal | Security の優先順位を定め、大規模な問題や部門横断の問題を判断します |
+| AI Transformation Owner (ATO) | Security ATO | AI Champions ミーティングを主導し、AI Champions による Security の AI 戦略とロードマップの形成を支援し、ユースケースを評価し、部門内での構築内容をレビューし、exec sponsor と ATO Council に成果を報告します |
+| Program Coordinator | Security Program Coordinator | ミーティングの進行を支援し、アクションアイテムを追跡し、週次報告をまとめ、プログラムのスケジュールを管理します |
+| AI Champions | Security 全体からの最大 10 人の推薦された人 | Security の AI 戦略を形成し、成果を出し、パターンを提供し、一部の AI Champions ミーティングを主導します |
+| Security leaders | Vice presidents、directors、managers | AI Champions を推薦し、活動時間を確保できるよう支援します |
+| Enterprise AI | Enterprise AI チーム | AI プラットフォームとそのセキュリティを担います。これには、ツール、ガバナンスとセキュリティレビュー（SLA を公開し、説明責任を負うプラットフォームのレビュアー）、部門横断の標準が含まれます |
+| Assigned AI Engineer | Enterprise AI 所属 | ATO とともにソリューション設計、プロトタイプ、本番環境への提供に取り組み、オフィスアワーに参加します |
+| Exec sponsor | Chief Information Security Officer (CISO) | プログラムのエグゼクティブスポンサーとなり、大規模な判断や部門横断の判断のエスカレーション先を務めます |
 
 ## 運営サイクル {#operating-rhythm}
 
@@ -98,7 +97,7 @@ AI Champions が Security の AI 戦略を策定し、ATO がそのプロセス�
 | AI Champions ミーティング | 毎週 30 分（案） | ATO、AI Champions、Program Coordinator | 成果に合意し、進捗を共有し、障害を解消します |
 | ATO Council への進捗報告 | 毎週 | ATO | 毎週少なくとも 1 件、Security の AI の進捗を報告します |
 | AI オフィスアワー | 2 週間ごと | ATO が企画し、主催者は今後決定します。Security の全員が参加できます | AI に関する質問に答え、共通のニーズを特定します |
-| AI Champion デモ | 毎月 | ATO が主催し、AI Champions が発表します。Security の全員が参加できます | 進行中および完了した取り組みを部門全体で共有します |
+| AI Champions による情報共有 | 毎月 | ATO と AI Champions が準備し、ニュースレターまたは投稿として Security 全体に共有します | 進行中および完了した取り組みを部門全体で共有し、必要に応じて単発のデモを行います |
 | 四半期ビジネスレビュー | 四半期ごと | Director of Enterprise AI、ATO、Exec sponsor | 提供したものとその価値をレビューし、今後の計画、依存関係、リクエストを話し合います |
 
 曜日と時間は今後決定します。
@@ -112,7 +111,7 @@ AI Champions が Security の AI 戦略を策定し、ATO がそのプロセス�
 
 ## AI Champions {#ai-champions}
 
-AI Champions は、ATO の支援のもとで部門の AI 戦略を策定する、Security 全体から集まった小規模なグループです。
+AI Champions は、ATO の支援のもとで部門の AI 戦略を形成する、Security 全体から集まった小規模なグループです。
 
 ### 責任 {#responsibilities}
 
@@ -121,7 +120,7 @@ AI Champions は、ATO の支援のもとで部門の AI 戦略を策定する�
 - チームの同僚を指導します
 - 障害やフィードバックを ATO に報告します
 - 共通の AI パターンライブラリに貢献します
-- AI Champions ミーティングを交代で進行します
+- ATO と合意した場合に、一部の AI Champions ミーティングを主導します
 
 AI Champions には、ミーティングへの参加だけでなく、成果を出すことが期待されます。
 
@@ -138,11 +137,9 @@ AI Champions は、勤務時間の 5 〜 10% をプログラムに充てます�
 1. 推薦された人と、AI を頻繁に利用していることが知られている人の中から、チーム間のバランスを考慮して最終的なグループを選出します。各 AI Champion のマネージャーが、その参加を承認します。
 1. グループのメンバー数は、最大 10 人です。
 
-### 代理担当者と交代制 {#backups-and-rotation}
+### 活動可能な時間の変化 {#availability-changes}
 
-- 各チームは、そのチームの AI Champion が参加できない場合に出席する代理担当者を指名します。
-- AI Champions は、週次ミーティングを交代で進行します。予定されていた進行担当者が参加できない場合は、次の順番の人が進行します。
-- AI Champion が活動できる時間に変化があった場合は、リーダーが継続の可否を確認するか、後任を推薦します。
+AI Champion が活動できる時間に変化があった場合は、リーダーが継続の可否を確認するか、後任を推薦します。
 
 ## スケジュールとロードマップ {#timeline-and-roadmap}
 

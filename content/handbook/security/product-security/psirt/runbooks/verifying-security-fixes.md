@@ -1,11 +1,11 @@
 ---
 title: "セキュリティ修正の検証"
 upstream_path: /handbook/security/product-security/psirt/runbooks/verifying-security-fixes/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
+translated_at: "2026-10-22T21:16:55Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-10-20T18:40:19+02:00"
 ---
 
 アプリケーションセキュリティエンジニアによる修正のレビューは、修正を実装するエンジニアによって発動されます。脆弱性報告をトリアージしたセキュリティエンジニアが、修正に関するマージリクエストの検証を担当します。検証作業を行うエンジニアとしては、以下の手順に従ってください。
@@ -21,9 +21,9 @@ lastmod: "2026-02-12T20:47:52+00:00"
 **注**: 承認は `master` を対象とするマージリクエストに対してのみ必要です。バージョン付きの安定版ブランチ (`X-Y-stable-ee`) を対象とするマージリクエストには必要ありません。
 **注**: 上記のプロセスは GitLab の修正を検証するためのものです。他のサブコンポーネント (Omnibus GitLab、Gitaly、GitLab Pages) の修正を検証するプロセスは異なる場合があります。
 
-## ローカル GDK を使用したセキュリティ修正の検証
+## ローカル GDK を使用したセキュリティ修正の検証 {#validating-security-fix-using-local-gdk}
 
-1. GitLab Security プロジェクト (`https://gitlab.com/gitlab-org/security/gitlab`) を使用して、[Install GDK using alternative projects](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/install_alternatives.md#install-gdk-using-alternative-projects) の手順に従って GDK をインストールし、問題なく動作していることを確認します。
+1. GitLab Security プロジェクト (`https://gitlab.com/gitlab-org/security/gitlab`) を使用して、[別のプロジェクトを使用した GDK のインストール](https://gitlab-org.gitlab.io/gitlab-development-kit/install_alternatives/#install-gdk-using-alternative-projects) の手順に従って GDK をインストールし、問題なく動作していることを確認します。
 1. セキュリティ修正のあるマージリクエストに移動し、ブランチ名を特定します (ブランチ名は MR タイトルの下に表示されます。例: `User1` requested to merge `security-fix-branch` into `target-branch`)。
 1. ターミナルで `gitlab-development-kit/gitlab` フォルダに移動し、セキュリティ修正のあるブランチに切り替えて、コード変更を `gitlab` ディレクトリに取り込みます。
 1. まだ追加していない場合は、security リポジトリをリモートとして追加します:
@@ -31,24 +31,15 @@ lastmod: "2026-02-12T20:47:52+00:00"
 1. アクセスを確認します (origin と security の両方のリモートが表示されるはずです):
 `git remote -v`
 1. Security ブランチに切り替えます:
-     - 最新の security 変更を fetch する `git fetch security`
-     - 利用可能な security ブランチをリストする (オプション) `git branch -r | grep PATCH_BRANCH_NAME`
-     - 特定の MR ブランチをチェックアウトする `git checkout PATCH_BRANCH_NAME`
+     - 最新の security の変更を取得します `git fetch security`
+     - 利用可能な security ブランチを一覧表示します (オプション) `git branch -r | grep PATCH_BRANCH_NAME`
+     - 特定の MR ブランチをチェックアウトします `git checkout PATCH_BRANCH_NAME`
 1. `gdk restart` で GDK を再起動すると、GDK はセキュリティ修正が適用された状態で動作します。
 
 **注**: ブランチを切り替えると GDK の問題が発生する可能性があります。
 
-1. [GDK トラブルシューティングガイド](https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/troubleshooting/_index.md)を参照してください。
+1. [GDK トラブルシューティングガイド](https://gitlab-org.gitlab.io/gitlab-development-kit/troubleshooting/)を参照してください。
 1. #gdk Slack チャンネルで支援を求めてください。
-
-## Gitpod を使用したセキュリティ修正の検証
-
-1. 新しい Gitpod インスタンスを起動します https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/doc/howto/gitpod.md
-1. Gitpod インスタンスが起動したら、MR の右上にある `Code` オプションをクリックして、セキュリティ MR からパッチをダウンロードします。
-1. Gitpod インスタンスのターミナルで: `cat > mr.patch <hit return> <paste contents> <hit control+d>` を実行します。次に、パッチを適用します: `git apply mr.patch`
-1. Gitpod 上で GDK を再起動します: `gdk restart`
-1. GitPod のウェブサーバーに到達できるようにします: Gitpod の Ports ペインでポート 3000 の行を見つけ、ロックアイコンをクリックしてポートを公開します。
-同じ Ports ペインの同じポート 3000 の行で、URL をクリックして GitLab インスタンスにアクセスします。
 
 ## `package-and-qa` を使用したセキュリティ修正の検証 {#validating-security-fixes-using-package-and-qa}
 
@@ -65,12 +56,12 @@ lastmod: "2026-02-12T20:47:52+00:00"
 1. [Omnibus GitLab Mirror](https://gitlab.com/gitlab-org/build/omnibus-gitlab-mirror/) のパイプラインで、`Docker-branch` ビルドが完了するまで待ちます。
 1. その間に、
     - `registry.gitlab.com` にログインしていることを確認します。事前設定された Docker 認証情報、または [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) や [Deploy Token](https://docs.gitlab.com/ee/user/project/deploy_tokens/) を使用して、`docker login registry.gitlab.com` (使用しているものに応じて `nerdctl login registry.gitlab.com -u <username>`) コマンドでログインできます。
-    - Omnibus で [Set up volumes location](https://docs.gitlab.com/ee/install/docker/index.html#set-up-the-volumes-location) を完了します。
+    - Omnibus で [ボリュームの保存場所の設定](https://docs.gitlab.com/ee/install/docker/index.html#set-up-the-volumes-location) を完了します。
 1. `Docker-branch` が完了したら、ログの末尾までスクロールして、`registry.gitlab.com` にプッシュされた Docker イメージを見つけます。`Combined <AMD_64_TAG> and <ARM_64_TAG> tags to <FINAL_IMAGE>` の形式の行を探します。その `<FINAL_IMAGE>` が探しているものです。
 1. ローカル環境で Docker イメージを起動するには、[ドキュメント](https://docs.gitlab.com/ee/install/docker/index.html)に従い、`gitlab/gitlab-ee:latest` イメージを前のステップのものに置き換えます。
 1. インストールが完了するまで待ちます。その後、ブラウザで `0.0.0.0:80` にアクセスしてローカルインスタンスにアクセスできるようになります。
 
-## CVE のリクエスト
+## CVE のリクエスト {#requesting-cves}
 
 1. [gitlab-org/cves](https://gitlab.com/gitlab-org/cves/-/issues) リポジトリの Issue トラッカーにアクセスします。このリポジトリのテンプレートを使用して Issue を作成し CVE をリクエストします。
 1. GitLab self-managed バージョンに影響するすべての脆弱性 (CVSSv3 スコア > 0) について、新しい Issue を作成し `Internal GitLab Submission` テンプレートを選択して CVE 識別子をリクエストします。セキュリティリリースに含まれる一部のマージリクエストには CVE 識別子は不要であることに注意してください (例: 第三者依存関係のアップグレードのみ、gitlab.com 限定の Issue など)。
@@ -85,7 +76,7 @@ lastmod: "2026-02-12T20:47:52+00:00"
 1. Issue を提出します。Vulnerability Research チームによってレビューされます。質問があればフォローアップし、その後、CVE 識別子を割り当てるために提出されます。
 1. 各 CVE リクエスト提出について、関連するセキュリティ Issue とリンクします。CVE 識別子が割り当てられたら、関連 Issue にもその旨をコメントし、ブログ記事に確実に含まれるようにしてください。
 
-### CVE クレジット
+### CVE クレジット {#cve-credit}
 
 ほとんどの脆弱性は HackerOne 研究者またはチームメンバーのいずれかにクレジットされます。これらの報告は常に既存の CVE テンプレートを使用してクレジットされます。
 
@@ -101,7 +92,7 @@ Some suggestions are `@social_media_handle`, `FirstName LastName`, `FirstName La
 Our default credit will be `This vulnerability was reported by a customer` for customers and `This vulnerability was disclosed using our [Coordinated Disclosure Process](https://about.gitlab.com/security/disclosure/).` for other members of the wider GitLab community.
 ```
 
-## CVE の更新
+## CVE の更新 {#updating-cves}
 
 CVE が公開された後に更新するには、<https://gitlab.com/gitlab-org/cves> でマージリクエストを開き、`published/CVE-YYYY-IDIDID.json` を変更します。
 レビューとマージのために `gitlab-org/secure/vulnerability-research` にメンションします。Vulnerability Research チームが MITRE および/または NVD で CVE を更新する処理を行います。
