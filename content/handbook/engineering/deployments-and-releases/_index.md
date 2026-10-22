@@ -50,7 +50,7 @@ lastmod: "2026-06-02T14:47:42-06:00"
 
 現在のリリースマネージャーについては、GitLab の[リリースマネージャースケジュール](/handbook/engineering/releases/release-managers/)をご確認ください。
 
-### リリースマネージャーへの連絡方法
+### リリースマネージャーへの連絡方法 {#how-to-contact-a-release-manager}
 
 現在のリリースマネージャーに連絡するには:
 

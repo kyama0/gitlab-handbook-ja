@@ -1,68 +1,68 @@
 ---
 title: "デプロイワークフロー"
 upstream_path: /handbook/engineering/testing/deployment_paths/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
+translated_at: "2026-10-22T21:09:46Z"
 translator: claude
 stale: false
-lastmod: "2025-12-16T08:16:24+11:00"
+lastmod: "2026-10-21T10:21:07-06:00"
 ---
 
-## GitLabのデプロイワークフロー
+## GitLab のデプロイワークフロー {#gitlab-deployment-workflow}
 
-以下の図は、開発者のコミットからGitLab.comへの本番デプロイおよびセルフマネージドリリースまでの完全なデプロイワークフローを示しています。
+以下の図は、開発者のコミットから GitLab.com への本番デプロイおよびセルフマネージドリリースまでの完全なデプロイワークフローを示しています。
 
 ```mermaid
 graph TB
-    subgraph "開発者ワークフロー"
-        A[開発者がフィーチャーブランチにコミット] --> B[マージリクエストの作成]
-        B --> C[CI/CDパイプラインが実行]
-        C --> D[コードレビューと承認]
-        D --> E[デフォルトブランチへのマージ]
+    subgraph "Developer Workflow"
+        A[Developer commits to feature branch] --> B[Create Merge Request]
+        B --> C[CI/CD Pipeline runs]
+        C --> D[Code Review & Approval]
+        D --> E[Merge to default branch]
     end
     
-    subgraph "GitLab.comデプロイパス"
-        E --> F[デプロイヤーパイプラインがトリガー]
+    subgraph "GitLab.com Deployment Path"
+        E --> F[Deployer Pipeline Triggered]
         
-        F --> G["ステージングカナリアへのデプロイ<br/>gstg-cny"]
-        F -.並行.-> H["ステージングRefへのデプロイ<br/>gstg-ref<br/>サンドボックステスト"]
+        F --> G["Deploy to Staging Canary<br/>gstg-cny"]
+        F -.Parallel.-> H["Deploy to Staging Ref<br/>gstg-ref<br/>Sandbox Testing"]
         
-        G --> I["E2Eスモークテスト<br/>gstg-cnyを対象（ブロッキング）"]
+        G --> I["E2E Smoke Tests<br/>targeting gstg-cny (blocking)"]
         
-        I --> J["本番カナリアへのデプロイ<br/>gprd-cny"]
+        I --> J["Deploy to Production Canary<br/>gprd-cny"]
         
-        J --> K["E2Eスモークテスト<br/>gprd-cnyを対象（ブロッキング）"]
+        J --> K["E2E Smoke Tests<br/>targeting gprd-cny (blocking)"]
         
-        K --> L["待機期間<br/>30分"]
+        K --> L["Wait Period<br/>30 minutes"]
         
-        L --> M[手動プロモーション]
+        L --> M[Manual Promotion]
         
-        M --> N["ステージングへのデプロイ<br/>gstg"]
-        Q --> O["本番へのデプロイ<br/>gprd"]
+        M --> N["Deploy to Staging<br/>gstg"]
+        Q --> O["Deploy to Production<br/>gprd"]
         
-        M --> Q[本番チェック]
+        M --> Q[Production Checks]
         
-        O --> R[GitLab.comで稼動]
+        O --> R[Live on GitLab.com]
     end
     
-    subgraph "セルフマネージドリリースパス"
-        E --> S[デフォルトブランチにマージ]
-        S --> T["マンスリーリリースサイクル<br/>毎月第3木曜日"]
-        T --> U["ステーブルブランチの作成<br/>例: 17-2-stable-ee"]
-        U --> V["バージョンのタグ付け<br/>例: v17.2.0"]
-        V --> W["リリースパッケージのビルド<br/>Omnibus、Dockerなど"]
-        W --> X[packages.gitlab.comへの公開]
-        X --> Y["セルフマネージド<br/>インストールが利用可能"]
+    subgraph "Self-Managed Release Path"
+        E --> S[Merged to default branch]
+        S --> T["Monthly release cycle<br/>3rd Thursday of month"]
+        T --> U["Create stable branch<br/>e.g., 17-2-stable-ee"]
+        U --> V["Tag version<br/>e.g., v17.2.0"]
+        V --> W["Build release packages<br/>Omnibus, Docker, etc."]
+        W --> X[Publish to packages.gitlab.com]
+        X --> Y["Available for Self-Managed<br/>installations"]
         
-        V --> Z["パッチリリース<br/>月に2回"]
-        Z --> AA["パッチバージョンのタグ付け<br/>例: v17.2.1"]
+        V --> Z["Patch releases<br/>Twice monthly"]
+        Z --> AA["Tag patch version<br/>e.g., v17.2.1"]
         AA --> W
     end
     
-    subgraph "ドキュメントの更新"
-        E --> AB[mainでドキュメントが更新]
-        AB --> AC["docs.gitlab.comへのデプロイ<br/>1時間以内"]
-        U --> AD["ステーブルブランチのドキュメント<br/>例: docs.gitlab.com/17.2/"]
+    subgraph "Documentation Updates"
+        E --> AB[Docs updated on main]
+        AB --> AC["Deployed to docs.gitlab.com<br/>within 1 hour"]
+        U --> AD["Stable branch docs<br/>e.g., docs.gitlab.com/17.2/"]
     end
 
     style R fill:#1f77b4
@@ -71,12 +71,12 @@ graph TB
     style H fill:#9467bd
 ```
 
-## デプロイ後のマイグレーション
+## デプロイ後のマイグレーション {#post-deployment-migrations}
 
-デプロイ後のマイグレーションには専用のワークフローがあり、特定の時間枠内に実行されることは保証されません。デプロイチームは必要と判断したときに実行する権限を持っています。ただし、これらは常にリリース管理タスクの前に実行されます。
+デプロイ後のマイグレーションには専用のワークフローがあり、特定の時間枠内に実行されることは保証されません。通常は 1 日に約 1 回実行されますが、デプロイチームが実行を延期する場合もあります。たとえば、[パッチウィンドウ](/handbook/engineering/releases/patch-releases/#patch-window)、月次リリースウィンドウ、デプロイを妨げるインシデントの発生中などです。
 
 詳細については、デプロイハンドブックの[デプロイ後マイグレーション（PDM）の実行](/handbook/engineering/deployments-and-releases/deployments/#post-deploy-migration-pdm-execution)セクションを参照してください。
 
-## 関連ドキュメント
+## 関連ドキュメント {#related-documentation}
 
 デプロイプロセスの追加コンテキストについては、デプロイとリリースハンドブックの[パッケージのデプロイ](/handbook/engineering/deployments-and-releases/deployments/#deploying-packages)セクションを参照してください。

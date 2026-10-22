@@ -1,57 +1,54 @@
 ---
 title: "ステーブルブランチ"
 upstream_path: /handbook/engineering/releases/stable_branches/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
+translated_at: "2026-10-22T21:12:48Z"
 translator: claude
 stale: false
-lastmod: "2026-04-22T13:35:43+00:00"
+lastmod: "2026-10-22T13:26:35+02:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
-ステーブルブランチは、GitLabのお客様に提供されるGitLabリリースパッケージのソースです。バージョン管理されたリリースの基盤として機能し、あらゆるGitLabリリースプロセス（マンスリー、パッチ、内部）において確実に信頼できる状態を保つことが基本です。
+ステーブルブランチは、GitLab のお客様に提供される GitLab リリースパッケージのソースです。
+バージョン管理されたリリースの基盤として機能し、あらゆる GitLab リリースプロセス（月次、パッチ、内部）で
+信頼できる状態を保つことが不可欠です。
 
-## 原則
+## 原則 {#principles}
 
-- GitLabでは、ステーブルブランチをグリーンで信頼できる状態に保つことは全員の責任です。masterブランチの障害と同様に、ステーブルブランチの障害への対応は開発に関連するその他のすべてのことよりも優先されます。
-- ステーブルブランチは[メンテナンスポリシー](https://docs.gitlab.com/policy/maintenance/)に従ってバグ修正とセキュリティパッチを受け取ります。
-- ステーブルブランチは維持管理の取り組みやキャッチアップ的な修正改善（パフォーマンスの改善、ドキュメントの更新、specの修正など）も受け取ることができます。
+- GitLab では、ステーブルブランチのテストを成功させ、信頼できる状態に保つことは全員の責任です。master ブランチの失敗と同様に、ステーブルブランチの失敗への対応は、開発に関連するほかのすべての作業より優先されます。
+- ステーブルブランチには、[メンテナンスポリシー](https://docs.gitlab.com/policy/maintenance/)に従ってバグ修正とセキュリティパッチが適用されます。
+- ステーブルブランチには、維持管理の取り組みや、遅れていた修正・改善（パフォーマンス改善、ドキュメント更新、スペックの修正など）も適用できます。
 
-## ワークフロー
+## ワークフロー {#workflow}
 
-1. ステーブルブランチはマンスリーリリースの最初のリリース候補にタグが付けられるときに作成されます。
-1. 作成後、ステーブルブランチはリポジトリミラーリングを通じて[security](https://gitlab.com/gitlab-org/security)および[dev](https://dev.gitlab.org/)リポジトリに自動的に伝播されます。
-1. バグとセキュリティ修正は[メンテナンスポリシー](https://docs.gitlab.com/policy/maintenance/)に基づいてステーブルブランチに[バックポート](/handbook/engineering/releases/backports)されます。
-1. ステーブルブランチにバックポートされた変更は、GitLabバージョンとの互換性を保証するために[リリース環境](https://gitlab.com/gitlab-com/gl-infra/release-environments)に自動的にデプロイされます。
-1. パッチリリースと内部リリースはステーブルブランチのコンテンツから作成されます。
+1. ステーブルブランチは、月次リリースの最初のリリース候補にタグが付けられるときに作成されます。
+1. 作成後、ステーブルブランチはリポジトリミラーリングを通じて[security](https://gitlab.com/gitlab-org/security)および[dev](https://dev.gitlab.org/)リポジトリに自動的に反映されます。
+1. バグ修正とセキュリティ修正は、ステーブルブランチに[バックポート](/handbook/engineering/releases/backports)されます。これは[メンテナンスポリシー](https://docs.gitlab.com/policy/maintenance/)に基づいて行われます。
+1. ステーブルブランチにバックポートされた変更は、その GitLab バージョンとの互換性を保証するため、[リリース環境](https://gitlab.com/gitlab-com/gl-infra/release-environments)に自動的にデプロイされます。
+1. パッチリリースと内部リリースは、ステーブルブランチの内容から作成されます。
 
-## 特性
+## 特性 {#characteristics}
 
-- ステーブルブランチのアクセス権限は[メンテナンスポリシー](https://docs.gitlab.com/policy/maintenance/)に基づいています。[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)に関連付けられたステーブルブランチはGitLabメンテナーがマージできるようにオープンになっており、古いステーブルブランチはリリースマネージャーのみに制限されています。
-- セキュリティ修正と[リリース環境](https://gitlab.com/gitlab-com/gl-infra/release-environments)を考慮して、セキュリティリポジトリがステーブルブランチのSSOTとなります。
-- ステーブルブランチのテストは正規リポジトリとセキュリティリポジトリで同じですが、GitLabセキュリティリポジトリのみで利用可能なリリース環境を例外とします。
+- ステーブルブランチの権限は、[メンテナンスポリシー](https://docs.gitlab.com/policy/maintenance/)に基づきます。
+[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)に関連付けられたステーブルブランチでは GitLab メンテナーがマージできますが、古いステーブルブランチでは Release Managers のみに制限されます。
+- セキュリティ修正と[リリース環境](https://gitlab.com/gitlab-com/gl-infra/release-environments)を考慮し、security リポジトリがステーブルブランチの SSOT となります。
+- ステーブルブランチのテストは canonical リポジトリと security リポジトリで同じです。ただし、GitLab security リポジトリでのみ利用できるリリース環境は例外です。
 
-## ビルドインフラストラクチャ
+## ビルドインフラストラクチャ {#build-infrastructure}
 
-リリースアーティファクトはミラーリングされたリポジトリから専用のCIランナーインフラストラクチャを使用してビルドされます。
-どのミラーが存在するか、何がどこでビルドされるか、およびこのアーキテクチャの背後にある理由の詳細については、[ビルドインフラストラクチャドキュメント](/handbook/engineering/infrastructure-platforms/gitlab-delivery/build-infrastructure.md)を参照してください。
+リリースアーティファクトは、専用の CI ランナーインフラストラクチャを使い、ミラーリングされたリポジトリからビルドされます。
+どのミラーが存在するか、何がどこでビルドされるか、このアーキテクチャを採用した理由の詳細については、
+[ビルドインフラストラクチャのドキュメント](../infrastructure-platforms/gitlab-delivery/build-infrastructure.md)を参照してください。
 
 ## 壊れたステーブルブランチ {#broken-stable-branches}
 
-ステーブルブランチのパイプラインが失敗した場合、[壊れたmasterインシデント](/handbook/engineering/workflow/#broken-master-escalation)と同じエスカレーションプロセスに従います。ただし、1つの重要な違いがあります: **インシデントはmaster-broken-incidentsプロジェクトではなく、[gitlab-org/release/tasks](https://gitlab.com/gitlab-org/release/tasks)プロジェクトに作成されます**。
+ステーブルブランチのパイプラインが失敗すると、triage-ops が[gitlab-org/release/tasks](https://gitlab.com/gitlab-org/release/tasks)にインシデントを作成し、`#releases` に投稿します。壊れたステーブルブランチはパッチリリースやセキュリティリリースをブロックする可能性があるため、Release Managers がこれらのインシデントを監視します。これらは CI Health のインシデントではなく、自動的にはエスカレーションされません。
 
-**プロセスの概要:**
+失敗のトリアージや修正を行うには、[インシデントを割り当てられた場合](/handbook/engineering/workflow/#triage-broken-master)の手順に従ってください。
 
-- オートメーションがステーブルブランチの障害を検出し、適切なグループ/カテゴリラベルを付けてインシデントを作成します
-- Slack通知が帰属するグループチャンネルに送信されます
-- masterの壊れたインシデントと同じトリアージ、エスカレーション、解決手順が適用されます
-- インシデントは対処されない場合、同じ4時間のエスカレーションタイムラインに従います
+## しきい値を超えたステーブルブランチ {#stable-branches-over-threshold}
 
-エンジニアはステーブルブランチのインシデントをmaster-broken-incidentsと同じ優先度で扱う必要があります。これらは重要なリリースとセキュリティパッチをブロックする可能性があるためです。
-
-## しきい値を超えたステーブルブランチ
-
-- ステーブルブランチのパイプラインが[しきい値](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/blob/c2cf86eea7f0d566de0f9d8f9d9f3d904f073528/lib/shared/constants.rb#L22-26)（過去7日間）を超えると、**Issueが[正規](https://gitlab.com/gitlab-org/gitlab/-/issues?sort=created_date&state=opened&label_name%5B%5D=automation%3Apipeline-duration-threshold&label_name%5B%5D=automation%3Abot-authored&first_page_size=20)プロジェクトに作成され**、`automation:pipeline-duration-threshold`ラベルが付けられます。
-- [daily_pipeline_thresholds](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/pipeline_schedules)はIssueの作成と、過去24時間のしきい値違反の更新を既存のIssueへのコメントとして実行する責任があります。
-- Issueは最新の3つのステーブルブランチについて、ステーブルブランチとパイプラインティアの組み合わせに基づいて一意に作成されます。
+- ステーブルブランチのパイプラインが[しきい値](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/blob/c2cf86eea7f0d566de0f9d8f9d9f3d904f073528/lib/shared/constants.rb#L22-26)を超えると（過去 7 日間）、**[canonical](https://gitlab.com/gitlab-org/gitlab/-/issues?sort=created_date&state=opened&label_name%5B%5D=automation%3Apipeline-duration-threshold&label_name%5B%5D=automation%3Abot-authored&first_page_size=20)プロジェクトに Issue が作成され**、`automation:pipeline-duration-threshold` ラベルが付けられます。
+- [daily_pipeline_thresholds](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/pipeline_schedules)が Issue を作成し、過去 24 時間のさらなるしきい値違反も、既存の Issue へのコメントとして更新します。
+- 最新の 3 つのステーブルブランチについて、ステーブルブランチとパイプラインティアの組み合わせごとに、一意の Issue が作成されます。

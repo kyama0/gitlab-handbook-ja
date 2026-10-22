@@ -1,9 +1,9 @@
 ---
 title: "パッチリリース"
 upstream_path: /handbook/engineering/releases/patch-releases/
-upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
-lastmod: "2026-10-01T14:22:07-06:00"
-translated_at: "2026-10-03T00:54:37+00:00"
+upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
+lastmod: "2026-10-21T10:21:07-06:00"
+translated_at: "2026-10-22T21:12:48Z"
 translator: claude
 stale: false
 ---
@@ -43,7 +43,7 @@ stale: false
 
 ## パッチリリースの概要 {#patch-release-overview}
 
-パッチリリースは、[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)にバグ修正とセキュリティ修正をバックポートするために、[GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って実行されます。
+パッチリリースは、[GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従い、[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)にバグ修正とセキュリティ修正をバックポートするために実施されます。
 
 ### 他のリリースタイプとの関係 {#relationship-to-other-release-types}
 
@@ -78,6 +78,14 @@ GitLab エンジニアで以下を行いたい場合:
 
 - 詳細なセキュリティ脆弱性是正 SLA については、[セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)を参照してください。
 - 詳細なバグ脆弱性是正 SLA については、[バグ是正 SLA](/handbook/product-development/how-we-work/issue-triage/#severity-slos)を参照してください。
+
+## パッチウィンドウ {#patch-window}
+
+**パッチウィンドウ**は、Release Managers が[パッチリリースプロセス](#patch-release-process)を開始してから、パッケージが公開され、最終ステップが完了するまで、パッチリリースが進行している期間です。スケジュールされたパッチの場合、通常は目標リリース日の 2 日前に Release Managers が[GitLab.com へのセキュリティ修正のデプロイ](#patch-release-process)を開始した時点で始まり、リリース日に終了します。正確な開始と終了のタイミングは、リリースごとに異なります。
+
+パッチウィンドウ中、Release Managers は[GitLab.com のデプロイメントをロールバックする](/handbook/engineering/deployments-and-releases/deployments/#deployment-rollbacks)選択肢を維持します。本番環境で PDM を実行すると、そのデプロイメントはロールバックできなくなるため、パッチウィンドウ中は[デプロイ後マイグレーション（PDM）](/handbook/engineering/deployments-and-releases/deployments/#post-deploy-migration-pdm-execution)を**実行しません**。[月次リリース](/handbook/engineering/releases/monthly-releases/)の前後のウィンドウにも同じことが当てはまります。
+
+パッチウィンドウ中かどうかを確認するには、[Release Information ダッシュボード](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)（内部）を確認するか、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B)で質問してください。
 
 ## パッチリリースのタイプ {#patch-release-types}
 
@@ -206,7 +214,7 @@ GitLab チームメンバーは、今後のパッチリリースに関する以�
 
 セキュリティ脆弱性が二次的なバグを導入した場合、対応はその重大度によって異なります:
 
-- **脆弱性ではないバグ（S3 および S4）**: 適切なパスは、通常のパッチリリースプロセスに従って、パッチリリースが公開された後に canonical リポジトリで Issue を修正することです。
+- **脆弱性ではないバグ（S3 および S4）**: 適切なパスは、通常のパッチリリースプロセスに従って、パッチリリースが公開された後に canonical リポジトリで問題を修正することです。
 - **脆弱性ではないバグ（高重大度: S1 および S2）**: PSIRT と Release Managers に直ちに連絡し、次のステップを調整してください。一方的に取り消そうとしないでください。
 
-セキュリティ修正が公開されているかどうかに関わらず、いかなる取り消しも、進める前に**[PSIRT チーム](/handbook/security/product-security/psirt/)からの明示的な書面による承認が必要です**。緩和オプションとステップバイステップのガイダンスについては、[セキュリティマージリクエストによって導入されたバグの緩和方法](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/bugs_introduced_by_security_merge_request.md)ランブックを参照してください。
+セキュリティ修正が公開されているかどうかに関わらず、いかなる取り消しも、進める前に **[PSIRT チーム](/handbook/security/product-security/psirt/)からの明示的な書面による承認が必要です**。緩和オプションとステップバイステップのガイダンスについては、[セキュリティマージリクエストによって導入されたバグの緩和方法](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/bugs_introduced_by_security_merge_request.md)ランブックを参照してください。
