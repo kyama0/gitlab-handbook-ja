@@ -1,20 +1,20 @@
 ---
 title: SentinelOne EDR セットアップガイド
 upstream_path: /handbook/security/corporate/systems/sentinelone/setup/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "c9949657c5872e30f062664ae031e45198aa8562"
+translated_at: "2026-10-23T21:08:25+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-05T13:09:58-05:00"
+lastmod: "2026-10-23T12:38:14-05:00"
 ---
 
-## macOS
+## macOS {#macos}
 
-> **対応不要:** SentinelOne は Jamf MDM によって自動的にインストールされるため、インストール作業を行う必要はありません。
+> **対応不要：** SentinelOne を使用する地域の Mac では、Mac が [Fleet](/handbook/security/corporate/systems/macos/)に登録された後に SentinelOne が自動的にインストールされるため、インストール作業を行う必要はありません。
 
-## Linux
+## Linux {#linux}
 
-### 前提条件
+### 前提条件 {#pre-requisites}
 
 ファイル整合性の監視と侵入検知に Advanced Intrusion Detection Environment (AIDE) を使用している場合、AIDE に除外設定を作成する必要があります。AIDE と SentinelOne エージェントが同時に実行されていると、AIDE はデータベースを正しく更新できなくなります。AIDE は SentinelOne ディレクトリをスキャンしようとしますが、スキャンできないためです。
 
@@ -24,19 +24,19 @@ SentinelOne の除外を作成するには、`/etc/aide.conf` を編集して末
 echo '!/opt/sentinelone/mount' | sudo tee -a /etc/aide.conf
 ```
 
-### インストール
+### インストール {#installation}
 
-> 以下の手順は **Linux** ラップトップでのみ必要です。SentinelOne は macOS では Jamf MDM により既に自動でインストールされています。
+> 以下の手順は **Linux** ラップトップでのみ必要です。SentinelOne は macOS では Fleet への登録後にすでに自動インストールされています。
 
-1. 承認された Linux ディストリビューション (Ubuntu LTS) を使用していることを確認します。詳細は [承認済みオペレーティングシステム](https://internal.gitlab.com/handbook/security/corporate/operating-systems/) ページを参照してください。
+1. 承認された Linux ディストリビューション (Ubuntu LTS) を使用していることを確認します。詳細は [承認済みオペレーティングシステム](https://internal.gitlab.com/handbook/security/corporate/operating-systems/)ページを参照してください。
 
-1. 設定ファイルとインストーラ (DEB/RPM) を [ダウンロード](https://gitlab.com/gitlab-com/it/security/sentinelone-installers) します。
+1. 設定ファイルとインストーラ (DEB/RPM) を [ダウンロード](https://gitlab.com/gitlab-com/it/security/sentinelone-installers)します。
 
 1. 以下の例では、これらを次の場所に置き、パッケージ名を `sentinelagent` にリネームしたと仮定します。
 
-   > 設定ファイル: `~/.config/sentinelone/config.cfg`
-   > DEB パッケージ: `~/Downloads/sentinelagent.deb`
-   > RPM パッケージ: `~/Downloads/sentinelagent.rpm`
+   > 設定ファイル： `~/.config/sentinelone/config.cfg`
+   > DEB パッケージ： `~/Downloads/sentinelagent.deb`
+   > RPM パッケージ： `~/Downloads/sentinelagent.rpm`
 
 1. ラップトップのシリアル番号を取得します。
 
@@ -48,7 +48,7 @@ echo '!/opt/sentinelone/mount' | sudo tee -a /etc/aide.conf
 
     - `tanuki` を、GitLab のメールアドレスのユーザー名部分 (`@` 記号より前の部分、または [RFC2822 におけるローカルパート](https://www.rfc-editor.org/rfc/rfc2822)) に置き換えます。
     - `ABCD1234` をラップトップのシリアル番号に置き換えます。
-    - 編集された変数が GitLab メールとシリアル番号をハイフンで区切る形式で正しくフォーマットされていることを確認します。例: `S1_AGENT_CUSTOMER_ID=jdoe@gitlab.com-ABCD1234`。
+    - 編集された変数が GitLab メールとシリアル番号をハイフンで区切る形式で正しくフォーマットされていることを確認します。例：`S1_AGENT_CUSTOMER_ID=jdoe@gitlab.com-ABCD1234`。
 
 1. パッケージをインストールします (ディストリビューションによってコマンドは異なる場合があります)。
 
@@ -105,4 +105,4 @@ echo '!/opt/sentinelone/mount' | sudo tee -a /etc/aide.conf
 
 1. 前のステップの出力が表示されれば、すべての準備が整いました！
 
-    > うまく動かない場合は、[トラブルシューティング](/handbook/security/corporate/systems/sentinelone/troubleshooting) ハンドブックページの [Linux インストールエラー](/handbook/security/corporate/systems/sentinelone/troubleshooting#linux-installation-error) 手順を参照してください。
+    > うまく動かない場合は、[トラブルシューティング](/handbook/security/corporate/systems/sentinelone/troubleshooting)ハンドブックページの [Linux インストールエラー](/handbook/security/corporate/systems/sentinelone/troubleshooting#linux-installation-error)手順を参照してください。
