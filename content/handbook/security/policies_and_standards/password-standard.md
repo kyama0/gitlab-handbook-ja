@@ -37,7 +37,7 @@ GitLab のコンピューティングリソースに関わり、機密データ�
 
 **注: 技術的な制約により、システムが本標準の特定の設定をサポートできない場合は、本標準に最も近い設定を行わなければなりません。例外は[こちら](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/security-governance)で起票し、リクエスト Issue 内のマトリクスに従って関連するリスク評価と例外レビュー期限が割り当てられます。**
 
-### パスワード要件
+### パスワード要件 {#password-requirements}
 
 - 最小長 = 12 文字
 - 特殊文字 = 不要

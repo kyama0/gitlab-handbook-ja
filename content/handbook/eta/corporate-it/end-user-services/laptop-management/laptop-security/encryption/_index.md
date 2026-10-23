@@ -3,54 +3,35 @@ title: "ラップトップのディスク暗号化"
 aliases:
   - /handbook/security/corporate/end-user-services/laptop-management/laptop-security/encryption/
 upstream_path: /handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/encryption/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:37:15+09:00"
+upstream_sha: "c9949657c5872e30f062664ae031e45198aa8562"
+lastmod: "2026-10-23T12:38:14-05:00"
+translated_at: "2026-10-23T21:06:59+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
-すべてのラップトップでハードドライブのディスク暗号化を有効にする必要があります。Jamf ポリシーによりディスク暗号化は自動的に有効になります
+すべてのラップトップでフルディスク暗号化を有効にする必要があります。
 
-すべてのチームメンバーは、新しいラップトップの注文またはオンボーディング Issue でディスク暗号化の証明を提出する必要があります。
+すべてのチームメンバーは、新しいラップトップの注文またはオンボーディング Issue でディスク暗号化の証明を提出する必要がありました。
 
-## 構成手順
+## Apple macOS {#apple-macos}
 
-### Apple macOS
+> **対応は不要です：** 私たちは [Fleet](/handbook/security/corporate/systems/macos/)を使用して FileVault を自動的に有効にし、設定が誤っているラップトップを監視します。新しい Mac では、セットアップ中に FileVault が有効になります。手動登録した Mac では、有効にするためにログアウトして再度ログインするよう求められます。
 
-> **対応は不要です:** [Jamf](/handbook/security/corporate/systems/jamf)を使用してハードドライブ暗号化を自動的に有効にし、構成が誤っているラップトップを監視します。何かを構成する必要はありませんが、有効であることを確認することを推奨します。
+### 暗号化を確認し、証明を提出する {#verify-and-provide-proof-of-encryption}
 
-ラップトップのハードドライブが暗号化されていることを確保するには、FileVault を有効にする必要があります。
-
-1. Mac で、Apple メニュー ** > System Settings** を選択します。
-2. "Security & Privacy" アイコンをクリックします。
-3. "FileVault" タブをクリックします。
-4. FileVault がオンで、ドライブが暗号化されていることを確認します。
+1. **Apple メニュー** > **システム設定**を選択します。
+2. **プライバシーとセキュリティ**をクリックします。
+3. 下にスクロールして **FileVault** がオンになっていることを確認します。
+4. **Apple メニュー** > **この Mac について**を選択し、シリアル番号を表示します。
+5. 暗号化の証明を提出する必要がある場合は、両方のウィンドウを並べて表示し、1 枚のスクリーンショットを取得します。
 
 [ベンダードキュメント - FileVault で Mac のデータを保護する](https://support.apple.com/guide/mac-help/protect-data-on-your-mac-with-filevault-mh11785/mac)
 
-### Linux
+## Linux {#linux}
 
 OS を最初にセットアップするときにディスク暗号化を有効にする必要があります。後からこの機能を有効にすることは、不安定になる可能性があるため推奨されません。
 
-## 暗号化の証明
-
-フルディスク暗号化の証明を提出するには、使用しているシステムに応じて以下を実施してください。
-
-### Apple macOS
-
-フルディスク暗号化が有効である確認とシリアル番号を示す情報の両方を、2 つのウィンドウを並べて表示した 1 枚のスクリーンショットとして取得します。
-
-両方の情報は以下で確認できます:
-
-1. メニューバーで ** > System Settings** をクリックします。
-2. "Security & Privacy" アイコンをクリックします。
-3. "FileVault" タブをクリックします。
-4. 次にメニューバーで ** > About This Mac** をクリックします。
-5. 両方のウィンドウを並べてスクリーンショットを取得します
-
-### Linux
-
-`sudo dmsetup ls && sudo dmidecode -s system-serial-number && cat /etc/fstab` の出力を表示するスクリーンショットを取得します
+暗号化の証明を提出するには、`sudo dmsetup ls && sudo dmidecode -s system-serial-number && cat /etc/fstab` の出力を表示するスクリーンショットを取得します。

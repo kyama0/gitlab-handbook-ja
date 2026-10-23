@@ -4,9 +4,9 @@ description: Zoom の利用および設定ガイド
 aliases:
   - /handbook/security/corporate/end-user-services/supported-apps/zoom/
 upstream_path: /handbook/eta/corporate-it/end-user-services/supported-apps/zoom/
-upstream_sha: "81725dc1fe315a2e7d8a91637eb11f77d81b0ff7"
-lastmod: "2026-09-22T15:20:30-07:00"
-translated_at: "2026-09-23T21:13:12.279317+00:00"
+upstream_sha: "c9949657c5872e30f062664ae031e45198aa8562"
+lastmod: "2026-10-23T12:38:14-05:00"
+translated_at: "2026-10-23T21:08:25+00:00"
 translator: codex
 stale: false
 ---
@@ -15,11 +15,11 @@ Zoom は、社内および外部パートナーとのコミュニケーション
 
 ## プライバシーとセキュリティに関する注意 {#a-note-on-privacy-and-security}
 
-Zoom アプリは、Jamf を通じて EUS が直接管理しています。つまり、機能とセキュリティの両面でアプリを最新の状態に保つため、定期的に更新を自動配信しています。
+Zoom アプリは、Mac 上で Munki を通じて管理されています。つまり、機能とセキュリティの両面でアプリを最新の状態に保つため、定期的に更新を自動配信しています。
 
 また、GitLab 内で使用を有効にする前に、追加された新機能のセキュリティリスクをレビューしています。そのため、最新機能を使用できるまで遅延が生じる場合や、完全にブロックすることを決定する場合があります。
 
-Zoom を使用する際は、以下を確認してください:
+Zoom を使用する際は、以下を確認してください：
 
 - ラップトップの OS と Zoom アプリが最新であることを確認してください。更新が利用可能になるたびに、手順を示すデスクトップ通知を受け取ります。**更新されていない場合、アプリを使用できないことがあります**
 - 無制限の通話と高度な機能へ完全にアクセスするため、Zoom アプリに適切にサインインしていることを確認してください
