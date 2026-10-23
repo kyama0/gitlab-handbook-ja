@@ -2,31 +2,31 @@
 title: TaNewKi のヒント
 description: GitLab で開始する新入社員のガイド
 upstream_path: /handbook/people-group/general-onboarding/tanewki-tips/
-upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
-translated_at: "2026-09-13T21:18:06+00:00"
+upstream_sha: c9949657c5872e30f062664ae031e45198aa8562
+translated_at: "2026-10-23T21:25:29+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-10-23T12:38:14-05:00"
 ---
 
-## チームへようこそ
+## チームへようこそ {#welcome-to-the-team}
 
 GitLab に参加していただけることを大変嬉しく思います！このガイドでは、新入社員が入社前および最初の数週間に何を期待すべきかを説明します。
 
-## People Operations チームのご紹介
+## People Operations チームのご紹介 {#meet-the-people-operations-team}
 
 People Operations チームは、オンボーディングおよび GitLab での旅を通してあなたの主要なガイドとなります。People Operations チームのメンバーがオンボーディング Issue に割り当てられ、開始時にガイダンスを提供します。
 
-## オンボーディングの旅
+## オンボーディングの旅 {#your-onboarding-journey}
 
-### 初日の前
+### 初日の前 {#before-your-first-day}
 
-#### 機器のセットアップ
+#### 機器のセットアップ {#equipment-setup}
 
-- 候補者エクスペリエンススペシャリストチームから[ノートパソコン](/handbook/eta/corporate-it/end-user-services/laptop-management/) を注文するための指示が記載されたウェルカムメールに注意してください
+- Candidate Experience Specialist チームから[ノートパソコン](/handbook/eta/corporate-it/end-user-services/laptop-management/) を注文するための指示が記載されたウェルカムメールに注意してください
 - ノートパソコンはロックされており、正式な初日（開始日）にのみロック解除されることに注意してください。その後、以下に従って必要なオンボーディング手順と関連するアクセスを完了することができます。
 
-#### 書類
+#### 書類 {#documentation}
 
 - **米国の新入社員**: LawLogix で I9 を完了してください（開始日の 1 週間前にメールが届きます）
 - **ベルギー/日本の新入社員**: 給与関連の書類について People Operations からのメールを確認してください
@@ -36,51 +36,51 @@ People Operations チームは、オンボーディングおよび GitLab での
   - 韓国: Global Upside/Safeguard
 - **PEO 拠点**: PEO が必要な書類について連絡します
 
-#### 入社前のコミュニケーション
+#### 入社前のコミュニケーション {#pre-start-communications}
 
 - 他の新しいチームメンバーと出会うために TaNEWki コールに参加してください（開始の 1〜2 週間前に招待が送信されます）。
 - Okta（私たちの SSO/セキュリティアプリケーションポータル）から登録の招待を受け取ります。初日にオンボーディングウェルカムメールを受け取るまでは、このメールに対してアクションを起こさないでください。これにより、初日にアクセスレベルに関する問題が発生しないようにします。
-- あなたの GitLab メールアドレスは、姓のイニシャルとフルネームの姓を使用して @gitlab.com で作成されます。優先する名前や姓がある場合は、people_operations@gitlab.com に People Operations チームにメールを送って、優先する名前を知らせてください。**一部のセキュリティ制限が適用される場合があります。**
+- あなたの GitLab メールアドレスは、名の頭文字と姓の全体を使用して @gitlab.com で作成されます。優先する名前や姓がある場合は、people_operations@gitlab.com に People Operations チームにメールを送って、優先する名前を知らせてください。**一部のセキュリティ制限が適用される場合があります。**
 
-### 初日
+### 初日 {#first-day}
 
-#### 開始する
+#### 開始する {#getting-started}
 
 - 自分が快適と感じる時にいつでも仕事を始めてください — 私たちは [非線形ワークデイ](/handbook/company/culture/all-remote/non-linear-workday/#find-what-works-for-you) を取り入れています。ウェルカムメールは現地時間で午前 6 時頃に送信されます。
 - 個人メールでオンボーディング指示を確認してください：
     1. 開始日の前日に受け取った Okta メールに戻ります。このメールにより Okta アカウントを有効化でき、それぞれのノートパソコンセットアップと従うべき手順にリンクされます：
-        - [Mac OS](/handbook/eta/corporate-it/end-user-services/onboarding101/#laptop-setup-macbook)
-        - [Linux OS](/handbook/eta/corporate-it/end-user-services/onboarding101/#laptop-setup-linux)
+        - [macOS](/handbook/eta/corporate-it/end-user-services/onboarding101/#mac-setup)
+        - [Linux OS](/handbook/eta/corporate-it/end-user-services/onboarding101/#linux-setup)
     1. Okta アカウントを有効化し、ノートパソコンをセットアップしたら、ウェルカムメールを確認して GitLab ユーザー名を登録してください（GitLab メールにアクセスして）。
     1. その後、パーソナライズされた [GitLab オンボーディング Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) にアクセスできるようになります。
     1. 1Password（安全なパスワード管理用）からの招待も受け取ります。アカウントを有効化し、パスワードを個人ボールトに保存してください。
 
-#### オンボーディングのナビゲート
+#### オンボーディングのナビゲート {#navigating-onboarding}
 
 - オンボーディングプロセスは [自分のペース](/handbook/values/#self-service-and-self-learning) で進めますが、🔴 でマークされたアイテムは指定された日に完了する必要があります。他のタスクについては、日数の内訳はガイドラインとしてあるものなので、タスクを完了する必要があると感じて勤務時間を超えて働かないでください。
 - 時間をかけてください — オンボーディングには丸 2 週間が割り当てられています。マネージャー、オンボーディングバディ、GitLab 全体のサポートも受けられます。
 - 必要なときはいつでも [Compass](https://app.serval.com/new-request) または Slack を通じて People Operations チームまたは IT Ops に連絡してください。
 - オンボーディング Issue と該当するハンドブックページには有用なコンテンツがたくさんあります。上記の便利なツールセクションで便利なテキスト読み上げツールの 1 つを有効にし、休憩を取ることを忘れないでください。また、後で参照するために特定のハンドブックページをブックマークすることも自由にしてください（大きな赤い点 🔴 でマークされたものを除き、それらは即座のアクションを必要とします）。
 
-#### コミュニケーションツール
+#### コミュニケーションツール {#communication-tools}
 
 - 私たちは [非同期コミュニケーション](/handbook/communication/#asynchronous-communication) を取り入れたオールリモート企業です
 - [Slack](/handbook/tools-and-tips/slack/) は私たちの主要なコミュニケーションツールです — 他のチームメンバーや興味のあるグループとつながるために使用してください
 - 標準的なオフィスソフトウェアではなく、Google Workspace（[Gmail](https://workspace.google.com/intl/en/products/gmail/)、[Drive](https://workspace.google.com/intl/en/products/drive/)、Docs/Sheets）を使用します
 - チームメンバーは、特定のクエリに関するサポートや支援が必要な場合、[Compass](/handbook/eta/corporate-it/compass/compass-guide/) を通じて該当チームに連絡できます
 
-#### 2 週目以降
+#### 2 週目以降 {#week-two-and-beyond}
 
 - 役割ベースのトレーニングに段階的に焦点が移ることを期待してください
 - 役割のトレーニングは、メインのオンボーディング Issue、別のトレーニング Issue、または LevelUp に表示される場合があります
 - マネージャーとオンボーディングバディが役割の期待を通じてガイドします
 
-#### 機器
+#### 機器 {#equipment}
 
 - 開始日近くにノートパソコンが届かない場合は、`it-help@gitlab.com` にメールしてください（cc: `people_operations@gitlab.com`）
 - Mac が初めてですか？役立つヒントについては [ハンドブックページ](/handbook/tools-and-tips/mac/) を確認するか、[YouTube チュートリアル](https://www.youtube.com/watch?v=Ag3NWYr5CD8) を探してください
 
-#### アクセシビリティおよび配慮のサポート
+#### アクセシビリティおよび配慮のサポート {#accessibility--accommodations-support}
 
 GitLab では、誰もが所属し、誰もが貢献できます。新しいチームメンバーとして、初日から成功するために必要なツール、配慮、サポートを確保したいと考えています。私たちは障壁を取り除き、最高の自分を仕事に持ち込める環境を作るためにここにいます。
 
@@ -88,44 +88,44 @@ GitLab では、誰もが所属し、誰もが貢献できます。新しいチ�
 
 **注：適切なサポートを確保し、拒否されたリクエストを避けるために、私たちの標準的な提供以上の機器は購入前に承認が必要です。**
 
-##### 技術および機器のセットアップ
+##### 技術および機器のセットアップ {#technology--equipment-setup}
 
 - **標準機器**: すべての GitLab チームメンバーは、オフィス予算手当を通じて人間工学的な機器にアクセスでき、通常の IT プロセスを通じて技術にアクセスできます。
 - **配慮および調整**: 標準の提供以上の支援技術または特殊な機器は、Team Member Relations (TMR) チーム（`teammemberrelations@gitlab.com`）を通じてリクエストできます。
 - **デバイス構成**: IT チームは、標準のアクセシビリティ設定でノートパソコンを設定するか、特殊なソフトウェアのセットアップのために TMR と協力します。
 
-**[アクセシビリティテックスタック - アクセシビリティテクノロジー](/handbook/business-technology/entapps-documentation/application-accessibility/)**
+**[アクセシビリティ Tech Stack - アクセシビリティテクノロジー](/handbook/business-technology/entapps-documentation/application-accessibility/)**
 
-##### リモートワーク環境
+##### リモートワーク環境 {#remote-work-environment}
 
 - **標準のホームオフィス予算**: すべてのチームメンバーが利用できる標準的な人間工学的機器のための予算を提供しています — これらの標準アイテムについてはマネージャーと IT と協力してください。
 - **個別の配慮**: 標準の提供以上の特定の環境変更や特殊な機器が必要ですか？個別の評価、サポート、事前承認のために Team Member Relations チームに連絡してください。
 
-##### アクセシブルなコミュニケーション
+##### アクセシブルなコミュニケーション {#accessible-communication}
 
 - **ミーティングのアクセシビリティ**: ライブキャプション、通訳者、または代替フォーマットをマネージャーまたは IT チームを通じてリクエストしてください
 - **ドキュメントアクセス**: すべての資料は私たちのラーニングコンテンツアクセシビリティガイドラインに従っています - 特定のドキュメント形式が必要な場合は Diversity, Inclusion and Belonging (DIB) チームに連絡してください。入社後に `#diversity_inclusion_and_belonging` Slack チャンネルから連絡を取ることができます。
 
-##### 最初のステップ
+##### 最初のステップ {#your-first-steps}
 
-- **初日前**: 標準機器以外の職場の配慮や調整が必要な場合は、支援のために Team Member Relations チーム（teammemberrelations@gitlab.com）に連絡してください。
+- **Day 1 より前**: 標準機器以外の職場の配慮や調整が必要な場合は、支援のために Team Member Relations チーム（teammemberrelations@gitlab.com）に連絡してください。
 - **1〜3 日目**: GitLab ツール（Slack、Zoom、Google Workspace）のアクセシビリティ機能を探索してください。
 - **最初の週**: 標準の人間工学的機器については、マネージャーと IT と相談してください。特殊な配慮については、Team Member Relations チームに Compass（内部システム）でリクエストを送信してください。
 - **継続的に**: 標準機器のニーズには標準的な IT プロセスを使用し、継続的な配慮および/または調整をリクエストするために Compass（内部システム）を通じて Team Member Relations (TMR) チームに連絡してください。
 
-##### サポートネットワーク
+##### サポートネットワーク {#support-network}
 
 - **IT および Compass**: 標準機器のリクエストと技術サポートはすべてのチームメンバーが利用できます。
 - **Team Member Relations**: 個別の職場の配慮、調整、および標準の提供以上の個別のサポート。
 - **Diversity, Inclusion & Belonging (DIB) チーム**: Slack を通じたポリシーの質問とアクセシビリティのコンサルテーション。
 
-##### 私たちのコミットメント
+##### 私たちのコミットメント {#our-commitment}
 
 配慮にアクセスすることは、誰もが貢献できるインクルーシブな環境を作る一部です。私たちは継続的な改善と障壁の除去に取り組んでいます — サポートが必要な時はいつでも連絡してください。
 
-### 新入社員 FAQ: 知っておくべきすべて
+### 新入社員 FAQ: 知っておくべきすべて {#new-hire-faq-everything-you-need-to-know}
 
-#### 機器と経費
+#### 機器と経費 {#equipment-and-expenses}
 
 **Q: 開始日前に仕事関連のアイテムを購入して後で払い戻しを受けることはできますか？**
 
@@ -147,7 +147,7 @@ A: もちろんです！契約に署名する前に、開始後に内部ハン�
 
 A: はい！すべての新しいチームメンバーは、オフィス機器購入のために [バーチャルカード](https://internal.gitlab.com/handbook/finance/expenses/#equipment) を通じて 1,500 米ドル（または現地通貨換算額）を受け取ります。
 
-### 給与および福利厚生
+### 給与および福利厚生 {#payroll--benefits}
 
 **Q: 最初の給料はいつですか？**
 
@@ -161,7 +161,7 @@ A: マネージャーとできるだけ早く事前に計画された休暇に�
 
 A: 一般的に、場所によって異なりますが、開始日から 30 日間があります。30 日目に登録しても、カバレッジは開始日に遡って適用されます。
 
-### ストックオプションとエクイティ
+### ストックオプションとエクイティ {#stock-options--equity}
 
 **Q: E-Trade にはいつアクセスできますか？**
 
@@ -175,7 +175,7 @@ A: 契約に記載されているドル額またはオファープロセス中�
 
 A: ESPP の詳細は Total Rewards の下の [ハンドブック](/handbook/total-rewards/stock-options/#employee-stock-purchase-plan-espp) で利用できます。
 
-### システムアクセス
+### システムアクセス {#system-access}
 
 **Q: 開始日前に Okta アクセスメールを受け取りました。アクションを取るべきですか？**
 
@@ -185,7 +185,7 @@ A: 初日までアクションは必要ありません。初日に、Okta メー
 
 A: 可能ですが、推奨されません。将来 GitLab を離れる場合、アカウントは私たちのアクセス管理ポリシーに従って無効になります。GitLab キャリアの開始を記念するために新しいユーザー名を作成することをお勧めします。それでも個人ユーザー名の使用を希望する場合は、初日に IT Ops チームに連絡してください。
 
-### リモートワークと GitLab 文化
+### リモートワークと GitLab 文化 {#remote-work--gitlab-culture}
 
 **Q: リモート環境で関与し生産的でいるためのヒントはありますか？**
 
@@ -199,7 +199,7 @@ A: ローカルチームメイトを見つけてミートアップやコワー�
 
 A: [Family & Friends Day](/handbook/company/family-and-friends-day/) は、私たちの全社的な休日です。これらの日には、バーチャルオフィスを閉じ、すべてのミーティングを再スケジュールし、ウェルビーイングを優先するために目に見える休憩を取ります。スケジュールは [ハンドブック](/handbook/company/family-and-friends-day/) で利用可能です。
 
-## 役立つリソース
+## 役立つリソース {#helpful-resources}
 
 1. [Read Aloud: テキスト読み上げボイスリーダー](https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp?hl=en)
 1. [Rectangle App](https://rectangleapp.com/) - ウィンドウを簡単に移動およびサイズ変更
@@ -217,7 +217,7 @@ A: [Family & Friends Day](/handbook/company/family-and-friends-day/) は、私�
     - [Better Team Page](https://leipert-projects.gitlab.io/better-team-page/timezones/) - Okta サインインが必要
     - [Every Timezone](https://everytimezone.com/)
 
-## 略語辞典
+## 略語辞典 {#acronym-dictionary}
 
 [コミュニケーションハンドブックページ](/handbook/communication/#writing-style-guidelines) の 23 番目のポイントで概説されているように、GitLab ではできるだけ略語の使用を避けるよう努めていますが、時々忘れることがあります。以下に、ここで使用される一般的な略語を見つけることができ、それが役立つかもしれません。オンボーディング中にこのリストにないものに出会った場合は、遠慮なくマージリクエストで以下に追加してください！
 

@@ -19106,11 +19106,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
-      "translated_at": "2026-09-29T21:09:28+00:00",
+      "upstream_sha": "c9949657c5872e30f062664ae031e45198aa8562",
+      "translated_at": "2026-10-23T21:26:13+00:00",
       "model": "codex",
-      "input_hash": "2936fb398867350d9b45cc157f878e58125773ed69dbe89db0889462c29f6462",
-      "upstream_committed_at": "2026-09-29T15:57:32+02:00"
+      "input_hash": "47124c052c5c69ca074f92cbdf4677e4cd108fb7a82c8a226d19bcb0b422f499",
+      "upstream_committed_at": "2026-10-23T12:38:15-05:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -24242,11 +24242,11 @@
     },
     "content/handbook/security/corporate/systems/_index.md": {
       "path": "content/handbook/security/corporate/systems/_index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T06:09:23+09:00",
+      "upstream_sha": "c9949657c5872e30f062664ae031e45198aa8562",
+      "translated_at": "2026-10-23T21:24:58+00:00",
       "model": "codex",
-      "input_hash": "b8bb112205c0c7077c06ef3d8b270f444ea3036c476d3f6478f547aaafb3904e",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "2fca0dd5d1786597041b39aaf042c5740e62e462e0235b175606c1a62a07d38e",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/security/corporate/systems/google/_index.md": {
       "path": "content/handbook/security/corporate/systems/google/_index.md",
@@ -24898,11 +24898,11 @@
     },
     "content/handbook/security/corporate/systems/yubikey/2fa/_index.md": {
       "path": "content/handbook/security/corporate/systems/yubikey/2fa/_index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T07:19:19+09:00",
+      "upstream_sha": "c9949657c5872e30f062664ae031e45198aa8562",
+      "translated_at": "2026-10-23T21:25:29+00:00",
       "model": "codex",
-      "input_hash": "fa87e02c8e21412c31f8a51593765a22115592e8511000e1cf498035de5a14c1",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "b6c7bad81eaf84c45cfecd0052823bf538224f738436c345c9fc78e70f5c0d2e",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/security/corporate/systems/yubikey/2fa/android/_index.md": {
       "path": "content/handbook/security/corporate/systems/yubikey/2fa/android/_index.md",
@@ -31138,11 +31138,11 @@
     },
     "content/handbook/people-group/general-onboarding/tanewki-tips.md": {
       "path": "content/handbook/people-group/general-onboarding/tanewki-tips.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:18:06+00:00",
+      "upstream_sha": "c9949657c5872e30f062664ae031e45198aa8562",
+      "translated_at": "2026-10-23T21:25:29+00:00",
       "model": "codex",
-      "input_hash": "a8e71cedff7ba7a1b6911d9e5dd83e6945b539eb9f877ff2587cfdc4961eb936",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "2d9a19190dce79494efa7a5484448f0d9f5b301a27acfb25f7ddefab576dd9ae",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/people-group/employment-branding/_index.md": {
       "path": "content/handbook/people-group/employment-branding/_index.md",

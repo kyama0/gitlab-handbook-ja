@@ -2,14 +2,14 @@
 title: "Yubikey WebAuthn 2FA ユーザーガイド"
 description: "YubiKey は WebAuthn プロトコルを使用した二要素認証 (2FA) に使用します。YubiKey は他にも複数のプロトコル (OTP、U2F など) をサポートしていますが、GitLab では使用しません。このガイドでは、WebAuthn 用に YubiKey を使い始める方法を説明します。"
 upstream_path: /handbook/security/corporate/systems/yubikey/2fa/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T07:19:19+09:00"
+upstream_sha: c9949657c5872e30f062664ae031e45198aa8562
+translated_at: "2026-10-23T21:25:29+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-10-23T12:38:14-05:00"
 ---
 
-## オンボーディングガイド
+## オンボーディングガイド {#onboarding-guide}
 
 二要素認証 (2FA) に使用する YubiKey を受け取られたみなさん、おめでとうございます。Touch ID の使用に慣れているなら、YubiKey もほぼ同じように動作します。ただし指紋を登録する必要はありません。
 
@@ -23,21 +23,20 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 3. 各アプリケーションのガイドに従って、2FA 認証器として YubiKey を設定します。複数のアカウントがある場合は、各アカウントについてステップを繰り返します。
 
-    - [Okta ガイド](/handbook/eta/corporate-it/end-user-services/onboarding101/#macbook-step-5-okta-account-verification)
     - [Google ガイド](/handbook/security/guides/yubikey/2fa/google)
     - [GitLab ガイド](/handbook/security/guides/yubikey/2fa/gitlab)
 
 4. これで完了です！
 
-## 日々の利用
+## 日々の利用 {#day-to-day-usage}
 
-### 2FA で YubiKey を使用する
+### 2FA で YubiKey を使用する {#using-yubikey-for-2fa}
 
 今後、設定済みアプリケーションへのサインインを求められる際、QR コードが表示されたり、パスキーや Touch ID の使用を求められることがあります。Passkey や Touch ID と表示されていても、YubiKey をタッチすれば動作します。キーをタッチするか、プロンプト内の USB サムドライブのアイコンをクリックしてからキーをタッチするだけです。
 
 <img src="/images/security/corporate/systems/yubikey/yubikey-touchid.png" alt="YubiKey モデル" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-### 新しいアプリケーションの追加
+### 新しいアプリケーションの追加 {#adding-new-applications}
 
 今後 2FA を有効化するよう求められた際は、QR コードが表示されたら、Touch ID を有効化する際、またはパスキーを追加する際にキーをタップするだけです。
 
@@ -49,17 +48,17 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 <img src="/images/security/corporate/systems/yubikey/yubikey-passkey-step2.png" alt="YubiKey モデル" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-### モバイルデバイスでの YubiKey の使用
+### モバイルデバイスでの YubiKey の使用 {#using-yubikey-on-mobile-devices}
 
 NFC キーを設定済みの場合は、FaceID や生体認証を使用しない承認済みのモバイルアプリケーションに YubiKey でサインインする手順について、[Android](android/) と [iOS](ios/) のガイドを参照してください。
 
-### YubiKey を挿したままにするか取り外すか
+### YubiKey を挿したままにするか取り外すか {#leaving-yubikey-inserted-or-removing}
 
 よく寄せられる質問として、YubiKey を常に挿したままにすべきかというものがあります。
 
 これは個人の好みであり、ご自身の判断で使用できます。
 
-#### Nano キーは挿したままにする
+#### Nano キーは挿したままにする {#leave-a-nano-key-plugged-in}
 
 YubiKey を初めて使用する方で Touch ID に慣れている場合は、Nano キーを使用して挿したままにしておくことを推奨します。在宅勤務の場合は挿したままにしておけます。コーヒーショップ（リスクの低い場所）に行く場合でも問題ありません。
 
@@ -67,7 +66,7 @@ YubiKey を初めて使用する方で Touch ID に慣れている場合は、Na
 
 Nano キーは小さく、紛失しやすいです。Nano キーをお持ちなら、挿したままにするか、安全な場所に保管することを推奨します。決まった保管場所がないままポケットやラップトップバッグに入れないでください。ライフハックとして、USB-C ポート付きのワイヤレスヘッドホンを持っている場合、移動時の保管としてその底部に挿しておくことができます。
 
-#### NFC キーでの分離
+#### NFC キーでの分離 {#separation-with-nfc-keys}
 
 エンジニアリングやセキュリティ意識の高い人々の多くは（例: キーリングに付けた NFC キーを使用するなど）分離させることを好みますが、（例: モニターやドッキングステーションに挿したまま）常に挿したままにする人もいます。
 
@@ -97,13 +96,13 @@ NFC キーはラップトップを移動する際に折れやすいので、ラ�
 
 <img src="/images/security/corporate/systems/yubikey/yubikey-nfc-touch.jpg" alt="YubiKey NFC ポート" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-### その他の認証方式
+### その他の認証方式 {#other-authentication-methods}
 
 YubiKey は、FIDO2/WebAuthn（ハードウェアバインドのパスキー）、FIDO U2F、Yubico OTP、OATH-TOTP、OATH-HOTP、スマートカード (PIV)、OpenPGP など、幅広い認証方式をサポートしています。
 
 **GitLab では FIDO2/WebAuthn のみを使用しています。** これは **YubiKey ソフトウェアをインストールせずに** ラップトップ上でネイティブに動作します。USB ポートにキーを挿し、任意の Web サイトで 2FA やパスキーをセットアップする際に金色の接点にタッチするだけです。
 
-IT の観点では、Web アプリケーションで認証する際、ユーザーが（箱から出した状態の）YubiKey を挿し、Touch ID の代わりに（FIDO2/WebAuthn を使用するために）キーにタッチすることだけを期待しています。それ以外の使い方は、チーム（例: サイトリライアビリティエンジニア）のオンボーディング指示に含まれている場合を除き、各エンジニアの裁量に任されています。
+IT の観点では、Web アプリケーションで認証する際、ユーザーが（箱から出した状態の）YubiKey を挿し、Touch ID の代わりに（FIDO2/WebAuthn を使用するために）キーにタッチすることだけを期待しています。それ以外の使い方は、チーム（例: Site Reliability Engineer）のオンボーディング指示に含まれている場合を除き、各エンジニアの裁量に任されています。
 
 裁量で使用する上級パワーユーザー向け（IT が必須化やサポートをするものではない）には、[YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) のインストール、YubiKey へのオプションでの PIN コード設定、SSH や GPG キー保管への YubiKey の使用、スロット 1（短押し）とスロット 2（長押し）の設定なども歓迎です。
 
@@ -113,7 +112,7 @@ GitLab では Yubikey OTP は使用していないため、生成された文字
 
 `cccccbchbneclfhiefkkdgfkiuvukginvnhlefdcbuuc`
 
-### プライマリキーとセカンダリキー
+### プライマリキーとセカンダリキー {#primary-and-secondary-keys}
 
 YubiKey は車のキーに似ています。車のキーをなくすと車のエンジンを始動できません。セカンダリ／バックアップの車のキーがあれば、それでも約束の時間に間に合うように到着できます。
 
