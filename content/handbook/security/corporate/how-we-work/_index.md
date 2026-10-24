@@ -1,11 +1,11 @@
 ---
 title: 私たちの働き方（CorpSec）
 upstream_path: /handbook/security/corporate/how-we-work/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T06:06:19+09:00"
+upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
+translated_at: "2026-10-24T21:08:36.079799+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T20:57:11+02:00"
+lastmod: "2026-10-23T12:38:14-05:00"
 ---
 
 私たちには 4 つの働き方のアプローチがあります：
@@ -14,7 +14,7 @@ lastmod: "2026-08-13T20:57:11+02:00"
 
 2. **構成オペレーション** - CorpSec が責任を持つ [SaaS システム](/handbook/security/corporate/systems)の設定に関する日常的な小さな構成および変更リクエスト（1 時間未満）に対応します。これにはヘルプデスクアナリストからのエスカレーションも含まれます。リクエストは [Issue トラッカー](#issue-tracker)に Issue を作成し、`corpsec-priority::ops-high`（同日／翌日）または `corpsec-priority::ops-low`（同週／翌週）ラベルを追加してください。事前のガイダンスは Slack の Compass アプリ（上部検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com で求めることができ、オンコールチームメンバーが応答したり、適切なエンジニアにタグを付けたりします。
 
-3. **[エンジニアリングイテレーション](#iteration-cadences)** - 大きなリクエスト（1 時間以上）に対しては、チームのキャパシティと優先順位の競合に基づいてキューに入れられた、2 週間のアジャイルイテレーションスプリントサイクルがあります。これには他のチームのプロジェクトに関連する事前計画された実装作業も含まれます。Issue が作成されると、期日要件に基づいて優先順位を割り当て、バックログに追加するか、今後のイテレーション中にスケジュールします。Issue がイテレーションに追加されると、Issue 内で別途連絡されない限り、または担当エンジニアとの議論で別途連絡されない限り、2 週間サイクルの最終日までに完了することが期待できます。
+3. **[エンジニアリングイテレーション](#iteration-cadences)** - 大きなリクエスト（1 時間を超えるもの）に対しては、チームのキャパシティと優先順位の競合に基づいてキューに入れられた、2 週間のアジャイルイテレーションスプリントサイクルがあります。これには他のチームのプロジェクトに関連する事前計画された実装作業も含まれます。Issue が作成されると、期日要件に基づいて優先順位を割り当て、バックログに追加するか、今後のイテレーション中にスケジュールします。Issue がイテレーションに追加されると、Issue 内で別途連絡されない限り、または担当エンジニアとの議論で別途連絡されない限り、2 週間サイクルの最終日までに完了することが期待できます。
 
     > **可能な限り早く（理想的には 3 〜 6 週間前、ドラフトでも構いません）** Issue を作成してください。これによってキューに入り、土壇場のリクエストでチームメンバーが危機モードでバタバタすることを避けられます。あなたのチームが数か月前から知っていたのに、土壇場で 1 〜 2 日で何かを処理するように求めるような状況は避けようとしています。期日は数週間前に伝えられたはずです。
 
@@ -131,7 +131,7 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 - [ケイデンススケジュール](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/cadences)
 
-### 期日
+### 期日 {#due-dates}
 
 期日は依頼者によって設定された日付です。
 
@@ -139,16 +139,16 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 期日に関する期待値は、Issue の説明やコメントで言及することで、期日前に終わるイテレーションサイクルで作業が完了するようにします。
 
-## Issue ボードとリスト
+## Issue ボードとリスト {#issue-boards-and-lists}
 
-### ヘルプデスクアナリスト
+### ヘルプデスクアナリスト {#helpdesk-analysts}
 
 - （リスト） [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues)
   - （リスト） [プロビジョニングするベースラインエンタイトルメント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?sort=created_date&state=opened&label_name%5B%5D=BaselineEntitlementAR&label_name%5B%5D=IT%20System%3A%3ABaseline%20Entitlement&first_page_size=100)
   - （リスト） [チームメンバーアクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?sort=created_date&state=opened&label_name%5B%5D=AR-Approval%3A%3AManager%20Approved&label_name%5B%5D=IT%3A%3Ato%20do&first_page_size=100)
   - （リスト） [一時的なサービスプロバイダーのアクセスリクエスト](https://gitlab.com/gitlab-com/temporary-service-providers/lifecycle/-/issues/)
 
-### エンジニアリング
+### エンジニアリング {#engineering}
 
 - （レポート） [マネジメントステータスレポート（毎日更新）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/blob/main/status_report.md?ref_type=heads)
 - カンバンボード
@@ -172,7 +172,7 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
   - （リスト） [最終レビュー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Areview&first_page_size=20)
 - （リスト） 特定のシステム向けの Issue へのリンクは、[CorpSec Systems](/handbook/security/corporate/systems) ハンドブックページを参照してください。
 
-### エンジニアリングチームメンバー
+### エンジニアリングチームメンバー {#engineering-team-members}
 
 <table>
 <thead>
@@ -253,16 +253,16 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 </tbody>
 </table>
 
-### 時間トラッキング
+### 時間トラッキング {#time-tracking}
 
-Issue が優先順位付けされ、作業がスケジュールされたとき、`/estimate {##}h` を使用して時間見積（時間単位）を任意に追加できます。これにより、エンジニアは自身を一人のマネージャーとして、イテレーション終了日までに自分が思うように Issue に取り組むことができます。
+Issue が優先順位付けされ、作業がスケジュールされたとき、`/estimate {##}h` を使用して時間見積（時間単位）を任意に追加できます。これにより、エンジニアは Manager of One として、イテレーション終了日までに自分が思うように Issue に取り組むことができます。
 
 エンジニアが Issue に取り組むときに、`/spent {1.5}h` を任意で追加して進捗を追跡できます。これは任意ですが、2 つのメリットがあります：
 
 1. 時間見積が正確だったかどうかをエンジニアが検証できます。
 2. Issue にどれだけの作業が投入されたかをマネジメントチームに可視化します。
 
-エンジニアが時間消費を追加した Issue は、タイトルと消費時間とともに自動的にマネジメントチームステータスレポートに表示されます。時間消費のない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、30 〜 60 分以上かかる場合は、時間消費の追加を検討してください。何かが重要でステータスレポートに表示されるべきものなら、5 分の時間消費でも追加できます。
+エンジニアが時間消費を追加した Issue は、タイトルと消費時間とともに自動的にマネジメントおよびチームのステータスレポートに表示されます。時間消費のない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、30 〜 60 分以上かかる場合は、時間消費の追加を検討してください。何かが重要でステータスレポートに表示されるべきものなら、5 分の時間消費でも追加できます。
 
 時間トラッキングの代替手段として、[ウェイト](#weight)を参照してください。
 
@@ -274,14 +274,14 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 
 ウェイト 1 はおおよそ半日の作業（例：3 〜 4 時間のフォーカスブロック）に相当します。
 
-エンジニアがウェイトを追加した Issue は、タイトルとウェイト（時間見積が設定されている場合は時間見積も）とともに自動的にマネジメントチームステータスレポートに表示されます。ウェイトのない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、1 〜 2 時間以上かかる場合は、ウェイトの追加を検討してください。
+エンジニアがウェイトを追加した Issue は、タイトルとウェイト（時間見積が設定されている場合は時間見積も）とともに自動的にマネジメントおよびチームのステータスレポートに表示されます。ウェイトのない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、1 〜 2 時間以上かかる場合は、ウェイトの追加を検討してください。
 
-## ラベル
+## ラベル {#labels}
 
-### ステータスラベル
+### ステータスラベル {#status-label}
 
 - [corpsec-status::inbox](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Ainbox) - この Issue は新規でまだ評価されていません。**（新規 Issue のデフォルト）**。
-- [corpsec-status::wishlist](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Awishlist) - 来年中に作業が予定されていない、または休眠状態になった Issue 用。古い Issue はクローズされる場合があり、優先度が変わった場合に再オープンできます。
+- [corpsec-status::wishlist](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Awishlist) - 今後 1 年間に作業が予定されていない、または休眠状態になった Issue 用。古い Issue はクローズされる場合があり、優先度が変わった場合に再オープンできます。
 - [corpsec-status::backlog](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Abacklog) - この Issue は 1 年以内に完了するバックログにあります（優先度を参照）。
 - [corpsec-status::waiting](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Awaiting) - この Issue は開始されましたが、ビジネス上の理由またはレビューを待って保留中です。
 - [corpsec-status::blocked](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Ablocked) - この Issue は開始されましたが、このイテレーション中に解決される見込みのない技術的な理由でブロックされています。
@@ -289,7 +289,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 - [corpsec-status::wip](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Awip) - この Issue は作業中です。チームメンバーは作業を引き受けたときにこのステータスを割り当てます。
 - [corpsec-status::review](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-status%3A%3Areview) - 作業はほぼ完了しており、最終レビューまたはクリーンアップ作業を待っています。
 
-### 優先度ラベル
+### 優先度ラベル {#priority-label}
 
 - [corpsec-priority::inbox](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Ainbox) - 判断のためのトリアージが必要 **（新規 Issue のデフォルト）**。
 - **通常の日常リクエスト**
@@ -307,7 +307,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
   - [corpsec-priority::initiative](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Ainitiative) - OKR タイムラインまたは親エピックに基づいて優先順位付けされます。
   - [corpsec-priority::wishlist](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Awishlist) - コミットされていないウィッシュリスト上の大規模プロジェクト。
 
-### メトリック
+### メトリック {#metric}
 
 同じ Issue トラッカーとエピックを共有しているため、Issue が何に関連しているかのレポートに役立つように、作業のタイプを分類するためのラベルを追加できます。
 
@@ -340,9 +340,9 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 - [corpsec-team-device](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-team-device) - CorpSec Devices チーム
 - [corpsec-team-helpdesk](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-team-helpdesk) - Helpdesk Services チーム
 - [corpsec-team-identity](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-team-identity) - Identity Engineering チーム。ほとんどのエンジニアリング Issue にこのラベルが付けられています。
-- [corpsec-team-logistics](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-team-logistics) - Laptop および Logistics Services チーム
+- [corpsec-team-logistics](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-team-logistics) - Laptop and Logistics Services チーム
 
-### システムラベル
+### システムラベル {#system-label}
 
 これらのラベルは、Issue 内でチームメンバーを CC（カーボンコピー）またはメンションする代わりに通知を受けるために、それぞれのチームメンバーに購読されます。また、Issue がどのシステムに関連するかを識別するためにも使用されます。これらのラベルは `gitlab.com/gitlab-com` 内のどのエピックや Issue にも追加できます。複数のシステムが同じ Issue で作業されるかもしれないため、私たちはスコープラベルは使用しません。
 
@@ -359,7 +359,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 - [corpsys-aws-dedicated-prd](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-aws-dedicated-prd)
 - [corpsys-aws-dedicated-pubsec](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-aws-dedicated-pubsec)
 - [corpsys-azure](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-azure)
-- [corpsys-drivestrike](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-drivestrike)
+- [corpsys-fleet-dm](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-fleet-dm)
 - [corpsys-gcp-billing](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-gcp-billing)
 - [corpsys-gcp-com](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-gcp-com) - gitlab.com 組織用の Google Cloud Platform (GCP)
 - [corpsys-gcp-marketplace](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-gcp-marketplace) - Google Cloud Platform (GCP) Marketplace
@@ -382,7 +382,6 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 - [corpsys-handbook-int](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=handbook-int)
 - [corpsys-handbook-pub](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=handbook-pub)
 - [corpsys-handbook-sys](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=handbook-sys)
-- [corpsys-jamf](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-jamf)
 - [corpsys-linux](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-linux)
 - [corpsys-lumos](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-lumos)
 - [corpsys-macos](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-macos)
@@ -396,7 +395,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 - [corpsys-slack](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-slack)
 - [corpsys-yubikey](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-yubikey)
 
-### 承認
+### 承認 {#approvals}
 
 - ビジネスまたは技術オーナー
   - [corpsys-owner::not-ready](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-owner::not-ready)
@@ -415,7 +414,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
   - [corpsec-mgmt::waiting](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-mgmt::waiting)
   - [corpsec-mgmt::approved](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-mgmt::approved)
 
-### コミュニケーション
+### コミュニケーション {#communication}
 
 - ユーザー影響、新ツールデプロイ、または重要な構成変更によりコミュニケーションが必要な変更
   - [corpsec-communicate::yes](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-communicate::yes)

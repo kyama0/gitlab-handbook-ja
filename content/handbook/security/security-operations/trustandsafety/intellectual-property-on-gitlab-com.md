@@ -1,20 +1,20 @@
 ---
 title: "GitLab.com 上の知的財産"
 upstream_path: /handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com/
-upstream_sha: 2ea342c4234f3820e0bad8565152836e52df6849
-translated_at: "2026-07-03T20:37:21+09:00"
+upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
+translated_at: "2026-10-24T21:10:07.488559+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-02T17:52:25+00:00"
+lastmod: "2026-10-23T13:10:34Z"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## 名前ポリシー
+## 名前ポリシー {#name-policy}
 
-GitLab.com の [namespace](https://docs.gitlab.com/ee/user/group/#namespaces) 名、つまりユーザー名とトップレベルグループ名は、先着順で利用できます。商標登録に基づく主張を含め、GitLab.com 上のそのような名称について、誰も優先権を主張することはできません。
+GitLab.com の [namespace](https://docs.gitlab.com/ee/user/group/#namespaces)名 — つまりユーザー名とトップレベルグループ名 — および [GitLab Artifact Central のレジストリハンドル](https://docs.gitlab.com/artifact-registry/)は、先着順で利用できます。商標登録に基づく主張を含め、GitLab.com 上のそのような名称について、誰も優先権を主張することはできません。
 
-GitLab は、GitLab.com 上の名称に関連する報告について、私たちの [商標ポリシー](#trademark-policy) または [名前のスクワッティングポリシー](#name-squatting-policy) に基づく場合にのみレビューします。いずれかが自分の状況に当てはまると考える場合は、該当するポリシーの手順に従って報告を提出してください。
+GitLab は、GitLab.com 上の名称に関連する報告について、私たちの [商標ポリシー](#trademark-policy)または [名前のスクワッティングポリシー](#name-squatting-policy)に基づく場合にのみレビューします。いずれかが自分の状況に当てはまると考える場合は、該当するポリシーの手順に従って報告を提出してください。
 
 ## 商標ポリシー {#trademark-policy}
 
@@ -37,16 +37,16 @@ GitLab は、第三者間の商標紛争を調査、評価、または裁定す�
 1. 商標の登録番号。
 1. 関連する商標登録の保有者であることを示す証拠。たとえば、商標登録証のスキャンコピー、または該当する各国知的財産庁のウェブサイトやデータベース上の登録画面のスクリーンショット。
 1. 関連する GitLab エンティティ（ユーザー、リポジトリ、グループなど）が商標権者と提携していると他者に誤信させる明らかな意図がある形で、自分の商標が無断使用されていることを示す証拠。
-1. 次の声明の宣言: 「この商標侵害通知を提出することにより、私は、報告対象の使用が、私が申し立てた態様において、知的財産権者、その代理人、または法律によって許可されていないと誠実に信じていること、本通知に含まれる情報が正確であること、および偽証罪の罰則のもとで、問題となっている知的財産権の所有者を代理する権限を有していることを表明します」。
+1. 次の声明の宣言： 「この商標侵害通知を提出することにより、私は、報告対象の使用が、私が申し立てた態様において、知的財産権者、その代理人、または法律によって許可されていないと誠実に信じていること、本通知に含まれる情報が正確であること、および偽証罪の罰則のもとで、問題となっている知的財産権の所有者を代理する権限を有していることを表明します」。
 {{% /details %}}
 
 ## 名前のスクワッティングポリシー {#name-squatting-policy}
 
-[GitLab Subscription Agreement](/handbook/legal/subscription-agreement/) によると、
+[GitLab Subscription Agreement](/handbook/legal/subscription-agreement/)によると、
 
 > 意図的な名前のスクワッティング、またはアカウント名の購入、勧誘、販売は禁止されています。
 
-GitLab.com サポートチームは、ユーザーアカウントまたはグループが長期間使用されていない場合、その [namespace](https://docs.gitlab.com/ee/user/group/#namespaces)、つまりユーザー名とトップレベルグループ名を、本ポリシーの対象とみなします。本ポリシーの対象となる namespace は GitLab によって再割り当てされる場合があり、以下の基準に基づいて再割り当ての判断を行います。
+GitLab.com Support Team は、ユーザーアカウントまたはグループが長期間使用されていない場合、その [namespace](https://docs.gitlab.com/ee/user/group/#namespaces) — つまりユーザー名とトップレベルグループ名 — を、本ポリシーの対象とみなします。本ポリシーの対象となる namespace は GitLab によって再割り当てされる場合があり、以下の基準に基づいて再割り当ての判断を行います。
 
 ユーザー名は、以下の両方が真の場合に再割り当てされることがあります。
 
@@ -63,12 +63,12 @@ GitLab.com サポートチームは、ユーザーアカウントまたはグル
 名前のスクワッティング報告は、以下の手順に従って提出できます。報告が十分な内容である場合、GitLab は適切な措置を講じることがあります。
 
 {{% details summary="名前のスクワッティング報告を提出する方法" %}}
-私たちの名前のスクワッティングポリシーに基づいて報告を提出するには、[GitLab Support](https://support.gitlab.com/hc/en-us/articles/11626483177756-GitLab-Support) に連絡し、以下の情報を提供してください。
+私たちの名前のスクワッティングポリシーに基づいて報告を提出するには、[GitLab Support](https://support.gitlab.com/hc/en-us/articles/11626483177756-GitLab-Support)に連絡し、以下の情報を提供してください。
 
 - 再割り当てを求める namespace（ユーザー名またはトップレベルグループ名）。
 - ポリシーに記載されている、再割り当てリクエストの根拠。
 {{% /details %}}
 
-## アカウントとグループの所有権紛争
+## アカウントとグループの所有権紛争 {#account-and-group-ownership-disputes}
 
 詳細については、[GitLab.com 固有のサポートポリシー](https://support.gitlab.com/hc/en-us/articles/11626493890844-GitLab-com-Specific-Support-Policies#ownership-disputes)を参照してください。

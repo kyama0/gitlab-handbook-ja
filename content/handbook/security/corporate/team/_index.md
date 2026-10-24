@@ -1,16 +1,16 @@
 ---
 title: CorpSec チームディレクトリ
 upstream_path: /handbook/security/corporate/team/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T06:06:19+09:00"
+upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
+translated_at: "2026-10-24T21:08:36.079799+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T20:57:11+02:00"
+lastmod: "2026-10-23T12:38:14-05:00"
 ---
 
-コーポレートセキュリティ部門は、チームメンバーと一時的なサービスプロバイダー（契約社員、ベンダーなど）向けのテックサポート[ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services)と、私たちが管理する社内システムの構成管理[エンジニアリング](/handbook/security/corporate/engineering/)を提供します。
+Corporate Security 部門は、チームメンバーと一時的なサービスプロバイダー（契約社員、ベンダーなど）向けのテックサポート[ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services)と、私たちが管理する社内システムの構成管理[エンジニアリング](/handbook/security/corporate/engineering/)を提供します。
 
-## チームディレクトリ
+## チームディレクトリ {#team-directory}
 
 <table style="display: table;">
 <thead>
@@ -225,7 +225,7 @@ graph TB
 CORPSEC_SVC["<b>Corporate Security (CorpSec)</b><br><i><b>Engineering Managers:</b> David Zhu,<br>Lenny Vaknine</i>"]:::violet
 
 
-CORPSEC_ENG_DEVICE["<b>CorpSec Devices</b><br><i><b>Eng Manager:</b> Lenny Vaknine</i><br><i><b>Engineers:</b> Nathaniel, Peter, Steve</i><br><br>DriveStrike<br>Google Chrome<br>Jamf MDM<br>Mobile Devices<br>NordLayer VPN<br>Okta Verify<br>SentinelOne EDR<br>Software Version Updates<br>YubiKey"]:::fuchsia
+CORPSEC_ENG_DEVICE["<b>CorpSec Devices</b><br><i><b>Eng Manager:</b> Lenny Vaknine</i><br><i><b>Engineers:</b> Nathaniel, Peter, Steve</i><br><br>Fleet MDM<br>Google Chrome<br>Mobile Devices<br>NordLayer VPN<br>Okta Verify<br>SentinelOne EDR<br>Software Version Updates<br>YubiKey"]:::fuchsia
 CORPSEC_ENG_IDENTITY["<b>Identity Engineering</b><br><i><b>Eng Manager:</b> David Zhu</i><br><i><b>Engineers:</b> Andrew, Erik, Jacob,<br>Jenny, Madison, Vlad</i><br><br>1Password<br>ABAC and RBAC<br>ARs and IAM (AWS/Azure/GCP)<br>AuthN and AuthZ Policies<br>GitLab.com IAM Policies<br>Google Workspace<br>Identity Governance (IGA)<br>No Code Automation<br>Okta Configuration<br>Onboarding<br>Offboarding<br>Role Entitlements<br>Sandbox Cloud<br>Service Accounts<br>Slack"]:::fuchsia
 
 
@@ -244,7 +244,7 @@ CORPSEC_ENG_DEVICE <--> CORPSEC_ENG_IDENTITY
 
 ```
 
-## マネージャー組織図
+## マネージャー組織図 {#manager-org-chart}
 
 ```mermaid
 graph LR
