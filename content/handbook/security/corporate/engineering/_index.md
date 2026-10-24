@@ -1,9 +1,9 @@
 ---
 title: CorpSec Engineering
 upstream_path: /handbook/security/corporate/engineering/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T20:57:11+02:00"
-translated_at: "2026-08-14T06:06:19+09:00"
+upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
+lastmod: "2026-10-23T12:38:14-05:00"
+translated_at: "2026-10-24T21:08:36.079799+00:00"
 translator: claude
 stale: false
 ---
@@ -13,7 +13,7 @@ Engineering チームのメンバーは、私たちが管理する Tech Stack �
 
 CorpSec は、AWS、Azure、Google Cloud のアイデンティティおよびアクセス管理（IAM）を担当します。クラウドリソースの管理は、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/)と [Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)（SRE）チームが担当します。
 
-## システムオーナー
+## システムオーナー {#system-owners}
 
 <table>
 <thead>
@@ -28,9 +28,8 @@ CorpSec は、AWS、Azure、Google Cloud のアイデンティティおよびア
 <tr>
 <td><strong>CorpSec<br>Devices</strong></td>
 <td>
-<a href="https://internal.gitlab.com/handbook/it/it-self-service/it-guides/drivestrike/">DriveStrike</a><br>
+<a href="/handbook/security/corporate/systems/macos">Fleet MDM</a><br>
 <a href="/handbook/security/corporate/systems/google/chrome">Google Chrome</a><br>
-<a href="/handbook/security/corporate/systems/jamf">Jamf MDM</a><br>
 <a href="/handbook/security/corporate/services/phones">モバイルデバイス</a><br>
 <a href="/handbook/security/corporate/systems/vpn">NordLayer VPN</a><br>
 <a href="/handbook/security/corporate/systems/okta/verify">Okta Verify</a><br>

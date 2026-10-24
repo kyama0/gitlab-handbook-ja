@@ -20474,11 +20474,11 @@
     },
     "content/handbook/support/workflows/account_deletion_access_request_workflows.md": {
       "path": "content/handbook/support/workflows/account_deletion_access_request_workflows.md",
-      "upstream_sha": "4246c71d16beefada2a847b698b152ff280860c5",
-      "translated_at": "2026-09-11T21:20:13+00:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:12:05.163783+00:00",
       "model": "codex",
-      "input_hash": "f9b0cb12a0cf323d5ac76ead987a83bbc644cbe40c6ac3815f9bde19e5d67e84",
-      "upstream_committed_at": "2026-09-11T17:02:17+02:00"
+      "input_hash": "d953150097da706fd68102175296a7982a9713a4b272f679e3a79636694e9870",
+      "upstream_committed_at": "2026-10-23T15:27:45-04:00"
     },
     "content/handbook/support/workflows/account_verification.md": {
       "path": "content/handbook/support/workflows/account_verification.md",
@@ -21090,11 +21090,11 @@
     },
     "content/handbook/support/workflows/personal_data_access_account_deletion.md": {
       "path": "content/handbook/support/workflows/personal_data_access_account_deletion.md",
-      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
-      "translated_at": "2026-05-08T01:46:59Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ec939e46a978113dc904feb7b64645af46ff27d58b7e8db8b4b7f5eb855ba192",
-      "upstream_committed_at": "2026-02-03T17:16:54-05:00"
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:12:05.163783+00:00",
+      "model": "codex",
+      "input_hash": "b9c37183cf982c5a06f1b3a568edad23ebcbfbba6c5d509c2a47c644541828b4",
+      "upstream_committed_at": "2026-10-21T15:31:22-04:00"
     },
     "content/handbook/support/workflows/pii_removal_requests.md": {
       "path": "content/handbook/support/workflows/pii_removal_requests.md",
@@ -21282,11 +21282,11 @@
     },
     "content/handbook/support/workflows/test_env.md": {
       "path": "content/handbook/support/workflows/test_env.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T06:15:47+09:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:12:53.658976+00:00",
       "model": "codex",
-      "input_hash": "f3d8dd46cb33d13fcdc8ada0eca22dde1e42ceb031972962f543e506d169e8e6",
-      "upstream_committed_at": "2026-07-09T08:13:40+02:00"
+      "input_hash": "a555f6bc7bfbbb7d369698aec00b3356645171dffcb568e9dedd1bae326e5496",
+      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
     },
     "content/handbook/support/workflows/ticket-transfers.md": {
       "path": "content/handbook/support/workflows/ticket-transfers.md",
@@ -22730,11 +22730,11 @@
     },
     "content/handbook/security/gitlab_security_resource_center.md": {
       "path": "content/handbook/security/gitlab_security_resource_center.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:25:33+09:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:10:07.488559+00:00",
       "model": "codex",
-      "input_hash": "36a6d7498b95e5b77a720944e565b9b8c971a903b59cff5d8ca00fd5eaacc843",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "36f7e70caaad2ec22ca87ed38884adb3365de71b1b416fc46a613f9bbcd39db8",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/security/gitleaks.md": {
       "path": "content/handbook/security/gitleaks.md",
@@ -23018,11 +23018,11 @@
     },
     "content/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com.md": {
       "path": "content/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com.md",
-      "upstream_sha": "2ea342c4234f3820e0bad8565152836e52df6849",
-      "translated_at": "2026-07-03T20:37:21+09:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:10:07.488559+00:00",
       "model": "codex",
-      "input_hash": "36ab265b6192031938be100e16598dbe4514cf53bbc2cbb768bc634eae2ff42a",
-      "upstream_committed_at": "2026-07-02T17:52:25+00:00"
+      "input_hash": "f5017a0bed2ab3ab65dd3fc768461633a47076793236a23df264b8facbdb2dc3",
+      "upstream_committed_at": "2026-10-23T13:10:34Z"
     },
     "content/handbook/security/security-operations/threat-intelligence/_index.md": {
       "path": "content/handbook/security/security-operations/threat-intelligence/_index.md",
@@ -24978,11 +24978,11 @@
     },
     "content/handbook/security/corporate/team/_index.md": {
       "path": "content/handbook/security/corporate/team/_index.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T06:06:19+09:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:08:36.079799+00:00",
       "model": "codex",
-      "input_hash": "e83f10c0a1cacb39c435c3389b4adb04f0e3ce39b4da73d9954d4d61e971d8d9",
-      "upstream_committed_at": "2026-08-13T20:57:11+02:00"
+      "input_hash": "0b1d81568f0d7b2ee46cc67ad8af690d93d72d73b4aab2730b7d039fb32ebec1",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/security/customer-support-operations/_index.md": {
       "path": "content/handbook/security/customer-support-operations/_index.md",
@@ -26946,11 +26946,11 @@
     },
     "content/handbook/security/corporate/support/_index.md": {
       "path": "content/handbook/security/corporate/support/_index.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:30:18Z",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:08:36.079799+00:00",
       "model": "codex",
-      "input_hash": "be09ba9b89bff859605d1a304ca6aa0097030675dafcd463d4087b0f39540411",
-      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
+      "input_hash": "6db88bf310a21b9ac38fa50ed0d4717d11e0061c64666e8d58abf61c36e7f221",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/security/corporate/support/usb-encryption/_index.md": {
       "path": "content/handbook/security/corporate/support/usb-encryption/_index.md",
@@ -27090,19 +27090,19 @@
     },
     "content/handbook/security/corporate/how-we-work/_index.md": {
       "path": "content/handbook/security/corporate/how-we-work/_index.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T06:06:19+09:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:08:36.079799+00:00",
       "model": "codex",
-      "input_hash": "e72f85ad8407638da0838c2a008d769f932bdda009469cc0b52b9f0baaee59ef",
-      "upstream_committed_at": "2026-08-13T20:57:11+02:00"
+      "input_hash": "0e38eff59f6b9d36019359635c645aa1820f90718f87572923e0e4b734546b76",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/security/corporate/engineering/_index.md": {
       "path": "content/handbook/security/corporate/engineering/_index.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T06:06:19+09:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:08:36.079799+00:00",
       "model": "codex",
-      "input_hash": "9f9b39252289e4626514905f39bb9eccd77654c4b6ab75428b9d0bfb7dfc368e",
-      "upstream_committed_at": "2026-08-13T20:57:11+02:00"
+      "input_hash": "9afbc9345e1dda182e4e8a0b46b4d408b17795ec48103ecad1034e0e4901c4ac",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/security/corporate/engineering/saas/_index.md": {
       "path": "content/handbook/security/corporate/engineering/saas/_index.md",
@@ -34018,19 +34018,19 @@
     },
     "content/handbook/upstream-studios/product-design/workflow/mr-reviews/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/mr-reviews/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-19T21:20:08+00:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:14:17.168608+00:00",
       "model": "codex",
-      "input_hash": "b7c44c84574e7f8fa844e680f34a7bb5ac405edf8ef06a2219f1fe4f8a912779",
-      "upstream_committed_at": "2026-09-17T10:10:59-07:00"
+      "input_hash": "901719401db631d717b76b864458f198a1108d9dda843cc8040e1e9fb234e3a5",
+      "upstream_committed_at": "2026-10-20T18:40:19+02:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md",
-      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
-      "translated_at": "2026-07-22T06:32:52+09:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:14:17.168608+00:00",
       "model": "codex",
-      "input_hash": "1c2a32a8a37624ebe811db92249fd8f595e0c822aae146cf79a2da8787220c5a",
-      "upstream_committed_at": "2026-07-21T08:59:24-03:00"
+      "input_hash": "45273d8a5c6dd42cd1facb70012cb3838ffe27d8fd816c390e5e7b6cc3dc5371",
+      "upstream_committed_at": "2026-10-20T18:42:40+02:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/figma/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/figma/_index.md",
@@ -40130,11 +40130,11 @@
     },
     "content/handbook/security/product-security/mentorship.md": {
       "path": "content/handbook/security/product-security/mentorship.md",
-      "upstream_sha": "a2f17ddfb308ad2cf8c33a838af1d4b482818d17",
-      "upstream_committed_at": "2026-10-07T11:36:50+13:00",
-      "translated_at": "2026-10-07T21:11:30+00:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-24T21:10:07.488559+00:00",
       "model": "codex",
-      "input_hash": "947793aaa159bdf29b482e0986dced14adb1676fa746fa5419f65baea7b21f03"
+      "input_hash": "e897321eadbd38ae678674197c565b8d837caad9ab61ad44f8ace8b604b0ba13",
+      "upstream_committed_at": "2026-10-23T11:59:21+13:00"
     },
     "content/handbook/engineering/devops/create/source-code/repository-services/_index.md": {
       "path": "content/handbook/engineering/devops/create/source-code/repository-services/_index.md",

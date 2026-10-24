@@ -2,39 +2,39 @@
 title: 'Corporate Security（CorpSec）サポート'
 description: "ヘルプデスクサービス、システム、チームメンバーからよく寄せられるリクエストを含む、Corporate Security（CorpSec）チームからのヘルプとサポートの入手先。"
 upstream_path: /handbook/security/corporate/support/
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-lastmod: "2026-10-16T19:52:00+02:00"
-translated_at: "2026-10-19T10:30:18Z"
+upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
+lastmod: "2026-10-23T12:38:14-05:00"
+translated_at: "2026-10-24T21:08:36.079799+00:00"
 translator: claude
 stale: false
 ---
 
-GitLab はオーガニックに成長してきたため、複数の部門および職能グループには、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスの枠組みの中で、その部門または職能グループに固有の Tech Stack アプリケーションの日常的な管理を担当する独自の System Administrators（「Tech Stack App/System Owners」）がいます。GitLab の各 [Tech Stack アプリケーション](/handbook/business-technology/tech-stack-applications/)には、そのアプリケーションを使用するチームメンバー（部門または職能グループ内）への実装および日常的な運用サポートを担当する DRI である System Owner がいます。これにより、従来の IT 部門がボトルネックになることを防ぎ、GitLab の[適切なグループにとっての効率性](/handbook/values/#efficiency-for-the-right-group)というサブバリューの一環として、各部門がセルフサービスを行えるという副次的な利点もあります。
+GitLab はオーガニックに成長してきたため、複数の部門および職能グループには、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスの枠組みの中で、その部門または職能グループに固有の Tech Stack アプリケーションの日常的な管理を担当する独自の System Administrators（「Tech Stack App/System Owners」）がいます。GitLab の各 [Tech Stack アプリケーション](/handbook/business-technology/tech-stack-applications/)には、そのアプリケーションの導入と、それを利用するチームメンバー（部門または職能グループ内）への日常的な運用サポートを担当する DRI である System Owner がいます。これにより、従来の IT 部門がボトルネックになることを防ぎ、GitLab の[適切なグループにとっての効率性](/handbook/values/#efficiency-for-the-right-group)というサブバリューの一環として、各部門がセルフサービスを行えるという副次的な利点もあります。
 
 Corporate Security チームは、チームメンバーおよび一時的なサービスプロバイダー（コントラクター、ベンダーなど）に技術サポートのヘルプデスクサービスを提供するとともに、私たちが管理する全社的な[システム](/handbook/security/corporate/systems)の構成管理エンジニアリングを担当します。
 
-## Corporate Security サポート
+## Corporate Security サポート {#corporate-security-support}
 
-### Tier 1. セルフサービス
+### Tier 1. セルフサービス {#tier-1-self-service}
 
 [セルフサービスとセルフラーニング](/handbook/values/#self-service-and-self-learning)という効率性バリューの一環として、質問への回答を見つけられるかどうか、[セキュリティのセルフサービスガイドおよびシステムドキュメント](/handbook/security/corporate/systems)を確認することをお勧めします。
 
 探しているものが見つからない場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお問い合わせください。
 
-#### 将来の状態
+#### 将来の状態 {#future-state}
 
-- (社内) なぜ: [方向性と戦略](https://internal.gitlab.com/handbook/security/corporate/direction)
-- (社内) なに: [イニシアチブとプロジェクト](https://internal.gitlab.com/handbook/security/corporate/projects)
-- (社内) いつ: [OKR とロードマップ](https://internal.gitlab.com/handbook/security/corporate/roadmap)
-- (社内) どのように: [CorpSec Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)
-- (公開) だれ: [チームの機能](/handbook/security/corporate/#team-functions)と[チームディレクトリ](/handbook/security/corporate/#team-directory)
+- (社内) なぜ： [方向性と戦略](https://internal.gitlab.com/handbook/security/corporate/direction)
+- (社内) なに： [イニシアチブとプロジェクト](https://internal.gitlab.com/handbook/security/corporate/projects)
+- (社内) いつ： [OKR とロードマップ](https://internal.gitlab.com/handbook/security/corporate/roadmap)
+- (社内) どのように： [CorpSec Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)
+- (公開) だれ： [チームの機能](/handbook/security/corporate/#team-functions)と[チームディレクトリ](/handbook/security/corporate/#team-directory)
 
-#### 現在の状態
+#### 現在の状態 {#current-state}
 
 - [チームディレクトリ](/handbook/security/corporate/#team-directory)
-- **👀 新しいチームメンバー:** [IT オンボーディング 101 ガイド](/handbook/eta/corporate-it/end-user-services/onboarding101/)
-- **👀 既存のチームメンバー:** [Corporate Security のシステムドキュメント、アクセスリクエスト、セルフサービスガイド](/handbook/security/corporate/systems)
-- **👷 管理ドキュメント:** (社内) [Systems Handbook（構成と Runbook）](https://handbook.gitlab.systems)
+- **👀 新しいチームメンバー：** [IT オンボーディング 101 ガイド](/handbook/eta/corporate-it/end-user-services/onboarding101/)
+- **👀 既存のチームメンバー：** [Corporate Security のシステムドキュメント、アクセスリクエスト、セルフサービスガイド](/handbook/security/corporate/systems)
+- **👷 管理ドキュメント：** (社内) [Systems Handbook（構成と Runbook）](https://handbook.gitlab.systems)
 - 👷 [Engineering](/handbook/security/corporate/engineering)
   - [CorpSec Devices](/handbook/security/corporate/engineering/devices)
   - [Identity Engineering](/handbook/security/corporate/engineering/identity)
@@ -73,7 +73,7 @@ Corporate Security チームは、チームメンバーおよび一時的なサ�
           - [バックアップ](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/backups)
           - [ディスク暗号化](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/encryption)
           - [ファイアウォール](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/firewall)
-          - [ホスト名およびユーザー名（社内）](https://internal.gitlab.com/handbook/security/corporate/tooling/jamf/endpoint_naming_convention/)
+          - [ホスト名およびユーザー名（社内）](https://internal.gitlab.com/handbook/security/corporate/tooling/fleet/endpoint_naming_convention/)
           - [iCloud Drive](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/icloud)
           - [離席時のロック](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/unattended)
           - [パスワード管理](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/passwords)
@@ -91,7 +91,7 @@ Corporate Security チームは、チームメンバーおよび一時的なサ�
   - 支援を受けるには、[サポート](/handbook/security/corporate/support)および／または [システム](/handbook/security/corporate/systems)ページを参照してください。
   - 探している回答が見つからない場合は、下にスクロールして Tier 2 のサポートをご覧ください。
 
-### Tier 2. ヘルプデスクサポート
+### Tier 2. ヘルプデスクサポート {#tier-2-helpdesk-support}
 
 [Helpdesk Support Analysts](/handbook/eta/corporate-it/end-user-services)が 24x5 の対応を提供しており、アクセスリクエスト、アカウントロックアウト、認証の問題、ノートパソコンのハードウェア、ノートパソコンのソフトウェア構成の問題、不慣れなテクノロジーに関する 1:1 トレーニング、およびあらゆる [Corporate Security システム](/handbook/security/corporate/systems)に関する問題のトリアージを支援します。
 
@@ -118,7 +118,7 @@ Corporate Security チームは、チームメンバーおよび一時的なサ�
 
 Corporate Security が管理していないシステムについては、[Tech Stack](/handbook/business-technology/tech-stack-applications/)でオーナーを確認できます。どこに質問すればよいかわからない場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお問い合わせください。
 
-### Tier 3. エスカレーションおよびシステムエンジニアリング
+### Tier 3. エスカレーションおよびシステムエンジニアリング {#tier-3-escalation-and-systems-engineering}
 
 Support Analysts は、ユーザーサポートを提供するためのトレーニングを受けています。Support Analysts が回答できない問題がある場合は、Corporate Security Engineers にエスカレーションします。
 
@@ -128,9 +128,9 @@ Security Engineers および Systems Engineers は、[Corporate Security シス�
 
 高度なリクエストまたは変更／構成管理については、[Corporate Security Issue Tracker](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)で GitLab Issue を作成し、適切な Issue テンプレートを選択してください。これにより、適切なラベルが自動的に追加され、それぞれのシステムオーナーに割り当てられます。
 
-**ご案内:** 私たちはエンジニアリング Issue に対する当日中のサポートを**提供していません**。Issue には優先順位付きのキューがあり、engineering managers および program managers が管理しています。各チームには、数営業日以内に新しい日常的なリクエストをトリアージするためのバッファが割り当てられています。作成する Issue には適切な優先度ラベルを付けてください。**Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお問い合わせください。**エスカレーションおよび優先順位付けは内部で処理します。
+**ご案内：** 私たちはエンジニアリング Issue に対する当日中のサポートを**提供していません**。Issue には優先順位付きのキューがあり、engineering managers および program managers が管理しています。各チームには、数営業日以内に新しい日常的なリクエストをトリアージするためのバッファが割り当てられています。作成する Issue には適切な優先度ラベルを付けてください。**Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお問い合わせください。** エスカレーションおよび優先順位付けは内部で処理します。
 
-### Tier 4. 自動化エンジニアリング
+### Tier 4. 自動化エンジニアリング {#tier-4-automation-engineering}
 
 企業またはチームが進化および拡大するに伴い、プロセスを自動化および合理化することが重要です。ほとんどのテクノロジー企業は、何らかの形式のスクリプトを使用して自動化とプロセスを改善しています。
 
@@ -140,6 +140,6 @@ GitLab では、各部門が独自に自動化の問題を解決しています�
 
 詳細は、[自動化のハンドブックページ](/handbook/security/corporate/automation)を参照してください。
 
-### Tier 5. アーキテクチャおよび危機管理
+### Tier 5. アーキテクチャおよび危機管理 {#tier-5-architecture-and-crisis-management}
 
 Staff Engineers および Managers は、優れた社内顧客体験を提供しながらセキュリティビジョンに沿った強固なセキュリティ態勢をもたらす、Corporate Security チームおよび部門横断のステークホルダーに対して、メタレベルの方向性、自動化、効率性の向上を推進することに注力しています。また、部門横断またはリーダーシップレベルの危機およびインシデントの軽減に対し、スウォームスタイルのガイダンスとエンジニアリングを提供します。
