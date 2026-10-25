@@ -14442,11 +14442,11 @@
     },
     "content/handbook/enterprise-data/how-we-work/mr-review.md": {
       "path": "content/handbook/enterprise-data/how-we-work/mr-review.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "9298b759f6958cff5dd824971e48a811b02cabfcd936630d4463e43c99277fb8",
-      "upstream_committed_at": "2025-12-22T15:30:54+00:00"
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:04:42Z",
+      "model": "codex",
+      "input_hash": "0c4d04d522642f2218ae44e8586933eb462c482aa9c2a8251837adebdfbed356",
+      "upstream_committed_at": "2026-10-20T12:36:21Z"
     },
     "content/handbook/enterprise-data/how-we-work/new-data-source.md": {
       "path": "content/handbook/enterprise-data/how-we-work/new-data-source.md",
@@ -15338,11 +15338,11 @@
     },
     "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/_index.md": {
       "path": "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/_index.md",
-      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "daa3700416c87287abe5548a6e05c8bd28ecba2a272c75ccfd553520ff0bfb7e",
-      "upstream_committed_at": "2025-02-04T16:44:03+00:00"
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:00:25Z",
+      "model": "codex",
+      "input_hash": "f69453aae83a42cd720a1103e3b683ecfa2ee1b43a48847f31fb1831d8df3201",
+      "upstream_committed_at": "2026-10-20T13:15:56-04:00"
     },
     "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/hosting-main.md": {
       "path": "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/hosting-main.md",
@@ -17826,11 +17826,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/user-journey.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/user-journey.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9ee7849a4b96355840bb5e051bb3d9308585872b6450b79da9dffed15dbf6ba9",
-      "upstream_committed_at": "2026-03-19T19:48:12+00:00"
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:02:30Z",
+      "model": "codex",
+      "input_hash": "8c7f7c4f054a6bd4f09bc61533326d44a1a17b43d3c44d239d17ad04b287952c",
+      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
     },
     "content/handbook/marketing/developer-relations/events.md": {
       "path": "content/handbook/marketing/developer-relations/events.md",
@@ -19290,11 +19290,11 @@
     },
     "content/handbook/tools-and-tips/mac.md": {
       "path": "content/handbook/tools-and-tips/mac.md",
-      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
-      "translated_at": "2026-10-18T21:05:51Z",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:00:25Z",
       "model": "codex",
-      "input_hash": "1adc1ed793cd511eba10748e471c569ab682ef4fcf5b4874589906c35cc707e3",
-      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
+      "input_hash": "0433edf1e2b22716c2c2b19e53577ed64fe24f31d69790ca9535b60b91e6e9df",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/tools-and-tips/mermaid.md": {
       "path": "content/handbook/tools-and-tips/mermaid.md",
@@ -29026,11 +29026,11 @@
     },
     "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md": {
       "path": "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "44d3a856b000a0ef7aec82be17aba7abe813873481fdc88adca7a691bc2b9289",
-      "upstream_committed_at": "2025-06-18T20:06:41+00:00"
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:02:30Z",
+      "model": "codex",
+      "input_hash": "262689f7ee4fc0f57b9958d5cfa949b1dc25861cfedfa00140007d0af47c6ff7",
+      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
     },
     "content/handbook/product/ux/ux-resources/experimentation.md": {
       "path": "content/handbook/product/ux/ux-resources/experimentation.md",
@@ -31826,11 +31826,11 @@
     },
     "content/handbook/company/operating-principles.md": {
       "path": "content/handbook/company/operating-principles.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:18:07Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "693de35d71c08cfb18eba88d7182b288020bccd7c86302d4340a90e2324c512f",
-      "upstream_committed_at": "2026-06-10T11:10:58-04:00"
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:00:25Z",
+      "model": "codex",
+      "input_hash": "1be43b5c4834c7f3671f62e968e288ac621a8c2e9d5bb8b989bc789905135482",
+      "upstream_committed_at": "2026-10-21T12:57:47-04:00"
     },
     "content/handbook/upstream-studios/how-we-work/_index.md": {
       "path": "content/handbook/upstream-studios/how-we-work/_index.md",
@@ -37330,11 +37330,11 @@
     },
     "content/handbook/enterprise-data/how-we-work/registered-queries/index.md": {
       "path": "content/handbook/enterprise-data/how-we-work/registered-queries/index.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "upstream_committed_at": "2026-09-10T07:12:01-06:00",
-      "translated_at": "2026-09-11T12:56:16+00:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:04:42Z",
       "model": "codex",
-      "input_hash": "4acd18bc97d5ceb8fc29b998c78613b6fcd6b8a0346a0923f4d28e456d4baec2"
+      "input_hash": "66d3b4c95e05bcc64f287d4b47740dfb14c213798ed235071b89374c11a191b1",
+      "upstream_committed_at": "2026-10-20T11:28:04-06:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/deployment-interfaces/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/deployment-interfaces/_index.md",
@@ -37490,11 +37490,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/cloud-resources.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/cloud-resources.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
+      "translated_at": "2026-10-25T21:02:30Z",
       "model": "codex",
-      "input_hash": "31cb5b7fde127aca31707f28563e45a4ec8bd8af78983d660a242b1b86bb0529"
+      "input_hash": "c76399efc922df6c916128fd669b1c4d72e677affaeb8aaf5818b3dd1ae3b63c",
+      "upstream_committed_at": "2026-10-20T18:48:04+02:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/code-of-conduct-enforcement.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/code-of-conduct-enforcement.md",
