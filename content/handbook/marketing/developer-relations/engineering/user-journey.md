@@ -1,15 +1,16 @@
 ---
-title: "DevRel Engineering チーム - コード貢献者ユーザージャーニー"
-description: "コード貢献者ユーザージャーニー"
+title: "DevRel Engineering チーム - コード貢献者のユーザージャーニー"
+description: "コード貢献者のユーザージャーニー"
 upstream_path: /handbook/marketing/developer-relations/engineering/user-journey/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
+lastmod: "2026-10-20T14:59:33+02:00"
+translated_at: "2026-10-25T21:02:30Z"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
-## ジャーニーマップ
+
+## ジャーニーマップ {#journey-map}
 
 <div style="overflow-x: scroll;">
 
@@ -82,7 +83,7 @@ flowchart TB
 
         click id7_box1 "https://docs.gitlab.com/ee/integration/gitpod.html"
         click id7_box2 "https://docs.gitlab.com/ee/user/project/web_ide/"
-        click id7_box3 "https://gitlab.com/gitlab-org/gitlab-development-kit/-/blob/main/README.md"
+        click id7_box3 "https://gitlab-org.gitlab.io/gitlab-development-kit/"
     end
 
 
