@@ -2,9 +2,9 @@
 title: "Developer Advocacy"
 description: "Developer Advocates は、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:36:34+00:00"
+upstream_sha: 819fcd03ca3ddcde75fbd60bf7799c95d23d49f9
+lastmod: "2026-10-13T16:58:44-04:00"
+translated_at: "2026-10-26T21:06:13.194319+00:00"
 translator: codex
 stale: false
 ---
@@ -161,12 +161,12 @@ GitLab チームメンバーは、Slack の [#developer-advocacy](https://app.sl
 
 大きなチャンネルでノイズを発生させるほどではないコンテンツの共有やその他のアップデートには、[#developer-advocacy-updates](https://gitlab.slack.com/archives/C04R2RME4F7)を使用しています。多くのアップデートは [Workato のワークフロー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/workato/)を使用して自動化されています。
 
-コミュニティのインサイトは、フォーラム、Reddit、Hacker News を含め、[#community-pulse](https://gitlab.enterprise.slack.com/archives/C0AJW90RYV7)で自動化されています。
+フォーラム、Reddit、Hacker News の投稿など、コミュニティのインサイトは [#community-pulse](https://gitlab.enterprise.slack.com/archives/C0AJW90RYV7)で自動的に共有されます。
 
 ### チームのタッチポイント {#team-touchpoints}
 
-1. Dev Advocacy チームミーティング（毎週） - アジェンダ: GDrive で `Developer Advocacy Weekly` を検索。
-1. Dev Advocacy Showcase（毎月） - アジェンダ: GDrive で `Developer Advocacy Showcase [monthly]` を検索。
+1. Dev Advocacy チームミーティング（毎週） - アジェンダ： GDrive で `Developer Advocacy Weekly` を検索。
+1. Dev Advocacy Showcase（毎月） - アジェンダ： GDrive で `Developer Advocacy Showcase [monthly]` を検索。
 1. 各チームメンバーとそのマネージャーとの 1:1 ミーティング（毎週）
 
 ### レポーティング {#reporting}

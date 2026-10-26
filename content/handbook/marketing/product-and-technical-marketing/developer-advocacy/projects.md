@@ -2,9 +2,9 @@
 description: "Developer Advocacy がデモ環境、チュートリアル、研究、自動化プロジェクトを整理し、維持する方法。"
 title: "プロジェクト"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:48:20+00:00"
+upstream_sha: 819fcd03ca3ddcde75fbd60bf7799c95d23d49f9
+lastmod: "2026-10-26T14:38:59-04:00"
+translated_at: "2026-10-26T21:06:13.194319+00:00"
 translator: codex
 stale: false
 ---
@@ -21,7 +21,7 @@ stale: false
 
 | グループ        | DRI | 説明  |
 |--------------|-----|--------------|
-| [demo-environments](https://gitlab.com/gitlab-da) | 全員 | チームが維持する長期のデモ環境 |
+| [demo-environments](https://gitlab.com/gitlab-da/demo-environments) | 全員 | チームが維持する長期のデモ環境 |
 | [conferences](https://gitlab.com/gitlab-da/conferences) | 全員 / @fjdiaz | [カンファレンス、イベント、ミートアップなど](/handbook/marketing/product-and-technical-marketing/developer-advocacy/events/#event-booth-training)でのチームメンバー向けの公開デモのグループ  |
 | [playground](https://gitlab.com/gitlab-da/playground) | 全員 | サポートなしのテストプロジェクト、シンプルなデモケース、コードスニペットなど。ブログ記事からリンクする際は、対応する use-cases または demo-environment グループに移動してください。 |
 | [use-cases](https://gitlab.com/gitlab-da/use-cases) | 全員 | 製品デモ、講演、ソートリーダーシップ、研究のための特定トピックのユースケース |
@@ -45,27 +45,29 @@ stale: false
 
 プロジェクト/グループの目的を説明する `README.md` ファイルを必ず追加し（テキストを `Settings > General > Description` にコピーして）、すべてのリソース（Issue、ディレクションページ、ブログ記事など）をリンクしてください。GitLab はプロジェクトの README に加えて [グループ README](https://docs.gitlab.com/ee/user/group/manage#add-group-readme)もサポートしています。
 
-任意ですが推奨: トピックを示すプロジェクト/グループのアバター画像を追加してください。画像を選ぶ際は、Brand の[クリエイティブアセットの調達に関するガイダンス](/handbook/marketing/brand-experience/brand-creative/#sourcing-creative-assets)を参照してください。ヒント: [画像のサイズを変更](/handbook/tools-and-tips/#resizing-images)できます。
+任意ですが推奨： トピックを示すプロジェクト/グループのアバター画像を追加してください。画像を選ぶ際は、Brand の[クリエイティブアセットの調達に関するガイダンス](/handbook/marketing/brand-experience/brand-creative/#sourcing-creative-assets)を参照してください。ヒント： [画像のサイズを変更](/handbook/tools-and-tips/#resizing-images)できます。
 
 また、`.gitignore`、`AGENTS.md`、CI/CD 設定など、その他のベストプラクティスも、適用可能な場合はデフォルトで適用してください。
 
-#### グループ: デモ環境 {#group-demo-environments}
+#### グループ： デモ環境 {#group-demo-environments}
 
 長期にわたって維持されるデモ環境です。説明欄に異なるオーディエンスと DRI が記載されています。
 必要に応じて、デモのセットアップを説明するハンドブックページや `demo.md` ファイルを追加し、他のチームメンバーもデモ環境を立ち上げられるよう支援してください。
 
-#### グループ: ユースケース {#group-use-cases}
+長期的に使用するデモ環境の一部は、`projects`、`use-cases`、`tutorials` グループにあります。保守されているすべてのデモ環境とその DRI は、[コンテンツライブラリ](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#demo-environments)に掲載されています。新しいデモ環境をその表に追加してください。
+
+#### グループ： ユースケース {#group-use-cases}
 
 1. ブログ記事やソートリーダーシップの研究は、通常、ユースケースや特定のトピックを記述しています。既存の [use-cases](https://gitlab.com/gitlab-da/use-cases)をレビューし、新しいプロジェクトまたはサブグループを追加してください。
 1. ユースケースが新規の場合は、新しいサブグループを作成し、説明を追加し、ハンドブックの組織構成を更新してください。あなた自身を DRI としてテーブルに追加してください。
 
-#### グループ: チュートリアルとワークショップ {#group-tutorials-and-workshops}
+#### グループ： チュートリアルとワークショップ {#group-tutorials-and-workshops}
 
 [チュートリアル](https://gitlab.com/gitlab-da/tutorials)は、特定のトピックを学ぶのに役立つコンテンツを提供し、プロジェクトを維持する DRI が割り当てられています。チュートリアルは、ブログ記事やウェビナーなどで参照されます。
 
 どこから始めればよいか不確かな場合は、まず新しいチュートリアルのサブグループを作成し、後でたとえばコンテンツをワークショップに移行するかどうかを決定してください。
 
-#### グループ: プロジェクト {#group-projects}
+#### グループ： プロジェクト {#group-projects}
 
 [projects](https://gitlab.com/gitlab-da/projects)グループには、本番で使用されるすべてのプロジェクトが含まれています。チームはワークフローと効率のためにその機能に依存しているため、これらはチームのハンドブックで充実したドキュメントを必要とします。私たちはまた、GitLab Pages とカスタムドメインで提供されるマイクロサイトも維持しています。
 
@@ -106,7 +108,7 @@ GitLab は、月次リリースを紹介し、製品アップデートやソー�
 
 **配信/録画の前に**
 
-- ソーシャルメディアチームや他のパネリストと一緒に、アジェンダ、段取り、プロモーションについて話し合うための一時的な Slack チャンネルに追加されます。
+- Social Media チームや他のパネリストと一緒に、アジェンダ、段取り、プロモーションについて話し合うための一時的な Slack チャンネルに追加されます。
 - 録画/配信の前に、技術チェックを行い、話のポイントを確認し、他のパネリストと顔合わせをするための 30 分のウォークスルーに参加できるよう依頼されます。
 - LinkedIn のイベントページに登壇者として追加されるため、あなたが LinkedIn でライブ配信を行うことがあなたのネットワークに通知されます。
 - イベントを宣伝する LinkedIn の投稿をあなたのネットワークと共有して、イベントのプロモーションにご協力ください。
@@ -127,11 +129,11 @@ GitLab は、月次リリースを紹介し、製品アップデートやソー�
 
 ### コミュニティニュースレター {#community-newsletter}
 
-- ゴール: 開発者向けのコンテンツを共有し、コミュニティメンバーに今後のイベントについて知らせ、コミュニティ内でのコントリビューションを促進する。このニュースレターのターゲットオーディエンスは、私たちのコミュニティにおける GitLab のコントリビューター志望者および既存のコントリビューターです。このニュースレターは、リードの獲得や創出には使用しません。
-- 期間: 2022 〜 2024
+- ゴール： 開発者向けのコンテンツを共有し、コミュニティメンバーに今後のイベントについて知らせ、コミュニティ内でのコントリビューションを促進する。このニュースレターのターゲットオーディエンスは、私たちのコミュニティにおける GitLab のコントリビューター志望者および既存のコントリビューターです。このニュースレターは、リードの獲得や創出には使用しません。
+- 期間： 2022 〜 2024
 - [組織エピック](https://gitlab.com/groups/gitlab-com/-/work_items/1821)
-- メンテナー: @sugaroverflow
-- アーカイブ:
+- メンテナー： @sugaroverflow
+- アーカイブ：
   - [FY23 ニュースレターのエピック](https://gitlab.com/groups/gitlab-com/-/epics/1915)
   - その他過去のすべてのニュースレターの Issue は、[ラベル `Da-Type-Content::newsletter`](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=closed&label_name%5B%5D=DA-Type-Content::newsletter&first_page_size=20)を使用してクローズ済みの Issue を検索することで見つけられます。
   - [ニュースレター各号の PDF（内部）](https://drive.google.com/drive/folders/1w086j7mTDRCUEtINm2AVivkxfctMQT2J)
@@ -140,9 +142,9 @@ GitLab は、月次リリースを紹介し、製品アップデートやソー�
 
 GitLab Duo の助けを借りて、DevSecOps ライフサイクル全体にわたって AI を活用したワークフローを使うライブ学習セッションです。私たちは議論し、探求し、調査し、学び、デバッグし、製品フィードバックや機能のアイデアを生み出し、新しい機能やワークフローを発見します。詳しくは [FY25 Developer Relations エピック](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475)（内部）をご覧ください。
 
-ゴール: コーヒーチャットは、私たちの顧客が GitLab Duo の使い方を学び、ベストプラクティスを採用できるよう支援します。実例を示し、間違いを犯し、さまざまなルートを試し、より良い結果と DevSecOps の効率を達成することによって行います。
+ゴール： コーヒーチャットは、私たちの顧客が GitLab Duo の使い方を学び、ベストプラクティスを採用できるよう支援します。実例を示し、間違いを犯し、さまざまなルートを試し、より良い結果と DevSecOps の効率を達成することによって行います。
 
-メンテナー: [Michael Friedrich, @dnsmichi](https://gitlab.com/dnsmichi)
+メンテナー： [Michael Friedrich, @dnsmichi](https://gitlab.com/dnsmichi)
 
 - [YouTube プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kp5uj_JgQiSvHw1jQu0mSVZ)
 - [プロジェクトを含む GitLab グループ](https://gitlab.com/gitlab-da/use-cases/ai/gitlab-duo-coffee-chat)
@@ -163,7 +165,7 @@ GitLab Duo の助けを借りて、DevSecOps ライフサイクル全体にわ�
 1. 動画をエクスポートします。
 1. 学びを際立たせるセッション（または IDE）のスクリーンショットを撮ります。スクリーンショットを[スライドのプレースホルダー](https://docs.google.com/presentation/d/1FBOxe43l4qY8KastAWjblphOLiktNtPjHgFNmNYf0Uw/edit#slide=id.g2b429ab8253_0_23)に追加し、セッションの詳細でテキストを編集し、再度スライドのスクリーンショットを作成します。これは Premiere Pro で動画のイントロダクションとして使用します。
 
-Adobe Premiere Pro での動画編集:
+Adobe Premiere Pro での動画編集：
 
 1. Adobe Premiere Pro で新しいプロジェクトを作成します。
 1. 録画とイントロ/アウトロの画像アセットをインポートします。
@@ -172,16 +174,16 @@ Adobe Premiere Pro での動画編集:
 1. レイザーアイコンを使用して、イントロシーケンスの後で動画をカットします。最初の部分を選択してシーケンスを削除します。
 1. 最後の 3 〜 5 秒に終了のスクリーンショットを追加します。右クリック > フレームサイズに合わせてスケール。
 1. レイザーアイコンを使用して、終了シーケンスの前で動画をカットし、無音部分を削除します。最後の部分を選択してシーケンスを削除します。
-1. 生の動画をエクスポートします: `File > Export > Media`。
+1. 生の動画をエクスポートします： `File > Export > Media`。
 
-動画のアップロード:
+動画のアップロード：
 
 1. [YouTube の GitLab Unfiltered アカウント](https://www.youtube.com/@GitLabUnfiltered/)にログインし、動画ファイルをアップロードします。
-1. セッションのタイトルを編集します: `GitLab Duo Coffee Chat: Challenge - Explain and Refactor COBOL programs` など。
+1. セッションのタイトルを編集します： `GitLab Duo Coffee Chat: Challenge - Explain and Refactor COBOL programs` など。
 1. 何が期待できるかを 2 〜 3 文で動画の説明欄に編集します。すべてのドキュメント/ブログ URL を `Resources` のエントリとして追加します。
 1. 新しいウィンドウで動画のプレビューを開き、各セクションをスクロールします。タイムスタンプをメモし、動画の説明欄に目次を書き込みます。目次は視聴者がすばやく移動するのに役立ちます。
 1. `Playlist` - `GitLab Duo Coffee Chat` に追加します。
-1. タグを追加します: `gitlab`、`gitlab-duo`、`ai`、`development` など。
+1. タグを追加します： `gitlab`、`gitlab-duo`、`ai`、`development` など。
 1. 動画を公開します。
 
 配信
@@ -194,13 +196,13 @@ Adobe Premiere Pro での動画編集:
 
 このイニシアチブは、[CI Adoption WG](/handbook/company/working-groups/customer-use-case-adoption/)と Developer Relations によるコントリビューション（[エピック](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/317)）の一部です。
 
-ゴール: DevSecOps の効率のために、CI/CD コンポーネントで顧客を支援する。ベストプラクティスを学び、ブログ記事、チュートリアル、ワークショップで共有します。
+ゴール： DevSecOps の効率のために、CI/CD コンポーネントで顧客を支援する。ベストプラクティスを学び、ブログ記事、チュートリアル、ワークショップで共有します。
 
-メンテナー: [Michael Friedrich, @dnsmichi](https://about.gitlab.com/company/team/#dnsmichi)、[Itzik Gan Baruch, @iganbaruch](https://about.gitlab.com/company/team/#iganbaruch)
+メンテナー： [Michael Friedrich, @dnsmichi](https://about.gitlab.com/company/team/#dnsmichi)、[Itzik Gan Baruch, @iganbaruch](https://about.gitlab.com/company/team/#iganbaruch)
 
 ### Developer Relations Bot {#developer-relations-bot}
 
-メンテナー: TBD。当面は [Michael Friedrich](https://gitlab.com/dnsmichi)に尋ねてください。
+メンテナー： TBD。当面は [Michael Friedrich](https://gitlab.com/dnsmichi)に尋ねてください。
 
 このボットは、次のようなチームのタスクを自動化することを目的としています。
 
@@ -208,4 +210,4 @@ Adobe Premiere Pro での動画編集:
 - [Developer Advocacy ワークフロー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/workflow/)に従って Issue をトリアージする。
 - 毎週月曜日に Issue レター（作成済み、クローズ済み、オープン中の CFP）を生成する。
 
-プロジェクト: [DevRel Bot](https://gitlab.com/gitlab-da/projects/devrel-bot)
+プロジェクト： [DevRel Bot](https://gitlab.com/gitlab-da/projects/devrel-bot)
