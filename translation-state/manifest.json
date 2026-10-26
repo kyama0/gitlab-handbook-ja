@@ -19474,11 +19474,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
-      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
-      "translated_at": "2026-09-15T06:08:13+09:00",
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "translated_at": "2026-10-26T21:01:47.445103+00:00",
       "model": "codex",
-      "input_hash": "e1112501dc0d76d565fcdc9ef1cddca9ee54f243d6b2e65040ca9af8800b223d",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "ee57c7fe30cf3c8831844b1edc0f91375bb502992a654e4e3ec6c2eede1ed65f",
+      "upstream_committed_at": "2026-10-20T13:23:39-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
@@ -26394,11 +26394,11 @@
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-vulnerabilities.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-vulnerabilities.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "269a699bdcd11b5f8d984df486cf870414dd7f61c9c405a91bf3dac9e47edfbe",
-      "upstream_committed_at": "2026-02-06T19:27:57-05:00"
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "translated_at": "2026-10-26T21:04:26.714134+00:00",
+      "model": "codex",
+      "input_hash": "716ffb47ba8b18f668c5304ee1ce5383d54623919904363410663e60abe9a3d8",
+      "upstream_committed_at": "2026-10-26T13:08:58-04:00"
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/_index.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/_index.md",
@@ -30842,11 +30842,11 @@
     },
     "content/handbook/people-group/time-off-and-absence/leave-types.md": {
       "path": "content/handbook/people-group/time-off-and-absence/leave-types.md",
-      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
-      "translated_at": "2026-09-15T21:56:59Z",
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "translated_at": "2026-10-26T21:01:47.445103+00:00",
       "model": "codex",
-      "input_hash": "b956207cc4522d0608e44184255b3360e63b47abe9e70db32c43652efedea87c",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "79d4dc410fb27c6da95bb844f740d0c38ce473036516d61b5dde3e0a04ba2330",
+      "upstream_committed_at": "2026-10-26T08:06:25-07:00"
     },
     "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md": {
       "path": "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md",
@@ -30858,11 +30858,11 @@
     },
     "content/handbook/people-group/time-off-and-absence/time-off-types.md": {
       "path": "content/handbook/people-group/time-off-and-absence/time-off-types.md",
-      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
-      "translated_at": "2026-09-15T21:56:59Z",
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "translated_at": "2026-10-26T21:01:47.445103+00:00",
       "model": "codex",
-      "input_hash": "7597b2c20fcdfac920bd75045f222afbd462596b0b5a768b6dee90b4ae8f626f",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "718405ee162315219eae49624a4810d67a5afe8d76b9042a1464954af64d82f8",
+      "upstream_committed_at": "2026-10-21T09:16:46-07:00"
     },
     "content/handbook/people-group/people-ops-tech-analytics/_index.md": {
       "path": "content/handbook/people-group/people-ops-tech-analytics/_index.md",
@@ -31114,11 +31114,11 @@
     },
     "content/handbook/people-group/general-onboarding/_index.md": {
       "path": "content/handbook/people-group/general-onboarding/_index.md",
-      "upstream_sha": "494ec44577df92226718c2ecdc2df1632b5848a2",
-      "translated_at": "2026-09-15T21:58:00Z",
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "translated_at": "2026-10-26T21:04:26.714134+00:00",
       "model": "codex",
-      "input_hash": "6af4a947df52cdd6f6208e1bc3bcb57c8901bf9d4711ddc8f6047e942296c873",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "a579a1b7b6d0ab3975eaffa5f4bce8f10472f86f8431db47b5765894f70ab4cf",
+      "upstream_committed_at": "2026-10-23T12:38:14-05:00"
     },
     "content/handbook/people-group/general-onboarding/mr-buddies.md": {
       "path": "content/handbook/people-group/general-onboarding/mr-buddies.md",
@@ -37354,11 +37354,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00",
-      "translated_at": "2026-09-20T01:36:34+00:00",
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "upstream_committed_at": "2026-10-13T16:58:44-04:00",
+      "translated_at": "2026-10-26T21:06:13.194319+00:00",
       "model": "codex",
-      "input_hash": "94c8632144f7b0f767f81464d9242c1583205ec6773aceade70c4008b5b97aca"
+      "input_hash": "4899ee3cce640fbed4ebac05bfa4fbb5dcc0349e54d6db0b7459ba4d1a989473"
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/cfps.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/cfps.md",
@@ -37386,11 +37386,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/content.md",
-      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
-      "translated_at": "2026-09-25T21:12:56Z",
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "translated_at": "2026-10-26T21:06:13.194319+00:00",
       "model": "codex",
-      "input_hash": "65591f37faf041bd40a2ef33e089376a56b03397179f2291e3b5e834f0dc36da",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "3b7dad6b0f8871d79c871327b6cc9fe443bba1d27f4081958beccc2e48b2480c",
+      "upstream_committed_at": "2026-10-26T14:38:59-04:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments.md",
@@ -37434,11 +37434,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "upstream_committed_at": "2026-09-18T21:20:33+02:00",
-      "translated_at": "2026-09-20T01:48:20+00:00",
+      "upstream_sha": "819fcd03ca3ddcde75fbd60bf7799c95d23d49f9",
+      "upstream_committed_at": "2026-10-26T14:38:59-04:00",
+      "translated_at": "2026-10-26T21:06:13.194319+00:00",
       "model": "codex",
-      "input_hash": "2a1a1eae653ef55cb1bf7c87994b489d959514ffa6880fae0ab33715dfda6344"
+      "input_hash": "efa379e2d50f005450c93fce3e11b0ab349d1f1313e8196214f8dcd44eff3549"
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/reddit.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/reddit.md",

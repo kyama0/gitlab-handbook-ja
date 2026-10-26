@@ -3,9 +3,9 @@ linkTitle: "Content"
 title: "Developer Advocates のコンテンツライブラリとワークフロー"
 description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/"
-upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
-lastmod: "2026-09-24T21:34:11+02:00"
-translated_at: "2026-09-25T21:12:56Z"
+upstream_sha: 819fcd03ca3ddcde75fbd60bf7799c95d23d49f9
+lastmod: "2026-10-26T14:38:59-04:00"
+translated_at: "2026-10-26T21:06:13.194319+00:00"
 translator: codex
 stale: false
 ---
@@ -33,11 +33,11 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 
 - [製品ツアー](#product-tours)：機能とその価値を紹介する、短いガイド付きウォークスルーです。
 - [クリックスルーデモ](#click-through-demos)：ライブ環境を使わずにワークフローのリハーサルやプレゼンテーションを行うための製品シミュレーションで、オフラインでも利用できます。
-- [プロジェクト](#projects)：実際に操作して調べるためのデモ環境、ワークショップ、ライブデモです。使用前に各環境のセットアップ手順を確認してください。
+- [デモ環境](#demo-environments)：実際に操作して調べたり、ワークショップやライブデモに使用したりするために保守されている環境です。使用前に各環境のセットアップ手順を確認してください。
 
 ### Highspot {#highspot}
 
-チームのコンテンツは、以下のコンテンツプラットフォームと、[Highspot](https://gitlab.highspot.com/)のトピック別・タイプ別のスポット（例: [GitLab Duo (AI)](https://gitlab.highspot.com/spots/64b14e7cc4b08381c0408bb4)や [Customer Outreach](https://gitlab.highspot.com/spots/615dd7c2506d3fc490ad78cd)）で配信されています。
+チームのコンテンツは、以下のコンテンツプラットフォームと、[Highspot](https://gitlab.highspot.com/)のトピック別・タイプ別のスポット（例： [GitLab Duo (AI)](https://gitlab.highspot.com/spots/64b14e7cc4b08381c0408bb4)や [Customer Outreach](https://gitlab.highspot.com/spots/615dd7c2506d3fc490ad78cd)）で配信されています。
 
 ### ブログ記事 {#blog-posts}
 
@@ -48,7 +48,7 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 | ブログ記事 | 著者 |
 | --- | --- |
 | [GitLab Duo Agent Platform 入門：完全ガイド](https://about.gitlab.com/blog/gitlab-duo-agent-platform-complete-getting-started-guide/) | [Itzik Gan Baruch](https://about.gitlab.com/blog/authors/itzik-gan-baruch/) |
-| [Web UI で GitLab Duo Agentic Chat を使い始める](https://about.gitlab.com/blog/get-started-with-gitlab-duo-agentic-chat-in-the-web-ui/) | [Daniel Helfand](https://about.gitlab.com/blog/authors/daniel-helfand/), [Fatima Sarah Khalid](https://about.gitlab.com/blog/authors/fatima-sarah-khalid/) |
+| [Web UI で GitLab Duo Agentic Chat を使い始める](https://about.gitlab.com/blog/get-started-with-gitlab-duo-agentic-chat-in-the-web-ui/) | [Daniel Helfand](https://about.gitlab.com/blog/authors/daniel-helfand/)、[Fatima Sarah Khalid](https://about.gitlab.com/blog/authors/fatima-sarah-khalid/) |
 | [見逃した方へ：開発者コミュニティから得られた AI とセキュリティの重要な知見](https://about.gitlab.com/blog/icymi-key-ai-and-security-insights-from-our-developer-community/) | [Fatima Sarah Khalid](https://about.gitlab.com/blog/authors/fatima-sarah-khalid/) |
 | [GitLab Duo CLI：開発ライフサイクルのためのエージェント型 AI がターミナルにも登場](https://about.gitlab.com/blog/gitlab-duo-cli/) | [John Coghlan](https://about.gitlab.com/blog/authors/john-coghlan/) |
 | [Claude Code と GitLab：成果につながる 3 つのワークフロー](https://about.gitlab.com/blog/claude-code-and-gitlab/) | [Michael Friedrich](https://about.gitlab.com/blog/authors/dnsmichi/) |
@@ -60,7 +60,7 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 
 | ブログ記事 | 著者 |
 | --- | --- |
-| [GitLab の親子パイプラインでの変数とアーティファクトの共有](https://about.gitlab.com/blog/variable-and-artifact-sharing-in-gitlab-parent-child-pipelines/) | [Daniel Helfand](https://about.gitlab.com/blog/authors/daniel-helfand/), [William Arias](https://about.gitlab.com/blog/authors/william-arias/) |
+| [GitLab の親子パイプラインでの変数とアーティファクトの共有](https://about.gitlab.com/blog/variable-and-artifact-sharing-in-gitlab-parent-child-pipelines/) | [Daniel Helfand](https://about.gitlab.com/blog/authors/daniel-helfand/)、[William Arias](https://about.gitlab.com/blog/authors/william-arias/) |
 | [GitLab Dashboard for Kubernetes でログをストリーミングする方法](https://about.gitlab.com/blog/how-to-stream-logs-through-the-gitlab-dashboard-for-kubernetes/) | [Daniel Helfand](https://about.gitlab.com/blog/authors/daniel-helfand/) |
 | [GitLab で GitLab を構築する：GitLab.com が Dedicated に与えた着想](https://about.gitlab.com/blog/building-gitlab-with-gitlabcom-how-gitlab-inspired-dedicated/) | [John Coghlan](https://about.gitlab.com/blog/authors/john-coghlan/) |
 | [GitLab Container Scanning の完全ガイド](https://about.gitlab.com/blog/complete-guide-to-gitlab-container-scanning/) | [Fernando Diaz](https://about.gitlab.com/blog/authors/fernando-diaz/) |
@@ -140,7 +140,7 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 | [AI インパクト分析](https://gitlab.navattic.com/ai-impact-internal) | GitLab Duo | 2024-10-30 | @iganbaruch |
 | [Duo Enterprise](https://gitlab.navattic.com/duo-enterprise-internal) | GitLab Duo | 2024-10-28 | @iganbaruch |
 
-これらのツアーを操作する詳しい手順を見つけるには、Google Drive で「[製品名] tour - navigation guide」（例: Advanced SAST tour - navigation guide）を検索してください。
+これらのツアーを操作する詳しい手順を見つけるには、Google Drive で「[製品名] tour - navigation guide」（例： Advanced SAST tour - navigation guide）を検索してください。
 
 {{% /details %}}
 
@@ -168,11 +168,11 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 
 これらの講演スライドデッキは、イベント、講演、顧客向けワークショップなどでのストーリーテリングを提供します。スライドデッキを自分の講演やワークショップなどに使用したり、特定のスライドを新しいストーリーに転用したりできます。質問やフィードバックは [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B)の DRI に連絡してください。
 
-以下の講演がメンテナンスされています:
+以下の講演がメンテナンスされています：
 
 | タイトル | 領域 | フォーカス | リソース | 更新日 | DRI |
 |-------|------|-------|-----------|---------|-----|
-| 私の AI エージェントの力を借りた効率的な DevSecOps ワークフロー | エージェント型 AI、GitLab Duo Agent Platform | ユースケースと問題解決、ライブデモと AMA | GitLab DACH Roadshow 2025 [録画](https://www.youtube.com/watch?v=amJQkKhe5ys)、スライド: [公開版](https://dnsmichi.click/efficient-devsecops-ai-agents-gitlab-dach-roadshow-2025)、[内部版](https://docs.google.com/presentation/d/1YMOQf-5hNzCyfUS2w6yvvDlfu_FqmYebkyxmeFWTyOU/edit)、デモ: [Tanuki IoT Platform](https://gitlab.com/gitlab-da/use-cases/ai/gitlab-duo-agent-platform/demo-environments/tanuki-iot-platform) | 2025-12-04 | @dnsmichi |
+| 私の AI エージェントの力を借りた効率的な DevSecOps ワークフロー | エージェント型 AI、GitLab Duo Agent Platform | ユースケースと問題解決、ライブデモと AMA | GitLab DACH Roadshow 2025 [録画](https://www.youtube.com/watch?v=amJQkKhe5ys)、スライド： [公開版](https://dnsmichi.click/efficient-devsecops-ai-agents-gitlab-dach-roadshow-2025)、[内部版](https://docs.google.com/presentation/d/1YMOQf-5hNzCyfUS2w6yvvDlfu_FqmYebkyxmeFWTyOU/edit)、デモ： [Tanuki IoT Platform](https://gitlab.com/gitlab-da/use-cases/ai/gitlab-duo-agent-platform/demo-environments/tanuki-iot-platform) | 2025-12-04 | @dnsmichi |
 
 {{% details summary="アーカイブ済みの講演" %}}
 
@@ -180,18 +180,18 @@ Developer Advocacy チームは、キャンペーン、フィールドイネー�
 
 | タイトル | 領域 | フォーカス | リソース | 更新日 | DRI |
 |-------|------|-------|-----------|---------|-----|
-| オープンソースへの参入：AI を使った迅速なコントリビューション | AI で貢献し共創する | AI を使って学んだベストプラクティス、contributors.gitlab.com の紹介 | Bitkom Forum Open Source 2025 スライド: [公開版](https://dnsmichi.click/oss-contributions-ai-bitkom-forum-open-source-2025)、[内部版](https://docs.google.com/presentation/d/1gqxkzoUiTlajYeI4gwWXGdV8fxC8jQwS3oOeKqQxnxg/edit) | 2025-09-18 | @dnsmichi |
-| 進化するエッジ：組み込み向けの AI、CI、Hardware-in-the-Loop | エージェント型 AI、CI、組み込み | GitLab CI/CD Runner、LLM、組み込みハードウェア上での MCP を使った エージェント型 AI に関する研究 | Container Days 2025 [録画](https://www.youtube.com/watch?v=1DGolO9bEfo)、スライド: [公開版](https://dnsmichi.click/evolving-edge-ai-ci-hil-embedded-container-days-2025)、[内部版](https://docs.google.com/presentation/d/1tcsvvgjCAt4lXc_9vhiTg93Rhgn_K-1DYU5tYsKjmEQ/edit) | 2025-09-10 | @dnsmichi |
-| AI 入門：開発者のための実践的な基礎 | エージェント型 AI | LLM、RAG、Tool、Agent、MCP のユースケースと実践的なプロンプトなどの学習 | Open Source @ Siemens 2025 [録画](https://www.youtube.com/watch?v=6NxSJmpjxfo)、スライド: [公開版](https://dnsmichi.click/learning-ai-101-os-siemens-2025)、[内部版](https://docs.google.com/presentation/d/1PUCUrVzKnzc25md8gbh1jYznz-dUFfQcENvbR9xUJ7k/edit) | 2025-06-03 | @dnsmichi |
-| AI の力を借りた効率的な DevSecOps ワークフロー | AI、GitLab Duo | Duo を使用した製品ユースケース | DACH Roadshow 2024 スライド： [公開版](https://docs.google.com/presentation/d/1Pm8yT46jpcc3kY0PLZqZlG2slIiFyZiQPKFEgyqqstw/pub?start=false&loop=false&delayms=3000&slide=id.g1d24c3e4ddd_5_252), [内部版](https://docs.google.com/presentation/d/1Pm8yT46jpcc3kY0PLZqZlG2slIiFyZiQPKFEgyqqstw/edit)  | 2024-11-14 | @dnsmichi |
+| オープンソースへの参入：AI を使った迅速なコントリビューション | AI で貢献し共創する | AI を使って学んだベストプラクティス、contributors.gitlab.com の紹介 | Bitkom Forum Open Source 2025 スライド： [公開版](https://dnsmichi.click/oss-contributions-ai-bitkom-forum-open-source-2025)、[内部版](https://docs.google.com/presentation/d/1gqxkzoUiTlajYeI4gwWXGdV8fxC8jQwS3oOeKqQxnxg/edit) | 2025-09-18 | @dnsmichi |
+| 進化するエッジ：組み込み向けの AI、CI、Hardware-in-the-Loop | エージェント型 AI、CI、組み込み | GitLab CI/CD Runner、LLM、組み込みハードウェア上での MCP を使った エージェント型 AI に関する研究 | Container Days 2025 [録画](https://www.youtube.com/watch?v=1DGolO9bEfo)、スライド： [公開版](https://dnsmichi.click/evolving-edge-ai-ci-hil-embedded-container-days-2025)、[内部版](https://docs.google.com/presentation/d/1tcsvvgjCAt4lXc_9vhiTg93Rhgn_K-1DYU5tYsKjmEQ/edit) | 2025-09-10 | @dnsmichi |
+| AI 入門：開発者のための実践的な基礎 | エージェント型 AI | LLM、RAG、ツール、エージェント、MCP のユースケースと実践的なプロンプトなどの学習 | Open Source @ Siemens 2025 [録画](https://www.youtube.com/watch?v=6NxSJmpjxfo)、スライド： [公開版](https://dnsmichi.click/learning-ai-101-os-siemens-2025)、[内部版](https://docs.google.com/presentation/d/1PUCUrVzKnzc25md8gbh1jYznz-dUFfQcENvbR9xUJ7k/edit) | 2025-06-03 | @dnsmichi |
+| AI の力を借りた効率的な DevSecOps ワークフロー | AI、GitLab Duo | Duo を使用した製品ユースケース | DACH Roadshow 2024 スライド： [公開版](https://docs.google.com/presentation/d/1Pm8yT46jpcc3kY0PLZqZlG2slIiFyZiQPKFEgyqqstw/pub?start=false&loop=false&delayms=3000&slide=id.g1d24c3e4ddd_5_252)、[内部版](https://docs.google.com/presentation/d/1Pm8yT46jpcc3kY0PLZqZlG2slIiFyZiQPKFEgyqqstw/edit)  | 2024-11-14 | @dnsmichi |
 
 {{% /details %}}
 
 ### ワークショップ {#workshops}
 
-Developer Advocacy チームは、さまざまな製品・フォーカス領域でワークショップをメンテナンスしています。ワークショップにはさまざまなタイプがあります: 受講者がライブで演習に参加するハンズオン形式（トレーニングコース）や、受講者が質問で関与するライブデモ／プログラミングセッションの実演形式です。ワークショップは [Solution Architect](/handbook/solutions-architects/)チームや [Customer Success](/handbook/customer-experience/)チームと協力して作成し、ビジネス目標と整合させるべきです。
+Developer Advocacy チームは、さまざまな製品・フォーカス領域でワークショップをメンテナンスしています。ワークショップにはさまざまなタイプがあります： 受講者がライブで演習に参加するハンズオン形式（トレーニングコース）や、受講者が質問で関与するライブデモ／プログラミングセッションの実演形式です。ワークショップは [Solution Architect](/handbook/solutions-architects/)チームや [Customer Success](/handbook/customer-experience/)チームと協力して作成し、ビジネス目標と整合させるべきです。
 
-> 注: 特定の顧客向けに焦点を当てたワークショップは、[顧客コンサルティングハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/consultancy/)に従ってリクエストできます。
+> 注： 特定の顧客向けに焦点を当てたワークショップは、[顧客コンサルティングハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/consultancy/)に従ってリクエストできます。
 
 {{% details summary="アーカイブ済みのワークショップ" %}}
 
@@ -207,7 +207,7 @@ Developer Advocacy チームは、さまざまな製品・フォーカス領域�
 
 ### メンテナンスされているドキュメント {#maintained-documentation}
 
-Developer Advocates は、採用と効率化のユースケースを支援する実践的・技術的な例を含む、以下のドキュメントページを執筆・メンテナンスしています。
+Developer Advocates は、導入と効率化のユースケースを支援する実践的・技術的な例を含む、以下のドキュメントページを執筆・メンテナンスしています。
 
 | タイトル | 領域 | 作成日 | DRI |
 |-------|------|--------------|-----|
@@ -231,11 +231,11 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 | [フィーチャーフラグ](https://tech-marketing.gitlab.io/static-demos/feature-flags/feature-flags-html.html) | CD | 2023-06-23 |
 | [CI の概要](https://tech-marketing.gitlab.io/static-demos/ci_overview_v1.html) | CI | 2023-10-23 |
 
-注: デモは、インターネット接続がない場合でもオフラインで実行できます。そのためには、必要な HTML ファイルを[こちら](https://gitlab.com/tech-marketing/static-demos/-/tree/master/public)から直接入手できます。
+注： デモは、インターネット接続がない場合でもオフラインで実行できます。そのためには、必要な HTML ファイルを[こちら](https://gitlab.com/tech-marketing/static-demos/-/tree/master/public)から直接入手できます。
 
 {{% /details %}}
 
-### 製品採用イニシアチブ {#product-adoption-initiatives}
+### 製品導入の取り組み {#product-adoption-initiatives}
 
 - [Orbit / Knowledge Graph のローンチ支援（デモ、ユースケース、調査） - FY27](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/work_items/1163)
 - [GitLab DAP のローンチ支援：状況、機能の追跡、イネーブルメント - DevRel FY27](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/work_items/878)
@@ -250,6 +250,21 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 
 {{% /details %}}
 
+### デモ環境 {#demo-environments}
+
+ライブデモ、講演、ワークショップ、ウェビナー、アナリストリレーションズのために長期的に保守するデモ環境です。各環境には、セットアップを維持する DRI がいます。使用前に README とセットアップ手順を確認し、質問や変更については [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B)で DRI に連絡してください。
+
+| 環境 | 注力領域 | DRI |
+|-------------|-------|-----|
+| [Tanuki Bank](https://gitlab.com/gitlab-da/projects/tanuki-bank) | 金融サービスアプリケーション：マイクロサービス、Flux による GitOps、コンプライアンスフレームワークとパイプライン、CI/CD コンポーネント、セキュリティポリシー、GitLab Duo Agent Platform。カンファレンスの登壇者向け資料一式は [Epic Tanuki Bank](https://gitlab.com/gitlab-da/conferences/epic-tanuki-bank/epic-tanuki-bank-docs)にあります。 | [@dhelfand](https://gitlab.com/dhelfand)、[@sugaroverflow](https://gitlab.com/sugaroverflow) |
+| [Tanuki IoT Platform](https://gitlab.com/gitlab-da/demo-environments/tanuki-iot-platform) | 組み込みハードウェア、IoT、エンタープライズアプリケーション：センサー、ファームウェア、バックエンド、フロントエンド、CI/CD コンポーネント、オブザーバビリティ。GitLab Duo Agent Platform によるエージェント型 AI を活用したモダナイゼーション。 | [@dnsmichi](https://gitlab.com/dnsmichi) |
+| [DevSecOps Platform](https://gitlab.com/gitlab-da/use-cases/devsecops-platform) | AI/ML、MLOps、データサイエンス、Tanuki Telco を含む、エンドツーエンドの DevSecOps プラットフォームのユースケース。 | [@waarias](https://gitlab.com/waarias) |
+| [Security and Governance](https://gitlab.com/gitlab-da/tutorials/security-and-governance) | セキュリティスキャン、脆弱性管理、コンプライアンスフレームワーク、セキュリティポリシー、カスタムスキャナーの統合。[Simply Vulnerable Notes](https://gitlab.com/gitlab-da/tutorials/security-and-governance/devsecops/simply-vulnerable-notes)のデモも含まれます。 | [@fjdiaz](https://gitlab.com/fjdiaz) |
+
+デモ環境の `gitlab-da` グループ構成は、[プロジェクトハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/#group-demo-environments)に文書化されています。
+
+**注：** 特定の機能、ブログ記事、講演のための個別の小規模なデモは、ここには掲載していません。これらは [`use-cases`](https://gitlab.com/gitlab-da/use-cases)、[`tutorials`](https://gitlab.com/gitlab-da/tutorials)、[`projects`](https://gitlab.com/gitlab-da/projects)グループにあります。以下の[プロジェクト](#projects)を参照してください。
+
 ### プロジェクト {#projects}
 
 ソースコード、デモプロジェクト、ワークショップ、チュートリアル、研究などは、[プロジェクトハンドブック](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/)に文書化されています。これには、GitLab Duo (AI)、CI/CD コンポーネント、DevSecOps とセキュリティ、Workspaces、GitLab API などのユースケースが含まれます。
@@ -262,19 +277,19 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 
 **マイク**
 
-- 推奨: [Logitech Blue Yeti](https://www.logitechg.com/en-us/shop/p/yeti-premium-usb-microphone)
+- 推奨： [Logitech Blue Yeti](https://www.logitechg.com/en-us/shop/p/yeti-premium-usb-microphone)
 - 動画間で一貫した音質を確保するため、すべての録画で同じマイク設定を使用します
 - 滑らかでクリアな音声を確保するため、録画前にマイクのレベルをテストします
 - 音質を維持するため、マイクを口から 6 〜 12 インチの一定の位置に配置します
 
 **カメラ**
 
-- 推奨: [Logitech MX Brio Ultra HD 4k](https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam)
+- 推奨： [Logitech MX Brio Ultra HD 4k](https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam)
 - 最も自然に見えるよう、目の高さに配置します
 
 **照明**
 
-- 推奨: [Elgato Key Light](https://www.elgato.com/us/en/p/key-light)
+- 推奨： [Elgato Key Light](https://www.elgato.com/us/en/p/key-light)
 - カメラに映るすべての録画で一貫した照明を使用します
 
 **背景**
@@ -289,7 +304,7 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 
 **画面録画**
 
-- 推奨ツール: Quicktime、[OBS](#recording-with-obs)、または [Screen Studio](#recording-with-screen-studio)
+- 推奨ツール： Quicktime、[OBS](#recording-with-obs)、または [Screen Studio](#recording-with-screen-studio)
 
 **ポスト編集**
 
@@ -297,7 +312,7 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 
 #### カメラに映るプレゼンテーションのヒント {#on-camera-presentation-tips}
 
-自分がカメラに映る動画を録画する場合:
+自分がカメラに映る動画を録画する場合：
 
 - 自然な会話調で話し、スクリプトの読み上げは避けます
 - 自然さを保つため、完全なスクリプトではなく箇条書きや要点を使用します
@@ -311,7 +326,7 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 **アスペクト比と解像度**
 
 - 録画ウィンドウのサイズを 16:9 のアスペクト比に設定します
-- 一般的な解像度: 1920×1080（16:9）、または画面録画では 2880×1750
+- 一般的な解像度： 1920×1080（16:9）、または画面録画では 2880×1750
 - 4K モニターに接続している場合は、ラップトップからキャプチャする方が簡単な場合があります
 
 **Brand チーム向け動画の Screen Studio 設定**
@@ -321,7 +336,7 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 - 画面サイズを最大化するため、角丸とパディングを 0% に設定します
 - `Always use pointer cursor` をオンにします
 - カーソルサイズを 1.2x に設定し、一番左の `Cursor style` オプションを使用します
-- エクスポート: Format - MP4、Resolution - 1080p、Compression - Web
+- エクスポート： Format - MP4、Resolution - 1080p、Compression - Web
 
 **その他のコンテンツ向けの Screen Studio 設定**（ソーシャル、YouTube、ウェビナー）
 
@@ -331,7 +346,7 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 - 境界線やフレームは役立つ場合がありますが、コンテンツの可読性に影響しないことを確認します
 - `Always use pointer cursor` をオンにします
 - カーソルサイズを 1.2x に設定し、一番左の `Cursor style` オプションを使用します
-- エクスポート: Format - MP4、Resolution - 1080p、Compression - Web
+- エクスポート： Format - MP4、Resolution - 1080p、Compression - Web
 
 #### デモ環境のセットアップ {#demo-environment-setup}
 
@@ -342,29 +357,29 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 
 **Chrome ブラウザでの GitLab UI**
 
-- ズーム: 125%（または代替として 110%）
+- ズーム： 125%（または代替として 110%）
 - ブックマークバーを最小化（`cmd shift b`）
-- テーマ: White
-- GitLab レイアウト幅: Fluid（[`Profile > Settings > Layout width`](https://docs.gitlab.com/user/profile/preferences/#change-the-layout-width-on-the-ui)）
+- テーマ： White
+- GitLab レイアウト幅： Fluid（[`Profile > Settings > Layout width`](https://docs.gitlab.com/user/profile/preferences/#change-the-layout-width-on-the-ui)）
 
 **IDE** - 詳細は[開発環境](/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/)を参照してください
 
 - 視聴者が画面で何が起きているかを明確に見られるよう、ズームを十分に大きくします
-- VS Code: 必要だと思う回数より 1 〜 2 回多くズーム（`cmd` + `+`）します
-- JetBrains: `Settings > Appearance & Behavior > Appearance > Accessibility > Zoom` - テストでは `125%` が最適でした
+- VS Code： 必要だと思う回数より 1 〜 2 回多くズーム（`cmd` + `+`）します
+- JetBrains： `Settings > Appearance & Behavior > Appearance > Accessibility > Zoom` - テストでは `125%` が最適でした
 - 不要なタブやツールバー項目を閉じて IDE をシンプルにします
 - [IDE ベンダーのすべての AI 統合を無効化](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)します
 - 不要なアイコンを非表示にするか、Zen モード（`cmd`+`k`+`z`）を使って表示をシンプルにします
 
-追加のガイダンス: [開発環境（内部ハンドブック）](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)
+追加のガイダンス： [開発環境（内部ハンドブック）](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)
 
 #### 外部コンテンツリクエストのチェックリスト {#checklist-for-external-content-requests}
 
-外部向け動画コンテンツのリクエストに対応する場合は、次の項目を確認します:
+外部向け動画コンテンツのリクエストに対応する場合は、次の項目を確認します：
 
 1. 動画に音声ナレーションを含めるか、テキストのみのナレーションスクリプトにするか
-2. 出力アーティファクトの形式（デフォルト: mp4）
-3. 配信フォーマット（デフォルト: 16:9、1920x1080）、または必要なカスタムフォーマット
+2. 出力アーティファクトの形式（デフォルト： mp4）
+3. 配信フォーマット（デフォルト： 16:9、1920x1080）、または必要なカスタムフォーマット
 4. 動画の使用場所（YouTube、ブログ埋め込み、ソーシャルメディア）
 5. キャプション用字幕を含む SRT ファイル
 
@@ -372,17 +387,17 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 
 Screen Studio は、画面領域やウィンドウをキャプチャしてウェブカメラビューと組み合わせ、シンプルな編集 UI でインテリジェントな自動「[シーンへのズーム](https://screen.studio/guide/adding-editing-zooms)」を使用します。
 
-> 注: 「Shareable Links」機能の使用は承認されていません。録画が Screen Studio のクラウドストレージにアップロードされるためです。
+> 注： 「Shareable Links」機能の使用は承認されていません。録画が Screen Studio のクラウドストレージにアップロードされるためです。
 
-[録画を開始する](https://screen.studio/guide/new-recording)には、最小限のオーバーレイ UI を使用します:
+[録画を開始する](https://screen.studio/guide/new-recording)には、最小限のオーバーレイ UI を使用します：
 
 ![Screen Studio オーバーレイメニュー](/images/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/screenstudio-overlay-menu.png)
 
-**手順:**
+**手順：**
 
 1. Display、Window、または Area を選択します
    - Screen Studio は任意の解像度を録画できますが、16:9 または 4:3 を推奨します（[仕様](#screen-studio-recording-specifications)を参照）
-   - Area の場合: アスペクト比を選択し、録画領域をドラッグします
+   - Area の場合： アスペクト比を選択し、録画領域をドラッグします
 
    ![Screen Studio の領域選択](/images/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/screenstudio-recording-area-selector.png)
 
@@ -392,7 +407,7 @@ Screen Studio は、画面領域やウィンドウをキャプチャしてウェ
 
 ![Screen Studio エディタ](/images/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/screenstudio-editor.png)
 
-**エディタ内:**
+**エディタ内：**
 
 1. すべての設定、動画の配置、ズームのタイムラインなどを確認します
 2. [動画設定](#video-settings)セクションの仕様に従っていることを確認します
@@ -400,16 +415,16 @@ Screen Studio は、画面領域やウィンドウをキャプチャしてウェ
 4. `Export` → `Export to file` をクリックします
 5. [エクスポートダイアログ](https://screen.studio/guide/exporting-the-video)で `mp4` 形式を選択します
 
-**プロジェクト管理:**
+**プロジェクト管理：**
 
 - Screen Studio はプロジェクトを `~/Screen Studio Projects` フォルダに保存します
 - プロジェクトファイルは `.screenstudio` 拡張子を使用し、生の動画ファイルと設定を含みます
 - ターミナルで `ls` を使って確認できます
-- `Screen Studio` のプロジェクトリストから再度開けます:
+- `Screen Studio` のプロジェクトリストから再度開けます：
 
 ![Screen Studio - 以前のプロジェクトを開く](/images/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/screenstudio-open-previous-projects.png)
 
-**納品後:** ローカルストレージを節約するため、すべての動画ファイル（エクスポートしたアーティファクトと Screen Studio プロジェクト）をチームの Google Drive にアップロードします。
+**納品後：** ローカルストレージを節約するため、すべての動画ファイル（エクスポートしたアーティファクトと Screen Studio プロジェクト）をチームの Google Drive にアップロードします。
 
 ##### Screen Studio 録画仕様 {#screen-studio-recording-specifications}
 
@@ -417,22 +432,22 @@ Screen Studio は、画面領域やウィンドウをキャプチャしてウェ
 
 #### ソーシャルメディア向けの Screen Studio クリップ {#screen-studio-clips-for-social-media}
 
-ソーシャルメディア向けの短い製品動画クリップは、機能や能力を効果的に紹介します。次のガイドラインに従います:
+ソーシャルメディア向けの短い製品動画クリップは、機能や能力を効果的に紹介します。次のガイドラインに従います：
 
-**設定:**
+**設定：**
 
-1. 動画の長さ: 約 30 秒
+1. 動画の長さ： 約 30 秒
 1. 音声録音なし
-1. 録画ウィンドウ: 1280 x 960
-1. 出力アスペクト比: 4:3
-1. 角丸: 20
-1. パディング: 4%
-1. カーソルサイズ: 3x
+1. 録画ウィンドウ： 1280 x 960
+1. 出力アスペクト比： 4:3
+1. 角丸： 20
+1. パディング： 4%
+1. カーソルサイズ： 3x
 1. 常にポインターカーソル
-1. 背景色: #7759c2
+1. 背景色： #7759c2
 
-**Chrome のセットアップ:**
-GitLab にフォーカスし続けるため、Chrome ツールバー（アドレスバーやタブ）を録画しないようにします。1280 x 960 のアプリモードで Chrome を起動します:
+**Chrome のセットアップ：**
+GitLab にフォーカスし続けるため、Chrome ツールバー（アドレスバーやタブ）を録画しないようにします。1280 x 960 のアプリモードで Chrome を起動します：
 
 ```bash
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app=https://gitlab.com/gitlab-da/projects/cheap-flights --window-size=1280,960
@@ -444,45 +459,45 @@ GitLab にフォーカスし続けるため、Chrome ツールバー（アドレ
 
 OBS は画面録画をより細かく柔軟に制御できますが、トレードオフとしてセットアップと編集のプロセスがより複雑になります。
 
-**主要な概念:**
+**主要な概念：**
 
 **Scene** - 同時に録画するソースのコレクション
 
 **Sources** - 音声、画面録画、ウェブカメラなど
 
 - ソースを追加するには `+` アイコンをクリックします
-- よく使用するソース:
-  - macOS Screen Capture: 画面録画
-  - Audio Input Capture: 直接の音声録音
-  - Video Capture Input: 録画内の話者／ウェブカメラ
+- よく使用するソース：
+  - macOS Screen Capture： 画面録画
+  - Audio Input Capture： 直接の音声録音
+  - Video Capture Input： 録画内の話者／ウェブカメラ
 - Macbook の画面を録画するには `macOS Screen Capture` を使用し、名前を付けて右クリックし、プロパティを編集します
-- Properties: 画面（ラップトップとモニター）とキャプチャタイプ（画面全体、ウィンドウ、アプリケーション）を選択します
+- Properties： 画面（ラップトップとモニター）とキャプチャタイプ（画面全体、ウィンドウ、アプリケーション）を選択します
 
-**推奨設定:**
+**推奨設定：**
 
-OBS > Preferences > Video:
+OBS > Preferences > Video：
 
-- Base (Canvas) Resolution: 1920x1080、Aspect ratio 16:9
-- Output (Scaled) Resolution: 1920x1080、Aspect ratio 16:9
+- Base (Canvas) Resolution： 1920x1080、Aspect ratio 16:9
+- Output (Scaled) Resolution： 1920x1080、Aspect ratio 16:9
 
-OBS > Preferences > Output > Dropdown: Advanced
+OBS > Preferences > Output > Dropdown： Advanced
 
 - 「Recording > Automatically remux to mp4」を有効にします（mkv コンテナをインポートできない Adobe Premiere Pro で必要です）
 
-**追加リソース:**
+**追加リソース：**
 
 - [OBS 録画スタジオガイド](https://docs.google.com/presentation/d/16b58bVgJfM2nIKFyVRurNsNJoK2yqS_1QKHRp0F7CNo/edit?slide=id.g3357bbe63e5_0_183#slide=id.g3357bbe63e5_0_183)
 - [Developer Advocacy のショーケースのメモ](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）
 
 #### Adobe Premiere Pro でのポスト編集 {#post-editing-with-adobe-premiere-pro}
 
-**アクセス:** [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)が必要です（[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)）
+**アクセス：** [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)が必要です（[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)）
 
-**リソース:** [Developer Advocacy のショーケースのメモ](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）を確認してください
+**リソース：** [Developer Advocacy のショーケースのメモ](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）を確認してください
 
 #### プロ用放送マイクでの音声ゲインブースト {#audio-gain-boost-for-professional-broadcaster-microphones}
 
-プロ用の放送マイク（例: Shure SM7B）を使用していて音声ゲインが低すぎる場合は、次のオプションを試します:
+プロ用の放送マイク（例： Shure SM7B）を使用していて音声ゲインが低すぎる場合は、次のオプションを試します：
 
 **ハードウェアソリューション（推奨）**
 
@@ -495,12 +510,12 @@ OBS > Preferences > Output > Dropdown: Advanced
 2. `Source > Audio Capture Device` を見つけます
 3. 右クリックして `Filters` を選択します
 4. Gain を +10 または +20dB に設定します
-5. フィルターを設定します:
-   - Noise Suppression: RNNoise または Speex
-   - Compressor: Ratio 3:1、Threshold -18dB、Attack 6ms、Release 60ms
-   - Limiter: Threshold -6dB、Release 60ms
+5. フィルターを設定します：
+   - Noise Suppression： RNNoise または Speex
+   - Compressor： Ratio 3:1、Threshold -18dB、Attack 6ms、Release 60ms
+   - Limiter： Threshold -6dB、Release 60ms
 
-ヒント: ベストプラクティスの設定については [Claude](/handbook/tools-and-tips/ai/claude/)に尋ねてください（プロンプト: `How to boost audio in OBS for a Shure SM7B microphone as input?`）
+ヒント： ベストプラクティスの設定については [Claude](/handbook/tools-and-tips/ai/claude/)に尋ねてください（プロンプト： `How to boost audio in OBS for a Shure SM7B microphone as input?`）
 
 **Screen Studio 録画のポスト編集**
 
@@ -526,15 +541,15 @@ OBS > Preferences > Output > Dropdown: Advanced
 1. **簡潔に保つ** - 製品ツアーは 5 〜 12 ステップにし、各ステップで明確な価値を提供します。チュートリアルとは異なり、製品ツアーはすばやく魅力的なものにします。
 2. **コンテキストを提供する** - 追加リソースとして、ポップアップダイアログにブログ記事やドキュメントへのリンクを追加します。
 3. **GitLab ブランディングを適用する** - テーマ設定で「GitLab Branding [Navattic Team]」を選択し、一貫したデザインにします。
-4. **適切なキャプチャタイプを使用する**:
+4. **適切なキャプチャタイプを使用する**：
    - Web captures（推奨）は製品内体験を作り出します
-   - Web ベースでないアプリケーション（例: IDE）には Screenshots を使用します
+   - Web ベースでないアプリケーション（例： IDE）には Screenshots を使用します
 5. **正しい解像度を設定する** - Chrome でキャプチャする際は、1440x900（Navattic の推奨解像度）を使用します。Navattic 録画ツールバーの組み込みリサイズツールを使用します。
 6. **コールトゥアクションを含める** - 最終ステップには CTA（通常は無料トライアルへのリンク）を配置します。
 7. **Beacons を使って関連要素を強調する** - Highlight の外観設定を適用して重要な要素を強調します。
 8. **キーボードナビゲーションを有効にする** - 矢印キーでツアーを移動できるようにし、よりスムーズな体験を提供します。
 9. **Presenter Mode を使用する** - 必要に応じてポップアップを非表示にし、よりすっきりとしたビジュアルプレゼンテーションにします。
-10. **ポップアップを適切に設定する**:
+10. **ポップアップを適切に設定する**：
     - 最初と最後のステップには、強い背景を持つ Modals を使用します
     - 中間ステップには Tooltips を使用し、適切な場合は Backdrop 設定を有効にします
 11. **アクション固有のラベルを使用する** - ユーザーが積極的に関与していると感じられるように、「Next」の代わりに「Commit」「Install」「Submit」などのラベルを使用します。
@@ -543,7 +558,7 @@ OBS > Preferences > Output > Dropdown: Advanced
 
 #### Navattic へのアクセスをリクエストする {#requesting-access-to-navattic}
 
-チームにツアーに関する特別な要件があり、Navattic でツアーを開発したい場合:
+チームにツアーに関する特別な要件があり、Navattic でツアーを開発したい場合：
 
 - 正当なビジネス上の理由があるチームメンバーは、3 か月のトライアルライセンスを利用できます
 - アクティブユーザーは、必要に応じてアクセス期間の延長や追加ライセンスを受けられる場合があります
@@ -554,7 +569,7 @@ OBS > Preferences > Output > Dropdown: Advanced
 
 #### 新しい Navattic ユーザーの追加（Developer Advocacy チームのプロセス） {#adding-a-new-navattic-user-developer-advocacy-team-process}
 
-チームメンバーが Navattic へのアクセスをリクエストしたら、次のプロセスに従います:
+チームメンバーが Navattic へのアクセスをリクエストしたら、次のプロセスに従います：
 
 1. **リクエストを受け取る** - Navattic 管理者が Slack またはメール経由で Lumos リクエストを受け取ります
 2. **検証する** - リクエスト者が正当なビジネス上の理由を提供していることを確認します
@@ -568,7 +583,7 @@ OBS > Preferences > Output > Dropdown: Advanced
 
 #### 製品ツアーの公開 {#publishing-product-tours}
 
-製品ツアーは次の場所で公開されます:
+製品ツアーは次の場所で公開されます：
 
 - [Developer Advocacy コンテンツライブラリ](#product-tours)
 - [Highspot](#highspot)
@@ -581,11 +596,11 @@ OBS > Preferences > Output > Dropdown: Advanced
 
 Developer Advocacy チームは、Advanced SAST、GitLab Duo、GitLab Duo with Amazon Q、[その他](#product-tours)の主要なワークフローと新機能を紹介する製品ツアーを作成しています。コンテンツ、スクリプト、環境を用意して追加のツアーを提案することで、コントリビュートできます。
 
-**コラボレーションの方法:**
+**コラボレーションの方法：**
 
 1. [製品ツアー提出テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=product-tour-submission-template)を使ってアイデアを提案します
 2. 効果的に評価できるよう、テンプレートのすべての質問に回答します
-3. Developer Advocacy チームがレビューし、次のいずれかを行います:
+3. Developer Advocacy チームがレビューし、次のいずれかを行います：
    - ツアーを承認し、優先事項に基づいてタイムラインを提案します
    - 改善案を提供します
    - 適さない理由を説明し、代替案を提供します
@@ -603,24 +618,24 @@ Developer Advocacy チームは、[Marketing の UTM 戦略](/handbook/marketing
 
 ### コンテンツ配信ワークフロー {#content-distribution-workflow}
 
-コンテンツの公開後、次の配信手順に従います:
+コンテンツの公開後、次の配信手順に従います：
 
-**一般設定:**
+**一般設定：**
 
 1. [UTM ビルダー](/handbook/marketing/utm-strategy/#how-to-create-utms)を使用して UTM コードと短縮 URL を作成します
 
-**ドキュメントとコミュニティ:**
+**ドキュメントとコミュニティ：**
 
 1. 役立つチュートリアルブログ記事やデモを [GitLab ドキュメント](https://docs.gitlab.com/)に追加します
    - コントリビュートのドキュメントに従い、必要に応じて[関連トピック](https://docs.gitlab.com/ee/development/documentation/topic_types/#related-topics)の見出しを作成します
    - コンテンツの短縮 URL を含む MR を作成し、[担当テクニカルライター](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments)にレビューを依頼します
-   - 例: [ワークスペースのドキュメントにチュートリアルブログ記事を追加](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/127500)
-2. コミュニティプラットフォームで共有します:
+   - 例： [ワークスペースのドキュメントにチュートリアルブログ記事を追加](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/127500)
+2. コミュニティプラットフォームで共有します：
    - [GitLab Forum](https://forum.gitlab.com/)
    - [r/gitlab](https://www.reddit.com/r/gitlab)サブレディット
-   - より広いトピックの場合: その他のサブレディットや dev.to などのブログサイト
+   - より広いトピックの場合： その他のサブレディットや dev.to などのブログサイト
 
-**ソーシャルメディア:**
+**ソーシャルメディア：**
 
 1. ソーシャルメディア用のコピーを起草します
    - プラットフォームごとのヒントについては[コンテンツ共有](/handbook/marketing/product-and-technical-marketing/developer-advocacy/social-media/#content)を参照してください
@@ -629,10 +644,10 @@ Developer Advocacy チームは、[Marketing の UTM 戦略](/handbook/marketing
    - [EveryoneSocial でコンテンツを提案する方法](/handbook/marketing/corporate-communications/social-marketing/team-member-social-advocacy/#suggesting-content-for-team-members-to-share-on-everyonesocial)
 3. 投稿後、[`#social-media-action`](https://gitlab.slack.com/archives/C01AZ9C8Z4G) Slack チャンネルで共有し、ソーシャルメディアチームにプロモーションを依頼します
 
-**GitLab チーム:**
+**GitLab チーム：**
 
 1. フィールドで役立つコンテンツを [Highspot](https://gitlab.highspot.com/)に投稿します
-2. 次のテンプレートを使って、[#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでアップデートを共有します:
+2. 次のテンプレートを使って、[#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでアップデートを共有します：
 
 ```text
 :results-tanuki: <Content type> published: <title>
@@ -648,7 +663,7 @@ Content epic: <URL>
 Thanks/cc @teammembers
 ```
 
-例:
+例：
 
 ```text
 :results-tanuki:  Blog published: Set up your infrastructure for on-demand, cloud-based development environments in GitLab
