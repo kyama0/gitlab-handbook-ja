@@ -1,70 +1,70 @@
 ---
 title: "エージェント型ツール開発"
-description: "私たちのリポジトリで動作するエージェント型ツールを開発するためのデータチームのガイド。"
+description: "私たちのリポジトリで動作するエージェント型ツールを開発するための Data Team のガイド。"
 upstream_path: /handbook/enterprise-data/ai/agentic-tool-development/
-upstream_sha: b4d6f155a3f220e28a2c8c0191c96e9a9be2f4ef
-translated_at: "2026-06-03T00:00:00Z"
+upstream_sha: 84ebb9fc88e6a42116737a8dbf279ac21828660f
+translated_at: "2026-10-27T21:11:18.294005+00:00"
 translator: claude
 stale: false
-lastmod: "2026-06-03T13:43:50+00:00"
+lastmod: "2026-10-26T11:26:04-06:00"
 ---
 
-データチームのエージェント型ツーリングへのアプローチは、**スキルファースト、上向きにコンポーズ** モデルを中心に構築されています。モノリシックなエージェントを構築するのではなく、チームは作業を小さく、テスト可能で、再利用可能な **スキル** に分解します。各スキルは単一の明確に定義されたタスクを扱います。その後、エージェントはそれらのスキルから合成され、リクエストされた作業の種類に応じてスキルに委任します。
+Data Team のエージェント型ツーリングへのアプローチは、**スキルを優先し、それらを組み合わせて上位を構成する**モデルを中心に構築されています。モノリシックなエージェントを構築するのではなく、チームは作業を小さく、テスト可能で、再利用可能な **スキル** に分解します。各スキルは単一の明確に定義されたタスクを扱います。その後、エージェントはそれらのスキルから合成され、リクエストされた作業の種類に応じてスキルに委任します。
 
-このアプローチは、[OpenCode](https://opencode.ai) と Anthropic から生まれつつある標準 — リポジトリレベルのエージェントコンテキストのための `AGENTS.md` のような規約を含む — を基にしており、GitLab Duo がプラットフォームとして成熟するにつれて継続的に評価され、進化していきます。
+このアプローチは、[OpenCode](https://opencode.ai)と Anthropic から生まれつつある標準 — リポジトリレベルのエージェントコンテキストのための `AGENTS.md` のような規約を含む — を基にしており、GitLab Duo がプラットフォームとして成熟するにつれて継続的に評価され、進化していきます。
 
-## ディレクトリ構造の規約
+## ディレクトリ構造の規約 {#directory-structure-convention}
 
-このパターンを採用するすべてのリポジトリは、`agents/` ディレクトリの下にエージェント型ツーリングを 4 つのサブディレクトリで構成します。
+このパターンを採用するすべてのリポジトリは、`agents/` ディレクトリの下にエージェント型ツーリングを 3 つのサブディレクトリで構成します。
 
 ```console
 agents/
-├── memory/     # エージェントの並列作業を調整するための共有コンテキストファイル
-├── skills/     # アトミックで再利用可能な機能。各スキルには SKILL.md があります
-└── agents/     # 利用準備が整った合成エージェント。各エージェントには Markdown 仕様があります
+├── memory/     # Shared context files for coordinating parallel agent work
+├── skills/     # Atomic, reusable capabilities; each skill has a SKILL.md
+└── agents/     # Composed agents ready for use; each agent has a markdown spec
 ```
 
-## スキル
+## スキル {#skills}
 
 スキルはアトミックなビルディングブロックです。各スキルは独自のディレクトリにあり、その目的、入力、プロセスステップ、制約を定義する `SKILL.md` を持っています。
 スキルは単一の責任にスコープされ、エージェントによって、またはエンジニアによって直接呼び出されるように設計されています。
 
-### スキル仕様
+### スキル仕様 {#skill-specification}
 
-チームのスキルは、新興の [Agent Skills 仕様](https://agentskills.io/specification) に従います。これは、AI エージェントの機能をパッケージ化するためのポータブルで相互運用可能なフォーマットを定義するオープンスタンダードです。この仕様に準拠することで、スキルは異なる AI コーディングツールやクライアント間で一貫して検出、ロード、実行されるようになり、単一のプラットフォームを超えてポータブルになります。
+チームのスキルは、新興の [Agent Skills 仕様](https://agentskills.io/specification)に従います。これは、AI エージェントの機能をパッケージ化するためのポータブルで相互運用可能なフォーマットを定義するオープンスタンダードです。この仕様に準拠することで、スキルは異なる AI コーディングツールやクライアント間で一貫して検出、ロード、実行されるようになり、単一のプラットフォームを超えてポータブルになります。
 
 主要な仕様は 2 つあります。
 
-1. **ディレクトリ構造:**
+1. **ディレクトリ構造：**
 
 スキルは、少なくとも SKILL.md ファイルを含むディレクトリです。
 
 ```text
 skill-name/
-├── SKILL.md          # 必須: メタデータ + 指示
-├── scripts/          # 任意: 実行可能なコード
-├── references/       # 任意: ドキュメント
-├── assets/           # 任意: テンプレート、リソース
-└── ...               # その他の任意のファイルまたはディレクトリ
+├── SKILL.md          # Required: metadata + instructions
+├── scripts/          # Optional: executable code
+├── references/       # Optional: documentation
+├── assets/           # Optional: templates, resources
+└── ...               # Any additional files or directories
 ```
 
-**SKILL.md のフォーマット:**
+**SKILL.md のフォーマット：**
 
 SKILL.md ファイルには、YAML フロントマターに続いて Markdown コンテンツが含まれている必要があります。フロントマターには `name` や `description` などのメタデータフィールドが含まれており、これらは AI コーディングツールによる自動的なスキル検出を有効化する上で最も重要です。
 
-### スキル開発
+### スキル開発 {#skill-development}
 
 スキルは **モジュラー** かつ **テスト済み** であるべきです — コードに対して私たちが設定するのと同じ基準です。
 
-#### ガイドライン 1: モジュラー
+#### ガイドライン 1： モジュラー {#guideline-1-modular}
 
 **スキルごとに 1 つの目的。バンドルせず、コンポーズする。**
 
-スキルはシンプルなもの (`run_dbt_locally`, `gitlab-mr`) でも、スキルを連鎖させるエンドツーエンドのワークフローでも構いません。重要なのは、各スキルに明確に述べられた目的が 1 つあること、そして独自のスキルになり得るサブタスクは *それ自体が* 独自のスキルになっていることです。
+スキルはシンプルなもの （`run_dbt_locally`、`gitlab-mr`） でも、スキルを連鎖させるエンドツーエンドのワークフローでも構いません。重要なのは、各スキルに明確に述べられた目的が 1 つあること、そして独自のスキルになり得るサブタスクは *それ自体が* 独自のスキルになっていることです。
 
 `build_and_open_mr` というスキルが `run_dbt_locally` を呼び出してから `gitlab-mr` を呼び出すかもしれません — これがモジュラーです。オーケストレーションロジックはワークフロースキルに存在し、実装ロジックはサブスキルに存在します。
 
-#### ガイドライン 2: テスト済み
+#### ガイドライン 2： テスト済み {#guideline-2-tested}
 
 **実際に実行した。動いた。**
 
@@ -74,9 +74,9 @@ SKILL.md ファイルには、YAML フロントマターに続いて Markdown �
 1. 完全なワークフローが、エージェントが詰まったり予期しない明確化を求めたりすることなく完了した
 1. 期待される出力が生成された
 
-[agentic_skills_changes MR テンプレート](https://gitlab.com/gitlab-data/analytics/-/blob/master/.gitlab/merge_request_templates/python_changes.md?ref_type=heads) は、マージ前にこれら両方を強制します。
+[agentic_skills_changes MR テンプレート](https://gitlab.com/gitlab-data/analytics/-/blob/master/.gitlab/merge_request_templates/agentic_skills_changes.md?ref_type=heads)は、マージ前にこれら両方を強制します。
 
-## エージェント
+## エージェント {#agents}
 
 エージェントはスキルとサブエージェントから合成されます。各エージェントは、以下を指定する Markdown ファイルで定義されます。
 
@@ -86,24 +86,24 @@ SKILL.md ファイルには、YAML フロントマターに続いて Markdown �
 - **MCP サーバー** — アクセスできる外部ツール（データベース、API、ナレッジベース）
 - **プロセス** — エージェントが従う構造化されたワークフロー
 
-エージェントは透明で監査可能になるように設計されています: すべての機能が明示的に列挙されており、エージェントは定義されたツールセットの外で即興しません。
+エージェントは透明で監査可能になるように設計されています。 すべての機能が明示的に列挙されており、エージェントは定義されたツールセットの外で即興しません。
 
-## 開発と変更管理
+## 開発と変更管理 {#development-and-change-management}
 
-新しいスキルやエージェントは、本番環境に昇格される前に、Anthropic の [skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator) のようなツールを使用して検証されます。これは、マージ前にスキルを評価、テスト、ベンチマークするための構造化されたフレームワークを提供します。これにより、十分にテストされた信頼性のある機能のみが `skills/` と `agents/` ディレクトリに昇格されることが保証されます。
+新しいスキルやエージェントは、本番環境に昇格される前に、Anthropic の [skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator)のようなツールを使用して検証されます。これは、マージ前にスキルを評価、テスト、ベンチマークするための構造化されたフレームワークを提供します。これにより、十分にテストされた信頼性のある機能のみが `skills/` と `agents/` ディレクトリに昇格されることが保証されます。
 
-準備が整ったら、変更はリポジトリ内の他のコード変更と同じマージリクエストワークフローに従い、ピアレビュー、バージョン履歴、ロールバック機能を確保します。スキルとエージェントは単純な Markdown ファイルなので、他のコード成果物と同様に差分表示、レビュー、監査が可能です。
+準備が整ったら、変更はリポジトリ内の他のコード変更と同じマージリクエストワークフローに従い、ピアレビュー、バージョン履歴、ロールバック機能を確保します。スキルとエージェントはプレーンな Markdown ファイルなので、他のコード成果物と同様に差分表示、レビュー、監査が可能です。
 
-リポジトリルートにある `AGENTS.md` ファイルは、エージェント型コンテキストへのエントリポイントとして機能します。ディレクトリ構造と規約を記述しているため、リポジトリで作業する AI コーディングアシスタントが即座に自分の位置を把握できます。
+リポジトリルートにある `AGENTS.md` ファイルは、エージェント型コンテキストへのエントリポイントとして機能します。ディレクトリ構造と規約を記述しているため、リポジトリで作業する AI コーディングアシスタントがすぐに状況を把握できます。
 
 エージェント型 AI の分野が急速に進化するにつれて、チームの規約、ツール選択、エージェント設計は継続的に再評価されます。今日うまく機能しているパターンは、GitLab Duo の新機能や、より広いエコシステムから更新された標準によって取って代わられる可能性があり、チームはそれに応じて適応します。
 
-## 利用可能なスキル
+## 利用可能なスキル {#available-skills}
 
-データチームのスキルは、それらが使用されるリポジトリで直接メンテナンスされています。利用可能なものを確認するには、スキルディレクトリをブラウズしてください。
+Data Team のスキルは、それらが使用されるリポジトリで直接メンテナンスされています。利用可能なものを確認するには、スキルディレクトリをブラウズしてください。
 
 - **[Data Team エージェント型スキル](https://gitlab.com/gitlab-data/data-team-agentic-skills)** - 同じスキルを各リポジトリで作成するのではなく、他のデータリポジトリ間で利用できる共有スキル
-- **[Analytics リポジトリのスキル](https://gitlab.com/gitlab-data/analytics/-/tree/master/agents/skills?ref_type=heads)** - dbt、Snowflake、analytics ワークフロー向けのスキル
+- **[Analytics リポジトリのスキル](https://gitlab.com/gitlab-data/analytics/-/tree/master/agents/skills?ref_type=heads)** - dbt、Snowflake、分析ワークフロー向けのスキル
 - **[Extract リポジトリのスキル](https://gitlab.com/gitlab-data/extract/-/tree/main/agents/skills?ref_type=heads)** - データ抽出とパイプライン作業のためのスキル
 - **[Snowflake permissions のスキル](https://gitlab.com/gitlab-data/snowflake-permissions/-/tree/main/agents/skills?ref_type=heads)** - Permafrost 経由で Snowflake ユーザーとロールをプロビジョニングするためのスキル
 

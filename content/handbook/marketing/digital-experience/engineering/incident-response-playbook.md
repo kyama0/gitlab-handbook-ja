@@ -1,41 +1,41 @@
 ---
 title: "インシデント対応マトリクス"
-description: "Marketing サイトで発生する可能性のあるインシデントへのガイド"
+description: "マーケティングサイトで発生する可能性のあるインシデントへのガイド"
 upstream_path: /handbook/marketing/digital-experience/engineering/incident-response-playbook/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-05-01T10:36:34Z"
+upstream_sha: 84ebb9fc88e6a42116737a8dbf279ac21828660f
+translated_at: "2026-10-27T21:09:41.005052+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-10-26T17:06:50-07:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
-このページでは、GitLab Marketing サイトで発生するインシデントに関するインサイトを提供し、深刻度レベルを評価する方法を示し、サポートを得るための手段を概説します。
+このページでは、GitLab のマーケティングサイトで発生するインシデントについて説明し、重大度を評価する方法とサポートを得るための手段を概説します。
 
-最初に、私たちのマーケティングサイトは複数のプロジェクトで構成されているという多様な構成について理解しておくことが重要です。すべてのデプロイは同じ GCP バケットへ収束しますが、ウェブサイト生成にはさまざまな技術が使用されています。
+まず、私たちのマーケティングサイトは複数のプロジェクトから成る多様な構成であることを理解しておく必要があります。すべてのデプロイ先は同じ GCP バケットですが、ウェブサイトの生成には異なる技術を使用しています。
 
-1. Marketing サイトは複数のリポジトリで構成されています: [www](https://gitlab.com/gitlab-com/www-gitlab-com)、[navigation](https://gitlab.com/gitlab-com/marketing/digital-experience/navigation)、[slippers](https://gitlab.com/gitlab-com/marketing/digital-experience/slippers-ui)、そして主に [about.gitlab.com](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com)。
+1. マーケティングサイトは、[www](https://gitlab.com/gitlab-com/www-gitlab-com)、[navigation](https://gitlab.com/gitlab-com/marketing/digital-experience/navigation)、[slippers](https://gitlab.com/gitlab-com/marketing/digital-experience/slippers-ui)、そして主に [about.gitlab.com](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com)という複数のリポジトリで構成されています。
 
-1. www-gitlab-com と about.gitlab.com はビルドプロセス中にページを生成し、これらのアーティファクトを単一の GCP バケットへアップロードします。パイプライン実行時に、すべてのアーティファクトは私たちの GCP バケットの `/public` ディレクトリ内に統合されます。
+1. www-gitlab-com と about.gitlab.com は、ビルド中にページを生成し、それらのアーティファクトを 1 つの GCP バケットにアップロードします。パイプラインの実行時に、すべてのアーティファクトを GCP バケット上の `/public` ディレクトリ内にまとめます。
 
-### このインシデントはどのレベルですか？
+### このインシデントはどのレベルですか？ {#what-level-is-this-incident}
 
-インシデントの深刻度を判断する際に考慮すべき質問は次のとおりです:
+インシデントの重大度を判断する際は、次の点を検討します。
 
-1. Marketing サイトの停止の影響レベルはどれくらいですか？
-1. 進行中のインシデントについて、Slack の #digital-experience-team または #dex-alerts チャンネルをモニタリングしましたか？
-1. インシデントはどれくらい広範囲ですか？影響を受ける個人の数を超えて、次のことを考慮しながら評価することが極めて重要です:
+1. マーケティングサイトの停止による影響はどの程度ですか？
+1. 進行中のインシデントがないか、Slack の #digital-experience-team または #dex-alerts チャンネルを確認しましたか？
+1. インシデントの影響範囲はどの程度ですか？影響を受ける人数だけでなく、次の点も考慮して評価することが重要です。
     -影響を受けるユーザーの総数。
-    - 私たちの主要ステークホルダーの様々なカテゴリーへの潜在的な影響。
-    - 規模に関係なく、インシデントが重要な顧客やパートナーに影響を与えるかどうか。
-1. 影響を受ける個人の中に、私たちの主要なオーディエンスやステークホルダーの中で影響力のある人はいますか？
-1. インシデントは私たちのコアビジネス運営に直接影響を与えますか？
-1. 過去に同様のインシデントに遭遇したことがありますか？要するに、これは会社にとって繰り返し発生する問題ですか？
-1. インシデントは業界全体の課題やトレンドと関連していますか？競合他社や他社が同様の問題に直面していますか？
-1. [重要なビジネスページ](https://gitlab-com.gitlab.io/content-sites/handbook/mr5699/handbook/marketing/digital-experience/contentful-cms/#for-top-10-most-visitedimpactful-pages) は現在アクセス可能ですか？
+    - 主要なステークホルダーの各カテゴリーに対する潜在的な影響。
+    - 規模にかかわらず、重要な顧客やパートナーに影響するかどうか。
+1. 影響を受ける人の中に、主要なオーディエンスやステークホルダーに対して影響力を持つ人はいますか？
+1. インシデントは、私たちの中核的な事業運営に直接影響しますか？
+1. 過去に同様のインシデントがありましたか？つまり、会社として繰り返し発生している問題ですか？
+1. インシデントは、より広い業界の課題やトレンドと関連していますか？競合他社や他社も同様の問題に直面していますか？
+1. [重要なビジネスページ](https://gitlab-com.gitlab.io/content-sites/handbook/mr5699/handbook/marketing/digital-experience/contentful-cms/#for-top-10-most-visitedimpactful-pages)に現在アクセスできますか？
 
-## インシデントマトリクス
+## インシデントマトリクス {#incident-matrix}
 
 <table class="table table-striped table-bordered">
 <thead>
@@ -53,56 +53,55 @@ lastmod: "2025-10-14T17:59:32+00:00"
 </tr>
 <tr>
 <td>ミッションクリティカルなキー + 環境変数の漏洩</td>
-<td>ミッションクリティカル / 法的なコンテンツの誤り（例: 不正確な価格、コンバージョン率の高いページでの大幅な誤字や言い回しの誤り）</td>
-<td>サイトの一部が見当たらない（例: events、press releases）</td>
+<td>ミッションクリティカルなコンテンツや法的なコンテンツの誤り（例：不正確な価格、コンバージョン率の高いページでの重大な誤字や言い回しの誤り）</td>
+<td>サイトの一部が欠落している（例：イベント、プレスリリース）</td>
 </tr>
 <tr>
-<td>インフラ（GCP + Contentful）に関連する主要ベンダーの障害。</td>
-<td>連携障害（6sense、GA など）</td>
-<td>パフォーマンス問題</td>
+<td>インフラストラクチャ（GCP + Contentful）に関連する主要ベンダーの障害。</td>
+<td>連携の障害（6sense、GA など）</td>
+<td>パフォーマンスの問題</td>
 </tr>
 <tr>
-<td>ミッションクリティカルなページが見当たらない（例: ホームページの不在、プライマリーナビゲーション）</td>
-<td>重大なパフォーマンス問題</td>
+<td>ミッションクリティカルなページが欠落している（例：ホームページの不在、メインナビゲーション）</td>
+<td>重大なパフォーマンスの問題</td>
 <td></td>
 </tr>
 <tr>
-<td>下記の <a href="#reporting-an-incident">インシデント報告</a> を参照してください。</td>
-<td>Issue を作成し、#digital-experience Slack チャンネルへ投稿</td>
-<td>Issue を作成し、#digital-experience Slack チャンネルへ投稿</td>
+<td>下記の<a href="#reporting-an-incident">インシデント報告</a>を参照してください。</td>
+<td>Issue を作成し、Slack の #digital-experience チャンネルに投稿します</td>
+<td>Issue を作成し、Slack の #digital-experience チャンネルに投稿します</td>
 </tr>
 </tbody>
 </table>
 
-## インシデント報告
+## インシデント報告 {#reporting-an-incident}
 
-サイト停止のドキュメント化には、Issue ではなく [インシデント](https://docs.gitlab.com/ee/operations/incident_management/incidents.html) を使用するようになりました。インシデントは Issue と同様に動作し、停止のドキュメント化に合わせたテンプレートを使用できます。この方法は、私たちのサイトの信頼性についてより深いインサイトを提供し、プロジェクト全体でダウンタイムイベントの追跡と解決を保証します。
+現在、サイト停止の記録には、Issue の代わりに[インシデント](https://docs.gitlab.com/ee/operations/incident_management/incidents.html)を使用しています。インシデントは Issue と同じように動作し、停止の記録に適したテンプレートを使用できます。この方法により、サイトの信頼性をより詳しく把握し、プロジェクト全体でダウンタイムの追跡と解決を確実に行えます。
 
-**ポイントパーソン:** [Nathan Dubord](https://gitlab.enterprise.slack.com/archives/D021YDB4FM4) - 勤務時間: 午前 9 時～午後 6 時 Eastern
+**担当者：** [Chris Fraser](https://gitlab.enterprise.slack.com/team/U0803EXMHE3)、Engineering Manager、EST 午前 9 時 30 分 - 午後 5 時 30 分
 
-1. #digital-experience Slack チャンネルへ投稿し、@digital-experience をメンションします。
-1. 5 分以内に応答がない場合、次の人にテキストまたは電話してください:
-    1. Eastern Timezone（UTC−5）:
-        1. [Nathan Dubord](https://gitlab.enterprise.slack.com/archives/D021YDB4FM4)
-        2. [Laura Duggan](https://gitlab.enterprise.slack.com/archives/D01H18BBUTW)
-    2. Central Timezone（UTC−6）:
+1. Slack の #digital-experience チャンネルに投稿し、@digital-experience をタグ付けします。
+1. 5 分以内に応答がない場合は、次の人にテキストメッセージまたは電話で連絡してください。
+    1. 東部時間帯（UTC−5）。
+        1. [Laura Duggan](https://gitlab.enterprise.slack.com/archives/D01H18BBUTW)
+    2. 中部時間帯（UTC−6）。
         1. [Megan Filo](https://gitlab.enterprise.slack.com/archives/D02SNEUHZ3L)
-    3. Pacific Timezone（UTC−8）:
+    3. 太平洋時間帯（UTC−8）。
         1. [Javier Garcia](https://gitlab.enterprise.slack.com/team/U014QDEP73L)
-1. インシデントは DEX チームメンバーがプロジェクトに基づいて作成します。例えば、about.gitlab.com プロジェクトでの停止は[こちら](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com/-/issues/new?type=ISSUE) で作成します。注: 停止のために Issue を作成するときは、必ず **代わりにインシデントを作成** してください。レポートとメトリクスに影響するため、必ず適切なプロジェクトでインシデントを開いてください。一般的なルールとして、[トリアージプロセスを回避](/handbook/marketing/digital-experience/#labels-and-workflow-boards)し、既存のオープン Issue が存在せず、サイトの稼働率に影響がある場合に、インシデントを作成する必要があります。
-    1. 適切な場合、Severity と[タイムラインイベント](https://docs.gitlab.com/ee/operations/incident_management/incident_timeline_events.html) を埋めることを検討してください。
-    1. インシデントが解決した後、インシデントをクローズできます。これは私たちの停止解決時間メトリクス（Time to Resolve = インシデントがクローズされた時刻 - インシデントがオープンされた時刻）に影響を与えます。
+1. DEX のチームメンバーが、該当プロジェクトでインシデントを作成します。たとえば、about.gitlab.com プロジェクトの停止は[こちら](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com/-/issues/new?type=ISSUE)で作成します。注：停止について Issue を作成する場合は、常に**代わりにインシデントを作成**してください。レポートとメトリクスに影響するため、必ず適切なプロジェクトでインシデントを作成します。原則として、[トリアージプロセスを迂回](/handbook/marketing/digital-experience/#labels-and-workflow-boards)し、既存のオープンな Issue がなく、サイトの稼働時間に影響がある場合は、インシデントを作成します。
+    1. 必要に応じて、Severity と[タイムラインイベント](https://docs.gitlab.com/ee/operations/incident_management/incident_timeline_events.html)を記入することを検討します。
+    1. インシデントが解決したら、インシデントをクローズできます。これが停止の解決時間メトリクスに影響します（Time to Resolve = インシデントのクローズ時刻 - インシデントの作成時刻）。
 
 _15 分以内に応答がない場合は電話で連絡してください_
 
-## PagerDuty
+## PagerDuty {#pagerduty}
 
-緊急時には、Digital Experience エンジニアは PagerDuty インシデントを作成し、互いのモバイルデバイスでアラートをトリガーする能力を持っています。これらの PagerDuty インシデントは、PagerDuty へのアクセス権を持つ GitLab チームメンバー（IT Security、Reliability、SIRT など）からもトリガーできます。
+緊急時には、Digital Experience Engineers は PagerDuty のインシデントを作成し、互いのモバイルデバイスでアラートを発報できます。PagerDuty にアクセスできる GitLab のチームメンバー（IT Security、Reliability、SIRT など）も、これらの PagerDuty インシデントを発報できます。
 
-Digital Experience チーム向けに PagerDuty インシデントをトリガーするには、次の手順に従います:
+Digital Experience チーム向けの PagerDuty インシデントを発報するには、次の手順に従います。
 
-1. Slack のどこかで `/pd trigger` と入力してインシデントを報告します。
+1. Slack の任意の場所で `/pd trigger` と入力して、インシデントを報告します。
 2. 影響を受けるサービスとして `about.gitlab.com` を選択します。
-3. priority、description、Urgency のフィールドを完成させます。
-4. これによりインシデントが作成され、PagerDuty が Digital Experience チームのメンバーへ通知します。
-5. PagerDuty は、チームメンバーと連絡が取れるまで継続的にエスカレーションします。
+3. priority、description、Urgency の各フィールドを記入します。
+4. これによりインシデントが作成され、PagerDuty に通知して Digital Experience チームのメンバーへのアラートを発報します。
+5. PagerDuty は、チームメンバーと連絡が取れるまでエスカレーションを続けます。

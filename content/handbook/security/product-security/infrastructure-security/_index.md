@@ -1,161 +1,135 @@
 ---
-title: "インフラストラクチャセキュリティ"
-description: "GitLab のインフラストラクチャセキュリティチームは、SaaS のセキュリティ監督を提供します。"
+title: "Infrastructure Security"
+description: "Infrastructure Security は、商用、社内向け、FedRAMP にわたり、GitLab が稼働するクラウド環境を保護します。"
 upstream_path: /handbook/security/product-security/infrastructure-security/
-upstream_sha: 0ef11938bb245c5fc3c70068b0d20374a33211fc
-translated_at: "2026-09-25T21:07:10Z"
+upstream_sha: 84ebb9fc88e6a42116737a8dbf279ac21828660f
+translated_at: "2026-10-27T21:08:17.929583+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-25T13:16:09+01:00"
+lastmod: "2026-10-28T09:06:43+13:00"
 ---
 
-## チームのアイデンティティ {#team-identity}
+Infrastructure Security（InfraSec）は、Platform Security グループに属する [Product Security](/handbook/security/product-security/)内のチームです。
 
-GitLab のインフラストラクチャセキュリティチームは、GitLab のインフラストラクチャセキュリティに固有の取り組みの計画、実行、サポートを担当します。
+## ミッション {#mission}
 
-セキュリティ部門のステーブルカウンターパートとして、チームメンバーはクラウドおよびインフラストラクチャソリューションに大きく依存する特定の[製品カテゴリー](https://gitlab.com/search?group_id=6543&project_id=7764&scope=blobs&search=infrasec+file%3Astages%5C.yml%24&regex=false)をサポートします。さまざまな製品カテゴリーにわたる Development、Infrastructure、Security の各チームと連携します。
+私たちは、GitLab の製品や社内チームが利用するクラウドを、商用、社内向け、FedRAMP にわたって保護します。クラウドのセキュリティ態勢を把握するための本番環境のセキュリティツールを運用し、その検出結果を修正につなげます。また、クラウド、インフラストラクチャ、データのセキュリティ要件を、エンジニアと AI エージェントの両方が読めるコントロールとして記述しています。これにより、安全な設定をレビューで確認するのではなく、最初から組み込みます。
 
-インフラストラクチャセキュリティのエンゲージメントは、インフラストラクチャ変更レビュー、SaaS インフラストラクチャアクセスおよびパーミッションモデル、クラウドセキュリティのベストプラクティス、オペレーティングシステムセキュリティ、ホストおよびコンテナレベルでのセキュリティモニタリング、脆弱性管理、およびパッチ適用ポリシーの形で行われます。
+## 対象範囲と責任 {#scope-and-responsibilities}
 
-チームの優先度の高い取り組みには次のものがあります:
+### 私たちの担当領域 {#what-we-own}
 
-- データ収集機能を改善するためのツール (例: Wiz、OSQuery) のデプロイ
-- カウンターパートワーク (例: Dedicated、FedRAMP、Cells、AI)
-- セキュリティレビュー (例: 準備状況レビュー、設計レビュー)
-- クラウド環境全体での設定ミスの特定と修正
-- 予防的コントロールの作成とデプロイ (例: AWS/GCP Organization のハードニング、Terraform のハードニング)
+1. **クラウドセキュリティ要件。** クラウドおよびインフラストラクチャのセキュリティ要件を、開発者や AI のコーディングワークフローに組み込める機械可読なコントロールとして記述します。この取り組みは、現在構築中の GitLab Cloud Security Framework で進めています。
+1. **インフラストラクチャセキュリティレビュー。** クラウドインフラストラクチャ、コンテナ、ネットワークアーキテクチャ、Infrastructure as Code、シークレット管理を追加または変更する機能について、AI を活用してレビューします。私たちは、これらのレビューを支えるエージェントとフローを構築・保守します。
+1. **本番環境のセキュリティツール。** GitLab の各サービスで Wiz などのセキュリティツールを運用し、その検出結果を継続的な修正パイプラインに取り込みます。
+1. **社内クラウド。** Sandbox Cloud 領域を含む社内クラウド環境のセキュリティを確保します。対象はアクセス制御、コストガバナンス、ポリシーの適用、アカウントのライフサイクルです。
+1. **設定ミスの修正。** 本番環境と非本番環境でクラウドの設定ミスを発見し、修正します。
+1. **FedRAMP の運用。** アクセラレーター提供のツールから、Commercial と Federal で共通のツールチェーンへ移行します。また、FedRAMP の脆弱性管理ツール、運用、報告も担当します。
+1. **データセキュリティ。** 本番環境と非本番環境で、データ層のセキュリティ要件とデータ層のリスク修正を担当します。
+1. **インフラストラクチャのペネトレーションテスト。** GitLab のクラウドおよび本番インフラストラクチャのペネトレーションテストを調整します。
+1. **リスク登録簿の項目。** [Product Security リスク登録簿](/handbook/security/product-security/security-platforms-architecture/risk-register/)にあるクラウドとデータ層の項目を担当し、その是正を主導します。
 
-詳細は[ジョブファミリーの説明](/job-description-library/security/infrastructure-security)を参照してください。
+### 対象外 {#out-of-scope}
 
-## チームメンバー {#team-members}
+| 領域 | 担当 |
+|------|-------------|
+| アプリケーション層のセキュリティレビュー | [Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/) |
+| 製品層のセキュリティアーキテクチャ要件 | [Security Architecture](/handbook/security/product-security/security-platforms-architecture/security-architecture/) |
+| FedRAMP 以外の脆弱性管理 | [Vulnerability Operations](/handbook/security/product-security/vulnerability-management/) |
+| GitLab 自身のグループとネームスペースのセキュリティコントロール、およびソフトウェアサプライチェーンのガバナンス | Security Posture Management |
 
-<table>
-<thead>
-<tr>
-<th>担当者</th>
-<th>役割</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Julie Davila</td>
-<td><a href="/job-description-library/security/security-leadership#vice-president-vp-security">VP, Product Security</a></td>
-</tr>
-<tr>
-<td>Jacob Jernigan</td>
-<td><a href="/job-description-library/security/security-leadership#senior-manager-infrastructure-security">Senior Manager, Infrastructure Security</a></td>
-</tr>
-<tr>
-<td>Dennis Salzmann</td>
-<td><a href="/job-description-library/security/security-leadership#senior-manager-infrastructure-security">Manager, Infrastructure Security</a></td>
-</tr>
-<tr>
-<td>Matt Morrison</td>
-<td><a href="/job-description-library/security/infrastructure-security#senior-infrastructure-security-engineer">Staff Security Engineer, Infrastructure Security</a></td>
-</tr>
-<tr>
-<td>Dhruv Jain</td>
-<td><a href="/job-description-library/security/infrastructure-security#senior-infrastructure-security-engineer">Senior Security Engineer, Infrastructure Security</a></td>
-</tr>
-<tr>
-<td>Lizzie Moratti</td>
-<td><a href="/job-description-library/security/infrastructure-security/#infrastructure-security-engineer-intermediate">Intermediate Security Engineer, Infrastructure Security</a></td>
-</tr>
-<tr>
-<td>Justin Shields</td>
-<td><a href="/job-description-library/security/infrastructure-security/#infrastructure-security-engineer-intermediate">Intermediate Security Engineer, Infrastructure Security</a></td>
-</tr>
-<tr>
-<td>Yang Lyu</td>
-<td><a href="/job-description-library/security/infrastructure-security/#infrastructure-security-engineer-intermediate">Intermediate Security Engineer, Infrastructure Security</a></td>
-</tr>
-<tr>
-<td>Joey Wu</td>
-<td><a href="/job-description-library/security/infrastructure-security/#infrastructure-security-engineer-intermediate">Intermediate Security Engineer, Infrastructure Security</a></td>
-</tr>
-</tbody>
-</table>
+### 業務の発生源 {#where-our-work-comes-from}
 
-## 私たちと一緒に働く {#working-with-us}
+業務の大部分は、以下の依頼テンプレートを通じて届きます。それ以外は、リスク登録簿の項目、FedRAMP および Security Compliance に関するコミットメント、四半期ごとに計画するプロジェクトから発生します。
 
-1. **インフラストラクチャセキュリティレビュー**を依頼するには、[セキュリティレビューテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-security-review)を使用して Issue を作成してください
-1. **本番環境準備状況レビュー**を依頼するには、[本番環境準備状況テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-production-readiness)を使用して Issue を作成してください
-1. **Teleport** に関するバグ報告や変更依頼については、[Teleport Issue テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-teleport)を使用して Issue を作成してください
-1. その他すべてについては、[汎用 Issue テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-other-request)を使用して Issue を作成してください
+## 私たちへの依頼 {#working-with-us}
 
-- 個人を `@mention` するのは控えてください。代わりに GitLab.com で `@gitlab-com/gl-security/product-security/infrastructure-security` ハンドルを使用してください。
-- Slack の専用チャンネル `#security-infrasec` で、または `@infrasec-team` をタグ付けしてチャットすることもできます。
-- チームは毎日、すべての受信リクエストをトリアージし (適切に優先順位付け) します。
-- 緊急の依頼があり、通常のトリアージを待てない場合は、Slack チャンネルで連絡をしてお知らせください。
+1. **インフラストラクチャセキュリティレビュー**を依頼するには、[セキュリティレビューテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-security-review)を使って Issue を作成します。
+1. **本番環境の準備状況レビュー**を依頼するには、[本番環境の準備状況テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-production-readiness)を使って Issue を作成します。
+1. **Teleport** のバグ報告や変更依頼には、[Teleport テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-teleport)を使って Issue を作成します。
+1. その他の依頼には、[汎用依頼テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engagements/product-security-requests/-/issues/new?description_template=infrasec-other-request)を使います。
 
-## 私たちの働き方 {#how-we-work}
+GitLab では個人をタグ付けせず、`@gitlab-com/gl-security/product-security/infrastructure-security` にメンションしてください。Slack では `#security-infrasec` に投稿するか、`@infrasec-team` をタグ付けしてください。
 
-### ミーティングとスケジュール済みコール {#meetings-and-scheduled-calls}
+私たちは営業日ごとに新しい依頼をトリアージします。緊急で待てない場合は、`#security-infrasec` でその旨を伝えてください。セキュリティインシデントの場合は私たちの対応を待たず、任意の Slack チャンネルで `/security` を使って Security Incident Response Team を呼び出してください。
 
-私たちの好みは、後述の[プロジェクト管理セクション](#project-management)で説明するように、プロジェクトの Issue トラッカー内で非同期に作業することです。
+## 計画の立て方 {#how-we-plan}
 
-チームには定例の同期コールがあります:
+私たちは四半期単位で計画し、すべての起点となるのは [FY27 InfraSec Planning エピック（&210）](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/work_items/210)です。各四半期には、その配下に計画用エピックと KTLO/BAU エピックがあります。四半期のエピックは毎四半期変わるため、ここでは FY27 の計画用エピックにリンクしています。
 
-- 進捗、ブロッカー、InfraSec チームに関連するすべてを議論する隔週のチームシンク。
-  - 会社の誰でも参加を歓迎します。
-- 前四半期にうまくいったことを振り返り、今後改善できることを議論する四半期ごとのチームレトロスペクティブ。
-- 個人貢献者とエンジニアリングマネージャー間の 1-1。
+業務は次のように分類します。
 
-### チームページ {#team-pages}
+- **デリバリーエピック**は、計画されたプロジェクトです。それぞれにリードと指名された代理担当者、明確な対象範囲があり、説明欄にはマイルストーンを記載します。
+- **デリバリー Issue** は、単一の Issue で追跡する小規模なプロジェクトです。規模が大きくなった場合は、エピックを作成します。
+- **KTLO/BAU** は、レビュー、アクセス権の付与、インシデントのフォローアップ、更新、単発のタスクなど、定期的な業務や依頼・事象に応じて発生する業務です。
+- **一時停止中の業務**も、その四半期の計画用エピックで引き続き見えるようにし、気付かないうちに消えてしまう業務がないようにします。
 
-- チームに関する一般的な情報を含む[ハンドブックページ](/handbook/security/product-security/infrastructure-security/)
-- チームの運用上の信頼できる唯一の情報源である[内部ハンドブック](https://internal.gitlab.com/handbook/security/product_security/infrastructure_security/)。チーム情報については、誰もが**確認することが推奨**されます
-- EPIC とリポジトリを含む [Infrastructure Security GitLab サブグループ](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security)
-- 公開されているリソース (例: Docker イメージなど) を含む [Infrastructure Security **Public** サブグループ](https://gitlab.com/gitlab-com/gl-security/security-operations/infrastructure-security-public)
+### KTLO と BAU の業務の追跡 {#tracking-ktlo-and-bau-work}
 
-### プロジェクト管理 {#project-management}
+KTLO または BAU の業務に取りかかる際は、[FY27 InfraSec Planning エピック](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/work_items/210)の配下にある当該四半期の KTLO/BAU エピックに、その Issue を子として追加します。Issue に別のチームのプロジェクトの親エピックがすでにある場合は、移動せず、私たちの KTLO/BAU エピックに関連項目としてリンクします。
 
-私たちは、Epic、Issue、Issue ボードを使用して作業を整理しています。これらは互いに補完し合うためです:
+これは見た目以上に重要です。依頼・事象に応じて発生する業務は私たちの仕事の大きな割合を占めており、KTLO/BAU エピックはそれを把握し、報告できる唯一の場所です。リンクされていなければ、計画上は実施されなかったことになります。
 
-- エンジニアリング作業の信頼できる唯一の情報源は [GitLab の InfraSec サブグループ](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/epics)です。**すべての Epic はこのレベルで収集されます**
-- このレベルですべてのプロジェクトを持つことで、優先順位付けに単一のリストを使用でき、異なるサービスの作業を並行して優先順位付けできます
-- プロジェクトは [InfraSec の目標](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/wikis/InfraSec-Goals)に沿って優先順位付けされます
+### ラベル {#labels}
 
-#### チーム計画 {#team-planning}
+デリバリーエピックとデリバリー Issue には、チームラベルと当該四半期のラベルの両方が必要です。計画用エピックのクエリは、それらを使って進行中の業務を見つけるため、どちらかのラベルがないものは表示されません。
 
-- InfraSec チームの**長期戦略**については、以下を参照してください:
-  - 🎯 [InfraSec の目標](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/wikis/InfraSec-Goals)
-- **戦術的な観点**からは、以下を参照してください:
-  - 🎛 [InfraSec 計画ボード](https://gitlab.com/groups/gitlab-com/-/boards/7549315?label_name%5B%5D=Department%3A%3AInfraSec) (現在取り組んでいるタスク)
+| ラベル | 適用対象 |
+|-------|-----------|
+| `~"Infrastructure Security Team"` | InfraSec のすべての業務 |
+| `~"Department::Product Security"` | InfraSec のすべての業務 |
+| `~FY27-Q4`（当該四半期） | デリバリーエピックとデリバリー Issue のみ。計画用エピック、KTLO/BAU エピック、KTLO/BAU の項目には付けません |
+| `~"InfraSec::triage"` | トリアージが必要な新しい依頼 |
 
-#### プロジェクトオーナーシップ {#project-ownership}
+デリバリー業務を次の四半期に持ち越す場合は、新しい四半期のラベルを追加し、古いラベルは履歴として残します。
 
-各プロジェクトには、プロジェクトの提供に責任を持つオーナーがいます。
+### プロジェクトの責任 {#project-ownership}
 
-オーナーは次のことを行う必要があります:
+各デリバリーエピックのリードは、その成果の提供に責任を持ちます。これは、エピックの説明欄のステータスとマイルストーンを最新に保ち、担当者とともに Issue を進めることを意味します。
 
-1. Epic の説明とマイルストーンのステータスを定期的に更新する。
-1. 他のメンバーと協力して、プロジェクトの Issue をボード間で移動させる。
+## ミーティング {#meetings}
 
-#### ラベル {#labels}
+私たちは原則として、Issue とエピックで非同期に作業します。チームはニュージーランドから米国までのタイムゾーンにまたがるため、全員に都合のよいミーティング時間はありません。
 
-**プロジェクトワークのみ**には、以下のラベルを使用してください:
+チームの定例ミーティングは毎週行い、3 つの時間帯を順番に使います。これにより、誰もが深夜の通話をせずに一部の回に参加できます。3 つの時間帯すべてで、アジェンダと議事録をまとめた 1 つの定例ミーティングドキュメントを共有します。すべての回を録画し、その録画へのショートカットを定例ミーティングドキュメントと InfraSec の共有ドライブに置きます。参加できなかった場合は、録画で内容を確認し、非同期でアジェンダに追記します。
 
-| ラベル                       | ユースケース                                                        |
-| --------------------------- | --------------------------------------------------------------- |
-| `~"Department::Product Security"`   | 部門ラベル    |
-| `~"Infrastructure Security Team"`   | チームラベル          |
-| `~"InfraSec::triage"`       | トリアージが必要な新しい Issue 用                         |
+他のチームメンバーの参加も歓迎します。`#security-infrasec` で私たちに連絡いただければ、招待とアジェンダに追加します。
 
-### デザインドキュメント {#design-documents}
+また、うまくいったことと変えるべきことを四半期ごとに振り返り、各チームメンバーはマネージャーと定期的に 1:1 を行います。
 
-新しいプロジェクトを開始する前に、チームはデザインドキュメントを通じてソフトウェア設計を定義することが**推奨**されます。
-これらのデザインドキュメントは、高レベルの実装戦略と主要な設計上の決定を文書化し、それらの決定の際に検討されたトレードオフに重点を置きます。
+## 設計ドキュメント {#design-documents}
 
-新しいデザインの議論を開始するには:
+新しいプロジェクトを始める前に、設計ドキュメントを作成することを推奨します。実装方法と主要な判断、特に検討したトレードオフを記録します。
 
-1. デザイン提案を含む新しい MR を [InfraSec チームチャーターリポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/team-charter/-/tree/main/designs)に作成します。デザインドキュメントの構造の参考として、[このテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/team-charter/-/blob/main/.gitlab/issue_templates/design_doc.md)を使用できます。
-2. 要求されるデータを記入します
-3. チームの他のメンバーをレビュアーとしてマークします
+設計を提案するには、次のようにします。
 
-## 追加リソース {#additional-resources}
+1. [InfraSec Team Charter リポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/team-charter/-/tree/main/designs)で MR を作成し、[設計ドキュメントのテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/team-charter/-/blob/main/.gitlab/issue_templates/design_doc.md)を参考にします。
+1. 各セクションに記入します。
+1. 他のチームメンバーをレビュアーとして追加します。
+1. 対応するデリバリーエピックから MR にリンクします。
+
+## チームのメンバー {#whos-on-the-team}
+
+名簿は古くなってしまうため、ここには掲載しません。現在のチームについては、次を確認してください。
+
+- **Workday** では、チームのメンバーとその報告先を確認できます。
+- **Slack：** `@infrasec-team` で全員に連絡でき、`#security-infrasec` で業務をオープンに進めています。
+- **GitLab：** [Infrastructure Security グループのメンバー一覧](https://gitlab.com/groups/gitlab-com/gl-security/product-security/infrastructure-security/-/group_members)。
+- **役割の説明**は、[職務内容ライブラリ](/job-description-library/security/infrastructure-security)にあります。
+
+## チームのページとリソース {#team-pages-and-resources}
+
+- [内部ハンドブック](https://internal.gitlab.com/handbook/security/product_security/infrastructure_security/)は、私たちの運用上の唯一の情報源です（GitLab のチームメンバーのみ閲覧可能）。
+- [Infrastructure Security サブグループ](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security)には、私たちのエピックとリポジトリがあります。
+- [Infrastructure Security の公開サブグループ](https://gitlab.com/gitlab-com/gl-security/security-operations/infrastructure-security-public)には、Docker イメージなどの公開リソースがあります。
+- [Teleport](teleport/)では、本番リソースへのアクセスについて説明しています。
+- [Issue のライフサイクル](issue-lifecycle/)では、トリアージボットが Issue にラベルを付け、クローズする方法を説明しています。
 
 ### オンボーディング {#onboarding}
 
-- インフラストラクチャセキュリティチームの[オンボーディングテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/team-charter/-/blob/master/onboarding/onboarding_template.md)
-- [InfraSec エンタイトルメントテンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/blob/master/.gitlab/issue_templates/role_baseline_access_request_tasks/department_security/role_security_engineer_infrastructure_security.md)
+- Infrastructure Security の[オンボーディングテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/team-charter/-/blob/master/onboarding/onboarding_template.md)
+- [InfraSec の権限テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/blob/master/.gitlab/issue_templates/role_baseline_access_request_tasks/department_security/role_security_engineer_infrastructure_security.md)
+
+## このページを最新に保つ {#keeping-this-page-current}
+
+私たちは四半期計画の一環として、各四半期末にこのページをレビューします。それ以前に誤りを見つけた場合は、MR を作成してください。
