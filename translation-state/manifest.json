@@ -12962,11 +12962,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/_index.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T12:16:50+09:00",
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:11:18.294005+00:00",
       "model": "codex",
-      "input_hash": "fce61c4fc821b3de803f9c4d130d98d09e69ae9b46d8be984ad25387cca95f1f",
-      "upstream_committed_at": "2026-08-28T14:27:26+10:00"
+      "input_hash": "4392f5d19071223bd1574c31491dd1382f3d5891c2e31e584d98487b675f9ba5",
+      "upstream_committed_at": "2026-10-23T18:56:03+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/labeling-strategy.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/labeling-strategy.md",
@@ -18282,11 +18282,11 @@
     },
     "content/handbook/marketing/digital-experience/engineering/dexbot.md": {
       "path": "content/handbook/marketing/digital-experience/engineering/dexbot.md",
-      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
-      "translated_at": "2026-05-01T10:36:34Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "18abf04d790dbfd3759eb114b182197b8aba94cd7219d6fed33ee0bb3f632fb5",
-      "upstream_committed_at": "2025-01-07T16:47:36-08:00"
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:09:41.005052+00:00",
+      "model": "codex",
+      "input_hash": "8db271c0e84ecec0cae58b9806dc1b269b520f03dc900ed9e764d49432300e6a",
+      "upstream_committed_at": "2026-10-26T17:06:50-07:00"
     },
     "content/handbook/marketing/digital-experience/engineering/engineering-marketo.md": {
       "path": "content/handbook/marketing/digital-experience/engineering/engineering-marketo.md",
@@ -18306,11 +18306,11 @@
     },
     "content/handbook/marketing/digital-experience/engineering/incident-response-playbook.md": {
       "path": "content/handbook/marketing/digital-experience/engineering/incident-response-playbook.md",
-      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
-      "translated_at": "2026-05-01T10:36:34Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5340ade26707a2d2ebd86b78c33e1e87a13117acd683369af6d2a096f7d9debd",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:09:41.005052+00:00",
+      "model": "codex",
+      "input_hash": "f8d690eb58a36feb7861669a825d8605ffce679b7b16b3b03cbc1c1bffb4c7ae",
+      "upstream_committed_at": "2026-10-26T17:06:50-07:00"
     },
     "content/handbook/marketing/digital-experience/engineering/localization.md": {
       "path": "content/handbook/marketing/digital-experience/engineering/localization.md",
@@ -20946,11 +20946,11 @@
     },
     "content/handbook/support/workflows/ip-blocks.md": {
       "path": "content/handbook/support/workflows/ip-blocks.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T06:31:24+09:00",
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:08:17.929583+00:00",
       "model": "codex",
-      "input_hash": "aa413d0793fe5f5b3e8c0b153f1a0c5ededb109793520b67590a34e5cc497546",
-      "upstream_committed_at": "2026-07-29T12:39:09-04:00"
+      "input_hash": "35e69fa08de7b24b32bf4bbe779dc0e688bace4b2ab7bad1d50362bc19bf2300",
+      "upstream_committed_at": "2026-10-26T15:35:25+05:30"
     },
     "content/handbook/support/workflows/jira-server.md": {
       "path": "content/handbook/support/workflows/jira-server.md",
@@ -26122,11 +26122,11 @@
     },
     "content/handbook/security/product-security/infrastructure-security/_index.md": {
       "path": "content/handbook/security/product-security/infrastructure-security/_index.md",
-      "upstream_sha": "0ef11938bb245c5fc3c70068b0d20374a33211fc",
-      "translated_at": "2026-09-25T21:07:10Z",
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:08:17.929583+00:00",
       "model": "codex",
-      "input_hash": "361ebe55c357c8ed27895604001477766537888ab717cccf227526f282e72485",
-      "upstream_committed_at": "2026-09-25T13:16:09+01:00"
+      "input_hash": "092d75869cd00c645b8ca40f543b0f7689e152fe9ba69e765b101bbf17731426",
+      "upstream_committed_at": "2026-10-28T09:06:43+13:00"
     },
     "content/handbook/security/product-security/infrastructure-security/issue-lifecycle.md": {
       "path": "content/handbook/security/product-security/infrastructure-security/issue-lifecycle.md",
@@ -31402,11 +31402,11 @@
     },
     "content/handbook/enterprise-data/ai/_index.md": {
       "path": "content/handbook/enterprise-data/ai/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a00963afb240a6eb8c6d93a43bcd160ca7926c3e5e17e4f82ff22c82a10f17ca",
-      "upstream_committed_at": "2026-05-11T21:43:34+00:00"
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:11:18.294005+00:00",
+      "model": "codex",
+      "input_hash": "95c3918a5531ff8293ac7f247bcfd731b8286e22c1351d8a80cbdad3dc8a3f4f",
+      "upstream_committed_at": "2026-10-26T11:26:04-06:00"
     },
     "content/handbook/enterprise-data/ai/agent-setup.md": {
       "path": "content/handbook/enterprise-data/ai/agent-setup.md",
@@ -31426,19 +31426,19 @@
     },
     "content/handbook/enterprise-data/ai/agentic-tool-development.md": {
       "path": "content/handbook/enterprise-data/ai/agentic-tool-development.md",
-      "upstream_sha": "b4d6f155a3f220e28a2c8c0191c96e9a9be2f4ef",
-      "translated_at": "2026-06-03T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5add2fe1767c45829db053b703e6abb7ba127768dae3abcbffe81b862402c8a8",
-      "upstream_committed_at": "2026-06-03T13:43:50+00:00"
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:11:18.294005+00:00",
+      "model": "codex",
+      "input_hash": "c2eb00c088acbc29f6f79ba9074ce7d7cebb354790bc6621732e7976b2152246",
+      "upstream_committed_at": "2026-10-26T11:26:04-06:00"
     },
     "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md": {
       "path": "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T12:56:16+00:00",
+      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
+      "translated_at": "2026-10-27T21:11:18.294005+00:00",
       "model": "codex",
-      "input_hash": "d2b9fc73cba0c8fb2b366f434cda10c44956ad16840becb535a03b7a2bc350df",
-      "upstream_committed_at": "2026-09-10T21:04:36Z"
+      "input_hash": "dd8d6028404456899703be920358568698fa644cf28040067fc856a98e5419e5",
+      "upstream_committed_at": "2026-10-26T11:26:04-06:00"
     },
     "content/handbook/customer-success/governance-question-bank.md": {
       "path": "content/handbook/customer-success/governance-question-bank.md",
