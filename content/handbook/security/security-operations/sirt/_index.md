@@ -1,27 +1,27 @@
 ---
-title: セキュリティインシデントレスポンスチーム - SIRT
-description: GitLab セキュリティインシデントレスポンスチームの概要
+title: Security Incident Response Team - SIRT
+description: GitLab Security Incident Response Team の概要
 upstream_path: /handbook/security/security-operations/sirt/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:23:21Z"
+upstream_sha: 1d268efe755c0706a7fc3d454b9e304624dd0423
+translated_at: "2026-10-28T21:11:06.852598+00:00"
 translator: claude
 stale: false
-lastmod: 2026-06-17T15:12:47-05:00
+lastmod: "2026-10-27T16:16:54-05:00"
 ---
 
-セキュリティインシデントレスポンスチーム (SIRT) は、GitLab.com および会社としての GitLab に影響を与えるセキュリティイベントの検知、対応、調査を専門に担当する GitLab のチームであり、ビジネス、プラットフォーム、そしてユーザーからの信頼を守ります。
+Security Incident Response Team (SIRT) は、GitLab.com および会社としての GitLab に影響を与えるセキュリティイベントの検知、対応、調査を専門に担当する GitLab のチームであり、ビジネス、プラットフォーム、そしてユーザーからの信頼を守ります。
 
-## <i class="fas fa-rocket" id="biz-tech-icons"></i> 私たちのビジョン
+## <i class="fas fa-rocket" id="biz-tech-icons"></i> 私たちのビジョン {#our-vision}
 
-GitLab、私たちのプラットフォーム、そしてユーザーを守る最初の防衛線かつ最後の防衛線となり、脅威が顕在化する前にプロアクティブに特定し、顕在化したときには断固とした対応を行うこと。
+人間がインテリジェントな自動化を指揮し、セキュリティ脅威を迅速に把握して封じ込め、すべてのインシデントを通じて GitLab のレジリエンスを高めます。
 
-### 私たちのミッションステートメント
+### 私たちのミッションステートメント {#our-mission-statement}
 
-効果的なセキュリティインシデントレスポンス、フォレンジック解析、継続的な検知能力を提供することで、GitLab のビジネスとユーザーからの信頼を守ります。私たちは、迅速な封じ込め、徹底した調査、対応するすべてのインシデントから推進する運用改善を通じて、リスクを低減します。
+私たちは、セキュリティ脅威に迅速に対応し、調査し、封じ込めることで、GitLab と顧客を守ります。専門の対応担当者と AI ネイティブの自動化を組み合わせ、インシデントから得た学びを、防御の強化とシステム全体に及ぶリスクの低減につなげます。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> チーム
+## <i class="fas fa-users" id="biz-tech-icons"></i> チーム {#the-team}
 
-### チームメンバー
+### チームメンバー {#team-members}
 
 | | |
 |---|---|
@@ -45,7 +45,7 @@ GitLab、私たちのプラットフォーム、そしてユーザーを守る�
 |Joel Clarke|[Security Engineer](/job-description-library/security/security-incident-response-team/#security-incident-response-team-engineer-intermediate)|
 |Josh Boyce|Principal Incident Commander|
 
-## <i class="fas fa-stream" id="biz-tech-icons"></i> 提供しているサービス
+## <i class="fas fa-stream" id="biz-tech-icons"></i> 提供しているサービス {#services-we-provide}
 
 1. リアクティブ - 進行中のインシデント対応に対応するように設計されたサービス。以下を含みますがこれらに限られません。
     - インシデント分析
@@ -57,21 +57,21 @@ GitLab、私たちのプラットフォーム、そしてユーザーを守る�
     - 将来の脅威を特定するための敵対者の活動および関連トレンドの監視
     - セキュリティツール、アプリケーション、インフラストラクチャの構成と保守
     - 検知およびレスポンスエンジニアリング
-1. 管理 - GitLab の法務および人事部門からのリクエストに対応するように設計されたサービス。
+1. 管理 - GitLab の Legal および HR 部門からのリクエストに対応するように設計されたサービス。
 
-## <i class="fas fa-bullseye" id="biz-tech-icons"></i> SIRT へのエンゲージ
+## <i class="fas fa-bullseye" id="biz-tech-icons"></i> SIRT へのエンゲージ {#engaging-sirt}
 
-SIRT は、あらゆるセキュリティインシデントの支援のために [24/7/365](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#security-team-on-call-rotation) のオンコール体制を取っています。緊急のセキュリティインシデントが特定された場合、またはインシデントが発生した可能性があると思われる場合は、[セキュリティエンジニアオンコールへのエンゲージ](/handbook/security/security-operations/sirt/engaging-security-on-call/) を参照してください。
+SIRT は、あらゆるセキュリティインシデントの支援のために [24/7/365](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#security-team-on-call-rotation)のオンコール体制を取っています。緊急のセキュリティインシデントが特定された場合、またはインシデントが発生した可能性があると思われる場合は、[Security Engineer On-Call へのエンゲージ](/handbook/security/security-operations/sirt/engaging-security-on-call/)を参照してください。
 
-SIRT の責任とインシデントオーナーシップに関する情報は、[SIRT オンコールガイド](/handbook/security/security-operations/secops-oncall/) で確認できます。
+SIRT の責任とインシデントオーナーシップに関する情報は、[SIRT オンコールガイド](/handbook/security/security-operations/secops-oncall/)で確認できます。
 
-## <i class="fas fa-receipt" id="biz-tech-icons"></i> インシデント管理とレビュー
+## <i class="fas fa-receipt" id="biz-tech-icons"></i> インシデント管理とレビュー {#incident-management-and-review}
 
 インシデント管理とレビューのプロセスの一環として、SIRT は毎週月曜日に行う定例ミーティングを実施しています。このミーティングでは、前週のすべてのインシデント、および現在オープンのすべてのインシデントがレビューされます。レビュープロセスでは、インシデントの範囲、影響、軽減と是正のために実施した作業、次のステップ、ブロッカー、現在のステータスを取り上げます。これらのミーティングは、対応に問題のあったインシデントやプロセス改善について議論する機会でもあります。
 
-## アクセス制限
+## アクセス制限 {#limited-access}
 
-セキュリティインシデントや調査に関する情報は [限定アクセス](/handbook/communication/confidentiality-levels/#limited-access) として扱われ、デフォルトではすべてのチームメンバーには共有されません。セキュリティインシデントは、潜在的に機密情報を保護し、運用上のセキュリティを維持するため、適切な機密保持プロトコルにより取り扱われます。
+セキュリティインシデントや調査に関する情報は [限定アクセス](/handbook/communication/confidentiality-levels/#limited-access)として扱われ、デフォルトではすべてのチームメンバーには共有されません。セキュリティインシデントは、機密性の高い可能性がある情報を保護し、運用上のセキュリティを維持するため、適切な機密保持プロトコルにより取り扱われます。
 
 セキュリティインシデント対応のワークフローは次のとおりです。
 

@@ -2,14 +2,14 @@
 title: Support Innovation Group (SIG)
 description: Support Innovation Group（SIG）は、Support、IT、Product をつなぎ、AI を活用したワークフロー、ナレッジ、サポートイノベーションを推進する、GitLab の部門横断的な取り組みです。
 upstream_path: /handbook/support/sig/
-upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
-lastmod: "2026-10-12T17:33:23-04:00"
-translated_at: "2026-10-18T09:31:30Z"
+upstream_sha: 1d268efe755c0706a7fc3d454b9e304624dd0423
+lastmod: "2026-10-29T08:56:35+13:00"
+translated_at: "2026-10-28T21:09:29.256623+00:00"
 translator: codex
 stale: false
 ---
 
-## Support Innovation Group
+## Support Innovation Group {#support-innovation-group}
 
 SIG は Support チームと IT および Product チームをつなぎ、業務を適切に遂行するために必要なツールや改善を確実に用意します。私たちは機会を特定し、必要なものを定義し、ソリューションを検証し、構築されたものをチームが導入できるよう支援します。
 
@@ -19,7 +19,7 @@ SIG と CSS（Customer Support Systems）は緊密に連携します —
 - CSS は Support の個人から直接リクエストを **受け付けない** — **すべてのリクエストは、まず SIG を経由します。**
 - SIG と CSS は、各サイクルで共通のロードマップと目標について認識を合わせる
 
-## 受付プロセス
+## 受付プロセス {#the-intake-process}
 
 このセクションは、プロセスを簡素化し、SIG Team Lead と SIG Team Member の役割を理解しやすくするために作成されました。
 
@@ -48,7 +48,7 @@ SIG Team Lead は、メッセージングとコミュニケーションを担当
 
 ![SIG ワークフロー](/images/support/assets/sigworkflow.png)
 
-### 有効な SIG リクエストとは？
+### 有効な SIG リクエストとは？ {#what-counts-as-a-valid-sig-request}
 
 有効な SIG リクエストは、戦略的な範囲を持ち、スケーラブルな影響があり、部門横断的なデリバリーが必要な、デジタルまたはツール上の課題を扱います。Support の業務を支えるシステム、自動化、AI、ワークフロー、レポート、インテグレーションに関連し、対応時間、CSAT、デフレクション、バックログなどの主要 KPI に大きな影響を与えることを示す必要があります。
 
@@ -56,7 +56,7 @@ SIG Team Lead は、メッセージングとコミュニケーションを担当
 
 重要なのは、有効な SIG リクエストが、事前に決めたソリューションではなく、解決すべき問題として構成され、影響と測定可能な成功基準が明確に示されていることです。範囲が単一チームに限定されている、戦略との整合性がない、または部門横断的な取り組みなしで解決できるリクエストは、SIG の対象外です。
 
-### 無効な SIG リクエストとは？
+### 無効な SIG リクエストとは？ {#what-would-be-an-invalid-sig-request}
 
 デジタルやツールの要素を持たず、純粋にローカル、運用、人に関するリクエストは SIG の対象外です。人員配置やスケジュールに関する依頼、既存プログラムで扱うトレーニングやイネーブルメントの項目、単発の設定修正、Product または Infra のバックログで扱うべき標準的な機能やバグのリクエストなどが該当します。
 
@@ -78,14 +78,15 @@ SIG Team Lead は、メッセージングとコミュニケーションを担当
 - 通常の運用チャネルで修正すべき単発のバグや設定上の問題
 - 明確な問題提起、影響、または SIG のエピックとの整合性がないもの
 
-## プロジェクトのリンクとリソース
+## プロジェクトのリンクとリソース {#project-links-and-resources}
 
+- [Support Toolbox プロジェクトのライフサイクル](support-toolbox.md)
 - [技術リクエスト](https://gitlab.com/gitlab-com/support/sig_support_technical_workstream)
 - [SIG プロジェクト](https://gitlab.com/gitlab-com/support/support-project-portfolio)
 - [Support Team Meta の作業アイテム](https://gitlab.com/gitlab-com/support/support-team-meta)
 - [NOVA - Next Gen Operations & Virtual Agents](https://gitlab.com/gitlab-com/support/NOVA)
 
-## SIG Support チームメンバー
+## SIG Support チームメンバー {#sig-support-team-members}
 
 SIG Support チームメンバーは、以下を行います。
 
@@ -93,6 +94,6 @@ SIG Support チームメンバーは、以下を行います。
 - より広いチームに展開する前に、ソリューションを検証する。ほかの全員が影響を受ける前に、「これは機能する」または「これは変更が必要」と判断するのは SIG メンバーです。
 - 可視性を高める。SIG で働くことで、SIG メンバーは IT、Support Ops、リーダーシップなど、部門横断的なステークホルダーと直接関わるようになります。成長を望む Support エンジニアにとって、チケット対応を超えて貢献する有意義な方法です。
 
-## SIG リソース
+## SIG リソース {#sig-resources}
 
 - [Support Innovation Group Slack チャネル](https://gitlab.enterprise.slack.com/archives/C0AQPCFQ6T0)

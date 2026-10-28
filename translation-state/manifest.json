@@ -15994,11 +15994,11 @@
     },
     "content/handbook/leadership/high-output-management.md": {
       "path": "content/handbook/leadership/high-output-management.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:11:06.852598+00:00",
       "model": "codex",
-      "input_hash": "81b93e61d29a95da026b2ffdaf35fd7dfd737b32435362797e7bcda747f853cd",
-      "upstream_committed_at": "2026-08-19T14:13:18-04:00"
+      "input_hash": "8d4c4256b9b3e884cc64eba54c61f0e7c033bc342725b6f839e7b5e65d12e62d",
+      "upstream_committed_at": "2026-10-28T11:20:12-04:00"
     },
     "content/handbook/leadership/in-person.md": {
       "path": "content/handbook/leadership/in-person.md",
@@ -19626,11 +19626,11 @@
     },
     "content/handbook/support/managers/_index.md": {
       "path": "content/handbook/support/managers/_index.md",
-      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
-      "translated_at": "2026-05-08T18:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7eae9d531c5da0d613a7a51eba3dbdb71a37cbfb8e470001a7d06dcd6eaac2f4",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:09:29.256623+00:00",
+      "model": "codex",
+      "input_hash": "c3f8efbb4a150cf3251e45f3cc8de9ae7ab6227995e376cb3432739ffafb076e",
+      "upstream_committed_at": "2026-10-28T11:20:12-04:00"
     },
     "content/handbook/support/managers/amer.md": {
       "path": "content/handbook/support/managers/amer.md",
@@ -19690,11 +19690,11 @@
     },
     "content/handbook/support/managers/manager-responsibilities.md": {
       "path": "content/handbook/support/managers/manager-responsibilities.md",
-      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
-      "translated_at": "2026-05-08T18:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a2150b903392e2eba31aae4e7cb98d482f5631e4c089e7e300fbb79805ab4625",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:09:29.256623+00:00",
+      "model": "codex",
+      "input_hash": "5b10371e82b379ab36a7873453043d64fb20334df6445732836ed72b5464e98a",
+      "upstream_committed_at": "2026-10-28T11:20:12-04:00"
     },
     "content/handbook/support/managers/performance-management.md": {
       "path": "content/handbook/support/managers/performance-management.md",
@@ -21954,11 +21954,11 @@
     },
     "content/handbook/support/engineering/_index.md": {
       "path": "content/handbook/support/engineering/_index.md",
-      "upstream_sha": "8194127ea2690cda322cc5bdda07644aa275d6cc",
-      "translated_at": "2026-08-12T06:21:26+09:00",
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:09:29.256623+00:00",
       "model": "codex",
-      "input_hash": "de08adc11983a3adc67812eebd4702261d77125178852269c1e8e09e40a316bc",
-      "upstream_committed_at": "2026-08-11T11:43:02+10:00"
+      "input_hash": "60145a6766913f1bd761fd0234075bb69fb4ffa512206b8a28755844aa799d23",
+      "upstream_committed_at": "2026-10-29T08:56:35+13:00"
     },
     "content/handbook/support/engineering/mentorship.md": {
       "path": "content/handbook/support/engineering/mentorship.md",
@@ -21970,11 +21970,11 @@
     },
     "content/handbook/support/engineering/staff.md": {
       "path": "content/handbook/support/engineering/staff.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f9624ac07a174160c55abd32d5e84d49d3a7761966fce9bd3839d380a816a136",
-      "upstream_committed_at": "2025-06-02T12:24:11-07:00"
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:11:06.852598+00:00",
+      "model": "codex",
+      "input_hash": "08b0eba795c366d09a0d20c2af6dd0a813fe67963ced4bb8c8f909ad3e3b7e9c",
+      "upstream_committed_at": "2026-10-28T11:20:12-04:00"
     },
     "content/handbook/support/browser-extensions/_index.md": {
       "path": "content/handbook/support/browser-extensions/_index.md",
@@ -22802,11 +22802,11 @@
     },
     "content/handbook/security/okr.md": {
       "path": "content/handbook/security/okr.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "93402ed5efd6d8d454ab87e505b2a82547fa58709223044e730438b6337b2bbf",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:11:06.852598+00:00",
+      "model": "codex",
+      "input_hash": "6b6eb72951086cb4937cceccc775f200378b25a1d2beda1bbc44b12567c8eb8b",
+      "upstream_committed_at": "2026-10-28T11:20:12-04:00"
     },
     "content/handbook/security/password-guidelines.md": {
       "path": "content/handbook/security/password-guidelines.md",
@@ -23034,11 +23034,11 @@
     },
     "content/handbook/security/security-operations/sirt/_index.md": {
       "path": "content/handbook/security/security-operations/sirt/_index.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T13:23:21Z",
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:11:06.852598+00:00",
       "model": "codex",
-      "input_hash": "dc19ca669276665b6ea2d4482aaab456b4b80414e396410fb3495d67e3d7b10c",
-      "upstream_committed_at": "2026-06-17T15:12:47-05:00"
+      "input_hash": "2585bacc8a61cae7298b2d467c7d01aee083b08c190b2c9478e2dd00f9b282ba",
+      "upstream_committed_at": "2026-10-27T16:16:54-05:00"
     },
     "content/handbook/security/security-operations/sirt/engaging-security-on-call.md": {
       "path": "content/handbook/security/security-operations/sirt/engaging-security-on-call.md",
@@ -32322,11 +32322,11 @@
     },
     "content/handbook/support/sig/_index.md": {
       "path": "content/handbook/support/sig/_index.md",
-      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
-      "translated_at": "2026-10-18T09:31:30Z",
+      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
+      "translated_at": "2026-10-28T21:09:29.256623+00:00",
       "model": "codex",
-      "input_hash": "aa39abcfa3ad3c30d3d5ff8b8b77a5c7bf48de1abe7bb9f181e704abc3c2870c",
-      "upstream_committed_at": "2026-10-12T17:33:23-04:00"
+      "input_hash": "c8da37b224e3cd07ca2069b6f75b74b03afb3898c4d9f861eabe8ef00ad89b24",
+      "upstream_committed_at": "2026-10-29T08:56:35+13:00"
     },
     "content/handbook/support/sig/support-innovation-group.md": {
       "path": "content/handbook/support/sig/support-innovation-group.md",
