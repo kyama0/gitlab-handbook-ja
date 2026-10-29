@@ -2,26 +2,24 @@
 title: "エージェント利用ガイド"
 description: "日常開発で AI エージェントと連携するためのベストプラクティス"
 upstream_path: "/handbook/enterprise-data/ai/agent-usage-guide/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-lastmod: "2026-09-10T21:04:36Z"
-translated_at: "2026-09-11T12:56:16+00:00"
+upstream_sha: 63a2533c58aee7c0cb8754e06a4a09ec7aa9344a
+lastmod: "2026-10-28T11:12:14-06:00"
+translated_at: "2026-10-29T21:04:02.612725+00:00"
 translator: claude
 stale: false
 ---
-
-[TOC]
 
 ## エージェントの仕組み {#how-agents-work}
 
 AI モデルは単一の呼び出しです——プロンプトを送ると、レスポンスが返ってきます。エージェントは、その同じモデルがループで動作しているものです。すなわち、あなたのリクエストを受け取り、アクション（ファイルの読み取り、コマンドの実行、コードの編集）を決定し、結果を観察し、タスクが完了するまでこれを繰り返します。
 
-より深く知るには、Anthropic の [building effective agents](https://www.anthropic.com/research/building-effective-agents) の解説を参照してください。
+より深く知るには、Anthropic の[効果的なエージェントの構築](https://www.anthropic.com/research/building-effective-agents)についての解説を参照してください。
 
 ## MCP の仕組み {#how-mcps-work}
 
-MCP (Model Context Protocol) サーバーは、エージェントを外部のツールやデータソース——GitLab、dbt、Slack などを思い浮かべてください——に接続することで、エージェントができることを拡張します。アクティブな各 MCP はエージェントのコンテキストウィンドウに加わるため、目の前のタスクで実際に必要なものだけを有効にしてください。
+MCP（Model Context Protocol）サーバーは、エージェントを外部のツールやデータソース——GitLab、dbt、Slack などを思い浮かべてください——に接続することで、エージェントができることを拡張します。アクティブな各 MCP はエージェントのコンテキストウィンドウに加わるため、目の前のタスクで実際に必要なものだけを有効にしてください。
 
-すべての連携が MCP サーバーというわけではありません。Snowflake MCP サーバーは保守されなくなったため、Snowflake へのアクセスには [Snowflake CLI](/handbook/enterprise-data/platform/snowflake/snowflake-cli/)（`snow`）を使用します。エージェントはこれをほかのコマンドラインツールと同様に呼び出します。
+すべての連携が MCP サーバーというわけではありません。Snowflake へのアクセスには [Snowflake CLI](/handbook/enterprise-data/platform/snowflake/snowflake-cli/)（`snow`）を使用します。エージェントはこれをほかのコマンドラインツールと同様に呼び出します。
 
 ## 設定 {#configuration}
 
@@ -34,40 +32,36 @@ MCP (Model Context Protocol) サーバーは、エージェントを外部のツ
 
 グローバル設定は最小限に保ってください。そこに置く価値がある主なものは、何に取り組んでいるかにかかわらずあらゆるセッションで必要となる MCP です。それ以外のすべて——特に `dbt-mcp` のようなリポジトリ固有の MCP——はプロジェクトの設定に属します。たとえば、`dbt-mcp` は analytics リポジトリでのみ関連するため、そのリポジトリの設定にのみ存在します。
 
-良い目安: どのプロジェクトの外でエージェントを開いたときでもその MCP をアクティブにしておきたいなら、それはグローバルに入れます。そうでなければ、ローカルに留めます。
+良い目安： どのプロジェクトの外でエージェントを開いたときでもその MCP をアクティブにしておきたいなら、それはグローバルに入れます。そうでなければ、ローカルに留めます。
 
 Claude Code では手動で編集するよりも `/config` を使用してください。設定ファイルへの書き込みを代行します。
 
 ## ベストプラクティス {#best-practices}
 
-コンテキストはスリムに保ってください。焦点を切り替えるとき——新しい機能、別のバグ、無関係なレビュー——はいつでも新しい会話を始めてください。迷ったら、新しいウィンドウにします。Claude Code では `/clear`、OpenCode では `/new` を使ってそれを行います。これは、レスポンスの品質を向上させるとともに、コストも改善します。
+コンテキストはスリムに保ってください。焦点を切り替えるとき——新しい機能、別のバグ、無関係なレビュー——はいつでも新しい会話を始めてください。迷ったら、新しいウィンドウにします。Claude Code では `/clear`、OpenCode では `/new` を使ってそれを行います。これにより、レスポンスの品質が向上し、コストも下がります。
 
 あなたが行っていることに対応するスキルが存在するなら、それを使ってください——スキルは、そうでなければ得られないドメイン固有のコンテキストをエージェントに与えます。
 
-### Analytics Engineer
+### Analytics Engineer {#analytics-engineer}
 
 AE チームは、dbt モデルの構築と変更、MR レビューフィードバックへの対応、パイプライン障害のトラブルシューティング、データのテストと検証、データセットの探索、Slack スレッドやレビューコメントなどのコンテキストからの Issue 作成まで、開発ライフサイクル全体で OpenCode を使用します。
 
-#### 推奨ワークフロー
+#### 推奨ワークフロー {#recommended-workflow}
 
-- 新規または不慣れなタスクでは、まず **Plan** モードで開始します。変更を加える前に提案されたアプローチをレビューしてください
-- 十分に理解しているタスクでは、直接 **Build** または AE エージェントに進みます
+- 新規または不慣れなタスクでは Plan モードで開始し、十分に理解しているタスクでは直接 **Build** または AE エージェントに進みます。[Plan モードを使うタイミング](#when-to-use-plan-mode)を参照してください
 - プロンプトは「I want to…」で始め、取り組んでいる変更、レビューコメント、または質問を説明します
 - MR レビューでは、そのレビューにスコープを限定した新しいセッションを開きます
-- 2 つのモードの詳細は、以下の [Plan モードを使うタイミング](#when-to-use-plan-mode)を参照してください
 
-#### セッション管理、モデル選択、コスト効率
+#### セッション管理、モデル選択、コスト効率 {#session-management-model-selection-and-cost-efficiency}
 
 - MR、トピック、または日ごとに新しいセッションを開始します。前のコンテキストが次のタスクに実際に必要かを判断し、不要なら新しく開始します
-- **Sonnet 4.6** のような中規模モデルが推奨されるデフォルトモデルです。品質、速度、コストのバランスがよく、ほとんどの AE タスクでは大規模モデルほど遅く高価になっても、それに見合う向上はありません
-- 入力トークンはセッションで最も高価な要素のようです。コンテキストをスリムに保ち、大きくなったら `/compact` を使い、200K トークンのしきい値に達する前に新しいセッションを開始してください
+- デフォルトには中規模モデルを推奨します。品質、速度、コストのバランスがよく、最大規模のモデルはより遅く高価で、ほとんどの AE タスクではそれに見合う向上はありません
+- 入力トークンは通常、セッションで最も高価な要素です。コンテキストをスリムに保ち、大きくなったら `/compact` を使い、コンテキストウィンドウがいっぱいになる前に新しいセッションを開始してください
 - 現在のタスクに必要な MCP だけを有効にします。OpenCode では `/mcps` で `space` を押してサーバーのオンとオフを切り替えます。Claude Code では `/mcp` で接続済みのサーバーを一覧表示し、読み込むサーバーは設定で指定します
 
-#### データアクセスのセットアップ
+#### データアクセスのセットアップ {#data-access-setup}
 
 ほとんどの AE 開発作業では [Snowflake CLI](/handbook/enterprise-data/platform/snowflake/snowflake-cli/)が必要です。エージェントはこれを使ってセッション中に Snowflake にクエリを実行します。dbt のモデル構造、リネージュ、ノード詳細を把握するために、さらに [dbt MCP サーバー](agent-setup.md#dbt-mcp-server)を追加するとよいでしょう。
-
-<span id="when-to-use-plan-vs-build-mode"></span>
 
 ## Plan モードを使うタイミング {#when-to-use-plan-mode}
 
@@ -90,7 +84,7 @@ AE チームは、dbt モデルの構築と変更、MR レビューフィード�
 
 ### 利用可能なスキル {#available-skills}
 
-Data Team によって開発されたスキルの一覧は、Agentic Tool Development ガイドの [Available Skills](agentic-tool-development.md#available-skills) セクションを参照してください。
+Data Team によって開発されたスキルの一覧は、Agentic Tool Development ガイドの[利用可能なスキル](agentic-tool-development.md#available-skills)セクションを参照してください。
 
 ### セットアップ {#setup}
 

@@ -2,9 +2,9 @@
 title: '組織フィールド'
 description: 'Zendesk 組織フィールドに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/organizations/fields/"
-upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
-lastmod: "2026-10-14T12:44:07-05:00"
-translated_at: "2026-10-18T09:37:28Z"
+upstream_sha: "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a"
+lastmod: "2026-10-29T08:32:37-05:00"
+translated_at: "2026-10-29T21:07:29.058807+00:00"
 translator: codex
 stale: false
 ---
@@ -13,29 +13,29 @@ stale: false
 
 {{% alert title="技術的な詳細" color="primary" %}}
 
-- デプロイタイプ: `Standard`
+- デプロイタイプ： `Standard`
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/organizations/fields)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/organizations/fields)
-- テスト情報: [ドキュメント](/handbook/eta/css/testing/zendesk/organization-fields/)
+- テスト情報： [ドキュメント](/handbook/eta/css/testing/zendesk/organization-fields/)
 
 {{% /alert %}}
 
-## 組織フィールドを理解する
+## 組織フィールドを理解する {#understanding-organization-fields}
 
-### 組織フィールドとは
+### 組織フィールドとは {#what-are-organization-fields}
 
 組織フィールドは、Zendesk の組織に添付されるカスタムフィールドです。チケットに表示されるチケットフィールドとは異なり、組織フィールドには組織自体に関する情報が保存されます。
 
-### 組織フィールドの管理方法
+### 組織フィールドの管理方法 {#how-we-manage-organization-fields}
 
 Zendesk は UI を通じて組織フィールドを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、定められたレビュープロセス、必要に応じたロールバックの実行などが可能になります。
 
 このため、同期リポジトリを使用しています。
 
-### 組織フィールドの種類
+### 組織フィールドの種類 {#types-of-organization-fields}
 
-GitLab で最もよく使用する種類は次のとおりです:
+GitLab で最もよく使用する種類は次のとおりです：
 
 | 名前 | API タイプ値 | 目的 | 使用例 |
 |------|----------------|---------|------------------|
@@ -50,13 +50,13 @@ GitLab で最もよく使用する種類は次のとおりです:
 
 完全な一覧については、[Zendesk のドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください
 
-### 現在の組織フィールド
+### 現在の組織フィールド {#current-organization-fields}
 
-現在のフィールドでは、データソースは次の 3 つの領域のいずれかです:
+現在のフィールドでは、データソースは次の 3 つの領域のいずれかです：
 
 - Salesforce: データは Salesforce アカウントから直接取得されます
 - Zendesk-Salesforce sync: データは [Zendesk-Salesforce sync](/handbook/eta/css/zendesk-salesforce-sync/)を通じて決定されます
-- エージェント: エージェントからリクエストされます（通常は内部リクエストフォーム経由）
+- エージェント： エージェントからリクエストされます（通常は内部リクエストフォーム経由）
 
 <details>
 <summary>Zendesk Global 用</summary>
@@ -67,7 +67,8 @@ GitLab で最もよく使用する種類は次のとおりです:
 | `account_type` | Account Type | Drop-down | アカウントのタイプを表示する | Salesforce |
 | `am_project_id` | AM Project ID | Text | コラボレーションプロジェクトの gitlab.com プロジェクト ID | エージェント |
 | `aar` | ARR | Decimal | アカウントの年間経常収益 (ARR) | Salesforce |
-| `assigned_se` | Assigned SE | Text | Assigned Support Engineer (ASE) の Zendesk ユーザー ID | エージェント |
+| `ase_auto_assignment` | ASE Auto Assignment | Checkbox | チケットを ASE に自動割り当てするかどうか | エージェント |
+| `ase_email` | ASE Email | Text | ASE のメールアドレス | エージェント |
 | `technical_account_manager` | Customer Success Manager | Text | Customer Success Manager (CSM) の名前 | Salesforce |
 | `migration_date` | Date to Migrate | Date | 組織が別のインスタンスに移行する日付 | Zendesk-Salesforce sync |
 | `org_in_escalated_state` | Escalated State | Checkbox | 組織がエスカレーション状態にあるかどうか | Salesforce |
@@ -89,9 +90,13 @@ GitLab で最もよく使用する種類は次のとおりです:
 | `sub_community_other` | Subscription: Community - Other | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_cicd_minutes` | Subscription: Consumption - CI_CD Minutes | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_eap` | Subscription: Consumption - Enterprise Agile Planning | Checkbox | 利用資格情報 | Salesforce |
+| `sub_consumption_gitlab_credits` | Subscription: Consumption - GitLab Credits | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_duo_enterprise` | Subscription: Consumption - GitLab Duo Enterprise | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_duo_amazon_q` | Subscription: Consumption - GitLab Duo powered by Amazon Q | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_duo_premium` | Subscription: Consumption - GitLab Duo Premium | Checkbox | 利用資格情報 | Salesforce |
+| `sub_consumption_duo_self_hosted` | Subscription: Consumption - GitLab Duo Self-Hosted | Checkbox | 利用資格情報 | Salesforce |
+| `sub_consumption_gitlab_orbit` | Subscription: Consumption - GitLab Orbit | Checkbox | 利用資格情報 | Salesforce |
+| `sub_consumption_gitlab_secrets_manager` | Subscription: Consumption - GitLab Secrets Manager | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_storage` | Subscription: Consumption - Storage | Checkbox | 利用資格情報 | Salesforce |
 | `sub_dotcom_premium` | Subscription: GitLab.com - Premium | Checkbox | 利用資格情報 | Salesforce |
 | `sub_dotcom_ultimate` | Subscription: GitLab.com - Ultimate | Checkbox | 利用資格情報 | Salesforce |
@@ -114,7 +119,8 @@ GitLab で最もよく使用する種類は次のとおりです:
 | `account_type` | Account Type | Drop-down | アカウントのタイプを表示する | Salesforce |
 | `am_project_id` | AM Project ID | Integer | コラボレーションプロジェクトの gitlab.com プロジェクト ID | エージェント |
 | `arr` | ARR | Decimal | アカウントの年間経常収益 (ARR) | Salesforce |
-| `assigned_se` | Assigned SE | Text | Assigned Support Engineer (ASE) の Zendesk ユーザー ID | エージェント |
+| `ase_auto_assignment` | ASE Auto Assignment | Checkbox | チケットを ASE に自動割り当てするかどうか | エージェント |
+| `ase_email` | ASE Email | Text | ASE のメールアドレス | エージェント |
 | `technical_account_manager` | Customer Success Manager | Text | Customer Success Manager (CSM) の名前 | Salesforce |
 | `migration_date` | Date to Migrate | Date | 組織が別のインスタンスに移行する日付 | Zendesk-Salesforce sync |
 | `org_in_escalated_state` | Escalated State | Checkbox | 組織がエスカレーション状態にあるかどうか | Salesforce |
@@ -128,9 +134,13 @@ GitLab で最もよく使用する種類は次のとおりです:
 | `salesforce_id` | Salesforce ID | Text | 18 文字の Salesforce アカウント ID | Salesforce |
 | `sfdc_short_id` | SFDC Short ID | Text | 15 文字の Salesforce アカウント ID | Salesforce |
 | `solutions_architect` | Solutions Architect | Text | Solutions Architect (SA) の名前を表示する | Salesforce |
+| `sub_consumption_gitlab_credits` | Subscription: Consumption - GitLab Credits | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_duo_enterprise` | Subscription: Consumption - GitLab Duo Enterprise | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_duo_amazon_q` | Subscription: Consumption - GitLab Duo powered by Amazon Q | Checkbox | 利用資格情報 | Salesforce |
 | `sub_consumption_duo_premium` | Subscription: Consumption - GitLab Duo Premium | Checkbox | 利用資格情報 | Salesforce |
+| `sub_consumption_duo_self_hosted` | Subscription: Consumption - GitLab Duo Self-Hosted | Checkbox | 利用資格情報 | Salesforce |
+| `sub_consumption_gitlab_orbit` | Subscription: Consumption - GitLab Orbit | Checkbox | 利用資格情報 | Salesforce |
+| `sub_consumption_gitlab_secrets_manager` | Subscription: Consumption - GitLab Secrets Manager | Checkbox | 利用資格情報 | Salesforce |
 | `sub_gitlab_dedicated` | Subscription: GitLab Dedicated | Checkbox | 利用資格情報 | Salesforce |
 | `sub_sm_premium` | Subscription: Self-Managed - Premium | Checkbox | 利用資格情報 | Salesforce |
 | `sub_sm_ultimate` | Subscription: Self-Managed - Ultimate | Checkbox | 利用資格情報 | Salesforce |
@@ -150,7 +160,7 @@ GitLab で最もよく使用する種類は次のとおりです:
 
 ### 組織フィールドを表示する {#viewing-organization-fields}
 
-Zendesk で組織フィールドを表示するには:
+Zendesk で組織フィールドを表示するには：
 
 1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global（本番環境）](https://gitlab.zendesk.com/admin/home)
@@ -163,9 +173,9 @@ Zendesk で組織フィールドを表示するには:
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/people/configuration/organization_fields)
    - [Zendesk US Government（サンドボックス）](https://gitlabfederalsupport1585318082.zendesk.com/admin/people/configuration/organization_fields)
 
-注記: 非アクティブな組織フィールドを表示する場合は、`Filter` ボタンをクリックしてアクティブなフィルターを変更する必要がある場合があります
+注記： 非アクティブな組織フィールドを表示する場合は、`Filter` ボタンをクリックしてアクティブなフィルターを変更する必要がある場合があります
 
-### 組織フィールドを作成する
+### 組織フィールドを作成する {#creating-an-organization-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -256,7 +266,7 @@ custom_field_options:
 
 ピアが MR をレビューして承認した後、MR をマージできます。次回のデプロイ時に Zendesk に同期されます。
 
-### 組織フィールドを編集する
+### 組織フィールドを編集する {#editing-an-organization-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -269,11 +279,11 @@ custom_field_options:
 
 ピアが MR をレビューして承認した後、MR をマージできます。次回のデプロイ時に Zendesk に同期されます。
 
-#### 組織フィールドのタイトルを変更する
+#### 組織フィールドのタイトルを変更する {#changing-the-title-of-an-organization-field}
 
 組織フィールドのタイトルを変更する必要がある場合は、現在の値を `previous_title` 属性にコピーしてから、`title` 属性を変更します。これにより、同期は更新対象の組織フィールドを引き続き特定できます。
 
-### 組織フィールドを非アクティブ化する
+### 組織フィールドを非アクティブ化する {#deactivating-an-organization-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -281,14 +291,14 @@ custom_field_options:
 
 {{% /alert %}}
 
-組織フィールドを非アクティブ化するには、同期リポジトリで MR を作成する必要があります。この MR では、対応するアクションに対して次を実行してください:
+組織フィールドを非アクティブ化するには、同期リポジトリで MR を作成する必要があります。この MR では、対応するアクションに対して次を実行してください：
 
 1. ファイルを `active` フォルダーから `inactive` フォルダーに移動します
 1. `active` 属性の値を `false` に変更します
 
 ピアが MR をレビューして承認した後、MR をマージできます。次回のデプロイ時に Zendesk に同期されます。
 
-### 組織フィールドを削除する
+### 組織フィールドを削除する {#deleting-an-organization-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -298,7 +308,7 @@ custom_field_options:
 
 同期リポジトリは削除を実行しないため、Zendesk 自体を使用してこれを行う必要があります。
 
-組織フィールドを削除するには:
+組織フィールドを削除するには：
 
 1. [組織フィールドページ](#viewing-organization-fields)に移動します
 1. 削除する組織フィールドを特定し、その名前をクリックします
@@ -307,12 +317,12 @@ custom_field_options:
 1. `Delete` をクリックします
 1. ポップアップで `Delete` をクリックして変更を送信します
 
-### 例外デプロイを実行する
+### 例外デプロイを実行する {#performing-an-exception-deployment}
 
 組織フィールドの例外デプロイを実行するには、対象の組織フィールド同期プロジェクトに移動し、スケジュール済みパイプラインページに移動して、同期項目の再生ボタンをクリックします。これにより、組織フィールドの同期ジョブがトリガーされます。
 
-## 一般的な問題とトラブルシューティング
+## 一般的な問題とトラブルシューティング {#common-issues-and-troubleshooting}
 
-### マージ後に組織フィールドの変更が表示されない
+### マージ後に組織フィールドの変更が表示されない {#not-seeing-organization-field-changes-after-a-merge}
 
 組織フィールドは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実行された場合）にのみデプロイされます
