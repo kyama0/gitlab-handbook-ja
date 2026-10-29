@@ -14914,11 +14914,11 @@
     },
     "content/handbook/enterprise-data/platform/safe-data/index.md": {
       "path": "content/handbook/enterprise-data/platform/safe-data/index.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:27:20Z",
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:04:02.612725+00:00",
       "model": "codex",
-      "input_hash": "a0363bc4ea7c2479d74bbd71a3e33488f9314ec7403ce99fdcb089efa3e4c5b8",
-      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
+      "input_hash": "40be03b344129ba74989558cb3576aab15527272230943f0c01b1e09639a61e8",
+      "upstream_committed_at": "2026-10-29T08:50:52+01:00"
     },
     "content/handbook/enterprise-data/platform/snowflake-benchmarking-guide.md": {
       "path": "content/handbook/enterprise-data/platform/snowflake-benchmarking-guide.md",
@@ -19130,11 +19130,11 @@
     },
     "content/handbook/tools-and-tips/ai/gitlab-duo.md": {
       "path": "content/handbook/tools-and-tips/ai/gitlab-duo.md",
-      "upstream_sha": "59a18d6d88e73b26232d1d6773e5d793fcb29e49",
-      "translated_at": "2026-10-05T21:13:10+00:00",
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:07:29.058807+00:00",
       "model": "codex",
-      "input_hash": "df3062c96bc1b082ba4e389ea47e7b05aedf3c7d7609bf68669604b1bab0830d",
-      "upstream_committed_at": "2026-09-30T19:05:18+02:00"
+      "input_hash": "2aaa38c609be69fcb978a149e1d5c512b6d5b74ce649f79c9a27c81b1467e234",
+      "upstream_committed_at": "2026-10-29T14:12:37-04:00"
     },
     "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md": {
       "path": "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md",
@@ -20666,11 +20666,11 @@
     },
     "content/handbook/support/workflows/dedicated_logs.md": {
       "path": "content/handbook/support/workflows/dedicated_logs.md",
-      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
-      "translated_at": "2026-05-08T21:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5e8f7b6ee1354f2846e8ea2b91b59f4b9c9e8bd06aae293e1d16a7d8c8c9c88d",
-      "upstream_committed_at": "2026-05-05T18:47:35+00:00"
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:07:29.058807+00:00",
+      "model": "codex",
+      "input_hash": "3b09705476745b7c9e180b2d6435f6de39ff54000ef8b12a7ad1c6d37bc78bbf",
+      "upstream_committed_at": "2026-10-28T19:06:06Z"
     },
     "content/handbook/support/workflows/dedicated_runners.md": {
       "path": "content/handbook/support/workflows/dedicated_runners.md",
@@ -31410,19 +31410,19 @@
     },
     "content/handbook/enterprise-data/ai/agent-setup.md": {
       "path": "content/handbook/enterprise-data/ai/agent-setup.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T12:56:16+00:00",
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:04:02.612725+00:00",
       "model": "codex",
-      "input_hash": "ba4fb815d802da43c17fa2669f31056d56456f7b56449f89f9fa622ba1fd8881",
-      "upstream_committed_at": "2026-09-10T21:04:36Z"
+      "input_hash": "83288362019c030f6ef80f8ba797f5e540d955ab85e1db799b8035fe73059325",
+      "upstream_committed_at": "2026-10-28T11:12:14-06:00"
     },
     "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
       "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
-      "upstream_sha": "0b4843d337f9f8173d56982fff942cb2b5a78543",
-      "translated_at": "2026-09-11T12:56:16+00:00",
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:04:02.612725+00:00",
       "model": "codex",
-      "input_hash": "0cb81189acaa7c8906142007135320c69e42876c45b762004e634f99e1299091",
-      "upstream_committed_at": "2026-09-10T21:04:36Z"
+      "input_hash": "9f0e8013809acc1a7caa5edd606e1ca4bb2ef3325e41e2a9fb7c6a4eb3d3032e",
+      "upstream_committed_at": "2026-10-28T11:12:14-06:00"
     },
     "content/handbook/enterprise-data/ai/agentic-tool-development.md": {
       "path": "content/handbook/enterprise-data/ai/agentic-tool-development.md",
@@ -31434,11 +31434,11 @@
     },
     "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md": {
       "path": "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md",
-      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
-      "translated_at": "2026-10-27T21:11:18.294005+00:00",
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:04:02.612725+00:00",
       "model": "codex",
-      "input_hash": "dd8d6028404456899703be920358568698fa644cf28040067fc856a98e5419e5",
-      "upstream_committed_at": "2026-10-26T11:26:04-06:00"
+      "input_hash": "5e28e8e267aec458ef5f806e2903cb1de245a3190c7260350a3891c66793ae84",
+      "upstream_committed_at": "2026-10-28T11:12:14-06:00"
     },
     "content/handbook/customer-success/governance-question-bank.md": {
       "path": "content/handbook/customer-success/governance-question-bank.md",
@@ -33922,11 +33922,11 @@
     },
     "content/handbook/eta/css/zendesk/organizations/fields.md": {
       "path": "content/handbook/eta/css/zendesk/organizations/fields.md",
-      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
-      "translated_at": "2026-10-18T09:37:28Z",
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:07:29.058807+00:00",
       "model": "codex",
-      "input_hash": "711d5359b7aae8287d676f9a07c0013971808ba6865b64ef32be7b261047c2e9",
-      "upstream_committed_at": "2026-10-14T12:44:07-05:00"
+      "input_hash": "1c01dd9d1eded2240f792f96b1aad21ee02b2e35bc22763953d00315f2b222ef",
+      "upstream_committed_at": "2026-10-29T08:32:37-05:00"
     },
     "content/handbook/eta/css/zendesk/tickets/fields.md": {
       "path": "content/handbook/eta/css/zendesk/tickets/fields.md",
@@ -34578,11 +34578,11 @@
     },
     "content/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/_index.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T12:58:42+09:00",
+      "upstream_sha": "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a",
+      "translated_at": "2026-10-29T21:07:29.058807+00:00",
       "model": "codex",
-      "input_hash": "3b4e33e58c01c87a563234bb134821b950f7e8b57a3f56cbbebb2985ac4d97fe",
-      "upstream_committed_at": "2026-08-24T16:58:15+01:00"
+      "input_hash": "3a06f0d8082626e27090cafcd1b5c68c5678dfc572377604a097281a973e7c22",
+      "upstream_committed_at": "2026-10-28T15:21:19-05:00"
     },
     "content/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/_index.md": {
       "path": "content/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/_index.md",

@@ -1,19 +1,17 @@
 ---
 title: "AI エージェントのセットアップ"
-description: "開発用のエージェント型 AI ツールをセットアップするためのデータチームのガイド"
+description: "開発用のエージェント型 AI ツールをセットアップするための Data Team のガイド"
 upstream_path: "/handbook/enterprise-data/ai/agent-setup/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-lastmod: "2026-09-10T21:04:36Z"
-translated_at: "2026-09-11T12:56:16+00:00"
+upstream_sha: 63a2533c58aee7c0cb8754e06a4a09ec7aa9344a
+lastmod: "2026-10-28T11:12:14-06:00"
+translated_at: "2026-10-29T21:04:02.612725+00:00"
 translator: claude
 stale: false
 ---
 
-[TOC]
-
 ## コンテキスト {#context}
 
-データチームには AI 支援開発の標準的なアプローチがありません。このガイドはそのギャップを埋めます。これは複数のチームメイトの間ですでにうまく機能してきた内容に基づいており、ゼロから自分で考え出すのではなく、全員がしっかりとした出発点を持てるようにします。
+このガイドは、Data Team が AI 支援開発を始める際の標準的な出発点です。
 
 ここでは、ターミナルベースの 2 つのエージェント、**Claude Code** と **OpenCode** を説明します。どちらもサポートされており、チームのデフォルトは決まっていません。自分のワークフローに合う方を使用してください。チームの共有スキルは [Agent Skills 形式](https://agentskills.io/specification)に従っているため、1 つのローカルクローンをどちらのツールでも使用できます。
 
@@ -27,12 +25,9 @@ stale: false
 
 ## Claude Code のセットアップ {#claude-code-setup}
 
-より包括的なガイドは[内部ハンドブック](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/claude-code-setup/)にあります。以下の手順は、データチームに特化した簡略版です。
+より包括的なガイドは[内部ハンドブック](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/claude-code-setup/)にあります。以下の手順は、Data Team に特化した簡略版です。
 
-<details>
-<summary><strong>Claude Code のセットアップ手順</strong></summary>
-
-**ステップ 1: Claude Code のインストール**
+**ステップ 1：Claude Code のインストール**
 
 [Claude Code セットアップガイド](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/claude-code-setup/)に従って Claude Code をインストールします。このガイドでは、インストール、GitLab アカウントでの認証、承認済みの利用ポリシーについて説明しています。
 
@@ -44,14 +39,14 @@ claude --version
 
 インストールされたバージョン番号が表示されるはずです。
 
-**ステップ 2: analytics リポジトリから Claude Code を起動**
+**ステップ 2：analytics リポジトリから Claude Code を起動**
 
 ```bash
 jump analytics
 claude
 ```
 
-**ステップ 3: GitLab MCP サーバーを追加**
+**ステップ 3：GitLab MCP サーバーを追加**
 
 [GitLab MCP セットアップガイド](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/gitlab-mcp-setup/)に従って GitLab MCP サーバーを追加します。
 
@@ -59,7 +54,7 @@ GitLab MCP サーバーにより、エージェントはセッション中に Gi
 
 接続を確認するには、Claude Code 内で `/mcp` を実行します。GitLab サーバーが接続済みとして表示されるはずです。
 
-**ステップ 4: `plan` をデフォルトモードに設定**
+**ステップ 4：`plan` をデフォルトモードに設定**
 
 Claude Code セッション内で `/config` を実行して、設定を確認、変更します。ここで変更した内容はすべて Claude Code の設定ファイルに自動的に書き込まれるため、設定ファイルを手動で編集する必要はありません。
 
@@ -67,7 +62,7 @@ Claude Code セッション内で `/config` を実行して、設定を確認、
 
 あわせて `/config` でモデルと出力スタイルも確認するとよいでしょう。
 
-**ステップ 5: エージェント利用ガイドの確認**
+**ステップ 5：エージェント利用ガイドの確認**
 
 Claude Code の使用を開始する前に、[エージェント利用ガイド](agent-usage-guide.md)を確認して、以下を理解してください。
 
@@ -77,28 +72,19 @@ Claude Code の使用を開始する前に、[エージェント利用ガイド]
 - プロンプト入力のベストプラクティスとコンテキスト管理
 - 利用可能なスキルとエージェント
 
-</details>
-
 ---
 
 ## OpenCode のセットアップ {#opencode-setup}
 
-より包括的なガイドは[内部ハンドブック](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/opencode-setup/)にあります。以下の手順は、データチームに特化した簡略版です。
+より包括的なガイドは[内部ハンドブック](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/opencode-setup/)にあります。以下の手順は、Data Team に特化した簡略版です。
 
-<details>
-<summary><strong>OpenCode のセットアップ手順</strong></summary>
-
-<span id="step-1-install-opencode"></span>
-
-**ステップ 1: OpenCode のインストール**
+**ステップ 1：OpenCode のインストール**
 
 ```bash
 curl -fsSL https://opencode.ai/install | bash
 ```
 
-<span id="step-2-verify-the-installation"></span>
-
-**ステップ 2: インストールの確認**
+**ステップ 2：インストールの確認**
 
 OpenCode が PATH で利用可能であることを確認します。
 
@@ -120,18 +106,14 @@ opencode --version
 
 インストールされたバージョン番号が表示されるはずです。
 
-<span id="step-3-start-opencode-from-the-analytics-repo"></span>
-
-**ステップ 3: analytics リポジトリから OpenCode を起動**
+**ステップ 3：analytics リポジトリから OpenCode を起動**
 
 ```bash
 jump analytics
 opencode
 ```
 
-<span id="step-4-configure-gitlab-duo-as-your-ai-provider"></span>
-
-**ステップ 4: GitLab Duo を AI プロバイダーとして設定**
+**ステップ 4：GitLab Duo を AI プロバイダーとして設定**
 
 GitLab Duo は OAuth を使用します。作成や管理が必要なトークンはありません。
 
@@ -142,19 +124,15 @@ GitLab Duo は OAuth を使用します。作成や管理が必要なトーク�
 
 接続したら、`hi` と入力して OpenCode が応答することを確認してテストします。
 
-<span id="step-5-apply-the-golden-config"></span>
-
-**ステップ 5: Golden Config の適用**
+**ステップ 5：Golden Config の適用**
 
 [OpenCode Golden Path](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/golden-configs/opencode/#golden-path-config)の設定を適用します。
 
-> **注:** `opencode.json` ではなく `~/.config/opencode/opencode.jsonc` を使用してください。`.jsonc` 拡張子はコメントを許可するため、設定に注釈を付けるのに便利です。
+> **注：** `opencode.json` ではなく `~/.config/opencode/opencode.jsonc` を使用してください。`.jsonc` 拡張子はコメントを許可するため、設定に注釈を付けるのに便利です。
 
-<span id="step-6-set-plan-as-your-default-agent"></span>
+**ステップ 6：`plan` をデフォルトエージェントに設定**
 
-**ステップ 6: `plan` をデフォルトエージェントに設定**
-
-`~/.config/opencode/config.json`（これはステップ 5 の `opencode.jsonc` Golden Config とは別のファイルです）を開き、`default_agent` を追加します。
+ステップ 5 で使用した同じ `~/.config/opencode/opencode.jsonc` ファイルに `default_agent` を追加します。
 
 ```jsonc
 {
@@ -166,9 +144,7 @@ GitLab Duo は OAuth を使用します。作成や管理が必要なトーク�
 
 これにより、デフォルトでより安全で慎重なモードに留まります。実行する準備ができたら、明示的に Build に切り替えます。
 
-<span id="step-7-review-the-agent-usage-guide"></span>
-
-**ステップ 7: エージェント利用ガイドの確認**
+**ステップ 7：エージェント利用ガイドの確認**
 
 OpenCode の使用を開始する前に、[エージェント利用ガイド](agent-usage-guide.md)を確認して、以下を理解してください。
 
@@ -178,8 +154,6 @@ OpenCode の使用を開始する前に、[エージェント利用ガイド](ag
 - プロンプト入力のベストプラクティスとコンテキスト管理
 - 利用可能なスキルとエージェント
 
-<span id="video-resources"></span>
-
 **ビデオリソース**
 
 **GitLab Unfiltered** アカウントの使用が必要です。
@@ -187,25 +161,21 @@ OpenCode の使用を開始する前に、[エージェント利用ガイド](ag
 - [OpenCode セットアップチュートリアル](https://www.youtube.com/watch?v=80vTUzgQzoY)（3 分 30 秒）
 - [OpenCode デモ](https://www.youtube.com/watch?v=nClVkkI-MFo)（5 分 30 秒）
 
-</details>
-
 ---
 
-## 他のアプリケーションへの接続
+## 他のアプリケーションへの接続 {#connecting-to-other-applications}
 
-エージェントは、ツールチェーンのより多くのツールにアクセスできるほど役立ちます。以下のセクションでは、データチームが日常的に利用する接続、つまり Snowflake へのクエリと dbt プロジェクトの把握について説明します。
+エージェントは、ツールチェーンのより多くのツールにアクセスできるほど役立ちます。以下のセクションでは、Data Team が日常的に利用する接続、つまり Snowflake へのクエリと dbt プロジェクトの把握について説明します。
 
-### Snowflake CLI
+### Snowflake CLI {#snowflake-cli}
 
 エージェントは、Data Team におけるローカルからの Snowflake アクセスの標準である [Snowflake CLI](/handbook/enterprise-data/platform/snowflake/snowflake-cli/)（`snow`）を通じて Snowflake にクエリを実行します。インストールと設定は、そのページに従ってください。
 
 `snow connection test` に成功すれば、Claude Code と OpenCode のどちらもセッション中に Snowflake にクエリを実行できます。Claude Code はターミナルで `snow sql` を実行し、OpenCode は組み込みの `snowflake` ツールを使用します。
 
-> **注:** 以前ここで説明していた Snowflake MCP サーバーは保守されなくなり、Snowflake CLI に置き換えられました。以前に MCP サーバーをセットアップした場合も、移行手順はありません。CLI をインストールし、代わりに使用してください。
-
 ### dbt MCP サーバー {#dbt-mcp-server}
 
-dbt MCP サーバーにより、エージェントは dbt プロジェクトのモデル構造、リネージュ、ノード詳細を把握できます。これは analytics リポジトリでのみ関係します。
+dbt MCP サーバーにより、エージェントは dbt プロジェクトのモデル構造、リネージュ、ノード詳細を把握できます。これは analytics リポジトリでのみ関係します。以下のコマンドは、クローンが `~/repos/analytics` にあることを前提としています。別の場所にある場合は、パスを調整してください。
 
 まず、dbt virtualenv がセットアップされていることを確認します。
 
@@ -217,7 +187,7 @@ ls .venv/bin/dbt  # Should show the dbt executable
 
 `ls .venv/bin/dbt` がファイルパスを返せば、準備完了です。
 
-次に、以下を `~/.zshrc` に追加します。analytics リポジトリが別の場所にある場合は、`ANALYTICS_DIR` を調整してください。
+次に、以下を `~/.zshrc` に追加します。
 
 ```bash
 # Analytics MCP Environment Variables

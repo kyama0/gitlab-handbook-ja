@@ -4,14 +4,14 @@ description: 新規採用者および既存チームメンバーのラップト�
 aliases:
   - /handbook/security/corporate/end-user-services/laptop-management/laptop-ordering/
 upstream_path: /handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-lastmod: "2026-08-24T16:58:15+01:00"
-translated_at: "2026-09-04T12:58:42+09:00"
+upstream_sha: "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a"
+lastmod: "2026-10-28T15:21:19-05:00"
+translated_at: "2026-10-29T21:07:29.058807+00:00"
 translator: codex
 stale: false
 ---
 
-## 配送先
+## 配送先 {#shipping-locations}
 
 これらの国に住むチームメンバーは、IT ラップトップ注文プロセスを通じて対応できます：北米（米国、カナダ、メキシコ）、EU の大部分、英国、日本、フィリピン、シンガポール、オーストラリア、ニュージーランド、インド、イスラエル、韓国。
 
@@ -21,21 +21,23 @@ stale: false
 チームメンバーの国が上記に記載されていない場合、または一般的なラップトップ調達に関する質問がある場合は、代替オプションについて話し合うため it-help@gitlab.com または Candidate Experience Specialist にお問い合わせください。
 チームメンバーがハードウェア購入のための資金援助を必要とする場合、会社は購入を円滑に進めるため資金を前払いできます（下記の例外プロセスを参照してください）。
 
-## ラップトップの購入および配送プロセス
+## ラップトップの購入および配送プロセス {#laptop-purchasing-and-shipping-process}
 
-Corp IT がラップトップ注文を受け取った後、リクエストへの対応を開始します。新規採用者は、GitLab ラップトップが入社日の前週に届くことを想定できます。これをリモートで実現するため、世界中の異なるベンダーとのビジネス関係を活用しています。配送時間は、場所、ハードウェア供給、ベンダーの選択、配送方法によって異なることに注意してください。
+Corp IT がラップトップ注文を受け取った後、リクエストへの対応を開始します。新規採用者は、GitLab ラップトップが遅くとも入社日の 2 〜 3 営業日前までに届くことを想定できます。これをリモートで実現するため、世界中の異なるベンダーとのビジネス関係を活用しています。配送時間は、場所、ハードウェア供給、ベンダーの選択、配送方法によって異なることに注意してください。
 
->新規採用者のラップトップの 90% 以上を入社日前に配送することが、当社のパフォーマンス KPI 目標です。指標はこの内部[ハンドブックページ](https://internal.gitlab.com/handbook/it/end-user-services/gitlab-laptop-metrics/)で追跡されています
+>新規採用者のラップトップの 90% 超を入社日前に配送することが、私たちのパフォーマンス KPI 目標です。指標はこの内部[ハンドブックページ](https://internal.gitlab.com/handbook/it/end-user-services/gitlab-laptop-metrics/)で追跡されています
 
-## 新規採用者向けラップトップ注文プロセス
+## 新規採用者向けラップトップ注文プロセス {#new-hire-laptop-ordering-process}
 
-新規採用者向けラップトップ注文プロセスは、Candidate Experience Specialist が最初のウェルカムメールを送信すると開始されます。メールには、GitLab 支給ラップトップをリクエストするリンクが含まれています。遅延を避けるため、できるだけ早くフォームに記入してください。
+新規採用者は、遅延を避けるため、できるだけ早くラップトップのリクエストフォームに記入する必要があります。Candidate Experience Specialist が、フォームへのリンクを含むウェルカムメールを送信し、ラップトップの注文プロセスを開始します。
 
-新規採用者がフォームに記入すると、ラップトップは入社日の前週に届くことを想定できます。これをリモートで実現するため、世界中の複数のベンダーとのビジネス関係を活用しています。**注意：配送時間は、場所、ハードウェア供給、ベンダーの選択、配送方法によって異なります。**
+新規採用者がフォームを送信すると、ラップトップは遅くとも入社日の 2 〜 3 営業日前までに届く見込みです。私たちは世界中のベンダーと連携し、新規採用者にラップトップを直接配送します。
+
+**注意：** 配送時間は、場所、ハードウェア供給、ベンダーの選択、配送方法によって異なります。
 
 場合によっては、優先配送または翌日配送を手配できることがあります。すべてのケースおよび地域でこの対応はできません。必要な場合は、`it-help@gitlab.com` へ連絡するか、Candidate Experience Specialist に相談して、利用可能なすべてのオプションを確認してください。
 
-採用マネージャーまたは採用/リクルーティングチームのメンバーである場合、[IT Equipment Order Process Project](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-equipment-order-processing/-/issues/?sort=created_date&state=all&first_page_size=100)で新規採用者の注文状況と内容を確認できます
+採用マネージャーまたは採用/リクルーティングチームのメンバーである場合、[Compass](/handbook/eta/corporate-it/compass/compass-guide/)に最新情報を問い合わせて、新規採用者の注文状況と内容を確認できます。
 
 発送前に必要なラップトップリクエストの最短処理時間。一部の国では、配送に必要な書類によりさらに時間がかかる場合があります。
 
@@ -58,18 +60,6 @@ Corp IT がラップトップ注文を受け取った後、リクエストへの
 
 > **注**：Corp IT は、更新よりも新規採用者向けラップトップの注文を優先します。在庫状況によっては、更新が遅れる場合があります。
 
-### 現在の更新遅延（2026 年 8 月 21 日更新）
-
-現在、ラップトップの更新リクエストに通常より長い待ち時間が発生しています。その理由を率直にお伝えします。
-
-世界的な RAM 不足により、業界全体でコンポーネントのコストが上昇し、リードタイムが延びています。6 月に IT Logistics が行ったラップトップの一括注文も影響を受けています。その在庫が利用可能になるまで、更新リクエストには通常より時間がかかります。
-
-**これが意味すること:**
-
-* 新規採用者のラップトップリクエストは引き続き最優先です。既存のラップトップを更新する場合は、在庫が安定するまで遅延を見込んでください。
-* 確定した見込み時期はありません。価格と在庫状況は現在も変動しています。私たちはベンダーとともに状況を追跡しています。
-* フォローアップや重複リクエストの送信は不要です。更新リクエストはキューに入っており、在庫が利用可能になり次第対応されます。
-
 チームメンバーは、3 年間のアクティブ使用後にラップトップの更新対象となります。3 年の期間は次のとおりです：
 
 * チームメンバーが割り当てられたラップトップをアクティブに使用し始めた時点から始まり、必ずしも最初に受け取った時点ではありません
@@ -78,7 +68,7 @@ Corp IT がラップトップ注文を受け取った後、リクエストへの
 
 ラップトップがニーズを満たしている場合、Apple から最新の macOS バージョンを受け取れなくなるまで（およそ 5 年間）、ラップトップを使い続けることを選択できます。
 
-ラップトップの更新をリクエストするには、[このテンプレート](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/issues/new?issuable_template=Laptop_Refresh_Upgrade)を使用してください。
+ラップトップの更新をリクエストするには、[このテンプレート](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/work_items/new?description_template=Laptop_Refresh_Upgrade)を使用してください。
 
 古いラップトップは、交換用ラップトップの受領**から 2 週間以内に**[ワイプ](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-wipe/)または[返却](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-returns)する必要があります。古い MacBook から新しい MacBook へファイルを直接転送するには、[AirDrop](https://support.apple.com/guide/mac-help/use-airdrop-to-send-items-to-nearby-devices)または [Google Drive](/handbook/tools-and-tips/#adding-google-drive-to-your-mac)の使用を推奨します。
 
@@ -86,9 +76,9 @@ Corp IT がラップトップ注文を受け取った後、リクエストへの
 
 3 年間使用した後、IT によるワイプが完了すれば、チームメンバーはラップトップを無償で保持できます。チームメンバーが調査、不正行為、正当な理由による解雇、[GitLab の Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx)の違反、その他の法的またはセキュリティ関連の照会に関与している場合、ラップトップを無償で保持するオプションが無効になることがあります。[Laptop Buyback Policy](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks)も参照してください。
 
-## ラップトップの交換
+## ラップトップの交換 {#laptop-replacements}
 
-分かります。状況は変わることがあります！ラップトップがロールに十分でない場合、まだ 3 年更新の対象でなくても交換用ラップトップをリクエストできます。交換されたラップトップは Laptop Buyback の対象ではなく、GitLab IT の裁量で再利用するため返却する必要があります。
+分かります。状況は変わることがあります！ラップトップがロールに十分でない場合、まだ 3 年更新の対象でなくても交換用ラップトップをリクエストできます。交換されたラップトップは、GitLab IT の裁量で再利用するため返却する必要があります。
 
 End User Services Issue Tracker プロジェクトで[Issue を作成](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/issues/new?issuable_template=Laptop_Replacement)して、交換用ラップトップをリクエストできます。交換リクエストの理由を Issue に記載してください。（ラップトップが職務に十分でない、新しいロールへの社内異動など）
 
@@ -98,11 +88,11 @@ End User Services Issue Tracker プロジェクトで[Issue を作成](https://g
 
 ほとんどのラップトップ注文は標準注文プロセスに従います。ただし、時折発生し、追加の手順と承認が必要となる非標準リクエストも考慮しています。
 
-### 仕様外のラップトップ
+### 仕様外のラップトップ {#laptops-out-of-spec}
 
 リクエストしたラップトップが[こちら](/handbook/eta/corporate-it/end-user-services/laptop-management/#laptop-specs)に記載されている標準仕様の範囲外である場合、ラップトップを購入する前にチームメンバーのマネージャーと Device Logistics Team の承認が必要です。マネージャーが承認した後、ロジスティクス承認のために `@gitlab-com/gl-security/corp/logistics` をタグ付けしてください。
 
-### 自分での調達
+### 自分での調達 {#self-procurement}
 
 **適切な承認なしに、GitLab が費用を負担することはありません**
 
@@ -112,14 +102,14 @@ End User Services Issue Tracker プロジェクトで[Issue を作成](https://g
 
 >会社が支払った、または払い戻したラップトップは GitLab の所有物です。正確な[資産追跡](/handbook/finance/accounting/#fixed-asset-register-and-asset-tracking)のため、適切な Endpoint Management System を使用して登録する必要があります。
 
-### 追加ラップトップのリクエスト
+### 追加ラップトップのリクエスト {#additional-laptop-request}
 
 追加デバイスが必要で、業務上の正当性、マネージャー承認、IT 承認がある場合は、[Laptop Refresh/Upgrade テンプレート](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/issues/new#)から追加ラップトップをリクエストできます。セカンダリデバイスが承認された場合、それは新しいデバイスではなく、再生品になることに注意してください。
 
-### 個人用ラップトップの使用
+### 個人用ラップトップの使用 {#use-of-personal-laptop}
 
 個人用ラップトップを GitLab 業務に使用することは許可していません。新しい GitLab チームメンバーが入社日にラップトップを利用できない場合は、個人用 macOS または Linux ラップトップを一時的に使用することが許可されます。
 
-### 記載されていないラップトップ例外
+### 記載されていないラップトップ例外 {#laptop-exceptions-not-listed}
 
 記載された例外の範囲外の状況、または GitLab IT が必要と判断した場合は、この[テンプレート](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance-commercial-and-dedicated/exceptions/-/issues/new?issuable_template=exception_request)を使用して Laptop Exception を作成できます。これらのリクエストには複数の部門のリーダーシップからの承認が必要で、データ漏洩の可能性があるため推奨されません。
