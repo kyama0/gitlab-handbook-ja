@@ -1,422 +1,217 @@
 ---
-title: "Artifact Registry ADR 009：API 設計"
+title: "Artifact Registry ADR 009: API 設計"
 owning-stage: "~devops::package"
-description: "レジストリの API エンドポイントの構成に関する決定"
+description: "レジストリの API エンドポイント構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: "67bc662bf3f5d3f1c3cbf290ead2d6027341155d"
-translated_at: "2026-09-24T21:14:28+00:00"
+upstream_sha: 113965e2ca25f720d69415391b362683f783f532
+translated_at: "2026-10-30T21:08:37.641081+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T09:51:04-01:00"
+lastmod: "2026-10-29T20:22:58+01:00"
 ---
 
-## コンテキスト
+## 背景 {#context}
 
-Artifact Registry は、次の制約を持つ包括的な API 設計を必要とします。
+Artifact Registry の API 設計には、次の制約があります。
 
-1. **3 つの API カテゴリ**：レジストリの概念とやり取りする管理 API、特定のクライアントが使用する厳密な仕様に従うアーティファクト管理クライアント API、そしてプラットフォームとレジストリ間の通信のための GitLab API。
-2. **データベースのデータ構成に従う**：API エンドポイントはアーティファクトフォーマットごとに構成され、リポジトリがフォーマットファミリーごとのテーブルとフィールドを持つデータベーススキーマ <!-- (see [ADR-007](007_database_schema.md)) --> に一致します（`docker` と `oci` は `container_*` テーブルを共有します）。このマッピングは、複雑なマルチフォーマット抽象化を回避することで実装を簡素化し、フォーマット固有の最適化を可能にします。
-3. **3 つのリポジトリタイプ**：レジストリは 3 つのリポジトリタイプをサポートします。ホスト型（プッシュされたアーティファクトのためのプライベートストレージ）、リモート（外部レジストリのためのプロキシ/キャッシュ）、仮想（ホスト型とリモートのアップストリームを組み合わせた集約された pull エンドポイント）です。このモデルは業界の慣行に一致します。3 つのタイプはすべて独立しており、個別に管理可能なエンティティです。
+1. **3 つの API カテゴリー**：レジストリの概念を操作する管理 API、特定のクライアントで利用するために厳密な仕様に従うアーティファクト管理クライアント API、プラットフォームとレジストリ間の通信のための GitLab API です。
+2. **データベースのデータ構成に従う**：API エンドポイントは、データベーススキーマに合わせてアーティファクトのフォーマット別に構成します。各フォーマットファミリーには独自のテーブルとフィールドがあります（`docker` と `oci` は 1 つのファミリーを構成します）。この対応により、複雑な複数フォーマットの抽象化を避けて実装を簡素化し、フォーマット固有の最適化を可能にします。
+3. **3 種類のリポジトリ**：レジストリは、ホスト型（push されたアーティファクトのプライベートストレージ）、リモート（外部レジストリのプロキシ／キャッシュ）、仮想（ホスト型とリモートのアップストリームを組み合わせる集約 pull エンドポイント）の 3 種類のリポジトリをサポートします。このモデルは業界の慣行に一致します。3 種類すべてが独立して管理できる、単独のエンティティです。
 
-Artifact Registry は Organizations（根拠は [ADR-001](001_organizations_as_anchor_point.md)を参照）にスコープされ、すべてのお客様向け URL に現れる、不変でお客様が選択するスラッグ（[ADR-022](022_namespace_decoupling.md)）を使用します。すべてのクライアントおよび管理エンドポイントは、API バージョンプレフィックス（またはクライアント API の場合はプロトコルプレフィックス）の後に `/:slug` パスセグメントを含み、すべてのリクエストを特定のスラッグにスコープします。スラッグは、組織パスの解決に依存することなく、トポロジーサービスを介した安定した [Cells](../../cells/) ルーティングを提供します。例外は 2 つあります。OCI で必須の `GET /v2/` バージョンプローブ（[Container](#container)を参照）と GitLab API エンドポイント（[GitLab API](#gitlab-api)を参照）です。
+Artifact Registry は、お客様が選択する不変のスラッグ（[ADR-022](022_namespace_decoupling.md)）を通じて Organizations をスコープとし（根拠は [ADR-001](001_organizations_as_anchor_point.md)を参照）、そのスラッグはお客様向けのすべての URL に現れます。すべてのクライアントおよび管理エンドポイントは、API バージョンのプレフィックス（クライアント API ではプロトコルのプレフィックス）の後に `/:slug` パスセグメントを含め、各リクエストのスコープを特定のスラッグに限定します。スラッグは、組織のパス解決に依存せず、トポロジーサービスを通じて安定した [Cells](../../cells/) ルーティングを提供します。例外は、OCI が義務付ける `GET /v2/` バージョンプローブ（[コンテナ](#container)を参照）と GitLab API エンドポイント（[GitLab API](#gitlab-api)を参照）の 2 つです。
 
-Artifact Registry は、メインの GitLab アプリケーションドメインとは別の、専用ドメイン（例：`artifact-registry.gitlab.com`）で提供されます。これにより、メインアプリケーションの Cookie、認証情報、内部ネットワークコンテキストからレジストリを分離することで、[XSS](https://owasp.org/www-community/attacks/xss/) および [SSRF](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery) の脆弱性に対するセキュリティ態勢が劇的に改善されます。
+Artifact Registry は、GitLab のメインアプリケーションのドメインとは別の専用ドメイン（たとえば `artifact-registry.gitlab.com`）で提供します。これにより、レジストリをメインアプリケーションの Cookie、認証情報、内部ネットワークのコンテキストから分離し、[XSS](https://owasp.org/www-community/attacks/xss/) および [SSRF](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)の脆弱性に対するセキュリティ態勢を改善します。
 
-この ADR は API サーフェス、それらに適用されるルール、エンドポイント構造を定義します。リクエストおよびレスポンスのペイロードは、Artifact Registry コードベース内の対応する OpenAPI 仕様に存在します。
+この ADR は、API の各領域と、それぞれに適用するルールを定義します。ルートとそのペイロードは、Artifact Registry のコードベースにある OpenAPI 仕様とフォーマットごとの仕様で定義します。
 
-### バージョニング
+### バージョニング {#versioning}
 
-Artifact Registry は専用ドメインで動作するため、GitLab Rails モノリスで使用される `/api/v4` プレフィックスは適用されません。モノリスは、同一ドメイン上で API ルートを Web UI ルートから分離し、その API バージョンの系譜（v3 から v4 へ）を反映するために `/api/v4` を使用します。スタンドアロンサービスにはどちらの懸念も存在しません。
+Artifact Registry は専用ドメインで動作するため、GitLab Rails モノリスで使用する `/api/v4` プレフィックスは適用しません。モノリスは、同じドメイン上で API ルートと Web UI ルートを分離し、API バージョンの系譜（v3 から v4）を反映するために `/api/v4` を使用します。
 
-管理 API ルートは `/api/v1` パスベースのバージョンプレフィックスを使用します。`/api/` プレフィックスは、同一ドメイン上で管理ルートをプロトコル固有のクライアントルートから分離し、管理 API バージョンが将来引き上げられた場合のネームスペースの衝突を防ぎます（例：OCI は `/v2/` を必須とするため、裸の `/v2` 管理プレフィックスは衝突します）。これは業界の慣行に一致します。パスベースのバージョニングは、ヘッダー検査を必要とせずに、URL、ログ、ルーティングルールにおいてバージョンを可視に保ちます。
+管理 API ルートは、パスベースのバージョンプレフィックス `/api/v1` を使用します。`/api/` プレフィックスは、同じドメイン上のプロトコル固有のクライアントルートと管理ルートを分離し、管理 API のバージョンを引き上げる場合にも名前空間の衝突を防ぎます（たとえば OCI は `/v2/` を義務付けているため、管理用プレフィックスを単に `/v2` とすると衝突します）。これは業界の慣行に一致します。パスベースのバージョニングでは、ヘッダーを調べなくても、URL、ログ、ルーティングルールでバージョンを確認できます。
 
-クライアント API はバージョンプレフィックスを使用しません。プロトコル固有のバージョニングは、必要に応じてクライアント自身によって処理されます（例：OCI は `/v2/` を必須とします）。これにより、クライアントが構成する URL を可能な限り短く保ちます。
+クライアント API はバージョンプレフィックスを使用しません。必要な場合は、クライアント自身がプロトコル固有のバージョニングを処理します。これにより、クライアントに設定する URL を可能な限り短く保ちます。
 
-GitLab API ルートは `/api/gitlab/v1` プレフィックスを使用します。明示的な `gitlab` セグメントにより、サーフェスは URL、ログ、ルーティングルールで可視になり、エッジが専用のパスルールを適用できます。これは、レジストリからプラットフォームへのサーフェスで `/gitlab/v1/` プレフィックスを使用する Container Registry の先例に従います。
+GitLab API ルートは `/api/gitlab/v1` プレフィックスを使用します。明示的な `gitlab` セグメントにより、この API 領域が URL、ログ、ルーティングルールで分かるようになり、エッジで専用のパスルールを適用できます。これは、レジストリからプラットフォームへの API 領域に `/gitlab/v1/` プレフィックスを使用する Container Registry の先例に従います。
 
-### API 分類
+### API の分類 {#api-classification}
 
-API の表面は、異なるルールを持つ 3 つの明確なカテゴリに分けられます。
+API の領域は、異なるルールを持つ 3 つのカテゴリーに明確に分けます。
 
 1. **管理 API**：レジストリの概念（リポジトリ、アーティファクト、ポリシーなど）に対する CRUD 操作のための REST および GraphQL API
-   - 認証：GitLab の標準的な REST/GraphQL 認証
+   - 認証：GitLab 標準の REST／GraphQL 認証
    - 目的：UI、自動化スクリプト、管理ツール
-   - フォーマット：標準的な GitLab API パターンを持つ JSON レスポンス
-   - ページネーション：すべてのリストエンドポイントはページネーションされ、できればキーセットページネーション戦略を使用します
+   - フォーマット：GitLab 標準の API パターンに従う JSON レスポンス。コンテナマニフェストなど、保存済みの JSON ドキュメントを返すルートは、そのドキュメント自体のメディアタイプで変更せずに返します
+   - ページネーション：すべての一覧エンドポイントにページネーションを適用し、できればキーセットページネーション戦略を使用します。仮想リポジトリのアップストリームなど、上限によって 1 ページ未満に収まる一覧には、ページネーションを適用しません
 
-2. **アーティファクト管理クライアント API**：業界標準の仕様を実装するプロトコル固有の API
-   - 認証：プロトコル固有（OCI 用の Bearer トークン、Maven 用の Basic 認証など）
-   - 目的：ネイティブクライアントの互換性（`docker`、`npm`、`mvn` コマンド）
-   - フォーマット：プロトコル固有のレスポンス（OCI Distribution Spec、Maven Repository Layout、NPM Registry API）
+2. **アーティファクト管理クライアント API**：業界標準の仕様を実装する、プロトコル固有の API
+   - 認証：プロトコル固有（OCI の Bearer トークン、Maven の Basic 認証など）
+   - 目的：ネイティブクライアントとの互換性（`docker`、`npm`、`mvn`、`go` コマンド）
+   - フォーマット：プロトコル固有のレスポンス（OCI Distribution Spec、Maven Repository Layout、NPM Registry API、GOPROXY プロトコル）
 
 3. **GitLab API**：プラットフォームとレジストリ間の通信のための REST エンドポイント
-   - 認証：サービス間認証情報。エンドユーザー ID は使用しない
-   - 目的：ネームスペースのプロビジョニング、解決、サービス条件、リソース検証
+   - 認証：サービス間の認証情報。エンドユーザーの ID は使用しません
+   - 目的：ネームスペースのプロビジョニング、解決、サービス条件、およびリソース検証
    - フォーマット：JSON
-   - 公開範囲：信頼されたプラットフォーム呼び出し元のみ
+   - 公開範囲：信頼できるプラットフォームの呼び出し元のみ
 
-管理 API とクライアント API は、3 つのリポジトリタイプすべて（ホスト型、仮想、リモート）を提供します。クライアント API はプロトコルごとに構成されます（プロトコルごとに 1 セットのエンドポイント。OCI Distribution Spec のエンドポイントは、`docker` と `oci` の両フォーマットのリポジトリを提供します）が、管理 API は統合されたリポジトリ CRUD を共有し、フォーマットはフォーマット固有のサブリソースにのみ現れます。
+管理 API とクライアント API は、ホスト型、仮想、リモートの 3 種類すべてのリポジトリに対応します。クライアント API はプロトコル別に構成します（プロトコルごとに 1 組のエンドポイントを設け、OCI Distribution Spec のエンドポイントは `docker` と `oci` の両フォーマットのリポジトリに対応します）。一方、管理 API は統合されたリポジトリ CRUD を共有し、フォーマットはフォーマット固有のサブリソースにのみ現れます。
 
-### URL 構造設計
+### URL 構造の設計 {#url-structure-design}
 
-管理 API ルートは **リポジトリにアンカーされます**。`/api/v1/:slug` プレフィックスはすべてのルートで必須であり、概念上のレベルとしてはカウントされません。リポジトリエンドポイントは、一意のリポジトリ名を `:repository_name` パラメータとして受け取ります。
+管理 API ルートは、**リポジトリを起点とします**。`/api/v1/:slug` プレフィックスはすべてのルートで必須であり、概念上の階層には数えません。リポジトリエンドポイントは、`:repository_name` パラメーターとして一意なリポジトリ名を受け取ります。
 
-すべてのリポジトリレベルのリソース（アーティファクト、ライフサイクルポリシー、アップストリームの関連付け）はリポジトリにスコープされます。これはホスト型とリモートのリポジトリが別個のフォーマットファミリーごとのテーブルにデータを保存するためです。
+リポジトリ単位のすべてのリソース（アーティファクト、ライフサイクルポリシー、アップストリームの関連付け）は、リポジトリをスコープとします。ホスト型リポジトリとリモートリポジトリが、フォーマットファミリーごとに分かれたテーブルにデータを保存するためです。
 
-`:format` セグメントは、すべてのフォーマット固有のサブリソースに対して **リポジトリの後** に現れます：`/api/v1/:slug/repositories/:repository_name/:format/...`（例：イメージのリスト、ライフサイクルポリシー）。リポジトリレベルのサブリソースは特定のフォーマットに専用であり、エンドポイントの構成と返される構造のカスタマイズにおいてより高い柔軟性を可能にします。これにはアーティファクト操作とフォーマット固有の構成の両方が含まれます。ネームスペースレベルのフォーマット固有の操作は `:format` をプレフィックスとして使用します：`/api/v1/:slug/:format/statistics`。
+`:format` セグメントは、フォーマット固有のすべてのサブリソースで**リポジトリの後**に配置します。`/api/v1/:slug/repositories/:repository_name/:format/...`（たとえばイメージの一覧表示やライフサイクルポリシー）です。リポジトリ単位のサブリソースは特定のフォーマット専用であり、エンドポイントの構成と返却する構造のカスタマイズに、より高い柔軟性を持たせます。ネームスペース単位のフォーマット固有の操作は、`:format` をプレフィックスとして使用します。`/api/v1/:slug/:format/statistics` です。
 
-リポジトリ CRUD 自体はフォーマットフリーです。これは `repositories` 親テーブルがすべてのフォーマットとタイプにわたって共有されるためです。フォーマットと種類はリポジトリリソースのプロパティであり、URL セグメントではありません。
+すべてのフォーマットと種別が 1 つのリポジトリリソースを共有するため、リポジトリ CRUD 自体はフォーマットに依存しません。フォーマットと種別は、URL セグメントではなく、リポジトリリソースのプロパティです。
 
-例えば：
+例：
 
-- すべてのリポジトリのリスト：`GET /api/v1/:slug/repositories`
+- すべてのリポジトリの一覧表示：`GET /api/v1/:slug/repositories`
 - リポジトリの作成：`POST /api/v1/:slug/repositories`
-- リポジトリの読み取り/更新/削除：`GET/PATCH/DELETE /api/v1/:slug/repositories/:repository_name`（対象概念の識別子を使用するトップレベルルート）
-- コンテナファミリーのリポジトリ内のイメージのリスト：`GET /api/v1/:slug/repositories/:repository_name/:format/images`（フォーマット固有のサブリソース。`:format` は `docker` または `oci`）
-- ID によるイメージの取得：`GET /api/v1/:slug/repositories/:repository_name/:format/images/:image_id`（アーティファクト詳細、リポジトリにスコープ）
+- リポジトリの読み取り／更新／削除：`GET/PATCH/DELETE /api/v1/:slug/repositories/:repository_name`（対象の概念の識別子を使用する最上位のルート）
+- コンテナファミリーのリポジトリ内のイメージ一覧表示：`GET /api/v1/:slug/repositories/:repository_name/:format/images`（フォーマット固有のサブリソース。`:format` は `docker` または `oci`）
+- ID によるイメージの取得：`GET /api/v1/:slug/repositories/:repository_name/:format/images/:image_id`（リポジトリをスコープとするアーティファクトの詳細）
 
 ### リポジトリ名の不変性 {#repository-name-immutability}
 
-リポジトリ名は作成時に設定され、変更できません。リポジトリの説明は可変のままです。これは、壊れたクライアント構成、名前の再取得による認可バイパス、黙ったミスルーティングを防ぎます。また、名前ベースの URL（[下記](#human-friendly-urls)を参照）を可能にし、認可ルールを簡素化します。
+リポジトリ名は作成時に設定し、変更できません。リポジトリの説明は引き続き変更できます。これにより、クライアント設定の破損、名前の再取得による認可の回避、気付かれない誤ルーティングを防ぎます。また、名前ベースの URL（[以下](#human-friendly-urls)を参照）を可能にし、認可ルールを簡素化します。これは業界の慣行に一致します。
 
-これは業界の慣行に一致します。詳細は [gitlab-org/gitlab#592582](https://gitlab.com/gitlab-org/gitlab/-/issues/592582) を参照してください。
+### 人間が読みやすい URL {#human-friendly-urls}
 
-### 人間にやさしい URL {#human-friendly-urls}
+リポジトリ名は、フォーマットやリポジトリ種別に関係なく、スラッグ内でグローバルに一意でなければなりません。このグローバルな一意性制約は業界の慣行に一致し、名前ベースの検索が曖昧になるのを防ぎます。後からフォーマット単位の一意性に緩和しても誰の利用も壊しませんが、制約の厳格化は破壊的な変更になります。名前の不変性（[上記](#repository-name-immutability)を参照）により、名前ベースの URL を安定したパスセグメントとして安全に使えます。スラッグは不変であるため（[ADR-022](022_namespace_decoupling.md)）、URL パスのすべてのセグメントは人間が読めて、永続的に安定しています。
 
-リポジトリエンドポイントは、一意の名前を識別子として受け取ります。リポジトリ名は、フォーマットやリポジトリタイプに関係なく、スラッグ内でグローバルに一意でなければなりません。このグローバルな一意性制約は業界の慣行に一致し、あいまいな名前ベースのルックアップを回避します。後でフォーマットごとの一意性へと緩和しても誰も壊しませんが、厳格化は破壊的な変更となります。名前の不変性（[上記](#repository-name-immutability)を参照）により、名前ベースの URL を安定したパスセグメントとして安全にします。スラッグは不変であるため（[ADR-022](022_namespace_decoupling.md)）、URL パス内のすべてのセグメントは人間が読めて永続的に安定しています。
+## API の構成 {#api-organization}
 
-## API 編成
+### 管理 API {#management-apis}
 
-### 管理用 API {#management-apis}
+管理 API は、GitLab の [REST API 認証](https://docs.gitlab.com/api/rest/authentication/)を使用します。
 
-管理 API は GitLab の [REST API 認証](https://docs.gitlab.com/api/rest/authentication/) を使用します。
+**注意：** `:format` はリポジトリの `format` 値です。`docker` と `oci` のフォーマットはコンテナファミリーを構成し、イメージ、タグ、マニフェストという 1 つのアーティファクトモデルを共有します。`:format` セグメントがリポジトリのフォーマットと一致しないリクエストは、`404 Not Found` を返します。
 
-**注：** `:format` はリポジトリの `format` 値（`docker`、`oci`、`maven`、または `npm`）を表します。`docker` と `oci` はコンテナファミリーを形成します。これらはコンテナアーティファクトモデル（イメージ、タグ、マニフェスト）と `container_*` テーブルを共有します。`:format` セグメントがリポジトリのフォーマットと一致しないリクエストは、`404 Not Found` を返します。
+#### ネームスペース単位の API {#namespace-level-apis}
 
-#### ネームスペースレベル API {#namespace-level-apis}
+ネームスペース単位のルートは `/api/v1/:slug` の直下に置きます。リポジトリのコレクション、ネームスペースとフォーマットごとの統計、ネームスペースのライフサイクルポリシー、およびネームスペース自体です。リポジトリ一覧はすべてのフォーマットと種別を網羅し、その両方でフィルタリングします。
 
-**リポジトリ管理：**
+リポジトリリソースは、フォーマットと種別によってポリモーフィックになります。すべてのリポジトリに共通するフィールドは最上位に置きます。フォーマット固有と種別固有のフィールドは、単一の `settings` オブジェクト内にネストし、`format` と `kind` がその判別子として機能します。作成および更新ボディも、同じネスト構造を取ります。
 
-- `GET    /api/v1/:slug/repositories`                  - すべてのリポジトリをリスト（すべてのフォーマットにわたるホスト型、仮想、リモート）。フォーマットとリポジトリタイプによるフィルタリングをサポート
-- `POST   /api/v1/:slug/repositories`                  - リポジトリを作成
-- `GET    /api/v1/:slug/repositories/:repository_name` - リポジトリの詳細を取得
-- `PATCH  /api/v1/:slug/repositories/:repository_name` - リポジトリを更新
-- `DELETE /api/v1/:slug/repositories/:repository_name` - リポジトリを削除（破壊的操作の意図を示すパラメータが必要。[リポジトリの削除](#repository-deletion)を参照）
+仮想リポジトリの作成および更新ボディは、アップストリームのリポジトリ ID の順序付きリストを持てます。このリストは、書き込み後のアップストリームを解決順に指定します。これは、`settings` の外にある唯一の種別固有のキーです。どのレスポンスでもこのキーを返さないためです。リポジトリの権限に加え、[ADR-021](021_authorization.md)のアップストリームの権限も必要とするため、アップストリームのルートが拒否する書き込みを許可することはありません。
 
-リポジトリ詳細のレスポンスはポリモーフィックであり、その形状はフォーマットと種類によって異なります。
-
-- すべてのリポジトリは、親 `repositories` テーブルからの共通フィールドを返します：`name`、`format`、`kind`、`visibility`、`description`、カウンター（`artifacts_count`、`downloads_count`、`size_bytes`）、`last_updated_at`。
-- フォーマット固有およびタイプ固有のフィールドは、オプションのトップレベルキーとして現れるのではなく、単一の `settings` オブジェクトの下にネストされます。`format` と `kind` のフィールドは判別子として機能します。クライアントはこれらを使用して `settings` の形状を解釈します。
-- `POST` と `PATCH` は、作成および更新操作に対して同じネストされた構造を受け取ります。
-
-種類固有のフィールドのうち 1 つは、`settings` のメンバーではなく、トップレベルのリクエストキーです。`kind=virtual` のリポジトリの作成・更新ボディで任意に指定できる、順序付きの `upstream_repository_ids` がそれに当たり、書き込み後にリポジトリが持つ関連付けを解決順に表します。キーを省略すると保存済みの関連付けは変わらず、空配列を指定すると関連付けがすべて解除されるため、作成時はどちらの場合も新しいリポジトリにアップストリームはありません。このフィールドを `settings` の外に置くのは、レスポンスでは `settings` がフォーマットごとの閉じたユニオン型としてシリアライズされる一方、このフィールドはレスポンスにシリアライズされて返されることがないためです。ネストすると、どのレスポンスにも含まれ得ないメンバーをそのユニオン型に追加することになります。他の種類のリポジトリに対して、このキーを含むボディを送ると `400` で拒否されます。これは、`settings` フィールドが定義されていない種類に `settings` オブジェクトを指定した場合と同じ、未定義フィールドに対する応答です。このフィールドには、リポジトリの権限に加えて [ADR-021](021_authorization.md) のアップストリームの権限が必要なため、サブリソースが拒否する書き込みを呼び出し元に許可することはありません。
+権限判定は、その権限がアクセスを制御するリソースを含むドメインレスポンスに埋め込みます。真偽値のクエリパラメーターで、利用する場合に明示的に有効にします。どのレスポンスが権限判定を含むかなど、その意味は [ADR-021](021_authorization.md#permission-checks-for-ui-gating)で定義します。
 
 ##### リポジトリの削除 {#repository-deletion}
 
-`DELETE /api/v1/:slug/repositories/:repository_name` には、正確に `true` または `false` を値とする、破壊的操作の意図を示すクエリパラメータが **必須** です。このパラメータにデフォルト値はありません。パラメータを省略したリクエスト、またはそれ以外の値を指定したリクエストは `400 Bad Request` を返します。この ADR が定めるのは契約であり、識別子ではありません。パラメータ名と詳細なセマンティクスは、仕様と実装で決定します。
+リポジトリの削除には、破壊的な操作の意図を示し、厳密に `true` または `false` を取るクエリパラメーターが**必須です**。デフォルト値はありません。このパラメーターを省略した場合や、ほかの値を指定した場合、リクエストは `400 Bad Request` を返します。この ADR で確定するのは契約であり、パラメーター名ではありません。
 
-| 値      | 動作                                                                                                           |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| `false` | 空のリポジトリを削除して `204` を返す。ただし、仮想リポジトリがアップストリームとして参照している場合は `409 Conflict` を返す。アーティファクトが残っているリポジトリでは `409 Conflict` を返す |
-| `true`  | カスケードしてリポジトリとその内容を削除する（すでに空の場合は `204`、それ以外は `202`）。ただし、仮想リポジトリがアップストリームとして参照している場合は `409 Conflict` を返す                  |
+| 値   | 動作                                                                                              |
+|---------|-------------------------------------------------------------------------------------------------------|
+| `false` | 空のリポジトリを削除し、`204` を返します。ただし、仮想リポジトリがそのリポジトリをアップストリームとして登録している場合は、`409 Conflict` を返します。アーティファクトが残るリポジトリは `409 Conflict` を返します |
+| `true`  | カスケード削除します。リポジトリとその内容を削除します（すでに空の場合は `204`、それ以外は `202`）。ただし、仮想リポジトリがそのリポジトリをアップストリームとして登録している場合は、`409 Conflict` を返します         |
 
-空のリポジトリの削除は、仮想リポジトリがアップストリームとして参照している場合を除き、パラメータがどちらの値でも同期的に実行され、`204` を返します。空でないリポジトリに対するカスケード削除は、仮想リポジトリがアップストリームとして参照している場合を除き、非同期です。リクエストは `202 Accepted` を返し、リポジトリには直ちにアクセスできなくなります（削除が完了するまで名前は予約されたままです）。その後、バックグラウンドでストレージを回収します。
+空のリポジトリの削除は同期的に行い、どちらの値でも `204` を返します。空でないリポジトリのカスケード削除は非同期です。リクエストは `202 Accepted` を返し、リポジトリは直ちに到達不能になります（削除が完了するまで名前は予約されたままです）。その後、バックグラウンドでストレージを回収します。
 
-2 つの値は 2 段階の保護を提供します。呼び出し元が破壊的操作の意図を宣言し、さらに `false` なら内容には手を付けません。フラグを 1 つ誤っただけでは、呼び出し元が保持するつもりだったアーティファクトを消去できません。
+2 つの値によって、2 段階の保護を設けます。呼び出し元は破壊的な操作の意図を明示し、さらに `false` では内容への変更を拒否します。
 
-このパラメータにまったく左右されない拒否条件が 1 つあります。いずれかの仮想リポジトリがアップストリームとして参照しているリポジトリは、**どちらの**値でも削除できず、リクエストは `409 Conflict` を返します。この関連付けは、このリポジトリの内容ではなく別のリポジトリの設定であるため、破壊的操作の意図の対象にはなりません。呼び出し元は、まず [`DELETE .../upstream_repositories/:id`](#repository-level-apis) を使ってアップストリームの関連付けを解除します。`409` はこの条件を示しますが、参照元の仮想リポジトリは列挙しません。ネームスペースレベルで `delete_repository` を持つ呼び出し元は、ネームスペースのアップストリーム一覧も読み取れるため、参照元を見つけられます。
+仮想リポジトリがアップストリームとして登録しているリポジトリは、**どちらの値でも** `409 Conflict` を返します。破壊的な操作の意図は、この関連付けには及びません。この関連付けは、対象リポジトリの内容ではなく、仮想リポジトリの設定であるためです。呼び出し元は、先に関連付けを削除します。`409` は条件を示しますが、参照を持つ仮想リポジトリの一覧は示しません。
 
-この説明だけでは、リポジトリにスコープされた Artifact Admin は参照元を把握できません。[ADR-021](021_authorization.md) は権限の及ぶ範囲を割り当ての範囲に限定します。リポジトリへの割り当ては、そのリポジトリの `delete_repository` を付与しますが、そのリポジトリを参照する仮想リポジトリの `read_repository` は付与しません。その呼び出し元は詳細不明の `409` を受け取り、ネームスペースレベルの Artifact Admin に参照元の特定と関連付けの解除を依頼するか、すでに `read_repository` を持っている仮想リポジトリのアップストリーム一覧を確認します。
+このパラメーターを必須にするのは、後にパラメーターを廃止したときに、明確なエラーを返せるようにするためです。GA では、論理削除が唯一の削除経路になります（[ADR-010](010_data_retention.md#release-phasing)）。そのため API はこのパラメーターを廃止し、引き続き送信するクローズドベータの利用者には、一般的な不明フィールドの `400` ではなく、**復旧手段としてゴミ箱を示す明示的な拒否**を返します。
 
-[ADR-007](007_database_schema.md#repositories) は、仮想アップストリームの中間テーブルに設定する `NO ACTION` 外部キーとして同じルールを定義しています。そのキーが最後の防御となり、呼び出し元にはこの `409` が返されます。この区別は重要です。参照アクションだけでは何も報告されないためです。削除文の実行タイミングに応じて、API レイヤーで変換する必要のある文の失敗になるか、呼び出し元には何も通知されないバックグラウンドの完全削除処理を中止します。
+#### リポジトリ単位の API {#repository-level-apis}
 
-このパラメータを必須とすることで、パラメータが削除された際に明確に失敗するようにします。GA ではソフト削除が唯一の削除パスとなるため（[ADR-010](010_data_retention.md#release-phasing)）、このパラメータは意味を失い、API から削除されます。それでもパラメータを送信するクローズドベータのインテグレーターには、一般的な不明フィールドの `400` ではなく、**復元パスとしてごみ箱を明示した拒否**を返します。この明示的な形式は、追加コストが小さい一方で、インテグレーターの移行に役立ちます。
+リポジトリ単位のルートは `/api/v1/:slug/repositories/:repository_name` の配下に置きます。リポジトリの統計とリモート接続テストは、フォーマットに依存しません。アップストリームとライフサイクルポリシーは、`:format` セグメントの配下に置きます。
 
-**統計：**
+仮想リポジトリのアップストリームは、既存のホスト型またはリモートのリポジトリを参照し、その `kind` がアップストリームの種別を定めます。アップストリーム一覧は解決順に並びます。アップストリームのルートは、1 回に 1 つの関連付けを変更します。リポジトリボディ上の全リスト形式は、代わりにリスト全体を指定し、レジストリが現在の集合に対してアトミックに適用します。
 
-- `GET /api/v1/:slug/statistics`         - 集約されたストレージとダウンロードの統計を取得
-- `GET /api/v1/:slug/:format/statistics` - 特定のフォーマットのストレージとダウンロードの統計を取得
+リポジトリ単位のライフサイクルポリシーは、ネームスペース単位のデフォルト値を上書きします。
 
-**ライフサイクルポリシー：**
+#### フォーマット固有のアーティファクト API {#format-specific-artifact-apis}
 
-- `GET    /api/v1/:slug/lifecycle_policy`                - ライフサイクルポリシーを取得
-- `PATCH  /api/v1/:slug/lifecycle_policy`                - ライフサイクルポリシーを更新
-- `GET    /api/v1/:slug/lifecycle_policy/rules`          - ライフサイクルポリシールールを取得
-- `POST   /api/v1/:slug/lifecycle_policy/rules`          - ライフサイクルポリシールールを作成
-- `GET    /api/v1/:slug/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを取得
-- `PATCH  /api/v1/:slug/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを更新
-- `DELETE /api/v1/:slug/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを削除
+各フォーマットは、`:format` セグメントの配下で独自のアーティファクト階層を公開します。コンテナファミリーではイメージとタグ、Maven と npm ではパッケージ、バージョン、ファイルです。
 
-**ネームスペースの詳細：**
+アーティファクトのルートは、リポジトリをスコープとします。ルート、動詞、ページネーションは、ホスト型リポジトリとリモートリポジトリで共通です。npm の dist-tags のように、リモートキャッシュがデータを行ごとではなく 1 つのドキュメントとして保持するルートは、リモートリポジトリでは `404` を返します。
 
-- `GET /api/v1/:slug/namespace` - このスコープが指定するネームスペースを取得
+アーティファクトのレスポンスは、リポジトリの `settings` オブジェクトと同様に、リポジトリの `kind` によってポリモーフィックになります。リモートリポジトリは、アップストリームの鮮度メタデータを、それを追跡する行に追加します。ホスト型リポジトリは、同じ構造からそのメタデータを除いたものを返します。
 
-権限の判定結果は、既存の `include_referrers` パラメータにならった `include_permissions` ブール値によるオプトインで、アクセス制御の対象リソースを含むドメインレスポンスに埋め込まれます。[ADR-021](021_authorization.md#permission-checks-for-ui-gating)が、どのレスポンスに判定結果を含めるかも含めたセマンティクスを定義し、この ADR がルートとパラメータを確定します。
+リモートリポジトリにおける動詞の意味は、アップストリームではなくキャッシュ行に対するものです。
 
-#### リポジトリレベル API {#repository-level-apis}
+- `DELETE` はキャッシュ行を削除します（アップストリームには影響しません。アーティファクトは、クライアント API を通じた次の pull 時に再取得します）。
+- `PATCH .../quarantine` は、キャッシュ行をブロック済みとしてマークします。アップストリームにアーティファクトが残っていても、クライアントからの pull は `404 Not Found` を返します。このフラグはキャッシュ行のライフサイクルに従うため、キャッシュを削除すると解除されます。永続的なブロックやダイジェスト単位のブロックは、API ではなくライフサイクル管理の関心事であるため、対象外です。
+- `GET` は、鮮度メタデータを除き、両方の種別で同一です。
 
-**仮想リポジトリ - アップストリーム：**
+### アーティファクト管理クライアント API {#artifact-management-client-apis}
 
-アップストリームは、フォーマット固有のアップストリームルールを持つフォーマットファミリーごとのテーブル（`docker` と `oci` で共有される `container_virtual_repository_upstreams`、および `maven_virtual_repository_upstreams` と `npm_virtual_repository_upstreams`）に保存されます。リモートとホスト型のリポジトリは独立したエンティティであるため、仮想リポジトリのアップストリームは既存のリポジトリへの参照です。アップストリームタイプ（ホスト型またはリモート）は、参照されるリポジトリの `kind` によって決定されます。
+クライアント API の URL は、すべてのリポジトリ種別（ホスト型、リモート、仮想）で共通です。レジストリは内部でリポジトリ種別を解決し、種別固有の動作を適用します（たとえばリモートおよび仮想リポジトリへの書き込みを拒否し、そのリポジトリ種別では提供できない読み取りを拒否します）。
 
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories`     - 仮想リポジトリのアップストリームリポジトリ（ホスト型とリモート）を、解決の優先順位順にリスト
-- `POST   /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories`     - リポジトリ（ホスト型またはリモート）を仮想リポジトリのアップストリームとして関連付け。`upstream_repository_id` を受け取る
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories/:id` - アップストリームリポジトリの関連付けを取得
-- `PATCH  /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories/:id` - 関連付けの位置を更新。`position` フィールドのみ更新可能
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/upstream_repositories/:id` - 仮想リポジトリからアップストリームの関連付けを解除
+各フォーマットは、`/:slug/:format/:repository_name/` 配下にクライアントプロトコルを実装します。コンテナファミリーは唯一の例外です（[コンテナ](#container)を参照）。
 
-これら 5 つのルートは、引き続き関連付けごとの書き込みパスであり、リポジトリの作成・更新ボディでは、[ネームスペースレベル API](#namespace-level-apis) で説明したリスト全体を扱う代替手段を利用できます。両者は表現する内容が異なります。ルートは 1 つの関連付けを変更し、ボディは最終状態を指定します。レジストリはその最終状態と現在の関連付けの集合を 1 つのトランザクションで照合し、反映します。1 つのフォームでリスト全体を編集する呼び出し元はボディを使用し、アップストリームを 1 つ追加または削除する呼び出し元はルートを使用します。
+#### コンテナ {#container}
 
-**リモートリポジトリ - 接続テスト：**
+[OCI Distribution Spec v1.1](https://github.com/opencontainers/distribution-spec/blob/main/spec.md)を実装します。認証：[Bearer トークン](https://docs.docker.com/reference/api/registry/auth/)。
 
-- `POST /api/v1/:slug/repositories/:repository_name/test` - 構成されたリモートレジストリへの接続をテスト
+コンテナのルートは `/v2/:slug/container/:repository_name/:image_name/` 配下に置きます。`container` というリテラルのパスセグメントは、プロトコル単位で固定です。1 組の `/v2` エンドポイントが、`docker` と `oci` の両フォーマットのリポジトリに対応します。これは固定のリテラルであり、リポジトリの `format` 値ではありません（[管理 API](#management-apis)を参照）。
 
-**統計：**
+**注意：** OCI が義務付ける `GET /v2/` エンドポイントには `/:slug` プレフィックスがないため、[Cells](../../cells/) ルーターはそのパスから Cell を選べません。これは、OCI 準拠の `200 OK` または `401 Unauthorized` を返す、状態を持たないバージョンプローブであるため、どの Cell でも処理できます。それ以外のすべてのクライアントリクエストは `/:slug` セグメントを持ち、Cells ルーターはそれを使って対象の Cell を選びます。クライアントは [`glab`](https://gitlab.com/gitlab-org/cli)を通じて認証情報を取得し（[ADR-020](020_authentication_flow.md)を参照）、最初のリクエストから Bearer トークンを送るため、レジストリは OCI の `401 WWW-Authenticate` チャレンジを使用しません。
 
-- `GET    /api/v1/:slug/repositories/:repository_name/statistics`  - リポジトリのストレージとダウンロードの統計を取得
+#### Maven {#maven}
 
-**ライフサイクルポリシー：**
+[Maven Repository Layout](https://maven.apache.org/repositories/layout.html)を実装します。認証：Basic 認証。
 
-リポジトリレベルのライフサイクルポリシーは、ネームスペースレベルのデフォルトを上書きするフォーマットファミリーごとのテーブル（`container_repository_lifecycle_policy_settings` など）を使用します。
+#### NPM {#npm}
 
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/lifecycle_policy`                - リポジトリのライフサイクルポリシーを取得
-- `PATCH  /api/v1/:slug/repositories/:repository_name/:format/lifecycle_policy`                - リポジトリのライフサイクルポリシーを更新
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/lifecycle_policy/rules`          - リポジトリのライフサイクルポリシールールを取得
-- `POST   /api/v1/:slug/repositories/:repository_name/:format/lifecycle_policy/rules`          - リポジトリのライフサイクルポリシールールを作成
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを取得
-- `PATCH  /api/v1/:slug/repositories/:repository_name/:format/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを更新
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを削除
+[NPM Registry API](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md)を実装します。認証：Bearer トークン。
 
-#### フォーマット固有のアーティファクト API
+#### Go {#go}
 
-すべてのアーティファクトエンドポイントはリポジトリにスコープされ、ホスト型とリモートの両方のリポジトリに一様に適用されます。ルート、動詞、ページネーションは両方の種類で同一です。リモートリポジトリは、ホスト型スキーマをミラーリングする階層テーブル（`*_remote_images`、`*_remote_packages`、`*_remote_versions`、`*_remote_files` など）にアーティファクトをキャッシュします（[ADR-007](007_database_schema.md) を参照）。
+読み取りに [GOPROXY プロトコル](https://go.dev/ref/mod#goproxy-protocol)を実装し、さらにアップロードのルートを設けます。このプロトコルには公開操作がないためです。
 
-レスポンスボディはリポジトリの `kind` によってポリモーフィックです。これは [リポジトリ詳細の `settings` オブジェクト](#namespace-level-apis) で使用されるのと同じ慣例です。`kind` が `remote` の場合、鮮度追跡された行（タグ、パッケージファイル、メタデータファイル）にマッピングされる各エントリは、`upstream_checked_at` と `upstream_etag` を公開するネストされた `cache` オブジェクトを持ちます。コンテナのマニフェストと blob はダイジェストによってコンテンツアドレス指定され、行ごとの鮮度を持たないため、`cache` ブロックを持ちません。リポジトリレベルのキャッシュ構成（`cache_validity_hours`、`metadata_cache_validity_hours`）はリポジトリ詳細の `settings` オブジェクトに存在し、アーティファクトごとには反映されません。ホスト型リポジトリに対するリクエストは、`cache` オブジェクト _なし_ で同じ形状を返します。
+### GitLab API {#gitlab-api}
 
-リモートリポジトリ上の動詞のセマンティクスは、アップストリームではなくキャッシュされた行を記述します。
+GitLab API は、最初は Rails モノリスである、プラットフォームの呼び出し元にサービスを提供します。リクエストは呼び出すサービスを認証し、エンドユーザーを認証することはありません。ユーザーのチェックは呼び出しを起動するプラットフォームのフローが担い、ユーザー向けトラフィックは管理 API とクライアント API を使用します（[ADR-014](014_frontend_to_artifact_registry.md)、[ADR-021](021_authorization.md)）。「GitLab」は呼び出し元を表します。つまり GitLab プラットフォームのデプロイメントであり、ハイブリッドデプロイメントモデルではお客様がホストするモノリスです。そのため、この API 領域はインターネットに面しますが、お客様に直接提供するものではありません。
 
-- `DELETE` はキャッシュされた行を退避します（アップストリームへの影響なし。アーティファクトはクライアント API を通じた次の pull で再取得されます）。
-- `PATCH .../quarantine` はキャッシュされた行をブロック済みとしてフラグします。アップストリームにまだアーティファクトがあっても、クライアントの pull は `404 Not Found` を返します。フラグはキャッシュされた行のライフサイクルに紐付けられ、退避するとクリアされます。永続的またはダイジェストレベルのブロックは意図的にスコープ外です（API ではなくライフサイクル管理の関心事）。
-- `GET` は、上記の `cache` サブオブジェクトを除いて両方の種類で同一です。
+Self-Managed または Dedicated のモノリスが SaaS レジストリを呼び出すハイブリッドデプロイメントモデルも含め、この API 領域に対して呼び出し元を認証する方法は、[ADR-020](020_authentication_flow.md)と [ADR-021](021_authorization.md)で扱います。
 
-**コンテナファミリー固有 - イメージ：**
+#### ネームスペースのライフサイクル {#namespace-lifecycle}
 
-コンテナファミリーのリポジトリでは、アーティファクトを「イメージ」と呼びます。これらのルートの `:format` セグメントは、リポジトリのフォーマットである `docker` または `oci` です：
+これらのエンドポイントにはスラッグが不要です。プロビジョニングはスラッグが取得される前に実行され、解決では UUID をスラッグに変換し、サービス条件はスラッグの状態に関係なく機能する必要があるためです。ネームスペースを、所有者アンカー（[ADR-001](001_organizations_as_anchor_point.md)）または UUID（[ADR-022](022_namespace_decoupling.md)）で参照します。
 
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/images`                      - リポジトリ内のイメージをリスト
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/images/:image_id`            - イメージの詳細を取得
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/manifests`  - 所定のイメージのマニフェストをリスト
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/blobs`      - 所定のイメージの blob をリスト
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/statistics` - イメージのストレージ、使用量、ダウンロードの統計を取得
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/images/:image_id`            - イメージを削除（ソフトまたはハード削除）
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/images`                      - イメージを一括削除
-- `PATCH  /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/quarantine` - 所定のイメージを隔離
+プラットフォームは所有者アンカーに対してネームスペースをプロビジョニングし、返されたネームスペース UUID を永続化します。プロビジョニングは、アンカーに対して冪等です。プラットフォームは、UUID によってネームスペースを所有者アンカー、スラッグ、ステータスに解決し、スラッグとステータスをキャッシュします（[ADR-022](022_namespace_decoupling.md)、[ADR-014](014_frontend_to_artifact_registry.md)）。[ADR-022](022_namespace_decoupling.md#namespace-lifecycle)の可逆的なサービス条件は、アクションごとに 1 つのエンドポイントを通じて適用、解除します。
 
-**コンテナファミリー固有 - イメージタグ：**
+スラッグが不要なルートは、[Cells](../../cells/) ルーティングを弱めません。ネームスペースの作成は、まだルーティング対象が存在しないため、キーでルーティングできません。Cell 内のモノリスは、その Cell のローカルレジストリを直接呼び出し、ネームスペースはその Cell に配置されます。ハイブリッドの呼び出し元には Cell がないため、その呼び出しはエッジに入り、エッジが対象の Cell を決定します。どちらの経路もネームスペース UUID をルーティングキーとして登録し、スラッグを取得した時点で、それが第 2 のキーになります。それ以外のすべての GitLab API エンドポイントは、その UUID をキーとし、呼び出し元の場所に関係なく、スラッグをプレフィックスに持つリクエストと同じトポロジー機構を通じてルーティングします。UUID をキーとするルーティングが不十分だと判明した場合は、GitLab API リクエストに所有者アンカーをルーティングヒントとして埋め込むこともできます。
 
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/tags`                 - 所定のイメージのタグをリスト
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/tags/:tag/statistics` - タグのストレージ、使用量、ダウンロードの統計を取得
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/tags/:tag`            - イメージタグを削除
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/images/:image_id/tags`                 - 一連のイメージタグを削除
+#### リソース検証 {#resource-verifications}
 
-**Maven/NPM 固有 - パッケージ：**
+プラットフォームの認可フローは、一括ロール付与の対象リソースがネームスペースに属することを確認しなければなりません。ネームスペースを対象とする付与には、レジストリの呼び出しは不要です。プラットフォームが、永続化したマッピングに基づいて所有権を検証します。リポジトリを対象とする付与は、ネームスペース UUID をスコープとするバッチ検証を使用します。すべての ID がネームスペースに属する場合にのみ成功し、それ以外の場合は、失敗した ID だけを、その理由は示さずに列挙します。そのため、どこにも存在しない ID と、別のネームスペースが所有する ID は同じように見えます。
 
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/packages`                         - リポジトリ内のパッケージをリスト
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/packages/:package_id`             - パッケージの詳細を取得
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/packages/:package_id/statistics`  - パッケージのストレージ、使用量、ダウンロードの統計を取得
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/packages/:package_id`             - パッケージを削除（ソフトまたはハード削除）
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/packages`                         - パッケージを一括削除
-- `PATCH  /api/v1/:slug/repositories/:repository_name/:format/packages/:package_id/quarantine`  - 所定のパッケージを隔離
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/packages/:package_id/versions`    - 所定のパッケージのバージョンをリスト
+レジストリは組織のデータを返しません。呼び出し元はネームスペースのスコープを渡し、その所有者をすでに把握しています。将来の各割り当て可能なリソース種別も、同じパターンである `POST /api/gitlab/v1/namespaces/:uuid/<resource_type>/verifications` に従います。
 
-**Maven/NPM 固有 - パッケージバージョン：**
+GitLab API は、提供先のプラットフォームバージョン間で後方互換性を保たなければなりません。ハイブリッドデプロイメントモデルでは、Self-Managed のモノリスは SaaS レジストリより遅れる場合があります（[ADR-022](022_namespace_decoupling.md)）。
 
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/versions/:version_id`            - バージョンの詳細を取得
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/versions/:version_id/statistics` - パッケージバージョンのストレージ、使用量、ダウンロードの統計を取得
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/versions/:version_id`            - バージョンを削除（ソフトまたはハード削除）
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/versions`                        - バージョンを一括削除
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/versions/:version_id/files`      - 所定のバージョンのファイルをリスト
+## 帰結 {#consequences}
 
-**Maven/NPM 固有 - パッケージファイル：**
+### ポジティブ {#positive}
 
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/files/:file_id`          - ファイルの詳細を取得
-- `GET    /api/v1/:slug/repositories/:repository_name/:format/files/:file_id/download` - ファイルをダウンロード
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/files/:file_id`          - ファイルを削除（ソフトまたはハード削除）
-- `DELETE /api/v1/:slug/repositories/:repository_name/:format/files`                   - ファイルを一括削除
+- **明確な関心の分離**：3 つの API 領域には異なる目的、認証メカニズム、対象利用者があり、混乱を減らして独立した進化を可能にします
+- **永続的に安定した、人間が読める URL**：スラッグとリポジトリ名はどちらも不変であるため、URL パスのすべてのセグメントは人間が読めて、変わることがありません。クライアント向けのどの URL にも数値 ID は現れません
+- **統合されたハイブリッド一覧**：単一のエンドポイントが、すべてのフォーマットのすべてのリポジトリ（ホスト型、仮想、リモート）をフィルタリング付きで一覧表示し、プラットフォームエンジニアにフォーマット横断のガバナンスと監査可能性のビューを提供します
+- **独立したエンティティとしてのリモートリポジトリ**：リモートリポジトリは個別に管理でき、複数の仮想リポジトリで再利用でき、独自のライフサイクルを持ち、業界の慣行（JFrog Artifactory、Sonatype Nexus、Google Cloud AR）に一致します
+- **ホスト型とリモートで共通のアーティファクト構造**：リモートリポジトリは、ホスト型のアーティファクト階層、ルート、動詞を再利用するため、API クライアントと UI は両方の種別を同じ方法で扱えます
+- **簡素化されたアップストリームモデル**：仮想リポジトリのアップストリームは、種別ごとに別々のエンドポイント階層を使うのではなく、ID で既存のリポジトリを参照し、API の領域と実装の複雑さを抑えます
+- **ADR の外での API の進化**：ルートとペイロードは OpenAPI 仕様とフォーマットごとの仕様に置くため、ここで定めるルールを破らない限り、新しいルートやフィールドのために ADR を変更する必要はありません
+- **将来の拡張性**：この設計は、アーキテクチャを変更せずに追加のパッケージフォーマット（PyPI、NuGet、Helm など）に対応できます。管理 API とクライアント API は、それぞれの要件に基づいて独立して進化できます
 
-**NPM 固有 - 配布タグ：**
+### ネガティブ {#negative}
 
-- `GET    /api/v1/:slug/repositories/:repository_name/npm/packages/:package_id/tags` - 所定のパッケージのタグをリスト
-- `GET    /api/v1/:slug/repositories/:repository_name/npm/tags/:tag_id`              - タグの詳細を取得
-- `GET    /api/v1/:slug/repositories/:repository_name/npm/tags/:tag_id/statistics`   - タグのストレージ、使用量、ダウンロードの統計を取得
-- `DELETE /api/v1/:slug/repositories/:repository_name/npm/tags/:tag_id`              - タグを削除
-
-### アーティファクト管理クライアント API
-
-クライアント API の URL は、すべてのリポジトリタイプ（ホスト型、リモート、仮想）で同じです。レジストリはリポジトリの種類を内部的に解決し、タイプ固有の挙動を適用します（例：リモートおよび仮想リポジトリへの書き込みを拒否する、現時点でリポジトリの種類が提供できない読み取りを拒否する）。
-
-#### Container
-
-[OCI Distribution Spec v1.1](https://github.com/opencontainers/distribution-spec/blob/main/spec.md) を実装します。認証：[Bearer トークン](https://docs.docker.com/reference/api/registry/auth/)。
-
-以下のリテラルの `container` パスセグメントはプロトコルレベルで固定されています。1 セットの `/v2` エンドポイントが、`docker` と `oci` の両フォーマットのリポジトリを提供します。これはルーターが挿入するリテラルであり、リポジトリの `format` 値ではありません（[管理 API](#management-apis) を参照）。
-
-- `GET    /v2/`                                                                                   - API バージョンとレジストリ実装を確認（OCI 必須、スラッグにスコープされない）
-- `GET    /v2/:slug/container/:repository_name/:image_name/manifests/:reference`                  - マニフェストを取得（reference はタグまたはダイジェスト）
-- `HEAD   /v2/:slug/container/:repository_name/:image_name/manifests/:reference`                  - マニフェストの存在を確認
-- `PUT    /v2/:slug/container/:repository_name/:image_name/manifests/:reference`                  - マニフェストをアップロード（リモートおよび仮想リポジトリでは利用不可）
-- `DELETE /v2/:slug/container/:repository_name/:image_name/manifests/:reference`                  - マニフェストを削除（ダイジェストまたはタグ参照による、リモートおよび仮想リポジトリでは利用不可）
-- `DELETE /v2/:slug/container/:repository_name/:image_name/manifests/:tag`                        - 特定のタグを削除（リモートおよび仮想リポジトリでは利用不可）
-- `GET    /v2/:slug/container/:repository_name/:image_name/blobs/:digest`                         - blob をダウンロード
-- `HEAD   /v2/:slug/container/:repository_name/:image_name/blobs/:digest`                         - blob の存在を確認
-- `DELETE /v2/:slug/container/:repository_name/:image_name/blobs/:digest`                         - blob を削除（リモートおよび仮想リポジトリでは利用不可）
-- `POST   /v2/:slug/container/:repository_name/:image_name/blobs/uploads/`                        - blob アップロードを開始（リモートおよび仮想リポジトリでは利用不可）
-- `PATCH  /v2/:slug/container/:repository_name/:image_name/blobs/uploads/:uuid`                   - blob チャンクをアップロード（リモートおよび仮想リポジトリでは利用不可）
-- `GET    /v2/:slug/container/:repository_name/:image_name/blobs/uploads/:uuid`                   - blob アップロードのステータスを取得（再開可能なアップロード用、リモートおよび仮想リポジトリでは利用不可）
-- `PUT    /v2/:slug/container/:repository_name/:image_name/blobs/uploads/:uuid?digest=:digest`    - blob アップロードを完了（リモートおよび仮想リポジトリでは利用不可）
-- `DELETE /v2/:slug/container/:repository_name/:image_name/blobs/uploads/:uuid`                   - blob アップロードをキャンセル（リモートおよび仮想リポジトリでは利用不可）
-- `POST   /v2/:slug/container/:repository_name/:image_name/blobs/uploads/?digest=:digest`         - 単一リクエストで完全な blob をアップロード（リモートおよび仮想リポジトリでは利用不可）
-- `GET    /v2/:slug/container/:repository_name/:image_name/tags/list`                             - リポジトリ内のすべてのタグをリスト（MVP の仮想リポジトリでは利用不可）
-- `GET    /v2/:slug/container/:repository_name/:image_name/tags/list?n=100&last=tag_name`         - ページネーションされたタグのリスト（MVP の仮想リポジトリでは利用不可）
-- `GET    /v2/:slug/container/:repository_name/:image_name/referrers/:digest`                     - マニフェストを参照するアーティファクト/アテステーションをリスト（MVP の仮想リポジトリでは利用不可）
-- `GET    /v2/:slug/container/:repository_name/:image_name/referrers/:digest?artifactType=<type>` - アーティファクトタイプで referrer をフィルタリング（MVP の仮想リポジトリでは利用不可）
-
-**注：** `tags/list` と `referrers/:digest` が利用できないのは、**仮想**コンテナリポジトリのみです。リモートリポジトリでは、どちらもアップストリームへのライブプロキシとして提供されます。仮想リポジトリは、書き込み動詞に対する `405` ではなく、どちらにも `404 NAME_UNKNOWN` で応答します。書き込みは存在するエンドポイントを対象とするものの、そのメソッドが利用できないのに対し、仮想リストには、現在の解決モデルで生成できる単一のコレクションが存在しないためです。`referrers/:digest` では、`404` によって **一部の** OCI クライアントが referrer タグスキーマへフォールバックすることも可能になります。これは、他のタグと同様に仮想リポジトリのアップストリーム全体で解決されるため、referrer の検出は完全に失敗せず、機能を落とした形で継続できます。一方、空のリストを含む `200` は、どのアップストリームからも根拠が得られていないのに、referrer が存在しないとクライアントに伝えてしまいます。`tags/list` には、どのコードでも同等のフォールバックはありません。
-
-どのクライアントがフォールバックするかはエラーコードによって決まり、その分岐点が `NAME_UNKNOWN` です。`crane` はエラーコードをまったく読み取りません。`404`、`400`、`406`、または `Content-Type` が OCI index ではない `200` でフォールバックし、それ以外のステータスはエラーとして返します。`oras` は本文を解析し、コードが `NAME_UNKNOWN` の場合はエラーを返します。同じ `404` でも他のコードなら、タグスキーマへ移行します。Notation は `oras-go` を介してその挙動を継承します。これは `go-containerregistry` v0.20.6、`oras-go` v2.5.0 と v2.6.0、および `oras-go` v2.5.0 に固定された `notation-go` v1.3.2 を対象に測定しました。
-
-OCI のエラーセットには、「このリポジトリは存在するが、リストできるコレクションがない」ことを示すコードがありません。そのため、ここでは `NAME_UNKNOWN` を積極的に選んだのではなく再利用しており、2 つのコストが伴います。検出ツールはこれを「そのようなリポジトリはない」と解釈するため、同じ URL への pull は成功する一方、`crane ls`、`skopeo list-tags`、レジストリ UI は仮想リポジトリが存在しないと報告します。また、空の `200` より `404` を優先する動機となるフォールバックは、まさにコードを読み取るクライアントでは利用できません。
-
-これはアーキテクチャ上の制約ではなく、MVP の制限です。アップストリーム全体から単一のパスを解決する方法は定義されていますが、独立したカーソルを持つアップストリームをまたいでページネーションされたコレクションをマージする方法は定義されていません。アップストリーム横断のタグ一覧と referrer は [artifact-registry#264](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/264) で追跡されます。そのスコープは、暫定的に含まれるコードではなく、`404` を置き換えるマージです。コード自体は [artifact-registry#1019](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/1019) で追跡されます。`NAME_UNKNOWN` 以外のコードを含む `404` なら、`crane` だけでなく `oras` と Notation でもタグスキーマへのフォールバックが機能し続けます。
-
-**注：** OCI 必須の `GET /v2/` エンドポイントは `/:slug` プレフィックスを含まないため、[Cells](../../cells/) ルーターはパスだけからどの Cell がリクエストを処理すべきかを判断できません。`GET /v2/` はステートレスなバージョンプローブ（OCI 準拠を示す `200 OK`、そうでなければ `401 Unauthorized`）であるため、どの Cell でも提供できます。スラッグやルーティングコンテキストは不要です。他のすべてのクライアントリクエストは `/:slug` セグメントを持ち、Cells ルーターがそれを使用してターゲット Cell を判断します。クライアントは [`glab`](https://gitlab.com/gitlab-org/cli) を介してクライアント側で認証情報を取得し（[ADR-020](020_authentication_flow.md) を参照）、最初から Bearer トークンを提示するため、OCI の `401 WWW-Authenticate` リダイレクトチャレンジは使用されません。`GET /v2/_catalog`（Docker Registry HTTP API V2）は OCI Distribution Spec の一部ではなく、実装されません。
-
-##### クライアント設定例
-
-スラッグ `acme-engineering` で、リポジトリ名 `my-repo`、イメージ名 `my-app`、タグ `latest` のコンテナファミリーのリポジトリからイメージを pull する場合：
-
-```shell
-docker pull artifact-registry.gitlab.com/acme-engineering/container/my-repo/my-app:latest
-```
-
-#### Maven
-
-[Maven Repository Layout](https://maven.apache.org/repositories/layout.html) を実装します。認証：Basic 認証。カスタムヘッダー認証（元の GitLab Maven パッケージレジストリからのレガシーメカニズム）はサポートされません。Basic 認証は Maven レジストリ全体で普遍的な標準であり、すべての主要なビルドツール（`mvn`、`gradle`、`sbt`）でサポートされています。特に `sbt` は Basic 認証のみをサポートします。
-
-- `GET /:slug/maven/:repository_name/*path/:file_name` - Maven のホスト型、リモート、仮想リポジトリからパッケージファイルをダウンロード
-- `PUT /:slug/maven/:repository_name/*path/:file_name` - Maven のホスト型リポジトリにパッケージファイルをアップロード（リモートおよび仮想リポジトリでは利用不可）
-
-##### クライアント設定例
-
-スラッグ `acme-engineering` の `my-repo` という名前の Maven リポジトリのリポジトリ URL。`settings.xml`、`build.gradle`、または `build.sbt` で使用します：
-
-```plaintext
-https://artifact-registry.gitlab.com/acme-engineering/maven/my-repo
-```
-
-#### NPM
-
-[NPM Registry API](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md) を実装します。認証：Bearer トークン。
-
-- `GET    /:slug/npm/:repository_name/:package_name`                                 - パッケージメタデータを取得
-- `PUT    /:slug/npm/:repository_name/:package_name`                                 - パッケージを公開（リモートおよび仮想リポジトリでは利用不可）
-- `PUT    /:slug/npm/:repository_name/:package_name/-rev/:rev`                       - 単一バージョンの公開取り消し、ステップ 1：そのバージョンを削除したパッケージドキュメントに置き換える（リモートおよび仮想リポジトリでは利用不可）
-- `DELETE /:slug/npm/:repository_name/:package_name/-/:file_name/-rev/:rev`          - 単一バージョンの公開取り消し、ステップ 2：バージョンの tarball を削除（リモートおよび仮想リポジトリでは利用不可）
-- `DELETE /:slug/npm/:repository_name/:package_name/-rev/:rev`                       - パッケージ全体の公開取り消し（`npm unpublish <pkg> --force`、リモートおよび仮想リポジトリでは利用不可）
-- `GET    /:slug/npm/:repository_name/:package_name/-/*file_name`                    - パッケージファイルをダウンロード
-- `GET    /:slug/npm/:repository_name/-/package/:package_name/dist-tags`             - パッケージの dist-tags をリスト
-- `PUT    /:slug/npm/:repository_name/-/package/:package_name/dist-tags/:tag`        - dist-tag を作成または更新（リモートおよび仮想リポジトリでは利用不可）
-- `DELETE /:slug/npm/:repository_name/-/package/:package_name/dist-tags/:tag`        - dist-tag を削除（リモートおよび仮想リポジトリでは利用不可）
-- `POST   /:slug/npm/:repository_name/-/npm/v1/security/audits/quick`                - クイックセキュリティ監査
-- `POST   /:slug/npm/:repository_name/-/npm/v1/security/advisories/bulk`             - 一括セキュリティアドバイザリ
-
-**注意:** ダウンロードルートの `*file_name` は 1 つ以上のパスセグメントを表し、上記の Maven ルートと同じスプラット記法です。
-ホスト型リポジトリは常に単一セグメントの `{plain_name}-{version}.tgz` を提供します。
-リモートリポジトリは、上流の `dist.tarball` のうち、その `/{package}/-/` の後にある部分をそのまま提供します。
-ファイル名内でスコープを繰り返すレジストリでは、この部分は複数のセグメントになります。
-提供するドキュメントが指すのはこの名前であり、それによってクライアントはこのレジストリに再びアクセスします。
-このようなマーカーがない `dist.tarball` では最後のパスセグメントにフォールバックしますが、そのような上流をプロキシすることはできません。
-パッケージメタデータと dist-tags は提供されますが、tarball の読み取りは `404` を返します。
-仮想リポジトリは、解決先の上流が持つ名前を提供します。
-
-キャプチャした値を検証するルールは 2 つあり、異なるコードを返します。
-各要素は安全なパスセグメントでなければなりません。そのため、空の要素、`.` または `..`、パス区切り文字、ASCII 制御バイトは、
-すべてのリポジトリ種別で `400 file_name_invalid` を返します。
-続いて、最後の要素は、リクエストされたパッケージ名からスコープを除いた名前と、有効なセマンティックバージョンによる `{plain_name}-{version}.tgz` に一致しなければなりません。
-それより前の要素では安全性のみをチェックするため、このルールは最後の要素だけに適用されます。
-安全であっても形式が異なる名前は、ホスト型リポジトリでは `400` を返し、
-リモートまたは仮想リポジトリでは、キャッシュされたファイルのキーとなるバージョンを導出できないため `404` を返します。
-単一の `@scope%2Fname` の位置以外にあるエンコードされた区切り文字は、両ルールより前の認可処理で拒否され、情報を隠すための `404` を返します。
-どちらのルールが実行されるよりも前にルーターが `%2F` を実際の区切り文字にデコードするため、どちらのルールも、
-上流の名前自体に含まれていた区切り文字と区別できません。
-
-単一セグメントのパターンと並べて複数セグメントのパターンを登録すると、ディスパッチャーと認可文法が異なる区切り方をするリクエスト群に 1 行が加わります。
-これは、ディスパッチャーはエスケープされたパスに対してマッチングし、認可文法はデコードされたパスを読むためです。
-この行にはパーセントエンコーディングが含まれないため、エンコードされた区切り文字のガードではなく、メソッドテーブルで拒否して安全側に倒します
-（[artifact-registry#950](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/950)）。
-
-上記の公開取り消しルートは `:file_name` を維持します。このステップは、このレジストリ自体が公開した tarball を削除するためです。
-
-##### クライアント設定例
-
-スラッグ `acme-engineering` の `my-repo` という名前の NPM リポジトリのレジストリ URL。`.npmrc` で使用します：
-
-```plaintext
-https://artifact-registry.gitlab.com/acme-engineering/npm/my-repo/
-```
-
-### GitLab API
-
-GitLab API は、最初は Rails モノリスであるプラットフォーム呼び出し元にサービスを提供します。リクエストは呼び出すサービスを認証し、エンドユーザーを認証することはありません。ユーザーのチェックは呼び出しをトリガーするプラットフォームフローに属し、ユーザー向けトラフィックは代わりに管理 API とクライアント API を使用します（[ADR-014](014_frontend_to_artifact_registry.md)、[ADR-021](021_authorization.md)）。「GitLab」は呼び出し元の名前です。つまり GitLab プラットフォームデプロイメントであり、ハイブリッドデプロイメントモデルではお客様がホストするモノリスです。そのためこのサーフェスはインターネット向けですが、お客様向けではありません。
-
-ハイブリッドデプロイメントモデル（SaaS レジストリに対する Self-Managed または Dedicated モノリス）を含め、このサーフェスで呼び出し元を認証する方法は、[ADR-020](020_authentication_flow.md) と [ADR-021](021_authorization.md) で扱います（[artifact-registry#255](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/255)）。
-
-#### ネームスペースのライフサイクル
-
-これらのエンドポイントにはスラッグが不要です。プロビジョニングはスラッグが取得される前に実行され、解決は UUID をスラッグに変換し、サービス条件はスラッグの状態にかかわらず機能する必要があるためです。ネームスペースを所有者アンカー（[ADR-001](001_organizations_as_anchor_point.md)）または UUID（[ADR-022](022_namespace_decoupling.md)）で参照します。
-
-- `POST /api/gitlab/v1/namespaces` - 所有者アンカーのネームスペースをプロビジョニングします（[gitlab#603023](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)）。アンカーに対して冪等であり、呼び出し元が永続化するネームスペース UUID を返します（[ADR-022](022_namespace_decoupling.md)）。
-- `GET  /api/gitlab/v1/namespaces/:uuid` - UUID でネームスペースを解決します。所有者アンカー、スラッグ、ステータスを返します。呼び出し元はスラッグとステータスをキャッシュします（[ADR-022](022_namespace_decoupling.md)、[ADR-014](014_frontend_to_artifact_registry.md)）。
-- `POST /api/gitlab/v1/namespaces/:uuid/<action>` - 可逆的なサービス条件を適用または解除します（[ADR-007](007_database_schema.md#namespaces)）。アクションごとに 1 つのエンドポイントを設け、`<action>` は `block`、`unblock`、`disable`、`enable`、`suspend`、`unsuspend` のいずれかです。
-
-スラッグが不要なルートは [Cells](../../cells/) ルーティングを弱めません。ネームスペースの作成はキーでルーティングできません。まだルーティングの対象となるものが存在しないためです。Cell に存在するモノリスはその Cell ローカルのレジストリを直接呼び出し、ネームスペースはその Cell に配置されます。ハイブリッドの呼び出し元には Cell がないため、その呼び出しはエッジに入り、エッジが対象 Cell を決定します。どちらのパスもネームスペース UUID をルーティングキーとして登録します（スラッグの取得時には第 2 のキーとして追加されます）。他のすべての GitLab API エンドポイントはその UUID をキーとし、呼び出し元の場所にかかわらず、スラッグプレフィックス付きリクエストと同じトポロジー機構を経由してルーティングされます。UUID をキーにしたルーティングが十分でないと判明した場合、[Container Registry](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/14825) で以前に検討されたように、GitLab API リクエストは所有者アンカーをルーティングヒントとして追加で埋め込むこともできます。これは潜在的な経路であり、現時点の要件ではありません。
-
-#### リソース検証
-
-プラットフォームの認可フローは、一括ロール付与の対象リソースがネームスペースに属することを確認しなければなりません（[artifact-registry#181](https://gitlab.com/gitlab-org/ops/artifact-registry/-/issues/181)）。ネームスペース対象の付与にはレジストリ呼び出しは不要です。プラットフォームが永続化されたマッピングに対して所有権を検証します（[gitlab#603023](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)）。リポジトリ対象の付与は、ネームスペース UUID にスコープされ、単一の `HASH(namespace_id)` パーティションから提供されるバッチ検証を使用します。
-
-- `POST /api/gitlab/v1/namespaces/:uuid/repositories/verifications` - 指定されたリポジトリ ID がネームスペース配下に存在することを一括検証します。すべての ID が属する場合は本文なしの `204` を返します。ID が不明、またはネームスペース外の場合は、失敗した ID だけを `error.details.repository_ids` に列挙した `422` を返します（重複を除き、送信順を維持）。ただし ID が失敗した理由は示さず、どこにも存在しない ID と別のネームスペースが所有する ID は同じ応答になります。不正なバッチ（空、サイズ超過、または非正規形式の ID）には `400` を返します。
-
-レジストリは Organization データを返しません。呼び出し元はネームスペーススコープを提供し、その所有者をすでに把握しています。将来の割り当て可能なリソースタイプは、同じタイプ別のパターン（`POST /api/gitlab/v1/namespaces/:uuid/<resource_type>/verifications`）に従います。
-
-GitLab API は、提供先のプラットフォームバージョン間で後方互換性を維持しなければなりません。ハイブリッドデプロイメントモデルでは、Self-Managed モノリスは SaaS レジストリより遅れることがあります（[ADR-022](022_namespace_decoupling.md)）。
-
-## 帰結
-
-### ポジティブ
-
-- **明確な関心の分離**：3 つの API サーフェスは明確な目的、認証メカニズム、ターゲットオーディエンスを持ち、混乱を減らし、独立した進化を可能にします
-- **リポジトリにアンカーされた URL パターン**：すべてのアーティファクト操作はリポジトリにスコープされ、明確なルーティングコンテキストを提供し、ホスト型とリモートの両方のリポジトリに対して同じ URL 構造を可能にします
-- **永続的に安定した、人間が読める URL**：スラッグとリポジトリ名はどちらも不変であるため、すべての URL パスセグメントは人間が読めて決して変わりません。クライアント向けのどの URL にも数値 ID は現れません
-- **統合されたハイブリッドリスト**：単一のエンドポイントが、すべてのフォーマットにわたるすべてのリポジトリ（ホスト型、仮想、リモート）をフィルタリング付きでリストし、プラットフォームエンジニア向けのフォーマット横断のガバナンスと監査性のビューを可能にします
-- **独立したエンティティとしてのリモートリポジトリ**：リモートリポジトリは個別に管理可能で、複数の仮想リポジトリにまたがって再利用でき、独自のライフサイクルを持ち、業界の慣行（JFrog Artifactory、Sonatype Nexus、Google Cloud AR）に一致します
-- **一様なホスト型とリモートのアーティファクト構造**：リモートリポジトリはホスト型リポジトリと同じアーティファクト階層（images、packages、versions、files）を使用します。同じルートが両方の種類を提供し、それを追跡する行にネストされた `cache` サブオブジェクトが鮮度メタデータ（`upstream_checked_at`、`upstream_etag`）を表面化します。キャッシュの変更はホスト型リポジトリと同じ動詞を再利用するため（`DELETE` = 退避、`PATCH .../quarantine` = ブロック）、リモートリポジトリに対して API の表面は拡大しません。レスポンスボディのみがポリモーフィックです
-- **簡素化されたアップストリームモデル**：仮想リポジトリのアップストリームは、アップストリームタイプごとに別個のエンドポイント階層を使用するのではなく、ID で既存のリポジトリを参照し、API の表面と実装の複雑さを減らします
-- **ADR 外でのスキーマ進化**：リクエストおよびレスポンスのペイロードは Artifact Registry コードベースの OpenAPI 仕様に存在するため、ペイロードの変更で ADR を更新する必要はありません
-- **将来の拡張性**：この設計パターンは、アーキテクチャの変更なしに追加のパッケージフォーマット（PyPI、NuGet、Helm など）に容易に対応します。管理 API とクライアント API は、それぞれの要件に基づいて独立して進化できます
-
-### ネガティブ
-
-- **リポジトリ名の不変性が柔軟性を制限する**：タイプミスや組織的なリネームには、単にリネームするのではなく、新しいリポジトリを作成してアーティファクトを移行することが必要になります
-- **グローバルな名前の一意性が制限的**：`my-app` のような名前はフォーマットをまたいで再利用できません（例：`my-app` という名前の Docker と Maven の両方のリポジトリ）。これは `my-app-docker` や `my-app-maven` のような命名規則につながる可能性があります。この制約は後で破壊的な変更なしに緩和できます
-- **フォーマット固有の API 表面**：フォーマットごとにエンドポイントを専用化することは、フォーマットをまたいだ一部の重複と、管理タスクに対する統合されたフォーマット横断の操作がないことを意味します
-- **仮想コンテナリポジトリが検出ツールに存在しないものとして報告される**：そこでは `tags/list` と `referrers/:digest` が `404 NAME_UNKNOWN` を返し、同じ URL への pull は成功する一方、`crane ls`、`skopeo list-tags`、レジストリ UI は「そのようなリポジトリはない」と解釈します。[コンテナルートの注記](#container)に、その理由とコードによって referrer のフォールバックに生じるコストを記載しています
-
-## 参考文献
+- **リポジトリ名の不変性が柔軟性を制限する**：タイプミスや組織の名称変更には、単なる名前変更ではなく、新しいリポジトリの作成とアーティファクトの移行が必要です
+- **グローバルな名前の一意性による制約**：`my-app` のような名前はフォーマット間で再利用できません（たとえば Docker と Maven の両方のリポジトリに `my-app` と名付けることはできません）。そのため、`my-app-docker` や `my-app-maven` のような命名規則につながる可能性があります
+- **フォーマット固有の API 領域**：フォーマットごとにエンドポイントを専用にするため、フォーマット間で一部が重複し、管理タスク向けのフォーマット横断の統合操作がありません
+
+## 参考文献 {#references}
 
 - [ADR-001：アンカーポイントとしての組織](001_organizations_as_anchor_point.md)
-- [ADR-010：データ保持](010_data_retention.md#release-phasing) - クローズドベータから GA までの削除の段階的導入
+- [ADR-010：データ保持](010_data_retention.md#release-phasing) - クローズドベータと GA にわたる削除の段階的導入
 - [ADR-022：ネームスペースデカップリング](022_namespace_decoupling.md)
 - [Cells アーキテクチャ](../../cells/)
 - [Container Registry Routing Service (Cells)](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/14825)
@@ -425,4 +220,4 @@ GitLab API は、提供先のプラットフォームバージョン間で後方
 - [Docker Registry Bearer Token Authentication](https://docs.docker.com/reference/api/registry/auth/)
 - [Maven Repository Layout](https://maven.apache.org/repositories/layout.html)
 - [NPM Registry API](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md)
-- [Repository Name Immutability Proposal](https://gitlab.com/gitlab-org/gitlab/-/issues/592582)
+- [リポジトリ名の不変性の提案](https://gitlab.com/gitlab-org/gitlab/-/issues/592582)
