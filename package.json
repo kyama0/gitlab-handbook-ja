@@ -22,7 +22,7 @@
     "@types/node": "^26.2.0",
     "autoprefixer": "^10.6.1",
     "pagefind": "^1.5.2",
-    "postcss": "^8.5.26",
+    "postcss": "^8.5.32",
     "postcss-cli": "^11.0.1",
     "tsx": "^4.23.12",
     "typescript": "^7.0.2",
