@@ -1,29 +1,29 @@
 ---
-title: "PTY LTD Benefits"
+title: "PTY LTD の福利厚生"
 description: "オーストラリアのチームメンバー向け GitLab PTY Australia の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/
-upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
-translated_at: "2026-09-15T06:08:13+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-10-31T21:01:53+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## **私たちがあなたをサポートします:**
+## **私たちがあなたをサポートします:** {#we}
 
-## **わかりやすい福利厚生、確かなサポート**
+## **わかりやすい福利厚生、確かなサポート** {#clear-benefits-real-support}
 
 GitLab PTY Ltd. オーストラリアの包括的な福利厚生ガイドへようこそ。GitLab では、福利厚生は理解しやすく、必要なときに利用できるべきだと考えています。人生の大きな節目から日々の疑問まで、私たちのカバレッジは、あなたが仕事と生活に集中できるように、明確さと安心感を提供します。
 
-**このハンドブックは GitLab PTY Ltd. オーストラリアを通じて雇用されているチームメンバーを対象としています。** 以下に記載されているローカル福利厚生に加えて、すべてのチームメンバーは [全社共通の福利厚生](/handbook/total-rewards/benefits/general-and-entity-benefits/) を利用できます。
+**このハンドブックは GitLab PTY Ltd. オーストラリアを通じて雇用されているチームメンバーを対象としています。** 以下に記載されているローカル福利厚生に加えて、すべてのチームメンバーは [全社共通の福利厚生](/handbook/total-rewards/benefits/general-and-entity-benefits/)を利用できます。
 
-## **必須情報**
+## **必須情報** {#essential-information}
 
-**Fair Work Information** すべてのオーストラリアのチームメンバーは [Fair Work Information Statement](https://www.fairwork.gov.au/sites/default/files/migration/724/Fair-Work-Information-Statement.pdf) を受け取り、オーストラリア雇用法の下での職場の権利と保護が説明されています。
+**Fair Work Information** すべてのオーストラリアのチームメンバーは [Fair Work Information Statement](https://www.fairwork.gov.au/sites/default/files/migration/724/Fair-Work-Information-Statement.pdf)を受け取り、オーストラリア雇用法の下での職場の権利と保護が説明されています。
 
-## **健康と健全性**
+## **健康と健全性** {#health--wellbeing}
 
-### **医療カバレッジ**
+### **医療カバレッジ** {#medical-coverage}
 
 BUPA を通じた包括的な民間健康保険で、オーストラリアの Medicare システムを補完し、医療ニーズに対する追加の選択肢とカバレッジを提供します。
 
@@ -99,7 +99,7 @@ BUPA を通じた包括的な民間健康保険で、オーストラリアの Me
 
 **登録プロセス:**
 
-1. [GitLab BUPA 雇用主ポータル](https://www.bupa.com.au/corporate/gitlab) にアクセス
+1. [GitLab BUPA 雇用主ポータル](https://www.bupa.com.au/corporate/gitlab)にアクセス
 2. 「Get a quote」をクリックして 6 つの登録質問に回答
 3. オプション、プラン概要、月額料金を確認
 4. 希望のカバレッジを選択して「join now」をクリック
@@ -128,9 +128,9 @@ BUPA を通じた包括的な民間健康保険で、オーストラリアの Me
 
 </details>
 
-## **経済的安全**
+## **経済的安全** {#financial-security}
 
-### **Superannuation（退職金貯蓄）**
+### **Superannuation（退職金貯蓄）** {#superannuation-retirement-savings}
 
 長期的な経済的健全性を確保するための退職金貯蓄が、あなたの経済的将来を構築します。
 
@@ -165,15 +165,15 @@ BUPA を通じた包括的な民間健康保険で、オーストラリアの Me
 
 **始め方:**
 
-1. Internal Payroll Handbook ページの [オーストラリアセクション](https://internal.gitlab.com/handbook/finance/payroll/#australia) で「Updating Changes to Superannuation Fund」の手順に従ってください。
+1. Internal Payroll Handbook ページの [オーストラリアセクション](https://internal.gitlab.com/handbook/finance/payroll/#australia)で「Updating Changes to Superannuation Fund」の手順に従ってください。
 2. 拠出は次の給与処理から開始されます
-3. [同じプロセス](https://internal.gitlab.com/handbook/finance/payroll/#australia) でいつでも変更またはオプトアウトできます
+3. [同じプロセス](https://internal.gitlab.com/handbook/finance/payroll/#australia)でいつでも変更またはオプトアウトできます
 
 **重要:** GitLab は年間上限を監視しません — 高い税率を避けるため、合計拠出額が会計年度あたりの年間上限を超えないようにすることはあなたの責任です。ただし、雇用主部分は上限に達すると停止します。
 
 </details>
 
-### **労災補償**
+### **労災補償** {#workers}
 
 すべてのオーストラリアの州と地域にわたる包括的な職場傷害保護で、職場関連の傷害や病気が発生した場合のカバレッジを確保します。
 
@@ -190,28 +190,28 @@ BUPA を通じた包括的な民間健康保険で、オーストラリアの Me
 | WA | WorkCover |
 | VIC | WorkSafe |
 
-**請求方法:** 労災補償の請求に関する支援は、[Compass](https://app.serval.com/new-request) 経由で Payroll チームにお問い合わせください。
+**請求方法:** 労災補償の請求に関する支援は、[Compass](https://app.serval.com/new-request)経由で Payroll チームにお問い合わせください。
 
 </details>
 
-### **Novated Leasing & 給与パッケージング**
+### **Novated Leasing & 給与パッケージング** {#novated-leasing--salary-packaging}
 
-GitLab はオーストラリアのチームメンバー向けの novated leasing と給与パッケージングプログラムを検討しましたが、現時点ではこれらの給付を提供しないことを決定しました。これは全地域に適用される全社的な方針です。理由の詳細については、General Benefits ページの [Vehicle Salary Sacrifice & Novated Leasing Programs](/handbook/total-rewards/benefits/general-and-entity-benefits/#vehicle-salary-sacrifice--novated-leasing-programs) セクションを参照してください。
+GitLab はオーストラリアのチームメンバー向けの novated leasing と給与パッケージングプログラムを検討しましたが、現時点ではこれらの給付を提供しないことを決定しました。これは全地域に適用される全社的な方針です。理由の詳細については、General Benefits ページの [Vehicle Salary Sacrifice & Novated Leasing Programs](/handbook/total-rewards/benefits/general-and-entity-benefits/#vehicle-salary-sacrifice--novated-leasing-programs)セクションを参照してください。
 
-### **生命保険**
+### **生命保険** {#life-insurance}
 
-オーストラリア在住の方々は、病気、けが、障害があった場合に [政府の支払いとサービス](https://www.servicesaustralia.gov.au/living-with-disability) にアクセスできます。生命保険を選択するほとんどのオーストラリア人は、Super ファンドからカバレッジを受け取ります。
+オーストラリア在住の方々は、病気、けが、障害があった場合に [政府の支払いとサービス](https://www.servicesaustralia.gov.au/living-with-disability)にアクセスできます。生命保険を選択するほとんどのオーストラリア人は、Super ファンドからカバレッジを受け取ります。
 
-## **エンジニアリング固有の福利厚生**
+## **エンジニアリング固有の福利厚生** {#engineering-specific-benefits}
 
-### **オンコールサポート（エンジニアリング限定）**
+### **オンコールサポート（エンジニアリング限定）** {#on-call-support-engineering-only}
 
 GitLab の運営をサポートしながら適切な休息とワークライフバランスを確保するために、オンコールローテーションに参加するエンジニアリングチームメンバーへの認識とサポートです。
 
 <details markdown="1">
 <summary>主な詳細</summary>
 
-エンジニアリング部門の特定のグループは、ビジネスの継続性および/または顧客サポートのためにオンコールに参加することが期待されます。オンコール手順の詳細については、[オンコールページ](/handbook/engineering/on-call/) を参照してください。このセクションの目的は、**2021 年 2 月 1 日施行の Development および Infrastructure 部門で提供される代休** の概要を提供することです。エンジニアリング内の他の部門にも段階的にレビューと実装を継続します。
+エンジニアリング部門の特定のグループは、ビジネスの継続性および/または顧客サポートのためにオンコールに参加することが期待されます。オンコール手順の詳細については、[オンコールページ](/handbook/engineering/on-call/)を参照してください。このセクションの目的は、**2021 年 2 月 1 日施行の Development および Infrastructure 部門で提供される代休** の概要を提供することです。エンジニアリング内の他の部門にも段階的にレビューと実装を継続します。
 
 私たちのグローバルチームでは、オンコールローテーションに「太陽を追う」モデルを目指しています。これにより、チームメンバーはそれぞれの地域（APAC、EMEA、AMER）でナイトタイムではなく日中にオンコールに参加できます。APAC では、チームメンバーの大多数がオーストラリアにいます。私たちは、オーストラリアのエンジニアが 1) オンコールシフトの対象となり、2) オンコールシフト後の適切な休息/回復時間を確保するために現地法と一致するようにしたいと考えています。
 
@@ -261,9 +261,9 @@ Development および Infrastructure 部門に所属するオーストラリア�
 
 </details>
 
-## **休暇とお休みのポリシー**
+## **休暇とお休みのポリシー** {#time-away--leave-policies}
 
-### **年次有給休暇**
+### **年次有給休暇** {#annual-leave}
 
 オーストラリアの法定休暇権利と GitLab の Flexible PTO ポリシーを組み合わせた柔軟な休暇で、リフレッシュしてワークライフバランスを維持するために必要な時間を確保します。
 
@@ -276,7 +276,7 @@ Development および Infrastructure 部門に所属するオーストラリア�
 
 </details>
 
-### **個人/介護者休暇**
+### **個人/介護者休暇** {#personalcarer}
 
 病気休暇および介護者休暇（個人休暇または個人/介護者休暇とも呼ばれる）は、従業員が個人の病気、介護責任、家族の緊急事態に対処するために休暇を取ることを可能にします。チームメンバーは、随時改正される Fair Work Act 2009 (Cth) に従い、個人/介護者休暇の権利を有します。
 
@@ -360,7 +360,7 @@ Development および Infrastructure 部門に所属するオーストラリア�
 
 </details>
 
-### **長期勤続休暇**
+### **長期勤続休暇** {#long-service-leave}
 
 チームメンバーは、随時改正される州/地域の法律に従って、長期勤続休暇の対象となる場合があります。
 
@@ -374,14 +374,14 @@ Development および Infrastructure 部門に所属するオーストラリア�
 
 </details>
 
-### **その他の休暇タイプ**
+### **その他の休暇タイプ** {#other-leave-types}
 
 <details markdown="1">
 <summary>家族および家庭内暴力休暇</summary>
 
 2023 年 2 月 1 日から、すべてのチームメンバー（パートタイムおよび臨時従業員を含む）は、年間 10 日の有給家族および家庭内暴力休暇の権利を得ます。この休暇は GitLab PTO と同時実行されます。この休暇を利用する必要がある場合は、チームメンバーは Absence Management チーム（leaves@gitlab.com）に通知する必要があります。
 
-- 家族および家庭内暴力休暇の詳細については、[Fair Work Ombudsman ウェブサイト](https://www.fairwork.gov.au/leave/family-and-domestic-violence-leave) をご覧ください。
+- 家族および家庭内暴力休暇の詳細については、[Fair Work Ombudsman ウェブサイト](https://www.fairwork.gov.au/leave/family-and-domestic-violence-leave)をご覧ください。
 
 - リソース:
   - [1800RESPECT](https://www.1800respect.org.au/)
@@ -429,7 +429,7 @@ Development および Infrastructure 部門に所属するオーストラリア�
 <details markdown="1">
 <summary>祝日</summary>
 
-- すべてのチームメンバーは、[祝日](https://www.fairwork.gov.au/employment-conditions/public-holidays) に労働するすべての時間に対して、少なくとも基本給与レートを受け取る権利があります。
+- すべてのチームメンバーは、[祝日](https://www.fairwork.gov.au/employment-conditions/public-holidays)に労働するすべての時間に対して、少なくとも基本給与レートを受け取る権利があります。
 - 祝日のために休暇を取るチームメンバーは、勤務する予定の通常時間に対する基本給与レートを受け取る権利があります。GitLab はすべてのチームメンバーに対して、観察する祝日のために休暇を取ることを奨励しています。
 - 法定権利が適切に追跡されることを確認するため、チームメンバーは Workday で `Public Holiday` を選択する必要があります。
 
@@ -444,7 +444,7 @@ Development および Infrastructure 部門に所属するオーストラリア�
   - 活動が緊急事態または自然災害への対処を伴う
   - チームメンバーは以下の場合にボランティアベースで活動に従事:
     - チームメンバーが活動への参加を求められた、または状況が許せばそのような要請があったと合理的に予想され、かつ
-    - チームメンバーが認識された緊急管理機関のメンバーまたはメンバーのような関係を持つ。詳細は [FairWork Ombudsman ウェブサイト](https://www.fairwork.gov.au/leave/community-service-leave) を参照してください。
+    - チームメンバーが認識された緊急管理機関のメンバーまたはメンバーのような関係を持つ。詳細は [FairWork Ombudsman ウェブサイト](https://www.fairwork.gov.au/leave/community-service-leave)を参照してください。
 
 </details>
 
@@ -457,7 +457,7 @@ Development および Infrastructure 部門に所属するオーストラリア�
 
 </details>
 
-### **育児休暇**
+### **育児休暇** {#parental-leave}
 
 子育て家族のための包括的なサポートで、オーストラリアの法定権利と GitLab の強化された育児休暇給付を組み合わせています。
 
@@ -476,7 +476,7 @@ Development および Infrastructure 部門に所属するオーストラリア�
 - [オーストラリア政府の育児休暇支払いスキーム](https://www.fairwork.gov.au/leave/parental-leave/during-parental-leave/payment-during-parental-leave#australian-government-parental-leave-pay)
 - GitLab の育児休暇
 
-2026 年 7 月 1 日以降に出生または養子縁組された子の介護者である適格な従業員は、最大 26 週間の Parental Leave Pay を受け取ることができ、National Minimum Wage で支払われます。詳細は [Services Australia -- Parental Leave Pay](https://www.servicesaustralia.gov.au/parental-leave-pay) をご覧ください
+2026 年 7 月 1 日以降に出生または養子縁組された子の介護者である適格な従業員は、最大 26 週間の Parental Leave Pay を受け取ることができ、National Minimum Wage で支払われます。詳細は [Services Australia -- Parental Leave Pay](https://www.servicesaustralia.gov.au/parental-leave-pay)をご覧ください
 
 - 政府支給の Parental Leave Pay を申請する場合、子の出産予定日の最大 3 か月前から申請できます。
 
@@ -511,18 +511,18 @@ Development および Infrastructure 部門に所属するオーストラリア�
 
 </details>
 
-## 職場の権利とポリシー
+## 職場の権利とポリシー {#workplace-rights--policies}
 
-### **接続を切る権利**
+### **接続を切る権利** {#right-to-disconnect}
 
 通常の労働時間外の業務通信から接続を切る職場の権利で、健全なワークライフバランスと福祉をサポートします。
 
 <details markdown="1">
 <summary>あなたの権利とサポート</summary>
 
-GitLab（「会社」）では、すべてのチームメンバーの安全、健康、福祉を大切にしており、労働時間ではなく [非同期コミュニケーション](/handbook/values/#bias-towards-asynchronous-communication) と結果に焦点を当てます。私たちは、[家族と友人を最優先にし、仕事は二の次にする](/handbook/values/#family-and-friends-first-work-second) と信じています。会社の価値観に沿って、仕事から「[プラグを抜く](/handbook/company/culture/all-remote/mental-health/#your-rest-ethic-is-as-important-as-your-work-ethic)」ことが [健全でバランスの取れた生活](/handbook/company/culture/all-remote/) に不可欠であると理解しています。テクノロジーの進歩、世界的な出来事、業務の要求は、時に私たちが充電するために休憩が必要であることを忘れさせることがあります。
+GitLab（「会社」）では、すべてのチームメンバーの安全、健康、福祉を大切にしており、労働時間ではなく非同期コミュニケーションと結果に焦点を当てます。私たちは、家族と友人を最優先にし、仕事は二の次にすると信じています。会社の価値観に沿って、仕事から「[プラグを抜く](/handbook/company/culture/all-remote/mental-health/#your-rest-ethic-is-as-important-as-your-work-ethic)」ことが [健全でバランスの取れた生活](/handbook/company/culture/all-remote/)に不可欠であると理解しています。テクノロジーの進歩、世界的な出来事、業務の要求は、時に私たちが充電するために休憩が必要であることを忘れさせることがあります。
 
-チームメンバーは、通常の労働時間外および PTO 中に、業務および業務関連の通信から接続を切ることが期待されます。他の人が時間を効率的に管理できるよう、プロジェクトが取りこぼされることなく、チームメンバーが不在中に妨げられることなく済むように、ハンドブックには [不在時の通信について](/handbook/people-group/time-off-and-absence/time-away-philosophy/#communicating--preparing-for-planned-time-away) の多くの提案があります。
+チームメンバーは、通常の労働時間外および PTO 中に、業務および業務関連の通信から接続を切ることが期待されます。他の人が時間を効率的に管理できるよう、プロジェクトが取りこぼされることなく、チームメンバーが不在中に妨げられることなく済むように、ハンドブックには [不在時の通信について](/handbook/people-group/time-off-and-absence/time-away-philosophy/#communicating--preparing-for-planned-time-away)の多くの提案があります。
 
 このガイダンスは、オーストラリアのチームメンバーに、その職場で接続を切る権利（2024 年 8 月 26 日から成文化）と、会社がチームメンバーをそうすることをサポートすることを誓約していることを思い出させます。
 
@@ -538,7 +538,7 @@ GitLab（「会社」）では、すべてのチームメンバーの安全、�
   - 携帯電話で Slack と Gmail アプリを一時停止する、または
   - 携帯電話で通知を送らないように Slack と Gmail を手動で設定する
 
-GitLab では、チームメンバーは、会社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションする必要があり、非同期コミュニケーションとドキュメント優先のバイアスを持ち、[他者とのやり取りで肯定的な意図を仮定](/handbook/values/#assume-positive-intent) する必要があります（コミュニケーションのトーンとタイミングに関するものを含む）。
+GitLab では、チームメンバーは、会社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションする必要があり、非同期コミュニケーションとドキュメント優先のバイアスを持ち、他者とのやり取りで肯定的な意図を仮定する必要があります（コミュニケーションのトーンとタイミングに関するものを含む）。
 
 連絡が不合理であるかどうかを検討する際には、以下を考慮します:
 
@@ -550,17 +550,17 @@ GitLab では、チームメンバーは、会社の価値観に沿って、常�
 - チームメンバーの役割の性質と責任のレベル; および
 - チームメンバーの個人的な状況。
 
-チームメンバーが連絡の監視または応答を合理的に（または不合理に）拒否したかどうかに関する問題が発生した場合、関係するチームメンバーはマネージャーに問題を提起するか、[Team Member Relations](mailto:teammemberrelations@gitlab.com) に連絡することが奨励されます。
+チームメンバーが連絡の監視または応答を合理的に（または不合理に）拒否したかどうかに関する問題が発生した場合、関係するチームメンバーはマネージャーに問題を提起するか、[Team Member Relations](mailto:teammemberrelations@gitlab.com)に連絡することが奨励されます。
 
-FWC は今後、すべての modern award を更新して接続を切る権利を組み込みます。Award は[こちら](https://www.fwc.gov.au/work-conditions/awards/find-award) で確認できます。
+FWC は今後、すべての modern award を更新して接続を切る権利を組み込みます。Award は[こちら](https://www.fwc.gov.au/work-conditions/awards/find-award)で確認できます。
 
 </details>
 
-## **ヘルプとサポートを受ける**
+## **ヘルプとサポートを受ける** {#getting-help--support}
 
 *必要なときに利用できるリソース*
 
-### **オーストラリアサポート**
+### **オーストラリアサポート** {#australia-support}
 
 **福利厚生に関する質問:**
 

@@ -2,11 +2,11 @@
 title: マージリクエストの変更をプレビューする
 description: "マージリクエスト（MR）の変更をレビュー、テスト、または貢献するためにプレビューする方法。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr/
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-translated_at: "2026-10-24T21:14:17.168608+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-10-31T21:04:19.033086+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-20T18:42:40+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ## 概要 {#overview}
@@ -20,7 +20,7 @@ lastmod: "2026-10-20T18:42:40+02:00"
 
 - **GitLab Development Kit (GDK)**（[はじめに](#gdk)と[ヘルプ](#help)）：ローカルマシンで GitLab を実行します。技術的な知識が必要で、更新時に壊れることがあります。
 - **Review Apps**（[はじめに](#review-apps)）：各 MR に対して作成される固有のリンクです。ドキュメントには最適ですが、GitLab インスタンスには制限があります（[改善が計画されています](https://gitlab.com/groups/gitlab-org/-/epics/6660)）。
-- **作成者と同期**：[非同期コミュニケーションを優先](/handbook/values/#bias-towards-asynchronous-communication)していますが、MR 作成者との短い通話が最も効率的なアプローチである場合もあります。
+- **作成者と同期**：非同期コミュニケーションを優先していますが、MR 作成者との短い通話が最も効率的なアプローチである場合もあります。
 
 {{% details summary="比較表" %}}
 
