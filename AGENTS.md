@@ -14,6 +14,7 @@
 - `upstream/` は git submodule。ユーザーが upstream 同期や翻訳バッチを依頼していない限り、submodule pointer を更新・巻き戻ししない。`git status` で `M upstream` が出ていても、まず現在の状態を尊重する。
 - Codex が新規翻訳を作る場合、翻訳ファイルの frontmatter は `translator: codex` とし、`translation-state/manifest.json` の `model` には実際に使った Codex モデル名を記録する。モデル名が取得できない場合は `codex` として記録し、PR 本文にその旨を書く。既存の `translator: claude` は過去翻訳の履歴なので変更しない。
 - Agent 設定・ドキュメントだけを変更した場合、Hugo ビルドは必須ではない。`content/`, `layouts/`, `data/`, `assets/`, `static/`, `config/`, `go.mod`, `go.sum`, `package*.json` を変更した場合は `hugo --renderToMemory --quiet` または CI 相当の検証を行う。
+- GitHub Actions の `uses:` は完全なバージョンタグを使い、コミット SHA と間接依存は `.github/workflows/actions.lock` で固定する。Workflow の追加・削除や `uses:` の変更後は `gh actions-lock` と `gh actions-lock --verify` を実行し、Workflow とロックファイルを同じコミットに含める。ロックファイルは手動編集しない。詳細は [README.md の依存関係更新手順](README.md#github-actions-の依存関係更新) を参照。
 
 ## 1. このリポジトリの性質
 
