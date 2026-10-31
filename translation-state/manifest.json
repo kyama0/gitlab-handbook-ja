@@ -19466,11 +19466,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T21:05:51+00:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:01:53+00:00",
       "model": "codex",
-      "input_hash": "2bb990b1c6a5cb6528aea70465e1d39eec3fef575edcf7a9ab20b9ab8346cb73",
-      "upstream_committed_at": "2026-09-25T14:51:59-07:00"
+      "input_hash": "ae5e2cdfd355ac9aa7f05a0e7b361262f0954f6ac176fada5476a557933ce5cc",
+      "upstream_committed_at": "2026-10-30T15:12:09-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
@@ -19490,11 +19490,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
-      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
-      "translated_at": "2026-09-15T06:08:13+09:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:01:53+00:00",
       "model": "codex",
-      "input_hash": "e8fa9cf1dc7e3d16d5d3636def697c0d7fc1b24f32e2c31444de460578c5cb3e",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "b7e3d6e97b18e29928d41d2e17806e1e993fca2fc3752ab8ecc1541ea0504360",
+      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md",
@@ -19530,11 +19530,11 @@
     },
     "content/handbook/total-rewards/benefits/parental-leave-toolkit.md": {
       "path": "content/handbook/total-rewards/benefits/parental-leave-toolkit.md",
-      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
-      "translated_at": "2026-09-15T06:05:12+09:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:04:19.033086+00:00",
       "model": "codex",
-      "input_hash": "8c6c4fca9d2c67b1f122edd48c027892001f06982b1add587238e1cf09732bb7",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "54128296e0dd27846a2ceeb105c8989977497e3de1c632585495ed66f84321cd",
+      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
     },
     "content/handbook/total-rewards/compensation/_index.md": {
       "path": "content/handbook/total-rewards/compensation/_index.md",
@@ -19554,11 +19554,11 @@
     },
     "content/handbook/total-rewards/incentives.md": {
       "path": "content/handbook/total-rewards/incentives.md",
-      "upstream_sha": "6236b6b556b62f5a236bd17cf28b3b604d551c92",
-      "translated_at": "2026-09-15T06:05:12+09:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:04:19.033086+00:00",
       "model": "codex",
-      "input_hash": "ad1596578764518a2dc309716ba6236ab14e1a726edfec8ce0dd9443504b134c",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "1cbff3128121cff1474ee88a5e575941e59e7e17adc8b7919f41cdf0ceda9ca1",
+      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
     },
     "content/handbook/support/_index.md": {
       "path": "content/handbook/support/_index.md",
@@ -33994,11 +33994,11 @@
     },
     "content/handbook/upstream-studios/product-design/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/_index.md",
-      "upstream_sha": "7032d681eb34b7baa363eb97119170b35beb5d76",
-      "translated_at": "2026-07-24T06:08:04+09:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:04:19.033086+00:00",
       "model": "codex",
-      "input_hash": "39ae3650d09bf8b9efae573404f57f8d72591c3c6bdaa979dac18a48ff4db8c8",
-      "upstream_committed_at": "2026-07-23T12:35:46-03:00"
+      "input_hash": "dcb553b12b261617f87c5298b9560b97ebe4fb93a5326c0adec1c06c9a0fe21f",
+      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/_index.md",
@@ -34026,11 +34026,11 @@
     },
     "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md",
-      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
-      "translated_at": "2026-10-24T21:14:17.168608+00:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:04:19.033086+00:00",
       "model": "codex",
-      "input_hash": "45273d8a5c6dd42cd1facb70012cb3838ffe27d8fd816c390e5e7b6cc3dc5371",
-      "upstream_committed_at": "2026-10-20T18:42:40+02:00"
+      "input_hash": "b186fd09b68ed6c01b90aca1c59ea8f57270a17efbdb9f68971a79cd5192b3ca",
+      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/figma/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/figma/_index.md",
@@ -34042,11 +34042,11 @@
     },
     "content/handbook/upstream-studios/product-design/workflow/capacity-management/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/capacity-management/_index.md",
-      "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-07-21T06:21:42+09:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:04:19.033086+00:00",
       "model": "codex",
-      "input_hash": "c7571dd44df6dbf73879853db873e6ea4d876d31503788b782cd3543d442fe8a",
-      "upstream_committed_at": "2026-07-20T13:03:25-03:00"
+      "input_hash": "73cdf17417d4790dab49a376426588e045d4bea686717b4bba1087077bbdb5cf",
+      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
     },
     "content/handbook/upstream-studios/design-expression/_index.md": {
       "path": "content/handbook/upstream-studios/design-expression/_index.md",
@@ -34114,11 +34114,11 @@
     },
     "content/handbook/upstream-studios/product-design/operations/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/operations/_index.md",
-      "upstream_sha": "50ee631c98005b47a0caea9d46e4ba5cfc62891a",
-      "translated_at": "2026-07-23T06:07:21+09:00",
+      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
+      "translated_at": "2026-10-31T21:04:19.033086+00:00",
       "model": "codex",
-      "input_hash": "b90377fa6a7176cac5c6e549f14b883959181d69fc060c718233b83a648403e3",
-      "upstream_committed_at": "2026-07-22T08:32:12-03:00"
+      "input_hash": "6a1842644aace3cea833c61d83bea079337d2fa6b79a39838c03db212d3d7878",
+      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
     },
     "content/handbook/upstream-studios/product-design/ux-themes/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/ux-themes/_index.md",

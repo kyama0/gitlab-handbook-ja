@@ -2,18 +2,18 @@
 title: Product Designer の優先順位とキャパシティ管理
 description: "トリオおよびプラットフォームのイニシアチブで戦略的パートナーとして働く Product Designer が、作業に優先順位を付けキャパシティを管理するためのガイドライン。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/capacity-management/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-lastmod: "2026-07-20T13:03:25-03:00"
-translated_at: "2026-07-21T06:21:42+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-10-31T21:04:19.033086+00:00"
 translator: codex
 stale: false
 ---
 
-Product Designer は [Manager of One](/handbook/values/#managers-of-one) として、トリオの作業、プラットフォームのイニシアチブ、より広範な Upstream Studios の責任に対して自らのキャパシティを順序付けます。このページでは、作業に優先順位を付け、キャパシティを計画するためのガイダンスを提供します。
+Product Designer は Manager of One として、トリオの作業、プラットフォームのイニシアチブ、より広範な Upstream Studios の責任に対して自らのキャパシティを順序付けます。このページでは、作業に優先順位を付け、キャパシティを計画するためのガイダンスを提供します。
 
-[Product Design](/handbook/upstream-studios/product-design/)（[Upstream Studios](/handbook/upstream-studios/) の一部）で働く Product Designer 向けです。
+[Product Design](/handbook/upstream-studios/product-design/)（[Upstream Studios](/handbook/upstream-studios/)の一部）で働く Product Designer 向けです。
 
-## キャパシティの計画と管理
+## キャパシティの計画と管理 {#planning-and-managing-capacity}
 
 Product Designer はトリオの対等なメンバーとしてグループに割り当てられます。次のガイドラインは、本番作業と、その役割の中核である上流での判断の両方にキャパシティを確保しながら、作業を順序付ける助けになります。
 
@@ -33,7 +33,7 @@ Product Designer はトリオの対等なメンバーとしてグループに割
 - AI が定型的な本番作業をより多く吸収するにつれ、空いたキャパシティを発見と戦略作業に振り向ける。
 - クロスファンクショナルなパートナーが、デザイナーのキャパシティには本番作業項目とともに発見および戦略作業も含まれること、潜在的な依存関係があることを理解できるようにする。
 
-### 優先順位
+### 優先順位 {#priorities}
 
 最も大きな効果を生む作業は、コードが 1 行書かれる前に行われます。問題を検証し、プロトタイプに飛びつく前にフローから始め、早期に成功基準を設定することです。複数のものが同じ時間を求めるときは、次の順序に従います。
 
@@ -52,15 +52,15 @@ Product Designer はトリオの対等なメンバーとしてグループに割
 
 - 将来のリリースまたは[バックログ](https://gitlab.com/groups/gitlab-org/-/issues?state=opened&milestone_title=Backlog&label_name%5B%5D=UX)マイルストーンの Issue、コミュニティラベル付きの簡単な成果、マイルストーンのない人気の Issue、作業の外部共有。上記に必要とされることがないときに着手してください。
 
-#### Product Management の支援
+#### Product Management の支援 {#supporting-product-management}
 
 トリオの戦略的パートナーとして、Product Designer はユーザーニーズについてのインサイトを提供し、素早い成果とより大きな戦略的イニシアチブの両方を特定する助けになります。この協働的なアプローチにより、デザインは上流に関与し続け、最初から計画の議論を形作ります。
 
-### UX Issue の重み
+### UX Issue の重み {#ux-issue-weights}
 
 Issue の重みは任意ですが、計画に役立ちます。Product Designer がキャパシティを理解し、休暇の影響を評価し、Product Manager とのトレードオフの話し合いを促進し、より多くの UX 支援を必要とするチームを特定する助けになります。
 
-#### UX Issue の重み付けを使用する
+#### UX Issue の重み付けを使用する {#using-ux-issue-weighting}
 
 1. 今後の Issue をレビューし、作業を分解する
 1. 提供された表を使用して Issue の重みを割り当てる。必要に応じて、明確にするために Product Manager と協働する
@@ -86,7 +86,7 @@ Issue の重みは任意ですが、計画に役立ちます。Product Designer 
 > - **現在のマイルストーンの見積もりキャパシティ:** 7（平均キャパシティを使用し、計画済みの休暇を差し引く）
 > - **現在の重みの合計:** 10
 
-#### UX の重みの定義
+#### UX の重みの定義 {#ux-weight-definitions}
 
 | 重み | デザインタスク | ユーザーリサーチタスク |
 | ------ | ------------ | ------------------- |

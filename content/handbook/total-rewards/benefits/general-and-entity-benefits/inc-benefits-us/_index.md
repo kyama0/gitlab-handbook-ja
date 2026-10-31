@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T21:05:51+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-10-31T21:01:53+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-25T14:51:59-07:00"
+lastmod: "2026-10-30T15:12:09-07:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -17,23 +17,34 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 
 将来の計画、家族を作ること、年老いた親のケア、または予期しない課題への対処など、GitLab の福利厚生は、最も必要なときに包括的なカバレッジと透明性のある情報で人生のあらゆる段階であなたをサポートするように設計されています。
 
-**以下の福利厚生に加えて、すべてのチームメンバーは [全社共通の](/handbook/total-rewards/benefits/general-and-entity-benefits/) 福利厚生を利用できます。**
+**以下の福利厚生に加えて、すべてのチームメンバーは [全社共通の](/handbook/total-rewards/benefits/general-and-entity-benefits/)福利厚生を利用できます。**
 
-## 2026 プラン年の情報 {#2026-plan-year-information}
+## 2027 プラン年の情報 {#2027-plan-year-information}
 
 ### クイックスタートリソース {#quick-start-resources}
 
-- 福利厚生の概要については[2026 Benefits At A Glance](https://drive.google.com/file/d/1mWNnQw97V_tMrI9_uAvOoYojX7av8yjc/view) を確認してください
-- GitLab Benefit Plan の完全なレビューについては[2026 US Benefits Guide](https://drive.google.com/file/d/1vC3BQ6rorJiu_6e7bO9kzKcD3nIBIEQT/view) を参照してください
-- プラン選択にお困りですか？[2026 Flimp PlanSelect ツール](https://flimpdecisions.net/welcome/633c8d6807f8b) を使用して、あなたと家族のニーズに最も適したプランを見つけてください。
-- [2026 Cigna Formulary](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view) を参照してください
-- 私たちの [2026 Annual Rights Notices](https://drive.google.com/file/d/1YK79mgmrv3qwkD-7DqWF8ZfBlOTFsEoq/view) を参照してください
-- [Transparency in Coverage](https://www.cigna.com/legal/compliance/machine-readable-files) を参照してください。これらの機械可読ファイルは、連邦の Transparency in Coverage Rule に対応して提供されており、健康プランと医療提供者間の交渉済みサービス料金とアウトオブネットワーク許容額が含まれます。機械可読ファイルは、研究者、規制当局、アプリケーション開発者がデータをより簡単にアクセス・分析できるようにフォーマットされています。
+- プラン選びでお困りですか？[Flimp PlanSelect ツール](https://v2.flimpdecisions.net/welcome/633c8d6807f8b)を使って、あなたと家族のニーズに最も適したプランを見つけてください。
+- 主な内容と更新情報については、[2027 年の福利厚生メモ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/page/6179981b-f2de-4afc-a474-051ae1f26d3c)を確認してください
+- GitLab の福利厚生プランの詳しい説明については、[2027 年の米国福利厚生ガイド](https://drive.google.com/file/d/1vC3BQ6rorJiu_6e7bO9kzKcD3nIBIEQT/view)を参照してください
+- 2027 年の[権利に関する年次通知](https://drive.google.com/file/d/1Vls3ry_huyCcfKDZ6IoCraRozzsFz8fR/view?usp=sharing)を参照してください
+- GitLab は [Modern Health](/handbook/total-rewards/benefits/modern-health/)を通じてメンタルウェルネスサービスを提供しています。これらのサービスに加えて、Cigna と Kaiser のプランに加入するチームメンバーは、各社のネットワークの[メンタルヘルスプログラムとリソース](https://drive.google.com/file/d/1LT_LG1Px3xrGMBP0-iMPXaFyQvopfSiL/view?usp=sharing)を利用できます
+- [Transparency in Coverage](https://www.cigna.com/legal/compliance/machine-readable-files)を参照してください。これらの機械可読ファイルは、連邦の Transparency in Coverage Rule に対応して提供されており、健康保険プランと医療提供者の間で交渉されたサービス料金と、ネットワーク外の医療に対する支払対象額が含まれます。研究者、規制当局、アプリケーション開発者がデータにアクセスして分析しやすい形式になっています
+
+## 2026 プラン年の情報 {#2026-plan-year-information}
+
+### クイックスタートリソース {#quick-start-resources-1}
+
+- 福利厚生の概要については[2026 Benefits At A Glance](https://drive.google.com/file/d/1mWNnQw97V_tMrI9_uAvOoYojX7av8yjc/view)を確認してください
+- GitLab Benefit Plan の完全なレビューについては[2026 US Benefits Guide](https://drive.google.com/file/d/1-jY-rzDFxkxwVzJlOuVGcku2oHVfyLsv/view?usp=drive_link)を参照してください
+- プラン選択にお困りですか？[2026 Flimp PlanSelect ツール](https://flimpdecisions.net/welcome/633c8d6807f8b)を使用して、あなたと家族のニーズに最も適したプランを見つけてください。
+- [2026 Cigna Formulary](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view)を参照してください
+- 私たちの [2026 Annual Rights Notices](https://drive.google.com/file/d/1YK79mgmrv3qwkD-7DqWF8ZfBlOTFsEoq/view)を参照してください
+- [Transparency in Coverage](https://www.cigna.com/legal/compliance/machine-readable-files)を参照してください。これらの機械可読ファイルは、連邦の Transparency in Coverage Rule に対応して提供されており、健康プランと医療提供者間の交渉済みサービス料金とアウトオブネットワーク許容額が含まれます。機械可読ファイルは、研究者、規制当局、アプリケーション開発者がデータをより簡単にアクセス・分析できるようにフォーマットされています。
 
 #### 重要な書類、アーカイブされたプラン、Medicare 通知、税書類 {#important-documents-archived-plans-medicare-notices--tax-documents}
 
 <details markdown="1">
-<summary> 税書類: ACA 税フォーム 1095-C: Health Coverage Statements & 申請方法</summary>
+<summary> 税書類：ACA 税フォーム 1095-C：医療保険の加入状況を示す書類と申請方法</summary>
 
 **重要な通知:** この情報は、フルタイム従業員として GitLab があなたに提供した健康カバレッジを報告する税明細書である ACA Form 1095-C にアクセスする方法を説明します。
 
@@ -43,7 +54,7 @@ GitLab はもはや 1095-C フォームを自動的に紙で郵送しません�
 
 1095-C 税フォームは PlanSource を通じて利用可能です:
 
-- [PlanSource](https://drive.google.com/file/d/1py7C8ngTpVlYNSKG4If3yBw43dg3F6Ml/view) にログイン
+- [PlanSource](https://drive.google.com/file/d/1py7C8ngTpVlYNSKG4If3yBw43dg3F6Ml/view)にログイン
 - Documents > ACA Documents > 年別の書類リストに移動
 - 必要な税年度を選択。税書類は 3 月 2 日までにダウンロード可能になります
 
@@ -72,8 +83,8 @@ Total Rewards への連絡
 
 **Medicare リソース:**
 
-- 私たちのプランは Medicare-creditable です。Medicare 対象者の場合は[2025 Annual Notice](https://drive.google.com/file/d/1t17_KcSPt4l09YQL3Iiy544yxXf5z8Bx/view?usp=sharing) を確認してください
-- [medicare.gov](http://medicare.gov/) を訪問するか、1-800-MEDICARE (1-800-633-4227) に電話してください
+- 私たちのプランは Medicare-creditable です。Medicare 対象者の場合は[2025 Annual Notice](https://drive.google.com/file/d/1t17_KcSPt4l09YQL3Iiy544yxXf5z8Bx/view?usp=sharing)を確認してください
+- [medicare.gov](http://medicare.gov/)を訪問するか、1-800-MEDICARE (1-800-633-4227) に電話してください
 - お住まいの州の Health Insurance Assistance Program に連絡してください
 
 </details>
@@ -84,9 +95,9 @@ Total Rewards への連絡
 
 PlanSource（私たちの福利厚生システム）を通じて福利厚生にサインアップするには、開始日から **30 日** あります。
 
-> **重要:** 30 日以内にプランを選択しない場合、自動的に [**Medical Waiver Allowance**](/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#medical-waiver-allowance) が適用され、他の任意のカバレッジは適用されません。
+> **重要:** 30 日以内にプランを選択しない場合、自動的に [**Medical Waiver Allowance**](/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#medical-waiver-allowance)が適用され、他の任意のカバレッジは適用されません。
 
-福利厚生がどのように機能するかを理解するためのヘルプは、[PlanSource Video Library](https://videolibrary.plansource.com/) をご覧ください。給与控除の詳細は、[Accounting and Reporting ページ](/handbook/finance/accounting/) でも確認できます。
+福利厚生がどのように機能するかを理解するためのヘルプは、[PlanSource Video Library](https://videolibrary.plansource.com/)をご覧ください。給与控除の詳細は、[Accounting and Reporting ページ](/handbook/finance/accounting/)でも確認できます。
 
 ### 福利厚生を受けられる人は？ {#who-can-get-benefits}
 
@@ -102,7 +113,7 @@ PlanSource（私たちの福利厚生システム）を通じて福利厚生に�
 <summary>重要な注意事項と家庭内パートナーの詳細</summary>
 
 - あなたと適格な家族の両方が GitLab で勤務する場合、私たちのプランの下で 1 回のみカバーされます
-- 家庭内パートナーの場合: [Domestic Partner Affidavit](https://drive.google.com/file/d/11cV-WXJXu8G626muav2aJvpYS4CMleeE/view?usp=sharing) を完了する必要があります（新規入社時またはオープン登録中を除く）。家庭内パートナーカバレッジは課税所得となる場合があり、Section 125 の下で保険料拠出は税引前にならない場合があります
+- 家庭内パートナーの場合: [Domestic Partner Affidavit](https://drive.google.com/file/d/11cV-WXJXu8G626muav2aJvpYS4CMleeE/view?usp=sharing)を完了する必要があります（新規入社時またはオープン登録中を除く）。家庭内パートナーカバレッジは課税所得となる場合があり、Section 125 の下で保険料拠出は税引前にならない場合があります
 
 </details>
 
@@ -110,17 +121,17 @@ PlanSource（私たちの福利厚生システム）を通じて福利厚生に�
 
 Workday プロファイルを通じて PlanSource にアクセス:
 
-1. [Workday](https://www.myworkday.com/gitlab/d/home.htmld) にログイン
+1. [Workday](https://www.myworkday.com/gitlab/d/home.htmld)にログイン
 2. サイドバーの **Personal** をクリックし、**Personal Information Hub** を選択します
 3. **Suggested Links** の下で **US Benefits Enrollment - PlanSource** を選択します
 4. 別画面で登録を完了
 
-ステップごとの手順については[PlanSource Login & Enrollment Guide](https://drive.google.com/file/d/1py7C8ngTpVlYNSKG4If3yBw43dg3F6Ml/view?usp=sharing) を確認してください。
+ステップごとの手順については[PlanSource Login & Enrollment Guide](https://drive.google.com/file/d/1py7C8ngTpVlYNSKG4If3yBw43dg3F6Ml/view?usp=sharing)を確認してください。
 
 ### ID カードとアクセス {#id-cards--access}
 
-- **Cigna:** [myCigna](https://my.cigna.com/web/public/guest) ウェブサイトとモバイルアプリを通じてデジタルカードが利用可能
-- **Kaiser:** 物理カードが 3 週間以内に郵送されます。デジタルカードは [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door) とモバイルアプリを通じて利用可能
+- **Cigna:** [myCigna](https://my.cigna.com/web/public/guest)ウェブサイトとモバイルアプリを通じてデジタルカードが利用可能
+- **Kaiser:** 物理カードが 3 週間以内に郵送されます。デジタルカードは [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door)とモバイルアプリを通じて利用可能
 
 ### 適格ライフイベント {#qualifying-life-events}
 
@@ -139,20 +150,20 @@ Workday プロファイルを通じて PlanSource にアクセス:
 
 GitLab は Cigna を通じて全国的に医療保険を提供し、Kaiser オプションはカリフォルニアとハワイの居住者に利用可能です。すでに他でカバレッジがある場合は、オプトアウトして月次手当を受け取ることができます。
 
-**プラン選択でお困りですか？** [Flimp PlanSelect ツール](https://myplanselect.com/navigation/Gitlab/2025) を使用してあなたに適したプランを見つけるか、Cigna One Guide Service に連絡して、選択肢を進める個別支援を受けてください。
+**プラン選択でお困りですか？** [Flimp PlanSelect ツール](https://myplanselect.com/navigation/Gitlab/2025)を使用してあなたに適したプランを見つけるか、Cigna One Guide Service に連絡して、選択肢を進める個別支援を受けてください。
 
-### Medical Waiver Allowance
+### 医療保険加入辞退手当 {#medical-waiver-allowance}
 
 すでにグループ医療カバレッジを持っていますか？オプトアウトして、月 **$150** の福利厚生手当を受け取りながら、歯科、ビジョン、その他の福利厚生に登録することができます。この手当を受け取るには、PlanSource で医療カバレッジを積極的に放棄する必要があります。*福利厚生選択期間内にプランに登録しない場合、自動的に Medical Waiver Allowance に登録されます。*
 
-### Cigna Medical Plans
+### Cigna 医療プラン {#cigna-medical-plans}
 
-ハワイを除くすべての米国州のチームメンバーが利用可能で、3 つのカバレッジオプションがあります。プランの詳細と月額費用については、[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+ハワイを除くすべての米国州のチームメンバーが利用可能で、3 つのカバレッジオプションがあります。プランの詳細と月額費用については、[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 <details markdown="1">
 <summary>プランサマリー</summary>
 
-#### Cigna EPO
+#### Cigna EPO {#cigna-epo}
 
 EPO: [2026 SBC](https://drive.google.com/file/d/1mBHIR5xsAEpyArBLrDSMIZSOUhV3yn3R/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1AHoN2uuG_qd6bwu-fDGOYPTuB6zOewFk/view?usp=sharing)
 
@@ -160,7 +171,7 @@ RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsf
 
 *重要なカバレッジ注を参照してください
 
-#### Cigna High Deductible Health Plan
+#### Cigna 高免責額医療プラン {#cigna-high-deductible-health-plan}
 
 HDHP: [2026 SBC](https://drive.google.com/file/d/1jh3QmCvkt1rfjcLaoJqisz13rXPrsaJ7/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1-8zHX89X1EX5yf3HAzAmvJlFcO-XZnei/view?usp=sharing)
 
@@ -171,7 +182,7 @@ HDHP: [2026 SBC](https://drive.google.com/file/d/1jh3QmCvkt1rfjcLaoJqisz13rXPrsa
 
 RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
 
-#### Cigna PPO
+#### Cigna PPO {#cigna-ppo}
 
 PPO: [2026 Summary](https://drive.google.com/file/d/1o6IHytz5ddiOedimgyFWU8obquF5BxFx/view?usp=sharing) | [2026 Summary Utah](https://drive.google.com/file/d/1uNHA_0Xtk7EEUscovappLZa5PD8sdG68/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1dwKYobzRKSdulXDDzSXzlOieMN_U7jsp/view?usp=sharing) | [2026 SBC Utah](https://drive.google.com/file/d/1WsiTvy5PYVhTgcjwUqNNc3s5CDUETTCt/view?usp=sharing)
 
@@ -184,8 +195,8 @@ RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsf
 <details markdown="1">
 <summary>その他の Cigna リソース</summary>
 
-- **Cigna Virtual Care:** [myCigna](https://my.cigna.com/web/public/guest) を通じてアクセス
-- **プロバイダー検索:** [myCigna](https://my.cigna.com/web/public/guest) または [Cigna Public Directory](https://hcpdirectory.cigna.com/web/public/consumer/directory/plan-selection) を使用（すべての GitLab メンバーには OPEN ACCESS PLUS、Utah には PPO を選択）
+- **Cigna Virtual Care:** [myCigna](https://my.cigna.com/web/public/guest)を通じてアクセス
+- **プロバイダー検索:** [myCigna](https://my.cigna.com/web/public/guest)または [Cigna Public Directory](https://hcpdirectory.cigna.com/web/public/consumer/directory/plan-selection)を使用（すべての GitLab メンバーには OPEN ACCESS PLUS、Utah には PPO を選択）
 - **専門薬局:** [Accredo Customer Information](https://drive.google.com/file/d/1qnRKNGj9a9L9j-7Of-ru32sNSEm__2FD/view?usp=sharing)
 - **感情的健全性:** [Virtual Support Services](https://drive.google.com/file/d/12-4LPGTPPsw4rBH7l-BBz_dbr3nPwHRm/view?usp=sharing)
 - **不妊カバレッジ:** カバレッジに含まれる、詳細は SBC を参照
@@ -209,9 +220,9 @@ RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsf
 
 </details>
 
-### Kaiser Medical Plans
+### Kaiser 医療プラン {#kaiser-medical-plans}
 
-ハワイ、カリフォルニアのチームメンバーが利用可能。各州には独自の Kaiser プランオプションがあります。カバレッジの詳細と月額費用については、[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+ハワイ、カリフォルニアのチームメンバーが利用可能。各州には独自の Kaiser プランオプションがあります。カバレッジの詳細と月額費用については、[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 <details markdown="1">
 <summary>プランサマリー</summary>
@@ -225,7 +236,7 @@ RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsf
 <details markdown="1">
 <summary>その他の Kaiser リソース</summary>
 
-- **Kaiser Telehealth:** [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door) を通じてアクセス
+- **Kaiser Telehealth:** [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door)を通じてアクセス
 - **カイロプラクティックと鍼治療:** [北カリフォルニアの福利厚生](https://drive.google.com/file/d/12qyoqvb5Pse5TYjGaHvDWzEY6niTvFO5/view?usp=sharing) | [南カリフォルニアの福利厚生](https://drive.google.com/file/d/1vCgieamGBND65l1i262rRgzkc3YSRnTB/view?usp=sharing)
 - **不妊カバレッジ:** カリフォルニアプランは診断/治療を 50% の共同保険でカバーします。ハワイには IVF 相談および手続きが含まれます
 - **請求:** アウトオブネットワーク請求の提出には 365 日
@@ -234,7 +245,7 @@ RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsf
 
 ### 歯科カバレッジ {#dental-coverage}
 
-Cigna を通じた包括的な歯科ケアは、2 つのカバレッジレベルを提供します。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+Cigna を通じた包括的な歯科ケアは、2 つのカバレッジレベルを提供します。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 **プランサマリー:**
 
@@ -243,12 +254,27 @@ Cigna を通じた包括的な歯科ケアは、2 つのカバレッジレベル
 
 ### 視力カバレッジ {#vision-coverage}
 
-EyeMed と提携した Cigna を通じた視力ケア。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+EyeMed と提携した Cigna を通じた視力ケア。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 **プランサマリー:**
 
 - [Vision 2026 Base](https://drive.google.com/file/d/1qfDmbwsiAhKf-h_GI6_ZcMr9CMqqSor6/view?usp=sharing)
 - [Vision 2026 Buy Up](https://drive.google.com/file/d/1_omcfVakTHoJqvmEjKdrPyJ3Mvd_M6tU/view?usp=sharing)
+
+### 任意加入の傷害保険、入院保険、重大疾病保険 {#voluntary-accident-hospital-and-critical-illness-insurance}
+
+GitLab は福利厚生の保険会社である Cigna を通じて、重大疾病保険、傷害保険、入院定額給付保険の 3 つの任意加入保険プランを提供しています。いずれも加入は任意で、加入する場合は税引後の所得から保険料を支払います。
+
+チームメンバーは、新入社員向けの加入期間、一斉加入期間、または適格ライフイベントが発生した際に加入できます。
+
+プランの詳細と費用については、[**米国福利厚生ガイド**](https://drive.google.com/file/d/1vC3BQ6rorJiu_6e7bO9kzKcD3nIBIEQT/view)を参照してください。
+
+**リソース**
+給付の概要、給付の仕組み、保険金請求のチェックリスト、請求書式については、以下のフォルダーリンクを参照してください
+
+- [重大疾病保険](https://drive.google.com/drive/folders/1-fIfSx-UMEMbak20bw82vvPKzRLfMjX7?usp=sharing)
+- [傷害保険](https://drive.google.com/drive/folders/1F0FLrf7zR_fJSIzLOET-E1Z2CwPcZ7gC?usp=drive_link)
+- [入院定額給付保険](https://drive.google.com/drive/folders/1WKtxDHccrMZ1XKXWhmH7IJADF7THBvAm?usp=drive_link)
 
 ### 従業員アシスタンスプログラム (EAP) {#employee-assistance-program-eap}
 
@@ -270,13 +296,13 @@ New York Life Group Benefits を通じて、無料で利用できる包括的な
 
 ### 基本生命保険と AD&D {#basic-life-insurance--add}
 
-GitLab は、年間基本給与の 2 倍の価値を持つ会社負担の基本生命保険を提供し、最大給付額は $500,000、Cigna/New York Life を通じた同等の AD&D カバレッジを含みます。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+GitLab は、年間基本給与の 2 倍の価値を持つ会社負担の基本生命保険を提供し、最大給付額は $500,000、Cigna/New York Life を通じた同等の AD&D カバレッジを含みます。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 <details markdown="1">
 <summary>主な特徴</summary>
 
 - 初日からの自動カバレッジ
-- [Survivor assurance and support services](https://drive.google.com/file/d/1Uhh7S9uotOtHxogCh7Z7AmLfgdufLsig/view?usp=sharing) を含む
+- [Survivor assurance and support services](https://drive.google.com/file/d/1Uhh7S9uotOtHxogCh7Z7AmLfgdufLsig/view?usp=sharing)を含む
 - チームメンバーへの費用なし
 
 </details>
@@ -293,7 +319,7 @@ GitLab は、年間基本給与の 2 倍の価値を持つ会社負担の基本�
 
 ### 補完生命保険 {#supplemental-life-insurance}
 
-Cigna を通じて追加の任意生命保険が利用可能です。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+Cigna を通じて追加の任意生命保険が利用可能です。プランの詳細と費用については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 **リソース**
 
@@ -303,7 +329,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 <details markdown="1">
 <summary>保険適格性の証拠と退職者</summary>
 
-保証額を超える補完生命保険を選択する場合、あなたまたは扶養家族は[Evidence of Insurability Form](https://drive.google.com/file/d/1Q1AjhGGia1QT2U_OC7TnMUtTk50ZuLBN/view?usp=sharing) (EOI) を完了する必要がある場合があります。これが該当する場合、登録中にプロンプトが表示されます
+保証額を超える補完生命保険を選択する場合、あなたまたは扶養家族は[Evidence of Insurability Form](https://drive.google.com/file/d/1Q1AjhGGia1QT2U_OC7TnMUtTk50ZuLBN/view?usp=sharing) (EOI)を完了する必要がある場合があります。これが該当する場合、登録中にプロンプトが表示されます
 
 **GitLab を退職する場合:** 補完生命保険は COBRA に含まれず、最終日に終了します。Cigna と直接カバレッジを継続でき、保険料の情報と設定について連絡してください。
 
@@ -311,7 +337,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 
 ### 障害保護 {#disability-protection}
 
-短期および長期障害保険が無料で提供され、適格な障害に対して基本給与の最大 66.7% を補償します。プランの詳細とカバレッジについては[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+短期および長期障害保険が無料で提供され、適格な障害に対して基本給与の最大 66.7% を補償します。プランの詳細とカバレッジについては[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 <details markdown="1">
 <summary>障害保護リソース</summary>
@@ -327,7 +353,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 <details markdown="1">
 <summary>短期障害の申請方法</summary>
 
-適格な障害により仕事ができない場合、できるだけ早く Absence Management チーム ([leaves@gitlab.com](mailto:leaves@gitlab.com)) に連絡してください。[Sick Time 報告手順](/handbook/people-group/time-off-and-absence/time-off-types/#sick-time) を参照してください
+適格な障害により仕事ができない場合、できるだけ早く Absence Management チーム ([leaves@gitlab.com](mailto:leaves@gitlab.com))に連絡してください。[Sick Time 報告手順](/handbook/people-group/time-off-and-absence/time-off-types/#sick-time)を参照してください
 **プロセス:**
 
 1. Absence Management チームが申請プロセスをガイドします。これには以下が含まれます:
@@ -346,7 +372,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 <details markdown="1">
 <summary>短期障害の NYLife 請求プロセス</summary>
 
-**ステップ 1: [Short-Term Disability](https://drive.google.com/file/d/1guydUTEc0vBFMaa_IsSktZ5hXAbOXdvD/view?usp=sharing) の申請書を提出する。** 請求者部分を完了し、医師に残りを完了してもらいます。以下のいずれかが可能です:
+**ステップ 1: [Short-Term Disability](https://drive.google.com/file/d/1guydUTEc0vBFMaa_IsSktZ5hXAbOXdvD/view?usp=sharing)の申請書を提出する。** 請求者部分を完了し、医師に残りを完了してもらいます。以下のいずれかが可能です:
 
 - NYLife に直接送信（フォーム上の郵送/ファックス番号を使用）、または
 - leaves@gitlab.com に返送し、leaves@gitlab.com 側で提出します
@@ -370,21 +396,21 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 
 ### 401(k) プランと会社マッチ {#401k-plan-with-company-match}
 
-即時の適格性とベスティング（権利確定）を備えた包括的な退職金貯蓄。プランの詳細とカバレッジについては[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+即時の適格性とベスティング（権利確定）を備えた包括的な退職金貯蓄。プランの詳細とカバレッジについては[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
-- **登録:** 詳細については[401(k) Administration and Enrollment Guide](https://docs.google.com/document/d/1VCYKS12tGBSx3jNF5-2NX-Rbf9dYkJoDev0ZtQfOYLE/edit?tab=t.0#heading=h.xd7xpnt38ckh) を参照してください。
-- **会社マッチ:** 収入の最初の 6% に対する拠出の 50%（年間最大 $1,500）。詳細については[401(k) Company Match and Administration Guide](https://docs.google.com/document/d/1Op29SJ7dV_QEwuN-Ny7RAFaEbE01e0ukGOt2JYJGi88/edit?tab=t.0) を参照してください。
-- **投資オプション:** [Fidelity NetBenefits](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/home) を通じた完全な投資選択肢
-- **教育リソース:** Fidelity NetBenefits を通じて[ライブ財務ワークショップとオンラインクラス](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/online-financial-education-workshops) に参加してください。
+- **登録:** 詳細については[401(k) Administration and Enrollment Guide](https://docs.google.com/document/d/1VCYKS12tGBSx3jNF5-2NX-Rbf9dYkJoDev0ZtQfOYLE/edit?tab=t.0#heading=h.xd7xpnt38ckh)を参照してください。
+- **会社マッチ:** 収入の最初の 6% に対する拠出の 50%（年間最大 $1,500）。詳細については[401(k) Company Match and Administration Guide](https://docs.google.com/document/d/1Op29SJ7dV_QEwuN-Ny7RAFaEbE01e0ukGOt2JYJGi88/edit?tab=t.0)を参照してください。
+- **投資オプション:** [Fidelity NetBenefits](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/home)を通じた完全な投資選択肢
+- **教育リソース:** Fidelity NetBenefits を通じて[ライブ財務ワークショップとオンラインクラス](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/online-financial-education-workshops)に参加してください。
 
 ### 401(k) プランの特徴 {#401k-plan-features}
 
 <details markdown="1">
 <summary>自動 In-Plan Roth 変換付き 401(k) After-Tax 拠出</summary>
 
-自動 Roth in-plan 変換付きで税引後拠出を行うことができます。設定するには、[これらの手順](https://drive.google.com/file/d/16Xpn4FiuX0EcCOkegSG5KwYi8IQhr3--/view?usp=sharing) に従ってください。自動変換のためには、Fidelity に 800-835-5097 で電話する必要があります。
+自動 Roth in-plan 変換付きで税引後拠出を行うことができます。設定するには、[これらの手順](https://drive.google.com/file/d/16Xpn4FiuX0EcCOkegSG5KwYi8IQhr3--/view?usp=sharing)に従ってください。自動変換のためには、Fidelity に 800-835-5097 で電話する必要があります。
 
-利点と考慮事項の詳細については、[Fidelity FAQ](https://drive.google.com/file/d/1WtisN4O4O7X_vtS6YP4X8nVP1xukc2uL/view?usp=sharing) と私たちの [SageView ウェビナー](https://drive.google.com/file/d/1u0LrgJFh3-_lQ-vgXlI2CBbnKJ0t7eX6/view?usp=sharing) を参照してください。
+利点と考慮事項の詳細については、[Fidelity FAQ](https://drive.google.com/file/d/1WtisN4O4O7X_vtS6YP4X8nVP1xukc2uL/view?usp=sharing)と私たちの [SageView ウェビナー](https://drive.google.com/file/d/1u0LrgJFh3-_lQ-vgXlI2CBbnKJ0t7eX6/view?usp=sharing)を参照してください。
 
 **重要:** 税引後控除は ESPP 拠出よりも優先されます。両方を希望する場合、十分な資金があることを確認するために慎重に計算してください。
 
@@ -398,15 +424,15 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 **質問とサポート:**
 
 - **401(k) の変更、ローン、変換:** Fidelity に 800-835-5097 で電話
-- **財務計画:** [SageView との無料相談](https://calendly.com/elamb-financial/30min?month=2023-10) をスケジュール
-- **一般的な質問:** [Compass](https://app.serval.com/new-request) に連絡
+- **財務計画:** [SageView との無料相談](https://calendly.com/elamb-financial/30min?month=2023-10)をスケジュール
+- **一般的な質問:** [Compass](https://app.serval.com/new-request)に連絡
 
 </details>
 
 <details markdown="1">
 <summary>401(k) ロールオーバー</summary>
 
-- **GitLab にロールイン:** [このフォーム](https://drive.google.com/file/d/1f8alBu0EijZ78Jh1QgGGWCdOqi_sZiO_/view) を完了するか、Fidelity に 800-835-5097 で電話
+- **GitLab にロールイン:** [このフォーム](https://drive.google.com/file/d/1f8alBu0EijZ78Jh1QgGGWCdOqi_sZiO_/view)を完了するか、Fidelity に 800-835-5097 で電話
 - **GitLab からロールアウト:** プロセスの詳細について Fidelity に直接連絡し、Settings > Accounts でアカウント番号を見つけてください
 
 </details>
@@ -423,7 +449,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 </details>
 
 <details markdown="1">
-<summary>401(k) Committee</summary>
+<summary>401(k) 委員会</summary>
 
 私たちの委員会は、プランパフォーマンスをレビューするために Fidelity と定期的に会議を行います:
 
@@ -437,13 +463,13 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 
 ## 人生の移行をサポート {#supporting-life-transitions}
 
-### フレキシブル支出口座と医療貯蓄口座
+### フレキシブル支出口座と医療貯蓄口座 {#flexible-spending--health-savings-accounts}
 
 医療費と扶養者ケア費用の管理を支援する税優遇アカウント:
 
 **Health Savings Account (HSA)**
 
-GitLab は毎月あなたの HSA に拠出します: 個人カバレッジには $100、家族カバレッジ（チームメンバー + 扶養家族）には $125。HSA 拠出と登録の対象となるには、High Deductible Health Plan (HDHP) に登録する必要があります。現在の年の拠出限度については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+GitLab は毎月あなたの HSA に拠出します: 個人カバレッジには $100、家族カバレッジ（チームメンバー + 扶養家族）には $125。HSA 拠出と登録の対象となるには、High Deductible Health Plan (HDHP) に登録する必要があります。現在の年の拠出限度については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 <details markdown="1">
 <summary>HSA の詳細</summary>
@@ -496,7 +522,7 @@ Fidelity は直接アカウント管理に対して管理料を請求する場�
 
 **Flexible Spending Accounts**
 
-FSA を使用すると、税引前ドルで医療費と扶養者ケア費用を支払うことができます。年間予想費用に基づいて、各給与から取り置くお金を設定します。変更はオープン登録または適格ライフイベント中のみ許可されます。現在の年の拠出限度については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view) を参照してください。
+FSA を使用すると、税引前ドルで医療費と扶養者ケア費用を支払うことができます。年間予想費用に基づいて、各給与から取り置くお金を設定します。変更はオープン登録または適格ライフイベント中のみ許可されます。現在の年の拠出限度については[**US Benefits Guide**](https://drive.google.com/file/d/15L8LMWI1CoUUoU3DcimxU3edITKs8QrV/view)を参照してください。
 
 1. **Dependent Care FSA** 育児および高齢者ケア費用をカバーします。適格扶養家族: 13 歳未満の子供、障害のある配偶者、ケアが必要な親。3 月 15 日までに発生し、3 月 31 日までに提出された請求。
 
@@ -507,7 +533,7 @@ FSA を使用すると、税引前ドルで医療費と扶養者ケア費用を�
 <details markdown="1">
 <summary>Medical and Limited Purpose FSA のロールオーバー詳細</summary>
 
-前年度のロールオーバー資金は、現在の税年度の 3 月 31 日後 5〜15 営業日（4 月 22 日まで）まで利用できません。
+前年度のロールオーバー資金は、現在の税年度の 3 月 31 日後 5 〜 15 営業日（4 月 22 日まで）まで利用できません。
 
 **拠出およびロールオーバー限度:**
 
@@ -553,7 +579,7 @@ Qualifying Life Event 中のみ FSA 拠出を増やすことができます。�
 
 </details>
 
-### Travel Health Reimbursement (HRA)
+### 医療のための旅費払戻し（HRA） {#travel-health-reimbursement-hra}
 
 GitLab は、自宅から 100 マイル以内で利用できない医療ケアのために旅行する際の交通費および宿泊費を払い戻すために、Travel HRA 給付を提供します。
 
@@ -594,17 +620,17 @@ MetLife Pet Insurance、柔軟なプラン:
 - 複数のペットの家族プラン
 - 24 時間 365 日のテレヘルスサービス
 - プロバイダーを切り替える際の既存症状のカバレッジ
-- [MetLife Pet Insurance の詳細](https://drive.google.com/file/d/11Q3NeSqNjqXMxSqADgNmKbGFCWTKLasH/view?usp=sharing) と [登録手順](https://drive.google.com/file/d/1KDrCVNlTo9Kl8EZ3sp_HhtP2Cz36ZxTg/view?usp=sharing) を確認してください
+- [MetLife Pet Insurance の詳細](https://drive.google.com/file/d/11Q3NeSqNjqXMxSqADgNmKbGFCWTKLasH/view?usp=sharing)と [登録手順](https://drive.google.com/file/d/1KDrCVNlTo9Kl8EZ3sp_HhtP2Cz36ZxTg/view?usp=sharing)を確認してください
 
 ### 教育サポート {#educational-support}
 
-**529 Savings Plans:** [ScholarShare 529](https://www.scholarshare529.com/) を通じた税優遇された教育貯蓄 - 800-544-5248 に電話して登録
+**529 Savings Plans:** [ScholarShare 529](https://www.scholarshare529.com/)を通じた税優遇された教育貯蓄 - 800-544-5248 に電話して登録
 
 - [ScholarShare Flyer Guide](https://drive.google.com/file/d/1D3k31fDxkeks7XigTa_Cn0_itIYoQW1A/view?usp=sharing)
 - [529 Information](https://drive.google.com/file/d/1GXAdVLVJLsruj-2s9twpQ3p1c6CzOAFn/view?usp=sharing)
 - **追加リソース:** [月次ウェビナー](https://www.scholarshare529.com/events) | 529 専門家との[相談スケジュール](https://www.scholarshare529.com/appointments)
 
-**学生ローンサポート:** [SoFi パートナーシップ](https://www.sofi.com/multi/5724403/) を通じたガイダンスと借換割引
+**学生ローンサポート:** [SoFi パートナーシップ](https://www.sofi.com/multi/5724403/)を通じたガイダンスと借換割引
 
 - [GitLab SoFi Benefits](https://drive.google.com/file/d/1kKZXeqwY96cHE4QpjrWjONSawwe-rkIf/view?usp=sharing)
 - ローン借換に独占的な 0.25% の金利割引
@@ -619,11 +645,11 @@ MetLife Pet Insurance、柔軟なプラン:
 
 **ADP LifeMart:** ADP を通じた追加割引プラットフォーム
 
-- **アクセス:** [ADP Workforce Now](https://workforcenow.adp.com/) にログイン → MYSELF タブ → Benefits → Employee Discounts - Life Mart
+- **アクセス:** [ADP Workforce Now](https://workforcenow.adp.com/)にログイン → MYSELF タブ → Benefits → Employee Discounts - Life Mart
 
 ### 通勤福利厚生 {#commuter-benefits}
 
-[WEX (Discovery Benefits)](https://drive.google.com/file/d/0B4eFM43gu7VPek1Ia0ZqYjhuT25zYjdYTUpiS1NFSXFXc0Vn/view?usp=sharing) を通じた税優遇された交通給付:
+[WEX (Discovery Benefits)](https://drive.google.com/file/d/0B4eFM43gu7VPek1Ia0ZqYjhuT25zYjdYTUpiS1NFSXFXc0Vn/view?usp=sharing)を通じた税優遇された交通給付:
 
 - 駐車場に月最大 $340
 - 交通機関に月最大 $340
@@ -637,13 +663,13 @@ MetLife Pet Insurance、柔軟なプラン:
 
 ## 休暇ポリシーと配慮 {#leave-policy--accommodations}
 
-**すべての休暇タイプ:** 米国の休暇ポリシー（FMLA、CFRA、州固有の休暇を含む）に関する完全な情報は、私たちの [Leave of Absence - US ハンドブックページ](/handbook/people-policies/leave-of-absence/us/) で確認できます。
+**すべての休暇タイプ:** 米国の休暇ポリシー（FMLA、CFRA、州固有の休暇を含む）に関する完全な情報は、私たちの [Leave of Absence - US ハンドブックページ](/handbook/people-policies/leave-of-absence/us/)で確認できます。
 
-**育児休暇:** ポリシーの詳細と申請手順については、私たちの [Parental Leave 情報](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) を参照してください。
+**育児休暇:** ポリシーの詳細と申請手順については、私たちの [Parental Leave 情報](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)を参照してください。
 
-**妊娠時の配慮:** 妊娠中の[合理的な配慮](/handbook/people-policies/inc-usa/#reasonable-accommodation) が必要な場合があります。GitLab の[妊娠時の配慮](/handbook/people-policies/inc-usa/#pregnancy-accommodation) ポリシーの詳細については、私たちの [Individuals with Disabilities ポリシー](/handbook/people-policies/inc-usa/#individuals-with-disabilities-policy) を参照してください。
+**妊娠時の配慮:** 妊娠中の[合理的な配慮](/handbook/people-policies/inc-usa/#reasonable-accommodation)が必要な場合があります。GitLab の[妊娠時の配慮](/handbook/people-policies/inc-usa/#pregnancy-accommodation)ポリシーの詳細については、私たちの [Individuals with Disabilities ポリシー](/handbook/people-policies/inc-usa/#individuals-with-disabilities-policy)を参照してください。
 
-[U.S. Fair Labor Standards Act (FLSA)](https://www.dol.gov/general/topic/workhours/vacation_leave) は、休暇、病気休暇、連邦またはその他の祝日など、勤務しなかった時間に対する支払いを必要としません。
+[U.S. Fair Labor Standards Act (FLSA)](https://www.dol.gov/general/topic/workhours/vacation_leave)は、休暇、病気休暇、連邦またはその他の祝日など、勤務しなかった時間に対する支払いを必要としません。
 
 ## 重要な書類と法的通知 {#important-documents--legal-notices}
 
@@ -658,7 +684,7 @@ MetLife Pet Insurance、柔軟なプラン:
 
 ### COBRA 継続カバレッジ {#cobra-continuation-coverage}
 
-GitLab を退職する場合、[COBRA](https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-coverage.pdf) を通じて医療、歯科、視力カバレッジを最大 18 か月継続できる場合があります。
+GitLab を退職する場合、[COBRA](https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-coverage.pdf)を通じて医療、歯科、視力カバレッジを最大 18 か月継続できる場合があります。
 
 <details markdown="1">
 <summary>COBRA タイムラインプロセス</summary>
@@ -669,7 +695,7 @@ GitLab を退職する場合、[COBRA](https://www.dol.gov/sites/dolgov/files/eb
 4. 受領から 60 日以内に登録（カバレッジは遡及）
 5. 支払いを最新の状態にするために登録から 45 日
 
-**現在の従業員:** 一般的な COBRA の質問については [Compass](https://app.serval.com/new-request) に連絡
+**現在の従業員:** 一般的な COBRA の質問については [Compass](https://app.serval.com/new-request)に連絡
 
 **元従業員:** 特定の管理に関する質問については WEX (Discovery) Benefits に 866-451-3399 で連絡
 
@@ -681,8 +707,8 @@ GitLab の医療プランは、Medicare Part D 目的に対して [CREDITABLE](h
 
 **Medicare リソース**
 
-- [www.medicare.gov](https://www.medicare.gov/) を訪問
-- 州の Health Insurance Assistance Program に電話（[「Medicare & You」ハンドブック](https://www.medicare.gov/medicare-and-you) を参照）
+- [www.medicare.gov](https://www.medicare.gov/)を訪問
+- 州の Health Insurance Assistance Program に電話（[「Medicare & You」ハンドブック](https://www.medicare.gov/medicare-and-you)を参照）
 - 1-800-MEDICARE (1-800-633-4227) または TTY 1-877-486-2048 に電話
 
 ### 税情報 {#tax-information}
@@ -703,8 +729,8 @@ Workday を通じてログインし、Documents → Tax Documents を選択し�
 - **401(k) サポート:** Fidelity に 800-835-5097
 - **FSA/通勤福利厚生:** WEX (Discovery) に 866-451-3399 または customerservice@wexhealth.com
 - **HSA:** Fidelity に 800-544-3716 または [Fidelity NetBenefits](https://nb.fidelity.com/public/nbpreloginnav/spa/fidelitywork/core/home)を通じて連絡
-- **Cigna メンバーサポート:** Cigna [One Guide Service](https://drive.google.com/file/d/1eIvtYtYPSt3Q0h-Byd16CFFfT0bxv8yF/view?usp=sharing) または [myCigna](https://my.cigna.com/web/public/guest) ポータルを通じてアクセス
-- **Kaiser メンバーサポート:** [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door) にログイン
+- **Cigna メンバーサポート:** Cigna [One Guide Service](https://drive.google.com/file/d/1eIvtYtYPSt3Q0h-Byd16CFFfT0bxv8yF/view?usp=sharing)または [myCigna](https://my.cigna.com/web/public/guest)ポータルを通じてアクセス
+- **Kaiser メンバーサポート:** [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door)にログイン
 - **システムに関する質問:** PlanSource および内部ポリシーサポートについては Compass に連絡
 
 </details>

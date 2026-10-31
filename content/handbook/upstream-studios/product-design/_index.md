@@ -2,27 +2,27 @@
 title: "プロダクトデザイン"
 description: "プロダクトデザインは Upstream Studios 内でユーザーが GitLab を体験する方法を形作る責任を担うディシプリンです。Product Designer は、コンセプトから提供まで Product Management および Engineering と戦略的パートナーとして協働します。"
 upstream_path: /handbook/upstream-studios/product-design/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-lastmod: "2026-07-23T12:35:46-03:00"
-translated_at: "2026-07-24T06:08:04+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-10-31T21:04:19.033086+00:00"
 translator: codex
 stale: false
 ---
 
-Product Designer は [Product Studios](/handbook/upstream-studios/product-studios/) に編成されており、Security、Core DevOps + Data、Artificial Intelligence、PLG/Monetization/Platform で構成されています。
+Product Designer は [Product Studios](/handbook/upstream-studios/product-studios/)に編成されており、Security、Core DevOps + Data、Artificial Intelligence、PLG/Monetization/Platform で構成されています。
 
 すべての Product Designer は次にコントリビュートします:
 
 1. 他のデザイナーの作業をレビューし、フィードバックを提供する
-1. [Pajamas Design System](https://design.gitlab.com/) にコントリビュートする
+1. [Pajamas Design System](https://design.gitlab.com/)にコントリビュートする
 1. コミュニティからのコントリビューションを支援する
 1. プラットフォーム全体の思考と協働
 
-Product Designer は [Manager of One](/handbook/values/#managers-of-one) として働き、同僚およびマネージャーと協働して[キャパシティを管理](/handbook/upstream-studios/product-design/workflow/capacity-management/)し、成果を提供します。日々の業務について詳しくは、[Product Designer のワークフローページ](/handbook/upstream-studios/product-design/workflow/)を参照してください。
+Product Designer は Manager of One として働き、同僚およびマネージャーと協働して[キャパシティを管理](/handbook/upstream-studios/product-design/workflow/capacity-management/)し、成果を提供します。日々の業務について詳しくは、[Product Designer のワークフローページ](/handbook/upstream-studios/product-design/workflow/)を参照してください。
 
 チームメンバーの担当とプロダクト領域については、[プロダクトカテゴリのページ](/handbook/product/categories/)を参照してください。
 
-## 戦略的パートナーシップ
+## 戦略的パートナーシップ {#strategic-partnership}
 
 Product Designer は、すでに行われた意思決定を下流で実行する担当者ではなく、プロダクトトリオにおける対等な戦略的パートナーとして働きます。私たちは最初から [Interlock 計画](/handbook/product-development/how-we-work/r-and-d-interlock/)に関与します。
 
@@ -43,15 +43,15 @@ Product Design との効果的なパートナーシップとは、次を意味�
 
 成功は協働によるもので、説明責任は相互にあります。私たちは共に勝ちます。
 
-## デザイン原則
+## デザイン原則 {#design-principles}
 
 私たちは、**洗練されたシンプルさ**を目指します。構造、発見、能力のバランスを取り、強力な機能への迅速なアクセスを提供しながら、基本機能における摩擦を減らす体験を作ります。
 
 私たちの [デザイン原則](https://design.gitlab.com/get-started/principles/)は Pajamas Design System に示されており、すべてのプロダクトデザイン作業の指針となります。
 
-## ワークフロー、プログラム、リソース
+## ワークフロー、プログラム、リソース {#workflows-programs-and-resources}
 
-### Product Designer 向け
+### Product Designer 向け {#for-product-designers}
 
 - [Product Designer のワークフロー](/handbook/upstream-studios/product-design/workflow/) - 日々の業務の包括的なガイド
 - [キャパシティ管理](/handbook/upstream-studios/product-design/workflow/capacity-management/) - 作業の優先順位付けとキャパシティの管理
@@ -60,20 +60,20 @@ Product Design との効果的なパートナーシップとは、次を意味�
 - [Product Design のペア](/handbook/upstream-studios/product-design/design-pair-rotation/)
 - [Product Design Operations](/handbook/upstream-studios/product-design/operations/) - ヘッドカウント計画、調達、ラベル、チームプロセス
 
-### Product Design Manager 向け
+### Product Design Manager 向け {#for-product-design-managers}
 
 - [Product Design Manager のワークフロー](/handbook/upstream-studios/product-design/product-design-manager/) - マネージャー固有のプロセスと責任
 
-### 専門領域
+### 専門領域 {#specializations}
 
 - [AI プロダクトデザイン](/handbook/upstream-studios/product-design/workflow/ai-design/) - AI 搭載機能をデザインするためのガイドライン
 - [UX テーマ](/handbook/upstream-studios/product-design/ux-themes/) - プロダクト全体にまたがる戦略的イニシアチブ
 
-### 協働プログラム
+### 協働プログラム {#collaboration-programs}
 
 - [ステージ横断のデザイン協働](/handbook/upstream-studios/how-we-work/cross-stage-design-collaboration/) - ステージグループをまたぐ協働
 
-### ツールとリソース
+### ツールとリソース {#tools-and-resources}
 
 - [AI の使用](/handbook/upstream-studios/how-we-work/ai-usage/)
 - [Competitor Evaluation](https://gitlab.com/gitlab-org/competitor-evaluations) (*GitLab チームメンバーのみアクセス可*)
@@ -83,7 +83,7 @@ Product Design との効果的なパートナーシップとは、次を意味�
 - [UX Scorecard](/handbook/product/ux/ux-scorecards/)
 - [Pajamas Design System](https://design.gitlab.com/)
 
-### チームとキャリア
+### チームとキャリア {#team-and-career}
 
 - [Product Designer のキャリアパス](/job-description-library/product/product-designer/) - キャリア開発と役割の責任
 - [Product Design Management のキャリアパス](/job-description-library/product/product-design-management/) - キャリア開発と役割の責任
