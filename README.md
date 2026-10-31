@@ -98,6 +98,26 @@ npm run check:staleness
 
 翻訳規約は [`.claude/translation-glossary.md`](.claude/translation-glossary.md) を唯一の用語集として扱います。Codex では [`.agents/skills/translate-batch/SKILL.md`](.agents/skills/translate-batch/SKILL.md) と [`.codex/agents/translator.toml`](.codex/agents/translator.toml)、Claude Code では [`.claude/agents/translator.md`](.claude/agents/translator.md) を参照してください。レビュー観点は Codex の [`.codex/agents/translation-reviewer.toml`](.codex/agents/translation-reviewer.toml) と Claude Code の [`.claude/agents/translation-reviewer.md`](.claude/agents/translation-reviewer.md) にあります。
 
+## GitHub Actions の依存関係更新
+
+Workflow の `uses:` には `actions/checkout@v7.0.1` のような完全なバージョンタグを指定し、実行するコミット SHA と間接依存は [`.github/workflows/actions.lock`](.github/workflows/actions.lock) で固定します。ロックファイルは [GitHub 公式の `gh-actions-lock`](https://github.com/github/gh-actions-lock) で生成し、手動編集しません。
+
+```bash
+# 初回のみ: GitHub CLI で認証し、拡張機能をインストール
+gh auth login
+gh extension install github/gh-actions-lock --pin v0.4.0
+
+# Workflow の追加・削除や uses: の変更後に実行
+gh actions-lock
+
+# ロックファイルの整合性と参照元を検証
+gh actions-lock --verify
+```
+
+Workflow と `actions.lock` は同じコミットに含めます。ネットワークなしで参照の網羅性だけを確認する場合は `gh actions-lock --verify-local` を使えます。PR の `Verify Actions Lockfile` が `--verify` で検証します。
+
+Dependabot は既存の週次スケジュールと 7 日間の cooldown に従って更新し、Workflow のバージョンと対応するロックファイルのエントリを同じ PR で更新します。レビューでは `commit` の変更を実行コードの変更として確認し、`owner_id` / `repo_id` の変更があれば参照先リポジトリの変更理由も確認します。
+
 ## デプロイ
 
 `main` への push で Cloudflare Pages に自動デプロイされます ([`.github/workflows/app_deploy.yml`](.github/workflows/app_deploy.yml))。GitHub Actions が `hugo --minify` で `public/` を生成し、`cloudflare/pages-action` が direct-upload します。

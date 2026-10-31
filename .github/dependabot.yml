@@ -5,8 +5,8 @@ updates:
     schedule:
       interval: weekly
       day: monday
-    # Dependabot rewrites `uses:` lines to the new SHA and updates the
-    # trailing `# vX.Y.Z` comment automatically.
+    # Dependabot updates exact version tags in `uses:` and regenerates the
+    # matching entries in .github/workflows/actions.lock in the same PR.
     commit-message:
       prefix: "chore(actions)"
     open-pull-requests-limit: 5

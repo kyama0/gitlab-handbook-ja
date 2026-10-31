@@ -105,6 +105,8 @@ CodeRabbit がレビュー可能なのは **1 PR あたり最大 150 ファイ�
 
 ## CI ワークフロー
 
+- GitHub Actions の `uses:` は完全なバージョンタグを使い、コミット SHA と間接依存は `.github/workflows/actions.lock` で固定する。Workflow の追加・削除や `uses:` の変更後は `gh actions-lock` と `gh actions-lock --verify` を実行し、Workflow とロックファイルを同じコミットに含める。ロックファイルは手動編集しない。詳細は [README.md の依存関係更新手順](README.md#github-actions-の依存関係更新) を参照。
+- `verify_actions_lock.yml` — Workflow / Dependabot 設定を変更する PR と `main` への push に対して、`gh actions-lock --verify` でロックファイルの整合性と参照元を検証。
 - `app_ci.yml` — Hugo 関連ファイル（`config/`, `content/`, `layouts/`, `data/`, `assets/`, `static/`, `go.mod`, `go.sum`, `package*.json`, `.tool-versions`）を変更する PR に対して: hugo build + dependency-review + gitleaks。サブモジュールチェックアウト付き（Hugo Modules の解決には不要だが、`assets/includes/` 等の検証で参照する場合あり）。
 - `app_deploy.yml` — `main` への push に対して: hugo build して Cloudflare Pages にプッシュ。出力ディレクトリは `public/`。
 - `infra_plan.yml` / `infra_apply.yml` — `tfcmt` 経由で terraform を実行し、plan を PR コメントとして投稿。
