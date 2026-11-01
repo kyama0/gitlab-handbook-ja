@@ -5,9 +5,9 @@ creation-date: "2025-07-17"
 authors: [ "@sangwoo_han_gitlab", "@ayufan" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/container_registry_routing_service/
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-19T08:53:33-04:00"
-translated_at: "2026-10-20T10:55:56Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-20T09:09:37-04:00"
+translated_at: "2026-11-01T16:52:28+00:00"
 translator: claude
 stale: false
 ---
@@ -33,7 +33,7 @@ Container Registry のトラフィックは、クライアントが認証情報�
 
 | メソッド | パス | 操作 | ルーティング方法 |
 | --- | --- | --- | --- |
-| GET | `/jwt/auth?scope=repository:{name}:{actions}`。[RFC 6749 §3.3](https://datatracker.ietf.org/doc/html/rfc6749#section-3.3) に従い、複数のスコープはパラメータの繰り返し、または 1 つのパラメータ内のスペース区切り（`?scope=A+B`）で届きます | 1 つ以上のリポジトリ用のトークンを発行します。 | リポジトリスコープでルーティング可能 |
+| GET | `/jwt/auth?scope=repository:{name}:{actions}`。[RFC 6749 §3.3](https://datatracker.ietf.org/doc/html/rfc6749#section-3.3)に従い、複数のスコープはパラメータの繰り返し、または 1 つのパラメータ内のスペース区切り（`?scope=A+B`）で届きます | 1 つ以上のリポジトリ用のトークンを発行します。 | リポジトリスコープでルーティング可能 |
 | GET | リポジトリスコープのない `/jwt/auth`（たとえば `offline_token=true`） | `docker login` と同様に認証だけを行います | 1) Basic トークンでルーティングします<br>2) Legacy Cell にフォールバックします |
 | POST | `/jwt/auth` | `application/x-www-form-urlencoded` 本文に `scope` を含む [OAuth2 トークンエンドポイント](https://distribution.github.io/distribution/spec/auth/oauth/) | 到達しません。[`config/routes.rb`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/config/routes.rb)は必ず `404` を返し、GitLab は `WWW-Authenticate` チャレンジで OAuth2 の利用を通知しません |
 
@@ -656,9 +656,9 @@ sequenceDiagram
 
 `registry.gitlab.com` と `gitlab.com` は、異なるアルゴリズムで分類する異なるトラフィックを扱います。そのため、上のシーケンス図では別々のルーターとして示しています。
 
-HTTP Router は、[シャード](https://gitlab.com/gitlab-org/cells/http-router/-/blob/main/docs/shards.md)を通じて、すでにこれをサポートしています。同じコードベースを実行する Cloudflare Workers を独立してデプロイし、Wrangler 環境とそれを指す Cloudflare ルートだけを変えます。`registry.gitlab.com/*` にバインドした `registry` シャードがそのトラフィックを担当し、catchall シャードがそれ以外を担当することで、レジストリは独自のデプロイ、エラーバジェット、ダッシュボードを持てます。
+HTTP Router は、すでにこれをサポートしています。同じコードベースを実行する Cloudflare Workers を、それぞれ独立して複数の [Workers](https://gitlab.com/gitlab-org/cells/http-router/-/blob/main/docs/workers.md)としてデプロイし、Wrangler の構成とそれらを指す Cloudflare ルートだけを変えます。各 Worker は、1 つの環境内で 1 つのトラフィックスコープを担当します。新しい `registry` スコープには環境ごとに 1 つの Worker を用意し、本番環境では `registry.gitlab.com/*` にバインドします。この Worker がそのトラフィックを担当し、`catchall` Workers がそれ以外を担当することで、レジストリは独自のデプロイ、エラーバジェット、ダッシュボードを持てます。
 
-分割の基準は機能領域ではなくホスト名であることに注意してください。`/jwt/auth` はレジストリフローの一部ですが、`gitlab.com` にあるため catchall シャードに残ります。
+分割の基準は機能領域ではなくホスト名であることに注意してください。`/jwt/auth` はレジストリフローの一部ですが、`gitlab.com` にあるため `catchall` Workers に残ります。
 
 ### HTTP Router に必要な追加事項 {#what-the-http-router-must-add}
 
@@ -671,7 +671,7 @@ HTTP Router は、[シャード](https://gitlab.com/gitlab-org/cells/http-router
 2 つの制限によって、この並列呼び出しが増幅攻撃の経路になるのを防ぎます。`/jwt/auth` は、クライアントがトークンを*取得する*場所であるため、認証前にアクセスできます。そのため、誰でも好きな数の `scope` パラメータを含むリクエストを送信でき、放置すると、その 1 つずつがセル群全体のルーティングを支える Topology Service へのクレーム検索になります。
 
 - **最初に重複を排除します。** スコープはリポジトリパスのトップレベルのルートで分類するため、`repository:group-a/img1:pull` と `repository:group-a/img2:pull` は、2 回ではなく 1 回の検索になります。ルーターは、判断に用いるスコープ間で*異なる*ルートを解決するため、1 つのグループから複数のイメージを pull するビルドのような通常の複数スコープのリクエストを、1 回の呼び出しにまとめられます。
-- **次に、異なるルート数に上限を設け**、超えた場合は [`400 UNSUPPORTED`](#the-un-routable-response) を返します。Topology Service では、同じ理由で、公開するすべての複数クレーム用のエントリポイントにすでに上限を設けています。`Classify` は 5 個を超えるクレームのフォールバックチェーンを拒否し、`ListRecords` でもクレームの種類に同様の制限を設けています。
+- **次に、異なるルート数に上限を設け**、超えた場合は [`400 UNSUPPORTED`](#the-un-routable-response)を返します。Topology Service では、同じ理由で、公開するすべての複数クレーム用のエントリポイントにすでに上限を設けています。`Classify` は 5 個を超えるクレームのフォールバックチェーンを拒否し、`ListRecords` でもクレームの種類に同様の制限を設けています。
 
 上限は定数ではなく、ルーターの構成に持たせます。異なるルートがすべて同じセルにあるリクエストは、正当にルーティング可能なので、上限が低すぎると実際のトラフィックを拒否してしまいます。また、現在のレジストリトラフィックからは、適切な上限は分かりません。最初は 10 としてリリースし、リクエストごとの異なるルート数をメトリクスとして出力し、その証拠に基づいて制限を厳しくします。
 
@@ -694,7 +694,7 @@ registry_address = "registry.my.cell-1.example.com"
 
 #### Classify RPC の応答 {#classify-rpc-response}
 
-`Classify` は、解決したセルのアドレスを含む `proxy` メッセージとともに `PROXY` アクションを返します。このプロジェクトでは、どちらかのアドレスを要求する方法を追加する代わりに、そのメッセージへ **2 つ目のアドレスフィールド**を追加します。`ProxyInfo` に `registry_address` を追加し、セルの新しい構成キーから設定して、呼び出し元が必要なフィールドを読み取ります。レジストリシャードは `proxy.registry_address` を読み、Web トラフィックをルーティングするものはすべて、引き続き `proxy.address` を読みます。`ClassifyRequest` は変更しません。クレームチェーン、セッションプレフィックス、セル ID、`FIRST_CELL` のすべての `Classify` 経路でこのフィールドを設定するため、トークンによるルーティングを含め、シャードがどのようにセルを解決してもレジストリアドレスが返ります。
+`Classify` は、解決したセルのアドレスを含む `proxy` メッセージとともに `PROXY` アクションを返します。このプロジェクトでは、どちらかのアドレスを要求する方法を追加する代わりに、そのメッセージへ **2 つ目のアドレスフィールド**を追加します。`ProxyInfo` に `registry_address` を追加し、セルの新しい構成キーから設定して、呼び出し元が必要なフィールドを読み取ります。`registry` Workers は `proxy.registry_address` を読み、Web トラフィックをルーティングするものはすべて、引き続き `proxy.address` を読みます。`ClassifyRequest` は変更しません。クレームチェーン、セッションプレフィックス、セル ID、`FIRST_CELL` のすべての `Classify` 経路でこのフィールドを設定するため、トークンによるルーティングを含め、`registry` Workers がどのようにセルを解決してもレジストリアドレスが返ります。
 
 ```proto
 // The network endpoints of the target cell.
@@ -712,10 +712,10 @@ message ProxyInfo {
 }
 ```
 
-レジストリには新しい検索は必要なく、検索ですでに一致したセルから別のアドレスを取り出すだけで十分です。[上記の並列呼び出し](#what-the-http-router-must-add)では、判断に用いる各スコープを単一クレームの `Classify` で解決します。これは catchall シャードが `/jwt/auth` に対してすでに行うクレーム検索と同じです。そのため `ClassifyRegistry` RPC を追加しても、`type`／`value` とクレームチェーンの両方を含む入力全体を重複させるだけで、新しい内容は表現しません。既存の呼び出しから 2 つ目のアドレスを取得する方法は 2 つに絞られます。`ClassifyRequest` に `target` 引数（`web` または `registry`）を追加して `proxy.address` に含めるアドレスを選ぶ方法と、2 つ目のフィールドに並べて含める方法です。次の 2 点が、2 つ目のフィールドを選ぶ決め手になります。
+レジストリには新しい検索は必要なく、検索ですでに一致したセルから別のアドレスを取り出すだけで十分です。[上記の並列呼び出し](#what-the-http-router-must-add)では、判断に用いる各スコープを単一クレームの `Classify` で解決します。これは `catchall` Workers が `/jwt/auth` に対してすでに行うクレーム検索と同じです。そのため `ClassifyRegistry` RPC を追加しても、`type`／`value` とクレームチェーンの両方を含む入力全体を重複させるだけで、新しい内容は表現しません。既存の呼び出しから 2 つ目のアドレスを取得する方法は 2 つに絞られます。`ClassifyRequest` に `target` 引数（`web` または `registry`）を追加して `proxy.address` に含めるアドレスを選ぶ方法と、2 つ目のフィールドに並べて含める方法です。次の 2 点が、2 つ目のフィールドを選ぶ決め手になります。
 
 - **1 つのフィールドで 2 つのエンドポイントを表すと、フェイルクローズにできません。** 新しいルーターが古いサーバーにレジストリのターゲットを要求すると、引数は不明なフィールドとして無視され、レジストリアドレスという名前で *Web* アドレスが返り、どこにもログが残りません。応答で実際に採用したターゲットも返さない限り、この誤ルーティングは検出できないため、引数を使う方法でも結局は 2 つ目のフィールドが必要になります。フィールドを分けると、問題を検出するのではなく取り除けます。古いサーバーでは単に `proxy.registry_address` が存在せず、ルーターが空文字列を読み取り、リクエストはフェイルクローズで失敗します。
-- **`target` はリクエスト固有の情報を持ちません。** レジストリには、`registry.gitlab.com/*` にバインドされた[専用のルーターシャード](#a-separate-http-router-instance-for-registrygitlabcom)があります。そのため、このシャードの `Classify` 呼び出しはすべてレジストリアドレスを求め、catchall シャードの呼び出しはすべて Web アドレスを求めます。デプロイ全体で一定の値は、リクエストパラメータではなく構成です。
+- **`target` はリクエスト固有の情報を持ちません。** レジストリには、`registry.gitlab.com/*` にバインドされた[専用の HTTP Router Workers](#a-separate-http-router-instance-for-registrygitlabcom)があります。そのため、これらの Workers の `Classify` 呼び出しはすべてレジストリアドレスを求め、`catchall` Workers の呼び出しはすべて Web アドレスを求めます。デプロイ全体で一定の値は、リクエストパラメータではなく構成です。
 
 応答フィールドを使う場合に失うのは、サーバー側での未検出という結果です。`Classify` は呼び出し元がどちらのアドレスを求めているか分からないため、`registry_address` のないセルは `NotFound` ではなく、そのフィールドが空の `PROXY` を返します。成功した結果は、`NotFound` よりもおよそ 1 桁長くキャッシュされます。`ClassifyPages` は、一致したセルに `pages_address` がなければ未検出として応答しますが、それができるのは、専用 RPC なので呼び出し元がどのアドレスを求めているか分かるためです。両方を扱う RPC にはできません。代わりに、未検出の処理を呼び出し元が担います。そのため、この契約は、生成されるすべてのクライアントに引き継がれる proto のコメントに記載します。いずれかの処理が読み取る**前に**すべてのセルで `registry_address` を構成しておけば、この状況自体を防げるため、そのロールアウト手順はフィールドの追加より先に行います。
 

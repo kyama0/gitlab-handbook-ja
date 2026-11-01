@@ -2,18 +2,18 @@
 title: "GitLab におけるハンドブックの使い方"
 description: "GitLab がハンドブックをどのように使っているかについて。"
 upstream_path: "/handbook/about/handbook-usage/"
-upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
-translated_at: "2026-08-01T16:25:30+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T15:22:18+00:00"
 translator: "codex"
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-10-30T14:17:27-04:00"
 ---
 
 ## 運用の流れ {#flow-structure}
 
 1. (プロセス上の) 問題が発生します。多くの場合、Issue やチャットで浮上します。
 1. ハンドブックへのマージリクエストという形で提案を作成します。
-1. マージされたら、MR またはコミットの差分へのリンクを添えて変更を周知します。重大なものは `#whats-happening-at-gitlab` Slack チャンネルに投稿します。中程度のものは可視性を高めるため `#handbook` チャンネルに、変更の一行要約を添えて投稿します。元になった Issue があれば、差分へのリンクを残してクローズします。
+1. マージされたら、MR またはコミットの差分へのリンクを添えて変更を周知します。重大なものは #whats-happening-at-gitlab Slack チャンネルに投稿します。中程度のものは可視性を高めるため #handbook チャンネルに、変更の一行要約を添えて投稿します。元になった Issue があれば、差分へのリンクを残してクローズします。
 
 ミーティング中に提案をリアルタイムで編集したい場合があり、その際は Google Doc を使う必要があります。その場合、Google Doc の最初の項目には、ミーティング終了後に内容を移動するハンドブックページの URL を記載してください。
 
@@ -25,7 +25,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 **「ハンドブックファースト」** のメンタリティを持つことで、重複が生じず、ハンドブックは常に最新の状態に保たれ、他の人がより貢献しやすくなります。
 
-私たちは「ハンドブックファースト」であるだけでなく、「パブリックハンドブックファースト」でもあります。情報が [社内限定](/handbook/communication/confidentiality-levels/#internal) のものである場合は、内部ハンドブックに記録すべきですが、[公開できる](/handbook/communication/confidentiality-levels/#not-public) ものについてはデフォルトでパブリックハンドブックに記載します。これにより、[SAFE に](/handbook/legal/safe-framework/) 共有できるあらゆる情報に誰もがアクセスできるようになります。これは、透明性、効率性、結果を含む GitLab の [バリュー](/handbook/values/) を支えます。また、本来公開すべき情報の置き場所として内部ハンドブックが使われたり、矛盾する、あるいは重複する信頼できる情報源になったりすることを防ぎます。
+私たちは「ハンドブックファースト」であるだけでなく、「パブリックハンドブックファースト」でもあります。情報が [社内限定](/handbook/communication/confidentiality-levels/#internal)のものである場合は、内部ハンドブックに記録すべきですが、[公開できる](/handbook/communication/confidentiality-levels/#not-public)ものについてはデフォルトでパブリックハンドブックに記載します。これにより、[SAFE に](/handbook/legal/safe-framework/)共有できるあらゆる情報に誰もがアクセスできるようになります。これは、透明性、効率性、結果を含む GitLab のバリューを支えます。また、本来公開すべき情報の置き場所として内部ハンドブックが使われたり、矛盾する、あるいは重複する信頼できる情報源になったりすることを防ぎます。
 <!-- blank line -->
 
 <figure class="video_container">
@@ -33,13 +33,13 @@ lastmod: "2026-07-28T15:04:15+01:00"
 </figure>
 
 <!-- blank line -->
-[INSEAD](https://www.insead.edu/) のケーススタディインタビュー（上記参照）でオールリモートであることに関連する課題について尋ねられたとき、GitLab の共同創業者である Sid Sijbrandij は次のように答えました。
+[INSEAD](https://www.insead.edu/)のケーススタディインタビュー（上記参照）でオールリモートであることに関連する課題について尋ねられたとき、GitLab の共同創業者である Sid Sijbrandij は次のように答えました。
 
 > 最大の問題は、GitLab がハンドブックファーストで動かないことです。私たちには、協働し、新しいメンバーをオンボーディングし、集団で考えることを可能にする素晴らしいハンドブックがあります。
 >
 > しかし、変更をハンドブックに伝えるのは直感に反します。変更を伝えたいとき、人々のデフォルトは、Slack メッセージを送る、メールを送る、プレゼンテーションを行う、ミーティングで人に話す ── ハンドブックに変更を加えること以外の *あらゆること* です。
 >
-> その方が彼らにとっては遅いのです。他のどんな形式を使う方が速いのです。ハンドブックに変更を加えるなら、まずハンドブックの関連部分を見つけなければならず、自分の変更が収まるようにハンドブックを調整しなければならないこともあり、技術的なプロセスと 1 〜 2 回のレビューを経なければならず、デプロイされるまで少し待たなければなりません。
+> ハンドブックに変更を加える方が、その人たちにとっては遅いのです。他のどんな形式を使う方が速いのです。ハンドブックに変更を加えるなら、まずハンドブックの関連部分を見つけなければならず、自分の変更が収まるようにハンドブックを調整しなければならないこともあり、技術的なプロセスと 1 〜 2 回のレビューを経なければならず、デプロイされるまで少し待たなければなりません。
 >
 > それは他のどの選択肢よりも遅いのです。しかし、それによって、その後に変更をコミットする人々がその変更の上に積み上げられるようになります。その余分な時間をかけるとき、それは次のものへの基盤を築いているのです。
 >
@@ -53,9 +53,9 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ハンドブックは、GitLab のチームメンバーが仕事をするために必要なあらゆるコンテンツに焦点を当てています。役立つかもしれない他のコンテンツについては、その情報源にリンクしてください。
 
-- より広いコミュニティからのコード貢献にも当てはまるドキュメントはすべて、ハンドブックではなく GitLab プロジェクト内（例えば [Contributing](https://docs.gitlab.com/ee/development/contributing/) や [コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)）に置くべきです。ハンドブックはチームメンバー専用です。
-- ユーザー向けの企業情報については、メインのマーケティング [ウェブサイト](/handbook/marketing/digital-experience/) と [ブログ](/handbook/marketing/blog/) があります。
-- ハンドブックは、現在および将来の GitLab チームメンバーに関わる事項のみを対象とします。GitLab のユーザーに関わる事項であれば、[GitLab ドキュメント](https://docs.gitlab.com/)、[GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)、[CONTRIBUTING ファイル](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md)、または [PROCESS ファイル](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/PROCESS.md) に文書化すべきです。
+- より広いコミュニティからのコード貢献にも当てはまるドキュメントはすべて、ハンドブックではなく GitLab プロジェクト内（例えば [Contributing](https://docs.gitlab.com/ee/development/contributing/)や [コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)）に置くべきです。ハンドブックはチームメンバー専用です。
+- ユーザー向けの企業情報については、メインのマーケティング [ウェブサイト](/handbook/marketing/digital-experience/)と [ブログ](/handbook/marketing/blog/)があります。
+- ハンドブックは、現在および将来の GitLab チームメンバーに関わる事項のみを対象とします。GitLab のユーザーに関わる事項であれば、[GitLab ドキュメント](https://docs.gitlab.com/)、[GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)、[CONTRIBUTING ファイル](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md)、または [PROCESS ファイル](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/PROCESS.md)に文書化すべきです。
 
 ## ハンドブックのガイドライン {#handbook-guidelines}
 
@@ -70,13 +70,13 @@ lastmod: "2026-07-28T15:04:15+01:00"
 1. 覚えておいてください、ハンドブックは私たちがやりたいと願っていること、形式上やるべきこと、数ヶ月前にやったことではありません。**それは私たちが今この瞬間にやっていることです。** 本当にプロセスを変えるためには、必ずハンドブックを変更してください。プロセスの変更を提案するには、ハンドブックを変更するマージリクエストを作成します。ハンドブックの変更を提案するのに別のチャンネル（メール、Google Doc など）を使わないでください。
 1. ハンドブックがプロセスです。「プロセス」「ポリシー」「ベストプラクティス」「標準作業手順書」といった名前のセクションは、より深い問題の兆候です。これは、あるプロセスについての散文的な説明と、同じプロセスについての番号付きリストの説明とが重複していて、1 つのプロセスの説明にまとめるべきであることを示しているかもしれません。
 1. 何かを伝えるときは、テキストをメール/チャット等に含める代わりに、常に **ハンドブック** の関連する（かつ最新の）部分へのリンクを含めてください。「ハンドブックの関連部分にリンクしてもらえますか?」と尋ねることで、他の人にこれを思い出させることができます。
-1. ハンドブックの変更を把握しておくために、誰でも `#handbook` チャンネルに参加できます。
+1. ハンドブックの変更を把握しておくために、誰でも [`#handbook`](https://gitlab.enterprise.slack.com/archives/C81PT2ALD)チャンネルに参加できます。
 
 #### プレゼンテーションを作るのではなく、ハンドブックをスクリーンショットする {#screenshot-the-handbook-instead-of-creating-a-presentation}
 
-プレゼンテーションは、取締役会向けプレゼンのような一時的なコンテンツには最適です。[リーダーシップトレーニング](/handbook/leadership/#training) のような [エバーグリーンコンテンツ](https://web.archive.org/web/20170503174119/https://www.thebalance.com/what-is-evergreen-content-definition-dos-and-don-ts-2316028) は、ハンドブックに基づくべきです。これは [ハンドブックファーストで働く](/handbook/company/culture/all-remote/handbook-first/) ことの重要な要素です。
+プレゼンテーションは、取締役会向けプレゼンのような一時的なコンテンツには最適です。[リーダーシップトレーニング](/handbook/leadership/#training)のような [エバーグリーンコンテンツ](https://web.archive.org/web/20170503174119/https://www.thebalance.com/what-is-evergreen-content-definition-dos-and-don-ts-2316028)は、ハンドブックに基づくべきです。これは [ハンドブックファーストで働く](/handbook/company/culture/all-remote/handbook-first/)ことの重要な要素です。
 
-エバーグリーンコンテンツ向けのプレゼンテーションを作成する際は、コンテンツをコピー＆ペーストする（あるいはハンドブックの情報をそのまま映すようにスライドを整形する）のではなく、ハンドブックのスクリーンショットを撮り、表示しているページへのリンクを提供してください。このアプローチは [非同期コミュニケーションを優先する姿勢](/handbook/values/#bias-towards-asynchronous-communication) を示すものであり、その根拠は以下のとおりです。
+エバーグリーンコンテンツ向けのプレゼンテーションを作成する際は、コンテンツをコピー＆ペーストする（あるいはハンドブックの情報をそのまま映すようにスライドを整形する）のではなく、ハンドブックのスクリーンショットを撮り、表示しているページへのリンクを提供してください。このアプローチは非同期コミュニケーションを優先する姿勢を示すものであり、その根拠は以下のとおりです。
 
 1. ハンドブックの更新とプレゼンテーション用コンテンツの作成の両方を行う手間が省けます。準備の一環としてハンドブックがチェックされ改善されるので、余分な作業になりません
 1. ハンドブックは最新の状態に保たれるので、人々がプレゼンテーション内の古い情報を見ることがなくなります
@@ -86,7 +86,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 1. コンテンツが私たちの他のプロセスと統合され、文脈の中で示されます
 1. ウェブページの方が検索やリンクが容易なため、プレゼンテーションよりも多くの人がそのコンテンツを利用します
 1. 私たちがどうやっているかの例を示すことで、世界中の他の組織や学生を助けることになります
-1. [私たちのハンドブックを使うことの利点](/handbook/about/handbook-usage/) のいくつかも参照してください
+1. [私たちのハンドブックを使うことの利点](/handbook/about/handbook-usage/)のいくつかも参照してください
 
 プレゼンテーションの見た目は洗練されていないものになりますが、利点がその懸念を上回ります。
 
@@ -95,35 +95,35 @@ lastmod: "2026-07-28T15:04:15+01:00"
 ### ハンドブックを検索する {#searching-the-handbook}
 
 すべての GitLab ハンドブックページには、ページ上部付近に検索用の検索フィールドがあります。
-ハンドブックをより速く効率的に検索するためのヒントについては、[プロのように GitLab を検索する](/handbook/tools-and-tips/searching/) ページを参照してください。
+ハンドブックをより速く効率的に検索するためのヒントについては、[プロのように GitLab を検索する](/handbook/tools-and-tips/searching/)ページを参照してください。
 
 ### プロセスを変更または定義する方法 {#how-to-change-or-define-a-process}
 
-1. ガイドラインやプロセスを変更するには、マージリクエストの形で [**編集を提案**](editing-handbook/_index.md) してください。
+1. ガイドラインやプロセスを変更するには、マージリクエストの形で [**編集を提案**](editing-handbook/_index.md)してください。
 1. 変更を迅速にマージしてもらうには、マージ権限を持つ適切なチームメンバーに依頼していることを確認してください。誰が責任者か分からない場合は、関連するプロジェクトの `CODEOWNERS` ファイルを参照（し、追記）してください。
 
-   - 例えば、CMO（Chief Marketing Officer）スタッフメンバーは自分の職能に固有のマージリクエストを承認でき、CMO はマーケティング横断的なマージリクエストを承認します。Chief of Staff to the CEO/CEO は、GitLab の [バリュー](/handbook/values/) ページのような全社横断的な影響を持つマージリクエストを承認します。
+   - 例えば、CMO（Chief Marketing Officer）スタッフメンバーは自分の職能に固有のマージリクエストを承認でき、CMO はマーケティング横断的なマージリクエストを承認します。Chief of Staff to the CEO/CEO は、全社横断的な影響を持つマージリクエストを承認します。
 
 1. マージ後、該当する場合は `#whats-happening-at-gitlab` Slack チャンネルにこれを投稿できます。「ハンドブックのマージリクエストを送ってもらえますか?」と尋ねることで、他の人にこれを思い出させることができます。
 1. ハンドブックのレイアウトを大幅に変更する場合は、**この MR が直接影響を与える** レビューアプリの該当ページへのリンクを残してください。リンクとともに、MR の説明にできるだけ多くの情報を含めてください。これにより、差分を見なくても MR の目的を誰もが理解できるようになります。
-1. ハンドブックの変更を把握し続けるのは難しい場合があります。誰かが MR の内容をすばやく理解できるよう、特にマージリクエストのタイトルに重点を置いて [コミットの件名のガイドライン](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#commit-messages-guidelines) に従ってください。
+1. ハンドブックの変更を把握し続けるのは難しい場合があります。誰かが MR の内容をすばやく理解できるよう、特にマージリクエストのタイトルに重点を置いて [コミットの件名のガイドライン](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#commit-messages-guidelines)に従ってください。
 1. プロセスの変更は、**マージされた差分**（変更前後を示すコミット）へのリンクで伝えてください。議論やフィードバックを目的として変更を伝える場合は、**マージされていない差分** にリンクしても構いません。先にプロセスを変更してから、ドキュメントを優先度の低いタスクとして扱わないでください。後でドキュメント化しようと計画すると、必ず変更を伝える作業が重複し、ドキュメントが古くなってしまいます。「先にハンドブックを更新してもらえますか?」と尋ねることで、他の人にこれを思い出させることができます。
-1. 可能な場合は、プロセスの変更をイテレーティブに導入してください。[小さなマージリクエストを作成する](/handbook/values/#make-small-merge-requests) ことでハンドブックに貢献することが重要です。これにより、そのプロセスの対象オーディエンスの間で採用が進みやすくなります。不必要に大きく、トップダウンで、破壊的なプロセス変更は避けたいのです。こうした種類のプロセス変更は、[DRI](/handbook/people-group/directly-responsible-individuals/) の権限を奪い、人々を結果ではなくプロセスに集中させてしまう可能性があります。
+1. 可能な場合は、プロセスの変更をイテレーションで導入してください。小さなマージリクエストを作成することでハンドブックに貢献することが重要です。これにより、そのプロセスの対象オーディエンスの間で採用が進みやすくなります。不必要に大きく、トップダウンで、破壊的なプロセス変更は避けたいのです。こうした種類のプロセス変更は、[DRI](/handbook/people-group/directly-responsible-individuals/)の権限を奪い、人々を結果ではなくプロセスに集中させてしまう可能性があります。
 1. 他のすべてのものと同様に、私たちのプロセスは常に流動的です。すべては常にドラフトであり、最初のバージョンもハンドブックにあるべきです。ハンドブックへの変更を提案する場合は、可能な限り **Issue を飛ばしてマージリクエストを提出してください**。（Issue の説明よりも、マージリクエストでの変更提案が望ましいです）。変更によって影響を受ける人々をマージリクエストでメンションしてください。多くの場合、提案された変更を見られるため、マージリクエストの方が協働しやすいです。
 1. **何かが一部のユーザーグループ向けの限定的なテストである場合**、それをハンドブックに追加し、その旨を注記してください。そして、テストが終わったら注記を削除し、すべてのケースで新しいプロセスを使うようにします。
 1. GitLab の内外を問わず、誰かが良い提案をしたら、それをハンドブックに追加するよう招いてください。その人に該当するページとセクションの URL を送り、もし彼らができないなら代わりにやってあげると申し出てください。彼ら自身に提案を作成して送ってもらうことで、変更が実現し、彼らの知識が反映されます。
 1. マージリクエストを提出するときは、それがすばやくマージされるようにしてください。単一の小さな変更をすばやく行うことで、あなたのブランチが master から大きく遅れてマージコンフリクトを起こすのを防げます。更新を同日中に作成しマージすることを目指してください。マージリクエストで人々をメンションするか、Slack で連絡してください。既存のものに加えて大きな改善の提案をもらった場合は、それを別途行うことを検討してください。Issue を作成し、既存の MR をマージしてもらってから、新しいマージリクエストを作成します。
 1. コンテンツを移動しなければならない場合は、それを移動するだけで他には何もしないマージリクエストにしてください。整理したり、要約したり、拡張したりしたい場合は、移動の MR がマージされた後に行ってください。この方がレビューがずっと簡単です。
 1. **ハンドブックのプロセスの「なぜ」を追加する** よう心がけてください。ビジネス上の目標は何か、このセクションのきっかけは何かを記しましょう。「なぜ」を追加することで、「なぜ」が変わったかどうかを評価できるため、将来プロセスを変更しやすくなります。
-1. [エンジニアリングワークフロー](/handbook/engineering/workflow) でプロセスを追加または変更する際は、`X` ヶ月後にレトロを予定することを検討してください。レトロは、新しいプロセスの [影響を検討](/handbook/about/handbook-usage/#considerations-when-adding-an-additional-process) し、さらなるイテレーションが必要か、それとも削除できるかを判断する機会です。
+1. [エンジニアリングワークフロー](/handbook/engineering/workflow)でプロセスを追加または変更する際は、`X` ヶ月後にレトロを予定することを検討してください。レトロは、新しいプロセスの [影響を検討](/handbook/about/handbook-usage/#considerations-when-adding-an-additional-process)し、さらなるイテレーションが必要か、それとも削除できるかを判断する機会です。
 
 #### プロセスを追加する際の考慮事項 {#considerations-when-adding-an-additional-process}
 
-必須ではありませんが、新しいプロセスの導入後 `X` ヶ月先に非同期のレトロ MR/issue を予定すると役立ちます。
+必須ではありませんが、新しいプロセスの導入後 `X` ヶ月先に非同期のレトロ MR/Issue を予定すると役立ちます。
 
-何が成功なのかを判断するために、改善目標と期間を特定することを検討してください。レトロ MR/issue を使って期待を透明性をもって伝えるとともに、新しいプロセスをイテレーションしたり削除したりする手段を提供できます。
+何が成功なのかを判断するために、改善目標と期間を特定することを検討してください。レトロ MR/Issue を使って期待を透明性をもって伝えるとともに、新しいプロセスをイテレーションしたり削除したりする手段を提供できます。
 
-レトロ MR/issue の作成は、次のことをじっくり考える機会です:
+レトロ MR/Issue の作成は、次のことをじっくり考える機会です:
 
 1. この新しいプロセスで何を達成したいと願っているか?
 1. 新しいプロセスの効果を測定するために使える指標はあるか?
@@ -157,11 +157,11 @@ lastmod: "2026-07-28T15:04:15+01:00"
 - ときには、視点の変化が望まれることもあります。
 そうした場合は、ハンドブックの関連セクションにリンクし、コンテンツ自体は含めないでください。
 例として [オンボーディングテンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)（社内）を参照してください。
-あるいは、例えば、定義を重複させずにパフォーマンス指標にリンクする [主要業績評価指標 (KPI)](/handbook/company/kpis/) のリストもそうです。
+あるいは、例えば、定義を重複させずにパフォーマンス指標にリンクする [主要業績評価指標 (KPI)](/handbook/company/kpis/)のリストもそうです。
 
 ### スタイルガイド {#style-guide}
 
-[ハンドブックを編集する](editing-handbook/_index.md) 前に、以下のスタイルガイダンスと [文章スタイルガイドライン](/handbook/communication/#writing-style-guidelines) を読んでください。
+[ハンドブックを編集する](editing-handbook/_index.md)前に、以下のスタイルガイダンスと [文章スタイルガイドライン](/handbook/communication/#writing-style-guidelines)を読んでください。
 
 #### ハンドブックページ {#handbook-pages}
 
@@ -180,17 +180,17 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 #### 見出しを積極的に使う {#use-headings-liberally}
 
-ページに 3 つ以上の見出しが含まれる場合（特に単一の「画面」より大きい場合）は、[この MR の 6 〜 10 行目](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/7141/diffs#f054d0f855ebef2a11559c362a356a2f9e010b99_6_6) をコピーして、自動生成される目次 (ToC) を追加してください。
-見出しは通常の大文字小文字を使用すべきです。[ALL CAPS](https://en.wikipedia.org/wiki/All_caps) や [TitleCase](https://www.grammar-monster.com/glossary/title_case.htm) は使わないでください。
-見出しの後には空行を 1 行残してください。これは [標準では必須ではありません](https://spec.commonmark.org/0.27/#example-46) が、私たちの慣習です。
+ページに 3 つ以上の見出しが含まれる場合（特に単一の「画面」より大きい場合）は、[この MR の 6 〜 10 行目](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/7141/diffs#f054d0f855ebef2a11559c362a356a2f9e010b99_6_6)をコピーして、自動生成される目次 (ToC) を追加してください。
+見出しは通常の大文字小文字を使用すべきです。[ALL CAPS](https://en.wikipedia.org/wiki/All_caps)や [TitleCase](https://www.grammar-monster.com/glossary/title_case.htm)は使わないでください。
+見出しの後には空行を 1 行残してください。これは [標準では必須ではありません](https://spec.commonmark.org/0.27/#example-46)が、私たちの慣習です。
 
 #### 貢献可能な図を使う {#use-contributable-diagrams}
 
-画像のアップロードや、貢献しにくい図よりも、貢献可能な図を優先してください。これにより、他の人が変更を提案したり貢献したりしやすくなります。Markdown における図の選択肢には [Mermaid](https://handbook.gitlab.com/docs/markdown-guide/#mermaid) や [PlantUML](https://handbook.gitlab.com/docs/markdown-guide/#plantuml) があります。
+画像のアップロードや、貢献しにくい図よりも、貢献可能な図を優先してください。これにより、他の人が変更を提案したり貢献したりしやすくなります。Markdown における図の選択肢には [Mermaid](https://handbook.gitlab.com/docs/markdown-guide/#mermaid)や [PlantUML](https://handbook.gitlab.com/docs/markdown-guide/#plantuml)があります。
 
 ## ハンドブックファーストのコンピテンシー {#handbook-first-competency}
 
-オールリモートで非同期な組織では、各チームメンバーがハンドブックファーストを実践すべきです。ハンドブックファーストであることの意味について詳しくは、このページの [なぜハンドブックファーストなのか](/handbook/about/handbook-usage/#why-handbook-first) のセクションを参照してください。
+オールリモートで非同期な組織では、各チームメンバーがハンドブックファーストを実践すべきです。ハンドブックファーストであることの意味について詳しくは、このページの [なぜハンドブックファーストなのか](/handbook/about/handbook-usage/#why-handbook-first)のセクションを参照してください。
 
 **チームメンバーとしてのハンドブックファーストのスキルと行動**:
 
@@ -199,7 +199,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 - 質問に答えるときにハンドブックからの情報へのリンクを提供し、その情報がハンドブックに存在しない場合は、チームメンバーがそれを追加する。
 - どの情報が社内限定かを理解しつつ、すべての公開情報をパブリックハンドブックに置く。
 
-**ピープルリーダーとしてのハンドブックファーストのスキルと行動**:
+**People Leader としてのハンドブックファーストのスキルと行動**:
 
 - 自分のチームや他の人にハンドブックファーストであることの責任を持たせる。
 - 社内限定でないすべての情報について、パブリックハンドブックファーストであることでリーダーシップを示す。
@@ -208,47 +208,86 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ## 管理 {#management}
 
-ハンドブック（パブリックハンドブックおよび内部ハンドブック）を最新の状態に保つことは、各部門と各チームメンバーの責任です。ハンドブックのコンテンツは正確であり、[ガイドライン](/handbook/about/handbook-usage/#handbook-guidelines) で概説されているのと同じ形式に従うべきです。誰にマージリクエストを提出すべきかについての質問や、ハンドブックに関する支援については、`#handbook` Slack チャンネルで連絡してください。
+ハンドブック（パブリックハンドブックおよび内部ハンドブック）を最新の状態に保つことは、各部門と各チームメンバーの責任です。ハンドブックのコンテンツは正確であり、[ガイドライン](/handbook/about/handbook-usage/#handbook-guidelines)で概説されているのと同じ形式に従うべきです。誰にマージリクエストを提出すべきかについての質問や、ハンドブックに関する支援については、[`#handbook`](https://gitlab.enterprise.slack.com/archives/C81PT2ALD) Slack チャンネルで連絡してください。
 
-ハンドブックへの変更を直接コミットする権限が必要な場合は、[New Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests) issue を提出し、アクセス承認のプロセスに従ってください。該当するハンドブックの「Maintainer」ロールをリクエストしてください。
+ハンドブックへの変更を直接コミットする権限が必要な場合は、[New Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests) Issue を提出し、アクセス承認のプロセスに従ってください。該当するハンドブックの「Maintainer」ロールをリクエストしてください。
 
 ## マージ権限ガイドライン {#merge-rights-guidelines}
 
-MR をマージするには、該当するハンドブックプロジェクトへの [`developer` アクセス](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions) が必要です。すべてのチームメンバーは、デフォルトで developer アクセスを持っているはずです。このページには、マージする際に念頭に置くべきいくつかのヒントとガイドラインが含まれています。
+MR をマージするには、該当するハンドブックプロジェクトへの [`developer` アクセス](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions)が必要です。すべてのチームメンバーは、デフォルトで developer アクセスを持っているはずです。このページには、マージする際に念頭に置くべきいくつかのヒントとガイドラインが含まれています。
 
 ### 自信を持ってマージする {#merge-with-confidence}
 
-ハンドブックを壊してしまう心配をすることなく、パイプラインを通過する変更なら何でも自信を持ってマージできるはずです。パイプラインのテストは、大きな問題を検出するように設計されています。ハンドブックプロジェクトは、パイプラインが通過しない限り変更をマージできないように構成されています。万が一、ハンドブックを何らかの形で壊すコードがマージされた場合は、[ハンドブックチームへの問題報告](/handbook/about/escalation/) の手順に従ってください。
+ハンドブックを壊してしまう心配をすることなく、パイプラインを通過する変更なら何でも自信を持ってマージできるはずです。パイプラインのテストは、大きな問題を検出するように設計されています。ハンドブックプロジェクトは、パイプラインが通過しない限り変更をマージできないように構成されています。万が一、ハンドブックを何らかの形で壊すコードがマージされた場合は、[ハンドブックチームへの問題報告](/handbook/about/escalation/)の手順に従ってください。
 
 ### Merge Immediately は使わない {#do-not-use-merge-immediately}
 
-[merge immediately](https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html#immediately-merge-a-merge-request-with-a-merge-train) 機能を **使わないでください**! あなたの MR が重要で時間に敏感なものであっても、この機能を使うと他のみんなに多大な苦痛をもたらします。この機能は、重要な公開情報をできるだけ早く公開する必要がある場合にのみ使用すべきで、PR または Legal の承認を得るべきです。**PR または Legal の承認がない場合は、この機能を使わないでください**。
+[merge immediately](https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html#immediately-merge-a-merge-request-with-a-merge-train)機能を **使わないでください**! あなたの MR が重要で時間に敏感なものであっても、この機能を使うと他のみんなに多大な苦痛をもたらします。この機能は、重要な公開情報をできるだけ早く公開する必要がある場合にのみ使用すべきで、PR または Legal の承認を得るべきです。**PR または Legal の承認がない場合は、この機能を使わないでください**。
 
 この背後にある技術的な理由についての詳しい文脈:
 
 - 私たちは、デフォルトブランチに対して高速なパイプラインを持ちたいと考えています。これにより、変更がデプロイされ本番サイトで公開されるまでに必要な時間が最小化されます。
 - これを実現するために、デフォルトブランチではテストやリンターを一切実行しません。これらは長時間実行されるジョブであり、高速なデプロイをブロックしてしまうためです。
-- 代わりに、[Merge Train](https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html) に頼って、すべてのマージリクエストの変更が、マージを許可される前に必要なすべてのテスト/リントジョブを正常に通過していることを保証します。
+- 代わりに、[Merge Train](https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html)に頼って、すべてのマージリクエストの変更が、マージを許可される前に必要なすべてのテスト/リントジョブを正常に通過していることを保証します。
 - したがって、「merge immediately」を使うと、***テスト/リントジョブが一切実行されず、問題が混入していた場合にデフォルトブランチが壊れる結果になります。***
 - これは、**この時点以降にデフォルトブランチから新しい MR を作成するすべての人が、自分のせいではない混乱を招くパイプラインの失敗を経験することになる** ことを意味し、この状況が発見されてデフォルトブランチに修正がマージされるまで続きます。
 
 ### いつ承認を得るか {#when-to-get-approval}
 
-自分のページへのあらゆる小さな変更を承認するよう毎回 ping されるのは煩わしいかもしれませんが、適切な承認なしにハンドブックのポリシーや手順を変更する人がいると、強い悪影響を及ぼす可能性があります。いつ承認を求めるべきかは、最善の判断を使ってください。
+自分のページへのあらゆる小さな変更を承認するよう毎回通知されるのは煩わしいかもしれませんが、適切な承認なしにハンドブックのポリシーや手順を変更する人がいると、強い悪影響を及ぼす可能性があります。いつ承認を求めるべきかは、最善の判断を使ってください。
 
-合理的な限り、[硬直性よりも責任](/handbook/values/#freedom-and-responsibility-over-rigidity) を実践してください。ページのオーナーがあなたの変更を喜ぶと予想される場合は、承認なしにそのままマージしてください。変更を知らせるために、常にコードオーナーに @mention コメントで ping してください。彼らは、自分のページが良くなり、変更をレビューして承認する時間を無駄にしなくて済んだことを喜ぶでしょう。万が一、何かが改善になっていなかった場合は、私たちは [サインオフよりもクリーンアップ](/handbook/values/#cleanup-over-sign-off) を実践します。
+合理的な限り、硬直性よりも責任を実践してください。ページのオーナーがあなたの変更を喜ぶと予想される場合は、承認なしにそのままマージしてください。変更を知らせるために、常にコードオーナーに @mention コメントで通知してください。彼らは、自分のページが良くなり、変更をレビューして承認する時間を無駄にしなくて済んだことを喜ぶでしょう。万が一、何かが改善になっていなかった場合は、私たちはサインオフよりもクリーンアップを実践します。
 
-以前は社内限定だったドキュメントを公開する場合など、適切なときは常に、変更をマージする前に [承認機能](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/settings.html) を使って [コードオーナー](https://docs.gitlab.com/ee/user/project/codeowners/) から承認を得てください。
+以前は社内限定だったドキュメントを公開する場合など、適切なときは常に、変更をマージする前に [承認機能](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/settings.html)を使って [コードオーナー](https://docs.gitlab.com/ee/user/project/codeowners/)から承認を得てください。
 
 #### 誰が承認できるか {#who-can-approve}
 
-ハンドブックページのオーナーは、ハンドブックのウェブ版でそのページを訪れ、編集中のページの `Maintainers` セクション（ページの右側にあり、ブラウザウィンドウが小さいと隠れていることがあります）に誰がいるかを見ることで特定できます。
+ページのコードオーナーはそのページの [DRI](/handbook/people-group/directly-responsible-individuals/)であり、ハンドブックに何を載せるかについて最終決定権を持ちます。
+迷ったときは、そのページを変更する前に DRI の許可を得てください。
+誰にレビューを依頼すべきか分からない場合は、[`#mr-buddies`](https://gitlab.enterprise.slack.com/archives/CLM8K5LF4)または [`#handbook`](https://gitlab.enterprise.slack.com/archives/C81PT2ALD) Slack チャンネルで尋ねてください。
 
-一部のページでは、`Maintainers` セクションが空です。これは、そのページが個人ではなくグループによって維持されているためです。どのグループや個人がページを維持しているかを見るには、該当するリポジトリの `CODEOWNERS` ファイル（例えば [ハンドブックの `CODEOWNERS`](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/.gitlab/CODEOWNERS)）を参照してください。
+ページのコードオーナーを確認するには、次の手順に従います:
 
-ページのコードオーナーは、マージリクエストの [承認セクション](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/settings.html) を見るときにも表示されます。
+1. ハンドブックでそのページを開き、右サイドバーの **Maintainers** セクションを確認します。
+   ブラウザウィンドウの幅が狭い場合、サイドバーが隠れていることがあります。
 
-ページのコードオーナーはそのページの DRI であり、ハンドブックに何を載せるかについて最終決定権を持ちます。迷ったときは、彼らのページを変更する前に DRI の許可を得てください。DRI が C レベルの人であっても心配しないでください。あなたが個人コントリビューターであっても、自分の MR を彼らにアサインできます。
+   ![右サイドバーに Maintainers セクションがあるハンドブックページ](/images/handbook/about/handbook-usage-maintainers-sidebar.png)
+
+1. **Maintainers** セクションが空の場合は、グループがそのページを管理しています。
+   セクションの上にある **Manage maintainers** を選択します。リポジトリの `CODEOWNERS` ファイル内の、そのページに対応するエントリが開きます。
+   例えば、
+   [ハンドブックの `CODEOWNERS`](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/.gitlab/CODEOWNERS)です。
+1. マージリクエストの[承認セクション](https://docs.gitlab.com/user/project/merge_requests/approvals/)を確認します。
+   変更に承認が必要なコードオーナーが表示されます。
+
+#### GitLab Duo Code Review による承認 {#approvals-from-gitlab-duo-code-review}
+
+[GitLab Duo Code Review](https://docs.gitlab.com/user/duo_agent_platform/flows/foundational_flows/code_review/)は、
+サービスアカウントとしてマージリクエストをレビューします。承認や変更の要求ができ、
+コミットをプッシュすると新しいレビューを開始します。
+
+GitLab Duo の承認は、コードオーナーの承認の代わりにはなりません。
+コードオーナーにレビューを依頼してください。右サイドバーの **Reviewers** > **Recommended** にある
+[Recommend Reviewers Flow](https://docs.gitlab.com/user/project/merge_requests/reviews/automatic_reviewer_assignment/#assign-a-recommended-reviewer)が、
+コードオーナーを含む承認ルールごとのレビュアーを提案します。
+
+GitLab Duo が[変更を要求](https://docs.gitlab.com/user/project/merge_requests/reviews/#prevent-merge-when-you-request-changes)すると、
+マージリクエストに **Change requests must be approved by the requesting user** と表示されます。
+他のレビュアーが承認しても、このチェックは解除されません。解決するには、次の手順に従います:
+
+1. GitLab Duo のコメントを読みます。指摘が正しい場合は、修正して変更をプッシュします。
+1. 指摘が当てはまらない場合は、コメントスレッドで返信し、理由を説明します。
+   GitLab Duo はその指摘を繰り返しません。返信せずにスレッドを解決すると、指摘は未解決のまま残ります。
+1. プッシュせずに新しいレビューを開始するには、**Reviewers** リストで `@GitLabDuo` にレビューを再依頼するか、
+   コメントで `@GitLabDuo` をメンションしてレビューを依頼します。
+   返信や承認だけでは、新しいレビューは開始されません。
+   指摘が残っていなければ、GitLab Duo がマージリクエストを承認します。
+1. GitLab Duo が引き続き変更を要求する場合、マージ権限を持つユーザーは
+   [要求を回避](https://docs.gitlab.com/user/project/merge_requests/reviews/#bypass-a-request-for-changes)できます:
+   チェックの横にある **Bypass** を選択し、理由をコメントに追加します。
+
+各プロジェクトは、GitLab Duo がチェックする内容をレビュー指示で定義しています。例えば、
+[ハンドブックの `mr-review-instructions.yaml`](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/.gitlab/duo/mr-review-instructions.yaml)などです。
 
 ### 同僚に変更をレビューしてもらう {#have-a-peer-review-your-changes}
 
@@ -256,15 +295,15 @@ MR をマージするには、該当するハンドブックプロジェクト�
 
 ### 広範な権限 {#broad-permissions}
 
-メンテナーであることは、単にマージできる能力だけよりもはるかに多くのアクセスを与えます。[権限の完全なリスト](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions) はドキュメントで確認できます。プロジェクトの広範な設定や構成にアクセスできることを念頭に置いてください。設定を調整したり、構造的な変更を加えたりしないでください。
+メンテナーであることは、単にマージできる能力だけよりもはるかに多くのアクセスを与えます。[権限の完全なリスト](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions)はドキュメントで確認できます。プロジェクトの広範な設定や構成にアクセスできることを念頭に置いてください。設定を調整したり、構造的な変更を加えたりしないでください。
 
 ### 他者に Maintainer アクセスを付与する {#granting-others-maintain-access}
 
-[Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) なしに、人々にメンテナーアクセスを付与しないでください。メンテナーとして、あなたは他の人にメンテナーアクセスを付与する能力を持っています。適切な承認を得て必要なドキュメントを作成するために、Access Request のプロセスに従わずにそれを行わないでください。
+[Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)なしに、人々にメンテナーアクセスを付与しないでください。メンテナーとして、あなたは他の人にメンテナーアクセスを付与する能力を持っています。適切な承認を得て必要なドキュメントを作成するために、Access Request のプロセスに従わずにそれを行わないでください。
 
 ### Issue とマージリクエスト用の説明テンプレート {#description-templates-for-issues-and-merge-requests}
 
-さまざまなプロジェクトにおける Issue とマージリクエストの [説明テンプレート](https://docs.gitlab.com/ee/user/project/description_templates.html) は、それぞれ `.gitlab/issue_templates` ディレクトリと `.gitlab/merge_request_templates` ディレクトリにあり、新しいマージリクエストで編集・変更できます。
+さまざまなプロジェクトにおける Issue とマージリクエストの [説明テンプレート](https://docs.gitlab.com/ee/user/project/description_templates.html)は、それぞれ `.gitlab/issue_templates` ディレクトリと `.gitlab/merge_request_templates` ディレクトリにあり、新しいマージリクエストで編集・変更できます。
 
 現在の承認者のリストについては、`.gitlab/CODEOWNERS` を参照してください。
 
@@ -277,11 +316,11 @@ MR をマージするには、該当するハンドブックプロジェクト�
 
 ### なぜ社内ハンドブックがあるのか? {#why-is-there-a-internal-handbook}
 
-会社として、私たちは [デフォルトで公開](/handbook/values/#public-by-default) ですが、公に議論できないこともあります。内部ハンドブックは、チームメンバーが社内情報を共有できる場です。[社内限定](/handbook/communication/confidentiality-levels/#internal) とみなされ **ない** ものはすべて、GitLab の [パブリックハンドブック](/handbook/) にあるべきです。[限定アクセス](/handbook/communication/confidentiality-levels/#limited-access) のものは、内部ハンドブックがすべてのチームメンバーからアクセス可能であるため、**内部ハンドブックに追加すべきではありません**。
+会社として、私たちはデフォルトで公開していますが、公に議論できないこともあります。内部ハンドブックは、チームメンバーが社内情報を共有できる場です。[社内限定](/handbook/communication/confidentiality-levels/#internal)とみなされ **ない** ものはすべて、GitLab の [パブリックハンドブック](/handbook/)にあるべきです。[限定アクセス](/handbook/communication/confidentiality-levels/#limited-access)のものは、内部ハンドブックがすべてのチームメンバーからアクセス可能であるため、**内部ハンドブックに追加すべきではありません**。
 
 ### このハンドブックを使うプロセス {#the-process-of-using-this-handbook}
 
-[非公開](/handbook/communication/confidentiality-levels/#not-public) カテゴリに該当する項目のみを内部ハンドブックに追加してください。それ以外はすべて、私たちの [パブリックな会社ハンドブック](/handbook/) に追加すべきです。
+[非公開](/handbook/communication/confidentiality-levels/#not-public)カテゴリに該当する項目のみを内部ハンドブックに追加してください。それ以外はすべて、私たちの [パブリックな会社ハンドブック](/handbook/)に追加すべきです。
 
 ### 社内ハンドブックグループへのアクセス {#accessing-the-internal-handbook-group}
 
@@ -289,34 +328,34 @@ MR をマージするには、該当するハンドブックプロジェクト�
 
 ### 社内ハンドブックの使い方に関する質問 {#questions-using-the-internal-handbook}
 
-- 何を内部ハンドブックに置くべきか、パブリックハンドブックに置くべきかについての質問は? [safe framework](/handbook/legal/safe-framework/#safe) を参照するか、`#safe` で尋ねてください。
+- 何を内部ハンドブックに置くべきか、パブリックハンドブックに置くべきかについての質問は? [safe framework](/handbook/legal/safe-framework/#safe)を参照するか、`#safe` で尋ねてください。
 - 改善を手伝うことに興味がある? `#internal-handbook` チャンネルに参加してください。
 
-## KPI
+## KPI {#kpi}
 
-エンジニアリングチームとすべてのサブチームは、ハンドブック更新頻度を [KPI](/handbook/company/kpis/#engineering-kpis) として追跡しており、チームごとに異なる目標を設定しています。現在、ハンドブック更新頻度を追跡している唯一の Division はエンジニアリングであり、この KPI の有効性を分析・観察するためです。
+Engineering チームとすべてのサブチームは、ハンドブック更新頻度を [KPI](/handbook/company/kpis/#engineering-kpis)として追跡しており、チームごとに異なる目標を設定しています。現在、ハンドブック更新頻度を追跡している唯一の部門は Engineering であり、この KPI の有効性を分析・観察するためです。
 
 ## ハンドブックの外部での利用 {#external-use-of-the-handbook}
 
-私たちがやることのほぼすべてと同様に、私たちのハンドブックは [オープンソース](https://about.gitlab.com/solutions/open-source/) であり、他の会社が自社のドキュメントや慣行のインスピレーションとして使うかもしれないと考えています。とはいえ、ハンドブックは常に、**私たちが何者になりたいか** ではなく **私たちが何をするか** について具体的であるべきで、すべての会社は時間をかけて自社のハンドブックを埋めていく必要があります。私たちのハンドブックは [Attribution-ShareAlike 4.0 International ライセンス](https://creativecommons.org/licenses/by-sa/4.0/) の下にあります。
+私たちがやることのほぼすべてと同様に、私たちのハンドブックは [オープンソース](https://about.gitlab.com/solutions/open-source/)であり、他の会社が自社のドキュメントや慣行のインスピレーションとして使うかもしれないと考えています。とはいえ、ハンドブックは常に、**私たちが何者になりたいか** ではなく **私たちが何をするか** について具体的であるべきで、すべての会社は時間をかけて自社のハンドブックを埋めていく必要があります。私たちのハンドブックは [Attribution-ShareAlike 4.0 International ライセンス](https://creativecommons.org/licenses/by-sa/4.0/)の下にあります。
 
 ### GitLab に触発されて {#inspired-by-gitlab}
 
-もしあなたの会社が GitLab のハンドブックに触発されたなら、何に触発されたのかをぜひ知りたいです。私たちの [Inspired by GitLab ページ](/handbook/) を参照してください。
+もしあなたの会社が GitLab のハンドブックに触発されたなら、何に触発されたのかをぜひ知りたいです。私たちの [Inspired by GitLab ページ](/handbook/)を参照してください。
 
 ### 価値あるものにする {#make-it-worthwhile}
 
 別の会社が、自社ではうまくいかなかったため、私たちがどうやってハンドブックで運用しているのか尋ねてきました: 「ナレッジベースに何かが文書化されているのに、人々が読んだり検索したりする手間をかけないために、それを知らないことが多々あります。一部の人々は、自分が『大量の文章の壁』と感じるものに対して強い拒否感を持っています。」
 
-私たちはこれを GitLab の [ハンドブックファーストなドキュメントアプローチを取り入れるためのガイド](/handbook/company/culture/all-remote/handbook-first/) でカバーしようとしています。
+私たちはこれを GitLab の [ハンドブックファーストなドキュメントアプローチを取り入れるためのガイド](/handbook/company/culture/all-remote/handbook-first/)でカバーしようとしています。
 
 人々がハンドブックを見る時間が有効に使われるようにするため、上記の「ハンドブックガイドライン」に従い、さらに次のことを行うべきです:
 
-1. [文章スタイルガイド](/handbook/communication/#writing-style-guidelines) に従う。
-1. 優れた検索機能を持ち、さらに公開して [Google 検索](/handbook/tools-and-tips/searching/) できるようにする。
-1. オンボーディング中に人々の [知識](/handbook/company/culture/all-remote/) をテストする。
+1. [文章スタイルガイド](/handbook/communication/#writing-style-guidelines)に従う。
+1. 優れた検索機能を持ち、さらに公開して [Google 検索](/handbook/tools-and-tips/searching/)できるようにする。
+1. オンボーディング中に人々の [知識](/handbook/company/culture/all-remote/)をテストする。
 1. 実際の例を示す。
-1. 企業的な言い回しを避け、友達に話すように物事を説明する。詳しくは、[シンプルな言葉](/handbook/communication/#simple-language) についてのコミュニケーションガイドを参照してください。
+1. 企業的な言い回しを避け、友達に話すように物事を説明する。詳しくは、[シンプルな言葉](/handbook/communication/#simple-language)についてのコミュニケーションガイドを参照してください。
 
 ## Wiki 形式のハンドブックはスケールしない {#wiki-handbooks-dont-scale}
 

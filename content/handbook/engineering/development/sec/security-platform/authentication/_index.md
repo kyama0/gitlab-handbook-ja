@@ -1,9 +1,9 @@
 ---
 title: "Authentication グループ"
 upstream_path: /handbook/engineering/development/sec/security-platform/authentication/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T15:10:33+03:00"
-translated_at: "2026-08-14T06:30:00+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T14:50:46.277923+00:00"
 translator: codex
 stale: false
 ---
@@ -13,11 +13,11 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
 
 ### Authentication{#welcome}
 
-#### ミッション
+#### ミッション {#mission}
 
 私たちのミッションは、GitLab システム管理者が GitLab 体験において望ましいセキュリティとアクセシビリティのバランスを作り出すために必要なツールキットを提供し、GitLab システム管理者を支援することです。Authentication は、新しい顧客が真新しい GitLab インスタンスを設定する際に持つ第一印象であり、私たちはそれをできるだけシームレスにすることを目指しています。初めてのログインの瞬間から、ユーザーのオンボーディング、そしてインスタンスの基本的なセキュリティルールを安全で柔軟、かつスケーラブルな方法で管理することまでが対象です。
 
-#### FY26 のトップ優先事項
+#### FY26 のトップ優先事項 {#top-priorities-for-fy26}
 
 私たちの詳細な優先事項リストは[方向性ページ](https://about.gitlab.com/direction/software_supply_chain_security/authentication/#priorities)にありますが、高レベルでは以下に焦点を当てます。
 
@@ -27,7 +27,7 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
 4. パスワードレス認証
 5. 不安定なテスト、古い FF、S3 バグ、サポート／CSM の質問の手動対応の削減。
 
-#### 私たちが GitLab のために推進している顧客の成果
+#### 私たちが GitLab のために推進している顧客の成果 {#customer-outcomes-we-are-driving-for-gitlab}
 
 上記のロードマップ項目の結果として、私たちは顧客のために以下の成果を推進することを目指しています：
 
@@ -36,7 +36,7 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
 - 追加の Enterprise ユーザー管理コントロールにより、組織のワークロードが削減され、セキュリティポリシー管理が改善される一方、Credential Inventory の SaaS への移行により、すべての管理者が使用中の認証情報に関するより良い可視性と制御を得られます。
 - SCIM グループ同期のサポートを拡張することで、顧客向けのユーザープロビジョニングのセットアップを改善・統一し、ユーザープロビジョニングとアクセス管理のために SAML と SCIM の両方に頼る必要がないようにすることを目指しています。
 
-#### OKR のリスト
+#### OKR のリスト {#list-of-okrs}
 
 私たちの OKR は以下に焦点を当てています。
 
@@ -44,14 +44,14 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
 - [フレーキーまたは遅いテストの数の削減](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5853)
 - [Authentication チームメンバーのキャリア成長](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5643)
 - [Cells の採用と調査スパイクからの学びの共有](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6280)
-- [GCP Integration 周りのロードマップ完了](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6186)
+- [GCP 統合に関するロードマップの完了](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6186)
 
-#### チームが追跡する指標
+#### チームが追跡する指標 {#metrics-the-team-tracks}
 
 ロードマップを前進させながら技術的負債を管理し、セキュリティ脆弱性やバグに時間内に対処することを確保するため、チームは以下の指標を追跡します。
 
 - エンジニアリング生産性の指標
-  - 変更が反復的に提供されていることを確保するための、チーム全体の MR 率。
+  - 変更がイテレーションで提供されていることを確保するための、チーム全体の MR 率。
   - 3 つすべてで下降トレンドに向かっていることを確保するための、S1、S2、S3 バグとバーンダウン率。現在、未解決の S1 はなく、ごく少数の S2 があります。
   - 脆弱性の締め切り日、特に SLO に達するリスクがあるもの。
   - Authentication API、ワーカー、ウェブワークフローのエラー率。
@@ -65,23 +65,23 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
   - SAML、ID プロバイダー、グループ同期などの認証統合の採用
   - クレームされた Enterprise ユーザー
 
-#### 私たちの違いは何か？
+#### 私たちの違いは何か？ {#what-makes-us-different}
 
 Authentication グループは GitLab 製品の中核となる部分です！ 多くのグループが単一の領域（リポジトリビューやマージリクエストビューなど）に焦点を当てるのに対し、このグループは多くの領域にわたってはるかに広い影響を持ちます。このため、他のグループ以上に私たちが心に留めているいくつかの重要なトピックがあります。
 
-##### セキュリティ脆弱性の Issue
+##### セキュリティ脆弱性の Issue {#security-vulnerability-issues}
 
 権限と認証メカニズムのバイパスは、その性質上、よくあるセキュリティの標的です。私たちは新しいセキュリティ脆弱性の Issue を注意深く監視し、その[締め切り日](/handbook/security/engaging-with-security/#due-date-on-security-issues)に基づいてできるだけ早くスケジュールします。セキュリティ Issue の計画には、[（フィルタリングされた）マイルストーン計画 Issue ボード](https://gitlab.com/gitlab-org/gitlab/-/boards/4260654?label_name%5B%5D=sec%3A%3Asscs&label_name%5B%5D=group%3A%3Aauthentication&label_name%5B%5D=bug%3A%3Avulnerability)を使います。すべてのチームメンバーが[セキュリティ開発者ワークフロー](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/engineer.md#security-releases-critical-non-critical-as-a-developer)に従ってセキュリティ Issue を解決できることを期待しています。
 
-##### コードレビュー
+##### コードレビュー {#code-review}
 
 このグループはアプリケーションの[広範囲に影響を及ぼす](/handbook/engineering/devops/#reducing-the-impact-of-far-reaching-work)コンポーネントに取り組むため、本番インシデントのリスクを減らすために以下の追加ステップを取ります。
 
 1. チーム全体でより多くの組織的知識を構築するため、私たちのチームのマージリクエストは、最初のレビューのために別の Auth チームメンバーに割り当てるべきです。このレビューは[レビュアー](https://docs.gitlab.com/ee/development/code_review.html#the-responsibility-of-the-reviewer)として行うべきです。Auth の承認は、Auth レビュアーの役割に一致する承認としてカウントされます。たとえば、Auth からのバックエンドレビューがあればバックエンドレビューとしてカウントされます。承認されると、Auth レビュアーは適切な[メンテナーカテゴリー](https://docs.gitlab.com/ee/development/code_review.html#approval-guidelines)のメンテナーにレビューをリクエストすべきです。
-1. Auth のマージリクエストには、マージ前に回答が必要なコメント「Should this be behind a feature flag?（これはフィーチャーフラグの背後にあるべきか？）」が含まれます。これはエンジニアにフィーチャーフラグの使用を思い出させる取り組みであると同時に、変更がフィーチャーフラグの背後にある必要がない理由の根拠を問うものでもあります。
-1. Auth 関連のマージリクエストは [Auth Engineer](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/authentication/approvers/-/group_members?with_inherited_permissions=exclude)によるレビューを必要とします。これは GitLab の [CODEOWNERS](https://docs.gitlab.com/ee/user/project/codeowners/) 機能を使ってガードされています。
+1. Auth のマージリクエストには、マージ前に回答が必要なコメント「これはフィーチャーフラグで制御すべきですか？」が含まれます。これはエンジニアにフィーチャーフラグの使用を思い出させる取り組みであると同時に、変更がフィーチャーフラグの背後にある必要がない理由の根拠を問うものでもあります。
+1. Auth 関連のマージリクエストは [Auth Engineer](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/authentication/approvers/-/group_members?with_inherited_permissions=exclude)によるレビューを必要とします。これは GitLab の [CODEOWNERS](https://docs.gitlab.com/ee/user/project/codeowners/)機能を使ってガードされています。
 
-##### トークン関連機能または破壊的なデータ更新のロールアウトと検証
+##### トークン関連機能または破壊的なデータ更新のロールアウトと検証 {#rollout-and-validation-for-token-related-features-or-destructive-data-updates}
 
 トークン（PAT、PrAT、GrAT）と、それに関連するボットアカウントやメンバーシップの重要な性質のため、慎重なロールアウトプロセスに従う必要があります。これは、データベース内の大規模なデータセットを更新する機能変更にも及びます。機能完了の一環として、DRI エンジニアはロールアウトプランを作成し、ドメインに精通した少なくとも 2 名の他のエンジニアにピアレビューしてもらわなければなりません。
 
@@ -97,9 +97,9 @@ Authentication グループは GitLab 製品の中核となる部分です！ �
 
 最後に、認証の変更が GitLab へのアクセスと使用の能力に直接影響するため、ほぼすべての状況において、マイルストーンの日程を守るために急ぐよりも、ロールアウトを遅くする方が良いです。顧客を第一に置くという私たちの価値観に基づき、利用可能なすべてのツールを活用して、段階的に機能をテストしロールアウトします。疑わしい場合は、私たちの[優先順位付けフレームワーク](/handbook/product/product-processes/#prioritization-framework)を参照し、ここに適用してください。セキュリティとデータ損失の防止を主要な優先事項とします。
 
-### 私たちの働き方
+### 私たちの働き方 {#how-we-work}
 
-- 私たちの [GitLab バリュー](/handbook/values/)に従います。
+- 私たちの GitLab バリューに従います。
 - 透明性を持って、ほぼすべてを公開し、可能な限りミーティングを録画／ライブストリームします。
 - 私たちは取り組みたいことに取り組む機会を得ます。
 - 誰もが貢献できる、サイロはありません。
@@ -107,7 +107,7 @@ Authentication グループは GitLab 製品の中核となる部分です！ �
 - 私たちはグループのスタンドアップチャンネルで、任意の非同期デイリースタンドアップを行います。
   - SSCS:Authentication [#g_sscs_authentication_daily](https://gitlab.slack.com/archives/C01311Z0LDD)
 
-#### 私たちのカウンターパートとともに
+#### 私たちのカウンターパートとともに {#with-our-counterparts}
 
 ステーブルカウンターパートと必要なだけ緊密に協働することが奨励されています。私たちは、リリースキックオフの前と、コードレビューや Issue の懸念時に必要に応じて、Quality Engineering と Application Security のカウンターパートを含めます。
 
@@ -123,22 +123,22 @@ Application Security は私たちのセキュリティ Issue ワークフロー�
 - [何かが脆弱性と見なされるかどうかを確認する](https://gitlab.com/gitlab-org/gitlab/-/issues/364526#note_1041178738)
 - [セキュリティへの影響があるかどうかを確認するために機能提案で協働する](https://gitlab.com/gitlab-org/gitlab/-/issues/227841#note_1025940760)
 
-#### サポート優先リクエスト
+#### サポート優先リクエスト {#support-priority-requests}
 
 顧客とエンジニアリングチームの間の主要なインターフェイスとして、サポートチームは、顧客にとっての摩擦やサポートチームによる手動介入の必要性を減らすのに役立つ製品やプロセスの改善についての知見を持っています。このような機能や強化のリクエストには `Support Priority` ラベルが付けられ、マイルストーン計画中に、それぞれのマイルストーンのグループの計画 Issue で、サポートチームのカウンターパートによって取り上げられます。少なくとも年に 1 回、年間ロードマップを計画する際に、これらは顧客とサポートへの影響と照らし合わされます。その後、これらは各マイルストーンで利用可能なキャパシティに基づいてグループによって優先順位付けされます。
 
-#### 情報を把握する
+#### 情報を把握する {#keeping-yourself-informed}
 
 - 関心のある主要なチャンネルは `#engineering-fyi`、`#team-member-updates`、`#g_sscs_authentication`、`#sec_section`、`#ceo`、`#cto` です
 - 私たちは、会社やチームのアップデートについてチームメンバーに知らせる、重要なリンクを共有する、またはチームの稼働状況について知らせるために、週次 Issue を作成します。Issue の作成は Engineering Manager の責任であり、[SSCS/Auth リポジトリ](https://gitlab.com/gitlab-org/software-supply-chain-security/authentication/discussion)にある Issue テンプレートを使用できます。すべての週次アップデートは、プロジェクトの Issue リストの[週次アップデートラベルでフィルタリングして](https://gitlab.com/gitlab-org/software-supply-chain-security/authentication/discussion/-/issues/?sort=updated_desc&state=closed&label_name%5B%5D=weekly%20update&first_page_size=20)見つけられます。
 
-#### 不在の計画
+#### 不在の計画 {#out-of-office-planning}
 
 PTO と休憩は、GitLab PTO ポリシー https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/ に従って、1 年を通じて奨励されています。長期の休暇リクエストのカバレッジ Issue を作成する際に特筆すべきは、EM と協力してカバレッジの詳細を十分に早く（1 マイルストーン以上前に）特定し、別のチームメンバーが作業を続けられるキャパシティを確保できるようにするか、進行中の MR を一時停止して復帰時に引き継ぐのが安全であるかを検討してください。
 
 理想的には、PTO がコミットされたタイムラインを変えないように作業を計画しています（タイムラインはすでに人々の不在を見込んでいます）。これにより、複数の DRI がいて簡単に作業を続けられるタスクでない限り、作業は単に一時停止され、復帰時に元の DRI によって続けられます。
 
-#### MR レビューリクエスト
+#### MR レビューリクエスト {#mr-review-requests}
 
 CODEOWNER ファイルには、認証関連の挙動に影響を与える可能性のある共通のコード領域が含まれており、開発中に `group::authentication` レビューをリクエストするために使用されます。リクエストのソースは、グループ内外のチームメンバーから来る認証機能に直接関連する場合があります。この場合、私たちは機能ドメインを所有しているため、`backend`、`frontend` レビューを総合的に完了すべきです。
 
@@ -156,7 +156,7 @@ CODEOWNER ファイルには、認証関連の挙動に影響を与える可能�
 | ドメインエキスパートとしての他チームからのレビュー | 2 | 48 時間 |
 | その他の BE レビュー | 3 | 48 時間 |
 
-#### 計画
+#### 計画 {#planning}
 
 私たちは[プロダクト開発タイムライン](/handbook/engineering/workflow/#product-development-timeline)に従って月次サイクルで計画します。私たちの典型的な計画サイクルには以下が含まれます。
 
@@ -170,7 +170,7 @@ CODEOWNER ファイルには、認証関連の挙動に影響を与える可能�
 
 一部の項目は特定のマイルストーンにマークされているかもしれませんが、`~Deliverable` ラベルがありません。これは、それらがマイルストーンにコミットされておらず、バックログに移動するか将来のリリースのために再検討すべきであることを意味します。Product Manager がこのプロセスを促進します。
 
-#### 見積もりプロセス
+#### 見積もりプロセス {#estimation-process}
 
 Issue の作業を開始できる前に、予備調査の後にまずそれを見積もるべきです。特定の Issue の作業範囲が複数の分野（ドキュメント、デザイン、フロントエンド、バックエンドなど）に触れ、それらにわたって重大な複雑さを伴う場合は、各分野ごとに別々の Issue を作成することを検討してください（[例](https://gitlab.com/gitlab-org/gitlab/-/issues/9288)を参照）。
 
@@ -194,7 +194,7 @@ Issue の重みが 5 を超える場合（または 5 だが複数の Issue に�
 
 エンジニアが見積もりを終えたら、別のチームメンバーに重みのレビューを依頼すべきです。これにより、Issue の重要な側面を見逃しにくくなります。最初のエンジニアが自信を持っている場合（例： 問題に深い専門知識がある、または Issue が自明である場合）、このステップをスキップできます。
 
-##### 見積もりの目的
+##### 見積もりの目的 {#purpose-of-estimation}
 
 私たちの見積もりの目的は、以下を確認することです
 
@@ -204,7 +204,7 @@ Issue の重みが 5 を超える場合（または 5 だが複数の Issue に�
 
 私たちは、見積もり中に実装の詳細が精査されること、すべてのブロッカーが捉えられること、または提案された解決策が正しいものであると証明されることを期待していません。これらはすべて開発中に起こります。開発中に、私たちは時に Issue を再形成したり、解決策を変更したり、さらには延期したりします。私たちはそれを行うことを誇りに思っています。
 
-#### 見積もりの考慮事項
+#### 見積もりの考慮事項 {#considerations-for-estimation}
 
 上記を念頭に置きつつ、見積もりの際に考慮すべきいくつかの領域は以下のとおりです：
 
@@ -215,7 +215,7 @@ Issue の重みが 5 を超える場合（または 5 だが複数の Issue に�
 - この機能／バグ修正はどのようにデプロイされ、ロールアウトの管理に複雑さがあるか？
 - この作業はチーム横断的なコラボレーションを必要とするか？ 例： セキュリティ
 
-#### リリース中
+#### リリース中 {#during-a-release}
 
 エンジニアは、[現在のリリース](https://gitlab.com/gitlab-org/gitlab/-/boards/4406395?label_name[]=group%3A%3Aauthentication&label_name[]=Deliverable&milestone_title=Started)と ~Deliverable ラベルに基づいて Issue を自分自身に割り当てるべきです。私たちは Issue に以下のワークフローラベルのサイクルを使います：
 
@@ -232,25 +232,25 @@ Issue が見積もられ重みが付けられる前に、Issue の開発を開�
 
 1 週間を超える作業項目や高優先度の成果物（重大な infradev Issue やバグなど）については、その作業の担当者は、取り組んでいる Issue 内のタスクの進捗について簡潔な週次アップデートを提供することを目指します。これは、最近達成されたことと次のステップを強調する 2 〜 3 行であることを意図しています。私たちがこれを行うのは、進捗をカウンターパートと透明に共有するためだけでなく、ドメイン知識を共有し、作業開始後に判明した場合に実装の詳細を軌道修正するためです。
 
-##### ラベルとその使い方
+##### ラベルとその使い方 {#labels-and-how-we-use-them}
 
 私たちは Issue やマージリクエストに適用できる[多くのラベル](https://docs.gitlab.com/ee/development/labels/index.html)を持っています。上記の Issue ワークフローラベルに加えて、Issue とマージリクエストに適用する最小限の基本ラベルは以下のとおりです：
 
-- Type（`type::feature`、`type::bug`、または `type::maintenance`）
+- 種別（`type::feature`、`type::bug`、または `type::maintenance`）
 - 領域を所有するステージ（`devops::software supply chain security`）
 - 領域を所有するグループ（`group::authentication`）
 - 専門分野（`frontend`、`backend`、`database`、`documentation`）
 - Issue が application security に関連する場合は `security`、この作業が[破壊的変更](https://docs.gitlab.com/ee/update/terminology.html#breaking-change)と見なされる場合は `breaking change`
 
-#### スケジュールされていない Issue への取り組み
+#### スケジュールされていない Issue への取り組み {#working-on-unscheduled-issues}
 
 上記のキャパシティ計画（EM）と見積もり（IC）プロセスの組み合わせにより、エンジニアは ~"Stuff that should just work" や、その他興味のあるトピックに取り組む空き時間を持てるはずです。スケジュールされていない Issue が本当に優先順位付けされるべき場合は、計画 Issue で提起するか、マネージャーにキャパシティをさらに減らすよう依頼してください。
 
-### リリースのための優先順位付けの方法
+### リリースのための優先順位付けの方法 {#how-we-prioritize-for-a-release}
 
-私たちは優先順位付けフレームワークに整合した[チーム横断的な優先順位付け](/handbook/product/product-processes/cross-functional-prioritization/)を行います。Engineering Manager が `type::maintenance` の Issue を、Product Manager が `type::feature` の Issue を、テスト担当ソフトウェアエンジニアが `type::bug` の Issue を優先順位付けします。そこから、[チーム横断的な Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/4453752?label_name[]=group%3A%3Aauthentication)を使って、リリースのために計画するトップ Issue の比率を選択できます。**16.5 以降、私たちの目標比率はリリースごとに機能 60%、バグ 20%、メンテナンス 20% を計画することです**。セキュリティ Issue はこれらの比率にはカウントされず、代わりに総キャパシティから差し引かれます。
+私たちは優先順位付けフレームワークに整合した[チーム横断的な優先順位付け](/handbook/product/product-processes/cross-functional-prioritization/)を行います。Engineering Manager が `type::maintenance` の Issue を、Product Manager が `type::feature` の Issue を、Software Engineer in Test が `type::bug` の Issue を優先順位付けします。そこから、[チーム横断的な Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/4453752?label_name[]=group%3A%3Aauthentication)を使って、リリースのために計画するトップ Issue の比率を選択できます。**16.5 以降、私たちの目標比率はリリースごとに機能 60%、バグ 20%、メンテナンス 20% を計画することです**。セキュリティ Issue はこれらの比率にはカウントされず、代わりに総キャパシティから差し引かれます。
 
-### ロードマップ計画と T シャツサイジング
+### ロードマップ計画と T シャツサイジング {#roadmap-planning-and-t-shirt-sizing}
 
 会計年度の初めに、製品とエンジニアリングのカウンターパートが、私たちが焦点を当てたい領域について協働します。これにより、各マイルストーンに先立って priorities.yml に追加される Issue を準備し、年間でオーバーコミットしていないかを測定し、今後の年の提供目標が何かを透明に共有できます。この演習の一環として、エンジニアリングは計画を支援するために高レベルの T シャツサイジングも実施します。サイジングは高レベルの見積もりであり、マイルストーンの見積もりと同様に、期待される複雑さに基づいており、作業を完了するのに実際にかかる時間ではないことを強調することが重要です。使用されるスケールの例は以下のとおりです。
 
@@ -265,7 +265,7 @@ T シャツサイジングのスケール：
 
 その後、ロードマップ項目には `Small`、`Medium` ラベルと優先順位がマークされ、より高い優先順位の作業がスケジュールされ適切にリソース配分されることを確保します。
 
-#### 月次チーム横断ダッシュボードレビュー
+#### 月次チーム横断ダッシュボードレビュー {#monthly-cross-functional-dashboard-review}
 
 私たちはすべてのカウンターパートに割り当てられる月次 Issue を作成します。この Issue は Engineering Manager が手動で作成する必要がありますが、[Authentication discussion リポジトリ](https://gitlab.com/gitlab-org/software-supply-chain-security/authentication/discussion)に Issue テンプレートがあります。
 
@@ -275,7 +275,7 @@ T シャツサイジングのスケール：
 
 上記のように計画しようとしていますが、予期しない高優先度のセキュリティ、infradev、エスカレーションの Issue により、理想的な比率には常にリスクがあることを理解しています。
 
-### ミーティング
+### ミーティング {#meetings}
 
 私たちは非同期コミュニケーションへのバイアスを持っていますが、同期ミーティングは必要であり、私たちの[コミュニケーションガイドライン](/handbook/communication/#video-calls)に従うべきです。Authentication の定例ミーティングのいくつかは以下のとおりです：
 
@@ -289,7 +289,7 @@ T シャツサイジングのスケール：
 
 すべてのミーティングと 1-1 には、事前にアジェンダが準備されているべきです。そうでない場合、ミーティングに出席する義務はありません。ミーティングの開始時刻までにアジェンダがなければ、ミーティングをキャンセルすべきかを確認してください。
 
-### グループメンバー
+### グループメンバー {#group-members}
 
 [Authentication グループ](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/authentication/)の一員である Auth グループメンバーは、GitLab で `@gitlab-org/software-supply-chain-security/authentication` で `@` メンションできます。
 
@@ -297,7 +297,7 @@ T シャツサイジングのスケール：
 
 {{< engineering/stable-counterparts role="SSCS:Authentication" >}}
 
-### ダッシュボード
+### ダッシュボード {#dashboards}
 
 - [エラーバジェット](https://dashboards.gitlab.net/d/stage-groups-detail-authentication/749586f0-be5b-5af4-88ce-3e3bac20b45e?orgId=1&from=now-2d&to=now)
 

@@ -1,18 +1,18 @@
 ---
 title: "エンジニアリングキャリア開発"
 upstream_path: /handbook/engineering/careers/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-translated_at: "2026-10-19T22:26:12+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T15:10:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-16T09:24:31-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## キャリア開発の 3 つの要素
+## キャリア開発の 3 つの要素 {#the-three-components-of-career-development}
 
 キャリアを発展させるための重要な要素が 3 つあります：
 
-### 構造
+### 構造 {#structure}
 
 昇進のトラックに乗っている（または乗りたい）チームメンバーは、マネージャーとのキャリアコーチング会話に参加すべきです。このプロセスに関するいくつかの基本情報は [People Ops](/handbook/people-group/learning-and-development/career-development/#career-mapping-and-development)ハンドブックにあります。会話を始めるための具体的なコーチングプランテンプレートを以下に示します：
 
@@ -27,11 +27,11 @@ lastmod: "2026-10-16T09:24:31-07:00"
 
 コーチングプロセスはチームメンバーがチームのより上位のポジションに備えるために何をする必要があるかを理解するのに役立つことを覚えておいてください。昇進プロセスはエンジニアがチームのより上位のポジションに値することを既に実証していることを文書化します。2 つのプロセスは関連していますが、互いの代替ではありません。
 
-### 個人のイニシアチブ
+### 個人のイニシアチブ {#individual-initiative}
 
 ほとんどのキャリア機会は、非公式または公式なリーダーシップの立場に踏み出すことを伴います。そのため、個人のイニシアチブは必要な要素であるとともに資格でもあります。ただし、インクルージョンのために、マネージャーには個人が利用可能な道筋を知り、それを追求する励ましを受けられるよう定期的に昇進の可能性を持ち出すようにお願いしています。マネージャーと個人コントリビューターは少なくとも四半期に一度のキャリア開発の会話を持つよう努力すべきです。
 
-### 機会
+### 機会 {#opportunity}
 
 GitLab Engineering キャリアトラックは、個人がコントリビュートするための完全な機会パスを提供しています。昇進が発生する前にポジションが利用可能になる必要があるシナリオがあります。エンジニアリングトラックでは、Senior Engineer から Staff Engineer または Engineering Manager への昇進（選択したパスに応じて）には、ニーズのあるポジションが存在する必要があります。これらのタイプのロール（例： Senior Engineer）を超えた進展は役割での在籍期間によって保証されるものではありません。ロールには正当化できる必要性があり、候補者はこれらのロールで活躍できることの実証されたレベルの能力を持っている必要があります。
 
@@ -49,23 +49,23 @@ GitLab Engineering キャリアトラックは、個人がコントリビュー�
   - この変更が会社にどのような利益をもたらすかのビジネス上の正当性でロールを再レベリングする。
     - [テンプレート（Google ドキュメント）](https://docs.google.com/document/d/1BAIty-x7otBpohe5w6Kl8DKD-C2nUS9MCm4JwognfVI/edit#heading=h.5onpwyv1o0vg)が提供されています。コピーを作成してビジネス上の正当性を記入してください。
   - 一定の期間内に期待される基準を満たす候補者の準備の可能性を評価した後、最長 6 ヶ月の暫定期間に候補者を受け入れ、暫定期間終了時にレベル変更の準備と影響を評価する。
-- キャリアパス間の移籍（IC->EM、EM->IC）は、変更を正式に昇進/評価の根拠とともに永続的にする前に 4〜6 ヶ月の[暫定/代行](/handbook/engineering/careers/#types-of-interim-roles)ベースで利用可能なロールに移動する必要があります
+- キャリアパス間の移籍（IC->EM、EM->IC）は、変更を正式に昇進/評価の根拠とともに永続的にする前に 4 〜 6 ヶ月の[暫定/代行](/handbook/engineering/careers/#types-of-interim-roles)ベースで利用可能なロールに移動する必要があります
 - すべてのロール変更は、ロードマップへの影響と変更が対応するための追加予算を必要とする場合の予算への影響の緩和を含め、毎週 R&D リーダーシップによってレビューされます。
 - すべての内部異動候補者は、前チームへの影響に対処するための整合した移行とコミュニケーション計画を持つ必要があります。バックフィルのための計画を確定し、すでに進行中のマイルストーンを完了することを含みます。
 
-## 個人コントリビューション vs. マネジメント
+## 個人コントリビューション vs. マネジメント {#individual-contribution-vs-management}
 
 最も重要なのは、純粋に技術的な作業とチームの管理の分岐点です。Engineering Manager は自発的にそのトラックを選択し、プレッシャーを感じないことが重要です。私たちはマネジメントが他の同様のクラフトであり、専念を必要とすると信じています。また、すべての人が自分のクラフトに情熱を持つマネージャーに値すると信じています。
 
-シニアレベルのロールに達し、進展を望む場合、純粋に技術的な道に留まるか技術チームの管理を追求するかを決める必要があります。マネージャーは、両方のトラックのタスクを試す機会を提供できます。スタッフレベルのロールと Engineering Manager のロールは基本給と評価の面で同等です。GitLab でのスタッフレベルのエンジニアとは何かについての詳細は [Engineering IC Leadership ページ](/handbook/engineering/careers/ic-leadership/)をご覧ください。
+シニアレベルのロールに達し、進展を望む場合、純粋に技術的な道に留まるか技術チームの管理を追求するかを決める必要があります。マネージャーは、両方のトラックのタスクを試す機会を提供できます。Staff レベルのロールと Engineering Manager のロールは基本給と評価の面で同等です。GitLab での Staff レベルのエンジニアとは何かについての詳細は [Engineering IC Leadership ページ](/handbook/engineering/careers/ic-leadership/)をご覧ください。
 
-### マネジメントトラックを試してみる
+### マネジメントトラックを試してみる {#trying-the-management-track}
 
-チームメンバーがピープルマネジメントトラックに関心を持っている場合、コミットする前に試す機会を持つことが重要です。マネージャーは利用可能なまたは近々発生するマネージャーロールへの移行を検討しているシニアおよび Staff Engineer に複数の機会を提供できます。例としては、グループ会話のホスト、インターンポジションの採用マネージャーとしての行動、重要な成果物の一連のデモ会議の進行などがあります。マネジメント機能を試すこれらの機会は有用であり、マネジメントへの移行を検討している個人に良いコーチング機会を提供できます。一部のエンジニアはこれらの経験を通じて技術的なパスに留まる方が適していると気付き、移行に大幅な時間を投資する前に決断できます。
+チームメンバーがピープルマネジメントトラックに関心を持っている場合、コミットする前に試す機会を持つことが重要です。マネージャーは利用可能なまたは近々発生するマネージャーロールへの移行を検討している Senior Engineer および Staff Engineer に複数の機会を提供できます。例としては、グループ会話のホスト、インターンポジションの採用マネージャーとしての行動、重要な成果物の一連のデモ会議の進行などがあります。マネジメント機能を試すこれらの機会は有用であり、マネジメントへの移行を検討している個人に良いコーチング機会を提供できます。一部のエンジニアはこれらの経験を通じて技術的なパスに留まる方が適していると気付き、移行に大幅な時間を投資する前に決断できます。
 
 移行を促進するために、個人コントリビューターロールから Engineering Manager ロールへ移行する人には、マネージャーと協力して集中した移行計画を作成することをお勧めします。目標は、ロールが自分に合わない場合は IC トラックに戻れるという理解のもと、ピープルマネジメントの責任と課題に集中的に見ていくことです。そのような計画を構築する良い例は[この記事](https://review.firstround.com/this-90-day-plan-turns-engineers-into-remarkable-managers/)にあります。重要なキャリアパスの会話の準備ができたときのもう一つの良いリソースは[この 30 分のビデオ](https://www.youtube.com/watch?reload=9&v=hMz6QDURQOM&list=PLBzScQzZ83I8H8_0Qete6Bs5EcW3p0kZF&index=6)です。
 
-### 一時的なマネジメントポジション
+### 一時的なマネジメントポジション {#temporary-management-positions}
 
 組織的な必要性がある場合に一時的なマネジメントポジションを作成し、これを会社の組織図に記録します。これらは、ロールに移行している人（[Interim Manager](/handbook/engineering/careers/#interim-manager)）、キャリア開発パスを決める際にロールを試している人（[Interim Manager](/handbook/engineering/careers/#interim-manager)または [Acting Manager](/handbook/engineering/careers/#acting-manager)）、または採用中の空席を埋めているだけで長期的に Engineering Manager ロールを追求することに関心がない人（[Acting Manager](/handbook/engineering/careers/#acting-manager)）によって埋められる場合があります。この違いは、一時的なロールが作成される前に個人とチームメンバーに明示すべきです。詳細については[一時的ロールの種類](#types-of-interim-roles)を参照してください。
 
@@ -78,7 +78,7 @@ GitLab Engineering キャリアトラックは、個人がコントリビュー�
 - マネジメントへの関心を示す
 - 管理対象となる個人コントリビューターロールでの経験がある
 - GitLab に少なくとも 6 ヶ月間勤務し、オールリモートの環境で活躍している
-- [GitLab バリュー](/handbook/values/)の模範を示す
+- GitLab バリューの模範を示す
 - Acting Manager ロールの場合： 任命期間に応じてタレントレビューを受ける
 - Interim Manager ロールの場合： [Greenhouse](/handbook/people-group/promotions-transfers/#greenhouse-process-requirements)から応募し、選考プロセスを経る
 
@@ -109,15 +109,15 @@ GitLab Engineering キャリアトラックは、個人がコントリビュー�
 | Manager/Sr Manager | Director       | なし（マネージャーの管理経験）                     | あり                           |
 |                    |                | あり（マネージャーの管理経験）                    | なし                            |
 
-*`previous management experience`は前の組織でのマネジメント経験、または GitLab でのマネジメント経験を指します。採用マネージャーが評価するように、Acting ロールのスコープと影響が想定される Interim 期間と同程度であった場合、GitLab での[「Acting」](/handbook/people-group/promotions-transfers/#acting)ロールのマネジメント経験も 3 ヶ月の閾値に向けてカウントできます。*
+*`previous management experience` は前の組織でのマネジメント経験、または GitLab でのマネジメント経験を指します。採用マネージャーが評価するように、Acting ロールのスコープと影響が想定される Interim 期間と同程度であった場合、GitLab での[「Acting」](/handbook/people-group/promotions-transfers/#acting)ロールのマネジメント経験も 3 ヶ月の閾値に向けてカウントできます。*
 
-##### 例外
+##### 例外 {#exceptions}
 
 Director+ のポジションには Interim 期間は必要ありません。
 
 例外は、Acting ロールを務め、恒久的なロールの面接プロセスに合格したチームメンバーの準備状況に応じてケースバイケースでレビューすることもできます。
 
-#### Interim ロールのタイムライン
+#### Interim ロールのタイムライン {#timeline-for-interim-roles}
 
 Interim ロールの設定タイムラインは 3 ヶ月であり、この期間を超えないことをお勧めします。
 
@@ -127,7 +127,7 @@ Interim ロールの設定タイムラインは 3 ヶ月であり、この期間
 
 Acting ロールの場合、期間に対する設定タイムラインはありません。これはケースバイケースでレビューできます。
 
-##### Interim ロールの成功基準
+##### Interim ロールの成功基準 {#success-criteria-for-interim-roles}
 
 GitLab での Interim Manager の主な成功基準は、1 回の採用成功です。その採用が本当に成功したかを評価できるよう、正式な昇進は、その人を採用してから 30 日が経過するまでは行いません。新入社員の成功が 30 日時点で不確定の場合は、確固とした決定が下されるまでレビューを継続します。新入社員が成功しなかった場合でも、Interim Manager が最終的にフルタイムのロールに移行できなくなるわけではありません。
 
@@ -145,23 +145,23 @@ Interim Manager の最初の新入社員が GitLab に 30 日間在籍した後�
 
 Interim または Acting の期間を終了する際の実務上の手続きの詳細については、[昇進と異動ページ](/handbook/people-group/promotions-transfers/#interim-and-acting-roles)を参照してください。
 
-## キャリア開発リソース
+## キャリア開発リソース {#career-development-resources}
 
-### トレーニングとラーニング
+### トレーニングとラーニング {#training-and-learning}
 
-セキュアコーディングのベストプラクティス、Ruby on Rails のパフォーマンス、フロントエンド開発、GraphQL、Engineering Manager およびスタッフ以上のエンジニア向けリソースを含む[トレーニングリソース](/handbook/engineering/careers/training/)を探索してください。
+セキュアコーディングのベストプラクティス、Ruby on Rails のパフォーマンス、フロントエンド開発、GraphQL、Engineering Manager および Staff+ のエンジニア向けリソースを含む[トレーニングリソース](/handbook/engineering/careers/training/)を探索してください。
 
-### IC リーダーシップ
+### IC リーダーシップ {#ic-leadership}
 
-GitLab での [Engineering IC Leadership](/handbook/engineering/careers/ic-leadership/)について学んでください。スタッフ以上のロールの 4 つのアーキタイプと [Tech Lead ロール](/handbook/engineering/careers/ic-leadership/tech-lead/)を含みます。
+GitLab での [Engineering IC Leadership](/handbook/engineering/careers/ic-leadership/)について学んでください。Staff+ のロールの 4 つのアーキタイプと [Tech Lead ロール](/handbook/engineering/careers/ic-leadership/tech-lead/)を含みます。
 
-### Engineering Management
+### Engineering Management {#engineering-management}
 
 採用、キャリア開発、プロジェクト管理、チームレトロスペクティブを含む [Engineering Management](/handbook/engineering/careers/management/)のリソースを探索してください。
 
-## ロール
+## ロール {#roles}
 
-### Development Department
+### Development Department {#development-department}
 
 <div style="overflow-x: auto">
 <div style="width: 1800px;">
@@ -270,7 +270,7 @@ GitLab での [Engineering IC Leadership](/handbook/engineering/careers/ic-leade
 </div>
 </div>
 
-### Infrastructure
+### Infrastructure {#infrastructure}
 
 > ℹ️ 注： Software Engineer in Test（SET）ロールは Backend Engineer に移行しました。以前の Senior SET は、技術パスを通じて Staff Backend Engineer に進むか、マネジメントパスを通じて Engineering Manager, Infrastructure に進むことができます。最新の情報については [Backend Engineer キャリアマトリックス](/handbook/engineering/careers/matrix/infrastructure/)を参照してください。
 
@@ -293,7 +293,7 @@ GitLab での [Engineering IC Leadership](/handbook/engineering/careers/ic-leade
 </div>
 </div>
 
-### Support Department
+### Support Department {#support-department}
 
 <div style="overflow-x: auto">
 <div style="width: 1800px;">
@@ -325,7 +325,7 @@ GitLab での [Engineering IC Leadership](/handbook/engineering/careers/ic-leade
 </div>
 </div>
 
-### Infrastructure Department
+### Infrastructure Department {#infrastructure-department}
 
 <div style="overflow-x: auto">
 <div style="width: 1800px;">
@@ -407,7 +407,7 @@ subgraph Based on Merit & Company Need
 </div>
 </div>
 
-## ラーニングのためのアプレンティスシップ
+## ラーニングのためのアプレンティスシップ {#apprenticeship-for-learning}
 
 通常、アプレンティスシップは短期間で特定のポジションや分野の概要を個人に提供します。これはまだ関心を模索し、どのオプションを追求したいかを決めているチームメンバーを対象とした表面的な学習です。関心のある分野、その分野の主題の専門家、および詳しく学びたい部門がこの取り組みをサポートできる場合、インターンシップの良い機会を提供します。プロセスの詳細については、[ラーニングのためのインターンシップ](/handbook/people-group/learning-and-development/internship-for-learning/)に関するハンドブックのセクションを参照してください。
 
@@ -435,29 +435,29 @@ subgraph Based on Merit & Company Need
 
 **重要**: ラーニングのためのアプレンティスシッププログラムは、変化するビジネスニーズの結果として実際の一時的または永続的な[再編/再配置/出向](/handbook/people-group/promotions-transfers/#department-transfers)がある状況とは異なるべきです。状況がラーニングのためのアプレンティスシッププログラムと一致しているか、リソースの再整合に当てはまるかどうか不確かな場合は、担当の [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)と相談してください。
 
-## Associate Engineer
+## Associate Engineer {#associates-engineers}
 
 Associate Engineer に提供するキャリアとスキル成長のサポートについては[こちら](/handbook/hiring)で詳しくご覧ください。
 
 2024 年現在、これは現在 Core Development および Expansion サブ部門でパイロット中です。
 
-## Senior Engineer
+## Senior Engineer {#senior-engineers}
 
-特定のセクションを設けているのは、[Senior Engineer](/job-description-library/engineering/backend-engineer/#senior-backend-engineer)がすべてのエンジニアの技術的な発展における重要なステップだからです。しかし、「シニア」はここの任意のロールにオプションで適用でき、優れたパフォーマンスを示します。ただし、エンジニア以外のロールについては「シニア」を経由することは必須ではありません。
+特定のセクションを設けているのは、[Senior Engineer](/job-description-library/engineering/backend-engineer/#senior-backend-engineer)がすべてのエンジニアの技術的な発展における重要なステップだからです。しかし、「Senior」はここの任意のロールにオプションで適用でき、優れたパフォーマンスを示します。ただし、エンジニア以外のロールについては「Senior」を経由することは必須ではありません。
 
-Senior Engineer ロールは最も多くのコントリビューションが必要な重要なロールです。また、目的地のロールと考えるべきです。スタッフまたはマネジメントへの次のロールに自然に進むことは当然ではありません。次のロールには異なるニーズと期待があります。GitLab では個人の成長と進展がサポート・奨励されていますが、Senior Engineering ロールを超えた進展は可用性とニーズにかかっています。スタッフやマネジメントポジションの必要性がない場合があります。
+Senior Engineer ロールは最も多くのコントリビューションが必要な重要なロールです。また、目的地のロールと考えるべきです。Staff またはマネジメントの次のロールに自然に進むことは当然ではありません。次のロールには異なるニーズと期待があります。GitLab では個人の成長と進展がサポート・奨励されていますが、Senior Engineering ロールを超えた進展は可用性とニーズにかかっています。Staff やマネジメントのポジションの必要性がない場合があります。
 
-Senior Engineer は通常、マージリクエストで受ける些細な指摘が少なくなります。細部への注意は私たちにとって非常に重要です。また、アプリケーションアーキテクチャを理解して実証済みのパターンから選択するため、*重大な*コメントも少なくなります。また、Senior Engineer には複雑な問題に対するよりシンプルなソリューションを生み出すことが期待されます。複雑さを管理することが彼らの作業の鍵です。[Staff](/job-description-library/engineering/backend-engineer/#staff-backend-engineer)および [Distinguished](/job-description-library/engineering/infrastructure/distinguished-engineer/)ポジションは Senior Engineer ロールを拡張します。
+Senior Engineer は通常、マージリクエストで受ける些細な指摘が少なくなります。細部への注意は私たちにとって非常に重要です。また、アプリケーションアーキテクチャを理解して実証済みのパターンから選択するため、*重大な*コメントも少なくなります。また、Senior Engineer には複雑な問題に対するよりシンプルなソリューションを生み出すことが期待されます。複雑さを管理することがその仕事の鍵です。[Staff](/job-description-library/engineering/backend-engineer/#staff-backend-engineer)および [Distinguished](/job-description-library/engineering/infrastructure/distinguished-engineer/)ポジションは Senior Engineer ロールを拡張します。
 
-## 昇進
+## 昇進 {#promotion}
 
 パフォーマンスと[昇進](/handbook/people-group/promotions-transfers/)に関して、可能な限り明確な期待値を設定しようとしています。それでも、いくつかの側面は定性的です。定量化が難しい属性の例は、コミュニケーションスキル、メンタリング能力、説明責任、会社文化へのポジティブな貢献、チームでの心理的安全感です。これらの属性については、主にマネージャーの経験と [360 フィードバック](/handbook/people-group/360-feedback/)プロセス（特にピアレビュー）に頼っています。マネージャーはフィードバックと改善や開発の機会を提供しますが、実際にはチームが個人を高める存在であると信じています。
 
-### エンジニアリング昇進率
+### エンジニアリング昇進率 {#engineering-promotion-rate}
 
-People Operations は会社全体および各部門別に[昇進率](/handbook/people-group/people-success-performance-indicators/#promotion-rate)をトラッキングしています。目標は年間 15%です。このメトリクスはリーダーが採用している意思決定の質とプロセスの公平性に対する組織の健全性指標として扱われます。FY21 にエンジニアリングは 12%の目標に正確に達していました。そのため、現在は全体的な割合に基づいて個々の昇進をブロックすることは考慮していません。もしそれが変わり、エンジニアリングが外れ値になった場合は再評価します。会社全体の[プロセス](/handbook/people-group/promotions-transfers/)はこちらです。
+People Operations は会社全体および各部門別に[昇進率](/handbook/people-group/people-success-performance-indicators/#promotion-rate)をトラッキングしています。目標は年間 15% です。このメトリクスはリーダーが採用している意思決定の質とプロセスの公平性に対する組織の健全性指標として扱われます。FY21 にエンジニアリングは 12% の目標に正確に達していました。そのため、現在は全体的な割合に基づいて個々の昇進をブロックすることは考慮していません。もしそれが変わり、エンジニアリングが外れ値になった場合は再評価します。会社全体の[プロセス](/handbook/people-group/promotions-transfers/)はこちらです。
 
-#### 異動オプション
+#### 異動オプション {#transfer-options}
 
 以下の表は各レベルでの可能な横移動オプションのいくつかを概説していますが、この表に限定されない柔軟性があります。各ポジションのレベリングを決定するために Compa Ratio が個人ごとに異なる場合があります。
 
@@ -477,7 +477,7 @@ People Operations は会社全体および各部門別に[昇進率](/handbook/p
 
 バックエンドチーム間の横移動もオプションです。これらのチームには Distribution、Create、Verify、Release、Geo、Monitoring、Gitaly などが含まれます。
 
-## 別チームへの出向チームメンバー
+## 別チームへの出向チームメンバー {#team-members-on-loan-to-another-team}
 
 チームメンバーはさまざまな理由で別チームに「出向」することがあります。これは[暫定](#types-of-interim-roles)ロールよりも正式でなく、異なる方法で処理されます。このような場合、以下をお勧めします：
 

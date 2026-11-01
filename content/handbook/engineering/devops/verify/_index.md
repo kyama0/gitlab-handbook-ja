@@ -2,20 +2,20 @@
 title: "Verify"
 description: "Verify 開発グループのハンドブックページ。"
 upstream_path: "/handbook/engineering/devops/verify/"
-upstream_sha: "eb9c7122b4259a2111ed65628e5384768922a597"
-translated_at: "2026-05-06T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T14:42:54.581550+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## ビジョン
+## ビジョン {#vision}
 
 私たちは、[スマートフィードバックループ](https://about.gitlab.com/direction/ops/#smart-feedback-loop)を提供し、[すべての人のためのオペレーション](https://about.gitlab.com/direction/ops/#operations-for-all)を体現した[包括的な CI プラットフォーム](https://about.gitlab.com/direction/ops/#verify)において[高速で信頼性の高いパイプライン](https://about.gitlab.com/direction/ops/#speedy-reliable-pipelines)を提供することで、グローバルなソフトウェア組織とチームが優れた意思決定を行えるよう支援します。
 
-## テクニカルロードマップ
+## テクニカルロードマップ {#technical-roadmap}
 
-### FY25 〜 FY26
+### FY25 〜 FY26 {#fy25-to-fy26}
 
 GitLab CI で引き続き注力する 3 つのコアテーマがあります:
 
@@ -34,7 +34,7 @@ GitLab.com、セルフマネージド、Dedicated のお客様に利益をもた
 
 [プロダクトロードマップ](https://gitlab.com/gitlab-com/Product/-/issues/12911)は FY25 の期待される成果物を概説しています。
 
-#### 3 年ビジョン
+#### 3 年ビジョン {#3-year-vision}
 
 1. Verify ステージのテクニカルデットロードマップのイテレーションを継続します。Issue ボードのような SSOT で最高優先度をどのように表現するか？
 1. **計画外の作業**を追跡してより可視化し、エンジニアリングのキャパシティやヘッドカウント計画においてこれを考慮するようにします。（例: インシデント対応、ヘルプ依頼 Issue、Slack でのトリアージ）
@@ -45,7 +45,7 @@ GitLab.com、セルフマネージド、Dedicated のお客様に利益をもた
 1. [CI イベント](https://docs.gitlab.com/ee/architecture/blueprints/gitlab_ci_events/) - FY25 では Verify のキャパシティ制約により延期されています。
 1. CI のサブジェクトドメインの専門家でないコントリビューターのためのオンボーディング改善 - コードの可読性とアクセシビリティの向上、またはより良いドキュメントとオンボーディング資料が含まれます。
 
-### FY24
+### FY24 {#fy24}
 
 Verify パイプラインチームは、FY24 年次目標の成果物に加えて、以下のエンジニアリング主導のイニシアチブに注力しました:
 
@@ -55,20 +55,20 @@ Verify パイプラインチームは、FY24 年次目標の成果物に加え�
 1. SaaS 可用性に関連するセキュリティ脆弱性と infradev Issue
 1. FY24 の機能開発が計画されていないカテゴリの S1/S2 バグのバーンダウン
    1. これには `Continuous Integration` カテゴリも含まれます。このカテゴリは Verify で最大のバグバックログを持っています。「メンテナンス」（新機能開発なし）と見なされる場合があるものの、GitLab CI をパフォーマンス良く信頼性高く維持するためにこの作業は依然として重要です。
-   1. [Pipeline Execution](/handbook/engineering/devops/verify/pipeline-execution/) は `Continuous Integration` カテゴリを担当しています。このチームは CI データパーティショニングとパイプライン速度改善の取り組みの DRI でもあります。
+   1. [Pipeline Execution](/handbook/engineering/devops/verify/pipeline-execution/)は `Continuous Integration` カテゴリを担当しています。このチームは CI データパーティショニングとパイプライン速度改善の取り組みの DRI でもあります。
 
-### FY23
+### FY23 {#fy23}
 
 Verify ステージは GitLab CI の信頼性とスケーラビリティに注力しました。これは gitlab.com の可用性にとって重要でした。データベースパフォーマンス、セキュリティ脆弱性、パフォーマンス改善、および関連するテクニカルデットへの対応が含まれます。
 これにより GitLab は安全で、コンプライアンスに準拠し、パフォーマンスを維持でき、[gitlab.com の SLA](/handbook/engineering/monitoring/#gitlabcom-service-availability)を維持できる SaaS 提供を続けることができました。
 
-## ミッション
+## ミッション {#mission}
 
-Verify のエンジニアとして、私たちはお客様を知っています。なぜなら私たち自身がお客様だからです。私たちはプラットフォームをすべての人にとってより良くするために常に努力しています。これを[イテレーション](/handbook/values/#iteration)、[ドッグフーディング](/handbook/values/#dogfooding)、そしてオープンソースコミュニティへの参加を通じて実現します。私たちは革新し、協力し、前提を問い直して優れた結果を導き出します。
+Verify のエンジニアとして、私たちはお客様を知っています。なぜなら私たち自身が _お客様である_ からです。私たちはプラットフォームをすべての人にとってより良くするために常に努力しています。これをイテレーション、ドッグフーディング、そしてオープンソースコミュニティへの参加を通じて実現します。私たちは革新し、協力し、前提を問い直して優れた結果を導き出します。
 
 私たちは構築するものに対して責任を持ち、安定性と可用性に焦点を当てます。これは、プラットフォームの運用とパフォーマンス特性について深い技術的理解を持ち、将来の成長に対してプロアクティブな視点を持つことで実現します。
 
-## 私たちについて
+## 私たちについて {#who-we-are}
 
 Verify ステージは 3 つのグループで構成されています:
 
@@ -78,46 +78,46 @@ Verify ステージは 3 つのグループで構成されています:
 
 1. [Verify:CI Platform](/handbook/engineering/devops/verify/ci-platform/)
 
-### Verify:Pipeline Authoring
+### Verify:Pipeline Authoring {#verifypipeline-authoring}
 
 {{< team-by-manager-role "Engineering Manager(.+)Pipeline Authoring" >}}
 
-### Verify:Pipeline Execution
+### Verify:Pipeline Execution {#verifypipeline-execution}
 
 {{< team-by-manager-role "Engineering Manager(.+)Pipeline Execution" >}}
 
-### Verify:CI Platform
+### Verify:CI Platform {#verifyci-platform}
 
 {{< team-by-manager-role role="Engineering Manager(.+)CI Platform" >}}
 
-### Verify エンジニアリングリーダー
+### Verify エンジニアリングリーダー {#verify-engineering-leaders}
 
 {{< team-by-manager-role role="Senior(.+)Manager(.+)(Verify)" team="(Principal|Pipeline)">}}
 
-### ステーブルカウンターパート
+### ステーブルカウンターパート {#stable-counterparts}
 
 {{< engineering/stable-counterparts role="Verify" other-manager-roles="Engineering Manager(.+)(Pipeline Authoring|Pipeline Execution|Runners)|Senior Manager(.+)Verify" >}}
 
-## 私たちの働き方
+## 私たちの働き方 {#how-we-work}
 
-### Jobs to be done（JTBD）
+### Jobs to be done (JTBD) {#jobs-to-be-done-jtbd}
 
-[Job to be Done（JTBD）](/handbook/product/ux/jobs-to-be-done/)は、お客様が達成しようとしているジョブという観点からプロダクトとソリューションを見るためのフレームワーク、またはレンズです。
+[Job to be Done (JTBD)](/handbook/product/ux/jobs-to-be-done/)は、お客様が達成しようとしているジョブという観点からプロダクトとソリューションを見るためのフレームワーク、またはレンズです。
 
 * [Verify:Pipeline Execution JTBD](/handbook/engineering/devops/verify/pipeline-execution/jtbd/)
 * [Verify:Pipeline Authoring JTBD](/handbook/engineering/devops/verify/pipeline-authoring/jtbd/)
 
-### Verify での開発者オンボーディング
+### Verify での開発者オンボーディング {#developer-onboarding-in-verify}
 
-チームへようこそ！GitLab の新規採用者として、内部異動者として、または CI ドメイン知識を身につけるために私たちの領域の Issue に取り組む方として、コードベース、テックスタック、そして Verify チームでの一般的な開発プロセスに慣れるために、[オンボーディング/シャドーイングバディ](/handbook/company/culture/all-remote/onboarding)が割り当てられます。
+チームへようこそ！GitLab の新規採用者として、内部異動者として、または CI ドメイン知識を身につけるために私たちの領域の Issue に取り組む方として、コードベース、Tech Stack、そして Verify チームでの一般的な開発プロセスに慣れるために、[オンボーディング/シャドーイングバディ](/handbook/company/culture/all-remote/onboarding)が割り当てられます。
 
-このページを出発点として読み、バディと定期的な同期または非同期のやり取りを自由に設定してください。最低でも週次のタッチポイントを設定し、私たちの定期チームシンクに参加して、私たちの働き方についてより深く学ぶことをお勧めします。（定期ミーティングへの招待はエンジニアリングマネージャーに連絡してください）チームメンバーと知り合うためにいくつかのコーヒーチャットをスケジュールしてください。チーム固有の開発者オンボーディング Issue（例: [Pipeline Execution 開発者オンボーディングチェックリスト](https://gitlab.com/gitlab-org/ci-cd/onboarding/-/blob/master/.gitlab/issue_templates/verify-pipeline-execution_developer-onboarding.md)）が割り当てられます。これには完了すべき管理タスク（新チームメンバーとして、該当する場合）と、技術ドキュメント、ミーティングアジェンダ、レコーディングへのリンクが含まれています。
+このページを出発点として読み、バディと定期的な同期または非同期のやり取りを自由に設定してください。最低でも週次のタッチポイントを設定し、私たちの定期チームシンクに参加して、私たちの働き方についてより深く学ぶことをお勧めします。（定期ミーティングへの招待は Engineering Manager に連絡してください）チームメンバーと知り合うためにいくつかのコーヒーチャットをスケジュールしてください。チーム固有の開発者オンボーディング Issue（例: [Pipeline Execution 開発者オンボーディングチェックリスト](https://gitlab.com/gitlab-org/ci-cd/onboarding/-/blob/master/.gitlab/issue_templates/verify-pipeline-execution_developer-onboarding.md)）が割り当てられます。これには完了すべき管理タスク（新チームメンバーとして、該当する場合）と、技術ドキュメント、ミーティングアジェンダ、レコーディングへのリンクが含まれています。
 
-`~onboarding` ラベルが付いた Issue は、CI 機能領域へのオンボーディングを助けるための小さな Issue です。私たちは通常 Kanban で作業するので、[現在のマイルストーンに `~onboarding` Issue がない](https://gitlab.com/groups/gitlab-org/-/boards/1372896?milestone_title=%23started&label_name[]=onboarding)場合は、プロダクトマネージャーおよび/またはエンジニアリングマネージャーに連絡して、オンボーディング期間中に取り組める Issue を確認してください。
+`~onboarding` ラベルが付いた Issue は、CI 機能領域へのオンボーディングを助けるための小さな Issue です。私たちは通常 Kanban で作業するので、[現在のマイルストーンに `~onboarding` Issue がない](https://gitlab.com/groups/gitlab-org/-/boards/1372896?milestone_title=%23started&label_name[]=onboarding)場合は、Product Manager および/または Engineering Manager に連絡して、オンボーディング期間中に取り組める Issue を確認してください。
 
-2021 年 5 月に、[CI シャドウプログラム](https://gitlab.com/gitlab-com/Product/-/issues/2542)を導入しました。これは他のエンジニアリングチームの既存 GitLab チームメンバーを CI ドメインにオンボーディングし、CI 機能に貢献するための試みとして実施しています。
+2021 年 5 月に、[CI シャドウプログラム](https://gitlab.com/gitlab-com/Product/-/issues/2542)を導入しました。これは他の Engineering チームの既存 GitLab チームメンバーを CI ドメインにオンボーディングし、CI 機能に貢献するための試みとして実施しています。
 
-#### オンボーディングバディ
+#### オンボーディングバディ {#onboarding-buddies}
 
 オンボーディングバディは、新入社員の最初の数ヶ月のオンボーディングがスムーズに進むよう確保するために割り当てられます。オンボーディングバディは、週次チェックインを設定することが推奨されます（Slack DM などの非同期、または定期的なコーヒーチャットなどの同期）。
 
@@ -127,43 +127,43 @@ Verify ステージは 3 つのグループで構成されています:
 
 [レビュアーメンタープログラム](/handbook/engineering/workflow/code-review/#reviewer-mentorship-program)と同様に、_新規採用者/異動者_ はコードレビューを実施しているかのように MR をレビューします。完了後、オンボーディングバディに MR を戻します。オンボーディングバディもコードレビューを完了し、次のチェックインで _新規採用者/異動者_ にコードレビューに関するフィードバックを提供することが期待されます。理想的には、次のチェックインの場で共有 Google Doc または GitLab Issue にメモを残して、共同作業しやすくします。
 
-### API 開発
+### API 開発 {#api-development}
 
-私たちの API は 2 つのフォーマット（[REST](https://docs.gitlab.com/ee/api/#rest-api) と [GraphQL](https://docs.gitlab.com/ee/api/#graphql-api)）で存在し、同等のクエリが可能です。
+私たちの API は 2 つのフォーマット（[REST](https://docs.gitlab.com/ee/api/#rest-api)と [GraphQL](https://docs.gitlab.com/ee/api/#graphql-api)）で存在し、同等のクエリが可能です。
 Verify では **`GraphQL` ファースト** であり、デフォルトで `GraphQL` を使用して新しいユーザー向け機能を開発します。
 可能な限り、古い `REST` ユーザー向け機能を `GraphQL` サポートにリファクタリングします。
 場合によっては、`REST` で機能を維持または新規開発する方が理にかなっていることがあります。
 例えば、`REST` はファイル処理が `GraphQL` より優れているため、この機能は `REST` で維持する方が良いかもしれません。
 各チームが `REST` を使用する方が適切と判断するタイミングを決定できますが、最終的にはすべてを `GraphQL` にすることが目標です。
 
-### 共有 Issue
+### 共有 Issue {#shared-issues}
 
 Verify チームでは、GitLab のミッション「[誰でも貢献できる](/handbook/company/mission/#mission)」に積極的に取り組んでいます！
 グループ全体でこのワークロードのバランスを取るために、[`Verify candidate`](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=Verify+candidate) ラベルを使用しています。
 このラベルが付いた Issue はすべて、Verify ステージのどのグループでも取り組む候補として適しています。
 これはフロントエンドとバックエンドの Issue の両方に適用されます。
-優先順位はプロダクトマネージャーが決定します（例えば、エンジニア自身のグループの成果物が引き続き優先されることを確認）が、エンジニアは[このボード](https://gitlab.com/gitlab-org/gitlab/-/boards/1339417?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Verify%20candidate)から作業を取り上げることが奨励されています。
+優先順位は Product Manager が決定します（例えば、エンジニア自身のグループの成果物が引き続き優先されることを確認）が、エンジニアは[このボード](https://gitlab.com/gitlab-org/gitlab/-/boards/1339417?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Verify%20candidate)から作業を取り上げることが奨励されています。
 これによりサイロを取り除き、ワークロードのバランスを取り、破壊的な再配置を防ぐことができます。
 
 利用可能な `Verify candidate` Issue の中での優先順位付けには、[プロダクト優先度](/handbook/product/product-processes/#prioritization)リストの Issue タイプを参照し、Issue に適用されている severity を確認することをお勧めします。
 
-### 共有テクニカルデット
+### 共有テクニカルデット {#shared-technical-debt}
 
 Verify ステージでは、より高速に移動できるようにテクニカルデットを優先することが最重要課題です。2024 年 8 月から、Verify ステージの Pipeline チームは、テクニカルデットの優先順位付けと、最も重要なテクニカルデット作業に関してチームメンバー間の整合性を取るための[ボード](https://gitlab.com/groups/gitlab-org/-/boards/1438885?not%5Blabel_name%5D%5B%5D=group%3A%3Ahosted%20runners&not%5Blabel_name%5D%5B%5D=group%3A%3Arunner&label_name%5B%5D=devops%3A%3Averify&label_name%5B%5D=type%3A%3Amaintenance)を作成しました。各チームのエンジニア DRI は EM と協力して、どの Issue を特定の時期に最も主張すべきかを整合させます。
 
-### Issue ヘルスステータス定義と非同期 Issue 更新
+### Issue ヘルスステータス定義と非同期 Issue 更新 {#issue-health-status-definitions--async-issue-updates}
 
-Verify 全体では[透明性](/handbook/values/#transparency)を重視し、[包摂性](/handbook/values/#bias-towards-asynchronous-communication)の価値観に従い、Issue ヘルスステータスを活用して進行中の Issue に定期的な更新を提供することで[効率性](/handbook/values/#write-things-down)を実践しています。Verify ステージの各チームは更新のサイクルと具体的なステータス定義を定めますが、一般的に期待されるのは、以下のヘルスステータスを使用して進行中の Issue への週次更新です:
+Verify 全体では透明性を重視し、包摂性の価値観に従い、Issue ヘルスステータスの使用と進行中の Issue の定期的な更新をドッグフーディングすることで効率性を期待しています。Verify ステージの各チームは更新のサイクルと具体的なステータス定義を定めますが、一般的に期待されるのは、以下のヘルスステータスを使用して進行中の Issue への週次更新です:
 
 * On Track（順調）
 * Needs Attention（要注意）
 * At Risk（リスクあり）
 
-これらの更新は、エンジニアがステータスの詳細を追加する機会であり、なぜ何かが遅れているまたはマイルストーンを逃すかについての正当化を提供することは期待されていません。常に[非難のない問題解決](/handbook/values/#blameless-problem-solving)と[親切さ](/handbook/values/#kindness)を奨励します。
+これらの更新は、エンジニアがステータスの詳細を追加する機会であり、なぜ何かが遅れているまたはマイルストーンを逃すかについての正当化を提供することは期待されていません。常に非難のない問題解決と親切さを奨励します。
 
-### Verify でのマージリクエスト
+### Verify でのマージリクエスト {#merge-requests-in-verify}
 
-Verify ステージでは、チームの協力、イテレーション、お客様の成果の共有パフォーマンス指標として [MR レート](/handbook/product/groups/product-analysis/engineering/metrics/#merge-request-rates-mr-rates)を重視しています。チーム全体が Issue のイテレーティブなスコープに責任を持ちます。これはプロダクト管理がユーザーインサイトに結びついた明確な問題文を作成することから始まります。その後、UX がインタラクション仕様と受け入れ基準を追加し、エンジニアリングチームが検討・評価します。チームは[可能な限り小さなこと](/handbook/values/#iteration)を提供するためにスコープをイテレーティブに扱うことが奨励されています。
+Verify ステージでは、チームの協力、イテレーション、お客様の成果の共有パフォーマンス指標として [MR レート](/handbook/product/groups/product-analysis/engineering/metrics/#merge-request-rates-mr-rates)を重視しています。チーム全体が Issue のイテレーティブなスコープに責任を持ちます。これはプロダクト管理がユーザーインサイトに結びついた明確な問題文を作成することから始まります。その後、UX がインタラクション仕様と受け入れ基準を追加し、エンジニアリングチームが検討・評価します。チームは可能な限り小さなことを提供するためにスコープをイテレーティブに扱うことが奨励されています。
 
 MR レートをスループットの指標として考えることで、プロダクト管理はユーザー体験を改善するために分解されたスコープの作成に注力しています。これにより UX とエンジニアリングのチームメイトが同じ問題をよりシンプルな方法で解決することを促し、最終的にチーム全体のスループットを向上させます。
 
@@ -174,7 +174,7 @@ Verify のコードを変更するマージリクエストには、Verify メン
 * `~"verify-review::impacted"` - メンテナーがニアミスのバグ、非効率性、テクニカルデットを特定できたマージリクエスト
 * `~"verify-review::not impacted"` - 変更が些細なものであるか、Verify メンテナーが問題を見つけなかったマージリクエスト
 
-#### ラバースタンプが適切な場合
+#### ラバースタンプが適切な場合 {#when-rubberstamping-is-appropriate}
 
 「ラバースタンプ」とは、MR がすでに他のメンテナーから徹底的なレビューを受けており、Verify 固有の変更が最小限または十分に理解されている場合の軽量な承認を指します。これが適切なのは:
 
@@ -187,7 +187,7 @@ Verify のコードを変更するマージリクエストには、Verify メン
 これにより、Verify メンテナーはレビューに期待される労力をより適切に理解し、より迅速なレビューに役立てることができます。
 メンテナーが、ラバースタンプレベル以上のレビューが必要であると判断する場合があります - これは変更が無条件に通過されることを保証するものではありません。
 
-#### 深いレビューがあまり必要でない領域
+#### 深いレビューがあまり必要でない領域 {#areas-requiring-less-deep-review}
 
 以下の領域は通常、Verify メンテナーからの深いアーキテクチャレビューを必要としません:
 
@@ -198,33 +198,33 @@ Verify のコードを変更するマージリクエストには、Verify メン
 
 これらの領域では、Verify メンテナーの承認は、CI 機能が悪影響を受けていないことの確認に集中できます。深いアーキテクチャレビューは不要です。
 
-### Pipeline Authoring と Pipeline Execution の協力
+### Pipeline Authoring と Pipeline Execution の協力 {#pipeline-authoring-and-pipeline-execution-collaboration}
 
 Pipeline Authoring と Pipeline Execution は密接に関連していますが、ユーザーのパイプラインとのインタラクションサイクルにおける異なる段階を表しています。非常に高レベルでは、この画像は各グループの主な焦点と、どのように協力してより良いパイプライン体験を提供できるかを示しています。
 
 ![Verify グループ](/images/product/groups/verify_groups_banner.jpg)
 
-### 非同期作業週
+### 非同期作業週 {#async-work-week}
 
 Verify では、四半期の最初の月曜日から始まる[四半期ごとの非同期作業週](https://gitlab.com/gitlab-org/verify-stage/-/issues/412)を実施しています。
 
 注目すべきメリットとして、同期ミーティングの時間が削減され、非同期コミュニケーションファーストの文化と多様性・包括性の価値観に沿ったより深い集中が可能になります。ただし、これはミーティングを一切行わないという意味ではありません。それぞれのミーティング参加者が適宜判断します。例外として: 優先度の高い Issue とイニシアチブ、ソーシャルコール、コーヒーチャットなどが挙げられます。また、他の時間には非同期ファーストをデフォルトにすべきでないという意味でもありません。定期的にスケジュールされた非同期週を設けることで、プロセスが同期ミーティングに依存するようにならないようにします。
 
-## Verify エンジニアリング - 非同期アップデート
+## Verify エンジニアリング - 非同期アップデート {#verify-engineering---async-updates}
 
-### 現在（2022 年以降）
+### 現在（2022 年以降） {#current-2022-onward}
 
-2022 年 6 月以降、[Ops セクションの非同期アップデートプロセス](/handbook/engineering/devops/)に従い、ステージレベルおよびステージ内の各グループについて週次で非同期 Issue アップデートが作成されています。コントリビューションは、Verify ステージのプリンシパル以上のエンジニア、エンジニアリングマネージャー、シニアエンジニアリングマネージャーによって追加されます。
+2022 年 6 月以降、[Ops セクションの非同期アップデートプロセス](/handbook/engineering/devops/)に従い、ステージレベルおよびステージ内の各グループについて週次で非同期 Issue アップデートが作成されています。コントリビューションは、Verify ステージの Principal+ Engineers、Engineering Manager、Senior Engineering Manager によって追加されます。
 
-### 2020〜2021 年
+### 2020 〜 2021 年 {#2020-2021}
 
 隔週で Verify エンジニアリングアップデートニュースレターがオプトインサブスクライバーリストに送付されていました。メールの目的は、Verify ステージの最近のハイライトを共有し、他のチームで何が起きているかをより良く把握し、学習と協力の新たな機会を提供することでした。
 
-誰でもニュースレターページでサインアップまたは以前の Issue を閲覧できます（リンクは現在利用不可）。
+誰でもニュースレターページでサインアップまたは過去の号を閲覧できます（リンクは現在利用不可）。
 
 ニュースレターの各号は[ニュースレターエピック](https://gitlab.com/groups/gitlab-com/-/epics/1148)にリンクされた個別の Issue を使用して計画されています。コンテンツは通常マネージャーによって提供されますが、誰でもニュースレターのトピックのコントリビューションが奨励されています。
 
-## Verify テクニカルディスカッション
+## Verify テクニカルディスカッション {#verify-technical-discussions}
 
 Verify テクニカルディスカッションは、Verify ステージのチームメンバーが毎月主催する Zoom ミーティングです。誰でも招待されていますが、特に Verify ステージメンバーの参加が奨励されています。
 
@@ -234,11 +234,11 @@ Verify テクニカルディスカッションは、Verify ステージのチー
 
 以下に、Verify テクニカルディスカッションとテクニカルディープダイブのレコーディングへのリンクのテーブルがあります。
 
-### 現在のレコーディングの在庫
+### 現在のレコーディングの在庫 {#current-inventory-of-recordings}
 
 Verify テクニカルディスカッションは自動的に録画され、[Google Drive（内部）](https://drive.google.com/drive/folders/1Kk3RAfiOeHyny2OTSjGNVEjcO4Wb60oV)に追加されます。
 
-### YouTube にアップロードされたレコーディング
+### YouTube にアップロードされたレコーディング {#uploaded-recordings-to-youtube}
 
 | 日付       | タイトル                                                          | レコーディング                                 |
 |------------|----------------------------------------------------------------|-------------------------------------------|
@@ -248,19 +248,19 @@ Verify テクニカルディスカッションは自動的に録画され、[Goo
 | 2020-11-19 | テクニカルディープダイブ - クラウドネイティブビルドログ機能概要 | [レコーディング](https://youtu.be/Fq1ecmb_zk0) |
 | 2020-05-08 | テクニカルディープダイブ - GitLab Compose Kit で Prometheus を使用する | [レコーディング](https://youtu.be/y9NW7A_XJrU) |
 
-## 週次トリアージレポート
+## 週次トリアージレポート {#weekly-triage-reports}
 
-各グループのプロダクトマネージャー、エンジニアリングマネージャー、デザイナーは、[週次トリアージレポートの一部として機能提案とバグをトリアージしてスケジュールを立てる](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#group-level-bugs-features-and-deferred-ux)責任があります。プロダクトマネージャーは、マイルストーンまたはバックログに Issue を割り当てることでスケジュールを設定します。バグトリアージでは、エンジニアリングマネージャーとプロダクトマネージャーが協力して、正しい `severity` と `priority` ラベルが適用されていることを確認します。[プロダクトマネージャーが優先順位付けの DRI](/handbook/product-development/how-we-work/issue-triage/#priority) であるため、バグへの初期 `priority` ラベルを検証または適用します。エンジニアリングマネージャーは、トリアージレポートにリストされたバグの `severity` ラベルを追加または更新し、必要に応じてバグの重大性と技術的実現可能性の理解をプロダクト管理に支援する責任があります。
+各グループの Product Manager、Engineering Manager、デザイナーは、[週次トリアージレポートの一部として機能提案とバグをトリアージしてスケジュールを立てる](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#group-level-bugs-features-and-deferred-ux)責任があります。Product Manager は、マイルストーンまたはバックログに Issue を割り当てることでスケジュールを設定します。バグトリアージでは、Engineering Manager と Product Manager が協力して、正しい `severity` と `priority` ラベルが適用されていることを確認します。[Product Manager が優先順位付けの DRI](/handbook/product-development/how-we-work/issue-triage/#priority)であるため、バグへの初期 `priority` ラベルを検証または適用します。Engineering Manager は、トリアージレポートにリストされたバグの `severity` ラベルを追加または更新し、必要に応じてバグの重大性と技術的実現可能性の理解をプロダクト管理に支援する責任があります。
 
-バグ解決の SLO は severity に紐付いていますが、適切な目標解決時間を持ったグループの優先順位を設定するのはプロダクト管理次第です。例えば、`severity::2` レベルのバグの量などの基準により、プロダクトマネージャーは期待される解決時間を反映するために優先度を適宜調整することが適切な場合があります。
+バグ解決の SLO は severity に紐付いていますが、適切な目標解決時間を持ったグループの優先順位を設定するのはプロダクト管理次第です。例えば、`severity::2` レベルのバグの量などの基準により、Product Manager は期待される解決時間を反映するために優先度を適宜調整することが適切な場合があります。
 
-### 可用性、セキュリティ、パフォーマンス、バグのトリアージプロセス
+### 可用性、セキュリティ、パフォーマンス、バグのトリアージプロセス {#availability-security-performance-and-bug-triage-process}
 
 Verify ステージでは、[severity SLO チャート](/handbook/product-development/how-we-work/issue-triage/#severity-slos)に従い、新しい可用性、セキュリティ、パフォーマンス Issue を割り当てられた severity の SLO 内で解決することを目指しています。これらのタイプの Issue は最高優先度であり、バグとテクニカルデットがそれに続きます。
 
 可用性とパフォーマンスの Issue（一般的に infradev と呼ばれる）は[Infra/Dev トリアージボード](https://gitlab.com/groups/gitlab-org/-/boards/1193197?label_name[]=gitlab.com&label_name[]=infradev)でもトリアージされます。
 
-## コミュニティコントリビューションのサポート
+## コミュニティコントリビューションのサポート {#supporting-community-contributions}
 
 私たちはオープンソースコミュニティのサポートを信じています。2 つの主な成功指標をサポートすることを目指しています:
 
@@ -269,7 +269,7 @@ Verify ステージでは、[severity SLO チャート](/handbook/product-develo
 
 Verify ステージの各チームは、コミュニティが効果的にサポートされ、自由に機能や修正をプロダクトに追加できるようにするために、ほぼ同じプロセスに従っています。コミュニティコントリビューション MR の管理は、コントリビューションの処理、レビュー、マージという 3 つの主要な領域にわたっています。
 
-### プロセス
+### プロセス {#process}
 
 Verify へのコードコントリビューションは通常、次の 3 種類で行われます:
 
@@ -279,44 +279,44 @@ Verify へのコードコントリビューションは通常、次の 3 種類�
 
 無料ユーザーと有料ユーザー両方からのコントリビューションは同等に重要であり、[GitLab コントリビューションガイドライン](https://about.gitlab.com/community/contribute/)に従います。特にコントリビューションのレビュー段階において、ユーザーと Verify のエンジニアリングチームとの間のこのプロセスをできる限り摩擦のないものにするよう努めています。
 
-### コントリビューションのレビュー
+### コントリビューションのレビュー {#reviewing-contributions}
 
-コントリビューションが作成されると、エンジニアリングマネージャーがコミュニティコントリビューターとともに管理・レビューするエンジニアを割り当てます。コントリビューションのレビューは、完了の定義、スタイルガイドライン、その他の開発プラクティスに従います。レビューの DRI として、割り当てられた Verify エンジニアはコミュニティコントリビューターとともに未解決の項目を解決します。その後、MR はマージ前の最終レビューのために関連するドメイン専門知識を持つメンテナーに渡されます。
+コントリビューションが作成されると、Engineering Manager がコミュニティコントリビューターとともに管理・レビューするエンジニアを割り当てます。コントリビューションのレビューは、完了の定義、スタイルガイドライン、その他の開発プラクティスに従います。レビューの DRI として、割り当てられた Verify エンジニアはコミュニティコントリビューターとともに未解決の項目を解決します。その後、MR はマージ前の最終レビューのために関連するドメイン専門知識を持つメンテナーに渡されます。
 
-#### パートナーからのコントリビューション
+#### パートナーからのコントリビューション {#contributions-from-partners}
 
 パートナーは GitLab のエコシステムの重要な部分です。これらのコントリビューションは、コミュニティ MR コントリビューションと同じ[GitLab コントリビューションガイドライン](https://about.gitlab.com/community/contribute/)でレビューされるべきであり、コードベースの Verify 領域での作業のための [Verify コントリビューションガイドライン](https://docs.gitlab.com/ee/development/contributing/verify/)と整合しています。
 
-### コントリビューションのマージ
+### コントリビューションのマージ {#merging-the-contribution}
 
 コードベースのメンテナーが、コントリビューションを Verify プロダクトにマージする DRI となります。
 
-### コミュニティコントリビューションの SLO
+### コミュニティコントリビューションの SLO {#slos-for-community-contributions}
 
 **洗練された** Issue については、レビューとマージの優先事項と見なされます。洗練された Issue は `workflow::ready for development`（開発準備完了）状態で、`direction` ラベルが付き、技術提案があるか重みが設定されています。`workflow::ready for development` と `direction` ラベルが付いていない Issue は **洗練されていない**と見なされ、レビューの優先度が低くなり、マージ SLO が長くなります。この 2 種類の Issue の SLO を以下のテーブルに定義します:
 
 | Issue とユーザーの種類 | レビュー SLO の時間枠 | マージ SLO の時間枠 |
 | --- | --- | --- |
-| 洗練された Issue またはS2・S1 の severity のバグへのすべてのユーザーコントリビューション | 30 日 | 次のリリース（60 日） |
-| 洗練されていない Issue またはS3 の severity のバグへの有料ユーザーコントリビューション | 60 日 | 次の 3 リリース以内（約 1 四半期、90 日） |
-| 洗練されていない Issue またはS4 の severity のバグへの無料ユーザーコントリビューション | 90 日 | 次の 3 リリース以降（1 四半期以上、120 日超） |
+| 洗練された Issue または S2 または S1 の severity のバグへのすべてのユーザーコントリビューション | 30 日 | 次のリリース（60 日） |
+| 洗練されていない Issue または S3 の severity のバグへの有料ユーザーコントリビューション | 60 日 | 次の 3 リリース以内（約 1 四半期、90 日） |
+| 洗練されていない Issue または S4 の severity のバグへの無料ユーザーコントリビューション | 90 日 | 次の 3 リリース以降（1 四半期以上、120 日超） |
 
 コミュニティコントリビューションの流入がチームエンジニアを圧倒し、計画された Issue への取り組みに影響しないよう、レビュー担当エンジニアあたり WIP 制限 5 件の割り当て済みコミュニティコントリビューション MR があります。これにより、単一のエンジニアが行うコンテキスト切り替えの量を制限し、レビューに圧倒されるのを防ぎます。
 
-## 緊急優先事項の管理
+## 緊急優先事項の管理 {#managing-urgent-priorities}
 
-エスカレーションや優先度の高いタスクが発生した場合、できる限り迅速にタスクを完了できるよう[フォローザサン（follow-the-sun）ローテーション](https://www.lucidchart.com/blog/follow-the-sun-model)を採用します。これらの緊急タスクの例には（これに限らず）: 重要な顧客修正、重大なセキュリティ Issue、または深刻なインシデントに関連する是正措置が含まれます。この緊急性のレベルはチームリーダーシップ（エンジニアリングマネージャーとプロダクトマネージャーなど）によって確認される必要があります。フォローザサンローテーションでは、エンジニアが勤務時間内にそのタスクに集中し、次のエンジニアがオンラインになったら引き継ぎます。エンジニアは必要に応じて互いの作業の引き継ぎを調整します（例えば、コントリビューターとレビュアーとしてともに MR を共同作業する場合など）。この取り組みはまた、Verify ステージグループ全体のエンジニアの協力を伴うステージをまたいだ取り組みになる可能性があります。
+エスカレーションや優先度の高いタスクが発生した場合、できる限り迅速にタスクを完了できるよう[フォローザサン（follow-the-sun）ローテーション](https://www.lucidchart.com/blog/follow-the-sun-model)を採用します。これらの緊急タスクの例には（これに限らず）: 重要な顧客修正、重大なセキュリティ Issue、または深刻なインシデントに関連する是正措置が含まれます。この緊急性のレベルはチームリーダーシップ（Engineering Manager と Product Manager など）によって確認される必要があります。フォローザサンローテーションでは、エンジニアが勤務時間内にそのタスクに集中し、次のエンジニアがオンラインになったら引き継ぎます。エンジニアは必要に応じて互いの作業の引き継ぎを調整します（例えば、コントリビューターとレビュアーとしてともに MR を共同作業する場合など）。この取り組みはまた、Verify ステージグループ全体のエンジニアの協力を伴うステージをまたいだ取り組みになる可能性があります。
 
-GitLab の価値観の一部として、[従業員が少ない地域の人々に対して包括的かつ公平であること](/handbook/values/#inclusive-and-fair-policy-to-regions-with-fewer-employees)を目指しています。その結果、通常の業務時間外に継続的に作業することは期待されていません。特定の地域（APAC など）で利用可能な人数が限られている場合は、Verify ステージ以外にエスカレーションして緊急取り組みへの集中を維持することを検討すべきです。エンジニアや他の SME に連絡し、マネージャーがこのエスカレーションパスを支援するようにしてください。
+GitLab の価値観の一部として、従業員が少ない地域の人々に対して包括的かつ公平であることを目指しています。その結果、通常の業務時間外に継続的に作業することは期待されていません。特定の地域（APAC など）で利用可能な人数が限られている場合は、Verify ステージ以外にエスカレーションして緊急取り組みへの集中を維持することを検討すべきです。エンジニアや他の SME に連絡し、マネージャーがこのエスカレーションパスを支援するようにしてください。
 
-## 共通リンク
+## 共通リンク {#common-links}
 
-### Slack チャンネル
+### Slack チャンネル {#slack-channels}
 
 * Verify [#s_verify](https://gitlab.slack.com/archives/C0SFP840G)
   * Verify:Pipeline Execution [#g_pipeline-execution](https://gitlab.slack.com/archives/CPCJ8CCCX)
   * Verify:Pipeline Authoring [#g_pipeline-authoring](https://gitlab.slack.com/archives/C019R5JD44E)
   * Verify:Pipeline Security [#g_pipeline-security](https://gitlab.slack.com/archives/CPANF553J)
-* Verify エンジニアリング管理 [#s_verify-em](https://gitlab.slack.com/archives/C014UTH4W02)
+* Verify Engineering Management [#s_verify-em](https://gitlab.slack.com/archives/C014UTH4W02)
 * Verify フロントエンドエンジニアリング [#s_verify_fe](https://gitlab.slack.com/archives/CUYH1MP0Q)
 * CI/CD UX [#ux_ci-cd](https://gitlab.slack.com/archives/CL9STLJ06)

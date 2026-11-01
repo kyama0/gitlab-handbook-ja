@@ -10,9 +10,9 @@ owning-stage: "~group::Networking & Incident Management"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/haproxy_kubernetes/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-lastmod: "2026-10-15T11:59:42Z"
-translated_at: "2026-10-19T22:21:24+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-29T16:51:18Z"
+translated_at: "2026-11-01T14:16:22+00:00"
 translator: codex
 stale: false
 ---
@@ -53,15 +53,15 @@ GitLab.com から HAProxy を取り除く計画は何年も前から存在して
 - **手動アップグレード。** バイナリのアップグレードには調整されたドレインが必要なため、`haproxy` パッケージは自動アップグレードの対象外となっており、バージョン更新は手動です。ノードの OS パッチ適用も、繰り返し発生する手作業です（[production-engineering#29158](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29158)）。
 - **あらゆる場所で VM ごとの識別情報を使用。** ダッシュボード、アラート、ドレインスクリプト、Terraform のインスタンスグループ制約は、すべて名前の付いた固定のマシン群を前提としています。
 - **5 か所から来る設定。** chef-repo 内のロール JSON、cookbook の属性とテンプレート、deny リストと captcha リストのために各ノードへクローンする 2 つの Git リポジトリ、URL で取得する Cloudflare の IP 範囲、Vault からのシークレットです。それぞれ更新経路と頻度が異なります。
-- **ゾーン障害からの復旧。** ゾーンを失うとサーバー群の 3 分の 1 が失われ、復旧手順では他のゾーンに代替 VM をプロビジョニングします。`gstg` で四半期ごとに実施する障害訓練は、この手順だけを試します。最も弱い部分である上記のプロビジョニング経路を測定するもので、トラフィックの経路を測定することはありません。`gprd` では実施していません。
+- **ゾーン障害からの復旧。** ゾーンを失うとサーバー群の 3 分の 1 が失われ、復旧手順では他のゾーンに代替 VM をプロビジョニングします。`gstg` で四半期ごとに実施する障害訓練は、この手順だけを試します。最も弱い部分である上記のプロビジョニング経路の所要時間を測定するもので、トラフィックの経路を測定することはありません。`gprd` では実施していません。
 
 ### 目標 {#goals}
 
 - すべての HAProxy の種類を HPA 付きの GKE 上の Pod として実行し、現在のロール JSON に対応する Helm の値から設定をレンダリングします。シークレットとリストは External Secrets を通じて Vault から取得します。
 - サービス単位、ポート単位でトラフィックを VM から Pod に移し、各段階でテスト済みの単一コマンドによるロールバックを用意します。VM を廃止するまでは、どの切り替えも元に戻せるようにします。
 - `haproxy_backend_up` と関連メトリクスの名前、および `type=frontend`、`tier=lb` ラベルを維持し、release-tools の昇格チェックとダッシュボードが引き続き動作するようにします。
-- HAProxy のリクエストログが、現在の `haproxy_logs` テーブルと同じフィールドで Cloud Logging と BigQuery に引き続き届くようにします。
-- 種類ごとに、Pod が本番トラフィックを十分な期間処理し、誰も VM に戻したいと思わなくなった時点で、VM 群、その Chef ロール、Terraform モジュール、chef-repo のヘルパースクリプトを削除します。
+- HAProxy のリクエストログが、現在の `haproxy_logs` テーブルと同じフィールドで Cloud Logging と BigQuery に引き続き書き込まれるようにします。
+- 種類ごとに、Pod が本番トラフィックを十分な期間処理し、チームが VM に戻したいと思わなくなった時点で、VM 群、その Chef ロール、Terraform モジュール、chef-repo のヘルパースクリプトを削除します。
 
 ### 対象外 {#non-goals}
 
@@ -76,9 +76,9 @@ GitLab.com から HAProxy を取り除く計画は何年も前から存在して
 HAProxy の設定をそのまま GKE に移行します。以下は現時点での考えです。それぞれ確定した時点で、検討した代替案とともに[決定ログ](#decision-log)へ記録します。
 
 - [gl-infra/charts](https://gitlab.com/gitlab-com/gl-infra/charts)に独自の Helm チャートを用意し、argocd/apps を通じてデプロイします。現在のロール JSON に対応する値から `haproxy.cfg` をレンダリングします。ci-images に軽量なイメージを用意し、Artifact Registry から取得します。（[ADR 002](decisions/002_chart_and_images.md)）
-- プロトコルグループとアドレスごとに 1 リリース、環境ごとに `main-http`、`main-ssh`、`main-kas`、`main-internal-http`、`main-internal-kas`、`registry`、`pages`、`ci` の 8 リリースとします。各リリースは固有のアドレスと Service を持ち、クラスター統合によって各環境に作成されたリージョンの Dataplane V2 クラスター内の専用ノードプールで稼働します。
-- リリースの各ゾーンに 1 つの Deployment を配置し、現在の VM と同様、自ゾーンのバックエンドをプライマリ、他の 2 ゾーンを `backup` としてレンダリングします。
-- 証明書、認証情報、拒否リストは、External Secrets を通じて Vault から取得します。Cloudflare の IP 範囲はチャートの値として設定し、設定ファイルと各 Service の許可された送信元範囲にレンダリングします。
+- プロトコルグループとアドレスごとに 1 リリース、環境ごとに `main-http`、`main-ssh`、`main-kas`、`main-internal-http`、`main-internal-kas`、`registry`、`pages`、`ci` の 8 リリースとします。各リリースは固有のアドレスと Service を持ち、クラスター統合によって各環境に作成されたリージョンの Dataplane V2 クラスター内の専用ノードプールで稼働します。（[ADR 003](decisions/003_release_topology.md)）
+- リリースの各ゾーンに 1 つの Deployment を配置し、現在の VM と同様、自ゾーンのバックエンドをプライマリ、他の 2 ゾーンを `backup` としてレンダリングします。（[ADR 004](decisions/004_zone_locality.md)）
+- 証明書、認証情報、拒否リストは、External Secrets を通じて Vault から取得します。Cloudflare の IP 範囲はチャートの値として設定し、設定ファイルと各 Service の許可された送信元範囲にレンダリングします。（[ADR 005](decisions/005_configuration_inputs.md)）
 - メトリクスのラベルを VM 群に合わせて両方のサーバー群が同じように見えるようにし、ログは JSON として stdout に出力し、Cloud Logging シンクを通じて BigQuery に送ります。
 - 起動プローブを自動停止の仕組みとするローリングアップデートを行い、必要に応じて Argo Rollouts で安定性を確認する待機時間とメトリクスのチェックを追加します。
 - Terraform で予約したアドレス上の GKE `LoadBalancer` Service を通じてイングレスを提供し、現在と同様に前段へ Cloudflare Spectrum を置きます。トラフィックはエントリーポイントごとに移行します。http-router はリクエスト単位で HTTP を分割し、各 Spectrum アプリのオリジンはポート単位で移行し、内部クライアントは DNS と設定によって移行します。pages と registry は公開済みのアドレスを変更できないため、ポートごとにアドレスを引き渡し、それぞれ約 30 秒の中断が発生します。その転送ルールだけが、VM と Pod が共有する GCP オブジェクトです。（[ADR 001](decisions/001_traffic_cutover.md)）
@@ -88,11 +88,11 @@ HAProxy の設定をそのまま GKE に移行します。以下は現時点で�
 
 - `/chatops gitlab run canary` と SRE のゾーンドレインのワークフロー。変更はなく、KV に書き込み、エージェントが適用します。Pod は、エージェントを実行するノードが増えるだけです。
 - release-tools の昇格チェック。`haproxy_backend_up{backend=~"canary_.*"}` と `type=frontend`、`tier=lb` を使用します。ネイティブの prometheus exporter がメトリクス名を維持し、スクレイプ設定がラベルを維持します。
-- ゾーンの局所性。各 VM は自ゾーンのバックエンドにルーティングし、他の 2 ゾーンへフォールバックします。これにより大半のトラフィックを 1 つのゾーン内に保ち、ゾーンドレインをそのゾーンのロードバランサーのドレインにします。各ゾーンに 1 つの Deployment を置き、自ゾーンのサーバーをプライマリ、他の 2 ゾーンを `backup` としてレンダリングすることで、この両方を維持します。
+- ゾーンの局所性。各 VM は自ゾーンのバックエンドにルーティングし、他の 2 ゾーンへフォールバックします。これにより大半のトラフィックを 1 つのゾーン内に保ち、ゾーンドレインをそのゾーンのロードバランサーのドレインにします。各ゾーンに 1 つの Deployment を置き、自ゾーンのサーバーをプライマリ、他の 2 ゾーンを `backup` としてレンダリングすることで、この両方を維持します（[ADR 004](decisions/004_zone_locality.md)）。
 - クライアント IP の処理。22 と kas 8150 での Spectrum からの proxy-protocol v2、80 と 443 での `CF-Connecting-IP`、Cloudflare のみを許可する送信元 ACL、443 での origin-pull クライアント証明書の検証です。
 - プロセス単位のレート制限。HAProxy には、registry の送信元 IP ごとの制限（10 秒あたり 4000 リクエスト）と ssh の `rate-limit sessions 110` の 2 つが残っています。実効的な制限値はその値にインスタンス数を掛けたもので、インスタンス数は現在は固定ですが HPA の下では変動します。registry と ssh のリリースを構築する前に、それぞれまだ必要かどうかを見直します。必要であれば、リリースの最小レプリカ数からプロセス単位の値を導出します。
 - pages と registry のアドレス。お客様はカスタムドメインの DNS を pages のアドレスに向けており、registry のアドレスは許可リスト用に GitLab.com の設定ドキュメントで公開されています。両方とも Pod 層へ移行し、どちらのアドレスも変更しません。それ以外に外部から見えるアドレスはありません。Spectrum のポートには Cloudflare のアドレスが表示され、内部ゲートウェイと ci-gateway のクライアントはホスト名を使用します。
-- ci-gateway。Runner Manager は `ci-gateway` VPC への VPC ピアリングを通じて `*.ci-gateway.int.gprd.gitlab.net:8989` にアクセスし、フロントエンドでは送信元の範囲を許可リストに登録しています。VM を何で置き換えるとしても、送信元アドレスを保持したまま、そのピアリング経由で到達できる必要があります。
+- ci-gateway。Runner Manager は `ci-gateway` VPC への VPC ピアリングを通じて `*.ci-gateway.int.gprd.gitlab.net:8989` にアクセスし、フロントエンドでは送信元の範囲を許可リストに登録しています。VM の代替は、送信元アドレスを保持したまま、そのピアリング経由で到達できる必要があります。
 
 ### 変更すること {#what-changes}
 
@@ -108,11 +108,11 @@ HAProxy の設定をそのまま GKE に移行します。以下は現時点で�
 
 ### リスク {#risks}
 
-- **クラスターへの循環依存。** 統合によって canary と kas が同じクラスターに移ると、Pod は自分が動作するクラスターの ILB にルーティングするため、クラスター全体のインシデントではイングレスも停止します。Pod は taint を設定した専用ノードプールで稼働するため、ノードの障害、ノードプールのアップグレード、他のワークロードのリソース使用の影響は受けません。残るのはコントロールプレーンとクラスターのネットワークです。これは受け入れます。専用の LB クラスターを設けても、そのインシデントではどのみち canary と kas が停止するため、イングレスを保護できるのはゾーンクラスターのバックエンドに対してだけです。また、統合の方向性に反して、運用するクラスターがもう 1 つ増えることになります。
+- **クラスターへの循環依存。** 統合によって canary と kas が同じクラスターに移ると、Pod は自分が動作するクラスターの ILB にルーティングするため、クラスター全体のインシデントではイングレスも停止します。Pod は taint を設定した専用ノードプールで稼働するため、ノードの障害、ノードプールのアップグレード、他のワークロードのリソース使用の影響は受けません。残るのはコントロールプレーンとクラスターのネットワークです。これは受け入れます。専用の LB クラスターを設けても、そのインシデントではどのみち canary と kas が停止するため、イングレスを保護できるのはゾーンクラスターのバックエンドに対してだけです。また、統合の方向性に反して、運用するクラスターがもう 1 つ増えることになります。（[ADR 003](decisions/003_release_topology.md)）
 - **HPA と長時間接続。** CPU は TLS 負荷を反映しますが、websocket、kas トンネル、ssh セッションはスケールイン時に解放されません。慎重なスケールダウン、リクエストに合わせた Pod ごとの `maxconn`、VM と同じ `hard-stop-after` による 30 分の打ち切りを使用します。`gstg` で、強制スケールインとデプロイの間 websocket、kas、ssh 接続を開いたままにして検証済みです。接続は 30 分の打ち切り時に終了し、それより前には終了しません。
 - **起動時の期間。** 3.1 より前の HAProxy は、最初のヘルスチェックが完了するまで、すべてのバックエンドを UP と見なします。VM では起動時だけですが、HPA の下ではスケールアップとデプロイのたびに発生します。バックエンド ILB が停止している場合に最も重要になり、まさにそのとき HPA がスケーリングする可能性が高くなります。起動プローブの初期遅延をヘルスチェック 1 回分（`inter × fall` に `spread-checks` を加えたもの）とし、それまでは Pod がトラフィックを受けないようにします。`pre` で 1 つのバックエンドにアクセスできない状態にしてスケールアップし、新しい Pod の最初の接続が他のバックエンドに向かうことを検証済みです。
 - **オブザーバビリティにおけるインスタンス識別情報。** Pod 名は入れ替わり、インスタンス数は変動します。VM 名を指定するすべてのダッシュボード、アラート、ランブックの手順を更新する必要があります。Runner Manager が `ci-runners` に残ったのと同様に、Pod はメトリクスカタログの `frontend` サービスに残るため、すべてのダッシュボードは変わりません。`gstg` でトラフィックを移す前に、`provisioning.kubernetes` と `haproxy` 名前空間を指定してサービスを宣言し、HAProxy のダッシュボードと並んで Kubernetes のダッシュボードを生成します。また、HAProxy のダッシュボードでは VM と Pod を分け、両方が稼働している間に比較できるようにします。
-- **ロードバランサーから離脱するノード。** cordon された GKE ノードは、削除されるまでロードバランサーのバックエンドリストに残る場合があります。そこに送られた新しい接続は Pod を見つけられず、開いている接続はタイムアウトするまでハングします。これが [production-engineering#29764](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29764)で kas の ILB において Runner Manager が 1 時間ハングした原因です。`externalTrafficPolicy: Local` では、最後の Pod がなくなると直ちにヘルスチェックがノードを除外するはずです。cordon されたノードでも同様になるかを `gstg` で確認し、GCP に問い合わせます。
+- **ロードバランサーから離脱するノード。** cordon された GKE ノードは、削除されるまでロードバランサーのバックエンドリストに残る場合があります。そこに送られた新しい接続は Pod を見つけられず、開いている接続はタイムアウトするまでハングします。これが [production-engineering#29764](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29764)で kas の ILB において Runner Manager が 1 時間ハングした原因です。`externalTrafficPolicy: Local` では、最後の Pod が削除されると直ちにヘルスチェックがノードを除外するはずです。cordon されたノードでも同様になるかを `gstg` で確認し、GCP に問い合わせます。
 
 ## 設計と実装の詳細 {#design-and-implementation-details}
 
@@ -239,7 +239,7 @@ graph TB
 5. `gprd` の main の 80、22、443 と kas の 8150 で、ポートごとに Spectrum のオリジンを切り替えます。443 の切り替えにより http-router のルールも終了します。
 6. `gprd` の内部ゲートウェイを、2 つ目の A レコードで `main-internal-http` に移行し、その後、そのレコードだけにします。
 7. `gprd` の ci は、クラスターにマルチネットワークのノードプールが用意された時点で、最後に DNS レコードによって移行します。
-8. サーバー群ごとに、IPv6 を含むすべてのアドレスが Pod 上に移り、本番トラフィックを十分な期間処理し、誰も VM に戻したいと思わなくなった時点で、Chef ロール、Terraform モジュール、chef-repo のヘルパースクリプト、残っている ChatOps の Chef-API 検索を廃止します。
+8. サーバー群ごとに、IPv6 を含むすべてのアドレスが Pod 上に移り、本番トラフィックを十分な期間処理し、チームが VM に戻したいと思わなくなった時点で、Chef ロール、Terraform モジュール、chef-repo のヘルパースクリプト、残っている ChatOps の Chef-API 検索を廃止します。
 
 どの切り替えも元に戻せるように、VM 群は廃止するまでフル容量で稼働します。その期間中、定価では gprd の VM 80 台の費用は月額約 2 万ドルです。
 
@@ -248,18 +248,19 @@ graph TB
 本番作業期間に入る前に `gstg` で観測すること:
 
 - Spectrum のオリジン変更が新しい接続に反映されるまでの時間と、古いオリジンで進行中の接続がどうなるか。
-- `externalTrafficPolicy: Local` の場合に、ノードが cordon されていても Ready であるときの、バックエンドサービスベースの L4 ロードバランサーにおけるノードの所属。Pod がなくなった時点で `healthCheckNodePort` のチェックがノードを除外するか、それにどの程度の時間がかかるか。
+- `externalTrafficPolicy: Local` の場合に、ノードが cordon されていても Ready であるときの、バックエンドサービスベースの L4 ロードバランサーにおけるノードの所属。Pod が削除された時点で `healthCheckNodePort` のチェックがノードを除外するか、それにどの程度の時間がかかるか。
 
 未決定の事項:
 
-- `gprd` のサイジング。`gstg` からの外挿ではなく、負荷テストに基づいて Pod のサイズ、プールの最小値と最大値、HPA のターゲットを決めます。
 - コストチームが求めるように、各リリースにコスト配分用の独自の `gl_service` とカタログサービスを設けるか、サーバー群を `frontend` のままにしてリリースごとのラベルを付けるか。
-- Cloudflare の IP 範囲の更新方法。Vault に発行するスケジュールジョブか、Renovate の MR か。
 
 ## 決定ログ {#decision-log}
 
 - [ADR 001: トラフィックの切り替え](decisions/001_traffic_cutover.md)（承認済み、進行中）
 - [ADR 002: チャートとイメージ](decisions/002_chart_and_images.md)（承認済み、進行中）
+- [ADR 003: リリースのトポロジー](decisions/003_release_topology.md)（承認済み、進行中）
+- [ADR 004: ゾーンの局所性](decisions/004_zone_locality.md)（承認済み、進行中）
+- [ADR 005: 設定の入力元](decisions/005_configuration_inputs.md)（承認済み、進行中）
 
 ## 代替案 {#alternative-solutions}
 

@@ -2,21 +2,21 @@
 title: 'コーディング標準'
 description: 'チームのコーディング標準に関するドキュメント'
 upstream_path: "/handbook/eta/css/resources/coding-standards/"
-upstream_sha: "1c5f183add4a3220f2aa77e0c98565c4fad645e2"
-translated_at: "2026-07-18T06:16:27+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T14:42:54.581550+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 
-<sup>*[gitlab-com/support/support-ops/support-ops-project#1963](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963) で導入*</sup>
+<sup>*[gitlab-com/support/support-ops/support-ops-project#1963](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963)で導入*</sup>
 
 このドキュメントでは、GitLab Customer Support Systems チームが従うコーディング標準とベストプラクティスを定義します。これらのガイドラインを活用することで、チーム内の一貫性、保守性、簡潔さ、より良いコラボレーションを確保します。特定の例外について合意されない限り、プロジェクトへのすべての貢献者はこれらのガイドラインに従うことが期待されます。
 
-## 一般原則
+## 一般原則 {#general-principles}
 
-すべてのコーディング判断は [GitLab のコアバリュー](/handbook/values/)に従うべきだと私たちは考えます。
+すべてのコーディング判断は GitLab のコアバリューに従うべきだと私たちは考えます。
 
 - コラボレーション
   - チームメイトと協力し、互いのコードをレビューし、知識を共有します。
@@ -35,7 +35,7 @@ lastmod: "2026-07-14T15:22:25-05:00"
   - コードは柔軟で、リファクタリングしやすいものにします。
   - 継続的な改善を目指し、必要に応じたコードの更新や作り直しをためらいません。
 
-## 命名規則
+## 命名規則 {#naming-conventions}
 
 - 変数
   - 変数の目的を明確に伝える、説明的な名前を使用します。変数名が目的を明確に伝えない場合は、より良く説明するためにコードへコメントを追加します。
@@ -56,7 +56,7 @@ lastmod: "2026-07-14T15:22:25-05:00"
   - すべてのファイル名にはスネークケースを使用します。
     - 例: `process_account`、`compare_only`
 
-## コードフォーマット
+## コードフォーマット {#code-formatting}
 
 - インデント
   - 可能な限り、インデントレベルごとに 2 つのスペースを使用します。
@@ -76,22 +76,22 @@ lastmod: "2026-07-14T15:22:25-05:00"
 - スペース
   - 演算子（例: `+`、`<`、`=` など）の間には 1 つのスペースを使用します。
 
-## コメントとドキュメント
+## コメントとドキュメント {#comments-and-documentation}
 
 - インラインコメント
   - インラインコメントは控えめに使用します。複雑または自明でないコードを明確にする場合にのみ使用します。大量のコメントが必要な場合は、コードをおそらく複雑にしすぎています。
   - コメントは最新の状態に保ち、説明するコードに関連したものにします。
 
-## コードの複雑さ
+## コードの複雑さ {#code-complexity}
 
 - 深くネストしたコードを避けます。ネストが複雑になりすぎる場合は、ヘルパー関数または早期リターンを使用するようにコードをリファクタリングします。
 - 関数のサイズを制限します。各関数には明確で単一の責務を持たせ、比較的小さく（20 行未満）保ちます。
 
-## テスト
+## テスト {#testing}
 
 常に高いテストカバレッジを目指します。迷ったときは、コードを徹底的にテストします。
 
-## バージョン管理
+## バージョン管理 {#version-control}
 
 - コミットメッセージ
   - 行う変更を詳しく記述します。
@@ -112,7 +112,7 @@ lastmod: "2026-07-14T15:22:25-05:00"
     - 例:
       - `jcolyer` が Issue `https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963` の作業のために作成するブランチでは、ブランチ名は `jcolyer-support-ops-project-1963` になります。
 
-## セマンティックバージョニングを使用する
+## セマンティックバージョニングを使用する {#use-semantic-versioning}
 
 {{% alert title="注記" color="primary" %}}
 
@@ -143,7 +143,7 @@ lastmod: "2026-07-14T15:22:25-05:00"
 | `2.99.0`         | `3.0.0`        | `2.100.0`      | `2.99.1`       |
 | `9.99.9`         | `10.0.0`       | `9.100.0`      | `9.99.10`      |
 
-### 数値を 2 つしか使用できない場合にセマンティックバージョニングを使用する
+### 数値を 2 つしか使用できない場合にセマンティックバージョニングを使用する {#using-semantic-versioning-when-only-two-numeric-values-are-allowed}
 
 `1.01` や `9.8` のように数値を 2 つしか使用できないものを扱う場合は、代わりに 2 番目の値に `MINOR` と `PATCH` の定義を組み合わせます。これにより必要な `xx.yy` 形式となり、セマンティックバージョニングに近い形を維持できます。
 
@@ -161,36 +161,36 @@ lastmod: "2026-07-14T15:22:25-05:00"
 | `2.99`           | `3.0`          | `2.100`                |
 | `9.99`           | `10.0`         | `9.100`                |
 
-## エラー処理
+## エラー処理 {#error-handling}
 
 可能な限り、コードでエラーを適切に処理します。それができない場合は、エラーが問題の内容を明確に説明するようにします（対処方法も示していればさらに良いです）。
 
-## パフォーマンスに関する考慮事項
+## パフォーマンスに関する考慮事項 {#performance-considerations}
 
 - コードが機能し保守可能になってから、パフォーマンスに焦点を当てます。早すぎる最適化を避けます。
 - プロファイリングツールを使用してパフォーマンスへの影響を測定し、最適化する前にボトルネックを特定します。
 - 常識に従って、ツールへの API 呼び出しを減らします。
   - 例: Zendesk のすべてのチケットを 1 件ずつ手動で取得することもできますが、Readiness Gem が `list` メソッドを使用してこれを効率的に行うため、そのようにする論理的な理由はありません。
 
-## セキュリティ
+## セキュリティ {#security}
 
 - すべての入力を検証して、インジェクション攻撃（例: SQL Injection、XSS）を防ぎます。
 - パスワード、トークンなどを平文で保存しません。CI/CD 変数を使用します。
 
-## コードレビュー
+## コードレビュー {#code-reviews}
 
 - すべてのコードはマージ前にピアレビューを受ける必要があります。レビューを徹底し、品質、一貫性、セキュリティに対処します。
 - 建設的なフィードバックを受け入れ、協力してコードを改善します。
 
-## 言語固有のガイドライン
+## 言語固有のガイドライン {#language-specific-guidelines}
 
 現在は主要言語である Ruby に焦点を当てています。これは継続的に更新するセクションであり、将来使用する可能性のある他の言語についても追加する必要があります。
 
-### Ruby
+### Ruby {#ruby}
 
 - 可能な限り、[rubocop](https://rubygems.org/gems/rubocop) リンターでコードを実行したときに問題が発生しないようにします。
 
-## 開始に役立つ例
+## 開始に役立つ例 {#examples-to-help-you-get-started}
 
 ### Ruby スクリプトを書く {#writing-a-ruby-script}
 
@@ -422,7 +422,7 @@ end
 
 これにより、すぐ次の行からコーディングを始められ、作業の良い出発点を得られます。
 
-#### リクエストを行う
+#### リクエストを行う {#making-a-request}
 
 [開始コード](#writing-a-ruby-script)を使用すると、次のように外部リクエストを実行できます。
 
@@ -496,7 +496,7 @@ puts 'done! ✅ Successfully fetched Zendesk automations!'
 
 </details>
 
-### Ruby で Zendesk に接続する
+### Ruby で Zendesk に接続する {#connecting-to-zendesk-via-ruby}
 
 Zendesk に接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
 
@@ -691,7 +691,7 @@ end
 
 スクリプトの最後（または API 接続が不要になったとき）に、関数 `revoke_token!` を実行するようにします。
 
-### Ruby で GitLab.com に接続する
+### Ruby で GitLab.com に接続する {#connecting-to-gitlabcom-via-ruby}
 
 GitLab に接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
 
@@ -719,7 +719,7 @@ end
 
 </details>
 
-### Ruby で Slack に接続する
+### Ruby で Slack に接続する {#connecting-to-slack-via-ruby}
 
 Slack に接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
 
@@ -741,7 +741,7 @@ end
 これを使用してリクエストを実行できます。例を次に示します。
 
 <details>
-<summary>incoming webhook を使用して Slack に投稿する</summary>
+<summary>受信 Webhook を使用して Slack に投稿する</summary>
 
 ```ruby
 payload = { 'text' => 'I am a slack post!' }
@@ -750,7 +750,7 @@ request_with_retry(slack_client, :post, '', payload)
 
 </details>
 
-### Ruby で Salesforce に接続する
+### Ruby で Salesforce に接続する {#connecting-to-salesforce-via-ruby}
 
 Salesforce に接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
 
@@ -855,7 +855,7 @@ page_data = request_with_retry(salesforce_client, :post, url, payload)
 
 </details>
 
-### Ruby で Mailgun に接続する
+### Ruby で Mailgun に接続する {#connecting-to-mailgun-via-ruby}
 
 Mailgun に接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
 
@@ -900,9 +900,9 @@ page_data = request_with_retry(mailgun_client, :post, url, payload)
 
 </details>
 
-### Ruby で Google に接続する
+### Ruby で Google に接続する {#connecting-to-google-via-ruby}
 
-#### Google Sheets
+#### Google Sheets {#google-sheets}
 
 Google Sheets に接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
 
@@ -1009,9 +1009,9 @@ request_with_retry(google_client, :post, url)
 
 </details>
 
-#### Google カレンダー
+#### Google Calendars {#google-calendars}
 
-Google カレンダーに接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
+Google Calendars に接続する必要がある場合は、[開始点](#writing-a-ruby-script)を使用してから、次を追加します。
 
 <details>
 <summary>クリックして展開</summary>
