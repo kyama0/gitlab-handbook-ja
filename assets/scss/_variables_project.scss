@@ -183,6 +183,9 @@ dialog.search-dialog {
   overflow: hidden;
   background: #fff;
   color: #1f2937;
+  // The dialog has a light background even inside the dark-themed navbar.
+  // Keep native input text, placeholders, and scrollbars in the light scheme.
+  color-scheme: light;
 }
 dialog.search-dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.4);
@@ -234,7 +237,10 @@ dialog.search-dialog::backdrop {
   --pagefind-ui-border-radius: 6px;
   --pagefind-ui-font: inherit;
 
-  .pagefind-ui__search-input { font-weight: 500; }
+  .pagefind-ui__search-input {
+    color: var(--pagefind-ui-text);
+    font-weight: 500;
+  }
   .pagefind-ui__result-link { color: #1f2937; }
 }
 .search-dialog__footer {
