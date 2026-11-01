@@ -10,9 +10,9 @@ owning-stage: ""
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/
-upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
-lastmod: "2026-10-01T09:57:33+01:00"
-translated_at: "2026-10-03T21:15:10+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-22T12:32:10+01:00"
+translated_at: "2026-11-01T17:50:29+00:00"
 translator: codex
 stale: false
 ---
@@ -22,7 +22,7 @@ stale: false
 
 {{< engineering/design-document-header >}}
 
-## 読み方ガイド
+## 読み方ガイド {#reading-guide}
 
 このドキュメントは長いため、
 読者によって確認すべきセクションが異なります。
@@ -35,7 +35,7 @@ stale: false
 
 ---
 
-## 意思決定
+## 意思決定 {#decisions}
 
 このビジョンを実現するために行われたアーキテクチャ上の意思決定は、`decisions/` ディレクトリの ADR に記録されています。
 各 ADR には、背景、意思決定、その結果、検討した代替案が記載されています。
@@ -49,7 +49,7 @@ stale: false
 | [005](decisions/005_labkit_go_native_go_library.md) | LabKit Go はネイティブ Go ライブラリのままとする | 提案中 |
 | [006](decisions/006_lab_bench_assemblies_are_first_class.md) | Lab Bench アセンブリを第一級のプラットフォームコンポーネントとする | 提案中 |
 | [007](decisions/007_prefer_labkit_library_over_assembly.md) | アセンブリフレームワークによる実装よりも LabKit ライブラリコードを優先する | 提案中 |
-| [008](decisions/008_openapi_specification_for_modular_http_apis.md) | モジュール型 HTTP API にプラットフォームの品質基準を満たす OpenAPI 仕様を同梱する | ドラフト |
+| [008](decisions/008_openapi_specification_for_modular_http_apis.md) | モジュール型 HTTP API にプラットフォームの品質基準を満たす OpenAPI 仕様を同梱する | 承認済み |
 
 ---
 
@@ -60,7 +60,7 @@ Theseus は GitLab の内部開発者プラットフォームです。
 開発者ワークステーション、CI、GitLab.com と Cells、GitLab Dedicated、GitLab Dedicated for Government、Self-Managed。
 
 Theseus の一部のコンポーネントは独立して開発され、以前から存在している場合があります：
-Metrics Catalog は 2018 年から、`common-ci-tasks` CI Components は 2022 年から存在しています。
+Metrics Catalog は 2018 年から、common-ci-tasks CI Components は 2022 年から存在しています。
 GitLab Metrics Operator などの一部のコンポーネントはまだ提案段階で、
 今後開発する必要があります。
 
@@ -79,7 +79,7 @@ GitLab Metrics Operator などの一部のコンポーネントはまだ提案�
 
 ### 指針 {#guiding-principles}
 
-これらの原則は、当初[正規の Theseus 設計ドキュメント](https://docs.google.com/document/d/1tOYqFsLQ7axB2ZWQ4mORf9fVzYHNI3yC5j3MPwRk8i4)の「Guiding Principles」セクションから引用され、このビジョンドキュメントの執筆過程で調整されました。
+これらの原則は、当初[正規の Theseus 設計ドキュメント](https://docs.google.com/document/d/1tOYqFsLQ7axB2ZWQ4mORf9fVzYHNI3yC5j3MPwRk8i4)の*指針*セクションから引用され、このビジョンドキュメントの執筆過程で調整されました。
 
 1. **ゲートではなく、舗装された道。**
    正しいことを最速で行えるようにします。
@@ -116,7 +116,7 @@ GitLab Metrics Operator などの一部のコンポーネントはまだ提案�
    実装に委ねられます。
    実装によって、望ましい状態に到達する方法が異なる場合があります。
 
-### 状態（2026 年 5 月）
+### 状態（2026 年 5 月） {#status-may-2026}
 
 LabKit、`common-template-copier`、`common-ci-tasks`、Component Ownership Model、
 Runway（GitLab.com、Cells、Dedicated 向け）は本番稼働中です。
@@ -127,7 +127,7 @@ Caproni、LabKit v2、[Release Framework](https://internal.gitlab.com/handbook/e
 
 ## 1 — なぜ Theseus なのか、なぜ今なのか？ {#1--why-theseus-why-now}
 
-### 1.1 モノリスからポートフォリオへの移行
+### 1.1 モノリスからポートフォリオへの移行 {#11-the-shift-from-monolith-to-portfolio}
 
 GitLab のインフラストラクチャは、予測可能なモノリシック Rails アプリケーションから、
 Zoekt、ClickHouse、OpenBao、AI サービス、NATS などを含む、新しいコンポーネントの爆発的な増加へと移行しました。
@@ -135,13 +135,13 @@ Zoekt、ClickHouse、OpenBao、AI サービス、NATS などを含む、新し�
 その結果、デリバリーのボトルネックが生じています：
 機能は GitLab.com に提供されても、Dedicated と Self-Managed のお客様に届く前に停滞します。
 
-[DORA の 2025 年版『State of AI-Assisted Software Development』レポート](https://dora.dev/research/2025/dora-report/)では、
+[DORA の 2025 年版『*State of AI-Assisted Software Development*』レポート](https://dora.dev/research/2025/dora-report/)では、
 プラットフォーム品質が高い場合、AI 導入が組織のパフォーマンスに与える影響は非常に大きなプラスになり、
 低い場合、その影響はごくわずかであるとされています。
 
 Theseus は、Act 2 を構築するプラットフォームに対する GitLab の投資です。
 
-### 1.2 Theseus による Modular Component の実現
+### 1.2 Theseus による Modular Component の実現 {#12-theseus-enables-modular-components}
 
 Theseus は [Modular Features](https://docs.google.com/document/d/1-7ypeuacczPMYxP8ZLPxXhvIxYkBvEfZ_OgypY098Aw/edit)
 イニシアチブの基盤です。
@@ -172,7 +172,7 @@ Theseus は、複数の既存ツールと、
 
 コンポーネントの完全な一覧は、[セクション 2.7「コンポーネント一覧」](#27-component-inventory)で信頼できる唯一の情報源として管理されます。
 
-### 2.2 アーキテクチャ契約
+### 2.2 アーキテクチャ契約 {#22-the-architectural-contract}
 
 > Theseus は全体を通じて 1 つのアーキテクチャ境界を強制します：
 > ソフトウェアが必要とするものと、インフラストラクチャがそれを提供する方法の分離です。
@@ -296,7 +296,7 @@ Theseus で使う意味での優れたインターフェース設計の規律は
 *インターフェースは、隠している実装よりも単純か？*
 そうでなければ、再設計を検討する価値があります。
 
-#### 2.3.1 Theseus のインターフェースには複数の形態がある
+#### 2.3.1 Theseus のインターフェースには複数の形態がある {#231-interfaces-in-theseus-take-several-forms}
 
 インターフェースは宣言的スキーマだけではありません。
 Theseus 全体で、同じアプローチをさまざまな
@@ -310,12 +310,12 @@ Theseus 全体で、同じアプローチをさまざまな
   システムが取り得る状態を定義し、それを実現するエンジンが使用するものです。
   GitLab Dedicated の **[Tenant Model Schema](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/tenant-model-schema/)** が良い例で、
   以下で説明します。
-- **Application Programming Interfaces（API）** —
+- **アプリケーションプログラミングインターフェース（API）** —
   ライブラリが呼び出し元に公開する型付けされたサーフェスです。
   たとえば [LabKit](/handbook/engineering/infrastructure-platforms/developer-experience/labkit/)が
   Modular Component に提供する API は、
   ロギング、メトリクス、トレーシング、構成、暗号化に対応する、安定し、バージョン管理された標準ライブラリのサーフェスです。
-- **Command Line Interfaces（CLI）** —
+- **コマンドラインインターフェース（CLI）** —
   GitLab Deployment Operator または開発者が呼び出すコマンドサーフェスです。
   [Theseus CLI](https://gitlab.com/gitlab-org/theseus/)が良い例です：
   そのコマンド、フラグ、終了コード、出力形式は、
@@ -467,7 +467,7 @@ Platform Engineering は契約を満たす Platform Binding を保守するこ�
 Theseus は長期的な方向性です。
 COM は、その契約がまだ定義も実装もしていない重要な作業を現在担う下位レイヤーです。
 
-### 2.6 Rolls-Royce ではなく Ford
+### 2.6 Rolls-Royce ではなく Ford {#26-fords-not-rolls-royces}
 
 ![1920 年代の Ford Model-T と Rolls-Royce Phantom の生産を比較した写真](/images/handbook/engineering/architecture/design-documents/theseus_platform_vision/fords-vs-rolls-royces.jpg)<br>
 <small>1920 年代の Ford Model-T と Rolls-Royce Phantom の生産ライン。</small>
@@ -569,7 +569,7 @@ Theseus を構成するコンポーネントと Platform Binding を以下に示
 （[セクション 2.8](#28-lab-bench-and-the-wider-theseus-initiative)）も Theseus の第一級要素ですが、
 まだここには列挙していません。
 
-#### Theseus プラットフォームコンポーネント
+#### Theseus プラットフォームコンポーネント {#theseus-platform-components}
 
 | 名前 | 役割                                                                                                                                                                                                                                                                                                | 状態 | 現在存在するか？ | 所有チーム | 主要リンク |
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|---|
@@ -586,9 +586,9 @@ Theseus を構成するコンポーネントと Platform Binding を以下に示
 | **GitLab Metrics Operator** | 宣言的な SLI/SLO、飽和度、容量予測、アラートルーティング。Metrics Catalog の Kubernetes ネイティブな後継                                                                                                                                                                          | 提案中 | ❌ | Platform Engineering | [Metrics Operator の提案](https://docs.google.com/document/d/1vXBnoqOPREk5j_2YYF9zTwnFgUQKGfhrxC471QgOs8M) |
 | **GitLab Kubernetes Operator** | Helm Chart 上に構築された Kubernetes Operator。ゼロダウンタイムアップグレード、スキーマ移行、バックアップ、リストア、ライフサイクル調整など、インテリジェントな Day 2 オーケストレーションを提供                                                                                                                 | 提案中 | ❌ | Platform Engineering（未定） | [セクション 6.2.2](#622-the-gitlab-kubernetes-operator) |
 | **Bridge** | GitLab Kubernetes Operator のフロントエンド UI。GitLab Deployment Operator は UI を介して Modular Component を有効化、無効化、構成し、GitLab Kubernetes Operator が収束させる値を書き込めます。Dedicated における Switchboard に相当しますが、GitLab アプリケーション自体が対象です | 提案中 | ❌ | Platform Engineering（未定） | [セクション 6.2.3](#623-bridge) |
-| **Theseus Platform ドキュメントサイト**（正規 URL は `docs.theseus.gitlab.com` を予定） | キュレーションされたナビゲーション可能なプラットフォームドキュメント用静的サイト。[`docs.runway.gitlab.com`](https://docs.runway.gitlab.com/)をモデルとし、現在は [`gitlab-org/theseus`](https://gitlab.com/gitlab-org/theseus/) から [`theseus-6298f3.gitlab.io`](https://theseus-6298f3.gitlab.io/) に公開中     | 進行中 | 🚧 | Platform Engineering | [`gitlab-org/theseus`](https://gitlab.com/gitlab-org/theseus/) |
+| **Theseus Platform ドキュメントサイト**（正規 URL は `docs.theseus.gitlab.com` を予定） | キュレーションされたナビゲーション可能なプラットフォームドキュメント用静的サイト。[`docs.runway.gitlab.com`](https://docs.runway.gitlab.com/)をモデルとし、現在は [`gitlab-org/theseus`](https://gitlab.com/gitlab-org/theseus/)から [`theseus-6298f3.gitlab.io`](https://theseus-6298f3.gitlab.io/)に公開中     | 進行中 | 🚧 | Platform Engineering | [`gitlab-org/theseus`](https://gitlab.com/gitlab-org/theseus/) |
 
-#### Platform Binding
+#### Platform Binding {#platform-bindings}
 
 各 Platform Binding は、特定のデプロイターゲットに対して Theseus の契約を実装します。
 ターゲットごとの詳細とトレードオフについては、[セクション 4](#4--one-platform-many-bindings)を参照してください。
@@ -614,7 +614,7 @@ Lab Bench はサービスシャーシ兼アセンブリフレームワークで�
 Lab Bench 上に構築されたコンポーネントは第一級の Theseus Platform コンポーネントであり、
 プラットフォームからは、Lab Bench を使わずに構築されたほかのコンポーネントとまったく同じように扱われます。
 
-**Container インターフェース。**
+**コンテナインターフェース。**
 Lab Bench アセンブリは、単一のエントリーポイントと 1 つのルートプロセスを持つ OCI イメージとして提供されます。
 Theseus のプロビジョニングコンポーネント
 （Fairway と [Platform Binding](#4--one-platform-many-bindings)）から見ると、
@@ -650,13 +650,13 @@ Lab Bench アセンブリは Sec Infrastructure team が実装し、所有する
 
 ---
 
-## 3 — 対象者：Platform-as-a-Product モデル
+## 3 — 対象者：Platform-as-a-Product モデル {#3--who-its-for-the-platform-as-a-product-model}
 
 Theseus は Platform Engineering が構築した多様なツールとプラクティスを組み合わせ、
 サポートおよび統合サービスとともに、エンジニアリング部門のほかのチームへプロダクトとして提供します。
 コンポーネントチームは内部ユーザーではなく、お客様として扱われます。
 
-### 3.1 チームトポロジー
+### 3.1 チームトポロジー {#31-the-team-topology}
 
 [*Team Topologies*](https://teamtopologies.com/key-concepts)の用語を使用します：
 
@@ -829,7 +829,7 @@ Theseus はアプリケーションサービスが基盤とする共通の抽象
   Caproni が連携する一連の Operator をパッケージ化します。
 
 Caproni Binding は独立したコンポーネントであり、Caproni とは別に実装されます。
-小規模な Operator になる可能性があり、Caproni と連携して Modular Component を Caproni クラスターへ提供します。
+小規模な Operator になる可能性があり、Caproni *と連携して* Modular Component を Caproni クラスターへ提供します。
 コンポーネントの Fairway マニフェストを、`gitlab-dev-stack` にパッケージ化された Operator が
 実行中のデータベース、キーバリュー、オブジェクトストレージの各インスタンスへ収束させる Custom Resource に変換します：
 
@@ -992,7 +992,7 @@ AWS はお客様にワークロードをリージョン外へ移行するよう�
 このドキュメントでは Cells を単なる GitLab インスタンス以上のものとして説明します：
 Cells は GitLab.com SAAS の*すべて*のリージョンデプロイにおける構成要素です。
 Cell には Modular Component のコピー、
-GitLab インスタンス、またはその両方が含まれる場合があります。
+GitLab インスタンス、またはその両方が含まれる*場合があります*。
 {{< /note >}}
 
 Global Enterprise Platform Binding へのデプロイと Cellular デプロイのどちらを選ぶか決定する際、
@@ -1049,7 +1049,7 @@ SMF は [Self-Managed Segmentation ブループリント](/handbook/engineering/
 Theseus は Cloud Native の経路を対象とします。
 SMF はコンポーネントチームから、Theseus アーティファクトではなく Omnibus パッケージの形で機能作業を受け取ります。
 
-### 4.5 FedRAMP／Dedicated for Government について
+### 4.5 FedRAMP／Dedicated for Government について {#45-what-about-fedramp--dedicated-for-government}
 
 Dedicated for Government は、FedRAMP Authorization Boundary 内のシングルテナント GovCloud GitLab です。
 Dedicated と同じ経路を適用します：
@@ -1129,7 +1129,7 @@ PREP の文書化プロセスは厳格になる可能性があります。
 機能的な依存関係と非機能要件は、説明対象のコードの隣で定義され、
 オーナーシップを促進し、乖離を最小限に抑えます。
 
-### 5.2 設計 — 足場付きの骨格と LabKit プリミティブ
+### 5.2 設計 — 足場付きの骨格と LabKit プリミティブ {#52-design--scaffolded-skeleton-and-labkit-primitives}
 
 プロジェクトの設計段階では、すべての GitLab Platform 向けコンポーネントを
 Theseus を使用して正常に提供する方法を理解する必要があります。
@@ -1173,7 +1173,7 @@ Theseus は、既存の [Runway ドキュメントサイト](https://docs.runway
 開発者ジャーニー、複数ターゲットのデプロイガイド、
 コンポーネントを横断する「Getting Started」チュートリアルを提供します。
 
-#### 5.2.1.3 Modular Component ドキュメント
+#### 5.2.1.3 Modular Component ドキュメント {#5213-modular-component-docs}
 
 Modular Component ドキュメントでは、各サービスの設計ドキュメント、API リファレンス、デプロイ Runbook、アラート対応ガイドなどを提供します。
 
@@ -1236,7 +1236,7 @@ MkDocs でビルドし、統合された検索可能なサイトをレンダリ�
 これは上記のリポジトリごとの Markdown と構造化 frontmatter のモデルに近く対応します。
 {{< /note >}}
 
-### 5.2.2 イネーブルメント
+### 5.2.2 イネーブルメント {#522-enablement}
 
 ドキュメントはチームが知る必要のあることの大部分に答えるべきですが、
 Theseus 向けに設計する新しいモジュールが、ドキュメントだけでは答えられない疑問に直面することがあります。
@@ -1298,7 +1298,7 @@ Theseus がまだ提供していない、または一部しか提供していな
 取り組みの作業のうち、どれだけが
 永続的なプラットフォーム改善につながったかに注目すべきです。
 
-### 5.3 実装
+### 5.3 実装 {#53-implementation}
 
 #### 5.3.1 ブートストラップ {#531-bootstrapping}
 
@@ -1361,14 +1361,14 @@ Theseus 上に構築したコンポーネントは最初から一貫した可観
 - `common-template-copier` を介して提供する [Duo MR レビュー指示](https://gitlab.com/gitlab-com/gl-infra/common-template-copier/-/blob/main/.gitlab/duo/mr-review-instructions.yaml.jinja)。
   これはレビュー中、開発者に対して特注パイプラインの配管を避け、共有 CI Components を使用するよう促します。
 
-**Policy as Code。**
+**コードとしてのポリシー。**
 同じコンポーネントライブラリに、プラットフォームのコンプライアンスおよび品質ポリシーが含まれます：
-Terraform と Kubernetes マニフェストに Policy as Code を適用する [`conftest`](https://www.conftest.dev/)と [`checkov`](https://www.checkov.io/)、
+Terraform と Kubernetes マニフェストにコードとしてのポリシーを適用する [`conftest`](https://www.conftest.dev/)と [`checkov`](https://www.checkov.io/)、
 Chart ロジック向けの [`helm-unittest`](https://github.com/helm-unittest/helm-unittest)、
 モジュール統合テスト向けの [`terraform test`](https://developer.hashicorp.com/terraform/language/tests)です。
 ポリシーはチームが配線しなければならない別のリポジトリに置かず、コンポーネントとともに移動します。
 
-### 5.4 テスト
+### 5.4 テスト {#54-testing}
 
 テスト用の足場はプロジェクトとともに提供されます。
 `common-template-copier` で生成された足場には、標準テストレイアウトが配線済みです。
@@ -1377,8 +1377,8 @@ Go、Ruby、Terraform、Helm、Protobuf、Rust に標準テストジョブを提
 そのためチームは独自のテストパイプラインを作成せずに、自分たちのスタックに適した正規のテストパイプラインを利用できます。
 
 アプリケーションレイヤーより下位にあるテストの問題には、`common-ci-tasks` が専用ハーネスを提供します。
-COM Terraform モジュールは、[sandbox test harness](https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/work_items/54)でテストします。このハーネスは [`terraform test`](https://developer.hashicorp.com/terraform/language/tests)を
-[Hackystack sandbox accounts](/handbook/company/infrastructure-standards/realms/sandbox/)に対して実行します。
+COM Terraform モジュールは、[サンドボックステストハーネス](https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/work_items/54)でテストします。このハーネスは [`terraform test`](https://developer.hashicorp.com/terraform/language/tests)を
+[Hackystack サンドボックスアカウント](/handbook/company/infrastructure-standards/realms/sandbox/)に対して実行します。
 長期間有効なトークンシークレットを避けるため、OIDC で認証します。
 Helm Chart は [`helm-unittest`](https://github.com/helm-unittest/helm-unittest)で検証します。
 これは実行中のクラスターを必要とせずに Chart の出力をテストします。
@@ -1416,9 +1416,9 @@ Cells／Dedicated Platform、Self-Managed（お客様が独自のデータベー
 
 言い換えると、Theseus のフロントエンドは、複数の Theseus バックエンド Platform Binding 実装ごとに異なる方法で実装されます。
 
-### 5.6 保守
+### 5.6 保守 {#56-maintenance}
 
-#### 5.6.1 依存関係のアップグレード
+#### 5.6.1 依存関係のアップグレード {#561-dependency-upgrades}
 
 保守作業の大部分を占めるのは、セキュリティと依存関係のアップグレードです。たとえば、
 推移的ライブラリの CVE、CI Component のスキャン強化、ベースイメージの更新などです。
@@ -1440,16 +1440,16 @@ AI によって脆弱性の発見とパッチ生成の両方が加速するに�
 
 #### 5.6.2 Breakglass アクセス {#562-breakglass-access}
 
-コンポーネントチームがサービスの Pager を担当する場合、
+コンポーネントチームがサービスのページャーを担当する場合、
 インシデント中に実行中の本番環境へアクセスし、
 ログの読み取り、Pod への exec、クエリの実行を行う経路が必要です。
 その経路で Tier 1 EOC を経由すべきではありません。
 コンポーネントチームに自らの信頼性に対する責任を負わせるプラットフォームは、
 診断のための鍵も渡す必要があります。
 
-コンポーネントチームが Pager を担当する体制への移行は、
+コンポーネントチームがページャーを担当する体制への移行は、
 [Shifting Siloed to DevOps model](https://docs.google.com/document/d/1A8KR9BYTtT8oIsY6H8ksHYNDRun2e7DCeBNaHqBczJg/)で説明されています。
-Breakglass は Pager を担当するすべてのチームにとって重要な要件です。
+Breakglass はページャーを担当するすべてのチームにとって重要な要件です。
 
 Theseus は、Breakglass 手順を包む**一時的な権限昇格ポリシー**でこれに対応します。
 アクセスは常設ではありません。要求、レビュー、時間を限定した付与を経て、監査されます。
@@ -1501,7 +1501,7 @@ GitLab.com、Cells、Dedicated 全体でこの Breakglass ソリューション�
   独自の Kubernetes クラスター上の Self-Managed Advanced、
   または VM 上の Omnibus を運用します。
 
-### 6.1 SAAS の管理
+### 6.1 SAAS の管理 {#61-administering-saas}
 
 Reliability チームと Platform Engineering チームに対して、Theseus は
 新しいコンポーネントのデプロイ方法と運用方法を統合する手段を提供します。
@@ -1570,7 +1570,7 @@ flowchart LR
 ほかのすべてのモジュールのデータベース、オブジェクトストア、Namespace へアクセスできるなら、
 プラットフォームが付与したのは*そのモジュールに対する Breakglass*ではなく、*すべてに対する本番アクセス*です。
 
-各 Modular Component は、独自の `FairwayManifest` が宣言するリソースに限定された、モジュールごとの IAM ロール（またはロールセット）へバインドされます。
+各 Modular Component は、独自の FairwayManifest が宣言するリソースに限定された、モジュールごとの IAM ロール（またはロールセット）へバインドされます。
 
 Platform Binding の権限昇格バックエンドを通じて発行される一時アクセス権限は、
 インストール全体にまたがる広範なロールではなく、これらのモジュールごとのロールの 1 つを引き受けます。
@@ -1652,7 +1652,7 @@ Omnibus インスタンスの場合は、OAK（Omnibus-Adjacent Kubernetes）を
    一貫したエクスペリエンスを強制することがはるかに難しく、認知負荷を招き、最終的に
    信頼性と可用性の低下、お客様のプロダクトへの不満につながります。
 
-#### 6.2.1 Helm
+#### 6.2.1 Helm {#621-helm}
 
 Helm は Cloud Native GitLab デプロイ向けとして最も古く、最も一般的な選択肢です。
 お客様と GitLab 内部の両方で広く使用され、GitLab Dedicated も使用しています。
@@ -1706,7 +1706,7 @@ Bridge は GitLab Deployment Operator に GitLab アプリケーション自体�
 
 GitLab Deployment Operator の想定フローは次のとおりです：
 Bridge をデプロイし、UI を開き、GitLab セットアップを構成し、有効にする Modular Component を選択して、
-**プロビジョニング**をクリックします。
+**provision** をクリックします。
 Bridge が対応する Custom Resource を書き込み、GitLab Kubernetes Operator が
 クラスターをその状態へ収束させます。
 
@@ -1765,7 +1765,7 @@ Theseus は広範囲にわたる長期的なイニシアチブです。
   テスト環境の構想は一部が整っています。
   ローカル開発向けの [Caproni](https://gitlab.com/gitlab-org/caproni)、
   開発中の [Standardized Testing Solution for Modular Features](https://gitlab.com/gitlab-org/quality/quality-engineering/modular-feature-testing)、
-  [`common-ci-tasks#54`](https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/issues/54)で追跡される COM sandbox test harness、
+  [`common-ci-tasks#54`](https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/issues/54)で追跡される COM サンドボックステストハーネス、
   導入を議論中の [`helm-unittest`](https://github.com/helm-unittest/helm-unittest)があります。
   コンポーネントがお客様へ到達するまでに通過する 6 種類すべての環境を網羅する全体像は、まだ統合の途中です。
   機能テストとパフォーマンステストは Theseus と密接に連携すべきです。
@@ -1838,17 +1838,17 @@ Theseus は広範囲にわたる長期的なイニシアチブです。
 
 - **Runway の「漏れのある抽象化」に関する議論。**
   （抽象化は現在 Fairway の `FairwayManifest` で、2026 年 4 月に Runway から分離されましたが、議論の本質は変わっていません。）
-  *批判：*ストレージを抽象化するワークロード仕様により、GitLab Deployment Operator は境界部分でオーバーライドを強いられ、
+  *批判：* ストレージを抽象化するワークロード仕様により、GitLab Deployment Operator は境界部分でオーバーライドを強いられ、
   コンポーネントが標準外の依存関係を必要とした瞬間に抽象化が漏れます。
-  *反論：*抽象化は機能を隠すのではなく、ガバナンスエンジンによって強制されます。
+  *反論：* 抽象化は機能を隠すのではなく、ガバナンスエンジンによって強制されます。
   モデル化されていない依存関係を必要とするコンポーネントは、回避するのではなくスキーマを拡張します。
-  *部分的な解決：*Fairway マニフェストに明示的な `infrastructure:` セクションを設けることで、コンポーネントチームはプラットフォームを離れずに特注要件を宣言できます。
+  *部分的な解決：* Fairway マニフェストに明示的な `infrastructure:` セクションを設けることで、コンポーネントチームはプラットフォームを離れずに特注要件を宣言できます。
 - **COM の約束と現実のギャップ。**
-  *批判：*舗装された道というブランドが運用上の現実を先行しています。
+  *批判：* 舗装された道というブランドが運用上の現実を先行しています。
   COM はインフラストラクチャ変更をチームが所有するための経路として提示されていますが、
   実際には完全な一式（Terraform モジュール、Runbook、アラートルーティング、CI 統合）の導入状況にばらつきがあります。
-  *反論：*[セクション 3.2](#32-platform-as-a-product-commitments)の SLA により、一式の導入方法にかかわらず、プラットフォームは測定可能なコミットメントを負います。
-  *部分的な解決：*COM のロールアウトには Staff+ の取り組みが割り当てられ、コンポーネントごとに一式のギャップを解消しています。
+  *反論：* [セクション 3.2](#32-platform-as-a-product-commitments)の SLA により、一式の導入方法にかかわらず、プラットフォームは測定可能なコミットメントを負います。
+  *部分的な解決：* COM のロールアウトには Staff+ の取り組みが割り当てられ、コンポーネントごとに一式のギャップを解消しています。
   Reliability Engineering Team は、このコンサルティングパターンを持続的な能力へ一般化することを目的としています。
 - **GitLab.com メタパッケージの移行。**
   現在も GitLab.com は、多数のコンポーネントの変更を含む単一の構築済みメタパッケージを提供しています。
@@ -1883,7 +1883,7 @@ Theseus は広範囲にわたる長期的なイニシアチブです。
 - *お客様向けの成果*では、お客様とビジネスが実感するものが適切な方向へ進んでいるかを確認します。
 - *Platform-as-a-Product の SLA*では、Platform Engineering がすでに公表したコミットメントに対する説明責任を負わせます。
 
-### 8.1 導入（先行指標）
+### 8.1 導入（先行指標） {#81-adoption-leading-indicator}
 
 [Theseus Platform Adoption 作業項目](https://gitlab.com/groups/gitlab-operating-model/-/work_items/1009)が正規のトラッカーです。
 
@@ -1978,7 +1978,7 @@ Theseus は複数年にわたる取り組みです。
 これまでのセクションでは目的地を説明しました。
 このセクションでは、そこへ到達するための作業を説明します。
 
-### 9.1 すべての新規プロジェクトをプラットフォームテンプレートから開始する
+### 9.1 すべての新規プロジェクトをプラットフォームテンプレートから開始する {#91-start-every-new-project-on-the-platform-template}
 
 直ちに、
 すべての新しい Modular Component を [`common-template-copier`](https://gitlab.com/gitlab-com/gl-infra/common-template-copier)テンプレートから開始すべきです。
@@ -1995,7 +1995,7 @@ Copier テンプレートは作成後のプロジェクトへ半自動的に再�
 テンプレートを迂回したプロジェクトは、
 意図した舗装された道からすぐに乖離し、後で技術的負債につながります。
 
-### 9.2 重要な成果物
+### 9.2 重要な成果物 {#92-the-critical-deliverables}
 
 イニシアチブの初期段階では、複数のワークストリームが重要な成果物です：
 
@@ -2052,7 +2052,7 @@ Copier テンプレートは作成後のプロジェクトへ半自動的に再�
 | **Assembly**                     | Lab Bench のデプロイ単位です。LabKit ベースの複数のサービスを 1 つのバイナリへ組み込み、1 つのコンテナ（1 つの OCI イメージ、1 つのルートプロセス）としてまとめて実行します。Theseus のプロビジョニングから見ると不透明で、ほかのコンテナと区別できません。[セクション 2.8](#28-lab-bench-and-the-wider-theseus-initiative)を参照してください。 |
 | **CNG**                          | Cloud Native GitLab。GitLab の Helm Chart とコンテナイメージによるディストリビューションです。同じ CNG イメージと Chart が GitLab.com、Dedicated、Self-Managed Advanced、開発者ワークステーション上の Caproni 内で実行されます。                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **COM**                          | Component Ownership Model。コンポーネントチームに、そのコンポーネントが依存するインフラストラクチャ変更（Terraform モジュール、Helm Chart、統合の配管）の直接的なオーナーシップを与える運用モデルです。Theseus と COM の関係は[セクション 2.5](#25-theseus-vs-the-component-ownership-model)で説明しています。                                                                                                                                                                                                                                                                                                                          |
-| **Container interface**          | デプロイされたすべての Theseus コンポーネントが満たすランタイム契約です。宣言されたエントリーポイントを持ち、OCI Image と Runtime の仕様に準拠する OCI イメージであり、すべての Kubernetes コンポーネントの標準です。Kubernetes API より下位にある基盤契約です。LabKit は例外で、コンテナ自体ではなく、コンテナへコンパイルされるライブラリです。[セクション 2.8](#28-lab-bench-and-the-wider-theseus-initiative)を参照してください。 |
+| **コンテナインターフェース**          | デプロイされたすべての Theseus コンポーネントが満たすランタイム契約です。宣言されたエントリーポイントを持ち、OCI Image と Runtime の仕様に準拠する OCI イメージであり、すべての Kubernetes コンポーネントの標準です。Kubernetes API より下位にある基盤契約です。LabKit は例外で、コンテナ自体ではなく、コンテナへコンパイルされるライブラリです。[セクション 2.8](#28-lab-bench-and-the-wider-theseus-initiative)を参照してください。 |
 | **CRD**                          | Custom Resource Definition。新しいリソースタイプを宣言する Kubernetes の拡張メカニズムです。[GitLab Metrics Operator](https://docs.google.com/document/d/1vXBnoqOPREk5j_2YYF9zTwnFgUQKGfhrxC471QgOs8M)の `GitLabApplicationMetrics` と `GitLabServiceMetrics` リソースは CRD です。                                                                                                                                                                                                                                                                                                                                                       |
 | **DORA**                         | DevOps Research and Assessment。デプロイ頻度、変更のリードタイム、変更失敗率、デプロイ失敗からの復旧時間からなる、業界標準のデリバリーパフォーマンススコアボードです。[セクション 8.2](#82-dora-metrics-outcome-indicators)を参照してください。                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Fairway**                      | Runway の Helm Chart ジェネレーターです。サービスとその抽象的な `infrastructure:` 要件（Postgres 互換データベース、キーバリューストア、オブジェクトストレージ）を記述する `FairwayManifest`（protobuf、`apiVersion: fairway/v1`）を受け取り、OCI に公開する自己完結型でインフラストラクチャに依存しない Helm Chart を生成する Go CLI および CI Component（[`gitlab-com/gl-infra/platform/runway/fairway`](https://gitlab.com/gitlab-com/gl-infra/platform/runway/fairway)）です。2026 年 4 月に `runwayctl` から分離されました。Fairway／Runway の組み合わせのうち開発者向けの部分であり、デプロイ向けの部分は `RunwayManifest` です。Runway team が所有します。 |
@@ -2074,12 +2074,12 @@ Copier テンプレートは作成後のプロジェクトへ半自動的に再�
 | **Tissue**                       | GitLab Cells フリート向けの GitOps 構成およびデプロイ調整リポジトリ（`gitlab-com/gl-infra/cells/tissue`、`ops.gitlab.net` でホスト）です。Cells 側の Switchboard に相当します。                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | **TVP**                          | Thinnest Viable Platform。Skelton & Pais の [*Team Topologies*](https://teamtopologies.com/key-concepts-content/what-is-a-thinnest-viable-platform-tvp)にある概念です。プラットフォームを小さく保つことと、その上に構築するチームを加速させることの慎重なバランスを意味します。スコープクリープを防ぐ Theseus の統制原則です（[セクション 2.4](#24-what-theseus-is-not)）。                                                                                                                                                                                                                                                                         |
 
-### 付録 B — FAQ
+### 付録 B — FAQ {#appendix-b--faq}
 
 読者がこのドキュメントについて抱く可能性の高い質問の初期一覧です。
 回答では内容を重複させず、関連するセクションを示します。
 
-#### Theseus が SMA コンポーネントでは必須で、SAAS のみの場合は推奨にとどまるのはなぜですか？
+#### Theseus が SMA コンポーネントでは必須で、SAAS のみの場合は推奨にとどまるのはなぜですか？ {#why-is-theseus-required-for-sma-components-but-only-recommended-for-saas-only-ones}
 
 SMA へのデプロイには非常に大きなコストと複雑さが伴います。
 SMA のデプロイは SAAS のみのデプロイよりもはるかに困難です。
@@ -2087,7 +2087,7 @@ SMA のデプロイは SAAS のみのデプロイよりもはるかに困難で�
 SAAS のみのコンポーネントでは、義務付けるのではなく、代替手段よりも測定可能なほど速いことでプラットフォームが導入を獲得します。
 [セクション 3.3](#33-adoption-scope)を参照してください。
 
-#### チームが Theseus ではまだ表現できない Kubernetes の機能を必要とする場合はどうしますか？
+#### チームが Theseus ではまだ表現できない Kubernetes の機能を必要とする場合はどうしますか？ {#what-if-my-team-needs-a-kubernetes-capability-theseus-doesnt-yet-express}
 
 この場合、チームは Platform Engineering チームと連携して 2 つの選択肢を検討すべきです：
 プラットフォームを拡張して変更を Theseus にコントリビュートし、その後 Platform Engineering が継続的なサポートを引き継ぎます。
@@ -2099,7 +2099,7 @@ Platform Engineering はプラットフォームからオプトアウトする�
 その機能の設計、運用、サポートに引き続き責任を負います。
 [セクション 2.4](#24-what-theseus-is-not)を参照してください。
 
-#### Lab Bench は Theseus の一部ですか？
+#### Lab Bench は Theseus の一部ですか？ {#is-lab-bench-part-of-theseus}
 
 はい。Lab Bench はより広い Theseus イニシアチブの一部です。
 このビジョンドキュメントは Platform Engineering が提供するコンポーネントと、
@@ -2110,7 +2110,7 @@ Lab Bench の機能がライブラリの形に適している場合は LabKit �
 Lab Bench を導入しないものを含むすべてのコンポーネントが使用できるようにします。
 [セクション 2.8](#28-lab-bench-and-the-wider-theseus-initiative)を参照してください。
 
-#### GitLab.com のリリースがコンポーネントごとのデプロイへ移行する一方、Self-Managed はバンドルされたままなのはなぜですか？
+#### GitLab.com のリリースがコンポーネントごとのデプロイへ移行する一方、Self-Managed はバンドルされたままなのはなぜですか？ {#why-are-gitlabcom-releases-moving-to-per-component-deploys-but-self-managed-staying-bundled}
 
 SAAS チームは、マージから本番環境までの待ち時間を最小限に抑える必要があります。
 バンドルされたデプロイではすべてのコンポーネントが最も遅いものを待つ必要があり、コンポーネントごとの独立性によってその上限をなくせます。
@@ -2118,7 +2118,7 @@ Self-Managed はセキュリティアップデートを毎週、マイナーバ�
 
 [セクション 5.5](#55-deployment--fairway-and-the-release-framework)を参照してください。
 
-#### コンポーネントを Omnibus／Self-Managed Foundation へ提供する場合、Theseus は適用されますか？
+#### コンポーネントを Omnibus／Self-Managed Foundation へ提供する場合、Theseus は適用されますか？ {#my-component-ships-to-omnibus--self-managed-foundation-does-theseus-apply}
 
 いいえ。SMF は Theseus のスコープ外です。
 コンポーネントチームは過去 10 年間で確立されたプロセスを使用し、
@@ -2127,7 +2127,7 @@ Delivery チームとの連携が必要です。
 
 [セクション 4.4](#44-what-about-smf-omnibus)と [Self-Managed Segmentation ブループリント](/handbook/engineering/architecture/design-documents/selfmanaged_segmentation/)を参照してください。
 
-#### 現在からプラットフォームが完全に実現するまでに、何が変わる可能性がありますか？
+#### 現在からプラットフォームが完全に実現するまでに、何が変わる可能性がありますか？ {#whats-likely-to-change-between-now-and-when-the-platform-is-fully-realised}
 
 このドキュメントでは、まだ対象になっていないことを明示しています。
 [セクション 7.1](#71-capabilities-still-in-development)では、正規のアーティファクト生成（TUBE）、セキュリティスキャン、テストフレームワーク、データベースライフサイクルなど、まだ開発中の機能を説明します。

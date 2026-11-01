@@ -9,11 +9,11 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:16:04+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T14:35:46+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-19T10:33:34+01:00"
+lastmod: "2026-10-21T22:26:34+02:00"
 ---
 
 <!--
@@ -93,7 +93,7 @@ community members.
 A good summary is probably at least a paragraph in length.
 -->
 
-Artifact Registry は、集約されたアーティファクト管理を提供する GitLab の **新しい SKU** です。JFrog Artifactory および Sonatype Nexus と直接競合します。
+Artifact Registry は、集約されたアーティファクト管理を提供する GitLab の **新製品** で、Premium と Ultimate で利用でき、GitLab Credits を通じて課金されます。JFrog Artifactory および Sonatype Nexus と直接競合します。
 
 GitLab の現在のプロジェクトレベルのパッケージレジストリやコンテナレジストリとは異なり、Artifact Registry はすべてのアーティファクト（コンテナ、パッケージ、ML モデル）に対する集約された制御、可視性、管理を企業に提供します。
 
@@ -108,7 +108,7 @@ GitLab の現在のプロジェクトレベルのパッケージレジストリ�
 
 私たちは後方互換性の制約から解放された新しいレジストリをゼロから構築しており、最初からモダンなイベント駆動アーキテクチャを採用しています。
 
-このイニシアチブは [内部提案](https://gitlab.com/gitlab-org/gitlab/-/issues/568349)から始まり、ユーザージャーニー、機能、データベーススキーマ、実装ロードマップを含む [拡張仕様](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md)（内部）へと発展しました。このブループリントは、公開可能な高レベルの設計とアーキテクチャ上の意思決定を扱います。内部ドキュメントには追加の戦略的な詳細が含まれています。
+このイニシアチブは[内部提案](https://gitlab.com/gitlab-org/gitlab/-/issues/568349)から始まり、ユーザージャーニー、機能、データベーススキーマ、実装ロードマップを含む[拡張仕様](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md)（内部）へと発展しました。このブループリントは、公開可能な高レベルの設計とアーキテクチャ上の意思決定を扱います。内部ドキュメントには追加の戦略的な詳細が含まれています。
 
 ## 用語集 {#glossary}
 
@@ -123,9 +123,9 @@ GitLab の現在のプロジェクトレベルのパッケージレジストリ�
 - **アップストリームソース**: 仮想リポジトリにキャッシュされたコンテンツを提供する外部レジストリ（Maven Central、npmjs.com、Docker Hub、AWS ECR、JFrog Artifactory、その他の GitLab リポジトリ）です。
 - **重複排除**: 組織内での重複したストレージの自動的な排除です。同一のコンテンツ（同じ SHA256 ハッシュ）は一度だけ保存されます。
 - **OCI (Open Container Initiative)**: コンテナフォーマットとランタイムに関する業界標準であり、Docker の元のフォーマットを超えて拡張されています。
-- **MVP (Minimum Viable Product)**: フェーズ 1 であり、コアストレージ、仮想リポジトリ、基本的なライフサイクル管理を備えた、企業の [ユースケース](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/55c4a5f6af4c1049da70062a5d39561a5d1ca189/blueprint.md#core-use-cases-by-user-journey-phase)（内部）の約 30% をカバーします。
+- **MVP (Minimum Viable Product)**: フェーズ 1 であり、コアストレージ、仮想リポジトリ、基本的なライフサイクル管理を備えた、企業の[ユースケース](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/55c4a5f6af4c1049da70062a5d39561a5d1ca189/blueprint.md#core-use-cases-by-user-journey-phase)（内部）の約 30% をカバーします。
 - **GA (General Availability)**: すべてのインストールタイプ（GitLab.com、Self-Managed、Dedicated）に対する本番環境対応のステータスです。
-- **SKU (Stock Keeping Unit)**: 独立した製品提供です。Artifact Registry は、既存の無料ティアのレジストリとは別の、新しいプレミアム SKU です。
+- **GitLab Credits**: Artifact Registry の課金に使用する消費通貨です。Artifact Registry の SKU やアドオンはありません。Premium と Ultimate の顧客が、すべてのティアで維持される既存のレジストリとは別に有効化します。
 - **RBAC (Role-Based Access Control)**: 組織、リポジトリコレクション、またはリポジトリのレベルでロールに基づいて割り当てられる権限です。
 
 ## 動機 {#motivation}
@@ -207,7 +207,7 @@ optional.
 - What is out of scope for this document?
 -->
 
-1. **既存レジストリの強化**: これは新しい SKU であり、現在のレジストリの進化ではありません。既存のレジストリは並行して継続され、廃止の計画はありません。無料ティアは現在のツールを維持します。Artifact Registry はプレミアム機能です。新しく構築することで、ティア 0 のツールを混乱させることを避け、後方互換性の制約を排除します
+1. **既存レジストリの強化**: これは新製品であり、現在のレジストリの進化ではありません。既存のレジストリは並行して継続され、廃止の計画はありません。無料ティアは現在のツールを維持します。Artifact Registry は Premium と Ultimate で利用できます。新しく構築することで、ティア 0 のツールを混乱させることを避け、後方互換性の制約を排除します
 2. **ネストされたグループのアーティファクト管理のサポート**: 分離境界は Organizations であり、トップレベルグループやプロジェクトではありません
 3. **インスタンス全体の重複排除の提供**: 重複排除は、明確なコスト按分のために組織にスコープされます
 4. **MVP ですべてのアーティファクトフォーマットをサポート**: Docker、Maven、npm から始め、追加のフォーマットは v1.0 以降で提供します
@@ -360,7 +360,7 @@ Artifact Registry は独立したサービスとして実装されます。
 - 顧客が自動化ツールを使用して JFrog/Nexus から正常に移行できる
 - AI を活用したレコメンデーションが構成時間を測定可能な割合で削減する
 
-v1.0（フェーズ 2）および将来（フェーズ 3 以降）の機能を含む包括的な機能の優先順位付けについては、拡張ブループリント（内部）の [機能の優先順位付けマトリクス](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md#capability-prioritization-matrix)を参照してください。
+v1.0（フェーズ 2）および将来（フェーズ 3 以降）の機能を含む包括的な機能の優先順位付けについては、拡張ブループリント（内部）の[機能の優先順位付けマトリクス](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md#capability-prioritization-matrix)を参照してください。
 
 ### マイグレーション戦略 {#migration-strategy}
 

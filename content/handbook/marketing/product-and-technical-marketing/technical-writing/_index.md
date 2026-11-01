@@ -2,11 +2,11 @@
 title: "Technical Writing"
 description: "Technical Writing チームは、GitLab のエンジニア、プロダクトマネージャー、デザイナー、UX リサーチャーと連携し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、拡張可能なドキュメントに落とし込みます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/technical-writing/"
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:38:26+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T15:53:03+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-15T10:07:37+01:00"
+lastmod: "2026-10-29T08:58:02+01:00"
 ---
 
 Technical Writers は、ユーザーが GitLab の機能を理解し、操作し、導入する方法を左右するコンテンツに
@@ -281,8 +281,8 @@ DocOps グループは、GitLab ドキュメントやその他の技術コンテ
 | ドキュメントサイト                                                               | {{< member-by-name "Sarah Watt" >}}, {{< member-by-name "Robert Landry" >}} |
 | ドキュメントサイトのバックエンド（コード、自動化）                                    | {{< member-by-name "Hiru Fernando" >}} |
 | ドキュメントの情報アーキテクチャ（コンテンツの再構成と左側のナビゲーションの大幅な変更） | {{< member-by-name "Fiona Neill" >}} |
-| [`content`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/contents/content)配下の [GitLab Design System ("Pajamas")](https://design.gitlab.com/)の情報 | {{< member-by-name "Fiona Neill" >}} |
-| [ドキュメントスタイルガイド](#documentation-style-guide)                              | {{< member-by-name "Fiona Neill" >}} |
+| [Pajamas Design System](https://design.gitlab.com/)（[プロダクトコンテンツ](https://design.gitlab.com/content/)） | {{< member-by-name "Fiona Neill" >}}, {{< member-by-name "Ashraf Khamis" >}} |
+| [ドキュメントスタイルガイド](#documentation-style-guide)                              | {{< member-by-name "Fiona Neill" >}}, {{< member-by-name "Ashraf Khamis" >}} |
 | [ドキュメントテスト](#documentation-testing) (DocOps/Vale/markdownlint)           | {{< member-by-name "Sarah Watt" >}} |
 
 ### Technical Writers がレビューしないコンテンツ {#content-not-reviewed-by-technical-writers}
@@ -309,11 +309,12 @@ Technical Writing チームは、チーム外の固定の担当窓口から `doc
 
 Technical Writing チームは、満足度、見つけやすさ、有用性という 3 つの主要領域でドキュメントのパフォーマンスを追跡します。ユーザーアンケートとフィードバック、Google Analytics、コンテンツ監査、サイトの可用性監視など、複数のデータソースを組み合わせて使用します。
 
-私たちは 6 つの主要プロジェクト（GitLab、Omnibus、Charts、Operator、Runner、CLI）の統計を追跡しています。
+私たちは主要なドキュメントソース（GitLab、Omnibus、Charts、Operator、Runner、CLI、GitLab Orbit、Artifact Registry、リリースノート）の統計を追跡しています。
 
-- ドキュメントプロジェクトには、3,100 ページ以上のドキュメントと 4,400,000 語以上の単語があります。
-- 2020 年 5 月以降、ページ数は 165% 以上、単語数は 270% 以上増加しています。
-- ページ数（30%）と単語数（30%）の最大の割合を占めるのは、左側のナビゲーションの **Use GitLab** セクションです。
+- ドキュメントソースには、3,600 ページ以上のドキュメントと 5,500,000 語以上の単語があります。
+- 2020 年 5 月以降、ページ数は 205% 以上、単語数は 365% 以上増加しています。
+- 2025 年 9 月から 2026 年 9 月にかけて、ページ数は 33%、単語数は 39% 増加しました。
+- ページ数（33%）と単語数（33%）の最大の割合を占めるのは、左側のナビゲーションの **Use GitLab** セクションです。
 
 GitLab チームメンバーは、[ドキュメント指標ダッシュボード](https://internal.gitlab.com/handbook/marketing/technical-writing/metrics-kpis/)
 と [Data Studio ダッシュボード](https://datastudio.google.com/reporting/d6af7a2b-2aaa-4f30-8742-811e62777c93/page/IeVBD)で追加の指標を確認できます。ダッシュボードの手順については、[Google Analytics](https://internal.gitlab.com/handbook/marketing/technical-writing/google-analytics/)を参照してください。
@@ -440,7 +441,7 @@ Technical Writers は、次の編集レベルを使用します。
 
 - コンテンツが定義された[トピックタイプ](https://docs.gitlab.com/development/documentation/topic_types/)に準拠していることを確認します。
 - コンテンツがドキュメント全体に適切に組み込まれていることを確認します。
-- UI テキストについては、[GitLab Design System (Pajamas)](https://design.gitlab.com/)と[推奨用語リスト](https://docs.gitlab.com/development/documentation/styleguide/word_list/)で定義された標準を満たしていることを確認します。
+- UI テキストについては、[Pajamas Design System](https://design.gitlab.com/)と[推奨用語リスト](https://docs.gitlab.com/development/documentation/styleguide/word_list/)で定義された標準を満たしていることを確認します。
 
 #### ライターが編集レベルを適用する方法 {#how-the-writers-apply-the-levels-of-edit}
 

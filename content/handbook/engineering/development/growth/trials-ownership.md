@@ -2,14 +2,14 @@
 title: トライアルのオーナーシップとコラボレーションのフレームワーク
 description: "Growth と Fulfillment/Monetization にまたがるトライアル業務の概念的なオーナーシップモデルと意思決定フレームワーク"
 upstream_path: /handbook/engineering/development/growth/trials-ownership/
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-lastmod: "2026-10-01T08:11:54+02:00"
-translated_at: "2026-10-10T06:55:21.889977+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T14:21:31+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
 このページでは、GitLab のトライアル業務について **誰が何を所有するか**、そして関係するチームがどのように協力するかを定義します。概念的なオーナーシップモデル（トライアル体験のどの部分について、どのチームが説明責任を負うか）と、CustomersDot のような共有コードベースにコントリビュートするための実践的な意思決定フレームワークの両方を扱います。
 
@@ -17,11 +17,11 @@ stale: false
 
 このフレームワークは、CustomersDot でのトライアル業務において Growth の自立性を実現する取り組みを基盤としています（[エピック #20063](https://gitlab.com/groups/gitlab-org/-/epics/20063)を参照）。その目標は、Growth が所有するトライアルのエントリーポイントで迅速に動けるようにする一方で、Fulfillment/Monetization が基盤となるトライアルコードベース、請求、プロビジョニングインフラストラクチャを所有し、維持することです。
 
-## 概念的なオーナーシップモデル
+## 概念的なオーナーシップモデル {#conceptual-ownership-model}
 
 オーナーシップは、単一のリポジトリに沿ってではなく、**チームが何について説明責任を負うか** に沿って分割されます。オーナーシップは、トライアル体験の *レイヤー*（エントリーポイントかコードベースか）と、*顧客状態*（新規見込み客か既存の有料顧客か）という 2 つの観点で決まります。
 
-### 中核原則: エントリーポイントとコードベース
+### 中核原則: エントリーポイントとコードベース {#core-principle-entry-points-vs-codebase}
 
 | 領域 | オーナー | 含まれるもの |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ CustomersDot 内の境界線は深さです。Growth はトライアルの **エ
 
 より深いトライアルコードベースを Fulfillment/Monetization のもとに集約することで、オーナーシップを複数のチームに分散させるのではなく、新規見込み客向けトライアル、有料顧客向けのアドオン／拡張トライアル、将来のあらゆるトライアルのバリエーションを含む、すべてのトライアルタイプの *実装* を 1 つのチームが所有します。特にトライアルの *エンタイトルメント* は、すべてのトライアルのエンタイトルメントを支援する Fulfillment の Entitlements 領域に属します。
 
-### 顧客状態: 新規見込み客と既存の有料顧客
+### 顧客状態: 新規見込み客と既存の有料顧客 {#customer-state-new-prospect-vs-existing-paid-customer}
 
 トライアルは 2 つの異なる顧客状態に対応し、歴史的にはそれが Growth と Fulfillment の業務を分ける境界線でした。
 
@@ -50,7 +50,7 @@ CustomersDot 内の境界線は深さです。Growth はトライアルの **エ
 ユーザー向けの機能ではないものの、トライアルシステムを健全に保つ業務、すなわちトライアルコードベース内の **可観測性、監視、パフォーマンス改善、信頼性、技術的負債、リファクタリング** は、コードベースオーナーである **Fulfillment/Monetization** が所有します。これは、そのコードに最後に機能をリリースしたチームに関係なく適用されます。
 
 {{% alert title="サポートとオンコールは Fulfillment が引き続き担当します" color="warning" %}}
-**Growth が作成または変更した場合でも、薄いトライアルエントリーレイヤーを含め、CustomersDot のすべての運用サポート、インシデント、オンコールは Fulfillment/Monetization が引き続き担当します。** エントリーレイヤーのコードにコントリビュートしても、CustomersDot のサポート負担が Growth に移ることはありません。これにより、有料顧客を支える本番システムの責任が分断されることを避け、CustomersDot のオンコールとインシデント対応を 単一のオーナーのもとに維持します。
+**Growth が作成または変更した場合でも、薄いトライアルエントリーレイヤーを含め、CustomersDot のすべての運用サポート、インシデント、オンコールは Fulfillment/Monetization が引き続き担当します。** エントリーレイヤーのコードにコントリビュートしても、CustomersDot のサポート負担が Growth に移ることはありません。これにより、有料顧客を支える本番システムの責任が分断されることを避け、CustomersDot のオンコールとインシデント対応を単一のオーナーのもとに維持します。
 {{% /alert %}}
 
 実際には、以下のようになります。
@@ -82,7 +82,7 @@ CustomersDot 内の境界線は深さです。Growth はトライアルの **エ
 
 上記の概念的なオーナーシップモデルは、*説明責任* を定義します。この意思決定フレームワークは、**共有コードベースへのコントリビューション**（主に CustomersDot）における実践的な適用方法です。Growth が直接コントリビュートできる場合と、コードベースオーナーである Fulfillment/Monetization に関与を求める必要がある場合を示します。Growth が直接コントリビュートする場合でも、マージされたコードの継続的な保守のオーナーシップは Fulfillment/Monetization に残ります。
 
-### Growth が独立してコントリビュートする
+### Growth が独立してコントリビュートする {#growth-contributes-independently}
 
 Growth のチームメンバーは、**トライアルのエントリーレイヤー**、すなわち GitLab アプリケーションのトライアル接点と、CustomersDot の薄いトライアルエントリーエンドポイントおよび基本コントローラーに限定され、プロビジョニング、エンタイトルメント、請求、共有システムに及ばない変更に直接コントリビュートできます。
 
@@ -129,7 +129,7 @@ Growth は、請求、サブスクリプション、プロビジョニングイ�
 4. コードベースオーナーの [プロジェクト管理プロセス](../fulfillment-monetization/#project-management-process)に従う
 5. DRI として Fulfillment/Monetization のチームメンバーと実装について協力する
 
-### 判断と相談
+### 判断と相談 {#judgment-call--consultation}
 
 変更が Growth の領域に属するか、Fulfillment/Monetization の関与が必要か判断に迷う場合は、相談するほうを選びます。以下の要素を検討してください。
 
@@ -148,11 +148,11 @@ Growth は、請求、サブスクリプション、プロビジョニングイ�
 3. アプローチについて話し合うため、必要に応じて短時間の同期ミーティングをリクエストする
 4. 今後の参考のため、決定を Issue に記録する
 
-## エスカレーション経路
+## エスカレーション経路 {#escalation-paths}
 
 優先順位の競合が発生した場合や、Growth がコードベースオーナーの現在のキャパシティを超える速度で進める必要がある場合は、以下のエスカレーション経路を使用します。
 
-### レベル 1: 直接コントリビューション
+### レベル 1: 直接コントリビューション {#level-1-direct-contribution}
 
 **使用する状況:** Growth に変更を実装する能力はあるものの、コードベースオーナーのレビューと承認が必要な場合。
 
@@ -166,7 +166,7 @@ Growth は、請求、サブスクリプション、プロビジョニングイ�
 
 **タイムライン:** 複雑さに応じて通常 1～2 マイルストーン
 
-### レベル 2: リーダーシップレベルでの優先順位の見直し
+### レベル 2: リーダーシップレベルでの優先順位の見直し {#level-2-leadership-level-reprioritization}
 
 **使用する状況:** 業務に Fulfillment/Monetization による実装が必要だが、キャパシティや競合する優先事項によってブロックされている場合。
 
@@ -180,7 +180,7 @@ Growth は、請求、サブスクリプション、プロビジョニングイ�
 
 **タイムライン:** 通常、計画に 1 マイルストーン + 実装時間が必要
 
-### レベル 3: リソース配分の調整
+### レベル 3: リソース配分の調整 {#level-3-resource-allocation-adjustments}
 
 **使用する状況:** 継続的なキャパシティ制約により、チーム構成や責任の構造的な変更が必要な場合。
 
@@ -194,9 +194,9 @@ Growth は、請求、サブスクリプション、プロビジョニングイ�
 
 **タイムライン:** 構造変更には通常 1～2 四半期
 
-## コラボレーションプロセス
+## コラボレーションプロセス {#collaboration-process}
 
-### コミュニケーションチャンネル
+### コミュニケーションチャンネル {#communication-channels}
 
 1. **主要な Slack チャンネル:**
    - [#s_growth](https://gitlab.slack.com/channels/s_growth) - Growth チームのチャンネル
@@ -208,7 +208,7 @@ Growth は、請求、サブスクリプション、プロビジョニングイ�
    - Fulfillment/Monetization の Issue: [gitlab-org/fulfillment-meta](https://gitlab.com/gitlab-org/fulfillment-meta)
    - CustomersDot の Issue: [gitlab-org/customers-gitlab-com](https://gitlab.com/gitlab-org/customers-gitlab-com)
 
-### 定期的な連携
+### 定期的な連携 {#regular-touchpoints}
 
 Growth と Fulfillment/Monetization の各チームは、以下を通じて定期的なコミュニケーションを維持する必要があります。
 
@@ -217,7 +217,7 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 3. 四半期ごとの計画調整セッション
 4. 複雑な取り組みのため、必要に応じて行う同期ミーティング
 
-### コードレビュープロセス
+### コードレビュープロセス {#code-review-process}
 
 1. CustomersDot のすべての変更には、コードベースオーナーである Fulfillment/Monetization のメンテナーによるレビューが必要
 2. Growth のエンジニアは、影響を受ける領域に詳しい Fulfillment/Monetization のチームメンバーにレビューをリクエストする必要がある
@@ -228,7 +228,7 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 
 以下の例では、**オーナーシップの判断**（[ライフサイクルのステップ](#trial-request-lifecycle-who-owns-each-hop)に対応）と **実際に行うこと** を組み合わせています。エンジニアリングとプロダクトの両方の意思決定を扱います。これらをパターンとして使用してください。新しい状況に明確に当てはまらない場合は、ライフサイクルの表と [意思決定フレームワーク](#decision-framework)に戻ってください。
 
-### Growth が独立してコントリビュートする（エントリーレイヤー、ステップ 1～3）
+### Growth が独立してコントリビュートする（エントリーレイヤー、ステップ 1～3） {#growth-contributes-independently-entry-layer-steps-13}
 
 これらはエントリーレイヤーに限定され、プロビジョニング、エンタイトルメント、請求を変更しないため、Growth の領域にとどまります。
 
@@ -247,7 +247,7 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 - **オーナー:** Growth — 共有コードからイベントが発生する場合でも、所有するエントリーポイントのプロダクトアナリティクス（ステップ 1～3）。
 - **行うこと:** GitLab の計測ガイドラインに従ってイベントを実装 → 共有コードに触れる箇所について Fulfillment/Monetization と配置／レビューを調整 → 標準のメンテナーレビュー → イベントが正しく発生することを検証。
 
-### Fulfillment/Monetization に関与を求める（コードベース、ステップ 4～6）
+### Fulfillment/Monetization に関与を求める（コードベース、ステップ 4～6） {#engage-fulfillmentmonetization-codebase-steps-46}
 
 これらはプロビジョニング、エンタイトルメント、請求、または GitLab へのプロビジョニングコールバックに触れるため、コードベースオーナーが必要です。
 
@@ -261,7 +261,7 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 - **オーナー:** Fulfillment/Monetization — GitLab へのプロビジョニングコールバック（ステップ 6）とエンタイトルメント／請求ロジック（ステップ 4～5）は、ステップ 6 が GitLab リポジトリで実行される場合でも完全に所有します。
 - **行うこと:** Fulfillment/Monetization をコードベース + サポート DRI として割り当て → 問題が引き渡し部分（ステップ 3↔4 の境界）で発生している場合、Growth がエントリーレイヤー／申請のコンテキストを提供。
 
-### 共有業務 — 境界に沿って分割する
+### 共有業務 — 境界に沿って分割する {#shared-work--split-along-the-boundary}
 
 **既存の有料顧客が、プロダクト内からアドオンまたは上位ティアを試用する。**
 
@@ -273,14 +273,14 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 - **オーナー:** 共有 — 業務を分割します。Growth がエントリーポイント（ステップ 1～3）のスコープを定め、Fulfillment/Monetization が作成／エンタイトルメント／プロビジョニング（ステップ 4～6）のスコープを定めます。
 - **行うこと:** 2 つの部分の間の申請データの受け渡し仕様について事前に合意 → 両方のバックログにまたがるリンクされた Issue として追跡 → エントリーポイントの変更は通常プロビジョニング側に依存するため、マイルストーンを調整。
 
-### 判断が必要 — 最初に相談する
+### 判断が必要 — 最初に相談する {#judgment-call--consult-first}
 
 **セールスワークフローやリードのルーティングに影響する可能性があるエントリーレイヤーの適格性** — たとえば、大企業のトライアルを制限し、直接的なセールス対応を促す場合。
 
 - **オーナー:** Growth のエントリーポイントに関する事項ですが、ダウンストリームへの影響があります → 構築前に Fulfillment/Monetization（およびセールスのステークホルダー）に相談します。
 - **行うこと:** 提案を [#s_fulfillment](https://gitlab.slack.com/channels/s_fulfillment)に投稿 → Fulfillment/Monetization の PM をタグ付け → 影響について短時間の同期ミーティング → 決定を Issue に文書化し、その結果に基づいて進める。
 
-### Fulfillment/Monetization が全面的に所有する（継続的な保守 + サポート、ステップ 7）
+### Fulfillment/Monetization が全面的に所有する（継続的な保守 + サポート、ステップ 7） {#fulfillmentmonetization-owns-outright-sustaining--support-step-7}
 
 **CustomersDot のトライアルエンドポイントで障害が発生している／遅い／アラートが不足している。**
 
@@ -292,9 +292,9 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 - **オーナー:** エントリーポイントを構築したチームに関係なく、CustomersDot のサポート DRI である Fulfillment/Monetization。
 - **行うこと:** Fulfillment/Monetization でトリアージ → 根本原因がエントリーレイヤー（ステップ 1～3）にある場合にのみ Growth を関与させる。
 
-## リソース
+## リソース {#resources}
 
-### 関連ドキュメント
+### 関連ドキュメント {#related-documentation}
 
 - [Fulfillment セクションのハンドブック](../fulfillment/#teams) - Entitlements グループ（旧 Provision）
 - [Growth チームのハンドブック](./) - Growth チームのプロセスと実験ガイドライン
@@ -302,20 +302,20 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 - [Fulfillment のプロジェクト管理プロセス](../fulfillment-monetization/#project-management-process) - Fulfillment の受付と計画
 - [Growth-Feature Product Owner のコラボレーションプロセス](../../../product/groups/growth/#collaboration-process-with-other-product-teams) - Growth の一般的なコラボレーションモデル
 
-### 技術リソース
+### 技術リソース {#technical-resources}
 
 - [CustomersDot リポジトリ](https://gitlab.com/gitlab-org/customers-gitlab-com) - CustomersDot の主要コードベース
 - [CustomersDot アーキテクチャドキュメント](https://gitlab.com/gitlab-org/customers-gitlab-com/-/tree/main/doc) - 技術ドキュメント
 - [Provision Tracking System の監視](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/provision_tracking_system/failure_monitoring.md) - PTS 監視ガイド
 
-### 主な連絡先
+### 主な連絡先 {#key-contacts}
 
 - **Growth Product Director:** [Growth チームのハンドブック](./#leadership)を参照
 - **Growth Engineering Director:** [Growth チームのハンドブック](./#leadership)を参照
 - **Trial Codebase Engineering Manager（Fulfillment/Monetization）:** [Fulfillment のチーム](../fulfillment/#teams)の Entitlements グループを参照
 - **Fulfillment/Monetization Product Management:** [Fulfillment のチームの Entitlements](../fulfillment/#teams)と[共有のステーブルカウンターパート](../fulfillment-monetization/#stable-counterparts)を参照
 
-## フィードバックとイテレーション
+## フィードバックとイテレーション {#feedback-and-iteration}
 
 このフレームワークは生きたドキュメントです。私たちはコラボレーションから学びながら、これらのガイドラインをイテレーションして改善します。改善提案は、以下を通じて行えます。
 
@@ -323,4 +323,4 @@ Growth と Fulfillment/Monetization の各チームは、以下を通じて定�
 2. [#s_growth](https://gitlab.slack.com/channels/s_growth)または [#s_fulfillment](https://gitlab.slack.com/channels/s_fulfillment)でのディスカッション
 3. Growth または Fulfillment/Monetization のリーダーシップへの直接的なフィードバック
 
-GitLab の [イテレーション](../../../values/#iteration)のバリューに従い、各チームがこのフレームワークを試し、フィードバックを集め、実際の経験に基づいて改善を提案することを推奨します。
+GitLab のイテレーションのバリューに従い、各チームがこのフレームワークを試し、フィードバックを集め、実際の経験に基づいて改善を提案することを推奨します。

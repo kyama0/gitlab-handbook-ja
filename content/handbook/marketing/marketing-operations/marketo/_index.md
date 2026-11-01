@@ -2,16 +2,16 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: "/handbook/marketing/marketing-operations/marketo/"
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-translated_at: "2026-10-10T21:11:07.012339+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T16:33:32+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-10-01T17:06:48-06:00"
+lastmod: "2026-10-22T09:56:33-06:00"
 ---
 
 ## Marketo について {#about-marketo}
 
-[Marketo](https://business.adobe.com/products/marketo.html) は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。
+[Marketo](https://business.adobe.com/products/marketo.html)は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。
 
 ## Marketo Tech Stack ガイド {#marketo-tech-stack-guide}
 
@@ -53,7 +53,7 @@ Sales Systems と協力して、`Block_Marketo_Sync__c` というカスタム数
 
 Marketo にはサンドボックスがあります。サンドボックスはトレーニング、API リンクの作成、本番に移す前の全体的なテストに使用されます。
 
-サンドボックスへのアクセスを希望する場合は、[AR](/handbook/eta/corporate-it/end-user-services/access-requests/#application-specific-templates) に記入してください。
+サンドボックスへのアクセスを希望する場合は、[AR](/handbook/eta/corporate-it/end-user-services/access-requests/#application-specific-templates)に記入してください。
 
 SFDC ステージングから Marketo サンドボックスに通過するリード数を制限するため、`Marketo Sync` = TRUE の場合のみ、SFDC ステージングから Marketo サンドボックスにリードが同期されるカスタムルールを設定しています。これは本番環境とは反対のロジックです。
 
@@ -77,7 +77,7 @@ Sales Systems は、[SFDC ステージング環境](/handbook/sales/field-operat
 
 プログラムにカスタムフォームが必要かどうかわからない場合や、プログラムが標準セットアップ以外の何かを必要とする場合は、計画プロセス中に MOps チームに尋ねて、ガイダンスを受け、プログラムのタイムラインを軌道に乗せられるようにしましょう。
 
-新しいカスタムフォームの作成が必要な場合は、[フォーム作成 Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=form_request) を開いてください。フォーム作成と複雑な自動化の一般的なタイムラインは 2 週間です。
+新しいカスタムフォームの作成が必要な場合は、[フォーム作成 Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=form_request)を開いてください。フォーム作成と複雑な自動化の一般的なタイムラインは 2 週間です。
 
 既存のフォームを新しいページで使用している場合は、フォームの背後にある自動化を構築できるよう、[リクエストを入力](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=form_processing)してください。フォームに対する自動化が作成されていない場合、フォームを記入した人物は Marketo に登録されますが、キャンペーンに処理されたり、フォローアップに送信されたりしません。
 
@@ -85,7 +85,7 @@ Sales Systems は、[SFDC ステージング環境](/handbook/sales/field-operat
 
 **翻訳済みフォームの利用可能な言語**: スペイン語、フランス語、イタリア語、韓国語、ドイツ語、ポルトガル語、日本語。これらは Global フォームで、Design Studio > Forms > Translated Forms にあります。これらを使用することは重要です（クローンしないこと）、なぜなら `Language Preference` の[ローカリゼーションセグメンテーション](/handbook/marketing/marketing-operations/marketo/#segmentations)に影響するからです。
 
-ローカライズされたフォームでは、`Preferred Language` を適切にキャプチャするために特別な隠しフィールドが必要です。詳細なセットアップ手順については、[この Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/10025) を参照してください。
+ローカライズされたフォームでは、`Preferred Language` を適切にキャプチャするために特別な隠しフィールドが必要です。詳細なセットアップ手順については、[この Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/10025)を参照してください。
 
 新しい言語が必要、または新しいフォームが必要な場合は、[翻訳](/handbook/marketing/product-and-technical-marketing/globalization/)を集めて、その後[サポートをリクエスト](https://form.asana.com/?k=1i4lL5h0RLzfTqNWBTH84Q&d=306855239930259)してください。
 
@@ -103,7 +103,7 @@ Sales Systems は、[SFDC ステージング環境](/handbook/sales/field-operat
 - Country には[禁輸国](/handbook/legal/trade-compliance/)を含めない
 - すべてのフォームには `gclid` および Google Analytics トラッキング用の隠しフィールドを設定する
 
-ダイレクトメールキャンペーン用に自宅住所を収集する場合、ランディングページまたはフォームに以下の文言を含める必要があります。さらに、アイテムを送付した後にアドレス情報を削除する Marketo の削除キャンペーンを設定する必要があります。また、アイテムを送付するベンダーがレコードからこれを削除することも確認してください。`自宅住所をお伝えいただくことで、お客様の自宅へのアイテム送付の許可を頂いたものといたします。このデータは他の目的では使用しません。`
+ダイレクトメールキャンペーン用に自宅住所を収集する場合、ランディングページまたはフォームに以下の文言を含める必要があります。さらに、アイテムを送付した後にアドレス情報を削除する Marketo の削除キャンペーンを設定する必要があります。また、アイテムを送付するベンダーがレコードからこれを削除することも確認してください。`By giving us your home address, you are giving us permission to mail items to your home. We will not use this data for any other purposes.`
 
 ### ウェブサイトフォーム管理 {#website-form-management}
 
@@ -119,7 +119,7 @@ about.gitlab のフォームは埋め込み Marketo フォームです。フィ�
 1. `services` - `/services/` のフォーム用
 1. `sales` - `/sales/` のフォーム用
 1. `public-sector` - `/solutions/public-sector/` のフォーム用
-1. `mktoLead` - ニュースレター購読フォーム送信イベントで使用されるレガシーカスタムイベントラベル。現在は primary、security、all-remote のニュースレターフォーム送信に使用されています。
+1. `mktoLead` - ニュースレター購読フォーム送信イベントで使用されるレガシーカスタムイベントラベル。現在は主要ニュースレター、セキュリティニュースレター、オールリモートニュースレターのフォーム送信に使用されています。
 
 フォーム埋め込みコードの `return false` の上に以下の行を追加します。`demo` から適切なフォーム完了を反映するようにイベントラベルを更新してください。
 
@@ -165,11 +165,11 @@ Marketing Operations のチームメンバーは、プロセスが正しく実�
 
 2022 年 11 月から、Marketo 内のチームは、期限切れのランディングページや関連性のなくなったスマートキャンペーンを整理する方法として、2022 年初頭に製品に追加された[アセット有効期限機能](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/programs/working-with-programs/local-asset-expiration.html?lang=en#:~:text=Right%2Dclick%20on%20your%20desired,Choose%20an%20expiration%20date)を活用するように移行します。このプロセスの詳細手順は、[キャンペーンとプログラム](/handbook/marketing/marketing-operations/campaigns-and-programs/)ページのハンドブックで確認できます。
 
-2024 年 7 月から、Marketo はアセット有効期限のためにイベントページ（https://about.gitlab.com/events/）にリンクするようになります。これがホームページの代わりに新しいリダイレクトになります。アセット有効期限を活用することで、使用されなくなった各 LP を手動で更新する必要がなくなり、ホームページではなく /events にリダイレクトされるようになります。注意: フォールバックページは、認識できないランディングページの場合と、ランディングページが利用できない場合にのみ使用されます。アセット有効期限を設定せず、より長くページを利用可能にしたい場合は、後で手動でリダイレクトをクローズすることもできます。
+2024 年 7 月から、Marketo はアセット有効期限のためにイベントページ（https://about.gitlab.com/events/）にリンクするようになります。これがホームページの代わりに新しいリダイレクトになります。アセット有効期限を活用することで、使用されなくなった各 LP を手動で更新する必要がなくなり、ホームページではなく /events にリダイレクトされるようになります。注意: フォールバックページは、認識できないランディングページの場合と、ランディングページが利用できない場合にのみ使用されます。アセット有効期限を設定せず、より長くページを利用可能にしたい場合は、後で手動でリダイレクトを設定してページを閉じることもできます。
 
 ### Marketo の製品データ {#product-data-in-marketo}
 
-データおよびエンジニアリングチームは、製品内の顧客およびトライアル使用に関するデータを Marketo に取り込むためのインテグレーションを開発しました。
+Data および engineering チームは、製品内の顧客およびトライアル使用に関するデータを Marketo に取り込むためのインテグレーションを開発しました。
 
 1. [Marketing Contact Datamart & Pump](https://internal.gitlab.com/marketing-operations/product-data/#marketing-datamart-pump-and-pql-information-email-marketing-data-mart): フィールドは `[CDB]` で始まる。このデータは Hightouch により毎晩投入される
 1. [SaaS Trial & Hand-Raises](https://internal.gitlab.com/marketing-operations/product-data/#saas-trials--handraise): フィールドは `[PQL]` で始まる
@@ -207,7 +207,7 @@ Marketing Operations のチームメンバーは、プロセスが正しく実�
 
 リードが `Recycle` に設定されると、`Behavior Score` は 0 にリセットされます。`Person Score` は `Demographic Score` の値にリセットされます。さらに、過去に `MQL` に到達した人物は、`Recycle` にリセットされた後にビヘイビアスコアを上げるアクションを取ると、追加で `+20` のスコアが付与されます。リードが MQL 閾値に達する前に `Accepted` だった場合、その後 30 日以内に `Recycle` に設定されると、リードの `Behavior Score` はアクションを取った時に `Inquiry` だった時の値にリセットされ、`Demographic Score` は再度実行され、全体の `Person Score` はこの 2 つの値の合計になります。
 
-リードが `Recycle` から `MQL` に `Re-MQL` すると、`Recycle Reason` フィールドは `Null` に設定されますが、その `Recycle Reason` の値はリードまたはコンタクトの `Previous Recycle Value` フィールドに保持されます。このフィールドは Marketo によってのみ設定されます。`Recycle DateTime` は最初の 1 回のみ更新されます。リードが再度 `MQL` ステータスに達した場合、ラウンドロビンのために LeanData によって再ルーティングされず、元のオーナーの名前のままになります。
+リードが `Recycle` から `MQL` に `Re-MQLs` すると、`Recycle Reason` フィールドは `Null` に設定されますが、その `Recycle Reason` の値はリードまたはコンタクトの `Previous Recycle Value` フィールドに保持されます。このフィールドは Marketo によってのみ設定されます。`Recycle DateTime` は最初の 1 回のみ更新されます。リードが再度 `MQL` ステータスに達した場合、ラウンドロビンのために LeanData によって再ルーティングされず、元のオーナーの名前のままになります。
 
 リードのライフサイクルを確認するには、[figjam フローチャート](https://www.figma.com/file/lycXH6cMKK5oNaKj2RSigx/Re-MQL-Workflows_2023-08-22_10-56-57?type=whiteboard&t=HDkNJDbCt6265Ezf-1)を参照してください。後のステップから `Raw` または `Inquiry` のステータスに戻ることはできないことに注意してください。
 
@@ -259,8 +259,8 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 | Inbound - High  | Contact Request, <br> Renewals, <br> In-app Health Check, <br> Duo Requests <br> Beta - Score | +100 | 1 日 1 回 |
 | Inbound - Hand Raise  | [Hand Raise PQL](/handbook/product/product-principles/#a-pql-can-be-further-broken-down-into-two-types-usage-and-hand-raise) | +100 | 1 日 1 回 |
 | Web Chat - <br>Qualified  |ウェブチャットインタラクションまたはミーティング予約 | +100 | 30 日に 1 回 |
-|User Gems Past Champ |User Gems によって以前の champion としてタグ付けされた人物|+100|3 ヶ月に 1 回|
-<!--| [PTP Score](https://internal.gitlab.com/handbook/sales/propensity_models/)  |Propensity Model 経由で新たに 4 または 5 のスコアが割り当てられ、Lead Score Classification 経由で `A` または `B` のランキングが割り当てられた場合。<br> 詳細は[教育用デッキ](https://docs.google.com/presentation/d/1dxSXekzw-SIF1g4pjNf6QGNBUY1L6euggsqqr9BTHUY/edit#slide=id.g1d24c3e4ddd_5_252)またはハンドブックを参照 <br>  | +100 | 90日に1回 |-->
+|User Gems Past Champ |User Gems によって以前の推進者としてタグ付けされた人物|+100|3 ヶ月に 1 回|
+<!--| [PTP Score](https://internal.gitlab.com/handbook/sales/propensity_models/)  |Newly assigned a 4 or 5 score via the Propensity Model alongside being assigned an `A` or `B` ranking via Lead Score Classification.<br> See [Educational deck](https://docs.google.com/presentation/d/1dxSXekzw-SIF1g4pjNf6QGNBUY1L6euggsqqr9BTHUY/edit#slide=id.g1d24c3e4ddd_5_252) or handbook for details <br>  | +100 | 1/90 days |-->
 
 #### ビヘイビアスコアリング {#behavior-scoring}
 
@@ -273,7 +273,7 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 |*オンライン参加| Sponsored Webcast > Attended, <br> Sponsored Webcast > Attended On-demand, <br> Workshop > Attended, <br> Workshop > Attended On-demand, <br> Webcast > Attended (techdemo only), <br> Webcast > Attended On-demand (techdemo only)| +20| 毎回 |
 |*Webcast 参加 | Webcast > Attended, <br> Webcast > Attended On-demand | +40 | 毎回|
 |*Conference Booth | Conference > Visited Booth| +20 | 毎回|
-|*コンテンツシンジケーションダウンロード| Content Syndication > Downloaded| +10| 30日に1回|
+|*コンテンツシンジケーションダウンロード| Content Syndication > Downloaded| +10| 30 日に 1 回|
 |*Gated Content - High|Gated Content > Downloaded（Forrester または Gartner を含む必要あり）| +50|毎回|
 |*Gated Content - Med|Gated Content > Downloaded|+15|  毎回|
 |* Inbound - Med|インバウンドフォーム、上記以外で Startup 申請者を除く |    +50|1 日に 1 回|
@@ -281,11 +281,11 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 |*PathFactory |PF コンテンツを消費|+10| 1 日に 1 回|
 |対面登録 |Owned Event > Registered, <br> Field Event > Registered, <br> Speaking Session > Registered, <br> Conference > Meeting Requested, <br> Live Event > Registered|    +10    |毎回|
 |オンライン登録 |Workshop > Registered, <br> Sponsored Webcast > Registered, <br> Webcast > Registered, <br> Executive Roundtables > Registered, <br> Vendor Arranged Meetings > Registered|    +10    |毎回|
-|Subscription|Subscription Form を記入    |+5|1週間に1回    |
+|Subscription|Subscription Form を記入    |+5|1 週間に 1 回    |
 |*Survey - High|(None Defined)    |+45| 毎回|
 |*Survey - Med|(None Defined)    |+30| 毎回|
 |*Survey - Low|Googleforms, <br> Default    |+15|  毎回|
-|キーウェブページの訪問|`/pricing/`,<br> `/sales`,<br> `/install`,<br> `/features`,<br> `/direction`,<br> `/solutions/startups/`,<br> `/releases/gitlab-com/`    |+50    |1週間に1回    |
+|キーウェブページの訪問|`/pricing/`,<br> `/sales`,<br> `/install`,<br> `/solutions`,<br> `/releases/gitlab-com/`    |+50    |1 週間に 1 回    |
 
 ##### 自動ブースター {#automated-boosters}
 
@@ -293,8 +293,8 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 
 |**インタラクションブースター**|キャンペーン説明|**割り当てポイント**|**スケジュール/フロー制限**|
 |:-------------:|:-------:|:-----:|:--------:|
-|Re-MQL Score|    ステータスが Nurture、ユーザーがビヘイビアスコアを上げるアクティビティを取る<br>MQL Counter >0    |+20    |    1ヶ月に1回|
-| [6QA 識別](/handbook/marketing/marketing-operations/6sense/#marketo) | 6sense の予測インテントデータモデルが GitLab に関心を示すリードとコンタクトを識別した場合。Integrate の DAP ツール経由で Marketo にプッシュされたリードは、最後の Integrate プッシュから 30 日間除外されます | +20| 3ヶ月に1回|
+|Re-MQL Score|    ステータスが Nurture、ユーザーがビヘイビアスコアを上げるアクティビティを取る<br>MQL Counter >0    |+20    |    1 ヶ月に 1 回|
+| [6QA 識別](/handbook/marketing/marketing-operations/6sense/#marketo) | 6sense の予測インテントデータモデルが GitLab に関心を示すリードとコンタクトを識別した場合。Integrate の DAP ツール経由で Marketo にプッシュされたリードは、最後の Integrate プッシュから 30 日間除外されます | +20| 3 ヶ月に 1 回|
 
 <!--|PF Engagement Booster 2|Engagement Time > 4 minutes|+15|Everytime|
 |PF Engagement Booster 1|Engagement Time >  2 minutes < 4 minutes|+10|Everytime|
@@ -307,15 +307,15 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 
 |**デモグラフィック特性**|キャンペーンタイプ|**ポイント**|**スケジュール/フロー制限**|
 |:-------------:|:-------:|:-----:|:--------:|
-|Setup for Company/Team Use|製品で会社またはチーム用に使用していると自己識別|    +10    |1回|
-|ビジネスメールドメイン|有効なビジネスメールアドレスを持っている|    +35    |1回|
-|シニアリティ - 高|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +15    |   1回|
-|シニアリティ - 中|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +15    |   1回|
-|シニアリティ - 低|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +5    |    1回|
-|ファンクション - 高|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +20    |   1回|
-|ファンクション - 中|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|+15|   1回|
-|ファンクション - 低|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +10 |    1回|
-|国 - Tier 1, Tier 2 |[Country = Tier 1, Tier 2](/handbook/marketing/product-and-technical-marketing/globalization/)|    +5   |1回|
+|Setup for Company/Team Use|製品で会社またはチーム用に使用していると自己識別|    +10    |1 回|
+|ビジネスメールドメイン|有効なビジネスメールアドレスを持っている|    +35    |1 回|
+|シニアリティ - 高|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +15    |   1 回|
+|シニアリティ - 中|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +15    |   1 回|
+|シニアリティ - 低|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +5    |    1 回|
+|ファンクション - 高|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +20    |   1 回|
+|ファンクション - 中|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|+15|   1 回|
+|ファンクション - 低|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +10 |    1 回|
+|国 - Tier 1, Tier 2 |[Country = Tier 1, Tier 2](/handbook/marketing/product-and-technical-marketing/globalization/)|    +5   |1 回|
 
 #### スコア減衰 {#score-decay}
 
@@ -323,19 +323,19 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 
 |**ビヘイビア減衰**|**キャンペーン説明**|**削除ポイント**|**スケジュール/フロー制限**|
 |:-------------:|:-------:|:-----:|:--------:|
-|30日間アクティビティなし|過去 30 日間にウェブ、スコアリング、プログラムのアクティビティなし、過去 30 日間に作成されていない|    -10    |    1ヶ月に1回|
-|Email:  Bounce    |Email Hard Bounces|    -20|1ヶ月に1回|
-|Email: Unsubscribed|Email から購読解除|    デモグラフィックスコアに基づくスコアリセット    |1ヶ月に1回|
+|30 日間アクティビティなし|過去 30 日間にウェブ、スコアリング、プログラムのアクティビティなし、過去 30 日間に作成されていない|    -10    |    1 ヶ月に 1 回|
+|Email:  Bounce    |Email Hard Bounces|    -20|1 ヶ月に 1 回|
+|Email: Unsubscribed|Email から購読解除|    デモグラフィックスコアに基づくスコアリセット    |1 ヶ月に 1 回|
 
 | **デモグラフィック減衰** |**キャンペーン説明**|**削除ポイント**|**スケジュール/フロー制限**|
 |------|------|------|------|
-|ジェネリックドメイン|[ジェネリックメールドメインを含む](https://docs.google.com/spreadsheets/d/1IO7DAIvhAhvIydkvLjwP-X_g97Zharf8JpkSVIsmiSs/edit?usp=sharing)|    -25    |1回|
-|シニアリティ - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -10    |    1回|
-|ファンクション - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -20    |  1回|
+|ジェネリックドメイン|[ジェネリックメールドメインを含む](https://docs.google.com/spreadsheets/d/1IO7DAIvhAhvIydkvLjwP-X_g97Zharf8JpkSVIsmiSs/edit?usp=sharing)|    -25    |1 回|
+|シニアリティ - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -10    |    1 回|
+|ファンクション - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -20    |  1 回|
 
 #### トライアル閾値スコアリング {#trial-threshold-scoring}
 
-標準のリードスコアリングモデルに加えて、GitLab は GitLab トライアル専用のセカンダリスコアリングモデルを活用し、特定の特性を示すトライアルユーザーを `MQL` させることを意図しています。トライアル閾値スコアリングシステムは、元のリードスコアリングワークフローと連携して機能します。スコアリングメカニズムは、AMER、APAC、EMEA リージョン内で、各リージョンの最も早いタイムゾーンに基づき、1 日 2 回、08:00 と 14:00 に発火します。トライアルユーザーは `31` ポイントに達すると `MQL` し、その後さらなるスコアリングから除外されます。メールドメインが `generic` と分類されているリードは、トライアル経由の MQL 化の対象から除外されます。スコアリングメカニズムは、プログラムメンバーシップと [Days Since Trial Counter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC72010C3ZN19) でフィルタリングされ、これはトライアル開始の `40 日` 後に終了します。
+標準のリードスコアリングモデルに加えて、GitLab は GitLab トライアル専用のセカンダリスコアリングモデルを活用し、特定の特性を示すトライアルユーザーを `MQL` させることを意図しています。トライアル閾値スコアリングシステムは、元のリードスコアリングワークフローと連携して機能します。スコアリングメカニズムは、AMER、APAC、EMEA リージョン内で、各リージョンの最も早いタイムゾーンに基づき、1 日 2 回、08:00 と 14:00 に発火します。トライアルユーザーは `31` ポイントに達すると `MQL` し、その後さらなるスコアリングから除外されます。メールドメインが `generic` と分類されているリードは、トライアル経由の MQL 化の対象から除外されます。スコアリングメカニズムは、プログラムメンバーシップと [Days Since Trial Counter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC72010C3ZN19)でフィルタリングされ、これはトライアル開始の `40 日` 後に終了します。
 
 | **トライアルスコアリング特性**| **スコアリングの説明** | **割り当てポイント** |
 | ------ | ------ | ------| ------ |
@@ -352,17 +352,17 @@ Sales Development と Marketing Analytics チームと協力し、Marketing Oper
 
 ### リードスコア分類 {#lead-score-classification}
 
-`リードスコア分類` は、見込み客が SAO に変換する可能性を分類することを目的とした 2 文字のスコア/指定であり、スコアはリードの現在の `デモグラフィック` および `ビヘイビア` スコアに基づいてモデル化されます。スコアとその定義のビジュアル表現は、`Lead Classification Matrix` として以下に示されています。リードステータスが `Ineligible` または `Disqualified` に設定されたリードは、`リードスコア分類` が `Disqualified` または `Ineligible` に設定されます。
+`lead score classification` は、見込み客が SAO に変換する可能性を分類することを目的とした 2 文字のスコア/指定であり、スコアはリードの現在の `デモグラフィック` および `ビヘイビア` スコアに基づいてモデル化されます。スコアとその定義のビジュアル表現は、`Lead Classification Matrix` として以下に示されています。リードステータスが `Ineligible` または `Disqualified` に設定されたリードは、`lead score classification` が `Disqualified` または `Ineligible` に設定されます。
 
 ハンドブックページが壊れた場合のために、Lead Classification Matrix と Lead Classification Definitions Table は [Figma に存在](https://www.figma.com/file/U4GBe693vvyyrXZnMGGjS7/Welcome-to-FigJam?type=whiteboard&node-id=0%3A1&t=PZBNGKUfGQo8Ocvn-1)します。
 
-![Lead Classification Matrix](/images/marketing/marketing-operations/marketo/lead_classification_matrix.png)
+![リード分類マトリックス](/images/marketing/marketing-operations/marketo/lead_classification_matrix.png)
 
 #### Lead Classification Matrix の使用方法と Lead Classification の読み方 {#how-to-use-the-lead-classification-matrix-and-read-the-lead-classification}
 
 リード分類スコア（およびそのビジュアルコンパニオンマトリックス）は、プロフィール適合度とエンゲージメントレベルの両方に基づいてリードフォローアップを優先するように設計されています。リードの `デモグラフィック適合度` は、文字/列 `A`、`B`、`C`、`D` に関連付けられています。リードの `ビヘイビアレベル` は、行 `1`、`2`、`3`、`4` に関連付けられています。`A` と `1` が最高の指定であり、`D` と `4` が最低です。マトリックスを見ると、最低の分類は左下の `D4` で、最高の分類は右上の `A1` です。
 
-リードスコア分類を最適に活用するには、マトリックスまたは以下の定義表で提供されている定義を読み、適切に行動してください。例えば、`B2` または `A2` に分類されたリードは、`D2` に分類されたリードよりも closed-won の商談を生み出す可能性が高いです。なぜなら、カテゴリ `A` と `B` の属性は GitLab が定義した理想的なバイヤープロファイルに適合しているからです。`D2` リードでも、関心が示されているために closed-won の商談に至る可能性はありますが、デモグラフィック適合度が低いため、より高いコンバージョンと商談につながる理想的なバイヤー属性が欠けている可能性があります。[リードスコアリングの教育スライドデッキ](https://docs.google.com/presentation/d/1Xl1xcrOeFsDar2B9kTmMH1Hrw5WKsNx7mDL9xtVeBMs/edit#slide=id.g2b1545a7631_0_1)で指摘されているように、緑色の分類四角は、理想的なバイヤーペルソナの属性を持つ人物が `MQL` する _範囲_ を示し、`A1` は確定的な `MQL` を示します。
+リードスコア分類を最適に活用するには、マトリックスまたは以下の定義表で提供されている定義を読み、適切に行動してください。例えば、`B2` または `A2` に分類されたリードは、`D2` に分類されたリードよりも受注商談を生み出す可能性が高いです。なぜなら、カテゴリ `A` と `B` の属性は GitLab が定義した理想的なバイヤープロファイルに適合しているからです。`D2` リードでも、関心が示されているために受注商談に至る可能性はありますが、`デモグラフィック` 適合度が低いため、より高いコンバージョンと商談につながる理想的なバイヤー属性が欠けている可能性があります。[リードスコアリングの教育スライドデッキ](https://docs.google.com/presentation/d/1Xl1xcrOeFsDar2B9kTmMH1Hrw5WKsNx7mDL9xtVeBMs/edit#slide=id.g2b1545a7631_0_1)で指摘されているように、緑色の分類四角は、理想的なバイヤーペルソナの属性を持つ人物が `MQL` する _範囲_ を示し、`A1` は確定的な `MQL` を示します。
 
 |  | D <br> (デモグラフィック - 低) | C | B | A <br> (デモグラフィック - 高) |
 | ------ | ------ | ------ | ------ | ------ |
@@ -446,8 +446,8 @@ Marketo セグメンテーションはスマートリストに似ていますが
 
 [Marketo のセグメンテーション](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SG1021A1)
 
-- Raw > INQ - `Status = NULL, Inquiry または Raw` または (`Status = Recycle` かつ `Person Score < 75`)
-- INQ > MQL - `Status = MQL, Accepted または Qualifying` または (`Status = Recycle` かつ `Person Score > 74`)
+- Raw > INQ - `Status = NULL, Inquiry or Raw` または (`Status = Recycle` かつ `Person Score < 75`)
+- INQ > MQL - `Status = MQL, Accepted or Qualifying` または (`Status = Recycle` かつ `Person Score > 74`)
 - MQL > SAO - `Status = Qualified` または `1 Open Opportunity` または `Has an Open Opportunity`
 - Customer - `Is Paid Tier = True` または `SFDC Type = Customer`
 - Disqualified - Status が `Disqualified` または `Ineligible`
@@ -479,7 +479,7 @@ Marketo セグメンテーションはスマートリストに似ていますが
 - Spanish
 - Portuguese
 - Italian
-- 英語以外、上記以外の言語
+- Non-English, not otherwise listed
 - Default (English)
 
 </details>
@@ -543,9 +543,9 @@ Marketo セグメンテーションはスマートリストに似ていますが
 - Bronze
 - SM Trial
 - SaaS Trial
-- Free User - 過去にトライアルあり
+- Free User - with previous trial
 - Free User
-- 過去にトライアルあり - 不明
+- Previous trial - unknown
 - Default
 
 </details>
@@ -578,7 +578,7 @@ Marketo セグメンテーションはスマートリストに似ていますが
 - Insurance
 - Manufacturing
 - Media
-- 業界が記入されていない
+- No industry populated
 - Nonprofit
 - PubSec
 - Retail & Consumer goods
@@ -612,16 +612,16 @@ Marketo セグメンテーションはスマートリストに似ていますが
 {{% /details %}}
 
 
-[Trust Logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/8/overview/details) - このスニペットは、承認された顧客ロゴを表示するために使用されます。通常はサンクスページで使用されますが、ランディングページでも使用できます。スニペットは、ランディングページの `Trust Logos` セクションがオンに切り替えられた時に表示されます。Marketing Operations のみが、カスタマーアドボカシーチームの指示に基づいてこのスニペットを編集できます。
+[Trust Logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/8/overview/details) - このスニペットは、承認された顧客ロゴを表示するために使用されます。通常はサンクスページで使用されますが、ランディングページでも使用できます。スニペットは、ランディングページの `Trust Logos` セクションがオンに切り替えられた時に表示されます。Marketing Operations のみが、customer advocacy チームの指示に基づいてこのスニペットを編集できます。
 
 
 {{% details summary="MOps 用 - Trust Logo スニペットの編集方法" %}}
 以下の手順は MOps Admin ユーザー向けです。
 
-1. すべての画像は、黒またはグレースケールで、50px 高 x 110px 幅以下のサイズである必要があります。Canva の[このテンプレート](https://www.canva.com/design/DAFiV-KHYew/OazKFgDLLNOIjnVHaJrpKw/edit?utm_content=DAFiV-KHYew&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)を使用して画像のサイズを変更できます。Marketo は Canva からダウンロードされた .svg ファイルを拒否するため、ファイルを .png として保存するのが最も簡単です。
-1. テンプレートには 14 個のロゴ用のスペースがあります。ロゴを追加する場合は、同じ数を削除する必要があります。カスタマーアドボカシーチームが、更新するロゴについてのガイダンスを提供する必要があります。
-1. サイズ変更された画像を [Design Studio](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/imagesandfiles/25821) に追加します。プレビューは画像のサイズより大きく表示されるため、画像はプレビューで歪んで見えます。ページ上では問題ありません。HTML を編集する際に、自分で簡単にできるよう、各ロゴのリンクを別のドキュメントにコピーします。
-1. [TEST trust logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/40/overview/details)が利用可能です。ライブスニペットを変更する前に、まずテストスニペットで変更を加えて表示し、カスタマーアドボカシーチームから承認を得ることをお勧めします。ライブスニペットの変更は、すべてのライブランディングページに適用されます。[こちら](https://page.gitlab.com/TestHopinEvent_Thankyoupage.html)のテストサンクスページで変更がどのように見えるかを確認できます。以下の編集手順は、テストスニペットとライブスニペットの両方に適用されます。
+1. すべての画像は、黒またはグレースケールで、高さ 50px x 幅 110px 以下のサイズである必要があります。Canva の[このテンプレート](https://www.canva.com/design/DAFiV-KHYew/OazKFgDLLNOIjnVHaJrpKw/edit?utm_content=DAFiV-KHYew&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)を使用して画像のサイズを変更できます。Marketo は Canva からダウンロードされた .svg ファイルを拒否するため、ファイルを .png として保存するのが最も簡単です。
+1. テンプレートには 14 個のロゴ用のスペースがあります。ロゴを追加する場合は、同じ数を削除する必要があります。customer advocacy チームが、更新するロゴについてのガイダンスを提供する必要があります。
+1. サイズ変更された画像を [Design Studio](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/imagesandfiles/25821)に追加します。プレビューは画像のサイズより大きく表示されるため、画像はプレビューで歪んで見えます。ページ上では問題ありません。HTML を編集する際に、自分で簡単にできるよう、各ロゴのリンクを別のドキュメントにコピーします。
+1. [TEST trust logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/40/overview/details)が利用可能です。ライブスニペットを変更する前に、まずテストスニペットで変更を加えて表示し、customer advocacy チームから承認を得ることをお勧めします。ライブスニペットの変更は、すべてのライブランディングページに適用されます。[こちら](https://page.gitlab.com/TestHopinEvent_Thankyoupage.html)のテストサンクスページで変更がどのように見えるかを確認できます。以下の編集手順は、テストスニペットとライブスニペットの両方に適用されます。
 1. [Trust Logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/8/overview/details)（または更新を始めたばかりの場合はテストスニペット）のドラフトを作成します。HTML をクリックしてスニペットを編集します。スニペットのフォーマットはランディングページテンプレートで制御されているため、スニペット自体は見た目が良くありません。
 1. 「HTML」をクリックして編集します。このコードをコピーします:
 `<a href="INSERT LINK TO CUSTOMER CASE STUDY" target="_blank"> <img src="/images/marketing/marketing-operations/marketo/INSERT LINK FROM DESIGN STUDIO" alt="ENTER NAME OF COMPANY logo" /></a>`
@@ -634,6 +634,7 @@ Marketo セグメンテーションはスマートリストに似ていますが
 
 
 {{% details summary="メール検証 - ZoomInfo 接続およびバウンスなどの他の Marketo データポイントによって入力されます。" %}}
+
 |フィールド名|定義              | 送信可能か?|
 |----------|------------------------|------------|
 |Valid     |実在のアドレスとして検証済み| はい |
@@ -641,6 +642,7 @@ Marketo セグメンテーションはスマートリストに似ていますが
 |Disposable|一時的な使い捨てアドレス    | いいえ|
 |Accept all (Unverifiable)| ドメイン全体の設定（詳細は説明を参照）| はい/いいえ|
 |Unknown   |サーバーに到達できない| いいえ|
+
 {{% /details %}}
 
 
@@ -649,13 +651,13 @@ Marketo セグメンテーションはスマートリストに似ていますが
 ABM リストは、Field Marketing および Marketing Program チームが、Sales によって優先度が高いと判断されたアカウントをターゲットにしてメール/招待状を送信するために、リクエストに応じて構築されます。これらのリストは [Marketo データベース](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52943077A1)の DMA フォルダで見つけることができます。
 **MktgOps** チームは、これらのリストの作成と維持を担当しています。
 
-新しい ABM リストが必要な場合は、[Target list issue テンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して Issue を開き、marketing ops をタグ付けしてください。
+新しい ABM リストが必要な場合は、[ターゲットリスト Issue テンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して Issue を開き、marketing ops をタグ付けしてください。
 
 ### 地理的 DMA リスト {#geographic-dma-list}
 
 地理的 DMA（direct marketing area）は、Field Marketing および Marketing Campaigns チームが、フィールド &/または企業マーケティングイベントに関連するメール/招待状をターゲットに送信するために構築されました。**MktgOps** チームは、これらのリストの作成と維持を担当しています。これらのリストは Marketo の `Database` の `Geographic DMA List` [フォルダ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52900024A1)で見つけることができます。
 
-新しい DMA リストが必要な場合は、Marketing Operations プロジェクトで Issue を開き、[DMA_request issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issuable_template=dma_request)を活用してください。
+新しい DMA リストが必要な場合は、Marketing Operations プロジェクトで Issue を開き、[DMA_request Issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issuable_template=dma_request)を活用してください。
 
 #### フォーカスメールリスト {#focused-email-lists}
 
@@ -676,7 +678,7 @@ Field Marketing および Marketing Campaigns チームは、特定のリージ�
 
 Marketo Sales Insight（MSI）は、SFDC ユーザーが Marketo が取っているさまざまなアクションと Marketo を介したユーザーアクションを可視化するために使用されます。ユーザーはこのインテリジェンスを使用して、見込み客とより有意義な会話を行い、スコアに基づいてリードに優先順位を付けることができます。詳細については [Marketo のドキュメントページ](https://experienceleague.adobe.com/docs/marketo/using/product-docs/marketo-sales-insight/msi-for-salesforce/features/insights-dashboard-feature-overview.html?lang=en)で読むことができます。
 
-MSI タブは Leads、Contacts、Accounts のページレイアウトに配置できます。表示されない、またはアクセスしたい場合は、[セールスシステム Issue](https://gitlab.com/gitlab-com/sales-team/field-operations/systems/-/issues/new) を作成してください。
+MSI タブは Leads、Contacts、Accounts のページレイアウトに配置できます。表示されない、またはアクセスしたい場合は、[sales systems Issue](https://gitlab.com/gitlab-com/sales-team/field-operations/systems/-/issues/new)を作成してください。
 
 SFDC インスタンスのタブで MSI を見つけることもできます - メイン SFDC バナーの `+` アイコンをクリックして `Marketo` を見つけます。そのタブでは、MSI の集計ビューが表示されます。
 

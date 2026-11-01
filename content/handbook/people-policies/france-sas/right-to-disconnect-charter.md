@@ -2,15 +2,15 @@
 title: "GitLab France S.A.S. つながらない権利憲章"
 description: GitLab France S.A.S. つながらない権利憲章 - フランス語と英語のバージョン。
 upstream_path: /handbook/people-policies/france-sas/right-to-disconnect-charter/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T14:28:21+00:00"
 translator: claude
 stale: false
-lastmod: "2025-09-25T09:40:49-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-{{% panel header="**これは Secure Document です**" header-bg="orange" %}}
-記載された[Roles & Responsibilities](#roles-and-responsibilities)のとおり、このページへの変更は code owner による承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
+{{% panel header="**これは保護されたドキュメントです**" header-bg="orange" %}}
+記載された[役割と責任](#roles-and-responsibilities)のとおり、このページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
 {{% /panel %}}
 
 ## 役割と責任 {#roles-and-responsibilities}
@@ -22,375 +22,375 @@ lastmod: "2025-09-25T09:40:49-04:00"
 | Legal & People Ops Management (Code Owners) | これらのポリシーへの重要な変更・例外を承認する責任を負います |
 
 <!-- vale handbook.Spelling = NO -->
-## Français: GITLAB FRANCE S.A.S. CHARTE SUR LE DROIT À LA DÉCONNEXION
+## フランス語版：GITLAB FRANCE S.A.S. つながらない権利憲章 {#français-gitlab-france-sas-charte-sur-le-droit-à-la-déconnexion}
 
-### 1. Objet
+### 1. 目的 {#1-objet}
 
-Chez GitLab (ci-après la «Société»), nous veillons à la sécurité, à la santé et au bien-être de tous les collaborateurs et mettons l'accent non pas sur le nombre d'heures travaillées mais plutôt sur la communication asynchrone ainsi que sur les résultats. Nous pensons que [la famille et les amis sont prioritaires et que le travail est secondaire](/handbook/values/#collaboration). Dans la droite ligne des valeurs de la Société, nous comprenons qu'il est essentiel de se « déconnecter » du travail pour favoriser une vie saine et équilibrée. Les progrès technologiques, les événements internationaux et les exigences professionnelles peuvent parfois nous faire oublier que nous avons besoin d'une pause pour nous ressourcer.
+GitLab（以下「当社」）では、私たちはすべての従業員の安全、健康、ウェルビーイングに配慮し、労働時間数よりも非同期コミュニケーションと成果を重視しています。私たちは、家族や友人を優先し、仕事はその次にすべきだと考えています。当社の価値観に沿って、健康でバランスの取れた生活を送るためには、仕事から「切り離される」ことが不可欠であると理解しています。技術の進歩、世界の出来事、仕事の要求によって、私たちは活力を取り戻すために仕事を休む必要があることを忘れてしまうことがあります。
 
-Le présent document (ci-après la « Charte ») a été établi afin de rappeler et de renforcer le droit à la déconnexion des salariés vis-à-vis des outils informatiques disponibles au sein de l'entreprise.
+本文書（以下「本憲章」）は、社内で利用できる IT ツールからつながりを断つ従業員の権利を再確認し、強化するために作成されました。
 
-Il est attendu des salariés qu'ils se déconnectent du travail et des moyens de communication liés au travail en dehors de leurs heures de travail normales et pendant leurs congés, et l'objectif de ce document est d'encourager la déconnexion et de fournir des conseils sur la manière dont l'entreprise s'engage à soutenir tous les salariés dans cette démarche.
+従業員には、通常の勤務時間外や休暇中に仕事や仕事に関連するコミュニケーションから離れることが期待されます。本文書の目的は、つながりを断つことを奨励し、当社がそのためにすべての従業員を支援する取り組みについて指針を示すことです。
 
-Par cette Charte, la Société réaffirme donc l'importance d'une bonne utilisation des outils informatiques afin de respecter les temps de repos et de congés, ainsi que l'équilibre entre la vie personnelle et familiale et la vie professionnelle.
+したがって、当社は本憲章を通じて、休息時間と休暇、ならびに個人・家庭生活と職業生活のバランスを尊重するために、IT ツールを適切に使用することの重要性を再確認します。
 
-### 2. Champ d'application
+### 2. 適用範囲 {#2-champ-dapplication}
 
-Cette Charte s'applique à tous les salariés, quels que soient leur poste, leur ancienneté et leur lieu de travail, conformément au droit français, et vise à renforcer les droits et obligations des salariés et de la Société conformément à la législation en vigueur. Pour toute information complémentaire en lien avec votre lieu de travail, veuillez-vous référer à la page de la politique globale propre à votre entité.
+本憲章は、フランス法に従って、役職、勤続年数、勤務地にかかわらずすべての従業員に適用され、現行法に基づく従業員と当社の権利および義務を強化することを目的としています。勤務地に関連する追加情報については、所属する法人固有の全社ポリシーのページを参照してください。
 
-Tous les salariés sont invités à prendre connaissance de la présente Charte.
+すべての従業員は、本憲章の内容を確認してください。
 
-### 3. Déconnexion du travail
+### 3. 仕事とのつながりを断つこと {#3-déconnexion-du-travail}
 
-La déconnexion du travail signifie:
+仕事とのつながりを断つことは、次を意味します。
 
-- L'engagement de la Société de ne pas solliciter le salarié pendant les périodes de repos;
+- 当社が、休息時間中に従業員に業務上の対応を求めないことを約束します。
 
-- L'absence d'obligation pour le salarié de répondre aux sollicitations professionnelles pendant les périodes de repos;
+- 従業員は、休息時間中に業務上の依頼に応じる義務を負いません。
 
-- L'absence de sanction ou de reproche en cas d'absence de réponse ou de refus de traiter des sujets professionnels en dehors de ces périodes et le respect du droit d'autrui à se déconnecter;
+- 勤務時間外に応答しないことや業務への対応を断ることについて制裁や非難を受けず、他者のつながらない権利を尊重します。
 
-- L'assurance que les éventuels comportements contraires ne seront ni encouragés, ni valorisés, ni récompensés.
+- これに反する行動を奨励、評価、報奨しないことを保証します。
 
-Il existe une multitude de formes de communication, mais les moyens de communication utilisés dans notre Société comprennent les emails, les messages Slack, les mentions de problèmes et de MR (« issue and MR mentions »), ainsi que les visio-conférences. Cette liste n'est pas exhaustive et peut être complétée en fonction de l'évolution de la technologie et de nos activités.
+コミュニケーションにはさまざまな形態がありますが、当社で使用する手段には、メール、Slack メッセージ、Issue や MR でのメンション（「Issue や MR でのメンション」）、ビデオ会議が含まれます。この一覧は網羅的なものではなく、技術や事業の進化に応じて追加される可能性があります。
 
-Nous nous attendons à ce que les salariés soient en mesure, sauf dans les circonstances décrites ci-dessous, de se déconnecter complètement du travail en dehors de leurs heures de travail normales et pendant leurs périodes de repos.
+私たちは、以下に示す状況を除き、従業員が通常の勤務時間外や休息時間中に、仕事とのつながりを完全に断てることを期待しています。
 
-À cet égard, l'entreprise précise que les périodes de repos, les congés et les périodes de suspension du contrat de travail doivent être respectés par tous les salariés de la Société.
+この点について、当社は、すべての従業員が休息時間、休暇、雇用契約の停止期間を尊重しなければならないことを明示します。
 
-Sauf en cas de situation urgente avérée:
+緊急事態であることが明らかな場合を除き、次が適用されます。
 
-- Aucun gestionnaire/superviseur ne devrait contacter ses collaborateurs par téléphone en dehors de leur temps de travail tel que défini dans le contrat de travail ou conformément à l'horaire collectif de travail applicable au sein de l'entreprise;
+- マネージャー／監督者は、雇用契約または社内で適用される共通の勤務時間に定められた部下の勤務時間外に、電話で部下に連絡しないようにしてください。
 
-- Les salariés ne sont pas tenus de lire ou de répondre aux e-mails qui leur sont adressés en dehors de leur temps de travail. Il en va de même pour les appels professionnels ou les messages reçus pendant les périodes de repos ou de vacances.
+- 従業員は、勤務時間外に届いたメールを読んだり返信したりする必要はありません。休息時間中や休暇中に受けた業務の電話やメッセージも同様です。
 
-Toute dérogation doit être justifiée par la gravité, l'urgence et/ou l'importance de la situation.
+いかなる例外も、状況の深刻さ、緊急性、および／または重要性によって正当化されなければなりません。
 
-### 4. Dérogations et flexibilités en cas d'urgence
+### 4. 緊急時の例外と柔軟な対応 {#4-dérogations-et-flexibilités-en-cas-durgence}
 
-En tant que société internationale travaillant à distance et utilisant la communication asynchrone comme base de travail, tous les salariés ne seront pas déconnectés en même temps, ni aux mêmes heures tous les jours. Nous nous efforcerons de faire preuve de cohérence et, en retour, nous demanderons de la flexibilité si nécessaire.
+非同期コミュニケーションを仕事の基本とする国際的なリモート企業として、すべての従業員が同時に、また毎日同じ時間帯に仕事とのつながりを断つわけではありません。私たちは一貫した運用に努め、その一方で必要に応じて柔軟な対応を求めます。
 
-Par conséquent, bien que les salariés aient le droit d'être déconnectés en dehors des périodes de travail habituelles, il peut y avoir des exceptions en cas d'urgence ou de situations exceptionnelles liées aux exigences du bon fonctionnement de l'activité de l'entreprise.
+したがって、従業員は通常の勤務時間外につながりを断つ権利を有しますが、当社の事業を適切に運営するために必要な緊急事態や例外的な状況では、例外が認められる場合があります。
 
-Sur une base strictement exceptionnelle et dûment justifiée, les salariés peuvent être contactés en dehors de leurs heures de travail habituelles dans des circonstances très limitées telles que, par exemple:
+厳密に例外的で、十分に正当化される場合に限り、次のような非常に限定された状況で、通常の勤務時間外に従業員へ連絡することがあります。
 
-- les situations d'urgence (dysfonctionnements technologiques ou mécaniques, failles de sécurité, blessures, etc;)
-- Les demandes urgentes et imprévisibles des clients;
-- a nécessité d'achever un projet dans l'urgence malgré une bonne planification;
-- Les périodes de forte activité prévisibles au cours desquelles il peut vous être demandé de travailler plus d'heures;
-- Les périodes d'astreinte programmées; et
-- Les tests de systèmes et de communications d'urgence.
+- 緊急事態（技術的・機械的な不具合、セキュリティ侵害、負傷など;）
+- 顧客からの緊急かつ予測不可能な要求。
+- 適切に計画していたにもかかわらず、プロジェクトを急いで完了する必要がある場合。
+- 追加の勤務時間を求められる可能性がある、予測される繁忙期。
+- 予定されたオンコール期間。および
+- システムや緊急連絡のテスト。
 
-### 5. Engagement et responsabilités
+### 5. 約束と責任 {#5-engagement-et-responsabilités}
 
-La Société s'engage à contrôler et à faire respecter la présente Charte. Dans cette optique, la Société considère qu'il est important de définir les attentes tant pour les gestionnaires/superviseurs que pour les collaborateurs.
+当社は、本憲章の遵守を監視し、徹底することを約束します。そのために、マネージャー／監督者と従業員の双方に期待することを明示することが重要だと考えています。
 
-(a) *Gestionnaires/Superviseurs*
+(a) *マネージャー／監督者*
 
-Il incom be à tous les gestionnaires/superviseurs de:
+すべてのマネージャー／監督者は、次の責任を負います。
 
-(i) Connaître les horaires de travail et les périodes de repos de leurs collaborateurs directs et communiquer tout changement d'horaire aux membres de l'équipe le plus rapidement possible, dans les limites autorisées par la loi;
+(i) 直属の部下の勤務時間と休息時間を把握し、法で認められる範囲で、勤務予定の変更をできるだけ速やかにチームメンバーに伝えます。
 
-(ii) Fixer des attentes claires et raisonnables en ce qui concerne la charge de travail et les résultats attendus;
+(ii) 業務量と期待する成果について、明確かつ合理的な期待を設定します。
 
-(iii) Définir des attentes claires et raisonnables en ce qui concerne le moment où le travail et l'engagement dans des communications liées au travail, en dehors des heures de travail normales, peuvent être exigés dans le cadre normal du travail du membre de l'équipe;
+(iii) 通常の職務の一部として、通常の勤務時間外に仕事や業務関連のコミュニケーションを行う必要が生じる時期について、明確かつ合理的な期待を設定します。
 
-(iv) Vérifier que les membres de l'équipe prennent les pauses réglementaires, les congés et les autres périodes de repos quotidiennes/hebdomadaires prévues par la loi;
+(iv) チームメンバーが、法律に定められた休憩、休暇、その他の日次・週次の休息時間を取っていることを確認します。
 
-(v) S'assurer que les autres membres de l'équipe respectent la Charte lorsqu'ils communiquent avec leurs collègues;
+(v) 他のチームメンバーが同僚とコミュニケーションを取る際に、本憲章を遵守していることを確認します。
 
-(vi) Ne pas pénaliser ou traiter différemment un membre de l'équipe pour avoir exercé ses droits en vertu de la présente Charte ou de la loi;
+(vi) 本憲章または法律に基づく権利を行使したことを理由に、チームメンバーに不利益を与えたり、異なる扱いをしたりしません。
 
-(vii) Ne pas encourager, valoriser ou récompenser un comportement différent susceptible d'entrer en conflit avec la Charte; et
+(vii) 本憲章と相反する可能性のある異なる行動を奨励、評価、報奨しません。および
 
-(b) *Collaborateurs*
+(b) *従業員*
 
-Il incombe à tous les Salariés de:
+すべての従業員は、次の責任を負います。
 
-(i) Gérer leur temps et travailler efficacement afin de s'assurer que les résultats attendus sont atteints dans le cadre de leurs heures de travail normales, à moins qu'une circonstance exceptionnelle ne survienne, auquel cas il convient d'en informer immédiatement le gestionnaire/superviseur du membre de l'équipe;
+(i) 通常の勤務時間内に期待する成果を達成できるよう、時間を管理し、効率的に働きます。例外的な事情が生じた場合は、直ちにチームメンバーのマネージャー／監督者に伝えます。
 
-(ii) Se conformer pleinement à tout dispositif utilisé par la Société pour mesurer le temps de travail et enregistrer avec précision leurs heures de travail;
+(ii) 当社が労働時間を測定するために使用する仕組みを十分に遵守し、自身の労働時間を正確に記録します。
 
-(iii) Être attentif aux horaires de travail des collègues et des clients (ne pas systématiquement utiliser slack, ne pas envoyer de courrier électronique ou ne pas téléphoner en dehors des heures de travail normales ou pendant les périodes de repos);
+(iii) 同僚や顧客の勤務時間に配慮します（通常の勤務時間外や休息時間中に、常態的に Slack、メール、電話で連絡しないでください）。
 
-(iv) Connaître les procédés permettant de retarder l'envoi des emails et les messages slack au jour ouvrable suivant et utiliser ces procédés chaque fois que cela est possible; et
+(iv) メールや Slack メッセージの送信を翌営業日まで遅らせる方法を理解し、可能な場合はその方法を使用します。および
 
-(v) S'adresser à son supérieur hiérarchique s'il estime que sa charge de travail l'empêche de se déconnecter du travail dans le cadre de la présente Charte, et en particulier s'il n'est pas en mesure de prendre ses périodes de repos quotidiennes et hebdomadaires comme l'exige la loi.
+(v) 業務量が原因で本憲章に基づいて仕事とのつながりを断てないと感じる場合、特に法律で義務付けられた日次・週次の休息時間を取れない場合は、上司に相談します。
 
-### 6. Comportements recommandés favorisant l'exercice du droit à la déconnexion
+### 6. つながらない権利の行使を促進するために推奨する行動 {#6-comportements-recommandés-favorisant-lexercice-du-droit-à-la-déconnexion}
 
-La Société n'a pas l'intention de dicter strictement quand et comment un salarié doit communiquer avec un autre ou lui répondre, car cela n'est tout simplement pas réalisable.
+当社は、従業員が互いにいつ、どのように連絡や返信をするかを厳格に指示する意図はありません。それは現実的ではないためです。
 
-Toutefois, nous attendons de chacun qu'il se conforme à la présente Charte et qu'il soit attentif à ses messages (y compris le ton et le timing) en dehors de ses heures de travail habituelles ou de celles du destinataire.
+ただし、私たちは、すべての人が本憲章を遵守し、自分または相手の通常の勤務時間外に連絡する場合は、口調やタイミングを含め、そのメッセージに配慮することを期待しています。
 
-Voici quelques suggestions aux collaborateurs pour promouvoir le droit à la déconnexion, prévenir la surcharge d'information et le stress liés à l'utilisation des outils numériques professionnels:
+つながらない権利を促進し、業務用デジタルツールの使用に伴う情報過多やストレスを防ぐために、従業員が検討すべき事項を次に示します。
 
-(a) L'utilisation du mail professionnel est-elle appropriée par rapport aux autres outils de communication disponibles (slack)?
+(a) 利用可能な他のコミュニケーションツール（Slack）と比べて、業務用メールを使うことは適切ですか？
 
-(b) La communication doit-elle vraiment être transmise à ce moment précis ou peut-elle être reportée aux heures normales de travail?
+(b) 本当に今この時点で連絡を送る必要がありますか。それとも通常の勤務時間まで延期できますか？
 
-(c) Le délai de réponse est-il nécessaire ou justifié?
+(c) 返信期限は必要ですか、または正当な理由がありますか？
 
-(d) Le destinataire (client, consommateur, fournisseur) auquel la communication est envoyée a-t-il des exigences en ce qui concerne le moment où il souhaite être contacté?
+(d) 連絡を送る相手（顧客、消費者、仕入先）には、連絡を受け取りたい時間について要望がありますか？
 
-(e) Le destinataire est-il connu pour être en congé, en déplacement ou occupé à d'autres tâches urgentes et, dans ce cas, la communication peut-elle être retardée jusqu'à ce que le destinataire soit disponible ou peut-elle être redirigée vers quelqu'un d'autre?
+(e) 相手が休暇中、出張中、または他の緊急業務に対応中であると分かっている場合、相手が対応可能になるまで連絡を遅らせることや、別の人に転送することはできますか？
 
-(f) L'objet du message indique-t-il de manière appropriée le contenu du message et s'il doit être traité immédiatement ou s'il peut attendre?
+(f) 件名は、メッセージの内容と、直ちに対応が必要か、それとも待てるかを適切に示していますか？
 
-(g) Les fonctions "cc" et "cci" sont-elles utilisées avec parcimonie?
+(g) 「cc」と「cci」の機能の使用を必要最小限にしていますか？
 
-(h) Chaque pièce jointe est-elle pertinente?
+(h) すべての添付ファイルに関連性がありますか？
 
-(i) Si vous communiquez ou collaborez régulièrement avec des membres de votre équipe qui travaillent dans un fuseau horaire différent du vôtre ou qui ont des horaires de travail différents des vôtres, vos communications comprennent-elles une note indiquant que le destinataire peut répondre pendant ses heures de travail habituelles et non pendant ses périodes de repos quotidiennes ou hebdomadaires (par exemple :  « Je travaille actuellement de manière flexible et, bien que je puisse envoyer ce courriel maintenant, je n'attends pas de réponse ou d'action en dehors de vos propres heures de travail »)?
+(i) 自分と異なるタイムゾーンや勤務時間で働くチームメンバーと定期的に連絡・協力している場合、相手は日次・週次の休息時間中ではなく、通常の勤務時間中に返信してよいと伝える注記を含めていますか（例：「現在、私は柔軟な時間帯で働いており、今このメールを送ることは私には都合がよいのですが、あなたの勤務時間外での返信や対応を期待しているわけではありません」）？
 
-(j) Avez-vous mis à jour vos messages électroniques d'absence du bureau afin de vous assurer que les personnes qui ont envoyé un message savent quand vous leur répondrez ou à qui elles peuvent adresser leur demande en votre absence?
+(j) メッセージを送った人が、返信時期や不在中の問い合わせ先を把握できるよう、不在通知を更新しましたか？
 
-### 7. Communications
+### 7. コミュニケーション {#7-communications}
 
-Nous communiquons de manière respectueuse et professionnelle à tout moment, conformément aux valeurs de la Société, en privilégiant la communication asynchrone et en donnant la priorité à la documentation, et nous partons d'une intention positive dans nos relations avec les autres (y compris en ce qui concerne le ton et le moment des communications). Prenez l'initiative de travailler de manière asynchrone chaque fois que cela est possible. Cela témoigne d'une attention et d'une considération pour ceux qui, entre autres, sont en dehors des heures de travail et se sont déconnectés du travail. Cela se traduit par la communication d'enregistrements de réunions, l'utilisation de « GitLab Issues » et de « Merge Requests » plutôt que de textes, d'appels ou de messages Slack, et la prise en compte des jours fériés locaux et des périodes de vacances. Encouragez les autres à utiliser la documentation par défaut plutôt que de faire pression sur les autres pour qu'ils soient en ligne en dehors de leurs heures de travail.
+私たちは、当社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションを取り、非同期コミュニケーションと文書化を優先し、相手の意図を好意的に受け止めます（連絡の口調やタイミングについても同様です）。可能な限り、自ら率先して非同期で働いてください。これは、とりわけ勤務時間外で仕事とのつながりを断っている人への思いやりと配慮を示すものです。具体的には、会議の録画を共有すること、テキストメッセージ、電話、Slack メッセージの代わりに「GitLab Issues」や「Merge Requests」を使用すること、現地の祝日や休暇状況に配慮することです。勤務時間外にオンラインでいるよう圧力をかけるのではなく、文書化を基本とするよう周囲に勧めてください。
 
-Lorsqu'il envoie une communication, l'expéditeur doit tenir compte du moment et du fait que cela risque de déranger, et le destinataire doit comprendre qu'il n'est pas tenu d'y répondre avant la reprise de son horaire de travail. Les salariés doivent être attentifs à la quantité de télécommunications qu'ils ont chaque jour et savoir la gérer.
+連絡を送る際、送信者はタイミングと相手を煩わせる可能性に配慮し、受信者は勤務時間が再開するまで返信する必要はないと理解してください。従業員は、毎日のオンラインコミュニケーションの量を意識し、管理してください。
 
-Nous sommes conscients que de nombreux salariés sont actifs sur les réseaux sociaux mais nous vous rappelons que si vous choisissez de communiquer avec d'autres salariés de GitLab sur les réseaux sociaux, vous devez rester professionnel et prendre en compte les  [GitLab's Communication Guidelines](/handbook/communication/)  (« Directives de communication de GitLab ») en toutes circonstances, dans les limites permises par la loi. Les salariés ne doivent pas se sentir obligés de répondre aux messages de leurs collègues sur les réseaux sociaux en dehors de leurs heures de travail, voir la [Team Member Social Media Policy](/handbook/marketing/team-member-social-media-policy/) (« Politique des médias sociaux des salariés ») pour plus de détails.
+多くの従業員がソーシャルメディアを利用していることは承知していますが、そこで GitLab の同僚と交流する場合は、法律で認められる範囲で、常にプロフェッショナルな態度を保ち、[GitLab のコミュニケーションガイドライン](/handbook/communication/)（「GitLab のコミュニケーション指針」）を考慮してください。従業員は、勤務時間外に同僚からソーシャルメディアで届いたメッセージに返信する義務を感じる必要はありません。詳細は[チームメンバーソーシャルメディアポリシー](/handbook/marketing/team-member-social-media-policy/)（「従業員のソーシャルメディアポリシー」）を参照してください。
 
-### 8. Réunions
+### 8. 会議 {#8-réunions}
 
-La Société vous demande de [respecter le temps des autres](/handbook/values/#be-respectful-of-others-time) et de tenir compte de l'investissement en temps demandé aux autres lorsqu'ils assistent à des réunions. Essayez d'éviter les réunions et, si une réunion est nécessaire, essayez de rendre la participation facultative pour le plus grand nombre possible de personnes. Toutes les réunions doivent avoir un ordre du jour lié à l'invitation, et vous devez en documenter les conclusions. Au lieu de faire en sorte que les gens demandent la permission, faites leur confiance et soyez disponibles s'ils ont des questions.
+当社は、他者の時間を尊重し、会議に参加するために他者が割く時間を考慮することを求めます。会議はできるだけ避け、必要な場合は、できるだけ多くの人の参加を任意にしてください。すべての会議では、招待から議題にリンクし、結論を文書化してください。人々に許可を求めさせるのではなく、相手を信頼し、質問があれば相談に応じてください。
 
-### 9. Conseils
+### 9. ヒント {#9-conseils}
 
-En plus des conseils donnés à l'échelle globale dans la section Communicating Your Time Off [Communiquer sur votre temps libre](/handbook/people-group/time-off-and-absence/time-off-types/), prenez connaissance des conseils suivants pour améliorer votre capacité à vous déconnecter du travail, à tirer le meilleur parti de vos congés et à faciliter votre retour au travail:
+全社向けの「休暇の周知」セクションにある[休暇について伝える](/handbook/people-group/time-off-and-absence/time-off-types/)ためのヒントに加えて、仕事とのつながりを断ちやすくし、休暇を最大限に活用し、仕事に戻りやすくするため、次のヒントを確認してください。
 
-- Désabonnez-vous de tous les MR qui seront probablement résolus pendant votre absence, ce qui vous évitera d'avoir à traiter tous les e-mails qu'ils vous enverront à votre retour.
-- Mettez en place des filtres de messagerie pour classer les e-mails dans des catégories que vous pourrez traiter un par un à votre retour.
-- Déconnectez-vous de Slack et de Gmail de l'une ou l'autre de ces façons : REMARQUE : Time Off by Deel est censé désactiver les notifications Slack sur votre téléphone et activer le mode DND. Mais juste au cas où, vous pouvez faire l'une de ces opérations:
-  - vous déconnecter de Slack et de Gmail sur votre téléphone, ou;
-  - supprimer Slack et Gmail de votre téléphone, ou;
-  - mettre en pause les applications Slack et Gmail sur votre téléphone, ou;
-  - configurer manuellement Slack et Gmail pour qu'ils n'envoient pas de notifications sur votre téléphone.
+- 不在中に解決しそうな MR の購読を解除してください。復帰時に、それらから届いたメールすべてに対応する必要がなくなります。
+- メールフィルターを設定してメールを分類し、復帰後に分類ごとに順番に対応できるようにしてください。
+- 次のいずれかの方法で Slack と Gmail とのつながりを断ってください。注：Time Off by Deel は、スマートフォンの Slack 通知をオフにし、DND モードを設定するはずですが、念のため次のいずれかを行ってもよいでしょう。
+  - スマートフォンで Slack と Gmail からログアウトします。または、
+  - スマートフォンから Slack と Gmail を削除します。または、
+  - スマートフォンの Slack と Gmail のアプリを一時停止します。または、
+  - スマートフォンに通知を送信しないよう、Slack と Gmail を手動で設定します。
 
-### 10. Engagements de la société en matière de sensibilisation et de formation au droit à la déconnexion
+### 10. つながらない権利の啓発と研修に関する当社の取り組み {#10-engagements-de-la-société-en-matière-de-sensibilisation-et-de-formation-au-droit-à-la-déconnexion}
 
-La Société affirme que les technologies de l'information et de la communication (TIC) font partie intégrante de l'environnement de travail et sont nécessaires au bon fonctionnement de l'entreprise. Porteuses de lien social, facilitant les échanges et l'accès à l'information, elles doivent toutefois être utilisées à bon escient, dans le respect des personnes et de leur vie privée, afin de garantir l'effectivité du respect des durées minimales de repos.
+当社は、情報通信技術（TIC）が職場環境の不可欠な一部であり、事業を円滑に運営するために必要であることを確認します。情報通信技術は人々をつなぎ、交流や情報へのアクセスを容易にしますが、最低限の休息時間が確実に尊重されるよう、個人とその私生活を尊重し、適切に使用しなければなりません。
 
-Dans ce cadre, et en plus des conseils et recommandations susmentionnés, la Société s'engage notamment à:
+このため、前述のヒントや推奨事項に加えて、当社は特に次のことを約束します。
 
-- Sensibiliser, et former si nécessaire, chaque salarié à l'utilisation raisonnée et équilibrée des outils numériques.
-- Mettre à la disposition de chaque salarié un accompagnement personnalisé.
+- 各従業員がデジタルツールを適切かつバランスよく使用するための意識を高め、必要に応じて研修を行います。
+- 各従業員に個別のサポートを提供します。
 
-Ces dispositifs seront régulièrement mis à jour pour être adaptés aux demandes et besoins des salariés.
+これらの施策は、従業員の要望やニーズに適合するよう、定期的に更新します。
 
-### 11. Signalements
+### 11. 懸念の報告 {#11-signalements}
 
-Cette charte sera réexaminée si nécessaire et nous encourageons les membres de l'équipe à s'adresser à leur supérieur ou à un membre ressources humaines s'ils ont des inquiétudes concernant cette charte, notamment en cas de violation potentielle.
+本憲章は必要に応じて見直します。本憲章について、違反の可能性を含め懸念がある場合は、上司または人事担当者に相談することをチームメンバーに勧めます。
 
-Si un membre de l'équipe:
+チームメンバーが次のいずれかに該当する場合、
 
-- Considère ne pas être en mesure d'exercer correctement son droit à la déconnexion;
-- estime que son supérieur hiérarchique ne respecte pas la charte ou ne se sent pas à l'aise pour soulever une question relative à la charte auprès de son supérieur hiérarchique;
+- つながらない権利を適切に行使できないと考えている。
+- 上司が本憲章を遵守していないと考えている、または本憲章に関する問題を上司に相談することに抵抗がある。
 
-Ledit Salarié peut contacter le service des ressources humaines ou Team Member Relations au teammemberrelations@gitlab.com.
+その従業員は、人事部門または Team Member Relations（teammemberrelations@gitlab.com）に連絡できます。
 
-Les membres de l'équipe qui ne respectent pas la présente charte peuvent faire l'objet de mesures disciplinaires.
+本憲章を遵守しないチームメンバーは、懲戒処分の対象となる可能性があります。
 
-### 12. Traduction
+### 12. 翻訳 {#12-traduction}
 
-En cas de conflit entre les versions en langue française et anglaise de la Charte, le texte en français prévaudra en toute circonstance.
+本憲章のフランス語版と英語版の間に相違がある場合、いかなる状況でもフランス語の文面が優先します。
 
-### 13. Entrée en vigueur de la Charte
+### 13. 本憲章の施行 {#13-entrée-en-vigueur-de-la-charte}
 
-La présente Charte entre en vigueur le 3 Avril 2023.
+本憲章は、2023 年 4 月 3 日に施行されます。
 
-La présente Charte est conclue pour une durée indéterminée.
+本憲章は、期間の定めなく締結されます。
 <!-- vale handbook.Spelling = YES -->
-## English: GITLAB FRANCE S.A.S. RIGHT TO DISCONNECT CHARTER
+## 英語版：GITLAB FRANCE S.A.S. つながらない権利憲章 {#english-gitlab-france-sas-right-to-disconnect-charter}
 
-### 1. Purpose
+### 1. 目的 {#1-purpose}
 
-At GitLab (hereinafter the "Company"), we support the safety, health and well-being of all team members and we operate with an emphasis on asynchronous communication and a focus on impact, not activity. We believe that family and friends should come first and work should come second. In line with company values, we understand that "disconnecting" from work is critical in order to foster a healthy and well-rounded life. Technological advancements, world events, and work demands, can, at times, cause us to forget that we need a break from work to recharge.
+GitLab（以下「当社」）では、私たちはすべてのチームメンバーの安全、健康、ウェルビーイングを支援し、非同期コミュニケーションと、活動量ではなく影響を重視して業務を行っています。私たちは、家族や友人を優先し、仕事はその次にすべきだと考えています。当社の価値観に沿って、健康で充実した生活を送るためには、仕事から「切り離される」ことが不可欠であると理解しています。技術の進歩、世界の出来事、仕事の要求によって、私たちは活力を取り戻すために仕事を休む必要があることを忘れてしまうことがあります。
 
-The present document (hereinafter the "Charter") has been drawn up in order to reiterate and reinforce team members' right to disconnect from IT tools available within the Company.
+本文書（以下「本憲章」）は、社内で利用できる IT ツールからつながりを断つチームメンバーの権利を再確認し、強化するために作成されました。
 
-It is expected that team members will disconnect from work and work-related communications outside of their normal working hours and during PTO, and the purpose of this document is to encourage disconnection, and to provide guidance on how the Company is committed to supporting all team members to do so.
+チームメンバーには、通常の勤務時間外や PTO 中に仕事や仕事に関連するコミュニケーションから離れることが期待されます。本文書の目的は、つながりを断つことを奨励し、当社がそのためにすべてのチームメンバーを支援する取り組みについて指針を示すことです。
 
-Through this Charter, the Company therefore reaffirms the importance of proper use of IT tools in order to respect rest and vacation time, as well as the balance between personal and family life and professional life.
+したがって、当社は本憲章を通じて、休息時間と休暇、ならびに個人・家庭生活と職業生活のバランスを尊重するために、IT ツールを適切に使用することの重要性を再確認します。
 
-### 2. Applicability
+### 2. 適用範囲 {#2-applicability}
 
-This Policy applies to all team members regardless of position, tenure, and work location, to the extent permitted by French law, and is intended to support existing rights and obligations of team members and the Company under those laws. For any additional information regarding your specific work location, please refer to the entity-specific employment policy page.
+本ポリシーは、フランス法で認められる範囲で、役職、勤続年数、勤務地にかかわらずすべてのチームメンバーに適用され、当該法律に基づくチームメンバーと当社の既存の権利および義務を支えることを目的としています。勤務地に関する追加情報については、法人固有の雇用ポリシーのページを参照してください。
 
-All team members should familiarise themselves with this Policy.
+すべてのチームメンバーは、本ポリシーの内容を理解してください。
 
-### 3. Disconnecting from work
+### 3. 仕事とのつながりを断つこと {#3-disconnecting-from-work}
 
-Disconnecting from work means:
+仕事とのつながりを断つことは、次を意味します。
 
-- The Company's undertaking not to solicit team members during rest periods;
+- 当社が、休息時間中にチームメンバーに業務上の対応を求めないことを約束します。
 
-- The absence of obligation for team members to respond to work-related solicitations during rest periods;
+- チームメンバーは、休息時間中に業務上の依頼に応じる義務を負いません。
 
-- The absence of any penalty or reproach for not responding or declining to attend to work matters outside of those times and showing respect for another person's right to disconnect;
+- 勤務時間外に応答しないことや業務への対応を断ることについて制裁や非難を受けず、他者のつながらない権利を尊重します。
 
-- The assurance that different behaviours will not be encouraged, valued or rewarded.
+- これと異なる行動を奨励、評価、報奨しないことを保証します。
 
-There are myriad forms of communication, but work-related communications in our Company include emails, slack messages, issue and MR mentions, and virtual meetings. This list is not exhaustive, and may expand as technology and our business evolve.
+コミュニケーションにはさまざまな形態がありますが、当社の業務に関連するコミュニケーションには、メール、Slack メッセージ、Issue や MR でのメンション、オンライン会議が含まれます。この一覧は網羅的なものではなく、技術や事業の進化に応じて拡大する可能性があります。
 
-It is our expectation that team members should, except in the circumstances set out below, be able to completely disconnect from work outside of their regular working hours and during their rest periods.
+私たちは、以下に示す状況を除き、チームメンバーが通常の勤務時間外や休息時間中に、仕事とのつながりを完全に断てることを期待しています。
 
-In this regard, the Company states that rest periods, vacations and suspension of the employment contract must be respected by all team members.
+この点について、当社は、すべてのチームメンバーが休息時間、休暇、雇用契約の停止期間を尊重しなければならないことを明示します。
 
-Except in cases of established emergency:
+緊急事態であることが明らかな場合を除き、次が適用されます。
 
-- Managers may not contact their reports by telephone outside their working time as defined in the employment contract or the collective working hours applicable within the Company;
+- マネージャーは、雇用契約または社内で適用される共通の勤務時間に定められた部下の勤務時間外に、電話で部下に連絡してはいけません。
 
-- Team members are not required to read or respond to e-mails addressed to them outside of their working time. The same applies to business calls or messages received during rest periods or vacations.
+- チームメンバーは、勤務時間外に届いたメールを読んだり返信したりする必要はありません。休息時間中や休暇中に受けた業務の電話やメッセージも同様です。
 
-In addition, any derogation must be justified by the seriousness, urgency and/or importance of the matter in question.
+さらに、いかなる例外も、該当する事案の深刻さ、緊急性、および／または重要性によって正当化されなければなりません。
 
-### 4. Exceptions and flexibility toward emergencies
+### 4. 緊急時の例外と柔軟な対応 {#4-exceptions-and-flexibility-toward-emergencies}
 
-As a global remote company that uses asynchronous communication as a starting point, not every team member will be disconnected at the same time, and team members may not be disconnected during the same hours every day. We will strive for consistency, and in return ask for flexibility when necessary.
+非同期コミュニケーションを出発点とするグローバルなリモート企業として、すべてのチームメンバーが同時につながりを断つわけではなく、毎日同じ時間帯につながりを断つとも限りません。私たちは一貫した運用に努め、その一方で必要に応じて柔軟な対応を求めます。
 
-Therefore, although team members have the right to be disconnected outside the usual working periods, there may be exceptions in case of emergencies or exceptional situations related to the requirements of the proper functioning of the Company's activity.
+したがって、チームメンバーは通常の勤務時間外につながりを断つ権利を有しますが、当社の事業を適切に運営するために必要な緊急事態や例外的な状況では、例外が認められる場合があります。
 
-On a strictly exceptional and duly justified basis, team members may be contacted outside of their regular working hours in very limited circumstances such as, for instance:
+厳密に例外的で、十分に正当化される場合に限り、次のような非常に限定された状況で、通常の勤務時間外にチームメンバーへ連絡することがあります。
 
-- Emergencies (technological or mechanical malfunctions, security breaches, injury, etc);
+- 緊急事態（技術的・機械的な不具合、セキュリティ侵害、負傷など）。
 
-- Urgent and unforeseeable client or customer demands;
+- 顧客からの緊急かつ予測不可能な要求。
 
-- The need to urgently complete a project despite proper planning;
+- 適切に計画していたにもかかわらず、プロジェクトを急いで完了する必要がある場合。
 
-- Anticipated high volume periods where you may be asked to work additional hours;
+- 追加の勤務時間を求められる可能性がある、予測される繁忙期。
 
-- Scheduled "on-call" periods; and
+- 予定された「オンコール」期間。および
 
-- System or emergency communication testing.
+- システムや緊急連絡のテスト。
 
-### 5. Commitment and responsibilities
+### 5. 約束と責任 {#5-commitment-and-responsibilities}
 
-The Company commits to monitoring and enforcing this Charter. With this in mind, the Company believes that it is important to set out expectations for both managers and individual contributors.
+当社は、本憲章の遵守を監視し、徹底することを約束します。そのために、マネージャーと個人貢献者の双方に期待することを明示することが重要だと考えています。
 
-(a) Managers
+(a) マネージャー
 
-It is the responsibility of all managers to:
+すべてのマネージャーは、次の責任を負います。
 
-(i) Know the regular working hours of their direct reports, and communicate any changes in scheduling to team members in as timely a manner as possible to the extent permitted by French law;
+(i) 直属の部下の通常の勤務時間を把握し、フランス法で認められる範囲で、勤務予定の変更をできるだけ速やかにチームメンバーに伝えます。
 
-(ii) Set clear and reasonable expectations with respect to workload and  deliverables;
+(ii) 業務量と成果物について、明確かつ合理的な期待を設定します。
 
-(iii) Set clear and reasonable expectations with respect to when work, and engaging in work-related communications, outside of regular working hours may be required as a normal part of the team member's job;
+(iii) チームメンバーの通常の職務の一部として、通常の勤務時間外に仕事や業務関連のコミュニケーションを行う必要が生じる時期について、明確かつ合理的な期待を設定します。
 
-(iv) Check that team members are taking statutory breaks, vacation, and other daily/weekly rest periods as may be required by French law;
+(iv) チームメンバーが、フランス法で義務付けられる法定の休憩、休暇、その他の日次・週次の休息時間を取っていることを確認します。
 
-(v) Ensure that other team members are complying with the Charter when communicating with their co-workers;
+(v) 他のチームメンバーが同僚とコミュニケーションを取る際に、本憲章を遵守していることを確認します。
 
-(vi) Not penalise or unfairly treat a team member for exercising their rights under this Charter or French law;
+(vi) 本憲章またはフランス法に基づく権利を行使したことを理由に、チームメンバーに不利益を与えたり、不当に扱ったりしません。
 
-(vii) Not encourage, value or reward different behaviour that may conflict with the Charter; and
+(vii) 本憲章と相反する可能性のある異なる行動を奨励、評価、報奨しません。および
 
-(b) Individual Contributors
+(b) 個人貢献者
 
-It is the responsibility of all team members to:
+すべてのチームメンバーは、次の責任を負います。
 
-(i) Manage their time and work efficiently in order to ensure that their deliverables are met within their regular working hours unless an exceptional circumstance arises in which case this should be communicated immediately to the team member's manager;
+(i) 通常の勤務時間内に成果物を完成できるよう、時間と仕事を効率的に管理します。例外的な事情が生じた場合は、直ちにチームメンバーのマネージャーに伝えます。
 
-(ii) Cooperate fully with any appropriate mechanism utilized by the Company  to record working time, and accurately record their hours;
+(ii) 当社が労働時間を記録するために使用する適切な仕組みに全面的に協力し、自身の労働時間を正確に記録します。
 
-(iii) Be mindful of colleagues' and customers' or clients' working hours (do not routinely slack, email or call outside regular working hours or during rest periods);
+(iii) 同僚や顧客の勤務時間に配慮します（通常の勤務時間外や休息時間中に、常態的に Slack、メール、電話で連絡しないでください）。
 
-(iv) Be knowledgeable of methods to delay emails and slack messages to the next working day and use those techniques wherever feasible; and
+(iv) メールや Slack メッセージの送信を翌営業日まで遅らせる方法を理解し、可能な場合はその方法を使用します。および
 
-(v) Speak with their manager if they feel their workload is preventing them from being able to disconnect from work under this Charter, and in particular if they are unable to take their daily and weekly rest periods as required by French law.
+(v) 業務量が原因で本憲章に基づいて仕事とのつながりを断てないと感じる場合、特にフランス法で義務付けられた日次・週次の休息時間を取れない場合は、マネージャーに相談します。
 
-### 6. Recommended behaviours favouring the exercise of the right to disconnect
+### 6. つながらない権利の行使を促進するために推奨する行動 {#6-recommended-behaviours-favouring-the-exercise-of-the-right-to-disconnect}
 
-It is not the Company's intention to strictly dictate when and how team members should communicate with or respond to one another because that is simply not practical.
+当社は、チームメンバーが互いにいつ、どのように連絡や返信をするかを厳格に指示する意図はありません。それは現実的ではないためです。
 
-However, we do expect that everyone will comply with this Charter and be mindful of their communications (including the tone and timing) when it is outside of their, or the recipient's regular working hours.
+ただし、私たちは、すべての人が本憲章を遵守し、自分または相手の通常の勤務時間外に連絡する場合は、口調やタイミングを含め、そのコミュニケーションに配慮することを期待しています。
 
-Here are some suggested considerations for team members to promote the right to disconnect, prevent information workload and stress related to the use of professional digital tools:
+つながらない権利を促進し、業務用デジタルツールの使用に伴う情報負荷やストレスを防ぐために、チームメンバーが検討すべき事項を次に示します。
 
-(a) Is the use of professional email appropriate vs. other available communication tools (i.e. slack message)?
+(a) 利用可能な他のコミュニケーションツール（Slack メッセージなど）と比べて、業務用メールを使うことは適切ですか？
 
-(b) Must the communication really be sent at this moment or can it be delayed until regular working hours?
+(b) 本当に今この時点で連絡を送る必要がありますか。それとも通常の勤務時間まで延期できますか？
 
-(c) Is the deadline for the required response necessary or justified?
+(c) 求めている返信の期限は必要ですか、または正当な理由がありますか？
 
-(d) Does the recipient (client, customer, supplier) to whom the communication is being sent have any expectations regarding when they wish to receive communications?
+(d) 連絡を送る相手（顧客、取引先、仕入先）には、連絡を受け取りたい時間について期待がありますか？
 
-(e) Is the recipient known to be on vacation, on leave, dealing with other urgent matters, and if so, can the communication be delayed until the recipient is available or can the communication be redirected to someone else?
+(e) 相手が休暇中、休職中、または他の緊急業務に対応中であると分かっている場合、相手が対応可能になるまで連絡を遅らせることや、別の人に転送することはできますか？
 
-(f) Does the subject line appropriately identify the content of the message and whether it must be dealt with immediately or whether it can wait?
+(f) 件名は、メッセージの内容と、直ちに対応が必要か、それとも待てるかを適切に示していますか？
 
-(g) Is the "cc" and "cci" functions used sparingly?
+(g) 「cc」と「cci」の機能の使用を必要最小限にしていますか？
 
-(h) Is each attachment relevant?
+(h) すべての添付ファイルに関連性がありますか？
 
-(i) If you are regularly communicating or collaborating with team members working in a different time zone than you, or who otherwise has different working hours than you, do your communications include a note that the recipient may respond during their regular working hours and not during their daily or weekly rest periods?  (for example  "I am currently working flexibly so while it suits me to send this email now, I do not expect a response or action outside your own working hours")
+(i) 自分と異なるタイムゾーンや勤務時間で働くチームメンバーと定期的に連絡・協力している場合、相手は日次・週次の休息時間中ではなく、通常の勤務時間中に返信してよいと伝える注記を含めていますか？（例：「現在、私は柔軟な時間帯で働いており、今このメールを送ることは私には都合がよいのですが、あなたの勤務時間外での返信や対応を期待しているわけではありません」）
 
-(j) Have you updated your electronic out of office notifications to ensure that those who have sent a message are aware when you will be responding to them or to whom they may direct their inquiry in your absence?
+(j) メッセージを送った人が、返信時期や不在中の問い合わせ先を把握できるよう、電子的な不在通知を更新しましたか？
 
-### 7. Communications
+### 7. コミュニケーション {#7-communications-1}
 
-We communicate respectfully and professionally at all times, in line with the Company's values, with a bias towards asynchronous communication and documentation-first and we assume positive intent in our dealings with others (including in relation to the tone and timing of communications). Take initiative to operate asynchronously whenever possible. This shows care and consideration for those who, among other things, are outside of working hours and have disconnected from work. This is demonstrated by communicating recordings of meetings, using GitLab Issues and Merge Requests rather than texts, calls, or Slack messages, and being sensitive to local holidays and vacation statuses. Encourage others to default to documentation rather than pressuring others to be online outside of their working hours.
+私たちは、当社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションを取り、非同期コミュニケーションと文書化を優先し、相手の意図を好意的に受け止めます（連絡の口調やタイミングについても同様です）。可能な限り、自ら率先して非同期で業務を行ってください。これは、とりわけ勤務時間外で仕事とのつながりを断っている人への思いやりと配慮を示すものです。具体的には、会議の録画を共有すること、テキストメッセージ、電話、Slack メッセージの代わりに GitLab Issues や Merge Requests を使用すること、現地の祝日や休暇状況に配慮することです。勤務時間外にオンラインでいるよう圧力をかけるのではなく、文書化を基本とするよう周囲に勧めてください。
 
-When sending a communication, the sender should give due consideration to the timing and potential for disturbance, and the recipient should understand that they will not be expected to respond until their working time recommences. Team members should be mindful of, and manage, how much virtual communication they have each day.
+連絡を送る際、送信者はタイミングと相手を煩わせる可能性に十分配慮し、受信者は勤務時間が再開するまで返信することは期待されていないと理解してください。チームメンバーは、毎日のオンラインコミュニケーションの量を意識し、管理してください。
 
-We recognize that many team members engage in social media activity and note that if you choose to connect with fellow team members of GitLab on social media, you have to keep it professional and consider GitLab's Communication Guidelines at all times, to the extent permitted by French law. Team members should not feel that they must respond to social communications from colleagues outside of their working hours, see the Team Member Social Media Policy for more details.
+多くのチームメンバーがソーシャルメディアで活動していることは承知していますが、そこで GitLab の同僚と交流する場合は、フランス法で認められる範囲で、常にプロフェッショナルな態度を保ち、GitLab のコミュニケーションガイドラインを考慮してください。チームメンバーは、勤務時間外に同僚からソーシャルメディアで届いた連絡に返信する義務を感じる必要はありません。詳細はチームメンバーソーシャルメディアポリシーを参照してください。
 
-### 8. Meetings
+### 8. 会議 {#8-meetings}
 
-The Company asks that we be respectful of others' time and consider the time investment others are asked to make when attending meetings. Try to avoid meetings, and if one is necessary, try to make attendance optional for as many people as possible. All meetings should have an agenda linked from the invite, and you should document the outcome. Instead of having people ask permission, trust their judgement and offer a consultation process if they have questions.
+当社は、他者の時間を尊重し、会議に参加するために他者が割く時間を考慮することを求めます。会議はできるだけ避け、必要な場合は、できるだけ多くの人の参加を任意にしてください。すべての会議では、招待から議題にリンクし、結果を文書化してください。人々に許可を求めさせるのではなく、相手の判断を信頼し、質問があれば相談できる仕組みを用意してください。
 
-### 9. Tips to help
+### 9. 役立つヒント {#9-tips-to-help}
 
-In addition to the company-wide tips in Communicating Your Time Off, take a look at these tips to increase your ability to disconnect from work, truly make the most of your time off, and make it easier to return to work:
+全社向けの「休暇の周知」にあるヒントに加えて、仕事とのつながりを断ちやすくし、休暇を十分に活用し、仕事に戻りやすくするため、次のヒントを確認してください。
 
-- Unsubscribe from any MRs that will likely resolve while you're away, and then you won't have to deal with all the emails from them when you return.
-- Set up some email filters to move emails into buckets that you can address one-at-a-time when you return.
+- 不在中に解決しそうな MR の購読を解除してください。復帰時に、それらから届いたメールすべてに対応する必要がなくなります。
+- メールフィルターを設定してメールを分類し、復帰後に分類ごとに順番に対応できるようにしてください。
 
-Disconnect yourself from Slack and Gmail in any of these ways: NOTE: Time Off by Deel is supposed to turn off Slack notifications on your phone and set DND mode. But just in case, you may want to do one of these:
+次のいずれかの方法で Slack と Gmail とのつながりを断ってください。注：Time Off by Deel は、スマートフォンの Slack 通知をオフにし、DND モードを設定するはずですが、念のため次のいずれかを行ってもよいでしょう。
 
-- log out from Slack and Gmail on your phone, or;
-- remove Slack and Gmail from your phone, or;
-- pause the Slack and Gmail apps on your phone, or;
-- manually configure Slack and Gmail to send no notifications on your phone.
+- スマートフォンで Slack と Gmail からログアウトします。または、
+- スマートフォンから Slack と Gmail を削除します。または、
+- スマートフォンの Slack と Gmail のアプリを一時停止します。または、
+- スマートフォンに通知を送信しないよう、Slack と Gmail を手動で設定します。
 
-### 10. Company's undertakings regarding awareness and training on the right to disconnect
+### 10. つながらない権利の啓発と研修に関する当社の取り組み {#10-companys-undertakings-regarding-awareness-and-training-on-the-right-to-disconnect}
 
-The Company affirms that information and communication technologies are an important part of the work environment and are necessary for the efficient running of the Company. They are a source of social interaction, facilitating exchanges and access to information, but they must be used wisely, with respect for individuals and their privacy, to ensure that minimum rest periods are respected.
+当社は、情報通信技術が職場環境の重要な一部であり、当社の効率的な運営に必要であることを確認します。情報通信技術は社会的な交流の源であり、やり取りや情報へのアクセスを容易にしますが、最低限の休息時間が尊重されるよう、個人とそのプライバシーを尊重し、適切に使用しなければなりません。
 
-In this context, and in addition to above-mentioned tips and recommendations, the Company undertakes in particular to:
+このため、前述のヒントや推奨事項に加えて、当社は特に次のことを約束します。
 
-- Raise awareness, and train if necessary, each team member in the reasoned and balanced use of digital tools.
-- Provide each team member with personalized support.
+- 各チームメンバーがデジタルツールを適切かつバランスよく使用するための意識を高め、必要に応じて研修を行います。
+- 各チームメンバーに個別のサポートを提供します。
 
-These measures will be regularly updated and adapted to team members' requests and needs.
+これらの施策は、チームメンバーの要望やニーズに適合するよう、定期的に更新します。
 
-### 11. Raising concerns
+### 11. 懸念の報告 {#11-raising-concerns}
 
-The effectiveness of the Charter will be reviewed as required and we encourage team members to speak with their manager or a member of Team Member Relations if they have any concerns regarding this Charter including potential violation by others.
+本憲章の有効性は必要に応じて見直します。他者による違反の可能性を含め、本憲章について懸念がある場合は、マネージャーまたは Team Member Relations のメンバーに相談することをチームメンバーに勧めます。
 
-If a team member:
+チームメンバーが次のいずれかに該当する場合、
 
-- Considers not being able to properly exercise their right to disconnect;
-- Believes that their manager is not complying with the Charter, or otherwise is not comfortable raising an issue regarding the Charter with their manager;
+- つながらない権利を適切に行使できないと考えている。
+- マネージャーが本憲章を遵守していないと考えている、または本憲章に関する問題をマネージャーに相談することに抵抗がある。
 
-The said team member may contact Team Member Relations.
+そのチームメンバーは、Team Member Relations に連絡できます。
 
-Team members who do not comply with this Charter may be subject to disciplinary action.
+本憲章を遵守しないチームメンバーは、懲戒処分の対象となる可能性があります。
 
-### 12. Translation
+### 12. 翻訳 {#12-translation}
 
-In the event of a conflict between the French and English version of the Charter, the French text shall prevail in all circumstances.
+本憲章のフランス語版と英語版の間に相違がある場合、いかなる状況でもフランス語の文面が優先します。
 
-### 13. Entry into force of the Charter
+### 13. 本憲章の施行 {#13-entry-into-force-of-the-charter}
 
-This version of the Charter shall enter into force on 3 April 2023.
+本憲章のこのバージョンは、2023 年 4 月 3 日に施行されます。
 
-This Charter is concluded for an indefinite period.
+本憲章は、期間の定めなく締結されます。
 
-## 現行および過去のバージョン（社内のみアクセス可能）
+## 現行および過去のバージョン（社内のみアクセス可能） {#current-and-past-versions-accessible-internally-only}
 
 憲章の現行バージョンの PDF は[こちら](https://drive.google.com/file/d/11yL_Lw1qpoHp1dZ_zYowR1Dlcvmn7kfV/view?usp=drive_link)からアクセスできます。憲章が更新された場合、透明性のために以前のバージョンの PDF がここで利用可能になります。

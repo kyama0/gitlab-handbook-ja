@@ -1,20 +1,20 @@
 ---
 title: "Optimize グループ"
 upstream_path: /handbook/engineering/data-engineering/analytics/optimize/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T14:16:22+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-20T09:32:02-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## Analytics:Optimize
+## Analytics:Optimize {#analyticsoptimize}
 
 **[Optimize グループの方針とロードマップ](https://gitlab.com/groups/gitlab-org/analytics-section/optimize-group/-/wikis/Optimize-Group-Direction-and-Roadmap)**
 
-### 私たちの働き方
+### 私たちの働き方 {#how-we-work}
 
-- 私たちの [GitLab の価値観](/handbook/values/) に従って。
+- 私たちの GitLab のバリューに従って。
 - 透明に: ほぼすべてが公開されており、可能な限りミーティングを記録します。
 - 取り組みたいことに取り組む機会があります。
 - 誰もが貢献でき、サイロは存在しません。
@@ -22,15 +22,15 @@ lastmod: "2026-05-20T09:32:02-07:00"
 - Slack でチームに連絡できます: [#g_analytics_optimize](https://gitlab.enterprise.slack.com/archives/CJZR6KPB4)
   - すべての Optimize チームメンバーは、質問の性質に関係なく、チーム Slack チャンネルでリクエストをトリアージし応答することが奨励されています。
 
-#### 優先度設定
+#### 優先度設定 {#prioritization}
 
-私たちの優先事項は、[Product の全体的なガイダンス](/handbook/product/product-processes/) に従うべきです。これは、各 Issue の priority ラベルに反映されるべきです。**エンジニアは、自分が取り組む Issue に priority ラベルを割り当てる DRI** であり、チーム全体の作業の相対的な重要性に対する可視性を確保します。
+私たちの優先事項は、[Product の全体的なガイダンス](/handbook/product/product-processes/)に従うべきです。これは、各 Issue の priority ラベルに反映されるべきです。**エンジニアは、自分が取り組む Issue に priority ラベルを割り当てる DRI** であり、チーム全体の作業の相対的な重要性に対する可視性を確保します。
 
 | 優先度 | 説明 | マイルストーンで出荷される確率 |
 | ------ | ------ | ------ |
 | priority::1 | **緊急**: 指定されたマイルストーンで達成するための最優先事項。これらの Issue はリリースの最も重要な目標であり、最初に作業されるべきです。一部は時間が重要であるか、依存関係をブロック解除する可能性があります。 | ~100% |
 | priority::2 | **高**: ビジネスや技術的負債に対する重大な肯定的な影響を持つ重要な Issue。重要だが、時間が重要でも他をブロックしているわけでもありません。  | ~75% |
-| priority::3 | **通常**: 既存機能への段階的な改善。これらは重要なイテレーションだが、重要ではないと判断されます。 | ~50% |
+| priority::3 | **通常**: 既存機能への段階的な改善。これらは重要なイテレーションですが、不可欠ではないと判断されます。 | ~50% |
 | priority::4 | **低**: 将来のリリースに延期しても許容できるストレッチ Issue。 | ~25% |
 
 一般的なガイドラインとして、私たちは次のように各リリースを計画しようとします:
@@ -39,13 +39,13 @@ lastmod: "2026-05-20T09:32:02-07:00"
 - **機能**: 50%
 - **メンテナンス**: 25%
 
-これらの目標は、各リリース後に [レトロスペクティブ](https://gitlab.com/gl-retrospectives/analytics/optimize/-/work_items?sort=created_date&state=opened&label_name%5B%5D=retrospective&first_page_size=20) 中に [毎月レビューされます](/handbook/product/product-processes/)。
+これらの目標は、各リリース後に [レトロスペクティブ](https://gitlab.com/gl-retrospectives/analytics/optimize/-/work_items?sort=created_date&state=opened&label_name%5B%5D=retrospective&first_page_size=20)中に [毎月レビューされます](/handbook/product/product-processes/)。
 
-#### Optimize 機能間のデータフローの SSoT
+#### Optimize 機能間のデータフローの SSoT {#ssot-for-data-flows-across-optimize-features}
 
-##### Contribution analytics 用のデータフロー
+##### Contribution analytics 用のデータフロー {#data-flow-for-contribution-analytics}
 
-**[グループ Contribution Analytics](https://docs.gitlab.com/ee/user/group/contribution_analytics) と [Group value stream dashboard contributions](https://docs.gitlab.com/ee/user/analytics/value_streams_dashboard.html) のデータフロー**
+**[グループ Contribution Analytics](https://docs.gitlab.com/ee/user/group/contribution_analytics)と [グループバリューストリームダッシュボードのコントリビューション](https://docs.gitlab.com/ee/user/analytics/value_streams_dashboard.html)のデータフロー**
 
 ```mermaid
 flowchart TB
@@ -75,9 +75,9 @@ flowchart TB
     contributions_mv --> value_stream
 ```
 
-##### GitLab Duo および SDLC トレンド用のデータフロー
+##### GitLab Duo および SDLC トレンド用のデータフロー {#data-flow-for-gitlab-duo-and-sdlc-trends}
 
-**[グループ/プロジェクト GitLab Duo および SDLC トレンド](https://docs.gitlab.com/user/analytics/duo_and_sdlc_trends/) のデータフロー**
+**[グループ/プロジェクト GitLab Duo および SDLC トレンド](https://docs.gitlab.com/user/analytics/duo_and_sdlc_trends/)のデータフロー**
 
 ```mermaid
 flowchart TB
@@ -108,9 +108,9 @@ flowchart TB
     ai_usage_events_pg --> aiUsageData
 ```
 
-#### 作業の整理
+#### 作業の整理 {#organizing-the-work}
 
-私たちは一般的に [製品開発フロー](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary) に従います。エンジニアリングチームとして、私たちは以下のワークフローステージに焦点を当てています:
+私たちは一般的に [製品開発フロー](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary)に従います。エンジニアリングチームとして、私たちは以下のワークフローステージに焦点を当てています:
 
 1. `workflow::planning breakdown` - Weight 見積もりが必要。**Issue を開いたエンジニアが、このステージから `workflow::ready for development` へ移動する DRI です。**
 1. `workflow::scheduling` - マイルストーンの割り当てが必要
@@ -120,26 +120,26 @@ flowchart TB
 1. `workflow::verification` - コードが本番にあり、DRI エンジニアによる検証を保留している
 1. `workflow::complete` - コードが検証され、作業が完了している。Issue はクローズされるべき
 
-ディスカバリー作業 (問題の検証、デザイン、ソリューションの検証) は、すべての Issue で必須のステップとしてではなく、専用のディスカバリー Issue、Epic、またはプロトタイプで個別に処理されます。
+ディスカバリー作業 (問題の検証、デザイン、ソリューションの検証) は、すべての Issue で必須のステップとしてではなく、専用のディスカバリー Issue、エピック、またはプロトタイプで個別に処理されます。
 
 一般的に言って、Issue は 2 つの状態のいずれかにあります:
 
 - ディスカバリー/リファインメント: 開発を開始することを妨げる質問にまだ答えている、
 - 実装: Issue がエンジニアの作業を待っているか、積極的に構築されている。
 
-Basecamp はこれらの段階を [丘の登りと下り](https://basecamp.com/#features) との関係で考えます。
+Basecamp はこれらの段階を [丘の登りと下り](https://basecamp.com/#features)との関係で考えます。
 
-個々のグループは、[製品開発フロー](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary) のワークフローにおいて、有用と感じる数のステージを自由に使用できますが、Issue がディスカバリー/リファインメントから実装にどう移行するかについては、ある程度規範的であるべきです。
+個々のグループは、[製品開発フロー](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary)のワークフローにおいて、有用と感じる数のステージを自由に使用できますが、Issue がディスカバリー/リファインメントから実装にどう移行するかについては、ある程度規範的であるべきです。
 
-##### チームの成果物の価値を測定する
+##### チームの成果物の価値を測定する {#measuring-the-value-of-the-team-deliverables}
 
-お客様への価値のフローを可視化するために、計画から本番までにかかる時間を測定するために [Value Stream Analytics](https://gitlab.com/groups/gitlab-org/-/analytics/value_stream_analytics?value_stream_id=1022&project_ids[]=278964&label_name[]=group%3A%3Aoptimize) を [dogfooding](/handbook/engineering/development/principles/#dogfooding) しています。
+お客様への価値のフローを可視化するために、計画から本番までにかかる時間を測定するために [Value Stream Analytics](https://gitlab.com/groups/gitlab-org/-/analytics/value_stream_analytics?value_stream_id=1022&project_ids[]=278964&label_name[]=group%3A%3Aoptimize)を [ドッグフーディング](/handbook/engineering/development/principles/#dogfooding)しています。
 
-##### バックログ管理
+##### バックログ管理 {#backlog-management}
 
 バックログ管理は非常に挑戦的ですが、私たちはラベルとマイルストーンを使って行おうとします。
 
-###### リファインメント
+###### リファインメント {#refinement}
 
 **最終目標が定義され、** すべての直接的なステークホルダーが「はい、これは開発の準備ができています」と言う状態です。一部の Issue はそこに早く到達し、一部は前後にいくつかのパスを必要として把握します。
 
@@ -147,25 +147,25 @@ Basecamp はこれらの段階を [丘の登りと下り](https://basecamp.com/#
 
 そうするには、エンジニアリングマネージャー、エンジニア、デザイナーが Issue から直接 ping されることができます。すべてのエンジニアリングチームメンバーは @gitlab-org/analytics-section/optimize-group/engineers で ping できます。
 
-リファインメントが必要な Issue を見つけるには、Optimize グループラベル (group::optimize) を含み、weight がない work item を検索してください。
+リファインメントが必要な Issue を見つけるには、Optimize グループラベル (group::optimize) を含み、weight がないワークアイテムを検索してください。
 
 ##### Issue を分解または昇格させる {#breaking-down-or-promoting-issues}
 
 Issue の複雑さによっては、Issue を分解または昇格させる必要があるかもしれません。いくつかのサンプルシナリオは次のようになります:
 
-- 他の何もする前にデザインに対してディスカバリーを行う必要がある。「Discovery:」の Issue がここで最もうまく機能するかもしれません。デザイン思考とディスカッションをそこに含めるのに役立ち、最終結果は「Implementation:」の Issue に移されます。これらのプレフィックスは、親 Issue または Epic にリンクされている場合に、それらがどんな種類の Issue であるかを整理するのにも役立ちます。
-- 作業のスコープが予想よりも大きく、さらに分解する必要があります (例: 現在 5 より高い weight があります)。元々提案された全体的な機能を提供するために発生する必要のある作業の異なるイテレーションまたはフェーズをリストするためのより小さな Issue に分解するために、その Issue を Epic に昇格させるのが適切かもしれません。
+- 他の何もする前にデザインに対してディスカバリーを行う必要がある。「Discovery:」の Issue がここで最もうまく機能するかもしれません。デザイン思考とディスカッションをそこに含めるのに役立ち、最終結果は「Implementation:」の Issue に移されます。これらのプレフィックスは、親 Issue またはエピックにリンクされている場合に、それらがどんな種類の Issue であるかを整理するのにも役立ちます。
+- 作業のスコープが予想よりも大きく、さらに分解する必要があります (例: 現在 5 より高い weight があります)。元々提案された全体的な機能を提供するために発生する必要のある作業の異なるイテレーションまたはフェーズをリストするためのより小さな Issue に分解するために、その Issue をエピックに昇格させるのが適切かもしれません。
 - 作業のスコープは明確ですが、1 つの Issue には少し扱いにくいです。指定された Issue をそのまま保ち、会話とアクティビティをすべての人に見えるようにし、より細かい進捗を追跡するために別個の子のデザイン、バックエンド、フロントエンドの Issue を作成するのが理にかなっているかもしれません。
 
-上記のいずれも適用されない場合、Issue はおそらくそのままで問題ありません! その場合、この Issue の weight は非常に低い、例えば 1-2 である可能性があります。
+上記のいずれも適用されない場合、Issue はおそらくそのままで問題ありません! その場合、この Issue の weight は非常に低い、例えば 1 〜 2 である可能性があります。
 
-##### Issue 内のディスカッション、情報、決定、アクションアイテムの管理
+##### Issue 内のディスカッション、情報、決定、アクションアイテムの管理 {#managing-discussions-information-decisions-and-action-items-in-an-issue}
 
-[Issue の分解または昇格](#breaking-down-or-promoting-issues) の一部として、指定された Issue に大量のスレッドとコメントがあることに気付くかもしれません。
+[Issue の分解または昇格](#breaking-down-or-promoting-issues)の一部として、指定された Issue に大量のスレッドとコメントがあることに気付くかもしれません。
 
 提案の詳細、保留中のアクションアイテム、決定が、Issue に来るステークホルダーに簡単に見えるようにすることが非常に重要です。したがって、Issue の説明を最新に保つこと、または上記のセクションに従って分解または昇格することが最重要です。
 
-#### 見積もり
+#### 見積もり {#estimation}
 
 Issue で作業を開始する前に、最初に予備的な調査の後に見積もる必要があります。
 
@@ -186,13 +186,13 @@ weight のない Issue には "workflow::planning breakdown" ラベルが割り�
 
 見積もりの一部として、Issue がエンジニアが作業を開始するのに適切な状態だと感じる場合、~"workflow::ready for development" ラベルを追加してください。あるいは、エンジニアが容易に解決できないと感じる、まだ定義する必要のある要件や答える必要のある質問がある場合は、~"workflow::blocked" ラベルを追加してください。`workflow::blocked` ラベルの付いた Issue は、私たちのプランニングボードの独自の列に表示され、それらがさらに注意を必要としていることを明確にします。`workflow::blocked` ラベルを適用するときは、ブロックされた Issue の DRI にコメントを残して ping し、可視性を上げるためにブロッキング Issue をリンクするようにしてください。
 
-##### 実装アプローチ
+##### 実装アプローチ {#implementation-approach}
 
 エンジニアの場合、Issue を `~workflow::planning breakdown` から移動するときに実装アプローチを作成したい場合があります。提案された実装アプローチに従う必要はありませんが、記録された weight を正当化するのに役立ちます。
 
-`workflow::planning breakdown` の DRI として、見張りの終わりとスケジューリングへの移行のための Issue の準備状況をシグナルするために、以下の例に従うことを検討してください。すでに分解されたより単純な Issue はより短いフォーマットを使用するかもしれませんが、計画は (最低限) 常に見積もりの背後にある「なぜ」を正当化するべきです。
+`workflow::planning breakdown` の DRI として、自分の担当工程の完了と、Issue をスケジューリングへ移す準備が整ったことを示すために、以下の例に従うことを検討してください。すでに分解されたより単純な Issue はより短いフォーマットを使用するかもしれませんが、計画は (最低限) 常に見積もりの背後にある「なぜ」を正当化するべきです。
 
-以下は [https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan](https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan) からの実装アプローチの例です。Issue が作業の各部分のために、より小さなサブ Issue に分解されるべきであることを示しています:
+以下は [https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan](https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan)からの実装アプローチの例です。Issue が作業の各部分のために、より小さなサブ Issue に分解されるべきであることを示しています:
 
 ```md
 ### Implementation approach
@@ -229,7 +229,7 @@ DRI は、Issue が複数の分野 (例えばバックエンドとフロント�
 
 Issue が見積もられたら、`workflow::scheduling` に移動してマイルストーンを割り当て、最後に `workflow::ready for development` になります。
 
-#### プランニング
+#### プランニング {#planning}
 
 エンジニアは自分の作業の DRI です。EM や PM が主導するトップダウンのマイルストーンのケイデンスではなく、エンジニアは Issue の作成、見積もり、自分自身への作業の割り当てというプロセスを自己管理することで、チームのロードマップを実現するために自律的に作業することが期待されます。
 
@@ -239,19 +239,19 @@ Issue が見積もられたら、`workflow::scheduling` に移動してマイル
 - **オーナーシップマインドセット** — エンジニアはタスクだけでなく成果を所有する。
 - **顧客の成果** — すべての作業は顧客のメリットに繋がるべきである。
 
-エンジニアは可能な限り多くの実装作業を AI エージェントに委任し、すべてのタスクを手動で実行するのではなく、デリバリーをオーケストレーションする [Level 3 エンジニア](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/) にできる限り近い形で行動することが期待されます。
+エンジニアは可能な限り多くの実装作業を AI エージェントに委任し、すべてのタスクを手動で実行するのではなく、デリバリーをオーケストレーションする [Level 3 エンジニア](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/)にできる限り近い形で行動することが期待されます。
 
 マイルストーンは、GitLab の特定のバージョンで何が利用可能かをお客様に伝えること、複雑な複数バージョンの機能をスケジュールすること、特定の四半期にチームが達成できる内容を見積もるのに役立てるために使用されます。マイルストーンがデリバリーのペースを決定したり、エンジニアの速度を低下させたりするべきではありません。
 
-##### Deliverable と Stretch の Issue
+##### Deliverable と Stretch の Issue {#deliverable-and-stretch-issues}
 
 `Deliverable` とラベル付けされた Issue は、現在のマイルストーンにスケジュールされています。これらは最優先と見なされ、リリースに間に合うように完了することが期待されます。
 
 `Stretch` とラベル付けされた Issue は、現在のマイルストーンで提供するためのストレッチ目標です。これらの Issue が現在のリリースで完了しなかった場合、次のリリースで強く検討されます。
 
-##### コミュニティコントリビューション
+##### コミュニティコントリビューション {#community-contributions}
 
-以前に同意され、`Community contribution` としてラベル付けされた Issue は、以下を確認するために [トリアージ](/handbook/product-development/how-we-work/issue-triage/) されるべきです:
+以前に同意され、`Community contribution` としてラベル付けされた Issue は、以下を確認するために [トリアージ](/handbook/product-development/how-we-work/issue-triage/)されるべきです:
 
 - 明確な [実装プラン](/handbook/engineering/devops/create/remote-development/community-contributions/#treat-wider-community-as-primary-audience)。
 - 関連する weight 見積もり。
@@ -263,7 +263,7 @@ Issue がより早く処理される必要がある明確な必要性がある�
 
 コミュニティメンバーが Issue を取り上げることに関心を示した場合、関連する Optimize チームメンバーは、Issue の説明と実装プランが正確で、最新の決定を反映し、すべてのラベルが最新であることを確認し、貢献者が追加の支援を必要とする場合や続けられない場合に備えて進捗を監視するべきです。
 
-##### セルフアサインメント
+##### セルフアサインメント {#self-assignment}
 
 セルフアサインメントが既定かつ主要な作業モードです。エンジニアはチームのロードマップに沿った作業を主体的に特定し、自分自身に割り当てます。EM や PM に作業を割り当ててもらうという依存関係はありません。
 
@@ -273,7 +273,7 @@ Issue がより早く処理される必要がある明確な必要性がある�
 - エンジニアは、開発を開始する前に、自分が取り組む Issue が十分に定義され、見積もられ、正しくラベル付けされていることを確認する責任があります。
 - EM は週次チームコール中にアサインされていない Issue をハイライトして、何も漏れないようにします。
 
-#### リリース中
+#### リリース中 {#during-a-release}
 
 エンジニアは、リリースを通じて **週次のケイデンス** で進捗を積極的かつ透明に伝えることが期待されます。各週次更新では以下をカバーするべきです:
 
@@ -282,9 +282,9 @@ Issue がより早く処理される必要がある明確な必要性がある�
 - **今後** — 来週に計画されていること。
 - **課題 / ブロッカー** — 進捗を遅らせたりブロックしたりする障害。
 
-このコミュニケーションのフォーマットはプロジェクトや機能ごとに異なる可能性がありますが、これらの更新の標準的な場所は、取り組んでいるプロジェクトや機能に関連する **高レベル Epic** です。これにより、ステークホルダーはステータス更新を追いかける必要なく、進捗を追える単一の場所を持つことができます。
+このコミュニケーションのフォーマットはプロジェクトや機能ごとに異なる可能性がありますが、これらの更新の標準的な場所は、取り組んでいるプロジェクトや機能に関連する **上位のエピック** です。これにより、ステークホルダーはステータス更新を追いかける必要なく、進捗を追える単一の場所を持つことができます。
 
-#### リリース投稿
+#### リリース投稿 {#release-posts}
 
 詳細にアナウンスする必要がある Issue については、Issue を使ってリリース投稿を自動的に作成できます。
 Issue を作業しているときに、プランニング、デザイン、開発中のいずれかで、
@@ -293,63 +293,63 @@ Issue を作業しているときに、プランニング、デザイン、開�
 
 Issue にリリース投稿を持たせたくない場合は、Issue にリリースノートのセクションがないことを確認するか、`release post item::` ラベルを使用してください。
 
-#### Proof-of-concept MR
+#### 概念実証 MR {#proof-of-concept-mrs}
 
-私たちは [イテレーション](/handbook/values/#iteration) と小さなピースで価値を提供することを強く信じています。イテレーションは、特にプロダクトのコンテキストが不足している場合や、特にリスクの高い/複雑なコードベースの部分で作業している場合は困難な場合があります。Issue を見積もることや、それが実現可能かどうかを判断するのに苦労している場合は、最初に proof-of-concept MR を作成するのが適切かもしれません。proof-of-concept MR の目標は、計画中の主要な仮定を取り除き、早期のフィードバックを提供することで、将来の実装からのリスクを減らすことです。
+私たちはイテレーションと小さなピースで価値を提供することを強く信じています。イテレーションは、特にプロダクトのコンテキストが不足している場合や、特にリスクの高い/複雑なコードベースの部分で作業している場合は困難な場合があります。Issue を見積もることや、それが実現可能かどうかを判断するのに苦労している場合は、最初に概念実証 MR を作成するのが適切かもしれません。概念実証 MR の目標は、計画中の主要な仮定を取り除き、早期のフィードバックを提供することで、将来の実装からのリスクを減らすことです。
 
 - `PoC:` がプレフィックスされた MR を作成する。
 - PoC MR が解決しようとしている問題を MR の説明で説明する。
-- タイムボックスする。2-3 日以内に実現可能性または計画を決定できるか?
+- タイムボックスする。2 〜 3 日以内に実現可能性または計画を決定できるか?
 - この期間の終わりにフィードバックを提供するレビュアーを特定する。
 - MR をクローズする。PoC から学んだ要約を元の Issue で提供し、プロダクトとパフォーマンスの影響を含める。
   - 実装に進むことができるかどうかを述べる。
   - Issue はクローズしないでください。
 
-proof-of-concept MR の必要性は、私たちのコードベースまたはプロダクトの一部が過度に複雑になっていることを示している可能性があります。将来このステップを避ける方法を議論できるよう、レトロスペクティブの一部として MR を議論することは常に価値があります。
+概念実証 MR の必要性は、私たちのコードベースまたはプロダクトの一部が過度に複雑になっていることを示している可能性があります。将来このステップを避ける方法を議論できるよう、レトロスペクティブの一部として MR を議論することは常に価値があります。
 
-#### Issue トリアージ
+#### Issue トリアージ {#issue-triage}
 
-私たちは一般的に [Issue トリアージ](/handbook/product-development/how-we-work/issue-triage) ガイドラインに従います。
+私たちは一般的に [Issue トリアージ](/handbook/product-development/how-we-work/issue-triage)ガイドラインに従います。
 
 役割別の期待:
 
 - PM が `type::feature` の DRI
 - EM が `type::bug` の DRI
 - UX は `UX`、`Deferred UX`、`SUS` の Issue に対する severity ラベルの決定をサポート
-  - UX の severity と PM/EM の severity が異なる場合、私たちは [2 つのうち高い方の severity](/handbook/product-development/how-we-work/issue-triage/#examples-of-severity-levels) を取ります。
+  - UX の severity と PM/EM の severity が異なる場合、私たちは [2 つのうち高い方の severity](/handbook/product-development/how-we-work/issue-triage/#examples-of-severity-levels)を取ります。
 - エンジニアは参加を奨励される
 
-週次ベースで、できるだけ多くの Issue をトリアージすることを目指します。トリアージが必要な Issue に対して [完全なトリアージ](/handbook/product-development/how-we-work/issue-triage/#complete-triage) を実行することを努めます。
+週次ベースで、できるだけ多くの Issue をトリアージすることを目指します。トリアージが必要な Issue に対して [完全なトリアージ](/handbook/product-development/how-we-work/issue-triage/#complete-triage)を実行することを努めます。
 
-### スケジュール外の Issue で作業する
+### スケジュール外の Issue で作業する {#working-on-unscheduled-issues}
 
 GitLab の誰もが、結果を測定し、時間を測定しないため、自分の作業を適切と思う方法で管理する自由があります。
 この一部は、定期的な月次リリースの一部としてスケジュールされていない項目で作業する
 機会です。これは主にハンドブックの他の場所にある項目の繰り返しであり、
 それらを明示的にするためにここにあります:
 
-1. 私たちは人々が [自分自身のマネージャー](/handbook/values/#managers-of-one) であることを期待し、私たちは [GitLab を自分自身で使用](/handbook/values/#dogfooding) します。重要だと考えるものを見つけたら、それをスケジュールするように要求できる、または
-   _他の優先事項を考慮しながら_、[提案を自分で作業](/handbook/values/#dont-wait) することができます。
+1. 私たちは人々が Manager of One であることを期待し、私たちは GitLab を自分自身で使用します。重要だと考えるものを見つけたら、それをスケジュールするように要求できる、または
+   _他の優先事項を考慮しながら_、提案に自分で取り組むことができます。
 1. 時々、GitLab チームメンバーが参加できる
-   [issue bash](https://about.gitlab.com/community/issue-bash/) のようなイベントがあります。誰もが
+   [issue bash](https://about.gitlab.com/community/issue-bash/)のようなイベントがあります。誰もが
    これらに参加することが歓迎されます。
 
 作業するものを選ぶときは、以下を行ってください:
 
 1. 標準のワークフローに従い、自分自身にアサインする。
-1. [透明性](/handbook/values/#transparency) を奨励するために `#g_analytics_optimize` で共有する
+1. 透明性を奨励するために `#g_analytics_optimize` で共有する
 
-### 追加の考慮事項
+### 追加の考慮事項 {#additional-considerations}
 
-#### キャパシティプランニング
+#### キャパシティプランニング {#capacity-planning}
 
-プランニング中、私たちはチームのキャパシティの 100% を各マイルストーンの deliverable な作業に投入する計画ではありません。代わりに、調査とスコープの作業のためにより多くの時間を確保するために、チームメンバーあたり 15% のバッファを予約します。
+プランニング中、私たちはチームのキャパシティの 100% を各マイルストーンの提供予定の作業に投入する計画ではありません。代わりに、調査とスコープの作業のためにより多くの時間を確保するために、チームメンバーあたり 15% のバッファを予約します。
 
-#### ドキュメント
+#### ドキュメント {#documentation}
 
-ドキュメントは、私たちの [definition of done](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done) の重要な部分です。技術ライティングが必要な変更については、documentation ラベルを追加します。documentation ラベルは backend/frontend ラベルに加えて使用されるべきです。機能が別々のバックエンドとフロントエンドの Issue を正当化する場合、documentation ラベルは該当する場合に各 Issue に適用されるべきです。Issue は、すべての作業がマージされた場合、つまり技術的な部分とドキュメントの変更があった場合にのみ解決される可能性があります。
+ドキュメントは、私たちの [完了の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)の重要な部分です。技術ライティングが必要な変更については、documentation ラベルを追加します。documentation ラベルは backend/frontend ラベルに加えて使用されるべきです。機能が別々のバックエンドとフロントエンドの Issue を正当化する場合、documentation ラベルは該当する場合に各 Issue に適用されるべきです。Issue は、技術的な部分とドキュメントの変更を含むすべての作業がマージされた場合にのみ解決できます。
 
-#### データシーディングスクリプト
+#### データシーディングスクリプト {#data-seeding-scripts}
 
 Optimize スコープ内の機能は、機能性を検証し、開発中にテストするための適切なデータが必要です。データシーディングスクリプトは、私たちの開発プロセスの一部として作成および/または更新されるべきです。
 
@@ -358,36 +358,36 @@ Optimize スコープ内の機能は、機能性を検証し、開発中にテ�
 - 該当する場合、グループまたはプロジェクト ID の指定を可能にするスクリプトをパラメータ化するようにする
 - スクリプトが失敗なく繰り返し実行できることを確認する
 
-#### フィーチャーフラグ
+#### フィーチャーフラグ {#feature-flags}
 
-私たちはお客様にエンタープライズレベルのユーザー体験を提供するために、[必要に応じてフィーチャーフラグを使用](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/) します。不要なフィーチャーフラグは避け、導入するときはその目的が明確であることを確認し、ロールアウトの依存関係とタイムラインが最新の状態に保たれるようにします。可能な限り長期間生きているフィーチャーフラグを最小化するよう努め、変更を伝えます。
+私たちはお客様にエンタープライズレベルのユーザー体験を提供するために、[必要に応じてフィーチャーフラグを使用](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/)します。不要なフィーチャーフラグは避け、導入するときはその目的が明確であることを確認し、ロールアウトの依存関係とタイムラインが最新の状態に保たれるようにします。可能な限り長期間生きているフィーチャーフラグを最小化するよう努め、変更を伝えます。
 
 私たちが所有するフィーチャーフラグに関連する役割と責任は次のとおりです:
 
-- [DRI](/handbook/people-group/directly-responsible-individuals/) のアサイン
+- [DRI](/handbook/people-group/directly-responsible-individuals/)のアサイン
   - フィーチャーフラグを導入する作者がフィーチャーフラグロールアウトの DRI です。
 - 監査とクリーンアップ
   - EM はステージ内で所有されているフィーチャーフラグの監査の DRI であり、フィーチャーフラグの DRI と共同でクリーンアップをスケジュールします。
 - プロセス改善
   - プロセス改善に向けて貢献することは誰もが奨励されています。
 
-## ミーティング
+## ミーティング {#meetings}
 
-私たちは非同期コミュニケーションを優先しますが、同期ミーティングは必要であり、[コミュニケーションガイドライン](/handbook/communication/#video-calls) に従うべきです。Optimize で行われるいくつかの定期的なミーティングは:
+私たちは非同期コミュニケーションを優先しますが、同期ミーティングは必要であり、[コミュニケーションガイドライン](/handbook/communication/#video-calls)に従うべきです。Optimize で行われるいくつかの定期的なミーティングは:
 
 | 頻度 | ミーティング                              | DRI         | 可能なトピック                                                                                        |
 |-----------|--------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
-| 週次    | グループレベルミーティング                  | エンジニアリングマネージャー | ボードを歩いて現在のリリースが順調に進んでいることを確認、特定の Issue のブロックを解除                       |
+| 週次    | グループレベルミーティング                  | Engineering Managers | ボードを歩いて現在のリリースが順調に進んでいることを確認、特定の Issue のブロックを解除                       |
 
-トピック特化型の一度限りのミーティングについては、これらのコールを録画し共有することを常に検討してください (または [一般公開された文書](https://docs.google.com/document/d/1kE8udlwjAiMjZW4p1yARUPNmBgHYReK4Ks5xOJW6Tdw/edit) でメモを取る)。
+トピック特化型の一度限りのミーティングについては、これらのコールを録画し共有することを常に検討してください (または [一般公開された文書](https://docs.google.com/document/d/1kE8udlwjAiMjZW4p1yARUPNmBgHYReK4Ks5xOJW6Tdw/edit)でメモを取る)。
 
-アジェンダ文書と録画は、信頼できる単一の情報源として [共有 Google ドライブ](https://drive.google.com/drive/u/0/folders/0ALpc3GhrDkKwUk9PVA) (内部のみ) に配置できます。
+アジェンダ文書と録画は、信頼できる単一の情報源として [共有 Google ドライブ](https://drive.google.com/drive/u/0/folders/0ALpc3GhrDkKwUk9PVA) (内部のみ)に配置できます。
 
-1:1 ではないミーティングや機密のトピックをカバーするミーティングは、Analytics Shared カレンダーに追加されるべきです。
+1:1 でも機密のトピックを扱うものでもないミーティングは、Analytics Shared カレンダーに追加するべきです。
 
 すべてのミーティングは、少なくとも 12 時間前にアジェンダが準備されているべきです。そうでない場合、ミーティングに出席する義務はありません。ミーティングの開始時刻までにアジェンダがない場合、キャンセルされたとみなしてください。
 
-## グループメンバー
+## グループメンバー {#group-members}
 
 以下のメンバーはグループの常任メンバーです:
 
@@ -399,5 +399,5 @@ Optimize スコープ内の機能は、機能性を検証し、開発中にテ�
 - 私たちの Slack チャンネル
   - Analytics:Optimize [#g_analytics_optimize](https://gitlab.slack.com/messages/CJZR6KPB4)
 - Issue ボード
-  - Optimize [build board](https://gitlab.com/groups/gitlab-org/-/boards/1401511) と [refinement board](https://gitlab.com/groups/gitlab-org/-/boards/1874426)ֿ
-- Optimize グループの計画とビジョンに関する詳細については、[Groups ページ](/handbook/product/categories/) を参照してください
+  - Optimize [開発ボード](https://gitlab.com/groups/gitlab-org/-/boards/1401511)と [リファインメントボード](https://gitlab.com/groups/gitlab-org/-/boards/1874426)ֿ
+- Optimize グループの計画とビジョンに関する詳細については、[グループのページ](/handbook/product/categories/)を参照してください

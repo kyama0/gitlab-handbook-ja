@@ -2,11 +2,11 @@
 title: "GitLab ソングブック"
 description: "GitLab Songbook には、GitLab のチームメンバーが既存の楽曲をアレンジして作詞した歌が収録されています。"
 upstream_path: /handbook/company/culture/songbook/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-15T03:30:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T14:16:22+00:00"
 translator: claude
 stale: false
-lastmod: "2025-02-10T07:09:07+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 GitLab ソングブックには、GitLab のチームメンバーが既存の楽曲をアレンジして作詞した歌が収録されています。GitLab の歌の多くは私たちの [バリュー](/handbook/values/) を参照しており、その浸透を後押しします。

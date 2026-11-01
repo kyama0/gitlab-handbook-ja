@@ -2,37 +2,37 @@
 title: Import グループ
 description: Import グループはマイグレーションを支援します。
 upstream_path: /handbook/engineering/devops/create/import/
-upstream_sha: ddd8c35a844608b54fcc88bfd8bbe61807f4c820
-translated_at: "2026-09-22T21:08:10+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T14:57:35.491656+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-22T08:57:10+01:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#about}
 
 Import グループは [Create ステージ](/handbook/engineering/devops/create/)の一部です。
 このグループは、GitLab インスタンス間および他のプロバイダーからのマイグレーションを行うことで製品をサポートしています。
 
 このページでは Import グループ固有のプロセスと情報をカバーします。[グループの方向性ページ](https://about.gitlab.com/direction/create/import/)および[カテゴリーごとにサポートする機能](/handbook/product/categories/#import-group)も参照してください。
 
-## 連絡方法
+## 連絡方法 {#how-to-reach-us}
 
 Import グループに連絡を取るには、[GitLab プロジェクト](https://gitlab.com/gitlab-org/gitlab)で
 Issue を作成し、`~"group::import"` ラベルとその他の[適切なラベル](#issue-labels)を付けるのがおすすめです。その後、
-関連するプロダクトマネージャーやエンジニアリングマネージャーに気軽にメンションしてください。
+関連する Product Manager や Engineering Manager に気軽にメンションしてください。
 
 より緊急性の高い案件については、Slack チャンネル（社内）[`#g_import`](https://gitlab.slack.com/archives/g_import)を利用してください。
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 以下の人々はこのグループの常任メンバーです。
 
 {{< engineering/stable-counterparts role="Dedicated:Import" >}}
 
-## 作業
+## 作業 {#work}
 
-各マイルストーンの 1 週間前に、エンジニアリングマネージャーがチームの優先事項をまとめた
+各マイルストーンの 1 週間前に、Engineering Manager がチームの優先事項をまとめた
 [計画 Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items?sort=closed_at_desc&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Aimport&first_page_size=100)
 を作成します。チームメンバーは通知を受け、マイルストーンに対する自分のコミットメントで
 Issue を更新していきます。
@@ -65,7 +65,7 @@ Import グループの作業は、以下の場所で追跡できます。
 
 インポーターに関連する Issue には、`Importer:` ラベルも付けてください。例: `~"Importer:GitHub"` または `~"Importer:Direct Transfer"`。
 
-### バックログのリファインメント
+### バックログのリファインメント {#backlog-refinement}
 
 エンジニアは通常、自分が取り組む予定の Issue をリファインメントします。ただし、特にコミュニティコントリビューターが
 取り組む可能性がある場合は、誰でも Issue をリファインメントして開発の準備を整えることができます。
@@ -74,12 +74,12 @@ Issue がエピックの一部である場合、DRI がそれをリファイン�
 アサインされたエンジニアにリファインメントを委任できます。誰がリファインメントを行うかにかかわらず、
 マイルストーンが始まる前にリファインメントを完了することを目指してください。
 
-遅くとも、エンジニアリングマネージャーが次のマイルストーンの計画 Issue を共有する時点
+遅くとも、Engineering Manager が次のマイルストーンの計画 Issue を共有する時点
 （現在のマイルストーン終了の 1 週間前に行われます）でリファインメントを開始すべきです。
 
 #### リファインメント対象 Issue の特定 {#identifying-issues-for-refinement}
 
-エンジニアリングマネージャーが Issue をスケジュールし、それらがマイルストーン計画 Issue に含まれます。
+Engineering Manager が Issue をスケジュールし、それらがマイルストーン計画 Issue に含まれます。
 
 マイルストーンにおける各エンジニアの割り当てに基づき、`Ready for Development` ステータスでない Issue を特定します。
 これらは通常 `Refinement` または `Planning breakdown` ステータスですが、任意の
@@ -116,11 +116,11 @@ Import グループでは、Issue がそれらのガイドラインに加え、�
 [バグテンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Bug.md?ref_type=heads)
 にはこれらのフィールドが含まれています。
 
-### ヘルプの依頼
+### ヘルプの依頼 {#requesting-help}
 
-サポート組織の一員でない場合は、まずサポートチームに連絡することをおすすめします。彼らはより多くの空き時間があり、一般的なほとんどの問題に対応できるためです。参加してフォローし、質問できる専用の Slack チャンネル [#spt_pod_import](https://gitlab.enterprise.slack.com/archives/C052K0Z1F8T) があります。ただし、顧客の問題を解決するために深い技術的知識が必要となり、チームのエンジニアの関与が必要になる場合もあります。
+Support 組織の一員でない場合は、まず Support チームに連絡することをおすすめします。彼らはより多くの空き時間があり、一般的なほとんどの問題に対応できるためです。参加してフォローし、質問できる専用の Slack チャンネル [#spt_pod_import](https://gitlab.enterprise.slack.com/archives/C052K0Z1F8T)があります。ただし、顧客の問題を解決するために深い技術的知識が必要となり、チームのエンジニアの関与が必要になる場合もあります。
 
-エンジニアリングチームにヘルプを依頼する前に、まず関心のあるトピックについて [GitLab ドキュメント](https://docs.gitlab.com/)と以下に挙げる追加リソースを確認してください。
+Engineering チームにヘルプを依頼する前に、まず関心のあるトピックについて [GitLab ドキュメント](https://docs.gitlab.com/)と以下に挙げる追加リソースを確認してください。
 
 - [インポーターランブック](https://gitlab.com/gitlab-org/foundations/import-and-integrate/team/-/blob/main/importers/runbook.md?ref_type=heads)
 - [GitLab ログ分析ツール](https://gitlab.com/gitlab-org/foundations/import-and-integrate/gitlab-logs-analysis)
@@ -128,9 +128,9 @@ Import グループでは、Issue がそれらのガイドラインに加え、�
 
 上記のリソースで質問の答えが見つからない場合は、[ヘルプ依頼（RFH）Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Import)を作成し、`SupportRequestTemplate-Import` テンプレートを使用してください。チームに連絡する前に、必要な情報をすべて提供してください。そうでない場合、私たちはあなたの依頼を進めることができません。新しい Issue は、社内のトリアージプロセスに従って優先順位付けされます。私たちは、現在のバージョンおよび直近の 2 つのマイナー GitLab バージョン（N-2）に影響する Issue の依頼のみをサポートできることにご注意ください。それより古いバージョンの修正は提供できません。これは[バックポートのメンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html#patch-releases)に沿ったものです。
 
-### マイルストーンドクター
+### Milestone Doctor {#milestone-doctors}
 
-各マイルストーンで、チームの 2 名のバックエンドエンジニアにマイルストーンドクターの役割が割り当てられ、1 名はプライマリ、もう 1 名はセカンダリとなります。割り当ては[マイルストーンドクターのローテーションスケジュール](https://gitlab.com/groups/gitlab-org/-/work_items/21520#milestone-doctor---rotation-schedule)にあります。エンジニアは今後のシフトを自由に交換し、スケジュールを更新できます。
+各マイルストーンで、チームの 2 名のバックエンドエンジニアに Milestone Doctor の役割が割り当てられ、1 名はプライマリ、もう 1 名はセカンダリとなります。割り当ては[Milestone Doctor のローテーションスケジュール](https://gitlab.com/groups/gitlab-org/-/work_items/21520#milestone-doctor---rotation-schedule)にあります。エンジニアは今後のシフトを自由に交換し、スケジュールを更新できます。
 
 セカンダリドクターは、プライマリが OOO またはキャパシティを超えている場合に、同じ責任を引き受けて代行します。それ以外の場合は、マイルストーンで計画されたタスクに取り組みます。プライマリドクターは、OOO になるときやキャパシティの問題に直面しているときにセカンダリに知らせるべきです。
 
@@ -138,24 +138,24 @@ Import グループでは、Issue がそれらのガイドラインに加え、�
 
 現在のドクターは `@gitlab-com/create-team/import/reaction-rotation` でタグ付けできます。
 
-#### 責任
+#### 責任 {#responsibilities}
 
-- 新しい [RFH Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Help%20group%3A%3Aimport&first_page_size=100)についてサポートおよび PS と連携する
+- 新しい [RFH Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Help%20group%3A%3Aimport&first_page_size=100)について Support および PS と連携する
 - 長期間オープンな Issue をフォローアップする
-- 顧客との通話でサポートチームを支援する
-- マイルストーンドクターが問題を診断することに成功した方法に関するチームランブックのドキュメントを維持する
-- チームの Slack チャンネル [`#g_import`](https://gitlab.enterprise.slack.com/archives/C04RDL3MEH5) での質問に対応する
-- シフトから学んだことで [FAQ](https://gitlab.com/gitlab-org/foundations/import-and-integrate/team/-/blob/main/importers/faq.md?ref_type=heads) を更新する
+- 顧客との通話で Support チームを支援する
+- Milestone Doctor が問題を診断することに成功した方法に関するチームランブックのドキュメントを維持する
+- チームの Slack チャンネル [`#g_import`](https://gitlab.enterprise.slack.com/archives/C04RDL3MEH5)での質問に対応する
+- シフトから学んだことで [FAQ](https://gitlab.com/gitlab-org/foundations/import-and-integrate/team/-/blob/main/importers/faq.md?ref_type=heads)を更新する
 - [インポーターの依存関係](#importer-dependencies)をレビューし、サードパーティ API の変更による
   必要な変更のための Issue を作成する
-- エラーがないか [`#import_exceptions`](https://gitlab.enterprise.slack.com/archives/C061EPC0RST) と [Direct Transfer Kibana Dashboard](https://log.gprd.gitlab.net/app/dashboards#/view/f2640580-a8bd-11ed-85ed-e7557b0a598c) を監視し、必要に応じてトリアージ、エスカレーション、フォローアップ Issue の作成を行う
+- エラーがないか [`#import_exceptions`](https://gitlab.enterprise.slack.com/archives/C061EPC0RST)と [Direct Transfer Kibana Dashboard](https://log.gprd.gitlab.net/app/dashboards#/view/f2640580-a8bd-11ed-85ed-e7557b0a598c)を監視し、必要に応じてトリアージ、エスカレーション、フォローアップ Issue の作成を行う
 - マイルストーンごとに 1 回、[エラーバジェット](#error-budgets)をレビューし、リグレッションを調査して、見つかった問題についてフォローアップ Issue を作成する
 - マイルストーンの終わりに [`@gitlab-com/create-team/import/reaction-rotation` のメンバーシップ](https://gitlab.com/groups/gitlab-com/create-team/import/reaction-rotation/-/group_members?with_inherited_permissions=exclude)を更新する
 
 ##### インポーターの依存関係 {#importer-dependencies}
 
 マイルストーンごとに 1 回、各インポーターの依存関係の変更履歴をレビューし、今後の破壊的変更や
-API の非推奨化を確認します。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) を使用して
+API の非推奨化を確認します。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/)を使用して
 影響を評価し、更新が必要な変更については関連する `~"Importer:"` ラベルを付けた Issue を作成します。
 
 レビュー後、計画 Issue にサマリーと作成した Issue へのリンクを含むコメントを残します。
@@ -209,7 +209,7 @@ If no actionable changes are found, confirm that and note the date range you che
 
 </details>
 
-### セキュリティとの連携
+### Security との連携 {#working-with-security}
 
 このグループには、セキュリティに影響を及ぼす可能性のある Issue を特定するのに役立つ既存の[脅威モデル](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/threat-models/-/blob/master/gitlab-org/gitlab/GitLab%20Migration.md)がありますが、他にも考慮すべき点があります。
 
@@ -220,7 +220,7 @@ Issue や MR がセキュリティに影響を及ぼす可能性がある場合�
 - ファイル操作サービスを変更または使用するもの
 - Import/Export の `CommandLineUtil` のメソッドを使用するもの
 
-### 長期間存続するフィーチャーフラグ
+### 長期間存続するフィーチャーフラグ {#longer-lived-feature-flags}
 
 これは、フィーチャーフラグの使用に関する GitLab の一般的な[開発ガイダンス](https://docs.gitlab.com/ee/development/feature_flags/)の補足です。[`ops` タイプ](https://docs.gitlab.com/ee/development/feature_flags/#ops-type)を除くすべてのフラグタイプに適用されます。
 
@@ -253,18 +253,18 @@ Import 機能の変更は、しばしばトラフィックの多いコードパ�
    のステップです。
 1. この時点で、機能はマイルストーン内でリリースされたとみなされ、Self-Managed 顧客に出荷されるため、リリースポストで
    発表できます。
-1. フラグがコードベースに存在しつつデフォルトで有効なままの状態を **1〜3 週間待ちます**。
+1. フラグがコードベースに存在しつつデフォルトで有効なままの状態を **1 〜 3 週間待ちます**。
    競合がより多い領域での変更や、何らかの理由で問題の検出に時間がかかると感じる場合は、より長い期間を
    使用してください。
 1. その期間の後、フィーチャーフラグを削除してフラグロールアウトプロセスを完了します。
 
-### リリース中
+### リリース中 {#during-a-release}
 
 - Kickoff 後に Issue がリリースに導入される場合、計画外の作業を考慮するために同じ量の重みを取り除く必要があります。
 - Issue は見積もりが行われ、重みが付けられる前に開発を開始すべきではありません。
 - 15 日までに、エンジニアリングのマージリクエストはマージされているべきです。言い換えれば、15 日以降にマージされたコードはリリースに含まれないと想定します。これにより、リリースを最終化し、関連する[リリースポスト](https://docs.gitlab.com/development/documentation/release_notes/)を 17 日までにマージする時間が確保されます。（これは [13.11 から開始された実験](https://gitlab.com/gitlab-org/manage/general-discussion/-/issues/17330)です。）
 
-### リリースポスト
+### リリースポスト {#release-posts}
 
 より詳細に発表する必要がある Issue については、その Issue を使用してリリースポストを自動的に作成できます。
 Issue に取り組む際、計画段階でも、設計・開発中でも、
@@ -274,13 +274,13 @@ Issue に取り組む際、計画段階でも、設計・開発中でも、
 Issue にリリースポストを持たせたくない場合は、その Issue に
 リリースノートのセクションがないこと、または `release post item::` ラベルを使用しないことを確認してください。
 
-### 概念実証 MR
+### 概念実証 MR {#proof-of-concept-mrs}
 
-私たちは[イテレーション](/handbook/values/#iteration)と小さな増分で価値を届けることを強く信じています。イテレーションは難しいことがあり、特に製品コンテキストが不足している場合や、コードベースの特にリスクが高い／複雑な部分で作業している場合はそうです。Issue の見積もりや実現可能性の判断に苦労している場合、まず概念実証（PoC）MR を作成するのが適切かもしれません。概念実証 MR の目的は、計画中の大きな前提を取り除き、早期のフィードバックを提供することで、将来の実装のリスクを軽減することです。
+私たちはイテレーションと小さな増分で価値を届けることを強く信じています。イテレーションは難しいことがあり、特に製品コンテキストが不足している場合や、コードベースの特にリスクが高い／複雑な部分で作業している場合はそうです。Issue の見積もりや実現可能性の判断に苦労している場合、まず概念実証（PoC）MR を作成するのが適切かもしれません。概念実証 MR の目的は、計画中の大きな前提を取り除き、早期のフィードバックを提供することで、将来の実装のリスクを軽減することです。
 
 - `PoC:` を接頭辞に付けた MR を作成します。
 - PoC MR が解決しようとしている問題を MR の説明で説明します。
-- タイムボックスを設けます。2〜3 日未満で実現可能性や計画を判断できますか？
+- タイムボックスを設けます。2 〜 3 日未満で実現可能性や計画を判断できますか？
 - この期間の終わりにフィードバックを提供するレビュアーを特定します。
 - MR をクローズします。製品およびパフォーマンスへの影響を含め、PoC から学んだことを元の Issue にサマリーとして提供します。
   - 実装に進めるかどうかを述べます。
@@ -288,11 +288,11 @@ Issue にリリースポストを持たせたくない場合は、その Issue �
 
 概念実証 MR の必要性は、私たちのコードベースや製品の一部が過度に複雑になっていることを示唆している可能性があります。将来このステップを回避する方法を議論できるよう、レトロスペクティブの一環として MR について議論する価値が常にあります。
 
-### レトロスペクティブ
+### レトロスペクティブ {#retrospectives}
 
 定期的にスケジュールされた「マイルストーンごと」のレトロスペクティブが 1 回あり、アドホックな「プロジェクトごと」のレトロスペクティブを行うこともできます。
 
-#### マイルストーンごと
+#### マイルストーンごと {#per-milestone}
 
 Import グループは [GitLab Issue でマイルストーンレトロスペクティブ](https://gitlab.com/gl-retrospectives/manage-stage/import/-/work_items)を実施しています。これには、エンジニア、UX、PM、および
 マイルストーン中にそのチームと協働したすべての安定したカウンターパートが含まれます。
@@ -301,7 +301,7 @@ Import グループは [GitLab Issue でマイルストーンレトロスペク�
 
 これらは最初の議論中は機密扱いとされ、その後、毎月の [GitLab レトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)に間に合うように公開されます。詳細については、[グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)を参照してください。
 
-#### プロジェクトごと
+#### プロジェクトごと {#per-project}
 
 特定の Issue、機能、またはその他の種類のプロジェクトが
 特に有用な学びの経験になった場合、それから学ぶために同期または
@@ -314,24 +314,24 @@ Import グループは [GitLab Issue でマイルストーンレトロスペク�
 
 レトロスペクティブからのすべてのフィードバックは、参照目的で最終的に Issue に集約されるべきです。
 
-### テックリード
+### Tech Lead {#tech-leads}
 
-私たちのグループは、さまざまなトピックに関する作業を整理し、それらの DRI を特定するのを助けるためにテックリードと協働しています。
+私たちのグループは、さまざまなトピックに関する作業を整理し、それらの DRI を特定するのを助けるために Tech Lead と協働しています。
 
-#### テックリードの特徴
+#### Tech Lead の特徴 {#characteristics-of-a-tech-lead}
 
-テックリードとは、
+Tech Lead とは、
 
-- 追加の責任を持つ個人コントリビューターです。シニアリティに関わらず、すべてのエンジニアがテックリードになる資格があります。
-- 特定のトピック／プロジェクトに紐づく一時的な役割です。異なるトピック／プロジェクトのために、チームが同時に複数のテックリードを持つことを許可しています。
+- 追加の責任を持つ個人コントリビューターです。シニアリティに関わらず、すべてのエンジニアが Tech Lead になる資格があります。
+- 特定のトピック／プロジェクトに紐づく一時的な役割です。異なるトピック／プロジェクトのために、チームが同時に複数の Tech Lead を持つことを許可しています。
 - マネージャーでは**ありません**。
 - 追加のシニアリティレベルでは**ありません**。
 
-テックリードの役割は、リーダーシップスキルの習得に関心のあるエンジニアに成長の機会を提供します。
+Tech Lead の役割は、リーダーシップスキルの習得に関心のあるエンジニアに成長の機会を提供します。
 
-#### テックリードの責任
+#### Tech Lead の責任 {#responsibilities-of-a-tech-lead}
 
-テックリードは多くの役割を担います。その責任はプロジェクトごとに異なる場合がありますが、以下を含むことがあります。
+Tech Lead は多くの役割を担います。その責任はプロジェクトごとに異なる場合がありますが、以下を含むことがあります。
 
 - 技術的ビジョンとアーキテクチャ - 特定のプロジェクトの全体的な技術アーキテクチャを定義し、進化させる
 - 技術的ガイダンス - チームの他の開発者に技術的ガイダンスとメンタリングを提供する
@@ -341,11 +341,11 @@ Import グループは [GitLab Issue でマイルストーンレトロスペク�
 - 調整 - 他者の作業を監督し、ブロッカーの除去を支援する
 - 技術ドキュメント - 他の開発者のために技術アーキテクチャとコード構造のドキュメントを維持する
 
-#### 現在のテックリード
+#### 現在の Tech Lead {#current-tech-leads}
 
-以下は、テックリードによって監督されているトピックの概要です。
+以下は、Tech Lead によって監督されているトピックの概要です。
 
-| トピック | テックリード | トピックリンク | 備考 |
+| トピック | Tech Lead | トピックリンク | 備考 |
 | ------ | ------ | ------ | ------ |
 | Direct Transfer - ユーザーコントリビューションマッピング | Rodrigo Tomonari | [エピック](https://gitlab.com/groups/gitlab-org/-/epics/12378) | - |
 | インポーターへの開発者コントリビューションの効率を改善する | James Nutt | [OKR](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6658) | - |
@@ -353,7 +353,7 @@ Import グループは [GitLab Issue でマイルストーンレトロスペク�
 | GitHub Actions | tbd | https://gitlab.com/gitlab-org/manage/general-discussion/-/issues/17652 | |
 |  | | |  |
 
-## マージリクエストのルーレットレビュー
+## マージリクエストのルーレットレビュー {#merge-request-roulette-reviews}
 
 Import コードベースの領域が変更されると、[レビュアールーレット](https://docs.gitlab.com/ee/development/code_review.html#reviewer-roulette)
 が、そのマージリクエストを Import チームメンバーがレビューすることを推奨します。これは、Import チーム外の人々によって
@@ -364,7 +364,7 @@ Import コードベースの領域が変更されると、[レビュアールー
 チーム外のメンバーによる変更をレビューすることで、基盤コードの所有者として行動し、
 Import コードベースのより良い品質を維持できます。
 
-### ルーレットマッチの仕組み
+### ルーレットマッチの仕組み {#how-roulette-matches-work}
 
 マージリクエスト内の変更のファイルパスは、
 [正規表現のリスト](https://gitlab.com/gitlab-org/gitlab/-/blob/240d4c37c955878c224718e47f4d527bea250299/tooling/danger/project_helper.rb#L42-62)
@@ -408,24 +408,24 @@ puts "Frontend:\n"
 print_files(:import_integrate_fe)
 ```
 
-## モニタリング
+## モニタリング {#monitoring}
 
 これは、私たちの機能を監視するためのリンク集です。
 
-### Grafana ダッシュボード
+### Grafana ダッシュボード {#grafana-dashboards}
 
 - [Import グループダッシュボード](https://dashboards.gitlab.net/d/stage-groups-import/stage-groups-import-group-dashboard?orgId=1)。以下を含みます。
   - 私たちの機能カテゴリーにフィルタリングされたさまざまな Kibana ログへのリンク
   - 私たちの[エラーバジェット](#error-budgets)消費の帰属
 - [ワーカーキュー](https://dashboards.gitlab.net/d/sidekiq-queue-detail/sidekiq-queue-detail?orgId=1&var-PROMETHEUS_DS=Global&var-environment=gprd&var-stage=main&var-queue=jira_connect:jira_connect_sync_branch)。`queue` ドロップダウンでキューを切り替えられます
 
-### Sentry エラー
+### Sentry エラー {#sentry-errors}
 
 - [「IntegrationsController」に一致](https://new-sentry.gitlab.net/organizations/gitlab/issues/?project=3&query=is%3Aunresolved+IntegrationsController&referrer=issue-list&statsPeriod=14d)
 - [「Integrations」に一致](https://new-sentry.gitlab.net/organizations/gitlab/issues/?project=3&query=is%3Aunresolved+Integrations&referrer=issue-list&statsPeriod=14d)
 - [「Jira」に一致](https://new-sentry.gitlab.net/organizations/gitlab/issues/?project=3&query=is%3Aunresolved+Jira&referrer=issue-list&statsPeriod=14d)
 
-### Kibana ダッシュボード
+### Kibana ダッシュボード {#kibana-dashboards}
 
 [すべての Import Kibana ダッシュボードのリスト](https://log.gprd.gitlab.net/app/dashboards#/list?s=tag:(group::import)&sort=title&sortdir=asc)を参照してください。
 
@@ -442,7 +442,7 @@ API/Webhook ダッシュボード:
 - [REST および GraphQL API](https://log.gprd.gitlab.net/app/dashboards#/view/ee792100-cfc7-11ec-afaf-2bca15dfbf33)
 - [Webhook](https://log.gprd.gitlab.net/app/dashboards#/view/deec2320-3914-11ed-b86b-d963a1a6788e)
 
-### Kibana ログ
+### Kibana ログ {#kibana-logs}
 
 GitLab for Jira Cloud アプリのワーカー:
 
@@ -462,7 +462,7 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 - エンドポイントまたはワーカーのエラー率
 - エンドポイントの Apdex（レイテンシー）
 
-#### 最も影響の大きい修正を特定する
+#### 最も影響の大きい修正を特定する {#determine-the-highest-impact-fixes}
 
 [Grafana ダッシュボード](https://dashboards.gitlab.net/d/stage-groups-import_and_integrate/stage-groups-import-and-integrate-group-dashboard?orgId=1)で最も優先度の高い問題を特定するには、
 
@@ -472,7 +472,7 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 
 上位の原因を修正することで、バジェット消費に最大の影響を与えられます。
 
-#### さらなるリソース
+#### さらなるリソース {#further-resources}
 
 これらのリソースでエラーバジェットについてさらに学べます。
 
@@ -481,7 +481,7 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 - [Grafana ダッシュボードのエラーバジェット](https://docs.gitlab.com/ee/development/stage_group_observability/index.html#error-budget)
 - [機能のカテゴリー化](https://docs.gitlab.com/ee/development/feature_categorization/): 私たちのコードは `feature_category: :integrations`、`feature_category: :importers`、`feature_category: :webhooks` によって私たちに帰属されます
 
-## 使用状況データダッシュボード
+## 使用状況データダッシュボード {#usage-data-dashboards}
 
 機能の使用状況データは Tableau で確認できます。
 

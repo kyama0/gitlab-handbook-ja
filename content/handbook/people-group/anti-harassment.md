@@ -2,20 +2,20 @@
 title: "ハラスメント禁止ポリシー"
 description: "GitLab では誰もがハラスメントを防止し止める責任を負っています。私たちのハラスメント禁止ポリシーについて詳しくご紹介します。"
 upstream_path: /handbook/people-group/anti-harassment/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:44:53+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T15:22:18+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-01T19:40:16+01:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 {{% panel header="**これは保護された文書です**" header-bg="orange" %}}
-記載されている[役割と責任](/handbook/people-group/anti-harassment/#roles--responsibilities)に従って、本ページへの変更は コードオーナー による承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
+記載されている[役割と責任](/handbook/people-group/anti-harassment/#roles--responsibilities)に従って、本ページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
 {{% /panel %}}
 
 ## はじめに {#introduction}
 
-GitLab では誰もがハラスメントを防止し止める責任を負っています。リモートで働くということは、私たちのインタラクションの大部分がビデオ通話、または電子メールや共有ドキュメントなどの文章でのコミュニケーションを通じて行われることを意味します。例外として、チームサミット、カンファレンスへの共同参加、ローカルチームミートアップがあります。コミュニケーションの方法を問わず、誰もが包摂的で協働的な作業環境に貢献し、常にお互いを尊重することが期待されます。チームメンバーの行動は、お互いとの内部的なインタラクションに限定されません。私たちのハラスメント禁止ポリシーは、GitLab チームメンバーと顧客、ベンダー、コミュニティメンバーとのインタラクションにも適用されます。本ポリシーまたは私たちの[企業価値](/handbook/values/)に違反するハラスメントや行為に気づいたり目撃したりした場合、徹底的な調査のため、直ちに Chief People Officer、[Team Member Relations](/handbook/people-group/team-member-relations)、または [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)に直接インシデントを報告してください。
+GitLab では誰もがハラスメントを防止し止める責任を負っています。リモートで働くということは、私たちのインタラクションの大部分がビデオ通話、または電子メールや共有ドキュメントなどの文章でのコミュニケーションを通じて行われることを意味します。例外として、チームサミット、カンファレンスへの共同参加、ローカルチームミートアップがあります。コミュニケーションの方法を問わず、誰もが包摂的で協働的な作業環境に貢献し、常にお互いを尊重することが期待されます。チームメンバーの行動は、お互いとの内部的なインタラクションに限定されません。私たちのハラスメント禁止ポリシーは、GitLab チームメンバーと顧客、ベンダー、コミュニティメンバーとのインタラクションにも適用されます。本ポリシーまたは私たちの企業価値に違反するハラスメントや行為に気づいたり目撃したりした場合、徹底的な調査のため、直ちに Chief People Officer、[Team Member Relations](/handbook/people-group/team-member-relations)、または [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)に直接インシデントを報告してください。
 
 ## 視点 {#perspective}
 
@@ -23,9 +23,9 @@ GitLab はグローバル組織であり、私たちのチームは世界中に�
 
 ## 適用範囲 {#scope}
 
-本ポリシーは、業務委託者か従業員かを問わず、すべての所在地における GitLab のすべてのチームメンバーに適用されます。すべての国（米国の場合は州）には現地の労働法があり、ハラスメントのインシデントを処理、報告、調査する際にはそれらに従う必要があります。各国の People Business Partner チームおよび必要に応じて法律顧問が、コンプライアンスを確保し、適切な法的プロセスと手順が守られるよう招集されます。従業員に関する特定の国別要件（雇用法の変更に応じて）は、[国別および米国州別の要件](#country--us-state-specific-requirements) セクションに記載されており、定期的に更新されます。すべての個人貢献者、マネージャー、リーダーは、ハラスメント行為に対して、雇用終了を含む懲戒処分の対象となります。
+本ポリシーは、業務委託者か従業員かを問わず、すべての所在地における GitLab のすべてのチームメンバーに適用されます。すべての国（米国の場合は州）には現地の労働法があり、ハラスメントのインシデントを処理、報告、調査する際にはそれらに従う必要があります。各国の People Business Partner チームおよび必要に応じて法律顧問が、コンプライアンスを確保し、適切な法的プロセスと手順が守られるよう招集されます。従業員に関する特定の国別要件（雇用法の変更に応じて）は、[国別および米国州別の要件](#country--us-state-specific-requirements)セクションに記載されており、定期的に更新されます。すべての個人貢献者、マネージャー、リーダーは、ハラスメント行為に対して、雇用終了を含む懲戒処分の対象となります。
 
-## 役割と責任 {#roles--responsibilities}
+## 役割と責任 {#roles-and-responsibilities}
 
 | 役割 | 責任 |
 |-----------|-----------|
@@ -65,7 +65,7 @@ GitLab はグローバル組織であり、私たちのチームは世界中に�
 
 疑わしい差別を直ちに報告し、違法な差別が発生したという誠実な信念を提起した人に対して決して報復しないでください。
 
-差別を受けた、または差別的な慣行を目撃したと考える場合は、Chief People Officer、[People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)、または [Team Member Relations Specialist](/handbook/people-group/team-member-relations/)に連絡して、行為に対する調査を開始してください。GitLab はまた、[違反の報告方法](/handbook/people-group/#how-to-report-violations) セクションに記載されているとおり、匿名の報告方法を提供するため Lighthouse Services と契約しています。
+差別を受けた、または差別的な慣行を目撃したと考える場合は、Chief People Officer、[People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)、または [Team Member Relations Specialist](/handbook/people-group/team-member-relations/)に連絡して、行為に対する調査を開始してください。GitLab はまた、[違反の報告方法](/handbook/people-group/#how-to-report-violations)セクションに記載されているとおり、匿名の報告方法を提供するため Lighthouse Services と契約しています。
 
 ### いじめ / 職場における暴力 {#bullying--workplace-violence}
 
@@ -138,7 +138,7 @@ Chief People Officer および People Business Partner は以下の責任を負�
 
 ## 懲戒処分の分類 {#classification-of-disciplinary-action}
 
-すべての個人チームメンバー、マネージャー、リーダーは、彼らが犯したハラスメント行為に対して、雇用終了を含む懲戒処分の対象となります。懲戒処分は各ケースに固有のものとなりますが、一般的に 4 つのレベルに分類されます:
+すべての個々のチームメンバー、マネージャー、リーダーは、自身が行ったハラスメント行為に対して、雇用終了を含む懲戒処分の対象となります。懲戒処分は各ケースに固有のものとなりますが、一般的に 4 つのレベルに分類されます:
 
 ### レベル 1 {#level-1}
 
@@ -173,7 +173,7 @@ Chief People Officer および People Business Partner は以下の責任を負�
 
 ## トレーニングとガイダンス {#training--guidance}
 
-差別とセクシャルハラスメントの理解、防止、対処に関するトレーニングとガイダンスは、マネージャーと個々のチームメンバーの両方に提供されます。コースと関連するエンロールロジックは[こちら](/handbook/legal/ethics-compliance-program/compliance-training)で確認できます。このトレーニングは、現地の要件に応じて定期的なペースで、および/または新しい法的要件が導入されたときに提供されます。
+差別とセクシャルハラスメントの理解、防止、対処に関するトレーニングとガイダンスは、マネージャーと個々のチームメンバーの両方に提供されます。コースと関連する受講登録の仕組みは[こちら](/handbook/legal/ethics-compliance-program/compliance-training)で確認できます。このトレーニングは、現地の要件に応じて定期的なペースで、および/または新しい法的要件が導入されたときに提供されます。
 
 ## 国別および米国州別の要件 {#country--us-state-specific-requirements}
 
@@ -244,7 +244,7 @@ GitLab は、非公式かつ内部的に解決できないハラスメントの�
 
 上記の禁止事項に加え、チームメンバーは、性的指向や性別認識に関連する発言や行動など、他のチームメンバーの作業環境を損なう、職場におけるその他の形態のハラスメントを一切禁止されています。
 
-### GitLab India Private Limited
+### GitLab India Private Limited {#gitlab-india-private-limited}
 
 セクシャルハラスメントの苦情の管理に関するプロセスと手順は、[GitLab India Private Limited のセクシャルハラスメント禁止ポリシー](/handbook/people-policies/india-ltd/india-sexual-harassment-policy/)に記載されています。
 
@@ -262,7 +262,7 @@ GitLab は、非公式かつ内部的に解決できないハラスメントの�
 1. 従業員が正式な調査の結果に不満がある場合、調査の特定の側面が結果に重大な影響を与えたと考える理由を示すことができれば、結果に対して上訴する権利があります。上訴は苦情の結果を受け取ってから 10 営業日以内に提出される必要があります。
 1. 上訴が提出された場合、People Business Partner は合理的な期間内に上訴議長とミーティングを行うよう手配します。上訴議長の決定は最終的なものであり、さらなる上訴の権利はありません。上訴議長は調査から独立しています。
 
-### GitLab Ireland Ltd
+### GitLab Ireland Ltd {#gitlab-ireland-ltd}
 
 **苦情手順と連絡先**
 
@@ -302,7 +302,7 @@ GitLab は、非公式かつ内部的に解決できないハラスメントの�
 
 ### GitLab Inc および GitLab Federal LLC {#gitlab-inc-and-gitlab-federal-llc}
 
-[EthicsPoint](https://secure.ethicspoint.com/domain/media/en/gui/74686/index.html)および [Lighthouse](/handbook/people-group/#how-to-report-violations)に加えて、[Team Member Relations](/handbook/people-group/team-member-relations) ハンドブックページもご確認ください。GitLab はまた、任意のチームメンバーが任意のタイプの職場ハラスメントのインスタンスを文書化するために使用できる [ハラスメント苦情申立書](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing)を提供しています。フォームをコピーし、情報を入力し、Team Member Relations Specialist の teammemberrelations@gitlab.com に送信してください。
+[EthicsPoint](https://secure.ethicspoint.com/domain/media/en/gui/74686/index.html)および [Lighthouse](/handbook/people-group/#how-to-report-violations)に加えて、[Team Member Relations](/handbook/people-group/team-member-relations)ハンドブックページもご確認ください。GitLab はまた、任意のチームメンバーが任意のタイプの職場ハラスメントのインスタンスを文書化するために使用できる [ハラスメント苦情申立書](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing)を提供しています。フォームをコピーし、情報を入力し、Team Member Relations Specialist の teammemberrelations@gitlab.com に送信してください。
 
 ### カリフォルニア州法の要件 {#california-law-requirements}
 
@@ -314,7 +314,7 @@ GitLab は、非公式かつ内部的に解決できないハラスメントの�
 
 ### コネチカット州法の要件 {#connecticut-law-requirements}
 
-コネチカット州に所在するすべてのチームメンバーは、2 時間の監督者向けハラスメント防止トレーニング を受講することが必要です。このトレーニングは、マネージャーだけでなく、すべての個人貢献者も完了する必要があります。
+コネチカット州に所在するすべてのチームメンバーは、2 時間の監督者向けハラスメント防止トレーニングを受講することが必要です。このトレーニングは、マネージャーだけでなく、すべての個人貢献者も完了する必要があります。
 
 ### メイン州法の要件 {#maine-law-requirements}
 

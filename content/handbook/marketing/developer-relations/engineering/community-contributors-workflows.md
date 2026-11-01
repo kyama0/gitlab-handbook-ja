@@ -2,14 +2,14 @@
 title: "コミュニティ貢献を扱うワークフロー"
 description: Co-Create & Community Engineering チームが扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-translated_at: "2026-10-10T21:10:21.636842+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T16:13:47+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-08T17:43:12-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## ワークフロー
+## ワークフロー {#workflows}
 
 ## 私たちの作業計画の立て方 {#how-we-plan-work}
 
@@ -22,7 +22,7 @@ Issue は次を満たす必要があります:
 
 私たちは `priority` ラベルを使って、四半期ごとの注力分野を指定します。
 
-### ワークフローラベル
+### ワークフローラベル {#workflow-labels}
 
 - `workflow::validation backlog`: Issue はまずバックログから始まり、チームが KPI、OKR、チーム戦略に対して労力と影響を検証できるようにします。
 - `workflow::refinement`: これらの Issue は、準備完了とマークされる前に、計画とチームでの議論を通じて検証・洗練されます。Issue は次のワークフローステージに移る前に、Implementation Plan セクションを持つべきです。
@@ -31,20 +31,20 @@ Issue は次を満たす必要があります:
 - `workflow::blocked`: 現在ブロックされている Issue。説明にはブロッカーを記載し、ブロックを解除する Issue へのリンクを含める必要があります。
 - `workflow::complete`: 実装後に解決された Issue。これらは、クローズする前にチームおよび Developer Relations 部門へのレポートで強調すべきです。
 
-### 優先度ラベル
+### 優先度ラベル {#priority-labels}
 
 - `priority::1`（最高優先度）: 今四半期の KPI と OKR に不可欠な Issue、またはコントリビューターの作業をブロックする緊急のバグ。
 - `priority::2`: 今四半期の目標に沿っているが、緊急の期限がない Issue。
 - `priority::3`: 今四半期の目標に影響しないが、長期的な目標を支える Issue。
 - `priority::4`（最低優先度）: 段階的な価値をもたらすが、追加のキャパシティを待てる Issue。
 
-### Issue の選び方
+### Issue の選び方 {#how-to-pick-issues}
 
 チームメンバーは、`workflow::ready for development` から、`priority` ラベルに基づいて Issue を選択すべきです。
 チームは今四半期の `priority::1` と `priority::2` の Issue に注力しますが、大きなプロジェクトの合間に優先度の低いタスクに取り組むのが理にかなう場合もあります。
-私たちはタスクを選ぶ際、[効率](/handbook/values/#efficiency)と[イテレーション](/handbook/values/#iteration)という GitLab のバリューに導かれ、[Manager of One](/handbook/values/#managers-of-one)として行動します。
+私たちはタスクを選ぶ際、効率とイテレーションという GitLab のバリューに導かれ、Manager of One として行動します。
 
-### レトロスペクティブ
+### レトロスペクティブ {#retrospective}
 
 四半期ごとに、GitLab の Issue を使って非同期のレトロスペクティブ[（例）](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/665)を実施します。
 
@@ -60,20 +60,20 @@ Issue は次を満たす必要があります:
 
 チームの DRI は、フィードバックを整理し、投票後に新しい四半期へ持ち込む 1 つの Issue を選ぶ責任を負います。
 
-### スタンドアップ
+### スタンドアップ {#stand-up}
 
 このスタンドアップの目的は、チームメンバー間で協力することです。これは、ブロッカーや進捗を確認し、異なる視点で考え、私たちの目標に向けてイテレーションするための、チーム固有の
 ミーティングです。
 
 - アジェンダ: <https://docs.google.com/document/d/1chIzCdg1CNRrRRuYR7c7OW_BF1mBxKFTJoXyP2HLt4E/edit#heading=h.o6qzal1u0b7i>
 
-## リアルタイムコミュニケーション
+## リアルタイムコミュニケーション {#real-time-communications}
 
-GitLab への貢献に興味がある人々のために、[Discord](https://discord.gg/gitlab) で GitLab 貢献者ルームが利用できます。これは誰でも参加でき、コミュニティメンバーがネットワーキングし、互いに助け合うのに良い場所です。
+GitLab への貢献に興味がある人々のために、[Discord](https://discord.gg/gitlab)で GitLab 貢献者ルームが利用できます。これは誰でも参加でき、コミュニティメンバーがネットワーキングし、互いに助け合うのに良い場所です。
 
-## Issue
+## Issue {#issues}
 
-### 貢献者リンク
+### 貢献者リンク {#contributor-links}
 
 誰もが貢献することを明確で簡単にするため、[triage-ops プロセッサ](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/issue_summary.rb)
 が Issue に貢献者リンクを追加し、お客様/コミュニティメンバーがラベル付け、クローズ、自身への割り当てを行えるようにします。
@@ -83,40 +83,40 @@ GitLab チームメンバーではなく、ここでの初心者で、GitLab へ
 
 GitLab チームメンバーは、`suppress-contributor-links` ラベルを追加することで貢献者リンクを抑制できます。
 
-### コミュニティ貢献者向けの Issue ラベル付け
+### コミュニティ貢献者向けの Issue ラベル付け {#labeling-issues-for-community-contributors}
 
 [広範コミュニティの貢献を求める](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#seeking-wider-community-contributions)に関するガイダンスと、[`quick win` Issue の基準](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#criteria-for-quick-win-issues)を参照してください。
 
-### コミュニティ Issue ワークフローの手動プロセス
+### コミュニティ Issue ワークフローの手動プロセス {#community-issues-workflow-manual-process}
 
 [部分的な Issue トリアージチェックリスト](/handbook/product-development/how-we-work/issue-triage/#partial-triage-checklist)を参照してください。
 
-## マージリクエスト
+## マージリクエスト {#merge-requests}
 
 広範コミュニティのマージリクエストとは、<https://about.gitlab.com/company/team/> に存在しない人 (任意のボット、サービスアカウントユーザー、または個人契約者を除く) が開いた MR です。
 
 ### ラベル {#labels}
 
-- `Community contribution` ラベルは、広範コミュニティメンバーが提出した MR に [GitLab Bot](https://gitlab.com/gitlab-bot) によって自動的に適用されます。
-  - MR のリストは [`gitlab-org` のマージリクエストリスト](https://gitlab.com/groups/gitlab-org/-/merge_requests?label_name[]=Community+contribution)で確認できます。
+- `Community contribution` ラベルは、広範コミュニティメンバーが提出した MR に [GitLab Bot](https://gitlab.com/gitlab-bot)によって自動的に適用されます。
+  - MR のリストは [`gitLab-org` のマージリクエストリスト](https://gitlab.com/groups/gitlab-org/-/merge_requests?label_name[]=Community+contribution)で確認できます。
 - [このオートメーションのケイデンスと条件についての詳細](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#label-community-contributions)。
 - `1st contribution` ラベルは初回貢献に追加されます。貢献者が `gitlab-org` 名前空間で初めてマージリクエストを開くたびに、`1st contribution` ラベルがマージリクエストに自動的に適用されます。
   - MR のリストは [`gitlab-org` のマージリクエストリスト](https://gitlab.com/groups/gitlab-org/-/merge_requests?label_name%5B%5D=1st+contribution)で確認できます。
   - [初回貢献者](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#first-time-contributors)には感謝の意としてギフトも贈られます。
 
-### トリアージレポート
+### トリアージレポート {#triage-reports}
 
 [コミュニティ関連のトリアージレポート](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#community-related-triage-reports)を参照してください。
 
-### スケジュールされたワークフローオートメーション
+### スケジュールされたワークフローオートメーション {#scheduled-workflow-automation}
 
 [コミュニティ関連のスケジュールされたワークフローオートメーション](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#community-related-scheduled-workflow-automation)を参照してください。
 
-### リアクティブワークフローオートメーション
+### リアクティブワークフローオートメーション {#reactive-workflow-automation}
 
 [コミュニティ関連のリアクティブワークフローオートメーション](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#community-related-reactive-workflow-automation)を参照してください。
 
-## マージリクエストコーチ
+## マージリクエストコーチ {#merge-request-coaches}
 
 [マージリクエストコーチ](/job-description-library/expert/merge-request-coach/)は、貢献者の MR を支援するために利用可能です。これには次のことが含まれます:
 
@@ -127,7 +127,8 @@ GitLab チームメンバーは、`suppress-contributor-links` ラベルを追�
   - その場合、`coach will finish` ラベルが MR に追加され、コーチは新しいコミットを直接 MR にプッシュするか、元の変更を含む新しい MR を再作成します。
   - 貢献者は MR で `@gitlab-org/coaches` と入力することでコーチをメンションできます。
 
-現在のマージリクエストコーチのリストは、[チームページ](/handbook/company/team/)で部門フィルタの `Merge Request Coach` を選択することで見つけることができます。
+現在のマージリクエストコーチのリストは、[チームページ](/handbook/company/team/)で部門フィルタの `Merge Request
+Coach` を選択することで見つけることができます。
 
 GitLab チームメンバーがコミュニティ貢献に関する質問がある場合は、GitLab Slack の [`#mr-coaching`](https://gitlab.slack.com/archives/C2T9APP9C) チャンネルもあります。
 
@@ -135,26 +136,26 @@ GitLab チームメンバーがコミュニティ貢献に関する質問があ�
 
 ## GitLab Enterprise Edition (EE) への貢献 {#contributing-to-the-gitlab-enterprise-edition-ee}
 
-### コミュニティ貢献者向け
+### コミュニティ貢献者向け {#for-community-contributors}
 
-[GitLab Enterprise Edition](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee) の任意の有料機能に貢献するには、コミュニティ貢献者は GDK にライセンスを追加する必要があります。すでにライセンスを持っていない場合は、[30 日間の無料トライアル](https://about.gitlab.com/free-trial/)を取得できます (Self-Managed オプションを選択)。30 日間で作業を完了できない場合は、限定数のユーザー (100) 向けに 90 日間の新しい EE ライセンスを発行できます。
+[GitLab Enterprise Edition](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee)の任意の有料機能に貢献するには、コミュニティ貢献者は GDK にライセンスを追加する必要があります。すでにライセンスを持っていない場合は、[30 日間の無料トライアル](https://about.gitlab.com/free-trial/)を取得できます (Self-Managed オプションを選択)。30 日間で作業を完了できない場合は、限定数のユーザー (100) 向けに 90 日間の新しい EE ライセンスを発行できます。
 
 このライセンスの更新:
 
 - 前回のライセンスサイクルでアクティブな貢献があった場合、このライセンスはさらに 1 年間更新できます。
 - 前回のライセンスサイクルでアクティブな貢献がなかった場合、90 日間の更新が許可されます。
 
-貢献者は、ライセンスをリクエストするためにこのプロジェクトでリクエストを作成する必要があります: [Wider Community Contributor License Request](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/new?issuable_template=contributor_ee_license_request)。
+貢献者は、ライセンスをリクエストするためにこのプロジェクトでリクエストを作成する必要があります: [広範コミュニティ貢献者向けライセンス申請](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/new?issuable_template=contributor_ee_license_request)。
 
-### Enterprise Edition (EE) ライセンスリクエストの処理
+### Enterprise Edition (EE) ライセンスリクエストの処理 {#processing-enterprise-edition-ee-license-requests}
 
 GitLab チームメンバーが完了する必要があります:
 
-#### 前提条件
+#### 前提条件 {#prerequisites}
 
 - Zendesk サポートポータルへのアクセス、[Zendesk Global Light Agent フォーム](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account)経由でリクエスト。
 
-#### プロセス
+#### プロセス {#process}
 
 - Okta 経由で Zendesk にログイン
 - [GitLab L&R Internal Requests フォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)にアクセス
@@ -169,7 +170,7 @@ GitLab チームメンバーが完了する必要があります:
     - 新規貢献者は 90 日
     - 更新は 1 年
   - 1 年更新の場合、Nick の E メールを承認マネージャーとして使用
-- 「ライセンスが発行される理由は何ですか?」で、`Wider community contributor EE license request` を指定し、ライセンスリクエスト Issue へのリンクを追加
+- 「What is the reason for the license being issued?」で、`Wider community contributor EE license request` を指定し、ライセンスリクエスト Issue へのリンクを追加
 - リクエスト Issue にリクエストが提出されたことを示すパブリックコメントを追加
 - サポートフォームを送信すると、Zendesk でリクエストを「作成」するパイプラインへのリンクがユーザーに表示されます。後で調査が必要な問題があった場合に備えて、このパイプラインへのリンクを内部コメントに保存
 
@@ -179,7 +180,7 @@ GitLab チームメンバーが完了する必要があります:
 (GitLab チームメンバー) Google Drive で[ここで](https://drive.google.com/drive/u/0/search?q=Wider_EE_Developer_License_Renewal.mov)検索することで、これのビデオを見つけることができます
 {{% /alert %}}
 
-#### クローズ
+#### クローズ {#close}
 
 ライセンスがプロビジョニングされたら:
 
@@ -187,23 +188,23 @@ GitLab チームメンバーが完了する必要があります:
 - サポートから送信された E メールに含まれる「Private Note」のスクリーンショット付きの機密コメントを追加
 - Issue をクローズ
 
-## DCO と CLA のガイダンス
+## DCO と CLA のガイダンス {#dco-and-cla-guidance}
 
-GitLab への外部貢献はすべて、貢献が行われた場所と誰の代理で行われたかに応じて、[GitLab の DCO または CLA](https://about.gitlab.com/community/contribute/dco-cla/) の対象となります。
+GitLab への外部貢献はすべて、貢献が行われた場所と誰の代理で行われたかに応じて、[GitLab の DCO または CLA](https://about.gitlab.com/community/contribute/dco-cla/)の対象となります。
 
 組織を代理で行われたすべての貢献をカバーする包括的な企業 CLA を締結する企業貢献者向けの手順は、[DCO-CLA ページ](https://about.gitlab.com/community/contribute/dco-cla/#need-a-corporate-cla-covering-all-contributors-on-behalf-of-your-organization)に記載されています。
 
-### 企業 CLA 貢献者管理
+### 企業 CLA 貢献者管理 {#corporate-cla-contributor-management}
 
 Contributor success は、Legal and Corporate Affairs チームを支援して、GitLab が企業 CLA に関連付けられたユーザーのリストを維持できる名前空間の作成と維持を行ってきました。
 
 このグループはここで見つけることができます: https://gitlab.com/gitlab-corporate-cla
 
-#### 新しいグループの追加
+#### 新しいグループの追加 {#adding-a-new-group}
 
 `gitlab-corporate-cla` 下のサブグループは、[`gitlab-corporate-cla/config`](https://gitlab.com/gitlab-corporate-cla/config) プロジェクトで OpenTofu を介して宣言的に管理されます。標準的なグループ設定（可視性、説明、プロジェクト/サブグループの作成レベル、Wiki 無効化、メンション無効化、share-with-group ロックなど）はすべてパイプラインによって自動的に適用されます。
 
-1. [`gitlab-corporate-cla/config`](https://gitlab.com/gitlab-corporate-cla/config) に対して、[`groups.yaml`](https://gitlab.com/gitlab-corporate-cla/config/-/blob/main/groups.yaml) にエントリを追加するマージリクエストをオープンします:
+1. [`gitlab-corporate-cla/config`](https://gitlab.com/gitlab-corporate-cla/config)に対して、[`groups.yaml`](https://gitlab.com/gitlab-corporate-cla/config/-/blob/main/groups.yaml)にエントリを追加するマージリクエストをオープンします:
 
     ```yaml
     - name: Acme Corp
@@ -216,23 +217,18 @@ Contributor success は、Legal and Corporate Affairs チームを支援して�
 
 1. MR パイプラインが `tofu plan` を実行し、差分を投稿します。プランが想定どおり 1 つの新しいグループのみを示していることを確認してマージします。
 1. `main` ブランチのパイプラインが `tofu apply` を実行し、サブグループを作成します。安全策として、ドリフト検出が `main` に対してスケジュールで実行されます。
-1. apply 後の手動ステップを実行します（これらの設定は[GitLab Terraform provider](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/resources/group) でまだサポートされていないため、手動で設定する必要があります）:
+1. apply 後の手動ステップを実行します（これらの設定は[GitLab Terraform provider](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/resources/group)でまだサポートされていないため、手動で設定する必要があります）:
     1. 新しいサブグループの **Settings > General > Permissions and group features** で、次を設定します:
         1. **Customer relations is enabled** — 無効化
         1. **GitLab Duo availability** — `Always off`
     1. 組織の指定されたユーザーマネージャーのユーザーアカウントを `Owner` としてグループに追加します（**Group information > Members** の下）。
-    1. ご自身のユーザーアカウントをサブグループの直接メンバーから削除します（**Members** の下、`Membership = Direct` でフィルタし、'kebab メニュー' をクリックして 'Leave Group' を選択）。
+    1. ご自身のユーザーアカウントをサブグループの直接メンバーから削除します（**Members** の下、`Membership = Direct` でフィルタし、'kebab menu' をクリックして 'Leave Group' を選択）。
 
-## 教育資料
-
-1. [Gitpod with GDK - Introduction (ビデオ)](https://www.youtube.com/watch?v=OzgGP5tT4bo)
-1. [Gitpod with GDK - Setup (ビデオ)](https://www.youtube.com/watch?v=6VNm36wdXnI)
-
-## GitLab Notable Contributor 選定プロセス
+## GitLab Notable Contributor 選定プロセス {#gitlab-notable-contributor-selection-process}
 
 [GitLab Notable Contributor 選定プロセス](/handbook/marketing/developer-relations/engineering/notable-contributor-process)を参照してください。
 
-## 貢献者への感謝メッセージ
+## 貢献者への感謝メッセージ {#contributor-thanks-messages}
 
 Contributor Success チームは、マージリクエストへの活発な参加について広範コミュニティメンバーに定期的に感謝してきました。
 これは、次の場所での週次感謝メッセージという形を取ります:
@@ -249,7 +245,7 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 - [広範コミュニティメッセージ](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/186)
 
-### 手動実行
+### 手動実行 {#manual-execution}
 
 メッセージを手動で生成する必要がある場合は、次の前提手順に従う必要があります:
 
@@ -262,12 +258,12 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 1. 結果のメッセージを discord の `#thanks` に貼り付け。
 1. 貼り付けたメッセージをダブルチェックして、ユーザー/名前がすべて「正しい」ように見えることを確認。
 1. メッセージを送信して、お祝いに参加!
-1. 必要に応じて、メッセージから PI 数を[トラッキング Issue](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/186) に記録。
+1. 必要に応じて、メッセージから PI 数を[トラッキング Issue](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/186)に記録。
 1. トラッキング Issue の担当者と期日を更新。
 
-## イベントの組織化と宣伝
+## イベントの組織化と宣伝 {#organizing-and-promoting-events}
 
-### イベント計画
+### イベント計画 {#event-planning}
 
 - ミーティング前にアジェンダを起草します (ドキュメントがリンクのある全員に開いていることを確認してください)
   - 出欠確認、紹介
@@ -278,25 +274,25 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 - イベントを[Developer Advocacy チームカレンダー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#calendar)に追加します。GitLab チームメンバーでない場合は、[Developer Relations](/handbook/marketing/developer-relations/)チームのメンバーにイベントをカレンダーに追加するよう依頼してください。
 - ソーシャルサポートのために以下の手順に従うか、[コードコントリビューターのプランニングリポ](https://gitlab.com/gitlab-com/marketing/community-relations/contributor-program/general/issues/new?issuable_template=event-support-request)でリクエストを開きます。
 
-### ソーシャル
+### ソーシャル {#social}
 
 - 「N 日開催の GitLab ハッカソン（リンク）に参加してください。」のような短いアクション指向のコピーを起草します。
 - イベントの少なくとも 2 週間前、1 週間前、前日に、次のチャンネルでメッセージを共有します:
   - Twitter: 自分のアカウントを使用しますが `@gitlab` をメンションします (注: Twitter で Zoom リンクを共有しないでください)
   - [GitLab Community Discord](https://discord.gg/gitlab)
 
-### イベントプラットフォーム
+### イベントプラットフォーム {#event-platforms}
 
-- [John Coghlan](https://gitlab.com/johncoghlan) に [meetup.com](https://www.meetup.com/gitlab-virtual-meetups/) でのイベント追加を依頼します。
+- [John Coghlan](https://gitlab.com/johncoghlan)に [meetup.com](https://www.meetup.com/gitlab-virtual-meetups/)でのイベント追加を依頼します。
 - [GitLab Events ページ](https://about.gitlab.com/events/)にイベントを追加します。
 
-### ハッカソン
+### ハッカソン {#hackathons}
 
-四半期ごとの[ハッカソン](https://about.gitlab.com/community/hackathon/)では、GitLab コミュニティメンバーが集まり、マージリクエストに取り組み、チュートリアルセッションに参加し、[GitLab Discord](https://discord.gg/gitlab) で互いをサポートします。ハッカソンのアジェンダ、ロジスティクス、資料、録画、その他の情報は [GitLab Community Hackathon](https://about.gitlab.com/community/hackathon/) ページで利用できます。
+四半期ごとの[ハッカソン](https://about.gitlab.com/community/hackathon/)では、GitLab コミュニティメンバーが集まり、マージリクエストに取り組み、チュートリアルセッションに参加し、[GitLab Discord](https://discord.gg/gitlab)で互いをサポートします。ハッカソンのアジェンダ、ロジスティクス、資料、録画、その他の情報は [GitLab Community Hackathon](https://about.gitlab.com/community/hackathon/) ページで利用できます。
 
 イベントの計画は、[ハッカソン Issue テンプレート](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/new?description_template=hackathon)に従って行われます。
 
-### バーチャルハッカソン/hackathon-in-a-box
+### バーチャルハッカソン/hackathon-in-a-box {#virtual-hackathonshackathon-in-a-box}
 
 私たちは広範コミュニティメンバーが GitLab への新しい貢献者を奨励し、サポートするためにイベントを組織化することも奨励しています。これは、対面またはバーチャル GitLab ミートアップの一部として行うことができます。
 
@@ -312,7 +308,7 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 すべてのコミュニティオフィスアワー通話は、[Developer Advocacy カレンダー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#calendar)と [meetup.com グループ](https://www.meetup.com/gitlab-virtual-meetups/)に追加する必要があります。
 
-#### オフィスアワー録画のセキュリティ上の注意
+#### オフィスアワー録画のセキュリティ上の注意 {#security-reminder-for-office-hours-recordings}
 
 オフィスアワーの録画を公開する前に、認証情報や秘密情報が動画内に表示・聞き取り可能になっていないことを確認してください。これには次のものが含まれますが、これに限りません:
 
@@ -326,11 +322,11 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 セッション中に誤って認証情報が露出してしまった場合は、ただちに無効化してローテーションする必要があります — ライブ配信動画の性質上、動画の編集だけに頼らないでください。
 
-ライブストリームから変換した動画ではなく、録画を直接アップロードするチームメンバー向けには、動画を公開する前にトークンリークを検出するための GitLab 内部 [video scanner](https://internal.gitlab.com/handbook/security/product_security/token-leaks/video_scanner/) が利用できます。このツールの利用は任意ですが、追加の保護レイヤーとして強く推奨されます。
+ライブストリームから変換した動画ではなく、録画を直接アップロードするチームメンバー向けには、動画を公開する前にトークンリークを検出するための GitLab 内部 [video scanner](https://internal.gitlab.com/handbook/security/product_security/token-leaks/video_scanner/)が利用できます。このツールの利用は任意ですが、追加の保護レイヤーとして強く推奨されます。
 
-録画の公開と管理に YouTube をどう活用すべきかについては、GitLab の [YouTube の利用とアクセス](/handbook/marketing/marketing-operations/youtube/) を参照してください。
+録画の公開と管理に YouTube をどう活用すべきかについては、GitLab の [YouTube の利用とアクセス](/handbook/marketing/marketing-operations/youtube/)を参照してください。
 
-#### コミュニティオフィスアワー通話の組織化方法
+#### コミュニティオフィスアワー通話の組織化方法 {#how-to-organize-a-community-office-hour-call}
 
 **準備**
 
@@ -344,7 +340,7 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 **通話の実行**
 
-- 通話のライブストリーミングについて全員の許可を求めます。次に、Zoom で「YouTube でライブ配信」ボタンを押してストリーミングを開始します。
+- 通話のライブストリーミングについて全員の許可を求めます。次に、Zoom で Live Stream on YouTube ボタンを押してストリーミングを開始します。
 - アクセシビリティのために Zoom でクローズドキャプションを有効にします。
 - 通話が始まったら、「何があなたをこの通話に連れてきましたか」という質問で自己紹介のラウンドを行います。これは、コミュニティのニーズに合わせて通話を調整し、彼らの質問/期待に応えるのに役立ちます。
 - 詳細な議事録を保持します
@@ -354,28 +350,28 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 - YouTube ビデオを「office hour calls」プレイリストに追加します
 - Discord にまとめとビデオ録画を投稿します
 
-#### コミュニティチャレンジ
+#### コミュニティチャレンジ {#community-challenge}
 
-(ハッカソン中だけでなく) 継続的に優先 Issue への貢献を促すため、各[製品ステージ](/handbook/product/categories/)に最大 5 つの優先 Issue のリストを維持し、これらの Issue について MR がマージされた広範コミュニティメンバーに賞品が贈られます。これらの Issue にはラベル [`Community challenge`](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=Community+challenge) と、賞品、これらの Issue の割り当てなど、より多くの詳細が記載されます。
+(ハッカソン中だけでなく) 継続的に優先 Issue への貢献を促すため、各[製品ステージ](/handbook/product/categories/)に最大 5 つの優先 Issue のリストを維持し、これらの Issue について MR がマージされた広範コミュニティメンバーに賞品が贈られます。これらの Issue にはラベル [`Community challenge`](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=Community+challenge)と、賞品、これらの Issue の割り当てなど、より多くの詳細が記載されます。
 
-## 広範コミュニティ貢献者のサポート
+## 広範コミュニティ貢献者のサポート {#supporting-the-wider-community-contributors}
 
-### 広範コミュニティの貢献のブロック解除
+### 広範コミュニティの貢献のブロック解除 {#unblocking-wider-community-contributions}
 
-Contributor Success チームは、広範コミュニティ貢献者のブロックを解除し、貢献を前進させるのを支援します。GitLab の他のチームがコミュニティ貢献をサポートする能力を持っていないことがありますが、これによってコミュニティの貢献を止めるべきではありません。
+Contributor Success チームは、広範コミュニティ貢献者のブロックを解除し、貢献を前進させるのを支援します。GitLab の他のチームがコミュニティ貢献をサポートする余力がないことがありますが、これによってコミュニティの貢献を止めるべきではありません。
 
 これら 10 個の GitLab の価値観が、広範コミュニティのブロック解除と前進を支援する努力をサポートします:
 
-1. [自分でやる](/handbook/values/#do-it-yourself)
-1. [Short toes](/handbook/values/#short-toes)
-1. [Collaboration is not consensus](/handbook/values/#collaboration-is-not-consensus)
-1. [行動バイアス](/handbook/values/#operate-with-a-bias-for-action)
-1. [Disagree, commit, and disagree](/handbook/values/#disagree-and-commit)
-1. [Escalate to unblock](/handbook/values/#escalate-to-unblock)
-1. [Cleanup over sign-up](/handbook/values/#cleanup-over-sign-off)
-1. [Minimal valuable change](/handbook/values/#minimal-valuable-change-mvc)
-1. [Everything is in draft](/handbook/values/#everything-is-in-draft)
-1. [Make two-way door decisions](/handbook/values/#make-two-way-door-decisions)
+1. 自分でやる
+1. 他者が自分の担当領域に踏み込んでも気にしない
+1. コラボレーションは合意形成ではない
+1. 行動を優先する
+1. 異議を唱え、コミットし、再び異議を唱える
+1. ブロックを解除するためにエスカレーションする
+1. 参加表明より後片付けを優先する
+1. 最小限の価値ある変更
+1. すべてはドラフトである
+1. やり直しが可能な意思決定をする
 
 ### 広範コミュニティの貢献を求める {#seeking-wider-community-contributions}
 
@@ -402,12 +398,12 @@ AI トリアージは、チームが作成した新しい Issue をすべて評�
 Issue が `quick win` に該当しないと AI が判断した場合、ラベルを追加したチームメンバーに通知します
 （ラベルは削除しません）。
 
-[GitLab Bot](https://gitlab.com/gitlab-bot) は、ラベルが 1 年以上適用されている場合、または Issue がブロックされた場合にラベルを削除します。
+[GitLab Bot](https://gitlab.com/gitlab-bot)は、ラベルが 1 年以上適用されている場合、または Issue がブロックされた場合にラベルを削除します。
 
-### `quick win::first-time contributor` Issue の基準
+### `quick win::first-time contributor` Issue の基準 {#criteria-for-quick-winfirst-time-contributor-issues}
 
 オンボーディングプロセス中、新しい貢献者は `quick win::first-time contributor` Issue にリンクされます。これらの Issue は、私たちの最も簡単で最もわかりやすい Issue を使用して、新しい貢献者が貢献プロセスを学ぶのを助けることを目的としています。`quick win::first-time contributor` Issue を作成する際は、サポート連絡先を追加することが推奨されます。
-各貢献者は 1 つの `quick win::first-time contributor` Issue のみを完了できます。最初の Issue を完了した後、貢献者は他の Issue に移るべきです。通常の `quick win` Issue には制限はありません。
+各貢献者は 1 つの `quick win::first-time contributor issue` のみを完了できます。最初の Issue を完了した後、貢献者は他の Issue に移るべきです。通常の `quick win` Issue には制限はありません。
 
 - Issue の説明には、貢献者が始めるのを助けるガイダンス付きの実装計画を、第二または第三レベルの見出しとして含める必要があります。
 たとえば、`## Implementation`、`### Implementation`、`## Implementation plan`、`### Implementation guide` はすべて受け入れられます。
@@ -418,16 +414,16 @@ Issue が `quick win` に該当しないと AI が判断した場合、ラベル
 
 貢献者が GitLab 名前空間に対して初めてマージリクエストを開くたびに、ラベル「~1st contribution」が自動的にマージリクエストに適用されます。
 
-### Core Team との作業
+### Core Team との作業 {#working-with-the-core-team}
 
 [Core Team](https://about.gitlab.com/community/core-team/)に関する詳細情報は、[Core Team ハンドブックページ](/handbook/marketing/developer-relations/engineering/core-team/)で利用できます。
 
-### 貢献者向け GitLab Duo
+### 貢献者向け GitLab Duo {#gitlab-duo-for-contributors}
 
 誰もが貢献できるようにするという私たちのミッションを支えるため、より広いコミュニティのすべての貢献者に、
 GitLab のコミュニティフォーク全体で利用できる GitLab Duo Enterprise の無償ライセンスと
-[GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/) へのアクセスを提供します。
-[GitLab Duo](https://about.gitlab.com/gitlab-duo/) は、Code Suggestions、Chat、Root Cause Analysis などの
+[GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/)へのアクセスを提供します。
+[GitLab Duo](https://about.gitlab.com/gitlab-duo/)は、Code Suggestions、Chat、Root Cause Analysis などの
 AI を活用した機能を備え、コードやパイプラインの記述と理解に必要な時間を減らすことで、
 効率と有効性を高めます。
 コミュニティ貢献者は、[コミュニティフォークへのアクセス申請](https://gitlab.com/groups/gitlab-community/community-members/-/group_members/request_access)が承認されると GitLab Duo を利用できるようになります。
@@ -477,11 +473,11 @@ Duo のシートは個別には削除できません。トップレベルグル�
 
 このコンテキストでのボーナスは金銭的な助成金ではありません。これらのボーナスポイントは、[貢献者ストア](https://gitlab-contributor.brilliantmade.com/)での購入にのみ使用できます。
 
-#### プロセス
+#### プロセス {#process-1}
 
 コミュニティボーナスラベルが付いた Issue がクローズされると、[トリアージレポート](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/960)に表示されます。Co-Create & Community Engineering チームメンバーは:
 
-##### 貢献を検証する
+##### 貢献を検証する {#verify-the-contribution}
 
 - Issue を訪問し、広範コミュニティ貢献者に割り当てられていることを確認します。
 - リンクされたマージリクエストが広範コミュニティ貢献者によって作成されたことを確認します。
@@ -501,19 +497,19 @@ Duo のシートは個別には削除できません。トップレベルグル�
 - 授与したポイントが **Bonus Points** セクションに表示されることを確認
 - GitLab で、Issue に `community-bonus-awarded` ラベルを追加
 
-### クレジットカードを所有していない貢献者向け
+### クレジットカードを所有していない貢献者向け {#for-contributors-who-dont-own-a-credit-card}
 
 クレジットカードを所有しておらず、手動で検証する必要がある貢献者には、
 登録して [サポートリクエスト](https://support.gitlab.com/hc/en-us/requests/new)を発行するよう依頼します
 **Gitlab.com user accounts and login issues** の理由を使用します。
 
-### コンピュート分または他の CI/CD リソースを使い切った貢献者向け
+### コンピュート分または他の CI/CD リソースを使い切った貢献者向け {#for-contributors-who-run-out-of-compute-minutes-or-other-cicd-resources}
 
 広範コミュニティメンバーは、個人フォークから作業している場合、月次のコンピュート分を使い切ったり、他の [GitLab CI/CD 制限](https://docs.gitlab.com/ee/user/gitlab_com/index#gitlab-cicd)に遭遇することがあります。
 
 解決策は、[GitLab コミュニティフォーク](https://gitlab.com/gitlab-community/meta#about)から作業することです。
 
-### 貢献者への連絡
+### 貢献者への連絡 {#contacting-contributors}
 
 貢献者のプライバシーを尊重するため、彼らに連絡するために公開されている連絡データのみを使用します。
 
@@ -526,18 +522,18 @@ Duo のシートは個別には削除できません。トップレベルグル�
 
 連絡する最良の方法を見つけたら、メンション、E メール、または Discord を使うことを選択できます。
 
-### 貢献者ブログ投稿シリーズ
+### 貢献者ブログ投稿シリーズ {#contributor-blog-post-series}
 
-目標は、コミュニティの貢献者を取り上げる定期的なブログ投稿を発行することです。フォーマットは[コミュニティメンバーとのカジュアルな Q&A](https://about.gitlab.com/blog/2018/08/08/contributor-post-vitaliy/) で、[GitLab ブログページ](https://about.gitlab.com/blog/)に投稿されます。
+目標は、コミュニティの貢献者を取り上げる定期的なブログ投稿を発行することです。フォーマットは[コミュニティメンバーとのカジュアルな Q&A](https://about.gitlab.com/blog/2018/08/08/contributor-post-vitaliy/)で、[GitLab ブログページ](https://about.gitlab.com/blog/)に投稿されます。
 
 ブログ投稿を開発する際は、[ブログガイドライン](/handbook/marketing/blog/)に従ってください。
 
-## 貢献者アウトリーチキャンペーン
+## 貢献者アウトリーチキャンペーン {#contributor-outreach-campaigns}
 
 アウトリーチキャンペーンは、貢献を停止した過去の GitLab 貢献者や、貢献に興味を表明したが始めていないユーザーと再びつながるのに役立ちます。
-連絡する際、彼らの過去および/または将来の貢献を認識して、彼らの名前で [GitLab forest](https://tree-nation.com/profile/gitlab) に木を植えます。
+連絡する際、彼らの過去および/または将来の貢献を認識して、彼らの名前で [GitLab forest](https://tree-nation.com/profile/gitlab)に木を植えます。
 
-### アウトリーチの目標
+### アウトリーチの目標 {#outreach-goals}
 
 Contributor Success チームは、繰り返し可能なアウトリーチキャンペーンを作成するために、3 つの目標で異なる基準とメッセージを試しました:
 
@@ -545,24 +541,24 @@ Contributor Success チームは、繰り返し可能なアウトリーチキャ
 1. キャンペーンを実行する Contributor Success の時間コミットメントを最小化
 1. アウトリーチキャンペーンが迷惑になったり、マーケティングスパムのように見えたりするのを防ぐ
 
-### 復帰貢献者の候補基準
+### 復帰貢献者の候補基準 {#candidate-criteria-for-return-contributors}
 
 - 過去 3 か月間に開かれたマージリクエストが 0 件
 - 過去 12 か月間に 2 件以上のマージリクエストがマージされている必要がある
 - 以前にアウトリーチキャンペーンで連絡されていない
 
-### 新規貢献者の候補基準
+### 新規貢献者の候補基準 {#candidate-criteria-for-new-contributors}
 
 - 少なくとも 1 か月前にコミュニティフォークへのアクセスをリクエストして受け取った
 - 履歴にマージされたマージリクエストがない
 - 以前にアウトリーチキャンペーンで連絡されていない
 
-### 結果の追跡
+### 結果の追跡 {#tracking-results}
 
 アウトリーチキャンペーンの結果は、[アウトリーチ結果スプレッドシート](https://docs.google.com/spreadsheets/d/1oAkJsYoeRmcYevacWb_PK339C1F-wi-cfy4p7F7BlSg/edit?usp=sharing)
-で追跡され、[すべてのアウトリーチキャンペーンに関するレポート Issue](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/517) で報告されます。
+で追跡され、[すべてのアウトリーチキャンペーンに関するレポート Issue](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/517)で報告されます。
 
-#### 復帰貢献者キャンペーンの結果
+#### 復帰貢献者キャンペーンの結果 {#results-for-return-contributor-campaigns}
 
 | アウトリーチキャンペーン | 基準         | アウトリーチ総ユーザー | 復帰ユーザー | ユーザー復帰率 | マージ済み MR | 開かれた MR | クローズ MR |
 |----------------------|------------------|----------------------|----------------|------------------|-----------|-----------|-----------|
@@ -570,13 +566,13 @@ Contributor Success チームは、繰り返し可能なアウトリーチキャ
 | 2024 年 1 月         | 3 か月アイドル    | 124                  | 12             | 9.68%            | 15        | 2         | 2         |
 | 2024 年 4 月           | 3 か月アイドル    | 40                   | 5              | 12.50%           | 12        | 1         | 1         |
 
-#### 新規貢献者キャンペーンの結果
+#### 新規貢献者キャンペーンの結果 {#results-for-new-contributor-campaigns}
 
 | アウトリーチキャンペーン | 基準         | アウトリーチ総ユーザー | 復帰ユーザー | ユーザー復帰率 | マージ済み MR | 開かれた MR | クローズ MR |
 |----------------------|------------------|----------------------|----------------|------------------|-----------|-----------|-----------|
 | 2024 年 4 月           | 0 件の貢献  | 274                  | 6              | 2.19%            | 4         | 2         | 1         |
 
-#### 結果に関する観察
+#### 結果に関する観察 {#observations-on-results}
 
 - これまでのところ、復帰貢献者キャンペーンは平均ユーザー復帰率 11%、24 名の復帰貢献者、38 件のマージ済みマージリクエストで成功しています。
 - 4 月の新規貢献者キャンペーンでの実験は 2% の貢献率と低調でした。
@@ -585,47 +581,47 @@ Contributor Success チームは、繰り返し可能なアウトリーチキャ
 - 開かれたマージリクエストとマージされたマージリクエストの結果に加えて、Issue でのユーザーエンゲージメント、オンボーディングタスクの完了、植樹への感謝を観察しました。
 - 多くの貢献者は、これらの結果に表示されるためにアウトリーチから 1 か月以内にマージリクエストを作成する空きがないでしょう。キャンペーンは、後で貢献する機会の前向きなリマインダーになる可能性があります。
 
-### アウトリーチキャンペーンのスケジュール
+### アウトリーチキャンペーンのスケジュール {#outreach-campaign-scheduling}
 
 アウトリーチキャンペーンは 3 か月ごとに実行することを目指していますが、貢献者を引き付ける可能性のある発表と一致させる必要があります。
 たとえば、今後のハッカソンや、GDK-in-a-box のような新しい貢献機能を発表します。
 
-### アウトリーチキャンペーンのワークフロー
+### アウトリーチキャンペーンのワークフロー {#outreach-campaign-workflow}
 
-#### 候補プールのレビュー
+#### 候補プールのレビュー {#review-candidate-pool}
 
 Contributor Success チームは、次のものを削除するために候補プールをレビューします:
 
 - GitLab アカウントまたは個人アカウントのいずれかを持つ既知の GitLab チームメンバー
-- 失効したが、キャンペーンの外で別途連絡される必要がある長期貢献者 (例: Core メンバー、元 MVP、GitLab Heroes など)
+- 貢献が途絶えているものの、キャンペーンの外で別途連絡すべき長年の貢献者 (例: Core メンバー、元 MVP、GitLab Heroes など)
 - 行動規範違反があった、連絡されたくない、または GitLab に貢献したくないと表明した既知のコミュニティメンバー
 
-#### Issue を作成して木を植える
+#### Issue を作成して木を植える {#create-issues-and-plant-trees}
 
-- [reward engine プロジェクトの一時ブランチ `temp-outreach-path`](https://gitlab.com/gitlab-org/developer-relations/contributor-success/reward-engine/-/tree/temp-outreach-patch?ref_type=heads) を使用します
+- [reward engine プロジェクトの一時ブランチ `temp-outreach-path`](https://gitlab.com/gitlab-org/developer-relations/contributor-success/reward-engine/-/tree/temp-outreach-patch?ref_type=heads)を使用します
 - [`RewardIssuer` モジュール](https://gitlab.com/gitlab-org/developer-relations/contributor-success/reward-engine/-/blob/temp-outreach-patch/lib/reward_issuer/gitlab.rb?ref_type=heads)の `recipients` 変数に候補ユーザー名を貼り付けます
 - `bundle exec bin/reward_engine` を実行
 - アウトリーチメッセージがボットではなく実際のチームメンバーから届くように、個人アクセストークンを使用します
 
-#### アウトリーチ Issue への対応とクローズ
+#### アウトリーチ Issue への対応とクローズ {#responding-and-closing-outreach-issues}
 
 - アウトリーチ Issue で質問に回答するか、フィードバックを認識します
 - 2 か月後にクローズメッセージで Issue をクローズし、貢献者が Issue を再オープンしてサポートが必要な場合は連絡するよう促します
 
-### 潜在的なイテレーション
+### 潜在的なイテレーション {#potential-iterations}
 
 - ロール基準または除外候補リストに対して候補をチェックすることで、自動化により手動レビューステップを削減
 - アウトリーチキャンペーン後に貢献するユーザーをそれぞれの Issue で感謝し、戻ってきた理由を共有する機会を与える
 
 ## 貢献者の表彰 {#recognition-for-contributors}
 
-### ハイライトされた貢献への感謝
+### ハイライトされた貢献への感謝 {#appreciation-for-highlighted-contributions}
 
 時々、広範コミュニティメンバーが特に優れた貢献を提出します。任意の GitLab チームメンバーまたは広範コミュニティが、[彼らを Notable Contributor として推薦するプロセス](https://contributors.gitlab.com/docs/notable-contributors)に従うことができます。
 
-### 年間トップ貢献者
+### 年間トップ貢献者 {#top-annual-contributors}
 
-定期的な貢献者を認識するため、各暦年のトップ貢献者のリストが [Top Annual Contributors ページ](https://about.gitlab.com/community/top-annual-contributors/) に公開されます。トップ貢献者には 3 つのカテゴリがあります:
+定期的な貢献者を認識するため、各暦年のトップ貢献者のリストが [Top Annual Contributors ページ](https://about.gitlab.com/community/top-annual-contributors/)に公開されます。トップ貢献者には 3 つのカテゴリがあります:
 
 - SuperStar: 75 件を超えるマージ済み MR
 - Star: 11 件から 75 件のマージ済み MR
@@ -639,7 +635,7 @@ Contributor Success チームは、次のものを削除するために候補プ
 1. 各貢献者用の Giveaway リンクを生成します。
 1. 個別の E メールに Giveaway リンクを含めて Top Annual Contributors に送信します。
 
-## 貢献者ライフサイクルセグメント
+## 貢献者ライフサイクルセグメント {#contributor-lifecycle-segments}
 
 GitLab コードコントリビューターコミュニティを理解、サポート、エンパワーする取り組みにおいて、次のライフサイクルセグメントを考えました。
 
@@ -647,11 +643,11 @@ GitLab コードコントリビューターコミュニティを理解、サポ�
 
 | 貢献者の経験レベル | マージ済み MR |
 | ------ | ------ |
-| Level 0 | 0 MR |
-| Level 1 | 1 - 3 MR |
-| Level 2 | 4 - 25 MR |
-| Level 3 | 26 - 75 MR |
-| Level 4 | 75+ MR |
+| レベル 0 | 0 MR |
+| レベル 1 | 1 - 3 MR |
+| レベル 2 | 4 - 25 MR |
+| レベル 3 | 26 - 75 MR |
+| レベル 4 | 75+ MR |
 
 | 貢献者ステータス | マージ済み MR | 期間 |
 | ------ | ------ | ------ |
@@ -664,26 +660,26 @@ GitLab コードコントリビューターコミュニティを理解、サポ�
 
 目標は、貢献者をサポートし表彰する方法を特定することにより、すべてのセグメント (非アクティブセグメントを除く) でコードコントリビューターを増やすことです。
 
-## 貢献者メトリクス
+## 貢献者メトリクス {#contributor-metrics}
 
 注: これは現在、貢献者メトリクスを収集できるすべての場所の作業リストです。これは*まだ*貢献者プログラムの成功をモニタリングするために使用するメトリクスの最終セットではありません。
 
-### Tableau ダッシュボード
+### Tableau ダッシュボード {#tableau-dashboards}
 
-社内では、GitLab はさまざまな KPI のパフォーマンスを追跡するために [Tableau](/handbook/enterprise-data/platform/tableau/) を使用しています。以下は、コミュニティ関連ダッシュボードのリストです。
+社内では、GitLab はさまざまな KPI のパフォーマンスを追跡するために [Tableau](/handbook/enterprise-data/platform/tableau/)を使用しています。以下は、コミュニティ関連ダッシュボードのリストです。
 
 | ダッシュボード | 説明 |
 | --- | --- |
-| [Wider Community Dashboard](https://10az.online.tableau.com/#/site/gitlab/views/WiderCommunityPIsPart1/WiderCommunityPIsDashboardPart1) | 貢献者 (人) と組織に関連するメトリクス |
+| [Wider Community Dashboard](https://10az.online.tableau.com/#/site/gitlab/views/WiderCommunityPIsPart1/WiderCommunityPIsDashboardPart1) | 貢献者 (人)と組織に関連するメトリクス |
 | [MRARR Dashboard](https://10az.online.tableau.com/#/site/gitlab/views/MRARRDashboard_17055242209630/MRARRDashboard) | GitLab の顧客でもある貢献組織に関連するメトリクス |
 
-### GitLab.com
+### GitLab.com {#gitlabcom}
 
 gitlab.com 上のプロジェクト (たとえば CE、EE、Omnibus、Shell など) の `Merge Requests` ページからデータを直接クエリし、マイルストーン、ラベルなどに適切なフィルタを適用することもできます。例の一部は、以下のメトリクステーブルに記載されています。
 
-### 貢献者数
+### 貢献者数 {#number-of-contributors}
 
-過去には、[この例](https://about.gitlab.com/blog/2018/08/13/join-the-gitlab-community/)で見られるように、GitLab コミュニティ (GitLab チームメンバー + 広範コミュニティ) の 2,000 以上の貢献者をしばしば言及していました。しかし、これには古い [https://contributors.gitlab.com](https://web.archive.org/web/20190619012814/https://contributors.gitlab.com/) ページに基づいて、CE および EE プロジェクトへの貢献者のみが含まれていました。
+過去には、[この例](https://about.gitlab.com/blog/2018/08/13/join-the-gitlab-community/)で見られるように、GitLab コミュニティ (GitLab チームメンバー + 広範コミュニティ)の 2,000 以上の貢献者をしばしば言及していました。しかし、これには古い [https://contributors.gitlab.com](https://web.archive.org/web/20190619012814/https://contributors.gitlab.com/) ページに基づいて、CE および EE プロジェクトへの貢献者のみが含まれていました。
 
 他の GitLab プロジェクトを含めると、貢献者の総数ははるかに多くなります。
 
@@ -698,7 +694,7 @@ GitLab の貢献者数について人々が尋ねたとき、彼らが総コー�
 
 [Contribute to GitLab ガイド](https://about.gitlab.com/community/contribute/)に記載されているように、コード以外にもコミュニティが GitLab に貢献する方法があることに言及することも重要です。翻訳、エバンジェリズム、フォーラムでのサポート、開かれた Issue などの貢献は、上記のメトリクスには含まれていません。
 
-### モニタリング対象のプロジェクト
+### モニタリング対象のプロジェクト {#monitored-projects}
 
 私たちは [`gitlab-org` グループ](https://gitlab.com/groups/gitlab-org)のさまざまなプロジェクトでの貢献を監視・表彰しており、[GitLab プロジェクト](https://gitlab.com/gitlab-org/gitlab)だけではありません。
 

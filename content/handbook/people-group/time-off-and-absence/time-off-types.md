@@ -2,11 +2,11 @@
 title: 休暇の種類
 description: このページでは、柔軟な有給休暇（PTO）、祝日、病気休暇、家族介護休暇、忌引休暇、ボランティア休暇、法的な市民の義務（陪審員の務め）を含む GitLab の休暇ポリシーを説明します。
 upstream_path: /handbook/people-group/time-off-and-absence/time-off-types/
-upstream_sha: 819fcd03ca3ddcde75fbd60bf7799c95d23d49f9
-translated_at: "2026-10-26T21:01:47.445103+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T14:42:54.581550+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-21T09:16:46-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ご自身の場所に特化した情報については、[このページ](/handbook/total-rewards/benefits/general-and-entity-benefits/)を確認してください。
@@ -39,7 +39,7 @@ GitLab は、ビジネス継続性を確保しながら、チームメンバー�
 1. Workday アプリに直接、または Workday Slack 連携経由で PTO を入力できます。
 2. 取得したい日を選択 > 「Time-Off」をクリック > 「Paid Time Off」をクリック > オプション： コメントを追加 > 「Submit」をクリック
 
-**重要**： すべてのチームメンバーは Workday で休暇を記録する必要があります。Workday モジュールの詳細については、[Workday： 休暇の 唯一の情報源](/handbook/people-group/time-off-and-absence/time-away-philosophy/#workday-single-source-of-truth-for-absence)を参照してください。
+**重要**： すべてのチームメンバーは Workday で休暇を記録する必要があります。Workday モジュールの詳細については、[Workday： 休暇の唯一の情報源](/handbook/people-group/time-off-and-absence/time-away-philosophy/#workday-single-source-of-truth-for-absence)を参照してください。
 
 ***ヘルプ！ 間違えて編集が必要、どうすればいい？*** チームメンバーは、未来の日付の休暇エントリと過去 30 日以内のエントリを編集できます。古いエントリには、Compass 経由で People Connect チームへの提出が必要です。
 
@@ -55,7 +55,7 @@ GitLab は、ビジネス継続性を確保しながら、チームメンバー�
 
 ### 概要 {#overview-1}
 
-[家族 & 友人](/handbook/values/#family-and-friends-first-work-second)を最優先するアプローチを誇りに思う会社として、公式の祝日で勤務していない日やオフィス外の日に通話に参加することは誰も期待されません。すべてのチームメンバーに祝日に休暇を取ることを推奨します。[ダイバーシティ、インクルージョン & ビロンギング](/handbook/values/#values-competencies)を重視する会社として、祝日は Workday に事前ロードされ **ません**。代わりに、チームメンバーは Workday の残高を超えない限り、異なる日付を選択して、自分にとって重要なものを祝う柔軟性があります。これは **取りたい祝日を選択できる** ことを意味します。
+家族 & 友人を最優先するアプローチを誇りに思う会社として、公式の祝日で勤務していない日やオフィス外の日に通話に参加することは誰も期待されません。すべてのチームメンバーに祝日に休暇を取ることを推奨します。ダイバーシティ、インクルージョン & ビロンギングを重視する会社として、祝日は Workday に事前ロードされ **ません**。代わりに、チームメンバーは Workday の残高を超えない限り、異なる日付を選択して、自分にとって重要なものを祝う柔軟性があります。これは **取りたい祝日を選択できる** ことを意味します。
 
 - すべてのチームメンバーは、Workday で祝日累積残高を確認できます。
 - 残高は国別で、現地および/または契約上の要件に基づいて決定されます。
@@ -84,7 +84,7 @@ GitLab は、ビジネス継続性を確保しながら、チームメンバー�
 1. Workday アプリに直接、または Workday Slack 連携経由で祝日を入力できます。
 2. 祝日として休暇を取りたい日を選択 > 「Time-Off」をクリック > 「Public Holiday」をクリック > オプション： コメントを追加 > 「Submit」をクリック
 
-**重要**： すべてのチームメンバーは Workday で休暇を記録する必要があります。Workday の詳細については、[Workday： 休暇の 唯一の情報源](/handbook/people-group/time-off-and-absence/time-away-philosophy/#workday-single-source-of-truth-for-absence)を参照してください。
+**重要**： すべてのチームメンバーは Workday で休暇を記録する必要があります。Workday の詳細については、[Workday： 休暇の唯一の情報源](/handbook/people-group/time-off-and-absence/time-away-philosophy/#workday-single-source-of-truth-for-absence)を参照してください。
 
 {{% /details %}}
 
@@ -165,7 +165,7 @@ GitLab の病気休暇ポリシーは、病気から回復するために休暇�
 
 ***FAQ：セールス職でコミッションを受け取っています。病気による長期休暇中はどう影響しますか？***
 
-- 育児休暇以外の休暇中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences)が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、長期休暇中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 Compass チケットを提出してください。
+- 育児休暇以外の休暇中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences)が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、長期休暇中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、Sales Commission チームに直接 Compass チケットを提出してください。
 
 {{% /details %}}
 
@@ -235,13 +235,13 @@ GitLab の家族介護休暇ポリシーは、病気の家族を世話するた�
 
 ***FAQ：セールス職でコミッションを受け取っています。家族介護のための長期休暇中はどう影響しますか？***
 
-- 育児休暇以外の休暇中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences)が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、長期休暇中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、セールスコミッションチームに直接 Compass チケットを提出してください。
+- 育児休暇以外の休暇中の達成、クォータ、コミッションに関する情報については、内部ハンドブックの [このポリシー](https://internal.gitlab.com/handbook/sales/sales-commission/#leave-of-absences)が役立つかもしれません。これでご質問が解決しないか、具体的なシナリオに関する質問がある場合は、長期休暇中のコミッション対象チームメンバーに適用される Sales Incentives ポリシーを管理しているため、Sales Commission チームに直接 Compass チケットを提出してください。
 
 {{% /details %}}
 
 ## 忌引休暇 {#bereavement}
 
-*このポリシーは、GitLab の忌引休暇 (bereavement leave) へのアプローチを概説します。法定法により特定の忌引休暇条項を義務付ける場所では、それらの法的要件がこのポリシーに優先します。*
+*このポリシーは、GitLab の忌引休暇へのアプローチを概説します。法定法により特定の忌引休暇条項を義務付ける場所では、それらの法的要件がこのポリシーに優先します。*
 
 ### 概要 {#overview-4}
 
@@ -364,7 +364,7 @@ GitLab は、司法、行政、または準司法手続きへの参加（陪審�
 1. **書類**： エントリに召喚状のコピーを添付するか、leaves@gitlab.com にメールしてください。
 1. **カバレッジ計画を作成**： 責任の適切なカバレッジを手配し、不在中のコミュニケーションに関する期待を設定し、業務復帰を計画する
 
-場合によっては 30 日通知期間が不可能なことも理解しています。これらの状況では、できるだけ早くマネージャーに通知し、可能になり次第 Workday に日程を入力してください。監査とコンプライアンスの目的で、すべてのチームメンバーは、すべての休暇を正確に追跡し伝えるための 唯一の情報源 として Workday を使用する必要があることに注意してください。
+場合によっては 30 日通知期間が不可能なことも理解しています。これらの状況では、できるだけ早くマネージャーに通知し、可能になり次第 Workday に日程を入力してください。監査とコンプライアンスの目的で、すべてのチームメンバーは、すべての休暇を正確に追跡し伝えるための唯一の情報源として Workday を使用する必要があることに注意してください。
 
 {{% /details %}}
 

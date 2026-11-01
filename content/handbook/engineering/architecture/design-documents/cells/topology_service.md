@@ -5,16 +5,16 @@ title: 'Cells: Topology Service'
 status: accepted
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/topology_service/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T15:26:53+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T16:04:50+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-04T14:27:38+12:00"
+lastmod: "2026-10-23T11:48:03-03:00"
 ---
 
 このドキュメントでは、Cells が使用する Topology Service の設計目標とアーキテクチャを説明します。
 
-## ゴール
+## ゴール {#goals}
 
 Topology Service の目的は、Cells が動作するために不可欠な機能を提供することです。Topology Service は限られた機能セットを実装し、クラスター内の権威あるエンティティとして機能します。単一の Topology Service が存在し、多くのリージョンにデプロイできます。
 
@@ -43,7 +43,7 @@ Topology Service の目的は、Cells が動作するために不可欠な機能
 
     Topology Service はアーキテクチャでの重要性から、クラスターが動作するために必要な基本的な機能のみを提供するに限られます。
 
-## 要件
+## 要件 {#requirements}
 
 | 要件 | 説明 | 優先度 |
 | ------------- | -------------------------------------------------------------------------- | -------- |
@@ -54,7 +54,7 @@ Topology Service の目的は、Cells が動作するために不可欠な機能
 | セルフマネージド | 最終的に[セルフマネージド](goals.md#self-managed)で使用できる | 低 |
 | リージョン | 異なる[リージョン](goals.md#regions)へのリクエストをルーティングできる | 低 |
 
-## 非ゴール
+## 非ゴール {#non-goals}
 
 これらのゴールは、複雑さを大きく増大させるため Topology Service の範囲外です。
 
@@ -63,7 +63,7 @@ Topology Service の目的は、Cells が動作するために不可欠な機能
 - Topology Service は GitLab のビジネスロジックに関する知識を持ちません。
   理論的には、GitLab と同じ認証/アクセストークンを持つ他のウェブアプリケーションでも動作できます。ただし、これは実装の一部として変更される可能性があります。
 
-## アーキテクチャ
+## アーキテクチャ {#architecture}
 
 Topology Service は次の設計ガイドラインを実装します。
 
@@ -106,11 +106,11 @@ graph TD;
     end
 ```
 
-### 設定
+### 設定 {#configuration}
 
 Topology Service はすべてのサービスパラメーターを設定するために `config.toml` を使用します。
 
-#### Cell のリスト
+#### Cell のリスト {#list-of-cells}
 
 ```toml
 [[cells]]
@@ -119,12 +119,12 @@ address = "cell-us-1.gitlab.com"
 session_prefix = "cell1:"
 ```
 
-### シーケンスサービス
+### シーケンスサービス {#sequence-service}
 
 初期プロビジョニング時に、各 Cell は SequenceService に連絡して ID シーケンス用の ID 範囲を取得します。
 Topology Service は指定された範囲が他の Cell のシーケンスと重複しないことを確認します。
 
-#### 範囲の計算ロジック
+#### 範囲の計算ロジック {#logic-to-compute-the-range}
 
 ```mermaid
 flowchart TD
@@ -141,9 +141,9 @@ flowchart TD
 - **Sign**: 正の数の場合は常に 0。
 - **Reserved**: 現在は常に `0` で、2 つの目的のために予約されています。
   1. 必要に応じて Cell の数を増やすため。
-  1. 既存の ID に干渉することなく将来的に ULID ID 割り当てのバリアントに切り替えられるようにするため。ULID ベースの ID アロケーターは最上位ビットに `タイムスタンプ` 値を持つため、1 ビットを予約するだけで十分ですが、シーケンスビットを最小限にするためにより多くのビットを予約しています。
+  1. 既存の ID に干渉することなく将来的に ULID ID 割り当てのバリアントに切り替えられるようにするため。ULID ベースの ID アロケーターは最上位ビットに `timestamp` 値を持つため、1 ビットを予約するだけで十分ですが、シーケンスビットを最小限にするためにより多くのビットを予約しています。
 - **Sequence**:
-  - レガシー Cell は最初の 1 兆の ID を取得し、各新しいインスタンスはそれぞれ 1,000 億の ID を取得します。この数字にどのようにして至ったかについては、[シーケンス飽和](#シーケンス飽和) セクションを参照してください。
+  - レガシー Cell は最初の 1 兆の ID を取得し、各新しいインスタンスはそれぞれ 1,000 億の ID を取得します。この数字にどのようにして至ったかについては、[シーケンス飽和](#sequence-saturation) セクションを参照してください。
   - レガシー Cell を除くと、本番環境で 1,441,141 の Cell をサポートします（57 ビットを使用）。
 
 Topology Service の `config.toml` の例:
@@ -195,7 +195,7 @@ maxval = 1101000000000
 skip_range_validation = true # For short lived cells, min 100 billion IDs validation can be skipped
 ```
 
-##### Cell ブートストラップシーケンス変更プロセス
+##### Cell ブートストラップシーケンス変更プロセス {#cell-bootstrap-sequence-altering-process}
 
 1. **データベース準備ステージ**
 
@@ -265,14 +265,14 @@ skip_range_validation = true # For short lived cells, min 100 billion IDs valida
 
    この設計により、各 Cell が初期プロビジョニング中に一意の重複しないシーケンス範囲を取得することが保証されます。
 
-##### シーケンス飽和
+##### シーケンス飽和 {#sequence-saturation}
 
 本書執筆時点で、レガシー Cell の最大 ID は約 110 億（`security_findings` テーブルの PK）でした。
 
 - 1 兆の ID があれば、レガシー Cell が約 91 倍成長できます。
 - Cells アーキテクチャの目標が新しいインスタンスのデータベース成長を制御することであることを考えると、1,000 億の ID も十分なスペースを提供するはずです。
 
-###### 飽和しているシーケンスのシーケンス範囲のバンプ
+###### 飽和しているシーケンスのシーケンス範囲のバンプ {#bumping-sequence-range-for-saturating-sequences}
 
 これは GitLab.com の動作にとって重要な部分であるため、[merge_requests/8630](https://gitlab.com/gitlab-com/runbooks/-/merge_requests/8630) で各シーケンスの飽和モニタリングを導入しました。
 
@@ -318,7 +318,7 @@ skip_range_validation = true # For short lived cells, min 100 billion IDs valida
 
 3. cell-2 インスタンスで `gitlab:db:increase_sequence_range['security_findings_id_seq', 'web_hook_logs_id_seq']` を実行するために CR を開きます。
 
-上記の手動プロセスは、これがほとんど発生しないため退屈なソリューションとして採用されています。
+上記の手動プロセスは、これがほとんど発生しないため、シンプルで実績のあるソリューションとして採用されています。
 [Issue#540801](https://gitlab.com/gitlab-org/gitlab/-/issues/540801) では、必要に応じてシーケンス範囲を自動的に増分する Cell 内で実行される cron を持つことで、このプロセスを自動化します。
 
 NOTE:
@@ -351,7 +351,7 @@ service SequenceService {
 }
 ```
 
-#### ワークフロー
+#### ワークフロー {#workflow}
 
 ```mermaid
 sequenceDiagram
@@ -431,7 +431,7 @@ sequenceDiagram
     end
 ```
 
-### Claim Service
+### Claim Service {#claim-service}
 
 Claim Service は gRPC プロトコルのみで提供されます。Classify Service のような REST API はありません。これは API インターフェースの簡略化されたバージョンです。
 
@@ -510,7 +510,7 @@ service ClaimService {
 }
 ```
 
-このサービスの目的は、アイデンティティが特定の時間に特定の Cell の特定のリソースにのみ属することを保証する方法を提供することです（リソースは後で別の Cell に移行できます）。
+このサービスの目的は、アイデンティティが常に曖昧でなく、特定の時点で特定の Cell の特定のリソースにのみ属することを保証する方法を提供することです（リソースは後で別の Cell に移行できます）。
 
 ユーザーを例に取ります。ここでのユーザーは次のものを claim する必要があるリソースです。
 
@@ -542,7 +542,7 @@ claim を行うために、Cell は `CreateClaimRequest` を送信できます�
 
 列挙型のリストは最終的なものではなく、時間とともに拡張できることに注意してください。
 
-#### Rails での Claim Service の使用例
+#### Rails での Claim Service の使用例 {#example-usage-of-claim-service-in-rails}
 
 ```ruby
 class User < MainClusterwide::ApplicationRecord
@@ -563,7 +563,7 @@ end
 `CellsUniqueness` concern は `cell_cluster_unique_attributes` を実装します。
 concern はトランザクション内での Claims の Topology Service gRPC エンドポイント呼び出しを行うために、before および after フックを登録します。
 
-### Classify Service
+### Classify Service {#classify-service}
 
 ```proto
 enum ClassifyAction {
@@ -610,7 +610,7 @@ service ClassifyService {
 
 パスから `bucket` を推定するパスベースのルーティングロジックについては、[HTTP ルーターブループリント](http_routing_service.md)を参照してください。
 
-#### Classify Service を使用したネームスペースパス分類ワークフロー
+#### Classify Service を使用したネームスペースパス分類ワークフロー {#namespace-path-classification-workflow-with-classify-service}
 
 ```mermaid
 sequenceDiagram
@@ -629,7 +629,7 @@ sequenceDiagram
     HTTP Router->>User1: Issues Page Response
 ```
 
-#### Classify Service を使用したセッションクッキー分類ワークフロー
+#### Classify Service を使用したセッションクッキー分類ワークフロー {#session-cookie-classification-workflow-with-classify-service}
 
 ```mermaid
 sequenceDiagram
@@ -650,7 +650,7 @@ sequenceDiagram
 
 セッションクッキーは `session_prefix` の値で検証されます。
 
-### Metadata Service（**将来的な機能**、Cells 1.5 で実装）
+### Metadata Service（**将来的な機能**、Cells 1.5 で実装） {#metadata-service-future-implemented-for-cells-15}
 
 Metadata Service は Cell がクラスター全体で情報を配布する方法です。
 
@@ -712,7 +712,7 @@ service MetadataService {
 }
 ```
 
-#### 例: Cell によるユーザープロファイルの公開
+#### 例: Cell によるユーザープロファイルの公開 {#example-user-profile-published-by-a-cell}
 
 ```mermaid
 sequenceDiagram
@@ -731,7 +731,7 @@ sequenceDiagram
     TS ->>- Cell 1: global => "{username:'joerubin',displayName:'Rubin is on PTO'}"
 ```
 
-#### 例: ユーザーが属する Organization のグローバルアクセス可能なリスト
+#### 例: ユーザーが属する Organization のグローバルアクセス可能なリスト {#example-globally-accessible-list-of-organizations-to-which-user-belongs}
 
 ```mermaid
 sequenceDiagram
@@ -750,19 +750,19 @@ sequenceDiagram
     TS ->>- Cell 1: cell_1 => "[{id:200,access:'developer'}]", "cell_1"<br/>cell_2 => "[{id:300,access:'developer'},{id:400,access:'owner'}]"
 ```
 
-## 理由
+## 理由 {#reasons}
 
 1. さまざまなサービス（HTTP ルーティングサービス、SSH ルーティングサービス、各 Cell）が使用できる安定した適切に説明されたクラスター全体のサービスセットを提供する。
 1. Cells 1.0 PoC の一部として、予想よりも多くのワークフローをサポートするために堅牢な分類 API が必要であることがわかりました。正しい Cell にルーティングするためにさまざまなリソース（ログイン用のユーザー名、SSH ルーティング用のプロジェクトなど）を分類する必要があります。これにより、First Cell のレジリエンスへの大きな依存関係が生まれます。
 1. 長期的に Cell 全体で情報を渡すための Topology Service を持つことを望んでいます。これにより長期的な方向への最初の一歩を踏み出し、追加の機能をより簡単に実行できるようになります。
 
-## Spanner
+## Spanner {#spanner}
 
-[Spanner](https://cloud.google.com/spanner) は GitLab スタックに導入される新しいデータストアです。Spanner を採用する理由は次のとおりです。
+[Spanner](https://cloud.google.com/spanner)は GitLab スタックに導入される新しいデータストアです。Spanner を採用する理由は次のとおりです。
 
-1. PostgreSQL と比較して、はるかに少ない運用でマルチリージョン読み書きアクセスをサポートし、[リージョナル DR](../disaster_recovery/) に役立ちます
+1. PostgreSQL と比較して、はるかに少ない運用でマルチリージョン読み書きアクセスをサポートし、[リージョナル DR](../disaster_recovery/)に役立ちます
 1. データは書き込み重視ではなく読み取り重視です。
-1. Spanner はマルチリージョンデプロイメントを使用する場合に [99.999%](https://cloud.google.com/spanner/sla) の SLA を提供します。
+1. Spanner はマルチリージョンデプロイメントを使用する場合に [99.999%](https://cloud.google.com/spanner/sla)の SLA を提供します。
 1. グローバルに分散されながらも一貫性を提供します。
 1. シャード/[スプリット](https://cloud.google.com/spanner/docs/schema-and-data-model#database-splits)が自動的に処理されます。
 
@@ -774,13 +774,13 @@ Spanner を使用することのデメリット:
     - 防止方法: 実際の PostgreSQL もサポートする。開発者にはデフォルトでローカル開発用にこれを実行します。
 1. 運用/開発に習熟する必要がある全く新しいデータストアです。
 
-### GoogleSQL vs PostgreSQL ダイアレクト
+### GoogleSQL vs PostgreSQL ダイアレクト {#googlesql-vs-postgresql-dialects}
 
-Spanner は [GoogleSQL](https://cloud.google.com/spanner/docs/reference/standard-sql/overview) と [PostgreSQL](https://cloud.google.com/spanner/docs/reference/postgresql/overview) の 2 つのダイアレクトをサポートします。
+Spanner は [GoogleSQL](https://cloud.google.com/spanner/docs/reference/standard-sql/overview)と [PostgreSQL](https://cloud.google.com/spanner/docs/reference/postgresql/overview)の 2 つのダイアレクトをサポートします。
 両方のダイアレクトが[同じコア機能、パフォーマンス、スケーラビリティを提供する](https://cloud.google.com/spanner/docs/choose-googlesql-or-postgres)と言われています。
 ただし、データベースを作成する際にダイアレクトを事前に決定する必要があり、[複雑な移行プロセス](https://cloud.google.com/spanner/docs/migration-overview)なしにダイアレクトを変更する方法がないため、2 つの異なるデータベースとして扱う必要があります。
 
-次の理由から、Topology Service には `GoogleSQL` ダイアレクトを使用し、接続には [go-sql-spanner](https://github.com/googleapis/go-sql-spanner) を使用します。
+次の理由から、Topology Service には `GoogleSQL` ダイアレクトを使用し、接続には [go-sql-spanner](https://github.com/googleapis/go-sql-spanner)を使用します。
 
 1. Go の標準ライブラリ `database/sql` を使用することで、セルフマネージドのサポートに必要な実装の交換が可能になります。
 1. GoogleSQL の[データ型](https://cloud.google.com/spanner/docs/reference/standard-sql/data-types)はより狭く、int32 などを選択するミスを防ぎます（int64 のみをサポートします）。
@@ -789,17 +789,17 @@ Spanner は [GoogleSQL](https://cloud.google.com/spanner/docs/reference/standard
 
 次の理由から、ローカル開発には `PostgreSQL` ダイアレクトではなく実際の PostgreSQL を使用します。
 
-1. [`PGAdapter`](https://cloud.google.com/spanner/docs/pgadapter) は `PostgreSQL` ダイアレクトベースの Spanner データベースでのみ機能するため、`GoogleSQL` ダイアレクトベースの Spanner データベースに対して使用できません。
+1. [`PGAdapter`](https://cloud.google.com/spanner/docs/pgadapter)は `PostgreSQL` ダイアレクトベースの Spanner データベースでのみ機能するため、`GoogleSQL` ダイアレクトベースの Spanner データベースに対して使用できません。
 1. [`PostgreSQL` ダイアレクト](https://cloud.google.com/spanner/docs/reference/postgresql/overview)は実際の `PostgreSQL` とは大きく異なります。これは厳密なサブセットではないため、ダイアレクト用に書かれたコードが実際の `PostgreSQL` で期待通りに動作しない場合があります。
 1. 実際の `PostgreSQL` は `Spanner` ほどスケールしない場合がありますが、ローカル開発に適しており、セルフマネージド環境には十分である可能性があります。
 1. エミュレートされた Spanner をローカルで実行するには Docker または互換のコンテナエンジンが必要であり、現在すべての開発者が GDK を使用するために厳密に必要とされているわけではありません。[エミュレートされた Spanner はメモリにデータのみを保存](https://cloud.google.com/spanner/docs/emulator)し、すべての状態（データ、スキーマ、設定を含む）は再起動時に失われます。これは便利ではなく、Cell 自体のデータとのデータ不整合を引き起こす可能性があります。開発者は `GoogleSQL` ダイアレクト Spanner の実装を開発およびデバッグするために使用できますが、特に Topology Service を直接作業していない開発者にとっては、ほとんどの開発者のデフォルトにはなりません。CI では実際の PostgreSQL データベースとエミュレートされた `GoogleSQL` Spanner の両方に対してテストを実行します。
 
 引用:
 
-1. Google (n.d.). _PostgreSQL interface for Spanner._ Google Cloud. Retrieved April 1, 2024, from <https://cloud.google.com/spanner/docs/postgresql-interface>
-1. Google (n.d.). _Dialect parity between GoogleSQL and PostgreSQL._ Google Cloud. Retrieved April 1, 2024, from <https://cloud.google.com/spanner/docs/reference/dialect-differences>
+1. Google (n.d.). _PostgreSQL interface for Spanner._ Google Cloud. 2024 年 4 月 1 日取得、 <https://cloud.google.com/spanner/docs/postgresql-interface>
+1. Google (n.d.). _Dialect parity between GoogleSQL and PostgreSQL._ Google Cloud. 2024 年 4 月 1 日取得、 <https://cloud.google.com/spanner/docs/reference/dialect-differences>
 
-### マルチリージョン
+### マルチリージョン {#multi-regional}
 
 マルチリージョン読み書きの実行は Spanner の最大のセールスポイントの一つです。
 インスタンスをプロビジョニングするときに、シングルリージョンまたはマルチリージョンを選択できます。
@@ -816,9 +816,9 @@ Cloud Spanner には事前定義された[インスタンス設定](https://clou
 
 この設定の[推定コスト](https://cloud.google.com/products/calculator?hl=en&dl=CjhDaVJpWldSalpUVmxOeTAxWXprekxUUTBPR1l0T1RJeU5DMW1PVEUwTnpVMVpXTXpZVEFRQVE9PRAOGiRDRENBM0ZENy0zQ0Y5LTQ1MkQtQkJBMi04NUZGNjU1RUVBM0U)は仮想コンピュートの使用量（5 ノード、1 TB のストレージ、Enterprise Plus エディション）に基づいて月額約 11,838.94 ドルです。
 
-#### Topology Service のマルチリージョンデプロイのアーキテクチャ
+#### Topology Service のマルチリージョンデプロイのアーキテクチャ {#architecture-of-multi-regional-deployment-of-topology-service}
 
-Topology Service とそのストレージ（Cloud Spanner）は 2 つのリージョンにデプロイされ、リージョナル障害の場合にレジリエンスを提供し、それらのエリアのユーザーのレイテンシを削減します。HTTP ルーターサービスはパブリックロードバランサーを通じて Topology Service に接続し、内部 Cell はPrivate Service Connect を使用して通信します。このセットアップにより、イングレスおよびエグレストのコストを最小化できます。
+Topology Service とそのストレージ（Cloud Spanner）は 2 つのリージョンにデプロイされ、リージョナル障害の場合にレジリエンスを提供し、それらのエリアのユーザーのレイテンシを削減します。HTTP ルーターサービスはパブリックロードバランサーを通じて Topology Service に接続し、内部 Cell は Private Service Connect を使用して通信します。このセットアップにより、イングレスおよびエグレスのコストを最小化できます。
 
 ```mermaid
 graph TD;
@@ -877,22 +877,22 @@ graph TD;
 
 引用:
 
-1. Google (n.d.). Using private service connect with cloudrun services. Google Cloud. Retrieved Nov 11, 2024, from <https://cloud.google.com/vpc/docs/private-service-connect>
-1. Google (n.d.). How multi-region with cloud spanner works. Google Cloud. Retrieved Nov 11, 2024,<https://cloud.google.com/blog/topics/developers-practitioners/demystifying-cloud-spanner-multi-region-configurations>
+1. Google (n.d.). Using private service connect with cloudrun services. Google Cloud. 2024 年 11 月 11 日取得、 <https://cloud.google.com/vpc/docs/private-service-connect>
+1. Google (n.d.). How multi-region with cloud spanner works. Google Cloud. 2024 年 11 月 11 日取得、<https://cloud.google.com/blog/topics/developers-practitioners/demystifying-cloud-spanner-multi-region-configurations>
 1. [Private Service Connect の ADR](decisions/004_vpc_subnet_design.md)
 
-### パフォーマンス
+### パフォーマンス {#performance}
 
 スキーマが完全に設計されていないため、ベンチマークは自分たちでは実行していません。
 ただし、[パフォーマンスドキュメント](https://cloud.google.com/spanner/docs/performance)を見ると、Spanner インスタンスの読み取りと書き込みのスループットは、コンピュート容量を追加するにつれて線形にスケールします。
 
-### 代替案
+### 代替案 {#alternatives}
 
 1. PostgreSQL: マルチリージョンデプロイメントには多くの運用が必要です。
 1. ClickHouse: `OLAP` データベースであり `OLTP` ではありません。
 1. Elasticsearch: 検索および分析ドキュメントストアです。
 
-## ディザスタリカバリ
+## ディザスタリカバリ {#disaster-recovery}
 
 Topology Service については、[GitLab.com のディザスタリカバリポリシー](/handbook/engineering/gitlab-com/policies/disaster-recovery)に準拠する必要があります。
 このサービスはクリティカルパスにあるため、リカバリのウィンドウを小さくする必要があります。
@@ -900,9 +900,9 @@ Topology Service については、[GitLab.com のディザスタリカバリポ
 サービスはステートレスであり、Runway を使用して複数のリージョンにデプロイされます。
 状態は Cloud Spanner に保存され、[マルチリージョン](./decisions/015_spanner_multiregional/)として設定されています。これにより、リージョン障害に対して 1 分未満の RTO と RPO で自動フェイルオーバーが提供され、99.999% の可用性が確保されます。
 
-### バックアップ戦略
+### バックアップ戦略 {#backup-strategy}
 
-#### Cloud Spanner データベース
+#### Cloud Spanner データベース {#cloud-spanner-databases}
 
 | 項目 | 詳細 |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -915,21 +915,21 @@ Topology Service については、[GitLab.com のディザスタリカバリポ
 | モニタリング | [進行中](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/cells-infrastructure/team/-/issues/471) |
 | リストア検証 | [進行中](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/cells-infrastructure/team/-/issues/483) |
 
-### Point-in-Time Recovery（PITR）
+### Point-in-Time Recovery（PITR） {#point-in-time-recovery-pitr}
 
 - **保持期間**: 36 時間 - [パフォーマンスとリカバリ可能性のバランスを取るために選択](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/cells-infrastructure/team/-/issues/301)
 - **ユースケース**: 保持期間内に発見された論理的な破損や失敗したマイグレーション
 - **利点**: マイクロ秒の精度で任意の時点への正確なリカバリ
 - **パフォーマンスへの影響**: [予想される負荷レベルで有意なパフォーマンス低下なし](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/cells-infrastructure/team/-/issues/474#note_2720927646)
 
-### 増分バックアップ
+### 増分バックアップ {#incremental-backups}
 
 - **スケジュール**: 24 時間ごと
 - **保持期間**: 90 日
 - **ユースケース**: PITR ウィンドウが切れた後に発見された論理的な破損に対するストレージ効率の高い保護
 - **利点**: フルバックアップと比較してストレージコストが低く、バックアップ時間が短い。バックアップは読み書きまたは読み取り専用レプリカのいずれかを含むすべてのゾーンに保存されます。
 
-### 追加の保護対策
+### 追加の保護対策 {#additional-protection-measures}
 
 バックアップ以外にもいくつかの保護レイヤーを実装します。
 
@@ -937,17 +937,17 @@ Topology Service については、[GitLab.com のディザスタリカバリポ
 2. **マルチリージョン設定**はリージョナル障害に対して自動フェイルオーバーを提供します
 3. **アプリケーションレベルの保護** [spanner.databaseUser が使用されており、データベースを削除したりバックアップを変更したりするアクセス権がありません](https://cloud.google.com/spanner/docs/iam#spanner.databaseUser)
 
-## リカバリシナリオ
+## リカバリシナリオ {#recovery-scenarios}
 
 | シナリオ | リカバリ方法 | RTO | RPO |
 |----------|----------------|-----|-----|
 | 論理的な破損（36 時間未満） | PITR | 分 | 秒 |
 | リージョナル障害 | マルチリージョンフェイルオーバー | 1 分未満 | 1 分未満 |
-| 論理的な破損（36 時間以上） | 増分バックアップ | 再デプロイを含む約 1.5 時間 | 24 時間 |
+| 論理的な破損（36 時間超） | 増分バックアップ | 再デプロイを含む約 1.5 時間 | 24 時間 |
 | マルチリージョン災害 | マルチリージョンフェイルオーバー | 1 分未満 | 1 分未満 |
 | 完全なマルチリージョン障害 | バックアップリストア | 再デプロイを含む約 1.5 時間 | 24 時間 |
 
-## ストレージの考慮事項
+## ストレージの考慮事項 {#storage-considerations}
 
 Cloud Spanner はマルチバージョン同時実行制御（MVCC）を使用し、保持期間内のすべてのデータバージョンを保存します。この設計は:
 
@@ -956,13 +956,13 @@ Cloud Spanner はマルチバージョン同時実行制御（MVCC）を使用�
 - 期限切れバージョンのガベージコレクションが必要です
 - 非常に高い更新レートでパフォーマンスに影響を与える可能性があります
 
-## 引用
+## 引用 {#citations}
 
-1. Google (n.d.). _Choose between backup and restore or import and export._ Google Cloud. Retrieved April 2, 2024, from <https://cloud.google.com/spanner/docs/backup/choose-backup-import>
+1. Google (n.d.). _Choose between backup and restore or import and export._ Google Cloud. 2024 年 4 月 2 日取得、 <https://cloud.google.com/spanner/docs/backup/choose-backup-import>
 2. Google (n.d.). _Disaster recovery overview._ Google Cloud. <https://cloud.google.com/spanner/docs/backup/disaster-recovery-overview>
 3. Google (n.d.). _Point-in-time recovery overview._ Google Cloud. <https://cloud.google.com/spanner/docs/pitr>
 
-## FAQ
+## FAQ {#faq}
 
 1. Topology Service は Cells 1.0 のすべてのサービスを実装しますか？
 
@@ -977,11 +977,11 @@ Cloud Spanner はマルチバージョン同時実行制御（MVCC）を使用�
 
 1. Topology Service はどこにどのようにデプロイされますか？
 
-    データストレージに [Spanner](https://cloud.google.com/spanner) を使用するように設定した [Runway](../../../infrastructure-platforms/tools/runway/) を使用します。
+    [Runway](../../../infrastructure-platforms/tools/runway/)を使用し、データストレージには [Spanner](https://cloud.google.com/spanner)を使用するように Topology Service を設定します。
 
 1. Topology Service はリージョンをどのように処理しますか？
 
-    [Spanner](https://cloud.google.com/spanner) がリージョナルデータベースサポートと高性能な読み取りアクセスを提供することを期待しています。その場合、Topology Service は同じマルチ書き込みデータベースに接続した各リージョンで実行されます。負荷に応じて望ましいレプリカ数/ポッド数にスケールアップできるリージョンごとに 1 つの Topology Service デプロイメントを想定しています。
+    [Spanner](https://cloud.google.com/spanner)がリージョナルデータベースサポートと高性能な読み取りアクセスを提供することを期待しています。その場合、Topology Service は同じマルチ書き込みデータベースに接続した各リージョンで実行されます。負荷に応じて望ましいレプリカ数/ポッド数にスケールアップできるリージョンごとに 1 つの Topology Service デプロイメントを想定しています。
 
 1. Topology Service 情報は実行時に暗号化されますか？
 
@@ -991,11 +991,12 @@ Cloud Spanner はマルチバージョン同時実行制御（MVCC）を使用�
 
     これはまだ定義されていません。データは転送中（TLS/gRPC および HTTPS）および保存時は Spanner によって暗号化されます。
 
-## リンク
+## リンク {#links}
 
 - [ルーティングサービス](http_routing_service.md)
+- [Topology Service のトランザクション動作](topology_service_transactional_behavior.md)
 
-### Topology Service の議論
+### Topology Service の議論 {#topology-service-discussions}
 
 - [Topology Service PoC](https://gitlab.com/gitlab-org/tenant-scale-group/pocs/global-service)
 - [Topology Service Fastboot プレゼンテーション](https://docs.google.com/presentation/d/12NlfOwolRf10DSLszQi9NjxFy0UUKc2XVC2kYW0HFGk/edit#slide=id.g2cd2d29ce3d_0_147)

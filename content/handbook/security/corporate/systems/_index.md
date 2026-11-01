@@ -2,16 +2,16 @@
 title: CorpSec システムと Tech Stack
 description: Corporate Security 部門は、当社が管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けに構成管理エンジニアリングとテックサポートヘルプデスクサービスを提供しています。システムディレクトリには、当社のすべてのシステムの一覧と、管理ランブック、エンドユーザードキュメント、Issue テンプレート、メンション可能なグループ、GitLab のエピック・Issue・マージリクエストで使用されるタグへのクイックリファレンスリンクが記載されています。
 upstream_path: /handbook/security/corporate/systems/
-upstream_sha: c9949657c5872e30f062664ae031e45198aa8562
-translated_at: "2026-10-23T21:24:58+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T17:30:27+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-23T12:38:14-05:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ## 部門横断的なシステムオーナー {#cross-department-system-owners}
 
-GitLab がオーガニックに成長するにつれて、いくつかの部門と機能グループは、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスのフレームワーク内で、その部門または機能グループに固有の Tech Stack アプリケーションの日常管理を担当する独自のシステム管理者 (「システムオーナー」) を擁するようになりました。GitLab の各 [Tech Stack アプリケーション](/handbook/business-technology/tech-stack-applications/) には、(その部門または機能グループで) そのアプリケーションの導入と、これを利用するチームメンバーへの日常運用サポートを担当する DRI であるシステムオーナーがいます。これには、従来の IT 部門がボトルネックになることを防ぎ、各部門が GitLab の [適切なグループのための効率性](/handbook/values/#efficiency-for-the-right-group) サブバリューの一環としてセルフサービスできるという利点もあります。
+GitLab がオーガニックに成長するにつれて、いくつかの部門と機能グループは、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスのフレームワーク内で、その部門または機能グループに固有の Tech Stack アプリケーションの日常管理を担当する独自のシステム管理者 (「システムオーナー」) を擁するようになりました。GitLab の各 [Tech Stack アプリケーション](/handbook/business-technology/tech-stack-applications/)には、(その部門または機能グループで) そのアプリケーションの導入と、これを利用するチームメンバーへの日常運用サポートを担当する DRI であるシステムオーナーがいます。これには、従来の IT 部門がボトルネックになることを防ぎ、各部門が GitLab の適切なグループのための効率性サブバリューの一環としてセルフサービスできるという利点もあります。
 
 - [Customer Success Operations](/handbook/sales/field-operations/customer-success-operations/)
 - [(Business Intelligence) Data Team](/handbook/enterprise-data/)
@@ -25,7 +25,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 
 ## CorpSec システムディレクトリ {#corpsec-systems-directory}
 
-Corporate Security 部門は、当社が管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けに構成管理エンジニアリングとテックサポート [ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services) を提供しています。
+Corporate Security 部門は、当社が管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けに構成管理エンジニアリングとテックサポート [ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services)を提供しています。
 
 <table>
 <thead>
@@ -153,7 +153,7 @@ Corporate Security 部門は、当社が管理する全社規模のシステム�
 </tr>
 <!-- AWS (sandbox) -->
 <tr>
-<td><a href="/handbook/security/corporate/systems/aws/sandbox">Amazon Web Services (sandbox)</a><br><code>x3027</code> Organization</td>
+<td><a href="/handbook/security/corporate/systems/aws/sandbox">Amazon Web Services (sandbox)</a><br><code>x3027</code> 組織</td>
 <td>
 <i class="fas fa-cloud-arrow-up mr-2"></i><a href="/handbook/security/corporate/systems/aws/sandbox/accounts">自分の AWS アカウントを作成</a><br>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=aws_sandbox_default">エンジニアリング Issue</a>
@@ -177,7 +177,7 @@ Corporate Security 部門は、当社が管理する全社規模のシステム�
 </tr>
 <!-- AWS (systems) -->
 <tr>
-<td><a href="/handbook/security/corporate/systems/aws/systems">Amazon Web Services (systems)</a><br><code>x6658</code> Organization<br><small>CorpSec、InfraSec、SIRT 用の安全なアカウント</small></td>
+<td><a href="/handbook/security/corporate/systems/aws/systems">Amazon Web Services (systems)</a><br><code>x6658</code> 組織<br><small>CorpSec、InfraSec、SIRT 用の安全なアカウント</small></td>
 <td>
 <i class="fas fa-user-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=aws_systems_sysadmin">システム管理者アクセスリクエスト</a><br>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=aws_systems_default">エンジニアリング Issue</a>
@@ -199,7 +199,7 @@ Corporate Security 部門は、当社が管理する全社規模のシステム�
 </tr>
 <!-- AWS (dedicated-dev) -->
 <tr>
-<td><a href="/handbook/security/corporate/systems/aws/dedicated-dev">Amazon Web Services (dedicated-dev)</a><br><code>x3675</code> Organization</td>
+<td><a href="/handbook/security/corporate/systems/aws/dedicated-dev">Amazon Web Services (dedicated-dev)</a><br><code>x3675</code> 組織</td>
 <td>
 <i class="fas fa-cloud-arrow-up mr-2"></i><a href="/handbook/security/corporate/systems/aws/dedicated-dev/accounts">自分の AWS アカウントを作成</a><br>
 <i class="fas fa-user-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=aws_dedicated_dev_default">アクセスリクエストを作成</a><br>
@@ -224,7 +224,7 @@ Corporate Security 部門は、当社が管理する全社規模のシステム�
 </tr>
 <!-- AWS (dedicated-prd) -->
 <tr>
-<td><a href="/handbook/security/corporate/systems/aws/dedicated-prd">Amazon Web Services (dedicated-prd)</a><br><code>x0475</code> Organization</td>
+<td><a href="/handbook/security/corporate/systems/aws/dedicated-prd">Amazon Web Services (dedicated-prd)</a><br><code>x0475</code> 組織</td>
 <td>
 <i class="fas fa-user-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=aws_dedicated_prd_default">システム管理者アクセスリクエスト</a><br>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=aws_dedicated_prd_default">エンジニアリング Issue</a>
@@ -246,7 +246,7 @@ Corporate Security 部門は、当社が管理する全社規模のシステム�
 </tr>
 <!-- AWS (dedicated-pubsec) -->
 <tr>
-<td><a href="/handbook/security/corporate/systems/aws/dedicated-pubsec">Amazon Web Services (dedicated-pubsec)</a><br><code>x9885</code> Organization</td>
+<td><a href="/handbook/security/corporate/systems/aws/dedicated-pubsec">Amazon Web Services (dedicated-pubsec)</a><br><code>x9885</code> 組織</td>
 <td>
 <i class="fas fa-user-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=aws_dedicated_pubsec_default">システム管理者アクセスリクエスト</a><br>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=aws_dedicated_pubsec_default">エンジニアリング Issue</a>
@@ -292,7 +292,7 @@ Corporate Security 部門は、当社が管理する全社規模のシステム�
 <!-- Domain Names -->
 <tr>
 <td>
-ドメイン名<br><small><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a> が管理</small></td>
+ドメイン名<br><small><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a>が管理</small></td>
 <td>
 <i class="fas fa-cart-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">購入リクエスト</a><br>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">エンジニアリング Issue</a>
@@ -312,7 +312,7 @@ Corporate Security 部門は、当社が管理する全社規模のシステム�
 <!-- DNS Records -->
 <tr>
 <td>
-DNS レコード<br><small><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a> が管理</small></td>
+DNS レコード<br><small><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a>が管理</small></td>
 <td>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">更新リクエスト</a><br>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">エンジニアリング Issue</a>

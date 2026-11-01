@@ -1,31 +1,127 @@
 ---
 title: Switchboard チーム
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:30:34+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T15:27:34.435677+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-16T19:52:00+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#summary}
 
-Switchboard は [Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)内のチームです。私たちのミッションは、外部の GitLab Dedicated 顧客が自分のテナント環境を管理できるようにし、GitLab Dedicated オファリングをスケールアップできるように Environment Automation チームの運用負荷を削減することです。このページに明示的に記載されている違いを除き、私たちは [Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)と同じプロセスに従います。
+Switchboard は GitLab Dedicated のコントロールプレーンです。[Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)内で密接に連携する 2 つのファンクショナルチーム、**Switchboard Orchestration API** と **Switchboard Customer Features** が開発しています。私たちに共通するミッションは、GitLab Dedicated のお客様がテナント環境で必要なあらゆる情報を確認し、変更できるようにするとともに、社内の運用担当者と自動化に、テナントを運用するための単一で安全な API インターフェースを提供することです。これにより、運用上のトイルを同じ割合で増やすことなく、GitLab Dedicated の提供規模を拡大します。
 
-### リソース
+2 つのチームは単一のコードベースと作業プロセスを共有しているため、両チームの活動方針をこのページに記載しています。ここに明示的に記載されている違いを除き、私たちは [Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)ページに記載されているプロセスに従います。
+
+### リソース {#resources}
 
 - [Switchboard ハンドブックページ](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/)
 - [Switchboard デモライブラリ](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/switchboard/-/blob/main/docs/walkthrough-library.md)
+- [Dedicated Group のファンクショナルチームの活動方針](https://docs.google.com/document/d/1hZmZWgLOcJD0aZaUj5yubT0fBlhRyHXRzTYlXKwlX48/edit)（社内向け）
 
-## チームメンバー
+## チームの活動方針 {#team-charters}
 
-{{< team-by-manager-slug "ashiel" >}}
+Switchboard は Dedicated Group のファンクショナルチームモデルに従います。近接するタイムゾーンにいる少人数のチーム、各チームに 1 人ずつの Tech Lead、Manager、Product Manager、成果物の明確なオーナーシップ、各チームを定義する継続的な課題領域からなるモデルです。以下のセクションでは、各 Switchboard チームのミッション、範囲、メンバー、成功基準を説明します。2 つのチームは、Dedicated フリートの維持に使用する API と自動化ツール、およびその上に構築されるお客様向け UI の境界で分かれています。ただし、機能チームが開発する一部の機能は社内のお客様にも提供され、機能チームは Dedicated のお客様がプログラムからテナントを管理するための API も保守しています。
 
-Product Manager: [Loryn Bortins](https://gitlab.com/lbortins)
-Technical Writer: [Lysanne Pinto](https://gitlab.com/lyspin)
-Product Designer: [Jesse Hoek](https://gitlab.com/jhoek)
+### Switchboard Orchestration API {#switchboard-orchestration-api}
 
-## 私たちとの連携方法
+#### ミッション {#mission}
+
+GitLab Dedicated テナントの運用に必要なあらゆる作業に対応する、適切に管理された API インターフェースとツール / サービス群を提供します。これにより、社内の運用担当者、自動化、お客様向け機能のすべてが、同じ安全で一貫したインターフェースを通じてテナントを操作します。
+
+#### 活動方針 {#charter}
+
+Switchboard Orchestration API チームは、Switchboard API とその背後のオーケストレーションのやり取りを所有します。チームは Dedicated テナントの運用に必要なすべてのやり取りを統合し、他のチームが依存するテナントモデルの各部分のオーナーシップと制御を定義します。また、ビジネスロジックをフロントエンドから API に移し、人と自動化のどちらの利用者にも同じ動作を提供します。
+
+- **対象範囲：** Switchboard Orchestration API と、運用担当者および自動化が使用する統合されたテナント運用ツール群。
+- **対象範囲外：** 社内外のお客様向け UI とワークフロー（Switchboard Customer Features が所有）。Amp と Instrumentor（DevOps Dedicated Orchestration Automation が所有）。
+
+#### FY27 の優先事項 {#fy27-priorities}
+
+- API ファーストのアプローチの採用を完了し、Orchestration API をテナント運用の動作を定義する唯一の情報源にします。FY27 の終わりまでに、API に表現されていないものを残さないようにします。Hosted Runner は、移行が必要だった大規模な機能の代表例です。
+- API と成果物のオーナーシップ、およびテナントモデルの各部分の制御を定義し、他の Dedicated チームが安全にセルフサービスを利用できるようにします
+- DevOps Dedicated Orchestration Automation と Switchboard Customer Features の両チームを、API の主要なお客様として扱います
+
+#### チームメンバー {#team-members}
+
+{{< team-by-manager-slug manager="o-lluch" department="Dedicated Switchboard Team" >}}
+
+#### 責任 {#responsibilities}
+
+チームが支援する対象：
+
+- API が駆動するオーケストレーションプラットフォームを所有する DevOps Dedicated Orchestration Automation
+- API 上にワークフローを構築する Switchboard Customer Features
+- Dedicated テナントを操作する必要がある社内の運用担当者と自動化
+
+チームはこれらのチームと責任範囲の境界を調整し、Service Delivery Platform および Cells の運用チームとの対話を継続します。
+
+所有する成果物：
+
+- Switchboard Orchestration API
+- テナントモデルの各部分のオーナーシップ、スキーマ、アクセス制御
+- 統合されたテナント運用のやり取り
+- ワークフローエンジン
+
+#### 成功の姿 {#what-success-looks-like}
+
+- Switchboard API が Dedicated のすべてのオーケストレーションのニーズに対応します
+- Dedicated のファンクショナルチームが、確立されたユースケースの変化に応じて、カスタマイズされた Switchboard の実装を待たずに、Switchboard の API と機能を独立して利用できます。
+
+影響は [Switchboard パフォーマンス指標（PI）ダッシュボード](https://share-d4dd0a.gitlab.io/switchboard-pi/)でも追跡します。
+
+### Switchboard Features {#switchboard-features}
+
+#### ミッション {#mission-1}
+
+GitLab Dedicated のお客様に、一般的なテナント設定をセルフサービスで制御する機能と全体的な可視性を提供します。日常的な変更から人手を取り除き、SRE のトイルや手動プロセスを増やすことなく Dedicated のテナント数を拡大できるようにします。
+
+#### 活動方針 {#charter-1}
+
+Switchboard Customer Features チームは、お客様向けの Switchboard 製品を所有します。これは、設定とワークフローを自動化する、Dedicated テナント向けのセルフサービス変更管理コンソールです。日常的な変更から人手を取り除き、運用上のトイルを同じ割合で増やすことなくテナント数を増やせることを成功とします。
+
+- **対象範囲：** Tenant Management Console UI、お客様向けのセルフサービス設定、お客様向けのステータスと SLA 情報、セルフサービス移行における顧客体験、SLA と設定へのプログラムによるアクセスを提供する Tenant Admin API。
+- **対象範囲外：** Orchestration API 自体とテナントモデルのガバナンス（Switchboard Orchestration API が所有）、社内の対応担当者向けツール（DevOps Dedicated Responder Automation が所有）。また、基盤となるインフラストラクチャではなく、GitLab アプリケーションやモジュール型機能を設定するための機能は、原則として Switchboard ではなく GitLab Admin UI に追加します。
+
+#### FY27 の優先事項 {#fy27-priorities-1}
+
+- セルフサービスの Geo 移行
+- SLA データとお客様向けのステータスページ
+- GitLab チームメンバーが関与せずにお客様が行えるテナント設定変更の拡充
+
+#### チームメンバー {#team-members-1}
+
+{{< team-by-manager-slug manager="mckgl" department="Dedicated Switchboard Team" >}}
+
+#### 責任 {#responsibilities-1}
+
+チームが支援する対象：
+
+- Dedicated テナントで確認や変更が必要なあらゆる事項についての GitLab Dedicated のお客様
+- Dedicated のエンジニアリングチームおよび Dedicated のお客様と連携する GitLab Dedicated の顧客アカウントチーム（Support Engineering、Customer Success、Solution Architects、Professional Services）
+
+チームは、特に FY28 にさらに多くのモジュール型機能が導入されることを踏まえ、Switchboard Orchestration API、DevOps Dedicated Responder Automation、Orchestration Automation チームと緊密に連携します。
+
+所有する成果物：
+
+- Tenant Management Console UI（Switchboard）
+- お客様向けのセルフサービス設定ワークフロー（Temporal 上に構築）
+- お客様向けのステータスページと SLA データ
+- 社内の運用ワークフロー（メンテナンスなど。こちらも Temporal 上に構築）
+- Tenant Admin API
+- 認証とユーザー管理
+- BigQuery での Switchboard データの利用可能性
+
+#### 成功の姿 {#what-success-looks-like-1}
+
+Dedicated がトイルを増やさずにテナント数を拡大します。日常的な変更はお客様が Switchboard を通じて開始し、完了させ、通常業務の設定変更に GitLab の人手を介入させません。
+
+### 成功指標 {#success-metrics}
+
+[Switchboard パフォーマンス指標（PI）ダッシュボード](https://share-d4dd0a.gitlab.io/switchboard-pi/)で追跡します。
+
+## 私たちとの連携方法 {#working-with-us}
 
 Switchboard チームと関わるには：
 
@@ -47,7 +143,7 @@ Switchboard チームと関わるには：
     - [#g_dedicated-environment-automation-team](https://gitlab.slack.com/archives/C074L0W77V0)
     - [#g_dedicated-us-pubsec](https://gitlab.slack.com/archives/C03R5837WCV)
 
-## Switchboard アプリケーションへのアクセスのリクエスト
+## Switchboard アプリケーションへのアクセスのリクエスト {#requesting-access-to-the-switchboard-application}
 
 アクセスのプロビジョニングは環境によって異なります：
 
@@ -56,7 +152,7 @@ Switchboard チームと関わるには：
 **Test** 環境へのアクセスは **[Lumos](https://app.lumos.app/)** を通じてプロビジョニングされます。Test アクセスに以前使用されていた Okta グループはもう存在しません。
 
 1. `Switchboard Test` の Lumos アクセスリクエストを開きます。
-1. 必要なロール を指定します（下記の [ロールの説明](#roles)を参照）。
+1. 必要なロールを指定します（下記の [ロールの説明](#roles)を参照）。
 1. **Permissions** では、**Other** を選択します（`Dedicated Team Users` が特に必要な場合を除く）。
 1. アクセスの正当性を記載します。
 
@@ -81,7 +177,7 @@ Switchboard チームと関わるには：
 - **Hosted Runner Operator**: テナントインスタンスを表示し、Hosted Runner の設定を管理。このロールは Site Reliability Engineers (SRE) と Switchboard チームメンバーに制限されています。
 - **Operator**: テナントインスタンスを運用。このロールは Site Reliability Engineers (SRE) と Switchboard チームメンバーに制限されています。
 
-### 権限
+### 権限 {#permissions}
 
 | **ロール**                   | テナントの作成 | テナントの表示            | テナント設定の編集 | ジョブの作成        | GitLab ユーザーの追加/変更 | テナントユーザーの追加/変更 | メール/パスワードでログイン | 読み取り専用 API トークンの作成 | 読み取り専用 API アクセス |
 |----------------------------|---------------|-------------------------|--------------------|--------------------|---------------------------|---------------------------|---------------------------|------------|------------|
@@ -94,16 +190,16 @@ Switchboard チームと関わるには：
 
 </details>
 
-## 私たちの働き方
+## 私たちの働き方 {#how-we-work}
 
-### ミーティングとスケジュールされた通話
+### ミーティングとスケジュールされた通話 {#meetings-and-scheduled-calls}
 
 私たちは、[プロジェクト管理セクション](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#project-management)で説明されているように、プロジェクトの Issue トラッカー内で非同期に作業することを優先します。
 
 チームには、いくつかの定期的な同期通話があります：
 
 - `Switchboard Sync` - この通話中、私たちはチームメンバーの日々の作業に関する重要な情報や、同期ディスカッションが必要なプロジェクト項目を共有します
-- 個人コントリビューターと Engineering Manager との 1 対 1
+- Individual Contributor と Engineering Manager との 1 対 1
 
 個人間の Switchboard 作業を議論するための即興 Zoom ミーティングが必要に応じて作成されます。
 これらのミーティングはプライベートでストリーミングされるか、録画され (1*)、[GitLab Unfiltered プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kp3NBMl7c0DGXCjW5rSPeOK)にアップロードされることが期待されます。
@@ -111,9 +207,9 @@ Switchboard チームと関わるには：
 
 `1*` 録画ルールの例外は： 1 対 1 通話、プロジェクト以外の作業に関するディスカッション、当事者が録画に快適でない場合や議論されているコンテンツの性質から録画できない場合。ただし、例外があっても、プロジェクト関連のディスカッションの結果は、メインの Issue トラッカーなどの永続的な場所に記録される必要があります。
 
-### プロジェクトの追跡、計画、デリバリー
+### プロジェクトの追跡、計画、デリバリー {#tracking-planning--delivering-projects}
 
-#### リソース
+#### リソース {#resources-1}
 
 - [Switchboard チームロードマップ](https://gitlab.com/groups/gitlab-com/gl-infra/gitlab-dedicated/-/roadmap?state=all&sort=start_date_asc&layout=WEEKS&timeframe_range_type=CURRENT_QUARTER&label_name[]=group::switchboard&progress=COUNT&show_progress=true&show_milestones=false&milestones_type=ALL&show_labels=false)
 - [Switchboard チームトップレベルエピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1048)
@@ -121,7 +217,7 @@ Switchboard チームと関わるには：
 - [Switchboard テクニカルライティングボード](https://gitlab.com/groups/gitlab-com/gl-infra/gitlab-dedicated/-/boards/7068209?label_name[]=component%3A%3ASwitchboard&label_name[]=Technical%20Writing)
 - [Dedicated Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/?sort=created_date&state=opened&first_page_size=100)
 
-#### 四半期計画
+#### 四半期計画 {#quarterly-planning}
 
 四半期計画は、Switchboard EM と PM によって所有および推進されます。
 
@@ -137,14 +233,14 @@ Switchboard チームと関わるには：
    - 関連エピックを文書化する
 4. EM は、Grand Review で使用される四半期のデリバリーエピックを作成し、この変更を反映するように epic-summaries ボットを更新します
 
-#### 直接責任のある個人 (DRI)
+#### Directly Responsible Individuals (DRIs) {#directly-responsible-individuals-dris}
 
 各プロジェクトは、Directly Responsible Individual または [DRI](/handbook/people-group/directly-responsible-individuals/)によって所有および推進されます。
 Switchboard はクロスファンクショナルチームですが、DRI は、自分の専門知識に関係なく、UX デザイン、製品の決定、フロントエンドおよびバックエンドの実装と、その他のすべてのデリバラブルを含むプロジェクトの出力を提供する責任を負います。
 例えば、DRI がバックエンドエンジニアの場合、すべての Issue を直接実装するわけではないかもしれませんが、他のチームメンバーがプロジェクトを達成するために必要な情報にアクセスできるように、進捗を確認する責任があります。
-DRI はプロジェクトのすべての部分を直接実装するわけではないが、提供される責任を負います。これには、エンジニアリングチーム内で Issue が優先順位付けされることを確保するための EM とのコラボレーション、チーム内のさまざまな機能 (UX、フロントエンド、バックエンド、製品など) と協力してプロジェクトを達成するのに必要な情報にアクセスできるようにする、可能性のあるリスクを強調する、チーム全体での足並みを揃えるなどが含まれます。
+DRI はプロジェクトのすべての部分を直接実装するわけではありませんが、確実に提供する責任を負います。これには、エンジニアリングチーム内で Issue が優先順位付けされることを確保するための EM とのコラボレーション、チーム内のさまざまな機能 (UX、フロントエンド、バックエンド、製品など)と協力してプロジェクトを達成するのに必要な情報にアクセスできるようにする、可能性のあるリスクを強調する、チーム全体での足並みを揃えるなどが含まれます。
 
-私たちは、アイデアについてコラボレーションし、問題を解決するために Issue を使用します。Issue で作業しているすべての人は、最新の決定で説明 (SSoT) を最新の状態に保ち、結果として生じるフォローアップ作業が追跡されていることを確保する責任があります。DRI は、ディスカッションスレッドが決定に達することを確保する責任があります。DRI はまた、スレッドがタイムリーな結論を得ていない場合、同期ディスカッションへの転換を推進すべきです。UX デザインが実装前に合意されている場合、DRI は、MR デリバラブルが Figma で提供されたデザインと一致し、それに応じて承認することを確認することにより、MR レビュープロセスを加速し、PM と UX Designer の作業量を削減できます。
+私たちは、アイデアについてコラボレーションし、問題を解決するために Issue を使用します。Issue で作業しているすべての人は、最新の決定で説明 (SSoT)を最新の状態に保ち、結果として生じるフォローアップ作業が追跡されていることを確保する責任があります。DRI は、ディスカッションスレッドが決定に達することを確保する責任があります。DRI はまた、スレッドがタイムリーな結論を得ていない場合、同期ディスカッションへの転換を推進すべきです。UX デザインが実装前に合意されている場合、DRI は、MR デリバラブルが Figma で提供されたデザインと一致し、それに応じて承認することを確認することにより、MR レビュープロセスを加速し、PM と UX Designer の作業量を削減できます。
 
 プロジェクトの開始時に DRI が従うエピックのリファインメントプロセスは、以下の [エピックのリファインメント](#epic-refinement)セクションで説明されています。DRI は、週次ステータス更新 ([詳細](/handbook/engineering/infrastructure-platforms/project-management/#projects-are-reviewed-weekly-in-the-grand-review))と、エピックにデモリンクが添付されることを確保する責任もあります ([Switchboard デモ](#switchboard-demos)を参照)。最終のステータス更新を提供し、エピックを閉じる手順は [ここ](/handbook/engineering/infrastructure-platforms/project-management/#when-a-project-is-finished)にあります。
 
@@ -177,7 +273,7 @@ Switchboard チームがエピックをリファインメントするプロセ�
 
 注： 1、2、4 は並行して実行できます
 
-#### Issue のリファインメント
+#### Issue のリファインメント {#issue-refinement}
 
 Switchboard チームが Issue をリファインメントするプロセス：
 
@@ -189,19 +285,19 @@ Switchboard チームが Issue をリファインメントするプロセス：
 1. Issue がフロントエンド実装を必要とする場合、`frontend` ラベルを使用するべきです
 1. DRI は、可能な限り Issue が並行して取り組まれるようにし、複数のエンジニアが単一のエピックに貢献できるようにする
 1. デフォルトは、ディスカッションが中央集中化され、実装が並行して実行され、フロントエンドとバックエンドのエンジニアが同期されるように、単一の機能のフロントエンドとバックエンドの実装の両方を同じ Issue に保持することです
-1. 実装が API エンドポイントの修正または作成を必要とする場合、再作業を避けるために、エンドポイント、params 構造、戻りデータ構造の計画は、フロントエンドとバックエンドの間でできるだけ早く合意されるべきです。
+1. 実装が API エンドポイントの修正または作成を必要とする場合、再作業を避けるために、エンドポイント、パラメータ構造、戻りデータ構造の計画は、フロントエンドとバックエンドの間でできるだけ早く合意されるべきです。
 1. フロントエンドとバックエンドの実装は、別々の MR で提供されるべきです
 1. 実装が並行して行えない場合、またはバックエンドとフロントエンドの実装の間に有意な遅延がある可能性がある場合、またはバックエンドが独立して価値を提供できる場合、Issue を分割し、関係を関連する Issue をリンクすることで明確に特定する必要があります
 1. SRE 依存関係は、Issue に明確に文書化された要件で、できるだけ早く呼び出されるべきです ([SRE 依存関係 Issue の例](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/2798))
 
-#### Issue とエピックの追跡
+#### Issue とエピックの追跡 {#issue--epic-tracking}
 
 1. エンジニアは、非同期方式で進捗を共有するために Progress Threads を使用する
 1. Switchboard Sync の開始時に、チームは ~"workflow-infra::In Progress" または ~"workflow-infra::Triage" のラベルが付いたエピックを確認して、期限が適切であることを確認し、ブロッカーを強調する
 1. エピックの DRI は、[Grand Review](/handbook/engineering/infrastructure-platforms/project-management/#projects-are-reviewed-weekly-in-the-grand-review)の準備のために毎週水曜日にエピック説明のステータスを更新する
 1. エピックの DRI は毎週期限をレビューする。エピックのステータス更新には、期限における DRI の信頼レベルと、デリバリーへのリスクが含まれるべきです
 
-#### 作業の選択／次に何をするか
+#### 作業の選択／次に何をするか {#picking-up-work--what-to-work-on-next}
 
 1. [Issue ボード](https://gitlab.com/groups/gitlab-com/gl-infra/gitlab-dedicated/-/boards)の ~"workflow-infra::Ready" カラム
    1. [Issue ボード](https://gitlab.com/groups/gitlab-com/gl-infra/gitlab-dedicated/-/boards/4498935?label_name[]=team%3A%3ASwitchboard)の ~"workflow-infra::Ready" カラムから Issue を選択する
@@ -216,17 +312,17 @@ Switchboard チームが Issue をリファインメントするプロセス：
 1. [Issue ボード](https://gitlab.com/groups/gitlab-com/gl-infra/gitlab-dedicated/-/boards/4498935?label_name[]=team%3A%3ASwitchboard)の `Open` カラム
    1. `Open` カラムの一番上にある Issue を見る
    1. 各 Issue について、不足している情報を特定するために質問しディスカッションを推進する
-   1. 取り組む準備ができている場合は Issue を ~"workflow-infra::Ready" としてマークするか、それを行う自信がない場合は EM に @mention する
+   1. 取り組む準備ができている場合は Issue を ~"workflow-infra::Ready" としてマークするか、それを行う自信がない場合は EM を @メンションする
 
 #### Switchboard デモ {#switchboard-demos}
 
-デモにより、チームメンバーは Issue またはエピックの進捗または最終的な出力を共有できます。フォーカスは情報の共有であり、オスカー受賞ドキュメンタリーを作成することではないので、チームとして私たちは画面録画、録画された Zoom ミーティング、Loom のいずれかの [退屈なソリューション](/handbook/values/#boring-solutions)を使用します。録画へのリンクはエピック説明に追加されます。
+デモにより、チームメンバーは Issue またはエピックの進捗または最終的な出力を共有できます。フォーカスは情報の共有であり、オスカー受賞ドキュメンタリーを作成することではないので、チームとして私たちは画面録画、録画された Zoom ミーティング、Loom のいずれかの退屈なソリューションを使用します。録画へのリンクはエピック説明に追加されます。
 
 エピックの [DRI](/handbook/people-group/directly-responsible-individuals/)は、エピックがキックオフされるときにエピックで提供される少なくとも 1 つのデモを特定する責任を負います。例えば _機能 x が提供されたとき (または Issue y が Done になったとき)、機能 x をデモする_。
 チームメンバーは、すでに予約されている時間中に同期 Q&A が行える可能性があるように、隔週の Switchboard チーム同期の直前にデモを提供するタイミングを取ることが推奨されます。
 チームメンバーは、進捗またはデリバリーマイルストンを共有するための追加のデモを作成することを選択できます。
 
-#### Issue テンプレート
+#### Issue テンプレート {#issue-templates}
 
 Switchboard は以下の Issue テンプレートを保守します：
 
@@ -242,14 +338,14 @@ Switchboard は以下の Issue テンプレートを保守します：
 | `switchboard_team_member_onboarding.md`     | Switchboard EM          | 新しいチームメンバーを Switchboard チームにオンボード                                                                                     |                                                                                                                                     |
 | `switchboard_internal_issue.md`             | Switchboard チームメンバー | このテンプレートは、DRI が既存の明確に定義されたエピックに Issue を作成するために使用されます                                                     |                                                                                                                                     |
 
-### マージリクエストレビューガイドライン
+### マージリクエストレビューガイドライン {#merge-request-review-guidelines}
 
 私たちは特に [GitLab コードレビューガイドライン](#gitlab-code-review-guidelines)に従い、マージリクエストレビューをリクエストする際は
 [Dedicated グループ原則](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#merge-requests)に従います。
 
-#### マージリクエストレビュープロセス
+#### マージリクエストレビュープロセス {#merge-request-review-process}
 
-Switchboard チームは現在小規模なので、'Approve and Merge' アプローチを使用します：
+Switchboard チームは現在小規模なので、'承認してマージ' アプローチを使用します：
 
 1. マージリクエストのレビューの準備ができたら、1 つ以上の [Switchboard のレビュアー](https://gitlab.com/groups/gitlab-dedicated/switchboard/reviewers/-/group_members)を選択します。
    - 誰を選択するかが確実でない場合、[reviewer roulette](#reviewer-roulette)を使ってランダムにレビューアを選択できます。
@@ -259,7 +355,7 @@ Switchboard チームは現在小規模なので、'Approve and Merge' アプロ
 1. マージリクエストが必要な承認を持っている場合、レビューアはパイプラインをトリガーし、自動マージを設定します。
    - レビューアにマージ権限がない場合、マージするためにメンテナを探すべきです。
 
-##### 追加の UI レビュープロセス
+##### 追加の UI レビュープロセス {#additional-ui-review-process}
 
 上記に加えて、UI への変更が提案される際は、以下の追加手順に従う必要があります：
 
@@ -274,15 +370,15 @@ Switchboard チームは現在小規模なので、'Approve and Merge' アプロ
 
 1. デザイン変更、コピー変更、製品要件など、Issue 上の未解決の質問を特定することは非常に重要で、MR 段階での曖昧さを避けます。これは、UI コード変更が開始される前に、Issue 内でのデザインディスカッションを通じて具体的な結論を出す必要があります。
 1. MR 段階で UX/製品の部分が欠けている場合、DRI と Issue の担当者は、欠けている部分が MR で解決できるか、解決のために Issue に戻す必要があるかを決定するためにコラボレーションします。これは [DRI の定義](/handbook/people-group/directly-responsible-individuals/#empowering-dris)に従ったものです。
-1. PM とデザイナーは、これらのリクエストを最優先で処理します。
+1. PM と Designer は、これらのリクエストを最優先で処理します。
 1. PM をレビューアとして MR に追加し、最新情報を伝えます。このレビューは MR の進捗を妨げず、PM はそれを高い優先度で処理します。理想的には、製品要件は Issue で確定すべきです。
 1. 新しいコピーの変更がある場合は、Technical Writer をレビューアとして追加して情報を提供し、これはブロックしません (コピーは Issue で合意するべきです)。さらに、`Technical Writing` タグを MR に追加します。
 1. UX Designer を MR で cc し、UX Designer がコアレビューアになる準備ができたら、そのことがチームに伝えられます
 
- **注：** UI 変更 (社内または顧客向け) で MR がオープンされた後にかなりのディスカッションが必要になった場合、そのディスカッションは解決のために Issue に戻され、MR はブロックされたとマークされるべきです。これらのディスカッションは解決の優先度が高く、MR で進捗を再開できるまで Issue は PM とデザイナーに割り当てるべきです。
+ **注：** UI 変更 (社内または顧客向け)で MR がオープンされた後にかなりのディスカッションが必要になった場合、そのディスカッションは解決のために Issue に戻され、MR はブロックされたとマークされるべきです。これらのディスカッションは解決の優先度が高く、MR で進捗を再開できるまで Issue は PM と Designer に割り当てるべきです。
 注：
 
-- 私たちは、これをサポートするチームメンバーがあり次第、2 つのレビューを必要とする典型的な 'reviewers and maintainers' アプローチに移行することを意図しています。
+- 私たちは、これをサポートするチームメンバーがあり次第、2 つのレビューを必要とする典型的な 'レビューアとメンテナ' アプローチに移行することを意図しています。
 - マージリクエストは [承認ガイドライン](#approval-guidelines)に基づいて承認されるべきです。
 - [GitLab レビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html#merging-a-merge-request)に従って、作成者がマージリクエストをマージするのが適切なシナリオがあります： ブロッキングコメントがなく、マージリクエストが必要なすべての承認を持っている場合、作成者またはメンテナがマージできます。
 - Switchboard プロジェクトは [マージ結果パイプライン](https://docs.gitlab.com/ee/ci/pipelines/merged_results_pipelines.html)を使用するように設定されており、つまり、レビューアは更新が最新の main ブランチと互換性があることを保証するために、マージ前にパイプラインを実行する必要があります。
@@ -297,7 +393,7 @@ Switchboard チームは現在小規模なので、'Approve and Merge' アプロ
 | `~backend` の変更        | [Backend maintainer](https://gitlab.com/groups/gitlab-dedicated/switchboard/maintainers/-/group_members)。 |
 | `~frontend` の変更       | [Frontend maintainer](https://gitlab.com/groups/gitlab-dedicated/switchboard/maintainers/-/group_members)。 |
 
-#### Reviewer roulette
+#### Reviewer roulette {#reviewer-roulette}
 
 Reviewer roulette は、GitLab.com プロジェクトで使用される内部ツールで、コードベースの各領域に対してメンテナをランダムに選択します。メンテナを選択するには：
 
@@ -315,28 +411,28 @@ Reviewer roulette は、GitLab.com プロジェクトで使用される内部ツ
 - [パフォーマンス、信頼性、可用性](https://docs.gitlab.com/ee/development/code_review.html#performance-reliability-and-availability)
 - [マージリクエストのパフォーマンスガイドライン](https://docs.gitlab.com/ee/development/merge_request_concepts/performance.html)
 
-### レビュアーとメンテナー
+### レビュアーとメンテナー {#reviewers-and-maintainers}
 
 Switchboard には、[Reviewer と Maintainer](https://gitlab.com/gitlab-dedicated/switchboard)の 2 つのグループがあります：
 
 - すべての Switchboard チームメンバーは `Reviewer` グループに含まれます。
 - チームメンバーが完全にオンボードされ、コードベースに関する知識に自信を持つようになったら、Maintainer グループに招待されます。
 
-### フィーチャーフラグ
+### フィーチャーフラグ {#feature-flags}
 
-#### 目的
+#### 目的 {#purpose}
 
 Switchboard のフィーチャーフラグは、新機能の安全で段階的なロールアウトを可能にし、問題が発生したときの迅速なロールバックのためのキルスイッチを提供します。
 
-#### 完了の定義
+#### 完了の定義 {#definition-of-done}
 
 **フィーチャーフラグコードは、ロールアウト成功後に削除する必要があります。** 機能は、以下を満たすまで完了とは見なされません：
 
 - 機能が該当するテナントの 100% にロールアウトされた
-- 機能が事前に合意された時間 (通常はエピック計画レベルで決定され、最低 1 週間) にわたり安定している
-- すべてのフィーチャーフラグ条件付きがコードベースから削除された
+- 機能が事前に合意された時間 (通常はエピック計画レベルで決定され、最低 1 週間)にわたり安定している
+- すべてのフィーチャーフラグの条件分岐がコードベースから削除された
 
-#### フィーチャーフラグを扱う
+#### フィーチャーフラグを扱う {#working-with-feature-flags}
 
 - **オーナーを割り当てる** - すべてのフィーチャーフラグには、その削除を担当する指定されたオーナーが必要です。オーナーは削除 Issue の担当者として設定されます。
 - **クリーンアップ Issue を事前に作成する** - フィーチャーフラグを導入する際は、すぐに削除のためのフォローアップ Issue を作成し、実装 Issue にリンクする
