@@ -9,9 +9,9 @@ owning-stage: "~group::gitaly"
 participating-stages: [ "~group::gitaly" ]
 toc_hide: false
 upstream_path: /handbook/engineering/architecture/design-documents/gitway/
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-09-30T11:31:39-04:00"
-translated_at: "2026-10-20T22:21:31+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-26T14:07:21-04:00"
+translated_at: "2026-11-01T08:35:16+00:00"
 translator: codex
 stale: false
 ---
@@ -131,9 +131,9 @@ Gitway が主に扱うデータモデルはリポジトリです。
 
 |id|storage_name|name|description|owner_id|metadata|state|
 |--|------------|-------------|----|-----------|--------|--------|
-|9b2f4c1e-3d5a-4f88-b7c6-1a2e5d90f331|default|gitaly|Git データ向けの gRPC Go サービス|21|{"relative_path":"@hashed/ce/ea/ceead675…7b71.git"}|ready|
-|1f6a8e77-0c34-4b91-8d52-6e9b4a17c5de|default|packhorse|高スループットの Git キャッシュ|21|{"relative_path":"@hashed/73/47/73475cb4…8049.git"}|deleted|
-|c47e0d2a-8b19-4e6f-9a03-5f7d1c88b204|default|gitlab|GitLab は、完全なソフトウェア開発ライフサイクルのツールチェーンを提供するオープンソースの DevSecOps プラットフォームです|21|{"relative_path":"@hashed/5a/3c/5a3ca21d…721d.git"}|deleted|
+|9b2f4c1e-3d5a-4f88-b7c6-1a2e5d90f331|default|gitaly|A gRPC golang service for Git data|21|{"relative_path":"@hashed/ce/ea/ceead675…7b71.git"}|ready|
+|1f6a8e77-0c34-4b91-8d52-6e9b4a17c5de|default|packhorse|A high throughput Git cache|21|{"relative_path":"@hashed/73/47/73475cb4…8049.git"}|deleted|
+|c47e0d2a-8b19-4e6f-9a03-5f7d1c88b204|default|gitlab|GitLab is the open-source DevSecOps platform that provides a complete software development lifecycle toolchain|21|{"relative_path":"@hashed/5a/3c/5a3ca21d…721d.git"}|deleted|
 
 ### 認証 {#authentication}
 
@@ -336,6 +336,218 @@ DB レコードを作成するだけです。`project_repositories` などの Ra
 必要です。おそらく、すべてのプロジェクト/リポジトリに読み取り RPC を送る方法が
 最も簡単です。こうすれば、非アクティブなリポジトリ用の新しいコードパスを開発する
 必要がありません。
+
+## 計測と課金 {#metering-and-billing}
+
+すべての Git トラフィックは Gitway を通過するため、Gitaly を変更せずに
+リポジトリの使用量を計測できます。Gitway は独自の課金システムを構築しません。
+使用量イベントを GitLab の既存の
+[使用量課金パイプライン](https://gitlab.com/gitlab-org/monetization/docs/-/blob/main/src/content/docs/concepts/usage-billing.md)に送信します。
+これは AI Gateway が GitLab Credits に使用するものと同じです。
+
+```mermaid
+flowchart LR
+    Clients["Rails, Workhorse,<br/>gitlab-shell"]
+
+    subgraph GW[gitway]
+        direction TB
+        Proxy["gRPC passthrough and<br/>sidechannel splice"]
+        Meter["Meter<br/>aggregate per root namespace,<br/>project, and RPC"]
+        Proxy -->|"usage, OK RPCs only"| Meter
+    end
+
+    Gitaly[Gitaly]
+    Collector["Billing collector<br/>Snowplow"]
+
+    subgraph Billing[Usage billing pipeline]
+        direction TB
+        Raw[("ClickHouse<br/>raw_billing_usage_events")]
+        Enriched[("ClickHouse<br/>usage_billing_enriched")]
+        Wallet[("PostgreSQL<br/>wallet transactions")]
+        Zuora[Zuora overage]
+        Raw -->|enrichment| Enriched
+        Enriched -->|consumption| Wallet
+        Wallet -->|overage submission| Zuora
+    end
+
+    Clients -->|"gRPC + x-gitlab-* metadata"| Proxy
+    Proxy -->|gRPC| Gitaly
+    Meter -->|"HTTP POST, billable_usage event"| Collector
+    Collector --> Raw
+```
+
+### 計測 {#metering}
+
+Gitway は、自身を通過するバイトを使用量としてカウントします。単項 RPC とストリーミング
+RPC では、呼び出し元に転送するレスポンスメッセージを gRPC パススルーで
+カウントします。fetch するバイトの大半は gRPC をまったく経由せず、
+サイドチャネルを経由するため、Gitway は `splice` 内でもカウントします。ここでは
+`pumpToDownstream` が Gitaly のバイトを呼び出し元にコピーして返します。
+
+Gitway が RPC の成否を把握できるのは、サイドチャネルの処理が終わり、Gitaly が
+ステータスを返した後です。そのため、各 RPC のカウントを別に保持し、
+Gitaly が RPC を `OK` で完了した場合にのみ、現在の集計期間に加算します。
+失敗またはキャンセルされた RPC の使用量は破棄します。
+
+Gitway は RPC ごとにイベントを送信しません。たとえば 5 分という固定の
+期間で使用量をメモリ上に集計します。この期間は設定オプションではなく定数として
+指定します。使用量はルート名前空間、プロジェクト、RPC ごとに集計し、各イベントの
+`metadata` 内の名前空間、プロジェクト、RPC を正確に保ちながら、
+RPC 数よりはるかに少ないイベント数に抑えます。集計期間が終了すると、Gitway はキーごとに
+1 つのイベントを送出します。シャットダウン時には進行中の集計期間を閉じ、エミッターが
+フラッシュする前に送出します。Gitway がクラッシュすると進行中の集計期間の使用量は失われるため、
+二重課金ではなく過少課金になります。
+
+Gitway の課金対象については、Monetization と合意する必要があります。候補は、呼び出し元に
+提供したバイト数、RPC 数、またはその両方です。上記のカウント方法は
+いずれにも対応します。
+
+### イベントの送出 {#emitting-events}
+
+Gitway は課金 API を直接呼び出しません。HTTP 経由で Snowplow イベントを
+課金コレクターに送信します（本番環境では `https://billing.prdsub.gitlab.net`、
+ステージング環境では `https://billing.stgsub.gitlab.net`）。各イベントには
+[`billable_usage`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema)
+コンテキストを含めます。Data Insights Platform（DIP）は、これらのイベントを ClickHouse の
+`raw_billing_usage_events` に格納します。そこからは課金パイプラインが引き継ぎ、
+Gitway はそれ以上関与しません。
+
+1. エンリッチメントで料金の倍率を適用します。
+2. 消費処理で顧客のウォレットからクレジットを差し引きます。
+3. 課金期間の終了時に超過分を Zuora に送信します。
+
+配信は送り切りです。イベントに対して課金されたかどうかを Gitway に知らせる
+レスポンスはありません。Gitway の役割は、正しい顧客に紐付けて各イベントを一度送信することです。
+`event_id` による重複排除はパイプラインに任せます。
+
+したがって、二重課金を防ぐのは `event_id` であり、イベントのリトライを通じて
+同じ値を維持する必要があります。最新の `billable_usage` スキーマ
+（`1-1-1`）では `event_id` が UUIDv4 であることを要求するため、Gitway は
+イベントの内容から UUIDv5 として導出できません。代わりに、集計期間を
+閉じてイベントを構築する際にランダムな UUIDv4 を一度生成し、すべてのリトライで
+その ID を保持します。そのため、再送でも同じ ID が含まれ、パイプラインが
+重複を破棄します。
+
+コレクター URL、アプリ ID、レルム、デプロイの種類、インスタンス ID は
+デプロイごとに固定されているため、リクエストではなく Gitway の
+設定から取得します。
+
+イベントは次のようになります。
+
+```json
+{
+  "event_id": "<uuidv4>",
+  "event_type": "gitway_fetch_transfer",
+  "unit_of_measure": "MiB",
+  "quantity": 1843.27,
+  "realm": "SaaS",
+  "deployment_type": ".com",
+  "root_namespace_id": 9970,
+  "timestamp": "2026-10-02T10:05:00Z",
+  "metadata": {
+    "namespace_id": 9970,
+    "project_id": 278964,
+    "grpc_method": "/gitaly.SmartHTTPService/PostUploadPackWithSidechannel"
+  }
+}
+```
+
+Monetization と課金単位について合意するまでは、イベントの種類と計量単位は
+仮のものです。`metadata` には課金の説明となるコンテキストを含めますが、
+料金計算には使用しません。AI Gateway がモデル名とトークン数をそこに
+記録するのと同様です。Gitway では、使用量を発生させた名前空間、プロジェクト、
+RPC がこれに当たります。
+
+### 課金イベントの認可 {#authorizing-billing-events}
+
+課金イベントはそれぞれ顧客に課金するため、信頼でき、正しく顧客に紐付けられた
+イベントだけがパイプラインに到達する必要があります。そのために 2 つの保証が必要です。
+
+1 つ目は、イベントが Gitway から送られたという保証です。コレクターは認証済みの
+経路でのみ課金イベントを受け付け、
+[JWT ベースの認証](https://gitlab.com/groups/gitlab-org/-/work_items/21284)
+が唯一サポートされる送信方法です。Gitway はクラウドの ID から有効期間の短い OIDC トークンを
+発行します。GCP では、サービスアカウントを使用して
+`IAMCredentials.GenerateIdToken` で発行します。コレクターを対象者として、
+トークンを `Authorization: Bearer <jwt>` として送信します。DIP の認証
+プロキシは、イベントを受け付ける前に署名とクレームを検証します。Go の
+labkit エミッターがトークンの発行、キャッシュ、付与を処理します
+（[labkit!319](https://gitlab.com/gitlab-org/labkit/-/merge_requests/319)）。
+
+これは、GitLab が運用するクラウドインフラストラクチャ上で Gitway が動作することを前提とします。
+GitLab.com は GCP 上で動作し、上記のサービスアカウントを使用します。Dedicated は
+AWS 上で動作し、同じ SDK の実装により、インスタンスの IAM ロールから
+`STS.GetWebIdentityToken` を通じてトークンを発行します。Self-Managed の Gitway は顧客の
+インフラストラクチャ上で動作し、コレクターが信頼する ID を持たないため、
+課金イベントを直接送信できません。Self-Managed の使用量をどのように課金パイプラインに届けるか、
+そもそも Gitway が Self-Managed の使用量を計測するかは、Self-Managed 向けの計測を構築する前に
+Monetization と解決すべき未決事項です。
+
+2 つ目は、イベントが正しい顧客に紐付けられるという保証です。送出前に、
+Gitway は、パイプラインがイベントを顧客に紐付けるために必要な属性がすべて
+存在することを確認します。`realm`、`deployment_type`、そして SaaS では `root_namespace_id`、
+Dedicated では `unique_instance_id` が必要であり、Self-Managed も計測する
+場合は同様です（上記の未決事項を参照）。これらのいずれかが欠けた
+イベントには課金できないため、Gitway は送信せずに破棄し、メトリクスとして
+カウントします。Gitway が events-sidecar を通じて送出する場合（[転送](#transport)を
+参照）、サイドカーの
+[API 検証](https://gitlab.com/gitlab-org/analytics-section/analytics-instrumentation/events-sidecar/-/blob/main/api/openapi.yaml)
+でも同じルールを適用します。
+
+名前空間とプロジェクトはリクエストのメタデータから取得し（[顧客への紐付け](#attribution)を
+参照）、Gitway は呼び出し元を信頼する範囲でのみ、そのメタデータを
+信頼します。Gitaly は共有認証トークンを持つ呼び出し元、すなわち Rails、Workhorse、
+gitlab-shell だけを受け付け、Gitway は Gitaly が `OK` で完了した RPC だけを
+計測します。そのトークンを持たない呼び出し元は任意のメタデータを送れますが、
+リクエストを成功させられないため、課金イベントを作成できません。
+信頼するコンポーネントが誤ったメタデータを転送すれば、使用量の紐付け先が誤ることになります。
+これらの値の唯一の情報源は Rails であり、Workhorse と gitlab-shell は
+変更せずに転送します。
+
+### 顧客への紐付け {#attribution}
+
+Gitway は認証を行わず、Gitaly の protobuf も解析しないため（[認証](#authentication)を
+参照）、それ自体では課金先を判断できません。
+Rails が各 RPC で gRPC メタデータとして提供します。AI Gateway や Duo Workflow Service に
+すでに送信しているものと同じキーを使用します。
+
+- `x-gitlab-root-namespace-id`
+- `x-gitlab-namespace-id`
+- `x-gitlab-project-id`
+
+SaaS では、`billable_usage` にルート名前空間が必要です。Dedicated の紐付けには、
+Gitway の設定から取得する `unique_instance_id` を使用します。Self-Managed も
+同様に紐付けますが、計測するかどうかは未決です（[課金イベントの認可](#authorizing-billing-events)を
+参照）。Workhorse と gitlab-shell は Gitaly の呼び出しを
+自ら構築しません。`/internal/allowed` と Workhorse API の
+レスポンスを通じて Rails から受け取ります。そのため Rails は、これらの値をその
+レスポンスに含める必要があり、両クライアントは Gitway に転送する必要があります。Gitway が
+これらをどの範囲で信頼するかについては、[課金イベントの認可](#authorizing-billing-events)を
+参照してください。
+
+### 転送 {#transport}
+
+Gitway がコレクターに到達する方法は 2 つあります。その選択は
+[gitway#11](https://gitlab.com/gitlab-org/gitway/-/work_items/11)で追跡しています。
+
+- **直接送信。** Gitway は、labkit を通じてすでに
+  依存している `labkit/v2/events/snowplow` を使用し、課金コレクターに直接送信します。
+  [labkit エミッター](https://gitlab.com/gitlab-org/labkit/-/blob/master/v2/events/snowplow/emitter.go)
+  はバッファリング、リトライ、シャットダウン時のフラッシュをすでに処理するため、Gitway が
+  それらを構築する必要はありません。
+- **Theseus events-sidecar 経由。**
+  [events-sidecar](https://gitlab.com/gitlab-org/analytics-section/analytics-instrumentation/events-sidecar)
+  は準備が整っており、単一の
+  [`event_construct`](https://gitlab.com/gitlab-org/iglu/-/blob/master/public/schemas/com.gitlab/event_construct/jsonschema/1-0-0)
+  ペイロードから課金イベントと分析イベントをまとめて送信します。Gitway はこのペイロードを `127.0.0.1:8130` のサイドカーに送信し、
+  サイドカーが検証して、契約、リトライ、課金イベントに責任を持ちます。
+  採用するには、
+  [サイドカーとサービスのどちらを選ぶかの決定](https://gitlab.com/groups/gitlab-org/theseus/-/work_items/2#note_3932032848)を待つ必要があります。
+  Pod の終了猶予期間は、Gitway とサイドカーの両方が処理を完了する時間を
+  確保する必要もあります。
+
+どちらの方法も、同じ ClickHouse テーブルに同じイベントを生成します。顧客への紐付け、
+カウント、集計は、どちらでも同じです。
 
 ## その他の設計上の考慮事項 {#other-design-considerations}
 

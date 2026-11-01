@@ -2,9 +2,9 @@
 title: "チームメンバーデータを編集する"
 description: "ハンドブックのページやツールにデータを提供する、チームメンバーデータのエントリを確認・更新する方法。"
 upstream_path: "/handbook/about/editing-handbook/edit-team-data/"
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-15T21:00:48+02:00"
-translated_at: "2026-10-20T12:09:51+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T15:54:36+01:00"
+translated_at: "2026-11-01T08:39:41+00:00"
 translator: codex
 stale: false
 ---
@@ -40,7 +40,7 @@ GitLab への入社 3 日目に、[同期](https://theloop.gitlab.com/site/4455a
 
 ### エントリの更新方法を選ぶ {#choose-how-to-update-your-entry}
 
-必要であれば、`#mr-buddies` や `#handbook` の Slack チャンネルを含め、社内の誰にでも助けを求めてください。エントリを更新する方法は **4 つ**あります。
+必要であれば、[`#mr-buddies`](https://gitlab.enterprise.slack.com/archives/CLM8K5LF4)や [`#handbook`](https://gitlab.enterprise.slack.com/archives/C81PT2ALD)の Slack チャンネルを含め、社内の誰にでも助けを求めてください。エントリを更新する方法は **4 つ**あります。
 
 1. [Web IDE を使って GitLab.com で情報を追加する](#method-1-add-your-info-on-gitlabcom-using-web-ide)（推奨）
 1. [「ウェブインターフェース」を使って GitLab.com で情報を追加する](#method-2-add-your-info-on-gitlabcom-using-the-web-interface)
@@ -70,33 +70,33 @@ GitLab への入社 3 日目に、[同期](https://theloop.gitlab.com/site/4455a
 
 ### 方法 1：Web IDE を使って GitLab.com で情報を追加する {#method-1-add-your-info-on-gitlabcom-using-web-ide}
 
-1. www-gitlab-com プロジェクトの [`data/team_members/person`](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person) フォルダーを開きます。
+1. www-gitlab-com プロジェクトの [`data/team_members/person`](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person)フォルダーを開きます。
 1. 自分のスラッグの頭文字に対応するフォルダーを開き、自分のチームメンバーファイルを開きます。たとえば、スラッグが `mnohr` のチームメンバーのファイルは `m/mnohr.yml` です。ファイルを素早く見つけるには、`t` を押してファイル検索を開き、自分の名前を入力するか、プロジェクト内を GitLab ユーザー名で検索します。
    - 注記：Workday の `Export Name/Location to Team Page?` で `No` を選択した場合、`name` は役職名に置き換えられ、変更しても同期によって上書きされます。名前でファイルが見つからない場合は、代わりに GitLab ユーザー名で検索してください。これを変更するには、[Workday でチームデータの設定を更新](#update-your-team-data-settings-in-workday)してください。
-1. **編集 > Web IDE で開く**を選択します。ウェブエディターが開き、チームメンバーデータのエントリが表示されます。
+1. **Edit > Open in Web IDE**を選択します。ウェブエディターが開き、チームメンバーデータのエントリが表示されます。
 
    ![www-gitlab-com のチームメンバーファイルで、編集ドロップダウンリストの「Web IDE で開く」を表示している画面](/images/handbook/about/editing-handbook/team-member-data-edit-open-web-ide.png)
 
 1. 正しいファイルであることを確認するため、`gitlab` の値が自分の [GitLab.com ユーザー名](/handbook/tools-and-tips/#gitlab-profile)と一致するか確認します。
 1. [更新するフィールド](#fields-to-update)の説明に従って、自分の情報を更新します。
-1. 写真を追加するには、[写真の要件](#picture-requirements)に従って準備します。ファイルエクスプローラーで `sites/uncategorized/source/images/team/` フォルダーを右クリックし、**アップロード**を選択して、写真を選びます。続いて、`picture: yournameinlowercase.jpg` のように、大文字と小文字を一致させて `picture` にファイル名を設定します。
+1. 写真を追加するには、[写真の要件](#picture-requirements)に従って準備します。ファイルエクスプローラーで `sites/uncategorized/source/images/team/` フォルダーを右クリックし、**Upload**を選択して、写真を選びます。続いて、`picture: yournameinlowercase.jpg` のように、大文字と小文字を一致させて `picture` にファイル名を設定します。
 1. [Web IDE を使ってハンドブックを編集する](/handbook/about/editing-handbook/#use-the-web-ide-to-edit-the-handbook)の説明に従って、変更を新しいブランチにコミットし、マージリクエストを作成します。
 1. マージリクエストの説明で、変更内容とその理由を説明します。たとえば、`Update my team member data.` と記載します。
 1. People Operations のオンボーディング担当チームメンバーと自分のマネージャーをレビュアーに追加します。変更をレビューした後、その人たちがマージリクエストを承認し、マージします。
 
 ### 方法 2：「ウェブインターフェース」を使って GitLab.com で情報を追加する {#method-2-add-your-info-on-gitlabcom-using-the-web-interface}
 
-1. [GitLab.com / www-gitlab-com](https://gitlab.com/gitlab-com/www-gitlab-com/) プロジェクトに移動します。
+1. [GitLab.com / www-gitlab-com](https://gitlab.com/gitlab-com/www-gitlab-com/)プロジェクトに移動します。
 1. 画面上部付近の赤い線の下にある `+` をクリックします。
 1. `New branch` をクリックします。
-1. `Branch name` には、*自分のイニシャル-team-data-update-自分の部署-日付*のように一意の名前を付け（作業用の一時的な名前なので、厳密な名前はあまり気にする必要はありません）、`Create branch` をクリックします。例：`hk-team-data-update-custsupport-feb06`
+1. `Branch name` には、*your initials-team-data-update-yourdepartment-the date*のように一意の名前を付け（作業用の一時的な名前なので、厳密な名前はあまり気にする必要はありません）、`Create branch` をクリックします。例：`hk-team-data-update-custsupport-feb06`
 1. まず、自分の画像を追加します。左側の `Repository` をクリックします。
 1. ファイルブラウザーで、`sites/uncategorized/source/images/team` に移動します。
-1. ページ上部の `+` をクリックし、`Upload file` を選択して写真をアップロードします。必ず[写真の要件](#picture-requirements)に従ってください。*YourFirstName YourLastName の写真を追加*という形式のコミットメッセージを追加します。対象ブランチが、先ほど作成したブランチになっていることを確認します。`Start a new merge request with these changes` の切り替えをオフにします。`Upload file` をクリックします。
+1. ページ上部の `+` をクリックし、`Upload file` を選択して写真をアップロードします。必ず[写真の要件](#picture-requirements)に従ってください。*Add picture for YourFirstName YourLastName*という形式のコミットメッセージを追加します。対象ブランチが、先ほど作成したブランチになっていることを確認します。`Start a new merge request with these changes` の切り替えをオフにします。`Upload file` をクリックします。
 1. 次に、自分のチームメンバーデータのエントリを編集します。すべての情報はデータファイルに保存されています。`data/team_members/person/FIRST_LETTER_OF_YOUR_SLUG/SLUG_REPLACE.yml` に移動します（自分の氏名またはスラッグが記載されたファイルを探します）。
 1. 該当する `yourslug.yml` ファイルに移動します。画面右上の `Edit` をクリックし、`Edit single file` を選択します。
 1. [更新するフィールド](#fields-to-update)の説明に従って、自分の情報を更新します。
-1. 情報を追加した後、コミットメッセージを追加し、「変更をコミット」をクリックします。「新しいマージリクエストを作成」オプションにチェックが入っている場合は、マージリクエスト（MR）が作成されます。
+1. 情報を追加した後、コミットメッセージを追加し、"Commit Changes"をクリックします。"create a new merge request"オプションにチェックが入っている場合は、マージリクエスト（MR）が作成されます。
 1. 次に、`Create merge request` ボタンをクリックし、作成したブランチを使って[マージリクエストを作成](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)します。作成先は [GitLab.com](https://gitlab.com/gitlab-com/www-gitlab-com)です。
 1. `Create a new merge request` ページに移動したら、`Description` ボックスの `Why is this change being made?` 見出しの下で、変更内容とその理由を説明します。この MR では、たとえば `Adding my information and picture to my team member data as part of onboarding tasks.` と入力できます。この MR では、説明文の他の箇所を変更する必要はありません。
 1. `Create merge request` をクリックします。
@@ -118,7 +118,7 @@ GitLab への入社 3 日目に、[同期](https://theloop.gitlab.com/site/4455a
    [データ変更の検証](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/doc/development.md#validate-data-changes)
    に従ってください。
    - 注記：[変更のレビュー](#reviewing-your-changes)で説明しているように、MR のパイプラインがファイルを自動的に検証します。
-1. 準備ができたら、*FirstName LastName のチームメンバーデータを更新*というコメントを付けて、[変更をステージングし、コミット](https://docs.gitlab.com/ee/topics/git/commit.html)します。
+1. 準備ができたら、*Update team member data for FirstName LastName*というコメントを付けて、[変更をステージングし、コミット](https://docs.gitlab.com/ee/topics/git/commit.html)します。
 1. [自分のブランチをプッシュ](https://docs.gitlab.com/ee/topics/git/commit.html#send-changes-to-gitlab)します。
 1. 作成したブランチを使って[マージリクエストを作成](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)します。作成先は [GitLab.com](https://gitlab.com/gitlab-com/www-gitlab-com)とし、自分のマネージャーをレビュアーに割り当てます。
 
@@ -195,35 +195,52 @@ Workday の同期が管理するフィールドが記載されています。
 1. レビューを依頼する前に、最新のパイプラインが成功していることを確認します。
 1. www-gitlab-com の MR がマージされると、ハンドブックのプロジェクトは次回のデプロイジョブで更新されたデータを取得できます。ハンドブックの MR がマージされるまでは、しばらく時間がかかることがあります。
 
+### GitLab Duo がマージリクエストで変更を求めた場合 {#when-gitlab-duo-requests-changes-in-merge-requests}
+
+[GitLab Duo Code Review](https://docs.gitlab.com/user/duo_agent_platform/flows/foundational_flows/code_review/)は、Workday の同期のマージリクエストを含む、チームデータのマージリクエストをレビューします。
+[www-gitlab-com のレビュー指示](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/duo/mr-review-instructions.yml)に従ってレビューします。
+指摘を修正する、指摘に返信する、または新しいレビューを開始するには、
+[GitLab Duo Code Review による承認](/handbook/about/handbook-usage/#approvals-from-gitlab-duo-code-review)に従ってください。
+
+チームデータについては：
+
+- Workday の同期が管理する値は、次回の同期で修正が上書きされないよう、
+  [Workday](#update-your-team-data-settings-in-workday)でも修正してください。
+- 別途更新される Workday の値についての指摘であれば、たとえば次のようにスレッドで返信してください。
+
+  ```text
+  This is expected. The job title comes from Workday and is updated there separately.
+  ```
+
 ## Workday でチームデータの設定を更新する {#update-your-team-data-settings-in-workday}
 
 Workday の同期は、Workday の 2 つの設定からチームメンバーデータのエントリを作成・更新します。
 
-- **GitLab ユーザー名**：エントリの `gitlab` フィールドに入力され、たとえばレビュアールーレットなどで、自分の GitLab アカウントと結び付けられます。`@` を付けずに、自分の [GitLab.com ユーザー名](/handbook/tools-and-tips/#gitlab-profile)だけを入力してください。氏名やメールアドレスは入力しないでください。
-- **氏名／所在地をチームページにエクスポート**：**はい**に設定すると、同期によって氏名と所在地がエクスポートされます。それ以外の場合、エントリには氏名の代わりに役職名が表示され、`name` の手動の変更は同期によって上書きされます。
+- **GitLab Username**：エントリの `gitlab` フィールドに入力され、たとえばレビュアールーレットなどで、自分の GitLab アカウントと結び付けられます。`@` を付けずに、自分の [GitLab.com ユーザー名](/handbook/tools-and-tips/#gitlab-profile)だけを入力してください。氏名やメールアドレスは入力しないでください。
+- **Export Name/Location to Team Page**：**Yes**に設定すると、同期によって氏名と所在地がエクスポートされます。それ以外の場合、エントリには氏名の代わりに役職名が表示され、`name` の手動の変更は同期によって上書きされます。
 
 同期で正しい値が使われるよう、チームメンバーデータのエントリだけでなく、Workday の両方の設定を修正してください。
 
 両方の設定を確認・更新するには：
 
-1. 自分のプロフィールに移動し、**プロフィールの表示 > アクション > 追加データ > 発効日付きカスタムオブジェクトの編集**を選択します。
+1. 自分のプロフィールに移動し、**View Profile > Actions > Additional Data > Edit Effective-Dated Custom Object**を選択します。
 
    ![アクションボタンとメニューがある Workday のプロフィール](/images/handbook/about/editing-handbook/team-page-workday-actions.png)
 
    ![「追加データ」と「発効日付きカスタムオブジェクトの編集」がある Workday のアクションメニュー](/images/handbook/about/editing-handbook/team-page-workday-additional-data.png)
 
 1. 今日の日付を選択し、追加データを編集します。
-1. **GitLab ユーザー名**フォームで、`@` を付けずに GitLab ユーザー名を確認または入力し、送信します。
+1. **GitLab Username**フォームで、`@` を付けずに GitLab ユーザー名を確認または入力し、送信します。
 
    ![Workday の GitLab ユーザー名フォーム](/images/handbook/about/editing-handbook/team-page-workday-username.png)
 
-1. **送信済み**ダイアログで、もう一度**追加データの編集**を選択します。
+1. **You have submitted**ダイアログで、もう一度**Edit Additional Data**を選択します。
 
    ![追加データの編集ボタンがある Workday の送信済みダイアログ](/images/handbook/about/editing-handbook/team-page-workday-submitted.png)
 
-1. **氏名／所在地をチームページにエクスポート**で、**はい**を選択し、送信します。
+1. **Export Name/Location to Team Page**で、**Yes**を選択し、送信します。
 
-   ![「氏名／所在地をチームページにエクスポート」フィールドを「はい」に設定した Workday の画面](/images/handbook/about/editing-handbook/team-page-workday-export-setting.png)
+   ![「氏名/所在地をチームページにエクスポート」フィールドを「はい」に設定した Workday の画面](/images/handbook/about/editing-handbook/team-page-workday-export-setting.png)
 
 ## 自分のエントリと他のデータとのつながり {#how-your-entry-connects-to-other-data}
 
@@ -260,4 +277,4 @@ flowchart LR
 1. ペットの情報は、`data/pets.yml` ファイルの末尾に追加してください。
 1. コミットメッセージは、`Adding my dog Gary to the Team Pets Page` のようなものにできます。
 1. 自分のマネージャーをレビュアーに割り当てます。
-   - マネージャーを追加した後、そのアバターに黄色い三角形の警告記号がある場合、その人は承認できますが、マージはできません。マネージャーの承認後、`#mr-buddies` Slack チャンネルに投稿し、マージを依頼してください。
+   - マネージャーを追加した後、そのアバターに黄色い三角形の警告記号がある場合、その人は承認できますが、マージはできません。マネージャーの承認後、[`#mr-buddies`](https://gitlab.enterprise.slack.com/archives/CLM8K5LF4) Slack チャンネルに投稿し、マージを依頼してください。

@@ -2,15 +2,15 @@
 title: "オールリモート企業のメリット完全ガイド"
 description: "このガイドは、組織と従業員の双方にとってのオールリモート企業の優れたメリットの全体像を提供します。詳細はこちらをご覧ください！"
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab リモートチームの画像"
+twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/remote-benefits/"
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T09:02:02+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 リモートワークの簡単な[歴史](https://wrkfrce.com/a-brief-history-of-remote-work/)
@@ -21,10 +21,10 @@ lastmod: "2026-08-19T14:13:18-04:00"
 - 1983 年: IBM が実験を実施し、5 人の従業員が在宅勤務することを許可。4 年後には約 2,000 人の従業員がテレコミューティングを行うようになった
 - 1987 年: 150 万人のアメリカ人がリモートで作業
 - 1991 年: Wi-Fi がリモートワークの利用可能性を高める
-- 2015 年: GitLab, Inc.が 9 人のオールリモート FTE で立ち上げ
+- 2015 年: GitLab, Inc. が 9 人のオールリモート FTE で立ち上げ
 - 2020 年: COVID-19 がオールリモートワークの有効性を加速
 
-## 「リモート」と「ハイブリッド」の違いは何ですか？
+## 「リモート」と「ハイブリッド」の違いは何ですか？ {#what-is-the-difference-between-remote-and-hybrid}
 
 リモート: 従業員が中央の職場に通勤しない勤務形態
 
@@ -36,9 +36,9 @@ lastmod: "2026-08-19T14:13:18-04:00"
 {{< youtube "Xw-31PZkHOo" >}}
 
 
-この[動画](https://www.youtube.com/watch?v=Xw-31PZkHOo)では、GitLab のグローバルピープルオペレーションディレクター [Carol Teskey](https://gitlab.com/cteskey) が、オールリモートの多くのメリットと、それに伴う競争上の優位性について見解を共有しています。
+この[動画](https://www.youtube.com/watch?v=Xw-31PZkHOo)では、GitLab の Director of Global People Operations [Carol Teskey](https://gitlab.com/cteskey)が、オールリモートの多くのメリットと、それに伴う競争上の優位性について見解を共有しています。
 
-## リモートワークのメリット
+## リモートワークのメリット {#benefits-of-remote-work}
 
 ![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
@@ -57,9 +57,9 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 > 予期していなかったが最大限に活用した追加のメリットは、必ずしも自分のホームベースに近くない場所に住む友人や家族を訪問できることです。そうでなければ、彼らを訪問するためだけに PTO を取らなければなりません。
 >
-> ナッシュビル、ローリー、アイオワ、ニューヨーク、ボストン、そして西海岸全体で友人や家族に会いました。週末だけの訪問ではなく、友人や家族に寄り添い、誕生日、ベビーシャワー、結婚式のために。全体として（GitLab でのオールリモートの）大きなメリットです。- *Jackie G.、GitLab のマーケティングプログラムマネージャー*
+> ナッシュビル、ローリー、アイオワ、ニューヨーク、ボストン、そして西海岸全体で友人や家族に会いました。週末だけの訪問ではなく、友人や家族に寄り添い、誕生日、ベビーシャワー、結婚式のために。全体として（GitLab でのオールリモートの）大きなメリットです。- *Jackie G.、GitLab の Manager, Marketing Programs*
 
-### オールリモート従業員のメリット
+### オールリモート従業員のメリット {#benefits-for-all-remote-employees}
 
 従業員が単に元の場所にとどまって、オフィスの机を自宅の部屋と交換するのではなく、リモートが可能にする自由と可能性を本当に活用することが重要です。これが**リモート**と**在宅勤務**を比較した際のコアメリットです。
 
@@ -77,7 +77,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 1. 休暇を取らずに[他の場所を旅行](https://about.gitlab.com/blog/2017/01/31/around-the-world-in-6-releases/)する能力（家族、楽しみなど）。
 1. [移住](/handbook/people-group/relocation/)、[場所に縛られない働き方](https://about.gitlab.com/blog/2019/06/25/how-remote-work-at-gitlab-enables-location-independence/)、あるいは[他のリモートプロフェッショナルと一緒に旅する](/handbook/company/culture/all-remote/)自由。
 1. 病気の同僚からの病原体への暴露が少なくなります。
-1. 対人ドラマやオフィスの政治による[気晴らし](https://about.gitlab.com/blog/2018/03/15/working-at-gitlab-affects-my-life/)を減らし、難しい同僚とも[より簡単にコミュニケーション](informal-communication/)できます。
+1. 対人トラブルや社内政治による[気を散らす要因](https://about.gitlab.com/blog/2018/03/15/working-at-gitlab-affects-my-life/)を減らし、難しい同僚とも[より簡単にコミュニケーション](informal-communication/)できます。
 1. [自分に最も合った形](https://about.gitlab.com/blog/2019/08/01/working-remotely-with-children-at-home/)で[オフィスやワークスペースを設定・装飾](https://community.thriveglobal.com/how-remote-work-can-reduce-stress-and-revitalize-your-mindset/)できます。
 1. [最も生産性が高い](/handbook/communication/#asynchronous-communication)時間帯に基づいて[勤務時間を選択](/handbook/company/culture/all-remote/)できます。
 1. 世界中の多くの場所から人々に会い、一緒に働く機会があり、世界の見方を広げ、新しいカルチャーについて学ぶ機会が生まれます。
@@ -88,9 +88,9 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 家族との時間から旅行の計画まで、リモートワークが GitLab チームメンバーの生活に与えた影響について[多くの例やストーリー](/handbook/company/culture/all-remote/)があります。
 
-> **「柔軟性があることで、家族生活が格段に楽になり、ストレスが減り、より生産的でモチベーションが高まります。金銭的価値を付けることはできません。プライスレスです。」** - Haydn、GitLab の地域営業ディレクター
+> **「柔軟性があることで、家族生活が格段に楽になり、ストレスが減り、より生産的でモチベーションが高まります。金銭的価値を付けることはできません。プライスレスです。」** - Haydn、GitLab の Regional Sales Director
 
-### オールリモート組織のメリット
+### オールリモート組織のメリット {#benefits-for-all-remote-organizations}
 
 リモートにより、より多様で包括的な労働力、ワークフローの高い効率性、クライアントへのサービスにおけるより広いグローバルカバレッジが実現します。ビジネスを大幅にリスク軽減し、危機の際に回復力を高め、オフィスが開いているかどうかに関わらず継続性を維持できるようにします。
 
@@ -102,29 +102,29 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 1. [どこに住んでいても](/handbook/people-group/employment-solutions#country-hiring-guidelines)優れた人材を採用できます。
    - GitLab は [65 カ国以上](/handbook/company/team)にチームメンバーを持つ真にグローバルに展開しています。
-1. リーダーシップが繁栄のための必要なツール、構造、カルチャーを備えたチームをサポートする限り、従業員は[気晴らしが少なくより生産的](https://about.gitlab.com/blog/2018/05/11/day-in-life-of-remote-sdr/)です。
+1. リーダーシップが繁栄のための必要なツール、構造、カルチャーを備えたチームをサポートする限り、従業員は[気を散らす要因が少なく、より生産的](https://about.gitlab.com/blog/2018/05/11/day-in-life-of-remote-sdr/)です。
    - たとえば、GitLab には[サポートスタッフ 1 人あたり月 65 件のチケットクローズ](/handbook/support/performance-indicators#average-daily-tickets-closed-per-support-team-member)という KPI があります。
 1. [オフィスコストの節約増加](https://globalworkplaceanalytics.com/wp-content/The%20Remote%20Work%20ROI%20Calculator%20V0.97/The%20Remote%20Work%20ROI%20Calculator%20V0.97.htm)と[報酬](https://about.gitlab.com/blog/2019/02/28/why-we-pay-local-rates/)（低コスト地域での採用による）。
-   - GitLab は他のサンフランシスコベイエリアの共同作業会社よりも**バランスの取れた給与体系を維持**しています。
-   - 各機能には新規採用のロケーションファクターターゲットがあります。たとえば、[マーケティング](/handbook/company/kpis/#marketing-kpis)はターゲットが 0.72 未満、[財務](/handbook/company/kpis/#finance-kpis)は 0.69 未満です。（参考: サンフランシスコは 1.00）
-   - 平均全体ロケーションファクターが 0.65 未満であるという[ピープルグループ KPI](/handbook/company/kpis/#people-group-kpis) があります。
+   - GitLab は他のサンフランシスコベイエリアの同じ場所で働く企業よりも**バランスの取れた給与体系を維持**しています。
+   - 各機能には新規採用のロケーションファクターターゲットがあります。たとえば、[Marketing](/handbook/company/kpis/#marketing-kpis)はターゲットが 0.72 未満、[Finance](/handbook/company/kpis/#finance-kpis)は 0.69 未満です。（参考: サンフランシスコは 1.00）
+   - 平均全体ロケーションファクターが 0.65 未満であるという[People Group KPI](/handbook/company/kpis/#people-group-kpis)があります。
 1. オールリモートは自然に[自己動機付けのできる人](https://about.gitlab.com/blog/2019/03/28/what-its-like-to-interview-at-gitlab/)を引き付けます。
 1. 会社を迅速に成長・拡大させることが容易です。
-   - GitLab は**オフィスを所有・リースしていません**。共同作業の会社が規模拡大するにつれ、不動産関連の支出は膨らんでいきます。これはオフィス面積だけでなく、セキュリティ、清掃、改装などの関連活動も含みます。また、[成長](scaling/)も妨げます。短期間に多くの人を採用すると、次々とオフィスを移転することを余儀なくされ、多大なコストと非効率をもたらします。
+   - GitLab は**オフィスを所有・リースしていません**。同じ場所で働く企業が規模拡大するにつれ、不動産関連の支出は膨らんでいきます。これはオフィス面積だけでなく、セキュリティ、清掃、改装などの関連活動も含みます。また、[成長](scaling/)も妨げます。短期間に多くの人を採用すると、次々とオフィスを移転することを余儀なくされ、多大なコストと非効率をもたらします。
 1. 従業員は雇用主に[ますます](https://web.archive.org/web/20240523000654/https://www.iofficecorp.com/blog/workplace-design-statistics)リモートワークオプションを期待しています。
-   - GitLab は空き[求人](https://about.gitlab.com/jobs/)に対して**週 3,000 件以上の応募者**を見ています。各応募者は、時間とエネルギーを投資して応募するよう求められる*前に*、私たちのサービスと [GitLab での生活の概要](/handbook/company/culture/#life-at-gitlab)にアクセスできます。[透明性](/handbook/values/#transparency)により、より多くの資格ある応募者が得られます。例として [GitLab Unfiltered YouTube チャンネル](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)でホストされている[役割説明動画](https://youtu.be/BOeXgGu1Vco)などがあります。
-1. 企業はリモートワークで[より低い離職率と高い士気](https://resources.owllabs.com/blog/remote-work-statistics)を経験することが多いです。
-   - GitLab は**[高い年間自発的維持率](/handbook/people-group/people-success-performance-indicators/#executive-summary)**を誇っています。人々は人生の変化を通じて[キャリアを持ち歩ける](/handbook/company/culture/all-remote/)ため、オールリモートは高い人材維持に貢献しています。
-1. [ミーティングが少なく](meetings/)、結果と[優れた仕事のアウトプット](/handbook/values/#results)に集中できます。
-   - [非同期コミュニケーション](/handbook/communication/)と意図的な[ドキュメント化](/handbook/company/culture/all-remote/)によって回避される各ミーティングは、給与面で何千ドルもの節約になります。また、時間の節約を追加価値の創出に再利用し、人々がより[効率的](/handbook/values/#efficiency)に働きながら[豊かな生活](/handbook/company/culture/all-remote/)を送れるよう権限を付与できます。
+   - GitLab は空き[求人](https://about.gitlab.com/jobs/)に対して**週 3,000 件以上の応募者**を見ています。各応募者は、時間とエネルギーを投資して応募するよう求められる*前に*、私たちの、および [GitLab での生活の概要](/handbook/company/culture/#life-at-gitlab)にアクセスできます。透明性により、より多くの資格ある応募者が得られます。例として [GitLab Unfiltered YouTube チャンネル](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)でホストされている[役割説明動画](https://youtu.be/BOeXgGu1Vco)などがあります。
+1. 企業はリモートワークで[より低い離職率](https://resources.owllabs.com/blog/remote-work-statistics)と高い士気を経験することが多いです。
+   - GitLab は **[高い年間自発的維持率](/handbook/people-group/people-success-performance-indicators/#executive-summary)** を誇っています。人々は人生の変化を通じて[キャリアを持ち歩ける](/handbook/company/culture/all-remote/)ため、オールリモートは高い人材維持に貢献しています。
+1. [ミーティングが少なく](meetings/)、結果と優れた仕事のアウトプットに集中できます。
+   - [非同期コミュニケーション](/handbook/communication/)と意図的な[ドキュメント化](/handbook/company/culture/all-remote/)によって回避される各ミーティングは、給与面で何千ドルもの節約になります。また、時間の節約を追加価値の創出に再利用し、人々がより効率的に働きながら[豊かな生活](/handbook/company/culture/all-remote/)を送れるよう権限を付与できます。
 1. チームに参加させるために誰かを移住させるコストを払う必要がありません。
-   - GitLab の人材獲得部門は採用コストを追跡していますが、現在ターゲットはありません。
+   - GitLab の Talent Acquisition 部門は採用コストを追跡していますが、現在ターゲットはありません。
 1. 世界中に点在する従業員が[非同期で作業する](https://about.gitlab.com/blog/2019/02/27/remote-enables-innovation/)ことで、あるタイムゾーンの作業日が終わっても貢献が続けられます。
-   - GitLab には、[送信された Slack メッセージのうち DM でないものの割合が 50% 以上であること](/handbook/company/kpis/#people-group-kpis)というピープルグループ KPI があります。
+   - GitLab には、[送信された Slack メッセージのうち DM でないものの割合が 50% を超えること](/handbook/company/kpis/#people-group-kpis)という People Group KPI があります。
 1. 地域の混乱や自然災害（例：政治的または天候関連の事象）の場合にもビジネス継続性があります。
 1. より大きな柔軟性は[より大きな多様性を意味する可能性があります](https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions/resources/pdfs/global-talent-trends-2019.pdf)。
 
-### 世界にとってのメリット
+### 世界にとってのメリット {#benefits-for-the-world}
 
 
 {{< youtube "BC7Prkm3v3g" >}}
@@ -141,13 +141,13 @@ lastmod: "2026-08-19T14:13:18-04:00"
 1. [リモートワークが世界中の多くの都市の都市過密の影響を軽減できる](https://qz.com/work/1641664/remote-workers-are-the-solution-to-urban-crowding)という証拠があります。一部の州や国はリモートワークを奨励するために[インセンティブを提供](https://fortune.com/2019/06/22/google-housing-plan-bay-area)しています。世界中の [13 の例](https://web.archive.org/web/20210122035410/https://www.bankrate.com/personal-finance/smart-money/places-that-will-pay-you-to-move/)があります。
 1. グローバル企業にとって、より給与の高い仕事を低コスト地域にもたらすことはプラスの経済的影響があり、農村地域の[人口減少傾向](https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2016)586632)を[逆転させる](https://carsey.unh.edu/publication/rural-depopulation-rapidly-urbanizing-america)ために機能します。
 
-## リモートワークを受け入れる企業の競争上の優位性
+## リモートワークを受け入れる企業の競争上の優位性 {#the-competitive-advantage-for-companies-that-embrace-remote-work}
 
 リモートにより、より多様で包括的な労働力、ワークフローの高い効率性、クライアントへのサービスにおけるより広いグローバルカバレッジが実現します。ビジネスを大幅にリスク軽減し、危機の際に回復力を高め、オフィスが開いているかどうかに関わらず継続性を維持できるようにします。
 
 企業は[リモートリーダーシップチーム](/handbook/company/culture/all-remote/)を作り、マネージャートレーニングに投資する必要があるかもしれません。しかし、これがオプションかどうかについてほとんど議論の余地はありません。リモートワークはまもなく単に「仕事」となり、グローバルな柔軟性が期待されるでしょう。複数のオフィスを持つ企業はすでに相互にリモートなチームを持っており、したがって最適な方法で運営するためにリモートの習熟度の確かな基礎が必要です。
 
-### 場所を問わないトップ人材
+### 場所を問わないトップ人材 {#top-tier-talent-without-location-being-a-factor}
 
 特定の地理的地域に採用パイプラインを限定したり、移住が可能で意欲的な従業員を探したりすることは、競争上の**不**利です。
 
@@ -155,33 +155,33 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 リモート組織はどこに住んでいても優れた人材を採用できます。たとえば、GitLab は [65 カ国以上](/handbook/company/team)にチームメンバーを持つ真にグローバルに展開しています。
 
-### 柔軟な勤務時間と可用性
+### 柔軟な勤務時間と可用性 {#flexible-working-hours-and-availability}
 
 世界中に点在する従業員が[非同期で作業する](/handbook/communication/#asynchronous-communication)ことで、あるタイムゾーンの作業日が終わっても貢献が続けられます。
 
-### 満足した従業員と生産性の向上
+### 満足した従業員と生産性の向上 {#happy-staff-and-better-productivity}
 
-リーダーシップが繁栄のための必要なツール、構造、カルチャーを備えたチームをサポートする限り、従業員は[気晴らしが少なくより生産的](https://about.gitlab.com/blog/2018/03/15/working-at-gitlab-affects-my-life/)です。
+リーダーシップが繁栄のための必要なツール、構造、カルチャーを備えたチームをサポートする限り、従業員は[気を散らす要因が少なく、より生産的](https://about.gitlab.com/blog/2018/03/15/working-at-gitlab-affects-my-life/)です。
 
-## リモートワークを受け入れる前に考慮すべき課題
+## リモートワークを受け入れる前に考慮すべき課題 {#challenges-to-consider-before-embracing-remote-work}
 
-[オールリモートには多くのメリット](remote-benefits/)があるにもかかわらず、リモートワークはすべての人に向いているわけではありません。ライフスタイルや仕事の好み、また組織によっては従業員にとってデメリットがある場合があります。[透明性](/handbook/values/#transparency)の精神で、[潜在的なデメリットとその課題への解決策についてここで概説](drawbacks/)しています。
+[オールリモートには多くのメリット](remote-benefits/)があるにもかかわらず、リモートワークはすべての人に向いているわけではありません。ライフスタイルや仕事の好み、また組織によっては従業員にとってデメリットがある場合があります。透明性の精神で、[潜在的なデメリットとその課題への解決策についてここで概説](drawbacks/)しています。
 
-## 組織にとってどちらが正しいですか？
+## 組織にとってどちらが正しいですか？ {#which-is-right-for-your-organization}
 
-私たちはオールリモートで[転換点に近づいています](https://medium.com/@gcvp/going-distributed-choosing-the-right-remote-friendly-team-model-6a04f833267c)。リモートチームがなぜそうするかを正当化しなければならない代わりに、共同作業の会社がなぜそうしないかを正当化しなければならなくなるでしょう。
+私たちはオールリモートで[転換点に近づいています](https://medium.com/@gcvp/going-distributed-choosing-the-right-remote-friendly-team-model-6a04f833267c)。リモートチームがなぜそうするかを正当化しなければならない代わりに、同じ場所で働く企業がなぜそう*しない*かを正当化しなければならなくなるでしょう。
 
 オールリモートワークは、テクノロジーの絶え間ない進化なしには不可能であり、このタイプの作業を可能にするツールは継続的に開発・改善されています。
 
-## ハイブリッドまたはリモートワークの適格性の決定
+## ハイブリッドまたはリモートワークの適格性の決定 {#determining-eligibility-for-hybrid-or-remote-work}
 
-[求人サイト](/handbook/company/culture/all-remote/)や一般的な会話でリモートの役割を単一のカテゴリにまとめることができますが、すべてのリモートの役割が等しく作られているわけではないことを認識することが重要です。共同作業の役割を総合的に評価する必要があるように、初めてリモートの役割に移行しようとしている方は、面接または評価段階で特定の質問をすべきです。
+[求人サイト](/handbook/company/culture/all-remote/)や一般的な会話でリモートの役割を単一のカテゴリにまとめることができますが、すべてのリモートの役割が等しく作られているわけではないことを認識することが重要です。同じ場所で働く職務を総合的に評価する必要があるように、初めてリモートの役割に移行しようとしている方は、面接または評価段階で特定の質問をすべきです。
 
 [リモートワークにはさまざまなステージ](stages/)があり、これはスライディングスケールとして簡単に描けます。リモートなしから[ハイブリッドリモート](/handbook/company/culture/all-remote/)、オールリモート、そしてその間のあらゆる点まで、各設定でのリモートワーカーの経験はおそらく異なります。以下では、フルタイムのリモート役割でどのように扱われるかを理解しようとする際に取り上げるべき重要なトピックを強調しています。採用会社との具体的なシナリオや親しみ度に応じて、追加の質問を検討すべきです。
 
 リモートで完了できるフリーランスの仕事が増えているとはいえ、この記事は[フルタイムのリモートキャリア](/handbook/company/culture/all-remote/)を中心としています。
 
-## GitLab リモートワーク宣言
+## GitLab リモートワーク宣言 {#gitlab-remote-work-manifesto}
 
 オールリモートワークは以下を推進します。
 
@@ -195,15 +195,15 @@ lastmod: "2026-08-19T14:13:18-04:00"
 1. 活動への投入ではなく、インパクトの結果。
 1. 非公式なコミュニケーションチャンネルではなく、正式なコミュニケーションチャンネル。
 
-> **「リモートは乗り越えるべき課題ではありません。明確なビジネス上の優位性です。」** -Victor、GitLab のプロダクトマネージャー
+> **「リモートは乗り越えるべき課題ではありません。明確なビジネス上の優位性です。」** -Victor、GitLab の Product Manager
 
 GitLab は世界最大のオールリモート企業の一つであり、[チームメンバー](/handbook/company/team)は世界 65 カ国以上に所在しています。
 
-私たちのオールリモートワーク力の実施は[組織設計ジャーナル](https://link.springer.com/article/10.1186/s41469-020-00087-8)に掲載されています。また、[ハーバードビジネススクール](https://www.hbs.edu/faculty/Pages/item.aspx?num=57917)と [INSEAD](https://publishing.insead.edu/case/gitlab) が執筆したケーススタディの中心でもあります。
+私たちのオールリモートの働き方の実践は[組織設計ジャーナル](https://link.springer.com/article/10.1186/s41469-020-00087-8)に掲載されています。また、[ハーバードビジネススクール](https://www.hbs.edu/faculty/Pages/item.aspx?num=57917)と [INSEAD](https://publishing.insead.edu/case/gitlab)が執筆したケーススタディの中心でもあります。
 
 「オールリモート」が本当に何を意味するか、[GitLab でどのように機能するか](/handbook/hiring/)、リモートチームのための[ヒントとコツ](/handbook/hiring/)、さらに学ぶための[リソース](/handbook/company/culture/all-remote/)について、ぜひ詳しく調べてみてください。
 
-## 学んだことを共有する
+## 学んだことを共有する {#contribute-your-lessons}
 
 GitLab は、オールリモートが[仕事の未来](remote-vision/)であり、リモート企業にはそれを実践している他の組織に道を示す共同責任があると考えています。あなたまたはあなたの会社が世界全体に役立つ経験をお持ちであれば、[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)を作成してこのページに貢献することをご検討ください。
 

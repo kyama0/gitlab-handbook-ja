@@ -2,24 +2,24 @@
 title: "セールスプロスペクティング"
 description: "プロスペクティングは、自社の製品やサービスに対する潜在顧客、クライアント、買い手を探すことで新規ビジネスを開始し開発するプロセスです"
 upstream_path: /handbook/sales/prospecting/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:57:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## GitLab におけるプロスペクティングとは？
+## GitLab におけるプロスペクティングとは？ {#what-is-prospecting-at-gitlab}
 
 すべての AE は、その役割やアカウントの種類に関わらず、優れたパイプライン生成カバレッジを持つことが期待されています。優れたパイプジェンの習慣を日常のアクティビティに統合できればできるほど、メンテナンスを少なくして年間を通じて強力なパイプラインを持つことが容易になります。[Highspot で最近の AE による最新のプロスペクティングベストプラクティスをご覧ください。](https://gitlab.highspot.com/items/63f4e733519f3a9436b95c65) このビデオでは、AMER と EMEA の数名の AE が、プロスペクティングで目標達成に役立ったことについて話し、このページの内容に加えてあなたの戦略にすぐに適用できるヒントを提供します。
 
-**プロスペクティングはコールドコールから大きく進化しました:** エンタープライズセールスでは、プロスペクティングは戦略的、慎重、有用で、ほぼ常に **ウォーム** な接続です。
+**プロスペクティングはコールドコールから大きく進化しました:** Enterprise Sales では、プロスペクティングは戦略的、慎重、有用で、ほぼ常に **ウォーム** な接続です。
 
 *ウォームとは何ですか？* ウォームとは、見込み客にアプローチすべき正当な理由があり、彼らの利益のために連絡を取ろうとしており、彼らが今あなたのソリューションを必要としている理由を理解している状態です。
 
-**あなたが自分のパイプラインのオーナーです。** エンタープライズアカウントエグゼクティブ (AE) にとって、プロスペクティングは通常のセールスアクティビティの一部であるべきです。これは、毎週、計画、チームとの戦略立案、トッププロスペクトへのアプローチに専念する時間をカレンダーにブロックすることを意味します。結局のところ、パイプラインがなければビジネスはありません。そして、自分のテリトリーまたはエリアの CEO として、目標達成のために現在のビジネスと同じくらい将来のビジネスにも時間を割く必要があります。
+**あなたが自分のパイプラインのオーナーです。** Enterprise Account Executives (AE) にとって、プロスペクティングは通常のセールスアクティビティの一部であるべきです。これは、毎週、計画、チームとの戦略立案、トッププロスペクトへのアプローチに専念する時間をカレンダーにブロックすることを意味します。結局のところ、パイプラインがなければビジネスはありません。そして、自分のテリトリーまたはエリアの CEO として、目標達成のために現在のビジネスと同じくらい将来のビジネスにも時間を割く必要があります。
 
-**結果を達成するにはチームの努力が必要です。** AE がお客様との関係をオーナーしますが、すべてのチームメンバーが戦略、計画、実行に参加できますし、参加すべきです。AE は、セールスデベロップメントレップ (SDR)、チャネルアカウントマネージャーと緊密に連携し、リージョナルマーケティングチームメンバーとも同期する必要があります。
+**結果を達成するにはチームの努力が必要です。** AE がお客様との関係をオーナーしますが、すべてのチームメンバーが戦略、計画、実行に参加できますし、参加すべきです。AE は、Sales Development Reps (SDR)、Channel Account Manager と緊密に連携し、Regional Marketing チームメンバーとも同期する必要があります。
 
 **チームには社外も含まれます。** あなたのアプローチをスケールするのに役立つ技術パートナーについて考えてください。これらのパートナーと関わり、適切なエントリーポイントを特定し、お客様にパートナーと共に GitLab を提示してください。早期に関わりパートナーと連携して新しいお客様を特定する筋肉を鍛えましょう。
 
@@ -31,18 +31,18 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 3. **あなたは GitLab のエキスパートですが、彼らは自分のビジネスのエキスパートです。** 仮定について言われることをご存知ですか？お客様のビジネスについて、彼ら以上に詳しい人はいないことを覚えておくことが重要です。今または将来彼らがより効果的になるのに役立つ可能性のあるソリューションについて彼らに最新情報を伝えるのがあなたの仕事ですが、それが彼らにとって最善であると仮定しないでください。すべてのプロスペクティングコールまたはメッセージで、あなたが彼らに何が最善かを伝えるのではなく、アドバイスを提供していることが明確であるべきです。
 
-## 戦略を構築する
+## 戦略を構築する {#build-your-strategy}
 
-**[テリトリープラン](/handbook/sales/territory-planning/#overview) から始めましょう。** この演習は、時間の優先順位付けと、あなたとチームが最も効果的だと考えるアクティビティの情報源であるべきです。**パイプライン生成目標** を設定する場所でもあります。
+**[テリトリープラン](/handbook/sales/territory-planning/#overview)から始めましょう。** この演習は、時間の優先順位付けと、あなたとチームが最も効果的だと考えるアクティビティの情報源であるべきです。**パイプライン生成目標** を設定する場所でもあります。
 
 *目標は何ですか？* 各 AE のパイプライン目標は、各四半期の最初または 2 週目に Clari にロードされます。
 
 目標から逆算することで、成功するために必要なアカウント数と Opportunity 数を計算できます。ターゲットリストを見るときは、今買う可能性が高いものと 1 年以上かかるものをミックスして含めるようにしてください。戦略的パートナーシップには時間がかかるため、リストとアウトリーチの両方を多様化する必要があります。
 
-[セールスデベロップメントチームメンバー](/handbook/sales/sales-development/) と連携して次のことを行います:
+[Sales Development チームメンバー](/handbook/sales/sales-development/)と連携して次のことを行います:
 
 - テリトリープランへのインプットと、それが彼らのアクティビティとどうマッピングされるかを得る。
-- [6Sense](/handbook/marketing/marketing-operations/6sense/) でアクティビティとエンゲージメントをレビューする。
+- [6Sense](/handbook/marketing/marketing-operations/6sense/)でアクティビティとエンゲージメントをレビューする。
 - アプローチを開発し、適切なメッセージングを特定する。
 
 **仮定を裏付けるためにデータを使用する:**
@@ -51,22 +51,22 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - **エンゲージメントデータ:** 最近 GitLab マーケティングアクティビティまたはウェブサイトコンテンツに複数回エンゲージしている見込み客をターゲットにします。
 - **インテントデータ:** 競合製品および関連業界トレンドへの関心を示しているアカウントをターゲットにします。
 
-**次に、チームと共にアプローチとシーケンスを計画します。** セールスデベロップメントチームメンバーや、より広いチームとの定期的なパイプライン生成レビューとミーティング（非同期またはライブ）を持ち、アプローチについてのインプットとアドバイスを得ます。
+**次に、チームと共にアプローチとシーケンスを計画します。** Sales Development チームメンバーや、より広いチームとの定期的なパイプライン生成レビューとミーティング（非同期またはライブ）を持ち、アプローチについてのインプットとアドバイスを得ます。
 
-## 戦略についての協働
+## 戦略についての協働 {#collaborating-on-your-strategy}
 
-セールスデベロップメントチームメンバーと連携して次のことを行います:
+Sales Development チームメンバーと連携して次のことを行います:
 
 - どのアプローチ形式（メール、LinkedIn、電話）が最善か、ケイデンスをどうするかを決定します:
 - [AE 向けプロスペクティングシーケンス](https://docs.google.com/document/d/1ksEGBsDVjQGkSeq8ESKf9Jdy-N7wREq_stnLutJBPTo/edit#heading=h.ufep756p4z4j) テンプレートをカスタマイズするか、独自のものを作成します。
-- 関連する可能性のある [クオリファイ質問](/handbook/sales/qualification-questions/) と [カスタマーユースケース](/handbook/marketing/use-cases/) を整理します。
+- 関連する可能性のある [クオリファイ質問](/handbook/sales/qualification-questions/)と [カスタマーユースケース](/handbook/marketing/use-cases/)を整理します。
 - **エレベーターピッチを練習します。** あなたと SD チームメイトの両方が、お客様または見込み客に何を伝えたいかについてアラインメントが取れていることを確認するため、ピッチを一緒に練習する必要があります。声のトーンに本当に取り組みましょう。話す相手や彼らに関連性のあるものに基づき、簡単に調整できれば、準備が整っています。
 
-**パートナーと連携する:** チャネルアカウントマネージャー (CAM) と連携し、ピアと話したり、[Partner Directory](https://partners.gitlab.com/English/directory/) を使って、特定のアカウントをサポートしターゲットコンタクトまたはステークホルダーへのインサイトを提供できるパートナーがいるかを特定します。
+**パートナーと連携する:** Channel Account Manager (CAM) と連携し、ピアと話したり、[Partner Directory](https://partners.gitlab.com/English/directory/)を使って、特定のアカウントをサポートしターゲットコンタクトまたはステークホルダーへのインサイトを提供できるパートナーがいるかを特定します。
 
-**リージョナルマーケティングと連携する:** 自分の地域で現在スケジュールされているイベントを把握し、自分の整合するリージョナルマーケターの名前は [こちら](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support) でご確認ください。
+**Regional Marketing と連携する:** 自分の地域で現在スケジュールされているイベントを把握し、自分の整合する Regional Marketer の名前は [こちら](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support)でご確認ください。
 
-GitLab Unfiltered でホストされている下記の YouTube ビデオを視聴して、AE が結果を出すために通常どのようにセールスデベロップメントチームメンバーと連携するかをご覧ください。これらを視聴するには、まず YouTube アカウントを GitLab Unfiltered アカウントに切り替える必要があることを忘れないでください。[これに関する手順は、ここで YouTube ハンドブックページをご覧ください。](/handbook/marketing/marketing-operations/youtube/#unable-to-view-a-video-on-youtube)
+GitLab Unfiltered でホストされている下記の YouTube ビデオを視聴して、AE が結果を出すために通常どのように Sales Development チームメンバーと連携するかをご覧ください。これらを視聴するには、まず YouTube アカウントを GitLab Unfiltered アカウントに切り替える必要があることを忘れないでください。[これに関する手順は、ここで YouTube ハンドブックページをご覧ください。](/handbook/marketing/marketing-operations/youtube/#unable-to-view-a-video-on-youtube)
 
 <!-- blank line -->
 <figure class="video_container">
@@ -74,19 +74,19 @@ GitLab Unfiltered でホストされている下記の YouTube ビデオを視�
 </figure>
 <!-- blank line -->
 
-## 戦略を実行に移す
+## 戦略を実行に移す {#put-your-strategy-into-action}
 
-**プロスペクティングを始めるには [エンタープライズ AE 向けパイプライン生成ツールキット](https://docs.google.com/presentation/d/1Uo1_Ly_nRhgRwoesja3vHM0K9e-dwdRSZdTyCbVYAhI/edit?usp=sharing) を使用してください。**
+**プロスペクティングを始めるには [エンタープライズ AE 向けパイプライン生成ツールキット](https://docs.google.com/presentation/d/1Uo1_Ly_nRhgRwoesja3vHM0K9e-dwdRSZdTyCbVYAhI/edit?usp=sharing)を使用してください。**
 
-見込み客およびお客様にメッセージを送る前に、必ず 3 回確認してください。彼らと会社についての詳細を間違えることは、[State of Sales 2021 レポート](https://business.linkedin.com/sales-solutions/b2b-sales-strategy-guides/the-state-of-sales-2021-report) で買い手の目から見たトップディールブレイカーの 1 つとして挙げられています。
+見込み客およびお客様にメッセージを送る前に、必ず 3 回確認してください。彼らと会社についての詳細を間違えることは、[State of Sales 2021 レポート](https://business.linkedin.com/sales-solutions/b2b-sales-strategy-guides/the-state-of-sales-2021-report)で買い手の目から見たトップディールブレイカーの 1 つとして挙げられています。
 
-### Outbound Wednesday
+### Outbound Wednesday {#outbound-wednesday}
 
 GitLab のチームは、プロスペクティングと顧客中心のアクティビティに時間を割いたときに成功を見出します。見込み客、パートナー、または成長中の顧客とのミーティングを行う場合でも、お客様に価値を届けることに集中するアウトバウンドの日を設定すると、結果を高め、チームメンバーに専念する顧客時間中に内部ミーティングをスケジュールまたは事前予約しないように知らせることができます。
 
-#### **AMER の Outbound Wednesday Initiative**
+#### **AMER の Outbound Wednesday の取り組み** {#amer}
 
-- ミッション: GitLab の Iteration の価値観に整合し、AE、SA、BDR、TAM／CSM、ISR、チャネルアカウントマネージャーといった顧客対応チームに時間を返し、顧客フォーカスとパートナー対応の時間を許容したいと考えています。さらに、これにより、より大きなお客様とパートナーの協働が可能になると考えています。
+- ミッション: GitLab のイテレーションの価値観に整合し、AE、SA、BDR、TAM／CSM、ISR、Channel Account Manager といった顧客対応チームに時間を返し、顧客フォーカスとパートナー対応の時間を許容したいと考えています。さらに、これにより、お客様やパートナーとのより充実した協働が可能になると考えています。
 
 - なぜそれが重要か: 私たちは内部ミーティングとリクエストが豊富にあることを認識しています。より顧客中心性を促進するために、私たちは "Outbound Wednesdays" のコンセプトを開発しました。
 
@@ -97,16 +97,16 @@ GitLab のチームは、プロスペクティングと顧客中心のアクテ�
   - 週の 20% 以上をお客様との対面ミーティングに専念する
   - お客様とのライブ同期を優先し、彼らがそれを行いやすくする
   - より多くの顧客ミーティングを持つのに役立つアクティビティとリソースを推進する
-  - ONE チームとして顧客中心性を示すために利用可能である
+  - 1 つのチームとして顧客中心性を示すために利用可能である
 
 **例外:**
 Outbound Wednesdays は強制ではありません。ただし、Americas Enterprise チームに対し、お客様とパートナーのミーティングのみを事前予約するよう最善を尽くすことを推奨しています。マネージャーの場合、これにはお客様、パートナー、採用が含まれます。水曜日に同日内部ディスカッションが必要な場合は、それでも実施できます。同日ミーティング用に人々のカレンダーには時間があります。
 
-目標は、そのようなミーティングを事前にスケジュールすることを避けることです。"ONE AMER ENT Team" としてこれを一緒に行うことで、顧客中心の協働がより容易に発生する環境を提供するのに役立つことがわかるでしょう。水曜日に内部ミーティングを減らすよう努めることで、私たちは [可能な限りチームメンバーと非同期で操作するイニシアチブを取る](/handbook/values/#bias-towards-asynchronous-communication) べきです。同期的協働が必要な誤解を明確にするために、後続の日に内部ディスカッションをフォローアップできます。
+目標は、そのようなミーティングを事前にスケジュールすることを避けることです。"ONE AMER ENT Team" としてこれを一緒に行うことで、顧客中心の協働がより容易に発生する環境を提供するのに役立つことがわかるでしょう。水曜日に内部ミーティングを減らすよう努めることで、私たちは可能な限りチームメンバーと非同期で仕事を進めるよう率先して取り組むべきです。同期的協働が必要な誤解を明確にするために、後続の日に内部ディスカッションをフォローアップできます。
 
 [Google Drive で概要を確認しコントリビュートしてください。](https://docs.google.com/document/d/1x2lKXh1hYs5gx0MPYrHjHayFTFALBFREhSFR81yKiUY/edit)
 
-## パイプラインを健全に保つ
+## パイプラインを健全に保つ {#keep-your-pipeline-healthy}
 
 一般に、サプライズ — 突然の大型ディールであれ、突然の大きな喪失であれ — は悪いことです。私たちは予測可能な結果を生み出すように努める必要があります。最初は、これは膨大な未知を予測しようとしているように見えます。しかし、パイプラインに対する強力な戦略を持っていれば、それが起こるずっと前に、年間がどう展開するかを正確に把握できます。これは、より良くより信頼性の高いフォーキャストと、目標を達成できるかどうかについてのストレスの軽減を意味します。
 
@@ -126,42 +126,42 @@ Outbound Wednesdays は強制ではありません。ただし、Americas Enterp
 
 ---
 
-## リソース
+## リソース {#resources}
 
 - [セールスディスカバリーとクオリファイ質問ハンドブックページ](/handbook/sales/qualification-questions/)
 - [効果的なディスカバリーハンドブックページ](/handbook/sales/playbook/discovery/)
 - [最も一般的なカスタマーユースケースハンドブックページ](/handbook/marketing/use-cases/)
 
-### トレーニング
+### トレーニング {#training}
 
-- [Pipeline Generation at GitLab](https://gitlab.edcast.com/pathways/pipeline-generation-at-gitlab) (GitLab Learn - EdCast, 35 分)
-- [Effective discovery course](https://gitlab.edcast.com/insights/ECL-c0a6e34d-a997-4200-b0d9-65e3305e3761) (GitLab Learn - EdCast, 40 分)
-- [Demystifying the metrics conversation](/handbook/sales/command-of-the-message/metrics/#embrace-your-role-as-the-trusted-advisor) (Nico Ochoa ビデオ, 10 分)
-- [Pipeline Generation - Leading with Insights](https://www.youtube.com/watch?v=fNiGq5uOxgo) (GitLab Unfiltered, 2019 年 11 月, 10 分)
+- [GitLab でのパイプライン生成](https://gitlab.edcast.com/pathways/pipeline-generation-at-gitlab) (GitLab Learn - EdCast, 35 分)
+- [効果的なディスカバリーのコース](https://gitlab.edcast.com/insights/ECL-c0a6e34d-a997-4200-b0d9-65e3305e3761) (GitLab Learn - EdCast, 40 分)
+- [メトリクスに関する会話の理解を深める](/handbook/sales/command-of-the-message/metrics/#embrace-your-role-as-the-trusted-advisor) (Nico Ochoa ビデオ, 10 分)
+- [パイプライン生成 - インサイトを活用する](https://www.youtube.com/watch?v=fNiGq5uOxgo) (GitLab Unfiltered, 2019 年 11 月, 10 分)
 
-### サポート
+### サポート {#support}
 
-- [Regional Marketing Support](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support) と [Regional Marketing events calendar](https://app.asana.com/1/306855239930259/project/1209020056902315/calendar/1209020173960870)
-- [Compete support](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/) と [Competition Slack channel](https://gitlab.slack.com/archives/C1BBL1V3K)
-- [Executive sponsorship program](/handbook/sales/field-operations/gtm-resources/#executive-sponsorship-program)
+- [Regional Marketing のサポート](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support)と [Regional Marketing のイベントカレンダー](https://app.asana.com/1/306855239930259/project/1209020056902315/calendar/1209020173960870)
+- [競合対策のサポート](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/)と [競合に関する Slack チャンネル](https://gitlab.slack.com/archives/C1BBL1V3K)
+- [エグゼクティブスポンサーシッププログラム](/handbook/sales/field-operations/gtm-resources/#executive-sponsorship-program)
 - [ABM マーケティングサポートのアカウントを推薦](/handbook/marketing/account-based-marketing/)
 
-**パートナーサポート:** [#channel-sales Slack チャンネル](https://gitlab.slack.com/archives/CT9KKE5RR) は、パートナーコンタクトを共有できるチャネルアカウントマネージャーから助けを得るのに最適な場所です
+**パートナーサポート:** [#channel-sales Slack チャンネル](https://gitlab.slack.com/archives/CT9KKE5RR)は、パートナーコンタクトを共有できる Channel Account Manager から助けを得るのに最適な場所です
 
-- [GitLab Partner Directory](https://partners.gitlab.com/English/directory/) でパートナーを検索する
-- [技術パートナー](/handbook/resellers/#deal-registration-instructions) とディール登録する
+- [GitLab Partner Directory](https://partners.gitlab.com/English/directory/)でパートナーを検索する
+- [技術パートナー](/handbook/resellers/#deal-registration-instructions)とディール登録する
 
-### ツール
+### ツール {#tools}
 
-上記のツールキットがメインリソースであり、独自のパイプライン生成アクティビティ用にコピーおよび変更するシーケンステンプレートのようなものが含まれています。また、よりアクセスしやすくするためにここで説明している下記のリソースも含まれています。利用可能な追加ツールを探求するには、[私たちの技術スタックページをご覧ください。](/handbook/business-technology/tech-stack)
+上記のツールキットがメインリソースであり、独自のパイプライン生成アクティビティ用にコピーおよび変更するシーケンステンプレートのようなものが含まれています。また、よりアクセスしやすくするためにここで説明している下記のリソースも含まれています。利用可能な追加ツールを探求するには、[私たちの Tech Stack ページをご覧ください。](/handbook/business-technology/tech-stack)
 
-**[Outreach.io](https://university.outreach.io/prospecting-specialist-badge)** は、シーケンスの形でメールを自動化するために使用されるツールです。ユーザーは、さまざまなテンプレートのオープンレート、クリックスルーレート、レスポンスレートを追跡し、これらのメトリクスに基づいてシーケンスを更新できます。Outreach.io は、コールなどのセールスアクティビティを追跡するのにも役立ちます。Outreach.io 経由で実行されるすべてのメール／コール／タスクは、対応するディスポジションと共に Salesforce に自動的にログ記録されます。各々がいつ使用すべきかの現在のコールディスポジションのリスト、その意味、シナリオについては、下記をご覧ください。すべての AE は、[Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を提出することで Outreach.io へのアクセスをリクエストできます（既にアクセスを持っていない場合）。
+**[Outreach.io](https://university.outreach.io/prospecting-specialist-badge)** は、シーケンスの形でメールを自動化するために使用されるツールです。ユーザーは、さまざまなテンプレートのオープンレート、クリックスルーレート、レスポンスレートを追跡し、これらのメトリクスに基づいてシーケンスを更新できます。Outreach.io は、コールなどのセールスアクティビティを追跡するのにも役立ちます。Outreach.io 経由で実行されるすべてのメール／コール／タスクは、対応するディスポジションと共に Salesforce に自動的にログ記録されます。各々がいつ使用すべきかの現在のコールディスポジションのリスト、その意味、シナリオについては、下記をご覧ください。すべての AE は、[Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を提出することで Outreach.io へのアクセスをリクエストできます（既にアクセスを持っていない場合）。
 
-**[LinkedIn Sales Navigator](https://www.linkedin.com/business/sales/blog/sales-navigator/what-is-linkedin-sales-navigator)** は、GitLab で使用する主要なプロスペクティングツールの 1 つです。強力な検索機能、拡張ネットワークへの可視性の向上、適切な意思決定者にリーチするのに役立つパーソナライズされたアルゴリズムを備えています。すべての AE は LSN にアクセスできます。[EdCast トレーニングへ移動するにはクリックしてください。](https://gitlab.edcast.com/insights/learning-linkedin-sales) [ハンドブックページ](/handbook/sales/training/social-selling/) で追加のビデオとチュートリアルをご覧ください。
+**[LinkedIn Sales Navigator](https://www.linkedin.com/business/sales/blog/sales-navigator/what-is-linkedin-sales-navigator)** は、GitLab で使用する主要なプロスペクティングツールの 1 つです。強力な検索機能、拡張ネットワークへの可視性の向上、適切な意思決定者にリーチするのに役立つパーソナライズされたアルゴリズムを備えています。すべての AE は LSN にアクセスできます。[EdCast トレーニングへ移動するにはクリックしてください。](https://gitlab.edcast.com/insights/learning-linkedin-sales) [ハンドブックページ](/handbook/sales/training/social-selling/)で追加のビデオとチュートリアルをご覧ください。
 
 - LinkedIn Sales Navigator にアクセスするには、[Lumos App Store](https://app.lumosidentity.com/app_store?domainAppId=1398792) 経由でアクセスをリクエストします。アクセスが承認されたら、Lumos が提供する手順に従って、個人の LinkedIn アカウントを LISN にリンクします。
 
-**[6Sense](/handbook/marketing/marketing-operations/6sense/)** は、ターゲット見込み客に関連するデータを示すことができるセールスデベロップメントによって使用されます。インテントと購買傾向データの豊富さを持ち、各アカウントの全体的なインテントマッピングを作成するためにアカウントエンゲージメント指標と結び付けられています。
+**[6Sense](/handbook/marketing/marketing-operations/6sense/)** は、ターゲット見込み客に関連するデータを示すことができる Sales Development によって使用されます。インテントと購買傾向データの豊富さを持ち、各アカウントの全体的なインテントマッピングを作成するためにアカウントエンゲージメント指標と結び付けられています。
 
 **Conversica** は、エンタープライズマーケティング、セールス、カスタマーサクセス、ファイナンスチームが顧客収益ライフサイクル全体でお客様を引き付け、獲得し、成長させるのに役立つ会話型 AI ツールです。AI アシスタントは、見込み客をさらにクオリファイするためにメール経由で人間のような会話で見込み客に関わることで機能します。
 

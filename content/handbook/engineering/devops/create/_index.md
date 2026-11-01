@@ -3,16 +3,16 @@ title: Create
 description: >-
   Create ステージは、Source Code を含むチームグループです。
 upstream_path: /handbook/engineering/devops/create/
-upstream_sha: 2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8
-translated_at: "2026-10-20T20:57:57Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T08:17:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-20T10:12:47-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## こんにちは
+## こんにちは {#hello}
 
-[私たちは Create ステージ](/handbook/engineering/devops/create/engineering-managers/)であり、DevOps 部門内のチームグループです。私たちは、[GitLab 製品内](/handbook/product/categories/#create-stage)の領域を担当する、以下のチームで構成されています。
+[私たちは Create ステージ](/handbook/engineering/devops/create/engineering-managers/)であり、DevOps Department 内のチームグループです。私たちは、[GitLab 製品内](/handbook/product/categories/#create-stage)の領域を担当する、以下のチームで構成されています。
 
 | チーム | Engineering Managers |
 | ---- | -------------------- |
@@ -20,29 +20,29 @@ lastmod: "2026-10-20T10:12:47-04:00"
 | [Create:Change Record](/handbook/engineering/devops/create/source-code/change-record/) | [Daniel Lanthier](https://gitlab.com/dclannn) |
 | [Create:Repository Services](/handbook/engineering/devops/create/source-code/repository-services/) | [Armin Pašalić](https://gitlab.com/armin.pasalic) |
 | [Create:Source Code Hardening and Modernization](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)（一時的、2027-09-10 まで） | [Vladimir Shushlin](https://gitlab.com/vshushlin) |
-| [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](https://gitlab.com/thiagocsf) (フルスタック) — レポート先 {{< manager-by-report-name "Thiago Figueiró" >}} |
+| [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](https://gitlab.com/thiagocsf) (Fullstack) — レポート先 {{< manager-by-report-name "Thiago Figueiró" >}} |
 
-## ミッション
+## ミッション {#mission}
 
-### 私たちは何をしますか？
+### 私たちは何をしますか？ {#what-do-we-do}
 
 Create ステージは、効率とコラボレーションを改善することにより、ソフトウェア開発チームの提供を加速し、サイクルタイムを短縮することを支援します。私たちのステージは、DevOps ライフサイクルの始まりをサポートするツールを提供します。
 
-### 誰にサービスを提供しますか？
+### 誰にサービスを提供しますか？ {#whom-do-we-serve}
 
 私たちは以下のためのツールを構築します：
 
-- ソフトウェア開発者
-- DevOps エンジニア
-- 開発チームリード
+- Software Developers
+- DevOps Engineers
+- Development Team leads
 - Product Managers
 - Product Designers
 
-### どのようにサービスを提供しますか？
+### どのようにサービスを提供しますか？ {#how-do-we-serve-them}
 
 [製品ビジョンハンドブックページ](https://about.gitlab.com/direction/create/#categories-in-create)は、各タイプの GitLab ユーザーにどのようにサービスを提供するかについての具体的な例を提供します。
 
-## ビジョン
+## ビジョン {#vision}
 
 次の領域は、今年の私たちの方向性として定義されています：
 
@@ -53,7 +53,7 @@ Create ステージは、効率とコラボレーションを改善すること�
 - [編集エクスペリエンスの統合](https://about.gitlab.com/direction/create/#unifying-our-editing-experiences)
 - [より良い統合](https://about.gitlab.com/direction/create/#better-integrations)
 
-## プロフェッショナル開発
+## プロフェッショナル開発 {#professional-development}
 
 各チームメンバーは、**スキルと知識の改善**に向けて前向きなステップを取ることが奨励されます。
 
@@ -61,21 +61,21 @@ Create ステージは、効率とコラボレーションを改善すること�
 
 もっと学びたい分野がある場合は、マネージャーに連絡して、好みの分野で成長できる環境を提供してもらってください。推奨されるリソースは以下のとおりです：
 
-**Engineering Manager**
+**Engineering Managers**
 
 - [推奨書籍](/handbook/engineering/devops/create/engineering-managers/books/)
 - [トレーニング教材](/handbook/engineering/devops/create/engineering-managers/training/)
 
-**個人コントリビューター**
+**Individual Contributors**
 
 - [プロフェッショナル開発](/handbook/engineering/devops/create/engineers/professional-development/)
 - [推奨書籍](/handbook/engineering/devops/create/engineers/books/)
 - [トレーニング教材](/handbook/engineering/careers/training/)
-- [個人コントリビューターからマネージャーへの移行](/handbook/engineering/careers/training/ic-to-manager)
+- [Individual Contributor から Manager への移行](/handbook/engineering/careers/training/ic-to-manager)
 - [スキップレベルミーティング](/handbook/engineering/devops/create/engineers/skip-level/)
 - [イテレーション](/handbook/engineering/devops/create/engineers/iteration/)
 
-## 私たちの働き方
+## 私たちの働き方 {#how-we-work}
 
 各チームは、自分たちの製品とチームのニーズに最も適した方法で作業します。
 
@@ -85,7 +85,7 @@ Create ステージは、効率とコラボレーションを改善すること�
 - [Repository Services チーム](/handbook/engineering/devops/create/source-code/repository-services/)
 - [Source Code Hardening and Modernization チーム](/handbook/engineering/devops/create/source-code/hardening-and-modernization/)
 
-### 製品とデザインとの協働
+### 製品とデザインとの協働 {#working-with-product-and-design}
 
 可能な場合は、[製品開発フロー](/handbook/product-development/how-we-work/product-development-flow)に従います。
 
@@ -93,11 +93,11 @@ Product Manager と Engineering Manager 間の週次コールは、各グルー�
 
 月次マイルストーン計画 Issue は、次のマイルストーンが始まる前の週に作成されるようトリガーされます。PM（Product Manager）、EM（Engineering Manager）、PD（Product Designer）が一緒にマイルストーンを計画します。
 
-### Product と完了条件を定義する
+### Product と完了条件を定義する {#defining-the-definition-of-done-with-product}
 
 [ビルドトラック](/handbook/product-development/how-we-work/product-development-flow/#build-track)中、Issue またはエピックの説明内で、成功の測定値が定量的または定性的な成功メトリクスで何であるかを文書化します。Product Manager と Product Designer は、これらのメトリクスを提案し、Engineering とコラボレートして計測および検証する責任があります。
 
-### クロスチーム計画と精緻化
+### クロスチーム計画と精緻化 {#cross-team-planning-and-refinement}
 
 これらのガイドラインは、クロスチーム依存関係の識別と、早期のコラボレーションを促進することを目的としています。このプロセスは、製品開発フロー、[ビルドフェーズ 1: 計画](/handbook/product-development/how-we-work/product-development-flow/#build-phase-1-plan)の一部として行われ、エピックおよび/または Issue の実行のスケジュールを設定する前に行う必要があります。
 
@@ -122,7 +122,7 @@ Product Manager と Engineering Manager 間の週次コールは、各グルー�
 
 Issue を精緻化するように割り当てられたエンジニアは、Issue が成功した精緻化と実行に必要な情報を欠いている場合に質問し、反対意見を述べることが奨励されます。
 
-##### 精緻化ガイドライン
+##### 精緻化ガイドライン {#refinement-guidelines}
 
 1. Issue の完全性を確認します：
    - 該当する場合、UI を含む必要なデザインがある。
@@ -138,7 +138,7 @@ Issue を精緻化するように割り当てられたエンジニアは、Issue
 
 誰かが Issue とその実装を理解するためには、すべてのコメントを読む必要はないはずです。必要な情報は、唯一の情報源として説明に含まれている必要があります。
 
-##### 実装計画
+##### 実装計画 {#implementation-plan}
 
 この要求に対処するために更新する必要のあるステップとコードの一部のリスト。
 実装計画では、他のチームメンバーまたはチームの責任を明示し、関連する Engineering Manager が計画に同意していることを確認する必要があります。
@@ -147,48 +147,48 @@ Issue を精緻化するように割り当てられたエンジニアは、Issue
 
 複雑な変更については、別のエンジニアからのレビューをリクエストし、対象分野の専門家をループに入れることを検討します。
 
-## 意思決定プロセス
+## 意思決定プロセス {#decision-making-process}
 
 Create のチームが従う、明確で信頼性のある意思決定プロセスを確保するためのワークフローの詳細については、[意思決定プロセス](/handbook/engineering/devops/create/decision-making-process)を参照してください。
 
-## テンプレート
+## テンプレート {#templates}
 
 プロセスをより透明かつ効率的にするためにテンプレートを使用します。プラクティスを一度文書化し、頻繁に再利用することは、ステージ全体を通じてガイダンスとサポートを提供します。
 
-## Create ステージ運用ダッシュボード
+## Create ステージ運用ダッシュボード {#create-stage-operational-dashboard}
 
 この[ダッシュボード](https://gitlab.com/groups/gitlab-org/-/wikis/CXO-Operational-Dashboards/-Core-DevOps-Executive-Dashboard/Create-Stage-Operational-Dashboard)は、Create ステージ全体で品質と信頼性を維持するための中央コマンドセンターとして機能します。私たちの Quality First マインドセットに沿って、この wiki を使用してシステムと顧客体験の運用上の健全性を追跡、監視、行動します。
 
-### 私たちのコミットメント
+### 私たちのコミットメント {#our-commitment}
 
 品質と信頼性は交渉の余地がありません。この wiki で主要なメトリクスを追跡し、明確な目標を設定することで、トレンドが間違った方向に動くときに品質と信頼性の懸念事項が、非インターロック機能作業よりも優先されることを保証します。
 
-### どのように機能するか
+### どのように機能するか {#how-it-works}
 
 infradev Issue、バグ、エラーバジェット、インシデント、または顧客エスカレーションがネガティブにトレンドしているか、目標を逃している場合、品質と信頼性の問題に対処するために、非インターロック機能からチームキャパシティをすぐにシフトします。これにより、品質と信頼性の問題が優先される運用上の規律が作成されます。
 
 - Wiki は infradev Issue とバグ（オープン対クローズ）の週次トレンドを表示
 - 信頼性指標としてエラーバジェットステータス（🟢🔴）を監視
-- 目標に対する期限切れ S1-S4 infradev Issue とバグを追跡
+- 目標に対する期限超過の S1-S4 infradev Issue とバグを追跡
 - システム信頼性と顧客への影響の測定値として、アクティブインシデントと顧客エスカレーションを追跡
 - メトリクスが低下したり目標を逃したりした場合、非必須の機能作業を一時停止または遅延させ、品質と信頼性の修復にチームメンバーのキャパシティをリダイレクト
 
-### 結果
+### 結果 {#the-outcome}
 
 - チームが障害や顧客の痛みに反応的にではなく、低下するメトリクスに積極的に対応するため、品質と信頼性が第一優先事項として維持されます。（[製品プロセス](/handbook/product/product-processes/#prioritization)に従って）
 - インターロックコミットメント（専用の信頼性イニシアチブを含む）は継続しますが、裁量的機能は品質と信頼性のニーズに譲り、システム安定性、製品の整合性、または顧客体験を損なう技術的負債を決して蓄積しないことを保証します。
 
-## バグ解決戦略
+## バグ解決戦略 {#bug-resolution-strategy}
 
 私たちは、タイムリーな解決を確保し、バックログの蓄積を防ぎ、定義されたバグバーンダウンサイクルを通じて予測可能なチームキャパシティを維持する、持続可能なバグ管理プロセスに従っています。
 
-### バグバーンダウンサイクルの概要
+### バグバーンダウンサイクルの概要 {#bug-burn-down-cycle-overview}
 
 **バグバーンダウンサイクル**は、システムヘルスを回復し品質基準を満たすために、チームが既存のバグの解決を優先する集中的でフォーカスされた期間です。チームは、バグの負債が重要なしきい値に達したときにこのサイクルに入ります。
 
-### 終了基準： バグバーンダウンサイクルから離れる
+### 終了基準： バグバーンダウンサイクルから離れる {#exit-criteria-leaving-the-bug-burn-down-cycle}
 
-#### 終了するための要件（すべての重大度レベルに適用）
+#### 終了するための要件（すべての重大度レベルに適用） {#requirements-to-exit-applies-to-all-severity-levels}
 
 1. **SLO 遵守**
 
@@ -197,8 +197,8 @@ infradev Issue、バグ、エラーバジェット、インシデント、また
 
 2. **マイルストーン割り当て**
 
-   - すべてのバグを特定のリリースマイルストーンに割り当てる
-   - "Backlog"ステータスのすべてのバグを排除
+   - バグの 100% を特定のリリースマイルストーンに割り当てる
+   - "Backlog" ステータスのすべてのバグを排除
    - 適切な計画とキャパシティ管理のために、現在および将来のマイルストーンにバグを分散
 
 3. **一貫した週次スループット**
@@ -211,21 +211,21 @@ infradev Issue、バグ、エラーバジェット、インシデント、また
    - バーンダウンサイクル終了後、週次コミットメント目標を再評価
    - 受信バグ率とチームキャパシティに基づいてコミットメントを調整
 
-#### 再開トリガー: バグバーンダウンサイクルに入る
+#### 再開トリガー: バグバーンダウンサイクルに入る {#re-entry-triggers-entering-a-bug-burn-down-cycle}
 
 次のいずれかの条件が発生した場合、チームは**バグバーンダウンサイクルに入ります**:
 
-##### トリガー条件
+##### トリガー条件 {#trigger-conditions}
 
 - 単一のマイルストーン内で SLO を逃した**2 つ以上のバグ**が存在
 - バグが **"Backlog"** ステータス（マイルストーンに割り当てられていない）で蓄積し始める
 - チームが、マイルストーンあたりのバグクローズの**最小 Issue 数**しきい値を下回る
 
-### 継続的な持続可能性プラクティス
+### 継続的な持続可能性プラクティス {#ongoing-sustainability-practice}
 
 発見時にすべての新しいバグをすぐに特定のマイルストーンに割り当てる。
 
-## チーム間の働き方
+## チーム間の働き方 {#how-we-work-across-teams}
 
 Create ステージのチームは一緒に仕事をし、一緒に遊びます。私たちは互いに依存し、機能をサポートし補完することができて幸運です。クロスチームコラボレーションの例：
 
@@ -234,25 +234,25 @@ Create ステージのチームは一緒に仕事をし、一緒に遊びます�
 
 四半期ごとに、クロスチームのボンディングアクティビティ、Create Team Day に参加します。
 
-## 私たちの価値観を生きる方法
+## 私たちの価値観を生きる方法 {#how-we-live-our-values}
 
-Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生きています。
+Engineering Manager は毎日私たちの価値観を生きています。
 
 [Engineering Manager が GitLab Values をどう生きているかについて詳しく読む](/handbook/engineering/devops/create/engineering-managers/live/)
 
-## 結果を測定する方法
+## 結果を測定する方法 {#how-we-measure-results}
 
 - [OKR](/handbook/engineering/devops/create/engineering-managers/okrs/)
 - ダッシュボード
 - Issue ボード
 - [監視](/handbook/engineering/devops/create/engineering-managers/monitoring/)
 
-## イテレーションを測定する方法
+## イテレーションを測定する方法 {#how-we-measure-iteration}
 
 - ログ
 - MR 率
 
-## 生産性を追跡する方法
+## 生産性を追跡する方法 {#how-we-track-productivity}
 
 タレントアセスメント中、Engineering Manager はチームメンバーのパフォーマンスを評価するために包括的なアプローチを取ります。各[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)の期待に対する公平な評価を確保するために、私たちのエコシステム全体にわたる多様な相互接続されたメトリクスのセットを検討します。これらのメトリクスには以下が含まれます：
 
@@ -268,7 +268,7 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
 
 このアプローチにより、エンジニアのコントリビューションと成長について均整のとれた評価が可能になります。詳細については、[タレントアセスメント](/handbook/engineering/devops/create/talent-assessments/)ページを参照してください。
 
-### どのメトリクスに焦点を当てるか？
+### どのメトリクスに焦点を当てるか？ {#what-metrics-do-we-focus-on}
 
 現在、次のメトリクスについて月次の期待を設定しています：
 
@@ -279,7 +279,7 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
   - **グループ**に適用する場合： 分子は、指定された期間（通常は月）にプロジェクトのセットにマージされたマージリクエストに提供されたコードレビューの数（[以下のメモ](#metrics_notes)を参照）。分母はグループの人数。
   - **個人**に適用する場合： 指定された期間（通常は月）にプロジェクトのセット（[以下のメモ](#metrics_notes)を参照）にマージされたマージリクエストに提供されたコードレビューの数。
 
-### マネージャーがこれらのメトリクスを使用する方法
+### マネージャーがこれらのメトリクスを使用する方法 {#how-managers-should-use-these-metrics}
 
 マネージャーは以下を行う必要があります：
 
@@ -296,7 +296,7 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
 - メトリクスの解釈方法に重要な影響を与える場合は、チーム固有のコンテキスト（例： 重いインシデント負荷、レガシーオーナーシップ、または大規模なリファクタリング）をチームのハンドブックページに積極的に文書化する。
 - パフォーマンス決定のための唯一の信頼できる情報源として企業全体の[タレントアセスメント](/handbook/people-group/talent-assessment/)ガイダンスを使用し、MR とレビュー関連のデータは決定的な要因ではなく、複数の入力の 1 つとして扱う。
 
-#### ダッシュボード
+#### ダッシュボード {#dashboards}
 
 - マージリクエスト率： [tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/MTTMAllMRs/MTTMDashboard)
 - レビュー率： [tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/AverageReviewTime/ReviewStatsbyUser?:iid=4)
@@ -308,7 +308,7 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
 1. これらのメトリクスには、製品に影響するすべての MR が含まれます。データセットに含まれる特定のプロジェクトは、[このシードファイル](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/seeds/seed_engineering/projects_part_of_product.csv?ref_type=heads)にリストされています。
 1. 時間をかけてこのプロセスをイテレーションし、メトリクスの範囲を拡張して改善することで、チームの貢献と変化する役割の期待に合うようにします。変更はすべてのチームメンバーに明確に伝えられます。
 
-### 各ジョブレベルのベースライン目標
+### 各ジョブレベルのベースライン目標 {#baseline-targets-for-each-job-level}
 
 下記の表では、シニアリティレベルに関連する各メトリクスのベースライン数値をアウトラインします。これらの数値は、ステージの Engineering Manager とのコラボレーションから導出されました。上記でアウトラインされているように、それらはチームの健全性と個々のワークロードパターンを理解するための _判断材料の 1 つにすぎないもの_ として扱われます。 **それらは生産性またはパフォーマンスの完全な測定値として扱われません** が、方向性のガイドとして設定されています。
 
@@ -323,13 +323,13 @@ Engineering Manager は毎日[私たちの価値観](/handbook/values/)を生き
 
 私たちの CREDIT 価値観に沿って、バイアスを減らし、倒錯したインセンティブ（MR 分割や表面的なレビューなど）を回避し、顧客のための意味のある成果と持続可能な働き方に焦点を維持するために、これらのベースラインを定期的にレビューおよび調整します。
 
-### 目標は何を意味するか？
+### 目標は何を意味するか？ {#what-do-the-targets-mean}
 
 経験則として、明確な文脈的理由（例： 延長されたインシデント対応、主要なアーキテクチャ作業、重要なメンタリングまたはリーダーシップ責任、または長期休暇）がない限り、ほとんどのチームメンバーが**特定の年の 12 か月のうち少なくとも 6 か月**、これらのベースラインに近いまたは上回ることを期待します。
 
 これらの期待は、会話とサポートを促進するためのガイドラインであり、厳密なノルマや自動的なパフォーマンス結果ではありません。チームまたは個人がどのように広く動作しているかを評価するためのキャリブレーション支援として使用できますが、評価は**常に完全なタレントアセスメントフレームワークと組み合わせて**行われます。
 
-**個人コントリビューターの場合、** これらの目標は、本人が従事している役割とシニアリティの期待に合わせたヘルスステータスシグナルを提供できます。
+**Individual Contributors の場合、** これらの目標は、本人が従事している役割とシニアリティの期待に合わせたヘルスステータスシグナルを提供できます。
 
 **Engineering Manager の場合、** これらの目標は、チームメンバーをよりよくサポートするために、チームプロセス、計画、または個々のケースをレビューするシグナルを提供できます。
 

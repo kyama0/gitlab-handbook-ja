@@ -2,22 +2,22 @@
 title: "GitLab Delivery:Build"
 description: "Build チームはカスタマーが GitLab をデプロイするために使用するアーティファクトに注力しています。これにはシステムパッケージ、コンテナイメージ、クラウドプロバイダーマーケットプレイス上のパッケージが含まれます。Build チームメンバーは開発チームとエンドユーザーの橋渡し役を担います。Build エンジニアはコンポーネントの効率的なビルドを可能にし、シンプルで安全かつ信頼性の高いインストール体験を提供するためのツールと専門知識を提供します。"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-delivery/build/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:24:58.417573+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 Build チームはカスタマーが GitLab をデプロイするために使用するアーティファクトに注力しています。これにはシステムパッケージ、コンテナイメージ、クラウドプロバイダーマーケットプレイス上のパッケージが含まれます。Build チームメンバーは開発チームとエンドユーザーの橋渡し役を担います。Build エンジニアはコンポーネントの効率的なビルドを可能にし、シンプルで安全かつ信頼性の高いインストール体験を提供するためのツールと専門知識を提供します。
 
 Build チームはまた、外部から作成された多数のマージリクエストをレビューします。PostgreSQL、Consul、Patroni などのバンドルされたコンポーネントには定期的な依存関係とセキュリティの更新が必要です。コミュニティメンバーは特定の最適化を有効にするコンパイルフラグの変更をリクエストすることもあります。
 
-## 私たちのカスタマー
+## 私たちのカスタマー {#our-customers}
 
-### 内部カスタマー — 開発チーム
+### 内部カスタマー — 開発チーム {#internal-customers---development-teams}
 
 私たちは GitLab の開発チームと連携して以下を行います:
 
@@ -26,7 +26,7 @@ Build チームはまた、外部から作成された多数のマージリク�
 - 安全な依存関係管理と脆弱性の緩和を確保する
 - コードからパッケージ化ソフトウェアへの道筋を効率化する
 
-### 外部カスタマー — GitLab ユーザー
+### 外部カスタマー — GitLab ユーザー {#external-customers---gitlab-users}
 
 私たちは以下を通じて優れたインストール体験を提供します:
 
@@ -35,29 +35,29 @@ Build チームはまた、外部から作成された多数のマージリク�
 - 明確なドキュメントとアップグレードパス
 - 多様なカスタマー環境での互換性
 
-## ミッション
+## ミッション {#mission}
 
 Build チームは GitLab コンポーネントがシームレスに統合され、安全にパッケージ化され、カスタマーに確実にデリバリーされることを保証します。私たちは開発チームとエンドユーザーの橋渡し役として、コンポーネントのビルドを効率化するツールと専門知識を提供し、シンプルで安全かつ信頼性の高いインストール体験をデリバリーします。
 
-## ビジョン
+## ビジョン {#vision}
 
 [Build チームのビジョン](vision/)は、より広い [Delivery グループ](https://about.gitlab.com/direction/gitlab_delivery/)と整合し、それをサポートしています。
 
-### 内部カスタマー（開発チーム）向け
+### 内部カスタマー（開発チーム）向け {#for-internal-customers-development-teams}
 
 - すべての開発チームがワークフローを加速させる信頼性の高い効率的なビルドツールにアクセスできる
 - コンポーネントの統合が自動化され、安全で、手動介入を最小限に抑える
 - セキュリティの脆弱性がすべての依存関係にわたって積極的に特定・緩和される
 - ビルドプロセスが一貫していて、十分に文書化されており、可能な限りセルフサービスである
 
-### 外部カスタマー（GitLab ユーザー）向け
+### 外部カスタマー（GitLab ユーザー）向け {#for-external-customers-gitlab-users}
 
 - GitLab がサポートされているすべてのプラットフォームとアーキテクチャに容易にインストールできる
 - 本番準備が整い十分にテストされたパッケージを提供する
 - カスタマーのデプロイが最小限の介入で確実にアップグレードできる
 - セキュリティパッチが迅速かつ透明に公開される
 
-### テクノロジービジョン
+### テクノロジービジョン {#technology-vision}
 
 - GitLab がサポートされているすべてのプラットフォームとアーキテクチャで公式インストール方法を持つ
 - GitLab がサポートされているすべてのクラウドプラットフォームで公式のワンクリックインストール方法を提供する
@@ -68,7 +68,7 @@ Build チームは GitLab コンポーネントがシームレスに統合され
 - HA 構成での GitLab のセットアップが自動化されてシンプルになる
 - すべてのインストール方法がリリース前に自動的にテストされる
 
-### チームビジョン
+### チームビジョン {#team-vision}
 
 - 各チームメンバーがドメインの専門知識に加えてチームのすべてのプロジェクトに取り組める
 - 各チームメンバーがチームを強化し作業の質を高める候補者を特定するよう努める
@@ -78,9 +78,9 @@ Build チームは GitLab コンポーネントがシームレスに統合され
 - オンボーディングとオフボーディングが効率的
 - 明確なキャリア開発パス
 
-## クイックスタートガイド
+## クイックスタートガイド {#quick-start-guide}
 
-### 開発チーム向け
+### 開発チーム向け {#for-development-teams}
 
 - **新しい依存関係が必要ですか？** [デリバラブルリクエスト](https://gitlab.com/gitlab-org/distribution/team-tasks/-/issues/new?issuable_template=Architectural-Deliverables-Request)を作成してください
 - **パッケージングの質問ですか？** Issue で `@gitlab-build` にピングしてください
@@ -96,43 +96,43 @@ Build チームは GitLab コンポーネントがシームレスに統合され
 
 リリースサイクルの遅い段階で変更が報告された場合や報告されなかった場合、あなたの機能/変更はそのリリース内でシップされない可能性があります。
 
-### 新しいチームメンバー向け
+### 新しいチームメンバー向け {#for-new-team-members}
 
 - `Team-onboarding` テンプレートを使用して[チームオンボーディング Issue](https://gitlab.com/gitlab-org/distribution/team-tasks)を完了する
 - [ワークフロードキュメント](workflow.html)を確認する
 - オンボーディング Issue に記載されているとおりにビルドインフラストラクチャへのアクセスをセットアップする
 
-### カスタマーとコミュニティ向け
+### カスタマーとコミュニティ向け {#for-customers-and-community}
 
 - **インストールの問題:** [コミュニティフォーラム](https://forum.gitlab.com)
 - **バグ報告:** `group::build` ラベルを付けた [GitLab Issues](https://gitlab.com/gitlab-org/omnibus-gitlab/-/issues)
 - **インストールドキュメント:** [インストール](https://about.gitlab.com/install/)、[更新](https://about.gitlab.com/update/)、[アップグレード](https://about.gitlab.com/upgrade/)ページ
 - **コントリビューション:** [コミュニティ行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/)とコントリビューションガイドラインを参照
 
-## コミュニケーションチャンネル
+## コミュニケーションチャンネル {#communication-channels}
 
 - **緊急の問題:** Slack `#g_build` チャンネル
 - **機能リクエスト:** [デリバラブルリクエスト](https://gitlab.com/gitlab-org/distribution/team-tasks/-/issues/new?issuable_template=Architectural-Deliverables-Request) Issue
 - **一般的な質問:** 関連する Issue で `@gitlab-build` にピング
 - **マージリクエストのレビュー:** Build チームプロジェクトには[マージリクエストワークフロー](merge_requests.html#workflow)を使用する
 
-### サポートリクエストの場合
+### サポートリクエストの場合 {#for-support-requests}
 
 複数のチームからの専門知識が必要な複雑な問題や、どのチームがカスタマーリクエストを処理すべきか不明な場合は、GitLab の統一された Request for Help（RFH）プロセスを使用してください。このプロセスにより単一の情報源が確保され、多くのリクエストが実際に製品の複数の領域からの専門知識を必要とするため、より良いクロスファンクショナルなコラボレーションが可能になります。
 
 RFH を開くには、[ヘルプの入手方法](/handbook/support/workflows/how-to-get-help.md)のハンドブックページの手順を参照してください。このプロセスにより、関与した時間を追跡し、適切な当事者が適切なタイミングで関与することが保証されます。
 
-## 責任範囲
+## 責任範囲 {#responsibilities}
 
-### 内部カスタマーサポート
+### 内部カスタマーサポート {#internal-customer-support}
 
 - **ビルドツールとインフラ:** コンポーネントの効率的なビルドを可能にするツールを開発・維持する
 - **統合サービス:** 開発チームのコンポーネントが GitLab パッケージにシームレスに統合されるよう確保する
-- **セキュリティパートナーシップ:** セキュリティチームと協力して脆弱性を特定・緩和する
+- **セキュリティパートナーシップ:** Security チームと協力して脆弱性を特定・緩和する
 - **依存関係管理:** すべてのコンポーネントにわたって安全で最新の依存関係を維持する
 - **ドキュメントとセルフサービス:** 開発チームが独立して作業できるガイドを作成する
 
-### 外部カスタマーデリバリー
+### 外部カスタマーデリバリー {#external-customer-delivery}
 
 - **マルチプラットフォームパッケージ:** サポートされているすべての Linux ディストリビューションとアーキテクチャのパッケージをビルド・維持する
 - **コンテナイメージ:** 公式 GitLab コンテナイメージを開発・維持する
@@ -142,19 +142,19 @@ RFH を開くには、[ヘルプの入手方法](/handbook/support/workflows/how
 - **ライセンス管理:** バンドルされているすべての依存関係にわたってコンプライアンスを確保する
 - **パートナー認定:** バリデーションと認定のためにパートナーに提出する
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 以下の人々が GitLab:Build チームのメンバーです:
 
 {{< team-by-manager-slug manager="denisra" team="Build" >}}
 
-## 主要プロジェクト
+## 主要プロジェクト {#primary-projects}
 
-[omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab) - このプロジェクトはクラウド環境とオンプレミスホスティングでの Self-Managed 消費のために、プラットフォーム固有の自己完結型 GitLab パッケージとイメージを作成します。
+[omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab) - このプロジェクトはクラウド環境とオンプレミスホスティングでセルフマネージド利用するために、プラットフォーム固有の自己完結型 GitLab パッケージとイメージを作成します。
 
-[Cloud Native GitLab](https://gitlab.com/gitlab-org/build/CNG) は GitLab をデプロイするためのクラウドネイティブコンテナを提供します。これらのコンテナは Kubernetes、OpenShift、および Kubernetes 互換のコンテナプラットフォーム上で [GitLab Charts](https://gitlab.com/gitlab-org/charts/gitlab) または [GitLab Operator](https://gitlab.com/gitlab-org/cloud-native/gitlab-operator) を使用して Helm でデプロイ・管理できます。
+[Cloud Native GitLab](https://gitlab.com/gitlab-org/build/CNG)は GitLab をデプロイするためのクラウドネイティブコンテナを提供します。これらのコンテナは Kubernetes、OpenShift、および Kubernetes 互換のコンテナプラットフォーム上で [GitLab Charts](https://gitlab.com/gitlab-org/charts/gitlab) または [GitLab Operator](https://gitlab.com/gitlab-org/cloud-native/gitlab-operator)を使用して Helm でデプロイ・管理できます。
 
-### Omnibus GitLab プロジェクトの製品アウトプット
+### Omnibus GitLab プロジェクトの製品アウトプット {#omnibus-gitlab-projects-product-outputs}
 
 ```mermaid
 graph TD
@@ -188,7 +188,7 @@ graph TD
   AZURE(Azure)
 ```
 
-### Cloud Native GitLab プロジェクトの製品アウトプット
+### Cloud Native GitLab プロジェクトの製品アウトプット {#cloud-native-gitlab-projects-product-outputs}
 
 ```mermaid
 graph TD
@@ -213,22 +213,21 @@ graph TD
   DC(Docker Compose)
 ```
 
-## 全プロジェクト
+## 全プロジェクト {#all-projects}
 
 | 名前 | 場所 | 説明 |
 | -------- | -------- | -------- |
 | Omnibus GitLab | [gitlab-org/omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab) | Ubuntu、Debian、CentOS/RHEL、OpenSUSE、SLES などサポートされているすべての Linux OS の LTS バージョン向けに HA サポートを備えた Omnibus パッケージをビルドする |
-| Docker All in one GitLab image | [gitlab-org/omnibus-gitlab/docker](https://gitlab.com/gitlab-org/omnibus-gitlab/tree/master/docker) | omnibus-gitlab パッケージをベースとした GitLab CE/EE の Docker イメージをビルドする |
-| Cloud Native GitLab Containers | [gitlab-org/build/CNG](https://gitlab.com/gitlab-org/build/CNG) | GitLab Helm Charts が使用する個別のイメージ |
-| AWS images | [AWS marketplace](https://aws.amazon.com/marketplace/pp/B071RFCJZK?qid=1493819387811&sr=0-1&ref_=srh_res_product_title) | omnibus-gitlab パッケージをベースとした AWS イメージ |
+| Docker のオールインワン GitLab イメージ | [gitlab-org/omnibus-gitlab/docker](https://gitlab.com/gitlab-org/omnibus-gitlab/tree/master/docker) | omnibus-gitlab パッケージをベースとした GitLab CE/EE の Docker イメージをビルドする |
+| Cloud Native GitLab コンテナ | [gitlab-org/build/CNG](https://gitlab.com/gitlab-org/build/CNG) | GitLab Helm Charts が使用する個別のイメージ |
+| AWS イメージ | [AWS マーケットプレイス](https://aws.amazon.com/marketplace/pp/B071RFCJZK?qid=1493819387811&sr=0-1&ref_=srh_res_product_title) | omnibus-gitlab パッケージをベースとした AWS イメージ |
 | Omnibus GitLab Builder | [GitLab Omnibus Builder](https://gitlab.com/gitlab-org/gitlab-omnibus-builder) | omnibus-gitlab パッケージのビルド依存関係を含む環境を作成する |
 | バンドルされた依存関係のライセンス | [GL Pages 上のライセンスページ](https://gitlab-org.gitlab.io/omnibus-gitlab/licenses.html)  | 各パッケージにバンドルされた依存関係とそのライセンスを記載したウェブページ |
 
-## コミュニティとの連携
+## コミュニティとの連携 {#working-with-the-community}
 
 インストールとアップグレードのプロセスは、システム管理者が GitLab と作業を始める際に最初に経験する機能の 1 つです。
-その結果、Build チームが管理するプロジェクトはユーザーベースから高いエンゲージメントを受けています。GitLab
-コミュニティはコードコントリビューターだけではなく、Issue を報告したり機能リクエストを出したりするユーザーも常に私たちを前進させ、より良い体験を作るのに貢献しています。
+その結果、Build チームが管理するプロジェクトはユーザーベースから高いエンゲージメントを受けています。GitLab コミュニティはコードコントリビューターだけではなく、Issue を報告したり機能リクエストを出したりするユーザーも常に私たちを前進させ、より良い体験を作るのに貢献しています。
 
 私たちは公開プロジェクトで以下を目指しています:
 
@@ -238,7 +237,7 @@ graph TD
 1. コントリビューターの作業を[認識し感謝する](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#recognition-for-contributors)。
 1. コントリビューターが寄付してくれた時間を尊重し、[適切なレビューターンアラウンドタイム](/handbook/engineering/workflow/code-review/#review-turnaround-time)を提供する。
 
-### オープンソースコミュニティとの連携
+### オープンソースコミュニティとの連携 {#working-with-open-source-communities}
 
 [GitLab のオープンコア](/handbook/company/stewardship)は何千ものオープンソースの依存関係の上に構築されています。これらの依存関係とそのコミュニティは GitLab の戦略にとって重要であり、これらの依存関係との作業は Build チームが維持するプロジェクトに不可欠です。
 
@@ -255,8 +254,8 @@ Build チームが行うすべての作業は公開されています。いく�
 
 - 作業にセキュリティ上の影響がある場合 — 作業の過程でセキュリティ上の懸念がなくなった場合は、その作業を公開にすることが期待されます。
 - 第三者との作業の場合 — 第三者が作業を非公開にするよう要請した場合のみ。
-- 作業に財務的な影響がある場合 — 財務的な詳細を作業から省略できない場合を除く。
-- 作業に法的な影響がある場合 — 法的な詳細を作業から省略できない場合を除く。
+- 作業に財務的な影響がある場合 — 財務的な詳細を作業から省略できる場合を除く。
+- 作業に法的な影響がある場合 — 法的な詳細を作業から省略できる場合を除く。
 
 チームの作業の一部は `dev.gitlab.org` の開発サーバーで行われます。
 理由は[インフラの概要ドキュメント](https://docs.gitlab.com/omnibus/release/#infrastructure)に記載されています。
@@ -264,9 +263,9 @@ Build チームが行うすべての作業は公開されています。いく�
 セキュリティに関連する作業でない限り、その他のすべての作業は `GitLab.com` のプロジェクトで行われます。
 機密性の高い Issue を提出する必要がある場合は、機密 Issue を使用してください。
 
-何かをプライベートに保つ必要があるかどうかわからない場合は、チームのエンジニアリングマネージャーに確認してください。
+何かをプライベートに保つ必要があるかどうかわからない場合は、チームの Engineering Manager に確認してください。
 
-## オンボーディングとオフボーディング
+## オンボーディングとオフボーディング {#onboarding-and-offboarding}
 
 会社全体のオンボーディングとオフボーディングに加えて、Build チームには新しいチームメンバーをより素早く軌道に乗せるための独自のプロセスがあります。
 
@@ -274,9 +273,9 @@ Build チームが行うすべての作業は公開されています。いく�
 
 Issue に記載されているステップを進めることが最優先事項であり、会社全体のオンボーディング Issue よりも高い優先度です。なぜなら、チームのオンボーディングのアイテムはあなたの役割に特化したものであり、より素早く軌道に乗るのに役立つからです。
 
-オフボーディングはチームのエンジニアリングマネージャーが同じ Issue トラッカーの適切な Issue テンプレートを使用して行う必要があります。
+オフボーディングはチームの Engineering Manager が同じ Issue トラッカーの適切な Issue テンプレートを使用して行う必要があります。
 
-## 作業リソース
+## 作業リソース {#work-resources}
 
 開発者が利用できる一般的なリソースは[サンドボックスクラウドページ](/handbook/company/infrastructure-standards/realms/sandbox/)に記載されています。
 
@@ -292,28 +291,28 @@ Distribution チームでは特に、全員が以下のリソースにアクセ�
 
 これらのリソースへのアクセス権がない場合は、[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues)を作成してマネージャーに承認を求めてください。
 
-## インフラとメンテナンス
+## インフラとメンテナンス {#infrastructure-and-maintenance}
 
 チームの責任の一部として、チームは日々の業務に使用するインフラのメンテナンスを担当しています。
 ノードのリストとメンテナンスタスクの説明については[インフラとメンテナンス](maintenance/)ページを参照してください。
 
-## チームワークフロー
+## チームワークフロー {#team-workflows}
 
 一般的な[エンジニアリングワークフロー](/handbook/engineering/workflow/)が Build チームに適用されます。複数のプロジェクトをまたいで作業しているため、チームのワークフローは[Build ワークフローページ](workflow.html)でさらに詳しく説明・要約されています。
 
-### 参考資料
+### 参考資料 {#further-reading}
 
 以下の GitLab ハンドブックの重要な領域は私たちの作業に影響を与え、読む価値があります。
 
 - [一般的なエンジニアリングワークフローページ](/handbook/engineering/workflow/)
-- [私たちの価値観を強化する方法](/handbook/values/#how-do-we-reinforce-our-values)
+- 私たちの価値観を強化する方法
 - [中小規模ユーザーへのサービス継続](https://internal.gitlab.com/handbook/leadership/mitigating-concerns/#serve-smaller-users)（内部のみ）
 - [オープンソースコミュニティへの約束](/handbook/company/stewardship/#promises)
 - [プロダクト原則に従う方法](/handbook/product/product-principles/#how-we-follow-our-principles)
 - [効果的で責任あるコミュニケーションガイドライン](/handbook/communication/#effective--responsible-communication-guidelines)
 - [Distribution グループのテストプラットフォーム](/handbook/engineering/testing/distribution/)
 
-## ワークライフハーモニー
+## ワークライフハーモニー {#worklife-harmony}
 
 [オールリモート](/handbook/company/culture/all-remote/)と[非同期ファースト](/handbook/communication/#asynchronous-communication)での作業は、チームメンバーが自分の作業日をどのようにアプローチするかに柔軟性をもたらします。チームメンバーは作業時間と生活の他の側面のバランスをどのように取るかを選択する必要があります。
 
@@ -326,6 +325,6 @@ Distribution チームでは特に、全員が以下のリソースにアクセ�
 
 以下の GitLab ハンドブックの領域は健全なワークライフバランスを維持するために重要です。
 
-- [家族と友人を優先、仕事はその次](/handbook/values/#family-and-friends-first-work-second)
+- 家族と友人を優先、仕事はその次
 - [リモートワーク環境でのバーンアウト、孤立、不安に立ち向かう](/handbook/company/culture/all-remote/mental-health/)
 - [バーンアウトの認識](/handbook/people-group/time-off-and-absence/time-off-types/)

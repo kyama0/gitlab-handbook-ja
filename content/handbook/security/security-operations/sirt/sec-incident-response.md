@@ -7,52 +7,52 @@ tags:
   - security_standard
   - security_standard_cpir
 upstream_path: /handbook/security/security-operations/sirt/sec-incident-response/
-upstream_sha: f469f09c3347a37927c75866af3d2611a5421062
-translated_at: "2026-07-16T07:57:44+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:13:24+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T23:24:53+01:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
-## 目的
+## 目的 {#purpose}
 
-[セキュリティインシデントレスポンスチーム (SIRT)](/handbook/security/security-operations/sirt/) は、あらゆるセキュリティインシデントの支援のために [24/7/365](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#security-team-on-call-rotation) のオンコール体制を取っています。緊急のセキュリティインシデントが特定された場合、またはインシデントが発生した可能性があると思われる場合は、[セキュリティエンジニアオンコールへのエンゲージ](/handbook/security/security-operations/sirt/engaging-security-on-call/) を参照し、Slack で自分自身またはパブリック/プライベートチャンネルへの新しいメッセージを書いて `/security` コマンドを使用してください (このコマンドは Slack のスレッド内では動作しません)。
+[Security Incident Response Team (SIRT)](/handbook/security/security-operations/sirt/)は、あらゆるセキュリティインシデントの支援のために[24/7/365](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#security-team-on-call-rotation)のオンコール体制を取っています。緊急のセキュリティインシデントが特定された場合、またはインシデントが発生した可能性があると思われる場合は、[Security Engineer On-Call へのエンゲージ](/handbook/security/security-operations/sirt/engaging-security-on-call/)を参照し、Slack で自分自身またはパブリック/プライベートチャンネルへの新しいメッセージを書いて `/security` コマンドを使用してください (このコマンドは Slack のスレッド内では動作しません)。
 
-SIRT の責任とインシデントオーナーシップに関する情報は、[SIRT オンコールガイド](/handbook/security/security-operations/secops-oncall/) で確認できます。
+SIRT の責任とインシデントオーナーシップに関する情報は、[SIRT オンコールガイド](/handbook/security/security-operations/secops-oncall/)で確認できます。
 
-## スコープ
+## スコープ {#scope}
 
 ### インシデントの特定 {#incident-identification}
 
-セキュリティインシデント調査は、[GitLab.com](https://www.gitlab.com)、その他の GitLab サービス、または GitLab 社の一部としてセキュリティイベントが検知されたときに開始されます。これらの調査は、資格を持つセキュリティチームメンバーによりトリアージされ、トリアージ証拠が明白でリスクのないものであれば誤検知として処理されます。GitLab の顧客、サービス、プロダクト、チームメンバー、サードパーティサービス等に対して潜在的に有害または悪影響を及ぼす可能性があるかどうかについて疑義がある場合、セキュリティチームがインシデントを調査します。
+セキュリティインシデント調査は、[GitLab.com](https://www.gitlab.com)、その他の GitLab サービス、または GitLab 社の一部としてセキュリティイベントが検知されたときに開始されます。これらの調査は、適格な Security チームメンバーによりトリアージされ、トリアージ証拠が明白でリスクのないものであれば誤検知として処理されます。GitLab の顧客、サービス、プロダクト、チームメンバー、サードパーティサービス等に対して潜在的に有害または悪影響を及ぼす可能性があるかどうかについて疑義がある場合、Security チームがインシデントを調査します。
 
-インシデントの兆候は、内部の GitLab チームメンバーまたは外部の方から SIRT に [報告](/handbook/security/#reporting-an-incident) できます。セキュリティインシデントの特定および検証に応じて調査をいつ実施するかを判断するのは、セキュリティチームの責任です。
+インシデントの兆候は、内部の GitLab チームメンバーまたは外部の方から SIRT に[報告](/handbook/security/#reporting-an-incident)できます。セキュリティインシデントの特定および検証に応じて調査をいつ実施するかを判断するのは、Security チームの責任です。
 
-GitLab セキュリティチームは、GitLab セキュリティ、利用規約、その他の関連ポリシーの違反または違反の脅威を、セキュリティインシデントとして特定します。
+GitLab Security チームは、GitLab のセキュリティ、許容される使用、その他の関連ポリシーの違反または違反の脅威を、セキュリティインシデントとして特定します。
 
-SIRT は、サードパーティ侵害を含めて GitLab に重大な影響を及ぼす可能性のあるセキュリティインシデント (個別または合計で重大な侵害となる可能性があるもの) について、[Material Breach Determination internal handbook page](https://internal.gitlab.com/handbook/security/security_operations/sirt/operations/incident_response/material_breach_guidance/material_breach_determination/) のプロセスに従います。重大化する可能性のあるインシデントは MNPI (重要非公開情報) として扱います。
+SIRT は、サードパーティ侵害を含めて GitLab に重大な影響を及ぼす可能性のあるセキュリティインシデント (個別または合計で重大な侵害となる可能性があるもの) について、[重大な侵害の判定に関する内部ハンドブックページ](https://internal.gitlab.com/handbook/security/security_operations/sirt/operations/incident_response/material_breach_guidance/material_breach_determination/)のプロセスに従います。重大化する可能性のあるインシデントは MNPI (重要非公開情報) として扱います。
 
-## 役割と責任
+## 役割と責任 {#roles--responsibilities}
 
 | 役割 | 責任 |
 | ----- |------------|
 | GitLab チームメンバー | 本手続きの要件に従う責任 |
 | SIRT | 本手続きの実装および実行の責任 |
-| SIRT 経営層 (Code Owners) | 本手続きの重要な変更および例外の承認の責任 |
+| SIRT Management (Code Owners) | 本手続きの重要な変更および例外の承認の責任 |
 
-## 手続き
+## 手続き {#procedure}
 
-### インシデントレスポンスプロセス: 本ガイドはすべてのセキュリティインシデントについて以下の活動をカバーします
+### インシデントレスポンスプロセス: 本ガイドはすべてのセキュリティインシデントについて以下の活動をカバーします {#incident-response-process-this-guide-covers-the-following-activities-for-all-security-incidents}
 
 1. 検知
     - SIRT、その他の社内、または社外のエンティティが、セキュリティ脆弱性または弱点の悪用の可能性、または設定ミスや無意識のエラーの結果と思われるセキュリティまたはプライバシーイベントもしくはリスクを特定する
     - 私たちのセキュリティ検知コントロールの 1 つが、確立されたセキュリティベースラインの範囲外のイベントを特定する
-    - 慎重を期すため、また仮定を検証するために、セキュリティ Issue がインシデントにエスカレーションされる
+    - 慎重を期すため、また仮定を検証するために、セキュリティ上の問題がインシデントにエスカレーションされる
 1. 分析
     - SIRT は、報告されたセキュリティまたはプライバシーイベントが実際にセキュリティまたはプライバシーイベントであるかを判断する
-    - SIRT は以下の [インシデント分類](/handbook/security/security-operations/sirt/severity-matrix/) 方法論に基づいてインシデントの重大度と優先度を判断する
+    - SIRT は以下の[インシデント分類](/handbook/security/security-operations/sirt/severity-matrix/)方法論に基づいてインシデントの重大度と優先度を判断する
 1. 封じ込め
     - 影響を受けたシステムまたはデータの不正使用または悪意のある使用の拡散を防ぐ
     - インシデントの根本原因を軽減し、最終的に完全に是正することで、さらなる損害や露出を防ぐ
@@ -70,23 +70,23 @@ SIRT は、サードパーティ侵害を含めて GitLab に重大な影響を�
 1. インシデント後の分析および活動
     - 振り返りと教訓の活動
 
-#### 漏洩した認証情報のインシデント対応プロセス
+#### 漏洩した認証情報のインシデント対応プロセス {#leaked-secrets-incident-response-process}
 
-認証情報の漏洩が確認された場合、認証情報を直ちに失効させて露出時間を最小化することが重要です。これは自動化、またはセキュリティチームによる手動取り消しによって実現できます。Security はその時点で行動による潜在的な影響が明確に把握されていなくても、さらなる悪用を防ぐため認証情報を直ちに失効させます。場合によっては、認証情報が正当なプロセスで使用されている場合に支障を来すことがあります。失効した認証情報に依存するサービスへの影響の可能性があるため、Security は `#security-revocation-self-service` Slack チャンネルに通知を投稿し、認証情報の所有者がこのチャンネルを手動または自動のセルフサービスとして使用できるようにします。認証情報はすでに公開され失効しているため、また認証情報所有者がチャンネル内で自分の認証情報を見つけやすくするため、失効した認証情報のクリアテキスト版が通知の一部として公開されます。
+認証情報の漏洩が確認された場合、認証情報を直ちに失効させて露出時間を最小化することが重要です。これは自動化、または Security チームによる手動取り消しによって実現できます。Security はその時点で行動による潜在的な影響が明確に把握されていなくても、さらなる悪用を防ぐため認証情報を直ちに失効させます。場合によっては、認証情報が正当なプロセスで使用されている場合に支障を来すことがあります。失効した認証情報に依存するサービスへの影響の可能性があるため、Security は `#security-revocation-self-service` Slack チャンネルに通知を投稿し、認証情報の所有者がこのチャンネルを手動または自動のセルフサービスとして使用できるようにします。認証情報はすでに公開され失効しているため、また認証情報所有者がチャンネル内で自分の認証情報を見つけやすくするため、失効した認証情報のクリアテキスト版が通知の一部として公開されます。
 
-### 機密性
+### 機密性 {#confidentiality}
 
-セキュリティインシデントは、GitLab、GitLab の顧客や従業員、または何らかの形で GitLab とやり取りしたユーザーに関連する機密情報を含む場合があります (そして通常そうです)。GitLab は [透明性 (Transparency)](/handbook/values/#transparency) の価値を体現すると同時に、従業員、顧客、ユーザーから預かったデータのプライバシーと機密性を維持することを強く信じ、これに努めています。
+セキュリティインシデントは、GitLab、GitLab の顧客や従業員、または何らかの形で GitLab とやり取りしたユーザーに関連する機密情報を含む場合があります (そして通常そうです)。GitLab は透明性の価値を体現すると同時に、従業員、顧客、ユーザーから預かったデータのプライバシーと機密性を維持することを強く信じ、これに努めています。
 
-**機密 (confidential)** Issue とは、Issue 内のあらゆるデータおよび Issue や調査に関する議論を、必要な人にのみ共有することを意味します。これは通常 **GitLab 従業員のみ** を対象とし、GitLab 法務、GitLab セキュリティディレクター、VP of Security、またはスコープ付きインシデントラベルの GitLab エグゼクティブチームから明示的に許可された場合のみ例外となります。
+**機密 (confidential)** Issue とは、Issue 内のあらゆるデータおよび Issue や調査に関する議論を、必要な人にのみ共有することを意味します。これは通常 **GitLab 従業員のみ** を対象とし、GitLab Legal、GitLab Security Director、VP of Security、またはスコープ付きインシデントラベルの GitLab Executive Team から明示的に許可された場合のみ例外となります。
 
-特定のインシデントにアクセスできるチームメンバーは、私たちの [限定アクセスポリシー](/handbook/security/security-operations/sirt/#limited-access) に従って SIRT がケースごとに定義します。チームメンバーがインシデントにアクセスする必要があるときは、対応するインシデントチャンネルまたは `#security-operations` でリクエストする必要があります。インシデント Issue にアクセスするためにセキュリティコントロールを迂回することは、Security Operations への通知につながります。
+特定のインシデントにアクセスできるチームメンバーは、私たちの[限定アクセスポリシー](/handbook/security/security-operations/sirt/#limited-access)に従って SIRT がケースごとに定義します。チームメンバーがインシデントにアクセスする必要があるときは、対応するインシデントチャンネルまたは `#security-operations` でリクエストする必要があります。インシデント Issue にアクセスするためにセキュリティコントロールを迂回することは、Security Operations への通知につながります。
 
-### インシデント追跡
+### インシデント追跡 {#incident-tracking}
 
-セキュリティインシデント調査は [SIRT](https://gitlab.com/gitlab-sirt/) グループで開設されます。プロジェクトは [Incident Response プロジェクトテンプレート](https://gitlab.com/gitlab-sirt/project-templates/incident) と [インシデント Issue テンプレート](https://gitlab.com/gitlab-sirt/operations/-/blob/main/.gitlab/issue_templates/incident_baseline.md?ref_type=heads) を使用して作成されます。インシデントを作成するには、手動作成ではなく Slack の `/security` コマンドを使用する必要があります。詳細については [セキュリティエンジニアオンコールへのエンゲージ ページ](/handbook/security/security-operations/sirt/engaging-security-on-call/#engage-the-security-engineer-on-call) を参照してください。
+セキュリティインシデント調査は[SIRT](https://gitlab.com/gitlab-sirt/)グループで開設されます。プロジェクトは[Incident Response プロジェクトテンプレート](https://gitlab.com/gitlab-sirt/project-templates/incident)と[インシデント Issue テンプレート](https://gitlab.com/gitlab-sirt/operations/-/blob/main/.gitlab/issue_templates/incident_baseline.md?ref_type=heads)を使用して作成されます。インシデントを作成するには、手動作成ではなく Slack の `/security` コマンドを使用する必要があります。詳細については[Security Engineer On-Call へのエンゲージページ](/handbook/security/security-operations/sirt/engaging-security-on-call/#engage-the-security-engineer-on-call)を参照してください。
 
-調査からのすべてのアーティファクトは、[Artifact Handling and Sharing](https://internal.gitlab.com/handbook/security/security_operations/sirt/operations/artifacts_handling_sharing/) 内部ハンドブックページに従って取り扱う必要があります。
+調査からのすべてのアーティファクトは、[アーティファクトの取り扱いと共有](https://internal.gitlab.com/handbook/security/security_operations/sirt/operations/artifacts_handling_sharing/)内部ハンドブックページに従って取り扱う必要があります。
 
 **注:** 追跡 Issue、収集データ、およびセキュリティインシデントに関わるすべてのその他のエンゲージメントは、**厳格に機密** に保たれる必要があります。
 
@@ -94,29 +94,29 @@ SIRT は、サードパーティ侵害を含めて GitLab に重大な影響を�
 
 インシデントへの重大度の割り当ては正確な科学ではなく、状況がどれほど悪いかを判断するために、合理的な概念と過去の経験、そして直感を組み合わせる必要があります。重大度を検討する際は、以下を考慮してください。
 
-- 関与するデータの種類と、[データ分類ポリシー](/handbook/security/policies_and_standards/data-classification-standard/) を使用したそのデータの分類
+- 関与するデータの種類と、[データ分類ポリシー](/handbook/security/policies_and_standards/data-classification-standard/)を使用したそのデータの分類
   - このデータは可視性を持つべきでない当事者に漏洩または開示されたか?
   - 私たちの記録内でデータが変更されたか? (確認済みまたはその疑いがある)
 - ユーザーまたはサービスアカウントが乗っ取られたか?
   - そのアカウントが持つアクセスレベルおよびそれがどのサービスやホストに対するものか?
   - 侵害されたアカウントによってどのようなアクションが行われたか?
-- ホストやサービスに脆弱性がある場合、[Risk Factors and Risk Scoring](/handbook/security/security-assurance/security-risk/storm-program/#risk-factors-and-risk-scoring) ドキュメントを使用して、それが GitLab に与える可能性のある影響と悪用される可能性を考慮してください。
+- ホストやサービスに脆弱性がある場合、[リスク要因とリスクスコアリング](/handbook/security/security-assurance/security-risk/storm-program/#risk-factors-and-risk-scoring)ドキュメントを使用して、それが GitLab に与える可能性のある影響と悪用される可能性を考慮してください。
   - 脆弱性が悪用されたか? その場合、どのように使用され、どの程度の頻度で使用されたか?
 - インシデントの範囲は何か?
   - 何人の GitLab.com ユーザーが影響を受けた/受けた可能性があるか?
   - 何台のホストまたはサービスが影響を受けたか?
 - このインシデントによってホストまたはサービスが利用できない状態になったか?
 
-提出するインシデントに正しい重大度評価を付けるには、[インシデント分類](/handbook/security/security-operations/sirt/severity-matrix/) ページを参照してください。
+提出するインシデントに正しい重大度評価を付けるには、[インシデント分類](/handbook/security/security-operations/sirt/severity-matrix/)ページを参照してください。
 
-### 高重大度インシデントに対する内部エンゲージメントとエスカレーション
+### 高重大度インシデントに対する内部エンゲージメントとエスカレーション {#internal-engagement--escalation-for-high-severity-incidents}
 
 社内チームと連携し、インシデント調査の準備を行います。
 
 - 非言語コミュニケーションを集約するため、特にインシデントが機密性の高い性質である場合は、インシデントに焦点を当てた Slack チャンネルを開設します。これは Slack で `/sirt_escalate` を使用して行います。
 - アーティファクトの取り扱いについては、Google Drive フォルダと共有 Google Doc が自動的に作成され、Issue にリンクされているはずです。
 
-GitLab 内でインシデントをエスカレーションする必要がある場合、セキュリティエンジニアオンコール (SEOC) はセキュリティインシデントマネージャーオンコール (SIMOC) をページングします。SIMOC の責任は、対応活動を指示し、必要なチームから技術リソースを集め、コミュニケーションマネージャーオンコールとコミュニケーションの取り組みを調整し、必要に応じてさらにインシデントをエスカレーションすることです。
+GitLab 内でインシデントをエスカレーションする必要がある場合、Security Engineer On-Call (SEOC) は Security Incident Manager On Call (SIMOC) をページングします。SIMOC の責任は、対応活動を指示し、必要なチームから技術リソースを集め、Communications Manager On Call とコミュニケーションの取り組みを調整し、必要に応じてさらにインシデントをエスカレーションすることです。
 
 エスカレーションが必要なインシデントの特徴には、以下のものが含まれますがこれらに限られません。
 
@@ -127,11 +127,11 @@ GitLab 内でインシデントをエスカレーションする必要がある�
 - 犯罪行為が関与する、または法執行機関の関与が必要となる可能性のあるインシデント
 - エグゼクティブリーダーシップなどの主要人員が関与するインシデント
 
-セキュリティインシデントは、特定の GitLab 機能を中心に展開し、実装または軽減策の深い理解を集めるためにそれぞれのエンジニアリングチームとの調整が必要となる場合があります。これらのチームの EM/PM をループに含め、Issue の重大度 (Severity 1 または Severity 2) に応じて、エンジニアリングのカウンターパートからの follow-the-sun カバレッジを設定することを検討します。これにより、セキュリティインシデント上で状況が変化する可能性がある場合に、迅速な是正やエンジニアリングの支援を可能にします。
+セキュリティインシデントは、特定の GitLab 機能を中心に展開し、実装または軽減策の深い理解を集めるためにそれぞれのエンジニアリングチームとの調整が必要となる場合があります。これらのチームの EM/PM をループに含め、問題の重大度 (Severity 1 または Severity 2) に応じて、エンジニアリングのカウンターパートからの各地域で時間帯を引き継ぐ対応体制を設定することを検討します。これにより、セキュリティインシデント上で状況が変化する可能性がある場合に、迅速な是正やエンジニアリングの支援を可能にします。
 
-該当する場合、[ビジネスコンティンジェンシー活動](/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan/) とインシデントレスポンスを調整します。
+該当する場合、[ビジネスコンティンジェンシー活動](/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan/)とインシデントレスポンスを調整します。
 
-### 封じ込め
+### 封じ込め {#containment}
 
 インシデントが特定され、重大度が設定されたら、インシデント対応者はすでに発生した損害を制限し、さらなる損害の発生を防ぐ必要があります。
 
@@ -139,9 +139,9 @@ GitLab 内でインシデントをエスカレーションする必要がある�
 
 封じ込めフェーズは通常、損害を制限するためのストップギャップ (応急) 措置であり、根本問題に対する長期的な修正ではないことを覚えておくことが重要です。さらに、軽減策のサービスへの影響は、インシデントの重大度と比較して検討する必要があります。
 
-`priority::1/severity::1` インシデントをトリアージする際、SIRT または Infrastructure が問題を軽減できないか、潜在的な軽減の完全な影響を特定できない場合があります。これらの場合は、適切な [Tier 2 オンコールチーム](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/) にエスカレーションします。エスカレーションは `priority::1/severity::1` Issue に対してのみ開始され、[Tier 2 エスカレーション基準](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#when-does-tier-2-get-paged) に従うことが重要です。
+`priority::1/severity::1` インシデントをトリアージする際、SIRT または Infrastructure が問題を軽減できないか、潜在的な軽減の完全な影響を特定できない場合があります。これらの場合は、適切な[Tier 2 オンコールチーム](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/)にエスカレーションします。エスカレーションは `priority::1/severity::1` Issue に対してのみ開始され、[Tier 2 エスカレーション基準](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#when-does-tier-2-get-paged)に従うことが重要です。
 
-### 是正と復旧
+### 是正と復旧 {#remediation-and-recovery}
 
 是正および復旧フェーズでは、インシデント対応者は影響を受けたリソースが保護され、サービスが本番環境に戻る準備ができていることを確認するために作業します。このプロセスでは、インシデントの種類に応じて、悪意のあるまたは違法なコンテンツの削除、アクセスコントロールの更新、パッチの展開とシステムのハードニング、システムの完全な再展開、その他の様々なタスクが含まれる場合があります。
 
@@ -149,43 +149,43 @@ GitLab 内でインシデントをエスカレーションする必要がある�
 
 このフェーズでは、影響を受けたシステムの全体的なセキュリティを改善する短期的な変更を優先し、より長期的な改善が開発される間、完全な復旧プロセスは数か月かかる場合があります。
 
-### 解決
+### 解決 {#resolution}
 
 封じ込め、是正、コミュニケーション、影響を受けたサービスの検証が完了すると、インシデントは解決済みとみなされ、レビュー後にインシデント Issue がクローズされる場合があります。
 
 インシデントレスポンスプロセスは、振り返りと教訓のフェーズに移行し、これを通じて組織のプロセス改善および全体的なセキュリティを分析・強化できます。
 
-### 内部および外部のコミュニケーション
+### 内部および外部のコミュニケーション {#internal--external-communication}
 
-私たちの [セキュリティインシデントコミュニケーション計画](/handbook/security/security-operations/sirt/security-incident-communication-plan/) は、セキュリティインシデントについて GitLab が社内ステークホルダーおよび社外顧客に通知する際の、誰が、何を、いつ、どのようにを定義しています。
+私たちの[セキュリティインシデントコミュニケーション計画](/handbook/security/security-operations/sirt/security-incident-communication-plan/)は、セキュリティインシデントについて GitLab が社内ステークホルダーおよび社外顧客に通知する際の、誰が、何を、いつ、どのようにを定義しています。
 
-### 法執行機関へのエンゲージ
+### 法執行機関へのエンゲージ {#engaging-law-enforcement}
 
 セキュリティイベントを調査する過程で、インシデント自体、インシデントに関与する素材 (保管データ、トラフィック/接続等) 、またはインシデントを取り巻く行動が米国で違法であると判断される場合、米国法執行機関にエンゲージすることが必要 (かつ望ましい) な場合があります。
 
-1. セキュリティエンジニアオンコールは、法的懸念について意識を高めるため、Security Operations Manager On-Call および VP of Security Operations に直ちにエスカレーションします。
+1. Security Engineer On-Call は、法的懸念について意識を高めるため、Security Operations Manager On-Call および VP of Security Operations に直ちにエスカレーションします。
 1. レビュー後、VP of Security Operations は、次のステップの検証のため CISO of Security と VP of Legal にエンゲージします。
 1. その後 VP of Security Operations は、適切な地方法執行機関、州機関、または米国 (連邦) 政府機関に連絡します。
 
-### インシデントチャンネルや通話に参加する際
+### インシデントチャンネルや通話に参加する際 {#when-you-join-an-incident-channel-or-call}
 
 主要なセキュリティインシデントと認識される (後にそうでないと判明する場合もあります) 場合、調整のためにアドホックなコミュニケーションが必要となる場合があります。これは上記のセクションで概説されています。認識されたセキュリティインシデント時にインシデントの特定、確認、または軽減のいずれかで支援できる人物として認識された場合は、専用の Zoom 通話または Slack チャンネルに追加されます。その通話/チャンネルに参加する際は、以下に留意してください。
 
 - これは危機管理コミュニケーションチャンネルであり、つまり **デフォルトでプライベート** です。現時点では、または将来も会社全体と共有できないビジネスクリティカルな情報や PII を含む場合があります。GitLab Security が、この特定のコミュニケーションチャンネルの内容を後で社内で利用可能または公開可能と判断した場合、必要な変更が行われます。
 - **質問する前にチャンネル履歴を読んでください**。コンテキストを把握し、過去の会話と関連ドキュメントに目を通してください。関連する人物が適切なタイミングで具体的な依頼を持ってあなたに連絡します。
-- **プロフェッショナルであろうと最善を尽くしてください**。ただし、セキュリティインシデントはしばしばストレスフルであり、私たちは皆人間であることを認識してください。人々は声を荒げたり、不必要、厳しい、または不適切に思える言葉遣いをするかもしれません。このストレスフルな時期には人々を多めに見て (slack をかけて、洒落ではありません) 、潜在的に異常な行動についてはインシデント終了後に関連するマネージャーに提起・対処することが重要です。
+- **プロフェッショナルであろうと最善を尽くしてください**。ただし、セキュリティインシデントはしばしばストレスフルであり、私たちは皆人間であることを認識してください。人々は声を荒げたり、不必要、厳しい、または不適切に思える言葉遣いをするかもしれません。このストレスフルな時期には人々に余裕を持って接し（洒落ではありません）、潜在的に異常な行動についてはインシデント終了後に関連するマネージャーに提起・対処することが重要です。
 - **ユーモアは味方です**。本当にそうです。
 
-### インシデントラベル
+### インシデントラベル {#incident-labels}
 
-適切なラベルを使用してください。専用のスコープ付きインシデントラベルを正しく使用することは、インシデントトラッカー内のデータの正確性、およびそれから計算されるその後のメトリクスにとって極めて重要です。すべてのラベルのリストは [GitLab SIRT グループ](https://internal.gitlab.com/handbook/security/security_operations/sirt/team/groups_projects/gitlab_sirt/#labels) 内部ハンドブックページで確認できます。
+適切なラベルを使用してください。専用のスコープ付きインシデントラベルを正しく使用することは、インシデントトラッカー内のデータの正確性、およびそれから計算されるその後のメトリクスにとって極めて重要です。すべてのラベルのリストは[GitLab SIRT グループ](https://internal.gitlab.com/handbook/security/security_operations/sirt/team/groups_projects/gitlab_sirt/#labels)内部ハンドブックページで確認できます。
 
-## 例外
+## 例外 {#exceptions}
 
-本手続きの例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions) に従って追跡されます。
+本手続きの例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions)に従って追跡されます。
 
-## 参考文献
+## 参考文献 {#references}
 
-- [Security Communications Runbooks](https://gitlab.com/gitlab-com/gl-security/runbooks/-/tree/master/communications) (内部)
-- [Incident Communications Plan](/handbook/security/security-operations/sirt/security-incident-communication-plan/)
-- [Marketing Emergency Response process](/handbook/marketing/emergency-response/)
+- [セキュリティコミュニケーションのランブック](https://gitlab.com/gitlab-com/gl-security/runbooks/-/tree/master/communications) (内部)
+- [インシデントコミュニケーション計画](/handbook/security/security-operations/sirt/security-incident-communication-plan/)
+- [Marketing の緊急対応プロセス](/handbook/marketing/emergency-response/)

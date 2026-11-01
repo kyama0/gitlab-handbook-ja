@@ -11,18 +11,34 @@ group: Organizations
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:49:13.515679+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-18T14:42:11+05:30"
+lastmod: "2026-10-27T19:36:56+13:00"
 ---
 
 {{< engineering/design-document-header >}}
 
 このドキュメントは作業中であり、Organization 設計の現状を反映しています。
 
-## 用語集
+## サマリー {#summary}
+
+GitLab.com は、GitLab ソフトウェアの公開された共有インストールです。これにより GitLab を便利な SaaS として提供できますが、いくつかの重要な点で完全な GitLab 体験には及びません。
+
+1. パリティ： GitLab.com と Self Managed で顧客に提供される機能は異なります。たとえば GitLab.com では、顧客は管理者権限を受け取りません。この権限はかなりの量の機能を担っています。
+2. 隔離： GitLab.com では、Self Managed インストールのように、顧客が他の顧客から独立して存在することはできません。
+
+Organization は、すべてのプラットフォームに共通するコンテナとなることで、これらの問題を解決します。Organization コンテナを作成することで、隔離の境界を強制し、すべてのトップレベル機能に対して共通のエンティティを提供できます。
+
+実質的に、Organization は Self Managed の機能をコンテナにラップし、この体験を他のすべての GitLab プラットフォームにもたらします。
+
+この隔離ソリューションは、[Cells プロジェクト](https://docs.gitlab.com/ee/architecture/blueprints/cells/index.html)の前提条件でもあります。Cells プロジェクトについては、Organization との関連で [Organization と Cells](cells.md)で説明しています。
+隔離により、データと操作が Organization の境界を越えるのを防ぎ、すべてのリクエストに対して Organization コンテキストの解決を確立します。
+
+Self-Managed と Dedicated では、[ADR 007](decisions/007_self_managed_dedicated_single_organization.md)により、インスタンスと Organization の 1 対 1 の対応関係を確立します。
+
+## 用語集 {#glossary}
 
 - User: ユーザーアカウント。
 - Top-level Group: トップレベルグループは、他のすべてのグループの最上位グループに付けられる名前です。グループとプロジェクトはトップレベルグループの下にネストされます。
@@ -31,24 +47,11 @@ lastmod: "2026-08-18T14:42:11+05:30"
 - Organization user type: Organization user は、Organization Administrator または Organization Regular User の Organization user type を持つことができます。この user type は、ユーザーの権限を決定するために使用されます。
 - Default Organization: すべての GitLab インスタンスにシードされる `ID = 1` の Organization。
 
-## サマリー
+## よくある質問 {#frequently-asked-questions}
 
-GitLab.com は、GitLab ソフトウェアの公開された共有インストールです。これにより GitLab を便利な SaaS として提供できますが、いくつかの重要な点で完全な GitLab 体験には及びません。
+具体的な質問がある場合は、[FAQ](faq.md)で回答が見つかるかもしれません。あるいは、「Organization Blueprints」を参照しながら [GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/examples/)に問い合わせてみることもできます。
 
-1. パリティ: GitLab.com と Self Managed で顧客に提供される機能は異なります。たとえば GitLab.com では、顧客は管理者権限を受け取りません。この権限はかなりの量の機能を担っています。
-2. 隔離: GitLab.com では、Self Managed インストールのように、顧客が他の顧客から独立して存在することはできません。
-
-Organization は、すべてのプラットフォームに共通するコンテナとなることで、これらの問題を解決します。Organization コンテナを作成することで、隔離の境界を強制し、すべてのトップレベル機能に対して共通のエンティティを提供できます。
-
-実質的に、Organization は Self Managed の機能をコンテナにラップし、この体験を他のすべての GitLab プラットフォームにもたらします。
-
-この隔離ソリューションは、[Cells プロジェクト](https://docs.gitlab.com/ee/architecture/blueprints/cells/index.html)の前提条件でもあります。Cells プロジェクトについては、Organization との関連で [Organizations and Cells](cells.md) で説明しています。
-
-## よくある質問
-
-具体的な質問がある場合は、[FAQ](faq.md) で回答が見つかるかもしれません。あるいは、「Organization Blueprints」を参照しながら [GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/examples/) に問い合わせてみることもできます。
-
-### GitLab.com プラットフォームの分割
+### GitLab.com プラットフォームの分割 {#splitting-the-gitlabcom-platform}
 
 GitLab.com プラットフォームは、2 つの異なる体験に分割されます。
 
@@ -60,42 +63,43 @@ GitLab.com は今後、プライベートなエンタープライズ Organizatio
 
 最終的には、顧客がデフォルト organization から抜け出して、自身のプライベートな Organization に移行できるようになります。
 
-## Organization の基本原則
+## Organization の基本原則 {#fundamentals-of-organizations}
 
 - Organization はほぼすべての GitLab 機能をラップします。
-- Organization 間でデータを読み書きすることはできません。[Organization Isolation](isolation.md) で詳しく説明しています。
+- Organization 間でデータを読み書きすることはできません。[Organization の隔離](isolation.md)で詳しく説明しています。
 - 多くのプロダクト機能は変更されませんが、ほとんどのインスタンスレベルの機能は下位に、その他の機能は Organization レベルに上位移動します。レベルの変更については[以下](#level-structure)で詳しく説明します。
 - User は複数の Organization の Organization user になれます。
 - User は Organization の Administrator にも、単なる Regular User にもなれます。
 - Organization Administrator は、ユーザーアカウントを削除する機能など、自身の Organization 内で管理者スタイルの権限を持ちます。詳細は[以下](#user-types-and-permissions)で説明します。
 - これらの変更は、GitLab.com、Self Managed、Dedicated を含むすべての GitLab プラットフォームで行われます。
 
-## Organization Isolation
+## Organization の隔離 {#organization-isolation}
 
-Organization は隔離できます。隔離とは、データと機能がその Organization の境界を越えられないことを意味します。これについては [Organization Isolation](isolation.md) で詳しく説明しています。
+Organization は隔離できます。隔離とは、データと機能がその Organization の境界を越えられないことを意味します。これについては [Organization の隔離](isolation.md)で詳しく説明しています。
 
 GitLab.com では、トップレベルグループがデフォルト Organization から段階的に移行するのをサポートするため、Organization は非隔離の状態で始まります。非隔離はそれ自体で有効かつ恒久的な状態でもあり、Organization は無期限に非隔離のままでよく、隔離は任意です。[ADR 015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)を参照してください。
-organization スコープのデータに依存する機能は、Organization の境界ルールを強制する前に、現在の organization が非隔離か隔離済みかを確認しなければなりません。
-詳細は [ADR 008: GitLab.com 上の非隔離 organization](decisions/008_non_isolated_organizations_gitlab_com.md) を参照してください。
 
-## リクエストコンテキスト
+organization スコープのデータに依存する機能は、Organization の境界ルールを強制する前に、現在の organization が非隔離か隔離済みかを確認しなければなりません。
+詳細は [ADR 008: GitLab.com 上の非隔離 organization](decisions/008_non_isolated_organizations_gitlab_com.md)を参照してください。
+
+## リクエストコンテキスト {#request-context}
 
 すべてのリクエスト、ジョブ、タスクは、Organization コンテキスト、User コンテキスト、Nil コンテキストの 3 つのいずれかに解決されます。隔離によって変わるのは、どのコンテキストが適用されるかという点だけです。モデル全体については[リクエストコンテキスト](contexts.md)を、現在のエンコード方法については [ADR 016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)を参照してください。
 
-## Organization が他のドメインに与える影響
+## Organization が他のドメインに与える影響 {#impact-of-the-organization-on-other-domains}
 
 Organization がシステムの他の部分にどのように影響するかをより詳しく説明するページのリストです。今後も増えていきます。
 
-- [Billing](billing.md)
+- [請求](billing.md)
 - [Cells](cells.md)
-- [Settings](settings.md)
-- [Lifecycle](lifecycle.md)
-- [Users](users.md)
+- [設定](settings.md)
+- [ライフサイクル](lifecycle.md)
+- [ユーザー](users.md)
 - [リクエストコンテキスト](contexts.md)
-- [Login](login.md)
-- [OAuth - GitLab as SP](oauth_client_auth.md)
+- [ログイン](login.md)
+- [OAuth - SP としての GitLab](oauth_client_auth.md)
 
-## レベル構造
+## レベル構造 {#level-structure}
 
 Organization は、ほとんどのインスタンスレベルの機能とトップレベルグループのすべての機能を組み合わせた、新しいレベルを形成します。
 
@@ -134,11 +138,11 @@ graph TD
   ns[Namespace] -. has many .- ns[Namespace]
 ```
 
-## ユーザー管理
+## ユーザー管理 {#user-management}
 
-Organization 内で User がどのように管理されるかの詳細については、[Organization Users](users.md) を参照してください。
+Organization 内で User がどのように管理されるかの詳細については、[Organization のユーザー](users.md)を参照してください。
 
-## 可視性
+## 可視性 {#visibility}
 
 Organization はパブリックまたはプライベートにできます。パブリックな Organization は誰もが見ることができます。パブリックおよびプライベートな Group と Project を含めることができます。プライベートな Organization は、その Organization の Organization user だけが見ることができます。プライベートな Group と Project のみを含めることができます。
 
@@ -180,7 +184,7 @@ Organization には Administrator user type があります。他の Organizatio
 
 Group および Project レベルの[ロール](https://docs.gitlab.com/ee/user/permissions.html)は、現在のままです。
 
-## Organization Administrator と Instance Administrator の関係
+## Organization Administrator と Instance Administrator の関係 {#relationship-between-organization-administrator-and-instance-administrator}
 
 （インスタンス）Administrator user type を持つ User は、現在 [self-managed の GitLab インスタンスを管理](https://docs.gitlab.com/ee/administration/index.html)できます。
 機能が Organization レベルに移動するにつれて、Organization Administrator は現在 Instance Administrator のみがアクセスできる機能により多くアクセスできるようになります。
@@ -193,16 +197,16 @@ self-managed インスタンスは一般に単一の organization にスコー�
 
 ## Organization のスコープ付き空間 {#organization-space}
 
-非隔離のものを含むすべての Organization は、[isolation](isolation.md) と Cell 配置から独立した、それ自身のスコープ付き空間を占有します。これにより、それぞれが独自の名前空間を持ち、Cell 移動をまたいでパスを安定させ、Organization レベルの機能の居場所を提供できます。根拠については [ADR 012: Organization はスコープ付き空間である](decisions/012_organization_space.md) を参照してください。
+非隔離のものを含むすべての Organization は、[隔離](isolation.md)と Cell 配置から独立した、それ自身のスコープ付き空間を占有します。これにより、それぞれが独自の名前空間を持ち、Cell 移動をまたいでパスを安定させ、Organization レベルの機能の居場所を提供できます。根拠については [ADR 012: Organization はスコープ付き空間である](decisions/012_organization_space.md)を参照してください。
 
-### ルーティング
+### ルーティング {#routing}
 
 現在、グローバルに一意であることが `https://gitlab.com/<path>/-/` 上で要求されるルーティング可能なエンティティとして扱われるのは、User、Project、Namespace、コンテナイメージのみです。
 私たちは、既存のグローバルスコープのルートを許可するようルーティングルールを更新し、新たに並行する Organization スコープのルート群を導入します。
 グローバルスコープのルートは既存のルートとの後方互換性を維持し、また GitLab.com 以外で単一の Organization を持つ可能性が高いプラットフォームに対してはパスの冗長性を減らします。
-URL の仕組みは [ADR 004](decisions/004_path_scope.md) で決定されており、さらに詳しい情報は [現在の Organization](current_organization.md) にあります。
+URL の仕組みは [ADR 004](decisions/004_path_scope.md)で決定されており、さらに詳しい情報は [現在の Organization](current_organization.md)にあります。
 
-## Organization の開発
+## Organization の開発 {#organization-development}
 
 以下は、Organization の大まかな開発ロードマップです。
 このプロジェクトは複雑で、多くのエンジニアリングチーム間の調整が必要です。
@@ -227,20 +231,20 @@ gantt
     Organization Level Features : co, after now, 2027-02-01
 ```
 
-### ワークストリーム
+### ワークストリーム {#work-streams}
 
-#### Organization のコンテキストと隔離
+#### Organization のコンテキストと隔離 {#organization-context-and-isolation}
 
 テーブルは、少数の例外を除いて、Organization に関連付けられるべきです。
 Organization のテーブルには `organization_id`、`namespace_id`、または `project_id` のいずれかのカラムが必要であり、すべてのテーブルが直接または間接的に Organization に属するようにします。
-この作業は現在、このエピックに含まれています: https://gitlab.com/groups/gitlab-org/-/work_items/11670。
+この作業は現在、このエピックに含まれています： https://gitlab.com/groups/gitlab-org/-/work_items/11670。
 `organization_id` 外部キーを持つすべてのテーブルは、NOT NULL の外部キー制約で定義されます。
 すべてのコードパスは正しい `organization_id` の値を書き込み、デフォルト値に依存しません。
 
 - 私たちはまた、[読み取りが Organization の境界を越えて広がるのを防ぐ](https://gitlab.com/groups/gitlab-org/-/epics/17388)ことも目指しています。
 - 私たちの焦点は、グループとプロジェクトの作成のための主要なページ、およびユーザーダッシュボードに置かれます。
 
-#### Organization Product Feature
+#### Organization のプロダクト機能 {#organization-product-feature}
 
 Organization user 管理とダッシュボードを含む、Organization のユーザーインターフェースを構築します。
 
@@ -293,13 +297,13 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - **ナビゲーション**
   - 現在の Organization のコンテキストは、ナビゲーションサイドバーに表示されます。
 
-#### Organization レベルの機能
+#### Organization レベルの機能 {#organization-level-features}
 
 機能はインスタンスレベルとトップレベル Group から Organization レベルに移動します。新しい機能が Organization レベルで構築されることもあります。焦点は、認証や請求などのコア機能から始まります。
 
 このワークストリームには 2 つのフェーズがあります。最初のフェーズは、Organization を実用可能にする重要な機能を移行することです。Organization リリース後の 2 番目のフェーズは、残りのすべての機能を Organization レベルにもたらすことです。
 
-## データ探索
+## データ探索 {#data-exploration}
 
 最初の[データ探索](https://gitlab.com/gitlab-data/analytics/-/issues/16166#note_1353332877)から、User と Organization について次の情報を取得しました。
 
@@ -316,7 +320,7 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 
 この分析に基づいて、Organization を展開する際にも同様の挙動が見られると予想します。
 
-## 決定
+## 決定 {#decisions}
 
 - 2023-05-15: [Organization ルートのセットアップ](https://gitlab.com/gitlab-org/gitlab/-/issues/409913#note_1388679761)
 - [001: Organization コンテキストの解決](decisions/001_organization_context_resolution.md)
@@ -330,15 +334,15 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - [011: 汎用オンボーディングワークフロー](decisions/011_onboarding.md)
 - [012: Organization はスコープ付き空間である](decisions/012_organization_space.md)
 - [013: Organization 内で Top-Level-Group を作成するときに警告する](decisions/013_warn_on_tlg_creation.md)
-- [014: Organization roles renamed to Organization user types](decisions/014_organization_roles_renamed_to_organization_user_type.md)
+- [014: Organization のロールを Organization ユーザータイプに改称](decisions/014_organization_roles_renamed_to_organization_user_type.md)
 - [015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)
 - [016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)
 
-## リンク
+## リンク {#links}
 
 - [Organization エピック](https://gitlab.com/groups/gitlab-org/-/epics/9265)
-- [Organization Isolation](isolation.md)
+- [Organization の隔離](isolation.md)
 - [Organization: よくある質問](faq.md)
 - [Organization 開発ガイドライン](https://docs.gitlab.com/development/organization/)
 - [Enterprise Users](https://docs.gitlab.com/ee/user/enterprise_user/index.html)
-- [Cells blueprint](../cells/_index.md)
+- [Cells 設計書](../cells/_index.md)

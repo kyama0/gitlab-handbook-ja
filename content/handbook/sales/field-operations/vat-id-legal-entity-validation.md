@@ -2,16 +2,28 @@
 title: "VAT ID と法人名の検証"
 description: "新規の海外見込み顧客アカウントで、商談を受注登録できるようになる前に、GitLab が販売先顧客の VAT ID と法人名を取得して検証する方法。"
 upstream_path: /handbook/sales/field-operations/vat-id-legal-entity-validation/
-upstream_sha: "59a18d6d88e73b26232d1d6773e5d793fcb29e49"
-lastmod: "2026-10-04T13:21:35-04:00"
-translated_at: "2026-10-05T21:07:17.647597+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-28T10:16:47-04:00"
+translated_at: "2026-11-01T08:44:52.736278+00:00"
 stale: false
 translator: codex
 ---
 
 ## 概要 {#overview}
 
-**2026 年 10 月 7 日**以降、新規の海外見込み顧客アカウントの商談は、そのアカウントの付加価値税識別番号（「VAT ID」）と法人名を検証するまで、承認申請できません。
+**2026 年 10 月 7 日**以降、新規の海外見込み顧客アカウントの商談には、アカウントの VAT ID と法人名を検証する要件が適用されます。
+
+**この要件によって商談がブロックされることはありません。** 見積もり、注文書の作成、クローズには影響しません。検証が完了していない場合や成功していない場合でも、申請時に例外理由を選択することで商談を承認申請できます。例外について別途承認を得る必要はなく、事前のレビューも不要です。
+
+### この要件によってブロックされる操作とされない操作 {#what-this-does-and-does-not-block}
+
+| 操作 | ブロックされるか？ |
+| --- | --- |
+| 見積もり | ブロックされません |
+| 注文書の作成 | ブロックされません |
+| 承認申請 | ブロックされません。検証が未完了の場合は、申請時に例外理由を選択します。 |
+| 商談のクローズ | ブロックされません |
+| Zuora への送信と受注登録 | ブロックされません |
 
 **「VAT ID」の意味。** このページ全体で、「VAT ID」および「VAT ID の検証」は、間接税の目的で事業者を識別するために使用するあらゆる納税者番号を指します。これには以下が含まれます。
 
@@ -40,8 +52,8 @@ Account Executive（AE）がまだ顧客とやり取りしている取得時点�
 
 | 条件 | 値 |
 | --- | --- |
-| アカウント種別 | 見込み顧客 |
-| アカウントの請求先の国 | 米国とカナダ以外 |
+| Account Type | Prospect |
+| Account billing country | 米国とカナダ以外 |
 
 いずれかの条件を満たさない場合、バナーは表示されず、検証も不要です。
 
@@ -64,17 +76,17 @@ Account Executive（AE）がまだ顧客とやり取りしている取得時点�
 
 ステージ 1 と 2 では何も表示されないため、初期段階の見込み評価を円滑に進められます。
 
-**ステージ 3 – 技術評価**以降、検証が未完了である限り、商談にバナーが継続して表示されます。
+**Stage 3 – Technical Evaluation**以降、検証が未完了である限り、商談にバナーが継続して表示されます。
 
-> VAT ID と法人名を検証してください。この検証が完了するまで、商談を受注登録できません。
+> Please validate the VAT ID and Legal Entity Name. You cannot book the deal until this validation is complete.
 
-このフェーズ 1 では、Account Executive が受注登録の制限を解除できることに注意してください。フェーズ 1 は、この解除が発生する理由を把握するために導入します。バナーには **Validate VAT ID | Legal Entity Name（VAT ID を検証 | 法人名）**ボタンがあり、検証に成功するまでステージ 4、5、6 を通じて表示され続けます。アカウントが検証済みの状態になると表示されなくなります。
+バナーの文言は、システムの実際の動作より厳しい表現です。フェーズ 1 では、検証が未完了でも例外理由を選択すれば商談を承認申請でき、その例外を承認する人はいません。フェーズ 1 では、検証が完了しない箇所と理由を把握するため、意図的に制限を緩くしています。バナーには **Validate VAT ID | Legal Entity Name** ボタンがあり、検証に成功するまでステージ 4、5、6 を通じて表示され続けます。アカウントが検証済みの状態になると表示されなくなります。アカウント名を変更しないと判断した場合など、アカウントが検証済みの状態にならない場合、バナーは無期限に表示され続けます。ステップ 4 を参照してください。
 
 ![ステージ 3 の商談に表示される検証バナー](/images/sales/field-operations/vat-id-validation/stage-3-banner.png)
 
 ### ステップ 2 — 検証を実行します {#step-2--run-the-validation}
 
-ボタンを選択すると、**VAT ID Validator（VAT ID 検証ツール）**が開きます。アカウント名、ISO 国コード、登録済みの住所、現在の VAT/Tax ID が表示され、3 つのタブがあります。
+ボタンを選択すると、**VAT ID Validator**が開きます。アカウント名、ISO 国コード、登録済みの住所、現在の VAT/Tax ID が表示され、3 つのタブがあります。
 
 ![TIN 検証タブを表示した VAT ID 検証ツール](/images/sales/field-operations/vat-id-validation/validator-tin-validation.png)
 
@@ -82,13 +94,13 @@ Account Executive（AE）がまだ顧客とやり取りしている取得時点�
 
 デフォルトのタブであり、ほとんどの場合に使用します。
 
-1. 見込み顧客から提供された情報を使い、**VAT / Tax ID（VAT / 納税者番号）**を入力または確認します。
-1. **TIN Type（TIN 種別）**を選択します。事業者または個人を選びます。これにより、Fonoa が適用する形式とチェックサムのルールが決まります。
-1. **Validate VAT ID（VAT ID を検証）**を選択します。
+1. 見込み顧客から提供された情報を使い、**VAT / Tax ID**を入力または確認します。
+1. **TIN Type**を選択します。Business または Individual を選びます。これにより、Fonoa が適用する形式とチェックサムのルールが決まります。
+1. **Validate VAT ID**を選択します。
 
-Fonoa は、まず国ごとの形式の事前チェックを実行します。形式が不適合の場合、リクエストはデータベースに到達せず、ステータスは直ちに「無効 - 形式」に設定されます。
+Fonoa は、まず国ごとの形式の事前チェックを実行します。形式が不適合の場合、リクエストはデータベースに到達せず、ステータスは直ちに Invalid - Format に設定されます。
 
-形式が適合していれば、Salesforce はステータスを「保留中」に設定し、ISO 国コードと VAT ID を使って Fonoa を呼び出し、応答が届くと自動的にレコードを更新します。ページを再読み込みする必要はありません。
+形式が適合していれば、Salesforce はステータスを "Pending" に設定し、ISO 国コードと VAT ID を使って Fonoa を呼び出し、応答が届くと自動的にレコードを更新します。ページを再読み込みする必要はありません。
 
 #### 国ごとの要件 {#country-specific-requirements}
 
@@ -119,7 +131,7 @@ TIN 検索は、すべての国で利用できるわけではありません。F
 
 ![TIN 検索タブ](/images/sales/field-operations/vat-id-validation/tin-search.png)
 
-TIN 検索は、Salesforce のアカウント名と住所を検索フィルターとして Fonoa に渡します。Fonoa は関連する政府データベースを照会し、1 件以上の結果を返します。各結果には、名前と住所のあいまい一致率が、その他の主要な属性とともに表示されます。ユーザーはこれらの結果を確認し、最も一致するものを選択して、「この TIN を使用」をクリックします。
+TIN 検索は、Salesforce のアカウント名と住所を検索フィルターとして Fonoa に渡します。Fonoa は関連する政府データベースを照会し、1 件以上の結果を返します。各結果には、名前と住所のあいまい一致率が、その他の主要な属性とともに表示されます。ユーザーはこれらの結果を確認し、最も一致するものを選択して、「Use this TIN」をクリックします。
 
 ![あいまい一致率を示す TIN 検索結果](/images/sales/field-operations/vat-id-validation/tin-search-results.png)
 
@@ -133,16 +145,16 @@ Sales Operations にケースを作成します。ステップ 4 を参照して
 
 #### VAT 検証ステータス {#vat-validation-status}
 
-| ステータス | 意味 | 受注登録 |
+| ステータス | 意味 | 申請時の動作 |
 | --- | --- | --- |
-| Valid（有効） | 形式が有効で、公式データベースで ID が見つかり、事業が非活動状態ではなく、納税者登録されています。 | 許可 |
-| Pending（保留中） | Fonoa 呼び出しの直前に設定される一時的な状態です。 | 制限 |
-| Invalid - Format（無効 - 形式） | 国ごとの形式チェックに不合格でした。他のどのルールより先に評価されるため、呼び出しは Fonoa に到達しません。 | 制限 |
-| Invalid - Not Found（無効 - 未検出） | VAT ID の形式は正しいものの、その VAT ID が公式データベースに存在しません。 | 制限 |
-| Invalid - Not Tax Registered（無効 - 納税者未登録） | データベースには存在しますが、納税者登録されていません。 | 制限 |
-| Invalid - Inactive（無効 - 非活動） | 事業のステータスが非活動です。 | 制限 |
-| Inconclusive（判定不能） | Fonoa から応答がありましたが、結果が上記のいずれにも該当しませんでした。たとえば、納税者登録や事業のステータスが不明と返された場合です。 | 制限 |
-| Validation Error（検証エラー） | 呼び出し自体が失敗したか、検証の詳細が返されませんでした。 | 制限 |
+| Valid（有効） | 形式が有効で、公式データベースで ID が見つかり、事業が非活動状態ではなく、納税者登録されています。 | 通常どおり申請 |
+| Pending（保留中） | Fonoa 呼び出しの直前に設定される一時的な状態です。 | 例外理由が必要 |
+| Invalid - Format（無効 - 形式） | 国ごとの形式チェックに不合格でした。他のどのルールより先に評価されるため、呼び出しは Fonoa に到達しません。 | 例外理由が必要 |
+| Invalid - Not Found（無効 - 未検出） | VAT ID の形式は正しいものの、その VAT ID が公式データベースに存在しません。 | 例外理由が必要 |
+| Invalid - Not Tax Registered（無効 - 納税者未登録） | データベースには存在しますが、納税者登録されていません。 | 例外理由が必要 |
+| Invalid - Inactive（無効 - 非活動） | 事業のステータスが非活動です。 | 例外理由が必要 |
+| Inconclusive（判定不能） | Fonoa から応答がありましたが、結果が上記のいずれにも該当しませんでした。たとえば、納税者登録や事業のステータスが不明と返された場合です。 | 例外理由が必要 |
+| Validation Error（検証エラー） | 呼び出し自体が失敗したか、検証の詳細が返されませんでした。 | 例外理由が必要 |
 
 結果が無効または判定不能でも、そこで終わりではありません。VAT ID を修正して再度検証してください。各試行は個別に記録され、監査履歴の過去の結果は上書きされません。
 
@@ -158,32 +170,32 @@ Sales Operations にケースを作成します。ステップ 4 を参照して
 
 VAT ID の検証に成功すると、Fonoa が返した登録名を Salesforce のアカウント名と比較し、法人検証ステータスを生成します。
 
-| ステータス | 設定方法 | 受注登録 |
+| ステータス | 設定方法 | 申請時の動作 |
 | --- | --- | --- |
-| Tool-Verified（ツール検証済み） | 自動。Fonoa の登録名がアカウント名と一致しています。 | 許可 |
-| Sales Rep-Verified（営業担当者検証済み） | 手動。AE が顧客に直接名前を確認した後、**Mark as Verified（検証済みにする）**を選択します。 | 許可 |
-| Sales Ops-Verified（Sales Ops 検証済み） | Sales Operations がアカウント名変更/M&A のケースをクローズすると設定されます。 | 許可 |
-| Pending Review（レビュー待ち） | 自動。VAT ID は有効ですが、Fonoa が登録名を返さなかったため、比較対象がありません。 | 制限 |
-| Pending Sales Ops Update（Sales Ops 更新待ち） | 自動。Fonoa が VAT ID に関連付けられた登録名を返しましたが、その名前がアカウント名と一致しません。 | 制限 |
+| Tool-Verified（ツール検証済み） | 自動。Fonoa の登録名がアカウント名と一致しています。 | 通常どおり申請 |
+| Sales Rep-Verified（営業担当者検証済み） | 手動。AE が顧客に直接名前を確認した後、**Mark as Verified**を選択します。 | 通常どおり申請 |
+| Sales Ops-Verified（Sales Ops 検証済み） | Sales Operations が**アカウント名を更新したうえで** Account Name Change/M&A のケースをクローズすると設定されます。名前を変更せずにケースをクローズした場合、ステータスは Pending Sales Ops Update のままです。 | 通常どおり申請 |
+| Pending Review（レビュー待ち） | 自動。VAT ID は有効ですが、Fonoa が登録名を返さなかったため、比較対象がありません。 | 例外理由が必要 |
+| Pending Sales Ops Update（Sales Ops 更新待ち） | 自動。Fonoa が VAT ID に関連付けられた登録名を返しましたが、その名前がアカウント名と一致しません。 | 例外理由が必要 |
 
 **名前は完全一致で比較します。** 結果には以下の 2 通りがあります。
 
-- **名前が一致しない。** 大文字と小文字、句読点、法人種別を示す接尾辞、末尾のスペースに違いがあれば、同じ会社を指すように見えても不一致になります。法人検証ステータスは*Sales Ops 更新待ち*に設定されます。次の手順についてはステップ 4 を参照してください。
-- **登録名が返されない。** Fonoa が登録名を返さない場合、比較対象がありません。法人検証ステータスは*レビュー待ち*に設定され、検証ツールには次のメッセージが表示されます。*「Fonoa は今回の検証で登録事業者名を返しませんでした。『検証済みにする』ボタンをクリックして、顧客に登録事業者名を確認済みであることを確定してください。」*
+- **名前が一致しない。** 大文字と小文字、句読点、法人種別を示す接尾辞、末尾のスペースに違いがあれば、同じ会社を指すように見えても不一致になります。法人検証ステータスは*Pending Sales Ops Update*に設定されます。次の手順についてはステップ 4 を参照してください。
+- **登録名が返されない。** Fonoa が登録名を返さない場合、比較対象がありません。法人検証ステータスは*Pending Review*に設定され、検証ツールには次のメッセージが表示されます。*"Fonoa did not return a Registered Business Name for this validation. Click the button 'Mark as Verified' to confirm the Registered Business Name has been verified with the Customer."*
 
-どちらの場合も、**顧客に法人名を確認した**後でのみ、**Mark as Verified（検証済みにする）**を使用してください。これはレコード上で確認済みと表明するものであり、商談の受注登録を可能にするものです。
+どちらの場合も、**顧客に法人名を確認した**後でのみ、**Mark as Verified**を使用してください。これはレコード上で確認済みと表明するものであり、商談の受注登録を可能にするものです。
 
-![「検証済みにする」ボタンが表示されたレビュー待ちの状態](/images/sales/field-operations/vat-id-validation/pending-review.png)
+![Mark as Verified ボタンが表示された Pending Review の状態](/images/sales/field-operations/vat-id-validation/pending-review.png)
 
 ### ステップ 4 — 名前の不一致：Sales Operations のケースを作成します {#step-4--name-mismatch-raise-a-sales-operations-case}
 
 Fonoa の登録名がアカウント名と一致しない場合、検証ツールに 2 つの名前が並べて表示されます。
 
-> 法人名の検証：Fonoa に登録されている会社名 [登録名] がアカウント名 [アカウント名] と一致しません。「サポート依頼」をクリックし、このアカウントの名前を変更するためのケースを Sales Ops に作成してください。
+> Legal Entity Name Validation: Fonoa's registered company name [registered name] does not match the Account name [account name]. Please click Request Support to open a case with Sales Ops to change the name of this account.
 
-**Request Support（サポート依頼）**を選択すると、1 回の操作で**Account Name Change/M&A（アカウント名変更/M&A）**のケースが作成されます。チーム、依頼の種類、詳細はあらかじめ入力されており、必須の理由/メモのフィールドには、不一致の詳細が自動入力されます。
+VAT ID Validator 内で **Request Support** を選択すると、1 回の操作で**Account Name Change/M&A**のケースが作成されます。チーム、依頼の種類、詳細はあらかじめ入力されており、必須の理由/メモのフィールドには、不一致の詳細が自動入力されます。
 
-> Fonoa のデータベース照会で返された法人名「[Fonoa が返した法人名]」が Salesforce のアカウント名「[Salesforce のアカウント名]」と一致しません。法人名と一致するように Salesforce のアカウント名を更新してください。
+> Fonoa's database lookup returned legal entity name "[legal entity name returned by Fonoa]" which does not match the Salesforce Account name "[Salesforce account name]". Please, update the Salesforce account name to match the legal entity name.
 
 上記のテキストは自動生成されます。内容を確認し、必要に応じて編集して送信してください。ケースの所有者は **Sales Ops Team** キューとなるため、手動で振り分ける必要はありません。
 
@@ -195,21 +207,34 @@ Fonoa の登録名がアカウント名と一致しない場合、検証ツー�
 
 ![あらかじめ入力されたアカウント名変更と M&A のケース](/images/sales/field-operations/vat-id-validation/sales-ops-case.png)
 
-**ケースがオープンの間も、商談はブロックされません。** 見積もりや注文書の作成は通常どおり継続できます。制限されるのは承認申請のみです。
+**ケースの処理を待たないでください。** 商談を進める前にケースが解決されている必要はありません。見積もりと注文書の作成は通常どおり継続でき、例外理由を使用すればすぐに承認申請できます。
 
-ケースを作成すると、法人検証ステータスは「Sales Ops 更新待ち」に設定されるため、ケースを処理している間、アカウントが「レビュー待ち」のままになることはありません。これは、ポップアップを早めに閉じた場合も同様です。
+不一致の大半は、法人種別を示す接尾辞の欠落、句読点の違い、末尾のスペースなど、ほぼ一致しているものです。こうした不一致はよくあり、想定されているものです。ケースの作成は、元のデータを継続的に修正するための手段であり、商談を進めるための条件ではありません。
+
+#### バナーが消えないのは想定どおりです {#the-banner-will-not-go-away-and-that-is-expected}
+
+バナーが消えるのは、法人検証ステータスが合格となった場合だけです。名前の不一致の場合は、アカウント名を Fonoa が返した登録名に一致するよう実際に変更したことを意味します。名前を変更しない場合、ステータスは Pending Sales Ops Update のままとなり、**バナーは商談に無期限に表示され続けます**。
+
+バナーが消える条件と消えない条件を具体的に示します。
+
+- **ケースを作成してもバナーは消えません。**
+- アカウント名を変更せずにケースをクローズした場合、**Sales Operations がケースをクローズしてもバナーは消えません**。名前を変更しない正当な理由がある場合もあり、その形でケースをクローズするのは通常の結果であり、誤りではありません。
+- 2 つの名前が一致しない限り、現在対応している商談だけでなく、**そのアカウントのすべての商談にバナーが表示され続けます**。
+- **これらによって作業が止まることはありません。** 承認申請して例外理由を選択すれば、商談は進みます。その後も、この商談と次の商談でバナーが表示され続けます。
+
+バナーが消えることを、申請可能になった合図と捉えないでください。このような場合、バナーは消えず、消える必要もありません。
+
+ケースを作成すると、法人検証ステータスは「Pending Sales Ops Update」に設定されるため、ケースを処理している間、アカウントが「Pending Review」のままになることはありません。これは、ポップアップを早めに閉じた場合も同様です。
 
 #### Sales Operations チームが実行する作業 {#tasks-performed-by-the-sales-operations-team}
 
-Sales Operations はケースを確認し、アカウント名、VAT ID、販売先の国のうち、Fonoa が不整合を示した項目を修正します。ケースをクローズすると、法人検証ステータスは「Sales Ops 検証済み」に設定され、そのアカウントにはそれ以上メッセージが表示されなくなります。
-
-この種の依頼は、[Salesforce で社内サポートを依頼する](/handbook/sales/field-operations/requesting-internal-support/) → 顧客アカウント → アカウント名変更の経路で、Sales Operations に自動で振り分けられます。このプロセスでは同じケース種別と同じキューを使用し、不一致を通知する方法のみが変わっています。
+Sales Operations はケースを確認し、アカウント名、VAT ID、販売先の国のうち、Fonoa が不整合を示した項目を修正します。登録名と一致するようにアカウント名を更新した場合、法人検証ステータスは Sales Ops Verified に設定され、バナーが消えます。アカウント名を変更せずにケースをクローズした場合、バナーは削除されます。どちらも有効な結果であり、いずれも商談を妨げません。
 
 ### ステップ 5 — 見積もりの販売先の国が不一致の場合 {#step-5--sold-to-country-mismatch-on-the-quote}
 
 税はアカウントの国に基づいて決まります。販売先担当者の**国**が販売先アカウントの国と異なる場合、見積もりに警告が表示されます。
 
-> 警告：販売先の国の不一致：販売先担当者の国 [担当者の国] がアカウントの国 [アカウントの国] と異なります。VAT が誤って計算されます。Sales Ops/Deal Desk チームにエスカレーションしてください。
+> WARNING: Sold To Country Mismatch: The Sold To Contact's country [contact country] is different from the Account's country [account country]. VAT will be calculated incorrectly. Please escalate to the Sales Ops/Deal Desk team.
 
 この警告で見積もりがブロックされることはありませんが、無視すると請求書の税額が誤ったものになります。Sales Ops/Deal Desk チームにエスカレーションし、サポートを依頼してください。
 
@@ -217,7 +242,7 @@ Sales Operations はケースを確認し、アカウント名、VAT ID、販売
 
 ### ステップ 6 — 承認申請 {#step-6--submitting-for-approval}
 
-**Submit for Approval（承認申請）**を行う準備が整いました。以下の場合に申請が通ります。
+**Submit for Approval**を行う準備が整いました。以下の場合に申請が通ります。
 
 - VAT 検証ステータスが「有効」であり、**かつ**
 - 法人検証ステータスが「ツール検証済み」、「営業担当者検証済み」、「Sales Ops 検証済み」のいずれかである
@@ -228,19 +253,23 @@ Sales Operations はケースを確認し、アカウント名、VAT ID、販売
 
 ### ステップ 7 — 例外 {#step-7--exceptions}
 
-検証が未完了の場合、Account Executive に例外として進めるかどうかを確認します。
+検証が未完了の場合も、Account Executive は承認申請できますが、例外として進めるかどうかを確認されます。
 
-> 例外理由を添えてこの商談を申請しますか？
+> Would you like to submit this Opportunity with an exception reason?
 
-**No（いいえ）**を選択すると申請を中止し、商談はそのままの状態にとどまります。**Yes（はい）**を選択すると、例外理由が必要です。
+**No**を選択すると申請を中止し、商談はそのままの状態にとどまります。**Yes**を選択すると、例外理由が必要です。
 
 | 例外理由 | 使用する場面 |
 | --- | --- |
-| 顧客が有効な VAT ID を持っていないことを認めた | 顧客が VAT 登録をしていないと確認した場合。 |
-| 顧客が VAT 免税証明書を提供した | 免税証明書を受領した場合。商談に添付してください。 |
-| Sales Ops でケース対応中 | アカウント名変更/M&A のケースがオープンで、未解決の場合。 |
-| 検証ツールの問題 | 検証ツールまたは Fonoa が利用可能な結果を返さない場合。 |
-| その他 | その他の場合。追加の詳細が必須です。 |
+| Customer acknowledged that they don't have a valid VAT ID | 顧客が VAT 登録をしていないと確認した場合。 |
+| Customer has provided VAT exemption certificate | 免税証明書を受領した場合。商談に添付してください。 |
+| Case Pending with Sales Ops | アカウント名変更/M&A のケースがオープンで、未解決の場合。 |
+| Validation Tool Issue | 検証ツールまたは Fonoa が利用可能な結果を返さない場合。 |
+| Other | その他の場合。追加の詳細が必須です。 |
+
+**例外を承認する人はいません。** 承認キューもレビュー担当者もなく、待つ必要もありません。理由を選択すると申請が進み、その理由が記録されます。ここでは Deal Desk は承認者ではなく、誰かが処理する必要のある制限解除リクエストもありません。
+
+![例外理由を指定して承認申請](/images/sales/field-operations/vat-id-validation/submit-with-exception.png)
 
 理由は、アカウントと商談に関連付けられた検証ログに記録され、商談と顧客情報の記録の一部になります。すべての例外を Tax、Finance、Sales Operations が確認できるため、実際に当てはまる理由を選んでください。
 
@@ -258,14 +287,14 @@ Salesforce での一連の検証の最後に Zuora 内で請求アカウント�
 
 ## フィールドリファレンス {#field-reference}
 
-以下のフィールドは、アカウントの**Other Account Info（その他のアカウント情報）**に、既存の VAT/Tax ID フィールドの隣に保持されます。
+以下のフィールドは、アカウントの**Other Account Info**に、既存の VAT/Tax ID フィールドの隣に保持されます。
 
 | フィールド | 入力者 | 注記 |
 | --- | --- | --- |
 | VAT/Tax ID | ユーザー | 顧客の VAT 番号または納税者番号。 |
 | VAT Validation Status（VAT 検証ステータス） | システム | Fonoa チェックの結果。ステップ 3 を参照してください。 |
 | VAT Last Validated Date（VAT 最終検証日） | システム | 直近の検証試行のタイムスタンプ。 |
-| Legal Entity Validation Status（法人検証ステータス） | システム、または「検証済みにする」を使う AE | 名前の比較結果。ステップ 3 を参照してください。 |
+| Legal Entity Validation Status（法人検証ステータス） | システム、または Mark as Verified を使う AE | 名前の比較結果。ステップ 3 を参照してください。 |
 | Legal Entity Validation Date（法人検証日） | システム | 直近の法人判定のタイムスタンプ。 |
 
 両方のステータスフィールドは、**Sales にとって読み取り専用**です。編集権限は Sales Operations、Finance User、System Administrator に限定されています。営業担当者はフィールドを編集するのではなく、検証ツールを通じてこれらの値を変更します。
@@ -276,21 +305,23 @@ Salesforce での一連の検証の最後に Zuora 内で請求アカウント�
 
 | ロール | 責任 |
 | --- | --- |
-| Account Executive（AE）/ 商談所有者 | 顧客から VAT ID と法人名を取得します。ステージ 3 から検証を実行します。不一致があれば Sales Ops のケースを作成します。正当な例外について例外理由を選択します。 |
+| Account Executive（AE）/ 商談所有者 | 顧客から VAT ID と法人名を取得します。ステージ 3 から検証を実行します。不一致があれば Sales Ops のケースを作成します。検証を完了できない場合に例外理由を選択します。 |
 | Sales Operations | アカウント名変更/M&A キューを担当します。アカウント名、VAT ID、販売先の国を修正し、ケースをクローズします。 |
-| Deal Desk | 見積もりレベルでの販売先の国の不一致や、検証によって進められない商談について、AE を支援します。 |
+| Deal Desk | 見積もりレベルでの販売先の国の不一致について AE を支援します。Deal Desk は例外を承認せず、Deal Desk が解除するものもありません。 |
 | Tax と Finance | 例外の件数と理由を監視し、VAT コンプライアンスと報告を担当します。 |
 
 ## 注意点 {#things-to-watch}
 
+- **検証によって商談がブロックされることはありません。** 見積もり、注文書の作成、クローズ、受注登録はすべて継続できます。検証が未完了の場合は例外理由を指定して申請し、誰かがその理由を承認する必要はありません。
+- **バナーが表示され続けることは、解決すべき問題ではありません。** アカウント名を変更しないと決めた場合、そのアカウントにはバナーが常に表示され続けます。例外理由を指定して申請し、そのまま進めてください。
 - **見積もりの前に検証してください。** 税の判定と Zuora の請求アカウントは、どちらもアカウントを参照します。検証が完了する前に見積もりを作成すると、請求アカウントに VAT ID が入らない場合があります。
 - **完全一致は厳密な一致を意味します。** 法人種別を示す接尾辞、カンマ、大文字が 1 つ違うだけでも不一致になります。データが間違っていると判断する前に、Fonoa が返した登録名を確認してください。
 - **アカウント名は販売先の法人名です。** アカウント名は、屋号、ブランド名、最上位の親会社名ではありません。
-- **「検証済みにする」は確認済みという表明です。** 実際に顧客に名前を確認した後でのみ使用してください。
+- **Mark as Verified は確認済みという表明です。** 実際に顧客に名前を確認した後でのみ使用してください。
 - **例外は可視化されます。** すべての例外理由が報告の対象です。これは文書化された手順であり、抜け道ではありません。
 
 ## サポートを受けるには {#getting-help}
 
 検証結果が誤っていると思われる場合や、検証によって商談を進められない場合は、`#sales-support` に投稿してください。
 
-アカウント名、VAT ID、販売先の国を修正する場合は、検証ツールの**Request Support（サポート依頼）**を使用するか、[社内サポートの依頼](/handbook/sales/field-operations/requesting-internal-support/)に従い、Salesforce の顧客アカウント → アカウント名変更からケースを作成してください。
+アカウント名、VAT ID、販売先の国を修正する場合は、**商談ページの Request Support ボタンではなく、VAT ID Validator 内の Request Support を使用してください。** 商談には専用の Request Support ボタンがありますが、別の宛先に振り分けられ、不一致の詳細も引き継がれません。検証ツールの Request Support タブでは、両方の名前を入力済みの Account Name Change/M&A ケースを作成し、Sales Ops Team キューへ直接振り分けます。使用するケース種別とキューは、[社内サポートの依頼](/handbook/sales/field-operations/requesting-internal-support/)で文書化されているものと同じです。

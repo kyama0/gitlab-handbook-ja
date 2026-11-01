@@ -1,7 +1,7 @@
 ---
 title: 'Organization データ移行 ADR 003: Org Mover コントロールプレーン'
 description: 'Org Mover は、GitLab.com の Organization を Cells 間で移動する処理をオーケストレーションする、Runway でデプロイされるコントロールプレーンです。'
-status: proposed
+status: superseded
 creation-date: "2026-06-09"
 authors: [ "@mkozono" ]
 coaches: [ "@ayufan" ]
@@ -10,14 +10,20 @@ owning-stage: "~devops::tenant scale"
 participating-stages: ["~devops::tenant scale", "~devops::data stores", "~devops::systems"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-lastmod: "2026-08-18T14:42:11+05:30"
-translated_at: "2026-09-04T11:55:51+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-27T08:21:18-10:00"
+translated_at: "2026-11-01T08:03:52.048109+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+{{% alert title="ADR-004 に置き換えられました" color="warning" %}}
+この ADR は [ADR-004: Org Mover の 2 層アーキテクチャ](004_org_mover_two_tier_architecture.md)に置き換えられました。
+ADR-004 は各 Cell 内に Org Mover サービスを追加し、Geo を置き換えます。この ADR の
+問題の説明と却下した代替案のみが引き続き適用されます。
+{{% /alert %}}
+
+## 概要 {#summary}
 
 **Org Mover** は、GitLab.com の Organization を Cells 間で移動する処理をオーケストレーションする、[Runway](https://docs.runway.gitlab.com/)でデプロイされるコントロールプレーンサービスです。
 
@@ -26,28 +32,28 @@ stale: false
 | **問題** | Organization をレガシー Cell からターゲット Cell へ移行する自動化が存在しない。 |
 | **アプローチ** | 任意のエンジニアが各移動を順序付けられたステップのシーケンスとして実行できる、Runway でデプロイされるコントロールプレーンとして Org Mover を構築する。Org Mover はデータを移動するシステムを調整するが、データ自体は移動しない。Org Mover は REST API を公開する。 |
 | **ステータス** | 提案中 |
-| **スコープ** | GitLab.com SaaS のみ: レガシー Cell からターゲット Cell。詳しくは [スコープ](#scope) と [非目標](#non-goals) を参照。 |
+| **スコープ** | GitLab.com SaaS のみ: レガシー Cell からターゲット Cell。詳しくは[スコープ](#scope)と[非目標](#non-goals)を参照。 |
 | **必要な決定** | Tenant Scale、Geo、Siphon、Infrastructure のステークホルダーによるコントロールプレーンの形、スコープ、非目標の承認。 |
 | **関連** | [ADR-002 ロールバック](002_rollback_strategy.md) · [ADR-010 Organization メンテナンスモード](../../organization/decisions/010_organization_maintenance_mode.md) · [Organization データ移行ブループリント](../_index.md) |
 
-### Organization を Cells 間で移動する必要がある理由
+### Organization を Cells 間で移動する必要がある理由 {#why-do-we-need-to-move-organizations-across-cells}
 
-GitLab.com は単一のモノリシックなデプロイとして稼働しており、まずデータベースでスケーリング上限に強くぶつかっています。[Cells](../../cells/) は、[Organizations](../../organization/) を独立した水平方向にスケール可能なインスタンスへ分散することで、これに対処します。
+GitLab.com は単一のモノリシックなデプロイとして稼働しており、まずデータベースでスケーリング上限に強くぶつかっています。[Cells](../../cells/)は、[Organizations](../../organization/)を独立した水平方向にスケール可能なインスタンスへ分散することで、これに対処します。
 
-### これが難しい理由
+### これが難しい理由 {#why-this-is-hard}
 
 Organization を単にオフラインにして移動することはできません。理由は 2 つあります。
 
 1. 大規模 Organization を移動できなければなりません
 2. 顧客への影響を最小限にして実施しなければなりません。
 
-#### 顧客規模
+#### 顧客規模 {#customer-size}
 
 多くの小規模 Organization は、数分で転送できる程度のデータしか持たず、夜間や週末には非アクティブなものも多くあります。そのような Organization は、比較的単純な手段と比較的単純なオーケストレーションで移動できます。
 
-しかし、大規模 Organization は [データベース負荷の大きな割合（内部リンク）](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/staff/lstaff/-/work_items/3)を占めているため、レガシー Cell を最終的に十分に緩和するには、小規模 Organization だけでなく、それらも移動する必要があります。また、[データ量の大きな割合（内部リンク）](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/tenant-services/team/-/work_items/417)も占めています。
+しかし、大規模 Organization は[データベース負荷の大きな割合（内部リンク）](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/staff/lstaff/-/work_items/3)を占めているため、レガシー Cell を最終的に十分に緩和するには、小規模 Organization だけでなく、それらも移動する必要があります。また、[データ量の大きな割合（内部リンク）](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/tenant-services/team/-/work_items/417)も占めています。
 
-#### ダウンタイム
+#### ダウンタイム {#downtime}
 
 レガシー Cell を緩和するために空にする必要はありませんが、意味のある余裕を回復するのに十分な負荷とデータの大きな割合を移動する必要があります。わずかな削減では不十分です。そして Cell は成長を続けており、その成長は加速しているため、緩和は一度限りの取り組みではなく、持続的でなければなりません。この目標を満たすには、多くの移動を継続的かつ並列に実行する必要があります。移行速度を顧客の営業時間外の時間枠で制限すると、追いつけません。
 
@@ -55,12 +61,12 @@ Organization を単にオフラインにして移動することはできませ�
 
 したがって、Organization の規模にかかわらず、Organization のダウンタイムを最小化しなければなりません。しかし、Organization は許容できる読み取り専用時間枠内で転送するにはデータが多すぎます。これにより、Organization を移動するための中心的な要件が生まれます。データの大部分は読み取り専用時間枠が開く前に移行先に存在していなければならず、その時間枠ではすべてを転送するのではなく、小さな差分だけを処理する必要があります。
 
-## 決定事項
+## 決定事項 {#decisions}
 
 GitLab.com Cells 間で Organization の移動をオーケストレーションする、Runway でデプロイされるコントロールプレーンサービスとして Org Mover を構築します。
 
 1. **Org Mover サービスはコントロールプレーンです。** 各移動を順序付けられたステップのシーケンスとして実行し、各遷移の前に条件を確認し、すべての移動に関する状態を保持し、リアルタイムのステータスを公開し、監査証跡を記録します。
-2. **デプロイモデル: 長期稼働の RunwayService。** Org Mover は永続的な状態データベースに支えられた長期稼働の [RunwayService](https://docs.runway.gitlab.com/welcome/introduction/) です。RunwayJobs は避け、代わりに重い作業をサブシステムへ委譲するべきです。
+2. **デプロイモデル: 長期稼働の RunwayService。** Org Mover は永続的な状態データベースに支えられた長期稼働の [RunwayService](https://docs.runway.gitlab.com/welcome/introduction/)です。RunwayJobs は避け、代わりに重い作業をサブシステムへ委譲するべきです。
 3. **移動は保存されたステップのシーケンスとして実行されます。** 各移動は事前チェック、データレプリケーション、最終同期、ルーティング切り替えなどの順序付けられたステップを通ります。Org Mover は各ステップの後に進捗を保存するため、中断された移動は最初からやり直すのではなく、中断された場所から再開します。
 4. **不完全なデータへルーティングを切り替えない。** Org Mover は、チェックサム、行数、スポットチェックを使用してターゲットのデータが完全でソースと一致していることを確認するまで、Organization のトラフィックをターゲット Cell に送りません。途中の通常のレプリケーション失敗は想定され、再試行されます。それらは移動を止めません。この確認なしに切り替えると顧客データを失うリスクがあります。
 5. **最初は人が go/no-go 判断を行います。** カットオーバーは、Org Mover が Organization のトラフィックを旧 Cell から新 Cell へ送る瞬間であり、移動が本番反映される時点です。カットオーバーの前に、エンジニアがレプリケーションと検証のステータスをレビューし、切り替えを承認します。メトリクスと確信度が高まれば、この判断は自動化できます。
@@ -71,25 +77,25 @@ GitLab.com Cells 間で Organization の移動をオーケストレーション�
 10. **ロールバックは ADR-002 に従います。** カットオーバー後のデータロールバックはありません。戦略はカットオーバー前の go/no-go ゲート、短い [ADR-002](002_rollback_strategy.md) Stage 2 切り戻し時間枠、その後の前進修正に依存します。
 11. **1 つのコントロールプレーンが多くの同時移動をオーケストレーションします。** 単一の Org Mover デプロイが多数の移動を同時に実行し、それぞれが独自の保存済み状態を持ち、それら全体への可視性と制御を提供します。移動ごとに 1 つのサービスがあるわけではありません。
 
-### 検討した代替案
+### 検討した代替案 {#alternatives-considered}
 
-#### デュアルライト
+#### デュアルライト {#dual-write}
 
 ソース Cell にコミットされた後にデータをレプリケーションする代わりに、遷移中にアプリケーションがすべての変更をソースとターゲットの両方へ書き込み、ターゲットが追いついてから切り替える方法があります。デュアルライトには、Organization が使用するすべてのデータストア、つまり PostgreSQL、Git リポジトリ、オブジェクトストレージ、コンテナレジストリ、Secrets Manager にわたる書き込み経路の変更が必要です。それはデータストアごとにモノリスへの大規模で侵襲的な変更です。Cells の緊急性とあわせて、現時点ではこれを却下します。
 
-#### Direct Transfer
+#### Direct Transfer {#direct-transfer}
 
 GitLab の [direct transfer による移行](https://docs.gitlab.com/user/group/import/)を使って、Organization のグループとプロジェクトを API 経由で移動する方法があります。却下: これは低速な論理 API レベルの移行であり、既知のカバレッジギャップがあります。レコード ID が書き換えられるため参照が壊れ、それだけで採用対象外です。また、事前レプリケーションの経路がないため、転送全体を読み取り専用時間枠内で行う必要があります。これはまさに大規模 Organization では受け入れられない条件です。
 
-#### ファイルベースのグループおよびプロジェクトのエクスポート／インポート
+#### ファイルベースのグループおよびプロジェクトのエクスポート／インポート {#file-based-group-and-project-exportimport}
 
 各グループとプロジェクトをファイルへエクスポートし、そのファイルをターゲット Cell でインポートする方法です。Direct Transfer と同じ理由、さらにそれ以上の理由で却下します。これは同じ ID 書き換えとカバレッジギャップを持つ、より古いファイルベースの経路であり、エクスポート、アップロード、インポートの往復も追加されます。Direct Transfer と同様に事前レプリケーションの経路がないため、転送全体が読み取り専用時間枠内で発生します。
 
-#### Cell 全体をコピーし、カットオーバー後に移行先をクリーンアップする
+#### Cell 全体をコピーし、カットオーバー後に移行先をクリーンアップする {#copy-the-whole-cell-then-clean-up-the-destination-after-cutover}
 
-レガシー Cell 全体をレプリケーションし、移動対象 Organization をカットオーバーしてから、それ以外をすべて削除する方法です。これをより形式化した [large cell の分割](../../cells/impacted_features/data-migration/)では、システム全体の物理レプリケーション（Geo、PostgreSQL 物理レプリケーション）を使って Cell を多数のレプリカへ複製し、それぞれのレプリカを保持する Organization に対して権威あるものとして昇格させます。却下: どちらの形式でも org スコープ化はなお必要であり、今度は稼働中の Cell 上でのリスクの高い一括削除になります。すぐに破棄される完全コピーによってストレージを増幅し、他のテナントのデータを本来属さない Cell に置くことになります。
+レガシー Cell 全体をレプリケーションし、移動対象 Organization をカットオーバーしてから、それ以外をすべて削除する方法です。これをより形式化した[大規模 Cell の分割](../../cells/impacted_features/data-migration/)では、システム全体の物理レプリケーション（Geo、PostgreSQL 物理レプリケーション）を使って Cell を多数のレプリカへ複製し、それぞれのレプリカを保持する Organization に対して権威あるものとして昇格させます。却下: どちらの形式でも org スコープ化はなお必要であり、今度は稼働中の Cell 上でのリスクの高い一括削除になります。すぐに破棄される完全コピーによってストレージを増幅し、他のテナントのデータを本来属さない Cell に置くことになります。
 
-#### モノリス内からオーケストレーションする
+#### モノリス内からオーケストレーションする {#orchestrate-from-within-the-monolith}
 
 スタンドアロンのコントロールプレーンサービスではなく、モノリス内の Rails 機能と Sidekiq ジョブとしてオーケストレーションを構築する方法です。却下: オーケストレーターは、それが操作する Cell の内部に存在することになり、緩和し最終的に廃止しようとしているレガシー Cell も含まれます。また、それらの Cell のデプロイ、スケーリング、障害ドメインを共有します。スタンドアロンサービスであれば、独自の状態データベースを持ち、すべての Cell を横断してクラスタ全体で実行され、単一の Cell が読み取り専用になったり停止したりしても存続します。スタンドアロンサービスが委譲する Cell ローカルなコントロールプレーンは[将来の方向性](#boundary-contracts)であり、その置き換えではありません。
 
@@ -110,7 +116,7 @@ GitLab の [direct transfer による移行](https://docs.gitlab.com/user/group/
 - **任意の Cell から任意の Cell へ。** 将来の方向性であり、この設計で提供されるものではありません。GitLab.com のレガシーからターゲットへの移行が運用可能になった後の後続ワークストリームです。
 - **派生データストア（ClickHouse、Elasticsearch）の移行。** これらはレプリケーションされるのではなく、移行後にターゲット Cell 上で再構築されます。ClickHouse については、ターゲット Cell 内の既存の [PostgreSQL-to-ClickHouse Siphon パイプライン](https://docs.gitlab.com/development/database/clickhouse/clickhouse_table_design_with_siphon/#working-in-cells-environment)がこれを自動的に処理します。
 
-## エンジニアリング原則
+## エンジニアリング原則 {#engineering-principles}
 
 これらの原則は、すべての実装上の選択とレビューを導きます。データプレーンに依存せず、チームがどのデータプレーンアーキテクチャを選択しても成り立ちます。これに違反する変更には、明示的で記録された根拠が必要です。
 
@@ -136,9 +142,9 @@ Org Mover は複数のシステムを調整します。高レベルのコント�
 - 一時停止、再開、中止を調整する
 - [Cell ローカルなコントロールプレーン（内部リンク）](https://gitlab.com/gitlab-com/gl-infra/delivery/-/work_items/22133)が存在する場合、Org Mover は Cell のモノリス API、サービス、データストアへ直接やり取りするのではなく、それを通じて Cell とやり取りします（Siphon publisher と receiver の設定など）
 
-### Siphon（PostgreSQL レプリケーション）
+### Siphon（PostgreSQL レプリケーション） {#siphon-postgresql-replication}
 
-[Siphon](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/tenant-services/team/-/work_items/416#note_3339776621) は、当初の Cohort 0 計画であった [AWS DMS](../dms-blueprint.md) の代わりに選択されました。DMS は [org-move の文脈で PostgreSQL のパーティションテーブルをレプリケーションできませんでした](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/tenant-services/team/-/work_items/419)。パーティションテーブルに対する唯一の文書化された回避策は、ロード前にターゲットを truncate することですが、ターゲット Cell がすでに他の Organization のデータを保持している場合、それは不可能です。さらに悪いことに、`partition_id` の値は Cell ごとにローカルであるため、リーフパーティションには変換ステップが必要ですが、クローズドな AWS サービスである DMS はそれを提供しません。Siphon は GitLab が所有しているため、その変換を行うよう拡張できます。
+[Siphon](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/tenant-services/team/-/work_items/416#note_3339776621)は、当初の Cohort 0 計画であった [AWS DMS](../dms-blueprint.md)の代わりに選択されました。DMS は [org-move の文脈で PostgreSQL のパーティションテーブルをレプリケーションできませんでした](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/tenant-services/team/-/work_items/419)。パーティションテーブルに対する唯一の文書化された回避策は、ロード前にターゲットを truncate することですが、ターゲット Cell がすでに他の Organization のデータを保持している場合、それは不可能です。さらに悪いことに、`partition_id` の値は Cell ごとにローカルであるため、リーフパーティションには変換ステップが必要ですが、クローズドな AWS サービスである DMS はそれを提供しません。Siphon は GitLab が所有しているため、その変換を行うよう拡張できます。
 
 担当:
 
@@ -151,7 +157,7 @@ Org Mover は複数のシステムを調整します。高レベルのコント�
 - Siphon は起動時にレプリケーションスロットを作成するが、削除しない。未消費のスロットはソースプライマリディスクを埋めるため、Org Mover が削除しなければならない
 - Siphon は停止を指示されるまでストリーミングを続ける。Org Mover はカットオーバー時に Siphon を停止しなければならない
 
-### Geo（非 PG データレプリケーション）
+### Geo（非 PG データレプリケーション） {#geo-non-pg-data-replication}
 
 担当:
 
@@ -162,7 +168,7 @@ Org Mover は複数のシステムを調整します。高レベルのコント�
 
 - 非同期レプリケーションはアクティブな Organization で 100% には決して到達しない
 
-### Monolith（アプリケーションと Organization の状態）
+### Monolith（アプリケーションと Organization の状態） {#monolith-application-and-org-state}
 
 担当:
 
@@ -170,14 +176,14 @@ Org Mover は複数のシステムを調整します。高レベルのコント�
 - ターゲット Cell モード
 - スキーマと DDL
 
-### Topology Service（ルーティング）
+### Topology Service（ルーティング） {#topology-service-routing}
 
 担当:
 
 - ルーティング権限を持つシステムとしてのルーティング
 - Org Mover がカットオーバーで呼び出す 2 フェーズの claim 更新、つまり後戻りできない時点
 
-## 参考資料
+## 参考資料 {#references}
 
 - [ADR-002: ロールバック戦略](002_rollback_strategy.md)
 - [Organization Maintenance Mode (ADR-010)](../../organization/decisions/010_organization_maintenance_mode.md)

@@ -1,14 +1,16 @@
 ---
 title: "パッチリリース"
 upstream_path: /handbook/engineering/releases/patch-releases/
-upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
-lastmod: "2026-10-21T10:21:07-06:00"
-translated_at: "2026-10-22T21:12:48Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:06:41-06:00"
+translated_at: "2026-11-01T08:53:47+00:00"
 translator: claude
 stale: false
 ---
 
-## パッチリリースポリシー {#patch-release-policy}
+## パッチリリースの概要とポリシー {#patch-release-overview-and-policy}
+
+パッチリリースは、[GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従い、[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)にバグ修正とセキュリティ修正をバックポートするために実施されます。
 
 パッチリリースは[セマンティックバージョニング](https://semver.org/)に従います: **パッチバージョンにはバグ修正のみが含まれ、自動アップグレードが安全です**。多くの顧客は、この保証を信頼しているため、最小限のテストでパッチリリースを適用します。
 
@@ -41,10 +43,6 @@ stale: false
 これは複合的な問題を生み出します。各機能例外が、後続のバックポートをより難しく、遅く、エラーが起きやすくします。
 ポリシー違反のたびにメンテナンスの負担が増大し、最終的にはすべての顧客にタイムリーなセキュリティおよびバグ修正を提供する私たちの能力に影響します。
 
-## パッチリリースの概要 {#patch-release-overview}
-
-パッチリリースは、[GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従い、[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)にバグ修正とセキュリティ修正をバックポートするために実施されます。
-
 ### 他のリリースタイプとの関係 {#relationship-to-other-release-types}
 
 パッチリリースは、[マンスリーリリース](/handbook/engineering/releases/monthly-releases/)中に作成された stable ブランチの上に構築されます:
@@ -68,38 +66,34 @@ GitLab エンジニアで以下を行いたい場合:
 
 ## パッチリリースのケイデンス {#patch-release-cadence}
 
-パッチリリースは月に 2 回、[マンスリーリリース](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)（第 3 木曜日）の前後の水曜日を目標にスケジュールされます。正確な日付は毎月異なり、運用上のニーズに基づいて変動する可能性のあるベストエフォートの目標です。
+[定期パッチリリース](#patch-release-types)は月に 2 回、[マンスリーリリース](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)（第 3 木曜日）の前後の水曜日を目標に公開されます。正確な日付は毎月異なり、運用上のニーズに基づいて変動する可能性のあるベストエフォートの目標です。
 
-今後のパッチリリース日については、[リリース情報ダッシュボード](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)（内部）を確認してください。
+今後の定期パッチリリース日については、[リリース情報ダッシュボード](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)（内部）を確認してください。
+
+**すべてのパッチリリースは水曜日に公開されます**。これには[アウトオブバンドパッチリリース](#patch-release-types)も含まれます。アウトオブバンドパッチは、該当する是正の [SLO 期限](#slo-commitments)に最も近い最初の水曜日に公開されます。
 
 ### SLO コミットメント {#slo-commitments}
 
-計画されたパッチリリースは、緊急リリースを必要とせずに目標リリース日を満たすようにスケジュールされます。
+定期パッチリリースは、アウトオブバンドリリースを必要とせずに目標リリース日を満たすように設計されています。
 
 - 詳細なセキュリティ脆弱性是正 SLA については、[セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)を参照してください。
-- 詳細なバグ脆弱性是正 SLA については、[バグ是正 SLA](/handbook/product-development/how-we-work/issue-triage/#severity-slos)を参照してください。
-
-## パッチウィンドウ {#patch-window}
-
-**パッチウィンドウ**は、Release Managers が[パッチリリースプロセス](#patch-release-process)を開始してから、パッケージが公開され、最終ステップが完了するまで、パッチリリースが進行している期間です。スケジュールされたパッチの場合、通常は目標リリース日の 2 日前に Release Managers が[GitLab.com へのセキュリティ修正のデプロイ](#patch-release-process)を開始した時点で始まり、リリース日に終了します。正確な開始と終了のタイミングは、リリースごとに異なります。
-
-パッチウィンドウ中、Release Managers は[GitLab.com のデプロイメントをロールバックする](/handbook/engineering/deployments-and-releases/deployments/#deployment-rollbacks)選択肢を維持します。本番環境で PDM を実行すると、そのデプロイメントはロールバックできなくなるため、パッチウィンドウ中は[デプロイ後マイグレーション（PDM）](/handbook/engineering/deployments-and-releases/deployments/#post-deploy-migration-pdm-execution)を**実行しません**。[月次リリース](/handbook/engineering/releases/monthly-releases/)の前後のウィンドウにも同じことが当てはまります。
-
-パッチウィンドウ中かどうかを確認するには、[Release Information ダッシュボード](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)（内部）を確認するか、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B)で質問してください。
+- 詳細なバグ是正 SLO については、[バグ是正 SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)を参照してください。
 
 ## パッチリリースのタイプ {#patch-release-types}
 
 GitLab には、2 種類のパッチリリースプロセスがあります:
 
-1. **定期スケジュール（デフォルト）**: [GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って、利用可能なすべてのバグおよび脆弱性修正を公開する SLO 駆動のパッチ。
-   [マンスリーリリース週](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)の前後の水曜日に月に 2 回スケジュールされ、計画されたパッチは
+1. **定期スケジュール（デフォルト）**: 利用可能なすべてのバグおよび脆弱性修正を
+   [GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って公開する SLO 駆動のパッチです。定期パッチは、
+   [マンスリーリリース週](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)の前後の水曜日に公開され、
    [バグ SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)と
    [セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)に準拠します。
-   [`critical` 脆弱性](/handbook/security/product-security/vulnerability-management/sla/)を含むパッチは、critical パッチとみなされます。
-1. **アウトオブバンド**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外で行うパッチで、
-   高重大度のバグまたは critical 脆弱性の緩和に厳密に限定されます。アウトオブバンドパッチは、
-   期限の超過に対応したり、標準のリリースポリシーを回避したりするために使用してはならず、
-   通常のパッチリリースのケイデンスに従い、水曜日に提供されます。
+   [`critical` 脆弱性](/handbook/security/product-security/vulnerability-management/sla/)を含むパッチは、
+   重大なパッチとみなされます。
+1. **アウトオブバンド**: 月に 2 回の定期パッチの水曜日**以外**の水曜日に公開される
+   パッチです。次の定期パッチを待つと是正 SLO に間に合わない、高重大度のバグまたは重大な脆弱性の
+   緩和に厳密に限定されます。アウトオブバンドパッチを、
+   期限の超過に対応したり、標準のリリースポリシーを回避したりするために使用してはなりません。
 
    バグ修正かセキュリティ脆弱性かを問わず、すべてのアウトオブバンドパッチは次の要件を
    例外なく満たす必要があります:
@@ -120,18 +114,26 @@ GitLab には、2 種類のパッチリリースプロセスがあります:
      必要です。セキュリティ脆弱性には適用されず、代わりに PSIRT が
      セキュリティインシデント全体のレベルでレビューします。
 
-さらに、**critical セキュリティ脆弱性**がエンジニアリングチームの所有する製品機能およびコードに
+さらに、**重大なセキュリティ脆弱性**がエンジニアリングチームの所有する製品機能およびコードに
 関連する場合、[セキュリティ RCA](/handbook/security/root-cause-analysis/)が例外なく**必須**です。
 これには、利用可能な修正を速やかに適用しなかった、サポートが終了した依存関係に頼っていたなど、
 GitLab の判断や遅延が脆弱性への露出の一因となった場合の、
 アップストリームのサードパーティコードの脆弱性も含まれます。担当チームが
 RCA を完了しなければなりません。それ以外の場合、RCA は任意です。
 
+## パッチウィンドウ {#patch-window}
+
+**パッチウィンドウ**は、Release Managers が[パッチリリースプロセス](#patch-release-process)を開始してから、パッケージが公開され、最終ステップが完了するまで、パッチリリースが進行している期間です。スケジュールされたパッチの場合、通常は目標リリース日の 2 日前に Release Managers が[GitLab.com へのセキュリティ修正のデプロイ](#patch-release-process)を開始した時点で始まり、リリース日に終了します。正確な開始と終了のタイミングは、リリースごとに異なります。
+
+パッチウィンドウ中、Release Managers は[GitLab.com のデプロイメントをロールバックする](/handbook/engineering/deployments-and-releases/deployments/#deployment-rollbacks)選択肢を維持します。本番環境で PDM を実行すると、そのデプロイメントはロールバックできなくなるため、パッチウィンドウ中は[デプロイ後マイグレーション（PDM）](/handbook/engineering/deployments-and-releases/deployments/#post-deploy-migration-pdm-execution)を**実行しません**。[月次リリース](/handbook/engineering/releases/monthly-releases/)の前後のウィンドウにも同じことが当てはまります。
+
+パッチウィンドウ中かどうかを確認するには、[Release Information ダッシュボード](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)（内部）を確認するか、[#releases](https://gitlab.slack.com/archives/C0XM5UU6B)で質問してください。
+
 ## パッチリリースのプロセス {#patch-release-process}
 
 パッチリリースのプロセスは、1 つの重要な違いを除いてすべてのタイプで同じです: 定期スケジュールのパッチには
 パッチリリース準備時点で準備が整っているすべてのバグおよびセキュリティ修正が含まれますが、アウトオブバンドパッチには
-高重大度のバグまたは critical 脆弱性の修正のみが含まれる可能性があります。
+高重大度のバグまたは重大な脆弱性の修正のみが含まれる可能性があります。
 
 エンドツーエンドのパッチリリースプロセスは、以下のステージで構成されます:
 
@@ -197,7 +199,7 @@ GitLab チームメンバーは、今後のパッチリリースに関する以�
 
 ### なぜ私のセキュリティ修正はパッチリリースに含まれなかったのですか？ {#why-wasnt-my-security-fix-included-in-the-patch-release}
 
-[GitLab Security](https://gitlab.com/gitlab-org/security/) で作成されたセキュリティ Issue は、セキュリティリリースに含めるために、セキュリティトラッキング Issue に関連付けられる必要があります。[セキュリティ Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Security%20developer%20workflow.md)を使用し、記載された手順に従ってください。
+[GitLab Security](https://gitlab.com/gitlab-org/security/)で作成されたセキュリティ Issue は、セキュリティリリースに含めるために、セキュリティトラッキング Issue に関連付けられる必要があります。[セキュリティ Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Security%20developer%20workflow.md)を使用し、記載された手順に従ってください。
 
 ### セキュリティ Issue に取り組む際、いくつのバックポートが必要ですか？ {#how-many-backports-do-i-need-when-working-on-a-security-issue}
 

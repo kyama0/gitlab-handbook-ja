@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "認可を Artifact Registry 内に維持しながら、固定された Artifact Registry のテーブル群を Siphon CDC で Orbit にレプリケーションする決定"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/artifact_registry/decisions/027_replicating_registry_data_to_orbit/"
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-19T10:33:34+01:00"
-translated_at: "2026-10-20T12:26:06+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-29T20:22:58+01:00"
+translated_at: "2026-11-01T07:33:26+00:00"
 translator: codex
 stale: false
 ---
@@ -129,7 +129,7 @@ Orbit/Siphon チーム間の契約です。v0 の正確な一覧は、
 - レプリケーションするテーブルのスキーマ変更には、Orbit/Siphon のレビューが必要です。
 - 一覧は、Artifact Registry のマイグレーションとともにバージョン管理します。
 - Orbit がインデックス作成に合意したテーブルだけを、一覧に追加します。
-- Artifact Registry は行を論理削除します（[ADR-007](007_database_schema.md)）。論理削除は、削除ではなく更新としてレプリケーション
+- Artifact Registry は行を論理削除します（[ADR-010](010_data_retention.md#soft-delete)）。論理削除は、削除ではなく更新としてレプリケーション
   されます。ノードの抽出では、論理削除された行と、削除された名前空間の配下の行を除外する必要があります。そうしないと、グラフに
   残ります。
 

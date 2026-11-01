@@ -2,40 +2,40 @@
 title: GitLab インシデントコミュニケーション計画
 description: 'エスカレーション、プロセス、インシデント管理の方法'
 upstream_path: /handbook/marketing/corporate-communications/incident-communications-plan/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:30:32+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:49:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-**corporate communications チームから潜在的なインシデントに関するレビューを受けたい場合は、Issue 内に情報を集めるか、Slack ディスカッションへのリンクを #corpcomms Slack チャンネルでチームへメッセージしてください。私たちは [Security Communication Manager on Call](/handbook/security/security-operations/sirt/security-incident-communication-plan/#roles-and-responsibilities-in-a-security-incident) と協力して次のステップを決定します。**
+**corporate communications チームから潜在的なインシデントに関するレビューを受けたい場合は、Issue 内に情報を集めるか、Slack ディスカッションへのリンクを #corpcomms Slack チャンネルでチームへメッセージしてください。私たちは [Security Communication Manager on Call](/handbook/security/security-operations/sirt/security-incident-communication-plan/#roles-and-responsibilities-in-a-security-incident)と協力して次のステップを決定します。**
 
-## インシデントコミュニケーション計画
+## インシデントコミュニケーション計画 {#incident-communication-plan}
 
 私たちのインシデント計画とコミュニケーションエスカレーションプロセスにより、組織全体がインシデント発生時に取るべき行動／取らない行動を理解できるようになります。これは「ティア（階層）」のようなもので、特定のティアがチームメンバーに伝達されると、関連するすべての部門が取るべき／取らない行動を把握できます。
 
-### インシデントとは何か？
+### インシデントとは何か？ {#what-is-an-incident}
 
 私たちの会社のブランドの重要な属性を損ない、評判を脅かす論争を呼ぶ問題のことです。および／または、チームメンバーの安全と幸福に影響を及ぼす、もしくは及ぼす可能性のあるインシデントです。
 
-### 潜在的インシデントの範囲／重大度の定義
+### 潜在的インシデントの範囲／重大度の定義 {#defining-the-scopeseverity-of-a-potential-incident}
 
 コミュニケーションエスカレーションの必要性を判断する際は、まず直近の問題が何であるかを特定し、その問題の原因を見極めることが重要です。これらの情報を収集した後、ティア 1〜4 を確認して重大度とその後の対応計画を判断します。
 
-#### ティア 4 - イベント
+#### ティア 4 - イベント {#tier-4---event}
 
-ティア 4 のイベントとは、[セキュリティインシデント](/handbook/security/security-operations/sirt/sec-incident-response/) や Zendesk 経由のカスタマーサポート要請のように、すでにプロセスが確立されているものです。ティア 4 の場合は、確立された会社プロセスに従ってください。
+ティア 4 のイベントとは、[セキュリティインシデント](/handbook/security/security-operations/sirt/sec-incident-response/)や Zendesk 経由のカスタマーサポート要請のように、すでにプロセスが確立されているものです。ティア 4 の場合は、確立された会社プロセスに従ってください。
 
-#### ティア 3 - 迅速な対応
+#### ティア 3 - 迅速な対応 {#tier-3---rapid-response}
 
 ティア 3 は、業界の変化、競合の動き、自社に関するニュース、その他コメントや意見、ソートリーダーシップを提供する機会に対処するために必要な迅速な対応です。ティア 3 の場合は、[迅速な対応指針に従ってください](/handbook/marketing/#-marketing-rapid-response-process)。
 
-#### ティア 2 - インシデント（プロセスは下記）
+#### ティア 2 - インシデント（プロセスは下記） {#tier-2---incident-process-below}
 
-ティア 2 のインシデントとは、現在進行中の問題、[グレーゾーンのコミュニケーション](/handbook/values/#religion-and-politics-at-work)、または計画された機微な企業コミュニケーションで、顧客・チームメンバー・市場の信頼を失う可能性のあるものです。インシデントは短期的な影響ですが、リスクは高いものです。例として、採用方針、歓迎されない製品変更の実装、経営陣の交代、[会社の価値観](/handbook/values/#credit)に対する不誠実さなどが挙げられます。インシデントの基準を満たす場合は、**[下記のプロセス](#tier-2-process)を開始してください**。
+ティア 2 のインシデントとは、現在進行中の問題、グレーゾーンのコミュニケーション、または計画された機微な企業コミュニケーションで、顧客やチームメンバーの離反、または会社に対する市場の信頼喪失につながる可能性のあるものです。インシデントは短期的な影響ですが、リスクは高いものです。例として、採用方針、歓迎されない製品変更の実装、経営陣の交代、[会社の価値観](/handbook/company/operating-principles/#acknowledging-credit)に対する不誠実さなどが挙げられます。インシデントの基準を満たす場合は、**[下記のプロセス](#tier-2-process)を開始してください**。
 
-#### ティア 1 - エスカレートされたインシデント
+#### ティア 1 - エスカレートされたインシデント {#tier-1---escalated-incident}
 
 ティア 1 のエスカレートされたインシデントは、長期的な影響を伴う、会社にとって重大な評判上または財務上のリスクです。業界での例としては、集団訴訟、注目度の高い訴訟（知的財産侵害やセクシャルハラスメント訴訟）、取締役会による経営陣の解任などがあります。[エスカレートされたインシデント対応チームとプロセスに従ってください](https://docs.google.com/document/d/1PgQuN4JkWWWzX5Gs32tAC3Sh-eKOKa26Y-fPH63U3v0/edit)。
 
@@ -50,25 +50,25 @@ head of corporate communications は、対外的な企業メッセージをど�
 
 head of corporate communications は、1 時間以内（PST 午前 6 時〜午後 6 時）にリクエストを評価します。緊急度を評価し、3 時間（できるだけ早く）または 24 時間以内の対応と判断され、それに応じてコミュニケーションエスカレーション対応計画のスコープが決定されます。なるべく早く MVC をリリースし、新しい情報が入手可能になり次第イテレーションする方針です。
 
-### コアコミュニケーションエスカレーション対応チームの役割と責任
+### コアコミュニケーションエスカレーション対応チームの役割と責任 {#core-communication-escalation-response-team-roles-and-responsibilities}
 
 - [Corporate Communications のフォンツリー](https://docs.google.com/document/d/1qos3kjM_yIhS8-syey7WfR22SzmnHYFSCZpnFnBv7Rw/edit) - このチームは、コミュニケーションエスカレーション対応計画に従って対外コミュニケーションの取り組みを調整し、GitLab の拡張チーム全体と連携して、すべての関係者がアクティブで、最新情報を共有し、足並みを揃えていることを確認します。このチームはソーシャルメディアも担当します。
 - Internal Communications - このチームは対応計画に従って社内コミュニケーションの取り組みを調整します。
-- [Developer Advocacy のコミュニティ対応](/handbook/marketing/product-and-technical-marketing/developer-advocacy/community-response/#notification) - このチームは、コミュニティの対応状況、モニタリング、関連する GitLab.com のディスカッションでの [GitLab 行動規範の執行](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/code-of-conduct-enforcement/) を担当します。
+- [Developer Advocacy のコミュニティ対応](/handbook/marketing/product-and-technical-marketing/developer-advocacy/community-response/#notification) - このチームは、コミュニティの対応状況、モニタリング、関連する GitLab.com のディスカッションでの [GitLab 行動規範の執行](/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/code-of-conduct-enforcement/)を担当します。
 - CLO - Chief Legal Officer は、対応計画と、すべての書面による対外・社内コミュニケーションについて法的なインプットを提供します。
 - CMO - 最終的な対外メッセージの DRI です。緊急度や対応に関する意見の不一致は、最終決定のため即座に CMO にエスカレーションされます。
 
-### 拡張チームの役割、責任、連絡先
+### 拡張チームの役割、責任、連絡先 {#extended-team-roles-responsibilities-and-points-of-contact}
 
-#### ソーシャルメディア
+#### ソーシャルメディア {#social-media}
 
-##### ソーシャルリスニングによるチャネル横断モニタリング（全ティア）
+##### ソーシャルリスニングによるチャネル横断モニタリング（全ティア） {#monitor-across-channels-with-social-listening-all-tiers}
 
 Developer Relations チームとソーシャルチームの両方によって、ソーシャルチャネル全体で定期的（多くは 1 日に数回）にモニタリングが行われていますが、この期間中はより頻繁にチャネルをモニタリングすることが特に重要です。多くの起点（チャネルごとに異なる場合があります）が存在する可能性があり、コミュニケーションエスカレーションのために取るべき行動を最適に評価するためには、これらの情報を理解することが重要です。
 
-ソーシャルリスニングは、Sprout Social 内の既存の GitLab ブランドヘルスモニターで実施できます。リスニングは常時稼働しており（Sprout はデータをバックフィルするため）、新しいトピックを設定する即時の必要性はありません。
+ソーシャルリスニングは、Sprout Social 内の既存の GitLab ブランドヘルスモニターで実施できます。リスニングは常時稼働しており（Sprout はデータをバックフィルするため、新しいトピックを設定する即時の必要性はありません。
 
-##### ティア 2 インシデントが私たちのオーガニックブランドソーシャルチャネルでどのように見えるか
+##### ティア 2 インシデントが私たちのオーガニックブランドソーシャルチャネルでどのように見えるか {#what-a-tier-2-incident-looks-like-on-organic-brand-social-channels}
 
 ティア 2 インシデントは、それ以上の中断なく公に対処するか、またはブランドチャネルからのアウトバウンドのオーガニックソーシャルメディアを一時停止するきっかけとなる可能性があります。どちらのシナリオでも、インバウンドの応答（GitLab からの新規メッセージではなく、人々への直接の返信）は対応の一部として含めるべきです。一般的に、Developer Relations とサポートチームは、特にインシデントが製品やサービスに関連する場合、製品サービスの中断について顧客やコミュニティとコミュニケーションを取るために定型メッセージを使用します。
 
@@ -76,30 +76,30 @@ Developer Relations チームとソーシャルチームの両方によって、
 
 インシデント中のソーシャルメディアの一時停止／ダークモードについて詳しくは、[ソーシャルメディアハンドブックを参照してください](/handbook/marketing/corporate-communications/social-marketing/#social-during-an-incident)。
 
-#### コミュニティ対応
+#### コミュニティ対応 {#community-response}
 
 Community Operations Manager は、ティア 3 と 4 については既存のフレームワークを通じて作業します。ティア 2 のインシデントについては、director of Developer Relations と community operations manager が、既存の e-group 主導の対応に組み込まれます。
 
-ティア 2 のインシデントについては、コミュニティチームは [comms-reactive-tier-2-incident-checklist テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/comms-reactive-tier-2-incident-checklist.md) の自分たちが担当する部分に従います。
+ティア 2 のインシデントについては、コミュニティチームは [comms-reactive-tier-2-incident-checklist テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/comms-reactive-tier-2-incident-checklist.md)の自分たちが担当する部分に従います。
 
-#### 主要ステークホルダーとの社内コミュニケーション
+#### 主要ステークホルダーとの社内コミュニケーション {#communicating-internally-with-key-stakeholders}
 
 コミュニケーションエスカレーション対応計画に取り組む人々の間のコミュニケーションを調整します。
 
-##### 調整用 Slack チャンネルを作成する
+##### 調整用 Slack チャンネルを作成する {#create-coordination-slack-channels}
 
-- すべての DRI とステークホルダーを含むコミュニケーションエスカレーション調整チャンネル。ここでのトラフィックは中〜低ボリュームで、調整、緩和、戦略に焦点を当てます。上記のコアチームの代表者として 1 名と、インシデントの中心にあるビジネス領域それぞれの代表者を招待します。[DACI](/handbook/people-group/directly-responsible-individuals/#dri-accountable-consulted-informed-daci) は、私たちの「コラボレーション」の価値観を示します。
+- すべての DRI とステークホルダーを含むコミュニケーションエスカレーション調整チャンネル。ここでのトラフィックは中〜低ボリュームで、調整、緩和、戦略に焦点を当てます。上記のコアチームの代表者として 1 名と、インシデントの中心にあるビジネス領域それぞれの代表者を招待します。[DACI](/handbook/people-group/directly-responsible-individuals/#dri-accountable-consulted-informed-daci)は、私たちの「コラボレーション」の価値観を示します。
 - GitLab の誰もが参加できるコミュニケーションエスカレーション議論チャンネル。GitLab の全員が意見を提供でき、一部の議論やトピックはインシデント調整チャンネルにエスカレーションされます。ここでのトラフィックは大量で、GitLab のチームメンバーがインシデントに関連する特定のトピックや進展についての可視性を得ることに焦点を当てます。
 
 インシデントに関連するすべての Slack チャンネルは、チャンネル説明に Issue へのリンクとコミュニケーションエスカレーション対応計画へのリンクを含める必要があります。
 
-##### 各インシデントごとに新しい Issue を作成する
+##### 各インシデントごとに新しい Issue を作成する {#create-a-new-issue-for-each-incident}
 
-[comms-reactive-tier-2-incident-checklist テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/comms-reactive-tier-2-incident-checklist.md) を使用して、コーポレートマーケティングプロジェクトに新しい Issue を作成します。コミュニケーションのリリース前の作業に関わる内容のため、Issue が機密としてマークされていることを必ず確認してください。Issue をプロジェクトの中心として使用し、To-Do の割り当てとタスクの達成を行います。コミュニティからの対外メッセージへのリンクを含む更新も、Issue 内のコメントとして追加する必要があります。常に複数の Slack スレッドを Issue にまとめる必要があるため、トピックに関するチャットの量と場所を 1 か所に集約することを目指すべきです。
+[comms-reactive-tier-2-incident-checklist テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/comms-reactive-tier-2-incident-checklist.md)を使用して、corporate marketing プロジェクトに新しい Issue を作成します。コミュニケーションのリリース前の作業に関わる内容のため、Issue が機密としてマークされていることを必ず確認してください。Issue をプロジェクトの中心として使用し、To-Do の割り当てとタスクの達成を行います。コミュニティからの対外メッセージへのリンクを含む更新も、Issue 内のコメントとして追加する必要があります。常に複数の Slack スレッドを Issue にまとめる必要があるため、トピックに関するチャットの量と場所を 1 か所に集約することを目指すべきです。
 
-私たちの価値観が行動を導きます: 「結果」のもとでの[緊急感](/handbook/values/#sense-of-urgency)、「イテレーション」のもとでの[待たない](/handbook/values/#dont-wait)という価値観、そして「コラボレーション」のもとでの [DACI](/handbook/people-group/directly-responsible-individuals/#dri-accountable-consulted-informed-daci) です。
+私たちの価値観が行動を導きます: 「結果」のもとでの緊急感、「イテレーション」のもとでの待たないという価値観、そして「コラボレーション」のもとでの [DACI](/handbook/people-group/directly-responsible-individuals/#dri-accountable-consulted-informed-daci)です。
 
-##### 社内対応
+##### 社内対応 {#internal-response}
 
 インシデントに対処する際、可能であればチームメンバーがまず社内でそれについて知ることを望みます。ただし、インシデントによっては、それが不可能な場合もあります。しかし、対外的にコミュニケーションが行われたら、できるだけ早く社内でも対応することを目指すべきです。たとえそれが、把握している／声明を準備している／問題の詳細を調査しており、新しい情報が得られ次第チームメンバーに更新するということを認めるだけのものであってもです。
 
@@ -109,24 +109,24 @@ Community Operations Manager は、ティア 3 と 4 については既存のフ
 - #diversity_inclusion_and_belonging
 - #external-comms
 
-### 対外コミュニケーション
+### 対外コミュニケーション {#communicating-externally}
 
 GitLab の価値観 + 調査に基づくコミュニケーションを中心に据える - 「[リスクコミュニケーションにおけるソーシャルメディアの組み込み](https://www.researchgate.net/publication/228129989_A_Work-In-Process_Literature_Review_Incorporating_Social_Media_in_Risk_and_Crisis_Communication)」では、コミュニケーションエスカレーションを以下の方法で扱うことが推奨されています:
 
-- [誠実さ](/handbook/values/#transparency)、[率直さとオープンさ](/handbook/values/#collaboration)を持ってコミュニケーションし、リスクを認める
-- 信頼できる情報源と[コラボレーション](/handbook/values/#collaboration)し、調整する
+- 誠実さ、率直さとオープンさを持ってコミュニケーションし、リスクを認める
+- 信頼できる情報源とコラボレーションし、調整する
 - 不確実性と曖昧さを受け入れる
 - メディアのニーズに応え、アクセス可能であり続ける
 - 思いやり、関心、共感を持ってコミュニケーションする
 
-これらの推奨事項の多くは、直接的または間接的に [GitLab の価値観](/handbook/values/) と一致しています。
+これらの推奨事項の多くは、直接的または間接的に GitLab の価値観と一致しています。
 
 加えて、以下を確実に行う必要があります:
 
-- 早期かつ頻繁に、[必要なだけ](/handbook/values/#iteration)コミュニケーションする
-- 常に [GitLab のブランドボイス](https://design.gitlab.com/brand-overview/resources/) を使用する
+- 早期かつ頻繁に、必要なだけコミュニケーションする
+- 常に [GitLab のブランドボイス](https://design.gitlab.com/brand-overview/resources/)を使用する
 
-#### ステークホルダーがいる場所で会う
+#### ステークホルダーがいる場所で会う {#meet-stakeholders-where-they-are}
 
 インシデントを軽減することを目的としたコミュニケーションは、自社所有チャネルとアーンドチャネルの両方に届けるべきです。
 
@@ -138,27 +138,27 @@ GitLab の価値観 + 調査に基づくコミュニケーションを中心に�
 
 このミックスの具体的な構成は、インシデントによって変わります。
 
-#### 過剰なコミュニケーションを避ける
+#### 過剰なコミュニケーションを避ける {#dont-over-communicate}
 
 リスニング（ツールまたは手動調査）を使用して、インシデントがどこで発生しているかを理解することが重要です。多くの場合、ほとんどのインシデントは 1〜3 のチャネル（HackerNews、Twitter、Reddit、GitLab Issue、ニュース記事など）に起因し、これらの同じチャネルでのコミュニケーションのみでインシデントを管理することは十分に可能です。
 
 インシデントが適切に分析されない場合、GitLab は過剰にコミュニケーションを行い、問題をより深刻にしてしまうリスクがあります。
 
-#### どのコミュニケーションが最後になるかを決める
+#### どのコミュニケーションが最後になるかを決める {#decide-which-communication-will-be-the-last-to-go-out}
 
 インシデント管理のある時点で、計画されている対外コミュニケーションは、ステークホルダーとより広い GitLab コミュニティへの「最終的な対応」として考えるべきです。これは、会社が対処できることをすべて対処し、犯したミスについて責任を取り、立場にコミットしたと感じたときに特定されます。
 
 この最終コミュニケーションを特定したら、公の場でこの問題への対処を停止するのが最善です。他のチャネルでのステークホルダーへのブロードキャストはもう行いません。フォローアップの質問がある人は、常に最終コミュニケーションへ誘導します。多くの「小さい」から「中程度」のインシデントでは、最終コミュニケーションが最初のコミュニケーションになる場合もあります。
 
-#### インシデント後
+#### インシデント後 {#after-the-incident}
 
-##### インシデントが実際に終わったかを判断する
+##### インシデントが実際に終わったかを判断する {#determine-that-the-incident-is-actually-over}
 
 熱が自然に冷め始めると、各チャネルの受信箱と通知が通常レベルに戻り始めるのでわかります。ただし、本能だけに頼るべきではありません。ほとんどの場合、リスニングツールを使用するか、@メンションと非 @メンションをチャネル横断で確認して、インシデントが終わったことを定量化する必要があります。例えば、メッセージの量が減少しているか、感情*が私たちが正常レベルと判断するものに戻っているかなどです。
 
 _*ツールによっては、感情分析は実際の感情の不正確な見方になる可能性があります。場合によっては、実際の感情を正確に捉えるために手動調整が必要な場合があります。_
 
-##### レトロスペクティブを作成する
+##### レトロスペクティブを作成する {#create-a-retrospective}
 
 インシデントが終わったと判断したら、レポートモードに移行します。なぜインシデントが起こったか、どこでいつ発生したか、誰が最初に影響を受け、長期的な影響があるか、誰が外部でインシデントについて話していたか、チームが何をしたか、インシデントがどのように解決されたか、将来このようなことが起こらないようにするにはどうすればよいかについてストーリーを語ります。
 
@@ -170,8 +170,8 @@ _*ツールによっては、感情分析は実際の感情の不正確な見方
 
 _(オプション) 公開レトロスペクティブ_- 重大な製品またはサービス関連のインシデントの場合、コミュニケーションエスカレーションプロセスの要約の公開を検討すべきです。インシデント発生から数日または数週間後の要約には、範囲、影響、タイムライン、根本原因、解決、計画されている改善が含まれる場合があります。
 
-##### 最終的なトーキングポイントを守る
+##### 最終的なトーキングポイントを守る {#stick-with-the-final-talking-points}
 
-[どのコミュニケーションを最後にするかを決める](https://docs.google.com/document/d/1evsrRBdkCE03hGrKy4vzAI-P4CR5Muu2x3mLUtZUlDk/edit?ts=5db9e0cd#heading=h.myub55maxnh8) の項目で議論したように、コミュニケーションを完了し、新しいトーキングポイントを終わらせるのが最善です。インシデントが終わった後でも、まだそれについて尋ねられる可能性があります。
+[どのコミュニケーションを最後にするかを決める](https://docs.google.com/document/d/1evsrRBdkCE03hGrKy4vzAI-P4CR5Muu2x3mLUtZUlDk/edit?ts=5db9e0cd#heading=h.myub55maxnh8)の項目で議論したように、コミュニケーションを完了し、新しいトーキングポイントを終わらせるのが最善です。インシデントが終わった後でも、まだそれについて尋ねられる可能性があります。
 
 最終的なトーキングポイントを守り、全員を最終コミュニケーションへ誘導することが重要です。これがブログ、ツイートのスレッド、または YouTube ビデオの瞬間であっても、尋ねる人を誘導する準備をしておく必要があります。

@@ -1,19 +1,19 @@
 ---
 title: "フィールドとのコミュニケーション"
-description: "Slack と Email の両方を使って GitLab フィールドチームとコミュニケーションし、フィールド内でコミュニケーションするためのガイド"
+description: "Slack とメールの両方を使って GitLab フィールドチームとコミュニケーションし、フィールド内でコミュニケーションするためのガイド"
 upstream_path: /handbook/sales/sales-google-groups/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:37:58+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-このページは、Slack と Email の両方を使ってフィールドとコミュニケーションし、フィールド内でコミュニケーションするためのガイドとして機能することを意図しています。CRO 組織のすべての Google グループ、Slack グループ、Slack チャネルの概要を見つけるには、以下を読んでください。
+このページは、Slack とメールの両方を使ってフィールドとコミュニケーションし、フィールド内でコミュニケーションするためのガイドとして機能することを意図しています。CRO 組織のすべての Google グループ、Slack グループ、Slack チャネルの概要を見つけるには、以下を読んでください。
 
 このページの明確化を促進するため、「フィールドチーム」または「CRO 組織」とは、CRO 組織のすべてのメンバーを指すことに注意することが重要です – Sales、CS、SA、Global Ecosystems、Sales Development、High Velocity Sales、Professional Services、Field Enablement、Revenue Strategy & Operations。
 
-## Google グループ
+## Google グループ {#google-groups}
 
 CRO 組織の親 Google グループは sales-all です。いくつかの子グループが親グループ内に含まれます。
 
@@ -38,11 +38,11 @@ CRO 組織の親 Google グループは sales-all です。いくつかの子グ
 
 | グループ名 | グループレベル/アクセス | 説明 |
 | ------ | ------ | ------ |
-| sales-amer-comm | team, AVPs/RDs/AEs only | AMER Commercial チームのすべてのチームメンバー |
-| sales-amer-east | team, AVPs/RDs/AEs only | AMER East チームのすべてのチームメンバー |
-| sales-amer-finserv | team, AVPs/RDs/AEs only | AMER Financial Services チームのすべてのチームメンバー |
-| sales-amer-pubsec | team, AVPs/RDs/AEs only | AMER Public Sector チームのすべてのチームメンバー |
-| sales-pubsec, public-sector | team, AVPs/RDs/AEs and cross-functional team members | AMER Public Sector をサポートするチームメンバー |
+| sales-amer-comm | チーム、AVPs/RDs/AEs のみ | AMER Commercial チームのすべてのチームメンバー |
+| sales-amer-east | チーム、AVPs/RDs/AEs のみ | AMER East チームのすべてのチームメンバー |
+| sales-amer-finserv | チーム、AVPs/RDs/AEs のみ | AMER Financial Services チームのすべてのチームメンバー |
+| sales-amer-pubsec | チーム、AVPs/RDs/AEs のみ | AMER Public Sector チームのすべてのチームメンバー |
+| sales-pubsec, public-sector | チーム、AVPs/RDs/AEs および部門横断のチームメンバー | AMER Public Sector をサポートするチームメンバー |
 | emea-sales-leadership | leadership |  EMEA 地域をサポートするクロスファンクショナル GTM チームのすべてのリーダー |
 | sales-emea | team | EMEA 地域をサポートするすべてのクロスファンクショナル GTM チームメンバー |
 | apj-gtm-leaders | leadership | APJ 地域をサポートするクロスファンクショナル GTM チームのすべてのリーダー |
@@ -93,9 +93,9 @@ CRO 組織の親 Google グループは sales-all です。いくつかの子グ
 | sales-dev-apj | team | APJ Sales Dev チームのメンバー |
 | sales-dev-emea | team | EMEA Sales Dev チームのメンバー |
 
-ほとんどのチームメンバーは、GitLab で開始してから数日以内に[チームの EBA](/handbook/eba/) によって、自分のチームの該当する Google グループに自動的に追加されます。新しい Google グループへのアクセスを得るには、[アクセスリクエスト (AR) フォームに記入してください](/handbook/eta/corporate-it/end-user-services/access-requests/)。
+ほとんどのチームメンバーは、GitLab で開始してから数日以内に[チームの EBA](/handbook/eba/)によって、自分のチームの該当する Google グループに自動的に追加されます。新しい Google グループへのアクセスを得るには、[アクセスリクエスト (AR) フォームに記入してください](/handbook/eta/corporate-it/end-user-services/access-requests/)。
 
-## Slack チャネルとグループ
+## Slack チャネルとグループ {#slack-channels-and-groups}
 
 フィールドの主要な Slack チャネルは次のとおりです。
 
@@ -105,7 +105,7 @@ CRO 組織の親 Google グループは sales-all です。いくつかの子グ
 
 すべてのフィールドチームメンバーは、ビジネスに関する重要な更新のためにこれら 3 つのチャネルを[スター](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) 🌟 してフォローすべきです。フィールド組織には、以下にアウトラインされている複数のチームチャネルがあります。役割に関連するチャネルをフォローしてください。プライベートチャネルへのアクセスを得るには、[アクセスリクエスト (AR) フォームに記入してください](/handbook/eta/corporate-it/end-user-services/access-requests/)。
 
-### Slack グループ
+### Slack グループ {#slack-groups}
 
 Slack グループとは、ワークスペース内のメンバーのグループで、しばしば一度に通知される必要があります。フィールド組織には、Slack コミュニケーションで人々のグループに効果的に CC できる複数の Slack グループがあります。Slack グループはすべてのメンバーにプッシュ通知を送るので、[ハンドブックの @here メンションに関するガイドライン](/handbook/communication/#be-respectful-of-others-time)に従って、控えめに使用するべきです。
 
@@ -126,7 +126,7 @@ Slack グループは以下の場合にのみ使用してください。
 | sales_dev_leadership | Sales Dev チームのマネージャー以上 |
 | salesdev_global | すべての Sales Dev チームメンバー |
 
-### フィールド Slack チャネル
+### フィールド Slack チャネル {#field-slack-channels}
 
 以下のチャネルは、フィールド組織に固有のものです。
 
@@ -138,7 +138,7 @@ Slack グループは以下の場合にのみ使用してください。
 | #field-fyi | public (read-only) | 公式のフィールドアナウンスチャネル |
 | #cro | public | CRO (Chief Revenue Officer) のアナウンスとコミュニケーション |
 | #sales-vp | public | すべてのフィールド VP に関連するスケジューリングリクエストなどに使用 |
-| #field-managers | private | フィールド (Sales、CS、SDR) マネージャー (ASM または同等以上) との機密 (人またはコンプ関連) コミュニケーション |
+| #field-managers | private | フィールド (Sales、CS、SDR) マネージャー (ASM または同等以上) との機密 (人事または報酬関連) コミュニケーション |
 
 **Sales**
 
@@ -155,7 +155,7 @@ Slack グループは以下の場合にのみ使用してください。
 
 | チャネル名 | チャネルアクセス (Private/Public) | 説明 |
 | ------ | ------ | ------ |
-| #customer-success | public | Customer Success と、および Customer Success 内でやり取りするために使用 |
+| #customer-success | public | Customer Success とのやり取り、および Customer Success 内でのやり取りに使用 |
 | #global-renewals-managers | public | RM チームチャネル|
 | #cs-questions | public | GitLab の使用とベストプラクティスに関する顧客と見込み客から Customer Success チームへの質問 |
 | #demo-systems | public | デモシステムに関するオープンディスカッションと質問 |
@@ -186,7 +186,7 @@ Slack グループは以下の場合にのみ使用してください。
 
 | チャネル名 | チャネルアクセス (Private/Public) | 説明 |
 | ------ | ------ | ------ |
-| #hvs | public | HVS チームと、および HVS チーム内でのコラボレーションのための一般チームチャネル |
+| #hvs | public | HVS チームとのコラボレーション、および HVS チーム内でのコラボレーションのための一般チームチャネル |
 | #hvs_team | private | すべての High Velocity Sales および First Order チームメンバー |
 | #hvs_renewals | public | HVS の一部である SMB Renewals チームのディスカッション、質問、アナウンス、フィードバック |
 | #hvs_new_logo_aes | public | First Order/新規ロゴに特化した HVS チームの AE のチャネル |
@@ -234,14 +234,14 @@ Slack グループは以下の場合にのみ使用してください。
 | #bdr_entg_emea_seur | public | SEUR BDR チームのチームチャネル |
 | #bdr_emea-egc-meta-telco | public | EMEA META TELCO EGC BDR チームのチームチャネル |
 
-[公開チャネルを使用](/handbook/communication/#use-public-channels)するという企業のガイダンスと一致して、プライベートチャネルが好まれる場合があります。[包摂的な環境](/handbook/values/#diversity-inclusion)を確保したいと考えているため、一部のチームのフィードバックは、判断されているという認識 (すなわち、インポスターシンドローム) があるため、プライベートチャネルが時々好まれるということです。推奨は、公開チャネルを使用することです。なぜなら、それは:
+[公開チャネルを使用](/handbook/communication/#use-public-channels)するという企業のガイダンスと一致して、プライベートチャネルが好まれる場合があります。包摂的な環境を確保したいと考えているため、一部のチームのフィードバックは、判断されているという認識 (すなわち、インポスターシンドローム) があるため、プライベートチャネルが時々好まれるということです。推奨は、公開チャネルを使用することです。なぜなら、それは:
 
 - ソリューション、推奨事項、ベストプラクティスについて、より広いコラボレーション (すなわち、SA/CSM/PS、Product、Marketing、Sales) を可能にする
 - 顧客の課題、イネーブルメントのニーズ、製品ドキュメントの改善など、より広い学習の能力を提供する
 - コンテンツ (すなわち、CSM ソリューション、デジタルジャーニーのアダプションコンテンツ、製品ドキュメント) の情報を収穫する能力を可能にする
-推奨は、時々不快に感じるかもしれない場合でも公開チャネルを使用することです。なぜなら、私たちは[これを受け入れたいと思っている](/handbook/values/#embracing-uncomfortable-ideas-and-conversations)からです。
+推奨は、時々不快に感じるかもしれない場合でも公開チャネルを使用することです。なぜなら、私たちはこれを受け入れたいと思っているからです。
 
-### 役立つ会社の Slack チャネル
+### 役立つ会社の Slack チャネル {#helpful-company-slack-channels}
 
 以下のチャネルは、フィールド組織外のチームによって所有されていますが、役割の性質上、フィールドチームメンバーがフォローすると役立つ場合があります。
 

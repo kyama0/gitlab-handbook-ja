@@ -10,22 +10,22 @@ participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/"
-upstream_sha: "2dbfc49e47c784740ced3e2c617530f365412492"
-lastmod: "2026-10-12T12:09:42+13:00"
-translated_at: "2026-10-11T23:57:10+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-27T19:36:56+13:00"
+translated_at: "2026-11-01T07:37:58+00:00"
 translator: codex
 stale: false
 ---
 
 {{< engineering/design-document-header >}}
 
-このドキュメントは作業中であり、Cells の設計のごく初期の状態を表しています。重要な部分の多くがまだ文書化されていませんが、今後追記していく予定です。
-
 Cells は、私たちの SaaS プラットフォームのための新しいアーキテクチャです。このアーキテクチャは水平方向にスケール可能で、レジリエントであり、より一貫したユーザー体験を提供します。将来的には、データレジデンシー制御（リージョン）やフェデレーション機能などの追加機能も提供する可能性があります。
 
 ## ゴール {#goals}
 
-[目標、用語集、要件](goals.md)を参照してください。
+Cells は、水平スケーラビリティを提供することで[レガシー Cell](goals.md#legacy-cell)のデータベースの負荷を軽減します。
+
+詳細は[目標、用語集、要件](goals.md)を参照してください。
 
 ## Protocells {#protocells}
 
@@ -33,23 +33,26 @@ Protocells は Cells アーキテクチャの現在のイテレーションで�
 Cells 1.5、Cells 2.0 のイテレーションに代わり、レガシー Cell のデータベースの負荷を恒久的に軽減することに
 新たな重点を置いています。
 
-### 概要 {#summary}
-
-Protocells は、水平スケーラビリティを提供することで[レガシー Cell](goals.md#legacy-cell)のデータベースの負荷を軽減します。
-
-Organizations は論理的な境界として、Cells は物理的な境界として機能します。
-
-この設計は、Organizations、Organization の移行、Cells インフラストラクチャという 3 つの主要コンポーネントを統合します。
-
 進捗は[作業用エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/1616)で追跡します。
 
 ### 提案 {#proposal}
+
+Organizations は論理的な境界として、Cells は物理的な境界として機能します。
+
+この設計は、Organizations、Organization の移行、Cells インフラストラクチャという 3 本の主要な柱を統合します。
+
+| 柱 | 目的 | 結果 |
+| ------ | ------- | ------ |
+| 1. Organizations | [Organization の分離](../organization/isolation.md)により、Organizations を論理的な境界として導入します。 | トップレベルグループ（TLG）と、その子リソース（グループ、プロジェクトなど）、およびユーザーを専用の Organization に移管します。その後、この Organization を分離し、移行の準備を整えます。 |
+| 2. Organization の移行 | [Organization のデータ移行](../organization-data-migration/_index.md)の設計ドキュメントに基づいて、Cells 間で Organizations を移動できるようにします。 | Organization のすべてのデータを、損失なく別の Cell に移動します。Topology Service でその Organization の正規の Cell を切り替えます。 |
+| 3. Cells インフラストラクチャ | [Cells インフラストラクチャ](./infrastructure/_index.md)の設計ドキュメントに基づいて、自己完結した複数の GitLab インスタンスを GitLab.com 上に Cells としてデプロイします。 | [ルーティングロジック](http_routing_service.md)が Organization に基づいて適切な Cell にリクエストを振り分けます。 |
 
 ```mermaid
 flowchart TD
     subgraph P1["1 · Organizations"]
         A["Top-level group\n+ child resources"] -->|"transferred to"| B["Organization"]
-        B --> C["Missing references\nrender gracefully\non source & target cell"]
+        B -->|"isolate"| C["Isolated Organization"]
+        C -.- N>"Cross-org references are removed, so migrated organizations do not break pages, for example an issue whose author (User) is in another Organization."]
     end
 
     subgraph P2["2 · Organization Migration"]
@@ -64,27 +67,12 @@ flowchart TD
         H -->|"proxy"| E
     end
 
-    B -.->|"migrate"| D
+    C -.->|"migrate"| D
     A ~~~ G
 ```
 
-Protocells は 3 本の柱で構成されています:
-
-| 柱 | 目的 | 結果 |
-| ------ | ------- | ------ |
-| 1. Organizations | [Organization の分離](../organization/isolation.md)により、Organizations を論理的な境界として導入します。 | トップレベルグループと、その子リソース（グループ、プロジェクト、ユーザーなど）を、専用の Organization に移管します。 |
-| 2. Organization の移行 | [Organization のデータ移行](../organization-data-migration/_index.md)の設計ドキュメントに基づいて、Cells 間で Organizations を移動できるようにします。 | Organization のすべてのデータを、損失なく別の Cell に移動します。Topology Service でその Organization の正規の Cell を更新して切り替えます。 |
-| 3. Cells インフラストラクチャ | [Cells インフラストラクチャ](./infrastructure/_index.md)の設計ドキュメントに基づいて、自己完結した複数の GitLab インスタンスを GitLab.com 上に Cells としてデプロイします。 | [ルーティングロジック](http_routing_service.md)が Organization に基づいて適切な Cell にリクエストを振り分けます。 |
-
-各柱の詳細:
-
-| 柱 | 詳細 |
-| ------ | ------- |
-| 1. Organizations | すべてのリクエストに対して Organization コンテキストの解決を確立し、データや操作が Organization の境界を越えることを防ぎます。Self-Managed と Dedicated では、[Organization の ADR](../organization/decisions/007_self_managed_dedicated_single_organization.md)に基づいて、インスタンスと Organization の 1 対 1 の対応を確立します。Organization を別の Cell に移動した際、参照先が欠けていても移動元と移動先の両方の Cell でページが引き続き表示されます。たとえば、作成者（ユーザー）が Organization と一緒に移動されなかった Issue や、移動したユーザーが別の Organization の Issue に残したコメントが該当します。 |
-| 2. Organization の移行 | このツールは、レガシー Cell から新しい Cells への Organizations の移行をサポートします。水平スケーラビリティと、インフラストラクチャ全体での負荷分散を可能にします。 |
-| 3. Cells インフラストラクチャ | 各 Cell は複数の Organizations をホストできます。Cells は、独自のデータベースとインフラストラクチャを持つ独立した GitLab インスタンスとして動作します。 |
-
-この取り組みは、[データ保持](../../guidelines/data_lifecycle/data_retention.md)など、レガシー Cell のデータベースを支える他の補完的な取り組みを妨げるものではありません。
+> [!note]
+> この取り組みは、[データ保持](../../guidelines/data_lifecycle/data_retention.md)など、レガシー Cell のデータベースを支える他の補完的な取り組みを妨げるものではありません。
 
 ### 設計と実装の詳細 {#design-and-implementation-details}
 
@@ -242,25 +230,6 @@ Protocells では、当面の焦点をレガシー Cell のデータベースの
    Cell に移行すると、その前提が崩れるため、公開 Organization を
    移行できるようにするには、この部分を別途作り直す必要があります。
 
-## 技術的な提案 {#technical-proposals}
-
-Cells アーキテクチャは、データ処理、ロケーション、スケーラビリティ、そして GitLab アーキテクチャ全体に長期的な影響を与えます。
-このセクションでは、評価対象となっているさまざまな技術提案へのリンクをまとめます。
-
-- Cells Services:
-  - [HTTP Routing Service](http_routing_service.md)
-  - [Topology Service](topology_service.md)
-    - [Topology Service のトランザクション動作](topology_service_transactional_behavior.md)
-  - [Cell サービス間の相互認証](mutual_authentication_between_cell_services.md)
-  - [ルーティング可能なトークン](routable_tokens.md)
-  - [Container Registry Routing Service](container_registry_routing_service.md)
-  - [SSH Routing Service](ssh_routing_service.md)
-  - 計画中: Indexing Service
-- [Cells: インフラストラクチャ](./infrastructure/_index.md)
-- [フィーチャーフラグ](./infrastructure/feature_flags.md) - ([以前のイテレーション](feature_flags.md))
-- [設定の同期](./proposal-admin_area_setting_sychronization_in_cells.md)
-- [Organization の移行](../organization-data-migration/_index.md)
-
 ## 影響を受ける機能 {#impacted-features}
 
 Cells アーキテクチャは多くの機能に影響を与え、その中には書き直しや大幅な変更を必要とするものもあります。
@@ -336,7 +305,7 @@ Cell インスタンスがプロビジョニングされると、GitLab.com ク�
 
 ![Cells のデプロイメント](/images/cells/cells-deployment.png)
 
-Cells は [the tissue](https://ops.gitlab.net/gitlab-com/gl-infra/cells/tissue/-/tree/main/rings?ref_type=heads)
+Cells は [tissue](https://ops.gitlab.net/gitlab-com/gl-infra/cells/tissue/-/tree/main/rings?ref_type=heads)
 プロジェクトで管理されており、`dev` および `prod` の両環境のすべての Cells を `rings` ディレクトリで管理しています。
 
 各 Cells の構成は、GitLab Dedicated のテナントでも既に使用されている [tenant-model-schema](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/tenant-model-schema)
@@ -418,7 +387,7 @@ Admin が以下のタスクを実行します。
 
 より包括的なガイドは、この [マージリクエスト](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/14596)でも公開されています。
 
-ご質問は `#f_protocells` か、Protocells Office Hours セッションにご連絡ください。
+ご質問があれば、`#f_protocells` にご連絡いただくか、Protocells Office Hours セッションに参加してください。
 
 ### 機能を Cell 内に限定すべきか、クラスタ全体にすべきかをどう判断しますか？ {#how-can-i-decide-if-my-feature-can-be-cell-local-or-clusterwide-}
 

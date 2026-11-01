@@ -6,27 +6,27 @@ twitter_image_alt: "GitLab Team Member working from home office, happy to see ba
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/parenting/"
-upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
-translated_at: "2026-09-03T22:58:30+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T08:17:34+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 在宅勤務をしている親は、独自の需要や期待を持つとともに、独自の課題も抱えています。特に育児や学校が世界的な危機の影響を受けている場合、優れた同僚であり、優れた親であることは高い要求です。
 
-![GitLab parenting work from home](/images/opengraph/Talent-Brand/hiring-day-in-the-life-darren.png)
+![GitLab で子育てと在宅勤務を両立](/images/opengraph/Talent-Brand/hiring-day-in-the-life-darren.png)
 {style="max-width: 50%;"}
 
-成功の形は人それぞれ異なりますが、それには組織のサポート、親が自律的に行動できると感じられる[バリュー](/handbook/values/)に基づくカンパニー全体の整合性、そしてアドバイスを共有できる[透明性のある雰囲気](building-culture/)が必要です。
+成功の形は人それぞれ異なりますが、それには組織のサポート、親が自律的に行動できると感じられるバリューに基づくカンパニー全体の整合性、そしてアドバイスを共有できる[透明性のある雰囲気](building-culture/)が必要です。
 
-## Q: 在宅勤務ができる子育て向きの仕事にはどんなものがありますか？
+## Q: 在宅勤務ができる子育て向きの仕事にはどんなものがありますか？ {#q-what-are-some-work-from-home-parenting-jobs}
 
 GitLab では、[ほとんどの仕事はリモートで行える](terminology/)と考えています。私たちは世界中に会社所有のオフィスが一切ない、世界最大のオールリモート企業です。65 カ国以上にチームメンバーがおり、その多くは子どもを持つ親です。できることですし、そうあるべきです！
 
-親に優しい仕事を探す際は、特定の職種ではなく、会社に注目してください。柔軟なスケジュールを提供しているか？[申請不要の PTO](/handbook/people-group/time-off-and-absence/time-off-types/)はあるか？[家族ファースト](/handbook/values/#family-and-friends-first-work-second)の方針はあるか？積極的に親をサポートし、仕事よりも子どもを優先する組織を選びましょう。
+親に優しい仕事を探す際は、特定の職種ではなく、会社に注目してください。柔軟なスケジュールを提供しているか？[申請不要の PTO](/handbook/people-group/time-off-and-absence/time-off-types/)はあるか？家族ファーストの方針はあるか？積極的に親をサポートし、仕事よりも子どもを優先する組織を選びましょう。
 
-## Q: 在宅勤務で子育てをするメリットは何ですか？
+## Q: 在宅勤務で子育てをするメリットは何ですか？ {#q-what-are-the-benefits-of-work-from-home-parenting}
 
 [リモートワークには多くのメリット](remote-benefits/)がありますが、仕事と子育て・ケアを両立できることは、多くの人にとって非常に大きなメリットと見なされています。
 
@@ -39,7 +39,7 @@ GitLab では、[ほとんどの仕事はリモートで行える](terminology/)
 1. [自分に最も合った形](https://about.gitlab.com/blog/2019/08/01/working-remotely-with-children-at-home/)で[オフィスやワークスペースを設定・装飾](https://community.thriveglobal.com/how-remote-work-can-reduce-stress-and-revitalize-your-mindset/)できます。
 1. [最も生産性が高い](/handbook/communication/#asynchronous-communication)時間帯に基づいて[勤務時間を選択](/handbook/company/culture/all-remote/)できます。
 
-## Q: 在宅勤務で子育てをする際の課題は何ですか？
+## Q: 在宅勤務で子育てをする際の課題は何ですか？ {#q-what-are-the-challenges-of-work-from-home-parenting}
 
 最近の[パンデミック中に働く親が直面した課題に関する Forbes の記事](https://www.forbes.com/sites/jackkelly/2021/05/03/a-new-flexjobs-study-shows-how-challenging-it-was-for-working-parents-during-the-pandemic/?sh=60e7556552f6)では、主な問題として以下が挙げられています。
 
@@ -55,56 +55,56 @@ GitLab では、これらの各領域で健全なワークライフバランス�
 - [健全なワーク/ライフバランスの構築](mental-health/#rest-and-time-off-are-productive)
 - [会議を減らし、働く時間を増やす](meetings/#1-make-meeting-attendance-optional)
 
-## Q: 子どもがいる状態でリモートワークを管理するにはどうすればよいですか？
+## Q: 子どもがいる状態でリモートワークを管理するにはどうすればよいですか？ {#q-how-do-i-manage-my-work-remotely-with-kids}
 
 一概に答えられる解決策はありませんが、健全な仕事と子育ての両立のための素晴らしいヒントを集めました。
 
-### 専用の作業スペースを作る
+### 専用の作業スペースを作る {#create-a-dedicated-work-area}
 
-まだ遊んで欲しいと理解できない幼児がいる親の場合、ドアを閉められるスペースで仕事をすることを検討してください。これにより、仕事と生活のより明確な分離が生まれます。
+親が家にいるのに遊んだり関わったりできない理由をまだ理解できない幼児がいる場合、ドアを閉められるスペースで仕事をすることを検討してください。これにより、仕事と生活のより明確な分離が生まれます。
 
 そのような分離が現実的でない、または不可能な生活スペースに住んでいる場合は、[Codi](https://www.codi.com)などの会社が提供するコワーキングスペース、外部オフィス、または共有コミュニティホームでの作業を検討してください。GitLab は、すべての生活スペースがリモートワークに適しているわけではないと認識しており、そのため[外部スペースの費用を補助](https://internal.gitlab.com/handbook/finance/expenses/#co-working-space)しています。
 
-### カレンダーに家族の時間をブロックする
+### カレンダーに家族の時間をブロックする {#block-out-family-time-on-your-calendar}
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 仕事の会議が予定されるなら、他のことも予定できます。それは昼食、フィットネス・瞑想の時間、または子どもとの交流かもしれません。家族の予定を意図的にカレンダーに入れることが大切です。朝食の時間、学校への送迎、宿題の時間、その他の活動が含まれるかもしれません。
 
-### 基本ルールを設ける
+### 基本ルールを設ける {#establish-ground-rules}
 
-![GitLab commit illustration](/images/all-remote/gitlab-commit-illustration.jpg)
+![GitLab Commit のイラスト](/images/all-remote/gitlab-commit-illustration.jpg)
 {style="max-width: 50%;"}
 
-ルールは家族ごとに異なり、プロジェクトの変化や子どもの成長に伴い[イテレーション](/handbook/values/#iteration)が必要になるでしょう。子どもが仕事中の親とどのように、いつ関わることができるかのルールを設定することは非常に重要です。これは硬直的または厳しく感じるかもしれませんが、この領域での曖昧さは双方の失望につながるでしょう。これらのルールは、マネージャーやチームと共有し、日常業務に組み込むことができるため、働く親にとって力になります。
+ルールは家族ごとに異なり、プロジェクトの変化や子どもの成長に伴いイテレーションが必要になるでしょう。子どもが仕事中の親とどのように、いつ関わることができるかのルールを設定することは非常に重要です。これは硬直的または厳しく感じるかもしれませんが、この領域での曖昧さは双方の失望につながるでしょう。これらのルールは、マネージャーやチームと共有し、日常業務に組み込むことができるため、働く親にとって力になります。
 
 仕事が親と子どもの関わる時間をきれいに作り出すのを待つのは賢明ではありません。これらの基本ルールについて意図的に考え、マネージャーと協力してチームに伝え、尊重されるようにしましょう。
 
-### スケジュールの同期による勤務/育児のシフト
+### スケジュールの同期による勤務/育児のシフト {#workingparenting-shifts-via-synced-schedules}
 
 在宅で働く家族がいる共働き世帯の場合、子どもが把握できるようにスケジュールを同期することを検討してください。これにより負担を分担でき、子どもに明確さをもたらします。「育児シフト」をお互いの仕事カレンダーに入れ、それぞれの仕事チームに伝えると最も効果的です。
 
-### 会議/仕事に子どもを招待する
+### 会議/仕事に子どもを招待する {#invite-kids-to-meetingswork}
 
 適切であれば、子どもを会議に招待したり、仕事中に共有スペースで勉強/作業させることを検討してください。[会議は仕事についてのものであり、背景についてではない](meetings/#8-meetings-are-about-the-work-not-the-background)ことを忘れないでください。子どもが会議に乱入することは、世界で最高の気晴らしです。
 
-## Q: リモート従業員として子育てと仕事のバランスを取るためのヒントは何ですか？
+## Q: リモート従業員として子育てと仕事のバランスを取るためのヒントは何ですか？ {#q-what-are-some-tips-for-balancing-parenting-and-work-as-a-remote-employee}
 
 親は職場に豊富な知恵と経験をもたらし、多様で包括的な文化に貢献します。誰も親や[ケアラー](/handbook/company/culture/all-remote/)であることを謝罪するよう追い詰められるべきではありません。代わりに、あなたが体現する複数の役割を受け入れ、リモートワーカーであり親・ケアラーでもある GitLab の従業員からのアドバイスをいくつか参考にしましょう。
 
-### 支援的なバリューを作り、強化する
+### 支援的なバリューを作り、強化する {#create-and-reinforce-supportive-values}
 
-GitLab には、[家族と友人が最初、仕事は二番目](/handbook/values/#family-and-friends-first-work-second)という運営原則があります。私たちのダイバーシティ、インクルージョン&ビロンギングバリューには、[家族が歓迎されると感じられるようにする](/handbook/values/#make-family-feel-welcome)という運営原則が含まれています。
+GitLab には、家族と友人が最初、仕事は二番目という運営原則があります。私たちの Diversity, Inclusion & Belonging のバリューには、家族が歓迎されると感じられるようにするという運営原則が含まれています。
 
 親が組織のサポートなしに仕事と子育てを両立できる範囲には限りがあります。親が継続的に家族より仕事を選ぶよう追い詰められないよう、リーダーがバリューと職場の柔軟性を作ることは非常に重要です。
 
-### 共有のフォーラムを作る
+### 共有のフォーラムを作る {#create-a-forum-for-sharing}
 
 GitLab はリモートファーストの強制機能として、すべての Slack メッセージを 90 日後に期限切れにします。これは複数の目的を果たします。
 
 1. GitLab（[製品](/handbook/company/culture/all-remote/)）で仕事を始め、終わらせることを促します
-1. [非同期ワークフローへのバイアス](/handbook/values/#bias-towards-asynchronous-communication)を強化することで、チャットツールに関連した[不安](mental-health/)を軽減します
+1. 非同期ワークフローへのバイアスを強化することで、チャットツールに関連した[不安](mental-health/)を軽減します
 1. ツールの主な機能が[非公式なコミュニケーション](informal-communication/)であることをメンバーに思い出させます。親はそこで育児に関する課題と解決策について会話できます。（私たちはまず人間であり、次に同僚です！）
 
 GitLab には、親が質問したり、課題・ヒント・アドバイスを共有したり、推薦を提供できる Slack チャンネルがいくつかあります。これにはホームスクールプログラム、便利なアプリ、または世界的なパンデミック中に正気を保つための提案が含まれます。企業は同様のものを作ることを検討すべきです。GitLab の[Juicebox Chats](informal-communication/#juice-box-chats)は、COVID-19 での在宅中に子どもたちの文化的探求を促すための素晴らしいツールです。
@@ -114,9 +114,9 @@ GitLab には、親が質問したり、課題・ヒント・アドバイスを�
 
 また、写真、動画、ストーリーを共有するフォーラムとしても機能します（各自の個人的な快適さのレベルに応じて）。オールリモートチームとして、これらは同僚の世界を垣間見る窓となり、気持ちを高め、親同士の絆を深める大きな力になります。
 
-### スケジュールを共有する
+### スケジュールを共有する {#share-your-schedule}
 
-![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration.jpg)
+![GitLab のコラボレーションのイラスト](/images/all-remote/gitlab-collaboration.jpg)
 {style="max-width: 50%;"}
 
 仕事のカレンダーを家族と共有することを検討してください。これはデジタルカレンダーのサブスクリプション経由、共有の生活スペースにある仕事カレンダーを映し出すスクリーン、または冷蔵庫に貼った手書きのメモで行えます。
@@ -125,60 +125,61 @@ GitLab には、親が質問したり、課題・ヒント・アドバイスを�
 
 [ビジー/利用可能インジケーター](workspace/#busyavailable-indicators)は、いつ利用可能/不可能かを家族に視覚的に示す便利な方法です。
 
-## 会議なしの日と平日の休日
+## 会議なしの日と平日の休日 {#no-meeting-days-and-mid-week-days-off}
 
 チームリーダーには、会社全体（またはチーム全体）でリモートワーク中に子どもと過ごす時間をより多く確保するため、会議なしの日を試験的に導入することを検討してください。GitLab では、数人の親がスケジュールを変更し、平日に完全に休みを取っています。より多くの仕事が非同期で行われるリモート環境では、子どもに合わせた非従来型のスケジュールで働くことがより現実的です。
 
-### 非線形ワークデイを受け入れる
+### 非線形ワークデイを受け入れる {#embrace-a-non-linear-workday}
 
-![GitLab customer illustration](/images/all-remote/gitlab-customer-path.jpg)
+![GitLab の顧客のイラスト](/images/all-remote/gitlab-customer-path.jpg)
 {style="max-width: 50%;"}
 
 職場環境が許すなら、子どものスケジュールに合わせて勤務日を柔軟にすることを検討してください。これにより、通勤がある場合には不可能だった日中の瞬間に立ち会えるようになります。
 
 [非線形ワークデイを受け入れる](non-linear-workday/)について詳しく学びましょう。
 
-### Slack/Teams のステータスを使ってアドホックなニーズを管理する
+### Slack/Teams のステータスを使ってアドホックなニーズを管理する {#use-slackteams-statuses-to-manage-ad-hoc-needs}
 
-1〜2 クリックで、Slack または Microsoft Teams のステータスを変更して利用不可であることを示せます。停止サイン、家族の絵文字、または自分が快適に使えるものを検討してください。これにより、リモートの同僚が一目であなたが不在であることがわかります。家でどんな用事が発生したかを詳しく説明する必要はありません。シンプルなステータスアイコンが利用可能かどうかと共感を伝えるのに大いに役立ちます。
+1 〜 2 クリックで、Slack または Microsoft Teams のステータスを変更して利用不可であることを示せます。停止サイン、家族の絵文字、または自分が快適に使えるものを検討してください。これにより、リモートの同僚が一目であなたが不在であることがわかります。家でどんな用事が発生したかを詳しく説明する必要はありません。シンプルなステータスアイコンが利用可能かどうかと共感を伝えるのに大いに役立ちます。
 
-### カレンダーに空きスペースを最適化する
+### カレンダーに空きスペースを最適化する {#optimize-for-open-space-in-your-calendar}
 
-100%の予約は特に働く親にとってリスクです。（その数学的根拠については[Kingman の公式](https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/)を参照してください。）人生の浮き沈みは予測できません。結局のところ、[すべてを知ることは不可能](/handbook/values/#its-impossible-to-know-everything)です。常設のコミットメントで 100%になっているなら、人生/子どもの出来事に思慮深く反応したり、改善を計画したりする余裕がありません。
+100% の予約は特に働く親にとってリスクです。（その数学的根拠については[Kingman の公式](https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/)を参照してください。）人生の浮き沈みは予測できません。結局のところ、すべてを知ることは不可能です。常設のコミットメントで 100% になっているなら、人生/子どもの出来事に思慮深く反応したり、改善を計画したりする余裕がありません。
 
 ストレスは伝染しますが、[穏やかさ](mental-health/)も同様です。一定数の日次または週次ミーティングに達したら、ミーティングを断り、スケジュールが満杯であることを伝えることに厳しくなりましょう。
 
-### 予期しない事態に備える
+### 予期しない事態に備える {#expect-the-unexpected}
 
 計画と準備は素晴らしいですが、どんな親も知っているように、毎日は完全に回避することが不可能な課題をもたらします。マネージャーやチームとのオープンで正直な透明性のある会話は、障害がより少ないストレスや不安で対処されるために不可欠です。現実の状況をコミュニケーションすることは、チームを軌道に乗せ、締め切りやマイルストーンを適切に調整するために重要です。
 
-## Q: 子どもと在宅勤務している従業員をどう管理すればよいですか？
+## Q: 子どもと在宅勤務している従業員をどう管理すればよいですか？ {#q-how-do-you-manage-employees-working-from-home-with-kids}
 
-[優れたリモートマネージャーになる方法](being-a-great-remote-manager/)の多くは、あらゆるリモートワーク状況に適用されます。しかし、真に優れたマネージャーは、従業員の仕事/家庭/生活状況に適応し、それに応じて[イテレーション](/handbook/values/#iteration)する意欲を持っています。
+[優れたリモートマネージャーになる方法](being-a-great-remote-manager/)の多くは、あらゆるリモートワーク状況に適用されます。しかし、真に優れたマネージャーは、従業員の仕事/家庭/生活状況に適応し、それに応じてイテレーションする意欲を持っています。
 
 ケアを担う従業員のモチベーションを高めるためのベストプラクティスには以下があります。
 
-- [活動ではなくインパクト](/handbook/values/#measure-impact-not-activity)を優先する
+- 活動ではなくインパクトを優先する
 - 一定の勤務時間を持つことや作業時間の申告を要求しない
 - 長時間労働や週末の仕事を促進または称賛しない
 - チームワークを奨励する
 - 頻繁に[ありがとう](/handbook/communication/#say-thanks)と言う
 
-## Q: 在宅勤務での子育てに関する最終的な考えは？
+## Q: 在宅勤務での子育てに関する最終的な考えは？ {#q-what-are-some-final-thoughts-on-work-from-home-parenting}
 
 家で親やケアラーとして働くことは不可能ではありません。むしろ避けられないことです。GitLab チームメンバーからの次の 2 つのエピソードは、両方の世界を最大限に活用する方法を理解するのに役立ちます。
 
 > 私にとってうまくいったのは、GitLab を私の生活に統合することであり、その逆ではありません。カレンダーに仕事の時間と家族の時間を明確に設定しています。GitLab の[推薦事項](/handbook/communication/#google-calendar)に従い、私のカレンダーは誰でも見ることができ、明確に以下のような時間が設定されています: `kids test prep`、`visual therapy for one`、`judo pick-up`、その他仕事外の予定。これにより、チームメンバーがこれらの時間に会議を入れるのを防ぎます。
 >
-> 誰かが家族や個人の時間に会議を入れてきた場合、非常に緊急でそれをブロックしている場合を除き、断ることに自信を持っています（最初に必ず新しい時間を提案し、その後に家族の時間を会議に使うようにしています）。また、人々があなたの仕事時間外に繰り返し予定を入れてくる場合は、[それを返答して指摘](/handbook/values/#transparency)し、お互いにとって適切な代替時間を見つけられるかどうかを確認することをお勧めします。— [*Nadia V.*](https://gitlab.com/Vatalidis)
+> 誰かが家族や個人の時間に*実際に*会議を入れてきた場合、非常に緊急で、私がその進行を妨げている場合を除き、断ることに自信を持っています（家族の時間を会議に使う前に、必ずまず別の時間を提案します）。また、人々があなたの仕事時間外に繰り返し予定を入れてくる場合は、それを返答して指摘し、お互いにとって適切な代替時間を見つけられるかどうかを確認することをお勧めします。— [*Nadia V.*](https://gitlab.com/Vatalidis)
 >
-> GitLab に入社したとき、人々のカレンダーに`baby time`、`homework with kids`、`date night`などが入っているのを見て素晴らしいと思いました。[オンボーディング](getting-started/)の一部に[コーヒーチャット](informal-communication/#coffee-chats)があったので、チャットをスケジュールしようとするとカレンダー上でこれらの「ミーティング」を見ていました。これは私たちの[家族ファーストの運営原則](/handbook/values/#family-and-friends-first-work-second)を強化し、これらの活動を正常化しました。私も同様の境界線を設定でき、カレンダーに空の 1 時間を持つためだけに就寝時間などを犠牲にしなくてよいと理解するのに役立ちました。— [*Seth B.*](https://gitlab.com/sethgitlab)
+> GitLab に入社したとき、人々のカレンダーに`baby time`、`homework with kids`、`date night`などが入っているのを見て素晴らしいと思いました。[オンボーディング](getting-started/)の一部に[コーヒーチャット](informal-communication/#coffee-chats)があったので、チャットをスケジュールしようとするとカレンダー上でこれらの「ミーティング」を見ていました。これは私たちの家族ファーストの運営原則を強化し、これらの活動を正常化しました。私も同様の境界線を設定でき、カレンダーに空の 1 時間を持つためだけに就寝時間などを犠牲にしなくてよいと理解するのに役立ちました。— [*Seth B.*](https://gitlab.com/sethgitlab)
 
+<!-- From family time to unforgettable adventures, there are [many great stories](/handbook/company/culture/all-remote/) of how remote work has impacted the lives of GitLab team members and their families around the world. -->
 家族の時間から忘れられない冒険まで、リモートワークが GitLab チームメンバーとその家族の生活に与えた影響についての多くの素晴らしい話があります。
 
-## その他のリソース
+## その他のリソース {#other-resources}
 
-### 働く親からの GitLab ブログ
+### 働く親からの GitLab ブログ {#gitlab-blogs-from-working-parents}
 
 1. [GitLab で働く親であることはどんな感じ？](https://about.gitlab.com/blog/2016/04/08/remote-working-parents/)
 1. [世界の育児/産休 - あなたの国は？](https://about.gitlab.com/blog/2019/07/18/how-is-it-being-a-new-mom-working-for-gitlab/)
@@ -187,7 +188,7 @@ GitLab には、親が質問したり、課題・ヒント・アドバイスを�
 1. [子どもがいるリモートワークで気を付ける 5 つのこと](https://about.gitlab.com/blog/2019/08/08/remote-kids-part-four/)
 1. [GitLab 育児休暇・復帰ツールキット](/handbook/total-rewards/benefits/parental-leave-toolkit)
 
-### 友人やパートナーからのガイド
+### 友人やパートナーからのガイド {#guides-from-friends-and-partners}
 
 1. [Doist のリモートワーク育児ガイド](https://todoist.com/inspiration/remote-working-parents-survival-guide)
 1. [Trello: 親向けのリモートワークガイド](https://www.atlassian.com/blog/distributed-work/distributed-work-guide-for-parents)
@@ -195,7 +196,7 @@ GitLab には、親が質問したり、課題・ヒント・アドバイスを�
 1. [Buffer: リモートチームからの子どもがいる家での作業ヒント](https://buffer.com/resources/integrating-work-family-21-tips-working-home-kids/)
 1. [Autonomous: 在宅勤務と子育てのバランスをとる方法](https://www.autonomous.ai/ourblog/how-to-balance-working-at-home-and-parenting)
 
-### Crucial Conversations リソース
+### Crucial Conversations リソース {#crucial-conversations-resources}
 
 - [Crucial Conversations](/handbook/leadership/crucial-conversations)の`How Working Moms can Do it All`というタイトルの動画:
 
@@ -213,7 +214,7 @@ GitLab には、親が質問したり、課題・ヒント・アドバイスを�
 {{% include "includes/is_this_advice_any_good_remote.md" %}}
 
 
-## 学んだことを共有する
+## 学んだことを共有する {#contribute-your-lessons}
 
 GitLab は、オールリモートが[仕事の未来](remote-vision/)であり、リモート企業にはそれを実践している他の組織に道を示す共同責任があると考えています。あなたまたはあなたの会社が世界全体に役立つ経験をお持ちであれば、[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)を作成してこのページに貢献することをご検討ください。
 

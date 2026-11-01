@@ -1,16 +1,16 @@
 ---
-title: "Application Securityレビュープロセス"
+title: "Application Security レビュープロセス"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:53:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-03T10:10:23+01:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 <!-- markdownlint-disable MD052 -->
 
-このページでは、AppSecエンジニア向けのアプリケーションセキュリティレビュープロセスについて詳しく説明します。
-アプリケーションセキュリティレビューの目的は、リスクを軽減し、最終的に会社のミッションを成功させるために、GitLabが開発またはデプロイしたアプリケーションの脆弱性を予防的に発見し緩和することです。
+このページでは、AppSec エンジニア向けのアプリケーションセキュリティレビュープロセスについて詳しく説明します。
+アプリケーションセキュリティレビューの目的は、リスクを軽減し、最終的に会社のミッションを成功させるために、GitLab が開発またはデプロイしたアプリケーションの脆弱性を予防的に発見し緩和することです。
 
 アプリケーションセキュリティレビューには、以下のすべてまたは一部のステージが含まれる場合があります。
 
@@ -19,9 +19,9 @@ lastmod: "2026-03-03T10:10:23+01:00"
 - 動的テスト
 
 各ステージの結果は、次のステージで実施するレビューに反映されます。
-理想的には、すべての新機能が何らかの脅威モデリングを受け、後者2つのステージはリスクプロファイルに基づいて実施されます。すでに開発中または本番環境にある機能もAppSecレビューを受けることができます。実施されるテストは状況に依存します。
+理想的には、すべての新機能が何らかの脅威モデリングを受け、後者 2 つのステージはリスクプロファイルに基づいて実施されます。すでに開発中または本番環境にある機能も AppSec レビューを受けることができます。実施されるテストは状況に依存します。
 
-### プロセス概要
+### プロセス概要 {#process-overview}
 
 ```plantuml
 @startuml AppSec_VSM_Horizontal
@@ -71,15 +71,15 @@ TM --> S4
 @enduml
 ```
 
-### 機能を所有するチームにとってアプリケーションセキュリティレビューはどういう意味を持つか?
+### 機能を所有するチームにとってアプリケーションセキュリティレビューはどういう意味を持つか? {#what-does-an-application-security-review-mean-for-the-team-owning-the-feature}
 
-アプリケーションセキュリティチームによって行われるセキュリティレビューはノンブロッキングです。
+application security team によって行われるセキュリティレビューはノンブロッキングです。
 つまり、機能を所有するチームは引き続き開発計画を進めるべきであり、想定される時間投資は質問に非同期で回答するために必要な時間に限定されます。
 
 セキュリティ上の問題が発見された場合は、[標準プロセス](/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/)に従ってトリアージされます。
-アプリケーションセキュリティレビューにより、第三者によって発見される前にGitLabに存在する脆弱性を発見できます。新機能のレビューが行われる場合、リリースに含まれる前に脆弱性を捕捉できる可能性もあります。リスクを減らし、特定の機能の脅威モデルをよりよく理解し、脆弱性を予防的に緩和できるようになります。
+アプリケーションセキュリティレビューにより、第三者によって発見される前に GitLab に存在する脆弱性を発見できます。新機能のレビューが行われる場合、リリースに含まれる前に脆弱性を捕捉できる可能性もあります。リスクを減らし、特定の機能の脅威モデルをよりよく理解し、脆弱性を予防的に緩和できるようになります。
 
-## 何をレビューすべきか?
+## 何をレビューすべきか? {#what-should-be-reviewed}
 
 アプリケーションセキュリティレビューキューは、セキュリティレビューのためのアプリケーション機能の優先キューです。優先度は `priority::1` (Critical)から `priority::4` (Low/Backlog)までの範囲があります。
 
@@ -88,65 +88,65 @@ TM --> S4
 - すべての主要な新機能
 - 繰り返し脆弱性が発生した機能
 - 認可または認証に関連する機能
-- [Red または Orangeデータ](https://docs.google.com/document/d/15eNKGA3zyZazsJMldqTBFbYMnVUSQSpU14lo22JMZQY/edit)を扱う機能
+- [Red または Orange データ](https://docs.google.com/document/d/15eNKGA3zyZazsJMldqTBFbYMnVUSQSpU14lo22JMZQY/edit)を扱う機能
 - 暗号やその他のデータ保護ソリューションを扱う機能
-- [secure coding guidelines](https://docs.gitlab.com/ee/development/secure_coding_guidelines.html)で言及されているトピックに触れる機能
+- [セキュアコーディングガイドライン](https://docs.gitlab.com/ee/development/secure_coding_guidelines.html)で言及されているトピックに触れる機能
 
-考え方は、脆弱性のリスクが高いと判断された機能を捕捉することです。すべての機能、特に `priority::4` のIssueがフルレビューを受けることはおそらくないでしょう。しかし、リスクの高いものを捕捉することで、追加の統計情報を追跡できます。例えば、bug bountyプログラムで報告された関連する脆弱性の数などです。このデータは、優先度のイテレーションに役立ちます。
+考え方は、脆弱性のリスクが高いと判断された機能を捕捉することです。すべての機能、特に `priority::4` の Issue がフルレビューを受けることはおそらくないでしょう。しかし、リスクの高いものを捕捉することで、追加の統計情報を追跡できます。例えば、バグバウンティプログラムで報告された関連する脆弱性の数などです。このデータは、優先度のイテレーションに役立ちます。
 
-### 単一のIssue/MRのPing
+### 単一の Issue/MR の通知 {#single-issue--mr-pings}
 
-トリアージローテーションのエンジニアが対応できる単一のIssue/MRのPingについては、別のIssueは必要ありません。このプロセスは主に時間経過に伴う機能を追跡するためのものです。それを念頭に置いて、Pingが追加のレビューを必要とする場合は、Issueを作成してください。
+トリアージローテーションのエンジニアが対応できる単一の Issue/MR の通知については、別の Issue は必要ありません。このプロセスは主に時間経過に伴う機能を追跡するためのものです。それを念頭に置いて、通知が追加のレビューを必要とする場合は、Issue を作成してください。
 
 ### キューへの機能追加 / セキュリティレビューのリクエスト {#adding-features-to-the-queue--requesting-a-security-review}
 
-アプリケーションセキュリティレビュープロセスを追跡するために別のIssueが使用されます。このプロセスは、元のIssue/マージリクエストよりも長く続く可能性があるためです。
+アプリケーションセキュリティレビュープロセスを追跡するために別の Issue が使用されます。このプロセスは、元の Issue/マージリクエストよりも長く続く可能性があるためです。
 
-プロセスは、AppSecエンジニアがバックログに何かを追加する場合と、チームメンバーがGitLab機能のレビューをリクエストする場合で同じです。
+プロセスは、AppSec エンジニアがバックログに何かを追加する場合と、チームメンバーが GitLab 機能のレビューをリクエストする場合で同じです。
 
-1. [Appsec Reviews Issueトラッカー](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/issues)で、[AppSecレビューテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/-/issues/new?issueable_tempalte=AppSec%20Review)を使用してIssueを作成します
+1. [Appsec Reviews Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/issues)で、[AppSec レビューテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/-/issues/new?issueable_tempalte=AppSec%20Review)を使用して Issue を作成します
     1. タイトルを機能のユニークな名前に設定する
 1. テンプレートの説明に従ってください
 
-### 優先度の割り当て
+### 優先度の割り当て {#assigning-priority}
 
-各Issueには、チームメンバーがテストの計画を立てるのに役立つ優先度が割り当てられている必要があります。優先度の決定は、Issueを作成するアプリケーションセキュリティエンジニアが利用可能なデータに基づいて行います。適切な優先度がわからない場合は、保守的に判断し、より高い優先度を割り当ててください。他のチームメンバーからのフィードバックがあれば、いつでも調整できます。
+各 Issue には、チームメンバーがテストの計画を立てるのに役立つ優先度が割り当てられている必要があります。優先度の決定は、Issue を作成するアプリケーションセキュリティエンジニアが利用可能なデータに基づいて行います。適切な優先度がわからない場合は、保守的に判断し、より高い優先度を割り当ててください。他のチームメンバーからのフィードバックがあれば、いつでも調整できます。
 
 優先度のガイドライン(網羅的ではないので、追加してください)
 
 | 優先度 | 基準 |
 |----------|----------|
-| priority::1       | Redデータ、AuthN/AuthZ、暗号、severity::1単独、severity::2の繰り返し脆弱性 |
-| priority::2       | Orangeデータ、severity::2単独 |
-| priority::3       | Yellowデータ |
+| priority::1       | Red データ、AuthN/AuthZ、暗号、severity::1 単独、severity::2 の繰り返し脆弱性 |
+| priority::2       | Orange データ、severity::2 単独 |
+| priority::3       | Yellow データ |
 | priority::4       | 標準的なセキュアプラクティスのみが必要 |
 
-### レビューに脅威モデリングを含める
+### レビューに脅威モデリングを含める {#including-threat-modeling-in-the-review}
 
-レビュー中に[脅威モデリング](threat-modeling)を行うべき場合は、元のIssueまたはエピックとAppSecレビューIssueに `threat model::needed` ラベルを追加してください。これにより、GitLab全体で脅威モデリングの採用を追跡できます。脅威モデリングのステップが完了したら、関連するすべてのIssueとエピックに `threat model::done` ラベルを追加する必要があります。脅威モデリングのプロセスは[専用のハンドブックページ](runbooks/threat-modeling)でさらに定義されています。
+レビュー中に[脅威モデリング](threat-modeling)を行うべき場合は、元の Issue またはエピックと AppSec レビュー Issue に `threat model::needed` ラベルを追加してください。これにより、GitLab 全体で脅威モデリングの採用を追跡できます。脅威モデリングのステップが完了したら、関連するすべての Issue とエピックに `threat model::done` ラベルを追加する必要があります。脅威モデリングのプロセスは[専用のハンドブックページ](runbooks/threat-modeling)でさらに定義されています。
 
-### 対話の定量化
+### 対話の定量化 {#quantifying-interactions}
 
-エンジニアリングチームは、アプリケーションセキュリティチームメンバーが行った対話を定量化し、これらの対話のステータスを追跡するために、複数のラベルを作成しました。
-アプリケーションセキュリティチームメンバーは、以下の条件に従って対話のステータスに応じて適切なラベルを追加する必要があります。
+engineering team は、application security team メンバーが行った対話を定量化し、これらの対話のステータスを追跡するために、複数のラベルを作成しました。
+application security team メンバーは、以下の条件に従って対話のステータスに応じて適切なラベルを追加する必要があります。
 
-- `~sec-planning::in-progress`: IssueまたはMRがレビュー中。
+- `~sec-planning::in-progress`: Issue または MR がレビュー中。
 - `~sec-planning::pending-followup`: アプリケーションセキュリティがレビューのフォローアップを期待。
 - `~sec-planning::complete`: コメント付きでレビュー完了。
 - `~sec-planning::no-action`: レビュー完了でアクション不要。
 
-## 内部アプリケーションセキュリティレビュー
+## 内部アプリケーションセキュリティレビュー {#internal-application-security-reviews}
 
-顧客や他の機密データを保有する部門によって構築(または大幅に変更)されたシステムについて、Securityチームはシステムが堅牢化されていることを保証するために、該当するアプリケーションセキュリティレビューを実行する必要があります。セキュリティレビューは、脆弱性を減らし、よりセキュアな製品を作成するのに役立つことを目的としています。
+顧客や他の機密データを保有する部門によって構築(または大幅に変更)されたシステムについて、Security Team はシステムが堅牢化されていることを保証するために、該当するアプリケーションセキュリティレビューを実行する必要があります。セキュリティレビューは、脆弱性を減らし、よりセキュアな製品を作成するのに役立つことを目的としています。
 
-### セキュリティレビューをいつリクエストすべきか?
+### セキュリティレビューをいつリクエストすべきか? {#when-to-request-a-security-review}
 
-以下の短いアンケートは、[アプリケーションセキュリティチーム](https://gitlab.com/gitlab-com/gl-security/product-security/appsec)に関与してもらうべきかをすばやく判断するのに役立ちます。
+以下の短いアンケートは、[application security team](https://gitlab.com/gitlab-com/gl-security/product-security/appsec)に関与してもらうべきかをすばやく判断するのに役立ちます。
 
 変更が以下のいずれかを行う場合:
 
-1. あらゆる種類の[REDまたはORANGEデータ](/handbook/security/policies_and_standards/data-classification-standard/)の処理、保存、または転送
-1. 変更の目的が、機密性、整合性、認証、否認防止などの**暗号機能**を必要とする場合、[アプリケーションセキュリティチーム](https://gitlab.com/gitlab-com/gl-security/product-security/appsec)によってレビューされる*べき*です。
+1. あらゆる種類の[RED または ORANGE データ](/handbook/security/policies_and_standards/data-classification-standard/)の処理、保存、または転送
+1. 変更の目的が、機密性、整合性、認証、否認防止などの**暗号機能**を必要とする場合、[application security team](https://gitlab.com/gitlab-com/gl-security/product-security/appsec)によってレビューされる*べき*です。
 1. 顧客向けアプリケーションを新しい環境にデプロイ
 1. 既存のセキュリティコントロールへの変更
 1. パイプラインのセキュリティチェックまたはスキャンの変更
@@ -155,40 +155,40 @@ TM --> S4
 1. ユーザー提供データを扱う
 1. 暗号機能に触れる。詳細は[GitLab Cryptography Standard](/handbook/security/policies_and_standards/cryptographic-standard/)を参照
 1. 権限モデルに触れる
-1. 新しいセキュリティコントロールの実装(例: 特定の保護のための新しいライブラリ、HTTPヘッダーなど)
-1. 新しいAPIエンドポイントの公開、または既存のものの変更
+1. 新しいセキュリティコントロールの実装(例: 特定の保護のための新しいライブラリ、HTTP ヘッダーなど)
+1. 新しい API エンドポイントの公開、または既存のものの変更
 1. 新しいデータベースクエリの導入
 1. 以下のために正規表現を使用する:
 
    - ユーザー提供データの検証
    - 認可および認証に関連する判断
 
-1. 機密データ(PIIなど)を操作または表示できる新機能。詳細は[Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)を参照
-1. トークン、暗号鍵、認証情報、PIIなどの機密データを一時ストレージ/ファイル/DBに永続化、機密データ(PIIなど)の操作または表示。詳細は[Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)を参照
+1. 機密データ(PII など)を操作または表示できる新機能。詳細は[Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)を参照
+1. トークン、暗号鍵、認証情報、PII などの機密データを一時ストレージ/ファイル/DB に永続化、機密データ(PII など)の操作または表示。詳細は[Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)を参照
 
 `@gitlab-com/gl-security/product-security/appsec` に依頼してください。
 
-### セキュリティレビューをどのようにリクエストするか?
+### セキュリティレビューをどのようにリクエストするか? {#how-to-request-a-security-review}
 
-変更の重要度に応じて、セキュリティレビューをリクエストする方法は2つあります。個別のマージリクエストと、より大規模なイニシアチブに分かれます。
+変更の重要度に応じて、セキュリティレビューをリクエストする方法は 2 つあります。個別のマージリクエストと、より大規模なイニシアチブに分かれます。
 
-#### 個別のマージリクエストまたはIssue
+#### 個別のマージリクエストまたは Issue {#individual-merge-requests-or-issues}
 
-マージリクエストやIssueで `/cc @gitlab-com/gl-security/product-security/appsec` でアプリケーションセキュリティチームを巻き込んでください。
+マージリクエストや Issue で `/cc @gitlab-com/gl-security/product-security/appsec` で application security team を巻き込んでください。
 
 これらのレビューは、より速く、より軽量で、参入障壁が低いことを意図しています。
 
-#### 大規模なイニシアチブ
+#### 大規模なイニシアチブ {#larger-scale-initiatives}
 
-開始するには、[内部アプリケーションセキュリティレビューリポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/issues)に[Appsec Reviewテンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/-/issues/new?issueable_tempalte=AppSec%20Review)を使用してIssueを作成してください。完全なプロセスは[こちら](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)で確認できます。
+開始するには、[内部アプリケーションセキュリティレビューリポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/issues)に[Appsec Review テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/-/issues/new?issueable_tempalte=AppSec%20Review)を使用して Issue を作成してください。完全なプロセスは[こちら](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)で確認できます。
 
 これのいくつかのユースケースは、エピック、マイルストーン、コードベース全体での共通のセキュリティ脆弱性のレビュー、またはより大きな機能のためのものです。
 
-### 進めるためにセキュリティ承認は必要か?
+### 進めるためにセキュリティ承認は必要か? {#is-security-approval-required-to-progress}
 
-いいえ、コード変更の進行には、セキュリティ承認は*必要ありません*。ノンブロッキングレビューは、コードを高速にリリースし続ける自由を可能にし、[イテレーションと効率性](/handbook/values/#iteration)の価値観により近く沿うものです。これらはゲートではなくガードレールとして機能します。
+いいえ、コード変更の進行には、セキュリティ承認は*必要ありません*。ノンブロッキングレビューは、コードを高速にリリースし続ける自由を可能にし、イテレーションと効率性の価値観により近く沿うものです。これらはゲートではなくガードレールとして機能します。
 
-### セキュリティレビューをリクエストする際に何を提供すべきか?
+### セキュリティレビューをリクエストする際に何を提供すべきか? {#what-should-i-provide-when-requesting-a-security-review}
 
 レビューを高速化するため、以下のすべてまたは一部を提供することを推奨します。
 
@@ -199,17 +199,17 @@ TM --> S4
 - セキュリティ上の懸念と発生しうる最悪のシナリオ。
 - テスト環境。
 
-### セキュリティプロセスはどのようなものか?
+### セキュリティプロセスはどのようなものか? {#what-does-the-security-process-look-like}
 
 大規模な内部アプリケーションセキュリティレビューの現在のプロセスは[こちら](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)で確認できます
 
-### 私の変更はセキュリティによってレビューされたが、私のプロジェクトは今セキュアか?
+### 私の変更はセキュリティによってレビューされたが、私のプロジェクトは今セキュアか? {#my-changes-have-been-reviewed-by-security-so-is-my-project-now-secure}
 
 セキュリティレビューは、コード変更がセキュアであることの証明や認定ではありません。これらはベストエフォートであり、レビュー後にも追加の脆弱性が存在する可能性があります。
 
 ここで重要なのは、アプリケーションセキュリティレビューは一度きりのものではなく、レビュー対象のアプリケーションが進化するにつれて継続的に行われる可能性があるということです。
 
-### サードパーティライブラリを使用しているか?
+### サードパーティライブラリを使用しているか? {#using-third-party-libraries-}
 
 サードパーティライブラリを使用している場合は、以下を確認してください。
 
@@ -217,7 +217,7 @@ TM --> S4
 1. あなたのチームがセキュリティパッチが公開された際にこのライブラリをサポートおよびアップグレードする能力を持っている
 1. メンテナーがセキュリティポリシーを持っている
 
-### MRレビューガイドライン
+### MR レビューガイドライン {#mr-review-guidelines}
 
 マージリクエストのレビューを完了する際は、何をカバーしたか、レビューしたアイテムに関する結論をドキュメント化してください。
 
@@ -232,7 +232,7 @@ TM --> S4
    - コードの読解と分析
    - ローカルテストまたはコード実行
    - 自動化ツールやリンターの使用
-   - 関連するIssueやドキュメントとの相互参照
+   - 関連する Issue やドキュメントとの相互参照
 
 3. **懸念と観察**: レビュー中に特定した問題、潜在的な問題、改善の余地のある領域をドキュメント化する。これには以下が含まれます:
    - セキュリティ脆弱性
@@ -252,4 +252,4 @@ TM --> S4
 - 将来の参照のためのレビュープロセスの明確な記録
 - レビュー中に提起された懸念や質問のより効率的な解決
 
-十分に文書化されたMRレビューは、即時のコードレビュープロセスを助けるだけでなく、長期的にプロジェクトの全体的な品質と保守性に貢献します。
+十分に文書化された MR レビューは、即時のコードレビュープロセスを助けるだけでなく、長期的にプロジェクトの全体的な品質と保守性に貢献します。

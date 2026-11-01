@@ -1,18 +1,18 @@
 ---
 title: Salesforce で社内サポートをリクエストする
 upstream_path: /handbook/sales/field-operations/requesting-internal-support/
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-translated_at: "2026-10-10T21:04:20.427762+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:20:25.753128+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-09T17:05:37Z"
+lastmod: "2026-10-27T11:53:02-05:00"
 ---
 
-## サポートを得る方法
+## サポートを得る方法 {#how-to-get-help}
 
 Salesforce で商談やアカウントに取り組む際にヘルプを得る方法に関する、GitLab 社内ユーザー向けのワークフローです。
 
-### このページの内容
+### このページの内容 {#contents-of-this-page}
 
 - 概要
 - 影響を受けるチーム
@@ -21,7 +21,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
 - バグの報告や修正の依頼方法
 - レポートとダッシュボード
 
-#### 概要
+#### 概要 {#overview}
 
 **背景**: 従来、GitLab は Salesforce での社内リクエストを処理するために Chatter を使用していました。ユーザーはサポートのために、ユーザーグループ（@sales-support、@billing、@renewalops、@partneroperations など）に Chatter メッセージを送信できました。このプロセスにより、四半期ごとに数千件のケースが作成されていましたが、システムには非効率性がありました。
 
@@ -40,7 +40,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
 - **差別化された優先順位付け**: 緊急のリクエストは、より迅速な対応のためにフラグが立てられます。
 - **完全な情報**: リクエスト者は必要な詳細をすべて入力する必要があり、フォローアップの必要性が減ります。
 
-#### 社内サポートの依頼
+#### 社内サポートの依頼 {#requesting-internal-support}
 
 以下のチームが社内サポートリクエストの処理に対応しています。
 
@@ -62,9 +62,9 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
   - Legal ケースは、Salesforce の商談からページ上部の「Legal Request」ボタンを選択して作成できます。
   - 貿易コンプライアンス管理のためにロックされたアカウントのレビューには @Legal
 - [CS サポートの依頼](/handbook/customer-experience/csm/segment/cse/pooled/)
-  - 商談で、ドロップダウンメニューに移動して「CS Support」を選択し、以下のいずれかを依頼します。
-    - CSE Help（エスカレーションではない）
-    - At-Risk Account Help（CSM の赤アカウントと CSM/CSE エスカレーション）
+  - 商談で、ドロップダウンメニューに移動して「CS Help」を選択し、以下のいずれかを依頼します。
+    - CSE Help (NOT Escalations)
+    - Escalations (CSM/CSE Accounts)
 - [GitLab Customer Support](/handbook/support/internal-support/)
 - Enterprise Applications
   - [Enterprise Applications - CRM Team](/handbook/business-technology/enterprise-applications/entapps-crm/#i-classfas-fa-users-idbiz-tech-iconsi-how-we-operate)
@@ -73,7 +73,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
   - Chatter @revenue
 - [Compass](https://app.serval.com/new-request)（あなたの Okta 内）
 
-#### Salesforce のワークフロー
+#### Salesforce のワークフロー {#salesforce-workflow}
 
 社内サポートのリクエストを送信する方法は以下のとおりです。
 
@@ -86,7 +86,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
 
 **注**: 送信前に、ワークフロー内の **「Previous」** ボタンをクリックして戻り、選択を変更できます。
 
-#### 社内ケースのナビゲーション
+#### 社内ケースのナビゲーション {#navigating-an-internal-case}
 
 リクエストを送信したら、Salesforce でケースに移動する方法は以下のとおりです。
 
@@ -129,22 +129,22 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
   - ケースに関する追加情報や更新を提供できる場所です。
   - **注**: Chatter フィードを通じてメッセージを送信できるのは個々のユーザーに対してのみで、グループ全体には送信できません。
 
-#### バグの報告や修正の依頼方法
+#### バグの報告や修正の依頼方法 {#how-to-report-bugs-or-request-fixes}
 
 社内サポートチーム向けのケース作成やフォームで問題が発生した場合は、OKTA タイルからアクセスできる [Compass アプリケーション](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass)を使用してリクエストを送信してください。
 
 1. Compass で **IT** を選択します。
 2. **Break/Fix Request** タイプをクリックします。
 3. 受付フォームが開き、以下のフィールドを入力する必要があります。
-   - ヘルプが必要な **アプリケーション**: Salesforce
+   - ヘルプが必要な **Which application**: Salesforce
    - **Short description**: 問題の詳細を追加します。
    - **Urgency**: 緊急度を選択します。
-   - **問題を説明** してください: 関連する追加情報を追加します。
+   - **describe your issue**: 関連する追加情報を追加します。
    - **Attachment**: エラーメッセージのスクリーンショットを送信します。
    - **オプション**: チームメンバーを「Watcher」としてチケットに追加できます。
 4. フォーム右側の「Submit」ボタンをクリックしてリクエストを送信します。
 
-#### レポートとダッシュボード
+#### レポートとダッシュボード {#reports--dashboards}
 
 **追加予定:**
 
@@ -152,7 +152,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
 
 この新しいワークフローは、サポートリクエストプロセスを合理化し、チーム間の効率とコミュニケーションを向上させることを目指しています。ご質問がある場合やさらなる支援が必要な場合は、社内リソースを参照するか、適切なチームに連絡してください。
 
-#### リクエストのルーティング
+#### リクエストのルーティング {#request-routing}
 
 - リクエストに応じて連絡すべき相手は以下のとおりです。
 

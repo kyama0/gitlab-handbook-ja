@@ -3,18 +3,18 @@ title: ヘルプの求め方
 category: Handling tickets
 description: チケットに取り組む際に、サポートエンジニアがヘルプを求める方法のワークフロー。
 upstream_path: /handbook/support/workflows/how-to-get-help/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:21:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T11:27:49+08:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## チケットに対するヘルプを求める
+## チケットに対するヘルプを求める {#getting-help-on-a-ticket}
 
-[チケットに取り組む](/handbook/support/workflows/working-on-tickets)際、コラボレーションは非常に重要です。特に複雑な問題のトラブルシューティングや、自分の経験範囲を超える技術領域に関わる場合はそうです。ヘルプを求めるということは、[低い恥のレベル](/handbook/values/#low-level-of-shame-when-dogfooding)を持つことを意味し、また、顧客の問題解決に取り組んでいることから、顧客を最優先にしていることを示します。
+[チケットに取り組む](/handbook/support/workflows/working-on-tickets)際、コラボレーションは非常に重要です。特に複雑な問題のトラブルシューティングや、自分の経験範囲を超える技術領域に関わる場合はそうです。ヘルプを求めるということは、低い恥のレベルを持つことを意味し、また、顧客の問題解決に取り組んでいることから、顧客を最優先にしていることを示します。
 
-### 良い質問をする
+### 良い質問をする {#ask-good-questions}
 
 良い質問をすることは、必要なヘルプを得るための鍵です。迷ったときは、自分にこう問いかけてください:
 
@@ -33,13 +33,13 @@ lastmod: "2026-05-22T11:27:49+08:00"
 
 最後の振り返りの機会として、GitLab の顧客がこの質問をしていると想像してみてください。回答を作り始めるのに十分な詳細があるか、それとももっと情報を集める必要があるか?
 
-しばしば、質問を書き出すことは [ラバーダックデバッグ](https://en.wikipedia.org/wiki/Rubber_duck_debugging) のように機能します。つまり、上記の項目について考える行為が、不足している情報を浮き彫りにしたり、これまで調査していなかった事項を調べさせたり、解決策に直接導いたりすることがあります。
+しばしば、質問を書き出すことは [ラバーダックデバッグ](https://en.wikipedia.org/wiki/Rubber_duck_debugging)のように機能します。つまり、上記の項目について考える行為が、不足している情報を浮き彫りにしたり、これまで調査していなかった事項を調べさせたり、解決策に直接導いたりすることがあります。
 
 {{% alert color="info" %}}
 情報量が多いほうが役に立ちますが、補足情報が多すぎると混乱を招くことがあります。最初の投稿では、上記の質問を満たす程度の情報を提供してください。ログやスクリーンショットなどの追加詳細は、いつでもスレッドに追加できます！
 {{% /alert %}}
 
-### ヘルプを求めるワークフロー
+### ヘルプを求めるワークフロー {#how-to-get-help-workflow}
 
 チケットで行き詰まった場合、以下のワークフローは、サポートエンジニアがチケットを解決へと進めるために利用可能なすべてのリソースに気づき、活用するのに役立つことを目指しています。このワークフローでは、必要なヘルプを得るために頼れるいくつかの一般的なリソースをリストアップしています。
 
@@ -49,33 +49,33 @@ lastmod: "2026-05-22T11:27:49+08:00"
 - 顧客の問い合わせはサポート対象外だが、解決を期待されている。
 - 開発エキスパートの相談が必要な深い技術的問題がある。
 
-次に、ブロッキングを解消するために以下のオプションを検討してください。そして、[ブロックを解消するためのエスカレーション](/handbook/values/#escalate-to-unblock)は Results の運用原則であることを忘れないでください。
+次に、ブロッキングを解消するために以下のオプションを検討してください。そして、ブロックを解消するためのエスカレーションは Results の運用原則であることを忘れないでください。
 
-#### チケットを仲間のグループに持ち込む
+#### チケットを仲間のグループに持ち込む {#bring-the-ticket-before-a-group-of-peers}
 
 他のサポートエンジニアは、チケットを支援する素晴らしいリソースです。仲間からヘルプを得るには、以下のいずれかを試してみてください:
 
-1. ペアリングセッションをスケジュールするか、クラッシュセッションやヘルプセッションに参加します。これは、ヘルプを得て同時に学ぶ最も速い方法であることが多いです。ガイダンスについては [ペアリングセッションを始める](pairing-sessions.md#getting-started-with-pairing-sessions) を参照してください。
+1. ペアリングセッションをスケジュールするか、クラッシュセッションやヘルプセッションに参加します。これは、ヘルプを得て同時に学ぶ最も速い方法であることが多いです。ガイダンスについては [ペアリングセッションを始める](pairing-sessions.md#getting-started-with-pairing-sessions)を参照してください。
 1. より広範な [サポート Slack チャンネル](/handbook/support/#slack)のいずれかでヘルプを求めます。
 
-#### サポート Pod や他の専門家に範囲を広げる
+#### Support Pods や他の専門家に範囲を広げる {#expand-to-support-pods-and-other-subject-matter-experts}
 
 以下のいずれかを行うこともできます:
 
-- あなたのチケットの分野をカバーする [サポート Pod](/handbook/support/workflows/working-with-pods/) があるかどうかを確認し、Pod のメンバーの 1 人にヘルプを求めます。
-- サポート内のエキスパートに尋ねます。スキルを持つ可能性のある人を確認するには、[Skills by Subject](https://gitlab-com.gitlab.io/support/team-pages/skills-by-subject.html) サポートページを確認するか、適切な製品分野の [サポート Stable Counterpart](/handbook/support/support-stable-counterparts/) に連絡します。スレッドおよびチケットでそれらの人をメンションして、その方が助けになると考えていることを伝えます。
-- 簡単で具体的な質問で、すぐに答えられそうな場合は、開発チームの Slack チャンネルで直接連絡を取ります。専門知識が問題をより効率的に解決するのに役立つ可能性がある場合、開発チームに早期に関与してもらうことをためらわないでください。相手の時間を尊重しましょう - あなたの質問により詳細な情報や調査が必要な場合、開発チームから正式な [ヘルプリクエスト Issue](#how-to-formally-request-help-from-the-gitlab-development-team) を起票するように案内されることがあります。
+- あなたのチケットの分野をカバーする [Support Pod](/handbook/support/workflows/working-with-pods/)があるかどうかを確認し、Pod のメンバーの 1 人にヘルプを求めます。
+- サポート内のエキスパートに尋ねます。スキルを持つ可能性のある人を確認するには、[Skills by Subject](https://gitlab-com.gitlab.io/support/team-pages/skills-by-subject.html) サポートページを確認するか、適切な製品分野の [Support Stable Counterpart](/handbook/support/support-stable-counterparts/)に連絡します。スレッドおよびチケットでそれらの人をメンションして、その方が助けになると考えていることを伝えます。
+- 簡単で具体的な質問で、すぐに答えられそうな場合は、開発チームの Slack チャンネルで直接連絡を取ります。専門知識が問題をより効率的に解決するのに役立つ可能性がある場合、開発チームに早期に関与してもらうことをためらわないでください。相手の時間を尊重しましょう - あなたの質問により詳細な情報や調査が必要な場合、開発チームから正式な [ヘルプリクエスト Issue](#how-to-formally-request-help-from-the-gitlab-development-team)を起票するように案内されることがあります。
 - [関連する GitLab 開発チームにヘルプをリクエスト](#how-to-formally-request-help-from-the-gitlab-development-team)します。
   手元にある情報を集め、Issue で開発チームのためにできるだけ多くの詳細を記入します。注目を集めるために、関連するグループの Slack チャンネルにメッセージと Issue へのリンクを投稿することができます。
   SLO 内に応答が得られない場合は、プロジェクト readme に記載されているエンジニアリングマネージャーに連絡してください。
   詳細については[以下](#how-to-formally-request-help-from-the-gitlab-development-team)を参照してください。
-- 再現可能な問題がある場合は、適切な [GitLab 製品トラッカー](https://gitlab.com/gitlab-org) のバグ Issue に直接進みます。
+- 再現可能な問題がある場合は、適切な [GitLab 製品トラッカー](https://gitlab.com/gitlab-org)のバグ Issue に直接進みます。
 
-#### チケットをマネージャーに持ち込む
+#### チケットをマネージャーに持ち込む {#bring-the-ticket-to-managers}
 
 特に、チケットで行き詰まりを感じ、次のステップを特定するための支援が必要な場合:
 
-1. いつでも、利用可能なマネージャー（あなたのマネージャー、または `#support_leadership` チャンネルの [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook) など）に気軽に連絡してください。マネージャーは次のステップを決定するのを助けてくれます。
+1. いつでも、利用可能なマネージャー（あなたのマネージャー、または `#support_leadership` チャンネルの [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook) などに気軽に連絡してください。マネージャーは次のステップを決定するのを助けてくれます。
    - `#support_leadership` で対応の DRI が特定されていないメッセージは見逃されたり、傍観者効果の犠牲になったりする可能性があるため、避けてください。
 1. 以下のような状況で緊急かつ重要な場合は、[STAR を起票](/handbook/support/internal-support/support-ticket-attention-requests#submitting-a-support-ticket-attention-request-star--starring-a-ticket)します:
    - 顧客がチケットを通じて、私たちが提供しているサービスへの不満を表明した
@@ -86,37 +86,37 @@ lastmod: "2026-05-22T11:27:49+08:00"
 
 サポートチームと開発チーム間のコラボレーションを強化するため、GitLab はヘルプリクエスト（RFH）プロセスを導入しました。これにより、チケットの解決を妨げる技術的な課題に直面した際に、サポートエンジニアが関連する機能を担当する特定の GitLab 開発グループから正式に支援を要求できます。このセクションでは、RFH プロセスを効果的に活用するために必要な手順を説明します。
 
-このプロセスは、GitLab のすべての開発セクションおよびグループにこのワークフローを展開することを目的とした、より広範な反復戦略の一部であることに注意してください。特定の開発グループの RFH テンプレートがまだ利用できない場合は、[John Lyttle](https://gitlab.com/jlyttle) に連絡して、必要な RFH テンプレートの作成を開始してください。
+このプロセスは、GitLab のすべての開発セクションおよびグループにこのワークフローを展開することを目的とした、より広範なイテレーション戦略の一部であることに注意してください。特定の開発グループの RFH テンプレートがまだ利用できない場合は、[John Lyttle](https://gitlab.com/jlyttle)に連絡して、必要な RFH テンプレートの作成を開始してください。
 
-#### 開発チームへのヘルプリクエストは早すぎる?
+#### 開発チームへのヘルプリクエストは早すぎる? {#are-you-requesting-for-dev-help-too-soon}
 
 いいえ! この点を強調するため、開発者の **Chad Woolley** からのコメントを紹介します:
 
 > _もしサポートと顧客の両方が次のステップに困惑しているのであれば、それは少なくとも、ドキュメントやサポートプロセスに何か欠けているという指標であり、これらの分野を改善する機会です。_
 
-#### ヘルプを求めるための正しい開発セクションとグループの見つけ方
+#### ヘルプを求めるための正しい開発セクションとグループの見つけ方 {#how-to-find-the-correct-development-section-and-group-to-reach-out-for-help}
 
 サポートヘルプリクエスト Issue の正しい場所を判断する最も簡単な方法は、ドキュメントページを使用することです。1 つの可能なワークフローは次のとおりです:
 
 1. ヘルプが必要な機能やトピックのドキュメントページを見つけます。
 1. ページの下部までスクロールし、「View page source」リンクをクリックします。
 1. これで、そのドキュメントページの `.md` ソースファイルが開き、上部にそのページを担当する `stage` と `group` が記載されています。
-1. 次に、[製品カテゴリのハンドブックページ](/handbook/product/categories/) に移動し、前のステップで特定したグループが属する開発セクションを検索します。
+1. 次に、[製品カテゴリのハンドブックページ](/handbook/product/categories/)に移動し、前のステップで特定したグループが属する開発セクションを検索します。
 1. 以下の表とワークフローを使用して、上記で特定したプロジェクトでヘルプリクエスト Issue を作成します。
 
-または、[Support dotfiles](https://gitlab.com/gitlab-com/support/toolbox/dotfiles) を設定している場合は、`gls_request_for_help` コマンドを使用して、正しい Issue テンプレートを含む「New issue」リンクを素早く取得できます。
+または、[Support dotfiles](https://gitlab.com/gitlab-com/support/toolbox/dotfiles)を設定している場合は、`gls_request_for_help` コマンドを使用して、正しい Issue テンプレートを含む「New issue」リンクを素早く取得できます。
 
-_注:_ 上記で説明したものと同様のワークフローのビデオ録画は、[Support Training リポジトリ](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/Support%20Specific%20Trainings/training-videos/Support%20Request%20for%20Help%20Workflow.mp4) で確認できます
+_注:_ 上記で説明したものと同様のワークフローのビデオ録画は、[Support Training リポジトリ](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/Support%20Specific%20Trainings/training-videos/Support%20Request%20for%20Help%20Workflow.mp4)で確認できます
 
-#### ヘルプリクエストのランディングページ
+#### ヘルプリクエストのランディングページ {#the-request-for-help-landing-page}
 
 [ヘルプリクエスト](https://gitlab.com/gitlab-com/request-for-help) ランディングページは、すべての GitLab 開発セクションとそれぞれのグループを単一のリポジトリに統合しています。以前のプロセスとは異なり、すべての RFH テンプレートはアクセスと管理を容易にするためにこのリポジトリ内に集約されています。Issue を提出するには、ページに移動し、関連する GitLab グループを見つけて、その「Associated Template」をクリックします。
 
 **変更プロセス:**
-セクションまたはグループが最近変更された場合は、GitLab プロジェクトトラッカーで confidential Issue を作成し、@jlyttle に割り当て、関連する Slack チャンネルに通知してください。
-詳細については、[サポートエピック #222](https://gitlab.com/groups/gitlab-com/support/-/epics/222) を参照してください。
+セクションまたはグループが最近変更された場合は、GitLab プロジェクトトラッカーで機密の Issue を作成し、@jlyttle に割り当て、関連する Slack チャンネルに通知してください。
+詳細については、[サポートエピック #222](https://gitlab.com/groups/gitlab-com/support/-/epics/222)を参照してください。
 
-#### Issue を起票する前のリサーチ
+#### Issue を起票する前のリサーチ {#research-prior-to-opening-an-issue}
 
 類似の Issue やリクエストを特定するために、以下のリポジトリとリソースを使用してください:
 
@@ -124,9 +124,9 @@ _注:_ 上記で説明したものと同様のワークフローのビデオ録�
 1. 過去の GitLab アプリケーションの[バグや機能リクエスト](https://gitlab.com/gitlab-org/gitlab/-/issues)。
 1. 過去に提出された GitLab.com の Issue。
 1. 過去に提出された [ヘルプリクエスト](https://gitlab.com/gitlab-com/request-for-help) Issue。
-1. 知識のあるエキスパートやサポート Stable Counterpart と相談する。
+1. 知識のあるエキスパートや Support Stable Counterpart と相談する。
 
-#### 詳細な Issue を作成する
+#### 詳細な Issue を作成する {#create-a-detailed-issue}
 
 1. [ヘルプリクエスト](https://gitlab.com/gitlab-com/request-for-help) ランディングページを開きます。
 1. 開発グループと対応するテンプレートのセクションを確認します。
@@ -140,9 +140,9 @@ _注:_ 上記で説明したものと同様のワークフローのビデオ録�
 1. Issue 作成後:
    - 内部メモとして Issue へのリンクを Zendesk チケットに、`GitLab Issues` という名前のチケットフィールドに追加します。
    - Issue 上で Duo Chat を使用して、追加で共有すべき詳細やコンテキストを特定します。次のようなプロンプトを使用できます:
-     > This issue is a request for help from the customer support team to Engineering. Identify any context that has not been shared, but that would be useful for Engineering to help provide a solution for this issue.
+     > この Issue は、カスタマーサポートチームから Engineering へのヘルプリクエストです。まだ共有されていないものの、Engineering がこの Issue の解決策を提供するうえで役立つコンテキストを特定してください。
 
-#### 顧客応答待ちの間の自動クローズ防止
+#### 顧客応答待ちの間の自動クローズ防止 {#preventing-auto-closure-while-awaiting-customer-response}
 
 顧客からの応答を待っている場合で、非アクティブによる RFH Issue の自動クローズを防ぐ必要がある場合は、以下のラベルを手動で適用してください: **`RFH::Awaiting Customer Response`**
 
@@ -153,11 +153,11 @@ _注:_ 上記で説明したものと同様のワークフローのビデオ録�
 - 調査を進めるために顧客の入力が必要な場合
 - 顧客のアクションなしには Issue を進められない場合
 
-#### クローズ: ドキュメント化と知識共有
+#### クローズ: ドキュメント化と知識共有 {#closing-document-and-knowledge-share}
 
 RFH Issue をクローズする際は、以下の必須アクションを完了してください:
 
-##### 1. クローズコメントとラベルを追加
+##### 1. クローズコメントとラベルを追加 {#1-add-closure-comment-and-label}
 
 Issue がクローズされる理由を説明するコメントを追加し、適切なクローズ理由ラベルを適用します:
 
@@ -170,26 +170,26 @@ Issue がクローズされる理由を説明するコメントを追加し、�
 - `Closed::Documentation` – 既存のドキュメントが従われなかった
 - `Closed::Out of Scope` – リクエストがサポートの範囲外と判断された
 
-##### 2. ドキュメントの更新（該当する場合）
+##### 2. ドキュメントの更新（該当する場合） {#2-update-documentation-if-applicable}
 
 Issue 内に含まれる解決策や情報が、GitLab ドキュメントの更新に使用できるかを検討してください:
 
 - GitLab ドキュメントを **更新した** 場合は、`documentation::created` ラベルを追加し、マージリクエストをリンクします
 - ドキュメントを **更新すべき** だが、まだ行っていない場合は、`documentation::candidate` ラベルを追加し、関連するドキュメントを更新するための GitLab Issue を作成します
 
-##### 3. レトロスペクティブの実施（該当する場合）
+##### 3. レトロスペクティブの実施（該当する場合） {#3-complete-retrospective-if-applicable}
 
-RFH にレトロスペクティブが必要な場合は、Issue をクローズする前に [RFH ReadMe](https://gitlab.com/gitlab-com/request-for-help/-/tree/main#retrospectives) に記載されているとおりに完了することを確認してください。
+RFH にレトロスペクティブが必要な場合は、Issue をクローズする前に [RFH ReadMe](https://gitlab.com/gitlab-com/request-for-help/-/tree/main#retrospectives)に記載されているとおりに完了することを確認してください。
 
-#### 迅速な応答を得るためのヒント
+#### 迅速な応答を得るためのヒント {#tips-on-getting-timely-responses}
 
 1. ヘルプリクエスト Issue 起票時の手順をすべてカバーしたかを確認します。
-2. レビューや応答が必要なコメントごとに、_毎回_ 助けてくれているエンジニアや割り当てられたエンジニアをメンションします。
-3. Issue が別のグループに移動された場合（ラベルの変更や別のプロジェクトへの移動を通じて）、新しいグループの対応するテンプレートを確認して、誰に割り当てるか、コメントでメンションするかを確認します。
-4. Kibana にリンクする際は、ログが 7 日後にローテーションアウトされるため、関連エントリのコピー、グラフのスクリーンショットなどもアップロードしてください。可能であれば、関連する Sentry エントリにもリンクしてください。
-5. 多くのチームは顧客情報にアクセスできません。そのため、GitLab.com 管理者などの昇格したアクセス権を使用して情報にアクセスしている場合は、問題を理解するために必要となる可能性のある情報を Issue に直接記載してください。
+1. レビューや応答が必要なコメントごとに、_毎回_ 助けてくれているエンジニアや割り当てられたエンジニアをメンションします。
+1. Issue が別のグループに移動された場合（ラベルの変更や別のプロジェクトへの移動を通じて）、新しいグループの対応するテンプレートを確認して、誰に割り当てるか、コメントでメンションするかを確認します。
+1. Kibana にリンクする際は、ログが 7 日後にローテーションアウトされるため、関連エントリのコピー、グラフのスクリーンショットなどもアップロードしてください。可能であれば、関連する Sentry エントリにもリンクしてください。
+1. 多くのチームは顧客情報にアクセスできません。そのため、GitLab.com 管理者などの昇格したアクセス権を使用して情報にアクセスしている場合は、問題を理解するために必要となる可能性のある情報を Issue に直接記載してください。
 
-#### 開発側で追加情報が必要な場合
+#### 開発側で追加情報が必要な場合 {#when-development-requires-additional-information}
 
 開発エンジニアは、追加の詳細が必要な場合に Issue に `RFH::Needs more info` ラベルを適用することがあります。このラベルは、Issue を進めるために明確化や追加情報が必要であることを示します。このラベルを見たら:
 
@@ -202,44 +202,44 @@ RFH にレトロスペクティブが必要な場合は、Issue をクローズ�
 
 注意: このラベルが適用された際に徹底的かつ迅速に応答することで、Issue が効率的に調査・解決されるのを保証できます。
 
-#### リクエストのブロックを解除するためのエスカレーション
+#### リクエストのブロックを解除するためのエスカレーション {#escalate-to-unblock-a-request}
 
 ヘルプリクエストが停滞している場合（たとえば、開発チームからの応答や進捗がない）、以下の手順は Issue のブロックを解除するのに役立ちます。サポートはユーザーに代わって作業しています。エンジニアリングチームから適時に回答を得ることを保証することは、顧客の満足度を維持するのに役立ちます。
 
 リクエストがブロックされている場合、またはサポートチケットで更新が要求されている場合:
 
 1. 割り当てられたエンジニアが PTO 中かどうかを Slack または GitLab ステータスで確認します。PTO 中の場合は、エンジニアリングマネージャーと Issue テンプレートに記載されている連絡先（またはこれらの連絡先も利用できない場合はそのバックアップ）を @mention します。バックアップは通常、カバレッジ Issue または Slack に記載されています。
-2. Issue 内で @mention して、開発グループのエンジニアリングマネージャーに通知します。各プロジェクトの README セクションから開発グループハンドブックページを確認することで、関連する EM を特定できます。`Development Groups with their corresponding templates and labels` というセクションを提供します。
-3. 対応する製品または開発グループの Slack チャンネルで、RFH Issue へのリンクとともに、割り当てられたエンジニアやエンジニアリングマネージャーに ping を送り、更新を要求します。
-4. 上記の手順でリクエストのブロックが解除されなかった場合は、サポートマネージャーに直接、または `#support_leadership` Slack チャンネルでさらなるガイダンスを求めてください。
+1. Issue 内で @mention して、開発グループのエンジニアリングマネージャーに通知します。各プロジェクトの README セクションから開発グループハンドブックページを確認することで、関連する EM を特定できます。`Development Groups with their corresponding templates and labels` というセクションを提供します。
+1. 対応する製品または開発グループの Slack チャンネルで、RFH Issue へのリンクとともに、割り当てられたエンジニアやエンジニアリングマネージャーに連絡し、更新を要求します。
+1. 上記の手順でリクエストのブロックが解除されなかった場合は、サポートマネージャーに直接、または `#support_leadership` Slack チャンネルでさらなるガイダンスを求めてください。
 
-#### クローズ: ドキュメント化と知識共有
+#### クローズ: ドキュメント化と知識共有 {#closing-document-and-knowledge-share-1}
 
 1. 必要な支援をすべて受けた後、Issue をクローズし、なぜクローズするのかを説明するコメントを追加することを忘れないでください。
 1. Issue 内に含まれる解決策や情報が、GitLab ドキュメントの更新に使用できるかを検討してください。
    1. GitLab ドキュメントを更新した場合は、`documentation::created` ラベルを追加し、マージリクエストをリンクします。
    1. それ以外の場合は、`documentation::candidate` ラベルを追加し、関連するドキュメントを更新するための GitLab Issue を作成します。
 
-### クイックリンクとリソース
+### クイックリンクとリソース {#quick-links-and-resources}
 
 - ZenDesk の [Needs Collaboration view](https://gitlab.zendesk.com/agent/filters/360080204660)。
-- サポート [ペアリングセッション Issue](https://gitlab.com/gitlab-com/support/support-pairing) を作成します。
+- サポート [ペアリングセッション Issue](https://gitlab.com/gitlab-com/support/support-pairing)を作成します。
 - 関連するトラブルシューティングワークフローに従うための [サポートワークフロー](/handbook/support/workflows/)。
 - 役立つ GitLab ドキュメントへのクイックリファレンスのための [サポートドキュメントリンク](/handbook/support/#documentation)。
 - ヘルプに必要なスキルセットに合わせたサポートエンジニアを見つけるための [Skills by Subject](https://gitlab-com.gitlab.io/support/team-pages/skills-by-subject.html)。
 - 適切な開発または製品チームを見つけるための [DevOps ステージ](/handbook/product/categories/#devops-stages)。
 - 緊急時でなくてもトラブルシューティングのヒントが含まれている [緊急 runbook](https://gitlab.com/gitlab-com/support/emergency-runbook/-/tree/master/.gitlab/issue_templates)。
-- 緊急の事項についてガイダンスが必要な場合に [どのマネージャーがオンコール中か](https://gitlab.pagerduty.com/escalation_policies#PGNLUZ1) を確認します。
+- 緊急の事項についてガイダンスが必要な場合に [どのマネージャーがオンコール中か](https://gitlab.pagerduty.com/escalation_policies#PGNLUZ1)を確認します。
 
-#### 一般的なトラブルシューティングリソース
+#### 一般的なトラブルシューティングリソース {#general-troubleshooting-resources}
 
 問題ごとに少しずつ違います。時には別のトラブルシューティング技法を試すのが意味のあることもあります。これらのリソースは、一般的なアプローチでのトラブルシューティングについて述べています:
 
-- Julia Evans の [comics](https://wizardzines.com/comics/)、特にデバッグに関するもの
-- [The Pocket Guide to Debugging (PDF)](https://store.wizardzines.com/products/the-pocket-guide-to-debugging)
-- [General Purpose Troubleshooting Principles](https://brie.dev/troubleshooting/)
+- Julia Evans の [漫画](https://wizardzines.com/comics/)、特にデバッグに関するもの
+- [デバッグのポケットガイド（PDF）](https://store.wizardzines.com/products/the-pocket-guide-to-debugging)
+- [汎用的なトラブルシューティングの原則](https://brie.dev/troubleshooting/)
 
-#### ヘルプリクエストのライフサイクル図
+#### ヘルプリクエストのライフサイクル図 {#request-for-help-lifecycle-diagram}
 
 ```mermaid
 stateDiagram-v2
