@@ -6,14 +6,14 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/remote-work-starter-guide/"
-upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
-translated_at: "2026-09-03T22:58:30+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:04:33+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## リモートワーク/在宅勤務とは何ですか？
+## リモートワーク/在宅勤務とは何ですか？ {#what-is-remote-work--working-from-home}
 
 ![GitLab のオールリモート用ノートパソコンのイラスト](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
 {style="max-width: 50%"}
@@ -24,19 +24,19 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 「在宅でのリモートワーク」とは、物理的なオフィスを持つ場合も持たない場合もある組織のために、個人の自宅で行われるあらゆる仕事です。
 
-## 在宅勤務の準備をするにはどうすればよいですか？
+## 在宅勤務の準備をするにはどうすればよいですか？ {#how-do-i-set-myself-up-to-work-from-home}
 
 最終的には、リモートで働く最善の方法は個人の好みによります。しかし、在宅勤務の多くの側面はほぼ普遍的です。在宅勤務の習熟度を高める可能性が高い 5 つのアプローチを紹介します。
 
-### 1. 専用の作業スペースを作る（集中力を高める）
+### 1. 専用の作業スペースを作る（集中力を高める） {#1-create-a-dedicated-workspace-achieve-focus}
 
 *どこで*働くかは、何を仕事にするか、誰と働くかと同様に重要です。[定義されたスペース](https://about.gitlab.com/blog/2018/05/17/eliminating-distractions-and-getting-things-done/#8-dedicate-a-room-to-work)を持つことで、集中のエリアに誘導されます。仕事のために部屋を専用にすることが理想ですが、それが難しい場合は、仕事のスペースを区切るためにカーテンを吊るすような簡単なことをすることができます。
 
-作業スペースを作ったら、[健全なセットアップのための人間工学](https://www.webmd.com/pain-management/ss/slideshow-ergonomic-tips-for-a-home-office#:~:text=Choose%20a%20work%20surface%20that,your%20desk%20or%20table%20legs.)に焦点を当てましょう。健全で集中した作業スペースを促進するための椅子、ノイズキャンセリングヘッドフォン、モニター、外付けキーボードなどのアイテムを費用を払い戻してもらえるか雇用主に確認してください。快適さを妥協しないようにしましょう。一時的に不快な状態で働けるかもしれませんが、長期的には生産性、健康、気分が低下する可能性が高いです。
+作業スペースを作ったら、[健全なセットアップのための人間工学](https://www.webmd.com/pain-management/ss/slideshow-ergonomic-tips-for-a-home-office#:~:text=Choose%20a%20work%20surface%20that,your%20desk%20or%20table%20legs.)に焦点を当てましょう。健全で集中した作業スペースを促進するための椅子、ノイズキャンセリングヘッドフォン、モニター、外付けキーボードなどのアイテムの費用を払い戻してもらえるか雇用主に確認してください。快適さを妥協しないようにしましょう。一時的に不快な状態で働けるかもしれませんが、長期的には生産性、健康、気分が低下する可能性が高いです。
 
 ホームオフィスの最適化の完全なリストは、GitLab の[生産的なホームオフィスガイド](workspace/)をご覧ください。
 
-*この[動画](https://youtu.be/uP0aiei0JKA)では、GitLab の Head of Remote Darren Murph が Sprinklr の[Andrew Kasier](https://www.linkedin.com/in/andrewrkaiser)と、深い集中と仕事ができるオフィスの作り方について語っています。GitLab の[Remote Work プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)でさらに見てください。*
+*この[動画](https://youtu.be/uP0aiei0JKA)では、GitLab の Head of Remote Darren Murph が Sprinklr の[Andrew Kasier](https://www.linkedin.com/in/andrewrkaiser)と、深い集中と仕事ができるオフィスの作り方について語っています。* GitLab の[Remote Work プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)でさらに見てください。*
 
 
 {{< youtube "uP0aiei0JKA" >}}
@@ -44,17 +44,17 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 *GitLab の[Remote Work プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)でさらに見てください。*
 
-### 2. 仕事と生活を分ける（バーンアウトを防ぐ）
+### 2. 仕事と生活を分ける（バーンアウトを防ぐ） {#2-separate-work-from-life-prevent-burnout}
 
 自宅でリモートで働いている場合、仕事の時間とそれ以外のすべてとの間に境界線を設けることは難しいことがあります。
 
-これは最も難しいハードルになる可能性があり、特に勤務時間中に家族が家にいる新しい在宅勤務の従業員には当てはまります。家族と専念した会話をして、あなたが家にいるからといって、利用可能であるとは限らないことを理解してもらいましょう。
+これは最も難しいハードルになる可能性があり、特に勤務時間中に家族が家にいる新しい在宅勤務の従業員には当てはまります。家族ときちんと話し合い、家にいるからといって、いつでも対応できるわけではないことを理解してもらいましょう。
 
 一方で、[物理的なオフィスを去る必要がない場合](/handbook/company/culture/all-remote/)は、予想される（または健全な）時間よりも長く働く誘惑があります。以前なら通勤に充てていた時間の使い方を前もって計画しておくことは、仕事モードへの切り替えと切り上げの両方で重要です。仕事の開始・終了を知らせるリマインダーを設定したり、以前は通勤に使っていた時間帯の活動をあらかじめ計画したりできます。[日々のスケジュール](getting-started/#develop-a-schedule-that-you-can-initially-follow)は個人によって異なりますが、散歩や友人・コミュニティとの計画された活動のために外出することは、明確な仕事/生活の分離を作り出す良い方法かもしれません。
 
 GitLab は、[リモート職場でのバーンアウト、孤立感、不安に対処するための広範なガイド](mental-health/)を作成しました。
 
-### 3. 定期的に他者と交流する（孤独を避ける）
+### 3. 定期的に他者と交流する（孤独を避ける） {#3-regularly-engage-with-others-avoid-loneliness}
 
 自発的な[非公式なコミュニケーション](informal-communication/)を引き出すオフィスがない場合、それを日常に意図的に織り込む必要があります。
 
@@ -65,15 +65,15 @@ GitLab は、[リモート職場でのバーンアウト、孤立感、不安に
 - 恥や恥ずかしさを捨てましょう。[背景を心配せず](meetings/#8-meetings-are-about-the-work-not-the-background)、ペットや家族が時々通話に入ってきても構いません。それは経験を人間らしくし、みんなが人間であり、次に同僚であることを思い出させます。
 - 家族やコミュニティとつながりましょう。在宅勤務では、同僚以外の人々と時間を過ごすことができます。通勤していたときには不可能または限られていた家族や[コミュニティ](/handbook/company/culture/all-remote/)との絆を深める機会を探しましょう。
 
-### 4. ルーティンを尊重しながら、新しいことを試す（構造を見つける）
+### 4. ルーティンを尊重しながら、新しいことを試す（構造を見つける） {#4-respect-the-routine-but-try-new-things-find-structure}
 
 [リモートのメリット](remote-benefits/)の一つは、非従来型の勤務日を試すことができることです。誰もが同じ[エネルギーと集中の最適時間帯](https://www.jonobacon.com/2019/01/14/remote-working-survival/)を共有しているわけではありません。たとえば、夜遅くに最も効率よく働ける場合は、チームにいくつかの[非直線的な勤務日](non-linear-workday/#q-what-is-a-non-linear-workday-routine)を試すことを伝えましょう。
 
-[オールリモート](terminology/)の状況で[非同期ワークフロー](/handbook/communication/#asynchronous-communication)の恩恵を最大化できます。元の通勤スペースを、運動、休息、家族との絆づくり、料理、読書、勉強など、より[健康的](mental-health/)にする物事で満たせばよいのです。
+[オールリモート](terminology/)の状況で[非同期ワークフロー](/handbook/communication/#asynchronous-communication)の恩恵を最大化できます。以前なら通勤に充てていた時間を、運動、休息、家族との絆づくり、料理、読書、勉強など、より[健康的](mental-health/)にする物事で満たせばよいのです。
 
-### 5. 変化を受け入れる（イテレーションを許容する）
+### 5. 変化を受け入れる（イテレーションを許容する） {#5-embrace-change-allow-iteration}
 
-リラックスしましょう：在宅勤務の方法を生まれながらに知っている人はいません。オフィス内環境を[コピー](what-not-to-do/)してリモート環境に貼り付け、誰もが通常通り機能することを期待することはできません。リモートへの移行は[*プロセス*](remote-work-emergency-plan/)です。うまく行われた場合、リモートへの移行は業務的にも文化的にも[深刻な害](/handbook/values/#five-dysfunctions)を回避します。
+リラックスしましょう：在宅勤務の方法を生まれながらに知っている人はいません。オフィス内環境を[コピー](what-not-to-do/)してリモート環境に貼り付け、誰もが通常通り機能することを期待することはできません。リモートへの移行は[*プロセス*](remote-work-emergency-plan/)です。うまく行われた場合、リモートへの移行は業務的にも文化的にも深刻な害を回避します。
 
 適応する中でチームと[コミュニケーションを過多にする](getting-started/#begin-to-create-connections-with-co-workers)ことが重要です。
 
@@ -87,9 +87,9 @@ GitLab は、[リモート職場でのバーンアウト、孤立感、不安に
 {{< youtube "R0AB8ZvnEIU" >}}
 
 
-*この[動画](https://youtu.be/IU2nTj6NSlQ)では、GitLab の Head of Remote が[Lattice](https://lattice.com)の CEO、[Jack Altman](https://twitter.com/jaltma)と在宅勤務のトップヒントを共有しています。*
+*この[動画](https://youtu.be/IU2nTj6NSlQ)では、GitLab の Head of Remote が、[Jack Altman](https://twitter.com/jaltma)（[Lattice](https://lattice.com)の CEO）と在宅勤務のトップヒントを共有しています。*
 
-## 追加リソース
+## 追加リソース {#additional-resources}
 
 詳しくは、GitLab の[リモートワーク総合ガイド](https://allremote.info)からの提案を研究・実装することを検討してください。
 
@@ -103,8 +103,8 @@ GitLab は、[リモート職場でのバーンアウト、孤立感、不安に
 - [子どもがいるリモートワークで気を付ける 5 つのこと](https://about.gitlab.com/blog/2019/08/08/remote-kids-part-four/)
 - [バーンアウト、孤立感、不安との戦い](mental-health/)
 - [セルフサービスの考え方を採用する](/handbook/company/culture/all-remote/)
-- [Remote Without Warning Webinar: 突然リモートになった企業が適応し繁栄する方法](https://youtu.be/n4ZZaE-XCVs?t=5)
-- [Preparing Your Team for Remote Work Webinar](https://youtu.be/9tYEKAFgQQw?t=5)
+- [予期せずリモートになったときのウェビナー：突然リモートになった企業が適応し繁栄する方法](https://youtu.be/n4ZZaE-XCVs?t=5)
+- [チームのリモートワークへの準備に関するウェビナー](https://youtu.be/9tYEKAFgQQw?t=5)
 
 
 {{% include "includes/coursera_gitlab_remote_course.md" %}}
@@ -114,7 +114,7 @@ GitLab は、[リモート職場でのバーンアウト、孤立感、不安に
 {{% include "includes/is_this_advice_any_good_remote.md" %}}
 
 
-## 学んだことを共有する
+## 学んだことを共有する {#contribute-your-lessons}
 
 GitLab は、オールリモートが[仕事の未来](remote-vision/)であり、リモート企業にはそれを実践している他の組織に道を示す共同責任があると考えています。あなたまたはあなたの会社が世界全体に役立つ経験をお持ちであれば、[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)を作成してこのページに貢献することをご検討ください。
 

@@ -2,9 +2,9 @@
 title: "Developer Experience: Application Lifecycle"
 description: "Application Lifecycle チームは、標準化されたツール、リファレンスアーキテクチャ、オペレーショナルエクセレンスのフレームワークを通じて、あらゆる規模の GitLab 環境をオペレーターがデプロイし、維持できるようにします。私たちは、GitLab デプロイのためのデプロイインフラストラクチャと運用ツールを提供します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/"
-upstream_sha: "bc76a1a59f8b471f304263e712307581bdc7d128"
-lastmod: "2026-08-21T10:31:23+10:00"
-translated_at: "2026-09-04T22:10:05+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T06:24:27+00:00"
 translator: "codex"
 stale: false
 ---
@@ -69,12 +69,12 @@ Product Manager: [Martin Brümmer](https://gitlab.com/mbruemmer)
 
 ### 運用ガイダンスと基準 {#operational-guidance-and-standards}
 
-- **ドキュメント:** インストール手順、運用ランブック、トラブルシューティングガイド
+- **ドキュメント:** インストール手順、運用ランブック、トラブルシューティングガイド  
 - **ベストプラクティス:** 運用基準とデプロイのガイダンス
 
 ## 主なプロジェクトとツール {#primary-projects-and-tools}
 
-### GitLab Charts（Helm）- Kubernetes の主要なデプロイ方法 {#gitlab-charts-helm-primary-kubernetes-deployment}
+### GitLab Charts（Helm）- Kubernetes の主要なデプロイ方法 {#gitlab-charts-helm---primary-kubernetes-deployment}
 
 **リポジトリ:** [gitlab-org/charts/gitlab](https://gitlab.com/gitlab-org/charts/gitlab)
 **ドキュメント:** [docs.gitlab.com/charts/](https://docs.gitlab.com/charts/)
@@ -104,7 +104,7 @@ Kubernetes に GitLab をデプロイする主要な方法であり、次の機�
 Reference Architectures に従ってスケーリングされた GitLab 環境をデプロイするための、規約を定めた Terraform および Ansible スクリプトです。GET は次の機能を提供します。
 
 - クラウドプロバイダー間で標準化されたインフラストラクチャのプロビジョニング
-- クラウドネイティブ環境向けの GitLab Operator との統合
+- クラウドネイティブ環境向けの GitLab Operator との統合  
 - 設定管理の自動化
 - デプロイモデル間の明確な移行パス
 
@@ -123,7 +123,7 @@ Reference Architectures に従ってスケーリングされた GitLab 環境を
 ### Slack チャンネル {#slack-channels}
 
 - **#g_application_lifecycle** - 議論とリクエストのためのメインチームチャンネル
-- **#gitlab_environment_toolkit** - GET に関する議論と質問
+- **#gitlab_environment_toolkit** - GET に関する議論と質問  
 - **#reference-architectures** - Reference Architecture に関する議論とリクエスト
 - チームハンドル: `@gitlab-org/software-delivery/operate`
 
@@ -186,7 +186,7 @@ RFH を作成するには、ハンドブックの[支援を得る方法](/handbo
 [インフラストラクチャ概要ドキュメント](https://docs.gitlab.com/omnibus/release/#infrastructure)に理由が記載されています。
 
 セキュリティに関連する作業を除き、その他のすべての作業は `GitLab.com` 上のプロジェクトで行われます。
-機密性の高い Issue を提出する必要がある場合は、confidential Issue を使用してください。
+機密性の高い Issue を提出する必要がある場合は、非公開 Issue を使用してください。
 
 何かを非公開にしておく必要があるか分からない場合は、チームの Engineering Manager に確認してください。
 
@@ -204,6 +204,6 @@ RFH を作成するには、ハンドブックの[支援を得る方法](/handbo
 
 次の GitLab ハンドブックの領域は、健全なワークライフバランスを維持するうえで重要です。
 
-- [家族と友人を第一に、仕事は第二に](/handbook/values/#family-and-friends-first-work-second)
+- 家族と友人を第一に、仕事は第二に
 - [リモートワーク環境での燃え尽き、孤立、不安への対処](/handbook/company/culture/all-remote/mental-health/)
 - [燃え尽きの認識](/handbook/people-group/time-off-and-absence/time-off-types/)

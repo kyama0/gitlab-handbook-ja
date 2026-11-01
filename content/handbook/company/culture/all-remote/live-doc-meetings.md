@@ -2,15 +2,15 @@
 title: "GitLab ミーティングのベストプラクティス：ライブドックミーティング"
 description: 効率的、透明、ドキュメントベースのミーティングを実現する GitLab のミーティングベストプラクティスの概要
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab リモートチームの画像"
+twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/live-doc-meetings/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:27:12+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ![GitLab のコラボレーション](/images/all-remote/gitlab-collaboration.jpg)
@@ -18,7 +18,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 このページでは、GitLab の実証済みの原則を活用して、効率的・透明性の高い・ドキュメントベースのミーティングを実現する方法を詳述しています。このスタイルのミーティングは、作業環境を問わず、結束力、規律、透明性を高めます。
 
-## GitLab のミーティングベストプラクティス
+## GitLab のミーティングベストプラクティス {#gitlab-meeting-best-practices}
 
 ![GitLab のオールリモートメンター](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
 {style="width: 50%;"}
@@ -27,33 +27,33 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 プロジェクトを前進させるため、ブロッカーに対処するため、またはコミュニケーションのミスを解決するためにミーティングが必要と判断した場合は、以下の実証済みの原則に従ってください。
 
-### アジェンダと共有
+### アジェンダと共有 {#agenda-and-sharing}
 
-1. 事前に [GitLab のアジェンダテンプレート](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)を使用して Google Doc でアジェンダを作成します（これは任意の共有ドキュメントサービスで構いませんが、GitLab は [Google Workspace](https://workspace.google.com) を使用しています）。[Google カレンダーの自動アジェンダ/メモ作成機能](https://workspaceupdates.googleblog.com/2021/10/create-meeting-notes-in-google-calendar.html)は使用しないでください。GitLab の推奨するアジェンダフローに沿っていないためです。自動アジェンダドキュメントが誤って作成された場合は、カレンダーの招待を編集し、X にカーソルを合わせてアジェンダから削除し、混乱を避けてください。
+1. 事前に [GitLab のアジェンダテンプレート](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)を使用して Google Doc でアジェンダを作成します（これは任意の共有ドキュメントサービスで構いませんが、GitLab は [Google Workspace](https://workspace.google.com)を使用しています）。[Google カレンダーの自動アジェンダ/メモ作成機能](https://workspaceupdates.googleblog.com/2021/10/create-meeting-notes-in-google-calendar.html)は使用しないでください。GitLab の推奨するアジェンダフローに沿っていないためです。自動アジェンダドキュメントが誤って作成された場合は、カレンダーの招待を編集し、X にカーソルを合わせてアジェンダから削除し、混乱を避けてください。
 1. 適切な共有設定が適用されており、「アジェンダにアクセスできません」という合唱が起きないようにしてください。アジェンダはすべての参加者が編集できるようにすべきです。
 1. ミーティングの招待状にアジェンダをリンクしてください。
 1. ミーティングのできる限り前にアジェンダを確立してください。
 1. アジェンダは[番号付きリスト](/handbook/communication/#writing-style-guidelines)を使用し、箇条書きリストは使用しないでください。
-1. `コンテキスト` セクションには以下を含めます：ミーティングの目標；明確な事前作業または事前視聴/読み取り指示；[ローコンテキストコミュニケーション](/handbook/communication/#low-context)を使用した意図と期待される成果。
+1. `Context` セクションには以下を含めます：ミーティングの目標；明確な事前作業または事前視聴/読み取り指示；[ローコンテキストコミュニケーション](/handbook/communication/#low-context)を使用した意図と期待される成果。
 
-### 事前作業とミーティング開始
+### 事前作業とミーティング開始 {#pre-work-and-meeting-kick-off}
 
 1. 事前読み取り/視聴または事前作業の資料は、少なくとも 24 時間前に参加者にメールで送信してください。
 1. ミーティングのホスト（[DRI](/handbook/people-group/directly-responsible-individuals/)）はミーティングの最初の 1 〜 2 分で重要なポイントとコンテキストを要約することができますが、[ミーティングのほとんどはプレゼンテーションであるべきではありません](/handbook/communication/#few-meetings-with-presentations)。
-1. 質問は予定されたミーティング時間の前に[書き留め](/handbook/values/#write-things-down)てリストにしてください。これにより質問の質が向上する傾向があります。
+1. 質問は予定されたミーティング時間の前に書き留めてリストにしてください。これにより質問の質が向上する傾向があります。
 
-### ミーティング中のメモ取りと構造
+### ミーティング中のメモ取りと構造 {#note-taking-and-structure-during-the-meeting}
 
-1. 実行可能な場合は常に[提案を行って](/handbook/values#make-a-proposal)ください。シンプルに「はい」と回答/コメントできるようにすべきです。
+1. 実行可能な場合は常に提案を行ってください。シンプルに「はい」と回答/コメントできるようにすべきです。
 1. 関連するテキストを関連リソースにリンクして、人々が検索や質問に時間を費やさないようにしてください。
 1. GitLab の[スマートメモ取りガイダンス](/handbook/communication/#smart-note-taking-in-meetings)に従い、別の「メモ」セクションを使用するのではなく、アジェンダのインラインでメモを取ってください。複数の参加者によるリアルタイムのメモ取りが推奨されます。
-   - CEO シャドー[ハンドブックページのヒントセクション](/handbook/ceo/shadow/#taking-notes)も良い参考になります。特に「シャドー 1 が最初のスピーカーが話している間にメモを取り始め、次のスピーカーが会話を続けると、シャドー 2 が始めるのが役立ちます。シャドー 1 は次の貢献者が会話に参加したときにメモ取りを再開できます。このように交替することで、シャドーは会話内のすべての参加者についていきやすくなります。」このアドバイスは一般的なミーティングにも使用できます。
-1. ミーティングで話していない場合は、いつでもメモ取りを手伝ってください。ドキュメントの冒頭にメモ取り担当が記載されていない場合は、自分でメモを取るようにしてください。質問した人が答えに集中できるよう、他の人にリアルタイムで回答を書き留めるよう依頼することを検討してください。質問者は、会話が自分に関係の少い話題に移ったときに答えを修正できます。
+   - CEO Shadow の[ハンドブックページのヒントセクション](/handbook/ceo/shadow/#taking-notes)も良い参考になります。特に `It's helpful if shadow one takes notes as the first speaker is talking, then shadow two starts when the next speaker continues the conversation. Shadow one can pick up note taking again when the next speaker contributes. By alternating this way, the shadows are better able to keep up with all the participants in the conversation.` このアドバイスは一般的なミーティングにも使用できます。
+1. ミーティングで話していない場合は、いつでもメモ取りを手伝ってください。ドキュメントの冒頭にメモ取り担当が記載されていない場合は、自分でメモを取るようにしてください。質問した人が答えに集中できるよう、他の人にリアルタイムで回答を書き留めるよう依頼することを検討してください。質問者は、会話が自分に関係の少ない話題に移ったときに答えを修正できます。
 1. メモは会話の流れを追うよう適切にインデントおよび構造化してください。
 1. メモは逐語的である必要はありませんが、重要なポイントをキャプチャし、決定や次のステップを明確にする必要があります。
 1. 質問と回答の前に参加者の名前を付けて、その出典に対するコンテキストを与えてください。
 
-### ミーティングにおけるインクルージョンと透明性
+### ミーティングにおけるインクルージョンと透明性 {#inclusion-and-transparency-in-meetings}
 
 1. 会話を独占する最も声の大きな意見が支配しないよう、議題の順序に従ってください。これにより会話が独占されることを防ぎます。
 1. 質問の前の名前を持つ人が口頭で説明したいかどうかを常に確認してください。そうしたくない場合や利用できない場合は、ミーティングのホストが代わりに口頭で説明してください。
@@ -61,21 +61,21 @@ lastmod: "2026-08-19T14:13:18-04:00"
 1. ミーティングに[非公開](/handbook/communication/confidentiality-levels/#not-public)情報が含まれていない限り、ライブ参加できない人と共有するためにミーティングを録画し、最大限の透明性とフィードバックの可能性のためにライブストリーミングを検討してください。
 1. ミーティングの一部があなたに関係しない場合は、[目をそらしても構いません](meetings/#9-its-ok-to-look-away)。あなたは[自分の時間と注意のマネージャー](/handbook/leadership#managers-of-one)です。
 
-## Q: ライブドックミーティングのメリットとは？
+## Q: ライブドックミーティングのメリットとは？ {#q-what-are-the-benefits-of-live-doc-meetings}
 
 ![GitLab のコラボレーションのイラスト](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%"}
 
-チームメンバーが異なる場所にいる同僚や、ミーティングにライブで参加できない同僚と一緒に働いていることを認識しているという文化を確立することが重要です。ドキュメント作成は、チームの[機能不全](/handbook/values/#five-dysfunctions)を避けるための重要な部分です。
+チームメンバーが異なる場所にいる同僚や、ミーティングにライブで参加できない同僚と一緒に働いていることを認識しているという文化を確立することが重要です。ドキュメント作成は、チームの機能不全を避けるための重要な部分です。
 
 ライブドックミーティングへの移行によって、ミーティングの衛生状態を改善できます。これは比較的シンプルなステップであり、ドキュメントの価値に対する理解を生む傾向があります。ドキュメント作成に対するチーム全体の賛同を得るための出発点を探しているなら、すべての業務関連ミーティングにアジェンダを追加し、ミーティング中のライブドキュメント作成を主張することを検討してください。
 
-1. [知識の漏れ](/handbook/company/culture/all-remote/)を防ぎます。アジェンダのないミーティングは参加者にとってしか有用でなく、それでも結果が忘れられたり、パズルの重要なピースが時間の経過とともに少なくなる可能性があります。
+1. [知識の漏れ](/handbook/company/culture/all-remote/)を防ぎます。アジェンダのないミーティングは参加者にとってしか有用でなく、それでも結果が忘れられたり、パズルの重要なピースについての記憶が時間の経過とともに薄れる可能性があります。
 1. よりインクルーシブなミーティングの雰囲気を生み出します。参加者は同期ミーティングの前（さらには後でも）に質問や洞察を追加できます。さらに、管理職の前で口頭で発言することに慣れていない人は、アジェンダドキュメントを使用して完全な考えを適切に表現できます。
 1. テイクアウェイを生み出します。アジェンダドキュメントはミーティング後も存在し続けます。参加していれば恩恵を受けたと思われる人やチームに送りたい場合、そうすることができます。
 1. 暗記の負担を人間から取り除きます。各カレンダーの招待状にアジェンダドキュメントが添付されていれば、カレンダーでキーワード（マーケティング、CEO、エンジニアリングなど）を簡単に検索し、特定のミーティングを見つけ、何が議論されたかのドキュメントの履歴にすぐにアクセスできます。
 
-## Q: ミーティングと非同期、どちらを使うべきか？
+## Q: ミーティングと非同期、どちらを使うべきか？ {#q-when-should-i-use-a-meeting-over-async}
 
 すべてのミーティングが本質的に悪いわけではありません。例えば、マネージャーにはチームと[定期的な 1 対 1 のミーティング](/handbook/leadership/1-1/)を設けることを奨励しています。短い同期チャットが複数時間の非同期作業を置き換えられる場合もあります。同期と非同期を戦略的に活用することは、科学よりも芸術です。
 
@@ -83,30 +83,30 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 GitLab がリモートワーク環境でミーティングを実施する方法について深く掘り下げるには、[オールリモートミーティングガイド](meetings/)を参照してください。GitLab のコミュニケーションについてさらに学ぶには、[コミュニケーションページ](/handbook/communication/)を参照してください。
 
-## Q: ライブドックミーティングとは？
+## Q: ライブドックミーティングとは？ {#q-what-is-a-live-doc-meeting}
 
 ライブドックミーティングは GitLab 独自のものです。すべてをライブでドキュメント化する（そう、すべて！）業務関連ミーティング（例：[コーヒーチャット](informal-communication/#coffee-chats)ではないもの）です。ミーティングが始まる前に、カレンダーの招待状に共有・編集可能なアジェンダドキュメントを添付してドキュメント作成を始めましょう。
 
-## Q: ライブドックミーティングのアジェンダとは？
+## Q: ライブドックミーティングのアジェンダとは？ {#q-what-is-the-agenda-for-a-live-doc-meeting}
 
-[ライブドックミーティングのサンプルテンプレート](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit?usp=sharing)があります。新しい Google Doc を作成し、すべてのカレンダーの招待状にライブドックへのリンクを添付してください。[Google カレンダーの自動アジェンダ/メモ作成機能](https://workspaceupdates.googleblog.com/2021/10/create-meeting-notes-in-google-calendar.html)は使用しないでください。GitLab の推奨するアジェンダフローに沿っていないためです。ミーティングの[アジェンダ](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)を含め、適切な共有権限を設定し、同期的または非同期的に参加するかどうかに関わらずチームメンバーが貢献方法を理解できるよう、期待されるエンゲージメントの指示（`コンテキスト` セクション）を追加してください。
+[ライブドックミーティングのサンプルテンプレート](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit?usp=sharing)があります。新しい Google Doc を作成し、すべてのカレンダーの招待状にライブドックへのリンクを添付してください。[Google カレンダーの自動アジェンダ/メモ作成機能](https://workspaceupdates.googleblog.com/2021/10/create-meeting-notes-in-google-calendar.html)は使用しないでください。GitLab の推奨するアジェンダフローに沿っていないためです。ミーティングの[アジェンダ](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)を含め、適切な共有権限を設定し、同期的または非同期的に参加するかどうかに関わらずチームメンバーが貢献方法を理解できるよう、期待されるエンゲージメントの指示（`Context` セクション）を追加してください。
 
-## Q: 「ライブドキュメント」とはどういう意味か？
+## Q: 「ライブドキュメント」とはどういう意味か？ {#q-what-is-meant-by-live-document}
 
 ライブドキュメントとは、継続的に編集・更新される可能性があるドキュメントです。例としては、共有 Google Doc、チームがコラボレーションのために使用しているホワイトボード、または [GitLab のハンドブック](/handbook)などがあります。
 
-## Q: ライブドックミーティングにどのように参加できるか？
+## Q: ライブドックミーティングにどのように参加できるか？ {#q-how-can-i-participate-in-a-live-doc-meeting}
 
 ライブドックミーティングへの参加方法は 2 つあります：[ライブの Zoom コールに参加する](/handbook/communication/#video-calls)のように同期的に参加するか、ミーティング終了後に記録されたビデオと一緒にドキュメント化されたディスカッションをレビューすることで[非同期](/handbook/communication/#asynchronous-communication)に参加するかです。
 
-## Q: ライブドックミーティングはいつ開催されるか？
+## Q: ライブドックミーティングはいつ開催されるか？ {#q-when-are-live-doc-meetings-held}
 
-ライブドックミーティングは通常、ホストのタイムゾーンで開催されます。ただし、リーダーは[より多様なタイムゾーンに対応するためにミーティングをローテーション](/handbook/communication/#asynchronous-communication)し、後で視聴できるよう録画することも検討すべきです。
+ライブドックミーティングは通常、ホストのタイムゾーンで開催されます。ただし、リーダーは[より多様なタイムゾーンに対応するためにミーティングをローテーション](/handbook/communication/#asynchronous-communication)し、後で視聴できるよう録画すべきです。
 
-## Q: ライブドックミーティングはどこで開催されるか？
+## Q: ライブドックミーティングはどこで開催されるか？ {#q-where-are-live-doc-meetings-held}
 
-ライブドックミーティングは完全に対面で、完全にオンラインで、またはハイブリッドコール（両方の組み合わせ）で行うことができます。コミュニケーションと議論において全員が公平な立場に立てるようにするのが最善のため、[ハイブリッドコールは避けるべきです](meetings/#7-avoid-hybrid-calls)。ハイブリッドコールが必要な場合は、オーディオの遅延やフィードバックによる問題を避けるために、参加者が物理的に同じ部屋に座っていても、それぞれ自分の機器（カメラ、ヘッドセット、スクリーン）を使用するようにしてください。
+ライブドックミーティングは完全に対面で、完全にオンラインで、またはハイブリッドコール（両方の組み合わせ）で行うことができます。コミュニケーションと議論において全員が公平な立場に立てるようにするのが最善のため、[ハイブリッドコールは避けるべきです](meetings/#7-avoid-hybrid-calls)。ハイブリッドコールが必要な場合は、オーディオの遅延やフィードバックによる問題を避けるために、参加者がそれぞれ自分の機器（カメラ、ヘッドセット、スクリーン）を使用するようにしてください。
 
 ---
 
-メインの [オールリモートページ](_index.md) に戻る。
+メインの [オールリモートページ](_index.md)に戻る。

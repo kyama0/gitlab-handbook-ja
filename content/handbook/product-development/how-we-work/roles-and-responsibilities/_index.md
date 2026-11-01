@@ -1,42 +1,42 @@
 ---
 title: "プロダクト開発の役割と責任"
-description: "プロダクト開発プロセスにおける、プロダクトおよびエンジニアリングチーム間の役割と責任の概要。"
+description: "プロダクト開発プロセスにおける、Product および Engineering チーム間の役割と責任の概要。"
 upstream_path: /handbook/product-development/how-we-work/roles-and-responsibilities/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:52:10+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-プロダクト開発を成功させるためには、チームメンバー全員が共有のアウトカムにコミットすることが必要不可欠です。チーム全体で、GitLab のバリューである [Results for Customers](/handbook/values/#results) と一致した形で、ユーザーへのポジティブなインパクトを届ける責任を共有しなければなりません。
+プロダクト開発を成功させるためには、チームメンバー全員が共有のアウトカムにコミットすることが必要不可欠です。チーム全体で、GitLab のバリューである顧客への成果の提供と一致した形で、ユーザーへのポジティブなインパクトを届ける責任を共有しなければなりません。
 
-## チーム全員の取り組み
+## チーム全員の取り組み {#its-a-team-effort}
 
 ![役割と責任の概要](/images/product-development/It's-a-team-effort-2025-03-31.svg)
 
-## 高品質なプロダクトを届けるための責任
+## 高品質なプロダクトを届けるための責任 {#responsibilities-to-deliver-high-quality-product}
 
-![Roles Leads](/images/product-development/Responsibilities-to-deliver-high-quality-product-2025-03-31.svg)
+![役割の Lead](/images/product-development/Responsibilities-to-deliver-high-quality-product-2025-03-31.svg)
 
-## 品質はみんなの責任
+## 品質はみんなの責任 {#quality-is-everyones-responsibility}
 
-![Responsibilities of Leads](/images/product-development/Quality-is-everyone's-responsibility-2025-03-31.svg)
+![Lead の責任](/images/product-development/Quality-is-everyone's-responsibility-2025-03-31.svg)
 
-## 役割 vs. 責任
+## 役割と責任 {#role-vs-responsibility}
 
-役割（プロダクトマネージャー、エンジニアリングマネージャーなど）と、Lead としての責任領域（プロダクト、テクニカル、デリバリー、リソース、UX など）は、明確に区別する必要があります。「プロダクトマネージャー」や「エンジニアリングマネージャー」のような役割は、特定のリーダーシップ責任と整合することが多いですが、その責任領域はその役割に専属するものではありません。
+役割（Product Manager、Engineering Manager など）と、Lead としての責任領域（プロダクト、テクニカル、デリバリー、リソース、UX など）は、明確に区別する必要があります。「Product Manager」や「Engineering Manager」のような役割は、特定のリーダーシップ責任と整合することが多いですが、その責任領域はその役割に専属するものではありません。
 
-- 例：「プロダクトマネージャー」の役割を担うチームメンバーは、Product Lead としての責任を果たすことが多いですが、Product Lead の領域を超えた重要な貢献を行います。プロダクトが社内で使用され、エンドカスタマーと直接対面しない状況では、Product Lead の役割をテクニカル個人貢献者（IC）またはエンジニアリングマネージャーが担うこともあります。
-- 例：「エンジニアリングマネージャー」の役割を持つチームメンバーは、複数の責任を同時にカバーすることが多く、エンジニアリングマネージャーは、特定チームのニーズに応じて Technical Lead、Delivery Lead、Resource Lead の役割の一部またはすべてを果たすこともあります。
+- 例：「Product Manager」の役割を担うチームメンバーは、Product Lead としての責任を果たすことが多いですが、Product Lead の領域を超えた重要な貢献を行います。プロダクトが社内で使用され、エンドカスタマーと直接対面しない状況では、Product Lead の役割を Technical Individual Contributor（IC）または Engineering Manager が担うこともあります。
+- 例：「Engineering Manager」の役割を持つチームメンバーは、複数の責任を同時にカバーすることが多く、Engineering Manager は、特定チームのニーズに応じて Technical Lead、Delivery Lead、Resource Lead の役割の一部またはすべてを果たすこともあります。
 
 上記の注意点を踏まえつつ、GitLab のプロダクト開発において一般的に見られるパターンは次のとおりです：
 
-- Product 部門は通常、以下の責任をカバーします：
+- Product Division は通常、以下の責任をカバーします：
   - Product Lead - 注：例外もあります（特にインフラ領域など）。
   - UX Lead
   - Documentation Lead
-- Engineering 部門は通常、以下の責任をカバーします：
+- Engineering Division は通常、以下の責任をカバーします：
   - Technical Lead
   - Delivery Lead
   - Resource Lead
@@ -49,15 +49,15 @@ GitLab のプロダクト開発チームでは、「チームとして勝利し�
 
 最後に、特定の責任について、プロダクト開発チームが必要とする内容は、プロジェクトの種類、プロジェクトの成熟度、技術領域および Tech Stack の成熟度、開発者の成熟度などによって異なる場合があります。重要なのは、プロダクト開発チームごとに、これらの責任のオーナーシップとアカウンタビリティについて、チームメンバー間および役割間でどのように分散されているかに関係なく、合意とインターロックがあることを確認することです。
 
-## Who、What、Why、How、When
+## 誰が、何を、なぜ、どのように、いつ {#who-what-why-how-and-when}
 
 プロダクト開発では、「who（誰が）」「what（何を）」「why（なぜ）」「how（どのように）」「when（いつ）」という汎用的な質問手法を活用し、チームが目指すアウトカムを深く理解できるようにしています。私たちはそれぞれ、世界クラスのプロダクトをカスタマーに届けるという目標を達成するために、これらの質問に継続的に答える役割を担っています。下の図では、プロダクト開発チームのメンバーが新しいプロダクト機能を形作る際に、どのように貢献し協働するかを、例を用いて説明しています：
 
-![プロダクト開発の役割と責任における who, what, why, how, when](/images/product-development/Product-Quarterly-All-Hands-2025-03-18.svg)
+![プロダクト開発の役割と責任における誰が、何を、なぜ、どのように、いつ](/images/product-development/Product-Quarterly-All-Hands-2025-03-18.svg)
 
 私たちの目的は、各チームがアジャイル手法を活用してプロダクトのカスタマーバリューを開発・提供する自由を維持しつつ、同期型の計画プロセスを導入することで、GitLab のカスタマーが当然期待する予測可能性と品質をもってデリバリーすることです。
 
-## 主要イベントとアクティビティの責任へのマッピング
+## 主要イベントとアクティビティの責任へのマッピング {#key-events--activities-mapping-into-responsibilities}
 
 作業の階層
 
@@ -73,7 +73,7 @@ GitLab のプロダクト開発チームでは、「チームとして勝利し�
 - ✅: 主導
 - ✔️: 関与
 
-|  **#**  | **主要イベントとアクティビティ** | **プロダクトマネジメント Lead** | **Technical Lead** | **Delivery Lead** | **Resource Allocation Lead** | **Product Design Lead** | **Technical Writing Lead** |
+|  **#**  | **主要イベントとアクティビティ** | **Product Management Lead** | **Technical Lead** | **Delivery Lead** | **Resource Allocation Lead** | **Product Design Lead** | **Technical Writing Lead** |
 | :---: | ----------------------- | :----------: | :------------: | :-----------: | :----------: | :-----------: | :-----: | :---------------: |
 |  **1** | 担当領域における 1 年間の方向性を定義し、(1) 会社の 3 年戦略、(2) リーダー（CPO/CTO）の方向性、(3) 現在の会社の目標、(4) カスタマーニーズと整合させる | ✅<br>プロダクト中心 | ✅<br>テクニカル中心 |  |  | ✅<br>ユーザー中心 |  |
 |  **2** | 方向性を、担当領域の成熟度を高める大規模イニシアチブに分解する | ✅<br>プロダクト中心 | ✅<br>テクニカル中心 | ✔️ |  | ✅<br>ユーザー中心 |  |

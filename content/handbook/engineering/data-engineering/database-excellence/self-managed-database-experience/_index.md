@@ -2,9 +2,9 @@
 title: "Self-Managed Database Experience チーム"
 description: "Self-Managed Database Experience チームは、Self-Managed のお客様にデータベースの状態を把握する手段、より高速なデータベースマイグレーション、明確なアップグレード経路を提供します。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-lastmod: "2026-10-16T11:46:58+13:00"
-translated_at: "2026-10-19T10:15:57Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T06:36:19+00:00"
 translator: codex
 stale: false
 ---
@@ -107,7 +107,7 @@ Self-Managed Database Experience チームは、[Database Health](/handbook/engi
 - Issue に解決策の提案がない場合、または見積もりで別の解決策を提案する場合は、見積もりに解決策の提案を含めます。スパイクは例外で、デフォルトのウェイトは 8 です。
 - 不明点が多い Issue は、高めに見積もります。
 
-私たちは予測可能性よりも速度を重視します。見積もりは、[MVC](/handbook/values/#minimal-valuable-change-mvc)に集中し、見落としを見つけるのに役立ちます。予測可能性の目標は 90% ではなく 70% です。
+私たちは予測可能性よりも速度を重視します。見積もりは、MVC に集中し、見落としを見つけるのに役立ちます。予測可能性の目標は 90% ではなく 70% です。
 
 [ウェイト未設定の今後の Issue](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=group::database+health&weight=None&milestone_title=Upcoming)を参照してください。
 

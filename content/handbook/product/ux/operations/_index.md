@@ -3,66 +3,66 @@ title: UX オペレーション
 description: >-
   ヘッドカウント計画、調達、ラベル、チームプロセスを含む、UX チームメンバー向けの運用ガイダンス。
 upstream_path: /handbook/product/ux/operations/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:06:56+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T08:51:14-03:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 このページには、GitLab の UX 部門で働くための運用情報が記載されています。
 
-## ヘッドカウント計画
+## ヘッドカウント計画 {#headcount-planning}
 
 UX チームメンバーは、Product Management および Engineering 全体の安定したカウンターパートと協力して働きます。アライメントのモデルは、職種や作業の種類によって異なります。
 
-### プロダクトデザイン
+### Product Design {#product-design}
 
-プロダクトデザイナーは、主に次の2つのモデルのいずれかで働きます。
+Product Designer は、主に次の 2 つのモデルのいずれかで働きます。
 
 - **ステージグループアライメント:** ステージグループに割り当てられたデザイナーは、特定の製品領域について専任の PM および Engineering チームと協業します
-- **プロジェクトベースの業務:** デザイナーは、複数のグループにまたがる、または独立して運営される横断的なプラットフォームイニシアチブ（デザインシステム、ナビゲーション、戦略的プロジェクト）に取り組みます
+- **プロジェクトベースの業務:** デザイナーは、複数のグループにまたがる、または独立して運営される横断的なプラットフォームイニシアチブ（Design System、ナビゲーション、戦略的プロジェクト）に取り組みます
 
 ステージアライン型ロールの計画比率:
 
-- プロダクトデザイナー対 PM = 1:1
-- フロントエンドエンジニア 1〜3名に対してプロダクトデザイナー 1名。4〜5名に対して 2名
+- Product Designer 対 PM = 1:1
+- Frontend engineer 1 〜 3 名に対して Product Designer 1 名。4 〜 5 名に対して 2 名
 
-### UX リサーチ
+### UX Research {#ux-research}
 
-UX リサーチャーはセクション内の複数グループをサポートします。
+UX Researcher はセクション内の複数グループをサポートします。
 
-- UX リサーチャー対プロダクトマネージャー比率 = 1:5
-- UX リサーチャー対エンジニア比率 = 約 1:35
+- UX Researcher 対 Product Manager 比率 = 1:5
+- UX Researcher 対エンジニア比率 = 約 1:35
 
-### テクニカルライティング
+### Technical Writing {#technical-writing}
 
-テクニカルライターはそれぞれ複数のステージグループをサポートします。
+Technical Writer はそれぞれ複数のステージグループをサポートします。
 
-- テクニカルライター対ステージグループ比率 = 1:3
-- テクニカルライター対エンジニア比率 = 約 1:21
+- Technical Writer 対ステージグループ比率 = 1:3
+- Technical Writer 対エンジニア比率 = 約 1:21
 
-### デザインシステム
+### Design System {#design-system}
 
-デザインシステムチームは独立して運営されており、すべてのプロダクトデザイナー、エンジニア、テクニカルライターに役立つプラットフォーム全体のインフラを構築しています。このチームは、特定のステージグループや PM には割り当てられていません。
+Design System チームは独立して運営されており、すべての Product Designer、エンジニア、Technical Writer に役立つプラットフォーム全体のインフラを構築しています。このチームは、特定のステージグループや PM には割り当てられていません。
 
-### マネジメント
+### マネジメント {#management}
 
 各機能に応じて、マネージャーのサポート体制が適切に整えられています。
 
-- UX リサーチおよびプロダクトデザインの場合、マネージャー対直接の部下比率 = 約 1:5
-- テクニカルライティングの場合、マネージャー対直接の部下比率 = 約 1:7
+- UX Research および Product Design の場合、マネージャー対直接の部下比率 = 約 1:5
+- Technical Writing の場合、マネージャー対直接の部下比率 = 約 1:7
 
-## 調達リクエスト
+## 調達リクエスト {#procurement-requests}
 
-新規プロダクト／サービスをリクエストするには、[UX 調達提案 Issue テンプレート](https://gitlab.com/gitlab-com/Product/-/issues/new?related_item_id=undefined&type=ISSUE&description_template=UX-Procurement-Request)を使用して Issue を作成してください。マネージャーが UX リーダーシップと協力して支出ニーズを特定し、FP&A と連携して予算を確保した後、[ベンダーライフサイクル](/handbook/finance/procurement/#vendor-lifecycle-management)に従います。
+新規プロダクト／サービスをリクエストするには、[UX 調達提案 Issue テンプレート](https://gitlab.com/gitlab-com/Product/-/issues/new?related_item_id=undefined&type=ISSUE&description_template=UX-Procurement-Request)を使用して Issue を作成してください。マネージャーが UX Leadership と協力して支出ニーズを特定し、FP&A と連携して予算を確保した後、[ベンダーライフサイクル](/handbook/finance/procurement/#vendor-lifecycle-management)に従います。
 
-## UX ラベル
+## UX ラベル {#ux-labels}
 
-GitLab では、ラベルを使用して作業を分類、優先順位付け、追跡しています。以下は、UX ワークフローに最も直接関連するラベルの内訳です。すべてのラベルの種類と用途の概要は、[contributing doc](https://gitlab.com/gitlab-org/gitlab-foss/blob/master/doc/development/contributing/issue_workflow.md) を参照してください。
+GitLab では、ラベルを使用して作業を分類、優先順位付け、追跡しています。以下は、UX ワークフローに最も直接関連するラベルの内訳です。すべてのラベルの種類と用途の概要は、[貢献ドキュメント](https://gitlab.com/gitlab-org/gitlab-foss/blob/master/doc/development/contributing/issue_workflow.md)を参照してください。
 
 - [**UX** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX): この Issue で UX 作業が必要であることを示します。これらの Issue は、新機能、改善のアイデア、または UX が専門知識を提供すべきその他のものになります。
-- [**Inclusion** ラベル](https://gitlab.com/groups/gitlab-org/-/labels?utf8=✓&subscribed=&search=Inclusion): 私たちの[多様性](/handbook/values/#diversity-inclusion)バリューに関連して、包摂を促進する GitLab への変更。
+- [**Inclusion** ラベル](https://gitlab.com/groups/gitlab-org/-/labels?utf8=✓&subscribed=&search=Inclusion): 私たちの多様性バリューに関連して、包摂を促進する GitLab への変更。
 - [**Inclusive design** ラベル](https://gitlab.com/groups/gitlab-org/-/labels?utf8=✓&subscribed=&search=Inclusive+design): よりアクセシブルな体験につながるコンテンツへのアクセス、操作、貢献のさまざまな方法を検討、探求、評価します。
 - **Accessibility および scoped accessibility ラベル** は、アクセシビリティへの影響がある Issue を特定するために使用されます。scoped ラベルは、アクセシビリティ監査によって影響が検証された後に追加し、[priority](/handbook/product-development/how-we-work/issue-triage/#priority) および [severity](/handbook/product-development/how-we-work/issue-triage/#severity) ラベルと組み合わせて Issue を[トリアージ](/handbook/product-development/how-we-work/issue-triage/)するために使用してください。
   - [**Accessibility** ラベル](https://gitlab.com/groups/gitlab-org/-/labels?utf8=✓&subscribed=&search=%22Accessibility%22): アクセシブルなプロダクト体験の作成に役立つ実行可能な項目を含む Issue。
@@ -78,9 +78,9 @@ GitLab では、ラベルを使用して作業を分類、優先順位付け、�
   - `workflow::problem validation`
   - `workflow::design`
   - `workflow::solution validation`
-- **Pajamas コンポーネントライフサイクルラベル** は、[Pajamas](https://design.gitlab.com) コンポーネントを作成・更新するために使用される scoped ラベルです。ラベルの使用ガイドラインは [Pajamas コンポーネントライフサイクルドキュメント](https://design.gitlab.com/get-started/lifecycle/) を参照してください。
-- [**UX problem validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20problem%20validation): Issue が、ユーザーに関連する問題であることを検証するために UX 作業を必要としていることを示します。このラベルは Product Development Flow の scoped ラベルに加えて使用し、[UX パフォーマンス指標](/handbook/product/ux/performance-indicators/) で経時的に検証努力を追跡できるようにします。
-- [**UX solution validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20solution%20validation): Issue が、提案された解決策が技術的に実行可能でユーザーニーズを満たしていることを検証するためのタスクを必要としていることを示します。このラベルは Product Development Flow の scoped ラベルに加えて使用し、[UX パフォーマンス指標](/handbook/product/ux/performance-indicators/) で経時的に検証努力を追跡できるようにします。
+- **Pajamas コンポーネントライフサイクルラベル** は、[Pajamas](https://design.gitlab.com) コンポーネントを作成・更新するために使用される scoped ラベルです。ラベルの使用ガイドラインは [Pajamas コンポーネントライフサイクルドキュメント](https://design.gitlab.com/get-started/lifecycle/)を参照してください。
+- [**UX problem validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20problem%20validation): Issue が、ユーザーに関連する問題であることを検証するために UX 作業を必要としていることを示します。このラベルは Product Development Flow の scoped ラベルに加えて使用し、[UX パフォーマンス指標](/handbook/product/ux/performance-indicators/)で経時的に検証努力を追跡できるようにします。
+- [**UX solution validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20solution%20validation): Issue が、提案された解決策が技術的に実行可能でユーザーニーズを満たしていることを検証するためのタスクを必要としていることを示します。このラベルは Product Development Flow の scoped ラベルに加えて使用し、[UX パフォーマンス指標](/handbook/product/ux/performance-indicators/)で経時的に検証努力を追跡できるようにします。
 - [**UI polish** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&state=opened&utf8=%E2%9C%93&label_name%5B%5D=UI+polish): 既存のユーザーインターフェースへの視覚的改善*のみ*を扱う Issue であることを示します。
 - [**Deferred UX** ラベル](https://gitlab.com/groups/gitlab-org/-/labels?subscribed=&sort=relevance&search=deferred+ux): Deferred UX は、UX ビジョンや MVC から意図的に逸脱する決定によって生じ、ユーザー体験を犠牲にするものです。Deferred UX のラベルが付いた Issue は、後続のリリースに含まれる必要があります。次のいずれかを満たさないリリース UX を示すためにこのラベルを使用してください。
   - UX および Pajamas の仕様
@@ -97,22 +97,22 @@ GitLab では、ラベルを使用して作業を分類、優先順位付け、�
 - [**Seeking community contributions**](https://gitlab.com/groups/gitlab-org/-/issues?state=opened&label_name[]=Seeking+community+contributions&assignee_id=0&sort=weight)
 - [**System Usability Scale (SUS)** ラベル](https://gitlab.com/gitlab-org/gitlab/-/labels?subscribed=&search=sus): Issue が、SUS リサーチ活動のいずれかで明らかになったユーザビリティ問題に関連していることを示します。より具体的には、優先順位が付けられた SUS 関連の Issue は、対応する会計年度と四半期でラベル付けできます。例: `SUS::FY22 Q2 - Incomplete`。
 [**SUS スコアを UX 部門のパフォーマンス指標として詳しく知る**](/handbook/product/ux/performance-indicators/#perception-of-system-usability)
-- [**Regression** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&state=opened&utf8=%E2%9C%93&label_name%5B%5D=regression): 最新のリリースで導入された、正しい動作を破壊するバグを示します（詳細は [貢献ガイドライン](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#regression-issues) を参照）。
-- [**UX scorecard** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20scorecard): [UX Scorecard](/handbook/product/ux/ux-scorecards/) のメイン Issue またはエピックを示します。このラベルを使用して、現在の作業を簡単に見つけ、経時的に活動を追跡できるようにしています。
+- [**Regression** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&state=opened&utf8=%E2%9C%93&label_name%5B%5D=regression): 最新のリリースで導入された、正しい動作を破壊するバグを示します（詳細は [貢献ガイドライン](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#regression-issues)を参照）。
+- [**UX scorecard** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20scorecard): [UX Scorecard](/handbook/product/ux/ux-scorecards/)のメイン Issue またはエピックを示します。このラベルを使用して、現在の作業を簡単に見つけ、経時的に活動を追跡できるようにしています。
 - [**UX scorecard-rec** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20scorecard-rec): この Issue が UX scorecard レビューの結果として生まれた推奨事項であることを示します。スコアカードが行われる前に Issue が作成されていても問題ありません。それでも推奨事項のセットに引き入れることができます。
 - [**cm-scorecard-rec** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=cm-scorecard-rec): この Issue が CM スコアカードの結果として生まれた推奨事項であることを示します。
-- [Actionable Insights](/handbook/upstream-studios/experience-research/research-insights/#how-to-document-actionable-insights) は、対処する必要があるリサーチからの学びを文書化します。
+- [Actionable Insights](/handbook/upstream-studios/experience-research/research-insights/#how-to-document-actionable-insights)は、対処する必要があるリサーチからの学びを文書化します。
   - [Actionable Insight::Exploration needed](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=Actionable%20Insight%3A%3AExploration%20needed): さらなる探求を必要とする UX リサーチ研究から得られたリサーチインサイト。
   - [Actionable Insight::Product change](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=Actionable%20Insight%3A%3AProduct%20change): UX リサーチ研究から得られ、プロダクト体験への変更を必要とするリサーチインサイト。
-- [Type ラベル](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification): feature、maintenance、bug の Issue や MR を追跡するために使用されます。UX リーダーシップは、これら 3 つの作業タイプすべての優先順位付けに影響を与える積極的な参加者です。[機能、メンテナンス、バグの優先順位付け DRI](/handbook/product/product-processes/cross-functional-prioritization/#prioritization-for-feature-maintenance-and-bugs) も参照してください。
+- [Type ラベル](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification): 機能、メンテナンス、バグの Issue や MR を追跡するために使用されます。UX Leadership は、これら 3 つの作業タイプすべての優先順位付けに影響を与える積極的な参加者です。[機能、メンテナンス、バグの優先順位付け DRI](/handbook/product/product-processes/cross-functional-prioritization/#prioritization-for-feature-maintenance-and-bugs)も参照してください。
 - **Theme ラベル** は、同じユーザー体験の問題を解決するもののどのカテゴリーにも属さない Issue をグループ化するために作成できます。これは、プロダクト全体にまたがるユーザー体験に対して特に役立ちます。これらの Issue にも UX ラベルが必要です。
 - [**UX: Feature Discovery Improvement**](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=UX%3A++Feature+Discoverability+Improvement): Issue が機能の発見可能性を向上させる可能性があることを示します。
 - [**UX: Onboarding Improvement**](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=UX%3A%20Onboarding%20Improvement): Issue が潜在的なオンボーディング改善であることを示します。
 
-## Upstream Studios カレンダー
+## Upstream Studios カレンダー {#upstream-studios-calendar}
 
 [Upstream Studios カレンダー](https://calendar.google.com/calendar/embed?src=gitlab.com_9psh26fha3e4mvhlrefusb619k%40group.calendar.google.com)（*社内限定*）は、私たちのチームミーティングの SSOT です。Upstream Studios の通話、Upstream Forum、その他のチームミーティングの詳細をここで見つけることができます。これらのミーティングは GitLab の誰にでも開かれています。Upstream Studios 部門の誰でも Google カレンダーにイベントを追加できます。マネージャー以上は変更や共有の管理が可能で、IC はイベントへの変更が可能です。
 
-## レトロスペクティブ
+## レトロスペクティブ {#retrospectives}
 
 UX 部門が直面する具体的な課題を理解するために、各マイルストーン終了後に非同期 UX レトロスペクティブを実施しています。このレトロは、[ux-retrospectives](https://gitlab.com/gl-retrospectives/ux-retrospectives/issues) プロジェクトで最近のリリース用に作成された新しい Issue を通じて実施されます。目標は、うまくいったこと、うまくいかなかったこと、改善できることを評価することです。

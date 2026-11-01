@@ -1,36 +1,36 @@
 ---
 title: Secure QA プロセス
 upstream_path: /handbook/engineering/development/sec/security-factory/qa_process/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T15:10:33+03:00"
-translated_at: "2026-08-14T07:10:00+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T06:30:15+00:00"
 translator: codex
 stale: false
 ---
 
-## すべてはマージリクエストから始まります
+## すべてはマージリクエストから始まります {#everything-starts-with-a-merge-request}
 
 私たちは、プロダクトへのすべての貢献がフォーマルなレビューを伴うマージリクエストを経ることを求め、要求しています。そのため、私たちは GitLab の開発者ドキュメントに記載されている[マージリクエストワークフロー](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html)と[コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)に従っています。ただし、これらのドキュメントからいくつかの項目を強調し、レビュアーと著者に対するいくつかの追加的な考慮事項を追加したいと思います。
 
-### マージリクエストレビュアーへの追加的な考慮事項
+### マージリクエストレビュアーへの追加的な考慮事項 {#additional-considerations-for-merge-request-reviewers}
 
 * ピアやコミュニティメンバーのブロックを解除する最善の方法は、[タイムリーにフィードバックを提供すること](/handbook/engineering/workflow/code-review/#review-turnaround-time)です。キャパシティがいっぱいで、私たちが目指す SLO 内でレビューを行えない場合は、別のレビュアーを見つけられるようにマージリクエストでその旨を知らせてください。
 
-### マージリクエスト著者への追加的な考慮事項
+### マージリクエスト著者への追加的な考慮事項 {#additional-considerations-for-merge-request-authors}
 
-* グローバルに分散した組織であることは、人々の間のやり取りに遅延を生じさせることがあり、頻繁にそうなります。変更へのフィードバックを受け取るのが予想より長くかかっても、[個人的に受け取らないでください](/handbook/values/#assume-positive-intent)。
+* グローバルに分散した組織であることは、人々の間のやり取りに遅延を生じさせることがあり、頻繁にそうなります。変更へのフィードバックを受け取るのが予想より長くかかっても、個人的に受け取らないでください。
 
-## Secure QA プロセス
+## Secure QA プロセス {#secure-qa-process}
 
 Secure アナライザーは、サポートされる言語／フレームワークのダウンストリームテストプロジェクトに対して新しいコミットを実行することで、マージリクエストを検証します（例：`Dependency Scanning` の [`gemnasium` アナライザー](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium)は `php`、`go`、およびその[他いくつかの](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium/-/blob/v2.21.0/.gitlab-ci.yml#L35-89)テストプロジェクトに対してテストをトリガーします）。検証は、生成されたレポート出力をアナライザーのリポジトリにコミットされた期待レポートと比較することで行われます。アナライザーの動作が変更された場合、期待レポートと生成されたレポートの内容が一致しなくなるため、パイプラインは失敗します。
 
 `Dependency Scanning`、`SAST`、`Secrets Detection` アナライザーの期待値は、プロジェクトの `qa/expect` ディレクトリに、各フレームワーク／言語タイプのサブディレクトリとともに格納されています。
 
-### テストプロジェクト
+### テストプロジェクト {#test-projects}
 
 テストプロジェクトは Secure の [tests サブグループ](https://gitlab.com/gitlab-org/security-products/tests/)にあり、その使用方法とベストプラクティスは [common README](https://gitlab.com/gitlab-org/security-products/tests/common/-/blob/master/README.md)に記載されています。
 
-### アナライザーの動作変更
+### アナライザーの動作変更 {#changing-analyzer-behavior}
 
 アナライザーへの変更がレポート出力を変更する場合、期待レポートも変更する必要があります。
 
@@ -40,15 +40,15 @@ Secure アナライザーは、サポートされる言語／フレームワー�
 
 詳細については、[Security Products テストプロジェクトリポジトリ](https://gitlab.com/gitlab-org/security-products/tests/common/-/blob/master/README.md)で確認できます。
 
-### OpenShift でのテスト
+### OpenShift でのテスト {#testing-on-openshift}
 
 現在、OpenShift の自動テストはありません。変更がアナライザーの動作に OpenShift 上でどのような影響を与えるかを確認したい場合は、OpenShift 環境をセットアップしてテストできます。これを行うには 2 つの方法があります。
 
-#### 1. 自動スクリプト
+#### 1. 自動スクリプト {#1-automated-script}
 
 ディストリビューションチームが OpenShift クラスターをセットアップするための[自動スクリプト](https://gitlab.com/gitlab-org/distribution/infrastructure/openshift-provisioning)を共有しています。私たちのグループではテストされていませんが、この方法はクラスター作成プロセスを効率化できる可能性があります。
 
-#### 2. 手動セットアップ
+#### 2. 手動セットアップ {#2-manual-setup}
 
 [GitLab Sandbox Cloud](https://gitlabsandbox.cloud/)へのアクセスがすでにある場合、以下の手順に従って OpenShift クラスターをセットアップできます。
 
@@ -110,7 +110,7 @@ Secure アナライザーは、サポートされる言語／フレームワー�
 
    `gitlab-runner-operator README.md` で参照されている[ランナートークン](https://gitlab.com/gitlab-org/gl-openshift/gitlab-runner-operator/-/blob/master/README.md?plain=1#L43)は、GitLab プロジェクトから `CI/CD Settings > Runners > New Runner` を選択することで取得できます。
 
-   ランナーのセットアップには、コマンドラインツール [`oc`（OpenShift クライアント）のインストール](https://docs.redhat.com/en/documentation/red_hat_build_of_microshift/4.12/html/cli_tools/microshift-oc-cli-install#cli-installing-cli_cli-oc-installing)が必要です。`oc` を使用する前に、クラスターに対して認証する必要があります。OpenShift クラスター管理者ユーザー名をクリックし、`Copy login comand` を選択することで認証情報を確認できます。デフォルトのランナーセットアップでは、コンテナが root 権限で実行されることに注意してください。root 以外のユーザーへのアクセスを制限するには、以下の設定を提供できます。
+   ランナーのセットアップには、コマンドラインツール [`oc`（OpenShift クライアント）のインストール](https://docs.redhat.com/en/documentation/red_hat_build_of_microshift/4.12/html/cli_tools/microshift-oc-cli-install#cli-installing-cli_cli-oc-installing)が必要です。`oc` を使用する前に、クラスターに対して認証する必要があります。OpenShift クラスター管理者ユーザー名をクリックし、`Copy login comand` を選択することで認証情報を確認できます。デフォルトのランナーセットアップでは、コンテナが root 権限で実行されることに注意してください。実行ユーザーを root 以外に制限するには、以下の設定を提供できます。
 
     ```toml
     [[runners]]

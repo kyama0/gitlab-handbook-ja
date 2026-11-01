@@ -2,69 +2,69 @@
 title: "GitLab SAFE フレームワーク"
 description: "GitLab における SAFE フレームワークの概要。"
 upstream_path: "/handbook/legal/safe-framework/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T09:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:33:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-02T16:06:46-06:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## **SAFE**
+## **SAFE** {#safe}
 
-### **なぜ SAFE なのか？**
+### **なぜ SAFE なのか？** {#why-safe}
 
-GitLab は数多くのマイルストーンを達成しており、[透明性](/handbook/values/#transparency)は創業当初から私たちの成功に欠かせないものでした。GitLab が成熟するにつれて、透明性を内部透明性と外部透明性の両方として捉えるよう進化しました。したがって、GitLab とチームメンバーを保護するために責任ある透明性を可能にするツールをチームメンバーに引き続き提供したいと思っています。そのためには、動画・ブログ記事・ソーシャルメディアへの投稿・インタビュー・プレゼンテーション・Epic・Issue・マージリクエストまたはその他のフォーマットで情報を共有する際に考慮しなければならない特定の要素があります。そのため、私たちの [CREDIT](/handbook/values/#credit) 価値観に沿って、「**SAFE**」フレームワークがガイドとして機能します。
+GitLab は数多くのマイルストーンを達成しており、透明性は創業当初から私たちの成功に欠かせないものでした。GitLab が成熟するにつれて、透明性を内部透明性と外部透明性の両方として捉えるよう進化しました。したがって、GitLab とチームメンバーを保護するために責任ある透明性を可能にするツールをチームメンバーに引き続き提供したいと思っています。そのためには、動画・ブログ記事・ソーシャルメディアへの投稿・インタビュー・プレゼンテーション・エピック・Issue・マージリクエストまたはその他のフォーマットで情報を共有する際に考慮しなければならない特定の要素があります。そのため、私たちの [CREDIT](/handbook/company/operating-principles/#acknowledging-credit) 価値観に沿って、"**SAFE"** フレームワークがガイドとして機能します。
 
-また、私たちの [CREDIT](/handbook/values/) 価値観と一致して、これは生きたフレームワークであり、GitLab の進化の過程で得た教訓に基づいてこのフレームワークを継続的にイテレーションしていきます。
+また、私たちの CREDIT 価値観と一致して、これは生きたフレームワークであり、GitLab の進化の過程で得た教訓に基づいてこのフレームワークを継続的にイテレーションしていきます。
 
-貢献することで、チームメンバーは GitLab が [CREDIT](/handbook/values/#credit) 価値観を前面と中心に保ちながら、[透明性](/handbook/values/#transparency)を引き続き優先できるよう支援することになります。ご質問がある場合は、[#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルで聞いてください。[#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルに連絡する際は、それが公開チャンネルであるため機密情報を含めないようにしてください。代わりに、法務チームからの返答を待ち、機密情報は DM で法務チームと共有することができます。
+貢献することで、チームメンバーは GitLab が [CREDIT](/handbook/company/operating-principles/#acknowledging-credit) 価値観を前面と中心に保ちながら、透明性を引き続き優先できるよう支援することになります。ご質問がある場合は、[#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルで聞いてください。[#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルに連絡する際は、それが公開チャンネルであるため機密情報を含めないようにしてください。代わりに、法務チームからの返答を待ち、機密情報は DM で法務チームと共有することができます。
 
 法的なレビューが必要なすべての資料については、[資料法的レビュープロセス](/handbook/legal/materials-legal-review-process)を参照してください。
 
-#### **SAFE とは何か？**
+#### **SAFE とは何か？** {#what-is-safe}
 
-##### **Sensitive（機密性）：**
+##### **Sensitive（機密性）：** {#sensitive}
 
 「**S**AFE」の **S** は、チームメンバーが GitLab Legal の明示的な承認なしに**機密**情報とみなされる可能性のある情報を共有しないよう注意を促すリマインダーとして機能します。開示前に考慮すべきこと：
 
 1. **機密**情報とみなされるのは何か？
     1. [非公開](/handbook/communication/confidentiality-levels/#not-public)の会社の機密情報。
-    1. [一般に知られていないまたは外部から入手できない](/handbook/communication/confidentiality-levels/#internal)情報は機密情報とみなされる場合があります。機密情報には以下が含まれます：
+    1. [一般に知られていない情報](/handbook/communication/confidentiality-levels/#internal)や[外部から入手できない情報](/handbook/communication/confidentiality-levels/#internal)を明らかにするデータは機密情報とみなされる場合があります。機密情報には以下が含まれます：
         - チームメンバーデータ（個人の業績・入社日・退職）
         - 顧客またはパートナー情報（ロゴ・商標・支出）
     1. 重要な未公開情報。重要な未公開情報とは、公開されておらず、合理的な投資家が投資決定（会社の株式の購入・売却・保有）において重要と考える可能性のある情報です。重要な未公開情報の例には以下が含まれます：
         - 資本市場へのアクセスに関する会社の意向（プライマリー株式の売却・セカンダリー株式活動・負債の発行）；
         - 会社の財務結果；
         - 重要な新規顧客の獲得または喪失の可能性；
-        - 会社の上級幹部または取締役会メンバーの1名以上の保留中の退任；
+        - 会社の上級幹部または取締役会メンバーの 1 名以上の予定されている退任；
         - 会社のプラットフォームのセキュリティと安定性；
         - 重大な取引；
-        - 重要な資産または事業の保留中の購入または売却；および
+        - 重要な資産または事業の予定されている購入または売却；および
         - 係属中の重要な法的または規制上の手続きまたは和解。
 
 機密または重要な未公開情報の開示は、チームメンバーまたは会社に有害である可能性があります。開示するコンテンツに上記の情報が含まれている場合、チームメンバーは [#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルから GitLab Legal のレビューを求めるべきです。疑問がある場合は、この種の情報を外部に配布する前に [#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルから VP of Legal, Corporate に問い合わせてください。
 
-##### **Accurate（正確性）：**
+##### **Accurate（正確性）：** {#accurate}
 
-SAFE の **A** は、チームメンバーが共有している情報が**正確**であることを再確認するリマインダーとして機能します。開示前に考慮すべきこと：
+S**A**FE の **A** は、チームメンバーが共有している情報が**正確**であることを再確認するリマインダーとして機能します。開示前に考慮すべきこと：
 
 1. 開示される情報は検証可能か？引用できる参考文献はあるか？情報を裏付けるデータはあり、そのデータは保存されてアクセス可能か？外部当事者から求められた場合に正確であることをどのように証明できるか？
-1. あなたはこの資料の正確性に対する直接責任者（[DRI](/handbook/people-group/directly-responsible-individuals/)）か？参考文献を引用できない場合、またはこの情報の [DRI](/handbook/people-group/directly-responsible-individuals/) でない場合、このデータを共有するために [DRI](/handbook/people-group/directly-responsible-individuals/) から承認を受けたか？
+1. あなたはこの資料の正確性に対する直接責任者（[DRI](/handbook/people-group/directly-responsible-individuals/)）か？参考文献を引用できない場合、またはこの情報の [DRI](/handbook/people-group/directly-responsible-individuals/)でない場合、このデータを共有するために [DRI](/handbook/people-group/directly-responsible-individuals/) から承認を受けたか？
 
 チームメンバーは共有している情報が**正確**であることを確認する責任があります。チームメンバーと第三者は提示された情報に依拠し、自分たちが作成する作品に同じ情報を組み込む場合があります。チームメンバーは情報が**正確**であることを確認するだけでなく、該当する場合は正確性を支持または使用したデータ導出の方法論を確認するための基礎データを提供できる必要があります。推定値は推定値として明確にマークすべきです。また、データが継続的に変化している場合、チームメンバーは共有データが正確な日付を「基準日」として示すべきです。
 
-##### **Financial（財務性）：**
+##### **Financial（財務性）：** {#financial}
 
-SAF**E の **F** は、会社の**財務**情報は保護するために非常に重要であるため、外部に共有する前に最高財務責任者の承認が必要であることを思い出させるリマインダーとして機能します。開示前に考慮すべきこと：
+SA**F**E の **F** は、会社の**財務**情報は保護するために非常に重要であるため、外部に共有する前に Chief Financial Officer の承認が必要であることを思い出させるリマインダーとして機能します。開示前に考慮すべきこと：
 
 1. 共有しようとしている情報に実際の結果または将来の予測を含む、ドル・業績指標・マージンなどの**財務**要素はあるか？情報は財務情報から派生または基づいているか？
 1. 共有しようとしている情報に将来見通しに関する記述は含まれているか？これには数量的（数字で表現できるもの）および定性的（数字で表現できないもの）な記述が含まれます。
 1. 情報はデータや財務ではなくプロセスや手続きに関連しているか？プロセスや手続きに関連する情報は配布しても安全な場合があります。
     - 例えば、四半期財務報告が完了する必要があるタイムラインを共有することは問題ありませんが、四半期財務結果を共有することは問題です。
 
-ガイダンス（株主への今後の収益に関する会社自身の最善の見積もり）・予測・推定を含む会社の財務情報は機密非公開情報とみなされるべきです。チームメンバーはまた、メトリクスやデータを含む情報が会社の財務価値を計算するために使用される可能性があることも考慮すべきであり、したがって機密情報とみなされるべきです。財務価値を計算するために使用できるメトリクスやデータの例には、各オファリング層の顧客数・大規模顧客の契約金額・特定のカテゴリや種類のサードパーティサービスやベンダーに関連する経費が含まれます。したがって、財務情報は GitLab の最高財務責任者の承認なしには公に開示すべきではありません。
+ガイダンス（株主への今後の収益に関する会社自身の最善の見積もり）・予測・推定を含む会社の財務情報は機密非公開情報とみなされるべきです。チームメンバーはまた、メトリクスやデータを含む情報が会社の財務価値を計算するために使用される可能性があることも考慮すべきであり、したがって機密情報とみなされるべきです。財務価値を計算するために使用できるメトリクスやデータの例には、各オファリング層の顧客数・大規模顧客の契約金額・特定のカテゴリや種類のサードパーティサービスやベンダーに関連する経費が含まれます。したがって、財務情報は GitLab の Chief Financial Officer の承認なしには公に開示すべきではありません。
 
-##### **Effect（影響性）：**
+##### **Effect（影響性）：** {#effect}
 
 SAF**E** の **E** は、チームメンバーが共有している情報が会社に与える意図的および非意図的な**影響**に注意するリマインダーとして機能します。開示前に考慮すべきこと：
 
@@ -77,11 +77,11 @@ SAF**E** の **E** は、チームメンバーが共有している情報が会�
 
 ご質問は [#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルから VP of Legal, Corporate に連絡してください。
 
-## **SAFE フローチャート**
+## **SAFE フローチャート** {#safe-flowchart}
 
 ![SAFE フローチャート](/images/legal/safe-framework/SafeFlowChart.png)
 
-## **SAFE ではない情報が共有された場合はどうすればよいか？**
+## **SAFE ではない情報が共有された場合はどうすればよいか？** {#what-if-unsafe-information-is-shared}
 
 **共有した、または GitLab の情報として機密性・不正確・財務的・または会社に有害もしくは投資家に有益な影響がある可能性があると思われる情報を見た場合はどうすればよいか？**
 
@@ -94,17 +94,17 @@ SAF**E** の **E** は、チームメンバーが共有している情報が会�
     - ヒント：公開 Issue での機密情報の社内交換には[内部メモ](https://docs.gitlab.com/ee/user/discussions/#add-an-internal-note)を使用できます。
 1. GitLab Unfiltered 動画：
     - SAFE フレームワークに適合しない情報を GitLab Unfiltered で共有した、または共有されているのを見た場合は、動画をプライベートとしてマークしてください。動画がプライベートになったら、直ちに VP of Legal, Corporate に [#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルでメッセージを送ってください。
-    - VP of Legal, Corporate と Vice President, Investor Relations がレビューし、次のステップを決定します。これにはデジタルプロダクションチームへの削除依頼が含まれる場合があります。
+    - VP of Legal, Corporate と Vice President, Investor Relations がレビューし、次のステップを決定します。これには Digital Production チームへの削除依頼が含まれる場合があります。
 1. その他のメディア：
     - SAFE フレームワークに適合しない情報が別のメディアで共有された、または共有されているのを見た場合は、直ちに Slack で VP of Legal, Corporate に [#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネル経由で元の投稿へのリンクを送ってください。
-    - VP of Legal, Corporate と Vice President, Investor Relations がレビューし、必要に応じて、情報を準拠するよう改訂するために適切な [DRI](/handbook/people-group/directly-responsible-individuals/) に連絡するか、必要であれば削除します。
+    - VP of Legal, Corporate と Vice President, Investor Relations がレビューし、必要に応じて、情報を準拠するよう改訂するために適切な [DRI](/handbook/people-group/directly-responsible-individuals/)に連絡するか、必要であれば削除します。
 
-### **SAFE をどのように強化するか？**
+### **SAFE をどのように強化するか？** {#how-do-we-reinforce-safe}
 
 私たちは以下の方法で SAFE を強化します：
 
-1. [#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルを通じてミスを報告するための安全な場所を提供する — 私たちは[善意を推定し](/handbook/values/#assume-positive-intent)、[非難なしの問題解決](/handbook/values/#blameless-problem-solving)を信じています。
-1. 会社全体のチームから SAFE アンバサダーを配置し、質問への回答を支援します。
+1. [#safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack チャンネルを通じてミスを報告するための安全な場所を提供する — 私たちは善意を推定し、非難なしの問題解決を信じています。
+1. 会社全体のチームから SAFE Ambassadors を配置し、質問への回答を支援します。
 1. [オンボーディング](/handbook/people-group/general-onboarding/#onboarding-at-gitlab)中に SAFE フレームワークを強調します。
-1. `:safe-tanuki:` 絵文字 ![Safe Tanuki](/images/legal/safe-framework/safe-tanuki-90x90px.png) を使用してチームメンバーに SAFE フレームワークを思い出させます。
+1. `:safe-tanuki:` 絵文字 ![Safe Tanuki](/images/legal/safe-framework/safe-tanuki-90x90px.png)を使用してチームメンバーに SAFE フレームワークを思い出させます。
 1. 責任ある透明性実践とコンプライアンス規制に関するトレーニングをチームメンバーに提供します。これらのトレーニングは、チームメンバーのみと共有すべき情報である GitLab の内部透明性と、世界と共有できる情報である外部公開透明性の概念を強化します。

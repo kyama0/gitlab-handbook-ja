@@ -1,11 +1,11 @@
 ---
 title: "GitLab Partner Champions Program"
 upstream_path: /handbook/resellers/partner-champions-program/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:33:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-11-03T17:49:46+01:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ![GitLab Partner Champion](/images/resellers/partner-champions-program/champions-dark-bg.png)
@@ -14,12 +14,12 @@ lastmod: "2025-11-03T17:49:46+01:00"
 
 GitLab Partner Champions Program は、GitLab DevSecOps プラットフォームを基盤とした優れた顧客成果を支持する GitLab パートナーコミュニティのメンバーをエンパワー・支援・報奨・表彰します。
 
-## GitLab Champions: 共有成功のためのアドボカシー
+## GitLab Champions: 共有成功のためのアドボカシー {#gitlab-champions-advocating-for-shared-success}
 
-GitLab Champions は、世界中で GitLab および私たちのコミュニティに対して優れた貢献をする GitLab パートナーコミュニティのメンバーを登録・支援・報奨・表彰します 。
+GitLab Champions は、世界中で GitLab および私たちのコミュニティに対して優れた貢献をする GitLab パートナーコミュニティのメンバーを登録・支援・報奨・表彰します。
 [GitLab Champion になる](https://docs.google.com/forms/d/e/1FAIpQLSdLonA8F4Msz8wujNeOYKwkC0ohjUamgv4ZH3FNgC2MQHgBzA/viewform?subject=GitLab%20Heroes%20Application&body)
 
-## GitLab Partner Champions Program の主要機能
+## GitLab Partner Champions Program の主要機能 {#gitlab-partner-champions-program-key-features}
 
 **- テーマ性とスポンサー型コミュニティ:** 特徴的な GitLab テーマで設計され、GitLab が財政的に支援しています。各リージョンの Channels SA がリードします。
 
@@ -35,7 +35,7 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 **- 継続的エンゲージメント:** ミーティング、ワークショップ、共同イニシアチブなどの定期的なエンゲージメント活動により、GitLab Champions の継続的な関与を確保し、プログラム全体を強化します。
 
-## なぜ GitLab Partner Champion になるのか？
+## なぜ GitLab Partner Champion になるのか？ {#why-to-become-a-gitlab-partner-champion}
 
 **- セールスの機会:** GitLab Field Sales 組織内で組織の GitLab SME としてプロモートされ、セールスリードや新しいオポチュニティを生み出す可能性があります。
 
@@ -47,13 +47,13 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 **- 表彰:** パートナーコミュニティ内および GitLab の公式チャネル両方で、GitLab Champion としての公の表彰と可視性を受けます。この表彰はあなたのプロフェッショナルプロファイルを向上させることができます。
 
-**- GitLab Swag とマーチャンダイズ:** GitLab プラクティス開発への努力への感謝のしるしとして、GitLab ブランドの限定マーチャンダイズと swag アイテムをお楽しみいただけます。
+**- GitLab Swag とマーチャンダイズ:** GitLab プラクティス開発への努力への感謝のしるしとして、GitLab ブランドの限定マーチャンダイズとグッズをお楽しみいただけます。
 
 **- トレーニングと認定の機会:** GitLab の専門知識を向上させるトレーニングおよび認定プログラムの恩恵を受け、あなたをパートナー組織にとってより価値のある存在にします。Champion には GitLab 認定バウチャーが提供され、追加費用なしで GitLab に関する技術知識を最新に保つことができます。
 
-## プログラムに適した候補者は？
+## プログラムに適した候補者は？ {#who-is-the-right-candidate-for-the-program}
 
-**- GitLab 価値観への準拠:** GitLab の[ミッション](/handbook/company/mission/#mission)を志し、私たちの[価値観](/handbook/values/)を尊重し、私たちの[行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/)を遵守します。
+**- GitLab 価値観への準拠:** GitLab の[ミッション](/handbook/company/mission/#mission)を志し、私たちの価値観を尊重し、私たちの[行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/)を遵守します。
 
 **- GitLab への情熱:** GitLab に対する真の情熱と、パートナー組織内でのプラクティス構築を推進したいという願望。
 
@@ -65,11 +65,11 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 **- コミュニティ貢献:** フォーラム、イベント、共同プロジェクトを通じて GitLab コミュニティにすでに貢献している候補者を考慮します。
 
-## GitLab Partner Champions Program への参加方法
+## GitLab Partner Champions Program への参加方法 {#how-to-join-the-gitlab-partner-champions-program}
 
-![The Process to become a GitLab Partner Champion](/images/resellers/partner-champions-program/BecomeAChampion.png)
+![GitLab Partner Champion になるためのプロセス](/images/resellers/partner-champions-program/BecomeAChampion.png)
 
-## 期待される GitLab Partner Champions の成果
+## 期待される GitLab Partner Champions の成果 {#expected-gitlab-partner-champions-outputs}
 
 **- 活発な参加を維持する:** GitLab Champions に提供される定期的なリージョンミーティング（ウェビナー）に参加し、出席する。
 
@@ -77,17 +77,17 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 **- パートナーチームのイネーブルメント:** パートナー組織内で GitLab の SME として機能し、四半期に少なくとも 1 回は GitLab イネーブルメントセッションを提供する。
 
-**- GitLab Product Strategy:** GitLab Product チームに対し、GitLab 内の新しい機能や変更された機能に関する実践的なフィールド経験からのフィードバックを提供する。
+**- GitLab の製品戦略:** GitLab Product チームに対し、GitLab 内の新しい機能や変更された機能に関する実践的なフィールド経験からのフィードバックを提供する。
 
 **- トレーニングへの参加:** GitLab が主催するトレーニングセッションに参加し、技術スキルを向上させ、GitLab の最新の進歩について最新情報を得る。
 
-**- GitLab Publications:** ブログ、動画、ホワイトペーパーなど、年間少なくとも 2 つの成果物を寄稿することで GitLab コミュニティに参加する。
+**- GitLab の出版物:** ブログ、動画、ホワイトペーパーなど、年間少なくとも 2 つの成果物を寄稿することで GitLab コミュニティに参加する。
 
-**- GitLab コミュニティサポート:** 可能な場合、GitLab Champions リージョナルソーシャルイベント（ディナー、meetup、集会）に出席する。
+**- GitLab コミュニティサポート:** 可能な場合、GitLab Champions リージョナルソーシャルイベント（ディナー、ミートアップ、集会）に出席する。
 
-## 内部 Champion Program プロセス
+## 内部 Champion Program プロセス {#internal-champion-program-processes}
 
-### Champion 候補者の指名とオンボーディング
+### Champion 候補者の指名とオンボーディング {#champion-candidate-nomination-and-onboarding}
 
 **Champions Program Manager および Ecosystem Specialists**
 
@@ -99,17 +99,17 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 **Sponsor GitLab SA**
 
 1. メールアドレスで新しい Champion を [https://gitlab.com/gitlab-partners-public/gitlab-champions](https://gitlab.com/gitlab-partners-public/gitlab-champions) グループの `Developer` メンバーとして招待します。
-1. 新しい Champion 用に Champions プロジェクト内で `New_Champion_Onboarding` テンプレートを使用して [オンボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=New_Champion_Onboarding) を作成します。
+1. 新しい Champion 用に Champions プロジェクト内で `New_Champion_Onboarding` テンプレートを使用して [オンボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=New_Champion_Onboarding)を作成します。
 1. Issue の `GitLab Sponsoring SA Tasks` セクションを完了します。
 1. Issue の `Partner Champion Tasks` セクションを完了するために新しい GitLab Champion と協力します。
 
-### Champion オフボーディング
+### Champion オフボーディング {#champion-offboarding}
 
-削除する Champion 用に、Champions プロジェクト内で `Champions_Offboarding` テンプレートを使用して [オフボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=Champions_Offboarding) を作成します。
+削除する Champion 用に、Champions プロジェクト内で `Champions_Offboarding` テンプレートを使用して [オフボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=Champions_Offboarding)を作成します。
 
-### Champions Call 録画とプレゼンテーションの投稿
+### Champions Call 録画とプレゼンテーションの投稿 {#posting-champions-call-recordings-and-presentation}
 
-**1-** リージョン別 Champions コールの後、セッションの GitLab ESA DRI が zoom からビデオファイルをダウンロードし、Highspot の [Team Spot: Global Ecosystems](https://gitlab.highspot.com/spots/66e3313c577f84375132109c) spot にアップロードします。
+**1-** リージョン別 Champions コールの後、セッションの GitLab ESA DRI が zoom からビデオファイルをダウンロードし、Highspot の [Team Spot: Global Ecosystems](https://gitlab.highspot.com/spots/66e3313c577f84375132109c) スポットにアップロードします。
 
 **2-** 「以下のプロパティを設定して Violates Policy 警告を解決します:
 

@@ -4,9 +4,9 @@ title: 'Kubernetes 上の HAProxy ADR 002：チャートとイメージ'
 description: "Helm チャート、コンテナイメージ、およびコンテナ向けに変更する HAProxy の設定。"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/haproxy_kubernetes/decisions/002_chart_and_images/"
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-15T11:59:42Z"
-translated_at: "2026-10-20T12:26:06+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-27T18:33:27Z"
+translated_at: "2026-11-01T06:49:50+00:00"
 translator: codex
 stale: false
 ---
@@ -142,7 +142,7 @@ Cloudflare のオリジンプル CA は、公開 CA で、現在はクックブ�
   readiness probe と preStop のドレイン対象にします。kas の
   リリースには、`nbsrv(kas)` を見る新しい `check_kas` を追加します。VM のロード
   バランサーのチェックは `/-/available-http` を見ています。
-- Chef から引き継いだ、効果のない設定を削除します。根拠は MR にあります。VM が一度も
+- クックブック内の、効果のない設定を削除します。根拠は MR にあります。VM が一度も
   ネゴシエーションしていないバインド上の `tfo`、`kas` と `ssh` の
   フロントエンド内の未使用の `stick-table`、
   2 つ目の stats バインドです。
@@ -182,7 +182,7 @@ ci-images は 3 つのイメージをビルドします。他のフリートの�
 - 各リリースは、シャードの値に独自の設定テンプレートを持ちます。
   バックエンドプール、ホスト名、スレッド数、リソースは環境の
   値です。ログ形式と Cloudflare の範囲は、グローバルの値です。
-  バックエンドを変更する場合、リリースごとに 1 か所を編集します。
+  バックエンドの変更は、1 か所の編集ですべてのリリースに反映されます。
 - 実行時に Docker Hub や `registry.gitlab.com` からプルすることはありません。
 - クライアントアドレスの処理は、Pod から実際の送信元
   アドレスが見えることに依存します。80 と 443 では `CF-Connecting-IP` に基づく `set-src`、

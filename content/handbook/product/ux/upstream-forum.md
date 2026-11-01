@@ -3,32 +3,32 @@ title: Upstream Forum
 description: >-
   Upstream Forum は、UX チームメンバーが作業を共有し、議論するための定期的なミーティングです。
 upstream_path: /handbook/product/ux/upstream-forum/
-upstream_sha: 4165803c1cf9adeae2826f1af918668be5c942f6
-lastmod: "2026-09-04T09:36:37-07:00"
-translated_at: "2026-09-06T09:49:51+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T06:45:40+00:00"
 translator: codex
 stale: false
 ---
 
-## Upstream Forum について
+## Upstream Forum について {#about-upstream-forum}
 
 {{% product/upstream-forum %}}
 
-### 目的
+### 目的 {#purpose}
 
 - ビジネス、プロダクト、ユーザーの成果を強調し、UX が提供する価値への認識を高める
 - 発見事項、機会、ソリューションの可視性を高める
 - より広い組織に UX の活動を知ってもらう機会を増やす
 - ミーティング中とその後のステージ横断的なコラボレーションを促進し、作業の質を高める
 
-### 対象者
+### 対象者 {#audience}
 
 - Product Designer、Researcher、Technical Writer のいずれか、または複数（発表者）
 - Upstream Studios
 - Product 部門
 - Engineering 部門
 
-### スケジュール
+### スケジュール {#schedule}
 
 フォーラムは 2 週間ごとに予定されます。最大 3 人のチームメンバーがそれぞれ 15 分間共有し、さらに参加者とのディスカッションにそれぞれ 5 分間を使えるよう、所要時間は 60 分です。スケジュールに柔軟性を持たせるため 4 人目の発表者枠も用意されていますが、ほとんどの Upstream Forum は 3 人の発表者で開催するのが理想です。
 
@@ -54,7 +54,7 @@ stale: false
 
 <a href="https://gitlab.com/-/ide/project/gitlab-com/content-sites/handbook/edit/main/-/assets/includes/product/upstream-forum-schedule.md" class="btn btn-primary">スケジュールを更新</a>
 
-## 作業を共有する
+## 作業を共有する {#sharing-your-work}
 
 作業を共有できる時間は最大 15 分です。
 複雑なトピックの共有と議論にさらに時間が必要な場合は、そのフォーラムの発表者を減らすことについてホストに相談してください。
@@ -67,7 +67,7 @@ stale: false
     専用のスライドやアセットの作成は避けます。ただし、プロトタイプ、一連のモックアップ、プロセス図、ジャーニーマップ、数枚のスライドなど、何が最も効果的かは自身で最善の判断をしてください。
     Upstream Forum は、凝ったストーリーテリングではなく、作業をインフォーマルに共有し、議論するためのものです。
 - **ちょうどよい洗練度**:
-    [恥を感じるレベルを低くする](/handbook/values/#low-level-of-shame-when-dogfooding)ことを目指し、できるだけ洗練度を抑えて作業を共有してください。
+    恥を感じるレベルを低くすることを目指し、できるだけ洗練度を抑えて作業を共有してください。
     トピックによっては、より洗練されたストーリーからメリットを得られますが、その洗練度によって品質が高いという印象が生まれ、ほかの発表者に不要なプレッシャーをかけ、参加者が関わりにくくなる可能性があります。
 - **共感しやすい**:
     対象者を念頭に置いてストーリーを構成し、フィードバックを引き出し、重複する可能性を強調します。
@@ -98,7 +98,7 @@ stale: false
   - ソリューションに影響する制約
 - 作業の望ましいゴールを述べます。
   - 望ましいビジネスと顧客の成果は何か？
-  - 理想的には、[JTDB](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27) を説明します
+  - 理想的には、[JTDB](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27)を説明します
     - [ユーザーのコンテキスト]のとき、[ユーザーのゴール]したい。それにより、[ユーザーが望む成果]を達成できる。
   - 制約は何だった／何であるか？
   - MVC に向けてどのようにイテレートした／する予定か？
@@ -130,11 +130,11 @@ stale: false
 
 Product Design Manager が交代で Upstream Forum をホストします。
 
-### セッションを録画する
+### セッションを録画する {#recording-the-sessions}
 
 Upstream Forum 後の編集量を抑えるため、各トピックの後で録画を開始および停止（一時停止ではなく）してください。これにより各トピックが個別のクリップとして保存され、1 時間のクリップよりも大幅に速く編集できます。録画のたびに「record to computer」を選択します。
 
-### GitLab Unfiltered で共有する
+### GitLab Unfiltered で共有する {#sharing-on-gitlab-unfiltered}
 
 動画を編集する必要がある場合は、iMovie などの動画エディターを使用できます。
 
@@ -143,25 +143,25 @@ Upstream Forum 後の編集量を抑えるため、各トピックの後で録�
 1. コンピューター上で動画クリップを見つけます。
 1. 「Upstream Forum」+ トピックのタイトルという形式で動画に名前を付けます。
 1. 動画を一般公開してよいか（顧客名が含まれていないか）発表者に確認します。
-1. 動画を [GitLab Unfiltered](https://m.youtube.com/playlist?list=PL05JrBw4t0Kq89nFXtkVviaIfYQPptwJz) にアップロードします。
+1. 動画を [GitLab Unfiltered](https://m.youtube.com/playlist?list=PL05JrBw4t0Kq89nFXtkVviaIfYQPptwJz)にアップロードします。
 1. 動画を [Upstream Forum プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq89nFXtkVviaIfYQPptwJz)と [Upstream Studios プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqkW0oPW3n0HqVgKcONVnO5)に追加します。
 1. 公開設定を Public にします。
-   1. 注: 動画の内容に un[SAFE](/handbook/legal/safe-framework/) な項目が含まれる場合は、動画を Private に設定します。
+   1. 注: 動画の内容に [SAFE](/handbook/legal/safe-framework/)に沿わない項目が含まれる場合は、動画を Private に設定します。
 1. 各トピックの簡単な説明とともに、YouTube リンクを `#upstream-studios` と `#product` の Slack チャネルで共有します。
    1. Engineering Week-In-Review ドキュメントにも同じ更新を追加します。このドキュメントは、社内の [`engineering-fyi` Slack チャネル](https://gitlab.slack.com/archives/CJWA4E9UG)の説明にあります。
 
-#### 役立つヒント
+#### 役立つヒント {#helpful-tips}
 
 - Zoom アカウントで動画が見つからない場合は、カレンダーイベント所有者のアカウントにアップロードされている可能性が高いため、所有者に問い合わせてください。
 - iMovie では、動画が 15 分未満であれば YouTube に直接アップロードできます。ただし、プレイリストを選択するには YouTube に移動する必要があります。
 - アップロード後に、[アップロードページ](https://studio.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A/videos/upload)に移動して動画を選択すると、より適切なサムネイルを選んだり、ほかの設定を編集したりできます。
 - [YouTube の使用に関する詳細](/handbook/marketing/marketing-operations/youtube/)。
 
-### スケジュールを更新し、次のセッションに備える
+### スケジュールを更新し、次のセッションに備える {#updating-the-schedule-and-preparing-for-next-sessions}
 
 各セッション後、[DesignOps Upstream Forum の自動化](https://gitlab.com/gitlab-com/designops/-/tree/main/automations/upstream-forum)により、以下が自動的に行われます。
 
 1. 完了したセッションを [スケジュール](https://gitlab.com/-/ide/project/gitlab-com/content-sites/handbook/edit/main/-/assets/includes/product/upstream-forum-schedule.md)から MR を介して削除します
-1. 次に予定されているセッションについて、スケジュールに記載されたホストと発表者のハンドルが事前入力された [Upstream Forum 追跡 Issue](https://gitlab.com/gitlab-org/gitlab-design/-/issues?label_name=UX+Forum) を `gitlab-org/gitlab-design` に作成します
+1. 次に予定されているセッションについて、スケジュールに記載されたホストと発表者のハンドルが事前入力された [Upstream Forum 追跡 Issue](https://gitlab.com/gitlab-org/gitlab-design/-/issues?label_name=UX+Forum)を `gitlab-org/gitlab-design` に作成します
 
 スケジュールを編集するときは、各氏名の後に GitLab ハンドルを括弧で囲んで記載してください。たとえば `Name (@handle)` とすると、自動化が適切な人を @メンションできます。

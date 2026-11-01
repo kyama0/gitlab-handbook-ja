@@ -2,11 +2,11 @@
 title: Growth ステージ
 description: "Growth ステージは、プロダクトの変更と実験を通じて、GitLab の購入を妨げる要因を取り除く 1 つのチームです。"
 upstream_path: /handbook/engineering/development/growth/
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-translated_at: "2026-10-19T10:15:57Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:24:27+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-14T13:54:16-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ## ミッション {#mission}
@@ -35,7 +35,7 @@ Growth の原則、指標、オーナーシップ、現在の優先事項につ�
 
 ## 作業方法 {#how-we-work}
 
-[バリュー](/handbook/values/)に沿って、[イテレーション](/handbook/values/#iteration)と [コラボレーション](/handbook/values/#collaboration)に焦点を当て、開発部門のカウンターパートが管理するプロダクトの領域と協力して取り組んでいます。
+バリューに沿って、イテレーションとコラボレーションに焦点を当て、開発部門のカウンターパートが管理するプロダクトの領域と協力して取り組んでいます。
 
 プロダクトチームが優先する Issue に取り組み、GitLab.com での[実験](/handbook/engineering/development/growth/experimentation/)も実施しています。Growth は 1 つのロードマップを持つ 1 つのチームであり、エンジニアはロードマップで最も優先順位の高い業務に割り当てられます。Growth のエンジニアは Fullstack Engineers です。Growth はフロントエンドとバックエンドの両方のスキルセットを必要としますが、小規模なチームとしてチームメンバーの効率を最適化するため、Fullstack のロールを採用しています。
 
@@ -127,7 +127,7 @@ Growth は以下の Slack チャンネルを使用します。
 - [Slack](https://gitlab.slack.com/archives/s_growth)の `#s_growth`（GitLab 内部）
 - [Growth の機会](https://gitlab.com/gitlab-org/growth/product/-/issues)
 - [Growth ミーティングとアジェンダ](https://drive.google.com/drive/search?q=type:document%20title:%22Growth%20Weekly%22)（GitLab 内部）
-- [GitLab バリュー](/handbook/values/)
+- GitLab バリュー
 
 ## CustomersDot トライアルコラボレーション {#customersdot-trials-collaboration}
 

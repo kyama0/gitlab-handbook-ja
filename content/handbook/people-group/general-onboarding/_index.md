@@ -2,18 +2,18 @@
 title: "GitLab のオンボーディング"
 description: "GitLab のオンボーディングと、オンボーディング Issue テンプレート"
 upstream_path: /handbook/people-group/general-onboarding/
-upstream_sha: 819fcd03ca3ddcde75fbd60bf7799c95d23d49f9
-translated_at: "2026-10-26T21:04:26.714134+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:04:33+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-23T12:38:14-05:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 GitLab では、オンボーディングは [非常に重要](/handbook/company/culture/all-remote/onboarding/)なものです。私たちは初日からすぐに業務をフル稼働で進めることを期待していません。
 
 オンボーディングには少なくとも 2 週間を確保し、チーム固有のオンボーディングとトレーニングは 3 週目から始めることを強く推奨します。最初の 2 週間でチームの業務に参加することは自由ですが、大きく貢献しなければならないと感じる必要はありません。
 
-すべてのオンボーディングステップは [オンボーディング Issue テンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)に集約されており、これは People Operations チームが所有しています。新しいチームメンバーのオンボーディングプロセスは、[セルフドリブンかつセルフラーニング](/handbook/values/#self-service-and-self-learning)であり、GitLab でのリモートライフに慣れる過程で可能な限り [非同期](/handbook/communication/)を保ちます。
+すべてのオンボーディングステップは [オンボーディング Issue テンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)に集約されており、これは People Operations チームが所有しています。新しいチームメンバーのオンボーディングプロセスは、セルフドリブンかつセルフラーニングであり、GitLab でのリモートライフに慣れる過程で可能な限り [非同期](/handbook/communication/)を保ちます。
 
 GitLab では、自社製品を使うことに大きな誇りを持っています。それゆえ、すべてのオンボーディングタスクは GitLab の Issue で完了させます。そもそも Issue とは何か、それについては [こちら](https://docs.gitlab.com/ee/user/project/issues/)で詳しく学べます。
 

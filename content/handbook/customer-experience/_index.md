@@ -3,9 +3,9 @@ title: Customer Experience
 description: GitLab の Customer Experience
 translator: claude
 upstream_path: /handbook/customer-experience/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-lastmod: "2026-09-24T21:34:11+02:00"
-translated_at: "2026-09-26T21:10:36+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T06:30:15+00:00"
 stale: false
 ---
 
@@ -39,13 +39,13 @@ Customer Experience 部門のミッションは、これらの顧客に次のこ
 - [Customer Success Architect ハンドブック](/handbook/customer-experience/csm/segment/csa/)
 - [Renewals Managers ハンドブック](/handbook/customer-experience/renewals-managers/home)
 
-### デジタル戦略 {#digital-strategy}
+### Digital Strategy {#digital-strategy}
 
-- [デジタル戦略ハンドブック](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/)
+- [Digital Strategy ハンドブック](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/)
 
-### デモシステム {#demo-systems}
+### Demo Systems {#demo-systems}
 
-- [デモシステムのドキュメント](/handbook/customer-experience/demo-systems/)
+- [Demo Systems のドキュメント](/handbook/customer-experience/demo-systems/)
 
 ### Customer Success の意思決定ツリー {#customer-success-decision-tree}
 
@@ -101,7 +101,7 @@ Customer Success での Gainsight の使用について詳しくは、[こちら
 
 ### ドッグフーディング {#dogfooding}
 
-Engineering 以外では、Customer Experience チームにツール開発の能力が最も多く集まっています。チームには独自のニーズがあり、GitLab の単一の [DevOps プラットフォーム](https://about.gitlab.com/solutions/devops-platform/)だけでは解決できない場合もあります。しかし、[ドッグフーディング](/handbook/values/#dogfooding)を行い、[ドッグフーディングのアンチパターン](/handbook/engineering/development/principles/#dogfooding-antipatterns)を避けることが重要です。そのため、[Product 組織は優先順位を検討する際に社内顧客を重視しています](/handbook/values/#dogfooding)。Customer Experience の優先事項を支援するために GitLab 以外でツールを構築することを検討している場合は、[ドッグフーディングのプロセス](/handbook/values/#dogfooding)に従ってください。
+Engineering 以外では、Customer Experience チームにツール開発の能力が最も多く集まっています。チームには独自のニーズがあり、GitLab の単一の [DevOps プラットフォーム](https://about.gitlab.com/solutions/devops-platform/)だけでは解決できない場合もあります。しかし、ドッグフーディングを行い、[ドッグフーディングのアンチパターン](/handbook/engineering/development/principles/#dogfooding-antipatterns)を避けることが重要です。そのため、Product 組織は優先順位を検討する際に社内顧客を重視しています。Customer Experience の優先事項を支援するために GitLab 以外でツールを構築することを検討している場合は、ドッグフーディングのプロセスに従ってください。
 
 ### Customer Experience の AWS テストアカウント {#customer-experience-aws-test-account}
 

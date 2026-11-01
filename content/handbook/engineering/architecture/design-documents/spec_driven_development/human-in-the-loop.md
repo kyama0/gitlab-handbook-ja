@@ -8,9 +8,9 @@ authors: [ "@vanessaotto" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/human-in-the-loop/"
-upstream_sha: "2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8"
-lastmod: "2026-10-20T13:32:50-04:00"
-translated_at: "2026-10-20T21:12:55Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-30T06:05:11+01:00"
+translated_at: "2026-11-01T06:06:56+00:00"
 translator: "codex"
 stale: false
 ---
@@ -73,7 +73,7 @@ SDD の詳細は、[Spec-Driven Development](_index.md)を参照してくださ�
 ## 未解決の質問 {#open-questions}
 
 - **承認リクエスト**：1 回の実行で、実際の質問と、ツール呼び出しの承認リクエストの両方が生じる可能性があります。現在の考えでは、ディスカッションには質問のみを載せ、承認はフローを実行している人が確認できる場所に残します。
-- **仕様の更新**：解決済みの Duo の決定に基づいて説明を自動更新する機能は、開発中です（[Issue 633224](https://gitlab.com/gitlab-org/gitlab/-/work_items/633224)）。提案中のバックエンドのイベントとワーカーは、AI が生成した編集を適用し、その説明のバージョンを決定にリンクします。フロントエンドでの差分表示と、手動の決定でも説明を更新すべきかどうかは、[Issue 629471](https://gitlab.com/gitlab-org/gitlab/-/work_items/629471)で引き続き議論中です。
+- **仕様の更新**：解決済みの Duo の決定に基づいて説明を自動更新する機能は、開発中です（[Issue 633224](https://gitlab.com/gitlab-org/gitlab/-/work_items/633224)）。解決済みの Duo の決定に基づき、AI が生成した説明の更新を適用するバックエンドサービスは存在します。このサービスはクイックアクションを除去し、新しいメンションをエスケープしますが、まだ何からも呼び出されていません（[マージリクエスト 262147](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/262147)）。このサービスを呼び出し、説明のバージョンを決定にリンクする、提案中のバックエンドのイベントとワーカーは、引き続き未完了です。フロントエンドでの差分表示と、手動の決定でも説明を更新すべきかどうかは、[Issue 629471](https://gitlab.com/gitlab-org/gitlab/-/work_items/629471)で引き続き議論中です。
 - **未回答の質問**：フローは、明示的な **Continue** アクションを待ちます。このアクションでは、回答なしでも再開できます。未回答の質問を追跡して回答を促したり、片付けたりする機能はありません。
-- **返信せずに解決すること**：現在、フローは通常のコメントを投稿し、返信後に解決可能なスレッドとなります。ディスカッションを直接投稿する作業は、[Issue 633575](https://gitlab.com/gitlab-org/gitlab/-/work_items/633575)で追跡しています。これは、[すべての質問を解決する](https://gitlab.com/gitlab-org/gitlab/-/work_items/631563)機能の前提条件です。
+- **返信せずに解決すること**：ワークアイテムの UI では、誰かが返信する前にディスカッションを解決できます。折りたたまれた返信ボックスに **Resolve thread** ボタンを表示し、返信フォームには **Resolve thread** チェックボックスを表示します（[マージリクエスト 259967](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259967)、[マージリクエスト 263718](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263718)）。通常のコメントは引き続き返信後にのみ解決可能となり、現在フローは通常のコメントを投稿しています。ディスカッションを直接投稿する作業は、[Issue 633575](https://gitlab.com/gitlab-org/gitlab/-/work_items/633575)で追跡しています。これは、[すべての質問を解決する](https://gitlab.com/gitlab-org/gitlab/-/work_items/631563)機能の前提条件です。
 - **回答の資格**：解決済みの質問の件数を、再開サービスの返信に関する権限と整合させることです（[Issue 631546](https://gitlab.com/gitlab-org/gitlab/-/work_items/631546)）。

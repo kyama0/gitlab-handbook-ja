@@ -9,24 +9,24 @@ dris: ["@mayra-cabrera"]
 coach: ["@cmiskell"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/internal_releases/
-upstream_sha: 33ef35e4327874fd4153c5606125f5de47ff7924
-translated_at: "2026-04-27T05:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T05:52:50+00:00"
 translator: claude
 stale: false
-lastmod: "2025-08-21T15:13:07-06:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## はじめに
+## はじめに {#introduction}
 
-2023 年、GitLab は新しい完全マネージドプライベートソリューション [GitLab Dedicated](https://about.gitlab.com/dedicated/) を
+2023 年、GitLab は新しい完全マネージドプライベートソリューション [GitLab Dedicated](https://about.gitlab.com/dedicated/)を
 開始しました。これは GitLab Inc. が完全に管理するシングルテナント SaaS オファリングです。これらの内部インスタンスは
 公開 GitLab バージョンで実行されており、公開開示前にセキュリティ修正をデプロイする能力を制限しています。
 シングルテナント SaaS インスタンスの[安全性と可用性](/handbook/engineering/development/principles/#prioritizing-technical-decisions)を保証するために、
-Delivery は[特定の SLA](/handbook/security/product-security/vulnerability-management/sla/) 内で重大な Issue を修正するための
+Delivery は[特定の SLA](/handbook/security/product-security/vulnerability-management/sla/)内で重大な Issue を修正するための
 プライベートパッケージを準備する必要性が高まっています。
 
 これらのプライベートインスタンスを修正するための公式なリリースプロセスが存在しません。GitLab の
-[オープンコア](/handbook/company/stewardship/#business-model)と[デフォルトで公開](/handbook/values/#public-by-default)
+[オープンコア](/handbook/company/stewardship/#business-model)とデフォルトで公開
 という性質を考えると、GitLab のリリースは最初からパブリックになるように設計されていました。
 重大な Issue の場合、リリースマネージャーは利用可能なリリースツールを手動で操作して、修正 SLA 内に
 シングルテナント SaaS インスタンスを修正する必要があり、GitLab 顧客とその適時な修正に影響を与えます:
@@ -40,10 +40,10 @@ Delivery は[特定の SLA](/handbook/security/product-security/vulnerability-ma
 
 ![現在の修正戦略](/images/handbook/engineering/architecture/design-documents/internal-releases/current_remediation_strategy.png)
 
-## 目標
+## 目標 {#goal}
 
 プライベート GitLab SaaS マネージドインスタンスをターゲットとしたプライベートパッケージをリリースすることに焦点を当てた
-内部リリース GitLab プロセスを導入します。プライベートパッケージには、一般的な視聴者に開示する前の重大な Issue の
+内部リリース GitLab プロセスを導入します。プライベートパッケージには、一般の利用者に開示する前の重大な Issue の
 修正が含まれます。[GitLab のビジネスモデル](/handbook/company/stewardship/#business-model)の性質上、
 内部リリースへの対応は、今後の四半期に Delivery-Releases の作業を推進する独自の長期的な課題をもたらします:
 
@@ -60,18 +60,18 @@ GitLab.com やセルフマネージドの修正プロセスと同じレベルに
 
 ![目標](/images/handbook/engineering/architecture/design-documents/internal-releases/goal.png)
 
-## 主要な用語
+## 主要な用語 {#key-terms}
 
-* 内部リリース: [特定の SLA](/handbook/security/product-security/vulnerability-management/sla/) 内に GitLab SaaS シングルテナントインスタンスを修正するための新しいプライベートリリース戦略。
-* GitLab SaaS シングルテナントインスタンス: GitLab Inc. が管理する SaaS インスタンス。現時点では [GitLab Dedicated](https://about.gitlab.com/dedicated/) に限定されています。
+* 内部リリース: [特定の SLA](/handbook/security/product-security/vulnerability-management/sla/)内に GitLab SaaS シングルテナントインスタンスを修正するための新しいプライベートリリース戦略。
+* GitLab SaaS シングルテナントインスタンス: GitLab Inc. が管理する SaaS インスタンス。現時点では [GitLab Dedicated](https://about.gitlab.com/dedicated/)に限定されています。
 * 重大な Issue: GitLab SaaS シングルテナントインスタンスの[可用性](/handbook/product-development/how-we-work/issue-triage/#availability)、[機能性](/handbook/product-development/how-we-work/issue-triage/#severity)、または[セキュリティのクリティカル性](/handbook/security/product-security/vulnerability-management/sla/)に影響を与える ~"severity::1" として定義されたバグやセキュリティ脆弱性。
 * 追加の定義については[リリース用語](/handbook/engineering/releases/#terminology)を参照してください。
 
-## 目標と非目標
+## 目標と非目標 {#goals-and-non-goals}
 
-### ビジョン
+### ビジョン {#vision}
 
-#### 短期的
+#### 短期的 {#short-term}
 
 内部リリースの取り組みを GitLab Delivery 戦略に合わせます。内部リリースプロセスを GitLab リリースの一部として
 組み込むためのビジョン、取り組み、課題と要件の理解をまとめます。以下を提供することでこれを実現します:
@@ -79,7 +79,7 @@ GitLab.com やセルフマネージドの修正プロセスと同じレベルに
 * 内部リリースビジョンを達成するためのロードマップとイテレーションステップを詳述したブループリントを文書化する。
   * Epic: https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1292
 
-#### 中期的
+#### 中期的 {#medium-term}
 
 リリースマネージャーは、脆弱性を公開せずに GitLab Dedicated を修正するために必要な関連修正を含む
 プライベートリリースバージョンを作成するための自動化プロセスを開始します。GitLab Dedicated チームが
@@ -96,7 +96,7 @@ GitLab.com やセルフマネージドの修正プロセスと同じレベルに
   保証するためにプロセスのプライベートとパブリック部分を明確に分離できます。
   * Epic: https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1050.
 
-#### 長期的
+#### 長期的 {#long-term}
 
 GitLab SaaS シングルテナントインスタンスの重大な Issue を修正するための内部リリースプロセスが
 GitLab リリース戦略の一部となります。リリースマネージャーは、GitLab SaaS シングルテナントインスタンスの
@@ -107,41 +107,40 @@ GitLab Dedicated へのフィックスをイテレーティブに提供できる
 内部リリースプロセスはエンドツーエンドで自動化される必要があり、手動介入が必要な場合のみエンジニアに通知し、
 GitLab リリースのブロック性を排除する必要があります: 複数のリリースタイプが同時に実行できる必要があります。
 
-* GitLab インスタンスへのパッケージの配信を、GitLab リポジトリ間のミラーリングを壊すことなく、
-  パッチリリースを開始せずに行うための高度なパッケージデプロイ戦略を使用する。
-* 一般的な視聴者に脆弱性を開示せずにプライベートパッケージを発行する。
+* 既存のリリースプロセスをブロックせずにプライベートパッケージを準備するための高度なパッケージデプロイ戦略を使用する。
+* 一般の利用者に脆弱性を開示せずにプライベートパッケージを発行する。
 * Switchboard API を介した Dedicated テナントの自動アップグレードを有効にする。
 
-### スコープ
+### スコープ {#scope}
 
 内部リリースは、GitLab Inc. が管理する SaaS インスタンスに新しいリリースプロセスを導入することに限定されています。
 現時点では、GitLab Dedicated に限定されています。
 
-### スコープ外
+### スコープ外 {#out-of-scope}
 
 * 内部リリースは、標準的な GitLab 製品オファリングから逸脱するカスタム機能を持つリリースを作成することを意図していません。
 * 内部リリースは、GitLab SaaS シングルテナントインスタンスの可用性に影響を与えるクリティカルな脆弱性や
-  バグ修正を軽減することに限定されています。重大度が低い Issue は[パッチリリースのケイデンス](/handbook/engineering/releases/patch-releases/#patch-release-cadence)に従います。
+  バグを修正することに限定されています。重大度が低い Issue は[パッチリリースのケイデンス](/handbook/engineering/releases/patch-releases/#patch-release-cadence)に従います。
 * GitLab.com と GitLab セルフマネージドインスタンスは内部リリースの対象ではありません。これらのインスタンスでは、
-  自動デプロイ、パッチ、月次リリースが[修正 SLA](/handbook/security/product-security/vulnerability-management/sla/) 内に
+  自動デプロイ、パッチ、月次リリースが[修正 SLA](/handbook/security/product-security/vulnerability-management/sla/)内に
   バグと脆弱性を修正します。
-* GitLab Cells は初期ロードマップでは内部リリースの対象ではありませんが、将来変更される可能性があります。
+* GitLab Cells は内部リリースの対象ではありませんが、将来変更される可能性があります。
 * セルフマネージドのお客様向けの内部リリースチャンネルは初期ロードマップでは考慮されていません。
   今後のステージで製品分析と検証が実施されます。
 
-## 提案されたアクションプラン
+## 提案されたアクションプラン {#proposed-plan-of-action}
 
 内部リリースの概念を理解し、新しい内部リリース戦略を導入することに加えて、
 2 つの主要な要件を対処する必要があります:
 
 1. GitLab リリースのブロック性を排除する。
-2. GitLab Dedicated の修正プロセスをファーストクラスの市民に引き上げる。
+2. GitLab Dedicated の修正プロセスを主要なプロセスと同等に扱う。
 
 これら 2 つの要件は同時に対処でき、各作業は複数の四半期にわたって展開されます。
 
 ![ロードマップ](/images/handbook/engineering/architecture/design-documents/internal-releases/roadmap.png)
 
-### GitLab リリースのブロック性の排除
+### GitLab リリースのブロック性の排除 {#remove-the-blocking-nature-of-gitlab-releases}
 
 GitLab.com での重大な Issue の軽減には、修正が GitLab セキュリティリポジトリにマージされ、
 GitLab 本番環境にデプロイされる必要があります。この操作は GitLab 正規リポジトリとセキュリティリポジトリ間の
@@ -164,7 +163,7 @@ GitLab Dedicated や GitLab セルフマネージドインスタンスを修正�
    実験的な機能（Ruby/Rails アップグレード）や未マージの変更（セキュリティ修正）を含むパッケージの作成を
    許可することに焦点を当て、GitLab リポジトリ間のミラーリングの発散を防ぐ必要があります。
 
-### GitLab リリース戦略への GitLab Dedicated 修正プロセスの組み込み
+### GitLab リリース戦略への GitLab Dedicated 修正プロセスの組み込み {#introduce-a-gitlab-dedicated-remediation-process-into-the-gitlab-release-strategy}
 
 GitLab Dedicated の新しいプライベートリリースモデルを確立し、GitLab.com やセルフマネージドの
 修正プロセスと同じ標準に引き上げます。GitLab のオープンコアの性質を考えると、これは未踏の領域であり、

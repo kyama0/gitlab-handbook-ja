@@ -1,45 +1,43 @@
 ---
 title: "感情知性"
 upstream_path: /handbook/leadership/emotional-intelligence/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T05:58:36.294444+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## はじめに
+## はじめに {#introduction}
 
-GitLab では、職場の効果性のための対人スキルを非常に重視しています。従業員の対人スキルは生産性、モラル、エンゲージメント、パフォーマンスに影響を与え、[バリューを体現する](/handbook/values/)のに役立ちます。ピープルマネージャーであれ個人貢献者であれ、「感情知性」（EQ とも呼ばれる）に優れていることが対人効果性の重要な特性です。
+GitLab では、職場の効果性のための対人スキルを非常に重視しています。従業員の対人スキルは生産性、士気、エンゲージメント、パフォーマンスに影響を与え、バリューを体現するのに役立ちます。People Manager であれ Individual Contributor であれ、「感情知性」（EQ とも呼ばれる）に優れていることが対人効果性の重要な特性です。
 
 職場を去るかとどまるかの決断において、最も重要な要素の一つは、直属の上司や同僚との関係の質です。リモート環境で対人スキルを学習・適用するための実用的な方法があります。ハンドブックのこのセクションでは、感情知性（EQ）の主要な特性と、職業的・個人的な対人スキルの向上方法をご紹介します。他者とより効果的に働く方法を学びます。
 
-## 感情知性とは何か？
+## 感情知性とは何か？ {#what-is-emotional-intelligence}
 
 ![感情知性の要素を説明するベン図](/images/leadership/emotional-intelligence/eq-diagram.jpg)
 {.shadow.medium.center}
 
-EQ は、[Harvard Business Review](https://online.hbs.edu/blog/post/emotional-intelligence-in-leadership) によると、自分の感情を理解・管理する能力、および周囲の人々の感情を認識し影響を与える能力として定義されています。GitLab では、[チームメンバーが世界中で仮想的にコミュニケーション](/handbook/communication/)する[オールリモート環境](/handbook/company/culture/all-remote/guide/)で業務を行っています。EQ を育むことで、オールリモート環境でのつながりのレベルを確立することができます。
+EQ は、[Harvard Business Review](https://online.hbs.edu/blog/post/emotional-intelligence-in-leadership)によると、自分の感情を理解・管理する能力、および周囲の人々の感情を認識し影響を与える能力として定義されています。GitLab では、[チームメンバーが世界中で仮想的にコミュニケーション](/handbook/communication/)する[オールリモート環境](/handbook/company/culture/all-remote/guide/)で業務を行っています。EQ を育むことで、オールリモート環境でのつながりのレベルを確立することができます。
 
 EQ が高まると、リモートチームとの関係が改善されます。EQ は[多様な文化と背景からなる](/handbook/company/culture/inclusion/)チーム間の秩序を維持するのに重要な役割を果たします。GitLab では、メッセージを伝えるために[低コンテキストのコミュニケーション](/handbook/communication/#low-context)、[Slack チャンネル](/handbook/communication/chat)、メール、[ビデオ通話](/handbook/communication/#video-calls)を使用しています。EQ を実践する機会は少なくなっています。
 
 これらのコミュニケーションチャネルが必ずしも本当の気持ちを表現しているわけではないため、EQ を開発することで、感情的な手がかりを読み取り、行間を読んでメッセージをより深く理解するためのツールとなります。
 
-2022年9月に GitLab の L&D チームが主催した Claire Doody 氏による「Being Human」というセッションを視聴して、感情知性についてさらに学んでください。[Reini Chipman による感情知性の多様性](https://youtu.be/DErrcLrw-ag)と[Christopher Connors によるモダンリーダー向け EQ](https://youtu.be/6gwPV6Y5YUQ)の会話も GitLab がホストしています。
-
+2022 年 9 月に GitLab の L&D チームが主催した Claire Doody 氏による「Being Human」というセッションを視聴して、感情知性についてさらに学んでください。[Reini Chipman による感情知性の多様性](https://youtu.be/DErrcLrw-ag)と[Christopher Connors によるモダンリーダー向け EQ](https://youtu.be/6gwPV6Y5YUQ)の会話も GitLab がホストしています。
 
 {{< youtube "ai6DbsNIOF4" >}}
 
-
-## EQ でインクルーシブな環境を構築する
+## EQ でインクルーシブな環境を構築する {#building-an-inclusive-environment-with-eq}
 
 EQ は[文化的意識](/handbook/company/culture/all-remote/building-culture/)を開発・維持するための主要な要因です。感情知性を育むことで、場所に関係なくすべてのチームにわたって理解、尊重、良好な関係を促進することができます。
 
 これは、すべての人のためにインクルーシブな環境を構築するために GitLab を助けているツールです。他者が自分の育ちに基づいて異なる反応や習慣を持っているかもしれないことを理解することで、社会的・感情的知性を開発することができます。
 
-## EQ のコンポーネント
+## EQ のコンポーネント {#components-of-eq}
 
-EQ には5つの主要なコンポーネントがあります。
+EQ には 5 つの主要なコンポーネントがあります。
 
 | 名称 | 意味 | 測定するコンピテンシー |
 | ----- | ----- | ----- |
@@ -53,7 +51,7 @@ EQ のコンポーネントは心理学者・作家の Daniel Goleman とその�
 
 純粋な技術的スキルと知的能力はトップポジションの前提条件ですが、対人能力ほどトップパフォーマーと他を区別しません。
 
-## リモート環境での EQ の開発方法
+## リモート環境での EQ の開発方法 {#how-to-develop-your-eq-in-a-remote-environment}
 
 *以下のインタラクティブ画像の数字をクリックして詳細を確認してください。*
 
@@ -64,25 +62,25 @@ EQ のコンポーネントは心理学者・作家の Daniel Goleman とその�
 1. **自己認識（自分を知る）。** 自分自身を理解することは、自分の感情、強みと弱み、価値観、そして自分を動機づけるものを認識することを意味します。自分の EQ とそれが他者にどのような影響を与えるかをより深く理解するための戦略を以下に詳述しますが、他者との関係の改善は自己認識から始まります。
 1. **ストレス要因を知る（自己規制）。** ストレスの多い状況での感情の管理には、変化する状況への適応方法の理解が必要です。何があなたをストレスにさらすかを特定し、緩和するための積極的な手順を踏みましょう。冷静を保ち、すべてをコントロールできないという事実を受け入れましょう。感情知性の高い人は、自分の感情表現が他者にどのような影響を与えるかを考えます。
 1. **社会的スキルを強化する。** 強い社会的スキルを持つチームメンバーは、リモートな環境で自分の考えやアイデアを効果的に伝えることができます。GitLab では、[インフォーマルなコミュニケーション](/handbook/company/culture/all-remote/informal-communication/)を活用して社会的関係を意図的に強化しています。はじめの一歩として[コーヒーチャット](/handbook/company/culture/all-remote/informal-communication/#coffee-chats)を設定したり、[チームソーシャルコール](/handbook/company/culture/all-remote/informal-communication/#team-days-and-social-calls)に参加したりしましょう。バーチャルディスカッションで積極的に聴き、[フィードバック](/handbook/company/culture/all-remote/)を提供することで自身の社会的スキルを強化しましょう。
-1. **動機付けを構築する。** EQ の重要なコンポーネントは、目標を達成する内発的な動機付けを持つことです。GitLab では、すべてのチームメンバーが[自分自身のマネージャー](/handbook/values/#managers-of-one)です。[セルフサービスと自己学習のメンタリティを採用する](/handbook/company/culture/all-remote/)ことによる自己動機付けは、リモートな環境で何を達成できるかを定義するのに最重要事項であるべきです。本当に楽しめる仕事の側面に集中し、それを個人とチームの成功の原動力として使いましょう。
+1. **動機付けを構築する。** EQ の重要なコンポーネントは、目標を達成する内発的な動機付けを持つことです。GitLab では、すべてのチームメンバーが Manager of One です。[セルフサービスと自己学習のメンタリティを採用する](/handbook/company/culture/all-remote/)ことによる自己動機付けは、リモートな環境で何を達成できるかを定義するのに最重要事項であるべきです。本当に楽しめる仕事の側面に集中し、それを個人とチームの成功の原動力として使いましょう。
 
-## 感情知性マネージャーコンピテンシー
+## 感情知性マネージャーコンピテンシー {#emotional-intelligence-manager-competency}
 
 感情知性は GitLab のすべてのチームメンバーにとっての重要なスキルセットです。マネージャーにとって、これはチームのダイナミクスを可能にし、チームメンバーがキャリアを進めるにつれて適切なレベルの専門的な開発を受けることを確保するのに役立つ不可欠な特性です。
 
 感情知性[マネージャーコンピテンシー](/handbook/people-group/competencies/#list)のスキルと行動：
 
 - 共感を通じた自己認識と自己規制を積極的に示す
-- 難しいスキルと柔らかいスキルのバランスをとりながら高いレベルの感情知性をモデルとして示す
-- チームメンバー全体のアプローチに焦点を当てる各チームメンバーへの管理アプローチをパーソナライズするために感情知性を適用する
+- ハードスキルとソフトスキルのバランスをとりながら高いレベルの感情知性をモデルとして示す
+- 一人ひとりを全体として捉えるマネジメントに焦点を当て、感情知性を適用して各チームメンバーに合わせたマネジメント方法をとる
 - すべてのインタラクションにおける礼儀と丁寧さを確保する組織戦略と文化を推進する
 - チームメンバーが直面するプレッシャー/問題を認識し、共感と理解を提供する
 
-## EQ の理解方法
+## EQ の理解方法 {#how-to-understand-your-eq}
 
-EQ を開発するためには、スキルがどの程度開発されているかの現在のベースラインを理解する必要があります。以下の多くの無料の EQ アセスメントのうち1つ以上を受けて、自分の現状をより深く理解しましょう。チームと結果を共有しましょう。[マネージャー](/handbook/leadership/)であれば、チームにいずれかのアセスメントを受けることを勧めましょう。結果を使ってチームとのディスカッションとインタラクションを調整しましょう。チームのことを個人的・専門的により多く知ることで、EQ を強化することができます。
+EQ を開発するためには、スキルがどの程度開発されているかの現在のベースラインを理解する必要があります。以下の多くの無料の EQ アセスメントのうち 1 つ以上を受けて、自分の現状をより深く理解しましょう。チームと結果を共有しましょう。[マネージャー](/handbook/leadership/)であれば、チームにいずれかのアセスメントを受けることを勧めましょう。結果を使ってチームとのディスカッションとインタラクションを調整しましょう。チームのことを個人的・専門的により多く知ることで、EQ を強化することができます。
 
-### 感情知性（EQ）アセスメント
+### 感情知性（EQ）アセスメント {#emotional-intelligence-eq-assessments}
 
 1. [カラーコードパーソナリティテスト](https://www.colorcode.com/free_personality_test/)
 1. [Global Leadership Foundation EQ テスト](https://globalleadershipfoundation.com/geit/eitest.html)
@@ -91,6 +89,6 @@ EQ を開発するためには、スキルがどの程度開発されている�
 1. [Psychology Today EQ テスト](https://www.psychologytoday.com/us/tests/personality/emotional-intelligence-test)
 1. [成長 vs. 固定マインドセットアセスメント](https://blog.mindsetworks.com/what-s-my-mindset)
 
-## 感情知性（EQ）に関連するページ
+## 感情知性（EQ）に関連するページ {#related-pages-on-emotional-intelligence-eq}
 
 - [ソーシャルスタイルの理解](/handbook/leadership/emotional-intelligence/social-styles/)
