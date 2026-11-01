@@ -1,0 +1,6 @@
+{{/* JSON keeps the shared navigation out of Pagefind's HTML input. */ -}}
+{{ $html := partial "sidebar-tree-nav.html" (dict "page" .) -}}
+{{ $path := printf "navigation/sidebar-%s" .Site.Language.Lang -}}
+{{ $markup := resources.FromString (printf "%s.html" $path) $html | minify -}}
+{{ $data := dict "html" $markup.Content | jsonify -}}
+{{ return (resources.FromString (printf "%s.json" $path) $data | fingerprint) -}}

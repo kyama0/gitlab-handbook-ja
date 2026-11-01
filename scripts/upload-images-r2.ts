@@ -15,6 +15,8 @@
  *   (layouts/_markup/render-image.html) prefixes `params.imageBaseUrl`
  *   and the URL resolves.
  * - Idempotent: HEAD-checks each key and skips uploads that already exist.
+ * - Process upstream references with 16 workers so HEAD request latency
+ *   doesn't accumulate across every image on every deployment.
  * - Order matters: repo-local runs before upstream-derived, so when the
  *   same key exists in both, the JA version wins (the upstream pass
  *   then HEAD-checks and skips).
@@ -60,6 +62,7 @@ const TRANSLATED_ROOT = path.resolve('content/handbook');
 const UPSTREAM_STATIC = path.resolve('upstream/static');
 const REPO_STATIC = path.resolve('static');
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.avif', '.ico']);
+const UPLOAD_CONCURRENCY = 16;
 
 // Match `src="/..."`, `src='/...'`, `poster="/..."`, and `![alt](/...)`.
 const REF_RE = /(?:(?:src|poster)\s*=\s*("|')(\/[^"'>\s]+)\1)|(?:!\[[^\]]*\]\((\/[^)\s]+)\))/g;
@@ -166,33 +169,39 @@ async function main() {
   let skipped = 0;
   const missing: string[] = [];
 
-  for (const url of [...refs].sort()) {
-    const key = url.replace(/^\//, '');
-    const localPath = path.join(UPSTREAM_STATIC, key);
+  // Workers share one iterator: each reference is handled once, with at most
+  // UPLOAD_CONCURRENCY requests/buffers in flight. The repo-local pass above
+  // must finish first so its assets still win when a key also exists upstream.
+  const pending = [...refs].sort().values();
+  await Promise.all(Array.from({ length: Math.min(UPLOAD_CONCURRENCY, refs.size) }, async () => {
+    for (const url of pending) {
+      const key = url.replace(/^\//, '');
+      const localPath = path.join(UPSTREAM_STATIC, key);
 
-    try {
-      await stat(localPath);
-    } catch {
-      missing.push(url);
-      continue;
+      try {
+        await stat(localPath);
+      } catch {
+        missing.push(url);
+        continue;
+      }
+
+      if (await existsInR2(key)) {
+        skipped += 1;
+        continue;
+      }
+
+      const body = await readFile(localPath);
+      await s3.send(new PutObjectCommand({
+        Bucket: R2_BUCKET,
+        Key: key,
+        Body: body,
+        ContentType: contentTypeFor(path.extname(key).toLowerCase()),
+        CacheControl: 'public, max-age=31536000, immutable',
+      }));
+      console.log(`uploaded: ${key}`);
+      uploaded += 1;
     }
-
-    if (await existsInR2(key)) {
-      skipped += 1;
-      continue;
-    }
-
-    const body = await readFile(localPath);
-    await s3.send(new PutObjectCommand({
-      Bucket: R2_BUCKET,
-      Key: key,
-      Body: body,
-      ContentType: contentTypeFor(path.extname(key).toLowerCase()),
-      CacheControl: 'public, max-age=31536000, immutable',
-    }));
-    console.log(`uploaded: ${key}`);
-    uploaded += 1;
-  }
+  }));
 
   console.log(`\nupstream refs: ${uploaded} uploaded, ${skipped} already in R2, ${missing.length} missing in upstream/static.`);
   if (missing.length > 0) {
@@ -200,7 +209,7 @@ async function main() {
     // （= upstream 側で元々リンク切れ。handbook.gitlab.com でも 403 で表示できない）
     // はこちらでは直しようが無いので、警告のみ出してデプロイは通す。
     console.warn('Missing (referenced in Markdown but not found under upstream/static — upstream-side broken refs, ignored):');
-    for (const u of missing) console.warn(`  ${u}`);
+    for (const u of missing.sort()) console.warn(`  ${u}`);
   }
 }
 

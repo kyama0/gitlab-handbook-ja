@@ -120,7 +120,9 @@ Dependabot は既存の週次スケジュールと 7 日間の cooldown に従�
 
 ## デプロイ
 
-`main` への push で Cloudflare Pages に自動デプロイされます ([`.github/workflows/app_deploy.yml`](.github/workflows/app_deploy.yml))。GitHub Actions が `hugo --minify` で `public/` を生成し、`cloudflare/pages-action` が direct-upload します。
+`main` への push で Cloudflare Pages に自動デプロイされます ([`.github/workflows/app_deploy.yml`](.github/workflows/app_deploy.yml))。GitHub Actions が `hugo --minify` と Pagefind で `public/` を生成し、`cloudflare/wrangler-action` が direct-upload します。
+
+参照画像の R2 同期は最大 16 件の並列処理で行います。大規模サイトのサイドバーツリーはハッシュ付き JSON ファイルとして共有し、各ページへの重複埋め込みを避けて、ビルド・検索インデックス作成・送信の処理量を減らしています。共通ファイルの取得前や取得失敗時も、ページに埋め込んだ上位リンクを利用できます。
 
 ## 環境変数
 

@@ -41,8 +41,8 @@ jobs:
 
       - name: Sync referenced images to R2 (idempotent)
         # 翻訳済みコンテンツが参照する画像のうち R2 に未アップロードのもの
-        # だけを upstream/static/ から取得して送る。新規/変更のみ HEAD で
-        # 検知してアップロードするので、毎回 deploy しても重くはならない。
+        # だけを upstream/static/ から取得して送る。既存画像の HEAD 確認は
+        # 最大 16 件を並列処理し、未アップロードの画像のみ送信する。
         run: npm run upload:images
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
