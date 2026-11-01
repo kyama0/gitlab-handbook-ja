@@ -38,6 +38,8 @@ cd infra && terraform plan / apply       # Cloudflare Pages + R2 (direct-upload 
 
 **サイドバー**: docsy が upstream のサイドバーをそのまま生成します。順序は `weight` 昇順 → タイトル昇順。新規翻訳ではアップストリームの `weight` をそのまま保持してください。セクション配下に `_index.md` の翻訳が無いとサイドバーで URL セグメントがそのまま表示されるので、セクション `_index.md` の翻訳は優先度高めです。
 
+`params.ui.sidebar_cache_limit` 以上のページ数では、ツリー全体を各ページに埋め込まず、`sidebar-resource.html` が生成するハッシュ付きの `navigation/sidebar-ja.<hash>.json` を `assets/js/sidebar.js` で読み込みます。JSON にすることで Pagefind の HTML 走査対象からも外します。検索ボタンと上位リンクは各ページに残し、JavaScript 無効時や取得失敗時も上位リンクを利用できます。現在ページと親項目の展開は読み込み後に設定します。閾値未満の小規模ビルドでは従来どおりツリーを HTML に埋め込みます。
+
 **画像パス**: Markdown の `![alt](/images/...)` は `layouts/_markup/render-image.html` (Goldmark の image render hook) が `params.imageBaseUrl` を前置して外部ホストへ解決します。
 
 - **dev**: `imageBaseUrl: "https://handbook.gitlab.com"` (config 既定値) → upstream にホットリンクしてローカルでも画像が表示される。
