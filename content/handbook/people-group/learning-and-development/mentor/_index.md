@@ -1,81 +1,81 @@
 ---
 title: GitLab でのメンタリング
 upstream_path: /handbook/people-group/learning-and-development/mentor/
-upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
-translated_at: "2026-08-05T06:14:38+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:03:52.048109+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-04T09:49:53+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-メンターシップは、個人の経験、背景、視点から学ぶ機会です。メンターシップは信頼を築き、間違いを許容する安全な場所を提供し、メンターとメンティーの両方の成長を促進します。質問やフィードバックは [#mentoring Slack チャンネル](https://app.slack.com/client/T02592416/C01QKNDJ76J) までお寄せください。
+メンターシップは、個人の経験、背景、視点から学ぶ機会です。メンターシップは信頼を築き、間違いを許容する安全な場所を提供し、メンターとメンティーの両方の成長を促進します。質問やフィードバックは [#mentoring Slack チャンネル](https://app.slack.com/client/T02592416/C01QKNDJ76J)までお寄せください。
 
 ***メンタリングの力***
 
 {{< youtube "0W3d-PJ4-FM" >}}
 
-## 始め方
+## 始め方 {#how-to-get-started}
 
 チームメンバーが GitLab でメンターシップに参加するには複数のオプションがあります。
 
-1. 自身の専門ネットワークまたは [下記の利用可能なメンターのリスト](#find-a-mentor) から **メンターを特定し、自己選定する**。
-1. [こちらの手順](#become-a-mentor) に従って、**メンターとして自分を利用可能にする**。
-1. 応募プロセスに基づいてメンターとメンティーがペアリングされる **[組織化されたメンターシッププログラム](#organized-mentorship-programs) に参加する**。
+1. 自身の専門ネットワークまたは[下記の利用可能なメンターのリスト](#find-a-mentor)から **メンターを特定し、自己選定する**。
+1. [こちらの手順](#become-a-mentor)に従って、**メンターとして自分を利用可能にする**。
+1. 応募プロセスに基づいてメンターとメンティーがペアリングされる **[組織化されたメンターシッププログラム](#organized-mentorship-programs)に参加する**。
 
-### チームメンバーの声
+### チームメンバーの声 {#what-team-members-are-saying}
 
 1. `直接的にではありませんが、私のメンターは間接的に OKR の達成を支援してくれました。メンターは OKR 目標へのアプローチにおいてより多くの自信とノウハウを与えてくれました。`
-1. `メンターからのアドバイスにより、進捗をよりよく伝えられるように OKR とプロジェクトのレポート方法を調整できました。また、プロジェクトに対するフィードバックや批判への準備の仕方や、それらのコメントの受け止め方 — 個人攻撃と捉えず、問題を抱えていると考える代わりに問題を解決するソリューションの一部であろうと努める — についてもコーチングを受けました。`
+1. `メンターからのアドバイスにより、進捗をよりよく伝えられるように OKR とプロジェクトのレポート方法を調整できました。また、プロジェクトに対するフィードバックや批判への準備の仕方や、それらのコメントの受け止め方 — 個人攻撃と捉えず、自分自身が問題だと考える代わりに問題を解決するソリューションの一部であろうと努める — についてもコーチングを受けました。`
 1. `GitLab のコードをナビゲートし、デバッグスキルを向上させることを学びました。これは効率、顧客の結果、スキル開発における優れた体験を提供することに直接つながります。`
 1. `私のメンターは私の人生において大きな力でした。彼女は素晴らしいです — 新しいマネージャースタイルのナビゲート、見込み客開拓の仕方、メンタルヘルスへの対応の仕方を助けてくれて、本当に素晴らしいです。私は大当たりを引きました！彼女が私のチームにいてくれることで、私は実際に懸命に働ける、はるかに良い状態になりました。だから、影響は間接的に直接的に私の販売能力に関連しています。`
 
-### 結果
+### 結果 {#results}
 
 私たちは、メンターシップがビジネスおよび個人の成果に与える影響を把握するため、組織化されたメンターシッププログラムのメンティーを定期的に調査しています。
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQo5yL0DOCgaAQWwXaIYHfb20pGIxlkzkxBB_xgU-rEsNkNa4U1NxevaCIQRZrgExrSQecEng50Kmy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-## 利点と期待
+## 利点と期待 {#benefits-and-expectations}
 
-### メンティーにとっての利点
+### メンティーにとっての利点 {#benefits-for-the-mentee}
 
-1. [キャリア開発](/handbook/people-group/learning-and-development/career-development/) を優先し、それに対する説明責任を負うように促されます
+1. [キャリア開発](/handbook/people-group/learning-and-development/career-development/)を優先し、それに対する説明責任を負うように促されます
 1. 現在のロール、将来のキャリア目標、または情熱を持っている領域に関連する新しいスキルを学びます
-1. 明確に概説された [目標](/handbook/company/okrs) を設定し、達成します。
+1. 明確に概説された[目標](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)を設定し、達成します。
 
-### メンターにとっての利点
+### メンターにとっての利点 {#benefits-for-the-mentor}
 
-1. 他のチームメンバーの成長を可能にすることで [組織のリーダー](/handbook/leadership/) として機能します
-1. リーダーシップ、[効果的なコミュニケーション](/handbook/communication/)、[コーチング](/handbook/leadership/coaching/) スキルを実践します
+1. 他のチームメンバーの成長を可能にすることで[組織のリーダー](/handbook/leadership/)として機能します
+1. リーダーシップ、[効果的なコミュニケーション](/handbook/communication/)、[コーチング](/handbook/leadership/coaching/)スキルを実践します
 1. 分野または専門分野の専門家として自身を確立します
-1. チームメンバーと [信頼を築く](/handbook/leadership/building-trust/)
+1. チームメンバーと[信頼を築く](/handbook/leadership/building-trust/)
 
 ### 期待 {#expectations}
 
 | 期待 | 説明 |
 | ----- | --------------- |
-| **メンティーが会話をリードする** | メンターシップは、[GitLab での 1:1](/handbook/leadership/1-1/) がダイレクトレポートによって推進されるのと同様に、メンティーによってリードされます。 |
+| **メンティーが会話をリードする** | メンターシップは、[GitLab での 1:1](/handbook/leadership/1-1/)がダイレクトレポートによって推進されるのと同様に、メンティーによってリードされます。 |
 | **境界を維持する** | 明確で適切な境界を維持しましょう。自分の責任とマネージャーの責任を明確にしましょう。 |
 | **目標を設定する** | メンティーは目標を作成し、書き留め、進捗を測定するために頻繁に目標を見直す必要があります。 |
-| **信頼を築く** | 同僚としてまず接し、専門家としては次の段階で。[互いを知る](/handbook/values/#diversity-inclusion) ことに時間を費やしましょう。[オープンで、誠実で、完全に本物であってください](/handbook/values/#transparency)。 |
+| **信頼を築く** | 同僚としてまず接し、専門家としては次の段階で。互いを知ることに時間を費やしましょう。オープンで、誠実に、ありのままの自分でいてください。 |
 | **期待を設定する** | 現実的であり、自分のコミットメントを守ってください。リソースや人へのアクセスを共有しますが、他者に対して影響力を振りかざすことはしないと明確にしてください。|
-| **聴く** | コミュニケーションにおける [信頼](/handbook/leadership/building-trust/) とオープンさを確立しましょう。完全に集中して注意を払ってください。アドバイスやガイダンスを提供する前に懸念事項を聴いてください。|
+| **聴く** | コミュニケーションにおける[信頼](/handbook/leadership/building-trust/)とオープンさを確立しましょう。完全に集中して注意を払ってください。アドバイスやガイダンスを提供する前に懸念事項を聴いてください。|
 | **独立性を認める** | メンティーの目標と自律性を認識しましょう。メンターとしてのあなたの役割は導くことです。自分のキャリアで何を実施するかを決めるのはメンティー次第です。 |
-| **多様な経験を尊重する** | 十分に代表されていないグループは、昇進への追加の障壁に直面する可能性があることを認識しましょう。自分自身を教育し、[適切な DIB チャンネル](/handbook/company/culture/inclusion/tmrg-tmag/) を介してアドバイスとサポートを求めましょう。 |
-| **自己認識を実践する** | 自分の強み、弱み、[バイアス](/handbook/values/#unconscious-bias) を特定しましょう。他者の経験、アイデア、目標に気づき、尊重しましょう。 |
+| **多様な経験を尊重する** | 十分に代表されていないグループは、昇進への追加の障壁に直面する可能性があることを認識しましょう。自分自身を教育し、[適切な DIB チャンネル](/handbook/company/culture/inclusion/tmrg-tmag/)を介してアドバイスとサポートを求めましょう。 |
+| **自己認識を実践する** | 自分の強み、弱み、バイアスを特定しましょう。他者の経験、アイデア、目標に気づき、尊重しましょう。 |
 | **アドボケイトする** | 自分とは異なる経験を持つかもしれない人々に対する効果的なマネージャーや同僚であることについて、他者にメンタリングしてください。メンティーにメンター自身になる方法を — 例示と励ましによって — 教えてください。|
 | **感謝を表現する** | 経験についてオープンに共有しましょう。時間をかけて開発されたスキルや経験への感謝を表現しましょう。 |
-| **成長マインドセットを維持する** | [成長マインドセット](/handbook/values/#growth-mindset) を実践しましょう。両方の当事者がメンターシップから学び、成長できます |
-| **イテレートする** | メンターシップの過程で目標を [イテレート](/handbook/values/#iteration) しましょう。メンティーが到達できる素早い勝利に焦点を当て、その後成長を続けましょう。 |
+| **成長マインドセットを維持する** | 成長マインドセットを実践しましょう。両方の当事者がメンターシップから学び、成長できます |
+| **イテレーションを行う** | メンターシップの過程で目標についてイテレーションを行ってください。メンティーが到達できる素早い勝利に焦点を当て、その後成長を続けましょう。 |
 | **機密性** | メンターとメンティー間で築かれた信頼を尊重しましょう。メンターシップセッションで共有された課題や会話は、メンターとメンティーの双方が共有を許可しない限り、機密にされるべきです。 |
 
-*[NCWIT Mentoring-in-a-Box Mentoring Basics - A Mentor's Guide to Success](https://ncwit.org/resource/imentor/) の "What Are the 'Dos' of Mentoring" セクションおよび [People Grove リソース](https://support.peoplegrove.com/hc/en-us/articles/360001265792-Structure-Goals-and-Agendas) より改変*
+*[NCWIT Mentoring-in-a-Box Mentoring Basics - A Mentor's Guide to Success](https://ncwit.org/resource/imentor/)の "What Are the 'Dos' of Mentoring" セクションおよび [People Grove リソース](https://support.peoplegrove.com/hc/en-us/articles/360001265792-Structure-Goals-and-Agendas)より改変*
 
 ## メンターを見つける {#find-a-mentor}
 
-以下のチームメンバーがメンターとして利用可能です。会話を始めるために [コーヒーチャット](/handbook/company/culture/all-remote/informal-communication/#coffee-chats) をスケジュールしてください！
+以下のチームメンバーがメンターとして利用可能です。会話を始めるために[コーヒーチャット](/handbook/company/culture/all-remote/informal-communication/#coffee-chats)をスケジュールしてください！
 
-`Expertise` 列はチームメンバーの .yaml エントリから取得されており、彼らが支援できるすべてのトピックを含んでいない可能性があります。
+`Expertise` 列はチームメンバーの .yaml エントリから取得されており、そのメンバーが支援できるすべてのトピックを含んでいない可能性があります。
 
 {{< group-by-expertise "mentor" >}}
 
@@ -89,36 +89,36 @@ lastmod: "2026-08-04T09:49:53+00:00"
 
 1. [Women at GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program/)
 1. [Aspiring Managers](/handbook/engineering/careers/training/ic-to-manager/#aspiring-manager-mentorship-pilot-program)
-1. [Finance Team](/handbook/finance/) は [メンターシッププログラム](/handbook/finance/growth-and-development/mentorship) を運営しています。
+1. [Finance Team](/handbook/finance/)は[メンターシッププログラム](/handbook/finance/growth-and-development/mentorship)を運営しています。
 
-## リソース
+## リソース {#resources}
 
 以下のリソースは、同期と非同期の両方の形式でメンター/メンティー関係をガイドするように設計されています。フィットするものを採用し、合わないものは置いていってください。
 
 ### メンターおよびメンティートレーニング {#mentor-and-mentee-training}
 
-メンターの見つけ方、明確な期待の設定、メンターシップを通じた目標達成について、以下の [Google スライドプレゼンテーション](https://docs.google.com/presentation/d/1QPx9ZGa051Jhwwfb78cKW1LD0uVTUdKxRdElBk4Ku9I/edit?usp=sharing) をお楽しみください。
+メンターの見つけ方、明確な期待の設定、メンターシップを通じた目標達成について、以下の [Google Slides プレゼンテーション](https://docs.google.com/presentation/d/1QPx9ZGa051Jhwwfb78cKW1LD0uVTUdKxRdElBk4Ku9I/edit?usp=sharing)をお楽しみください。
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3cZJcCIv_s44OfN9QLjje2wRqS7EwnrK3HCS_ZeT-ZGwk58hPq17L-c_DvCdvu0jxjR3r6yY8xY79/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-### メンティー: メンターシップを始める前にすべきこと
+### メンティー: メンターシップを始める前にすべきこと {#mentee-what-to-do-before-your-mentorship-begins}
 
-1. メンターとコーヒーチャットを設定しましょう。彼らを知るための時間を取り、[信頼を築き](/handbook/leadership/building-trust/) ましょう。コミュニケーションスタイルと好みについて話し合いましょう。
+1. メンターとコーヒーチャットを設定しましょう。相手を知るための時間を取り、[信頼を築き](/handbook/leadership/building-trust/)ましょう。コミュニケーションスタイルと好みについて話し合いましょう。
 1. メンターシップの具体的な目標を設定しましょう。メンターシップ中に目標の 100% に到達しなくても大丈夫です。
 1. [#mentoring](https://app.slack.com/client/T02592416/C01QKNDJ76J/thread/C5P8T9VQX-1587584276.009700) Slack チャンネルに参加しましょう
 
-### メンティー: 目標と目的を設定する
+### メンティー: 目標と目的を設定する {#mentee-set-your-goal-and-purpose}
 
-著書 [Burnout: the secret to unlocking the stress cycle](https://www.burnoutbook.net/) で、著者の Emily と Amelia Nagoski は目標と目的の違いを説明しています。
+著書 [Burnout: the secret to unlocking the stress cycle](https://www.burnoutbook.net/)で、著者の Emily と Amelia Nagoski は目標と目的の違いを説明しています。
 
 | アイデア | 定義 |
 | ---- | --------------- |
 | 目標 (Goal) | `何を` — アウトカム駆動型 |
 | 目的 (Purpose) | `なぜ` — 価値駆動型 |
 
-メンティーは、自分のメンターシップに対する基礎的な目標と目的を設定する必要があります。**メンティーの目標が関係を推進する必要があります**。メンターも、自分自身のメンターとしての成長目標を設定するかもしれません。メンターとメンティーの両方が、メンターシップに自分自身のオリジナルな目的を持ち込みます。
+メンティーは、自分のメンターシップに対する基礎的な目標と目的を設定する必要があります。**メンティーの目標が関係を推進する必要があります。**。メンターも、自分自身のメンターとしての成長目標を設定するかもしれません。メンターとメンティーの両方が、メンターシップに自分自身のオリジナルな目的を持ち込みます。
 
-### あなたの目標は何ですか？
+### あなたの目標は何ですか？ {#what-is-your-goal}
 
 | 基準 | 説明 |
 | -------- | ----------- |
@@ -135,9 +135,9 @@ lastmod: "2026-08-04T09:49:53+00:00"
 | ---------- | ------- | -------- | -------- | ---------- | -------- |
 | | | | | | |
 
-*この構造は [Burnout: the secret to unlocking the stress cycle](https://www.burnoutbook.net/) と [SMART 目標フレームワーク](https://support.peoplegrove.com/hc/en-us/articles/360001265792-Structure-Goals-and-Agendas) から改変しています。目標設定について詳しく学ぶには、[Setting Team and Employee Goals using SMART Methodology LinkedIn Learning コース](https://www.linkedin.com/learning/setting-team-and-employee-goals-using-smart-methodology/how-to-use-smart-goals-2) を受講してください。*
+*この構造は [Burnout: the secret to unlocking the stress cycle](https://www.burnoutbook.net/)と [SMART 目標フレームワーク](https://support.peoplegrove.com/hc/en-us/articles/360001265792-Structure-Goals-and-Agendas)から改変しています。目標設定について詳しく学ぶには、[Setting Team and Employee Goals using SMART Methodology LinkedIn Learning コース](https://www.linkedin.com/learning/setting-team-and-employee-goals-using-smart-methodology/how-to-use-smart-goals-2)を受講してください。*
 
-#### ツール固有の目標を設定する
+#### ツール固有の目標を設定する {#setting-tool-specific-goals}
 
 GitLab への自信を高めるなど、ツールの学習に固有の目標は、SMART モデルに当てはめるのが難しいかもしれません。目標を明確にするために、自分自身に以下の 2 つの質問を考えてみてください。
 
@@ -158,22 +158,22 @@ GitLab への自信を高めるなど、ツールの学習に固有の目標は�
 > 1. 製品の 3 つの ruby バグを解決する
 > 1. 学びをまとめた 1 つのブログ投稿を作成する
 
-### あなたの目的は何ですか？
+### あなたの目的は何ですか？ {#what-is-your-purpose}
 
 目的は価値駆動型であり、あなたの価値観に基づいています。メンターシップに参加するためにあなたを駆り立てる価値観は何かを判断し、以下のステートメントを完成させてください。
 
-**わたしは `value` を大切にしているから `メンター/メンティー` です。`Value` が `あなたの why` だから、わたしを `メンター/メンティー` であるように駆り立てます。**
+**私たちは `value` を大切にしているので、`mentor/mentee` です。`Value` が私たちを `mentor/mentee` へと駆り立てるのは、`your why` だからです。**
 
-### 目標と目的を伝える
+### 目標と目的を伝える {#communicate-your-goal-and-purpose}
 
 目標と目的に関する議論は、最初のメンターシップミーティングの一部であるべきです。目標に関する進捗とイテレーションは頻繁に見直されるべきです。
 
-## メンティー: ミーティングスケジュールを設定する
+## メンティー: ミーティングスケジュールを設定する {#mentee-set-a-meeting-schedule}
 
 メンター/メンティーと、いつ、どれくらいの頻度で、どれくらいの時間正式に会うかについて明確な期待を設定しましょう。以下はこのミーティング頻度の推奨フォーマットです。
 
-1. 期間を確立する: 3〜6 か月が推奨
-1. 隔週で 30〜45 分のミーティング頻度を設定するか、隔週で 30〜45 分を非同期コミュニケーションに費やすことに合意する
+1. 期間を確立する: 3 〜 6 か月が推奨
+1. 隔週で 30 〜 45 分のミーティング頻度を設定するか、隔週で 30 〜 45 分を非同期コミュニケーションに費やすことに合意する
 
 ### 同期ミーティングアジェンダのサンプル {#sample-sync-meeting-agendas}
 
@@ -183,34 +183,34 @@ GitLab への自信を高めるなど、ツールの学習に固有の目標は�
 1. [定期ミーティングアジェンダテンプレート](https://docs.google.com/document/d/1ufU9Hjcuf2-psASdXS_B7zX64C-5eBuvOR-P7pbSULM/edit?usp=sharing)
 1. [最終ミーティングアジェンダテンプレート](https://docs.google.com/document/d/1IVwilfvUN-XE6FE1kjKLLmou4YUQYDD8ba57kM7dyGY/edit?usp=sharing)
 
-*以下のサンプルアジェンダは [Arizona State University](https://wms.arizona.edu/sites/default/files/Sample%20Meeting%20Agendas%20and%20Emails%20for%20Mentors.pdf) と [People Grove](https://support.peoplegrove.com/hc/en-us/articles/360001265792-Structure-Goals-and-Agendas) のリソースに着想を得ています。*
+*以下のサンプルアジェンダは [Arizona State University](https://wms.arizona.edu/sites/default/files/Sample%20Meeting%20Agendas%20and%20Emails%20for%20Mentors.pdf)と [People Grove](https://support.peoplegrove.com/hc/en-us/articles/360001265792-Structure-Goals-and-Agendas)のリソースに着想を得ています。*
 
-### 非同期ミーティングフォーマットのサンプル
+### 非同期ミーティングフォーマットのサンプル {#sample-async-meeting-formats}
 
-GitLab Issue はメンターシップでの非同期コラボレーションに使用できます。この [Issue テンプレート](https://gitlab.com/gitlab-com/people-group/learning-development/mentorship/-/blob/main/.gitlab/issue_templates/async-mentorship.md) を使って始めてください。
+GitLab Issue はメンターシップでの非同期コラボレーションに使用できます。この [Issue テンプレート](https://gitlab.com/gitlab-com/people-group/learning-development/mentorship/-/blob/main/.gitlab/issue_templates/async-mentorship.md)を使って始めてください。
 
-### 非同期メンターシップのための他のツール
+### 非同期メンターシップのための他のツール {#other-tools-for-async-mentorship}
 
-1. [Google ドキュメントの使用テンプレート](https://docs.google.com/document/d/1isANsPewF44w9cLP6JHZJEX4n4cyXHjqpfVvhqQKnOk/edit?usp=sharing)
+1. [Google Docs の使用テンプレート](https://docs.google.com/document/d/1isANsPewF44w9cLP6JHZJEX4n4cyXHjqpfVvhqQKnOk/edit?usp=sharing)
 1. Slack ボイスメモ
 1. Slack 録音
 1. Loom 録画
 
-## 進捗を追跡する
+## 進捗を追跡する {#track-your-progress}
 
-メンターとメンティーの両方に設定された目標の進捗を追跡するために [この Issue テンプレート](https://gitlab.com/gitlab-com/people-group/learning-development/mentorship/-/blob/main/.gitlab/issue_templates/progress.md) を使用してください。
+メンターとメンティーの両方に設定された目標の進捗を追跡するために[この Issue テンプレート](https://gitlab.com/gitlab-com/people-group/learning-development/mentorship/-/blob/main/.gitlab/issue_templates/progress.md)を使用してください。
 
-## メンターシップを終了する
+## メンターシップを終了する {#ending-your-mentorship}
 
 メンターシップは時間とともに終了したり変化したりします。優雅にメンターシップを終了する方法と、メンターシップが終了する際に取るべき推奨アクションについて、これらのガイドラインを確認してください。
 
-1. メンターとメンティーが目標を達成したと感じる場合、またはペアがうまくフィットしない場合、メンターシップを終了することは問題ありません。メンター/メンティーとコーヒーチャットを行い、何が達成されたか、または何がうまくいかなかったかを話し合うことを検討してください。メンターシップに時間を費やしてくれたことに対して互いに感謝しましょう。
+1. メンターとメンターとメンティーが目標を達成したと感じる場合、またはペアがうまくフィットしない場合、メンターシップを終了することは問題ありません。メンター/メンティーとコーヒーチャットを行い、何が達成されたか、または何がうまくいかなかったかを話し合うことを検討してください。メンターシップに時間を費やしてくれたことに対して互いに感謝しましょう。
 1. メンターシップは終わらせる必要もありません！メンターとつながり続けるためのミーティング頻度を確立してください。月に 1 回コーヒーチャットを行ったり、Slack で非同期につながったり、月 2 回のセッションを継続したりするかもしれません。
 1. メンターシップの結果をマネージャーやダイレクトレポートと共有しましょう。1:1 で時間を取り、メンターシップが専門的にも個人的にも目標達成にどのように役立ったかを共有しましょう。これは、メンターシップが結果達成に役立ったのであれば、メンターシップを OKR の達成と結びつける絶好の機会でもあります。
 1. メンターシップを履歴書または LinkedIn プロフィールに追加しましょう。メンターの場合、これはリーダーシップを示すための別のエントリのように見えるかもしれません。メンティーの場合、達成した目標に関連してメンターシップに言及するかもしれません。
 1. メンター/メンティーへの感謝を込めたブログまたは LinkedIn 投稿を書いて、学んだことや驚いたことを強調してください。
 
-## 追加のリソース
+## 追加のリソース {#additional-resources}
 
 これらのリソースは、メンターとメンティーの両方に追加の個人的および専門的開発を提供することを意図しています。これらのリソースを非同期に確認し、メンター/メンティーとのセッション中に議論/デブリーフィングすることを検討してください。
 
@@ -218,37 +218,37 @@ GitLab Issue はメンターシップでの非同期コラボレーションに�
 
 {{< youtube "u4kTlK5mUHc" >}}
 
-1. [Support チーム](/handbook/support) は [Mentorship in Support Engineering](/handbook/support/engineering/mentorship) で期待値と例を概説しています。
+1. [Support team](/handbook/support)は [Support Engineering におけるメンターシップ](/handbook/support/engineering/mentorship)で期待値と例を概説しています。
 1. [GitLab のキャリア成長リソース](/handbook/people-group/learning-and-development/career-development/)
 1. [Harvard Business Review: 効率的なメンターシップとはどのようなものか](https://hbr.org/2020/08/what-efficient-mentorship-looks-like)
 1. [Harvard Business Review: ハイブリッド職場における優れたメンターシップとはどのようなものか](https://hbr.org/2021/05/what-great-mentorship-looks-like-in-a-hybrid-workplace)
 1. [Harvard Business Review: 最良のメンターシップは双方の成長を助ける](https://hbr.org/2022/01/the-best-mentorships-help-both-people-grow)
 
-## 新しいメンターおよびメンティー向け FAQ
+## 新しいメンターおよびメンティー向け FAQ {#faqs-for-new-mentors-and-mentees}
 
 GitLab で初めてのメンターシップですか？メンターとしては初めての場合もあるでしょう。メンターシップを成功させるために必要なリソースを見つけるためのガイドとして、以下の FAQ セクションをチェックしてください。
 
 | 質問 | 回答 |
 | ----- | ----- |
-| **優れたメンターまたはメンティーになるためのリソースはどこにありますか？** | このページで！[期待値テーブル](#expectations) が出発点として最適です。 |
-| **使用できるミーティングテンプレートはありますか？** | はい！初回セッション、進行中のセッション、最終メンターシップセッションのミーティングテンプレートが [こちら](#sample-sync-meeting-agendas) にあります。メンターはメンティーがこれらを開始し、各セッション前に入力するよう促す必要があります。 |
+| **優れたメンターまたはメンティーになるためのリソースはどこにありますか？** | このページで！[期待値テーブル](#expectations)が出発点として最適です。 |
+| **使用できるミーティングテンプレートはありますか？** | はい！初回セッション、進行中のセッション、最終メンターシップセッションのミーティングテンプレートが[こちら](#sample-sync-meeting-agendas)にあります。メンターはメンティーがこれらを開始し、各セッション前に入力するよう促す必要があります。 |
 | **GitLab のメンターシッププログラムで他の人とつながり、学ぶにはどうすればよいですか？** | 各組織化されたメンターシッププログラムには Slack チャンネルがあります。プログラム主催者は、プログラムの期間を通じてそこにリソースとディスカッションプロンプトを投稿します。これらのチャンネルを使って質問し、他のメンターやメンティーから経験を得てください。 |
-| **メンターやメンティーからフィードバックをもらうにはどうすればよいですか？** | プログラムの終わりにフィードバックを求めるのは、相手と対話し、関係性について振り返るのに最適なタイミングです。[360 レビューサイクル](/handbook/people-group/360-feedback/) 中にメンターまたはメンティーからフィードバックをリクエストすることもできます。 |
+| **メンターやメンティーからフィードバックをもらうにはどうすればよいですか？** | プログラムの終わりにフィードバックを求めるのは、相手と対話し、関係性について振り返るのに最適なタイミングです。[360 レビューサイクル](/handbook/people-group/360-feedback/)中にメンターまたはメンティーからフィードバックをリクエストすることもできます。 |
 | **メンターシップミーティングを推進するのは誰ですか？** | メンティーがミーティングを推進します。メンティーは、メンターシップ目標に関連する質問やトピックを準備して各セッションに臨むべきです。 |
-| **メンターシップ機密保持契約はありますか？** | 正式な契約はありませんが、`機密性` は GitLab のメンターおよびメンティーの主要な期待値の 1 つです。これと他の期待値は [上記のテーブル](#expectations) で確認できます。 |
+| **メンターシップ機密保持契約はありますか？** | 正式な契約はありませんが、`機密性` は GitLab のメンターおよびメンティーの主要な期待値の 1 つです。これと他の期待値は[上記のテーブル](#expectations)で確認できます。 |
 
-## オールリモートのメンターシッププログラムを組織する方法
+## オールリモートのメンターシッププログラムを組織する方法 {#how-to-organize-an-all-remote-mentorship-program}
 
-自身のオールリモートメンターシッププログラムを組織する際は、GitLab チームによる以下の実践と教訓を考慮してください。あなた自身の学びをリストに追加するために [マージリクエストを開いて](/handbook/about/handbook-usage/) ください！
+自身のオールリモートメンターシッププログラムを組織する際は、GitLab チームによる以下の実践と教訓を考慮してください。あなた自身の学びをリストに追加するために[マージリクエストを開いて](/handbook/about/handbook-usage/)ください！
 
 1. 最良のエンゲージメントのために、複数のチャンネルにわたって応募の呼びかけを共有し、優れたメンターに直接アウトリーチしてください。優れたメンターやメンティーになりそうなチームメンバーの提案について、People Business Partners に頼ってください。
 1. 応募では、ロール、勤務地、メンターシップフォーカス領域に加えて、理想的な目標を尋ねてください。回答を簡単に並べ替えてペアリングするために、選択式の質問を使用してください。
 1. メンターおよびメンティーとして応募するために、少なくとも 2 週間の時間を与えてください。応募期限後も、遅れて応募する人はペアリングされない可能性があるという注意書きとともに、ローリング応募のために応募を開いておいてください。ローリング応募は、ペアリングが難しいメンター/メンティーのギャップを埋めるのに役立つかもしれません。
-1. Team Member Relations および People Business Partners と協力して、参加者がパフォーマンス改善計画中ではなく、彼らの業務パフォーマンスが参加資格を満たしていることを確認してください（プログラム応募が概説するとおり）。
+1. Team Member Relations および People Business Partners と協力して、参加者がパフォーマンス改善計画中ではなく、参加者の業務パフォーマンスが参加資格を満たしていることを確認してください（プログラム応募が概説するとおり）。
 1. ペアリングのために、可能であれば自動化の使用を検討してください。GitLab ではまだ自動化を使用していませんが、将来のイテレーションのために探求しています。
 1. 手動でペアリングする場合、応募回答に基づいてペアを作る作業に少なくとも 1 週間を確保してください。委任するために委員会の募集を検討してください。
 1. ペアリングされたメンターとメンティーにメッセージを送るために Slack を使用してください。プログラム開始に関連するすべての情報を 1 つのメッセージにまとめ、この情報を共有するためにテキストと短い動画の両方の使用を検討してください。
 1. プログラムの期間中に参加者とコミュニケーションを取るために、専用の #mentorship Slack チャンネルを使用してください。
-1. 参加者のエンゲージメントと学習を維持するために、プログラムを通じて Slack で 1〜2 のリソースを送ってください。
+1. 参加者のエンゲージメントと学習を維持するために、プログラムを通じて Slack で 1 〜 2 のリソースを送ってください。
 1. メンティーに対して 1 か月後のチェックインを行うために Polly や別の調査ツールを使用してください。これは、まだ会っていないペアや会社を離れたかもしれない人を特定するのに役立ちます。
 1. プログラム終了時の調査を完了するために、参加者に少なくとも 3 週間の時間を与えてください。

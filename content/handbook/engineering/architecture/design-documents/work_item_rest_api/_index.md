@@ -9,9 +9,9 @@ dris: []
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/work_item_rest_api/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-lastmod: "2026-10-14T11:13:51+02:00"
-translated_at: "2026-10-19T22:21:24+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-22T11:00:44-04:00"
+translated_at: "2026-11-01T09:02:02+00:00"
 translator: codex
 stale: false
 ---
@@ -275,5 +275,9 @@ API は `experimental` とマークされ、すべてのルートが `hidden` �
    クライアントが、特定のソートにどの方式を使用しているかを知るためにレスポンスヘッダーを調べる必要はないはずです。統一されたカーソルのコントラクトにより、実装は自由に変更できます。並び順にキーセット形式がない場合、サーバーは同じカーソルの内部でオフセットによってページを取得します。実装は [gitlab-org/gitlab#628176](https://gitlab.com/gitlab-org/gitlab/-/work_items/628176)で追跡しています。
 1. [`per_page` は 1 から 100 までを受け付け、その範囲外では 400 を返します](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/261072)。
    カーソルページネーションには制限がなく、1 回のリクエストで数千行を要求できました。範囲外の値を通知なしに引き下げるのではなく拒否することで、クライアントが 1 ページに含められる行数を常に把握できるようにします。この API のディスカッションノートのエンドポイントは、すでにこの範囲を使用しています。REST API の別の部分にある CI ユーザーパイプラインのエンドポイントも同様です。実装は [gitlab-org/gitlab#628176](https://gitlab.com/gitlab-org/gitlab/-/work_items/628176)で追跡しています。
+1. [前のページは `X-Prev-Cursor` のみで返し、`rel="prev"` リンクは返しません](https://gitlab.com/gitlab-org/gitlab/-/work_items/628176)。
+   REST API では、`rel="next"` リンクと `X-Prev-Cursor` を使ったキーセットページネーションがドキュメント化されています。それに合わせることで、ワークアイテム API でも他の API と同じコントラクトを維持でき、前のページの URL が必要なクライアントはカーソルを差し替えることで作成できます。
 1. [不明な `fields` と `features` の値には `400` を返し、アイテムのタイプがサポートしていない機能やライセンスのない機能は省略します](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/20950#note_3788728139)。
    `200` はリクエストを完全に理解したことを意味するべきであるため、GraphQL がクエリの検証時に行うように、認識できない名前は破棄せず拒否します。有効な機能でも、個々のアイテムが持てない場合は、そのアイテムから省略します。これも GraphQL と同じ動作です。リストのレスポンスには複数のワークアイテムタイプが含まれ、単一の `400` によって複数タイプが混在するリストが利用できなくなるためです。[明示的に失敗させることについての議論](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/20950#note_3822228190)も参照してください。実装は [gitlab-org/gitlab#629477](https://gitlab.com/gitlab-org/gitlab/-/work_items/629477)で追跡しています。
+1. [`400` レスポンスや `lib/api` の内部を含め、REST API 全体でウィジェットごとのデータを `features` と呼びます](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/261232#note_3999488374)。
+   REST では最初のエンドポイントから「features」を使用しており、「widget」は API の利用者が受け取るものではなく、フロントエンドでのレンダリングを表しています。モデルの境界では引き続き widget という呼称を使い、REST からドメインへの受け渡しを明確にします。[gitlab-org/gitlab!263317](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263317)と [gitlab-org/gitlab!264054](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264054)で実装されています。

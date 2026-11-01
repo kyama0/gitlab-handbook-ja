@@ -2,50 +2,50 @@
 title: Commercial Sales イネーブルメント
 description: Commercial Sales イネーブルメントのハンドブックページへようこそ
 upstream_path: /handbook/sales/commercial/enablement/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:53:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## Commercial Sales イネーブルメントのハンドブックページへようこそ
+## Commercial Sales イネーブルメントのハンドブックページへようこそ {#welcome-to-the-commercial-sales-enablement-handbook-page}
 
-### Commercial Field Certification - Required 7
+### Commercial Field Certification - Required 7 {#commercial-field-certification---required-7}
 
-営業効率と予測可能性、そして役割における卓越性を高めるために、Field イネーブルメントチームは Field Certification プログラムを開発しました。Commercial AE 向けのこの認定パスの焦点は [Required 7](/handbook/sales/commercial/#required-7) に絞られています。すべての AE は [Sales and Customer Success Onboarding](/handbook/sales/onboarding/) を完了した後、この認定パスを完了することが期待されます。コースと学習者向けのアセットは以下のとおりです。
+営業効率と予測可能性、そして役割における卓越性を高めるために、Field Enablement Team は Field Certification プログラムを開発しました。Commercial AE 向けのこの認定パスの焦点は [Required 7](/handbook/sales/commercial/#required-7)に絞られています。すべての AE は [Sales and Customer Success Onboarding](/handbook/sales/onboarding/)を完了した後、この認定パスを完了することが期待されます。コースと学習者向けのアセットは以下のとおりです。
 
 | タイトル | 学習目標 | 所要時間 |
 | ----- | ------------------ | -------- |
 | R7 Certification, Course 1: [Effective Meeting Hosting](https://classroom.google.com/c/MTI5NDQzODc5OTgx?cjc=a4rh2jz) | 各 AE/ASM がリモート営業のベストプラクティスを適用してプロフェッショナルな仮想ミーティングを開催できるようにする | 20 分 |
-| R7 Reinforcement Module: [Meeting Roles](https://classroom.google.com/c/MTgxMzg1MjQ2NzY2?cjc=7veu3wf) | 各 AE/ASM が正しい co-selling の役割を識別し、所定の営業シナリオに適用できるようにする | 10 分 |
+| R7 Reinforcement Module: [Meeting Roles](https://classroom.google.com/c/MTgxMzg1MjQ2NzY2?cjc=7veu3wf) | 各 AE/ASM が正しい共同営業の役割を識別し、所定の営業シナリオに適用できるようにする | 10 分 |
 | R7 Certification, Course 2: [Account Ranking](https://classroom.google.com/c/MTY4NzQyNjA0OTIx?cjc=s3kk7jx) | 各 AE/ASM が Account Ranking 基準を適用してパイプラインを構築できるようにする | 20-25 分 |
-| R7 Certification, Course 3: [Capturing Key Information](https://classroom.google.com/c/MTgxMzg1MjQ2NzIy?cjc=3fnor2r) と [Logging Call Notes & Updating Next Steps](https://classroom.google.com/c/MTgxMzg1MjQ2NzIy?cjc=3fnor2r) | 各 AE/ASM が顧客の「質問の裏にある質問」を解釈してキー情報を捕捉し、コールノートをどこにどう記録するかを思い出し、実行可能な次のステップを作成できるようにする | 25 分 |
-| R7 Certification, Course 4: [Command Plan](https://gitlab.edcast.com/pathways/r-course-command-plan) | 各 AE/ASM が CP の構造を理解し、informed curiosity を活用して説得力のある「why now」を生み出し、バリュードライバーをメトリクスと整合させてクロージングまで導けるようにする | 30 分 |
+| R7 Certification, Course 3: [Capturing Key Information](https://classroom.google.com/c/MTgxMzg1MjQ2NzIy?cjc=3fnor2r)と [Logging Call Notes & Updating Next Steps](https://classroom.google.com/c/MTgxMzg1MjQ2NzIy?cjc=3fnor2r) | 各 AE/ASM が顧客の「質問の裏にある質問」を解釈してキー情報を捕捉し、コールノートをどこにどう記録するかを思い出し、実行可能な次のステップを作成できるようにする | 25 分 |
+| R7 Certification, Course 4: [Command Plan](https://gitlab.edcast.com/pathways/r-course-command-plan) | 各 AE/ASM が CP の構造を理解し、情報に基づいた好奇心を活用して説得力のある「なぜ今なのか」を生み出し、バリュードライバーをメトリクスと整合させてクロージングまで導けるようにする | 30 分 |
 | R7 Certification, Course 5: [Selling With The Custom Deck](https://gitlab.edcast.com/pathways/r-course-selling-with-the-custom-deck-welcome) | 各 AE/ASM が Custom Deck 要件を適用して GitLab を差別化されたソリューションとしてポジショニングできるようにする | 30 分 |
 |  |  |  |
 
-### 追加の Commercial コース
+### 追加の Commercial コース {#additional-commercial-courses}
 
 | タイトル | 学習目標 | 所要時間 |
 | ----- | ------------------ | -------- |
 | [Selling Services Workshop](https://classroom.google.com/c/MTgxMzg1MjQ2NzM3?cjc=i6kyzzp) | 各 AE/ASM が Professional Service の提供内容と価値を識別しポジショニングできるようにする | 90 分 |
 | AE Choice- [The Journey to Ultimate](https://www.youtube.com/watch?v=d3tkGHBFaRM&list=PL05JrBw4t0KptP3PU_ltZk-_jY2P3T1gb&index=1) <br>(James Heimbuck) | 顧客が Ultimate に到達するためのロードマップの構築方法を学び、Ultimate の<br>特定機能が顧客のスケール時のイノベーションをどう支援するかを理解し、アップティア機能が<br>ビジネス課題をどう解決するかを理解することで反論を克服する | 60 分 |
 
-### コースアセット
+### コースアセット {#course-assets}
 
 | コースタイトル | 関連するコースアセット |
 | ------------ | ----------------------- |
-| R7 Certification, [Course 1: Effective Meeting Hosting](https://classroom.google.com/c/MTI5NDQzODc5OTgx?cjc=a4rh2jz) | - [Team Asset Folder](https://drive.google.com/drive/folders/1dA72mgExeZ2sFGtbMtN1WbvV51gr374E?usp=sharing) <br>- [Commercial Customer Deck Template](https://docs.google.com/presentation/d/1zUD9Os5ZJbfUykEJoRW2NuegUqU5uRsfcxoX4itwlp8/edit#slide=id.g889353d428_0_0) <br>- [How to custom brand the Commercial Sales Deck](https://docs.google.com/document/d/1ewjz6YshbBS99aI7EYPi3LGZ2MOtS_vS4XcfSFIbD40/edit) <br>- [Video Tutorial: How to custom brand the Commercial Sales Deck](https://drive.google.com/drive/folders/1dA72mgExeZ2sFGtbMtN1WbvV51gr374E) <br>- [Zoom Meeting Checklist](https://docs.google.com/document/d/1gmnYYFfXxMdtLnoEcFJwVffg76SC8FRF9EgTrGSXZuk/edit) <br>- ASMs: [Chorus Feedback Resources](https://drive.google.com/drive/folders/1JYiSFQ9tQ3FFIw7k9-Wjvy_pd2HjkCS3) |
-| R7 Reinforcement Module: [Meeting Roles](https://classroom.google.com/c/MTgxMzg1MjQ2NzY2?cjc=7veu3wf) | - [Meeting Roles Infographic](https://docs.google.com/document/d/1CoH122bG8EQQlhFMOtFvMkTDrFFYGf6scgPP1eBTCp0/edit) |
-| R7 Certification, Course 2: [Account Ranking](https://classroom.google.com/c/MTY4NzQyNjA0OTIx?cjc=s3kk7jx) | - [Account Ranking Infographic](https://drive.google.com/drive/folders/1e6eU9R2sITDoRGg2zrUh8rGJ7EDk2Exz) |
-| [Selling Services Workshop](https://classroom.google.com/c/MTgxMzg1MjQ2NzM3?cjc=i6kyzzp) | - [Team Asset Folder](https://drive.google.com/drive/folders/1MMqV7KL2tkNTOzfVp2wZIPyzXEPJ8kZe) <br>- [Enablement for CS to Position Professional Services](https://docs.google.com/presentation/d/1NtURhF4TH3mYqhjaDiwDbhq5m5y2GMfOv8BtxOtp2w0/edit#slide=id.g8920d2a269_0_609) <br>- [Professional Services Sales Enablement - Q3FY21](https://docs.google.com/presentation/d/1VGfUC85NO74S5qaaNZ1yQydhZL3Be4ofBTG52xr_LEA/edit#slide=id.g75e3e400c6_6_123)<br>[Internal Positioning Collateral for PS](https://docs.google.com/document/d/1TMZe6yNbvdz9Sfq4pz-i0DHMLnai2Kjqw7HKkqzwpSo/edit#heading=h.jui4rrvyjeoz) <br>- [Nanotronics Deal Spotlight](https://drive.google.com/drive/folders/1MMqV7KL2tkNTOzfVp2wZIPyzXEPJ8kZe) <br>- [EWS Deal Spotlight](https://drive.google.com/drive/folders/1MMqV7KL2tkNTOzfVp2wZIPyzXEPJ8kZe) |
+| R7 Certification, [Course 1: Effective Meeting Hosting](https://classroom.google.com/c/MTI5NDQzODc5OTgx?cjc=a4rh2jz) | - [チームアセットフォルダー](https://drive.google.com/drive/folders/1dA72mgExeZ2sFGtbMtN1WbvV51gr374E?usp=sharing) <br>- [Commercial 顧客向けデッキテンプレート](https://docs.google.com/presentation/d/1zUD9Os5ZJbfUykEJoRW2NuegUqU5uRsfcxoX4itwlp8/edit#slide=id.g889353d428_0_0) <br>- [Commercial Sales デッキのブランドをカスタマイズする方法](https://docs.google.com/document/d/1ewjz6YshbBS99aI7EYPi3LGZ2MOtS_vS4XcfSFIbD40/edit) <br>- [動画チュートリアル: Commercial Sales デッキのブランドをカスタマイズする方法](https://drive.google.com/drive/folders/1dA72mgExeZ2sFGtbMtN1WbvV51gr374E) <br>- [Zoom ミーティングチェックリスト](https://docs.google.com/document/d/1gmnYYFfXxMdtLnoEcFJwVffg76SC8FRF9EgTrGSXZuk/edit) <br>- ASMs: [Chorus フィードバックリソース](https://drive.google.com/drive/folders/1JYiSFQ9tQ3FFIw7k9-Wjvy_pd2HjkCS3) |
+| R7 Reinforcement Module: [Meeting Roles](https://classroom.google.com/c/MTgxMzg1MjQ2NzY2?cjc=7veu3wf) | - [ミーティングの役割のインフォグラフィック](https://docs.google.com/document/d/1CoH122bG8EQQlhFMOtFvMkTDrFFYGf6scgPP1eBTCp0/edit) |
+| R7 Certification, Course 2: [Account Ranking](https://classroom.google.com/c/MTY4NzQyNjA0OTIx?cjc=s3kk7jx) | - [アカウントランキングのインフォグラフィック](https://drive.google.com/drive/folders/1e6eU9R2sITDoRGg2zrUh8rGJ7EDk2Exz) |
+| [Selling Services Workshop](https://classroom.google.com/c/MTgxMzg1MjQ2NzM3?cjc=i6kyzzp) | - [チームアセットフォルダー](https://drive.google.com/drive/folders/1MMqV7KL2tkNTOzfVp2wZIPyzXEPJ8kZe) <br>- [CS が Professional Services を訴求するためのイネーブルメント](https://docs.google.com/presentation/d/1NtURhF4TH3mYqhjaDiwDbhq5m5y2GMfOv8BtxOtp2w0/edit#slide=id.g8920d2a269_0_609) <br>- [Professional Services Sales Enablement - Q3FY21](https://docs.google.com/presentation/d/1VGfUC85NO74S5qaaNZ1yQydhZL3Be4ofBTG52xr_LEA/edit#slide=id.g75e3e400c6_6_123)<br>[PS の社内向けポジショニング資料](https://docs.google.com/document/d/1TMZe6yNbvdz9Sfq4pz-i0DHMLnai2Kjqw7HKkqzwpSo/edit#heading=h.jui4rrvyjeoz) <br>- [Nanotronics Deal Spotlight](https://drive.google.com/drive/folders/1MMqV7KL2tkNTOzfVp2wZIPyzXEPJ8kZe) <br>- [EWS Deal Spotlight](https://drive.google.com/drive/folders/1MMqV7KL2tkNTOzfVp2wZIPyzXEPJ8kZe) |
 
-### これまでに聞いたことのない顧客リクエストを捕捉するプロセス
+### これまでに聞いたことのない顧客リクエストを捕捉するプロセス {#process-for-capturing-customer-requests-youve-never-heard-before}
 
 Covid-19 をめぐる不確実性のなか、これまでに聞いたことのない顧客リクエストを捕捉するためのプロセスを開発しました。プロセスの理解には、この[ドキュメント](https://docs.google.com/document/d/1pWNKq-cyH5uUIGvueyAQea-n4zk6A21ghoAJvOV5uZQ/edit?usp=sharing)を参照してください。
 
-### Opp Management - マネージャーがチェックする項目
+### 商談管理 - マネージャーがチェックする項目 {#opp-management---managers-check-this}
 
 **常に更新が必要なフィールド**
 
@@ -58,7 +58,7 @@ Covid-19 をめぐる不確実性のなか、これまでに聞いたことの�
 1. アカウントティアとティアノート
 1. プライマリコンタクト
 1. 次のステップ
-1. 次のステップの日付
+1. Next Steps Date
 1. ステージ
 1. 商談を進める中で記録されるアクティビティはすべて、**コンタクト** と **商談** の両方に紐づける必要があります
     - ベストプラクティスは「activity history」にアクティビティを記録することです
@@ -75,13 +75,13 @@ Covid-19 をめぐる不確実性のなか、これまでに聞いたことの�
 1. 反論の振り返り
     - リストをレビューし、それらがフィールドを埋めない理由として許容されないことを再度確認する
 
-### アカウントのティアリング
+### アカウントのティアリング {#tiering-accounts}
 
 - [Commercial Sales: Tiering Accounts Training Clippet](https://youtu.be/M-5OhlYxmFI)
 
 詳細は Commercial Sales ハンドブックページの [Account Ranking](/handbook/sales/commercial/#account-ranking) セクションを参照してください。
 
-### 「問題がない」と言うアカウントに入り込む
+### 「問題がない」と言うアカウントに入り込む {#getting-into-accounts-that-say-they-dont-have-a-problem}
 
 **コンセプト**
 
@@ -100,12 +100,12 @@ Covid-19 をめぐる不確実性のなか、これまでに聞いたことの�
 1. 各グループ/バケットへのアプローチ方法とコンテンツタイプを計画します
 1. 理想的なクライアントを特定: 個人的には何らかの形での紹介が欲しい…
     - 遅くても価値のある紹介は、速く冷たく繋がる多くのコネクトよりも優れています
-1. 相手の好む方法で 10〜15 分の接続を取ります:
+1. 相手の好む方法で 10 〜 15 分の接続を取ります:
     - 初めまして - 調子はいかがですか?
     - 自分の信頼性ステートメントを伝える
     - GitLab がどんな形でも役立つと思うか尋ねる
     - 「いいえ」と言われたら残念がる。次にチームや自身が抱える課題を尋ねる
-    - 「はい」と言われたら、聴き取りを開始してディスカバリーに入り、その後 qualification に戻って取り組む価値があるか理解する
+    - 「はい」と言われたら、聴き取りを開始してディスカバリーに入り、その後、商談の適格性の確認に戻って取り組む価値があるか理解する
 1. すべてのノートを記録し、なぜ GitLab を試すべきかについて最も説得力のあるカスタマイズデッキをすぐに構築する
     - デッキの中で最も大きなギャップを見つけ、不確かなら同僚とロールプレイして何が足りないか確認する
 1. ある程度説得力を持たせるために欠けている情報を正確に特定する
@@ -113,7 +113,7 @@ Covid-19 をめぐる不確実性のなか、これまでに聞いたことの�
 
 **より厳しい、紹介なしのシナリオ:**
 
-1. 持っているコンタクト情報のペルソナを深掘りし、双方向のコミュニケーションが 100% 結果につながると確信できる方法でアプローチする
+1. 持っているコンタクト情報のペルソナを深掘りし、その接触が双方向のコミュニケーションにつながると 100% 確信できる方法でアプローチする
     - イベントに参加する
     - ある程度パーソナルなものになる可能性もある
     - 決して気味悪くなってはいけない
@@ -134,11 +134,11 @@ Account Tiering と Tiering Notes にこのアカウントのステータスを�
 1. 価値 = 価値 (得られるもの)/コスト (投じる必要があるもの) × リスク (自分の価値と価値の理解が正確であると予測する確率)
 1. 価値 (この特定の取り組みにおける) = 今 FY でそのアカウントがどれだけ価値があるか/その金額を支出してもらうのに必要な時間
 
-### 営業ノートテイキング
+### 営業ノートテイキング {#sales-note-taking}
 
 GitLab は貢献とコラボレーションの上に築かれた組織です。これらの価値観は素晴らしい製品を作るためだけでなく、ワールドクラスの営業チームを築くためにも重要です。Commercial チームの各メンバーは、自身が参加または現在所有しているアカウントや会話について、SFDC にインサイダーノートを作成することが期待されています。GitLab がリモート企業であることから、優れたノートテイキング文化を作り維持することは一層重要です。
 
-#### なぜアカウントにノートを取るのか?
+#### なぜアカウントにノートを取るのか? {#why-do-we-take-notes-on-accounts}
 
 1. インサイトと学びを捕捉する
     - ノートは GitLab の潜在的顧客や既存顧客をよりよく理解するためのキーインサイトを引き出します。テリトリーを計画・整理・成長させる際、ノートテイキングの規律は記憶では成し得ない方法で取り組みをスケールし、ニーズ、次のステップ、シグナルを明確にする力を与えてくれます。
@@ -148,7 +148,7 @@ GitLab は貢献とコラボレーションの上に築かれた組織です。�
 1. ストーリーを捕捉する
     - 潜在顧客や既存顧客とのあらゆる会話、商談、インタラクションはストーリーの一部です。ストーリーには章があり、始まり、中間、終わりがあります。Commercial チーム内では、ストーリーはトレーニングとイテレーションのためのリソースとコンテキストを提供し、ワールドクラスの達成への旅路のキーコンポーネントとなります。
 
-#### 含めるノートの異なるセクション
+#### 含めるノートの異なるセクション {#different-sections-of-notes-to-include}
 
 **Raw Notes セクション**
 
@@ -166,19 +166,19 @@ GitLab は貢献とコラボレーションの上に築かれた組織です。�
 
 - 名前のとおり「Next Steps」は、自分、チームの他のメンバー、または顧客が行動する必要のある戦略的かつ実行可能な項目を概説します。可能な場合、関連する内部の同僚をタスクにタグ付けし、顧客に関連するタスクはメールでフォローアップしてください。Next Steps はハンドオーバーやビジネス継続性に最適です。構築しているストーリーを覚えていますか? Next Steps をブックマークと考えてください。人々はあなたが残したところからストーリーを拾えるのです。
 
-#### ノートの件名
+#### ノートの件名 {#notes-subject-line}
 
-- あなたの名前/あなたのマネージャー名 Internal (ii) ノートの出所
-- Anthony/Ryan internal (ii) listened to chorus call または TITLE
+- YOUR NAME/YOUR MANAGER NAME Internal (ii) WHAT YOUR NOTES ARE FROM
+- Anthony/Ryan internal (ii) listened to chorus call OR TITLE
 
-#### ノートを作成する場所
+#### ノートを作成する場所 {#where-to-make-notes}
 
-[Salesforce](https://gitlab.my.salesforce.com/00T4M00002KWYXx?srPos=24&srKp=00T) にログインしてノートを追加すべき場所を確認してください。商談が存在しない場合は Contact レベルにノートを作成し、商談が存在する場合は Opportunity レベルにノートを作成します。
+[Salesforce](https://gitlab.my.salesforce.com/00T4M00002KWYXx?srPos=24&srKp=00T)にログインしてノートを追加すべき場所を確認してください。商談が存在しない場合は Contact レベルにノートを作成し、商談が存在する場合は Opportunity レベルにノートを作成します。
 
-#### Next Steps の特徴
+#### Next Steps の特徴 {#characteristics-of-next-steps}
 
-1. **同様のスキルセットを持つ同僚が、あなたのノートを読んで何が起きたかを理解し、迅速 (3〜5 分以内) にアクションを取れるべきです。**
-1. 将来それを読む未来のあなたにとって説得力があるべきです。次のステップを読んだとき、指定した正確な時刻と日にアクションを取る気にならないなら、それを改善すべきです。説得力ある次のステップは具体的で、簡潔で、実行可能で、効率的です。透明性、コラボレーション、効率性、結果という私たちの[バリュー](/handbook/values/#hierarchy)について考えてください。
+1. **同様のスキルセットを持つ同僚が、あなたのノートを読んで何が起きたかを理解し、迅速 (3 〜 5 分以内) にアクションを取れるべきです。**
+1. 将来それを読む未来のあなたにとって説得力があるべきです。次のステップを読んだとき、指定した正確な時刻と日にアクションを取る気にならないなら、それを改善すべきです。説得力ある次のステップは具体的で、簡潔で、実行可能で、効率的です。透明性、コラボレーション、効率性、結果という私たちのバリューについて考えてください。
 1. Next Steps とアクションは、完了したときに顧客の GitLab 体験と旅路に価値を加えます。インパクトがあります。
 
 **例:** 平凡なノート vs 優れたノート
@@ -188,17 +188,17 @@ GitLab は貢献とコラボレーションの上に築かれた組織です。�
 
 **この営業チームは優れたノートを取ります!**
 
-## Commercial sales アカウントヘルスチェックプロセス
+## Commercial Sales アカウントヘルスチェックプロセス {#commercial-sales-account-health-check-process}
 
-## 目的
+## 目的 {#objective}
 
 GitLab ジャーニーのすべての段階で、顧客との前向きな関係を構築・維持すること。前向きな顧客関係は、顧客とずっとパーソナルなレベルで繋がるのに役立ちます。ターゲットオーディエンスと繋がるとき、要件を理解し、問題を解決し、相互理解の感覚を生み出す可能性がずっと高まります。
 
-## ゴール
+## ゴール {#goal}
 
 GitLab 顧客との長続きする関係を作るために、顧客ヘルスチェックの重要性を理解すること。これによりチャーンが減り、エクスパンション商談が増えます。
 
-## ライフサイクルステージとエンゲージメント
+## ライフサイクルステージとエンゲージメント {#lifecycle-stages--engagement}
 
 **First order (Pre-Sale-Day 1)**: 目的は、顧客が GitLab で成功する顧客ジャーニーに備えることです。つまり、彼らがビジネスアウトカムを素晴らしい体験で達成できることです。これには、ニーズに対する製品評価、購買プロセスの明確な定義、シームレスなハンドオフを確保するためのキーマイルストーンのタイムライン決定が含まれます。
 
@@ -214,7 +214,7 @@ GitLab 顧客との長続きする関係を作るために、顧客ヘルスチ�
 **Adoption (Day 90-270)**: 目的は、顧客の元の購入意図 (ユースケースとケイパビリティ、ライセンス) に対処する GitLab ソリューションの活用をサポートすることです。
 
 - Day 90 コール - 実装フェーズをレビューし、採用が成功したことを確認、必要に応じて適切なフォローアップをスケジュールする。初回購入時のキーマイルストーンをレビューし、ビジネスの進捗または何か変化があったかに基づいて軌道に乗っているか評価する。マイルストーンに基づき、追加の GitLab 機能/サービスをポジショニングする適切なフォローアップコールをスケジュールする
-- 達成事項をレビューし追加の GitLab 機能を提示するマイルストーンコールを、評価、トライアル、決定の時間を顧客に十分与えるため、理想的には必要となる 90 日前にスケジュールする。すべての電子メール/電話コミュニケーションが [Highspot](https://gitlab--highspot.na208.visual.force.com/apex/HighspotPage?sfdc.tabName=01r4M00000113UQ) に保管されているマーケティングインサイトまたは顧客コンテンツでサポートされていることを確認する
+- 達成事項をレビューし追加の GitLab 機能を提示するマイルストーンコールを、評価、トライアル、決定の時間を顧客に十分与えるため、理想的には必要となる 90 日前にスケジュールする。すべての電子メール/電話コミュニケーションが [Highspot](https://gitlab--highspot.na208.visual.force.com/apex/HighspotPage?sfdc.tabName=01r4M00000113UQ)に保管されているマーケティングインサイトまたは顧客コンテンツでサポートされていることを確認する
 - 更新フェーズの初回更新ミーティングをスケジュールする
 
 **Renewal (Day 270-365)**: 顧客ジャーニーのこの段階では、GitLab プロダクトの完全な適用と開発が進行中です。このステージの目的は、顧客がプラットフォームから追加価値を得て、プロジェクトタイムラインを最新に保てるようにすることです。

@@ -2,23 +2,23 @@
 title: "オブジェクトストレージ ワーキンググループ"
 description: "GitLab オブジェクトストレージ ワーキンググループは、現在のオブジェクトストレージソリューションのパフォーマンス、セキュリティ、技術的負債の改善を支援することを目的としています。詳細をご覧ください！"
 upstream_path: "/handbook/company/working-groups/object-storage/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T08:17:34+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-12-22T16:51:53+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 属性
+## 属性 {#attributes}
 
 | プロパティ        | 値                                                                                                                                                                                     |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 作成日    | 2021 年 11 月 3 日                                                                                                                                                          |
 | 目標終了日 | 2022 年 5 月 31 日                                                                                                                                                          |
 | Slack           | [#wg_object-storage](https://gitlab.slack.com/messages/wg_object-storage/)（社内からのみアクセス可能）                                                                      |
-| Google Doc      | [Object Storage Working Group Meeting Agenda](https://docs.google.com/document/d/1K4zb9taDyj74NlAdKDOGPmuBzkTQFCbae-oJMMUQuQk/edit?usp=sharing)（社内からのみアクセス可能） |
+| Google Doc      | [Object Storage Working Group の会議アジェンダ](https://docs.google.com/document/d/1K4zb9taDyj74NlAdKDOGPmuBzkTQFCbae-oJMMUQuQk/edit?usp=sharing)（社内からのみアクセス可能） |
 
-## チャーター
+## チャーター {#charter}
 
 GitLab は 3 種類のユーザーデータを保存しています: データベースレコード、Git リポジトリ、およびユーザーがアップロードしたファイルです。
 
@@ -32,7 +32,7 @@ GitLab は 3 種類のユーザーデータを保存しています: データ�
 
 ワーキンググループは、簡略化されたオブジェクトストレージプロセスの設計と新しいソリューションの実装の任務を担っています。
 
-## ビジネス目標
+## ビジネス目標 {#business-goal}
 
 あらゆる種類のアップロードにオブジェクトストレージが利用できるようにすることで、SaaS のスケーラビリティ、信頼性、開発速度を向上させます。
 
@@ -40,7 +40,7 @@ GitLab は 3 種類のユーザーデータを保存しています: データ�
 
 オブジェクトストレージは GitLab の主要機能であり、すべてのセクションにわたるエンジニアリンググループに影響します。ワーキンググループの成果は、エンジニアが最終ソリューションにコントリビュートしやすくする効果もあります。
 
-## スコープと定義
+## スコープと定義 {#scope-and-definitions}
 
 オブジェクトストレージは GitLab の基本コンポーネントであり、共有・分散型・高可用性（HA）ファイルストレージの基盤実装を提供します。
 
@@ -53,23 +53,23 @@ GitLab は 3 種類のユーザーデータを保存しています: データ�
 - Fog と CarrierWave はネイティブ SDK（例: AWS S3 SDK）ほどメンテナンスされていないため、通常は「無料」で利用できる顧客が要求する機能（例: https://gitlab.com/gitlab-org/gitlab/-/issues/242245）をサポートするためにこれらのツールをメンテナンスしたりモンキーパッチしたりする必要が生じています。
 - 多くの場合、不必要にオブジェクトストレージファイルをコピーしています（例: https://gitlab.com/gitlab-org/gitlab/-/issues/285597）。大きなファイル（LFS、パッケージなど）のファイナライズが遅くなったり、まったく機能しないことがあります。
 
-### 定義
+### 定義 {#definitions}
 
-#### CarrierWave
+#### CarrierWave {#carrierwave}
 
 Ruby アプリケーションからファイルをアップロードするためのシンプルで非常に柔軟な方法を提供する gem です。最初に実装された時点ではシンプルなソリューションでしたが、私たちのユースケースはもはやそれではありません。Workhorse からファイルをアップロードするようになり、ダイレクトアップロードをサポートするために [CarrierWave の内部にパッチを当てる](https://gitlab.com/gitlab-org/gitlab/-/issues/285597#note_452696638)必要がありました。
 
-#### ダイレクトアップロード
+#### ダイレクトアップロード {#direct-upload}
 
 Workhorse でファイルアップロードをインターセプトし、コストのかかるアップロード操作をよりコストの低い Workhorse で処理するために開発した技術です。詳細は[アップロード開発ドキュメント](https://docs.gitlab.com/ee/development/uploads/#)をご覧ください。
 
-### キックオフ動画
+### キックオフ動画 {#kickoff-video}
 
 
 {{< youtube "X9V_w8hsM8E" >}}
 
 
-## 終了基準（100%）
+## 終了基準（100%） {#exit-criteria-100}
 
 このグループの作業を通じて、オブジェクトストレージの実装に対して行うことができる改善を文書化し、十分な情報に基づいた実装提案を行うことが全体的な目標です。具体的には:
 
@@ -90,13 +90,13 @@ Workhorse でファイルアップロードをインターセプトし、コス�
   - [Pseudonymizer の廃止と削除の評価](https://gitlab.com/gitlab-org/gitlab/-/issues/348400)
   - [Pseudonymizer の廃止と削除](https://gitlab.com/gitlab-org/gitlab/-/issues/219952)
 
-## スコープ外
+## スコープ外 {#out-of-scope}
 
 - 提案されたソリューションの最終決定。
 - すべての提案されたソリューションの実装。
 - 将来的なオブジェクトストレージ開発の永続的な管理者または監督者になること。
 
-## 成果
+## 成果 {#outcome}
 
 このワーキンググループの開始時点では、改善すべき 3 つの主要な領域がありました: オブジェクトストレージファイルの単一バケットへの統合、コードの複雑さの軽減、ローカルストレージの削除。
 
@@ -106,9 +106,9 @@ Workhorse でファイルアップロードをインターセプトし、コス�
 
 オブジェクトストレージファイルの単一バケットへの統合とローカルストレージサポートの削除は、ワーキンググループによってコードの複雑さを軽減し製品のインストールとメンテナンスを簡略化するための優れた方法として評価されました。しかしながら、これらのトピックはワーキンググループのスコープに収まらない、より重大な部門横断的な意思決定を必要とします。最初のイテレーションとして、ワーキンググループメンバーは技術的課題に焦点を当て、コードの複雑さを軽減する方法に取り組みました。
 
-このワーキンググループの実行中に[スケーラビリティフレームワークチーム](/handbook/engineering/infrastructure-platforms/team-history#scalability-group-history)が設立されたことで、この取り組みを継続するための完璧なパートナーが誕生しました。Epic [gitlab-com/gl-infra&733](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/733)は現在のロードマップを説明しています。
+このワーキンググループの実行中に[scalability frameworks team](/handbook/engineering/infrastructure-platforms/team-history#scalability-group-history)が設立されたことで、この取り組みを継続するための完璧なパートナーが誕生しました。Epic [gitlab-com/gl-infra&733](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/733)は現在のロードマップを説明しています。
 
-## 役割と責任
+## 役割と責任 {#roles-and-responsibilities}
 
 ファンクショナルリードは以下の責任を担います:
 
@@ -116,12 +116,12 @@ Workhorse でファイルアップロードをインターセプトし、コス�
 - 自分の部門/サブ部門からの特定の提案に関するフィードバックを収集・統合します。
 - ワーキンググループからのアウトプット（もしあれば）を伝達し、自分の部門/サブ部門からの質問に回答します。
 
-理想的には、ファンクショナルリードは影響を受けるグループで働く IC（個人貢献者）ですが、上記の方法でグループ、部門、またはサブ部門を代表できる人であれば誰でも歓迎します。
+理想的には、ファンクショナルリードは影響を受けるグループで働く IC ですが、上記の方法でグループ、部門、またはサブ部門を代表できる人であれば誰でも歓迎します。
 
 | ワーキンググループの役割 | 担当者                             | ステークホルダー部門 | 役職                                |
 | ------------------ | ---------------------------------- | ----------------- | ------------------------------------ |
-| エグゼクティブスポンサー  | Marin Jankovski @marin             | Infrastructure    | Director of Infrastructure, Platform |
-| ファシリテーター        | Alessio Caiazza @nolith            | Infrastructure    | Staff Backend Engineer               |
+| Executive Sponsor  | Marin Jankovski @marin             | Infrastructure    | Director of Infrastructure, Platform |
+| Facilitator        | Alessio Caiazza @nolith            | Infrastructure    | Staff Backend Engineer               |
 | ファンクショナルリード    | Grzegorz Bizon @grzesiek           | Ops, Verify       | Staff Backend Engineer               |
 | ファンクショナルリード    | Jason Plum @WarheadsSE             | Distribution      | Staff Backend Engineer               |
 | ファンクショナルリード    | Matthias Käppler @mkaeppler        | Memory            | Senior Backend Engineer              |
@@ -139,7 +139,7 @@ Workhorse でファイルアップロードをインターセプトし、コス�
 
 ## アップロードに関する会社の取り組み {#company-efforts-on-uploads}
 
-GitLab では[イテレーション](/handbook/values/#iteration)で作業を進めており、ダイレクトアップロードは複数のマイルストーンを経て複数のチームによって段階的に開発されました。
+GitLab ではイテレーションで作業を進めており、ダイレクトアップロードは、複数のマイルストーンにわたって新しい機能を追加することで、複数のチームによって段階的に開発されました。
 
 関与するチームとマイルストーンの数を示すために、機能開発から技術的負債とセキュリティ修正に至るオブジェクトストレージ開発のタイムラインを以下に示します:
 
@@ -164,4 +164,4 @@ GitLab では[イテレーション](/handbook/values/#iteration)で作業を進
 - **13.2** において、IC がマルチパートアップロードと ETag チェックを改善するために [Workhorse に S3 クライアントを追加](https://gitlab.com/gitlab-org/gitlab-workhorse/-/issues/222)しました。
 - **13.3** において、IC が [AWS S3 サーバーサイド暗号化のサポートを追加](https://gitlab.com/gitlab-org/gitlab/-/issues/22200)しました。
 - **13.4** において、IC が [Azure Blob ストレージのサポートを追加](https://gitlab.com/gitlab-org/gitlab/-/issues/25877)しました。
-- **13.4** から **14.0** にかけて、Release グループが [GitLab Pages New Architecture ブループリント](https://docs.gitlab.com/ee/architecture/blueprints/cloud_native_gitlab_pages/index.html)に従い [GitLab Pages を NFS からオブジェクトストレージに移行](https://gitlab.com/groups/gitlab-org/-/epics/3901)しました。
+- **13.4** から **14.0** にかけて、Release group が [GitLab Pages New Architecture ブループリント](https://docs.gitlab.com/ee/architecture/blueprints/cloud_native_gitlab_pages/index.html)に従い [GitLab Pages を NFS からオブジェクトストレージに移行](https://gitlab.com/groups/gitlab-org/-/epics/3901)しました。

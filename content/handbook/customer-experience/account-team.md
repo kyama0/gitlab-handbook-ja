@@ -2,20 +2,20 @@
 title: "アカウントチーム"
 description: "アカウントチームは、顧客の価値、成功、成長を推進するために協力して取り組みます"
 upstream_path: /handbook/customer-experience/account-team/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:21:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ---
 
 アカウントチームは、お客様の価値、成功、成長を推進するために協力して取り組みます。
 
-## セールスセグメント
+## セールスセグメント {#sales-segments}
 
-### エンタープライズ
+### エンタープライズ {#enterprise}
 
 エンタープライズのアカウントチームは、以下のメンバーで構成されます。
 
@@ -23,7 +23,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - [Solutions Architect（SA）](/job-description-library/sales/solutions-architect/)
 - [Customer Success Manager（CSM）](/job-description-library/sales/customer-success-management/)（[該当するアカウント](/handbook/customer-experience/csm/services/#csm-alignment)向け）
 
-### コマーシャル／ミッドマーケット
+### コマーシャル／ミッドマーケット {#commercialmid-market}
 
 ミッドマーケットのアカウントチームは、以下のメンバーで構成されます。
 
@@ -32,16 +32,16 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ミッドマーケットでは、Solutions Architect はプールされており、特定のアカウントチームには割り当てられていません。
 
-## 役割と責任
+## 役割と責任 {#roles-and-responsibilities}
 
-### Strategic Account Executive（SAE）／Account Executive（AE）
+### Strategic Account Executive（SAE）／Account Executive（AE） {#strategic-account-executive-sae--account-executive-ae}
 
 - 初期販売および更新の契約と価格を交渉する
 - 見込み顧客と成約方法に関する戦略を持つ必要がある
 - プリセールスの見込み顧客とポストセールスのアップグレードについて Solutions Architect（SA）と連携する
 - アカウントプランニングと更新について Customer Success Manager（CSM）と連携する
 
-### Solutions Architect（SA）
+### Solutions Architect（SA） {#solutions-architect-sa}
 
 - ディスカバリーコールをリードし、見込み顧客が SDLC のどこで、なぜ問題を抱えているかを把握する
 - POV を実施し、SOW のスコープを定める
@@ -61,16 +61,16 @@ lastmod: "2026-09-24T21:34:11+02:00"
   - [リスク軽減](/handbook/customer-experience/csm/risk-mitigation/)
   - [更新ディスカッション](/handbook/customer-experience/csm/renewals/)
 - 定期的な[ケイデンスコール](/handbook/customer-experience/csm/cadence-calls/)をリードし、[Customer Collaboration プロジェクト](/handbook/customer-experience/csm/customer-collaboration-project/)を最新の状態に保つ
-- 顧客のヘルスに関する [Gainsight](/handbook/customer-experience/csm/gainsight/) のレコードを維持し、必要に応じてトリアージを行う
+- 顧客のヘルスに関する [Gainsight](/handbook/customer-experience/csm/gainsight/)のレコードを維持し、必要に応じてトリアージを行う
 - [High または Critical のエスカレーション](/handbook/customer-experience/csm/escalations/)に関するアカウントエスカレーションの窓口
 
-以下で提供する [アカウントチームの役割と責任のフレームワーク](/handbook/people-group/directly-responsible-individuals) は、チーム間のコラボレーションを改善するためのガイドフレームワークとして機能するように設計されています。これは CSM または CSA が管理するアカウントにのみ適用されることに注意してください。CSE が管理するアカウントについては、エンゲージメントルールに関する [CSE のハンドブック](/handbook/customer-experience/csm/segment/cse/)を参照してください。通常、アカウントは CSM または CSA のいずれかが監督し、アカウントチームの役割と責任のフレームワークで概説される責任は、「コメント」セクションで明記されている場合を除いて等しく適用されます。
+以下で提供する [アカウントチームの役割と責任のフレームワーク](/handbook/people-group/directly-responsible-individuals)は、チーム間のコラボレーションを改善するためのガイドフレームワークとして機能するように設計されています。これは CSM または CSA が管理するアカウントにのみ適用されることに注意してください。CSE が管理するアカウントについては、エンゲージメントルールに関する [CSE のハンドブック](/handbook/customer-experience/csm/segment/cse/)を参照してください。通常、アカウントは CSM または CSA のいずれかが監督し、アカウントチームの役割と責任のフレームワークで概説される責任は、「コメント」セクションで明記されている場合を除いて等しく適用されます。
 
-以下のアカウントチームの役割と責任のフレームワークは、この [OKR](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6329) の成果であり、[DCI マトリックス](/handbook/people-group/directly-responsible-individuals)を活用しています。
+以下のアカウントチームの役割と責任のフレームワークは、この [OKR](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6329)の成果であり、[DCI マトリックス](/handbook/people-group/directly-responsible-individuals)を活用しています。
 
 #### アカウントチームの役割と責任のフレームワーク - CSM/A {#account-team-roles--responsibilities-framework---csma}
 
-##### **ジャーニーステージ: プリセールスとアラインメント**
+##### **ジャーニーステージ: プリセールスとアラインメント** {#journey-stage-pre-sales--alignment}
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
@@ -81,7 +81,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | Custom Demo を実施する | 重要な問題に対するソリューションを紹介する、特注のディープダイブデモンストレーションシリーズ。 |||||DRI|||||
 | Hands-On ワークショップ／ラボを提供する | 技術評価フェーズでは、GitLab ユースケースに焦点を当てた半日のプリセールスイネーブルメントワークショップを提供します。これらのワークショップは、まだ購入されていない機能に対するユーザーの理解と認識を加速するために設計されており、大規模な Proof of Value（POV）演習の代替手段となります。 |||||DRI|||||
 | Value Stream ワークショップを実施する | 組織のソフトウェアデリバリープロセスとパフォーマンスを理解するための詳細なディスカバリーを行い、特定のアプリケーションのバリューストリームについて現状と推奨される将来の状態を構築する。 |C,I - 既存のクローズ案件に続いて既にエンゲージメントがある場合||C|I|DRI|I||||
-| Lunch and Learn セッションを実施する | フィールドマーケティングチームと連携して実施する、関心領域を紹介する短いハンズオンセッション。 |C,I||||DRI|||||
+| Lunch and Learn セッションを実施する | Field Marketing チームと連携して実施する、関心領域を紹介する短いハンズオンセッション。 |C,I||||DRI|||||
 | Guided Trial を監督する | 戦術的な機能と実装をカバーする顧客主導のトライアルで、想定または既知の目標とどのように整合するかについてのガイダンスとともに行う。 |I -  機会が既存顧客向けの場合|C,I -  機会が既存顧客向けの場合|C,I||DRI|||||
 | Proof of Value を監督する | 重要なビジネス価値に関する、相互合意された期限付きの評価。 |I -  機会が既存顧客向けの場合|C,I -  機会が既存顧客向けの場合|||DRI|||||
 | 技術的ディープダイブセッションを実施する | 見込み顧客または顧客にとって重要なカスタムユースケースのより詳細なセッション。|||||DRI|||||
@@ -93,7 +93,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | セールスからカスタマーサクセス（CS）への引き継ぎ |シームレスな移行のためにセールスから CS への詳細な情報移転を確実にする。 |C,I||C,I||DRI|||||
 | Mutual Success Plan を作成する |顧客の目標と主要なユースケースを文書化するために、顧客と共同で成功計画を作成する。 |C,I||C,I||DRI|||||
 
-##### **ジャーニーステージ: オンボード**
+##### **ジャーニーステージ: オンボード** {#journey-stage-onboard}
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
@@ -102,14 +102,14 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | ケイデンスコールを設定する | 顧客との定期的な進捗確認のスケジュールを設定し実施する。 |DRI||I|I|I|I||I||
 | Mutual Success Plan を維持する | 顧客の目標と成功指標の概要を示す相互成功計画を維持・更新する。 |DRI||C|I|C|I||C,I||
 
-##### **ジャーニーステージ: イネーブル**
+##### **ジャーニーステージ: イネーブル** {#journey-stage-enable}
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
 | ユースケースイネーブルメントワークショップ＆ハンズオントレーニング | お客様がすでに購入またはライセンスを持っている機能に関連するユースケースの理解を深めるためのワークショップを開催する。標準コンテンツが提供される。カスタマイズコンテンツについては、お客様は Professional Services（PS）と連携する必要がある。 |DRI||I|I|I|||||
 | 主要ユースケース採用の測定 | 主要ユースケースの採用率を追跡し分析する。 |DRI||I|I|I|||||
 
-##### **ジャーニーステージ: 拡張**
+##### **ジャーニーステージ: 拡張** {#journey-stage-expand}
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
@@ -120,7 +120,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | co-create キックオフ＆紹介 | お客様を co-create チームに紹介する。 |DRI||C|I|I|I||I||
 | コミュニケーションの円滑化 | co-create チームとお客様間のコミュニケーションをサポートする。 |DRI - ここでの CSM は、キックオフまでは DRI であり、キックオフ後 co-create チームが追加のサポートを必要とする場合（イニシアティブがリスクにさらされる場合）にのみ介入する||C|I|I|I||I||
 
-##### **ジャーニーステージ: 最適化と更新**
+##### **ジャーニーステージ: 最適化と更新** {#journey-stage-optimize--renew}
 
 | アクティビティ | タスク | CSMA | CSA | AE | RM | SA | PS | Support | Executive Sponsor | Product and Engineering |
 |-------|------|------|-----|----|----|----|------|----|-----|-----|
@@ -133,7 +133,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | リスクおよびエスカレーション管理 | アカウントチームへの自社アカウントのリスクに関する頻繁なコミュニケーションと、必要に応じたエスカレーションプロセスのトリガー／リード（アカウントエスカレーション／STAR）。 |DRI||C|C|C|I|C,I|C|C,I|
 | [SPS Accelerator](/handbook/customer-experience/success-services/#accelerators)  | 改善が必要な領域を特定するために定期的なヘルスチェックを実施する。GitLab の Accelerators へのアクセスを提供し、特定のニーズに合わせて GitLab 製品の使用を最適化できるよう支援し、効果的な実装を支援する。 |C,I|DRI|C|I|I|C,I||I||
 
-## CSM と顧客との関わり
+## CSM と顧客との関わり {#csm-interaction-with-customers}
 
 - 顧客のニーズと目標を理解し整合させる。製品採用と成長を推進することに焦点を当てた、相互合意の成功計画を確立する。
 - 採用指標をレビューし、ベータ機能に関する視点を提供し、製品知識と関心を高めるためのプレゼンテーションやデモを実施することにより、信頼できるアドバイザーとして行動して採用を促進する。
@@ -147,16 +147,16 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - 定期的なコールやメールを通じて顧客関係を維持し、[エグゼクティブビジネスレビュー（EBR）](/handbook/customer-experience/csm/ebr/#overview)を計画・実施して目標の再整合を図る。
 - アラインメントを維持し、新しい機会を発掘するために主要ステークホルダーを更新しエンゲージする。
 
-## CSM とクロスファンクショナルチームとの関わり
+## CSM とクロスファンクショナルチームとの関わり {#csm-interaction-with-cross-functional-teams}
 
-- **[Account Executives](/handbook/sales/) との関わり**
+- **[Account Executives](/handbook/sales/)との関わり**
   - アカウントプランニングのサポート
   - 機会と更新の表面化
   - 顧客ヘルスとリスク評価に関する定期的なタッチポイント
   - 戦略的イニシアティブと目標に関する継続的なアラインメント
   - 年次セキュリティおよびコンプライアンスアンケート（更新または調達プロセスの一環）
 
-- **[Customer Advocacy／Events](/handbook/marketing/growth-marketing/growth-community-programs/) との関わり**
+- **[Customer Advocacy／Events](/handbook/marketing/growth-marketing/growth-community-programs/)との関わり**
   - スピーキングエンゲージメントへの顧客ボランティア
   - リファラルプログラム
   - エンゲージメントを高めるケーススタディ
@@ -178,15 +178,15 @@ lastmod: "2026-09-24T21:34:11+02:00"
   - PS エンゲージメントの可能性に関する顧客とのディスカッションを開始する
   - 顧客の期待を理解し、それを Engagement Manager に伝える
   - 進捗と現在のアクションを把握しておく
-  - [Expert Services](https://about.gitlab.com/services/catalog/) などの追加のフォローアップ オプションを提供する
+  - [Expert Services](https://about.gitlab.com/services/catalog/)) などの追加のフォローアップオプションを提供する
 
 - **[Renewal Managers](/job-description-library/sales/renewal-manager/)との関わり**
   - 更新の 4 か月前から Renewal Manager とエンゲージする
   - Renewal Manager との更新ディスカッションを準備しサポートする
-  - リスクがある場合は[AE](/handbook/sales/) と Renewal Manager と積極的に協働する
+  - リスクがある場合は[AE](/handbook/sales/)と Renewal Manager と積極的に協働する
 
 - **[Sales Development Representatives（SDRs）](/handbook/sales/sales-development/) および [Business Development Representatives（BDRs）](/handbook/sales/sales-development/)との関わり**
-  - [AE](/handbook/sales/) はファシリテーターとして機能し、アカウント拡張のための統一された戦略に CSM の専門知識とセールス／ビジネス開発活動を橋渡しし、CSM は必要に応じてサポートと洞察を提供する
+  - [AE](/handbook/sales/)はファシリテーターとして機能し、アカウント拡張のための統一された戦略に CSM の専門知識とセールス／ビジネス開発活動を橋渡しし、CSM は必要に応じてサポートと洞察を提供する
     - カスタマージャーニーからの洞察を活用して、更新に関する早期ディスカッションを開始する
 
 - **[Solutions Architect チーム](/handbook/solutions-architects/)との関わり**
@@ -204,10 +204,10 @@ lastmod: "2026-09-24T21:34:11+02:00"
     1. ポストセールスの顧客関係:
         - 新しい機会と関連しないデモやその他の製品ワークショップ
     2. 既存顧客内でのライセンス拡張
-    3. アラインメントを維持し、新しい機会を発掘するために SA を更新しエンゲージする
+    3. アラインメントを維持し、新しい機会を発掘するために SA に最新情報を伝え、関与してもらう
     4. 継続的な顧客成功を確保するためにアカウントヘルスの定期評価を実施する
 
-  - Mutual Customer Success Plan に関するコラボレーション - プリセールス カスタマーサクセスプラン（SA がオーナー - [基準](/handbook/solutions-architects/processes/customer-success-plan/#opportunity-thresholds-for-creating-and-reviewing-mutual-customer-success-plans)）と ポストセールス CSM カスタマーサクセスプラン（CSM がオーナー - [基準](/handbook/solutions-architects/processes/customer-success-plan/#opportunity-thresholds-for-creating-and-reviewing-mutual-customer-success-plans)）の統合
+  - Mutual Customer Success Plan に関するコラボレーション - プリセールスのカスタマーサクセスプラン（SA がオーナー - [基準](/handbook/solutions-architects/processes/customer-success-plan/#opportunity-thresholds-for-creating-and-reviewing-mutual-customer-success-plans)）とポストセールス CSM カスタマーサクセスプラン（CSM がオーナー - [基準](/handbook/solutions-architects/processes/customer-success-plan/#opportunity-thresholds-for-creating-and-reviewing-mutual-customer-success-plans)）の統合
 
 - **[サポートチーム](/handbook/support/)との関わり:**
   - [High および Critical](/handbook/customer-experience/csm/escalations/)のエスカレーションが発生した場合のコミュニケーションの維持
@@ -224,11 +224,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - 追加の注意が必要な新規顧客のオンボーディング
 - [緑色以外のヘルススコア](/handbook/customer-experience/csm/health-score-triage/)を持つアカウントのトリアージ
 
-[全員の時間を最も効率的に使う](/handbook/values/#be-respectful-of-others-time)ための推奨事項として、特定の緊急のニーズがない限り、これらのコールは週に 1 回以上行うべきではありません。アカウントチームの定期コールを行う必要はありませんが、地域やセグメントごとにアカウントチームのアラインメントとエンゲージメントへのアプローチは異なる場合があります。特定の地域やセグメントのアプローチに関する明確な情報については、対応する CSM Manager(s) に問い合わせてください。
+全員の時間を最も効率的に使うための推奨事項として、特定の緊急のニーズがない限り、これらのコールは週に 1 回を超えて行うべきではありません。アカウントチームの定期コールを行う必要はありませんが、地域やセグメントごとにアカウントチームのアラインメントとエンゲージメントへのアプローチは異なる場合があります。特定の地域やセグメントのアプローチに関する明確な情報については、対応する CSM Manager(s) に問い合わせてください。
 
 アカウントチームは、ターゲットを絞った成長やより広範なアカウント拡張のために、[Sales Development Representative（SDR）](/job-description-library/marketing/sales-development-representative/)をアカウントミーティングに含めることを選択できます。
 
-### 誰がミーティングをリードするか
+### 誰がミーティングをリードするか {#who-leads-the-meeting}
 
 - *特定の人やロールがボスではありません。あなた方はチームです。*
 - タスクは SALSACSM ミーティング中に合意され、各人の責任領域に該当するべきです。
@@ -236,7 +236,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - SA と CSM は、顧客のためのスムーズな移行を確保するために協力する必要があります。
 - CSM と SAE は、スムーズなオンボーディング、継続的な顧客満足度、アカウントの成長、ステージ採用の推進、そして今後何年もの更新を確保するために協力する必要があります。
 
-### ミーティング中に使用するツール
+### ミーティング中に使用するツール {#tools-to-use-during-the-meeting}
 
 - [ワーキングアグリーメント](/handbook/solutions-architects/processes/#working-agreements)
 - Salesforce
@@ -244,7 +244,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 - [Customer Collaboration プロジェクト](/handbook/customer-experience/csm/customer-collaboration-project/)
 - 顧客ミーティングノート
 
-## リーダーシップ アラインメント - セールスと CSM マネジメント
+## リーダーシップのアラインメント - セールスと CSM マネジメント {#leadership-alignment---sales-and-csm-management}
 
 Area Sales Manager（ASM）と CSM Manager も、クロスファンクショナルなアラインメントを確保するために定期的（隔週または月次）にミーティングを行うべきです。
 
@@ -256,9 +256,9 @@ CSM Manager がミーティングの DRI であり、マネジメントレベル
 - 成長機会: 追加リソースが必要なアカウントや機会、成長可能性に関する戦略を立てる
 - フィードバック: 個々のチームメンバーの勝利とフィードバック
 
-## カスタマーライフサイクル全体を通じた協働
+## カスタマーライフサイクル全体を通じた協働 {#working-together-throughout-the-customers-lifecycle}
 
-SA はすべてのプリセールス技術的な関係とアクティビティを担当します。SA は、販売前のプロダクト、セールス、ビジネス、技術的イニシアティブに関連する会話を調整します。プリセールスにおける CSM の関与は、販売後の顧客関係に対する期待をモデル化しますが、技術的な勝利を達成した後に限定すべきです。CSM の関与は、SA のプリセールス アカウント オーナーシップを置き換えるのではなく、補完する必要があります。
+SA はすべてのプリセールス技術的な関係とアクティビティを担当します。SA は、販売前のプロダクト、セールス、ビジネス、技術的イニシアティブに関連する会話を調整します。プリセールスにおける CSM の関与は、販売後の顧客関係に対する期待をモデル化しますが、技術的な勝利を達成した後に限定すべきです。CSM の関与は、SA のプリセールスにおけるアカウントのオーナーシップを置き換えるのではなく、補完する必要があります。
 
 アカウントがプリセールスからポストセールスに移行する際は、[Account Executive/Solutions Architect から Customer Success Manager に引き継がれます](/handbook/customer-experience/pre-sales-post-sales-transition/)。
 

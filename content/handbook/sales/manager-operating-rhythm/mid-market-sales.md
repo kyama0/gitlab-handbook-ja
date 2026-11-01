@@ -1,70 +1,70 @@
 ---
-title: "コマーシャルセールスマネージャーのオペレーティングリズム"
+title: "Commercial Sales Manager のオペレーティングリズム"
 description: "成功するマネジメントには、オンボーディング、コマンドプランのレビュー、商談コーチング、戦略的コーチング、キャリア開発、パフォーマンスマネジメントが含まれます"
 upstream_path: /handbook/sales/manager-operating-rhythm/mid-market-sales/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T07:58:09.762707+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
-コマーシャルエリアセールスマネージャーハンドブックへようこそ。中核リソースを 1 ページで概観したい場合は、[Global Manager Playbook](https://docs.google.com/presentation/d/1HmzgSsau959CSZxEOoXCHdFS9h6a0vvvtDMVsFX57yo/edit?usp=sharing) をご活用ください。このプレイブックには、コマーシャルエリアセールスマネージャーがチームをマネジメントするうえで活用する主要な活動が含まれています。これは厳格なルールというより、ビジネスをマネジメントし、成果を最適化するためのガイドです。
+Commercial Area Sales Manager ハンドブックへようこそ。中核リソースを 1 ページで概観したい場合は、[Global Manager Playbook](https://docs.google.com/presentation/d/1HmzgSsau959CSZxEOoXCHdFS9h6a0vvvtDMVsFX57yo/edit?usp=sharing)をご活用ください。このプレイブックには、Commercial Area Sales Manager がチームをマネジメントするうえで活用する主要な活動が含まれています。これは厳格なルールというより、ビジネスをマネジメントし、成果を最適化するためのガイドです。
 
-以下の詳細は、責任と活動をどのようにマネジメントするかについて追加のガイダンスを提供しており、経験豊富な GitLab コマーシャル ASM とリーダーから情報を得ています。この部門での「優れた状態とは何か」を考えるときは、ご自身の[ジョブファミリー](/job-description-library/)、[フィールドコンピテンシー](/handbook/sales/training/field-functional-competencies/)、[マネージャー・リーダーシップコンピテンシー](/handbook/people-group/competencies/#manager-and-leadership-competencies)、そして[GitLab のバリュー](/handbook/values/)を参照してください。
+以下の詳細は、責任と活動をどのようにマネジメントするかについて追加のガイダンスを提供しており、経験豊富な GitLab Commercial ASM とリーダーから情報を得ています。この部門での「優れた状態とは何か」を考えるときは、ご自身の[ジョブファミリー](/job-description-library/)、[フィールドコンピテンシー](/handbook/sales/training/field-functional-competencies/)、[マネージャー・リーダーシップコンピテンシー](/handbook/people-group/competencies/#manager-and-leadership-competencies)、そして GitLab のバリューを参照してください。
 
-## クイックリンク
+## クイックリンク {#quick-links}
 
-- [**コマーシャルセールスハンドブックページ**](/handbook/sales/commercial/#welcome-to-the-commercial-sales-handbook): このページはコマーシャルセールスのホームベースであり、コンテンツハブ[Highspot](https://gitlab.highspot.com/spots/6335790e985c4ea48cb01588)、トレーニングハブ、Slack チャンネル、ツール、戦略・計画リソースへのリンクが含まれています。コマーシャルアカウントエグゼクティブ(AE)向けのすべてのリソースも含まれています。
-- [**コマーシャルセールスアップデートティッカー**](https://baton.fyi/r/#/ufEIX672CN3F/pm2P2oOenrFu): 週次でフォーカスエリアと主要トピックに基づいて更新されます。ブックマークし、チームに継続的に参照するよう促してください。
+- [**Commercial Sales ハンドブックページ**](/handbook/sales/commercial/#welcome-to-the-commercial-sales-handbook): このページは Commercial Sales のホームベースであり、コンテンツハブ[Highspot](https://gitlab.highspot.com/spots/6335790e985c4ea48cb01588)、トレーニングハブ、Slack チャンネル、ツール、戦略・計画リソースへのリンクが含まれています。Commercial Account Executive（AE）向けのすべてのリソースも含まれています。
+- [**Commercial Sales アップデートティッカー**](https://baton.fyi/r/#/ufEIX672CN3F/pm2P2oOenrFu): 週次でフォーカスエリアと主要トピックに基づいて更新されます。ブックマークし、チームに継続的に参照するよう促してください。
 - [**セールスハンドブックページ**](/handbook/sales/#welcome-to-the-sales-team-homepage): このページにはすべての役割とセグメントに適用される一般的なセールスガイダンスが含まれており、ディール・オーダー処理情報、顧客リファレンスリソース、エグゼクティブスポンサーシップなどが含まれます。
-- [**Global Area Sales Operating playbook**](https://docs.google.com/presentation/d/1HmzgSsau959CSZxEOoXCHdFS9h6a0vvvtDMVsFX57yo/edit#slide=id.g2cc694d6ee3_0_649): エリアセールスマネージャーがビジネスを運営し、チームをマネジメントし、成果を出すために使用する典型的なオペレーティングリズムを示す一連のスライドです。役立つ主要なレポートやダッシュボードも含まれています。
-- [**コマーシャルアカウントエグゼクティブのオンボーディングジャーニー**](/handbook/sales/commercial/enablement/): チームメンバーの最初の 90 日間と、この期間中に到達すべきマイルストーンを一目で確認できます。
+- [**Global Area Sales Operating playbook**](https://docs.google.com/presentation/d/1HmzgSsau959CSZxEOoXCHdFS9h6a0vvvtDMVsFX57yo/edit#slide=id.g2cc694d6ee3_0_649): Area Sales Manager がビジネスを運営し、チームをマネジメントし、成果を出すために使用する典型的なオペレーティングリズムを示す一連のスライドです。役立つ主要なレポートやダッシュボードも含まれています。
+- [**Commercial Account Executive のオンボーディングジャーニー**](/handbook/sales/commercial/enablement/): チームメンバーの最初の 90 日間と、この期間中に到達すべきマイルストーンを一目で確認できます。
 
-## 戦略的セールスプランニング
+## 戦略的セールスプランニング {#strategic-sales-planning}
 
-戦略的セールスプランニングは、すべてのエリアセールスマネージャー(ASM)がチームのためにリードする重要な活動です。**セールスチームメンバー**が以下のことを行っているかを検証します:
+戦略的セールスプランニングは、すべての Area Sales Manager（ASM）がチームのためにリードする重要な活動です。**セールスチームメンバー**が以下のことを行っているかを検証します:
 
 - 最も高いポテンシャルを持つアカウントと商談に集中していること
 - 強力なデータ分析に基づき、計画にプラスまたはマイナスの影響を与える可能性のある事柄を認識していること
 - フィールドマーケティング、ディールデスク、チャネル、パートナー&アライアンスなどのディールチームや内部のビジネスパートナーと効果的に協業していること
 - 目標とクォータを達成するために十分なパイプラインがあること
 
-### テリトリーアサインメントと GTM プランニング
+### テリトリーアサインメントと GTM プランニング {#territory-assignments-and-gtm-planning}
 
-これは年次で行われます。準備として、これらのアカウントがチームにどのように分配されているかを確認し、アカウントエグゼクティブ(AE)間でかなり公平な分配を行うという目標を検証します。テリトリーアサインメントとクォータを推奨し、財務目標を達成・上回るために必要なリソース要件を特定します。
+これは年次で行われます。準備として、これらのアカウントがチームにどのように分配されているかを確認し、Account Executive（AE）間でかなり公平な分配を行うという目標を検証します。テリトリーアサインメントとクォータを推奨し、財務目標を達成・上回るために必要なリソース要件を特定します。
 
-#### テリトリープランニングは戦略的計画の重要な一部です
+#### テリトリープランニングは戦略的計画の重要な一部です {#territory-planning-is-a-key-part-of-strategic-planning}
 
-AE は、年次でアサインメントに基づいて新規または更新されたテリトリープランを作成します。プランの詳細は、メジャーまたはストラテジックアカウントエグゼクティブのいずれであるかによって異なります。これらのプランは、ASM または VP がホストする Territory Plan Presentations で発表され、通常は Q1 と Q3 の年 2 回行われます。[テリトリープランニングのハンドブックページとツールキットを表示する](https://internal.gitlab.com/handbook/sales/territory-planning/)。
+AE は、年次でアサインメントに基づいて新規または更新されたテリトリープランを作成します。プランの詳細は、Major または Strategic Account Executive のいずれであるかによって異なります。これらのプランは、ASM または VP がホストする Territory Plan Presentations で発表され、通常は Q1 と Q3 の年 2 回行われます。[テリトリープランニングのハンドブックページとツールキットを表示する](https://internal.gitlab.com/handbook/sales/territory-planning/)。
 
-**コマーシャルセールスのすべてのアカウントエグゼクティブは、自分の担当エリアにどのようにアプローチするかのテリトリープランを持つ必要があり**、すべての ASM は AE がアプローチを検証・更新するのを助けられるように、それを可視化できる状態にすべきです。このプランは、適切な顧客をターゲットにし、収入と一貫したセールス成長のためのゴールを実装するための、ハイレベルで戦略的かつ協力的な計画です。パイプライン創出、パートナー/チャネルエンゲージメント、フィールドマーケティング活動の計画が含まれます。通常、優先順位の高いアカウントに対する詳細なアカウントプランの作成が続きます。
+**Commercial Sales のすべての Account Executive は、自分の担当エリアにどのようにアプローチするかのテリトリープランを持つ必要があり**、すべての ASM は AE がアプローチを検証・更新するのを助けられるように、それを可視化できる状態にすべきです。このプランは、適切な顧客をターゲットにし、収入と一貫したセールス成長のためのゴールを実装するための、ハイレベルで戦略的かつ協力的な計画です。パイプライン創出、パートナー/チャネルエンゲージメント、フィールドマーケティング活動の計画が含まれます。通常、優先順位の高いアカウントに対する詳細なアカウントプランの作成が続きます。
 
 このタイプの戦略的計画は事前に大きな時間投資が必要ですが、AE が自分のテリトリーをよりよく理解するのに非常に役立ち、時間とともに更新やイテレーションが容易になります。
 
-#### アカウントプランニング
+#### アカウントプランニング {#account-planning}
 
-テリトリープランの後、AE は目標を達成するために集中するアカウントを特定し、優先順位を付けます。トップアカウントについて、各 AE はアカウントプランを作成するアカウントを優先順位付けし、必要な詳細レベルについて ASM と合意すべきです。アカウントプランニングは、可能であれば月次以上の頻度で四半期ごとに行うべきです。
+テリトリープランの後、AE は目標を達成するために集中するアカウントを特定し、優先順位を付けます。トップアカウントについて、各 AE はアカウントプランを作成するアカウントを優先順位付けし、必要な詳細レベルについて ASM と合意すべきです。アカウントプランニングは、四半期ごと、またはそれ以上の頻度で行うべきです。
 
-ハイレベルなアカウントプランは、しばしば[ストラテジックアカウントプランテンプレート](https://docs.google.com/presentation/d/1AcwkYebTZ9mPfGsKlzd5IvppB_cc8to9z_yUvievSL4/edit?usp=sharing)を使用して共有され、テリトリープランと一緒に保存できます。詳細と月次のメンテナンスは通常、CSM がアサインされている拡大アカウントについては、カスタマーサクセスマネージャー(CSM)と協業して Gainsight 内で行われます。CS チームメンバーと AE は、[Gainsight で共同サクセスプランを構築し、それを使用して顧客の製品利用状況とヘルススコアリングを表示する](/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/#quick-links)ことができます。
+ハイレベルなアカウントプランは、しばしば[ストラテジックアカウントプランテンプレート](https://docs.google.com/presentation/d/1AcwkYebTZ9mPfGsKlzd5IvppB_cc8to9z_yUvievSL4/edit?usp=sharing)を使用して共有され、テリトリープランと一緒に保存できます。詳細と月次のメンテナンスは通常、CSM がアサインされている拡大アカウントについては、Customer Success Manager（CSM）と協業して Gainsight 内で行われます。CS チームメンバーと AE は、[Gainsight で共同サクセスプランを構築し、それを使用して顧客の製品利用状況とヘルススコアリングを表示する](/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/#quick-links)ことができます。
 
-## レビューと相談
+## レビューと相談 {#reviews-and-consults}
 
-### 四半期ビジネスレビュー(QBR)
+### 四半期ビジネスレビュー(QBR) {#quarterly-business-reviews-qbrs}
 
 [QBR](https://gitlab.highspot.com/items/649f398774e51fe2635fcac9?lfrm=srp.0)は、各四半期の最初の 2 週間に前四半期のために行われます。準備は通常、その約 2 週間前に始まります。
 
-### アカウントレビュー
+### アカウントレビュー {#account-reviews}
 
-最初のうちは、ASM と CSM マネージャーがこれらのレビューのスケジュール調整とファシリテーションでパートナリングしたい、または必要かもしれませんが、定期的なアカウントレビューは最終的にアカウントチームの通常のオペレーティングリズムの一部となるべきです。個々の顧客の包括的な概要については、ヘルススコア、製品利用、サブスクリプション・請求の詳細、オープンな商談などの重要な情報を統合した[Customer 360](https://10az.online.tableau.com/#/site/gitlab/views/Customer360_17097388485010/Customer360LandingPage)を参照してください。SCM、CI、CD、セキュリティをカバーする採用スコアについては、[Use Case Adoption page](https://10az.online.tableau.com/#/site/gitlab/views/Customer360_17097388485010/UseCaseAdoption?:iid=1)と一緒に使用できます。
+最初のうちは、ASM と CSM マネージャーがこれらのレビューのスケジュール調整とファシリテーションでパートナリングしたい、または必要かもしれませんが、定期的なアカウントレビューは最終的にアカウントチームの通常のオペレーティングリズムの一部となるべきです。個々の顧客の包括的な概要については、ヘルススコア、製品利用、サブスクリプション・請求の詳細、オープンな商談などの重要な情報を統合した[Customer 360](https://10az.online.tableau.com/#/site/gitlab/views/Customer360_17097388485010/Customer360LandingPage)を参照してください。SCM、CI、CD、セキュリティをカバーする導入スコアについては、[Use Case Adoption page](https://10az.online.tableau.com/#/site/gitlab/views/Customer360_17097388485010/UseCaseAdoption?:iid=1)と一緒に使用できます。
 
 アカウントレビューは、四半期ごと(または必要に応じてより頻繁に)、四半期内のさまざまな時点で、通常は 2 週間にわたって行われます。拡張アカウントチーム(AE、SA、CSM、SDR)は参加と貢献が奨励されています。
 
-カスタマーサクセスの参加は、アカウントプランとカスタマーサクセスプランの整合性を確保するために重要です([アカウントプランとサクセスプランの違いは何ですか?](/handbook/sales/account-planning/#what-is-the-difference-between-an-account-plan-and-a-success-plan)を参照してください)。
+Customer Success の参加は、アカウントプランと カスタマーサクセスプランの整合性を確保するために重要です([アカウントプランとサクセスプランの違いは何ですか?](/handbook/sales/account-planning/#what-is-the-difference-between-an-account-plan-and-a-success-plan)を参照してください)。
 
-### パートナーレビュー
+### パートナーレビュー {#partner-reviews}
 
 パートナーレビューは、パートナープランが地域のセールス目標と整合していることを確認するために使用され、以下のような質問をカバーします:
 
@@ -72,9 +72,9 @@ AE は、年次でアサインメントに基づいて新規または更新さ�
 - どこに、どのような追加パートナーが必要で、その理由は何か?
 - 主要パートナーと GitLab アカウントチーム間のさらなる整合とコラボレーションをどのように推進するか?
 
-ASM は、活動を所有しているのが誰かによってこれらをホストまたは参加します(これは地域やセクターによって異なります)。地域のチャネル&アライアンスチームと隔週または月次でつながり、どのように協業したいかの計画でサポートすることがベストプラクティスです。
+ASM は、活動を所有しているのが誰かによってこれらをホストまたは参加します(これは地域やセクターによって異なります)。地域の Channel & Alliances チームと隔週または月次でつながり、どのように協業したいかの計画でサポートすることがベストプラクティスです。
 
-### 商談レビュー
+### 商談レビュー {#opportunity-reviews}
 
 [商談相談](/handbook/sales/command-of-the-message/opportunity-consults/)は、セールスチームメンバーが顧客のビジネスを獲得し確保する可能性を最大化するのを助けることに焦点を当てたディールレビューです。商談の[コマンドプラン](/handbook/sales/command-of-the-message/command-plan/)の「健全性」の共同検査と、成功の可能性を高めることを目指す具体的なアクションを特定しコミットするための双方向の対話に基づいています。
 
@@ -92,7 +92,7 @@ ASM は、活動を所有しているのが誰かによってこれらをホス�
 - ミーティング中、立候補した AE が 1 つの主要商談のコマンドプランを発表し、チームから質問、入力、フィードバックを受ける
 - 成功した場合、繰り返しミーティングシリーズの作成を検討する(月 1〜2 回)
 
-### フォーキャストとパイプラインレビュー
+### フォーキャストとパイプラインレビュー {#forecasting-and-pipeline-reviews}
 
 **これらのレビュー用の Clari と Salesforce リソースは、[Global Sales Operating Manager Playbook](https://docs.google.com/presentation/d/1HmzgSsau959CSZxEOoXCHdFS9h6a0vvvtDMVsFX57yo/edit#slide=id.g2cd9c973e13_1_0)で見つけてください。** 以下のフォーキャスト&パイプラインレビューのケイデンスが推奨されます:
 
@@ -104,12 +104,12 @@ ASM は、活動を所有しているのが誰かによってこれらをホス�
 
 月 2 と月 3 のフォーキャスト&パイプラインレビューは通常 2 時間でスケジュールされます。理想的には、月 2 のレビューは QBR の約 30 日後に行われ、月 3 のレビューはその約 30 日後にスケジュールされます(ただし四半期の最後 7〜10 日には行いません)。追加のガイダンスについては、以下の Out-Quarter Forecasting および Pipeline Reviews セクションを参照してください。
 
-**In-Quarter フォーキャスト:** 毎週、ASM はチームの Commit と Best Case の商談をレビューし、フォーキャストを提出する必要があります。ASM はチームと協業して、Best Case と Commit ディールの Single Source of Truth (SSOT)が Salesforce にあることを確認すべきです。
+**In-Quarter フォーキャスト:** 毎週、ASM はチームの Commit と Best Case の商談をレビューし、フォーキャストを提出する必要があります。ASM はチームと協業して、Best Case と Commit ディールの Single Source of Truth (SSOT) が Salesforce にあることを確認すべきです。
 
 **Out-Quarter フォーキャストとパイプラインレビュー:** 上記のとおり、Out-Quarter レビューは通常、四半期の月 2 と月 3 に行われます。各 AE には以下のトピックをカバーするための 15〜20 分があります:
 
 1. フォーキャスト
-    - ステージ別のステージ 3+商談のサマリー
+    - ステージ別のステージ 3+ 商談のサマリー
     - チャーンリスク
     - 議論したい場合のみ、特定の商談を呼び出す(例: リスクの強調、助けの要求など)
 1. パイプライン
@@ -118,15 +118,15 @@ ASM は、活動を所有しているのが誰かによってこれらをホス�
     - パートナーと SDR とのアクション
 1. 優先アクション
 
-### フォーキャストとパイプラインレビューのベストプラクティス
+### フォーキャストとパイプラインレビューのベストプラクティス {#best-practices-for-forecasting-and-pipeline-reviews}
 
-セールスフォーキャスト、商談マネジメント、レビュー用のツールの使用に関する詳細なガイダンスは、[内部ハンドブックページ](https://internal.gitlab.com/handbook/sales/sales-tools/sales-forecasting/#sales-forecasting)にあります。追加サポートについては、AE を[Clari cheat sheet](https://docs.google.com/presentation/d/1ZvQzFrmmqsJPUIk_FxfTy5X0G59IIWDve0Rfmfw1Wec/edit#slide=id.g133719dda83_2_102)と#sales-support Slack チャンネルに案内してください。
+セールスフォーキャスト、商談マネジメント、レビュー用のツールの使用に関する詳細なガイダンスは、[内部ハンドブックページ](https://internal.gitlab.com/handbook/sales/sales-tools/sales-forecasting/#sales-forecasting)にあります。追加サポートについては、AE を[Clari cheat sheet](https://docs.google.com/presentation/d/1ZvQzFrmmqsJPUIk_FxfTy5X0G59IIWDve0Rfmfw1Wec/edit#slide=id.g133719dda83_2_102)と #sales-support Slack チャンネルに案内してください。
 
 - **AE は自分のテリトリーの CEO として力を与えられ、それに応じてビジネスをマネジメントすべきです。** ASM は、チームが詳細にとらわれすぎないようにアジェンダを管理し、AE が大きな絵に集中するように促す必要があります。より具体的には、最高の AE でさえ時々四半期クォータを逃します。重要なのは、AE と ASM が事前にリスクを認識しており、ダウン四半期を補うために他の四半期に十分なパイプラインがあることです。
 - **これはパフォーマンスレビューではありません。** ASM はまた、以下にリストされているダッシュボード、ヒートマップ、その他のリソースは、AE の利益のためのものであり(管理ツールではなく)、ビジネスを効果的にマネジメントするのに役立つものであると継続的に強化すべきです。
 - **3.5x はパイプラインの目安です。** 一般的な目安として、AE はターゲットの 3.5x のパイプラインを持っています(詳細なガイダンスについては、[プロスペクティングハンドブックページ](https://internal.gitlab.com/handbook/sales/go-to-market/sales-prospecting/)を参照してください)。戦略的計画中に、この数値を特定し、その後逆算して、毎四半期、毎月提供する必要のある価値を判断すべきです。
 
-## チームメンバーのコーチング
+## チームメンバーのコーチング {#coaching-team-members}
 
 [コーチングとメンタリング](/handbook/leadership/coaching/)は、テリトリープランニング、アカウントプランニング、セールスコール、プロスペクティングとパイプラインレビュー、商談レビューなど通常の業務活動の間、およびチームメンバーの開発を通じて行われます。
 
@@ -146,11 +146,11 @@ ASM は、新しい AE、または非常に複雑、戦略的、または高イ�
 - コールへの参加
 - コール直後のデブリーフィング
 
-### チームアセスメント
+### チームアセスメント {#team-assessment}
 
 最後になりましたが、ASM はまた、[Performance / Growth Matrix](/handbook/people-group/talent-assessment/)に従って、チームを年次で評価します。
 
-## 新しいチームメンバーのオンボーディング
+## 新しいチームメンバーのオンボーディング {#onboarding-new-team-members}
 
 すべてのチームメンバーは、セグメントと役割別のオンボーディングジャーニーを経ます。[AE オンボーディングジャーニーをここで表示してください。](/handbook/sales/onboarding/#learning-journeys)その中で、AE には以下の活動が割り当てられています:
 
@@ -161,16 +161,16 @@ ASM は、新しい AE、または非常に複雑、戦略的、または高イ�
 
 ASM は新しい AE と協業して、30/60/90 日プランに対する進捗を開発・モニタリングし、明確なパフォーマンス期待を設定し、オンボーディングプロセス中に定期的なフィードバックを提供すべきです。
 
-### チームオンボーディング中のマネージャーの主要活動
+### チームオンボーディング中のマネージャーの主要活動 {#key-activities-for-managers-during-team-onboarding}
 
 - ランプアップ中の AE をサポートする。ASM は新しい AE に、一般的な GitLab オンボーディング Issue の「赤いドット」のタスクを完了し、主要なリソースをブックマークして整理し、役割固有のオンボーディングを完了し、顧客コールのピアツーピアシャドウイングを優先するよう促すべきです。
 - 点をつなぐ。新入社員に、必要なときに発言したり助けを求めたりするよう促してください。最初の 90 日間をサポートするオンボーディングバディとペアにし、何かを見つける場所がわからないときには適切なリソースとチームを案内してください。
-- ピアとのシャドウ時間を積極的にサポートする。私たちの新入社員の 100%が、迅速にオンボーディングするための重要な方法として顧客コールシャドウイングを推奨しています。プログラムについて学び、参加を優先するのを助け、チーム内でシャドウイングの文化を育ててください。
+- ピアとのシャドウ時間を積極的にサポートする。私たちの新入社員の 100% が、迅速にオンボーディングするための重要な方法として顧客コールシャドウイングを推奨しています。プログラムについて学び、参加を優先するのを助け、チーム内でシャドウイングの文化を育ててください。
 - オンボーディングジャーニーに馴染む。すべての AE は役割固有のトレーニングを完了する必要があります。これは大多数の AE が日常業務を行うために知る必要のあるコンテンツです。これがないと、AE は一般的に必要なものをどこで見つけるか、何のために誰に行くかを知りません。
 
-## トップタレントの採用
+## トップタレントの採用 {#recruiting-top-talent}
 
-常に採用してください!GitLab Field Manager Development Program の[Winning Top Talent](/handbook/sales/field-manager-development/#winning-top-talent)部分で概説されているように、GitLab の継続的な成長と成功に対する効果的な採用の重要性は過小評価できません。ASM はタレントアクイジションリクルーターと定期的に会うべきであり(正確なケイデンスは採用ニーズによって異なります)、GitLab での素晴らしい機会を売り込むことに快適で自信を持つべきです。
+常に採用してください！GitLab Field Manager Development Program の[Winning Top Talent](/handbook/sales/field-manager-development/#winning-top-talent)部分で概説されているように、GitLab の継続的な成長と成功に対する効果的な採用の重要性は過小評価できません。ASM は Talent Acquisition Recruiter と定期的に会うべきであり(正確なケイデンスは採用ニーズによって異なります)、GitLab での素晴らしい機会を売り込むことに快適で自信を持つべきです。
 
 **主要リソース**
 
@@ -179,7 +179,7 @@ ASM は新しい AE と協業して、30/60/90 日プランに対する進捗を
 - ネットワーキングツール
 - 「Why GitLab」サマリー
 
-### チームのキャリア開発と流動性
+### チームのキャリア開発と流動性 {#career-development-and-mobility-for-your-team}
 
 [キャリア開発](/handbook/people-group/learning-and-development/career-development/)は、個人的に決定され進化する好ましい未来に向かって移動するために、学習、仕事、余暇、移行を管理する生涯のプロセスです。マネージャーとして、以下を行うべきです:
 

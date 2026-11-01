@@ -2,20 +2,20 @@
 title: "Observability チーム"
 description: "Observability は、メトリクス、ロギング、トレーシングを担う技術要素と、それらを活用するツールおよびプロセス全体を包含します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/observability/"
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:30:34+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:49:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-16T19:52:00+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 Observability は、メトリクス、ロギング、トレーシングを担う技術要素と、それらを活用するツールおよびプロセス全体を包含します。
 
-## ミッション
+## ミッション {#mission}
 
 私たちのミッションは、世界クラスの Observability の提供と、GitLab のチームメンバーにとって摩擦のない運用体験を提供し維持することです。
 
-## 共通リンク
+## 共通リンク {#common-links}
 
 |                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -26,7 +26,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 | **情報共有 Slack チャンネル** | [#infrastructure_platforms](https://gitlab.slack.com/archives/infrastructure_platforms) (Infrastructure グループチャンネル), <br/>[#incidents](https://gitlab.slack.com/archives/incidents) (インシデント管理),  <br/>[#g_infra_observability_alerts](https://gitlab.slack.com/archives/g_infra_observability_alerts) (Observability の Slack アラート), <br/>[#alerts-general](https://gitlab.slack.com/archives/alerts-general) (SLO アラート), <br/>[#mech_symp_alerts](https://gitlab.slack.com/archives/mech_symp_alerts) (Mechanical Sympathy アラート) |
 | **ドキュメント**              | [ドキュメントハブ](https://gitlab-com.gitlab.io/gl-infra/observability/docs-hub/)                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 以下のメンバーが Observability チームに所属しています。
 
@@ -34,7 +34,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 チームは世界中の[さまざまなタイムゾーン](https://timezonewizard.com/ca-m2n)に分散しています。
 
-## 技術的な原則、目標、責務
+## 技術的な原則、目標、責務 {#technical-principles-goals-and-responsibilities}
 
 私たちの原則と目標の詳細については、[テクニカルブループリント](/handbook/engineering/infrastructure-platforms/production-engineering/observability/technical_blueprint)を参照してください。
 
@@ -54,7 +54,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 1. GitLab.com のプロダクションサービスを対象とする[サービス成熟度モデル](/handbook/engineering/infrastructure-platforms/service-maturity-model/)。
 1. [GitLab.com の可用性レポート](/handbook/engineering/monitoring/): 基盤となるデータと集計値の提供
 
-### ドキュメント
+### ドキュメント {#documentation}
 
 私たちは、Observability サービスやプラットフォームを利用するチームと、自分たちのチーム内利用の両方に向けた技術ドキュメントを提供する必要性を認識しています。
 
@@ -69,7 +69,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 1. リファレンスドキュメントに加えて、特定の利用者層を対象としたガイドやチュートリアルなどのドキュメントを提供することを目指します。
 1. ドキュメントハブはチーム内利用に向けてコンセプトやアーキテクチャを説明する場としても使い、共通理解を作り、全員がすべての領域に貢献できるようにします。
 
-#### さまざまな種類のドキュメントをどこに置くか?
+#### さまざまな種類のドキュメントをどこに置くか? {#where-do-we-keep-different-types-of-documentation}
 
 ドキュメントには様々な種類があり、それぞれ適切な置き場所があります。
 
@@ -95,7 +95,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 ドキュメントの種類とその整理方法に関するおすすめの読み物として、[Divio Documentation System](https://docs.divio.com/documentation-system/)があります。
 
-#### どのようにドキュメントを作成するか?
+#### どのようにドキュメントを作成するか? {#how-do-we-create-documentation}
 
 ドキュメントを再構築・構築するにあたり、ドキュメントハブはあらゆる貢献から恩恵を受けます。
 
@@ -107,7 +107,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 私たちは [ハンドブックファースト](/handbook/company/culture/all-remote/handbook-first/)の考え方と同じように、ドキュメントを主要な存在として作成・維持することを目指しています。
 たとえば、チームメンバーからの個別の質問（Slack 上の質問など）に個別に答える代わりに、これをドキュメントを書く機会として捉え、書いたものをレビューしてもらい、それを使って作業してもらうことができます。
 
-### 指標
+### 指標 {#indicators}
 
 このグループは、Infrastructure 部門の指標に積み上がるいくつかのパフォーマンス指標のオーナーです。
 
@@ -123,7 +123,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 これら異なるシグナルを合わせて、私たちは過去・現在・未来の比較的（不）正確な視野を持ち、GitLab.com のスケーリングニーズの優先順位付けに役立てています。
 
-### プロビジョニングされたサービス
+### プロビジョニングされたサービス {#provisioned-services}
 
 チームは、[Tech Stack](/handbook/business-technology/tech-stack-applications/)に従って、以下のサービスへのアクセスのプロビジョニングを担当します。
 
@@ -131,26 +131,26 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 1. **Elastic Cloud** は、Elastic スタックへの管理アクセスのためのものです。ログイン画面は[こちら](https://cloud.elastic.co/)で、Google SSO 経由でアクセスします。チームメンバーは Access Request ([例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/28457))を通じてプロビジョニング／デプロビジョニングされる必要があります。承認されたら、プロビジョナーは[メンバーシップページ](https://cloud.elastic.co/account/members)でアクセスが必要なインスタンスに対する適切な権限とともにメンバーを追加/削除できます。
 1. **Grafana** は Okta 経由でアクセスします。ログイン画面は[こちら](https://dashboards.gitlab.net)です。GitLab のチームメンバーであれば誰でも Grafana にアクセスできます。プロビジョニング／デプロビジョニングは Okta を通じて処理されます。
 
-## 私たちの働き方
+## 私たちの働き方 {#how-we-work}
 
-私たちは GitLab の[バリュー](/handbook/values/)に沿って働くことをデフォルトとし、より広い [Infrastructure Platforms セクション](/handbook/engineering/infrastructure-platforms/project-management/)のプロセスと、[AI 利用原則](/handbook/engineering/infrastructure-platforms/ai_usage_principles/)に従います。
+私たちは GitLab のバリューに沿って働くことをデフォルトとし、より広い [Infrastructure Platforms セクション](/handbook/engineering/infrastructure-platforms/project-management/)のプロセスと、[AI 利用原則](/handbook/engineering/infrastructure-platforms/ai_usage_principles/)に従います。
 これに加えて、Observability での働き方に特に固有または重要なプロセスを以下に挙げます。
 
-### ロードマップ
+### ロードマップ {#roadmap}
 
 私たちは透明性をもって、この[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1295)でロードマップに優先順位を付けています。`roadmap::` ラベルですべてのエピック／Issue がどのようにグループ化されているかを確認できます。
 
-### プロジェクト管理
+### プロジェクト管理 {#project-management}
 
 私たちが取り組むほとんどのプロジェクトは、複数の Issue を含む[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/)で表現されます。シンプルなタスクは、親エピックなしの [Issue](https://gitlab.com/gitlab-com/gl-infra/observability/team/-/issues)で進められます。
 
-### プロジェクトのサイジング
+### プロジェクトのサイジング {#project-sizing}
 
 プロジェクトには、できれば SRE と BE の両方の役割から、チームの少なくとも 3 名のエンジニアがアサインされます。これにより、知識を共有し、人が不在のときでもプロジェクトを前進させられるようになります。
 
 チームの人数と KTLO・オンコールの追加負荷を考えると、同時に進行できるプロジェクトは 2 件までです。
 
-#### ラベル
+#### ラベル {#labels}
 
 私たちのチームに関連するすべてのエピック／Issue には `~"group::Observability"` ラベルが付いています。
 
@@ -179,7 +179,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 
 また、すべての Issue にはサービスラベルか、もしくは team-tasks、discussion、capacity planning のいずれかのラベルが必要です。
 
-#### ボード
+#### ボード {#boards}
 
 * [担当者別 Issue](https://gitlab.com/groups/gitlab-com/gl-infra/-/boards/7339126)
 * [ワークフロー別エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epic_boards/38727?not%5Blabel_name%5D%5B%5D=roadmap&label_name%5B%5D=group::Observability)
@@ -187,7 +187,7 @@ Observability は、メトリクス、ロギング、トレーシングを担う
 * [テーマ別エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epic_boards/2077564?not%5Blabel_name%5D%5B%5D=roadmap&label_name%5B%5D=group::Observability)
 * [カテゴリ別エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epic_boards/1060230?not%5Blabel_name%5D%5B%5D=roadmap&label_name%5B%5D=group::Observability)
 
-#### 担当者
+#### 担当者 {#assignees}
 
 Issue の担当者割り当てによって、その Issue の DRI が誰かを示します。
 Issue の担当者は、ステータスを定期的に Issue 上で更新し、何が完了し何が残っているかを可能な限り明確に示すことが期待されます。
@@ -195,31 +195,31 @@ Issue の担当者は、ステータスを定期的に Issue 上で更新し、�
 担当者ステータスは通常、そのチームメンバーが現在積極的に取り組んでいるか、比較的すぐに戻ってきて取り組む計画があることを意味します。
 積極的に取り組んでいない、あるいは数日以内に再開する予定がない Issue については、担当を外します。
 
-#### グループレビュー
+#### グループレビュー {#group-reviews}
 
 Production Engineering グループレビューは毎週木曜日に開催されます。`roadmap::now` ラベルの付いた作業項目には、毎週水曜日にステータス更新があることを保証します。更新を共有するためにこの[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1638)を使用します。このエピックはこの[スクリプト](https://gitlab.com/gitlab-com/gl-infra/group-review-automator/)で生成されます。
 
 進行中のすべての作業の可視性を高めるため、各チームメンバーは [Group Review エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1638#-current-focus-roadmapnow)の `roadmap::now` セクションに表示される少なくとも 1 つのプロジェクトに、DRI または参加者としてアサインされることが期待されます。
 
-#### レトロスペクティブ
+#### レトロスペクティブ {#retrospectives}
 
 チームレベルのレトロスペクティブ Issue は 6 週間ごとに作成され、チームが定期的に振り返りを行い、継続的改善の文化を促進できるようにします。レトロスペクティブ Issue の作成は、Engineering Manager の責任です。レトロスペクティブは[こちら](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/?sort=created_date&state=all&label_name%5B%5D=team%3A%3AScalability-Observability&label_name%5B%5D=Retrospective&first_page_size=100)で確認できます。
 
-### Slack での更新
+### Slack での更新 {#updates-in-slack}
 
 週次更新には [GeekBot](https://app.geekbot.com/dashboard/w/184476)を使用しており、#g_observability チャンネルに投稿されます。
 
 更新を投稿する際は、関心のあるチームメンバーが自身で深く調べられるように、十分なコンテキスト（リンクなど）を提供することを心がけてください ([ローコンテキスト](/handbook/communication/#low-context))。
 
-### チームのハッピネス
+### チームのハッピネス {#team-happiness}
 
 毎週木曜日、Slack チャンネルでチームメンバーに対し、[このフォーム](https://forms.gle/xsToh7RzGBas2rkp8)を使ってその週のハッピネスをスコア付けするようリマインドが送られます。チームメンバーは結果を[このスプレッドシート](https://docs.google.com/spreadsheets/d/1JMYG9HCRMj6ZBMrqsRy2TCs3LwIBL3Hz44WtlbDTpQk/)で確認できます（'Graph' シートにビジュアライゼーションもあります）。
 
-### コスト管理
+### コスト管理 {#cost-management}
 
 私たちの Observability サービスの日々の運用コストの詳細については、[Observability スタックのコスト](/handbook/engineering/infrastructure-platforms/production-engineering/observability/cost)ドキュメントを参照してください。アクセス手順とコスト内訳が含まれています。
 
-## 歴史と成果
+## 歴史と成果 {#history-and-accomplishments}
 
 このセクションには、チームの歴史と成果に関するメモが含まれます。網羅的なものではありません。
 
@@ -227,6 +227,6 @@ Production Engineering グループレビューは毎週木曜日に開催され
 * 2024-03、キャパシティプランニング： [Tamland が redis CPU の飽和を予測し、Practices による Redis の先回りスケーリングにつながった](https://gitlab.com/gitlab-com/gl-infra/capacity-planning-trackers/gitlab-com/-/issues/1712) ([スライド](https://docs.google.com/presentation/d/1y58mgaUrpu1dBO_bKVLfDUez9lz-ETLE7E1yksDjAbY/edit#slide=id.g2cc1c00d163_5_4))
 * 2024-05、メトリクス： [Thanos から Mimir への移行が完了](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1107)し、メトリクスの精度とダッシュボードのパフォーマンスに[大きな改善](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1107#outcome)をもたらしました。
 
-### Year-in-Review の Issue
+### Year-in-Review の Issue {#year-in-review-issues}
 
 * [2024](https://gitlab.com/gitlab-com/gl-infra/observability/team/-/issues/4024)

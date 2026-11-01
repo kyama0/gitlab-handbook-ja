@@ -10,9 +10,9 @@ participating-stages: []
 toc_hide: true
 description: "ユーザー、プロジェクト、管理者が管理する複数のソースから、文書化された優先順位とマージ戦略によって GitLab AI クライアントの設定を解決するためのアーキテクチャ決定記録。"
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/012_enterprise_managed_ai_clients/
-upstream_sha: e3b4a7e417dc051c665375d9ef55272927dca0c6
-lastmod: "2026-09-30T10:15:12+13:00"
-translated_at: "2026-10-03T21:08:02+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-27T11:43:37+13:00"
+translated_at: "2026-11-01T08:29:27.696085+00:00"
 translator: codex
 stale: false
 ---
@@ -130,16 +130,20 @@ type SourceId =
 type MergeStrategy =
   | 'replace'
   | 'union'
-  | { restrict: 'intersection' | 'union' | 'min' | 'max' | 'anyTrue' | 'allTrue' }
+  | { restrict: 'intersection' | 'everyList' | 'union' | 'min' | 'max' | 'anyTrue' | 'allTrue' }
   | { perKey: MergeStrategy };              // records: each key resolves on its own
 
-interface SettingDefinition<T> {
+// T is what one source supplies, R is the resolved value; they differ only for
+// restrict: 'everyList', where R = T[]
+interface SettingDefinition<T, R = T> {
   schema: ZodType<T>;                       // validation and schema generation
-  default: T;                               // required; applies when no source sets the setting
+  default: DeepReadonly<R>;                 // required; applies when no source sets the setting
   description: string;                      // used for docs and $schema
   merge: MergeStrategy;                     // see merge strategies below
   allowedSources?: SourceId[];              // omit = any source may set it
-  onUnavailable?: 'fallthrough' | { failClosedTo: T }; // when an administrator source cannot be loaded
+  onUnavailable?:                           // when an administrator source cannot be loaded
+    | 'fallthrough'
+    | { failClosedTo: DeepReadonly<R>; perKey?: { failClosedTo: V } }; // V = the record's value type; perKey only with a perKey merge on a record
   clients?: Array<'cli' | 'editor' | 'ci'>; // where the setting applies; omit = every client
 }
 
@@ -164,18 +168,21 @@ type SourceResult =
   | { status: 'unavailable'; reason: string }; // could not load, e.g. fetch failed
 
 interface Resolved<T> {
-  value: T;
+  value: DeepReadonly<T>;
   source: SourceId | 'default';             // which source supplied the value
   readOnly: boolean;                        // true when the source is enforced
   keys?: Record<string, { source: SourceId | 'default'; readOnly: boolean }>; // perKey settings only
 }
 
 interface SettingsResolver {
-  get<T>(definition: SettingDefinition<T>): Resolved<T>;
+  get<T, R>(definition: SettingDefinition<T, R>): Resolved<R>;
 }
 ```
 
 `clients` は、設定を適用する AI クライアントを列挙します。`cli` は Duo CLI、`editor` はエディタ拡張機能に組み込まれた言語サーバー、`ci` はワークフロー Executor が GitLab CI/CD ジョブ内で実行するフローです。3 つとも同じリポジトリからビルドし、定義を共有します。`clients` は任意で、省略するとすべてのクライアントに設定を適用します。Duo CLI が起動する ACP サーバーは、ACP 独自の値が必要になるまでは `cli` プロファイルを継承し、必要になった時点で独自のクライアント種別になります。
+
+`DeepReadonly` は、プロセス全体で共有する値を示します。利用側はそれらを読み取れますが、
+その場で変更することはできません。
 
 `load` は、解決処理の前にクライアントが 1 回収集した `StartupContext` を受け取ります。これには、作業ディレクトリとホームディレクトリの場所、クライアントの実行プラットフォーム、検出した GitLab インスタンスとプロジェクトの名前空間、要求元のクライアント種別が含まれます。ソースはその中から必要な情報を読み取ります。セッションの上書きソースは例外で、クライアントが解析したフラグまたは IDE 設定を渡して構築し、このコンテキストを無視します。
 
@@ -240,13 +247,13 @@ resolver.get(settings.telemetry.enabled);   // Resolved<boolean>
 
 ### 強制適用 {#enforcement}
 
-値を強制適用するかどうかは、設定の種類ではなく、その値の供給元によって決まります。管理者が制御するソースは 2 つあり、ローカルの管理ファイルと `duo-workspace` プロジェクトのリモート管理設定です。それらが設定したものはすべて強制適用され、他のソースからのものは強制適用されません。強制適用された値について、リゾルバーは読み取り専用の印を付け、対話的な設定 UI は供給元とともに無効化された状態で表示します。たとえば「組織によって設定」と表示します。それ以外のソースの値は、より上位のソースで上書きできます。
+値を強制適用するかどうかは、設定の種類ではなく、その値の供給元によって決まります。管理者が制御するソースは 2 つあり、ローカルの管理ファイルと `duo-workspace` プロジェクトのリモート管理設定です。それらが設定したものはすべて強制適用され、他のソースからのものは強制適用されません。強制適用された値について、リゾルバーは読み取り専用の印を付け、対話的な設定 UI は供給元とともに無効化された状態で表示します。たとえば「set by your organization」と表示します。それ以外のソースの値は、より上位のソースで上書きできます。
 
 強制適用の意味は、設定のマージ戦略によって異なります。
 
 1. `replace`: 管理された値をそのまま値として使用します。
 1. `union`: 管理されたエントリは削除できません。ユーザーはエントリを追加できるため、結果は管理リストとユーザーのリストを合わせたものになります。
-1. `restrict`: 管理された値が制限を定めます。ユーザーは、許可リストからエントリを削除するなど、設定をより厳しくすることはできますが、緩めることはできません。
+1. `restrict`: 管理された値が制限を定めます。ユーザーは設定をより厳しくすることはできますが、緩めることはできません。たとえば、`intersection` の許可リストからエントリを削除したり、`everyList` の許可リストに自分のリストを追加したりできます。後者の場合、すべての候補がそのリストにも一致する必要があります。
 
 強制適用の対象は、管理ソースが実際に設定した設定だけです。管理者が何も指定していないものについては、ユーザーが制御を維持します。
 
@@ -275,16 +282,17 @@ WSL は対象外です。WSL 内で実行されるクライアントは、Window
 
 ### マージ戦略 {#merge-strategies}
 
-各設定は、複数のソースの値をどのように組み合わせるかを宣言します。戦略は、その設定を指定しているソースを対象に実行し、デフォルトはどのソースも指定していない場合にのみ使用します。管理者が許可リストを追加するまでは制限が存在しない場合のように、「未設定」という状態に意味がある設定では、その状態を型とデフォルトに宣言します。たとえば `string[] | null` とし、`null` は制限なしを意味します。
+各設定は、複数のソースの値をどのように組み合わせるかを宣言します。戦略は、その設定を指定しているソースを対象に実行し、デフォルトはどのソースも指定していない場合にのみ使用します。管理者が許可リストを追加するまでは制限が存在しない場合のように、「未設定」という状態に意味がある設定では、「未設定」と「空」を区別する必要があります。`everyList` の許可リストでは、その形によって区別します。リストがなければ制限なし、空のリストが 1 つあれば何も許可しないことを意味します。代わりに型とデフォルトで `null` を使用できるのは、`replace` の設定だけです。他の戦略は複数のソースの値を組み合わせますが、`null` をリスト、数値、真偽値と組み合わせる妥当な方法はありません。
 
 1. `replace`: 設定を指定しているソースのうち、優先順位が最も高いものの値を採用します。テレメトリ、テーマ、自動モードなどのスカラー値の設定に適用します。
 1. `union`: すべてのソースの値を集合として組み合わせます。追加のマーケットプレイスや推奨プラグインなど、追加型のリストに適用します。
 1. `restrict`: 下位のソースは値を厳しくすることはできますが、緩めることはできません。「より厳しい」の意味は値の形によって異なるため、この戦略には方向があります。
    - 許可リストでは `intersection`: すべてのソースに存在するエントリだけが残ります。
+   - エントリが厳密な値ではなく、ホストや URL パターンなどのルールである許可リストでは `everyList`: 同じ対象をカバーする 2 つのルールでも表記が異なる場合があるため、`intersection` では両方が除外され、何も許可されなくなります。代わりに、設定はソースごとのリストに解決され、優先順位の高いものから並びます。候補は、すべてのリストで少なくとも 1 つのルールに一致する場合にのみ許可されます。ソースは `T` を提供し、設定は `T[]` に解決されるため、`default` と `failClosedTo` は解決後の形を使用します。`[]` はリストがないため制限なし、`[[]]` は空のリストが 1 つあるため何も許可しないことを意味します。
    - ブロックリストでは `union`: いずれかのソースでブロックされたエントリは、ブロックされたままになります。
    - 数値や順序付きの選択肢では `min` と `max`: 小さい値または大きい値のどちらかを、より厳しい値とします。列挙型の順序はスキーマに由来します。
    - 真偽値では `anyTrue` と `allTrue`: `true` と `false` のどちらが安全な値かによって選びます。
-1. `perKey`: プラグイン名から有効化フラグへのマップのようなレコードに使用します。各キーは、そのキーに言及するソースを対象として、内側の戦略で個別に解決します。強制適用もキーごとに行います。
+1. `perKey`: プラグイン名から有効化フラグへのマップのようなレコードに使用します。各キーは、そのキーに言及するソースを対象として、内側の戦略で個別に解決します。強制適用もキーごとに行います。`perKey.failClosedTo` を宣言したレコードは、エントリごとにも検証します。[障害の処理](#failure-handling)を参照してください。内側の戦略に `everyList` は使用できません。
 
 設定を厳しくするための特別な構文は、ユーザーには必要ありません。自分のファイルに同じキーを記述すると、戦略が値を組み合わせます。
 
@@ -292,9 +300,11 @@ WSL は対象外です。WSL 内で実行されるクライアントは、Window
 
 1. 存在しないファイルは `absent` です。リゾルバーは次のソースへ進みます。
 1. 解析できないファイルは `unavailable` です。クライアントはパスと解析エラーを示して 1 回警告し、次へ進みます。エラーから復旧するために設定ファイルを削除したり、その内容を置き換えたりすることはありません。ユーザーが修正できるよう、ファイルはそのまま残します。
-1. 検証に失敗した値は、キーと期待する型を示す警告とともに破棄します。ファイルの残りの部分は保持します。
+1. 検証に失敗した値は、キーと期待する型を示す警告とともに破棄します。ファイルの残りの部分は保持します。`perKey.failClosedTo` を宣言した `perKey` レコードはエントリごとに検証するため、無効なエントリだけを破棄します。
 1. 未知のキーは無視するため、時間の経過とともにキーを追加または削除できます。
 1. ある設定を指定できる管理者のソースが、管理ファイルを読み取れない、リモート取得が失敗するなどの理由で読み込めない場合や、その設定のスキーマに適合しない値を提供した場合、デフォルトの動作は `fallthrough` です。そのソースは存在しないものとして扱い、次のソースを適用します。好みの設定には適切ですが、ガバナンスの設定では、まさにポリシーにアクセスできなくなった時点で制限を解除することになります。そのような設定は `onUnavailable: { failClosedTo: value }` を宣言し、空の許可リストや有効化フラグの `false` など、ポリシーを読み取れない間に維持する値を指定します。ほとんどのマージ戦略では、クライアントがスキーマから安全な方向を導き出せないため、値を明示的に宣言します。また、`default` は、どのソースもその設定を指定していないときの値という、本来の意味を保ちます。ポリシーを再び読み取れるようになるまで、クライアントは制限された状態で利用可能なままとなり、その設定は読み取り専用になります。
+
+   `perKey` レコードは、自身の `failClosedTo` の隣に `perKey: { failClosedTo: value }` を追加することで、エントリごとにフェイルクローズすることもできます。強制適用されたソースの無効なエントリは、その値に解決され、読み取り専用となり、そのキーに対するソースの値として扱われます。一方、読み取り可能なエントリでは管理者の意図を維持します。強制適用された値がそもそもレコードでない場合は、他の設定と同様に設定自身の `failClosedTo` にフェイルクローズし、下位のソースは読み取りません。壊れた設定はそれぞれ自身が宣言した値にフェイルクローズし、他の設定は影響を受けないため、強制適用の対象は引き続き管理者が指定した設定だけです。
 1. 設定ファイルに書き込めない場合も、変更は実行中のセッションに適用し、クライアントは保存できなかったことを報告します。
 
 ### ファイル形式 {#file-format}

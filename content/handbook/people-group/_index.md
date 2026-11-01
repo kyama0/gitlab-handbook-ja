@@ -1,52 +1,52 @@
 ---
-title: ピープルグループ
-description: "GitLab のピープルグループは、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
+title: People Group
+description: "GitLab の People Group は、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
 upstream_path: /handbook/people-group/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-translated_at: "2026-09-18T21:10:59+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T08:17:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## ようこそ
+## ようこそ {#welcome}
 
-ピープルグループのハンドブックへようこそ！ここでほとんどの質問の答えを見つけられるはずです。
+People Group のハンドブックへようこそ！ここでほとんどの質問の答えを見つけられるはずです。
 
-## ピープルグループのビジョン
+## People Group のビジョン {#people-group-vision}
 
-ピープルグループは、多様で包括的なチームが意義あるキャリアを経験できる、ハイパフォーマンスで結果重視の文化を確立するために協働します。
+People Group は、多様で包括的なチームが意義あるキャリアを経験できる、ハイパフォーマンスで結果重視の文化を確立するために協働します。
 
-私たちは、人々が GitLab のビジネス成果の向上に完全に貢献しながら、最高の仕事をし、キャリアを進めることを可能にする文化を支援します。私たちは、価値観を最もよく体現するチームメンバーを採用、昇進、認識します。
+私たちは、人々が GitLab のビジネス成果の向上に完全に貢献しながら、最高の仕事をし、キャリアを進めることを可能にする文化を支援します。私たちは、価値観を最もよく体現するチームメンバーを採用、昇進、称賛します。
 
-ピープルグループの戦略は、FY27 Plan の実現を支援することに焦点を当て、世代を超えた会社を構築する基盤を整えながら、[GitLab's Company Strategy](https://internal.gitlab.com/handbook/company/three-year-strategy/) と整合しています。
+People Group の戦略は、FY27 Plan の実現を支援することに焦点を当て、世代を超えた会社を構築する基盤を整えながら、[GitLab の会社戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)と整合しています。
 
-## 私たちとつながる
+## 私たちとつながる {#connect-with-us}
 
-以下のセクションでピープルグループに関連するページも確認できます。探しているものが見つからない場合は、以下を実施してください:
+以下のセクションで People Group に関連するページも確認できます。探しているものが見つからない場合は、以下を実施してください:
 
-- [**ピープルグループ**](https://gitlab.com/gitlab-com/people-ops) は、ピープルグループを編成するためのいくつかのサブプロジェクトを保持しています。適切なサブプロジェクト、または不明な場合は `general` で issue を作成してください。GitLab チームメンバーのみに見えるべきトピックには confidential issues を使用してください。同様に、質問が共有可能な場合は public issue を使用してください。適切なチームメンバーがフォローアップできるよう `@gl-people-ops-team` または `@gl-hiring` をタグ付けしてください。
-  - 機密性のため、ピープルグループのすべてのプロジェクトが issue で共有できるわけではないことに注意してください。完全に透明にできない場合は、issue の説明で共有できるものを共有し、その理由を説明します。
-  - [**雇用 Issue トラッカー**](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates): このサブプロジェクトにはオンボーディング、オフボーディング、移行の Issue テンプレートのみが保持されており、People Operations チームのみが作成します。面接トレーニング Issue は [トレーニング プロジェクト](https://gitlab.com/gitlab-com/people-group/Training) に保持され、Talent Acquisition チームによって作成されます。詳細は [面接ページ](/handbook/hiring/interviewing) を参照してください。
+- [**People Group**](https://gitlab.com/gitlab-com/people-ops)は、People Group を編成するためのいくつかのサブプロジェクトを保持しています。適切なサブプロジェクト、または不明な場合は `general` で Issue を作成してください。GitLab チームメンバーのみに見えるべきトピックには非公開の Issue を使用してください。同様に、質問が共有可能な場合は公開の Issue を使用してください。適切なチームメンバーがフォローアップできるよう `@gl-people-ops-team` または `@gl-hiring` をタグ付けしてください。
+  - 機密性のため、People Group のすべてのプロジェクトが Issue で共有できるわけではないことに注意してください。完全に透明にできない場合は、Issue の説明で共有できるものを共有し、その理由を説明します。
+  - [**雇用 Issue トラッカー**](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates): このサブプロジェクトにはオンボーディング、オフボーディング、移行の Issue テンプレートのみが保持されており、People Operations チームのみが作成します。面接トレーニング Issue は [トレーニング プロジェクト](https://gitlab.com/gitlab-com/people-group/Training)に保持され、Talent Acquisition チームによって作成されます。詳細は [面接ページ](/handbook/hiring/interviewing)を参照してください。
 - **People Operations**; Issue トラッカーに適切でないと思われる質問がある場合、[Compass](/handbook/eta/corporate-it/compass/compass-guide/#how-to-get-help-3-ways-to-reach-compass) 内で People Operations チームのケースを作成し、該当するテンプレート／カテゴリを選択してください。Google または Slack グループに関するアクセス要求については、こちらで Issue を作成してください: https://gitlab.com/gitlab-com/team-member-epics/access-requests。Payroll、Expenses、または Equity に関する質問については、Compass 内のそれぞれのチームに質問を向けてください。リクルーティングチームへの質問（アクセスに関連する質問、または Greenhouse、紹介、面接、面接トレーニングに関するものを含む）については、`#talent-acquisition` チャンネルを使用してください。
 - 機密／プライベートな事項（チームをめぐる機微な事項を含む）について議論する必要がある場合は、Team Member Relations チームの [Compass](https://app.serval.com/new-request) ケースを開くことができます。すべてのチームメンバーは、所在地にかかわらず、プライベートな機微な事項について議論するためにこのフォームを使用できます。
 - 技術的事項（たとえば 2FA）について助けが必要な場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com で IT に連絡してください。
 
-ピープルグループは、GitLab の[ミッション](/handbook/company/mission/)を支援するために存在しています。その方法は、トップタレントを GitLab に迎え入れ、その後、チームメンバーが私たちの[価値観](/handbook/values/)に沿って意義ある貢献をできるようにすることです。質問があるとき、またはサポートを求めるときは、[ご連絡](#how-to-reach-the-right-member-of-the-people-group)をためらわないでください！
+People Group は、GitLab の[ミッション](/handbook/company/mission/)を支援するために存在しています。その方法は、トップタレントを GitLab に迎え入れ、その後、チームメンバーが私たちの価値観に沿って意義ある貢献をできるようにすることです。質問があるとき、またはサポートを求めるときは、[ご連絡](#how-to-reach-the-right-member-of-the-people-group)をためらわないでください！
 
-## 助けが必要ですか？
+## 助けが必要ですか？ {#need-help}
 
-### 緊急時の場合
+### 緊急時の場合 {#in-case-of-emergency}
 
-GitLab のピープルチームから緊急サポートが必要な場合は、[Compass](https://app.serval.com/new-request) でケースを作成してください。Compass はほとんどの労働時間中に監視されており、すべての人事関連の問い合わせのための一元化されたサポートプラットフォームです。[People Operations への問い合わせ方法](/handbook/people-group/people-operations/#methods-of-engagement) について詳しく読んでください。
+GitLab の People チームから緊急サポートが必要な場合は、[Compass](https://app.serval.com/new-request)でケースを作成してください。Compass はほとんどの労働時間中に監視されており、すべての人事関連の問い合わせのための一元化されたサポートプラットフォームです。[People Operations への問い合わせ方法](/handbook/people-group/people-operations/#methods-of-engagement)について詳しく読んでください。
 
 私たちは、緊急事態に直面したときにチームメンバーが常に最善の判断を使うことを信頼しています。チームメンバーは、重大なおよび／または医療緊急事態については、国の緊急サービス番号にダイヤルすることが奨励されています。他のチームメンバーがチームメンバーの緊急事態を認識している場合（たとえば Zoom 通話中に）、元のチームメンバーに代わってその国の緊急サービスに電話したいときは、特定の People Ops チームメンバーのみがチームメンバーの住所にアクセスでき、この極めてまれな状況が発生した場合に緊急サービスとのコミュニケーションを担う役割を引き受ける必要があるため、これをお勧めしません。
 
-自然災害のためにチームメンバーが安全でない状況にある場合は、[Disaster Recovery Plan](/handbook/people-group/incident-response) ページを参照してください。
+自然災害のためにチームメンバーが安全でない状況にある場合は、[災害復旧計画](/handbook/people-group/incident-response) ページを参照してください。
 
 ### 違反の報告方法 {#how-to-report-violations}
 
-[Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) に記載されているとおり、違反の報告に関連するセクションがあります。GitLab は、すべてのチームメンバー向けの包括的で機密性のある報告ツールおよび匿名の倫理ホットラインである Ethico（https://www.mycompliancereport.com/report?cid=GTLB）を起用しています。サービスの目的は、[Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) で扱われている行為について匿名で報告したいチームメンバーが、報復を恐れることなくそうできるようにすることです。
+[ビジネス行動規範および倫理](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf)に記載されているとおり、違反の報告に関連するセクションがあります。GitLab は、すべてのチームメンバー向けの包括的で機密性のある報告ツールおよび匿名の倫理ホットラインである Ethico（https://www.mycompliancereport.com/report?cid=GTLB）を起用しています。サービスの目的は、[ビジネス行動規範および倫理](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf)で扱われている行為について匿名で報告したいチームメンバーが、報復を恐れることなくそうできるようにすることです。
 
 Ethico に加えて、GitLab は、チームメンバーの関係に関する報告をすべてのチームメンバーが提出できる匿名の報告ホットラインを提供するために Lighthouse Services を起用しています。報告は、不正な解雇または懲戒処分、[セクシュアルハラスメント](/handbook/people-group/anti-harassment/#sexual-harassment)、差別、行為違反、アルコールおよび薬物乱用、脅迫、不適切な行為、会社ポリシーの違反などのトピックをカバーしますが、これらに限定されません。
 
@@ -64,44 +64,44 @@ Lighthouse には、チームメンバーが使用できるフリーダイヤル
 - メール: reports@lighthouse-services.com（報告には会社名を含める必要があります）
 - ファックス: (215) 689-3885（報告には会社名を含める必要があります）
 
-Ethico および Lighthouse に加えて、[Team Member Relations](/handbook/people-group/team-member-relations/) ページをご確認ください。GitLab はまた、任意のチームメンバーが任意のタイプの職場ハラスメントのインスタンスを文書化するために使用できる [Harassment Complaint Form](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing) も提供します。フォームをコピーして、あなたの情報で記入し、teammemberrelations@gitlab.com で Team Member Relations Specialist に送信するだけです。
+Ethico および Lighthouse に加えて、[Team Member Relations](/handbook/people-group/team-member-relations/) ページをご確認ください。GitLab はまた、任意のチームメンバーが任意のタイプの職場ハラスメントのインスタンスを文書化するために使用できる [ハラスメント苦情フォーム](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing)も提供します。フォームをコピーして、あなたの情報で記入し、teammemberrelations@gitlab.com で Team Member Relations Specialist に送信するだけです。
 
-## ピープルグループの適切なメンバーへの連絡方法 {#how-to-reach-the-right-member-of-the-people-group}
+## People Group の適切なメンバーへの連絡方法 {#how-to-reach-the-right-member-of-the-people-group}
 
-この表は、ピープルグループ内の特定のグループに連絡したいときに使用するエイリアスを示します。これにより、適切なチームメンバーから、より早く適切な注意を得ることができます。
+この表は、People Group 内の特定のグループに連絡したいときに使用するエイリアスを示します。これにより、適切なチームメンバーから、より早く適切な注意を得ることができます。
 
-| サブグループ | GitLab ハンドル | メール | Slack グループハンドル／チャンネル | Greenhouse | Issue tracker |
+| サブグループ | GitLab ハンドル | メール | Slack グループハンドル／チャンネル | Greenhouse | Issue トラッカー |
 | -------- | ------------- | ----- | -------------------------- | ---------- | ------------- |
-| [People Business Partners](/handbook/people-group/people-business-partners/) | @gl-peoplepartners, *PBP のレビュー、コラボレーション、またはフィードバックを必要とする issue または MR に `pbp-attention` ラベルを追加してください* | peoplepartners@ gitlab.com | @peoplepartners | n/a |  |
+| [People Business Partners](/handbook/people-group/people-business-partners/) | @gl-peoplepartners, *PBP のレビュー、コラボレーション、またはフィードバックを必要とする Issue または MR に `pbp-attention` ラベルを追加してください* | peoplepartners@ gitlab.com | @peoplepartners | n/a |  |
 | [Total Rewards](https://gitlab.com/gitlab-com/people-group/total-rewards) | @gl-total-rewards | total-rewards@ gitlab.com | [Compass](https://app.serval.com/new-request) | n/a |  |
 | [People Compliance Partner](https://gitlab.com/gitlab-com/people-group/compliance) | TBA | [Compass](https://app.serval.com/new-request) | TBA | n/a |  |
 | [People Operations Team](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations_team/) | @gl-people-ops-team | Compass | @people-ops-team | n/a |  |
 | [Team Member Relations](https://gitlab.com/gitlab-com/people-group/team-member-relations) | @atisdale-ext | teammemberrelations@gitlab.com | n/a | n/a |  |
 | [Absence Management Team](/handbook/people-policies/leave-of-absence/) | @lyndemeiers | leaves@gitlab.com | [Compass](https://app.serval.com/new-request)| n/a |  |
-| [People Group Engineering](https://gitlab.com/gitlab-com/people-group/peopleops-eng/people-operations-engineering) | @gl-people-engineering | メールグループなし、People Engineering の issue は[ここ](https://gitlab.com/gitlab-com/people-group/peopleops-eng/people-operations-engineering/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=)で作成してください | #peopleops-eng | n/a | https://gitlab.com/groups/gitlab-com/people-group/peopleops-eng/-/boards/3941171 |
-| [Diversity, Inclusion and Belonging](https://gitlab.com/gitlab-com/diversity-and-inclusion) | エイリアスはまだなし、@mention the |  |  |  |  |
-| [Diversity, Inclusion and Belonging Partner](/job-description-library/people-group/diversity-inclusion-partner/) | diversityinclusion@ gitlab.com | n/a | n/a |  | [Diversity, Inclusion and Belonging issue tracker](https://gitlab.com/gitlab-com/diversity-and-inclusion/-/issues) |
-| [Learning and Development](https://gitlab.com/gitlab-com/people-group/Training) | `@gitlab-com/people-group/learning-development` | learning@ gitlab.com | #learninganddevelopment | n/a | [L&D Issue Board](https://gitlab.com/groups/gitlab-com/people-group/learning-development/-/boards/1958538)  |
+| [People Group Engineering](https://gitlab.com/gitlab-com/people-group/peopleops-eng/people-operations-engineering) | @gl-people-engineering | メールグループなし、People Engineering の Issue は[ここ](https://gitlab.com/gitlab-com/people-group/peopleops-eng/people-operations-engineering/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=)で作成してください | #peopleops-eng | n/a | https://gitlab.com/groups/gitlab-com/people-group/peopleops-eng/-/boards/3941171 |
+| [Diversity, Inclusion and Belonging](https://gitlab.com/gitlab-com/diversity-and-inclusion) | エイリアスはまだなし、@メンションしてください |  |  |  |  |
+| [Diversity, Inclusion and Belonging Partner](/job-description-library/people-group/diversity-inclusion-partner/) | diversityinclusion@ gitlab.com | n/a | n/a |  | [Diversity, Inclusion and Belonging の Issue トラッカー](https://gitlab.com/gitlab-com/diversity-and-inclusion/-/issues) |
+| [Learning and Development](https://gitlab.com/gitlab-com/people-group/Training) | `@gitlab-com/people-group/learning-development` | learning@ gitlab.com | #learninganddevelopment | n/a | [L&D Issue ボード](https://gitlab.com/groups/gitlab-com/people-group/learning-development/-/boards/1958538)  |
 | [Talent Acquisition](/handbook/company/team/?department=talent-acquisition) | @gl-talent-acquisition | recruiting@ gitlab.com | @talent-acquisition-team | n/a |  |
-| Employer Branding | エイリアスはまだなし、[Senior Talent Brand Manager](https://gitlab.com/bchurch) を @mention | employmentbranding@ gitlab.com | n/a | n/a |  |
+| Employer Branding | エイリアスはまだなし、[Senior Talent Brand Manager](https://gitlab.com/bchurch)を @メンションしてください | employmentbranding@ gitlab.com | n/a | n/a |  |
 | [Candidate Experience Specialist](/job-description-library/people-group/candidate-experience) | @gitlab-com/gl-ces | ces@ gitlab.com | @ces | @ces* |  |
 | Talent Acquisition Operations and Insights | @gl-talent acquisitionops | talentacquisitionops@ gitlab.com | @talent-acquisition-ops | @talent-acquisitionops |  |
 | Sourcing | @gl-sourcingteam | n/a | @sourcingteam | n/a |  |
-| [People Analytics](/handbook/people-group/people-ops-tech-analytics/people-analytics/) | エイリアスなし、People Analytics の issue は[こちら](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/issues/?sort=updated_desc&state=opened&first_page_size=100)で作成してください | n/a | @peopleanalyticstriage | n/a | [People Analytics Issue Board](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/boards/5251608) |
+| [People Analytics](/handbook/people-group/people-ops-tech-analytics/people-analytics/) | エイリアスなし、People Analytics の Issue は[こちら](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/issues/?sort=updated_desc&state=opened&first_page_size=100)で作成してください | n/a | @peopleanalyticstriage | n/a | [People Analytics Issue ボード](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/boards/5251608) |
 
-## マネージャーおよびチームメンバー向けのピープルグループ プログラムカレンダー
+## マネージャーおよびチームメンバー向けの People Group プログラムカレンダー {#people-group-program-calendar-for-managers-and-team-members}
 
 この [ページ]https://theloop.gitlab.com/home で、People Manager Calendar と All Team Member Calendar を見つけることができます。これらのページの目標は、チームメンバーと People Manager が事前に計画を立て、今後のプログラムとタイムラインの概要を把握できるようにすることです。
 
-## Legal, Employment チームがピープルグループに提供するサポート
+## Legal, Employment チームが People Group に提供するサポート {#support-provided-by-the-legal-employment-team-to-the-people-group}
 
-Legal-Employment チームは、多くの職能領域でピープルチームと協働し、サポートを提供します。
+Legal-Employment チームは、多くの職能領域で People チームと協働し、サポートを提供します。
 
 外部弁護士との関わりの前に、コストの正確な追跡を可能にするため、VP of Legal, Employment からのメールによる承認が必要です。
 
 請求書は承認のため VP of Legal, Employment に送られます。
 
-## Legal, Employment チームが People Operations チームからサポートを必要とする場合
+## Legal, Employment チームが People Operations チームからサポートを必要とする場合 {#when-support-from-the-people-operations-team-is-required-by-the-legal-employment-team}
 
 Legal, Employment チームは、チームメンバーへの国別の法的要件のコミュニケーション、エンティティ国で必要な場合のチームメンバーとの相談、または法的に必要な契約修正の手配などのため、People Operations チームのサポートを必要とする場合があります。これらの事項は個別のチームメンバーまたはチームメンバーのグループに関連する可能性があるため、機密の方法で適切に管理されます。
 
@@ -118,15 +118,15 @@ Legal, Employment チームが People Operations チームに支援またはサ�
 
 要求を行うには、テンプレートのコピーを保存し、上記のとおり記入し、日付を入れて People Operations Manager に渡し、要求が評価され完了のために People Operations チームのメンバーに割り当てられるようにすべきです。割り当てられたら、要求を支援する People Operations チームのメンバーは、要求が処理中であることを確認し、タスクを完了するためにコラボレーションしやすくするため、要求を行った Legal, Employment チームのメンバーと連絡を取るべきです。
 
-## People Operations チームが People Business Partner チームに提供するサポート
+## People Operations チームが People Business Partner チームに提供するサポート {#support-provided-by-the-people-operations-team-to-the-people-business-partner-team}
 
 People Business Partners からの People Operations チームのほとんどのタスク／要求は、Compass を介して処理されます。一般的なクエリ／質問の場合、PBP は非公開の `#pbp-peopleops` Slack チャンネルでガイダンスを要求できます。これはプライベートチャンネルです。People Operations チームは 24 時間以内にタスクを自己割り当てし、Slack/Compass で要求にコメントして確認します。
 
-## People Operations の責任と対応タイムライン
+## People Operations の責任と対応タイムライン {#people-operations-responsibilities--response-timeline}
 
-役割の責任の真実の源は、[People Operations Team](/job-description-library/people-group/people-operations) のジョブファミリーであることに注意してください。以下の表は、チームの中核となる責任のいくつかの簡単な概要を提供することを目的としています。
+役割ごとの責任に関する唯一の情報源は、[People Operations Team](/job-description-library/people-group/people-operations)のジョブファミリーであることに注意してください。以下の表は、チームの中核となる責任のいくつかの簡単な概要を提供することを目的としています。
 
-### People Operations チーム
+### People Operations チーム {#people-operations-team}
 
 | 責任 | 対応タイムライン |
 | -------------- | ----------------- |
@@ -145,48 +145,48 @@ People Business Partners からの People Operations チームのほとんどの
 
 People Operations Team のその他のリストされたプロセスは[こちら](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/)で見つけることができます。
 
-## Employment Solutions Team
+## Employment Solutions Team {#employment-solutions-team}
 
 | 責任 | 対応タイムライン |
 | -------------- | ----------------- |
-| [Country Conversions](/handbook/people-group/employment-solutions/#country-conversions) | CFO から承認が与えられたらすぐに。変換のターンアラウンド時間は、さまざまな要因に基づいて変わる可能性があります。 |
+| [国別の雇用形態の変更](/handbook/people-group/employment-solutions/#country-conversions) | CFO から承認が与えられたらすぐに。変換のターンアラウンド時間は、さまざまな要因に基づいて変わる可能性があります。 |
 
-## People Compliance Team
+## People Compliance Team {#people-compliance-team}
 
 | 責任 | 対応タイムライン |
 | -------------- | ----------------- |
-| [Administration of the signing of our Code of Business Conduct and Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) | 年次（2 月／3 月） |
+| [ビジネス行動規範および倫理への署名の管理](https://ir.gitlab.com/governance/governance-documents/default.aspx) | 年次（2 月／3 月） |
 
-## よくある要求
+## よくある要求 {#frequently-requested}
 
 チームに連絡する前に、People Internal Handbook の[頻繁に要求されるセクション](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/frequently_requested/)をご確認ください。このページには、チームディレクトリへのアクセス、雇用証明書の要求、住宅ローンのフォーム、企業の照会要求ポリシー、ビジネスカードの注文、GitLab システムでの名前の変更に関する情報が含まれています。
 
-## 住所
+## 住所 {#addresses}
 
-- 郵送住所については、当社の [visiting](https://about.gitlab.com/company/visiting/) ページを参照してください。
-- NL オフィスについては、[addpost](https://www.addpost.nl) を使用してメールをスキャンし、要求に応じて物理的な住所に送信します。
+- 郵送住所については、当社の [訪問案内](https://about.gitlab.com/company/visiting/) ページを参照してください。
+- NL オフィスについては、[addpost](https://www.addpost.nl)を使用して郵便物をスキャンし、要求に応じて物理的な住所に送信します。
 
-## 不正確である可能性のある LinkedIn プロフィールの報告
+## 不正確である可能性のある LinkedIn プロフィールの報告 {#reporting-potential-inaccurate-linkedin-profiles}
 
 GitLab は、GitLab チームメンバーであることに関する不正確な情報を持つ LinkedIn プロフィールを積極的に検索しません。ただし、プロフィールが特定され、その人が本当に GitLab チームメンバーであるかどうかに疑問がある場合があります。以下は、潜在的に不正確なプロフィールにフラグを立てるプロセスと、People Operations チームがプロフィールを確認し、潜在的に報告するために行うアクションです。
 
 - チームメンバーはまず、その人が現在の GitLab チームメンバーかどうかを判断するため、Slack および／または組織のページで確認すべきです。
-- チームメンバーがプロフィールを確認できない場合、チームメンバーは [Compass](https://app.serval.com/new-request) を介して、対象となる LinkedIn プロフィールと共に People Operations Team に連絡すべきです。
+- チームメンバーがプロフィールを確認できない場合、チームメンバーは [Compass](https://app.serval.com/new-request)を介して、対象となる LinkedIn プロフィールと共に People Operations Team に連絡すべきです。
 - People Operations チームメンバーは、その人がチームメンバーでないこと／なかったことを Workday で確認します。
-- People Operations チームメンバーは、その人が面接を受けたこと、オファーを受けたこと、または辞退されたことがあるかを確認するため、talent acquisition に確認します。
+- People Operations チームメンバーは、その人が面接を受けたこと、オファーを受けたこと、または採用を見送られたことがあるかを確認するため、Talent Acquisition に確認します。
 - People Operations チームメンバーは、より広いコミュニティのアクティブなメンバーかどうかを確認するため、[Developer Advocacy チーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/)に、[#developer-advocacy](https://gitlab.enterprise.slack.com/archives/CMELFQS4B) Slack チャンネルで `@devrel-team` タグを使用して連絡します。
 - より広いコミュニティの確認されたメンバーであるがチームメンバーでない場合、Developer Relations チームはプロフィールに連絡を取り、プロフィールを GitLab への関与に合わせるよう依頼します。
-- より広いコミュニティの現在のメンバーでなく、talent acquisition が Greenhouse にプロフィールがないことを確認した場合、talent acquisition は Do Not Hire プロフィールを作成します。
-- People Operations チームメンバーは、[Reporting Inaccurate Information on Another Member's Profile](https://www.linkedin.com/help/linkedin/answer/30200?src=or-search&veh=www.google.com%7Cor-search) を介して LinkedIn にアカウントを報告します。
+- より広いコミュニティの現在のメンバーでなく、Talent Acquisition が Greenhouse にプロフィールがないことを確認した場合、Talent Acquisition は Do Not Hire プロフィールを作成します。
+- People Operations チームメンバーは、[他のメンバーのプロフィールの不正確な情報を報告する方法](https://www.linkedin.com/help/linkedin/answer/30200?src=or-search&veh=www.google.com%7Cor-search)を介して LinkedIn にアカウントを報告します。
 
-## Workday の使用
+## Workday の使用 {#using-workday}
 
 私たちは、チームメンバーの情報を維持するために Workday を使用します。すべてのチームメンバー（すべての契約タイプ）は Workday にいます。
 Workday は People Tools and Technology チームによって管理および維持されます。
 
-Workday の使用方法について詳しく学ぶには、[Workday Guide](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854) をご覧ください。
+Workday の使用方法について詳しく学ぶには、[Workday ガイド](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)をご覧ください。
 
-## Culture Amp の使用
+## Culture Amp の使用 {#using-culture-amp}
 
 CultureAmp への管理アクセスは、役割と責任に基づいて制限されます。3 つの異なるアクセスレベルがあります:
 
@@ -194,26 +194,26 @@ CultureAmp への管理アクセスは、役割と責任に基づいて制限さ
 - Survey Creator administrator アクセスは、サーベイの作成、管理、設計、参加者の選択、結果の共有ができます。
 - Survey data analyst administrator は、生データ抽出が有効になっているすべてのサーベイから生データをエクスポートできます。
 
-アクセスを要求するには、要求するアカウントタイプの[アクセス要求](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use)とビジネス上のニーズを記して、アクセス要求を開いてください。デフォルトの管理アクセスは、その他のアクセスが指定されない限り、Survey Creator の管理権限になります。Chief People Officer の許可なしには、ピープルグループ外のチームメンバーに Survey Data Analyst の管理権限は付与されないことに注意してください。
+アクセスを要求するには、要求するアカウントタイプの[アクセス要求](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use)とビジネス上のニーズを記して、アクセス要求を開いてください。デフォルトの管理アクセスは、その他のアクセスが指定されない限り、Survey Creator の管理権限になります。Chief People Officer の許可なしには、People Group 外のチームメンバーに Survey Data Analyst の管理権限は付与されないことに注意してください。
 
-特定の CultureAmp サーベイのサポートが必要な場合は、People Analytics チームに通知するため、この [issue template](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/blob/main/.gitlab/issue_templates/survey_request.md) を完了してください。
+特定の CultureAmp サーベイのサポートが必要な場合は、People Analytics チームに通知するため、この [Issue テンプレート](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/blob/main/.gitlab/issue_templates/survey_request.md)を完了してください。
 
-## ピープルグループに関連するその他のページ
+## People Group に関連するその他のページ {#other-pages-related-to-the-people-group}
 
-### People Business Partners
+### People Business Partners {#people-business-partners}
 
 - [People Business Partner Team](/handbook/people-group/people-business-partners/)
 
-### Total Rewards
+### Total Rewards {#total-rewards}
 
 - [福利厚生](/handbook/total-rewards/benefits/)
 - [グローバル報酬](/handbook/total-rewards/compensation/)
 
-### People Operations
+### People Operations {#people-operations}
 
 - [ビジネス行動規範および倫理](https://ir.gitlab.com/governance/governance-documents/default.aspx)
 - [昇進と異動](/handbook/people-group/promotions-transfers/)
-- [雇用ソリューション（国際展開）](/handbook/people-group/employment-solutions/)
+- [Employment Solutions（国際展開）](/handbook/people-group/employment-solutions/)
 - [契約](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/)
 - [試用期間と PIAA](/handbook/people-group/contracts-probation-periods/)
 - [オンボーディング](/handbook/people-group/general-onboarding/)
@@ -222,22 +222,22 @@ CultureAmp への管理アクセスは、役割と責任に基づいて制限さ
 - [People Operations](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/)
 - [People Analytics](people-ops-tech-analytics/people-analytics/_index.md)
 
-### Talent Acquisition
+### Talent Acquisition {#talent-acquisition}
 
 - [インセンティブ](/handbook/total-rewards/incentives/)
 - [採用プロセス](/handbook/hiring/)
 - [リーダーシップ](/handbook/leadership/)
 
-### Learning and Development
+### Learning and Development {#learning-and-development}
 
 - [学習と能力開発](/handbook/company/culture/all-remote/)
 - [フィードバックに関するガイダンス](/handbook/people-group/guidance-on-feedback/)
 
-### Diversity, Inclusion and Belonging
+### Diversity, Inclusion and Belonging {#diversity-inclusion-and-belonging}
 
 - [ジェンダーと性的指向のアイデンティティの定義および FAQ](/handbook/people-group/orientation-identity/)
 
-### その他のピープルグループ関連リンク
+### その他の People Group 関連リンク {#other-people-group-links}
 
 - [ピープルポリシー ディレクトリ](/handbook/people-policies/)
 - [パフォーマンス不振](/handbook/leadership/underperformance/)

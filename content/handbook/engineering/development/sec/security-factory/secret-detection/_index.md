@@ -2,24 +2,24 @@
 title: Secret Detection グループ
 description: "Secret Detection グループは、GitLab 上での認証情報、トークン、その他のシークレットの漏洩からお客様を保護します。"
 upstream_path: /handbook/engineering/development/sec/security-factory/secret-detection/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T07:45:00+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:53:59+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-10-23T19:27:19+02:00"
 ---
 
-## Secret Detection
+## Secret Detection {#secret-detection}
 
 Secret Detection グループは、お客様のソフトウェアリポジトリ向けに [Secret Detection](https://about.gitlab.com/direction/application_security_testing/secret-detection/secret-detection/) 機能カテゴリをメンテナンスしています。
 
-### 共通リンク
+### 共通リンク {#common-links}
 
 * メイン Slack チャンネル：[`#g_ast-secret-detection`](https://gitlab.enterprise.slack.com/archives/C06NY8LDMT2)
 * スタンドアップ更新：[`#g_ast-secret-detection-standup`](https://gitlab.enterprise.slack.com/archives/C06PZ8QJQNA)
 * Slack エイリアス：`@g_ast_secret_detection`
 
-#### Secret Detection 共有カレンダー
+#### Secret Detection 共有カレンダー {#secret-detection-shared-calendar}
 
 [Secret Detection 共有カレンダー](https://calendar.google.com/calendar/embed?src=c_b4fda90478cfc15d4ec5fa18952c0c976d3078df887cc3548f8d6592d22de032%40group.calendar.google.com)は、PTO イベントをチームの全員が確認できるようにするために使用されます。
 
@@ -30,24 +30,24 @@ Secret Detection グループは、お客様のソフトウェアリポジトリ
 * 以下のカレンダー ID を追加します：`c_b4fda90478cfc15d4ec5fa18952c0c976d3078df887cc3548f8d6592d22de032@group.calendar.google.com`
 * 完了です！ 🎉 これで PTO イベントが Static Analysis 共有カレンダーに同期されます。🚀
 
-### チームメンバー
+### チームメンバー {#our-team}
 
 {{< team-by-manager-role role="Engineering(.)Manager(.)Secure:Secret Detection" team="Engineer" >}}
 
-## 作業方法
+## 作業方法 {#how-we-work}
 
 Secret Detection グループは GitLab の[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に概ね沿っていますが、ソフトウェアを提供する方法においていくつかの顕著な違いがあります。エンジニアリングチームは主にソフトウェアの提供に関わっており、最も差異があるのはワークフロー状態のその部分です。以下は、ソフトウェアを提供するためのプロダクトマネジメントからエンジニアリングへの引き渡し方法です。
 
 このチームが扱う Issue は、アナライザー、ベンダーされたテンプレート、および GitLab の Rails モノリスにまたがる場合があります。
 
-### Issue ボード
+### Issue ボード {#issue-boards}
 
 * [Secret Detection Delivery Board](https://gitlab.com/groups/gitlab-org/-/boards/7430307?milestone_title=Started&label_name[]=group%3A%3Asecret%20detection) - エンジニア向けのプライマリボードで、列はワークフローラベルです。
 * [Secret Detection Planning Board](https://gitlab.com/groups/gitlab-org/-/boards/7708245?label_name%5B%5D=group%3A%3Asecret%20detection) - 現在および次のマイルストーンの作業量を把握するためにプロダクトマネジメントが主に使用する、マイルストーン中心のボードです。
 * [Secret Detection EM Board](https://gitlab.com/groups/gitlab-org/-/boards/77082627) - エンジニアが抱えている作業量を把握するためにエンジニアリングマネジメントが使用する、エンジニア中心のボードです。
 * [Secret Detection Bug Scrub Board](https://gitlab.com/groups/gitlab-org/-/boards/7708271?label_name%5B%5D=group%3A%3Asecret%20detection&label_name%5B%5D=type%3A%3Abug) - バグボードで、列は深刻度です。
 
-#### Issue と MR のラベル
+#### Issue と MR のラベル {#issue-and-merge-requests-labels}
 
 GitLab には Issue と MR のラベリング規則があります。私たちはこの規則に従っていますが、アーティファクトを私たちにルーティングするために必要な特定のラベルがあります。私たちはこれらのラベルを使用して、Issue ボード上で私たち向けの Issue をフィルタリングします。これらはメトリクスおよび KPI レポートにも使用されます。
 
@@ -60,7 +60,7 @@ GitLab には Issue と MR のラベリング規則があります。私たち�
 | ~backend | Issue または MR が GitLab のバックエンドの一部であることを識別します。 |
 | ~frontend | Issue または MR が GitLab のフロントエンドの一部であることを識別します。 |
 
-#### リファインメント
+#### リファインメント {#refinement}
 
 私たちは最近、[新しいリファインメントプロセス](/handbook/engineering/development/sec/security-factory/planning/#refinement)を試験的に実施し、[Secret Push Protection Beta エピック](https://gitlab.com/groups/gitlab-org/-/epics/12729)の Issue をリファインメントしました。このプロセスは他のセクション／ステージから多くのインスピレーションを得ていますが、現在の [Secure エンジニアリングリファインメント](/handbook/engineering/development/sec/security-factory/planning)とも一致しています。
 
@@ -76,7 +76,7 @@ GitLab には Issue と MR のラベリング規則があります。私たち�
 * Issue のラベルが正しいことを確認する。
 * Issue が作業可能な状態としてマークされていることを確認する。
 
-##### ワークフロー
+##### ワークフロー {#workflow}
 
 リファインメントプロセスは、Issue がどのように選ばれてリファインメントされるかについては関与しません。これは、バックログから Issue をトリアージする以前のプロセス（[MoSCoW プロセス](/handbook/engineering/development/sec/security-factory/code-scanning/)または類似のバリアント経由）で行われることが前提とされています。通常、Issue がリファインメントされる前に、今後のマイルストーンでどの Issue がリファインメントされ提供されるかを選択するための計画 Issue が作成されます。これは計画 Issue の Looking Forward セクションで行われる可能性があります。
 
@@ -188,76 +188,80 @@ If you have any questions, don't hesitate to ask in `#g_secure_secret-detection`
 /assign #{secret_detection_engineer}
 ```
 
-### 計画外の作業
+### 計画外の作業 {#unplanned-work}
 
-一般的に、Secret Detection グループには2つの計画外作業の源があります。コミュニティコントリビューションと ~severity::1 のバグです。両方のシナリオに迅速かつ効率的に対応できるよう、各リリースで一定のキャパシティを確保します。どちらのシナリオでも、コミュニティコントリビューションはアナライザーを「所有」しているエンジニアにルーティングします。
+一般的に、Secret Detection グループには 2 つの計画外作業の源があります。コミュニティコントリビューションと ~severity::1 のバグです。両方のシナリオに迅速かつ効率的に対応できるよう、各リリースで一定のキャパシティを確保します。どちらのシナリオでも、コミュニティコントリビューションはアナライザーを「所有」しているエンジニアにルーティングします。
 
 ただし、私たちは GitLab のプロダクトの一部として提供されるアナライザーを超えたプロジェクトを所有・貢献しています。可能な限り、Secret Detection のエンジニアの注意を必要とする計画外の作業は、そのプロジェクトの `CODEOWNERS` ファイルに従ってルーティングされます。そうでない場合は、計画外の作業はケースバイケースで検討・処理されます。
 
-#### お客様と見込み客へのサポート
+#### お客様と見込み客へのサポート {#support-to-customers-and-prospects}
 
 私たちは月次ベースで作業を計画していますが、お客様やお客様対応チームメンバーは計画外のサポートを必要とする場合があります。これらのリクエストはお客様と私たちのビジネスの成功に影響するため、迅速にサポートすることを目指しています。
 
 一般的に、できるだけ迅速に初期応答と質問/レポートのトリアージを提供することを目指しています。「できるだけ迅速」とは、例えばチームメンバーが通常の業務時間中に回答し、通常の作業活動を続けることを意味します。質問者と最初に連絡を取り、明確化のための質問をすることができる人は誰でも積極的に対応することが奨励されます。後で質問を解決できない場合は、常に別のグループメンバーをタグ付けできます。
 
-トリアージの目的は、他のチームメンバーが前進できるようにサポートすることです。問題に対処するために開発作業が必要な場合、それは自動的にグループの最優先事項ではなく、既存の計画作業を自動的に置き換えるべきではありません。バグ修正または改善をすぐに取り組むべきかどうかについて疑問がある場合は、エンジニアリングマネジャーとプロダクトマネジャーに通知して決定を容易にすべきです。
+トリアージの目的は、他のチームメンバーが前進できるようにサポートすることです。問題に対処するために開発作業が必要な場合、それは自動的にグループの最優先事項ではなく、既存の計画作業を自動的に置き換えるべきではありません。バグ修正または改善をすぐに取り組むべきかどうかについて疑問がある場合は、Engineering Manager と Product Manager に通知して決定を容易にすべきです。
 
-### オブザーバビリティ
+### オブザーバビリティ {#observability}
 
 GitLab.com については、Rails アプリケーション内のコードのパフォーマンス、CI ビルドパフォーマンスに関するメトリクス、コンテナレジストリへのトラフィックを監視しています。これらのダッシュボードは[モニタリング](/handbook/engineering/monitoring)ページからアクセスできます。
 
 * [Secure::Secret Detection グループ エラーバジェット](https://dashboards.gitlab.net/d/stage-groups-detail-secret_detection/)
 
-#### メトリクス
+#### メトリクス {#metrics}
 
 プロジェクトにメトリクスを追加するプロセスは、[メトリクス](metrics/)ページに記載されています。
 
-#### ランブック
+#### ランブック {#runbooks}
 
 インシデントの監視、対応、および軽減のプロセスは、[Secret Detection ランブック](runbooks/)ページ内に記載されています。
 
-### ルール開発
+### ルール開発 {#rule-development}
 
 Secret Detection（SD）アナライザーは、Secret Detection スキャンを実行する際に [GitLab 管理のルールセット](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-rules)を使用します。アナライザーのルールカバレッジを拡大するために、私たちは [Threat Research](../threat-research/_index.md) チームのメンバーと協力して、さまざまなベンダー（企業）のシークレット資格情報タイプをサポートするルールを開発しています。私たちのアナライザーはすでに 200 以上の一般的な資格情報タイプを[サポート](https://docs.gitlab.com/user/application_security/secret_detection/detected_secrets/)していますが、ルールカバレッジを拡大するためにさらに多くをカバーすることを目指しています。
 
-#### ルールカバレッジの拡大
+#### ルールカバレッジの拡大 {#expanding-rule-coverage}
 
 さまざまな企業にわたって潜在的にサポートできる無数のシークレット資格情報タイプが存在します。お客様の需要に基づいて新しいルールを追加してきましたが、より体系的にルールセットカバレッジを拡大するために、Secret Detection グループの各チームメンバーが定期的に新しいルールを開発・リリースするローテーションプロセスを導入する予定です。
 
-#### リリースプロセス
+#### リリースプロセス {#release-process}
 
 * 私たちは固定のスケジュールではなく、開発マイルストーンに基づいてルールをリリースします。ルールはマイルストーンが完了したとき、またはタスクが完了したとき、どちらか先に起きたタイミングでバンドルされてリリースされます。
 
-* ルールのリリースは、リリース準備が完了したすべての新しいルールを含む[専用の MR](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-rules/-/merge_requests) を通じて行われます。
+* ルールのリリースは、リリース準備が完了したすべての新しいルールを含む[専用の MR](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-rules/-/merge_requests)を通じて行われます。
 
-### Secret Detection CVE 調査・解決プロセス
+### 有効性チェックの開発 {#validity-check-development}
 
-#### 週次 CVE レビュー
+有効性チェックは、検出されたシークレットがまだ有効かどうかをベンダーに問い合わせます。ほとんどのベンダーは、YAML 定義を記述することで追加します。ジェネレーターがその定義を検証プログラムとその仕様テストに変換します。手順、有効なトークンを使ったテスト、レビュアーのチェックリストは、[有効性チェック開発プロセス](validity-check-development-process)ページに記載されています。
+
+### Secret Detection CVE 調査・解決プロセス {#secret-detection-cve-investigation-and-resolution-process}
+
+#### 週次 CVE レビュー {#weekly-cve-review}
 
 週次ベースで、報告された CVE を確認して深刻度、適用可能性、および解決状況を調査します。
 
-#### CVE ダッシュボードへのアクセス
+#### CVE ダッシュボードへのアクセス {#access-the-cve-dashboard}
 
 * Secret Detection がメンテナンスするプロジェクトの脆弱性レポートを確認して、新規・既存の CVE を特定します。
 * 深刻度（Critical → High → Medium → Low）でフィルタリングし、CVE トラッキング Issue に自分を割り当てます。
 
-#### 調査プロセス
+#### 調査プロセス {#investigation-process}
 
 * CVE が Secret Detection の依存関係またはコードベースに影響するかどうかを確認します。
 * 悪用可能性と影響範囲を決定します。
 * [Red Hat サイト](https://access.redhat.com/security/security-updates/cve)で CVE を確認して修正が利用可能かどうかを判断します。
 
-#### 解決アクション
+#### 解決アクション {#resolution-actions}
 
 * 該当する場合は、依存関係を更新するかパッチを適用するためのマージリクエストを作成します。
 * 該当しない場合は、その理由（例: 以前の依存関係更新で修正済み）を文書化し、解決済みとしてマークします。
 
-#### クローズ
+#### クローズ {#closure}
 
 * パッチ後に CVE が脆弱性レポートに表示されなくなったことを確認します。
 * 解決策のサマリーを付けてトラッキング Issue をクローズします。
 
-#### 追加メモ
+#### 追加メモ {#additional-notes}
 
 * 脆弱性レポートを確認する際は、すべての脆弱性が見えるようにフィルターを適用していないことを確認してください。
 * GitLab Duo を使用して脆弱なパッケージの場所をトリアージ・特定します。

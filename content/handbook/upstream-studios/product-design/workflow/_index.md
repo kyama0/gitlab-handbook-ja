@@ -2,35 +2,35 @@
 title: Product Designer のワークフロー
 description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとして働く Product Designer のための、デザインプロセス、協働の実践、クラフトに関する包括的なガイド。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-lastmod: "2026-09-24T21:34:11+02:00"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T07:20:25.811728+00:00"
 translator: codex
 stale: false
 ---
 
-Product Designer は [Product Design](/handbook/upstream-studios/product-design/) 内で働き、[Upstream Studios](/handbook/upstream-studios/) の一部を担います。私たちは上流に位置する戦略的パートナーとして、プロダクト開発プロセス全体を通じて Product Management および Engineering とトリオで協働します。
+Product Designer は [Product Design](/handbook/upstream-studios/product-design/) 内で働き、[Upstream Studios](/handbook/upstream-studios/)の一部を担います。私たちは上流に位置する戦略的パートナーとして、プロダクト開発プロセス全体を通じて Product Management および Engineering とトリオで協働します。
 
 Issue のトリアージ、ラベル付け、スケジュール設定などの運用の詳細については、[Product Design Operations](/handbook/upstream-studios/product-design/operations/)を参照してください。
 
 ## プロダクトデザインプロセス {#product-design-process}
 
-Product Designer は、早期の協働、ユーザー中心の思考、継続的な検証を重視する、戦略的かつ反復的なプロセスに従います。戦略的パートナーとして、私たちは最初から関わり、すでに行われた意思決定を単に実行するのではなく、方向性を形作ります。
+Product Designer は、早期の協働、ユーザー中心の思考、継続的な検証を重視する、戦略的にイテレーションを行うプロセスに従います。戦略的パートナーとして、私たちは最初から関わり、すでに行われた意思決定を単に実行するのではなく、方向性を形作ります。
 
 ### 機会を定義する {#define-the-opportunity}
 
 まず、PM と協働して、誰が、何を、なぜ、を検証します:
 
-- 誰のためにデザインするのか、何をデザインするのか、なぜデザインするのかを検証する
+- **誰のために**デザインするのか、**何を**デザインするのか、**なぜ**デザインするのかを検証する
 - PM がこれを[ジョブ理論（JTBD）](/handbook/product/ux/jobs-to-be-done/)として明確に表現できるよう支援する。つまり、ユーザーが達成しようとしているジョブと、その周辺のコンテキストを理解する
 - エビデンスに基づかない「どのように」を実装するよう求められた場合は、PM が誰が、何を、なぜ、に焦点を戻し、最善の方法を協働して決定するよう促す
-- PM が [MVC](/handbook/product/product-principles/#the-minimal-valuable-change-mvc) の成功基準を定義するのを支援し、MVC の「必須」と、MVC ではない「望ましい」「あればよい」を優先順位付けする
+- PM が [MVC](/handbook/product/product-principles/#the-minimal-valuable-change-mvc)の成功基準を定義するのを支援し、MVC の「必須」と、MVC ではない「望ましい」「あればよい」を優先順位付けする
 
-これらの基準は、反復的なデザインプロセスと顧客からのフィードバックによって得られる新しいインサイトに基づき、変わる場合があることに注意してください。
+これらの基準は、デザインのイテレーションと顧客からのフィードバックによって得られる新しいインサイトに基づき、変わる場合があることに注意してください。
 
-### デザインする前に
+### デザインする前に {#before-you-design}
 
-#### アイデアを生み出す
+#### アイデアを生み出す {#generate-ideas}
 
 戦略的パートナーは、依頼に応答するだけではありません。私たちは能動的に探求し、実験し、思考を前に進めます。Upstream Studios は好奇心を持ち続け、前提を問い直すことを重視します。つまり、解く価値のある問題を積極的に探し出します。
 
@@ -43,26 +43,26 @@ Product Designer として、チーム内でのアイデア創出を主導し、
 - **問題検証リサーチを実施する**: PM と UX Researcher と協働して、[問題検証リサーチ](/handbook/upstream-studios/experience-research/problem-validation-and-methods/)のラウンドに優先順位を付ける
 - **顧客との通話に参加する**: PM と顧客との通話に参加し、ユーザーが課題やワークフローをどのように説明するかを直接聞く
 - **未知のペインポイントを発見する**:
-  - [Dovetail](/handbook/product/ux/dovetail/) を使用してデータを分析し、リサーチリポジトリにアクセスする
-  - [Gong](https://www.gong.io/) を使用して営業通話の録画からインサイトを検索する
-  - [Zendesk](https://gitlab.zendesk.com/agent/) を調査して既存の問題を特定する
+  - [Dovetail](/handbook/product/ux/dovetail/)を使用してデータを分析し、リサーチリポジトリにアクセスする
+  - [Gong](https://www.gong.io/)を使用して営業通話の録画からインサイトを検索する
+  - [Zendesk](https://gitlab.zendesk.com/agent/)を調査して既存の問題を特定する
   - [コミュニティフォーラム](https://forum.gitlab.com/)をレビューする
 
-#### 領域を理解する
+#### 領域を理解する {#understand-the-space}
 
 - **既存のリサーチをレビューする**: UXR Library を調査する。関連するリサーチがない場合は、Slack の Experience Research チーム（`#experience_research`）に連絡する
 - **競合分析を実施する**: 競合他社を分析して、用語、機能、UX の慣習を理解する。戦略的に逸脱する理由がない限り、業界標準に従う
 - **ユーザーフローとジャーニーマップを作成する**: ワークフローを包括的に理解できるよう、フローまたはジャーニーマップを作成する
 
-#### 考えられる依存関係を調査する
+#### 考えられる依存関係を調査する {#investigate-possible-dependencies}
 
 私たちのコアとなる戦略的アプローチの 1 つであるプラットフォーム思考とは、担当領域だけでなく、自分の作業がより広いプロダクト体験にどう影響するかを評価することです。デザイナー間の強いつながりが、この戦略的な視点を可能にします。
 
 - **同僚と協働する**: 他の Product Designer に能動的に連絡し、背景情報を収集して、自分の作業が他のプロダクト領域とどのように相互作用するかを理解する
 - **DRI を特定し、関与させる**: プロダクト領域の [Directly Responsible Individual（DRI）](/handbook/people-group/directly-responsible-individuals/)を特定し、最初から関与させる。不明な場合は、[Product Categories のページ](/handbook/product/categories/)を参照する
-- **プロダクトキックオフをレビューする**: [Product Kickoff Review](https://about.gitlab.com/direction/kickoff/) を確認し、他のステージで何が計画されているかを把握する
+- **プロダクトキックオフをレビューする**: [Product Kickoff Review](https://about.gitlab.com/direction/kickoff/)を確認し、他のステージで何が計画されているかを把握する
 
-### アイデアを出し、イテレーションする
+### アイデアを出し、イテレーションする {#ideate-and-iterate}
 
 優れたデザインはビジョンから始まります。作業をイテレーションに分解する前に、どこへ向かうのかという明確な像、あらゆる意思決定を導く北極星を確立します。ビジョンがなければ、イテレーションは変革的な成果に向けた意図的な進歩ではなく、局所的な最大値に向けた目的のない洗練になります。
 
@@ -89,7 +89,7 @@ Product Designer として、チーム内でのアイデア創出を主導し、
 
 > 「物事を分解することは、デザイナーとしての私に心理的安全性をもたらします。」 - GitLab Product Designer
 
-### MVC を洗練する
+### MVC を洗練する {#refine-mvc}
 
 焦点を維持し、スコープの肥大化を避けるには:
 
@@ -100,7 +100,7 @@ Product Designer として、チーム内でのアイデア創出を主導し、
 
 インスピレーションを得るには、Product Designer が [GitLab におけるイテレーション](https://youtu.be/0lhjzU-QZ2w)について話す様子を視聴してください。
 
-### MVC のソリューションを提示する
+### MVC のソリューションを提示する {#present-an-mvc-solution}
 
 **1 つのソリューションを提案する:**
 
@@ -109,7 +109,7 @@ Product Designer として、チーム内でのアイデア創出を主導し、
 **コンテキストと目標を非同期で共有する:**
 
 - 提案の内容をオーディエンスが理解し、どのように支援できるかを把握できるよう、必要なすべてのコンテキストを Issue に記載する
-- ソリューションの対象者、その人が何をできるようになるか、フィードバック、支援、承認のいずれが必要かを明確にし、必要とする人に ping する
+- ソリューションの対象者、その人が何をできるようになるか、フィードバック、支援、承認のいずれが必要かを明確にし、必要とする人に通知する
 - 理解を促すため、前回のレビュー以降の変更を強調する
 - 主なポイントから注意をそらさずに補足情報を含めるため、[折りたたみコンテンツセクション](https://handbook.gitlab.com/docs/markdown-guide/#collapse)を使用する
 
@@ -147,7 +147,7 @@ Upstream Studios は、戦略的パートナーはまず強い社内のつなが
 - 作業を共有する実践を促す
 - 戦略的思考を可能にするデザイナー間の関係を構築する
 
-より幅広い参加を可能にするため、私たちは[非同期](/handbook/values/#bias-towards-asynchronous-communication)のデザインレビューを優先します。非同期レビューの実施方法は次のとおりです:
+より幅広い参加を可能にするため、私たちは非同期のデザインレビューを優先します。非同期レビューの実施方法は次のとおりです:
 
 1. **重要な Issue を特定する**: 未解決の疑問が多い Issue、または最も取り組みたい Issue を選ぶ
 2. **最適な形式を選ぶ**: Issue、短いテキスト、スクリーンショット、Figma ファイル、短い動画のウォークスルーを使用して作業を共有する
@@ -161,11 +161,11 @@ Upstream Studios は、戦略的パートナーはまず強い社内のつなが
 **例:**
 
 - [新しいリストのイテレーションを追加する - フィードバック依頼](https://gitlab.com/gitlab-org/gitlab/-/issues/284610)
-- [スイムレーンボードの読み込み状態 - Skeleton loaders のフィードバック依頼](https://gitlab.com/gitlab-org/gitlab/-/issues/277240)
+- [スイムレーンボードの読み込み状態 - スケルトンローダーのフィードバック依頼](https://gitlab.com/gitlab-org/gitlab/-/issues/277240)
 - [右側の Issue サイドバーのパターンに関するフィードバック依頼](https://gitlab.com/gitlab-org/gitlab/-/issues/270117)
 - [Geo: メンテナンスモードのデザイン](https://gitlab.com/gitlab-org/gitlab/-/issues/201757)
 
-### デザインレビューに含める人
+### デザインレビューに含める人 {#who-to-include-in-design-reviews}
 
 デザインレビューに誰を含めるかを決めるのは難しい場合があります。以下はガイドラインです:
 
@@ -177,7 +177,7 @@ Upstream Studios は、戦略的パートナーはまず強い社内のつなが
 
 誰を含めるべきか不明な場合は、Product Design Manager に相談してください。
 
-## デザインクリティーク
+## デザインクリティーク {#design-critiques}
 
 Upstream Studios はクラフトを高め、協働をデフォルトにすることを重視します。デザインクリティークは、作業をより強くする建設的な対立のための余地を作ることで、両方の原則を体現します。
 
@@ -213,11 +213,11 @@ Upstream Studios はクラフトを高め、協働をデフォルトにするこ
    - 次のイテレーションで、クリティークがデザインの意思決定にどう影響したかを共有する
    - 意味のある改善につながるクリティークをしたチームメンバーを称える
 
-### 適切なマインドセットを整える
+### 適切なマインドセットを整える {#setting-the-right-mindset}
 
 クリティークセッションが心理的安全性と率直なフィードバックの両方を保てるよう、ファシリテーターは開始前に行動規範を参照し、マントラを声に出すことを強く推奨されます。
 
-#### 行動規範
+#### 行動規範 {#code-of-conduct}
 
 クリティークセッションでは、私たちは次のことを約束します:
 
@@ -230,9 +230,9 @@ Upstream Studios はクラフトを高め、協働をデフォルトにするこ
 7. クリティークを開かれた姿勢で受け取り、うまくいかなかった要素を手放す意思を持つ
 8. 私たちのクラフトへの情熱をもって、率直な会話と活発な議論に参加する
 
-## デザインの原則とアプローチ
+## デザインの原則とアプローチ {#design-principles-and-approaches}
 
-### 洗練されたシンプルさ
+### 洗練されたシンプルさ {#sophisticated-simplicity}
 
 私たちは、最適なユーザー体験を作るために 3 つの原則のバランスを取る、**洗練されたシンプルさ**を目指します:
 
@@ -253,7 +253,7 @@ Upstream Studios はクラフトを高め、協働をデフォルトにするこ
 - コンテンツの階層と流れは明確か
 - 類似する項目はグループ化され、そのグループは明確に定義されているか
 - このコンテンツまたは機能は、常に、かつすべての人に見えている必要があるか
-- このコンテンツまたは機能は、このコンテキストで必要か。役立つだけでなく、不可欠でもあるか
+- このコンテンツまたは機能は、このコンテキストで必要か。役立つ*だけでなく*、不可欠でもあるか
 - 発見はユーザーが間違いを避け、または容易に回復するのに役立つか
 - 構造は、発見と高度な能力の使用を支えているか
 - この機能または能力は必要か、使われているか、あるいは取り除いた場合に何が起こるか
@@ -278,13 +278,13 @@ Upstream Studios はクラフトを高め、協働をデフォルトにするこ
 
 デザイントークンとモード固有のコンポーネントについては、[Pajamas Design System](https://design.gitlab.com)を参照してください。
 
-### 追加のデザインガイダンス
+### 追加のデザインガイダンス {#additional-design-guidance}
 
 - **AI デザイン**: AI 搭載機能をデザインする場合は、[AI デザインガイド](/handbook/upstream-studios/product-design/workflow/ai-design/)に従う
 - **デザインモード**: ライトモードとダークモード向けのデザインに関するガイダンスは、[Figma とデザインツール](/handbook/upstream-studios/product-design/workflow/figma/)を参照する
 - **デザイン原則**: [Pajamas の完全なデザイン原則](https://design.gitlab.com/get-started/principles/)をレビューする
 
-## Technical Writer とのパートナーシップ
+## Technical Writer とのパートナーシップ {#partnering-with-technical-writers}
 
 Technical Writing は、Product Design と並ぶ Upstream Studios のコアディシプリンです。私たちの言葉はプロダクト体験を形作り、デザイナーとライターの協働は、私たちが提供する完全なスタックを強化します。
 
@@ -294,23 +294,23 @@ UI テキストには、ボタンまたはメニューのラベル、エラー�
 
 **円滑なプロセスを確保するには:**
 
-- **Issue と MR にラベルを付ける**: [UI text](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=UI+text) と `documentation` のラベルを適用する
+- **Issue と MR にラベルを付ける**: [UI text](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=UI+text)と `documentation` のラベルを適用する
 - **レビューを依頼する**: デザイン Issue で、[グループ担当の Technical Writer](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments)にメッセージを送り、レビューを依頼する。レビューするファイルまたは行と、プレビューまたはコンテキストを理解する方法を指定する
 - **テキストの最終化で協働する**: UI テキストが使いやすく正確になるよう、Technical Writer と密に協働して最終化する
 - **他部門からのフィードバックを取り入れる**: 他部門が UI コピーについて意見を提供する場合は、大幅な修正と委員会方式のデザインを避けるため、具体的なテキストではなく目標を尋ねる
 
-### プロダクト内の参照情報で協働する
+### プロダクト内の参照情報で協働する {#collaborating-on-in-product-reference-information}
 
 ときには、デザイナー、PM、Technical Writer が、追加の[プロダクト内参照情報](https://design.gitlab.com/usability/contextual-help/)を[ドロワーコンポーネント](https://design.gitlab.com/components/drawer/)に表示することに合意します。参照情報は、その機能の既存ドキュメントと整合する必要があります。
 
 1. **コピーを下書きする**: デザイナーは、ユーザーの目標に必要な情報を特定し、ドロワー用のコンテンツを下書きします。この下書きは、最終バージョンにできるだけ近いものにする必要があります
-2. **下書きのステータスを示す**: 「ドキュメント待ち」、「下書き」、「プレースホルダー」といったテキストのウォーターマーク、または Figma ファイル内のピンを使用して、ドロワーのコンテンツが最終版ではないことを示す
+2. **下書きのステータスを示す**: 「waiting on documentation」、「draft」、「placeholder」といったテキストのウォーターマーク、または Figma ファイル内のピンを使用して、ドロワーのコンテンツが最終版ではないことを示す
 3. **デザインから開発までのプロセスに従う**:
    - 開発者は、機能コード MR の一部としてドロワーとドキュメントを作成する
    - Technical Writer は、ドキュメントとドロワーのコンテンツをレビューする
    - ドキュメントが公開されたら、ドロワーにコンテンツを入れる
 
-## UX Researcher とのパートナーシップ
+## UX Researcher とのパートナーシップ {#partnering-with-ux-researchers}
 
 UX Research は、Product Design と並ぶ Upstream Studios のコアディシプリンです。リサーチはデザインに情報を与え、私たちが何を構築するかを方向付け、すべての体験がユーザー理解に根ざすようにします。
 
@@ -319,7 +319,7 @@ UX Researcher は、リサーチプロジェクトの対象が適切で、価値
 - **UX Researcher に連絡する**: リサーチを実施または案内してもらうため、[UX Researcher](/handbook/upstream-studios/experience-research/how-uxr-team-operates/)に連絡する
 - **調査結果を記録する**: 確立されたプロセスに従って、リサーチの調査結果が記録されるようにする
 
-## 作業を周知する
+## 作業を周知する {#socializing-your-work}
 
 デザイン作業を共有すると、Product Designer は GitLab の内外で同僚をメンターし、関わり、刺激を与えられます。視野が広がり、デザインの意思決定がプロダクトに及ぼすより広い影響を理解するのに役立ちます。
 

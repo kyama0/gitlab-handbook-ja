@@ -1,18 +1,18 @@
 ---
 title: "Incident Manager On Call オンボーディング"
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:57:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-12T10:48:57-04:00"
+lastmod: "2026-10-30T07:27:29-07:00"
 ---
 
-## はじめに
+## はじめに {#introduction}
 
-このページはインシデントマネージャーとしてオンボーディングする際の出発点となることを目的としています。
+このページは Incident Manager としてオンボーディングする際の出発点となることを目的としています。
 
-いかなる単一の個人にも大きな負担をかけずに健全な[インシデントマネージャー](/handbook/engineering/infrastructure-platforms/incident-management/#incident-manager-on-call-imoc-responsibilities)ローテーションを確保するため、この役割をエンジニアリング全体のチームメンバーで担当します。
+十分な人員を確保し、いかなる単一の個人にも大きな負担をかけずに健全な[Incident Manager](/handbook/engineering/infrastructure-platforms/incident-management/#incident-manager-on-call-imoc-responsibilities)ローテーションを確保するため、この役割を Engineering 全体のチームメンバーで担当します。
 
 Incident Manager On Call（IMOC）はコール中に以下の目標を持ちます。
 
@@ -22,26 +22,26 @@ Incident Manager On Call（IMOC）はコール中に以下の目標を持ちま�
 - 最近のリリースとフィーチャーフラグを検証する（ロールバックまたはフラグ変更は可能か？）
 - 参加したばかりの方のために恥ずかしがらずに現状を再説明する（あなたの理解の誤りはグループの明確化と学習の機会になります）
 - 最速の軽減パスを特定し、必要に応じて割り込みをかける
-- 定期的なペース（S1 は 5〜10 分ごと）で上記を確認する
+- 定期的なペース（S1 は 5 〜 10 分ごと）で上記を確認する
 - 適切なオーディエンスにステータスを伝達する
 
 これらの一部は GitLab Values に反するように感じるかもしれません。これは私たちの Values を軽視したり損なうために設計・意図されたものではなく、顧客への影響をできるだけ早く軽減する必要性を認識し強化するためのものです。
 
-### インシデントマネージャーの参加者
+### Incident Manager の参加者 {#incident-manager-participants}
 
-インシデントマネージャーの役割はこのスコープ内のすべてのチームメンバーで担当されます。
+Incident Manager の役割はこのスコープ内のすべてのチームメンバーで担当されます。
 
 - 適切な[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)
-- エンジニアリンググループ内のチームメンバー
-- カスタマーサポートを除くエンジニアリンググループのすべての職種
-- ページングされており 15 分以内の応答時間が求められる別のオンコールアサイン、またはその他の時間的制約のあるオンコールローテーション（例：DevEx Pipeline DRI）にすでに従事していないこと
+- Engineering Group 内のチームメンバー
+- Customer Support を除く Engineering Group のすべての職種
+- ページングされており 15 分未満の応答時間が求められる別のオンコールアサイン、またはその他の時間的制約のあるオンコールローテーション（例：DevEx Pipeline DRI）にすでに従事していないこと
 - 会社に少なくとも 3 か月在籍していること
 
-インシデントマネージャーとして、チームメンバーは GitLab.com および他の GitLab SaaS 環境の運用方法を学びます。オンコールの信頼性エンジニアや開発チームメンバーと連携して GitLab.com の可用性目標の確保を支援します。この役割で得られる経験と意識は、スケールでの GitLab 構築への理解を深め、最終的にはより信頼性の高いスケーラブルな GitLab SaaS サービスとプロダクトにつながります。
+Incident Manager として、チームメンバーは GitLab.com および他の GitLab SaaS 環境の運用方法を学びます。オンコールの信頼性エンジニアや開発チームメンバーと連携して GitLab.com の可用性目標の確保を支援します。この役割で得られる経験と意識は、スケールでの GitLab 構築への理解を深め、最終的にはより信頼性の高いスケーラブルな GitLab SaaS サービスとプロダクトにつながります。
 
-### インシデントマネージャーのシフト
+### Incident Manager のシフト {#incident-manager-shifts}
 
-シフトは毎日以下の時間で4時間または6時間です。
+シフトは毎日以下の時間で 4 時間または 6 時間です。
 
 - UTC 23:00 〜 05:00
 - UTC 05:00 〜 11:00
@@ -49,18 +49,18 @@ Incident Manager On Call（IMOC）はコール中に以下の目標を持ちま�
 - UTC 15:00 〜 19:00
 - UTC 19:00 〜 23:00
 
-各 Incident Manager On Call のアサインは 4 日間連続です。IMOC のシフトは[インシデントマネージャーオンボーディング Issue](/handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding/#onboard-as-an-incident-manager)で指定された個人の希望に基づいています。このローテーションアサインに基づいてシフトに週末が含まれる場合があります。
+各 Incident Manager On Call のアサインは 4 日間連続です。IMOC のシフトは[Incident Manager オンボーディング Issue](/handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding/#onboard-as-an-incident-manager)で指定された個人の希望に基づいています。このローテーションアサインに基づいてシフトに週末が含まれる場合があります。
 
-週末カバレッジをより公平にし、祝日および週末カバレッジに関する更新されたガイダンスに基づいて、2つのローテーションを設定しています。
+週末カバレッジをより公平にし、祝日および週末カバレッジに関する更新されたガイダンスに基づいて、2 つのローテーションを設定しています。
 
-1. 平日と週末 — インシデントマネージャーの最大4日間のシフトは週の任意の日にスケジュールできます。これはこれまでのローテーションアサインのスケジュール方法です。
-1. 平日のみ — インシデントマネージャーの最大4日間のシフトは週末カバーができないチームメンバーに対して平日のみにスケジュールされます。このレイヤーは「平日と週末」レイヤーより優先されるため、_任意の日_にスケジュールされたインシデントマネージャーはシフトの頻度が少なくなります。
+1. 平日と週末 — Incident Manager の最大 4 日間のシフトは週の任意の日にスケジュールできます。これはこれまでのローテーションアサインのスケジュール方法です。
+1. 平日のみ — Incident Manager の最大 4 日間のシフトは週末カバーができないチームメンバーに対して平日のみにスケジュールされます。このレイヤーは「平日と週末」レイヤーより優先されるため、*任意の日*にスケジュールされた Incident Manager はシフトの頻度が少なくなります。
    1. 平日のみシフトの資格
-   1. それぞれ 2023-12-07、2023-12-20、2023-06-06 以前の雇用契約を持つ英国、ドイツ、アイルランドのチームメンバーで、週末シフトに自発的に参加することを望まず、改正に署名していない場合。
+   1. それぞれ 2023-12-07、2023-12-20、2023-06-06 以前の雇用契約を持つ英国、ドイツ、アイルランドのチームメンバーで、週末シフトに自発的に参加することを望まず、変更契約に署名していない場合。
    1. オーストリア、フランス、またはイタリアの雇用契約を持つチームメンバー。現地の制限により週末シフトを取るべきではありません。
 1. スイスまたはニュージーランドの雇用契約を持つチームメンバーは、現地の制限により祝日のカバーをすべきではありません。誤って祝日にスケジュールされた場合は[シフトを交換してください](#can-i-shift-my-incident-manager-on-call-days-around)。
 
-### 特別カバレッジ日
+### 特別カバレッジ日 {#special-coverage-days}
 
 祝日またはその他のグローバルな会社イベントによってチームメンバーの全体的な可用性が低い日は、少ない人数でより長いシフトで IMOC 役割をスタッフするほうが効率的です。これらの日は「特別カバレッジ日」として指定され、関連するシフトをカバーするボランティアが募集されます。これらの日の例には元旦および月次の Family & Friends Day が含まれます。多くの祝日は性質上ローカルなものであり、通常のシフト交換で簡単にカバーできるため、すべての祝日がこの方法でカバーされるわけではありません。
 
@@ -68,97 +68,98 @@ Incident Manager On Call（IMOC）はコール中に以下の目標を持ちま�
 
 Issue で示された特別カバレッジの期間中、incident.io スケジュールにオーバーライドが設定されます。
 
-### インシデントマネージャーとしてオンボードする
+### Incident Manager としてオンボードする {#onboard-as-an-incident-manager}
 
-オンボーディングには、[インシデントマネージャーオンボーディング Issue を作成してください](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/new?issuable_template=onboarding-im)。
+オンボーディングには、[Incident Manager オンボーディング Issue を作成してください](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/new?issuable_template=onboarding-im)。
 
-### インシデントマネージャーとしてオフボードする
+### Incident Manager としてオフボードする {#offboard-as-an-incident-manager}
 
-資格ステータスが変更になった場合、または IMOC アサインから免除された場合は、[インシデントマネージャーオフボーディング Issue を作成してください](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/new?issuable_template=offboarding-im)。
+資格ステータスが変更になった場合、または IMOC アサインから免除された場合は、[Incident Manager オフボーディング Issue を作成してください](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/new?issuable_template=offboarding-im)。
 
-## シフト中に何が起こるか
+## シフト中に何が起こるか {#what-to-expect-during-your-shift}
 
-### オンコールシフトの開始
+### オンコールシフトの開始 {#starting-your-on-call-shift}
 
 シフトが始まる前に、Slack のアラートが機能していることと incident.io の連絡先が最新であることを確認してください。テストページを送信して、アラートを正しく受信していることを確認してください。シフト開始時間が 8 時間の SRE オンコールシフトの開始と一致する場合は、[オンコール引き継ぎ Issue](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#customer-emergency-on-call-rotation)にアサインされることがあります。
 
 オンコールシフトが始まると、シフトが開始していることの通知（メールまたはテキスト、incident.io の設定に応じて）を受け取ります。また、`@incident-managers` ユーザーグループに追加されたことについて Slack 通知も受け取ります。
 
-### インシデントが発生したとき
+### インシデントが発生したとき {#when-an-incident-happens}
 
 [`#incidents-dotcom` Slack チャンネル](https://gitlab.slack.com/archives/C08FMPK1DDF)のアナウンスに応答することが期待されています。[`一般的な本番インシデントのガイドライン`](https://gitlab.com/gitlab-com/runbooks#general-guidelines-for-production-incidents)を確認し、Issue の重大度ラベルを確認して、必要に応じて更新してください。
 
 現在のインシデント中に S1 または S2 が発生した場合は、どちらのインシデントが顧客への影響が最も高いかを判断し、その Issue に取り組んでください。顧客への影響が少ない Issue については、[インフラストラクチャリーダーシップエスカレーション](/handbook/engineering/infrastructure-platforms/incident-management/#infrastructure-leadership-responsibilities)に支援を求めてください。
 
-### エスカレーションと応答なしページ
+### エスカレーションと応答なしページ {#escalations-and-missed-pages}
 
-誰かが [Tier 2 SME](/handbook/engineering/infrastructure-platforms/incident-management/tier2-escalations) にエスカレートして、そのページが 15 分以内に確認されない場合、あなたに転送されます。[オンコールスケジュール](https://app.incident.io/gitlab/on-call/schedules)を確認してそのローテーションのオンコール担当者に連絡するか、エスカレーションを支援できる別の人を見つける必要があります。そのエスカレーションのスケジュール内で別の人を見つけるか、[その Tier 2 スケジュールの Slack チャンネル](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2)で確認できます。
+誰かが [Tier 2 SME](/handbook/engineering/infrastructure-platforms/incident-management/tier2-escalations)にエスカレートして、そのページが 15 分以内に確認されない場合、あなたに転送されます。[オンコールスケジュール](https://app.incident.io/gitlab/on-call/schedules)を確認してそのローテーションのオンコール担当者に連絡するか、エスカレーションを支援できる別の人を見つける必要があります。そのエスカレーションのスケジュール内で別の人を見つけるか、[その Tier 2 スケジュールの Slack チャンネル](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2)で確認できます。
 
-### オンコールシフトの終了
+### オンコールシフトの終了 {#ending-your-on-call-shift}
 
-シフトが終わる前に、引き継ぎが必要なタスクを考慮し、次のオンコールインシデントマネージャーに積極的に伝えてください。これは進行中のインシデントについて次のオンコールインシデントマネージャーをページングして（incident.io または `@incident-managers` Slack ハンドル経由で）アクティブなトラブルシューティングコールに参加させること、またはある程度のフォローアップアクションが必要な対処した状況に対して手順やコンテキストを提供することを意味する場合があります。シフト中に発生した（またはアクティブに発生している）状況がある場合は、次のオンコールインシデントマネージャーを準備させる責任があります。
+シフトが終わる前に、引き継ぎが必要なタスクを考慮し、次のオンコール Incident Manager に積極的に伝えてください。これは進行中のインシデントについて次のオンコール Incident Manager をページングして（incident.io または `@incident-managers` Slack ハンドル経由で）アクティブなトラブルシューティングコールに参加させること、またはある程度のフォローアップアクションが必要な対処した状況に対して手順やコンテキストを提供することを意味する場合があります。シフト中に発生した（またはアクティブに発生している）状況がある場合は、次のオンコール Incident Manager を準備させる責任があります。
 
-次のオンコールインシデントマネージャーが利用できない場合は、次のシフトをカバーできる利用可能なチームメンバーを見つけることを検討してください。このために `#im-general`、`#staff_plus_engineers`、`#eng-managers` チャンネルを使用できます。
+次のオンコール Incident Manager が利用できない場合は、次のシフトをカバーできる利用可能なチームメンバーを見つけることを検討してください。このために `#im-general`、`#staff_plus_engineers`、`#eng-managers` チャンネルを使用できます。
 シフトを終えて、カバレッジを探している間に次のシフトが始まる場合は、incident.io オーバーライドを作成（[オーバーライドの作成例](#can-i-shift-my-incident-manager-on-call-days-around)）して、この作業中にインシデントが発生した場合にページングされるようにしてください。
 次のシフトのカバレッジを見つけられない、またはそのキャパシティがない場合は、[インフラストラクチャリーダーシップエスカレーション](/handbook/engineering/infrastructure-platforms/incident-management/#infrastructure-leadership-responsibilities)を使用して支援を求めてください。
 
-オンコールインシデントマネージャーへのページに応答がない場合は[インフラストラクチャリーダーシップエスカレーション](/handbook/engineering/infrastructure-platforms/incident-management/#infrastructure-leadership-responsibilities)がページングされます。ただし、シフトの終わりに進行中のインシデントがある場合は、そのインシデントの `Incident lead` 役割（incident.io 上）がカバーされ、シフト終了時に引き継がれることが不可欠です。
+オンコール Incident Manager へのページに応答がない場合は[インフラストラクチャリーダーシップエスカレーション](/handbook/engineering/infrastructure-platforms/incident-management/#infrastructure-leadership-responsibilities)がページングされます。ただし、シフトの終わりに進行中のインシデントがある場合は、そのインシデントの `Incident lead` 役割（incident.io 上）がカバーされ、シフト終了時に引き継がれることが不可欠です。
 
-### 追加リソース
+### 追加リソース {#additional-resources}
 
 - [インシデントの報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)
 - [IMOC チェックリスト](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist)
 - [IMOC の責任](/handbook/engineering/infrastructure-platforms/incident-management/#incident-manager-on-call-imoc-responsibilities)
 - [ランブック IMOC](https://gitlab.com/gitlab-com/runbooks/-/blob/master/on-call/checklists/imoc.md)
 - [モニタリング](/handbook/engineering/monitoring/)
+- [`gitlab-imoc` エージェントスキル](https://gitlab.com/gitlab-org/ai/skills/-/tree/main/skills/gitlab-imoc)
 
-## よくある質問
+## よくある質問 {#frequently-asked-questions}
 
-### インシデントマネージャーとは誰ですか？
+### Incident Manager とは誰ですか？ {#who-are-the-incident-managers}
 
-インシデントマネージャーの責任は、開発部門とインフラストラクチャ部門のエンジニアリングマネジメントおよび Staff+ エンジニアの職種に期待されています。以前は、インシデントマネージャーの責任はインフラストラクチャ部門の少数のマネージャーのグループによって担われていました。これらの対象役職のすべてのチームメンバーがインシデントマネージャーローテーションに参加することが期待されています。
+Incident Manager の責任は、Development 部門と Infrastructure 部門の Engineering Management および Staff+ Engineer の職種に期待されています。以前は、Incident Manager の責任は Infrastructure 部門の少数のマネージャーのグループによって担われていました。これらの対象役職のすべてのチームメンバーが Incident Manager ローテーションに参加することが期待されています。
 
-場合によっては、シニアエンジニアもインシデントマネージャーとして参加できます。これは特に、シニアエンジニアが役割の中で成長の追加機会を探しており、将来の昇進機会に備える際に有用です。シニアエンジニアはインシデントマネージャーオンボーディング Issue をオープンし、マネージャーが Issue での承認を示すことでインシデントマネージャープールに参加できます。他の場所で述べているように、チームメンバーはこの役割に似た1つのデューティにのみ参加すべきであり、同時に Dev On-call に参加すべきではありません（例えば）。リクエストを承認する際、マネージャーは対象者が重複してどちらのプログラムも完全にスタッフされなければならないため、インシデントマネージャーと Dev Oncall のバランスを維持する必要がある地域があることに留意する必要があります。
+場合によっては、Senior Engineers も Incident Manager として参加できます。これは特に、Senior Engineers が役割の中で成長の追加機会を探しており、将来の昇進機会に備える際に有用です。Senior Engineers は Incident Manager オンボーディング Issue をオープンし、マネージャーが Issue での承認を示すことで Incident Manager プールに参加できます。他の場所で述べているように、チームメンバーはこの役割に似た 1 つのデューティにのみ参加すべきであり、同時に Dev On-call に参加すべきではありません（例えば）。リクエストを承認する際、マネージャーは対象者が重複してどちらのプログラムも完全にスタッフされなければならないため、Incident Manager と Dev Oncall のバランスを維持する必要がある地域があることに留意する必要があります。
 
-### これはボランティアの取り組みですか？
+### これはボランティアの取り組みですか？ {#is-this-a-volunteer-effort}
 
-いいえ。対象役職のすべてのチームメンバーはインシデントマネージャーローテーションへの参加が期待されています。対象のすべてのチームメンバーは incident.io にスケジュールされる予定です。今後のシフトが予定されている人は、インシデントマネージャーオンコールオンボーディング Issue の完了を優先する必要があります。
-インシデントマネージャーになる準備ができていないと感じる方は、[他の人とシフトを交換するプロセスに従い](#can-i-shift-my-incident-manager-on-call-days-around)、マネージャーまたはインシデント管理コーディネーターと協力して直面している課題を解決してください。
+いいえ。対象役職のすべてのチームメンバーは Incident Manager ローテーションへの参加が期待されています。対象のすべてのチームメンバーは incident.io にスケジュールされる予定です。今後のシフトが予定されている人は、Incident Manager オンコールオンボーディング Issue の完了を優先する必要があります。
+Incident Manager になる準備ができていないと感じる方は、[他の人とシフトを交換するプロセスに従い](#can-i-shift-my-incident-manager-on-call-days-around)、マネージャーまたは Incident Management Coordinator と協力して直面している課題を解決してください。
 
-参加できないと思う場合や代替スケジュールが必要な場合は、マネージャーに相談してください。参加のアサインと免除は Infrastructure の VP と Development の VP またはその代理人によって調整され、リクエストには参加者の報告マネージャーからの承認が必要です。[この内部スプレッドシートが参加からの免除を追跡するために使用されています](https://docs.google.com/spreadsheets/d/1I_e3f4Xb3Z4RwEpmQGcIKA-59fjqJP9RS1sVGgS5VdM/edit#gid=0)。
+例外は個別に検討します。参加できないと思う場合や代替スケジュールが必要な場合は、マネージャーに相談してください。参加のアサインと免除は VP of Infrastructure と VP of Development またはその代理人によって調整され、リクエストには参加者の直属のマネージャーからの承認が必要です。[この内部スプレッドシートが参加からの免除を追跡するために使用されています](https://docs.google.com/spreadsheets/d/1I_e3f4Xb3Z4RwEpmQGcIKA-59fjqJP9RS1sVGgS5VdM/edit#gid=0)。
 
-### インシデントマネージャーローテーション中は Tier 2 オンコールから免除されますか？
+### Incident Manager ローテーション中は Tier 2 オンコールから免除されますか？ {#am-i-exempt-from-tier-2-on-call-when-i-am-on-incident-manager-rotation}
 
-はい。人はあなたが最も必要とされる1つのローテーションのみにいる必要があります。インシデントマネージャーローテーションにいる場合は、Tier 2 オンコールローテーションにも入るべきではありません。
+はい。人はあなたが最も必要とされる 1 つのローテーションのみにいる必要があります。Incident Manager ローテーションにいる場合は、Tier 2 オンコールローテーションにも入るべきではありません。
 
-### インシデントマネージャーの職務を他の役割の期待事項とどのように優先順位付けしますか？
+### Incident Manager の職務を他の役割の期待事項とどのように優先順位付けしますか？ {#how-do-i-prioritize-incident-manager-duties-with-my-other-role-expectations}
 
-インシデントマネージャーオンコールにスケジュールされている場合、これはあなたの仕事の第1優先事項でなければなりません。ただし、優先事項であっても、インシデントがない場合もあります。インシデントマネージャーのリーダーシップを必要とするアクティブなインシデントがない場合は、通常の業務を維持します。
+Incident Manager オンコールにスケジュールされている場合、これはあなたの仕事の第 1 優先事項でなければなりません。ただし、優先事項であっても、インシデントがない場合もあります。Incident Manager のリーダーシップを必要とするアクティブなインシデントがない場合は、通常の業務を維持します。
 
-現在、インシデントマネージャーオンコールへのページは週に0〜4回程度発生しています。インシデントマネージャーがオンコールである間は、エスカレーションに対して 15 分間の SLA があります。これは、インシデントコールに参加するためにミーティング、1on1 などを退出することを意味する場合があります。このような需要はバランスを取るのを難しくし、短い通知で会議の再スケジュールが必要になることがあります。インシデント管理の割り込み主導の性質から、オンコール中に退出が困難な同期ミーティングは後日に移動することをお勧めします。
+現在、Incident Manager オンコールへのページは週に 0 〜 4 回程度発生しています。Incident Manager がオンコールである間は、エスカレーションに 15 分以内に応答する SLA があります。これは、インシデントコールに参加するためにミーティング、1on1 などを退出することを意味する場合があります。このような需要はバランスを取るのを難しくし、短い通知で会議の再スケジュールが必要になることがあります。インシデント管理の割り込み主導の性質から、オンコール中に退出が困難な同期ミーティングは後日に移動することをお勧めします。
 
 特に、オンコール中はカレンダーで時間をブロックして、シフト中に面接がスケジュールされないようにしてください。候補者が私たちとの面接のために設けた時間を尊重する必要があり、面接をページで中断すべきではありません。面接がシフト中にスケジュールされた場合は、採用チームに連絡して再スケジュールしてください。
 
-### シフト中に家族やその他の個人的な約束がある場合は？
+### シフト中に家族やその他の個人的な約束がある場合は？ {#what-if-i-have-family-or-other-personal-commitments-during-my-shift}
 
-インシデントマネージャーの役割は 15 分間の応答を必要とします。ただし、シフト全体を通じてインシデントを待ってデスクに座っていることは期待されていません。
+Incident Manager の役割は 15 分間の以内の応答を必要とします。ただし、シフト全体を通じてインシデントを待ってデスクに座っていることは期待されていません。
 
-応答を複雑にする可能性のある家族やその他の短い個人的な約束がある場合があります。ほとんどの場合、その約束中にインシデント Slack チャンネルで状況とタイミングをチームの他のメンバーに伝えるために数分取ることができる限り、45 分未満の任意の約束には安心して対応できます。
+応答を複雑にする可能性のある家族やその他の短い個人的な約束がある場合があります。ほとんどの場合、その約束中にインシデント Slack チャンネルで状況とタイミングをチームの他のメンバーに伝えるために数分取ることができる限り、45 分以内の約束には安心して対応できます。
 
-それより長いまたは Slack での情報提供の応答を許可しない定期的な約束がある場合は、別のシフトを選択することをお勧めします。このような偶発的な約束がある場合はシフトをブロックするべきではありません。インシデントマネージャーのチームが大きいことのメリットの1つは、予期しないまたは短期間の約束に対してお互いにカバレッジを提供できることです。
+それより長いまたは Slack での情報提供の応答を許可しない定期的な約束がある場合は、別のシフトを選択することをお勧めします。このような偶発的な約束がある場合はシフトをブロックするべきではありません。Incident Manager のチームが大きいことのメリットの 1 つは、予期しないまたは短期間の約束に対してお互いにカバレッジを提供できることです。
 
-### インシデントマネージャーシフトはどれくらいの頻度で発生しますか？
+### Incident Manager シフトはどれくらいの頻度で発生しますか？ {#how-often-will-i-have-an-incident-manager-shift}
 
-4日間のシフトとは、最大でも他の7人の IM と共にインシデントマネージャーシフトに参加するチームメンバーがシフトを持つ頻度が約1か月に1回であることを意味します。あなたの地域にプールに追加されるチームメンバーが増えるたびに、このタイミングが4日間延長されます。関与するチームメンバーが多ければ多いほど、個人が頻繁にシフトを持つことが少なくなります。
+4 日間のシフトとは、最大でも他の 7 人の IM と共に Incident Manager シフトに参加するチームメンバーがシフトを持つ頻度が約 1 か月に 1 回であることを意味します。あなたの地域にプールに追加されるチームメンバーが増えるたびに、このタイミングが 4 日間延長されます。関与するチームメンバーが多ければ多いほど、個人が頻繁にシフトを持つことが少なくなります。
 
-### インシデントマネージャーはどのようにスケジュールされますか？
+### Incident Manager はどのようにスケジュールされますか？ {#how-are-incident-managers-scheduled}
 
-新しいインシデントマネージャーが継続的にローテーションに追加されているため、今後数か月のスケジュールは最終的なものではなく、人が追加または削除されるにつれて変化します。
-詳細については、[インシデントマネージャーコーディネーターの責任](/handbook/engineering/infrastructure-platforms/incident-management/#incident-manager-coordinator)をご覧ください。
+新しい Incident Manager が継続的にローテーションに追加されているため、今後数か月のスケジュールは最終的なものではなく、人が追加または削除されるにつれて変化します。
+詳細については、[Incident Manager Coordinator の責任](/handbook/engineering/infrastructure-platforms/incident-management/#incident-manager-coordinator)をご覧ください。
 
-### インシデントマネージャーオンコールの日をずらすことはできますか？ {#can-i-shift-my-incident-manager-on-call-days-around}
+### Incident Manager オンコールの日をずらすことはできますか？ {#can-i-shift-my-incident-manager-on-call-days-around}
 
-はい、これはインシデントマネージャーとして関与するチームメンバーのプールが充実していることのもう1つのメリットです。シフトの「交換」は incident.io で簡単に手配できます。アサインされたシフトがカバーされることを確実にするのはあなたの責任ですが、特別な状況では Infrastructure の VP に支援を求めてください。シフトの交換は完全に問題ありません。計画的な休暇や突然/緊急の家族の事情のためにカバーを得ることは、お互いにすべきことです。
+はい、これは Incident Manager として関与するチームメンバーのプールが充実していることのもう 1 つのメリットです。シフトの「交換」は incident.io で簡単に手配できます。アサインされたシフトがカバーされることを確実にするのはあなたの責任ですが、特別な状況では VP of Infrastructure に支援を求めてください。シフトの交換は完全に問題ありません。計画的な休暇や突然/緊急の家族の事情のためにカバーを得ることは、お互いにすべきことです。
 
 シフトのカバーまたはカバーのリクエストについて：
 
@@ -167,20 +168,20 @@ Issue で示された特別カバレッジの期間中、incident.io スケジ�
 
 例：誰かのカバーをする場合。[incident.io のスケジュール](https://app.incident.io/gitlab/on-call/schedules/01K77XZFD7X7E3W8T6GDVMKAFF)にアクセスして、オーバーライドするシフトと人を選択します。自分自身と期間を選択できるポップアップが表示されます。
 
-### アサインされたシフトに参加できない場合は？
+### アサインされたシフトに参加できない場合は？ {#what-if-i-am-not-available-for-my-assigned-shift}
 
 シフトはオンボーディング中に選択した業務時間に基づいてアサインされます。現在のプロセスは `#im-general` Slack チャンネルで誰かにこのシフトを引き受けるよう依頼して[シフトを交換する](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#swapping-on-call-duty)ことです。
 
-### 週末または祝日にシフトをした場合は？
+### 週末または祝日にシフトをした場合は？ {#what-if-i-work-a-shift-on-a-weekend-or-holiday}
 
 オンコール中は、シフト全体をラップトップの前で座って待つことは期待されていません。15 分以内にページを確認して Slack または Zoom コールに参加できる状態にいる必要があります。週末と祝日に自分自身を利用可能にする中断に対して代替休暇を提供することを希望しています。
 週末のシフトの代わりに個人の状況に最も合うオプションを探すことをすべての人にお勧めします。オンコール中は次の可能性があります。
 
 1. 週末の日と平日を交換する。
 1. 週末の日と平日の間で時間を交換する。
-1. 上記2つのオプションが個人のスケジュールに合わない場合、週末中に実施した作業時間の最大2倍の代替休暇を取得する。
-   1. インシデントマネージャーが週末シフト中にスタンバイモード（例：ページなし）の場合、1.25 倍の代替休暇を取得できます。
-   1. インシデントマネージャーが週末シフト中にコールバックモード（例：ページあり）の場合、2倍の代替休暇を取得できます。
+1. 上記 2 つのオプションが個人のスケジュールに合わない場合、週末中に実施した作業時間の最大 2 倍の代替休暇を取得する。
+   1. Incident Manager が週末シフト中にスタンバイモード（例：ページなし）の場合、1.25 倍の代替休暇を取得できます。
+   1. Incident Manager が週末シフト中にコールバックモード（例：ページあり）の場合、2 倍の代替休暇を取得できます。
    1. オーストラリア在住の方は、ハンドブックの[代替休暇に関するガイドライン](/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/#on-call-support-engineering-only)を参照してください。
 1. 個人のスケジュールへの影響が最も少ないワークライフバランスを促進する他の代替手段。
 
@@ -190,31 +191,31 @@ Workday で OOO イベントを作成し、**On-Call Time in Lieu** を選択し
 
 さらに質問がある場合は、`#im-general` Slack チャンネルでガイダンスを求めてください。
 
-### オンコール中の携帯電話サービス費用は経費精算できますか？
+### オンコール中の携帯電話サービス費用は経費精算できますか？ {#can-i-expense-my-cell-phone-service-used-for-on-call}
 
-はい、インシデント管理のオンコールは[経費](/handbook/finance/expenses/)目的で「役職に不可欠」とみなされます。
+はい、インシデント管理のオンコールは[経費](/handbook/finance/expenses/)上、`vital to position` とみなされます。
 
-### 部下がインシデントマネージャーとして活動している場合、マネージャーとしての責任は何ですか？
+### 部下が Incident Manager として活動している場合、マネージャーとしての責任は何ですか？ {#my-direct-report-is-serving-as-incident-manager-what-are-my-responsibilities-as-their-manager}
 
-部下の役割にインシデントマネージャーの責任を追加するには、マネージャーとの協力が必要です。マネージャーはインシデントマネージャーの職務がアサインされた際、特に週末とシフトが重なる場合に支援する必要があります。インシデントマネージャーにはこれらの追加責任を考慮して一部の責任を委任、延期、または中断する権限があることを確認してください。
+部下の役割に Incident Manager の責任を追加するには、マネージャーとの協力が必要です。マネージャーは Incident Manager の職務がアサインされた際、特に週末とシフトが重なる場合に支援する必要があります。Incident Manager にはこれらの追加責任を考慮して一部の責任を委任、延期、または中断する権限があることを確認してください。
 
-マネージャー自身もインシデントマネージャーとして活動している場合は、同様の行動をモデリングすることが部下をサポートすることと同様に重要です。
+マネージャー自身も Incident Manager として活動している場合は、同様の行動をモデリングすることが部下をサポートすることと同様に重要です。
 
-### Google Calendar から incident.io スケジュールを確認するには？
+### Google Calendar から incident.io スケジュールを確認するには？ {#how-do-i-see-incidentio-schedules-from-google-calendar}
 
 1. incident.io の [Incident Manager - GitLab.com SaaS](https://app.incident.io/gitlab/on-call/schedules/01K77XZFD7X7E3W8T6GDVMKAFF) スケジュールの *webcal フィード*を見つけます。右上の `...` メニューで確認できます。また、「Sync calendar」ボタンで[オンコールスケジュールページ](https://app.incident.io/gitlab/on-call/schedules)から自分の incident.io シフトにリンクすることもできます。
 2. Google Calendar で **Other Calendars** ドロップダウンからカレンダーを追加し、`from url` を選択して `webcal://...` URL をコピーしてください。webcal リンクを貼り付けます。
-3. 各インシデントマネージャーオンコールシフトがこの読み取り専用カレンダービューでイベントとして表示されます。カレンダーをわかりやすい名前（`webcal://...` ではなく）に変更してください（例：IMOC Shifts、My On-Call Shifts など）。
+3. 各 Incident Manager オンコールシフトがこの読み取り専用カレンダービューでイベントとして表示されます。カレンダーをわかりやすい名前（`webcal://...` ではなく）に変更してください（例：IMOC Shifts、My On-Call Shifts など）。
 
 incident.io の IMOC スケジュールを Google Calendar に追加する利点：
 
 - Google Calendar で自分や他の人のシフトを検索できます。
 - このカレンダーからイベントを自分のカレンダーに複製して時間をブロックし、それに応じてリマインダーを設定できます。
 
-### オンコールにスケジュールされたときの通知方法は？
+### オンコールにスケジュールされたときの通知方法は？ {#how-do-i-get-notified-when-i-am-scheduled-for-on-call}
 
 新しいスケジュールは毎月 [#im-general](https://gitlab.slack.com/archives/C01NY82EJF6) チャンネルで[アナウンス](#how-are-incident-managers-scheduled)されます。
 
-## インシデント管理について学ぶ
+## インシデント管理について学ぶ {#learning-about-incident-management}
 
 GitLab での[インシデント管理](/handbook/engineering/infrastructure-platforms/incident-management/)の方法をカバーする詳細なハンドブックページがあります。

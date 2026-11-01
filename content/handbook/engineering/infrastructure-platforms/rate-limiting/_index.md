@@ -2,28 +2,28 @@
 title: "レート制限"
 description: "このページは GitLab のレート制限ドキュメントを単一の情報源に集約するために存在します。現在のレート制限の状態を反映することを意図しており、ターゲットオーディエンスはオペレーター（SRE およびサポートチームメンバー）です。"
 upstream_path: /handbook/engineering/infrastructure-platforms/rate-limiting/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T03:12:43Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:35:16+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-12T15:03:22+01:00"
+lastmod: "2026-10-26T15:35:25+05:30"
 ---
 
-## 概要
+## 概要 {#overview}
 
 レート制限は、設定された時間枠内にユーザーまたは IP アドレスが行えるリクエスト数を制限することで、セキュリティとパフォーマンスを向上させる GitLab の重要な機能です。GitLab のレート制限アプローチは乱用を防ぎ、公平なリソース割り当てを確保し、システムの安定性を維持し、潜在的な攻撃から効果的に保護し、信頼性の高いユーザー体験を保証します。
 
 レート制限されたリクエストは `429 - Too Many Requests` レスポンスを返します。
 
-## プロセス
+## プロセス {#processes}
 
 - レート制限の変更には[変更リクエスト](../change-management/#change-request-workflows)が必要です。
 - ユーザーのレート制限設定について[この Issue テンプレート](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new?issuable_template=request-rate-limiting)を使用して支援を要請してください。
 - バイパスを求める内部チームは[レート制限バイパスポリシー](/handbook/engineering/infrastructure-platforms/rate-limiting/bypass-policy/)を参照してください。
 
-## GitLab レート制限アーキテクチャ
+## GitLab レート制限アーキテクチャ {#gitlab-rate-limit-architecture}
 
-### GitLab.com
+### GitLab.com {#gitlabcom}
 
 ```mermaid
 flowchart TD
@@ -53,7 +53,7 @@ flowchart TD
     G --> J
 ```
 
-### Cloud Connector
+### Cloud Connector {#cloud-connector}
 
 ```mermaid
 flowchart LR
@@ -83,7 +83,7 @@ flowchart LR
 
 GitLab.com では複数のレイヤーにレート制限が存在し、上記のボックスで囲まれた各領域がレート制限が実装されている場所を表しています。
 
-### 制限
+### 制限 {#limits}
 
 重複を最小限に抑えるため、現在有効なレート制限を確認するには以下のソースを参照してください:
 
@@ -120,17 +120,17 @@ Cloudflare
 
 </table>
 
-### バイパス
+### バイパス {#bypasses}
 
 [公開されているレート制限](https://docs.gitlab.com/user/gitlab_com/#rate-limits-on-gitlabcom)はすべての顧客とユーザーに例外なく適用されます。
 
 バイパスを求める顧客または内部チームは[レート制限バイパスポリシー](/handbook/engineering/infrastructure-platforms/rate-limiting/bypass-policy/)を参照してください。
 
-## トラフィック管理レート制限
+## トラフィック管理レート制限 {#traffic-management-rate-limits}
 
-### Cloudflare
+### Cloudflare {#cloudflare}
 
-Cloudflare は、受信トラフィックのネットワークエッジに位置する「最外層」の保護として機能します。私たちは Cloudflare の標準的な DDoS（分散型サービス拒否）保護と、SSH 経由の git を保護するための [Spectrum](https://www.cloudflare.com/en-us/application-services/products/cloudflare-spectrum/) を使用しています。
+Cloudflare は、受信トラフィックのネットワークエッジに位置する「最外層」の保護として機能します。私たちは Cloudflare の標準的な DDoS（分散型サービス拒否）保護と、SSH 経由の git を保護するための [Spectrum](https://www.cloudflare.com/en-us/application-services/products/cloudflare-spectrum/)を使用しています。
 
 Cloudflare でのレート制限の適用方法:
 
@@ -141,7 +141,7 @@ Gitlab.com ページルール
 </th>
 <td>
 
-- [config-mgmt](https://ops.gitlab.net/gitlab-com/gl-infra/config-mgmt/-/blob/main/environments/gprd/cloudflare-pagerules.tf) の Terraform で設定されています。
+- [config-mgmt](https://ops.gitlab.net/gitlab-com/gl-infra/config-mgmt/-/blob/main/environments/gprd/cloudflare-pagerules.tf)の Terraform で設定されています。
 - URL パターンマッチング。
 - Cloudflare の DDoS 介入とキャッシング（バイパス、セキュリティレベルなど）を制御します。
 - デフォルトではレート制限は設定されていませんが、攻撃を受けている時に有効にできます
@@ -181,7 +181,7 @@ Cloud Connector レート制限
 
 </table>
 
-**注:** Cloudflare はアプリケーションを認識しておらず、ユーザーとグループへのマッピング方法を知りません。
+**注：** Cloudflare は _アプリケーションを認識しておらず_、ユーザーとグループへのマッピング方法を知りません。
 
 Cloudflare はまた、以下からの一部のリクエストに `X-GitLab-Rate-Limit-Bypass` ヘッダーを適用する責任があります:
 
@@ -193,17 +193,17 @@ Cloudflare はまた、以下からの一部のリクエストに `X-GitLab-Rate
 
 [Cloudflare ランブック](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/cloudflare/)には、このインフラレイヤーの設定に関する詳細が含まれています。
 
-Cloudflare レート制限の変更には[変更リクエスト](../change-management/#change-request-workflows)が必要であり、実装前に[プロダクションエンジニアリング::ネットワーキング & インシデント管理](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new?issuable_template=request-rate-limiting) SRE チームと議論する必要があります。
+Cloudflare レート制限の変更には[変更リクエスト](../change-management/#change-request-workflows)が必要であり、実装前に[Production Engineering::Networking & Incident Management](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new?issuable_template=request-rate-limiting) SRE チームと議論する必要があります。
 
-### HAProxy
+### HAProxy {#haproxy}
 
-GitLab のトラフィック管理レート制限の大部分は HAProxy から Cloudflare に移行されています（詳細については[機密 Issue](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/24699) を参照してください）。
+GitLab のトラフィック管理レート制限の大部分は HAProxy から Cloudflare に移行されています（詳細については[機密 Issue](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/24699)を参照してください）。
 
 ただし、HAProxy はそのコンポーネントが Cloudflare でフロントされていないため、レジストリのレート制限を引き続き担当しています。詳細については [レジストリ](#registry)を参照してください。
 
 現在 HAProxy は、限られた数の特殊なパスに `X-GitLab-Rate-Limit-Bypass` を適用することも担当しています。リストは[ここ](https://gitlab.com/gitlab-cookbooks/gitlab-haproxy/-/blob/master/templates/default/frontends/https.erb?ref_type=heads#L40-43)にあります。このロジックを Cloudflare に移行する[作業が進行中](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/26205)です。
 
-## アプリケーションレート制限
+## アプリケーションレート制限 {#application-rate-limits}
 
 アプリケーションがユーザー情報へのアクセスを持つため、Cloudflare で実装されたものと比較してより情報に基づいたトラフィック管理を可能にする複数のアプリケーションレート制限メカニズムが実装されています:
 
@@ -213,7 +213,7 @@ GitLab のトラフィック管理レート制限の大部分は HAProxy から 
 
 アプリケーション制限を GitLab に貢献するには[アプリケーション制限開発](https://docs.gitlab.com/ee/development/application_limits.html)を参照してください。
 
-### 概要
+### 概要 {#overview-1}
 
 レート制限期間は 1 分（60 秒）です。
 
@@ -272,17 +272,17 @@ IP アドレス
 
 </table>
 
-### RackAttack
+### RackAttack {#rackattack}
 
-GitLab は Rack リクエストをスロットリングするミドルウェアとして [RackAttack](https://docs.gitlab.com/ee/development/application_limits.html#implement-rate-limits-using-rackattack) を利用しています。これらは `Gitlab::RackAttack` と `Gitlab::RackAttack::Request` を拡張することで設定できます。
+GitLab は Rack リクエストをスロットリングするミドルウェアとして [RackAttack](https://docs.gitlab.com/ee/development/application_limits.html#implement-request-rate-limits-with-labkit)を利用しています。これらは `Gitlab::RackAttack` と `Gitlab::RackAttack::Request` を拡張することで設定できます。
 
 GitLab インスタンスのレート制限設定の詳細については、[ユーザーおよび IP レート制限](https://docs.gitlab.com/ee/administration/settings/user_and_ip_rate_limits.html)のドキュメントを参照してください。
 
 [GitLab.com 固有のレート制限](https://docs.gitlab.com/user/gitlab_com/#rate-limits-on-gitlabcom)に関する詳細情報と、[ランブック](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/rate-limiting#application-rackattack)での RackAttack 設定ドキュメントを読むことができます。
 
-### ApplicationRateLimiter
+### ApplicationRateLimiter {#applicationratelimiter}
 
-GitLab アプリケーションは、Rack Attack が提供できる以上の柔軟性が必要な場合に使用される、特定のアクションをスロットリングできるシンプルなレート制限ロジックを持っており、コントローラーまたは API レベルでスロットリングできます。これらのレート制限は [application_rate_limiter.rb](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/application_rate_limiter.rb) で設定されています。スコープは個々の制限実装次第で、任意の ActiveRecord オブジェクトまたは複数の組み合わせにできます。一般的にはユーザーごとまたはプロジェクトごと（または両方）ですが、例えば RawController のようにプロジェクトとパスでも制限できます。
+GitLab アプリケーションは、Rack Attack が提供できる以上の柔軟性が必要な場合に使用される、特定のアクションをスロットリングできるシンプルなレート制限ロジックを持っており、コントローラーまたは API レベルでスロットリングできます。これらのレート制限は [application_rate_limiter.rb](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/application_rate_limiter.rb)で設定されています。スコープは個々の制限実装次第で、任意の ActiveRecord オブジェクトまたは複数の組み合わせにできます。一般的にはユーザーごとまたはプロジェクトごと（または両方）ですが、例えば RawController のようにプロジェクトとパスでも制限できます。
 
 これらのレート制限をバイパスする方法はありません（特定のユーザー/グループ/プロジェクトに対しても）。レート制限に達すると、レート制限ヘッダーなしに 429 ステータスコードのプレーンレスポンスが発行されます。
 
@@ -290,9 +290,9 @@ GitLab アプリケーションは、Rack Attack が提供できる以上の柔�
 
 GitLab に新しいレート制限を導入する詳細については、[製品プロセスハンドブック](/handbook/product/product-processes/#introducing-application-limits)ページを参照してください。
 
-## その他のレート制限
+## その他のレート制限 {#other-rate-limits}
 
-### GitLab Pages
+### GitLab Pages {#gitlab-pages}
 
 GitLab Pages は CloudFlare の背後になく CDN サポートもないため、レート制限は複数の場所で設定されています:
 
@@ -301,13 +301,13 @@ GitLab Pages は CloudFlare の背後になく CDN サポートもないため�
 
 詳細については [Pages レート制限ドキュメント](https://docs.gitlab.com/ee/administration/pages/index.html#rate-limits)を参照してください。
 
-### レジストリ
+### レジストリ {#registry}
 
-レジストリは Cloudflare でフロントされていません（理由の詳細については[機密 Issue](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/16468) を参照してください）。アプリケーションレベルの設定もありません（それを追加する[オープンな機能リクエスト](https://gitlab.com/gitlab-org/gitlab/-/issues/438690)はあります）。そのため、レジストリのレート制限が実装されている唯一の場所は [HAProxy 内](https://gitlab.com/gitlab-cookbooks/gitlab-haproxy/-/blob/master/templates/default/frontends/registry_https.erb)です。
+レジストリは Cloudflare でフロントされていません（理由の詳細については[機密 Issue](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/16468)を参照してください）。アプリケーションレベルの設定もありません（それを追加する[オープンな機能リクエスト](https://gitlab.com/gitlab-org/gitlab/-/issues/438690)はあります）。そのため、レジストリのレート制限が実装されている唯一の場所は [HAProxy 内](https://gitlab.com/gitlab-cookbooks/gitlab-haproxy/-/blob/master/templates/default/frontends/registry_https.erb)です。
 
 レジストリについては利用可能なレート制限の例外はありません。
 
-## ヘッダー
+## ヘッダー {#headers}
 
 半標準のレート制限応答ヘッダーのリストは[ここ](https://docs.gitlab.com/ee/administration/settings/user_and_ip_rate_limits.html#response-headers)にあります。
 
@@ -316,9 +316,9 @@ GitLab Pages は CloudFlare の背後になく CDN サポートもないため�
 - `ApplicationRateLimiter` はレート制限応答ヘッダーを返しません。
 - `GraphQL` エンドポイントは現在レート制限応答ヘッダーを返しません。
 
-レート制限応答ヘッダーの返却改善については[この Issue](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/25372) を参照してください。
+レート制限応答ヘッダーの返却改善については[この Issue](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/25372)を参照してください。
 
-## クライアントサイドのベストプラクティス
+## クライアントサイドのベストプラクティス {#client-side-best-practices}
 
 レート制限に達するリスクを最小化するために、以下を試すことができます:
 
@@ -338,11 +338,11 @@ GitLab Pages は CloudFlare の背後になく CDN サポートもないため�
     - レート制限されたリクエストの予期しない増加をログに記録してアラートを発します。
     - 適用可能な場合はレート制限のレスポンスとヘッダーを追跡します。
 
-## トラブルシューティング
+## トラブルシューティング {#troubleshooting}
 
 [レート制限トラブルシューティング](/handbook/engineering/infrastructure-platforms/rate-limiting/troubleshooting/)を参照してください。
 
-## 重要なリンク
+## 重要なリンク {#important-links}
 
 - [ドキュメント: GitLab.com](https://docs.gitlab.com/user/gitlab_com/#rate-limits-on-gitlabcom)
 - [ドキュメント: Self-Managed（および Dedicated）](https://docs.gitlab.com/ee/security/rate_limits.html)

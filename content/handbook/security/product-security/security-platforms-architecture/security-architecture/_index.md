@@ -1,17 +1,17 @@
 ---
 title: "セキュリティアーキテクチャ"
-description: "セキュリティアーキテクトは GitLab エンジニアリングの信頼されるセキュリティアドバイザーです。"
+description: "Security Architects は GitLab Engineering の信頼されるセキュリティアドバイザーです。"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/security-architecture/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:40:09Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T07:58:09.789578+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## チーム情報
+## チーム情報 {#team-information}
 
 - **チームページ**
   - [ハンドブックページ](/handbook/security/product-security/security-platforms-architecture/security-architecture/)
@@ -21,11 +21,11 @@ lastmod: "2026-03-04T12:15:15-08:00"
     - `#security-discuss`: チームと連絡を取るためのメインチャンネル
   - GitLab でのタグ: `@gitlab-com/gl-security/security-architecture`
 
-## 概要
+## 概要 {#overview}
 
-[Application Security Architects](/job-description-library/security/security-engineer#security-architect) は GitLab エンジニアリングの信頼されるセキュリティアドバイザーです。セキュリティアーキテクチャは、GitLab における広範な[アーキテクチャ](/handbook/engineering/architecture/) イニシアチブの自然な延長線上にあります。これは、セキュリティを考慮したソフトウェアを構築するための予備的かつ必要な作業です。
+[Application Security Architects](/job-description-library/security/security-engineer#security-architect)は GitLab Engineering の信頼されるセキュリティアドバイザーです。セキュリティアーキテクチャは、GitLab における広範な[アーキテクチャ](/handbook/engineering/architecture/) イニシアチブの自然な延長線上にあります。これは、セキュリティを考慮したソフトウェアを構築するための予備的かつ必要な作業です。
 
-## 目的
+## 目的 {#objectives}
 
 セキュリティアーキテクチャは、サイバー被害から組織を守り、現在および将来のビジネスニーズを以下の方法で支援します:
 
@@ -38,7 +38,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 このプロセスは、以下の制約を念頭に設計されています:
 
-- 私たちの[バリュー](/handbook/values/)に整合する
+- 私たちのバリューに整合する
 - 非同期である
 - 可能な限り[セルフサービス](/handbook/company/culture/all-remote/)である
 - ソフトウェア開発ライフサイクルにおいてボトルネックにならないようにする
@@ -46,7 +46,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 - 可能な限り自動化されている
 - 強力な注釈を伴った DRY である
 
-## アプリケーションセキュリティアーキテクチャの範囲
+## アプリケーションセキュリティアーキテクチャの範囲 {#scope-of-application-security-architecture}
 
 私たちのセキュリティ態勢に影響を及ぼすような、製品提供におけるあらゆる変更（機能、サービス、買収にかかわらず）。私たちのセキュリティ態勢は以下によって定義されます:
 
@@ -55,31 +55,31 @@ lastmod: "2026-03-04T12:15:15-08:00"
 - ソフトウェアアーキテクチャ
 - リファレンスアーキテクチャ
 
-2025 年 12 月時点で、不要なクロスチーム依存関係を削減するため、セキュリティアーキテクチャをプロダクトセキュリティ全体に分散化しました。
+2025 年 12 月時点で、不要なクロスチーム依存関係を削減するため、セキュリティアーキテクチャを Product Security 全体に分散化しました。
 
-- アプリケーションセキュリティアーキテクチャ（旧称「セキュリティアーキテクチャ」）は[セキュリティプラットフォームとアーキテクチャ](../../security-platforms-architecture/_index.md)内にあり、アプリケーション層の関心事に焦点を当てます
-- インフラストラクチャセキュリティアーキテクチャは[インフラストラクチャセキュリティ](../../infrastructure-security/_index.md)内にある新しい機能です
+- アプリケーションセキュリティアーキテクチャ（旧称「セキュリティアーキテクチャ」）は[Security Platforms and Architecture](../../security-platforms-architecture/_index.md)内にあり、アプリケーション層の関心事に焦点を当てます
+- インフラストラクチャセキュリティアーキテクチャは[Infrastructure Security](../../infrastructure-security/_index.md)内にある新しい機能です
 
-## セキュリティアーキテクチャ要件
+## セキュリティアーキテクチャ要件 {#security-architecture-requirements}
 
-### アプリケーションセキュリティ
+### Application Security {#application-security}
 
-アプリケーションセキュリティチームは、ソースコードのライフサイクル全体で従うべきガイドラインと要件を提供します:
+Application Security チームは、ソースコードのライフサイクル全体で従うべきガイドラインと要件を提供します:
 
 - [AppSec プロジェクトポリシー](../../security-platforms-architecture/application-security/inventory#policies)
 
-### InfraSec
+### InfraSec {#infrasec}
 
 <!-- Using this page until infrasec requirements are in the handbook -->
 
 - [開発とデプロイのためのセキュリティ要件](/handbook/security/planning/security-development-deployment-requirements/)
-- 追加のガイダンスについては、[インフラストラクチャセキュリティ](../../infrastructure-security/_index.md)にお問い合わせください
+- 追加のガイダンスについては、[Infrastructure Security](../../infrastructure-security/_index.md)にお問い合わせください
 
-### コンプライアンス
+### コンプライアンス {#compliance}
 
 - [GitLab 監査ログポリシー](/handbook/security/security-and-technology-policies/audit-logging-policy/)
 
-### 暗号化
+### 暗号化 {#cryptography}
 
 - 独自の暗号を作らないこと（これは私たちの[セキュリティアーキテクチャ原則](#security-architecture-principles)の 1 つでもあります）
 - [GitLab 暗号化標準](/handbook/security/policies_and_standards/cryptographic-standard/)を参照してください
@@ -95,7 +95,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 1. **最小権限**
 1. **ネットワーク分離**
 
-これらは、Software Systems Architecture（[references](#references) を参照）および [ACCU 2019 関連動画](https://www.youtube.com/watch?v=YbjoaMN67Hw)から取られた原則と共に以下に詳述されています。これらは [OWASP Security Design Principles](https://github.com/OWASP/DevGuide/blob/master/02-Design/01-Principles%20of%20Security%20Engineering.md) に非常に近いものですが、より理解しやすく適用しやすくなっています。
+これらは、Software Systems Architecture（[参考文献](#references)を参照）および [ACCU 2019 関連動画](https://www.youtube.com/watch?v=YbjoaMN67Hw)から取られた原則と共に以下に詳述されています。これらは [OWASP Security Design Principles](https://github.com/OWASP/DevGuide/blob/master/02-Design/01-Principles%20of%20Security%20Engineering.md)に非常に近いものですが、より理解しやすく適用しやすくなっています。
 
 <style>
 .security-architecture-principle {
@@ -106,27 +106,27 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 可能な限り最小権限を割り当てる{.security-architecture-principle}
+### 可能な限り最小権限を割り当てる{.security-architecture-principle #assign-the-least-privilege-possible}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why}
 
 広範な権限は、保護されたリソースへの悪意ある、または偶発的なアクセスを許してしまいます。
 
-#### どのように
+#### どのように {#how}
 
 - 割り当てられた操作を完了するために必要な最小レベルのアクセス権（権限）のみをユーザーやサービスに付与します。この権限は、操作の完了に必要な最小限の時間だけ付与しなければなりません。
 - アプリケーションアクセスに管理者アカウントを使用しない
 - 機密データには別アカウントを使用する
 
-#### 例
+#### 例 {#examples}
 
 - サービスプロセスは、必要な権限セットだけを持つ独自のユーザーで実行する
 - 更新が不要な場合は読み取り専用権限を付与する
 - 更新が必要な場合は、対象リソースのみにスコープを限定する
 
-#### リンク
+#### リンク {#links}
 
 - <https://owasp.org/www-community/Access_Control#principle-of-least-privilege>
 - <https://csrc.nist.gov/glossary/term/least_privilege>
@@ -137,28 +137,28 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 責任を分離する{.security-architecture-principle}
+### 責任を分離する{.security-architecture-principle #separate-responsibilities}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-1}
 
 攻撃が成功した場合のブラスト半径（影響範囲）を制限します: システムの一部が侵害されても、システム全体が侵害されないようにします。
 
 攻撃の魅力を低下させます。
 
-#### どのように
+#### どのように {#how-1}
 
 - 責任と権限を区分けする
-- 職務分離: 単一タスクの完了が 2 つ以上の条件に依存するようにする
+- 職務分掌: 単一タスクの完了が 2 つ以上の条件に依存するようにする
 - たとえ機密情報がフィルタリングされていても、設定などの非機密データと一緒に機密情報を保存しない
 
-#### 例
+#### 例 {#examples-1}
 
 - git コミットの読み取りのみを必要とするシステム/サービスは、ユーザーデータにアクセスできるべきではない
 - GitLab チームメンバーは課金データやその他の[赤データに分類された](/handbook/security/policies_and_standards/data-classification-standard/)ものへのアクセス権を持たない
 
-#### リンク
+#### リンク {#links-1}
 
 - [OWASP Access Control Models](https://owasp.org/www-community/Access_Control#access-control-models)
 - <https://en.wikipedia.org/wiki/Compartmentalization_%28information_security%29>
@@ -168,15 +168,15 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 慎重に信頼する{.security-architecture-principle}
+### 慎重に信頼する{.security-architecture-principle #trust-cautiously}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-2}
 
 - セキュリティ問題の多くは、通信経路に悪意ある中間者を挿入することによって引き起こされます
 
-#### どのように
+#### どのように {#how-2}
 
 - 未知のエンティティは信頼されていないと仮定する
 - 信頼を確立するための明確なプロセスを持つ
@@ -185,13 +185,13 @@ lastmod: "2026-03-04T12:15:15-08:00"
 - ネットワーク制御
 - サードパーティのコードを動的にロードしない
 
-#### 例
+#### 例 {#examples-2}
 
-- インターネットに公開されていないからといって、サービスがセキュアであるとは見なせません。[SSRF](https://en.wikipedia.org/wiki/Server-side_request_forgery) は、攻撃者がそれらに自由にアクセスすることを許す可能性があります。
-- ユーザーを認証する最善の方法は、この一般的なセキュリティ原則を適用することです: あなたが知っている何か（例: パスワード）と、あなたが所有する何か（例: 証明書）を提供する。これは MFA で適用しているもので、たとえばあなたが知っているパスワードと、アプリケーションによって生成される [TOTP](https://en.wikipedia.org/wiki/Time-based_one-time_password) を提供することで実現します。
-- 実行時にサードパーティのライブラリやスクリプトをダウンロードすると、キャッシュポイズニング、XSS など、多くのセキュリティ問題につながる可能性があります。外部アセットの完全性をチェックしないと、悪意のあるアクターがファイルを改ざんできてしまいます。たとえば、この [BGP ハイジャック](https://medium.com/s2wblog/post-mortem-of-klayswap-incident-through-bgp-hijacking-en-3ed7e33de600) の事例を参照してください
+- インターネットに公開されていないからといって、サービスがセキュアであるとは見なせません。[SSRF](https://en.wikipedia.org/wiki/Server-side_request_forgery)は、攻撃者がそれらに自由にアクセスすることを許す可能性があります。
+- ユーザーを認証する最善の方法は、この一般的なセキュリティ原則を適用することです: あなたが知っている何か（例: パスワード）と、あなたが所有する何か（例: 証明書）を提供する。これは MFA で適用しているもので、たとえばあなたが知っているパスワードと、アプリケーションによって生成される [TOTP](https://en.wikipedia.org/wiki/Time-based_one-time_password)を提供することで実現します。
+- 実行時にサードパーティのライブラリやスクリプトをダウンロードすると、キャッシュポイズニング、XSS など、多くのセキュリティ問題につながる可能性があります。外部アセットの完全性をチェックしないと、悪意のあるアクターがファイルを改ざんできてしまいます。たとえば、この [BGP ハイジャック](https://medium.com/s2wblog/post-mortem-of-klayswap-incident-through-bgp-hijacking-en-3ed7e33de600)の事例を参照してください
 
-#### リンク
+#### リンク {#links-2}
 
 - GitLab における [Zero Trust](/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust)
 
@@ -200,29 +200,29 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 可能な限り最もシンプルなソリューションを選ぶ{.security-architecture-principle}
+### 可能な限り最もシンプルなソリューションを選ぶ{.security-architecture-principle #simplest-solution-possible}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-3}
 
 - シンプルなソリューションはデプロイ、保守、セキュリティ確保が容易
-- 私たちの[イテレーション](/handbook/values/#iteration)と[効率性](/handbook/values/#efficiency)のバリューに整合する
+- 私たちのイテレーションと効率性のバリューに整合する
 - セキュリティには設計の理解が必要
 - 複雑性は指数関数的に増加する
 - ソフトウェアの攻撃可能性または攻撃面が削減される
 
-#### どのように
+#### どのように {#how-3}
 
 - 複雑な障害モード、暗黙の動作、不要な機能を避ける
 - よく知られた、テスト済み、実証済みのコンポーネントを使用する
-- オーバーエンジニアリングを避け、代わりに [MVC](/handbook/product/product-principles/#the-minimal-valuable-change-mvc) を目指す
+- オーバーエンジニアリングを避け、代わりに [MVC](/handbook/product/product-principles/#the-minimal-valuable-change-mvc)を目指す
 
-#### 例
+#### 例 {#examples-3}
 
 - GitLab に新しいサーバーを導入することは、Omnibus ビルド、Helm チャート、リファレンスアーキテクチャ、ドキュメントなどを更新することを意味します。これは、完璧にフィットしそうに見えるコンポーネントを追加することの利点と慎重にバランスを取るべきものです。
 
-#### リンク
+#### リンク {#links-3}
 
 - [Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
 - [Complexity and exponential change](https://nextconf.eu/2020/02/complexity-and-exponential-change/)
@@ -232,25 +232,25 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 機密性の高いイベントを監査する{.security-architecture-principle}
+### 機密性の高いイベントを監査する{.security-architecture-principle #audit-sensitive-events}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-4}
 
 - 活動の記録を提供する
 - 不正行為を抑止する
 - 過去を再構成するためのログを提供する
 - 監視ポイントを提供する
 
-#### どのように
+#### どのように {#how-4}
 
 - すべてのセキュリティ上重要なイベントを改ざん耐性のあるストアに記録する
 - すべての機密性の高いイベントについて通知を提供する
 
-#### 例
+#### 例 {#examples-4}
 
-- AWS で [GuardDuty](https://aws.amazon.com/guardduty/) を有効化する、または GCP で [Cloud Audit Logs](https://cloud.google.com/logging/docs/audit?hl=en) を有効化して、活動を記録し悪意ある意図を検出する。
+- AWS で [GuardDuty](https://aws.amazon.com/guardduty/)を有効化する、または GCP で [Cloud Audit Logs](https://cloud.google.com/logging/docs/audit?hl=en)を有効化して、活動を記録し悪意ある意図を検出する。
 - SIEM（gitlab.com の場合は Devo）を活用してログを収集、正規化、分析する。
 - 以下のような場合にユーザーに通知を提供する:
   - アカウントへの変更
@@ -260,36 +260,36 @@ lastmod: "2026-03-04T12:15:15-08:00"
   - コンポーネント署名が一致しない
   - 機密性の高いリソースへの不正アクセス
 
-#### リンク
+#### リンク {#links-4}
 
 </details>
 
 <details>
 <summary>
 
-### 安全に失敗し、安全なデフォルトを使用する{.security-architecture-principle}
+### 安全に失敗し、安全なデフォルトを使用する{.security-architecture-principle #fail-securely--use-secure-defaults}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-5}
 
 - デフォルトのパスワード、ポート、ルールは「開いたドア」である
 - 障害状態や再起動状態はしばしばデフォルトで「安全でない」状態になる
 
-#### どのように
+#### どのように {#how-5}
 
 - セキュリティ上機密性の高いパラメーターの変更を強制する
 - 安全でありながら回復可能であるよう、障害について十分に考える
 - サブジェクトがオブジェクトへの明示的なアクセス権を与えられない限り、そのオブジェクトへのアクセスは拒否されるべき。これは Fail Safe Defaults と呼ばれます。
 
-#### 例
+#### 例 {#examples-5}
 
 - 無効/期限切れの TLS 証明書を信頼しない
 - Grafana のような一部のコンポーネントは[デフォルトの `admin/admin` ユーザー/パスワード](https://grafana.com/docs/grafana/v7.5/administration/configuration/#security)で提供される。
-- 上記に関連して、一部のコンポーネントは、サービスが到達不能な状態など特定の条件下で、デフォルト認証情報による平文のユーザー/パスワード認証にフォールバックすることがある。
+- 上記に関連して、一部のコンポーネントは、サービスが到達不能な状態など特定の条件下で、デフォルト認証情報による単純なユーザー名/パスワード認証にフォールバックすることがある。
 - 一部のフレームワークは、リソースに接続できない場合、ホスト名やパスなど共有すべきでない詳細情報を含むエラーページをレンダリングする傾向がある。
 
-#### リンク
+#### リンク {#links-5}
 
 - https://owasp.org/www-community/Fail_securely
 
@@ -298,26 +298,26 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 隠蔽に決して頼らない{.security-architecture-principle}
+### 隠蔽に決して頼らない{.security-architecture-principle #never-rely-upon-obscurity}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-6}
 
 - 隠すことは難しく、誰かが偶然または意図的に見つけてしまう
-- 私たちは非常に[透明性](/handbook/values/#transparency)の高い会社であり、実装の詳細を共有することが多く、ときおり機密情報を漏らしてしまう可能性がある。
+- 私たちは非常に透明性の高い会社であり、実装の詳細を共有することが多く、ときおり機密情報を漏らしてしまう可能性がある。
 - オフボーディングされた従業員は機密情報の知識を持って去ります。トークンはローテーションできますが、その知識が漏洩しないことを保証することはできません
 
-#### どのように
+#### どのように {#how-6}
 
 - 完全な知識を持つ攻撃者を想定する
 
-#### 例
+#### 例 {#examples-6}
 
 - 偵察により、攻撃者は公にドキュメント化されていないサーバーを見つけることができます。これらのサーバーは脆弱なコンポーネントを公開し、東西方向への侵害につながる可能性があります。
 - 管理者セクションへのパスを変更しても、攻撃者が最終的にそれを見つけることを防ぐことはできません。
 
-#### リンク
+#### リンク {#links-6}
 
 - <https://securitytrails.com/blog/security-through-obscurity>
 
@@ -326,17 +326,17 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 多層防御を実装する{.security-architecture-principle}
+### 多層防御を実装する{.security-architecture-principle #implement-defense-in-depth}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-7}
 
 - システムは攻撃される、侵害は発生する、ミスは起きる
 - ブラスト半径を最小化する: 1 つのコンポーネントが侵害されても、システム全体を侵害してはならない
-- [SSRF](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/) を防ぐ
+- [SSRF](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)を防ぐ
 
-#### どのように
+#### どのように {#how-7}
 
 - セキュリティの単一ポイント/レイヤーに依存しない:
   - すべてのレベルを保護する
@@ -345,14 +345,14 @@ lastmod: "2026-03-04T12:15:15-08:00"
 - 脆弱性スキャナーを使用する
 - 不要なポートを閉じ、未使用機能を無効化する
 
-#### 例
+#### 例 {#examples-7}
 
 - リソースは UI からアクセスする場合は十分に保護されているが、API を通じてはより露出される可能性がある。
 - ブルートフォース攻撃を回避するために、試行回数が多すぎる場合にアカウントをロックする。
 - OS 実行は、実行がアプリケーションの外部で発生するため、すべてのアプリケーションセキュリティレイヤーをバイパスすることにつながる可能性がある。
 - 不要な開放ポートと有効化された機能は、認証バイパスやその他の脆弱性につながる可能性がある。これらはアプリケーションの露出を増加させる。
 
-#### リンク
+#### リンク {#links-7}
 
 - <https://en.wikipedia.org/wiki/Defense_in_depth_(computing)>
 - GitLab における [Zero Trust](/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust)
@@ -362,27 +362,27 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### セキュリティ技術を決して発明しない{.security-architecture-principle}
+### セキュリティ技術を決して発明しない{.security-architecture-principle #never-invent-security-technology}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-8}
 
 - セキュリティ技術を作ることは難しく、脆弱性を回避することも難しい
 - 新しいセキュリティ技術をセキュアで成熟したものにするには何年もかかる
 - それらは（ある意味）完璧であることが期待される
 
-#### どのように
+#### どのように {#how-8}
 
 - [独自の暗号を作らないこと]
 - よく知られた実証済みのコンポーネントを使用する
 - 疑わしい場合は、常に適切な SME を関与させる
 
-#### 例
+#### 例 {#examples-8}
 
 - SSO をスクラッチから実装しないこと
 
-#### リンク
+#### リンク {#links-8}
 
 - [レインボーテーブル](https://en.wikipedia.org/wiki/Rainbow_table)は暗号化ハッシュ関数の出力をキャッシュするために使用され、パスワードハッシュをクラッキングするのに使用できる。
 - [bcrypt のデフォルトコストファクターの危険性](https://labs.clio.com/bcrypt-cost-factor-4ca0a9b03966): 有名な暗号ライブラリを使用していても、その設定が脆弱性につながる可能性がある。
@@ -392,16 +392,16 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <details>
 <summary>
 
-### 最も弱いリンクを見つける{.security-architecture-principle}
+### 最も弱いリンクを見つける{.security-architecture-principle #find-the-weakest-link}
 
 </summary>
 
-#### なぜ
+#### なぜ {#why-9}
 
 - システムは最も弱いリンクと同じ強度しかない
 - 時間の経過とともに新しい脆弱性が発見され、コンポーネントが突然新しい弱いリンクになる可能性がある
 
-#### どのように
+#### どのように {#how-9}
 
 - システムを[脅威モデリング](../../security-platforms-architecture/application-security/threat-modeling)し、繰り返し、イテレーションする。
 - 中央のコンポーネントを特定する:
@@ -412,21 +412,21 @@ lastmod: "2026-03-04T12:15:15-08:00"
 - 弱い暗号やアルゴリズムを避ける
 - ときには人間（ユーザー）を最も弱いリンクと考える。フィッシングが今も広く使用されているのには理由がある
 
-#### 例
+#### 例 {#examples-9}
 
 - 一部のリソースは UI で非常に十分に保護されており、認可されていないユーザーには決して公開されません。しかし、API がセキュリティ制御を正しく実装していない場合、これらのリソースが機密データをフィルタリングせずに生のモデルとして渡される可能性があります。
 - 転送時には暗号化されているが、保存時には暗号化されていないデータ。
 - 最も弱いリンクはユーザーである場合もあります。強力なパスワードと MFA を強制しないことは機密データの露出につながる可能性がありますが、ユーザーは気づかずに有害な行動を取ることもあります。
-- OS（システム）コマンドは、アプリケーションのセキュリティ制御の大部分、あるいはすべてをバイパスすることにつながることが多いです。これは [RCE](https://en.wikipedia.org/wiki/Arbitrary_code_execution) の一般的なベクターであり、可能な限り避けるべきです。
+- OS（システム）コマンドは、アプリケーションのセキュリティ制御の大部分、あるいはすべてをバイパスすることにつながることが多いです。これは [RCE](https://en.wikipedia.org/wiki/Arbitrary_code_execution)の一般的なベクターであり、可能な限り避けるべきです。
 
-#### リンク
+#### リンク {#links-9}
 
 - [ExifTool でメタデータを削除する際の RCE](https://gitlab.com/gitlab-org/gitlab/-/issues/327121)
 - [Log4Shell: 人気の Java ロギングパッケージ log4j 2 で発見された RCE 0-day エクスプロイト](https://en.wikipedia.org/wiki/Log4Shell)
 
 </details>
 
-## 結果の測定
+## 結果の測定 {#measuring-results}
 
 TODO（https://gitlab.com/gitlab-com/gl-security/product-security/security-architecture/general/-/issues/49 で議論中）
 

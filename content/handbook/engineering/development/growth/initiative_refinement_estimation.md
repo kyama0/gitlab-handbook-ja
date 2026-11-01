@@ -2,14 +2,14 @@
 title: Growth マイルストーン計画・リファインメント・見積もり
 description: "Growth チームの継続的リファインメントプロセスと見積もりガイドライン"
 upstream_path: "/handbook/engineering/development/growth/initiative_refinement_estimation/"
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-translated_at: "2026-10-19T10:19:40Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:53:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-14T13:54:16-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## マイルストーン計画フェーズ
+## マイルストーン計画フェーズ {#milestone-planning-phase}
 
 Growth はマイルストーン計画を軸にした継続的フローモデルで運営しています。マイルストーン計画 Issue は、優先事項、オーナーシップ、タイムラインを調整するための中央調整ハブとして機能します。
 
@@ -21,7 +21,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 - 理想的には、ターゲットマイルストーンに割り当てられた Issue はマイルストーン開始前にデザインステージをクリアしているべきです。これにより、エンジニアリングが確信を持って成果物のスコープを計画できます。市場のコミットメントによってデザインが完了する前にターゲットマイルストーンをロックする必要がある場合は、例外として扱います。
 - EM はターゲットマイルストーンの開始日にマイルストーンキックオフミーティングを開催します。エンジニアは事前にマイルストーン Issue をレビューし、関心、キャパシティ、複雑さに基づいて [DRI](./engineering_dri.md)として自己割り当てすることが期待されます。キックオフはアサインメントセッションではなく、業務開始前のブロッカー、依存関係、未解決の質問を表面化するためのディスカッションフォーラムです。
 
-## 実行フェーズ
+## 実行フェーズ {#execution-phase}
 
 - DRI は Issue 全体の業務を調整し、依存関係を管理し、ブロッカーを即座にフラグ付けします
 - 完全な開発プロセスは[業務進行ガイドライン](#work-progression-guidelines)に従います
@@ -30,7 +30,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 - ボットはマイルストーン計画 Issue に業務完了、進行中、ブロック、リスク、ベロシティを示す週次進捗更新を投稿します
 - レトロスペクティブのフィードバックは、個別のレトロスペクティブ Issue ではなく、マイルストーン計画 Issue のスレッドで収集されます
 
-### 2 つの業務取り込みモード {.h5}
+### 2 つの業務取り込みモード {#two-modes-of-work-intake .h5}
 
 マイルストーンの開始時までに、計画された業務のすべてが `Ready for Development` に到達するとは限りません。Issue はデザインとリファインメントを完了するたびに引き続き追加されます。そのため、マイルストーン中は 2 つのモードで運営します。
 
@@ -45,7 +45,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 1. [Growth - 機能開発](https://gitlab.com/groups/gitlab-org/-/boards/11511990) - Driving First Orders の機能開発（`type::feature`）。PM がこのボードの優先順位を付けます。
 1. [Growth - Product Foundations](https://gitlab.com/groups/gitlab-org/-/boards/11512114?or%5Blabel_name%5D%5B%5D=type%3A%3Amaintenance&or%5Blabel_name%5D%5B%5D=type%3A%3Abug&or%5Blabel_name%5D%5B%5D=Category%3AEngineering%20Excellence&or%5Blabel_name%5D%5B%5D=Engineering%20Time&label_name[]=section%3A%3Agrowth&milestone_title=Started) - バグ（`type::bug`）、技術的負債（`type::maintenance`）、[Engineering Time](/handbook/engineering/#engineering-initiatives)／Engineering Excellence の作業。EM と Staff+ エンジニアがこのボードの優先順位を付け、バグには[バグの優先順位付け](/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization/)と[重大度 SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)を使用します。
 
-## マイルストーンクローズフェーズ
+## マイルストーンクローズフェーズ {#milestone-closure-phase}
 
 - ボットは成果を集約し、ベロシティメトリクス（サイクルタイム、完了率など）を生成し、効率性分析とともに未完了の業務を次のマイルストーンに自動転送します
 - ボットはスピルオーバーを管理し、まだオープンな Issue にマイルストーン不達ラベルを追加して次のマイルストーンに移動させます
@@ -53,12 +53,12 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 
 ## 業務進行ガイドライン {#work-progression-guidelines}
 
-### 問題の検証 {.h5}
+### 問題の検証 {#problem-validation .h5}
 
 - Product Manager は問題が明確に定義され、解決する価値があり、ブロッカーがないことを検証します
 - Product Manager はエピック/Issue のステータスを `Ready for Design` に変更します
 
-### デザイン中 {.h5}
+### デザイン中 {#in-design .h5}
 
 - Product Designer は必要なデザインを作成するためにエピック配下に Issue を作成します
 - デザイナーはデザインをイテレーションして早期フィードバックを収集します：
@@ -68,7 +68,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 - スコープが明確になりディスカッションが解決されたら、デザイナー/PM は Issue を `Planning Breakdown` ステータスに変更します
 - デザイン Issue がない場合、Product Manager は[実験実装](https://gitlab.com/gitlab-org/gitlab/-/Issues/new?description_template=Experiment%20Implementation)または[実装](https://gitlab.com/gitlab-org/gitlab/-/Issues/new?description_template=Implementation)テンプレートを使用してシンプルな実装 Issue を作成し、`Planning Breakdown` ステータスに進みます
 
-### リファインメント {.h5}
+### リファインメント {#refinement .h5}
 
 リファインメントという名前ですが、これは計画を細分化し、エンジニアリングの実現可能性を検討するステップであり、単に重みに投票することではありません。チームが、技術的なアプローチ、依存関係、リスク、スコープが適切かどうかといった、Issue を実際に*どのように*実装するかを検討する場です。実際の進め方については、[リファインメントへのチームの参加](#team-participation-in-refinement)を参照してください。重みの見積もりは、この分析の*結果*であり、目的ではありません。
 
@@ -92,7 +92,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 - MR がマージされ MR の変更が本番にデプロイされたら、Issue のステータスが `Verification` に変更されます
 - Issue の重みが未設定のままリファインメント後のステータス（`Ready for development`、`In dev`、`In review`、`Verification`、`Blocked`、または `Complete`）に移動された場合、トリアージボットは Issue を移動した人に、[見積もりガイドライン](#estimation-guidelines)に従って重みを割り当てるよう通知します。
 
-### 検証 {.h5}
+### 検証 {#verification .h5}
 
 - Engineering DRI が適切な検証レベルを決定します。シンプルな完了の場合は PM にメンションしてクローズするか、複雑な変更については正式な PM 検証をリクエストします。
 
@@ -108,7 +108,7 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 | 5      | 3-4 週間            | コードベースの複数の領域に影響を与えるより複雑な変更。リファクタリングも含まれる場合があります。要件は理解されていますが、途中でいくつかのギャップが生じる可能性があります。 |
 | 5+     | 4 週間+            | 依存関係（他のチームまたはサードパーティ）がある可能性があり、すべての要件をまだ理解していない大きな変更。マイルストーンでこれをコミットするのは難しく、要件をさらに明確にするか、より小さな Issue に分割することが望ましいです。 |
 
-計画と見積もりにおいて、私たちは[予測可能性よりもベロシティ](/handbook/engineering/development/principles/#velocity)を重視します。計画と見積もりの主な目標は、[MVC](/handbook/values/#minimal-valuable-change-mvc)に焦点を当て、盲点を発見し、過度に最適化することなく基本的な予測可能性を達成することです。90% ではなく 70% の予測可能性を目指します。ベロシティ（マージリクエスト率）の最適化が Growth チームの[週次実験カデンス](/handbook/product/groups/growth/#weekly-growth-meeting)達成を可能にすると考えています。
+計画と見積もりにおいて、私たちは[予測可能性よりもベロシティ](/handbook/engineering/development/principles/#velocity)を重視します。計画と見積もりの主な目標は、MVC に焦点を当て、盲点を発見し、過度に最適化することなく基本的な予測可能性を達成することです。90% ではなく 70% の予測可能性を目指します。ベロシティ（マージリクエスト率）の最適化が Growth チームの[週次実験カデンス](/handbook/product/groups/growth/#weekly-growth-meeting)達成を可能にすると考えています。
 
 - Issue に多くの未知事項があり、1 か 5 かが不明な場合は、慎重に高め（5）で見積もります。
 - Issue に多くの未知事項がある場合は、2 つの Issue に分割できます。最初の Issue は未知事項のリスクを軽減し潜在的なソリューションを探る調査（[スパイク](<https://en.wikipedia.org/wiki/Spike_(software_development)>)とも呼ばれる）のためです。2 番目の Issue は実装のためです。
@@ -124,13 +124,13 @@ Growth はマイルストーン計画を軸にした継続的フローモデル�
 
 現在、チームは ~"Growth::Driving First Orders" ラベルの付いた業務を優先すべきです。これらは即時対応が必要な高優先度の項目です。
 
-## Issue のシーケンス
+## Issue のシーケンス {#issue-sequencing}
 
 Issue の実装順序とブロッキングの概念を伝えるために、[ブロッキング Issue リンク機能](https://docs.gitlab.com/ee/user/project/Issues/related_Issues.html#blocking-Issues)を活用します。
 
 ディスカッションの詳細は https://gitlab.com/gitlab-org/growth/team-tasks/-/Issues/752 を参照してください。
 
-## Issue とエピックのラベリング
+## Issue とエピックのラベリング {#labelling-issues--epics}
 
 私たちはマイルストーン全体の Issue の進捗を追跡するためにワークフローボードを使用します。ワークフローボードは、グループ内のネストされたすべてのプロジェクトへの可視性のために最上位グループレベルで表示されるべきです。
 

@@ -2,16 +2,16 @@
 title: 休暇の理念
 description:  このページでは、休暇に対する GitLab の理念、コミュニケーションガイドライン、およびすべての休暇管理の主要システムである Workday に関する情報を説明します。
 upstream_path: /handbook/people-group/time-off-and-absence/time-away-philosophy/
-upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
-translated_at: "2026-09-15T21:56:59Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:41:09+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 業務から離れることに対する GitLab の理念
+## 業務から離れることに対する GitLab の理念 {#gitlabs-philosophy-to-time-away-from-work}
 
-### なぜ休暇は重要なのか
+### なぜ休暇は重要なのか {#why-time-away-matters}
 
 業務から離れることは、単に有益というだけでなく、あなたの労働倫理と同じくらい重要であり、生産性に貢献できます。GitLab では、業務からの定期的な休息が以下を含む複数の重要な目的を果たすことを理解しています:
 
@@ -19,15 +19,15 @@ lastmod: "2026-09-13T04:09:59-04:00"
 - 創造性と問題解決能力をリフレッシュする
 - 個人的な関係と家族の絆を強化する
 - あなたの貢献を高める新しい視点を得る
-- 持続可能で [効率的](/handbook/values/#efficiency) かつ成果重視のパフォーマンスへの私たちのコミットメントを示す
+- 持続可能で効率的かつ成果重視のパフォーマンスへの私たちのコミットメントを示す
 
-GitLab は、マネージャーとリーダーシップに対し、必要なときに休暇を取り、レポートも同じことをするよう促すことで模範を示し、すべてのレベルで健全なワークライフバランスを育むことを奨励しています。
+GitLab は、マネージャーとリーダーシップに対し、必要なときに休暇を取り、直属の部下も同じことをするよう促すことで模範を示し、すべてのレベルで健全なワークライフバランスを育むことを奨励しています。
 
-休暇から戻ると、あなたは新たなエネルギーと新鮮な視点を持ってきて、あなた自身と GitLab の両方に利益をもたらします。これにより、休暇は個人的にリストアティブであるだけでなく、これまでで最高の仕事をする準備となります！
+休暇から戻ると、あなたは新たなエネルギーと新鮮な視点を持ってきて、あなた自身と GitLab の両方に利益をもたらします。これにより、休暇は個人の回復に役立つだけでなく、これまでで最高の仕事をする準備となります！
 
-### 成果と持続可能性の文化
+### 成果と持続可能性の文化 {#a-culture-of-results-and-sustainability}
 
-GitLab では、[活動ではなくインパクトを](/teamops/measurement-clarity/#measure-impact-not-activity) 測定します。私たちの休暇への取り組みはこの基本的な価値観を反映しています。
+GitLab では、[活動ではなくインパクトを](/teamops/measurement-clarity/#measure-impact-not-activity)測定します。私たちの休暇への取り組みはこの基本的な価値観を反映しています。
 
 - **柔軟な勤務時間** とは、必要なときに罪悪感なく離れることができることを意味します。
 - ジムに行く、昼寝をする、食料品の買い物、愛する人を助けるなどの **通常の生活活動** は、通常のワークライフ統合の一部です。
@@ -45,48 +45,48 @@ GitLab では、[活動ではなくインパクトを](/teamops/measurement-clar
 
 休暇をどう過ごすかも重要だと考えています:
 
-- **健康とウェルビーイング** が第一 — 枯渇するまで待つのではなく、身体的および精神的健康のニーズに対して、proactive に休暇を取ることを推奨します。健康を大事にすることは、休暇の正当かつ重要な理由です。
-- **祝日** — すべてのチームメンバーに祝日残高を使用するよう奨励し、[ダイバーシティ、インクルージョン & ビロンギング](/handbook/values/#values-competencies) を重視する企業として、チームメンバーは異なる日付を選択して自分にとって重要なものを祝う柔軟性があります。
+- **健康とウェルビーイング** が第一 — 枯渇するまで待つのではなく、身体的および精神的健康のニーズに対して、積極的に休暇を取ることを推奨します。健康を大事にすることは、休暇の正当かつ重要な理由です。
+- **祝日** — すべてのチームメンバーに祝日残高を使用するよう奨励し、ダイバーシティ、インクルージョン & ビロンギングを重視する企業として、チームメンバーは異なる日付を選択して自分にとって重要なものを祝う柔軟性があります。
 - **長期の休息** を推奨 — 年間を通じて休暇を取り、休息とリチャージを行うとともに、マネージャーとコミュニケーションし、休息中のカバレッジ計画を立てることを推奨します。
 - **コミュニティへの関与** は価値があります — [ボランティア活動](/handbook/people-group/givelab-volunteer-initiatives/)、投票、または GitLab の価値観に合致する大義の支援など。
 
-### マインドフルに復帰する
+### マインドフルに復帰する {#transitioning-back-mindfully}
 
 休暇から戻ることは圧倒されるように感じる可能性がありますが、業務への戻り方は、離れる際と同じくらい重要です。休暇の利益を保持するために、これらのアプローチを検討してください:
 
 - **移行期間を予想する** — 復帰後に追いつくのに時間が必要なのは普通です。休暇前後に余分な時間働くプレッシャーを感じないでください。
-- **意図と洞察を持って戻る** — 休暇から戻る際、すぐにすべてのメッセージに追いつきたい衝動に抵抗してください。代わりに、休息中に得た反省や洞察を、高インパクトの業務に適用することから始めます。John Fitch が示した [このアプローチ](/handbook/company/culture/all-remote/mental-health/#rest-and-time-off-are-productive) — プロジェクトで働く前にプロジェクトに取り組む — により、自然な調整期間を管理しながら、意味のある貢献ができます。戦術的な対応に飛び込む前に、戦略的思考やクリエイティブワークの時間をブロックすることを検討してください。
-- **意図的に再接続する** — 同僚との非公式な [コーヒーチャット](/handbook/company/culture/all-remote/informal-communication/#coffee-chats) をスケジュールして再接続し、経験を共有し、業務関係に戻ります。私たちのオールリモート環境では、これらのつながりには意図的な注意が必要です。
+- **意図と洞察を持って戻る** — 休暇から戻る際、すぐにすべてのメッセージに追いつきたい衝動に抵抗してください。代わりに、休息中に得た反省や洞察を、高インパクトの業務に適用することから始めます。John Fitch が示した [このアプローチ](/handbook/company/culture/all-remote/mental-health/#rest-and-time-off-are-productive) — プロジェクト内の作業に取り組む前に、プロジェクト自体の進め方を見直す — により、自然な調整期間を管理しながら、意味のある貢献ができます。戦術的な対応に飛び込む前に、戦略的思考やクリエイティブワークの時間をブロックすることを検討してください。
+- **意図的に再接続する** — 同僚との非公式な [コーヒーチャット](/handbook/company/culture/all-remote/informal-communication/#coffee-chats)をスケジュールして再接続し、経験を共有し、業務関係に戻ります。私たちのオールリモート環境では、これらのつながりには意図的な注意が必要です。
 
 業務への戻り方は、休暇の利益がどれだけ持続するかを決定します。マインドフルな移行により、休息と反省を進行中の業務に統合できます。すぐにそれらの利益を打ち消すのではなく。
 
-**注意:** *本ページは休暇に関する理念に焦点を当てていますが、すべての [休暇 (Time Off) の種類](/handbook/people-group/time-off-and-absence/time-off-types/)（PTO、Sick Time など）と [長期休暇 (Leave) の種類](/handbook/people-group/time-off-and-absence/leave-types/)（Parental Leave、Sick Leave など）の詳細ポリシーは、それぞれのハンドブックセクションで確認できます。*
+**注意:** *本ページは休暇に関する理念に焦点を当てていますが、すべての [休暇 (Time Off) の種類](/handbook/people-group/time-off-and-absence/time-off-types/)（PTO、Sick Time など）と [長期休暇 (Leave)の種類](/handbook/people-group/time-off-and-absence/leave-types/)（Parental Leave、Sick Leave など）の詳細ポリシーは、それぞれのハンドブックセクションで確認できます。*
 
-## 計画的な休暇のコミュニケーション（と準備）
+## 計画的な休暇のコミュニケーション（と準備） {#communicating--preparing-for-planned-time-away}
 
 GitLab では、リチャージのために時間を取ることを信じています。本ガイドは、コラボレーション、成果、効率、ダイバーシティ・インクルージョン & ビロンギング、イテレーション、透明性の価値観を維持しながら、休暇に備えるのに役立ちます。
 
-### コミュニケーションの要点
+### コミュニケーションの要点 {#communication-essentials}
 
 {{% details summary="タイムリーで透明性のあるコミュニケーション" %}}
 
-### タイムリーで透明性のあるコミュニケーション
+### タイムリーで透明性のあるコミュニケーション {#timely--transparent-communication}
 
 計画的な休暇について、マネージャーや一緒に働くと期待されるチームメンバーに、できる限り事前通知を提供することが期待されます。計画的な休暇（PTO、祝日、ボランティアタイムなど）をリクエストする場合、**計画的な不在の期間の少なくとも 2 倍の事前通知日数を提供** してください。たとえば、3 日間の不在には、少なくとも 6 営業日の事前通知が必要です。
 
 透明性の価値観に従い、不在となる時期を広く伝えてください。これにより、チームメンバーが効率的に時間を管理でき、プロジェクトが取りこぼされず、不在中に完全に切断できます。
 
-***重要な注意:*** 通知なしで 72 時間不在の場合、**job abandonment（職務放棄）** とみなされる可能性があります。
+***重要な注意:*** 通知なしで 72 時間不在の場合、**職務放棄** とみなされる可能性があります。
 
 {{% /details %}}
 
 {{% details summary="コミュニケーションチェックリスト" %}}
 
-### コミュニケーションチェックリスト
+### コミュニケーションチェックリスト {#communication-checklist}
 
-- 不在期間を含む Gmail 自動応答 (out-of-office) を設定し、不在中の連絡先を特定する。
+- 不在期間を含む Gmail の不在時の自動応答を設定し、不在中の連絡先を特定する。
 - 計画的な休暇を、チームの Slack チャンネルで FYI として共有することを検討する。特にチームを率いる場合。
-- 不在中に未処理のアイテムについてチームに通知するため、Slack で [リマインダーメッセージをスケジュール](https://slack.com/help/articles/201457107-Send-and-read-messages) する
+- 不在中に未処理のアイテムについてチームに通知するため、Slack で [リマインダーメッセージをスケジュール](https://slack.com/help/articles/201457107-Send-and-read-messages)する
 - PTO 前の最終勤務日に、割り当てられたすべての MR レビューを確認する。各レビューについて、時間があればレビューを完了するか、PTO 日程と復帰予定のコメントを残すか、他の利用可能なレビュー担当者に再割り当てする。
 - チームに特定のスケジュールカレンダーがある場合、休暇計画で更新する。
 
@@ -94,21 +94,21 @@ GitLab では、リチャージのために時間を取ることを信じてい�
 
 {{% details summary="カレンダーとミーティングの管理" %}}
 
-### カレンダーとミーティングの管理
+### カレンダーとミーティングの管理 {#calendar-and-meeting-management}
 
-- 休暇エントリは Time Off by Deel に流れ、Google カレンダーおよび Slack アプリと同期しますが、参加しないミーティングは依然として辞退する必要があります。これによりオーガナイザーは適切な手配ができます。
+- 休暇エントリは Time Off by Deel に流れ、Google Calendar および Slack アプリと同期しますが、参加しないミーティングは依然として辞退する必要があります。これによりオーガナイザーは適切な手配ができます。
 - 自分が主催するミーティングをキャンセル、移動、またはカバレッジを見つける。
-- インタビュアーの場合、予定されているインタビューに対応するためカレンダーを確認する。[こちらのハンドブックページ](/handbook/hiring/interviewing/#tips-for-keeping-your-google-calendar-up-to-date) を確認し、リクルーターと CES パートナーと協力して、再スケジュールするか、代替のインタビュアーを見つけてください。
+- インタビュアーの場合、予定されているインタビューに対応するためカレンダーを確認する。[こちらのハンドブックページ](/handbook/hiring/interviewing/#tips-for-keeping-your-google-calendar-up-to-date)を確認し、リクルーターと CES パートナーと協力して、再スケジュールするか、代替のインタビュアーを見つけてください。
 
 {{% /details %}}
 
-### ナレッジ移管と業務継続性
+### ナレッジ移管と業務継続性 {#knowledge-transfer-and-work-continuity}
 
 {{% details summary="ドキュメント化とイテレーション" %}}
 
-### ドキュメント化とイテレーション
+### ドキュメント化とイテレーション {#documentation-and-iteration}
 
-- ナレッジをドキュメント化し、他者と共有して [Key-person-risk](https://dynamicbusiness.com/locked/managing-key-person-risk.html) を防ぐ。これは、プロジェクト、ツール、または科目に関する専門知識を持つ「subject matter expert」（SME）にとって特に当てはまります。
+- ナレッジをドキュメント化し、他者と共有して [特定の人への依存リスク](https://dynamicbusiness.com/locked/managing-key-person-risk.html)を防ぐ。これは、プロジェクト、ツール、または分野に関する専門知識を持つ「専門分野の有識者」（SME）にとって特に当てはまります。
 - 関連する詳細を含むすべての重要なプロジェクト/顧客対応をリストする Google Doc を作成・共有する:
   - 各プロジェクト/顧客についてカバーするチームメンバーを割り当てる。
   - 不在中の参加が必要な通話/ミーティングを特定する。
@@ -119,7 +119,7 @@ GitLab では、リチャージのために時間を取ることを信じてい�
 
 {{% details summary="ドキュメント化のヒント" %}}
 
-### ドキュメント化のヒント
+### ドキュメント化のヒント {#documentation-tips}
 
 - 記号（例: ✅、❗️）を使って、重要なエントリを他者がすばやく特定できるようにする。
 - 色のみに頼らない。色覚異常の人にとってアクセシビリティの問題を生む可能性があります。
@@ -129,7 +129,7 @@ GitLab では、リチャージのために時間を取ることを信じてい�
 
 {{% details summary="業務移行" %}}
 
-### 業務移行
+### 業務移行 {#work-transition}
 
 - 緊急時のバックアップ個人を指定し、主要プロジェクトについてブリーフィングする。
 - 可能な限り、進行中の業務を別のチームメンバーに移行・再割り当てする。
@@ -137,18 +137,18 @@ GitLab では、リチャージのために時間を取ることを信じてい�
 
 {{% /details %}}
 
-### オンコールカバレッジ
+### オンコールカバレッジ {#on-call-coverage}
 
-オンコールチームのメンバーの予定された休暇の対応方法については、[オンコール](/handbook/engineering/on-call/) ページを参照してください。
+オンコールチームのメンバーの予定された休暇の対応方法については、[オンコール](/handbook/engineering/on-call/)ページを参照してください。
 
-### ベストプラクティスのまとめ: 成果重視のアプローチ
+### ベストプラクティスのまとめ: 成果重視のアプローチ {#summary-of-best-practices-results-focused-approach}
 
-- PTO 計画を 2〜3 週間前、可能ならそれ以上前に共有する
+- PTO 計画を 2 〜 3 週間前、可能ならそれ以上前に共有する
 - グローバルなリモートチームの場合、繁忙期に十分なカバレッジを確保するため他者と調整し、不在中にチームがあなたの業務量をカバーできるよう、事前にドキュメントと移行計画を提供してチームが対応できるようにする
 - 計画的な休暇の少なくとも 2 倍の日数の事前通知をチームメンバーに与える
 - GitLab では、時間ではなく結果を測定することを思い出す — リチャージのために時間を取ることは、最高の仕事をするのに不可欠です
 
-## 計画外の休暇のコミュニケーション
+## 計画外の休暇のコミュニケーション {#communicating-unplanned-time-away}
 
 計画外の休暇には、病気、忌引、緊急事態、その他の予期せぬ状況など、業務からの即時または予期せぬ不在を必要とするさまざまな状況が含まれます。
 
@@ -156,13 +156,13 @@ GitLab では、リチャージのために時間を取ることを信じてい�
 
 マネージャーに通知した後、合理的に可能な限り早く、以下を確認してください:
 
-1. Workday で休暇を入力する。Workday 内での休暇の分類方法（病欠、忌引、Emergency Leave など）が不明な場合は、休暇管理チームに連絡してください。
-1. Slack と Google カレンダーを更新する。Time Off by Deel 連携がある場合、Workday に時間を入力した後、自動的に発生するはずです。注意: OOO イベントは、ミーティングを自動的に辞退しません。
-1. 不在期間を含む Gmail 自動応答 (out-of-office) を設定し、不在中の連絡先を特定する。
+1. Workday で休暇を入力する。Workday 内での休暇の分類方法（Out Sick、Bereavement、Emergency Leave など）が不明な場合は、Absence Management チームに連絡してください。
+1. Slack と Google Calendar を更新する。Time Off by Deel 連携がある場合、Workday に時間を入力した後、自動的に発生するはずです。注意: OOO イベントは、ミーティングを自動的に辞退しません。
+1. 不在期間を含む Gmail の不在時の自動応答を設定し、不在中の連絡先を特定する。
 
 {{% details summary="計画外の休暇の種類" %}}
 
-### 計画外の休暇の種類
+### 計画外の休暇の種類 {#types-of-unplanned-time-away}
 
 詳細については、以下にリストされた各休暇タイプをクリックしてください。
 
@@ -174,7 +174,7 @@ GitLab では、リチャージのために時間を取ることを信じてい�
 
 {{% details summary="マネージャーの責任" %}}
 
-### マネージャーの責任
+### マネージャーの責任 {#manager-responsibilities}
 
 チームメンバーが予期せぬまたは緊急の状況であなたに連絡してきた場合:
 
@@ -182,54 +182,54 @@ GitLab では、リチャージのために時間を取ることを信じてい�
 1. チームメンバーとコミュニケーション戦略を策定する
 1. 必要に応じてチームメンバーの業務を再割り当て、またはカバレッジ計画を策定する
 
-休暇管理に関連するマネージャーの責任に関する詳細は、[Manager Toolkit for Absence](https://theloop.gitlab.com/site/5ea8f77b-a0c3-4983-ba40-1463a96d8e21/page/772afb15-974d-4798-a383-fd7b49ca724d) を参照してください！
+休暇管理に関連するマネージャーの責任に関する詳細は、[Manager Toolkit for Absence](https://theloop.gitlab.com/site/5ea8f77b-a0c3-4983-ba40-1463a96d8e21/page/772afb15-974d-4798-a383-fd7b49ca724d)を参照してください！
 
 {{% /details %}}
 
-## Workday: 休暇の Single Source of Truth
+## Workday: 休暇に関する信頼できる唯一の情報源 {#workday-single-source-of-truth-for-absence}
 
-### 概要
+### 概要 {#overview}
 
 すべてのチームメンバーおよびマネージャー（PEO で雇用されている人や独立請負業者を含む）は、Workday で休暇リクエスト（PTO、祝日、病欠など）を記録する必要があります。
 
 Workday と Workday Slack は、すべての休暇管理の主要システムです。Time Off by Deel との連携が継続されていますが、すべてのデータは Workday から Deel へ流れます。
 
-計画的な休暇について、マネージャーや一緒に働くと期待されるチームメンバーに、できる限り事前通知を提供することが期待されます。有給休暇 (paid time off) をリクエストする場合、計画的な不在の期間の少なくとも 2 倍の事前通知日数を提供してください。たとえば、3 日間の不在には、少なくとも 6 営業日の事前通知が必要です。
+計画的な休暇について、マネージャーや一緒に働くと期待されるチームメンバーに、できる限り事前通知を提供することが期待されます。有給休暇をリクエストする場合、計画的な不在の期間の少なくとも 2 倍の事前通知日数を提供してください。たとえば、3 日間の不在には、少なくとも 6 営業日の事前通知が必要です。
 
 Workday に関するご質問は、Compass ポータルをご利用ください。
 
-### 主な機能
+### 主な機能 {#key-features}
 
 {{% details summary="Workday と Time Off by Deel の連携" %}}
 
-### Workday と Time Off by Deel の連携
+### Workday と Time Off by Deel の連携 {#workday-to-time-off-by-deel-integration}
 
-Google カレンダー同期: 休暇エントリは Time Off by Deel に流れ、Google カレンダーと同期します。
+Google Calendar 同期: 休暇エントリは Time Off by Deel に流れ、Google Calendar と同期します。
 
 - マネージャーにカレンダー招待が送られ、チームの不在を追跡します（カレンダー日付に基づき、タイムゾーン調整なし）。
 - マネージャーは、休暇リクエストに影響を与えずに、招待を辞退して正しいカレンダーエントリを手動で作成できます。
-- 詳細は [Team PTO Calendar ハンドブックページ](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854) で利用できます。
+- 詳細は [Team PTO Calendar ハンドブックページ](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)で利用できます。
 
 {{% /details %}}
 
 {{% details summary="Time Off by Deel の機能" %}}
 
-### Time Off by Deel の機能
+### Time Off by Deel の機能 {#time-off-by-deel-features}
 
-- **自動ステータス更新**: Slack で OOO ステータスを設定し、「応答不可」設定を有効化します（個別の権限設定が必要）。
-  - 重要: これは Google カレンダーのすべてのミーティングを **自動的に辞退しません**。
+- **自動ステータス更新**: Slack で OOO ステータスを設定し、「Do Not Disturb」設定を有効化します（個別の権限設定が必要）。
+  - 重要: これは Google Calendar のすべてのミーティングを **自動的に辞退しません**。
 - **役割とタスクの引き継ぎ**: 不在中に同僚に責任を割り当てます。受諾された役割は、Slack の不在メッセージに表示されます。
   - 重要: 過剰な通知を作成しないよう、#channel を役割に割り当てる前に許可を求めてください。
 - **月次 PTO リマインダー**: 休暇計画を促す月次プロンプトへのオプションのサブスクリプション。
   - 毎月の最初の営業日に送信されます。
   - サブスクリプションを管理するには: Slack の Time Off by Deel アプリ → Home タブ → Notifications ドロップダウン → Subscribe/Unsubscribe。
-- **注意**: Time Off by Deel は Workday、Slack、Google カレンダーと同期しますが、GitLab.com とは **同期しません**。48 時間を超える不在の場合、プロフィール画像をクリックし「Edit Status」を選択して GitLab.com のステータスを不在日程で更新してください（例: 'OOO Back on 2025-04-28'）。このステータスは公開アクセス可能で、[reviewer roulette](https://docs.gitlab.com/development/code_review/#reviewer-roulette) でスキップされるのに役立ちます。
+- **注意**: Time Off by Deel は Workday、Slack、Google Calendar と同期しますが、GitLab.com とは **同期しません**。48 時間を超える不在の場合、プロフィール画像をクリックし「Edit Status」を選択して GitLab.com のステータスを不在日程で更新してください（例: 'OOO Back on 2025-04-28'）。このステータスは公開アクセス可能で、[reviewer roulette](https://docs.gitlab.com/development/code_review/#reviewer-roulette)でスキップされるのに役立ちます。
 
 {{% /details %}}
 
 {{% details summary="チームの可用性チェック" %}}
 
-### チームの可用性チェック
+### チームの可用性チェック {#checking-team-availability}
 
 オフィスにいない人を確認するには:
 
@@ -241,26 +241,26 @@ Google カレンダー同期: 休暇エントリは Time Off by Deel に流れ�
 
 {{% details summary="追加のマネージャー要件" %}}
 
-### 追加のマネージャー要件
+### 追加のマネージャー要件 {#additional-manager-requirements}
 
-ピープルマネージャーとして、Workday からタスクを受け取ることがあります。長期間業務を離れる場合、不在中にトランザクションを承認するための delegate を Workday で設定する必要があります。[こちら](https://docs.google.com/document/d/1EJLaFxD2WJbMXxuKkxJESBQ7gNDJ8ClQyJhbXiv2_VU/edit?tab=t.0) の手順に従い、業務に戻った後は delegate を削除することを忘れないでください！
+ピープルマネージャーとして、Workday からタスクを受け取ることがあります。長期間業務を離れる場合、不在中にトランザクションを承認するための代理承認者を Workday で設定する必要があります。[こちら](https://docs.google.com/document/d/1EJLaFxD2WJbMXxuKkxJESBQ7gNDJ8ClQyJhbXiv2_VU/edit?tab=t.0)の手順に従い、業務に戻った後は代理承認者を削除することを忘れないでください！
 
 {{% /details %}}
 
 {{% details summary="休暇エントリの編集" %}}
 
-### 休暇エントリの編集
+### 休暇エントリの編集 {#editing-time-off-entries}
 
 - チームメンバーは未来の日付のエントリ、および過去 30 日以内のエントリを編集できます。
-- 30 日以上前のエントリには、Compass 経由で People Connect チームへの提出が必要です。
+- 30 日を超えて過去のエントリには、Compass 経由で People Connect チームへの提出が必要です。
 - 注意: すべてのリクエストが承認されるわけではありません。チームメンバーは正確な休暇記録を維持する責任があります。
 
 {{% /details %}}
 
 {{% details summary="Workday に関するフィードバックの提出" %}}
 
-### Workday に関するフィードバックの提出
+### Workday に関するフィードバックの提出 {#submitting-feedback-about-workday}
 
-Workday と Time Off by Deel に関する建設的なフィードバックや推奨事項がある場合は、[こちら](https://gitlab.com/gitlab-com/people-group/people-tools-technology/general/-/issues/912#note_2138933391) で提出してください。
+Workday と Time Off by Deel に関する建設的なフィードバックや推奨事項がある場合は、[こちら](https://gitlab.com/gitlab-com/people-group/people-tools-technology/general/-/issues/912#note_2138933391)で提出してください。
 
 {{% /details %}}

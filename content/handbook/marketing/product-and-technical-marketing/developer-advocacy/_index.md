@@ -2,9 +2,9 @@
 title: "Developer Advocacy"
 description: "Developer Advocates は、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/"
-upstream_sha: 819fcd03ca3ddcde75fbd60bf7799c95d23d49f9
-lastmod: "2026-10-13T16:58:44-04:00"
-translated_at: "2026-10-26T21:06:13.194319+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T09:02:02+00:00"
 translator: codex
 stale: false
 ---
@@ -101,7 +101,7 @@ Developer Advocacy は、進化し続ける複雑な分野です。
 
 1. **コンテンツ制作 (Content creation):** これは、デベロッパーリレーションズの伝統的な役割を考えるときに多くの人が思い浮かべるものです。ブログ記事の執筆、技術的な講演の実施、ポッドキャストやパネルへの参加、ソーシャルメディアでのアイデアや考えの共有などです。コンテンツ制作には、Marketing の内外を問わず、他の GitLab チームと共同制作するアセットも含まれます。
 1. **顧客とコミュニティのエンゲージメント (Customer and community engagement):** 私たちのチームは、GitLab の顧客や、より広い GitLab コミュニティが質問、懸念、フィードバックを抱えているときに、定期的にエンゲージしています。これは対面およびバーチャルのイベント、ウェビナー、ミーティングの場で、またオンラインでは GitLab の Issue、GitLab Forum、Hacker News、その他のソーシャルメディアサイトを通じて行われます。
-1. **コンサルティング (Consulting):** GitLab 内で、私たちのチームはコミュニティの声を代弁します。他のチームが顧客やコミュニティに影響を与える変更や意思決定に取り組んでいるとき、私たちは顧客とコミュニティについて彼らに伝え、その利益を擁護し、そうした変更を伝える際に潜在的な影響が明確に理解され対処されるよう努めます。私たちのチームはまた、業界トレンド、新しいツール、ソーシャルメディア戦略、その他のスキルに関する知識を共有し、GitLab の [クロスファンクショナルな最適化](/handbook/values/#cross-functional-optimization)サブバリューに沿って、チームメイトが目標を達成できるよう支援します。
+1. **コンサルティング (Consulting):** GitLab 内で、私たちのチームはコミュニティの声を代弁します。他のチームが顧客やコミュニティに影響を与える変更や意思決定に取り組んでいるとき、私たちは顧客とコミュニティについて彼らに伝え、その利益を擁護し、そうした変更を伝える際に潜在的な影響が明確に理解され対処されるよう努めます。私たちのチームはまた、業界トレンド、新しいツール、ソーシャルメディア戦略、その他のスキルに関する知識を共有し、GitLab のクロスファンクショナルな最適化サブバリューに沿って、チームメイトが目標を達成できるよう支援します。
 
 ### コンテンツ制作 {#content-creation}
 
@@ -149,7 +149,7 @@ Developer Advocates は注力領域におけるサブジェクトマターエキ
 
 #### プロジェクト {#projects}
 
-私たちのチームは、コンテンツ制作（デモ、録画、ブログ記事、ワークショップ、講演など）のための GitLab ユースケースを提供したり、技術的な概念や研究を顧客に紹介するのを支援したり、チームのプロセスを自動化したりするためにプロジェクトを維持しています。私たちは[デフォルトで公開 (public by default)](/handbook/values/#public-by-default)で働いており、誰もが学び、コントリビュートできるようにしています。これらすべてのプロジェクトの一覧については、[Developer Advocate プロジェクト](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/)を参照してください。
+私たちのチームは、コンテンツ制作（デモ、録画、ブログ記事、ワークショップ、講演など）のための GitLab ユースケースを提供したり、技術的な概念や研究を顧客に紹介するのを支援したり、チームのプロセスを自動化したりするためにプロジェクトを維持しています。私たちはデフォルトで公開して働いており、誰もが学び、コントリビュートできるようにしています。これらすべてのプロジェクトの一覧については、[Developer Advocate プロジェクト](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/)を参照してください。
 
 ## 私たちの働き方 {#how-we-work}
 

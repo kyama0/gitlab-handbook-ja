@@ -2,16 +2,16 @@
 title: "GitLab コンテンツスタイルガイド"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/brand-experience/content-style-guide/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T07:17:14+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 GitLab コンテンツスタイルガイドは、GitLab を代表してコンテンツを作成するすべての人のためのものです。これは、私たちの書き方（声、トーン、語彙、文法、句読点、フォーマット）を定め、すべてのコンテンツにわたって一貫性を確保します。
 
-## ブランドボイス
+## ブランドボイス {#brand-voice}
 
 GitLab のブランドボイスは、ブランドとしての私たちが何者であるかを表し、表現するものです。これは私たちのブランドアイデンティティの中核を成すものであり、ブランドバリューに基づいています。私たちのブランドボイスは、すべてのコミュニケーションにおいて明確かつ一貫した形で伝わる必要があります。
 
@@ -43,13 +43,13 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 
 > _例: 月次リリース投稿_
 
-### ブランドボイスを形にする
+### ブランドボイスを形にする {#how-our-brand-voice-comes-to-life}
 
 これらのガイドラインは、GitLab のブランドボイスをあなたの執筆に組み込みつつ、個性と創造性を発揮できるようにするのに役立ちます。
 
-#### ビジョナリー
+#### ビジョナリー {#visionary}
 
-| 私たちは… | しかし、私たちは…ではない |
+| 私たちは… | しかし、私たちは **…ではない** |
 | ------ | ------ |
 |    ✅ インスピレーションを与える    |    ❌ センセーショナルな    |
 |    ✅ 技術エキスパート    |    ❌ 近寄りがたい    |
@@ -70,9 +70,9 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 > - ウェブサイト: [エンタープライズが GitLab を選ぶ 10 の理由](https://about.gitlab.com/why-gitlab/)
 > - ウェブサイト: [グローバル DevSecOps 調査](https://about.gitlab.com/developer-survey/)
 
-#### エンパセティック
+#### エンパセティック {#empathetic}
 
-| 私たちは… | しかし、私たちは…ではない |
+| 私たちは… | しかし、私たちは **…ではない** |
 | ------ | ------ |
 |    ✅ 協調的    |    ❌ 卑屈な    |
 |    ✅ 親しみやすい    |    ❌ 過度に熱心な    |
@@ -83,7 +83,7 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 
 - 読者がいる場所で出会いましょう — 取り上げる技術やトピックを読者が知っていると思い込まないでください。
 - 説明はしますが、見下した態度は取らないでください。
-- 執筆では [包括的](/handbook/marketing/blog/#diversity-inclusion-and-belonging-dib-checklist-for-blog-writers) であってください。
+- 執筆では[包括的](/handbook/marketing/blog/#diversity-inclusion-and-belonging-dib-checklist-for-blog-writers)であってください。
 
 **例:**
 
@@ -91,11 +91,11 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 > - ブログ: [SBoM の究極ガイド](https://about.gitlab.com/blog/2022/10/25/the-ultimate-guide-to-sboms/)
 > - ハンドブック: [CEO ハンドブックページ](/handbook/ceo/)
 > - ハンドブック: [コミュニケーションハンドブックページ](/handbook/communication/)
-> - ハンドブック: [バリューハンドブックページ](/handbook/values/)
+> - ハンドブック: バリューハンドブックページ
 
-#### インテンショナル
+#### インテンショナル {#intentional}
 
-| 私たちは… | しかし、私たちは…ではない |
+| 私たちは… | しかし、私たちは **…ではない** |
 | ------ | ------ |
 |    ✅ 明確    |    ❌ 押しつけがましい    |
 |    ✅ 焦点が絞られている    |    ❌ 柔軟性がない    |
@@ -115,15 +115,15 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 > - ブログ: [GitLab 初の ESG および DIB レポート：知っておくべきこと](https://about.gitlab.com/blog/2023/07/26/gitlab-first-esg-and-dib-reports/)
 > - ウェブサイト: [GitLab Duo ソリューションページ](https://about.gitlab.com/gitlab-duo/)
 
-## スタイルとフォーマット
+## スタイルとフォーマット {#style-and-formatting}
 
-以下で直接扱われていないスタイルの質問については、[Associated Press Stylebook](https://www.apstylebook.com/) を参照してください。以下のガイダンスが AP スタイルと矛盾する場合は、以下のガイダンスを優先します。特定の用語の使い方については、[ドキュメントの推奨用語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html) を参照してください。
+以下で直接扱われていないスタイルの質問については、[Associated Press Stylebook](https://www.apstylebook.com/)を参照してください。以下のガイダンスが AP スタイルと矛盾する場合は、以下のガイダンスを優先します。特定の用語の使い方については、[ドキュメントの推奨用語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html)を参照してください。
 
-### スタイル
+### スタイル {#style}
 
 #### 略語と頭字語 {#acronyms-and-initialisms}
 
-[略語または頭字語](https://www.dailywritingtips.com/acronym-vs-initialism/) を使用する際は、最初の言及で完全な用語を使用し、その直後に括弧内に短縮形を含めるようにしてください。それ以降は、頭字語または略語を代わりに使用できます。
+[略語または頭字語](https://www.dailywritingtips.com/acronym-vs-initialism/)を使用する際は、最初の言及で完全な用語を使用し、その直後に括弧内に短縮形を含めるようにしてください。それ以降は、頭字語または略語を代わりに使用できます。
 
 コンテンツ内で頭字語または略語を 1 回しか使用しない場合は、おそらく必要なく、完全な用語をそのまま使用できます。
 
@@ -133,11 +133,11 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 >
 > ✅ _GitLab Dynamic Application Security Testing (DAST)_ includes the following analyzers.
 
-#### 短縮形
+#### 短縮形 {#contractions}
 
 より人間味があり、堅苦しくない響きにするために、短縮形（_can't, didn't, it's, we're_）を使用します。
 
-#### リスト
+#### リスト {#lists}
 
 番号付きまたは箇条書きリストが連続した文として読める場合は、各項目の最初の文字を大文字にせず、各項目の末尾に句読点を含めません。
 
@@ -155,7 +155,7 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 > - Our publicly available documentation describes all AI models used by GitLab Duo.
 > - We use the right AI model for each task, ensuring you always stay ahead of the curve.
 
-#### 代名詞
+#### 代名詞 {#pronouns}
 
 特定の人物を指している場合を除き、性別中立的な代名詞（_they, them_）を使用します。
 
@@ -163,7 +163,7 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 >
 > ❌ With GitLab, a developer can integrate security into _his/her_ workflow.
 
-#### 引用符
+#### 引用符 {#quotations}
 
 直接引用には二重引用符（" "）を、引用内の引用には一重引用符（' '）を使用します。
 
@@ -183,13 +183,13 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 
 例外は、明らかに過去のイベントから引用する場合です。その場合は、読者が混乱したり誤解したりしないように過去形を使用します。
 
-#### スペル
+#### スペル {#spelling}
 
-GitLab ブログとマーケティングサイトでは、デフォルトでアメリカ英語を使用します。[スペルの違いリスト](https://www.oxfordinternationalenglish.com/differences-in-british-and-american-spelling/) を参照してください。特定の地域向けに作成されたコンテンツでは、その地域に最も適した英語のバリアントを使用してください。
+GitLab ブログとマーケティングサイトでは、デフォルトでアメリカ英語を使用します。[スペルの違いリスト](https://www.oxfordinternationalenglish.com/differences-in-british-and-american-spelling/)を参照してください。特定の地域向けに作成されたコンテンツでは、その地域に最も適した英語のバリアントを使用してください。
 
-#### 態
+#### 態 {#voice}
 
-一般的に、可能な限り [能動態](https://www.grammarly.com/blog/sentences/active-vs-passive-voice/) を使用してください。能動態を使用することで、文に明確な主語と動詞が含まれることが保証されます。
+一般的に、可能な限り[能動態](https://www.grammarly.com/blog/sentences/active-vs-passive-voice/)を使用してください。能動態を使用することで、文に明確な主語と動詞が含まれることが保証されます。
 
 > ✅ The GitLab community submitted 1 million merge requests in March 2019
 >
@@ -197,9 +197,9 @@ GitLab ブログとマーケティングサイトでは、デフォルトでア�
 
 受動態の方が良い場合も限定的にあります。それぞれのケースで最善の判断をし、受動態を使用することに決めた場合は、なぜその選択をしているのかを意識するようにしてください。
 
-### 大文字表記
+### 大文字表記 {#capitalization}
 
-#### ブランド名と出版物名
+#### ブランド名と出版物名 {#brand-and-publication-names}
 
 ブランド名は会社のブランドガイドラインに従ってスタイル化されていることを確認してください。
 
@@ -211,11 +211,11 @@ GitLab ブログとマーケティングサイトでは、デフォルトでア�
 >
 > ✅ We spoke to a _Wall Street Journal_ reporter.
 
-#### GitLab 機能名
+#### GitLab 機能名 {#gitlab-feature-names}
 
-一般的に、GitLab の機能名は小文字ですが、例外もあります。確信が持てない場合は [ドキュメントの推奨用語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html) を参照してください。
+一般的に、GitLab の機能名は小文字ですが、例外もあります。確信が持てない場合は[ドキュメントの推奨用語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html)を参照してください。
 
-#### GitLab の機能、部門、チーム
+#### GitLab の職能、部門、チーム {#gitlab-functions-departments-and-teams}
 
 要素の名前は大文字にしますが、その後の単語（_team, department_ など）は大文字にしません。
 
@@ -223,7 +223,7 @@ GitLab ブログとマーケティングサイトでは、デフォルトでア�
 >
 > ❌ Engineering Team, security department
 
-#### 役職
+#### 役職 {#job-titles}
 
 文中の役職は、人物の名前の前後どちらに表示される場合でも、小文字を使用します。
 
@@ -237,7 +237,7 @@ GitLab ブログとマーケティングサイトでは、デフォルトでア�
 >
 > ❌ John Smith, director of engineering, XYZ Corporation
 
-#### タイトルとヘッダー
+#### タイトルとヘッダー {#titles-and-headers}
 
 一般的に、すべての見出し、タイトル、サブヘッドにはセンテンスケース（最初の単語と固有名詞のみを大文字にする）を使用します。デザインの観点からタイトルケースが好まれる例外もあります。
 
@@ -245,9 +245,9 @@ GitLab ブログとマーケティングサイトでは、デフォルトでア�
 >
 > ❌ Remediating Vulnerabilities with GitLab's Security Insights and AI
 
-### 日付と時刻
+### 日付と時刻 {#dates-and-times}
 
-#### 日付の書式
+#### 日付の書式 {#date-formatting}
 
 外部向けコンテンツでは、月をスペルアウトし、年の前にカンマを使用します。文が年の後に続く場合は、年の後にもカンマを含めます。月と年だけを述べる場合は、月の後にカンマは必要ありません。
 
@@ -261,7 +261,7 @@ GitLab ブログとマーケティングサイトでは、デフォルトでア�
 
 日付が月とは独立して表示される場合（_See you on the 16th_）を除き、日付の後に rd/st/th を使用しないでください。
 
-#### 時刻の書式
+#### 時刻の書式 {#time-formatting}
 
 _ante meridiem_ と _post meridiem_ を **a.m.** と **p.m.**（小文字、文字間にピリオド、時刻と区別するためにその前にスペース：_6:00 a.m._）で略記します。
 
@@ -269,9 +269,9 @@ _ante meridiem_ と _post meridiem_ を **a.m.** と **p.m.**（小文字、文�
 
 物理的なイベントについて書く場合は、イベントが開催されているタイムゾーンを使用します。タイムゾーンを略記しないでください。バーチャルイベントの場合は、UTC を使用します。
 
-### 句読点と記号
+### 句読点と記号 {#punctuation-and-symbols}
 
-#### アンパサンド
+#### アンパサンド {#ampersands}
 
 会社の名前、出版物のタイトル、または公式名称の一部である場合にのみアンパサンドを使用します。
 
@@ -279,7 +279,7 @@ _ante meridiem_ と _post meridiem_ を **a.m.** と **p.m.**（小文字、文�
 
 ディスプレイ広告の見出しなど、文字数が非常に厳しい場合は、アンパサンドを控えめに使用できます。
 
-#### コロン
+#### コロン {#colons}
 
 コロンが完全な文（質問を含む）を導入するために使用される場合、コロンの後の最初の単語を大文字にします。
 
@@ -297,7 +297,7 @@ _ante meridiem_ と _post meridiem_ を **a.m.** と **p.m.**（小文字、文�
 
 タイトルでは、完全な文でない場合でも、コロンの後の最初の単語を常に大文字にします。
 
-#### カンマ
+#### カンマ {#commas}
 
 デフォルトでは、シリアル（オックスフォード）カンマを使用します。特定の地域向けのコンテンツでは、その地域で最も一般的なものを自由に使用してください。
 
@@ -305,17 +305,17 @@ _ante meridiem_ と _post meridiem_ を **a.m.** と **p.m.**（小文字、文�
 >
 > ❌ AI can help DevSecOps teams write code, resolve security vulnerabilities, accelerate code review and improve collaboration.
 
-#### ダッシュ
+#### ダッシュ {#dashes}
 
 文中の独立した思考を区切るには、2 本のダッシュ（--）の代わりに em ダッシュ（—）を使用します。em ダッシュの両側にスペースを 1 つ置きます。
 
 _from_ や _between_ の単語が前にない数値範囲を伝える場合は、en ダッシュ（–）を使用します（_Join us October 20–25 in San Francisco_）。en ダッシュの両側にスペースを含めないでください。
 
-#### 省略記号
+#### 省略記号 {#ellipses}
 
 省略記号（ … ）の前後にスペースを 1 つ含めます。
 
-#### ハイフン
+#### ハイフン {#hyphens}
 
 別の単語を共同で修飾する 2 つ以上の単語をつなぐためにハイフンを使用します（_built-in security_）。
 
@@ -325,17 +325,17 @@ _from_ や _between_ の単語が前にない数値範囲を伝える場合は�
 
 接頭辞の後に固有名詞が続く場合、および接頭辞 _all-, mid-, ex-_（「元」を意味する）、_self-_ で始まる単語にはハイフンを使用してください（_mid-July, self-managed_）。
 
-特定の単語のハイフンの使い方については、[推奨用語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html) を参照してください。
+特定の単語のハイフンの使い方については、[推奨用語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html)を参照してください。
 
-#### スペース
+#### スペース {#spacing}
 
 ピリオドの後にはスペースを 1 つだけ（2 つではなく）使用します。
 
 数字と測定単位の間にスペースを使用します（_128 GB_）。
 
-### 数字
+### 数字 {#numbers}
 
-#### 小さな数字
+#### 小さな数字 {#small-numbers}
 
 一般的に、0 から 9 までの数字をスペルアウトします。例外は以下のとおりです。
 
@@ -346,16 +346,16 @@ _from_ や _between_ の単語が前にない数値範囲を伝える場合は�
 
 見出しの先頭に数字を置く場合は、常に数字を使用します（_5 ways AI can help developers_）。
 
-#### 大きな数字
+#### 大きな数字 {#large-numbers}
 
 4 桁以上の数字にはカンマを含める必要があります（_2,000; 100,000_）。これが混乱を招く可能性のある特定の文脈で書いている場合（小数点の代わりにカンマを使用する地域など）は、対象読者にとって最も理にかなったことを行ってください。
 
 一般的に、_k_（「千」を意味する）や _M_ または _mil_ など、大きな数字の略語を避けてください。これらの略語は、文字数の制限が厳しいコールアウトボックスなど、スペースが非常に限られている場合にのみ使用します。
 
-#### 通貨
+#### 通貨 {#currencies}
 
-通貨が言及される文脈では、[ISO 4217 規格](https://en.wikipedia.org/wiki/ISO_4217#Active_codes_(list_one)) のコードを使用して、<NUMBER> <CURRENCY_CODE> の形式で表記してください（例: 10 USD、15 EUR、30 CAD、30,000 JPY、29.99 CHF）。
+通貨が言及される文脈では、[ISO 4217 規格](https://en.wikipedia.org/wiki/ISO_4217#Active_codes_(list_one))のコードを使用して、<NUMBER> <CURRENCY_CODE> の形式で表記してください（例: 10 USD、15 EUR、30 CAD、30,000 JPY、29.99 CHF）。
 
-#### パーセンテージ
+#### パーセンテージ {#percentages}
 
 数字がスペルアウトされている場合を除き、_percent_ の代わりに常に % を使用します。スペルアウトされている場合は _percent_ もスペルアウトします。

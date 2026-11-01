@@ -1,21 +1,21 @@
 ---
 title: エンジニアリング原則
 upstream_path: "/handbook/engineering/development/principles/"
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-translated_at: "2026-10-19T22:26:12+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T08:09:23+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-14T08:38:52-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## エンジニアリング原則
+## エンジニアリング原則 {#engineering-principles}
 
 GitLab では、[企業文化](/handbook/company/culture)を非常に重視しています。
-企業文化の主要な構成要素は [GitLab バリュー](/handbook/values/)です。
+企業文化の主要な構成要素は GitLab バリューです。
 
-[GitLab バリュー](/handbook/values/)は会社の進化を通じて私たちを導いてきました。これらのバリューは、ポジティブで生産的な文化を維持し、会社とプロダクトをより良くするための意思決定を支援するうえで不可欠でした。
+GitLab バリューは会社の進化を通じて私たちを導いてきました。これらのバリューは、ポジティブで生産的な文化を維持し、会社とプロダクトをより良くするための意思決定を支援するうえで不可欠でした。
 
-私たちのエンジニアリング原則は [GitLab バリュー](/handbook/values/)の上に構築されており、ソフトウェアエンジニアリングの実践のコンテキストにおいてこれらをさらに説明するものです。
+私たちのエンジニアリング原則は GitLab バリューの上に構築されており、ソフトウェアエンジニアリングの実践のコンテキストにおいてこれらをさらに説明するものです。
 
 1. [イテレーション](#iteration)
 1. [効率性](#efficiency)
@@ -51,11 +51,11 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 これらすべての取り組みは、知識のレベルを向上させ実装リスクを減らすことを目的としています。これらのステップはそれ自体がイテレーションであり、より良い MVP を構築するための隠れた効率性を見つけるのに役立ちます。
 
-イテレーションについて詳しくは、[バリュー](/handbook/values/#iteration)ページと[エンジニアリングワークフロー](/handbook/engineering/workflow/iteration/)を参照してください。
+イテレーションについて詳しくは、バリューページと[エンジニアリングワークフロー](/handbook/engineering/workflow/iteration/)を参照してください。
 
 ## 効率性 {#efficiency}
 
-効率性は GitLab のエンジニアリング規律の核心です。これは最も重要な[企業バリュー](/handbook/values/#efficiency)の 1 つでもあります。
+効率性は GitLab のエンジニアリング規律の核心です。これは最も重要な企業バリューの 1 つでもあります。
 
 エンジニアリングでの業務の仕方は、中長期的に大きな複利効果をもたらす可能性があります。短期的な実用的目標を考慮しながら、「中長期的にどのようにしてこれを実装すればより効率的になれるか？」と常に自問することで、複利が富を構築するのと同様に、時間の経過とともに多くの価値が構築されることを期待できます。短期的な目標に過度に集中すると、この機会を逃す可能性があります。
 
@@ -71,13 +71,13 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ## シンプルさ {#simplicity}
 
-シンプルさは信頼性の前提条件です。また、私たちの[退屈なソリューション](/handbook/values/#boring-solutions)バリューの核心でもあります。私たちは、シンプルなソリューションを構築するためにより多くの作業が必要な場合でも、簡単なソリューションよりもシンプルなソリューションを選ぶことを目指しています。
+シンプルさは信頼性の前提条件です。また、私たちの退屈なソリューションバリューの核心でもあります。私たちは、シンプルなソリューションを構築するためにより多くの作業が必要な場合でも、簡単なソリューションよりもシンプルなソリューションを選ぶことを目指しています。
 
 ## 信頼性 {#reliability}
 
 **可用性/信頼性**、**品質**、**セキュリティ**、および**パフォーマンス**は、信頼性の高いソフトウェアを構築するための柱です。信頼性は、利用可能で信頼できるプロダクトを提供できるという顧客との契約です。組織全員がそれぞれの役割を担います。
 
-エンジニア、Product Managers、デザイナーは、計画、実装、モニタリング（例： [Kibana](/handbook/support/workflows/kibana/)、[Sentry](/handbook/support/workflows/sentry/)、Grafana、その他の [GitLab.com モニタリングツール](/handbook/engineering/monitoring/#monitoring)）、または業務の優先順位付けを通じて、コードの信頼性に最も直接的な影響を持ちます。プロダクトとエンジニアリングの管理者は（例： [エラーバジェット](/handbook/engineering/error-budgets/)を使用して）機能の信頼性をモニタリング・測定し、必要に応じて推奨事項を作成します。[学習と開発](/handbook/people-group/learning-and-development/)への注力により、チームが信頼性の高いソフトウェアを構築するために必要なツールとトレーニングを確保します。[Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)、[Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/#application-security-mission)、[Database](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)、[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience)チームは、プロダクト開発チームをサポートする対象分野の専門家です。
+エンジニア、Product Managers、デザイナーは、計画、実装、モニタリング（例： [Kibana](/handbook/support/workflows/kibana/)、[Sentry](/handbook/support/workflows/sentry/)、Grafana、その他の[GitLab.com モニタリングツール](/handbook/engineering/monitoring/#monitoring)）、または業務の優先順位付けを通じて、コードの信頼性に最も直接的な影響を持ちます。プロダクトとエンジニアリングの管理者は（例： [エラーバジェット](/handbook/engineering/error-budgets/)を使用して）機能の信頼性をモニタリング・測定し、必要に応じて推奨事項を作成します。[学習と開発](/handbook/people-group/learning-and-development/)への注力により、チームが信頼性の高いソフトウェアを構築するために必要なツールとトレーニングを確保します。[Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)、[Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/#application-security-mission)、[Database](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)、[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience)チームは、プロダクト開発チームをサポートする対象分野の専門家です。
 
 ## ベロシティ {#velocity}
 
@@ -92,7 +92,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ベロシティを高く維持するためにできることがいくつかあります。以下に説明します。
 
-### 適切にイテレーションする
+### 適切にイテレーションする {#iterate-well}
 
 取り組んでいることを適切に[イテレーション](#iteration)します。小さいマージリクエストを提供することを目指します。追加の調整から恩恵を受ける複数のイテレーションを出荷する計画がある場合は、[デザインドキュメント](/handbook/engineering/architecture/workflow/)を書きましょう。
 
@@ -100,13 +100,13 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 イテレーションのためのヒントについては、[イテレーションではない 12 のショートカットに関するブログ記事](https://about.gitlab.com/blog/2021/12/01/dont-confuse-these-twelve-shortcuts-with-iteration/)を確認できます。
 
-### レビュー時間を短縮する
+### レビュー時間を短縮する {#reduce-review-time}
 
 コードレビューのレイテンシーに注意してください。著者をコードレビューに長く待たせないでください。
 
 多くの人にとって、コンテキストスイッチングは非常にコストのかかることで、生産性に悪影響を与えます。コードをレビューしたり、チームメンバーと非同期で協力したりする際にはこれを念頭に置いてください。質問への回答が不要な場合や、コードの提案が対処する必要のない些細な指摘である場合は、これらを行うために必要なコンテキストスイッチングの価値がないかもしれません。
 
-### プロセスを削減する
+### プロセスを削減する {#reduce-process}
 
 実験的（Experimental）およびベータ（Beta）機能に取り組む際は、様々なプロセスへの注意を減らします。実験的またはベータ機能でさえも提供することを目指している場合は、特定のプロセスをスキップして問題ありません。プロセスはベロシティへの影響を減らすために自動化することもできます。
 
@@ -118,7 +118,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 プロセスが効率性を妨げているか、時代遅れか、うまくスケールしないか、スキップまたは自動化できるかについて疑問がある場合は、マネージャーに相談してください。プロセスをスキップする場合は、その決定をどこか（コメント、Issue）に文書化し、その情報が役立つ可能性がある人々にピングしてください。
 
-### リスクを受け入れる
+### リスクを受け入れる {#embrace-risk}
 
 実験的（Experimental）およびベータ（Beta）機能に取り組む際は、いくつかのリスクを取ることが大丈夫です。実験的機能を提供する際に高いベロシティを維持するために追加のリスクを取ることができる、多くの便利なツールと自動化が利用可能です：
 
@@ -130,11 +130,11 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 このルールには 1 つの例外があります： 可用性とセキュリティです。成熟度モデルに関わらず、コードは常にできる限り安全であるべきで、GitLab.com をダウンさせるべきではありません。
 
-### メンテナンスのバランスを取る
+### メンテナンスのバランスを取る {#balance-maintenance}
 
 コードのリファクタリングと新機能の提供の必要性のバランスを取ります。[効率性](#efficiency)の原則をコンパスとして使用してください。
 
-### 積極的であること
+### 積極的であること {#be-proactive}
 
 ベロシティに悪影響を与えるプロセスがある場合は、積極的に行動してください： 声を上げ、改善方法についてマネージャーと協力してください。
 
@@ -152,7 +152,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 セキュリティについては、[セキュリティ Issue に関する優先度ラベル](/handbook/security/engaging-with-security/#severity-and-priority-labels-on-security-issues)周辺の厳格な SLA を設けることで、より高い優先度を付けています。これは特定の期間内にこれらの Issue が優先されるセキュリティファーストの考え方を示しています。
 
-### 確立されたプロセスを活用する
+### 確立されたプロセスを活用する {#leverage-established-processes}
 
 より良い結果を達成するのに役立つよう設計されたプロセスを開発・文書化しています。
 
@@ -169,7 +169,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 品質はすべての人の責任であることを覚えておくことが重要です。master にマージするすべてのものは本番環境への準備ができているべきです。[完了の定義](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)に慣れてください。
 
-### 準備ができたらリリースする
+### 準備ができたらリリースする {#release-when-its-ready}
 
 [リリースページ](/handbook/engineering/releases/)では、2 つの主要なリリースチャンネルについて説明しています：
 
@@ -182,14 +182,14 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 1. [人々は燃え尽き症候群のリスクが高まります](/handbook/people-group/time-off-and-absence/time-off-types/)。
 1. [完了の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)を妥協する可能性があります。
-1. [スコープを削減します](/handbook/values/#move-fast-by-shipping-the-minimal-valuable-change)。
+1. スコープを削減します。
 1. 期限を逃します。
 
 一般的なルールとして、最後の 2 つの結果のみが受け入れ可能です。割り当てられたマイルストーンという形での「期限」を逃すことは、[予測可能性よりもベロシティを優先する](/handbook/engineering/development/principles/#velocity)ため、多くの場合 OK です。月次の Self-Managed リリースを逃しても、コードが GitLab.com に届くことを防ぎません。
 
 これらの理由などから、私たちは意図的に Self-Managed の月次リリースに含めるためにマージすべきコードの[特定の日付を定義しません](/handbook/engineering/releases/monthly-releases#timelines)。早くマージされるほど良いです。これはまた以下を意味します：
 
-1. マージリクエストの著者が期限に間に合わせるために[時間外に作業する](/handbook/values/#measure-impact-not-activity)ことや急ぐことを望みません。
+1. マージリクエストの著者が期限に間に合わせるために時間外に作業することや急ぐことを望みません。
 1. [レビュアーとメンテナー](/handbook/engineering/workflow/code-review/)が[通常の SLO](/handbook/engineering/workflow/code-review/#review-response-slo)を満たす以外のことをするためにプレッシャーをかけられることを望みません。
 
 マージリクエストが特定のリリースに入ることが不可欠な場合は、エンジニアとすべてのレビュアーがそのコミットメントを果たせるよう、事前に十分に伝えることが必要です。重大なバグを短い準備期間で修正する必要がある場合は、修正を急ぐより、原因となった変更を元に戻すか、場合によっては修正の準備が整うまでリリースを遅らせる方が適切です。
@@ -215,7 +215,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 1. 最も複雑な部分を最初に移行しようとすること。代わりにイテレーションして最もシンプルなものを最初に移行してください。
 1. 「単なるプロトタイプです」「機能するかわかりません」「既存の機能より優れているかわかりません」という理由で GitLab の外で構築する。
 
-#### ドッグフーディングプロセス
+#### ドッグフーディングプロセス {#dogfooding-process}
 
 GitLab の外でツールを構築することを検討する際は、[プロダクトハンドブックで説明されているドッグフーディングプロセス](/handbook/product/product-processes/dogfooding-for-r-d/)に従ってください。
 
@@ -235,17 +235,17 @@ GitLab の外でツールを構築することを検討する際は、[プロダ
 > 多くのプログラマーは、コードを柔軟にする方法とは、将来の用途をできる限り多く予測することだと考える間違いを犯します。しかし、これは逆説的に*柔軟性の低い*コードにつながります。
 > 柔軟性を実現する唯一の方法は、物事をできる限りシンプルで変更しやすくすることです。
 
-### Rails と VueJS フロントエンド全体での UI の一貫性とメンテナビリティ
+### Rails と VueJS フロントエンド全体での UI の一貫性とメンテナビリティ {#ui-consistency-and-maintainability-across-rails-and-vuejs-frontend}
 
 私たちのエンジニアリング文化の一部は、ユーザーと顧客が GitLab.com または Self-Managed インスタンスに追加された重要な新しい価値を見られるよう出荷し続けることです。迅速な開発をサポートするために、実用的に適切なテクノロジーを選択します。各ビューはユニークであるため、HAML と Vue のコードベースを等しく尊重し、最大限の一貫性とメンテナビリティを実現できるフレームワークを、ビューごとに十分な知識に基づいて選択すべきです。
 
 複雑なアプリケーションを構築する際には、完全に計画された機能などの多くの要因を考慮することが重要です。複雑さが増すにつれて後で Vue で書き直す必要が生じるだけのために HAML で MVC を構築するような状況を避けるためです。
 
-視覚的な一貫性とアクセシブルな UI を促進するために、Vue と HAML の両方のビューで [GitLab UI コンポーネントライブラリ](https://gitlab.com/gitlab-org/gitlab-ui/)が提供するシンプルで再利用可能な UI コンポーネントを常に使用することを目指すべきです。GitLab UI コンポーネントは Pajamas デザインシステムに基づいて実装しており、現在これらは主に Vue にありますが、いくつかのシンプルなコンポーネントを HAML でも使用できる[アダプター](https://docs.gitlab.com/ee/development/fe_guide/haml.html#available-components)を提供しています。
+視覚的な一貫性とアクセシブルな UI を促進するために、Vue と HAML の両方のビューで[GitLab UI コンポーネントライブラリ](https://gitlab.com/gitlab-org/gitlab-ui/)が提供するシンプルで再利用可能な UI コンポーネントを常に使用することを目指すべきです。GitLab UI コンポーネントは Pajamas デザインシステムに基づいて実装しており、現在これらは主に Vue にありますが、いくつかのシンプルなコンポーネントを HAML でも使用できる[アダプター](https://docs.gitlab.com/ee/development/fe_guide/haml.html#available-components)を提供しています。
 
 HAML で GitLab UI コンポーネントが本質的な複雑さのために利用できない場合、それは代わりに Vue を使用して機能を実装すべきサインです。
 
-#### VueJS を使用する場合
+#### VueJS を使用する場合 {#when-to-use-vuejs}
 
 - ([gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui))ライブラリからすでに確立されたコンポーネントを使用しようとしている。
 - 単一ページアプリケーションでインタラクティビティを提供するために接続された複数の[複雑なコンポーネント](#complex-components)を必要とする複雑な機能を構築している。
@@ -253,7 +253,7 @@ HAML で GitLab UI コンポーネントが本質的な複雑さのために利�
 - 中程度またはより大きなクライアントサイドのインタラクティビティが必要。
 - リアルタイムアプリケーションを構築したい。
 
-#### Rails を使用する場合
+#### Rails を使用する場合 {#when-to-use-rails}
 
 - シンプルな静的ビューが必要。
 - 複数のコンポーネントや状態管理を使用する必要がない。

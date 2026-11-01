@@ -3,46 +3,46 @@ title: "非線形ワークデイと非同期勤務の完全ガイド"
 canonical_path: "./non-linear-workday/"
 description: オールリモート環境における日常ルーティンの再発明と非線形ワークデイの作り方
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab リモートチームの画像"
+twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/non-linear-workday/"
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T07:46:24+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-19T14:13:18-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ![GitLab のカスタマージャーニー](/images/all-remote/gitlab-customer-path.jpg)
 
 このページでは、非線形ワークデイを取り入れた生活がどのようなものになるかを詳しく説明し、コロケーション（同一拠点勤務）型・同期型の職場では実現できない可能性を想像するためのヒントを提供します。
 
-## Q: 非線形ワークデイとはどのようなルーティンですか？
+## Q: 非線形ワークデイとはどのようなルーティンですか？ {#q-what-is-a-non-linear-workday-routine}
 
 非線形ワークデイとは、PTO（有給休暇）を取得することなく、[非同期](/handbook/communication/#asynchronous-communication)スケジュールで勤務時間と非勤務時間を自由に行き来できる働き方です。たとえば、リモートワーカーが現地時間の午前 6 時に仕事を始め、午前 9 時まで作業するとします。その後、家族と過ごすために仕事メールを確認せず、午後 3 時に再び仕事を始めて午後 8 時まで継続します。そして翌日は、仕事や生活の状況に応じて全く異なるスケジュールになることもあります。
 
-## ルーティンに関する先入観を打ち破る
+## ルーティンに関する先入観を打ち破る {#breaking-preconceived-notions-about-routine}
 
 
 {{< youtube "ZlUpDkoq_v0" >}}
 
 
-*上記の [GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) 動画では、Darren M.（GitLab の Head of Remote）と Elisa R.（The Cowork Experience の創設者）が、満足度と生産性の観点からルーティンの影響と意義について話し合っています。*
+*上記の [GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) 動画では、Darren M.（GitLab の Head of Remote）と Elisa R.（Founder of The Cowork Experience）が、満足度と生産性の観点からルーティンの影響と意義について話し合っています。*
 
 リモートワーク初心者に対してよくされるアドバイスに「早めにルーティンを確立して、それを維持しなさい」というものがあります。これは*一部の人*には適切なアドバイスかもしれませんが、リモートワークがルーティンの必要性に関する思い込みを完全に解体できるという現実を無視しています。
 
 ルーティンが推奨されるのは、それが*良いもの*だからではなく、*伝統*だからにすぎません。コロケーション型の環境では、チームメンバーが通勤し、固定された時間内に働くことが求められるため、ルーティンが強制されます。私たちはルーティンが規律を保つものだと信じるよう刷り込まれてきましたが、実際にはルーティンは、コロケーション型企業が従業員を管理しやすくするためのものにすぎません。
 
-多くの人は他の方法を知らないためにルーティンを守っています。リモートワークでは、[非同期ワークフロー](/handbook/communication/#asynchronous-communication)、[ハンドブックファースト型ドキュメント](handbook-first/)、そして会社全体の[透明性](/handbook/values/#transparency)という大きなメリットのおかげで、別の選択肢が生まれます。
+多くの人は他の方法を知らないためにルーティンを守っています。リモートワークでは、[非同期ワークフロー](/handbook/communication/#asynchronous-communication)、[ハンドブックファースト型ドキュメント](handbook-first/)、そして会社全体の透明性という大きなメリットのおかげで、別の選択肢が生まれます。
 
-## 非線形ワークデイとは何か？
+## 非線形ワークデイとは何か？ {#what-is-a-non-linear-workday}
 
 
 {{< youtube "SeTTehyZsFc" >}}
 
 
-*上記の[動画](https://youtu.be/SeTTehyZsFc)では、GitLab の Head of Remote が、Megan Dilley（Remote Work Association ディレクター）と、リモートワークの民主化の力、コミュニティの重要性、そして 2020 年の大規模なリモートワーク移行後の生活予測について話し合っています。詳細は GitLab の [Remote Work プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)でご確認ください。*
+*上記の[動画](https://youtu.be/SeTTehyZsFc)では、GitLab の Head of Remote が、Megan Dilley（Director, Remote Work Association）と、リモートワークの民主化の力、コミュニティの重要性、そして 2020 年の大規模なリモートワーク移行後の生活予測について話し合っています。詳細は GitLab の [Remote Work プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)でご確認ください。*
 
 非線形ワークデイを説明する最も分かりやすい方法は、具体的な例を共有することです。透明性のために申し上げると、これは GitLab チームメンバーの実際の体験談です。
 
@@ -56,7 +56,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 - シャワーを浴び、早めの夕食を取った後、Darren は午後 4 時 30 分に仕事に戻ります。進行中のプロジェクトに取り組み、Issue を前進させることに意欲的に取り組みます。ただし最初に、スキー中に撮った写真を数枚シェアします。これは[非難しない文化](mental-health/#create-a-non-judgemental-culture)の下で運営し、[活動量ではなくインパクトで評価する](/handbook/company/culture/all-remote/)環境では奨励されることです。数百人の同僚と 6 大陸にわたりリモートで働きながら、この意図的な[インフォーマルなコミュニケーション](informal-communication/)へのアプローチが、オフィスで形成されるものよりもある意味で深い人間関係を生み出しています。
 
-- モンタナの冬は午後 5 時には日が暮れています。Darren は日照時間を最大限に活用し、働く時間を主に暗い時間帯にシフトしています。どうせその時間は室内にいるため、仕事に適しています。暗い中ではほとんど人が仕事を終えているにもかかわらず、それが一般的なルーティンの定義と相反していても、外に出て探索したいという衝動はありません。むしろ、これは仕事をするのに理想的な時間です。
+- モンタナの冬は午後 5 時には日が暮れています。Darren は日照時間を最大限に活用し、働く時間を主に暗い時間帯にシフトしています。どうせその時間は室内にいるため、仕事に適しています。暗い時間帯には、外に出て探索したいという衝動はありません。むしろ、ほとんどの人が仕事を終えるときに仕事を再開することが一般的なルーティンの定義と相反していても、仕事をするのに理想的な時間です。
 
 ![GitLab のオールリモートチーム](/images/all-remote/all-remote-skiing-montana.jpg)
 {style="max-width: 50%;"}
@@ -65,50 +65,50 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 - Darren は午後 4 時 30 分から午後 10 時 30 分まで仕事を続け、スキーをしている間に同僚が[低コンテキストのドキュメント](/handbook/communication/#low-context)として残した内容を参照して、関わっているプロジェクトの現状を把握します。非同期に貢献することで、必要な[ミーティング](meetings/)を最小限に抑え、非線形な形で働いているかもしれない同僚への配慮を示します。
 
-### 非線形ワークデイの具体例
+### 非線形ワークデイの具体例 {#examples-of-a-non-linear-workday}
 
 非線形ワークデイはスペクトラムで体験できます。上記の例は意図的に極端なケースを示してメリットを明確にしていますが、日常の中でも実践的に 1 日を分割する方法はたくさんあります。これにより、自分に最適な方法でリフレッシュでき、その日の要求に合わせて柔軟に対応できます。
 
-- 保護者や介護者は、朝と午後に子どもの送り迎えをしたり、より厳しいスケジュールで働いていれば外注せざるを得なかった通勤時間に絆を深めることができます。
+- 保護者や介護者は、朝と午後に子どもを学校へ送迎し、勤務時間が厳格なら外部に任せざるを得ないその送迎中に、子どもとの絆を深めることができます。
 - トレーニングセッションをミーティングの合間に組み込んでいるランナー。
 - 午前中の早い時間や仕事終わりの運動が好きでない人にとって理想的な、ランチタイムの運動。
 - 幼い子どもの変化する昼寝のスケジュールに合わせてミーティング枠を設定する。
 - 特定の日中の時間にフードバンク、図書館、地域センターなどでボランティア活動ができるよう 1 日を組み立てる。
 - 日常的な用事（例：車のオイル交換、自宅を修繕する業者との打ち合わせなど）を処理できるよう 1 日を構成する。ピーク時間外に用事を済ませることで、ラッシュアワーの移動を避ける効率も生まれます。
 
-## Q: 非線形ワークデイのルーティンには、どのようなメリットがありますか？
+## Q: 非線形ワークデイのルーティンには、どのようなメリットがありますか？ {#q-what-are-the-benefits-of-a-non-linear-workday-routine}
 
-### 柔軟性
+### 柔軟性 {#flexibility}
 
 非線形ワークデイにより、チームメンバーは最も生産性の高い時間と場所で仕事と生活を両立できます。
 
-### 自律性
+### 自律性 {#autonomy}
 
-チームメンバーは自分に合ったスケジュールでプロジェクトを進める[自主性](/handbook/values/#give-agency)が与えられます。GitLab は[活動量ではなくインパクトを測定する](/handbook/values/#measure-impact-not-activity)ため、人々は最適なタイミングで成果を上げる自由があります。
+チームメンバーは自分に合ったスケジュールでプロジェクトを進める自主性が与えられます。GitLab は活動量ではなくインパクトを測定するため、人々は最適なタイミングで成果を上げる自由があります。
 
-### 効率性
+### 効率性 {#efficiency}
 
-リモートワークはルーティンと責任を切り離します。[自分自身のマネージャー](/handbook/values/#managers-of-one)であることを楽しむ従業員はリモート環境で力を発揮し、誰も見ていなくても上手に仕事をする規律を*より*発揮することが多いです。
+リモートワークはルーティンと責任を切り離します。Manager of One であることを楽しむ従業員はリモート環境で力を発揮し、誰も見ていなくても上手に仕事をする規律を*より*発揮することが多いです。
 
-## Q: 非線形ワークデイのルーティンにはどのような課題がありますか？
+## Q: 非線形ワークデイのルーティンにはどのような課題がありますか？ {#q-what-are-the-challenges-of-a-non-linear-workday-routine}
 
-### タイムゾーンの調整
+### タイムゾーンの調整 {#juggling-time-zones}
 
 自分やチームメンバーが主に拠点としている場所によっては、[異なるタイムゾーン](/handbook/communication/#asynchronous-communication)の人たちと上手にコミュニケーションすることが難しい場合があります。
 
-### 整理整頓の維持
+### 整理整頓の維持 {#staying-organized}
 
-リモートワークの難しい側面の一つは、ある作業セッションがどこで終わり、次のセッションがどこで始まるかを区切ることです。「時計が止まる時間だと教えてくれる」以外に仕事を止めたりタスクを切り替えたりする理由や口実がないことがよくあります。
+リモートワークの難しい側面の一つは、ある作業セッションがどこで終わり、次のセッションがどこで始まるかを区切ることです。「時計が仕事を終える時間だと教えてくれる」以外に仕事を止めたりタスクを切り替えたりする理由や口実がないことがよくあります。
 
-### 気が散ること
+### 気が散ること {#distractions}
 
 リモートワーク初心者にとっては、[日常的にいつどこで仕事をするかを考える](https://about.gitlab.com/blog/2019/09/12/not-everyone-has-a-home-office/)ことが重要です。集中力のために物理的・精神的な空間を最適化し、気が散らない環境を[リモートワークの恩恵として](https://about.gitlab.com/blog/2018/05/17/eliminating-distractions-and-getting-things-done/)設計しましょう。
 
-## Q: リモートワーク時の一般的な気散りの原因は何ですか？
+## Q: リモートワーク時の一般的な気散りの原因は何ですか？ {#q-what-are-some-common-distractions-when-working-remotely}
 
 リモートワーカーが最も気散りを感じる原因は、環境音、視覚的な気散り、通行量の多い場所での作業です。仕事のみを行う物理的・精神的な空間を確保するよう努めましょう。これにより、仕事に集中でき、その空間を離れる際には[健全に仕事から切り離せる](https://about.gitlab.com/blog/2019/07/09/tips-for-working-from-home-remote-work/)ようになります。
 
-## Q: リモートワーク時に生産性を維持するための最善策は何ですか？
+## Q: リモートワーク時に生産性を維持するための最善策は何ですか？ {#q-what-are-the-best-ways-to-stay-productive-when-working-remotely}
 
 古い方法に戻りたくなる誘惑はありますが、非線形スケジュールや特定の場所以外で働くことは、異なるアプローチを必要とします。[Basecamp のハンドブック](https://basecamp.com/handbook)は、リモートでのロールで活躍するためには**学ぶことと同じくらい忘れることがある**と教えてくれます。
 
@@ -123,11 +123,11 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 [GitLab のリモートワークガイドライブラリ](guide/)も優れたリソースです。
 
-## Q: リモートワーク時に整理整頓を保つためのヒントは何ですか？
+## Q: リモートワーク時に整理整頓を保つためのヒントは何ですか？ {#q-what-are-some-tips-for-staying-organized-when-working-remotely}
 
 [リモートワーカーのための完全ガイド](getting-started/)には、整理整頓を保つための優れたヒントが掲載されています：
 
-- [会社のテクノロジーとツールの習得](getting-started/#familiarize-yourself-with-the-companys-technology--tools)に時間を投資して[効率性](/handbook/values/#efficiency)を最大化する
+- [会社のテクノロジーとツールの習得](getting-started/#familiarize-yourself-with-the-companys-technology--tools)に時間を投資して効率性を最大化する
 - まず試せる[スケジュール](getting-started/#develop-a-schedule-that-you-can-initially-follow)を策定して調整する
 - 同僚との戦略的な[つながり](getting-started/#how-to-connect-with-people-when-starting-a-remote-job)を作る
 - [仕事とプライベートの境界線](getting-started/#set-up-work-life-boundaries)を設定する
@@ -136,7 +136,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 これが気になるほど、同期型のデフォルトから組織を遠ざける必要があります。
 
-## 想像力を育む
+## 想像力を育む {#fostering-your-imagination}
 
 ![GitLab のオールリモートチーム](/images/all-remote/remote_work_02.jpg)
 {style="max-width: 50%;"}
@@ -147,7 +147,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 上記の質問に答えることで、ルーティンのどの要素が自分にとって有益で、どの要素が自分の足枷になっているかを真剣に評価できます。
 
-上記のスキーの例は、最大限に[効率的](/handbook/values/#efficiency)な 1 日です。フルタイムの仕事の日であり、探索と家族との充実した時間を過ごした充実した 1 日でもありました。このチームメンバーは PTO（[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)）を取ることも、スキーを短くすることもできました。半日休暇を取って、スキーセッションを延ばすか、仕事と遊びの間のバッファを増やすこともできました。
+上記のスキーの例は、最大限に効率的な 1 日です。フルタイムの仕事の日であり、探索と家族との充実した時間を過ごした充実した 1 日でもありました。このチームメンバーは PTO（[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)）を取ることも、スキーを短くすることもできました。半日休暇を取って、スキーセッションを延ばすか、仕事と遊びの間のバッファを増やすこともできました。
 
 スキーを他の何かに置き換えて、自分に当てはめて考えてみてください。子どもの学校の昼間の行事に参加すること、昼間の地域ボランティアイベントに参加すること、大切な人の重要な医療予約の際にサポートとして立ち会えること——例は尽きません。
 
@@ -157,7 +157,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 {{< youtube "csS3iTjIHNo?start=1193" >}}
 
 
-*[GitLab Unfiltered](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc) の対話の中で、Ceridian の Dani が GitLab の Head of Remote に次の質問をしました：「リモートワークについて、人々が聞かないけれど聞くべきだと思う質問は何ですか？」*
+*[GitLab Unfiltered](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)の対話の中で、Ceridian の Dani が GitLab の Head of Remote に次の質問をしました：「リモートワークについて、人々が聞かないけれど聞くべきだと思う質問は何ですか？」*
 
 *彼の答えは上記の動画で語られており、以下に一部書き起こしています。*
 
@@ -167,11 +167,11 @@ lastmod: "2026-08-19T14:13:18-04:00"
 >
 > 私は人々に、リモートは全く新しい宇宙だと気づく許可を自分に与えてほしいのです。通勤がない。オフィスでの偏見や期待もない。最高の生産性を発揮できる時間帯に仕事をシフトできる可能性があり、これまでアクセスできなかった時間が開きます。
 >
-> それは究極のまっさらな状態、究極の人生チートコードです。リモートワーカーとして通勤をなくした分、過剰に生産しなければならないという「リモーターの罪悪感」がある傾向があります。でも通勤は最初から雇用主のものではなかった；それは常にあなたの時間だったのです。
+> それは究極のまっさらな状態、究極の人生チートコードです。リモートワーカーとして通勤をなくした分、過剰に生産しなければならないという「リモーターの罪悪感」がある傾向があります。でも通勤は最初から雇用主のものではありませんでした。それは常にあなたの時間だったのです。
 >
 > それで何かできます。それで革新的になれます。— *Darren M.、Head of Remote、GitLab*
 
-## 非線形ワークデイを可能にするために必要なことは？
+## 非線形ワークデイを可能にするために必要なことは？ {#what-is-required-to-enable-non-linear-workdays}
 
 ![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
@@ -181,28 +181,28 @@ lastmod: "2026-08-19T14:13:18-04:00"
 - 会社は[ハンドブックファースト](/handbook/about/handbook-usage/#why-handbook-first)で運営しなければなりません。会話から得られた意味ある内容がすべて 24 時間適切な場所にドキュメント化されるようにするためです。
 - 会社は意図的かつ徹底的に[非同期ワークフロー](/handbook/communication/#asynchronous-communication)（[GitLab などのツール](https://about.gitlab.com/stages-devops-lifecycle/)やプロセスを含む）を取り入れなければなりません。
 - 会社は[非難しない文化](mental-health/#create-a-non-judgemental-culture)をサポートし、チームメンバーを[活動量ではなくインパクトで評価](/handbook/company/culture/all-remote/)しなければなりません。これにより、全員が働いている中でスキーをしたり、全員がスキーに行けばよかったと思っている中で働いたりするような非常識な行為をしても、報復を恐れることなく自由に仕事に入ったり出たりできます。
-- [自分自身のマネージャー](/handbook/values/#managers-of-one)として、見慣れない環境でも適切なタスクに集中できる個人的な誓約。
-- 毎日がこのようになるわけではないという理解。非線形ワークデイの達人でも、昼間の外出が難しい日があることを認識しています。そのことを残念に思うのではなく、それが可能であること自体のスリルを受け入れ、そのような日ができるようにスケジュールを組む努力をしましょう。自分自身のマネージャーとして、スケジュールをコントロールし（そして責任を持つ）必要があります。そうしなければ、世界と仕事の他の力があなたのスケジュールをコントロールします。
+- Manager of One として、見慣れない環境でも適切なタスクに集中できる個人的な誓約。
+- 毎日がこのようになるわけではないという理解。非線形ワークデイの達人でも、昼間の外出が難しい日があることを認識しています。そのことを残念に思うのではなく、それが可能であること自体のスリルを受け入れ、そのような日ができるようにスケジュールを組む努力をしましょう。Manager of One として、スケジュールをコントロールし（そして責任を持つ）必要があります。そうしなければ、世界と仕事の他の力があなたのスケジュールをコントロールします。
 
-2021 年 12 月、Learning and Development チームは、マンチェスター・メトロポリタン大学の上席講師である [Dr. Krystal Wilkinson](https://www.mmu.ac.uk/staff/profile/dr-krystal-wilkinson) を招き、非線形ワークデイに類似した労働構造の影響、課題、現実についての研究を発表してもらいました。[GitLab Unfiltered YouTube チャンネル](https://www.youtube.com/watch?v=m-GBiLbfTVk)でその録画をご覧いただけます。
+2021 年 12 月、Learning and Development チームは、Manchester Metropolitain University の上席講師である [Dr. Krystal Wilkinson](https://www.mmu.ac.uk/staff/profile/dr-krystal-wilkinson)を招き、非線形ワークデイに類似した労働構造の影響、課題、現実についての研究を発表してもらいました。[GitLab Unfiltered YouTube チャンネル](https://www.youtube.com/watch?v=m-GBiLbfTVk)でその録画をご覧いただけます。
 
-### ミーティングはどうするのか？
+### ミーティングはどうするのか？ {#what-about-meetings}
 
 このような例について話すとき、よく出る質問があります：「[ミーティング](meetings/)が最もスケジュールされやすい時間帯に仕事を離れるにはどうするのか？」
 
 あまり明白でない答えはこうです：ミーティングを最終手段とする職場文化を作り、避けられないミーティングでも[非同期で参加できる](meetings/#4-all-meetings-must-have-an-agenda)ようにすること。
 
-毎日が自然にミーティングなしで成立するわけではないことは繰り返し強調する価値があります。しかし、会社がミーティングを徹底的に最小限にすること、[意思決定の情報収集と意思決定を分離すること](/handbook/company/culture/all-remote/)、そしてすべての仕事が最終的に行き着く場所（例：[GitLab Issue](https://docs.gitlab.com/ee/user/project/issues/) や[マージリクエスト](https://about.gitlab.com/blog/2019/12/19/future-merge-requests-realtime-collab/)）で始まることを主張するほど、実現可能になります。[メンタルヘルス](mental-health/)面でも恩恵が得られます。
+毎日が自然にミーティングなしで成立するわけではないことは繰り返し強調する価値があります。しかし、会社がミーティングを徹底的に最小限にすること、[意思決定の情報収集と意思決定を分離すること](/handbook/company/culture/all-remote/)、そしてすべての仕事が最終的に行き着く場所（例：[GitLab Issue](https://docs.gitlab.com/ee/user/project/issues/)や[マージリクエスト](https://about.gitlab.com/blog/2019/12/19/future-merge-requests-realtime-collab/)で始まることを主張するほど、実現可能になります。[メンタルヘルス](mental-health/)面でも恩恵が得られます。
 
 GitLab の[ミーティングへのアプローチ](meetings/)は、他のすべてのプロセスと同様に、[ハンドブック](/handbook)で公開しています。リーダーには研究し、実施し、改善案を提案することを奨励しています。
 
-### 自分に合った方法を見つける
+### 自分に合った方法を見つける {#find-what-works-for-you}
 
 非線形ワークデイを取り入れることは非常に解放的ですが、日常のルーティンを崩すことが全員に生産的とは限らないことも重要です。GitLab の[#neurodiversity](/handbook/company/culture/inclusion/tmrg-tmag/erg-gitlab-diversability/) Slack チャンネルでの会話で、チームメンバーが非線形ワークデイについて様々な体験を共有しました。
 
-最終的には、各自が実験して最適な仕事の好みやスケジュール（あるいはスケジュールのなさ）を決めることです。毎日スケジュールが違っても、厳格なルーティンを守っても、両方の要素を取り入れても、重要なのは自分にとって何が最善かを決める自由と[自律性](/handbook/values/#managers-of-one)があると知ることです。
+最終的には、各自が実験して最適な仕事の好みやスケジュール（あるいはスケジュールのなさ）を決めることです。毎日スケジュールが違っても、厳格なルーティンを守っても、両方の要素を取り入れても、重要なのは自分にとって何が最善かを決める自由と自律性があると知ることです。
 
-### 明確な優先事項を設定する：3 つのタスク
+### 明確な優先事項を設定する：3 つのタスク {#set-clear-priorities-3-tasks}
 
 非線形ワークデイは結果重視です。結果に集中するためのシステムを構築することで、過負荷や燃え尽き症候群を防ぎます。以下の動画では、重要な優先事項を設定・達成するための方法として **3 タスクシステム**を紹介しています。
 
@@ -224,7 +224,7 @@ GitLab の[ミーティングへのアプローチ](meetings/)は、他のすべ
 - 3 つのタスク以外のことも出てきます。そのときは `next` や `future` カードに書き留めましょう。書き留めることで、それらのタスクを覚えておかなければならないプレッシャーから解放されます
 - このシステムを自分のニーズに合わせてアレンジしてください
 
-## 学びを共有してください
+## 学びを共有してください {#contribute-your-lessons}
 
 GitLab はオールリモートが[仕事の未来](remote-vision/)だと考えており、リモート企業には、それを取り入れている他の組織に道を示す共同の責任があります。あなたやあなたの会社が世界の役に立つ体験をしているなら、[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)を作成してこのページに貢献することを検討してください。
 

@@ -6,18 +6,18 @@ tags:
   - security_standard
   - security_standard_cmma
 upstream_path: /handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/
-upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
-translated_at: "2026-10-22T21:16:55Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T07:20:25.783696+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-22T16:11:45Z"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ## 目的 {#purpose}
 
 このページの目的は、[スコープ](#scope)で定義するプロジェクトが満たさなければならない最小限の要件を概説することです。最終的な目標は、GitLab のコードベースに最終的に影響を与える変更が独立したレビューなしで行われないようにし、脆弱性やサプライチェーン攻撃が本番環境に到達するリスクを減らすことです。このページはまた、GitLab ユーザーが重要と考えるプロジェクトを保護するための構成例を示すことで、ユーザーを支援できます。
 
-GitLab の[ドッグフーディングへのコミットメント](/handbook/engineering/development/principles/#dogfooding)と[効率のバリュー](/handbook/values/#efficiency)を踏まえると、これらのベースラインプロジェクト構成は*すべての*プロジェクトに必要なわけではなく、[スコープ](#scope)で定義するプロジェクト、または別途伝えられた理由で重要と判断されるプロジェクトにのみ必要であることを理解することが重要です（こうした場合には、これらのベースライン構成が「なぜ」必要なのかを明確に説明できる必要があります）。
+GitLab の[ドッグフーディングへのコミットメント](/handbook/engineering/development/principles/#dogfooding)と効率のバリューを踏まえると、これらのベースラインプロジェクト構成は*すべての*プロジェクトに必要なわけではなく、[スコープ](#scope)で定義するプロジェクト、または別途伝えられた理由で重要と判断されるプロジェクトにのみ必要であることを理解することが重要です（こうした場合には、これらのベースライン構成が「なぜ」必要なのかを明確に説明できる必要があります）。
 
 ただし、チームメンバーがプロジェクトを作成または作業する際に、これらのベースライン構成を念頭に置くことが推奨されます。これらは、GitLab プロジェクトでなされる貢献のセキュリティと品質を向上させるように設計されているためです。
 
@@ -36,13 +36,13 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 - コードを持たないプロジェクト
 - GitLab のコードベースに影響を与えないボットをビルドするプロジェクト（例：YAML ファイルを CSV に変換するスクリプト）
 
-プロジェクトの使用法は時間の経過とともに自然にシフトする可能性があり、継続的にプロジェクトの使用法を再評価することが重要です。プロジェクトはどちらのカテゴリーにも入ったり出たりする可能性があるため、毎日プロジェクトで作業する際にそれを念頭に置いてください。期待されるのは、プロジェクトにこれらのベースライン構成が設定されている場合でも、チームメンバーが作業で協力し合い、個人が単一障害点になるリスクを高める知識のサイロでの作業を避けることで、効率が低下しないことです。これらの価値観はまた、変更に複数のチームメンバーを関与させることで、私たちの[透明性の価値](/handbook/values/#transparency)を促進します。
+プロジェクトの使用法は時間の経過とともに自然にシフトする可能性があり、継続的にプロジェクトの使用法を再評価することが重要です。プロジェクトはどちらのカテゴリーにも入ったり出たりする可能性があるため、毎日プロジェクトで作業する際にそれを念頭に置いてください。期待されるのは、プロジェクトにこれらのベースライン構成が設定されている場合でも、チームメンバーが作業で協力し合い、個人が単一障害点になるリスクを高める知識のサイロでの作業を避けることで、効率が低下しないことです。これらの価値観はまた、変更に複数のチームメンバーを関与させることで、私たちの透明性の価値を促進します。
 
 ### 自分のプロジェクトがどこに当てはまるかわかりません {#im-not-sure-where-my-project-fits}
 
 問題ありません！決して珍しいことではありません。質問がある場合は、私たちが対処し、適切なカテゴリーに当てはめられるよう、提起してください。プロジェクトの分類方法をここでイテレーションを行い、セキュリティと品質、そして効率へのコミットメントを確保できます。
 
-### 自分のプロジェクトは基準に当てはまらないようですが、それでもこれらの構成が必要ですか? {#my-project-doesnt-fit-seem-to-fit-the-criteria-but-i-still-need-these-configurations}
+### 自分のプロジェクトは基準に当てはまらないようですが、それでもこれらの構成が必要ですか？ {#my-project-doesnt-fit-seem-to-fit-the-criteria-but-i-still-need-these-configurations}
 
 プロジェクトがベースライン構成を要求するための一般的な基準を厳密に満たさないが、何らかの理由でプロジェクトをベースライン構成を使用して構成すべきと判断される場合もあります。こうした場合には、これらのベースライン構成の必要性の背後にある「理由」の根拠が明確に伝えられる必要があります。既存の基準を満たさないと思われるプロジェクトに対して多くの類似した根拠が提供される場合、それはプロジェクトのスコープと基準を調整すべきという指標である可能性があります。
 
@@ -58,10 +58,10 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 1. <a id="mr-approval-rule-configurations"></a>**レビューと承認を必須にします。**
    - GitLab の[コードレビューガイドライン](/handbook/engineering/workflow/code-review/)に従います。
    - レビューされていないコミットがマージされないよう、[マージリクエスト承認ルール](https://docs.gitlab.com/user/project/merge_requests/approvals/rules/)を設定します。デフォルトブランチへのマージ前に、少なくとも 1 件の承認を必須にします。
-   - 新しいコミットが追加されたら[すべての承認を削除する](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#remove-all-approvals-when-commits-are-added-to-the-source-branch)設定を有効にします。
-   - [マージリクエスト作成者による承認を禁止する](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approval-by-merge-request-creator)設定を有効にします。
-   - [コミットを追加したユーザーによる承認を禁止する](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approvals-by-users-who-add-commits)設定を有効にします。
-   - [マージリクエストでの承認ルールの編集を禁止する](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-editing-approval-rules-in-merge-requests)設定を有効にします。
+   - 新しいコミットが追加されたときに承認をすべて取り消す[Remove all approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#remove-all-approvals-when-commits-are-added-to-the-source-branch)設定を有効にします。
+   - [Prevent approval by merge request creator](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approval-by-merge-request-creator)設定を有効にします。
+   - [Prevent approvals by users who add commits](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approvals-by-users-who-add-commits)設定を有効にします。
+   - [Prevent editing approval rules in merge requests](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-editing-approval-rules-in-merge-requests)設定を有効にします。
    - 適用される SOX や FedRAMP の統制を含め、法律、規制、または契約が要求する場合は、人による承認を必須にします。
 
 1. <a id="note-on-usage-of-code-owners"></a>**Code Owner の承認を必須にします。**

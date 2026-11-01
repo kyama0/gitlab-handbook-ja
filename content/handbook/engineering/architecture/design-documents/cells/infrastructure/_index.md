@@ -8,16 +8,19 @@ coach: [ "@andrewn" ]
 status: proposed
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/infrastructure/"
-upstream_sha: "2dbfc49e47c784740ced3e2c617530f365412492"
-translated_at: "2026-10-11T23:57:10+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T08:29:27.696085+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-12T12:09:42+13:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 
 {{< engineering/design-document-header >}}
 
+各 Cell は複数の Organization をホストできます。
+Cell は、独自のデータベースとインフラストラクチャを持つ独立した GitLab インスタンスとして動作します。
+この柱を構成する個別のブループリントについては、[大規模ドメイン](#large-domains)の表を参照してください。
 
 ## 事前学習 {#pre-reads}
 
@@ -38,22 +41,23 @@ lastmod: "2026-10-12T12:09:42+13:00"
 - **ツールの一元化**: GitLab.com を管理するためのツールと GitLab Dedicated のための別のツールが多数あり、
   サイロ化、作業の重複、移植性の低下を招いています。
   GitLab.com に複数の Cell をプロビジョニングする必要があり、新しいツールが必要で、GitLab Dedicated はそのために専用ツールを構築しました。
-  このツールをできる限り使用するように努め、同意できないことがあれば[不同意、コミット、そして再び不同意する](/handbook/values/#disagree-and-commit)ようにして 1 つのツールを改善すべきです。
-  欠点があるツールから始めることは問題ありません。イテレーション的なアプローチにより、2 つではなく_1 つ_の成熟した製品が生まれます。
+  このツールをできる限り使用するように努め、同意できないことがあれば不同意、コミット、そして再び不同意するようにして 1 つのツールを改善すべきです。
+  欠点があるツールから始めることは問題ありません。イテレーション的なアプローチにより、2 つではなく _1 つ_ の成熟した製品が生まれます。
 
 ## 用語集/ユビキタス言語 {#glossaryubiquitous-language}
 
 [ユビキタス言語](https://martinfowler.com/bliki/UbiquitousLanguage.html)
 
-- `Provision`（プロビジョン）: 新しい Cell を作成するとき。例: Cell 5 を_プロビジョン_しました。これは全く新しい Cell です。
-- `Deploy`（デプロイ）: 既存の Cell の中で実行されているコードを変更するとき。例: GitLab.com で新しい auto-deploy バージョンを_デプロイ_しました。
+`Cell`、`Legacy Cell`、`Cluster` の正式な定義は、
+[目標、用語集、要件](../goals.md#glossary)を参照してください。以下の運用用語は
+Cells インフラストラクチャに固有のものです。
+
+- `Provision`（プロビジョン）: 新しい Cell を作成するとき。例: Cell 5 を _プロビジョン_ しました。これは全く新しい Cell です。
+- `Deploy`（デプロイ）: 既存の Cell の中で実行されているコードを変更するとき。例: GitLab.com で新しい auto-deploy バージョンを _デプロイ_ しました。
   - [ブループリント](deployments.md)
-- `Configuration change`（設定変更）: アプリケーションまたはインフラストラクチャの設定を変更するとき。例: VM に追加されたラベルに対して_設定変更_を行いました。
-- `Tenant`（テナント）: GitLab Dedicated ツール（[Instrumentor](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/instrumentor)）を通じてプロビジョニングされた GitLab インスタンス。テナントは GitLab Dedicated 顧客インスタンス_または_ Cell インスタンスのどちらかです。
-- `Cell`（セル）: 複数の顧客が単一のテナントを通じてサービスを受ける GitLab.com の一部となるようにプロビジョニングされたテナント。
-- `Legacy Cell`（レガシーセル）: 既存の GitLab.com デプロイメント。
+- `Configuration change`（設定変更）: アプリケーションまたはインフラストラクチャの設定を変更するとき。例: VM に追加されたラベルに対して _設定変更_ を行いました。
+- `Tenant`（テナント）: GitLab Dedicated ツール（[Instrumentor](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/instrumentor)）を通じてプロビジョニングされた GitLab インスタンス。テナントは GitLab Dedicated 顧客インスタンス _または_ [Cell](../goals.md#cell)の _いずれか_ です。Cell は、複数の顧客が単一のテナントを通じてサービスを受ける GitLab.com の一部となるようにプロビジョニングされたテナントです。
 - `Ring`（リング）: 単一のデプロイメントステージターゲットとしてグループ化された Cell の集合。例: リング 2 の Cell はリング 1 の Cell の後に変更をデプロイします。
-- `Cluster`（クラスター）: Cell の集合と既存の GitLab.com インフラストラクチャ。例: クラスター内の Registry のバージョンを変更する必要があります。
 - `Fleet`（フリート）: 本番環境を構成する、シングルテナントとマルチテナントの両方を含むすべての SaaS 環境の集合。
   既存の GitLab.com インフラストラクチャ、Cell、および Dedicated が含まれます。
 
@@ -415,6 +419,11 @@ Cell 以外のインフラストラクチャには引き続き使用されます
 | ドメイン                           | オーナー                             | ブループリント                                                                 | 信頼度 |
 |----------------------------------|-----------------------------------|---------------------------------------------------------------------------|------------|
 | ルーティング                          | group::tenant scale               | [ブループリント](../http_routing_service.md)                                   | 👍         |
+| トポロジーサービス | group::tenant scale | [ブループリント](../topology_service.md) | 👍 |
+| Cell サービス間の相互認証 | group::tenant scale | [ブループリント](../mutual_authentication_between_cell_services.md) | 👎 |
+| ルーティング可能なトークン | group::tenant scale | [ブループリント](../routable_tokens.md) | 👎 |
+| Container Registry ルーティングサービス | | [ブループリント](../container_registry_routing_service.md) | 👍 |
+| SSH ルーティングサービス | group::create | [ブループリント](../ssh_routing_service.md) | 👎 |
 | Cell コントロールプレーン               | group::Delivery/team::Foundations | 未対応                                                                     | 👎         |
 | Cell サイジング                      | team::Scalability-Observability   | [未対応](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2838) | 👎         |
 | CI ランナー                       | team::Scalability-Practices       | [ブループリント](runner.md)                                                    | 👎         |
@@ -423,8 +432,19 @@ Cell 以外のインフラストラクチャには引き続き使用されます
 | オブザーバビリティ                    | team::Scalability-Observability   | [ブループリント](observability.md)                                             | 👎         |
 | Cell アーキテクチャとツール    | team::Foundations                 | [ブループリント](cell_arch_tooling.md)                                         | 👍         |
 | プロビジョニング                     | team::Foundations                 | 未対応                                                                     | 👎         |
-| 設定管理/ロールアウト | team::Foundations                 | 未対応                                                                     | 👎         |
+| 設定管理/ロールアウト | team::Foundations                 | [ブループリント](../proposal-admin_area_setting_sychronization_in_cells.md)                                                                     | 👎         |
 | 障害復旧                | team::Production Engineering       | [ブループリント](disaster_recovery.md)                                        | 👎         |
+
+以下の設計ドキュメントには、まだ大規模ドメインの表に行がありません（オーナーと信頼度は
+それぞれの DRI に確認する必要があります）が、Cells インフラストラクチャの一部です。
+
+- [Cells ネットワーキング](networking.md)。
+- [Cells: オブザーバビリティ 2.0](observability_2_0.md)。上記の[オブザーバビリティ](observability.md)のブループリントで示した
+  集約レイヤーの要件に基づいています。
+- [Cells でのフィーチャーフラグの設定](feature_flags.md)（[前のイテレーション](../feature_flags.md)）。
+- [Cells での変更の調整](managing_changes.md)。
+- [Cells と Dedicated の違い](diff-between-dedicated.md)。
+- 計画中: インデックスサービス。設計ドキュメントはまだありません。
 
 ```plantuml
 @startuml
