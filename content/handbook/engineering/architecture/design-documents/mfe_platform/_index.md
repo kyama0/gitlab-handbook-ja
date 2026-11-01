@@ -9,9 +9,9 @@ owning-stage: "Plan"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-09T13:14:58+02:00"
-translated_at: "2026-10-20T12:33:40+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-23T10:57:11+03:00"
+translated_at: "2026-11-01T05:08:55+00:00"
 translator: codex
 stale: false
 ---
@@ -84,6 +84,13 @@ Duo Chat や Work Items などの製品領域は、
 - [ADR 001: ツールのリポジトリ戦略](decisions/001_tooling_repository_strategy.md) -
   密接に結合したツールにはモノレポ、独立したユーティリティにはポリレポを使用します。
   MFE アプリケーションコードをどこに置くかという未解決の問いも記載しています。
+- [ADR 002: 再利用可能なテストのアプローチ](decisions/002_reusable_testing_approach.md) -
+  モノリス、MFE、LabBench モジュールで共有する、ユニット、統合、
+  ブラウザー駆動の各レイヤーを備えた単一の `@gitlab/frontend-tests` パッケージです。
+- [ADR 003: モジュールに含めるパッケージ化と配信](decisions/003_module_carried_packaging_and_serving.md) -
+  LabBench モジュールは、単一のソースプロトコルを介して MFE を提供します。モノリスは
+  カタログを取得し、自身のオリジンから配信します。モジュールは、モノリスが所有する
+  語彙の範囲内で配置場所を宣言します。
 
 ## 先行事例と既存の取り組み {#prior-art-and-existing-work}
 

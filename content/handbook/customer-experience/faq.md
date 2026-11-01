@@ -1,17 +1,17 @@
 ---
-title: "カスタマーサクセスのよくある質問"
+title: "Customer Success のよくある質問"
 upstream_path: /handbook/customer-experience/faq/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T00:10:26+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:20:40+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## カスタマーサクセス FAQ 規約
+## Customer Success FAQ 規約 {#customer-success-faq-charter}
 
-カスタマーサクセスのチームメンバーは、GitLab に関するさまざまなトピックについて顧客からの質問に毎日直面しています。GitLab の[コラボレーション](/handbook/values/#collaboration)、[成果](/handbook/values/#results)、[効率性](/handbook/values/#efficiency)、[多様性、インクルージョン、所属意識](/handbook/values/#diversity-inclusion)、[イテレーション](/handbook/values/#iteration)、[透明性](/handbook/values/#transparency)という価値観を維持するため、他の GitLab チームメンバー（カスタマーサクセス内外を問わず）、顧客、そしてより広い GitLab コミュニティを助けるために、カスタマーサクセスチームとして顧客から受けた質問をこの FAQ に集めて更新しています。
+Customer Success のチームメンバーは、GitLab に関するさまざまなトピックについて顧客からの質問に毎日直面しています。GitLab のコラボレーション、成果、効率性、多様性、インクルージョン、所属意識、イテレーション、透明性という価値観を維持するため、他の GitLab チームメンバー（Customer Success 内外を問わず）、顧客、そしてより広い GitLab コミュニティを助けるために、Customer Success チームとして顧客から受けた質問をこの FAQ に集めて更新しています。
 
-Slack などで質問をして回答を受け取った場合は、このページに追加してください。Q&A が Slack にあった場合は、文書化されたことを他の人が分かるよう、スレッドに MR へのリンクを投稿してください。質問が文書化されていないことに気づいた場合は、[主体的に](/handbook/values/#short-toes)文書化して共有してください。[誰でも貢献できます](/handbook/company/mission/#mission)！
+Slack などで質問をして回答を受け取った場合は、このページに追加してください。Q&A が Slack にあった場合は、文書化されたことを他の人が分かるよう、スレッドに MR へのリンクを投稿してください。質問が文書化されていないことに気づいた場合は、主体的に文書化して共有してください。[誰でも貢献できます](/handbook/company/mission/#mission)！
 
 1.

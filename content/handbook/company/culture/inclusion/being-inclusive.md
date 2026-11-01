@@ -2,20 +2,20 @@
 title: "包括的であること"
 description: "私たちは全員が GitLab において包括的な環境を作り維持する責任を持っています。"
 upstream_path: /handbook/company/culture/inclusion/being-inclusive/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:08:55+00:00"
 translator: claude
 stale: false
-lastmod: "2024-07-09T00:48:53+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 包括的な環境を成功させるために不可欠なこと
+## 包括的な環境を成功させるために不可欠なこと {#what-is-fundamental-for-a-successful-inclusive-environment}
 
-私たちは**全員が** GitLab において包括的な環境を作り維持する**責任**を持っています。
+GitLab において包括的な環境を作り維持することは、私たち **全員の責任** です。
 
-私たちは全員、貢献し協力する**権限を持つ**必要があります。
+私たち全員が、貢献し協力する **力を与えられている** と感じられる必要があります。
 
-## GitLab における多様性・包括性・帰属意識
+## GitLab における多様性・包括性・帰属意識 {#diversity-inclusion--belonging-at-gitlab}
 
 多様性とは、育った場所、通った学校、経験、反応の仕方、年齢、人種、性別、国籍、見えるものと見えないものなど、私たちそれぞれが持つあらゆる違いを指します。
 
@@ -25,7 +25,7 @@ lastmod: "2024-07-09T00:48:53+00:00"
 
 詳しくは[多様性・包括性・帰属意識ページ](/handbook/company/culture/inclusion/)をご覧ください。
 
-## 包括的な行動とはどのようなものか
+## 包括的な行動とはどのようなものか {#what-inclusive-behaviors-look-like}
 
 1. 幅広い背景を持つチームメンバーから意見を取り入れ、積極的に求める。
 1. 積極的傾聴 — 話している人の言葉を注意深く聞き、理解していることを示すために言われたことを繰り返す。
@@ -36,9 +36,9 @@ lastmod: "2024-07-09T00:48:53+00:00"
 1. すべての声が届くようにする。できる限り全員を議論に参加させる。
 1. 相手に善意があると仮定し、自分の思い込みや判断を見直す。
 
-[包括的な言葉遣い](/handbook/values/#inclusive-language--pronouns)の詳細については、私たちの価値観ページをご覧ください。
+包括的な言葉遣いの詳細については、私たちの価値観ページをご覧ください。
 
-## 包括性トレーニング
+## 包括性トレーニング {#inclusion-training}
 
 2019 年 12 月に、包括性トレーニングを 3 セッション開催しました。以下から[スライドデッキ](https://docs.google.com/presentation/d/1WujXXxNDorIXB3NJeEnneC0dnOoqdFtcL6OhM-zWt4s/edit?usp=sharing)と[アジェンダ](https://docs.google.com/document/d/1za96EEONFnOp-cI1kflIstE-MIAKSlsYZbivjnhr6ys/edit?usp=sharing)に沿った録画セッションをご覧いただけます。
 
@@ -46,6 +46,6 @@ lastmod: "2024-07-09T00:48:53+00:00"
 {{< youtube "gsQ2OsmgqVM" >}}
 
 
-## 包括性ナレッジ評価
+## 包括性ナレッジ評価 {#inclusion-knowledge-assessment}
 
-どなたでも GitLab の包括性認定を取得できます。認定を取得するには、**[包括性ナレッジ評価クイズ](https://docs.google.com/forms/d/e/1FAIpQLSet0MW_GSOJUQkD3EMBLrSm3POKU6Y4opk_zFq31rFLCcWzwQ/viewform)**を完了し、80%以上を獲得する必要があります。クイズに合格すると、個人の LinkedIn や Twitter ページで共有できる認定書がメールで届きます。ご質問は、L&D チーム（`learning@gitlab.com`）までお問い合わせください。
+どなたでも GitLab の包括性認定を取得できます。認定を取得するには、 **[包括性ナレッジ評価クイズ](https://docs.google.com/forms/d/e/1FAIpQLSet0MW_GSOJUQkD3EMBLrSm3POKU6Y4opk_zFq31rFLCcWzwQ/viewform)** を完了し、80%以上を獲得する必要があります。クイズに合格すると、個人の LinkedIn や Twitter ページで共有できる認定書がメールで届きます。ご質問は、L&D チーム（`learning@gitlab.com`）までお問い合わせください。

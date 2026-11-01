@@ -8,11 +8,11 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/decision_log/"
-upstream_sha: "2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8"
-translated_at: "2026-10-20T21:04:28Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:15:22+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-20T13:32:50-04:00"
+lastmod: "2026-10-30T06:05:11+01:00"
 ---
 
 SDD の詳細は、[Spec-Driven Development](_index.md)を参照してください。
@@ -61,7 +61,9 @@ API とモデルでは、決定が答える質問に `question` を使用しま�
 - 決定を、その決定に至ったスレッドとコメントにリンクします。
 - 決定のテキストと決定者を編集したり、決定を削除またはアーカイブしたりします。アーカイブされた決定は、表示切り替えで表示できます。
 - ワークアイテムの UI で Duo の質問を解決すると、対応する決定も解決します。決定を作成または選択することで、任意のスレッドを解決する汎用的なアクションは、引き続き [Issue 603073](https://gitlab.com/gitlab-org/gitlab/-/work_items/603073)で追跡しています。
+- 決定用のクイックアクションと、決定を使って解決するオプションが [Issue 634656](https://gitlab.com/gitlab-org/gitlab/-/work_items/634656)で提案されています。この提案は引き続き議論中であり、まだ決定していません。この Issue では現在、1 つのスレッドから複数の決定が生まれる可能性があるため、スレッドから決定を作成しても、そのスレッドを解決する必要はないという方向で検討しています。
 - 決定を記録または解決すると、そのカードに直接リンクするシステムノートをアクティビティフィードに作成します。ノートは、意思決定ログの可視性ルールに従います（[マージリクエスト 259191](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259191)）。
+- アーカイブされた決定へのリンクを開くと、アーカイブ済みの決定を表示する切り替えをオンにし、そのカードが見える位置までスクロールします。存在しない決定へのリンクを開くと、閉じられる警告を表示し、他の決定は引き続き表示します（[マージリクエスト 263112](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263112)）。
 
 後のイテレーションに先送りしたものは、次のとおりです。
 

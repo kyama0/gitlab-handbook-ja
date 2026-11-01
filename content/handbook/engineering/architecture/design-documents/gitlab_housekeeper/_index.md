@@ -9,31 +9,31 @@ owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_housekeeper/
-upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
-translated_at: "2026-04-27T10:36:33Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:15:22+00:00"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 
 {{< engineering/design-document-header >}}
 
 
-## 概要
+## 概要 {#summary}
 
-このブループリントは、<https://gitlab.com/gitlab-org/gitlab/-/merge_requests/139492> で導入され、すでに多数のマージリクエストの作成に使用されている [「GitLab Housekeeper」gem](https://gitlab.com/gitlab-org/gitlab/-/tree/master/gems/gitlab-housekeeper) の背後にある哲学を文書化するものです。
+このブループリントは、<https://gitlab.com/gitlab-org/gitlab/-/merge_requests/139492> で導入され、すでに多数のマージリクエストの作成に使用されている [「GitLab Housekeeper」gem](https://gitlab.com/gitlab-org/gitlab/-/tree/master/gems/gitlab-housekeeper)の背後にある哲学を文書化するものです。
 
 このツールは、自動化できる単調な反復作業から開発者を解放するために使用するべきです。このツールは、開発者が単純なマージリクエストを作成する必要があり、かつ事前にわかっているタスクを対象としています。
 
 このツールは、少なくとも以下のような単調な MR の作成に役立てることができます:
 
-1. X 日後にフィーチャーフラグを削除する
+1. 日付 X を過ぎたらフィーチャーフラグを削除する
 1. 何らかの自動化によって特定された未使用のインデックスを削除する
-1. X 日後に `ignore_column` を削除する（カラムの名前変更・削除の多段階手順の一部）
+1. 日付 X を過ぎたら `ignore_column` を削除する（カラムの名前変更・削除の多段階手順の一部）
 1. シャーディングキーが欠けているテーブルに、組織・Cells 向けのシャーディングキーを追加する
 
-## 動機
+## 動機 {#motivation}
 
 多くのケースで、開発者が完全に予測可能で自動化可能なタスクに多くの手作業を行っていることが観察されています。多くの場合、これらの手作業は既知の一定期間の待機後に行われます。そのため、通常は Issue を作成して将来のマイルストーンを設定します。その後、将来の時点で開発者がその Issue をフォローアップすることを思い出し、手動変更のための MR を開きます。
 
@@ -44,7 +44,7 @@ lastmod: "2025-04-28T10:53:04-07:00"
 1. 古くなった `ignore_column` 参照の削除: <https://docs.gitlab.com/ee/development/database/avoiding_downtime_in_migrations.html#removing-the-ignore-rule-release-m2>。現在は削除が必要な日付をコードにメモとして残し、リマインダーとして Issue を作成することが多いです。このブループリントでは、自動化がこのメモを読み取り、日付を過ぎたら削除のための MR を開くことを提案します。
 1. Cells 向け組織のシャーディングキーの追加とバックフィル: <https://gitlab.com/gitlab-org/gitlab/-/merge_requests/133796>。Cells アーキテクチャは、すべてのテーブルが組織に紐付くシャーディングキーを持つことを前提としています。約 300 のテーブルについてこれをバックフィルする必要があります。この作業の多くは反復的で単調なものであり、グループがシャーディングキーの名前とバックフィル方法を特定するだけで自動化できます。そのため、シャーディングキーを推測する MR の作成を自動化でき、オーナーグループがそれらの MR を確認・修正できます。その後、カラムの追加とデータのバックフィルのための MR 作成を自動化できます。このような自動化は、合理的な期間内にこの作業を完了させるために必要です。
 
-### ゴール
+### ゴール {#goals}
 
 1. 開発時間を消費している共通タスクを特定して自動化する。
 1. Issue の作成ではなく MR の作成に焦点を当てる。MR は望む成果であり、Issue はその成果を得るためのリマインドプロセスです。
@@ -52,18 +52,18 @@ lastmod: "2025-04-28T10:53:04-07:00"
 1. 開発者は将来の開発者が同じ作業を繰り返すためにドキュメント化するのではなく、パターンを見つけたら自動化フレームワークに貢献することを奨励されるべきです。
 1. 自動化 MR は非常に容易に識別・レビューでき、他の MR よりもはるかに迅速にマージできるべきです。自動化 MR がレビュアーに過大な負担をかける場合、メリットを上回ってしまうかもしれません。これは、単純にノイズになっている一部の自動化が無効化されることを意味するかもしれません。
 
-## ソリューション
+## ソリューション {#solution}
 
-[GitLab Housekeeper gem](https://gitlab.com/gitlab-org/gitlab/-/tree/master/gems/gitlab-housekeeper) を使用して単調なマージリクエストの作成を自動化するべきです。
+[GitLab Housekeeper gem](https://gitlab.com/gitlab-org/gitlab/-/tree/master/gems/gitlab-housekeeper)を使用して単調なマージリクエストの作成を自動化するべきです。
 
-このツールの使用は、私たちの[行動バイアス](../../../../values/#operate-with-a-bias-for-action)サブバリューを反映しています。そのため、開発者は以下の代わりに新しい [keep](https://gitlab.com/gitlab-org/gitlab/-/tree/master/keeps) の貢献を優先するべきです:
+このツールの使用は、私たちの行動を優先するサブバリューを反映しています。そのため、開発者は以下の代わりに新しい [keep](https://gitlab.com/gitlab-org/gitlab/-/tree/master/keeps)の貢献を優先するべきです:
 
 1. 一定期間にわたって複数のマージリクエストを作成するプロセスの文書化
 1. （Slack や Issue で）マージリクエストを作成するための開発者への定期的なリマインダーの設定
 
 keeps の実装はドキュメントやリマインダーよりも多くの作業を必要とする場合があるため、自動化を使用することによって見込まれる時間節約を評価するために判断が必要です。`gitlab-housekeeper` gem は多くのユーティリティを備えて時間をかけて進化し、新しい keeps の貢献をより簡単にします。時間が経つにつれて、keeps の実装コストは十分に小さくなり、開発者が反復可能なタスクを数回以上行う必要がある場合はほとんどの場合これを優先するようになることが期待されます。
 
-## 設計と実装の詳細
+## 設計と実装の詳細 {#design-and-implementation-details}
 
 このアーキテクチャの主要な詳細は以下の通りです:
 

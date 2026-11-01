@@ -1,11 +1,11 @@
 ---
 title: "Plan:Work Items"
 upstream_path: /handbook/product/groups/work-items/
-upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
-translated_at: "2026-10-09T21:10:17+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:08:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-06T15:47:25+03:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ### Plan: Work Items {#welcome}
@@ -44,7 +44,7 @@ GitLab の Issue で質問する際は、まず Product Manager（`@gweaver`）�
 
 ### 私たちの働き方 {#how-we-work}
 
-- 私たちの [GitLab の価値観](/handbook/values/)に従います。
+- 私たちの GitLab の価値観に従います。
 - 透明性を保ちます。ほぼすべてを公開し、可能な限りミーティングを録画/ライブ配信します。
 - 自分が取り組みたいことに取り組む機会があります。
 - 誰でも貢献できます。サイロはありません。

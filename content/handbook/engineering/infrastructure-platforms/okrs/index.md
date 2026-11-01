@@ -1,56 +1,56 @@
 ---
 title: "Infrastructure Platforms の OKR"
 upstream_path: /handbook/engineering/infrastructure-platforms/okrs/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T04:33:53+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-24T12:53:30-05:00"
+lastmod: "2026-10-28T11:20:12-04:00"
 ---
 
-## Platforms における OKR
+## Platforms における OKR {#okrs-in-platforms}
 
-### OKR の作成
+### OKR の作成 {#creating-okrs}
 
-進捗追跡を必要とする [OKR](/handbook/company/okrs/)（またはプロジェクト外のその他の項目）は、**毎週水曜日**に更新する必要があります。
+進捗追跡を必要とする [OKR](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)（またはプロジェクト外のその他の項目）は、**毎週水曜日**に更新する必要があります。
 
 OKR を作成する際のガイダンスは以下の通りです:
 
 * Objective（目標）は「**何を**達成したいか？」と定義されます
 * Key Results（主要成果）は「目標を達成したことを**いつ**どうやって知るか？」と定義されます
-* KR の一部として、サブポイントを設けることもできます — これはエピックに紐付く可能性が高く、「Initiative（取り組み）」と呼ばれ、「主要成果をどのように**達成するか**？」と定義されます
+* KR の一部として、サブポイントを設けることもできます — これはエピックに紐付く可能性が高く、「Initiative（取り組み）」と呼ばれ、「**どのように**主要成果を達成するか？」と定義されます
 
-#### Objectives
+#### 目標 {#objectives}
 
 Objective の説明は以下のフォーマットに従う必要があります:
 
 ```markdown
 ### Context
 
-<Objective と解決しようとしている問題についてのコンテキスト>
+<context about the Objective and the problem it is trying to solve>
 
 ### Linked Epics and Issues
 
-<関連するエピックまたは Issue の番号付きリスト>
+<numbered list of relevant epics or issues>
 ```
 
 説明に他のセクションも必要な場合は、上記のブロックの後に追加できます。
 
-#### Key Results
+#### 主要成果 {#key-results}
 
 Key Result の説明は以下のフォーマットに従う必要があります:
 
 ```markdown
 ### Context
 
-<この Key Result が Objective の目標達成にどのように貢献するかについてのコンテキスト>
+<context about how this Key Result contributes to meeting the goal of the Objective>
 
 ### Scoring Criteria
 
-<貢献パーセンテージを含むエピックまたは Issue の番号付きリスト>
+<numbered list of epics or issues with the percentage contribution>
 ```
 
-### OKR を最新の状態に保つ
+### OKR を最新の状態に保つ {#keeping-okrs-up-to-date}
 
 Objectives および Key Results は毎週水曜日に更新する必要があります。
 
@@ -63,7 +63,7 @@ Objectives の進捗はオートメーションによって行われるため、
 大きなステータスアップデートを行わない理由は、リンクされた Issue やエピックに既に存在するステータス情報に依存しているからです。
 OKR プロセスを可能な限り軽量に保つよう努めています。
 
-### OKR レトロスペクティブ
+### OKR レトロスペクティブ {#okr-retrospective}
 
 四半期末に、各チームは Objectives についてレトロスペクティブを実施する必要があります。
 レトロスペクティブの形式は定められていません — 別の Issue または Objective 自体で実施できます。
@@ -75,15 +75,15 @@ OKR プロセスを可能な限り軽量に保つよう努めています。
 
 #### Good
 
-<この OKR 期間中にうまくいったことを 2〜3 つの箇条書きでまとめる>
+<2-3 bullet points summarising what went well during this OKR>
 
 #### Bad
 
-<この OKR 期間中にうまくいかなかったことを 2〜3 つの箇条書きでまとめる>
+<2-3 bullet points summarising what didn't go well during this OKR>
 
 #### Try
 
-<次回は異なるやり方を試すべきことを 2〜3 つの箇条書きでまとめる>
+<2-3 bullet points summarising what we should try to do differently next time>
 
 ```
 

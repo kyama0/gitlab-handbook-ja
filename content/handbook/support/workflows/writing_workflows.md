@@ -3,31 +3,31 @@ title: ワークフローの書き方
 category: References
 description: 良いワークフローページを書くためのガイドライン、根拠、リソース。
 upstream_path: /handbook/support/workflows/writing_workflows/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T05:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T04:33:53+00:00"
 translator: claude
 stale: false
-lastmod: "2025-02-24T23:06:08+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 このページは、新規ワークフローを作成したり既存ワークフローを更新したりする際の、ワークフローページの書き方に関するガイダンスを提供することを目的としています。
 
 このページ自体のガイダンスの精神に則り、読みやすく、ざっと目を通せるように作成しています。
 
-## なぜ重要なのか
+## なぜ重要なのか {#why-this-is-important}
 
 情報を書き留めておくことには多くのメリットがありますが、必要な情報を見つけてもらうためには、整理された状態であることも必要です。
 
 特にワークフローでは整理が重要です。なぜなら、プロセスの手順は一部のケースにのみ適用されることが多いからです。
 チームメンバーがプロセスに従いやすくしつつ、タスクを完了するために必要な部分だけを読めるようにすることは、効率のために必要です。
 
-ワークフローを作成、更新、改善することは [GitLab values]/handbook/values/) と一致しており、以下を含む多くの私たちの運営原則とアプローチを強調しています:
+ワークフローを作成、更新、改善することは GitLab の価値観と一致しており、以下を含む多くの私たちの運営原則とアプローチを強調しています:
 
-- [Handbook first](/handbook/about/handbook-usage/#why-handbook-first)
-- [See something, say something](/handbook/values/#see-something-say-something)
-- [Everyone can contribute](/handbook/values/#mission)
+- [ハンドブックファースト](/handbook/about/handbook-usage/#why-handbook-first)
+- 何か気づいたら伝える
+- 誰もが貢献できる
 
 このページ自体は、[サポート効率化に関する議論](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/2927)から生まれました。
 
@@ -50,7 +50,7 @@ lastmod: "2025-02-24T23:06:08+00:00"
 
 包括的言語の使用や Markdown の使用を含む一般的な記述慣行については、[GitLab ドキュメンテーションガイドライン](https://docs.gitlab.com/development/documentation/styleguide/)に従うことを検討してください。
 
-### "そこそこ" から "より良い" への例
+### "そこそこ" から "より良い" への例 {#example-from-okay-to-better}
 
 [Support Time Off ページ](/handbook/support/support-time-off)を例として取り上げてみましょう（ワークフローページではありませんが、プロセス関連です）。
 
@@ -86,7 +86,7 @@ lastmod: "2025-02-24T23:06:08+00:00"
 
 これは小さな例ですが、コンテンツの整理方法の違いが、読み手にとってどのように読みやすく効率的になるかを示す良い例だと願っています。
 
-## 新規ワークフローの作成
+## 新規ワークフローの作成 {#creating-a-new-workflow}
 
 新規ワークフローを作成する際は、[上記のガイドライン](#basic-guidelines)を念頭に置き、以下のプロセスを検討してください:
 
@@ -97,14 +97,14 @@ lastmod: "2025-02-24T23:06:08+00:00"
     1. 整理と構造。
     1. 明瞭さと簡潔さ。
 
-### テンプレート
+### テンプレート {#template}
 
 ワークフローには特定のテンプレートはありません（以下に記載のメタデータを除く）。始めるためのいくつかの場所:
 
 1. 別のワークフローをテンプレートとして使用する。
 1. [GitLab ドキュメンテーションの構造とテンプレート](https://docs.gitlab.com/development/documentation/site_architecture/folder_structure/)を使用する。
 
-#### メタデータ
+#### メタデータ {#metadata}
 
 以下のメタデータと目次の項目はすべてのワークフローページの上部にあるべきです。
 

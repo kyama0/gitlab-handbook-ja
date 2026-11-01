@@ -1,29 +1,30 @@
 ---
 title: "Secret Detection ランブック"
 upstream_path: /handbook/engineering/development/sec/security-factory/secret-detection/runbooks/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T07:45:00+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:15:22+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-10-23T19:27:19+02:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 このページでは、インシデントの監視、軽減、および対応のために Secret Detection チームが使用するランブックを一覧します。
 
-## ランブック
+## ランブック {#runbooks}
 
 * Secret Push Protection 機能
   * [モニタリング](secret-push-protection-monitoring)
   * [トラブルシューティング](secret-push-protection-troubleshooting)
   * [パフォーマンステスト](secret-push-protection-performance-testing)
-* Secret Detection サービス
+* Secret Detection Service
   * [一般的な FAQ](secret-detection-svc-faqs)
   * [モニタリング](secret-detection-svc-monitoring)
   * _トラブルシューティング（[#494910](https://gitlab.com/gitlab-org/gitlab/-/issues/494910)と [#499249](https://gitlab.com/gitlab-org/gitlab/-/issues/499249)が完了次第追加予定）_
-* シークレット有効性チェック
+* Secret Validity Check
   * [一般的な FAQ](secret-detection-validity-check-faqs)
   * [モニタリング](secret-detection-validity-check-monitoring)
-  * 外部トークン検証
+  * External Token Verification
     * [トラブルシューティング](secret-detection-validity-check-troubleshooting)
+  * [ベンダーの追加（開発プロセス）](../validity-check-development-process)

@@ -1,18 +1,18 @@
 ---
 title: "Community Learning Pathway: コースリソース"
 upstream_path: /handbook/marketing/developer-relations/community-pathway/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:25:20+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:15:22+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T21:20:33+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## Community Learning Pathway
+## Community Learning Pathway {#community-learning-pathway}
 
-Community Learning Pathway は、GitLab Learn プラットフォーム上のコースで、GitLab チームメンバーとコミュニティに、GitLab のコミュニティプログラム、コミュニティへのコミットメント、そしてコミュニティチームへのエンゲージ方法について教育することを目的としています。コース修了時に、受講者は GitLab コミュニティとそのエンゲージ方法を十分に理解していることを示すバッジを獲得します。
+Community Learning Pathway は、GitLab Learn プラットフォーム上のコースで、GitLab チームメンバーとコミュニティに、GitLab のコミュニティプログラム、コミュニティへのコミットメント、そして Community Team へのエンゲージ方法について教育することを目的としています。コース修了時に、受講者は GitLab コミュニティとそのエンゲージ方法を十分に理解していることを示すバッジを獲得します。
 
-### コースの目的
+### コースの目的 {#course-objectives}
 
 このコースの修了時に、チームメンバーには以下を期待します:
 
@@ -29,7 +29,7 @@ GitLab コミュニティも以下が可能になります:
 1. 協働方法と、より多くの情報を見つける場所を学ぶ
 1. 誰に、いつ連絡すべきかを理解する
 
-### コースアウトライン
+### コースアウトライン {#course-outline}
 
 1. はじめに
 1. コミュニティが GitLab の戦略にどのように適合するか
@@ -37,13 +37,13 @@ GitLab コミュニティも以下が可能になります:
 1. オープンソースコミュニティのベストプラクティス
 1. 参加方法
 
-### イントロダクション動画
+### イントロダクション動画 {#introduction-video}
 
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/JGiwxKnxeRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-### コミュニティが GitLab の戦略にどのように適合するか
+### コミュニティが GitLab の戦略にどのように適合するか {#how-community-fits-into-gitlabs-strategy}
 
 GitLab は DevOps プラットフォームであり、コミュニティからの貢献によって実現されています。GitLab コミュニティは、有償・無償のユーザー、コントリビューター、チームメンバー、そして何らかの形で GitLab とインタラクションを持った一般コミュニティの誰もが含まれます。私たちの戦略の詳細については、以下のリンクをご覧ください。
 
@@ -57,32 +57,32 @@ GitLab は DevOps プラットフォームであり、コミュニティから�
   * [リリースごとの広域コミュニティのマージ済み MR](/handbook/marketing/developer-relations/performance-indicators/#wider-community-merged-mrs-per-release)
   * [Developer Advocate 月次インプレッション](/handbook/marketing/developer-relations/performance-indicators/#developer-advocacy-monthly-impressions)
 
-### GitLab のコミュニティプログラム
+### GitLab のコミュニティプログラム {#gitlabs-community-programs}
 
-#### コミュニティの構造
+#### コミュニティの構造 {#how-our-community-is-structured}
 
-「誰もが貢献できる」を実現するためには、コミュニティが必要なツールで支援され、サポートされていることを確実にする意識的な努力が必要です。そこで、GitLab のコミュニティチームは、コミュニティのさまざまな部分を対象としたプログラムで重要な役割を果たします。オープンソースコミュニティから、アカデミア、スタートアップ、個々のコントリビューターまで、チームはさまざまな方法で彼らをサポートします。以下のセクションで個別のプログラムについて学べます。
+「誰もが貢献できる」を実現するためには、コミュニティが必要なツールで支援され、サポートされていることを確実にする意識的な努力が必要です。そこで、GitLab の Community Team は、コミュニティのさまざまな部分を対象としたプログラムで重要な役割を果たします。オープンソースコミュニティから、アカデミア、スタートアップ、個々のコントリビューターまで、チームはさまざまな方法で彼らをサポートします。以下のセクションで個別のプログラムについて学べます。
 
-#### コミュニティプログラム
+#### コミュニティプログラム {#community-programs}
 
 * 無償のコミュニティプログラム:
   * [OSS](/handbook/marketing/developer-relations/programs/open-source-program/)
   * [Developer Evangelism](/handbook/marketing/product-and-technical-marketing/developer-advocacy/)
-  * [Education プログラム](/handbook/marketing/developer-relations/programs/education-program/)
-* [GitLab Diversity Scholarship プログラム](https://about.gitlab.com/community/sponsorship/)
+  * [Education Program](/handbook/marketing/developer-relations/programs/education-program/)
+* [GitLab Diversity Scholarship program](https://about.gitlab.com/community/sponsorship/)
 
-#### GitLab の Education プログラム
+#### GitLab の Education プログラム {#education-program-at-gitlab}
 
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/TJhdmOma4ZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-### オープンソースコミュニティのベストプラクティス
+### オープンソースコミュニティのベストプラクティス {#open-source-community-best-practices}
 
-包括的で透明性のあるコミュニティを構築することは、コミュニティチームの最優先事項であり、私たちは Diversity/Inclusion と Transparency を含む GitLab の価値観に従って活動しています。以下では、GitLab コミュニティと他のコミュニティから学んだコミュニティのベストプラクティスを継続的に更新しているリストを維持しています。
+包括的で透明性のあるコミュニティを構築することは、Community Team の最優先事項であり、私たちは Diversity/Inclusion と Transparency を含む GitLab の価値観に従って活動しています。以下では、GitLab コミュニティと他のコミュニティから学んだコミュニティのベストプラクティスを継続的に更新しているリストを維持しています。
 
-* [私たちのコミュニティで DIB を育む](/handbook/values/#diversity-inclusion)
-* [透明性とオープンさ](/handbook/values/#transparency)
+* 私たちのコミュニティで DIB を育む
+* 透明性とオープンさ
 * [Kubernetes Community Values](https://www.kubernetes.dev/community/values/#inclusive-is-better-than-exclusive)
 * [Building Leadership in an Open SOurce Community](https://www.linuxfoundation.org/resources/open-source-guides/building-leadership-in-an-open-source-community)
 * [Participating in Open Source Communities](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities)
@@ -90,9 +90,9 @@ GitLab は DevOps プラットフォームであり、コミュニティから�
 * [The Value of Open Source](https://www.redhat.com/en/blog/value-open-source)
 * [Mozilla Community Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
 
-### 参加方法
+### 参加方法 {#join-us}
 
-コミュニティチームは常に社内および外部チームとパートナーシップを組み、コミュニティをエンパワーしてきました。私たちはより多くを実現するためのコラボレーションを常に求めています。各コミュニティプログラムには Issue ボードがあり、そこに Issue を作成してコラボレーションを開始できます。または、GitLab チームメンバーで、どこから始めればよいかわからない場合は、いつでも Slack の `#developer-relations` チャンネルにお越しください。
+Community Team は常に社内および外部チームとパートナーシップを組み、コミュニティをエンパワーしてきました。私たちはより多くを実現するためのコラボレーションを常に求めています。各コミュニティプログラムには Issue ボードがあり、そこに Issue を作成してコラボレーションを開始できます。または、GitLab チームメンバーで、どこから始めればよいかわからない場合は、いつでも Slack の `#developer-relations` チャンネルにお越しください。
 
 * Developer Relations チームと協働する方法
   * [Developer Relations Programs](/handbook/marketing/developer-relations/programs/operational-guidelines/)

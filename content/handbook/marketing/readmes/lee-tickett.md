@@ -1,26 +1,26 @@
 ---
-title: "Lee Tickett - フルスタックエンジニア、Developer Relations Engineering - README"
-description: "GitLab のフルスタックエンジニア、Developer Relations Engineering の Lee Tickett と働く際の参考情報をご紹介します。"
+title: "Lee Tickett - Fullstack Engineer, Developer Relations Engineering - README"
+description: "GitLab の Fullstack Engineer, Developer Relations Engineering の Lee Tickett と働く際の参考情報をご紹介します。"
 job: "Fullstack Engineer, Developer Relations Engineering"
 upstream_path: /handbook/marketing/readmes/lee-tickett/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:15:22+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-27T13:30:59+01:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-![Lee Tickett's contribution stats](https://contributors.gitlab.com/users/leetickett-gitlab/banner.svg)
+![Lee Tickett の貢献統計](https://contributors.gitlab.com/users/leetickett-gitlab/banner.svg)
 
-## 自己紹介
+## 自己紹介 {#about-me}
 
-私は [Developer Relations Engineering チーム](/handbook/marketing/developer-relations/engineering/) のフルスタックエンジニア、Lee Tickett です。
-GitLab には 2022 年 10 月に入社しました。それ以前は、お客様、コントリビューター、そして [Core チームメンバー](https://about.gitlab.com/community/core-team/) として GitLab に関わっていました。
+私は [Developer Relations Engineering チーム](/handbook/marketing/developer-relations/engineering/)の Fullstack Engineer、Lee Tickett です。
+GitLab には 2022 年 10 月に入社しました。それ以前は、お客様、コントリビューター、そして [Core チームメンバー](https://about.gitlab.com/community/core-team/)として GitLab に関わっていました。
 
 イギリスのロンドン近郊、Southend-on-Sea に住んでいます。
-朝から午後にかけて仕事をし、家族との時間で中断した後、夜に少し作業することが多いです。
+朝から午後半ばにかけて仕事をし、家族との時間で中断した後、夜に少し作業することが多いです。
 
-## プロジェクト
+## プロジェクト {#projects}
 
 私が主に取り組んでいるのは以下のプロジェクトです。
 
@@ -28,13 +28,13 @@ GitLab には 2022 年 10 月に入社しました。それ以前は、お客様
 - [GitLab モノリス](https://gitlab.com/gitlab-org/gitlab)（Ruby/VueJS）
 - [Triage-ops](https://gitlab.com/gitlab-org/quality/triage-ops)（Ruby）
 
-## 仕事のスタイル
+## 仕事のスタイル {#how-i-work}
 
 - 動きは速いです。
 - POC を作って早く失敗し、イテレーションするのが好きです。
-- 成果を追い求める際は、[bias for action](/handbook/values/#operate-with-a-bias-for-action)、
-  [short toes](/handbook/values/#short-toes)、
-  [low level of shame](/handbook/values/#low-level-of-shame-when-dogfooding) を実践しています。
+- 成果を追い求める際は、行動を優先し、
+  過度に縄張り意識を持たず、
+  失敗を過度に恥じないようにしています。
 - 公の場で働き、コラボレーションし、アイデアを出し合い、透明であることを大切にしています。
 - 仕事は GitLab の TODO キューから進めており、深さは 1 日分程度に保つことを目指しています。
 
@@ -51,7 +51,7 @@ GitLab には 2022 年 10 月に入社しました。それ以前は、お客様
 - イテレーションできないこと
 - 自分で完結できず、他人に依存しなければならないこと
 
-## コミュニケーション方法
+## コミュニケーション方法 {#how-to-communicate}
 
 - **ベスト:** Issue とマージリクエスト（私の TODO キューに入ります）。
 - **OK:** Discord/Slack。ただし他の人も参加・学習できる公開チャンネルが好みです。
@@ -59,32 +59,32 @@ GitLab には 2022 年 10 月に入社しました。それ以前は、お客様
 - **コーヒーチャット:** 誰でも、いつでもどうぞ。
   ご都合の良い時間でスケジュールしてください。
 
-## 趣味 / コーヒーチャットのトピック
+## 趣味 / コーヒーチャットのトピック {#hobbies--coffee-chat-topics}
 
 - レトロゲーム（アーケード、ピンボール、NES、SNES、N64、PlayStation）。
 - 古い技術へのノスタルジー（BBC computers、Acorn、Visual Basic/VBA）。
 - 物を分解していじり倒すこと（電子工作）と DIY。
 - 私の役割、製品、そしてコミュニティ！
 
-## 強み
+## 強み {#strengths}
 
 - 問題解決: 課題が大好きで、行き詰まることはほとんどありません。
 - コンテキスト: 製品、会社、コミュニティをよく知っています。
 - つながり: 誰に聞けばよいか、どこを見ればよいかをよく知っています。
 - 共感: お客様からチームメンバーになった経験により、お客様とコミュニティを理解しやすいです。
 
-## 改善中の点
+## 改善中の点 {#working-to-improve}
 
 - フォーカスタイムを作ること。
 - もっと先まで計画すること。
 
-## 使っているツール
+## 使っているツール {#tools-i-use}
 
 - VSCode と devcontainers。
 - GitLab Duo AI（私のラバーダック）。
 - GitLab TODO。
 
-## コミュニティ
+## コミュニティ {#community}
 
 私たちのミッションは「誰もがコントリビュートできる」ことです。
 ここまで進んできましたが、まだ長い道のりがあります。

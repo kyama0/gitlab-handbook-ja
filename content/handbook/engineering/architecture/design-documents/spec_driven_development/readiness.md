@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/readiness/"
-upstream_sha: "2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8"
-lastmod: "2026-10-20T13:32:50-04:00"
-translated_at: "2026-10-20T21:12:55Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-30T06:05:11+01:00"
+translated_at: "2026-11-01T05:03:57+00:00"
 translator: "codex"
 stale: false
 ---
@@ -50,13 +50,15 @@ SDD の詳細は、[Spec-Driven Development](_index.md)を参照してくださ�
 
 Implementation ウィジェットは、ゼロも含めた数値のスコアが存在する場合にのみ、準備状況インジケーターを表示します。
 
-| スコア | レベル | インジケーター |
-| ----- | ----- | --------- |
-| 0–39 | Low | バー 1 本、エラー |
-| 40–79 | Medium | バー 2 本、警告 |
-| 80–100 | High | バー 3 本、成功 |
+| スコア | レベル | インジケーターの色 |
+| ----- | ----- | --------------- |
+| 0–39 | Low | エラー |
+| 40–79 | Medium | 警告 |
+| 80–100 | High | 成功 |
 
-**Readiness details** は、**How to improve readiness?** というタイトルのオーバーレイドロワーを開きます。表示の要求があった時点でレンダリング済みのフィードバックを取得し、準備状況のレベルはウィジェット内に維持します。ドロワーを開いても、ワークアイテムのサイズや URL は変わりません。閉じると、開くきっかけとなった要素にフォーカスを戻します（[マージリクエスト 259135](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259135)）。
+インジケーターバーは、0–100 の範囲に制限されたスコアに応じて伸びるため、スコアが 85 の場合と 100 の場合では見た目が異なります。レベル、色、ラベルには、引き続き上記のしきい値を適用します（[マージリクエスト 263153](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263153)）。
+
+**Readiness details** は、**Readiness** というタイトルのオーバーレイドロワーを開きます。タイトルは、どのスコア状態でも同じです。フィードバックがある場合は、ドロワーの本文で **How to improve readiness** という見出しの下に表示するため、100% の状態など、状態ごとの他のコンテンツを表示する余地を残せます（[マージリクエスト 263908](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263908)）。ドロワーは、表示の要求があった時点でレンダリング済みのフィードバックを取得し、準備状況のレベルはウィジェット内に維持します。ドロワーを開いても、ワークアイテムのサイズや URL は変わりません。閉じると、開くきっかけとなった要素にフォーカスを戻します（[マージリクエスト 259135](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259135)）。
 
 スコアが存在しない場合、UI はまだ、評価中、失敗、キャンセル、未評価の状態を区別しません。専用の `readinessScoreStatus` フィールドが、[マージリクエスト 262079](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/262079)で提案されており、UI は [Issue 633076](https://gitlab.com/gitlab-org/gitlab/-/work_items/633076)で追跡しています。
 
@@ -75,6 +77,6 @@ Implementation ウィジェットは、ゼロも含めた数値のスコアが�
 ## 未解決の質問 {#open-questions}
 
 - 計画生成前にもスコアリングするかどうかと、計画の実行とは独立してスコアリングに対応する方法。
-- 準備状況が 100% のときの空のフィードバックの扱い（[Issue 633996](https://gitlab.com/gitlab-org/gitlab/-/work_items/633996)）と、100% 未満の高いスコアをより正確に表示すること（[Issue 633988](https://gitlab.com/gitlab-org/gitlab/-/work_items/633988)）。
+- 準備状況が 100% のときの空のフィードバックの扱い（[Issue 633996](https://gitlab.com/gitlab-org/gitlab/-/work_items/633996)）。
 - 引き渡し前の警告に対するデフォルトのしきい値。
 - スコアの履歴を保存するか、現在のスコアのみを保存するか。

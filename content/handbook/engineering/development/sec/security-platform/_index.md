@@ -4,9 +4,9 @@ description: >-
   Security Platform ステージは、GitLab プラットフォームの認証、認可、不正利用防止、
   シークレット管理、ソフトウェアサプライチェーンの基盤を構築します。
 upstream_path: /handbook/engineering/development/sec/security-platform/
-upstream_sha: 7a4e62958b31234a80d386bf4b7c8dd855df2cb8
-lastmod: "2026-09-08T22:02:15Z"
-translated_at: "2026-09-10T11:11:28+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-29T12:50:31+11:00"
+translated_at: "2026-11-01T05:03:57+00:00"
 translator: codex
 stale: false
 ---
@@ -15,14 +15,14 @@ Security Platform エンジニアリングステージは、GitLab の他のす�
 
 このステージは、旧 Software Supply Chain Security ステージと Dynamic Analysis グループを基に、FY27 の Sec 再編で設立されました。
 
-## リーダーシップ
+## リーダーシップ {#leadership}
 
 | ロール | 担当者 |
 | --- | --- |
-| ステージリード | Mark Mishaev（`@mmishaev`） |
-| Senior Staff Engineer | James Hebden（`@jhebden`） |
+| Stage lead | Mark Mishaev（`@mmishaev`） |
+| Senior Staff Engineer | Rane Hebden（`@ranehebden`） |
 
-## チーム
+## チーム {#teams}
 
 | グループ | Engineering Manager | Tech Lead | ラベル |
 | --- | --- | --- | --- |
@@ -38,14 +38,14 @@ Security Platform エンジニアリングステージは、GitLab の他のす�
 
 グループメンバー情報は Workday を情報源とし、[プロダクトカテゴリページ](/handbook/product/categories/#sec-section)で公開しています。
 
-## ラベル
+## ラベル {#labels}
 
 このステージの作業には、`devops::security platform` ステージラベルに加えて、担当グループの `group::` ラベルが付けられます。どちらもスコープ付きラベルであり、`gitlab-org` と `gitlab-com` のトップレベルグループに存在します。
 
-## Slack
+## Slack {#slack}
 
 各グループのチャンネルは、それぞれのグループページに記載されています。複数のチャンネル名変更がまだ進行中であり、[Sec 再編 Issue 2](https://gitlab.com/gitlab-org/software-supply-chain-security/reorg-act2-2026-06/-/issues/2)で追跡しています。
 
-## オンコール
+## オンコール {#on-call}
 
 このステージのチームは Sec オンコールローテーションに参加します。[Sec オンコールハンドブック](/handbook/engineering/development/sec/oncall/)を参照してください。
