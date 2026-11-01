@@ -3,9 +3,9 @@ description: "コミュニティの懸念への対応の計画と調整に Devel
 linkTitle: "Community response"
 title: "Developer Advocacy のコミュニティ対応プロセス"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/community-response/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:36:34+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T05:55:57+00:00"
 translator: codex
 stale: false
 ---
@@ -18,14 +18,14 @@ Developer Advocacy チームのコミュニティへの理解と GitLab に関�
 
 ### 通知 {#notification}
 
-* **来たる発表:** Developer Advocacy チームに、コミュニティから反応を引き起こす可能性のある来たる発表、製品変更、その他のニュースイベントを通知するには、DRI は関連する Issue で `@johncoghlan` にコメントするか、[#developer-advocacy Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B)で Developer Advocacy チームに通知してください。また、この発表に関連する Issue または エピック に `~Community Interest` および `~Community response` ラベルを付けてください。
+* **来たる発表:** Developer Advocacy チームに、コミュニティから反応を引き起こす可能性のある来たる発表、製品変更、その他のニュースイベントを通知するには、DRI は関連する Issue で `@johncoghlan` にコメントするか、[#developer-advocacy Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B)で Developer Advocacy チームに通知してください。また、この発表に関連する Issue またはエピックに `~Community Interest` および `~Community response` ラベルを付けてください。
 * **進行中の状況:** Developer Advocacy チームに進行中の緊急の状況を通知するには、状況が議論されている Slack スレッドまたはチャンネル、または [#developer-advocacy Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B)で `@dev-advocates` ユーザーグループにタグを付けてください。
 * 発表のメッセージングへの影響、コミュニティへの返信の準備、対応のスケジューリングを支援できるよう、Developer Advocacy チームにできるだけ早めに通知してください。詳細は以下の **スケジューリング** を参照してください。
 * 関連する Issue、エピック、MR に `Community response` ラベルを追加してください。私たちのチームは、[gitlab-com](https://gitlab.com/groups/gitlab-com/-/labels?search=community+response)と [gitlab-org](https://gitlab.com/groups/gitlab-org/-/labels?search=community+response)グループのラベルを所有しています。次のクイックアクションを使用してラベルを適用できます: `/label ~"dev-evangelism" ~"Community response"`
 
 ### 準備 {#preparation}
 
-* GitLab の [効率（efficiency）バリュー](/handbook/values/#efficiency)に沿って、Developer Advocate はコミュニティ対応の状況の [直接の責任者（DRI）](/handbook/people-group/directly-responsible-individuals/)と協力して、DRI と他の専門家がコミュニティのフィードバックや質問に直接対処できるよう支援します。
+* GitLab の効率性のバリューに沿って、Developer Advocate はコミュニティ対応の状況の [直接の責任者（DRI）](/handbook/people-group/directly-responsible-individuals/)と協力して、DRI と他の専門家がコミュニティのフィードバックや質問に直接対処できるよう支援します。
 * 可能な場合、Developer Advocacy チームは通常、DRI と協力して、コミュニティから予想される質問・懸念のリストと回答ドラフトを作成します。利用可能な場合、メディア対応、顧客対応のために用意された資料、または状況に関連するその他の資料も対応準備に含めます。
 * 優先度の高い発表やニュースについては、DRI と一緒に練習演習を行い、準備をテストします。
 * 多くの場合、コミュニティが GitLab フォーラムでフィードバックを共有するように誘導したいと考えます。ブログ記事、発表、コミュニティ対応からリンクできる投稿を準備しておくことで、フィードバックの収集と返信の管理を効率化できます。この投稿は、発表時に公開されるプライベートな投稿として、フォーラム管理者によって事前に作成する必要があります。

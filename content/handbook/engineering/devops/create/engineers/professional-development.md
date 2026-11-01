@@ -2,22 +2,22 @@
 title: 専門的な能力開発
 description: このページでは、利用可能な専門的な能力開発の機会について説明します。
 upstream_path: /handbook/engineering/devops/create/engineers/professional-development/
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-translated_at: "2026-10-19T10:19:40Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T05:58:36.294444+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-16T09:24:31-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 専門的な能力開発をどのようにサポートしていますか？
+## 専門的な能力開発をどのようにサポートしていますか？ {#how-do-we-support-professional-development}
 
 GitLab では、チームメンバーの**専門的な能力開発**に焦点を当て、優先することでサポートしています。チームメンバーが利用できる学習機会は多岐にわたり、場合によってはコミュニティコントリビューターも利用できます。このプロセスの最初のステップは、透明性のために、Engineering Managers とチームメンバーの間でゴールを定義するための会話を行うことです。
 
-## 昇進プロセス
+## 昇進プロセス {#promotion-process}
 
-あなた自身がキャリアの主な推進者です。マネージャーに肩を叩かれるまで待つ必要はありません。[昇進](/handbook/people-group/promotions-transfers/)に興味があるか、準備ができていると感じているかどうかを尋ねられるまで待たなくていいです。あなたは [Manager of One](/handbook/values/#managers-of-one)です。あなたには権限があります！
+あなた自身がキャリアの主な推進者です。マネージャーに肩を叩かれるまで待つ必要はありません。[昇進](/handbook/people-group/promotions-transfers/)に興味があるか、準備ができていると感じているかどうかを尋ねられるまで待たなくていいです。あなたは Manager of One です。あなたには権限があります！
 
-昇進に値すると感じたら、興味のある職位の[職務記述書](/handbook/hiring/job-description-library/)と[バリュー](/handbook/values/#managers-of-one)を確認してください。準備ができていると思ったら、マネージャーに話して証拠を提示してください。
+昇進に値すると感じたら、興味のある職位の[職務記述書](/handbook/hiring/job-description-library/)とバリューを確認してください。準備ができていると思ったら、マネージャーに話して証拠を提示してください。
 
 昇進ドキュメントを作成することをマネージャーに伝え、完成したら確認してもらいたいと伝えてください。マネージャーは昇進ドキュメントを前に進めるか、証拠や一貫した行動がもっと必要かどうかを伝えることで、積極的にサポートします。どちらの場合でも、マネージャーと昇進について話し合うことで、次のレベルに進むための計画を確立することができます。昇進に向けて取り組みたいが、まだ準備ができていない場合は、以下の昇進ドキュメントテンプレートを使って能力開発の会話を進めることができます。
 
@@ -27,7 +27,7 @@ GitLab の一般的な昇進ドキュメントは[こちら](/handbook/people-gr
 
 * [Senior から Staff への昇進](https://docs.google.com/document/d/1CMwEM0pYnb0K1_WdYWS1RyhL_V7HtlQxhRI-0R93FvA/edit#heading=h.5ahg1o4v53q7)
 
-## ゴール
+## ゴール {#goals}
 
 **ゴールを定義する**
 
@@ -37,7 +37,7 @@ GitLab の一般的な昇進ドキュメントは[こちら](/handbook/people-gr
 
 ゴールへの進捗を追跡するメカニズムを特定してください。推奨されるアプローチは、GitLab を使って個人プロジェクトに Issue を作成してゴールを追跡することです。すべてをこの形式にすることで、専門的な能力開発に関してどのように進んでいるかをあなたとマネージャーの両者が把握するために透明性が高まります。
 
-## 難しい課題に取り組む
+## 難しい課題に取り組む {#working-on-challenging-tasks}
 
 難しい課題は、現在のスキルセットをアップスキルするための隠れた宝です。以下にいくつかのアイデアがあります：
 
@@ -70,16 +70,16 @@ GitLab には多くのコミュニケーションチャンネルがあります�
 
 誰かに何かの方法を教えることは、その分野に関するあなた自身の知識を向上させながら、同時に他者のスキルも伸ばします。これは見逃してはならないウィン-ウィンの機会です。
 
-## 読書とオンラインコースによる知識の拡大
+## 読書とオンラインコースによる知識の拡大 {#expanding-knowledge-through-reading--online-courses}
 
 時には良い本を手に取って読む必要があります。オーディオブックの方が好みですか？どちらにせよ、私たちは誰もが限られた知識を持っており、読書は新しいアイデアに触れ、知性を高める機会を与えてくれます。
 
-学習方法によっては、オンラインコースも選択肢になります。GitLab には独自に開発したオンラインコースがあります。また、GitLab は LinkedIn Learning のライセンスを購入し、GitLab チームメンバーが利用できるようにしています。
+学習方法によっては、オンラインコースも選択肢になります。GitLab には独自に開発したオンラインコースがあります。また、GitLab は Linked In Learning のライセンスを購入し、GitLab チームメンバーが利用できるようにしています。
 
 * [Engineering Managers 向けトレーニング](/handbook/engineering/devops/create/engineering-managers/training/)
 * [エンジニア向けトレーニング](/handbook/engineering/devops/create/engineers/training/)
 
-## GitLab スポンサープログラム
+## GitLab スポンサープログラム {#gitlab-sponsored-programs}
 
 GitLab にはいくつかの追加学習機会を提供するプログラムがあります。
 
@@ -87,33 +87,33 @@ GitLab にはいくつかの追加学習機会を提供するプログラムが�
 1. シャドウプログラム
 1. メンタリングプログラム
 
-### 社内インターンシッププログラム
+### 社内インターンシッププログラム {#internal-internship-program}
 
 * [学習のためのインターンシッププログラム](/handbook/people-group/learning-and-development/internship-for-learning/)
 * マネージャーが業務をカバーする体制を確保できる場合、別のチームで一定の割合の時間を（「インターンシップ」として）働くことができます。
 
-## シャドウプログラム
+## シャドウプログラム {#shadow-programs}
 
-### セキュリティシャドウプログラム
+### セキュリティシャドウプログラム {#security-shadow-program}
 
 SIRT とのリアルタイムクリティカルイベントへの対応、Red Team との脆弱性の悪用、Risk and Field Security チームとのライブカスタマーアシュアランス通話への参加を通じて、[セキュリティスタッフの隣で働く](/handbook/security/security-shadow/)機会が得られ、複数のドメインにわたるセキュリティの基本について貴重な洞察と実践的な知識を得ることができます。
 
-### CEO シャドウプログラム
+### CEO シャドウプログラム {#ceo-shadow-program}
 
 [CEO シャドウプログラム](/handbook/ceo/shadow/)の目標は、GitLab の現在および将来の[ディレクターおよびシニアリーダー](/handbook/company/structure/)に[会社](/handbook/company/)のすべての側面の概要を提供することです。
 
-## メンタリングプログラム
+## メンタリングプログラム {#mentoring-programs}
 
-### セルフセレクトメンタリング
+### セルフセレクトメンタリング {#self-select-mentoring}
 
 * 希望すれば、自分より上位のチームメンバーに連絡を取り、[メンターになってもらうよう依頼](/handbook/people-group/learning-and-development/mentor/#find-a-mentor)することができます。
 * メンタリング関係を構築するための[フォーマット](/handbook/people-group/learning-and-development/mentor/)はこちらです。
 
-### Minorities in Tech メンタリングプログラム
+### Minorities in Tech メンタリングプログラム {#minorities-in-tech-mentoring-program}
 
 * この[プログラム](/handbook/company/culture/inclusion/)は昨年、十分な代表性を得られていないチームメンバー向けに提供されました。
 
-## キャリアチェンジ
+## キャリアチェンジ {#career-changes}
 
 チームメンバーが専門的に能力開発したいと思うが、別のロールで！ということもあります。
 

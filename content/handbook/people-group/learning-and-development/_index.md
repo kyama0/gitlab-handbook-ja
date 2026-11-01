@@ -1,26 +1,26 @@
 ---
-title: タレント開発
+title: Talent Development
 upstream_path: /handbook/people-group/learning-and-development/
-upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
-translated_at: "2026-08-05T06:14:38+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:30:15+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-04T09:49:53+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 <div style="width: 100%;"><div style="position: relative; padding-bottom: 50.82%; padding-top: 0; height: 0;"><iframe frameborder="0" width="500" height="350" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/62fe8a909b925c0018b5de80" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 
-### 目的
+### 目的 {#purpose}
 
-*なぜ私たちが存在するのか:* GitLab タレント開発（一般的には「Learning & Development」と呼ばれます）は、チームメンバーのパフォーマンスを高め、能力を拡げ、GitLab チームメンバーを業界トップクラスの人材たらしめるスキルをさらに磨くために存在します。私たちは継続的な成長文化を育み、GitLab が働きがいのある場所であり続けるよう努めます。チームメンバー体験へのポジティブな影響は成果へのポジティブな影響につながり、それが GitLab の顧客へのポジティブな影響につながります。
+*なぜ私たちが存在するのか:* GitLab Talent Development（一般的には「Learning & Development」と呼ばれます）は、チームメンバーのパフォーマンスを高め、能力を拡げ、GitLab チームメンバーを業界トップクラスの人材たらしめるスキルをさらに磨くために存在します。私たちは継続的な成長文化を育み、GitLab が働きがいのある場所であり続けるよう努めます。チームメンバー体験へのポジティブな影響は成果へのポジティブな影響につながり、それが GitLab の顧客へのポジティブな影響につながります。
 
-### ビジョン
+### ビジョン {#vision}
 
 *私たちはどこへ向かうのか:* GitLab はリモート学習・能力開発のトップ組織として認められることを目指します。私たちは **誰もが好奇心の文化に貢献する** 未来を目指します。
 
-### ミッション
+### ミッション {#mission}
 
 *私たちは何をするのか:* 私たちはセルフサービス型の学習を通じて、個人コントリビューターをエンパワーし、リーダーを支援します。私たちは以下を通じて開発の文化を実現します。
 
@@ -28,14 +28,14 @@ lastmod: "2026-08-04T09:49:53+00:00"
 - キャリアモビリティを向上させるリソースを提供する
 - 組織全体のチーム向けに学習ジャーニーを開発する
 
-### 原則
+### 原則 {#principles}
 
 1. **意味があり、関連性のあるコンテンツ。** 私たちはあなたが専門的な目標を達成できるよう支援する学習ソリューションを提供します。
-1. **バリューに沿った内容。** 私たちの学習ソリューションは GitLab の [バリュー](/handbook/values/) を強化し、継続的な学習と好奇心を育みます。
+1. **バリューに沿った内容。** 私たちの学習ソリューションは GitLab のバリューを強化し、継続的な学習と好奇心を育みます。
 1. **多様な学習アプローチ。** 私たちは個人の多様なニーズに応えるソリューションを見つけるためにブレンデッドラーニングモデルを適用します。
 1. **コミュニティ。** L&D の提供物は一般に公開され、誰もが貢献できるようにします。
 
-## Learning & Development チーム
+## Learning & Development チーム {#learning--development-team}
 
 私たちは小さなチームですが、GitLab で大きな役割を担っています！
 
@@ -44,7 +44,7 @@ lastmod: "2026-08-04T09:49:53+00:00"
 - [Senior Learning and Development Program Manager](/job-description-library/people-group/learning-development#intermediate-learning--development-program-manager): Lauren Cairns
 - Senior Manager, Talent Management: 空席
 
-## チームメンバー向けリソース
+## チームメンバー向けリソース {#team-member-resources}
 
 Learning & Development チームは、チームメンバーが新しいスキルを習得するのに役立つさまざまなリソースを提供しています。下記のボタンをクリックして、それぞれの詳細を確認してください。
 
@@ -71,14 +71,14 @@ Learning & Development チームは、チームメンバーが新しいスキル
   </div>
 </div>
 
-## お問い合わせ
+## お問い合わせ {#contact-us}
 
 1. Slack: `#learninganddevelopment`
 1. メール: `learning@gitlab.com`
 
-### ご一緒に働きませんか
+### ご一緒に働きませんか {#work-with-us}
 
-## 利用可能な Learning and Development サポート
+## 利用可能な Learning and Development サポート {#available-learning-and-development-support}
 
 Learning and Development チームは以下の領域で GitLab のチームをサポートします。リクエストはチームのサポート可能なキャパシティ、ビジネスインパクト、会社の OKR との関連性、および影響を受けるユーザー数に基づいて評価されます。
 
@@ -98,15 +98,15 @@ Learning and Development チームは以下の領域で GitLab のチームを�
 - 成功の指標を特定する
 - コーススケジュールと照らし合わせて提供日を評価し、将来の日付を予測する
 
-私たちは今後、よりチームと関わるための構造化されたプロセスを公式化しているところですが、今のところ [lxp-contributions プロジェクト](https://gitlab.com/gitlab-com/people-group/learning-development/lxp-contributions) で Issue を開き、L&D チームのメンバーをタグ付けしてレビューしてもらうことから始めてください。ご質問があれば、Slack の `#learninganddevelopment` でいつでもお声がけください。
+私たちは今後、よりチームと関わるための構造化されたプロセスを公式化しているところですが、今のところ [lxp-contributions プロジェクト](https://gitlab.com/gitlab-com/people-group/learning-development/lxp-contributions)で Issue を開き、L&D チームのメンバーをタグ付けしてレビューしてもらうことから始めてください。ご質問があれば、Slack の `#learninganddevelopment` でいつでもお声がけください。
 
-## 私たちの働き方
+## 私たちの働き方 {#how-we-work}
 
-### GitLab Product トレーニング
+### GitLab Product トレーニング {#gitlab-product-training}
 
-GitLab 製品に関する詳細なトレーニングについては、GitLab University の Get Started with GitLab リソースを参照し、GitLab チームメンバーが無料でアクセスできる各種認定資格をチェックしてください。Talent Development team は製品トレーニング用の学習コンテンツは作成しません。製品トレーニングに関するご質問やリクエストがあれば、#digital-success Slack チャンネルで Digital Success team にご連絡ください。
+GitLab 製品に関する詳細なトレーニングについては、GitLab University の Get Started with GitLab リソースを参照し、GitLab チームメンバーが無料でアクセスできる各種認定資格をチェックしてください。Talent Development チームは製品トレーニング用の学習コンテンツは作成しません。製品トレーニングに関するご質問やリクエストがあれば、#digital-success Slack チャンネルで digital success チームにご連絡ください。
 
-### ツール
+### ツール {#tools}
 
 L&D チームは GitLab で学習機会を作成・伝達するために以下のツールを頻繁に使用します。
 
@@ -117,17 +117,17 @@ L&D チームは GitLab で学習機会を作成・伝達するために以下�
 | [Canva](https://www.canva.com/) | 画像・インフォグラフィック作成 |
 | [Articulate/Rise 360](https://www.articulate.com/) | コースオーサリング |
 
-#### Rise 360
+#### Rise 360 {#rise-360}
 
 Rise 360 は、新しい LevelUp 学習システムとシームレスに統合する、魅力的でインタラクティブな e ラーニングコンテンツを作成するための優れたツールです。LevelUp は多くの優れた機能を備えていますが、そのインタラクティブなコンテンツオーサリングオプションはやや限定的な場合があり、よりダイナミックで視覚的に魅力的なコースを開発するうえで Rise 360 は貴重な補完となります。私たちはプロジェクトのニーズに応じてチームメンバーに容易に再配分できる Rise 360 ライセンスを少数保有しています。Rise コースの作成に興味があり、ライセンスへのアクセスを希望する場合は、#learninganddevelopment にお声がけください。私たちのチームがコース開発のニーズをサポートし、開始を支援します。
 
-## 学習コンテンツの開発
+## 学習コンテンツの開発 {#developing-learning-content}
 
 自身で e ラーニングコンテンツを開発しようとしている場合、その効果を最大化するために考えるべきことがいくつかあります。
 
-### Learning Content Accessibility Guidelines（学習コンテンツアクセシビリティガイドライン）
+### Learning Content Accessibility Guidelines（学習コンテンツアクセシビリティガイドライン） {#learning-content-accessibility-guidelines}
 
-2024 年 7 月、GitLab は [Learning Content Accessibility Guidelines](/handbook/legal/ethics-compliance-program/learning-content-accessibility-guidelines/) の最初のイテレーションを公開しました。
+2024 年 7 月、GitLab は [Learning Content Accessibility Guidelines](/handbook/legal/ethics-compliance-program/learning-content-accessibility-guidelines/)の最初のイテレーションを公開しました。
 
 社内外向けの学習コンテンツを作成するチームメンバーには、以下をお願いしています。
 
@@ -135,15 +135,15 @@ Rise 360 は、新しい LevelUp 学習システムとシームレスに統合�
 - 該当する場合、社内外で使用する学習コンテンツを作成する際にこのガイドラインを適用する
 - これまでに作成した既存の学習コンテンツを見直し、適切な更新が可能かを検討する
 
-### トレーニングコンテンツ開発の原則
+### トレーニングコンテンツ開発の原則 {#training-content-development-principles}
 
 1. **対象者を知る** - コース対象者を分析・評価しましょう。トレーニングを提供する組織内のすべてのレベルで、対象者のニーズが考慮されていることを確認してください。
-1. **学習目標を定義する** - 学習者のアウトカムを強調しましょう。対象者が達成する全体的な広範な記述を 2〜3 個策定することを検討してください。
+1. **学習目標を定義する** - 学習者のアウトカムを強調しましょう。対象者が達成する全体的な広範な記述を 2 〜 3 個策定することを検討してください。
 1. **複雑な情報を分解する** - 複雑な情報を分かりやすいビジュアルやテキストに分解することを検討しましょう。ハンドブックを参照しつつ、対象者向けに視覚的な表現を作成したりストーリーテリングを使用したりすることを恐れないでください。
-1. **学習者を引き込む** - 大人は実践と関与を通じて学びます。仮想環境で学習者を引き込むために、[Mentimeter](https://www.mentimeter.com/) や [Kahoot](https://kahoot.com/) のようなツールを使ってインタラクティブ性を刺激することを検討してください。
+1. **学習者を引き込む** - 大人は実践と関与を通じて学びます。仮想環境で学習者を引き込むために、[Mentimeter](https://www.mentimeter.com/) や [Kahoot](https://kahoot.com/)のようなツールを使ってインタラクティブ性を刺激することを検討してください。
 1. **ブレンデッドラーニングコースコンテンツを実装する** - 学習セッション前に読んで確認するためのコース前課題を学習者に与えましょう。既製のリソースを使用し、コンテンツがセッションでカバーされる内容に適していることを確認してください。アンケートや質問票を通じて、学習内容を業務でどのように適用したかを把握するためのフォローアップを行いましょう。
 
-### 成人学習理論の適用
+### 成人学習理論の適用 {#application-of-adult-learning-theory}
 
 大人は伝統的な学習環境や成長期の学び方とは異なる方法で職場で学びます。トレーニングを開発する場合、成人学習理論に関する以下の原則の適用を検討してください。
 
@@ -152,18 +152,18 @@ Rise 360 は、新しい LevelUp 学習システムとシームレスに統合�
 1. **経験学習:** 大人は経験を通じて、また実践によって学びます。学習体験を設計する際は、ロールプレイ、シミュレーション、仮想ラボ、ケーススタディなどを通じて実践による学習を刺激するアクティビティを適用してください。
 1. **アンドラゴジー:** 参加者は独自の人生経験とモチベーションを持ってその場に来るという前提で学習体験を設計しましょう。大人は自分の学習を自ら方向付け、実践によりよく学び、学んだことを具体的な状況に素早く適用したい傾向があります。
 
-### 学習提供方法 - 定義
+### 学習提供方法 - 定義 {#learning-delivery-methods---definitions}
 
 | 用語 | 定義 | 期間 |
 | ------ | ------ | ------ |
 | Instructor-Led Training (ILT) | インストラクターと学習者間のトレーニングと学習資料の実践。対面トレーニング（教室トレーニング） | 変動 |
-| Virtual Instructor-Led Training (VILT) | 仮想環境（例: Zoom でのトレーニング）で提供されるトレーニング | 1〜3 時間 |
+| Virtual Instructor-Led Training (VILT) | 仮想環境（例: Zoom でのトレーニング）で提供されるトレーニング | 1 〜 3 時間 |
 | E-Learning | 多くの場合インターネット経由で、電子的に行われる伝統的な学習理論に基づく学習。 | 変動 |
 | Blended Learning | 学習者に新情報を教えるために複数の方法を使用するトレーニング。ILT、セルフペース教材、VILT セッションなどを含む場合があります。 | 変動 |
 | Webinar | 大人数を対象に仮想的に実施されるセミナー | 3 時間以上 |
 | Workshop | チームメンバーが特定のテーマでディスカッションやアクティビティに参加するハンズオンまたは仮想デモ、問題解決、チュートリアル | 変動 |
 
-### コンテンツパートナーリソースの活用
+### コンテンツパートナーリソースの活用 {#leveraging-content-partner-resources}
 
 GitLab は、すべてのチームにわたる多様な学習目標をサポートするため、業界をリードするパートナーのプレミアムコンテンツへのアクセスを提供しています。
 

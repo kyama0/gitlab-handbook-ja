@@ -6,79 +6,79 @@ tags:
   - security_standard
   - security_standard_caplscsi
 upstream_path: /handbook/security/policies_and_standards/data-classification-standard/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:52:41+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:52:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-11T15:20:35-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
-## 目的
+## 目的 {#purpose}
 
 データ分類標準は、データの種類とカテゴリーを定義し、GitLab および顧客のデータのライフサイクル全体を通じて適用される保護レベルを決定する目的で、それぞれに関連付けられたデータ分類を提供します。
 
-## スコープ
+## スコープ {#scope}
 
 データ分類標準は、GitLab のデータを取り扱い、管理、保存、または送信するすべての GitLab チームメンバー、契約者、コンサルタント、ベンダー、その他のサービスプロバイダーに適用されます。
 
-## 役割と責任
+## 役割と責任 {#roles--responsibilities}
 
 | 役割  | 責任 |
 |-----------|-----------|
 | GitLab チームメンバー | この標準で概説された要件を遵守する責任 |
 | データオーナー | 所有するデータタイプに対するこの標準への例外を承認する責任。これらは一般にシステムのビジネスオーナーです。 |
-| セキュリティおよび法務 (Code Owners) | この標準への重要な変更や例外を承認する責任 |
+| Security and Legal (Code Owners) | この標準への重要な変更や例外を承認する責任 |
 
-### GitLab の責任
+### GitLab の責任 {#gitlab-responsibilities}
 
 - GitLab チームメンバー、契約者、コンサルタント、ベンダー、その他 GitLab に代わって行動するすべてのサービスプロバイダーは、このデータ分類標準と、特に注記がない限り以下の分類レベルに従ってデータを取り扱う方法をレビューして理解する必要があります。
 
-- データオーナーは、この標準に従ってデータの分類を決定するものとします。データ分類インデックス (内部のみ) は、さまざまな種類のデータとその分類レベルのリストを提供します。データ要素を特定できない、またはデータに関連するリスクとそれをどのように分類して取り扱うべきかについて確信が持てない場合は、Slack の @security-risk 経由でセキュリティリスクチームに連絡してください。
+- データオーナーは、この標準に従ってデータの分類を決定するものとします。データ分類インデックス (内部のみ) は、さまざまな種類のデータとその分類レベルのリストを提供します。データ要素を特定できない、またはデータに関連するリスクとそれをどのように分類して取り扱うべきかについて確信が持てない場合は、Slack の @security-risk 経由で Security Risk チームに連絡してください。
 
-- セキュリティ、透明性の文化を維持し、機密データと顧客に対するリスクを最小限に抑えるために、GitLab チームメンバーは、GitLab の[セキュリティ意識向上トレーニング](/handbook/security/security-assurance/governance/sec-training/) の一環としてデータ分類トレーニングを完了することが必要です。これは、GitLab のさまざまな種類のデータと、それを [SAFE](/handbook/legal/safe-framework/) に保つ方法を理解するのに役立ちます。トレーニングは GitLab の内部学習プラットフォームである [LevelUp](https://levelup.edcast.com/) 経由で利用できます。
+- セキュリティ、透明性の文化を維持し、機密データと顧客に対するリスクを最小限に抑えるために、GitLab チームメンバーは、GitLab の[セキュリティ意識向上トレーニング](/handbook/security/security-assurance/governance/sec-training/)の一環としてデータ分類トレーニングを完了することが必要です。これは、GitLab のさまざまな種類のデータと、それを [SAFE](/handbook/legal/safe-framework/)に保つ方法を理解するのに役立ちます。トレーニングは GitLab の内部学習プラットフォームである [LevelUp](https://levelup.edcast.com/) 経由で利用できます。
 
-### 顧客の責任
+### 顧客の責任 {#customer-responsibilities}
 
 - GitLab 顧客は自分自身のデータを管理する責任があり、独自の内部要件に従って識別と分類を含めて行います。GitLab は相互秘密保持契約に記載された秘密保持義務とこの標準で識別された分類に従って、顧客のデータを社内で取り扱います。
 
-## 標準
+## 標準 {#standard}
 
-### データ分類の定義
+### データ分類の定義 {#data-classification-definitions}
 
-- 個人データ: 個別または他のデータと組み合わせて、識別可能な自然人 (「データ主体」) に直接的または間接的に関連付けられる、または合理的に関連付けまたは結びつけられる可能性のあるデータ。
+- 個人データ: 個別または他のデータと組み合わせて、識別可能な自然人（「データ主体」）を直接的または間接的に識別する、その人に関係する、その人について記述する、または合理的に関連付けや結び付けが可能なデータ。
 
 - 顧客のデータ: GitLab プラットフォームおよびサポートインフラストラクチャから発生し、GitLab の顧客によってアップロード/作成/生成され、顧客によって Private、Confidential、または Internal のラベルで GitLab アプリケーションで処理され、法的または契約上の義務の対象となる電子データを指します。顧客のデータ (RED データ) には、連絡先や請求情報など、顧客に関するデータ要素 (Orange データ) は含まれないことに注意してください。
 
 - 規制データ: 標準のデータ保護要件を超える強化されたセキュリティコントロールとコンプライアンス対策を必要とする特定の規制フレームワークの対象となるデータ。
 
 {{% alert title="GitLab 内での顧客提供データの共有" %}}
-顧客がアップロード/作成/生成したデータが、プライベート (例: プロジェクト、グループ、サブグループ、プロファイル)、機密 (例: Issue、Epic)、または内部 (例: コメント/ノート) GitLab オブジェクト内に存在するかどうかにかかわらず、[承認された副処理者](https://about.gitlab.com/privacy/subprocessors/) である場合、必要な法的コンプライアンスを目的としてデータを共有する場合、または別途法的承認を得た場合を除き、第三者と共有してはなりません。
+顧客がアップロード/作成/生成したデータが、プライベート (例: プロジェクト、グループ、サブグループ、プロファイル)、機密 (例: Issue、エピック)、または内部 (例: コメント/ノート) GitLab オブジェクト内に存在するかどうかにかかわらず、[承認された副処理者](https://about.gitlab.com/privacy/subprocessors/)である場合、必要な法的コンプライアンスを目的としてデータを共有する場合、または別途法的承認を得た場合を除き、第三者と共有してはなりません。
 {{% /alert %}}
 
-### データ分類レベル
+### データ分類レベル {#data-classification-levels}
 
-各データタイプの例: [データ分類インデックスを参照](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/data_classification/) (内部のみ)
+各データタイプの例： [データ分類インデックスを参照](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/data_classification/) (内部のみ)
 
 #### RED{.text-danger #red}
 
 制限付きで、機密のままでなければなりません。これは GitLab の最も機密性の高いデータであり、それへのアクセスは特権と見なされ、明示的に承認される必要があります。このデータが認可されていない当事者に公開されると、GitLab および/またはその顧客に極端な損失を引き起こす可能性があります。最悪のシナリオでは、このデータの公開は、ビジネス絶滅イベントを引き起こすか、原因となる可能性があります。
 
-例には以下が含まれます:
+例には以下が含まれます：
 
-- 顧客のデータ ([データ分類定義セクション](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-definitions) の上記の定義を参照)
+- 顧客のデータ ([データ分類定義セクション](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-definitions)の上記の定義を参照)
 
 <!-- markdownlint-disable MD022 -->
-##### REGULATED RED
+##### REGULATED RED {#regulated-red}
 {style="color: #8B0000" #regulated}
 <!-- markdownlint-enable MD022 -->
 
-特定の規制フレームワークの対象となるデータで、強化されたセキュリティコントロールとコンプライアンス対策を必要とします。一部の Red データは規制対象であり、他の Red データとは異なる扱いが必要です。このデータへのアクセスには明示的な承認が必要であり、適用される規制要件に準拠する必要があります。このデータが認可されていない当事者に公開されると、GitLab および/またはその顧客に重大な損失を引き起こし、規制違反を引き起こし、認証、認可、または法的罰則の喪失をもたらす可能性があります。
+特定の規制フレームワークの対象となるデータで、強化されたセキュリティコントロールとコンプライアンス対策を必要とします。一部の Red データは規制対象であり、他の Red データとは異なる扱いが必要です。このデータへのアクセスには明示的な承認が必要であり、適用される規制要件に準拠する必要があります。このデータが認可されていない当事者に公開されると、GitLab および/またはその顧客に重大な損失を引き起こし、規制違反を引き起こし、認証や認可の喪失、または法的罰則につながる可能性があります。
 
-規制データは、適用される規制フレームワークに基づいてサブカテゴリーに整理されます:
+規制データは、適用される規制フレームワークに基づいてサブカテゴリーに整理されます：
 
-###### REGULATED-CUI
+###### REGULATED-CUI {#regulated-cui}
 
 NIST SP 800-171 およびその他の米国政府規制で定義された Controlled Unclassified Information
 
@@ -86,7 +86,7 @@ NIST SP 800-171 およびその他の米国政府規制で定義された Contro
 - さまざまな米国の法律、規制、または政府ポリシーの下で保護を必要とする情報
 - NIST SP 800-171 のセキュリティコントロールと要件に準拠する必要があります
 
-###### REGULATED-FEDRAMP
+###### REGULATED-FEDRAMP {#regulated-fedramp}
 
 連邦クラウドサービスのために FedRAMP Moderate または High セキュリティコントロールを必要とするデータ
 
@@ -94,79 +94,79 @@ NIST SP 800-171 およびその他の米国政府規制で定義された Contro
 - FedRAMP セキュリティコントロールベースラインへの準拠を必要とするデータ
 - FedRAMP 認可下で連邦データを処理する情報システム
 
-規制データを含む Red データは、最初にプライバシーチームとセキュリティチームから承認を得ることなく、承認された Red データソースから他のシステムまたはソリューションに送信されることはありません。Red データを処理するベンダーは、私たちの顧客契約と、グローバルプライバシーおよびデータセキュリティ法に従って、その処理を正当化する事実的および法的分析を最初に受ける必要があります。システム間の Red データの送信に関する質問や懸念がある場合は、# security_help にお問い合わせください。
+規制データを含む Red データは、最初に Privacy and Security チームから承認を得ることなく、承認された Red データソースから他のシステムまたはソリューションに送信してはなりません。Red データを処理するベンダーは、私たちの顧客契約と、グローバルプライバシーおよびデータセキュリティ法に従って、その処理を正当化する事実的および法的分析を最初に受ける必要があります。システム間の Red データの送信に関する質問や懸念がある場合は、# security_help にお問い合わせください。
 
 <!-- markdownlint-disable MD022 -->
-#### ORANGE
+#### ORANGE {#orange}
 {style="color: #fd7e14" #orange}
 <!-- markdownlint-enable MD022 -->
 
 法律および規制の対象となり、一般に利用可能にするべきではないデータ。認可されていないアクセスや開示は、認可されていない当事者に公開された場合、GitLab に重大な損失または財務上の重大な損失、危害のリスクを引き起こし、契約上の義務に違反し、および/または GitLab、そのパートナー、従業員、契約者、顧客に悪影響を与える可能性があります。
 
-例には以下が含まれます:
+例には以下が含まれます：
 
 - 個人データ
   - 何らかの形式の個人データを所有するベンダーは、GitLab のデータ保護要件に対処する適切な契約条件 (例: データ処理契約) を持っている必要があります。
   - 個人データが処理されるデータセットの一部を構成する場合、そのデータセットのデータ分類は Orange であるべきであり、データセットの大部分が Yellow または Green のデータであっても、分類を Yellow または Green にすることはできません。
   - 公開ソースから収集された個人データは、特定のデータ保護法の下で保護から免除されないため、個人データのソースによってその分類が Orange より下のレベルに変更されてはなりません。
-  - 何かが個人データであるかどうかについて疑問がある場合は、[データ分類インデックス](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/data_classification/) (内部のみ) で個人データ要素の網羅的なリストを参照してください
+  - 何かが個人データであるかどうかについて疑問がある場合は、[データ分類インデックス](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/data_classification/) (内部のみ)で個人データ要素の網羅的なリストを参照してください
 - GitLab 知的財産
 - 一般公開されていない財務情報
 - GitLab との顧客契約
 
 {{% alert title="個人データの例外" %}}
-個人データは Orange に分類されますが、GitLab チームメンバーの名前、業務メールアドレス、GitLab ユーザー名は Yellow に分類される例外があります。これら 2 つの個人データ要素は、高リスクまたは機密性の高いタイプの個人データとは見なされません。GitLab の[透明性](/handbook/values/#transparency) という価値観と、GitLab が[デフォルトで公開](/handbook/values/#public-by-default) されているため、ほとんどのチームメンバーの名前は[公開](https://gitlab.com/close-modal) で利用可能です。これらは日常的な企業運営をサポートするために頻繁に処理されるため、これらの低リスクデータ要素に Orange レベルのコントロールを適用することは、GitLab のビジネス機能を不釣り合いに阻害することになります。
+個人データは Orange に分類されますが、GitLab チームメンバーの名前、業務メールアドレス、GitLab ユーザー名は Yellow に分類される例外があります。これら 2 つの個人データ要素は、高リスクまたは機密性の高いタイプの個人データとは見なされません。GitLab の透明性という価値観と、GitLab がデフォルトで公開されているため、ほとんどのチームメンバーの名前は[公開](https://gitlab.com/close-modal)で利用可能です。これらは日常的な企業運営をサポートするために頻繁に処理されるため、これらの低リスクデータ要素に Orange レベルのコントロールを適用することは、GitLab のビジネス機能を不釣り合いに阻害することになります。
 {{% /alert %}}
 
 {{% alert title="個人データとチームメンバーの安全" %}}
-データ要素を組み合わせることがチームメンバーの安全に影響を与える可能性があることに注意してください。たとえば、以下の分類の説明に従って、チームメンバーの名前は [Yellow](#yellow) に分類されます。しかし、チームメンバーの名前と仕事のイベントの旅行日とサイトを組み合わせると、そのチームメンバーの正確な場所を明らかにする可能性があり、これは Orange レベルの個人データです。チームメンバーの特定の場所を含むドキュメントや Issue は、私たちの [Orange データ](#orange) と[機密性レベル](/handbook/communication/confidentiality-levels/) のガイドラインに従って「Confidential」に設定する必要があります。
+データ要素を組み合わせることがチームメンバーの安全に影響を与える可能性があることに注意してください。たとえば、以下の分類の説明に従って、チームメンバーの名前は [Yellow](#yellow)に分類されます。しかし、チームメンバーの名前と業務イベントへの旅行日程と会場を組み合わせると、そのチームメンバーの正確な場所を明らかにする可能性があり、これは Orange レベルの個人データです。チームメンバーの特定の場所を含むドキュメントや Issue は、私たちの [Orange データ](#orange)と[機密性レベル](/handbook/communication/confidentiality-levels/)のガイドラインに従って「Confidential」に設定する必要があります。
 {{% /alert %}}
 
 <!-- markdownlint-disable MD022 -->
-#### YELLOW
+#### YELLOW {#yellow}
 {style="color: #ffc107" #yellow}
 <!-- markdownlint-enable MD022 -->
 
 通常のビジネスの過程で作成され使用される、一般に利用可能にすべきではないデータと情報。認可されていないアクセスや開示は、最小限のリスクや危害を引き起こし、および/または GitLab、そのパートナー、従業員、契約者、顧客に悪影響を与える可能性があります。
 
-例には以下が含まれます:
+例には以下が含まれます：
 
 - 資産レジスター
 - 一般的な内部会社のコミュニケーション
 - ベンダー契約
-- [公開消費](/handbook/communication/confidentiality-levels/#not-public) に適切でないデータを含む GitLab Runbook/作業指示書/マニュアル/ポリシー/手順
+- [一般公開](/handbook/communication/confidentiality-levels/#not-public)に適切でないデータを含む GitLab Runbook/作業指示書/マニュアル/ポリシー/手順
 - GitLab チームメンバーの名前
 
 #### GREEN{.text-success #green}
 
 公開で共有可能であり、GitLab またはその顧客に害や重要な影響を与えないデータ。
 
-例には以下が含まれます:
+例には以下が含まれます：
 
 - [GitLab ハンドブック](/)
   - ほとんどの GitLab Runbook/作業指示書/マニュアル/ポリシー/手順を含む
 - 公開アナウンス
 - [公開製品情報](https://docs.gitlab.com/ee/)
 
-### データ分類標準
+### データ分類標準 {#data-classification-standards}
 
-#### 認証情報とアクセストークンは、それらが保護するデータと同じレベルに分類されます
+#### 認証情報とアクセストークンは、それらが保護するデータと同じレベルに分類されます {#credentials-and-access-tokens-are-classified-at-the-same-level-as-the-data-they-protect}
 
 パスワード、個人アクセストークン、暗号化キー、セッション Cookie などの認証情報は、それらが保護するデータの最高分類からその分類が導出されます。
 
-##### データタイプの組み合わせは、より高いシステム分類レベルになる可能性があります
+##### データタイプの組み合わせは、より高いシステム分類レベルになる可能性があります {#combinations-of-data-types-may-result-in-a-higher-system-classification-level}
 
 システム内に複数のデータタイプが存在する場合、システムは、保存、送信、または処理されているデータの最高のデータ分類レベルで分類されるべきです。
 
-##### ラベリング
+##### ラベリング {#labeling}
 
 現在、この標準に従ってデータにラベルを付けるための内部要件はありませんが、ラベルが推奨されます。分類レベルに従ってデータにラベルを付けることで、個人はこのポリシーをすばやく参照して適切な処理を行うことができます。
 
-## 例外
+## 例外 {#exceptions}
 
-このポリシーへの例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions) に従って追跡されます。
+このポリシーへの例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions)に従って追跡されます。
 
-## 参考文献
+## 参考文献 {#references}
 
-- [Controlled Document Procedure](/handbook/security/controlled-document-procedure/)
+- [管理文書手順](/handbook/security/controlled-document-procedure/)
 - [データ分類インデックス](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/data_classification/) (内部のみ)

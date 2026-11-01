@@ -2,65 +2,60 @@
 title: "意思決定プロセス: 役割と責任の明確化"
 description: チームメンバーが一貫性のある信頼できるプロセスで意思決定を行えるよう、関連情報をまとめたページ
 upstream_path: /handbook/engineering/devops/create/decision-making-process/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T10:21:26Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:36:19+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 Create 内のグループにおける意思決定プロセスの可視性と一貫性を高めるため、このセクションでは期待事項とベストプラクティスを明確にします。
 
-## ゴール
+## ゴール {#goals}
 
 - オーナーシップとプロセスを尊重する
 - 他者への透明なコミュニケーション
 - 効率性のための意見のあるコラボレーションを奨励する
 
-## バリューの確認
+## バリューの確認 {#values-reminder}
 
 以下は、このプラクティスの進化と文書化を支援してきた現在のバリューフレームワークから抽出されたバリューです。
 
-{{% details summary="<strong>サブバリューの確認のために展開する</strong>" %}}
-### コラボレーション: 親切さ
+<details>
+<summary><strong>展開してサブバリューを確認する</strong></summary>
 
-> 私たちは他者への思いやりを大切にします。人々への配慮を示すことは、率直に指摘しフィードバックを届けるための効果的な枠組みを提供します。**親切さとはフィードバックを控えることや意見の相違を避けることではありません。それらは職業的な成長と顧客への成果のために不可欠です。**親切さとは、仕事と人を切り離すことを意味します。誰かの仕事を批判しながらも、その人に対して敬意を示すことができます。できる限り多くのポジティブなフィードバックを公の場で行ってください。
+### コラボレーション: 親切さ {#collaboration-kindness}
 
-[/handbook/values/#kindness](/handbook/values/#kindness)
+> 私たちは他者への思いやりを大切にします。人々への配慮を示すことは、率直に指摘しフィードバックを届けるための効果的な枠組みを提供します。 **親切さとはフィードバックを控えることや意見の相違を避けることではありません。それらは職業的な成長と顧客への成果のために不可欠です。** 親切さとは、仕事と人を切り離すことを意味します。誰かの仕事を批判しながらも、その人に対して敬意を示すことができます。できる限り多くのポジティブなフィードバックを公の場で行ってください。
 
-### 顧客への成果: 行動への偏りを持って行動する
+### 顧客への成果: 行動への偏りを持って行動する {#results-for-customers-operate-with-a-bias-for-action}
 
-> **行動に焦点を当て続けること、分析麻痺や、リスクのない遅く静かな道にはまり込む罠に陥らないこと**が重要です。決断は思慮深くあるべきですが、迅速な結果を出すには時に失敗を恐れない姿勢が必要です。行動への偏りはまた、素早い軌道修正を可能にします。他のバリューや働き方を損なわずにできる限り早く結果を出すように努めてください。
+> **行動に焦点を当て続け、分析麻痺の罠に陥らないこと**や、リスクのない遅く静かな道に固執しないことが重要です。決断は思慮深くあるべきですが、迅速な結果を出すには時に失敗を恐れない姿勢が必要です。行動への偏りはまた、素早い軌道修正を可能にします。他のバリューや働き方を損なわずにできる限り早く結果を出すように努めてください。
 
-[/handbook/values/#operate-with-a-bias-for-action](/handbook/values/#operate-with-a-bias-for-action)
-
-### 顧客への成果: 緊迫感
+### 顧客への成果: 緊迫感 {#results-for-customers-sense-of-urgency}
 
 > 得られた時間、失った時間は複利効果をもたらします。他のバリューやコミュニケーションの方法を損なわずにできる限り早く結果を出すようにしてください。そうすることで結果の複利が始まり、次の改善に集中できます。
 
-[/handbook/values/#sense-of-urgency](/handbook/values/#sense-of-urgency)
-
-### 効率: 硬直性よりも自由と責任
+### 効率: 硬直性よりも自由と責任 {#efficiency-freedom-and-responsibility-over-rigidity}
 
 > 可能な場合、ルールや承認プロセスを押し付けるのではなく、人々に意思決定の責任を与え、それに対して責任を持たせます。明確な目標を持ち、自分の判断でそれに取り組む自由を持つべきです。自由と責任は、プロセスへの硬直した従い方や相互依存の構築よりも効率的です。なぜなら、意思決定のスピードが速まり、イテレーションの速度が上がるからです。
 >
 > チームメンバーが硬直性よりも自由と責任を持つとき、他者を助ける余地が生まれます。
 
-[/handbook/values/#freedom-and-responsibility-over-rigidity](/handbook/values/#freedom-and-responsibility-over-rigidity)
-{{% /details %}}
+</details>
 
-## DRI テーブル
+## DRI テーブル {#dri-table}
 
 | Issue の種類                                   | 深刻度の DRI                                              | 優先度の DRI        |
 |-------------------------------------------------|---------------------------------------------------------------|-------------------------|
-| `type::feature`                                 | n/a                                                           | プロダクトマネージャー         |
-| `type::maintenance`                             | n/a                                                           | エンジニアリングマネージャー     |
-| `type::bug` + `UX` または `bug::UX`                 | プロダクトデザイナー                                              | エンジニアリングマネージャー     |
-| `type::bug` + `bug::performance`                | パフォーマンス推進グループ `@gl-dx/performance-enablement`  | エンジニアリングマネージャー     |
-| `type::bug` + `bug::vulnerability`              | AppSec `@gitlab-com/gl-security/appsec`                       | エンジニアリングマネージャー     |
-| `type::bug` + `bug::availability`               | エンジニアリングマネージャー                                           | エンジニアリングマネージャー     |
-| `type::bug` + `test`                            | Developer Experience ステージ                                    | エンジニアリングマネージャー     |
-| `type::bug` + `GitLab.com Resource Saturation`  | スケーラビリティエンジニアリングマネージャー                               | エンジニアリングマネージャー     |
+| `type::feature`                                 | n/a                                                           | Product Manager         |
+| `type::maintenance`                             | n/a                                                           | Engineering Manager     |
+| `type::bug` + `UX` または `bug::UX`                 | Product Designer                                              | Engineering Manager     |
+| `type::bug` + `bug::performance`                | Performance Enablement group `@gl-dx/performance-enablement`  | Engineering Manager     |
+| `type::bug` + `bug::vulnerability`              | AppSec `@gitlab-com/gl-security/appsec`                       | Engineering Manager     |
+| `type::bug` + `bug::availability`               | Engineering Manager                                           | Engineering Manager     |
+| `type::bug` + `test`                            | Developer Experience stage                                    | Engineering Manager     |
+| `type::bug` + `GitLab.com Resource Saturation`  | Scalability Engineering Manager                               | Engineering Manager     |
 
 **出典:**
 
@@ -68,23 +63,23 @@ Create 内のグループにおける意思決定プロセスの可視性と一�
 - [バグタイプ別深刻度 DRI](/handbook/product-development/how-we-work/issue-triage/#severity)
 - [優先度 DRI](/handbook/product-development/how-we-work/issue-triage/#priority)
 
-## プラクティス
+## プラクティス {#practice}
 
-### Issue / トリアージ
+### Issue / トリアージ {#issuestriage}
 
-Issue に関してなされる各決定には、常に最終的な発言権を持つ正式な DRI があります（[DRI テーブル](#dri-テーブル)を参照）。チームメンバーは、深刻度または優先度に関わらず、常に適切な DRI に決定を委ねる必要があります。
+Issue に関してなされる各決定には、常に最終的な発言権を持つ正式な DRI があります（[DRI テーブル](#dri-table)を参照）。チームメンバーは、深刻度または優先度に関わらず、常に適切な DRI に決定を委ねる必要があります。
 
-厳格な DRI 以外の人が高い確信や強い提案を持つ場合は、Issue に変更を適用し、コメント（結論は公開コメントに記載する必要があり、議論は内部メモで行ってもよい）を残して理由を文書化し、同時に @メンション で DRI に通知してください（任意で Slack 経由でも）。DRI はコメントまたは明確に賛成の絵文字リアクションによって明示的な反応を示す必要があります。
+厳格な DRI 以外の人が高い確信や強い提案を持つ場合は、Issue に変更を適用し、コメント（結論は公開コメントに記載する必要があり、議論は内部メモで行ってもよい）を残して理由を文書化し、同時に @メンションで DRI に通知してください（任意で Slack 経由でも）。DRI はコメントまたは明確に賛成の絵文字リアクションによって明示的な反応を示す必要があります。
 
 ✅ **すること:** `severity::*`、`priority::*`、マイルストーンを設定することでトリアージしながら、DRI を @メンションした Issue にコメントを残す。
 
 ❌ **しないこと:** 各タスクの DRI に通知せずに `severity::*`、`priority::*`、マイルストーンを設定して Issue をトリアージする。
 
-### データを主要な判断材料とする
+### データを主要な判断材料とする {#data-as-primary-piece}
 
 トリアージからロールアウトの評価まで、あらゆる形式の意思決定において、チームの全員が結果をデータに基づかせることに努める必要があります。これは、関連するメトリクスや調査知見を収集し、トレンドを分析し、直感や仮定だけに頼るのではなく、具体的な情報を使って選択を裏付けることを意味します。具体的な情報に基づいて意思決定することで、より客観的な評価が可能になり、バイアスを減らし、チームが自信を持って連携して前進できる共通の議論基盤を作れます。
 
-### Issue でのチーム横断的なコラボレーション
+### Issue でのチーム横断的なコラボレーション {#collaborating-across-teams-on-issues}
 
 Issue は別のチームからの意見が必要な場合や、調査の結果として別のチームが解決すべき責任であることが判明する場合があります。
 
@@ -98,26 +93,26 @@ Issue は別のチームからの意見が必要な場合や、調査の結果�
 
 **チームをまたぐ依存関係の場合:** Issue があなたのチームの責任領域に影響を与えるが、別のチームによる実装が必要な場合は、進捗を追跡し解決のタイムラインを把握するため、定期的にフォローアップを継続してください。
 
-### マージリクエスト
+### マージリクエスト {#merge-requests}
 
-[コードレビューガイドライン](https://docs.gitlab.com/development/code_review/)に従う必要があり、いかなる例外も作成者のチームのエンジニアリングマネージャーによるマージリクエスト内での明示的な承認が必要です。
+[コードレビューガイドライン](https://docs.gitlab.com/development/code_review/)に従う必要があり、いかなる例外も作成者のチームの Engineering Manager によるマージリクエスト内での明示的な承認が必要です。
 
-### フィーチャーフラグロールアウトのローンチ
+### フィーチャーフラグロールアウトのローンチ {#launches-of-feature-flag-rollouts}
 
-ローンチやフィーチャーフラグのロールアウトに関するすべての決定は、プロダクトマネージャー、プロダクトデザイナー、エンジニアリングマネージャーの三者によって承認される必要があります。承認は、DRI からの明示的なメッセージまたは明確に賛成の絵文字リアクションを含むロールアウト Issue のスレッドに記録される必要があります。
+ローンチやフィーチャーフラグのロールアウトに関するすべての決定は、Product Manager、Product Designer、Engineering Manager の三者によって承認される必要があります。承認は、DRI からの明示的なメッセージまたは明確に賛成の絵文字リアクションを含むロールアウト Issue のスレッドに記録される必要があります。
 
-**例外:** [`gitlab_com_derisk` タイプのフィーチャーフラグ](https://docs.gitlab.com/development/feature_flags/#gitlab_com-derisk-type)については、アサインされたエンジニアが GitLab.com の安定性を優先するために自身の判断を使用できます。エンジニアリングマネージャーとプロダクトマネージャーに情報共有してください。ただし、明示的な承認は必要ありません。
+**例外:** [`gitlab_com_derisk` タイプのフィーチャーフラグ](https://docs.gitlab.com/development/feature_flags/#gitlab_com-derisk-type)については、アサインされたエンジニアが GitLab.com の安定性を優先するために自身の判断を使用できます。Engineering Manager と Product Manager に情報共有してください。ただし、明示的な承認は必要ありません。
 
-**適用対象:** 内部チームメンバー、[gitlab.com](https://gitlab.com)、デフォルト設定（セルフマネージド / Dedicated）。
+**適用対象:** 内部チームメンバー、[gitlab.com](https://gitlab.com)、デフォルト設定（Self Managed/Dedicated）。
 
 **適用外:** テストや機能開発のために特定のチームメンバー向けに有効化する場合。
 
-### その他の種類の意思決定
+### その他の種類の意思決定 {#any-other-type-of-decision}
 
 デフォルトでは専門知識の領域が適用されます。
 
-## 単一障害点を避ける
+## 単一障害点を避ける {#avoiding-single-points-of-failure}
 
 DRI が不在の場合、決定が時間的に緊急または顧客にとって重大であるとき、チームは指揮命令系統の次の人物に連絡するよう最善を尽くすべきです。
 
-重大でも時間的に緊急でもない決定については、チームメンバーが主体的に行動し、DRI にタグ付けして決定を行い、復帰後にレビューしてもらえるようにすることが推奨されます。
+重大ではない決定、または時間的に緊急な決定については、チームメンバーが主体的に行動し、DRI にタグ付けして決定を行い、復帰後にレビューしてもらえるようにすることが推奨されます。

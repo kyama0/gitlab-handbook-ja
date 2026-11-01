@@ -2,20 +2,20 @@
 title: "GitLab Dedicated for Government"
 description: "GitLab Dedicated for Government は、政府機関向けの FedRAMP 認定を受けたシングルテナント型 SaaS ソリューションです。"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/government/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-lastmod: "2026-05-28T15:12:07-04:00"
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-27T14:58:29-04:00"
+translated_at: "2026-11-01T05:52:50+00:00"
 translator: claude
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
-GitLab Dedicated for Government は [GitLab Dedicated](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/) のサブオファリングであり、FedRAMP コンプライアンス、完全なインフラの分離、マネージド運用を必要とする連邦政府機関向けに専用設計されています。完全な GitLab Ultimate プラットフォームをシングルテナント型 SaaS ソリューションとして提供し、AWS GovCloud 上でのみホストされます。
+GitLab Dedicated for Government は [GitLab Dedicated](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)のサブオファリングであり、FedRAMP コンプライアンス、完全なインフラの分離、マネージド運用を必要とする連邦政府機関向けに専用設計されています。完全な GitLab Ultimate プラットフォームをシングルテナント型 SaaS ソリューションとして提供し、AWS GovCloud 上でのみホストされます。
 
 GitLab Dedicated はシングルテナンシーとマネージド運用という基盤を提供しますが、GitLab Dedicated for Government はその基盤を FedRAMP Moderate 認定、政府機関固有の構成、そして政府機関の DevSecOps チームに固有のニーズに基づくロードマップで拡張します。
 
-## 中央 DevSecOps チームのために構築
+## 中央 DevSecOps チームのために構築 {#built-for-central-devsecops-teams}
 
 中央 DevSecOps チームは複合的な課題に直面しています。数百から数千の開発者の生産性を加速させながら、厳格な FedRAMP コンプライアンスを維持し、ツールの乱立を管理し、政府機関のリーダーシップに対して測定可能な価値を示さなければなりません。
 
@@ -28,11 +28,11 @@ GitLab Dedicated for Government は、SDLC ツールチェーン全体を 1 つ�
 3. 5 つ以上の SDLC ツールにわたるツールの乱立を積極的に管理している組織
 4. FedRAMP コンプライアンスの境界内でモダンな DevSecOps ワークフローの採用を目指すチーム
 
-## ビジョン
+## ビジョン {#vision}
 
 政府機関がコンプライアンスに準拠したソフトウェアを前例のないスピードと規模で構築、セキュリティ確保、デプロイできるようにする、唯一の信頼できるプラットフォームとなり、中央 DevSecOps チームが開発者をより効果的に支援できるようにします。
 
-### 成功の姿
+### 成功の姿 {#what-success-looks-like}
 
 **中央 DevSecOps チームにとって:**
 
@@ -54,28 +54,28 @@ GitLab Dedicated for Government は、SDLC ツールチェーン全体を 1 つ�
 - プラットフォームの統合とツールの乱立の削減による明確な ROI
 - 政府機関が承認した FedRAMP サービスをサポートする柔軟な AI 連携
 
-### ノーススターメトリクス
+### ノーススターメトリクス {#north-star-metric}
 
 **顧客数**は、GitLab Dedicated for Government を活用している連邦政府機関の総数を測定します。
 
 このメトリクスは、政府機関への価値提供における私たちの成功を直接反映し、FedRAMP 認定ソリューションの市場での採用を示します。コンプライアンス要件を満たす能力と、政府部門への提供における効果の両方を捉えます。
 
-## 現状
+## 現状 {#current-state}
 
 GitLab Dedicated for Government は FedRAMP Moderate Authorization to Operate (ATO) を取得して提供を開始し、AWS GovCloud 上で完全にマネージドされたシングルテナント型 DevSecOps プラットフォームを政府機関に提供しています。
 
-### 現在利用可能: セキュアな基盤
+### 現在利用可能: セキュアな基盤 {#now-available-secure-foundation}
 
 | 機能 | 説明 |
 | --- | --- |
 | **FedRAMP Moderate ATO** | FedRAMP Moderate での Authority to Operate。連邦政府機関が自信を持ってデプロイできるようにします。 |
-| **AWS GovCloud でのシングルテナント分離** | 専用の AWS アカウント境界による完全なインフラの分離。すべてのデータは AWS GovCloud (US West) に保持されます。 |
+| **AWS GovCloud でのシングルテナント分離** | 専用の AWS アカウント境界による完全なインフラの分離。すべてのデータは AWS GovCloud に保持されます。 |
 | **完全な GitLab Ultimate 機能セット** | 計画、ソース管理、CI/CD、セキュリティスキャン、デプロイを含む完全な GitLab Ultimate を、米国政府の要件に合わせて設計しています。 |
 | **完全マネージド運用** | GitLab がすべてのメンテナンス、セキュリティパッチ適用、インフラ、継続的な FedRAMP コンプライアンスを管理します。 |
 | **エンタープライズグレードの信頼性** | ディザスタリカバリ、自動監視、24 時間 365 日の運用サポートを備えた高可用性。 |
 | **エンタープライズ認証** | AWS GovCloud 内での AWS PrivateLink を使ったプライベート接続による SAML 2.0 および OIDC のサポート。 |
 
-### 現在の課題
+### 現在の課題 {#current-challenges}
 
 **中央チーム向けのセルフサービスが限定的。** 現在、中央 DevSecOps チームはプラットフォームの構成に GitLab のサポートチケットに依存しており、開発者に機能を提供する能力が低下しています。あらゆるカスタマイズやワークフローの調整に、私たちのチームとの調整が必要です。
 
@@ -85,7 +85,7 @@ GitLab Dedicated for Government は FedRAMP Moderate Authorization to Operate (A
 
 **移行の複雑さ。** 既存の GitLab インスタンスを持つ政府機関は、特に分散したチームや地理的なリージョンをまたいで調整する際に、Dedicated for Government への移行で摩擦に直面します。
 
-## 今後の方向性
+## 今後の方向性 {#where-were-going}
 
 私たちのロードマップは、中央 DevSecOps チームが開発者に価値を提供できるようにすることを軸に構成されています。優先順位は次の基準で決定します。
 
@@ -96,7 +96,7 @@ GitLab Dedicated for Government は FedRAMP Moderate Authorization to Operate (A
 
 > **注:** 今後の機能は提案であり、コミットメントではありません。タイミングは顧客の需要や技術的な依存関係によって変更される可能性があります。
 
-### 開発中: 中央チームの能力強化
+### 開発中: 中央チームの能力強化 {#in-development-empowering-central-teams}
 
 **セルフサービスのコントロールプレーン (Switchboard for Government)**
 
@@ -116,11 +116,11 @@ _インパクト: 政府機関のコンプライアンス要件の範囲内で�
 
 | コミットメント | ターゲット |
 | --- | --- |
-| Recovery Point Objective (RPO) | 最大 4 時間のデータ損失 |
-| Recovery Time Objective (RTO) | ミッションへの影響に応じた優先的な復旧 |
-| Availability (SLO) | FedRAMP 要件に整合したターゲット |
+| 目標復旧時点（RPO） | 最大 4 時間のデータ損失 |
+| 目標復旧時間（RTO） | ミッションへの影響に応じた優先的な復旧 |
+| 可用性（SLO） | FedRAMP 要件に整合したターゲット |
 
-### 次に予定: スケールと接続性
+### 次に予定: スケールと接続性 {#coming-next-scaling--connectivity}
 
 **クラウド接続ツールキット**
 
@@ -138,7 +138,7 @@ _インパクト: 政府機関がインフラを近代化しながら連邦政�
 
 複雑な地理的要件やデータレジデンシー要件を持つ政府機関向けに、マルチリージョンのデプロイオプションの拡充と追加の接続方式を提供します。
 
-### 検討中の今後の機能
+### 検討中の今後の機能 {#future-capabilities-under-consideration}
 
 以下は、顧客の需要とミッションへの影響に基づいて評価が進められています。
 
@@ -151,9 +151,9 @@ _インパクト: 政府機関がインフラを近代化しながら連邦政�
 | **追加のコンプライアンス認証** | DoD Impact Levels、StateRAMP、その他の政府機関固有のコンプライアンスフレームワーク |
 | **マネージド AI ゲートウェイ** | ガバナンス、監視、マルチモデルサポートを備えた、AI 連携のための集中ゲートウェイ |
 
-## 価格
+## 価格 {#pricing}
 
-GitLab Dedicated for Government は [GitLab Dedicated の価格モデル](https://about.gitlab.com/pricing/?deployment=dedicated) に従い、政府機関固有の考慮事項を加えています。
+GitLab Dedicated for Government は [GitLab Dedicated の価格モデル](https://about.gitlab.com/pricing/?deployment=dedicated)に従い、政府機関固有の考慮事項を加えています。
 
 | コンポーネント | 詳細 |
 | --- | --- |
@@ -165,4 +165,4 @@ GitLab Dedicated for Government は [GitLab Dedicated の価格モデル](https:
 
 ---
 
-ロードマップのタイミングや特定の機能についてのご質問は、GitLab のアカウントチームに連絡するか、[#f_gitlab_dedicated](https://gitlab.slack.com/archives/f_gitlab_dedicated) でお問い合わせください。
+ロードマップのタイミングや特定の機能についてのご質問は、GitLab のアカウントチームに連絡するか、[#f_gitlab_dedicated](https://gitlab.slack.com/archives/f_gitlab_dedicated)でお問い合わせください。

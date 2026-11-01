@@ -3,14 +3,14 @@ title: GitLab のセキュリティ
 # See https://www.docsy.dev/docs/adding-content/content/#docs-section-landing-pages
 no_list: true
 upstream_path: /handbook/security/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:36:19+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-24T11:39:49-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## <i class="fas fa-rocket" id="biz-tech-icons"></i> セキュリティのビジョンとミッション
+## <i class="fas fa-rocket" id="biz-tech-icons"></i> セキュリティのビジョンとミッション {#security-vision-and-mission}
 
 私たちのビジョンは、世界を透明性をもって安全な成果へと導くことです。
 
@@ -28,8 +28,8 @@ lastmod: "2026-04-24T11:39:49-07:00"
    - 単発の解決策よりも再利用可能・反復可能なものを
 1. 透明性。以下に注力します。
    - MNPI (重要な非公開情報) の責任ある保護
-   - GitLab の[ドッグフーディング](/handbook/values/#dogfooding)を公の場で広める
-   - メトリクスをリードする
+   - GitLab のドッグフーディングを公の場で広める
+   - メトリクスを指針にする
    - セキュリティと有用性のバランスを取る
 1. リスク低減。以下に注力します。
    - デフォルトで安全
@@ -47,11 +47,11 @@ lastmod: "2026-04-24T11:39:49-07:00"
    - AI を展開して脅威をより速く検知・予防し、ワークフローやプロセスを自動化する
    - AI 生産性ツールを取り入れ、毎日より賢く働く
 
-### 部門構造
+### 部門構造 {#division-structure}
 
-セキュリティ部門は、必須のセキュリティ運用サービスを提供し、開発およびリリースプロセスに直接関与し、リスクを最小化しながらビジネスをより良く機能させるためのコンサルティングおよびアドバイザリーサービスを提供します。
+Security Division は、必須のセキュリティ運用サービスを提供し、開発およびリリースプロセスに直接関与し、リスクを最小化しながらビジネスをより良く機能させるためのコンサルティングおよびアドバイザリーサービスを提供します。
 
-これを反映して、セキュリティ部門は 4 つの主要な柱を中心に構造化されており、それがグループの構造と活動を駆動しています。それらは:
+これを反映して、Security Division は 4 つの主要な柱を中心に構造化されており、それがグループの構造と活動を駆動しています。それらは:
 
 <table id="Sub-Departments">
   <tr>
@@ -111,39 +111,39 @@ lastmod: "2026-04-24T11:39:49-07:00"
   </tr>
 </table>
 
-#### 製品をセキュアにする — Product Security 部門
+#### 製品をセキュアにする — Product Security Department {#secure-the-product---the-product-security-department}
 
-[Product Security 部門](/handbook/security/product-security/) は主に製品のセキュリティ確保に注力します。これは、セキュリティリリース、Infrastructure Security、HackerOne バグバウンティプログラムにおいて、アプリケーション開発・リリースサイクルに関与しようとするセキュリティ部門の現在の取り組みを反映しています。
+[Product Security Department](/handbook/security/product-security/)は主に製品のセキュリティ確保に注力します。これは、セキュリティリリース、Infrastructure Security、HackerOne バグバウンティプログラムにおいて、アプリケーション開発・リリースサイクルに関与しようとする Security Division の現在の取り組みを反映しています。
 
-「Product」という用語は広く解釈され、GitLab アプリケーション本体と、マルチテナント SaaS 用の GitLab アプリケーションをサポートするために社内で開発されるすべての他の連携やコードを含みます。私たちの責任は、顧客に公開されるか顧客データをホストする GitLab のあらゆる側面が最高のセキュリティ水準で保たれることを確保し、GitLab が提供するあらゆるものに世界クラスのセキュリティを確保するために積極的かつ迅速に対応することです。
+「製品」という用語は広く解釈され、GitLab アプリケーション本体と、マルチテナント SaaS 用の GitLab アプリケーションをサポートするために社内で開発されるすべての他の連携やコードを含みます。私たちの責任は、顧客に公開されるか顧客データをホストする GitLab のあらゆる側面が最高のセキュリティ水準で保たれることを確保し、GitLab が提供するあらゆるものに世界クラスのセキュリティを確保するために積極的かつ迅速に対応することです。
 
-#### 会社を守る — Security Operations 部門
+#### 会社を守る — Security Operations Department {#protect-the-company---the-security-operations-department}
 
-[Security Operations 部門](/handbook/security/security-operations/) のチームは、GitLab というビジネスと GitLab のプラットフォームの保護に主に注力します。これには、会社の財産の保護、およびビジネスとプラットフォームを標的としたリスクやイベントの予防、検知、対応が含まれます。この部門には Security Incident Response Team (SIRT) と Trust and Safety チームが含まれます。
+[Security Operations Department](/handbook/security/security-operations/)のチームは、GitLab というビジネスと GitLab のプラットフォームの保護に主に注力します。これには、会社の財産の保護、およびビジネスとプラットフォームを標的としたリスクやイベントの予防、検知、対応が含まれます。この部門には Security Incident Response Team (SIRT) と Trust and Safety チームが含まれます。
 
 これらの機能は、GitLab のプラットフォームのセキュリティ態勢を強化・維持し、新規および既存の顧客を保護するエンタープライズレベルのセキュリティを確保する責任を負います。
 
-#### 顧客を安心させる — Security Assurance 部門
+#### 顧客を安心させる — Security Assurance Department {#assure-the-customer---the-security-assurance-department}
 
-[Security Assurance 部門](/handbook/security/security-assurance/) は、上記のチームで構成されます。彼らは責任の中で Customer Assurance プロジェクトを対象とします。これは、組織内で利用するアプリケーションとして、またエンタープライズレベルの SaaS として GitLab のセキュリティと安全性を顧客に保証するためのリソースを提供する必要性を反映しています。これには、顧客が GitLab をセキュアな会社、セキュアな製品、セキュアな SaaS として信頼するための適切なサポート、サービス、リソースを提供することも含まれます。
+[Security Assurance Department](/handbook/security/security-assurance/)は、上記のチームで構成されます。各チームは、責務の一環として Customer Assurance プロジェクトに取り組みます。これは、組織内で利用するアプリケーションとして、またエンタープライズレベルの SaaS として GitLab のセキュリティと安全性を顧客に保証するためのリソースを提供する必要性を反映しています。これには、顧客が GitLab をセキュアな会社、セキュアな製品、セキュアな SaaS として信頼するための適切なサポート、サービス、リソースを提供することも含まれます。
 
-#### 組織を保護する — Corporate Security
+#### 組織を保護する — Corporate Security {#protect-the-organization---corporate-security}
 
 GitLab は会社であり、製品でもあります。[Corporate Security](/handbook/security/corporate/) 部門は、社内でビジネスを行うために会社が使用する情報技術 (IT) 関連システムの実装と保護に注力し、チームメンバーや第三者サービスプロバイダー (別名、契約者) が生産的かつ効率的に職務を遂行するために必要なハードウェア、ソフトウェア、ツールを提供します。私たちが社内のチームメンバー向けに実装する設定は、顧客とそのデータを保護することを目的としています。
 
-私たちはチームメンバー向けに 24x5 の[テクニカルサポートヘルプデスク](/handbook/security/corporate/support)を提供し、多くの全社的な[テックスタックアプリケーション](/handbook/security/corporate/systems)を構成・維持するエンジニアを擁しています。
+私たちはチームメンバー向けに 24x5 の[テクニカルサポートヘルプデスク](/handbook/security/corporate/support)を提供し、多くの全社的な[Tech Stack アプリケーション](/handbook/security/corporate/systems)を構成・維持するエンジニアを擁しています。
 
 私たちは[デバイストラスト、アイデンティティ管理、インフラストラクチャガバナンス](/handbook/security/corporate/team/#functional-org-chart)に大きく投資し、製品の管理者に最高水準のセキュリティ保証を提供し、顧客データを取り扱う際にすべての適切なコントロールが整備されていることを保証しています。
 
-### <i id="biz-tech-icons" class="fas fa-users"></i> チームへの連絡
+### <i id="biz-tech-icons" class="fas fa-users"></i> チームへの連絡 {#contacting-the-team}
 
-#### 脆弱性とセキュリティ問題の報告
+#### 脆弱性とセキュリティ問題の報告 {#reporting-vulnerabilities-and-security-issues}
 
-GitLab の [HackerOne バグバウンティプログラム](/handbook/security/product-security/psirt/runbooks/hackerone-process/)、およびセキュリティ Issue の作成・スケジュールに関する情報は、[engaging with security](/handbook/security/engaging-with-security/) ページと [Responsible Disclosure Policy](https://about.gitlab.com/security/disclosure/) を参照してください。
+GitLab の [HackerOne バグバウンティプログラム](/handbook/security/product-security/psirt/runbooks/hackerone-process/)、およびセキュリティ Issue の作成・スケジュールに関する情報は、[Security への相談](/handbook/security/engaging-with-security/)ページと [責任ある開示ポリシー](https://about.gitlab.com/security/disclosure/)を参照してください。
 
-#### インシデントの報告
+#### インシデントの報告 {#reporting-an-incident}
 
-緊急のセキュリティインシデントを特定した場合や、インシデントが発生した可能性を疑う場合は、[Engaging the Security Engineer On-Call](/handbook/security/security-operations/sirt/engaging-security-on-call/) を参照してください。例には次のようなものが含まれますが、これらに限定されません。
+緊急のセキュリティインシデントを特定した場合や、インシデントが発生した可能性を疑う場合は、[Security Engineer On-Call への連絡](/handbook/security/security-operations/sirt/engaging-security-on-call/)を参照してください。例には次のようなものが含まれますが、これらに限定されません。
 
 - デバイスの紛失または盗難
 - 認証情報の漏洩
@@ -154,21 +154,21 @@ GitLab は、Slack にアクセスできず即時のセキュリティ対応が�
 
 このメールアドレスは GitLab チームメンバーのみがアクセスでき、Workday に登録されている gitlab.com または個人のメールアドレスから到達できます。このアドレスを使用することで、デバイス紛失による被害を限定する優れた手段が得られます。
 
-さらに、GitLab チームメンバーが個人的な緊急事態に遭遇した場合、People グループも[緊急連絡用メールアドレス](/handbook/people-group/#in-case-of-emergency)を提供しています。
+さらに、GitLab チームメンバーが個人的な緊急事態に遭遇した場合、People Group も[緊急連絡用メールアドレス](/handbook/people-group/#in-case-of-emergency)を提供しています。
 
-#### ランサムウェア
+#### ランサムウェア {#ransomware}
 
-ランサムウェア攻撃の疑いがある場合のコミュニケーションと対応プロセスの概要については、[Responding to Ransomware](/handbook/security/responding-to-ransomware/) ページを参照してください。
+ランサムウェア攻撃の疑いがある場合のコミュニケーションと対応プロセスの概要については、[ランサムウェアへの対応](/handbook/security/responding-to-ransomware/)ページを参照してください。
 
 ---
 
-#### セキュリティリリースの通知を受け取る
+#### セキュリティリリースの通知を受け取る {#receive-notification-of-security-releases}
 
-- セキュリティリリースのブログ通知をメールで受け取るには、[contact us](https://about.gitlab.com/company/contact/) ページを訪問してください。
-- RSS でリリース通知を受け取るには、[セキュリティリリース RSS フィード](https://about.gitlab.com/security-releases.xml) または[全リリース用 RSS フィード](https://about.gitlab.com/all-releases.xml) を購読してください。
-- セキュリティリリースに関する追加情報については、Delivery チームの[セキュリティリリース](https://gitlab.com/gitlab-com/gl-infra/readiness/-/tree/master/library/security-releases-development) ページを参照してください。
+- セキュリティリリースのブログ通知をメールで受け取るには、[お問い合わせ](https://about.gitlab.com/company/contact/)ページを訪問してください。
+- RSS でリリース通知を受け取るには、[セキュリティリリース RSS フィード](https://about.gitlab.com/security-releases.xml) または[全リリース用 RSS フィード](https://about.gitlab.com/all-releases.xml)を購読してください。
+- セキュリティリリースに関する追加情報については、Delivery Team の[セキュリティリリース](https://gitlab.com/gitlab-com/gl-infra/readiness/-/tree/master/library/security-releases-development)ページを参照してください。
 
-#### よく利用されるその他の GitLab.com プロジェクト
+#### よく利用されるその他の GitLab.com プロジェクト {#other-frequently-used-gitlabcom-projects}
 
 セキュリティは社内の多くのチームにまたがるため、すべての GitLab プロジェクトにわたって `~security` ラベル付きの Issue が見つかります。特に:
 
@@ -177,4 +177,4 @@ GitLab は、Slack にアクセスできず即時のセキュリティ対応が�
 - [infrastructure](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues/)
 - [production](https://gitlab.com/gitlab-com/gl-infra/production/issues/)
 
-Issue を作成する際は、ラベルと confidential フラグの使い方について [Creating New Security Issues]({{% ref "engaging-with-security#creating-new-security-issues" %}}) のプロセスに従ってください。
+Issue を作成する際は、ラベルと confidential フラグの使い方について [新しいセキュリティ Issue の作成]({{% ref "engaging-with-security#creating-new-security-issues" %}})のプロセスに従ってください。

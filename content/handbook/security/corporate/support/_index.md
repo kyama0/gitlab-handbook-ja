@@ -2,14 +2,14 @@
 title: 'Corporate Security（CorpSec）サポート'
 description: "ヘルプデスクサービス、システム、チームメンバーからよく寄せられるリクエストを含む、Corporate Security（CorpSec）チームからのヘルプとサポートの入手先。"
 upstream_path: /handbook/security/corporate/support/
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-lastmod: "2026-10-23T12:38:14-05:00"
-translated_at: "2026-10-24T21:08:36.079799+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T05:58:36.294444+00:00"
 translator: claude
 stale: false
 ---
 
-GitLab はオーガニックに成長してきたため、複数の部門および職能グループには、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスの枠組みの中で、その部門または職能グループに固有の Tech Stack アプリケーションの日常的な管理を担当する独自の System Administrators（「Tech Stack App/System Owners」）がいます。GitLab の各 [Tech Stack アプリケーション](/handbook/business-technology/tech-stack-applications/)には、そのアプリケーションの導入と、それを利用するチームメンバー（部門または職能グループ内）への日常的な運用サポートを担当する DRI である System Owner がいます。これにより、従来の IT 部門がボトルネックになることを防ぎ、GitLab の[適切なグループにとっての効率性](/handbook/values/#efficiency-for-the-right-group)というサブバリューの一環として、各部門がセルフサービスを行えるという副次的な利点もあります。
+GitLab はオーガニックに成長してきたため、複数の部門および職能グループには、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスの枠組みの中で、その部門または職能グループに固有の Tech Stack アプリケーションの日常的な管理を担当する独自の System Administrators（「Tech Stack App/System Owners」）がいます。GitLab の各 [Tech Stack アプリケーション](/handbook/business-technology/tech-stack-applications/)には、そのアプリケーションの導入と、それを利用するチームメンバー（部門または職能グループ内）への日常的な運用サポートを担当する DRI である System Owner がいます。これにより、従来の IT 部門がボトルネックになることを防ぎ、GitLab の適切なグループにとっての効率性というサブバリューの一環として、各部門がセルフサービスを行えるという副次的な利点もあります。
 
 Corporate Security チームは、チームメンバーおよび一時的なサービスプロバイダー（コントラクター、ベンダーなど）に技術サポートのヘルプデスクサービスを提供するとともに、私たちが管理する全社的な[システム](/handbook/security/corporate/systems)の構成管理エンジニアリングを担当します。
 
@@ -17,7 +17,7 @@ Corporate Security チームは、チームメンバーおよび一時的なサ�
 
 ### Tier 1. セルフサービス {#tier-1-self-service}
 
-[セルフサービスとセルフラーニング](/handbook/values/#self-service-and-self-learning)という効率性バリューの一環として、質問への回答を見つけられるかどうか、[セキュリティのセルフサービスガイドおよびシステムドキュメント](/handbook/security/corporate/systems)を確認することをお勧めします。
+セルフサービスとセルフラーニングという効率性バリューの一環として、質問への回答を見つけられるかどうか、[セキュリティのセルフサービスガイドおよびシステムドキュメント](/handbook/security/corporate/systems)を確認することをお勧めします。
 
 探しているものが見つからない場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお問い合わせください。
 

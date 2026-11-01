@@ -2,11 +2,11 @@
 title: Support Pods
 description: Support 内および各部門をまたいだ協働に焦点を当てる柔軟な関心グループ
 upstream_path: /handbook/support/support-pods/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-translated_at: "2026-10-19T22:06:32+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:36:19+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-19T12:50:01+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 Support Pods は、任意のチームメンバーグループが、取り組みたい任意の課題セットに対して、関心ベースの自己組織化グループを立ち上げるために利用できる柔軟なフレームワークです。
@@ -17,11 +17,11 @@ Support Pods は、ある種の専門化を今すぐ導入すると同時に、G
 
 Support Pod をワークフローに組み込む方法については、[Support Pod と働くワークフローページ](/handbook/support/workflows/working-with-pods)を参照してください。
 
-## ネーミング
+## ネーミング {#naming}
 
 `Support Pods` がこの取り組みの正式名称であり、フォーマルな書面または口頭でのコミュニケーションでは必ずこの名称で呼んでください。GitLab の文脈では `pod` という言葉がさまざまな意味で使われるため、混同や曖昧さを避けるためです。
 
-## ディレクトリ
+## ディレクトリ {#directory}
 
 | Support Pod | Slack | リード |
 |-------------|-------|-------|
@@ -46,27 +46,27 @@ Support Pod をワークフローに組み込む方法については、[Support
 | [Training](training) | [#spt_pod_training](https://gitlab.enterprise.slack.com/archives/C06P0J75H6Y) | <ul><li>{{< member-by-name "Matthew Badeau" >}}</li><li>{{< member-by-name "John Gaughan" >}}</li></ul> |
 | [Upgrade](upgrade) | [#spt_pod_upgrade](https://gitlab.enterprise.slack.com/archives/C04MEHW7J4W) | |
 
-## Support Pod を始める
+## Support Pod を始める {#starting-a-support-pod}
 
-### 開始前に
+### 開始前に {#before-starting}
 
 - Support Pod が扱う活動内容を決める。
 - 少なくとも 3 名のチームメンバーが Support Pod の活動への参加をコミットしている。
 - [Support Pod のリード](#responsibilities-of-support-pod-leads)を決定する。
 
-### 立ち上げ
+### 立ち上げ {#starting-it-up}
 
-1. [Example Pod](example-pod.md)テンプレートページを複製する。
+1. [ポッドの例](example-pod.md)テンプレートページを複製する。
 1. 新しく作成したページを Support Pod の名前にリネームする。
 1. Support Pod のページを、ポッドに関連する内容に修正する。
 1. [CODEOWNERS](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/.gitlab/CODEOWNERS?ref_type=heads)ファイルの `^[support-pods]` セクションに自分（と他のリード）を追加する。
 
-### 開始後
+### 開始後 {#after-starting}
 
 1. 「Support Pod の運営」セクションに目を通し、Support Pod の運営に関するガイドラインや推奨事項を確認する。
 1. Support Week In Review で Support Pod の新規作成を告知する。
 
-## Support Pod の運営
+## Support Pod の運営 {#running-a-support-pod}
 
 ### Support Pod リードの責務 {#responsibilities-of-support-pod-leads}
 
@@ -81,35 +81,35 @@ Support Pod のリードは、次の責務を担います。
 - Support Pod の活動に必要なリソースやツールを入手する。
 - ポッドの目的が達成された、または不要になった場合に Support Pod を解散する。
 
-各 Support Pod は自己組織化されているため、リードは各 Support Pod がどのように意思決定を行うかを自由に決められます。その際、[GitLab Values](/handbook/values/)と次の原則を念頭に置いてください。
+各 Support Pod は自己組織化されているため、リードは各 Support Pod がどのように意思決定を行うかを自由に決められます。その際、GitLab のバリューと次の原則を念頭に置いてください。
 
 - GitLab ハンドブック： [Directly Responsible Individuals](/handbook/people-group/directly-responsible-individuals/)。
 - チケット対応の Support ワークフロー： [主要な原則](/handbook/support/workflows/working-on-tickets/#key-principles)
   および [優先順位と影響](/handbook/support/workflows/working-on-tickets/#priorities-and-impact)。
 
-### 協働の手段
+### 協働の手段 {#collaboration-mediums}
 
 ここでは、Support Pod のメンバーと協働するために使えるさまざまな手段の一覧を示します。
 
-#### Zendesk
+#### Zendesk {#zendesk}
 
 個人ビューを作成し、その設定を Support Pod のメンバーと共有することで、メンバー全員が同じチケットビューを参照できるようにすることもできます。残念ながら現時点では、これを行う最も実用的な方法は、スクリーンショットを取得して共有するなどの手作業です。
 
 Zendesk の共有ビューを使うアプローチは [Support Team Meta Issue #6187](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6187)で検討されています。
 
-#### GitLab.com の Issue
+#### GitLab.com の Issue {#gitlabcom-issues}
 
 ラベルと Issue ボードを作成し、`gitlab-org` および `gitlab-com` グループ内で Support Pod に関連するすべての GitLab.com の Issue をフィルタして表示することもできます。
 
-#### Support Pods プロジェクト
+#### Support Pods プロジェクト {#support-pods-project}
 
 [Support Pods プロジェクト](https://gitlab.com/gitlab-com/support/support-pods)内の Support Pod 用ディレクトリに、関連ファイルやドキュメントを保管することもできます。
 
-#### Google Doc
+#### Google Doc {#google-doc}
 
 GitLab.com の Issue や Zendesk チケットなど、より恒久的な手段に最終的に移行する前に、Google Doc を作成して文章での協働や保管に使うこともできます。GitLab の全員が閲覧または編集できるよう権限を設定してください。
 
-#### Slack
+#### Slack {#slack}
 
 Slack を使って協働する場合は、既存のチャンネルを活用することを検討してください。
 
@@ -120,7 +120,7 @@ Slack を使って協働する場合は、既存のチャンネルを活用す�
 
 ポッド固有のペアリングセッションをチャンネル内で実施する場合は、[#pairify-app](https://gitlab.enterprise.slack.com/archives/C06LG9NBSUX)でリクエストすることで、新しいチャンネルに [Pairify](/handbook/support/workflows/pairify/)のサポートを追加できます。
 
-## ギャップの特定とアクションによる Support Pod の改善
+## ギャップの特定とアクションによる Support Pod の改善 {#improving-support-pods-by-identifying-and-actioning-on-gaps}
 
 課題に対応するには、Support Pod 内、または専門知識の分布における懸念領域を特定する必要があります。
 
@@ -135,15 +135,15 @@ Slack を使って協働する場合は、既存のチャンネルを活用す�
 1. アンケートなどの方法で Support チームメンバーから困りごとのリストを集める。
    - アクション： 実行可能な点があるかリストを分析する。それぞれに対して Issue を作成し、解決の DRI を割り当てる。
 
-## 歴史的経緯
+## 歴史的経緯 {#historical-context}
 
-### イテレーション 1
+### イテレーション 1 {#iteration-1}
 
 [イテレーション 1](https://gitlab.com/groups/gitlab-com/support/-/epics/192)は、2021 年 8 月に [APAC](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/3663)、2021 年 9 月に [グローバル](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/3740)でロールアウトされました。これは学習と協働を促進することに重点を置いており、[チケット対応ワークフロー](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/01bdd0b151efc881b13fdb9484669a6f76d0708a/sites/handbook/source/handbook/support/workflows/working-on-tickets.html.md)を補完するように設計されたため、Support Pod のビューは他のすべての Zendesk ビューの後に手を付けることになっていました。
 
 イテレーション 1 の初期フェーズの参加者からは、他のビューでの作業負荷が大きく、Support Pod のビューに手を付ける時間が足りないという声が寄せられました。この問題を緩和するため、2022 年 2 月に [Support Pod ビューを他の Zendesk ビューよりも優先する](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/96152)という試行を行いました。
 
-#### 振り返り
+#### 振り返り {#retrospective}
 
 **うまくいったこと：**
 
@@ -160,6 +160,6 @@ Slack を使って協働する場合は、既存のチャンネルを活用す�
 - Support Pod のメンバーが互いにどう協働できるかを明らかにする  &mdash;  協働のほとんどは、Support Pod 内ではなく、そのチケットに取り組んでいる人との間で発生していた。
 - Support Pod のコンテンツをより焦点の絞られたものにする  &mdash;  たとえば Instance Management のように、フォーカスを促すには問題の種類が広すぎるビューがあった。
 
-### イテレーション 2
+### イテレーション 2 {#iteration-2}
 
 [イテレーション 2](https://gitlab.com/groups/gitlab-com/support/-/epics/191)は、チケット業務を組織する主要な仕組みとして [Support Global Groups (SGGs)](https://gitlab.com/groups/gitlab-com/support/-/epics/210)がロールアウトされた背景の中で、2022 年 3 月にロールアウトされました。Support Pod は、任意のチームメンバーグループが、グループが取り組みを選んだ任意の課題セットに対して、関心ベースの自己組織化グループを立ち上げるために利用できる柔軟なフレームワークへと進化しました。これにより、SGG と共存し、補完できるようになりました。

@@ -1,11 +1,11 @@
 ---
 title: "Plan:Work Items チーム"
 upstream_path: /handbook/engineering/devops/plan/work-items/
-upstream_sha: 48abec5939783dec7dd722f4427e0eba53023f6f
-translated_at: "2026-10-09T21:10:17+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:13:43+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-06T15:47:25+03:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ## Plan:Work Items チーム {#planwork-items-team}
@@ -98,7 +98,7 @@ Issue の仕様をより明確にする必要があります。
 
 私たちは[当事者意識](/handbook/company/operating-principles/#ownership-mindset)という行動原則に従います。作業に最も近い人が、その作業について意思決定し、結果に責任を持ちます。また、私たち自身の活動量ではなく、[顧客の成果](/handbook/company/operating-principles/#customer-outcomes)で自分たちを評価します。
 スケジュールされていない重要な作業を見つけたら、[スケジュールへの追加を依頼](/handbook/engineering/workflow/#requesting-something-to-be-scheduled)するか、
-[自分で提案に取り組む](/handbook/values/#iteration)ことができます。自分にアサインし、[#g_work_items](https://gitlab.slack.com/archives/g_work_items)で共有してください。
+自分で提案に取り組むことができます。自分にアサインし、[#g_work_items](https://gitlab.slack.com/archives/g_work_items)で共有してください。
 
 ## 便利なリンク {#useful-links}
 
@@ -106,5 +106,5 @@ Issue の仕様をより明確にする必要があります。
 - [同じ一覧のうち、現在のマイルストーンのもの](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=group%3A%3Awork%20items&milestone_title=%23started)
 - [エラーバジェットのダッシュボード](https://dashboards.gitlab.net/d/stage-groups-work_items/stage-groups-group-dashboard-plan-work-items)
 - [Plan ステージの Engineering Excellence ダッシュボード](https://gitlab-com.gitlab.io/eng-excellence/?view=ee&scope=stage%3Aplan)（社内向け）
-- Slack の [#g_work_items](https://gitlab.slack.com/archives/g_work_items) と [#s_plan](https://gitlab.slack.com/archives/s_plan)
+- Slack の [#g_work_items](https://gitlab.slack.com/archives/g_work_items)と [#s_plan](https://gitlab.slack.com/archives/s_plan)
 - [現在の採用情報](https://about.gitlab.com/jobs/)

@@ -2,14 +2,14 @@
 title: "ケイデンス"
 description: "会社のあらゆる事象は一定のケイデンスで起こります。各ケイデンスの期間はそれぞれ異なります。GitLab におけるケイデンスについて学びます。"
 upstream_path: "/handbook/company/cadence/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:04:33+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-07-17T16:59:31+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 会社のあらゆる事象は一定のケイデンスで起こります。
 各ケイデンスの期間はそれぞれ異なります。
@@ -28,7 +28,7 @@ lastmod: "2025-07-17T16:59:31+00:00"
 
 FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spreadsheets/d/11n44QyIVLD2rZwOnjLHlN1CvfmsVfFdyDfCK8qCLGM4/edit?usp=sharing)で確認できます。
 
-### ケイデンスの例
+### ケイデンスの例 {#cadence-examples}
 
 ケイデンスの要素が時系列でどのように組み合わさるか:
 
@@ -40,19 +40,19 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 
 1. クロスファンクショナルな最重要イニシアチブは通常 1 年続き、年次目標と密接に連携している必要があります。
 1. [Key Performance Indicators（KPI）](/handbook/company/kpis/)は、会社として常時行う重要な事柄に関するパフォーマンス指標です。ある四半期で KPI を変えたい場合、それは通常 OKR となります。
-1. [私たちのバリュー](/handbook/values/)は、このケイデンスページの項目を追求するうえで従う原則ですが、いずれのケイデンスにも属しません。
+1. 私たちのバリューは、このケイデンスページの項目を追求するうえで従う原則ですが、いずれのケイデンスにも属しません。
 
 ### ケイデンスの流れ {#cadence-flow}
 
 以下は、[ケイデンスの流れ](#cadence-flow)の各項目がどのように組み合わさるかを示す一例で、短期的な目標を着実に達成することによって、より長期的な目標がどのように達成されるかを表しています。
 
 1. イノベーションをより身近なものにすることで、**プロダクトへのユーザーの貢献**が増え、より多くのオーディエンスに成果がもたらされ、それによってさらに多くのユーザーが私たちのプロダクトに貢献できるようになります。この好循環がプロダクトのイノベーション速度を高め、より多くの人々がイノベーションを起こし、貢献できるようにします。
-1. [AllOps ビジョン](/handbook/company/vision/)を実現するために必要な要素の 1 つが、[GitLab ServiceDesk](https://docs.gitlab.com/ee/user/project/service_desk/) の改善です。これは外部関係者をソフトウェア開発プロセスにつなぎ、より多くの人が貢献できるようにします。ServiceDesk は完全な**バリューストリームデリバリーの全体像**を提供するために必要で、これによってより多くの人が[アイデアから顧客へ](https://about.gitlab.com/solutions/value-stream-management/#:~:text=new%20innovation%20from-,idea%20to%20customers,-.)のイノベーションの流れを管理できるようになり、より多くのチームや企業が AllOps ソリューションとして GitLab に依存するようになるはずです。
-1. [3 年戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)の柱の 1 つは [Customer Results](/handbook/values/#results) であり、これには [Value Stream Analytics](https://about.gitlab.com/solutions/value-stream-management/) のような項目を通じて [マネージャーや経営陣など](https://about.gitlab.com/direction/plan/value_stream_management/#who-are-we-focusing-on)のより幅広いユーザー層に価値とイノベーションを届ける支援を行う **Proving Value** が含まれます。より幅広いユーザー層に価値を証明することは、完全なバリューストリームデリバリーの全体像を提供することに近づき、AllOps ビジョンへの前進を生み出します。
+1. [AllOps ビジョン](/handbook/company/vision/)を実現するために必要な要素の 1 つが、[GitLab ServiceDesk](https://docs.gitlab.com/ee/user/project/service_desk/)の改善です。これは外部関係者をソフトウェア開発プロセスにつなぎ、より多くの人が貢献できるようにします。ServiceDesk は完全な**バリューストリームデリバリーの全体像**を提供するために必要で、これによってより多くの人が[アイデアから顧客へ](https://about.gitlab.com/solutions/value-stream-management/#:~:text=new%20innovation%20from-,idea%20to%20customers,-.)のイノベーションの流れを管理できるようになり、より多くのチームや企業が AllOps ソリューションとして GitLab に依存するようになるはずです。
+1. [3 年戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)の柱の 1 つは Customer Results であり、これには [Value Stream Analytics](https://about.gitlab.com/solutions/value-stream-management/)のような項目を通じて [マネージャーや経営陣など](https://about.gitlab.com/direction/plan/value_stream_management/#who-are-we-focusing-on)のより幅広いユーザー層に価値とイノベーションを届ける支援を行う **Proving Value** が含まれます。より幅広いユーザー層に価値を証明することは、完全なバリューストリームデリバリーの全体像を提供することに近づき、AllOps ビジョンへの前進を生み出します。
 
 ベータ版バリューストリームという KR の達成に成功することは、年次のバリューストリームダッシュボード目標、バリューストリーム管理をより多くのユーザーに広げるという戦略的目標、AllOps ソリューションというビジョン、そしてすべての人が貢献できるというミッションに対する前進を意味します。KR はあくまで 1 つのビルディングブロックに過ぎませんが、四半期内での着実な完了が、より長期的な目標に向けた前進につながります。
 
-## 更新のケイデンス
+## 更新のケイデンス {#update-cadence}
 
 私たちは要素のレビューにもケイデンスを設けています。具体的には、各要素は、その 1 つ下の階層にある要素のケイデンスでレビューされます。たとえば、3 年戦略は毎年見直され、これは年次目標を策定するタイミングと対応します。そして年次目標は四半期ごとに見直され、これが OKR を作成するタイムフレームと一致します。
 
@@ -89,13 +89,13 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 
 1. [年次計画](/handbook/finance/financial-planning-and-analysis/#annual-operating-plan-aop)
 1. [4 四半期ローリングフォーキャスト](/handbook/finance/financial-planning-and-analysis/#quarterly--monthly-cycle-incl-close-variance-forecast-guidance)
-1. [Direction](https://about.gitlab.com/direction/) の大部分
+1. [Direction](https://about.gitlab.com/direction/)の大部分
 1. [会計年度プロダクト投資テーマ](https://about.gitlab.com/direction/#fiscal-year-product-investment-themes)
 
 ## 四半期 {#quarter}
 
 1. [取締役会](/handbook/board-meetings/#board-meeting-process)
-1. セールス目標（[Clari](/handbook/business-technology/tech-stack/#clari) 内）
+1. セールス目標（[Clari](/handbook/business-technology/tech-stack/#clari)内）
 1. [E-group オフサイト](/handbook/company/offsite/)
 1. [GitLab Assembly](/handbook/company/gitlab-all-company-meetings/)
 1. [決算関連活動](/handbook/finance/investor-relations/)
@@ -111,7 +111,7 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 1. [部下との 1-1 のケイデンス](/handbook/leadership/1-1/)
 1. [E-Group Weekly](/handbook/company/e-group-weekly/)
 
-## ガントチャート
+## ガントチャート {#gantt-chart}
 
 以下は、私たちのケイデンスを示すビジュアル例であり、会社やチームのスケジュールによって変更される可能性があります。日付は概算です。
 

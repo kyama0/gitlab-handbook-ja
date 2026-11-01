@@ -2,26 +2,26 @@
 title: モジュラーコードの指針
 description: "Growth Engineers が AI ネイティブなコラボレーションと長期的なメンテナンス性を最適化し、デフォルトでモジュラーコードを書く理由と方法"
 upstream_path: /handbook/engineering/development/growth/modular_code/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: "2026-06-15T18:08:34+05:30"
-translated_at: "2026-06-20T14:09:23Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T06:09:48+00:00"
 translator: codex
 stale: false
 ---
 
-## モジュール性をデフォルトにする理由
+## モジュール性をデフォルトにする理由 {#why-modularity-is-our-default}
 
 Growth Engineers は **デフォルトで** モジュラーコードを書きます。これは私たちの働き方についての指針であり、「時間があれば」行う任意のリファクタリング作業ではありません。
 
-デリバリーのプレッシャーが高いとき、その瞬間に最も速いもの、つまり今日追加するのは速いが、後で変更、テスト、推論するには高くつく密結合なコードに手を伸ばしたくなります。私たちは意図的にそこから離れようとしています。モジュール性は、最終的に全員を遅くする負債を積み上げることなく、速く進み続けるための方法です。
+デリバリーのプレッシャーが高いとき、その瞬間に最も速いもの、つまり今日追加するのは速いが、後で変更、テスト、推論するには高くつく密結合なコードに手を伸ばしたくなります。私たちは意図的にそこから離れようとしています。モジュール性は、最終的に全員を遅くする負債を _積み上げることなく_、速く進み続けるための方法です。
 
-### スコープと他のドキュメントとの関係
+### スコープと他のドキュメントとの関係 {#scope-and-relationship-to-other-documentation}
 
 このページは意図的に **Growth にスコープを限定した、薄い期待値レイヤー** です。Growth Engineers に期待することを述べ、_どのように_ 行うかは、ここでガイダンスを再記述するのではなく、[ガイドと参考資料](#guides-and-further-reading)にリンクした GitLab の標準的な情報源に委ねます。目的は、「これが Growth での期待値である」と言う場所を 1 つに保つことであり、競合する情報源を作ることではありません。
 
 私たちは意図的に Growth から始めています。これらの期待値は、素早くイテレーションする Fullstack Engineers として私たちがどのように運営するかに適用されます。ここにスコープを限定することで、より広い採用を提案する前にその振る舞いをモデル化できます。有用であることがわかれば、次の自然なステップは、耐久性のある部分を全社的なエンジニアリングドキュメントへ昇格させることです。
 
-### AI ネイティブなコラボレーション（主な理由）
+### AI ネイティブなコラボレーション（主な理由） {#ai-native-collaboration-lead-reason}
 
 私たちは、エンジニアが開発ライフサイクル全体で AI エージェントとコラボレーションする未来に向けて構築しています。AI が正しく安全な変更を提案できるのは、コードが **明確で十分に境界付けられたインターフェイス** を公開している場合だけです:
 
@@ -31,7 +31,7 @@ Growth Engineers は **デフォルトで** モジュラーコードを書きま
 
 つまり、**モジュラーインターフェイスは、AI が私たちを正しく支援するための前提条件です。** 密結合なコードは、新しいエンジニアにとって安全に変更しにくいのと同じくらい、エージェントにとっても安全に変更しにくいものです。
 
-### メンテナンス性（耐久性のある理由）
+### メンテナンス性（耐久性のある理由） {#maintainability-the-durable-reason}
 
 コードを AI が扱いやすくする特性は、常に良いコードを作ってきた特性と同じです:
 
@@ -42,7 +42,7 @@ Growth Engineers は **デフォルトで** モジュラーコードを書きま
 
 AI が扱いやすいこととメンテナンス性は対立しません。それらは同じ規律であり、そこへ投資することはツールがどのように進化しても効果を生みます。
 
-## Growth Engineers に期待されること
+## Growth Engineers に期待されること {#what-is-expected-of-growth-engineers}
 
 これを適用するためにソフトウェアアーキテクトである必要はありません。期待されるのは、モジュラーな選択を **デフォルトの反射** にし、レビューやリファインメントで _なぜそうするのか_ を説明できることです。具体的には:
 
@@ -52,11 +52,11 @@ AI が扱いやすいこととメンテナンス性は対立しません。そ�
 1. **見つけたときよりもモジュラーにして残す。** もつれた領域に触れるときは、速さのためにもつれを増やすのではなく、作業している継ぎ目に対して小さくスコープ内の改善を行います（ボーイスカウトルール）。
 1. **継ぎ目を説明できるようにする。** MR やリファインメントで、モジュールの責任、インターフェイス、境界がそこにある理由を説明できるべきです。
 
-## これは学習されるスキルです。問題ありません
+## これは学習されるスキルです。問題ありません {#this-is-a-learned-skill--that-is-okay}
 
-モジュラーコードをうまく書くことは、時間をかけて伸びるスキルであり、最初は既存コードに追加するだけより遅く感じることがあります。そのトレードオフは想定内であり、受け入れられます。もつれたコードに対する複利的な利息を後で払うよりも、今そのスキルに投資したいと考えています。境界をどこに置くべきか不確かな場合は、リファインメント、`#sd_growth_engineering`、または [Engineering DRI](engineering_dri) と早めに相談し、それをブロッカーではなく設計上の会話として扱ってください。
+モジュラーコードをうまく書くことは、時間をかけて伸びるスキルであり、最初は既存コードに追加するだけより遅く感じることがあります。そのトレードオフは想定内であり、受け入れられます。もつれたコードに対する複利的な利息を後で払うよりも、今そのスキルに投資したいと考えています。境界をどこに置くべきか不確かな場合は、リファインメント、`#sd_growth_engineering`、または [Engineering DRI](engineering_dri)と早めに相談し、それをブロッカーではなく設計上の会話として扱ってください。
 
-## ワークフローでどのように現れるか
+## ワークフローでどのように現れるか {#how-this-shows-up-in-our-workflow}
 
 これは判断に基づく原則であり、linter が完全にチェックできるものではありません。これは私たちがすでに行っている働き方を通じて強化され、特定の 1 人のレビュアーに取り締まられるものではなく、エンジニアリングチーム全体が所有します。
 
@@ -64,29 +64,29 @@ AI が扱いやすいこととメンテナンス性は対立しません。そ�
 1. **コードレビュー。** 私たちの[コードレビュー](/handbook/engineering/workflow/code-review/)は、この原則が強化される主な場所です。レビュアーは結合と境界に関する懸念を提起することが期待され、エンジニアは継ぎ目、つまりモジュールの責任、インターフェイス、境界がそこにある理由を説明できるべきです。
 1. **ツール。** すでに正式な境界が存在する場所、例えばバックエンドの[バウンデッドコンテキスト](https://docs.gitlab.com/development/software_design/#bounded-contexts)やフロントエンドのカプセル化作業では、CI がそれらを強制します。それ以外はすべて、レビューで適用される人間の判断です。
 
-### 水平方向の変更より垂直方向の変更を優先する
+### 水平方向の変更より垂直方向の変更を優先する {#prefer-vertical-over-horizontal-changes}
 
-継ぎ目がどこにあるかを知っていると、変更を **垂直方向** に、つまり触れるレイヤーを end-to-end に通って価値を届ける薄いスライスとして切り分けられます。これは、すべてのデータベース作業を行い、次にすべてのバックエンド作業を行い、次にすべてのフロントエンド作業を別々の変更として行う **水平方向** の切り分けとは異なります。垂直スライスは、明確な継ぎ目を _必要とし_、同時に _強化します_。レイヤー間の境界が明示的な場合にのみ、薄い end-to-end のスライスを切り出せます。
+継ぎ目がどこにあるかを知っていると、変更を **垂直方向** に、つまり触れるレイヤーをエンドツーエンドに通って価値を届ける薄いスライスとして切り分けられます。これは、すべてのデータベース作業を行い、次にすべてのバックエンド作業を行い、次にすべてのフロントエンド作業を別々の変更として行う **水平方向** の切り分けとは異なります。垂直スライスは、明確な継ぎ目を _必要とし_、同時に _強化します_。レイヤー間の境界が明示的な場合にのみ、薄いエンドツーエンドのスライスを切り出せます。
 
-Growth ではチームに [Fullstack Engineers](/handbook/engineering/development/growth/#how-we-work) が配置されているため、これはより重要です。1 人のエンジニアが通常、データベースから UI までスライス全体を所有するため、レビュアーが全体像を見られる 1 つのマージリクエストで一貫した垂直スライスを出荷できる独自の立場にあります。同じ変更を水平方向に分割すると、同じ人が書いているレイヤー間に人工的な引き継ぎが発生し、レビューが難しくなり（各レイヤーが他のレイヤーのコンテキストを欠くため）、変更全体を見ないままコードをマージするリスクが増えます。小規模な Fullstack チームにとって、垂直スライスはオーバーヘッドが低く、フィードバックが速いデフォルトです。
+Growth ではチームに [Fullstack Engineers](/handbook/engineering/development/growth/#how-we-work)が配置されているため、これはより重要です。1 人のエンジニアが通常、データベースから UI までスライス全体を所有するため、レビュアーが全体像を見られる 1 つのマージリクエストで一貫した垂直スライスを出荷できる独自の立場にあります。同じ変更を水平方向に分割すると、同じ人が書いているレイヤー間に人工的な引き継ぎが発生し、レビューが難しくなり（各レイヤーが他のレイヤーのコンテキストを欠くため）、変更全体を見ないままコードをマージするリスクが増えます。小規模な Fullstack チームにとって、垂直スライスはオーバーヘッドが低く、フィードバックが速いデフォルトです。
 
-これは判断であり、ルールではありません。正しい答えが 1 つの垂直マージリクエストの場合もあれば、いくつかの場合もあります。レイヤーが本当に独立している場合、水平方向の切り分けがより良い選択であることもあります。詳しくは、[水平方向と垂直方向の切り分けのトレードオフ](/handbook/engineering/workflow/iteration/#tradeoffs-between-horizontal-and-vertical-slicing)と私たちの[イテレーションのバリュー](/handbook/values/#iteration)を参照してください。
+これは判断であり、ルールではありません。正しい答えが 1 つの垂直マージリクエストの場合もあれば、いくつかの場合もあります。レイヤーが本当に独立している場合、水平方向の切り分けがより良い選択であることもあります。詳しくは、[水平方向と垂直方向の切り分けのトレードオフ](/handbook/engineering/workflow/iteration/#tradeoffs-between-horizontal-and-vertical-slicing)と私たちのイテレーションのバリューを参照してください。
 
 ## ガイドと参考資料 {#guides-and-further-reading}
 
 この原則は、GitLab の既存のエンジニアリング標準に基づいています。境界を _どのように_ 引くかの実践的な参考資料として、これらを使用してください:
 
-1. [Software design guides](https://docs.gitlab.com/development/software_design/) — バウンデッドコンテキスト、深いモジュール、疎結合 / 高凝集に関する GitLab の標準的なガイダンス。
-1. [GitLab Modular Monolith design document](/handbook/engineering/architecture/design-documents/modular_monolith/)
+1. [ソフトウェア設計ガイド](https://docs.gitlab.com/development/software_design/) — バウンデッドコンテキスト、深いモジュール、疎結合 / 高凝集に関する GitLab の標準的なガイダンス。
+1. [GitLab Modular Monolith 設計ドキュメント](/handbook/engineering/architecture/design-documents/modular_monolith/)
    — この原則がつながる全社的なアーキテクチャ方針。
-1. バックエンド (Ruby): [Reusing abstractions](https://docs.gitlab.com/development/reusing_abstractions/)
-   と [Ruby style guide](https://docs.gitlab.com/development/backend/ruby_style_guide/)。
-1. フロントエンド (JavaScript/Vue): [Frontend design patterns](https://docs.gitlab.com/development/fe_guide/design_patterns/)
-   と [JavaScript style guide](https://docs.gitlab.com/development/fe_guide/style/javascript/)。
+1. バックエンド (Ruby): [抽象化の再利用](https://docs.gitlab.com/development/reusing_abstractions/)
+   と [Ruby スタイルガイド](https://docs.gitlab.com/development/backend/ruby_style_guide/)。
+1. フロントエンド (JavaScript/Vue): [フロントエンドの設計パターン](https://docs.gitlab.com/development/fe_guide/design_patterns/)
+   と [JavaScript スタイルガイド](https://docs.gitlab.com/development/fe_guide/style/javascript/)。
 1. 外部: 深いモジュールと複雑さの最小化に関する [A Philosophy of Software Design](https://web.stanford.edu/~ouster/cgi-bin/aposd.php)
    (Ousterhout)。上記のガイダンスの多くの基礎です。
 
-## 関連
+## 関連 {#related}
 
 1. [技術的探求（「スパイク」）ガイドライン](technical_spikes) — 実装前にモジュラー設計の選択肢を探索することが多い場所。
 1. [Growth マイルストーン計画・リファインメント・見積もり](initiative_refinement_estimation) — 適切な継ぎ目を構築するコストを見積もりに反映すべき場所。

@@ -2,33 +2,33 @@
 title: "コンピテンシー"
 description: "GitLab には学習のための共通フレームワークとしてのコンピテンシーがあります。このページは、私たちのコンピテンシーに関する Single Source of Truth (SSoT) リソースです。"
 upstream_path: /handbook/people-group/competencies/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:04:33+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-GitLab には学習のための共通フレームワークとしてのコンピテンシーがあります。このページは、私たちのコンピテンシーに関する [Single Source of Truth (SSoT)](https://docs.gitlab.com/ee/development/documentation/styleguide/#why-a-single-source-of-truth) リソースです。
+GitLab には学習のための共通フレームワークとしてのコンピテンシーがあります。このページは、私たちのコンピテンシーに関する [Single Source of Truth (SSoT)](https://docs.gitlab.com/ee/development/documentation/styleguide/#why-a-single-source-of-truth)リソースです。
 
 コンピテンシーは、個人が自身の役割を効果的かつ効率的に遂行することを可能にする一連のスキル、知識、行動と定義されます。GitLab には 3 つの主要なカテゴリのコンピテンシーがあります:
 
-- バリュー コンピテンシー - 組織の[企業価値](/handbook/values/)を反映する、全労働力に必要な共通の行動とスキルのセット
-- リモート コンピテンシー - all-remote 環境で業務を遂行するために必要なスキルと知識
+- バリュー コンピテンシー - 組織のバリューを反映する、全労働力に必要な共通の行動とスキルのセット
+- リモート コンピテンシー - オールリモート環境で業務を遂行するために必要なスキルと知識
 - ファンクショナル コンピテンシー - 機能レベルで業務を遂行するために必要なスキル、知識、行動
 
-## 原則
+## 原則 {#principles}
 
-1. [Single Source of Truth (SSoT)](https://docs.gitlab.com/ee/development/documentation/styleguide/#why-a-single-source-of-truth) コンピテンシーページに掲載することで、異なる対象者に対して同じ素材を再利用します
+1. [Single Source of Truth (SSoT)](https://docs.gitlab.com/ee/development/documentation/styleguide/#why-a-single-source-of-truth)コンピテンシーページに掲載することで、異なる対象者に対して同じ素材を再利用します
 1. コンピテンシーを世界中の誰もがアクセスできるようにし、コンピテンシーの理解を検証するナレッジアセスメント（Google フォームと Zapier を介して）も同様にします
 1. [誰もが貢献できる](/handbook/company/mission/#mission)よう、ハンドブックファーストで作業します
 
 {{< youtube "oXTZQpICxeE" >}}
 
-## コンピテンシーを使用する場所
+## コンピテンシーを使用する場所 {#where-we-use-competencies}
 
 以下のイニシアチブは SSoT として同じコンピテンシーを使用すべきです。
-別々の素材を維持する代わりに、コンピテンシーが定義されている最も関連性の高い場所にリンクで戻る必要があります。一般的なコンピテンシーの場合、これはおそらく私たちの[企業価値](/handbook/values/)ページです。役割固有のコンピテンシーの場合、これはおそらく [job-description-library](/handbook/hiring/job-description-library/#format) ページです。
+別々の素材を維持する代わりに、コンピテンシーが定義されている最も関連性の高い場所にリンクで戻る必要があります。一般的なコンピテンシーの場合、これはおそらく私たちのバリューページです。役割固有のコンピテンシーの場合、これはおそらく [job-description-library](/handbook/hiring/job-description-library/#format)ページです。
 たとえば、GitLab の価値をどのように伝えるかについて 1 つの SSoT を持つべきです。
 
 1. [職務記述要件](/handbook/hiring/job-description-library/#format)
@@ -46,23 +46,23 @@ GitLab には学習のための共通フレームワークとしてのコンピ�
 1. [フィールドイネーブルメント](/handbook/sales/field-operations/field-enablement/)
 1. [GitLab University](https://university.gitlab.com/)
 1. [Customer Success Skills Exchange セッション](/handbook/sales/training/customer-success-skills-exchange/)
-1. [Professional services offerings](/handbook/customer-experience/professional-services-engineering/framework/#service-offering-framework)
-1. [オンボーディング](/handbook/people-group/general-onboarding/) 一般および部門別の両方
-1. [Customer Success GitLab Demos platform & catalog](https://gitlabdemo.com/)
-1. [Customer Services Guided Explorations](https://gitlab.com/guided-explorations) ([How Guided Explorations are engineered for compounded reuse for competency development](https://gitlab.com/guided-explorations/guided-exploration-concept/-/blob/master/README.md))
-1. [Udemy course](https://www.udemy.com/course/gitlab-for-beginners/)
-1. [Education service offering](https://about.gitlab.com/services/education/)
+1. [プロフェッショナルサービスの提供内容](/handbook/customer-experience/professional-services-engineering/framework/#service-offering-framework)
+1. [オンボーディング](/handbook/people-group/general-onboarding/)一般および部門別の両方
+1. [Customer Success の GitLab Demos プラットフォームとカタログ](https://gitlabdemo.com/)
+1. [Customer Services Guided Explorations](https://gitlab.com/guided-explorations) ([コンピテンシー開発における再利用効果が積み重なるよう Guided Explorations を設計する方法](https://gitlab.com/guided-explorations/guided-exploration-concept/-/blob/master/README.md))
+1. [Udemy コース](https://www.udemy.com/course/gitlab-for-beginners/)
+1. [教育サービスの提供内容](https://about.gitlab.com/services/education/)
 
-## コンテンツ
+## コンテンツ {#content}
 
 1. コンテンツはハンドブックの関連セクションに記載されています（動画と画像が埋め込まれています）
 1. ナレッジアセスメントは Google フォーム（Zapier を介して）で作成されます
 
-## 構造
+## 構造 {#structure}
 
 一部のコンピテンシーはジョブレベルに基づき、その他は役割に基づきます。
 
-バリュー コンピテンシーはジョブレベルによって定義されます。たとえば、GitLab のイテレーション価値におけるコンピテンシーの定義と、そのコンピテンシーをどのように示すかは、Product Manager か Chief Product Officer かによって異なります。
+バリュー コンピテンシーはジョブレベルによって定義されます。たとえば、GitLab のイテレーションというバリューにおけるコンピテンシーの定義と、そのコンピテンシーをどのように示すかは、Product Manager か Chief Product Officer かによって異なります。
 
 一般的に、ジョブレベルが上がるにつれて影響範囲と期待される行動は拡大します。
 
@@ -79,46 +79,46 @@ GitLab には学習のための共通フレームワークとしてのコンピ�
 | VP | 会社全体 + 外部ステークホルダー | 変革をリード |
 | EVP/CXO | 会社全体 + 外部ステークホルダー | チャンピオン  |
 
-リモートワーク コンピテンシーは役割によって定義されます: チームメンバーまたはピープルリーダー。チームメンバーは、リモートワーク コンピテンシーを理解し、日々の業務に適用する必要があります。ピープルリーダーは、リモートワーク コンピテンシーをチームメンバーに対して理解、適用、コーチング、育成する必要があります。
+リモートワーク コンピテンシーは役割によって定義されます。役割はチームメンバーまたは People Leader です。チームメンバーは、リモートワーク コンピテンシーを理解し、日々の業務に適用する必要があります。People Leader は、リモートワーク コンピテンシーを理解して適用し、それについてチームメンバーをコーチングし、育成する必要があります。
 
-## リスト
+## リスト {#list}
 
 各バリューおよびリモートワーク コンピテンシーには、ハンドブックの関連セクションにナレッジアセスメントがあり、現在の理解レベルを自己評価するために受講できます。
 
-### バリュー コンピテンシー
+### バリュー コンピテンシー {#values-competencies}
 
-1. Collaboration
-1. Results
-1. Efficiency
-1. Diversity, Inclusion & Belonging
-1. Iteration
-1. Transparency
+1. コラボレーション
+1. 成果
+1. 効率性
+1. 多様性、インクルージョン、帰属意識
+1. イテレーション
+1. 透明性
 
-すべての CREDIT [バリュー コンピテンシー](/handbook/values/#values-competencies) は、[Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) リソースに役割別に概説されています。各バリューのナレッジアセスメントに加えて、この[ナレッジアセスメント](/handbook/values/#gitlab-values-knowledge-assessment)を受けてバリューの認定を取得することができます。
+すべての CREDIT バリュー コンピテンシーは、[Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)リソースに役割別に概説されています。各バリューのナレッジアセスメントに加えて、このナレッジアセスメントを受けてバリューの認定を取得することができます。
 
-### リモートワーク コンピテンシー
+### リモートワーク コンピテンシー {#remote-work-competencies}
 
 1. [Manager of One](/handbook/leadership/#managers-of-one)
-1. [Effective Communication](/handbook/communication/#effective-communication-competency) : 非同期での働き方を含む: [Why](/handbook/communication/#asynchronous-communication) と [How](/handbook/communication/)、適切に書かれた成果物、[Single Source of Truth](https://docs.gitlab.com/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot)、[動画の制作](/handbook/marketing/marketing-operations/youtube/)
-1. [Handbook first](/handbook/about/handbook-usage/#handbook-first-competency)
-1. [Using GitLab](/handbook/people-group)
+1. [効果的なコミュニケーション](/handbook/communication/#effective-communication-competency) : 非同期での働き方を含む: [理由](/handbook/communication/#asynchronous-communication)と [方法](/handbook/communication/)、適切に書かれた成果物、[Single Source of Truth](https://docs.gitlab.com/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot)、[動画の制作](/handbook/marketing/marketing-operations/youtube/)
+1. [ハンドブックファースト](/handbook/about/handbook-usage/#handbook-first-competency)
+1. [GitLab の使用](/handbook/people-group)
 
-[ピープルリーダー](https://docs.google.com/forms/d/e/1FAIpQLSemWK_Ki0aAMepKAQnaN-uMr1JBlkCs3O80sBli4PaTl2uoDA/viewform) または[個人貢献者](https://docs.google.com/forms/d/e/1FAIpQLScN70eoAjJ0tuj_iSgFRkyRbeNLrO9Yz52897619IkwoNW-cw/viewform)としてナレッジアセスメントを完了することで、リモートワーク コンピテンシーに関するご自身の知識をテストし、自己反省を行ってください。少なくとも 80% のスコアで認定証を取得できます！
+[People Leader](https://docs.google.com/forms/d/e/1FAIpQLSemWK_Ki0aAMepKAQnaN-uMr1JBlkCs3O80sBli4PaTl2uoDA/viewform)または[Individual Contributor](https://docs.google.com/forms/d/e/1FAIpQLScN70eoAjJ0tuj_iSgFRkyRbeNLrO9Yz52897619IkwoNW-cw/viewform)としてナレッジアセスメントを完了することで、リモートワーク コンピテンシーに関するご自身の知識をテストし、振り返ってください。少なくとも 80% のスコアで認定証を取得できます！
 
-### ファンクショナル コンピテンシー
+### ファンクショナル コンピテンシー {#functional-competencies}
 
-1. [Field Competencies](/handbook/sales/training/field-functional-competencies/)
-1. [Engineering Competencies](/handbook/engineering/careers/matrix/)
-1. [Product Management Competencies](/handbook/product/product-management/product-cdf-competencies/)
+1. [フィールドコンピテンシー](/handbook/sales/training/field-functional-competencies/)
+1. [Engineering のコンピテンシー](/handbook/engineering/careers/matrix/)
+1. [Product Management のコンピテンシー](/handbook/product/product-management/product-cdf-competencies/)
 
-### マネージャーおよびリーダーシップ コンピテンシー
+### マネージャーおよびリーダーシップ コンピテンシー {#manager-and-leadership-competencies}
 
 私たちのバリュー、リモートワーク、ファンクショナルコンピテンシーに加えて、マネジメントへのホールパーソンアプローチの基盤となるマネージャー コンピテンシーを特定しました。私たちのリーダーシップおよびマネジメント開発プログラムは、これらのコンピテンシーをチームに影響力のあるトレーニングを作成するための基盤として組み込んでいます。
 
-1. [Emotional Intelligence](/handbook/leadership/emotional-intelligence/)
-1. [Modeling a Culture of Feedback](/handbook/people-group/guidance-on-feedback/#modeling-a-culture-of-feedback-manager-competency)
-1. [Coaching](/handbook/leadership/coaching/)
-1. [Conflict Resolution](/handbook/leadership/managing-conflict/)
-1. [Building High Performing Teams](/handbook/leadership/#building-high-performing-teams)
+1. [感情的知性](/handbook/leadership/emotional-intelligence/)
+1. [フィードバック文化の模範を示す](/handbook/people-group/guidance-on-feedback/#modeling-a-culture-of-feedback-manager-competency)
+1. [コーチング](/handbook/leadership/coaching/)
+1. [対立の解決](/handbook/leadership/managing-conflict/)
+1. [高い成果を上げるチームの構築](/handbook/leadership/#building-high-performing-teams)
 
-![Manager Competencies Graphic](/images/competencies-graphic.png)
+![マネージャーコンピテンシーの図](/images/competencies-graphic.png)

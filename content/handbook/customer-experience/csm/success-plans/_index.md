@@ -1,220 +1,136 @@
 ---
 title: "サクセスプラン"
-description: "サクセスプランは、顧客の望むビジネス成果と GitLab ソリューションを結びつけるロードマップです。CSM が作成・管理する生きたドキュメントです。"
+description: "サクセスプランに関する CSM/A の取り組み方：顧客からのすべてのリクエストとワークストリームにサクセスプランプロジェクト内のワークアイテムを作成し、すべてのワークアイテムで同じ構造を使います。"
 upstream_path: /handbook/customer-experience/csm/success-plans/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T00:10:26+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:49:50+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-10-30T12:11:41-04:00"
 ---
 
 CSM 関連のハンドブックページについては、[CSM ハンドブックのホームページ](/handbook/customer-experience/csm/)を参照してください。
 
 ---
 
-## サクセスプランが初めての方はここからスタート
+## このように取り組む理由 {#why-we-work-this-way}
 
-サクセスプランとは、GitLab を使って顧客のビジネス目標を達成するためのロードマップです。すべての CSM エンゲージメントの基盤となるもので、顧客と共に構築し、関係を通じて継続的に維持していきます。
+サクセスプランは、すべてのアカウントにとって唯一の情報源です。作業を 1 か所にまとめることで、顧客、アカウントチーム、GitLab の誰もが、現状と顧客にとって何が変わったかを把握できます。
 
-作成を始める前に理解しておくべき概念が 3 つあります:
+これがないと、背景情報は Slack、メール、ドキュメント、記憶に分散してしまいます。その結果、多数のアカウントを管理する際に顧客の状況を見失いやすくなります。また、エスカレーション時には技術的な詳細を慌てて探し、引き継ぎ時にはアカウントの情報をゼロから再構築し、レポートが実態を反映しなくなります。私たちが顧客に提供する価値の多くも、記録されないままになります。
 
-| 概念 | 内容 |
+サクセスプランで一度作業を行えば、それが他のすべてに活用されます。
+
+- **ミーティングの準備：** 実際の未完了項目に基づいてアジェンダを作成します。
+- **引き継ぎ：** 誰かの記憶ではなく、アカウントの全履歴を利用できます。
+- **健全性のスナップショットとマネージャーへの報告：** 記録された作業に基づいてエンゲージメントと健全性を評価します。
+- **EBR と更新：** 記録された成果による裏付けを得られます。
+- **Verifiable Outcomes：** 成功がスレッドに埋もれることなく、可視化され、追跡されます。
+- **GitLab の全員：** Product、Engineering、Sales、Solutions Architects、Professional Services が、別途説明を受けることなくアカウントの履歴を開けます。
+- **AI ツール：** 散在するメモの代わりに、GitLab Duo Agent Platform（DAP）や CSM/A Assistant などのツールが検索できる、構造化された的確な背景情報を提供します。
+
+その結果、顧客にとってより良い成果につながります。アクションアイテムが文書化され、推奨事項と回答が記録され、フォローアップがオープンに管理されます。
+
+## すべてのリクエストとワークストリームにワークアイテムを作成する {#every-request-and-workstream-gets-a-work-item}
+
+サクセスプランは、GitLab を使って顧客のビジネス目標を達成するためのロードマップです。顧客のサクセスプランプロジェクトに配置し、顧客からのリクエストとワークストリームごとに 1 つずつ作成するワークアイテムで構成します。
+
+Zendesk と同じように考えてください。顧客が質問したら、チケットを開き、リンクを送り、そこで対応します。イニシアチブとも呼ばれるワークストリームも同じです。
+
+Executive Business Review（EBR）、ワークショップ、Verifiable Outcome（VO）など、すべてのサクセスプランに必須の成果物については、[サクセスプランの成果物](/handbook/customer-experience/csm/success-plans/deliverables/)を参照してください。
+
+## 仕組み {#how-it-works}
+
+1. **リクエストが届きます。** Slack、メール、その他のチャネルを通じた顧客からのリクエスト、新しいワークストリーム（イニシアチブ）、通話の文字起こし、自分のメモなどが該当します。
+1. **Issue を開きます。** Issue が、そのリクエストのチケットになります。
+1. **リンクを返信します。** Issue を顧客と共有します。
+1. **Issue で協力して取り組みます。** すべての更新とコラボレーションをそこに集約します。メールも Issue 内でやり取りできます。
+
+Slack の会話については、履歴がワークアイテムに残るよう、会話のスクリーンショットを Issue に投稿してください。
+
+### 記録はシンプルにする {#keep-logging-simple}
+
+サクセスプランプロジェクトは、まず顧客のためのものです。メール、タスク、ミーティングのたびに作成するのではなく、実際のリクエストやワークストリームごとにワークアイテムを開いてください。フォローアップの活動は既存のワークアイテムへのコメントとして追加し、完了したワークアイテムはクローズします。
+
+ワークアイテムの数は顧客によって異なりますが、大規模で複雑なアカウントでも、未完了のワークアイテムは何百件にもせず、焦点を絞った数にとどめます。
+
+## すべてのワークアイテムを構成する 4 つの要素 {#the-four-parts-of-every-work-item}
+
+すべての Issue は、同じ 4 つの要素で構成します。たとえば、Runner の可観測性や、SAST と DAST のテストに関する顧客の質問を扱う Issue が考えられます。
+
+| 要素 | 記載場所 | 内容 |
+|---|---|---|
+| 1. **概要** | Issue の説明 | ワークストリームの内容を平易な英語で説明し、Issue、チケット、ドキュメントへのリンクを含めます。 |
+| 2. **成功基準** | Issue の説明 | 顧客が認識できる成果によって「完了」の状態を示します。 |
+| 3. **DRI** | Issue の説明 | 責任を持つ 1 人を `@handle` で示します。 |
+| 4. **更新コメント** | 新しいコメント | 通話、メール、Slack スレッドのたびに追加します。 |
+
+### 更新：現在の状況 {#refresh-where-things-stand-now}
+
+要素 1 から 3 は、Issue の冒頭に記載します。誰でも予備知識なしに Issue を開いて理解できるよう、作業の変化に合わせて編集してください。
+
+### 追加：起きたこと {#add-what-happened}
+
+要素 4 は、やり取りのたびに追加する新しいコメントです。スレッドがワークストリームの履歴になります。各更新コメントには、次の内容を含めます。
+
+- **見出し：** 顧客、トピック、やり取りの日付。
+- **出席者：** 顧客と GitLab から誰が出席したかを、役割とともに記載します。
+- **ミーティングの要約：** 議論した内容、決定したこと、未解決のこと。背景情報として、以前のコメントや関連する Issue にリンクします。
+- **次のステップ：** 各アクションに担当者と実施時期を記載します。顧客が担当するアクションでは、その顧客を `@` メンションします。決定事項とリスクもここに記録します。
+
+### ワークアイテムのテンプレート {#work-item-templates}
+
+すべてのワークアイテムは、サクセスプラン（`sp-`）の Issue テンプレートのいずれかを使って開始してください。テンプレートは[サブグループの Issue テンプレートプロジェクト](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/tree/master/.gitlab/issue_templates)で管理されており、どれにも概要と成功基準のセクションが含まれています。
+
+| テンプレート | 用途 |
 |---|---|
-| **目標（Objective）** | 顧客のビジネス成果 — 明確なゴール、測定可能な成功基準、担当者、タイムラインを持つ。 |
-| **イニシアチブ（Initiative）** | 目標を支える行動計画。「どのように」に焦点を当てる。 |
-| **Verifiable Outcome（VO）** | 正式に追跡され、顧客が検証し、四半期ごとに報告される目標。[SMART](#what-makes-a-good-vo) である必要がある。 |
+| [`sp-success-general-planning-issue`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-success-general-planning-issue.md) | ほとんどの顧客リクエストとワークストリーム。他に適したテンプレートがなければ、ここから始めてください。 |
+| [`sp-accelerator-initiative-epic`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-accelerator-initiative-epic.md) | Success Accelerator のエピック。 |
+| [`sp-accelerator-initiative-general`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-accelerator-initiative-general.md) | 技術環境のディスカバリーを含む、Success Accelerator 配下のイニシアチブ Issue。 |
+| [`sp-dap-activation`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-dap-activation.md) | Duo Agent Platform（DAP）のオンボーディングとアクティベーションに関する顧客向け計画。 |
+| [`sp-dap-consumption-plan-internal`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-dap-consumption-plan-internal.md) | 社内専用の DAP 利用計画。この Issue は決して顧客に公開しないでください。 |
+| [`sp-ebr-planning`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-ebr-planning.md) | [Executive Business Review（EBR）](/handbook/customer-experience/csm/success-plans/deliverables/#executive-business-reviews-ebrs)の計画。 |
+| [`sp-feature_request`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-feature_request.md) | 顧客からの機能リクエスト。 |
+| [`sp-workshop-planning`](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/blob/master/.gitlab/issue_templates/sp-workshop-planning.md) | [ワークショップ](/handbook/customer-experience/csm/success-plans/deliverables/#workshops)の計画。 |
 
-**準備ができたら** [サクセスプランの作成](#building-your-success-plan)へ進んでください。
+### 更新コメントの形式 {#comment-update-format}
 
-Verifiable Outcomes の概念的な紹介を先に見たい場合は、以下の動画をご覧ください（GitLab Unfiltered アカウントが必要です）:
-
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/i3n4cMMIJz8" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
----
-
-## サクセスプランの作成 {#building-your-success-plan}
-
-サクセスプランは、顧客と共有する GitLab 顧客コラボレーショングループに保存されます。目標はエピックで、イニシアチブは Issue で管理します。[Success Plan Viewer](https://success-plan-viewer-c27524.gitlab.io/group) はこのグループから直接データを読み取ります — 追加のツールやパイプラインのセットアップは不要です。
-
-> **グループの作成場所:** 顧客コラボレーショングループは、[account-management](https://gitlab.com/gitlab-com/account-management) グループ下の各リージョン（**Western North America**、**Eastern North America**、**EMEA**、**APAC**）に作成します。不明な場合は CSM Manager にお問い合わせください。
-
----
-
-### ステップ 1 — 目標エピックを作成する
-
-各顧客目標は、顧客コラボレーショングループ内の **GitLab エピック**として作成します。[目標エピックテンプレート](#objective-epic-template)を使うと素早く開始できます。
-
-新しい目標をゼロから作成する場合は、顧客コラボレーショングループに直接新しいエピックを作成してください。
-
-すでに VO として追跡すべき既存の Issue がある場合は、以下の 2 つの方法のいずれかを使用してエピックに昇格させます:
-
-**方法 A — UI:**
-
-1. Issue を開く
-2. 右上の **More actions (…)** → **Change type** をクリック
-3. **Type** で **Epic** を選択
-4. **Change type** をクリック
-
-**方法 B — クイックアクション:**
-
-Issue のコメントに以下を入力して送信:
-
-```text
-/promote_to Epic
-```
-
-どちらの方法でも、Issue の親グループにエピックが作成され、タイトル、説明、コメント、参加者、関連するグループラベルが引き継がれます。
-
-> **注意:** 昇格後、必要な 3 つのラベルがすべて存在することを確認してください — 元の Issue に適用されていなかった場合、ラベルが引き継がれないことがあります。
-
-すべての目標エピックに必要なもの:
-
-**3 つのラベル — すべて存在しないとレポートに表示されません:**
-
-| ラベル | 設定内容 |
-|---|---|
-| `~SP Objective` | 常に必須 — 値は不要 |
-| `~SP Objective::Status::` | `Not Started` · `On Track` · `Watchpoint` · `Concern` · `Closed Success` |
-| `~Verifiable Outcome::` | `Proposed` · `Accepted` · `Delivered` · `Verified` |
-
-**1 つのユースケースラベル:**
-`~UseCase::` — 以下から 1 つ選択: `AI` · `CD` · `CI` · `Dedicated` · `Developer Experience` · `Infrastructure` · `Other` · `Plan` · `SCM` · `Security`
-
-**オプションラベル:**
-`~Priority::` (`Low` · `Medium` · `High`) · `~Success Accelerator`（Success Tier の導入アクセラレーター向け）
-
-**期日** — レポートにおけるターゲット完了日として扱われます。
-
-**2 つの必須説明セクション** — Success Plan Viewer が解析するため、以下の正確なヘッダーを使用してください:
-
-- `## Summary` — 顧客が達成しようとしていることと、それがビジネスにとって重要な理由。ステークホルダー向けに記述します。オプションで `### Successes` と `### Risks` サブセクションを追加できます。
-- `## Success Criteria` — 完了を定義する測定可能な箇条書き。
-
-#### 目標エピックテンプレート {#objective-epic-template}
-
-以下をエピックの説明にコピーして、正しい構造から始めてください:
+各更新コメントには、次の構造を使ってください。
 
 ```markdown
-## Summary
+### [Customer] | [Topic] Sync - [Month DD, YYYY]
 
-[What is the customer trying to achieve, and why does it matter to their business?
-Write for an executive stakeholder — focus on business impact, not GitLab features.]
+**Attendees ([Customer]):** [Name] ([Role]), [Name] ([Role])
 
-## Success Criteria
+**Attendees (GitLab):** [Name] ([Role]), [Name] ([Role])
 
-- [Specific, measurable condition #1 — include baseline, target, and date]
-- [Specific, measurable condition #2]
+[Meeting type, such as a weekly cadence call or an async Slack thread. Link to the previous related comment or issue for context.]
 
-## Updates
+[Meeting summary: what was discussed, what was decided, and what is still open. Write in plain language for someone who was not there.]
 
-- [Status updates, close objective reason]
+**Next Steps:**
+
+- [ ] Action ([Name] @handle, [timing]): [What needs to happen]
+- [ ] Action ([Customer name] @customer-handle, [timing]): [What the customer owns]
+- [ ] Risk: [Anything that could block or change the outcome]
+- [ ] Blocker: [Anything currently preventing progress, and who can unblock it]
+- [ ] Question: [Anything open that needs an answer, and who needs to answer it]
+- Decision: [Anything agreed during the interaction]
 ```
 
----
+以前のやり取りから持ち越したアクションは、新しいコメントにも記載し、最初に記録したコメントにリンクしてください。完了したアクションにはチェックを付けます。
 
-### ステップ 2 — イニシアチブ Issue を追加する
+## プロジェクトの基本要件 {#project-baseline}
 
-各イニシアチブは、目標のエピック内の **GitLab Issue** として作成します。すべてのイニシアチブ Issue には以下が必要です:
+すべてのサクセスプランプロジェクトは、これらの基本チェックを満たす必要があります。[CSM/A Assistant](#tools-and-help)の `project-baseline` スキルを使って、いつでも実行できます。
 
-- `## Update` セクション — 現在のステータス、成功基準に対する進捗、次のステップ
-- 期日
-- 少なくとも 1 人のアサイニー（GitLab DRI；該当する場合は顧客側 DRI も追加）
-- ステータスラベル: `~SP Initiative::Status::` `Not Started` · `On Track` · `Watchpoint` · `Concern`
+1. **メンバーは Guest とし、それより上のロールにしません。** Guest より上のロールを持つ直接メンバーはダウングレードします。グループレベルのアクセスを確認するツールはないため、手動で確認してください。
+1. **重複したプロジェクトを開いたままにしません。** 命名規則に合致するプロジェクト、または未完了の活動が多いプロジェクトを残し、もう一方をアーカイブします。
+1. **Wiki と README はテンプレートに合わせます。** 空白の Wiki ページや、README 内の `[SQUARE BRACKET]` のプレースホルダーを残さないでください。
 
-Enablement Plan のイニシアチブには、`~EP Initiative::Status::` `On Track` · `Watchpoint` · `Concern` · `Proposal` も追加してください。
+## サクセスプランのライフサイクル {#success-plan-lifecycle}
 
----
-
-### ステップ 3 — VO ライフサイクルを進める
-
-作業の進捗に合わせて `~Verifiable Outcome::` ラベルを更新します。SPV ダッシュボードはライブデータです — 四半期末にまとめて更新しないでください。
-
-| ステージ | ラベル | 適用タイミング |
-|---|---|---|
-| **Proposed** | `~Verifiable Outcome::Proposed` | VO を特定し、顧客への提示前に社内でドラフト中 |
-| **Accepted** | `~Verifiable Outcome::Accepted` | 顧客が目標、ベースライン、成功基準、タイムラインに同意した |
-| **Delivered** | `~Verifiable Outcome::Delivered` | GitLab 側の作業が完了した |
-| **Verified** | `~Verifiable Outcome::Verified` | 顧客が完了を明示的に確認した *（推奨）* |
-
----
-
-### ステップ 4 — 完了した VO をクローズする
-
-以下の 3 つのステップを順序どおりに実行する必要があります。いずれかをスキップするとレポートエラーが発生します。
-
-1. `~SP Objective::Status::Closed Success` を設定する
-2. `~Verifiable Outcome::Verified`（または顧客確認が得られない場合は `::Delivered`）を設定する
-3. **エピックをクローズする**
-
----
-
-## 四半期ごとの VO トラッキング
-
-VO の完了は、顧客コラボレーショングループからライブで読み取る [Success Plan Viewer](https://success-plan-viewer-c27524.gitlab.io/group) を通じて四半期ごとに報告されます。
-
-**各四半期、担当者の責任事項:**
-
-- アクティブなすべての VO エピックに 3 つの必須ラベルが適用されていること
-- イニシアチブの `## Update` セクションが最新の状態に保たれていること — ダッシュボードはライブであり、スナップショットではありません
-- 作業の進捗に合わせてライフサイクルラベルがリアルタイムで更新されていること
-- 完了した VO が四半期レポートの締め切り前に完全にクローズされていること
-
-**ステークホルダーが簡単にアクセスできるよう、以下の 3 か所に SPV リンクを追加してください:**
-
-- Gainsight のサクセスプランリンクフィールド（プラン情報タブ）
-- 社内の顧客 Slack チャンネルのトピック
-- 顧客コラボレーションプロジェクトの README（顧客向けビュー版）
-
----
-
-## 良い VO とは何か？ {#what-makes-a-good-vo}
-
-VO は **SMART** である必要があります: Specific（具体的）、Measurable（測定可能）、Attainable（達成可能）、Relevant（関連性がある）、Time-bound（期限付き）。
-
-すべての VO には: **ベースライン**（現状）、**成功基準**（完了の判断方法）、**ビジネスインパクト**（顧客の言葉で）、**タイムライン**が必要です。
-
-**四半期内 VO の例:**
-
-| VO | ベースライン | 成功基準 | 期間 | ビジネスインパクト |
-|---|---|---|---|---|
-| セキュリティリードとエンジニアリングリードがパイプライン内でコンプライアンスポリシーを適用する準備が整う | チームはコンプライアンスパイプラインを使用していない；ポリシーフレームワークが強制されていない | セキュリティリードとエンジニアリングリードがコンプライアンスポリシーワークショップに参加し、ポリシー適用モデルを理解し、実装するポリシーを少なくとも 1 つ特定することを確認する | 四半期内 | 標準の適用を開始するための具体的な出発点をチームに提供し、コンプライアンスに対する個々の開発者の行動への依存を減らす |
-| プラットフォームチームがすでに所有している DAP 機能を積極的に活用する | DAP 機能が使用されていない；利用可能なプロモーションクレジットが未使用 | 上位 5 つの DAP ユースケースをプラットフォームチームとレビュー；プロモーションクレジットが適用されるか、デプロイメント計画が確認される | 四半期内 | 活用されていない購入を積極的な価値に変換し、最初の意味ある DAP 導入までの時間を短縮する |
-| 新しい開発チームが GitLab で最初のパイプラインを実行する | 12 人の開発者からなる新チームが GitLab に CI/CD パイプラインを持っていない | 全 12 人の開発者が自分のプロジェクトで少なくとも 1 つのパイプラインを実行し、CSM のサポートなしに基本的なパイプラインを構築・トラブルシューティングできる | 四半期内 | チームを手動デプロイメントのステップから解放し、より広範な CI/CD 導入の基盤を確立する |
-| パイロットグループが GitLab Duo を実際に体験し、明確な次のステップを持つ | アカウント内に Duo の使用実績がない；パイロットグループは特定されているが有効化されていない | パイロットグループが有効化され、少なくとも 1 つのユースケースウォークスルーを完了し；顧客がフィードバックを提供し、展開、停止、またはロールアウトの調整を確認する | 四半期内 | 不確実な状態を意思決定に変換し、次の Duo 投資の選択肢に対する具体的な根拠を顧客に提供する |
-| 顧客のメインブランチのパイプライン失敗率がリリースをブロックしなくなる | メインブランチで約 30% の失敗率がリリース遅延を引き起こしている | パイプライン失敗率が 5% 未満に低下し、根本原因が文書化されて顧客エンジニアリングリードと共有される | 四半期内 | リリース速度を回復し、開発者の不満と時間の損失という継続的な原因を排除する |
-
-**ディスカバリーのヒント:**
-
-- オープンエンドな TED 質問をしてください: *「チームの優先事項について教えてください... どのように... どのような...を説明してください」*
-- 投資家報告書、プレスリリース、GitLab のケーススタディを参照してビジネスへのインパクトを組み立てる
-- GitLab Duo を使って成功基準が真に SMART かどうかテストする
-- [継続的トリアージボット](https://gitlab.com/gitlab-com/account-management/continuous-planning-triage/) が毎週オープンな目標をレビューし、ドラフト成功基準がある場合に SMART な基準を提案する
-
-追加のディスカバリー質問とテクニックについては、[サクセスプランディスカバリーのための質問とテクニック](/handbook/customer-experience/csm/success-plans/questions-techniques/)を参照してください。
-
----
-
-## トラブルシューティング
-
-### VO がレポートに表示されない場合
-
-| 症状 | 対処方法 |
-|---|---|
-| ワークアイテムがエピックではなく Issue になっている | エピックに昇格させる |
-| `~SP Objective` ラベルが欠落している | エピックに追加する |
-| `~SP Objective::Status::` ラベルが欠落している | 適切なステータス値を追加する |
-| `~Verifiable Outcome::` ラベルが欠落している | 適切なステージ値を追加する |
-| エピックがクローズされていない | 3 つのクローズアウトステップをすべて完了する |
-| ラベルは更新されているがエピックがまだオープン、またはエピックはクローズされているがラベルが更新されていない | 3 つのクローズアウトステップがすべて順序どおりに完了していることを確認する |
-
----
-
-## サクセスプランのライフサイクル
-
-サクセスプランは顧客のジャーニー全体にわたります。CSM の役割がどこに当てはまるかを以下に示します:
+サクセスプランは顧客のジャーニー全体にわたります。CSM の役割がどこに当てはまるかを以下に示します。
 
 | フェーズ | リード | 内容 |
 |---|---|---|
@@ -222,16 +138,18 @@ VO は **SMART** である必要があります: Specific（具体的）、Measu
 | **ポストセールス / オンボーディング** | CSM | CSM が目標をレビューし、正確性を検証し、有効化と実装のためのイニシアチブを追加します。次に何をするか、誰が担当するかについての完全な合意。 |
 | **継続的なエンゲージメント** | CSM | サクセスプランはすべての[ケーデンスコール](/handbook/customer-experience/csm/cadence-calls/)と[ビジネスレビュー](/handbook/customer-experience/csm/ebr/)の基軸となります。ケーデンスコールが週次の進捗を促し、ビジネスレビューが戦略を評価し新しい目標を発掘します。 |
 
----
+サクセスプランの作成に役立つディスカバリーの質問については、[サクセスプランディスカバリーのための質問とテクニック](/handbook/customer-experience/csm/success-plans/questions-techniques/)を参照してください。
 
 ## Gainsight {#gainsight}
 
-GitLab.com はサクセスプランの唯一の情報源です。Gainsight はそれを反映し、ビジネス全体のパターン分析を可能にします。
+サクセスプランが唯一の情報源です。Gainsight はそれを反映し、ビジネス全体のパターン分析を可能にします。
 
-顧客との主要なインタラクション — 通話、ミーティング、マイルストーンの更新 — は Gainsight タイムラインに記録されます。GitLab で作成された目標は Gainsight に反映され、クローズされると両方で更新されます。
+EBR とワークショップは、サクセスプランで計画し、追跡します。当面は、実施後に Gainsight にも記録してください。詳細は、[サクセスプランの成果物](/handbook/customer-experience/csm/success-plans/deliverables/)を参照してください。
 
 Gainsight ワークフローの詳細なガイダンスについては、[CSM としての Gainsight の使用](/handbook/customer-experience/csm/gainsight/)を参照してください。
 
-**フェーズ 1 — Success Plan Viewer（現在）:** 四半期ごとの VO トラッキングは [Success Plan Viewer](https://success-plan-viewer-c27524.gitlab.io/group) を通じて現在利用可能です。VO トラッキングに Gainsight への手動データ入力は不要です。
+## ツールとヘルプ {#tools-and-help}
 
-**フェーズ 2 — Gainsight 統合（計画中）:** Gainsight 内での完全な VO レポートが開発中です。利用可能になり次第、このページを更新します。
+CSM/A Assistant は、Claude デスクトップアプリ用のプラグインです。claude.ai のウェブサイトでは動作しません。インストールと設定については、GitLab Claude プラグインマーケットプレイスの [CSM/A Assistant プラグイン](https://gitlab.com/gitlab-com/marketplace/-/tree/main/sales/customer-experience/customer-success/csma)を参照してください。
+
+質問は、Slack の [`#cx-collab-proj-success-plan-questions`](https://gitlab.enterprise.slack.com/archives/C0BFC7KLA3V) チャンネルで尋ねてください。

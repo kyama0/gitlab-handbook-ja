@@ -1,11 +1,11 @@
 ---
 title: "商標ガイドライン"
 upstream_path: /handbook/marketing/brand-experience/trademark-guidelines/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:52:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-10-28T16:48:26Z"
 ---
 
 *最終改訂日：2024/07/03*
@@ -14,9 +14,9 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 本商標ガイドライン（以下「**ガイドライン**」）は、GitLab Inc. およびその関連会社（以下「**GitLab Inc.**」「**当社**」「**私たち**」「**弊社**」）のすべての商標に適用されます。これには、GITLAB の名称（以下「**GitLab Name**」）、[コアロゴ](https://design.gitlab.com/brand-logo/core-logo/)、[ロゴマーク](https://design.gitlab.com/brand-logo/logomark/)、[ワードマーク](https://design.gitlab.com/brand-logo/core-logo/#wordmark)（以下「**ロゴ**」）、その他すべての登録および未登録商標（総称して「**商標**」）が含まれます。
 
-これらのガイドラインに基づくロゴの使用は、以下のセクション 3.1. に定める限定的な目的を除き、許可されていません。これらのガイドラインで明示的に許可されていない方法または目的で商標を使用したい場合は、[intellectualproperty@gitlab.com](mailto:intellectualproperty@gitlab.com) までメールでお問い合わせください。
+これらのガイドラインに基づくロゴの使用は、以下のセクション 3.1. に定める限定的な目的を除き、許可されていません。これらのガイドラインについてご質問がある場合は、[intellectualproperty@gitlab.com](mailto:intellectualproperty@gitlab.com)までメールでお問い合わせください。マーケティング資料（ウェブサイト、パンフレット、プレゼンテーションを含む）、ソーシャルメディア、ウェブサイトやアプリケーションのサインインボタン、製品、インテグレーション、デプロイのユーザーインターフェース、商品やその他の物品でのロゴの使用申請は、通常はお断りします。ロゴの使用を希望する GitLab Alliance Partner または Channel Partner の方は、GitLab の担当者にお問い合わせください。
 
-### **1. 商標の使用**
+### **1. 商標の使用** {#1-use-of-the-trademarks}
 
 1.1. 以下の場合を含め、GitLab とその製品およびサービスを誠実かつ正確に参照または特定するために、GitLab Name を使用できます。
 
@@ -37,7 +37,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 1.2. 本セクションに従って GitLab Name を使用する場合、以下を遵守する必要があります。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2.1. 本ガイドラインおよび [design.gitlab.com](https://design.gitlab.com) で公開されているデザインガイドライン（参照によって本ガイドラインに組み込まれます）を遵守すること。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2.1. 本ガイドラインおよび [design.gitlab.com](https://design.gitlab.com)で公開されているデザインガイドライン（参照によって本ガイドラインに組み込まれます）を遵守すること。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2.2. GitLab Name の最初または最も目立つ言及の近くに、以下の商標所有権ステートメントを含めること。
 
@@ -47,7 +47,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2.4. 当社からの通知に従って、本セクションに反する GitLab Name の使用を速やかに修正するか、直ちに GitLab Name の使用を停止すること。
 
-### **2. 商標の禁止される使用**
+### **2. 商標の禁止される使用** {#2-prohibited-use-of-the-trademarks}
 
 2.1. 本ガイドラインで明示的に許可されている場合を除き、以下の行為は決して行わないでください。
 
@@ -65,7 +65,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.1.7. 商標と同一または類似する用語またはロゴを商標その他の専有権として登録するための申請を行うこと。
 
-### **3. GitLab Community Edition ソフトウェアの配布における使用**
+### **3. GitLab Community Edition ソフトウェアの配布における使用** {#3-use-for-distributing-gitlab-community-edition-software}
 
 GitLab Community Edition (CE) ソフトウェアは、無料のオープンソース MIT ライセンスのもとで提供されています。このライセンスは商標の使用を対象としていません。私たちの商標は、GitLab コミュニティにとって製品の品質と出所を示す重要な識別子であり、CE ソフトウェアの改変版や、未改変の CE ソフトウェアがマネージドサービスの一部として提供される場合に、GitLab から直接ダウンロードした CE ソフトウェアまたは GitLab もしくは信頼できるパートナーがホストする GitLab マネージドサービスを利用した場合と同じ機能やサービス品質を受けられないと、ユーザーが混乱する可能性があることを認識しています。
 
@@ -81,7 +81,7 @@ GitLab Community Edition (CE) ソフトウェアは、無料のオープンソ�
 
 `This product is based on GitLab software. GITLAB is a trademark of GitLab Inc. in the United States and other countries and regions.`
 
-### **4. その他の条項**
+### **4. その他の条項** {#4-other-terms}
 
 4.1. GitLab Inc. は、商標に関するすべての権利、権原、利益を保持しており、お客様は商標の有効性、または GitLab Inc. の独占的所有権について、決して異議を唱えたり争ったり疑問を呈したりしないことに同意します。
 
@@ -89,7 +89,7 @@ GitLab Community Edition (CE) ソフトウェアは、無料のオープンソ�
 
 4.3. GitLab は、その単独の裁量において、(i) 商標の使用許可をいつでも終了、取り消し、変更、その他の方法で変更すること、および (ii) 世界中のいずれの法域においても商標の使用または誤用に異議を唱えることができる権利を留保します。本ガイドラインのすべての変更は、掲載時から直ちに有効となります。改訂されたガイドラインの掲載後にお客様が引き続き商標を使用することは、当該改訂を承諾したことを意味します。
 
-### **4. 商標の不正使用を発見した場合**
+### **4. 商標の不正使用を発見した場合** {#4-if-you-spot-unauthorized-use-of-the-trademarks}
 
 商標の不正使用に気付いた場合は、ご連絡ください。
 

@@ -2,32 +2,32 @@
 title: DEX コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須であり、GitLab Marketing プロジェクトに固有のコードレビューガイドラインに精通し、それに従う必要があります。"
 upstream_path: /handbook/marketing/digital-experience/engineering/code-review/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-05-01T10:36:34Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:52:10+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-01T15:53:53-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 コードレビューはすべてのマージリクエストで必須です。ここで概説するコードレビューガイドラインに精通し、それに従ってください。
 
-これらのガイドラインは、誰があなたや、あるいはコミュニティメンバーのマージリクエストをレビュー、承認、マージする必要があるかも記述しています。また、チームメンバーが守るべき[レビュー応答 SLO](#review-response-slo) についても記述しています。
+これらのガイドラインは、誰があなたや、あるいはコミュニティメンバーのマージリクエストをレビュー、承認、マージする必要があるかも記述しています。また、チームメンバーが守るべき[レビュー応答 SLO](#review-response-slo)についても記述しています。
 
-## 価値観
+## 価値観 {#values}
 
-GitLab のすべてのレビュアーは、私たちの[レビュアーの価値観](/handbook/marketing/digital-experience/engineering/code-review-values/) を目指す必要があります。
+GitLab のすべてのレビュアーは、私たちの[レビュアーの価値観](/handbook/marketing/digital-experience/engineering/code-review-values/)を目指す必要があります。
 
-## マージリクエストをレビュー、承認、マージしてもらう
+## マージリクエストをレビュー、承認、マージしてもらう {#getting-your-merge-request-reviewed-approved-and-merged}
 
-### 受入チェックリスト
+### 受入チェックリスト {#acceptance-checklist}
 
 このチェックリストは、マージリクエスト（MR）の作成者、レビュアー、メンテナーに対し、品質、パフォーマンス、信頼性、セキュリティ、可観測性、保守性に対する高インパクトリスクについて変更が分析されたことを確認することを促します。
 
 ソフトウェアエンジニアリングではチェックリストの使用が品質を向上させます。このチェックリストは、GitLab Marketing コードベースへの貢献者のスキルをサポートし強化するためのシンプルなツールです。
 
-### マージリクエスト提出時のチェックリスト
+### マージリクエスト提出時のチェックリスト {#checklist-for-submitting-a-merge-request}
 
 1. マージリクエストテンプレートを完成させる
    * 構築中はマージリクエストの先頭に `Draft:` を付けてください。
@@ -57,24 +57,24 @@ GitLab のすべてのレビュアーは、私たちの[レビュアーの価値
    * コードレビュー、QA、その他必要な承認のために関連するチームメンバーをメンションしてください。
    * スムーズなレビュープロセスのため、コメントや変更要求に迅速に対応してください。アサインされた担当者は、フォローアップ Issue を作成し追跡し、それらが適時に完了するように責任を持ちます。
 
-## レビュアー
+## レビュアー {#reviewer}
 
 GitLab のエンジニアは全員、同僚やコミュニティ貢献者のマージリクエストに対してコードレビューを行うことができ、奨励されています。マージリクエストをレビューしたい場合、誰かがアサインしてくれるのを待つこともできますし、オープンなマージリクエストの一覧を閲覧して、フィードバックや質問を残すこともできます。すべてのエンジニアがすべてのマージリクエストをレビューできる一方、マージリクエストを *受け入れる* 能力はメンテナーに限定されていることに注意してください。
 
 マージリクエストのレビュアーを見つける方法:
 
-1. [GitLab Digital Experience チームメンバー](/handbook/marketing/digital-experience/#team-members) のリストを確認する。
+1. [GitLab Digital Experience チームメンバー](/handbook/marketing/digital-experience/#team-members)のリストを確認する。
 2. Reviewer Roulette を活用する。これは現在チームで利用可能なメンテナーとレビュアーの提案を出してくれます。提案は MR の変更に関するコメントとしてリストされます。*Reviewer Roulette は Buyer Experience プロジェクトでのみ利用可能です。*
 
-## レビューのターンアラウンドタイム
+## レビューのターンアラウンドタイム {#review-turnaround-time}
 
-[他人のブロックを解除することは常に最優先事項](/handbook/values/#efficiency-for-the-right-group) なので、
+他人のブロックを解除することは常に最優先事項なので、
 レビュアーはマージリクエストをタイムリーにレビューすることが期待されます。
 これによって他のタスクや優先順位に悪影響が及ぶ場合でも同様です。
 
-そうすることで、コンテキストが記憶に新しいうちにマージリクエストに関わる全員が早く反復でき、貢献者の体験が大きく向上します。
+そうすることで、コンテキストが記憶に新しいうちにマージリクエストに関わる全員が早くイテレーションでき、貢献者の体験が大きく向上します。
 
-### レビュー応答 SLO
+### レビュー応答 SLO {#review-response-slo}
 
 レビュー準備が整ったコードに迅速なフィードバックを保証するため、`Review-response` サービスレベル目標（SLO）を維持しています。
 SLO は GitLab チームメンバーには適用されますが、より広範なコミュニティの貢献者には適用されません。
@@ -88,7 +88,7 @@ Digital Experience GitLab チームメンバーの SLO 値は 2 営業日です�
 `Review-response` SLO の時間枠内でマージリクエストをレビューできないと思う場合は、できるだけ早く（最初のレビュー依頼を受けてから 36 時間以内）に作者にコメントで知らせ、別のレビュアーやメンテナーを見つけるのを手伝って、彼らがブロック解除されて作業を素早く進められるようにしてください。自分自身をレビュアーから外してください。
 
 もちろん、休暇中で
-[コミュニケーション](/handbook/people-group/time-off-and-absence/time-off-types/) を
+[コミュニケーション](/handbook/people-group/time-off-and-absence/time-off-types/)を
 GitLab.com ステータス経由で行っている場合、作者はそれに気づき、
 別のレビュアーを自分で見つけることが期待されます。
 
@@ -96,14 +96,14 @@ GitLab.com ステータス経由で行っている場合、作者はそれに気
 `Review-response` SLO よりも長くブロックされている場合、Slack でレビュアーにリマインドするか、
 別のレビュアーを追加することは自由です。
 
-### 期待値の管理
+### 期待値の管理 {#managing-expectation}
 
 MR のレビュアーにアサインされ、`Review-response` SLO 内でそれに着手できない場合、作者に遅延応答を知らせる MR コメントを残す必要があります。可能であれば、作者がフィードバックを期待できる時期を示すか、代替のレビュアーを見つけるのを手伝う必要があります。
 
 MR の作者として、`Review-response` SLO が満たされず、アサインされたレビュアーに連絡できなかった場合、別のレビュアーやメンテナーへの再アサインが必要です。
 
-## Code Owner 承認
+## Code Owner 承認 {#code-owner-approvals}
 
-一部の GitLab プロジェクトは、特定のファイルパスやタイプに対する承認を管理するために GitLab の [CODEOWNERS ファイル機能](https://docs.gitlab.com/ee/user/project/codeowners/) を使用しています。`digital-experience/about.gitlab.com` プロジェクトでは、職務分掌のベストプラクティスに従うため、[CODEOWNERS 承認ルールに加えて MR 承認設定を組み合わせて使用](https://docs.gitlab.com/ee/development/code_review.html#merging-a-merge-request) しています。このセクションでは、`digital-experience/about.gitlab.com` プロジェクトの CODEOWNERS 変更に対して適格な承認者を更新するプロセスを説明します。
+一部の GitLab プロジェクトは、特定のファイルパスやタイプに対する承認を管理するために GitLab の [CODEOWNERS ファイル機能](https://docs.gitlab.com/ee/user/project/codeowners/)を使用しています。`digital-experience/about.gitlab.com` プロジェクトでは、職務分掌のベストプラクティスに従うため、[CODEOWNERS 承認ルールに加えて MR 承認設定を組み合わせて使用](https://docs.gitlab.com/ee/development/code_review.html#merging-a-merge-request) しています。このセクションでは、`digital-experience/about.gitlab.com` プロジェクトの CODEOWNERS 変更に対して適格な承認者を更新するプロセスを説明します。
 
 [CODEOWNERS ファイル](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com/-/blob/main/.gitlab/CODEOWNERS?ref_type=heads) 自体の Code Owner は、ファイル内のルールで管理されます。

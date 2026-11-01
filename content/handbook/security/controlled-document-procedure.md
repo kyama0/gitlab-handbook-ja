@@ -3,16 +3,16 @@ title: "管理文書手順"
 description: "GitLab は、期待されることを確立するポリシーや標準と、ポリシーや標準を実行に移す手順を通じて、コントロール活動を展開します。"
 controlled_document: true
 upstream_path: /handbook/security/controlled-document-procedure/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-lastmod: "2026-09-25T14:56:09-07:00"
-translated_at: "2026-09-26T21:05:51+00:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T14:17:26-04:00"
+translated_at: "2026-11-01T06:33:04+00:00"
 translator: codex
 stale: false
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
-## 目的
+## 目的 {#purpose}
 
 GitLab は、期待されることを確立するポリシーや標準と、ポリシーや標準を実行に移す手順を通じて、コントロール活動を展開します。
 
@@ -25,30 +25,30 @@ GitLab には 2 種類の文書があります。
 
 GitLab の誰もが、管理文書の作成や変更提案のためにマージリクエストをいつでも提出することを歓迎・推奨されます。
 
-## スコープ
+## スコープ {#scope}
 
 この手順は、GitLab の法的、規制的、契約的要件を支援するために作成されたすべての[管理文書](#list-of-controlled-documents)に適用されます。非管理文書は本質的に動的であり、この手順の対象外です。
 
-## 役割と責任
+## 役割と責任 {#roles--responsibilities}
 
 | 役割  | 責任 |
 |-----------|-----------|
-| Security Compliance チーム | 継続的なコントロール監視の一環として、セキュリティポリシーの実装と維持、およびそれを支える標準と手順の監督を担当 |
-| Security Governance チーム | 管理文書の年次レビューの実施を担当 |
-| Security Assurance マネジメント (Code Owners) | この手順への変更の承認を担当 |
+| Security Compliance Team | 継続的なコントロール監視の一環として、セキュリティポリシーの実装と維持、およびそれを支える標準と手順の監督を担当 |
+| Security Governance Team | 管理文書の年次レビューの実施を担当 |
+| Security Assurance Management (Code Owners) | この手順への変更の承認を担当 |
 | Control Owners | セキュリティポリシーと標準を支える手順の定義と実装を担当 |
 
-## 手順
+## 手順 {#procedure}
 
-### 階層別の定義
+### 階層別の定義 {#definitions-by-hierarchy}
 
 ![管理文書のピラミッド](/images/security/security-assurance/CDPyramidv2.png)
 
-- ポリシー (Policy): ポリシーは意図の高レベルな表明であり、GitLab の目標、目的、文化を定義します。法的、規制的、または契約的義務がポリシー存在の根本原因となるのが一般的です。ポリシーは組織レベルで一元管理されるよう設計されています (例: Security Compliance チームや Legal & Ethics Compliance チーム)。
+- ポリシー (Policy): ポリシーは意図の高レベルな表明であり、GitLab の目標、目的、文化を定義します。法的、規制的、または契約的義務がポリシー存在の根本原因となるのが一般的です。ポリシーは組織レベルで一元管理されるよう設計されています (例: Security Compliance Team や Legal & Ethics Compliance Team)。
 - 標準 (Standard): 標準とは、ポリシーの実装を可能にする具体的な詳細を提供することで、正式なポリシーをサポートし方向性を与える、必須の行動またはルールです。標準は技術図の形を取ることがあります。
 - 手順 (Procedure): 手順は、特定のポリシー、および該当する場合には支援する標準を達成するための詳細な指示で、従うべきステップバイステップの指示を提供します。手順は分散管理され、セキュリティコントロールがビジネスプロセスに翻訳されるプロセス/コントロールオーナーが管理します。
 
-### 作成
+### 作成 {#creation}
 
 最低限、管理文書は以下の主要なトピック領域をカバーする必要があります。
 
@@ -59,15 +59,15 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 - 例外: 管理文書の例外がどのように追跡されるかを定義します。
 - 参考資料: 手順文書は、統治するポリシーまたは標準にマッピングされ、1 つ以上の手順またはその他の非管理文書に関連する場合があります。
 
-### 公開
+### 公開 {#publishing}
 
 管理文書の作成または変更は、公開前に Code Owners ファイルで定義された所有部門のマネジメントまたは正式に指名された代表者の承認を得る必要があります。
 
-ほとんどの管理文書は、当社の公開[ハンドブック](/) に公開されます。ただし、管理文書に[非公開データ](/handbook/security/policies_and_standards/data-classification-standard/) が含まれている場合は、*社内向けのみ* のメカニズム (例: 社内 GitLab プロジェクトや社内向けハンドブックページ) を介して公開する必要があります。管理文書は、すべての社内チームメンバーがアクセスできる必要があります。
+ほとんどの管理文書は、当社の公開[ハンドブック](/)に公開されます。ただし、管理文書に[非公開データ](/handbook/security/policies_and_standards/data-classification-standard/)が含まれている場合は、*社内向けのみ* のメカニズム (例: 社内 GitLab プロジェクトや社内向けハンドブックページ) を介して公開する必要があります。管理文書は、すべての社内チームメンバーがアクセスできる必要があります。
 
-#### ハンドブックヘッダー
+#### ハンドブックヘッダー {#handbook-header}
 
-管理文書を分類するには、[管理文書用ハンドブックフロントマター属性](http://handbook.gitlab.com/docs/frontmatter/) が必要です。この属性は警告ヘッダーもレンダリングします。
+管理文書を分類するには、[管理文書用ハンドブックフロントマター属性](http://handbook.gitlab.com/docs/frontmatter/)が必要です。この属性は警告ヘッダーもレンダリングします。
 
 監査向けの管理文書については、フロントマターの下に以下のラベルを追加してください。
 
@@ -79,14 +79,14 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 
 これを行う方法の例が必要な場合は、WebIDE でこのページを確認してください。
 
-### レビュー
+### レビュー {#review}
 
 管理文書は、少なくとも年 1 回レビューおよび承認される必要があります。管理文書は、ビジネス運営の必要に応じてアドホックに更新される場合があります。マージ前に、変更は管理文書のコードオーナーによって承認される必要があります。
 
 管理文書のレビュアーには以下が求められます。
 
-1. 説明で[「何ではなく、なぜを言う」透明性](/handbook/values/#say-why-not-just-what) が容易に理解されるようにします。タイトルは簡潔でありながら、何についてかが明確である必要があります。
-1. チームメンバー向けの告知がスケジュールされていることを確認し ([Slack、社内ニュースレター](/handbook/people-group/employment-branding/people-communications/))、[マージリクエストテンプレートのタスク](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/merge_request_templates/Default.md) にチェックを入れます。
+1. 説明で「何だけでなく、なぜを言う」という透明性が容易に理解されるようにします。タイトルは簡潔でありながら、何についてかが明確である必要があります。
+1. チームメンバー向けの告知がスケジュールされていることを確認し ([Slack、社内ニュースレター](/handbook/people-group/employment-branding/people-communications/))、[マージリクエストテンプレートのタスク](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/merge_request_templates/Default.md)にチェックを入れます。
 
 #### 管理文書一覧 {#list-of-controlled-documents}
 
@@ -98,7 +98,7 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 
 規制、コンプライアンス、機密性、完全性、可用性などの情報セキュリティ要件は、企業が一元的にサポートまたは推奨される業界標準を採用するときに最も容易に満たされます。GitLab は最小権限の原則の下で運営していますが、一元的にサポートまたは推奨される業界の技術が、特定の職務やビジネスニーズに対して常に実現可能とは限らないことを理解しています。前述の標準または推奨技術からの例外は推奨されません。ただし、管理文書の例外について合理的で正当化可能なビジネス上および/または研究上のケースがある場合、リソースが代替技術を適切に実装・維持するのに十分である場合、本書および関連文書で示されたプロセスに従い、他のポリシーや標準が遵守される場合は、考慮される可能性があります。
 
-チームメンバーが標準的なビジネスの流れまたはポリシーで許可されているものから例外を必要とする場合、リクエスターは Issue テンプレートで概説された要素を最低限含む[例外申請](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/security-governance/-/issues/new?issuable_template=controlled_documents_exception_request) を Security Assurance 部門に提出する必要があります。
+チームメンバーが標準的なビジネスの流れまたはポリシーで許可されているものから例外を必要とする場合、リクエスターは Issue テンプレートで概説された要素を最低限含む[例外申請](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/security-governance/-/issues/new?issuable_template=controlled_documents_exception_request)を Security Assurance Department に提出する必要があります。
 
 例外申請の承認要件は、Issue テンプレート内に記載されています。リクエスターは、承認マトリクスに従って承認を提供する必要がある適切な個人にタグを付ける必要があります。
 
@@ -119,8 +119,8 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 - 例外は中央の例外管理スペースに記録されます。
 - 例外は、有効期限が近づくにつれてレビューされ、例外の延長には新規の承認された延長申請が必要になります。
 
-## 参考資料
+## 参考資料 {#references}
 
-- [GCF Compliance Controls](/handbook/security/security-assurance/security-compliance/sec-controls/)
-- [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)
-- [Controlled Documents Work Instruction](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/controlled-documents-program/-/blob/main/runbooks/controlled_document_annual_review_work_instruction.md)
+- [GCF コンプライアンスコントロール](/handbook/security/security-assurance/security-compliance/sec-controls/)
+- [データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/)
+- [管理文書作業指示書](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/controlled-documents-program/-/blob/main/runbooks/controlled_document_annual_review_work_instruction.md)

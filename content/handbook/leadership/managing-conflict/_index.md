@@ -1,18 +1,18 @@
 ---
 title: コンフリクトの管理
 upstream_path: /handbook/leadership/managing-conflict/
-upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T06:01:13+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## コンフリクトの管理
+## コンフリクトの管理 {#managing-conflict}
 
-このセクションでは、コンフリクトの定義、コンフリクトのさまざまな原因、コンフリクトへの対処方法、コンフリクトプロセスのステップ、そして職場コンフリクトの注意点について確認します。さまざまな背景と異なる働き方を持つチームメンバーが同じ目標と [OKR](/handbook/company/okrs)（Objectives and Key Results）に向かって働いている場合、職場でのコンフリクトは避けられません。コンフリクトは単に回避されるべきではなく、管理・解決されるべきです。最初のステップは、コンフリクトを経験しているチームメンバーが状況を解決に向けて対処しようとすることです。解決が不可能な場合、マネージャーはチームメンバーおよびアサインされた [People Business Partner](/handbook/people-group/) と協力して解決を促進する必要があります。
+このセクションでは、コンフリクトの定義、コンフリクトのさまざまな原因、コンフリクトへの対処方法、コンフリクトプロセスのステップ、そして職場コンフリクトの注意点について確認します。さまざまな背景と異なる働き方を持つチームメンバーが同じ目標と [OKR](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)（Objectives and Key Results）に向かって働いている場合、職場でのコンフリクトは避けられません。コンフリクトは単に回避されるべきではなく、管理・解決されるべきです。最初のステップは、コンフリクトを経験しているチームメンバーが状況を解決に向けて対処しようとすることです。解決が不可能な場合、マネージャーはチームメンバーおよびアサインされた [People Business Partner](/handbook/people-group/)と協力して解決を促進する必要があります。
 
-## コンフリクトとは何か？
+## コンフリクトとは何か？ {#what-is-conflict}
 
 コンフリクトとは、あなたの懸念、欲求、認識、目標、またはバリューが他のチームメンバーと異なり、衝突するすべての状況です。職場コンフリクトの潜在的な原因の例を以下に示します。
 
@@ -23,20 +23,20 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - コミュニケーションスキルの不足
 - 作業方法や目標の違い
 
-## コンフリクト管理のさまざまな方法またはアプローチ
+## コンフリクト管理のさまざまな方法またはアプローチ {#different-methods-or-approaches-to-managing-conflict}
 
-### 競争的方法
+### 競争的方法 {#competing-method}
 
 この方法は、一方的な意思決定によりコンフリクトを管理します。
 
 - 主に使用される状況：迅速な決定が必要な状況、困難な決定に対して妥協や議論の余地がない場合。
 - 競争スタイル：Win-Lose アプローチ、積極的かつ非協力的で、他のチームメンバーを犠牲にして自分の懸念を満たそうとします。
 - 例：
-  - 決定を押し付けたり指示したりする - 「申し訳ありませんが X、でもそれがマネージャーとしての私の決定です」
+  - 決定を押し付けたり指示したりする - 「X、申し訳ありませんが、それがあなたのマネージャーとしての私たちの決定です」
   - 自分のデータに合致する結論のために議論する - 「顧客調査では一貫した下降トレンドが示されています。ルートを設計する必要があります」
   - 強硬な交渉（譲歩なし）- 「X より低い金額は受け入れません - そのまま受け入れるか、断るかです。」
 
-### 回避方法
+### 回避方法 {#avoiding-method}
 
 コンフリクトを管理しないことを積極的に決める。
 
@@ -47,7 +47,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
   - 重要でない、複雑な、または脅威に感じる問題を避ける - 「そうかもしれません。考えてみましょう。次のトピックに進みましょう。」
   - 後で議論を延期する - 「確認して来週戻ります。」
 
-### 受容方法
+### 受容方法 {#accommodating-method}
 
 相手側に「勝利」させる。
 
@@ -60,7 +60,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
   - 他者の専門知識に委ねる - 「あなたが専門家です、あなたの判断を信頼します。」
   - 脅威となっている人をなだめる - 「わかりました、わかりました、落ち着いてください。」
 
-### 妥協方法
+### 妥協方法 {#compromising-method}
 
 両側に「勝利」がある解決に達する。
 
@@ -68,20 +68,20 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - 妥協スタイル：中間点にあり、両方のチームメンバーの懸念を部分的にのみ満たす受け入れ可能な解決を見つけようとします。
 - 例：
   - 穏やかな交渉または譲歩の交換 - 「差を折半して X に落ち着きましょう」
-  - 順番を取る - 「今回は私が X をして、次回はあなたが Y をするとしましょう。」
-  - 結論を緩和する - 「あなたは X が問題を解決すると考えていますが、私は Y が解決すると思います。X と Y 両方が解決策として可能と言いましょうか？」
+  - 順番を取る - 「今回は私たちが X をして、次回はあなたが Y をするとしましょう。」
+  - 結論を緩和する - 「あなたは X が問題を解決すると考えていますが、私たちは Y が解決すると思います。X と Y 両方が解決策として可能と言いましょうか？」
 
-### 協働方法
+### 協働方法 {#collaborating-method}
 
 チームの意見を通じてコンフリクトを管理する。
 
 - 主に使用される状況：チームのサポートを得ること、異なる視点を協働を通じて学び関係を改善する機会として使うこと。
 - 協働スタイル：積極的かつ協力的で、「Win-Win」を見つけます。
 - 例：
-  - 「Win-Win」解決策を通じて利益を調整する - 「あなたはプロジェクト X に資金が必要ですが、私はプロジェクト Y が必要です。どうすれば両方できるでしょうか？」
-  - 洞察を組み合わせてより豊かな理解に至る - 「あなたは X の技術的スキルを称賛していますが、私はイテレーションとコラボレーションスキルについて懸念があります。どちらも本当ですよね？対人スキルを改善できれば高いポテンシャルがあります。」
+  - 「Win-Win」解決策を通じて利益を調整する - 「あなたはプロジェクト X に資金が必要ですが、私たちはプロジェクト Y が必要です。どうすれば両方できるでしょうか？」
+  - 洞察を組み合わせてより豊かな理解に至る - 「あなたは X の技術的スキルを称賛していますが、私たちはイテレーションとコラボレーションスキルについて懸念があります。どちらも本当ですよね？対人スキルを改善できれば高いポテンシャルがあります。」
 
-## コンフリクト管理の 8 つのヒント
+## コンフリクト管理の 8 つのヒント {#8-tips-for-managing-conflict}
 
 1. **マネジメント/リーダーシップがトーンを設定する**
     - 相互尊重に基づく職場
@@ -106,7 +106,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 マネージャーとリーダーは、関与するチームメンバーと状況に応じて適切なバランスを見つける必要があります。コンフリクトが*問題*となるのは以下の場合です。
 
 - 生産性を妨げ、緊張を高める
-- モラルを下げる
+- 士気を下げる
 - さらなる継続的なコンフリクトを引き起こす
 - 不適切な行動を引き起こす
 - チームメンバーの欠勤につながる
@@ -118,9 +118,9 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - チームメンバーにプロセスや行動を再考させる
 - チームメンバーの参加を増やす
 
-マネージャーがコンフリクト状況が私たちの[バリュー](/handbook/values/)や行動規範に違反していると感じた場合は、[PBP（People Business Partner）に連絡](/handbook/people-group/#how-to-reach-the-right-member-of-the-people-group)すべきです。また、マネージャーがさまざまなコンフリクト状況とアプローチについて話し合いたい場合、PBP は最善の戦略を考えるのを喜んでお手伝いします。
+マネージャーがコンフリクト状況が私たちのバリューや行動規範に違反していると感じた場合は、[PBP（People Business Partner）に連絡](/handbook/people-group/#how-to-reach-the-right-member-of-the-people-group)すべきです。また、マネージャーがさまざまなコンフリクト状況とアプローチについて話し合いたい場合、PBP は最善の戦略を考えるのを喜んでお手伝いします。
 
-## コンフリクト解決コンピテンシー
+## コンフリクト解決コンピテンシー {#conflict-resolution-competency}
 
 マネージャーはチームメンバー間のコンフリクト解決を管理・促進することに精通している必要があります。意見の相違の領域を表面化して明確にし、解決が可能な環境を作ることでこれを行えます。コンフリクト解決はチームメンバーの成功と潜在能力の発揮を可能にする重要な要素です。
 
@@ -132,13 +132,13 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - 必要に応じてチームメンバーにコンフリクト管理のガイダンスを提供する
 - 特に困難または複雑な状況に対して、チームや他者にコンフリクト管理戦略をアドバイスする
 
-## 追加リソース
+## 追加リソース {#additional-resources}
 
 マネージャーとしてのコンフリクトと役割について学びたい場合は、以下の記事を確認してください。
 
-- [Do You Handle Conflict like a Rhinoceros or an Ostrich](https://keithrosen.com/2015/04/14/do-you-handle-conflict-like-a-rhinoceros-or-an-ostrich/)
-- [How to deal with employees who do not get along](https://www.insperity.com/blog/employees-who-dont-get-along/)
-  [How managers should deal with conflict between two employees](https://www.theladders.com/career-advice/how-managers-should-deal-with-conflict-between-two-employees)
-- [5 Conflict Management Skills For Every Manager](https://lattice.com/articles/conflict-management-skills-for-every-manager)
-- [5 Conflict Management Styles for Every Personality type](https://blog.hubspot.com/service/conflict-management-styles)
-- [The Science of Productive Conflict: Podcast Transcript](https://www.ted.com/podcasts/worklife/the-science-of-productive-conflict-transcript)
+- [コンフリクトにサイのように対処しますか、それともダチョウのように対処しますか](https://keithrosen.com/2015/04/14/do-you-handle-conflict-like-a-rhinoceros-or-an-ostrich/)
+- [折り合いの悪い従業員への対処方法](https://www.insperity.com/blog/employees-who-dont-get-along/)
+  [マネージャーが 2 人の従業員間のコンフリクトに対処する方法](https://www.theladders.com/career-advice/how-managers-should-deal-with-conflict-between-two-employees)
+- [すべてのマネージャーに必要な 5 つのコンフリクト管理スキル](https://lattice.com/articles/conflict-management-skills-for-every-manager)
+- [あらゆる性格タイプに対応する 5 つのコンフリクト管理スタイル](https://blog.hubspot.com/service/conflict-management-styles)
+- [生産的なコンフリクトの科学：ポッドキャストの文字起こし](https://www.ted.com/podcasts/worklife/the-science-of-productive-conflict-transcript)

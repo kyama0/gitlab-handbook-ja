@@ -2,9 +2,9 @@
 title: 'インシデント'
 description: 'インシデントに関するドキュメント'
 upstream_path: "/handbook/eta/css/incidents/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-lastmod: "2026-07-21T11:29:58-05:00"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+lastmod: "2026-10-30T09:21:53+11:00"
+translated_at: "2026-11-01T06:33:04+00:00"
 translator: codex
 stale: false
 ---
@@ -13,13 +13,13 @@ stale: false
 
 このドキュメントでは、インシデントの重大度の判定方法、エスカレーションのタイミングと方法、目標解決時間、インシデント後レビューの要件を含む、インシデント対応フレームワークを扱います。このプロセスは重大度に応じて 6 〜 8 段階で構成され、検知から解決までインシデントを一貫して管理します。
 
-## インシデントについて
+## インシデントについて {#understanding-incidents}
 
-### インシデントとは
+### インシデントとは {#what-are-incidents}
 
 Customer Support Systems チームでは、インシデントとは迅速に（10 分以内に）解決できないイベント、問題、またはエラーを指します。これはバグ、システム変更、ユーザーからの報告などによって発生する場合があります。
 
-## エスカレーションレベル
+## エスカレーションレベル {#escalation-levels}
 
 状況によっては、インシデントを十分に迅速に解決できず、エスカレーションが必要になります。現在のエスカレーションレベルは次のとおりです。
 
@@ -27,7 +27,7 @@ Customer Support Systems チームでは、インシデントとは迅速に（1
 |:-----:|--------|
 | 1 | 支援を依頼する投稿をチームチャンネルに行う |
 | 2 | Customer Support Systems Specialist のオンコールを呼び出す |
-| 3 | Customer Support Systems の Fullstack Engineer オンコールを呼び出す |
+| 3 | Fullstack Engineer, Customer Support Systems のオンコールを呼び出す |
 | 4 | Customer Support Systems のリーダーシップに呼び出しを行う |
 
 インシデントへの対応を開始する時点では、技術的には「レベル 0」から開始します（必要に応じてそこからレベルを上げます）。
@@ -38,12 +38,13 @@ Customer Support Systems チームでは、インシデントとは迅速に（1
 
 Customer Support Systems チームまたは Customer Support Systems チームの特定の担当者をページングする方法については、次を参照してください。
 
+- [Customer Support Systems をページングするタイミング](/handbook/eta/css/incidents/when-to-page/)
 - [Customer Support Systems のページング](/handbook/eta/css/pagerduty/oncall/#paging-customer-support-systems)
 - [特定の担当者をページングする](/handbook/eta/css/pagerduty/oncall/#paging-a-specific-person)
 
 {{% /alert %}}
 
-## 重大度
+## 重大度 {#severity}
 
 インシデントの重大度は、最も高い[重要度レベル](/handbook/eta/css/criticalities/)と最も高い影響レベルによって決まります。これらを使用して、以下の表から重大度レベルを判定できます。
 
@@ -54,7 +55,7 @@ Customer Support Systems チームまたは Customer Support Systems チーム�
 | 業務運用 | 2 | 2 | 3 | 4 |
 | 管理 | 3 | 3 | 4 | 4 |
 
-## 解決時間
+## 解決時間 {#resolution-times}
 
 インシデントの解決に設定する時間は、その重大度によって異なります。この時間は各エスカレーション間の時間も決定します。
 
@@ -65,7 +66,7 @@ Customer Support Systems チームまたは Customer Support Systems チーム�
 | 重大度 3 | 24 〜 48 時間 | 解決せずに 8 時間経過 |
 | 重大度 4 | 48 〜 72 時間 | 解決せずに 24 時間経過 |
 
-## インシデントを処理する
+## インシデントを処理する {#handling-incidents}
 
 インシデントの処理は 6 〜 8 段階に分けられます。各重大度レベルでのフローを簡略化したものを以下に示します。
 
@@ -194,7 +195,7 @@ graph TD;
 
 念のため、レベルの階層は次のとおりです。
 
-Severity 1 > Severity 2 > Severity 3 > Severity 4
+重大度 1 > 重大度 2 > 重大度 3 > 重大度 4
 
 最も高い重大度レベルが分かったら、[ステージ 2](#stage-2---create-an-issue)に進みます。
 
@@ -279,8 +280,8 @@ Issue に、エスカレーションしていること（およびエスカレ�
 
 次の基準のいずれかを満たす場合は、[ステージ 8](#stage-8---after-incident-review)に進みます。
 
-- 最も高い重大度レベルが Severity 1 だった
-- 最も高い重大度レベルが Severity 2 だった
+- 最も高い重大度レベルが重大度 1 だった
+- 最も高い重大度レベルが重大度 2 だった
 - レベル 3 以上へのエスカレーションが必要だった
 
 ### ステージ 8 - インシデント後レビュー {#stage-8---after-incident-review}

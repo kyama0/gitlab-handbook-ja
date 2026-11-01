@@ -1,14 +1,14 @@
 ---
 title: "SRE オンボーディング"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/sre-onboarding/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
+translated_at: "2026-11-01T06:39:33+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-01T07:28:41-06:00"
+lastmod: "2026-10-23T12:55:41-06:00"
 ---
 
-## オンボーディングテンプレート
+## オンボーディングテンプレート {#onboarding-template}
 
 SRE のオンボーディングは、主に 2 つの Issue テンプレートで管理されます:
 
@@ -16,18 +16,18 @@ SRE のオンボーディングは、主に 2 つの Issue テンプレートで
 1. [コンテキスト収集](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/blob/master/.gitlab/issue_templates/onboarding-sre-context.md)
 
 これらは、SRE が業務を開始するときに割り当てられます。簡単なタスクから始めて
-システムのさまざまな領域へとガイドし、SRE と SRE マネージャーの両方が
+システムのさまざまな領域へとガイドし、SRE と SRE manager の両方が
 各種アクセス関連の問題を解決していくのを助けます。
 
 3 つ目の Issue テンプレートとして [オンコールオンボーディング](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/blob/master/.gitlab/issue_templates/onboarding-oncall.md)
 があります。最初の 2 つの完了後に着手するもので、開始日からおそらく少なくとも 3 か月程度を要します。
 
-## GitLab.com インフラストラクチャ管理
+## GitLab.com インフラストラクチャ管理 {#gitlabcom-infrastructure-management}
 
-SRE チームは GitLab.com インフラストラクチャの構成管理に [Terraform](https://www.terraform.io/) と
-[Chef](https://www.chef.io/) を使用しています。
+SRE チームは GitLab.com インフラストラクチャの構成管理に [Terraform](https://www.terraform.io/)と
+[Chef](https://www.chef.io/)を使用しています。
 
-### Terraform
+### Terraform {#terraform}
 
 Terraform 構成は現在、以下の 3 つの環境に分かれています:
 
@@ -43,7 +43,7 @@ staging、production、ops の変数ファイルで設定されます。
 terraform の state はオブジェクトストレージで管理されており、master ブランチが常に
 インフラストラクチャの現在の状態を表すべきです。変更は CI を通じてマージおよび適用されるべきです。
 
-### Chef
+### Chef {#chef}
 
 Chef は SRE インフラストラクチャ管理の重要な部分です。現在、OS のパッチ適用、
 システムレベルの構成適用、リリース用 omnibus パッケージのインストールに使用されています。
@@ -54,20 +54,21 @@ Chef は SRE インフラストラクチャ管理の重要な部分です。現�
   この設定ファイルは omnibus パッケージで使用されます。
 * [gitlab-cookbooks](https://gitlab.com/gitlab-cookbooks): GitLab.com で使用される cookbook のコレクションです。
 
-### リリース
+### リリース {#releases}
 
 リリース候補は、週を通して行われる自動デプロイメントによって GitLab.com にデプロイされます。GitLab.com におけるリリースの仕組みについては、[リリースプロセス](/handbook/engineering/deployments-and-releases/deployments/#gitlabcom-deployments-process)を参照し、
 [release プロジェクトのドキュメント](https://gitlab.com/gitlab-org/release/docs/blob/master/README.md)もご覧ください。
+ドキュメント。
 
 GitLab.com のデプロイメントとパッチについては、以下の
 release ドキュメントを参照してください:
 
 * [deployer の release ドキュメント](https://gitlab.com/gitlab-org/release/docs/blob/master/general/deploy/gitlab-com-deployer.md)
-* [post-deployment patch ドキュメント](https://gitlab.com/gitlab-org/release/docs/blob/master/general/deploy/post-deployment-patches.md)
+* [デプロイ後パッチのドキュメント](https://gitlab.com/gitlab-org/release/docs/blob/master/general/deploy/post-deployment-patches.md)
 
-## どこに何があるか
+## どこに何があるか {#where-to-find-things}
 
-### リポジトリ
+### リポジトリ {#repositories}
 
 GitLab.com インフラストラクチャ管理には以下のリポジトリが使用されます。
 これらのリポジトリの場所は、SRE チームが push、Issue、MR に使用するリモートです。
@@ -92,10 +93,10 @@ GitLab.com が利用できない場合に備えて、ミラーが設定されて
 1. [runbooks](https://gitlab.com/gitlab-com/runbooks/): このリポジトリには、
    GitLab.com のランブック、ハウツー、アラート定義が含まれています。このリポジトリで定義されたアラートは、
    master にマージされるとモニタリングインフラストラクチャに自動的に適用されます。詳細は
-   [alert セクション](https://gitlab.com/gitlab-com/runbooks/-/tree/master#alerts)を参照してください。
+   [アラートセクション](https://gitlab.com/gitlab-com/runbooks/-/tree/master#alerts)を参照してください。
    ops.GitLab.net 上に[リポジトリミラー](https://ops.gitlab.net/gitlab-com/runbooks/)があります。
 
-### ダッシュボード
+### ダッシュボード {#dashboards}
 
 以下のダッシュボードをブックマークしてすぐにアクセスできるようにしておくと便利です。
 
@@ -104,18 +105,18 @@ GitLab.com が利用できない場合に備えて、ミラーが設定されて
 1. [System Logs](https://log.gprd.gitlab.net/app/kibana)
 1. [Fastly](https://manage.fastly.com/dashboard/services/652MHuIME217ZATbh7vFWC/datacenters/all) CDN
 
-### クラウドプロバイダー
+### クラウドプロバイダー {#cloud-providers}
 
 1. [Google Cloud](https://console.cloud.google.com/home/dashboard?project=gitlab-production&pli=1)
 1. [Amazon Web Services](https://console.aws.amazon.com/console/home?region=us-east-1#)
 
-### モニタリングツール
+### モニタリングツール {#monitoring-tools}
 
 1. [incident.io](https://app.incident.io/gitlab/dashboard) アラート
 1. [Grafana](https://dashboards.gitlab.net/d/bd2Kl9Imk/host-stats?orgId=1) パフォーマンスモニタリング
-1. [アラートダッシュボード](https://dashboards.gitlab.net/d/SOn6MeNmk/alerts)
+1. [Grafana アラートルール](https://dashboards.gitlab.net/alerting/list) 発火中および保留中のアラート
 
-### Issue トラッカー
+### Issue トラッカー {#issue-trackers}
 
 以下の Issue トラッカーをブックマークしてすぐにアクセスできるようにしておくと便利です。
 
@@ -123,15 +124,15 @@ GitLab.com が利用できない場合に備えて、ミラーが設定されて
 1. [Production Incidents Issues](https://gitlab.com/gitlab-com/gl-infra/production/issues?label_name%5B%5D=incident)
 1. [Change Management Issues](https://gitlab.com/gitlab-com/gl-infra/production/issues?label_name%5B%5D=change)
 
-### Yubikey
+### Yubikey {#yubikey}
 
-SRE は [YubiKey](https://www.yubico.com) を使用し、ノートパソコンに鍵を置かないようにすべきです。プライマリキーを紛失したときにアカウントからロックアウトされないように、予備の YubiKey を用意することを推奨します。
+SRE は [YubiKey](https://www.yubico.com)を使用し、ノートパソコンに鍵を置かないようにすべきです。プライマリキーを紛失したときにアカウントからロックアウトされないように、予備の YubiKey を用意することを推奨します。
 
 [yubikey ランブック](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md)に従ってセットアップしてください。
 
-## クレデンシャル
+## クレデンシャル {#credentials}
 
-以下は、上記または handbook の他の箇所でカバーされていない、設定する必要のあるクレデンシャルとアクセスの包括的なリストとなることを意図しています。
+以下は、上記またはハンドブックの他の箇所でカバーされていない、設定する必要のあるクレデンシャルとアクセスの包括的なリストとなることを意図しています。
 このリストは最新ではない可能性があります。何か漏れている場合は、追加してください。
 
 1. SSH キー - yubikey のセットアップで提供されます
@@ -147,7 +148,7 @@ SRE は [YubiKey](https://www.yubico.com) を使用し、ノートパソコン�
    * Digital Ocean
    * Google Cloud
 
-## Slack チャンネル
+## Slack チャンネル {#slack-channels}
 
 * オンコール関連のチャンネル:
   * `production`
@@ -166,17 +167,17 @@ SRE は [YubiKey](https://www.yubico.com) を使用し、ノートパソコン�
   * `kubernetes`
   * `terraform`
 
-## Zendesk
+## Zendesk {#zendesk}
 
 すべての SRE は ZenDesk で「Light Agent」アカウントに登録するべきです。インシデントはしばしば顧客レポートから発生するので、顧客の提出内容とサポートとのやり取りを確認できると便利です。また、サポートエンジニアがトラブルシューティング目的でより多くの情報を集められるように、内部メモを残すこともできます。
 
-## Time Off by Deel
+## Time Off by Deel {#time-off-by-deel}
 
 私たちは Time Off by Deel を使って、計画された休暇の通知と委譲を行っています。Slack との連携を設定する際は、
 `/time-off-deel help` コマンドを実行してから _Go to Home Tab_ をクリックし、ドロップダウンで _Calendar Sync_ を選択した後、_Add Calendar_ を選んで、チームの共有 Google Calendar
 (ID: `gitlab.com_oji6dki1frc8g8qq9feuu1jtd0@group.calendar.google.com`) を "Additional calendars to include?" として追加することを忘れないでください。
 
-## 推奨ソフトウェアツール
+## 推奨ソフトウェアツール {#suggested-software-tools}
 
 プロダクションエンジニアとして、私たちは Linux ワークステーションを利用できます。以下のリスト
 はほとんどが macOS ツールで構成されています。お好みの Linux ディストリビューションに合わせて
@@ -206,32 +207,32 @@ export HISTSIZE=1000000
 export HISTTIMEFORMAT="%d/%m/%y %T "
 ```
 
-1. helm - "Kubernetes package manager" (`brew install kubernetes-helm`)
+1. helm - 「Kubernetes パッケージマネージャー」 (`brew install kubernetes-helm`)
 1. minikube (`brew install minikube`) と virtualbox (`https://www.virtualbox.org/wiki/Downloads`)
-1. GCP cli [gcloud quickstart macos](https://cloud.google.com/sdk/docs/quickstart-macos)
-1. Digital Ocean cli (`brew install doctl`)
-1. Azure cli (`brew install azure-cli`)
-1. AWS cli (`pip3 install awscli --upgrade`)
+1. GCP CLI [gcloud の macOS クイックスタート](https://cloud.google.com/sdk/docs/quickstart-macos)
+1. Digital Ocean CLI (`brew install doctl`)
+1. Azure CLI (`brew install azure-cli`)
+1. AWS CLI (`pip3 install awscli --upgrade`)
 1. [Sublime](https://www.sublimetext.com/)、[Textmate](https://macromates.com)、[MacVim](https://macvim.org/)、[neovim](https://neovim.io) などのテキストエディタ
 1. watch (`brew install watch`)
 1. tmux/tmate (`brew install tmux tmate`)
-1. [macdown](https://macdown.uranusjr.com) (`brew install macdown`) などの markdown エディタ
-1. [BitBar](https://github.com/matryer/xbar) と [GitLab Plugin](https://gitlab.com/devin/gitlab-bitbar)
+1. [macdown](https://macdown.uranusjr.com) (`brew install macdown`) などの Markdown エディタ
+1. [BitBar](https://github.com/matryer/xbar)と [GitLab Plugin](https://gitlab.com/devin/gitlab-bitbar)
 1. [GNU ユーティリティをインストールして mac ユーティリティを置き換える]( https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities)には --with-default-names オプションを使います。
 1. gpg を使う場合、パスワードを聞かれます。パスワードの問い合わせはさまざまなツールで容易にできますが、かなり標準的で広くサポートされているのが pinentry-mac です (`brew install pinentry-mac`)。gpg-agent にこれを使うよう伝えるには: `echo 'pinentry-program /usr/local/bin/pinentry-mac' >> ~/.gnupg/gpg-agent.conf`
 
-### Brew ファイル
+### Brew ファイル {#brew-files}
 
 [Infrastructure プロジェクト](https://gitlab.com/gitlab-com/gl-infra/infrastructure/tree/master/onboarding)に brew ファイルのサンプルがあります。
 
-### iOS アプリ
+### iOS アプリ {#ios-apps}
 
 1. [Slack](https://apps.apple.com/us/app/slack/id618783545)
 1. [Zoom](https://apps.apple.com/us/app/zoom-workplace/id546505307)
 1. [incident.io](https://apps.apple.com/ca/app/incident-io/id6471268530)
 1. [Working Copy](https://apps.apple.com/us/app/working-copy-git-client/id896694807) (オプション)
 
-## 参考資料
+## 参考資料 {#reference-material}
 
 エンジニアが復習する必要があるかもしれない関連参考資料のリスト
 
