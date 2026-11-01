@@ -2,18 +2,18 @@
 title: "TMRG - Global Voices"
 description: "GitLab の Global Voices TMRG"
 upstream_path: "/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices/"
-upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
-translated_at: "2026-09-08T07:04:23+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:15:22+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-07T11:40:25+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## ミッション
+## ミッション {#mission}
 
 GitLab のグローバルに多様なチームへの認知度を高め、グローバルチームが GitLab 全体およびビジネスにもたらす価値を明らかにするとともに、グローバルチームメンバーの日々の業務生活を改善します。
 
-## 目標
+## 目標 {#objectives}
 
 Global Voices TMRG には、3 つの主要目標があります。
 
@@ -29,7 +29,7 @@ Global Voices TMRG には、3 つの主要目標があります。
 
 もう 1 名の Co-Lead を歓迎しており、アイデアを持つボランティアをぜひお待ちしています。
 
-## エグゼクティブスポンサー
+## エグゼクティブスポンサー {#executive-sponsors}
 
 1. [Sherrod Patching](https://gitlab.com/spatching) - Co-Sponsor
 1. [Namo Tiwari](https://gitlab.com/namotiwari) - Co-Sponsor
@@ -41,15 +41,15 @@ Global Voices TMRG には、3 つの主要目標があります。
 - 全社的な意思決定にグローバルな視点が反映されるようにする（対応: 擁護する、発想を促す）
 - 異文化理解とインクルーシブネスを育む（対応: 力を与える、発想を促す）
 
-## 参加方法
+## 参加方法 {#how-to-participate}
 
 1. [Google グループ](https://groups.google.com/a/gitlab.com/g/globalvoices/)に参加する
 1. 会話・お知らせ・ TMRG メンバーとのつながりのために [#global-voices-tmrg](https://gitlab.slack.com/archives/C03UHGX4F1P) Slack チャンネルに参加する。チャンネルに参加したら、自己紹介とあなたが拠点とする場所を教えてください！
-1. GitLab プロジェクト [gitlab-com/global-voices-tmrg](https://gitlab.com/gitlab-com/global-voices-tmrg) に Issue を作成し、[TMRG リード](#leads)にタグを付ける
+1. GitLab プロジェクト [gitlab-com/global-voices-tmrg](https://gitlab.com/gitlab-com/global-voices-tmrg)に Issue を作成し、[TMRG リード](#leads)にタグを付ける
 
-## プロセス
+## プロセス {#process}
 
-各種ポータル（Slack チャンネルまたは Issue トラッカー）で[新たな案件/Issue](https://gitlab.com/gitlab-com/global-voices-tmrg) が起票された場合、以下のプロセスに従って対応します。
+各種ポータル（Slack チャンネルまたは Issue トラッカー）で[新たな案件/Issue](https://gitlab.com/gitlab-com/global-voices-tmrg)が起票された場合、以下のプロセスに従って対応します。
 
 1. [TMRG リード](#leads)を @ メンションしてトリアージを依頼する
 1. Issue が時間的に緊急の場合は期限を設定する
@@ -58,11 +58,11 @@ Global Voices TMRG には、3 つの主要目標があります。
 1. DIB グループが担当者と連携し、案件がレビューされ、進展し、TMRG に対して透明性ある形でコミュニケーションが行われるようにする
 1. TMRG リードが進捗を確認し、必要に応じてチャンネルに報告しながら Issue をクローズする
 
-### Issue を起票すべき場面
+### Issue を起票すべき場面 {#when-to-raise-an-issue}
 
 改善の余地がある作業においてのみ、関連する DRI と連携できます。これは多くのことに言えますが、すべての案件が望ましい結果をもたらすわけではありません。
 
-そのため、以下の例を検討する前に、[ポジティブな意図を前提とする](/handbook/values/#assume-positive-intent) ことが重要です。あなたが関わるチームメンバーが改善の機会があることをまったく意識していないことは珍しくありません（例：ISO 以外の日付フォーマットがわかりにくい）。そのため、あなたは異なる視点について相手に伝える役割を担います。
+そのため、以下の例を検討する前に、ポジティブな意図を前提とすることが重要です。あなたが関わるチームメンバーが改善の機会があることをまったく意識していないことは珍しくありません（例：ISO 以外の日付フォーマットがわかりにくい）。そのため、あなたは異なる視点について相手に伝える役割を担います。
 
 以下はいくつかの例示的な例です。
 
@@ -70,4 +70,4 @@ Global Voices TMRG には、3 つの主要目標があります。
 1. 全社的な取り組みにおけるグッズの選択肢が特定の気候を前提にしている
 1. 「グローバル」な福利厚生が全チームメンバーに提供されているが、1 つの半球の大都市でしか利用できない
 
-最後に、複数の視点から考慮されていないことに対して苛立ちを感じることはまったく正当なことです。成功と失敗の分かれ目となるのは、それをどのように表現するかです。簡単な解決策がない問題もありますが、[親切さ](/handbook/values/#kindness) をもってアプローチすることで、問題は解決しやすくなります。
+最後に、複数の視点から考慮されていないことに対して苛立ちを感じることはまったく正当なことです。成功と失敗の分かれ目となるのは、それをどのように表現するかです。簡単な解決策がない問題もありますが、親切さをもってアプローチすることで、問題は解決しやすくなります。

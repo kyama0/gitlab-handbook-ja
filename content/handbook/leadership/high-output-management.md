@@ -2,11 +2,11 @@
 title: ハイ・アウトプット・マネジメント
 decsription: "On this page, we will cover some of the key topics covered in the book High Output Management and what they mean for people leaders."
 upstream_path: /handbook/leadership/high-output-management/
-upstream_sha: 1d268efe755c0706a7fc3d454b9e304624dd0423
-translated_at: "2026-10-28T21:11:06.852598+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T04:58:13.290688+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-28T11:20:12-04:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 ## はじめに {#introduction}
@@ -36,12 +36,12 @@ Sid と Learning and Development チームが、CEO ハンドブック学習セ�
 
 ### ハイ・アウトプット・マネジメント {#high-output-management}
 
-中心的な命題は、マネージャーの目標はチームメンバーの仕事の成果を高めることだというものです。GitLab では、マネージャーはチームを導いて[成果](/handbook/values/#results)を達成することが期待されています。したがって、マネージャーはチーム全体のアウトプットに乗数的な影響を与える高レバレッジな活動を選択すべきです。GitLab はスピーディーに動きます。ミーティング、確認すべき Issue や MR、1 対 1、インフォーマルなコミュニケーション、その他多くのことがあります。マネージャーが成功する一つの方法は、少ない時間を投じてチームのアウトプットという観点から大きな価値を生み出す明確な方向性をチームに提供することです。
+中心的な命題は、マネージャーの目標はチームメンバーの仕事の成果を高めることだというものです。GitLab では、マネージャーはチームを導いて成果を達成することが期待されています。したがって、マネージャーはチーム全体のアウトプットに乗数的な影響を与える高レバレッジな活動を選択すべきです。GitLab はスピーディーに動きます。ミーティング、確認すべき Issue や MR、1 対 1、インフォーマルなコミュニケーション、その他多くのことがあります。マネージャーが成功する一つの方法は、少ない時間を投じてチームのアウトプットという観点から大きな価値を生み出す明確な方向性をチームに提供することです。
 
 例えば、GitLab のマネージャーは以下のことができます。
 
 1. [Issue ボード](https://docs.gitlab.com/ee/user/project/issue_board.html#:~:text=The%20GitLab%20Issue%20Board%20is,Kanban%20or%20a%20Scrum%20board.&text=Issue%20boards%20help%20you%20to,your%20entire%20process%20in%20GitLab)を通じてタスクを[委任する](/handbook/leadership/effective-delegation/)。Issue ボードはチームのワークフローを計画・整理・可視化するためのプロジェクト管理ツールとして機能します。
-1. [非同期を優先してミーティングを断る](/handbook/communication/#asynchronous-communication)。ミーティングは関係構築とプロジェクト推進に有用です。マネージャーは非同期コミュニケーションへの[バイアス](/handbook/values/#bias-towards-asynchronous-communication)のロールモデルとなることができます。また、[具体的な提案](/handbook/values#make-a-proposal)を検討したり、一連の非同期議論を前進させるために必要な場合にのみ[ミーティングを設定する](/handbook/communication/)ことでもロールモデルとなれます。
+1. [非同期を優先してミーティングを断る](/handbook/communication/#asynchronous-communication)。ミーティングは関係構築とプロジェクト推進に有用です。マネージャーは非同期コミュニケーションへのバイアスのロールモデルとなることができます。また、具体的な提案を検討したり、一連の非同期議論を前進させるために必要な場合にのみ[ミーティングを設定する](/handbook/communication/)ことでもロールモデルとなれます。
 1. チームに最適な階層型とコンセンサスの組み合わせを適用して[意思決定する](/handbook/leadership/making-decisions/)。実際に作業をしている人、[Directly Responsible Individual](/handbook/people-group/directly-responsible-individuals/)が決断を下せるようにします。
 1. [モチベーションによってピークパフォーマンスを引き出す](https://internal.gitlab.com/handbook/company/high-performing-teams/)。マネージャーはモチベーション、[信頼の構築](/handbook/leadership/building-trust/)、そしてトレーニングを活用してチームのアウトプットを改善できます。
 
@@ -53,4 +53,4 @@ Sid と Learning and Development チームが、CEO ハンドブック学習セ�
 
 ### パフォーマンス管理 {#performance-management}
 
-本の中で著者は、パフォーマンスに関する議論を始めるために[非同期](/handbook/values/#bias-towards-asynchronous-communication)プラクティスを適用することを説明しています。マネージャーは定期的に予定される[1 対 1 ミーティング](/handbook/leadership/1-1/)を使って、部下とパフォーマンスについて議論します。ミーティングの前に、主要なポイント、強みの領域、開発が必要な領域、および今後の計画をすべて含む文書を準備します。これにより部下はパフォーマンス討議の前に情報を整理する時間を持てます。[同期ミーティング](/handbook/communication/#video-calls)の時間は、部下がフィードバックに関する明確化の質問をするために使うことができます。マネージャーは一回のミーティングですべてのポイントをカバーするのではなく、主要なポイントに注意を集中することができます。
+本の中で著者は、パフォーマンスに関する議論を始めるために非同期プラクティスを適用することを説明しています。マネージャーは定期的に予定される[1 対 1 ミーティング](/handbook/leadership/1-1/)を使って、部下とパフォーマンスについて議論します。ミーティングの前に、主要なポイント、強みの領域、開発が必要な領域、および今後の計画をすべて含む文書を準備します。これにより部下はパフォーマンス討議の前に情報を整理する時間を持てます。[同期ミーティング](/handbook/communication/#video-calls)の時間は、部下がフィードバックに関する明確化の質問をするために使うことができます。マネージャーは一回のミーティングですべてのポイントをカバーするのではなく、主要なポイントに注意を集中することができます。

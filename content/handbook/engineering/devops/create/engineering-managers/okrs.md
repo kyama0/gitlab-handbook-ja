@@ -1,16 +1,16 @@
 ---
 title: "目標と主要な結果（OKR）"
 upstream_path: /handbook/engineering/devops/create/engineering-managers/okrs/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T10:21:26Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T04:36:39+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-10-28T11:20:12-04:00"
 ---
 
-## OKR のカスケード
+## OKR のカスケード {#cascading-okrs}
 
-GitLab の OKR により、私たちの仕事を GitLab 全体の目標に合わせることができます。Create ステージの OKR は通常、所属するサブ部門、部門、および事業部から派生します。このカスケード外の[インパクトのある OKR](/handbook/company/okrs) は、ステージからのサインオフが得られれば設定できます。
+GitLab の OKR により、私たちの仕事を GitLab 全体の目標に合わせることができます。Create ステージの OKR は通常、所属するサブ部門、部門、および事業部から派生します。このカスケード外の[インパクトのある OKR](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)は、ステージからのサインオフが得られれば設定できます。
 
 1. [エンジニアリング OKR](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues?scope=all&utf8=✓&state=opened&label_name[]=OKR&label_name[]=EVP%20of%20Engineering)
 1. [開発 OKR](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues?scope=all&utf8=✓&state=opened&label_name[]=OKR&label_name[]=Development%20Department&author_username=clefelhocz1)
@@ -23,11 +23,11 @@ GitLab の OKR により、私たちの仕事を GitLab 全体の目標に合わ
 * [IDE](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=OKR&label_name%5B%5D=group%3A%3Aide&first_page_size=100)
 * [Source Code](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=OKR&label_name%5B%5D=group%3A%3Asource%20code&first_page_size=100)
 
-## OKR の作成者
+## OKR の作成者 {#okr-authors}
 
-シニアエンジニアリングマネージャー、エンジニアリングマネージャー、スタッフエンジニアは全員 OKR の作成に責任があります。
+Senior Engineering Managers、Engineering Managers、Staff Engineers は全員 OKR の作成に責任があります。
 
-## OKR フォーマット
+## OKR フォーマット {#okr-format}
 
 すべての OKR は以下のフォーマットに従います。
 
@@ -35,49 +35,49 @@ GitLab の OKR により、私たちの仕事を GitLab 全体の目標に合わ
 1. プロダクト
 1. 優れたチーム
 
-## OKR タイムライン
+## OKR タイムライン {#okr-timeline}
 
-GitLab の OKR は1四半期（3ヶ月）間実施されます。以下は私たちが従うサンプルタイムラインです。
+GitLab の OKR は 1 四半期（3 ヶ月）間実施されます。以下は私たちが従うサンプルタイムラインです。
 
-**月1**
+**月 1**
 
-* 第1週 - この週、EM は前四半期のまだスコアリングされていない OKR をスコアリングします。
+* 第 1 週 - この週、EM は前四半期のまだスコアリングされていない OKR をスコアリングします。
   * 前四半期の最終 OKR スコアを更新する
   * 前四半期の OKR レトロスペクティブを完了する
   * 前四半期の OKR をクローズする
 
-* 第4週
+* 第 4 週
   * 現在の進捗（スコア）を更新する
   * ビジネスの優先事項が最近変わった場合、または非現実的だと気づいた場合は OKR を更新する
   * ビジネスの優先事項が最近変わった場合は OKR を削除する
   * ビジネスの優先事項が最近変わった場合は新しい OKR を追加する
 
-**月2**
+**月 2**
 
-* 第4週
+* 第 4 週
   * 現在の進捗（スコア）を更新する
   * ビジネスの優先事項が最近変わった場合、または非現実的だと気づいた場合は OKR を更新する
   * ビジネスの優先事項が最近変わった場合は OKR を削除する
   * ビジネスの優先事項が最近変わった場合は新しい OKR を追加する
 
-**月3**
+**月 3**
 
-* 第2週 - この週、EM は自チームに適用可能な組織の KR（チームに注力させたい KR を含む）を特定し始めます。
+* 第 2 週 - この週、EM は自チームに適用可能な組織の KR（チームに注力させたい KR を含む）を特定し始めます。
 
   * 次四半期の OKR の作業を開始する
 
-* 第4週 - この週、EM は今四半期の現在の OKR を締めくくり、次四半期の OKR を最終決定します。
+* 第 4 週 - この週、EM は今四半期の現在の OKR を締めくくり、次四半期の OKR を最終決定します。
 
   * 今四半期の OKR スコアの更新を最終化し始める
   * 次四半期の OKR を最終決定する
 
-## 効果的な主要な結果（KR）を書くためのガイドライン
+## 効果的な主要な結果（KR）を書くためのガイドライン {#guidelines-for-writing-effective-key-results}
 
 主要な結果を書くために推奨されるベストプラクティスは以下のとおりです。
 
 **チャレンジングな KR を作成する**
 
-* KR の70%を達成することがチャレンジングなレベルにする
+* KR の 70%を達成することがチャレンジングなレベルにする
 
 * 確実に達成できる目標を決め、それをストレッチゴールになるまで少し変えるという方法が良いルールオブサムです
 
@@ -95,18 +95,18 @@ GitLab の OKR は1四半期（3ヶ月）間実施されます。以下は私た
 
 **自分やチームを過負荷にしない**
 
-* 1つの目標に対して KR を3〜5つ以内にする
-* 1四半期全体で KR を9つ以内にする
+* 1 つの目標に対して KR を 3〜5 つ以内にする
+* 1 四半期全体で KR を 9 つ以内にする
 
-## OKR のスコアリング
+## OKR のスコアリング {#scoring-okrs}
 
-エンジニアリングマネージャーは月次サイクルで OKR をスコアリングし更新します。マネージャーが月次でチェックインすることで、四半期 OKR への集中を維持できます。
+Engineering Managers は月次サイクルで OKR をスコアリングし更新します。マネージャーが月次でチェックインすることで、四半期 OKR への集中を維持できます。
 
 OKR はこのプロセスに従ってスコアリングされます
 
-## OKR のレポーティング
+## OKR のレポーティング {#reporting-on-okrs}
 
-OKR は Epic と Issue を使用してレポートされます。Create ステージの OKR はこの OKR Issue ボードから確認できます。
+OKR はエピックと Issue を使用してレポートされます。Create ステージの OKR はこの OKR Issue ボードから確認できます。
 
 **適切なラベルの管理**
 
@@ -116,11 +116,11 @@ OKR は Epic と Issue を使用してレポートされます。Create ステ�
 * ~"Development Department"
 * ~"Dev Sub-department"
 * ~"devops::create"
-* ~"group::source code"、~"group::code review"、~"group::editor"、~"group::gitaly"、~"group::ecosystem" のいずれか1つ
+* ~"group::source code"、~"group::code review"、~"group::editor"、~"group::gitaly"、~"group::ecosystem" のいずれか 1 つ
 
-## OKR レトロスペクティブ
+## OKR レトロスペクティブ {#okr-retrospectives}
 
-四半期 OKR を締めくくる際、Create ステージのエンジニアリングマネージャーは以下の OKR レトロスペクティブフォーマットを使用します。
+四半期 OKR を締めくくる際、Create Stage Engineering Managers は以下の OKR レトロスペクティブフォーマットを使用します。
 
 **レトロスペクティブ**
 
@@ -134,10 +134,9 @@ OKR は Epic と Issue を使用してレポートされます。Create ステ�
 
 うまくいかなかったが、基本的に一度限りの出来事 — 繰り返さないと予想することです。チームが目標を達成できなかった場合、どのような障害に直面しましたか？
 
-* OOO の件数が多く、再編成の変更を考えると、MR レートを少なくとも30%削減すべきでした。このレートは四半期中に変更されました。大規模な OOO が MR レートにどれほど大きな影響を与えるかを予測するための改善が必要です。
+* OOO の件数が多く、再編成の変更を考えると、MR レートを少なくとも 30%削減すべきでした。このレートは四半期中に変更されました。大規模な OOO が MR レートにどれほど大きな影響を与えるかを予測するための改善が必要です。
 
 **Do Better（改善できること）**
-
 次回はより良くできること。どのように改善するかの提案を含めることができます。
 
 * ...

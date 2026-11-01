@@ -2,9 +2,9 @@
 title: DAP Rapid — フィールドからの問題報告
 description: Solutions Architect が顧客の利用を妨げる DAP の問題を Engineering へ報告する方法
 upstream_path: /handbook/solutions-architects/processes/tools-and-resources/dap-issue-reporting/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-16T23:38:14-04:00"
-translated_at: "2026-09-20T03:19:50+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+lastmod: "2026-10-30T14:06:41-06:00"
+translated_at: "2026-11-01T04:58:13.290688+00:00"
 translator: codex
 stale: false
 ---
@@ -82,7 +82,7 @@ GitLab.com 上の Sev1 本番インシデントについては、[incident.io �
 |------------|----------|---------------------|----------------------|
 | **GitLab.com (SaaS)** | Sev1 | 30 分 – 12 時間 | 即時（営業日の MR のマージから約 6 時間以内にデプロイ） |
 | | Sev2 | 4 – 24 時間 | 目標： 3 営業日 |
-| **Self-Managed** | Sev1 | 30 分 – 12 時間 | 次回[パッチリリース](/handbook/engineering/releases/patch-releases/#patch-release-overview)（約 2 週間、第 2／第 4 水曜日） |
+| **Self-Managed** | Sev1 | 30 分 – 12 時間 | 次回[パッチリリース](/handbook/engineering/releases/patch-releases/#patch-release-overview-and-policy)（約 2 週間、第 2／第 4 水曜日） |
 | | Sev2 | 4 – 24 時間 | 次回パッチリリース |
 | **Dedicated** | Sev1 | 30 分 – 12 時間 | [バックポート](https://docs.gitlab.com/policy/maintenance/#backporting-to-older-releases)を伴う次回パッチリリース（2〜4 週間） |
 | | Sev2 | 4 – 24 時間 | バックポートを伴う次回パッチリリース |

@@ -1,20 +1,19 @@
 ---
 title: DAP Rapid — フィールド Issue 報告
-description: ソリューションアーキテクトが顧客のブロッカーとなる DAP Issue をエンジニアリングへ報告する方法
+description: Solutions Architects が顧客の利用を妨げる DAP の問題を Engineering へ報告する方法
 upstream_path: /handbook/solutions-architects/tools-and-resources/dap-issue-reporting/
-upstream_sha: eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81
-translated_at: "2026-05-15T00:00:00+00:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T04:52:13+00:00"
 translator: claude
 stale: false
-model: claude-opus-4-7
-lastmod: "2026-05-15T12:34:34-04:00"
+lastmod: "2026-10-30T14:06:41-06:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 **DAP Rapid** は、明確な SLO、トラッキング、エスカレーションパスを 14 のエンジニアリンググループ間で備え、Sev1 および Sev2 の顧客ブロッカーとなる Issue に対処する Duo Agent Platform プログラムです。
 
-ソリューションアーキテクトとして、以下が可能です。
+Solutions Architect として、以下が可能です。
 
 - **GitLab Issue で直接バグを起票** — Zendesk チケット不要
 - **重大度ラベルの提案** (最終判断はエンジニアリングが行います)
@@ -22,7 +21,7 @@ lastmod: "2026-05-15T12:34:34-04:00"
 
 DAP トライアル、POV、または顧客デプロイ中にバグや顧客ブロッカーとなる Issue を発見した際は、いつでもこのプロセスを利用してください。
 
-## いつ報告するか
+## いつ報告するか {#when-to-report}
 
 顧客の Duo Agent Platform 利用をブロックまたは大きく阻害する Issue を報告してください。
 
@@ -33,7 +32,7 @@ DAP トライアル、POV、または顧客デプロイ中にバグや顧客ブ�
 
 Sev3／Sev4 Issue（軽微なバグ、見た目の問題）は、以下のラベルを付けて通常のバグ Issue として起票してください — DAP Rapid の SLO は適用されません。
 
-## 報告の方法
+## 報告の方法 {#how-to-report}
 
 重大度と緊急度に応じて、適切なチャネルを選択してください。
 
@@ -52,19 +51,19 @@ Customer-blocking issue discovered
         └─ File bug in gitlab-org/gitlab with labels
 ```
 
-### チャネル 1: 直接バグを起票（最も一般的）
+### チャネル 1: 直接バグを起票（最も一般的） {#channel-1-direct-bug-filing-most-common}
 
-[`gitlab-org/gitlab`](https://gitlab.com/gitlab-org/gitlab/-/issues/new) で Issue を起票し、以下に記載する必須ラベルを付けてください。これがフィールドで発見されたバグに対する最速の経路です。
+[`gitlab-org/gitlab`](https://gitlab.com/gitlab-org/gitlab/-/issues/new)で Issue を起票し、以下に記載する必須ラベルを付けてください。これがフィールドで発見されたバグに対する最速の経路です。
 
-### チャネル 2: Request for Help (RFH)
+### チャネル 2: Request for Help (RFH) {#channel-2-request-for-help-rfh}
 
-サポートに隣接した Issue の調査をエンジニアリングに依頼したい場合や、根本原因が不明な場合は、[GitLab Request for Help](https://gitlab.com/gitlab-com/request-for-help/) を使用してください。RFH README に従い、正しいクロージャーラベルを適用します。
+サポートに隣接した Issue の調査をエンジニアリングに依頼したい場合や、根本原因が不明な場合は、[GitLab Request for Help](https://gitlab.com/gitlab-com/request-for-help/)を使用してください。RFH README に従い、正しいクロージャーラベルを適用します。
 
-### チャネル 3: incident.io（重大な本番インシデント）
+### チャネル 3: incident.io（重大な本番インシデント） {#channel-3-incidentio-critical-production-incidents}
 
 GitLab.com 上の Sev1 本番インシデントについては、[incident.io を使ってインシデントを宣言](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)し、「Affects Duo Agentic Platform (DAP)」フィールドが YES に設定されていることを確認してください。
 
-## 必須ラベル
+## 必須ラベル {#required-labels}
 
 `gitlab-org/gitlab` でバグ Issue を起票する際は、以下を付与します。
 
@@ -75,15 +74,15 @@ GitLab.com 上の Sev1 本番インシデントについては、[incident.io �
 | `~"severity::1"` から `~"severity::4"` まで | 重大度の提案（最終判断はエンジニアリング） |
 | `~"group::[team name]"` | 担当する AI エンジニアリンググループ |
 
-## デプロイメントタイプ別の解決 SLO
+## デプロイメントタイプ別の解決 SLO {#resolution-slos-by-deployment-type}
 
 これは社内目標 (SLO) であり、顧客向け SLA ではありません。主な目標は、**すべての Sev1 および Sev2 Issue で 24 時間以内に顧客のブロックを解除すること**です。
 
 | デプロイメント | 重大度 | ブロック解除目標時間 | 修正／パッチデプロイ |
 |------------|----------|---------------------|----------------------|
-| **GitLab.com (SaaS)** | Sev1 | 30 分 – 12 時間 | 即時（営業日のマージリクエスト merge から約 6 時間以内にデプロイ） |
+| **GitLab.com (SaaS)** | Sev1 | 30 分 – 12 時間 | 即時（営業日の MR のマージから約 6 時間以内にデプロイ） |
 | | Sev2 | 4 – 24 時間 | 目標: 3 営業日 |
-| **Self-Managed** | Sev1 | 30 分 – 12 時間 | 次回[パッチリリース](/handbook/engineering/releases/patch-releases/#patch-release-overview)（約 2 週間、第 2／第 4 水曜日） |
+| **Self-Managed** | Sev1 | 30 分 – 12 時間 | 次回[パッチリリース](/handbook/engineering/releases/patch-releases/#patch-release-overview-and-policy)（約 2 週間、第 2／第 4 水曜日） |
 | | Sev2 | 4 – 24 時間 | 次回パッチリリース |
 | **Dedicated** | Sev1 | 30 分 – 12 時間 | [バックポート](https://docs.gitlab.com/policy/maintenance/#backporting-to-older-releases)を伴う次回パッチリリース（2〜4 週間） |
 | | Sev2 | 4 – 24 時間 | バックポートを伴う次回パッチリリース |
@@ -95,7 +94,7 @@ GitLab.com 上の Sev1 本番インシデントについては、[incident.io �
 - Self-Managed および Dedicated については、Sev1 は 12 時間以内、Sev2 は 24 時間以内に修正タイムラインを顧客に伝達してください。
 - Dedicated 顧客は 1 バージョン遅れで運用しており、バックポートは直近 2 マイナーバージョンに限定されます。
 
-## トラッキングダッシュボード
+## トラッキングダッシュボード {#tracking-dashboards}
 
 | トラッカー | リンク | 担当 |
 |---------|------|----------|
@@ -107,13 +106,13 @@ GitLab.com 上の Sev1 本番インシデントについては、[incident.io �
 | レイテンシ (Snowflake) | [Language server metrics](https://app.snowflake.com/ys68254/gitlab/#/language-server-metrics-dd7LWVgnL) | Engineering |
 | ツール呼び出しエラー率 | [Duo Workflow Service dashboard](https://dashboards.gitlab.net/d/duo-workflow-svc-main/duo-workflow-svc3a-overview) | Engineering |
 
-## Slack チャネル
+## Slack チャネル {#slack-channel}
 
-DAP に関するすべての問い合わせ — 質問、Issue トリアージ、ステータスアップデート — に向けた集約チャネルとして [`#f_duo-agent-platform`](https://gitlab.slack.com/archives/f_duo-agent-platform) を使ってください。
+DAP に関するすべての問い合わせ — 質問、Issue トリアージ、ステータスアップデート — に向けた集約チャネルとして [`#f_duo-agent-platform`](https://gitlab.slack.com/archives/f_duo-agent-platform)を使ってください。
 
 Issue 報告に `#building-on-duo-agent-platform`、`#usage-billing-help`、`#dap-customer-feedback`、または個々の AI グループチャネルは**使わないでください**。`#f_duo-agent-platform` へリダイレクトしてください。
 
-## 関連リソース
+## 関連リソース {#related-resources}
 
 - [Zendesk Internal Request Form](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783651259548) — Customer Support Internal Requests
 - [RFH プロセス](https://gitlab.com/gitlab-com/request-for-help/) — エンジニアリングへの Request for Help

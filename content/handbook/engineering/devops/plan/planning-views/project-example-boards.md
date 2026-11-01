@@ -1,14 +1,14 @@
 ---
 title: "保存済みビューのボード: プロジェクト例"
 upstream_path: /handbook/engineering/devops/plan/planning-views/project-example-boards/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T07:00:16+09:00"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T05:08:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T14:39:01+02:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
-## タイムライン
+## タイムライン {#timeline}
 
 ```mermaid
 gantt
@@ -38,9 +38,9 @@ gantt
     Post-GA follow-ups       :followups, 2026-06-26, 2026-08-14
 ```
 
-## ステージ
+## ステージ {#stages}
 
-認知的負荷を減らし、[最小限の価値ある変更](/handbook/values/#minimal-valuable-change-mvc)にスコープを絞り込むために、プロジェクトを時間制限のあるステージに分割します。これにより:
+私たちは、以下を実現するために、プロジェクトを期間の限られたステージに分割し、スコープを実行可能な最小限の変更に絞ります:
 
 - 認知的負荷が減少します — エンジニアはより小さな変更、より小さな要件のセット、そしてより少ない Issue に取り組みます。
 - プロジェクト管理が簡単になり、遅延を早期に発見できます — 小さなステージの方が追跡しやすく、遅れに気づきやすいです。
@@ -55,7 +55,7 @@ gantt
 | **GA 後のフォローアップ** | 初回リリース後に延期された機能、ユーザーフィードバック、コードとテストのクリーンアップ。GA から 1 〜 2 マイルストーン以内に完了する必要があります。判断に迷う場合はスコープ外に入れてください。 |
 | **スコープ外** | コミットなし。後で行われるか、再優先化されるか、クローズされる可能性があります。 |
 
-## エピックの構成
+## エピックの構成 {#epic-organization}
 
 ```plain
 Lifecycle Boards (top-level epic)

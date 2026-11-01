@@ -1,37 +1,37 @@
 ---
-title: "Delivery ADR 001: 新コンポーネントはdev.gitlab.orgではなくセキュリティミラーを使用する"
+title: "Delivery ADR 001: 新コンポーネントは dev.gitlab.org ではなくセキュリティミラーを使用する"
 owning-stage: "~group::release-and-deploy"
 toc_hide: true
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/decisions/001_build_mirror_separation/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T04:36:39+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-22T13:35:43+00:00"
+lastmod: "2026-10-29T12:50:31+11:00"
 ---
 
-## 背景
+## 背景 {#context}
 
 GitLab はかつて、専用の独立した GitLab インスタンス（[dev.gitlab.org](https://dev.gitlab.org)）からリリースアーティファクトをビルドして公開してきました。これにより GitLab.com とは区別されたコントロールプレーン境界が確保され、GitLab.com の障害時にはフォールバックとして機能していました。
 
-GitLab がよりモジュール化されたリリースアーキテクチャへと移行するにあたり、新しいサービスがこの独立したインスタンスを引き続き使用しなければならないのか、あるいは GitLab.com 上のセキュリティミラーを代わりに使用できるのかという問いが生じました。議論の全容は [gitlab-com/gl-infra/delivery#21976](https://gitlab.com/gitlab-com/gl-infra/delivery/-/work_items/21976) に記録されています。
+GitLab がよりモジュール化されたリリースアーキテクチャへと移行するにあたり、新しいサービスがこの独立したインスタンスを引き続き使用しなければならないのか、あるいは GitLab.com 上のセキュリティミラーを代わりに使用できるのかという問いが生じました。議論の全容は [gitlab-com/gl-infra/delivery#21976](https://gitlab.com/gitlab-com/gl-infra/delivery/-/work_items/21976)に記録されています。
 
 核心的なコンプライアンス上の問いは、SOC 2・FedRAMP・SLSA および関連フレームワークがビルド用に独立した GitLab インスタンスを要求するのか、それともビルドインフラと本番環境の間の論理的分離を要求するのか、という点でした。
 
-Security および Compliance（[@madlake](https://gitlab.com/madlake)・[@jhebden](https://gitlab.com/jhebden)）との協議の結果：
+Security および Compliance（[@madlake](https://gitlab.com/madlake)・[@ranehebden](https://gitlab.com/ranehebden)）との協議の結果：
 
 - いかなるコンプライアンスフレームワークも独立した GitLab インスタンスを義務付けていません。要件はソフトウェアのビルド場所と本番環境での実行場所の間の**論理的分離**です。
 - GitLab CI ランナーは GitLab.com のアプリケーションサーバーとは別のコンピュートインフラ上で実行されます。この専用ランナーフリートがコンプライアンス上の「ビルドインフラ」を構成します。
 - セキュリティミラーは、Canonical プロジェクトとは独立して監査可能な独自のアクセス制限モデルで運営されています。そこからトリガーされたビルドはそのコンテキストにスコープされます。
 - この組み合わせ——本番環境外の専用ランナーがアクセス制御されたセキュリティミラーからトリガーされる——は、SOC 2（CC8.1、CC6.1、CC6.6）、FedRAMP、および SLSA L2+ の論理的分離要件を満たします。
 
-## 決定
+## 決定 {#decision}
 
 **新しいモジュール型サービスおよびコンポーネントは dev.gitlab.org を使用する必要はありません。** これらは GitLab.com 上のセキュリティミラーから、専用 CI ランナーフリートを使用してリリースアーティファクトをビルドおよび公開します。
 
 dev.gitlab.org を使用する既存のプロセスは変更なく継続し、より広範なリリースアーキテクチャの進化に合わせて段階的に移行されます。この決定は既存プロセスに影響しません。
 
-## 結果
+## 結果 {#consequences}
 
 - 新しいコンポーネントはよりシンプルでメンテナンス負荷の低いビルドパスを持ちます。新しいサービスには dev.gitlab.org へのリポジトリミラーリングは不要です。
 - ビルドインフラと本番環境の間の論理的分離が維持され、監査可能です。

@@ -1,58 +1,58 @@
 ---
 title: CPO シャドウプログラム
 upstream_path: /handbook/product/product-leaders/cpo-shadow-program/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
+translated_at: "2026-11-01T04:40:59+00:00"
 translator: claude
 stale: false
-lastmod: "2025-07-04T11:34:00-07:00"
+lastmod: "2026-10-30T14:17:26-04:00"
 ---
 
 {{% include "includes/product/product-handbook-links.md" %}}
 
-## 概要
+## 概要 {#overview}
 
-CPO シャドウプログラムは、Product 部門のチームメンバーが、1〜2 週間の指定された期間、順番に Chief Product Officer (CPO) をシャドウする取り組みです。CPO シャドウの役割を担うチームメンバーは、CPO とともにすべての顧客対応ミーティングに参加します。これは、CPO シャドウが顧客との会話についてより深い洞察を得たり、会社のより広範な戦略とビジョンを提示する方法を理解したり、[Executive Sponsor](/handbook/sales/field-operations/field-enablement/executive-sponsor-program/) として既存および将来の顧客をサポートする CPO の役割についてより深く理解する機会となります。
+CPO シャドウプログラムは、Product 部門のチームメンバーが、1〜2 週間の指定された期間、順番に Chief Product Officer (CPO) をシャドウする取り組みです。CPO シャドウの役割を担うチームメンバーは、CPO とともにすべての顧客対応ミーティングに参加します。これは、CPO シャドウが顧客との会話についてより深い洞察を得たり、会社のより広範な戦略とビジョンを提示する方法を理解したり、[Executive Sponsor](/handbook/sales/field-operations/field-enablement/executive-sponsor-program/)として既存および将来の顧客をサポートする CPO の役割についてより深く理解する機会となります。
 
-[「顧客のための結果」](/handbook/values/#results) という当社の価値観に沿って、Product 部門が顧客とつながり、彼らの痛みのポイントをよりよく理解することは非常に重要だと考えています。CPO シャドウプログラムは、まさにこの理由のために顧客対応のインタラクションに重点を置いています。
+「顧客のための結果」 という当社の価値観に沿って、Product 部門が顧客とつながり、彼らの痛みのポイントをよりよく理解することは非常に重要だと考えています。CPO シャドウプログラムは、まさにこの理由のために顧客対応のインタラクションに重点を置いています。
 
 このプログラムは顧客とのミーティングに重点を置いているため、参加には旅行が必要です。
 
-## 期待されること
+## 期待されること {#what-to-expect}
 
 CPO シャドウとして、あなたは以下を行います。
 
 * 将来および既存の顧客とのミーティングのために CPO と旅行する。これには以下が含まれます。
-  * CPO が [Executive Sponsor](/handbook/sales/field-operations/field-enablement/executive-sponsor-program/) を務める顧客
-  * 将来の潜在的な顧客とのミーティングでセールスのディスカバリーを支援
+  * CPO が [Executive Sponsor](/handbook/sales/field-operations/field-enablement/executive-sponsor-program/)を務める顧客
+  * 将来の潜在的な顧客とのミーティングで Sales のディスカバリーを支援
   * 主要な顧客との四半期ビジネスレビュー (QBR)
 * プレゼンテーションを含む顧客ミーティング用のサポート資料の準備や、その他の必要なリソースの支援
 * ミーティングノートと関連するアクションアイテムの記録
   * Product チームメンバーと顧客にフォローアップして、関連するアクションアイテムがタイムリーに処理されることを確認
-  * セールスがアクションアイテムの正しいオーナーを特定するのを支援
+  * Sales がアクションアイテムの正しいオーナーを特定するのを支援
 * 製品ドメインと専門知識に関わるとき、顧客の質問に答え、対話する
-* 顧客およびセールス組織のメンバーとの関係を構築する
+* 顧客および Sales 組織のメンバーとの関係を構築する
 
-## これに含まれないこと
+## これに含まれないこと {#what-this-is-not}
 
 CPO シャドウプログラムは、パフォーマンス評価でも昇進への次のステップでもありません。CPO シャドウになることは、昇進や昇給を得るために必要ではなく、多様な応募者には異なる資格があるため、昇進や昇給の考慮要因になるべきではありません。
 
-## プログラムの目標
+## プログラムの目標 {#program-goals}
 
 * Product 部門のメンバーがより大きなコンテキストで運用できるようにする
-* セールスをサポートすることで GitLab の成功に貢献する
+* Sales をサポートすることで GitLab の成功に貢献する
 * CPO がアクションアイテムに対応できるようにする
-* Product 部門のメンバーとセールス組織との連携を強化する
+* Product 部門のメンバーと Sales 組織との連携を強化する
 
-## 資格
+## 資格 {#eligibility}
 
 GitLab 内で計画が最大の影響を達成することを確保するために、Product 部門のすべてのメンバーが応募する資格があります。プログラムに応募する前にマネージャーに確認してください。
 
-## 応募方法
+## 応募方法 {#how-to-apply}
 
 CPO シャドウプログラムは、各資格のあるチームメンバーが参加する機会を持つローテーション制でスケジュールされます。スケジュールは CPO の EBA によって管理され、シャドウイング期間のタイミングを調整するためにあなたとマネージャーと協力します。
 
-* [このテンプレート](https://gitlab.com/gitlab-com/product/-/issues/new?issuable_template=CPO-Shadow-Program) を使用して Issue を作成し、Issue の説明に以下が含まれていることを確認してください。
+* [このテンプレート](https://gitlab.com/gitlab-com/product/-/issues/new?issuable_template=CPO-Shadow-Program)を使用して Issue を作成し、Issue の説明に以下が含まれていることを確認してください。
   * プログラムに対する関心と資格の簡潔な要約を提供する
   * CPO シャドウプログラムへの参加が、あなたのプロフェッショナル開発目標とどのように整合しているか、そしてあなたと組織にどのような利益をもたらすかを説明する
   * 1〜2 週間のシャドウイング期間に対応するための可用性と柔軟性を示す
