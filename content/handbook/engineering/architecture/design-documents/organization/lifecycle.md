@@ -8,39 +8,39 @@ dris: [ "@rymai" ]
 owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/organization/lifecycle/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_path: "/handbook/engineering/architecture/design-documents/organization/lifecycle/"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:11:17+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-13T18:04:18+02:00"
+lastmod: "2026-11-02T17:39:47+05:30"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
 
-## 概要
+## 概要 {#summary}
 
 Organization は 5 つの状態を遷移します: `unconfirmed` → `confirmed` → `active` → `soft_deleted` → `deletion_in_progress`。オーナーは `active` な Organization をソフト削除でき (UI と public API から非表示になる)、復元することができます。`soft_deleted` な Organization のハード削除へのエスカレーションができるのはインスタンス管理者のみで、ハード削除は取り消し不可能です。すべての遷移は `organization_details` の JSONB カラムに監査記録されます。
 
 私たちは [`state_machine` gem](https://github.com/state-machines/state_machines) を使用し、`Gitlab::TenantContainerLifecycle::Stateful` モジュールを介して `Namespaces::Stateful` と低レベルのインフラを共有しています。根拠については [ADR 009](decisions/009_state_machine.md) を参照してください。
 
-## ゴールと非ゴール
+## ゴールと非ゴール {#goals-and-non-goals}
 
 ゴール:
 
 - 明示的に許可された遷移を持つ、マシンによって強制されるライフサイクル。
 - Organization と一緒に格納される、すべての遷移のイミュータブルな監査証跡。
 - オーナー向けには取り消し可能なソフト削除、法務/GDPR フォローアップ向けには管理者ゲート付きのハード削除。
-- 重複を避けるための、namespace のステートマシンとのインフラ共有。
+- 重複を避けるための、名前空間のステートマシンとのインフラ共有。
 
 非ゴール:
 
-- アーカイブ (namespace の概念)。
+- アーカイブ (名前空間の概念)。
 - セル間転送。
 - 状態の継承 — Organization はルートです。
 
-## ステート図
+## ステート図 {#state-diagram}
 
 ```mermaid
 stateDiagram-v2
@@ -74,7 +74,7 @@ stateDiagram-v2
 
 整数値は追加のみ可能で、ライフサイクル順ではなく導入順を反映しています。
 
-### 遷移
+### 遷移 {#transitions}
 
 | イベント | 元 → 先 | 必須引数 |
 |-------|-----------------|--------------------|
@@ -88,7 +88,7 @@ stateDiagram-v2
 
 `soft_delete`、`restore`、`hard_delete` の認可は [サービス層](#service-entry-points) で強制されます。ステートマシンは `transition_user` が指定されていることのみをチェックします。
 
-## データモデル
+## データモデル {#data-model}
 
 ```sql
 organizations
@@ -117,12 +117,12 @@ organization_details
 
 フィールドは `jsonb_accessor` を介して `OrganizationDetail` 上の型付きアクセサとして公開されます。
 
-## 新しい状態や遷移を追加する
+## 新しい状態や遷移を追加する {#adding-a-new-state-or-transition}
 
 ステートマシンの変更は 2 つのリポジトリにまたがります:
 
-1. `gitlab-org/gitlab` 内で、単一の MR にて: `Organizations::Stateful` (state enum、`state_machine` ブロック、ガード、コールバック) **および** 新しい状態がメタデータフィールドを追加する場合は `organization_detail_state_metadata.json`。スキーマとコードは同時にマージする必要があります — そうしないと `additionalProperties: false` によって本番で保存が失敗します。
-2. `gitlab-com/content-sites/handbook` (このリポジトリ) 内で: このブループリント — 状態テーブル、遷移テーブル、Future Work テーブル。
+1. `gitlab-org/gitlab` 内で、単一の MR にて: `Organizations::Stateful` (状態の列挙型、`state_machine` ブロック、ガード、コールバック) **および** 新しい状態がメタデータフィールドを追加する場合は `organization_detail_state_metadata.json`。スキーマとコードは同時にマージする必要があります — そうしないと `additionalProperties: false` によって本番で保存が失敗します。
+2. `gitlab-com/content-sites/handbook` (このリポジトリ) 内で: このブループリント — 状態テーブル、遷移テーブル、今後の作業のテーブル。
 
 2 つの MR をクロスリンクし、同時にマージしてください。
 
@@ -149,17 +149,17 @@ organization_details
 - `SoftDeleteService` は Organization が空である (グループもプロジェクトもない) ことを要求します — ソフト削除は非表示にするだけで、可逆です。
 - `HardDeleteService` は成功時にバックグラウンドのハード削除ワーカーをエンキューします。ワーカーが行の破棄を実行します。ハード削除は法務/GDPR フォローアップのためのもので、標準の UI には公開されていません。
 
-## エラー処理
+## エラー処理 {#error-handling}
 
 遷移が失敗した場合 (ガードが `false` を返した場合):
 
-- `update_state_metadata_on_failure` がエラーを `state_metadata['last_error']` に書き込み、detail レコードを保存します。
+- `update_state_metadata_on_failure` がエラーを `state_metadata['last_error']` に書き込み、詳細レコードを保存します。
 - `log_transition_failure` が構造化エラーログを出力します。
 - `organizations.state` は失敗時に **絶対に** 変更されません。
 
 ハード削除ワーカーが途中で失敗した場合、Organization は `last_error` が設定された状態で `deletion_in_progress` のままになります。リカバリは、ステートマシンの後方遷移ではなく、冪等なワーカーを再実行することによって行います。必要であれば、専用のリカバリ遷移を後で追加できます。
 
-## 今後の作業
+## 今後の作業 {#future-work}
 
 ステートマシンは整備されていますが、サービスと API サーフェスはまだ作業が必要です:
 
@@ -173,23 +173,23 @@ organization_details
 
 「リネーム保留」の行は、もともと `schedule_deletion` / `cancel_deletion` / `start_deletion` を中心に組み立てられていた Issue で、soft-delete / restore / hard-delete の命名に再スコープが必要です。`soft_deleted` な Organization をオーナー以外から隠す Finder の変更は [#594312](https://gitlab.com/gitlab-org/gitlab/-/work_items/594312) で追跡されています。
 
-## Organization Isolation との関係
+## Organization の隔離との関係 {#relationship-with-organization-isolation}
 
-ライフサイクルと [Isolation](isolation.md) は直交します。ライフサイクルは *「この Organization は運用可能か?」* に答え、isolation は *「データ境界がどのくらい厳格に強制されているか?」* に答えます。これらはステートマシンを共有せず、isolation フラグはソフト削除とは独立に設定できます。
+ライフサイクルと [隔離](isolation.md)は直交します。ライフサイクルは *「この Organization は運用可能か?」* に答え、隔離は *「データ境界がどのくらい厳格に強制されているか?」* に答えます。これらはステートマシンを共有せず、隔離フラグはソフト削除とは独立に設定できます。
 
-1 つだけ依存関係があります: 最初の isolation ステップ (`isolation_desired`) は Organization が `active` であることを要求します。`unconfirmed` または `confirmed` で isolation をトリガーするのは時期尚早です。
+1 つだけ依存関係があります。要求済みの隔離には、Organization が `active` であることが必要です。[隔離の状態](isolation.md#isolation-states)を参照してください。`unconfirmed` または `confirmed` で隔離を要求するのは時期尚早です。
 
-## 未解決の質問
+## 未解決の質問 {#open-questions}
 
-### 並行性とロック
+### 並行性とロック {#concurrency-and-locking}
 
 2 人のアクターが同じ Organization を同時に遷移させようとする可能性があります — 例えば、オーナーが復元しようとし、管理者がハード削除しようとする場合などです。現在の方針: `lock_version` での楽観的ロックで十分。すべての遷移は人間が駆動するため、競合はまれであるべきです。実際の競合率が予想より高い場合は、カスタムの悲観的ロックヘルパーを追加するか、悲観的ロックをネイティブにサポートする [AASM](https://github.com/aasm/aasm#pessimistic-locking) に移行することができます。最初のユーザー向けサーフェスがリリースされる前に決定する必要があります。
 
-### `confirmed` 状態の失敗からのリカバリ
+### `confirmed` 状態の失敗からのリカバリ {#recovery-from-confirmed-state-failures}
 
 `confirm` 後にバックグラウンドプロビジョニングが失敗した場合、Organization は無期限に `confirmed` のままになります — `unconfirmed` に戻るパスも、`failed` 状態に進むパスもありません。冪等なリトライに頼るのか、それともリカバリ遷移が必要なのか? 未定。
 
-### ユーザーが作成する Organization の初期状態
+### ユーザーが作成する Organization の初期状態 {#initial-state-for-user-created-organizations}
 
 `unconfirmed` は、GitLab が顧客のために Organization をプロビジョニングするケースに適しています。エンドユーザーが自分で Organization を作成するようになると (GA 後)、確認するプロビジョニングステップはありません。2 つのオプション:
 
@@ -198,10 +198,10 @@ organization_details
 
 選択は、セルフサービスがリリースされる時点で確認に紐付けられている副作用 (もしあれば) が何かによります。[MR スレッド](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/19693#note_3328588386) を参照してください。
 
-### `soft_deleted` の保持期間
+### `soft_deleted` の保持期間 {#retention-window-for-soft_deleted}
 
 `restore` は無期限に利用可能とすべきか、それとも保持期間後に期限切れにすべき (その後は `hard_delete` のみが正当) か? 無期限が最もシンプルですが、固定期間 (例: 30 日) は以前の遅延削除動作と GDPR の期待に合致します。`restore` が UI 経由でリリースされる前に決定する必要があります。
 
-## 代替ソリューション
+## 代替ソリューション {#alternative-solutions}
 
 ステートマシンをよりシンプルなデータモデルよりも採用する根拠については [ADR 009](decisions/009_state_machine.md) を参照してください。

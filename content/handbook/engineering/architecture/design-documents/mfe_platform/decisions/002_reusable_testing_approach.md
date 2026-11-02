@@ -5,9 +5,9 @@ creation-date: "2026-10-07"
 authors: ["@fredericcaplette"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/decisions/002_reusable_testing_approach/
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-19T10:47:21+02:00"
-translated_at: "2026-10-20T12:33:40+00:00"
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+lastmod: "2026-11-02T09:37:44-05:00"
+translated_at: "2026-11-02T21:17:59+00:00"
 translator: codex
 stale: false
 ---
@@ -228,6 +228,51 @@ test('renders work item list', async ({ page }) => {
 
 最初はおそらく選択肢 1 で十分です。それ以上は、早い段階でツールを増やしすぎるリスクがあります。パッケージが連携して機能することをテストする責任は、GitLab モノリスが引き続き担えます。
 
+## パッケージでの利用方法 {#how-a-package-consumes-it}
+
+パッケージは `@gitlab/frontend-tests` を devDependency として追加し、[ADR 004](004_packages_group_and_shared_setup.md#how-do-we-keep-packages-in-sync) の他の共有設定と同じ方法で各層を接続します。基底の設定をインポートし、スプレッド構文で展開し、ローカルで上書きします。テストのセットアップからパッケージ内へコピーするものはありません。
+
+```json
+{
+  "scripts": {
+    "test": "rstest",
+    "fixtures:download": "frontend-tests fixtures download",
+    "test:integration": "rstest -c rstest.integration.config.ts",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@gitlab/frontend-tests": "^2.0.0"
+  }
+}
+```
+
+```ts
+// rstest.config.ts
+import { defineConfig } from '@rstest/core';
+import base from '@gitlab/frontend-tests/unit';
+
+export default defineConfig({
+  ...base,
+  include: ['src/**/*.spec.ts'],
+});
+```
+
+```ts
+// rstest.integration.config.ts
+import { defineConfig } from '@rstest/core';
+import base from '@gitlab/frontend-tests/integration';
+
+export default defineConfig({
+  ...base,
+  include: ['spec/integration/**/*.spec.ts'],
+  setupFiles: [...base.setupFiles, './spec/integration/setup.ts'],
+});
+```
+
+`@gitlab/frontend-tests/unit` は、jsdom 環境、Rspack アダプター、マウントヘルパーを提供します。`@gitlab/frontend-tests/integration` は、`tmp/fixtures/` 配下のフィクスチャから MSW サーバーを起動するセットアップファイルを追加します。このディレクトリには、`fixtures:download` がモノリスの最新の `master` パイプラインからフィクスチャを取得します。ダウンロードを別のスクリプトにしているのは意図的です。ローカルでは一度実行すれば、その後の `test:integration` はオフラインで高速に実行できます。`tmp/fixtures/` がない場合、セットアップファイルは実行すべきスクリプト名を示すメッセージを出して即座に失敗し、ディレクトリを削除すると必ず再取得されます。CI では、`ci/base.yml` が `test:integration` の前に必ず `fixtures:download` を実行するため、すべてのパイプラインが最新のフィクスチャに対してテストし、API の乖離を検出します。フィクスチャが存在していてもスクリプトは処理を省略しません。古いフィクスチャで気付かないままテストに合格するより、明示的に再取得するほうがよいためです。その後、上の各セクションで示したように、テストはその層からインポートします。たとえば、`@gitlab/frontend-tests/integration` から `getActiveVariant` と `loadFixturesMap` をインポートします。
+
+ADR 004 の `new-gitlab-module` は、パッケージを作成するときにこれら 3 つのファイルを書き出します。`@gitlab/frontend-config` の `ci/base.yml` は、`test` と `fixtures:download && test:integration` を別々のジョブとして実行します。
+
 ## 決定 {#decision}
 
 1. ユニットテスト環境に Rstest を使用し、インポートして使う共有の Rstest 設定を提供します。
@@ -242,6 +287,7 @@ test('renders work item list', async ({ page }) => {
 ## 結果 {#consequences}
 
 - `gitlab-org/frontend/tests` リポジトリに、既存の `integration/` に加え、`unit/`、`utils/`、場合によっては `e2e/` を設けます。
+- リポジトリを `gitlab-org/frontend/toolkit` に移動し、CI、ESLint、TSConfig のセットアップに `@gitlab/frontend-config` を使用します。[ADR 004](004_packages_group_and_shared_setup.md#migrating-the-existing-packages) を参照してください。npm パッケージ名は変更しません。
 - 各層をサブパス `@gitlab/frontend-tests/<layer>` として公開し、モノリス、MFE、LabBench モジュールが同様に利用します。
 - テストパッケージは、CI も含め、GraphQL スキーマ、Rails フィクスチャ、ホスト契約について、ビルド時にモノリスに依存します。
 - ホスト（モノリス、LabBench モジュール）は、公開済みパッケージに対するブラウザーのスモークテストを MFE ごとに 1 つ維持します。

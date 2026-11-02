@@ -1,23 +1,23 @@
 ---
 title: "インフラストラクチャプラットフォームのプロジェクト管理"
-upstream_path: /handbook/engineering/infrastructure-platforms/project-management/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-translated_at: "2026-10-10T06:53:00+00:00"
+upstream_path: "/handbook/engineering/infrastructure-platforms/project-management/"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:01:15+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-05T13:20:55-07:00"
+lastmod: "2026-11-02T18:46:48+01:00"
 ---
 
 ## プラットフォームにおけるプロジェクト管理 {#project-management-in-platforms}
 
 私たちは GitLab のエピックと Issue を使用して、作業の進捗とステータスを伝達しています。
-インフラプラットフォームのすべてのチームは、チームメンバーが必要に応じて異なるプロジェクトに貢献しやすいよう、これらのガイドラインに従っています。
+Infrastructure Platforms のすべてのチームは、チームメンバーが必要に応じて異なるプロジェクトに貢献しやすいよう、これらのガイドラインに従っています。
 
 ### プロジェクトはグランドレビューで毎週レビューされます {#projects-are-reviewed-weekly-in-the-grand-review}
 
 #### エピック更新タイムライン {#epic-update-timeline}
 
-インフラプラットフォームのエピックは[GitLab オペレーティングモデル（GOM）](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)と整合しています。多くのエピックは次のいずれかです:
+Infrastructure Platforms のエピックは[GitLab オペレーティングモデル（GOM）](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)と整合しています。多くのエピックは次のいずれかです:
 
 1. [グランドレビューエピック](https://gitlab.com/groups/gitlab-com/-/work_items/2115)の子エピック
 2. [オペレーティングモデルファンクショナルリードエピック](https://gitlab.com/groups/gitlab-operating-model/-/work_items?label_name%5B%5D=Owner%3A%3AInfrastructure%20Platforms&type%5B%5D=epic)にリンク済み
@@ -59,7 +59,7 @@ lastmod: "2026-10-05T13:20:55-07:00"
 ...
 ```
 
-GitLab Duo Agentic Chatは更新の開始点を生成するのに役立ちます:
+GitLab Duo Agentic Chat は更新の開始点を生成するのに役立ちます:
 
 1. エピックを読み込み、メンションされているステータスノートに移動します（有効化後）。
 2. サイドバーの「GitLab Duo Chat」をクリックし、エージェントモードを有効にします。
@@ -101,7 +101,7 @@ Give the status update in raw markdown (preformatted text) and do not use any ma
 
 エピックには常に以下のセクションが必要です:
 
-- 問題の声明
+- 問題の説明
 - プロジェクト完了に責任を持つ個人（DRI）
 - 定義された終了基準
 - 前のステータス更新とその他の記録すべき関連情報を含む開発ログ
@@ -135,7 +135,7 @@ DRI と EM は参加者リストを適切に更新する責任があります。
 ### これは Issue であるべきか、エピックであるべきか? {#should-this-be-an-issue-or-an-epic}
 
 私たちはエピックを使用して、特定の目標を達成したり特定のインパクトにつながる一連の作業を一つのテーマの下に統合できることを示します。
-エピックは 2 週間以上かかる可能性が高い、または既に 2 週間以上続いている任意の作業セットをカバーできます。
+エピックは 2 週間を超える可能性が高い、または既に 2 週間を超えて続いている任意の作業セットをカバーできます。
 その後、その目標に向けた進捗を定期的に報告し、完了したときに作業のインパクトを明確に示すことができます。
 
 ## 特定の Issue タイプ {#specific-issue-types}
@@ -150,7 +150,7 @@ DRI と EM は参加者リストを適切に更新する責任があります。
 
 ## ラベル {#labels}
 
-インフラプラットフォームチームは以下のラベルセットを使用しています:
+Infrastructure Platforms チームは以下のラベルセットを使用しています:
 
 | 説明 | ラベル |
 |-------------|--------|
@@ -183,7 +183,7 @@ Issue はすべての状態を経由する必要はないかもしれません�
 | 状態ラベル | 説明 |
 | ----------- | ----------- |
 | ![キャンセル](/images/engineering/infrastructure-platforms/project-management/label-cancelled.png) | Issue の作業は外部要因または Issue を解決しないという決定により放棄されます。このラベルを適用した後、Issue はクローズされます。 |
-| ![停滞](/images/engineering/infrastructure-platforms/project-management/label-stalled.png) | 作業は放棄されませんが、他の作業の優先度が高いです。このラベルを適用した後、チームのEngineering Managerが Issue でメンションされ、優先度を変更するかさらなる支援を見つけます。 |
+| ![停滞](/images/engineering/infrastructure-platforms/project-management/label-stalled.png) | 作業は放棄されませんが、他の作業の優先度が高いです。このラベルを適用した後、チームの Engineering Manager が Issue でメンションされ、優先度を変更するかさらなる支援を見つけます。 |
 | ![ブロック中](/images/engineering/infrastructure-platforms/project-management/label-blocked.png) | 作業は外部依存関係または他の外部要因によりブロックされています。可能であれば、[ブロッキング Issue](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)も設定する必要があります。このラベルを適用した後、ラベルを削除できるまでチームによって定期的にトリアージされます。 |
 
 ### カテゴリラベル {#category-labels}
@@ -206,13 +206,14 @@ Issue はすべての状態を経由する必要はないかもしれません�
 ## トリアージ Ops {#triage-ops}
 
 [gitlab-com/gl-infra](https://gitlab.com/gitlab-com/gl-infra) 配下のラベリングとボット通知については、[gitlab-triage](https://gitlab.com/gitlab-org/ruby/gems/gitlab-triage)と [triage-ops](https://gitlab.com/gitlab-com/gl-infra/triage-ops/) プロジェクトを使用しています。
-ラベリング、SLO の適用、ワークフローラベル管理については、インフラプラットフォームのプロジェクトに対して均一に設定された共通ポリシーがあります。
+ラベリング、SLO の適用、ワークフローラベル管理については、Infrastructure, Platform のプロジェクトに一律に設定された共通ポリシーがあります。
+Infradev SLO は例外です。`gitlab-com/gl-infra` 全体で SLO を適用するのは、[gitlab-org/quality/triage-ops](https://gitlab.com/gitlab-org/quality/triage-ops)内の [infradev SLO ポリシー](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#infradev-slos)です。
 追加のポリシーを追加する方法の詳細については[プロジェクトの README.md](https://gitlab.com/gitlab-com/gl-infra/triage-ops/-/blob/master/README.md?ref_type=heads)を参照してください。
 
 ## レトロスペクティブ {#retrospectives}
 
 四半期末または大きな成果物の完了時に、チームはレトロスペクティブを実施して学びを記録する必要があります。
-レトロスペクティブに決まったフォーマットはありませんが、Engineering Managerは[GitLab レトロスペクティブガイドライン](/handbook/engineering/careers/management/group-retrospectives/)を把握しておく必要があります。
+レトロスペクティブに決まったフォーマットはありませんが、Engineering Manager は[GitLab レトロスペクティブガイドライン](/handbook/engineering/careers/management/group-retrospectives/)を把握しておく必要があります。
 レトロスペクティブ DRI はアクションのリストを特定し、Issue の説明のアクションサマリーセクションに統合します。
 
 アクションを特定するプロセス:

@@ -8,11 +8,11 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/decision_log/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T05:15:22+00:00"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:11:17+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T06:05:11+01:00"
+lastmod: "2026-11-02T11:02:28+11:00"
 ---
 
 SDD の詳細は、[Spec-Driven Development](_index.md)を参照してください。
@@ -80,6 +80,8 @@ API とモデルでは、決定が答える質問に `question` を使用しま�
 ## 可観測性 {#observability}
 
 内部イベントで、解決済みとしての決定の記録、未解決の決定の解決、意思決定ログのパネルのオープンを追跡します。解決イベントには、どのように決定したかを含めます。未解決の質問を作成しただけでは、解決済みの決定として集計しません（[マージリクエスト 261013](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/261013)）。
+
+未解決の決定の編集、アーカイブ、削除でもイベントを送信します。これらのイベントには、ワークアイテム、決定、リクエスト元（Web UI、API、または AI ワークフロー）を含めます（[マージリクエスト 263772](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263772)）。パネルの表示イベントには、ワークアイテム ID と、ディープリンクとヘッダーボタンのどちらからパネルを開いたかを含めます（[マージリクエスト 264363](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264363)）。
 
 ## 決定 {#decisions}
 

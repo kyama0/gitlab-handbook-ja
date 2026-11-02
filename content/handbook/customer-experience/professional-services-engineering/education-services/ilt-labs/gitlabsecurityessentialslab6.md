@@ -1,21 +1,21 @@
 ---
 title: "GitLab Security Essentials - ハンズオンラボ: スキャン実行ポリシーを使用したスキャンの有効化"
 description: "このハンズオンガイドは、GitLab プロジェクトでスキャン実行ポリシーを有効化して使用する方法を案内します。"
-upstream_path: /handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab6/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_path: "/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab6/"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:01:15+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-02T08:06:32-05:00"
 ---
 
 > 推定所要時間: 15 分
 
-## 目標
+## 目標 {#objectives}
 
 コンプライアンススキャンを使用すると、インスタンス、グループ、プロジェクトのマージリクエストとセキュリティスキャンを制御できます。このラボでは、グループレベルでセキュリティポリシーとマージリクエストポリシーを有効化する方法を示します。
 
-## タスク A. セキュリティポリシーのセットアップ
+## タスク A. セキュリティポリシーのセットアップ {#task-a-setting-up-a-security-policy}
 
 1. `My Test Group - XXXXX`（X はユーザー名に置き換えてください）というグループに移動します。
 
@@ -31,7 +31,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. **ポリシースコープ** には、**例外なくこのグループのすべてのプロジェクトに適用** を選択します。
 
-1. 設定タイプを `テンプレート` から `カスタム` に変更します。
+1. 設定タイプを `Template` から `Custom` に変更します。
 
 1. アクションの下で、スキャンが **SAST スキャン** を実行するように設定します。**Runner タグ** が **自動的に選択** に設定され、**セキュリティジョブテンプレート** が **デフォルト** に設定されていることを確認します。
 
@@ -41,7 +41,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. **マージ** を選択して設定を完了します。
 
-## タスク B. スキャン実行ポリシーの動作確認
+## タスク B. スキャン実行ポリシーの動作確認 {#task-b-scan-execution-policies-in-action}
 
 1. グループに移動します。
 
@@ -71,7 +71,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. パイプライン内のジョブを確認します。`.gitlab-ci.yml` 設定が存在しないにもかかわらず、このコミットに対して `SAST` スキャンが実行されていることに注目してください。これにより、グループ内のプロジェクトは `.gitlab-ci.yml` ファイルにまだ定義されていない場合でも、常にセキュリティスキャンが実行されます。
 
-## タスク C. マージリクエストポリシー
+## タスク C. マージリクエストポリシー {#task-c-merge-request-policies}
 
 セキュリティスキャンが整ったので、セキュリティ脆弱性を含むマージリクエストをブロックできることが理想的です。このセクションでは、この目標を達成するためのマージリクエストポリシーを作成します。
 
@@ -95,7 +95,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. **すべてのデフォルトブランチ** に対してスキャンを実行します。
 
-1. スキャンに **例外なし** で **任意の** 脆弱性が見つかることを指定します。
+1. スキャンを **No exceptions** に設定し、脆弱性の検出条件を **Any** に設定します。
 
 1. 重大度レベルを **すべての重大度レベル** に設定します。
 
@@ -111,7 +111,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. **マージ** を選択します。
 
-## タスク D. マージリクエストポリシーの動作確認
+## タスク D. マージリクエストポリシーの動作確認 {#task-d-merge-request-policies-in-action}
 
 1. グループに戻ります。
 
@@ -123,11 +123,17 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. ブランチ名を `test_policy` とし、**ブランチを作成** を選択します。
 
-1. **マージリクエストを作成** を選択します。
+1. 左サイドバーで **Code > Branches** を選択し、ブランチの一覧に戻ります。
 
-1. **ドラフトとしてマーク** のチェックを外し、**マージリクエストを作成** を選択します。
+1. 一覧で `test_policy` ブランチを探します。その行の右側で **New**（マージリクエストのアイコンが付いたボタン）を選択します。
 
-1. **コード > Web IDE で開く** を選択します。
+1. **New merge request** ページで **Mark as draft** のチェックを外し、**Create merge request** を選択します。
+
+1. マージリクエストのページで **Code > Open in Web IDE** を選択します。
+
+1. 変更を加える前に、`test_policy` ブランチで作業していることを確認します。現在のブランチ名は Web IDE の左下隅に表示されます。
+
+      > `main` と表示されている場合は、Web IDE を閉じ、`test_policy` のマージリクエストに戻って、そこから Web IDE を開きます。そうしないと、変更がマージリクエストのブランチではなく `main` にコミットされます。
 
 1. `main.py` ファイルを開き、以下のコードを追加します:
 
@@ -162,10 +168,10 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. パイプラインが完了するまで待ちます。完了したら、`Security policy violations have been resolved` というコメントに注目してください。
 
-## ラボガイド完了
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。このコースの他の[ラボガイド](/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials)を参照できます。
 
-## ご提案・改善点
+## ご提案・改善点 {#suggestions}
 
 このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

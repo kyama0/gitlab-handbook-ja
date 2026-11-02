@@ -1,9 +1,9 @@
 ---
 title: "インシデントレビュー"
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-review/"
-upstream_sha: "bc76a1a59f8b471f304263e712307581bdc7d128"
-lastmod: "2026-08-20T12:31:43-06:00"
-translated_at: "2026-09-04T22:10:05+09:00"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T18:46:48+01:00"
+translated_at: "2026-11-02T21:01:15+00:00"
 translator: "codex"
 stale: false
 ---
@@ -152,3 +152,5 @@ GitLab Dedicated の場合、外部 RCA はさらに [Dedicated の外部 RCA �
 ## レビューの完了に期待されるタイムライン {#timeline-that-we-expect-for-reviews-to-be-completed}
 
 インシデントレビューは、**インシデント解決後 5 営業日以内**に終了することが求められます。お客様は、Severity 1 のインシデントについて、インシデント解決後 **7 日以内**に[公開 RCA](#public-rca)が提供されることを期待できます。[社内では、私たちはより厳しい SLO を自らに課しています](https://internal.gitlab.com/handbook/engineering/infrastructure/rca-publication-slo/)。想定される完了日を把握してください。
+
+[triage-ops](https://gitlab.com/gitlab-com/gl-infra/triage-ops/)ボットは、`~incident-review` Issue の期日を自動的に設定し、変更されると元に戻します。合意済みの別の期日を維持するには、`~"automation:due-date-override"` ラベルを追加し、その理由と承認者を説明するコメントを追加します。

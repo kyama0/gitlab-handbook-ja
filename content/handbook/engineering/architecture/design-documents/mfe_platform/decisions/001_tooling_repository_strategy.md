@@ -4,9 +4,9 @@ creation-date: "2026-10-07"
 authors: ["@ntepluhina"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/decisions/001_tooling_repository_strategy/
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-09T13:14:58+02:00"
-translated_at: "2026-10-20T12:33:40+00:00"
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+lastmod: "2026-11-02T09:37:44-05:00"
+translated_at: "2026-11-02T21:17:59+00:00"
 translator: codex
 stale: false
 ---
@@ -87,6 +87,12 @@ Vitest のセットアップ、ビルドと公開のヘルパー）は、pnpm �
 変更が複数のパッケージにまたがることが多く、Renovate の
 連鎖のコストが、モノレポの CI の複雑さによるコストを上回ります。
 
+[ADR 004](004_packages_group_and_shared_setup.md#context) は、これを改めます。
+ツール設定は常に一緒に変更されるため、pnpm ワークスペースではなく、
+設定ごとに 1 つのサブパスエクスポートを持つ単一の
+パッケージ `@gitlab/frontend-config` として
+提供します。
+
 **独立したユーティリティパッケージ**（`@gitlab/frontend-utils`、
 `@gitlab/frontend-tests` など）は、**個別のリポジトリ**に残します。
 これらのパッケージは、
@@ -102,10 +108,14 @@ Vitest のセットアップ、ビルドと公開のヘルパー）は、pnpm �
 
 - UI Platform チームは、各パッケージをカバーする CODEOWNERS を設け、
   `gitlab-org/frontend/` 配下にツール用の単一のモノレポを作成します。
+  [ADR 004](004_packages_group_and_shared_setup.md#where-do-packages-live) によって置き換えられます。
+  `@gitlab/frontend-config` と独立したパッケージは、
+  `gitlab-org/frontend/toolkit` に置きます。
 - 独立したパッケージは、同じグループ配下に独自のリポジトリを維持します。
 - モノレポと独立したリポジトリの両方で、同じバージョン管理と
   公開の規約（changesets、npm publish、
-  利用側の Renovate）に従います。
+  利用側の Renovate）に従います。[ADR 004](004_packages_group_and_shared_setup.md#how-do-we-publish-packages)
+  が公開の承認条件、リリースの流れ、メンテナーモデルを定義します。
 
 ---
 

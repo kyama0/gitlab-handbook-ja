@@ -3,10 +3,10 @@ owning-stage: "~group::Networking & Incident Management"
 title: 'Kubernetes 上の HAProxy ADR 003：リリース構成'
 description: "Kubernetes 上に存在する HAProxy のリリース、各リリースのサイズ設定、実行するクラスターとノードプール。"
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/haproxy_kubernetes/decisions/003_release_topology/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-29T16:51:18Z"
-translated_at: "2026-11-01T18:20:37+00:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/haproxy_kubernetes/decisions/003_release_topology/"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T17:10:03Z"
+translated_at: "2026-11-02T21:22:20+00:00"
 translator: codex
 stale: false
 ---
@@ -121,3 +121,8 @@ kas のバックエンドは 1 つのリージョン ILB です。維持すべ�
 ### 最初からカスタムメトリクスを使用する {#custom-metrics-from-the-start}
 
 接続数に制約されるリリースに対して、`haproxy_frontend_current_sessions` を指標とする KEDA スケーラーを使用する方式です。クラスターではすでに KEDA が稼働しています。`gprd` で CPU では不十分だと判明する前に、スケーリング経路にメトリクスへの依存を追加することになるため、却下しました。不十分だと判明した場合は、KEDA が次のステップです。
+
+## 参考資料 {#references}
+
+- [GKE のカスタム ComputeClass](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes)
+- [GKE の容量バッファー](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/capacity-buffer)
