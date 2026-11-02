@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/readiness/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-30T06:05:11+01:00"
-translated_at: "2026-11-01T05:03:57+00:00"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T11:02:28+11:00"
+translated_at: "2026-11-02T21:11:17+00:00"
 translator: "codex"
 stale: false
 ---
@@ -38,7 +38,7 @@ SDD の詳細は、[Spec-Driven Development](_index.md)を参照してくださ�
 
 各回は並列に委任する設計ですが、実行環境が対応していない場合は順次実行に切り替えます。最初の評価が完了しなければ、スコアは生成しません。これらのスコアの上限は評価に影響しますが、ユーザーの実装権限には影響しません。
 
-スーパーバイザーは、影響の大きい順に、Markdown で推奨事項も記述します。実際に有用な推奨事項が少なすぎる場合は、一覧を埋めるために問題を作り上げることはせず、フィードバックを省略します。実装は、[Workplan のスコアリング設定](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/duo_workflow_service/agent_platform/v1/flows/configs/workplan/1.1.0.yml)にあります。さらなる簡素化は、[Issue 2913](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/work_items/2913)で追跡しています。
+スーパーバイザーは、影響の大きい順に、Markdown で推奨事項も記述します。推奨事項は最大 3 件とし、一覧を埋めるために問題を作り上げることはしません。ゲートが作動した場合のゲートによる修正事項と、検証者が確認した指摘は、ブロッキングとしてマークします。ブロッキングの項目を先に並べ、3 件に絞る際にはブロッキングでない項目から削り、軽微な短所は省きます。スコアリングを実行するたびにフィードバックを書き込み、実際に有用な推奨事項がない場合は空の文字列を使うため、新しいスコアは常に以前のフィードバックを置き換えます（[マージリクエスト 7554](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7554)）。実装は、[Workplan のスコアリング設定](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/duo_workflow_service/agent_platform/v1/flows/configs/workplan/1.1.0.yml)にあります。さらなる簡素化は、[Issue 2913](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/work_items/2913)で追跡しています。
 
 ## 算出 {#computation}
 
@@ -58,7 +58,7 @@ Implementation ウィジェットは、ゼロも含めた数値のスコアが�
 
 インジケーターバーは、0–100 の範囲に制限されたスコアに応じて伸びるため、スコアが 85 の場合と 100 の場合では見た目が異なります。レベル、色、ラベルには、引き続き上記のしきい値を適用します（[マージリクエスト 263153](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263153)）。
 
-**Readiness details** は、**Readiness** というタイトルのオーバーレイドロワーを開きます。タイトルは、どのスコア状態でも同じです。フィードバックがある場合は、ドロワーの本文で **How to improve readiness** という見出しの下に表示するため、100% の状態など、状態ごとの他のコンテンツを表示する余地を残せます（[マージリクエスト 263908](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263908)）。ドロワーは、表示の要求があった時点でレンダリング済みのフィードバックを取得し、準備状況のレベルはウィジェット内に維持します。ドロワーを開いても、ワークアイテムのサイズや URL は変わりません。閉じると、開くきっかけとなった要素にフォーカスを戻します（[マージリクエスト 259135](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259135)）。
+**Readiness details** は、**Readiness** というタイトルのオーバーレイドロワーを開きます。タイトルは、どのスコア状態でも同じです。フィードバックがある場合は、ドロワーの本文で **How to improve readiness** という見出しの下に表示するため、100% の状態など、状態ごとの他のコンテンツを表示する余地を残せます（[マージリクエスト 263908](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263908)）。ドロワーは独自のクエリでレンダリング済みのフィードバックを取得します。ドロワーを閉じている間はクエリを実行せず、その後はキャッシュから取得します。スコアが変わるか、Workplan の実行が完了するとフィードバックを再取得するため、ページを再読み込みしなくても最新のフィードバックをドロワーに表示します（[マージリクエスト 265399](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265399)、[マージリクエスト 265706](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265706)）。フィードバックの読み込み中は、ドロワーにスケルトンを表示します。読み込みに失敗すると、**Try again** を含むインラインエラーを表示します。準備状況の説明はドロワーのフッターに固定します（[マージリクエスト 264391](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264391)）。準備状況のレベルはウィジェット内に維持します。ドロワーを開いても、ワークアイテムのサイズや URL は変わりません。閉じると、開くきっかけとなった要素にフォーカスを戻します（[マージリクエスト 259135](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259135)）。
 
 スコアが存在しない場合、UI はまだ、評価中、失敗、キャンセル、未評価の状態を区別しません。専用の `readinessScoreStatus` フィールドが、[マージリクエスト 262079](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/262079)で提案されており、UI は [Issue 633076](https://gitlab.com/gitlab-org/gitlab/-/work_items/633076)で追跡しています。
 
@@ -77,6 +77,6 @@ Implementation ウィジェットは、ゼロも含めた数値のスコアが�
 ## 未解決の質問 {#open-questions}
 
 - 計画生成前にもスコアリングするかどうかと、計画の実行とは独立してスコアリングに対応する方法。
-- 準備状況が 100% のときの空のフィードバックの扱い（[Issue 633996](https://gitlab.com/gitlab-org/gitlab/-/work_items/633996)）。
+- フィードバックがないスコアの表示方法。スコアリング段階は空のフィードバックを書き込めるようになりましたが、ドロワーにはまだその場合の本文がありません（[Issue 633996](https://gitlab.com/gitlab-org/gitlab/-/work_items/633996)）。
 - 引き渡し前の警告に対するデフォルトのしきい値。
 - スコアの履歴を保存するか、現在のスコアのみを保存するか。

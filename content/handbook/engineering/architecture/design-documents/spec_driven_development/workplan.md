@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette", "@vanessaotto" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/workplan/"
-upstream_sha: "2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8"
-lastmod: "2026-10-20T13:32:50-04:00"
-translated_at: "2026-10-20T21:12:55Z"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T11:02:28+11:00"
+translated_at: "2026-11-02T21:11:17+00:00"
 translator: "codex"
 stale: false
 ---
@@ -57,7 +57,7 @@ Workplan は、MCP ワークアイテムツールを通じても読み書きで�
 
 ## ウィジェット {#widget}
 
-Implementation ウィジェットは、デフォルトでは非表示です。ユーザーが **Plan** を選択すると、ワークアイテムの AI 計画が有効になります。その後、ウィジェットには次のものを表示します。
+Implementation ウィジェットは、デフォルトでは非表示です。ユーザーが、ワークアイテムのヘッダーの最初のアクションである分割ボタン **Plan** を選択すると、ワークアイテムの AI 計画が有効になります。ドロップダウンの **Create workplan manually** は、生成を開始せずに計画を有効にし、Workplan エディターを開きます。この操作は **Plan** が無効な場合も利用できます（[マージリクエスト 264753](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264753)）。同じドロップダウンから直接実装に進めるようにする作業は、引き続き未完了です（[Issue 632233](https://gitlab.com/gitlab-org/gitlab/-/work_items/632233)）。計画が有効になった後、ウィジェットには次のものを表示します。
 
 - Workplan のステータス。未作成、ワークアイテムのレビュー中、生成中、入力待ち、レビュー準備完了、キャンセル、失敗のいずれかです。
 - スコアが存在する場合の[準備状況のレベル](readiness.md)。
@@ -79,7 +79,7 @@ Workplan はサイドパネルで開きます。ユーザーは、必要に応�
 1. **ライセンス対象機能**：Workplan は Premium と Ultimate ティアで利用でき、`ai_workflows` のライセンス対象機能を再利用します。
 1. **ワークアイテムタイプ**：Issue とタスクです。子タスクを持つ Issue も含みます。
 1. **ユーザーの権限**：Workplan の作成と編集には、ワークアイテムを更新する権限が必要です。生成時には CI フローの権限 `create_duo_workflow_for_ci` も確認し、現在は Developer 以上が必要です。フロントエンドとワークアイテムのミューテーションは、引き続き `update_work_item` を確認するため、アクションが表示されても、そのユーザーが実行できるとは限りません。生成、再開、実装の権限の整合は、[Issue 634208](https://gitlab.com/gitlab-org/gitlab/-/work_items/634208)で追跡しています。
-1. **Duo の利用可否**：Workplan の生成には、Duo Agent Platform と `workplan/v1` の基盤フローが利用可能である必要があります。基盤フローが利用できないときに **Plan** ボタンを無効にすることは、[Issue 629825](https://gitlab.com/gitlab-org/gitlab/-/work_items/629825)で予定しています。ボタンは、まだフローの利用可否を確認しません。
+1. **Duo の利用可否**：Workplan の生成には、Duo Agent Platform と `workplan/v1` の基盤フローが利用可能である必要があります。Workplan の生成が利用できない場合、**Plan** と、ウィジェットの **Generate**、**Continue**、**Try again**、**Regenerate workplan** の各アクションは無効になり、その理由を説明するポップオーバーを表示します。手動のアクションは引き続き利用できます（[Issue 629825](https://gitlab.com/gitlab-org/gitlab/-/work_items/629825)、[マージリクエスト 262899](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/262899)）。
 
 未完了のフォローアップは、次のとおりです。
 

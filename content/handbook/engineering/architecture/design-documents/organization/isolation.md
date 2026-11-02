@@ -8,61 +8,75 @@ approvers: [ "@alexpooley", "@dorrino" ]
 owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/organization/isolation/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:19:21+09:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/organization/isolation/"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:11:17+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T12:27:01+08:00"
+lastmod: "2026-11-02T17:39:47+05:30"
 ---
 
 このブループリントは、Organization が隔離されるための要件を詳述しています。
 Organization とは何かについての詳細は、[Organization](_index.md) を参照してください。
 
-隔離フラグは、[Organization Lifecycle](lifecycle.md) で説明されている Organization ライフサイクル (`unconfirmed`、`confirmed`、`active` など) に対して直交しており、1 つの依存関係があります。最初の隔離ステップ (`isolation_desired`) は組織が `active` であることを必要とします。
+隔離は、[隔離の状態](#isolation-states)で説明する 4 つの独立した事実から成ります。これらは、[Organization のライフサイクル](lifecycle.md)で説明されている Organization のライフサイクル（`unconfirmed`、`confirmed`、`active` など）とは直交していますが、1 つだけ依存関係があります。要求済みの隔離には、Organization が `active` であることが必要です。
 
-## 何を?
+## 何を? {#what}
 
-Organization は隔離できます。隔離とは、データと機能がその Organization の境界を越えることが決してできないことを意味します。非隔離はそれ自体で有効かつ恒久的な状態でもあります。[ADR 015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)を参照してください。
+Organization は確定済みの隔離に到達でき、その状態ではデータと機能がその Organization の境界内にとどまります。非隔離はそれ自体で有効かつ恒久的な状態でもあります。[ADR 015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)を参照してください。
 
 以下は、"Cell 1" と呼ばれる単一のインスタンス内の複数の Organization の図示です。
 
-![Organization Isolation](/images/engineering/architecture/design-documents/organization/diagrams/organization-isolation.drawio.png)
+![Organization の隔離](/images/engineering/architecture/design-documents/organization/diagrams/organization-isolation.drawio.png)
 
 GitLab の多くの機能はデータを互いにリンクできます。
-Organization 隔離によって許可されないものの例をいくつか挙げます:
+強制適用中の隔離がブロックするリンクの例をいくつか挙げます。
 
 1. [関連 Issue](https://docs.gitlab.com/ee/user/project/issues/related_issues.html): ユーザーは `Organization A` のプロジェクトの Issue を取り出し、それを `Organization B` のプロジェクトの別の Issue と関連付けることができません。
 1. [プロジェクト/グループをグループと共有](https://docs.gitlab.com/user/project/members/sharing_projects_groups/#invite-a-group-to-a-group): ユーザーは `Organization A` のグループまたはプロジェクトを `Organization B` の別のグループまたはプロジェクトと共有することが許可されません。
 1. [システムノート](https://docs.gitlab.com/ee/user/project/system_notes.html): `Organization B` の Issue のコメントで言及されても、`Organization A` の Issue にシステムノートは追加されません。
 
-## なぜ?
+## 隔離の状態 {#isolation-states}
+
+隔離は、要求済み、強制適用中、確定済み、検証済みという 4 つの独立した事実から成ります。[ADR 018: 隔離は 1 つではなく 4 つの事実である](decisions/018_isolation_is_four_facts.md)では、それぞれをルールの例とともに定義しています。各ルールは、単に「隔離」と言わず「強制適用中の隔離」とするなど、どの事実を参照するかを明示します。
+
+典型的な流れは次のとおりです。
+
+1. **プレビュー（任意）。** オーナーが隔離の強制適用を有効にします。
+   メンバーシップ、User コンテキスト、クエリのフィルタリングは変わりません。
+1. **要求。** 要求済みの隔離によって切り離し処理が始まり、隔離の強制適用が有効になるため、削除したリンクは削除されたままになります。
+1. **確定。** 切り離し処理が完了します。確定済みの隔離によって、Organization コンテキスト、排他的なメンバーシップ、Organization フィルターが適用されます。
+1. **検証。** バリデーターが確認を続けます。検証済みの隔離が失われた場合は、該当するリンクの修正が必要です。その間も確定済みの隔離は維持されます。
+
+以前のドキュメントの「隔離済み」は、確定済みの隔離と読み替えてください。
+
+## なぜ? {#why}
 
 Organization 隔離には 2 つの主要な目的があります:
 
 1. Organization のポータビリティ。
 2. 顧客データの分離。
 
-### Organization のポータビリティ
+### Organization のポータビリティ {#organization-portability}
 
-データと機能の周りに明確な境界を確立することで、Organization を自己完結型構造として管理できます。これにより、Organization は当社のさまざまな SaaS および Self Managed プラットフォーム間で、また Cell 全体で内部的にもポータブルになります。
+データと機能の周りに明確な境界を確立することで、Organization を自己完結型構造として管理できます。これにより、Organization は私たちのさまざまな SaaS および Self Managed プラットフォーム間で、また Cell 全体で内部的にもポータブルになります。
 
 Cell の場合、Organization 間のデータの関連付けは Cell 境界を越えることを意味する可能性があり、これは機能しません。
 
-![Broken Organization Isolation](/images/engineering/architecture/design-documents/organization/diagrams/organization-isolation-broken.drawio.png)
+![Organization の隔離の破綻](/images/engineering/architecture/design-documents/organization/diagrams/organization-isolation-broken.drawio.png)
 
 今日、ユーザーが他の Organization のデータにリンクする Organization を作成することを許可した場合、Organization が移動されるとこれらのリンクは突然壊れます。
 このため、Organization を顧客に展開するまさに最初から、Organization が同じインスタンス上にある場合でも、Organization 境界を越えるリンクを作成することが不可能であることを確実にする必要があります。
 そうしないと、インスタンス間で移行できないさらに多くの混在した関連データを作成することになります。
 隔離の要件を満たさないことは、シャーディングキーとして実際に使用できない新しいトップレベルデータラッパー (Organization) を作成するリスクを意味します。
 
-### 顧客データの分離
+### 顧客データの分離 {#customer-data-segregation}
 
 GitLab.com では、共有データプールの一部ではない自分自身のプライベートなデータコレクションを持ちたいという顧客の需要があります。彼らは自分のデータと外部ユーザーの間にハードバウンダリを望み、また彼らの興味の外のデータに気を取られたくないと考えています。
 
 第二に、Self Managed および Dedicated プラットフォーム内でのマルチテナント機能の需要もあります。Organization 隔離により、これらのプラットフォームは同じインスタンス内で別個の GitLab データセグメントを運用できるようになります。
 
-## どのように?
+## どのように? {#how}
 
 複数の POC が実装されており、説明された隔離制約を強制する堅牢な開発者向けおよび顧客向け制約を GitLab アプリケーションおよびデータベースで提供する方法を示しています。
 これらは:
@@ -75,7 +89,7 @@ GitLab.com では、共有データプールの一部ではない自分自身の
 これは、最初のステップが、データベース内の任意のモデルまたは行の親 Organization を効率的に見つける標準的な方法を実装することであることを意味します。
 
 提案された解決策は、Cell ローカルスキーマ内のテーブル以外、データベース内のすべてのテーブルに、`projects`、`namespaces`、または `organizations` への参照である有効なシャーディングキーを含めることを確実にすることです。これは、すべての Organization 固有のデータが Organization に直接または間接に関連付けられることを意味します。
-最初は、すべてのものに `organization_id` を持たせることを強制することを検討しましたが、これは大規模な Organization を移行するのに高すぎると判断しました。
+最初は、すべてのものに `organization_id` を持たせることを強制することを検討しましたが、これは大規模な Organization を移行するのにコストが高すぎると判断しました。
 追加の利点は、テーブルの半数以上がすでにこれらの列のいずれかを持っていることです。
 さらに、トップレベルグループにデータを一貫して属性付けできない場合、トップレベルグループを新しい Organization に移動するのが安全かどうかを検証できません。
 
@@ -86,9 +100,9 @@ GitLab.com では、共有データプールの一部ではない自分自身の
 - 名前空間オーナーが新しい Organization に移行する前にいくつかのリンクを削除する必要がある。
 - 名前空間のセットがグループとして隔離されており、新しい Organization に一括して一緒に移動できる。
 
-## 詳細な手順
+## 詳細な手順 {#detailed-steps}
 
-### Organization 隔離 - フェーズ 1
+### Organization 隔離 - フェーズ 1 {#organization-isolation---phase-1}
 
 [Organization Isolation - Phase 1](https://gitlab.com/groups/gitlab-org/-/epics/11837) [ステータス: 完了]
 
@@ -96,19 +110,19 @@ GitLab.com では、共有データプールの一部ではない自分自身の
 1. `db/docs` でシャーディングキーを宣言する方法を追加し、すでにシャーディングキーを持つすべてのテーブルに対して自動的に値を取り込む。
 1. CI パイプラインおよび/または DB マイグレーションで、シャーディングキーのない新しいテーブルを作成することを不可能にする自動化を実装する。
 1. `db/docs` で人々が希望するシャーディングキーを宣言する方法、および移行元の親テーブルへのパスを実装する。これはシャーディングキーを持たないテーブルのために一時的にのみ必要とされる
-1. 自動化された方法でできる限り多くの「desired sharding key」を取り込もうとし、他のチームに MR を委譲する
-1. 残りの「desired sharding key」を手動で取り込むために他のチームに Issue を分散する
+1. 自動化された方法でできる限り多くの「必要なシャーディングキー」を取り込もうとし、他のチームに MR を委譲する
+1. 残りの「必要なシャーディングキー」を手動で取り込むために他のチームに Issue を分散する
 
-### Organization 隔離 - フェーズ 1.5
+### Organization 隔離 - フェーズ 1.5 {#organization-isolation---phase-15}
 
 [Organization Isolation - Phase 1.5](https://gitlab.com/groups/gitlab-org/-/epics/13678) - [ステータス: 進行中]
 
-1. 「desired sharding key」からシャーディングキーを取り込むためのテーブルのバックフィルマイグレーションの作成を手動で開始し、その後自動化する。
+1. 「必要なシャーディングキー」からシャーディングキーを取り込むためのテーブルのバックフィルマイグレーションの作成を手動で開始し、その後自動化する。
 1. シャーディングキーのない約 300 テーブルの移行が完了するのを待つ:
    1. Tenant Scale チームが最初のいくつかのテーブルを移行します。
    1. 進捗状況を示すダッシュボードを構築し、自動的に推論できるシャーディングキーのための自動化された MR を作成し続け、自動的に推論できないすべてのシャーディングキーのために Issue を自動的に作成します
 
-### Organization 隔離 - フェーズ 2
+### Organization 隔離 - フェーズ 2 {#organization-isolation---phase-2}
 
 [Organization Isolation - Phase 2](https://gitlab.com/groups/gitlab-org/-/epics/11838) - [ステータス: 保留中]
 
@@ -117,7 +131,7 @@ GitLab.com では、共有データプールの一部ではない自分自身の
 1. すべての Cell ローカルテーブルのすべての既存のシャーディングキー列が、シャーディングキーとして信頼性をもって想定できることを検証します。これには、チームに Issue を割り当てて、これらの列が実際には適切でない別の目的に使用されていないことを確認する必要があります。
 1. ユーザーは単一の Organization にのみ属するようになります。
 
-### Organization 隔離 - フェーズ 3
+### Organization 隔離 - フェーズ 3 {#organization-isolation---phase-3}
 
 [Organization Isolation - Phase 3](https://gitlab.com/groups/gitlab-org/-/epics/11839) - [ステータス: 保留中]
 
@@ -129,25 +143,25 @@ GitLab.com では、共有データプールの一部ではない自分自身の
 
 この取り組みの実装は [#11670](https://gitlab.com/groups/gitlab-org/-/epics/11670) で追跡されます。
 
-## 検討された代替案
+## 検討された代替案 {#alternatives-considered}
 
-### Organization 間を越える必要があるデータをクラスタ全体のテーブルに追加する
+### Organization 間を越える必要があるデータをクラスタ全体のテーブルに追加する {#add-any-data-that-need-to-cross-organizations-to-cluster-wide-tables}
 
 Cells アーキテクチャでクラスタレベルで一部のデータを持つ予定です (たとえばユーザー)。したがって、Organization 境界を越える必要があるデータをクラスタ全体にすることができ、これで問題が解決すると考えるのは合理的かもしれません。
 
 これは限定された機能セットでオプションになる可能性があり、一部の重要なワークフローには必要であることが判明する可能性があります。
 しかし、これはデフォルトオプションになるべきではありません。なぜなら、これは最終的に Cells アーキテクチャが水平スケーリング目標を達成しないことにつながるからです。
-[グループとグループを共有](https://docs.gitlab.com/user/project/members/sharing_projects_groups/#invite-a-group-to-a-group) などの機能は、スケーラビリティに関して当社のアプリケーションで最もパフォーマンスの悪い機能のいくつかと非常に密接に結びついています。
+[グループとグループを共有](https://docs.gitlab.com/user/project/members/sharing_projects_groups/#invite-a-group-to-a-group) などの機能は、スケーラビリティに関して私たちのアプリケーションで最もパフォーマンスの悪い機能のいくつかと非常に密接に結びついています。
 私たちは、データベースを Cell に分割することで、より多くのスケーリングヘッドルームを解除し、これらの機能をサポートすることに関連する問題を減らすことを期待しています。
 
-### 何もせず、これらの異常を許容できるエッジケースとして扱う
+### 何もせず、これらの異常を許容できるエッジケースとして扱う {#do-nothing-and-treat-these-anomalies-as-an-acceptable-edge-case}
 
 このアイデアは深く検討されていませんが、これらの異常は Organization を移動する際にデータ損失として現れるため拒否されます。
 データ損失は、特に顧客がサーバー間で移動することにオプトインしていないときには、非常に深刻な種類のバグです。
 
-### これらの問題を機能ごとに解決する
+### これらの問題を機能ごとに解決する {#solve-these-problems-feature-by-feature}
 
-これは、たとえば、異なる Organization のプロジェクト間で Issue リンクを追加することをユーザーが防止するアプリケーションルールを実装することで行うことができます。
+これは、たとえば、異なる Organization のプロジェクト間でユーザーが Issue リンクを追加するのを防ぐ、アプリケーションルールを実装することで行えます。
 チームに尋ねることでこのような機能をすべて見つける必要があり、それらをすべて特別なケースのビジネスルールとして修正する必要があります。
 
 これは実行可能で堅牢性が低いオプションかもしれませんが、システムにあまり自信を持たせてくれません。
@@ -156,7 +170,7 @@ Cells アーキテクチャでクラスタレベルで一部のデータを持�
 ここでのもう 1 つの課題は、隔離制約に自信がない場合、関連のないさまざまなバグをデータ損失の可能性に起因させる可能性があることです。
 そのため、関連のないあらゆる種類のバグをデバッグするウサギの穴になる可能性があります。
 
-## 隔離されているがクラスタ全体で一意
+## 隔離されているがクラスタ全体で一意 {#isolated-but-cluster-wide-unique}
 
 データが Organization 間で隔離されている場合でも、後方互換性の理由でクラスタ全体で一意である必要があるデータが一部存在します。
 

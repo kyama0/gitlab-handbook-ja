@@ -5,30 +5,30 @@ aliases:
   - /handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/
   - /handbook/engineering/ai/ai-clients/duo-cli/
 upstream_path: /handbook/engineering/ai/ai-clients/developer-clients/duo-cli/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-lastmod: "2026-09-25T17:24:03-04:00"
-translated_at: "2026-09-26T21:10:36+00:00"
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+lastmod: "2026-11-02T11:19:09Z"
+translated_at: "2026-11-02T20:58:49.462247+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
 Duo CLI 機能チームは、[Developer Clients グループ](/handbook/engineering/ai/ai-clients/developer-clients/)に属し、このグループは [AI Clients ステージ](/handbook/engineering/ai/ai-clients/)内にあります。
 
 共通の計画プロセス、ワークフローボード、便利なリンク、ダッシュボードについては、[Developer Clients グループのページ](/handbook/engineering/ai/ai-clients/developer-clients/)を参照してください。
 
-## 公開ドキュメント
+## 公開ドキュメント {#public-docs}
 
 [GitLab Duo CLI ドキュメント](https://docs.gitlab.com/user/gitlab_duo_cli/)
 
 ---
 
-## 👨‍💻 チームメンバー
+## 👨‍💻 チームメンバー {#-team-members}
 
-{{< group-by-slugs aelhusseiny tomasvik  elwyn-gitlab  mltheuser.gitlab ametke-jimenez andrei.zubov >}}
+{{< group-by-slugs aelhusseiny tomasvik  elwyn-gitlab  mltheuser.gitlab ametke-jimenez andrei.zubov alexandergolubev >}}
 
-### 安定したカウンターパート
+### 安定したカウンターパート {#stable-counterparts}
 
 以下の人々は、Duo CLI チームの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)です。
 
@@ -36,45 +36,45 @@ Duo CLI 機能チームは、[Developer Clients グループ](/handbook/engineer
 
 ---
 
-## 💬 Slack
+## 💬 Slack {#-slack}
 
 - **チームチャンネル：** [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
 
 ---
 
-## 💻 スコープ
+## 💻 スコープ {#-scope}
 
 Duo CLI チームは、AI を活用したコマンドラインインターフェースとして GitLab Duo CLI を開発することに注力しています。これにより、開発者は自然言語を使って GitLab の DevSecOps プラットフォームとやり取りできます。私たちの目標は、開発者が多くの時間を費やすターミナルに AI を活用した支援を直接届け、開発者のワークフローを効率化することです。
 
 ---
 
-## 🔗 進行中の作業、リソース、リンク
+## 🔗 進行中の作業、リソース、リンク {#-active-work-resources--links}
 
-### 開発リソース
+### 開発リソース {#development-resources}
 
 - **リポジトリ**： [GitLab Language Server — CLI パッケージ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/tree/main/packages/cli?ref_type=heads)
 - **Issue トラッカー**： [Duo CLI の進行中の作業](https://gitlab.com/groups/gitlab-org/-/boards/9839597?epic_id=3743089)
 - **エピック**： [Duo CLI 開発エピック](https://gitlab.com/groups/gitlab-org/-/epics/19070)
 
-### コミュニケーションチャンネル
+### コミュニケーションチャンネル {#communication-channels}
 
 - **Slack**： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
 - または、Duo CLI から [`/feedback`](https://docs.gitlab.com/user/gitlab_duo_cli/use/#slash-commands) コマンドを使用するだけで GitLab Issue を作成できます
 
-### Issue のラベル
+### Issue のラベル {#issues-labels}
 
 [AI Clients のラベル付けガイダンス](/handbook/engineering/ai/ai-clients/#-how-we-label-issues-and-merge-requests)を確認してください
 
 ---
 
-### はじめに
+### はじめに {#getting-started}
 
 [はじめにガイド](https://docs.gitlab.com/user/gitlab_duo_cli/#get-started)
 
 ベータ版の自動モードをテストするには、[Duo CLI 自動モード（ベータ版）](auto-mode/)を参照してください。
 
-### フィードバックを提供して Duo CLI の形成にご協力ください
+### フィードバックを提供して Duo CLI の形成にご協力ください {#help-us-shape-duo-cli-by-providing-feedback}
 
 私たちは、GitLab チームメンバーにとって CLI を効果的なものにするため、フィードバックを収集しています。次のような主要な開発ワークフローをテストしてください。
 

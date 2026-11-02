@@ -1,17 +1,17 @@
 ---
 title: "GitLab Security Essentials - ハンズオンラボ: 依存関係と IaC スキャン"
 description: "このハンズオンガイドは、コードで依存関係スキャンと IaC スキャンを使用するプロセスを案内します。"
-upstream_path: /handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab3/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_path: "/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab3/"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:01:15+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-02T08:08:58-05:00"
 ---
 
 > 推定所要時間: 15 分
 
-## タスク A. 依存関係と IaC の追加
+## タスク A. 依存関係と IaC の追加 {#task-a-add-dependencies-and-iac}
 
 初期プロジェクトが構築されたので、デプロイプロセスを開始したいと思います。プロジェクトに設定したい 2 つの領域があります。1 つ目はアプリケーションの依存関係、2 つ目はアプリケーションのデプロイ用のインフラストラクチャです。プロジェクトにこれらを設定しましょう。Python プロジェクトに依存関係を追加するには、以下の手順を実行します。
 
@@ -60,7 +60,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. **変更をコミット** を選択し、**現在の main ブランチにコミット** を選択したままにします。**変更をコミット** を選択します。
 
-## タスク B. 依存関係スキャンの追加
+## タスク B. 依存関係スキャンの追加 {#task-b-add-dependency-scanning}
 
 プロジェクトに依存関係が追加されたので、依存関係にセキュリティ脆弱性が含まれていないことを確認したいと思います。これを検証するには、プロジェクトに依存関係スキャンを追加します。
 
@@ -86,7 +86,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. 各脆弱性をクリックして検出結果を確認します。結果には、使用している requests ライブラリのバージョンにある様々な脆弱性が表示されます。`requirements.txt` ファイルでこれらの問題を修正しましょう。
 
-1. レポートで脆弱性を選択すると、各問題を修正するためのターゲットバージョン番号が表示されます。最初の脆弱性はバージョン 2.32.4 へのアップグレードを推奨し、2 番目の脆弱性はバージョン 2.32.0 以上へのアップグレードを推奨し、3 番目の脆弱性はバージョン 2.31.0 以上へのアップグレードを推奨しています。これから、2.32.4 がすべての脆弱性を修正することがわかります。このバージョンを設定するには、既存の `requirements.txt` ファイルを編集します。`requests` のインポートを以下のように更新します:
+1. レポートで脆弱性を選択すると、各問題を修正するためのターゲットバージョン番号が表示されます。最初の脆弱性はバージョン 2.33.0 へのアップグレードを推奨し、2 番目の脆弱性はバージョン 2.32.0 以上へのアップグレードを推奨し、3 番目の脆弱性はバージョン 2.31.0 以上へのアップグレードを推奨しています。これから、2.33.0 がすべての脆弱性を修正することがわかります。このバージョンを設定するには、既存の `requirements.txt` ファイルを編集します。`requests` のインポートを以下のように更新します:
 
       ```python
       #
@@ -95,7 +95,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
       #
       #    pip-compile --output-file=requirements.txt requirements.in
       #
-      requests==2.32.4
+      requests==2.33.0
       ...
       ```
 
@@ -105,7 +105,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. 記載されているコンポーネントとバージョンを確認します。各依存関係のライセンスも表示されていることに注目してください。
 
-## タスク C. IaC スキャンの追加
+## タスク C. IaC スキャンの追加 {#task-c-add-iac-scanning}
 
 プロジェクトに IaC スキャンを追加するには:
 
@@ -114,8 +114,8 @@ lastmod: "2026-09-24T21:34:11+02:00"
 1. `include` セクションに以下のコンポーネントを追加します:
 
       ```yml
-          - component: ilt.gitlabtraining.cloud/components/sast/iac-sast@~latest
-        ```
+        - component: ilt.gitlabtraining.cloud/components/sast/iac-sast@~latest
+      ```
 
 1. **変更をコミット** を選択します。
 
@@ -127,10 +127,10 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. IaC スキャンの結果を確認します。**脆弱性を検索またはフィルター...** バーの **スキャナー** フィルターオプションを選択し、**kics** を選択することでフィルタリングできます。これらの結果は SAST レポートタイプとしてラベル付けされます。
 
-## ラボガイド完了
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。このコースの他の[ラボガイド](/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials)を参照できます。
 
-## ご提案・改善点
+## ご提案・改善点 {#suggestions}
 
 このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

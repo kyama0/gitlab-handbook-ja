@@ -4,9 +4,9 @@ title: 'Kubernetes 上の HAProxy ADR 001：トラフィックの切り替え'
 description: "各エントリーポイントで HAProxy の VM から Pod にトラフィックを移す方法と、それぞれの移行を元に戻す方法。"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/haproxy_kubernetes/decisions/001_traffic_cutover/"
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-27T18:33:27Z"
-translated_at: "2026-11-01T14:21:31+00:00"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T17:10:03Z"
+translated_at: "2026-11-02T21:22:20+00:00"
 translator: codex
 stale: false
 ---
@@ -562,3 +562,8 @@ DNS を通じて `registry.gitlab.com` や `*.gitlab.io` を新しいアドレ�
 完全な一覧が不明で、既存の名前が
 証明書やファイアウォールルールに含まれているため、採用しません。2 つ目の A レコードなら、
 クライアントに一切手を加えずに、すべてを移せます。
+
+## 参考資料 {#references}
+
+- [GKE LoadBalancer Service：ターゲットプールとバックエンドサービス](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/service-load-balancer)
+- [Private Service Connect](https://docs.cloud.google.com/vpc/docs/private-service-connect)

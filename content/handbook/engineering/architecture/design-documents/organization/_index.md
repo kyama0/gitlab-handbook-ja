@@ -10,12 +10,12 @@ owning-stage: "~devops::tenant scale"
 group: Organizations
 participating-stages: []
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/organization/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T08:49:13.515679+00:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/organization/"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:11:17+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-27T19:36:56+13:00"
+lastmod: "2026-11-02T17:39:47+05:30"
 ---
 
 {{< engineering/design-document-header >}}
@@ -77,6 +77,8 @@ GitLab.com は今後、プライベートなエンタープライズ Organizatio
 
 Organization は隔離できます。隔離とは、データと機能がその Organization の境界を越えられないことを意味します。これについては [Organization の隔離](isolation.md)で詳しく説明しています。
 
+隔離は、要求済み、強制適用中、確定済み、検証済みという 4 つの独立した事実から成ります。[ADR 018: 隔離は 1 つではなく 4 つの事実である](decisions/018_isolation_is_four_facts.md)を参照してください。
+
 GitLab.com では、トップレベルグループがデフォルト Organization から段階的に移行するのをサポートするため、Organization は非隔離の状態で始まります。非隔離はそれ自体で有効かつ恒久的な状態でもあり、Organization は無期限に非隔離のままでよく、隔離は任意です。[ADR 015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)を参照してください。
 
 organization スコープのデータに依存する機能は、Organization の境界ルールを強制する前に、現在の organization が非隔離か隔離済みかを確認しなければなりません。
@@ -84,7 +86,7 @@ organization スコープのデータに依存する機能は、Organization の
 
 ## リクエストコンテキスト {#request-context}
 
-すべてのリクエスト、ジョブ、タスクは、Organization コンテキスト、User コンテキスト、Nil コンテキストの 3 つのいずれかに解決されます。隔離によって変わるのは、どのコンテキストが適用されるかという点だけです。モデル全体については[リクエストコンテキスト](contexts.md)を、現在のエンコード方法については [ADR 016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)を参照してください。
+すべてのリクエスト、ジョブ、タスクは、Organization コンテキスト、User コンテキスト、Nil コンテキストの 3 つのいずれかに解決されます。どのコンテキストが適用されるかを変える要因は、隔離だけです。モデル全体については[リクエストコンテキスト](contexts.md)を、現在のエンコード方法については [ADR 016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)を参照してください。
 
 ## Organization が他のドメインに与える影響 {#impact-of-the-organization-on-other-domains}
 
@@ -337,6 +339,7 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - [014: Organization のロールを Organization ユーザータイプに改称](decisions/014_organization_roles_renamed_to_organization_user_type.md)
 - [015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)
 - [016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)
+- [018: 隔離は 1 つではなく 4 つの事実である](decisions/018_isolation_is_four_facts.md)
 
 ## リンク {#links}
 

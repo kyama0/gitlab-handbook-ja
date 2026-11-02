@@ -2,9 +2,9 @@
 title: "キャンペーンとプログラム"
 description: "キャンペーンは、マーケティング施策の取り組みを追跡するために使用します"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: "ddc319726d9e3f1cfd7f88faf4798bf31af6bf10"
-lastmod: "2026-10-16T19:52:00+02:00"
-translated_at: "2026-10-20T11:12:11+00:00"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T13:55:37-07:00"
+translated_at: "2026-11-02T21:03:48+00:00"
 translator: codex
 stale: false
 ---
@@ -33,7 +33,7 @@ Marketing Ops は Field Marketing チームおよび Corporate Events チーム�
 
 バーチャルカンファレンスでは、GitLab はスポンサー料を支払ってバーチャルブース、場合によってはスピーキングセッションの枠やパネルへの参加を獲得します。成功基準のため、バーチャルブースの存在は必須要件です。[詳細はこちら](/handbook/marketing/virtual-events/external-virtual-events/#virtual-conferences)。
 
-5,000 名を超える `attendees` のリストロードでは、Mktgops は `Field Marketing Director` と協議し、プログラムメンバーを `success` とラベル付けすることの妥当性を確認する必要があります。これは `Bizible Touchpoints` に影響するためです。これを行う方法については、[こちらの手順](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-how-to-update-conferences-with-more-than-5000-attendees)に従ってください（MktgOps のみ）。
+5,000 名を超える `参加者` のリストロードでは、Mktgops は `Field Marketing Director` と協議し、プログラムメンバーを `success` とラベル付けすることの妥当性を確認する必要があります。これは `Bizible Touchpoints` に影響するためです。これを行う方法については、[こちらの手順](/handbook/marketing/marketing-operations/campaigns-and-programs/#instructions-how-to-update-conferences-with-more-than-5000-attendees)に従ってください（MktgOps のみ）。
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。登録ページをホストしておらず、イベント後にブース来訪者のリストを受け取るためです。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
@@ -41,7 +41,7 @@ Marketing Ops は Field Marketing チームおよび Corporate Events チーム�
 | ------------- | ---------- | ------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
 | Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Sales Nominated | Sales が、Marketing のトリガーイベントメールの受信対象としてレコードを指定した |  | いいえ |
 | Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
 | Waitlisted| 登録が満員の場合の保留状態。空きが出れば Registered に移動| | いいえ |
 | Registered | イベントに登録|| いいえ（特別条件については MOps に確認） |
@@ -67,9 +67,11 @@ Marketing Ops は Field Marketing チームおよび Corporate Events チーム�
 
 #### ダイレクトメール（Brilliant 向けに最適化） {#direct-mail-brilliant-optimized}
 
-パッケージまたは郵送物が発送される場合です。現在の手順では Brilliant Gifts と Qualified の使用が必要です。配送プログラムのステータスとアラートを利用するには、Marketing チームメンバーが Brilliant のインターフェースを通じて受信者に注文フォームメールを送信し、Marketo または SFDC のいずれかでプログラムステータスを手動で変更する必要があります。受信者にギフトを選択するオプションが与えられる場合は、Brilliant 内で `Send a Gift -> Campaign or Quick Send` を使用します。ギフトが Marketing または Sales チームによって選択される場合は、`Send a Gift -> Surprise Send` を利用します。`Meeting Booked` ステータスは Qualified を介して更新され、`Meeting Attended` はミーティング成功後に Sales または Marketing が手動で更新する必要があります。`Meeting No Show` は、Qualified の自動メールを介して Sales/Sales Dev が更新します。
+受信者にギフトパッケージまたは電子ギフトを送る場合です。ミーティングを伴う現在の手順では、ほとんどの場合 Brilliant Gifts と Qualified の使用が必要ですが、ミーティングへの参加を確認するために Sales/Sales Dev からの追加情報が必要です。Marketo が手動または自動の webhook を介して受信者情報を Brilliant に送信した後、Brilliant から電子ギフトの引き換えメールが送信されます。`Meeting Booked` ステータスは Qualified を介して更新され、`Meeting Attended` はミーティングが実施された後に Sales または Marketing が手動で更新する必要があります。`Meeting No Show` は、Qualified の自動メールを介して Sales/Sales Dev が更新します。
 
-Brilliant はプログラムステータスの更新を通じて配送ステータスを Marketo と SFDC に同期できるようになりましたが、これは [Direct_Mail_eGift_Global - Brilliant connected](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)でのみ機能します。また、Brilliant の webhook 呼び出しはすべて、メインのスマートキャンペーン [Send to Brilliant webhook (do not alter)](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC77009A1ZN19)を使用して行う**必要があります**。Brilliant を正常に呼び出せるのは、このプログラムとスマートキャンペーンのみです。注意: このプログラムタイプ内には、私たちが必ずしも使用しない Brilliant 用のステータスがいくつかありますが、これらは配送ステータスの追跡に役立ちます
+Brilliant の webhook 呼び出しを正常に有効化するには、事前に Marketo プログラム # とスマートキャンペーン # の両方を Brilliant のバックエンドに同期する**必要があります**。私たちの CSM は、Marketo にアクセスできる GitLab チームメンバーの支援を受けて対応できます。Brilliant キャンペーンには有効期限があるため、必要に応じて新しい Marketo プログラムを作成する必要があります。
+
+Brilliant はプログラムステータスの更新を通じてパッケージの配送ステータスを Marketo と SFDC に同期できるようになりました。注意: このプログラムタイプ内には、私たちが必ずしも使用しない Brilliant 用のステータスがいくつかありますが、これらのステータスは配送状況の追跡に役立ちます
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
@@ -119,7 +121,7 @@ Brilliant はプログラムステータスの更新を通じて配送ステー�
 | メンバーステータス | 定義 | 成功 | リストインポートで使用可能 |
 | ------------- | ---------- | ------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Sales Nominated | Sales が、Marketing のトリガーイベントメールの受信対象としてレコードを指定した |  | いいえ |
 | Waitlisted | 登録が満員の場合の保留状態。空きが出れば `Registered` に移動 |  | いいえ |
 | Registered | イベントに登録 |  | いいえ（特別条件については MOps に確認） |
 | Cancelled | 登録したが、イベント前にキャンセル | | いいえ |
@@ -210,7 +212,7 @@ Brilliant はプログラムステータスの更新を通じて配送ステー�
 | No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
 | Subscribed to Updates | フォーム記入を介して GitLab イベントの更新を購読 |  | いいえ |
 | Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Sales Nominated | Sales が、Marketing のトリガーイベントメールの受信対象としてレコードを指定した |  | いいえ |
 | Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
 | Declined Invitation | 受信者がイベント招待を辞退 | | いいえ |
 | Waitlisted | 参加人数が限られるイベントの保留状態。空きが出れば `Registered` に、出なければ `Declined` に移動 |  | いいえ |
@@ -266,7 +268,7 @@ Brilliant はプログラムステータスの更新を通じて配送ステー�
 | ------------- | ---------- | ------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
 | Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Sales Nominated | Sales が、Marketing のトリガーイベントメールの受信対象としてレコードを指定した |  | いいえ |
 | Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
 | Registered | セッションに登録または参加を表明 |  | いいえ（特別条件については MOps に確認） |
 | No Show | 登録したがイベントに参加しなかった |  | はい |
@@ -306,7 +308,7 @@ Marketo Program メンバーシップのルールは、フォルダー名に "Sp
 | メンバーステータス | 定義 | 成功 | リストアップロードで使用可能 |
 | ------------- | ---------- | ------- | ------- |
 | Member | すべてのレコードのデフォルトの開始位置 |  | いいえ |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Sales Nominated | Sales が、Marketing のトリガーイベントメールの受信対象としてレコードを指定した |  | いいえ |
 | Invited | 招待されたが、サーベイに参加しなかった |  | はい |
 | Filled-out Survey | サーベイに記入 | はい | はい |
 | Follow Up Requested | サーベイに記入し、Sales からの連絡を要求 | はい | はい |
@@ -363,7 +365,7 @@ GitLab がホストおよび開催するあらゆるウェブキャスト。ウ�
 | ------------- | ---------- | ------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
 | Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Sales Nominated | Sales が、Marketing のトリガーイベントメールの受信対象としてレコードを指定した |  | いいえ |
 | Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
 | Registered | オンラインフォームを通じて登録 |  | いいえ（特別条件については MOps に確認） |
 | No Show | 登録したが、ライブウェブキャストに参加しなかった |  | はい |
@@ -384,7 +386,7 @@ GitLab がホストおよび開催するあらゆるウェブキャスト。ウ�
 | ------------- | ---------- | ------- | ------- |
 | No Action | すべてのレコードのデフォルトの開始位置 |  | いいえ |
 | Sales Invited | Sales/SDR がイベントに関する招待／情報を送信 |  | いいえ |
-| Sales Nominated | Sales がレコードを指定し、Marketing が送信するトリガーイベントメールを受け取る |  | いいえ |
+| Sales Nominated | Sales が、Marketing のトリガーイベントメールの受信対象としてレコードを指定した |  | いいえ |
 | Marketing Invited | Marketing の地域ターゲットメール |  | いいえ |
 | Waitlisted | 登録が満員の場合の保留状態。空きが出れば Registered に移動 |  | いいえ |
 | Registered | セッションに登録または参加を表明 |  | いいえ（特別条件については MOps に確認） |
@@ -704,7 +706,7 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 - 有効期限を設定できるすべてのアセットがセグメント化されたリストとして表示されます。表示されうるアセットの例は、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。
 - アセットのチェックボックスを使用して、有効期限を設定したいすべてのアセットを選択し、準備ができたら `set expiration` を選択します。有効期限を設定すべきアセットは、`landing pages`、`active trigger campaigns`、`Reocurring batch campaigns` です。日付と時刻を設定して送信します。
   - `smart campaigns` への有効期限設定を優先します。
-  - そのようなイベントはプログラムの `registation` および `on-demand` フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
+  - そのようなイベントはプログラムの `登録` および `オンデマンド` フローを無効にするため、どのスマートキャンペーンがいつ期限切れになるように設定されているかに注意してください。
 - 後で有効期限を削除するには、プログラムを右クリックして対象アセットに戻り、変更を送信します。
 
 ### ステップ 6 オプションのセルフサービスキャンセルのセットアップ {#step-6-setting-up-optional-self-service-cancellation}
@@ -800,7 +802,7 @@ Waitlist > Declined
 
 ### 直前／現地登録用アセットのセットアップ {#setting-up-assets-for-latein-person-registration}
 
-これは `Owned Event` プログラムテンプレートでのみ利用可能な _オプション_ 機能です。`owned event` に `in-person`（対面）で現れた未登録の参加者を、ランディングページフォームによる通常の登録プロセスが以前に閉じられている場合でも `register` する柔軟性をチームが求める場合に、この機能を利用します。**イベントを担当するチームは、イベントの _前_ にこの機能を使用するかどうかについて合意し、セットアップはイベント開始前に行うべきです**。これにより、ランディングページ／フォームを GitLab 所有の `tablets` や `laptops` などの `check-in` デバイスにブックマークとして手動で追加できます。
+これは `Owned Event` プログラムテンプレートでのみ利用可能な _オプション_ 機能です。`owned event` に `in-person`（対面）で現れた未登録の参加者を、ランディングページフォームによる通常の登録プロセスが以前に閉じられている場合でも `登録` する柔軟性をチームが求める場合に、この機能を利用します。**イベントを担当するチームは、イベントの _前_ にこの機能を使用するかどうかについて合意し、セットアップはイベント開始前に行うべきです**。これにより、ランディングページ／フォームを GitLab 所有の `タブレット` や `ノート PC` などの `チェックイン` デバイスにブックマークとして手動で追加できます。
 
 - `Assets` フォルダー内にある `Late Registration Assets` サブフォルダーを見つけます。これは `YYYYMMDD_OwnedEvent_EventType_Template` テンプレートにのみ存在します
 - Marketo プログラムアセットを承認するために必要な権限を持つ人に、`Late Registration page` と `Late Thank you page` のランディングページを有効化するよう、MktgOps の Slack チャンネルでリクエストします。これらはプログラムテンプレートではデフォルトで承認されていません（`not`）。ランディングページに含まれる `form` など、変更が必要なものがないか事前に確認してください。
@@ -808,7 +810,7 @@ Waitlist > Declined
 - `Late Registration page` の URL を取得し、`https://` を除いて {{my.late registration page}} という名前のプログラム `token` に配置します。これにより、登録の `Thank you` ページに循環パターンを持たせることができます。`Thank you` ページには、次の登録者が利用できるように `late registration page` への戻りリンクが表示されます
 - フローを有効化するために `01 Late Registration` スマートキャンペーンを有効化します
 - プログラムを右クリックして、**すべての** `late registration` アセットのアセットの有効期限の日付を設定します。これらは有効のままにしておくべきではなく、イベント終了の翌日、またはこれ以上登録者が受け入れられないと推定される時点で期限切れになるように設定すべきです
-- 今後のイベントに参加する適切なチームと `late registration page` の URL を共有し、ページを GitLab 所有の `tablets` や `laptops` などのチェックインデバイスに追加して、イベントフロアで簡単にアクセスできるようにします
+- 今後のイベントに参加する適切なチームと `late registration page` の URL を共有し、ページを GitLab 所有の `タブレット` や `ノート PC` などのチェックインデバイスに追加して、イベントフロアで簡単にアクセスできるようにします
 
 ## 対面カンファレンスのセットアップ手順 {#steps-to-setup-in-person-conferences}
 
@@ -1003,22 +1005,30 @@ Allocadia を利用する場合は、[上記](/handbook/marketing/marketing-oper
 1. 既存のリードがプログラムに取り込まれない場合は、`SurveyName` フィールドが間違った名前を取得している可能性が高いです。
 1. 新規リードがプログラムに取り込まれない場合は、`Person Source` SurveyName が正しく更新されなかった可能性が高いです。
 
-## ダイレクトメールキャンペーンのセットアップ手順 {#steps-to-setup-direct-mail-campaigns}
+## Brilliant を使用したダイレクトメールキャンペーンのセットアップ手順 {#steps-to-setup-direct-mail-campaigns-with-brilliant}
 
-Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の使用が必要な点に注意してください。私たちのマーチャンダイズベンダーである Brilliant Gifts は、自社側で Preferred Gift キャンペーンをセットアップする必要があり、これには最大 1 ヶ月かかることがあり、サポートへの連絡が必要です。Qualified のミーティング予約リンクのセットアップには、現在の Qualified テックオーナーが必要になります。適切な連絡先については、[Tech Stack](/handbook/business-technology/tech-stack-applications/)を参照してください。Marketo テンプレートは簡単にクローンできるようにセットアップされているため、セットアップ中はゆっくりと慎重に進めてください
+Direct Mail キャンペーンには複数のセットアップ方法があり、該当する場合には Qualified、Marketo
+_および_ Brilliant Gifts の使用が必要になることがあります。リードがメールに返信したり、Qualified の予約リンクの代わりに Outreach の予約リンクを使ったりするなど、ミーティングの予約方法には違いがあるため、Qualified ワークフローを使用しても 100% の正確性は保証されません。Sales/Sales Dev はキャンペーンの DRI と連携し、ギフトが確実に届けられるようにする必要があります
+
+私たちのマーチャンダイズベンダーである Brilliant Gifts は、自社側で Preferred Gift キャンペーンをセットアップする必要があります。これには最大 1 ヶ月かかることがあり、私たちのアカウントの CSM への連絡が必要です。Qualified ワークフローを使用するには、現在の Qualified テックオーナーが Qualified のミーティング予約リンクをセットアップする必要があります。適切な連絡先については、[Tech Stack](/handbook/business-technology/tech-stack-applications/)を参照してください。Marketo テンプレートは簡単にクローンできるようにセットアップされているため、セットアップ中はゆっくりと慎重に進めてください
+
+注意: 複数の Marketo プログラムを同じ Preferred Gift キャンペーンに接続すると、プログラムステータスの重複やメンバーの二重登録が発生し、アトリビューションやキャンペーンの成功の追跡に影響する可能性があります。複数のプログラムで同じ Preferred Gift キャンペーンを使用する必要がある場合は、1 つの Marketo プログラムを Brilliant に接続し、別の Marketo プログラムから、Brilliant に接続したその Marketo プログラムとスマートキャンペーンを呼び出すのが最適です。これは電子ギフトキャンペーンで一般的なセットアップになります
 
 ### ステップ 1: Marketo プログラムと Salesforce キャンペーンを作成する {#step-1-create-the-marketo-program-and-salesforce-campaign}
 
-- [#TEMPLATE - FY00_Q0_Brilliant Gifts Direct Mail TEMPLATE](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG24060A1)を適切なフォルダーにクローンし、プログラムの名前を変更します。1 つの地域で実施する場合は、1 回クローンします。複数の地域で実施し、各地域を個別に追跡したい場合は、すべての地域（例: AMER、APJ、EMEA）に必要な数のプログラムをクローンし、メインの [Brilliant Gifts プログラムのフォルダー](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内にある、それぞれの `FYXX_QX` フォルダーに配置します。地域別／子プログラムの命名規則を揃え、プログラム名の末尾に地域タグを追加します（例: `FY00_Q0_Campaign_AMER`）。
+- [#TEMPLATE - FY00_Q0_Brilliant Gifts Direct Mail TEMPLATE](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG24060A1)を適切なフォルダーにクローンし、プログラムの名前を変更します。1 つの地域で実施する場合は、1 回クローンします。複数の地域で実施し、各地域を個別に追跡したい場合は、すべての地域（例: AMER、APJ、EMEA）に必要な数のプログラムをクローンし、メインの [Brilliant Gifts プログラムのフォルダー](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内にある、それぞれの `FYXX_QX` フォルダーに配置します。地域別／子プログラムの命名規則を揃え、プログラム名の末尾に地域タグを追加します（例: `FY00_Q0_Campaign_AMER`）。Brilliant 内の同じ Preferred Gift キャンペーンに複数のプログラムを接続する場合は、追加のプログラムを作成し、そのプログラム _のみ_ を Brilliant に接続するとよい場合があります。各 Preferred Gift キャンペーンを地域ごとに限定する必要がある場合は例外です。最適なセットアップについては Brilliant の意見を確認してください
 - すべてのプログラムを SFDC に同期します
-- テンプレートについて、いくつか注意点があります。[01 - Processing](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC63769A1ZN19)スマートキャンペーンが実行されるのは、特定のプログラムステータスで、かつ[リードがターゲットリストに含まれる場合のみ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL53588098A1LA1)です。必要に応じてターゲットリストを入れ替えられますが、その場合は必ず処理用のスマートキャンペーンを更新してください。フロー内では、`Meeting Attended` ステータスの場合のみ、リードがメインの Brilliant プログラムの静的リストに送られます。[メインの Brilliant プログラム](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内の適切な `FYXX_QX` フォルダーに新しい静的リストを作成し、クローンした各プログラムのフローステップ 6 に追加する必要があります。フローステップ 4 はリードを `Invite Sent` ステータスでメインの Brilliant プログラムに追加しますが、静的リストはメインのプログラム内での長期的な追跡と整理に使用します
-- 注: Brilliant に接続されたメインプログラムは、SFDC では [Direct_Mail_eGift_Global - Brilliant connected](https://gitlab.lightning.force.com/lightning/r/Campaign/701Qq00001Pkt5sIAB/view)というキャンペーンとして表示されます。配送情報に関するプログラム/キャンペーンステータスは、Marketo プログラムでも SFDC キャンペーンでも確認できます
+- テンプレートについて、いくつか注意点があります。[01 - Processing](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC63769A1ZN19)スマートキャンペーンが実行されるのは、特定のプログラムステータスで、かつ[リードがターゲットリストに含まれる場合のみ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL53588098A1LA1)です。必要に応じてターゲットリストを入れ替えられますが、その場合は必ず処理用のスマートキャンペーンを更新してください。フロー内では、`Meeting Attended` ステータスの場合のみ、リードがメインの Brilliant プログラムの静的リストに送られます。
+- Brilliant に接続した 1 つのプログラムに複数のプログラムを接続する場合、追跡やトリガー作成のために、メインのプログラムの下に新しい静的リストを作成するのがベストプラクティスです。この静的リストを、クローンした各プログラムのフローステップ 5 に追加しますが、不要であればそのフローステップを削除してもかまいません。フローステップ 4 はリードを `Invite Sent` ステータスでメインの Brilliant プログラムに追加しますが、これも不要で、すべてのプログラムが個別に Brilliant に接続されている場合は削除できます
+
+- 注: 配送情報に関するプログラム/キャンペーンステータスは、接続された Marketo プログラムまたは SFDC キャンペーンで確認できます
 
 ### ステップ 2: Marketo プログラムをセットアップする {#step-2-set-up-the-marketo-programs}
 
-- 必須のプログラムトークンを入力します。このプログラムタイプに固有のトークンは `my.qualifiedlink` トークンで、`Sales Nominated Invite` メールに表示されます。Qualified リンクは、準備ができたときに Qualified テックオーナーによって共有されます（詳細は以下）
-- プログラムは Qualified から `Meeting Booked` と `Meeting Attended` の入力を受け取り、Processing スマートキャンペーンが Brilliant への webhook を呼び出して、ギフト引き換えメールを送信します（プログラムステータスが `Meeting Attended` の場合のみ）
+- 必須のプログラムトークンを入力します。このプログラムタイプに固有のトークンは `my.qualifiedlink` トークンで、`Sales Nominated Invite` メールに表示され、Qualified で予約するミーティングへの招待メールを送信するために使用されます。Qualified リンクは、準備ができたときに Qualified テックオーナーによって共有されます（詳細は以下）。Qualified の予約リンクが不要で、代わりに Brilliant フォームへのリンクを使用する場合は、そのリンクをここに配置し、Brilliant のギフト引き換えポータルへ誘導する送信メールで使用できます。注意: Qualified リンクが使用されなかった場合に備え、Sales と Sales Dev はミーティングへの招待を承諾した人を記録しておく必要があります
+- Qualified のミーティングリンクが正しく使用された場合、プログラムは Qualified から `Meeting Booked` と `Meeting Attended` の入力を受け取ります。`01 - Processing (connect to Brilliant for webhook redemption)` スマートキャンペーンは、プログラムステータスが `Meeting Attended` の場合にのみ Brilliant への webhook を呼び出して、ギフト引き換えメールを送信します。キャンペーンの DRI は Sales/Sales Dev と連携し、すべての受信者がギフト引き換えメールを受け取れるようにする必要があります
 - `no show` アクティビティを登録するために、単一または親プログラムで `03 Change to No Show` を有効化します * この機能は現時点では実験的です
+- Sales へのメールアラートを求められた場合は、`Delivered Alerts` スマートキャンペーンを有効化します。ギフトが引き換えられたときと配達されたときに、リードオーナーへ通知します
 
 ### ステップ 3: ターゲットリストと指名されたリードのロード {#step-3-target-lists-and-loading-nominated-leads}
 
@@ -1038,6 +1048,7 @@ Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の�
 - 新しい Preferred Gift キャンペーンが必要か？
 - Brilliant のストアフロントが確立されており、この Campaign のニーズに適切か？
 - Brilliant でどのバックエンドアセットを更新する必要があるか？ 例: ブランド化されたギフト引き換えメール
+- Marketo プログラムのプログラム ID とスマートキャンペーン ID は何か？
 
 Brilliant チームは、Marketo プログラムと webhook がバックエンドに到達していることも確認する必要があります
 
@@ -1050,11 +1061,12 @@ Brilliant チームは、Marketo プログラムと webhook がバックエン�
 - 見込み客がミーティングを予約すると、Qualified はプログラムステータスを `Meeting Booked` に変更します
 - ミーティングの 1 時間前にリマインダーメールが送信されます
 - ミーティングが行われた後、Qualified はミーティングが行われたか欠席だったかを確認するために、Sales Dev チームメンバーに確認メールを送信します
-- Qualified がミーティングのアクティビティを `not attended` で更新した場合に `no show` とマークするかどうかを監視する実験的な自動化があります
+- Sales は、招待を承諾した人と、その人がミーティングを予約した方法を記録するのがベストプラクティスです。Qualified のフロー以外でミーティングが予約された場合は、MOps または Campaigns がギフト受信者のプログラムステータスを手動で変更し、ギフトの引き換えをトリガーする必要があります
+- Qualified がミーティングのアクティビティを `not attended` に更新したことを検出し、`no show` とマークする実験的な自動化があります
 
 ### ステップ 7: キャンペーンの完了 {#step-7-campaign-completion}
 
-Campaign の終了時に、Qualified のロジックを取り下げるようリクエストします。Brilliant のストアフロントと Preferred キャンペーンへの更新は未定ですが、新しいキャンペーンごとに Brilliant に連絡し、電子ギフトの金額と確認メールを更新する必要があります
+Campaign の終了時に、Qualified のロジックを取り下げるようリクエストします。Brilliant のストアフロントと Preferred キャンペーンへの更新は未定ですが、Brilliant キャンペーンには有効期限があり、対応を行わなければ再利用できません。新しいキャンペーンごとに Brilliant に連絡し、電子ギフトの金額と確認メールを更新する必要があります
 
 ## LinkedIn Lead Gen Form のセットアップ手順 {#steps-to-setup-linkedin-lead-gen-form}
 

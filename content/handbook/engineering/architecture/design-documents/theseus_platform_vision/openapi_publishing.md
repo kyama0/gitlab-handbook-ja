@@ -3,9 +3,9 @@ title: "モジュール化された機能の OpenAPI 仕様の公開"
 description: "モジュール化された機能を担当するチームが OpenAPI 3.1 仕様を公開 API リファレンスに掲載し、内部オペレーションやドキュメントを除外するための手順です。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/openapi_publishing/
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-19T10:20:22+01:00"
-translated_at: "2026-10-20T12:33:40+00:00"
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+lastmod: "2026-11-02T12:24:35Z"
+translated_at: "2026-11-02T21:17:59+00:00"
 translator: codex
 stale: false
 ---
@@ -37,7 +37,7 @@ stale: false
 | 2 | 公開ドキュメントに絶対 `servers` URL を設定する | 公開ドキュメント | チーム |
 | 3 | ドキュメントごとに `apis` エントリーを 1 つ追加する | `openapi/redocly.yaml` | チーム |
 | 4 | 内部オペレーションに印を付ける | オペレーションの `x-gitlab-internal` | チーム |
-| 5 | 各公開ドキュメントを登録する | api-docs の `src/config/specs.js` | チームが MR を作成します。API Platform のコードオーナーが承認します。Maintainer がマージします。 |
+| 5 | 各公開ドキュメントを登録する | api-docs の `src/config/registrations.json` | チームが MR を作成します。API Platform のコードオーナーが承認します。Maintainer がマージします。 |
 | 6 | トリガートークンを作成する | infra-mgmt の `environments/gitlab-com/project_api_docs_trigger_tokens.tf` | チームが MR を作成します。infra-mgmt 承認者が承認します。Atlantis が適用します。 |
 | 7 | `api-docs-refresh` を組み込む | `.gitlab-ci.yml` | チーム |
 | 8 | 結果を確認する | なし | チーム |
@@ -119,43 +119,50 @@ paths:
 ```
 
 暫定ルール: api-docs はドキュメント全体を公開するため、この印ではまだ何も非表示になりません。
-api-docs のフィルターが提供されるまでは、内部オペレーションを別のドキュメントに分け、そのドキュメントを `specs.js` に登録しないでください。
+api-docs のフィルターが提供されるまでは、内部オペレーションを別のドキュメントに分け、そのドキュメントを `registrations.json` に登録しないでください。
 Artifact Registry では、`gitlab-v1.yaml` でこのようにしています。
 [内部オペレーションとドキュメント](#internal-operations-and-documents)を参照してください。
 
 ## 手順 5. 各公開ドキュメントを登録する {#step-5-list-each-public-document}
 
-[`gitlab-org/api-docs`](https://gitlab.com/gitlab-org/api-docs)で、`src/config/specs.js` にエントリーを追加する MR を作成してください。
+[`gitlab-org/api-docs`](https://gitlab.com/gitlab-org/api-docs)で、`src/config/registrations.json` にエントリーを追加する MR を作成してください。
 各公開ドキュメントに対して、エントリーを 1 つ追加してください。
 内部ドキュメントや、コンポーネントがリファレンスの対象外としているドキュメントは登録しないでください。
 API Platform のコードオーナーが各エントリーを承認します。
 次は Artifact Registry のエントリーです。
 
-```js
+```json
   {
-    title: 'GitLab Artifact Central API',
-    slug: 'artifact-central',
-    file: 'artifact_registry_v1.json',
-    published: true,
-    // Not translated, so the Japanese reference serves it in English.
-    upstream: {
-      en: gitlabFile('gitlab-org/ops/artifact-registry', 'api/openapi/v1.yaml'),
-    },
-  },
+    "title": "GitLab Artifact Central API",
+    "slug": "artifact-central",
+    "file": "artifact_registry_v1.json",
+    "published": true,
+    "upstream": {
+      "en": {
+        "project": "gitlab-org/ops/artifact-registry",
+        "path": "api/openapi/v1.yaml"
+      }
+    }
+  }
 ```
+
+`ja` ロケールを持たないため、日本語版のリファレンスでも英語で提供されます。
 
 次は汎用的な形式です。
 
-```js
+```json
   {
-    title: '<display name>',
-    slug: '<component name>',
-    file: '<service>_v1.json',
-    published: true,
-    upstream: {
-      en: gitlabFile('<project path>', 'openapi/v1.yaml'),
-    },
-  },
+    "title": "<display name>",
+    "slug": "<component name>",
+    "file": "<service>_v1.json",
+    "published": true,
+    "upstream": {
+      "en": {
+        "project": "<project path>",
+        "path": "openapi/<assembly>-v1.yaml"
+      }
+    }
+  }
 ```
 
 各フィールド:
@@ -164,11 +171,18 @@ API Platform のコードオーナーが各エントリーを承認します。
 1. `slug` は永続的な URL です。プロトコル名ではなく、コンポーネント名に基づく 1 つのパスセグメントを使用してください。Scalar は、`#gitlab/tag/projects` のように、すべてのリンクのハッシュにこれを接頭辞として付けます。変更すると、共有済みのすべてのリンクが壊れます。
 1. `file` は、`https://api.gitlab.com/rest/<file>` で配信するファイル名です。
 1. `published` は、すべてのエントリーで必須です。`true` はドキュメントを表示します。`false` は取得、リント、最新状態の維持を行いますが、表示はしません。`false` は非公開を意味しません。ドキュメントは引き続き公開リポジトリにコミットされ、`/rest/<file>` にデプロイされます。
-1. `upstream` は、ロケールと URL を対応付けます。`en` は必須です。`ja` は任意です。`gitlabFile(project, path, ref = 'main')` が URL を組み立てます。デフォルトブランチが `main` でない場合は、第 3 引数を渡してください。
-1. `default: true` をコピーしないでください。これは `gitlab` エントリーだけが持ちます。
+1. `upstream` は、ロケールをドキュメントの場所に対応付けます。`en` は必須です。`ja` は任意です。`project` はプロジェクトのパスで、`path` はその中のドキュメントのパスです。デフォルトブランチが `main` でない場合にのみ、`path` の後に `ref` を追加してください。
 
-`specs.js` ファイルには、「upstream が非公開の仕様は決して登録しない」と記載されています。
-api-docs は取得時に `JOB-TOKEN` ヘッダーを送信するため、非公開の upstream を取得して、そのまま公開してしまう可能性があります。
+ファイルの形式を維持してください。api-docs のテストは、次の形式以外を拒否します。
+
+1. エントリーは `slug` でソートします。
+1. エントリーには、示したキーのみを、その順序で使用します。`default` は使用できません。これは `gitlab` エントリーだけが持ち、そのエントリーはこのファイルにはありません。
+1. ファイルは半角スペース 2 個でインデントし、末尾を改行で終えます。
+
+MR は `validate-registrations` ジョブを実行します。
+このジョブは認証情報なしでドキュメントを取得し、api-docs が更新のたびに実行するものと同じリントチェックを実行します。
+リポジトリが公開されていない場合、プロジェクトやパスが間違っている場合、またはドキュメントがリントに失敗する場合は、ジョブが失敗します。
+取得時に認証情報を送信しないため、非公開リポジトリ内のドキュメントは公開されるのではなく、この段階で失敗します。
 
 ## 手順 6. トリガートークンを作成する {#step-6-create-the-trigger-token}
 
@@ -257,12 +271,12 @@ upstream リポジトリは公開されているため、印を付けたオペ�
 api-docs のフィルターが提供されると、api-docs は公開ドキュメントから印付きのオペレーションを除去してから公開します。
 <!-- TODO: link the api-docs filter issue once it exists. -->
 
-内部専用のドキュメント全体は、`specs.js` にも `spec_paths` にも登録しません。
+内部専用のドキュメント全体は、`registrations.json` にも `spec_paths` にも登録しません。
 Artifact Registry の `gitlab-v1.yaml` が一例です。
 
 ## 公開を行わない場合 {#opting-out}
 
-コンポーネントのドキュメントを `specs.js` に登録しないでください。
+コンポーネントのドキュメントを `registrations.json` に登録しないでください。
 それらについては、手順 5 から 8 を省略してください。
 公開ドキュメントがなければ、`spec_paths` に指定するものがないため、トークンも include も不要です。
 未登録のドキュメントは、取得も表示もされません。

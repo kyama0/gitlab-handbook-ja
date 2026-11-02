@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Security
 description: ブロックされたユーザーを復活させられるか判断する方法
 upstream_path: /handbook/support/workflows/reinstating-blocked-accounts/
-upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
-translated_at: "2026-10-18T09:35:31Z"
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+translated_at: "2026-11-02T20:58:49.462247+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-16T18:56:09+08:00"
+lastmod: "2026-11-02T18:25:58+13:00"
 ---
 
 このワークフローページでは、**Locked**、**Blocked**、および **Banned** アカウントへの対応方法を説明します。ユーザーは自分がブロックされていると思っていても、実際にはアカウントがロックされているだけというケースがあります。これを確認する方法はいくつかあります:
@@ -19,7 +19,7 @@ lastmod: "2026-10-16T18:56:09+08:00"
 
 私たちが実装している [Arkose Protect](https://docs.gitlab.com/integration/arkose/#arkose-protect)は、アカウントロックには影響を与え *ません* が、代わりにユーザーがチャレンジを解決せずにサインインするのを防ぐことができます。
 
-## ロックされたアカウント
+## ロックされたアカウント {#locked-accounts}
 
 ユーザーがロックされていることが判明した場合、[`Support::SaaS::Account Locked` マクロ](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Account%20Locked.md?ref_type=heads)を使用してユーザーに状況を説明できます。ユーザーがロックされる条件は次のとおりです:
 
@@ -41,7 +41,7 @@ lastmod: "2026-10-16T18:56:09+08:00"
 
 ![ロックされたアカウント](/images/support/locked_example.png)
 
-### 手動ロック解除
+### 手動ロック解除 {#manual-unlock}
 
 ユーザーはまずすべてのセルフサーブ手段を試すべきです。
 
@@ -65,26 +65,26 @@ lastmod: "2026-10-16T18:56:09+08:00"
 
 サポートチームメンバーは、[Internal Handbook](https://internal.gitlab.com/handbook/support/workflows/identity-verification-exemptions/)に記載されている手順に従って例外を作成できます。
 
-## ブロックされたアカウント
+## ブロックされたアカウント {#blocked-accounts}
 
 このワークフローは、ブロックまたは BAN されたユーザーを復活できるかを判断するために使用します。
 
-### なぜアカウントがブロックされたか？
+### なぜアカウントがブロックされたか？ {#why-is-account-blocked}
 
 アカウントがブロックされている場合、管理者メモ を確認してブロックされた理由を調べてください。
     - Zendesk の [GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app)は、ユーザーがアカウントに紐づくメールアドレスでサポートに問い合わせた場合に、そのユーザーの 管理者メモ を表示します。あるいは、
     - ChatOps へのアクセス権がある場合は、chatops が有効な任意の Slack チャンネルで以下のコマンドを使ってユーザーの 管理者メモ を読むことができます。
         > `/chatops gitlab run user find <username or email>`
 
-### Trust and Safety Team によるブロック
+### Trust and Safety Team によるブロック {#blocked-by-trust-and-safety-team}
 
 T&S は現在アカウントをブロックしません。BAN のみを行います。
 
-### 管理者メモがない状態でブロックされているユーザー
+### 管理者メモがない状態でブロックされているユーザー {#user-is-blocked-with-no-admin-note}
 
 状況によっては、管理者メモがないままユーザーがブロックされていることがあります。この場合は、ブロックされた理由を調査する必要があります。
 
-#### アカウントを確認せず、削除がスケジュールされているユーザー
+#### アカウントを確認せず、削除がスケジュールされているユーザー {#user-did-not-confirm-their-account-and-are-scheduled-for-deletion}
 
 ユーザーが作成から 3 日以内にアカウントを確認しない場合、アカウントは自動的にブロックされ、削除がスケジュールされます。
 
@@ -102,7 +102,7 @@ T&S は現在アカウントをブロックしません。BAN のみを行いま
 
 注: 未確認のアカウントを削除キューから取り除く仕組みはありません。詳細は [作業アイテム 7646](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7646)を参照してください。
 
-### ユーザー起点のセルフサーブ削除
+### ユーザー起点のセルフサーブ削除 {#user-initiated-self-serve-deletion}
 
 管理者メモが `User deleted own account on {timestamp}` の場合、これはユーザーがセルフサーブ削除を起動したことを意味します。[遅延アカウント削除のキャンセル](#cancelling-delayed-account-deletion)を参照してください。
 
@@ -113,19 +113,19 @@ T&S は現在アカウントをブロックしません。BAN のみを行いま
    - SE は削除の結果でチケットを更新します。
 1. **有償ユーザー** のアカウントで、トップレベル有償ネームスペースの直接メンバーである場合は削除遅延がなく、アカウントは即座に（1 時間以内に）削除されます。詳細は [この MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/121912)を参照。
 
-### 禁輸国
+### 禁輸国 {#embargoed-countries}
 
 ブロックや苦情が禁輸国からのアクセスに関するものである場合、[`Support::SaaS::Gitlab.com::Abuse::TOS Section 10 (Embargoed Countries)`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Abuse/TOS%20Section%2010%20(Embargoed%20Countries).md?ref_type=heads) マクロを使ってください。
     - ユーザーが要求された情報を提供する場合は、Trust and Safety Operations トラッカーで `Trust and Safety` の [Account Reinstatement Request](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/TS_Operations/account-reinstatements/-/issues/new?issuable_template=Account%20Reinstatement) テンプレートを完成させます。それ以外の場合は、ブロックは解除できないことを再度伝えます。
     - **Free** および **有償** の両方のユーザーに対してこのアクションを実施します。
 
-### ビジネス上および規制上の義務（中国地域）
+### ビジネス上および規制上の義務（中国地域） {#business-and-regulatory-obligations-china-region}
 
 中国本土、香港、マカオでのビジネス上および規制上の義務を遵守するためにユーザーがブロックされる場合があります。これはユーザーアカウントの 管理者メモ に反映されます。
 
 これらのアカウントの詳細情報とサポートワークフローについては、[Internal Handbook](https://internal.gitlab.com/handbook/support/workflows/regulatory-region-blocks/)を参照してください。
 
-### Professional Services マイグレーション
+### Professional Services マイグレーション {#professional-services-migrations}
 
 Professional Services マイグレーションも、プロセスの一環としてユーザーをブロックすることがあります。マイグレーション用の 管理者メモ は `2022-08-19` から [この Issue](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/issues/818)を通じて追加されています。それより前にマイグレーションされたアカウントには 管理者メモがない場合があります。`2024-09-18` 時点では、Professional Services マイグレーションでブロックされたアカウントのブロック解除リクエストは自動的に処理されます（[STM #6336](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6336)を参照）。
 
@@ -142,28 +142,28 @@ Professional Services マイグレーションも、プロセスの一環とし�
 - 必要に応じて、[#professional_services](https://gitlab.slack.com/archives/CFRLYG77X) チャンネルで明確化や支援を求めることもできます。
 - **Free** および **有償** の両方のユーザーに対してこのアクションを実施します。
 
-### 管理者メモがなく、上記のいずれにも該当しない場合
+### 管理者メモがなく、上記のいずれにも該当しない場合 {#no-admin-note-and-none-of-the-above}
 
 - **有償アカウント** は、トップレベルネームスペースで Owner ロールを持つユーザーの承認を得てブロック解除できます。[アカウント所有権の検証](/handbook/support/workflows/account_verification)は、最初にグループ Owner が完了する必要があります。
 - **Free アカウント** は、例外的な状況で、かつリーダーシップの承認と組み合わせる場合にのみブロック解除できます。[アカウント所有権の検証](/handbook/support/workflows/account_verification)を最初に完了する必要があります。
 
-### アカウントが正常にブロック解除された
+### アカウントが正常にブロック解除された {#account-is-successfully-unblocked}
 
 アカウントがブロック解除された場合、[`Support::SaaS::Gitlab.com::Blocked Accounts::Account Reinstated- Success`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Blocked%20Accounts/Account%20Reinstated-%20Success.md?ref_type=heads) マクロを使って、アカウントがブロック解除されたことをユーザーに通知します。
 
-### アカウントをブロック状態のままにする（復活させない）
+### アカウントをブロック状態のままにする（復活させない） {#account-to-remain-blocked-no-reinstatement}
 
 最終決定が、ユーザーアカウントを復活しないことになった場合、[`Support::SaaS::Gitlab.com::Blocked Accounts::RemainBlocked`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Blocked%20Accounts/RemainBlocked.md) マクロを適用します。これによりユーザーには標準的な文言が伝えられ、チケットは **クローズされます**。
 
 このマクロを適用すると、既存のチケットを通じてユーザーが返答する機会は提供されません。これが意図したアクションであることを確認した上で、慎重に適用してください。
 
-## BAN されたアカウント
+## BAN されたアカウント {#banned-accounts}
 
 1. 次の少なくとも 1 つのシナリオが成立する場合 **のみ** 次のステップに進んでください:
     1. ユーザーがリクエストを送るために使用したメールアドレスが、リクエストが対象とするアカウントに紐づくメールアドレスと一致する。この基準は Free ユーザーにもカスタマーにも適用できます。
     1. ユーザーアカウントが [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users)として分類されており、トップレベルグループのオーナーがチケットを起票している。
 
-### Trust and Safety による BAN
+### Trust and Safety による BAN {#bans-by-trust-and-safety}
 
 Trust and Safety はアカウントをブロックせず、BAN のみを行います。こうしたアクションは、多くの場合自動化によって実行されます。
 
@@ -171,12 +171,12 @@ BAN の理由は、ユーザーの管理ページ下部にある Custom attribut
 
 これらのアカウントについて、T&S Issue が存在しない場合は、[Account Reinstatement Request](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/TS_Operations/account-reinstatements/-/issues/new?issuable_template=Account%20Reinstatement) テンプレートを完成させます。
 
-セキュリティチームのメンバーが 24 時間以内にリクエストをレビューします。リクエストが緊急の場合は、[#abuse](https://gitlab.enterprise.slack.com/archives/C0HPYBJ3D) Slack チャンネルに連絡してください。
+セキュリティチームのメンバーが[標準キューの目標対応時間](https://internal.gitlab.com/handbook/security/security_operations/trust_and_safety/slo/#tier-4-standard-queue)に従ってリクエストをレビューします。リクエストが緊急の場合は、[#abuse](https://gitlab.enterprise.slack.com/archives/C0HPYBJ3D) Slack チャンネルに連絡してください。
 
 1. ユーザーへの初回応答には [`Support::SaaS::Gitlab.com::Blocked Accounts::Escalated-TrustAndSafety`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Blocked%20Accounts/Escalated-TrustAndSafety.md?ref_type=heads) マクロを送信します。
 1. アカウントが復元された場合は、[`Support::SaaS::Gitlab.com::Blocked Accounts::Account Reinstated- Success`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Blocked%20Accounts/Account%20Reinstated-%20Success.md?ref_type=heads) マクロを使って、アカウントが復元されたことをユーザーに通知します。それ以外の場合は、Reinstatement Request からの理由を提示し、なぜアカウントが BAN されたままになるかを説明します。
 
-#### Omamori による自動 BAN
+#### Omamori による自動 BAN {#omamori-automated-bans}
 
 Omamori の自動化によって BAN されたアカウントには、次の情報が含まれます:
 
@@ -185,13 +185,13 @@ Omamori の自動化によって BAN されたアカウントには、次の情�
 - blocked_category
 - omamori_mitigation_plan_executed_by
 
-#### auto_banned_by
+#### auto_banned_by {#auto_banned_by}
 
 検証のために BAN されている電話番号を入力するなど、特定の特徴に基づいてユーザーが自動的に BAN される場合があります。
 
 BAN の理由は、Custom attributes セクションの `auto_banned_by` フィールドに表示されます。
 
-### その他の理由による BAN
+### その他の理由による BAN {#bans-for-other-reasons}
 
 Support には、Trust and Safety による自動化なしで BAN されたアカウントの例は現在ありません。
 
@@ -237,20 +237,20 @@ Support には、Trust and Safety による自動化なしで BAN されたア�
 注意:
 このページの残りの部分は **参考** のためだけのものであり、Security のワークフローを指すように更新する必要があります。
 
-### ポリシー参照
+### ポリシー参照 {#policy-reference}
 
 1. アカウントの復活に関するすべての決定は最終的なものであり、不服申し立てのプロセスはありません。
 1. これらの基準は **あくまで例として** 取り扱うものであり、**拘束力のある原則** ではありません。
 1. アカウントが 12 ヶ月以内に再び ToS に違反した場合は、永久 BAN になる可能性があります。
 
-#### アカウントが復活できる場合
+#### アカウントが復活できる場合 {#an-account-can-be-reinstated-when}
 
 1. ユーザーが要求された期間内に該当コンテンツを削除することに同意した場合。
 1. ユーザーが私たちの利用規約に違反した十分な理由を提供した場合。
 1. ユーザーが 24 時間以内に GitLab.com からコンテンツを削除またはエクスポートすることに同意した場合。
 1. DMCA／商標苦情が解決された場合。
 
-#### アカウントを復活 **できない** 場合
+#### アカウントを復活 **できない** 場合 {#an-account-cannot-be-reinstated-when}
 
 1. ユーザーがアカウントに対する是正措置を拒否する場合。
 1. ユーザーが私たちの ToS に違反し続ける場合。

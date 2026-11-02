@@ -1,25 +1,25 @@
 ---
-title: "Triage Operations"
+title: "トリアージ運用"
 description: "GitLab でトリアージされていない Issue を処理するための自動化とツール"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:41:40+09:00"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+translated_at: "2026-11-02T21:06:45+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T14:39:01+02:00"
+lastmod: "2026-11-02T18:46:48+01:00"
 ---
 
 GitLab のすべてのチームメンバーは Issue をトリアージできます。[トリアージされていない Issue](/handbook/product-development/how-we-work/issue-triage/#triaging-issues) の数を少なく保つことはメンテナビリティにとって不可欠であり、私たちの共同責任です。
 
 私たちはこれを大規模に処理し、各チームやグループに負荷を分散するための自動化とツールを実装しています。
 
-Triage Operations・トリアージレポート・優先度と重大度ラベルのビデオ紹介。
+トリアージ運用、トリアージレポート、優先度と重大度ラベルを紹介する動画です。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qOlN2G1BDhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 説明責任
+## 説明責任 {#accountability}
 
-[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/) チームは、すべてのプロダクトおよびエンジニアリンググループが定められた SLA を守る責任を持つことを確保します。
+[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/) チームは、すべての Product および Engineering の各グループが定められた SLA を守る責任を持つことを確保します。
 
 私たちの欠陥 SLA は以下で確認できます:
 
@@ -29,15 +29,15 @@ Triage Operations・トリアージレポート・優先度と重大度ラベル
 Developer Experience チームは、この目標を達成するために手動介入に加えて多くのツールと自動化を採用しています。
 この分野の作業は、Triage と Measure のトラックの作業として部門ロードマップで確認できます。
 
-## ラベルの名前変更
+## ラベルの名前変更 {#label-renaming}
 
-ステージ・グループ・カテゴリラベルを使用する自動化が多数あります。以下のいずれかの変更が発生した場合、プロダクトマネージャーは triage-ops に Issue を作成することを求めています。この Issue は自動化とレポートへの影響を最小限に抑えるのに役立ちます。
+ステージ・グループ・カテゴリラベルを使用する自動化が多数あります。以下のいずれかの変更が発生した場合、Product Manager に、triage-ops に Issue を作成するよう依頼します。この Issue は自動化とレポートへの影響を最小限に抑えるのに役立ちます。
 
 * [ステージの作成または名前変更](https://gitlab.com/gitlab-org/quality/triage-ops/issues/new?issuable_template=category-stage-group-label-change)
 * [グループの作成または名前変更](https://gitlab.com/gitlab-org/quality/triage-ops/issues/new?issuable_template=category-stage-group-label-change)
 * [カテゴリラベルの作成または名前変更](https://gitlab.com/gitlab-org/quality/triage-ops/issues/new?issuable_template=category-label-change)
 
-## Issue とマージリクエストの自動ラベリング
+## Issue とマージリクエストの自動ラベリング {#auto-labelling-of-issues-and-merge-requests}
 
 トリアージボットは、Issue または MR にすでに設定されているカテゴリ/機能に基づいてセクション・ステージ・グループラベルを自動的に推測します。これは `gitlab-org` グループ内の**オープン**な Issue/MR で利用可能です。
 
@@ -82,7 +82,7 @@ graph TB;
 
 Issue/MR が特定のステージに属していない場合は、ステージラベルを削除し、この自動化が将来発生しないようにするために `~"automation:devops-mapping-disable"` ラベルを追加できます。
 
-## トリアージレポート
+## トリアージレポート {#triage-reports}
 
 [トリアージレポート](https://gitlab.com/gitlab-org/quality/team-tasks/issues/35)は、注意が必要な Issue またはマージリクエストのチェックリストを含む Issue です。
 通常、各タスクはラベル・優先順位付け・スケジュール・注意などが必要な Issue またはマージリクエストに対応します。
@@ -92,23 +92,23 @@ Issue/MR が特定のステージに属していない場合は、ステージ�
 
 Issue の割り当て先を変更するには、上記のファイルに対してマージリクエストを開いてください。グループ定義ファイルが変更された場合は、生成されたファイルも更新するために[いくつかのスクリプトを実行する](https://gitlab.com/gitlab-org/quality/triage-ops#generating-policy-files-and-ci-jobs)必要があります。
 
-### コミュニティ関連のトリアージレポート
+### コミュニティ関連のトリアージレポート {#community-related-triage-reports}
 
 これらのレポートは[Developer Relations Engineering チーム](/handbook/marketing/developer-relations/engineering/)が所有しています。
 
-#### 新しく作成されたコミュニティマージリクエスト
+#### 新しく作成されたコミュニティマージリクエスト {#newly-created-community-merge-requests}
 
 このレポートには、[部分的なトリアージ](/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage/#partial-triage-gitlab-org)が必要なコミュニティのマージリクエストが含まれます。
 目標は、コーチがタイプ・ステージ・グループラベルを追加し、後でそれらのラベルに基づいて関連する人々に通知できるようにすることです。
 
 * 頻度: 毎日。
-* 担当者: [gitlab roulette](https://gitlab.com/gitlab-org/gitlab-roulette#features) によって選ばれた不在中でない[マージリクエストコーチ](https://gitlab.com/gitlab-org/coaches)。
-* 表示されるマージリクエスト: 部分的にトリアージされていない最新 100 件の `コミュニティコントリビューション`。
+* 担当者: [gitlab roulette](https://gitlab.com/gitlab-org/gitlab-roulette#features) によって選ばれた不在中でない[Merge Request Coaches](https://gitlab.com/gitlab-org/coaches)。
+* 表示されるマージリクエスト: 部分的にトリアージされていない最新 100 件の `Community contribution`。
 * トリアージアクション: トリアージレポートの指示に従ってください。
 * 例: <https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/7903>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/report/untriaged-community-merge-requests.yml>
 
-#### 注意が必要なコミュニティのマージリクエスト
+#### 注意が必要なコミュニティのマージリクエスト {#community-merge-requests-requiring-attention}
 
 このレポートには、GitLab チームメンバーからの注意が必要な可能性のあるコミュニティのマージリクエストが含まれます。
 
@@ -116,8 +116,8 @@ Issue の割り当て先を変更するには、上記のファイルに対し�
 * 担当者: [Developer Relations Engineering チーム](/handbook/marketing/developer-relations/engineering) + ボランティアのより広いコミュニティメンバー。
 * 表示されるマージリクエスト（すべて GitLab からの応答待ち）:
   1. 7 日間アイドル状態の新規コントリビューターからのマージリクエスト。
-  1. 21 日間アイドル状態のマージリクエスト（`~group::runner` を除く）。
-  1. 21 日間アイドル状態の `~group::runner` のマージリクエスト。
+  1. 21 日間アイドル状態のマージリクエスト（~group::runner を除く）。
+  1. 21 日間アイドル状態の ~group::runner のマージリクエスト。
 * トリアージアクション:
   1. マージリクエストを進めるべきか閉じるべきかを判断する。
   1. マージリクエストが準備できているか、さらに変更が必要かを判断する。
@@ -125,24 +125,24 @@ Issue の割り当て先を変更するには、上記のファイルに対し�
 * 例: <https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/7690>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/groups/gitlab-org/quality/community-contribution-mr-report.yml>
 
-### チームレポート
+### チームレポート {#team-reports}
 
-#### グループレベルのバグ・機能・Deferred UX
+#### グループレベルのバグ・機能・ Deferred UX {#group-level-bugs-features-and-deferred-ux}
 
-このレポートには、[DevOps ステージ](/handbook/product/categories/#devops-stages)のグループに属する関連するバグ・機能リクエスト・Deferred UX Issue が含まれます。
-目標は、そのエリアのプロダクトマネージャー・エンジニアリングマネージャー・UX チームメンバーによる[完全なトリアージ](/handbook/product-development/how-we-work/issue-triage#complete-triage)を達成することです。
+このレポートには、[DevOps ステージ](/handbook/product/categories/#devops-stages)のグループに属する関連するバグ・機能リクエスト・ Deferred UX Issue が含まれます。
+目標は、そのエリアの Product Manager ・ Engineering Manager ・ UX チームメンバーによる[完全なトリアージ](/handbook/product-development/how-we-work/issue-triage#complete-triage)を達成することです。
 
 レポート自体は 4 つの主要部分に分かれています。
 
 * 機能提案
-* Deferred UX Issues
+* Deferred UX の Issue
 * フロントエンドのバグ
 * バグ（バックエンドの可能性が高い）
 * ターゲット SLO を超過した `~priority::1` および `~priority::2` のバグ。
 
 バグセクションにはヒートマップも含まれています。
 
-![heatmap.png](/images/engineering/infrastructure-platforms/developer-experience/triage-operations/heatmap.png)
+![ヒートマップ](/images/engineering/infrastructure-platforms/developer-experience/triage-operations/heatmap.png)
 
 例: [https://gitlab.com/gitlab-org/quality/triage-ops/issues/118](https://gitlab.com/gitlab-org/quality/triage-ops/issues/118)
 
@@ -153,42 +153,42 @@ Issue の割り当て先を変更するには、上記のファイルに対し�
 [カテゴリが欠落しているケース](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/missing-categories.yml)のためのオプションのステージポリシーもあります。
 チームがこれを有効にしている場合、ステージラベルを持っているがそのステージの適切なカテゴリラベルをまったく持っていない最大 100 件のアイテムのリストを受け取ります。
 
-##### 機能提案
+##### 機能提案 {#feature-proposals}
 
 このセクションには、マイルストーンのない `~"type::feature"` ラベルを持つ Issue が含まれます。`~"customer"` ラベルを持つ Issue と持たない Issue にさらに分けられています。
 
-* トリアージオーナー: そのグループのプロダクトマネージャー。
+* トリアージオーナー: そのグループの Product Manager。
 * トリアージアクション:
   1. Issue が重複または無関係な場合は Issue を閉じる。
   1. バージョン付きマイルストーン・`Backlog` または `Awaiting further demand` マイルストーンのいずれかにマイルストーンを割り当てる。
 
-##### フロントエンドのバグ
+##### フロントエンドのバグ {#frontend-bugs}
 
 このセクションには、優先度と重大度のない `~"type::bug"` および `~"frontend"` ラベルを持つ Issue が含まれます。`~"customer"` ラベルを持つ Issue と持たない Issue にさらに分けられています。
 
-* トリアージオーナー: そのグループのフロントエンドエンジニアリングマネージャー。
+* トリアージオーナー: そのグループの Frontend Engineering Manager。
 * トリアージアクション:
   1. Issue が関連性がなくなったか重複している場合は閉じる。
   1. [優先度ラベル](/handbook/product-development/how-we-work/issue-triage/#priority)を割り当てる。
   1. [重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)を割り当てる。
   1. バージョン付きマイルストーンまたは `Backlog` のいずれかを割り当てる。
 
-##### 非フロントエンドのバグ（バックエンドの可能性が高い）
+##### 非フロントエンドのバグ（バックエンドの可能性が高い） {#non-frontend-bugs-likely-backend}
 
 このセクションには、優先度と重大度のない `~"type::bug"` ラベルを持つ Issue が含まれます。`~"customer"` ラベルを持つ Issue と持たない Issue にさらに分けられています。
 
-* トリアージオーナー: そのグループのバックエンドエンジニアリングマネージャー。
+* トリアージオーナー: そのグループの Backend Engineering Manager。
 * トリアージアクション:
   1. Issue が関連性がなくなったか重複している場合は閉じる。
   1. [優先度ラベル](/handbook/product-development/how-we-work/issue-triage/#priority)を割り当てる。
   1. [重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)を割り当てる。
   1. バージョン付きマイルストーンまたは `Backlog` のいずれかを割り当てる。
 
-##### SLO を超過した severity::1 & severity::2 のバグ
+##### SLO を超過した severity::1 & severity::2 のバグ {#severity1--severity2-bugs-past-slo}
 
-このセクションには、設定された重大度ラベルに基づいてターゲット SLO を超過したバグが含まれます。これは[SLO 検出の見逃し](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#missed-slo)トリアージポリシーに基づいています。
+このセクションには、設定された重大度ラベルに基づいてターゲット SLO を超過したバグが含まれます。これは[SLO 未達の検出](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#missed-slo)トリアージポリシーに基づいています。
 
-##### ~customer バグのヒートマップ
+##### ~customer バグのヒートマップ {#heatmap-for-customer-bugs}
 
 このセクションには、`~"customer"` および `~"bug"` でラベル付けされたグループのオープン Issue を表示するテーブルが含まれます。割り当てられた重大度と優先度ラベルによる内訳があります。
 
@@ -199,7 +199,7 @@ Issue の割り当て先を変更するには、上記のファイルに対し�
 マージリクエストは 28 日間人間の活動がない場合にアイドル状態と見なされます。
 このレポートはそれらを収集し、著者・レビュアー・メンテナーへのリマインダーなど、MR を前進させるための行動を促します。
 
-* トリアージオーナー: そのグループのエンジニアリングマネージャー。
+* トリアージオーナー: そのグループの Engineering Manager。
 * トリアージ頻度: 毎月 8 日と 23 日。
 * トリアージアクション:
   1. マージにかかる時間を短縮できる手順があるかどうかを特定するためにこれらのマージリクエストをレビューする。手順には以下が含まれます:
@@ -208,28 +208,28 @@ Issue の割り当て先を変更するには、上記のファイルに対し�
 
 レポートの例: [Merge requests requiring attention for `group::access` - 2020-11-08](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/751)。現在のレポートは [triage-reports プロジェクト](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues?scope=all&utf8=%E2%9C%93&state=all&search=%22Merge+Requests+requiring+attention%22)で確認できます。
 
-#### 注意が必要なグループレベルのフィーチャーフラグ
+#### 注意が必要なグループレベルのフィーチャーフラグ {#group-level-feature-flags-that-may-need-attention}
 
 このレポートには、[DevOps ステージ](/handbook/product/categories/#devops-stages)内のグループのコードベースで 2 つ以上のリリースにわたって有効になっているフィーチャーフラグが含まれます。
 
 DRI はこれらのフィーチャーフラグをレビューして、完全に削除できるかどうかを判断するか、または期限切れのフィーチャーフラグが適切に削除されるように別の Issue を作成する責任があります。
 
-* トリアージオーナー: そのグループのエンジニアリングマネージャー。
+* トリアージオーナー: そのグループの Engineering Manager。
 * トリアージ頻度: 毎月 1 日。
 * トリアージアクション:
   1. フィーチャーフラグをレビューして、以下のいずれかが可能かどうかを特定する:
-     1. エンジニアリング DRI が削除する。
+     1. Engineering DRI が削除する。
      1. グループの PM が削除をスケジュールするための別の Issue で追跡する。
 
 レポートの例: [Feature Flags requiring attention for `group::continuous integration` - 2021-03-01](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/2161)。現在のレポートは [triage-reports プロジェクト](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues?scope=all&utf8=%E2%9C%93&state=all&search=%22Feature+flags+requiring+attention%22)で確認できます。
 
 フィーチャーフラグのトリアージレポートは、[gitlab-feature-flag-alert](https://gitlab.com/gitlab-org/gitlab-feature-flag-alert) プロジェクトを使用して [quality toolbox スケジュールパイプライン](https://gitlab.com/gitlab-org/quality/toolbox/-/pipeline_schedules)で生成されます。
 
-#### グループレベルのバグ優先度付けレポート
+#### グループレベルのバグ優先度付けレポート {#group-level-bug-prioritization-report}
 
 このレポートには、次のマイルストーンに向けて優先順位付けが必要な `~"type::bug"` のオープン Issue のトップ 10 が[グループ](/handbook/product/categories/)レベルで含まれます。`~"severity::`・`~"bug::vulnerability"` および `~"customer"` ラベルを持つ Issue にさらに分けられており、Issue の古い順にリストされています。
 
-* トリアージオーナー: そのグループのプロダクトマネージャーとエンジニアリングマネージャー。
+* トリアージオーナー: そのグループの Product Manager と Engineering Manager。
 * トリアージ頻度: 毎月 2 日。
 * トリアージアクション:
      1. Issue が関連性がなくなったか重複している場合は閉じる。
@@ -239,15 +239,15 @@ DRI はこれらのフィーチャーフラグをレビューして、完全に�
 
 レポートの例: [2023-11-01 - Bugs Prioritization for "group::source code" for upcoming milestone - 16.7](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/14732)。現在のレポートは [triage-reports プロジェクト](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/?sort=updated_desc&state=all&search=Bugs%20Prioritization%20for&first_page_size=100)で確認できます。
 
-#### トリアージレポートの自動クローズ
+#### トリアージレポートの自動クローズ {#auto-closure-of-triage-reports}
 
-`~"triage report"` ラベルを持つ 2 週間以上オープン状態のレポートは、[古いトリアージレポートのクローズ](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/close-reports/close-old-triage-reports.yml)自動化によって自動的にクローズされます。
+`~"triage report"` ラベルを持つ 2 週間を超えてオープン状態のレポートは、[古いトリアージレポートのクローズ](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/close-reports/close-old-triage-reports.yml)自動化によって自動的にクローズされます。
 
-## リアクティブワークフロー自動化
+## リアクティブワークフロー自動化 {#reactive-workflow-automation}
 
 リアクティブトリアージ自動化は、スケジュールされたトリアージ自動化を補完するものであり、リアルタイムのフィードバックが改善された開発者体験を提供します。これは [triage-ops](https://gitlab.com/gitlab-org/quality/triage-ops) によって処理されます。
 
-### コミュニティ関連のリアクティブワークフロー自動化
+### コミュニティ関連のリアクティブワークフロー自動化 {#community-related-reactive-workflow-automation}
 
 **注意**: ブラケット（`[]`）内のリアクティブコマンド引数はオプションと見なされます。
 
@@ -313,7 +313,7 @@ graph LR
     class WORKFLOW_READY_FOR_REVIEW_LABEL,AUTOMATED_REVIEWER_REQUEST_GENERIC triageOpsClass;
 ```
 
-#### コミュニティコントリビューションお礼ノート
+#### コミュニティコントリビューションお礼ノート {#community-contribution-thank-you-note}
 
 * 自動化条件:
   * MR がオープンされた
@@ -324,7 +324,7 @@ graph LR
   * MR を著者に割り当てる
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/thank_contribution.rb>
 
-#### 自動レビューリクエスト
+#### 自動レビューリクエスト {#automated-review-request}
 
 * 自動化条件:
   * `workflow::ready for review` ラベルが追加された
@@ -336,7 +336,7 @@ graph LR
   * MR にレビュアーがいない場合は、MR のグループ（またはランダムなコーチ）に基づいてコーチに通知し割り当てる（レビュアーとして）。レビュー・再割り当て・`workflow::in dev` ラベルの設定を促す
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/automated_review_request_generic.rb>
 
-#### ドキュメントコントリビューションの自動レビューリクエスト
+#### ドキュメントコントリビューションの自動レビューリクエスト {#automated-review-request-for-doc-contributions}
 
 * 自動化条件:
   * `workflow::ready for review` ラベルが追加された
@@ -345,10 +345,10 @@ graph LR
   * MR にドキュメントの変更がある
   * ドキュメントレビューを求める既存のノートがない
 * 自動化アクション:
-  * `CODEOWNERS` ファイルからマッピングされた変更に基づいて関連するテクニカルライターにレビューを依頼する
+  * `CODEOWNERS` ファイルからマッピングされた変更に基づいて関連する Technical Writer にレビューを依頼する
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/automated_review_request_doc.rb>
 
-#### UX コントリビューションの自動レビューリクエスト
+#### UX コントリビューションの自動レビューリクエスト {#automated-review-request-for-ux-contributions}
 
 * 自動化条件:
   * `workflow::ready for review` ラベルが追加された
@@ -360,28 +360,28 @@ graph LR
   * Slack の通知について著者に知らせるノートを投稿する
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/automated_review_request_ux.rb>
 
-#### リアクティブ `help` コマンド
+#### リアクティブ `help` コマンド {#reactive-help-command}
 
 * 自動化条件:
   * マージリクエストに `@gitlab-bot help` で始まる新しい MR ノートが投稿された
   * ノートが MR の著者またはチームメンバーによって投稿された
 * 自動化アクション:
-  * ランダムな MR コーチにヘルプのために通知し、割り当てる（レビュアーとして）
+  * ランダムな MR coach にヘルプのために通知し、割り当てる（レビュアーとして）
 * レート制限: 著者/MR ごとに 1 時間に 1 回、またはチームメンバー/MR ごとに 1 時間に 100 回
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/command_mr_help.rb>
 
-#### リアクティブ `ready` コマンド
+#### リアクティブ `ready` コマンド {#reactive-ready-command}
 
 * 自動化条件:
   * `@gitlab-bot ready [@user1 @user2 ...]`・`@gitlab-bot review [@user1 @user2 ...]`・または `@gitlab-bot request_review [@user1 @user2 ...]` で始まる新しい MR ノート
   * ノートが MR の著者またはチームメンバーによって投稿された
 * 自動化アクション:
   * MR に `workflow::ready for review` ラベルを追加する
-  * 提供されたユーザー（任意の GitLab コミュニティメンバー）をレビュアーとして割り当てる。そうでない場合はランダムな MR コーチをレビュアーとして選ぶ
+  * 提供されたユーザー（任意の GitLab コミュニティメンバー）をレビュアーとして割り当てる。そうでない場合はランダムな MR coach をレビュアーとして選ぶ
 * レート制限: 著者/MR ごとに 1 時間に 1 回、またはチームメンバー/MR ごとに 1 時間に 100 回
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/command_mr_request_review.rb>
 
-#### リアクティブ `unassign_review` コマンド
+#### リアクティブ `unassign_review` コマンド {#reactive-unassign_review-command}
 
 * 自動化条件:
   * `@gitlab-bot unassign_review` で始まる新しい MR ノート
@@ -391,7 +391,7 @@ graph LR
 * レート制限: 1 時間に 100 回
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/command_mr_unassign_review.rb>
 
-#### リアクティブ `label` および `unlabel` コマンド
+#### リアクティブ `label` および `unlabel` コマンド {#reactive-label-and-unlabel-commands}
 
 * 自動化条件:
   * `@gitlab-bot label ~"label-name"` または `@gitlab-bot unlabel ~"label-name"` で始まる新しいノート（`label-name` が以下に一致する場合）:
@@ -412,7 +412,7 @@ graph LR
 * レート制限: リクエスター/アイテムごとに 1 時間に 60 回
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/command_mr_label.rb>
 
-#### アイドル/ステールラベルリムーバー
+#### アイドル/ステールラベルリムーバー {#idlestale-label-remover}
 
 * 自動化条件:
   * MR の著者がノートを投稿するか、MR に新しい変更をプッシュした
@@ -422,17 +422,17 @@ graph LR
   * `idle` および `stale` ラベルを削除する
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/remove_idle_labels_on_activity.rb>
 
-#### コードレビュー体験フィードバック
+#### コードレビュー体験フィードバック {#code-review-experience-feedback}
 
 * 自動化条件:
   * MR がマージまたはクローズされた
   * MR に `Community contribution` ラベルが設定されている
   * フィードバックを求める既存のノートがない
 * 自動化アクション:
-  * MR の著者にコントリビューション体験についてのノートを投稿する
+  * MR の著者にコントリビューション体験を尋ねるノートを投稿する
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/code_review_experience_feedback.rb>
 
-#### リアクティブ `feedback` コマンド
+#### リアクティブ `feedback` コマンド {#reactive-feedback-command}
 
 * 自動化条件:
   * `@gitlab-feedback` で始まる新しい MR ノート
@@ -442,7 +442,7 @@ graph LR
 * レート制限: リクエスター/MR ごとに 1 日に 1 回
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/command_mr_feedback.rb>
 
-#### ハッカソンラベラー
+#### ハッカソンラベラー {#hackathon-labeler}
 
 * 自動化条件:
   * MR がハッカソンの日程中にオープンまたは更新された
@@ -453,7 +453,7 @@ graph LR
   * `Hackathon` ラベルを追加する
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/hackathon_label.rb>
 
-#### スパム検出器
+#### スパム検出器 {#spam-detector}
 
 * 自動化条件:
   * MR に `Community contribution` ラベルが設定されている
@@ -465,17 +465,17 @@ graph LR
   * MR をクローズする
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/detect_and_flag_spam.rb>
 
-### エンジニアリングワークフロー自動化
+### エンジニアリングワークフロー自動化 {#engineering-workflow-automation}
 
-#### アベイラビリティ Issue の優先度確保
+#### アベイラビリティ Issue の優先度確保 {#ensure-priorities-for-availability-issues}
 
-`~"availability"` でラベル付けされた Issue には、<https://handbook.gitlab.com/handbook/product-development/how-we-work/issue-triage/#availability-prioritization> のガイドラインに従って最低限が適用されます。
+`~"availability"` でラベル付けされた Issue には、<https://handbook.gitlab.com/handbook/product-development/how-we-work/issue-triage/#availability-prioritization> のガイドラインに従って最低限の優先度が適用されます。
 
-#### 非推奨のバックステージラベルが追加されないことを確保
+#### 非推奨のバックステージラベルが追加されないことを確保 {#ensure-no-deprecated-backstage-labels-are-added}
 
 `~"backstage [DEPRECATED]"` が追加されると、それを削除し、追加すべきでない理由についてのヒントと代替案を提供します。
 
-#### 顧客関連リンクが追加されたときに customer ラベルを追加
+#### 顧客関連リンクが追加されたときに customer ラベルを追加 {#add-customer-label-whenever-a-customer-associated-link-is-added}
 
 顧客関連リンクが適用されると `~"customer"` ラベルが適用されます。
 
@@ -484,7 +484,7 @@ graph LR
 * `gitlab.zendesk.com`
 * `gitlab.my.salesforce.com`
 
-#### サブタイプからタイプラベルを追加
+#### サブタイプからタイプラベルを追加 {#add-type-label-from-subtype}
 
 サブタイプラベルが追加されると、対応するタイプラベルが追加されます。
 サブタイプラベルを持つ現在のタイプラベルは:
@@ -492,7 +492,7 @@ graph LR
 * `~"type::feature"`
 * `~"type::tooling"`
 
-#### 関連 Issue からのマージリクエストタイプラベルのコピー
+#### 関連 Issue からのマージリクエストタイプラベルのコピー {#merge-request-type-label-copy-from-related-issues}
 
 * 自動化条件:
   * タイプラベルを持たないマージリクエストのオープンまたは更新であり、タイプラベルを持つ関連 Issue がある。
@@ -500,27 +500,27 @@ graph LR
   * Issue のタイプラベルがマージリクエストに適用される
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/apply_type_label_from_related_issue.rb>
 
-#### リアクティブ `retry_job` コマンド
+#### リアクティブ `retry_job` コマンド {#reactive-retry_job-command}
 
 * 自動化条件:
-  * 破損したマスターインシデントで `@gitlab-bot retry_job <job_id>` を含む GitLab チームメンバーからの新しい Issue ノート。
+  * master の破損インシデントで `@gitlab-bot retry_job <job_id>` を含む GitLab チームメンバーからの新しい Issue ノート。
   * この自動化は現在、[gitlab-org/quality/engineering-productivity/master-broken-incidents](https://gitlab.com/gitlab-org/quality/engineering-productivity/master-broken-incidents) プロジェクトからのみ呼び出せます。
 * 自動化アクション:
   * `@gitlab-bot` がターゲットジョブの再試行リクエストを送信し、新しいジョブリンクで返信します。
 * 例: <https://gitlab.com/gitlab-org/quality/engineering-productivity/master-broken-incidents/-/issues/3188#note_1496059720>
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/gitlab_internal_commands/command_retry_pipeline_or_job.rb>
 
-#### リアクティブ `retry_pipeline` コマンド
+#### リアクティブ `retry_pipeline` コマンド {#reactive-retry_pipeline-command}
 
 * 自動化条件:
-  * 破損したマスターインシデントで `@gitlab-bot retry_pipeline <pipeline_id>` を含む GitLab チームメンバーからの新しい Issue ノート。
+  * master の破損インシデントで `@gitlab-bot retry_pipeline <pipeline_id>` を含む GitLab チームメンバーからの新しい Issue ノート。
   * この自動化は現在、[gitlab-org/quality/engineering-productivity/master-broken-incidents](https://gitlab.com/gitlab-org/quality/engineering-productivity/master-broken-incidents) プロジェクトからのみ呼び出せます。
 * 自動化アクション:
   * `@gitlab-bot` がターゲットパイプラインのすべての失敗ジョブを再試行するリクエストを送信し、パイプラインリンクで返信します。
 * 例: <https://gitlab.com/gitlab-org/quality/engineering-productivity/master-broken-incidents/-/issues/3187#note_1496076800>
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/gitlab_internal_commands/command_retry_pipeline_or_job.rb>
 
-#### リアクティブ `delete_bot_comment` コマンド
+#### リアクティブ `delete_bot_comment` コマンド {#reactive-delete_bot_comment-command}
 
 * 自動化条件:
   * ボットコメントスレッドへの返信として GitLab チームメンバーによって投稿された `@gitlab-bot delete_bot_comment` を含む新しい Issue またはマージリクエストノート。
@@ -534,9 +534,9 @@ graph LR
 * 例: コマンドを実行した結果としてコメントが削除されるため、利用できません
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/gitlab_internal_commands/command_delete_bot_comment.rb>
 
-### データベース関連のリアクティブワークフロー自動化
+### データベース関連のリアクティブワークフロー自動化 {#database-related-reactive-workflow-automation}
 
-#### データベースレビュー体験フィードバック
+#### データベースレビュー体験フィードバック {#database-review-experience-feedback}
 
 * 自動化条件:
   * MR がマージまたはクローズされた
@@ -546,13 +546,13 @@ graph LR
   * MR の著者にデータベースレビュープロセスを改善するためのフィードバックを求めるノートを投稿する
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/database/database_review_experience_feedback.rb>
 
-## スケジュールされたワークフロー自動化
+## スケジュールされたワークフロー自動化 {#scheduled-workflow-automation}
 
 スケジュールされたトリアージ自動化は、レポートとマイルストーン移行を支援するために Issue にラベルを付けたり更新したりするために実行されます。これは [triage-ops](https://gitlab.com/gitlab-org/quality/triage-ops) によって処理されます。
 
-### コミュニティ関連のスケジュールされたワークフロー自動化
+### コミュニティ関連のスケジュールされたワークフロー自動化 {#community-related-scheduled-workflow-automation}
 
-#### 担当者のいる Issue から `Seeking community contributions` を削除する
+#### 担当者のいる Issue から `Seeking community contributions` を削除する {#remove-seeking-community-contributions-from-issues-with-an-assignee}
 
 Issue が割り当てられると、重複した作業を防ぐために新しいコントリビューションを受け付けるべきではありません。
 
@@ -562,7 +562,7 @@ Issue が割り当てられると、重複した作業を防ぐために新し�
   * `Seeking community contributions` ラベルが削除される
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-seeking-community-contributions.yml>
 
-#### 無効なワークフローラベルを持つ Issue から `Seeking community contributions` を削除する
+#### 無効なワークフローラベルを持つ Issue から `Seeking community contributions` を削除する {#remove-seeking-community-contributions-from-issues-with-an-invalid-workflow-label}
 
 Issue に `Seeking community contributions` ラベルが設定されているが、互換性のないワークフローラベルもある場合、その Issue は実際にはコントリビューションを受け入れる準備ができていません。
 
@@ -572,7 +572,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
   * `Seeking community contributions` ラベルが削除される
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-seeking-community-contributions.yml>
 
-#### すべてのマージリクエストから `Seeking community contributions` を削除する
+#### すべてのマージリクエストから `Seeking community contributions` を削除する {#remove-seeking-community-contributions-from-all-merge-requests}
 
 マージリクエストに `Seeking community contributions` を設定することは意味がありません。
 
@@ -582,7 +582,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
   * `Seeking community contributions` ラベルが削除される
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-seeking-community-contributions.yml>
 
-#### コミュニティコントリビューションにラベルを付ける
+#### コミュニティコントリビューションにラベルを付ける {#label-community-contributions}
 
 `gitlab-org` のメンバーではない著者によるマージリクエストには `Community contribution` ラベルが適用されます。このスケジュールされた自動化は、[ウェルカムメッセージ](#community-contribution-thank-you-note)で `Community contribution` を適用するリアクティブ自動化のバックアップです。
 
@@ -594,7 +594,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
 * 例: <https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/30909/#note_0a1c0937d1b2851e9695fb89848d8425dcf28e00>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-community-contributions.yml>
 
-#### コミュニティマージリクエストにマイルストーンを追加する
+#### コミュニティマージリクエストにマイルストーンを追加する {#add-milestone-to-community-merge-requests}
 
 `Community contribution` ラベルを持ちマイルストーンがないマージされたマージリクエストには、自動的に関連するマイルストーンが設定されます。これにより、コミュニティコントリビューションの数値を正確に保つのに役立ちます。
 
@@ -605,34 +605,34 @@ Issue に `Seeking community contributions` ラベルが設定されているが
 * 例: <TBD>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/add-milestone-to-community-merge-requests.yml>
 
-#### アイドル状態のコミュニティマージリクエストにラベルを付ける
+#### アイドル状態のコミュニティマージリクエストにラベルを付ける {#label-idle-community-merge-requests}
 
 * 自動化条件:
-  * `Community contribution` ラベルを持ち、28 日以上人間のインタラクションがないマージリクエスト
+  * `Community contribution` ラベルを持ち、28 日を超えて人間のインタラクションがないマージリクエスト
 * 自動化アクション:
   * `idle` ラベルが適用される
 * 例: <TBD>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-idle-community-mrs.yml>
 
-#### ステールなコミュニティマージリクエストにラベルを付ける
+#### ステールなコミュニティマージリクエストにラベルを付ける {#label-stale-community-merge-requests}
 
 * 自動化条件:
-  * `Community contribution` ラベルを持ち、120 日以上人間のインタラクションがないマージリクエスト
+  * `Community contribution` ラベルを持ち、120 日を超えて人間のインタラクションがないマージリクエスト
 * 自動化アクション:
   * `stale` ラベルが適用される
 * 例: <TBD>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-idle-community-mrs.yml>
 
-#### `stale` なコミュニティマージリクエストに EM を通知する
+#### `stale` なコミュニティマージリクエストに EM を通知する {#nudge-ems-on-community-merge-requests-that-are-stale}
 
 * 自動化条件:
   * `Community contribution` および `stale` ラベルを持つマージリクエスト
 * 自動化アクション:
-  * エンジニアリングマネージャーに通知し、GitLab チームメンバーが作業を引き継ぐか、マージリクエストをクローズするかを決定するよう求める
+  * Engineering Manager に通知し、GitLab チームメンバーが作業を引き継ぐか、マージリクエストをクローズするかを決定するよう求める
 * 例: <TBD>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/nudge-stale-community-contributions.yml>
 
-#### レビューを待っているコミュニティマージリクエストに関連コーチを通知する
+#### レビューを待っているコミュニティマージリクエストに関連コーチを通知する {#nudge-relevant-coach-on-community-merge-requests-that-are-waiting-for-a-review}
 
 * 自動化条件:
   * `Community contribution` および `workflow::ready for review` ラベルを持ち、`automation:reviewers-reminded` ラベルのないマージリクエスト
@@ -643,7 +643,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
 * 例: <https://gitlab.com/gitlab-org/gitlab-pages/-/merge_requests/788#note_1011327312>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/community/hygiene/ping-inactive-reviewers.yml>
 
-#### レビューを待っているコミュニティマージリクエストに割り当てられたレビュアーを通知する
+#### レビューを待っているコミュニティマージリクエストに割り当てられたレビュアーを通知する {#nudge-assigned-reviewers-on-community-merge-requests-that-are-waiting-for-a-review}
 
 * 自動化条件:
   * `Community contribution` および `workflow::ready for review` ラベルを持ち、`automation:reviewers-reminded` ラベルのないマージリクエスト
@@ -654,15 +654,15 @@ Issue に `Seeking community contributions` ラベルが設定されているが
 * 例: <https://gitlab.com/gitlab-org/gitlab-runner/-/merge_requests/3460#note_1011327399>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/community/hygiene/ping-inactive-reviewers.yml>
 
-### エンジニアリングワークフロー自動化
+### エンジニアリングワークフロー自動化 {#engineering-workflow-automation-1}
 
-#### マイルストーンの再スケジュール
+#### マイルストーンの再スケジュール {#milestone-reschedule}
 
 現在のリリースを逃したオープン状態の Issue とマージリクエストは、次のアクティブなマイルストーンに再スケジュールされます。これにより、計画されたマイルストーン内で完了しなかった保留中の作業が特定されます。
 
 **注意:** 機密 Issue は `missed` ラベルの適用の一部としてスキップされます。詳細については[この Issue](https://gitlab.com/gitlab-org/quality/triage-ops/-/issues/45) を参照してください。
 
-* 自動化条件: 現在のマイルストーンを逃したオープン状態の Issue またはマージリクエスト（現在日 `>=` 月の第 3 水曜日）
+* 自動化条件: 現在のマイルストーンを逃したオープン状態の Issue またはマージリクエスト（現在日が `>= その月の第 3 水曜日` を満たす場合）
 * 自動化アクション:
   * Issue とマージリクエストが次のマイルストーンに再スケジュールされる
   * `~missed:x.y` ラベルが適用される（`x.y` は現在のマイルストーン）
@@ -670,7 +670,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
 * 例: [Rescheduled Issue](https://gitlab.com/gitlab-org/gitlab-ce/issues/63145)
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/missed-resources.yml>
 
-#### Missed deliverable
+#### 未達の成果物 {#missed-deliverable}
 
 `~Deliverable` として計画されているが `~missed:x.y` ラベルを持つオープン状態の Issue とマージリクエストには `~missed-deliverable` ラベルが適用されます。
 
@@ -682,7 +682,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
   * `~missed-deliverable` ラベルが適用される。
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/missed-resources.yml>
 
-#### マイルストーンのない Deliverable
+#### マイルストーンのない Deliverable {#deliverable-with-no-milestone}
 
 マイルストーンなしで `~Deliverable` ラベルを持つ Issue にはマイルストーン `%Backlog` が設定されます。
 
@@ -693,7 +693,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
   * （Issue のみ）マイルストーンが `%Backlog` に設定される
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/remove-far-deliverable.yml>
 
-#### Missed SLO {#missed-slo}
+#### SLO 未達 {#missed-slo}
 
 重大度ラベルを持ち[SLO ターゲット](/handbook/product-development/how-we-work/issue-triage/#severity)を逃した Issue には `~missed-SLO` ラベルが付けられます。経過時間の計算は重大度ラベルが適用された日付から開始されます。これにより SLO ターゲットの遵守状況のレポートが可能になります。
 
@@ -705,7 +705,7 @@ Issue に `Seeking community contributions` ラベルが設定されているが
 * 例: <https://gitlab.com/gitlab-org/gitlab-ce/issues/61662>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-missed-slo.yml>
 
-#### バグ優先度ラベルの推論
+#### バグ優先度ラベルの推論 {#bug-priority-label-inference}
 
 severity 1 または severity 2 ラベルを持つが優先度ラベルのないバグには、同等の優先度ラベルが付けられます。たとえば、優先度ラベルのない `~severity::1` `~"type::bug"` には `~priority::1` が適用されます。
 
@@ -715,9 +715,9 @@ severity 1 または severity 2 ラベルを持つが優先度ラベルのない
   * 同じレベルの `~priority::*` ラベルを適用する
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/set-priority-from-severity.yml>
 
-#### マスター破損の分類
+#### master の破損の分類 {#master-broken-categorization}
 
-`~"master:broken"` ラベルを持つ Issue またはマージリクエストには `~"priority::1"` および `~"severity::1"` ラベルが適用されます。これにより、マスターを壊すリクエストがレポートのために十分に分類されることが保証されます。
+`~"master:broken"` ラベルを持つ Issue またはマージリクエストには `~"priority::1"` および `~"severity::1"` ラベルが適用されます。これにより、master を壊すリクエストがレポートのために十分に分類されることが保証されます。
 
 * 自動化条件:
   * `~"master:broken"` ラベルを持つオープン状態の Issue またはマージリクエスト。
@@ -726,7 +726,7 @@ severity 1 または severity 2 ラベルを持つが優先度ラベルのない
 * 例: <https://gitlab.com/gitlab-org/gitlab-ee/issues/12363>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/label-reminders.yml#L27-45>
 
-#### 興味深い機能提案の特定
+#### 興味深い機能提案の特定 {#identify-interesting-feature-proposals}
 
 この自動化はアップボートを使用して潜在的かつ人気のある提案を特定します。これにより、人々が望んでいると示した機能提案を特定するのに役立ちます。
 
@@ -740,7 +740,7 @@ severity 1 または severity 2 ラベルを持つが優先度ラベルのない
   * 人気: <https://gitlab.com/gitlab-org/gitlab-ce/issues/55638#note_b15ea9cbc76b8dea82963d7f14a4a65da52c2b09>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/discover.yml>
 
-#### 非アクティブなバグの自動クローズ
+#### 非アクティブなバグの自動クローズ {#auto-close-inactive-bugs}
 
 GitLab はコントリビューターがバグを報告する際に費やした時間を大切にしています。しかし、バグが非常に長い期間非アクティブのままの場合、自動クローズの対象となります。
 以下は非アクティブなバグの特定と自動クローズのポリシーです。
@@ -754,9 +754,9 @@ GitLab はコントリビューターがバグを報告する際に費やした�
   * 過去 7 日間に gitlab-bot 以外の誰かからのコメントがある Issue はアクティブと見なされ、`~"stale"` が削除されます。
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/close-stale-bugs.yml>
 
-#### Issue にティアラベルを促す
+#### Issue にティアラベルを促す {#prompt-for-tier-labels-on-issues}
 
-ティアラベルは機能のライセンスティアを指定するために Issue に適用する必要があります。このポリシーは、現在のマイルストーンにスケジュールされ `~direction` でラベル付けされた Issue に、適用されたグループラベルのプロダクトマネージャーにライセンスティアラベルを追加するよう促します。
+ティアラベルは機能のライセンスティアを指定するために Issue に適用する必要があります。このポリシーは、現在のマイルストーンにスケジュールされ `~direction` でラベル付けされた Issue に、適用されたグループラベルの Product Manager にライセンスティアラベルを追加するよう促します。
 
 適用可能なティアラベルは以下のとおりです:
 
@@ -765,45 +765,45 @@ GitLab はコントリビューターがバグを報告する際に費やした�
 * ~"GitLab Ultimate"
 
 * 自動化条件:
-  * ティアラベルがなく、グループと `~direction` ラベルを持ち、現在のマイルストーンにある Issue
+  * ティアラベルがなく、グループと `~direction` ラベルを持ち、現在のマイルストーンにあるオープン状態の Issue
 * 自動化アクション:
   * グループの関連する PM に言及し、適切なラベルを追加するよう求める
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/prompt-for-tier-labels.yml>
 
-#### Issue にタイプラベルを促す
+#### Issue にタイプラベルを促す {#prompt-for-type-labels-on-issues}
 
 [タイプラベル](https://docs.gitlab.com/ee/development/labels/index.html#type-labels)はチームの Issue リファインメント中の可視性と発見可能性を高めるために Issue に適用されます。このポリシーは `gitlab-org` チームメンバーが作成した Issue に適用され、最初の 1 週間以内にタイプラベルを追加するよう著者を促します。
 
 タイプラベルは Issue が[グループトリアージレポート](#group-level-bugs-features-and-deferred-ux)に表示され、正しいセクションに追加されることを確保します。
 
 * 自動化条件:
-  * タイプラベルが適用されていない、過去 7 日間にオープンされた、`gitlab-org` メンバーが作成した Issue
+  * 過去 7 日間に `gitlab-org` メンバーが作成した、タイプラベルが適用されていないオープン状態の Issue
 * 自動化アクション:
   * 適切なタイプラベルを追加するよう著者に言及する
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/prompt-team-member-type-label.yml>
 
-##### データ
+##### データ {#data}
 
 * [タイプラベル別のオープン Issue 数を表示するグラフ](https://10az.online.tableau.com/#/site/gitlab/views/DRAFTIssueTypesDetail/TotalIssuesbyTypes?:iid=1)
 
-#### バグ SLO 警告
+#### バグ SLO 警告 {#bug-slo-warning}
 
 バグには[修正の SLO](/handbook/product-development/how-we-work/issue-triage/#severity)を示す重大度ラベルがあります。この自動化ポリシーは、SLO 閾値に近づいているグループのバグについてマネージャーに通知することを目的としています。
 
 * 自動化条件:
-  * `~"type::bug"` でラベル付けされ `~severity::1` または `~severity::2` を持つ Issue
+  * `~"type::bug"` でラベル付けされ `~severity::1` または `~severity::2` を持つオープン状態の Issue
   * 現在の重大度ラベルが適用されてから今日までの時間が SLO 閾値の 75% を超えている
 * 自動化アクション:
   * 差し迫った SLO 違反を認識させるために Issue の EM と PM に言及する
 * 例: <TBD>
 * ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/stages/hygiene/comment-slo-breaching-bugs.yml>
 
-#### ~infradev Issue に重大度ラベル・優先度ラベル・マイルストーンを設定するリマインダー
+#### ~infradev Issue に重大度ラベル・優先度ラベル・マイルストーンを設定するリマインダー {#reminder-on-infradev-issues-to-set-severity-label-priority-label-and-milestone}
 
-`~infradev` ラベルを持つ Issue には[重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)・[優先度ラベル](/handbook/product-development/how-we-work/issue-triage/#priority)・マイルストーンが設定されている必要があります。この自動化ポリシーは、これらの属性のいずれかが欠落しているマネージャーにそのような Issue について通知することを目的としています。
+~infradev ラベルを持つ Issue には[重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)・[優先度ラベル](/handbook/product-development/how-we-work/issue-triage/#priority)・マイルストーンが設定されている必要があります。この自動化ポリシーは、これらの属性のいずれかが欠けている Issue について、マネージャーに通知することを目的としています。
 
 * 自動化条件:
-  * `~infradev` でラベル付けされ、重大度ラベルがないか、優先度ラベルがないか、マイルストーンが設定されていない Issue
+  * `~infradev` でラベル付けされ、重大度ラベルがないか、優先度ラベルがないか、マイルストーンが設定されていないオープン状態の Issue
   * Issue に `~"automation:infradev-missing-labels"` が設定されていない
 * 自動化アクション:
   * `~"automation:infradev-missing-labels"` ラベルが適用される
@@ -817,12 +817,39 @@ GitLab はコントリビューターがバグを報告する際に費やした�
 1. `~"automation:infradev-missing-labels"` は 2 週間後に自動的に削除され、上記の自動化条件がまだ満たされている場合は新しいメッセージが投稿されます。
    これにより、実質的に 2 週間ごとに Issue にリマインダーが投稿されることが保証されます。
 
-#### ~customer ~type::bug Issue に重大度ラベルを設定するリマインダー
+#### Infradev の SLO {#infradev-slos}
 
-`~customer` および `~type::bug` ラベルを持つ Issue には[重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)が設定されている必要があります。この自動化ポリシーは、`~customer` バグが適時にトリアージされるようにチームメンバーに重大度を設定するよう促すことを目的としています。
+[Infradev](/handbook/engineering/workflow/#infradev) の Issue には、[重大度](/handbook/product-development/how-we-work/issue-triage/#severity-slos)に基づく完了目標があります。この自動化ポリシーは、その目標に対応する期日を設定し、目標の未達が近づいている Issue や、すでに未達となった Issue にフラグを付けます。
+
+このポリシーは、`gitlab-org` と `gitlab-com/gl-infra` 全体を対象に毎日実行されます。通常は [Infrastructure, Platform triage-ops プロジェクト](https://gitlab.com/gitlab-com/gl-infra/triage-ops/)を使用する `gitlab-com/gl-infra` のプロジェクトも含め、infradev の SLO を適用する唯一の自動化です。
+
+SLO は、現在の重大度ラベルが適用された時点から営業日（月曜日から金曜日）で数えます。`~severity::1` は 5 日、`~severity::2` は 20 日、`~severity::3` は 40 日、`~severity::4` は 60 日です。
 
 * 自動化条件:
-  * `~customer` および `~type::bug` でラベル付けされた、重大度ラベルが設定されていない Issue
+  * `~infradev` ラベルと重大度ラベルが付いたオープン状態の Issue
+* 自動化アクション:
+  * Issue に `~"automation:due-date-override"` ラベルが付いている場合を除き、すべての重大度について期日を SLO の終了時点に設定します
+  * `~severity::1` と `~severity::2` では、SLO の 50% が経過すると `~"SLO::Near Miss"` ラベルを適用します
+  * `~severity::1` と `~severity::2` では、SLO が経過すると `~"SLO::Missed"` ラベルを適用します
+  * Near Miss と Missed のメッセージでは、担当者、および `~"group::Networking & Incident Management"` と `~"group::Observability"` の担当チームにメンションします
+* ポリシー: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/groups/gitlab-org/production-engineering/slo-infradev.yml>
+
+自動化は、期日が SLO の終了時点と異なるたびに、期日をその時点にリセットします。SLO を超過した Issue に現実的な目標日を設定する場合など、合意済みの別の期日を維持するには、次の手順に従います。
+
+1. `~"automation:due-date-override"` ラベルを追加します。
+1. 期日が異なる理由と、承認者を説明するコメントを追加します。
+1. 期日を設定します。
+
+以降、自動化はラベルが削除されるまで期日を変更しません。`~"SLO::Near Miss"` と `~"SLO::Missed"` ラベルは引き続き重大度ラベルが適用された時点に基づくため、期日の上書きによって SLO の未達が隠れることはありません。
+
+同じラベルを使用すると、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/#timeline-that-we-expect-for-reviews-to-be-completed)でも手動で設定した期日を維持できます。
+
+#### ~customer ~type::bug Issue に重大度ラベルを設定するリマインダー {#reminder-on-customer-typebug-issues-to-set-severity-label}
+
+~customer および ~type::bug ラベルを持つ Issue には[重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)が設定されている必要があります。この自動化ポリシーは、~customer バグが適時にトリアージされるようにチームメンバーに重大度を設定するよう促すことを目的としています。
+
+* 自動化条件:
+  * `~customer` および `~type::bug` でラベル付けされた、重大度ラベルが設定されていないオープン状態の Issue
   * Issue に `~"automation:customer-bug-missing-labels"` が設定されていない
 * 自動化アクション:
   * `~"automation:customer-bug-missing-labels"` ラベルが適用される
@@ -833,17 +860,17 @@ GitLab はコントリビューターがバグを報告する際に費やした�
 
 1. `~"automation:customer-bug-missing-labels"` は Issue に重大度ラベルが設定されると自動的に削除されます。
 
-#### タイプラベルのない新しい Epic にノートを投稿する
+#### タイプラベルのない新しいエピック にノートを投稿する {#post-a-note-on-new-epics-missing-the-type-label}
 
-新しい Epic が作成されると、著者にタイプラベルの追加を検討するよう求めるノートを投稿します。
+新しいエピック が作成されると、著者にタイプラベルの追加を検討するよう求めるノートを投稿します。
 
 * 自動化条件:
-  * gitlab/gitlab-org グループ配下の新しい Epic
+  * gitlab/gitlab-org グループ配下の新しいエピック
   * `~type::*` ラベルが存在しない場合
 * 自動化アクション:
-  * `~type::feature`・`~type::maintenance`・`~type::bug`・`~type::ignore` のいずれかのラベルを追加することを検討するよう著者に求めるコメントを投稿する
+  * ~type::feature・~type::maintenance・~type::bug・~type::ignore のいずれかのラベルを追加することを検討するよう著者に求めるコメントを投稿する
 
-## リソース
+## リソース {#resources}
 
 * [Issue トリアージポリシー](/handbook/product-development/how-we-work/issue-triage/)。
 * [より広いコミュニティのマージリクエストトリアージポリシー](/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage/)

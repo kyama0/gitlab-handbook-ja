@@ -6,11 +6,11 @@ canonical_path: "/handbook/company/operating-principles/"
 last_updated: "2026-10-21"
 public: true
 upstream_path: /handbook/company/operating-principles/
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-translated_at: "2026-10-25T21:00:25Z"
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+translated_at: "2026-11-02T21:24:38+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-21T12:57:47-04:00"
+lastmod: "2026-11-02T09:35:21-08:00"
 ---
 
 これら 3 つの原則は、すべてのチームメンバーに守ることを期待する **卓越の文化** を土台に築かれています。
@@ -55,6 +55,8 @@ _🎯 自分のことだから行動する。_
 1. 全員が私たちのチームの一員です
 1. 顧客と事業の健全性を深く気にかけます
 1. 予算、人材、全員の時間を効率的に使います
+
+自律性、判断、説明責任の詳細は、[GitLab における「当事者意識」の意味](/handbook/company/operating-principles/ownership-mindset/)を参照してください。
 
 ---
 

@@ -2,9 +2,9 @@
 title: 'ユーザーフィールド'
 description: 'Zendesk ユーザーフィールドに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/users/fields/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T07:33:00+09:00"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T12:07:50-06:00"
+translated_at: "2026-11-02T21:01:15+00:00"
 translator: codex
 stale: false
 ---
@@ -17,23 +17,23 @@ stale: false
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/users/fields)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/users/fields)
-- `CustSuppOps Zendesk Test Suite Generator` が有効
+- テスト情報: [ドキュメント](/handbook/eta/css/testing/zendesk/user-fields/)
 
 {{% /alert %}}
 
-## ユーザーフィールドを理解する
+## ユーザーフィールドを理解する {#understanding-user-fields}
 
-### ユーザーフィールドとは
+### ユーザーフィールドとは {#what-are-user-fields}
 
 ユーザーフィールドは、Zendesk のユーザープロフィールに添付されるカスタムフィールドです。チケットに表示されるチケットフィールドとは異なり、ユーザーフィールドにはユーザー自身に関する情報が保存されます。
 
-### ユーザーフィールドの管理方法
+### ユーザーフィールドの管理方法 {#how-we-manage-user-fields}
 
 Zendesk は UI を通じてユーザーフィールドを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、定められたレビュープロセス、必要に応じたロールバックの実行などが可能になります。
 
 このため、同期リポジトリを使用しています。
 
-### ユーザーフィールドの種類
+### ユーザーフィールドの種類 {#types-of-user-fields}
 
 GitLab で最もよく使用する種類は次のとおりです:
 
@@ -51,7 +51,7 @@ GitLab で最もよく使用する種類は次のとおりです:
 
 完全な一覧については、[Zendesk のドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください
 
-## 管理者タスク
+## 管理者タスク {#administrator-tasks}
 
 {{% alert title="注記" color="primary" %}}
 
@@ -59,7 +59,7 @@ GitLab で最もよく使用する種類は次のとおりです:
 
 {{% /alert %}}
 
-### ユーザーフィールドを表示する
+### ユーザーフィールドを表示する {#viewing-user-fields}
 
 Zendesk のユーザーフィールドを表示するには:
 
@@ -76,7 +76,7 @@ Zendesk のユーザーフィールドを表示するには:
 
 注記: 非アクティブなユーザーフィールドを表示する場合は、`Filter` ボタンをクリックしてアクティブなフィルターを変更する必要がある場合があります
 
-### ユーザーフィールドを作成する
+### ユーザーフィールドを作成する {#creating-a-user-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -162,7 +162,7 @@ custom_field_options:
 
 ピアが MR をレビューして承認した後、MR をマージできます。次回のデプロイ時に Zendesk に同期されます。
 
-### ユーザーフィールドを編集する
+### ユーザーフィールドを編集する {#editing-a-user-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -174,11 +174,11 @@ custom_field_options:
 
 ピアが MR をレビューして承認した後、MR をマージできます。次回のデプロイ時に Zendesk に同期されます。
 
-#### ユーザーフィールドのタイトルを変更する
+#### ユーザーフィールドのタイトルを変更する {#changing-the-title-of-a-user-field}
 
 ユーザーフィールドのタイトルを変更する必要がある場合は、現在の値を `previous_title` 属性にコピーしてから、`title` 属性を変更します。これにより、同期は更新対象のユーザーフィールドを引き続き特定できます。
 
-### ユーザーフィールドを無効化する
+### ユーザーフィールドを無効化する {#deactivating-a-user-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -193,7 +193,7 @@ custom_field_options:
 
 ピアが MR をレビューして承認した後、MR をマージできます。次回のデプロイ時に Zendesk に同期されます。
 
-### ユーザーフィールドを削除する
+### ユーザーフィールドを削除する {#deleting-a-user-field}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -221,12 +221,12 @@ custom_field_options:
 1. `Delete` をクリックします
 1. ポップアップで `Delete` をクリックして変更を送信します
 
-### 例外デプロイを実行する
+### 例外デプロイを実行する {#performing-an-exception-deployment}
 
 ユーザーフィールドの例外デプロイを実行するには、該当するユーザーフィールド同期プロジェクトに移動し、スケジュールパイプラインページで同期項目の再生ボタンをクリックします。これにより、ユーザーフィールドの同期ジョブがトリガーされます。
 
-## よくある問題とトラブルシューティング
+## よくある問題とトラブルシューティング {#common-issues-and-troubleshooting}
 
-### マージ後にユーザーフィールドの変更が表示されない
+### マージ後にユーザーフィールドの変更が表示されない {#not-seeing-user-field-changes-after-a-merge}
 
 ユーザーフィールドは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実行された場合）にのみデプロイされます

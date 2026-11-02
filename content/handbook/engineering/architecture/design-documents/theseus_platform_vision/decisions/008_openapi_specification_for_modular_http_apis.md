@@ -4,11 +4,11 @@ owning-stage: ""
 description: "GitLab が設計した HTTP JSON API を公開するすべてのモジュール型機能に、API Platform の品質基準を満たす OpenAPI 3.1 仕様を同梱し、その作成方法はチームに委ね、Lab Bench がひな形を生成して基準への準拠を強制するという決定。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/008_openapi_specification_for_modular_http_apis/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-23T16:44:29+01:00"
-translated_at: "2026-11-01T07:46:24+00:00"
-stale: false
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+lastmod: "2026-11-02T12:24:35Z"
+translated_at: "2026-11-02T21:17:59+00:00"
 translator: codex
+stale: false
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -55,7 +55,7 @@ API Platform チームはその後、lint ルールセット案（名前付き�
    - **基準の調整。** ルールセットは新しいモジュール型機能向けに設定します。モノリスの生成仕様に合わせて緩和することはしません（項目 7）。
    - **バージョン管理。** 各サービスは、取り込む CI コンポーネントのバージョンとは別に、自身の lint 設定でルールセットを特定のリリースに固定し、参照先が変わるタグを固定先には使用しません。ルールの変更がサービスに反映されるのは、そのサービスが固定先を変更したときだけであり、CI コンポーネントのアップグレード時ではありません。ローカルでの lint 実行にも同じ設定を使用するため、CI と一致します。コンポーネントのバージョンタグは最新のパッチリリースを指すように更新され、サービスは共有コンポーネントをまとめてアップグレードするため、ルールセットを CI コンポーネントに含めると、通常のアップグレードでルールの変更がすべてのサービスに一斉に反映されてしまいます。そのため、ルールセットは CI コンポーネントには含めません。たとえば Redocly では、完全指定のリリースタグでルールセットの URL を指す `extends` エントリを固定に使用します。
    - **ティアのメタデータ。** `x-gitlab-tier` は、モノリスのジェネレーターではデフォルトで `free` に設定されますが、現時点では基準に含めません。モジュール型機能にもティアが引き続き適用される可能性は十分にありますが、従量課金によってその表現方法が変わる可能性があるため、この決定では対応を設計せず、不足事項として記録します。
-   - **登録。** `src/config/specs.js`（`gitlab-org/api-docs` 内）に記載して、ドキュメントを登録します。チームがエントリを追加し、API Platform のコードオーナーが承認します。内部向けドキュメントや、コンポーネントがオプトアウトしているドキュメントは記載しません。公開 API リファレンスは、公開前に `x-gitlab-internal: true` が付いた操作を除去します。その対応が完了するまでは、内部向けの操作を、登録しない別の内部向けドキュメントに配置します。登録されたドキュメントは全体が公開リポジトリに公開されるため、非公開リポジトリ内のドキュメントは登録しません。手順は[公開ガイド](/handbook/engineering/architecture/design-documents/theseus_platform_vision/openapi_publishing/)に記載しています。
+   - **登録。** `src/config/registrations.json`（`gitlab-org/api-docs` 内）に記載して、ドキュメントを登録します。チームがエントリを追加し、API Platform のコードオーナーが承認します。内部向けドキュメントや、コンポーネントがオプトアウトしているドキュメントは記載しません。公開 API リファレンスは、公開前に `x-gitlab-internal: true` が付いた操作を除去します。その対応が完了するまでは、内部向けの操作を、登録しない別の内部向けドキュメントに配置します。登録されたドキュメントは全体が公開リポジトリに公開されるため、非公開リポジトリ内のドキュメントは登録しません。手順は[公開ガイド](/handbook/engineering/architecture/design-documents/theseus_platform_vision/openapi_publishing/)に記載しています。
 1. **方法はチームが選択します：** コードファーストでの生成（モノリスの Grape による方法や、ランタイム固有のジェネレーター）、仕様ファーストでの手書き（Artifact Registry の方法）、または HTTP 契約の proto 定義がある場合は proto からの生成です。いずれも、基準を満たすドキュメントを作成しなければなりません。Lab Bench サービスでは、ルート集合を除くすべてをその方法で定めます。ルート集合は `bench.yaml` に由来します（項目 5）。
 1. **Lab Bench がひな形を生成し、基準への準拠を強制します**（この部分は Lab Bench の合意が必要です）。
    - **正本。** `bench.yaml` が存在する場合、ルート集合についてはこれを正本とし、それ以外のすべて、つまりリクエストとレスポンスのスキーマ、説明、例については仕様を正本とします。`bench.yaml` が存在しない場合は、仕様をすべての正本とします。

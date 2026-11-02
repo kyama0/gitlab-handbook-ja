@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/downstream_consumers/"
-upstream_sha: "2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8"
-lastmod: "2026-10-20T13:32:50-04:00"
-translated_at: "2026-10-20T21:12:55Z"
+upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
+lastmod: "2026-11-02T11:02:28+11:00"
+translated_at: "2026-11-02T21:11:17+00:00"
 translator: "claude"
 stale: false
 ---
@@ -27,7 +27,7 @@ Workplan の価値は、下流のエージェントがそれを使用するこ�
 
 Workplan が存在するとき、ユーザーは Implementation ウィジェットまたは Workplan パネルで **Implement** を選択します。これにより、Duo Chat を開かずに、Duo Developer フロー（`developer/v1`）が非同期に開始します（[Issue 628801](https://gitlab.com/gitlab-org/gitlab/-/work_items/628801)）。
 
-Duo Developer は、Workplan を主要な仕様として扱います。ワークアイテムの説明とコメントは、追加の背景情報としてのみ使用します。
+Duo Developer は、Workplan を主要な仕様として扱います。ワークアイテムの説明とコメントは、追加の背景情報としてのみ使用します。また、[準備状況](readiness.md)のフィードバックの各項目を、ブロッキングでないものも含め、解決すべき指摘として扱います。各項目について、解決するか、解決しなかった理由をマージリクエストの説明に記載します（[マージリクエスト 265980](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265980)）。
 
 前提条件として、Duo Agent Platform のリモートフローを有効にする必要があります。Developer フローが設定されていない場合、**Implement** ボタンは無効になり、ツールチップが表示されます（[Issue 629904](https://gitlab.com/gitlab-org/gitlab/-/work_items/629904)）。
 

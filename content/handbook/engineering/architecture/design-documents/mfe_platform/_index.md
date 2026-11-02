@@ -9,9 +9,9 @@ owning-stage: "Plan"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-23T10:57:11+03:00"
-translated_at: "2026-11-01T05:08:55+00:00"
+upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
+lastmod: "2026-11-02T09:37:44-05:00"
+translated_at: "2026-11-02T21:17:59+00:00"
 translator: codex
 stale: false
 ---
@@ -91,6 +91,11 @@ Duo Chat や Work Items などの製品領域は、
   LabBench モジュールは、単一のソースプロトコルを介して MFE を提供します。モノリスは
   カタログを取得し、自身のオリジンから配信します。モジュールは、モノリスが所有する
   語彙の範囲内で配置場所を宣言します。
+- [ADR 004: パッケージのライフサイクル](decisions/004_packages_group_and_shared_setup.md) -
+  再利用可能なパッケージは `gitlab-org/frontend/toolkit` に置き、
+  `@gitlab/frontend-config` を通じてセットアップを共有し、
+  公開、保守、廃止に関する共通のプロセスに従います。ADR 001 のツール用
+  モノレポを単一のパッケージに改めます。
 
 ## 先行事例と既存の取り組み {#prior-art-and-existing-work}
 
