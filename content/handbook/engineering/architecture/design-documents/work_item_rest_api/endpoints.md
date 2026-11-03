@@ -2,10 +2,10 @@
 title: "ワークアイテム REST API のエンドポイント"
 description: "ワークアイテム REST API のエンドポイントリファレンス。ルート、パラメータ、ペイロード、ページネーション、認可、フィーチャーフラグを説明します。"
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/work_item_rest_api/endpoints/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-22T11:00:44-04:00"
-translated_at: "2026-11-01T14:57:35.491656+00:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/work_item_rest_api/endpoints/"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+lastmod: "2026-11-03T14:00:48-05:00"
+translated_at: "2026-11-03T21:15:03.410688+00:00"
 translator: codex
 stale: false
 ---
@@ -121,11 +121,17 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 
 ## ページネーション {#pagination}
 
-すべてのコレクションエンドポイントはキーセットページネーションを使用し、クライアントには不透明なカーソルとして公開します。リクエストは `cursor` と `per_page` を受け取ります。レスポンスには `X-Next-Cursor` と `X-Prev-Cursor` に加えて、次のページがある場合は `rel="next"` を持つ `Link` ヘッダーが含まれます。`rel="prev"` のリンクはありません。前に戻るには、`X-Prev-Cursor` の値を `cursor` として送信します。これは REST API の他の箇所におけるキーセットページネーションと同じ動作です。
+すべてのコレクションエンドポイントは、内部でキーセットページネーションとオフセットページネーションのどちらを使用していても、ページネーションをキーセット形式の不透明なカーソルとして公開します。リクエストは `cursor` と `per_page` を受け取ります。レスポンスには `X-Next-Cursor` と `X-Prev-Cursor` に加えて、次のページがある場合は `rel="next"` を持つ `Link` ヘッダーが含まれます。`rel="prev"` のリンクはありません。前に戻るには、`X-Prev-Cursor` の値を `cursor` として送信します。これは REST API の他の箇所におけるキーセットページネーションと同じ動作です。
 
 `per_page` はデフォルトで `20`、`1` から `100` までの値を受け付けます。この範囲外の値には HTTP 400 を返します。サーバーは値を範囲内に補正しません。
 
-リストエンドポイントの `popularity` や `milestone_due` によるソートなど、一部の並び順にはキーセット形式がありません。その場合、サーバーは同じ不透明なカーソルの内部でオフセットによってページを取得するため、ソートやエンドポイントによってコントラクトが変わることはありません。
+`page` はこれらのエンドポイントのパラメータではありません。これを送信しても、リクエストは拒否されません。`page` は無視され、`cursor` が設定されていない限り、最初のページが返されます。
+
+すべてのコレクションにキーセット形式があるわけではありません。リストエンドポイントは、`popularity` や `milestone_due` などのソートで、オフセットによってページを取得します。絵文字リアクション、関連するマージリクエスト、関連するブランチなど、一部のサブリソースエンドポイントは、すべてのリクエストでオフセットによってページを取得します。どちらの場合も、オフセットは同じ不透明なカーソルの内部で扱われるため、ソートやエンドポイントによってコントラクトが変わることはありません。
+
+カーソルの内部で扱うオフセットには、10,000 行の上限があります。ページの取得はそこで終了します。開始位置がこの上限を超えるページに対する `X-Next-Cursor` は返されません。
+
+エンドポイントが使用できない `cursor` に対しては、カーソルに関するエラーメッセージとともに HTTP 400 を返します。これには、URL セーフな base64 ではない値、デコードしてもエンドポイントが想定する形式にならない値、別のエンドポイントからコピーしたカーソル、上限を超えるオフセットが含まれます。このチェックは、すべてのコレクションエンドポイントで、クエリを実行する前に行います。
 
 読み取り不可のレコードは、ページを取得した**後**に除外されるため、`X-Next-Cursor` が存在していても、ページ内のアイテム数が `per_page` 未満になったり、まったくなくなったりする場合があります。クライアントは、件数が少ないページや空のページをコレクションの終端と見なさず、カーソルをたどる必要があります。
 
@@ -177,7 +183,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | パラメータ | 型 | 必須 | 説明 |
 |---|---|---|---|
 | `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
-| `cursor` | string | いいえ | キーセットページネーションのカーソル |
+| `cursor` | string | いいえ | 不透明なページネーションカーソル |
 | `order_by` | string | いいえ | デフォルトは `created_at` |
 | `sort` | string | いいえ | デフォルトは `desc` |
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧。[フィールドと機能の選択](#selecting-fields-and-features)を参照してください |
@@ -320,7 +326,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `state` | string | いいえ | `opened` または `closed`。省略すると両方を返します |
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧 |
 | `features` | string | いいえ | カンマ区切りの機能一覧 |
-| `cursor` | string | いいえ | キーセットページネーションのカーソル |
+| `cursor` | string | いいえ | 不透明なページネーションカーソル |
 | `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `WorkItemBasic` の配列。
@@ -406,7 +412,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `order_by` | string | いいえ | デフォルトは `created_at`、ほかに `updated_at` |
 | `sort` | string | いいえ | デフォルトは `asc`、ほかに `desc` |
 | `activity_filter` | string | いいえ | デフォルトは `all_notes`、ほかに `only_comments`、`only_activity` |
-| `cursor` | string | いいえ | キーセットページネーションのカーソル |
+| `cursor` | string | いいえ | 不透明なページネーションカーソル |
 | `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 `:read_work_item` に加えて `:read_note` が必要です。
@@ -433,7 +439,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `work_item_iid` | integer | はい | ワークアイテムの IID。パスパラメータ |
 | `sort` | string | いいえ | デフォルトは `asc`、ほかに `desc` |
 | `activity_filter` | string | いいえ | デフォルトは `all_notes`、ほかに `only_comments`、`only_activity` |
-| `cursor` | string | いいえ | キーセットページネーションのカーソル |
+| `cursor` | string | いいえ | 不透明なページネーションカーソル |
 | `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `Discussion` の配列。
@@ -550,7 +556,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 | `link_type` | string | いいえ | `relates_to`。Premium では `blocks` と `is_blocked_by` も指定可能 |
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧 |
 | `features` | string | いいえ | カンマ区切りの機能一覧 |
-| `cursor` | string | いいえ | キーセットページネーションのカーソル |
+| `cursor` | string | いいえ | 不透明なページネーションカーソル |
 | `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `WorkItemBasic` に `link_id`、`link_type`、`link_created_at`、`link_updated_at` を追加した `LinkedWorkItem` の配列。
@@ -600,7 +606,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 |---|---|---|---|
 | `work_item_iid` | integer | はい | ワークアイテムの IID。パスパラメータ |
 | `state` | string | いいえ | `pending` または `done`。省略すると両方を返します |
-| `cursor` | string | いいえ | キーセットページネーションのカーソル |
+| `cursor` | string | いいえ | 不透明なページネーションカーソル |
 | `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 レスポンス: `Todo` の配列。
@@ -620,7 +626,7 @@ gitlab.com は EE で動作する一方、無料の名前空間は CE と同様�
 |---|---|---|---|
 | `work_item_iid` | integer | はい | ワークアイテムの IID。パスパラメータ |
 | `fields` | string | いいえ | カンマ区切りのフィールド一覧。以下を参照してください |
-| `cursor` | string | いいえ | キーセットページネーションのカーソル |
+| `cursor` | string | いいえ | 不透明なページネーションカーソル |
 | `per_page` | integer | いいえ | 1 ページの件数。デフォルトは `20`、最大 `100` |
 
 このエンドポイントには、ワークアイテムのフィールド一覧とは関係のない独自の `fields` があります。デフォルトの `id` と `email` に加え、`created_at` と `updated_at` を指定できます。メールアドレスは呼び出し元の権限に応じてマスクされます。

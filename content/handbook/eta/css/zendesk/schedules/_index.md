@@ -2,9 +2,9 @@
 title: 'スケジュール'
 description: 'Zendesk スケジュールに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/schedules/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-lastmod: "2026-07-21T11:29:58-05:00"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+lastmod: "2026-11-03T13:45:25-06:00"
+translated_at: "2026-11-03T21:11:48.175692+00:00"
 translator: codex
 stale: false
 ---
@@ -17,19 +17,19 @@ stale: false
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/schedules)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/schedules)
-- `CustSuppOps Zendesk Test Suite Generator` が有効
+- テスト情報: [ドキュメント](/handbook/eta/css/testing/zendesk/schedules/)
 
 {{% /alert %}}
 
-## スケジュールを理解する
+## スケジュールを理解する {#understanding-schedules}
 
-### スケジュールとは
+### スケジュールとは {#what-are-schedules}
 
 Zendesk のスケジュールは、他の多くのもののスケジュールと同様に、時間の枠です。これらを使用して、営業時間およびさまざまな地域の勤務時間を決定します。これは Zendesk SLA ポリシーの動作にとって重要なコンポーネントです（SLA ポリシーが実行される時間枠を詳細に示すためです）。
 
 Zendesk では、特定のタイムゾーンを使用でき、休日を設定できます。どちらもスケジュールの動作に不可欠な要素です。
 
-### Zendesk でスケジュールを使用する
+### Zendesk でスケジュールを使用する {#using-a-schedule-in-zendesk}
 
 スケジュールは、SLA の計算における営業時間と、時間ベースの自動化を決定するために使用します。一般的な用途は次のとおりです。
 
@@ -39,19 +39,19 @@ Zendesk では、特定のタイムゾーンを使用でき、休日を設定で
 
 スケジュールは通常、SLA ポリシーを通じてチケットレベルで適用するか、トリガー／自動化の条件で参照します。
 
-### 休日
+### 休日 {#holidays}
 
 スケジュール内の休日は、"タイマー" が実行されない設定日です。
 
 現在、Zendesk ではこの機能を使用していません（法務チームの決定によるものです）。この機能の使用は、契約要件に影響するため法務の承認が必要です。
 
-### スケジュールの管理方法
+### スケジュールの管理方法 {#how-we-manage-schedules}
 
 Zendesk では UI を介してスケジュールを管理する完全な方法が提供されていますが、私たちはよりバージョン管理された方法論を採用しています。これにより、定められたレビューのプロセス、必要に応じたロールバックの実行などが可能になります。
 
 このため、同期リポジトリを使用します。
 
-### 現在使用中のスケジュール
+### 現在使用中のスケジュール {#current-schedules-in-use}
 
 {{% alert title="注記" color="danger" %}}
 
@@ -141,19 +141,19 @@ Zendesk では UI を介してスケジュールを管理する完全な方法�
       - 土曜日: 0000-2400
     - 休日: なし
 
-## 非管理者としてスケジュールを作成する
+## 非管理者としてスケジュールを作成する {#creating-schedules-as-a-non-admin}
 
 スケジュールの作成については、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
-## 非管理者としてスケジュールを編集する
+## 非管理者としてスケジュールを編集する {#editing-schedules-as-a-non-admin}
 
 スケジュールの変更については、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
-## 非管理者としてスケジュールを削除する
+## 非管理者としてスケジュールを削除する {#deleting-schedules-as-a-non-admin}
 
 スケジュールの削除については、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
-## 管理者タスク
+## 管理者タスク {#administrator-tasks}
 
 {{% alert title="注記" color="primary" %}}
 
@@ -161,7 +161,7 @@ Zendesk では UI を介してスケジュールを管理する完全な方法�
 
 {{% /alert %}}
 
-### Zendesk でスケジュールを表示する
+### Zendesk でスケジュールを表示する {#viewing-schedules-in-zendesk}
 
 1. Zendesk インスタンスの管理者ダッシュボードに移動します。
    - [Zendesk Global（本番環境）](https://gitlab.zendesk.com/admin/home)
@@ -176,7 +176,7 @@ Zendesk では UI を介してスケジュールを管理する完全な方法�
 
 実際のスケジュールのタイムスロットまたは休日設定を確認する必要がある場合は、スケジュール名をクリックできます。
 
-### スケジュールを作成する
+### スケジュールを作成する {#creating-a-schedule}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -204,6 +204,7 @@ thursday:
 friday:
 - START-END
 saturday: []
+test_user: 'Email goes here'
 ```
 
 `time_zone` 属性には、私たちが使用する承認済みタイムゾーンのいずれかを指定する必要があります。
@@ -224,9 +225,11 @@ monday:
 - 1500-2300
 ```
 
+`test_user` には、このスケジュールのテストで使用するエンドユーザーのメールアドレスを指定します。
+
 ピアが MR をレビューして承認した後、MR をマージできます。次のデプロイ時に Zendesk へ同期されます。
 
-### スケジュールを編集する
+### スケジュールを編集する {#editing-a-schedule}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -239,11 +242,11 @@ monday:
 
 ピアが MR をレビューして承認した後、MR をマージできます。次のデプロイ時に Zendesk へ同期されます。
 
-#### スケジュール名を変更する
+#### スケジュール名を変更する {#changing-the-name-of-a-schedule}
 
 スケジュール名を変更する必要がある場合は、現在の値を `previous_name` 属性にコピーしてから、`name` 属性を変更します。これにより、同期で更新対象の SLA ポリシーを引き続き特定できます。
 
-### スケジュールを削除する
+### スケジュールを削除する {#deleting-a-schedule}
 
 {{% alert title="警告" color="warning" %}}
 
@@ -274,14 +277,14 @@ Zendesk でスケジュールを削除するには、次のとおりです。
 1. `Delete` をクリックします。
 1. 削除を確認するため、`Delete` をクリックします。
 
-### 例外デプロイを実行する
+### 例外デプロイを実行する {#performing-an-exception-deployment}
 
 スケジュールの例外デプロイを実行するには、該当するスケジュール同期プロジェクトに移動し、スケジュール済みパイプラインページに移動して、同期項目の再生ボタンをクリックします。これにより、スケジュールの同期ジョブがトリガーされます。
 
-## 一般的な問題とトラブルシューティング
+## 一般的な問題とトラブルシューティング {#common-issues-and-troubleshooting}
 
 これは、必要に応じて項目が追加される生きたセクションです。
 
-### マージ後にスケジュールの変更が表示されない
+### マージ後にスケジュールの変更が表示されない {#not-seeing-schedule-changes-after-a-merge}
 
 スケジュールは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイを実行したとき）にのみデプロイされます。

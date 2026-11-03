@@ -10,9 +10,9 @@ owning-stage: "~group::Networking & Incident Management"
 participating-stages: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/haproxy_kubernetes/"
-upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
-lastmod: "2026-11-02T17:10:03Z"
-translated_at: "2026-11-02T21:22:20+00:00"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+lastmod: "2026-11-03T10:16:53Z"
+translated_at: "2026-11-03T21:15:03.410688+00:00"
 translator: codex
 stale: false
 ---
@@ -82,7 +82,7 @@ HAProxy の設定をそのまま GKE に移行します。以下は現時点で�
 - Pod はリリースごとに 1 つのシャードを持つ `haproxy` サービスとし、VM の `frontend` と並べて扱います。ログは JSON として stdout に出力し、Cloud Logging シンクを通じて BigQuery に送ります。（[ADR 006](decisions/006_observability.md)）
 - 起動プローブを自動停止の仕組みとするローリングアップデートを行い、必要に応じて Argo Rollouts で安定性を確認する待機時間とメトリクスのチェックを追加します。
 - Terraform で予約したアドレス上の GKE `LoadBalancer` Service を通じてイングレスを提供し、現在と同様に前段へ Cloudflare Spectrum を置きます。トラフィックはエントリーポイントごとに移行します。http-router はリクエスト単位で HTTP を分割し、各 Spectrum アプリのオリジンはポート単位で移行し、内部クライアントは DNS と設定によって移行します。pages と registry は公開済みのアドレスを変更できないため、ポートごとにアドレスを引き渡し、それぞれ約 30 秒の中断が発生します。その転送ルールだけが、VM と Pod が共有する GCP オブジェクトです。（[ADR 001](decisions/001_traffic_cutover.md)）
-- `ci` は Dataplane V2 クラスターで稼働し、その HAProxy ノードプールは `ci-gateway` VPC 内に 2 つ目のインターフェースを持ち、GKE がそこに内部ロードバランサーを作成します。Runner の送信ファイアウォールでは新しいサブネットを許可し、Runner 側のそれ以外の部分は変更しません。
+- `ci` は Dataplane V2 クラスターで稼働し、その HAProxy ノードプールは `ci-gateway` VPC 内に 2 つ目のインターフェースを持ち、GKE がそこに内部ロードバランサーを作成します。Runner の送信ファイアウォールでは新しいサブネットを許可し、Runner 側のそれ以外の部分は変更しません（[ADR 007](decisions/007_ci_network_placement.md)）。
 
 ### 継続して動作する必要があるもの {#what-must-keep-working}
 
@@ -258,6 +258,7 @@ graph TB
 - [ADR 004: ゾーンの局所性](decisions/004_zone_locality.md)（承認済み、進行中）
 - [ADR 005: 設定の入力元](decisions/005_configuration_inputs.md)（承認済み、進行中）
 - [ADR 006: オブザーバビリティ](decisions/006_observability.md)（承認済み、進行中）
+- [ADR 007: ci のネットワーク配置](decisions/007_ci_network_placement.md)（承認済み、進行中）
 
 ## 代替案 {#alternative-solutions}
 

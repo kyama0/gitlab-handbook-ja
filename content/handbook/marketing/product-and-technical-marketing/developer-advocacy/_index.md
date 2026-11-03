@@ -2,9 +2,9 @@
 title: "Developer Advocacy"
 description: "Developer Advocates は、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/"
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-30T14:17:26-04:00"
-translated_at: "2026-11-01T09:02:02+00:00"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+lastmod: "2026-11-03T13:18:56-05:00"
+translated_at: "2026-11-03T21:08:59.195795+00:00"
 translator: codex
 stale: false
 ---
@@ -88,10 +88,10 @@ Developer Advocacy は、進化し続ける複雑な分野です。
 |-------------|--------------|-----------|----------|--------------|-----------|
 | [Colleen Lake](https://gitlab.com/colleencodes) <br/> Developer Advocate | 組み込みシステム、GitLab Duo、コミュニティとの交流 | 英語 | イベントサポート、セールスイネーブルメント、デモ動画、ウェビナー | Javascript、C++、組み込み |  |
 | [Daniel Helfand](https://gitlab.com/dhelfand) <br/> Developer Advocate | DevSecOps | 英語 |  | CI/CD、Kubernetes、Go |  |
-| [Fatima Sarah Khalid](https://gitlab.com/sugaroverflow) <br/> Senior Developer Advocate | コミュニティとの交流、DevSecOps | 英語 | [LinkedIn Live](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/#linkedin-lives-in-collaboration-with-the-social-team)、[コミュニティとの交流](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#customer-and-community-engagement) | CI/CD、C++、PHP、JavaScript | |
-| [Fernando Diaz](https://gitlab.com/fjdiaz) <br/> Staff Developer Advocate | セキュリティとコンプライアンスに注力した DevSecOps | 英語、スペイン語 | [YouTube の GitLab デモ](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#videos)、アナリストリレーションズ向けデモ、[イベントサポート](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#event-support)、[セキュリティとガバナンスのチュートリアル](https://gitlab.com/gitlab-da/tutorials/security-and-governance) | セキュリティ、Kubernetes、CI/CD、Python |  |
+| [Fatima Sarah Khalid](https://gitlab.com/sugaroverflow) <br/> Lead Developer Advocate | コミュニティとの交流、DevSecOps | 英語 | [LinkedIn Live](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/#linkedin-lives-in-collaboration-with-the-social-team)、[コミュニティとの交流](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#customer-and-community-engagement) | CI/CD、C++、PHP、JavaScript | |
+| [Fernando Diaz](https://gitlab.com/fjdiaz) <br/> Principal Developer Advocate | セキュリティとコンプライアンスに注力した DevSecOps | 英語、スペイン語 | [YouTube の GitLab デモ](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#videos)、アナリストリレーションズ向けデモ、[イベントサポート](/handbook/marketing/product-and-technical-marketing/developer-advocacy/#event-support)、[セキュリティとガバナンスのチュートリアル](https://gitlab.com/gitlab-da/tutorials/security-and-governance) | セキュリティ、Kubernetes、CI/CD、Python |  |
 | [Itzik Gan-Baruch](https://gitlab.com/iganbaruch) <br/> Staff Developer Advocate | DevSecOps（CI/CD、CI/CD Catalog、セキュリティに注力） | 英語、ヘブライ語 | [プロダクトツアー](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#product-tours)、[クリック操作型デモ](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#click-through-demos)、[CI/CD コンポーネント](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/#cicd-components-catalog) |  リモート開発、CI/CD、バリューストリーム管理 |  |
-| [John Coghlan](https://gitlab.com/john-coghlan) <br/> Senior Director, Developer Advocacy | Developer Advocacy における戦略と計画 | 英語 | | | [ウェブサイト](https://coghlan.me/) |
+| [John Coghlan](https://gitlab.com/johncoghlan) <br/> Senior Director, Developer Advocacy | Developer Advocacy における戦略と計画 | 英語 | | | [ウェブサイト](https://coghlan.me/) |
 | [Michael Friedrich](https://gitlab.com/dnsmichi) <br/> Principal Developer Advocate | エージェント型 AI モダナイゼーションに注力した DevSecOps、[AI SME](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program/) | 英語、ドイツ語 | [継続的に更新する講演](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#maintained-talks)、[イベント戦略](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics?label_name%5B%5D=DevRel-Events)、[競合調査](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/competitive-research/) | DevSecOps、AI、組み込み、Python、C/C++、Rust | [README](/handbook/marketing/readmes/michael-friedrich/)、[講演](https://dnsmichi.com/talks/)、[ポートフォリオ](https://dnsmichi.com/portfolio/) |
 | [William Arias](https://gitlab.com/waarias) <br/> Staff Developer Advocate | DevSecOps（AI/ML、セキュリティ、データに注力） | 英語、スペイン語 | サポートチケットのセンチメント分析、競合調査、アナリストリレーションズ向けデモ、[エンドツーエンドの DevSecOps プラットフォーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/projects/#organisation-structure) | CI/CD、AI/ML、Kubernetes、セキュリティ、Python、C |  |
 

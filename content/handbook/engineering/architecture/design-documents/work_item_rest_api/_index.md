@@ -8,10 +8,10 @@ coaches: ["ntepluhina", "@engwan"]
 dris: []
 owning-stage: "~devops::plan"
 toc_hide: true
-upstream_path: /handbook/engineering/architecture/design-documents/work_item_rest_api/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-22T11:00:44-04:00"
-translated_at: "2026-11-01T09:02:02+00:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/work_item_rest_api/"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+lastmod: "2026-11-03T14:00:48-05:00"
+translated_at: "2026-11-03T21:15:03.410688+00:00"
 translator: codex
 stale: false
 ---
@@ -62,7 +62,7 @@ stale: false
 
 どちらを使用するにしても、設計でパリティを求め、REST または GraphQL のみの更新はリリースしません。
 
-すべてのエンドポイントでキーセットベースのページネーションを使用します。その仕組みは[エンドポイントリファレンス](endpoints.md#pagination)で説明しています。
+内部でキーセットページネーションとオフセットページネーションのどちらを使用していても、すべてのコレクションエンドポイントは、不透明なキーセット形式のカーソルによってページを取得します。その仕組みは[エンドポイントリファレンス](endpoints.md#pagination)で説明しています。
 
 #### 柔軟なレスポンス {#flexible-response}
 

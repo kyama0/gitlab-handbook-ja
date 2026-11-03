@@ -1,11 +1,11 @@
 ---
 title: "ステーブルブランチ"
-upstream_path: /handbook/engineering/releases/stable_branches/
-upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
-translated_at: "2026-10-22T21:12:48Z"
+upstream_path: "/handbook/engineering/releases/stable_branches/"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+translated_at: "2026-11-03T21:11:48.175692+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-22T13:26:35+02:00"
+lastmod: "2026-11-03T10:14:54+01:00"
 ---
 
 ## 概要 {#overview}
@@ -46,9 +46,3 @@ lastmod: "2026-10-22T13:26:35+02:00"
 ステーブルブランチのパイプラインが失敗すると、triage-ops が[gitlab-org/release/tasks](https://gitlab.com/gitlab-org/release/tasks)にインシデントを作成し、`#releases` に投稿します。壊れたステーブルブランチはパッチリリースやセキュリティリリースをブロックする可能性があるため、Release Managers がこれらのインシデントを監視します。これらは CI Health のインシデントではなく、自動的にはエスカレーションされません。
 
 失敗のトリアージや修正を行うには、[インシデントを割り当てられた場合](/handbook/engineering/workflow/#triage-broken-master)の手順に従ってください。
-
-## しきい値を超えたステーブルブランチ {#stable-branches-over-threshold}
-
-- ステーブルブランチのパイプラインが[しきい値](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/blob/c2cf86eea7f0d566de0f9d8f9d9f3d904f073528/lib/shared/constants.rb#L22-26)を超えると（過去 7 日間）、**[canonical](https://gitlab.com/gitlab-org/gitlab/-/issues?sort=created_date&state=opened&label_name%5B%5D=automation%3Apipeline-duration-threshold&label_name%5B%5D=automation%3Abot-authored&first_page_size=20)プロジェクトに Issue が作成され**、`automation:pipeline-duration-threshold` ラベルが付けられます。
-- [daily_pipeline_thresholds](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts/-/pipeline_schedules)が Issue を作成し、過去 24 時間のさらなるしきい値違反も、既存の Issue へのコメントとして更新します。
-- 最新の 3 つのステーブルブランチについて、ステーブルブランチとパイプラインティアの組み合わせごとに、一意の Issue が作成されます。
