@@ -2,23 +2,23 @@
 title: "GitLab LTD (UK) の福利厚生"
 description: "イギリスを拠点とするチームメンバー向けの GitLab LTD (UK) の福利厚生です。"
 upstream_path: "/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/"
-upstream_sha: 59a18d6d88e73b26232d1d6773e5d793fcb29e49
-translated_at: "2026-10-05T21:09:19+00:00"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+translated_at: "2026-11-03T21:08:59.195795+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-05T09:05:35-07:00"
+lastmod: "2026-11-02T16:53:56-08:00"
 ---
 
-## 私たちがあなたをサポートします
+## 私たちがあなたをサポートします {#weve-got-you-covered}
 
 **わかりやすい福利厚生、確かなサポート**
 
 GitLab では、チームメンバーの福利厚生は理解しやすく、必要なときに利用できるべきだと考えています。人生の大きな節目から日々の疑問まで、私たちの包括的なカバレッジは、あなたが仕事と生活に集中できるように、明確さと安心感を提供します。
 以下に記載されているローカル福利厚生に加えて、すべての UK チームメンバーは、グローバルに全チームメンバーが利用できる[全社共通の福利厚生](/handbook/total-rewards/benefits/general-and-entity-benefits/)を利用できます。
 
-## 健康と健全性
+## 健康と健全性 {#health--wellbeing}
 
-### AXA PPP 医療保険
+### AXA PPP 医療保険 {#axa-ppp-medical-insurance}
 
 GitLab は、AXA PPP を通じてあなたの健康と福祉をサポートするための民間医療保険を提供します。GitLab はメンバーシップ費用の 100% を負担し、扶養家族を追加することができます。GitLab はその費用の 66% を負担します。
 
@@ -29,7 +29,7 @@ GitLab は、AXA PPP を通じてあなたの健康と福祉をサポートす�
 
 - すべての UK ベースのチームメンバー
 - カバレッジは開始日から始まります
-- 医療引受審査は不要 — 既存症状もカバーされます。AXA プランに登録された現在のチームメンバーおよび新加入者は、入社前にあった既存症状の治療がカバーされ、メンバーである必要はなく 2 年間または症状の発症から 12 か月連続で「問題なし」である必要もありません（既存症状のモラトリアム条件は適用されなくなりました）。
+- 医療引受審査は不要 — 既存症状もカバーされます。AXA プランに加入している現在のチームメンバーおよび新加入者は、加入前からあった症状の治療もカバーされ、加入後 2 年間の経過や、症状の発症後 12 か月連続で「問題なし」であることは求められません（既存症状のモラトリアム条件は適用されなくなりました）。
 
 </details>
 
@@ -111,7 +111,7 @@ AXA PPP からの確認に 7-10 営業日かかります。月の 24 日まで�
 
 </details>
 
-### 視力
+### 視力 {#vision}
 
 **ディスプレイスクリーンを使用しながら目の健康をサポートします。**
 
@@ -136,7 +136,7 @@ AXA PPP からの確認に 7-10 営業日かかります。月の 24 日まで�
 
 </details>
 
-### 従業員アシスタンスおよびウェルビーイングサポート
+### 従業員アシスタンスおよびウェルビーイングサポート {#employee-assistance--wellbeing-support}
 
 **必要なときに利用できるリソースです。**
 
@@ -155,9 +155,9 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 
 </details>
 
-## 経済的安全
+## 経済的安全 {#financial-security}
 
-### 生命保険
+### 生命保険 {#life-insurance}
 
 非課税の一括払いをあなたの愛する人々に提供し、困難なときに安心感を提供します。
 
@@ -197,7 +197,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 
 </details>
 
-### 所得保護
+### 所得保護 {#income-protection}
 
 病気やけがにより働けなくなった場合の基本給与の 66% に加え、職業リハビリテーションのサポートを提供します。
 
@@ -238,7 +238,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 
 </details>
 
-### 年金制度
+### 年金制度 {#pension-scheme}
 
 GitLab は Scottish Widows との Group Personal Pension Plan を提供しており、退職に向けた経済的安全を構築します。
 
@@ -396,13 +396,14 @@ National Insurance 拠出を節約しながら年金を構築できます。2022
 </details>
 
 <details markdown="1">
-<summary>英国の年金への賞与の拠出</summary>
+<summary>英国の年金への賞与およびコミッションの拠出</summary>
 
-賞与を英国の年金に拠出したい場合は、給与計算の締め切り前に [Compass](https://app.serval.com/new-request)から申請できます。以下の点に注意してください。
+賞与またはコミッションを英国の年金に拠出したい場合は、給与計算の締め切り前に [Compass](https://app.serval.com/new-request)から申請できます。以下の点に注意してください。
 
 - 全社的な賞与の支給（5 月と 11 月）に先立ち、その月の[締め切り](https://internal.gitlab.com/handbook/finance/payroll/)前に Payroll チームへ通知する必要があります。この申請は賞与の支給の都度、個別に提出する必要があり、継続的・恒久的な申請として設定することはできません。
-- この制度の給与犠牲の仕組みに加入している場合、賞与の拠出は給与犠牲として適用されます。2022 年 12 月 13 日より後に入社した場合、給与犠牲に自動加入しています。給与犠牲に加入していない場合は、代わりに源泉で税控除を受ける拠出（relief-at-source）となります。
+- この制度の給与犠牲の仕組みに加入している場合、賞与およびコミッションの拠出は給与犠牲として適用されます。2022 年 12 月 13 日より後に入社した場合、給与犠牲に自動加入しています。給与犠牲に加入していない場合は、代わりに源泉で税控除を受ける拠出（relief-at-source）となります。
 - 賞与は全額を拠出する必要があり、一部のみの拠出は認められません。
+- 賞与またはコミッションの収入には、雇用主による拠出は適用されません。
 - 各自、年間拠出限度額（繰越額を含む）と、年間拠出限度額の段階的な引き下げが及ぼし得る影響を考慮してください。これらの金額の把握は各自の責任です。
 
 </details>
@@ -416,7 +417,7 @@ National Insurance 拠出を節約しながら年金を構築できます。2022
 Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザーとして活動しており、財務アドバイスを提供することはできませんが、GitLab GPPP の詳細を説明し、ご質問にお答えするために利用できます。
 </details>
 
-## Bike to Work / Tax Saver 通勤スキーム
+## Bike to Work / Tax Saver 通勤スキーム {#bike-to-worktax-saver-commuter-scheme}
 
 給与犠牲を通じて自転車とアクセサリを税効率的に購入できます。
 
@@ -441,11 +442,11 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 
 </details>
 
-## 子育て家族休暇
+## 子育て家族休暇 {#growing-family-leaves}
 
 人生の最大の瞬間にあなたをサポートします。GitLab は、UK の法定権利と[強化されたグローバルポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) を組み合わせた包括的な育児休暇給付を提供しています。
 
-### 産休
+### 産休 {#maternity-leave}
 
 <details markdown="1">
 <summary>休暇権利</summary>
@@ -469,7 +470,7 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 
 </details>
 
-### 父親休暇
+### 父親休暇 {#paternity-leave}
 
 <details markdown="1">
 <summary>休暇権利</summary>
@@ -491,7 +492,7 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 
 </details>
 
-### 養子縁組休暇
+### 養子縁組休暇 {#adoption-leave}
 
 <details markdown="1">
 <summary>休暇権利</summary>
@@ -512,7 +513,7 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 
 </details>
 
-### 新生児ケア休暇（2025 年 4 月から新設）
+### 新生児ケア休暇（2025 年 4 月から新設） {#neonatal-care-leave-new-from-april-2025}
 
 <details markdown="1">
 <summary>休暇権利</summary>
@@ -533,7 +534,7 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 
 </details>
 
-### 死別したパートナーの父親休暇（2026 年 4 月から新設）
+### パートナーと死別した人の父親休暇（2026 年 4 月から新設） {#bereaved-partners-paternity-leave-new-from-april-2026}
 
 <details markdown="1">
 <summary>休暇権利</summary>
@@ -554,7 +555,7 @@ Willis Towers Watson は、GitLab GPPP の従業員福利厚生アドバイザ�
 
 </details>
 
-### 無給育児休暇
+### 無給育児休暇 {#unpaid-parental-leave}
 
 2026 年 4 月 6 日施行、Unpaid Parental Leave の適格性はチームメンバーの雇用初日から開始されます。以前の 1 年間の連続勤務の要件は廃止されました。
 
@@ -578,7 +579,7 @@ leaves@gitlab.com に連絡してください。
 
 </details>
 
-### その他の保護された休暇
+### その他の保護された休暇 {#other-protected-leaves}
 
 人生のすべての責任のためのサポート。
 
@@ -626,9 +627,9 @@ Justice of the Peace であるチームメンバーは、職務を遂行する�
 
 **アクセス方法**: Workday で適切な休暇タイプを選択します。該当するものがなければ、leaves@gitlab.com に連絡してください。
 
-## 休暇ポリシー
+## 休暇ポリシー {#time-off-policies}
 
-### 年次有給休暇
+### 年次有給休暇 {#annual-leave}
 
 リチャージしリフレッシュする時間。
 
@@ -648,7 +649,7 @@ Justice of the Peace であるチームメンバーは、職務を遂行する�
 
 </details>
 
-### 病気休暇
+### 病気休暇 {#sick-leave}
 
 体調不良時のサポート。
 
@@ -672,11 +673,11 @@ Justice of the Peace であるチームメンバーは、職務を遂行する�
 
 </details>
 
-## 雇用主賠償責任保険
+## 雇用主賠償責任保険 {#employers-liability-insurance}
 
 [証明書](https://drive.google.com/file/d/1RCbwcUClPUxmkJALT9Ojk_TdTyCWOHgs/view?usp=sharing) を見る。
 
-## ご質問は？
+## ご質問は？ {#questions}
 
 福利厚生に関するご質問は、サポートチームまでお問い合わせください:
 

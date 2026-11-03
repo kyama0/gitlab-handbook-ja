@@ -2,11 +2,11 @@
 title: "Technical Writing"
 description: "Technical Writing チームは、GitLab のエンジニア、プロダクトマネージャー、デザイナー、UX リサーチャーと連携し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、拡張可能なドキュメントに落とし込みます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/technical-writing/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T15:53:03+00:00"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+translated_at: "2026-11-03T21:08:59.195795+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-29T08:58:02+01:00"
+lastmod: "2026-11-03T18:14:08Z"
 ---
 
 Technical Writers は、ユーザーが GitLab の機能を理解し、操作し、導入する方法を左右するコンテンツに
@@ -271,6 +271,34 @@ DocOps グループは、GitLab ドキュメントやその他の技術コンテ
 1. [`~tw-testing`](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name[]=tw-testing)ラベルを付けた
    Issue またはマージリクエストを作成します。
 1. Issue またはマージリクエストで [@gitlab-org/technical-writing/tw-docops](https://gitlab.com/gitlab-org/technical-writing/tw-docops)をメンションします。
+
+### AI enablement グループ {#ai-enablement-group}
+
+[AI enablement グループ](https://gitlab.com/gitlab-org/technical-writing/tw-ai)は、チームによる AI ワークフローの導入と、連携の取れた戦略の維持を支援します。このグループは次の責任を負います。
+
+- Technical Writing スキルの作成とレビュー。
+- 新しいスキル、エージェント向けの指示、その他の AI ツールを配置する場所の検討。
+- [GitLab AI Plugin Marketplace](https://gitlab.com/gitlab-com/marketplace/-/tree/main/marketing/brand-and-product-marketing/product-and-technical-marketing/technical-writing)にある
+  Technical Writing プラグインの保守と、関連するマージリクエストのレビュー。
+- 最新情報、ベストプラクティス、得られた教訓のチームへの共有。
+
+AI enablement グループへの参加は、チームの要件に基づきます。参加に興味がある場合は、マネージャーに相談してください。
+
+#### スキル {#skills}
+
+ドキュメントと Technical Writing のスキルは、次の 2 か所にあります。
+
+- **ドキュメント用スキル**:
+  GitLab AI Plugin Marketplace の [Technical Writing プラグイン](https://gitlab.com/gitlab-com/marketplace/-/tree/main/marketing/brand-and-product-marketing/product-and-technical-marketing/technical-writing)には、
+  ドキュメントの下書きとレビューのためのスキルが含まれています。
+  これらのスキルは GitLab 社内のコントリビューター向けであり、GitLab の公開ドキュメントの下書きと
+  レビューに使用する正式なスキルです。
+  コントリビュートするには、[マーケットプレイスのコントリビューションガイドライン](https://gitlab.com/gitlab-com/marketplace/-/blob/main/CONTRIBUTING.md)を参照してください。
+- **Technical Writing チームの生産性向上スキル**:
+  [`tw-team-skills` プロジェクト](https://gitlab.com/gitlab-org/technical-writing/tw-team-skills)には、
+  定期的な作業など、Technical Writing チームの業務用のスキルが含まれています。
+  スキルをインストールする方法やコントリビュートする方法については、
+  [プロジェクトの README](https://gitlab.com/gitlab-org/technical-writing/tw-team-skills/-/blob/main/README.md#contribute-a-skill)を参照してください。
 
 ### 他のプロジェクトと対象へのアサインメント {#assignments-to-other-projects-and-subjects}
 

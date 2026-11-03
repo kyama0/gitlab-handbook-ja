@@ -2,17 +2,17 @@
 layout: handbook-page-toc
 title: "ADR 007: プライベートリポジトリ、GitLab dedicated、self-managed インスタンスの証明"
 description: "この ADR は、パブリック Sigstore インフラストラクチャを使用できない状況でソフトウェア証明を実現する仕組みを定めます。"
-upstream_path: /handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted/
-upstream_sha: 6421bb05e502917cfdfa263c81ae8fbbc41ed52b
-lastmod: "2026-06-22T09:27:06+12:00"
-translated_at: "2026-06-22T07:04:45+09:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted/"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+lastmod: "2026-10-28T16:43:54+05:30"
+translated_at: "2026-11-03T21:18:39.452424+00:00"
 translator: codex
 stale: false
 ---
 
-## 背景
+## 背景 {#background}
 
-~"group::pipeline security" グループは、ユーザーに
+SSCS ステージに属する ~"group::build security" グループは、ユーザーに
 [SLSA レベル 3 出所証明](/handbook/engineering/architecture/design-documents/slsa_level_3/)を提供するために取り組んでいます。
 簡略化してまとめると、[GitLab のコンテキスト](/handbook/engineering/architecture/design-documents/slsa_level_3/)では、
 出所ステートメントは、アーティファクトまたは OCI コンテナの SHA-256 合計を
@@ -26,30 +26,30 @@ stale: false
 この "public-good" インフラストラクチャは、以下で強調する理由により、プライベート
 リポジトリ、self-managed、dedicated デプロイメントには適していません。
 
-この ADR は、PostgreSQL 内に保存されたキーを使用して署名を実行するという私たちの決定を記録し、
-その根拠を文書化します。さらに、この ADR には、Rekor の利用について恒久的な決定が
-行われるまで、これらのケースで Rekor を一時的に無効化するという決定に関する情報も含まれます。
+この ADR は、キーを PostgreSQL 内に保存するプロジェクトごとの認証局（CA）を使用して署名を実行するという私たちの決定を記録し、
+その根拠を文書化します。さらに、この ADR には、利用について恒久的な決定が行われるまで、これらのケースで Rekor、
+その他の透明性ログ、タイムスタンプ局を使用しないという決定に関する情報も含まれます。
 
 さらに、この機能を使用するためにユーザーが活用する新しい UX と、このインテグレーションで使用される
 技術的な仕組みも示します。
 
-### この変更が必要な理由
+### この変更が必要な理由 {#why-this-change-is-required}
 
 以下で強調する点、特に Rekor への情報開示と、self-managed および Dedicated デプロイメントで
 Sigstore と統合することの難しさは、現在の実装がこの種の顧客には実行可能ではないことを示しています。
 
-この ADR の変更を実装することで、既存のインフラストラクチャを活用し、コスト効率の高い方法で
-コントロールプレーン内の SLSA L3 証明を提供できます。提案するソリューションを使用することで、
+この ADR の変更を実装することで、既存のインフラストラクチャを活用し、コスト効率の高い方法で、
+すべてのリポジトリタイプとデプロイメントタイプの証明にコントロールプレーン内で署名できます。提案するソリューションを使用することで、
 ユーザーはパイプラインを簡単に設定して証明を生成でき、その証明を利用前に検証できます。
 これにより、セキュリティ意識が最も高いユーザーに対するサプライチェーン攻撃を防止できます。
 
-### 参考資料
+### 参考資料 {#references}
 
 - [[Discussion] UX to enable SLSA provenance generation (#547903)](https://gitlab.com/gitlab-org/gitlab/-/work_items/547903#note_2748278333)
 - [ADR 002: Generate SLSA Provenance in GitLab Rails backend](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/002_provenance_generation_location/)
-- [ADR 006: Enable the creation of SLSA Level 3 Attestations for OCI images](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17936)
+- [ADR 004: cosign を GitLab Rails に同梱し、GitLab Rails バックエンドで証明を行う](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/004_attestation_in_sidekiq/)
+- [ADR 006: OCI イメージの SLSA レベル 3 証明の作成を可能にする](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/006_signing_with_sbom_and_provenance_in_oci/)
 - [Cosign Image Signatures. The protocol format explained!](https://medium.com/sigstore/cosign-image-signatures-77bab238a93)
-- [FF `slsa_provenance_statement` -- Roll out feature flag to publish SLSA provenance statements (#547866)](https://gitlab.com/gitlab-org/gitlab/-/work_items/547866)
 - [Phase 5: OCI Containers Attestation (#20683) · Epic · gitlab-org](https://gitlab.com/groups/gitlab-org/-/work_items/20683)
 - [Signing artifacts, attesting builds, and why you should do both](https://some-natalie.dev/blog/signing-attesting-builds/)
 - [SLSA • Build: Requirements for producing artifacts](https://slsa.dev/spec/v1.2/build-requirements)
@@ -58,15 +58,22 @@ Sigstore と統合することの難しさは、現在の実装がこの種の�
 - [OpenBao chart | GitLab Docs](https://docs.gitlab.com/charts/charts/openbao/)
 - [GitLab Secrets Manager (OpenBao) | GitLab Docs](https://docs.gitlab.com/administration/secrets_manager/#openbao-architecture)
 
-## 望ましいユーザー体験（UX）
+## 望ましいユーザー体験（UX） {#desired-user-experience-ux}
 
 [SLSA level 3 provenance attestations](https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/)
 ページで指定されている UX には変更が必要です。
 
-新しい環境変数を作成し、ローカル CA を使用するかどうかを制御します。この任意の変数
+新しい CI/CD 変数で、ローカル CA を使用するかどうかを制御します。この任意の変数
 `ATTEST_METHOD` は、`SIGSTORE` または `LOCAL_CA` の 2 つの値を受け入れます。この値は、
 GitLab.com の公開プロジェクトではデフォルトで `SIGSTORE`、プライベートリポジトリ、GitLab dedicated、
 self-managed ではデフォルトで `LOCAL_CA` になります。
+
+`ATTEST_METHOD` は、`ATTEST_BUILD_ARTIFACTS` と `ATTEST_CONTAINER_IMAGES` の両方に適用されます。
+これらの変数と同様に、`.gitlab-ci.yml` の `variables` キーワードからのみ読み取ります。
+プロジェクト、グループ、インスタンス、パイプラインの変数など、その他の場所で設定した変数は無視します。
+値の大文字と小文字は区別せず、前後の空白は無視します。それ以外の値は、デフォルト値にフォールバックします。
+
+GitLab は、プロジェクトが初めて `LOCAL_CA` 証明を生成するときに、そのプロジェクトの CA を作成します。
 
 具体的には、新しい UX は次のようになります。
 
@@ -105,8 +112,10 @@ Sigstore を使用する選択肢を提供します。第二に、この値を�
 別の値を追加できるようになります。
 
 現在の動作では、プライベートプロジェクトで `SIGSTORE` を許可しておらず、この動作は維持されます。
+非公開（プライベートまたは内部）のプロジェクトで `ATTEST_METHOD: SIGSTORE` を設定しても、証明は行われません。
+公開プロジェクトでは `LOCAL_CA` を選択できます。
 
-## 技術的背景
+## 技術的背景 {#technical-background}
 
 大まかに言うと、Sigstore public good インフラストラクチャは OIDC で認証し、認証が成功すると
 署名を実行します。署名のアイデンティティは、その OIDC サーバーに対する認証に使用される
@@ -115,11 +124,9 @@ Sigstore を使用する選択肢を提供します。第二に、この値を�
 
 脅威モデルは、署名が何を意味するかを明確にしています。
 
-> 通常の運用（Sigstore の侵害がない状態）では、特定の時点で ExampleIdP アイデンティティプロバイダーを使用して
-> `user@example.com` からの「キーレス」署名を検証すると、その署名が、その時点でそのアイデンティティを使用して
-> Sigstore への認証に成功した署名者によって作成されたことが保証されます。
+> 通常の運用（Sigstore の侵害がない状態）では、特定の時点で ExampleIdP アイデンティティプロバイダーを使用して `user@example.com` からの「キーレス」署名を検証すると、その署名が、その時点でそのアイデンティティを使用して Sigstore への認証に成功した署名者によって作成されたことが保証されます。
 
-### GitLab.com のプライベートリポジトリで上記の仕組みを使用する場合
+### GitLab.com のプライベートリポジトリで上記の仕組みを使用する場合 {#on-the-usage-of-the-above-mechanism-for-private-repositories-on-gitlabcom}
 
 これは、アーティファクトやコンテナイメージが公開されており機密ではない公開プロジェクトには適していますが、
 GitLab.com 内のプライベートプロジェクトは、この情報を公開したくない場合があります。コンテナの証明例は
@@ -127,9 +134,10 @@ GitLab.com 内のプライベートプロジェクトは、この情報を公開
 開示される情報には、バイナリのハッシュ、組織名、プロジェクト名、リポジトリ名、ビルダー名などが含まれます。
 
 現時点では、情報開示は公開プロジェクトでは許容できるが、プライベートプロジェクトでは許容できないと仮定しています。
-このため、プロジェクトが公開されている場合にのみ証明を実行するようにコードを制限しています。
+このため、`SIGSTORE` 証明は公開プロジェクトでのみ許可されます。`LOCAL_CA` 証明は公開インフラストラクチャに送信されないため、
+すべてのプロジェクトで許可されます。
 
-### self-managed および dedicated デプロイメントで上記の仕組みを使用する場合
+### self-managed および dedicated デプロイメントで上記の仕組みを使用する場合 {#on-the-usage-of-the-above-mechanism-for-self-managed-and-dedicated-deployments}
 
 上記のプライベートプロジェクトにおける情報開示に加えて、self-managed および dedicated デプロイメントで
 "public-good" Sigstore インフラストラクチャを使用できなくする追加の制約があります。
@@ -142,27 +150,35 @@ self-managed および dedicated デプロイメントの場合、各顧客は�
 [この MR](https://github.com/sigstore/fulcio/pull/1327)と同様の MR を作成する必要があります。
 これは実用的でも推奨できるものでもなく、この ADR で示す変更により、顧客がこのプロセスを経る必要をなくします。
 
-### Rekor について
+### Rekor について {#on-rekor}
 
-#### Rekor とは
+#### Rekor とは {#what-is-rekor}
 
 出典: [An Introduction to Rekor — Chainguard Academy](https://edu.chainguard.dev/open-source/sigstore/rekor/an-introduction-to-rekor/):
 
-> Rekor はアーティファクトメタデータの記録を保存し、署名の透明性を提供することで、オープンソースソフトウェアコミュニティが
+> Rekor はアーティファクトメタデータの記録を保存し、
+> 署名の透明性を提供することで、オープンソースソフトウェアコミュニティが
 > ソフトウェアサプライチェーンの改ざんを監視および検出するのを支援します。技術的なレベルでは、
 > これは append-only（「immutable」と呼ばれることもあります）のデータログであり、ソフトウェアアーティファクトに関する
-> 署名済みメタデータを保存します。これにより、ソフトウェア利用者は、ソフトウェアアーティファクトが主張どおりのものであることを
-> 検証できます。Rekor は、誰でも投稿でき、その投稿を削除できない掲示板のようなものだと考えることができますが、
-> 何を信じるかを情報に基づいて判断するのは閲覧者に委ねられます。ct's lifecycle.
+> 署名済みメタデータを保存します。これにより、ソフトウェア利用者は、
+> ソフトウェアアーティファクトが主張どおりのものであることを
+> 検証できます。Rekor は、誰でも投稿でき、
+> その投稿を削除できない掲示板のようなものだと考えることができますが、
+> 何を信じるかを情報に基づいて判断するのは閲覧者に委ねられます。
 > [...]
 > Rekor のユーザーには、Merkle tree によって有効化される inclusion proof を活用して、特定のエントリが Rekor ログに
-> 存在するかどうかをオフラインで判定する方法もあります。Merkle tree は、暗号学的ハッシュ関数、
-> つまり潜在的に大きな値を比較的短いダイジェストにマッピングする方法を使用して、あるデータ片がはるかに大きなデータ構造内に
-> 含まれていることを証明できるデータ構造です。この証明は、一連のハッシュをユーザーに提供することで達成されます。
+> 存在するかどうかをオフラインで判定する方法もあります。
+> Merkle tree は、暗号学的ハッシュ関数、
+> つまり潜在的に大きな値を比較的短いダイジェストにマッピングする方法を使用して、
+> あるデータ片がはるかに大きなデータ構造内に
+> 含まれていることを証明できるデータ構造です。この証明は、
+> 一連のハッシュをユーザーに提供することで達成されます。
 > それらのハッシュを再結合すると、そのエントリが実際に Rekor ログ内にあることをユーザーに証明できます。
-> Sigstore ユーザーは、このような inclusion proof をアーティファクトに「staple」できます。つまり、アーティファクトの横に
-> inclusion proof をリポジトリ内で添付し、そのアーティファクトが確かに Rekor に含まれていることを証明できます。
-> Merkle tree と inclusion proof の詳しい説明については、この章の末尾にある helpful resources セクションを参照してください。
+> Sigstore ユーザーは、このような inclusion proof をアーティファクトに「添付」できます。つまり、アーティファクトの横に
+> inclusion proof をリポジトリ内で添付し、
+> そのアーティファクトが確かに Rekor に含まれていることを証明できます。
+> Merkle tree と inclusion proof の詳しい説明については、
+> この章の末尾にある参考リソースのセクションを参照してください。
 
 Rekor の主な特性は次のとおりです。
 
@@ -174,7 +190,7 @@ Rekor がパブリックインフラストラクチャで果たす役割につ�
 その動作を社内で再現する可能性については、[Explore designs for multi-tenant attestations (#21881)](https://gitlab.com/groups/gitlab-org/-/work_items/21881)
 ページで確認できます。
 
-#### 不変で改ざん耐性のあるログの使用は SLSA L3 の要件か
+#### 不変で改ざん耐性のあるログの使用は SLSA L3 の要件か {#is-use-of-an-immutable-tamper-resistant-log-a-requirement-for-slsa-l3}
 
 [Rekor の代替に関する潜在的な追加要件](https://gitlab.com/gitlab-org/gitlab/-/work_items/590549#note_3326516370)があります。
 ただし根本的には、Rekor の使用は Sigstore の使用と関連しており、SLSA L3 の要件ではありません。L3 に固有の要件は
@@ -185,59 +201,65 @@ Rekor がパブリックインフラストラクチャで果たす役割につ�
 
 詳細な議論は https://gitlab.com/gitlab-org/gitlab/-/work_items/590549#note_3326516370 にあります。
 
-## 決定: PostgreSQL に保存されたキーを使用して署名を実行する
+## 決定: PostgreSQL に保存されたキーを使用して署名を実行する {#decision-perform-signing-using-a-key-stored-in-postgresql}
 
 検討した選択肢の完全な議論は、"[Investigate Options for self-managed/customer owned Sigstore. (#590549)](https://gitlab.com/gitlab-org/gitlab/-/work_items/590549)"
 チケットで確認できます。
 
 実装の複雑さ、顧客にとっての使いやすさ、セキュリティなどの側面を慎重に検討した結果、私たちは次のように決定しました。
 
-- PostgreSQL に保存されたキーと、中間のエフェメラルキーを使用して署名を実行します。詳細は以下に示します。
+- PostgreSQL にキーを保存するプロジェクトごとのルート CA と、証明ごとに新しく生成するリーフ証明書およびキーを使用して署名を実行します。詳細は以下に示します。
 - [このコメント](https://gitlab.com/gitlab-org/gitlab/-/work_items/590549#note_3326516370)での議論に基づき、
-  改ざん耐性のある証明ログを実装するかどうかの決定は保留します。その間、この Issue について決定が下されるまで
-  Rekor を無効化します。
+  改ざん耐性のある証明ログを実装するかどうかの決定は保留します。その間、この件について決定が下されるまで、
+  `LOCAL_CA` 証明では Rekor もタイムスタンプ局（TSA）も使用しません。
 
-### キー生成、ローテーション、取り消し
+### Rekor とタイムスタンプ局の無効化 {#disabling-rekor-and-timestamp-authorities}
+
+`LOCAL_CA` 署名では、cosign が透明性ログやタイムスタンプ局に接続しないように設定します。
+
+透明性ログや TSA がないと、証明にいつ署名したかについての信頼できる記録がありません。
+検証側は現在時刻に照らして署名証明書を確認するため、証明を検証可能にしておく必要がある期間中は、証明書が有効であり続ける必要があります。
+リーフ証明書の有効期間を長くするのは、このためです。
+
+### キーの生成と保存 {#key-generation-and-storage}
 
 大まかに、このソリューションには 2 種類のキーがあります。
 
-- 認証局（CA）キー。
-- 証明の署名に使用される中間のエフェメラルキー。
+- プロジェクトごとのルート認証局（CA）キー。
+- 証明ごとのリーフキーと証明書。リーフ証明書はプロジェクトの CA が発行し、その秘密鍵は署名後に破棄します。
+  [署名用エフェメラルキーの生成](#generation-of-ephemeral-keys-for-signing)を参照してください。
 
-ルート CA キーは、新しいモデル `SupplyChain::SigningCertificate` 内に保存されます。これらのキーの取り扱いは、
+各プロジェクトの CA は PostgreSQL に保存し、秘密鍵は保存時に暗号化します。これらのキーは、
 [Secure coding development guidelines](https://docs.gitlab.com/development/secure_coding_guidelines/#handling-credentials)、
-特に "Handling Credentials" セクションに従って行われます。秘密鍵はそこに明示的に記載されています。
-これらのガイドラインは、値を平文で取得する必要がある場合、[application secret](https://docs.gitlab.com/development/application_secrets/)として
-保存すべきであることを示しています。これは、コードベースの他の箇所、たとえば `Clusters::Platforms::Kubernetes`
-クラスの `ca_cert` 属性と同様に行われます。また、この決定に関連するものとして、
-[GitLab Cryptography Standard](/handbook/security/policies_and_standards/cryptographic-standard/)と
-[Encryption Standard](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/encryption-standard/)があります。
-この ADR によって実装されるすべてのソリューションは、これらのドキュメントに従います。
+特に秘密鍵について明示的に記載されている「Handling Credentials」セクションに従って取り扱います。
+また、この決定には、[GitLab Cryptography Standard](/handbook/security/policies_and_standards/cryptographic-standard/)と
+[Encryption Standard](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/encryption-standard/)も関連します。
 
-キーのローテーションは、`SupplyChain::SigningCertificate` モデル内に複数のキーを存在させることで実現できます。
-検証では、そのテーブル内のいずれかのキーによる署名を受け入れるため、複数のキーが有効な移行期間を実装できます。
-クライアントが新しいキーの使用に移行した後、古いキーを取り消せます。同様に、キーの取り消しはテーブルからキーを削除することで
-処理できます。必要であれば、古い証明を新しいキーで署名することもできます。
+キーには P-256 曲線上の ECDSA を使用し、証明書には SHA-256 で署名します。
+RSA も使用可能でしたが、セキュリティとパフォーマンスの特性から ECDSA を選びました。
+どちらも、上記でリンクしたポリシーを満たしています。
 
-CA の作成方法に関するサンプルコードは、[OpenSSL ドキュメントの CA Certificate セクション](https://ruby.github.io/openssl/OpenSSL.html#module-openssl-ca-certificate)で
-確認できます。以下の例を参照してください。以下の例では RSA キーを使用していますが、これは私たちの実装でその特定のキータイプを
-使用すべきであることを意味しません。私たちの実装は上記でリンクしたポリシーに従うため、キータイプの選択は異なる可能性があります。
+次の例では、これらのアルゴリズムと CA に必要な拡張を使用して、CA 証明書を作成します。
+たとえば `irb` などで通常の Ruby として実行でき、有効期間は例です。背景については、
+[OpenSSL ドキュメントの CA Certificate セクション](https://ruby.github.io/openssl/OpenSSL.html#module-openssl-ca-certificate)を参照してください。
 
 ```ruby
+require 'openssl'
+require 'securerandom'
 
-# Generate the key.
-# WARNING: Choose the right key type taking into consideration the policies above
-ca_key = OpenSSL::PKey::RSA.new 2048 # Stored in SupplyChain::SigningCertificate
+# Example values, in seconds. The CA must outlive every leaf certificate it issues.
+ca_validity = 5 * 365 * 24 * 60 * 60 # 5 years
+clock_skew = 5 * 60 # 5 minutes, backdates not_before
 
-ca_name = OpenSSL::X509::Name.parse '/CN=ca/DC=example'
+ca_key = OpenSSL::PKey::EC.generate('prime256v1')
+ca_name = OpenSSL::X509::Name.new([%w[CN ca], %w[DC gitlab]])
 
 ca_cert = OpenSSL::X509::Certificate.new
-ca_cert.serial = 0
-ca_cert.version = 2
-ca_cert.not_before = Time.now
-ca_cert.not_after = Time.now + 86400
-
-ca_cert.public_key = ca_key.public_key
+ca_cert.version = 2 # X.509 v3
+ca_cert.serial = SecureRandom.random_number(1...(2**159))
+ca_cert.not_before = Time.now - clock_skew
+ca_cert.not_after = Time.now + ca_validity
+ca_cert.public_key = ca_key
 ca_cert.subject = ca_name
 ca_cert.issuer = ca_name
 
@@ -245,13 +267,20 @@ extension_factory = OpenSSL::X509::ExtensionFactory.new
 extension_factory.subject_certificate = ca_cert
 extension_factory.issuer_certificate = ca_cert
 
-ca_cert.add_extension \
-  extension_factory.create_extension('subjectKeyIdentifier', 'hash')
-ca_cert.add_extension \
-  extension_factory.create_extension('basicConstraints', 'CA:TRUE', trues
+ca_cert.add_extension(extension_factory.create_extension('basicConstraints', 'CA:TRUE', true))
+ca_cert.add_extension(extension_factory.create_extension('keyUsage', 'keyCertSign,cRLSign', true))
+ca_cert.add_extension(extension_factory.create_extension('subjectKeyIdentifier', 'hash'))
+
+ca_cert.sign(ca_key, OpenSSL::Digest.new('SHA256'))
 ```
 
-### 署名用エフェメラルキーの生成
+CA の操作は抽象化しているため、リーフ証明書の構築方法を変更せずに、クラウド KMS などの別のキーストアを後から追加して BYOK をサポートできます。
+
+各証明には、どの方式で署名したかを記録するため、署名した CA が後で削除されても、その方式は分かるままです。
+
+キーのローテーションと失効は、この ADR の範囲外です。
+
+### 署名用エフェメラルキーの生成 {#generation-of-ephemeral-keys-for-signing}
 
 各証明に対して、中間のエフェメラルキーが生成されます。そのキーに関連付けられた公開鍵は
 `SupplyChain::Attestation` モデル内に永続化されます。
@@ -281,7 +310,7 @@ cert.sign ca_key, OpenSSL::Digest.new('SHA1')
 このキーは、[Signing with Self-Managed Keys](https://docs.sigstore.dev/cosign/key_management/signing_with_self-managed_keys/)
 ページで `cosign` によって提供されている手順に従って、出所の署名に使用できます。
 
-### 署名の検証
+### 署名の検証 {#signature-verification}
 
 署名の検証は手動で実行することも、GitLab の `glab` ツールを通じて実行することもできます。`glab` の呼び出しは、
 [SLSA level 3 provenance attestations](https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/#verifying-attestations)
@@ -330,25 +359,31 @@ cert.subject == name
 ユーザーが特定のブランチへの書き込みアクセスを持たない場合、他のブランチに対して私たちのシステムが生成した証明を
 検証手順の回避に使用できないことが保証されます。
 
-### 良い影響
+### 良い影響 {#positive-consequences}
 
-- この機能に外部依存関係はなく、完全に自己完結しています。
+- この機能に外部サービスは不要で、完全に自己完結しています。
+  `LOCAL_CA` 署名は Sigstore、Rekor、TSA のサービスに接続せず、GitLab が Sigstore 証明のためにすでに同梱している
+  `cosign` バイナリを使用します（[ADR 004](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/004_attestation_in_sidekiq/)）。
 - 将来のイテレーションで
   [BYOK](https://gitlab.com/gitlab-org/gitlab/-/work_items/590549#note_3326459572)
-  と組み合わせてうまく機能します。私たちはこれを保証する適切な抽象化を作成するためです。
+  と組み合わせてうまく機能します。上記で説明した抽象化によって実現します。
 - エンジニアリングのフットプリントとコストが比較的小さい。
 - 新しいサービスを作成またはメンテナンスする必要がない。
 - すべての環境とすべてのリポジトリタイプをサポートする。
+- 各プロジェクトが独自の CA を持つため、あるプロジェクトの CA から、別のプロジェクトに対する検証に通る証明書を発行することはできません。
+- インスタンスやプロジェクトの設定は不要です。
 
-### 悪い影響
+### 悪い影響 {#negative-consequences}
 
-- Rekor のような、改ざん防止で不変な署名記録という観点でのソリューションは含まれません。
+- Rekor のような、改ざん防止で不変な署名記録や、信頼できる署名時刻のためのソリューションは含まれません。
   これは恒久的なソリューションが見つかるまでの一時的な状況です。詳細は
   [このコメント](https://gitlab.com/gitlab-org/gitlab/-/work_items/590549#note_3326516370)を参照してください。
+- CA の秘密鍵は、インスタンスの暗号化キーで暗号化します。他の暗号化されたデータと同様に、バックアップにはインスタンスのシークレットを含める必要があります。
+- 署名を行う場所ではどこでも、新しいバージョンの `cosign` を利用できることに依存します。
 
-## テスト、パフォーマンス、可用性
+## テスト、パフォーマンス、可用性 {#testing-performance-and-availability}
 
-高い可用性と堅牢なパフォーマンスを確保するため、SSCS stage の Pipeline Security チームによって
+高い可用性と堅牢なパフォーマンスを確保するため、SSCS ステージの Build Security チームによって
 いくつかの対策が講じられます。
 
 - 他の GitLab ユーザーへの偶発的な影響を防ぐため、フィーチャーフラグの背後で本番環境の証明プロセスを手動テストする。
@@ -359,3 +394,4 @@ cert.subject == name
 - この機能は、明示的に opt-in したユーザーに対してのみ有効化される。
 - 一時的な失敗への対応には、Sidekiq のデフォルトの [retry configuration](https://docs.gitlab.com/development/sidekiq/#retries)を使用する。
   また、私たちの worker には [external dependencies](https://docs.gitlab.com/development/sidekiq/worker_attributes/#jobs-with-external-dependencies)があるものとしてフラグを付けています。
+  これは `SIGSTORE` 証明に適用されます。`LOCAL_CA` 証明は Sigstore サービスに依存しません。

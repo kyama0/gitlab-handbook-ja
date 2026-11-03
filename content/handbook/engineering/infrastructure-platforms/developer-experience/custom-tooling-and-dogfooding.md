@@ -2,11 +2,11 @@
 title: "カスタムツールとドッグフーディング"
 description: "Developer Experience のカスタムツールとドッグフーディングのプラクティス"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/custom-tooling-and-dogfooding/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T04:52:13+00:00"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+translated_at: "2026-11-03T21:11:48.175692+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-03T10:14:54+01:00"
 ---
 
 GitLab はドッグフーディングを広範に実践しています。Developer Experience ステージは GitLab の機能ギャップを埋めるためにカスタムツールを構築し、内部ニーズと製品開発の間に貴重なフィードバックループを生み出しています。
@@ -28,7 +28,7 @@ GitLab はドッグフーディングを広範に実践しています。Develop
 
 | ツール | 目的 | リポジトリ | ステータス | 製品としての可能性 |
 |------|---------|------------|--------|-------------------|
-| **CI Alerts** | パイプラインの失敗とパフォーマンス問題のリアルタイムアラート | [ci-alerts](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts) | アクティブ | 高 — ネイティブパイプラインアラートになる可能性 |
+| **CI Alerts** | 不安定なテストと CI の健全性に関するインシデントのリアルタイムアラート | [ci-alerts](https://gitlab.com/gitlab-org/quality/analytics/ci-alerts) | アクティブ | 高 — ネイティブパイプラインアラートになる可能性 |
 | **CI/CD Pipelines Observability** | パイプラインビジュアライザー、失敗の分類、カスタムメトリクスのための CI ログスクレイピング、テストをファーストクラスの市民として扱い、ランナーの改善を必要とする包括的な分析 | [Epic #22](https://gitlab.com/groups/gitlab-org/quality/analytics/-/epics/22)、[Pipeline Visualizer](https://pipeline-visualizer-gitlab-org-quality-engineeri-bcf92e4999c4df.gitlab.io/)と[製品に追加するための Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/508903)、[Failure Categories](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/doc/failure_categories.md) | アクティブ | 高 — ランナーエピックと製品のネイティブテスト概念が必要 |
 | **Snowflake Observability** | GitLab.com の運用とパフォーマンスのカスタムダッシュボードと分析 | [snowflake-dashboard-sql](https://gitlab.com/gitlab-org/quality/analytics/snowflake-dashboard-sql) | アクティブ | 高 — 製品に直接統合できる可能性 |
 

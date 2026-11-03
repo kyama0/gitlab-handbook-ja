@@ -3,9 +3,9 @@ title: Upstream Forum
 description: >-
   Upstream Forum は、UX チームメンバーが作業を共有し、議論するための定期的なミーティングです。
 upstream_path: /handbook/product/ux/upstream-forum/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-30T14:17:26-04:00"
-translated_at: "2026-11-01T06:45:40+00:00"
+upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
+lastmod: "2026-11-02T13:54:59-06:00"
+translated_at: "2026-11-03T21:08:59.195795+00:00"
 translator: codex
 stale: false
 ---
@@ -148,7 +148,6 @@ Upstream Forum 後の編集量を抑えるため、各トピックの後で録�
 1. 公開設定を Public にします。
    1. 注: 動画の内容に [SAFE](/handbook/legal/safe-framework/)に沿わない項目が含まれる場合は、動画を Private に設定します。
 1. 各トピックの簡単な説明とともに、YouTube リンクを `#upstream-studios` と `#product` の Slack チャネルで共有します。
-   1. Engineering Week-In-Review ドキュメントにも同じ更新を追加します。このドキュメントは、社内の [`engineering-fyi` Slack チャネル](https://gitlab.slack.com/archives/CJWA4E9UG)の説明にあります。
 
 #### 役立つヒント {#helpful-tips}
 
