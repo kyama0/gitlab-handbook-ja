@@ -2,33 +2,30 @@
 title: "Zip エンドユーザーガイド"
 description: "Zip エンドユーザーガイド"
 upstream_path: /handbook/business-technology/enterprise-applications/guides/zip-guide/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:13:40.134153+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-27T15:58:38-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## Zip とは
+## Zip とは {#what-is-zip}
 
 Zip は Coupa のアドオンで、承認プロセスを合理化します。関連するすべての情報を収集して承認を管理し、必要なサービスをできるだけ早く提供できるようにします。これにより、購入リクエストの状況や承認プロセスの現在のステージを確認できるようになります。
 
 
-{{% alert title="Note" color="info" %}}
-**Note**
-Zip の詳細と購入リクエストの提出方法については、[2 Minute Zip Overview Video](https://ziphq.wistia.com/medias/d7isqa87qz) をご確認ください。
+{{% alert title="注意" color="info" %}}
+Zip の詳細と購入リクエストの提出方法については、[2 Minute Zip Overview Video](https://ziphq.wistia.com/medias/d7isqa87qz)をご確認ください。
 {{% /alert %}}
 
 
-### Zip へのアクセス方法
+### Zip へのアクセス方法 {#how-to-access-zip}
 
 Zip へのアクセスをリクエストするには:
 
-1. [Lumos App Store](/handbook/security/corporate/systems/lumos/ar/) を利用して Zip と Coupa の別々のアクセスリクエストを提出します。Zip へのアクセスをリクエストするすべてのユーザーは、PO と請求書を管理するための Coupa ライセンスも必要です
+1. [Lumos App Store](/handbook/security/corporate/systems/lumos/ar/)を利用して Zip と Coupa の別々のアクセスリクエストを提出します。Zip へのアクセスをリクエストするすべてのユーザーは、PO と請求書を管理するための Coupa ライセンスも必要です
 
-   - a) 「このアクセスの正当な理由」の質問には、管理する予算、マネジメント承認、発注書、請求書承認の内容を記述してください。
+   - a) *Justification for this access*（このアクセスの正当な理由）の質問には、管理する予算、マネジメント承認、発注書、請求書承認の内容を記述してください。
 
    - b) Zip/Coupa へのアクセスが即時必要な場合は、`#coupa_help` Slack チャンネルに投稿してください。
 
@@ -40,9 +37,9 @@ Zip へのアクセスをリクエストするには:
 
 ![zip-image-1](/images/business-technology/enterprise-applications/guides/zip-guide/login-page.png)
 
-## Zip - はじめに
+## Zip - はじめに {#zip---getting-started}
 
-### 新しいリクエストの開始方法
+### 新しいリクエストの開始方法 {#how-to-initiate-a-new-request}
 
 1. [Okta ホームページ](https://gitlab.okta.com/app/UserHome)にログインします。
 2. 上部メニューの右側にある `+New Request` をクリックします。
@@ -50,7 +47,7 @@ Zip へのアクセスをリクエストするには:
 4. リクイジション（購入依頼）フォームに入力します
    - a) リクエストタイプによっては、一般情報、ベンダー詳細、支出情報、IT セキュリティとプライバシー、補足ドキュメントなどのセクションの記入を求められる場合があります。
 5. リクエスターの場合は自分の名前を入力するか、代理でリクエストしている人の名前を入力します。
-6. 「What are you looking to purchase?」（何を購入しようとしていますか？）の質問では、購入するコモディティを尋ねています。例えば、この購入が Marketing チームのためのものであれば、Marketing Programs を選択し、購入内容を説明する適切なサブカテゴリを選択します。
+6. `What are you looking to purchase?`（何を購入しようとしていますか？）の質問では、購入するコモディティを尋ねています。例えば、この購入が Marketing チームのためのものであれば、Marketing Programs を選択し、購入内容を説明する適切なサブカテゴリを選択します。
 7. Coupa バーチャルカードで支払うかどうかを選択します。
 
 ![zip-image-2](/images/business-technology/enterprise-applications/guides/zip-guide/new-request4.png)
@@ -59,7 +56,7 @@ Zip へのアクセスをリクエストするには:
 
 ![zip-image-4](/images/business-technology/enterprise-applications/guides/zip-guide/new-request5.png)
 
-### 購入リクエストのコモディティカテゴリとサブカテゴリ
+### 購入リクエストのコモディティカテゴリとサブカテゴリ {#purchase-requests-commodity-categories-and-sub-categories}
 
 1. コンサルティング、Professional Services、トレーニング
    - コンサルティング費用
@@ -73,7 +70,7 @@ Zip へのアクセスをリクエストするには:
    - 税務コモディティ
 3. 総務・管理
    - 従業員福利厚生 - 通勤自転車
-   - セキュリティ預金（12 か月超）
+   - 敷金・保証金（12 か月超）
    - クレジットカード手数料
    - ギフト・寄付
    - パートナー成長費
@@ -91,7 +88,7 @@ Zip へのアクセスをリクエストするには:
    - メール
    - ブランド
    - プロスペクティング
-   - チャンネルパートナーリベート
+   - チャネルパートナーリベート
 6. オフィス機器・用品
    - コンピューター・オフィス機器
    - オフィス用品
@@ -107,19 +104,19 @@ Zip へのアクセスをリクエストするには:
 10. 出張・交際費、会社イベント
     - 航空運賃
     - ビジネス食事・交際費
-    - 会社の機能
+    - 会社行事
     - ホテル・宿泊
     - 食事 - 会社提供
     - 駐車料金、ガソリン、通行料、走行距離
     - タクシー、カーサービス、公共交通機関
-    - IACV 伝道者ディナーインセンティブ
+    - IACV Evangelism Dinner Incentive
     - チームビルディング
 
-### 新規ベンダーのリクエスト方法
+### 新規ベンダーのリクエスト方法 {#how-to-request-a-new-vendor}
 
 新規ベンダーの設定プロセスは `Zip` から始まります。新しい購入リクエストを作成するだけで、新規ベンダーを追加するオプションが表示されます。リクエストが提出されると、**Procurement** チームに通知され、`Coupa` に新規ベンダーが追加されます。
 
-### 発注書を生成、表示、ベンダーに送信する方法
+### 発注書を生成、表示、ベンダーに送信する方法 {#how-to-generate-view-and-send-a-purchase-order-to-a-vendor}
 
 購入リクエストが Zip で完全に承認されると、Zip は仮想カード以外の購入について自動的に発注書を生成します。
 発注書は購入リクエストのリクエスターに割り当てられるため、リクエスターはリクエストと結果として生成された PO の両方にアクセスできます。
@@ -135,7 +132,7 @@ Zip へのアクセスをリクエストするには:
 
 PO が送信されると、ベンダーは通知を受け取り、ベンダー連絡先としてベンダーポータルにオンボーディングされていれば、そのポータルで発注書を表示できます。
 
-### 変更リクエストの方法
+### 変更リクエストの方法 {#how-to-do-a-request-change}
 
 既存の発注書を更新する必要がある場合は、複数の方法で発注書変更リクエストを開始できます:
 
@@ -171,7 +168,7 @@ PO が送信されると、ベンダーは通知を受け取り、ベンダー�
 
 **注意** 変更リクエストはベンダーの更新には使用できません。PO のベンダーを更新する必要がある場合は、#procurement Slack で Procurement チームにお問い合わせください。
 
-### POC 契約への署名リクエスト方法
+### POC 契約への署名リクエスト方法 {#how-to-request-a-signature-on-a-poc-agreement}
 
 費用のない契約で新しいベンダーとの POC（概念実証）を実施する予定の場合は、以下の手順に従ってください:
 
@@ -184,11 +181,11 @@ PO が送信されると、ベンダーは通知を受け取り、ベンダー�
 7. リクエストを提出します。
 8. Legal と Security の承認が取得された後、Procurement チームが署名プロセスを進めます。
 
-### バーチャルカードのプロセスはどのように機能しますか？
+### バーチャルカードのプロセスはどのように機能しますか？ {#how-does-the-virtual-card-process-work}
 
 バーチャルカードのリクエストは通常の購入リクエストとして Zip を経由します。
 
-   1. 「Will a virtual card be used to pay this vendor?」の質問に `Yes` を選択して、関連するすべての情報を入力します。
+   1. `Will a virtual card be used to pay this vendor?`の質問に `Yes` を選択して、関連するすべての情報を入力します。
    2. 受付時に、ベンダーが MasterCard を受け入れるかどうかを確認します。受け入れる場合は、購入をバーチャルカードで支払うことを指定します。
     - ベンダーがバーチャルカードを受け入れるかどうかがまだわからない場合でも、リクエストを提出して、当初は支払い方法を発注書のままにしておくことができます。リクエストがまだ完全に承認されていない限り、Procurement または管理チームが支払い方法をバーチャルカードに変更できます。
    3. リクエストがすでに完全に承認され PO として生成されている場合は、支払い方法をバーチャルカードに変更できるように、発注書をキャンセルし元のリクエストを複製する必要があります。
@@ -197,7 +194,7 @@ PO が送信されると、ベンダーは通知を受け取り、ベンダー�
    6. 各バーチャルカード取引について、カード保有者は領収書をアップロードし、取引詳細を確認し、取引をレビュー済みとしてマークすることが求められます。
    7. カード保有者のレビューが完了すると、Accounts Payable が取引をレビューして NetSuite に同期します。承認はすでに元の購入リクエストで収集されているため、その時点では追加の承認は必要ありません。
 
-### バーチャルカード変更リクエストの提出方法
+### バーチャルカード変更リクエストの提出方法 {#how-to-submit-a-virtual-card-change-request}
 
    1. 既存のバーチャルカードの変更をリクエストするには、`+ New Request` をクリックして `Virtual Card Change Requests` を選択します。
    2. 発注書変更リクエストとは異なり、バーチャルカード変更リクエストは発注書ではなくバーチャルカード自体に紐づけられます。
@@ -205,7 +202,7 @@ PO が送信されると、ベンダーは通知を受け取り、ベンダー�
    4. 新しい開始日または終了日、改定された合計金額、通貨、補足の添付ファイルなど、更新されたバーチャルカード詳細を受付フォームに記入します。
    5. 提出後、リクエストは通常の承認フローに従います。承認されると、Procurement または管理チームが承認された変更をバーチャルカードに適用します。
    
-### リクエストの追跡方法
+### リクエストの追跡方法 {#how-to-keep-track-of-a-request}
 
 1. [Okta ホームページ](https://gitlab.okta.com/app/UserHome)にログインします。
 2. ZIP を開きます
@@ -218,13 +215,12 @@ PO が送信されると、ベンダーは通知を受け取り、ベンダー�
 ![zip-image-6](/images/business-technology/enterprise-applications/guides/zip-guide/submitted-request2.png)
 
 
-{{% alert title="Note" color="info" %}}
-**Note**
+{{% alert title="注意" color="info" %}}
 どの承認が完了していて、どの承認がまだ完了していないかを確認できます。リクエストが異なる当事者によって承認されると、Slack とメールで自動通知が送信されます。
 {{% /alert %}}
 
 
-### 新しいリクエストのステータス確認方法
+### 新しいリクエストのステータス確認方法 {#how-to-check-status-of-a-new-request}
 
 1. [Okta ホームページ](https://gitlab.okta.com/app/UserHome)にログインします。
 2. ZIP を開きます
@@ -238,7 +234,7 @@ PO が送信されると、ベンダーは通知を受け取り、ベンダー�
 
 ![zip-image-status](/images/business-technology/enterprise-applications/guides/zip-guide/zip_status.png)
 
-### 書類の署名状況の確認方法
+### 書類の署名状況の確認方法 {#how-to-check-signature-status-of-documents}
 
 1. [Okta ホームページ](https://gitlab.okta.com/app/UserHome)にログインします。
 2. ZIP を開きます
@@ -247,10 +243,10 @@ PO が送信されると、ベンダーは通知を受け取り、ベンダー�
 
 契約書のタイトルに「Executable」という用語が含まれている場合、Legal チームによってレビューされスタンプが押されていることを示します。これは、Coupa でのすべての承認が取得された場合に、契約書が署名のために回覧される準備ができていることを意味します。
 
-- 契約書がすべての関係者によって完全に署名されている場合、そのステータスは `Final` と表示され、タイトルには「Signed」という用語が含まれます。
+- 契約書がすべての関係者によって完全に署名されている場合、そのステータスは `Final` と表示され、タイトルには`Signed`という用語が含まれます。
 - 契約書の署名が保留中の場合、必要な署名の数と取得済みの署名に応じて、「0/2」や「1/2」などの分数でステータスが表示されます。例えば、必要な署名のいずれも取得されていない場合は「0/2」、2 つのうち 1 つの署名が取得された場合は「1/2」と表示される場合があります。
 
-### 請求書の詳細と承認を表示する方法
+### 請求書の詳細と承認を表示する方法 {#how-to-view-invoice-details-and-approvals}
 
 Zip の請求書はいくつかの方法で見つけることができます:
 
@@ -266,7 +262,7 @@ Zip の請求書はいくつかの方法で見つけることができます:
 
 請求書が完全に承認されると、GL に適用されるために NetSuite に同期されます。
 
-### Legal の承認 / 修正案
+### Legal の承認 / 修正案 {#legal-approval--redlines}
 
 まだ条件について合意に至っていない新しいベンダーが関係するリクエストの場合、Legal チームは会社のポリシーと法的要件へのコンプライアンスを確保するために、ベンダーの契約に修正案を提供することがあります。
 
@@ -294,7 +290,7 @@ Legal チームがベンダーの契約をレビューして修正案を提供�
 
    修正案に関してベンダーに連絡したチームメンバーは誰でも、ノートがベンダーに送られたことを示す ZIP リクエストにコメントを残す必要があります。これにより、チーム内での適切な文書化とコミュニケーションが確保されます。
 
-### リクエストのキャンセル方法
+### リクエストのキャンセル方法 {#how-to-cancel-a-request}
 
 1. Zip ホームページで `Submitted` タブをクリックします。
 2. キャンセルしたい購入リクエストを見つけて選択します。
@@ -307,7 +303,7 @@ Legal チームがベンダーの契約をレビューして修正案を提供�
 
 ![zip-image-16](/images/business-technology/enterprise-applications/guides/zip-guide/cancel-request3.png)
 
-### リクエストのクローン方法
+### リクエストのクローン方法 {#how-to-clone-a-request}
 
 1. Zip ホームページで `Submitted` タブをクリックします。
 2. クローンしたい購入リクエストを見つけて選択します。
@@ -320,18 +316,18 @@ Legal チームがベンダーの契約をレビューして修正案を提供�
 
 ![zip-image-19](/images/business-technology/enterprise-applications/guides/zip-guide/clone-request3.png)
 
-### リクエストへのコメント方法
+### リクエストへのコメント方法 {#how-to-comment-on-a-request}
 
 すべてのリクエスト詳細ページには、リクエストにアクセスできるすべてのユーザー間のコミュニケーションのスペースを提供する `Comments` タブがあります。組織のメンバーからのコメントに加えて、このタブではベンダーポータルでベンダーからコメントが残されると通知が表示されます。
 ユーザーは質問やコメントを投稿でき、連鎖内のすべてのステークホルダー（リクエスターとすべての承認者）が確認して返答するよう通知されます。または特定の人に `@` タグを付けると、その人だけが通知されます。
 
 ![zip-image-7](/images/business-technology/enterprise-applications/guides/zip-guide/comments1.png)
 
-## Zip - 承認プロセス
+## Zip - 承認プロセス {#zip---approval-process}
 
 Legal、HR、Procurement、Security、Privacy によって特定されたユーザーには、自分に割り当てられた特定の購入リクエストを承認または却下するオプションがあります。
 
-### リクエストの承認方法
+### リクエストの承認方法 {#how-to-approve-a-request}
 
 1. リクエストがあなたの承認を必要とする場合、Zip は個人設定に応じてメール、Slack、アプリ内通知で通知できます。
 2. 通知から、または Zip ホームページの Needs My Approvals からリクエストを開くことができます。
@@ -342,8 +338,7 @@ Legal、HR、Procurement、Security、Privacy によって特定されたユー�
 ![zip-image-8](/images/business-technology/enterprise-applications/guides/zip-guide/approval-request7.png)
 
 
-{{% alert title="Note" color="info" %}}
-**Note**
+{{% alert title="注意" color="info" %}}
 承認通知設定（メールおよび/または Slack）は、Zip にログインして以下の設定で変更できます:
 Settings -> Personal Settings -> Notifications。
 {{% /alert %}}
@@ -353,7 +348,7 @@ Settings -> Personal Settings -> Notifications。
 
 ![zip-image-10](/images/business-technology/enterprise-applications/guides/zip-guide/approval-request8.png)
 
-### 承認が必要なすべてのリクエストを確認する方法
+### 承認が必要なすべてのリクエストを確認する方法 {#how-to-see-all-the-requests-that-need-my-approval}
 
 キューのデフォルトアサイニーである場合は、ホームダッシュボードページで右上の `Dashboard` をクリックして `Needs My Approval` タブを選択することで、承認待ちのすべてのリクエストを確認できます。
 
@@ -365,19 +360,19 @@ Zip はまた、あなたがフォローしているレコードや最近完了�
 
 ![zip-image-11](/images/business-technology/enterprise-applications/guides/zip-guide/approval-request4.png)
 
-### 承認を再割り当てする方法
+### 承認を再割り当てする方法 {#how-to-reassign-approvals}
 
 キューからの保留中の承認を自分自身または別のユーザーに再割り当てできます。リクエストの横にある鉛筆アイコンをクリックして承認を再割り当てします。
 
 ![zip-image-12](/images/business-technology/enterprise-applications/guides/zip-guide/approval-request5.png)
 
-### リクエストに関連するすべての書類を確認する方法
+### リクエストに関連するすべての書類を確認する方法 {#how-to-see-all-of-the-documents-associated-with-a-request}
 
 任意のリクエストの上部にある `Documents` タブをクリックして、すべての書類を確認します。購入リクエストに関連する書類のすべてのバージョンを表示および管理できます。
 
 ![zip-image-13](/images/business-technology/enterprise-applications/guides/zip-guide/approval-request6.png)
 
-### 通知の管理方法
+### 通知の管理方法 {#how-to-manage-notifications}
 
 1. Zip で Personal Settings を開き、Notifications に移動します。
 2. Zip は、あなたが割り当てられている、フォローしている、または承認者を務めているリクエストのアクティビティについて通知できます。
@@ -386,13 +381,13 @@ Zip はまた、あなたがフォローしているレコードや最近完了�
 5. コメント、@メンション、スレッドの返信に関する通知も制御できます。
 6. Zip が Slack に接続されている場合、承認通知は Zip Slack アプリに表示され、Slack 内で承認用のアクションボタンが含まれる場合があります。
 
-### 不在時の委任の設定方法
+### 不在時の委任の設定方法 {#how-to-set-up-out-of-office-delegation}
 
 1. Zip で Personal Settings を開き、不在時オプションを見つけます。
 2. 委任期間を選択し、適切なタイムゾーンを選択し、その期間中に委任された承認を受け取るべき人を選択します。
 3. 委任を保存すると、選択した期間中、購入リクエストと請求書に関連する承認がその委任先にルーティングされます。
 
-## Zip プラットフォームサポート
+## Zip プラットフォームサポート {#zip-platform-support}
 
 - **機能**に関するすべての質問については、**Procurement チーム**が最初の窓口です。例:
   - なぜ Zip を使用するのですか？
@@ -406,8 +401,7 @@ Zip はまた、あなたがフォローしているレコードや最近完了�
 - **技術的**な問題やご質問（アクセスリクエスト、ログイン問題、バグなど）については、**Finance System Admins** が最初の窓口です。
 
 
-{{% alert title="Note" color="info" %}}
-**Note**
-Procurement チームまたは Finance System Admins に連絡するには、質問内容を記載したメッセージを [#zip-faq](https://gitlab.slack.com/archives/C04K1EJGLT1) に送ってください。
+{{% alert title="注意" color="info" %}}
+Procurement チームまたは Finance System Admins に連絡するには、質問内容を記載したメッセージを [#zip-faq](https://gitlab.slack.com/archives/C04K1EJGLT1)に送ってください。
 {{% /alert %}}
 

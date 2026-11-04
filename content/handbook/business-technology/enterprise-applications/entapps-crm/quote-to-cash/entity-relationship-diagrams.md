@@ -2,18 +2,16 @@
 title: "Quote to Cash エンティティ関係図"
 description: "Quote to Cash システムのエンティティ関係図"
 upstream_path: /handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/entity-relationship-diagrams/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T06:00:00Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:18:46.379546+00:00"
 translator: claude
 stale: false
-lastmod: "2024-08-20T19:24:56+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## Quote to Cash エンティティ関係図 {#quote-to-cash-entity-relationship-diagrams}
 
-## Quote to Cash エンティティ関係図
-
-### Zuora Billing
+### Zuora Billing {#zuora-billing}
 
 ```mermaid
 erDiagram
@@ -839,7 +837,7 @@ erDiagram
     }
 ```
 
-### CustomersDot（カスタマーポータル）
+### CustomersDot（カスタマーポータル） {#customersdot-customer-portal}
 
 ```mermaid
 erDiagram
@@ -1133,7 +1131,7 @@ erDiagram
     self_managed_instance_activations }o--|| self_managed_instances : ""
 ```
 
-### GitLab
+### GitLab {#gitlab}
 
 ```mermaid
   erDiagram

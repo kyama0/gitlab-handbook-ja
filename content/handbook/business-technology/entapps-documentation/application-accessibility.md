@@ -2,21 +2,19 @@
 title: "アプリケーションアクセシビリティ"
 description: "このページは、アクセシビリティを向上させ、作業体験を改善する機能を有効化、利用開始、またはリクエストする方法に関するエンドユーザーガイドを提供します。"
 upstream_path: /handbook/business-technology/entapps-documentation/application-accessibility/
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-translated_at: "2026-07-09T08:23:34+09:00"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:18:46.379546+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+### 概要 {#overview}
 
-### 概要
+GitLab の CorpSec と Enterprise Applications の両チームは、できる限り幅広い対象者に向けてアプリケーション全体のアクセシビリティを確保することにコミットしています。私たちは使用している製品内ですでに利用可能なサービスと機能を有効化することで、すべてのチームメンバーを積極的にサポートしています。
 
-GitLab の CorpSec とエンタープライズアプリケーションチームは、できる限り幅広い対象者に向けてアプリケーション全体のアクセシビリティを確保することにコミットしています。私たちは使用している製品内ですでに利用可能なサービスと機能を有効化することで、すべてのチームメンバーを積極的にサポートしています。
+### MacOS 機能 {#macos-features}
 
-### MacOS 機能
-
-CorpSec とセキュリティエンジニアリングは、Apple Intelligence（審査中）を除き、MacOS のすべてのアクセシビリティ機能をデフォルトで有効化しています。こちらは[Mac で有効になっている機能に関する Apple のガイド](https://support.apple.com/guide/mac-help/get-started-mh35884/mac)です。
+CorpSec と Security Engineeringは、Apple Intelligence（審査中）を除き、MacOS のすべてのアクセシビリティ機能をデフォルトで有効化しています。こちらは[Mac で有効になっている機能に関する Apple のガイド](https://support.apple.com/guide/mac-help/get-started-mh35884/mac)です。
 
 MacOS は以下をサポートする機能を備えています：
 
@@ -24,11 +22,11 @@ MacOS は以下をサポートする機能を備えています：
 
 2. [モビリティ](https://support.apple.com/guide/mac-help/mobility-mchl654a7cc7/15.0/mac/15.0) - 音声コマンドとショートカット、アイトラッキング、補助入力デバイスとスイッチコントロールの使用
 
-3. [スピーチ](https://support.apple.com/guide/mac-help/speech-mchl6972f04a/15.0/mac/15.0) - ライブスピーチ、パーソナルボイス
+3. [スピーチ](https://support.apple.com/guide/mac-help/speech-mchl6972f04a/15.0/mac/15.0) - Live Speech、Personal Voice
 
 これらの機能を有効化するには、システム設定を開いてアクセシビリティを選択してください。サポートが必要な場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して探してください）または it-help@gitlab.com から IT にお問い合わせください。
 
-### WCAG 準拠アプリケーション
+### WCAG 準拠アプリケーション {#wcag-compliant-applications}
 
 ほとんどの SaaS アプリケーションは、アプリケーション構築の一部として Web Content Accessibility Guidelines（WCAG）国際標準をサポートしています。これにより、MacOS とブラウザの機能、補助デバイス、周辺機器とシームレスに連携し、アプリケーションのアクセシビリティを大幅に向上させることができます。以下のアプリケーションが WCAG 準拠です：
 
@@ -41,7 +39,7 @@ MacOS は以下をサポートする機能を備えています：
 7. Tropic
 8. Supplier.IO
 
-### アコモデーションツール
+### アコモデーションツール {#accommodation-tools}
 
 GitLab はチームメンバーをサポートし、インクルーシブで生産的な職場環境を確保するために設計された幅広いアクセシビリティとアコモデーションツールを提供しています。
 
@@ -50,8 +48,8 @@ GitLab はチームメンバーをサポートし、インクルーシブで生�
 | **ソリューション名**                         | **カテゴリ**              | **利用可能性**      |
 |---------------------------------------|------------------------|-------------------|
 | 補聴器                          | 補聴器           | アコモデーション     |
-| Humanware ブライルデバイス              | ブライルデバイス          | アコモデーション     |
-| Humanware マグニファイアー                   | マグニファイアー              | アコモデーション     |
+| Humanware Braile Devices              | ブライルデバイス          | アコモデーション     |
+| Humanware Magnifier                   | マグニファイアー              | アコモデーション     |
 | [Be My Eyes](https://www.bemyeyes.com/)                            | スクリーンリーダー          | アコモデーション     |
 | [TapTapSee](https://taptapseeapp.com/)                             | スクリーンリーダー          | アコモデーション     |
 | [Lookout By Google](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.reveal)                    | スクリーンリーダー          | アコモデーション     |
@@ -63,4 +61,4 @@ GitLab はチームメンバーをサポートし、インクルーシブで生�
 | [Aipoly Vision](http://aipoly.com/index.html)                         | スクリーンリーダー          | アコモデーション     |
 | [My Vision Helper](https://apps.apple.com/us/app/my-vision-helper/id1494081755)                     | スクリーンリーダー          | アコモデーション     |
 
-これらのツールへのアクセスが必要な場合は、`#enterprise-applications` Slack チャンネルでサポートをリクエストしてください。エンタープライズチームはその後、アコモデーション関連のリクエストのために Team Member Relations チーム（TMR）と調整します。
+これらのツールへのアクセスが必要な場合は、`#enterprise-applications` Slack チャンネルでサポートをリクエストしてください。Enterprise Teamはその後、アコモデーション関連のリクエストのために Team Member Relations チーム（TMR）と調整します。

@@ -2,14 +2,12 @@
 title: "Coupa 前払い自動化プロセス"
 description: "Coupa 前払い自動化プロセス（2022-04-01 時点）"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/coupa-prepaid/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T05:49:40Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:16:10.746882+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-01-06T17:31:07+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 
 {{% panel header="**重要事項**" header-bg="info" %}}
@@ -17,14 +15,14 @@ lastmod: "2025-01-06T17:31:07+00:00"
 {{% /panel %}}
 
 
-効率的なプロセスを実現するため、経理チームは償却仕訳の自動化を実装しました。Coupa での購買依頼のレビュー・承認プロセスの一環として、FP&A チームは以下のいずれかに該当する場合に変更が必要かどうかを判断します:
+効率的なプロセスを実現するため、Accounting Team は償却仕訳の自動化を実装しました。Coupa での購買依頼のレビュー・承認プロセスの一環として、FP&A Team は以下のいずれかに該当する場合に変更が必要かどうかを判断します:
 
 1. 前払い **または**
-1. 敷金 - [前払費用ポリシー](/handbook/finance/accounting/#prepaid-expense-policy)に従って償却・資本化が必要なサービス料、または将来発生するイベントやサービスに対応するもの。
+1. デポジット - [前払費用ポリシー](/handbook/finance/accounting/#prepaid-expense-policy)に従って償却・資本化が必要なサービス料、または将来発生するイベントやサービスに対応するもの。
 
 <br>
 
-アイテムが前払いまたは敷金の場合、FP&A チームは以下のように `Cart Items`（カートアイテム）セクションを編集します:
+アイテムが前払いまたはデポジットの場合、FP&A Team は以下のように `Cart Items`（カートアイテム）セクションを編集します:
 
 1. 購買依頼を前払いとして処理する必要がある場合、**Is this a prepaid?（これは前払いですか？）** チェックボックスにチェックを入れます。
 1. **Is this is a prepaid? = Yes** の場合、**Amortization Schedule（償却スケジュール）** で、ドロップダウンリストから **Prepaid Expense Amortization（前払費用償却）** を選択します。

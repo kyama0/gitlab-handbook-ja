@@ -1,17 +1,15 @@
 ---
 title: "ポリシー"
-description: "IT エンタープライズアプリケーションが遵守する GitLab のポリシーです。"
+description: "IT Enterprise Applications が遵守する GitLab のポリシーです。"
 upstream_path: /handbook/business-technology/entapps-documentation/policies/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T08:00:00Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:18:46.379546+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-03T14:17:43-06:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-users" id="biz-tech-icons"></i> GitLab ポリシーへのリンク
+## <i class="fas fa-users"></i> GitLab ポリシーへのリンク {#links-to-gitlab-policies}
 
 1. <https://handbook.gitlab.com/handbook/security/security-and-technology-policies/access-management-policy/>
 2. <https://handbook.gitlab.com/handbook/security/policies_and_standards/password-standard/>

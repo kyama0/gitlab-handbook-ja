@@ -2,14 +2,14 @@
 title: Finance Systems アクセスリクエスト
 description: Finance Systems アクセスリクエスト
 upstream_path: /handbook/business-technology/enterprise-applications/entapps-crm/finsys-access-requests/
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-translated_at: "2026-10-19T10:08:35Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:16:10.746882+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-16T19:52:00+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-## <i class="fas fa-book" id="biz-tech-icons"></i> アクセスリクエスト
+## <i class="fas fa-book"></i> アクセスリクエスト {#access-requests}
 
 プロビジョニングされる多くのファイナンスシステムは SOX システムとも見なされており、[SOX プログラム](https://internal.gitlab.com/handbook/internal-audit/sarbanes-oxley/)の対象となります。
 
@@ -26,7 +26,7 @@ lastmod: "2026-10-16T19:52:00+02:00"
 - Zuora Billing
 - Zuora Revenue
 
-### 追加手順
+### 追加手順 {#additional-procedures}
 
 [GitLab アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)プロセスに加えて、チームは以下を実施します:
 
@@ -39,14 +39,14 @@ lastmod: "2026-10-16T19:52:00+02:00"
 
 **注:** [AR](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)に本番環境以外の環境が明示されていない限り、チームはリクエスターが本番環境のアクセスのみをリクエストしているものとして常に想定します。
 
-### 完了の定義
+### 完了の定義 {#definition-of-done}
 
 - AR は FinSys の観点から、以下が揃っている場合のみ `Done` と見なされます:
   - 明確なシステム固有のロールと権限のリクエスト
   - Manager および Business Owner Approver
   - タイムスタンプ付きのプロビジョニング済みユーザーレコードのスクリーンショット
 
-## システム固有のアクセスリクエスト要件
+## システム固有のアクセスリクエスト要件 {#system-specific-access-request-requirements}
 
 | システム | AR 要件 | 注意事項 |
 |-------------------|----------------------------------------|-------------------|

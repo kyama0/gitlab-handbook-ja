@@ -1,17 +1,15 @@
 ---
 title: "手順"
-description: "このセクションでは、IT エンタープライズアプリケーションがポリシーをサポートするプロセスをどのように実施するかを説明します。このセクションの一部は GitLab 社内限定で、業務の進め方に関する機密かつ非公開の情報を含みます。"
+description: "このセクションでは、IT Enterprise Applications がポリシーをサポートするプロセスをどのように実施するかを説明します。このセクションの一部は GitLab 社内限定で、業務の進め方に関する機密かつ非公開の情報を含みます。"
 upstream_path: /handbook/business-technology/entapps-documentation/procedures/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T06:00:00Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:18:46.379546+00:00"
 translator: claude
 stale: false
-lastmod: "2024-10-04T15:57:24-07:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-users" id="biz-tech-icons"></i> IT エンタープライズアプリケーション手順へのリンク
+## <i class="fas fa-users"></i> IT Enterprise Applications の手順へのリンク {#links-to-it-enterprise-applications-procedures}
 
 **このページは現在作成中であることにご注意ください**
 

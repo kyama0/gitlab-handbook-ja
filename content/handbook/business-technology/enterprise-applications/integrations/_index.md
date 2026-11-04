@@ -1,24 +1,22 @@
 ---
 title: "アーキテクチャ & インテグレーション"
 upstream_path: "/handbook/business-technology/enterprise-applications/integrations/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:02:44Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:08:15.601207+00:00"
 translator: "claude"
 stale: false
-lastmod: "2024-10-04T11:37:24+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちについて
+## <i class="fas fa-users"></i> 私たちについて {#about-us}
 
 私たちは、Enterprise Applications エコシステムに存在する複雑なインテグレーションと自動化のエコシステムを設計、構築、維持するチームです。ハイブリッドインテグレーションプラットフォームを使用してこれを実現しています。また、すべての Enterprise Application システムとインテグレーションに[標準とコンベンション](/handbook/business-technology/enterprise-applications/integrations/)を適用することで、システムインテグレーションとリアルタイムデータフローに関してガバナンスの役割も担っています。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i>私たちのチーム（組織図）
+## <i class="fas fa-users"></i>私たちのチーム（組織図） {#our-team-org-chart}
 
 [私たちのチーム（組織図）](https://internal.gitlab.com/handbook/it-enterprise-applications/about-us/enterprise-applications-integrations/)
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのサービス
+## <i class="fas fa-users"></i> 私たちのサービス {#our-services}
 
 - システムインテグレーションと API
   - システム A とシステム B の接続
@@ -29,22 +27,22 @@ lastmod: "2024-10-04T11:37:24+00:00"
   - カスタム API の構築
   - 自動化とワークフローの構築
 
-## 高度にテストされた堅牢なデータマッピング
+## 高度にテストされた堅牢なデータマッピング {#highly-tested-and-robust-data-mapping}
 
 ユニットテストとインテグレーションテストの組み合わせを使用して、マッピング対象のデータモデルが現在も将来も正確であることを保証する自動テストを構築しています。
 
-## システムの疎結合
+## システムの疎結合 {#system-decoupling}
 
 私たちが使用するインテグレーションプラットフォームにより、イベント発生システムをダウンストリームのコンシューマーから切り離すことができます。これにより、アップストリームシステムの切り替えや新しいダウンストリームシステムの導入を決定した場合でも、自分たちやシステムオーナーに大量の手戻りを発生させることなく、迅速かつ簡単に対応できます。
 
-## スケジュール自動化
+## スケジュール自動化 {#scheduled-automations}
 
 CRON スケジューリング機能を通じて、非常に柔軟な時間ベースの自動化を構築できます。
 
-## Slack インテグレーション
+## Slack インテグレーション {#slack-integration}
 
 Slack インテグレーションの自動化とワークフローが必要な場合は、Workato に組み込まれた Slack コネクターを通じて提供しています。どのようにサポートできるかについては、お問い合わせください。
 
-## ビルトインのビジネスシステムコネクター
+## ビルトインのビジネスシステムコネクター {#built-in-business-system-connectors}
 
 Workato との統合を通じて、多くの標準的なビジネスシステムに対応したすぐに使えるコネクターを提供しています。利用可能なものについては、[Workato コネクターリスト](https://docs.workato.com/connectors.html)をご覧ください。お使いのシステムがそのウェブサイトに記載されていない場合は、追加システム向けのカスタムコネクターも定期的に構築していますので、お問い合わせください。

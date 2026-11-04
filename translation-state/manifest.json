@@ -146,19 +146,19 @@
     },
     "content/handbook/business-technology/_index.md": {
       "path": "content/handbook/business-technology/_index.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:08:19+00:00",
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:06:40.701523+00:00",
       "model": "codex",
-      "input_hash": "788dadc756f722e8567c9013286424eb9cd9a9543ae64248ad46c0ccfb0ac854",
-      "upstream_committed_at": "2026-09-13T10:44:23-04:00"
+      "input_hash": "5ce19814d935bdbde8ff0aca99380ea416738f36738a84255cd95fd407372f81",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/engineering/infrastructure/reference-links.md": {
       "path": "content/handbook/business-technology/engineering/infrastructure/reference-links.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "993f2d248f7a0b3eb0f331081f6ad16e8402705a14f647f0437a06a9ff74974a",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:18:46.379546+00:00",
+      "model": "codex",
+      "input_hash": "550f69088894b9b51627a1472396c5843de068eb0f441984f2e1286ac2a9dd00",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/entapps-documentation/_index.md": {
       "path": "content/handbook/business-technology/entapps-documentation/_index.md",
@@ -170,19 +170,19 @@
     },
     "content/handbook/business-technology/entapps-documentation/application-accessibility.md": {
       "path": "content/handbook/business-technology/entapps-documentation/application-accessibility.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T08:23:34+09:00",
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:18:46.379546+00:00",
       "model": "codex",
-      "input_hash": "9566ea51f8009d9871e2bf90473d15f0ffd26c48f70b718f3012570d4c3c6f54",
-      "upstream_committed_at": "2026-07-08T14:46:05-04:00"
+      "input_hash": "843befa58eb0bba743cf9a264c5ac83624c41d7d94ae49628a501e3dd1deeb39",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/entapps-documentation/policies/_index.md": {
       "path": "content/handbook/business-technology/entapps-documentation/policies/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8118daf1a90d882e92127a6c886f25886c4d189f1617c7e6a7a91e01d9b4efa2",
-      "upstream_committed_at": "2025-10-03T14:17:43-06:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:18:46.379546+00:00",
+      "model": "codex",
+      "input_hash": "18060d78cc7945471ec3ed17fdc39b2d5b545af7de5878de90199a4b17d6adf2",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan.md": {
       "path": "content/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan.md",
@@ -194,35 +194,35 @@
     },
     "content/handbook/business-technology/entapps-documentation/procedures/_index.md": {
       "path": "content/handbook/business-technology/entapps-documentation/procedures/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f5067eb75a6ef220169e625ce103ad1ded892d2de74d20586773911f57cb2492",
-      "upstream_committed_at": "2024-10-04T15:57:24-07:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:18:46.379546+00:00",
+      "model": "codex",
+      "input_hash": "c8c752e1a9dd52d583e78fa601fe3f7a320e66da830120f12aec4d8efc4fe7df",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1b75f2112b530ceac22a758bd87c4d5673b4933852a660c310914681db9748ab",
-      "upstream_committed_at": "2024-08-20T19:24:56+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:06:40.701523+00:00",
+      "model": "codex",
+      "input_hash": "6704c6f7fb077d3fe2b6383e512cc8284e4a917e0cd0e1e4eb6d0660f6f0c13b",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/entapps-crm/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/_index.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:08:19+00:00",
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:16:10.746882+00:00",
       "model": "codex",
-      "input_hash": "37ee09803e94f8810f02bba29fd2e883f6f0ab4ea4483f2c53c3489a6095dd60",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "bef5d9b561233c132d10e6bf17f0747769ca20595056ade709e4881c430aeef1",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/entapps-crm/finsys-access-requests.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/finsys-access-requests.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:08:35Z",
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:16:10.746882+00:00",
       "model": "codex",
-      "input_hash": "7fed09f9625ddc135a82747ebd7fb34ea8fdff3c204a58735a2d0d1ee66f8742",
-      "upstream_committed_at": "2026-10-16T19:52:00+02:00"
+      "input_hash": "043c83a480c5c6249f6cb927a3baa4f5fb81ef64123bb118ecc8488a8335dc15",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/_index.md",
@@ -234,11 +234,11 @@
     },
     "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/entity-relationship-diagrams.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/entity-relationship-diagrams.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "2db44ec3aea4cefa589c67ea87967ce5411865a0983decad9e2c59697298175f",
-      "upstream_committed_at": "2024-08-20T19:24:56+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:18:46.379546+00:00",
+      "model": "codex",
+      "input_hash": "c75316ae15a32050dea1ea4b3e20852d211f7ad2aa06f80454d1f96bce69e9fb",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/index.md",
@@ -250,67 +250,67 @@
     },
     "content/handbook/business-technology/enterprise-applications/entapps-services/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-services/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1729ad7cb32b6018d013f3cb0801404c0e8760ecb935c68c7efc063510d56138",
-      "upstream_committed_at": "2025-06-03T23:53:00+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:16:10.746882+00:00",
+      "model": "codex",
+      "input_hash": "b5f08e90af4a2a7ad31d6812087da94e778c576600b98c917807fb3d957a2ce1",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/finance-ops/index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/finance-ops/index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "294380d7fd579dfb63af6c3ca3052b630bc39b412d78093007bf9fabbcaadc55",
-      "upstream_committed_at": "2024-12-13T17:52:40+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:16:10.746882+00:00",
+      "model": "codex",
+      "input_hash": "4820087252ef20be7c0973f38c5d0e99e9399c61166c6f2abc8bced64722901e",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/_index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T21:12:29Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2ace7df44ff2f08e3b695b35acc205e444d44994aef1739fa307c60dae505550",
-      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:10:30.742062+00:00",
+      "model": "codex",
+      "input_hash": "0f2d2e7dcfe2cfdeba2a7af6ddbdc76763088ee58de9619653c508d717fe4a74",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/coupa-guide/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/coupa-guide/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T05:49:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fbae39837b13d76b91bc4315630d64c3a44b90945720f9f17b784000dc03c0c3",
-      "upstream_committed_at": "2025-08-15T16:07:26+02:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:16:10.746882+00:00",
+      "model": "codex",
+      "input_hash": "c5a87e6983936e6d25ca24f36fa825308747870691376518972f82289907b11d",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/coupa-prepaid/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/coupa-prepaid/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T05:49:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f1c0b69ab8c12ac3dbeb2aa90e882727d51534ba0b361276005507b679134014",
-      "upstream_committed_at": "2025-01-06T17:31:07+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:16:10.746882+00:00",
+      "model": "codex",
+      "input_hash": "6902b400ccba36d372cdb08b29967b6ef8433ff9186db2f351c8485cfc8db879",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/coupa-quick-guide/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/coupa-quick-guide/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T05:49:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "194dd06254f3a206fe082c7b1fd5b619894693fc94ed0c22f5ebeedae65f52f8",
-      "upstream_committed_at": "2025-03-05T11:51:11-08:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:16:10.746882+00:00",
+      "model": "codex",
+      "input_hash": "b55296b176a83cdba837efcf9e234608a757c45fd2cfea93cbe891a8e93f4ad2",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/coupa-supplier.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/coupa-supplier.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T05:49:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "0a4b640eff6ab5462247b63cfbcd05be8cee01027f668d3980d494b6778bc8af",
-      "upstream_committed_at": "2024-08-16T13:10:36+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:10:30.742062+00:00",
+      "model": "codex",
+      "input_hash": "722205e0efe9a2c6b1080c9f172dc02a38c191d052618a47ec68093d02f6987d",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/coupa-virtual-cards/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/coupa-virtual-cards/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T05:49:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "360e8c7262ae3baef4242f147620881fc1275009e9b61271a90a64c9c23c34b7",
-      "upstream_committed_at": "2025-01-06T17:31:07+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:13:40.134153+00:00",
+      "model": "codex",
+      "input_hash": "50ed4907b55ddaee06e684824f9db424a827cd50d26551f7bdf5f7c1047fa818",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/finance-guides/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/finance-guides/_index.md",
@@ -322,11 +322,11 @@
     },
     "content/handbook/business-technology/enterprise-applications/guides/finance-guides/nscustomfields.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/finance-guides/nscustomfields.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T05:49:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "4661d2362cd51f8532e4e49e066230a51a706d4b5a882b882a9bee6effe42676",
-      "upstream_committed_at": "2024-08-16T13:10:36+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:13:40.134153+00:00",
+      "model": "codex",
+      "input_hash": "6d9ffbd17d731a2a03c94e2545d43932fe5e2650b59a01a92dbe6f52cdee529a",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/glean-guide/index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/glean-guide/index.md",
@@ -354,27 +354,27 @@
     },
     "content/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/_index.md",
-      "upstream_sha": "3a8f3c9997d6eac836605048b675b20b63850604",
-      "translated_at": "2026-09-13T21:08:19+00:00",
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:13:40.134153+00:00",
       "model": "codex",
-      "input_hash": "d97646f144aef7dab1373290d042164c66a171980f9f789f1603e175070491b0",
-      "upstream_committed_at": "2026-09-13T04:09:59-04:00"
+      "input_hash": "14f7b960040c9af55fa7a878d87b8771bd943e90273ddcf8eaaec179bd1c091f",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/ns-custom-field.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/ns-custom-field.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:02:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1c8db1fa59b2f0803161a20ba947cfe3ceca8f1845b95d744d5faeb4679f4042",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:10:30.742062+00:00",
+      "model": "codex",
+      "input_hash": "543f7893dbceb065a895eedc6e489e0f5314a0bc87bf6490fe17064049eb2753",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/product-catalog.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/product-catalog.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T22:54:52+09:00",
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:10:30.742062+00:00",
       "model": "codex",
-      "input_hash": "df3d7dd022ad43974f5d95fb39fd16ebf7d15d70978e699d6c194b126478c5e6",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "4b9763128ae09a4445894dcfae2a14e492b73e72e7ec4d8f7617adc463b558ea",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/salesforce-mobile.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/salesforce-mobile.md",
@@ -386,67 +386,67 @@
     },
     "content/handbook/business-technology/enterprise-applications/guides/zip-guide/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/zip-guide/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "871eabedafcbf97a7c4210999418bc4513d836a16dd05c6fd33af004482c9db4",
-      "upstream_committed_at": "2026-05-27T15:58:38-04:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:13:40.134153+00:00",
+      "model": "codex",
+      "input_hash": "085699c8107f44571042e0bb28458bae62d4e0ab2b0fda8d165915fb12a6a477",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/zuora-collect.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/zuora-collect.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:02:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "58ee612f5c93c412b1e8f93480d1b6cf0597ffc7de746473fb237d453b8745a5",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:10:30.742062+00:00",
+      "model": "codex",
+      "input_hash": "c537db6e9cb017dca2919b5b25ae2ee4761076b81174526742eb893440167f11",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/zuora.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/zuora.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:02:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "383ada8d0ac07fd2c8070a784addaad466ba4268cba8d6d11d55356807bc5ea4",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:10:30.742062+00:00",
+      "model": "codex",
+      "input_hash": "bbed8534e49efe687e3f2c6909714c378b903b28c7e452cce2f042c4e54e93f7",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/integrations/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/integrations/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:02:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "599213dc3863446bee5b203317ee1b9f6ab6580d9edc9756e03d3e6892435a1d",
-      "upstream_committed_at": "2024-10-04T11:37:24+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:08:15.601207+00:00",
+      "model": "codex",
+      "input_hash": "069ec987987fbb288880b38b8f0b0c75b94c0e4057bf872ed4832ae0cf073077",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/it-compliance/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/it-compliance/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:02:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f62b1e1b2901f13f1e6b60fb97eece502b3f5e4b42168c61de19fe7924bfcbae",
-      "upstream_committed_at": "2025-03-05T11:51:11-08:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:08:15.601207+00:00",
+      "model": "codex",
+      "input_hash": "49fc9afc8126067f53ac63fed2979461f9f188cdd2f10350c4d68fb21c5b0ae5",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/pmo/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/pmo/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "543e504c2e99890f73b0647ae956c5c63138693e65e6696c32a526304a5e175f",
-      "upstream_committed_at": "2026-01-05T22:11:07+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:08:15.601207+00:00",
+      "model": "codex",
+      "input_hash": "00355db74b915c099353534dbeb04eea181ef041579da1377d5f2f32d7690132",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/pmo/pmo-governance.md": {
       "path": "content/handbook/business-technology/enterprise-applications/pmo/pmo-governance.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "9783cca9e3ba8a7762259fd98bcb43454e4681f9c49d9ca28aea693e006f898c",
-      "upstream_committed_at": "2025-03-05T11:51:11-08:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:08:15.601207+00:00",
+      "model": "codex",
+      "input_hash": "466032d98a2ab292c761ba3ca35c4e6caf800aeb6f40f1f9c050200181de52cc",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/how-we-work/rolly/index.md": {
       "path": "content/handbook/business-technology/how-we-work/rolly/index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "4cb9191ff4f4b7b91f98e6949b80c035f2ae06ac508db2b9903a6870c0bc4a8b",
-      "upstream_committed_at": "2025-01-06T17:31:07+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:06:40.701523+00:00",
+      "model": "codex",
+      "input_hash": "537b1077db80b0777a3a53946e298dd11b241507dbfacdac693fa16f4f3238cb",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/readmes/_index.md": {
       "path": "content/handbook/business-technology/readmes/_index.md",
@@ -634,19 +634,19 @@
     },
     "content/handbook/business-technology/services/_index.md": {
       "path": "content/handbook/business-technology/services/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8a5d8976f4da5f6ee3d720ab4fa5e01e01bad5027bafbaf53f4b32eb03e3ce48",
-      "upstream_committed_at": "2025-03-04T15:19:53-05:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:06:40.701523+00:00",
+      "model": "codex",
+      "input_hash": "76e9f160174c4eb2b1c4c3d9d2551ba121c49245905bace258ea355f37045487",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/services/rpa-charter.md": {
       "path": "content/handbook/business-technology/services/rpa-charter.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3ce16175fb514626e630f58b6a9a4e9c7a6485e2e76c7faac21e68d2ac2602c5",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:06:40.701523+00:00",
+      "model": "codex",
+      "input_hash": "b88da920236e53af0efac9b4159f8c78fe0876cb980f62f264f536adffe7a2f4",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/business-technology/tech-stack-applications.md": {
       "path": "content/handbook/business-technology/tech-stack-applications.md",
@@ -682,11 +682,11 @@
     },
     "content/handbook/business-technology/tools/postman.md": {
       "path": "content/handbook/business-technology/tools/postman.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "266d10f6e8cbf68d5a9037fdfedb8dc1c7734414223a366331321d8959238dcf",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
+      "upstream_sha": "74bb2fbdef354f57211295638ac65cfae7c767f8",
+      "translated_at": "2026-11-04T21:06:40.701523+00:00",
+      "model": "codex",
+      "input_hash": "29391698c6f7ae259177d49c89b728f3a9c94f6610325364e004b91e2dd16188",
+      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
     },
     "content/handbook/ceo/_index.md": {
       "path": "content/handbook/ceo/_index.md",

@@ -2,20 +2,18 @@
 title: "Coupa エンドユーザーガイド"
 description: "Coupa エンドユーザーガイド"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/coupa-guide/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T05:49:40Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:16:10.746882+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-08-15T16:07:26+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## ビジネスニーズ
+## ビジネスニーズ {#business-need}
 
 ビジネスでは、購買依頼の作成、発注書、3 ウェイ請求書マッチング、ベンダー支払い、SOX コンプライアンスのための会計プロトコルを可能にするツールを使って、購買から支払いまでのプロセスを最適化する必要性が特定されました。
 
-## ビジネスソリューション
+## ビジネスソリューション {#business-solution}
 
 ビジネスでは、購買から支払いまでのプラットフォームとして `Coupa` を、購買依頼プラットフォームとして `Zip` を導入することが決定されました。両者を組み合わせることで必要な機能が提供され、統合によって調達承認のターンタイムを短縮し、手作業によるワークフローの遅延を減らすことができます。
 
@@ -25,11 +23,11 @@ lastmod: "2025-08-15T16:07:26+02:00"
 {{% /alert %}}
 
 
-## Coupa とは
+## Coupa とは {#what-is-coupa}
 
 Coupa はクラウドベースの購買・支払いプラットフォームで、GitLab では 2021-06-01 より米国およびオランダ法人向けに、2021-12-13 より残りの法人向けに使用されています。使いやすいインターフェースにより、サプライヤーと GitLab の連携方法が改善されます。すべての新しい発注書、請求書、コミュニケーションは Coupa サプライヤーポータルを通じて管理されます。
 
-### Coupa へのアクセス方法
+### Coupa へのアクセス方法 {#how-to-access-coupa}
 
 Coupa は Okta 経由で利用できます。プラットフォームにアクセスするには:
 
@@ -46,20 +44,19 @@ Coupa は Okta 経由で利用できます。プラットフォームにアク�
 
 職務上、Coupa での予算・管理承認、発注書、請求書承認の管理が必要な場合は、以下の手順に従ってください:
 
-1. [Lumos App Store](/handbook/security/corporate/systems/lumos/ar/) を使用して Coupa へのアクセスを申請します。
+1. [Lumos App Store](/handbook/security/corporate/systems/lumos/ar/)を使用して Coupa へのアクセスを申請します。
 1. *アクセスの正当性* を入力し、管理する予算・管理承認・発注書・請求書承認について説明します。
 1. Coupa へのアクセスが即時に必要な場合は、`#coupa_help` Slack チャンネルにメッセージを送ってください。
 
 
-{{% panel header="**Best Practices**" header-bg="success" %}}
-
+{{% panel header="**ベストプラクティス**" header-bg="success" %}}
 Coupa のライセンス数が限られているため、各部門でチームを代表して購買依頼の予算・管理承認、発注書、請求書承認を管理するパワーユーザーを特定することが推奨されます。
 {{% /panel %}}
 
 
-## 購買における Coupa の使い方
+## 購買における Coupa の使い方 {#how-to-use-coupa-for-purchasing}
 
-### ホームページの概要
+### ホームページの概要 {#home-page-overview}
 
 ![coupa-image-40](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa40.png)
 
@@ -67,13 +64,13 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 1. **アカウント名** - Coupa でのアカウント管理に関するさまざまな個人設定が含まれています。
 1. **カート** - 選択済みだがまだ承認申請していないアイテムを含むショッピングカートへのリンクです。
 1. **検索バー** - カタログアイテムの検索・閲覧やフリーテキストでのリクエスト作成に使用します。
-1. **最近のアクティビティ** - 最近の 5 件のトランザクションを表示します。`すべてを表示` を選択すると、アクティビティページで以前の購買依頼やその他のトランザクションがすべて表示されます。
-1. **To Do's** - Coupa 内であなたに割り当てられているアクションアイテムの一覧を表示します。`すべてを表示` を選択すると、Coupa インボックスですべての To Do が表示されます。
+1. **最近のアクティビティ** - 最近の 5 件のトランザクションを表示します。`View All` を選択すると、アクティビティページで以前の購買依頼やその他のトランザクションがすべて表示されます。
+1. **To Do's** - Coupa 内であなたに割り当てられているアクションアイテムの一覧を表示します。`View All` を選択すると、Coupa インボックスですべての To Do が表示されます。
 1. **追加ストア（"パンチアウト"）** - サプライヤーのポータルから直接商品を検索・選択・購入申請する機能を提供します。
 1. **GitLab - 重要リンクとリソース** - Coupa に関する重要な情報と、トレーニング資料やその他の重要なドキュメントへのリンクを表示します。
 1. **Coupa コミュニティ** - 他の Coupa 顧客、パートナー、プロダクトマネージャー、Coupa サクセスチームと交流・参加できます。
 
-### ユーザーアカウント
+### ユーザーアカウント {#user-account}
 
 ![coupa-image-2](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa2.png)
 
@@ -101,7 +98,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
     ![coupa-image-26](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa26.png)
 
     各種通知について、ユーザーはメール、Slack、または Coupa 内（オンライン）で通知を受け取るかを選択でき、複数のプラットフォームを選択することもできます。
-  - **二段階認証（2FA）**: 金融アカウントや手段が、その使用を意図された個人によって管理・使用されるよう保護するため、ユーザープロフィールで有効にする必要があります。この追加認証レイヤーは、経費や請求書支払いのバッチ作成、アカウント作成、その他の多くのセキュアな支払い機能の操作などの特権アクセス権を付与される前に必要です。*詳細は [二段階認証（2FA）の有効化方法](/handbook/business-technology/enterprise-applications/guides/coupa-guide/#how-to-enable-two-factor-authentication) セクションをご確認ください*。
+  - **二要素認証（2FA）**: 金融アカウントや手段が、その使用を意図された個人によって管理・使用されるよう保護するため、ユーザープロフィールで有効にする必要があります。この追加認証レイヤーは、経費や請求書支払いのバッチ作成、アカウント作成、その他の多くのセキュアな支払い機能の操作などの特権アクセス権を付与される前に必要です。*詳細は [二要素認証（2FA）の有効化方法](/handbook/business-technology/enterprise-applications/guides/coupa-guide/#how-to-enable-two-factor-authentication) セクションをご確認ください*。
 - **インボックス** - 現在および過去のすべての通知を表示します。
 - **サインアウト** - アプリケーションを終了します。
 
@@ -121,10 +118,10 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 {{% /alert %}}
 
 
-### 二段階認証の有効化方法 {#how-to-enable-two-factor-authentication}
+### 二要素認証の有効化方法 {#how-to-enable-two-factor-authentication}
 
 1. 「アカウント名」 > 「設定」に移動します。
-1. 「二段階認証」サブタブをクリックします。
+1. 「二要素認証」サブタブをクリックします。
 1. 「有効化」ボタンをクリックします。
 1. Google Authentication アプリを使用して QR コードをスキャンします。
 1. 認証アプリに表示されている 6 桁のコードを確認コードフィールドに入力します。
@@ -142,7 +139,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 
 <br>
 
-### Coupa で購買依頼を確認する方法
+### Coupa で購買依頼を確認する方法 {#how-to-review-a-requisition-in-coupa}
 
 **購買依頼ヘッダーレベル**
 
@@ -152,7 +149,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
   - 別のユーザーを代理してリクエストを作成する際に使用します。承認チェーンは「代理申請先」として選択した人物に従って更新されます。このユーザーは請求書受領後に承認する必要があります。
 - b) 購入内容の説明 *（`Zip` から同期）*<br>
 - c) 価格を非表示 *（任意）*<br>
-  - 調達チームがベンダーに発注書の価格を非表示にするために使用します。
+  - Procurement Team がベンダーに発注書の価格を非表示にするために使用します。
 - d) 添付ファイル *（`Zip` から同期）*<br>
 
 
@@ -180,11 +177,11 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 
 <br>
 
-### パンチアウト購買依頼
+### パンチアウト購買依頼 {#punchout-requisition}
 
 ![coupa-image-48](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa48.png)
 
-1. ホームページで、`追加ストア` セクションにあるパンチアウトサプライヤーをクリックします。
+1. ホームページで、`Additional Stores` セクションにあるパンチアウトサプライヤーをクリックします。
 1. パンチアウトリンクをクリックすると、承認済みサプライヤーのウェブサイトに移動し、通常のオンラインショッピングのように商品の注文を開始できます。
 1. 商品を検索してカートに追加します。
 1. カートへの追加が完了したら、「チェックアウト」をクリックします。
@@ -193,7 +190,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 1. 購買依頼の完全性を確認し、「承認のために送信」をクリックします。
 
 
-{{% panel header="**NOTES**" header-bg="info" %}}
+{{% panel header="**注意事項**" header-bg="info" %}}
 
 - カートのチェックアウトと Coupa の「カートを確認」画面への戻り方はパンチアウトサイトによって異なります。
 - 可能な限りパンチアウトを利用して購買することが推奨されます。
@@ -203,7 +200,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 
 <br>
 
-### 承認
+### 承認 {#approvals}
 
 購買依頼が `Zip` から `Coupa` に統合されると、適用される承認者がカートラインの下に表示されます。
 
@@ -211,7 +208,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 
 ![coupa-image-44](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa44.png)
 
-### 承認者を追加する方法
+### 承認者を追加する方法 {#how-to-add-an-approver}
 
 - 「追加」ボタンをクリックします。
 - 承認者名の数文字を入力すると、システムが考えられるすべての候補を表示します。
@@ -226,7 +223,7 @@ Coupa のライセンス数が限られているため、各部門でチーム�
 <br>
 <br>
 
-### トランザクションを承認する方法
+### トランザクションを承認する方法 {#methods-to-approve-transactions}
 
 Coupa でトランザクションを承認する方法はいくつかあります:
 
@@ -235,7 +232,7 @@ Coupa でトランザクションを承認する方法はいくつかありま�
   - 承認者は「承認コメント」セクションに、拒否または承認ボタンをクリックする前にコメントを追加できます。
   - すべての承認者は「承認者」セクションに表示されます。
   - 拒否された場合、購買依頼は「下書き」ステータスに戻り、依頼者は変更を加えて再送信する必要があります。（依頼者への拒否理由のコメントを残してください）。
-    - 請求書が拒否された場合、「拒否済み」ステータスになり、買掛金担当者が請求書を編集して再送信する必要があります（必要に応じて無効化します）。
+    - 請求書が拒否された場合、「拒否済み」ステータスになり、Accounts Payableが請求書を編集して再送信する必要があります（必要に応じて無効化します）。
 - **インボックス**
   - ユーザーは「アカウント名」の下にある「インボックス」セクションからすべての通知にアクセスできます。
   - ユーザーはレポートビューを「To Do」に変更して、アクションが必要なすべての通知をフィルタリングできます。
@@ -261,17 +258,17 @@ Coupa でトランザクションを承認する方法はいくつかありま�
     - 「Slack に追加」ボタンをクリックします。新しいウィンドウが開いたら「許可」をクリックします。
 
    Slack 通知が有効化されると、Slack で受け取りたい通知の種類を選択できます。
-   Slack で受け取る通知を指定するには、設定 → 通知 → 「IM」ボックスにチェックを入れます。
+   Slack で受け取る通知を指定するには、Settings - Notifications - 「IM」ボックスにチェックを入れます。
 
    以下は Slack での承認通知の例です:
 
  ![coupa-image-27](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa27.png)
 
 
-{{% panel header="**NOTE**" header-bg="info" %}}
+{{% panel header="**注意**" header-bg="info" %}}
 
-- 購買依頼のステータスが「購買担当者アクション待ち」の場合、調達チームの To Do リストにあり、できるだけ早く（1〜2 営業日以内に）確認します。問題がある場合、調達チームは購買依頼にコメントを追加し、メール、Slack、または To Do リストで通知が届きます（Coupa での通知設定によります）。
-- 購買依頼のラインアイテムにサプライヤー名の横に「オンボーディング」と表示されている場合（以下のスクリーンショット参照）、サプライヤーはオンボーディングプロセスを完了していません。購買依頼を完了するには、サプライヤーが Coupa でのオンボーディングを完了する必要があります。
+- 購買依頼のステータスが"Pending Buyer Action"の場合、Procurement Team の To Do リストにあり、できるだけ早く（1〜2 営業日以内に）確認します。問題がある場合、Procurement Team は購買依頼にコメントを追加し、メール、Slack、または To Do リストで通知が届きます（Coupa での通知設定によります）。
+- 購買依頼のラインアイテムにサプライヤー名の横に"Onboarding"と表示されている場合（以下のスクリーンショット参照）、サプライヤーはオンボーディングプロセスを完了していません。購買依頼を完了するには、サプライヤーが Coupa でのオンボーディングを完了する必要があります。
 
 ![coupa-image-25](/images/business-technology/enterprise-applications/guides/coupa-guide/Coupa25.png)
 {{% /panel %}}
@@ -279,9 +276,9 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 
 <br>
 
-### 購買依頼を取り下げる方法
+### 購買依頼を取り下げる方法 {#how-to-withdraw-a-requisition}
 
-購買依頼がまだ完全に承認されて注文に転換されていない場合、購買依頼を取り下げて変更を加えてから再送信できるのは調達チームのみです。リクエストや質問については、`#procurement` Slack チャンネル（Coupa の購買依頼へのリンクを含めて）にご連絡ください。
+購買依頼がまだ完全に承認されて注文に転換されていない場合、購買依頼を取り下げて変更を加えてから再送信できるのは Procurement Team のみです。リクエストや質問については、`#procurement` Slack チャンネル（Coupa の購買依頼へのリンクを含めて）にご連絡ください。
 
 ![coupa-image-15](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa15.png)
 
@@ -289,7 +286,7 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 1. 「承認待ち」ステータスの購買依頼を見つけて、「購買依頼を取り下げる」アイコン（赤矢印）をクリックします。
 
 
-{{% panel header="**NOTES**" header-bg="warning" %}}
+{{% panel header="**注意事項**" header-bg="warning" %}}
 
 - 「アクティビティ」で「承認待ち」ビューを選択します。
 - 購買依頼がすでに注文に転換されている場合、取り下げることはできません。[発注書変更リクエスト](/handbook/business-technology/enterprise-applications/guides/coupa-guide/#how-to-do-a-purchase-order-change-request)を作成する必要があります。
@@ -298,7 +295,7 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 
 <div class="panel panel-warning">
 
-### 注文を受領する方法
+### 注文を受領する方法 {#how-to-receive-an-order}
 
 
 {{% alert color="info" %}}
@@ -314,7 +311,7 @@ Coupa でトランザクションを承認する方法はいくつかありま�
    - 受領成功を示すメッセージが表示されます。
 
 
-{{% panel header="**NOTES**" header-bg="warning" %}}
+{{% panel header="**注意事項**" header-bg="warning" %}}
 
 - 依頼者は一部または全数量を受領できます。
 - 3 ウェイマッチルールにより、ベンダーに支払いを行うためには商品（数量）関連の購入の受領が必要です。
@@ -322,12 +319,12 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 {{% /panel %}}
 
 
-### 受領を無効化する方法
+### 受領を無効化する方法 {#how-to-void-a-receipt}
 
 受領を無効化する必要がある場合があります（例: 誤った受領が行われた場合）。
 
 
-{{% panel header="**IMPORTANT NOTES**" header-bg="danger" %}}
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
 
 - 受領を無効化できるのは ADMIN と Central Receiver のみです。
 - PO がすでにソフトクローズまたはハードクローズされている場合（PO が完全に受領・請求済みになると発生します）、受領を無効化することはできません。
@@ -336,7 +333,7 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 
 **Central Receiver** として、以下の手順に従ってください:
 
-1. 「在庫」タブ → 「受領を表示」に移動します。
+1. Inventory タブの "View Receipts" に移動します。
 1. 無効化するラインを検索します *（詳細検索を使用できます）*。
 1. 検索結果から無効化するラインを特定し、「アクション」列の無効化アイコンをクリックします。
 1. 無効化ページの下部で「無効化の理由」を選択し、必要に応じてメモを追加します。
@@ -350,9 +347,8 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 <br>
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
-
-**2023-02-01 より `Zip` が実装されたことに伴い、すべての新規サプライヤーリクエストおよびサプライヤー更新リクエストは Coupa で調達チームが作成します。**
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
+**2023-02-01 より `Zip` が実装されたことに伴い、すべての新規サプライヤーリクエストおよびサプライヤー更新リクエストは Coupa で Procurement Team が作成します。**
 {{% /panel %}}
 
 
@@ -362,8 +358,8 @@ Coupa でトランザクションを承認する方法はいくつかありま�
 
 新規サプライヤー申請フォームを記入するには:
 
-- ホームページの `フォーム` ドロップダウンをクリックします。
-- `PROC: 新規サプライヤー` を選択します。
+- ホームページの `Forms` ドロップダウンをクリックします。
+- `PROC: New Supplier` を選択します。
 
 ![coupa-image-41](/images/business-technology/enterprise-applications/guides/coupa-guide/coupa41.png)
 
@@ -372,32 +368,32 @@ Coupa でトランザクションを承認する方法はいくつかありま�
   - 情報が正しければ「送信」ボタン（ページ/画面の下部に表示）をクリックします。
 - 外部サプライヤーフォームが自動的にサプライヤーに送信され、追加情報が収集されます。
   - サプライヤーはフォームに記入して送信する必要があります。
-- サプライヤーが送信後、外部フォームはレビューと承認のために買掛金承認グループにルーティングされます。
+- サプライヤーが送信後、外部フォームはレビューと承認のために Accounts Payable Approval Group にルーティングされます。
 - 承認後、サプライヤーの詳細が NetSuite に統合され、Coupa に反映されて新規サプライヤーの作成が完了します。その後、購買依頼を作成する際に `Zip` でそのサプライヤーが利用可能になります。
 
-### サプライヤー情報の更新を申請する方法
+### サプライヤー情報の更新を申請する方法 {#how-to-request-updates-to-a-supplier}
 
 サプライヤー情報の更新申請方法については、[トレーニングビデオ](https://www.loom.com/share/21201b257967414793aec40656959bc5)をご覧ください。
 
-## 請求書と支払いにおける Coupa の使い方
+## 請求書と支払いにおける Coupa の使い方 {#how-to-use-coupa-for-invoicing-and-payments}
 
 Coupa の請求書モジュールと支払いモジュールの詳細については、以下のリンクをご参照ください:
 
 - [Coupa での請求書発行](/handbook/finance/accounting/#invoicing-in-coupa)
 - [Coupa での支払い](/handbook/finance/accounting/#processing-payment-for-invoices-in-coupa)
 
-## Coupa バーチャルカードの申請方法
+## Coupa バーチャルカードの申請方法 {#how-to-request-a-coupa-virtual-card}
 
 バーチャルカードの申請方法については、
 [Coupa バーチャルカードガイド](/handbook/business-technology/enterprise-applications/guides/coupa-virtual-cards/)をご確認ください。
 
-## Coupa サポート
+## Coupa サポート {#coupa-support}
 
 技術的に関連する Coupa リクエストについては、`Coupa Request` テンプレートを使用して [Issue を開いてください](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/intake/-/issues/new?issue%5Bmilestone_id%5D=#)。
 
 
 {{% alert color="info" %}}
-現在のビジネスプロセスへの変更を含むリクエストの場合、リクエストの種類によって調達チームおよび/または買掛金チームの承認が必要です。
+現在のビジネスプロセスへの変更を含むリクエストの場合、リクエストの種類によって Procurement Team および/または Accounts Payable Team の承認が必要です。
 {{% /alert %}}
 
 
