@@ -1,15 +1,13 @@
 ---
 title: "Coupa サプライヤー管理"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/coupa-supplier/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T05:49:40Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:10:30.742062+00:00"
 translator: "claude"
 stale: false
-lastmod: "2024-08-16T13:10:36+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## Coupa で新しいサプライヤーを作成する方法
+## Coupa で新しいサプライヤーを作成する方法 {#how-to-create-a-new-supplier-in-coupa}
 
 準備中

@@ -1,28 +1,26 @@
 ---
-title: "エンタープライズアプリケーション - PMO"
+title: "Enterprise Applications - PMO"
 upstream_path: /handbook/business-technology/enterprise-applications/pmo/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T08:00:00Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:08:15.601207+00:00"
 translator: claude
 stale: false
-lastmod: "2026-01-05T22:11:07+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちについて
+## <i class="fas fa-users"></i> 私たちについて {#about-us}
 
 私たちは、最先端の IT システムとビジネスプロセスの開発・管理を担うグローバルチームです。
 
 Enterprise Applications PMO は、EntApps 組織内のポートフォリオおよびプログラム管理を監督します。計画活動においてビジネスチームと連携し、最優先事項との整合を図ります。私たちのサービスには、ポートフォリオ・プログラム・リソース管理、およびプロジェクトの追跡とレポーティングが含まれます。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのチーム
+## <i class="fas fa-users"></i> 私たちのチーム {#our-team}
 
 チームの構成は[組織図](https://internal.gitlab.com/handbook/it-enterprise-applications/about-us/pmo/)でご確認ください。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのサービス
+## <i class="fas fa-users"></i> 私たちのサービス {#our-services}
 
-## IT EntApps ポートフォリオ計画・優先順位付け：5 ステップフレームワーク
+## IT EntApps ポートフォリオ計画・優先順位付け：5 ステップフレームワーク {#it-entapps-portfolio-planning--prioritization-a-5-step-framework}
 
 ![it-pmo](/images/business-technology/enterprise-applications/pmo/it-pmo-planning.png)
 
@@ -34,15 +32,15 @@ IT EntApps ポートフォリオの計画・優先順位付けプロセスには
 4. リソースとキャパシティ計画
 5. プロジェクトコミット
 
-### プロジェクトのポートフォリオ
+### プロジェクトのポートフォリオ {#portfolio-of-projects}
 
-このセクションは、IT Enterprise Applications のすべてのコミット済みおよび計画済みプロジェクトのインベントリを提供します。社内チームメンバーは [IT EntApps Portfolio tracker](https://docs.google.com/spreadsheets/d/1ojnTFGB2iYJz9kNPYdoLc4PeyDqAN60gu9cQBrKpHJQ/edit?pli=1#gid=1316376797) を使用して進行中のイニシアチブを追跡できます。EntApps ポートフォリオの優先事項は、会社の目標と整合していなければなりません。
+このセクションは、IT Enterprise Applications のすべてのコミット済みおよび計画済みプロジェクトのインベントリを提供します。社内チームメンバーは [IT EntApps Portfolio tracker](https://docs.google.com/spreadsheets/d/1ojnTFGB2iYJz9kNPYdoLc4PeyDqAN60gu9cQBrKpHJQ/edit?pli=1#gid=1316376797)を使用して進行中のイニシアチブを追跡できます。EntApps ポートフォリオの優先事項は、会社の目標と整合していなければなりません。
 
-### プロジェクト優先順位付け
+### プロジェクト優先順位付け {#project-prioritization}
 
-[IT EntApps Project Prioritization tracker](https://docs.google.com/spreadsheets/d/1fnV3nWI0sNdbakHUys78d-lpbpKexFD_1kdO8JoVySY/edit#gid=745075679) は、新しいプロジェクトとイニシアチブを記録・管理するための集中管理ツールです。PMO チームは EntApps 月次ビジネスレビューセッション中にこれらのエントリを評価します。
+[IT EntApps Project Prioritization tracker](https://docs.google.com/spreadsheets/d/1fnV3nWI0sNdbakHUys78d-lpbpKexFD_1kdO8JoVySY/edit#gid=745075679)は、新しいプロジェクトとイニシアチブを記録・管理するための集中管理ツールです。PMO チームは EntApps 月次ビジネスレビューセッション中にこれらのエントリを評価します。
 
-### T シャツサイジング
+### T シャツサイジング {#t-shirt-sizing}
 
 プロジェクトの以下の項目を特定します：
 
@@ -50,21 +48,21 @@ IT EntApps ポートフォリオの計画・優先順位付けプロセスには
 - 期間
 - 役割と責任
 
-### リソースとキャパシティ計画
+### リソースとキャパシティ計画 {#resources--capacity-planning}
 
 以下によって達成されます：
 
 - チーム内のすべてのリソースを特定する
-- 「ライトオン維持（KTLO）」、管理業務、マネジメント、プロジェクト作業などの活動に必要なキャパシティ要件を見積もる
+- 「業務の安定稼働の維持（KTLO）」、管理業務、マネジメント、プロジェクト作業などの活動に必要なキャパシティ要件を見積もる
 
-### プロジェクトコミット
+### プロジェクトコミット {#project-commits}
 
-[IT EntApps Portfolio tracker](https://docs.google.com/spreadsheets/d/1ojnTFGB2iYJz9kNPYdoLc4PeyDqAN60gu9cQBrKpHJQ/edit?pli=1#gid=955721517) に追加されたすべてのプロジェクトは、優先度に基づいてリソースが割り当てられ、以下のラベルで分類されます：
+[IT EntApps Portfolio tracker](https://docs.google.com/spreadsheets/d/1ojnTFGB2iYJz9kNPYdoLc4PeyDqAN60gu9cQBrKpHJQ/edit?pli=1#gid=955721517)に追加されたすべてのプロジェクトは、優先度に基づいてリソースが割り当てられ、以下のラベルで分類されます：
 
-- **コミット済み**：進行中 / 作業中のプロジェクト。
-- **計画済み**：コミット済みプロジェクトのリソースが空いた後に着手予定のプロジェクト。
+- **Committed**：進行中 / 作業中のプロジェクト。
+- **Planned**：コミット済みプロジェクトのリソースが空いた後に着手予定のプロジェクト。
 
-## リリース管理
+## リリース管理 {#release-management}
 
 リリース管理計画は IT EntApps チームが以下を実現するのに役立ちます：
 
@@ -77,9 +75,9 @@ IT EntApps ポートフォリオの計画・優先順位付けプロセスには
 
 ![it-pmo](/images/handbook/entapps/release-calendarfy27.png)
 
-## <i class="fas fa-bullhorn" id="biz-tech-icons"></i> 私たちの働き方
+## <i class="fas fa-bullhorn"></i> 私たちの働き方 {#how-we-work}
 
-## ガバナンスとプログラム管理手法
+## ガバナンスとプログラム管理手法 {#governance-and-program-management-methodology}
 
 IT EntApps PMO チームが GitLab EntApps のすべてのプログラムに採用している手法を理解するには、[ガバナンスと IT プログラム管理](/handbook/business-technology/enterprise-applications/pmo/pmo-governance/)ページをご覧ください。以下の目標達成を目指しています：
 
@@ -88,57 +86,57 @@ IT EntApps PMO チームが GitLab EntApps のすべてのプログラムに採�
 - 協働を促進するために関連するステークホルダーを巻き込む。
 - 透明性と法令遵守に沿ったドキュメント管理を維持する。
 
-## プロジェクトエピックと Issue
+## プロジェクトエピックと Issue {#project-epics--issues}
 
-プロジェクトにアサインされると、IT EntApps PMO チームはプロジェクトの[エピック](https://docs.gitlab.com/ee/user/group/epics/index.html)の作成・維持に責任を持ちます。1 つの親エピックが作成され、それぞれシステム開発ライフサイクル（SDLC）の異なるフェーズを表す（最大 5 つの）[子エピック](https://docs.gitlab.com/ee/user/group/epics/manage_epics.html#multi-level-child-epics)と共に管理されます。[Issue](https://docs.gitlab.com/ee/user/project/issues/) は、アイデアについてコラボレーションし、問題をトラブルシュートし、タスクの戦略を立てる手段として使用されます。Issue を使用することで、チームは内部でプロポーザルを共有・議論したり、外部のコラボレーターをプロセスに招き入れたりすることができます。
+プロジェクトにアサインされると、IT EntApps PMO チームはプロジェクトの[エピック](https://docs.gitlab.com/ee/user/group/epics/index.html)の作成・維持に責任を持ちます。1 つの親エピックが作成され、それぞれシステム開発ライフサイクル（SDLC）の異なるフェーズを表す（最大 5 つの）[子エピック](https://docs.gitlab.com/ee/user/group/epics/manage_epics.html#multi-level-child-epics)と共に管理されます。[Issue](https://docs.gitlab.com/ee/user/project/issues/)は、アイデアについてコラボレーションし、問題をトラブルシュートし、タスクの戦略を立てる手段として使用されます。Issue を使用することで、チームは内部でプロポーザルを共有・議論したり、外部のコラボレーターをプロセスに招き入れたりすることができます。
 
 すべての PMO 主導プロジェクト全体で統一性を維持するために、チームは同じ[エピックテンプレート](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/intake/-/issues/394)に従います。
 
-### システム開発ライフサイクル（SDLC）
+### システム開発ライフサイクル（SDLC） {#system-development-lifecycle-sdlc}
 
 システム開発ライフサイクルは、各プロジェクトステージで実施される活動の体系的なセットを概説しています。
 
 ![it-pmo](/images/business-technology/enterprise-applications/pmo/sdlc.png)
 
-#### インテーク
+#### インテーク {#intake}
 
 インテークプロセスは、ビジネス要件書（BRD）の作成から始まります。このフェーズは、プロジェクト目標を定義するビジネスステークホルダーと、実装を担当する開発チームの間のギャップを橋渡しします。
 
-#### 定義
+#### 定義 {#define}
 
-定義フェーズでは、ビジネス上の問題を明確にし、「完了の定義」を確立することに焦点を当てます。ユースケース、影響を受けるテクノロジー、および要件の特定が含まれます。主な目標は、すべての詳細を解決するのではなく、プロセスと影響を受ける領域を文書化することです。設計フェーズに移行する前に、ビジネス要件の正確性と完全性を確保するために主要なステークホルダーから承認を得ます。
+定義フェーズでは、ビジネス上の問題を明確にし、`完了の定義`を確立することに焦点を当てます。ユースケース、影響を受けるテクノロジー、および要件の特定が含まれます。主な目標は、すべての詳細を解決するのではなく、プロセスと影響を受ける領域を文書化することです。設計フェーズに移行する前に、ビジネス要件の正確性と完全性を確保するために主要なステークホルダーから承認を得ます。
 
-#### 設計
+#### 設計 {#design}
 
 設計フェーズでは、プロジェクトの将来の状態に向けたロードマップを確立します。プロジェクトチームはステークホルダーと協力して要件を精緻化し、ビジネス目標に沿ったプロセスを設計します。このフェーズでは、未解決の詳細に対応し、以前のステージからの疑問点を解決します。
 
-#### ビルド
+#### ビルド {#build}
 
 ビルドフェーズでは、プロジェクトチームはステークホルダーと協力して、ベストプラクティスに従いながらビジネス要件を満たすスケーラブルなソリューションを開発します。
 
-#### テスト
+#### テスト {#test}
 
 テストフェーズでは、プロジェクトチームはステークホルダーと共にテストスクリプトを作成し、ユーザー受け入れテスト（UAT）プロセスを監督して、ソリューションが定義された要件を満たすことを確認します。
 
-#### デプロイ
+#### デプロイ {#deploy}
 
 デプロイフェーズでは、実装チームと協力して包括的なデプロイメント計画を作成します。活動にはローンチ計画の最終化、ユーザーの有効化、スムーズな移行を確保するためのゴーライブコミュニケーションの管理が含まれます。
 
-#### ハイパーケア
+#### ハイパーケア {#hypercare}
 
 ハイパーケアは、本番環境での新しいプロセスのデプロイまたはローンチ直後のフェーズです。この期間中、新しいシステムへのシームレスな移行と成功した導入を確保するために強化されたサポートが提供されます。
 
-#### メンテナンス
+#### メンテナンス {#maintenance}
 
 メンテナンスフェーズは、新しいプロセスが完全に稼働した後に始まります。設計通りにプロセスが機能し続けることを確保し、必要に応じて修理またはアップグレードが実施されます。
 
-### Issue ボード
+### Issue ボード {#issue-boards}
 
-IT EntApps チームは GitLab の [Issue ボード](https://docs.gitlab.com/ee/user/project/issue_board.html)を使用して、戦略的に作業を計画・整理・可視化します。IT EntApps チームが Issue ボードをどのように管理しているかについて詳しくは、[各チームのページ](/handbook/business-technology/#i-classfas-fa-users-idbiz-tech-iconsi-our-functional-structure)を参照してください。
+IT EntApps チームは GitLab の [Issue ボード](https://docs.gitlab.com/ee/user/project/issue_board.html)を使用して、戦略的に作業を計画・整理・可視化します。IT EntApps チームが Issue ボードをどのように管理しているかについて詳しくは、[各チームのページ](/handbook/business-technology/#our-functional-structure)を参照してください。
 
-### ラベル
+### ラベル {#labels}
 
-IT EntApps チームは [ラベル](https://docs.gitlab.com/ee/user/project/labels.html) を使用して Issue とエピックを効率的に分類します。整理された簡潔なラベルリストにより、動的なフィルタリングと作業の効率的な管理が可能になります。すべてのラベルは `gitlab.com/gitlab-com` のトップレベルグループ内に作成されており、すべてのプロジェクトに適用できます。
+IT EntApps チームは [ラベル](https://docs.gitlab.com/ee/user/project/labels.html)を使用して Issue とエピックを効率的に分類します。整理された簡潔なラベルリストにより、動的なフィルタリングと作業の効率的な管理が可能になります。すべてのラベルは `gitlab.com/gitlab-com` のトップレベルグループ内に作成されており、すべてのプロジェクトに適用できます。
 
 IT チームは作業をより適切に整理・管理するために、異なるラベルカテゴリを使用しています。各カテゴリをクリックすると、IT チームが使用している現在のラベルが確認できます：
 
@@ -149,7 +147,7 @@ IT チームは作業をより適切に整理・管理するために、異な�
 - [カタログラベル](https://gitlab.com/groups/gitlab-com/-/labels?subscribed=&sort=relevance&search=entapps-catalog)
 - [Service Desk ラベル](https://gitlab.com/groups/gitlab-com/-/labels?subscribed=&sort=relevance&search=entapps-type)
 
-## IT EntApps 計画プロセス
+## IT EntApps 計画プロセス {#it-entapps-planning-process}
 
 新しいコミットの準備と現在のコミットの報告に向けて、以下の複数の活動が実施されます：
 
@@ -159,29 +157,29 @@ IT チームは作業をより適切に整理・管理するために、異な�
 - **コミット - コーポレートランク**：IT EntApps リーダーシップはビジネスリーダーと協力して、会社にとっての優先度順にイニシアチブをランク付けします。
 - **今後のコミットをビジネスと共有**：IT EntApps PMO チームが今後のコミットをビジネスステークホルダーと共有します。
 
-### FY25 Q4 カレンダー
+### FY25 Q4 カレンダー {#fy25-q4-calendar}
 
 ![it-pmo](/images/business-technology/enterprise-applications/pmo/it-pmo-fy25-q4.png)
 
-### FY26 Q1 カレンダー
+### FY26 Q1 カレンダー {#fy26-q1-calendar}
 
 ![it-pmo1](/images/handbook/entapps/calendar-fy26q1.png)
 
-### FY26 Q2 カレンダー
+### FY26 Q2 カレンダー {#fy26-q2-calendar}
 
 ![it-pmo2](/images/handbook/entapps/calendar-fy26q2.png)
 
-### FY26 Q3 カレンダー
+### FY26 Q3 カレンダー {#fy26-q3-calendar}
 
 ![it-pmo3](/images/handbook/entapps/calendar-fy26q3.png)
 
-### FY26 Q4 カレンダー
+### FY26 Q4 カレンダー {#fy26-q4-calendar}
 
 ![it-pmo4](/images/handbook/entapps/calendar-fy26q4.png)
 
-## <i class="fas fa-file-alt" id="biz-tech-icons"></i> ミーティング
+## <i class="fas fa-file-alt"></i> ミーティング {#meetings}
 
-## ミーティングプロトコル
+## ミーティングプロトコル {#meetings-protocol}
 
 チームは [GitLab のミーティング慣行と基準](/handbook/company/culture/all-remote/meetings/)に従います。
 
@@ -189,43 +187,43 @@ IT チームは作業をより適切に整理・管理するために、異な�
 - すべてのアジェンダは PMO チームミーティングの[共有ドライブ](https://drive.google.com/drive/folders/1nKgH2Q9PztXE388dbhUHxSh1Vy2V_vLz)に保管されます。
 - IT PMO チームはプロジェクトに関連するすべてのミーティングを主導します。
 
-## IT EntApps ガバナンス
+## IT EntApps ガバナンス {#it-entapps-governance}
 
-### IT EntApps リーダーシップミーティング
+### IT EntApps リーダーシップミーティング {#it-entapps-leadership-meeting}
 
 - **目的**：毎週、IT リーダーシップチームはチーム全体に影響を与える現在の活動（緊急かつ重要なもの）について同期し議論するための専用の時間を持ちます。
   - **頻度**：毎週月曜日
     - このミーティングの時間は、IT / Business Technology チームメンバーの異なるタイムゾーンに対応するために変わる場合があります。
-  - **参加者**：VP IT（ホスト）、PMO、Enterprise Applications リーダーシップ。
+  - **参加者**：VP, IT（ホスト）、PMO、Enterprise Applications リーダーシップ。
 
-### IT EntApps 全員集会
+### IT EntApps 全員集会 {#it-entapps-all-hands}
 
 - **目的**：会社のアップデートを共有し、つながりを維持し、フィードバックを受け取ります。
   - **頻度**：四半期ごと（新四半期の第 1 週）
-  - **参加者**：VP IT（ホスト）、IT クロスファンクショナルチーム全員。
+  - **参加者**：VP, IT（ホスト）、IT クロスファンクショナルチーム全員。
 
-## ステークホルダー管理ミーティング
+## ステークホルダー管理ミーティング {#stakeholder-management-meetings}
 
-### プロジェクトステータスミーティング
+### プロジェクトステータスミーティング {#project-status-meetings}
 
 - **目的**：IT PMO チームが主導する各プロジェクトに対して、プロジェクトの現状をレビューし、進行中のタスクに対処し、ブロッカーを議論するためのプロジェクトステータスミーティングが開催されます。
   - **頻度**：毎週または 2 週間ごと
   - **参加者**：IT EntApps PMO（ホスト）、ビジネス DRI、プロジェクト専門家（SME）
 
-### IT EntApps ポートフォリオレビューミーティング（Lead to Cash、CRO、G&A）
+### IT EntApps ポートフォリオレビューミーティング（Lead to Cash、CRO、G&A） {#it-entapps-portfolio-review-meetings-lead-to-cash-cro-and-ga}
 
 - **目的**：これらのミーティングでは、IT PMO チームがロードマップとタイムライン、優先事項の変更、目標との整合について議論します。
   - **頻度**：月次（各月の第 3 週）
   - **参加者**：IT EntApps PMO（ホスト）、ビジネス DRI。
 
-### IT EntApps ポートフォリオ計画（Lead to Cash、CRO、G&A）
+### IT EntApps ポートフォリオ計画（Lead to Cash、CRO、G&A） {#it-entapps-portfolio-planning-lead-to-cash-cro-and-ga}
 
 - **目的**：ロードマップとタイムライン、優先事項の変更、目標との整合について議論します。これは、チームが主要なビジネスパートナーと整合し、共有ロードマップの明確さを持つことを確保するための戦略的ミーティングです。
   - **頻度**：四半期ごと（四半期末の 1 ヶ月前の第 3 週）
   - **参加者**：IT EntApps PMO（ホスト）、ビジネスおよび IT EntApps リーダーシップ。
 
-## <i class="fas fa-headset" id="biz-tech-icons"></i> 私たちへの連絡方法
+## <i class="fas fa-headset"></i> 私たちへの連絡方法 {#how-to-connect-with-us}
 
-### IT EntApps PMO Slack チャンネル
+### IT EntApps PMO Slack チャンネル {#it-entapps-pmo-slack-channels}
 
-- [#entapps-portfolio-planning](https://gitlab.enterprise.slack.com/archives/C05FHBPU3NJ) は、すべての EntApps ポートフォリオ関連の会話のための主要チャンネルです。GitLab チームメンバーはここで Issue をリンクしたり、ヘルプや方向性を求めたり、PMO チームのメンバーから一般的なフィードバックを得ることができます。
+- [#entapps-portfolio-planning](https://gitlab.enterprise.slack.com/archives/C05FHBPU3NJ)は、すべての EntApps ポートフォリオ関連の会話のための主要チャンネルです。GitLab チームメンバーはここで Issue をリンクしたり、ヘルプや方向性を求めたり、PMO チームのメンバーから一般的なフィードバックを得ることができます。

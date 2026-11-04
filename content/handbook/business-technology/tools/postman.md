@@ -2,24 +2,22 @@
 title: "Postman"
 description: "Postman の使用に関するガイドラインとベストプラクティス"
 upstream_path: "/handbook/business-technology/tools/postman/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T09:00:00Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:06:40.701523+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## Postman ベストプラクティス {#postman-best-practices}
 
-## Postman ベストプラクティス
-
-## Postman とは？
+## Postman とは？ {#what-is-postman}
 
 [Postman](https://www.postman.com/) は、開発者が開発・テスト中に HTTP API に対してリクエストを実行するのに役立つ優れたツールです。API ベースのインテグレーションを作成する際の R&D を加速させます。
 
-## API 認証情報の共有に関するベストプラクティス
+## API 認証情報の共有に関するベストプラクティス {#best-practices-for-sharing-api-credentials}
 
-### 環境と API 認証情報の共有
+### 環境と API 認証情報の共有 {#environments-and-api-credential-sharing}
 
 Postman には、[Environments](https://learning.postman.com/docs/sending-requests/variables/managing-environments/) を使用して変数を共有する機能があります。
 

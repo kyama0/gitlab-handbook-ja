@@ -2,18 +2,16 @@
 title: "Zuora Collect モジュール"
 description: "Zuora Collect モジュールの業務プロセス。"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/zuora-collect/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:02:44Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:10:30.742062+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## ビジネスニーズ {#business-need}
 
-## ビジネスニーズ
-
-ビジネスは、Order to Cash サイクルを短縮するために[現金回収プロセス](/handbook/finance/accounting/finance-ops/billing-ops/#cash-collections)を最適化する必要性を特定しました。これにより、Days Sales Outstanding (DSO) を削減し、ビジネスの現金効率を高め、将来の成長に対応できるようにします。現行の回収プロセスは、期限超過 7 日、20 日、30 日のサイクルで自動督促通知を送ることで部分的に自動化されていました。その後、手動による回収プロセスが開始されていました。
+ビジネスは、Order to Cash サイクルを短縮するために[現金回収プロセス](/handbook/finance/accounting/finance-ops/billing-ops/#cash-collections)を最適化する必要性を特定しました。これにより、Days Sales Outstanding (DSO)を削減し、ビジネスの現金効率を高め、将来の成長に対応できるようにします。現行の回収プロセスは、期限超過 7 日、20 日、30 日のサイクルで自動督促通知を送ることで部分的に自動化されていました。その後、手動による回収プロセスが開始されていました。
 
 Billing チームは月平均で 1 人あたり 31.5 時間、チーム全体で月 157.5 時間を売掛金業務に費やしていました:
 
@@ -21,15 +19,15 @@ Billing チームは月平均で 1 人あたり 31.5 時間、チーム全体で
 - ケース処理に週平均 2.5 時間。
 - Zendesk 対応に週平均 2 時間。
 
-## ビジネスソリューション
+## ビジネスソリューション {#business-solution}
 
-Zuora はすでに技術スタックのアプリケーションとしてさまざまなチームや部門で使用されていたため、ビジネスは回収活動の自動化をサポートするために Zuora Collect モジュールの実装を進めることにしました。この実装により、Billing チームが単一の回収プラットフォームに移行することで、より組織的な Collections チームを構築できるようになります。
+Zuora はすでに Tech Stack のアプリケーションとしてさまざまなチームや部門で使用されていたため、ビジネスは回収活動の自動化をサポートするために Zuora Collect モジュールの実装を進めることにしました。この実装により、Billing チームが単一の回収プラットフォームに移行することで、より組織的な Collections チームを構築できるようになります。
 
-### Zuora Collect とは
+### Zuora Collect とは {#what-is-zuora-collect}
 
-[Zuora Collect](https://knowledgecenter.zuora.com/Zuora_Payments/Configure_payment_orchestration/Zuora_Collections/Get_Started_with_Collections/A_Overview_of_Zuora_Collect) は、サブスクリプションエコノミーにおける定期回収を最適化するための包括的なソリューションです。主な利点として、未払い請求書と滞納アカウントの追跡、自動化されたビジネスプロセスとインテリジェントなリトライロジックの管理、支払い実行のカスタマイズが可能です。
+[Zuora Collect](https://knowledgecenter.zuora.com/Zuora_Payments/Configure_payment_orchestration/Zuora_Collections/Get_Started_with_Collections/A_Overview_of_Zuora_Collect)は、サブスクリプションエコノミーにおける定期回収を最適化するための包括的なソリューションです。主な利点として、未払い請求書と滞納アカウントの追跡、自動化されたビジネスプロセスとインテリジェントなリトライロジックの管理、支払い実行のカスタマイズが可能です。
 
-### Zuora Collect へのアクセス方法
+### Zuora Collect へのアクセス方法 {#how-to-access-zuora-collect}
 
 最初のイテレーションとして、以下の機能が Zuora 本番環境で構成されています:
 
@@ -48,18 +46,18 @@ Zuora はすでに技術スタックのアプリケーションとしてさま�
 
 各機能の使い方については以下をご覧ください。
 
-### Zuora Collect の使用方法
+### Zuora Collect の使用方法 {#how-to-use-zuora-collect}
 
-#### Collections Window（回収ウィンドウ）
+#### Collections Window（回収ウィンドウ） {#collections-window}
 
 Collections Window のメインユーザーインターフェースは以下のタブで構成されています:
 
-##### Dashboard（ダッシュボード）
+##### Dashboard（ダッシュボード） {#dashboard}
 
 Collections Window を起動したときのデフォルトタブで、3 つのセクションが含まれています:
 
 - **Status of Accounts（アカウントのステータス）**: さまざまなステータス（良好な状態 vs. 回収中）のアカウントの分布を示す円グラフ。
-  - 回収中の部分をクリックして円グラフのデータをドリルダウンします。回収中のアカウントの年齢別分布を示す新しい円グラフが表示されます。
+  - 回収中の部分をクリックして円グラフのデータをドリルダウンします。回収中のアカウントの経過日数別分布を示す新しい円グラフが表示されます。
   - 右上の `Edit Parameters` をクリックして円グラフで使用される期間をカスタマイズします。期間名（Bucket Name）と日数の両方がカスタマイズ可能です。
     - パラメーターを変更した後、ユーザーはページを更新して円グラフの変更を確認する必要があります。
 
@@ -67,7 +65,7 @@ Collections Window を起動したときのデフォルトタブで、3 つの�
   <iframe src="https://www.youtube.com/embed/zLDY4C87e_A" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-- **Collection Accounts Sorted by Age and Balance（年齢と残高でソートされた回収アカウント）**: アカウントの年齢と残高の分布を示す散布図。
+- **Collection Accounts Sorted by Age and Balance（経過日数と残高でソートされた回収アカウント）**: アカウントの経過日数と残高の分布を示す散布図。
   - 散布図の点はアカウントを表します: 青い点は現在のユーザーに割り当てられたアカウントです。
   - 点にカーソルを合わせると、アカウント名、請求書残高の合計、担当エージェントなどの詳細が表示されます。
   - 点をクリックすると、対応するアカウントの詳細ページが開きます。
@@ -85,7 +83,7 @@ Collections Window を起動したときのデフォルトタブで、3 つの�
   <iframe src="https://www.youtube.com/embed/lNmCq7SeDmU" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-##### Accounts（アカウント）
+##### Accounts（アカウント） {#accounts}
 
 Accounts タブには、システム条件とユーザーが定義した条件に基づいて回収中のアカウントが表示されます。
 
@@ -135,7 +133,7 @@ Accounts タブには、システム条件とユーザーが定義した条件�
   <iframe src="https://www.youtube.com/embed/--ljeeigSjg" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-##### Invoices（請求書）
+##### Invoices（請求書） {#invoices}
 
 Invoice タブには、ビジネスが定義した条件に基づいた重要な請求書が表示されます。
 
@@ -143,7 +141,7 @@ Invoice タブには、ビジネスが定義した条件に基づいた重要な
 
 このページでは、ユーザーは以下の操作を実行できます:
 
-1. 請求書リストの下の散布図で、年齢と残高でソートされた重要な請求書を表示する。
+1. 請求書リストの下の散布図で、経過日数と残高でソートされた重要な請求書を表示する。
    - 散布図の点は請求書を表します。
    - 点をクリックすると、対応する請求書の詳細ページが開きます。
 1. 条件の編集。
@@ -165,7 +163,7 @@ Invoice タブには、ビジネスが定義した条件に基づいた重要な
   <iframe src="https://www.youtube.com/embed/0YjRbhRur60" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-##### Tasks（タスク）
+##### Tasks（タスク） {#tasks}
 
 回収タスクは Collections Window の `Tasks` タブで管理されます。Collections Windows で手動で回収タスクを作成して、特定の支払いやアカウントをフォローアップすることができます。
 
@@ -197,13 +195,13 @@ Invoice タブには、ビジネスが定義した条件に基づいた重要な
   <iframe src="https://www.youtube.com/embed/zoxbseZeUqs" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-##### Settings（設定）
+##### Settings（設定） {#settings}
 
 このタブでスケジュール、システム統合、回収ステータスを構成できます。
 
-#### Notes（ノート）
+#### Notes（ノート） {#notes}
 
-Notes 機能は Collections Window 機能にコメント機能を追加します。この機能を使用すると、コメントの追加または返信、他のユーザーへの言及、コメントへのファイルのアップロード、ノートのエクスポートが可能になります。
+Notes 機能は Collect の Collections Window 機能にコメント機能を追加します。この機能を使用すると、コメントの追加または返信、他のユーザーへの言及、コメントへのファイルのアップロード、ノートのエクスポートが可能になります。
 
 Notes の UI は 4 つのタブで構成されています:
 
@@ -212,7 +210,7 @@ Notes の UI は 4 つのタブで構成されています:
 - **Export（エクスポート）**: Collections Window 機能で作成されたノートをエクスポートします。
 - **Settings（設定）**: Notes API トークンを取得して Collections Window との統合に使用します。
 
-##### ユーザーの管理
+##### ユーザーの管理 {#manage-users}
 
 Users タブでは、組織内のすべてのユーザー（回収エージェント）を表示および管理できます:
 
@@ -225,7 +223,7 @@ Users タブでは、組織内のすべてのユーザー（回収エージェ�
 > - そのユーザーによるコメントや、すでにそのユーザーに割り当てられていたフォローアップタスクには影響しません。<br>
 > - 非アクティブにされたユーザーはユーザーのリストから削除されませんが、非アクティブにされたユーザーの名前はグレー表示されます。
 
-##### ノートのエクスポート
+##### ノートのエクスポート {#export-notes}
 
 Notes では、ユーザーは Collections Window に追加されたノートをエクスポートできます。
 
@@ -244,9 +242,9 @@ Notes 機能でノートをエクスポートするには:
 1. Export をクリックします。ノートは CSV ファイルに保存されます。
    - エクスポートされたファイルは 7 日間ダウンロード可能です。
 
-## FAQ
+## FAQ {#faq}
 
-### アカウントにエージェントを割り当てる方法は？
+### アカウントにエージェントを割り当てる方法は？ {#how-to-assign-agents-to-an-account}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/1dvwqmOF-io?t=11)をクリックしてください。
 
@@ -258,7 +256,7 @@ Notes 機能でノートをエクスポートするには:
 1. Update をクリックして設定を保存します。
    - ページを更新して変更を確認します。
 
-### 特定のアカウントの連絡先の詳細を確認する方法は？
+### 特定のアカウントの連絡先の詳細を確認する方法は？ {#how-to-view-the-contact-details-of-a-particular-account}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/1dvwqmOF-io?t=44)をクリックしてください。
 
@@ -266,7 +264,7 @@ Notes 機能でノートをエクスポートするには:
 1. 探しているアカウントを検索して開きます（アカウント名をクリックします）。
 1. ページ右上に `View Contact Details` ボタンがあります。
 
-### 特定のアカウントの回収ステータスを更新する方法は？
+### 特定のアカウントの回収ステータスを更新する方法は？ {#how-to-update-the-collection-status-of-a-particular-account}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/1dvwqmOF-io?t=57)をクリックしてください。
 
@@ -275,7 +273,7 @@ Notes 機能でノートをエクスポートするには:
 1. `Account Statuses` セクションで、アカウントの現在のステータスを最もよく表すステータスを選択します。
 1. 完了したら `Update` をクリックします。
 
-### 特定のアカウントを検索する方法は？
+### 特定のアカウントを検索する方法は？ {#how-to-search-for-a-specific-account}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/SUczIKlHs8g?t=46)をクリックしてください。
 
@@ -283,7 +281,7 @@ Notes 機能でノートをエクスポートするには:
 1. 右上の虫眼鏡アイコンを見つけてアカウント名を入力します。
    - リストが自動的に結果で更新されます。
 
-### Collect ウィンドウで特定のアカウントの請求書の詳細と支払いを表示する方法は？
+### Collect ウィンドウで特定のアカウントの請求書の詳細と支払いを表示する方法は？ {#how-to-view-the-invoice-details-and-payments-a-particular-account-in-the-collect-window}
 
 請求書の詳細を表示するには 2 つの方法があります:
 
@@ -299,7 +297,7 @@ Notes 機能でノートをエクスポートするには:
 1. 探している請求書を検索します。
 1. `Critical Invoices` セクションで、請求書番号またはアクションアイコン（左の 3 点リーダー）をクリックして `Show` を選択し、Collections ウィンドウで請求書の詳細を表示します。
 
-### Zuora Billing で請求書を開く方法は？
+### Zuora Billing で請求書を開く方法は？ {#how-to-open-an-invoice-in-zuora-billing}
 
 請求書を表示するには 2 つの方法があります:
 
@@ -315,7 +313,7 @@ Notes 機能でノートをエクスポートするには:
 1. 探している請求書を検索します。
 1. `Critical Invoices` セクションで、アクションアイコン（左の 3 点リーダー）をクリックして `Show in Billing` を選択し、新しいタブで Zuora Billing UI を開きます。
 
-### アカウントにコメントを追加する方法は？
+### アカウントにコメントを追加する方法は？ {#how-to-add-comments-to-an-account}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/--ljeeigSjg)をクリックしてください。
 
@@ -327,7 +325,7 @@ Notes 機能でノートをエクスポートするには:
 1. 完了したら Submit をクリックします。
    - コメントは設計上、編集または削除できません。
 
-### アカウントのコメントに返信する方法は？
+### アカウントのコメントに返信する方法は？ {#how-to-reply-to-comments-on-an-account}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/--ljeeigSjg?t=49)をクリックしてください。
 
@@ -340,7 +338,7 @@ Notes 機能でノートをエクスポートするには:
 1. 完了したら Submit をクリックします。
    - コメントは設計上、編集または削除できません。
 
-### 請求書にコメントを追加する方法は？
+### 請求書にコメントを追加する方法は？ {#how-to-add-comments-to-an-invoice}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/0YjRbhRur60)をクリックしてください。
 
@@ -351,7 +349,7 @@ Notes 機能でノートをエクスポートするには:
 1. 完了したら Submit をクリックします。
    - コメントは設計上、編集または削除できません。
 
-### 請求書のコメントに返信する方法は？
+### 請求書のコメントに返信する方法は？ {#how-to-reply-to-comments-on-an-invoice}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/0YjRbhRur60?t=36)をクリックしてください。
 
@@ -364,15 +362,15 @@ Notes 機能でノートをエクスポートするには:
 1. 完了したら Submit をクリックします。
    - コメントは設計上、編集または削除できません。
 
-### コメントを削除する方法は？
+### コメントを削除する方法は？ {#how-to-delete-a-comment}
 
 - コメントは設計上、編集または削除できません。
 
-### コメントを編集する方法は？
+### コメントを編集する方法は？ {#how-to-edit-a-comment}
 
 - コメントは設計上、編集または削除できません。
 
-### フォローアップタスクを作成する方法は？
+### フォローアップタスクを作成する方法は？ {#how-to-create-a-follow-up-task}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/zoxbseZeUqs?t=13)をクリックしてください。
 
@@ -396,7 +394,7 @@ Notes 機能でノートをエクスポートするには:
 1. `Create` をクリックします。
 1. タスクが作成され、フォローアップタスクのリストに表示されます。
 
-### ユーザーを非アクティブにする方法は？
+### ユーザーを非アクティブにする方法は？ {#how-to-deactivate-a-user}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/eKKLCe_CYFE)をクリックしてください。
 
@@ -409,7 +407,7 @@ Notes 機能でノートをエクスポートするには:
    - そのユーザーが追加したコメントや、すでにそのユーザーに割り当てられていたフォローアップタスクには影響しません。<br>
    - 非アクティブにされたユーザーはユーザーのリストから削除されませんが、非アクティブにされたユーザーの名前はグレー表示されます。
 
-### ユーザーを再アクティブにする方法は？
+### ユーザーを再アクティブにする方法は？ {#how-to-reactivate-a-user}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/wdFSNcQshes)をクリックしてください。
 
@@ -419,7 +417,7 @@ Notes 機能でノートをエクスポートするには:
 1. Active を選択します。
 1. `Update` をクリックします。
 
-### ユーザーにエスカレーションポイントを追加する方法は？
+### ユーザーにエスカレーションポイントを追加する方法は？ {#how-to-add-an-escalation-point-to-a-user}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/32do6ZkBLbY)をクリックしてください。
 
@@ -429,7 +427,7 @@ Notes 機能でノートをエクスポートするには:
 1. ドロップダウンリストをクリックして、意図したエスカレーションポイントのユーザー名の 2 文字以上を入力します。
 1. `Update` をクリックします。
 
-### ノートをエクスポートする方法は？
+### ノートをエクスポートする方法は？ {#how-to-export-notes}
 >
 > ビデオチュートリアルは[こちら](https://youtu.be/KPK5sHPRQw4)をクリックしてください。
 
@@ -446,12 +444,12 @@ Notes 機能でノートをエクスポートするには:
 1. Export をクリックします。ノートは CSV ファイルに保存されます。
    - エクスポートされたファイルは 7 日間ダウンロード可能です。
 
-## Zuora Collect サポート
+## Zuora Collect サポート {#zuora-collect-support}
 
-### GitLab 内部エスカレーションプロセス
+### GitLab 内部エスカレーションプロセス {#gitlab-internal-escalation-process}
 
 Zuora Collect のエンドユーザーが問題に遭遇したり、システム関連の質問がある場合は、Finance Admins が最初の窓口となります。
 
-#### Finance Admins への連絡方法
+#### Finance Admins への連絡方法 {#how-can-i-contact-the-finance-admins}
 
 質問を記載したメッセージを #proj-zuora_collect_implementation に送り、適切な担当者に対応してもらうために `@here` タグを追加してください。

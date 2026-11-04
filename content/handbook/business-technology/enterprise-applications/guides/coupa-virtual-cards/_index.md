@@ -2,26 +2,24 @@
 title: "Coupa バーチャルカードガイド"
 description: "Coupa バーチャルカードガイド"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/coupa-virtual-cards/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T05:49:40Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:13:40.134153+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-01-06T17:31:07+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## バーチャルカードとは
+## バーチャルカードとは {#what-is-virtual-card}
 
 GitLab がサプライヤーへの支払いに優先する方法は、サポートドキュメントとしてサプライヤーの請求書を添付した電子送金です。サプライヤーとのこのオプションが利用できない場合、代替の支払い方法として一時的なクレジットカードであるバーチャルカードを使用することができます。
 
-## バーチャルカードの申請方法
+## バーチャルカードの申請方法 {#how-to-request-a-virtual-card}
 
-バーチャルカードは、`Zip` で **新規リクエスト** を作成する際に依頼者が支払いオプションとして選択できます。
+バーチャルカードは、`Zip` で **New request**（新規リクエスト） を作成する際に依頼者が支払いオプションとして選択できます。
 
-`Zip` の **一般情報** ナビゲーションページで:
+`Zip` の **General information**（一般情報） ナビゲーションページで:
 
-1. 「このベンダーへの支払いにバーチャルカードを使用しますか？」という質問に **はい** をクリックします。
+1. 「このベンダーへの支払いにバーチャルカードを使用しますか？」という質問に **Yes** をクリックします。
 1. 「ベンダーの名前は？」フィールドで **American Express- Virtual Card** を選択します。
 1. ページの残りのフィールドを入力します。
 
@@ -43,14 +41,14 @@ GitLab がサプライヤーへの支払いに優先する方法は、サポー�
 <br>
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
-**前提条件: バーチャルカードを確認するには、Coupa で 2FA を設定する必要があります。** 詳細は [二段階認証（2FA）の有効化方法](/handbook/business-technology/enterprise-applications/guides/coupa-guide/#how-to-enable-two-factor-authentication) をご確認ください。
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
+**前提条件: バーチャルカードを確認するには、Coupa で 2FA を設定する必要があります。** 詳細は [二要素認証（2FA）の有効化方法](/handbook/business-technology/enterprise-applications/guides/coupa-guide/#how-to-enable-two-factor-authentication)をご確認ください。
 {{% /panel %}}
 
 
 <br>
 
-バーチャルカード情報は発注書の **支払い** セクションに表示されます。リンクをクリックしてカードの詳細を確認してください。二段階認証（2FA）の確認コードの入力が求められます。
+バーチャルカード情報は発注書の **Payment**（支払い） セクションに表示されます。リンクをクリックしてカードの詳細を確認してください。二要素認証（2FA）の確認コードの入力が求められます。
 
 ![vcard-image-7](/images/business-technology/enterprise-applications/guides/coupa-virtual-cards/vcard7.png)
 
@@ -65,17 +63,17 @@ GitLab がサプライヤーへの支払いに優先する方法は、サポー�
 <br>
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
 **バーチャルカードのサポートドキュメントは購買依頼の金額と一致している必要があります。** バーチャルカードに請求された金額が PO 金額と異なる場合、更新されたドキュメントを提出する必要があります。
 {{% /panel %}}
 
 
 <br>
 
-## バーチャルカード FAQ
+## バーチャルカード FAQ {#virtual-cards-faq}
 
 - **バーチャルカードの有効期限はどのくらいですか？**
-  - デフォルトでは、バーチャルカードは 365 日間有効です。その後、セキュリティ上の理由からカードは期限切れになります。365 日以内に支払いができずバーチャルカードが期限切れになった場合は、発注書の **コメント** セクションで **@Accounts Payable Approval Group** をタグ付けしてください。カードの再発行に関するビジネス上の正当性をコメントに含める必要があります。
+  - デフォルトでは、バーチャルカードは 365 日間有効です。その後、セキュリティ上の理由からカードは期限切れになります。365 日以内に支払いができずバーチャルカードが期限切れになった場合は、発注書の **Comments**（コメント） セクションで **@Accounts Payable Approval Group** をタグ付けしてください。カードの再発行に関するビジネス上の正当性をコメントに含める必要があります。
 
 - **バーチャルカードの金額を増額するにはどうすればよいですか？**
   - [発注書変更リクエストの作成方法](/handbook/business-technology/enterprise-applications/guides/coupa-guide/#how-to-do-a-purchase-order-change-request)と同じプロセスに従ってください。変更リクエストが承認されると、バーチャルカードの金額が増額されます。
@@ -83,8 +81,8 @@ GitLab がサプライヤーへの支払いに優先する方法は、サポー�
 - **発注書発行後にレシートや請求書を添付するにはどうすればよいですか？**
   - バーチャルカードの請求にはレシートは**不要**です。
   - レシートの添付を求める通知が届いた場合は、右上の名前 > 設定 > 通知 の順にクリックし、以下の 2 つの通知を削除します:
-         - 「チャージ作成済み」
-         - 「チャージのレシート提出リマインダー」
+         - "Charge Created"
+         - "Charge missing receipt reminder"
 
  ![vcard-image-16](/images/business-technology/enterprise-applications/guides/coupa-virtual-cards/chargenotification_jun2023.png)
 

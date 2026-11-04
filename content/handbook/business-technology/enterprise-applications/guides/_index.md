@@ -2,14 +2,12 @@
 title: "エンタープライズアプリケーションガイド"
 description: "財務システムに関する GitLab のエンタープライズアプリケーションガイド"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/"
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-translated_at: "2026-06-01T21:12:29Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:10:30.742062+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-06-01T17:35:18+01:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 チームの取り組みの一つとして、エンタープライズアプリケーション領域内のさまざまなトピックに関する短期トレーニングセッションを実施してきました。
 
@@ -19,7 +17,7 @@ lastmod: "2026-06-01T17:35:18+01:00"
 - 主要なトピックについてビジネスパートナーに対してより均質なサポートを提供する
 - チームメンバーが可能な限りセルフサービスで対応できるようにし、小規模なタスクによる中断を減らす
 
-## エンタープライズテクノロジー & AI システムガイド
+## エンタープライズテクノロジー & AI システムガイド {#enterprise-technology--ai-system-guides}
 
 - [NetSuite でカスタムフィールドを作成する方法](ns-custom-field/)
 - [Coupa エンドユーザーガイド](coupa-guide/)

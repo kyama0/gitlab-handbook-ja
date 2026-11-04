@@ -1,20 +1,18 @@
 ---
-title: "エンタープライズアプリケーションチーム G&A（Finance Systems）"
-description: "G&A（一般管理）機能を担当するエンタープライズアプリケーションチームは、GitLab の社内ビジネスプロセスを合理化・最適化するクリティカルなアプリケーションの導入とサポートを専門としています。
+title: "Enterprise Applications Team G&A（Finance Systems）"
+description: "G&A（一般管理）機能を担当する Enterprise Applications Team は、GitLab の社内ビジネスプロセスを合理化・最適化するクリティカルなアプリケーションの導入とサポートを専門としています。
 私たちが特に注力しているのは、調達から支払い（Procure-to-Pay）および記録から報告（Record-to-Report）に至るプロセス全体で効率性とスケーラビリティを実現し、GitLab の成長とコンプライアンス要件に沿ったシームレスな業務運営を確保することです。"
 upstream_path: /handbook/business-technology/enterprise-applications/finance-ops/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T06:00:00Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:16:10.746882+00:00"
 translator: claude
 stale: false
-lastmod: "2024-12-13T17:52:40+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## <i class="fas fa-users"></i> 私たちについて {#about-us}
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちについて
-
-**エンタープライズアプリケーション G&A チーム**は、スケーラビリティ、自動化、規制コンプライアンスの要求に応えるため、GitLab の財務システムの管理と拡張を担当しています。プロアクティブなモニタリング、アラート、継続的なイテレーションを通じて、GitLab の社内アプリケーションエコシステムの安定性と信頼性を確保しています。
+**Enterprise Applications, G&A Team**は、スケーラビリティ、自動化、規制コンプライアンスの要求に応えるため、GitLab の財務システムの管理と拡張を担当しています。プロアクティブなモニタリング、アラート、継続的なイテレーションを通じて、GitLab の社内アプリケーションエコシステムの安定性と信頼性を確保しています。
 
 私たちが担当する財務ツールには以下が含まれます:
 
@@ -26,7 +24,7 @@ lastmod: "2024-12-13T17:52:40+00:00"
 
 さらに、**IT 監査とコンプライアンス**プロセスを監督し、IT 全般統制（ITGC）への準拠を確保することで **SOX** およびその他の規制基準を満たしています。
 
-## <i class="fas fa-bullseye" id="biz-tech-icons"></i> ミッション
+## <i class="fas fa-bullseye"></i> ミッション {#mission}
 
 私たちのミッションは、統合された効率的なアプリケーション環境を提供することで GitLab のビジネスプロセスを強化することです。私たちは以下を目指しています:
 
@@ -36,17 +34,17 @@ lastmod: "2024-12-13T17:52:40+00:00"
 - **コアコンピタンスへの集中:** 適切な場面でサードパーティソリューションを採用・拡張し、GitLab のエンジニアリングリソースがコア製品のイノベーションに集中できるようにします。
 - **監査とコンプライアンス基準の維持:** SOX および SOC コンプライアンスを含む主要な監査要件を満たすため、顧客とビジネスデータを保護します。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのチーム（組織図）
+## <i class="fas fa-users"></i> 私たちのチーム（組織図） {#our-team-org-chart}
 
 [私たちのチーム（組織図）](https://internal.gitlab.com/handbook/it-enterprise-applications/about-us/finance-ops/)
 
-## <i class="fas fa-bullhorn" id="biz-tech-icons"></i> 私たちのサービス
+## <i class="fas fa-bullhorn"></i> 私たちのサービス {#our-services}
 
-### システム評価と導入
+### システム評価と導入 {#system-evaluations--implementations}
 
-PMO（プログラム管理オフィス）と連携して、新しいアプリケーションや主要なアップデートの評価、導入、設定を行います。ユーザー要件を収集・検証することで、アプリケーションがビジネスニーズに沿い、自動化と効率化を推進できるようにします。
+Program Management Office（PMO）と連携して、新しいアプリケーションや主要なアップデートの評価、導入、設定を行います。ユーザー要件を収集・検証することで、アプリケーションがビジネスニーズに沿い、自動化と効率化を推進できるようにします。
 
-### Finance Systems の管理
+### Finance Systems の管理 {#finance-systems-administration}
 
 チームは以下を含む GitLab の財務システムの円滑な運用を確保します:
 
@@ -56,23 +54,23 @@ PMO（プログラム管理オフィス）と連携して、新しいアプリ�
 - リリースアップグレードのテスト
 - 業務継続性を確保するための日常的なシステム管理
 
-### 非プロジェクト的な運用改善
+### 非プロジェクト的な運用改善 {#non-project-operational-enhancements}
 
 システム機能を強化するために、小規模な非プロジェクトタスクを優先して対処します。これには以下が含まれます:
 
 - ワークフローの更新とカスタムフィールドの改善
-- クイックフィーチャーの有効化
+- 迅速に導入できる機能の有効化
 - 経費などの設定に関するポリシーの更新
 
-## <i class="fas fa-bullhorn" id="biz-tech-icons"></i> 業務の進め方
+## <i class="fas fa-bullhorn"></i> 業務の進め方 {#how-we-operate}
 
-### リクエスト提出プロセス
+### リクエスト提出プロセス {#request-submission-process}
 
-- **プロジェクト:** 数週間を要する、クロスファンクショナルな影響がある、またはプロジェクト管理サポートが必要なイニシアチブについては、[PMO チーム](/handbook/business-technology/enterprise-applications/pmo/)に連絡してプロジェクトロードマップにリクエストを追加してください。
+- **プロジェクト:** 数週間を要する、クロスファンクショナルな影響がある、またはプロジェクト管理サポートが必要なイニシアチブについては、[PMO チーム](../business-technology/pmo/)に連絡してプロジェクトロードマップにリクエストを追加してください。
 
 - **運用改善:** 小規模なシステム変更は、[こちら](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)にリンクされている **CM: Configuration Change** テンプレートを通じて提出してください。リクエストは ~BT:Backlog ラベルを使用して[こちら](https://gitlab.com/groups/gitlab-com/-/issues/?sort=created_date&state=opened&label_name%5B%5D=BT%3A%3ABacklog&first_page_size=100)で評価・優先順位付けされます。
 
-### マイルストーン計画
+### マイルストーン計画 {#milestone-planning}
 
 チームは隔週のマイルストーンスケジュール（水曜〜火曜）で作業します。
 
@@ -81,6 +79,6 @@ PMO（プログラム管理オフィス）と連携して、新しいアプリ�
 
 **注:** 業務継続性（KTLO）または財務的影響に関連するリクエストは、クリティカルではない改善よりも優先されます。
 
-## <i class="fas fa-bullhorn" id="biz-tech-icons"></i> 私たちのコミットメント
+## <i class="fas fa-bullhorn"></i> 私たちのコミットメント {#our-commitment}
 
-プロアクティブなサポート、戦略的な改善、コンプライアンス基準への準拠を通じて、エンタープライズアプリケーション G&A チームは GitLab の財務システムが現在の要求を満たすだけでなく、将来の成長にも対応できるよう確保します。堅牢なプロセスを維持し、部門横断的なコラボレーションを推進することで、GitLab がアジリティと卓越性をもって業務運営できるよう支援しています。
+プロアクティブなサポート、戦略的な改善、コンプライアンス基準への準拠を通じて、Enterprise Applications, G&A team は GitLab の財務システムが現在の要求を満たすだけでなく、将来の成長にも対応できるよう確保します。堅牢なプロセスを維持し、部門横断的なコラボレーションを推進することで、GitLab がアジリティと卓越性をもって業務運営できるよう支援しています。

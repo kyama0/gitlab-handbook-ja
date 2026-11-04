@@ -2,22 +2,20 @@
 title: "Zuora - エンタープライズアプリケーションガイド"
 description: "Zuora は GitLab の見積もり、請求、回収、収益認識、サブスクリプションメトリクスをサポートする Order to Revenue SaaS プラットフォームです。"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/zuora/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:02:44Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:10:30.742062+00:00"
 translator: "claude"
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## Zuora
+## Zuora {#zuora}
 
 Zuora は GitLab の見積もり、請求、回収、収益認識、サブスクリプションメトリクスのレポートプロセスと、これらのプロセスを支えるバックオフィスチームを支援する Order to Revenue SaaS プラットフォームです。CustomerDot、Salesforce、Stripe、Avalara、Snowflake、NetSuite などの他の Order to Cash システムと連携する中心的なプラットフォームです。
 
 以下のセクションでは、Zuora プラットフォームの主要コンポーネントと Order to Cash プロセスとの関係を要約しています。
 
-### 製品カタログ
+### 製品カタログ {#product-catalog}
 
 Zuora 製品カタログは、GitLab が販売可能な、または過去に販売した収益を生む製品とサービスの総リストを表します。セルフサービス製品とエンタープライズ製品/サービスの両方が Zuora 製品カタログに登録されています。以下の製品/サービスパラメーターの SSOT（唯一の情報源）です:
 
@@ -34,9 +32,9 @@ Zuora 製品カタログは、GitLab が販売可能な、または過去に販�
 - 通貨
 - 見積もりプロセスでの表示
 
-### サブスクリプション管理
+### サブスクリプション管理 {#subscription-management}
 
-Zuora CPQ は Salesforce にインストールされており、ディール締結プロセスを促進する設定、価格、見積もりツールです。Zuora 360 統合により Zuora 製品カタログが Salesforce と同期されるため、見積もりプロセスで Zuora CPQ ツールと並行して Zuora 製品カタログを使用できます。ディールがディール締結プロセスで適切な承認とレビューを経ると、関連する見積もりが Zuora に同期されます。その結果、Zuora 製品カタログと Salesforce（Zuora インストールパッケージ）の見積もりから適切な ID と製品パラメーターを持つ適切に構成されたサブスクリプションが作成されます。上記のプロセスの一部はセルフサービスポータルにも存在します。Zuora 製品カタログのパラメーターは製品側（CustomerDot）に保存されています。セルフサービスでの非常に限定的なトランザクションオプションが SFDC での CPQ プロセスの代わりとなります。結果は同じです: Zuora で適切に構成されたサブスクリプション）。
+Zuora CPQ は Salesforce にインストールされており、ディール締結プロセスを促進する設定、価格、見積もりツールです。Zuora 360 統合により Zuora 製品カタログが Salesforce と同期されるため、見積もりプロセスで Zuora CPQ ツールと並行して Zuora 製品カタログを使用できます。ディールがディール締結プロセスで適切な承認とレビューを経ると、関連する見積もりが Zuora に同期されます。その結果、Zuora 製品カタログと Salesforce（Zuora インストールパッケージ）の見積もりから適切な ID と製品パラメーターを持つ適切に構成されたサブスクリプションが作成されます。上記のプロセスに相当するものはセルフサービスポータルにも存在します。Zuora 製品カタログのパラメーターは製品側（CustomerDot）に保存されています。セルフサービスでの非常に限定的なトランザクションオプションが SFDC での CPQ プロセスの代わりとなります。結果は同じです: Zuora で適切に構成されたサブスクリプション）。
 サブスクリプションは GitLab との顧客のサブスクリプションのコミットされたディールパラメーターの SSOT であるべきです:
 
 - 期間開始
@@ -55,7 +53,7 @@ Zuora CPQ は Salesforce にインストールされており、ディール締�
   - 収益/税パラメーター
   - 更新時の価格動作
 
-### 請求、回収、財務レポートに関連するアカウントパラメーター
+### 請求、回収、財務レポートに関連するアカウントパラメーター {#account-parameters-related-to-billing-collections-and-financial-reporting}
 
 すべての Zuora サブスクリプションは Zuora アカウントに関連付けられている必要があります。Zuora アカウントは SFDC から Zuora 見積もりを同期するか、セルフチェックアウト顧客向けの API を通じて作成または更新されます。
 Zuora アカウントは以下の SSOT です:
@@ -72,7 +70,7 @@ Zuora アカウントは以下の SSOT です:
 - 将来のトランザクションで使用するクレジットカード（マスク済み）
 - 支払い条件
 
-### 請求と支払い
+### 請求と支払い {#billing-and-payments}
 
 Status = Posted の Zuora 請求書は、顧客から GitLab に支払われるべき製品/サービスのドル価値を表します。販売された製品/サービスのドル価値に加え、トランザクションに対する税金も含まれています。Zuora は GitLab ティアと Professional Services の請求書発行に承認された唯一の手段です。
 Zuora 請求書は以下の SSOT です:
@@ -92,7 +90,7 @@ Zuora 支払いは以下の SSOT です:
 - 返金ステータス
 - 受領されたとみなされる金額
 
-### Revenue（収益）
+### 収益 {#revenue}
 
 Zuora Revenue は、新しい収益認識要件を解決するために Zuora が購入した RevPro 製品のリブランドです。メインの Zuora プラットフォームと直接統合されており、現在はすべての情報を Zuora プラットフォームから継承しています。
 Zuora Revenue は以下の SSOT です:

@@ -2,27 +2,25 @@
 title: "製品カタログガイド"
 description: "SKU の作成または変更をリクエストする方法。"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/product-catalog/"
-upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
-translated_at: "2026-09-03T22:54:52+09:00"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:10:30.742062+00:00"
 translator: "codex"
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## 変更管理と SDLC プロセス {#change-management-and-sdlc-process}
 
-## 変更管理と SDLC プロセス
+SOX/監査目的のため、Zuora Billing 製品カタログへのすべての変更は、[Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/)のポリシーおよび [Software Development Lifecycle Process for Finance Systems](https://gitlab.com/groups/gitlab-com/business-technology/enterprise-apps/financeops/-/wikis/SDLC-for-Finance-Systems)に準拠して適切にテストされなければなりません。
 
-SOX/監査目的のため、Zuora Billing 製品カタログへのすべての変更は、[Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/) のポリシーおよび [Software Development Lifecycle Process for Finance Systems](https://gitlab.com/groups/gitlab-com/business-technology/enterprise-apps/financeops/-/wikis/SDLC-for-Finance-Systems) に準拠して適切にテストされなければなりません。
+## SKU の作成または変更をリクエストする方法 {#how-to-request-the-creation-or-modification-of-a-sku}
 
-## SKU の作成または変更をリクエストする方法
+**SKU リクエスト Issue を提出する前に**、[Product Launch Process](/handbook/product/product-processes/product-launch/)のすべての手順を読んで完了してください。これにより、製品ローンチが効率的かつ効果的に行われることが確保されます。SKU の作成または変更の Issue を作成する前に、Business Sponsor またはプログラムマネージャーが割り当てられ、ビジネス要件が明確に定義されている必要があります。
 
-**SKU リクエスト Issue を提出する前に**、[Product Launch Process](/handbook/product/product-processes/product-launch/) のすべての手順を読んで完了してください。これにより、製品ローンチが効率的かつ効果的に行われることが確保されます。SKU の作成または変更の Issue を作成する前に、ビジネススポンサーまたはプログラムマネージャーが割り当てられ、ビジネス要件が明確に定義されている必要があります。
-
-ビジネススポンサーが SKU リクエストを記録するために選択できる 3 つの Issue テンプレートが[このディレクトリ](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)にあります。
+Business Sponsor が SKU リクエストを記録するために選択できる 3 つの Issue テンプレートが[このディレクトリ](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)にあります。
 
 
-{{% panel header="**Common Use Cases**" header-bg="success" %}}
+{{% panel header="**よくある使用例**" header-bg="success" %}}
 
 1. **Professional Services SKU** を**作成**または**更新**する場合:
     - `CM: Add_New_PS_SKU` テンプレートを使用して[このディレクトリ](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)に Issue を開きます
@@ -30,7 +28,7 @@ SOX/監査目的のため、Zuora Billing 製品カタログへのすべての�
 2. **Non-Professional Services SKU** を**作成**または**更新**する場合:
     - `CM: Add_New_SKU` テンプレートを使用して[このディレクトリ](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)に Issue を開きます
     - このハンドブックページの [SKU の新規作成または更新方法](#how-to-create-new-or-update-a-sku) セクションの手順に従います。
-3. **既存の SKU を廃止**する場合:
+3. **既存の SKU**を**廃止**する場合:
     - `CM: Retire_SKU` テンプレートを使用して[このディレクトリ](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)に Issue を開きます
     - このハンドブックページの [SKU の廃止方法](#how-to-retire-a-sku) セクションの手順に従います
 {{% /panel %}}
@@ -38,7 +36,7 @@ SOX/監査目的のため、Zuora Billing 製品カタログへのすべての�
 
 ## SKU の新規作成または更新方法 {#how-to-create-new-or-update-a-sku}
 
-要求されている SKU の変更について情報を提供し、必要な承認を取得することはビジネススポンサーの責任です。SKU を構成する前に、SKU Issue テンプレートのステップ 1〜4 を完了して必要な承認を取得する必要があります。**Issue の右側のパネルにある `Edit` ボタンをクリックして、SKU リクエスト Issue をご自身に割り当てください。**
+要求されている SKU の変更について情報を提供し、必要な承認を取得することは Business Sponsor の責任です。SKU を構成する前に、SKU Issue テンプレートのステップ 1〜4 を完了して必要な承認を取得する必要があります。**Issue の右側のパネルにある `Edit` ボタンをクリックして、SKU リクエスト Issue をご自身に割り当てください。**
 
 一般的に、新しい SKU の作成には 6〜8 週間かかります。この期間には 4 つの主要なステップが含まれます。この[フロー](https://lucid.app/lucidchart/bc3b2fae-8007-4ecc-b246-83e078ba7b6e/edit?viewport_loc=2618%2C46%2C3328%2C1592%2C0_0&invitationId=inv_700137df-67d0-4833-a808-2ebc12d27f33)は、Enterprise Applications (Salesforce, Zuora) と CDOt（ウェブストア）で SKU を作成する手順を説明しています。これには、GitLab での機能へのカスタマーアクセスのプロビジョニングにかかる時間は含まれていません。
 
@@ -53,14 +51,14 @@ SOX/監査目的のため、Zuora Billing 製品カタログへのすべての�
 {{% /alert %}}
 
 
-## ステップ 1. SKU 要件の収集とクロスファンクショナルな承認
+## ステップ 1. SKU 要件の収集とクロスファンクショナルな承認 {#step-1-sku-requirements-gathering--cross-functional-approvals}
 
-**オーナー:** ビジネススポンサーまたは割り当てられた TPM
+**オーナー:** Business Sponsor または割り当てられた TPM
 <br>**予想所要時間:** 2〜3 週間
 
-### ステップ 1a. 製品情報
+### ステップ 1a. 製品情報 {#step-1a-product-information}
 
-このセクションでは、製品提供に関するビジネスおよびテクニカルの要件を説明します。[Product Launch Process](/handbook/product/product-processes/product-launch/) のすべての手順が完了していれば、ほとんどの質問にはすでに回答されているはずです。SKU の Issue でできる限り回答してください。
+このセクションでは、製品提供に関するビジネスおよびテクニカルの要件を説明します。[Product Launch Process](/handbook/product/product-processes/product-launch/)のすべての手順が完了していれば、ほとんどの質問にはすでに回答されているはずです。SKU の Issue でできる限り回答してください。
 
 **概要 / ビジネス要件**
 
@@ -110,7 +108,7 @@ Issue テンプレートでは、アスタリスク 3 つ（***）は「非標�
 
 
 1. `Rate Plan Name`（レートプラン名）
-    - これは SKU の顧客向け名称です。`Rate Plan Name` は `デプロイメントの種類 - 名前` の形式にする必要があります。例:
+    - これは SKU の顧客向け名称です。`Rate Plan Name` は `Deployment type - Name` の形式にする必要があります。例:
    1. `Self Managed - Ultimate`
    1. `SaaS - Ultimate`
    1. `Dedicated - Ultimate`
@@ -151,10 +149,10 @@ Issue テンプレートでは、アスタリスク 3 つ（***）は「非標�
 
 **データ要件**
 
-- [GitLab Handbook](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/) の定義に基づいて、この製品提供の Product Tier、Delivery、Deployment フィールドに関するインプットのために Israel Weeks `@iweeks` をアサインしてください
+- [GitLab ハンドブック](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)の定義に基づいて、この製品提供の Product Tier、Delivery、Deployment フィールドに関するインプットのために Israel Weeks `@iweeks` をアサインしてください
 - これは SKU の構成とデータの整合性確保のために必要です
 
-### ステップ 1b. 価格と非標準リクエストに対するクロスファンクショナルな承認
+### ステップ 1b. 価格と非標準リクエストに対するクロスファンクショナルな承認 {#step-1b-cross-functional-approval-for-pricing-and-non-standard-requests}
 
 
 {{% alert color="warning" %}}
@@ -170,7 +168,7 @@ Issue テンプレートでは、アスタリスク 3 つ（***）は「非標�
 
 **Fulfillment の承認が必要な場合:**
 
-- 提案された SKU が（セルフサービスで）顧客に販売される予定の場合
+- 提案された SKU が顧客に `Self-serve` で販売される予定の場合
 - 提案された SKU を含むサブスクリプションがセルフサービスのサブスクリプション変更（例：セルフサービスでの更新なし）に対して特定の動作をする予定の場合
 - 非標準（***）のチャージの種類、チャージモデル、チャージのタイミングのリクエスト
 - 提案された SKU が顧客（SaaS または SM）に特定の製品機能をプロビジョニングする予定の場合
@@ -182,13 +180,13 @@ Issue テンプレートでは、アスタリスク 3 つ（***）は「非標�
 - 非標準（***）のチャージの種類、チャージモデル、チャージのタイミングのリクエスト
 - `Senior Manager of Deal Desk` から承認を取得してください
 
-### ステップ 1c. 財務
+### ステップ 1c. 財務 {#step-1c-finance}
 
-**非標準の収益認識アプローチ**が必要な場合は Finance の承認が必要です。ビジネススポンサーはステップ 3 のインプットのために担当 DRI と連絡を取る必要があります。
+**非標準の収益認識アプローチ**が必要な場合は Finance の承認が必要です。Business Sponsor はステップ 3 のインプットのために担当 DRI と連絡を取る必要があります。
 
-### ステップ 1d. マネジメントの承認
+### ステップ 1d. マネジメントの承認 {#step-1d-management-approvals}
 
-ステップ 4 のマネジメント承認者に Issue をアサインします。ステップ 5 に進む前にすべての前提条件と承認が取得されていることを確認するのはビジネススポンサーの責任です。
+ステップ 4 のマネジメント承認者に Issue をアサインします。ステップ 5 に進む前にすべての前提条件と承認が取得されていることを確認するのは Business Sponsor の責任です。
 
 
 {{% alert color="warning" %}}
@@ -197,15 +195,15 @@ Issue テンプレートでは、アスタリスク 3 つ（***）は「非標�
 
 
 
-{{% panel header="**Next Steps**" header-bg="success" %}}
+{{% panel header="**次のステップ**" header-bg="success" %}}
 
-- 上記のすべてのステップが完了して必要な承認が取得されたら、~"SKU - Gathering Requirements" ラベルを削除して `@gitlab-com/business-technology/enterprise-apps/financeops` にタグを付け、SKU リクエストを Zuora Billing 製品カタログで構成して Salesforce で見積もり可能にするための受け付けと優先順位付けを行います。すべての変更は SOX/監査目的のため [Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/) に従わなければならないことに注意してください。
-- SKU がチャンネルを通じて販売される場合は、SKU を四半期更新 Issue、来季の価格表、およびその他の必要な情報に追加するために、ステップ 6 に記載されている `Sales Operations Analyst` に Issue をアサインしてください
-- SKU にサービス説明が必要な場合は、ステップ 7 を完了するのはビジネススポンサーの責任です
+- 上記のすべてのステップが完了して必要な承認が取得されたら、~"SKU - Gathering Requirements" ラベルを削除して `@gitlab-com/business-technology/enterprise-apps/financeops` にタグを付け、SKU リクエストを Zuora Billing 製品カタログで構成して Salesforce で見積もり可能にするための受け付けと優先順位付けを行います。すべての変更は SOX/監査目的のため [Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/)に従わなければならないことに注意してください。
+- SKU がチャネルを通じて販売される場合は、SKU を四半期更新 Issue、来季の価格表、およびその他の必要な情報に追加するために、ステップ 6 に記載されている `Sales Operations Analyst` に Issue をアサインしてください
+- SKU にサービス説明が必要な場合は、ステップ 7 を完了するのは Business Sponsor の責任です
 {{% /panel %}}
 
 
-## ステップ 2: SKU ビルドとテストデータ生成
+## ステップ 2: SKU ビルドとテストデータ生成 {#step-2-sku-build--test-generation-data}
 
 **オーナー:** Enterprise Applications
 <br>**予想所要時間:** 2〜3 週間
@@ -214,12 +212,12 @@ Enterprise Applications とシステムチームが test1 のステージング�
 
 Enterprise Applications は承認されたテストケースに基づいて、ユーザー受け入れテストで使用するテストデータを生成します。
 
-## ステップ 3: ユーザー受け入れテストとクロスファンクショナルな承認
+## ステップ 3: ユーザー受け入れテストとクロスファンクショナルな承認 {#step-3-user-acceptance-testing--cross-functional-approvals}
 
-**オーナー:** ビジネススポンサーまたは割り当てられた TPM
+**オーナー:** Business Sponsor または割り当てられた TPM
 <br>**予想所要時間:** テストケース生成と承認に 1 週間（SKU ビルドと並行して実施可能）。テストとサインオフに 2 週間
 
-### ステップ 3a. UAT Issue の作成
+### ステップ 3a. UAT Issue の作成 {#step-3a-create-the-uat-issue}
 
 [このディレクトリ](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=SKU-UAT-template)に UAT Issue テンプレートがあります。Issue を開き `SKU UAT template` を使用してください。
 
@@ -231,7 +229,7 @@ Enterprise Applications は承認されたテストケースに基づいて、�
   - このセクションは UAT テストの[タイムライン]を概説するために使用されます
 - *Test Case Readiness（テストケースの準備状況）*
   - このセクションは以下の目的で使用されます:
-    - マスタースプレッドシートのコピーを作成し、このセクションのリンクを Issue に貼り付けます
+    - マスタースプレッドシートのコピーを作成し、このスプレッドシートへのリンクを Issue のこのセクションに貼り付けます
     - すべての DRI がテストケースを承認していることを確認します
 - *System Readiness（システムの準備状況）*
   - Enterprise Apps と Fulfillment が完了するセクション
@@ -262,7 +260,7 @@ Enterprise Applications は承認されたテストケースに基づいて、�
 **Final Testing Sign Off（最終テストサインオフ）**
 <br> このセクションはテストに参加したクロスファンクショナルチームからの最終サインオフを受け取るために使用されます
 
-### ステップ 3b: UAT タイムラインの見積もり
+### ステップ 3b: UAT タイムラインの見積もり {#step-3b-estimate-the-uat-timeline}
 
 [Testing DRIs] によって承認される必要がある重要な日付とタイミングがいくつかあります:
 
@@ -280,7 +278,7 @@ Enterprise Applications は承認されたテストケースに基づいて、�
 - すべての [Testing DRIs]
 - Enterprise Applications の Caroline Swanson
 
-### ステップ 3c: UAT テストケースのドラフト作成
+### ステップ 3c: UAT テストケースのドラフト作成 {#step-3c-create-draft-of-uat-test-cases}
 
 - [マスタースプレッドシート](https://docs.google.com/spreadsheets/d/1awATKGhVKLRh3LpyVllCnCQYsV4vjakoijsW5K8dY_4/edit?gid=2069598564#gid=2069598564)のコピーを作成します
 - スプレッドシートの列 A から J に入力します
@@ -318,7 +316,7 @@ Enterprise Applications は承認されたテストケースに基づいて、�
 
 すべての取引シナリオをテストする必要はありません。Jesse Rabbits が初期テストケースの検証と追加に協力できます。
 
-### ステップ 3d: ビジネスオーナーシップの割り当てとタイミングおよびテストケースの承認取得
+### ステップ 3d: ビジネスオーナーシップの割り当てとタイミングおよびテストケースの承認取得 {#step-3d-assign-business-ownership-and-get-timing--test-case-approval}
 
 Issue の [Testing DRIs] セクションに記載されている担当者をアサインします
 
@@ -328,7 +326,7 @@ Issue の [Testing DRIs] セクションに記載されている担当者をア�
 - チームが上記のタイムライン調整で定められたテスト可能期間にテストを実施できること
 - テスト対象のテストケースを承認していること
 
-### ステップ 3e: UAT の実施とバグ/Issue の追跡
+### ステップ 3e: UAT の実施とバグ/Issue の追跡 {#step-3e-conduct-uat-and-track-bugsissues}
 
 承認されたタイミングの日付に、概説された [Testing DRIs] が承認されたテストケースのテストケースを実施します
 
@@ -336,13 +334,13 @@ Testing DRIs は UAT Issue を使用して特定されたバグや問題を報�
 
 ほとんどのバグ修正は Testing DRI と Enterprise Applications の間で実施されます。
 
-### ステップ 3f: UAT の完了とクロスファンクショナルな承認
+### ステップ 3f: UAT の完了とクロスファンクショナルな承認 {#step-3f-complete-uat-and-cross-functional-approvals}
 
 すべての [Testing DRIs] が Issue で最終サインオフと承認を行う必要があります。
 
 完了後、UAT は完了とみなされます
 
-## ステップ 4: Enterprise Applications への SKU デプロイ
+## ステップ 4: Enterprise Applications への SKU デプロイ {#step-4-sku-deployment-to-enterprise-applications}
 
 **オーナー:** Enterprise Applications
 <br>**予想所要時間:** 2〜3 日
@@ -355,7 +353,7 @@ SKU は常に水曜日にデプロイされます
 
 このセクションでは、SKU が Zuora Billing で構成された後に変更できる情報とできない情報を概説します。
 
-### 変更可能な情報
+### 変更可能な情報 {#modifiable-information}
 
 1. 価格
 2. 名前（Product、Product Rate Plan、Product Rate Plan Charge）
@@ -364,13 +362,13 @@ SKU は常に水曜日にデプロイされます
 5. 測定単位
 6. 税コード
 
-### 変更できない情報
+### 変更できない情報 {#information-that-cannot-be-modified}
 
-1. Zuora IDs（Fulfillment とデータが使用するため）
+1. Zuora IDs（Fulfillment と Data が使用するため）
 2. チャージの種類（1 回限り、定期、使用量）
 3. チャージモデル（均一料金、単価制）
 
-### 変更しないことが推奨される情報
+### 変更しないことが推奨される情報 {#information-advised-not-to-change}
 
 1. **Rate Plan あたりのチャージ数。**
     - 例えば、Rate Plan あたり 2 つのチャージ（ライセンスとサービス）がある場合、この Rate Plan にさらにチャージ（例えばストレージ）を追加することは推奨されません
@@ -380,11 +378,11 @@ SKU は常に水曜日にデプロイされます
 
 
 {{% alert color="warning" %}}
-各ステップを進める前に、SKU 廃止プロセスの各ステップで情報を提供し、必要な承認が取得されていることを確認するのはビジネススポンサーの責任です。フィールドが欠けていたり不完全な場合は、SKU 廃止リクエストのレビューおよび/または承認に遅延が生じます。**Issue の右側のパネルにある `Edit` ボタンをクリックして、SKU リクエスト Issue をご自身に割り当ててください。**
+各ステップを進める前に、SKU 廃止プロセスの各ステップで情報を提供し、必要な承認が取得されていることを確認するのは Business Sponsor の責任です。フィールドが欠けていたり不完全な場合は、SKU 廃止リクエストのレビューおよび/または承認に遅延が生じます。**Issue の右側のパネルにある `Edit` ボタンをクリックして、SKU リクエスト Issue をご自身に割り当ててください。**
 {{% /alert %}}
 
 
-### ステップ 1. 製品情報
+### ステップ 1. 製品情報 {#step-1-product-information}
 
 **廃止する Rate Plan の特定**
 
@@ -393,9 +391,9 @@ SKU は常に水曜日にデプロイされます
 **SKU の廃止予定日**
 
 - 新しい SKU が廃止される予定の具体的な日付を指定してください。
-- これはリクエストの受け付けと優先順位付けに役立つものであり、必ずしも SKU がその日付までに廃止されることを意味しないことに注意してください。
+- これはリクエストの受け付けと優先順位付けに役立つものであり、必ずしも SKU がその日付までに販売可能になることを意味しないことに注意してください。
 
-### ステップ 2. SKU 廃止のステークホルダー承認
+### ステップ 2. SKU 廃止のステークホルダー承認 {#step-2-stakeholder-approval-for-sku-retiring}
 
 
 {{% alert color="warning" %}}
@@ -414,31 +412,31 @@ SKU は常に水曜日にデプロイされます
 - Sales Operations については、`Senior Manager of Deal Desk` をタグ付けしてください
 - Finance については、`Senior Director of Revenue Accounting` をタグ付けしてください
 
-### ステップ 3. Business Technology が Zuora と Salesforce で SKU を廃止する
+### ステップ 3. Business Technology が Zuora と Salesforce で SKU を廃止する {#step-3-business-technology-to-retire-sku-in-zuora--salesforce}
 
 上記のすべてのステップが完了して必要な承認が取得されたら、~"SKU - Gathering Requirements" ラベルを削除して `@gitlab-com/business-technology/enterprise-apps/financeops` にタグを付け、SKU 廃止リクエストを Zuora Billing 製品カタログで廃止して Salesforce での見積もりができないようにするための受け付けと優先順位付けを行ってください。
 
 
 {{% alert color="warning" %}}
-すべての変更は SOX/監査目的のため [Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/) に従わなければならないことに注意してください。
+すべての変更は SOX/監査目的のため [Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/)に従わなければならないことに注意してください。
 {{% /alert %}}
 
 
-## FAQ
+## FAQ {#faq}
 
 1. **SKU の作成にはどのくらいの時間がかかりますか？**
     - SKU の作成と見積もり可能になるまでにかかる時間には複数の要因が影響します
-    - ビジネス要件が明確でない場合は時間が大幅に増加するため、新しいまたは更新された SKU の Issue を申請する前に [Product Launch Process](/handbook/product/product-processes/product-launch/) のすべての手順を完了する必要があります。
-    - SKU の複雑さ（チャージの種類、販売方法、ガイデッドセリングルール/制限など）、ビジネススポンサーのステークホルダーからの承認取得能力、および SKU をサポートするために必要なその他の開発作業がデリバリー時間に影響する追加要因です。
+    - ビジネス要件が明確でない場合は時間が大幅に増加するため、新しいまたは更新された SKU の Issue を申請する前に [Product Launch Process](/handbook/product/product-processes/product-launch/)のすべての手順を完了する必要があります。
+    - SKU の複雑さ（チャージの種類、販売方法、ガイデッドセリングルール/制限など）、Business Sponsor のステークホルダーからの承認取得能力、および SKU をサポートするために必要なその他の開発作業がデリバリー時間に影響する追加要因です。
 2. **非標準リクエストとは何ですか？**
     - GitLab が通常サポートしていない/過去にサポートしていない SKU 構成であり、SKU プロセスのステップ 1 製品情報でアスタリスク 3 つ（***）でマークされます。
 3. **新しい SKU リクエストの承認取得は誰の責任ですか？**
-    - SKU プロセスの各ステップで、すべての必要な情報と適切な承認が事前に取得されていることを確認するのはビジネススポンサーの責任です。
+    - SKU プロセスの各ステップで、すべての必要な情報と適切な承認が事前に取得されていることを確認するのは Business Sponsor の責任です。
 4. **このハンドブックページに記載されている Issue テンプレートはどこで見つけられますか？**
     - リクエストを記録するためにユーザーが選択できる 3 つの Issue テンプレートがこの[ディレクトリ](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)にあります。
 5. **SKU が稼働した後に変更できる情報は何ですか？**
     - このハンドブックページの[本番稼働後の SKU 変更](#post-go-live-sku-modifications)セクションをご参照ください
 6. **本番環境で SKU を直接構成してサンドボックスをスキップできますか？**
-    - 残念ながら、できません。SOX/監査目的のため、Zuora Billing 製品カタログへのすべての変更は、[Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/) のポリシーおよび [Software Development Lifecycle Process for Finance Systems](https://gitlab.com/groups/gitlab-com/business-technology/enterprise-apps/financeops/-/wikis/SDLC-for-Finance-Systems) に準拠して適切にテストされなければなりません。
+    - 残念ながら、できません。SOX/監査目的のため、Zuora Billing 製品カタログへのすべての変更は、[Business Technology Change Management](https://internal.gitlab.com/handbook/IT/it-change-management/)のポリシーおよび [Software Development Lifecycle Process for Finance Systems](https://gitlab.com/groups/gitlab-com/business-technology/enterprise-apps/financeops/-/wikis/SDLC-for-Finance-Systems)に準拠して適切にテストされなければなりません。
 7. **既存の SKU の名前/説明だけを更新したい場合、このプロセス全体を経る必要がありますか？**
     - チャージの種類、測定単位、チャージモデル、チャージのタイミング、または定価を変更しない場合は、`CM: Configuration Change [Generic]` テンプレートを使用して[このディレクトリ](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/financeops/finance-systems/-/issues/new#)に Issue を提出し、`Requestor` セクションに入力するだけで構いません。

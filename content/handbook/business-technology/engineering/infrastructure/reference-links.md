@@ -2,18 +2,16 @@
 title: "インフラ参照リンク"
 description: "このページはインフラチームに役立つリンクと参考資料を提供します。"
 upstream_path: /handbook/business-technology/engineering/infrastructure/reference-links/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T08:00:00Z"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:18:46.379546+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## マイルストーン {#milestones}
 
-## マイルストーン
-
-各 Issue とエピックは、作業の大部分が行われる期間のマイルストーンにマッピングされます。これは軽量版の工数追跡と容量計画として使用され、ロードマップ計画に役立ちます。
+各 Issue とエピックは、作業の大部分が行われる期間のマイルストーンにマッピングされます。これは軽量版の工数追跡とキャパシティ計画として使用され、ロードマップ計画に役立ちます。
 
 - 月次マイルストーン
   - [BT Infra 2021-07](https://gitlab.com/groups/gitlab-com/business-technology/engineering/infrastructure/-/milestones/2)
@@ -31,13 +29,13 @@ lastmod: "2024-06-27T22:14:31+00:00"
   - [BT Infra FY23-1H](https://gitlab.com/groups/gitlab-com/business-technology/engineering/infrastructure/-/milestones/11)
   - [BT Infra FY23-2H](https://gitlab.com/groups/gitlab-com/business-technology/engineering/infrastructure/-/milestones/12)
 
-## リポジトリ
+## リポジトリ {#repositories}
 
-- [gitlab.com/gitlab-com/business-technology/engineering/infrastructure](https://gitlab.com/gitlab-com/business-technology/engineering/infrastructure) - 機密情報を含まない Business Technology Engineering Infrastructure のすべてのリポジトリを含むグループ（機密情報は [ops.gitlab.net](https://ops.gitlab.net) にホストされる必要があります）。
+- [gitlab.com/gitlab-com/business-technology/engineering/infrastructure](https://gitlab.com/gitlab-com/business-technology/engineering/infrastructure) - 機密情報を含まない Business Technology Engineering Infrastructure のすべてのリポジトリを含むグループ（機密情報は [ops.gitlab.net](https://ops.gitlab.net)にホストされる必要があります）。
 
-## ラベルとタグ
+## ラベルとタグ {#labels-and-tags}
 
-### Issue タイプ
+### Issue タイプ {#issue-types}
 
 これらのラベルの Issue は [BT Eng Infra - Issue Types](https://gitlab.com/groups/gitlab-com/-/boards/2870859) Issue ボードで確認できます。
 
@@ -137,7 +135,7 @@ lastmod: "2024-06-27T22:14:31+00:00"
 </tr>
 </table>
 
-### マネージドサービス
+### マネージドサービス {#managed-services}
 
 これらのラベルの Issue は [BT Eng Infra - Managed Services](https://gitlab.com/groups/gitlab-com/-/boards/2871346) Issue ボードで確認できます。
 

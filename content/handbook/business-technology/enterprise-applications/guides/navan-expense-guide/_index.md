@@ -2,20 +2,18 @@
 title: "Navan Expense エンドユーザーガイド"
 description: "Navan Expense エンドユーザーガイド"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/"
-upstream_sha: "3a8f3c9997d6eac836605048b675b20b63850604"
-translated_at: "2026-09-13T21:08:19+00:00"
+upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
+translated_at: "2026-11-04T21:13:40.134153+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## Navan Expense とは
+## Navan Expense とは {#what-is-navan-expense}
 
 Navan Expense は、出張中の経費管理を改善する経費・支払いプラットフォームです。
 
-### Navan Expense へのアクセス方法
+### Navan Expense へのアクセス方法 {#how-to-access-navan-expense}
 
 **ブラウザ**
 
@@ -44,21 +42,20 @@ Navan Expense は Okta 経由でアクセスできます。プラットフォー
 ![navan-image-22](/images/business-technology/enterprise-applications/guides/navan-expense-guide/okta.jpg)
 
 
-{{% alert title="Note" color="info" %}}
-**Note**
-*TripActions Liquid* アプリをお持ちの場合は、デバイスから削除してください。
+{{% alert title="注意" color="info" %}}
+*TripActions Liquid* アプリをお持ちの場合は、デバイスから削除できます。
 {{% /alert %}}
 
 
 > モバイルアプリの使い方の詳細については、*[Getting started with Navan expense on mobile](https://app.navan.com/app/helpcenter/articles/expense/myself/getting-started-for-expense-users/navan-expense-on-mobile)* の記事をご確認ください。
 
-## Navan Expense - はじめに
+## Navan Expense - はじめに {#navan-expense---getting-started}
 
-### モバイルでの Navan Expense
+### モバイルでの Navan Expense {#navan-expense-on-mobile}
 
 モバイルアプリは `My reimbursements`（払い戻し管理）、`My cards`（カード管理）、`My policies`（ポリシー管理）、`My transactions`（取引管理）の 4 つのメインセクションで構成されています。注意が必要なトランザクション（レシートの追加など）は、画面上部の `To dos` セクションに表示されます。右上のバッジから Navan プロフィールにアクセスして、払い戻し用の個人カードやカレンダー連携を管理できます。
 
-#### My reimbursements（払い戻し管理）
+#### My reimbursements（払い戻し管理） {#my-reimbursements}
 
 現金で支払いまたは個人カードで請求された業務上の取引を Navan モバイルアプリから払い戻し申請として登録します。このフォルダを使って、払い戻し申請中のトランザクションを追跡します。
 
@@ -69,19 +66,19 @@ Navan Expense は Okta 経由でアクセスできます。プラットフォー
 
 ![liquid-image-14](/images/business-technology/enterprise-applications/guides/navan-expense-guide/reimbursement-process.png)
 
-#### My policies（ポリシー管理）
+#### My policies（ポリシー管理） {#my-policies}
 
-ポリシータブでは、経費の種類別に割り当てられたポリシーの概要を確認できます。このセクションは Finance チームが割り当てた特定のポリシーに基づいてカスタマイズされるため、ユーザーによって表示内容が異なります。
+ポリシータブでは、経費の種類別に割り当てられたポリシーの概要を確認できます。このセクションは Finance チームが割り当てた特定のポリシーに基づいてカスタマイズされます。ユーザーには、想定される支出と役割に応じて異なるポリシーが割り当てられます。
 
 ![liquid-image-23](/images/business-technology/enterprise-applications/guides/navan-expense-guide/policies.png)
 
-#### My transactions（取引管理）
+#### My transactions（取引管理） {#my-transactions}
 
-Navan Expense の 4 種類のトランザクションは、`My transactions` セクション内のフォルダに整理されています: `Drafts`（下書き）、`Navan card`（該当する場合）、`Purchase cards`（該当する場合）、`Manual`（手動）。設定によっては、これらの種類の一部またはすべてがタブの下に表示されます。
+Navan Expense の 4 種類のトランザクションは、My transactions セクション内のフォルダに整理されています: `Drafts`（下書き）、`Navan card`（該当する場合）、`Purchase cards`（該当する場合）、`Manual`（手動）。設定によっては、これらの種類の一部またはすべてがタブの下に表示されます。
 
 ![liquid-image-24](/images/business-technology/enterprise-applications/guides/navan-expense-guide/transactions.png)
 
-#### To dos（要対応）
+#### To dos（要対応） {#to-dos}
 
 トランザクションに注意や追加対応が必要な場合、`To dos` セクションの以下のカテゴリのいずれかに配置されます:
 
@@ -91,7 +88,7 @@ Navan Expense の 4 種類のトランザクションは、`My transactions` セ
 - **Needs your review（確認が必要）**: 会社の管理者が設定したカスタムフィールドへの入力が必要な、Navan カードによるトランザクション。
 - **Drafts（下書き）**: Navan にインポートされたレシートや、下書きとして保存された手動経費は、申請準備ができるまで保存されます。
 
-#### Profile（プロフィール）
+#### Profile（プロフィール） {#profile}
 
 アプリ右上の `Profile` アイコンをタップし、`Expense settings` を選択してプロフィールにアクセスします。このページから以下の機能を管理できます:
 
@@ -102,17 +99,17 @@ Navan Expense の 4 種類のトランザクションは、`My transactions` セ
 
 > モバイルアプリの使い方については、*[Getting started with Navan expense on mobile](https://app.navan.com/app/helpcenter/articles/expense/myself/getting-started-for-expense-users/navan-expense-on-mobile)* の記事をご確認ください。
 
-### Web での Navan Expense
+### Web での Navan Expense {#navan-expense-on-the-web}
 
 ウェブブラウザから Navan アカウントにサインインし、左側の `Navan Expense` タブをクリックし、Expense セクションの `Expense` を選択します。Navan Expense ウェブアプリには 3 つの主要コンポーネントがあります: `Transactions`（すべて、To-do、My money、Drafts）、`Cards`、`Settings`。
 
 ![liquid-image-25](/images/business-technology/enterprise-applications/guides/navan-expense-guide/components.png)
 
-#### Transactions（All）
+#### Transactions（All） {#transactions-all}
 
 `All` タブで、手動追加トランザクション、Navan カードトランザクション、購買カードトランザクションをすべて表示・管理します。各トランザクションには加盟店名、金額、取引日、ステータスが表示されます。トランザクションをクリックすると、詳細の確認、編集可能なフィールドの変更、または経費のステータスに応じたアクションを実行できます。対応が必要なトランザクションは To-do タブにも分類されます。
 
-#### Transactions（To-do）
+#### Transactions（To-do） {#transactions-to-do}
 
 To-do タブには、追加情報またはアクションが必要なトランザクションが表示されます。以下の各カテゴリの横にある下矢印をクリックして関連するトランザクションを表示します:
 
@@ -121,7 +118,7 @@ To-do タブには、追加情報またはアクションが必要なトラン�
 - Add more information（追加情報が必要）: このセクションのトランザクションはポリシー外であり、承認者が承認または却下する前に追加情報の提供を求めています。「Add information」をクリックして情報を入力し、「Submit」をクリックします。
 - Needs more information（さらなる情報が必要）: このセクションのトランザクションは、Finance チームから要求された追加のトランザクション詳細の入力が必要です。トランザクションを選択し、不足している情報を入力します。
 
-#### Transactions（My money）
+#### Transactions（My money） {#transactions-my-money}
 
 `My money` タブでは、トランザクションをステータスに基づいてカテゴリにグループ化し、更新を追跡できます。各カテゴリの横にある下矢印をクリックして関連するトランザクションを表示します。
 
@@ -130,26 +127,25 @@ To-do タブには、追加情報またはアクションが必要なトラン�
 - **Deposited（振込済み）**: 振り込まれたトランザクションと振込日。
 - **Rejected（却下済み）**: 承認者によって却下されたトランザクション。
 
-#### Transactions（Drafts）
+#### Transactions（Drafts） {#transactions-drafts}
 
 `Drafts` タブには、レシート転送またはまだ申請されていない手動トランザクションから作成されたトランザクションが含まれます。トランザクションを選択して確認し、不足している詳細やレシートを追加してから申請するか、後で保存します。
 
-#### ウェブアプリでの手動経費の申請
+#### ウェブアプリでの手動経費の申請 {#submitting-a-manual-expense-in-the-web-app}
 
 `Transactions` ページのいずれかのタブから `Add transaction` ボタンを使用して、現金または個人カードを使用した購入のトランザクションを手動で入力します。
 
 
-{{% alert title="Note" color="info" %}}
-**Note**
+{{% alert title="注意" color="info" %}}
 トランザクション詳細を手動で入力する代わりに個人カードから手動経費をインポートするには、Navan アプリをご利用ください。
 {{% /alert %}}
 
 
-#### Cards（カード）
+#### Cards（カード） {#cards}
 
 `Cards` セクションで Navan カードと購買カードを管理します。`Navan card` の画像をクリックするか、リストから `purchase card`（購買カード）を選択してその設定を管理します。各カードについて、カード情報と関連するトランザクション（対応が必要なトランザクションのセクションを含む）が表示される新しいページに移動します。
 
-#### Settings（設定）
+#### Settings（設定） {#settings}
 
 設定タブを使用して、カレンダー連携で業務カレンダーを接続したり、承認された手動トランザクションの払い戻しを受け取るための銀行口座を追加したりします。
 
@@ -158,24 +154,24 @@ To-do タブには、追加情報またはアクションが必要なトラン�
 - **Personal bank account（個人銀行口座）**: 個人銀行口座を連携して、承認された手動トランザクション（自己負担経費）の払い戻しを受け取ります。
 - **Call or Email support（電話またはメールサポート）**: 電話またはメールでサポートエージェントにすばやく連絡できます。
 
-#### Support（サポート）
+#### Support（サポート） {#support}
 
 Navan アカウント、カード、トランザクションについてご質問やサポートが必要な場合は、ウェブアプリのいずれかのページからサポートをクリックしてチームにお問い合わせください。
 
 > Navan を Web で使用する方法については、*[How do I use Navan Expense on the web?](https://app.navan.com/app/helpcenter/articles/expense/myself/getting-started-for-expense-users/navan-expense-on-the-web)* の記事をご確認ください。
 
-### Navan Expense への個人銀行情報の連携方法
+### Navan Expense への個人銀行情報の連携方法 {#how-to-connect-my-personal-banking-details-to-navan-expense}
 
 個人銀行口座または個人カードを Navan に連携することで、手動経費の申請、自己負担経費の払い戻し、および会社への返金を簡単に行えます。
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
 
 - 個人銀行口座が接続できない場合は、GitLab の通常の給与計算プロセスに従って払い戻しが行われます。
 {{% /panel %}}
 
 
-#### トランザクションのインポート
+#### トランザクションのインポート {#importing-transactions}
 
 米国発行の個人カードをお持ちのユーザーは、カードを Navan アカウントに連携して自己負担経費のトランザクションをインポートできます。個人カードを追加すると、カードで行ったトランザクションを確認してインポートできます。インポート用にカードを連携するには:
 
@@ -184,7 +180,7 @@ Navan アカウント、カード、トランザクションについてご質�
 3. `Personal cards` を選択します。
 4. `For importing transactions` セクションの `+Add account` をタップし、案内に従って操作します。
 
-#### 払い戻し用の銀行口座の接続
+#### 払い戻し用の銀行口座の接続 {#connecting-your-bank-account-for-reimbursements}
 
 銀行口座を Navan に接続して、自己負担経費の払い戻しを受け取ります。銀行口座は [Plaid](https://plaid.com/en-eu/)（米国の銀行口座のみ）経由で銀行アカウントのログイン情報を入力して連携できます。また、米国の銀行口座および[直接払い戻しが可能な国](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/#in-what-countries-are-direct-reimbursements-available)の口座は、銀行口座情報を手動で入力することで連携できます。
 
@@ -199,7 +195,7 @@ Navan アカウント、カード、トランザクションについてご質�
 {{% /alert %}}
 
 
-##### モバイルアプリ
+##### モバイルアプリ {#in-the-mobile-app}
 
 **銀行口座へのログイン**
 
@@ -218,7 +214,7 @@ Navan アカウント、カード、トランザクションについてご質�
 5. 必要な銀行口座情報を入力します。
 6. `Review` をタップし、`Link account` をタップして接続を承認します。
 
-##### ウェブアプリ
+##### ウェブアプリ {#in-the-web-app}
 
 1. メニューを開き、`Expenses` を選択します。
 2. `Settings` を選択します。
@@ -229,7 +225,7 @@ Navan アカウント、カード、トランザクションについてご質�
 
 > カードまたは口座の接続方法については、*[How do I connect my personal banking information to Navan Expense?](https://app.navan.com/app/helpcenter/articles/expense/myself/getting-started-for-expense-users/connect-personal-banking)* の記事をご確認ください。
 
-### 自己負担経費の払い戻しを受ける方法
+### 自己負担経費の払い戻しを受ける方法 {#how-to-get-reimbursed-for-out-of-pocket-spend}
 
 現金で支払いまたは個人カードで請求された業務上のトランザクションを Navan モバイルアプリから登録して払い戻しを受けます。「手動経費」として知られるこれらのトランザクションは、割り当てられたポリシーに準拠していれば自動的に払い戻し承認されます。割り当てられたポリシーの範囲外のトランザクションは、会社の管理者チームによるレビューのために申請されます。
 
@@ -242,22 +238,21 @@ Navan アカウント、カード、トランザクションについてご質�
 - **Receipt Import（レシートインポート）**: レシートのコピーを Navan（*receipts@navan.com*）にメールで送ると、既存の Navan Expense トランザクションに自動的に添付されるか、トランザクションの下書きとして作成されます。
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
 
-- レシートは GitLab のメールアドレスから *receipts@navan.com* に転送する必要があります。メール送信後、レシートは数分から数時間以内に表示されます。
+- Navan Expense アカウントに添付されるよう、レシートは GitLab のメールアドレスから *receipts@navan.com* に転送する必要があります。メール送信後、レシートは数分から数時間以内に表示されます。
 {{% /panel %}}
 
 
 <br>
 
 
-{{% alert title="Tip" color="info" %}}
-**Tip**
+{{% alert title="ヒント" color="info" %}}
 手動経費を入力中に `Save & close` をタップすると、トランザクションを下書きとして保存できます。下書きは `Drafts` フォルダに保存され、申請または削除するまでいつでもアクセスして変更できます。
 {{% /alert %}}
 
 
-#### Receipt Scanner（レシートスキャナー）
+#### Receipt Scanner（レシートスキャナー） {#receipt-scanner}
 
 レシートをアップロードするには、`+New transaction` をタップし、`Scan a receipt` をタップします。レシートの写真を撮影またはアップロードします。同じトランザクションに複数のレシートをアップロードする方法については、*[How to attach multiple receipts to the same transaction](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/#how-to-attach-multiple-receipts-to-the-same-transaction)* セクションをご確認ください。
 
@@ -266,48 +261,46 @@ Navan アカウント、カード、トランザクションについてご質�
 ![liquid-image-11](/images/business-technology/enterprise-applications/guides/navan-expense-guide/receipt-scanner.png)
 
 
-{{% alert title="Note" color="warning" %}}
-**Note**
+{{% alert title="注意" color="warning" %}}
 レシートの写真を撮影または保存した写真にアクセスするには、Navan Expense アプリにスマートフォンのカメラまたはカメラロールへのアクセスを許可する必要があります。
 {{% /alert %}}
 
 
-#### Import from Personal Card（個人カードからのインポート）（米国の銀行口座を持つユーザーのみ）
+#### Import from Personal Card（個人カードからのインポート）（米国の銀行口座を持つユーザーのみ） {#import-from-personal-card-for-united-states-based-bank-account-only}
 
 個人カードで請求された業務上のトランザクションの払い戻しを受けるには、`+New transaction` をタップして `Import from personal card` を選択します。個人カードを事前に連携していない場合は、詳細な手順について *[How to connect my personal banking details to Navan Expense](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/#how-to-connect-my-personal-banking-details-to-navan-expense)* セクションをご確認ください。カードが連携されたら、`Import and submit` 画面に表示されるトランザクションから選択して払い戻しを申請します。
 
 ![liquid-image-12](/images/business-technology/enterprise-applications/guides/navan-expense-guide/import.png)
 
 
-{{% alert title="Tip" color="info" %}}
-**Tip**
+{{% alert title="ヒント" color="info" %}}
 最近 Navan で予約した出張があり、出張関連の経費の払い戻しを希望する場合は、`View by trips` をオンにして、出張期間中のトランザクションのみを表示します。
 {{% /alert %}}
 
 
-#### Type in details（詳細を手動入力）
+#### Type in details（詳細を手動入力） {#type-in-details}
 
 個人カードをプロフィールに連携していない場合、またはレシートを紛失したり受け取れなかった場合は、`+New transaction` をタップし、`Type in details` を選択して経費の詳細を入力します。レシートなしでは経費が払い戻し承認されない場合があるため、レシートを申請する必要があることに注意してください。
 
 ![liquid-image-13](/images/business-technology/enterprise-applications/guides/navan-expense-guide/manually-type.png)
 
-#### Receipt Import（レシートインポート）
+#### Receipt Import（レシートインポート） {#receipt-import}
 
 レシートを転送してトランザクションを照合し、トランザクション詳細を自動入力することで手動経費の申請プロセスを簡略化します。Navan に送られたレシートはインポートされて分析されるため、トランザクションの詳細を確認して申請するだけで済みます。
 
 > 手動トランザクションを申請する方法の詳細については、*[How can I get reimbursed for out-of-pocket spend?](https://app.navan.com/app/helpcenter/articles/expense/myself/submitting-expenses/submitting-manual-transaction)* の記事をご確認ください。
 
-#### Reimbursement Process（払い戻しプロセス）
+#### Reimbursement Process（払い戻しプロセス） {#reimbursement-process}
 
-払い戻し申請されたトランザクションは `My reimbursements` フォルダから追跡できます。`Submitted（申請済み）、Scheduled（予定済み）、Deposited（振込済み）、Rejected（却下済み）` の 4 つのカテゴリに分類されます。個人銀行口座をプロフィールに連携している場合は、手動経費が承認されると直接振込で払い戻しを受け取れます。個人銀行口座が連携されていない場合は、GitLab の通常の給与計算プロセスに従って払い戻しが行われます。
+払い戻し申請されたトランザクションは `My reimbursements` フォルダから追跡できます。`Submitted, Scheduled, Deposited, and Rejected` の 4 つのカテゴリに分類されます。個人銀行口座をプロフィールに連携している場合は、手動経費が承認されると直接振込で払い戻しを受け取れます。個人銀行口座が連携されていない場合は、GitLab の通常の給与計算プロセスに従って払い戻しが行われます。
 
 > 詳細については、*[My reimbursements](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/#my-reimbursements)* セクションをご確認ください。
 
-### トランザクション詳細の変更または追加方法
+### トランザクション詳細の変更または追加方法 {#how-to-modify-or-add-transaction-details}
 
 Navan Expense のトランザクションを変更して、レシートの追加、関連出張の紐付け、経費の種類の変更、参加者の追加などの詳細情報を提供します。これには、トランザクションの下書き、レビュー保留中の申請済み経費、または会社の Expense 管理者から追加情報を求められた場合が含まれます。
 
-#### トランザクション詳細へのアクセス
+#### トランザクション詳細へのアクセス {#accessing-transactions-details}
 
 トランザクションはトランザクションの種類に基づいてフォルダに整理されます。フォルダを選択して該当するトランザクションをすべて表示し、以下の手順に従ってトランザクションの詳細を変更するトランザクションを選択します:
 
@@ -319,13 +312,13 @@ Navan Expense のトランザクションを変更して、レシートの追加
   - **Purchase cards（購買カード）**: 購買カードで請求されたトランザクション。
 - 変更または取り消したいトランザクションを選択し、以下に示すいずれかの変更を行います。
 
-#### レシートの追加
+#### レシートの追加 {#add-a-receipt}
 
 割り当てられたポリシーによっては、経費にレシートのコピーを添付することが求められる場合があります。最初にトランザクションを申請した際にレシートを提出しなかった場合は、任意のトランザクション詳細ページの下部にスクロールし、`Receipt` セクションの `Add` を選択することでレシートを追加できます。
 
 > 同じトランザクションに複数のレシートをアップロードする方法については、*[How to attach multiple receipts to the same transaction](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/#how-to-attach-multiple-receipts-to-the-same-transaction)* セクションをご確認ください。
 
-#### 参加者の追加
+#### 参加者の追加 {#add-participants}
 
 参加者は特定の種類のトランザクションに追加して、支出に関する追加のコンテキストを会社の管理者やマネージャーに提供できます。たとえば、チームイベント、食事、または複数の乗客がいたため高コストが正当化できる UberXL のトランザクションに参加者情報を追加することができます。参加者を追加するには:
 
@@ -338,7 +331,7 @@ Navan Expense のトランザクションを変更して、レシートの追加
 
 ![liquid-image-1](/images/business-technology/enterprise-applications/guides/navan-expense-guide/add-participants.png)
 
-#### 経費の種類の変更
+#### 経費の種類の変更 {#change-expense-type}
 
 Navan カードで請求されたトランザクションの経費の種類は、カードが使用された加盟店に基づいて自動的に割り当てられます。ただし、トランザクションが正しい経費の種類に割り当てられていることを確認する必要があります。間違った経費の種類で経費を申請すると、承認者によってトランザクションがレビューのためにフラグが立てられる場合があります。その後、承認者はトランザクションをそのまま承認するか、または正しい経費カテゴリを割り当てるためにあなたに差し戻すかを決定します。別の経費の種類にトランザクションを再割り当てする必要がある場合は、以下の手順に従ってください:
 
@@ -346,7 +339,7 @@ Navan カードで請求されたトランザクションの経費の種類は�
 - Navan が推奨カテゴリのリストを提供します。または `all expense types`（すべての経費の種類）のリストから選択できます。
 - `Save` をタップして変更を保存します。
 
-#### 総勘定元帳（GL）コードの追加または編集
+#### 総勘定元帳（GL）コードの追加または編集 {#add-or-edit-a-general-ledger-gl-code}
 
 GitLab は GL コードを使用して、特定の種類の経費の支出を対応付け・追跡します。システム管理者がトランザクションに関連する GL コードを追加または編集する権限を付与している場合、（手動/自己負担経費の）トランザクションを申請する際にそれを行うことができます。GL コードを追加または編集するには、該当するトランザクションを見つけて以下の手順に従ってください:
 
@@ -357,7 +350,7 @@ GitLab は GL コードを使用して、特定の種類の経費の支出を対
 
 ![liquid-image-3](/images/business-technology/enterprise-applications/guides/navan-expense-guide/change-gl.png)
 
-#### 関連出張の紐付け
+#### 関連出張の紐付け {#link-a-related-trip}
 
 出張中に Navan カードで行ったトランザクションは、Navan プラットフォームで予約した対応する旅行に自動的に関連付けられます。手動（自己負担経費）の場合は、経費を申請する前にこの情報が正確に入力されていることを確認する必要があります。経費を出張に関連付けるには、以下の手順に従ってください:
 
@@ -367,7 +360,7 @@ GitLab は GL コードを使用して、特定の種類の経費の支出を対
 
 ![liquid-image-4](/images/business-technology/enterprise-applications/guides/navan-expense-guide/related-trip.png)
 
-#### トランザクションの取り消し
+#### トランザクションの取り消し {#withdraw-a-transaction}
 
 割り当てられた経費ポリシーに準拠していない自己負担経費の手動トランザクションを申請すると、経費承認者によるレビューのためにフラグが立てられます。これらのトランザクションは `In review`（レビュー中）としてマークされ、`My Transactions` セクションの `Manual` フォルダで確認できます。承認者がアクションを実行する前にこれらのトランザクションの一つを取り消したい場合は、以下の手順に従ってください:
 
@@ -380,11 +373,11 @@ GitLab は GL コードを使用して、特定の種類の経費の支出を対
 
 > 手動トランザクションの変更方法の詳細については、*[How can I modify or add transaction details?](https://app.navan.com/app/helpcenter/articles/expense/myself/managing-my-expenses/modify-transaction-details)* の記事をご確認ください。
 
-### 同じトランザクションに複数のレシートを添付する方法
+### 同じトランザクションに複数のレシートを添付する方法 {#how-to-attach-multiple-receipts-to-the-same-transaction}
 
-現金で支払いまたは個人カードで請求された業務上の経費は、Navan Expense モバイルアプリを通じて手動トランザクションとして払い戻し申請をインポートでき、**ユーザーは**払い戻し申請のすべての手動トランザクションにレシートを添付することが**必要です**。場合によっては、同じトランザクションに複数のレシートをアップロードする必要があることがあります。方法については以下をご覧ください。
+現金で支払いまたは個人カードで請求された業務上の経費は、Navan Expense モバイルアプリを通じて手動トランザクションとして払い戻し申請をインポートでき、払い戻し申請のすべての手動トランザクションへのレシート添付が**ユーザーには義務付けられています**。場合によっては、同じトランザクションに複数のレシートをアップロードする必要があることがあります。方法については以下をご覧ください。
 
-#### 新規トランザクション
+#### 新規トランザクション {#new-transactions}
 
 複数のレシートで手動経費を申請するには、Navan Expense モバイルアプリを開き、`Expense`、`+New transaction` をタップし、以下の手順に従ってください:
 
@@ -395,7 +388,7 @@ GitLab は GL コードを使用して、特定の種類の経費の支出を対
 
 ![liquid-image-6](/images/business-technology/enterprise-applications/guides/navan-expense-guide/new-transactions.png)
 
-#### 申請済みトランザクション
+#### 申請済みトランザクション {#submitted-transactions}
 
 既に申請されたトランザクションに複数のレシートを添付するには、以下の手順に従ってください:
 
@@ -408,7 +401,7 @@ GitLab は GL コードを使用して、特定の種類の経費の支出を対
 
 > 詳細については、*[How do I attach multiple receipts to the same transaction?](https://app.navan.com/app/helpcenter/articles/expense/myself/submitting-expenses/multiple-receipts)* の記事をご確認ください。
 
-### Navan Expense でトランザクションを明細化する方法
+### Navan Expense でトランザクションを明細化する方法 {#how-to-itemize-a-transaction-in-navan-expense}
 
 Navan Expense では、1 つのトランザクションを複数の項目に自動的に分割する機能が提供されており、経費の種類、GL コード、カスタムフィールドの割り当て、および管理者による項目別のトランザクションの承認または却下が可能です。明細化の一般的なユースケースはホテルの経費で、GitLab が負担すべき料金（ホテルの宿泊費や駐車料金など）と個人負担すべき料金（ホテルのスパサービスなど）が混在する場合です。
 
@@ -419,13 +412,13 @@ Navan Expense では、1 つのトランザクションを複数の項目に自�
 
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
 
 - トランザクションの明細化は、現在ウェブアプリでは利用できません。
 {{% /panel %}}
 
 
-#### 手動トランザクションの明細化
+#### 手動トランザクションの明細化 {#itemizing-a-manual-transaction}
 
 1. Navan モバイルアプリを開き、`Expense` をタップします。
 2. 新しいトランザクションを開始します。
@@ -439,7 +432,7 @@ Navan Expense では、1 つのトランザクションを複数の項目に自�
 
 ![liquid-image-8](/images/business-technology/enterprise-applications/guides/navan-expense-guide/itemize.png)
 
-#### 経費申請後の手動トランザクションの明細化
+#### 経費申請後の手動トランザクションの明細化 {#itemizing-a-manual-transaction-after-expense-submission}
 
 申請された手動トランザクションが割り当てられた経費ポリシーのパラメーター内に収まっている場合は自動的に承認され、明細化できません。申請された明細化されていない手動トランザクションが割り当てられた経費ポリシーに準拠していないとシステム管理者によってフラグが立てられた場合、管理者が承認または却下する前に明細化できます。
 
@@ -449,18 +442,18 @@ Navan Expense では、1 つのトランザクションを複数の項目に自�
 
 > 詳細については、*[How do I itemize a transaction?](https://app.navan.com/app/helpcenter/articles/expense/myself/submitting-expenses/itemize-a-transaction)* の記事をご確認ください。
 
-### Navan Expense トランザクションにレシートを自動追加する方法
+### Navan Expense トランザクションにレシートを自動追加する方法 {#how-to-automatically-add-a-receipt-to-a-navan-expense-transaction}
 
 メールのレシートを Navan Expense に転送すると、既存のトランザクションに自動的に照合されます。Navan に送られたレシートはインポートされて分析され、トランザクションの詳細が自動入力されるため、内容を確認して申請するだけで済みます。
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
 
 - 1 通のメールに含まれる複数のレシートは 1 つのトランザクションとしてカタログに登録されます。複数のトランザクションのレシートを申請する必要がある場合は、別々のメールとして転送してください。
 {{% /panel %}}
 
 
-#### Navan へのレシートのメール送信
+#### Navan へのレシートのメール送信 {#emailing-receipts-to-navan}
 
 Navan にメールで送ったレシートはスキャンされ、トランザクション情報が Navan Expense アカウントにインポートされます。既存のトランザクションと一致するレシートは自動的にそのトランザクションに追加されます。一致するものが見つからない場合は、レシートとトランザクションの詳細を使って新しいトランザクションの下書きが作成されます。レシートをインポートするには、**GitLab の業務メールアドレス**から *receipts@navan.com* にレシートのコピーをメールで送信します。
 
@@ -473,20 +466,20 @@ Navan にメールで送ったレシートはスキャンされ、トランザ�
 
 
 {{% alert color="warning" %}}
-レシートのインポートが間違ったトランザクションに添付された場合や、置き換える必要がある場合は、次のセクション [Managing Imported Receipts](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/#managing-imported-receipts) の手順をご確認ください。
+レシートのインポートが間違ったトランザクションに添付された場合や、置き換える必要がある場合は、次のセクション [Managing Imported Receipts](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/#managing-imported-receipts)の手順をご確認ください。
 {{% /alert %}}
 
 
 <br>
 
 
-{{% panel header="**IMPORTANT NOTE**" header-bg="danger" %}}
+{{% panel header="**重要な注意事項**" header-bg="danger" %}}
 
 - 各メールに含まれるすべてのレシートは 1 つのトランザクションとしてカタログに登録されます。複数のトランザクションのレシートを申請する必要がある場合は、別々のメールとして転送してください。
 {{% /panel %}}
 
 
-#### インポートされたレシートの管理
+#### インポートされたレシートの管理 {#managing-imported-receipts}
 
 レシートの三点リーダーメニューから、レシートを別のトランザクションに移動したり、置き換えたりします。また、トランザクションから写真や PDF を追加したり、レシートを保存したり、削除したりすることもできます。
 
@@ -495,7 +488,7 @@ Navan にメールで送ったレシートはスキャンされ、トランザ�
 3. メニューからオプションを選択します。
 4. デバイスのカメラが起動し、新しいレシートの写真を撮影したり、フォトライブラリ、PDF、またはメールアドレスからレシートを転送したりできます。
 5. `Use photo` をタップして新しいレシートをトランザクションに追加します。
-6. トランザクションの詳細を確認して、`Delete`、`Save & close`、または `Submit` を選択します。
+6. トランザクションの詳細を確認して、`Delete, Save & close`、または `Submit` を選択します。
 
 **レシートを別のトランザクションに移動する**
 
@@ -512,19 +505,19 @@ Navan にメールで送ったレシートはスキャンされ、トランザ�
 - レシートの角にある `ellipsis`（三点リーダー）メニューをタップします。
 - `Replace receipt` を選択します。
 - デバイスのカメラが起動し、新しいレシートの写真を撮影できます。`Use photo` をタップして新しいレシートをトランザクションにインポートします。
-- トランザクションの詳細を確認して、`Delete`、`Save & close`、または `Submit` を選択します。
+- トランザクションの詳細を確認して、`Delete, Save & close`、または `Submit` を選択します。
 
 ![liquid-image-9](/images/business-technology/enterprise-applications/guides/navan-expense-guide/replace_receipt.png)
 
 > 詳細については、*[How can I automatically add receipts to my transactions?](https://app.navan.com/app/helpcenter/articles/expense/myself/submitting-expenses/automatic-receipts)* の記事をご確認ください。
 
-### Google カレンダーを Navan Expense に接続する方法
+### Google カレンダーを Navan Expense に接続する方法 {#how-to-connect-google-calendar-to-navan-expense}
 
 カレンダー連携を有効にすると、カードのトランザクションに関連するカレンダー内のイベント情報（名前、場所、参加者など）が取得され、トランザクションの詳細が自動入力されます。
 
 カレンダーを接続するには、アプリ右上の `Profile` アイコンをタップしてプロフィールにアクセスし、`Calendar Integration` を選択して Google カレンダーを有効にします。
 
-### 走行距離の払い戻し申請の提出方法
+### 走行距離の払い戻し申請の提出方法 {#how-to-submit-a-mileage-reimbursement-request}
 
 Navan Expense では、個人車両を使った業務での走行距離の払い戻しを簡単に申請できます。GitLab の Navan Expense 管理者が割り当てた業務上の経費ポリシーによって、走行距離の払い戻し資格が決まります。
 
@@ -534,7 +527,7 @@ Navan Expense では、個人車両を使った業務での走行距離の払い
 {{% /alert %}}
 
 
-#### 走行距離の経費申請（モバイルアプリのみ対応）
+#### 走行距離の経費申請（モバイルアプリのみ対応） {#submitting-a-mileage-expense-available-on-the-mobile-app-only}
 
 走行距離の払い戻し申請を提出するには、`+New transaction` をタップし、`Log distance driven` をタップします。出張の詳細の入力を進めます。
 
@@ -543,7 +536,7 @@ Navan Expense では、個人車両を使った業務での走行距離の払い
 - 最後に `Date of travel`（出張日）（必須）および Navan Expense 管理者チームに経費の詳細とコンテキストを提供するための追加情報（任意）を入力します。
 
 
-{{% panel header="**Note**" header-bg="danger" %}}
+{{% panel header="**注意**" header-bg="danger" %}}
 
 - `Log distance driven` オプションが表示されない場合は、会社から走行距離の払い戻しを許可する経費ポリシーが割り当てられていないことを意味します。詳しくは Accounts Payable チームにお問い合わせください。
 {{% /panel %}}
@@ -551,41 +544,40 @@ Navan Expense では、個人車両を使った業務での走行距離の払い
 
 > 詳細については、*[How do I submit a mileage reimbursement request?](https://app.navan.com/app/helpcenter/articles/expense/myself/submitting-expenses/mileage-reimbursement)* の記事をご確認ください。
 
-### ポリシー外経費の返金
+### ポリシー外経費の返金 {#repayments-for-out-of-policy-expenses}
 
 GitLab から割り当てられた経費ポリシーに違反する Navan Expense カード（フィジカル）での請求は、Accounts Payable チームによってレビューされます。レビュー後、承認者はその経費を却下して全額または一部の返金を求める場合があります。また、トランザクションが返金を必要とすることを事前に把握している場合は、承認者がレビューする前に支払いを行えます。返金は Navan モバイルアプリから直接処理できます。
 
 > 詳細については、*[How can I repay my company for out-of-policy spend?](https://app.navan.com/app/helpcenter/articles/expense/myself/managing-my-expenses/repaying-company)* の記事をご確認ください。
 
-### 他のユーザーの代わりに経費を申請または管理する方法
+### 他のユーザーの代わりに経費を申請または管理する方法 {#how-to-submit-or-manage-an-expense-for-someone-else}
 
 Navan Expense では、Navan アプリを通じて組織内の他のユーザーの代わりに手動経費（フィジカルカードで請求されない経費）を申請したりトランザクションを管理したりできます。
 
-#### 他のチームメンバーの代わりに予約するデリゲートアクセスのリクエスト
+#### 他のチームメンバーの代わりに予約するデリゲートアクセスのリクエスト {#requesting-delegate-access-to-book-for-another-team-member}
 
 1. Navan ホームページから、プロフィールアイコンに移動して `Profile` をクリックします。
 1. `Contact info` タブで `Delegate info` を見つけ、次に `I book travel for these users` を見つけます。出張の予約または管理を行いたいチームメンバーの名前を入力します。
 1. リストに追加されたチームメンバーにはアクセスを承認または拒否するメールが届きます。リクエストが承認または拒否されるとメールで通知されます。保留中のリクエストは承認されるまでグレー表示されます。
 
-#### デリゲートとしての自分自身の削除
+#### デリゲートとしての自分自身の削除 {#removing-yourself-as-a-delegate}
 
-別のチームメンバーのデリゲートから自分を削除するには、出張を予約するリストから削除したい人の名前の横にある `X` を選択します。ユーザーが削除されると、変更を知らせるメールが届きます。
+別のチームメンバーのデリゲートから自分を削除するには、出張を予約するリストから削除したい人の名前の横にある `X` を選択します。ユーザーが削除されると、そのユーザーに変更を知らせるメールが届きます。
 
 #### 別のチームメンバーへのデリゲートアクセスの指定 {#designating-delegate-access-to-another-team-member}
 
-トランザクションを代わりに承認したり、他のチームメンバーに出張の予約または管理を委任したい場合は、以下の手順に従ってください:
+トランザクションの代理承認や出張の予約・管理を他のチームメンバーに委任したい場合は、以下の手順に従ってください:
 
 1. Navan ホームページから、プロフィールアイコンに移動して `Profile` をクリックします。
 1. `Contact info` タブで `Delegate info` を見つけ、次に `These users can book travel on my behalf` を見つけます。権限を付与したいユーザーの名前を入力します。
-1. リストに追加されたユーザーには、直属部下の代わりに承認したり、代わりに出張の予約や管理を行う権限が付与されたことを知らせるメールが届きます。
+1. リストに追加されたユーザーには、あなたに代わってあなたの直属部下のトランザクションを承認したり、あなたの出張の予約や管理を行う権限が付与されたことを知らせるメールが届きます。
 
-#### デリゲート権限の取り消し
+#### デリゲート権限の取り消し {#revoking-delegate-permissions}
 
-他のチームメンバーに出張を予約または管理してほしくなくなった場合は、削除したい人の名前の横にある `X` を選択します。デリゲートのプロフィールへのアクセスを削除すると、変更を知らせるメールが届きます。
+他のチームメンバーに出張を予約または管理してほしくなくなった場合は、削除したい人の名前の横にある `X` を選択します。自分のプロフィールに対するデリゲートのアクセス権を削除すると、そのデリゲートに変更を知らせるメールが届きます。
 
 
-{{% alert title="Note" color="info" %}}
-**Note**
+{{% alert title="注意" color="info" %}}
 デリゲートリストからユーザーを削除できない場合は、Navan Expense 管理者がそのユーザーを会社全体のデリゲートとして設定していることを意味します。会社全体のデリゲートは会社の管理者のみが追加または削除できます。
 {{% /alert %}}
 
@@ -596,32 +588,32 @@ Navan Expense では、Navan アプリを通じて組織内の他のユーザー
 
 1. モバイルアプリの `Profile` タブに移動します。
 1. `Expense settings` を選択します。
-1. `Switch users` をタップして、経費を申請または管理したいユーザーの名前を検索バーに入力します。これによりアプリ内でそのユーザーになりすまし、`Logged in as [ユーザー名]` というバナーが表示されます。
+1. `Switch users` をタップして、経費を申請または管理したいユーザーの名前を検索バーに入力します。これによりアプリ内でそのユーザーになりすまし、`Logged in as [user name]` というバナーが表示されます。
 1. 自分のプロフィールに戻る準備ができたら、`Profile` をタップして自分の名前を選択します。
 
 **Navan Expense ウェブアプリ**
 
 1. Navan アカウントのホームページから `Log in as`（人物アイコン）をクリックします。
-1. 経費を申請または管理したいユーザーの名前を検索バーに入力します。これにより Navan 内でそのユーザーになりすまし、`You are currently logged in as [ユーザー名]` というバナーが表示されます。
+1. 経費を申請または管理したいユーザーの名前を検索バーに入力します。これにより Navan 内でそのユーザーになりすまし、`You are currently logged in as [user name]` というバナーが表示されます。
 1. ユーザーとしてログインしたら、`Access your expenses` をクリックして `Add transaction` を選択します。
 1. `Upload receipt` または `Type in details` を選択し、案内に従ってトランザクションを申請します。
 1. 上部バナーの `End session` をクリックして自分のプロフィールに戻ります。
 1. 最近ログインしたユーザーは、検索ページの右側に小さな連絡先アイコンとして表示され、自分のプロフィールと他のユーザーを簡単に切り替えられます。
    - *注意: 他のユーザーの代わりに申請されたトランザクションは、そのユーザーの割り当てられたポリシー（経費の割り当て）に従います。モバイルアプリでそのユーザーとしてログイン中に Policy タブに移動すると、そのユーザーの経費割り当てを確認できます。*
 
-#### 別のユーザーの代わりにトランザクションを確認する
+#### 別のユーザーの代わりにトランザクションを確認する {#reviewing-transactions-on-behalf-of-another-user}
 
 1. [上記の手順](#submitting-a-manual-expense-for-another-user)を繰り返して別のユーザーとしてログインします。なお、先にそのユーザーが[自分のアカウントへのアクセス権を委任](#designating-delegate-access-to-another-team-member)している必要があります。
 1. 申請されたトランザクションを確認できるようになります。そのユーザーがマネージャーの場合は、チームのトランザクションも確認できます。
 
-#### 別のユーザーのトランザクションを管理する
+#### 別のユーザーのトランザクションを管理する {#managing-transactions-for-another-user}
 
 - 手動トランザクション: 払い戻し申請された手動トランザクションは 4 つのレビューカテゴリのいずれかに分類されます（`Transactions` からアクセス）。追加情報の要求、レシート未添付、または部分的もしくは完全に却下された申請の会社への返金など、トランザクションに追加の対応が必要な場合は、上記のセクションに記載された手順でそのユーザーとしてログインしてアクションを実行できます。
 - Navan カードトランザクション: ユーザーのフィジカル Navan カードで請求されたトランザクションは、そのユーザーの割り当てられた経費ポリシーに準拠している場合は自動承認されます。自動承認されないトランザクションは、追加情報の提供、レシート未添付、またはトランザクションが部分的もしくは完全に却下された場合の会社への返金など、追加の対応が必要な場合があります。トランザクションに追加の対応が必要な場合は、上記のセクションに記載された手順でそのユーザーとしてログインして必要な情報を入力できます。
 
 > 詳細については、*[How do I submit or manage an expense for someone else](https://app.navan.com/app/helpcenter/articles/expense/myself/managing-my-expenses/expenses-for-other-users)* の記事をご確認ください。
 
-### 残りの予算を確認する方法
+### 残りの予算を確認する方法 {#how-to-see-how-much-budget-is-left}
 
 ポリシー内で経費として計上できる残額を確認したい場合（例：[オフィス機器](https://internal.gitlab.com/handbook/finance/expenses/#equipment)に経費として計上できる額）:
 
@@ -630,7 +622,7 @@ Navan Expense では、Navan アプリを通じて組織内の他のユーザー
 1. `Work from home` の下で `Show transactions` をクリックします。
 1. 右側に合計使用金額と残額が表示されます。
 
-### Navan Expense マネージャーダッシュボードの活用（デスクトップブラウザのみ）
+### Navan Expense マネージャーダッシュボードの活用（デスクトップブラウザのみ） {#leveraging-the-navan-expense-manager-dashboard-available-in-the-desktop-browser-only}
 
 Navan Expense マネージャーダッシュボードでは、マネージャーが直属部下のトランザクションアクティビティと支出データを一目で確認できるほか、トランザクションのレビューと承認（経費承認者に指定されているマネージャー向け）が可能です。マネージャーダッシュボードには、Navan デスクトップブラウザから左側のメインドロップダウンメニューをクリックし、Expense セクションの `Manager` をクリックしてアクセスできます。このページには 4 つの主要コンポーネントと、検索を絞り込むためのフィルターがあります。
 
@@ -659,101 +651,99 @@ Navan Expense ダッシュボードの Analysis セクションでは、Navan Ex
 Users タブでは、マネージャーが直属部下の発行通貨、コストセンターなどの従業員データを確認できます。ユーザーの名前をクリックすると、トランザクション履歴やポリシーの割り当てなどの追加情報が表示されます。Activity タブに加えて、指定された承認者はユーザーのトランザクション履歴からトランザクションを直接レビュー、承認、却下、および追加情報の要求ができます。
 
 
-{{% alert title="Note" color="warning" %}}
-**Note**
+{{% alert title="注意" color="warning" %}}
 Navan ユーザーリストでマネージャーに指定されているユーザーはマネージャーダッシュボードにアクセスできます。マネージャーダッシュボードのオプションが表示されない場合は、割り当てられた直属部下がいないか、直属部下に支出アクティビティがないことを意味します。
 {{% /alert %}}
 
 
 > 詳細については、*[Leveraging the Navan Expense manager dashboard](https://app.navan.com/app/helpcenter/articles/expense/myself/expense-approvals/expense-manager-dashboard)* の記事をご確認ください。
 
-## Navan Expense よくある質問（FAQ）
+## Navan Expense よくある質問（FAQ） {#navan-expense-frequently-asked-questions-faq}
 
-### 誤った銀行口座情報を入力した場合はどうなりますか？
+### 誤った銀行口座情報を入力した場合はどうなりますか？ {#what-happens-if-i-enter-incorrect-bank-account-information}
 
 口座情報は申請時に検証されます。ただし、それがあなたの正しい口座であるかどうかは確認できません。銀行口座情報が正確に入力されていることを確認してください。誤った口座に送金された場合、Navan は責任を負いません。
 
-### サポートされている通貨以外で取引している銀行口座の場合はどうすればよいですか？
+### サポートされている通貨以外で取引している銀行口座の場合はどうすればよいですか？ {#what-if-i-have-a-bank-account-transacted-in-currency-outside-of-those-supported}
 
 銀行口座の通貨が現在サポートされていない場合や、その他の理由で銀行口座を連携したくない場合でも、GitLab の給与計算を通じて払い戻しを受け取れます。GitLab の給与計算サイクルとプロセスの詳細については、Accounts Payable チームにお問い合わせください。
 
-### 個人カードを連携したくない場合、会社への返金はどうすればよいですか？
+### 個人カードを連携したくない場合、会社への返金はどうすればよいですか？ {#what-if-i-dont-want-to-link-my-personal-card-how-can-i-make-repayments-to-my-company}
 
 個人カードを Navan Expense に連携していない状態で、承認されなかった経費の返金が必要になった場合は、Accounts Payable チームと連絡を取り、最善の返金方法を確認する必要があります。
 
-### 直接払い戻しが可能な国はどこですか？
+### 直接払い戻しが可能な国はどこですか？ {#in-what-countries-are-direct-reimbursements-available}
 
 払い戻しと支払いタイムラインの詳細については、経費ハンドブックページの[このセクション](https://internal.gitlab.com/handbook/finance/expenses/#44-reimbursement-payout-timelines)をご確認ください。
 
-### 払い戻しが失敗した場合、どうすれば資金を受け取れますか？
+### 払い戻しが失敗した場合、どうすれば資金を受け取れますか？ {#how-can-i-receive-my-funds-if-my-reimbursement-fails}
 
 払い戻しが失敗した場合は、モバイルアプリの `My reimbursements` タブまたはウェブアプリの `Settings` タブから銀行口座の連携を解除してから再連携してください。再連携後、Navan が銀行に資金を再送します。
 
-### トランザクションに参加者を含めることは必須ですか？
+### トランザクションに参加者を含めることは必須ですか？ {#is-it-required-that-i-include-participants-on-my-transactions}
 
 必須ではありませんが、トランザクションに参加者を追加することで、管理者チームが一人当たりのコストをよりよく把握し、より高額の経費に対する正当な理由を提供するのに役立ちます。
 
-### 参加者としてトランザクションに同僚を追加した場合、誰のポリシーが適用されますか？
+### 参加者としてトランザクションに同僚を追加した場合、誰のポリシーが適用されますか？ {#if-i-add-colleagues-to-my-transaction-as-participants-whose-policy-will-be-applied}
 
 トランザクションに参加者を追加しても、適用されるポリシーには影響しません。入力された参加者に関わらず、あなたが申請するトランザクションはすべて自分に割り当てられたポリシーのパラメーターが適用されます。
 
-### 往復のドライブに対して走行距離を申請できますか？
+### 往復のドライブに対して走行距離を申請できますか？ {#is-it-possible-to-expense-mileage-for-a-round-trip-drive}
 
 はい。目的地を入力する際に `+` アイコンをクリックして場所を追加するだけです。
 
-### マイルではなくキロメートルで申請できますか？
+### マイルではなくキロメートルで申請できますか？ {#will-i-be-able-to-submit-for-reimbursement-in-kilometers-instead-of-miles}
 
 Navan Expense 管理者チームが割り当てたリージョンによって、キロメートルまたはマイルで申請できるかどうかが決まります。**注意:** 米国を拠点とする従業員が海外出張で個人車両を使用する場合も、払い戻し申請はマイルで提出する必要があります。
 
-### Navan で予約した出張に紐付けなくても、走行距離の出張を申請できますか？
+### Navan で予約した出張に紐付けなくても、走行距離の出張を申請できますか？ {#can-i-still-submit-mileage-for-travel-without-attaching-it-to-a-trip-booked-on-navan}
 
 はい。割り当てられた経費ポリシーで走行距離の払い戻しが認められている限り可能です。
 
-### Navan が接続できるライドシェアアプリはどれですか？
+### Navan が接続できるライドシェアアプリはどれですか？ {#what-rideshare-applications-can-navan-connect-to}
 
 Navan は Lyft、Uber、Grab との接続を提供しており、出張中に場所と目的地の情報を自動的に共有して乗り物を利用できます。
 
 > 詳細については、*[What rideshare applications can Navan connect to?](https://app.navan.com/app/helpcenter/articles/travel/myself/getting-started-for-travelers/rideshare-applications)* の記事をご確認ください。
 
-### Lyft の経費を自動的に申請できますか？
+### Lyft の経費を自動的に申請できますか？ {#can-i-automatically-submit-lyft-expenses}
 
 Navan Expense ユーザーは Lyft アカウントを Navan Expense に接続して、業務出張に関連する Lyft 乗車のレシートを自動送信して経費を申請できます。このオプションを利用するには、まず Navan で使用しているのと同じメールアドレスで Lyft ビジネスプロフィールを作成する必要があります。
 
 > 詳細については、*[How can I automatically submit Lyft expenses?](https://app.navan.com/app/helpcenter/articles/expense/myself/submitting-expenses/lyft-expenses)* の記事をご確認ください。
 
-### ウェブアプリでできないことはモバイルアプリでできますか？
+### ウェブアプリでできないことはモバイルアプリでできますか？ {#is-there-anything-i-cant-do-in-the-web-app-that-i-can-do-in-the-mobile-app}
 
 割り当てられた経費ポリシーの確認や業務での走行距離のログには、Navan アプリをご利用ください。これらの機能は現在ウェブアプリでは利用できません。
 
-### Navan Expense のトランザクションに税金の詳細を追加する必要がありますか？
+### Navan Expense のトランザクションに税金の詳細を追加する必要がありますか？ {#should-i-add-tax-details-for-navan-expense-transactions}
 
 チームメンバーは経費トランザクションに税金の詳細を追加する必要はありません。
 
 > 詳細については、*[How do I add tax information to my transactions?](https://app.navan.com/app/helpcenter/articles/expense/myself/submitting-expenses/tax-details)* の記事をご確認ください。
 
-### 複数のレシートが自動承認された場合、一括払いと個別払いのどちらになりますか？
+### 複数のレシートが自動承認された場合、一括払いと個別払いのどちらになりますか？ {#are-multiple-receipts-auto-approved-paid-in-one-lump-sum-or-as-separate-reimbursements}
 
-各トランザクションに対して個別の振り込みが銀行口座に行われます。手動経費を 5 件申請した場合は、各トランザクションに対してそれぞれ 5 件の個別の銀行振込が行われます。
+各トランザクションに対して個別の振り込みが銀行口座に行われます。手動経費を 5 件申請した場合は、各トランザクションにつき 1 件、合計 5 件の個別の銀行振込が行われます。
 
-### 経費が却下された場合、編集して再申請できますか？
+### 経費が却下された場合、編集して再申請できますか？ {#if-my-expenses-are-rejected-can-i-go-back-to-edit-and-resubmit}
 
 経費が却下された場合は、完全に再申請する必要があります。
 
-### Navan Expense の製品リリース情報はどこで確認できますか？
+### Navan Expense の製品リリース情報はどこで確認できますか？ {#where-can-i-see-navan-expense-product-releases}
 
 Navan Expense の製品リリースは次のブログで共有されています: [Navan Expense product release announcements](https://app.navan.com/app/helpcenter/articles/expense/admin/general-settings/navan-expense-product-release-announcements)
 
-## Navan Expense トレーニング
+## Navan Expense トレーニング {#navan-expense-training}
 
-### エンドユーザートレーニング
+### エンドユーザートレーニング {#end-user-training}
 
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/3lnIPfXwyk0" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 
-{{% alert title="Note" color="warning" %}}
-**Note**
+{{% alert title="注意" color="warning" %}}
 動画を視聴するには、[GitLab Unfiltered アカウント](/handbook/marketing/marketing-operations/youtube/#unable-to-view-a-video-on-youtube)をご使用ください。また、[GitLab Unfiltered コンテンツ](https://studio.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A/videos)で `Navan Expense` を検索して見つけることもできます。
 {{% /alert %}}
 
@@ -773,15 +763,14 @@ Navan Expense の製品リリースは次のブログで共有されています
 - Navan ウェブアプリの使い方
 - Q&A
 
-### マネージャートレーニング
+### マネージャートレーニング {#manager-training}
 
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/3OJn7UbGAJ0" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 
-{{% alert title="Note" color="warning" %}}
-**Note**
+{{% alert title="注意" color="warning" %}}
 動画を視聴するには、[GitLab Unfiltered アカウント](/handbook/marketing/marketing-operations/youtube/#unable-to-view-a-video-on-youtube)をご使用ください。また、[GitLab Unfiltered コンテンツ](https://studio.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A/videos)で `Navan Expense` を検索して見つけることもできます。
 {{% /alert %}}
 
@@ -802,7 +791,7 @@ Navan Expense の製品リリースは次のブログで共有されています
 - マネージャーダッシュボード
 - Q&A
 
-## Navan Expense サポート
+## Navan Expense サポート {#navan-expense-support}
 
 - **機能**に関する質問については、Navan Expense プラットフォームの使い方や経費に関するあらゆる質問について **Accounts Payable チーム**が最初の窓口となります。
 - **技術的**な質問については、技術的な問題やご質問（アクセスリクエスト、ログイン問題、バグなど）について **Finance System Admins** が最初の窓口となります。
