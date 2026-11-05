@@ -1,18 +1,19 @@
 ---
 title: "主要抽象化"
 upstream_path: /handbook/engineering/architecture/abstractions/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
+translated_at: "2026-11-05T21:10:02.024055+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-22T14:05:58+02:00"
+lastmod: "2026-11-05T10:43:29+01:00"
 ---
 
-## 概要
+
+## 概要 {#overview}
 
 主要抽象化（Key Abstractions、別名 Key Primitives）は、GitLab のエンジニアリング組織全体で使用が承認された基盤技術、パターン、コンポーネントです。主要抽象化が一度承認されると、エンジニアはその機能を必要とする実装を行う際に、必ずこれを使用しなければなりません。
 
-## ガバナンス
+## ガバナンス {#governance}
 
 - **承認プロセス**: 新しい主要抽象化の追加には VP の承認が必要です
 - **オーナーシップ**: 承認された各主要抽象化には、社内で指定されたオーナーが必要です
@@ -21,20 +22,20 @@ lastmod: "2025-10-22T14:05:58+02:00"
 
 必要な機能がカタログに無い場合、チームは Architecture Board と協議すべきです。
 
-## Architecture Board
+## Architecture Board {#architecture-board}
 
 Architecture Board は、主要抽象化のカタログをレビューしスチュワードする、軽量で非公式に構成されたグループです。このグループは、GitLab のエンジニアリング組織全体で技術的一貫性を保ちながら、アーキテクチャの意思決定が協調的に行われることを保証します。
 
 ボードは、コラボレーションと迅速なイテレーションを優先しつつ、基盤となる技術的意思決定の適切な監督を確保する、軽量で非公式なアプローチで運営されています。これは Architecture Board のスタートポイントを表しています。組織のニーズが進化するにつれて、ボードの構造、スコープ、プロセスは拡張・公式化される可能性があります。
 
-### 構成
+### 構成 {#composition}
 
 - VP が Architecture Board のメンバーを任命します
 - 当初は、Distinguished Engineer 以上の全員をメンバーとして任命することからスタートしました
 - メンバーシップは `architecture/abstractions` ディレクトリの CODEOWNERS で管理されます
 - 主要抽象化カタログに対する変更を承認・マージできるのは Architecture Board メンバーのみです
 
-### 責務
+### 責務 {#responsibilities}
 
 Architecture Board は以下をレビュー・承認します:
 
@@ -43,7 +44,7 @@ Architecture Board は以下をレビュー・承認します:
 - 既存の主要抽象化ドキュメントの更新
 - カタログからの抽象化の非推奨化または削除
 
-## 成熟度の状態
+## 成熟度の状態 {#maturity-states}
 
 主要抽象化は、以下のいずれかの状態にあります:
 
@@ -52,13 +53,13 @@ Architecture Board は以下をレビュー・承認します:
 
 すべての graduated 主要抽象化には、指定されたオーナーが必要です。
 
-## 承認済み主要抽象化
+## 承認済み主要抽象化 {#approved-key-abstractions}
 
 | 抽象化 | カテゴリ | 説明 | オーナー |
 |-------------|----------|-------------|-------|
 | [**PostgreSQL**](postgresql/) | データ＆ストレージ | OLTP データベース | TBD |
 
-## 候補主要抽象化
+## 候補主要抽象化 {#candidate-key-abstractions}
 
 | 抽象化 | カテゴリ | 説明 | 備考 |
 |-------------|----------|-------------|-------|
@@ -71,7 +72,7 @@ Architecture Board は以下をレビュー・承認します:
 | [**NATS**](candidate/nats/) | メッセージング＆処理 | 高スループットのイベントストリーミング向けメッセージバス | 非常に高いスループットと永続化メッセージに使用します。 |
 | [**Sidekiq**](candidate/sidekiq/) | メッセージング＆処理 | バックグラウンド処理 | バックグラウンドジョブのデフォルト選択肢。 |
 | **Active Context** | 検索＆AI | セマンティック検索（埋め込み） | |
-| **Ruby, Go, Python, Rust** | 言語＆フレームワーク | LabKit サポート付きバックエンド言語 | |
+| [**Rust, Go, Ruby, Python**](candidate/backend_languages/) | 言語＆フレームワーク | LabKit サポート付きバックエンド言語 | 新しいコードでは Rust が第 1、Go が第 2 の選択肢です。Ruby と Python は新しい作業には推奨されません。 |
 | **VueJS, JavaScript, TypeScript** | 言語＆フレームワーク | フロントエンド技術 | |
 | **gRPC, REST** | 言語＆フレームワーク | 通信プロトコル | |
 | **RAFT** | 分散システム | コンセンサスアルゴリズム | |
@@ -84,14 +85,14 @@ Architecture Board は以下をレビュー・承認します:
 | **Circuit Breaker** | アーキテクチャパターン | フォールトトレランスパターン | 可能な限り LabKit 経由で実装 |
 | **UBI-9** | インフラストラクチャ | サポートされる Cloud Native GitLab イメージ | |
 
-## 使用したくないサービス
+## 使用したくないサービス {#services-we-dont-want-to-use}
 
 以下の技術は **使用すべきではありません**:
 
 - **Consul**
 - **Kafka** - 代わりに [NATS](candidate/nats/) または [Sidekiq](candidate/sidekiq/) を使用してください
 
-## コントリビューション
+## コントリビューション {#contributing}
 
 新しい主要抽象化を提案する、または候補を graduated ステータスに昇格させるには:
 
@@ -103,7 +104,7 @@ Architecture Board は以下をレビュー・承認します:
 2. Architecture Board にレビューのため提示します
 3. VP of Data Engineering と VP of Infrastructure から承認を得ます
 
-## 関連リソース
+## 関連リソース {#related-resources}
 
 - [Architecture Workflow](/handbook/engineering/architecture/workflow/)
 - [Scalability Practice](/handbook/engineering/architecture/practice/scalability/)

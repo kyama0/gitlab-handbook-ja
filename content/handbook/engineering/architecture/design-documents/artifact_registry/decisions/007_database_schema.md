@@ -4,12 +4,13 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 113965e2ca25f720d69415391b362683f783f532
-translated_at: "2026-10-30T21:06:51.722487+00:00"
+upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
+translated_at: "2026-11-05T21:20:52.598336+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-29T20:22:58+01:00"
+lastmod: "2026-11-04T12:29:22Z"
 ---
+
 
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
@@ -46,7 +47,7 @@ Artifact Registry は、多数のアーティファクトフォーマットの�
 
 ### blob ストレージ {#blob-storage}
 
-blob ストレージはフォーマットに依存せず、各 blob をネームスペースごとに 1 回だけ保存します（[ADR-002](002_storage_deduplication_scope.md)）。プロトコルのチェックサムやコンテンツタイプなど、フォーマット固有のデータは、そのフォーマット自体のテーブルに保持します。
+blob ストレージはフォーマットに依存せず、各 blob をネームスペースごとに 1 回だけ保存します（[ADR-022](022_namespace_decoupling.md)）。プロトコルのチェックサムやコンテンツタイプなど、フォーマット固有のデータは、そのフォーマット自体のテーブルに保持します。
 
 blob の各使用箇所は、1 つのアタッチメント行を所有します。クライアントは、これを参照するアーティファクト行と同じトランザクションで、アタッチメント行を作成、削除します。クライアントが担うクリーンアップの責務はこれだけであり、オブジェクトストレージに触れることはありません。どのアタッチメントも blob を参照しなくなると、ガベージコレクションがその blob を回収します（[ADR-025](025_garbage_collection.md)）。blob テーブルやアタッチメントテーブルへの外部キーのカスケードはありません。
 

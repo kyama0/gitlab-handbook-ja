@@ -11,12 +11,13 @@ group: Organizations
 participating-stages: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/organization/"
-upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
-translated_at: "2026-11-02T21:11:17+00:00"
+upstream_sha: "f656f02435661ffa63fe51e9b75469265e9ed794"
+translated_at: "2026-11-05T21:16:25.273234+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-02T17:39:47+05:30"
+lastmod: "2026-11-05T14:39:29+08:00"
 ---
+
 
 {{< engineering/design-document-header >}}
 
@@ -339,7 +340,10 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - [014: Organization のロールを Organization ユーザータイプに改称](decisions/014_organization_roles_renamed_to_organization_user_type.md)
 - [015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)
 - [016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)
+- [017: Artifact Registry の Organization、ロール、権限](decisions/017_organization_roles_permissions_artifact_registry.md)
 - [018: 隔離は 1 つではなく 4 つの事実である](decisions/018_isolation_is_four_facts.md)
+- [019: データの切り離しと Organization 隔離の範囲](decisions/019_isolation_severance_process.md)
+- [020: Organization の憲章と不変条件](decisions/020_organizations_charter_and_invariants.md)
 
 ## リンク {#links}
 

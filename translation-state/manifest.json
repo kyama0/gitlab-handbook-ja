@@ -5610,11 +5610,11 @@
     },
     "content/handbook/engineering/architecture/abstractions/_index.md": {
       "path": "content/handbook/engineering/architecture/abstractions/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "469f029cc84d89f63788bd7cd61fa216af30c9a012296f6ba7a6effc4805a915",
-      "upstream_committed_at": "2025-10-22T14:05:58+02:00"
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:10:02.024055+00:00",
+      "model": "codex",
+      "input_hash": "a17cad543af18a272eca68790f6a5fb1bf86561ccdbcb49735133b9d6309652f",
+      "upstream_committed_at": "2026-11-05T10:43:29+01:00"
     },
     "content/handbook/engineering/architecture/abstractions/candidate/nats.md": {
       "path": "content/handbook/engineering/architecture/abstractions/candidate/nats.md",
@@ -5810,123 +5810,123 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/001_organizations_as_anchor_point.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/001_organizations_as_anchor_point.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "135bc108424c6aec25cd1d721190ac019784aa78777ad7f00bce5478579d8409",
-      "upstream_committed_at": "2026-04-01T09:04:50+02:00"
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:18:38.769540+00:00",
+      "model": "codex",
+      "input_hash": "d1058b3390f6fe7f7033e5dfe10ffc1dade09e46cb4f45236372f83f0928d3b0",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/002_storage_deduplication_scope.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/002_storage_deduplication_scope.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8dc4c4d552f792b0e075235baca4c88794b892ff93da5bd6e21396ca1ce94043",
-      "upstream_committed_at": "2026-03-24T12:31:34-07:00"
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:18:38.773494+00:00",
+      "model": "codex",
+      "input_hash": "f66658b876deab6664568b90be006740f8e060e30996194e24d748cbee185531",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/003_system_requirements.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/003_system_requirements.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:12:40Z",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:18:38.777085+00:00",
       "model": "codex",
-      "input_hash": "506ffba03242525dba1c44829baad0ff463849a15d21ebdcaf073ba90bd1f3df",
-      "upstream_committed_at": "2026-10-15T07:39:45+02:00"
+      "input_hash": "d5a6c99940f726424ebf6948eb7853e395497bbe376edb9a7169e6984c5ce721",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits.md",
-      "upstream_sha": "113965e2ca25f720d69415391b362683f783f532",
-      "upstream_committed_at": "2026-10-29T21:03:42+01:00",
-      "translated_at": "2026-10-30T21:06:51.689116+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:20:52.583755+00:00",
       "model": "codex",
-      "input_hash": "91cfc8008ea3cf4590aa84c1dd7c3e184a71be75d2263e2bde33eb7ba65f3876"
+      "input_hash": "c793416bb949a0a797fd6507e936df1f1bf344d6232265c454dea92d0ef12810",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00",
-      "translated_at": "2026-11-01T08:57:59+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:20:52.589912+00:00",
       "model": "codex",
-      "input_hash": "582d21819b5e70445c2f113039e0530c188278a53a3af5c940db24bc6e76d938"
+      "input_hash": "4d38852cb7e81cd64145a9b3cb99fb03081e176cb8ba814581905a4b19b3a4e5",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T20:55:36+09:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:20:52.594353+00:00",
       "model": "codex",
-      "input_hash": "f315308c4d4214f204cfce31c6450db92edd9d47774df95de6ddd164ff581b7e",
-      "upstream_committed_at": "2026-07-07T15:33:26-04:00"
+      "input_hash": "e1c782221d422d2525e46512094134cfaa32b3b49b3768093206928ef8df2a37",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md",
-      "upstream_sha": "113965e2ca25f720d69415391b362683f783f532",
-      "translated_at": "2026-10-30T21:06:51.722487+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:20:52.598336+00:00",
       "model": "codex",
-      "input_hash": "e1e90c84f667e2e1067ec8a5350c726e71dc3cf4f38f7f660156862d3eeffc67",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00"
+      "input_hash": "1ae05f8e00806927e6a0ebc36fc2daaf9b048a4036a45785226a88094bfe624b",
+      "upstream_committed_at": "2026-11-04T12:29:22Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T15:53:03+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:28:52.016489+00:00",
       "model": "codex",
-      "input_hash": "8868ccad12370069ef65115a7cf781433090bffc89e106b13e539e1db9ad181c",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00"
+      "input_hash": "34887cfb86503ca926b4a7a8f5f1dbae4ec395f92b42f275d23e3511f1eda8f6",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md",
-      "upstream_sha": "113965e2ca25f720d69415391b362683f783f532",
-      "translated_at": "2026-10-30T21:08:37.641081+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:28:52.021336+00:00",
       "model": "codex",
-      "input_hash": "f1479c3cffe30647d946a34372475dc0288806ca8bfc00650d516a5d06261750",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00"
+      "input_hash": "05f367659bcba3d5aa11a7e79d111daa061903ed6d5d69578aac6f4ce0254216",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md",
-      "upstream_sha": "113965e2ca25f720d69415391b362683f783f532",
-      "translated_at": "2026-10-30T21:10:23+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:28:52.025869+00:00",
       "model": "codex",
-      "input_hash": "56ca6d74c4a4d9c9284a2fb69251089a6f5431b903d4fd5f02fb5c7c80481b6c",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00"
+      "input_hash": "bb4f5e8a028e9b48e6fd453d9c374df22eeb83957c20de7157394d6394fd65b8",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md",
-      "upstream_sha": "113965e2ca25f720d69415391b362683f783f532",
-      "translated_at": "2026-10-30T21:10:23+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:32:49.837260+00:00",
       "model": "codex",
-      "input_hash": "b27c47693c8a0e98d665ac4634b3eb07b67f06bb16f7f58efd7a94e4d4a62f96",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00"
+      "input_hash": "60064b47677db9a4e20cb9c94d5bf9bea8531449416290bfe6d0215face15ade",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md",
-      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
-      "translated_at": "2026-10-21T21:00:03Z",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:32:49.842021+00:00",
       "model": "codex",
-      "input_hash": "47ab0764eb250aa9698fcdc5b95ac184696067f2900d7fd63b3ef76610f5c6ac",
-      "upstream_committed_at": "2026-10-16T22:06:43+02:00"
+      "input_hash": "b016cc70b36a970f656676115c0d9c2ac12b75b85238d72b5835bc655a00e028",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T15:17:01+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:46:48.557056+00:00",
       "model": "codex",
-      "input_hash": "0a26273356df54f29d2ff46905754f663cacf04533641624bc4901053db23933",
-      "upstream_committed_at": "2026-10-29T20:57:37+01:00"
+      "input_hash": "df04c25e5dd2355b00e939e514fa1b3f36d0aee1cdf2941e1c98066388435eba",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T07:24:53.853824+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:46:48.566032+00:00",
       "model": "codex",
-      "input_hash": "c4633a9cd1081d25e6359e21b76ef3e945309a9be82cf6af4a5b27525b8ae625",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00"
+      "input_hash": "8fcdbc1a4921aff226ca91c5c8f00b90727081d08ef9265bf1e1fdbae17521e9",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T15:41:31.250321+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:53:05.522936+00:00",
       "model": "codex",
-      "input_hash": "1b8b2ce77f66d23fd647a6953e3d5a45462540659b16f52a0eb9b4fb81790342",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00"
+      "input_hash": "7006b0893110fe03919580ae2967272d3fdf4632ebad2fcd1cbdb0422a038c5c",
+      "upstream_committed_at": "2026-11-04T16:41:54Z"
     },
     "content/handbook/engineering/architecture/design-documents/autodevops_v2/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/autodevops_v2/_index.md",
@@ -8458,11 +8458,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/_index.md",
-      "upstream_sha": "d5f4e694763c3ac443cc3d58c6a9a81bafa06880",
-      "translated_at": "2026-11-02T21:11:17+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:16:25.273234+00:00",
       "model": "codex",
-      "input_hash": "e51a87383fd65f74aa9f9f5f552b2d20baf6d40eaae2b25abec81c67a03264ee",
-      "upstream_committed_at": "2026-11-02T17:39:47+05:30"
+      "input_hash": "684aabfb58f0f157cc7446e0de4976e94abdbde12ed781ec228ceaa58d2b3472",
+      "upstream_committed_at": "2026-11-05T14:39:29+08:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization/billing.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/billing.md",
@@ -8546,11 +8546,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization/isolation.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/isolation.md",
-      "upstream_sha": "d5f4e694763c3ac443cc3d58c6a9a81bafa06880",
-      "translated_at": "2026-11-02T21:11:17+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:16:25.280220+00:00",
       "model": "codex",
-      "input_hash": "5fb9b09974c405bb70db0c63793d1405204075a4b6f14aff4df112126a5d15b1",
-      "upstream_committed_at": "2026-11-02T17:39:47+05:30"
+      "input_hash": "0e6da4e093bc730597cbedc17aeff54188cee76337aa426954b741cf3a7e4edb",
+      "upstream_committed_at": "2026-11-05T14:39:29+08:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization/login.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/login.md",
@@ -14858,11 +14858,11 @@
     },
     "content/handbook/enterprise-data/platform/monte-carlo/index.md": {
       "path": "content/handbook/enterprise-data/platform/monte-carlo/index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f954a521a8e48288ed76843a3376a664a082ce68df1af60bf03299dcd577265a",
-      "upstream_committed_at": "2026-05-04T08:35:15+00:00"
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:10:02.011484+00:00",
+      "model": "codex",
+      "input_hash": "f37cbadbcce4434ab70df8d1ca4c992c771d421be934ca6cf9d64a07c896fc34",
+      "upstream_committed_at": "2026-11-05T09:49:51+01:00"
     },
     "content/handbook/enterprise-data/platform/permifrost.md": {
       "path": "content/handbook/enterprise-data/platform/permifrost.md",
@@ -20658,11 +20658,11 @@
     },
     "content/handbook/support/workflows/dedicated_instance_health.md": {
       "path": "content/handbook/support/workflows/dedicated_instance_health.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T20:30:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c8f75b8f545177285ef2db451243ae2b6b6302b6ca18d8068ce1b136ea711c1c",
-      "upstream_committed_at": "2026-02-02T13:11:13+01:00"
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:10:02.001696+00:00",
+      "model": "codex",
+      "input_hash": "d69243b6946d5e5d9897ede638d60634d3806a2897b02cd58d51e61414481b2d",
+      "upstream_committed_at": "2026-11-05T11:49:14+08:00"
     },
     "content/handbook/support/workflows/dedicated_logs.md": {
       "path": "content/handbook/support/workflows/dedicated_logs.md",
@@ -31786,11 +31786,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/014_frontend_to_artifact_registry.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/014_frontend_to_artifact_registry.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T20:55:36+09:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:32:49.845992+00:00",
       "model": "codex",
-      "input_hash": "c3002299c0da28b0fece93f81a6a1cba91e4b0c432589b91f3889c2ed8f222bb",
-      "upstream_committed_at": "2026-07-06T09:56:59+10:00"
+      "input_hash": "d2772441ea81caa9447538ea163fe555ad0547ee93a8c0b540d5a797d7a802b2",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_cd/cd_execution.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_cd/cd_execution.md",
@@ -31986,11 +31986,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T07:28:30+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:53:05.527626+00:00",
       "model": "codex",
-      "input_hash": "01231bcc7003a8afd5a3121f7c01185ecc0bbf0c67fa4290fa89d8b195fe4c45",
-      "upstream_committed_at": "2026-10-30T12:03:21Z"
+      "input_hash": "37192e93491c87226b2140502da7fc974692d6379cbc77479098fbc0861e6088",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md": {
       "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md",
@@ -32218,11 +32218,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T16:28:01+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:46:48.562053+00:00",
       "model": "codex",
-      "input_hash": "5ecdfabb4052d713b60f2cf338b1e51210e98b033d8fc12c055ce4f2dd8a7468",
-      "upstream_committed_at": "2026-10-29T22:18:14Z"
+      "input_hash": "458a4adcd6bf1de5404082597bfc6b1f5badb80812f8014864c0142eca43dc64",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/chunking.md": {
       "path": "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/chunking.md",
@@ -34890,11 +34890,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/025_garbage_collection.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/025_garbage_collection.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T06:49:50+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:53:05.532094+00:00",
       "model": "codex",
-      "input_hash": "1ebde001d7502049f2b460568d4b5bb7b4c4ca4414dcbee349949889d7f52a14",
-      "upstream_committed_at": "2026-10-23T08:14:49+02:00"
+      "input_hash": "0046ca87973047b9642bbdc6a5622b95c6211887fceb543c22db6e59f2d32c5a",
+      "upstream_committed_at": "2026-11-05T17:24:28Z"
     },
     "content/handbook/engineering/architecture/design-documents/orbit/decisions/01-delivery.md": {
       "path": "content/handbook/engineering/architecture/design-documents/orbit/decisions/01-delivery.md",
@@ -40394,11 +40394,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/027_replicating_registry_data_to_orbit.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/027_replicating_registry_data_to_orbit.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "upstream_committed_at": "2026-10-29T20:22:58+01:00",
-      "translated_at": "2026-11-01T07:33:26+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "upstream_committed_at": "2026-11-05T17:24:28Z",
+      "translated_at": "2026-11-05T21:53:05.536250+00:00",
       "model": "codex",
-      "input_hash": "29d546aa36b70f0b2232771e9cd80550e48dce5e0a7b0563ebe097d2e0606bba"
+      "input_hash": "90bda7e3c51760a01fc4e852a80c36ede501254414a290330df993e03d9173c4"
     },
     "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/010_auto_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/010_auto_mode.md",
@@ -40434,11 +40434,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/mfe_platform/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/mfe_platform/_index.md",
-      "upstream_sha": "d5f4e694763c3ac443cc3d58c6a9a81bafa06880",
-      "translated_at": "2026-11-02T21:17:59+00:00",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:18:38.759097+00:00",
       "model": "codex",
-      "input_hash": "ce3d877320ac0956525e7579983bafbc7c74dea1fb6d6be6fc86c2b3fb79d810",
-      "upstream_committed_at": "2026-11-02T09:37:44-05:00"
+      "input_hash": "2b05a134554f90a8a24756070a00a0278f7f960e8d8b200f58ace0ae1c53583a",
+      "upstream_committed_at": "2026-11-05T09:36:04-05:00"
     },
     "content/handbook/engineering/architecture/design-documents/mfe_platform/decisions/001_tooling_repository_strategy.md": {
       "path": "content/handbook/engineering/architecture/design-documents/mfe_platform/decisions/001_tooling_repository_strategy.md",
@@ -40967,6 +40967,38 @@
       "translated_at": "2026-11-05T15:15:16.188555+00:00",
       "model": "codex",
       "input_hash": "8c10ffa0efc2ae0f41f35170fe8f55550caf55efbefb21aec716518dee425878"
+    },
+    "content/handbook/engineering/architecture/abstractions/candidate/backend_languages.md": {
+      "path": "content/handbook/engineering/architecture/abstractions/candidate/backend_languages.md",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:10:02.037116+00:00",
+      "model": "codex",
+      "input_hash": "19dc97d2ba9fe1f5850355f9dff83f50cedff897e1d432428e3b37fc17eb5d18",
+      "upstream_committed_at": "2026-11-05T10:43:29+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/019_isolation_severance_process.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/019_isolation_severance_process.md",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:16:25.286203+00:00",
+      "model": "codex",
+      "input_hash": "04bc9d9d5e816d0b3b3c1a75c32e4cf0392051089879aa57e081189d98a98b4e",
+      "upstream_committed_at": "2026-11-05T14:39:29+08:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/020_organizations_charter_and_invariants.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/020_organizations_charter_and_invariants.md",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:16:25.291391+00:00",
+      "model": "codex",
+      "input_hash": "ea7f4d85b9907c33944d9bb3241b98ccd13cfde37db47ea03afbbc708e12c01d",
+      "upstream_committed_at": "2026-11-05T14:39:29+08:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/mfe_platform/decisions/005_mfe_inter_app_communication.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/mfe_platform/decisions/005_mfe_inter_app_communication.md",
+      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
+      "translated_at": "2026-11-05T21:18:38.764326+00:00",
+      "model": "codex",
+      "input_hash": "661d946f1d375415abe5d81d682efa2867b27cd4bb47c73aca1d89691a6589a7",
+      "upstream_committed_at": "2026-11-05T10:52:01+01:00"
     }
   }
 }

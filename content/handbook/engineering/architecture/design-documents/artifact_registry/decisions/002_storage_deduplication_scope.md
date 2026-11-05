@@ -4,19 +4,20 @@ owning-stage: "~devops::package"
 description: "ストレージ重複排除をインスタンス全体ではなく個別の Organization にスコープする決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/002_storage_deduplication_scope/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
+translated_at: "2026-11-05T21:18:38.773494+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-24T12:31:34-07:00"
+lastmod: "2026-11-05T17:24:28Z"
 ---
+
 
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
 
-## 背景
+## 背景 {#context}
 
-コンテンツアドレッサブルストレージ（[ADR-008](008_content_addressable_storage.md) を参照）は、同一コンテンツを重複排除します。私たちは重複排除のレベル（インスタンス全体、Organization、トップレベルグループ、リポジトリ）を選択する必要があります。
+コンテンツアドレッサブルストレージ（[ADR-008](008_content_addressable_storage.md)を参照）は、同一コンテンツを重複排除します。私たちは重複排除のレベル（インスタンス全体、Organization、トップレベルグループ、リポジトリ）を選択する必要があります。
 
 この選択は次に影響します。
 
@@ -25,7 +26,7 @@ lastmod: "2026-03-24T12:31:34-07:00"
 - **セキュリティ**: 共有 Blob が境界をまたいで情報を漏らすかどうか
 - **運用**: ディザスタリカバリ、バックアップ、境界をまたぐ調整
 
-### 現状
+### 現状 {#current-state}
 
 コンテナレジストリはインスタンス全体の重複排除を使用しており、[運用上の問題](https://gitlab.com/gitlab-org/container-registry/-/issues/1242)を抱えています。
 
@@ -35,11 +36,11 @@ lastmod: "2026-03-24T12:31:34-07:00"
 
 パッケージレジストリには重複排除がありません。
 
-### 分析
+### 分析 {#analysis}
 
 3 つの境界（インスタンス全体、トップレベルグループ、リポジトリ）を評価しました。
 
-注: この分析は、トップレベルグループがオブジェクトストレージ重複排除のレベルとして検討されていたときに実施されました。それ以降、選択された[アンカーレベルは Organizations](001_organizations_as_anchor_point.md) になりました。したがって、重複排除は Organizations にスコープされます。
+注: この分析は、トップレベルグループがオブジェクトストレージ重複排除のレベルとして検討されていたときに実施されました。それ以降、選択された[アンカーレベルは Organizations](001_organizations_as_anchor_point.md)になりました。したがって、重複排除は Organizations にスコープされます。
 
 **コンテナレジストリ**（[分析](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3023542021)）:
 
@@ -73,7 +74,7 @@ lastmod: "2026-03-24T12:31:34-07:00"
 
 **結論**: ご覧のとおり、トップレベルグループスコープは重複排除の利益のほぼすべてを捉えます（コンテナで 96%+、Maven で 98%+）が、グループをまたぐ複雑さは回避できます。わずかな追加ストレージオーバーヘッドは、よりシンプルな運用、明確なコスト按分、セキュリティ分離のための受け入れ可能なトレードオフです。Organization レベルのスコープはインスタンス全体に近く、最もストレージ効率の良い重複排除を提供します。
 
-## 決定
+## 決定 {#decision}
 
 **重複排除を個別の Organization にスコープします。**
 
@@ -81,28 +82,28 @@ Organization 内の同一コンテンツ（同じ SHA256 ハッシュ）は 1 �
 
 これは、すべてのアーティファクトタイプ（Docker イメージ、Maven パッケージ、npm モジュール）とすべてのコンテンツ（コンテナレイヤー、パッケージファイル、バイナリ Blob）に適用されます。
 
-## 結果
+## 結果 {#consequences}
 
-### ポジティブ
+### ポジティブ {#positive}
 
 1. **明確なコスト按分**: Organization ごとに Blob サイズを合算します。クロスレベル計算は不要です。
-2. **公平な顧客請求**: 顧客は一意な Blob ごとに 1 回支払います。
-3. **予測可能なパフォーマンス**: 操作（クエリ、GC、バックアップ）は 1 つの Organization 内に留まります。クロスレベル依存関係はありません。
-4. **セキュリティ分離**: Organization は他の Organization の Blob を参照できません。情報漏洩はありません。
-5. **シンプルなガベージコレクション**: GC は 1 つの Organization 内のみで参照を確認します。クロスレベル調整はありません。
-6. **自己完結したディザスタリカバリ**: 他に手を触れずに 1 つの Organization を復元できます。
-7. **独立したスケーリング**: 各 Organization はストレージを独立してスケールします。
-8. **プラットフォーム間で最適な重複排除レベル**: GitLab.com は Organizations を使用します。Dedicated と Self-Managed は単一の Organization 下で運用されるため、事実上インスタンスレベルの重複排除になります。
+1. **公平な顧客請求**: 顧客は一意な Blob ごとに 1 回支払います。
+1. **予測可能なパフォーマンス**: 操作（クエリ、GC、バックアップ）は 1 つの Organization 内に留まります。クロスレベル依存関係はありません。
+1. **セキュリティ分離**: Organization は他の Organization の Blob を参照できません。情報漏洩はありません。
+1. **シンプルなガベージコレクション**: GC は 1 つの Organization 内のみで参照を確認します。クロスレベル調整はありません。
+1. **自己完結したディザスタリカバリ**: 他に手を触れずに 1 つの Organization を復元できます。
+1. **独立したスケーリング**: 各 Organization はストレージを独立してスケールします。
+1. **プラットフォーム間で最適な重複排除レベル**: GitLab.com は Organizations を使用します。Dedicated と Self-Managed は単一の Organization 下で運用されるため、事実上インスタンスレベルの重複排除になります。
 
-### ネガティブ
+### ネガティブ {#negative}
 
 1. **Organization 間の重複**: 人気のあるコンテンツ（ベースイメージ、パブリックパッケージ）が各 Organization に別々に保存されます。
-2. **インスタンス全体ストレージの増加**: Organization スコープはインスタンス全体に対してオーバーヘッドを追加します。これは、ストレージが顧客に請求されるため追加の純コストには *変換されません*。
-3. **リポジトリレベルより広いスコープ**: ストレージ使用量はリポジトリ間で重複排除された Blob を追跡する必要があります。GC はすべてのリポジトリにまたがって動作し、共有 Blob 上の並行操作を処理する必要があります。
+1. **インスタンス全体ストレージの増加**: Organization スコープはインスタンス全体に対してオーバーヘッドを追加します。これは、ストレージが顧客に請求されるため追加の純コストには *変換されません*。
+1. **リポジトリレベルより広いスコープ**: ストレージ使用量はリポジトリ間で重複排除された Blob を追跡する必要があります。GC はすべてのリポジトリにまたがって動作し、共有 Blob 上の並行操作を処理する必要があります。
 
-## 代替案
+## 代替案 {#alternatives}
 
-### 代替案 1: インスタンス全体重複排除
+### 代替案 1: インスタンス全体重複排除 {#alternative-1-instance-wide-deduplication}
 
 どの Organization がアップロードしたかにかかわらず、インスタンス全体スコープで同一コンテンツを 1 度保存します。
 
@@ -126,7 +127,7 @@ Organization 内の同一コンテンツ（同じ SHA256 ハッシュ）は 1 �
 - コンテナレジストリのインスタンス全体アプローチは [運用上高コスト](https://gitlab.com/gitlab-org/container-registry/-/issues/1242) であることが判明
 - Organization 間の Blob 共有によるセキュリティリスク
 
-### 代替案 2: トップレベルグループ重複排除
+### 代替案 2: トップレベルグループ重複排除 {#alternative-2-top-level-group-deduplication}
 
 **長所:**
 
@@ -145,7 +146,7 @@ Organization 内の同一コンテンツ（同じ SHA256 ハッシュ）は 1 �
 - 重複排除スコープを Organization レベルで動作する他の機能と混合することによる認知的複雑さ
 - スケールでの集計メトリクスの課題。[ネームスペース統計の過去の経験](https://gitlab.com/groups/gitlab-org/-/work_items/8627)
 
-### 代替案 3: リポジトリスコープ重複排除
+### 代替案 3: リポジトリスコープ重複排除 {#alternative-3-repository-scoped-deduplication}
 
 単一のリポジトリ内のみで重複排除します。
 
@@ -165,16 +166,16 @@ Organization 内の同一コンテンツ（同じ SHA256 ハッシュ）は 1 �
 - 同じ Blob に対して顧客に繰り返し請求することはおそらく受け入れられない
 - Organization スコープがコスト・利益のバランスをより良く提供する
 
-## 実装ノート
+## 実装ノート {#implementation-notes}
 
-1. SHA256 ハッシュを使用したコンテンツアドレッサブルストレージ（[ADR-008](008_content_addressable_storage.md) を参照）
-2. 個別の Organization にスコープされた参照トラッキング
-3. コスト計算: Organization ごとに Blob サイズを合算
+1. SHA256 ハッシュを使用したコンテンツアドレッサブルストレージ（[ADR-008](008_content_addressable_storage.md)を参照）
+1. 個別の Organization にスコープされた参照トラッキング
+1. コスト計算: Organization ごとに Blob サイズを合算
 
-## 参考文献
+## 参考文献 {#references}
 
-- [Container Registry Deduplication Analysis](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3023542021)
-- [Maven Package Registry Deduplication Analysis](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3023014429)
-- [Maven Virtual Registry Cache Analysis](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3027109326)
-- [ADR-008: Content-Addressable Storage](008_content_addressable_storage.md)
-- [Container Registry Deduplication Complexity](https://gitlab.com/gitlab-org/container-registry/-/issues/1242)
+- [Container Registry の重複排除分析](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3023542021)
+- [Maven Package Registry の重複排除分析](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3023014429)
+- [Maven Virtual Registry のキャッシュ分析](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3027109326)
+- [ADR-008: コンテンツアドレッサブルストレージ](008_content_addressable_storage.md)
+- [Container Registry の重複排除の複雑さ](https://gitlab.com/gitlab-org/container-registry/-/issues/1242)

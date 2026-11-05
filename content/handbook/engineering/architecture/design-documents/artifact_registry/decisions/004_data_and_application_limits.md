@@ -4,12 +4,13 @@ owning-stage: "~devops::package"
 description: "Artifact Registry のストレージ、アーティファクトサイズ、API レート、エンティティ数の上限"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits/
-upstream_sha: 113965e2ca25f720d69415391b362683f783f532
-translated_at: "2026-10-30T21:06:51.689116+00:00"
+upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
+translated_at: "2026-11-05T21:20:52.583755+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-29T21:03:42+01:00"
+lastmod: "2026-11-05T17:24:28Z"
 ---
+
 
 ## 背景 {#context}
 
@@ -37,7 +38,9 @@ Artifact Registry は、毎秒数千件の API リクエスト、数十ペタバ
 
 ストレージは、ネームスペース内の一意な blob の重複排除後の合計であり、重複排除の範囲はネームスペース単位です（[ADR-002](002_storage_deduplication_scope.md)）。
 
-ストレージクォータは不正利用に対する安全上の上限であり、課金の制御ではありません。すべてのプランで同一であり、購入によって変更されることはありません。ストレージは GitLab Credits を通じて GB 単位で課金され（[ADR-012](012_usage_data_collection.md)）、課金上の制御ではネームスペースを読み取り専用にして一時停止します（[ADR-010](010_data_retention.md#subscription-expiration)）。
+ストレージクォータは不正利用に対する安全上の上限であり、課金の制御ではありません。すべてのプランで同一であり、購入によって変更されることはありません。
+ストレージは GitLab Credits を通じて GB 単位で課金されます（[ADR-012](012_usage_data_collection.md)）。
+課金上の制御はクォータとは別です。プランが失効すると、ネームスペースを読み取り専用にして一時停止し（[ADR-010](010_data_retention.md#subscription-expiration)）、使用量上限に達すると、使用量上限によるブロックを適用します（[ADR-010](010_data_retention.md#usage-limit-block)）。
 
 クォータはアップロードを受け付ける前にチェックし、クォータに達しているか超えているネームスペースでは、アップロードを拒否します。使用量はアップロード完了後に更新するため、並行アップロードがそれぞれチェックを通過し、合計でクォータを少し超える可能性があります。厳密に適用するにはアップロードを直列化する必要があり、[ADR-003](003_system_requirements.md)の並行性目標と矛盾するため、この超過は許容します。超過幅は並行アップロード数によって制限されます。
 
@@ -142,4 +145,4 @@ GitLab.com では、レート制限とクォータを 3 段階で導入します
 - [ADR-002：ストレージの重複排除範囲](002_storage_deduplication_scope.md) - 重複排除後のストレージの計測方法
 - [ADR-003：システム要件](003_system_requirements.md) - 規模の目標
 - [Package Registry のレート制限](https://docs.gitlab.com/administration/settings/package_registry_rate_limits/) - 基準として使用する既存のレート制限のデフォルト値
-- [Container Registry のレート制限仕様](https://gitlab.com/gitlab-org/container-registry/-/blob/main/docs/spec/gitlab/rate-limiting.md) - Artifact Registry がパターンとして再利用するレート制限の手法
+- [Container Registry のレート制限仕様](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/gitlab/rate-limiting.md) - Artifact Registry がパターンとして再利用するレート制限の手法

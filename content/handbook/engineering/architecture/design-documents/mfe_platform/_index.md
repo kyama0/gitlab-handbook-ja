@@ -9,12 +9,13 @@ owning-stage: "Plan"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/
-upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
-lastmod: "2026-11-02T09:37:44-05:00"
-translated_at: "2026-11-02T21:17:59+00:00"
+upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
+lastmod: "2026-11-05T09:36:04-05:00"
+translated_at: "2026-11-05T21:18:38.759097+00:00"
 translator: codex
 stale: false
 ---
+
 
 <!-- vale gitlab.FutureTense = NO -->
 
@@ -96,6 +97,47 @@ Duo Chat や Work Items などの製品領域は、
   `@gitlab/frontend-config` を通じてセットアップを共有し、
   公開、保守、廃止に関する共通のプロセスに従います。ADR 001 のツール用
   モノレポを単一のパッケージに改めます。
+
+- [ADR 005: MFE アプリ間の通信](decisions/005_mfe_inter_app_communication.md) -
+  MFE アプリケーション間の通信は先送りにします。プラットフォームが扱うのは、シェルと MFE の間の
+  通信だけです。通信チャネルや共有状態のソリューションを追加する前に、
+  `#g-ui_platform` で新しい要望を提起してください。
+
+## MFE としての抽出に向けてアプリケーションを準備する {#preparing-your-application-for-mfe-extraction}
+
+モノリス内のフロントエンド領域を所有するチームは、現在から MFE と互換性のある
+パターンに近付けることで、将来の移行コストを減らせます。
+これらの手順は、いずれも MFE プラットフォームの完成を前提とせず、
+それぞれが独立してコードベースを改善します。
+
+### 共有ユーティリティを抽出する {#extract-shared-utilities}
+
+純粋で再利用可能な関数を、モノリスから
+[`@gitlab/frontend-utils`](https://gitlab.com/gitlab-org/frontend/utils)へ移します。
+アプリケーションが抱えるモノリス内部からのインポートが少ないほど、
+抽出時に切り離す範囲が小さくなります。すでに移行済みの例には、
+`parseBoolean` と `normalizeHeaders` があります。
+
+### テストカバレッジを統合テストに移す {#shift-test-coverage-to-integration-tests}
+
+コンポーネントをマウントし、依存関係をすべてモック化するユニットテストは、
+テストスイートを内部実装に結合させます。レンダリング結果を通じて
+ユーザーに見える動作を確認する統合テストは移植可能であり、アプリケーションがモノリス内で動作しても単独で動作しても、
+テストは同じように機能します。
+フィクスチャ、MSW リクエストハンドラー、Jest 設定などの共有テスト基盤には、
+[`@gitlab/frontend-tests`](https://gitlab.com/gitlab-org/frontend/tests)を使用し、
+両方の環境で同じテストインフラストラクチャが機能するようにします。
+
+### HAML からのデータ注入を最小限にする {#minimize-haml-data-injection}
+
+HAML から Vue のマウントポイントに渡す `data-*` 属性は、1 つひとつが
+Rails のレンダリングレイヤーとの結合点です。マウント時の入力を最小限に保ち、
+代わりに API 呼び出しを利用してください。正確なマウント契約は、
+まだ定義中です（
+[ADR 003 の決定 7](decisions/003_module_carried_packaging_and_serving.md#7-mount-contract-and-shared-runtime)を参照）。
+ただし、方向性は明確です。プロジェクトパス、フィーチャーフラグ、
+ユーザー権限などの情報について、サーバーがレンダリングする HTML 属性への依存が
+少ないほど、アプリケーションを抽出しやすくなります。
 
 ## 先行事例と既存の取り組み {#prior-art-and-existing-work}
 

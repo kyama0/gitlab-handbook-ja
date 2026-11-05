@@ -9,12 +9,13 @@ owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/organization/isolation/"
-upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
-translated_at: "2026-11-02T21:11:17+00:00"
+upstream_sha: "f656f02435661ffa63fe51e9b75469265e9ed794"
+translated_at: "2026-11-05T21:16:25.280220+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-02T17:39:47+05:30"
+lastmod: "2026-11-05T14:39:29+08:00"
 ---
+
 
 このブループリントは、Organization が隔離されるための要件を詳述しています。
 Organization とは何かについての詳細は、[Organization](_index.md) を参照してください。
@@ -35,6 +36,8 @@ GitLab の多くの機能はデータを互いにリンクできます。
 1. [関連 Issue](https://docs.gitlab.com/ee/user/project/issues/related_issues.html): ユーザーは `Organization A` のプロジェクトの Issue を取り出し、それを `Organization B` のプロジェクトの別の Issue と関連付けることができません。
 1. [プロジェクト/グループをグループと共有](https://docs.gitlab.com/user/project/members/sharing_projects_groups/#invite-a-group-to-a-group): ユーザーは `Organization A` のグループまたはプロジェクトを `Organization B` の別のグループまたはプロジェクトと共有することが許可されません。
 1. [システムノート](https://docs.gitlab.com/ee/user/project/system_notes.html): `Organization B` の Issue のコメントで言及されても、`Organization A` の Issue にシステムノートは追加されません。
+
+Organization はデータの切り離しによって隔離されます。隔離の境界は、厳密な保証ではなく、アプリケーションが強制するものです。[ADR 019: データの切り離しと Organization 隔離の範囲](decisions/019_isolation_severance_process.md)を参照してください。
 
 ## 隔離の状態 {#isolation-states}
 
