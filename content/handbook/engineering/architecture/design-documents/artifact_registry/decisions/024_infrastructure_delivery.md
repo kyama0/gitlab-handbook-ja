@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Theseus のために Artifact Registry と Auth を最小限の実行可能なプラットフォームとして提供する"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-30T12:03:21Z"
-translated_at: "2026-11-01T07:28:30+00:00"
+upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
+lastmod: "2026-11-05T17:24:28Z"
+translated_at: "2026-11-05T21:53:05.527626+00:00"
 translator: codex
 stale: false
 ---

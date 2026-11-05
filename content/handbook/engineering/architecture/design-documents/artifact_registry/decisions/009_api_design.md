@@ -4,22 +4,23 @@ owning-stage: "~devops::package"
 description: "レジストリの API エンドポイント構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: 113965e2ca25f720d69415391b362683f783f532
-translated_at: "2026-10-30T21:08:37.641081+00:00"
+upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
+translated_at: "2026-11-05T21:28:52.021336+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-29T20:22:58+01:00"
+lastmod: "2026-11-05T17:24:28Z"
 ---
+
 
 ## 背景 {#context}
 
 Artifact Registry の API 設計には、次の制約があります。
 
 1. **3 つの API カテゴリー**：レジストリの概念を操作する管理 API、特定のクライアントで利用するために厳密な仕様に従うアーティファクト管理クライアント API、プラットフォームとレジストリ間の通信のための GitLab API です。
-2. **データベースのデータ構成に従う**：API エンドポイントは、データベーススキーマに合わせてアーティファクトのフォーマット別に構成します。各フォーマットファミリーには独自のテーブルとフィールドがあります（`docker` と `oci` は 1 つのファミリーを構成します）。この対応により、複雑な複数フォーマットの抽象化を避けて実装を簡素化し、フォーマット固有の最適化を可能にします。
-3. **3 種類のリポジトリ**：レジストリは、ホスト型（push されたアーティファクトのプライベートストレージ）、リモート（外部レジストリのプロキシ／キャッシュ）、仮想（ホスト型とリモートのアップストリームを組み合わせる集約 pull エンドポイント）の 3 種類のリポジトリをサポートします。このモデルは業界の慣行に一致します。3 種類すべてが独立して管理できる、単独のエンティティです。
+1. **データベースのデータ構成に従う**：API エンドポイントは、データベーススキーマに合わせてアーティファクトのフォーマット別に構成します。各フォーマットファミリーには独自のテーブルとフィールドがあります（`docker` と `oci` は 1 つのファミリーを構成します）。この対応により、複雑な複数フォーマットの抽象化を避けて実装を簡素化し、フォーマット固有の最適化を可能にします。
+1. **3 種類のリポジトリ**：レジストリは、ホスト型（push されたアーティファクトのプライベートストレージ）、リモート（外部レジストリのプロキシ／キャッシュ）、仮想（ホスト型とリモートのアップストリームを組み合わせる集約 pull エンドポイント）の 3 種類のリポジトリをサポートします。このモデルは業界の慣行に一致します。3 種類すべてが独立して管理できる、単独のエンティティです。
 
-Artifact Registry は、お客様が選択する不変のスラッグ（[ADR-022](022_namespace_decoupling.md)）を通じて Organizations をスコープとし（根拠は [ADR-001](001_organizations_as_anchor_point.md)を参照）、そのスラッグはお客様向けのすべての URL に現れます。すべてのクライアントおよび管理エンドポイントは、API バージョンのプレフィックス（クライアント API ではプロトコルのプレフィックス）の後に `/:slug` パスセグメントを含め、各リクエストのスコープを特定のスラッグに限定します。スラッグは、組織のパス解決に依存せず、トポロジーサービスを通じて安定した [Cells](../../cells/) ルーティングを提供します。例外は、OCI が義務付ける `GET /v2/` バージョンプローブ（[コンテナ](#container)を参照）と GitLab API エンドポイント（[GitLab API](#gitlab-api)を参照）の 2 つです。
+Artifact Registry は、お客様が選択する不変のスラッグ（[ADR-022](022_namespace_decoupling.md)）を通じて Organizations をスコープとし（根拠は [ADR-001](001_organizations_as_anchor_point.md)を参照）、そのスラッグはお客様向けのすべての URL に現れます。すべてのクライアントおよび管理エンドポイントは、API バージョンのプレフィックス（クライアント API ではプロトコルのプレフィックス）の後に `/:slug` パスセグメントを含め、各リクエストのスコープを特定のスラッグに限定します。スラッグは、組織のパス解決に依存せず、トポロジーサービスを通じて安定した [Cells](/handbook/engineering/architecture/design-documents/cells/) ルーティングを提供します。例外は、OCI が義務付ける `GET /v2/` バージョンプローブ（[コンテナ](#container)を参照）と GitLab API エンドポイント（[GitLab API](#gitlab-api)を参照）の 2 つです。
 
 Artifact Registry は、GitLab のメインアプリケーションのドメインとは別の専用ドメイン（たとえば `artifact-registry.gitlab.com`）で提供します。これにより、レジストリをメインアプリケーションの Cookie、認証情報、内部ネットワークのコンテキストから分離し、[XSS](https://owasp.org/www-community/attacks/xss/) および [SSRF](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)の脆弱性に対するセキュリティ態勢を改善します。
 
@@ -45,12 +46,12 @@ API の領域は、異なるルールを持つ 3 つのカテゴリーに明確�
    - フォーマット：GitLab 標準の API パターンに従う JSON レスポンス。コンテナマニフェストなど、保存済みの JSON ドキュメントを返すルートは、そのドキュメント自体のメディアタイプで変更せずに返します
    - ページネーション：すべての一覧エンドポイントにページネーションを適用し、できればキーセットページネーション戦略を使用します。仮想リポジトリのアップストリームなど、上限によって 1 ページ未満に収まる一覧には、ページネーションを適用しません
 
-2. **アーティファクト管理クライアント API**：業界標準の仕様を実装する、プロトコル固有の API
+1. **アーティファクト管理クライアント API**：業界標準の仕様を実装する、プロトコル固有の API
    - 認証：プロトコル固有（OCI の Bearer トークン、Maven の Basic 認証など）
    - 目的：ネイティブクライアントとの互換性（`docker`、`npm`、`mvn`、`go` コマンド）
    - フォーマット：プロトコル固有のレスポンス（OCI Distribution Spec、Maven Repository Layout、NPM Registry API、GOPROXY プロトコル）
 
-3. **GitLab API**：プラットフォームとレジストリ間の通信のための REST エンドポイント
+1. **GitLab API**：プラットフォームとレジストリ間の通信のための REST エンドポイント
    - 認証：サービス間の認証情報。エンドユーザーの ID は使用しません
    - 目的：ネームスペースのプロビジョニング、解決、サービス条件、およびリソース検証
    - フォーマット：JSON
@@ -153,7 +154,7 @@ API の領域は、異なるルールを持つ 3 つのカテゴリーに明確�
 
 コンテナのルートは `/v2/:slug/container/:repository_name/:image_name/` 配下に置きます。`container` というリテラルのパスセグメントは、プロトコル単位で固定です。1 組の `/v2` エンドポイントが、`docker` と `oci` の両フォーマットのリポジトリに対応します。これは固定のリテラルであり、リポジトリの `format` 値ではありません（[管理 API](#management-apis)を参照）。
 
-**注意：** OCI が義務付ける `GET /v2/` エンドポイントには `/:slug` プレフィックスがないため、[Cells](../../cells/) ルーターはそのパスから Cell を選べません。これは、OCI 準拠の `200 OK` または `401 Unauthorized` を返す、状態を持たないバージョンプローブであるため、どの Cell でも処理できます。それ以外のすべてのクライアントリクエストは `/:slug` セグメントを持ち、Cells ルーターはそれを使って対象の Cell を選びます。クライアントは [`glab`](https://gitlab.com/gitlab-org/cli)を通じて認証情報を取得し（[ADR-020](020_authentication_flow.md)を参照）、最初のリクエストから Bearer トークンを送るため、レジストリは OCI の `401 WWW-Authenticate` チャレンジを使用しません。
+**注意：** OCI が義務付ける `GET /v2/` エンドポイントには `/:slug` プレフィックスがないため、[Cells](/handbook/engineering/architecture/design-documents/cells/) ルーターはそのパスから Cell を選べません。これは、OCI 準拠の `200 OK` または `401 Unauthorized` を返す、状態を持たないバージョンプローブであるため、どの Cell でも処理できます。それ以外のすべてのクライアントリクエストは `/:slug` セグメントを持ち、Cells ルーターはそれを使って対象の Cell を選びます。クライアントは [`glab`](https://gitlab.com/gitlab-org/cli)を通じて認証情報を取得し（[ADR-020](020_authentication_flow.md)を参照）、最初のリクエストから Bearer トークンを送るため、レジストリは OCI の `401 WWW-Authenticate` チャレンジを使用しません。
 
 #### Maven {#maven}
 
@@ -179,7 +180,7 @@ Self-Managed または Dedicated のモノリスが SaaS レジストリを呼�
 
 プラットフォームは所有者アンカーに対してネームスペースをプロビジョニングし、返されたネームスペース UUID を永続化します。プロビジョニングは、アンカーに対して冪等です。プラットフォームは、UUID によってネームスペースを所有者アンカー、スラッグ、ステータスに解決し、スラッグとステータスをキャッシュします（[ADR-022](022_namespace_decoupling.md)、[ADR-014](014_frontend_to_artifact_registry.md)）。[ADR-022](022_namespace_decoupling.md#namespace-lifecycle)の可逆的なサービス条件は、アクションごとに 1 つのエンドポイントを通じて適用、解除します。
 
-スラッグが不要なルートは、[Cells](../../cells/) ルーティングを弱めません。ネームスペースの作成は、まだルーティング対象が存在しないため、キーでルーティングできません。Cell 内のモノリスは、その Cell のローカルレジストリを直接呼び出し、ネームスペースはその Cell に配置されます。ハイブリッドの呼び出し元には Cell がないため、その呼び出しはエッジに入り、エッジが対象の Cell を決定します。どちらの経路もネームスペース UUID をルーティングキーとして登録し、スラッグを取得した時点で、それが第 2 のキーになります。それ以外のすべての GitLab API エンドポイントは、その UUID をキーとし、呼び出し元の場所に関係なく、スラッグをプレフィックスに持つリクエストと同じトポロジー機構を通じてルーティングします。UUID をキーとするルーティングが不十分だと判明した場合は、GitLab API リクエストに所有者アンカーをルーティングヒントとして埋め込むこともできます。
+スラッグが不要なルートは、[Cells](/handbook/engineering/architecture/design-documents/cells/) ルーティングを弱めません。ネームスペースの作成は、まだルーティング対象が存在しないため、キーでルーティングできません。Cell 内のモノリスは、その Cell のローカルレジストリを直接呼び出し、ネームスペースはその Cell に配置されます。ハイブリッドの呼び出し元には Cell がないため、その呼び出しはエッジに入り、エッジが対象の Cell を決定します。どちらの経路もネームスペース UUID をルーティングキーとして登録し、スラッグを取得した時点で、それが第 2 のキーになります。それ以外のすべての GitLab API エンドポイントは、その UUID をキーとし、呼び出し元の場所に関係なく、スラッグをプレフィックスに持つリクエストと同じトポロジー機構を通じてルーティングします。UUID をキーとするルーティングが不十分だと判明した場合は、GitLab API リクエストに所有者アンカーをルーティングヒントとして埋め込むこともできます。
 
 #### リソース検証 {#resource-verifications}
 
@@ -213,7 +214,7 @@ GitLab API は、提供先のプラットフォームバージョン間で後方
 - [ADR-001：アンカーポイントとしての組織](001_organizations_as_anchor_point.md)
 - [ADR-010：データ保持](010_data_retention.md#release-phasing) - クローズドベータと GA にわたる削除の段階的導入
 - [ADR-022：ネームスペースデカップリング](022_namespace_decoupling.md)
-- [Cells アーキテクチャ](../../cells/)
+- [Cells アーキテクチャ](/handbook/engineering/architecture/design-documents/cells/)
 - [Container Registry Routing Service (Cells)](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/14825)
 - [GitLab REST API 認証](https://docs.gitlab.com/api/rest/authentication/)
 - [OCI Distribution Spec v1.1](https://github.com/opencontainers/distribution-spec/blob/main/spec.md)
