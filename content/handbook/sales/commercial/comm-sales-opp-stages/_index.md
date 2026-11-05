@@ -2,22 +2,22 @@
 title: "Commercial Sales 商談ステージ"
 description: "セールスステージのアクティビティと終了基準"
 upstream_path: /handbook/sales/commercial/comm-sales-opp-stages/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:11:15.190926+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-## <i class="fas fa-users fa-fw icon-color font-awesome"></i>なぜセールスステージが重要か?
+## <i class="fas fa-users fa-fw"></i>なぜセールスステージが重要か？ {#why-are-sales-stages-so-important}
 
 パイプライン管理は予測可能でスケーラブルな売上達成のキーであり、単に数字を達成するか過達成するかの違いを生み出すことができます。適切なセールスパイプライン管理は、時間を正しく配分し、商談の速度を上げ、正確な予測実務を通じて取引総量、サイズ、収益を増やすのに役立ちます。
 
-うまく管理されたセールスパイプラインには、ディスカバリーから Closed Won (または素早く qualify out) まで取引を進めるロードマップとして機能する、定義されたアクティビティと終了基準を持つ明確なプロセスが必要です。以下のプロセスは Commercial Sales チームに特化したもので、クリーンなパイプラインと正確な予測を確保します。
+うまく管理されたセールスパイプラインには、ディスカバリーから Closed Won（または早い段階で対象外と判断） まで取引を進めるロードマップとして機能する、定義されたアクティビティと終了基準を持つ明確なプロセスが必要です。以下のプロセスは Commercial Sales チームに特化したもので、クリーンなパイプラインと正確な予測を確保します。
 
-## <i class="fas fa-users"></i>Commercial Sales ステージのアクティビティと終了基準
+## <i class="fas fa-users"></i>Commercial Sales ステージのアクティビティと終了基準 {#commercial-sales-stages-activities-and-exit-criteria}
 
-これらのステージを Google sheet 形式で見るには [このリンクをクリック](https://docs.google.com/spreadsheets/d/1tVtJvfSsmWL2L1vTcJZgARlzC9Qy3Ae7pPqGBH9_KOQ/edit#gid=1399111321) してください。
+これらのステージを Google スプレッドシート形式で見るには [このリンクをクリック](https://docs.google.com/spreadsheets/d/1tVtJvfSsmWL2L1vTcJZgARlzC9Qy3Ae7pPqGBH9_KOQ/edit#gid=1399111321) してください。
 
 [終了基準の一覧:](https://docs.google.com/presentation/d/1x6ycY7SdPET5ioD2bPyV6RURafdU_fn4P7vD6X0QRsM/edit#slide=id.p)
 
@@ -25,21 +25,21 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 ---
 
-### 0-Pending Acceptance
+### 0-Pending Acceptance {#0-pending-acceptance}
 
 *商談が作成された後の初期ステージです。Sales Development チームはビジネスニーズ/課題をスコープし、GitLab チームとディスカバリー会話を行うための見込み顧客/顧客のコミットメントを検証します。
-Sales Development の商談はインバウンドの関心またはアウトバウンドの関心から来る可能性があることに注意してください。インバウンドの関心または既存顧客には、アウトバウンドの取り組みからの商談とは異なる追加の qualification レベルがあります。*
+Sales Development の商談はインバウンドの関心またはアウトバウンドの関心から来る可能性があることに注意してください。インバウンドの関心または既存顧客には、アウトバウンドの取り組みからの商談とは異なる追加の適格性評価があります。*
 
 このステージで完了する **主要アクティビティ**:
 
-- [MEDDPPICC](/handbook/sales/meddppicc/) (商談の required qualification criteria セクション内) の入力を開始 - 痛み/ニーズ、Economic buyer、または見込み顧客の場合は economic buyer への経路を特定。プラス、インバウンドリードまたは現顧客の場合は意思決定プロセスを特定。
+- [MEDDPPICC](/handbook/sales/meddppicc/)（商談の required qualification criteria セクション内）の入力を開始 - 課題／ニーズ、Economic buyer、または見込み顧客の場合は Economic Buyer への経路を特定。加えて、インバウンドリードまたは現顧客の場合は意思決定プロセスを特定。
 - AE または SAE とのディスカバリーコールをスケジュール
 - SDR 起因の商談の場合、商談は [Sales Accepted Opportunity](/handbook/sales/sales-development/) 基準を満たすこと。
-- SDR がコールをスケジュールし、招待状を送信し、account オブジェクトにイベントを作成し、イベントに次の名前を付けます: GitLab Introductory Meeting - {{Account Name}}。-
+- SDR がコールをスケジュールし、招待状を送信し、Account オブジェクトにイベントを作成し、イベントに次の名前を付けます: GitLab Introductory Meeting - {{Account Name}}. -
 - ミーティングが設定されたタイミングを強調するため、次のステップ日を入力します。両当事者によって招待が受諾されると、商談の所有権が AE/SAE に移管されます。
 - ディスカバリー会話後、営業チームが商談が Sales Accepted Opportunity 基準を満たすことを検証したら、SAE または AE が商談を次のステージ (Stage 1) に移動し、Amount フィールドに予測パイプラインを入力する必要があります。商談がこのステージから次のステージにセールスサイクル内で移動する日付が、商談レコードの Sales Accepted Date フィールドに入ります。
-- 商談の詳細が Sales Accepted Opportunity 基準を満たさない場合、SAE または AE は商談を 9-Unqualified ステージに移動すべきです (これが商談が 9-Unqualified ステージに移動できる唯一のタイミングです)。SAE/AE はコーチング目的で、なぜ商談が unqualified とみなされるかの理由を提供すべきです。
-- セールスアシステッドのすべての Opps はパイプラインでさらに進める前に、まずこのステージに入る必要があります。どこかでこのステージに入らない場合、validation rule エラーが発生します。
+- 商談の詳細が Sales Accepted Opportunity 基準を満たさない場合、SAE または AE は商談を 9-Unqualified ステージに移動すべきです (これが商談が 9-Unqualified ステージに移動できる唯一のタイミングです)。SAE/AE はコーチング目的で、なぜ商談が不適格とみなされるかの理由を提供すべきです。
+- 営業支援を受けるすべての商談 はパイプラインでさらに進める前に、まずこのステージに入る必要があります。どこかでこのステージに入らない場合、入力規則エラーが発生します。
 - 更新商談の場合、0-Pending Acceptance は更新が Account Executive/Strategic Account Executive によって積極的に作業されていない場合にのみ使用されます。
 - Sales Dev チームは更新商談を作成しません。
 
@@ -47,13 +47,13 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 *これらのアクティビティは見込み顧客を次のステージに移す前に完了されなければなりません*
 
-- セールス qualification ミーティングの完了
+- 営業の適格性評価ミーティングの完了
 - Sales Development チームメンバーが収集した情報の SAE/AE による検証
 - 合意された次のステップ
 
 ---
 
-### 1-Discovery
+### 1-Discovery {#1-discovery}
 
 *プロジェクトについて可能な限り多くのインテリジェンスを発掘し、セールスサイクル全体を通して後のステージで確認されます。顧客/見込み顧客が対処しようとしているビジネスニーズや課題と、GitLab がそれを解決する可能性を特定します。*
 
@@ -70,13 +70,13 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 *これらは、このステージの主要アクティビティを完了するために必要なより細かいステップです*
 
 - Command Plan の [Opportunity Overview](/handbook/sales/command-of-the-message/command-plan/#opportunity-overview) を埋める (取引金額しきい値: $5k SMB、$10k MM)
-- アカウントを [Rank](/handbook/sales/commercial/#account-ranking) する
+- アカウントを[ランク付け](/handbook/sales/commercial/#account-ranking) する
 - [商談のサイズ](/handbook/sales/commercial/enablement/#opp-management---managers-check-this) を見積もる
 - 顧客のパートナーランドスケープを理解する
 - [カスタムデッキ](/handbook/sales/commercial/#opportunity-specific-slide-deck) を顧客と共有
 - 顧客のクラウド戦略を理解する
-- 顧客コンタクトの [役割を特定](/handbook/sales/meddppicc/#economic-buyer): チャンピオン、インフルエンサー、Economic Buyer、Technical Buyer など
-- [GitLab single app pitch](/handbook/sales/commercial/#custom-deck-requirements) を提供し、顧客からビジョンに関するフィードバックを収集
+- 顧客コンタクトの [役割を特定](/handbook/sales/meddppicc/#economic-buyer): Champion、Influencer、Economic Buyer、Technical Buyer など
+- [GitLab の単一アプリケーションの提案](/handbook/sales/commercial/#custom-deck-requirements) を提供し、顧客からビジョンに関するフィードバックを収集
 - 顧客の [短期および長期の優先事項](https://gitlab.edcast.com/journey/introduction-to-the-required-introduction/cards/1342269) を特定
 - [次のステップ](/handbook/sales/commercial/#opportunity-next-steps-best-practices) を埋める
 
@@ -90,9 +90,9 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 ---
 
-### 2-Scoping
+### 2-Scoping {#2-scoping}
 
-*痛みを検証し、これらの痛みが顧客/見込み顧客のトップビジネス課題、望ましい未来状態を達成するために必要なケイパビリティ、そして GitLab がその課題を解決するために独自にポジショニングされている方法にどう繋がるかを判断します。*
+*課題を検証し、それらが顧客／見込み顧客の最も重要なビジネス上の課題にどう結び付くか、望ましい将来の状態を達成するために必要な能力は何か、GitLab がその課題の解決においてどのような独自の強みを持つかを判断します。*
 
 このステージで完了する **主要アクティビティ**:
 
@@ -108,16 +108,16 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - ビジネス要件の理解とドキュメント化
 - 技術要件の取得
 - [Metrics/ROI](/handbook/sales/command-of-the-message/metrics/) 会話の開始
-- GitLab がどう、誰によって実装されるかをレビュー、必要に応じて GitLab および/またはパートナーの [professional services](/handbook/customer-experience/professional-services-engineering/selling/) についてのディスカッションを開く
+- GitLab がどう、誰によって実装されるかをレビュー、必要に応じて GitLab および/またはパートナーの [プロフェッショナルサービス](/handbook/customer-experience/professional-services-engineering/selling/) についてのディスカッションを開く
 - 必要に応じて [パートナー/チャネル](https://docs.google.com/document/d/18xqRRCkIXlR7r4BvBQnK9n9zE70q-KPga-lVHhVw4n4/edit) を紹介
 - [競合差別化](https://internal.gitlab.com/handbook/sales/command-of-the-message/#gitlab-differentiators)
-- [proof points](/handbook/sales/command-of-the-message/proof-points/)、[ケーススタディ](https://gitlab.com/gitlab-com/marketing/strategic-marketing/customer-reference-content/case-study-content/-/boards/1804878?scope=all&utf8=%E2%9C%93)、[競合情報](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/#competitive-intelligence-at-gitlab) を提供 (防御可能な差別化要因)
-- 顧客とともに [GitLab maturity/adoption](/handbook/product/product-principles/#multi-feature-usage-adoption-journey) ロードマップを作成
-- 顧客組織を横断して [Multi-thread](/handbook/sales/playbook/discovery/#lack-of-multi-threading)
+- [裏付けとなる根拠](/handbook/sales/command-of-the-message/proof-points/)、[ケーススタディ](https://gitlab.com/gitlab-com/marketing/strategic-marketing/customer-reference-content/case-study-content/-/boards/1804878?scope=all&utf8=%E2%9C%93)、[競合情報](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/#competitive-intelligence-at-gitlab) を提供 (防御可能な差別化要因)
+- 顧客とともに [GitLab の成熟度／活用](/handbook/product/product-principles/#multi-feature-usage-adoption-journey) ロードマップを作成
+- 顧客組織を横断して[複数の関係者との関係を構築](/handbook/sales/playbook/discovery/#lack-of-multi-threading)
 - Salesforce 商談で **SA Request ボタン** を使って SA エンゲージメントリクエストを作成。SA のエンゲージメントの詳細は [Commercial SA Engagement Model ハンドブックページ](/handbook/solutions-architects/processes/commercial/) を参照。
 - [カスタムデッキ](/handbook/sales/commercial/#opportunity-specific-slide-deck) を GitLab 内部チームメンバーと共有し、商談を引き継ぐ SA がカスタムデッキにすぐアクセスできるようにする
 - 技術評価のための共有アジェンダ/戦略/アウトカムを作成する SA とのミーティングを設定
-- SA/Account チームがレビューした情報に基づいて事前エンゲージメントの discovery/demo 質問を作成
+- SA／アカウントチームがレビューした情報に基づいて協業開始前のディスカバリー／デモの質問を作成
 - [次のステップ](/handbook/sales/commercial/#opportunity-next-steps-best-practices) を更新
 
 **終了基準:**
@@ -130,15 +130,15 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 ---
 
-### 3-Technical Evaluation
+### 3-Technical Evaluation {#3-technical-evaluation}
 
-*技術 qualification が顧客/見込み顧客のニーズに合致することを検証します。*
+*技術的な適合性が顧客／見込み顧客のニーズに合致することを検証します。*
 
 このステージで完了する **主要アクティビティ**:
 
 - [Channel および/または Alliance](https://docs.google.com/document/d/18xqRRCkIXlR7r4BvBQnK9n9zE70q-KPga-lVHhVw4n4/edit) パートナーのエンゲージメント (該当する場合)
 - カスタマイズされたデモ
-- 該当する場合はトライアル。SA がこれを SA アシステッドまたは顧客のセルフマネージドのどちらにするか判断
+- 該当する場合はトライアル。SA が支援するか、顧客が自ら管理するかを SA が判断
 - 必要に応じて追加のステークホルダーをフォローアップ
 - [MEDDPPICC:](/handbook/sales/meddppicc/#economic-buyer) Decision Criteria、Decision Process、Paper Process
 - ビジョンピッチ (なぜ買うべきか)
@@ -148,9 +148,9 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - 技術要件の理解を顧客とレビュー/検証
 - 顧客との録画されたテーラードデモ
 - [First Order](/handbook/sales/commercial/#mid-market-key-accounts-first-order) または [Named Accounts](/handbook/sales/commercial/#mid-market-account-executive): 技術評価でより非同期的なコミュニケーションアプローチが必要な場合、SA は Slack チャンネルのリクエストを提出することがあります。
-- SA がトライアルを SA アシステッドにするか、顧客のセルフマネージドにするか判断
+- SA がトライアルを支援するか、顧客が自ら管理するかを判断
 - 顧客と協力して評価の成功基準、タイムフレーム、次のステップを決定
-- 購買プロセス (例: paper process、承認、署名など) を理解
+- 購買プロセス (例: 契約手続き、承認、署名など) を理解
 - 顧客から [トライアルライセンス延長](/handbook/support/license-and-renewals/workflows/self-managed/trials/) がリクエストされた場合、AE と相談し、延長を許可する前に顧客とプロジェクトプランを準備する。
 - 関与が必要な他のチーム/事業部を特定 (他の参入ポイント)
 - 独自のニーズを持つステークホルダー向けの追加デモをスケジュール
@@ -170,7 +170,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 ---
 
-### 4-Proposal
+### 4-Proposal {#4-proposal}
 
 *ビジネスおよび技術的課題が発掘され解決されました。ゴールは顧客と会って、ROI/正当化をレビューし協力的に微調整することです。チャンピオンと準備して Economic Buyer とプロポーザルについてミーティングを行うか、または GitLab に代わってチャンピオンが内部で販売できるよう支援します。Economic Buyer に提示するデッキまたは価格ドキュメントを準備します。*
 
@@ -202,11 +202,11 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - 相互クローズプラン/タイムラインへの合意 (短期/長期の購入オプションで顧客と協力しタイムラインを理解)
 - 調達プロセスの確認 (パートナーを使用するかを考慮)
 - 実装戦略の確認
-- [MEDDPPICC](/handbook/sales/meddppicc/#economic-buyer) - paper process
+- [MEDDPPICC](/handbook/sales/meddppicc/#economic-buyer) - 契約手続き
 
 ---
 
-### 5-Negotiating
+### 5-Negotiating {#5-negotiating}
 
 *契約、価格、ビジネス、法的条件を最終化します。*
 
@@ -221,7 +221,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 - $50K 未満: SA と AE は取引クロージャー時に [デジタルオンボーディング](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/#digital-customer-programs) メールを受け取るコンタクトの準備を始められる
 - ビジネス条件への合意 (すべてのプロポーザルは標準の [GitLab Terms](https://about.gitlab.com/terms/#subscription/) を含むべき)
-- アカウントが自社の paper を使用したい場合、商談が $100k 超の場合のみリクエストが検討され、リクエストは [こちら](/handbook/sales/field-operations/order-processing/#request-for-gitlab-review-of-customer-edits-to-gitlab-template-or-review-of-customer-agreement-template) のプロセスに従って SalesForce で Legal ケースを作成して Legal に送られるべき
+- アカウントが自社の契約書式を使用したい場合、商談が $100k 超の場合のみリクエストが検討され、リクエストは [こちら](/handbook/sales/field-operations/order-processing/#request-for-gitlab-review-of-customer-edits-to-gitlab-template-or-review-of-customer-agreement-template) のプロセスに従って SalesForce で Legal ケースを作成して Legal に送られるべき
 - 商談クローズ時に顧客がリファレンス可能になるかを判断
 - 価格/最終条件交渉
 - パートナーを活用して取引クローズを支援するか、Partner Sourced 取引のクローズをサポート
@@ -235,9 +235,9 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 ---
 
-### 6-Awaiting Signature
+### 6-Awaiting Signature {#6-awaiting-signature}
 
-*ドキュメントは実行準備が整った最終状態にあります。*
+*書類は締結準備が整った最終状態にあります。*
 
 このステージで完了する **主要アクティビティ**:
 
@@ -247,16 +247,16 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 **終了基準:**
 
-- 完全に実行されたドキュメントを受領
-- 完全に実行されたドキュメントを SFDC 商談に添付 (AE のアップロードを検証)
-- 完全に実行されたドキュメントを受領
+- 締結済みの書類を受領
+- 締結済みの書類を SFDC 商談に添付 (AE のアップロードを検証)
+- 締結済みの書類を受領
 - PO (該当する場合) を受領
 - ベンダー登録プロセスを完了
 - [EULA](/handbook/legal/subscription-agreement/) (End User License Agreement) がエンドユーザーによって受諾された
 
 ---
 
-### 7-Closing
+### 7-Closing {#7-closing}
 
 *ドキュメントと商談の完全性を検証し、Closed Won の準備ができていることを確認します。セールスアシステッドのトランザクションのみに適用されます。*
 
@@ -266,10 +266,10 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - 商談が Deal Desk によるブッキングレビュー用のレポートに流れる
 - 署名済み Order Form (OF) または [見積もりを参照する PO](/handbook/sales/field-operations/order-processing/#opportunity-booking-requirements)
 - Order Form が見積もりおよび商談と一致
-- Order Form が完全に実行された (署名と日付)
+- Order Form が締結済み (署名と日付)
 - 任意の理由を記載して承認
-- 承認ステータス = Deal Desk Approved となり、課金に進む
-- 課金がレビュー/承認し、Closed Won となり、Approval Status = Approved となる
+- Approval status = Deal Desk Approved となり、Billing に進む
+- Billing がレビュー／承認し、Closed Won となり、Approval Status = Approved となる
 - 拒否された場合、理由のノートを追加し、商談オーナーにメールを送信。商談はコメントに基づいてアクションを取れます。
 - 複雑な場合、拒否し、担当者にチャッターを送信。商談は Awaiting Signature に戻り、商談がアンロックされ、担当者は応答できます。
 
@@ -279,14 +279,14 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 ---
 
-### Closed Won
+### Closed Won {#closed-won}
 
 *おめでとうございます!! 条件が両当事者によって合意され、見積もりが Finance によって承認されました。*
 
 - CSM が新規 [カスタマーエンゲージメント](/handbook/customer-experience/comm-sales/) を開始 ($50K+)
 - AE が顧客とパートナー (該当する場合) と関わり成功を確保
 - パートナーサービスをキックオフ (該当する場合)
-- AE が顧客との初期 30 日フォローアップミーティングをスケジュール (Named/Territory、または高価値商談)
+- AE が顧客との初期 30 日フォローアップミーティングをスケジュール (Named/Territory、+ より高額の商談)
 - Named/Territory AE - 顧客とのアカウントレビューケイデンスを作成
 - Named/Territory AE が [Account Rank](/handbook/sales/commercial/#account-ranking) 1、1.5、2 に基づいて 18 〜 24 ヶ月の成長プランを作成
 - AE が顧客とケーススタディの期待値を構築 (何が機能しているか/していないかについていつ頃フィードバックをもらえるか、いつ法務にケーススタディを依頼できるか? あなたの尊敬を得てケーススタディを構築するためには何が必要か、または別の顧客とリファレンスとして会ってくれるか? パネルに参加してくれるかなど)
@@ -297,7 +297,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 ---
 
-### 8-Closed Lost
+### 8-Closed Lost {#8-closed-lost}
 
 *商談が失われ、見込み顧客/顧客は GitLab の購入を進めないことを決定しました*
 
@@ -308,4 +308,4 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - 潜在的な再エンゲージメントのためのすべてのノート/次のステップが更新されていることを確認
 - 高ポテンシャルの closed-lost アカウントで新しい商談を発掘するため「チェックイン」コールをスケジュール
 - 該当する場合はパートナーコールをスケジュールし、損失をレビューして将来の商談を探る
-- キャリアの進歩のため、マネージャーと共有すべき学んだ教訓は何か?
+- キャリアの進歩のため、マネージャーと共有すべき学んだ教訓は何か？

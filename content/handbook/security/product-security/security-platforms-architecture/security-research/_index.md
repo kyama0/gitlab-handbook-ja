@@ -1,35 +1,35 @@
 ---
 title: "Security Research"
-description: "Security Research チームは、GitLab とそのユーザーが直面する複雑なセキュリティリスクの特定、定量化、ソリューション開発に焦点を当てたプロジェクトを通じて、Security Vision and Mission に貢献します。"
+description: "Security Research チームは、GitLab とそのユーザーが直面する複雑なセキュリティリスクの特定、定量化、ソリューション開発に焦点を当てたプロジェクトを通じて、セキュリティのビジョンとミッション に貢献します。"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/security-research/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:32:39.105989+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-## チームの焦点
+## チームの焦点 {#team-focus}
 
-Security Research チームは、GitLab とそのユーザーが直面する複雑なセキュリティリスクの特定、定量化、ソリューション開発に焦点を当てたプロジェクトを通じて、[Security Vision and Mission](/handbook/security/#i-classfas-fa-rocket-idbiz-tech-iconsi-security-vision-and-mission) に貢献します。この作業は製品と会社のセキュリティポスチャを改善することを目指しますが、常に差別化要因として新しい機能性に貢献することにも目を向けています。さらに、GitLab Security プログラムへの教育と認知度向上のため、結果を広く共有することを目指しています。
+Security Research チームは、GitLab とそのユーザーが直面する複雑なセキュリティリスクの特定、定量化、ソリューション開発に焦点を当てたプロジェクトを通じて、[セキュリティのビジョンとミッション](/handbook/security/#security-vision-and-mission)に貢献します。この作業は製品と会社のセキュリティポスチャを改善することを目指しますが、常に差別化要因として新しい機能性に貢献することにも目を向けています。さらに、GitLab Security プログラムへの教育と認知度向上のため、結果を広く共有することを目指しています。
 
-このビジョンを実現するため、チームのプロジェクトは [役割定義](/job-description-library/security/security-research/) に従って、一般的に以下のカテゴリーに沿っています。
+このビジョンを実現するため、チームのプロジェクトは [役割定義](/job-description-library/security/security-research/)に従って、一般的に以下のカテゴリーに沿っています。
 
 - セキュリティインサイトの提供
 - 新しいセキュリティ機能の開発
 - 教育
 
-### セキュリティインサイトの提供
+### セキュリティインサイトの提供 {#provide-security-insight}
 
 製品としての GitLab と会社としての GitLab を保護するため、セキュリティインサイトプロジェクトは、技術的セキュリティリスクの特定、定量化、コミュニケーションを目指します。
 
 例:
 
 - [GitLab 内で使用されている FOSS アプリケーションと依存関係のセキュリティテスト](#gitlab-ecosystem-security-testing)
-- [脅威モデリング](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/) の導入と実践
+- [脅威モデリング](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/)の導入と実践
 - 内部技術リスクレポートの公開
 
-### セキュリティ能力の開発
+### セキュリティ能力の開発 {#security-capability-development}
 
 セキュリティ能力開発カテゴリーのプロジェクトは、他の人がセキュアにイノベーションできるようにする新しいツールを提供することを目指します。
 
@@ -39,7 +39,7 @@ Security Research チームは、GitLab とそのユーザーが直面する複�
 - [Untamper My Lockfile](https://gitlab.com/gitlab-org/frontend/untamper-my-lockfile)
 - トークンリーク用ツール
 
-### 教育
+### 教育 {#education}
 
 私たちのアイデアが他の人が学び、その上に構築できるようにすることを目指しています。その目標を達成するため、結果を可能な限り広く共有しています。
 さらに、専用の教育プロジェクトでは、セキュリティ概念の認知度を高めるために魅力的なセキュリティコンテンツを開発することを目指しています。
@@ -55,16 +55,16 @@ Security Research チームは、GitLab とそのユーザーが直面する複�
 
 研究の成果が期待された結果をもたらさない場合でも、研究フェーズで実施されたアプローチや手順は文書化され公開されるべきです。
 
-## プロジェクトライフサイクル
+## プロジェクトライフサイクル {#project-lifecycle}
 
 Security Research プロジェクトライフサイクルは、研究課題の技術的検証を素早くイテレーションするように設計されています。技術的検証の後にはビジネス検証が行われ、ステークホルダーが正式に特定され、具体的な成果物が定義されます。このワークフローでは、新しいアイデアの探求が可能ですが、プロジェクトがビジネス目標に沿うことが保証されます。
-プロジェクトの優先順位付け方法の詳細は [プロジェクトの優先順位付け](#project-prioritization) で説明されています。
+プロジェクトの優先順位付け方法の詳細は [プロジェクトの優先順位付け](#project-prioritization)で説明されています。
 
-### 参加者
+### 参加者 {#participants}
 
-#### チームメンバー
+#### チームメンバー {#team-members}
 
-専門家として、Security Research チームメンバーは自分のプロジェクトを自分で指揮するスペースが与えられています。そのために、彼らは多くの異なるソースからのデータを使い、ビジネスとより大きなセキュリティコミュニティに対して影響を与えられる場所に焦点を当てることを決定します。
+専門家として、Security Research チームメンバーは自分のプロジェクトを自分で指揮するスペースが与えられています。そのために、チームメンバーは多くの異なるソースからのデータを使い、ビジネスとより大きなセキュリティコミュニティに対して影響を与えられる場所に焦点を当てることを決定します。
 
 データソースの一部:
 
@@ -73,19 +73,19 @@ Security Research プロジェクトライフサイクルは、研究課題の�
 - GitLab チームメンバーへのアウトリーチ
 - セキュリティ業界のトレンド
 
-#### チームマネージャー
+#### チームマネージャー {#team-manager}
 
-チームマネージャーの役割は、プロジェクトでチームメンバーをサポートしガイドすることです。これには彼らが収集する情報を共有することと、他のチームメンバーとのコミュニケーションを促進することが含まれます。マネージャーが影響を与えられる例の 1 つは、社内で特定されたセキュリティに関する質問/問題を提起することです。
+チームマネージャーの役割は、プロジェクトでチームメンバーをサポートしガイドすることです。これにはマネージャーが収集する情報を共有することと、他のチームメンバーとのコミュニケーションを促進することが含まれます。マネージャーが影響を与えられる例の 1 つは、社内で特定されたセキュリティに関する質問/問題を提起することです。
 
-#### ステークホルダー
+#### ステークホルダー {#stakeholders}
 
-プロジェクトがビジネス目標とよく整合していることを保証するため、私たちのプロジェクトのスポンサーとなる社内のステークホルダーを特定するよう努めます。ステークホルダーはいつでも特定できますが、技術的なアイデアが検証されたらステークホルダーを特定するようにも努めます。チームメンバーは、チームに連絡するか [Lightbulb Issue](#lightbulb-ideas) を開くことで、ステークホルダーになることを志願できます。
+プロジェクトがビジネス目標とよく整合していることを保証するため、私たちのプロジェクトのスポンサーとなる社内のステークホルダーを特定するよう努めます。ステークホルダーはいつでも特定できますが、技術的なアイデアが検証されたらステークホルダーを特定するようにも努めます。チームメンバーは、チームに連絡するか [Lightbulb Issue](#lightbulb-ideas)を開くことで、ステークホルダーになることを志願できます。
 
 ### Lightbulb アイデア {#lightbulb-ideas}
 
-Lightbulb アイデアは Security Research プロジェクトの最初のステップです。これらは、調査する価値があり、ビジネス目標と広く整合していると私たちが信じる、ひらめきを得た [研究課題](https://en.wikipedia.org/wiki/Research_question) です。Lightbulb アイデアには `~security-research::lightbulb` ラベルが付けられ、オープンな Lightbulb アイデアはチームロードマップを形作るのに役立てるため、Security Research の同期会議中に議論されます。Lightbulb アイデアは、Security Research チームと提携することに興味のある誰でも開くことができます。
+Lightbulb アイデアは Security Research プロジェクトの最初のステップです。これらは、調査する価値があり、ビジネス目標と広く整合していると私たちが信じる、ひらめきを得た [研究課題](https://en.wikipedia.org/wiki/Research_question)です。Lightbulb アイデアには `~security-research::lightbulb` ラベルが付けられ、オープンな Lightbulb アイデアはチームロードマップを形作るのに役立てるため、Security Research の同期会議中に議論されます。Lightbulb アイデアは、Security Research チームと提携することに興味のある誰でも開くことができます。
 
-Lightbulb アイデアには `~security-research::lightbulb` ラベルが付けられます。プロジェクトの目標を整合させ伝えるために、`~Security Focus::` および `~Project Goal::` スコープラベルが使用されます。Lightbulb の Issue 作成時には、各グループから 1 つのラベルを適用する必要があります。詳細については [チームラベル](#team-labels) を参照してください。
+Lightbulb アイデアには `~security-research::lightbulb` ラベルが付けられます。プロジェクトの目標を整合させ伝えるために、`~Security Focus::` および `~Project Goal::` スコープラベルが使用されます。Lightbulb の Issue 作成時には、各グループから 1 つのラベルを適用する必要があります。詳細については [チームラベル](#team-labels)を参照してください。
 
 ### プロジェクトの優先順位付け {#project-prioritization}
 
@@ -99,7 +99,7 @@ Lightbulb アイデアには `~security-research::lightbulb` ラベルが付け�
 
 新しいプロジェクトが優先順位付けされたら、以下に定義されているプロジェクト完了基準に従います。
 
-### プロジェクト完了基準
+### プロジェクト完了基準 {#project-completion-criteria}
 
 プロジェクトが完了したとみなされるかどうかは、プロジェクトの目的によって異なります。研究プロジェクトの目的は次のとおりです。
 
@@ -109,7 +109,7 @@ Lightbulb アイデアには `~security-research::lightbulb` ラベルが付け�
 
 すべての (自主指導の) プロジェクトはアイデア検証から始まり、GitLab 社内採用および/または GitLab 製品統合へと拡大される可能性があります。
 
-#### アイデア検証
+#### アイデア検証 {#idea-validation}
 
 入口基準:
 
@@ -121,7 +121,7 @@ Lightbulb アイデアには `~security-research::lightbulb` ラベルが付け�
 - 研究課題の回答が得られている
 - 研究結果が文書化され、潜在的なステークホルダーに伝えられている
 
-アイデア検証フェーズは、研究プロジェクトで答えを求める 1 つ以上の研究課題を策定することから始まります ([Lightbulb アイデア](#lightbulb-ideas) も参照)。アイデアは、作業を会社の目標と整合させるため、Security 部門の焦点領域に関連すべきです。質問に答えられたら、アイデア検証フェーズは完了し、結果はカンファレンストーク、ブログ投稿、テックノートとして公開されるべきです。結果はまた、Security 部門のピアと、その作業に関連性のあるプロダクトマネージャーに対して、社内で集中的に共有されるべきです。
+アイデア検証フェーズは、研究プロジェクトで答えを求める 1 つ以上の研究課題を策定することから始まります ([Lightbulb アイデア](#lightbulb-ideas) も参照)。アイデアは、作業を会社の目標と整合させるため、Security Department の焦点領域に関連すべきです。質問に答えられたら、アイデア検証フェーズは完了し、結果はカンファレンストーク、ブログ投稿、テックノートとして公開されるべきです。結果はまた、Security Department のピアと、その作業に関連性のある product managers に対して、社内で集中的に共有されるべきです。
 
 #### GitLab 社内採用 {#gitlab-internal-adoption}
 
@@ -160,15 +160,15 @@ Lightbulb アイデアには `~security-research::lightbulb` ラベルが付け�
 | 成果物   |  <ul><li>PoC</li><li>講演、ブログ投稿、テックノート</li></ul>  |  <ul><li>コード、インフラ、ソフトウェアサービス</li><li>ハンドブック MR</li></ul>  | <ul><li>コード、インフラ、ソフトウェアサービス</li><li>ドキュメント MR</li></ul>  |
 | 期間 (見積) | 1〜2 四半期 | 2〜3 四半期 | 3〜4 四半期 |
 
-#### 結果の伝達
+#### 結果の伝達 {#communicating-results}
 
-各プロジェクトフェーズの終わりに、チームメンバーは結果を共有します。私たちの目標は、結果を可能な限り広く共有することです。したがって、感度と時間制約を考慮して最も適切なコミュニケーション形式が選択されます。一部のケースでは、作業の感度のため、結果はより広く共有できる時まで会社内でのみ共有されます。
+各プロジェクトフェーズの終わりに、チームメンバーは結果を共有します。私たちの目標は、結果を可能な限り広く共有することです。したがって、機密性と時間制約を考慮して最も適切なコミュニケーション形式が選択されます。一部のケースでは、作業の機密性のため、結果はより広く共有できる時まで会社内でのみ共有されます。
 
 ### チームラベル {#team-labels}
 
-#### Security Focus ラベル
+#### Security Focus ラベル {#security-focus-labels}
 
-[`~Security Focus::`](https://gitlab.com/groups/gitlab-com/gl-security/-/labels?subscribed=&search=Security+Focus) ラベルは、ビジネスのリスクと優先順位に基づいて、Security 部門の広い高レベルな焦点領域に Issue を整合させるために使用されます。リストは安定的であることを意図していますが、固定的ではありません。
+[`~Security Focus::`](https://gitlab.com/groups/gitlab-com/gl-security/-/labels?subscribed=&search=Security+Focus) ラベルは、ビジネスのリスクと優先順位に基づいて、Security Division の広い高レベルな焦点領域に Issue を整合させるために使用されます。リストは安定的であることを意図していますが、固定的ではありません。
 
 - `Security Focus::Cloud and Infrastructure Security` - 会社のプロダクションおよび非プロダクションのクラウドおよびインフラ環境の安全な構成と使用に関連
 - `Security Focus::Data Security Governance` - 会社に信頼されたデータの保護に関するコントロール、プロセス、ポリシーに関連
@@ -176,7 +176,7 @@ Lightbulb アイデアには `~security-research::lightbulb` ラベルが付け�
 - `Security Focus::Supply-chain Security` - ビジネスに必要な第三者のコード、データ、サービスに対する信頼の確立に関連
 - `Security Focus::Other` - 4 つの主要な焦点領域に当てはまらないものに関連
 
-#### Project Goal ラベル
+#### Project Goal ラベル {#project-goal-labels}
 
 [`~Project Goal::`](https://gitlab.com/groups/gitlab-com/gl-security/security-research/-/labels?search=Project+Goal&subscribed=) ラベルは、プロジェクトの高レベルな目標を伝えるために使用されます。
 
@@ -185,15 +185,15 @@ Lightbulb アイデアには `~security-research::lightbulb` ラベルが付け�
 - `Project Goal::Team Maturity::Processes` - プロジェクトは、チームプロセスを成熟させ、チームの動作の理解を改善することを目指します。
 - `Project Goal::Team Maturity::Technical Growth` - プロジェクトは、チームの特定の技術領域への理解を成長させることを目指します。学習に焦点を当て、将来のプロジェクトに応用できることを重視します。
 
-### 現在および過去の研究プロジェクト
+### 現在および過去の研究プロジェクト {#current-and-past-research-projects}
 
-#### Package Hunter
+#### Package Hunter {#package-hunter}
 
 npm や bundler のような最新の依存関係管理システムは、コードの再利用を簡単で広範囲なものにします。これにより開発者の生産性が向上し、アプリケーション実装の時間が短縮されます。しかし、依存関係管理システムは新しい課題ももたらします。比較的小さいアプリケーションでも、サードパーティ依存関係の数はすぐに数百に増えます。これらの依存関係はアプリケーションのセキュリティに重要であるため、脆弱性と悪意のあるコードがないか慎重に精査する必要があります。依存関係コードの量が膨大で開発者の時間が貴重であるため、このタスクを手動で実行するのは通常は実現不可能です。自動化ツールは、依存関係のレビューをサポートし、悪意のある依存関係がアプリケーションのサプライチェーンに侵入するのを防ぐために不可欠です。この課題に取り組むため、私たちは悪意のある npm モジュールと Ruby Gems を特定するツールである Package Hunter を開発しました。Package Hunter は、アプリケーション依存関係のインストール時にシステムコールを監視します。疑わしいシステムコールが観測された場合、アラートが作成され、開発チームに通知されます。
 
 Package Hunter はオープンソースです。Package Hunter を試すには [プロジェクト](https://gitlab.com/gitlab-org/security-products/package-hunter) サイトにアクセスしてください。独自の Package Hunter インスタンスを実行するための [手順](https://gitlab.com/gitlab-org/security-products/package-hunter#installation) と、CI パイプラインで依存関係を分析するのを始めるための [CI テンプレート](https://gitlab.com/gitlab-org/security-products/package-hunter-cli/-/blob/main/ci/template/Package-Hunter.gitlab-ci.yml) があります。
 
-私たちは貢献も歓迎しています。Package Hunter の開発に参加することに興味がある場合は、[コントリビューションガイド](https://gitlab.com/gitlab-org/security-products/package-hunter/-/blob/main/CONTRIBUTING.md) を参照してください。
+私たちは貢献も歓迎しています。Package Hunter の開発に参加することに興味がある場合は、[コントリビューションガイド](https://gitlab.com/gitlab-org/security-products/package-hunter/-/blob/main/CONTRIBUTING.md)を参照してください。
 
 Security Research チームは、GitLab で内部的に使用される Package Hunter インスタンスを維持しています。このインスタンスは、`https://api.package-hunter-live.sec.gitlab.net` および `https://api.package-hunter.xyz` でアクセス可能です。
 
@@ -203,11 +203,11 @@ GitLab 内の Security Research チームは、定期的にオープンソース
 
 このページでは、これらの取り組みに関する理由、アプローチ、ワークフローを説明します。
 
-#### 全員のための OSS エコシステムの強化
+#### 全員のための OSS エコシステムの強化 {#strengthening-the-oss-ecosystem-for-everyone}
 
-GitLab は膨大な量のオープンソースソフトウェアに依存しており、これは直接のコード依存関係に限らず、社内で使用されている他のコンポーネントも含みます。GitLab の全体的なセキュリティポスチャと、私たちの OSS 依存関係のすべての他のユーザーのセキュリティポスチャを強化するため、Security Research チームは [評価予定の OSS プロジェクトリスト](https://gitlab.com/gitlab-com/gl-security/security-research/ecosystem-security/-/blob/main/projects.yaml) (内部リンク) を維持しています。リストは以下のカテゴリーから埋められます。
+GitLab は膨大な量のオープンソースソフトウェアに依存しており、これは直接のコード依存関係に限らず、社内で使用されている他のコンポーネントも含みます。GitLab の全体的なセキュリティポスチャと、私たちの OSS 依存関係のすべての他のユーザーのセキュリティポスチャを強化するため、Security Research チームは [評価予定の OSS プロジェクトリスト](https://gitlab.com/gitlab-com/gl-security/security-research/ecosystem-security/-/blob/main/projects.yaml) (内部リンク)を維持しています。リストは以下のカテゴリーから埋められます。
 
-- **Cornerstone Project** (1)
+- **基盤となるプロジェクト** (1)
   - このカテゴリーは、潜在的に大きなコードベースを持つ広く使用されている OSS プロジェクトを対象としています。
 - **GitLab アプリケーションの依存関係** (3)
   - GitLab に同梱されるコード依存関係およびその他のオープンソースプロジェクトを含みます。
@@ -229,13 +229,13 @@ GitLab は膨大な量のオープンソースソフトウェアに依存して�
 
 このリストからプロジェクトが評価されると、ファネルを常に満たすように、リストの空きには別のプロジェクトが追加されます。
 
-#### ドキュメント
+#### ドキュメント {#documentation}
 
 すべてのプロジェクトと関連アーティファクトは、プロジェクト進行中は [sec-research](https://gitlab.com/gitlab-com/gl-security/security-research/sec-research/) リポジトリに内部的に文書化されます。このリポジトリは結果の SSOT であり、生のアーティファクト、書き起こし、該当する場合は PoC を含みます。
 
-プロジェクトが完了し、特定されたセキュリティ Issue がすべてクローズされると、公開向けドキュメントが [Threat Management tech notes](https://gitlab.com/gitlab-com/gl-security/security-operations/redteam/redteam-public/red-team-tech-notes) リポジトリに公開されます。該当する場合、研究の詳細な技術的背景を含むブログ投稿が、External Security Communications チームと協力して作成されます。
+プロジェクトが完了し、特定されたセキュリティ上の問題 がすべてクローズされると、公開向けドキュメントが [Threat Management tech notes](https://gitlab.com/gitlab-com/gl-security/security-operations/redteam/redteam-public/red-team-tech-notes) リポジトリに公開されます。該当する場合、研究の詳細な技術的背景を含むブログ投稿が、External Security Communications チームと協力して作成されます。
 
-#### メトリクス
+#### メトリクス {#metrics}
 
 Ecosystem Security Testing について、プログラムの全体的な進捗と影響に関するインサイトを得るため、以下のメトリクスをキャプチャしています。
 
@@ -243,7 +243,7 @@ Ecosystem Security Testing について、プログラムの全体的な進捗�
 1. レビューあたりに特定された Issue
 1. レビューあたりに開かれた GitLab 改善 Issue
 
-`四半期あたりにクローズされたレビュー Issue` および `レビューあたりに特定された Issue` を測定するため、[Ecosystem Security Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/security-research/ecosystem-security/-/labels) (内部リンク) で以下のラベルが作成されました。
+`四半期あたりにクローズされたレビュー Issue` および `レビューあたりに特定された Issue` を測定するため、[Ecosystem Security Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/security-research/ecosystem-security/-/labels) (内部リンク)で以下のラベルが作成されました。
 
 - `~EcosystemSecurity::Project`
 - `~EcosystemSecurity::Finding`
@@ -252,27 +252,27 @@ Ecosystem Security Testing について、プログラムの全体的な進捗�
 
 - `~SecResearch Followup::Ecosystem`
 
-### コードレビューセッション
+### コードレビューセッション {#code-review-sessions}
 
-[チームメンバーからのリクエスト](https://gitlab.com/gitlab-com/gl-security/security-research/sec-research/-/issues/new?issuable_template=Code%20review%20session) (内部リンク) に基づいて、Security Research チームは「コードレビューセッション」を主催し、特定のコード片のセキュリティレビューでペアリングします。これらのセッションは記録されます。
+[チームメンバーからのリクエスト](https://gitlab.com/gitlab-com/gl-security/security-research/sec-research/-/issues/new?issuable_template=Code%20review%20session) (内部リンク)に基づいて、Security Research チームは「コードレビューセッション」を主催し、特定のコード片のセキュリティレビューでペアリングします。これらのセッションは記録されます。
 
 レビューはすべて脆弱性の特定に関連します。
 
 これらのセッションの目的は、両方の側で学ぶこと、興味深い新しい技術やソフトウェア概念で私たちにチャレンジしてもらうこと、そして見返りに、私たちが特定のコードベースに対する脆弱性の特定アプローチを共有するのにベストを尽くすことです。
 
-### 脆弱性開示ガイドライン
+### 脆弱性開示ガイドライン {#vulnerability-disclosure-guidelines}
 
-脆弱性開示はデリケートなプロセスであり、報告者にとってのワンサイズフィットオールのアプローチはありません。Security Research チーム内では、可能な禁輸期間を尊重しつつ、GitLab のインフラ内でのタイムリーな修正と、ベンダー側での修正に焦点を当て、最も効果的な方法で各脆弱性を報告するように努めます。
+脆弱性開示はデリケートなプロセスであり、報告者にとってのワンサイズフィットオールのアプローチはありません。Security Research チーム内では、公開禁止期間が設けられている場合はそれを尊重しつつ、GitLab のインフラ内でのタイムリーな修正と、ベンダー側での修正に焦点を当て、最も効果的な方法で各脆弱性を報告するように努めます。
 
-[テックスタック](/handbook/business-technology/tech-stack-applications/) にリストされているサードパーティソフトウェアの脆弱性開示は、テックスタック項目のそれぞれの所有者と調整される必要があります。彼らはベンダー側の追加の連絡先を持っているか、特定された脆弱性のための一時的な緩和策を実装するためのより多くのコンテキストを持っているかもしれません。
+[Tech Stack](/handbook/business-technology/tech-stack-applications/)にリストされているサードパーティソフトウェアの脆弱性開示は、Tech Stack 項目のそれぞれの所有者と調整される必要があります。所有者はベンダー側の追加の連絡先を持っているか、特定された脆弱性のための一時的な緩和策を実装するためのより多くのコンテキストを持っているかもしれません。
 
-実際のリスクと露出に応じて、開示に関する情報をさらに制限する必要があるかもしれません。そのような場合は、[SIRT](/handbook/security/product-security/psirt/runbooks/working-with-sirt/) を関与させることが推奨されます。
+実際のリスクと露出に応じて、開示に関する情報をさらに制限する必要があるかもしれません。そのような場合は、[SIRT](/handbook/security/product-security/psirt/runbooks/working-with-sirt/)を関与させることが推奨されます。
 
-すべての場合において、チームは [GitLab のサードパーティソフトウェアの脆弱性に対する開示ガイドライン](https://about.gitlab.com/security/disclosure/#disclosure-guidelines-for-vulnerabilities-in-3rd-party-software) に従います。
+すべての場合において、チームは [GitLab のサードパーティソフトウェアの脆弱性に対する開示ガイドライン](https://about.gitlab.com/security/disclosure/#disclosure-guidelines-for-vulnerabilities-in-3rd-party-software)に従います。
 
-## バグバウンティと講演料
+## バグバウンティと講演料 {#bug-bounties-and-speaker-fees}
 
-Security Research の結果として、チームメンバーが GitLab での労働時間中に特定された報告済み脆弱性に対してバグバウンティの提供を受けることがあります。そのような場合、バウンティの支払いは、ベンダーから慈善団体に寄付される代わりにすべきです。
+Security Research の結果として、チームメンバーが GitLab での労働時間中に特定された報告済み脆弱性に対してバグバウンティの提供を受けることがあります。そのような場合、代わりにベンダーが報奨金を慈善団体へ寄付すべきです。
 
 GitLab を代表して開催されるカンファレンスプレゼンテーションのために提供される可能性のある講演料についても同じことを行うべきです。
 

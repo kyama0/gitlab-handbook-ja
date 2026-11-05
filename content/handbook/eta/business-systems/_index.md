@@ -1,11 +1,10 @@
 ---
-title: "IT ビジネスシステム"
+title: "IT Business Systems"
 description: "このページは現在構築中です。"
 upstream_path: "/handbook/eta/business-systems/"
-upstream_sha: "8aa1a9efd98433fb2296996366f1023b5675ea70"
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T14:33:39.824673+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-12T17:03:36-05:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />

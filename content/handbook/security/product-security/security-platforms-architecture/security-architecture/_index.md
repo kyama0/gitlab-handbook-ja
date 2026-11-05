@@ -1,15 +1,13 @@
 ---
-title: "セキュリティアーキテクチャ"
+title: "Security Architecture"
 description: "Security Architects は GitLab Engineering の信頼されるセキュリティアドバイザーです。"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/security-architecture/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T07:58:09.789578+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:32:39.105989+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 ## チーム情報 {#team-information}
 
@@ -81,7 +79,8 @@ Application Security チームは、ソースコードのライフサイクル�
 
 ### 暗号化 {#cryptography}
 
-- 独自の暗号を作らないこと（これは私たちの[セキュリティアーキテクチャ原則](#security-architecture-principles)の 1 つでもあります）
+- 独自の暗号を作らないこと（これは私たちの[セキュリティアーキテクチャ原則](#security-architecture-principles)の 1 つでもあります
+）
 - [GitLab 暗号化標準](/handbook/security/policies_and_standards/cryptographic-standard/)を参照してください
 
 <!-- Add FIPS and FedRamp requirements here when available -->
@@ -225,7 +224,7 @@ Application Security チームは、ソースコードのライフサイクル�
 #### リンク {#links-3}
 
 - [Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
-- [Complexity and exponential change](https://nextconf.eu/2020/02/complexity-and-exponential-change/)
+- [複雑さと指数関数的な変化](https://nextconf.eu/2020/02/complexity-and-exponential-change/)
 
 </details>
 
@@ -442,4 +441,4 @@ TODO（https://gitlab.com/gitlab-com/gl-security/product-security/security-archi
 - [Cyber Defense Matrix](https://cyberdefensematrix.com/)
 - [AWS Well Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [OWASP Developer Guide Reboot](https://github.com/OWASP/DevGuide)
-- [Google Cloud: Optimize your system design using Architecture Framework Principles](https://cloud.google.com/blog/topics/solutions-how-tos/optimize-your-system-design-using-architecture-framework-principles)
+- [Google Cloud: Architecture Framework の原則を用いてシステム設計を最適化する](https://cloud.google.com/blog/topics/solutions-how-tos/optimize-your-system-design-using-architecture-framework-principles)

@@ -1,14 +1,12 @@
 ---
 title: "パートナーテクニカルプリセールスイネーブルメント"
 upstream_path: /handbook/resellers/partner-enablement/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:50:18+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:17:36.457407+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-14T13:22:17-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 パートナープログラムハンドブックの本セクションでは、GitLab パートナーのテクニカル担当の視点から、アセットとイネーブルメントを確認します。
 
@@ -20,9 +18,9 @@ lastmod: "2026-10-14T13:22:17-04:00"
 
 これらの情報をすべて検索するのに役立てるため、[LLM を使うこと](/handbook/resellers/partner-enablement/llm-system-prompts)を検討してください。
 
-## プリセールスおよびテクニカルイネーブルメントリソース
+## プリセールスおよびテクニカルイネーブルメントリソース {#presales-and-technical-enablement-resources}
 
-## 基礎知識
+## 基礎知識 {#foundational-knowledge}
 
 [新規 GitLab.com 顧客向け GitLab クイックスタート](/handbook/customer-experience/customer-onboarding/)
 
@@ -45,9 +43,9 @@ lastmod: "2026-10-14T13:22:17-04:00"
 - [DevOps プラットフォームとは？](https://about.gitlab.com/topics/devops-platform/)
   - 10 個の必須機能と、プラットフォームを最大限に活用するために検討すべき 7 つの事項を扱う優れた概要記事です。
 - [DevSecOps の定義](https://about.gitlab.com/topics/devsecops/)
-  - 既存のガバナンス慣行が最新の開発手法に追いつけているでしょうか? 次世代ソフトウェアに対するアプリケーションセキュリティの新しいアプローチについて学びます。
+  - 既存のガバナンス慣行が最新の開発手法に追いつけているでしょうか？ 次世代ソフトウェアに対するアプリケーションセキュリティの新しいアプローチについて学びます。
 
-## 1. GitLab 製品概要
+## 1. GitLab 製品概要 {#1-gitlab-product-overview}
 
 GitLab とは何か、何を提供し、何を行うのかを学びます。
 
@@ -67,7 +65,7 @@ GitLab とは何か、何を提供し、何を行うのかを学びます。
 - [GitLab 内部セールストレーニングリソース](/handbook/sales/training/)（ハンドブック）
   - GitLab の内部セラーが受講しているすべてのセールス関連トレーニングを確認できます。
 
-## 2. GitLab を提案しソリューションを示す
+## 2. GitLab を提案しソリューションを示す {#2-pitching-gitlab-and-showcasing-a-solution}
 
 最も価値ある課題を特定し、GitLab DevSecOps プラットフォームを活用して価値あるソリューションを構築する方法を学びます。
 
@@ -80,7 +78,7 @@ GitLab とは何か、何を提供し、何を行うのかを学びます。
 - [GitLab が選ばれる理由](https://about.gitlab.com/why-gitlab/)（Web ページ）
   - 顧客が GitLab を選択する主な理由を把握できます（10 分）。
 - [顧客事例](https://about.gitlab.com/customers/)（Web ページ）
-  - 当社の導入事例は、なぜ企業が GitLab を選んでいるのかについてのアイデアを提供します。後のディールでの顧客への正当化のためにブックマークしてください（10 分）。
+  - 私たちの導入事例は、なぜ企業が GitLab を選んでいるのかについてのアイデアを提供します。後のディールでの顧客への正当化のためにブックマークしてください（10 分）。
 
 **GitLab の提案とテクニカルディスカバリー**
 
@@ -91,7 +89,7 @@ GitLab とは何か、何を提供し、何を行うのかを学びます。
 - [ユーザーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)（ハンドブック）
   - これらはお客様内で GitLab の主要ユーザーとなるペルソナタイプです。
 - [バイヤーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)（ハンドブック）
-  - GitLab のようなプラットフォームを販売する際に理解すべき複数のバイヤーペルソナがあります。どれをより重視しますか?（20 分）
+  - GitLab のようなプラットフォームを販売する際に理解すべき複数のバイヤーペルソナがあります。どれをより重視しますか？（20 分）
 
 **競合情報**
 
@@ -121,7 +119,7 @@ GitLab とは何か、何を提供し、何を行うのかを学びます。
 - [CI サンプルデモ](https://gitlab.com/gitlab-learn-labs/webinars/cicd/cicd-samples)
   - 迅速なデモのための CI 機能のサンプル。
 
-## 3.  ディールのクロージング
+## 3.  ディールのクロージング {#3--closing-the-deal}
 
 GitLab ディールの構築と取引方法を学びます。
 
@@ -139,7 +137,7 @@ GitLab ディールの構築と取引方法を学びます。
 - [GitLab 価格表](https://partners.gitlab.com/prm/English/s/assets?collectionId=49441)（ポータル資料）
   - お客様に見積もりを提示する際に利用可能な SKU とリセラー価格を確認してください。（ログイン必須）
 
-## 4.  ポストセールスの実装と導入・活用の過程
+## 4.  ポストセールスの実装と導入・活用の過程 {#4--post-sales-implementation-and-adoption-journey}
 
 GitLab プラクティスエンジニア向けのデリバリードキュメントとテクニカルガイダンス。
 
@@ -156,7 +154,7 @@ GitLab プラクティスエンジニア向けのデリバリードキュメン�
 **GitLab を効果的に使用・活用する**
 
 - [GitLab 管理の開始](https://docs.gitlab.com/ee/administration/get_started.html)
-  - Platform チームは GitLab の管理面に習熟する必要があります。ここから始めましょう。
+  - Platform Team は GitLab の管理面に習熟する必要があります。ここから始めましょう。
 - [GitLab の利用開始](https://about.gitlab.com/get-started/enterprise/#using-gitlab)（Web ページ）
   - 組織、グループ、プロジェクトなどのセットアップから始め、お客様が GitLab を正常に稼働させるために行う必要のある主要な事項へのリンクを含みます。
 - [GitLab CI/CD 入門](https://docs.gitlab.com/ee/ci/)
@@ -172,7 +170,7 @@ GitLab プラクティスエンジニア向けのデリバリードキュメン�
 - [GitLab パートナー向けバリューストリーム管理](https://partners.gitlab.com/prm/English/s/assets?id=634200&renderMode=Collection)
   - 先に [GitLab Partner Portal](https://partners.gitlab.com/)にログインしてください。
 
-### GitLab チャネルサービスパッケージ
+### GitLab チャネルサービスパッケージ {#gitlab-channel-service-packages}
 
 以下のサービスは、GitLab を含む自社ブランドのプロフェッショナルコンサルティングサービスを提供する際に、取り入れ・修正・利用できる例です。
 
@@ -189,7 +187,7 @@ GitLab プラクティスエンジニア向けのデリバリードキュメン�
 - [Professional Services の全カタログ](https://about.gitlab.com/professional-services/catalog/)
   - GitLab の Professional Services チームが提供するサービスの完全な公開リストです。追加の統合、アドオンサービス、これらのサービスオファリングを自社向けに再構成する際の出発点として活用してください。
 
-### Professional Services チームハンドブックのクイックリンク
+### Professional Services チームハンドブックのクイックリンク {#professional-services-team-handbook-quick-links}
 
 [Professional Services チームハンドブックページ](/handbook/customer-experience/professional-services-engineering/)から最も人気のあるトピックへのリンクは以下のとおりです。
 
@@ -200,32 +198,32 @@ GitLab プラクティスエンジニア向けのデリバリードキュメン�
 - [販売](/handbook/customer-experience/professional-services-engineering/selling/)
 - [PS との連携](/handbook/customer-experience/professional-services-engineering/working-with/)
 - [SKUs](https://about.gitlab.com/professional-services/catalog/)
-- [教育サービス](/handbook/customer-experience/professional-services-engineering/education-services/)
+- [Education Services](/handbook/customer-experience/professional-services-engineering/education-services/)
 - [GitLab テクニカル認定](/handbook/customer-experience/professional-services-engineering/gitlab-technical-certifications/)
 - [パートナーとのコラボレーション](/handbook/customer-experience/professional-services-engineering/partner-collaboration/)
 - [セールスイネーブルメント](/handbook/customer-experience/professional-services-engineering/sales-enablement/)
 - [Professional Services の運用](/handbook/customer-experience/professional-services-engineering/professional-services-operations/)
 - [エスカレーションプロセス](/handbook/customer-experience/csm/escalations/)
 
-## 追加リソース
+## 追加リソース {#additional-resources}
 
-## 1. Level Up 上の公式 GitLab トレーニング
+## 1. Level Up 上の公式 GitLab トレーニング {#1-official-gitlab-training-on-level-up}
 
 - [Partner Portal から GitLab トレーニングにアクセス](https://partners.gitlab.com/)
   - GitLab University のトレーニングにアクセスするには、Partner Portal 経由でログインしてください。これにより、受講したトレーニングが GitLab との会社パートナーシップに紐付けられます！
 
     ![パートナーポータルからトレーニングを開始](/images/resellers/partner-enablement/gitlab-partner-training.png)
 
-## 2. GitLab の追加イネーブルメントリソース
+## 2. GitLab の追加イネーブルメントリソース {#2-additional-enablement-resources-at-gitlab}
 
 - [GitLab Unfiltered のパートナーイネーブルメントプレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqQi2Kk0M5vnqB1n0CIb_sa)
   - GitLab Unfiltered チャンネルで最も有益な技術動画を、SA がキュレートしたプレイリストです。一部の動画は限定公開で、それ以外の方法では見つけにくいものもあります。このリンクをブックマークしてください！
 - [GitLab のセキュリティ機能](https://www.youtube.com/watch?v=d8X6vYY4WOA)
   - メインの GitLab Unfiltered チャンネルも定期的に閲覧してください。GitLab セキュリティ機能のこの動画ツアーは優れていますが、技術上の理由で上記プレイリストに追加できません。（50:16）
 - [パートナーイネーブルメントのプレゼンテーション](https://docs.google.com/presentation/d/1VUY6WR4gewnXITUUAnVbFOExXmhdTYif2JgAiTbT7tE/edit#slide=id.g12b319f6181_0_10)
-  - このデックには関連する優れたリンクがいくつか含まれています
+  - このデックには優れたリンクがいくつかあります associa
 
-## 3. テクニカルリファレンス
+## 3. テクニカルリファレンス {#3-technical-references}
 
 - [GitLab ドキュメント](https://docs.gitlab.com/)
   - 技術的な質問に対する最良の出発点です。機能の説明、優れたチュートリアル、トラブルシューティングのヒントが掲載されています。
@@ -236,13 +234,13 @@ GitLab プラクティスエンジニア向けのデリバリードキュメン�
     - [バージョン別の CVE](https://gitlab-com.gitlab.io/cs-tools/gitlab-cs-tools/what-is-new-since/?tab=cves): 各 GitLab バージョンのセキュリティ脆弱性を簡単に追跡できます。
     - [アップグレードパス](https://gitlab-com.gitlab.io/support/toolbox/upgrade-path/): セルフマネージド GitLab をバージョン X から Y にアップグレードする手順を一覧表示できる便利なツール。
 - [バージョン別の非推奨機能](https://docs.gitlab.com/ee/update/deprecations.html)
-  - リリース概要サイトの [バージョン別の非推奨機能ページ](https://gitlab-com.gitlab.io/cs-tools/gitlab-cs-tools/what-is-new-since/?tab=deprecations)と同じデータを別の形式で提供します。
+  - リリース概要サイトの[バージョン別の非推奨機能ページ](https://gitlab-com.gitlab.io/cs-tools/gitlab-cs-tools/what-is-new-since/?tab=deprecations)と同じデータを別の形式で提供します。
 - [GitLab リリースブログ](https://about.gitlab.com/releases/categories/releases/)
   - リリース概要サイトと同じ情報ですが、顧客と共有しやすい、整形済みのブログ記事になっています。
 - [GitLab プロジェクト](https://gitlab.com/gitlab-org/gitlab)
   - GitLab ソフトウェア自体のソースコードです。最も有用なのは [Issue ページ](https://gitlab.com/gitlab-org/gitlab/-/issues)で、誰でも機能やバグの状態を確認し、計画中か取り組み中かを確認できます。
 
-## 4. サードパーティ & コミュニティチュートリアル
+## 4. サードパーティ & コミュニティチュートリアル {#4-third-party--community-tutorials}
 
 - GitLab 初心者向け:
   - [3 時間で学ぶ GitLab 初心者向け完全チュートリアル](https://www.youtube.com/watch?v=8aV5AxJrHDg)（約 3 時間）

@@ -1,23 +1,21 @@
 ---
-title: 'セールスオペレーション'
-description: "セールスオペレーションは、システム、ポリシー、直接的なサポートを通じて、フィールド組織全体で新規および既存のプロセスを推進することを目的としています。"
+title: 'Sales Operations'
+description: "Sales Operations は、システム、ポリシー、直接的なサポートを通じて、フィールド組織全体で新規および既存のプロセスを推進することを目的としています。"
 upstream_path: /handbook/sales/field-operations/sales-operations/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:44:22.914996+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## **チャーター** {#charter}
 
-## **チャーター**
-
-セールスオペレーションは Field Operations の一部です。
+Sales Operations は Field Operations の一部です。
 私たちは、システム、ポリシー、直接的なサポートを通じて、フィールド組織全体で新規および既存のプロセスを推進することを目指しています。
-セールスオペレーションは主に Sales 組織に注力しています。
+Sales Operations は主に Sales 組織に注力しています。
 
-## **密に協働するチーム**
+## **密に協働するチーム** {#teams-we-work-closely-with}
 
 <div class="flex-row" markdown="0" style="height:80px">
     <a href="/handbook/customer-experience/" class="btn btn-purple-inv" style="width:20%;height:100%;margin:1px;display:flex;justify-content:center;align-items:center;">Customer Success</a>
@@ -40,15 +38,15 @@ lastmod: "2026-09-24T21:34:11+02:00"
     <a href="/handbook/sales/field-operations/data-intelligence/" class="btn btn-purple-inv" style="width:20%;height:100%;margin:1px;display:flex;justify-content:center;align-items:center;">Data Intelligence</a>
 </div>
 
-## **セールスオペレーションのプロセスリンク**
+## **Sales Operations のプロセスリンク** {#sales-operations-process-links}
 
 1. [Quote-to-Cash / Buyer Experience ドキュメント](/handbook/sales/field-operations/sales-operations/buyer-experience/)
-1. [Sales Operations Internal Page](https://docs.google.com/document/d/1UaKPTQePAU1RxtGSVb-BujdKiPVoepevrRh8q5bvbBg/edit#bookmark=id.tl3z53xvd1wc)
-1. [Sales Operations Monthly Close](https://internal.gitlab.com/handbook/sales/sales-operations/#sales-operations-monthly-close)
-1. [Sales Operations Owned System Offboarding](https://docs.google.com/document/d/1UaKPTQePAU1RxtGSVb-BujdKiPVoepevrRh8q5bvbBg/edit#bookmark=id.n9g37c7yy3q)
-1. [Sales Operations Owned System Provisioning](https://docs.google.com/document/d/1UaKPTQePAU1RxtGSVb-BujdKiPVoepevrRh8q5bvbBg/edit#bookmark=id.fjf789g7j637)
+1. [Sales Operations の内部ページ](https://docs.google.com/document/d/1UaKPTQePAU1RxtGSVb-BujdKiPVoepevrRh8q5bvbBg/edit#bookmark=id.tl3z53xvd1wc)
+1. [Sales Operations の月次決算](https://internal.gitlab.com/handbook/sales/sales-operations/#sales-operations-monthly-close)
+1. [Sales Operations が所有するシステムのオフボーディング](https://docs.google.com/document/d/1UaKPTQePAU1RxtGSVb-BujdKiPVoepevrRh8q5bvbBg/edit#bookmark=id.n9g37c7yy3q)
+1. [Sales Operations が所有するシステムのプロビジョニング](https://docs.google.com/document/d/1UaKPTQePAU1RxtGSVb-BujdKiPVoepevrRh8q5bvbBg/edit#bookmark=id.fjf789g7j637)
 
-## **セールスオペレーションのテックスタック**
+## **Sales Operations の Tech Stack** {#sales-operations-tech-stack}
 
 1. Clari
 1. Leandata

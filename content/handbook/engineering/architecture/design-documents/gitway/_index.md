@@ -9,9 +9,9 @@ owning-stage: "~group::gitaly"
 participating-stages: [ "~group::gitaly" ]
 toc_hide: false
 upstream_path: /handbook/engineering/architecture/design-documents/gitway/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-26T14:07:21-04:00"
-translated_at: "2026-11-01T08:35:16+00:00"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+lastmod: "2026-11-04T10:52:26-05:00"
+translated_at: "2026-11-05T15:19:43.861511+00:00"
 translator: codex
 stale: false
 ---
@@ -94,13 +94,15 @@ Raas（サービスとしてのリポジトリ）だけが扱い、Rails が知�
 
 Gitway は「サービスとしてのリポジトリ」の API 境界となる Go サービスです。
 移行作業を最小限に抑えるため、Rails は引き続き gRPC で Gitway と
-通信します。他のクライアントは HTTP で Gitway と通信します。GitLab の
+通信します。他のクライアントは、Rails が発行したトークンを使い、Workhorse を通じて
+HTTP で Gitway と通信します（[認証](#authentication)を参照）。GitLab の
 主要なリポジトリディレクトリとして機能します。
 
 ```mermaid
 flowchart LR
     Rails[GitLab Rails]
     Clients[API clients and agents]
+    Workhorse[Workhorse]
 
     subgraph Raas[Repositories as a service &lpar;Raas&rpar;]
         direction LR
@@ -119,8 +121,10 @@ flowchart LR
         REST -->|gRPC| Gitaly
     end
 
+    Clients -->|mint session token| Rails
     Rails -->|gRPC| GRPC
-    Clients -->|HTTP| REST
+    Clients -->|HTTP + session token| Workhorse
+    Workhorse -->|HTTP| REST
 ```
 
 ## 設計と実装の詳細 {#design-and-implementation-details}
@@ -131,17 +135,68 @@ Gitway が主に扱うデータモデルはリポジトリです。
 
 |id|storage_name|name|description|owner_id|metadata|state|
 |--|------------|-------------|----|-----------|--------|--------|
-|9b2f4c1e-3d5a-4f88-b7c6-1a2e5d90f331|default|gitaly|A gRPC golang service for Git data|21|{"relative_path":"@hashed/ce/ea/ceead675…7b71.git"}|ready|
-|1f6a8e77-0c34-4b91-8d52-6e9b4a17c5de|default|packhorse|A high throughput Git cache|21|{"relative_path":"@hashed/73/47/73475cb4…8049.git"}|deleted|
-|c47e0d2a-8b19-4e6f-9a03-5f7d1c88b204|default|gitlab|GitLab is the open-source DevSecOps platform that provides a complete software development lifecycle toolchain|21|{"relative_path":"@hashed/5a/3c/5a3ca21d…721d.git"}|deleted|
+|9b2f4c1e-3d5a-4f88-b7c6-1a2e5d90f331|default|gitaly|Git データ用の gRPC Go サービス|21|{"relative_path":"@hashed/ce/ea/ceead675…7b71.git"}|ready|
+|1f6a8e77-0c34-4b91-8d52-6e9b4a17c5de|default|packhorse|高スループットの Git キャッシュ|21|{"relative_path":"@hashed/73/47/73475cb4…8049.git"}|deleted|
+|c47e0d2a-8b19-4e6f-9a03-5f7d1c88b204|default|gitlab|GitLab は、ソフトウェア開発ライフサイクル全体のツールチェーンを提供するオープンソースの DevSecOps プラットフォームです|21|{"relative_path":"@hashed/5a/3c/5a3ca21d…721d.git"}|deleted|
 
 ### 認証 {#authentication}
 
-Gitway は認証しません。Workhorse が引き続き Rails で認証し、
-Gitway に到達するヘッダーにメタデータを渡します。Gitway は、その
-メタデータヘッダーをそのまま Gitaly に渡します。
+Rails モノリスが引き続きアクセスを判断します。将来的には、この処理を
+GATE に委譲します。Gitway での認証には JWT トークンを使います。Gitway は、ユーザーが
+リポジトリにアクセスできるかどうかを含む JWT トークンのスコープを
+確認するだけです。これらの JWT トークンはリポジトリごとに発行します。
 
-将来のイテレーションでは、Gitway が認証のために GATE と統合する可能性があります。
+ただし、gRPC パススルーでは、Gitway は認証を行いません。Rails、Workhorse、
+gitlab-shell は現在と同じように呼び出し元を認証し、Gitaly の認証
+トークンと呼び出しのメタデータを送信します。Gitway は、それらを変更せずに Gitaly に転送します。
+
+REST API では、Gitway はコンテナーレジストリと同じモデルに従い、
+Rails が発行したトークンを検証します
+（[ADR-005](https://gitlab.com/gitlab-org/gitway/-/blob/main/docs/adr/005_serve_repository_reads_over_rest_with_rails_issued_tokens.md)）。
+Rails は、Artifact Registry などのモジュール型サービス向けにすでに備えている
+`POST /api/v4/token_exchange` エンドポイントを通じて、Gitway を新たな対象者として
+トークンを発行します。
+
+1. クライアントは、パーソナルアクセストークンや OAuth トークンなど、通常の GitLab
+   認証情報を使って `POST /api/v4/token_exchange` を呼び出し、
+   `audience=gitlab-repositories`、プロジェクト、`read_repository` などのスコープを要求します。
+1. Rails は呼び出し元を認証し、各スコープをそのプロジェクトに対する自身のポリシーと
+   照合します。インスタンスの既存のキーで署名した、デフォルトで有効期間 5 分の
+   トークンを返します。トークンにはプロジェクトと
+   リポジトリの場所（ストレージと相対パス）が指定されるため、Gitway は
+   リクエストを処理する際にディレクトリを検索する必要がありません。
+1. クライアントは、`GET /v1/projects/42/repository/files/raw` などの読み取りで、
+   トークンを `Authorization: Bearer` として送信します。Workhorse は事前に Rails に問い合わせずに、
+   これらを Gitway にプロキシします。
+1. Gitway は、インスタンスが公開しているキー
+   （`GET /oauth/discovery/keys`）で署名を検証し、トークンが URL 内のプロジェクトを対象とし、
+   そのルートのスコープを持つことを確認して、自身の Gitaly トークンで Gitaly を呼び出します。
+1. トークンの有効期限が切れるか、Gitaly がリポジトリの移動を報告すると、Gitway は
+   `WWW-Authenticate` チャレンジを伴う `401` を返し、クライアントは新しい
+   トークンを発行します。
+
+```mermaid
+sequenceDiagram
+    participant A as Agent
+    participant W as Workhorse
+    participant R as Rails
+    participant G as Gitway
+    participant Y as Gitaly
+    A->>W: POST /api/v4/token_exchange audience=gitlab-repositories project=42
+    W->>R: proxied as any API v4 request
+    R->>R: authenticate, check policy for project 42
+    R-->>A: token (5 min default)
+    loop until expiry
+        A->>W: GET /v1/projects/42/repository/files/raw (Bearer)
+        W->>G: proxied, no Rails preauth
+        G->>G: verify signature, check token is for project 42 with read_repository
+        G->>Y: Gitaly RPCs (Gitway's Gitaly token)
+        Y-->>G: blob
+        G-->>A: file contents
+    end
+    G-->>A: 401 WWW-Authenticate
+    A->>W: mint again
+```
 
 ### 透過的な gRPC パススルー {#transparent-grpc-passthrough}
 
@@ -155,6 +210,12 @@ Gitway への移行作業を最小限に抑えられます。Gitway は
 
 Gitway は、リポジトリ操作の API を公開する HTTP サーバーも
 備えます。
+
+最初のルートは、たとえば
+`GET /v1/projects/{id}/repository/files/raw` のように、プロジェクト単位でリポジトリを指定します。これは、
+セッショントークンに Rails が解決したリポジトリの場所が含まれるためです。以下の `/v1/repositories/{id}` ルートは、
+Gitway がリポジトリディレクトリになった段階で導入します（
+[フェーズ 2](#phase-2-gitway-becomes-the-repository-directory)を参照）。
 
 #### リポジトリの CRUD 操作 {#repository-crud-operations}
 
@@ -293,8 +354,10 @@ Raas（サービスとしてのリポジトリ）は Rails から独立して機
 Gitway に向かう HTTP リクエストが Rails を経由する必要は
 ないはずです。
 
-代わりに、Workhorse は Rails を通じて認証した後、URL の一致パターンに基づき、
-HTTP リクエストを Gitway に直接ルーティングできます。
+代わりに、Workhorse は URL の一致パターンに基づき、Rails で事前認証せずに
+HTTP リクエストを Gitway に直接ルーティングできます。クライアントはセッショントークンを
+発行した際に Rails で認証済みであり、Gitway がそのトークンを検証します（
+[認証](#authentication)を参照）。
 
 これは、クローン用の git-upload-pack リクエストを Gitaly に直接ルーティングする方法と
 同様のパターンになります。

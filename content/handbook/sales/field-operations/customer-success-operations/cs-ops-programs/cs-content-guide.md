@@ -2,21 +2,20 @@
 title: "Customer Programs コンテンツ＆スタイルガイド"
 description: "Digital Customer Programs のスタイルとコンテンツガイド情報。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/cs-ops-programs/cs-content-guide/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T12:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:53:32.057904+00:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## CS Ops コンテンツガイド
+## CS Ops コンテンツガイド {#cs-ops-content-guide}
 
 このガイドでは、CS Ops およびその他の CS チームが送信するカスタマープログラムやその他の顧客コミュニケーション（ウェビナー、月次ニュースレター、メールを含む）に関する情報を示します。
 
 ご質問は Slack チャンネル `#cs_ops_and_programs` をご利用ください。
 
-## コンテンツ作成 & レビュープロセス
+## コンテンツ作成 & レビュープロセス {#content-creation--review-process}
 
 新しいコンテンツの作成や、GitLab 内の既存コンテンツの応用には、Digital Customer Programs チーム以外でのレビューが必要です。コンテンツは正確性、GitLab スタイルへの準拠、可読性についてレビューされる必要があります。プロセス全体を完了するには、少なくとも 10 営業日（約 1 マイルストーン）を見込んでください。
 
@@ -30,16 +29,16 @@ lastmod: "2025-01-04T01:51:25+00:00"
 | 6    | マーケティングまたはサブジェクトマターエキスパートによるピアレビュー | 正確性と GitLab スタイルへの準拠について、メールコピーの SME レビュー                       | GitLab チームメンバー SME                   | 5 日     |
 | 7    | メールデザインの最終化と Gainsight でのテスト         | メールデザインを完成させ、最終レビューに向けて互換性を確認するため Gainsight でテストする                                    | Program Manager                           | 1 日      |
 
-## サブジェクトマターエキスパート（SME）レビューのガイドライン
+## サブジェクトマターエキスパート（SME）レビューのガイドライン {#subject-matter-expert-sme-review-guidelines}
 
-現在または新しいコンテンツのレビューを依頼されることがあります。このレビューは、ほとんどの場合 1 時間以上かかりません。
+現在または新しいコンテンツのレビューを依頼されることがあります。このレビューは、ほとんどの場合 1 時間以内で完了する想定です。
 
 <details>
 <summary markdown='span'>SME レビューのガイドライン</summary>
 <br>
 サブジェクトマターエキスパート（SME）レビュアーとして、技術的な正確性と完全性についてコンテンツのレビューを依頼されます。
 
-### レビュープロセス
+### レビュープロセス {#the-review-process}
 
 1. Google Doc のドラフト版が提供されるか、コンテンツの MR をレビューするよう依頼されます。
 1. ドキュメントをレビューし、提案、修正、追加事項をコメントとして追加するための時間が設定されます。*何らかの理由でレビューを完了できない場合は、Issue にコメントしてください*。
@@ -54,7 +53,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - ドキュメント内の情報の削除をリクエストすることを恐れないでください。そこに含まれるべきでないものがあれば、教えてください。
 - コンテンツは簡潔に保つよう努めています。私たちが作成するコンテンツは、セールスやマーケティングのような説得力のあるものと、教育的で簡潔なものの境界線を歩む必要があります。
 
-### 確認すべき点
+### 確認すべき点 {#what-to-look-for}
 
 - 顧客にとっての価値（What's In It For Me / WIIFM）が明確に示されているか？SME として、この製品や機能が顧客にとってなぜ重要なのかを十分に理解しているはずです。それが明確に伝わっているか？顧客がそれが自分にとって何をしてくれるかを知らないかもしれない理由を考え、どう対処するかを検討してください。
 - 提示された情報は技術的に正しいか？
@@ -69,48 +68,48 @@ lastmod: "2025-01-04T01:51:25+00:00"
 
 </details>
 
-## ルックアンドフィール
+## ルックアンドフィール {#look-and-feel}
 
 私たちのメールプログラムは、有料・無料、セルフマネージド・SaaS、AMER・APAC を含むさまざまな顧客に届きます。GitLab からの他のコミュニケーションと似ているが、私たちのチームとその目標にとってユニークな、一貫したルックアンドフィールを作るよう努めています。
 
-### スタイル
+### スタイル {#style}
 
 ベースとして[ハンドブックスタイルガイド](/handbook/about/style-guide/)を使用しています。これは、句読点、大文字小文字、ブランディングなどをカバーします。たとえば、短縮形を使うかどうか、ブランド名の大文字小文字をどう書くかなどです。
 
 また、私たち自身のブランド原則とトーンをガイドするために [Pajamas Design System](https://design.gitlab.com/brand/overview/) も使用します。
 
-さらに、非包括的な言葉や、より広い読者にとって混乱を招く可能性のある地域固有のフレーズや言葉を避けるために、[Documentation Style Guide](https://docs.gitlab.com/ee/development/documentation/styleguide/) のガイダンスも使用します。
+さらに、非包括的な言葉や、より広い読者にとって混乱を招く可能性のある地域固有のフレーズや言葉を避けるために、[Documentation Style Guide](https://docs.gitlab.com/ee/development/documentation/styleguide/)のガイダンスも使用します。
 
-### 言語とトーン
+### 言語とトーン {#language-and-tone}
 
 私たちのメールは一般的にフレンドリーですが、カジュアルではありません。これは通常、過度に親密な言葉を使わないことを意味しますが、温かく支援的なトーンを保つように努めます。主にポストセールス顧客向けに送信しており、説得的な言葉を多用しません。代わりに、より教育的で役立つトーンを選びます。
 
-#### "I" と "we" を使うタイミング
+#### "I" と "we" を使うタイミング {#when-to-use-i-or-we}
 
 考慮すべき良いルールは、メールが特定の個人から発信されているか、チームから発信されているかです。たとえば、メールが "Joe GitLab, CSM" によって送信され、個人的な意図がある場合は、メール全体で "I" や "my" を使うのが最適でしょう。メールが Customer Success Team から送信される場合は、"we" や "our" が良い選択肢になります。
 
-### Gainsight における HTML サポート
+### Gainsight における HTML サポート {#html-support-in-gainsight}
 
 Gainsight には一部 HTML サポートがありますが、主にプレーンテキストメールアプリケーションです。この制限により、私たちのメールは一貫性と使いやすさを生み出すため、Gainsight 内でテンプレートとしてセットアップされています。
 
 <details>
 <summary markdown='span'>HTML テンプレートの例</summary>
 
-#### 月次ニュースレター
+#### 月次ニュースレター {#monthly-newsletter}
 
 {image here}
 
-#### オンボーディングメールプログラム
+#### オンボーディングメールプログラム {#onboarding-email-program}
 
 {image here}
 
-#### コールトゥアクションメール
+#### コールトゥアクションメール {#call-to-action-email}
 
 {image here}
 
 </details>
 
-## 標準
+## 標準 {#standards}
 
 Gainsight は Salesforce で見られる多くの同じフィールドを使いますが、すべてが 1:1 でマッピングできるわけではありません。ほとんどのメールに対して基本的な標準フィールドのセットを使いますが、必要に応じてフィールドを追加することもできます。
 
@@ -118,11 +117,11 @@ Gainsight は Salesforce で見られる多くの同じフィールドを使い�
 
 [私たちのメールプログラムで使用される基本的な標準フィールドと実践についての詳細はこちら](linktothiseventually)。
 
-## トークン
+## トークン {#tokens}
 
 Gainsight では、Gainsight および/または Salesforce のデータのプレースホルダとしてトークンを使用します。Google Document では `{TokenName}` として表示されます。
 
-## 利用可能な地域
+## 利用可能な地域 {#available-regions}
 
 以下の地域にメールを送信できます:
 

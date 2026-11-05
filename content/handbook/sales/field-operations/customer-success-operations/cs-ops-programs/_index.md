@@ -2,15 +2,14 @@
 title: "Customer Programs"
 description: "Customer Programs は Gainsight を使ったコミュニケーションパスを構築し、顧客への情報提供、教育、そして顧客から学ぶ場を作ります。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/cs-ops-programs/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T12:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:53:32.057904+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## 私たちの活動
+## 私たちの活動 {#what-we-do}
 
 Customer Programs は、Gainsight を使ってコミュニケーションパスを構築し、顧客への情報提供、教育、そして顧客から学ぶ場を作ります。
 
@@ -19,9 +18,9 @@ Customer Programs は、Gainsight を使ってコミュニケーションパス�
 - [戦略](https://docs.google.com/presentation/d/1EsCcVqKYL1WkwFkOZDr6TV_DBJMEvrGy3ErPlJLcfPg/edit#slide=id.g29a70c6c35_0_68)
 - [概要](https://docs.google.com/presentation/d/1JFHS-GiMvIZ6oClLRXDN7HSZaSJca123m2LTF-pPEBg/edit#slide=id.gddb21d186e_0_17)
 
-### チームメンバー
+### チームメンバー {#team-members}
 
-## チーム紹介
+## チーム紹介 {#meet-the-team}
 
 | 担当者 | 役割 |
 | ------ | ------ |
@@ -30,7 +29,7 @@ Customer Programs は、Gainsight を使ってコミュニケーションパス�
 | [Raluca Gorbanescu](https://gitlab.com/RGorbanescu) | [Sr. Program Manager, Scale](/job-description-library/sales/program-manager-customer-programs/#senior-program-manager-customer-success-strategy--operations) |
 | [John Gamboa](https://gitlab.com/johnpgamboa) | [Program Manager, Customer Programs](/job-description-library/sales/program-manager-customer-programs) |
 
-## 関連コンテンツ
+## 関連コンテンツ {#related-content}
 
 - [利用可能なプログラム](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/available-programs/)
 - [Digital Customer Success からヘルプを得る](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/getting-help-from-dcs/)
@@ -38,18 +37,18 @@ Customer Programs は、Gainsight を使ってコミュニケーションパス�
 - [CS コンテンツガイド](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/cs-content-guide/)
 - [カスタマーニュースレター](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter/)
 
-## 私たちが支援する対象
+## 私たちが支援する対象 {#who-we-support}
 
 私たちはプログラムを通じてすべての顧客を支援していますが、主に一対一の Customer Success の関係を持たない顧客や、Scale Team が担当する顧客にサービスを提供しています。Gainsight 経由で時間ベースおよびデータ駆動型のメールプログラムを管理し、GitLab のジャーニーで顧客をさらに支援します。
 
-## プログラムのライフサイクル
+## プログラムのライフサイクル {#programs-lifecycle}
 
 プログラムは、オンボーディングからイネーブルメント、リテンションまで、顧客のライフサイクルに沿って進みます。
 
-![Customer Lifecycle](https://lucid.app/publicSegments/view/7e994704-484f-4d32-a083-6c052b07ba66/image.png)
+![顧客ライフサイクル](https://lucid.app/publicSegments/view/7e994704-484f-4d32-a083-6c052b07ba66/image.png)
 セグメント別ジャーニー - [Tech Touch](https://lucid.app/documents/embedded/6e790ff2-fc61-4617-acb2-81980f7b1d2e#) | [Scale](https://lucid.app/documents/embedded/38da04cd-67e0-4c74-b9a9-f18a9147ade2) | [CSM-Managed](https://lucid.app/documents/embedded/30feecd2-a4c6-4ec4-8acd-9ee2a0205a26)
 
-### プログラム概要
+### プログラム概要 {#programs-overview}
 
 アクティブな DCS プログラムの一覧については、[利用可能なプログラム](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/available-programs/)ページを参照してください。プログラムには以下のいずれかが該当します:
 
@@ -58,7 +57,7 @@ Customer Programs は、Gainsight を使ってコミュニケーションパス�
 - 月次ニュースレター
 - Gainsight を通じたサーベイの送信
 
-### 利用可能なプログラムメトリクス、データ、タイムライン
+### 利用可能なプログラムメトリクス、データ、タイムライン {#available-program-metrics-and-data-and-timelines}
 
 メールプログラムが送信されると、Gainsight は以下のデータを収集します:
 
@@ -69,11 +68,11 @@ Customer Programs は、Gainsight を使ってコミュニケーションパス�
 
 新しいプログラムが意味のあるデータを示すまでには通常 *30 ～ 60 日* かかります。
 
-要求された情報が Gainsight ですでに利用可能な場合は、30 日を超えてリクエストに応答するまでに *1 ～ 3 営業日* 程度かかると見込んでください。
+要求された情報が Gainsight ですでに利用可能な場合は、30 日経過後、リクエストへの回答までさらに *1 ～ 3 営業日* かかると見込んでください。
 
 新しいダッシュボードやレポートを作成する必要がある場合は、[CS Ops](/handbook/sales/field-operations/customer-success-operations/) がより正確な所要時間の見通しを提供します。
 
-## プログラムの受信者
+## プログラムの受信者 {#program-recipients}
 
 ### GitLab Admin コンタクト {#gitlab-admin-contacts}
 
@@ -83,17 +82,17 @@ GitLab Admin コンタクトの設定は、セールスプロセスの必須ス�
 
 GitLab Admin コンタクトロールの要件について詳しくは、[Gainsight Go-To-Market Technical Documentation ページ](/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/#gitlab-admin-contact-required)を参照してください。
 
-### Owner と Maintainer ユーザー（SaaS 顧客のみ）
+### Owner と Maintainer ユーザー（SaaS 顧客のみ） {#owner-and-maintainer-users-saas-customers-only}
 
 GitLab SaaS 製品を使用するアカウントでは、組織内の Owner および Maintainer 権限を持つ個別のユーザーが DCS Team からのメールプログラムを受信する場合があります。
 
 アカウントレベルで個別ユーザーをターゲットにすることで、DCS Team は GitLab の個別機能に対してアクションを起こす可能性が最も高いコンタクトに、顧客イネーブルメントプログラムを確実に届けることができます。
 
-### Sold-To コンタクト
+### Sold-To コンタクト {#sold-to-contacts}
 
 顧客が Sales チームのアシスタンスなしで GitLab のウェブサイトから直接 GitLab を購入した場合、アカウントに GitLab Admin ユーザーが設定されていないことがあります。その場合、通常 GitLab Admin コンタクト向けに設計されたコミュニケーションは、GitLab 製品およびサービスを直接購入したコンタクト（Sold-To コンタクト）に送信されます。これらのコンタクトは NPS や CSAT のコミュニケーションを受信しません。
 
-## GitLab Admin の設定方法
+## GitLab Admin の設定方法 {#how-to-configure-a-gitlab-admin}
 
 **Gainsight を使ってコンタクトを追加する:**
 

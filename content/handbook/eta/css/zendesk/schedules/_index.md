@@ -2,9 +2,9 @@
 title: 'スケジュール'
 description: 'Zendesk スケジュールに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/schedules/"
-upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
-lastmod: "2026-11-03T13:45:25-06:00"
-translated_at: "2026-11-03T21:11:48.175692+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+lastmod: "2026-11-04T10:19:23-06:00"
+translated_at: "2026-11-05T14:33:39.824673+00:00"
 translator: codex
 stale: false
 ---
@@ -37,13 +37,13 @@ Zendesk では、特定のタイムゾーンを使用でき、休日を設定で
 - 営業時間トリガー（勤務時間中にのみ実行するアクション）
 - 時間条件を持つ自動化
 
-スケジュールは通常、SLA ポリシーを通じてチケットレベルで適用するか、トリガー／自動化の条件で参照します。
+スケジュールは通常、SLA ポリシーを通じてチケットレベルで適用するか、トリガー/自動化の条件で参照します。
 
 ### 休日 {#holidays}
 
 スケジュール内の休日は、"タイマー" が実行されない設定日です。
 
-現在、Zendesk ではこの機能を使用していません（法務チームの決定によるものです）。この機能の使用は、契約要件に影響するため法務の承認が必要です。
+現在、Zendesk ではこの機能を使用していません（Legal チームの決定によるものです）。この機能の使用は、契約要件に影響するため Legal の承認が必要です。
 
 ### スケジュールの管理方法 {#how-we-manage-schedules}
 
@@ -205,6 +205,7 @@ friday:
 - START-END
 saturday: []
 test_user: 'Email goes here'
+test_updates_required: []
 ```
 
 `time_zone` 属性には、私たちが使用する承認済みタイムゾーンのいずれかを指定する必要があります。
@@ -226,6 +227,21 @@ monday:
 ```
 
 `test_user` には、このスケジュールのテストで使用するエンドユーザーのメールアドレスを指定します。
+
+`test_updates_required` は、スケジュールのテストに必要なチケット更新の配列です。更新が不要な場合は、空の配列（つまり `[]`）を使用してください。更新が必要な場合は、配列の項目にペイロードを指定してください。たとえば、テストでチケットフィールド `Preferred Region for Support` の値を `Americas, USA - 05:00 to 17:00 Pacific Time` に、チケットフィールド `Ticket Stage` の値を `NRT` に更新する必要がある場合は、次のようにします。
+
+```yaml
+test_updates_required:
+- |-
+  {
+    "custom_fields": [
+      { "id": 12510561704348, "value": "americas__usa" },
+      { "id": 12510561838748, "value": "stage-nrt" }
+    ]
+  }
+```
+
+すべての ID 値には、対応する _Sandbox_ インスタンスの値を使用してください（本番環境の値ではありません）。
 
 ピアが MR をレビューして承認した後、MR をマージできます。次のデプロイ時に Zendesk へ同期されます。
 

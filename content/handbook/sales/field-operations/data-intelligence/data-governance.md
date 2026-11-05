@@ -1,14 +1,14 @@
 ---
 title: データガバナンス
 upstream_path: /handbook/sales/field-operations/data-intelligence/data-governance/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:44:22.914996+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-## <i class="far fa-folder-open" id="biz-tech-icons"></i> データインテリジェンスとガバナンスの定義
+## <i class="far fa-folder-open"></i> Data Intelligence とガバナンスの定義 {#data-intelligence-and-governance-defined}
 
 **データガバナンス**
 
@@ -18,4 +18,4 @@ GitLab では、データガバナンスの維持には、データの定義、�
 
 データスチュワードシップは、日々の手順を管理する責任を正式化するものです。私たちは柔軟なデータガバナンス構造を実装し、誰もが貢献できるという[GitLab のミッション](/handbook/company/mission/#mission)に沿って取り組んでいます。
 
-データガバナンスと品質に関する情報は、内部ハンドブックのデータインテリジェンスページに記載されています。
+データガバナンスと品質に関する情報は、内部ハンドブックの Data Intelligence ページに記載されています。

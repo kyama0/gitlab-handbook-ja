@@ -1,18 +1,16 @@
 ---
 title: "パートナー FAQ - GitLab との販売"
 upstream_path: /handbook/sales/field-operations/channel-operations/partner-faq/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T06:32:43+09:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:11:15.190926+00:00"
 translator: claude
 stale: false
-lastmod: "2026-06-30T11:31:02-07:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 このページでは、販売プロセス全体を通じて GitLab と協業する方法について、パートナーコミュニティからよく寄せられる質問をまとめています。ご質問や、このページに別の Q&A の掲載を希望される場合は、`partnersupport@gitlab.com` までお問い合わせください。
 
-## ディール登録
+## ディール登録 {#deal-registration}
 
 <details>
 <summary markdown="span">
@@ -41,13 +39,13 @@ GitLab には [Service Attach DR](/handbook/sales/field-operations/channel-opera
 ディール登録のステータスが「Returned」になっているのはどういう意味ですか？
 </summary>
 
-ディール登録（DR）に割り当てられたチャネルアカウントマネージャー（CAM）が DR をレビューし、追加情報／背景の提供のためリセールパートナーに差し戻したことを意味します。リセールパートナーが CAM のフィードバックを確認して回答すると、CAM に通知が送られ、更新された DR をレビューしてアクションを取ります。
+ディール登録（DR）に割り当てられた Channel Account Manager（CAM）が DR をレビューし、追加情報／背景の提供のためリセールパートナーに差し戻したことを意味します。リセールパートナーが CAM のフィードバックを確認して回答すると、CAM に通知が送られ、更新された DR をレビューしてアクションを取ります。
 
 </details>
 
-## 販売プロセス
+## 販売プロセス {#sales-process}
 
-### パートナー割引とインセンティブ
+### パートナー割引とインセンティブ {#partner-discounts-and-incentives}
 
 <details>
 <summary markdown="span">
@@ -77,13 +75,13 @@ Partner Sourced と Co-Sell の割引はそれぞれどのような場合に適�
 - パートナーが**ソーシング**した商談（更新商談の一部としてライセンスを追加する場合を含む）については、パートナーが Partner Sourced ディール登録（DR）を提出する必要があります。DR が承認されると、GitLab はディールの新規またはアドオン／アップセル部分に対して Partner Sourced 割引を提供します。
 - パートナーが**ソーシングしていない**商談については、通常パートナーは Co-Sell 割引を受けることになります。
 
-商談がフラットな更新の場合は、パートナーの既存契約権に関するルールについて、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
+商談がフラットな更新の場合は、パートナーの既存契約権に関するルールについて、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
 
 パートナープログラム割引に関する詳細は、[GitLab Program Discounts Incentive Guide](https://partners.gitlab.com/prm/English/s/assets?collectionId=49439) をご参照ください。
 
 </details>
 
-### 一般的な見積プロセス
+### 一般的な見積プロセス {#general-quoting-process}
 
 <details>
 <summary markdown="span">
@@ -97,7 +95,7 @@ Partner Sourced と Co-Sell の割引はそれぞれどのような場合に適�
 
 Select パートナーは、GitLab と直接取引するか（一部地域を除く）、その地域の認定ディストリビューターを介して取引するかを選択できます。
 
-ディストリビューションのカバレッジ、要件、連絡先情報の詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
+ディストリビューションのカバレッジ、要件、連絡先情報の詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
 
 </details>
 
@@ -106,7 +104,7 @@ Select パートナーは、GitLab と直接取引するか（一部地域を除
 自分の地域をカバーするディストリビューターを特定するにはどうすればよいですか？
 </summary>
 
-ディストリビューションのカバレッジ、要件、連絡先情報の詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
+ディストリビューションのカバレッジ、要件、連絡先情報の詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)をご参照ください。
 
 </details>
 
@@ -116,7 +114,7 @@ Select パートナーは、GitLab と直接取引するか（一部地域を除
 </summary>
 
 - 該当地域に認定ディストリビューターがいる Open パートナーは、[ディストリビューターに連絡](/handbook/sales/field-operations/channel-operations/#distributor-requirements-and-coverage-by-geo-and-market)してください。
-- GitLab と直接取引する Select パートナー、または該当地域に認定ディストリビューターがいない Open パートナーは、顧客アカウントの GitLab 営業担当者にご連絡ください。見積依頼の連絡先となる GitLab 営業担当者がわからない場合は、チャネルアカウントマネージャーまたは `partnersupport@gitlab.com` までご連絡ください。
+- GitLab と直接取引する Select パートナー、または該当地域に認定ディストリビューターがいない Open パートナーは、顧客アカウントの GitLab 営業担当者にご連絡ください。見積依頼の連絡先となる GitLab 営業担当者がわからない場合は、Channel Account Manager または `partnersupport@gitlab.com` までご連絡ください。
 
 </details>
 
@@ -127,7 +125,7 @@ Select パートナーは、GitLab と直接取引するか（一部地域を除
 
 いいえ、同じ見積に製品ティア、デプロイタイプ、契約期間を混在させることはできません。詳細については、[Deal Desk ハンドブック](/handbook/sales/field-operations/sales-operations/deal-desk/#quoting-different-product-tiers-deployment-types-and-term-lengths-on-the-same-quote)をご参照ください。
 
-なお、特定のディールでは、製品採用を改善しセキュリティリスクを最小化するため、Education Services が必須となる場合があります。
+なお、特定のディールでは、製品採用を改善しセキュリティリスクを最小化するため、Education Services が必須です。
 
 </details>
 
@@ -140,11 +138,11 @@ Select パートナーは、GitLab と直接取引するか（一部地域を除
 
 </details>
 
-### 更新見積
+### 更新見積 {#renewal-quotes}
 
 <details>
 <summary markdown="span">
-顧客の更新見積に True-up シートが含まれています。True-up とは何で、なぜ更新時にこれらのシートが顧客に課金されるのですか？
+顧客の更新見積にトゥルーアップシートが含まれています。トゥルーアップとは何で、なぜ更新時にこれらのシートが顧客に課金されるのですか？
 </summary>
 
 顧客は当初のサブスクリプションで特定の数のシートを購入しています。サブスクリプション期間中に、ライセンス数を超えるユーザーを GitLab インスタンスに追加した場合、超過分の追加ユーザーについては更新時に支払いが必要となります。
@@ -167,7 +165,7 @@ Select パートナーは、GitLab と直接取引するか（一部地域を除
 顧客がサブスクリプションからユーザーをブロック／無効化／削除しました。これらのユーザーは、更新時に現在使用中の課金対象ユーザー／シートとしてカウントされますか？これらのユーザーはどのように反映され、課金されますか？
 </summary>
 
-無効化、ブロック、または削除されたユーザーは、現行のサブスクリプションでは「Billable Users（Self-Managed）」／「Seats currently in use（SaaS）」としてカウントされません。ただし、購入済みシート数の超過分としてカウントされる場合があり、その場合は更新時に True-up として課金されます。詳細については、[Self-Managed](https://docs.gitlab.com/ee/subscriptions/self_managed/#billable-users) と [SaaS](https://docs.gitlab.com/ee/subscriptions/gitlab_com/#remove-users-from-your-subscription) のサブスクリプションドキュメントをご参照ください。
+無効化、ブロック、または削除されたユーザーは、現行のサブスクリプションでは「Billable Users（Self-Managed）」／「Seats currently in use（SaaS）」としてカウントされません。ただし、購入済みシート数の超過分としてカウントされる場合があり、その場合は更新時にトゥルーアップとして課金されます。詳細については、[Self-Managed](https://docs.gitlab.com/ee/subscriptions/self_managed/#billable-users) と [SaaS](https://docs.gitlab.com/ee/subscriptions/gitlab_com/#remove-users-from-your-subscription) のサブスクリプションドキュメントをご参照ください。
 
 </details>
 
@@ -185,7 +183,7 @@ Select パートナーは、GitLab と直接取引するか（一部地域を除
 顧客が以前の注文で別のリセラーと取引していました。顧客の更新について、私の組織に既存契約権（つまり、既存パートナー割引）を移管することは可能ですか？
 </summary>
 
-はい、顧客がメールで正式に連絡し、この更新について新しいリセラー（あなた）と取引したいことを確認した場合、既存契約権の割引を移管できます。詳細については、[パートナーオペレーションハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
+はい、顧客がメールで正式に連絡し、この更新について新しいリセラー（あなた）と取引したいことを確認した場合、既存契約権の割引を移管できます。詳細については、[Partner Operations ハンドブック](/handbook/sales/field-operations/channel-operations/#incumbency-renewals)をご参照ください。
 
 </details>
 
@@ -207,7 +205,7 @@ Select パートナーは、GitLab と直接取引するか（一部地域を除
 
 </details>
 
-### 発注書（PO）
+### 発注書（PO） {#puchase-orders-pos}
 
 <details>
 <summary markdown="span">
@@ -254,7 +252,7 @@ GitLab には、注文の受領と計上のための PO 要件を詳述した「
 更新日より前に更新 PO を提出しました。いつ PO は計上されますか？
 </summary>
 
-[新規ビジネス、アドオン](/handbook/sales/field-operations/order-processing/#new-businessadd-on-opportunities)、および[更新](/handbook/sales/field-operations/order-processing/#renewal-opportunities)の注文は、商談のクローズ日より 15 日以上前に処理されることはありません。なお、更新の開始日は顧客の現行サブスクリプション期間の最終日となります。
+[新規ビジネス、アドオン](/handbook/sales/field-operations/order-processing/#new-businessadd-on-opportunities)、および[更新](/handbook/sales/field-operations/order-processing/#renewal-opportunities)の注文は、商談のクローズ日の 15 日前より早く処理されることはありません。なお、更新の開始日は顧客の現行サブスクリプション期間の最終日となります。
 
 </details>
 
@@ -267,7 +265,7 @@ ECCN については、[Trade Compliance ハンドブック](/handbook/legal/tra
 
 </details>
 
-## 販売後
+## 販売後 {#post-sale}
 
 <details>
 <summary markdown="span">

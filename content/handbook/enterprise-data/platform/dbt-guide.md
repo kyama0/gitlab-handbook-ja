@@ -3,9 +3,9 @@ title: "dbt ガイド"
 description: "data build tool (dbt) ガイド"
 math: true
 upstream_path: /handbook/enterprise-data/platform/dbt-guide/
-upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
-lastmod: "2026-10-05T10:53:47-06:00"
-translated_at: "2026-10-08T21:01:35+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+lastmod: "2026-11-04T09:48:40+01:00"
+translated_at: "2026-11-05T14:47:17.928953+00:00"
 translator: codex
 stale: false
 ---
@@ -17,7 +17,7 @@ stale: false
 
 ## 概要と目的 {#what-and-why}
 
-dbt は [data build tool](https://www.getdbt.com/) の略で、データウェアハウスにおけるデータ変換を管理するための[オープンソースプロジェクト](https://github.com/dbt-labs/dbt-core)です。データがウェアハウスに読み込まれると、dbt はアナリティクスを推進するために必要なすべてのデータ変換をチームが管理できるようにします。また、テストとドキュメントが組み込まれているため、生成・分析するテーブルに高い信頼を持つことができます。
+dbt は [data build tool](https://www.getdbt.com/)の略で、データウェアハウスにおけるデータ変換を管理するための[オープンソースプロジェクト](https://github.com/dbt-labs/dbt-core)です。データがウェアハウスに読み込まれると、dbt はアナリティクスを推進するために必要なすべてのデータ変換をチームが管理できるようにします。また、テストとドキュメントが組み込まれているため、生成・分析するテーブルに高い信頼を持つことができます。
 
 次のリンクは、dbt とは何かを理解するための優れた概要を提供します。
 
@@ -37,7 +37,7 @@ SQL は多くの人々の仕事において非常に重要な部分になりつ�
 
 最後に、[テストとドキュメント](https://docs.getdbt.com/docs/build/sql-models#testing-and-documenting-models)を最初から組み込むことで、チームがより速く動けるようにします。
 
-dbt の基礎についてのさらに詳しい情報は、[data analyst onboarding issue template](https://gitlab.com/gitlab-data/analytics/blob/master/.gitlab/issue_templates/Team%3A%20Data%20Onboarding.md) を参照してください。
+dbt の基礎についてのさらに詳しい情報は、[data analyst onboarding issue template](https://gitlab.com/gitlab-data/analytics/blob/master/.gitlab/issue_templates/Team%3A%20Data%20Onboarding.md)を参照してください。
 
 私たちは、一部のデータ変換のために dbt パッケージに依存することがあります。
 [パッケージ管理](https://docs.getdbt.com/docs/build/packages)は dbt に組み込まれています。
@@ -47,7 +47,7 @@ dbt の基礎についてのさらに詳しい情報は、[data analyst onboardi
 
 dbt の使用に興味がある場合、[dbt のドキュメントには優れたチュートリアル](https://docs.getdbt.com/docs/get-started-dbt)があり、Jaffle Shop という架空のビジネスのデータを扱えるようにセットアップする方法を学べます。
 
-dbt を使ってデータチームのプロジェクトに貢献したい場合は、私たちの Snowflake インスタンスへのアクセス権を取得する必要があります。これは[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を通じて行えます。
+dbt を使って Data Team のプロジェクトに貢献したい場合は、私たちの Snowflake インスタンスへのアクセス権を取得する必要があります。これは[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を通じて行えます。
 
 ### ローカル環境 {#local-environment}
 
@@ -57,14 +57,14 @@ dbt を使ってデータチームのプロジェクトに貢献したい場合�
 
 チームメンバーに必要な場合、私たちは Snowflake ユーザーに対応する `_PREP` および `_PROD` のサフィックスを持つローカル開発データベースを作成します。これらは Snowflake の `PREP` および `PROD` データベースに対応します。これらは、ローカル環境内で実行されたときに私たちのメイン dbt プロジェクトのターゲットとなり、貢献者が私たちの dbt プロジェクトへの変更を開発・テストできるようにします。私たちの dbt プロジェクト内の開発プロセスの詳細は、[dbt 変更ワークフローのページ](/handbook/enterprise-data/how-we-work/dbt-change-workflow/)にあります。
 
-これらの開発データベース内に構築されたデータは、ローカル開発でのみ使用されるものであるため、一時的なものと見なすべきです。dbt を最適に使用し、適切なセキュリティとコンプライアンスを確保するために、これらのデータベースは所有ユーザーによって定期的にクリーンアップされるべきです。[この Runbook](https://gitlab.com/gitlab-data/runbooks/-/blob/main/Snowflake/snowflake_dev_clean_up.md) を使うとそのプロセスを素早く簡単に行うことができ、各開発サイクルの終わりまたは始まりに実行することが推奨されます。さらに、私たちのデータ保持ポリシーおよび手順へのコンプライアンスを確保するため、変更されないまま **80 日** が経過した開発環境のすべてのテーブルを自動的に削除します。この保持期間は dbt プロジェクト内で `dev_db_object_expiration` 変数によって設定されており、テーブルは毎週末に削除されます。
+これらの開発データベース内に構築されたデータは、ローカル開発でのみ使用されるものであるため、一時的なものと見なすべきです。dbt を最適に使用し、適切なセキュリティとコンプライアンスを確保するために、これらのデータベースは所有ユーザーによって定期的にクリーンアップされるべきです。[開発用データベースのクリーンアップクエリ](/handbook/enterprise-data/how-we-work/triage/analytics-engineering-triage/#clean-up-your-dev-databases)を使うとそのプロセスを素早く簡単に行うことができ、各開発サイクルの終わりまたは始まりに実行することが推奨されます。さらに、私たちのデータ保持ポリシーおよび手順へのコンプライアンスを確保するため、変更されないまま **80 日** が経過した開発環境のすべてのテーブルを自動的に削除します。この保持期間は dbt プロジェクト内で `dev_db_object_expiration` 変数によって設定されており、テーブルは毎週末に削除されます。
 
-注: 開発データベースは、対応するチームメンバーが Snowflake へのアクセスをデプロビジョニングされ次第（つまりオフボーディングや[非アクティブな利用](/handbook/enterprise-data/data-governance/data-management/#snowflake-1)の場合）削除されます。開発データベースには[バックアップ](/handbook/enterprise-data/platform/#backups)プロセスはありません。
+注: 開発データベースは、対応するチームメンバーが Snowflake へのアクセスをデプロビジョニングされ次第（つまりオフボーディングや[非アクティブな利用](/handbook/enterprise-data/data-governance/data-management/#snowflake-1)の場合削除されます。開発データベースには[バックアップ](/handbook/enterprise-data/platform/#backups)プロセスはありません。
 
 #### 設定 {#configuration}
 
 - 私たちの Snowflake インスタンスと、自分の Snowflake ユーザー専用の開発データベースへのアクセス権があることを確認します
-- [Make](https://en.wikipedia.org/wiki/Make_(software)) がインストールされていることを確認します（新しい Mac には XCode とともにインストールされているはずです）
+- [Make](https://en.wikipedia.org/wiki/Make_(software))がインストールされていることを確認します（新しい Mac には XCode とともにインストールされているはずです）
 - ホームディレクトリに `.dbt` というフォルダを作成します
 - `~/.dbt/` フォルダ内には、この[サンプルプロファイル](https://gitlab.com/gitlab-data/analytics/blob/master/admin/sample_profiles.yml)のような `profiles.yml` ファイルがあるはずです
 - 可能な限り最小のウェアハウスを環境変数として保存すべきです。私たちの dbt ジョブは、ウェアハウスを識別するための変数名として `SNOWFLAKE_TRANSFORM_WAREHOUSE` を使用します。環境変数は次のように `.bashrc` または `.zshrc` ファイルに設定できます。
@@ -84,7 +84,7 @@ dbt を使ってデータチームのプロジェクトに貢献したい場合�
 
 #### 例 {#example}
 
-あなたが dbt モデルに変更を加える必要があるデータチームのメンバーだと想像してください。あなたは X-Small ウェアハウスと Large ウェアハウスの両方にアクセスでき、`profiles.yml` ファイルは次のように設定されています。
+あなたが dbt モデルに変更を加える必要がある Data Team のメンバーだと想像してください。あなたは X-Small ウェアハウスと Large ウェアハウスの両方にアクセスでき、`profiles.yml` ファイルは次のように設定されています。
 
 ```yaml
 gitlab-snowflake:
@@ -116,8 +116,6 @@ gitlab-snowflake:
 
 #### Venv ワークフロー {#Venv-workflow}
 
-<a id="venv-workflow"></a>
-
 Mac ユーザーに推奨されるワークフローです。すべての dbt コマンドは Poetry が管理する仮想環境内で実行されるため、すべての開発者が同じ固定バージョンの dbt と依存関係を使えます。
 
 #### dbt の使用 {#using-dbt}
@@ -141,7 +139,7 @@ eval "$(pyenv init -)"
 
     手順:
 
-    GitLab 用の SSH 設定を更新します。`~/.ssh/config` ファイルのポートを変更します。
+    GitLab 用の SSH 設定を更新します。~/.ssh/config ファイルのポートを変更します。
 
     ```bash
     nano ~/.ssh/config
@@ -180,15 +178,15 @@ eval "$(pyenv init -)"
 
 私たちがローカルの dbt 開発に仮想環境を使うのは、各開発者がまったく同じ依存関係を持つまったく同じ dbt バージョンを実行することを保証するためです。これにより、ソフトウェアバージョンの違いによって開発者ごとに開発体験が異なるリスクを最小化し、全員のソフトウェアを同時にアップグレードしやすくします。さらに、私たちのステージング環境と本番環境はコンテナ化されているため、このアプローチにより、同じコードがすべての環境でできる限り予測可能に実行されることが保証されます。
 
-#### dbt コマンドリファレンス
+#### dbt コマンドリファレンス {#dbt-command-reference}
 
 標準的な dbt コマンド（`dbt run`、`dbt test`、`dbt compile`、`dbt seed` など）については、[dbt の主要コマンドリファレンス](https://docs.getdbt.com/reference/dbt-commands)を参照してください。
 
-[`transform/snowflake-dbt/Makefile`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/Makefile) は、一般的な開発ワークフローをラップしています。完全なリストを表示するには、venv シェル内から `make help` を実行します。主なコマンドは次のとおりです。
+[`transform/snowflake-dbt/Makefile`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/Makefile)は、一般的な開発ワークフローをラップしています。完全なリストを表示するには、venv シェル内から `make help` を実行します。主なコマンドは次のとおりです。
 
 | コマンド | 説明 |
 |---|---|
-| `make build-changes` | 変更されたすべての SQL／CSV ファイルをクローンしてビルドします。`SELECTION`、`EXCLUDE`、`DOWNSTREAM`、`CONTIGUOUS`、`FAIL_FAST`、`FULL_REFRESH`、`VARS`、`TARGET` 変数を受け付けます |
+| `make build-changes` | 変更されたすべての SQL/CSV ファイルをクローンしてビルドします。`SELECTION`、`EXCLUDE`、`DOWNSTREAM`、`CONTIGUOUS`、`FAIL_FAST`、`FULL_REFRESH`、`VARS`、`TARGET` 変数を受け付けます |
 | `make lint-models` | 変更された SQL ファイルを SQLFluff でリントします。特定のファイルを対象にする `MODEL` と、修正をその場で適用する `FIX=true` を受け付けます |
 | `make safe-check` | SAFE データのダウンストリームにあり、適切にタグ付けされていないモデルを確認します |
 | `make row-counts` | 開発環境と本番環境の行数を比較する SQL クエリを生成します（`make build-changes` の後に実行します） |
@@ -265,7 +263,7 @@ make DBT_MODELS="dim_subscription" clone-dbt-select-local-user-noscript
 
 ### 本番オーケストレーション {#production-orchestration}
 
-本番の dbt モデルは [Apache Airflow](https://airflow.apache.org/) を使ってオーケストレーションされます。各スケジュールされたパイプラインは Kubernetes ポッド内で Airflow DAG として実行され、Snowflake に対して dbt コマンドを実行します。
+本番の dbt モデルは [Apache Airflow](https://airflow.apache.org/)を使ってオーケストレーションされます。各スケジュールされたパイプラインは Kubernetes ポッド内で Airflow DAG として実行され、Snowflake に対して dbt コマンドを実行します。
 
 #### 現状 {#current-state}
 
@@ -355,7 +353,7 @@ jobs:
 
 ### VSCode 拡張機能: dbt Power User {#vscode-extension-dbt-power-user}
 
-[dbt Power User](https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user) は、VScode を dbt とシームレスに連携させます。以下のガイドでは、[Venv ワークフロー](/handbook/enterprise-data/platform/dbt-guide/#Venv-workflow)に従った場合に dbt Power User をインストールできます。
+[dbt Power User](https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user)は、VScode を dbt とシームレスに連携させます。以下のガイドでは、[Venv ワークフロー](/handbook/enterprise-data/platform/dbt-guide/#Venv-workflow)に従った場合に dbt Power User をインストールできます。
 
 始める前に、VScode で調整すべき設定がいくつかあります。
 
@@ -417,7 +415,7 @@ dbt が最新でないという警告は無視してください。
 - その場合は dbt が使用するターゲットプロファイルを変更します。dbt-power-user 拡張機能の設定（Extensions > dbt-power-user > 歯車 > Extension settings）に移動し、`Dbt: Run Model Command Additional Params` という設定を編集します（build も同様）
 
   {{% panel header="**注**" header-bg="warning" %}}
-  VS code の UI からモデルを実行/ビルド/テストする際、ポップアップするターミナルウィンドウはログ出力にすぎません。Cmd+C はジョブを停止せず、VS code のゴミ箱アイコンをクリックしても停止しません。VScode から開始したジョブを停止したい場合は、Snowflake UI とジョブリストを通じて、そこからジョブを kill してください。
+  VS code の UI からモデルを実行/ビルド/テストする際、ポップアップするターミナルウィンドウはログ出力にすぎません。Cmd+C はジョブを停止せず、VS code のゴミ箱アイコンをクリックしても停止しません。VScode から開始したジョブを停止したい場合は、Snowflake UI とジョブリストを通じて、そこからジョブを停止してください。
   {{% /panel %}}
 
 ## スタイルおよび使用法ガイド {#style-and-usage-guide}
@@ -429,15 +427,15 @@ dbt が最新でないという警告は無視してください。
 この構造は、dbt Labs の[プロジェクト構造化方法](https://docs.getdbt.com/best-practices/how-we-structure/1-guide-overview)に着想を得ています。
 
 {{% panel header="**レガシー構造**" header-bg="warning" %}}
-Kimball ディメンショナルモデリングに注力する前は、私たちは ["Agile Data Warehouse Design" by Corr and Stagnitto](https://books.google.com/books/about/Agile_Data_Warehouse_Design.html?id=TRWFmnv8jP0C&source=kp_book_description) で紹介された BEAM\* アプローチに着想を得たモデリングを採用していました。
+Kimball ディメンショナルモデリングに注力する前は、私たちは ["Agile Data Warehouse Design" by Corr and Stagnitto](https://books.google.com/books/about/Agile_Data_Warehouse_Design.html?id=TRWFmnv8jP0C&source=kp_book_description)で紹介された BEAM\* アプローチに着想を得たモデリングを採用していました。
 既存のモデルの多くは、依然としてそのパターンに従っています。
 このセクションの情報は、ハンドブックの以前のイテレーションからのものです。
 
-- （最終的な）`_xf` dbt モデルの目標は `BEAM*` テーブルであるべきです。これは、ビジネスイベント分析＆モデル構造に従い、ビジネスを測定する who、what、where、when、how many、why、how の質問の組み合わせに答えることを意味します。
+- （最終的な）`_xf` dbt モデルの目標は `BEAM*` テーブルであるべきです。これは、ビジネスイベント分析＆モデル構造に従い、ビジネスを測定する、誰が、何を、どこで、いつ、どのくらい、なぜ、どのようにという質問の組み合わせに答えることを意味します。
 - `base models` - ソーステーブルを参照する唯一の dbt モデルです。ベースモデルは最小限の変換ロジックを持ちます（通常、データ整合性の問題がある行や分析対象外として明示的にフラグが立てられた行のフィルタリング、および分析を容易にするための列のリネームに限定されます）。`legacy` スキーマにあり、`end-user models` の `ref` 文で使われます
-- `end-user models` - 分析に使われる dbt モデルです。モデルの最終版は、`BEAM*` テーブルを目標とする場合、おそらく `_xf` サフィックスで示されます。ビジネスイベント分析＆モデル構造に従い、ビジネスを測定する who、what、where、when、how many、why、how の質問の組み合わせに答えるべきです。エンドユーザーモデルは `legacy` スキーマにあります。
+- `end-user models` - 分析に使われる dbt モデルです。モデルの最終版は、`BEAM*` テーブルを目標とする場合、おそらく `_xf` サフィックスで示されます。ビジネスイベント分析＆モデル構造に従い、ビジネスを測定する、誰が、何を、どこで、いつ、どのくらい、なぜ、どのようにという質問の組み合わせに答えるべきです。エンドユーザーモデルは `legacy` スキーマにあります。
 
-どの新しい Kimball モデルがレガシーモデルを置き換えるかを判断するには、[Use This Not That](https://docs.google.com/spreadsheets/d/1yr-J4ztkyl9vmJ6Euj58gczDLTIss7xIher5SV-1VDY/edit?usp=sharing) のマッピングを参照してください。
+どの新しい Kimball モデルがレガシーモデルを置き換えるかを判断するには、[Use This Not That](https://docs.google.com/spreadsheets/d/1yr-J4ztkyl9vmJ6Euj58gczDLTIss7xIher5SV-1VDY/edit?usp=sharing)のマッピングを参照してください。
 {{% /panel %}}
 
 #### ソース {#sources}
@@ -448,8 +446,8 @@ Kimball ディメンショナルモデリングに注力する前は、私たち
 
 ソースは dbt 内で `sources.yml` ファイルを使って定義されます。
 
-- 私たちは dbt の sources でデータベースを参照するために変数を使います。これにより、Snowflake クローンで変更をテストする場合に、参照をプログラム的に設定できます
-- 通常の規約を満たさない名前や意味が不明確な名前のソーステーブルを扱うときは、元の名前が雑然としていたり紛らわしかったりする場合に、identifier を使ってソーステーブル名を上書きします。([identifier の使用に関するドキュメント](https://docs.getdbt.com/reference/resource-properties/identifier))
+- 私たちは dbt のソース定義でデータベースを参照するために変数を使います。これにより、Snowflake クローンで変更をテストする場合に、参照をプログラム的に設定できます
+- 通常の規約を満たさない名前や意味が不明確な名前のソーステーブルを扱うときは、元の名前が雑然としていたり紛らわしかったりする場合に、識別子を使ってソーステーブル名を上書きします。([identifier の使用に関するドキュメント](https://docs.getdbt.com/reference/resource-properties/identifier))
 
   ```yaml
   # Good
@@ -466,7 +464,7 @@ Kimball ディメンショナルモデリングに注力する前は、私たち
 
 私たちは、すべての生データの上に非常に薄いソースレイヤーを強制しています。
 このディレクトリは、ソース固有の変換の大部分が格納される場所です。
-これらは生データから直接取得し、ファクトとディメンションを作るために必要な準備作業を行う「base」モデルであり、*次のことのみ* を行うべきです。
+これらは生データから直接取得し、ファクトとディメンションを作るために必要な準備作業を行う「ベース」モデルであり、*次のことのみ* を行うべきです。
 
 - フィールドをユーザーフレンドリーな名前にリネームする
 - 列を適切な型にキャストする
@@ -591,9 +589,9 @@ graph LR
 
 次に、ソースモデルから機密モデルと非機密モデルの 2 つの別々のモデルが作成されます。
 
-非機密モデルは [`hash_sensitive_columns`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.hash_sensitive_columns) という dbt マクロを使います。これはソーステーブルを受け取り、`meta` フィールドで `sensitive: true` となっているすべての列をハッシュ化します。すべての列が同じ方法でハッシュ化されるため、特定の結合キーは指定されません。必要であれば、マクロの外でこのモデルに別の列を結合キーとして追加できます。[`sfdc_contact`](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.sfdc_contact) モデルはこの良い例です。2 つの列がハッシュ化されますが、`contact_id` という追加の主キーが指定されています。
+非機密モデルは [`hash_sensitive_columns`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.hash_sensitive_columns)という dbt マクロを使います。これはソーステーブルを受け取り、`meta` フィールドで `sensitive: true` となっているすべての列をハッシュ化します。すべての列が同じ方法でハッシュ化されるため、特定の結合キーは指定されません。必要であれば、マクロの外でこのモデルに別の列を結合キーとして追加できます。[`sfdc_contact`](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.sfdc_contact) モデルはこの良い例です。2 つの列がハッシュ化されますが、`contact_id` という追加の主キーが指定されています。
 
-機密モデルでは、結合キーを作成するために dbt マクロ [`nohash_sensitive_columns`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.nohash_sensitive_columns) が使われます。このマクロはソーステーブルと結合キーとなる列を受け取り、ハッシュ化された列を結合キーとして、残りの列をハッシュ化しないまま返します。[`sfdc_contact_pii`](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.sfdc_contact_pii) モデルは、このマクロの使用例として良いものです。
+機密モデルでは、結合キーを作成するために dbt マクロ [`nohash_sensitive_columns`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.nohash_sensitive_columns)が使われます。このマクロはソーステーブルと結合キーとなる列を受け取り、ハッシュ化された列を結合キーとして、残りの列をハッシュ化しないまま返します。[`sfdc_contact_pii`](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.sfdc_contact_pii) モデルは、このマクロの使用例として良いものです。
 
 すべてのハッシュ化には[ソルト](https://en.wikipedia.org/wiki/Salt_(cryptography))も含まれます。これらは環境変数経由で指定されます。データの種類に応じて異なるソルトがあります。これらは [`get_salt` マクロ](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.get_salt)で定義され、ローカル開発で dbt コンテナを使うときにも設定されます。
 
@@ -667,7 +665,7 @@ CREATE OR REPLACE MASKING POLICY "{{ database }}".{{ schema }}.{{ policy }}_{{ d
 
 ##### 行レベルセキュリティ {#row-level-security}
 
-行レベルセキュリティは、ユーザーがテーブルやビューでどの行を見られるかを制御します。個々の列の値をマスクするのではなく、Snowflake の [Row Access Policy](https://docs.snowflake.com/en/user-guide/security-row-intro) がリレーションにアタッチされ、クエリ時に評価されます。現在のユーザーに閲覧権限のない行は完全にフィルタリングされます。
+行レベルセキュリティは、ユーザーがテーブルやビューでどの行を見られるかを制御します。個々の列の値をマスクするのではなく、Snowflake の [Row Access Policy](https://docs.snowflake.com/en/user-guide/security-row-intro)がリレーションにアタッチされ、クエリ時に評価されます。現在のユーザーに閲覧権限のない行は完全にフィルタリングされます。
 
 これを管理するマクロは `macros/dbt_snowflake_row_access/` にあり、[動的マスキング](#dynamic-masking)と同じ post-hook パターンに従います。
 
@@ -682,7 +680,7 @@ CREATE OR REPLACE MASKING POLICY "{{ database }}".{{ schema }}.{{ policy }}_{{ d
       rls_policy: "my_snowflake_role_name"
 ```
 
-**エンタイトルメントベース:** `rls_policy` の値は、Snowflake Row Access Policy オブジェクトが作成されるときに付けられる名前にすぎません。どの Snowflake ロールとも一致する必要はありません。アクセスは、クエリ時にエンタイトルメントモデルを結合することで行ごとに決定されます。エンタイトルメントモデルは、Snowflake ユーザー名を識別する列（デフォルトは `snowflake_user_name`）と、セキュアにされるテーブルのフィルタ列に一致する結合列を持つ、プロジェクト内の dbt モデルでなければなりません。発見可能性のため、使用しているエンタイトルメントモデルをモデルの description で参照することが推奨されます。
+**エンタイトルメントベース:** `rls_policy` の値は、Snowflake Row Access Policy オブジェクトが作成されるときに付けられる名前にすぎません。どの Snowflake ロールとも一致する必要はありません。アクセスは、クエリ時にエンタイトルメントモデルを結合することで行ごとに決定されます。エンタイトルメントモデルは、Snowflake ユーザー名を識別する列（デフォルトは `snowflake_user_name`）と、セキュアにされるテーブルのフィルタ列に一致する結合列を持つ、プロジェクト内の dbt モデルでなければなりません。発見可能性のため、使用しているエンタイトルメントモデルをモデルの説明で参照することが推奨されます。
 
 ```yaml
 - name: my_model
@@ -737,19 +735,19 @@ Kimball モデリングを実装する前は、私たちのほぼすべてのモ
 - 抽象的なビジネス概念を表すための列のリネーム
 - 他のテーブルへの結合
 - ビジネスロジックの実行
-- Kimball 方法論に従った fct_* および dim_* テーブルのモデリング
+- Kimball 方法論に従った fct_*および dim_* テーブルのモデリング
 
 #### ワークスペース {#workspaces}
 
 私たちは、チーム固有で、すべてのコーディングおよびスタイルガイドに準拠する必要のないコードのためのスペースを dbt プロジェクト内に提供しています。これは、より堅牢である必要のないソリューションを使ってチームがより速くイテレーションできるようにするためです。
 
-プロジェクト内には `/models/workspaces/` フォルダがあり、チームは `workspace_<team>` のスタイルのフォルダを作成してコードを格納できます。このコードはデータチームによってスタイルのレビューは行われません。マージ前に唯一懸念されるのは、それが実行できるかどうかと、本番実行に影響を与えうるコード上の著しい非効率がないかどうかです。
+プロジェクト内には `/models/workspaces/` フォルダがあり、チームは `workspace_<team>` のスタイルのフォルダを作成してコードを格納できます。このコードは Data Team によってスタイルのレビューは行われません。マージ前に唯一懸念されるのは、それが実行できるかどうかと、本番実行に影響を与えうるコード上の著しい非効率がないかどうかです。
 
 新しいスペースを追加するには:
 
 - [`analytics`](https://gitlab.com/gitlab-data/analytics/) プロジェクトで Issue を作成し、新しいマージリクエストを開きます
-- [`/models/workspaces/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/models/workspaces/) に新しいフォルダ（例: `workspace_security`）を作成します
-- 新しい workspace のために [`dbt_project.yml`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/dbt_project.yml#L340) ファイルにエントリを追加します。書き込むべきスキーマを含めます。
+- [`/models/workspaces/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/models/workspaces/)に新しいフォルダ（例: `workspace_security`）を作成します
+- 新しいワークスペースのために [`dbt_project.yml`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/dbt_project.yml#L340) ファイルにエントリを追加します。書き込むべきスキーマを含めます。
 
   ```yaml
   # ------------------
@@ -768,11 +766,11 @@ Kimball モデリングを実装する前は、私たちのほぼすべてのモ
 
 新しく追加されたコードがデータウェアハウスに現れるまでに最大 24 時間かかります。
 
-データチームは、本番の dbt 実行を劇的に遅くするコードを拒否する権利を留保します。これが発生した場合、私たちは workspace 専用の別の dbt 実行ジョブの構築を検討します。
+Data Team は、本番の dbt 実行を劇的に遅くするコードを拒否する権利を留保します。これが発生した場合、私たちはワークスペース専用の別の dbt 実行ジョブの構築を検討します。
 
 ### 一般 {#general}
 
-- モデル名はできる限り明白であるべきで、可能な限り完全な単語を使うべきです（例: `accts` ではなく `accounts`）。絶対に必要でない限り、[エイリアス](https://docs.getdbt.com/docs/build/custom-aliases)の使用は避けてください。明確さ、一貫性、デバッグの容易さを維持するため、ウェアハウス内のテーブル名は dbt モデル名と一致すべきです。エイリアスが必要な場合は、その根拠をモデルの description に明確に文書化してください。
+- モデル名はできる限り明白であるべきで、可能な限り完全な単語を使うべきです（例: `accts` ではなく `accounts`）。絶対に必要でない限り、[エイリアス](https://docs.getdbt.com/docs/build/custom-aliases)の使用は避けてください。明確さ、一貫性、デバッグの容易さを維持するため、ウェアハウス内のテーブル名は dbt モデル名と一致すべきです。エイリアスが必要な場合は、その根拠をモデルの説明に明確に文書化してください。
 
 - 新しいデータモデルの文書化とテストは、それらを作成するプロセスの一部です。新しい dbt モデルは、テストとドキュメントなしでは完成しません。プロジェクトの規約については [dbt モデルの文書化](#documenting-dbt-models)を参照してください。
 
@@ -891,7 +889,7 @@ FY21-Q4 に、私たちはスキーマの代わりに開発データベースを
 - マクロは `macros.yml` ファイルか、説明が長い場合は macros.md ファイルに文書化すべきです
 - 入力変数を説明するには、`macros.yml` の [arguments プロパティ](https://docs.getdbt.com/reference/macro-properties)を使います
 
-##### dbt-utils
+##### dbt-utils {#dbt-utils}
 
 私たちの dbt プロジェクトでは、[dbt-utils パッケージ](https://github.com/dbt-labs/dbt-utils)を使用しています。これは一般的に便利なマクロをいくつか追加します。注目すべき重要なものは次のとおりです。
 
@@ -905,7 +903,7 @@ Seeds は、csv ファイルからデータをデータウェアハウスに読�
 これらの csv ファイルは私たちの dbt リポジトリにあるため、バージョン管理され、コードレビューが可能です。
 この方法は、頻繁に変更されない静的データの読み込みに適しています。
 最大 ~1k 行程度で数キロバイト未満の csv ファイルは、おそらく `dbt seed` コマンドでの使用に適した候補です。
-seed ファイルは、そこに含まれる情報を所有する機能チームに対応するプロジェクトフォルダに配置すべきです。このフォルダ構造は `PREP` データベース内のスキーマにも対応しており、データをさらなる開発で簡単に使えるようにします。
+seed ファイルは、そこに含まれる情報を所有する部門チームに対応するプロジェクトフォルダに配置すべきです。このフォルダ構造は `PREP` データベース内のスキーマにも対応しており、データをさらなる開発で簡単に使えるようにします。
 
 ### 列の整理 {#organizing-columns}
 
@@ -994,9 +992,9 @@ seed ファイルは、そこに含まれる情報を所有する機能チーム
 
 [dbt のタグ](https://docs.getdbt.com/reference/resource-configs/tags)は、プロジェクトのさまざまな部分にラベルを付ける方法です。これらのタグは、実行するモデル、スナップショット、seed のセットを選択するときに利用できます。
 
-タグは YAML ファイルか、任意のモデルの config 設定で追加できます。タグの使い方のいくつかの例については、[`dbt_project.yml`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/dbt_project.yml) ファイルを確認してください。[Trusted Data Framework](/handbook/enterprise-data/platform/dbt-guide/#tagging) のためにタグを追加する具体的な例は以下に示します。
+タグは YAML ファイルか、任意のモデルの config 設定で追加できます。タグの使い方のいくつかの例については、[`dbt_project.yml`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/dbt_project.yml) ファイルを確認してください。[Trusted Data Framework](/handbook/enterprise-data/platform/dbt-guide/#tagging)のためにタグを追加する具体的な例は以下に示します。
 
-`analytics` プロジェクト内では、すべてのタグに対する単一の信頼できる情報源（Single Source of Truth）を強制しています。私たちは、どのタグが使われているかを文書化するために [Valid Tags CSV](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/data/valid_tags.csv) を使います。マージリクエスト内では、すべての dbt CI ジョブに、この csv をプロジェクトで使われるすべてのタグと照合し、不一致があればジョブを失敗させる検証ステップがあります。将来的には、この csv ファイル内にタグに関するより多くのメタデータを含めることを目指しています。
+`analytics` プロジェクト内では、すべてのタグに対する単一の信頼できる情報源（Single Source of Truth）を強制しています。私たちは、どのタグが使われているかを文書化するために [Valid Tags CSV](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/data/valid_tags.csv)を使います。マージリクエスト内では、すべての dbt CI ジョブに、この csv をプロジェクトで使われるすべてのタグと照合し、不一致があればジョブを失敗させる検証ステップがあります。将来的には、この csv ファイル内にタグに関するより多くのメタデータを含めることを目指しています。
 
 どのレベルで適用されたタグも、いかなるテストにも適用されないことに注意してください。テストのタグは、`schema.yml` ファイル内のすべてのテストに対して明示的に適用する必要があります。
 
@@ -1024,7 +1022,7 @@ seed ファイルは、そこに含まれる情報を所有する機能チーム
 
 #### ランダムサンプル {#random-sample}
 
-マクロ [`sample_table`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.sample_table) を使うと、開発者は対象テーブルのランダムなパーセントを選択できます。このマクロは、返される対象テーブルの量を表すパーセント値を受け取ります。サンプルはランダムですが決定論的でもあり、対象テーブルが変更されていなければ各クエリは同じ行を返します。このマクロをコードに残すと本番および ci 環境で実行されるため、メインのコードブランチにマージする前に削除すべきです。
+マクロ [`sample_table`](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.sample_table)を使うと、開発者は対象テーブルのランダムなパーセントを選択できます。このマクロは、返される対象テーブルの量を表すパーセント値を受け取ります。サンプルはランダムですが決定論的でもあり、対象テーブルが変更されていなければ各クエリは同じ行を返します。このマクロをコードに残すと本番および ci 環境で実行されるため、メインのコードブランチにマージする前に削除すべきです。
 
 使用例:
 
@@ -1047,7 +1045,7 @@ FROM dev_prod.common.dim_date SAMPLE SYSTEM (3) SEED (16)
 ワークフローの手順:
 
 - 対象のサンプルテーブルをクローンする
-  - [`clone-dbt-select-local-user`](/handbook/enterprise-data/platform/dbt-guide/#cloning-models-locally) のようなコマンドを使い、サンプリング元の全データテーブルがあることを確認します。
+  - [`clone-dbt-select-local-user`](/handbook/enterprise-data/platform/dbt-guide/#cloning-models-locally)のようなコマンドを使い、サンプリング元の全データテーブルがあることを確認します。
 - 作成する各テーブルのサンプルを設定する
   - サンプルは `samples` マクロの `samples_yml` 変数で設定します
 
@@ -1125,7 +1123,7 @@ Trusted Data Framework の背後にある哲学のより深い掘り下げにつ
 
 #### スキーマからゴールデンデータまでのカバレッジ {#schema-to-golden-data-coverage}
 
-私たちは Trusted Data Framework (TDF) のモニターとテストの 12 カテゴリを実装しています（モニターは [Monte-Carlo](/handbook/enterprise-data/platform/monte-carlo/) で作成・実行され、テストは dbt で作成・実行されます）。
+私たちは Trusted Data Framework (TDF) のモニターとテストの 12 カテゴリを実装しています（モニターは [Monte-Carlo](/handbook/enterprise-data/platform/monte-carlo/)で作成・実行され、テストは dbt で作成・実行されます）。
 
 1. `Freshness monitors` テーブルやフィールドの更新の異常な遅延を監視します
 1. `Schema monitors` 追加、削除、変更されたフィールドを監視します
@@ -1143,11 +1141,11 @@ Trusted Data Framework の背後にある哲学のより深い掘り下げにつ
 
 スキーマテストと列値テストは通常、対象モデルと同じディレクトリの `schema.yml` および `sources.yml` ファイル内にあります。
 
-行数テストやその他のカスタム SQL テストは、[`transform/snowflake-dbt/tests/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/tests) にあり、ビジネスドメイン別に整理されています。
+行数テストやその他のカスタム SQL テストは、[`transform/snowflake-dbt/tests/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/tests)にあり、ビジネスドメイン別に整理されています。
 
 ##### タグ付け {#tagging}
 
-テストにタグを付けることは、新しいテストを追加する際の重要なステップです。テストに [dbt タグ](https://docs.getdbt.com/reference/resource-configs/tags)でラベルを付けることが、trusted data ダッシュボードを構築する際にテストをパースして識別する方法です。テストにタグを付けるには、その種類に応じて 2 つの方法があります。
+テストにタグを付けることは、新しいテストを追加する際の重要なステップです。テストに [dbt タグ](https://docs.getdbt.com/reference/resource-configs/tags)でラベルを付けることが、トラスティッドデータのダッシュボードを構築する際にテストをパースして識別する方法です。テストにタグを付けるには、その種類に応じて 2 つの方法があります。
 
 1 つ目は、YAML 定義でタグを追加することです。これは、ソーステストでは YAML 定義の最上位レベルで、モデルテストでは列レベルで行えます。
 
@@ -1332,7 +1330,7 @@ HAVING total_amount < 0
 YAML ベースのテストもカスタム SQL テストも、すべて `analytics` リポジトリにあるため、作成する MR は常に 1 つだけです。
 
 - **YAML テストの追加または変更**（`schema.yml` / `sources.yml`）: 標準の MR ワークフローに従い、通常どおり [CI ジョブ](/handbook/enterprise-data/platform/ci-jobs)を実行します。
-- **カスタム SQL テストの追加または変更**: 同じ `analytics` MR 内で、SQL ファイルを [`transform/snowflake-dbt/tests/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/tests) に追加します。標準の dbt CI ジョブを実行して検証します。
+- **カスタム SQL テストの追加または変更**: 同じ `analytics` MR 内で、SQL ファイルを [`transform/snowflake-dbt/tests/`](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/tests)に追加します。標準の dbt CI ジョブを実行して検証します。
 
 #### 例 {#example-1}
 
@@ -1346,7 +1344,7 @@ YAML ベースのテストもカスタム SQL テストも、すべて `analytic
 
 ##### データ変換（Prod データレイヤー） {#data-transformation-prod-data-layer}
 
-データ変換は、Dimensions、Facts、Marts、reports モデルのための dbt を介した下流変換です。
+データ変換は、ディメンション、ファクト、マート、レポートの各モデルのための dbt を介した下流変換です。
 
 ## dbt モデルの文書化 {#documenting-dbt-models}
 
@@ -1621,7 +1619,7 @@ dbt のスナップショットは [SCD Type 2](https://en.wikipedia.org/wiki/Sl
 
 この単一のスナップショットテーブルは、その SCD Type 2 の性質により、ソーステーブルの変更履歴全体をキャプチャします。
 
-例を含むスナップショットの詳細については、[dbt docs](https://docs.getdbt.com/docs/build/snapshots) を参照してください。
+例を含むスナップショットの詳細については、[dbt docs](https://docs.getdbt.com/docs/build/snapshots)を参照してください。
 
 私たちが[スナップショットについてどう語り、定義しているか](/handbook/enterprise-data/platform/#snapshots)に注意してください。
 
@@ -1655,7 +1653,7 @@ dbt のスナップショットは [SCD Type 2](https://en.wikipedia.org/wiki/Sl
 - **データベースとスキーマの設定**： データベースとスキーマを `dbt_project.yml` で設定します。データベースには環境変数を使い、スキーマを `snapshots` に設定します。これにより一貫性が確保され、環境間でのデプロイが簡素化されます。
 - **命名規約に従う**： データウェアハウス内のテーブル名は `{source_table_name}_snapshots` の命名規約に従うべきです。
 - **変換を避ける**： スナップショットモデルでは、重複排除以外の変換は最小限にします。クリーニングや変換のロジックは、スナップショットをシンプルに保つために下流で扱うべきです。
-- **タイムスタンプ戦略を優先する**： 信頼できる `updated_at` フィールドが利用できない場合を除き、`check` より `timestamp` 戦略を優先します。ただし、Salesforce では `SystemModstamp` フィールドが数式フィールドへの変更をキャプチャしないことに注意してください。SFDC のスナップショットでは、更新が見逃されないように、`check` 戦略を使ってすべての列を検証する方が良いです。スナップショット戦略の詳細については、[snapshot strategies](https://docs.getdbt.com/reference/resource-configs/strategy) の dbt ドキュメントを参照してください。
+- **タイムスタンプ戦略を優先する**： 信頼できる `updated_at` フィールドが利用できない場合を除き、`check` より `timestamp` 戦略を優先します。ただし、Salesforce では `SystemModstamp` フィールドが数式フィールドへの変更をキャプチャしないことに注意してください。SFDC のスナップショットでは、更新が見逃されないように、`check` 戦略を使ってすべての列を検証する方が良いです。スナップショット戦略の詳細については、[snapshot strategies](https://docs.getdbt.com/reference/resource-configs/strategy)の dbt ドキュメントを参照してください。
 - **`invalidate_hard_deletes` を有効にする**： 削除されたレコードを追跡して除外することが重要なスナップショットには、`invalidate_hard_deletes` オプションを使います。この設定を有効にすると、ソースから削除されたレコードには、NULL のままにする代わりに有効な終了タイムスタンプ（`dbt_valid_to`）が割り当てられます。
 
 ### スナップショット MR テンプレート {#snapshot-mr-template}
@@ -1709,12 +1707,12 @@ dbt のスナップショットは、デフォルトではインクリメンタ�
 
 ### スナップショットと GDPR {#snapshots-and-gdpr}
 
-データチームは、GDPR のために Snowflake データウェアハウスから個人データを削除するリクエストを受け取ることがあります。これらの削除に対処するため、私たちは `dbt` マクロを使います。マクロは削除する必要のある該当データをすべてスキャンし、これはスナップショットテーブルにも適用されます。これらのマクロは、この [issue テンプレート](https://gitlab.com/gitlab-data/analytics/-/blob/master/.gitlab/issue_templates/Data:%20GDPR%20Deletion.md?ref_type=heads)に従って手動で使うこともでき、この [runbook](https://gitlab.com/gitlab-data/runbooks/-/blob/main/gdpr_deletions/gdpr_deletions.md?ref_type=heads) と[ハンドブックページ](/handbook/enterprise-data/platform/gdpr-deletions/)に従って Airflow で実行するようスケジュールもされています。
+Data Team は、GDPR のために Snowflake データウェアハウスから個人データを削除するリクエストを受け取ることがあります。これらの削除に対処するため、私たちは `dbt` マクロを使います。マクロは削除する必要のある該当データをすべてスキャンし、これはスナップショットテーブルにも適用されます。これらのマクロは、この [Issue テンプレート](https://gitlab.com/gitlab-data/analytics/-/blob/master/.gitlab/issue_templates/Data:%20GDPR%20Deletion.md?ref_type=heads)に従って手動で使うこともでき、この [runbook](https://gitlab.com/gitlab-data/runbooks/-/blob/main/gdpr_deletions/gdpr_deletions.md?ref_type=heads)と[ハンドブックページ](/handbook/enterprise-data/platform/gdpr-deletions/)に従って Airflow で実行するようスケジュールもされています。
 
 2 つのフレーバーがあります。
 
-1. GDPR 削除リクエストがすべての GitLab ソースに適用され、したがってデータウェアハウス内のすべてのテーブルをチェックして更新する必要がある場合。[マクロ](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.gdpr_delete)。GDPR 削除を要求する issue が（タイトルまたは issue の説明のいずれかで）`Deletion Request (Full)` と記載している場合は、このマクロを使います。
-2. GDPR 削除リクエストが GitLab.com 関連のソースのみに適用され、したがってデータウェアハウス内の GitLab.com 関連のテーブルのみをチェックして更新する必要がある場合。[マクロ](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.gdpr_delete_gitlab_dotcom)。GDPR 削除を要求する issue が（タイトルまたは issue の説明のいずれかで）`Deletion Request (GitLab.com Only` と記載している場合のみ、このマクロを使います。
+1. GDPR 削除リクエストがすべての GitLab ソースに適用され、したがってデータウェアハウス内のすべてのテーブルをチェックして更新する必要がある場合。[マクロ](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.gdpr_delete)。GDPR 削除を要求する Issue が（タイトルまたは Issue の説明のいずれかで）`Deletion Request (Full)` と記載している場合は、このマクロを使います。
+2. GDPR 削除リクエストが GitLab.com 関連のソースのみに適用され、したがってデータウェアハウス内の GitLab.com 関連のテーブルのみをチェックして更新する必要がある場合。[マクロ](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.gdpr_delete_gitlab_dotcom)。GDPR 削除を要求する Issue が（タイトルまたは Issue の説明のいずれかで）`Deletion Request (GitLab.com Only` と記載している場合のみ、このマクロを使います。
 
 2 つ目のフレーバーに固有のこととして、新しいスナップショットモデルを作成したり既存のスナップショットモデルをリネームしたりする際は、`dbt` マクロが関係するモデルをカバーしているか確認してください。GitLab.com 関連のソースのみの GDPR 削除リクエストの場合、マクロ内のフィルタリングが該当するスナップショットテーブルに適用されるかを確認してください。
 
@@ -1724,17 +1722,17 @@ dbt のスナップショットは、デフォルトではインクリメンタ�
 
 ### スナップショットの上にモデルを構築する {#building-models-on-top-of-snapshots}
 
-スナップショットの上に構築されるモデルは、履歴分析のために設計されています。これらのモデルはスナップショットデータを組み込み、複数のスナップショットを結合したり新しいメトリクスを導出したりするロジックを含むことができます。スナップショットを組み合わせてビジネスルールを適用することで、データの包括的な履歴ビューを提供します。これらのモデルの主要な特徴は **date spining** であり、これは `dbt_valid_from` と `dbt_valid_to` の間のすべての日付の行を生成することで、履歴上の任意の日のレコード値を簡単に分析できるようにします。これらのモデルは、基礎となる dbt スナップショットが追記のみで変更されないため、しばしば `incremental` として設定されます。公開されたスナップショットモデルの構造やロジックが変わった場合は、フルリフレッシュが必要になることがあります。
+スナップショットの上に構築されるモデルは、履歴分析のために設計されています。これらのモデルはスナップショットデータを組み込み、複数のスナップショットを結合したり新しいメトリクスを導出したりするロジックを含むことができます。スナップショットを組み合わせてビジネスルールを適用することで、データの包括的な履歴ビューを提供します。これらのモデルの主要な特徴は **日付スパイン展開** であり、これは `dbt_valid_from` と `dbt_valid_to` の間のすべての日付の行を生成することで、履歴上の任意の日のレコード値を簡単に分析できるようにします。これらのモデルは、基礎となる dbt スナップショットが追記のみで変更されないため、しばしば `incremental` として設定されます。公開されたスナップショットモデルの構造やロジックが変わった場合は、フルリフレッシュが必要になることがあります。
 
-date spining では、スナップショットモデルが `dbt_valid_from` および `dbt_valid_to` フィールドを使って date テーブルと結合されます。このプロセスは、特定の日（`snapshot_date` と呼ばれます）にアクティブだったレコードの状態を表す、1 日につき 1 レコードのテーブルを生成します。
+日付スパイン展開では、スナップショットモデルが `dbt_valid_from` および `dbt_valid_to` フィールドを使って日付テーブルと結合されます。このプロセスは、特定の日（`snapshot_date` と呼ばれます）にアクティブだったレコードの状態を表す、1 日につき 1 レコードのテーブルを生成します。
 
-date spining を使って各日のレコードを生成する場合は、モデルを [incremental](https://docs.getdbt.com/docs/build/incremental-models) としてマテリアライズすることを検討してください。
+日付スパイン展開を使って各日のレコードを生成する場合は、モデルを [incremental](https://docs.getdbt.com/docs/build/incremental-models)としてマテリアライズすることを検討してください。
 
 ### データのバックフィル {#backfilling-data}
 
 データをバックフィルする必要がある場合（例えばインクリメンタルモデルで）、最も一般的なアプローチは、そのモデルでフルリフレッシュ `--full-refresh` を実行することです。これは、データドリフトを最小化するために、`dbt_full_refresh_monthly` DAG によって毎月第 1 日曜日に行われます。あるいは、毎月のペース外でデータを再読み込みする必要がある場合は、`dbt_manual_refresh` DAG で手動で実行できます。これらのバックフィル方法では、インクリメンタルモデルに特別な設定は不要で機能し、デフォルトのアプローチと見なすべきです。
 
-データがこの種のバックフィルには大きすぎることが判明し、クエリがタイムアウトしたり、毎月のリフレッシュで一般にリフレッシュに 1 時間以上かかったり、毎月バックフィルするビジネス上/技術上の必要がない場合は、モデルの `full_refresh` プロパティが `only_force_full_refresh()` マクロを使うように設定することで、`--full-refresh` フラグが渡されてもリフレッシュしないようにモデルを設定できます。このマクロは false を返し、`--full-refresh` フラグが設定され、かつ `full_refresh_force` 変数が `true` に設定されていない限り、モデルが常にインクリメンタルモードで実行されるよう強制します。これにより、モデルの設定を変更することなく、必要なときにプログラム的に手動でフルリフレッシュを有効にできます。
+データがこの種のバックフィルには大きすぎることが判明し、クエリがタイムアウトしたり、毎月のリフレッシュで一般にリフレッシュに 1 時間を超えてかかったり、毎月バックフィルするビジネス上/技術上の必要がない場合は、モデルの `full_refresh` プロパティが `only_force_full_refresh()` マクロを使うように設定することで、`--full-refresh` フラグが渡されてもリフレッシュしないようにモデルを設定できます。このマクロは false を返し、`--full-refresh` フラグが設定され、かつ `full_refresh_force` 変数が `true` に設定されていない限り、モデルが常にインクリメンタルモードで実行されるよう強制します。これにより、モデルの設定を変更することなく、必要なときにプログラム的に手動でフルリフレッシュを有効にできます。
 
 大きなインクリメンタルモデルでデータのバックフィルのオプションが依然として必要で、フルリフレッシュが時間がかかりすぎるために無効化されている場合は、私たちがインクリメンタルバックフィルと呼ぶものを可能にするようにモデルを設定できます。
 
@@ -1744,7 +1742,7 @@ date spining を使って各日のレコードを生成する場合は、モデ�
 
 ### 下流への影響のテスト {#testing-downstream-impact}
 
-モデルへの変更が持ちうる下流への影響を手動でレビューするには、[MonteCarlo](https://getmontecarlo.com/) のアセットレベルおよびフィールドレベルのリネージを使ってください。
+モデルへの変更が持ちうる下流への影響を手動でレビューするには、[MonteCarlo](https://getmontecarlo.com/)のアセットレベルおよびフィールドレベルのリネージを使ってください。
 
 ### dbt モデルの削除 {#dropping-dbt-models}
 
@@ -1752,11 +1750,11 @@ dbt モデルを削除するには、ローカルの IDE で関連するファ�
 
 本番の Snowflake テーブルは自動的には削除されず、Data Platform チームによって別途処理する必要があることに注意してください。
 
-MR の作成者は、フォローアップの issue を作成し、テーブルの削除を完了するために Data Platform チームに割り当てるべきです。
+MR の作成者は、フォローアップの Issue を作成し、テーブルの削除を完了するために Data Platform チームに割り当てるべきです。
 
 場合によっては、dbt モデルが削除された後も、履歴目的でテーブルを保持する必要があることがあります。つまり、それらは更新されなくなりますが、参照のためにそのまま残されます。
 
-dbt モデルが非推奨化され、一部のテーブルがデータベースに保持される様子を示す[例 MR](https://gitlab.com/gitlab-data/analytics/-/merge_requests/6990) がこちらです。
+dbt モデルが非推奨化され、一部のテーブルがデータベースに保持される様子を示す[例 MR](https://gitlab.com/gitlab-data/analytics/-/merge_requests/6990)がこちらです。
 
 ### スナップショットのバックアップ {#backing-up-snapshots}
 
@@ -1764,7 +1762,7 @@ dbt モデルが非推奨化され、一部のテーブルがデータベース�
 
 ## モデルの効率性 {#model-efficiency}
 
-モデルの効率性は、モデルが Snowflake のリソースをどれだけうまく使ってモデルを生成しているかを測る尺度です。現時点では、クエリ内で取られたアクションを手続き的かつ確実に定量化する方法が見つかっていないため、使われたクエリを測る尺度ではありません。モデルの効率性スコアは、各モデルの呼び出しごとに決定でき、モデルによって実行されたクエリから決定される 3 つの数値に基づきます。これらの構成要素となる数値は、全体の数値が意図したターゲットを満たさない場合にどこを調査すべきかについての洞察を提供することを意図しています。これらのスコアは集約して、run や day のようなモデルのグループ全体の効率性を示すことができます。
+モデルの効率性は、モデルが Snowflake のリソースをどれだけうまく使ってモデルを生成しているかを測る尺度です。現時点では、クエリ内で取られたアクションを手続き的かつ確実に定量化する方法が見つかっていないため、使われたクエリを測る尺度ではありません。モデルの効率性スコアは、各モデルの呼び出しごとに決定でき、モデルによって実行されたクエリから決定される 3 つの数値に基づきます。これらの構成要素となる数値は、全体の数値が意図したターゲットを満たさない場合にどこを調査すべきかについての洞察を提供することを意図しています。これらのスコアは集約して、実行単位や日単位のようなモデルのグループ全体の効率性を示すことができます。
 
 ### 手法 {#method}
 
@@ -1774,31 +1772,31 @@ dbt モデルが非推奨化され、一部のテーブルがデータベース�
 
 \\[E_l = min\{\frac{s-S_l}s,0\}\\]
 
-- \\(S_l\\) はモデルの Bytes Spilled to Local Storage
-- \\(E_l\\) はモデルの Local Storage Efficiency
-- \\(s\\) はモデルの Bytes Scanned
+- \\(S_l\\) はモデルがローカルストレージにスピルしたバイト数
+- \\(E_l\\) はモデルのローカルストレージ効率性
+- \\(s\\) はモデルがスキャンしたバイト数
 
-このメトリクスは、モデルの bytes scanned からモデルの bytes spilled to local storage を引いたものを、モデルの bytes scanned で割り、0 から 1 の値に制限して計算されます。この計算により、他のモデルから独立しつつも他のモデルと比較可能な数値が得られます。
+このメトリクスは、モデルがスキャンしたバイト数からモデルがローカルストレージにスピルしたバイト数を引いたものを、モデルがスキャンしたバイト数で割り、0 から 1 の値に制限して計算されます。この計算により、他のモデルから独立しつつも他のモデルと比較可能な数値が得られます。
 
 #### リモートストレージ効率性 {#remote-storage-efficiency}
 
 \\[E_r = min\{\frac{s-S_r}s,0\}\\]
 
-- \\(S_r\\) はモデルの Bytes Spilled to Remote Storage
-- \\(E_r\\) はモデルの Remote Storage Efficiency
-- \\(s\\) はモデルの Bytes Scanned
+- \\(S_r\\) はモデルがリモートストレージにスピルしたバイト数
+- \\(E_r\\) はモデルのリモートストレージ効率性
+- \\(s\\) はモデルがスキャンしたバイト数
 
-このメトリクスは、モデルの bytes scanned からモデルの bytes spilled to remote storage を引いたものを、モデルの bytes scanned で割り、0 から 1 の値に制限して計算されます。この計算により、他のモデルから独立しつつも他のモデルと比較可能な数値が得られます。
+このメトリクスは、モデルがスキャンしたバイト数からモデルがリモートストレージにスピルしたバイト数を引いたものを、モデルがスキャンしたバイト数で割り、0 から 1 の値に制限して計算されます。この計算により、他のモデルから独立しつつも他のモデルと比較可能な数値が得られます。
 
 #### パーティションスキャン効率性 {#partition-scan-efficiency}
 
 \\[E_p = if\ p\ >\ 1\ then\ min\{\frac{p-S_p}p,0\}\ else\ 1\\]
 
-- \\(S_p\\) はモデルの Partitions Scanned
-- \\(E_p\\) はモデルの Partition Scan Efficiency
-- \\(p\\) はモデルの Total Partitions
+- \\(S_p\\) はモデルがスキャンしたパーティション数
+- \\(E_p\\) はモデルのパーティションスキャン効率性
+- \\(p\\) はモデルの総パーティション数
 
-モデルのパーティションが 1 つより多い場合、このメトリクスはモデルの total partitions からモデルの partitions scanned を引いたものを、モデルの total partitions で割り、0 から 1 の値に制限して計算されます。そうでなければ、メトリクスの値は 1 に設定されます。この計算により、他のモデルから独立しつつも他のモデルと比較可能な数値が得られます。常に何らかの数のパーティションをスキャンする必要があるため、ほとんどのモデルはパーティションスキャン効率性の値 1 を達成できないと予想されますが、このメトリクスをできる限り改善する努力をすべきです。
+モデルのパーティションが 1 つより多い場合、このメトリクスはモデルの総パーティション数からモデルがスキャンしたパーティション数を引いたものを、モデルの総パーティション数で割り、0 から 1 の値に制限して計算されます。そうでなければ、メトリクスの値は 1 に設定されます。この計算により、他のモデルから独立しつつも他のモデルと比較可能な数値が得られます。常に何らかの数のパーティションをスキャンする必要があるため、ほとんどのモデルはパーティションスキャン効率性の値 1 を達成できないと予想されますが、このメトリクスをできる限り改善する努力をすべきです。
 
 #### 効率性スコア {#efficiency-score}
 
@@ -1806,23 +1804,23 @@ dbt モデルが非推奨化され、一部のテーブルがデータベース�
 \\[E = [(E_l * w_l) + (E_r * w_r) + (E_p * w_p)]*100\\]
 <!-- markdownlint-enable MD037 -->
 
-- \\(E\\) はモデルの Efficiency Score
-- \\(E_p\\) はモデルの Partition Scan Efficiency
-- \\(E_r\\) はモデルの Remote Storage Efficiency
-- \\(E_l\\) はモデルの Local Storage Efficiency
-- \\(w_p\\) はモデルの Partition Scan Efficiency の重み
-- \\(w_r\\) はモデルの Remote Storage Efficiency の重み
-- \\(w_l\\) はモデルの Local Storage Efficiency の重み
+- \\(E\\) はモデルの効率性スコア
+- \\(E_p\\) はモデルのパーティションスキャン効率性
+- \\(E_r\\) はモデルのリモートストレージ効率性
+- \\(E_l\\) はモデルのローカルストレージ効率性
+- \\(w_p\\) はモデルのパーティションスキャン効率性の重み
+- \\(w_r\\) はモデルのリモートストレージ効率性の重み
+- \\(w_l\\) はモデルのローカルストレージ効率性の重み
 
 複合スコアは、`Local Storage Efficiency`、`Remote Storage Efficiency`、`Partition Scan Efficiency` メトリクスの加重平均として計算されます。メトリクスの重みは、ビジネスのニーズと焦点に応じて任意に決定されます。
 
 ### 使い方 {#usage}
 
-モデルの効率性は、個々のモデルについても、モデルの集合についても見ることができます。モデルの集合を見るときは、その集合内のモデル全体で、例えば total bytes scanned によって効率性メトリクスとスコアを重み付けすることが推奨されます。メトリクスとスコアがターゲット値を下回る場合、各メトリクスは効率性を改善するための探索領域を示すことができます。`Local Storage Efficiency` と `Remote Storage Efficiency` はモデルが処理したバイト数に対してメモリが不十分であることを示し、低い `Partition Scan Efficiency` はモデルが必要なテーブルスキャンの一部としてパーティションをプルーニングするように設定されていない可能性があることを示します。
+モデルの効率性は、個々のモデルについても、モデルの集合についても見ることができます。モデルの集合を見るときは、その集合内のモデル全体で、例えばスキャンした総バイト数によって効率性メトリクスとスコアを重み付けすることが推奨されます。メトリクスとスコアがターゲット値を下回る場合、各メトリクスは効率性を改善するための探索領域を示すことができます。`Local Storage Efficiency` と `Remote Storage Efficiency` はモデルが処理したバイト数に対してメモリが不十分であることを示し、低い `Partition Scan Efficiency` はモデルが必要なテーブルスキャンの一部としてパーティションをプルーニングするように設定されていない可能性があることを示します。
 
 ### レポート {#reporting}
 
-組織の dbt モデルの全体的な効率性をレポートするには、各モデルの最新の呼び出しが使われ、total bytes scanned によって重み付けされます。この方法は、すべてのモデルの集約された効率性の変化を時間の経過とともに見るビューを提供し、モデルへの変更や集合に追加された新しいモデルの効果の遅行指標を表します。各メトリクスとスコアはレポートで利用可能で、変化の原因を掘り下げ、改善領域を特定できます。
+組織の dbt モデルの全体的な効率性をレポートするには、各モデルの最新の呼び出しが使われ、スキャンした総バイト数によって重み付けされます。この方法は、すべてのモデルの集約された効率性の変化を時間の経過とともに見るビューを提供し、モデルへの変更や集合に追加された新しいモデルの効果の遅行指標を表します。各メトリクスとスコアはレポートで利用可能で、変化の原因を掘り下げ、改善領域を特定できます。
 
 ## モデルのパフォーマンス {#model-performance}
 
@@ -1852,7 +1850,7 @@ dbt モデルが非推奨化され、一部のテーブルがデータベース�
 
 モデルが生成するテーブルの行数とバイト数として定義されます。[分類の詳細](https://gitlab.com/gitlab-data/analytics/-/issues/13941#note_1107271393)
 
-| 分類 | Rows >        | Rows <=       | GB >  | GB <= |
+| 分類 | 行数 >        | 行数 <=       | GB >  | GB <= |
 |----------------|---------------|---------------|-------|-------|
 | XS             | 0             | 1,000,000     | 0     | 1     |
 | S              | 1,000,000     | 10,000,000    | 1     | 10    |
@@ -1862,13 +1860,13 @@ dbt モデルが非推奨化され、一部のテーブルがデータベース�
 
 #### モデルの効率性 {#model-efficiency-1}
 
-モデルのすべてのクエリの total bytes written に対する total bytes spilled として定義されます。[分類の詳細](https://gitlab.com/gitlab-data/analytics/-/issues/13941#note_1107564876)
+モデルのすべてのクエリで書き込まれた総バイト数に対するスピルした総バイト数として定義されます。[分類の詳細](https://gitlab.com/gitlab-data/analytics/-/issues/13941#note_1107564876)
 
-| 分類 | GB Spilled Local  | GB Spilled Remote |
+| 分類 | ローカルにスピルした GB  | リモートにスピルした GB |
 |----------------|-------------------|-------------------|
 | Good           | 0                 | 0                 |
-| Acceptable     | <= 5 * GB Written | 0                 |
-| Poor           | > 5 * GB Written  | 0                 |
+| Acceptable     | <= 5 * 書き込まれた GB | 0                 |
+| Poor           | > 5 * 書き込まれた GB  | 0                 |
 | Very Poor      |                   | > 0               |
 
 ### 手法 {#methods}
@@ -1896,10 +1894,10 @@ dbt モデルが非推奨化され、一部のテーブルがデータベース�
 
 #### テストの最適化 {#test-optimization}
 
-デフォルトでは、すべての主キーで uniqueness と `not_null` をテストすべきですが、テストは妥当な時間内に完了できるべきです。長時間実行されるテストが検出された場合、テストを削除するかパフォーマンスを改善するために使えるいくつかの戦略があります。
+デフォルトでは、すべての主キーで一意性と `not_null` をテストすべきですが、テストは妥当な時間内に完了できるべきです。長時間実行されるテストが検出された場合、テストを削除するかパフォーマンスを改善するために使えるいくつかの戦略があります。
 
-- そのテストは、そのフィールドに対してすでに QUALIFY 文を持つモデルで uniqueness をチェックしていませんか? この場合、uniqueness はモデルに組み込まれており、テストする必要はありません。ただし、その後の変更でこれが変わらないように注意すべきです。
-- そのテストは、そのフィールドをすでに `unique_key` として定義しているインクリメンタルモデルで uniqueness をチェックしていませんか? 重複キーを挿入しようとすると処理エラーになるため、テストは必要ないかもしれません。
+- そのテストは、そのフィールドに対してすでに QUALIFY 文を持つモデルで一意性をチェックしていませんか? この場合、一意性はモデルに組み込まれており、テストする必要はありません。ただし、その後の変更でこれが変わらないように注意すべきです。
+- そのテストは、そのフィールドをすでに `unique_key` として定義しているインクリメンタルモデルで一意性をチェックしていませんか? 重複キーを挿入しようとすると処理エラーになるため、テストは必要ないかもしれません。
 - テーブルが非常に大きい場合は、テスト config でルックバック期間を指定できます。例えば次のようにします。
 
 ```yaml
@@ -1943,7 +1941,7 @@ data_tests:
 
 #### モデルのパフォーマンス統計の取得 {#retrieve-model-performance-statistics}
 
-[model_build_performance](https://gitlab.com/gitlab-data/runbooks/-/blob/main/dbt_performance/model_build_performance.md) runbook を使って、モデルのパフォーマンス統計を取得します。
+[model_build_performance](https://gitlab.com/gitlab-data/runbooks/-/blob/main/dbt_performance/model_build_performance.md) 運用手順書を使って、モデルのパフォーマンス統計を取得します。
 
 #### モデル実行時間のチェック {#check-model-run-time}
 
@@ -1985,14 +1983,14 @@ Acceptable より悪いモデルの効率性は、大きなスピルを表し、
 
 ## dbt のアップグレード {#upgrading-dbt}
 
-dbt を独立して非同期にアップグレードする方法の手順については、[runbook](https://gitlab.com/gitlab-data/runbooks/-/blob/main/infrastructure/upgrading_dbt_version.md) を参照してください。
+dbt を独立して非同期にアップグレードする方法の手順については、[runbook](https://gitlab.com/gitlab-data/runbooks/-/blob/main/infrastructure/upgrading_dbt_version.md)を参照してください。
 
 ### 最新の状態を保つ {#staying-up-to-date}
 
-私たちのポリシーは、クリティカルサポートのある [`dbt-core`](https://docs.getdbt.com/docs/dbt-versions/core) のバージョンに常にいるべきであるというものです。計画されたリリースとサポートウィンドウについては、リンク先のスケジュールを確認してください。私たちがまだクリティカルサポートのあるバージョンにいる間にリリースされるマイナーリリースについては、そのマイナーリリースがアップデートに値するかどうかを四半期ごとに評価します。
+私たちのポリシーは、クリティカルサポートのある [`dbt-core`](https://docs.getdbt.com/docs/dbt-versions/core)のバージョンに常にいるべきであるというものです。計画されたリリースとサポートウィンドウについては、リンク先のスケジュールを確認してください。私たちがまだクリティカルサポートのあるバージョンにいる間にリリースされるマイナーリリースについては、そのマイナーリリースがアップデートに値するかどうかを四半期ごとに評価します。
 
 メジャーリリースが発生したとき、私たちは新しいメジャーバージョンの 2 番目のマイナーリリースの前に新しいメジャーバージョンへアップグレードすべきです。例えば、v.2.2.0 がリリースされる *前に* v2.0.0 にいるべきです。この追加の猶予期間は、メジャーバージョン間の破壊的変更を考慮するために設けられています。
 
 ### dbt アップグレードのスケジューリング {#scheduling-a-dbt-upgrade}
 
-dbt のアップグレードは、世界的な主要な祝日や [Family and Friends Day](/handbook/company/family-and-friends-day/) がない週の火曜日に行うべきです。これは、テストで捕捉されなかった破壊的変更を、週末に働くことなく修正するための十分な時間をチームメンバーに与えるためです。最悪のシナリオでは、アップグレードを水曜日にロールバックして、その週の残りの間に通常の運用を再開できます。
+dbt のアップグレードは、世界的な主要な祝日や [Family and Friends Day](/handbook/company/family-and-friends-day/)がない週の火曜日に行うべきです。これは、テストで捕捉されなかった破壊的変更を、週末に働くことなく修正するための十分な時間をチームメンバーに与えるためです。最悪のシナリオでは、アップグレードを水曜日にロールバックして、その週の残りの間に通常の運用を再開できます。

@@ -1,16 +1,16 @@
 ---
-title: コーポレートセキュリティ (CorpSec)
+title: Corporate Security (CorpSec)
 upstream_path: /handbook/security/corporate/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:42:01+09:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:35:00.430322+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T16:24:24+01:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-👋 コーポレートセキュリティへようこそ、お会いできて嬉しいです！私たちは、2024 年初頭にファイナンス部門からセキュリティ部門に異動した、旧 IT オペレーションチームとしてもご存知かもしれません。
+👋 Corporate Security へようこそ、お会いできて嬉しいです！私たちは、2024 年初頭に Finance から Security Division に異動した、旧 IT Operations チームとしてもご存知かもしれません。
 
-## ヘルプが必要ですか？
+## ヘルプが必要ですか？ {#need-help}
 
 まずは以下のページを確認し、質問の回答がハンドブックページに記載されているかを探してください。追加の質問がある場合は、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。
 
@@ -22,29 +22,29 @@ lastmod: "2026-07-28T16:24:24+01:00"
 - [システム管理とランブックハンドブック](https://handbook.gitlab.systems)
 - Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。
 
-## 私たちの活動
+## 私たちの活動 {#what-we-do}
 
-### ミッション
+### ミッション {#mission}
 
-[セキュリティ部門のミッション](/handbook/security/#i-classfas-fa-rocket-idbiz-tech-iconsi-security-vision-and-mission)
+[Security Division のミッション](/handbook/security/#security-vision-and-mission)
 
 リモート企業として、私たちはオフィスビル、物理的なデータセンター、その他の従来型の IT 環境を持っていません。すべてのチームメンバーには、自宅や移動中に作業するためのラップトップが支給されます。エンジニアリングチームとプロダクトチームは AWS や GCP にデプロイされるソフトウェアを構築していますが、コーポレートソフトウェアのほぼすべてはベンダー管理のサービスとしてのソフトウェア (SaaS) です。これにより物理的な脅威の景観はシンプルになりますが、サイバーセキュリティの脅威の景観は広大であり、適切に対応するには依然として多くの注意が必要です。
 
-私たちのミッションは、ビジネスが提供するテクノロジーで従業員が生産的になれるようにし、ビジネスを成功させ、顧客とそのデータを保護し、GitLab (会社) のための内部セキュリティと、チームメンバーによる GitLab (製品) の使用を提供することです。
+私たちのミッションは、ビジネスが提供するテクノロジーで従業員が生産的になれるようにし、ビジネスを成功させ、顧客とそのデータを保護し、GitLab（会社）およびチームメンバーによる GitLab（製品）の利用に対して内部セキュリティを提供することです。
 
-GitLab は会社であり、製品でもあります。コーポレートセキュリティ部門は、会社が社内業務を行うために使用するテクノロジーを保護し、チームメンバーが業務を遂行するために必要なハードウェア、ソフトウェア、ツールを提供することに焦点を当てています。チームメンバー向けに 24x5 のテクニカルサポートヘルプデスクを運営し、社内の Tech Stack アプリケーションの多くを構成・保守するエンジニアを擁しています。また、デバイストラストとアイデンティティ管理に多大な投資を行い、製品の管理者に最高レベルのセキュリティアシュアランスを提供し、顧客データを取り扱う際にすべての適切な制御が整っていることを保証しています。
+GitLab は会社であり、製品でもあります。Corporate Security 部門は、会社が社内業務を行うために使用するテクノロジーを保護し、チームメンバーが業務を遂行するために必要なハードウェア、ソフトウェア、ツールを提供することに焦点を当てています。チームメンバー向けに 24x5 のテクニカルサポートヘルプデスクを運営し、社内の Tech Stack アプリケーションの多くを構成・保守するエンジニアを擁しています。また、デバイストラストとアイデンティティ管理に多大な投資を行い、製品の管理者に最高レベルのセキュリティアシュアランスを提供し、顧客データを取り扱う際にすべての適切な制御が整っていることを保証しています。
 
-### 主要原則
+### 主要原則 {#prime-directive}
 
-- 当社のデジタル資産を保護し、すべてのデータの完全性、機密性、可用性を確保します。
+- 私たちのデジタル資産を保護し、すべてのデータの完全性、機密性、可用性を確保します。
 - 強固なセキュリティ対策を実施し、従業員の中で意識とコンプライアンスの文化を育み、進化する脅威から保護するために IT システムを継続的に監視・強化します。
 - GitLab プラットフォームを活用 (ドッグフーディング) して、GitLab のセキュリティ確保を支援します。
 - 部門横断的な組織目標をサポートするために、ゼロトラストの原則に基づいた信頼性が高く安全で効率的な IT・セキュリティエンジニアリング、イノベーション、サービスを提供します
 
-### スコープ
+### スコープ {#scope}
 
 - セキュリティ関連システム間の次世代の自動化と統合を設計し、データの一貫性、信頼性、強固なセキュリティ、監査可能性を提供する。
-- 部門横断的なシステムオーナーとの関係構築を行い、当社の Tech Stack アプリケーションが最新のセキュリティのベストプラクティスに準拠するようソリューションを提案する
+- 部門横断的なシステムオーナーとの関係構築を行い、私たちの Tech Stack アプリケーションが最新のセキュリティのベストプラクティスに準拠するようソリューションを提案する
 - レガシーな技術的負債を統合・リファクタリングする
 - バックオフィスの自動化を改善するか、セキュリティリスクを軽減するプロセスを設計し、ソフトウェアツールを選定する
 - リーダーシップチーム向けのエスカレーションエンジニアリングと危機対応
@@ -69,38 +69,38 @@ GitLab は会社であり、製品でもあります。コーポレートセキ�
 - 昨日の問題は明日のイテレーションの機会
 - ゼロトラストの実装
 
-### 方向性と戦略
+### 方向性と戦略 {#direction-and-strategy}
 
 - (社内向け) [CISO 複数年情報セキュリティ目標と優先事項](https://internal.gitlab.com/handbook/security/information_security_goals_and_priorities/)
 - (社内向け) [CorpSec 方向性と戦略](https://internal.gitlab.com/handbook/security/corporate/direction)
 - (社内向け) [CorpSec OKR とロードマップ](https://internal.gitlab.com/handbook/security/corporate/roadmap)
 - (社内向け) [CorpSec プロジェクトとイニシアチブ](https://internal.gitlab.com/handbook/security/corporate/projects)
-- [セキュリティ部門 OKR](/handbook/security/okr/)
-- (社内向け) [コーポレートセキュリティ Epic 一覧](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?state=opened&page=1&sort=start_date_desc)
-- (社内向け) [コーポレートセキュリティ Epic ガントチャート](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/roadmap?state=opened&sort=START_DATE_ASC&layout=QUARTERS&timeframe_range_type=THREE_YEARS&progress=WEIGHT&show_progress=true&show_milestones=false&milestones_type=ALL&show_labels=true)
+- [Security Division の OKR](/handbook/security/okr/)
+- (社内向け) [Corporate Security エピック一覧](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?state=opened&page=1&sort=start_date_desc)
+- (社内向け) [Corporate Security エピックのガントチャート](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/roadmap?state=opened&sort=START_DATE_ASC&layout=QUARTERS&timeframe_range_type=THREE_YEARS&progress=WEIGHT&show_progress=true&show_milestones=false&milestones_type=ALL&show_labels=true)
 - (社内向け) [CorpSec Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)
 - [私たちの働き方](/handbook/security/corporate/how-we-work)
 
-### サービス
+### サービス {#services}
 
-- 👀 **ヘルプをお探しの場合は、[CorpSec サポート](/handbook/security/corporate/support) をご覧ください。**
+- 👀 **ヘルプをお探しの場合は、[CorpSec サポート](/handbook/security/corporate/support)をご覧ください。**
 - 📚 [アプリケーションとシステム](/handbook/security/corporate/systems)
-- 🛟 ヘルプデスク、ラップトップ、エンドユーザーサポートは、Enterprise Technology and AI 部門の [Corporate IT](/handbook/eta/corporate-it/) によって提供されています。
+- 🛟 ヘルプデスク、ラップトップ、エンドユーザーサポートは、Enterprise Technology and AI 部門の [Corporate IT](/handbook/eta/corporate-it/)によって提供されています。
   - 🔐 [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)
   - 🛬 [オンボーディング](/handbook/security/corporate/services/onboarding)
   - 🛫 [オフボーディング](/handbook/security/corporate/services/offboarding)
 
-### エンジニアリング
+### エンジニアリング {#engineering}
 
 - 📋 [私たちの働き方](/handbook/security/corporate/how-we-work)
 - 💻 [CorpSec Devices](/handbook/security/corporate/engineering/devices)
-- 🔐 [アイデンティティエンジニアリング](/handbook/security/corporate/engineering/identity)
+- 🔐 [Identity Engineering](/handbook/security/corporate/engineering/identity)
 
-## 私たちは誰か
+## 私たちは誰か {#who-we-are}
 
-[チームディレクトリ](/handbook/security/corporate/team) を参照してください。
+[チームディレクトリ](/handbook/security/corporate/team)を参照してください。
 
-### お問い合わせ
+### お問い合わせ {#contact-us}
 
 - [Tier 1 セルフサービス](/handbook/security/corporate/support/#tier-1-self-service)
 - [Tier 2 ヘルプデスクサポート](/handbook/security/corporate/support/#tier-2-helpdesk-support)
@@ -108,16 +108,16 @@ GitLab は会社であり、製品でもあります。コーポレートセキ�
 - [Tier 4 オートメーションエンジニアリング](/handbook/security/corporate/support/#tier-4-automation-engineering)
 - [Tier 5 アーキテクチャと危機管理](/handbook/security/corporate/support/#tier-5-architecture-and-crisis-management)
 - [CorpSec Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)
-- エンジニアとシステムオーナー - GitLab グループハンドルと Slack グループハンドルについては [CorpSec システム](/handbook/security/corporate/systems) を参照してください。
+- エンジニアとシステムオーナー - GitLab グループハンドルと Slack グループハンドルについては [CorpSec システム](/handbook/security/corporate/systems)を参照してください。
   - `#corpsec` Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。
 - ヘルプデスクチーム
   - Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。
   - `@gitlab-com/gl-security/corp/services`
 - マネジメントチーム
   - `@gitlab-com/gl-security/corp/managers`
-  - Slack で該当する [機能チームマネージャー](/handbook/security/corporate/team) またはディレクターをタグ付けしてください。
+  - Slack で該当する [functional team manager](/handbook/security/corporate/team) または director をタグ付けしてください。
     - Engineering Management - David Zhu、Lenny Vaknine
     - CorpSec Devices - Lenny Vaknine
     - ヘルプデスクサポート、ラップトップとロジスティクス - Rick Pollak ([Corporate IT](/handbook/eta/corporate-it/))
-    - オンボーディング・オフボーディングのポリシーと戦略 (アイデンティティエンジニアリング) - David Zhu
+    - オンボーディング・オフボーディングのポリシーと戦略 (Identity Engineering) - David Zhu
     - 機密データまたは雇用関連リクエスト - Rick Pollak ([Corporate IT](/handbook/eta/corporate-it/))

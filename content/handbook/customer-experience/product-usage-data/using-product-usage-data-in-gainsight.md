@@ -2,14 +2,12 @@
 title: "製品利用レポーティングの活用方法"
 description: "Sales と Customer Success のチームが、顧客の主要な取り組みとビジネス目標を支援するために、製品利用レポーティングを効果的に活用する方法。"
 upstream_path: "/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/"
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:34:30+00:00"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+translated_at: "2026-11-05T15:35:44.444117+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-19T18:59:08+11:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 <style>
   .td-content {
@@ -42,7 +40,7 @@ lastmod: "2026-10-19T18:59:08+11:00"
 
 ---
 
-## 目的
+## 目的 {#purpose}
 
 Gainsight 内の顧客の製品利用レポーティングの活用方法をガイドし、ユースケース採用戦略を見直し、データのつながりとデータ品質の懸念への対応を理解します。
 
@@ -50,14 +48,14 @@ Gainsight 内の顧客の製品利用レポーティングの活用方法をガ�
 
 3 年間のビジョン全体については、[製品利用レポーティングロードマップ](https://docs.google.com/presentation/d/1_v4hxKdbL6--UjpjVdveGEGD_MjmUnBg0-OIU1R14m8/edit#slide=id.p)（GitLab 内部ドキュメント）を参照してください。
 
-## ビデオ
+## ビデオ {#videos}
 
 概要（7 分間）については、[Gainsight での製品利用レポーティングの使用 — はじめに](https://youtu.be/bny-SoH-MNc)ビデオをご覧ください。
 
 - [製品利用レポーティングと健全スコアリングとは何か、Gainsight での確認方法](https://www.youtube.com/watch?v=H6l3_AmQif8)
 - [Gainsight でのライセンス利用率の確認方法とその意味](https://www.youtube.com/watch?v=Mezt6knBxI0)
 
-## クイックリンク
+## クイックリンク {#quick-links}
 
 <div class="grid-container" markdown="0">
   <a href="/handbook/customer-experience/product-usage-data/" class="btn btn-purple">運用データ <br> ビジョンページ</a>
@@ -80,57 +78,57 @@ Gainsight 内の顧客の製品利用レポーティングの活用方法をガ�
 
 | レポート名 | 説明 | 適用方法 |
 | ------ | ------ | ------ |
-| **サマリー** | 会社全体のライセンス利用率と販売済みライセンスの合計を表示します | アカウントがデータを報告している場合に、採用の深さを迅速に確認するために使用します |
-| **ユーザー採用指標** | アカウントの採用率をグラフ化するためのコンテキストベースの指標（例: パイプラインを実行したユーザーをマンスリーアクティブユーザーで割ったもの）。 | アカウントチームが拡大またはイネーブルメントの意思決定のために月次ユースケースとライセンス使用状況を理解するための指標。異なるグラフを表示するためにレポートを切り替えます。 |
-| **製品利用トレンド** | SCM・CI・DevSecOps・ライセンス利用率などのユースケースの月次比較分析 | ユースケース固有の指標の月次データポイント。機能とデプロイの深さと採用について学ぶためにアカウントチームが使用します — 月次蒸留指標と組み合わせて使用します。ユースケースベースの上位指標を分析するためにレポートを切り替えます。 |
-| **インスタンスとネームスペースの詳細** | `Instance Type` メタデータを含むアカウントに関連するすべてのインスタンスの一覧 | [セルフマネージドのインスタンスタイプの更新でホスト名を更新する](#self-managed)を使用します |
+| **Summary** | 会社全体のライセンス利用率と販売済みライセンスの合計を表示します | アカウントがデータを報告している場合に、採用の深さを迅速に確認するために使用します |
+| **User Adoption Metrics** | アカウントの採用率をグラフ化するためのコンテキストベースの指標（例: パイプラインを実行したユーザーをマンスリーアクティブユーザーで割ったもの）。 | アカウントチームが拡大またはイネーブルメントの意思決定のために月次ユースケースとライセンス使用状況を理解するための指標。異なるグラフを表示するためにレポートを切り替えます。 |
+| **Product Usage Trends** | SCM・CI・DevSecOps・ライセンス利用率などのユースケースの月次比較分析 | ユースケース固有の指標の月次データポイント。機能とデプロイの深さと採用について学ぶためにアカウントチームが使用します — Monthly Distilled Metrics と組み合わせて使用します。ユースケースベースの上位指標を分析するためにレポートを切り替えます。 |
+| **Instance and Namespace Details** | `Instance Type` メタデータを含むアカウントに関連するすべてのインスタンスの一覧 | [セルフマネージドのインスタンスタイプの更新でホスト名を更新する](#self-managed)を使用します |
 
-## これらの指標の活用方法
+## これらの指標の活用方法 {#ways-to-use-these-metrics}
 
 MVC デプロイにはいくつかの制限があります。ユースケースに遭遇した場合は、[Issue を開く](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues)か、必要に応じて[新しい指標をリクエスト](#requesting-new-metrics)してください。データを活用するための潜在的なユースケースをいくつか紹介します。
 
 | トピック | 説明 | 対処すべき質問 | 参照 |
 | :--- | --- | --- | --- |
-| **顧客の使用状況を理解する** | 使用データを使用して、どのインスタンスから使用データを受け取っているかを確認するためにアカウントをすばやく検索できます。<br> ユーザーストーリー: アカウントに関連するすべてのインスタンスとネームスペース（本番および非本番）とアクティビティを確認します。<br> **注*- : アクティブなサブスクリプションに紐付けられている必要があります。 | - 誰が Service Ping データを送信しているか？ <br> &bull; 本番データを送信しているか？ <br> &bull; アクティビティは私の期待と一致しているか？ <br>&bull; アクティビティは彼らの使用状況についての認識と一致しているか？ | <br>&bull; [VIDEO: Gainsight での製品利用データの使用 — はじめに](https://www.youtube.com/watch?v=bny-SoH-MNc)<br> &bull; [VIDEO: 製品利用データとは何か、Gainsight での確認方法](https://youtu.be/H6l3_AmQif8) |
-| **C360: インスタンスとネームスペースの詳細** | セルフマネージドインスタンスのアップグレードやパッチ適用を支援するために、どの GitLab バージョンを使用しているかを知る必要があります。 | <br>&bull; 顧客が使用しているバージョンは？<br>&bull; 複数のインスタンスがある場合、そのインスタンスのバージョンをどのように確認するか？<br>&bull; ネームスペースとは何か？ | C360: インスタンスとネームスペース<br><br> 製品利用データダッシュボード（`Self Managed Instances - Current GitLab Version Details` レポート） |
-| **顧客はライセンスを何個デプロイしているか？** | 顧客のライセンス利用率（上記参照）を理解して、デプロイされたライセンスの数 `billable_user_count/licensed seats` を把握します。<br> 例: 顧客が 200 ライセンスを購入して 9 ヶ月後に 80 をデプロイした場合、80/200 = 40%。 | <br>&bull; どのようなトレンドが見えるか？<br>&bull; 顧客のライセンス利用率をどのように理解するか？ | <br>&bull; [VIDEO: Gainsight でのライセンス利用率の確認方法とその意味](https://youtu.be/Mezt6knBxI0)<br>&bull; C360: ユーザー採用指標<br>&bull; 製品利用データダッシュボード<br>&bull; [ライセンス利用率ハンドブック](/handbook/customer-experience/product-usage-data/use-case-adoption/)<br>&bull; [VIDEO: Gainsight での製品利用データの使用 — はじめに](https://www.youtube.com/watch?v=bny-SoH-MNc) |
+| **顧客の使用状況を理解する** | 使用データを使用して、どのインスタンスから使用データを受け取っているかを確認するためにアカウントをすばやく検索できます。<br> ユーザーストーリー: アカウントに関連するすべてのインスタンスとネームスペース（本番および非本番）とアクティビティを確認します。<br> **注*- : アクティブなサブスクリプションに紐付けられている必要があります。 | - 誰が Service Ping データを送信しているか？ <br> &bull; 本番データを送信しているか？ <br> &bull; アクティビティは私たちの期待と一致しているか？ <br>&bull; アクティビティは顧客の使用状況についての認識と一致しているか？ | <br>&bull; [動画: Gainsight での製品利用データの使用 — はじめに](https://www.youtube.com/watch?v=bny-SoH-MNc)<br> &bull; [動画: 製品利用データとは何か、Gainsight での確認方法](https://youtu.be/H6l3_AmQif8) |
+| **C360: Instance and Namespace Details** | セルフマネージドインスタンスのアップグレードやパッチ適用を支援するために、どの GitLab バージョンを使用しているかを知る必要があります。 | <br>&bull; 顧客が使用しているバージョンは？<br>&bull; 複数のインスタンスがある場合、そのインスタンスのバージョンをどのように確認するか？<br>&bull; ネームスペースとは何か？ | C360: インスタンスとネームスペース<br><br> 製品利用データダッシュボード（`Self Managed Instances - Current GitLab Version Details` レポート） |
+| **顧客はライセンスを何個デプロイしているか？** | 顧客のライセンス利用率（上記参照）を理解して、デプロイされたライセンスの数 `billable_user_count/licensed seats` を把握します。<br> 例: 顧客が 200 ライセンスを購入して 9 ヶ月後に 80 をデプロイした場合、80/200 = 40%。 | <br>&bull; どのようなトレンドが見えるか？<br>&bull; 顧客のライセンス利用率をどのように理解するか？ | <br>&bull; [動画: Gainsight でのライセンス利用率の確認方法とその意味](https://youtu.be/Mezt6knBxI0)<br>&bull; C360: ユーザー採用指標<br>&bull; 製品利用データダッシュボード<br>&bull; [ライセンス利用率ハンドブック](/handbook/customer-experience/product-usage-data/use-case-adoption/)<br>&bull; [動画: Gainsight での製品利用データの使用 — はじめに](https://www.youtube.com/watch?v=bny-SoH-MNc) |
 | **顧客の GitLab 採用を理解する** | SCM・CI・CD・DevSecOps のユースケース別指標を把握して採用を理解します。<br> ユースケース採用の定義については[ユースケース採用ガイド](/handbook/customer-experience/product-usage-data/use-case-adoption/)を参照してください。<br> SCM・CI・CD・DevSecOps の採用についての説明は [GitLab 採用ジャーニー](/handbook/customer-experience/customer-success-vision/#high-level-visual-of-gitlab-adoption-journey)を参照してください。 | <br>&bull; 顧客はどのユースケースを採用したか？<br>&bull; どの程度採用しているか？<br>&bull; どの機能を採用したか？</li><li>機能の採用は顧客の購入意図と一致しているか？ | C360: スコアカード<br><br>製品利用データダッシュボード |
-| **製品利用レポーティングで健全スコアをどのように理解するか？** | Gainsight を使用して、顧客の採用を迅速かつ高レベルにロールアップします。顧客が GitLab ユースケース別に順調かどうかを特定します。 |<br>&bull; 顧客のユースケース健全性が赤・黄・緑 — それはどのように計算されるか？<br>&bull; 製品利用データはどのように重み付けされるか？<br>&bull; 「良好な」健全性とは何か？ | [ユースケース採用手法](/handbook/customer-experience/product-usage-data/use-case-adoption/)<br><br>[健全スコア指標の重み付け](/handbook/customer-experience/customer-health-scoring/#gainsight-scorecard-attributes-and-calculations)<br><br>[VIDEO: 製品利用レポーティングとは何か、Gainsight での確認方法](https://youtu.be/H6l3_AmQif8)<br><br>[使用トレンドダッシュボード](https://gitlab.gainsightcloud.com/v1/ui/dashboard#/ced1d18a-62f4-4e22-8efd-a7b1d7abcac2) |
+| **製品利用レポーティングで健全スコアをどのように理解するか？** | Gainsight を使用して、顧客の採用を迅速かつ高レベルにロールアップします。顧客が GitLab ユースケース別に順調かどうかを特定します。 |<br>&bull; 顧客のユースケース健全性が赤・黄・緑 — それはどのように計算されるか？<br>&bull; 製品利用データはどのように重み付けされるか？<br>&bull; 「良好な」健全性とは何か？ | [ユースケース採用手法](/handbook/customer-experience/product-usage-data/use-case-adoption/)<br><br>[健全スコア指標の重み付け](/handbook/customer-experience/customer-health-scoring/#gainsight-scorecard-attributes-and-calculations)<br><br>[動画: 製品利用レポーティングとは何か、Gainsight での確認方法](https://youtu.be/H6l3_AmQif8)<br><br>[使用トレンドダッシュボード](https://gitlab.gainsightcloud.com/v1/ui/dashboard#/ced1d18a-62f4-4e22-8efd-a7b1d7abcac2) |
 
 これは MVC です — [新しい指標の提案・顧客ジャーニーの評価方法の提案・その他のアイデアのために Issue を作成](#requesting-new-metrics)してください。
 
 ユースケースとその健全手法の詳細については、[ユースケース採用](/handbook/customer-experience/product-usage-data/use-case-adoption/)を参照してください。
 
-## Salesforce での Gainsight データの活用
+## Salesforce での Gainsight データの活用 {#using-gainsight-data-in-salesforce}
 
 様々な製品利用統計が Gainsight から Salesforce に戻ってプッシュされます。Gainsight から Salesforce に同期される顧客健全関連フィールドの完全なリストについては、[Salesforce での Gainsight データの使用](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)ページ内の[顧客の健全性](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/#customer-health)を参照してください。
 
-## 顧客インスタンスとネームスペースのラベル付け
+## 顧客インスタンスとネームスペースのラベル付け {#labeling-customer-instances-and-namespaces}
 
-### 定義
+### 定義 {#definitions}
 
 - **インスタンス**: 顧客の GitLab の*セルフマネージド*デプロイ
 - **ネームスペース**: gitlab.com 上の顧客の GitLab の *SaaS* デプロイ
 - **ラベル付け**: Gainsight 内でインスタンスを本番・非本番などとして内部的に識別し、Snowflake に同期する行為。詳細については[リンク](/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/#viewing-all-unknown-self-managed-instances)を参照してください
 - **プロジェクト**: 顧客の GitLab インスタンス内の特定のプロジェクトまたはフォルダ（例: `gitlab-com` 使用内の「フィールドオペレーション」プロジェクト）
 
-### 重要な理由
+### 重要な理由 {#why-it-matters}
 
 GitLab と顧客にとって、顧客が本番コードを開発する`Production`インスタンスとして使用しているインスタンスを知る必要があります。これは、顧客が GitLab を適切に採用できるよう正確に支援するために必要です（[製品利用レポーティングのビジョン](/handbook/customer-experience/product-usage-data/)）。
 
 一般的なルールとして、各サブスクリプションには 1 つの本番インスタンス**または**ネームスペースが紐付けられています。以下では、インスタンスがどのように決定・ラベル付けされ、データが GitLab 内でどのように適用されるかについて説明します。
 
-#### セルフマネージド
+#### セルフマネージド {#self-managed}
 
 顧客のサーバーにはタイプの識別がありません（本番・テスト・非本番・ミラーなど）。GitLab が顧客の Service Ping を受け取るとき、それが本番コードのデプロイ用なのか、テストサーバーなのか、ミラーなのかは分かりません。
 
 **問題**: これはセルフマネージドの顧客にとって重要です。なぜなら、顧客は単一のサブスクリプションに 1 つから 10 のインスタンスを紐付けていることがあり、GitLab は顧客がエアギャップ、IP ポートをブロックしているなどによって、1 つまたは複数の本番インスタンスからデータを受け取る場合も、まったく受け取らない場合もあるためです。
 
-#### SaaS
+#### SaaS {#saas}
 
 ネームスペースについては、顧客がネームスペースに直接支払いを行い、テストはネームスペース内のさまざまな*プロジェクト*で行えるため、これは問題になりません。SaaS については、問題になる前に一般的に解決されます。
 
-### ラベル付きインスタンスの使用方法
+### ラベル付きインスタンスの使用方法 {#how-are-labeled-instances-used}
 
 1. 本番インスタンスに基づいて顧客の健全性を計算する
 2. 本番インスタンスで顧客が何をしているかについてアカウントチームにインサイトを提供する（Gainsight と Snowflake）
@@ -139,29 +137,29 @@ GitLab と顧客にとって、顧客が本番コードを開発する`Productio
 5. 傾向モデルの入力（Snowflake）
 6. 使用データのカバレッジを追跡する（何個のアカウントが運用指標を送信しているか？）（Snowflake）
 
-### インスタンスのラベル付け方法
+### インスタンスのラベル付け方法 {#how-instances-are-labeled}
 
-#### セルフマネージド {#self-managed}
+#### セルフマネージド {#self-managed-1}
 
-##### CSM 所有のアカウント（Strategic と Growth）
+##### CSM 所有のアカウント（Strategic と Growth） {#csm-owned-accounts-strategic-and-growth}
 
-セルフマネージドの顧客については、CSM が顧客のインスタンスを本番・ステージング・廃止済みとしてラベル付けします。手順:
+セルフマネージドの顧客については、CSM が顧客のインスタンスを Production・Staging・Obsolete としてラベル付けします。手順:
 
 1. Gainsight で顧客に移動します
-2. 左ナビパネルで、下部の**インスタンスとネームスペースの詳細**をクリックします
+2. 左ナビパネルで、下部の**Instance and Namespace Details**をクリックします
 3. 更新するインスタンスの**⋮**をクリックします
-4. **編集**をクリックします
+4. **Edit**をクリックします
 5. `Instance Type` フィールドで適切なオプションを選択します
-6. **更新**をクリックし、他の変更は行わないでください
+6. **Update**をクリックし、他の変更は行わないでください
 
 **注意事項**:
 
-1. インスタンスタイプが不明な場合は、顧客に確認するか、左ナビパネルの**製品利用トレンド**をクリックして**NOT Production Instance Usage** レポートに切り替えて、そのインスタンスの使用トレンドを確認してください
-2. 「Unknown」とラベル付けされたものはすべて、本番・非本番・廃止済みに更新する必要がある*一時的な*保留タイトルとして扱ってください。
+1. インスタンスタイプが不明な場合は、顧客に確認するか、左ナビパネルの**Product Usage Trends**をクリックして**NOT Production Instance Usage** レポートに切り替えて、そのインスタンスの使用トレンドを確認してください
+2. 「Unknown」とラベル付けされたものはすべて、Production・Non-Production・Obsolete に更新する必要がある*一時的な*保留タイトルとして扱ってください。
 3. `Non-Production`/`Unknown`/`Obsolete`/`Geo Secondary Node` インスタンスは、`NOT Production Instance Usage` レポートを除いて、アカウントの製品利用トレンドセクションには反映されませんのでご注意ください。
 4. `Instance Type` が他のタイプから `Production` に切り替えられた場合は、使用レポートに反映されるまで 24 時間お待ちください。
 
-##### CSM 非所有のアカウント（Scale と Digital）
+##### CSM 非所有のアカウント（Scale と Digital） {#non-csm-owned-accounts-scale-and-digital}
 
 上記のプロセスはどのアカウントでも機能しますが、CSM が所有しない小規模なアカウントには自動化が必要です。Gainsight での自動化は 2 つの方法に分かれます。
 
@@ -170,11 +168,11 @@ GitLab と顧客にとって、顧客が本番コードを開発する`Productio
 1. **ルール**: *NEW Admin: Set Instance Type - Programmatically by Instance Count = 1*
    1. **コンテキスト**: ほとんどのサブスクリプション（特に小規模なもの）は
 
-#### SaaS
+#### SaaS {#saas-1}
 
 ネームスペースは Gainsight ルール「[Load to Instance Data - Label SaaS Instances as Production](https://gitlab.gainsightcloud.com/v1/ui/rules#v2/rule/3027ca2b-34e6-4dbb-be5f-8f640a636074)」を使用して Gainsight 内で自動的にラベル付けされます。
 
-### 注意事項とリスク
+### 注意事項とリスク {#caveats-and-risks}
 
 1. ライセンスの関係で、一部の顧客は複数の本番インスタンスに 1 つのサブスクリプションを使用できるユニークなライセンス契約を持っています。これにより、デプロイされたライセンスの数を計算することが困難になります
 2. 小規模アカウントの自動化が必要なため、一部のインスタンスを本番として誤ってラベル付けし、他のインスタンスを見落としてしまうことがあります
@@ -186,9 +184,9 @@ GitLab と顧客にとって、顧客が本番コードを開発する`Productio
 
 新しいセルフマネージドインスタンスは常に登場しています。さまざまなタイプには以下が含まれます。
 
-- **本番**: サブスクリプションに紐付けられた本番インスタンス
-- **非本番**: テスト・ステージング・開発サーバー
-- **廃止済み**: 使用されなくなったサーバー
+- **Production**: サブスクリプションに紐付けられた本番インスタンス
+- **Non-production**: テスト・ステージング・開発サーバー
+- **Obsolete**: 使用されなくなったサーバー
 - **Unknown**: まだラベル付けされていないサーバー
 - **Geo Secondary Node**: セカンダリまたはミラーサーバー
 
@@ -208,7 +206,7 @@ GitLab と顧客にとって、顧客が本番コードを開発する`Productio
 
 ![架空のセルフマネージド図](https://lucid.app/publicSegments/view/74e7b4aa-6e71-4f60-83bb-6439c459358c/image.png)
 
-### Snowflake 同期
+### Snowflake 同期 {#snowflake-sync}
 
 インスタンスタイプは Gainsight から Snowflake に週次で同期され、日曜日の夜（PST）に更新されます。Gainsight はデータを収集し、ルール *[Admin - Drop Instance Type to S3 for Snowflake Pickup](https://gitlab.gainsightcloud.com/v1/ui/rules#v2/rule/46570bbe-742c-4e2a-8475-1dd1973b7b49/basicInfo)* を使用して S3 バケットにアップロードし、Snowflake が毎週日曜日の夜にテーブルを処理・更新します。
 
@@ -218,7 +216,7 @@ GitLab と顧客にとって、顧客が本番コードを開発する`Productio
 
 健全スコアは現在、組織全体のすべてのインスタンスを組み合わせたアカウントレベルでの使用データを集約することで計算され、Gainsight の健全スコアリングにも使用されます。値は Gainsight に提供され、以下の[閾値](/handbook/customer-experience/product-usage-data/use-case-adoption/)に基づいて適切な赤/黄/緑の値が表示されます。
 
-複数のインスタンスに問題が観察された場合、ユーザーはまだどのインスタンスがプライマリかを確認して割り当てる必要があります。
+問題が見られる場合、ユーザーは引き続き、どのインスタンスがプライマリかを確認して割り当てる必要があります。
 
 <details>
 
@@ -238,7 +236,7 @@ CSM が Premium サブスクリプション下で本番インスタンスをマ�
 
 </details>
 
-## フィールドの定義
+## フィールドの定義 {#field-definitions}
 
 製品ステージの定義は[指標辞書](https://docs.gitlab.com/ee/development/internal_analytics/metrics/metrics_dictionary.html)から抽出されています。ステージ指標の詳細については、辞書を参照してください。
 
@@ -246,13 +244,13 @@ CSM が Premium サブスクリプション下で本番インスタンスをマ�
 
 [Gainsight Adoption Explorer のインスタンス](https://docs.google.com/document/d/1TvSCT_yj73AS0PuLxPonuF5QHWyM3dqG_i8H1U1cwf0/edit)の技術ドキュメントを参照してください。
 
-### ユーザーとプロジェクトの採用指標
+### ユーザーとプロジェクトの採用指標 {#user-and-project-adoption-metrics}
 
 計算された指標については、[Gainsight 定義の製品利用レポーティング](https://docs.google.com/spreadsheets/d/1EhSXqx6YXcpqHg2TpS0ZN5Rk_d2hhrTPrW5FTbmuZjw/edit#gid=650262484)の`User & Project Adoption Metrics` タブを参照してください。
 
-## データ
+## データ {#data}
 
-### データ統合
+### データ統合 {#data-integrations}
 
 データは月次ベースで Snowflake から Gainsight に統合されます。時間の経過とともに、これは隔週、そして週次に移行します。
 
@@ -266,12 +264,12 @@ CSM が Premium サブスクリプション下で本番インスタンスをマ�
    1. [データ品質エピック](https://gitlab.com/groups/gitlab-org/-/epics/10586)に添付してください。
    1. トラブルシューティングのためにスクリーンショットを含め、*Issue を機密に設定*してください。
 
-### ライセンス<>サブスクリプションマッピングの再マッピング
+### ライセンス<>サブスクリプションマッピングの再マッピング {#re-mapping-licensesubscription-mapping}
 
 顧客がデータを送信しているが Gainsight に表示されない場合は、手動で再マッピングするための手順を以下に示します。
 
 1. GitLab がデータを受け取っていることを確認します
-   1. セルフマネージドインスタンスの場合、本番インスタンスから[バージョンアプリ](https://version.gitlab.com/)で最近の Ping を受け取っていることを確認します
+   1. セルフマネージドインスタンスの場合、本番インスタンスから[Version App](https://version.gitlab.com/)で最近の Ping を受け取っていることを確認します
    1. SaaS の場合、ネームスペースデータが Gainsight に表示されていない場合は問題があることが分かります（確認の必要なし）
 1. 対象インスタンスにマッピングされるべきサブスクリプション ID と、そのインスタンスのライセンス ID（ライセンス md5）を見つけます。
 1. この [Issue テンプレート](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/new?issuable_template=Manual%20License%20Mapping%20Self-Managed)を通じて CS Ops と共有します（DRI: Brandon）
@@ -283,7 +281,7 @@ CSM が Premium サブスクリプション下で本番インスタンスをマ�
 
 注: このプロセスはスケジュールと負荷によっては数日または 1 週間かかる場合があります。自動化がこれらの問題を解決するまでは完全に手動プロセスであるため、ご了承ください。
 
-### タイミングとフロー
+### タイミングとフロー {#timing-and-flow}
 
 データ統合（上記の一覧参照）のため、顧客が Service Ping（セルフマネージド）を通じてデータを送信する、または Snowplow（SaaS）でデータが収集される瞬間から、Gainsight や Salesforce などのシステムで表示・使用可能になるまでに特定の遅延があります。この遅延は Service Ping が顧客から受け取られてから 1〜2 日です。
 
@@ -291,15 +289,15 @@ SaaS 顧客のデータは毎週月曜日の 00:00 UTC（日曜日の午後 5 �
 
 セルフマネージドの顧客からのデータも週次ベースで届きますが、各インスタンスはデータが収集される独自の日時を持っています。このプロセスは SaaS の収集と同じように標準化されていないため、データの収集時刻によって、より長い遅延（1 〜 2 日）が予想されます。
 
-### データソースとアプリケーション
+### データソースとアプリケーション {#data-sources-and-application}
 
 以下は、様々なデータソース・その定義・用途です。
 
-#### Cloud Licensing と運用指標（セルフマネージドのみ）
+#### Cloud Licensing と運用指標（セルフマネージドのみ） {#cloud-licensing-and-operational-metrics-self-managed-only}
 
-Cloud Licensing で有効化すると、顧客は基本的なライセンス使用状況とインスタンスバージョン情報を含む `Subscription Data` を共有します。このデータは、有効化・プロビジョニング・コタームと更新を自動化するのに役立ちます。`Subscription Data` の共有は GitLab のサブスクリプション契約の標準的な部分です。`Operational Metrics` はより詳細な製品利用指標を含み、Service Ping のサブセットです。このデータにより、[ユースケース採用スコア](/handbook/customer-experience/product-usage-data/maturity-scoring/)でのガイド・ベストプラクティスの提供・アップグレード推奨の支援を通じて顧客をサポートできます。データについての [7 分間のビデオ](https://youtu.be/8kbuZ-6Z5gs)（内部のみ）を参照してください。顧客は国家安全保障がリスクである場合、`Operational Metrics` の共有について免除を求めることができます。
+Cloud Licensing で有効化すると、顧客は基本的なライセンス使用状況とインスタンスバージョン情報を含む `Subscription Data` を共有します。このデータは、有効化・プロビジョニング・コタームと契約更新を自動化するのに役立ちます。`Subscription Data` の共有は GitLab のサブスクリプション契約の標準的な部分です。`Operational Metrics` はより詳細な製品利用指標を含み、Service Ping のサブセットです。このデータにより、[ユースケース採用スコア](/handbook/customer-experience/product-usage-data/maturity-scoring/)でのガイド・ベストプラクティスの提供・アップグレード推奨の支援を通じて顧客をサポートできます。データについての [7 分間のビデオ](https://youtu.be/8kbuZ-6Z5gs)（内部のみ）を参照してください。顧客は国家安全保障がリスクである場合、`Operational Metrics` の共有について免除を求めることができます。
 
-#### Cloud Licensing・Service Ping・運用指標の関係
+#### Cloud Licensing・Service Ping・運用指標の関係 {#what-is-the-relationship-between-cloud-licensing-service-ping-and-operational-metrics}
 
 - **Cloud Licensing**: 顧客が `Subscription Data` を共有できるようにする有効化方法
   - 14.1 以上で利用可能
@@ -311,22 +309,22 @@ Cloud Licensing で有効化すると、顧客は基本的なライセンス使�
 
 **参考資料**:
 
-- [カスタマーサクセスサービス](/handbook/customer-experience/csm/digital-journey/)（クライアント向け）
+- [Customer Success Services](/handbook/customer-experience/csm/digital-journey/)（クライアント向け）
 - [運用データのビジョン](/handbook/customer-experience/product-usage-data/)
 - [Cloud Licensing ドキュメント](https://internal.gitlab.com/handbook/product/fulfillment/cloudlicensing/cloud-licensing/)（内部ハンドブック）
 - [Strict Cloud Licensing](https://internal.gitlab.com/handbook/product/fulfillment/cloudlicensing/strictcloudlicensing/)（内部ハンドブック）
 - [Service Ping 指標リスト](https://metrics.gitlab.com/)（サブスクリプション・運用・オプション）
 - [運用サービスデータ](https://internal.gitlab.com/handbook/product/fulfillment/archive/operational-service-data/#register)（内部ハンドブック）
 
-#### Service Ping（セルフマネージド）
+#### Service Ping（セルフマネージド） {#service-ping-self-managed}
 
 Service Ping を活用してセルフマネージドの顧客利用レポーティングを導出します。詳細については、[Service Ping FAQ](/handbook/customer-experience/csm/service-ping-faq/)を参照してください。Gainsight の「Service Ping」への参照はすべて、セルフマネージドの製品利用データ（ライセンス + 機能使用）を明示的に指します。
 
-#### SaaS（Snowplow）
+#### SaaS（Snowplow） {#saas-snowplow}
 
 SaaS の顧客利用は Gainsight にあり、Snowplow コレクターを通じて収集されます。
 
-#### ライセンスとサブスクリプションのマッピング
+#### ライセンスとサブスクリプションのマッピング {#mapping-licenses-to-subscriptions}
 
 ライセンスが自動的に生成される場合（WebStore または Deal Desk 経由）、Zuora サブスクリプション ID がライセンスにマッピングされます。このマッピングにより、Gainsight でデータがリンクされてアカウントの完全な全体像が作成されます。
 
@@ -348,21 +346,21 @@ SaaS の顧客利用は Gainsight にあり、Snowplow コレクターを通じ�
 - 異なるコンテキストでの機能使用の確認（生カウント・ユーザー当たり・プロジェクト当たりなど）
 - 異なる製品ティアでの使用をトラッキングするための既存指標の拡張（例: Core と有料ティアで使用される機能コンポーネントを具体的にトラッキングする）
 
-## よくある質問（FAQ） {#frequently-asked-questions}
+## よくある質問（FAQ） {#frequently-asked-questions--faqs}
 
-### データの可用性
+### データの可用性 {#data-availability}
 
-#### 顧客が製品利用統計を持っていない理由は？
+#### 顧客が製品利用統計を持っていない理由は？ {#why-does-my-customer-not-have-any-product-usage-stats}
 
 - セルフマネージド — Service Ping にオプトインしていないか、オフにしました。
 - セルフマネージド — インスタンスが本番としてラベル付けされていません。[インスタンスを本番としてラベル付けする方法](#self-managed)の手順はこちら。
 - SaaS — 正しいネームスペースが Gainsight に表示されていない場合、顧客はネームスペースを（新しい）サブスクリプションに関連付ける必要があります。これは顧客が SM から SaaS に移行する場合や、顧客がネームスペースをサブスクリプションに紐付けることが必要な新規顧客の場合に起こりやすいです。顧客のネームスペースがサブスクリプションに紐付けられているかを確認するには、https://customers.gitlab.com/admin/order にアクセスして、Salesforce レコードにある最新の `Subscription Name`（例: A-S00012345）を入力してください。`Gl namespace` フィールドが空白の場合、サブスクリプションはネームスペースに紐付けられていません。これは顧客に代わって [L&R Internal Requests フォーム](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)を使用し、`GitLab.com Subscription Related > Link subscription to namespace` を選択して社内リクエストを作成するか、顧客自身がサポートに連絡することで修正できます。
 
-#### 顧客の課金対象ユーザー（またはライセンス利用率）の値が `Null` になっている理由は？
+#### 顧客の課金対象ユーザー（またはライセンス利用率）の値が `Null` になっている理由は？ {#why-is-my-customers-billable-users-or-license-utilization-value-null}
 
 [`Billable Users`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/config/metrics/license/20210531204603_license_billable_users.yml)はバージョン 14.0 でインストルメント化されたため、SM 顧客がバージョン 14.0 より低い旧バージョンを使用している場合、`Billable Users` の値は収集されず `Null` として表示され、指標が `Billable Users` / `Licensed Users` を使用して計算されるため `License Utilization` のスコアにも影響します。
 
-#### インスタンスとネームスペースの詳細に詳細が表示されているが使用トレンドが表示されない場合は？
+#### インスタンスとネームスペースの詳細に詳細が表示されているが使用トレンドが表示されない場合は？ {#what-does-it-mean-if-i-see-details-in-instance-and-namespace-details-but-no-usage-trends}
 
 顧客がセルフマネージドの場合、`Production` としてラベル付けされたインスタンスがあるか確認してください。使用トレンドレポートに表示されるには、インスタンスを `Production` としてラベル付けする必要があります。
 
@@ -372,50 +370,50 @@ SaaS の顧客利用は Gainsight にあり、Snowplow コレクターを通じ�
 - GitLab のバージョン（セルフマネージドの場合）。
 - 最後の統計レポート。例えば、2021-07-01 に統計を送信して停止しました。
 
-#### セルフマネージドの顧客で指標が欠けている理由は？
+#### セルフマネージドの顧客で指標が欠けている理由は？ {#why-is-a-metric-is-missing-from-my-self-managed-customer}
 
 指標がより新しいリリースで実装された場合は表示されません。データマートテーブル定義を確認して、対象指標のリリースを特定してください。インスタンスとネームスペースの詳細を確認して、顧客がどのリリースバージョンを使用しているかを確認できます。例: `Billable Users` は 14.0 でインストルメント化されており、顧客が 13.9 以前を使用している場合はこのフィールドが `NULL` として表示されます。
 
-#### オフライン/エアギャップされたインスタンスの Service Ping データを手動でアップロードするプロセスは？
+#### オフライン/エアギャップされたインスタンスの Service Ping データを手動でアップロードするプロセスは？ {#what-is-the-process-of-manually-uploading-service-ping-data-for-offlineair-gapped-instances}
 
 顧客またはアカウントチームは、このリンクを使用して JSON ファイルをアップロードできます — https://version.gitlab.com/usage_data/new
 
-#### 手動でアップロードした Service Ping データが Gainsight に反映されるまでどのくらいかかるか？
+#### 手動でアップロードした Service Ping データが Gainsight に反映されるまでどのくらいかかるか？ {#how-long-does-it-take-for-manually-uploaded-service-ping-data-to-populate-in-gainsight}
 
 このプロセスは Gainsight レポートとスコアカードに反映され始めるまで 24〜48 時間かかる場合があります。
 
-#### インスタンスデータを更新した後、データが更新されるまでどのくらいかかるか？
+#### インスタンスデータを更新した後、データが更新されるまでどのくらいかかるか？ {#after-updating-instance-data-how-long-does-it-take-for-the-data-to-refresh}
 
 Gainsight でインスタンスに変更を加えてから 24〜48 時間お待ちください。
 
-### Service Ping とは何か？
+### Service Ping とは何か？ {#what-is-service-ping}
 
 Service Ping は、セルフマネージドインスタンスの顧客アナリティクスを収集し、週次のペイロードを GitLab に送信する GitLab プロセスです。このペイロードは、GitLab の使用状況を理解するのに役立つ重要な高レベルの統計を提供し、プロダクト・サポート・セールスチームを支援します。
 
 - [Service Ping ガイド](https://docs.gitlab.com/ee/development/internal_analytics/service_ping/)
 - [Service Ping FAQ](/handbook/customer-experience/csm/service-ping-faq/)
 
-#### 顧客が Service Ping にオプトインしていることを確認する方法は？
+#### 顧客が Service Ping にオプトインしていることを確認する方法は？ {#how-can-we-confirm-that-a-customer-has-opted-into-service-ping}
 
 オプトインしているかどうかを確認する唯一の方法は、そのデータがあることです。詳細については [Service Ping ガイド](https://docs.gitlab.com/ee/development/internal_analytics/service_ping/)を参照してください。
 
-#### 顧客は Service Ping をオプトアウトできるか？
+#### 顧客は Service Ping をオプトアウトできるか？ {#can-my-customer-opt-out-of-service-ping}
 
 はい。
 
-#### 顧客は Cloud Licensing をオプトアウトできるか？
+#### 顧客は Cloud Licensing をオプトアウトできるか？ {#can-my-customer-opt-out-of-cloud-licensing}
 
 いいえ。ただし、（特定の公共機関に限定された）契約上の免除を行う場合を除きます。
 
-#### Cloud Licensing からどのような統計が得られるか？
+#### Cloud Licensing からどのような統計が得られるか？ {#what-stats-comes-from-cloud-licensing}
 
 運用指標。
 
-#### Gainsight の使用統計で Service Ping はどのように機能するか？
+#### Gainsight の使用統計で Service Ping はどのように機能するか？ {#how-does-service-ping-work-for-usage-stats-in-gainsight}
 
 使用統計は週次で受け取り・収集され、それらの統計は毎週 Gainsight に追加されます。指標は受け取られ週次で追加されますが、`Last 28 Days (L28)` や `All-Time` など月次として表示されます。
 
-### Gainsight でのデータはどのくらいの頻度で更新されるか？
+### Gainsight でのデータはどのくらいの頻度で更新されるか？ {#how-often-is-the-data-updated-in-gainsight}
 
 - SaaS — 使用 Ping は毎週スケジュールに従って（通常月曜日）インスタンス全体のすべての顧客/ネームスペースに対して手動で取得されます。Snowflake に読み込まれ Gainsight に渡されますが、これらのプロセスには 1〜2 日かかる場合があります。
 - セルフマネージド — 各セルフマネージドインスタンスの使用 Ping は週次で更新され、週次 Ping のスケジュールはインスタンスごとに異なります。Snowflake に読み込まれ Gainsight に渡されますが、これらのプロセスには 1〜2 日かかる場合があります。
@@ -439,49 +437,49 @@ Service Ping は、セルフマネージドインスタンスの顧客アナリ�
  ![28d ロジック](https://lucid.app/publicSegments/view/0de4f2de-99f8-44a1-a47d-a7b31cab896e/image.png)
 </details>
 
-### 週/月のカレンダーデータを持っているか？
+### 週/月のカレンダーデータを持っているか？ {#do-we-have-metrics-for-the-calendar-weekmonth}
 
 いいえ。[過去 28 日間の指標はどのように機能するか？](#how-do-last-28-days-metrics-work)を参照してください
 
-### 月初に使用統計が欠けているのはなぜか？
+### 月初に使用統計が欠けているのはなぜか？ {#why-are-usage-stats-missing-at-the-beginning-of-the-month}
 
 顧客から Ping が収集されるまで、月初の最初の 1 週間の使用統計が欠けている場合があります。Ping のスナップショット日は顧客ごとに異なります。
 
-### 赤い DevSecOps スコアに対して CSM センチメントを黄/緑に設定すると赤の健全スコアが上書きされるか？
+### 赤い DevSecOps スコアに対して CSM センチメントを黄/緑に設定すると赤の健全スコアが上書きされるか？ {#does-setting-csm-sentiment-to-yg-for-a-red-devsecops-score-override-the-red-health-score}
 
 DevSecOps 固有の上書きはありません。ただし、1 つの上書きオプションがあります — CSM センチメントです。CSM はそれを赤に変更でき、アカウント全体を赤にします。[ハンドブック参照](/handbook/customer-experience/customer-health-scoring/#csm-sentiment)。CSM センチメントの全体的な重み付けは 25% であり、製品は 50% です
 
 ---
 
-## データの定義
+## データの定義 {#data-definitions}
 
-### 指標が何を測定しているかを理解する最善の方法は？
-
-[Gainsight 定義の製品利用データ](https://docs.google.com/spreadsheets/d/1EhSXqx6YXcpqHg2TpS0ZN5Rk_d2hhrTPrW5FTbmuZjw/edit?usp=sharing)を確認してください。
-
-### 指標の詳細を理解する最善の方法は？
+### 指標が何を測定しているかを理解する最善の方法は？ {#whats-the-best-way-to-understand-what-a-metric-is-measuring}
 
 [Gainsight 定義の製品利用データ](https://docs.google.com/spreadsheets/d/1EhSXqx6YXcpqHg2TpS0ZN5Rk_d2hhrTPrW5FTbmuZjw/edit?usp=sharing)を確認してください。
 
-### 課金対象ユーザー・ライセンスユーザー・アクティブユーザーの違いは？
+### 指標の詳細を理解する最善の方法は？ {#whats-the-best-way-to-understand-details-about-a-metric}
+
+[Gainsight 定義の製品利用データ](https://docs.google.com/spreadsheets/d/1EhSXqx6YXcpqHg2TpS0ZN5Rk_d2hhrTPrW5FTbmuZjw/edit?usp=sharing)を確認してください。
+
+### 課金対象ユーザー・ライセンスユーザー・アクティブユーザーの違いは？ {#what-are-the-differences-between-billable-user-licensed-user-and-active-user}
 
 - アクティブユーザー数はボット・ゲストユーザーを含むため削除されました。
 - 課金対象ユーザーはアクティブユーザーを含み、ボットとゲストを除外します。これを販売されたライセンス数と正確に比較してライセンス利用率を確認できます。
 - ライセンスユーザーは CustomersDOT でプロビジョニングされたライセンスの数です。
 
-### UUID とは何か？
+### UUID とは何か？ {#what-is-uuid}
 
 UUID は GitLab がサーバーに割り当てた ID です。1 つのホスト名に複数のサーバーが存在する場合があります。
 
-### 製品利用統計とテレメトリの違いは？
+### 製品利用統計とテレメトリの違いは？ {#what-is-the-difference-between-product-usage-stats-and-telemetry}
 
 テレメトリはサードパーティのアナリティクスという意味合いがあるため、この言葉の使用を避けています。詳細と代替表現については、[よく誤用される用語のハンドブックページ](/handbook/communication/top-misused-terms/)を参照してください。
 
 ---
 
-## 複数のホスト名とサブスクリプション
+## 複数のホスト名とサブスクリプション {#multiple-hostnames-and-subscriptions}
 
 以下のレポートは、複数のホスト名とサブスクリプションを持つアカウントには効果的ではありません。
 
-- 製品利用スコアカード計算
-- スコアカード製品利用指標
+- Product Usage Scorecard Calcs
+- Scorecard Product Usage Metrics

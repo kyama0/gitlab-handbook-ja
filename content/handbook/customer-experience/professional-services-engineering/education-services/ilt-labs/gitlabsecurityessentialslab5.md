@@ -1,152 +1,172 @@
 ---
-title: "GitLab Security Essentials - ハンズオンラボ: DAST と API スキャン"
-description: "このハンズオンガイドは、プロジェクトでコンテナスキャンを使用するプロセスを案内します。"
+title: "GitLab Security Essentials - ハンズオンラボ: ポリシーの有効化"
+description: "このハンズオンガイドは、GitLab でポリシーを有効化する手順を案内します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab5/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+translated_at: "2026-11-05T15:29:07.766988+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-04T12:01:28-05:00"
 ---
 
-> 推定所要時間: 40 分
 
-## 目標
+> 推定所要時間: 15 分
 
-多くのプロジェクトは、API コンポーネントを持つ Web アプリケーションとしてデプロイされています。これらのコンポーネントをスキャンするために、DAST と API セキュリティスキャナーを活用できます。
+## 目標 {#objectives}
 
-このラボでは、プロジェクトに両方のスキャナーを実装する方法を学びます。
+コンプライアンススキャンにより、インスタンス、グループ、プロジェクトのマージリクエストとセキュリティスキャンを制御できます。このラボでは、グループレベルでセキュリティポリシーとマージリクエストポリシーを有効にする方法を説明します。
 
-## タスク A. DAST スキャンのセットアップ
+## タスク A. セキュリティポリシーのセットアップ {#task-a-setting-up-a-security-policy}
 
-DAST スキャンをテストするために、[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) という脆弱な Web アプリケーションのインスタンスをセットアップします。このアプリケーションをスキャンすることで、期待できる DAST スキャン結果の全範囲を確認できます。
+1. `My Test Group - XXXXX` というグループに移動します。X はあなたのユーザー名に置き換えます。
 
-1. 新しいブランクプロジェクトを作成します。プロジェクト名を `DAST` とします。
+1. 左サイドバーで **Secure > Policies** を選択します。
 
-1. DAST プロジェクトに `.gitlab-ci.yml` ファイルを作成します。
+1. **New policy** を選択します。
 
-1. まず、設定に DAST ステージを追加します:
+1. **Scan execution policy** で、**Select policy** を選択します。
 
-      ```yml
-      stages:
-        - dast
-      ```
+1. **Name** に、`Group security policy` と入力します。
 
-1. DAST は現在 CI/CD テンプレートを使用しています。ステージの下に以下を追加します。
+1. **Policy status** が **Enabled** に設定されていることを確認します。
 
-      ```yml
-      include:
-        - template: DAST.gitlab-ci.yml
-      ```
+1. **Policy Scope** では、**all projects in this group without exceptions** に適用します。
 
-1. 専用のサーバーがないため、Juice Box アプリケーションを Docker サービスとして DAST に渡すことにします。これを行うために、テンプレートのインクルードの下にサービスを定義します:
+1. Configuration Type を `Template` から `Custom` に変更します。
 
-      ```yml
-      dast:
-        services:
-          - name: bkimminich/juice-shop:v16.0.0
-            alias: juiceshop
-      ```
+1. Actions で、**SAST scan** を実行するように設定します。**Runner Tags** が **selected automatically** に、**Security job template** が **default** に設定されていることを確認します。
 
-1. DAST スキャナーには様々な変数を提供できます。DAST スキャナーに以下の値を追加します:
+1. Conditions で、**Triggers** を選択します。**all branches** を対象に、**No exceptions** でポリシーを実行します。
 
-      ```yml
-      variables:
-          DAST_TARGET_URL: "http://juiceshop:3000/"
-          DAST_AUTH_URL: "http://juiceshop:3000/#/login"
-          DAST_FULL_SCAN: "false"
-          DAST_AUTH_USERNAME: "admin@juice-sh.op"
-          DAST_AUTH_PASSWORD: "admin123" # use protected/masked variables, this is only for demonstration purposes
-          DAST_AUTH_USERNAME_FIELD: "css:input[id=email]"
-          DAST_AUTH_PASSWORD_FIELD: "css:input[id=password]"
-          DAST_AUTH_SUBMIT_FIELD: "css:button[id=loginButton]"
-          DAST_SCOPE_EXCLUDE_ELEMENTS: "css:[id=navbarLogoutButton]"
-          DAST_AUTH_REPORT: "false"
-          DAST_REQUEST_COOKIES: "welcomebanner_status:dismiss,cookieconsent_status:dismiss"
-          DAST_CRAWL_GRAPH: "false"
-      ```
+1. **Create new project with the new policy** を選択します。
 
-      > いくつかの変数を説明すると、`DAST_TARGET_URL` と `DAST_AUTH_URL` はスキャンと認証のターゲットを提供します。`DAST_AUTH_USERNAME` と `DAST_AUTH_PASSWORD` で認証のための認証情報を提供します。`DAST_AUTH_USERNAME_FIELD` と関連するフィールド変数は DAST にログインデータを入力する場所を指示します。残りの設定はこのデモのスキャン時間を短縮するためのスキャン設定です。
+1. **Merge** を選択して設定を完了します。
 
-1. これらの値をすべて入力すると、YAML ファイルは以下のようになります:
+## タスク B. スキャン実行ポリシーの動作確認 {#task-b-scan-execution-policies-in-action}
 
-      ```yml
-      stages: # List of stages for jobs, and their order of execution
-        - dast
+1. グループに移動します。
 
-      include:
-        - template: DAST.gitlab-ci.yml
+1. **New project** を選択します。
 
-      dast:
-        services:
-          - name: bkimminich/juice-shop:v16.0.0
-            alias: juiceshop
-        variables:
-            DAST_TARGET_URL: "http://juiceshop:3000/"
-            DAST_AUTH_URL: "http://juiceshop:3000/#/login"
-            DAST_FULL_SCAN: "false"
-            DAST_AUTH_USERNAME: "admin@juice-sh.op"
-            DAST_AUTH_PASSWORD: "admin123" # use protected/masked variables, this is only for demonstration purposes
-            DAST_AUTH_USERNAME_FIELD: "css:input[id=email]"
-            DAST_AUTH_PASSWORD_FIELD: "css:input[id=password]"
-            DAST_AUTH_SUBMIT_FIELD: "css:button[id=loginButton]"
-            DAST_SCOPE_EXCLUDE_ELEMENTS: "css:[id=navbarLogoutButton]"
-            DAST_AUTH_REPORT: "false"
-            DAST_REQUEST_COOKIES: "welcomebanner_status:dismiss,cookieconsent_status:dismiss"
-            DAST_CRAWL_GRAPH: "false"
-      ```
+1. **Create blank project** を選択します。
 
-1. これらの変更をコミットし、DAST スキャンを実行させます。**ビルド > パイプライン** からジョブの進行状況を監視できます。
+1. **Project name** フィールドに `Security Compliance Testing` と入力します。
 
-      > 注: このジョブは完了まで最大 15 分かかることがあります。
+1. 他のすべてのオプションをデフォルトのままにし、**Create project** を選択します。
 
-1. 完了したら、左サイドバーで **Secure > 脆弱性レポート** を選択します。
+1. プロジェクトのリポジトリで、**+ > New file** を選択します。
 
-1. DAST スキャナーが検出した結果を確認します。
+1. **Filename** に、`main.py` と入力します。
 
-## タスク B. API スキャナーのセットアップ
+1. ファイルに次のコードを追加します。
 
-API スキャナーを使用すると、アプリケーションの API エンドポイントの潜在的な脆弱性をスキャンできます。このプロセスを示すために、API 設定を含むアプリケーションテンプレートを使用します。
+    ```py
+    print("Testing scanners!")
+    ```
 
-1. **Security Labs** プロジェクトに移動します。
+1. 変更を main ブランチにコミットします。
 
-1. `postman_collection.json` ファイルを確認します。このファイルには、このプロジェクトのアプリケーションに対して API スキャンを実行するために必要な定義が含まれています。ファイルと構造を確認した後、API スキャンの有効化に進むことができます。
+1. 左サイドバーで **Build > Pipelines** を選択します。
 
-1. **コード > リポジトリ** に移動し、`.gitlab-ci.yml` を編集します。
+1. コミットによって作成されたパイプラインを選択します。
 
-1. コンテナに API スキャンを追加するには、`dast` ステージを定義し、API セキュリティテンプレートを追加します。
+1. パイプライン内のジョブを確認します。`.gitlab-ci.yml` の設定がなくても、このコミットで `SAST` スキャンが実行されていることを確認してください。これで、グループ内のプロジェクトでは、`.gitlab-ci.yml` ファイルにまだ定義されていなくても、常にセキュリティスキャンが実行されます。
 
-      ```yml
-      include:
-      #Other scanners would be here as well.
-          - template: API-Security.gitlab-ci.yml
+## タスク C. マージリクエストポリシー {#task-c-merge-request-policies}
 
-      stages:
-          - build
-          - test
-          - dast
-      ```
+セキュリティスキャンを設定したら、セキュリティ脆弱性を含むマージリクエストをブロックできることが望ましいです。このセクションでは、そのためのマージリクエストポリシーを作成します。
 
-1. API スキャナーのジョブ定義を追加します。
+1. グループに移動します。
 
-      ```yml
-      api_security:
-          services:
-              - name: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-                alias: target
-          variables:
-              APISEC_POSTMAN_COLLECTION: postman_collection.json
-              APISEC_TARGET_URL: http://target:7777
-      ```
+1. 左サイドバーで **Secure > Policies** を選択します。
 
-> このテンプレートは、このコース全体で見てきた他のすべてのテンプレートと同様に、[GitLab CI/CD テンプレートリポジトリ](https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates)にあります。
+1. **New policy** を選択します。
 
-1. これらの変更をコミットし、パイプラインが完了した後に結果を確認します。
+1. **Merge request approval policy** で、**Select policy** を選択します。
 
-## ラボガイド完了
+1. **Name** に、`Merge Request Security` と入力します。
+
+1. **Policy status** で、**Enabled** が選択されていることを確認します。
+
+1. **Policy scope** では、ポリシーが  **all projects in this group without exceptions** に適用されていることを確認します。
+
+1. **Rules** で、**scan type** を **Security Scan** に設定します。
+
+1. スキャナーには **All scanners** を選択します。
+
+1. **all default branches** を対象にスキャンを実行します。
+
+1. スキャンの例外は **No exceptions** とし、検出する脆弱性は **Any** と指定します。
+
+1. 重大度を **All severity levels** に設定します。
+
+1. ステータスを **New** と **All vulnerability states** に設定します。
+
+1. **Actions** で、**Owner** ロールからの承認を 1 件要求します。
+
+1. **Override project approval settings** で、**Prevent approval by merge request's author** と **Prevent approval by commit author** のオプションの**チェックを外す**ようにしてください。
+
+    > グループ内にアカウントが 1 つしかないため、これらのオプションをオフにしています。本番環境では、通常はオンにします。
+
+1. 他のすべてのオプションをデフォルトのままにし、**Configure with a merge request** を選択します。
+
+1. **Merge** を選択します。
+
+## タスク D. マージリクエストポリシーの動作確認 {#task-d-merge-request-policies-in-action}
+
+1. グループに戻ります。
+
+1. **Security Compliance Testing** プロジェクトを選択します。
+
+1. 左サイドバーで **Code > Branches** を選択します。
+
+1. **New branch** を選択します。
+
+1. ブランチに `test_policy` という名前を付け、**Create branch** を選択します。
+
+1. **Create merge request** を選択します。
+
+1. **Mark as draft** のチェックを外し、**Create merge request** を選択します。
+
+1. **Code > Open in Web IDE** を選択します。
+
+1. `main.py` ファイルを開き、次のコードを追加します。
+
+    ```py
+    import subprocess
+
+    server_ip = input("Enter your server ip: ")
+    subprocess.run(["ping", server_ip])
+
+    print("Attempting to connect to the server")
+    print("Application authentication was successful")
+    ```
+
+1. ソース管理アイコンを選択し、`Commit and push to 'test_policy'` を選択します。
+
+1. MR に戻ります。
+
+1. パイプラインが完了するまで待ちます。完了したら、`This merge request has policy violations and errors` というコメントを確認します。
+
+1. これらの問題を解決するために、**Code > Open in Web IDE** を選択します。
+
+1. `main.py` ファイルを開き、`main.py` のコードを次のように編集します。
+
+    ```py
+    print("Attempting to connect to the server")
+    print("Application authentication was successful")
+    ```
+
+1. ソース管理アイコンを選択し、`Commit and push to 'test_policy'` を選択します。
+
+1. MR に戻ります。
+
+1. パイプラインが完了するまで待ちます。完了したら、`Security policy violations have been resolved` というコメントを確認します。
+
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボ演習が完了しました。このコースの他の[ラボガイド](/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials)を参照できます。
 
-## ご提案・改善点
+## ご提案・改善点 {#suggestions}
 
 このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

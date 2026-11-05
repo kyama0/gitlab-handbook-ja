@@ -1,23 +1,21 @@
 ---
-title: "GitLabのHVS-FO Data and Opsチーム"
-description: "HVS-FO Data and Opsチームは、データを活用してセルフサービス顧客体験を最適化し、セールス効率を通じてnARR成長を推進する責任があります。このチームのデータインサイトは、セールス可視性、セルフサービスフルフィルメント機能、グロース/マーケティング実験にフィードされます。HVS-FO Data and Opsチームはまた、効率、優先順位付け、意思決定を支援するデータツールの作成も目指します。"
+title: "GitLab の HVS-FO Data and Ops チーム"
+description: "HVS-FO Data and Ops チームは、データを活用してセルフサービス顧客体験を最適化し、セールス効率を通じて nARR 成長を推進する責任があります。このチームのデータインサイトは、セールス可視性、セルフサービスフルフィルメント機能、グロース/マーケティング実験にフィードされます。HVS-FO Data and Ops チームはまた、効率、優先順位付け、意思決定を支援するデータツールの作成も目指します。"
 upstream_path: /handbook/sales/high-velocity-sales-fo-team/hvs_fo_data_ops/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:44:22.914996+00:00"
 translator: claude
 stale: false
-lastmod: "2025-04-18T08:17:29-07:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## HVS-FO Data and Ops チームハンドブックへようこそ
+## HVS-FO Data and Ops チームハンドブックへようこそ {#welcome-to-the-hvs-fo-data-and-ops-team-handbook}
 
 {{% alert color="success" %}}
 HVS-FO Data and Ops チームは、データを活用してセルフサービス顧客体験を最適化し、セールス効率を通じて nARR 成長を推進する責任があります。このチームのデータインサイトは、セールス可視性、セルフサービスフルフィルメント機能、グロース/マーケティング実験にフィードされます。HVS-FO Data and Ops チームはまた、効率、優先順位付け、意思決定を支援するデータツールの作成も目指します。
 {{% /alert %}}
 
-## チーム
+## チーム {#team}
 
 |  **名前** | **GitLab ハンドル** | **タイトル** |
 | :--------------- | :----------------- | :----------------- |
@@ -25,28 +23,28 @@ HVS-FO Data and Ops チームは、データを活用してセルフサービス
 | Sara Gladchun | @sglad | Sr. Analyst, HVS Data |
 | Ed Lu | @eclu94 | Sr. Analyst, HVS Operations |
 
-## 私たちが協業する相手
+## 私たちが協業する相手 {#who-we-work-with}
 
 **HVS-FO チーム** - セールス効率と戦略を通じて nARR と成長を推進するためのデータインサイトと運用サポートを提供するため、HVS-FO チーム全体とパートナリングしています。
 
-**中央データチーム** - クロスファンクショナルなデータイニシアチブに関与し続け、可能な場合は協業し、データモデルと Snowflake に存在するデータに関するフィードバックを提供することで、中央データチームと協働しています。また、データサイエンスチームのプロジェクトとモデルを最新の状態に保ち、彼らの予測アウトプットの多くを私たちの分析とトリガーに組み込むことで、データサイエンスチームとも協働しています。
+**Central Data Team** - クロスファンクショナルなデータイニシアチブに関与し続け、可能な場合は協業し、データモデルと Snowflake に存在するデータに関するフィードバックを提供することで、Central Data Team と協働しています。また、データサイエンスチームのプロジェクトとモデルの最新情報を把握し、同チームの予測アウトプットの多くを私たちの分析とトリガーに組み込むことで、データサイエンスチームとも協働しています。
 
-**Product Analytics** - 彼らが取り組んでいる主要プロジェクトを最新の状態に保ち、彼らのモデルの多くを私たち自身のデータ作業で活用することで、Product Analytics と協働しています。
+**Product Analytics** - Product Analytics が取り組んでいる主要プロジェクトの最新情報を把握し、同チームのモデルの多くを私たち自身のデータ作業で活用することで、Product Analytics と協働しています。
 
 **Fulfillment** - セルフサービスフルフィルメント機能と機能リクエストに関するデータを提供するため、Fulfillment と協働しています。
 
 **Marketing Analytics** - FO ファネルに関するデータと、プールされたアカウント顧客へのターゲットデジタルアウトリーチを提供するため、Marketing Analytics とパートナリングしています。
 
-## リソース
+## リソース {#resources}
 
-### 一般
+### 一般 {#general}
 
 |  **リソース** | **概要** |
 | :--------------- | :----------------- |
-| [Data Request Issue Template](https://gitlab.com/gitlab-com/sales-team/hvs/-/issues/new?description_template=Data_Question_Intake) | アドホックなデータの質問とリクエストに使用すべきテンプレート |
+| [データリクエスト Issue テンプレート](https://gitlab.com/gitlab-com/sales-team/hvs/-/issues/new?description_template=Data_Question_Intake) | アドホックなデータの質問とリクエストに使用すべきテンプレート |
 | [Data Hub](https://docs.google.com/document/d/10p86n7f5vt4UmhHM4ZGRZm4OSa5k5g-LKQ0uBAKnvSc/edit?usp=sharing) | 私たちのデータアセットとリソースをすべて一か所にまとめたもの |
 
-### OKRs
+### OKRs {#okrs}
 
 - [FY26](https://docs.google.com/spreadsheets/d/1i9yYZKZVJ-OimjoF-Ip_SbA2hlqqhYfoag2m71wqs1M/edit?gid=1461447719#gid=1461447719)
 
@@ -57,9 +55,9 @@ HVS-FO Data and Ops チームは、データを活用してセルフサービス
 - [FY24-Q2](https://gitlab.com/groups/gitlab-com/sales-team/-/epics/66)
 - [FY24-Q3](https://gitlab.com/groups/gitlab-com/sales-team/-/epics/66) -->
 
-## 私たちと協業する
+## 私たちと協業する {#working-with-us}
 
-**目的**: より広いセルフサービスチームがセルフサービスデータスクワッド(Max、Sara)と関わる方法を概説する
+**目的**: より広い Self-Service チームが Self-Service Data Squad（Max、Sara）と関わる方法を概説する
 
 **ゴール**: 透明性のあるエンゲージメントモデルを提供しながら、インサイトへの依存関係/ブロッカーを最小化する
 
@@ -67,16 +65,16 @@ HVS-FO Data and Ops チームは、データを活用してセルフサービス
 
 **アドホックなデータリクエストや質問を提出する方法**:
 
-1. 既存のリソース(例: data hub、SFDC)を活用してこの質問に答えようとしましたか?
+1. 既存のリソース(例: Data Hub、SFDC)を活用してこの質問に答えようとしましたか?
 
    - もしいいえなら、これらの既存のリソースを使用して質問に答えるよう試みてください。
    - もしはい、しかしまだ質問に答えられない場合は、質問 2 に進んでください。
 
-2. [私たちのプロジェクト](https://gitlab.com/gitlab-com/sales-team/hvs/-/issues/new?description_template=Data_Question_Intake)の Data Question Intake issue テンプレートを使用して、以下を行ってください:
+2. [私たちのプロジェクト](https://gitlab.com/gitlab-com/sales-team/hvs/-/issues/new?description_template=Data_Question_Intake)の Data Question Intake Issue テンプレートを使用して、以下を行ってください:
 
 - "Filled out by Requestor"セクションの下のすべての項目に記入する
-- "Self-Service Data"と"Self-Service Data Ad Hoc"ラベルを追加する
-- ビジネスを停止させる場合: Issue へのリンクと共に Slack(理想的には#hvs)で Max にタグ付けする。
+- "Self-Service Data" と "Self-Service Data Ad Hoc" ラベルを追加する
+- 業務が停止している場合: Issue へのリンクと共に Slack(理想的には#hvs)で Max にタグ付けする。
 
 <!-- ## How we prioritize ad hoc requests
 The more points the better!
@@ -88,7 +86,7 @@ The more points the better!
 
 If an ad-hoc request scores north of 7 points, we will re-consider prioritizing it above existing OKR work. -->
 
-## SSOT クエリ
+## SSOT クエリ {#ssot-queries}
 
 SSOT データは、メトリックに自信を持ち、繰り返し可能で再現可能なレポーティングを行い、データチームがより効率的に作業するために必要です。基礎となる[ベースクエリ](https://gitlab.com/gitlab-com/sales-team/self-service/-/tree/main/SSOT%20Queries/Base_Queries)と[アドホック分析](https://gitlab.com/gitlab-com/sales-team/self-service/-/tree/main/SSOT%20Queries/Ad_Hoc_Analyses)の両方の SSOT SQL クエリを格納するための[GitLab リポジトリ](https://gitlab.com/gitlab-com/sales-team/self-service/-/tree/main/SSOT%20Queries)を作成しました。
 

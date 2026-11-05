@@ -1,16 +1,14 @@
 ---
 title: "GitLab Partner Champions Program"
 upstream_path: /handbook/resellers/partner-champions-program/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T06:33:04+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:17:36.457407+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
 ![GitLab Partner Champion](/images/resellers/partner-champions-program/champions-dark-bg.png)
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 GitLab Partner Champions Program は、GitLab DevSecOps プラットフォームを基盤とした優れた顧客成果を支持する GitLab パートナーコミュニティのメンバーをエンパワー・支援・報奨・表彰します。
 
@@ -21,11 +19,11 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 ## GitLab Partner Champions Program の主要機能 {#gitlab-partner-champions-program-key-features}
 
-**- テーマ性とスポンサー型コミュニティ:** 特徴的な GitLab テーマで設計され、GitLab が財政的に支援しています。各リージョンの Channels SA がリードします。
+**- テーマ性とスポンサー型コミュニティ:** 特徴的な GitLab テーマで設計され、GitLab が財政的に支援しています。各リージョンの Channels SAs がリードします。
 
-**- リージョナルリーダーシップ:** Channels SA は、それぞれのリージョン内でリーダーシップの役割を担い、GitLab Champions コミュニティと Field SA Manager との関係を導き、監督します。
+**- リージョナルリーダーシップ:** Channels SAs は、それぞれのリージョン内でリーダーシップの役割を担い、GitLab Champions コミュニティと Field SA Managers との関係を導き、監督します。
 
-**- コミュニティリエゾン:** 各パートナーから指名された Solutions Architect / Consultant が Champion を務めます。GitLab Partner SA と広いパートナーコミュニティとの重要なリエゾンとして機能します。
+**- コミュニティリエゾン:** 各パートナーから指名された Solutions Architects / Consultants が Champion を務めます。GitLab Partner SAs と広いパートナーコミュニティとの重要なリエゾンとして機能します。
 
 **- 情報ハブ:** GitLab Champions は GitLab 関連の更新情報を周知する集中型ハブとして機能し、効果的なコミュニケーションを確保し、情報損失のリスクを低減します。
 
@@ -41,9 +39,9 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 **- 限定アクセス:** GitLab Beta Program 開始時の限定アクセス、Partner SA 限定のロードマップ更新、GitLab 内部の Stack Overflow インスタンスへのアクセスを得られます。
 
-**- コミュニティへの影響:** Champions コールに招待される GitLab Product Manager にフィードバックや洞察を提供することで、GitLab の製品開発に影響を与える機会があります。
+**- コミュニティへの影響:** Champions コールに招待される GitLab Product Managers にフィードバックや洞察を提供することで、GitLab の製品開発に影響を与える機会があります。
 
-**- ネットワーキングの機会:** 仲間の GitLab Champions、GitLab Partner SA、GitLab フィールドセールスチーム、コミュニティ内の他の主要なステークホルダーとつながることができます。
+**- ネットワーキングの機会:** 仲間の GitLab Champions、GitLab Partner SA、GitLab field sales チーム、コミュニティ内の他の主要なステークホルダーとつながることができます。
 
 **- 表彰:** パートナーコミュニティ内および GitLab の公式チャネル両方で、GitLab Champion としての公の表彰と可視性を受けます。この表彰はあなたのプロフェッショナルプロファイルを向上させることができます。
 
@@ -98,18 +96,18 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 **Sponsor GitLab SA**
 
-1. メールアドレスで新しい Champion を [https://gitlab.com/gitlab-partners-public/gitlab-champions](https://gitlab.com/gitlab-partners-public/gitlab-champions) グループの `Developer` メンバーとして招待します。
-1. 新しい Champion 用に Champions プロジェクト内で `New_Champion_Onboarding` テンプレートを使用して [オンボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=New_Champion_Onboarding)を作成します。
+1. メールアドレスで新しい Champion を [https://gitlab.com/gitlab-partners-public/gitlab-champions](https://gitlab.com/gitlab-partners-public/gitlab-champions)グループの `Developer` メンバーとして招待します。
+1. 新しい Champion 用に Champions プロジェクト内で `New_Champion_Onboarding` テンプレートを使用して[オンボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=New_Champion_Onboarding)を作成します。
 1. Issue の `GitLab Sponsoring SA Tasks` セクションを完了します。
 1. Issue の `Partner Champion Tasks` セクションを完了するために新しい GitLab Champion と協力します。
 
 ### Champion オフボーディング {#champion-offboarding}
 
-削除する Champion 用に、Champions プロジェクト内で `Champions_Offboarding` テンプレートを使用して [オフボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=Champions_Offboarding)を作成します。
+削除する Champion 用に、Champions プロジェクト内で `Champions_Offboarding` テンプレートを使用して[オフボーディング Issue](https://gitlab.com/gitlab-partners-public/gitlab-champions/champions/-/issues/new?description_template=Champions_Offboarding)を作成します。
 
 ### Champions Call 録画とプレゼンテーションの投稿 {#posting-champions-call-recordings-and-presentation}
 
-**1-** リージョン別 Champions コールの後、セッションの GitLab ESA DRI が zoom からビデオファイルをダウンロードし、Highspot の [Team Spot: Global Ecosystems](https://gitlab.highspot.com/spots/66e3313c577f84375132109c) スポットにアップロードします。
+**1-** リージョン別 Champions コールの後、セッションの GitLab ESA DRI が zoom からビデオファイルをダウンロードし、Highspot の [Team Spot: Global Ecosystems](https://gitlab.highspot.com/spots/66e3313c577f84375132109c)スポットにアップロードします。
 
 **2-** 「以下のプロパティを設定して Violates Policy 警告を解決します:
 
@@ -123,4 +121,4 @@ GitLab Champions は、世界中で GitLab および私たちのコミュニテ�
 
 **3-** Highspot の [Partner Portal Page GitLab Champions](https://gitlab.highspot.com/engagement#pitches/663d451341369bcb3b9cce06/overview) Digital Room を編集し、新しくアップロードしたコンテンツアイテムを「Meeting Archive」セクションに追加します。
 
-**4-** Champions slack チャネルにメッセージを送信し、全員に新しいアセットについて通知します。
+**4-** Champions Slack チャネルにメッセージを送信し、全員に新しいアセットについて通知します。

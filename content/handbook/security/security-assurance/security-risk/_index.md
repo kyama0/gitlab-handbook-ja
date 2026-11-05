@@ -2,11 +2,11 @@
 title: "Security Risk チーム"
 description: "Security Risk チームのチャーター"
 upstream_path: /handbook/security/security-assurance/security-risk/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T06:27:12+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:23:25.989927+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 ## ミッションステートメント {#mission-statement}
 
@@ -20,7 +20,7 @@ GitLab における Security Risk Team のミッションは、セキュリテ�
 
 ### セキュリティおよびテクノロジーのリスク管理 {#storm}
 
-Security Risk チームは、[セキュリティおよびテクノロジーのオペレーショナルリスク管理（STORM）](/handbook/security/security-assurance/security-risk/storm-program/)、私たちの ISO42001 認証を支える AI リスク管理、[統合セキュリティリスク管理（USRM）](/handbook/security/security-observations-risk-management/)などのリスク管理サービスを提供します。これらのプログラムは、組織全体でセキュリティおよびテクノロジーリスクの特定、評価、継続的なモニタリング、報告を推進します。リスク削減は、Security Division の運営原則の 1 つです（[セキュリティのビジョンとミッション](/handbook/security/#i-classfas-fa-rocket-idbiz-tech-iconsi-security-vision-and-mission)）。そのため、Security Risk Team は、リーダーシップが戦略的ロードマップを策定し、GitLab の[主要イニシアチブ](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)（社内のみ）を支えるために必要な情報を提供するうえで主導的な役割を果たします。
+Security Risk チームは、[セキュリティおよびテクノロジーのオペレーショナルリスク管理（STORM）](/handbook/security/security-assurance/security-risk/storm-program/)、私たちの ISO42001 認証を支える AI リスク管理、[統合セキュリティリスク管理（USRM）](/handbook/security/security-observations-risk-management/)などのリスク管理サービスを提供します。これらのプログラムは、組織全体でセキュリティおよびテクノロジーリスクの特定、評価、継続的なモニタリング、報告を推進します。リスク削減は、Security Division の運営原則の 1 つです（[セキュリティのビジョンとミッション](/handbook/security/#security-vision-and-mission)）。そのため、Security Risk Team は、リーダーシップが戦略的ロードマップを策定し、GitLab の[主要イニシアチブ](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)（社内のみ）を支えるために必要な情報を提供するうえで主導的な役割を果たします。
 
 {{% panel header="**チームに潜在的なリスクを伝える必要がありますか?**" header-bg="warning" %}}
 チームメンバーが Security Risk Team に潜在的なリスクをエスカレーションするさまざまな方法については、[STORM プログラムと手順のコミュニケーションセクション](/handbook/security/security-assurance/security-risk/storm-program/#communication-of-risks-to-the-security-risk-team)を参照してください。
@@ -58,13 +58,13 @@ GitLab は、AI による自動化と継続的なセキュリティモニタリ�
 ### エンゲージメントモデル {#engagement-models}
 
 1. [セキュリティまたはテクノロジーリスクの報告](/handbook/security/security-assurance/security-risk/storm-program/#communication-of-risks-to-the-security-risk-team)
-1. GitLab で `@gitlab-com/gl-security/security-assurance/security-risk-team` を使用して GitLab 全体のチームをタグ付けする
+1. GitLab 上のどこからでも、`@gitlab-com/gl-security/security-assurance/security-risk-team` を使用して Security Risk チームをタグ付けする
 
 ### コミュニケーションチャンネル {#contact}
 
 1. <i class="fas fa-envelope fa-fw" style="color:rgb(219,59,33)" aria-hidden="true"></i> メール: `securityrisk@gitlab.com`
 1. <i class="fab fa-slack fa-fw" style="color:rgb(219,59,33)" aria-hidden="true"></i> Slack: [#security_help チャンネル](https://gitlab.enterprise.slack.com/archives/C094L6F5D2A) - `@security-risk` をメンション
-1. <i class="fab fa-gitlab fa-fw" style="color:rgb(219,59,33)" aria-hidden="true"></i> GitLab: GitLab で `@gitlab-com/gl-security/security-assurance/security-risk-team` を使用して GitLab 全体のチームをタグ付けする
+1. <i class="fab fa-gitlab fa-fw" style="color:rgb(219,59,33)" aria-hidden="true"></i> GitLab: GitLab 上のどこからでも、`@gitlab-com/gl-security/security-assurance/security-risk-team` を使用して Security Risk チームをタグ付けする
 
 #### チームメンバー {#team-members}
 
@@ -84,7 +84,7 @@ Security Risk Team は、リソースをリスク削減の推進に専念させ�
 このチャーターは、以下との整合性を確保するために、四半期ごとにレビューおよび更新されます。
 
 1. [GitLab の戦略](https://about.gitlab.com/direction/)
-1. [Security Division のミッションとビジョン](/handbook/security/#i-classfas-fa-rocket-idbiz-tech-iconsi-security-vision-and-mission)
+1. [Security Division のミッションとビジョン](/handbook/security/#security-vision-and-mission)
 1. [Security の複数年戦略](https://internal.gitlab.com/handbook/security/information_security_goals_and_priorities/) (社内のみ)
-1. [Security Assurance のミッションとビジョン](/handbook/security/security-assurance/#i-classfas-fa-rocket-idbiz-tech-iconsi-security-assurance-mission-and-vision)
+1. [Security Assurance のミッションとビジョン](/handbook/security/security-assurance/#security-assurance-mission-and-vision)
 1. [Security Assurance の複数年戦略](https://internal.gitlab.com/handbook/security/security-assurance/security_assurance_strategy/) (社内のみ)

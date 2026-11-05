@@ -2,24 +2,22 @@
 title: "Gainsight: Salesforce での Gainsight 統計の活用"
 description: "このページは、GitLab チーム全体が Salesforce で利用可能な Gainsight の指標・フィールド・エントリー・その他の属性を把握するためのものです。例: 顧客の健全性を Salesforce に同期する際に、それらのフィールドが何であり、どのように使用するかを知ることが重要です。"
 upstream_path: /handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+translated_at: "2026-11-05T15:35:44.444117+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## 概要
+## 概要 {#overview}
 
 このページは、GitLab チーム全体が Salesforce で利用可能な Gainsight の指標・フィールド・エントリー・その他の属性を把握するためのものです。例: 顧客の健全性を Salesforce に同期する際に、それらのフィールドが何であり、どのように使用するかを知ることが重要です。
 
 一般的な製品利用レポーティングの詳細については、[Gainsight での製品利用レポーティングの使用](/handbook/customer-experience/product-usage-data/using-product-usage-data-in-gainsight/)を参照してください。
 
-## アカウント
+## アカウント {#account}
 
-### 顧客属性
+### 顧客属性 {#customer-attributes}
 
 | フィールド名 | 説明 | ベストプラクティス | 参照 |
 |:---|:---|:---|:---|
@@ -36,7 +34,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | [GS] Provider | 顧客が使用する（クラウド）プロバイダーまたはオンプレミスかを記録します。CSM が手動で入力します |  | [リンク](/handbook/customer-experience/csm/gainsight/deployment-types/#provider) |
 | [GS] Slack Channel Link | 顧客の Slack チャンネル URL |  |  |
 | [GS] Summary | これは CSM がアカウントを管理するための関連する有用な情報を追加する一般的なサマリーフィールドです。 |  | [リンク](/handbook/sales/gainsight/account-planning/#the-account-snapshot) |
-| [GS] CSM Prioritization | このフィールドはアカウントの優先順位付けに使用され、通常は更新または拡大の機会のためです。詳細はハンドブックを参照してください |  | [リンク](/handbook/sales/field-operations/customer-success-operations/gainsight/#gainsight-to-salesforce-sync-data) |
+| [GS] CSM Prioritization | このフィールドはアカウントの優先順位付けに使用され、通常は契約更新または拡大の機会のためです。詳細はハンドブックを参照してください |  | [リンク](/handbook/sales/field-operations/customer-success-operations/gainsight/#gainsight-to-salesforce-sync-data) |
 | [GS] Total Number of Account Plans | レコードに記録されたアカウントプランの総数 |  |  |
 | [GS] Total Number of Success Plans | レコードに記録されたサクセスプランの総数 |  |  |
 | [GS] Triage Issue URL | トリアージ Issue へのディープリンク。トリアージ期間が完了したらリンクを削除してください。CSM が手動で入力します | 顧客がリスクにある場合の GitLab トリアージ Issue へのクイックリンク | [リンク](/handbook/sales/field-operations/customer-success-operations/gainsight/#gainsight-to-salesforce-sync-data) |
@@ -52,21 +50,21 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | [GS] Health: DevSecOps | DevSecOps ユースケースの顧客使用状況の自動スコアリング（Ultimate のみに適用）。詳細はハンドブックを参照してください | 顧客が Ultimate レベルの機能を使用しているかを知るために非常に重要です。ダウンサイドリスクの良い指標 |[リンク](/handbook/customer-experience/product-usage-data/use-case-adoption/#security-devsecops)|
 | [GS] Health: License Utilization | 購入数に対するライセンス消費の健全性。詳細はハンドブックを参照してください | 顧客が購入したライセンスを適切にデプロイしているかを知るために非常に役立ちます。顧客が赤または黄の場合、リスクの良い警告信号 |[リンク](/handbook/sales/field-operations/customer-success-operations/gainsight/#gainsight-to-salesforce-sync-data)|
 | [GS] Health: Overall Product Usage | ライセンス利用率やユースケースなど、様々な製品利用健全コンポーネントのサマリー健全性 | ライセンス利用率とユースケースの全体的な使用スコアを見ることで、顧客が製品をどのように採用しているかを知るのに役立ちます |[リンク](/handbook/sales/field-operations/customer-success-operations/gainsight/#gainsight-to-salesforce-sync-data)|
-| [GS] Health: SCM | SCM の採用は以下に基づいて測定されます: 過去 28 日間にマージリクエストを実行したユーザー数 / 販売されたライセンスの合計。SCM ユースケースの顧客使用状況の自動スコアリング。詳細はハンドブックを参照してください | SCM をユースケースとして顧客の採用と使用状況を理解するのに役立ちます。例えば、顧客は SCM のために購入して赤になっているのか、またはまったく気にしていないのか？ |[リンク](/handbook/customer-experience/product-usage-data/use-case-adoption/#source-code-management-scm)|
+| [GS] Health: SCM | SCM の採用は以下に基づいて測定されます: 過去 28 日間にマージリクエストを実行したユーザー数 / 販売されたライセンスの合計 SCM ユースケースの顧客使用状況の自動スコアリング。詳細はハンドブックを参照してください | SCM をユースケースとして顧客の採用と使用状況を理解するのに役立ちます。例えば、顧客は SCM のために購入して赤になっているのか、またはまったく気にしていないのか？ |[リンク](/handbook/customer-experience/product-usage-data/use-case-adoption/#source-code-management-scm)|
 | [GS] Health Score Value | アカウント健全スコアは、顧客の多角的なビューのための主要指標の集約です。0〜100 の数値で表されます。 |  |[リンク](/handbook/customer-experience/customer-health-scoring/)|
 | [GS] Overall Health Score | Gainsight から SFDC にプッシュされたこの顧客の全体健全スコアの色 | 顧客の状況を広く理解するための良い指標 |[リンク](/handbook/customer-experience/csm/health-score-triage/)|
 | [GS] CSM Sentiment | CSM が所有する場合、これは CSM がこのアカウントの健全性がどうあるべきかと考えているものです。Gainsight はこのフィールドの SSOT であり、その値は Gainsight でのみ更新できます。 | CSM 主導の場合、これは CSM がアカウントについて感じる認識を示します。黄または赤の場合にリスクを発見するのに役立ちます |[リンク](/handbook/customer-experience/csm/health-score-triage/)|
 | [GS] Health: User Engagement | ユースケースに関係なく、GitLab でのユーザーレベルの全体的なエンゲージメントを測定します。 | GitLab にログインしてアクティブなユーザー数を把握するのに役立ちます |[リンク](/handbook/customer-experience/csm/health-score-triage/)|
 
-## 商談
+## 商談 {#opportunity}
 
 | フィールド名 | 説明 | 参照 |
 |:---|:---|:---|
 | Opportunity Health | 商談の健全性は、商談時のアカウントの健全性であり、クローズまで商談全体を通じて更新されます — GS で入力されます | [リンク](/handbook/customer-experience/csm/renewals/)  |
-| Risk Reasons | リスクの理由は、その更新商談に関連する CSM によって入力されます — GS で入力されます | [リンク](/handbook/customer-experience/csm/renewals/)  |
-| Risk Type | リスクの種類は、更新で直面しているリスクの種類（ダウンティア・シートロス・フルチャーンなど）について CSM が入力します — GS で入力されます | [リンク](/handbook/customer-experience/csm/renewals/)  |
+| Risk Reasons | リスクの理由は、その契約更新商談に関連する内容を CSM が入力します — GS で入力されます | [リンク](/handbook/customer-experience/csm/renewals/)  |
+| Risk Type | リスクの種類は、契約更新で直面しているリスクの種類（ダウンティア・シートロス・フルチャーンなど）について CSM が入力します — GS で入力されます | [リンク](/handbook/customer-experience/csm/renewals/)  |
 
-## コンタクト
+## コンタクト {#contacts}
 
 | フィールド名 | 説明 | 参照 |
 |:---|:---|:---|
@@ -81,15 +79,15 @@ lastmod: "2026-09-24T21:34:11+02:00"
 | SFDC Contact ID | コンタクトの識別子 |  |
 | Title | コンタクトの役職 |  |
 
-## アクティビティ
+## アクティビティ {#activities}
 
 | フィールド名 | 説明 | 参照 |
 |:---|:---|:---|
-| Program Emails | プログラムメールの一部は、SFDC のアカウントページのアクティビティ履歴セクション内にカタログ化されています。そこでメールの件名行のログを確認でき、`Assigned to` フィールドが「Gainsight Integration」になっています |  |
+| Program Emails | プログラムメールの一部は、SFDC の Account Page > Activity History セクション内にカタログ化されています。そこでメールの件名行のログを確認でき、`Assigned to` フィールドが「Gainsight Integration」になっています |  |
 | Survey Results | これらの調査は GitLab に対する顧客のロイヤルティ・満足度・熱意を測定するために使用され、顧客の採用に関する早期警告システムとして機能できます。 | [リンク](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/nps-csat-scores/)|
 | Timeline Activities | Gainsight のタイムラインビューは、顧客とのアクティビティの時系列概要を提供します。サクセスの取り組みにおける対話と進捗状況を時間の経過とともに確認するための貴重なツールです。 | [リンク](/handbook/customer-experience/csm/gainsight/timeline/#how-to-log-activities-in-timeline)  |
 
-## 顧客サブスクリプション
+## 顧客サブスクリプション {#customer-subscriptions}
 
 | フィールド名 | 説明 | 参照 |
 |:---|:---|:---|

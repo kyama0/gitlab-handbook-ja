@@ -1,13 +1,12 @@
 ---
 title: "Gainsight ユーザー管理"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-user-management/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T12:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:53:32.057904+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 ここでは Gainsight のユーザー管理に関する具体的な内容を説明します。
 
@@ -15,20 +14,20 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
 ユーザーが Gainsight にアクセスできるようにするには、Lumos 経由で[アクセスリクエスト](https://app.lumosidentity.com/app_store?domainAppId=1175903)を作成する必要があります。
 
-- [アクセスリクエスト](https://app.lumosidentity.com/app_store?domainAppId=1175903): Gainsight のアクセス権は [Lumos](https://app.lumosidentity.com/) を通じて付与されます。GitLab に入社したユーザーは、自分の役割に応じて Lumos 経由で Gainsight のアクセスリクエストを送信する必要があります。
-  - **フルライセンス**: Customer Success Manager、Customer Success Engineer、Customer Success Architect はフルライセンスの対象となります。
-  - **ビューアライセンス**: その他 Gainsight アクセスが必要な役割は、Viewer Analytics ライセンスをリクエストします。
+- [アクセスリクエスト](https://app.lumosidentity.com/app_store?domainAppId=1175903): Gainsight のアクセス権は [Lumos](https://app.lumosidentity.com/)を通じて付与されます。GitLab に入社したユーザーは、自分の役割に応じて Lumos 経由で Gainsight のアクセスリクエストを送信する必要があります。
+  - **Full License**: Customer Success Manager、Customer Success Engineer、Customer Success Architect はフルライセンスの対象となります。
+  - **Viewer License**: その他 Gainsight アクセスが必要な役割は、Viewer Analytics ライセンスをリクエストします。
 - [オフボーディング Issue](https://gitlab.com/gitlab-com/team-member-epics/employment/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=offboarding&not%5Blabel_name%5D%5B%5D=CSOps%3A%3AOffboarding%20Completed&first_page_size=20&_gl=1*rt0jmx*_ga*MTc0NDE2MzMzOS4xNjE4NDE5NTU3*_ga_ENFH3X7M5Y*MTY3NTE3MzU0Ny4xMDMuMS4xNjc1MTczNTY4LjAuMC4w): **CSOps::Offboarding Complete** ラベルが付いていない Issue がこのリストに表示されます。必要な対応が完了したら、ラベルを CSOps::Offboarding Complete に変更すると、リストから外れます。
 
 すでに Gainsight ライセンスの承認を受けていないユーザーが Gainsight へのアクセスをリクエストした場合は、RevTech のリーダーシップと連携し、そのユーザーに Gainsight ライセンスを付与すべきかどうかを判断します。
 
-## Salesforce アカウントのセットアップとライセンスのプロビジョニング
+## Salesforce アカウントのセットアップとライセンスのプロビジョニング {#salesforce-account-setup--license-provisioning}
 
-ユーザーが GitLab に入社すると、Salesforce アカウントが自動的に作成されます。ユーザーの Salesforce アカウントが見つからない場合は、後述の[トラブルシューティング](#troubleshooting)セクションを参照してください。
+ユーザーが GitLab に入社すると、Salesforce アカウントが自動的に作成されるはずです。ユーザーの Salesforce アカウントが見つからない場合は、後述の[トラブルシューティング](#troubleshooting)セクションを参照してください。
 
 ユーザーレコードを特定したら、次の手順に従います。一部の手順は Sales Systems によってすでに完了している場合がありますが、Gainsight でアクセス権を付与する前に、ユーザーのセットアップが Salesforce で正しく行われていることを確認することが重要です。
 
-1. Salesforce で SFDC の**ユーザー**ページに移動します:
+1. Salesforce で SFDC の **User** ページに移動します:
     1. Setup → Manage Users → Users → リストからユーザーを検索
 2. ユーザーのページで、以下の内容が正しいことを確認します:
     1. **Active** チェックボックスがオンになっている
@@ -49,11 +48,11 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
 Gainsight CSM Package Details ページで使用中および許可されているライセンスの量を確認できます。Gainsight のライセンスが不足した場合は、CS Ops のリーダーシップと連携して計画を決定します。既存のユーザーからライセンスを削除するか、追加のライセンスを購入する必要があります。
 
-## Gainsight アカウントのセットアップ
+## Gainsight アカウントのセットアップ {#gainsight-account-setup}
 
 Salesforce でライセンスがプロビジョニングされた後、Gainsight でユーザーセットアップを完了するために追加の手順を実行する必要があります。
 
-### SFDC ユーザーコネクタジョブ
+### SFDC ユーザーコネクタジョブ {#sfdc-user-connector-job}
 
 {{% alert title="重要" color="warning" %}}
 Gainsight のすべてのユーザーは Salesforce からインポートされます。Gainsight 内で直接ユーザーを作成することはしません。
@@ -82,7 +81,7 @@ Gainsight はコネクタジョブを使用して、Salesforce からユーザ�
 
 特定のエラーのトラブルシューティングの詳細については、後述の[トラブルシューティング](#troubleshooting)セクションを参照してください。
 
-## Gainsight ユーザー管理
+## Gainsight ユーザー管理 {#gainsight-user-management}
 
 ユーザーが Salesforce から正常に同期されたことを確認した後、以下を実行する必要があります:
 
@@ -100,10 +99,10 @@ Gainsight はコネクタジョブを使用して、Salesforce からユーザ�
 6. ユーザーを Okta gainsight ユーザーグループに追加します:
    1. <https://groups.google.com/> に移動します（任意のグループを表示するには、groups.google.com の管理者である必要があります）。
    2. okta-gainsight-users グループに移動します
-   3. Members → Add Members で、新しいユーザーのメールアドレスを使用してグループに追加します。正常に追加されると、Okta に Gainsight タイルが表示されます（表示までに時間がかかる場合があります）。
+   3. Members に移動して Add Members を選択し、新しいユーザーのメールアドレスを使用してグループに追加します。正常に追加されると、Okta に Gainsight タイルが表示されます（表示までに時間がかかる場合があります）。
 
 {{% alert title="注意" color="warning" %}}
-最も重要なフィールドは **User Role** フィールドと、PubSec ユーザーの場合は **US PubSec User** フィールドです。これらのフィールドは、ユーザーを正しい共有グループに自動的に追加するために使用されます（詳細は後述の[データ権限/共有グループ](#data-permissions-and-sharing-groups)セクションを参照）。
+最も重要なフィールドは **User Role** フィールドと、PubSec ユーザーの場合は **US PubSec User** フィールドです。これらのフィールドは、ユーザーを正しい共有グループに自動的に追加するために使用されます（詳細は後述の[データ権限/共有グループ](#data-permissions-and-sharing-groups)セクションを参照。
 {{% /alert %}}
 
 ## Gainsight バンドル（権限セット） {#gainsight-bundles-permission-sets}
@@ -126,7 +125,7 @@ Gainsight が特定のグループのユーザーがアクセスする必要の�
 | -------------------------- | ------------------------------------------------------------ |
 | Default                    | GS 管理者に割り当てられるバンドルで、Gainsight のすべての領域へのアクセスを提供します。 |
 | GS Admin sans provisioning | これは User Management 以外のすべてにアクセスできる GS 管理者の役割です。 |
-| CSM Users                  | CSM ユーザー用の権限グループ。C360、ダッシュボード、Home、Timeline、Cockpit、Success Plans、サーベイと NPS の分析へのアクセスを含みます。これはほとんどのユーザーに割り当てられるバンドルです。 |
+| CSM Users                  | CSM ユーザー用の権限グループ。C360、Dashboards、Home、Timeline、Cockpit、Success Plans、サーベイと NPS の分析へのアクセスを含みます。これはほとんどのユーザーに割り当てられるバンドルです。 |
 | View                       | デフォルトの View User Group で、管理者が選択したユーザーにリソースへのビューアクセスを割り当てることができます。 |
 | View Analytics             | Viewer Analytics ライセンスを持つユーザーのデフォルト権限バンドルで、Dashboards、Timeline、Company 360 へのアクセスを提供します。 |
 
@@ -145,9 +144,9 @@ Gainsight が特定のグループのユーザーがアクセスする必要の�
 
 どのアカウントレコードがどの共有グループに表示されるかは、Data permissions → Company → Rule based に移動して確認できます。
 
-## ページレイアウト
+## ページレイアウト {#page-layouts}
 
-C360 ページレイアウトでは、Gainsight のユーザーに対して異なる C360 ビューを非表示または表示することができます。Administration → 360 Layouts → C360 でレイアウトを表示/編集できます。特に指定されない限り、ユーザーはデフォルトのレイアウトに自動的に割り当てられます。
+C360 ページレイアウトでは、Gainsight のユーザーに対して異なる C360 ビューを非表示または表示することができます。Administration → 360 Layouts → C360 でレイアウトを表示/編集できます。特に指定されない限り、ユーザーは Default レイアウトに自動的に割り当てられます。
 
 現在、3 つの主要な C360 レイアウトがあります:
 
@@ -157,7 +156,7 @@ C360 ページレイアウトでは、Gainsight のユーザーに対して異�
 | CSM Edit         | CSM フィールドが編集可能であること以外はデフォルトレイアウトの正確なコピー。これは、ユーザーレコードの **CSM Edit?** フィールドが Yes であるユーザーに割り当てられます。 |
 | Account Planning | アカウントプランニング用の Sales/SAL 向けの特定レイアウト。これは、ユーザーレコードの Page Layout フィールドが Account Planning であるユーザーに割り当てられます。 |
 
-## Gainsight アクセスの削除
+## Gainsight アクセスの削除 {#removing-gainsight-access}
 
 ユーザーが GitLab を離れる、または Gainsight へのアクセスが不要になった場合は、アカウントを無効化してライセンスを削除できます。GitLab を離れる従業員については、[GitLab アクセスリクエストとオフボーディング Issue](#gitlab-access-requests-and-offboarding-issues)で詳述しているように、オフボーディング Issue を作成する必要があります。
 
@@ -173,7 +172,7 @@ Salesforce でユーザーの Gainsight ライセンスを削除する必要が�
 2. **Manage Licenses** をクリック
 3. リストでユーザーを検索し、その名前の横の *Remove* をクリックします。
 
-## ユーザーの Gainsight へのアクセス
+## ユーザーの Gainsight へのアクセス {#user-access-to-gainsight}
 
 ユーザーは Okta から直接、または Salesforce 経由で Gainsight にアクセスできます。
 

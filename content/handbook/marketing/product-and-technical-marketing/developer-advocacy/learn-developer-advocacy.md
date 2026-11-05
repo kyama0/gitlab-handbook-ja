@@ -2,9 +2,9 @@
 description: "デベロッパーアドボカシー、コミュニティとの交流、影響の測定について学ぶためのリソース。"
 title: "デベロッパーアドボカシーを学ぶ"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/learn-developer-advocacy/"
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T21:20:33+02:00"
-translated_at: "2026-09-20T01:48:20+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+lastmod: "2026-11-04T20:19:30+01:00"
+translated_at: "2026-11-05T13:40:02.095783+00:00"
 translator: codex
 stale: false
 ---
@@ -38,7 +38,7 @@ stale: false
 
 * プロ: この段階では、専門家として認識され始めます。人々があなたの話を聞きたがり、コミュニティでの名前認知が得られます。これは、求人のオファー、昇進などにつながる可能性があります。
 
-## <i class="fa fa-newspaper-o" aria-hidden="true"></i> デベロッパーアドボカシーを実践として学ぶ {#learn-more-about-developer-advocacy-as-a-practice}
+## <i class="fa-solid fa-newspaper" aria-hidden="true"></i> デベロッパーアドボカシーを実践として学ぶ {#learn-more-about-developer-advocacy-as-a-practice}
 
 具体的なエリア定義を含む良い概要は、[DevRel Notebook](https://github.com/konradsopala/devrel-notebook)で見つけることができます。[DevRel Resources](https://devrelresourc.es/)は DevRel に関するリソースの包括的なコレクションです。私たちは[ソーシャルメディア](/handbook/marketing/product-and-technical-marketing/developer-advocacy/social-media/)でデベロッパーアドボカシー、リレーションズ、エバンジェリズムの友人たちとも交流しています。
 

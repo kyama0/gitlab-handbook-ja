@@ -2,11 +2,11 @@
 title: バディタスク
 draft: true
 upstream_path: /handbook/product/product-management/product-manager-buddy-tasks/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T04:58:13.290688+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:27:46.354529+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-28T11:20:12-04:00"
+lastmod: "2026-11-04T13:17:02-05:00"
 ---
 
 1. [ ] - 新しい Product Manager と Day 1 の 1:1 を設定する
@@ -22,7 +22,7 @@ lastmod: "2026-10-28T11:20:12-04:00"
     - 価格・ティア関連
         - [GitLab のティア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)
         - [購買担当者ペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
-    - カテゴリの DRI を確認するための [製品カテゴリのページ](/handbook/product/categories/)
+    - カテゴリの DRI を確認するための[製品カテゴリのページ](/handbook/product/categories/)
     - [ティアとグループごとの機能一覧](/handbook/product/categories/features/)
     - [Analytics の方向性ページ](https://about.gitlab.com/direction/monitor/)
     - リサーチに役立つもの
@@ -33,7 +33,7 @@ lastmod: "2026-10-28T11:20:12-04:00"
             - [GitLab Dovetail プロジェクト](https://gitlab.dovetailapp.com/projects)
             - [Dovetail でのインサイト記録](/handbook/product/ux/dovetail/)
 1. [ ] - 自己紹介を促す
-    - #new_team_members
+    - #team-member-updates
     - #product
         - 次のプロダクトミーティングで自己紹介の機会があり、GL に入る前にどこで働いていたか、なぜ参加したか、どこに住んでいるか、仕事以外の楽しみは何かを聞かれます。
             - 自分がどう自己紹介したかを共有してもよいでしょう。
@@ -42,17 +42,17 @@ lastmod: "2026-10-28T11:20:12-04:00"
     - 知っておくべきチャンネル
         - プロダクト関連 - #product, #uxresearch, #competition, #analyst-relations, #analytics, #analytics-social など
         - 楽しみ系 - #random, #allcaps, #loc 系のチャンネルなど。興味を持ちそうなものを検索してみるとよいです。
-    - Tips・コツ
+    - ヒントとコツ
         - Slack のプロフィールを更新する。特に勤務時間と所在地。
         - スター付きチャンネルを活用する。自分にとって最も重要なものを。
         - 自分のプロダクト領域や競合などのキーワードを設定して、通知を受けられるようにする。
 1. [ ] - 最初の 6 週間は、週に 1 回「今週答えを得られなかったこと」「行き詰まりを解消する方法」を確認するリマインダーを追加する
 1. [ ] - 数日経ったら、チームページの MR がマージされたかを確認する
-1. [ ] - センシングメカニズムの Tips・コツ
-    - センシングメカニズムについては、[ハンドブック](/handbook/product/product-processes/sensing-mechanisms/)に良い解説があります。私が役に立つと感じたほかのものを挙げます。
-    - 顧客・ユーザーがいるほかの場所、例えば [GitLab フォーラム](https://forum.gitlab.com/)や Discord、[Reddit](https://www.reddit.com/r/gitlab/)、[HackerNews](https://news.ycombinator.com/news) などをチェックする。
+1. [ ] - センシングメカニズムの ヒントとコツ
+    - センシングメカニズムについては、[ハンドブック](/handbook/product/product-processes/sensing-mechanisms/)に良い解説があります。私たちが役に立つと感じたほかのものを挙げます。
+    - 顧客・ユーザーがいるほかの場所、例えば [GitLab フォーラム](https://forum.gitlab.com/)や Discord、[Reddit](https://www.reddit.com/r/gitlab/)、[HackerNews](https://news.ycombinator.com/news)などをチェックする。
     - Issue - 週次トリアージで見落とされる可能性のある、自分のグループにアサインされた新しい Issue をレビューする習慣を持つとよいです。Issue 作成から 1 〜 2 日以内に、問題や望ましい結果についてユーザーと議論することで、良い会話が生まれることがあります。
-    - Slack - 自分のカテゴリ名や競合名などを [Slack アラート](https://slack.com/help/articles/4412437167251-Get-notified-about-topics-you-care-about)のキーワードに追加することは、参加しているチャンネルで浮上してくる Issue や潜在顧客などを把握するのに有効です。
+    - Slack - 自分のカテゴリ名や競合名などを [Slack アラート](https://slack.com/help/articles/4412437167251-Get-notified-about-topics-you-care-about)のキーワードに追加することは、参加しているチャンネルで浮上してくる課題や潜在顧客などを把握するのに有効です。
     - アナリストレポート - アナリストからのレポートへのアクセスについては、#analyst-relations チャンネルで問い合わせできます。
 1. [ ] - マイルストーンの流れ
     - [流れの大まかなタイムライン](/handbook/engineering/workflow/#product-development-timeline)
@@ -61,7 +61,7 @@ lastmod: "2026-10-28T11:20:12-04:00"
     - キックオフコール
         - Designer と一緒に、そのマイルストーンでチームが取り組む Issue について話し合うコールを実施します。`~direction` AND `~Deliverable` の Issue を優先します。
     - マイルストーン期間中
-        - 開発チームからの質問・ping や、Issue の進捗を尋ねる顧客・ユーザーからの問い合わせを進めるために、TODO を使っている場合はそれに注意を払います。
+        - 開発チームからの質問・通知 や、Issue の進捗を尋ねる顧客・ユーザーからの問い合わせを進めるために、TODO を使っている場合はそれに注意を払います。
     - [リリースポスト](https://docs.gitlab.com/development/documentation/release_notes/)
         - 重要な締切として、Technical Writing と PMM のレビューはリリース 2 週間前まで、マージはリリース 7 日前までです。
     - マイルストーン内で完了しなかった Issue の移動

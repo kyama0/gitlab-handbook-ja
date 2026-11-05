@@ -2,9 +2,9 @@
 title: 'スケジュール'
 description: 'Zendesk スケジュールの変更をテストするためのドキュメント'
 upstream_path: "/handbook/eta/css/testing/zendesk/schedules/"
-upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
-lastmod: "2026-11-03T13:45:25-06:00"
-translated_at: "2026-11-03T21:11:48.175692+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+lastmod: "2026-11-04T10:19:23-06:00"
+translated_at: "2026-11-05T14:33:39.824673+00:00"
 stale: false
 translator: codex
 ---
@@ -13,6 +13,7 @@ translator: codex
 
 - Zendesk Global で有効なテスト手段:
   - [CustSuppOps Zendesk Test Suite Generator](/handbook/eta/css/testing/zendesk/#custsuppops-zendesk-test-suite-generator)
+  - [テストスイートスクリプト](/handbook/eta/css/testing/zendesk/#test-suite-script)
 - Zendesk US Government で有効なテスト手段:
   - [CustSuppOps Zendesk Test Suite Generator](/handbook/eta/css/testing/zendesk/#custsuppops-zendesk-test-suite-generator)
   - [テストスイートスクリプト](/handbook/eta/css/testing/zendesk/#test-suite-script)

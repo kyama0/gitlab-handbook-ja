@@ -2,39 +2,39 @@
 title: Threat Hunting チーム
 description: GitLab Threat Hunting チームの概要
 upstream_path: "/handbook/security/security-operations/threat-hunting/"
-upstream_sha: "a2f17ddfb308ad2cf8c33a838af1d4b482818d17"
-lastmod: "2026-10-05T16:18:10-07:00"
-translated_at: "2026-10-07T21:11:30+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+lastmod: "2026-11-04T20:19:30+01:00"
+translated_at: "2026-11-05T12:23:25.989927+00:00"
 translator: codex
 stale: false
 ---
 
-## <i class="fas fa-rocket"></i> 私たちのビジョン
+## <i class="fas fa-rocket"></i> 私たちのビジョン {#our-vision}
 
-### ミッション
+### ミッション {#mission}
 
 未検知の侵害やプラットフォームの不正利用または悪用を特定するためのツールと手法を開発し、連携するチームと協力してそれらを活用することで、対応につながる調査結果を得ます。
 
-### 対象範囲
+### 対象範囲 {#scope}
 
 脅威ハンティングの活動には、GitLab の社内環境、GitLab のインフラストラクチャ、および顧客環境を含む GitLab プラットフォームが含まれます。
 
-### 戦略
+### 戦略 {#strategy}
 
 - 高度な脅威ハンティングを実現するツールと手法を開発します。
 - 特定された懸念事項や機会のある領域に基づいて、脅威ハンティングの活動に取り組みます。
 - 関連する連携先チームに調査結果を伝え、適切な成果を得られるよう協力します。
 
-## <i class="fas fa-users"></i> チーム
+## <i class="fas fa-users"></i> チーム {#the-team}
 
-### チームメンバー
+### チームメンバー {#team-members}
 
 | 名前 | 役職 |
 |---|---|
 | Matt Coons | [Senior Security Manager](/job-description-library/security/security-leadership/) |
 | Sean Gillespie | [Staff Threat Hunting Engineer](/job-description-library/security/security-engineer/#staff-security-engineer) |
 
-## <i class="fas fa-stream" id="biz-tech-icons"></i> 提供するサービス
+## <i class="fas fa-stream"></i> 提供するサービス {#services-we-provide}
 
 1. エンジニアリング
     - 高度な脅威ハンティングを実現するツールと手法を開発します。

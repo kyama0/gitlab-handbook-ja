@@ -2,16 +2,14 @@
 title: "マーケティングチームプロセス - 私たちの働き方"
 description: "このページは、マーケティングチームのリソースとプロセスを格納することを目的としています。"
 upstream_path: /handbook/marketing/marketing-team-processes/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T14:16:22+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:32:31.649177+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-calendar-check fa-fw color-orange font-awesome"></i> マーケティングカレンダー {#marketing-calendar}
+## <i class="fas fa-calendar-check fa-fw"></i> マーケティングカレンダー {#marketing-calendar}
 
 ## オールマーケティングカレンダーへの追加 {#marketing-calendar-inputs}
 
@@ -19,7 +17,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 **入力場所: あなたの [Google Drive](https://drive.google.com/drive/u/1/my-drive)で、`FY24 All-Marketing Calendar SSoT` を検索 (してブックマーク) してください。**
 
-ここで、すべてのチームが計画されたアクティビティを入力およびカテゴリ分類します。重要な情報 (GTM Motion、Alliance Partner、Sales Segment、Region、Language など) に合致するフィルターを使用します。これは反復的なものとなり、誰もが自由にフィードバックやアイデアを共有できるようにすべきです。[考えを共有するため Issue にコメントしてください！](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/3324)
+ここで、すべてのチームが計画されたアクティビティを入力およびカテゴリ分類します。重要な情報 (GTM Motion、Alliance Partner、Sales Segment、Region、Language など) に合致するフィルターを使用します。これはイテレーションを行うものとなり、誰もが自由にフィードバックやアイデアを共有できるようにすべきです。[考えを共有するため Issue にコメントしてください！](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/3324)
 
 ### マーケティングチームによるオールマーケティングカレンダーへの追加 {#inputs-marketing-additions}
 
@@ -35,16 +33,16 @@ lastmod: "2026-10-30T14:17:26-04:00"
 * **Team / DRI**: ドロップダウンリストからアクティビティをプロジェクトマネジメントしている DRI (主要担当者) を選択
 * **Activity Category**: ドロップダウンリストからカテゴリを選択
 * **Name:** 戦術/イベントの正確な名前を追加 (確定していない場合は、最新の利用可能なものを含めるか、まだ決定されていない場合は `placeholder with focus on <add topic>`)
-  * 企業イベント: 私たちがスポンサーするイベントの隣に "SPONSORING" を緑色のフォントで含めてください
+  * Corporate Events: 私たちがスポンサーするイベントの隣に "SPONSORING" を緑色のフォントで含めてください
 
 **主要リンク**
 
 * **Landing Page**: ランディングページが作成されたら、Sales と Marketing による簡単なアクセスのためにここにリンクしてください。
-* **Epic/Issue**: エピックがある場合 (イベント、コンテンツ、Webcast など) は、エピックリンクを追加します。エピックレベルがない場合 (例: デジタルチャネルのローンチ) は、Issue リンクを含めます。
+* **Epic/Issue**: エピックがある場合 (イベント、コンテンツ、ウェブキャスト など) は、エピックリンクを追加します。エピックレベルがない場合 (例: デジタルチャネルのローンチ) は、Issue リンクを含めます。
 
 **GTM とパートナーアラインメント**
 
-* **Primary GTM Motion**: 最も密接に整合する GTM Motion を選択 (FY24 GTM Motions (Automated Software Delivery または Security & Compliance) から)
+* **Primary GTM Motion**: 最も密接に整合する GTM Motion を選択 (FY24 GTM Motions (Automated Software Delivery または Security & Compliance) から
 * **Alliance Partner(s)**: Alliance Partner がアクティビティに含まれる場合、すべてをこの列に追加してください。
 * **Channel Partner(s)**: Channel Partner がアクティビティに含まれる場合、すべてをこの列に追加してください。
 
@@ -93,13 +91,13 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 *他に役立つビューがあれば、既存のフィルタービューを複製し、何らかのカテゴリ分類 (例: team、segment など) を含めてください。同様のフィルタービューに移動して、右上の歯車アイコンをクリックし、`Duplicate` を選択することでこれを行えます。*
 
-## <i class="fas fa-toolbox fa-fw color-orange font-awesome"></i> マーケティングプロジェクトマネジメントガイドライン {#marketing-project-management-guidelines}
+## <i class="fas fa-toolbox fa-fw"></i> マーケティングプロジェクトマネジメントガイドライン {#marketing-project-management-guidelines}
 
 マーケティングは、[グループ](https://docs.gitlab.com/ee/user/group/)、[プロジェクト](https://docs.gitlab.com/ee/user/project/)、[エピック](https://docs.gitlab.com/ee/user/group/epics/)、[ロードマップ](https://docs.gitlab.com/ee/user/group/roadmap/)、[Issue](https://docs.gitlab.com/ee/user/project/issues/)、[ラベル](https://docs.gitlab.com/ee/user/project/labels.html)、[ボード](https://docs.gitlab.com/ee/user/project/issue_board.html)などを含むアジャイルプロジェクトマネジメントのために GitLab を使用しています。これらの GitLab 機能に詳しくない場合は、それぞれのドキュメントを通読してください。
 
 ## 統合キャンペーン {#integrated-campaigns}
 
-マーケティング部門は協力して統合キャンペーン (Integrated Campaign) を制作します。統合キャンペーンとは、ブログ投稿、メール、イベント、広告、about.gitlab.com 上のコンテンツ、動画、ケーススタディ、ホワイトペーパー、調査、ソーシャルアウトリーチ、Webcast など、いくつかのキャンペーン戦術を含むコミュニケーションの取り組みです。統合キャンペーンには、私たちが市場に伝えているメッセージを要約するキャンペーンテーマがあります。
+マーケティング部門は協力して統合キャンペーン (Integrated Campaign) を制作します。統合キャンペーンとは、ブログ投稿、メール、イベント、広告、about.gitlab.com 上のコンテンツ、動画、ケーススタディ、ホワイトペーパー、調査、ソーシャルアウトリーチ、ウェブキャスト など、いくつかのキャンペーン戦術を含むコミュニケーションの取り組みです。統合キャンペーンには、私たちが市場に伝えているメッセージを要約するキャンペーンテーマがあります。
 
 ### アクティブな統合キャンペーン {#active-integrated-campaigns}
 
@@ -162,7 +160,7 @@ www-gitlab-com リポジトリ (マーケティングの親リポジトリ) 内�
 
 ### ボードとラベル {#boards-and-labels}
 
-[ラベルに関する最新の推奨事項](/handbook/marketing/project-management-guidelines/labels/)と [ボードに関する最新の推奨事項](/handbook/marketing/project-management-guidelines/boards/)。FY21-Q2 Agility Project より。
+[ラベルに関する最新の推奨事項](/handbook/marketing/project-management-guidelines/labels/)と[ボードに関する最新の推奨事項](/handbook/marketing/project-management-guidelines/boards/)。FY21-Q2 Agility Project より。
 
 1. 各チームには、進行中のワークストリームを追跡するための 1 つ以上のボードがあります。
 1. 一般に、各機能ごとにボードを作成します。(たとえば、PMM には Sales Enablement、Analyst Relations、Customer Relations などのボードがあります。)
@@ -234,7 +232,7 @@ www-gitlab-com リポジトリ (マーケティングの親リポジトリ) 内�
 
 **注意:** 私たちはキャンペーン費用追跡のために、Campaign Tags の使用から Allocadia ID への移行を進めています。その結果、現時点では Allocadia ID と Campaign Tags の両方を参照しながらプロセスの詳細を以下に説明していますが、最終的には Campaign Tags の使用は廃止されます。
 
-Marketing Managers は、イベント、コンテンツ、Webcast などのキャンペーンに関連するコストを追跡します。Allocadia ID/Campaign Tags は、Navan レポート、Coupa PO、コーポレートクレジットカード請求、および Accounts Payable によって処理されるベンダー請求書に適用できます。独立した契約者によって発生するキャンペーン費用は、適切な ID/タグで明確に記載され、彼らから会社への請求書に含まれるべきです。次に、これらの累積コストを予算対実績分析、および Salesforce キャンペーンを実際のコストで更新するために使用します。
+Marketing Managers は、イベント、コンテンツ、ウェブキャスト などのキャンペーンに関連するコストを追跡します。Allocadia ID/Campaign Tags は、Navan レポート、Coupa PO、コーポレートクレジットカード請求、および Accounts Payable によって処理されるベンダー請求書に適用できます。独立した契約者によって発生するキャンペーン費用は、適切な ID/タグで明確に記載され、その契約者から会社への請求書に含まれるべきです。次に、これらの累積コストを予算対実績分析、および Salesforce キャンペーンを実際のコストで更新するために使用します。
 
 ### Allocadia ID {#allocadia-ids}
 
@@ -275,7 +273,7 @@ Campaign Tag を作成したら、[これらの手順](/handbook/marketing/#how-
 
 旅費 (食事、ホテル滞在、航空券など) も Allocadia ID/Campaign Tags を活用して追跡する必要があります。経費レポートを完了するときに、Navan の `classification` フィールドに Allocadia ID/Campaign Tag を含めます。NetSuite > Navan で Allocadia ID/Campaign Tag が作成されるようリクエストする方法は[こちら](/handbook/marketing/#how-to-create-and-manage-allocadia-idscampaign-tags)で見つかります。旅行に関する追加情報は[こちら](/handbook/finance/travel/)で見つかります。
 
-## <i class="fas fa-forward fa-fw color-orange font-awesome"></i> マーケティング ラピッドレスポンス プロセス {#marketing-rapid-response-process}
+## <i class="fas fa-forward fa-fw"></i> マーケティング ラピッドレスポンス プロセス {#marketing-rapid-response-process}
 
 ## 概要 {#summary}
 
@@ -283,7 +281,7 @@ Campaign Tag を作成したら、[これらの手順](/handbook/marketing/#how-
 
 ## プロセス {#process}
 
-ラピッドレスポンスの機会が発生した場合、Slack またはテキストメッセージで [corporate communications](/handbook/marketing/corporate-communications/)のヘッド (corporate communications のヘッドが利用できない場合は [CMO](/handbook/marketing/cmo/))にアラートしてください。ラピッドレスポンスのコラボレーションは、[#competition チャネル](https://gitlab.slack.com/messages/C1BBL1V3K) (競合関連の場合) または [#external-comms チャネル](https://gitlab.slack.com/messages/CB274TZRR) (他のニュースに関する場合)のいずれかで行われます。corporate communications のヘッドは、外部企業メッセージで進める最善の方法に関する推奨事項を提案し、プランを達成するためのリソースを募集します (これは各リソースにとって、物理的に不可能でない限り、またはマネージャーが代替を提供しない限り、最優先事項になります)。ラピッドレスポンスのテンプレートは[こちら](https://docs.google.com/document/d/19Kc-GZ5B7V_zOA46zF1SXoD5qfavqmCAnXFJKS7P3sI/edit)で見つかります。
+ラピッドレスポンスの機会が発生した場合、Slack またはテキストメッセージで [corporate communications](/handbook/marketing/corporate-communications/)のヘッド (corporate communications のヘッドが利用できない場合は [CMO](/handbook/marketing/cmo/))にアラートしてください。ラピッドレスポンスのコラボレーションは、[#competition チャネル](https://gitlab.slack.com/messages/C1BBL1V3K) (競合関連の場合) または [#external-comms チャネル](https://gitlab.slack.com/messages/CB274TZRR) (他のニュースに関する場合)のいずれかで行われます。corporate communications のヘッドは、会社から社外に発信するメッセージの最善の進め方に関する推奨事項を提案し、プランを達成するためのリソースを募集します (これは各リソースにとって、物理的に不可能でない限り、またはマネージャーが代替を提供しない限り、最優先事項になります)。ラピッドレスポンスのテンプレートは[こちら](https://docs.google.com/document/d/19Kc-GZ5B7V_zOA46zF1SXoD5qfavqmCAnXFJKS7P3sI/edit)で見つかります。
 
 corporate communications のヘッドは、ラピッドレスポンスのリクエストを 1 時間以内 (9amEST-6pmPST) に評価します。緊急性が評価され、3 時間 (ASAP) または 24 時間のターンアラウンドが決定され、アクションプランがそれに応じてスコープされます。可能な限り早く MVC をリリースし、より多くのニュースが利用可能になるにつれてイテレーションを重ねるというバイアスを持ちます。緊急性またはアクションに関する意見の相違は、最終決定のために [CMO](/handbook/marketing/cmo/)に直ちにエスカレートされます。
 
@@ -296,7 +294,7 @@ corporate communications のヘッドは、ラピッドレスポンスのリク�
 
 **他の非公開チャネルで承認を得ていても、マージする前に MR でステートメント/ブログ投稿の作者に承認のコメントをしてもらってください。**
 
-## <i class="fas fa-bookmark color-orange font-awesome"></i> リソース {#resources}
+## <i class="fas fa-bookmark"></i> リソース {#resources}
 
 ## マーケティングエージェンシーとパートナーリスト {#marketing-agency-and-partner-list}
 

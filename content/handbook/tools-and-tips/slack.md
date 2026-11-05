@@ -2,11 +2,11 @@
 title: "Slack"
 description: "GitLab における Slack の利用とヒント"
 upstream_path: /handbook/tools-and-tips/slack/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T07:49:11+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:14:25.983858+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T13:17:02-05:00"
 ---
 
 ## 概要 {#in-general}
@@ -82,7 +82,7 @@ Slack のプロフィールを記入してください。私たちは Slack の�
 パブリックチャンネルに参加するには、**Join channel** を選択します。プライベートチャンネルに参加するには、既存のメンバーに追加を依頼してください。
 他のチームメンバーにお気に入りのチャンネルを推薦してもらうのも気軽にどうぞ。
 全チームメンバーは自動的に `#company-fyi` と `#whats-happening-at-gitlab` チャンネルに追加され、ここで全社向けのアナウンスや情報共有が行われます。
-新入社員全員がデフォルトで追加されるチャンネルもいくつかあります。たとえば `#celebrations`、`#new_team_members`、`#questions`、`#random`、`#thanks` などです。これらのチャンネルはオプションですが、チームメンバーが交流し互いを知る素晴らしい場所だと考えています。
+新入社員全員がデフォルトで追加されるチャンネルもいくつかあります。たとえば `#celebrations`、`#team-member-updates`、`#questions`、`#random`、`#thanks` などです。これらのチャンネルはオプションですが、チームメンバーが交流し互いを知る素晴らしい場所だと考えています。
 
 ### スレッドとメンション {#threads-and-mentions}
 
@@ -271,7 +271,7 @@ GitLab はアプリのインストール能力を制限することを選択し�
 GitLab チームメンバーとして、私たちが Slack で使用しているアクティブな Slackbot を、GitLab > Customize Your Workspace > Slackbot で確認できます。
 
 | `hey guys, hi guys, you guys, salesman, salesmen, businessman, businessmen` | 複数のジェンダーの人々を含めていますか？ 代わりに「everyone」、「team」、「y'all」などの利用を検討してください。ハンドブックでインクルーシブな言葉遣いについてもっと読めます |
-| `on your toes, on anybody's toes` | おそらく問題ありません。<br><br>会社が成長するにつれて、関わる人が増えるため意思決定の速度は遅くなります。私たちは短いつま先 (short toes) を持つことでこれに対抗し、他者が自分のドメインに貢献することを快く受け入れるべきです。 |
+| `on your toes, on anybody's toes` | おそらく問題ありません。<br><br>会社が成長するにつれて、関わる人が増えるため意思決定の速度は遅くなります。これに対抗するため、他者が自分の領域に踏み込むことを過度に気にせず、その貢献を快く受け入れるべきです。 |
 | `aggressive` | ambitious という意味で言いましたか？ |
 | `gitlabber, gitlabbers` | `gitlabber` という用語はよく誤用される用語です。代わりに「GitLab team member」を使用してください。[ハンドブックでこれについてもっと読めます](/handbook/communication/top-misused-terms/) |
 
