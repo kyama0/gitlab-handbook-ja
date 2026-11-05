@@ -2,11 +2,11 @@
 title: サポートチーム ハンドブック
 description: GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 upstream_path: /handbook/support/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T16:13:47+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:14:25.983858+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
 ## GitLab サポートチーム ハンドブックへようこそ {#welcome-to-the-gitlab-support-team-handbook}
@@ -17,12 +17,12 @@ GitLab サポートチームは、GitLab.com およびセルフマネージド G
 | ---------- | --------- | --------------------- |
 | お客様、またはお客様の代弁者 | 技術的支援 | 公開の [サポートページ](https://about.gitlab.com/support/)。必要な支援を得るための最良の方法を説明し、GitLab の有償サービスを一覧化しています。 |
 | GitLab チームメンバー | 技術的支援 | [GitLab チームメンバー向け 内部サポートページ](internal-support) |
-| 新規サポートチームメンバー | オンボーディング／学習 | [サポートエンジニアの責務](/handbook/support/support-engineer-responsibilities) ページと [サポートの学習パスウェイ](/handbook/support/training/) |
-| 新規サポートマネージャー | オンボーディング／学習 | [サポートマネージャーの責務](/handbook/support/managers/manager-responsibilities) ページと [サポートマネージャーパスウェイ](/handbook/support/training/#support-manager-onboarding-pathway) |
+| 新規サポートチームメンバー | オンボーディング／学習 | [Support Engineer の責務](/handbook/support/support-engineer-responsibilities) ページと [サポートの学習パスウェイ](/handbook/support/training/) |
+| 新規 Support Manager | オンボーディング／学習 | [Support Manager の責務](/handbook/support/managers/manager-responsibilities) ページと [Support Manager パスウェイ](/handbook/support/training/#support-manager-onboarding-pathway) |
 
 私たちのチームに合いそうな方をご存知ですか？ 以下のジョブファミリーの説明を共有してください。
 
-- [サポートエンジニアリング ジョブファミリー](/job-description-library/engineering/support-engineer/)
+- [Support Engineering ジョブファミリー](/job-description-library/engineering/support-engineer/)
 - [サポートマネジメント ジョブファミリー](/job-description-library/engineering/support-management/)
 
 ## サポートチームは何をするのか？ {#what-does-the-support-team-do}
@@ -48,7 +48,7 @@ GitLab サポートチームは、GitLab.com およびセルフマネージド G
 私たちの目標は、お客様が GitLab を使用する際に最良の結果につながる指針を提供することです。そのため、私たちはドキュメント、製品機能、オープンなバグ/機能リクエストを参照することがよくあります。
 しかし、商業的なオファリングの一つを通じてお客様に最もよくサービスを提供できる場合もあります。
 
-サポートは CIO が率いる [Enterprise Technology &amp; AI (ETA)](/handbook/eta/) 組織の一部であり、サポートエンジニアは追加サービスのアップセル、お客様の購入、またはリード獲得に対してコミッションやボーナスを受け取っていません。
+サポートは CIO が率いる [Enterprise Technology &amp; AI (ETA)](/handbook/eta/) 組織の一部であり、Support Engineer は追加サービスのアップセル、お客様の購入、またはリード獲得に対してコミッションやボーナスを受け取っていません。
 [Professional Services](https://about.gitlab.com/services/)の利用や、異なるティアやオファリングへの移行を推薦する場合は、このセクションへのリンクを推薦に含めることで、混合した動機なしにそうしていることをお客様に確認していただけます。
 
 ### GitLab 内での私たちの役割 {#our-role-within-gitlab}
@@ -60,7 +60,7 @@ GitLab サポートは [Enterprise Technology &amp; AI (ETA)](/handbook/eta/) �
 コストを事前定義した範囲内に抑えつつ、アウトプットを増やすことで効率を高めながら、
 お客様の成功と満足を追求することに主に焦点を当てています。
 
-これはまた、[サポートエンジニアの責務](/handbook/support/support-engineer-responsibilities)に
+これはまた、[Support Engineer の責務](/handbook/support/support-engineer-responsibilities)に
 コードやドキュメントの貢献、および Product Manager との協力が含まれる理由でもあります。
 お客様とのやり取りから得た知識を製品やドキュメントの改善に活かすことで、問題が発生する前に解決します。これにより、サポートのケース負荷が減り、GitLab 組織全体の効率が向上します。例えば、Sales 部門は顧客の問い合わせに答えるためにドキュメントを参照でき、Support や Customer Success に頼る必要が減り、営業クロージングに多くの時間を割けます。
 
@@ -86,7 +86,7 @@ GitLab サポートは、参加者とのシャドーペアリングセッショ�
 
 - お客様とエンジニアの間の **お客様コール**。説明にはチケット ID が含まれます。`https://gitlab.zendesk.com/agent/tickets/<id>` にアクセスしてチケットを確認してください。
 - 1 つ以上のチケットに取り組む 2 人以上のエンジニアの間の **ペアリングセッション**。
-- より経験豊富なサポートエンジニアが知識を共有する **オフィスアワー / ヘルプセッション**。
+- より経験豊富な Support Engineer が知識を共有する **オフィスアワー / ヘルプセッション**。
 - サポートチームのメンバーが特定のトピックについて発表する **トレーニングセッション**
 
 ##### 緊急コールへの参加 {#join-an-emergency-call}
@@ -97,9 +97,9 @@ GitLab サポートは、参加者とのシャドーペアリングセッショ�
 
 各ロールの責務を見ていくと、組織がどのように機能しているかをつかめます。ロールが協力して問題を解決する方法を簡単に明確に考える方法を作りたいと思いました:
 
-- サポートエンジニアは、チケット、マージリクエスト、その他のお客様向けの活動を通じてお客様の問題解決を支援します。
-- マネージャーは、障害を取り除き、お客様向けの活動に参加し、摩擦を減らし、成果と効率を実現するシステムを構築するためにサポートエンジニアと協力することで、サポートエンジニアの問題解決を支援します。
-- シニアリーダーは、チームのパフォーマンスを KPI に対処し、イニシアティブを優先し、グローバルな成果の達成に責任を持つことで、スケーリングの問題を解決・回避します。
+- Support Engineer は、チケット、マージリクエスト、その他のお客様向けの活動を通じてお客様の問題解決を支援します。
+- マネージャーは、障害を取り除き、お客様向けの活動に参加し、摩擦を減らし、成果と効率を実現するシステムを構築するために Support Engineer と協力することで、Support Engineer の問題解決を支援します。
+- シニアリーダーは、KPI に照らしてチームのパフォーマンスに取り組み、イニシアティブを優先し、グローバルな成果の達成に責任を持つことで、スケーリングの問題を解決・回避します。
 - VP of Support は、成長とチームデザインの課題を特定し、エグゼクティブと取締役会への進捗を報告することで、会社全体の問題を解決・回避します。
 
 このシンプルなリストは、異なるロールで期待値を設定し、問題解決を調整するための簡単な方法を提供します。
@@ -133,19 +133,19 @@ KPI と OKR を達成するために、成功を収めるためにバランス�
 [サポートチームエントリページ](https://gitlab.com/gitlab-support-readiness/support-team/-/wikis/Support-team-entry)
 を参照してください。
 
-サポートチームのさまざまな部分に関する情報と情報は、サポートハンドブックの以下のセクションにあります:
+サポートチームの各部門向けの情報や各部門に関する情報は、サポートハンドブックの以下のセクションにあります:
 
-- [/support/engineering](/handbook/support/engineering/)はサポートエンジニア向けのコンテンツです。例: Zendesk ワークフローと技術リソース。
-- [/support/license-and-renewals](/handbook/support/license-and-renewals/)はライセンスと更新のサポートエンジニアとマネージャー向けのコンテンツです。例: [customers.gitlab.com](https://customers.gitlab.com)と Fulfillment Product Team との協力。
-- [/support/managers](/handbook/support/managers/)はサポートマネージャー向けのコンテンツです。例: Issue の管理方法、1:1 の実施方法、リーダーシップ同期情報。
+- [/support/engineering](/handbook/support/engineering/)は Support Engineer 向けのコンテンツです。例: Zendesk ワークフローと技術リソース。
+- [/support/license-and-renewals](/handbook/support/license-and-renewals/)はライセンスと更新の Support Engineer とマネージャー向けのコンテンツです。例: [customers.gitlab.com](https://customers.gitlab.com)と Fulfillment Product Team との協力。
+- [/support/managers](/handbook/support/managers/)は Support Manager 向けのコンテンツです。例: Issue の管理方法、1:1 の実施方法、リーダーシップ同期情報。
 - [/support/readiness](/handbook/support/readiness/)は Support Readiness のランディングページです。例: サポートチームは X に対してどのように準備していますか？
 
 以下によく参照されるページもあります:
 
-- [サポートエンジニアの責務](/handbook/support/support-engineer-responsibilities)
-- [サポートエンジニアの知識エリア](/handbook/support/workflows/knowledge_areas)
-- [サポートエンジニアのキャリアパス](/handbook/support/support-engineer-career-path)
-- [サポートマネージャーの責務](/handbook/support/managers/manager-responsibilities)
+- [Support Engineer の責務](/handbook/support/support-engineer-responsibilities)
+- [Support Engineer の知識エリア](/handbook/support/workflows/knowledge_areas)
+- [Support Engineer のキャリアパス](/handbook/support/support-engineer-career-path)
+- [Support Manager の責務](/handbook/support/managers/manager-responsibilities)
 
 ---
 {{% include "includes/engineering/we-are-also-product-development.md" %}}
@@ -212,10 +212,10 @@ GitLab.com の Issue とマージリクエストでサポートチームメン�
 | [@gitlab-com/support/licensing-subscription](https://gitlab.com/groups/gitlab-com/support/licensing-subscription/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | ライセンスと更新に注力するサポートメンバー |
 | [@gitlab-com/support/cmoc](https://gitlab.com/gitlab-com/support/cmoc) | Communication Manager On-Call ローテーションに参加するサポートメンバー |
 | [@gitlab-com/support/ceoc](https://gitlab.com/gitlab-com/support/ceoc) | Customer Emergencies On-Call ローテーションに参加するサポートメンバー |
-| [@gitlab-com/support/managers](https://gitlab.com/groups/gitlab-com/support/managers/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全サポートマネージャー |
-| [@gitlab-com/support/managers/amer](https://gitlab.com/groups/gitlab-com/support/managers/amer/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 AMER サポートマネージャー |
-| [@gitlab-com/support/managers/apac](https://gitlab.com/groups/gitlab-com/support/managers/apac/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 APAC サポートマネージャー |
-| [@gitlab-com/support/managers/emea](https://gitlab.com/groups/gitlab-com/support/managers/emea-managers/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 EMEA サポートマネージャー |
+| [@gitlab-com/support/managers](https://gitlab.com/groups/gitlab-com/support/managers/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 Support Manager |
+| [@gitlab-com/support/managers/amer](https://gitlab.com/groups/gitlab-com/support/managers/amer/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 AMER Support Manager |
+| [@gitlab-com/support/managers/apac](https://gitlab.com/groups/gitlab-com/support/managers/apac/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 APAC Support Manager |
+| [@gitlab-com/support/managers/emea](https://gitlab.com/groups/gitlab-com/support/managers/emea-managers/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 EMEA Support Manager |
 
 #### プロジェクト {#projects}
 
@@ -232,7 +232,7 @@ GitLab.com の Issue とマージリクエストでサポートチームメン�
 
 ##### サポートチームメタ Issue トラッカー {#support-team-meta-issue-tracker}
 
-[サポートメタ Issue トラッカー](https://gitlab.com/gitlab-com/support/support-team-meta/issues)を使用して、サポートに関するフィードバックが必要な Issue を追跡・作成します。
+[サポートメタ Issue トラッカー](https://gitlab.com/gitlab-com/support/support-team-meta/issues)を使用して、Issue を追跡し、サポートに関するフィードバックが必要になる可能性がある Issue を作成します。
 
 サポートに関連するプロジェクトやタスクに取り組みたい場合は、Issue を自由に作成し、外部の Issue やプロジェクトへのリンクを追加してください。これにより:
 
@@ -264,13 +264,13 @@ GitLab、私たちの FOSS プロジェクト、または GitLab コンポーネ
 | チャンネル | 目的 |
 | ------- | ------- |
 | [#support_team-chat](https://gitlab.slack.com/archives/CCBJYEWAW) | 雑談、チャット、ステータス更新のためのサポートチームラウンジ |
-| [#support_gitlab-com](https://gitlab.slack.com/archives/C4XFU81LG) | GitLab.com チケットとお客様の Issue を議論 |
-| [#support_self-managed](https://gitlab.slack.com/archives/C4Y5DRKLK) | セルフマネージドチケットとお客様の Issue を議論 |
-| [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) | GitLab Dedicated チケットとお客様の Issue を議論 |
-| [#support_licensing-subscription](https://gitlab.slack.com/archives/C018C623KBJ) | ライセンスと更新のチケットとお客様の Issue を議論 |
+| [#support_gitlab-com](https://gitlab.slack.com/archives/C4XFU81LG) | GitLab.com チケットとお客様の問題を議論 |
+| [#support_self-managed](https://gitlab.slack.com/archives/C4Y5DRKLK) | セルフマネージドチケットとお客様の問題を議論 |
+| [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) | GitLab Dedicated チケットとお客様の問題を議論 |
+| [#support_licensing-subscription](https://gitlab.slack.com/archives/C018C623KBJ) | ライセンスと更新のチケットとお客様の問題を議論 |
 | [#support_ticket-attention-requests](https://gitlab.slack.com/archives/CBVAE1L48) | Support Manager On-Call とエスカレーションされたチケットを議論 |
 | [#customer_support_systems](https://gitlab.slack.com/archives/C018ZGZAMPD) | サポートの運用方法に関連する運用項目を議論 |
-| [#support_leadership](https://gitlab.slack.com/archives/C01F9S37AKT) | サポートマネージャーの注意が必要なサポートチームの内部事項を議論 |
+| [#support_leadership](https://gitlab.slack.com/archives/C01F9S37AKT) | Support Manager の注意が必要なサポートチームの内部事項を議論 |
 | [#recruiting-support-engineering](https://gitlab.slack.com/archives/CE9S6JW4S) | サポートチームの採用関連事項を議論 |
 | [#spt_amer_global](https://gitlab.enterprise.slack.com/archives/C07EYM9NNE4) | AMER のグローバル SE に固有のトピックを議論 |
 | [#spt_emea](https://gitlab.enterprise.slack.com/archives/C07N48KHCR0) | EMEA のグローバル SE に固有のトピックを議論 |
@@ -318,9 +318,9 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 | `@support-team-apac` | サポートチーム APAC |
 | `@support-team-emea` | サポートチーム EMEA |
 | `@support-team-americas` | サポートチーム AMER |
-| `@supportmanagers` | サポートマネージャー |
-| `@support-managers-apac` | サポートマネージャー APAC |
-| `@support-managers-emea` | サポートマネージャー EMEA |
+| `@supportmanagers` | Support Manager |
+| `@support-managers-apac` | Support Manager APAC |
+| `@support-managers-emea` | Support Manager EMEA |
 
 これらのグループの 1 つ以上に追加される必要がある場合は、
 [アクセスリクエストプロジェクト](https://gitlab.com/gitlab-com/access-requests)に Issue を開いてください。
@@ -377,7 +377,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 
 #### サポートリーダーシップミーティング {#support-leadership-meetings}
 
-サポートマネジメントチームは定期的に会合します。これらのコールの詳細は [サポートマネージャーページ](/handbook/support/managers)にあります。
+サポートマネジメントチームは定期的に会合します。これらのコールの詳細は [Support Manager ページ](/handbook/support/managers)にあります。
 
 #### サポート月次ビジネスレビュー (MBR) {#support-monthly-business-review-mbr}
 
@@ -393,13 +393,13 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 | 火曜日 | AMER | チームミーティング | |
 | 木曜日 | EMEA | チームミーティング | |
 
-#### シニア サポートエンジニア オフィスアワー {#senior-support-engineer-office-hours}
+#### Senior Support Engineer オフィスアワー {#senior-support-engineer-office-hours}
 
-シニアおよびスタッフのサポートエンジニアはオフィスアワーを開催することが奨励されています。これらのオフィスアワーはメンタリングによってチームを強化することを目的としています。オフィスアワーをスケジュールするかどうか、また頻度は各シニア/スタッフ サポートエンジニア次第です。オフィスアワーを表示して自分自身を招待するには「GitLab サポート」チームカレンダーを参照してください。
+Senior Support Engineer と Staff Support Engineer はオフィスアワーを開催することが奨励されています。これらのオフィスアワーはメンタリングによってチームを強化することを目的としています。オフィスアワーをスケジュールするかどうか、また頻度は各 Senior/Staff Support Engineer 次第です。オフィスアワーを表示して自分自身を招待するには「GitLab サポート」チームカレンダーを参照してください。
 
 ホストはカレンダーイベントの説明に何をカバーするかを含め、オプションで追跡するためのドキュメントを含めることをお勧めします。
 
-シニア/スタッフ サポートエンジニアのオフィスアワーで期待できることのいくつかのアイデア:
+Senior/Staff Support Engineer のオフィスアワーで期待できることのいくつかのアイデア:
 
 - 困難なチケットのトラブルシューティング
 - GitLab の機能（Geo、CI、SAST、k8s 等）や新しいワークフローの試用
@@ -444,7 +444,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 
 SWIR Issue は、GitLab プロジェクトで独自のタグやラベルを持つこともできます。これらは特定のフォーカスエリア（L&R、SaaS など）をハイライトするために使用されます。ラベルは Issue のみに使用されており、ダイジェスト Issue や Google Docs には表示されません。
 
-`Manager Attention` という 1 つのラベルは、サポートマネージャーが特に認識しておくべきポリシーの変更やその他のトピックに使用されます。`Manager Attention` ラベルは
+`Manager Attention` という 1 つのラベルは、Support Manager が特に認識しておくべきポリシーの変更やその他のトピックに使用されます。`Manager Attention` ラベルは
 [こちら](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/labels?search=manager+attention)]
 で見つけて購読することができます。
 
@@ -465,7 +465,7 @@ Support Stable Counterpart ロールは、製品チームまたは非製品チ�
 
 ### マージリクエストを使用したサポートチームドキュメントの更新 {#updating-support-team-documents-using-merge-requests}
 
-サポートチームは、ハンドブックやプロジェクト Issue テンプレートなど、複数の場所に私たちの組織的な知識、プロセス、ワークフローを記録しています。そのようなドキュメントを更新する際は、他の場所で承認を受けていた場合でも、マージリクエストに承認の可視的なアーティファクトを持つようにしてください。これにより、監視や説明責任なしに変更が行われているという印象を避けることができます。
+サポートチームは、ハンドブックやプロジェクト Issue テンプレートなど、複数の場所に私たちの組織的な知識、プロセス、ワークフローを記録しています。そのようなドキュメントを更新する際は、他の場所で承認を受けていた場合でも、マージする前に、マージリクエストに承認を確認できる記録を残してください。これにより、監視や説明責任なしに変更が行われているという印象を避けることができます。
 
 承認のアーティファクトには以下が含まれます:
 
@@ -534,7 +534,7 @@ Support Stable Counterpart ロールは、製品チームまたは非製品チ�
 
 ### サポートポッド {#support-pods}
 
-GitLab サポートでは、`Support Pods` を使用して、サポートエンジニアが
+GitLab サポートでは、`Support Pods` を使用して、Support Engineer が
 仕事をする際の組織化をしています。各サポートポッドは、特定の製品エリアに興味のあるエンジニアのクロスリージョン・シングルスキルグループです。エンジニア主導です。サポートポッドに参加または開始するには、以下をご覧ください。
 
 *[サポートポッドハンドブックページ](/handbook/support/support-pods)と [サポートポッドとの作業ワークフローページ](/handbook/support/workflows/working-with-pods)を参照してください。*
@@ -560,24 +560,24 @@ GitLab サポートでは、`Support Pods` を使用して、サポートエン�
 
 **ボード上のアイテムの追加と管理:**
 
-サポートマネージャーは定期的にボードを確認して、アイテムを前進させます。
+Support Manager は定期的にボードを確認して、アイテムを前進させます。
 
 1. チームはボードにない Issue に「いいね」絵文字を付けることで **投票** し、[人気の Issue](https://gitlab.com/gitlab-com/support/support-team-meta/issues?sort=popularity&state=opened)を確認できます。
-1. サポートマネージャーは人気の Issue を確認し、スペースがある場合はボードに追加します。
-1. サポートマネージャーは、大きなバックログを防ぐために Issue を **キュレーション** します。不人気または古い Issue を閉じる/マージしてバックログを管理可能に保ちます。
+1. Support Manager は人気の Issue を確認し、スペースがある場合はボードに追加します。
+1. Support Manager は、大きなバックログを防ぐために Issue を **キュレーション** します。不人気または古い Issue を閉じる/マージしてバックログを管理可能に保ちます。
 
 #### サポート Slackbot {#support-slackbot}
 
 [サポート Slackbot（アーカイブ済み）](https://gitlab.com/gitlab-com/support/toolbox/gitlab-support-bot)は廃止されました。
 
-## <i aria-hidden="true" class="fas fa-book fa-fw icon-color font-awesome"></i>サポートリソース {#support-resources}
+## <i aria-hidden="true" class="fas fa-book fa-fw"></i>サポートリソース {#support-resources}
 
 ### ハンドブックリンク {#handbook-links}
 
 - [GitLab チームページ](/handbook/company/team/)
 - [製品カテゴリ](/handbook/product/categories/) - どのチームが何を担当しているかを確認
 - [サポートに関する声明](https://about.gitlab.com/support/statement-of-support/)
-- [サポートマネージャー](/handbook/support/managers/)
+- [Support Manager](/handbook/support/managers/)
 - [サポート採用](/handbook/support/managers/hiring/)
 - [サポートチャンネル](/handbook/support/channels/)
 - [オンコール](/handbook/engineering/on-call/)
@@ -607,7 +607,7 @@ GitLab サポートでは、`Support Pods` を使用して、サポートエン�
   - [ログシステム](https://docs.gitlab.com/administration/logs/)
   - [Rake タスク](https://docs.gitlab.com/administration/raketasks/)
   - [メンテナンス Rake タスク](https://docs.gitlab.com/administration/raketasks/maintenance/)
-  - [GitLab サポートエンジニア向けデバッグリソース](https://docs.gitlab.com/administration/#support-team-docs)
+  - [GitLab Support Engineer 向けデバッグリソース](https://docs.gitlab.com/administration/#support-team-docs)
   - [GitLab Rails コンソールチートシート](https://docs.gitlab.com/administration/troubleshooting/gitlab_rails_cheat_sheet/)
 - GitLab の機能
   - [GitLab Runner のインストール](https://docs.gitlab.com/runner/install/)

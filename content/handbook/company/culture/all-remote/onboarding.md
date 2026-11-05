@@ -1,16 +1,16 @@
 ---
 title: "リモート新入社員のための完全オンボーディングガイド"
-description: "リモートワーク環境で新入社員を成功させるための完全なオンボーディングガイドとプロセス確立のポイントを解説します。"
+description: "リモートワークの新入社員のオンボーディングと、初日からの成功を支えるプロセスの確立についての完全ガイドです。詳しくはこちらをご覧ください！"
 twitter_image: "/images/opengraph/all-remote.jpg"
 twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/onboarding/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T07:37:58+00:00"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+translated_at: "2026-11-05T15:35:44.444117+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T13:17:02-05:00"
 ---
 
 ![GitLab のカスタマーパス](/images/all-remote/gitlab-customer-path.jpg)
@@ -42,7 +42,7 @@ GitLab のオールリモート[オンボーディングプロセス](/handbook/
 
 ### リモートオンボーディングの準備をする方法 {#how-to-prepare-for-remote-onboarding}
 
-新しいリモートチームメンバーのための社会的なつながりを作り始める一つの方法は、[チャットチャンネルに追加する](/handbook/people-group/general-onboarding/#slack-channel-support-for-new-team-members)ことです。GitLab の `#new_team_members` Slack チャンネルは、写真や自己紹介・興味について投稿できる場所です。
+新しいリモートチームメンバーのための社会的なつながりを作り始める一つの方法は、[チャットチャンネルに追加する](/handbook/people-group/general-onboarding/#slack-channel-support-for-new-team-members)ことです。GitLab の `#team-member-updates` Slack チャンネルでは、私たちは新しいチームメンバーを歓迎し、勤続記念日、昇進、異動などの全社的な更新情報を共有します。
 
 ### 組織的オンボーディング {#organizational-onboarding}
 
@@ -97,7 +97,7 @@ GitLab ではドッグフーディングを実践しています。会社全体�
 
 1. **オンボーディングバディを割り当てる。** この方は新入社員の親しみやすい窓口となり、他の人を紹介することもできます。オンボーディングバディは他のチームメンバーとの関係構築の期待値を設定することが多いため、新入社員とオンボーディングバディはビデオ通話、Slack でのチェックイン、コーヒーチャットなど、様々な方法でコミュニケーションを取るべきです。GitLab では、この役割を真剣に受け止め、[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies.md)専用のハンドブックページを設けています。
 
-1. **インフォーマルなコミュニケーションを正式に設計する。** オールリモートの環境では、インフォーマルなコミュニケーションを正式に取り上げる必要があります。リーダーはインフォーマルなコミュニケーションを組織化し、新入社員が同僚と知り合うための構造化された機会を提供すべきです。私たちはオンボーディングテンプレートに、[コーヒーチャットのスケジューリング](informal-communication/#scheduling-a-coffee-chat)、`#new_team_members` Slack チャンネルでの自己紹介、ビデオ通話への参加などの交流タスクを組み込んでいます。
+1. **インフォーマルなコミュニケーションを正式に設計する。** オールリモートの環境では、インフォーマルなコミュニケーションを正式に取り上げる必要があります。リーダーはインフォーマルなコミュニケーションを組織化し、新入社員が同僚と知り合うための構造化された機会を提供すべきです。私たちはオンボーディングテンプレートに、[コーヒーチャットのスケジューリング](informal-communication/#scheduling-a-coffee-chat)、`#team-member-updates` Slack チャンネルでの自己紹介、ビデオ通話への参加などの交流タスクを組み込んでいます。
 
 1. **個人的なつながりを作る。** 私たちは社会的な生き物であり、[研究](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2443551)は個人的なつながりの価値を示しています。100% リモートの会社を運営することには多くの[メリット](remote-benefits/)がありますが、オプションであっても[対面の要素への参加](https://www.fastcompany.com/3051518/the-science-of-when-you-need-in-person-communication)に対してオープンでいましょう。
 
@@ -119,7 +119,7 @@ GitLab ではドッグフーディングを実践しています。会社全体�
 1. 不安の軽減
 1. 期待値の明確化
 
-オンボーディングは新入社員と会社の長期的な成功への投資です。研究によると、[従業員の 87% はエンゲージメントを感じると会社を辞める可能性が低い](https://totalteambuilding.com.au/the-positive-impact-of-team-building/)ことが示されています。オンボーディングに投資する企業は、新入社員から[54% 多い生産性](https://www.myshortlister.com/insights/employee-onboarding-statistics)を得られることが報告されています。
+オンボーディングは新入社員と会社の長期的な成功への投資です。研究によると、[チームメンバーの 87% はエンゲージメントを感じると会社を辞める可能性が低い](https://totalteambuilding.com.au/the-positive-impact-of-team-building/)ことが示されています。オンボーディングに投資する企業は、新入社員から[54% 多い生産性](https://www.myshortlister.com/insights/employee-onboarding-statistics)を得られることが報告されています。
 
 [オールリモートの組織で採用する](/handbook/company/culture/all-remote/)場合、まとまりのあるオンボーディングプロセスは特に重要です。なぜなら、新入社員が仕事をするために必要な情報を提供するだけでなく、リモートで考えることができるよう支援する必要があるからです。リモートオンボーディングは[ドキュメント](/handbook/company/culture/all-remote/)、新入社員のニーズを先読みすること、そしてフィードバックに基づいてプロセスを継続的に改善することへの献身に大きく依存しています。
 
@@ -165,7 +165,7 @@ GitLab では、ハンドブックを[すべての人に公開](/handbook)する
 
 1. **すぐにチェックインする。** 新しい情報を大量に受け取り、保持することは、特に入社初日は圧倒されることがあります。
 1. **役立つヒントを提案する。** きっといくつかのコツやテクニック、ハックを発見しているはずです——積極的にシェアしましょう！
-1. **自己紹介を促す。** 新入社員に Slack チャンネル `#new_team_members` や関連チームチャンネルで自己紹介するよう促してください。個人的な情報を共有し、写真を 1〜2 枚添付するよう勧めましょう！
+1. **自己紹介を促す。** 新入社員に Slack チャンネル `#team-member-updates` や関連チームチャンネルで自己紹介するよう促してください。個人的な情報を共有し、写真を 1〜2 枚添付するよう勧めましょう！
 1. **他の新入社員との交流を促す。** たとえば、新入社員が他の新入社員とグループ通話を設定し、新しい個性や[会社の部門](/handbook/company/structure/)について学びながら一緒にオンボーディングを進めることができます。
 1. **同僚と繋がるためのツールを紹介する。** Slack などのチャットツールはよく知られているように見えますが、使ったことがない人もいます——たとえ使ったことがあっても、あなたのネットワークがどう構成されているかを知らないかもしれません。
 1. **助けが必要な場所を聞き、専門家に繋げる。** 担当チームメンバーが特定の分野でさらなるサポートを求めた場合、その分野の専門家に繋げてください。

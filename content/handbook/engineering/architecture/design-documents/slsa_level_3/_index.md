@@ -2,30 +2,29 @@
 title: "SLSA レベル 3 出所証明"
 status: ongoing
 creation-date: "2024-12-18"
-authors: [ "@nrosandich" ]
+authors: [ "@nrosandich", "@sroque-worcel", "@shameed3" ]
 coach: "@darbyfrey"
 approvers: [  ]
 owning-stage: "~devops::software supply chain security"
 participating-stages: ["~group::runner", "~devops::verify"]
 toc_hide: true
 no_list: true
-upstream_path: /handbook/engineering/architecture/design-documents/slsa_level_3/
-upstream_sha: 6421bb05e502917cfdfa263c81ae8fbbc41ed52b
-translated_at: "2026-06-22T07:04:45+09:00"
+upstream_path: "/handbook/engineering/architecture/design-documents/slsa_level_3/"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+lastmod: "2026-11-05T07:24:15+13:00"
+translated_at: "2026-11-05T15:15:16.188555+00:00"
 translator: codex
 stale: false
-lastmod: "2026-06-22T09:27:06+12:00"
 ---
-
 
 {{< engineering/design-document-header >}}
 
 
-## 概要
+## 概要 {#summary}
 
 このドキュメントは、GitLab CI/CD パイプライン内で SLSA レベル 3 コンプライアンスを実装するための技術的ビジョン・原則・主要なアーキテクチャ上の決定を概説します。このソリューションは、アーティファクトの出所を生成・署名・検証するための再利用可能でモジュラー・セキュアな方法を提供し、パイプラインのアイデンティティとビルドインフラを強化します。
 
-## 提案
+## 提案 {#proposal}
 
 モジュラーで再利用可能なコンポーネントを使用して、GitLab CI/CD パイプライン全体で SLSA レベル 3 コンプライアンスの段階的な実装を提案します。各フェーズは重要なステップに対処します。
 
@@ -36,19 +35,19 @@ lastmod: "2026-06-22T09:27:06+12:00"
 
 この段階的なアプローチにより、MVP を早期に提供でき、時間をかけて段階的なセキュリティとコンプライアンスの強化が追加されます。
 
-## 目標
+## 目標 {#goals}
 
 - 既存のワークフローへの混乱を最小限に抑えながら、公開プロジェクトが [SLSA Build Level 3](https://slsa.dev/spec/v1.1/levels#build-l3) コンプライアンス要件を達成できるようにする。
 - トレーサビリティのためにパイプライン変数・コミット ID などの GitLab 固有のプラットフォームデータを出所に埋め込む。
 - 署名キーをビルド環境から隔離し、GitLab の Trusted Control Plane による外部署名をサポートする。
 
-## 非目標
+## 非目標 {#non-goals}
 
 - すべての可能なプログラミングエコシステムの依存関係を収集する（まず主要なエコシステムに焦点を当てる）。
 - GitLab の既存のアーティファクトストレージと配布メカニズムの置き換え。
 - すべてのプロジェクトタイプのサポート（最初は公開プロジェクトに焦点を当てる）。
 
-## 用語集
+## 用語集 {#terminologyglossary}
 
 - [SLSA: Supply-chain Levels for Software Artifacts](https://slsa.dev/spec/v1.1/)、サプライチェーンセキュリティを改善するためのフレームワーク。
 - 出所述語（Provenance predicate）: アーティファクトがソースコード・依存関係・環境を含めてどのようにビルドされたかを説明するメタデータ。
@@ -60,7 +59,7 @@ lastmod: "2026-06-22T09:27:06+12:00"
 - VSA: Verification Summary Attestation（検証サマリー証明）、アーティファクトが特定の要件を満たすことが検証されたことを示す証明。
 - GitLab Rails バックエンド: セキュリティクリティカルな操作のための信頼された環境を提供する GitLab Rails バックエンドで、ビルド環境とは別。
 
-## 前提条件
+## 前提条件 {#assumptions}
 
 - 出所生成: Sigstore Cosign（CLI、クライアント、またはポート）を使用して出所証明を生成する。
 - OIDC ベースのキーレス署名: OIDC ベースのキーレス署名のために Sigstore Fulcio を使用する。
@@ -69,22 +68,22 @@ lastmod: "2026-06-22T09:27:06+12:00"
   - GitLab Runner ジョブでの OIDC ベースの短命の認証情報によるパイプライン内署名。
   - GitLab の Trusted Control Plane（GitLab Rails）によるパイプライン外署名。
 
-## 設計の詳細
+## 設計の詳細 {#design-details}
 
-### 高レベルアーキテクチャ
+### 高レベルアーキテクチャ {#high-level-architecture}
 
 以下のシーケンスダイアグラムは、署名と検証の両方のワークフロー中に行われるインタラクションを示しています。また、以下のエリアにグループ化されたさまざまなシステムも示しています。
 
-- `Build Environment` は GitLab Runner インフラであり、GitLab SaaS・Dedicated・セルフマネージドのいずれかです。
+- `Build Environment` は GitLab Runner インフラであり、GitLab SaaS・Dedicated・Self-Managed のいずれかです。
 - `Trusted Control Plane` は GitLab バックエンドで、Sidekiq・DB・オブジェクトストレージを含みます。
 - `Sigstore Infrastructure` は Fulcio や Rekor などの Sigstore サービスで、Public Good インスタンスまたはセルフホスト型です。
 - `Verification Environment` は検証を行う任意のシステムです。外部のビルドシステム・別の GitLab CI ジョブ・ユーザーの個人コンピューターのいずれかです。
 
-#### 全体アーキテクチャ
+#### 全体アーキテクチャ {#overall-architecture}
 
 <img src="/images/engineering/architecture/design-documents/slsa_level_3/arch.png" alt="">
 
-#### 署名ワークフロー
+#### 署名ワークフロー {#signing-workflow}
 
 ```mermaid
 sequenceDiagram
@@ -118,7 +117,7 @@ sequenceDiagram
   Sidekiq ->> File Storage: Persist Attestation
 ```
 
-#### 検証ワークフロー
+#### 検証ワークフロー {#verification-workflow}
 
 ```mermaid
 sequenceDiagram
@@ -145,55 +144,55 @@ sequenceDiagram
   Verification System ->> Verification System: Verify Attestation
 ```
 
-#### フェーズ 1: Sigstore を使用したパイプライン内の出所生成と検証
+#### フェーズ 1: Sigstore を使用したパイプライン内の出所生成と検証 {#phase-1-in-pipeline-provenance-generation-and-verification-using-sigstore}
 
 - Sigstore ツール（cosign）を使用して出所証明を生成する。
 - 安全で短命の認証情報のために GitLab CI の OIDC トークンを活用する。
 - 出所証明を検証し、Verification Summary Attestations（VSA）を生成する。
 - パイプラインに簡単に含められる再利用可能な GitLab CI コンポーネントを構築する。
 
-#### フェーズ 2: コントロールプレーンでの出所ステートメント生成
+#### フェーズ 2: コントロールプレーンでの出所ステートメント生成 {#phase-2-generate-provenance-statement-in-control-plane}
 
 - 出所ステートメントの生成を GitLab Rails バックエンドに移行する。
 - 出所のすべてのフィールドを Trusted Control Plane で生成または検証する。
 - 偽造不可能な出所ステートメントを生成する。
 
-#### フェーズ 3: パイプライン外署名
+#### フェーズ 3: パイプライン外署名 {#phase-3-out-of-pipeline-signing}
 
 - CI/CD パイプラインから GitLab Rails バックエンドへ署名操作を移行する。
 - ビルド環境から署名操作を隔離することでセキュリティを強化する。
 - 署名プロセスの集中管理を提供する。
 - ビルドと署名の信頼境界を明確に分離する。
 
-#### フェーズ 4: 証明の公開と検証
+#### フェーズ 4: 証明の公開と検証 {#phase-4-attestation-publishing--verification}
 
 - 証明 API を通じて証明を発見可能にする。
 - 証明 API と UI で証明を発見可能にする。
 - 外部パッケージレジストリで Trusted Publisher になる。
 - `glab` CLI に検証機能を追加する。
 
-#### フェーズ 5: OCI コンテナイメージの証明
+#### フェーズ 5: OCI コンテナイメージの証明 {#phase-5-attestation-of-oci-container-images}
 
 - コントロールプレーンで OCI コンテナイメージを証明する機能を追加する。
 - `glab` でこれらのイメージの検証を可能にする。
 - インテグレーターの使いやすさを確保するためのドキュメントを改善する。
 - 特にエラー報告とファイルサイズ制限に関して、前のフェーズからのバグとフィードバックに対処する。
 
-#### フェーズ 6: プライベートリポジトリ、GitLab self-managed、dedicated での証明を可能にする
+#### フェーズ 6: プライベートリポジトリ、GitLab self-managed、dedicated での証明を可能にする {#phase-6-allow-for-attestation-in-private-repositories-gitlab-self-managed-and-dedicated}
 
 - PostgreSQL に保存された CA を通じて、プライベートリポジトリ、self-managed、dedicated とのインテグレーションを可能にする。
 - UX の改善を実装する。
 
-#### フォローアップ作業: 拡張データ収集
+#### フォローアップ作業: 拡張データ収集 {#follow-up-work-enhanced-data-collection}
 
 - 詳細なビルドメタデータを収集するツールを統合する（Go の go mod graph、Java の Maven 依存関係ツリーなど）。
-- CI/CD ビルドジョブがリクエストした解決済みの依存関係を追跡するために GitLab の仮想レジストリ（旧 Dependency Proxy）を使用する。
+- CI/CD ビルドジョブがリクエストした解決済みの依存関係を追跡するために GitLab の Virtual Registry（旧 Dependency Proxy）を使用する。
 - 拡張されたメタデータを含むように出所構造を更新する。
 - プライベートプロジェクトとセルフマネージドインスタンスのサポートを拡張する。
 
-### 実装の詳細
+### 実装の詳細 {#implementation-details}
 
-#### Sigstore と GitLab OIDC インテグレーション
+#### Sigstore と GitLab OIDC インテグレーション {#sigstore-and-gitlab-oidc-integration}
 
 - Sigstore の使用方法:
   - Sigstore ツール、特に cosign が出所の署名と検証のために活用されます。
@@ -208,7 +207,7 @@ sequenceDiagram
   - 既存の ID トークン機能を使用して GitLab OIDC サポートを有効にする。
   - CI/CD の環境変数を使用してトークンと必要なメタデータを公開する。
 
-#### GitLab CI コンポーネント
+#### GitLab CI コンポーネント {#gitlab-ci-components}
 
 <details>
 <summary>出所署名コンポーネント</summary>
@@ -494,7 +493,7 @@ verify_provenance:
 ```
 </details>
 
-#### パイプラインワークフローの説明
+#### パイプラインワークフローの説明 {#pipeline-workflow-explanation}
 
 - ビルドアーティファクトステージ（build_artifact）:
   - アーティファクト（バイナリ、コンテナイメージなど）をビルドします。
@@ -509,7 +508,7 @@ verify_provenance:
 - アーティファクト公開ステージ（publish_artifact）:
   - アーティファクトをレジストリやリポジトリに公開します。
   - 検証での使用のために公開されたアーティファクトの URL をキャプチャします。
-  - このステージはビルド/署名と検証を分離し、本当の懸念事項の分離を確保します。
+  - このステージはビルド/署名と検証を分離し、真の関心の分離を確保します。
 - 出所検証ステージ（verify_provenance）:
   - provenance-verifier コンポーネントを使用して以下を実行します:
     - 公開されたアーティファクトを URL からダウンロードする。
@@ -521,7 +520,7 @@ verify_provenance:
     - VSA をジョブアーティファクトとしてアップロードする。
     - 検証が失敗した場合はジョブを失敗させますが、パイプラインの続行は許可します。
 
-### セキュリティの考慮事項
+### セキュリティの考慮事項 {#security-considerations}
 
 - エフェメラル OIDC トークン:
   - ID トークンは短命で現在のジョブにスコープされています。
@@ -536,17 +535,17 @@ verify_provenance:
   - サプライチェーン攻撃を防ぐために Sigstore ツール（cosign）の特定のバージョンをピン留めします。
 - CI 変数:
   - CI 変数は署名済み出所ファイルに含まれます。ただし、`Masked` または `Masked and hidden` 変数は値ではなくキーのみが保存されるという Visibility 設定に従います。
-- 懸念事項の分離:
+- 関心の分離:
   - 出所の生成と検証の分離により、検証が真に独立していることが保証されます。
   - VSA は検証コンポーネントによって生成され、明確な信頼の連鎖を提供します。
 
-### コンポーネントのメンテナンスとスケーラビリティ
+### コンポーネントのメンテナンスとスケーラビリティ {#component-maintenance-and-scalability}
 
 - チームが安定バージョンを取得できるよう、バージョン管理された Git リポジトリで GitLab CI コンポーネントを公開します。
 - 採用のための明確なドキュメントと例を提供します。
 - 後のフェーズで追加のメタデータ収集と署名の強化を含むようにコンポーネントを拡張します。
 
-### 決定事項
+### 決定事項 {#decisions}
 
 - [001: 検証コンポーネント](decisions/001_verification_component.md) - 専用の CI/CD コンポーネントで SLSA 出所証明を検証する。
 - [002: 出所生成場所](decisions/002_provenance_generation_location.md) - GitLab Rails バックエンドで SLSA 出所ステートメントを生成する。
@@ -555,3 +554,4 @@ verify_provenance:
 - [005: PublishProvenanceService での SHA-256 計算の実行](decisions/005_perform_sha256_in_service.md) - PublishProvenanceService 内でアーティファクトの SHA-256 ハッシュ計算を実行する。
 - [006: OCI レジストリでの SBOM と出所を使った署名](decisions/006_signing_with_sbom_and_provenance_in_oci.md) - OCI イメージの出所証明と SBOM 署名。
 - [007: プライベートリポジトリ、dedicated、self-managed インスタンスの証明](decisions/007_attestations_private_dedicated_self_hosted.md) - パブリック Sigstore インフラストラクチャを使用できない状況でソフトウェア証明を実現できる仕組み。
+- [008: LOCAL_CA 証明への署名](decisions/008_signing_local_ca_attestations.md) - `LOCAL_CA` 証明への署名に使用するリーフ証明書

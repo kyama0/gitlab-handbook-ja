@@ -1,36 +1,37 @@
 ---
 title: Commercial Sales
 department: >-
-  GitLab の Commercial Sales 部門は、SMB および Mid-Market のお客様が GitLab と共に歩む全ジャーニーを通じて最大の価値を提供することに注力しています
+  The Commercial Sales department at GitLab focuses on delivering maximum value
+  to SMB and Mid-Market customers throughout their entire journey with GitLab
 upstream_path: /handbook/sales/commercial/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:11:15.190926+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-## Commercial Sales ハンドブックへようこそ
+## Commercial Sales ハンドブックへようこそ {#welcome-to-the-commercial-sales-handbook}
 
 Commercial Sales 部門は、[GitLab Sales](/handbook/sales/)ディビジョン全体の一部です。私たちは、[SMB および Mid-Market](/handbook/sales/field-operations/gtm-resources/)のお客様が GitLab と共に歩むジャーニーを通じて、最大の価値を提供することに注力しています。
 
-## <i class="fas fa-users fa-fw icon-color font-awesome"></i>Commercial チームのグループ
+## <i class="fas fa-users fa-fw"></i>Commercial チームのグループ {#commercial-team-groups}
 
 - SMB Account Executives
 - Mid Market Account Executives
 - Area Sales Managers
 
-## 新入社員としてのスタート
+## 新入社員としてのスタート {#getting-started-as-a-new-hire}
 
 [Commercial Sales オンボーディングページ](/handbook/sales/commercial/enablement/)を必ずお読みください。
 
-### 素早くオンボードするためのトップヒント
+### 素早くオンボードするためのトップヒント {#top-tips-to-onboard-quicker}
 
 1. ご自身のリージョン向けの関連する SalesForce ダッシュボードをブックマークしてください。これは成功に不可欠です。初めて参加するときにマネージャーがリンクを共有します。
 1. Commercial Sales で使用される[クローズ日の慣例](/handbook/sales/commercial/#close-date-conventions)に慣れてください。
 1. [Required 7](/handbook/sales/commercial/#required-7)を完全に理解してください。必要に応じて、チームメイトやマネージャーがこの理解を喜んでサポートします。
 1. お客様が製品について何を考えているかを把握するため、GitLab のレビューに目を通してください。出発点として良い 2 つの場所は[Softwareadvice.com](https://www.softwareadvice.com/project-management/gitlab-profile/reviews/)と[Gartner Reviews](https://www.gartner.com/en/documents/4416199)です。
-1. 動画の視聴はオンボーディングの中心です。YouTube や Chorus の動画を 1.5 倍または 1.75 倍速で視聴することで、効率的に進められます。情報は保持しつつ、より短時間で済ませられます。Settings ウィジェット > 再生速度に移動してください。
+1. 動画の視聴はオンボーディングの中心です。YouTube や Chorus の動画を 1.5 倍または 1.75 倍速で視聴することで、効率的に進められます。情報は保持しつつ、より短時間で済ませられます。Settings ウィジェット > Playback speed に移動してください。
 1. 入社直後は、Slack で検索することが有用な情報を見つけるのに最適な方法です。これは会社で質問したり情報をアナウンスしたりするための主要な方法です。情報源として特に良いチャネル:
 [#questions](https://gitlab.slack.com/archives/C0AR2KW4B)
 [#sales](https://gitlab.slack.com/archives/C02NE5PQM)
@@ -43,7 +44,7 @@ Commercial Sales 部門は、[GitLab Sales](/handbook/sales/)ディビジョン�
 1. このページにあなた自身のヒントを追加して、次の新人にとっての助けにしましょう！
 1. GitLab に慣れ、Issue、マージリクエスト、ハンドブックページを検索できるようになってください。これは、オンボーディングの進捗を大幅にスピードアップします。
 
-### 継続的な学習
+### 継続的な学習 {#continuous-learning}
 
 以下は、GitLab の Commercial Sales チームメンバーが継続的な学習と成長に非常に有用と考えているリソースのリストです。これらの一部のリソースは公開されていないため、必要に応じてチームメイトに相談してアクセスしてください。
 
@@ -56,7 +57,7 @@ Commercial Sales 部門は、[GitLab Sales](/handbook/sales/)ディビジョン�
 - [Sales Training](/handbook/sales/training/)ページ
 - [Commercial Sales Enablement](/handbook/sales/commercial/enablement/)ページ
 
-### イベント
+### イベント {#events}
 
 出張時は、コストと時間の両方の ROI を考慮してください:
 イベントに行くときはまず次のことを考えてください:
@@ -65,51 +66,51 @@ Commercial Sales 部門は、[GitLab Sales](/handbook/sales/)ディビジョン�
 - 食事と宿泊にかかる総額はいくらになりますか？
 - お客様との食事にかかる可能性のある総額はいくらになりますか（食事 x お客様 x 回数）？
 - Salesforce から離れる総ビジネス時間はどれくらいですか？
-- 8 時間: その場合、$に対して 5 倍のリターンが必要です。イベントのパイプラインは約 30%でクローズすることに留意してください
+- 8 時間: その場合、$ に対して 5 倍のリターンが必要です。イベントのパイプラインは約 30% でクローズすることに留意してください
 - 個人の生活時間からどれくらい離れることになりますか？
 
-以上のおおまかな計算を考慮して、イベントに行く前に、十分な Net ARR をドライブ/予約することにコミットする必要があります。
+以上のおおまかな計算を考慮して、イベントに行く前に、そのイベントで十分な Net ARR を創出／受注することにコミットする必要があります。
 注: これは、ミーティングを予約せずに出張承認を得られないという意味ではありません。出張承認を得たら、パイプラインを生成するために人々をイベント/ミーティングに参加させるのは自身の責任であるという意味です。
 
-#### トリップノート
+#### トリップノート {#trip-notes}
 
 GitLab のフィールドイベントに参加する究極の目的は、洞察を得て価値を加えることです。共同創業者の Sid Sijbrandij は、カンファレンスやイベントの重要性について[ここ](https://www.youtube.com/watch?v=qQ0CL3J08lI)で語っています。彼は、GitLab チームの参加の主な目標は、プレゼンテーションへの参加のみではなく、お客様や見込み客とつながることであるべきだと信じています。トリップノートは、このデータを追跡・捕捉するための内部プロセスです。
 
-#### なぜ、いつ?
+#### なぜ、いつ？ {#why-and-when}
 
 トリップノートは、GitLab で働くチームメンバーが会社のために旅行する際は常に、Commercial Sales チーム全員に必須です。個人的な理由で旅行した場合でもトリップノートを共有することは楽しく価値のあることと考えていますが、それは皆さまの裁量に委ねられています。
 
-#### トリップノートを適切に文書化する方法は？
+#### トリップノートを適切に文書化する方法は？ {#how-to-properly-document-your-trip-notes}
 
 ベストプラクティスのプロセスに従い、[トリップノートテンプレート](https://docs.google.com/document/d/1B6EBhrzMhHynDUV6_K2qzuQqZ1jI_DfjCsUviJI_r_k/edit)を、今後の出張準備のフォーマットとして使用してください。
 
-#### トリップノートのベストプラクティス
+#### トリップノートのベストプラクティス {#trip-notes-best-practice}
 
 1. Commercial 出席者は、Google ドキュメントでメモを書き上げます。
 1. メモは Commercial チームレビュー用に GitLab 内部のみ読み取り専用として[Commercial Sales Drive Trip Notes Folder](https://drive.google.com/drive/folders/1e71aL5OP_QlaAHTmMNwAAqIUfc2aD6Dt)に保存してください。
 1. 保存後、commercial_global_all チャンネルでメモへのリンクを Slack で共有し、最近の出張をチームに知らせてください。
 1. 最後に、[ポストトリップフィードバック](/handbook/marketing/events/#post-event)を、会社全体および Field Marketing チームに対し、特定の Event Issue の「Post Event Recap & Feedback」スプレッドシートで直接共有してください。
 
-### Give Back Project
+### Give Back Project {#give-back-project}
 
-#### Give Back Project とは？
+#### Give Back Project とは？ {#what-is-the-give-back-project}
 
-- Give Back Project は、Commercial Sales チームがより良い結果を達成するのを助けるための、自己選択型の機会です。完了時に Commercial Sales チームの 70%以上に採用され、少なくとも月に 1 回使用される有限プロジェクトです。
+- Give Back Project は、Commercial Sales チームがより良い結果を達成するのを助けるための、自己選択型の機会です。完了時に Commercial Sales チームの 70% 以上に採用され、少なくとも月に 1 回使用される有限プロジェクトです。
 - Give Back Project は、すべての新しい Commercial Sales チームメンバーに割り当てられ、オンボーディングプロセスの一部として完了が必須です。
 
-#### Give Back Project がある理由は？
+#### Give Back Project がある理由は？ {#why-is-there-a-give-back-project}
 
 - Give Back Project の目標は、新しいチームメンバーが Commercial Sales チームに即座に貢献できるようにすることです
 - GitLab のコラボレーションと結果のバリューを育みます
 - Give Back Project は、チームメンバーに今日のチームの問題に触れる機会を与え、チームが過去にどのように欠点に対処したかを振り返ることを可能にします
 
-#### Give Back Project を適切に文書化する方法
+#### Give Back Project を適切に文書化する方法 {#how-to-properly-document-a-give-back-project}
 
-- Give Back Project は、[Commercial Sales issue tracker](https://gitlab.com/gitlab-com/sales-team/commercial-sales/issues?label_name%5B%5D=Give+Back+Project)でチームメンバーによって記述・取り組まれます
+- Give Back Project は、[Commercial Sales の Issue トラッカー](https://gitlab.com/gitlab-com/sales-team/commercial-sales/issues?label_name%5B%5D=Give+Back+Project)でチームメンバーによって記述・取り組まれます
 - 繰り返す必要があるもの（カスタマー AMA など）の場合、新しい人がこれを達成する方法の説明と共に、関連するハンドブックエントリが作成されます
 - Give Back Project は有限であるよう設計されていますが、GitLab では常にイテレーションの余地があります。別のチームメンバーが必要に応じてプロジェクトに追加できる方法に関する必要な指示を含めてください
 
-#### Give Back Project の例
+#### Give Back Project の例 {#example-give-back-projects}
 
 **カスタマー AMA:** GitLab チームメンバーが現在のお客様とのミーティングを開催し、GitLab での経験について何でも質問できる機会を提供します
 
@@ -125,9 +126,9 @@ GitLab のフィールドイベントに参加する究極の目的は、洞察�
 
 Give Back Project とチームが取り組んでいる他のオンボーディング課題の完全なリストについては、プライベートリンク[こちら](https://docs.google.com/spreadsheets/d/1_G06Zj8ZWXrfrH75t3BEa8NX3wi6vjQCohFchnPpNUI/edit#gid=0)をクリックしてください。
 
-### Paid Time Off (PTO)と結果
+### 有給休暇（PTO）と結果 {#paid-time-off-pto-and-results}
 
-以下のステップが、Sales にとって休暇プロセスを簡単にし、ビジネスの継続性を維持するのに有用であることを発見しました。これは、会社全体の[Guide to Paid Time Off](/handbook/people-group/time-off-and-absence/time-off-types/)を置き換えるものではなく、[Sick Time Policy](/handbook/people-group/time-off-and-absence/time-off-types/)にプロセスを追加するものでもありません。これはグループ固有に計画された休暇のための自分自身とチームを準備する拡張的なアプローチです。
+以下のステップが、Sales にとって休暇プロセスを簡単にし、ビジネスの継続性を維持するのに有用であることを発見しました。これは、会社全体の[有給休暇ガイド](/handbook/people-group/time-off-and-absence/time-off-types/)を置き換えるものではなく、[病気休暇ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/)にプロセスを追加するものでもありません。これはグループ固有に計画された休暇のための自分自身とチームを準備する拡張的なアプローチです。
 
 - [ ] GitLab チームメンバーガイドの休暇に関する内容に従いマネージャーに通知
 - [ ] 地域チームメンバーにカバレッジを依頼し、計画された休暇を共有
@@ -144,11 +145,11 @@ Give Back Project とチームが取り組んでいる他のオンボーディ�
   - メール、サポートチケットへの返信、Required 7 経由
 - [ ] オプションで、カバーする個人と同期するための時間を復帰日にスケジュール
 
-#### オフィスにいない準備の役割の責任
+#### オフィスにいない準備の役割の責任 {#role-responsibilities-to-prepare-being-out-of-office}
 
 - [ ] 現在クライアントに発行されている見積もりは、カバーする人を cc に含めて docusign で再送信してください。質問がある場合に備えて、カバーする AE をクライアントにメールで紹介してください
-- [ ] [このレポート](https://gitlab.my.salesforce.com/00O4M000004odxl)を実行し、右上の`dates`フィールドを編集して OOO 日付に変更し、「run report」を選択します。OOO 日付にネクストステップが一つも入っていないことを確認し、緊急ではない事項については PTO 前にカバーしてください。これによりバックアップや復帰後の自分に大きな作業負担を残さないようにします。
-  - 緊急のネクストステップがスケジュールされている場合は、休暇前に連絡し、クライアントに OOO であることを伝え、紹介付きのメールでカバーする人またはマネージャーを`cc:`に含めます
+- [ ] [このレポート](https://gitlab.my.salesforce.com/00O4M000004odxl)を実行し、右上の `dates` フィールドを編集して OOO 日付に変更し、「run report」を選択します。OOO 日付にネクストステップが一つも入っていないことを確認し、緊急ではない事項については PTO 前にカバーしてください。これによりバックアップや復帰後の自分に大きな作業負担を残さないようにします。
+  - 緊急のネクストステップがスケジュールされている場合は、休暇前に連絡し、クライアントに OOO であることを伝え、紹介付きのメールでカバーする人またはマネージャーを `cc:` に含めます
   - 緊急性の低いネクストステップが近づいている場合は、休暇前または後に処理すべきか評価し、評価に基づいてネクストステップの日付を編集してください
 - [ ] あなたをカバーする人のメールを含むメール OOO 自動返信を設定してください。あなたが不在の日にマネージャーが利用可能であれば、メールメッセージで他の緊急の対応のためにマネージャーも追加できます
 
@@ -169,27 +170,27 @@ Area Sales Managers は休暇前に検討する追加のステップがありま
 - [ ] 予測を提出
   - [ ] 計画された休暇がガイドに記載された 25 連続日を超える場合、[Sales Operations](https://gitlab.com/gitlab-com/sales-team/field-operations/sales-operations/-/issues)プロジェクトで依頼を提出することで、Clari での予測のための一時的な ASM カバレッジを要請します。
 
-#### チームメンバーのバックアップとしてカバーする役割の責任
+#### チームメンバーのバックアップとしてカバーする役割の責任 {#role-responsibilities-of-covering-for-a-team-member-as-backup}
 
 - 連絡があった場合、不在の AE のお客様には 24 時間以内に応答してください。
 - 不在 AE のチームの Required 7 ダッシュボードに表示される新しい Required 7 アイテムに対処してください。
 - 設定された緊急のお客様コールや BDR/SDR コールを引き受けてください。何らかの理由で対応できない場合は、適切なバックアップが見つかるようマネージャーに伝える必要があります。カレンダー上のお客様や見込み客とのコールは遅らせたり、再スケジュールしたりすべきではありません。
-- 不在 AE がいる間、そのテリトリーのディールに取り組み、クローズしてください。
+- AE が不在の間、その AE のテリトリーのディールに取り組み、クローズしてください。
 
 バックアップ AE に必須ではないこと:
 
-- 特定の AE 役割に関連しないタスクをカバー。たとえば、不在 AE がチームメンバーリソースグループ（TMRG）のメンバーである場合、TMRG ミーティングに出席する必要はありません。
+- 特定の AE 役割に関連しないタスクをカバー。たとえば、不在 AE が Team Member Resource Group（TMRG）のメンバーである場合、TMRG ミーティングに出席する必要はありません。
 - 不在 AE のお客様へのアウトバウンドキャンペーン（もちろんやりたい場合はやってもよいです）。
 - 時間がない場合や複数のチームメンバーをカバーする場合は、バックアップになることに同意する必要はありません。他に助けられる AE がいます。
-- 不在 AE に代わって予測する。必要に応じて彼らの商談を更新するだけにしてください。
+- 不在 AE に代わって予測する。必要に応じて不在の AE の商談を更新するだけにしてください。
 
-## Required 7
+## Required 7 {#required-7}
 
 新しいチームメンバーは[The Required 7](/handbook/sales/commercial/enablement/required7/)に慣れる必要があります。これは、優れた Commercial Sales Account Executive であるために必要な 7 つの戦術的スキルです。
 
 1. [アカウントをランク付けする](/handbook/sales/commercial/#account-ranking) - [動画はこちら](https://youtu.be/M-5OhlYxmFI)
     - すべてのアカウントをランク付けし、なぜそうしたかを説明。将来の効率のためソースを記録。これはあなたの（最近の）ランキングであるべきで、以前のオーナーや前会計年度のランキングではいけません。変更されていない場合は、変更されていない理由を記載してください
-1. SMB は$5k、MM は$10k を超える商談に対して、（デッキの変更を検討する）[カスタムデッキ](https://docs.google.com/presentation/d/1duy8kjEvNiRx8fnCvc6ZnxWwXTM_71phbG3k9rgmU4Q/edit?usp=sharing)を**Amount**（注: Net ARR ではなく Amount）で作成:
+1. SMB は $5k、MM は $10k を超える商談に対して、（デッキの変更を検討する）[カスタムデッキ](https://docs.google.com/presentation/d/1duy8kjEvNiRx8fnCvc6ZnxWwXTM_71phbG3k9rgmU4Q/edit?usp=sharing)を**Amount**（注: Net ARR ではなく Amount）で作成:
     - 次に最良の選択肢に対して GitLab を使用する ROI を計算（これは何もしないこととの比較かもしれません）
     - 今後お客様に提供する 2 つのオプションを提供 - 通常は GitLab のオプション（例: Ultimate または Premium）
     - お客様のためのカスタマイズされたビジョンを実演: 「単一アプリで DevOps をすべて GitLab で行ったらどうなるか？」
@@ -204,7 +205,7 @@ Area Sales Managers は休暇前に検討する追加のステップがありま
     - SMB $5k、MM $10k **Amount** - この Amount 閾値を超えるすべての商談概要フィールド（whys）とクローズプラン
     - SMB $10k、MM $20k **Net ARR** - この Net ARR 閾値を超えるフル Command Plan
     - まだ答えやデータがない場合は、その情報を取得するためのスクリプトとネクストステップで Command Plan フィールドに入力してください
-    - Command Plan の例外: チャネル管理商談ではアクセスがない場合があります - 商談タイトルに`Channel-Managed`と記入してください
+    - Command Plan の例外: チャネル管理商談ではアクセスがない場合があります - 商談タイトルに `Channel-Managed` と記入してください
     - ([トレーニングセッションはこちら](https://youtu.be/zN_0J6syxmM)と[トレーニングデッキはこちら](https://bit.ly/2WNlzbZ))
 1. 商談を[常に最新の状態に保つ](/handbook/sales/commercial/#salesforce-pipeline-activity) [動画](https://youtu.be/o5gm7_5321w)
 
@@ -212,11 +213,11 @@ Area Sales Managers は休暇前に検討する追加のステップがありま
 
 Commercial Sales チームは、Account Object のフィールドを使用してアカウントを階層化する必要があります。これは、新規または拡大の見込み客を探す際に、追跡するアカウントを優先するのに役立ちます。SMB および Mid-Market AE に特有の定義を以下に示します。
 
-#### ランキングのトレーニングと定義
+#### ランキングのトレーニングと定義 {#ranking-training-and-definitions}
 
 [Commercial Sales: Account Ranking Training Clippet](https://youtu.be/M-5OhlYxmFI)
 
-#### アカウントランキング用 SMB Account Executive 定義
+#### アカウントランキング用 SMB Account Executive 定義 {#smb-account-executive-definitions-for-account-ranking}
 
 - Rank 1: 今後 12 か月以内に新規ビジネスまたはアップセルの可能性がある上位 10 アカウント
 - Rank 1.5: タイムラインのない販売機会があるため、見失いたくない将来の機会
@@ -225,27 +226,27 @@ Commercial Sales チームは、Account Object のフィールドを使用して
 - SMB AE は Rank 1 および 1.5 のアカウントオブジェクトに潜在的ユーザーフィールドを記入する必要があります
 - SMB AE はアカウントが Rank 2 または 3 である理由をノートセクションに記入する必要があります
 
-#### アカウントランキング用 Mid-Market Account Executive 定義
+#### アカウントランキング用 Mid-Market Account Executive 定義 {#mid-market-account-executive-definitions-for-account-ranking}
 
 - Rank 1: 今会計年度の Net ARR を最大化するために取り組んでいるアカウント。
 - Rank 1.5: Rank 2 のうち、将来の Rank 1 になりそうな最良のサブセット。
 - Rank 2: 成長させようとしているアカウントで、少なくとも月に 1 回は対話。
 - Rank 3: 月次で GitLab および DevOps について情報提供を続けるアカウント。
 
-### クローズ日の慣例
+### クローズ日の慣例 {#close-date-conventions}
 
 <span class="colour" style="color: rgb(0, 0, 0);">まず、商談レベルまでの予測は、動機や願望ではなく正確性のためのルーチンな演習です。毎週水曜日、地域時間の業務終了時刻（午後 5 時）までに、Clari で 5 つの値を更新することが必須です。これらは Renewal Loss Best Case、Renewal Loss Best Case、Gross Net ARR Best Case、Gross Net ARR Commit、Net 50/50 です。この時、パイプラインの清潔さを再確認し、ここに記載されているクローズ日の慣例に常に従う必要があります。</span>
 
 1. <span class="colour" style="color:rgb(0, 0, 0)">クローズ日は、最もクローズする可能性が高いと考える月であるべきです（以下に記載される 1 つの例外を除く）。</span>
-1. <span class="colour" style="color:rgb(0, 0, 0)">**常に**、Net ARR 金額は、クローズ日に反映された月に商談がクローズする際の実際の金額の最良の推定を反映する必要があります。オンサイト訪問からの戻り以外には例外はなく、アカウントと話していなくても同様です。新しい商談を取得した場合、アカウントを迅速に評価し、経験を考慮して、会社が取引する金額について教育的な推測をする必要があります。</span>
+1. <span class="colour" style="color:rgb(0, 0, 0)">**常に**、Net ARR 金額は、クローズ日に反映された月に商談がクローズする際の実際の金額の最良の推定を反映する必要があります。オンサイト訪問からの戻り以外には例外はなく、アカウントと話していなくても同様です。新しい商談を取得した場合、アカウントを迅速に評価し、経験を考慮して、会社が取引する金額について、根拠に基づく推測をする必要があります。</span>
 1. <span class="colour" style="color:rgb(0, 0, 0)">ステージは、お客様が購入プロセスのどこにいるかを表しており、あなたと取った具体的なステップだけではありません。</span>
 
 <span class="colour" style="color: rgb(0, 0, 0);">3 つのクローズ日:</span>
 
 1. <span class="colour" style="color:rgb(0, 0, 0)">クローズする月の最終日 **コンペリングイベントが定義されている場合のみ**</span>
-1. <span class="colour" style="color:rgb(0, 0, 0)">見積もりが署名のために送信されたときに商談がクローズする実際の日。署名が戻ってこない場合、期限切れと表示され、その週の金曜日にクローズすべきです。リニューアルはこの慣例にデフォルト設定されます</span>
+1. <span class="colour" style="color:rgb(0, 0, 0)">見積もりを署名のために送信した際の、商談がクローズする実際の日。署名が戻ってこない場合は期日超過と表示され、クローズ予定の週の金曜日にクローズ日を移動します。リニューアルはこの慣例にデフォルト設定されます</span>
 1. <span class="colour" style="color:rgb(0, 0, 0)">次の月の初日、コンペリングイベントが定義されていない </span>
-    1. <span class="colour" style="color:rgb(0, 0, 0)">月の初日にクローズ日を置くことは、**最大 48 時間**の一時的なステータスで、その間に AE はチャンピオン／エコノミックバイヤーと直接協力してコンペリングイベントとクライアントタイムラインを確認します。決定したら、AE は実際のクローズの月の最終日にクローズ日を移動します。    </span>
+    1. <span class="colour" style="color:rgb(0, 0, 0)">月の初日にクローズ日を置くことは、**最大 48 時間**の一時的なステータスで、その間に AE は Champion / Economic Buyer と直接協力してコンペリングイベントとクライアントタイムラインを確認します。決定したら、AE は実際のクローズの月の最終日にクローズ日を移動します。    </span>
     1. <span class="colour" style="color:rgb(0, 0, 0)">このクローズ日は、入ると思われる時の約 60 日のウィンドウを持ちます</span>
 
 **例**: 4 月 23 日、従業員 410 人で不明な率で成長中（エージェンシーであるため不明確）の企業に対して、新規ビジネスの Mid-Market 商談が特定されています。会社は今月終了するトライアルで評価を完了し、解決しようとする問題が初期に定義されており、以前に GitLab を使ったことのある一部の人々がいます。
@@ -253,7 +254,7 @@ Commercial Sales チームは、Account Object のフィールドを使用して
 - AE と自分への質問は、4 月、5 月、または 6 月の購入確率は何%ですか？
   - 90% 4 月、10% 5 月
 
-## Chorus 録画
+## Chorus 録画 {#chorus-recordings}
 
 すべての Commercial Account Executives にとって Chorus 録画ライセンスは必須です。私たちは次の理由でお客様コールを録画することを意図しています:
 
@@ -261,13 +262,13 @@ Commercial Sales チームは、Account Object のフィールドを使用して
 - お客様への会話の視覚的な記録として提供するため
 - 会話で見逃した可能性のある詳細を確認するため
 
-### コールを録画するために必須のステップ
+### コールを録画するために必須のステップ {#mandatory-steps-required-to-record-calls}
 
 [Chorus Scheduler](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/#chorus-scheduler)の使用手順に従ってください
 
-## Deal Reviews
+## ディールレビュー {#deal-reviews}
 
-### Project 35
+### Project 35 {#project-35}
 
 組織として成長を続ける中、優れた営業体験を提供するための営業スキルの開発は、お客様体験の重要な要素です。その体験の質に応じて、お客様が GitLab との仕事を楽しむか否かが決まります。私たちは、皆さまの営業スキルの向上を支援するため、「Project 35」というプログラムを作成しました。私たちは、これらのスキルが他のすべての営業機会で価値があるという目標で、四半期の最大の機会を活用して営業スキルを磨いています。
 
@@ -287,17 +288,17 @@ Project 35 コール中、自分の商談について話す AE は、次の質�
 1. ノーへの準備。「ノー」と言われるすべての質問または理由は何ですか？
 1. 関係を構築していますか（オンサイト、その他）？
 1. プロジェクト名とプロジェクトのタイミングを正確に決める（サービスを売る）
-1. ROI スライドに対する販売
-1. 前の質問で発見された情報に基づき、ライブでネクストステップを更新するための AE へのサポート理由を使用。マネージャーは、ライブまたは非同期でレビューするディールについて、Manager Notes セクションにコメントを入力する必要があります。
-1. 広範な営業チームを巻き込みます。ディールの販売を支援している CSM、SA、パートナーは誰ですか。名前で挙げてください。ディスカッションのドキュメントで彼らをアサインし、コールに参加してディスカッションに貢献できるようにしてください。
+1. ROI スライドに基づく販売
+1. 前の質問で明らかになった情報とその裏付けとなる理由を用いて、AE はその場でネクストステップを更新します。マネージャーは、ライブまたは非同期でレビューするディールについて、Manager Notes セクションにコメントを入力する必要があります。
+1. 広範な営業チームを巻き込みます。ディールの販売を支援している CSM、SA、パートナーは誰ですか。名前で挙げてください。ディスカッションのドキュメントで該当するメンバーをアサインし、コールに参加してディスカッションに貢献できるようにしてください。
 
-### Opportunity Consults と Lightweight Deal Reviews
+### Opportunity Consults と Lightweight Deal Reviews {#opportunity-consults-and-lightweight-deal-reviews}
 
 [Opportunity Consult](/handbook/sales/command-of-the-message/opportunity-consults/) (OCF)は、商談[Command Plan](/handbook/sales/command-of-the-message/command-plan/#overview)をレビューするための AE と ASM 間の徹底した双方向の会話です。AE は ASM に対して、[Opportunity Overview](/handbook/sales/command-of-the-message/command-plan/#opportunity-overview)フィールド、お客様のペインポイントと望ましい結果、[MEDDPPICC](/handbook/sales/meddppicc/)商談認定フレームワークに沿った認定の課題やギャップについてより詳細な情報を提供し、[Close Plan](/handbook/sales/command-of-the-message/command-plan/#close-plan-details)を明確に表現し、最大の商談リスクとそのリスクを軽減するアクションを特定することを期待されます。
 
-Lightweight Deal Review (LDR)は、[Command Plan](/handbook/sales/command-of-the-message/command-plan/#overview)のギャップと具体的なネクストステップを特定するように設計された、より短い（5～10 分）ディールレビューです。LDR の最後に、AE と ASM は Command Plan にない情報を捕捉する計画と、次のコールまでとその前の具体的なアクション計画を立てるべきです。
+Lightweight Deal Review (LDR)は、[Command Plan](/handbook/sales/command-of-the-message/command-plan/#overview)のギャップと具体的なネクストステップを特定するように設計された、より短い（5～10 分）ディールレビューです。LDR の最後に、AE と ASM は Command Plan にない情報を捕捉する計画と、次のコール当日とそれまでの具体的なアクション計画を立てるべきです。
 
-### Opportunity Next Steps ベストプラクティス
+### Opportunity Next Steps ベストプラクティス {#opportunity-next-steps-best-practices}
 
 1. Next Steps Date および Next Steps を常に最新の状態に保ち、お客様の購入プロセスを続けるためにアクションを取るという、将来の自分への課題としてください。
 1. 日の始まりには Email、Zendesk、リードキューなどのすべての入力をチェックして、その日の優先事項にこれらの依頼をトリアージできるようにしてください。
@@ -308,15 +309,15 @@ Lightweight Deal Review (LDR)は、[Command Plan](/handbook/sales/command-of-the
     - 入力を再度チェックする時間
 1. プロアクティブな時間ブロックを開始するとき、商談ビューを開き、Next Steps Date で並べ替えます。
 1. Next Steps は具体的かつ説得力があり、読んでから 3 分以内にアクションを取れるようにすべきです。
-    1. `Next Steps`には<b>*行動を取る次のもののみ*</b>を含むべきです: 日付なし、履歴なし、ネクストステップのみ
-    1. `Next Steps`を更新すると、`Next Steps History`が自動的に以前の`Next Steps`を捕捉し、日付スタンプを適用して逆時系列順に保存します
-    1. **注意:** 以前に`Next Steps`フィールドに履歴を含めていた場合、次回`Next Steps`を更新する際にフィールドを完全にクリアし、ネクストステップのみを入力する必要があります
+    1. `Next Steps` には次に取るアクション<b>*のみ*</b>を含めてください: 日付なし、履歴なし、ネクストステップのみ
+    1. `Next Steps` を更新すると、`Next Steps History` が自動的に以前の `Next Steps` を捕捉し、日付スタンプを適用して逆時系列順に保存します
+    1. **注意:** 以前に `Next Steps` フィールドに履歴を含めていた場合、次回 `Next Steps` を更新する際にフィールドを完全にクリアし、ネクストステップのみを入力する必要があります
 
-### 商談固有のスライドデッキ
+### 商談固有のスライドデッキ {#opportunity-specific-slide-deck}
 
-合計金額（Net ARR ではなく）が$10,000（Mid Market）または$5,000（SMB）を超えるすべての商談で、お客様または見込み客と共有されるカスタムスライドデッキを持つことが必須です。カスタムデッキは、商談ホームページの SalesForce フィールド「Link to Custom Pitch Deck」にデッキリンクを貼り付けることで、商談に添付する必要があります。これにより、Mid Market Account Executives と SMB Account Executives は重要なアカウント情報を捕捉できます。さらに、機能ではなく価値に基づいた販売が促進されます。
+合計金額（Net ARR ではなく）が $10,000（Mid Market）または $5,000（SMB）を超えるすべての商談で、お客様または見込み客と共有されるカスタムスライドデッキを持つことが必須です。カスタムデッキは、商談ホームページの SalesForce フィールド「Link to Custom Pitch Deck」にデッキリンクを貼り付けることで、商談に添付する必要があります。これにより、Mid Market Account Executives と SMB Account Executives は重要なアカウント情報を捕捉できます。さらに、機能ではなく価値に基づいた販売が促進されます。
 
-#### カスタムデッキ要件
+#### カスタムデッキ要件 {#custom-deck-requirements}
 
 1. **ビジュアル要件**
     - デッキのメインカラーはお客様のものと一致または類似します。
@@ -334,26 +335,26 @@ Lightweight Deal Review (LDR)は、[Command Plan](/handbook/sales/command-of-the
     - リニューアルの場合、1 年契約と 3 年契約のオプション、または Premium vs. Ultimate になる可能性があります。
 1. **お客様への非カスタム単一アプリピッチ**
     - このスライドには、ソフトウェア開発ライフサイクル全体のための単一アプリケーションとして GitLab を使うビジュアル表現が必要です。
-    - このスライドの意図は、お客様と「何が可能か」について会話し、彼らのフィードバックを捕捉することです
+    - このスライドの意図は、お客様と「何が可能か」について会話し、お客様のフィードバックを捕捉することです
 1. **「Single Application」スライドへのお客様のフィードバックの完全な捕捉**
     - 「single application」スライドのスピーカーノートにお客様の実際の言葉を捕捉
 
-## Red / Green プロセスと手順
+## Red / Green プロセスと手順 {#red--green-process-and-procedures}
 
-### Red / Green の目的
+### Red / Green の目的 {#red--green-purpose}
 
 ASM の効果的なコーチングが、なぜ今、なぜ何かをするか、なぜ GitLab、そして見込み客／クライアントに対して Account Executive が取る具体的なネクストステップをカバーする。Red/Green プロセスの目標は、各指定された会計期間（月／四半期）でクローズする商談を正確に予測することです。Red/Green プロセスは、お客様がクローズするのに最も快適なタイムラインを特定する周りのスキルを最も鋭く構築することを目的としています。
 
-### Red / Green 定義
+### Red / Green 定義 {#red--green-definition}
 
 各会計期間の終わりにクローズする可能性のある各商談を、Red（月末までにクローズしない）または Green（月末までにクローズする）のいずれかとして指定し、マネージャーノートを色の理由と次のチェックインまでに AE が完了する具体的なネクストステップ（通常は翌日）で更新します。コンテキストとして、グリーンのアカウントには、期間末までのクローズに対応する「なぜ今」があります。
     - Red/Green でレビューされるアカウントの閾値（特に指定されない限り）は次のとおりです:
         - SMB: $2,000 NetARR 以上
         - Mid-Market: $7,000 NetARR 以上
 
-### Red / Green 戦術
+### Red / Green 戦術 {#red--green-tactics}
 
-1. Red/Green ミーティングは、毎月 15 日（または 15 日前の最も近い平日）と、月の最終 5 営業日に開催されます。
+1. Red/Green ミーティングは、毎月 15 日（15 日が週末の場合はその直前の平日）と、月の最終 5 営業日に開催されます。
 
 1. Area Sale Managers は、各 Account Executive とライブでレッド／グリーンミーティングを実施する必要があります。この議論は非同期で行うべきではありません。以下の項目のチェックリストをこの順序で確認してください。前のものに自信があったら次の質問に進みます
     - この商談は Red か Green か？
@@ -361,17 +362,17 @@ ASM の効果的なコーチングが、なぜ今、なぜ何かをするか、�
     - なぜ GitLab か？
     - なぜ今か？（この商談が特定の時間枠内にクローズする時間駆動の理由があるか？）
     - あなたが最も近い関係を持つ人物のレベルは何か？
-    - 彼らはあなたをどのように助けてくれるか:
+    - その人物はあなたをどのように助けてくれるか:
         - お客様が GitLab を購入する理想的な時期に関する正確な情報を取得？
         - 上記情報にアクセスできる組織内の他の人へのアクセスを取得？
     - 上記の項目の答えに基づく AE の即時のネクストステップは何か？「アカウントがクローズからクローズドウォンに移行するまで待つ」以外であれば、「Why Now」の質問を参照してください。
         - 具体的なネクストステップの例は、最も近いコンタクトに「これを来月クローズしたら、あなたにとって少しでも楽になりますか？」と尋ねることです。
 
-1. アカウントの Red/Green ディスカッションが完了したら、ASM は、ディスカッションとアカウントエグゼクティブが取る即時のネクストステップを反映するため、商談の「manager notes」セクションにメモを入力します。
+1. アカウントの Red/Green ディスカッションが完了したら、ASM は、ディスカッションと Account Executive が取る即時のネクストステップを反映するため、商談の「manager notes」セクションにメモを入力します。
 
 1. 翌日、閾値を超えるすべてのアカウントに対して同じプロセスを繰り返します。
 
-### Red / Green の結果
+### Red / Green の結果 {#red--green-outcome}
 
 コミットする予測を達成し、AE のためのより良い営業スキルと ASM のためのより良いコーチングスキルを構築します。
     - 構築する必要のある理想的なスキルは:
@@ -379,15 +380,15 @@ ASM の効果的なコーチングが、なぜ今、なぜ何かをするか、�
         - ペインを特定し、GitLab に切り替えないことの負の影響と、GitLab に切り替えることによって実現されるポジティブなビジネス成果の両方をお客様に理解させること。
         - 重大度またはお客様がプロジェクトにリソースを充てる能力に基づいて、お客様との時間制約のある相互成功計画を構築すること。
 
-### Red / Green Lookback プロセス
+### Red / Green Lookback プロセス {#red--green-lookback-process}
 
 翌期間の最初の R/G ミーティングで、リーダーシップチームは前期間の実際のクローズドウォンと最終 R/G コミットメントを提出します。チームは、各自がどこで終わったかの理由と、コミットメントからのばらつきにつながった項目を特定するために議論します。
 
-## SMB Account Executives
+## SMB Account Executives {#smb-account-executives}
 
-SMB Account Executives（SMB AEs）は、[SMB](/handbook/sales/field-operations/gtm-resources/)の見込み客およびお客様に対する Account Executive かつ GitLab の顔として行動します。彼らは、従業員 1 名から 99 名を雇用する企業の主な連絡先です。
+SMB Account Executives（SMB AEs）は、[SMB](/handbook/sales/field-operations/gtm-resources/)の見込み客およびお客様に対する Account Executive かつ GitLab の顔として行動します。SMB AEs は、従業員 1 名から 99 名を雇用する企業の主な連絡先です。
 
-### SMB の役割
+### SMB の役割 {#smb-roles}
 
 SMB Account Executives は、以下のポッドポジションのいずれかに指定されます:
 
@@ -398,48 +399,48 @@ SMB Account Executives は、以下のポッドポジションのいずれかに
 
 First Order の SMB Account Executives は、見込み客が最初の購入プロセスを通じて評価するのを支援します。アカウントに応じて、他の 3 つの役割は、リニューアルおよび拡大のディスカッションのためのお客様の主な連絡先となります。集合的に、チームは、[テリトリー](/handbook/sales/territories/)内の新規ビジネスに取り組むだけでなく、新規および既存のお客様向けのカスタマージャーニーを処理する責任があります。
 
-AMER SMB Pooled Account Executives は、GitLab を使い始めた 1 日目の企業から、1 日目から GitLab を使用している企業まで、SMB お客様のサブセットを管理することを担当します。Pooled AEs は「プール型」のアカウント所有モデルで集合的に取り組みます。つまり、お客様はチームレベルで整列され、すべての AE がお手伝いできるよう装備されています。Pooled AEs はお客様と協力して製品を評価し、ニーズに基づいて GitLab との成功するリニューアルを保証する推奨を行います。
+AMER SMB Pooled Account Executives は、GitLab を使い始めたばかりの企業から、創業初日から GitLab を使用している企業まで、SMB お客様のサブセットを管理することを担当します。Pooled AEs は「プール型」のアカウント所有モデルで集合的に取り組みます。つまり、お客様はチームレベルで整列され、すべての AE がお手伝いできるよう装備されています。Pooled AEs はお客様と協力して製品を評価し、拡大を計画して、ニーズに基づいて GitLab との成功するリニューアルを保証する推奨を行います。
 
 詳細については、以下および[SMB ハンドブックページ](/handbook/sales/commercial/high_velocity_sales_first_orders/)をお読みください。
 
-### フォローおよびブックマークすべき重要な Salesforce レポート
+### フォローおよびブックマークすべき重要な Salesforce レポート {#critical-salesforce-reports-to-follow-and-bookmark}
 
 - [SMB AMER Required 7](https://gitlab.my.salesforce.com/01Z4M000000oXCS)
 - [SMB APAC/EMEA Required 7](https://gitlab.my.salesforce.com/01Z4M000000oWyL)
 - [SMB APAC/EMEA 1:1 Dashboard](https://gitlab.my.salesforce.com/01Z4M000000oXKq)
 
-#### 新規ビジネス
+#### 新規ビジネス {#new-business}
 
 - Commercial SDR チームからの Initial Qualification Meetings [IQM's](/handbook/sales/commercial/#inbound-queue-management)に取り組む
 - [SAO Criteria](/handbook/sales/field-operations/gtm-resources/)に従って Sales Accepted Opportunities を承認
 - 商談承認後、トライアル評価中の見込み客を育成・支援
 - Webdirect への誘導または Sales Order Process のサポート
 
-#### カスタマージャーニー
+#### カスタマージャーニー {#customer-journey}
 
-- [Inbound Queue Management](/handbook/sales/commercial/#inbound-queue-management)
-- [Licensing/Subscription Management](/handbook/sales/commercial/#licensingsubscription-management)
-- [Troubleshooting Resource for Licensing/Subscription Management](/handbook/sales/commercial/#troubleshooting--how-to-resources-for-licensing--subscription-management)
-- [Quotes / Sales Order Processing](/handbook/sales/commercial/#quotes--sales-order-processing)
-- [Customer Health Check Process](/handbook/sales/commercial/enablement/#commercial-sales-account-health-check-process)
-- [Gainsight Data in SFDC Definitions](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)
+- [インバウンドキュー管理](/handbook/sales/commercial/#inbound-queue-management)
+- [ライセンス／サブスクリプション管理](/handbook/sales/commercial/#licensingsubscription-management)
+- [ライセンス／サブスクリプション管理のトラブルシューティングリソース](/handbook/sales/commercial/#troubleshooting--how-to-resources-for-licensing--subscription-management)
+- [見積／販売注文処理](/handbook/sales/commercial/#quotes--sales-order-processing)
+- [顧客のヘルスチェックプロセス](/handbook/sales/commercial/enablement/#commercial-sales-account-health-check-process)
+- [SFDC の Gainsight データの定義](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)
 
-### Inbound Queue Management
+### インバウンドキュー管理 {#inbound-queue-management}
 
 **Zendesk:** support.gitlab.com 経由で受信する依頼の管理
 
 SMB チームの Zendesk チケット対応の **目標と焦点** は、**アップセル**と**リニューアル**を支援することです
 
-タイムゾーン内（WIP）、Support チームは[Upgrades, Renewals, AR (refunds)キュー](https://gitlab.zendesk.com/agent/filters/360034975053)に入ってくるすべての ZD チケットをリードする責任があります。営業時間外には、SMB チームはタイムゾーン中に違反するチケットをトリアージして処理します。
+タイムゾーン内（WIP）、Support チームは[Upgrades, Renewals, AR (refunds)キュー](https://gitlab.zendesk.com/agent/filters/360034975053)に入ってくるすべての ZD チケットをリードする責任があります。営業時間外には、SMB チームは担当タイムゾーン中に対応期限を超過するチケットをトリアージして処理します。
 
 Support はキューに来るすべての依頼をリードし、以下の場合にのみ営業所有者に転送します:
 
 - **お客様**からの Net ARR に影響を与えるイベントがある -OR-
 - 営業マネージャーの承認が必要なクレジットまたはその他の依頼がある
 
-### Salesforce パイプラインアクティビティ
+### Salesforce パイプラインアクティビティ {#salesforce-pipeline-activity}
 
-#### Salesforce での商談管理
+#### Salesforce での商談管理 {#opportunity-management-in-salesforce}
 
 - 新しい商談に取り組む前に、必ずアカウントのセグメンテーションが「SMB」であり、その会社の従業員数が 100 人未満であることを、datafox 情報を見て、LinkedIn で確認してダブルチェックします（特に AMER 以外）
 - 毎日 Next Steps に自分自身を向けて、その日を優先順位付けし、整理する方法を知ってください。その日のネクストステップに取り組む方法に関する推奨事項:
@@ -447,14 +448,14 @@ Support はキューに来るすべての依頼をリードし、以下の場合
 1. ステージで並べ替え、最高優先度のステージを上に配置
 1. ステージ、金額、クローズ日で最初に取り組む商談を優先順位付け
 1. 「Next Steps」「Next Step Date」「Next Steps Owner」が、商談をパイプライン通して移動する方法を導くアクション可能で情報的な情報で最新であることを確認
-1. アクションが必要な潜在的な将来の商談が 30 日以上先である場合、これがネクストステップフィールドに詳細に記載されていることを確認
+1. アクションが必要な潜在的な将来の商談が 30 日より先である場合、これがネクストステップフィールドに詳細に記載されていることを確認
 1. Discovery から Awaiting Signature までのステージの商談が更新されたら、Pending Acceptance の作業を始めます。同じ基準で優先順位付けを続けます。
 
-#### パイプライン生成
+#### パイプライン生成 {#pipeline-generation}
 
 - 直属の経営陣との週次のコミュニケーションでパイプラインの健全性をレビューし、必要に応じてリアルタイムで記録を更新します。常にパイプラインの乗数を把握し、成功する月と四半期のためにより多くのパイプラインを作成する必要があるかどうかを知るべきです。チームの **Pipeline Generation** チェックリストドキュメントと、アクティビティを最新に保つことに関連する関連する SFDC レポートを参照してください。
 
-#### Commercial Sales のステージのアクティビティと出口基準
+#### Commercial Sales のステージのアクティビティと出口基準 {#commercial-sales-stages-activities-and-exit-criteria}
 
 - パイプライン管理は、予測可能でスケーラブルな収益達成の鍵であり、単に目標を達成することと、目標を超えることの違いを生むことができます。適切な営業パイプライン管理は、時間を正しく割り当て、ディール速度を増加させ、正確な予測実践を通じてディール全体のボリューム、サイズ、収益を増加させるのに役立ちます。
 - よく管理された営業パイプラインには、ディールをディスカバリーからクローズドウォンに（または素早く認定外に）持ち込むためのロードマップとして機能する、定義されたアクティビティと出口基準を含む明確なプロセスが必要です。次のプロセスは Commercial Sales チームに固有のもので、クリーンなパイプラインと正確な予測を確保します。
@@ -465,59 +466,59 @@ Support はキューに来るすべての依頼をリードし、以下の場合
 
 - 詳細については[Commercial Sales Opportunity Stages ハンドブックページ](/handbook/sales/commercial/comm-sales-opp-stages/)をお読みください。
 
-#### Salesforce での Web Direct Oppty 管理
+#### Salesforce での Web Direct Oppty 管理 {#web-direct-oppty-management-in-salesforce}
 
-- ご自身のテリトリーのすべての CFQ「current fiscal quarter」 Web Direct 購入のレポートビュー「SMB_Web Directs CFQ_name」を見つけてください:
+- ご自身のテリトリーのすべての CFQ「現在の会計四半期」 Web Direct 購入のレポートビュー「SMB_Web Directs CFQ_name」を見つけてください:
 
 1. アカウントの下にリストされている商談を見ることで、重複していた可能性のあるオープン商談がないか確認します
-1. 重複でなければ、商談のメインコンタクトをアウトリーチシーケンス「SMB_Web Direct Outreach」に配置します - by: Madeline Hennessy
+1. 重複でなければ、商談のメインコンタクトをアウトリーチシーケンス「SMB_Web Direct Outreach」に配置します - 作成者: Madeline Hennessy
 1. 商談と会社に応じて、個人的なアウトリーチが好ましい場合、活動をログし、フォローアップするためのネクストステップ日付を持つ必要があります
 
-#### Licensing/Subscription Management
+#### ライセンス／サブスクリプション管理 {#licensingsubscription-management}
 
 > 注: システムへのアクセスが必要な場合は、[Access Request を開いてください](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)
 
-GitLab Trials & Subscription Management
+GitLab トライアルとサブスクリプション管理
 
 - ユーザー、グループ、サブスクリプションへの変更を提供するため、[CustomersDot](https://customers.gitlab.com/admin/customer)にアクセスします。
 
-#### Licensing & Subscription Management のトラブルシューティングおよびハウツーリソース
+#### ライセンスとサブスクリプション管理のトラブルシューティングおよびハウツーリソース {#troubleshooting--how-to-resources-for-licensing--subscription-management}
 
 ライセンスやサブスクリプションに関する問題を扱う方法の詳細な手順は、[これらの手順とリソース](/handbook/business-technology/enterprise-applications/)で見つけられます。
 
-### Quotes | Sales Order Processing
+### 見積 | 販売注文処理 {#quotes--sales-order-processing}
 
-[sales order processing](/handbook/sales/field-operations/order-processing/)の詳細は Business Ops ハンドブックセクションにあります。
+[販売注文処理](/handbook/sales/field-operations/order-processing/)の詳細は Business Ops ハンドブックセクションにあります。
 
-## Mid Market Account Executive
+## Mid Market Account Executive {#mid-market-account-executive}
 
 Midmarket Account Executives は、現在従業員 100 人から 1,999 人を雇用する企業と協力する、ミッドマーケットとして定義される空間内の GitLab 見込み客および既存のお客様間の主な連絡先です。これらの GitLab チームメンバーは、特定のビジネス成果を達成するため、GitLab との旅でアドバイスする小規模なアジャイル組織内の急成長中の小規模なチームから複雑なエンタープライズプロジェクトまで、プロジェクトサイズの範囲を管理します。
 
-Mid-Market AEs はビジネス開発チームと営業マネジメントと密接に協力し、大きな商談額範囲にわたる広範なビジネスを管理し、クライアントの期待を超えることに焦点を当てます。
+Mid-Market AEs はビジネス開発チームと営業マネジメントと密接に協力し、大きな商談額範囲にわたる幅広い担当顧客群を管理し、クライアントの期待を超えることに焦点を当てます。
 
-### Mid Market の役割
+### Mid Market の役割 {#mid-market-roles}
 
 1. **New Logo AE**: これらの AE は、現在 GitLab のお客様ではない[Base Accounts](https://internal.gitlab.com/handbook/sales/go-to-market/rules-of-engagement/#base-prospect-accounts)に取り組みます。お客様が最初の契約に署名したら、お客様のサイズに応じて、SMB、MM、ENT セグメントに移行されます。
 1. **MM Key Accounts Named AE** (MMKAN): これらの AE は、高消費（高 CARR）であると判断された、または高消費の可能性（高 LAM）を持つと判断された現在のお客様に取り組みます。MMKAN AE が成功するには、指名されたアカウントリストの標準的な拡大率を超えて、アカウントを拡大する必要があります。各 MMKAN AE の指名リストは、MMKAFO AE が新しい高潜在能力のお客様を獲得するに従って、会計年度を通じて成長します。
-1. **MM Territory AE**: これらの AE は、New Logo AE または MM Key Account 名義 AE となることが審査されていないアカウントの地理的リージョンに取り組みます。この役割は見込み客と現在のアカウントの両方に売り込みます。
+1. **MM Territory AE**: これらの AE は、New Logo AE または MM Key Account named AE となることが審査されていないアカウントの地理的リージョンに取り組みます。この役割は見込み客と現在のアカウントの両方に売り込みます。
 
 「MM Key Accounts」は、MM Key Accounts First Order と MM Key Accounts Named を集合的に指すために使用できます。MM Key Accounts は、より高い[LAM](https://internal.gitlab.com/handbook/sales/lam/)と潜在的 LAM を持つ MM アカウントのサブセットです。
 
-### 中核的な責任
+### 中核的な責任 {#core-responsibilities}
 
 - アカウントセットを所有 - 計画を構築・実行。
-- ビジネスブックを管理: 新規ビジネス、拡大、リニューアル。
+- 担当顧客群を管理: 新規ビジネス、拡大、リニューアル。
 - インバウンド認定商談のクロージャへの進行のため、Sales Development チャネルと協力。
 - アウトバウンドキャンペーンの実行。
 
-#### 新規ビジネス
+#### 新規ビジネス {#new-business-1}
 
 - SDR チームからの Initial Qualification Meetings [IQM's](/handbook/sales/commercial/#inbound-queue-management)に取り組む
 - [SAO Criteria](/handbook/sales/field-operations/gtm-resources/)に従って Sales Accepted Opportunities を承認
 - 商談承認後、トライアル評価中の見込み客を育成・支援
 - Webdirect への誘導または Sales Order Process のサポート
 
-#### マーケティング用のターゲットアカウントの選択
+#### マーケティング用のターゲットアカウントの選択 {#selecting-target-accounts-for-marketing}
 
 - Datafox または Sales Navigator にログイン
 - テリトリー条件を入力
@@ -533,28 +534,28 @@ Mid-Market AEs はビジネス開発チームと営業マネジメントと密�
 - 最近の資金調達発表があったかどうかを評価
 - 選択したら、会社名、市、郵便番号をシートに追加
 
-#### カスタマージャーニー
+#### カスタマージャーニー {#customer-journey-1}
 
-- [Inbound Queue Management](/handbook/sales/commercial/#inbound-queue-management)
-- [Licensing/Subscription Management](/handbook/sales/commercial/#licensingsubscription-management)
-- [Troubleshooting Resource for Licensing/Subscription Management](/handbook/business-technology/enterprise-applications/)
-- [Quotes / Sales Order Processing](/handbook/sales/commercial/#quotes--sales-order-processing)
-- [Customer Health Check Process](/handbook/sales/commercial/enablement/#commercial-sales-account-health-check-process)
-- [Gainsight Data in SFDC Definitions](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)
+- [インバウンドキュー管理](/handbook/sales/commercial/#inbound-queue-management)
+- [ライセンス／サブスクリプション管理](/handbook/sales/commercial/#licensingsubscription-management)
+- [ライセンス／サブスクリプション管理のトラブルシューティングリソース](/handbook/business-technology/enterprise-applications/)
+- [見積／販売注文処理](/handbook/sales/commercial/#quotes--sales-order-processing)
+- [顧客のヘルスチェックプロセス](/handbook/sales/commercial/enablement/#commercial-sales-account-health-check-process)
+- [SFDC の Gainsight データの定義](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)
 
-## Commercial Sales 向けアカウント所有のルールオブエンゲージメント 2022-09-22 更新
+## Commercial Sales 向けアカウント所有のルールオブエンゲージメント 2022-09-22 更新 {#account-ownership-rules-of-engagement-for-commercial-sales-updated-2022-09-22}
 
 Commercial Sales チームは、[Account Ownership Rules of Engagement](https://internal.gitlab.com/handbook/sales/go-to-market/rules-of-engagement/)に従います。
 このセクションでは、**ROE**に従う方法をステップバイステップで明確にしています。
 
-### 従うプロセス
+### 従うプロセス {#process-to-follow}
 
 アカウントは次の 2 つのカテゴリーに整理されます:
 
 1. 会計年度の 2 月 1 日より前のお客様だったアカウント
 1. 会計年度の 2 月 1 日以降にお客様になったアカウント
 
-#### 会計年度の 2 月 1 日より前のお客様になったアカウントは、このプロセスに従います
+#### 会計年度の 2 月 1 日より前のお客様になったアカウントは、このプロセスに従います {#accounts-who-became-customers-before-february-1st-of-the-fiscal-year-will-follow-this-process}
 
 アカウントを所有する Account Executive には、2 月 1 日より前にアカウントの従業員数を認定する責任があります。
 2 月 1 日以前またはその時点で従業員数が 100 人未満のアカウントは、その会計年度は SMB が所有します
@@ -562,7 +563,7 @@ Commercial Sales チームは、[Account Ownership Rules of Engagement](https://
 
 - Account Executive として、アカウントを認定して、従業員数または企業住所によるルールオブエンゲージメントが不明な場合、レビューしているデータをスクリーンショットで撮り、アカウントの chatter に投稿し、Account Rank Notes を編集してください。@ メンションすることで、Area Sales Manager にリサーチが完了した旨をタグ付けして、さらなるレビューを依頼してください。ASM が Account Executive から提供されたデータをレビューし、独自の調査を行った後もルールオブエンゲージメントが不明な場合、調査をスクリーンショットで撮り、アカウントの chatter に投稿し、@ メンションすることで Regional Director をレビューにタグ付けする必要があります。最後に、Regional Director が提供されたデータをレビューし、独自の調査を行った後もルールオブエンゲージメントが不明な場合、調査をスクリーンショットで撮り、アカウントの chatter に投稿し、@ メンションすることで Regional Vice President をレビューと最終決定にタグ付けする必要があります。Commercial アカウントおよび商談所有のすべての最終決定は、Commercial Division の Regional Vice President の単独裁量にあります。
 
-#### 会計年度の 2 月 1 日以降にお客様になったアカウント
+#### 会計年度の 2 月 1 日以降にお客様になったアカウント {#accounts-who-became-customers-on-or-after-february-1st-of-the-fiscal-year}
 
 アカウントは次のカテゴリーに分けられます
 
@@ -572,13 +573,13 @@ Commercial Sales チームは、[Account Ownership Rules of Engagement](https://
 Sales Assisted First Orders では、見込み客と初期ディスカバリーを行う Account Executive に、アカウントの従業員数と本社所在地を調査・認定する責任があります。
 アカウントの従業員数が 100 人未満の場合、そのアカウントは会計年度の残りの期間 SMB によって管理されます
 アカウントの従業員数が 100 人以上の場合、そのアカウントは会計年度の残りの期間 Mid Market によって管理されます
-アカウントの従業員数が 500 人を超える、または 100 LAM dev 以上の場合、適切なリードルーティングについては、FY '23 の MMKAFO と Mid-Market Territory 間のルールオブエンゲージメントをご覧ください
+アカウントの従業員数が 500 人を超える、または 100 LAM dev を超える場合、適切なリードルーティングについては、FY '23 の MMKAFO と Mid-Market Territory 間のルールオブエンゲージメントをご覧ください
 
 Web Direct First Orders では、データを充実させるために使用されるツールに基づいて、システムが捕捉する内容と実際の従業員数の差異の程度があるかもしれないことを理解しています。Web Direct First Order 後に正しい従業員数を特定し、従業員数が「完全に間違っていない」ことを確認することは、First Order を所有する Account Executive の責任です。「完全に間違っている」は、自動化により初期割当時に割り当てられるアカウント、つまり最初のトランザクションでチームメンバーがレビューしなかったアカウントにのみ使用されます。
 
 完全に間違っているとは、以下のように定義されます
 従業員数が 80 人未満の Mid Market 所有のアカウント
-従業員数が 120 人以上の SMB 所有のアカウント
+従業員数が 120 人を超える SMB 所有のアカウント
 
 アカウントが完全に間違っている場合、アカウント所有者は、@sales-support と chatter で、First Order とアカウントを正しいセグメントに再割当する責任があります。
 
@@ -590,9 +591,9 @@ AE がこれを認定して保持する場合、これは懲戒処分につな�
 
 認定プロセスの一環として、お客様を最善にサポートできるよう、会社本社の所在地と従業員数を認定することが期待されます。お客様体験を危険にさらすような方法で所在地と従業員数を認定することは受け入れられません。不確かな場合は、お客様を巻き込む前にデータをレビューするためマネージャーを chatter でタグ付けしてください。
 
-### FY '23 の MMKAFO と Mid-Market Territory 間のルールオブエンゲージメント
+### FY '23 の MMKAFO と Mid-Market Territory 間のルールオブエンゲージメント {#rules-of-engagement-between-mmkafo-and-mid-market-territory-for-fy-23}
 
-#### 会計年度 2023 年のアカウント移動
+#### 会計年度 2023 年のアカウント移動 {#fiscal-year-2023-account-moves}
 
 2022 年 2 月 24 日時点で SalesForce.com にあるすべてのアカウントについて、Mid-Market Key Accounts First Order チームは、次のすべてのアカウントを所有します:
 
@@ -603,11 +604,11 @@ AND
 OR
 1. LAM Dev Count Field で測定された潜在的ユーザー数が 100 ユーザー以上ある。
 
-混乱を避けるため、ロジックは`[1 AND 2 AND (3 OR 4)]`です。
+混乱を避けるため、ロジックは `[1 AND 2 AND (3 OR 4)]` です。
 
 注: AE がデータソースの従業員数または潜在的ユーザー数が正確でないと疑う場合、ディスカバリーフェーズ中に従業員数と潜在的ユーザー数を発見することが AE の責任です。アカウントがいずれかのテリトリーまたは First Order に属することが特定され、もう一方の当事者が適切なデューデリジェンスを行わずにリードに取り組み続ける場合、アカウントは適切な当事者に再割当されます。
 
-#### 2022 年 2 月 24 日以降の SalesForce.com への新規アカウント
+#### 2022 年 2 月 24 日以降の SalesForce.com への新規アカウント {#new-accounts-to-salesforcecom-after-feb-24-2022}
 
 1. SalesForce.com にアカウントがまだ存在しないすべての**インバウンド**MQL について、そのリードとアカウントのルーティングは、従業員数のみに基づきます。
     - アカウントの従業員数が 500 人以上の場合、MMKAFO チームにルーティングされます
@@ -617,43 +618,43 @@ OR
 1. MMKAFO AEs は上記の基準を満たすアウトバウンドアカウントを SFDC で作成し、Sales Operations に自分の名前にアカウントを移動するよう求めることができます。
     - 注: AE がアカウントを重複排除するために、当該アカウントに取り組むために要求していることが判明した場合、懲戒処分が取られます。
 
-#### 会計年度 2023 年中のアカウント移動
+#### 会計年度 2023 年中のアカウント移動 {#account-moves-throughout-fiscal-year-2023}
 
 1. MMKAFO AE が、First Order にセグメント化された 500 人未満の従業員数のアカウントが実際には 100 人未満の潜在的ユーザーを持つことをディスカバリーで発見した場合、すぐにアカウントを Territory に移動するよう求めるべきです。
-1. 「First Order Available」のアカウントが Territory にセグメント化されており、Territory AE がアカウントが実際には 500 人以上の従業員を持つことをディスカバリーで発見した場合、すぐにアカウントを First Order に移動するよう求めるべきです。
-1. システムの新規アカウントの自動化は、500 人未満の従業員でも 100 人以上の潜在的ユーザーを持つアカウントが、四半期切り替え時にアクティビティがない限り、Territory にルーティングされ、そこに残されることを意味します。
-1. AE が意図的にルール 1 または 2 を会計年度内に 2 回以上無視していることが判明した場合、懲戒処分が取られる可能性があります。
+1. 「First Order Available」のアカウントが Territory にセグメント化されており、Territory AE がアカウントが実際には 500 人を超える従業員を持つことをディスカバリーで発見した場合、すぐにアカウントを First Order に移動するよう求めるべきです。
+1. システムの新規アカウントの自動化は、500 人未満の従業員でも 100 人を超える潜在的ユーザーを持つアカウントが、四半期切り替え時にアクティビティがない限り、Territory にルーティングされ、そこに残されることを意味します。
+1. AE が意図的にルール 1 または 2 を会計年度内に 2 回を超えて無視していることが判明した場合、懲戒処分が取られる可能性があります。
 
-## Co-Selling
+## 共同販売 {#co-selling}
 
 Co-selling は、Account Executive とその Area Sales Manager の両方の責任で、共にセールスコールに参加します。これは、最高のクライアント／見込み客体験を確保し、そのアカウント内で最大の可能性を共同で見つけることを目的としています。
 Area Sales Managers は、ローリング 7 日間で最低 5 回の co-selling コールをログすることが期待されており、ローリング 7 日間で 10～12 コールにより近く達成することを目指しています。
 
-### あなたの ASM と協業する際の Co-Selling の役割
+### ASM と協業する際の共同販売の役割 {#co-selling-roles-when-working-with-your-asm}
 
 - Primary Seller: この役割をメインのピッチパーソンと考えてください。会話を導き、デッキを共有し、ライブノートを取り、価値を追加し、決定したアジェンダに沿って進める役割です。
 - Co-Seller: この個人は Salesforce の生のノート、時間管理、コメントの掘り下げを担当し、追加情報を見つけるべき領域を特定します。Co-pilot は、Pilot がペインを捕捉せずに進む際に、ペインのレベルと量を掘り下げる必要があります。
 追加情報は、こちらの[リインフォースメントモジュール](https://rise.articulate.com/share/-azahQvz24JLQ0yFj4JoRMorDMokvEeJ#/lessons/_fwDOSI3QjsRpf9LxRpm1R6gLVljSy0w)を参照してください
 
-### Channel Partner との協業
+### Channel Partner との協業 {#working-with-channel-partners}
 
-GitLab パートナーネットワークは、Commercial Sales が提供するお客様の販売とサービスの能力を拡張するため、GitLab Account Executives と一緒に働く準備ができています。Channel のこのアプローチは、Partner Co-selling と呼ばれ、Partners との協業には、「誰がいつ何をするか」を確立する、シンプルで明確な相互お客様商談計画を構築することが含まれます。
+GitLab パートナーネットワークは、Commercial Sales が提供するお客様の販売とサービスの能力を拡張するため、GitLab Account Executives と一緒に働く準備ができています。Channel のこのアプローチは、Partner Co-selling と呼ばれ、パートナーとの協業には、「誰がいつ何をするか」を確立する、シンプルで明確な相互お客様商談計画を構築することが含まれます。
 
-#### パートナーと協業する主なメリットは何ですか？
+#### パートナーと協業する主なメリットは何ですか？ {#what-are-the-key-benefits-from-working-with-partners}
 
 - AE がパートナーと協業してお客様の価値と Net ARR を増加
-- パートナーセールスとサービスの能力および GitLab トレーニング済みパートナー AE、SA、エンジニア、そしてしばしば GitLab のチャネルマネージャーがコーディネート／支援することによる、拡張されたリーチと能力
+- パートナーセールスとサービスの能力および GitLab トレーニング済みパートナー AE、SA、エンジニア、そしてしばしば GitLab の channel manager がコーディネート／支援することによる、拡張されたリーチと能力
 - 新しいお客様ロゴへの加速されたリーチ「<b>*Land*</b>」: パートナーは、顧客ベースをマイニングすることで GitLab に新しいロゴ商談をもたらし始めています。多くの場合、パートナーはすでにお客様との「信頼できるパートナーステータス」を持っており、これも新規ロゴエンゲージメントの加速に役立ちます。
 - お客様の「<b>*Expand*</b>」成功の増加: 多くの場合、パートナーは、お客様が GitLab 技術投資から最大の価値を得て、ユーザーの成長と共にステージアドバンスを推進するのを確実にするため、求められる重要なサービスを販売・提供します。
 - デプロイメントおよび関連サービス: より速いデリバリーと能力の増加のため、AE はこれらのサービス、CSM ライクのカスタマーサクセスサービスを販売・デリバリーするためにパートナーに頼っています。
 - ディストリビューター経由の OPEN パートナーの場合、見積もりから注文プロセスに関連する管理ステップが劇的に削減されます。
 
-#### AE はお客様の価値と Net ARR を増加させるためにどのようにパートナーと協業しますか？
+#### AE はお客様の価値と Net ARR を増加させるためにどのようにパートナーと協業しますか？ {#how-do-aes-work-with-partners-for-increased-customer-value--net-arr}
 
 GitLab には、GitLab トレーニング済みの営業および技術リソースを良好にカバーする成熟したパートナーネットワークがあります。AE がパートナーを含むお客様と協業する方法はいくつかあります。
 
-- [Approved Partner GitLab Deal Registrations](/handbook/sales/field-operations/channel-operations/sales-faq/#deal-registration) これらがテリトリーで受信されるにつれて、多くの場合*、GitLab チャネルチームメンバーから連絡があり、パートナーと共有するシンプルなパートナー co-selling 計画を作成するための共同販売キックオフコールを手配します。GitLab Channel Managers はすべての OPEN Partners をプロアクティブに管理しているわけではありません。AE は、channel-sales または利用可能なコンタクトを Slack することで、Deal Registration のための Channel Manager サポートを常にリクエストできます。
-- 1. 「パートナー SA がこのお客様要求の SA タスクを実行できる」と考える場合、または 2. AE に「パートナーサービスのアタッチエンゲージメント」から利益を得られるお客様がいる場合、関連するアカウントまたは商談へのリンク付きで、Slack で[#channel-sales](https://gitlab.slack.com/archives/CT9KKE5RR)に Partner Engagement Request をすぐに送ってください。チャネルチームのメンバーが、依頼についてさらに学ぶためにすぐに連絡し、当面のタスクを迅速かつ適切に実行する事前認定済みのパートナーとあなたをつなぎ、その間も最新情報を提供します。
+- [承認済みのパートナー GitLab ディール登録](/handbook/sales/field-operations/channel-operations/sales-faq/#deal-registration) これらがテリトリーで受信されるにつれて、多くの場合*、GitLab チャネルチームメンバーから連絡があり、パートナーと共有するシンプルなパートナー共同販売計画を作成するための共同販売キックオフコールを手配します。GitLab Channel Managers はすべての OPEN Partners をプロアクティブに管理しているわけではありません。AE は、channel-sales または連絡可能な担当者に Slack で連絡することで、Deal Registration のための Channel Manager サポートを常にリクエストできます。
+- ご自身が 1. 「パートナー SA がこのお客様要求の SA タスクを実行できる」と考える場合、または 2. AE に「パートナーサービスのアタッチエンゲージメント」から利益を得られるお客様がいる場合、可能であれば関連するアカウントまたは商談へのリンクを添えて、Slack で[#channel-sales](https://gitlab.slack.com/archives/CT9KKE5RR)にパートナーとの協業を依頼してください。チャネルチームのメンバーが、依頼についてさらに学ぶためにすぐに連絡し、当面のタスクを迅速かつ適切に実行する事前認定済みのパートナーとあなたをつなぎ、その間も最新情報を提供します。
 - AE はパートナーと GitLab Channel Manager のアラインメントとサポートを得て、共同商談／お客様追求の計画と実行をリードすべきです。計画は[タスクとアクションアイテムで SFDC で追跡されるべき](/handbook/resellers/)です。パートナーは、（AE または Channel Mgr を介して）割り当てられたタスクのメール確認を常に受け取るべきです。
 - Channel Managers は次の方法で AE と協業します:
   - 新しい Deal Registration が AE のパイプラインに到着した時
@@ -661,18 +662,18 @@ GitLab には、GitLab トレーニング済みの営業および技術リソー
     - Channel Manager はこのコール中に可能性を提示します
     - パートナーと協業する 2 つの例が、**[この LevelUp](https://www.youtube.com/watch?v=ndrNX8fIIqs&list=PL05JrBw4t0KrirMKe3CyWl4ZBCKna5rJX&index=2)** で取り上げられています
     - AE は、どのパートナー活動が自分のお客様のどれにとって最適かについて優先順位を付けて考えを共有すべきです
-- ディストリビューション経由の Open パートナーの場合、商談の準備ができたら、AE は商談へのリンクと共に`partnersupport@gitlab.com`にメールで、見積もりから注文サポートを依頼します（chatter alias は近日公開予定）
+- ディストリビューション経由の Open パートナーの場合、商談の準備ができたら、AE は商談へのリンクと共に `partnersupport@gitlab.com` にメールで、見積もりから注文サポートを依頼します（chatter エイリアスは近日公開予定）
 
-#### Channel Partners との協業について詳しく学ぶリソースは？
+#### Channel パートナーとの協業について詳しく学ぶリソースは？ {#resources-to-learn-more-about-teaming-with-channel-partners}
 
 - AE の初めての場合、提供されている利用可能なトレーニングを視聴することをお勧めします。この Levelup 動画は[Channel Partner ランドスケープ](https://youtu.be/OeykHQetd7U)の基本的な理解から始まります。
 - 共同販売の成功についてさらに学ぶ AE 専用の[Maximizing Value of Partners in a Deal](https://www.youtube.com/watch?v=ndrNX8fIIqs&list=PL05JrBw4t0KrirMKe3CyWl4ZBCKna5rJX&index=2)の LevelUp 動画。
 - [パートナー共同販売のベストプラクティス、パートナーが AE の R7 と Command Plan の重要な要素の構築を支援する方法](/handbook/resellers/)などの詳細は、[Channel Sales Handbook](/handbook/resellers/)で学べます。
 - ご質問やサポートの依頼については、Slack [#channel-sales](https://gitlab.slack.com/archives/CT9KKE5RR)または Channel Account Manager に連絡してください。チャネルは、共同販売の成功を様々な方法で支援するためにここにいるチャネルチームの複数のメンバーによって緊密に監視されています。
 - [GitLab トレーニング済みの OPEN および SELECT チャネルパートナー](https://help.salesforce.com/s/articleView?language=en_US&id=reports_schedule.htm&type=5)のリスト
-- Channel Partner Finder **[こちら](https://partners.gitlab.com/English/directory/)
+- パートナー検索 **[こちら](https://partners.gitlab.com/English/directory/)
 
-#### New Logo Team
+#### New Logo Team {#new-logo-team}
 
 New Logo Team は、MM および ENT アカウントでファーストオーダーディールをクローズすることに焦点を当てた、GitLab の High Velocity Sales & New Logo 組織内の専門化された営業チームです。
 最初のトランザクションが New Logo チームによってクローズされた後、New Logo AEs はハンドオーバープロセスを開始する責任があります。以下は New Logo チームと Mid-Market Key Account Named チームの責任です。
@@ -680,7 +681,7 @@ New Logo Team は、MM および ENT アカウントでファーストオーダ�
 **アカウントを Mid-Market または Enterprise に渡すタイミング**
 New Logo AE は、アカウントが有料のお客様になるまでアカウントを所有します。これが発生したら、アカウントはそれぞれのセグメント（SMB、MM、ENT）に卒業します。
 
-### ハンドオーバープロセス
+### ハンドオーバープロセス {#handover-process}
 
 **New Logo AE の責任**
 
@@ -693,10 +694,10 @@ New Logo AE は、アカウントが有料のお客様になるまでアカウ�
     - 今後 12 か月で販売予定の NetARR
     - 次回購入の推定タイムフレーム
     - b および c がそうであると考える理由
-1. 名指しまたはテリトリー AE、CSM（既知の場合）、お客様と協力してハンドオフコールを設定します
+1. Named または Territory AE、CSM（既知の場合）、お客様と協力してハンドオフコールを設定します
     - New Logo AE はこのコールのスケジュールをリードする必要があります
         - **注**: NL Rep と Named または Territory AE が、メール紹介で十分であることを事前に合意した場合、チームはハンドオフコールをバイパスできます。
-1. 初期金額 AND 次の商談の可能性の合計 NetARR が$10,000 未満、または継承 AE が同意した場合、ハンドオフメールが使用できます。
+1. 初期金額 AND 次の商談の可能性の合計 NetARR が $10,000 未満、または継承 AE が同意した場合、ハンドオフメールが使用できます。
 1. カスタムデッキなどのすべての材料が、[Customers & Prospects](https://drive.google.com/drive/u/0/folders/0B-ytP5bMib9Ta25aSi13Q25GY1U?resourcekey=0-MBirIe2vWyQXYi8cJEkH2Q)ドライブの専用のお客様サブフォルダに追加されていることを確認します。
     - お客様アカウント名の最初の文字に基づき、A-Z とラベル付けされたフォルダの 1 つにサブフォルダを作成します。（例: Acme Inc.は「A」とラベル付けされたフォルダに入ります）
     - お客様向けまたはお客様に関連する内部ドキュメントをすべてフォルダに追加します。これにより、アカウントチーム全体が関連コンテンツすべてを表示できるようになります。
@@ -718,14 +719,14 @@ Digital Sales Room は、AE がキュレーションされたコンテンツを�
 1. FO AE が記録したアクティビティをアカウントアクティビティで確認します。
 1. 上記のメモに基づき、最初のリニューアル日より前にスケジュールされている場合、成長商談を開きます
 1. (ii)のタグ付けされたすべてのメモ、カスタムピッチデッキ、command plan を通読し、アカウントとその可能性を理解します。
-1. 戦略的アカウントの CSM を巻き込み、できるだけ早く彼らを参加させます
+1. 戦略的アカウントの CSM を巻き込み、できるだけ早く CSM に参加してもらいます
 1. Web Directs の場合: 新しいお客様に連絡を取るのは Named/Territory AE の責任です。
 
-### Base から Named/Territory へのアカウント移動プロセス
+### Base から Named/Territory へのアカウント移動プロセス {#process-to-move-accounts-from-base-to-namedterritory}
 
 New Logo Team のアカウント卒業について追加の情報は、[Go-To-Market Rules of Engagement](https://internal.gitlab.com/handbook/sales/go-to-market/rules-of-engagement/#salesforce-ownership--identifiers)ページを参照してください。
 
-### 初期のディールが完了する前に Named または Territory AE を含めることを検討するタイミング
+### 初期のディールが完了する前に Named または Territory AE を含めることを検討するタイミング {#when-to-consider-involving-a-named-or-territory-ae-before-the-initial-deal-is-done}
 
 1. GitLab、見込み客、またはその両方にとって、最初のディールがクローズする前に Named または Territory AE を紹介することが有益な状況があります。これらの状況には、これらに限定されませんが、次のものが含まれます:
     - 戦略的アカウントに追加のサポートが必要な場合。
@@ -733,7 +734,7 @@ New Logo Team のアカウント卒業について追加の情報は、[Go-To-Ma
     - オンサイトミーティングが必要で、Named/Territory AE がそれを処理するのにより適切な地理的位置にいる場合。
     - お客様が、最初の契約が署名された後にアカウントを担当する人物を紹介するように求めた場合。
 
-## この検討を行う際に従うべき一般的なガイドライン
+## この検討を行う際に従うべき一般的なガイドライン {#general-guidelines-to-follow-when-making-this-consideration}
 
 1. 紹介を契約署名前に行うべきかどうかを決定するのは、常に New Logo AE の決定ですが、紹介を行う場合に従うべきいくつかの一般的なベストプラクティスがあります。
     - 理想的には、契約前紹介は、これがスケールの問題にならないよう、より高い LAM アカウントに制限されるべきです。
@@ -742,7 +743,7 @@ New Logo Team のアカウント卒業について追加の情報は、[Go-To-Ma
     - Named/Territory AEs の時間を無駄にしないため、紹介はクローズの可能性が非常に高い場合にのみ行われるべきです。したがって、商談が*ステージ 5 または 6*にあるときに紹介が行われるのが最適です。
 1. Named/Territory AEs と New Logo AEs は、契約前の紹介が意味のあるアカウントを特定するため、頻繁に（平均で 2 週間に 1 回）会うべきです。
 
-## Commercial Leadership Development パイロットプログラム
+## Commercial Leadership Development パイロットプログラム {#commercial-leadership-development-pilot-program}
 
 このパイロットプログラムは、営業管理についてさらに学び、基本的なリーダーシップスキルを構築することに関心のある Commercial チームメンバーを対象としています。
 
@@ -766,7 +767,7 @@ New Logo Team のアカウント卒業について追加の情報は、[Go-To-Ma
 | 7 | 採用と面接 | 多様性、インクルージョン、帰属意識が世界クラスのチーム構築にいかに不可欠か。トップタレントを引き付ける方法に関するリクルーターの視点。Commercial の面接方法論をレビューおよび議論。面接プロセスがインクルーシブで合法であることを確保する質問と活動を議論 |
 | 8 |効果的なパイプ生成キャンペーンのコンポーネント| 持続可能な成長のために一貫したパイプ生成キャンペーンが必要な主な理由をレビュー。効果的なパイプラインキャンペーンの主要コンポーネント。効果的な結果のためにいかに開始、強化、測定、認識するか。 |
 
-### 参加者への期待
+### 参加者への期待 {#expectations-of-participants}
 
 - 時間コミットメント: 四半期中、同期ミーティングと非同期作業の間に専念する時間は合計約 40 時間。
 
@@ -777,12 +778,12 @@ GitLab Commercial 部門は、すべてのチームメンバーが GitLab の CR
 - チームメンバーの現在のポジションで結果を提供し続けること
 - クラスのディスカッション中にインクルーシブであること、代替的な見解を正解または不正解ではなく代替として受け入れて、他のチームメンバーの帰属意識を育む
 
-さらに、プログラムに参加する場合、チームメンバーはミーティングと学習活動に参加するためのベストエフォートを行うことが私たちの期待です。参加できない場合、参加者はできるだけ早くファシリテーターに通知する必要があります。参加者がコースに不在の場合、彼らはプログラムから削除されます。
+さらに、プログラムに参加する場合、チームメンバーはミーティングと学習活動に参加するためのベストエフォートを行うことが私たちの期待です。参加できない場合、参加者はできるだけ早くファシリテーターに通知する必要があります。参加者がコースに出席しない場合、その参加者はプログラムから除外されます。
 
 **誰が参加できますか？**
-良好なパフォーマンス状態（現在パフォーマンスや行動上の警告を受けていない）の、現在の役割で 3 か月以上いる Commercial チームメンバー誰でも。この最初のコホートには 12 人の参加者を選定します。このプログラムは、Commercial チームメンバーにスキルを伸ばす機会を継続的に与えるため、最初のパイロットプログラム後も継続することが意図されています。
+良好なパフォーマンス状態（現在パフォーマンスや行動上の警告を受けていない）の、現在の役割で 3 か月を超えて勤務している Commercial チームメンバー誰でも。この最初のコホートには 12 人の参加者を選定します。このプログラムは、Commercial チームメンバーにスキルを伸ばす機会を継続的に与えるため、最初のパイロットプログラム後も継続することが意図されています。
 
-## その他の関連ページ
+## その他の関連ページ {#other-related-pages}
 
 - [Commercial Sales - Customer Success](/handbook/customer-experience/comm-sales/)
-- [Territories](/handbook/sales/territories/)
+- [テリトリー](/handbook/sales/territories/)

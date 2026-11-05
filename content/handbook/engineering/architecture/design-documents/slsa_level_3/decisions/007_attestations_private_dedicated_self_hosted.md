@@ -3,9 +3,9 @@ layout: handbook-page-toc
 title: "ADR 007: プライベートリポジトリ、GitLab dedicated、self-managed インスタンスの証明"
 description: "この ADR は、パブリック Sigstore インフラストラクチャを使用できない状況でソフトウェア証明を実現する仕組みを定めます。"
 upstream_path: "/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted/"
-upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
-lastmod: "2026-10-28T16:43:54+05:30"
-translated_at: "2026-11-03T21:18:39.452424+00:00"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+lastmod: "2026-11-05T07:24:15+13:00"
+translated_at: "2026-11-05T15:15:16.188555+00:00"
 translator: codex
 stale: false
 ---
@@ -22,7 +22,7 @@ SSCS ステージに属する ~"group::build security" グループは、ユー�
 
 これらのデジタル署名はバックグラウンドワーカーによって開始されますが、
 "public-good" Sigstore インフラストラクチャとして知られるものを活用します。詳細は
-[Sigstore Overview](https://docs.sigstore.dev/about/overview/) ページで確認できます。
+[Sigstore の概要](https://docs.sigstore.dev/about/overview/) ページで確認できます。
 この "public-good" インフラストラクチャは、以下で強調する理由により、プライベート
 リポジトリ、self-managed、dedicated デプロイメントには適していません。
 
@@ -45,22 +45,22 @@ Sigstore と統合することの難しさは、現在の実装がこの種の�
 
 ### 参考資料 {#references}
 
-- [[Discussion] UX to enable SLSA provenance generation (#547903)](https://gitlab.com/gitlab-org/gitlab/-/work_items/547903#note_2748278333)
-- [ADR 002: Generate SLSA Provenance in GitLab Rails backend](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/002_provenance_generation_location/)
+- [[議論] SLSA 出所生成を有効にする UX (#547903)](https://gitlab.com/gitlab-org/gitlab/-/work_items/547903#note_2748278333)
+- [ADR 002: GitLab Rails バックエンドで SLSA 出所を生成する](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/002_provenance_generation_location/)
 - [ADR 004: cosign を GitLab Rails に同梱し、GitLab Rails バックエンドで証明を行う](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/004_attestation_in_sidekiq/)
 - [ADR 006: OCI イメージの SLSA レベル 3 証明の作成を可能にする](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/006_signing_with_sbom_and_provenance_in_oci/)
-- [Cosign Image Signatures. The protocol format explained!](https://medium.com/sigstore/cosign-image-signatures-77bab238a93)
-- [Phase 5: OCI Containers Attestation (#20683) · Epic · gitlab-org](https://gitlab.com/groups/gitlab-org/-/work_items/20683)
-- [Signing artifacts, attesting builds, and why you should do both](https://some-natalie.dev/blog/signing-attesting-builds/)
-- [SLSA • Build: Requirements for producing artifacts](https://slsa.dev/spec/v1.2/build-requirements)
-- [SLSA • Provenance](https://slsa.dev/spec/v1.1/provenance)
-- [SLSA Level 3 Provenance Attestations](/handbook/engineering/architecture/design-documents/slsa_level_3/)
-- [OpenBao chart | GitLab Docs](https://docs.gitlab.com/charts/charts/openbao/)
-- [GitLab Secrets Manager (OpenBao) | GitLab Docs](https://docs.gitlab.com/administration/secrets_manager/#openbao-architecture)
+- [Cosign イメージ署名。プロトコル形式の解説！](https://medium.com/sigstore/cosign-image-signatures-77bab238a93)
+- [フェーズ 5: OCI コンテナの証明 (#20683) · Epic · gitlab-org](https://gitlab.com/groups/gitlab-org/-/work_items/20683)
+- [アーティファクトへの署名、ビルドの証明、両方を行うべき理由](https://some-natalie.dev/blog/signing-attesting-builds/)
+- [SLSA • ビルド: アーティファクト生成の要件](https://slsa.dev/spec/v1.2/build-requirements)
+- [SLSA • 出所](https://slsa.dev/spec/v1.1/provenance)
+- [SLSA レベル 3 出所証明](/handbook/engineering/architecture/design-documents/slsa_level_3/)
+- [OpenBao チャート | GitLab ドキュメント](https://docs.gitlab.com/charts/charts/openbao/)
+- [GitLab Secrets Manager (OpenBao) | GitLab ドキュメント](https://docs.gitlab.com/administration/secrets_manager/#openbao-architecture)
 
 ## 望ましいユーザー体験（UX） {#desired-user-experience-ux}
 
-[SLSA level 3 provenance attestations](https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/)
+[SLSA レベル 3 出所証明](https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/)
 ページで指定されている UX には変更が必要です。
 
 新しい CI/CD 変数で、ローカル CA を使用するかどうかを制御します。この任意の変数
@@ -143,7 +143,7 @@ GitLab.com 内のプライベートプロジェクトは、この情報を公開
 "public-good" Sigstore インフラストラクチャを使用できなくする追加の制約があります。
 
 上記の説明では "OpenID Provider" への言及があります。これらはデフォルトで制限されており、
-Fulcio は allowlist を維持しています。GitLab.com の場合、"[Use GitLab.com as an OIDC provider for cosign (#10254)](https://gitlab.com/groups/gitlab-org/-/work_items/10254)"
+Fulcio は allowlist を維持しています。GitLab.com の場合、"[GitLab.com を cosign の OIDC プロバイダーとして使用する (#10254)](https://gitlab.com/groups/gitlab-org/-/work_items/10254)"
 チケットで追跡されているように、私たちの OIDC プロバイダーがリストに追加されるよう特定の作業を行いました。
 
 self-managed および dedicated デプロイメントの場合、各顧客は、自身のインスタンスが許可されるために
@@ -154,12 +154,12 @@ self-managed および dedicated デプロイメントの場合、各顧客は�
 
 #### Rekor とは {#what-is-rekor}
 
-出典: [An Introduction to Rekor — Chainguard Academy](https://edu.chainguard.dev/open-source/sigstore/rekor/an-introduction-to-rekor/):
+出典: [Rekor 入門 — Chainguard Academy](https://edu.chainguard.dev/open-source/sigstore/rekor/an-introduction-to-rekor/):
 
 > Rekor はアーティファクトメタデータの記録を保存し、
 > 署名の透明性を提供することで、オープンソースソフトウェアコミュニティが
 > ソフトウェアサプライチェーンの改ざんを監視および検出するのを支援します。技術的なレベルでは、
-> これは append-only（「immutable」と呼ばれることもあります）のデータログであり、ソフトウェアアーティファクトに関する
+> これは追記専用（「不変」と呼ばれることもあります）のデータログであり、ソフトウェアアーティファクトに関する
 > 署名済みメタデータを保存します。これにより、ソフトウェア利用者は、
 > ソフトウェアアーティファクトが主張どおりのものであることを
 > 検証できます。Rekor は、誰でも投稿でき、
@@ -186,8 +186,8 @@ Rekor の主な特性は次のとおりです。
 - 改ざん耐性
 
 Rekor がパブリックインフラストラクチャで果たす役割についての詳細は、
-[Threat Model](https://docs.sigstore.dev/about/threat-model/) ページで確認できます。Rekor に関する追加調査と、
-その動作を社内で再現する可能性については、[Explore designs for multi-tenant attestations (#21881)](https://gitlab.com/groups/gitlab-org/-/work_items/21881)
+[脅威モデル](https://docs.sigstore.dev/about/threat-model/) ページで確認できます。Rekor に関する追加調査と、
+その動作を社内で再現する可能性については、[マルチテナント証明の設計を検討する (#21881)](https://gitlab.com/groups/gitlab-org/-/work_items/21881)
 ページで確認できます。
 
 #### 不変で改ざん耐性のあるログの使用は SLSA L3 の要件か {#is-use-of-an-immutable-tamper-resistant-log-a-requirement-for-slsa-l3}
@@ -203,7 +203,7 @@ Rekor がパブリックインフラストラクチャで果たす役割につ�
 
 ## 決定: PostgreSQL に保存されたキーを使用して署名を実行する {#decision-perform-signing-using-a-key-stored-in-postgresql}
 
-検討した選択肢の完全な議論は、"[Investigate Options for self-managed/customer owned Sigstore. (#590549)](https://gitlab.com/gitlab-org/gitlab/-/work_items/590549)"
+検討した選択肢の完全な議論は、"[self-managed/顧客所有の Sigstore の選択肢を調査する。 (#590549)](https://gitlab.com/gitlab-org/gitlab/-/work_items/590549)"
 チケットで確認できます。
 
 実装の複雑さ、顧客にとっての使いやすさ、セキュリティなどの側面を慎重に検討した結果、私たちは次のように決定しました。
@@ -230,10 +230,10 @@ Rekor がパブリックインフラストラクチャで果たす役割につ�
   [署名用エフェメラルキーの生成](#generation-of-ephemeral-keys-for-signing)を参照してください。
 
 各プロジェクトの CA は PostgreSQL に保存し、秘密鍵は保存時に暗号化します。これらのキーは、
-[Secure coding development guidelines](https://docs.gitlab.com/development/secure_coding_guidelines/#handling-credentials)、
+[セキュアコーディング開発ガイドライン](https://docs.gitlab.com/development/secure_coding_guidelines/#handling-credentials)、
 特に秘密鍵について明示的に記載されている「Handling Credentials」セクションに従って取り扱います。
-また、この決定には、[GitLab Cryptography Standard](/handbook/security/policies_and_standards/cryptographic-standard/)と
-[Encryption Standard](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/encryption-standard/)も関連します。
+また、この決定には、[GitLab 暗号標準](/handbook/security/policies_and_standards/cryptographic-standard/)と
+[暗号化標準](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/encryption-standard/)も関連します。
 
 キーには P-256 曲線上の ECDSA を使用し、証明書には SHA-256 で署名します。
 RSA も使用可能でしたが、セキュリティとパフォーマンスの特性から ECDSA を選びました。
@@ -282,38 +282,19 @@ CA の操作は抽象化しているため、リーフ証明書の構築方法�
 
 ### 署名用エフェメラルキーの生成 {#generation-of-ephemeral-keys-for-signing}
 
-各証明に対して、中間のエフェメラルキーが生成されます。そのキーに関連付けられた公開鍵は
-`SupplyChain::Attestation` モデル内に永続化されます。
+このセクションは、
+[ADR 008: LOCAL_CA 証明への署名](/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/008_signing_local_ca_attestations/)に置き換えられました。
 
-```ruby
-# Generate the key. Choose the right key type based on the considerations above.
-key = OpenSSL::PKey::RSA.new 2048
-name = OpenSSL::X509::Name.parse '/CN=#{sanitised_ci_ref_uri}/DC=gitlab'
-
-cert = OpenSSL::X509::Certificate.new
-cert.version = 2
-cert.serial = 0
-cert.not_before = Time.now
-cert.not_after = Time.now + 3600
-
-cert.public_key = key.public_key
-cert.subject = name
-```
-
-上記の `cert` は、次のように `ca_cert` で署名できます。`SHA1` は単なる例であり、代わりに適切なダイジェストを選択すべきです。
-
-```ruby
-# Choose the appropriate digest to use instead of SHA1.
-cert.sign ca_key, OpenSSL::Digest.new('SHA1')
-```
-
-このキーは、[Signing with Self-Managed Keys](https://docs.sigstore.dev/cosign/key_management/signing_with_self-managed_keys/)
-ページで `cosign` によって提供されている手順に従って、出所の署名に使用できます。
+要約すると、各証明には新しい ECDSA P-256 キーで署名します。
+プロジェクトの CA は、そのキーに対してリーフ証明書を発行し、たとえば
+`https://gitlab.example.com/my-group/my-project//.gitlab-ci.yml@refs/heads/main`
+のような URI サブジェクト代替名にアイデンティティを格納します。
+証明書の有効期間は長く、証明のバンドルに保存します。秘密鍵は署名後に破棄します。
 
 ### 署名の検証 {#signature-verification}
 
 署名の検証は手動で実行することも、GitLab の `glab` ツールを通じて実行することもできます。`glab` の呼び出しは、
-[SLSA level 3 provenance attestations](https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/#verifying-attestations)
+[SLSA レベル 3 出所証明](https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/#verifying-attestations)
 ページに文書化されている方法と同じ見た目になります。例:
 
 ```bash
@@ -339,9 +320,9 @@ glab attestation verify gitlab-org/gitlab filename.txt
    これにより、出所がそれに関連付けられたキーによって署名されていることを確認します。
 2. エフェメラルキーが有効な "Root CA" によって署名されていることを確認します。これは上記のステップ 5 で返された情報を使って行われます。
 3. `subject` フィールドがリポジトリの `ci_ref_uri` と一致することを確認します。このフィールドは
-   [OpenID Connect (OIDC) Authentication Using ID Tokens](https://docs.gitlab.com/ci/secrets/id_token_authentication/)に文書化されています。
+   [ID トークンを使用した OpenID Connect（OIDC）認証](https://docs.gitlab.com/ci/secrets/id_token_authentication/)に文書化されています。
 
-ステップ 1 は、[Signing with Self-Managed Keys](https://docs.sigstore.dev/cosign/key_management/signing_with_self-managed_keys/)
+ステップ 1 は、[自己管理キーを使用した署名](https://docs.sigstore.dev/cosign/key_management/signing_with_self-managed_keys/)
 ページで提供されている手順で完了できます。ステップ 2 と 3 は、Ruby の次のコードで実現できます。
 
 ```ruby
@@ -390,8 +371,8 @@ cert.subject == name
 - `cosign` インテグレーションのエンドツーエンドテストにより、`cosign` アップグレードに対する保証を提供する。
 - 特に失敗シナリオについて、広範なテストカバレッジを実装する。これにより、停止を適切に処理するための
   適切な対策が整っていることを保証する。
-- 一時的な停止が SLSA 証明生成の永続的な失敗につながらないよう、Sidekiq ジョブには適切な retry が設定される。
-- この機能は、明示的に opt-in したユーザーに対してのみ有効化される。
-- 一時的な失敗への対応には、Sidekiq のデフォルトの [retry configuration](https://docs.gitlab.com/development/sidekiq/#retries)を使用する。
-  また、私たちの worker には [external dependencies](https://docs.gitlab.com/development/sidekiq/worker_attributes/#jobs-with-external-dependencies)があるものとしてフラグを付けています。
+- 一時的な停止が SLSA 証明生成の永続的な失敗につながらないよう、Sidekiq ジョブには適切な再試行が設定される。
+- この機能は、明示的に利用を選択したユーザーに対してのみ有効化される。
+- 一時的な失敗への対応には、Sidekiq のデフォルトの [再試行設定](https://docs.gitlab.com/development/sidekiq/#retries)を使用する。
+  また、私たちのワーカーには [外部依存関係](https://docs.gitlab.com/development/sidekiq/worker_attributes/#jobs-with-external-dependencies)があるものとしてフラグを付けています。
   これは `SIGSTORE` 証明に適用されます。`LOCAL_CA` 証明は Sigstore サービスに依存しません。

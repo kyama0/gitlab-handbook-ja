@@ -2,21 +2,20 @@
 title: "Digital Customer Success Programs からヘルプを得る"
 description: "DCS チームへのヘルプリクエスト方法と期待できること"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/cs-ops-programs/getting-help-from-dcs/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T12:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:53:32.057904+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## 新しいプログラムの提案または既存プログラムの更新
+## 新しいプログラムの提案または既存プログラムの更新 {#propose-a-new-program-or-update-an-existing-one}
 
 メールシリーズなどの新しいプログラムをリクエストしたり、既存プログラムに貢献したり、既存プログラムを更新したりできます。使いやすさのために Issue テンプレートを提供しています。
 
 **新しいプログラムを提案する、または既存プログラムを更新するには:**
 
-1. [CS Ops Project](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues) で新しい Issue を開きます。
+1. [CS Ops Project](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues)で新しい Issue を開きます。
 
 1. CS Programs から適切なテンプレートを選択します。
 
@@ -24,7 +23,7 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
 CS Programs がリクエストを割り当てます。緊急の Issue やリクエストに関する質問については、Gainsight 管理者に `@mention` を行うか、`#cs_ops_and_programs` Slack チャンネルで質問してください。
 
-### 新規プログラムのタイムライン
+### 新規プログラムのタイムライン {#new-program-timeline}
 
 新しいプログラムのワークフローは次のとおりです:
 
@@ -36,7 +35,7 @@ CS Programs がリクエストを割り当てます。緊急の Issue やリク�
 
 一般的に、新しいプログラムには少なくとも *1 マイルストーン* が必要で、ほとんどの場合、リクエストの複雑さによっては 2 マイルストーンに近くなることがあります。
 
-### プログラム更新のタイムライン
+### プログラム更新のタイムライン {#program-update-timeline}
 
 プログラム更新リクエストのワークフローは次のとおりです:
 
@@ -47,14 +46,14 @@ CS Programs がリクエストを割り当てます。緊急の Issue やリク�
 
 一般的に、プログラムの更新には少なくとも *1 マイルストーン* が必要です。変更の規模によっては、より長くかかる場合があります。たとえば、段落の追加やメールからの箇条書きの削除はシンプルですが、シリーズに完全に新しいメールを追加するには、Gainsight の制約により新しいプログラムの作成が必要です。
 
-## デジタル顧客のための A/B テストとコントロールグループ
+## デジタル顧客のための A/B テストとコントロールグループ {#ab-testing-and-control-groups-for-digital-customers}
 
-時には、件名、コールトゥアクション、またはプログラム自体の有効性をテストするために、デジタルプログラムに [A/B テスト](https://hbr.org/2017/06/a-refresher-on-ab-testing) を適用します。Customer Success Operations チームは、各顧客を A または B のいずれかに振り分けるルールを作成しました。
+時には、件名、コールトゥアクション、またはプログラム自体の有効性をテストするために、デジタルプログラムに [A/B テスト](https://hbr.org/2017/06/a-refresher-on-ab-testing)を適用します。Customer Success Operations チームは、各顧客を A または B のいずれかに振り分けるルールを作成しました。
 
 A/B テストのセットアップ方法について詳しくは、[Issue ページ](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/230)を参照してください。
 
 プログラムの影響と効果を測定するために、デジタル顧客に対してコントロールグループも使用されます。私たちはこの洞察を使って調整を行い、提供する価値を検証します。検証された後、顧客体験を改善する長期プログラムからコントロールグループを削除します。これは、パイロットプログラム中に少数の顧客がオンボーディングまたはイネーブルメントコンテンツを受信しないことを意味する場合があります。
 
-## 期限と時間の見通し
+## 期限と時間の見通し {#deadlines-and-time-expectations}
 
 私たちが送信する各プログラムは、Digital Customer Success (DCS) Programs チームが Gainsight で作成します。プログラムが作成・設計された後、コンテンツに変更を加えることができます。特に送信ルールやその他のパラメータが特殊な場合、新しいプログラムの作成は時間のかかるタスクになります。詳細は「新しいプログラムの提案または既存プログラムの更新」を参照してください。

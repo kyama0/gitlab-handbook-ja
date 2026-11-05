@@ -1,64 +1,35 @@
 ---
 title: "Executive Business Administrators (EBAs)"
 upstream_path: /handbook/eba/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T11:16:44+09:00"
+upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
+translated_at: "2026-11-05T15:23:57.350605+00:00"
 translator: claude
 stale: false
-lastmod: 2026-08-26T14:00:52-04:00
+lastmod: "2026-11-04T10:37:40-08:00"
 ---
 
-## はじめに
+## はじめに {#intro}
 
 このページでは、GitLab の Executive Business Administrators（EBA）に固有のプロセスと一般的なガイドラインについて詳述します。このページは参考として活用するためのものであり、必要に応じて自由に逸脱したり、内容を更新したりしてかまいません。
 
-## Executive Business Administrator チーム {#executive-business-administrator-team}
+## Executive Business Administrator Team {#executive-business-administrator-team}
 
-現在のエグゼクティブサポートのアラインメントは[こちら](https://docs.google.com/presentation/d/1_tRO-5bDjcwUfqsLazfy4AcqeCLe8jOvDl04BHYlhEE/edit?usp=sharing)で確認できます。
+現在のエグゼクティブサポートの担当は、[EBA チームディレクトリ](https://gitlab-com.gitlab.io/eba-team/)で確認できます。
 
-| 組織 |  エグゼクティブサポート職務  | エグゼクティブ  |
-| --- | --- | --- |
-| [CEO](/job-description-library/chief-executive-officer/) | **Jeanne Rotenberry**<br>Staff EBA | Bill Staples (CEO) |
-| [Engineering](/handbook/engineering/) | **Romney Wyatt**<br>Sr EBA | Siva Padisetty (CTO) |
-| [Engineering](/handbook/engineering/) | **Kyra Wright**<br>Sr EBA<br>（暫定）| <br>Tim Zallmann (VP of Engineering, Core Development)<br>Michael Wildpaner (VP Engineering) |
-| [Engineering](/handbook/engineering/) | **Kyra Wright**<br>Sr EBA | Kimberly Wolk (VP of DevOps)<br>Nitin Singhal (VP Data Eng & Monitization) |
-| [Engineering](/handbook/engineering/) | **Charlotte Nguyen**<br>Sr EA | Mani Sundaram (VP of Platforms Eng)<br>Kranthi Erusu (VP of Scale & Architecture)<br>Rishi Rangarajan (Chief of Staff to CTO) |
-| Enterprise Technology & AI | **Mary Moreno**<br>Sr EBA  | Manu Narayan (CIO) |
-| Enterprise Technology & AI | **Christine Baez**<br>Sr EBA  | Namo Tiwari (VP Business Systems)<br>Johnny Scarborough Jr (VP Support) |
-| [Finance](/handbook/finance/) | **Darci Tadich**<br>Staff EBA |  Jessica Ross (CFO) |
-| [Finance](/handbook/finance/) | **Sarah Chapman**<br>Sr EBA | Simon Mundy (Chief Accounting Officer)<br>Danielle Ritter (VP of Internal Audit)<br>Danelle Foust (VP Corporate Controller) |
-| [Finance](/handbook/finance/) | **Anita Mall**<br>Sr EBA | James Shen (VP of FP&A)<br>Jim Gladen (VP of Tax )<br>Yao Chew (VP of Investor Relations) |
-| [Legal & Corporate Affairs](/handbook/legal/) | **Sharlene Seemungal**<br>Staff EBA  | Robin Schulman (CLO and Head of Corporate Affairs) |
-| [Legal & Corporate Affairs](/handbook/legal/) | **Victoria Hutson**<br> EBA | Craig Patrick (Chief of Staff, CLO & Head of Corporate Affairs) <br>Rashmi Chachra (VP of Legal - Corporate & Compliance)<br>Stacy Cline (Sr. Director of ESG)|
-| [Legal & Corporate Affairs](/handbook/legal/)  | **Amanda Wells**<br>EBA  | Eliran Mesika (VP of Corporate Development)<br>Emily Plotkin (Sr. Director of Legal, Employment)<br>Lynsey Sayers (VP of Legal, Privacy & IP)<br>Dan Hodes (Sr. Director of Legal, Risk Management and Dispute Resolution)<br> Sam Rizzo (Sr. Director of Public Policy) |
-| [Marketing](/handbook/marketing/)| **Linsea O'Shea**<br>Sr EBA | Andy Ramirez (VP, Growth Marketing)<br>Özer Dondurmacioǧlu (VP, Product Marketing) |
-| [People](/handbook/people-group/) | **Jenn Quinn**<br>Sr EBA | Rob Allen (CPO) <br> Marcy Tavano (VP of People Business Partners and Team Member Relations) |
-| [People](/handbook/people-group/) | **Monica Battle**<br> | Allia McCrank (VP of Total Rewards)<br> Sherida McMullan (VP of Diversity, Inclusion and Belonging)<br> Jessica Dallmer (VP of Talent Acquisition)<br> Devin Rogozinski (VP of People Strategy and Engagement) |
-| [Product](/handbook/product/) & [Marketing](/handbook/marketing/) |**Heather Hardowa**<br>Sr EBA | Manav Khurana (CPMO)|
-| [Product](/handbook/product/) | **Lindsey Beyl**<br>Sr EBA | Jonah Sterling (Chief Design Officer)<br> Stuart Moncada (VP of Product, AI)<br> Oren Ben-Shaul (VP of Product Platforms) |
-| [Product](/handbook/product/) | **Jazmin Cox**<br>Sr EBA | Omer Azaria (VP of Product, Security & Compliance)<br> Anand Ahire (VP of Product, Core DevOps) |
-| [Sales](/handbook/sales/) | **Missy Keasler**<br>Staff EBA | Ian Steward (CRO) |
-| [Sales](/handbook/sales/) | **Becky Piccone**<br>Sr EBA | Rachael Rogers (Chief of Staff, CRO)<br> Dorina Pulluqi (VP High Velocity Sales & Sales Development) |
-| [Sales](/handbook/sales/) | **Lauren Traylor**<br>Sr EBA | Sherrod Patching (Chief Customer Officer)<br>Ted Ohr (VP, Professional Services) |
-| [Sales](/handbook/sales/) | **Janice Parker**<br> EBA | Craig Nielsen (VP, APJ Sales) |
-| [Sales](/handbook/sales/) | **Kiran Gill**<br>Sr EBA | Dave Hayward (VP Revenue, Strategy & Operations)<br>Alex Picker (VP, Global Ecosystem) |
-| [Sales](/handbook/sales/) | **Victoria Reinhardt**<br>Sr EBA | Brian Wald (Field CTO)<br>Michael Rooney (VP, Global New Business) |
-| [Sales](/handbook/sales/) | **Claire Humphreys**<br>EBA | Duncan Greenwood (VP, EMEA Sales) |
-| [Security](/handbook/security/) | **募集中**<br>Sr EBA  | Jorge Lopez (Acting CISO)  |
-| [Security](/handbook/security/) | **Destiny Jenkins**<br> EBA | 未定 |
+エグゼクティブの Slack プロフィールを開き、People > Executive Support までスクロールして、そのエグゼクティブの EBA を確認することもできます。
 
-## お問い合わせ
+## お問い合わせ {#contact-us}
 
 私たちと連絡を取りたい場合は、Slack のダイレクトメッセージでご連絡ください。
 
-## ミーティング依頼の要件
+## ミーティング依頼の要件 {#meeting-request-requirements}
 
 GitLab のリーダーとのミーティングを設定したい場合は、適切な EBA に以下の情報を Slack で送ってください。
 
 1. 必須/任意の参加者
 1. ミーティングタイプ: 社内準備、クライアント対応／顧客、見込み顧客など
-1. 緊急度／希望時期: 今後2日以内、今後1〜2週間以内など
-1. 所要時間: 25分、50分など
+1. 緊急度／希望時期: 今後 2 日以内、今後 1〜2 週間以内など
+1. 所要時間: 25 分、50 分など
 1. ミーティングの議題
 1. コンテキストの提供: [アジェンダドキュメント](https://docs.google.com/document/d/1NOrWfwnbnas4jktAsgiFKSKY787xNKbBx1siLIAoV4M/edit?usp=sharing)へのリンクを含め、ドキュメント内にもコンテキストを記載してください。これにより、EBA が E-Group とのミーティング内容を適切に理解し、優先順位を付けられます。この Google Docs はカレンダー招待に必ず含める必要があります。ミーティングを依頼する側は、アジェンダドキュメントを準備する責任があります。
 
@@ -66,20 +37,20 @@ GitLab のリーダーとのミーティングを設定したい場合は、適�
 
 GitLab の E-Group メンバーとあなたの顧客、見込み顧客またはパートナーとの通話をスケジュールするには、上記の指示に従ってください。顧客、パートナー、見込み顧客とのミーティングをスケジュールするには、以下のドキュメントが必要です。
 
-1. [Glean Executive Meeting Request & Briefing Document](https://app.glean.com/chat/agents/e01a675cda3d451da6219aa029e3de3f) は、顧客、見込み顧客、パートナーとのすべてのミーティングで使用し、ミーティング依頼時に EA に提供する必要があります。File > Submit via glean agent を選択してください。ミーティングの目的と主な焦点を反映するように、ドキュメントを必ずレビューして修正してください。最終的なドキュメントは 3〜4 ページを超えないようにします。このプロセスに関する質問がある場合は、Slack で Executive Business Administrator チームにメンションしてください。任意で、[Executive Meeting Request & Briefing Document](https://docs.google.com/document/d/17Sd8bjWsj30kvSqIMk1_crLwuBGBSHUjUybOknblOgM/edit?usp=sharing) を活用することもできます。
-1. E-Group メンバーとのミーティングについては、ブリーフィングドキュメントを完成させ、[#egroup-customer-meetings](https://gitlab.enterprise.slack.com/archives/C06EVDX2ZJQ) でチャンネル内のワークフローを使ってリクエストを提出してください。
-1. 対面の顧客ミーティングについては、訪問詳細をすべて調整するため、[該当する EBA](https://docs.google.com/presentation/d/1_tRO-5bDjcwUfqsLazfy4AcqeCLe8jOvDl04BHYlhEE/edit?usp=sharing) と連携してください。依頼された GitLab エグゼクティブに EBA が割り当てられていない場合は、直接そのエグゼクティブと連携してください。
+1. [Glean Executive Meeting Request & Briefing Document](https://app.glean.com/chat/agents/e01a675cda3d451da6219aa029e3de3f)は、顧客、見込み顧客、パートナーとのすべてのミーティングで使用し、ミーティング依頼時に EA に提供する必要があります。file > Submit via glean agent を選択してください。ミーティングの目的と主な焦点を反映するように、ドキュメントを必ずレビューして修正してください。最終的なドキュメントは 3〜4 ページを超えないようにします。このプロセスに関する質問がある場合は、Slack で Executive Business Administrator Team にメンションしてください。任意で、[Executive Meeting Request & Briefing Document](https://docs.google.com/document/d/17Sd8bjWsj30kvSqIMk1_crLwuBGBSHUjUybOknblOgM/edit?usp=sharing)を活用することもできます。
+1. E-Group メンバーとのミーティングについては、ブリーフィングドキュメントを完成させ、[#egroup-customer-meetings](https://gitlab.enterprise.slack.com/archives/C06EVDX2ZJQ)でチャンネル内のワークフローを使ってリクエストを提出してください。
+1. 対面の顧客ミーティングについては、訪問詳細をすべて調整するため、[該当する EBA](/handbook/eba/#executive-business-administrator-team)と連携してください。依頼された GitLab エグゼクティブに EBA が割り当てられていない場合は、直接そのエグゼクティブと連携してください。
 
-### 外部イベントおよびスピーキングエンゲージメント
+### 外部イベントおよびスピーキングエンゲージメント {#external-events--speaking-engagement}
 
-1. E-Group メンバーがイベント（基調講演、パネル、ファイヤーサイドチャットなど）に参加したり登壇したりすることをリクエストする場合は、[Executive External Event Brief](https://docs.google.com/document/d/1qMCw9gGTAdk3YW-AW2W_eCYXMGcNYyaq_wN0giSf-yk/edit) に主要情報を記入し、そのエグゼクティブをサポートする EBA にメールでリクエストを送ってください。EBA がレビューを行いフィードバックを提供し、承認を得たうえで直接あなたに確認します。リクエストが CEO に関わる場合は、ここで概説されているプロセスに従ってください。CEO の EBA は、CEO が参加するかどうかについて、リクエスト元の部門長から承認を取得します。新しい講演を準備する必要があるか、既存の講演を聴衆に合わせて調整できるかは、イベントへの参加可否を判断する一環として検討します。
+1. E-Group メンバーがイベント（基調講演、パネル、ファイヤーサイドチャットなど）に参加したり登壇したりすることをリクエストする場合は、[Executive External Event Brief](https://docs.google.com/document/d/1qMCw9gGTAdk3YW-AW2W_eCYXMGcNYyaq_wN0giSf-yk/edit)に主要情報を記入し、そのエグゼクティブをサポートする EBA にメールでリクエストを送ってください。EBA がレビューを行いフィードバックを提供し、承認を得たうえで直接あなたに確認します。リクエストが CEO に関わる場合は、ここで概説されているプロセスに従ってください。CEO の EBA は、CEO が参加するかどうかについて、リクエスト元の部門長から承認を取得します。新しい講演を準備する必要があるか、既存の講演を聴衆に合わせて調整できるかは、イベントへの参加可否を判断する一環として検討します。
 1. [対面イベントミーティングテンプレート](https://docs.google.com/spreadsheets/d/1IKUD9rYgqyiZ8QLYgKurzgwAljI-U9YunvQdPk--wIo/edit#gid=643328991)
 
-### エグゼクティブとの面接リクエスト
+### エグゼクティブとの面接リクエスト {#interview-requests-with-executives}
 
-エグゼクティブとの面接を依頼する際は、以下に示すプロセスに従ってください。Candidate Experience チームと Executive Business Administrator チームは、面接スケジュールに対して24営業時間以内の SLA で対応します。採用は GitLab における最優先事項であり、チームは面接リクエストを優先する必要があります。
+エグゼクティブとの面接を依頼する際は、以下に示すプロセスに従ってください。Candidate Experience チームと Executive Business Administrator Team は、面接スケジュールに対して 24 営業時間以内の SLA で対応します。採用は GitLab における最優先事項であり、チームは面接リクエストを優先する必要があります。
 
-1. CES チームは、面接に必要なすべての詳細とともに [該当する EBA](/handbook/eba/#executive-business-administrator-team) に Slack でメッセージを送信します
+1. CES チームは、面接に必要なすべての詳細とともに [該当する EBA](/handbook/eba/#executive-business-administrator-team)に Slack でメッセージを送信します
    - スケジュール対象のエグゼクティブ
    - 面接時間
    - 特別な時間枠の指定
@@ -88,10 +59,10 @@ GitLab の E-Group メンバーとあなたの顧客、見込み顧客または�
 1. EBA は次のいずれかを行います。
    - メッセージのスレッドで CES に時間と Zoom リンク（該当する場合）を提供し、CES が Greenhouse でスケジュールを設定し確認メールを送信できるようにする
    - Greenhouse にアクセスして面接をスケジュールし、その後、面接がスケジュールされ確認メールを送信する準備ができたことをスレッドで CES チームに通知する。CEO と CRO のスケジューリングは例外であり、CEO と CRO の EBA が処理します。確認メールは EBA から直接送信されます。
-1. CES チームは、24営業時間以内に EBA から返答がない場合、必要に応じてフォローアップを行います
+1. CES チームは、24 営業時間以内に EBA から返答がない場合、必要に応じてフォローアップを行います
 
-### 会社宛て郵便（Stable Mail）
+### 会社宛て郵便（Stable Mail） {#company-mail-stable-mail}
 
 GitLab は、登録済みのサンフランシスコ事業所住所宛ての国内郵便について、エンタープライズ向け郵便スキャンおよび転送サービスである Stable を利用しています。Stable は UPS Store の私書箱から郵便物を回収し、受信郵便物をデジタル化して、物理郵便物の安全な振り分け、転送、または廃棄を可能にします。
 
-運用の詳細、振り分けルール、ライセンス割り当て、チーム受信者、および料金はすべて、[GitLab Domestic Enterprise Mail Service SOP（社内）](https://docs.google.com/document/d/1-41U8Fhqpjb6bAn6tutWHWZgZsz41tklfs7E1kjSLOo) で管理されています。
+運用の詳細、振り分けルール、ライセンス割り当て、チーム受信者、および料金はすべて、[GitLab Domestic Enterprise Mail Service SOP（社内）](https://docs.google.com/document/d/1-41U8Fhqpjb6bAn6tutWHWZgZsz41tklfs7E1kjSLOo)で管理されています。

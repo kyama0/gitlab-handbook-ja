@@ -3,21 +3,21 @@ title: GitLab のセキュリティ
 # See https://www.docsy.dev/docs/adding-content/content/#docs-section-landing-pages
 no_list: true
 upstream_path: /handbook/security/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T06:36:19+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:18:14.793826+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-## <i class="fas fa-rocket" id="biz-tech-icons"></i> セキュリティのビジョンとミッション {#security-vision-and-mission}
+## <i class="fas fa-rocket"></i> セキュリティのビジョンとミッション {#security-vision-and-mission}
 
 私たちのビジョンは、世界を透明性をもって安全な成果へと導くことです。
 
 私たちのミッションは、安全でセキュアで信頼できる DevSecOps プラットフォーム上で、誰もがイノベーションを起こし成功できるようにすることです。これは 5 つのセキュリティ運営原則によって達成されます。
 
 1. ビジネスの成功を加速する。以下に注力します。
-   - リスクを最小化する「退屈で」反復的な解決策を優先する
+   - リスクを最小化する「退屈」でイテレーションを重ねる解決策を優先する
    - Yes と言える方法を見つける
    - 解決策を提案する前に目標を理解する
    - GitLab を最初に使う
@@ -56,19 +56,19 @@ Security Division は、必須のセキュリティ運用サービスを提供�
 <table id="Sub-Departments">
   <tr>
     <th class="text-center">
-        <i class="fas fa-bullseye i-bt"></i>
+        <i class="fas fa-bullseye"></i>
         <h5><a href="product-security/">Product Security</a></h5>
     </th>
     <th class="text-center">
-        <i class="fas fa-shield-alt i-bt"></i>
+        <i class="fas fa-shield-alt"></i>
         <h5><a href="security-operations/">Security Operations</a></h5>
     </th>
     <th class="text-center">
-        <i class="fas fa-shield-alt i-bt"></i>
+        <i class="fas fa-shield-alt"></i>
         <h5><a href="/handbook/security/corporate/">Corporate Security</a></h5>
     </th>
     <th class="text-center">
-        <i class="fas fa-hands-helping i-bt"></i>
+        <i class="fas fa-hands-helping"></i>
         <h5><a href="security-assurance/">Security Assurance</a></h5>
     </th>
   </tr>
@@ -135,7 +135,7 @@ GitLab は会社であり、製品でもあります。[Corporate Security](/han
 
 私たちは[デバイストラスト、アイデンティティ管理、インフラストラクチャガバナンス](/handbook/security/corporate/team/#functional-org-chart)に大きく投資し、製品の管理者に最高水準のセキュリティ保証を提供し、顧客データを取り扱う際にすべての適切なコントロールが整備されていることを保証しています。
 
-### <i id="biz-tech-icons" class="fas fa-users"></i> チームへの連絡 {#contacting-the-team}
+### <i class="fas fa-users"></i> チームへの連絡 {#contacting-the-team}
 
 #### 脆弱性とセキュリティ問題の報告 {#reporting-vulnerabilities-and-security-issues}
 

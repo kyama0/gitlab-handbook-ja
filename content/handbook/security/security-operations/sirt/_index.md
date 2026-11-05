@@ -2,16 +2,16 @@
 title: Security Incident Response Team - SIRT
 description: GitLab Security Incident Response Team の概要
 upstream_path: /handbook/security/security-operations/sirt/
-upstream_sha: 1d268efe755c0706a7fc3d454b9e304624dd0423
-translated_at: "2026-10-28T21:11:06.852598+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:23:25.989927+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-27T16:16:54-05:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
 Security Incident Response Team (SIRT) は、GitLab.com および会社としての GitLab に影響を与えるセキュリティイベントの検知、対応、調査を専門に担当する GitLab のチームであり、ビジネス、プラットフォーム、そしてユーザーからの信頼を守ります。
 
-## <i class="fas fa-rocket" id="biz-tech-icons"></i> 私たちのビジョン {#our-vision}
+## <i class="fas fa-rocket"></i> 私たちのビジョン {#our-vision}
 
 人間がインテリジェントな自動化を指揮し、セキュリティ脅威を迅速に把握して封じ込め、すべてのインシデントを通じて GitLab のレジリエンスを高めます。
 
@@ -19,7 +19,7 @@ Security Incident Response Team (SIRT) は、GitLab.com および会社として
 
 私たちは、セキュリティ脅威に迅速に対応し、調査し、封じ込めることで、GitLab と顧客を守ります。専門の対応担当者と AI ネイティブの自動化を組み合わせ、インシデントから得た学びを、防御の強化とシステム全体に及ぶリスクの低減につなげます。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> チーム {#the-team}
+## <i class="fas fa-users"></i> チーム {#the-team}
 
 ### チームメンバー {#team-members}
 
@@ -45,7 +45,7 @@ Security Incident Response Team (SIRT) は、GitLab.com および会社として
 |Joel Clarke|[Security Engineer](/job-description-library/security/security-incident-response-team/#security-incident-response-team-engineer-intermediate)|
 |Josh Boyce|Principal Incident Commander|
 
-## <i class="fas fa-stream" id="biz-tech-icons"></i> 提供しているサービス {#services-we-provide}
+## <i class="fas fa-stream"></i> 提供しているサービス {#services-we-provide}
 
 1. リアクティブ - 進行中のインシデント対応に対応するように設計されたサービス。以下を含みますがこれらに限られません。
     - インシデント分析
@@ -59,13 +59,13 @@ Security Incident Response Team (SIRT) は、GitLab.com および会社として
     - 検知およびレスポンスエンジニアリング
 1. 管理 - GitLab の Legal および HR 部門からのリクエストに対応するように設計されたサービス。
 
-## <i class="fas fa-bullseye" id="biz-tech-icons"></i> SIRT へのエンゲージ {#engaging-sirt}
+## <i class="fas fa-bullseye"></i> SIRT へのエンゲージ {#engaging-sirt}
 
 SIRT は、あらゆるセキュリティインシデントの支援のために [24/7/365](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#security-team-on-call-rotation)のオンコール体制を取っています。緊急のセキュリティインシデントが特定された場合、またはインシデントが発生した可能性があると思われる場合は、[Security Engineer On-Call へのエンゲージ](/handbook/security/security-operations/sirt/engaging-security-on-call/)を参照してください。
 
 SIRT の責任とインシデントオーナーシップに関する情報は、[SIRT オンコールガイド](/handbook/security/security-operations/secops-oncall/)で確認できます。
 
-## <i class="fas fa-receipt" id="biz-tech-icons"></i> インシデント管理とレビュー {#incident-management-and-review}
+## <i class="fas fa-receipt"></i> インシデント管理とレビュー {#incident-management-and-review}
 
 インシデント管理とレビューのプロセスの一環として、SIRT は毎週月曜日に行う定例ミーティングを実施しています。このミーティングでは、前週のすべてのインシデント、および現在オープンのすべてのインシデントがレビューされます。レビュープロセスでは、インシデントの範囲、影響、軽減と是正のために実施した作業、次のステップ、ブロッカー、現在のステータスを取り上げます。これらのミーティングは、対応に問題のあったインシデントやプロセス改善について議論する機会でもあります。
 

@@ -1,45 +1,45 @@
 ---
-title: "セキュリティロギング"
-description: "セキュリティロギングは GitLab のセキュリティログ取り込みプラットフォームを支援・開発しています。"
+title: "Security Logging"
+description: "Security Logging は GitLab のセキュリティログ取り込みプラットフォームを支援・開発しています。"
 upstream_path: /handbook/security/security-operations/security-logging/
-upstream_sha: 5ea6b5d6141bc938b1c87b63ca72396fbfe19b58
-translated_at: "2026-07-11T06:05:57+09:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:23:25.989927+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-10T13:30:25+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-このページでは、GitLab の [Security Operations](/handbook/security/security-operations/) 組織内における [Security Logging チーム](/handbook/security/security-operations/security-logging/) のミッション、責任、運用フレームワークを確立します。チームは GitLab のセキュリティ可観測性の要として機能し、規制要件への準拠を維持しながら会社と顧客を保護するための包括的なロギングカバレッジを確保します。私たちの作業は、信頼性が高く、スケーラブルで、アクセスしやすいセキュリティロギングインフラストラクチャを通じて、運用上のセキュリティの卓越性を直接サポートします。
+このページでは、GitLab の [Security Operations](/handbook/security/security-operations/) 組織内における [Security Logging チーム](/handbook/security/security-operations/security-logging/)のミッション、責任、運用フレームワークを確立します。チームは GitLab のセキュリティ可観測性の要として機能し、規制要件への準拠を維持しながら会社と顧客を保護するための包括的なロギングカバレッジを確保します。私たちの作業は、信頼性が高く、スケーラブルで、アクセスしやすいセキュリティロギングインフラストラクチャを通じて、運用上のセキュリティの卓越性を直接サポートします。
 
-## <i class="fas fa-rocket" id="biz-tech-icons"></i> 私たちのビジョン
+## <i class="fas fa-rocket"></i> 私たちのビジョン {#our-vision}
 
-GitLab が以下を実現するために必要なロギングデータカバレッジを保証する。
+GitLab が以下を実現するために必要なロギングデータカバレッジを保証します。
 
 - 会社と顧客を保護するために必要な脅威分析、アラート、脅威検知の実施
 - 内部ポリシー、標準、内部および外部監査、規制要件への準拠の確保
 - 包括的な監視と迅速な脅威検知を通じたプロアクティブなセキュリティ運用の実現
 - 信頼性が高く、アクセスしやすく、実用可能なロギングデータでセキュリティチームをサポート
 
-### 私たちのミッションステートメント
+### 私たちのミッションステートメント {#our-mission-statement}
 
-[Security Logging チーム](/handbook/security/security-operations/security-logging/) は、GitLab のセキュリティロギングデータのカバレッジと使いやすさを改善するイニシアティブを計画、実行、サポートすることでビジョンを達成します。私たちは、すべてのセキュリティオペレーションチームが効果的に活用できるよう、能力を継続的に進化させながら、包括的なセキュリティ可観測性を実現するために必要なツール、システム、プロセスを管理、保守、設計、構成、ドキュメント化します。
+[Security Logging チーム](/handbook/security/security-operations/security-logging/)は、GitLab のセキュリティロギングデータのカバレッジと使いやすさを改善するイニシアティブを計画、実行、サポートすることでビジョンを達成します。私たちは、すべてのセキュリティオペレーションチームが効果的に活用できるよう、能力を継続的に進化させながら、包括的なセキュリティ可観測性を実現するために必要なツール、システム、プロセスを管理、保守、設計、構成、ドキュメント化します。
 
-詳細は [job family description](/job-description-library/security/security-logging/) で確認できます。
+詳細は [職種の説明](/job-description-library/security/security-logging/)で確認できます。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> チーム
+## <i class="fas fa-users"></i> チーム {#the-team}
 
-### チームメンバー
+### チームメンバー {#team-members}
 
 | | |
 |---|---|
 |Daryn Wilkinson|[Manager, Security Engineering](/job-description-library/security/security-logging/)|
 |Hiroki Suezawa|[Staff Security Engineer](/job-description-library/security/security-logging/)|
-|Senior Engineer 1 (redacted for privacy)|[Senior Security Engineer](/job-description-library/security/security-logging/)|
-|Senior Engineer 2 (redacted for privacy)|[Senior Security Engineer](/job-description-library/security/security-logging/)|
+|Senior Engineer 1（プライバシー保護のため非公開）|[Senior Security Engineer](/job-description-library/security/security-logging/)|
+|Senior Engineer 2（プライバシー保護のため非公開）|[Senior Security Engineer](/job-description-library/security/security-logging/)|
 
-## 主要な責任
+## 主要な責任 {#core-responsibilities}
 
-### 主要オーナーシップ領域
+### 主要オーナーシップ領域 {#primary-ownership-areas}
 
 **SIEM プラットフォーム管理**
 
@@ -72,7 +72,7 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
 - プラットフォームの移行および能力改善時のセキュリティオペレーションチームの支援
 - データ移行を管理し、セキュリティオペレーションへの影響を最小限に抑えながら継続性を確保
 
-## 協力的な責任
+## 協力的な責任 {#collaborative-responsibilities}
 
 **Security Operations 内のクロスチーム調整**
 
@@ -91,9 +91,9 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
 - ボリュームの最適化とコスト効率のためのロギングソースの定期的な評価
 - セキュリティオペレーション SLA を支援するシステムの健全性とパフォーマンスの監視フレームワークの実装
 
-## 運用フレームワーク
+## 運用フレームワーク {#operational-framework}
 
-### 作業方法論
+### 作業方法論 {#working-methodology}
 
 私たちは、セキュリティオペレーション内で社内顧客中心かつ顧客主導のチームとして運用し、ステークホルダーのニーズと、GitLab のセキュリティリスクを最小化するためのリスクベースのアプローチのバランスを取ります。私たちの方法論は以下を取り入れます。
 
@@ -104,7 +104,7 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
 - セキュリティオペレーションチーム向けのセルフサービサビリティ原則
 - 効率的なセキュリティオペレーションのための自動化ファーストの考え方
 
-### コミュニケーションチャンネル
+### コミュニケーションチャンネル {#communication-channels}
 
 **主要な連絡方法:**
 
@@ -116,20 +116,20 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
 - チームリポジトリ: [Security Logging GitLab サブグループ](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/security-logging/security-logging)
 - セキュリティオペレーション内で明確な優先順位付けを行うため、すべてのエピックはサブグループレベルで管理
 
-### ミーティング構造
+### ミーティング構造 {#meeting-structure}
 
 **定期的な同期活動:**
 
 - 定期的なチームシンク: 進捗議論、ブロッカー解消、セキュリティオペレーションとの調整
 - 半年ごとの振り返り: チームのチェックインと、セキュリティオペレーションとの整合を踏まえた改善計画
-- エンジニアリングマネージャーとの個別貢献者 1on1
+- Engineering Manager との Individual Contributor の 1 対 1 ミーティング
 - 戦略的イニシアティブに関するセキュリティオペレーションリーダーシップとの定期的な調整
 
 **非同期優先:** 主な作業は、セキュリティオペレーションチームがアクセス可能な公開ドキュメントを伴うプロジェクト Issue トラッカーを通じて実施
 
-## クロスチーム統合フレームワーク
+## クロスチーム統合フレームワーク {#cross-team-integration-framework}
 
-### Security Incident Response Team (SIRT) パートナーシップ
+### Security Incident Response Team (SIRT) パートナーシップ {#security-incident-response-team-sirt-partnership}
 
 - **SIRT の責任:**
   - 現在の SIEM 能力を活用するためにインシデントレスポンスワークフローを適応させる
@@ -137,7 +137,7 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
   - インシデントレスポンス固有の自動化と監視を構成する
   - インシデントレスポンス運用を支援する要件に関するコラボレーションを通じた Security Logging Standard 開発のガイド
 
-### Infrastructure Security (InfraSec) パートナーシップ
+### Infrastructure Security (InfraSec) パートナーシップ {#infrastructure-security-infrasec-partnership}
 
 - **InfraSec の責任:**
   - インフラストラクチャでの Security Logging Standard の採用を確保
@@ -145,13 +145,13 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
   - プラットフォーム改善時にセキュリティロギングとインフラストラクチャチームを橋渡し
   - セキュリティロギングプラットフォームのキャパシティプランニングとコスト予測の共有
 
-### Governance, Risk, and Compliance (GRC) パートナーシップ
+### Governance, Risk, and Compliance (GRC) パートナーシップ {#governance-risk-and-compliance-grc-partnership}
 
 - **GRC の責任:**
   - 規制フレームワークと内部ポリシーに基づくコンプライアンスロギング要件の定義
   - Security Logging チームとの監査計画とタイムライン通信の調整
 
-### より広範な Security Operations 統合
+### より広範な Security Operations 統合 {#broader-security-operations-integration}
 
 - **Security Operations チームの責任:**
   - 現在のプラットフォーム能力を考慮した、ドキュメント化されたプロセスを通じてロギングリクエストを提出
@@ -159,15 +159,15 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
   - セキュリティオペレーションワークフローを支援するセキュリティロギング標準実装のコラボレーション
   - プラットフォームトレーニングと採用イニシアティブへの参加
 
-## プロジェクト管理とガバナンス
+## プロジェクト管理とガバナンス {#project-management-and-governance}
 
-### プロジェクトライフサイクル管理
+### プロジェクトライフサイクル管理 {#project-lifecycle-management}
 
 - **戦略的計画:** セキュリティオペレーションの要件と将来の統合目標と整合した長期ロードマップ
 - **戦術的実行:** セキュリティオペレーションの優先事項と整合したプラットフォーム改善とエピック管理に焦点を当てた四半期マイルストーン
 - **運用提供:** セキュリティオペレーションのニーズを優先する定期的なバックログ整理を伴う Issue ボードベースの作業追跡
 
-### プロジェクトオーナーシップフレームワーク
+### プロジェクトオーナーシップフレームワーク {#project-ownership-framework}
 
 各プロジェクトには、以下の責任を持つ DRI が必要です。
 
@@ -175,35 +175,35 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
 - セキュリティオペレーションチームとの Issue 解決のためのクロスファンクショナルなコラボレーション
 - セキュリティオペレーションのニーズに整合したステークホルダーコミュニケーションと提供調整
 
-## 成功メトリクスと KPI
+## 成功メトリクスと KPI {#success-metrics-and-kpis}
 
-### プラットフォームパフォーマンスメトリクス
+### プラットフォームパフォーマンスメトリクス {#platform-performance-metrics}
 
 - **システム信頼性:** セキュリティオペレーション SLA を支援するログ取り込みパイプラインの稼働時間メトリクス
 - **ロギングパイプライン効率:** セキュリティオペレーションのベンチマークによる MTTS (mean time to SIEM: SIEM までの平均時間) のトレンド
 - **データ品質:** ログの完全性、正確性、適時性メトリクス
 - **セキュリティオペレーション支援:** セキュリティチームのリクエストへの対応時間と Issue 解決
 
-### コンプライアンスおよび監査メトリクス
+### コンプライアンスおよび監査メトリクス {#compliance-and-audit-metrics}
 
 - **データ保持コンプライアンス:** ログソース全体での規制データ保持要件の遵守
 - **規制カバレッジ:** ロギングインフラストラクチャがサポートするコンプライアンス要件の割合
 
-### 運用上の卓越性指標
+### 運用上の卓越性指標 {#operational-excellence-indicators}
 
 - **コスト最適化:** 効率的なリソース利用とコスト管理
 - **パフォーマンス改善:** クエリレスポンス時間、システムスループット、処理効率
 - **ステークホルダー満足度:** プラットフォーム経験と能力に関するセキュリティオペレーションチームのフィードバック
 
-### 戦略的整合メトリクス
+### 戦略的整合メトリクス {#strategic-alignment-metrics}
 
 - **セキュリティカバレッジ:** セキュリティオペレーション監視を支援する適切なロギングがある重要資産の割合
 - **コスト効率の良いカバレッジ:** セキュリティ価値 (検知、調査、コンプライアンス) と効率的なリソース割り当てを確保するロギングコストのバランス
 - **イノベーションへの影響:** ロギングインフラストラクチャの改善を通じて実現された新しい検知能力
 
-## リスク管理と緩和
+## リスク管理と緩和 {#risk-management-and-mitigation}
 
-### 特定されたリスク領域
+### 特定されたリスク領域 {#identified-risk-areas}
 
 - **プラットフォーム移行の複雑性:** 運用継続性を維持しながら Elastic 移行中の技術的課題を管理
 - **データ損失防止:** プラットフォーム改善中にセキュリティオペレーション能力に影響を与えずに継続性を確保
@@ -211,7 +211,7 @@ GitLab が以下を実現するために必要なロギングデータカバレ�
 - **リソース最適化:** セキュリティオペレーション要件を満たしながら、包括的なカバレッジとコスト効率のバランスを取る
 - **コンプライアンスデータの可用性:** ロギングカバレッジ不足やデータ保持ギャップによる監査所見のリスク
 
-### 緩和戦略
+### 緩和戦略 {#mitigation-strategies}
 
 - **包括的計画:** ロールバック手順とセキュリティオペレーション継続性計画を含む、詳細な移行および改善ロードマップ
 - **ステークホルダーコミュニケーション:** セキュリティオペレーションリーダーシップの関与を伴う確立された DCI フレームワークを通じた定期的な更新

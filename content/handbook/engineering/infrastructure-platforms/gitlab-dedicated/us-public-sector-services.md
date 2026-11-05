@@ -1,217 +1,243 @@
 ---
 title: US Public Sector Services チーム
+description: GitLab Dedicated for Government を構築・運用する Dedicated Public Sector Compliance と Dedicated Public Sector Features の両チーム
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/us-public-sector-services/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T22:31:40Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T15:07:19.941804+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-24T10:45:49-07:00"
+lastmod: "2026-11-03T17:29:55-07:00"
 ---
+## 概要 {#summary}
 
-## ミッション
+US Public Sector Services（US PubSec）は、[Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)内の 2 つの機能別チーム、**Dedicated Public Sector Compliance** と **Dedicated Public Sector Features** で構成されています。両チームで、AWS GovCloud 上にホストされる、FedRAMP Moderate 認定を受けたシングルテナントの GitLab Dedicated オファリングである [GitLab Dedicated for Government](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/government/)（GDG）を構築・運用します。
 
-GitLab US Public Sector Services チームのミッションは、完全にマネージドされたシングルテナントの GitLab 環境を作成することです。これは GitLab Dedicated プラットフォームを通じて提供され、連邦・州・地方レベルの米国政府機関、並びに機密性の高いワークロードを扱う請負業者、教育機関、その他の米国カスタマーの特定の規制およびコンプライアンス要件に対応するために特化して構築されています。カスタマーテナントのインストールに対する手動操作を排除し、カスタマーテナントが The One DevOps Platform のパワーを最大限に引き出すことに集中できるようにするために開発されています。
+両チームはマネージャー、Product Manager、作業プロセスを共有しているため、両方のチーム憲章をこのページに掲載しています。
 
-## ビジョン
+**このページに明示されていない事項については、[GitLab Dedicated Group のプロセス](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)に従います。** このページに US PubSec のプロセスが記載されている場合、US PubSec の作業にはそのプロセスが優先されます。
 
-US Public Sector Services グループはカスタマー対応チームであり、チームメンバーは高レベルのインフラ自動化と、GitLab Dedicated for US Government プラットフォームとのカスタマーインタラクションの実現に注力しています。
+| 機能別チーム | 対応するニーズ | 対象範囲と担当 | 主な連携先 | Tech Lead |
+|---|---|---|---|---|
+| **[Dedicated Public Sector Compliance](#dedicated-public-sector-compliance)** | GDG のコンプライアンスとセキュリティのニーズ | GDG の統制、コンプライアンスとセキュリティの自動化、証跡ワークフロー、FedRAMP/GDG の監査と承認、リリース準備、GDG 固有の Switchboard と運用ワークフロー。 | InfraSec、Dedicated Public Sector Features、および GDG 向けに開発する他の Dedicated チーム。 | {{< member-by-gitlab "ekelly1" >}} |
+| **[Dedicated Public Sector Features](#dedicated-public-sector-features)** | GDG の顧客と機能のニーズ | GDG 顧客の機能要望の受付とデリバリー、GDG を優先した調整、Commercial Features と共有する機能実装の進め方。 | Dedicated Commercial Features、および機能が統制やリリース準備に影響する場合は Dedicated Public Sector Compliance。 | {{< member-by-gitlab "jburnitz" >}} |
 
-チームのミッションは以下の通りです:
+## チーム憲章 {#team-charters}
 
-- [Federal Risk and Authorization Management Program（FedRAMP）](https://www.fedramp.gov/)の要件を満たすかそれを超えるクラウドインフラを構築する
-- 大量のシングルテナント GitLab サイトをプロビジョニングする 100% 自動化されたシステムを開発する
-- 人間の介入なしにメンテナンスタスクを自動化する
-- 中央の可観測性スタック、およびカスタマーテナントごとの可観測性スタックを作成・管理する
-- カスタマーポータル（Switchboard）を提供し、管理操作をカスタマーテナントに公開する
+### Dedicated Public Sector Compliance {#dedicated-public-sector-compliance}
 
-## パフォーマンス指標
+#### ミッション {#mission}
 
-チームのパフォーマンス指標はまだ完全には定義されていません。まず**プロビジョニング SLO** を検討し、その後 [DORA 4 メトリクス](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance)に続く可能性があります。
+公共部門のセキュリティとコンプライアンスの要件を、再利用可能な統制、自動化された証跡、標準化された手順、リリース準備ワークフローに変えることで、コンプライアンスを損なわずに GDG が迅速に進められるようにします。
 
-## チームメンバー
+#### 憲章 {#charter}
 
+このチームは、GDG 固有のコンプライアンスとセキュリティの準備を担当します。これには、FIPS と関連する堅牢化、証跡の自動化、GDG に導入される作業の FedRAMP/GDG 監査と承認の調整、GDG 固有の Switchboard と運用ワークフローが含まれます。InfraSec、Dedicated Public Sector Features、他の Dedicated チームと早期に連携し、要件が後段階の関門ではなく設計の一部になるようにします。
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/us-public-sector-services/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+- **対象範囲：** GDG の統制、コンプライアンスとセキュリティの自動化、証跡と証跡ワークフロー、FedRAMP/GDG の監査と承認、リリース準備、GDG 固有の Switchboard と運用ワークフロー。
+- **対象範囲外：** 主なニーズがコンプライアンス、統制、リリース準備ではなくプロダクトの能力である、顧客向け機能のデリバリー。その作業は Dedicated Public Sector Features が担当します。
 
+#### チームメンバー {#team-members}
 
-## 私たちとの連携方法
+| 名前 | 役割 |
+|---|---|
+| {{< member-by-gitlab "mckgl" >}} | Engineering Manager |
+| {{< member-by-gitlab "ekelly1" >}} | Senior Site Reliability Engineer, Tech Lead |
+| {{< member-by-gitlab "curtmarker" >}} | Senior Site Reliability Engineer |
+| {{< member-by-gitlab "sdghbtn-gl" >}} | Site Reliability Engineer |
+| 募集中 | |
 
-GitLab US Public Sector Services チームと連携するには:
+#### 責任 {#responsibilities}
 
-- カスタマーサポート固有の問題の場合は[インバウンダリー RFH](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/customer-support/-/issues/new?issuable_template=request-for-help) を作成し、GDGEOC にアサインする。
-- GitLab Dedicated チームの Issue トラッカーで[一般的な Issue を作成する](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/new?issuable_template=uspubsec_operations)。Issue に `group::US PubSec` ラベルを付ける
-- Issue を作成する際、誰かを `@` メンションする必要はありません
-- 注意を引きたい場合は、[以下のグループ階層](#gitlab-group-hierarchy)で定義されているチーム固有のハンドルを使用してください
-- Slack チャンネル
-  - GitLab US Public Sector 固有の質問は [#g_dedicated-us-pubsec](https://gitlab.slack.com/archives/C03R5837WCV) で見つけることができます
-    - `@dedicated-uspubsec-team` Slack グループは、チーム全体にタグ付けするために任意の内部チャンネルで使用できます。
-  - Dedicated ステージ全体に関連する Issue は [#g_dedicated-team](https://gitlab.slack.com/archives/C025LECQY0M) で提起できます
-  - Dedicated グループ内の他のチームには、チームワークのディスカッション用の独自の作業チャンネルがあります:
-    - [#g_dedicated-environment-automation-team](https://gitlab.slack.com/archives/C074L0W77V0)
-    - [#g_dedicated-switchboard-team](https://gitlab.slack.com/archives/C04DG7DR1LG)
+このチームは、次の相手や要件から要求を受けます：
 
-## 作業の進め方
+- Product Management
+- InfraSec
+- FedRAMP、FIPS、関連する公共部門のコンプライアンス要件
+- GDG 内部の運用ニーズと FedRAMP/GDG の監査ニーズ
+- GDG のコンプライアンスやリリース準備の手順を必要とする他の Dedicated チーム
 
-### ミーティングと定例コール
+管理する成果物：
 
-私たちは[プロジェクト管理セクション](#project-management)で説明されているように、プロジェクト Issue トラッカー内で非同期的に作業することを好みます。
+- GDG 固有の Switchboard と運用ワークフロー
+- コンプライアンスとセキュリティの自動化、証跡パイプライン、統制を中心としたチェックリスト
+- GDG のリリース準備と FedRAMP/GDG の監査・承認の手順
+- container-loader と private-registry の経路を含む GDG の統制成果物
 
-チームには定期的な同期コールのセットがあります:
+#### 成功の姿 {#what-success-looks-like}
 
-- `チームコール` — このコールでは、チームメンバーの日常業務に関する重要な情報を共有し、同期的なディスカッションが必要なプロジェクト項目を議論します
-- 個々のコントリビューターとエンジニアリングマネージャーの 1 対 1
+- GDG の要件が早期に可視化され、繰り返し利用できる統制と標準化された手順として実装されている。
+- FedRAMP/GDG の証跡、監査、承認の作業がさらに自動化され、手作業とリリースの障害が減少している。
+- 他の Dedicated チームが、明確なコンプライアンス上の期待事項と信頼できる GDG ワークフローに従って、GDG で構築・運用できる。
 
-個人間の GitLab Dedicated 作業について議論するための臨時 Zoom ミーティングは必要に応じて作成されます。
-これらのミーティングはプライベートストリーミングするか、コンプライアンスの許容範囲内で録画[^1]され、[GitLab Unfiltered プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqC5FfUVPyndvLvTWifWbfB)に関連性と許可に応じてアップロードされることが期待されています。コールの結果は永続的な場所に共有されます（Slack は永続的ではありません）。チームが成長するにつれて特に重要です。なぜなら、初期段階で行われた決定は、チームが大きくなった後期段階で問い直されることになるからです。
+次の指標で測定します：
 
-[^1]: 録画ルールの例外: 1 対 1 のコール、プロジェクト外の業務に関するディスカッション、録画に不快を感じる当事者がいる場合、または FedRAMP コンプライアンスにより録画できない場合。ただし例外があっても、プロジェクト関連のディスカッションの結果は、メインの Issue トラッカーなどの永続的な場所に記録する必要があります。
+- GDG のコンプライアンスとリリース準備を進めるための時間と労力
+- 手動のコンプライアンス手順と、自動化された標準手順による処理の比較
+- FedRAMP/GDG の監査、承認、セキュリティレビューによって加わるサイクルタイム
+- GDG 固有の統制と運用ワークフローの信頼性と一貫性
 
-### GitLab グループ階層 {#gitlab-group-hierarchy}
+### Dedicated Public Sector Features {#dedicated-public-sector-features}
 
-私たちは [GitLab グループ](https://docs.gitlab.com/ee/user/group/#groups)を使用して、GitLab Dedicated プロジェクトに取り組むチームメンバーを論理的に整理しています。
-グループは以下のユースケースをカバーしています:
+#### ミッション {#mission-1}
 
-1. GitLab US Public Sector Services グループメンバーシップ: `@gitlab-dedicated/uspubsec`
-    - GitLab Dedicated US PubSec チームのすべての正式メンバーは、オンボーディングの一部としてこの GitLab グループへのアクセスを得る必要があります
-    - グループメンションは、GitLab Dedicated US PubSec チームのすべてのメンバーに関連する情報を共有する状況でのみ使用してください
-2. 個々のチームの GitLab Dedicated グループには、`maintainers` と `reviewers` の 2 つの追加サブグループがあります。例: `@gitlab-dedicated/uspubsec/maintainers`
-    - `reviewers` GitLab グループへのアクセスは、正式メンバー、外部請負業者、借入メンバーなどに付与されます。この GitLab グループタイプは、マージ権限のないユーザーを区別するために使用されます。初期レビューはこのグループへクイックアクションを使用してリクエストします。例: `/assign_reviewer @gitlab-dedicated/uspubsec/reviewers`
-    - `maintainers` GitLab グループは正式メンバーのみに付与されます。このグループはマージ権限を持ち、[CODEOWNERS 承認ルール](https://docs.gitlab.com/ee/user/project/codeowners/#code-owners)を通じてアクセスが付与されます
-      - `reviewers` から `maintainers` グループへの移行は、[Dedicated メンテナートレーニング](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#maintainer-training)の成功裏な完了によって定義されます
+共通の Dedicated と Commercial の機能実装の進め方を可能な限り再利用しながら、GDG を優先する方法で GDG 顧客向けの能力を提供します。
 
-### コラボレーションガイド
+#### 憲章 {#charter-1}
 
-私たちのチームは GitLab US Public Sector Services の作業を追跡するために 2 つの公式 Issue トラッカーを使用して協力しています。
+このチームは、Product Management、顧客、RFH、ロードマップのコミットメントから生じる作業を含め、顧客向け GDG 機能の受付とデリバリーを担当します。Dedicated Commercial Features と密接に連携し、実用的な場合には実装の進め方を共有し、政府機関のニーズで必要な場合には GDG を優先したアプローチを取ります。機能が統制、アクセス、審査、GDG のリリース準備に影響する場合は、Dedicated Public Sector Compliance と調整します。
 
-### 1. CompSecGov（セキュアテナント）
+- **対象範囲：** GDG 顧客向け機能の受付とデリバリー、GDG を優先した Dedicated 機能の調整、Commercial Features と共有する機能実装の進め方。
+- **対象範囲外：** 顧客向けの能力ではないコンプライアンス、セキュリティ、統制の作業。その作業は Dedicated Public Sector Compliance が担当します。
 
-**リンク:** https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/
-**ラベル:** `group::US PubSec`
+#### チームメンバー {#team-members-1}
+
+| 名前 | 役割 |
+|---|---|
+| {{< member-by-gitlab "mckgl" >}} | Engineering Manager |
+| {{< member-by-gitlab "jburnitz" >}} | Senior Site Reliability Engineer, Tech Lead |
+| {{< member-by-gitlab "jedge1" >}} | Senior Site Reliability Engineer |
+| <span style="white-space: nowrap;"><a href="https://gitlab.com/rowens-gl" title="@rowens-gl"><img class="avatar" src="https://gitlab.com/uploads/-/system/user/avatar/42839519/avatar.png" width="90" height="90" alt="Rob Owens">Rob Owens</a></span> | Senior Site Reliability Engineer |
+
+#### 責任 {#responsibilities-1}
+
+このチームは、次の相手や要件から要求を受けます：
+
+- Product Management とロードマップの優先事項
+- GDG 顧客
+- RFH とその他の顧客主導のリクエスト
+- 機能実装の進め方を共有する場合は、Dedicated Commercial Features と他の Dedicated チーム
+
+管理する成果物：
+
+- GDG を優先した顧客向け機能の作業
+- GDG 顧客のリクエストの受付と実行の手順
+- Commercial Features と足並みを揃えた共通の機能設計、計画、実装の進め方
+- Bring Your Own Model（BYOM）と関連する GDG 機能のデリバリー
+
+#### 成功の姿 {#what-success-looks-like-1}
+
+- GDG の機能リクエストに、明確な受付経路、責任を負う担当者、顧客へのデリバリーに至る手順がある。
+- GDG の能力が、実用的な場合には共通の Dedicated と Commercial の機能実装の進め方を再利用し、政府機関の要件によって正当化される場合にのみ異なる進め方を取る。
+- コンプライアンスとプラットフォームの制約が早期に特定され、デリバリー計画に組み込まれることで、手戻りと顧客の待ち時間が最小化されている。
+
+次の指標で測定します：
+
+- GDG 機能の受付から顧客が利用できる状態でのデリバリーまでの時間
+- 共通の進め方による GDG 機能のデリバリーと、個別の分岐によるデリバリーの比較
+- コンプライアンスやプラットフォームの制約が後から判明することで生じる手戻り
+- GDG 機能の受付と実行における明確さ、担当の明確さ、処理量
+
+## 共通の役割 {#shared-roles}
+
+| 役割 | 名前 |
+|---|---|
+| Engineering Manager | {{< member-by-gitlab "mckgl" >}} |
+| Product Manager | {{< member-by-gitlab "dmahalingam1" >}} |
+| Design Partner | TBD |
+| Technical Writer | TBD |
+
+## 私たちとの連携方法 {#working-with-us}
+
+- 一部を変更した [Request For Help（RFH）](/handbook/support/workflows/how-to-get-help/#the-request-for-help-landing-page)プロセスに従います。顧客テナントのニーズや FedRAMP に関わる機密性の高いニーズについては、[境界内の RFH](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/customer-support/-/issues/new?issuable_template=request-for-help)を作成してください。
+  - 初回応答時間（FRT）について、[Dedicated の RFH Issue はデフォルトで Severity 3](https://gitlab.com/gitlab-com/request-for-help/#responsiveness-guidelines)になります。
+  - 解決の SLO はありません。解決時間は、ニーズと SRE の対応余力によって異なります。
+- 顧客やテナントに固有ではなく、FedRAMP に関わる機密性の高い内容でもない一般的なニーズについては、GitLab Dedicated チームの Issue トラッカーで `group::US PubSec` ラベルを付けて [Issue を作成](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/new?issuable_template=uspubsec_operations)してください。
+- Issue の作成時に誰かを `@` メンションする必要はありません。チームに注意を向けてもらうには、[GitLab グループ階層](#gitlab-group-hierarchy)のチームハンドルを使用してください。
+- 顧客に影響する緊急の S1 または S2 インシデントについては、[緊急の可用性またはセキュリティイベント](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#urgent-availability-or-security-events)に従ってください。
+- 質問やディスカッションについては、[Slack チャンネル](#slack-channels)を参照してください。
+
+### Issue トラッカー {#issue-trackers}
+
+私たちは、2 つの公式 Issue トラッカーで作業を追跡します。特定の顧客向けの追加トラッカーはフィールドチーム（CSM と SA）が所有する場合がありますが、US PubSec の Product Management と Engineering にとって唯一の情報源となるのは、この 2 つだけです。
+
+#### CompSecGov（セキュアテナント） {#compsecgov-secure-tenant}
+
+**リンク：** <https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/>
+
+**ラベル：** `group::US PubSec`
 
 | 属性 | 詳細 |
-|------|------|
-| **目的** | カスタマーの機密データと FedRAMP 準拠の情報 |
-| **アクセス** | US PubSec エンジニアチーム、US PubSec プロダクトマネジメント、セキュリティコンプライアンス、セキュリティチーム、サポート、パブリックセクターフィールドチームメンバー（カスタマーアクセスなし） |
-| **アクセス要件** | [FedRAMP オンボーディングとシチズン検証](https://gitlab.com/gitlab-com/gl-security/security-assurance/fedramp/fedramp-certification/-/blob/main/.gitlab/issue_templates/FedRAMP_Onboarding-Current_Employees.md) |
-| **オーナー** | エンジニアリング / プロダクトマネジメント |
-| **対応 SLA** | Issue/コメントのアカウントチームへの**対応**（インシデントや RFH を除く）は 24 時間（祝日/週末を除く） |
+|-----------|---------|
+| **目的** | 顧客の機密データと FedRAMP 準拠の情報 |
+| **アクセス** | US PubSec engineering、US PubSec Product Management、Security Compliance、Security、Support、Public Sector のフィールドチームメンバー（顧客のアクセスはなし） |
+| **アクセス要件** | [FedRAMP オンボーディングと Citizen Validation](https://gitlab.com/gitlab-com/gl-security/security-assurance/fedramp/fedramp-certification/-/blob/main/.gitlab/issue_templates/FedRAMP_Onboarding-Current_Employees.md) |
+| **担当** | Engineering / Product Management |
+| **応答 SLA** | 祝日と週末を除く 36 時間以内に、Issue とコメントでアカウントチームへ**応答**します。[インシデントと RFH](#working-with-us)はそれぞれのプロセスに従います。 |
 
-**ユースケース:**
+次の用途で使用します：
 
-- セキュリティに関わるカスタマー情報
+- セキュリティに関わる機密性の高い顧客情報
 - コンプライアンスドキュメント
-- カスタマー固有の詳細を含む内部計画
-- RFH（Request for Help）
+- 顧客固有の詳細を含む内部計画
+- RFH
 - インシデント
 - トライアル
-- カスタマーオンボーディング
-- アカウントチームのセルフサービスアクセスポイント
+- 顧客オンボーディング
+- アカウントチームのセルフサービスアクセス
 
-### 2. Dedicated チームトラッカー
+#### Dedicated チームトラッカー {#dedicated-team-tracker}
 
-**リンク:** https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues
-**ラベル:** `group::US PubSec`
+**リンク：** <https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues>
+
+**ラベル：** `group::US PubSec`
 
 | 属性 | 詳細 |
-|------|------|
+|-----------|---------|
 | **目的** | 内部計画と機能開発 |
-| **アクセス** | GitLab 内部チームのみ（カスタマーアクセスなし）。他の Dedicated チームと共有 |
-| **オーナー** | プロダクトマネジメント / エンジニアリング |
+| **アクセス** | GitLab チームメンバーのみ（顧客のアクセスはなし）。他の Dedicated チームと共有。 |
+| **担当** | Product Management / Engineering |
 
-**ユースケース:**
+次の用途で使用します：
 
 - スプリント計画とロードマップ
 - 機能開発（必要に応じてコードネームを使用）
 - Grand Review 項目
-- アカウントチームのセルフサービスアクセスポイント
+- アカウントチームのセルフサービスアクセス
 - 機能リクエスト
-- マイグレーション計画
+- 移行計画
 
-> 注意: 特定カスタマー向けの追加コラボレーション Issue トラッカーは、フィールドチーム（CSM/SA）が所有・運営することがあります。US Pubsec PM/エンジニアリングチームの SSOT として機能するのは、この 2 つの公式 Issue トラッカーのみです
+### Slack チャンネル {#slack-channels}
 
-### Slack チャンネル
+| チャンネル | 目的 |
+|---------|---------|
+| [#g_dedicated-us-pubsec](https://gitlab.slack.com/archives/C03R5837WCV) | US PubSec の一般的なエンジニアリングのディスカッション用の公開チャンネル。任意の内部チャンネルで `@dedicated-uspubsec-team` Slack グループを使用してチームにタグ付けします。 |
+| `#dedicated-for-gov-field` | Dedicated for Government の質問用の非公開チャンネル。公共部門の顧客情報を保護するため非公開です。メンバーには、US PubSec のフィールドチームメンバー、Dedicated for Government R&D、Security、Compliance、Support が含まれます。 |
+| `#dedicated-for-gov-stable` | Dedicated for Government の常設ワーキンググループのメンバー向けの非公開チャンネル。 |
+| [#g_dedicated-team](https://gitlab.slack.com/archives/C025LECQY0M) | Dedicated Group 全体に関するトピック。 |
 
-私たちは Slack でコラボレーションしています。各チャンネルの目的を理解するためのガイドです
+## 作業の進め方 {#how-we-work}
 
-| チャンネル名 | 目的 |
-|--------------|------|
-| **dedicated-for-gov-field** | dedicated for gov について議論するプライベートチャンネル。カスタマーのパブリックセクター情報を保護するためにプライベートです。メンバーシップはフィールドの US Pubsec メンバー、Dedicated for Gov R&D スタッフ、セキュリティ、コンプライアンス、サポートなど、プロダクトの質問に回答する人々に限定されています |
-| **g_dedicated-us-pubsec** | パブリックチャンネル。一般的なエンジニアリングのディスカッションに使用してください。 |
-| **dedicated-for-gov-stable** | プライベートチャンネル。dedicated for gov 安定ワーキンググループのメンバー用。 |
+### ミーティング {#meetings}
+
+私たちは、Issue トラッカーで非同期に作業することを優先します。チームには次の定例コールもあります：
+
+- `Team call`：チームメンバーが日々必要とする情報を共有し、同期的な会話が必要なプロジェクト項目を議論します
+- 各エンジニアと Engineering Manager の 1-1
+
+必要に応じて臨時の Zoom ミーティングを作成します。コンプライアンスで許可される範囲で、これらのミーティングはプライベートストリーミングするか、録画[^1]して [GitLab Unfiltered プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqC5FfUVPyndvLvTWifWbfB)にアップロードしてください。Slack は永続的ではないため、各コールの結果は Issue などの永続的な場所で共有してください。
+
+[^1]: 録画ルールの例外は、1-1 のコール、プロジェクト外の業務についてのディスカッション、参加者が録画を望まない場合、FedRAMP コンプライアンスが録画を許可しない場合です。これらの例外があっても、プロジェクトのディスカッションの結果は Issue トラッカーなどの永続的な場所に記録してください。
+
+### GitLab グループ階層 {#gitlab-group-hierarchy}
+
+[GitLab グループ](https://docs.gitlab.com/ee/user/group/#groups)を使用して、US PubSec プロジェクトに取り組むチームメンバーを整理します：
+
+1. `@gitlab-dedicated/uspubsec` は US PubSec のすべての常任チームメンバーを含み、オンボーディング時に追加されます。チーム全体に関係する情報の場合にのみ、このグループにメンションしてください。
+1. `@gitlab-dedicated/uspubsec/reviewers` は、常任チームメンバー、外部請負業者、他チームから一時的に参加しているチームメンバー、その他のマージ権限を持たない人のためのグループです。たとえば `/assign_reviewer @gitlab-dedicated/uspubsec/reviewers` を使用して、このグループに初期レビューを依頼してください。
+1. `@gitlab-dedicated/uspubsec/maintainers` は、常任チームメンバーのみのためのグループです。[CODEOWNERS 承認ルール](https://docs.gitlab.com/ee/user/project/codeowners/#code-owners)を通じてマージ権限を持ちます。チームメンバーは、[Dedicated Maintainer Training](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#maintainer-training)を完了した後、`reviewers` から `maintainers` へ移行します。
 
 ### プロジェクト管理 {#project-management}
 
-私たちは[エピック](https://docs.gitlab.com/ee/user/group/epics/)、[Issue](https://docs.gitlab.com/ee/user/project/issues/)、および [Issue ボード](https://docs.gitlab.com/ee/user/project/issue_board.html)を使用して作業を整理しており、これらは相互に補完し合っています。
+エピックの構造や[ステータス更新](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#status-updates)を含め、[Dedicated Group のプロジェクト管理プロセス](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#project-management)に従います。US PubSec については、次のとおりです：
 
-異なる機能にわたる _すべての_ GitLab US Public Sector Services 作業の唯一の信頼できる情報源はトップレベルの [GitLab US Public Sector Services エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/876)です。アクティブおよび予定されている作業の詳細については、そのエピックを参照してください。チームが取り組んでいる具体的な Issue を確認するには、チームの作業の全体的な [Issue ボード](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/boards/4964764?label_name[]=team%3A%3AUS%20PubSec)を参照してください。
+- [GitLab US Public Sector Services エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/876)は、US PubSec のすべての作業に関する唯一の情報源です。その説明に現在のステータスを記載します。
+- [US PubSec Issue ボード](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/boards/4964764?label_name[]=group%3A%3AUS%20PubSec)は、チームが取り組んでいる Issue を表示します。
+- カンバン方式で作業します。エンジニアは、ボードで優先順位が付けられた Issue を自分に割り当て、Dedicated の[ワークフローラベル](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#workflow-labels)で進捗を追跡します。
 
-#### エピック階層
+## リソース {#resources}
 
-[サブエピック](https://docs.gitlab.com/ee/topics/plan_and_track.html#hierarchies-with-epics)はトップレベルエピックの下に作成され、作業を特定のイニシアチブやプロジェクトマイルストーンに向けた整理されたリストの Issue に論理的に分割します。
-
-必要に応じて、プロジェクト追跡のために Issue をさらに分割するため、既存のエピック階層内に追加のサブエピックを作成することができます。
-
-1. サブエピックは、記載されている項目をデリバリーするために必要なタスクをグループ化します
-2. サブエピックはロードマップの項目を表し、特定のフェーズでデリバリーされます
-3. サブエピックは複数ヶ月にまたがることができますが、終了日は追加されたロードマップフェーズの「予想完了日」と一致する必要があります
-
-エピックに加えて、[マイルストーン](https://docs.gitlab.com/ee/user/project/milestones/)は、複数のエピックにまたがる Issue をターゲットのマイルストーン日と関連付けるプロジェクト追跡ツールとして使用できます。マイルストーンは Issue ボードでフィルタリングでき、チームがアクションを取るべき現在の優先 Issue を単一画面で表示できます。
-
-#### エピックオーナー
-
-各エピックにはプロジェクトのデリバリーに責任を持つ単一の DRI がいます。各エピックの DRI はエピック構造ごとの各エピックの説明の上部に記載されています。
-
-#### エピックオーナーの責任
-
-DRI は以下を行う必要があります:
-
-1. 他の人と協力してボードを通じて Issue を進める
-2. エピックが[エピック構造](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#epic-structure)に記載された基準を満たしていることを確認する
-3. 以下の[ステータス更新プロセス](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#status-updates)に従って DRI のエピックのエピック説明に更新を提供する
-
-#### エピック構造
-
-各エピックと子サブエピックには以下を含める必要があります:
-
-**説明**
-
-1. このエピックに責任を持つ **DRI**。
-2. エピックを理解しようとする人にコンテキストを提供するための問題提起を含む**背景**。
-3. エピックの具体的な目標のための**終了基準**。
-4. **ステータス yyyy-mm-dd** は説明の最後の見出しである必要があります。
-    1. これにより、エピックに関心を持つ人がすべてのコメントや Issue を読まなくても最新のステータスを確認できます。
-    2. この見出しはトップレベルエピックのステータス情報を自動生成するために使用されます。
-
-**エピックメタデータ**
-
-1. **開始日**はプロジェクト開始時に実際の開始日に更新され、予想開始日に設定されます。
-2. **期限**は予想終了日に設定されます。
-
-ラベルは[エピックラベルセクション](#epic-structure)で説明されています。
-
-#### Issue ボード
-
-[Issue ボード](https://docs.gitlab.com/ee/user/project/issue_board.html)はエピックやマイルストーンの全体的なステータスを追跡するために使用されます。
-
-##### US Public Sector Services Issue ボードへのアクセス
-
-1. [Dedicated Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team)プロジェクトにアクセスします。
-2. 左のナビゲーションメニューを使用して、**Issues** セクションにカーソルを合わせて **Boards** を選択します
-3. 左上のドロップダウンメニュー（**Search Filter** の横）を使用して、表示したいエピックまたはマイルストーンに関連する特定のボードを選択します。表示したいボードの名前がわかる場合は、ドロップダウン検索ボックスに入力できます。
-4. 選択すると、Issue ボードには提供されたフィルター（例: マイルストーン、エピック、ラベルなど）に基づく Issue のリスト、およびさまざまな列（**Lists** とも呼ばれる）が含まれたカンバンレイアウトが表示されます。US Public Sector Services チームはラベルを主な List フィルターとして使用しています。これらの Issue ボードがどのように作成・フィルタリングされているかについては以下のセクションを参照してください。
-
-> 注意: 時間ブロックのプロジェクト作業に使用される Issue ボードは、簡潔さを維持するために完了後に廃止する必要があります。
-
-### 実行
-
-チームはカンバン方式で運営されています。Issue はカンバンボードで優先順位付けされ、自己割り当てされます。私たちはスコープ付きの[ワークフローラベル](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#workflow-labels)を活用して、作業のさまざまな段階を追跡します。
-
-### ステータス更新/プロセス
-
-ステータス更新とステータス更新プロセスの詳細については、[ステージレベルのステータス更新ページセクション](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#status-updates)を参照してください
-
-このチームのすべての作業のステータスは、トップレベルの [GitLab US Public Sector Services エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/876)の説明で管理されており、一目で確認できます。
-
-#### レポーティング
-
-私たちはトップクロスファンクショナルイニシアチブの要件を満たすために GitLab Dedicated のステータスに関するレポートを提供します。
+- [GitLab Dedicated for Government](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/government/)のプロダクトページ
+- [GitLab US Public Sector Services エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/876)
+- [CompSecGov US PubSec グループ](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/)
+- [GitLab Dedicated チームの Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues)
+- [Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)のハンドブックページ

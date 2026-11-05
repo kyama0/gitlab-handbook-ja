@@ -2,28 +2,28 @@
 title: "GitLab のオンボーディング"
 description: "GitLab のオンボーディングと、オンボーディング Issue テンプレート"
 upstream_path: /handbook/people-group/general-onboarding/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T06:04:33+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:27:46.354529+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-GitLab では、オンボーディングは [非常に重要](/handbook/company/culture/all-remote/onboarding/)なものです。私たちは初日からすぐに業務をフル稼働で進めることを期待していません。
+GitLab では、オンボーディングは[非常に重要](/handbook/company/culture/all-remote/onboarding/)なものです。私たちは初日からすぐに業務をフル稼働で進めることを期待していません。
 
 オンボーディングには少なくとも 2 週間を確保し、チーム固有のオンボーディングとトレーニングは 3 週目から始めることを強く推奨します。最初の 2 週間でチームの業務に参加することは自由ですが、大きく貢献しなければならないと感じる必要はありません。
 
-すべてのオンボーディングステップは [オンボーディング Issue テンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)に集約されており、これは People Operations チームが所有しています。新しいチームメンバーのオンボーディングプロセスは、セルフドリブンかつセルフラーニングであり、GitLab でのリモートライフに慣れる過程で可能な限り [非同期](/handbook/communication/)を保ちます。
+すべてのオンボーディングステップは[オンボーディング Issue テンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)に集約されており、これは People Operations チームが所有しています。新しいチームメンバーのオンボーディングプロセスは、セルフドリブンかつセルフラーニングであり、GitLab でのリモートライフに慣れる過程で可能な限り[非同期](/handbook/communication/)を保ちます。
 
-GitLab では、自社製品を使うことに大きな誇りを持っています。それゆえ、すべてのオンボーディングタスクは GitLab の Issue で完了させます。そもそも Issue とは何か、それについては [こちら](https://docs.gitlab.com/ee/user/project/issues/)で詳しく学べます。
+GitLab では、自社製品を使うことに大きな誇りを持っています。それゆえ、すべてのオンボーディングタスクは GitLab の Issue で完了させます。そもそも Issue とは何か、それについては[こちら](https://docs.gitlab.com/ee/user/project/issues/)で詳しく学べます。
 
-そのチームメンバー固有のオンボーディングを担当する People Operations Specialist が、入社日の少なくとも 4 日前に [オンボーディング Issue を開きます](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/#onboarding-issue-creation)。
+そのチームメンバー固有のオンボーディングを担当する People Operations Specialist が、入社日の少なくとも 4 日前に[オンボーディング Issue を開きます](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/#onboarding-issue-creation)。
 
 各オンボーディング Issue には、すべての GitLab チームメンバーに関連するタスクと 30 日の期限を含むメインセクションがあります。メインセクションの下には、部門や役割ごとのタスクが続きます。一部の役割や部門には、補足の Issue テンプレートや追加のオンボーディングページにリンクするタスクがあります。タスクの理解または完了に支援が必要な場合は、[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies)や他の GitLab チームメンバーに相談してください。
 
-オンボーディング Issue を通じて、チームメンバーの [ベースライン権限](/handbook/security#baseline-role-based-entitlements-access-runbooks--issue-templates)にアクセスできるようになります。オンボーディングの 2 日目に、その役割に対応するテンプレートが作成されている場合は、[Access Request](/handbook/people-group/)が生成されます。Access Request は IT チームが所有しています。Access Request に関する質問は、Slack の `#it-help` までご連絡ください。
+オンボーディング Issue を通じて、チームメンバーの[ベースライン権限](/handbook/security#baseline-role-based-entitlements-access-runbooks--issue-templates)にアクセスできるようになります。オンボーディングの 2 日目に、その役割に対応するテンプレートが作成されている場合は、[Access Request](/handbook/people-group/)が生成されます。Access Request は IT チームが所有しています。Access Request に関する質問は、Slack の `#it-help` までご連絡ください。
 
-特定の状況下では、祝日や Family and Friends Day のため People Operations チームがオンボーディングを支援できない場合があります。これらの具体的な日程は、People Operations チームの [対応可能な日程](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/#people-operations-availability)に記載されています。
+特定の状況下では、祝日や Family and Friends Day のため People Operations チームがオンボーディングを支援できない場合があります。これらの具体的な日程は、People Operations チームの[対応可能な日程](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/#people-operations-availability)に記載されています。
 
 ## TaNewKi ウェルカムコール {#tanewki-welcome-call}
 
@@ -56,7 +56,7 @@ People Operations チームは、**プレオンボーディングコール** と
 - 招待は当該ローテーションの People Operations Specialist によって送付されます。このメールは、コールの少なくとも 1 週間前に送付する必要があります。
     1. People Experience/Ops Shared Drive>People Experience>Ta"NEW"ki Call にある Ta"NEW"ki フォルダを開く
     1. 次の 2 つの TaNEWki コール日程を含めるように Google フォームを更新する（AMER/APAC、APAC/EMEA、EMEA/AMER の時間）
-    1. この [メールテンプレート](https://gitlab.com/gitlab-com/people-group/General/-/blob/master/.gitlab/email_templates/tanewki_welcome_call.md)を使用する
+    1. この[メールテンプレート](https://gitlab.com/gitlab-com/people-group/General/-/blob/master/.gitlab/email_templates/tanewki_welcome_call.md)を使用する
     1. 新しいチームメンバーのメールアドレスを BCC 行に追加し、People Operations チームを CC に入れる
     1. Google レスポンスシートを見ることで、People Operations チームはコールに誰が出席するかを確認できます
     1. 新入社員がフォームを完了すると、自動応答（Document Studio 経由）が Zoom リンクと選択された日付を返信します
@@ -65,12 +65,11 @@ People Operations チームは、**プレオンボーディングコール** と
 
 デフォルトで、すべての新しいチームメンバーは 1 日目から以下の Slack チャンネルに追加され、適切なチャンネルで質問や支援を最初から求められるようにします：
 
-- `#new_team_members` （挨拶して自己紹介してください）
+- `#team-member-updates` （挨拶や自己紹介をし、勤続記念日や昇進を祝い、別れの挨拶をする）
 - `#diversity_inclusion_and_belonging` （他のチームメンバーとつながり、Diversity, Inclusion and Belonging で何を行っているかをもっと知る）
 - `Compass` （ラップトップ、1Password、Okta、MDM への登録などに関する問題など、IT 関連のサポートが必要な場合）
 - `#questions` （ハンドブックで解決できないことがあれば何でも）
 - `#donut-be-strangers` （コーヒーチャットの設定に関するヘルプが必要な場合）
-- `#team-member-updates` （新しいチームメンバー、勤続記念日、別れ）
 - `#thanks` （GitLab の誰かに感謝を伝えたい場合のチャンネル）
 - `#whats-happening-at-gitlab` （GitLab に関連するすべての重要なアップデート／リマインダー／通知）
 
@@ -78,19 +77,19 @@ People Operations チームは、**プレオンボーディングコール** と
 
 新しいチームメンバーには、入社日の少なくとも 4 営業日前に Issue が作成されます。マネージャーと People Operations チームのメンバーがこの Issue にアサインされます。**マネージャーと People Operations** には、円滑で成功するオンボーディングプロセスを確保するため、**入社日前** に完了する必要があるタスクがあります。これらのタスクに関する質問や支援については、Issue 上で気軽に問い合わせるか、Compass 経由でリクエストを作成してください。
 
-### <i class="fas fa-tasks fa-fw color-orange font-awesome"></i>コンプライアンス {#compliance}
+### <i class="fas fa-tasks fa-fw"></i>コンプライアンス {#compliance}
 
 Senior People Operations Specialist は毎月、開いているすべてのオンボーディング Issue について、新しいチームメンバー、マネージャー、People Operations チームのタスクが完了しているかを監査します。さらに重要なのは、私たちの会社のコンプライアンス（セキュリティ、給与など）に沿って完了する必要のあるタスクがいくつかあるということです。
 
-未完了のタスクが残っている場合、People Operations Specialist は関連するメンバーに Issue 上で ping を送り、項目への対応や、Issue をクローズできるかを確認します。
+未完了のタスクが残っている場合、People Operations Specialist は関連するメンバーに Issue 上で通知を送り、項目への対応や、Issue をクローズできるかを確認します。
 
 *Issue をクローズし、コンプライアンスを維持する責任は引き続き People Operations Specialist にあります。*
 
 雇用 bot は、60 日経過後もまだ開いているオンボーディング Issue を自動的にクローズします。
 
-### <i class="fas fa-tasks fa-fw color-orange font-awesome"></i>オンボーディング Issue の完了 {#completing-onboarding-issue}
+### <i class="fas fa-tasks fa-fw"></i>オンボーディング Issue の完了 {#completing-onboarding-issue}
 
-そもそも Issue とは何か、それについては [こちら](https://docs.gitlab.com/ee/user/project/issues/)で詳しく学べます。
+そもそも Issue とは何か、それについては[こちら](https://docs.gitlab.com/ee/user/project/issues/)で詳しく学べます。
 
 オンボーディング Issue を確実に完了させるには、タスクがオンボーディング対象のチームメンバーに該当するかどうかに関係なく、すべてのタスクにチェックを入れることが重要です。チェックボックスにチェックすることは、以下のいずれかを示します：
 
@@ -104,7 +103,7 @@ Senior People Operations Specialist は毎月、開いているすべてのオ�
 - [すべての GitLab チームメンバー](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)
 - [インターン](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding_intern_engineering.md)
 
-#### <i class="fas fa-suitcase fa-fw color-orange font-awesome"></i>役割固有のテンプレート {#role-specific-templates}
+#### <i class="fas fa-suitcase fa-fw"></i>役割固有のテンプレート {#role-specific-templates}
 
 オンボーディング関連のすべての雇用テンプレート（国別および役割別）は、[公開リポジトリ](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/tree/main/.gitlab/issue_templates/onboarding_tasks)で見つけることができます
 
@@ -119,7 +118,7 @@ Senior People Operations Specialist は毎月、開いているすべてのオ�
 
 ### 臨時サービスプロバイダー（コントラクター／コンサルタント）のオンボーディング {#temporary-service-provider-contractorconsultant-onboarding}
 
-People チームは、臨時サービスプロバイダーの採用、オンボーディング、オフボーディングのプロセスには関与しません。これらのオンボーディングについては Procurement チームと連携し、テンプレートやその他の有用な情報については [臨時サービスプロバイダーの社内ハンドブックページ](https://internal.gitlab.com/handbook/it/end-user-services/access-request/temporary-service-providers/)を確認してください。
+People チームは、臨時サービスプロバイダーの採用、オンボーディング、オフボーディングのプロセスには関与しません。これらのオンボーディングについては Procurement チームと連携し、テンプレートやその他の有用な情報については[臨時サービスプロバイダーの社内ハンドブックページ](https://internal.gitlab.com/handbook/it/end-user-services/access-request/temporary-service-providers/)を確認してください。
 
 ### 追加のオンボーディングページ {#additional-onboarding-pages}
 

@@ -1,11 +1,11 @@
 ---
 title: グローバル出張・経費ポリシー
 upstream_path: /handbook/finance/expenses/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T16:57:21+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T14:20:54.720006+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-28T14:28:10Z"
+lastmod: "2026-11-04T08:29:57-07:00"
 ---
 
 {{% alert title="これは管理対象ドキュメントです" color="danger" %}}
@@ -35,7 +35,7 @@ GitLab のグローバル出張・経費ポリシーは、私たちが常に会�
 **マネージャーおよび/または予算オーナー**：
 
 - チームメンバーの経費が GitLab のグローバル出張・経費ポリシーに準拠していることを確認してください。
-- マネージャーは、出張が業務上不可欠であり予算が確保されていることを確認するため、チーム内で出張前の認識期待値を設定するようお願いします。
+- マネージャーは、出張が業務上不可欠であり予算が確保されていることを確認するため、出張予定を事前に共有する際の期待事項をチーム内で定めるようお願いします。
 - 各 Finance Partner と協力し、特定のチームの予算とこれまでの支出額を把握してください。
 - マネージャーは、チームの経費全体を毎月レビューし、懸念事項があれば直ちに Accounts Payable チームにフラグを立てる必要があります。GitLab の[贈答品・接待ポリシー](/handbook/legal/policies/gifts-contributions/#gifts-and-entertainment-policy)違反の可能性についても、必要に応じて Legal 部門にフラグを立てる必要があります。  
 - マネージャーは、チームメンバーによる未報告の不正使用について責任を負います。
@@ -69,11 +69,11 @@ GitLab のグローバル出張・経費ポリシーは、私たちが常に会�
 - 1 か月を超える経費は月次ベースで提出する必要があります（例：インターネットを 1 年分前払いした場合でも、合計を 12 か月で割って毎月コストを提出する必要があります）。
 - 個人クレジットおよびギフトカード：GitLab は、従業員が実際に自己負担した金額のみを払い戻します。個人クレジット、ギフトカード、リワードポイント、その他の割引が業務購入に適用される場合、払い戻しは従業員の個人支払い方法に請求された純額に限定されます。
 例：従業員が 100 ドルのモニターを購入し、50 ドルのギフトカードを適用した場合。GitLab は、割引前の価格 100 ドルではなく、実際に支払われた金額である 50 ドルを払い戻します。
-- 経費品目には、支出にクライアント／チームメンバー以外の金額が含まれている場合は明確に記載する必要があります。特定の国の税制要件により、クライアント支出を異なる方法で計上する必要があります。
-- これらのガイドラインの範囲外で提出されたものは、ポリシー外としてフラグが立てられます。
+- 経費品目には、支出にクライアント/チームメンバー以外の金額が含まれている場合は明確に記載する必要があります。特定の国の税制要件により、クライアント支出を異なる方法で計上する必要があります。
+- これらのガイドラインの範囲外で提出されたものは、Out of Policy としてフラグが立てられます。
 - 業務関連経費（インターネット、コワーキングスペース、その他の月額サブスクリプションなど）は、いかなる種類の休暇中も払い戻し対象外です。
 - PEO の場合、Navan ではご存知のとおり、雇用されている GitLab 組織の通貨で自動的にシステムが払い戻します。PEO に請求する必要のある通貨で確実に払い戻されるようにするため、PEO に請求する支払い通貨で経費を提出してください。すなわち、PEO に USD で請求する場合は、Navan で経費レポートを提出する前に経費を USD に変換してください。これにより、毎月 PEO に請求する正確な金額を把握できます。これが不可能な場合は、PEO への支払いのために経費が給与に振り替えられる日の Netsuite の FX レートを使用して通貨を変換します。Navan で提出された実際の金額を確認するには、毎月提出された経費のリストを提供できます。必要な情報を提供できるよう、毎月 [Compass](/handbook/eta/corporate-it/compass/compass-guide/)チケットを提出してリクエストしてください。
-- 第三者と同様に、共有する個人データの量を制限することがベストプラクティスです。経費を提出するために領収書に個人データを含める必要はないため、プライバシーを高めるために個人データを黒塗りしても構いません。ただし、これは必須のステップではありません。経費領収書から個人データを黒塗りしないことを選択する方のために、Navan で実施されているプライバシーおよびセキュリティ管理が評価されており、お客様の情報を適切に保護するように設計されています。
+- 第三者と同様に、共有する個人データの量を制限することがベストプラクティスです。経費を提出するために領収書に個人データを含める必要はないため、プライバシーを高めるために個人データを黒塗りしても構いません。ただし、これは必須のステップではありません。経費領収書から個人データを黒塗りしないことを選択する方のために、Navan で実施されているプライバシーおよびセキュリティ管理が評価されており、あなたの情報を適切に保護するように設計されています。
 
 ### 3.1 ポリシー外取引 {#31-out-of-policy-transactions}
 
@@ -87,13 +87,13 @@ GitLab のグローバル出張・経費ポリシーは、私たちが常に会�
 - Navan で出張を予約する際は、「Trip Purpose」ドロップダウンメニューから適切な出張目的タイプを選択することが重要です。正しい出張タイプを選択することは、正確なデータレポートにとって不可欠です。
 - 出張目的のオプションには以下が含まれます。
   - Company meeting - 顧客が同席しない内部会議またはイベント（個別に記載されていないもの）のための出張
-  - Customer visit - GitLab の顧客や見込み客が出席する会議またはイベントのための出張（会議、ロードショー、フィールドイベント、顧客会議を含む）
+  - Customer visit - GitLab の顧客や見込み客が出席する会議またはイベントのための出張（カンファレンス、ロードショー、フィールドイベント、顧客会議を含む）
   - Partner visit - GitLab のパートナーが出席する会議またはイベントのための出張
   - Specific events - これらは出張目的のドロップダウンに表示されます。例：`FY25 GTM Onsite`
 
 ### 3.3 その他 {#33-other}
 
-- すべての E-Group メンバーのポリシー外取引は、Senior Director、Assistant Controller、または Accounting Organization のそれ以上の承認が必要です。
+- すべての E-Group メンバーのポリシー外取引は、Senior Director, Assistant Controller または Accounting Organization のそれ以上の役職者による承認が必要です。
 - ポリシーへの例外は、マネージャーおよび Finance チームの適切な承認とともに、Issue またはメールを介して文書化する必要があります。
 
 ## 4. 手順 {#4-procedures}
@@ -134,7 +134,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - **連続飛行時間 8 時間超のフライト** - 頻繁に出張する人（四半期に 3 回以上、連続飛行時間 8 時間以上の国際線で出張する人、各セグメント 8 時間以上のフライトセグメントが最低 6 回）の場合、以下の理由のいずれかで出張する際にビジネスクラスが許可されます。
   - 顧客との会議
   - 講演
-  - 会議での GitLab 代表
+  - カンファレンスで GitLab を代表すること
 
 #### マイレージプログラム {#frequent-flyer-programs}
 
@@ -144,7 +144,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 #### キャンセル、未使用チケット、交換 {#cancellations-unused-tickets-and-exchanges}
 
 - チームメンバーは、参加できなくなる出張をキャンセルする責任があります。
-- フライトキャンセルは通常、今後使用できるフライトクレジット／未使用チケットになります。
+- フライトキャンセルは通常、今後使用できるフライトクレジット/未使用チケットになります。
 - 未使用チケットは、可能な限り将来の業務出張に使用する必要があります。チームメンバーがチケットを使用できないことを知っている場合は、[Compass](/handbook/eta/corporate-it/compass/compass-guide/)の `Expenses -> Travel Related Expenses` ページでリクエストを提出してください。
 - チームメンバーは未使用の航空チケットから個人的に利益を得ることはできません。
 - フライトの変更が必要な場合は、Navan サポートにお問い合わせください。
@@ -154,11 +154,11 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - システムは以下を自動的にポリシー外としてフラグを立てます。
   - 選択されたフライト価格が最安オプション + バッファより高い
   - ポリシー外の航空クラスが選択されている
-  - 14 日前未満で予約されたフライト
+  - 出発まで 14 日未満の時点で予約されたフライト
 - 選択されたフライトがこれらの基準のいずれかをトリガーした場合、承認のために自動的にマネージャーにメールが送信されます。承認をより簡単かつ迅速にするために、十分な理由を提供してください。
-- 24 時間以内に手動アクション（承認/拒否）がない場合、予約は自動的に受理されます。
+- 手動アクション（承認/拒否）がないまま 24 時間が経過すると、予約は自動的に受理されます。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Airfare
 {{% /panel %}}
 
@@ -174,7 +174,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 **A. 第三者賠償責任**
 
-レンタカー会社でレンタル契約に含まれる州の最低補償の標準包含を超える賠償責任保険を購入してください。GitLab の保険ポリシーは、会社業務を行う際のレンタカーに賠償責任保険を提供しますが、運転手またはレンタル購入に使用されたクレジットカード会社による既存の賠償責任補償を超える可能性があります。
+レンタカー会社でレンタル契約に含まれる州の最低補償の標準包含を超える賠償責任保険を購入してください。GitLab の保険ポリシーは、会社業務を行う際のレンタカーに賠償責任保険を提供しますが、運転手またはレンタルの支払いに使用されたクレジットカード会社の賠償責任補償を超えた部分を補償する場合があります。
 
 米国外のチームメンバーが米国またはカナダで自動車をレンタルする場合は、レンタルカウンターで提供される賠償責任保険を購入してください。労災補償は負傷した米国チームメンバーを保護しますが、他の乗客は訴訟を起こす権利を持つ可能性があります。米国外のチームメンバーが他の人を車に招待する際に GitLab が保護されるよう、レンタルカウンターで提供される際にはこの保険を購入することをお勧めします。
 
@@ -191,7 +191,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 レンタカーの損害を引き起こす事故が発生した場合、保険が購入されていない場合、米国外のレンタル会社は予約に使用されたクレジットカードに修理費用の見積もり額を請求します。これが発生した場合、GitLab は損害賠償のために Foreign Corporate Hired Auto Physical Damage Coverage を購入していません。
 
-{{% panel header="**コーディング**" header-bg="blue" %}}
+{{% panel header="**経費区分**" header-bg="blue" %}}
 **Expense Type / Navan Policy Category:** Rental cars
 {{% /panel %}}
 
@@ -206,10 +206,10 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - ホテル滞在は、標準ルームの場合、税込み 1 泊 300 米ドル（または同等の現地通貨）まで、7 日間の予約リードタイムで払い戻し可能です。
 - ただし、Navan の宿泊ポリシーは「Dynamic Policy」として設定されており、出張日と目的地に基づいてすべての検索の公正市場価格を計算します。これにより、その地域に 300 米ドル制限が本当に適用されない場合に、価格にいくらかの余地があります。航空運賃と同様に、Dynamic Policy の算定額を 20% 超上回る購入は、マネージャーによるさらなるレビューのためにフラグが立てられます。
 - 利用可能な唯一のオプションが返金不可ルームでない限り、常に返金可能なルーム予約を選択してください。
-- 例外は、社内チームが組織する Corporate Events のホテル室ブロック、または会議ホテル室ブロックが Navan よりも良い価格設定の場合です。
-- ホテル室ブロックの価格設定は通常 300 USD/泊の範囲内であり、その金額を超える場合は、例外を許可するために AP チームに連絡してください。
-- 会議ホテル室ブロックまたは Corporate Events 組織のブロックは、引き続き個人クレジットカードに請求し、Navan Expense を介して払い戻しのために提出する必要があります。
-- 会社業務で出張する際は、可能であれば常にクレジットカードを持参してください。ホテルは通常、チェックイン時に物理的なクレジットカードを提示することを期待します。このクレジットカードは滞在期間中、ファイルに保管されます。宿泊が会社または会社のクレジットカードによって前払いされた場合でも、ホテルは「付随費」のためにカードがファイルにあることを要求する可能性があります。
+- 社内チームが手配する Corporate Events のホテル客室予約枠を利用する場合、またはカンファレンスのホテル客室予約枠が Navan よりも安い場合は例外です。
+- ホテル客室予約枠の料金は通常 300 USD/泊の範囲内であり、その金額を超える場合は、例外を許可するために AP チームに連絡してください。
+- カンファレンスのホテル客室予約枠または Corporate Events が手配する予約枠は、引き続き個人クレジットカードに請求し、Navan Expense を介して払い戻しのために提出する必要があります。
+- 会社業務で出張する際は、可能であれば常にクレジットカードを持参してください。ホテルは通常、チェックイン時に物理的なクレジットカードを提示することを期待します。このクレジットカードの情報は滞在期間中、ホテルに登録されます。宿泊が会社または会社のクレジットカードによって前払いされた場合でも、ホテルは「付随費」のためにカード情報の登録を要求する可能性があります。
 
 #### ホテルの追加ガイドライン {#additional-hotel-guidelines}
 
@@ -228,7 +228,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 - 業務出張で、ホテル/Airbnb の代わりに友人や家族の家に滞在することを決めた場合、最大 50 ドルの適切なホスト/ホステスへのギフトを経費計上できます。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Lodging
 {{% /panel %}}
 
@@ -240,7 +240,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - チップは 20% まで許容され、説明ボックスに詳細を記載する必要があります。これはポリシー制限内に収めるため、最終価格に含める必要があります。米国のチームメンバーの場合、50 ドル未満の現金チップには領収書は必要ありません。
 - 出張の説明/出張理由も追加してください。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Traveling: meals for myself
 {{% /panel %}}
 
@@ -252,7 +252,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - チップは 20% まで許容され、説明ボックスに詳細を記載する必要があります。これはポリシー制限内に収めるため、最終価格に含める必要があります。米国のチームメンバーの場合、50 ドル未満の現金チップには領収書は必要ありません。
 - 出張の説明/出張理由も追加してください。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Traveling: Team Events and meals
 {{% /panel %}}
 
@@ -266,10 +266,10 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 #### 走行距離レートの基準 {#how-mileage-rates-are-based}
 
-- 走行距離レートは、お住まいの法人の今年の走行距離レートに基づきます。これらは税務コンプライアンスのために毎年更新されます。
+- 走行距離レートは、所属法人の今年の走行距離レートに基づきます。これらは税務コンプライアンスのために毎年更新されます。
 - ただし、以下の法人（オンラインでの可視性が限られているため）の場合、デフォルトレートは $0.50/マイルに設定されています…現地のコンプライアンス法に一致させるため、必要に応じて走行距離レートを更新してください：GitLab IT BV、GitLab Korea、GitLab Japan。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Distance Driven
 {{% /panel %}}
 
@@ -281,7 +281,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 四半期に 3 回を超える列車旅行（6 セグメント）をし、その所要時間が 5 時間を超える場合、列車での 1 クラスのアップグレードが許可されます。
 - 年間または月間鉄道割引カードは払い戻し対象外です。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Train travel
 {{% /panel %}}
 
@@ -293,7 +293,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 駐車場および通行料は 1 日あたり 150 ドル制限。
 - 設定された制限を超える予約はすべて、マネージャーの承認を請求に添付する必要があります。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Public transport, tolls & parking
 {{% /panel %}}
 
@@ -305,42 +305,42 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 #### 出張日 - 前後の日 {#travel-dates---days-before-and-after}
 
-会社は、すべての業務関連出張経費をカバーします。これには、業務関連の出張部分の宿泊と食事が含まれます。出張距離に応じて、業務関連の前後 1 日も含めることができます。たとえば、時差ボケを引き起こす場所での 3 日間の会議に参加する場合、会社はその 3 日間の宿泊と食事、および前後 1 日をカバーします。
+会社は、すべての業務関連出張経費をカバーします。これには、業務関連の出張部分の宿泊と食事が含まれます。出張距離に応じて、業務関連の予定の前日と翌日も含めることができます。たとえば、時差ボケを引き起こす場所での 3 日間の会議に参加する場合、会社はその 3 日間に加え、前日と翌日の宿泊と食事をカバーします。
 
 #### インターネット - 出張中 {#internet---travelling}
 
 - 出張中のインターネットは 1 日あたり最大 50 米ドル（または現地同等通貨）まで払い戻し可能です。
 - 説明ボックスに出張の詳細を提供してください。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Traveling: internet access
 {{% /panel %}}
 
-### CRO 組織ガイドライン {#cro-organization-guidelines}
+### CRO Organization ガイドライン {#cro-organization-guidelines}
 
 **Field FAQ**
 
 - [Field CRO T&E 変更](https://docs.google.com/document/d/1O-E-tOAZowM5_sQnbuQeglrxXWepimsembOKSUQP_lE/edit?usp=sharing)。
 
-**Field マネージャー FAQ**
+**Field Manager FAQ**
 
-- [Field マネージャー CRO T&E 変更](https://docs.google.com/document/d/1hKT1iXR2Hv1eMhtXAhbftAFTyd_xgemAdK3x969x0nw/edit?usp=sharing)。
+- [Field Manager CRO T&E 変更](https://docs.google.com/document/d/1hKT1iXR2Hv1eMhtXAhbftAFTyd_xgemAdK3x969x0nw/edit?usp=sharing)。
 
 #### 授乳中の母親のサポート {#supporting-nursing-mothers}
 
-- GitLab 承認の業務で出張中に授乳している場合、母乳と一緒に出張するためまたは母乳を自宅に送るためのコストを払い戻すことができます。
+- GitLab 承認の業務で出張中に授乳している場合、母乳と一緒に出張するためまたは母乳を自宅に送るための費用の払い戻しを受けられます。
 - 以下を経費計上できます。
   - MilkStork などの母乳配送サービスに関連する料金。
-  - 母乳配送サービスが利用できない場合、飛行中の荷物預け料金を経費計上できます。
+  - 母乳配送サービスが利用できない場合、航空便の受託手荷物料金を経費計上できます。
   - 出張中に母乳を保存するクーラーまたは容器
   - ドライアイス、梱包、発泡スチロールクーラー、ラベルなどの配送費および材料。
 - 健康保険プランで母乳ポンプまたはその他の用品のコストの払い戻し対象となるかどうかを確認してください。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** Other
-- **GL コード NON-COGS:** 6080 - Other Travel- Visas, Permits, Covid Tests
-- **GL コード COGS:** 5080 - Other Travel- Visas, Permits, Covid Tests COGS
+- **GL Code NON-COGS:** 6080 - Other Travel- Visas, Permits, Covid Tests
+- **GL Code COGS:** 5080 - Other Travel- Visas, Permits, Covid Tests COGS
 {{% /panel %}}
 
 #### 個人予約 {#personal-bookings}
@@ -356,7 +356,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 書籍は、職務ポジションの最適化に使用される場合、払い戻し可能です。
 - 上限は年間 60 ドルに設定されています。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Books, dues & subscriptions
 {{% /panel %}}
 
@@ -367,15 +367,15 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 上限は四半期あたり 150 ドルに設定されています。
 - この上限を超える経費は、マネージャーのメールによる承認が必要です。メールは経費取引に追加領収書として添付する必要があります。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Office Supplies
 {{% /panel %}}
 
 #### コワーキングスペース - 月額 {#co-working-space---monthly}
 
-- コワーキングスペースは、業務出張中の月間スペースおよび単発の日について払い戻し可能です。経費申請を提出する前に事前承認が必要です。
+- コワーキングスペースの月額利用料と、業務出張中の単発利用料は払い戻し可能です。経費申請を提出する前に事前承認が必要です。
 - 月額 700.00 ドル上限。
-- スペースは、チームメンバーが雇用されている国の主要居住地から通勤可能な距離（±50 km）内に位置している必要があります。ただし、チームメンバーが業務出張中の単発の日（デイパス）は例外です。これは税務上の理由によるものです。
+- スペースは、チームメンバーが雇用されている国の主要居住地から通勤可能な距離（+-50 km）内に位置している必要があります。ただし、チームメンバーが業務出張中の単発の日（デイパス）は例外です。これは税務上の理由によるものです。
 - コワーキングスペースは、共有ワークスペースサービスの提供を主な事業目的とする専門的に管理された施設である必要があります。アパート、私有財産、またはコワーキングが副次的または付随的なサービスとして提供される施設（ジム、カントリークラブ、ゴルフクラブ、ホテル、カフェ、レクリエーション施設など）の賃貸は禁止されています。中核ビジネスモデルがワークスペースレンタルを中心とする専用のコワーキングプロバイダーのみが受け入れられます。
 - 個人旅行中はコワーキングスペースは払い戻し対象外です。
 - 月内に 5 日を超える予約がある場合、マネージャーおよび Finance の承認（[Compass](/handbook/eta/corporate-it/compass/compass-guide/)の `Expenses -> General Expenses` ページからリクエストを提出することによる）が必要であり、経費提出前に取得する必要があります。
@@ -386,11 +386,11 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - コワーキングスペースへの/からの移動、駐車場、食事、飲料、アクセスカード、保険、その他のコワーキング施設での追加費用は払い戻し対象外です。スペースの賃料のみが払い戻し対象です。
 - コワーキングスペースと在宅勤務の組み合わせで使用する場合、最も時間を過ごす場所のインターネット費用の払い戻しを許可します。すなわち、1 か月の全期間コワーキングスペースを経費計上する場合、自宅のインターネットは経費計上できません。月に数日コワーキングを経費計上する場合、自宅のインターネットは全額経費計上できます。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** Co-working Space - Monthly
-- **GL コード NON-COGS:** 6076 - Coworking Space
-- **GL コード COGS:** 5076 - Coworking Space COGS
+- **GL Code NON-COGS:** 6076 - Coworking Space
+- **GL Code COGS:** 5076 - Coworking Space COGS
 {{% /panel %}}
 
 #### コワーキングスペース - 日次オフィスパス {#co-working-space---daily-office-pass}
@@ -399,21 +399,21 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 上限は 1 日あたり 100.00 ドルです。
 - その他の適用ルールは、上記の月額と同じです。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** Co-working Space - Daily Office Pass
-- **GL コード NON-COGS:** 6076 - Coworking Space
-- **GL コード COGS:** 5076 - Coworking Space COGS
+- **GL Code NON-COGS:** 6076 - Coworking Space
+- **GL Code COGS:** 5076 - Coworking Space COGS
 {{% /panel %}}
 
-#### 会議 {#conferences}
+#### カンファレンス {#conferences}
 
-- GitLab を代表して会議に参加することに関連するすべての費用は払い戻し可能であり、提出時に経費レポートで承認済みの [Compass の G&D リクエスト](/handbook/people-group/learning-and-development/growth-and-development/)（2026 年 6 月 23 日より前に作成されたリクエストについては、承認済みの G&D GitLab Issue）を記載する必要があります。詳細と要件については、[Growth and Development ハンドブックページ](/handbook/people-group/learning-and-development/growth-and-development/)を参照してください。Growth and Development ハンドブックページに現在記載されている払い戻し上限には、会議への/からの出張費用は含まれていないため、出張費用についてはマネージャーの承認を取得してください。
+- GitLab を代表してカンファレンスに参加することに関連するすべての費用は払い戻し可能であり、提出時に経費レポートで承認済みの [Compass の G&D リクエスト](/handbook/people-group/learning-and-development/growth-and-development/)（2026 年 6 月 23 日より前に作成されたリクエストについては、承認済みの G&D GitLab Issue）を記載する必要があります。詳細と要件については、[Growth and Development ハンドブックページ](/handbook/people-group/learning-and-development/growth-and-development/)を参照してください。Growth and Development ハンドブックページに現在記載されている払い戻し上限には、カンファレンスへの/からの出張費用は含まれていないため、出張費用についてはマネージャーの承認を取得してください。
 - 経費を作成する際に、Navan で分類またはタグ「Growth and Development」を選択してください。
 - 承認済みの Compass の G&D リクエスト（2026 年 6 月 23 日より前に作成されたリクエストについては、承認済みの G&D GitLab Issue）が必要で、AP Admin によってレビューされます。
-- 出張を除き、G&D 外での会議経費は、チームメンバーがイベントのスピーカーであるか、職務責任（例：人員配置や営業）のためにイベントへの参加が必要でない限り、許可されません。
+- 出張を除き、G&D 外でのカンファレンス経費は、チームメンバーがイベントのスピーカーであるか、職務責任（例：人員配置や営業）のためにイベントへの参加が必要でない限り、許可されません。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** G&D (Growth & Development)
 {{% /panel %}}
 
@@ -441,8 +441,6 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - Navan バーチャルカードは年間リフレッシュには使用できません。チームメンバーは自身の支払い方法を使用し、Navan で経費を提出する必要があります。
 - 未使用の資金は翌年に繰り越されません。
 - 前暦年内に採用されたチームメンバーは対象外です。たとえば、2023-05-10 に開始したチームメンバーは、2025-01-01 に初回のリフレッシュ額を受け取ります。
-
-![承認済み WFH 機器リスト - コンピュータ機器、家具、照明、その他のオフィス用品を含む、承認済み在宅勤務機器のカテゴリを示す視覚的なガイド](/images/finance/expenses/approved-wfh-equipment-list.png)
 
 ## 承認済み WFH 機器リスト {#approved-wfh-equipment-list}
 
@@ -481,7 +479,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - リストレスト
 - 電源タップ
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Work from home
 {{% /panel %}}
 
@@ -489,7 +487,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 - 現金または現金等価物（ギフトカードなど）は許可されません。対象となる贈答品は 1 取引あたり 125 ドルが上限です。
 - マネージャーは、手術前の励ましの言葉や大切な人を失った場合など、人生における重要な出来事を認めて、チームメンバーに代わって贈答品や花を送ることができます。GitLab はすでに[贈答品](/handbook/people-group/celebrations/#new-parent-swag)を送るため、ベビーギフトは払い戻し対象外です。
-- 任意の People Manager は、GitLab の任意のチームメンバーに贈答品や花を送って、彼らのことを考えていることを知らせることができます。例：
+- 任意の People Manager は、GitLab の任意のチームメンバーに贈答品や花を送って、相手のことを気にかけていることを知らせることができます。例：
   - 新しいチームメンバーが最近新居を購入し、他の人とそのニュースを共有した場合。People Manager は祝福のギフトとして「Home Sweet Home」のドアマットを送ります。
   - 仕事中に People Manager が Zoom 通話の背景でチームメンバーの子供を見つけ、子供たちに新しいゲームを贈って驚かせます。
   - チームメンバーが体調を崩していることに気づいた People Manager が、「お大事に」のジェスチャーとして食品のケアパッケージを送ります。
@@ -498,7 +496,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - People Manager は、経費払い戻しのために自身の個人カードを使用する必要があります。People Manager は、経費のために Navan Expense でチーム `EmployeeGiftsFlowers` およびアカウント 6028 を確実に使用する必要があります。
 - 贈答品および花の経費計上に関するさらなる質問については、[Compass](/handbook/eta/corporate-it/compass/compass-guide/)の `Expenses -> General Expenses` ページからリクエストを提出して AP チームに連絡してください。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** Gifts - internal
 - **Classification:** EmployeeGiftsFlowers
@@ -519,7 +517,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - コワーキングスペースと在宅勤務の組み合わせで使用する場合、最も時間を過ごす場所のインターネット費用の払い戻しを許可します。すなわち、1 か月の全期間コワーキングスペースを経費計上する場合、自宅のインターネットは経費計上できません。月に数日コワーキングを経費計上する場合、自宅のインターネットは全額経費計上できます。
 - GitLab GmbH（ドイツ）のチームメンバーは、この経費の国別ガイドラインについて[このページ](/handbook/finance/payroll/)を参照してください。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Internet access
 {{% /panel %}}
 
@@ -539,7 +537,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - IT チームからの承認済み Issue が必要です。
 - AP Admin は承認済み Issue について経費をレビューする必要があります。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Office Supplies
 {{% /panel %}}
 
@@ -549,11 +547,11 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 最大 5,000 ドルまで Navan を介して経費計上できます。
 - >5,000 ドル超の場合は [Zip](/handbook/business-technology/enterprise-applications/guides/zip-guide/)の調達プロセスを経る必要があります。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** Marketing
-- **GL コード NON-COGS:** 複数 - GL アカウントの選択が必要
-- **GL コード COGS:** 複数 - GL アカウントの選択が必要
+- **GL Code NON-COGS:** 複数 - GL アカウントの選択が必要
+- **GL Code COGS:** 複数 - GL アカウントの選択が必要
 {{% /panel %}}
 
 ### クライアントおよびパートナーとの食事 {#meals-with-clients-and-partners}
@@ -565,7 +563,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 食事/イベントの説明も追加してください。
 - 請求書は出席している最も上級のチームメンバーが支払い、そのチームメンバーが払い戻しのために提出する必要があります。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Entertaining clients
 {{% /panel %}}
 
@@ -573,7 +571,6 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 
 - ホームオフィス機器を維持するために、特定の品目が時々必要になる場合があります。許容可能なオフィス用品および消耗品については以下のリストを参照してください。
 - 上限は月 50.00 ドルに設定されています。
-![承認済みオフィス用品リスト - プリンター用品、文房具、書類処理品目を含む承認済みオフィス用品を示す視覚的なガイド](/images/finance/expenses/approved-office-supplies-list.png)
 
 ## 承認済みオフィス用品リスト {#approved-office-supplies-list}
 
@@ -587,7 +584,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - ノートブック
 - 書類シュレッダー料金
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Office Supplies
 {{% /panel %}}
 
@@ -602,7 +599,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 実際の携帯電話、電話アクセサリ、および月額ハードウェア費用は払い戻し対象外です。
 - さらに、タブレット、時計、電話デバイスは払い戻し対象外です。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Cell phone
 {{% /panel %}}
 
@@ -611,7 +608,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 業務文書または特別なパッケージの送受信に関連する郵送/配送/通関料は払い戻し可能です。
 - 上限は承認のためにフラグが立てられる前に 1 取引あたり 100.00 ドルに設定されています。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** Shipping & postage
 {{% /panel %}}
 
@@ -622,7 +619,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 経費を作成する際に、Navan で分類またはタグ「Growth and Development」を選択してください。
 - AP Admin は承認済み Issue について経費をレビューする必要があります。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 **Expense Type / Navan Policy Category:** G&D (Growth & Development)
 {{% /panel %}}
 
@@ -635,7 +632,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 ### スワッグ {#swag}
 
 - 顧客、チーム、イベント、景品、TMRG などに関連するすべてのスワッグは経費計上できません。
-- 会議では、配布するための贈答品やスワッグ関連品目は経費計上できません。
+- カンファレンスでは、配布するための贈答品やスワッグ関連品目は経費計上できません。
 - 例外を求める前に、ハンドブックの[マーチャンダイズワークフローガイダンス](/handbook/marketing/brand-experience/merchandise-handling/#swag-shop)を参照してください。
 
 ### チームビルディング {#team-building}
@@ -649,7 +646,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - Navan では、チームメンバーは関連する経費を GL コード「Team events & meals」および分類（オプション詳細下）「FY26 Team Building Budget」にコーディングする必要があります。
 - 経費はイベントと同じ月内に提出する必要があります。または、イベントのタイミングのために不可能な場合、最も遅い提出可能なタイミングはイベントが開催された会計四半期の終わりまでです。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** チームメンバーは、チームビルディングイベント（食事、出張、交通機関など）に関連する個別の経費に T&E アカウントを使用してください
 - **Classification:** FY26 Team Building Budget
@@ -663,11 +660,11 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 経費を作成する際に、Navan で分類またはタグ「Growth and Development」を選択してください。
 - AP Admin は承認済み Issue について経費をレビューする必要があります。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** Other
-- **GL コード NON-COGS:** 6065 - Training & Development
-- **GL コード COGS:** 5065 - Training & Development COGS
+- **GL Code NON-COGS:** 6065 - Training & Development
+- **GL Code COGS:** 5065 - Training & Development COGS
 {{% /panel %}}
 
 ### VPN サブスクリプション {#vpn-subscription}
@@ -683,11 +680,11 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - 説明ボックスに経費の詳細な説明を提供してください。
 - AP Admin の承認が必要としてフラグが立てられます。
 
-{{% panel header="**コーディング**" header-bg="green" %}}
+{{% panel header="**経費区分**" header-bg="green" %}}
 
 - **Expense Type / Navan Policy Category:** Other
-- **GL コード NON-COGS:** 6080 - Other Travel- Visas, Permits, Covid Tests
-- **GL コード COGS:** 5080 - Other Travel- Visas, Permits, Covid Tests COGS
+- **GL Code NON-COGS:** 6080 - Other Travel- Visas, Permits, Covid Tests
+- **GL Code COGS:** 5080 - Other Travel- Visas, Permits, Covid Tests COGS
 {{% /panel %}}
 
 ### 4.3 領収書紛失宣誓書 {#43-missing-receipt-affidavit}
@@ -701,7 +698,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 ### 法人 {#legal-entities}
 
 - チームメンバーは Navan を通じて経費を提出する必要があります。
-- GitLab Inc、GitLab Federal、GitLab Ltd（英国）、GitLab BV（ベルギーおよびオランダ）、GitLab GmbH（ドイツ）、GitLab PTY Ltd（オーストラリアおよびニュージーランド）、GitLab GK（日本）、GitLab LTD（アイルランド）、GitLab Israel Ltd.、GitLab Korea Limited、GitLab Canada Corp、GitLab Singapore PTE. LTD. の経費は、ポリシー内の経費については、または Accounts Payable チームによる承認後（ポリシー外経費の場合）、Navan を介して 7 営業日以内に払い戻されます。
+- GitLab Inc、GitLab Federal、GitLab Ltd（英国）、GitLab BV（ベルギーおよびオランダ）、GitLab GmbH（ドイツ）、GitLab PTY Ltd（オーストラリアおよびニュージーランド）、GitLab GK（日本） GitLab LTD（アイルランド）、GitLab Israel Ltd.、GitLab Korea Limited、GitLab Canada Corp、GitLab Singapore PTE. LTD. の経費は、ポリシー内の経費については、または Accounts Payable チームによる承認後（ポリシー外経費の場合）、Navan を介して 7 営業日以内に払い戻されます。
 - 支払いを完了するには、チームメンバーの銀行口座が Navan にセットアップされている必要があります。
 - GitLab France S.A.S および GitLab BV Finland の経費は、当月の給与に含まれるよう、毎月 6 日までに提出および承認を完了する必要があります（ポリシー外経費の承認は Accounts Payable チームが行います）。
 - Navan は、Navan を介して直接払い戻されるチームメンバーのためにバッチ支払いシステムを実装します。週中に複数の経費を提出した場合、Navan はこれらの経費を 1 つの週次支払いにまとめ、月曜日に支払います。これらの支払いには、前日曜日の夕方までのすべての承認済み経費が含まれ、チームメンバーの銀行口座には火曜日または水曜日に入金されるはずです。
@@ -745,16 +742,16 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 ### 4.5 チームメンバーのマネージャーに代わって（または依頼により）経費を提出する {#45-submitting-expenses-on-behalf-or-requested-by-team-members-manager}
 
 - チームメンバーがマネージャーに代わって経費を提出することは、私たちの経費ポリシーおよび GitLab の内部統制の違反です。AP チームは、四半期マネージャー Issue のレビュー中に四半期ベースでこれらをレビューします。経費レビュープロセス中にこれが発見された場合、以下のアクションが取られます：
-  - AP Admin はチームメンバー、チームメンバーのマネージャー、チームメンバーのマネージャーのマネージャー、Finance リーダーシップチームに違反を通知します。
+  - AP Admin はチームメンバー、チームメンバーのマネージャー、チームメンバーのマネージャーのマネージャー、Finance leadership team に違反を通知します。
   - 経費は直ちに GitLab に返金され、チームメンバーのマネージャーは経費を自身で再提出する必要があります。
 
 ## 5. 物理カード {#5-physical-cards}
 
-Navan 物理カードポリシーは[こちら](/handbook/finance/accounts-payable/corp-credit-cards/)を参照してください。
+Navan Physical Card ポリシーは[こちら](/handbook/finance/accounts-payable/corp-credit-cards/)を参照してください。
 
 ## 6. 購入カード {#6-purchase-cards}
 
-**Navan 購入カード**
+**Navan Purchase Card**
 
 Navan 内のこれらのバーチャルカードは AP チームのみが使用し、新しいチームメンバーにホームオフィスセットアップ用の 1,500 米ドル（または現地通貨同等額）の手当を提供することのみに使用されます。これらのカードは、チームメンバーがこの金額を超えて支出しないことを確認し、手当が雇用 1 年目のみ利用可能であることを確実にするためにセットアップされました。Navan の管理下、これらのカードは AP Admin チームのみがアクセスでき、チームメンバーはアクセスできません。
 
@@ -774,18 +771,18 @@ Navan 内のこれらのバーチャルカードは AP チームのみが使用�
 
 - Navan Expense ツールの使用方法については、[Navan エンドユーザーガイド](/handbook/business-technology/enterprise-applications/guides/navan-expense-guide/)を参照してください。関連する質問は、Compass 経由でチームに直接連絡できます。
 
-### Navan ロイヤリティプログラム {#navan-loyalty-program}
+### Navan Loyalty Program {#navan-loyalty-program}
 
-- 出張者は、Navan でホテルを予約すると Navan ロイヤリティポイントを獲得します。
+- 出張者は、Navan でホテルを予約すると Navan Loyalty Points を獲得します。
 - 他者のためにホテルを予約するユーザーもロイヤリティポイントを獲得します。
-- Navan ロイヤリティプログラムはプラットフォームで表示され、獲得と引き換え活動を追跡するための新しいロイヤリティプログラムプロフィールページがあります。チームメンバーは、個人旅行ホテルのためにロイヤリティポイントを引き換えることができます。ユーザーは、必要に応じてロイヤリティポイントを少しでもたくさんでも引き換えることができます。チームメンバーがロイヤリティポイントだけで予約の全額をカバーするのに十分でない場合、ロイヤリティポイントで一部を支払い、個人クレジットカードで一部を支払うことができます。ロイヤリティポイントは、前払いホテル料金を選択する際のチェックアウト時の支払い方法になります。
+- Navan Loyalty Program はプラットフォームで表示され、獲得と引き換え活動を追跡するための新しいロイヤリティプログラムプロフィールページがあります。チームメンバーは、個人旅行ホテルのためにロイヤリティポイントを引き換えることができます。ユーザーは、必要に応じてロイヤリティポイントを少しでもたくさんでも引き換えることができます。チームメンバーがロイヤリティポイントだけで予約の全額をカバーするのに十分でない場合、ロイヤリティポイントで一部を支払い、個人クレジットカードで一部を支払うことができます。ロイヤリティポイントは、前払いホテル料金を選択する際のチェックアウト時の支払い方法になります。
 - すべてのロイヤリティポイントは、ユーザーが会社を離れる際に個人専用アカウントを有効化することで保持できます。企業は獲得したリワードを取り戻すことはできません。
 
 ### 持続可能な出張の考慮事項 {#sustainable-travel-considerations}
 
 - オールリモート企業であっても、GitLab は一部の出張が必要であることを認識しています。これらの考慮事項は、出張の環境への影響を減らすことを目的としています：
 - イベントの目的が実際に会うことで強化される場合を除き、対面の会議よりもバーチャル会議および出席を優先してください。
-- 短距離出張の場合、空路よりも陸路出張を検討してください。短距離出張の推奨事項については、[ベルン大学](https://klima.unibe.ch/abatement/environmental_tip/tip_2_travel/index_eng.html)、[ルンド大学](https://www.lucsus.lu.se/sites/lucsus.lu.se/files/lucsus_travel_policy.pdf)の例をご覧ください。
+- 短距離出張の場合、空路よりも陸路出張を検討してください。短距離出張の推奨事項については、[University of Bern](https://klima.unibe.ch/abatement/environmental_tip/tip_2_travel/index_eng.html)、[University of Lund](https://www.lucsus.lu.se/sites/lucsus.lu.se/files/lucsus_travel_policy.pdf)の例をご覧ください。
 - 二酸化炭素排出量の少ない出張を選択してください。Navan Tripactions を通じて出張を予約する際、チェックアウト画面で総 CO2 フットプリントを確認できます。
 - 対面会議を組織する場合、できるだけ多くの人が持続可能な方法で出張できる場所を目指してください。
 - 航空会社が提供するカーボンオフセットは価値が疑わしいため、理にかなった範囲で空路出張を避けるよう目指してください。
@@ -802,7 +799,7 @@ Navan 内のこれらのバーチャルカードは AP チームのみが使用�
 
 - GitLab でのチームメンバーの役割に関連する目的で登録または使用されたもの；
 - GitLab 商標（GITLAB）またはその派生語（とりわけ git、glab、gtlb、gl など）を含むもの；および/または
-GitLab の主要メッセージング用語（とりわけ DevOps、DevOps platform、オールリモートなど）を含むもの。
+GitLab の主要メッセージング用語（とりわけ DevOps、DevOps platform、all remote など）を含むもの。
 
 #### 新しい GitLab 関連ドメイン名の登録 {#registration-of-new-gitlab-related-domain-names}
 

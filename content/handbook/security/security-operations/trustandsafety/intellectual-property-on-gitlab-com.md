@@ -1,14 +1,12 @@
 ---
 title: "GitLab.com 上の知的財産"
 upstream_path: /handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com/
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-translated_at: "2026-10-24T21:10:07.488559+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:18:14.793826+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-23T13:10:34Z"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 ## 名前ポリシー {#name-policy}
 
@@ -58,7 +56,7 @@ GitLab.com Support Team は、ユーザーアカウントまたはグループ�
 1. データが存在しない（プロジェクトがない、またはプロジェクトが空である）。
 1. 所有者の最終サインインが少なくとも 2 年前である。
 1. namespace にデータが含まれている場合、GitLab Support は namespace を再割り当てする前に 2 週間にわたって所有者への連絡を試みます。namespace にデータが含まれておらず（空またはプロジェクトなし）、所有者が非アクティブな場合、namespace は直ちに解放されます。
-1. 90 日を超える未確認アカウントに関連付けられた namespace は、即時解放の対象となります。データを含まず、6 か月以上前に作成されたグループ namespace も同様に即時解放の対象となります。
+1. 90 日を超える未確認アカウントに関連付けられた namespace は、即時解放の対象となります。データを含まず、作成から 6 か月を超えたグループ namespace も同様に即時解放の対象となります。
 
 名前のスクワッティング報告は、以下の手順に従って提出できます。報告が十分な内容である場合、GitLab は適切な措置を講じることがあります。
 

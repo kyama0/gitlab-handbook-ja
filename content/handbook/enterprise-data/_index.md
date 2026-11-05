@@ -2,14 +2,12 @@
 title: "Enterprise Data Team"
 description: "GitLab Enterprise Data Team は、すべての GitLab チームメンバーがデータプログラムに貢献し、データ資産からビジネス価値を生み出せるよう支援する責任を担っています。"
 upstream_path: /handbook/enterprise-data/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T08:39:41+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T14:38:43.466178+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 ## Enterprise Data Team ハンドブックへようこそ {#welcome-to-the-enterprise-data-team-handbook}
 
@@ -28,11 +26,11 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 ## GitLab でのデータの仕組み {#how-data-works-at-gitlab}
 
-GitLab のデータの状態を向上させることに集中する人々・プロジェクト・取り組みの総体を **GitLab Data Program**と呼びます。GitLab には、データを活用してインサイトとビジネス判断を推進するデータプログラム内の 2 つの主要な独立したグループがあります。これらのグループは互いに補完的であり、ビジネスのトレンドへの深い理解を促進するために特定の分野に集中します。2 つのチームは、（中央の）Enterprise Data Team と、Sales・Marketing・Product・Engineering・Finance にある別の Function Analytics Teams です。[データ部門の採用動画](https://youtu.be/4DlwsBIPxUw)を視聴して、関わるチームの一部と彼らが取り組んでいることをご覧ください。
+GitLab のデータの状態を向上させることに集中する人々・プロジェクト・取り組みの総体を **GitLab Data Program** と呼びます。GitLab には、データを活用してインサイトとビジネス判断を推進するデータプログラム内の 2 つの主要な独立したグループがあります。これらのグループは互いに補完的であり、ビジネスのトレンドへの深い理解を促進するために特定の分野に集中します。2 つのチームは、（中央の）Enterprise Data Team と、Sales ・ Marketing ・ Product ・ Engineering ・ Finance にある別の Function Analytics Teams です。[データ部門の採用動画](https://youtu.be/4DlwsBIPxUw)を視聴して、関わるチームの一部と各チームが取り組んでいることをご覧ください。
 
-* **Data Team**は Marketing office の直属であり、エンタープライズのインサイト・アナリティクス（運用ではない）、データサイエンス、データプラットフォーム・インフラ、BI テクノロジー、マスターデータ、データガバナンス、データ品質の卓越センターです。Data Team はエンタープライズデータ戦略にも責任を持ち、[エンタープライズ全体のデータモデル](/handbook/enterprise-data/platform/edw/)を構築し、セルフサービスデータ機能を提供し、[データプラットフォーム](/handbook/enterprise-data/platform/#i-classfas-fa-cubes-fa-fw--text-orangeiour-data-stack)を維持し、[データポンプ](/handbook/enterprise-data/platform/#data-pump)を開発し、[データ品質](/handbook/enterprise-data/data-governance/data-quality/)を監視・測定します。Data Team は、GitLab チームメンバーが定義し、[Snowflake エンタープライズデータウェアハウス](/handbook/enterprise-data/platform/#i-classfas-fa-database-fa-fw--text-purpleidata-warehouse)から定期的にアクセスするデータを担当します。Data Team は、定期的にアクセスされるデータの約 80%を支えるデータインフラを構築します。Data Team はまた、新しい高度なアナリティクス取り組みを立ち上げ、他の GitLab チームメンバーにガイダンスを提供するデータサイエンス卓越センターを提供します。
+* **Data Team** は Marketing office の直属であり、エンタープライズのインサイト・アナリティクス（運用ではない）、データサイエンス、データプラットフォーム・インフラ、BI テクノロジー、マスターデータ、データガバナンス、データ品質の卓越センターです。Data Team はエンタープライズデータ戦略にも責任を持ち、[エンタープライズ全体のデータモデル](/handbook/enterprise-data/platform/edw/)を構築し、セルフサービスデータ機能を提供し、[データプラットフォーム](/handbook/enterprise-data/platform/#our-data-stack)を維持し、[データポンプ](/handbook/enterprise-data/platform/#data-pump)を開発し、[データ品質](/handbook/enterprise-data/data-governance/data-quality/)を監視・測定します。Data Team は、GitLab チームメンバーが定義し、[Snowflake エンタープライズデータウェアハウス](/handbook/enterprise-data/platform/#data-warehouse)から定期的にアクセスするデータを担当します。Data Team は、定期的にアクセスされるデータの約 80% を支えるデータインフラを構築します。Data Team はまた、新しい高度なアナリティクス取り組みを立ち上げ、他の GitLab チームメンバーにガイダンスを提供するデータサイエンス卓越センターを提供します。
 
-* **Function Analytics Teams**はそれぞれの部門・部署に所属し報告します。これらのチームは、ファンクション内で行われるビジネス活動とワークフローのための具体的な分析を行います。これらのチームは、[データ開発](/handbook/enterprise-data/how-we-work/data-development/)アプローチに従い、必要な分析の緊急性と重要性に基づいてアドホック分析を実施し、ダッシュボードを開発します。最も重要で繰り返し行われる分析は、中央 Data Team が管理する集中型の[トラスティッドデータモデル](/handbook/enterprise-data/how-we-work/data-development/#trusted-data-development)によって支えられます。Function Analytics Teams はまた、トラスティッドデータの機能を必要としない、緊急かつ運用上のニーズを解決するためのファンクション固有のアドホックデータモデルとビジネスインサイトモデルを構築します。Function Analytics Teams はさまざまな方法で Data Team と密接に連携します：GitLab の全体的なアナリティクス能力の拡大、[データカタログ](/handbook/enterprise-data/data-governance/data-catalog/)の拡張、新しいトラスティッドデータモデルとダッシュボードの要件提供、メトリクスの検証、Data Team への作業優先順位付けの支援。ビジネスプロセスとソースシステムにデータのギャップが見つかった場合、チームメンバーはプロダクト管理・Sales Ops・Marketing Ops などに要件を提供し、ソースシステムが正しいデータを取得するようにします。
+* **Function Analytics Teams** はそれぞれの部門・部署に所属し報告します。これらのチームは、ファンクション内で行われるビジネス活動とワークフローのための具体的な分析を行います。これらのチームは、[データ開発](/handbook/enterprise-data/how-we-work/data-development/)アプローチに従い、必要な分析の緊急性と重要性に基づいてアドホック分析を実施し、ダッシュボードを開発します。最も重要で繰り返し行われる分析は、中央 Data Team が管理する集中型の[トラスティッドデータモデル](/handbook/enterprise-data/how-we-work/data-development/#trusted-data-development)によって支えられます。Function Analytics Teams はまた、トラスティッドデータの機能を必要としない、緊急かつ運用上のニーズを解決するためのファンクション固有のアドホックデータモデルとビジネスインサイトモデルを構築します。Function Analytics Teams はさまざまな方法で Data Team と密接に連携します：GitLab の全体的なアナリティクス能力の拡大、[データカタログ](/handbook/enterprise-data/data-governance/data-catalog/)の拡張、新しいトラスティッドデータモデルとダッシュボードの要件提供、メトリクスの検証、Data Team への作業優先順位付けの支援。ビジネスプロセスとソースシステムにデータのギャップが見つかった場合、チームメンバーは Product Management ・ Sales Ops ・ Marketing Ops などに要件を提供し、ソースシステムが正しいデータを取得するようにします。
 
 ### データプログラムのチーム {#data-program-teams}
 
@@ -50,7 +48,7 @@ GitLab Data Program には以下の分野に集中したチームが含まれま
 
 ### Data Team の連携方法 {#how-data-teams-work-together}
 
-通常の運用ベースでは、Data Team とファンクションアナリストチームは「ハブ & スポーク」モデルで機能し、Data Team がアナリティクス・アナリティクステクノロジー・オペレーション・インフラの「ハブ」および卓越センターとして機能し、「スポーク」は各部門のファンクションアナリストを表します。ファンクションアナリストは自分の特定の分野で深い専門知識を発展させ、必要に応じて Data Team を活用します。時折、Data Team は専任のファンクションアナリストがいない GitLab の部門、または専任のファンクションアナリストがいても追加のサポートが必要なチームに対して、限定的な開発サポートを提供します。チームは [Slack データチャンネル](/handbook/enterprise-data/#data-slack-channels)・[GitLab データプロジェクト](https://gitlab.com/gitlab-data/)・アドホックミーティングを通じてコラボレーションします。
+通常の運用ベースでは、Data Team とファンクションアナリストチームは「Hub & Spoke」モデルで機能し、Data Team がアナリティクス・アナリティクステクノロジー・オペレーション・インフラの「ハブ」および卓越センターとして機能し、「スポーク」は各部門のファンクションアナリストを表します。ファンクションアナリストは自分の特定の分野で深い専門知識を発展させ、必要に応じて Data Team を活用します。時折、Data Team は専任のファンクションアナリストがいない GitLab の部門、または専任のファンクションアナリストがいても追加のサポートが必要なチームに対して、限定的な開発サポートを提供します。チームは [Slack データチャンネル](/handbook/enterprise-data/#data-slack-channels)・[GitLab データプロジェクト](https://gitlab.com/gitlab-data/)・アドホックミーティングを通じてコラボレーションします。
 
 ```mermaid
 classDiagram
@@ -88,7 +86,7 @@ classDiagram
 
 ### Data Governance and Data Quality Team {#data-governance-and-data-quality-team}
 
-**[Data Governance and Data Quality Team](/handbook/enterprise-data/organization/)** は、堅牢なポリシー・高度なテクノロジー・コラボレーション文化によって実現される**整合性・信頼性・セキュアなアクセシビリティ**の最高基準で、私たちの組織がデータを戦略的資産として活用できるようにするデータガバナンスとデータ品質プログラムの構築に集中します。チームは Enterprise Apps・Security・Legal を含むクロスファンクショナルなチームと連携し、データポリシー・品質コントロール・メタデータ管理・規制要件への準拠を確立します。
+**[Data Governance and Data Quality Team](/handbook/enterprise-data/organization/)** は、堅牢なポリシー・高度なテクノロジー・コラボレーション文化によって実現される**整合性・信頼性・セキュアなアクセシビリティ**の最高基準で、私たちの組織がデータを戦略的資産として活用できるようにするデータガバナンスとデータ品質プログラムの構築に集中します。チームは Enterprise Apps ・ Security ・ Legal を含むクロスファンクショナルなチームと連携し、データポリシー・品質コントロール・メタデータ管理・規制要件への準拠を確立します。
 
 ### Enterprise Data Team のジョブファミリー {#enterprise-data-team-job-families}
 
@@ -109,7 +107,7 @@ classDiagram
 
 #### データプラットフォームの安定性 {#data-platform-stability}
 
-* インフラコスト対計画：このパフォーマンス指標は、データインフラ（ウェアハウス・ETL パイプラインなど）の計画コストに対する実際のコストの財務的ポジションを追跡します。
+* インフラコスト対計画：このパフォーマンス指標は、データインフラ（ウェアハウス・ ETL パイプラインなど）の計画コストに対する実際のコストの財務的ポジションを追跡します。
 * データ稼働率：このパフォーマンス指標は、データパイプラインが報告されたインシデントなしにデータを提供していた時間の割合を測定します。この指標は現在 Monte Carlo のデータに基づいており、`raw` データレイヤーの任意のテーブルに設定された（自動）モニタに従っています。
 
 #### データガバナンスとデータ品質 {#data-governance-and-data-quality}
@@ -120,9 +118,9 @@ classDiagram
 
 #### データの採用 {#data-adoption}
 
-* データ月間アクティブユーザー（DMAU）：DMAU は、私たちが提供する主要な分析ツール（Snowflake と Tableau）の使用状況に基づいて、GitLab チームメンバーによるデータプラットフォームの直接使用状況を測定します。将来的には Jupyter や Data Studio などの追加ツール、および Marketo（PQL）・Gainsight（使用データ）・Salesforce（傾向スコア）などの EApps にポンプで注入されたデータの使用状況も含める予定です。これらの数値の可視化は、[データ月間アクティブユーザー](https://10az.online.tableau.com/#/site/gitlab/workbooks/2049753/views)レポートで確認できます。
+* データ月間アクティブユーザー（DMAU）：DMAU は、私たちが提供する主要な分析ツール（Snowflake と Tableau）の使用状況に基づいて、GitLab チームメンバーによるデータプラットフォームの直接使用状況を測定します。将来的には Jupyter や Data Studio などの追加ツール、および Marketo（PQL）・ Gainsight（使用データ）・ Salesforce（傾向スコア）などの EApps にポンプで注入されたデータの使用状況も含める予定です。これらの数値の可視化は、[データ月間アクティブユーザー](https://10az.online.tableau.com/#/site/gitlab/workbooks/2049753/views)レポートで確認できます。
 
-* データ月間アクティブユーザー（DMAU）= 特定の月にデータシステム（Snowflake・Tableau など）のユニークユーザー数
+* データ月間アクティブユーザー（DMAU）= 特定の月にデータシステム（Snowflake ・ Tableau など）のユニークユーザー数
 * データ成熟度スコア：年次測定。8 つのデータ能力に対する現在のデータ成熟度を評価します：
   1. 戦略 & アプローチ
   2. 文化 & リーダーシップ
@@ -140,7 +138,7 @@ classDiagram
 まず、データ価値計算機によって算出される「結果のドル価値」として知られる評価基準があります。[Data Team 価値計算機](/handbook/enterprise-data/how-we-work/#data-team-value-calculator)を使用して、私たちが貢献する取り組みと完了する Issue のドル価値を計算できます。
 さらに、私たちはより野心的な測定へのシフトを目指しています。それはデータプロダクトごとの ARR インパクトまたは効率の向上を測定することです。データサイエンスモデルは以下の方法で測定されます：
 
-* 拡大傾向（PtE）と購入傾向（PtP）- 2 つのメトリクスを評価します：1) 増分収益インパクト 2) 現在セールスファネルにないリードの数
+* 拡大傾向（PtE）と購入傾向（PtP）- 2 つのメトリクスを評価します：1) 増分収益インパクト 2) 創出したリードのうち、現在セールスファネルにないものの数
 * 解約傾向（PtC）- 2 つのメトリクスを評価します：1) 解約しなかった高解約傾向の顧客数 2) 増分収益インパクト
 
 ## お問い合わせ方法 {#how-to-connect-with-us}
@@ -155,7 +153,7 @@ classDiagram
 
 ### データ Slack チャンネル {#data-slack-channels}
 
-* [#data](https://gitlab.slack.com/messages/data/)は GitLab のすべてのデータおよび分析の会話のプライマリチャンネルです。他のチームのメンバーが Issue へのリンク・助けの要求・方向性・Data Team メンバーからの一般的なフィードバックを求める場所です。
+* [#data](https://gitlab.slack.com/messages/data/)は GitLab のすべてのデータおよび分析の会話のプライマリチャンネルです。他のチームのメンバーが Issue へのリンク・助けの要求・方向性・ Data Team メンバーからの一般的なフィードバックを求める場所です。
 * [#data-team](https://gitlab.enterprise.slack.com/archives/C02UG779AQ1)は Data Team のアナウンスが行われる場所です。
 * [#data-daily](https://gitlab.slack.com/messages/data-daily/)は Data Engineers が日々の生産性・ブロッカー・楽しいことを追跡する場所です。[Geekbot](https://geekbot.com/)によって動作し、日次スタンドアップの非同期バージョンであり、Data Engineers の連携と情報共有を助けます。
 * [#data-lounge](https://gitlab.slack.com/messages/data-lounge/)は興味深い記事・ポッドキャスト・ブログ投稿などへのリンクのためのチャンネルです。GitLab に必ずしも関連しないカジュアルなデータの会話に適した場所です。Data Team のチーム内議論にも使用されます。
@@ -195,7 +193,7 @@ GitLab で Data Team をタグ付けするには以下を使用します：
 
 |  **テクニカルガイド** | **インフラ** | **Data Team** |
 | :--------------- | :----------------- | :-------------- |
-| [SQL スタイルガイド](/handbook/enterprise-data/platform/sql-style-guide/) | [高レベルダイアグラム](/handbook/enterprise-data/platform/#i-classfas-fa-cubes-fa-fw--text-orangeiour-data-stack) | [作業方法](/handbook/enterprise-data/how-we-work/) |
+| [SQL スタイルガイド](/handbook/enterprise-data/platform/sql-style-guide/) | [高レベルダイアグラム](/handbook/enterprise-data/platform/#our-data-stack) | [作業方法](/handbook/enterprise-data/how-we-work/) |
 | [dbt ガイド](/handbook/enterprise-data/platform/dbt-guide/) | [システムデータフロー](/handbook/enterprise-data/platform) | [チーム組織](/handbook/enterprise-data/organization/) |
 | [Python ガイド](/handbook/enterprise-data/platform/python-guide/) | [データソース](/handbook/enterprise-data/platform/)| [カレンダー](/handbook/enterprise-data/how-we-work/calendar/) |
 | [Airflow & Kubernetes](https://internal.gitlab.com/handbook/enterprise-data/platform/infrastructure/#common-airflow-and-kubernetes-tasks) | [Snowplow](/handbook/enterprise-data/platform/snowplow/)  | [トリアージ](/handbook/enterprise-data/how-we-work/triage/) |

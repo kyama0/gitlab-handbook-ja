@@ -1,27 +1,27 @@
 ---
-title: "セキュリティコンプライアンスチーム"
-description: "セキュリティコンプライアンスチーム"
+title: "Security Compliance チーム"
+description: "Security Compliance チーム"
 upstream_path: /handbook/security/security-assurance/security-compliance/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:23:25.989927+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-### セキュリティコンプライアンスチームチャーター
+### Security Compliance チームのチャーター {#security-compliance-team-charter}
 
 最終更新日: 2025-03-20
 
-## ミッションステートメント
+## ミッションステートメント {#mission-statement}
 
-セキュリティコンプライアンスチームは、厳格な認証管理とリスク・コントロール監視を通じて、業界で最も信頼される DevSecOps プラットフォームとしての GitLab のポジションを守ります。私たちは、コンプライアンス要件を競争上の優位性に変え、自社製品を活用してセキュリティの卓越性を示すことで、顧客を守ります。
+Security Compliance チームは、厳格な認証管理とリスク・コントロール監視を通じて、業界で最も信頼される DevSecOps プラットフォームとしての GitLab のポジションを守ります。私たちは、コンプライアンス要件を競争上の優位性に変え、自社製品を活用してセキュリティの卓越性を示すことで、顧客を守ります。
 
-## バリュープロポジション
+## バリュープロポジション {#value-proposition}
 
-セキュリティコンプライアンスは、認証の維持と拡張を通じて顧客に保証を提供し、セールスを支援することで、最も信頼される DevSecOps プラットフォームとしての GitLab のポジションを維持します。
+Security Compliance は、認証の維持と拡張を通じて顧客に保証を提供し、セールスを支援することで、最も信頼される DevSecOps プラットフォームとしての GitLab のポジションを維持します。
 
-## コアコンピテンシー
+## コアコンピテンシー {#core-competencies}
 
 1. [セキュリティ認証および認定](../security-compliance/certifications/)
    - ギャップ分析プログラム: 認証拡張のための実現可能性分析
@@ -52,21 +52,21 @@ lastmod: "2026-08-27T23:30:57+02:00"
     - 私たちは観察事項を是正しリスクを低減するための GitLab 機能ソリューションを推奨します
     - 私たちは[コンプライアンスペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)を体現することで製品にフィードバックを提供します。
 
-## 運用モデル
+## 運用モデル {#operating-model}
 
-私たちは、目標に向けて継続的にイテレーションしながら可能な限り効率的になることを目標に、アジャイルプログラムマネジメントとプロジェクトマネジメントのベストプラクティスを使用して作業を整理します。セキュリティコンプライアンスチームメンバーは、私たちの仕事の進め方をどのように改善できるかについて定期的にフィードバックを提供することが奨励されており、これは毎週のチームミーティングのアジェンダの常設トピックです。
+私たちは、目標に向けて継続的にイテレーションしながら可能な限り効率的になることを目標に、アジャイルプログラムマネジメントとプロジェクトマネジメントのベストプラクティスを使用して作業を整理します。Security Compliance のチームメンバーは、私たちの仕事の進め方をどのように改善できるかについて定期的にフィードバックを提供することが奨励されており、これは毎週のチームミーティングのアジェンダの常設トピックです。
 
-### コアプロセス
+### コアプロセス {#core-processes}
 
-進行中のすべての作業の唯一の情報源は、セキュリティコンプライアンスの[チームトップレベルエピック](https://gitlab.com/groups/gitlab-com/gl-security/security-assurance/-/epics/289)であり、ここには詳細なステータス更新が含まれます。また、[チームエピックボード](https://gitlab.com/groups/gitlab-com/-/epic_boards/1063538?label_name[]=seccomp-roadmap)を使用してワークフローのステータスを可視化し、[ロードマップ](https://docs.google.com/presentation/d/1TEJzAkdoi_U-ubg7qhj1ZUpi2_VQYNF5DTOT5Mj1Mqo/edit?usp=sharing)と比較しています。ロードマップに直接関連するすべての作業はこれらの中で行われ、Issue は[セキュリティコンプライアンスチーム Issue トラッカープロジェクト](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance/team)で起票されるべきです。これは2つの理由で重要です。堅牢なラベリングスキームを使用して単一の場所で作業を集中・整理することで効率的に作業できること、そしてさまざまな運用メトリクス（パフォーマンス指標）について報告できることです。
+進行中のすべての作業の唯一の情報源は、Security Compliance の[チームトップレベルエピック](https://gitlab.com/groups/gitlab-com/gl-security/security-assurance/-/epics/289)であり、ここには詳細なステータス更新が含まれます。また、[チームエピックボード](https://gitlab.com/groups/gitlab-com/-/epic_boards/1063538?label_name[]=seccomp-roadmap)を使用してワークフローのステータスを可視化し、[ロードマップ](https://docs.google.com/presentation/d/1TEJzAkdoi_U-ubg7qhj1ZUpi2_VQYNF5DTOT5Mj1Mqo/edit?usp=sharing)と比較しています。ロードマップに直接関連するすべての作業はこれらの中で行われ、Issue は[Security Compliance チーム Issue トラッカープロジェクト](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance/team)で起票されるべきです。これは 2 つの理由で重要です。堅牢なラベリングスキームを使用して単一の場所で作業を集中・整理することで効率的に作業できること、そしてさまざまな運用メトリクス（パフォーマンス指標）について報告できることです。
 
 [FedRAMP 認可プログラム](/handbook/security/security-assurance/security-compliance/fedramp-compliance/)に関連する私たちの作業の多くは、残念ながら私たちのコントロール外の規制上の義務により、GitLab の他の部門には見えません。可能な限り透明性と可視性を私たちの作業にもたらし、基本的なメトリクスの追跡を継続するためには、認可境界内の詳細な Issue へのリンクを伴うハイレベルなタスクを追跡するためであっても、エピックボードと Issue トラッカーを可能な限り使用し続けることが重要です。
 
-### 私たちの働き方
+### 私たちの働き方 {#how-we-work}
 
 <details><summary>私たちの働き方</summary>
 
-#### エピック階層
+#### エピック階層 {#epic-hierarchy}
 
 私たちのチームトップレベルエピックは単に、エピックの担当者 / 直接責任者 (DRI) のステータス更新の SSOT です。直近の子エピックには `seccomp-roadmap` ラベルが付けられ、エピックボードに表示され、事実上私たちのロードマップを構成します。
 
@@ -90,9 +90,9 @@ E --> J([...])
 G --> K([Issue 1])
 ```
 
-#### エピック担当者の責任
+#### エピック担当者の責任 {#epic-assignee-responsibilities}
 
-各エピックには、プロジェクトの提供に最終的な責任を持つ単一の DRI がいます。これは彼らがすべての作業を行うという意味ではなく、作業が進行していること、ブロッカーが迅速に対処またはエスカレーションされていること、そして毎週ステータスを報告していることを保証するという意味です。
+各エピックには、プロジェクトの提供に最終的な責任を持つ単一の DRI がいます。これは DRI がすべての作業を行うという意味ではなく、作業が進行していること、ブロッカーが迅速に対処またはエスカレーションされていること、そして毎週ステータスを報告していることを保証するという意味です。
 
 DRI は次のことを行う必要があります。
 
@@ -142,69 +142,69 @@ DRI は次のことを行う必要があります。
 
 ラベルは[ラベルセクション](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance/team#labels)で説明されています。
 
-#### ロードマップ
+#### ロードマップ {#roadmap}
 
 すべてのエピックと Issue には、公式の[ロードマップ](https://docs.google.com/presentation/d/1TEJzAkdoi_U-ubg7qhj1ZUpi2_VQYNF5DTOT5Mj1Mqo/edit?usp=sharing)に従って期日が設定されます。
 
 エピックの期日 / ロードマップアイテムを更新するプロセス:
 
-1. 各月末後、セキュリティコンプライアンスマネジメントはエピックの（予想される）期日をレビューし、エピックが計画されたフェーズを超える場合、エピックの担当者 / DRI と協力してロードマップの変更を判断します。
+1. 各月末後、Security Compliance の管理職はエピックの（予想される）期日をレビューし、エピックが計画されたフェーズを超える場合、エピックの担当者 / DRI と協力してロードマップの変更を判断します。
 1. その後マネジメントはロードマップの調整を判断し、未完了の作業をシフトさせた後も将来のフェーズで計画されている作業が現実的であるようにします。
 1. ロードマップの変更は次の週次同期で共有されます。
 
 ### ステータス更新 {#status-updates}
 
-私たちは、チームメンバーがステータス更新を一度だけ提供すればよく、マネジメントはそれをレビューするために常に1か所だけに行けばよいことを保証するために、自動化を活用しています。これは GitLab で歴史的に大きな問題でした。エピックと Issue がさまざまなサブグループとプロジェクトに分散していたためです。
+私たちは、チームメンバーがステータス更新を一度だけ提供すればよく、マネジメントはそれをレビューするために常に 1 か所だけに行けばよいことを保証するために、自動化を活用しています。これは GitLab で歴史的に大きな問題でした。エピックと Issue がさまざまなサブグループとプロジェクトに分散していたためです。
 
-セキュリティコンプライアンスロードマップに関連するすべての作業のステータスは、一目で見えるように[トップレベルチームエピック](https://gitlab.com/groups/gitlab-com/gl-security/security-assurance/-/epics/289)の説明に保持されます。
+Security Compliance のロードマップに関連するすべての作業のステータスは、一目で見えるように[トップレベルチームエピック](https://gitlab.com/groups/gitlab-com/gl-security/security-assurance/-/epics/289)の説明に保持されます。
 
-#### 週次ステータス更新プロセス
+#### 週次ステータス更新プロセス {#weekly-status-update-process}
 
 DRI は次のプロセスに従って DRI のエピックの週次更新を提供する必要があります。
 
 1. **毎週木曜日午後**、*アクティブな*エピック（`seccomp workflow::triage` 以外のもの）のエピック担当者 / DRI は、エピックのコメントで @メンションされ、ステータス更新で返信するよう求められます。
 1. **金曜日 17:00 UTC / 12:00 PM ET まで**に、*アクティブな*エピックの DRI（DRI が OOO の場合はカバーする人）は、子エピックと Issue の関連する詳細を含むエピックのステータスに関する更新を、エピックの[説明のステータスセクション](#epic-structure)に提供します。
    - 子エピックの DRI がエピック DRI と異なる場合、エピック DRI は子エピック DRI から更新を取得する責任があります。
-     - 週次更新のフォーマットは、以下の3つの項目それぞれについての簡潔な更新（〜1文または2〜3個の箇条書き）であるべきです。
+     - 週次更新のフォーマットは、以下の 3 つの項目それぞれについての簡潔な更新（1 文程度またはいくつかの箇条書き）であるべきです。
        - **前回更新からの進捗** - 本番環境にデプロイされた変更、解消されたブロッカー、その他達成された進捗。
        - **リスクと信頼度** - 新たに特定されたブロッカーや、継続している既存のブロッカーはありますか？現在または近い将来のその他の課題はありますか？これらのブロッカーや課題は、ロードマップによる予定期日までに完了することへの私たちの信頼度にどう影響しますか？
        - **緩和策** - 特定された課題やブロッカーを克服するために何が必要ですか？これは他のチームメンバー、チーム、エグゼクティブ、またはドメインエキスパートにエスカレートすべきですか？
-   - **ワークフローと健全性ラベルを更新する** - 各ステータス更新後、ワークフローラベルと健全性ステータスを更新する必要があります。ラベル構造の詳細については、[SecComp チーム Issue トラッカー Readme](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance/team/-/blob/main/README.md?ref_type=heads) を参照してください。
+   - **ワークフローと健全性ラベルを更新する** - 各ステータス更新後、ワークフローラベルと健全性ステータスを更新する必要があります。ラベル構造の詳細については、[SecComp チーム Issue トラッカー Readme](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance/team/-/blob/main/README.md?ref_type=heads)を参照してください。
 1. **トップレベルエピックステータス更新**[自動化](https://gitlab.com/gitlab-com/gl-infra/epic-issue-summaries)は定期的に DRI のステータス更新返信コメントから更新を統合し、自動的にそのエピックとトップレベルチームエピックにステータスを記入します。
 1. 効率を確保するために、Slack でのブロードキャストを含む、他の部門、ディビジョン、または OKR ステータス更新でも同じステータス更新を使用します。
 
-### バックログリファインメント
+### バックログリファインメント {#backlog-refinement}
 
 新しい四半期の開始前に、チームはエピックバックログのリファインメントに時間を費やします。このプロセスはチームマネージャーが主導し、ロードマップに従って次の四半期にターゲットされたエピックを確認し、各エピックに以下の情報が含まれていることを保証します（必要に応じて異なるステークホルダーを引き入れて詳細を埋めます）。
 
 - 背景（例: コンテキストとこの作業の目的を提供する。それは何で、なぜ関連するのか？）
-- 目的（計画/解決策を説明する SMART な目標: Specific, Measurable, Achievable, Relevant, Time-bound）
+- 目的（計画/解決策を説明する SMART な目標: 具体的、測定可能、達成可能、関連性がある、期限がある）
 - 終了基準（作業をより小さな論理的なチャンクに分割し、依存関係と前提条件を強調する）
 
 上記の情報が追加されると、エピックは Triage から Ready ステータスに移動します。目標は、その四半期の計画されたロードマップアイテムを Ready リストに含めて各四半期を開始することです。
 
 </details>
 
-### エンゲージメントモデル
+### エンゲージメントモデル {#engagement-model}
 
 - Slack
-  - セキュリティコンプライアンスチーム全体に届くように、`@sec-compliance-team` をタグ付けして自由にお問い合わせください
+  - Security Compliance チーム全体に届くように、`@sec-compliance-team` をタグ付けして自由にお問い合わせください
   - 私たちのチームに関する質問には、`#security-help` または `#security-discuss` Slack チャンネルが最適です（@security-assurance をタグ付けすることもできます）
 - GitLab でタグ付け
   - `@gitlab-com/gl-security/security-assurance/security-compliance`
 
-## 成功メトリクス
+## 成功メトリクス {#success-metrics}
 
 | **主要メトリクス** | **なぜ重要か** | **計算方法** | **目標しきい値** | **測定頻度** | **報告メカニズム** | **追加注記** |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 平均是正時間 | このメトリクスは、SLA と比較したコンプライアンス観察事項を是正する私たちの能力を追跡します。 | 各リスクレベルおよび四半期ごとに分けられた、[観察事項プロジェクト](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance-commercial-and-dedicated/observation-management) 内で Issue が作成されてからクローズされるまでの時間の計算。 | 是正 SLA: Critical = 3 か月、High = 6 か月、Medium = 1 年、Low = 1.5 年 | 四半期 | [Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/ObservationKPI/ObservationKPIs?:iid=1) | 観察事項は、次の基準が満たされた場合にマネジメントにエスカレートされます: 観察事項が Critical または High リスクであり、かつ観察事項が SRQ/StORM プログラム内のトップ5リスクに関連しており、割り当てられた是正オーナーまたは完了予定タイムラインがない場合。 |
-| 認証別の新規ビジネス機会の TCV / ARR | このメトリクスは、製品とエンジニアリングとの取り組みの優先順位付けのために、認証への需要（$）を追跡します | 顧客の認証リクエストを取得するためのドロップダウンフィールドを Salesforce に追加することに取り組んでいます。 | TBD | TBD | TBD | これは未完了です。これを可能にするためにセールスチームと協力しています。 |
+| 平均是正時間 | このメトリクスは、SLA と比較したコンプライアンス観察事項を是正する私たちの能力を追跡します。 | 各リスクレベルおよび四半期ごとに分けられた、[観察事項プロジェクト](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance-commercial-and-dedicated/observation-management) 内で Issue が作成されてからクローズされるまでの時間の計算。 | 是正 SLA: Critical = 3 か月、High = 6 か月、Medium = 1 年、Low = 1.5 年 | 四半期 | [Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/ObservationKPI/ObservationKPIs?:iid=1) | 観察事項は、次の基準が満たされた場合にマネジメントにエスカレートされます: 観察事項が Critical または High リスクであり、かつ観察事項が SRQ/StORM プログラム内のトップ 5 リスクに関連しており、割り当てられた是正オーナーまたは完了予定タイムラインがない場合。 |
+| 認証別の新規ビジネス機会の TCV / ARR | このメトリクスは、Product と Engineering との取り組みの優先順位付けのために、認証への需要（$）を追跡します | 顧客の認証リクエストを取得するためのドロップダウンフィールドを Salesforce に追加することに取り組んでいます。 | TBD | TBD | TBD | これは未完了です。これを可能にするためにセールスチームと協力しています。 |
 | NIST CSF 機能およびカテゴリ別のコンプライアンス姿勢（合格コントロールの%） | 各機能/カテゴリにおけるコントロールの有効性のレベルを示し、マネジメントがどの領域が強いか、または改善が必要かを理解するのに役立ちます。 | 各 NIST CSF カテゴリと機能領域について、会計年度に完了したアセスメントのテスト結論を活用します。 | 各機能とカテゴリで 90% 以上が合格 | 四半期 | tbd | これはまだ完了していません。Hyperproof と GAS GRC ツールの移行、および GCFv4 への移行を考慮すると、FY26 のデータについてまだ完了していません。完了予定: Q3 初旬。 |
-| Fresh なコンプライアンス所見（観察事項）の数 | このメトリクスは、私たちの認証とセキュリティ姿勢に影響を与える是正オーナーやアクティビティとのエンゲージメントを維持する能力を捉えます。 | これは観察事項管理リポジトリのオープン Issue の最終更新日を見ています。 | Issue の 80% が fresh | リアルタイム | [Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/ObservationMetrics/SecCompOperationalMetrics?:iid=1) | n/a |
+| 最近更新されたコンプライアンス所見（観察事項）の数 | このメトリクスは、私たちの認証とセキュリティ姿勢に影響を与える是正オーナーやアクティビティとのエンゲージメントを維持する能力を捉えます。 | これは観察事項管理リポジトリのオープン Issue の最終更新日を見ています。 | Issue の 80% が最近更新されている | リアルタイム | [Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/ObservationMetrics/SecCompOperationalMetrics?:iid=1) | n/a |
 
-## FY26 戦略的イニシアチブ
+## FY26 戦略的イニシアチブ {#fy26-strategic-initiatives}
 
-### 主要なフォーカス領域
+### 主要なフォーカス領域 {#primary-focus-areas}
 
 | # | 目的 | 主要な成果物 | タイムライン |
 |:-:| :-------- | :--------------- | :------: |
@@ -212,19 +212,19 @@ DRI は次のプロセスに従って DRI のエピックの週次更新を提�
 | 2| 認証拡張 | - ISO 42001 および ISMAP のギャップ評価を実施 <br> - 認証に向けた私たちの姿勢と準備状況に関する監査レポートを準備し共有する <br> - 特定されたギャップの是正をサポート <br>| 評価とレポート - Q1FY26 末 <br> 是正 - FY26 を通じて継続中 |
 | 3| コントロールフレームワークの洗練 | - コンプライアンスカバレッジを拡大し、コントロール管理を自動化し、ドキュメントを強化することで、GitLab のコントロールフレームワーク実装を合理化し、将来のスケーラビリティをサポートする。 | FY26 を通じて継続中 |
 
-### レビューと更新
+### レビューと更新 {#review-and-updates}
 
 このチャーターは、以下との整合性を確保するために四半期ごとにレビュー・更新されます。
 
 1. GitLab 戦略
-1. [セキュリティ部門のミッションとビジョン](/handbook/security/#i-classfas-fa-rocket-idbiz-tech-iconsi-security-vision-and-mission)
-1. [セキュリティの複数年戦略](https://internal.gitlab.com/handbook/security/information_security_goals_and_priorities/)（社内のみ）
-1. [セキュリティアシュアランスのミッションとビジョン](/handbook/security/security-assurance/#i-classfas-fa-rocket-idbiz-tech-iconsi-security-assurance-mission-and-vision)
-1. [セキュリティアシュアランスの複数年戦略](https://internal.gitlab.com/handbook/security/security-assurance/security_assurance_strategy/)
+1. [Security Division のミッションとビジョン](/handbook/security/#security-vision-and-mission)
+1. [Security の複数年戦略](https://internal.gitlab.com/handbook/security/information_security_goals_and_priorities/)（社内のみ）
+1. [Security Assurance のミッションとビジョン](/handbook/security/security-assurance/#security-assurance-mission-and-vision)
+1. [Security Assurance の複数年戦略](https://internal.gitlab.com/handbook/security/security-assurance/security_assurance_strategy/)
 
 次回スケジュールされたレビュー: [2025-07-31]
 
-## 参照
+## 参照 {#references}
 
 - [セキュリティ認証](../security-compliance/certifications/)
 - [GCF セキュリティコントロールライフサイクル](/handbook/security/security-assurance/security-compliance/security-control-lifecycle/)
@@ -233,4 +233,4 @@ DRI は次のプロセスに従って DRI のエピックの週次更新を提�
 - [観察方法論](/handbook/security/security-assurance/observation-management-procedure/)
 - [ギャップ分析プログラム](/handbook/security/security-assurance/security-compliance/gap-analysis-program/)
 
-<a href="/handbook/security/security-assurance/" class="btn bg-primary text-white btn-lg">セキュリティアシュアランスホームページに戻る</a>
+<a href="/handbook/security/security-assurance/" class="btn bg-primary text-white btn-lg">Security Assurance ホームページに戻る</a>

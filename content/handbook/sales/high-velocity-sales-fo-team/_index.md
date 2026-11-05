@@ -1,23 +1,21 @@
 ---
-title: "GitLabのHigh Velocity SalesとFirst Ordersチーム"
-description: "High Velocity SalesとFirst Ordersは、ディスカバリーから採用、購入、拡大、GitLabサブスクリプションの管理まで、顧客と見込み客がセルフサービスを行えるようにする一貫したGTMの提供を担っています"
+title: "GitLab の High Velocity Sales and First Orders チーム"
+description: "High Velocity Sales and First Orders は、ディスカバリーから採用、購入、拡大、GitLab サブスクリプションの管理まで、顧客と見込み客がセルフサービスを行えるようにする一貫した GTM の提供を担っています"
 upstream_path: /handbook/sales/high-velocity-sales-fo-team/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:44:22.914996+00:00"
 translator: claude
 stale: false
-lastmod: "2025-05-14T12:50:01-07:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## High Velocity Sales と First Orders ハンドブックへようこそ
+## High Velocity Sales and First Orders ハンドブックへようこそ {#welcome-to-the-high-velocity-sales-and-first-orders-handbook}
 
 {{% alert color="success" %}}
-High Velocity Sales と First Orders チームは、ディスカバリーから採用、購入、拡大、GitLab サブスクリプションの管理まで、顧客と見込み客がセルフサービスを行えるようにする一貫した go-to-market (GTM)の提供を担っています。
+High Velocity Sales and First Orders チームは、ディスカバリーから採用、購入、拡大、GitLab サブスクリプションの管理まで、顧客と見込み客がセルフサービスを行えるようにする一貫した go-to-market (GTM)の提供を担っています。
 {{% /alert %}}
 
-## High Velocity Sales と First Orders のビジョン
+## High Velocity Sales and First Orders のビジョン {#high-velocity-sales-and-first-orders-vision}
 
 GitLab はお客様の条件で関わり、シームレスなセルフサービスオプションを提供します。GitLab の発見と採用、購入、拡大、GitLab サブスクリプションの管理に関する、業界最高クラスのセルフサービス体験をお届けします。
 
@@ -25,7 +23,7 @@ GitLab はお客様の条件で関わり、シームレスなセルフサービ�
 
 私たちは GitLab の文化のショーケースです。私たちとのインタラクションは柔軟で、非同期可能で、透明性があります。
 
-## 私たちの戦略
+## 私たちの戦略 {#our-strategy}
 
 **このセクションには将来を見据えた内容が含まれており、現状や計画されている機能セットや能力を正確に反映していない可能性があります。**
 
@@ -34,7 +32,7 @@ GitLab はお客様の条件で関わり、シームレスなセルフサービ�
    - **AE を最高の ARR アップリフトに整合させる**: AE を顧客にとって最も価値の高いインタラクションに集中させるよう、go-to-market とインセンティブを調整する。シンプルで迅速なインタラクションのためのセルフサービスオプションを強化し、顧客の認知度を高める。
    - **新しい顧客インサイトを発見する**: 購入サイクルは変化しており、大多数は AE が関わる前に始まります。セルフディスカバリーを可能にし、製品分析を通じてモニタリングして(非常に)適格なリードを作成する。
    - **直接販売のツールになる**: GitLab はセルフサービスハイブリッドモデルで運営しています。販売対話を強化するために、AE に顧客の可視性を提供する。
-   - **セルフサービス GTM モーションを整合させる**: セールス、製品、マーケティング、カスタマーサクセス、チャネル全体で共同して、成功の定義を作成し、最高の技術を活用し、共同ロードマップを構築し、最高の体験を提供する。
+   - **セルフサービス GTM モーションを整合させる**: Sales、Product、Marketing、Customer Success、Channels 全体で共同して、成功の定義を作成し、最高の技術を活用し、共同ロードマップを構築し、最高の体験を提供する。
 
 2. 業界最高クラスのセルフサービス体験を提供する
 
@@ -47,25 +45,25 @@ GitLab はお客様の条件で関わり、シームレスなセルフサービ�
 
    - **セルフサービス go-to-market モデル**: セルフサービスセグメントを導入する。インバウンド「オンデマンド」アカウントチームを活用して、顧客を支援しバックログにフィードする。フルスタックでセルフサービスチャネルを成長させる。
    - **セルフサービスマーケティングキャンペーン**: 特定の顧客インサイトに基づいて、セルフサービス製品分析を活用して高パフォーマンスのマーケティングキャンペーンを推進する。(例: 放棄されたカートキャンペーン、パーソナライズされたマーケティング自動化、注目商品)
-   - **担当者の生産性を高める**: テリトリーでのセルフサービス採用を増やす。アカウント管理、運用タスク、簡単な取引に費やす時間を最小化する。セールスとつながるための新しい顧客エンゲージメントモデルを導入する。(例: セールスとの会話のための hand raise、セールス担当者との時間のスケジュール)
+   - **担当者の生産性を高める**: テリトリーでのセルフサービス採用を増やす。アカウント管理、運用タスク、簡単な取引に費やす時間を最小化する。セールスとつながるための新しい顧客エンゲージメントモデルを導入する。(例: セールスとの会話のための 営業相談の希望表明、セールス担当者との時間のスケジュール)
 
-## 成功指標
+## 成功指標 {#success-metrics}
 
 - First Orders: web First Orders を含む
 - SMB nARR
 
-## チームと協業
+## チームと協業 {#team-and-working-with-us}
 
 下の表で、Allie Marconi にレポートし、関連するスコープを持つ HVS チームリードを見つけることができます。
 
 |  **名前** | **GitLab ハンドル** | **チーム名** | **チームスコープ** |
 | :--------------- | :----------------- | ----------------- |----------------- |
-| Kazem Kutob | @kkutob | グローバル SMB&新規ロゴセールスチーム | グローバル SMB チームは、世界中の従業員数 0〜250 名の企業との顧客と見込み客の関係を所有しています。新規ロゴチームは「ベース見込み客」を所有し、First Orders の提供を目標としています。 |
-| Alex Martin | @alex_martin | Product GTM | 顧客アウトカムのために製品ロードマップを共同執筆し提供するためにパートナリングします。バックログを方向付け、顧客価値、first order カウント、bookings 成長に基づいて機能の成功を測定します。製品とパートナリングして、製品機能とリリースが、顧客価値を提供する配布計画とともに高品質で立ち上げられることを確保します。 |
-| Max Fliesher | @mfleisher | Data & Operations | 高速性に重点を置いた幅広い HVS チームをサポートし、データが私たちの戦略を推進します。約 1,500 顧客:SMB アドボケート比率でカバレッジを可能にするためのエンドツーエンドの運用モデルを所有します。SMB とのクロスオーバーがある場合は特に、リニューアルチームと NLT ops を所有します。ケースの立ち上げ、イネーブルメント、パフォーマンス評価を担当します。 |
-| Mitchell Hanks | @mhanks | Monetization & Startups | 「ベースアカウント」人口における CE/EE とトライアル変換をターゲットにすることによる、Free&トライアル顧客のアクティブ化の責任があります。さらに、シードおよび初期段階のスタートアップ企業が GitLab を始めて成長できるようにするスタートアッププログラムの責任があります。 |
+| Kazem Kutob | @kkutob | Global SMB & New Logo Sales Team | Global SMB チームは、世界中の従業員数 0〜250 名の企業との顧客と見込み客の関係を所有しています。New Logo チームは「ベース見込み客」を所有し、First Orders の提供を目標としています。 |
+| Alex Martin | @alex_martin | Product GTM | 顧客アウトカムのために製品ロードマップを共同執筆し提供するためにパートナリングします。バックログを方向付け、顧客価値、初回注文数、受注の成長に基づいて機能の成功を測定します。製品とパートナリングして、製品機能とリリースが、顧客価値を提供する配布計画とともに高品質で立ち上げられることを確保します。 |
+| Max Fliesher | @mfleisher | Data & Operations | 高速性に重点を置いた幅広い HVS チームをサポートし、データが私たちの戦略を推進します。~1,500 顧客 : SMB Advocate 比率でカバレッジを可能にするためのエンドツーエンドの運用モデルを所有します。SMB とのクロスオーバーがある場合は特に、Renewals Teams と NLT ops を所有します。ケースの立ち上げ、イネーブルメント、パフォーマンス評価を担当します。 |
+| Mitchell Hanks | @mhanks | Monetization & Startups | 「ベースアカウント」人口における CE/EE とトライアルのコンバージョンをターゲットにすることによる、Free & Trial 顧客のアクティブ化の責任があります。さらに、シードおよび初期段階のスタートアップ企業が GitLab を始めて成長できるようにする Startup Program の責任があります。 |
 
-## リソースとコミュニケーション
+## リソースとコミュニケーション {#resources--communications}
 
 - **Slack チャンネル**: `#hvs`
 - [HVS プロジェクト](https://gitlab.com/gitlab-com/sales-team/hvs)で Issue を作成する

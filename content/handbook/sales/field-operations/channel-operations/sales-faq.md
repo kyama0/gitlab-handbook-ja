@@ -1,18 +1,16 @@
 ---
 title: "GitLab セールス FAQ - パートナーとの販売"
 upstream_path: /handbook/sales/field-operations/channel-operations/sales-faq/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:50:18+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:11:15.190926+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-19T18:59:08+11:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 このページでは、販売プロセス全体を通じてパートナーと協業する方法について、GitLab セラーからよく寄せられる質問をまとめています。ご質問や、このページに別の Q&A の掲載を希望される場合は、Slack の `#partner-programs-ops`、または SFDC chatter の `@Partner Operations` までお問い合わせください。
 
-## ディール登録
+## ディール登録 {#deal-registration}
 
 <details>
 <summary markdown="span">
@@ -54,7 +52,7 @@ DR に割り当てられた Channel Account Manager（CAM）が DR をレビュ�
 
 </details>
 
-## SFDC 商談
+## SFDC 商談 {#sfdc-opportunity}
 
 <details>
 <summary markdown="span">
@@ -65,11 +63,11 @@ DR 情報は商談内の 2 箇所で確認できます:
 
 - 商談の上部にある「Related list quick links」セクション内の「Registrations」セクション。このセクションには、承認済み、期限切れ、却下、保留中の Partner Sourced DR と Service Attach DR を含め、商談に紐づいたすべての DR が含まれています。
 
-![商談上部のディール登録セクション](/images/sales/field-operations/channel-operations/opp_top_section.png "Deal Registration Opp")
+![商談上部のディール登録セクション](/images/sales/field-operations/channel-operations/opp_top_section.png "商談のディール登録")
 
 - 商談本体の「Partner Sourced Deal Registration」セクション。承認された Partner Sourced DR が表示されます。
 
-![ディール登録セクション](/images/sales/field-operations/channel-operations/dr_section.png "Deal Registration Section in Opp")
+![ディール登録セクション](/images/sales/field-operations/channel-operations/dr_section.png "商談内のディール登録セクション")
 
 </details>
 
@@ -80,7 +78,7 @@ DR 情報は商談内の 2 箇所で確認できます:
 
 商談の「Primary Quote Partner Details」セクションをご参照ください。プライマリ見積のパートナー情報が表示されます。
 
-![プライマリ見積セクション](/images/sales/field-operations/channel-operations/quote_section.png "Primary Quote Section")
+![プライマリ見積セクション](/images/sales/field-operations/channel-operations/quote_section.png "Primary Quote セクション")
 
 </details>
 
@@ -93,9 +91,9 @@ DR 情報は商談内の 2 箇所で確認できます:
 
 </details>
 
-## 販売プロセス
+## 販売プロセス {#sales-process}
 
-### パートナー割引とインセンティブ
+### パートナー割引とインセンティブ {#partner-discounts-and-incentives}
 
 <details>
 <summary markdown="span">
@@ -140,7 +138,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 
 </details>
 
-### 見積作成
+### 見積作成 {#quoting}
 
 <details>
 <summary markdown="span">
@@ -300,7 +298,7 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 
 </details>
 
-### 発注書（PO）
+### 発注書（PO） {#purchase-orders-pos}
 
 <details>
 <summary markdown="span">
@@ -351,7 +349,7 @@ ECCN については、[Trade Compliance ハンドブック](/handbook/legal/tra
 
 </details>
 
-## 販売後
+## 販売後 {#post-sale}
 
 <details>
 <summary markdown="span">
@@ -413,7 +411,7 @@ GitLab 請求書を受領したパートナー（つまり、2 ティアディ�
 顧客は、当初の注文と同じ調達経路で Compute Minutes を追加する必要があります（つまり、パートナー経由で当初のサブスクリプションを購入した場合、追加分も同じパートナー経由で購入する必要があります）。次の手順を実行してください:
 
 1. 調達プロセスを開始します。チャネルディールの場合、GitLab Sales がパートナーに追加 Compute Minutes の見積を提供します。AWS／GCP ディールの場合、GitLab Sales が追加 Compute Minutes のプライベートオファーを顧客に対して生成します。
-2. GitLab Sales は内部サポートチケットを提出し、GitLab の調達サイクルが完了するまで顧客がオンラインに復帰できるよう、サポートチームに顧客のインスタンスへの分の追加を依頼します。内部サポートチケットを提出するには、`Other> Other License & Renewals Related Issue request type` を使用し、迅速なレビューと承認を促すために可能な限り多くの情報をリクエストに記載してください（例: 顧客はロックアウトされており、パートナー経由で購入しているため当社の調達サイクルを待つ必要がある、オンライン復帰のため追加の分数が必要）。
+2. GitLab Sales は内部サポートチケットを提出し、GitLab の調達サイクルが完了するまで顧客がオンラインに復帰できるよう、サポートチームに顧客のインスタンスへの Compute Minutes の追加を依頼します。内部サポートチケットを提出するには、`Other> Other License & Renewals Related Issue request type` を使用し、迅速なレビューと承認を促すために可能な限り多くの情報をリクエストに記載してください（例: 顧客はロックアウトされており、パートナー経由で購入しているため当社の調達サイクルを待つ必要がある、オンライン復帰のため追加の分数が必要）。
 
 **重要**: サポートチームは Compute Minutes を追跡したり削除したりしないため、GitLab Sales は販売処理を待つ間に必要な期間をカバーする控えめな分数を依頼すべきです。
 

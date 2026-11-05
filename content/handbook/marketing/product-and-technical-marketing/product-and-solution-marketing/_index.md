@@ -3,16 +3,14 @@ title: Product and Solution Marketing
 description: "GitLab Product and Solution Marketing: コアプラットフォーム、垂直および水平ソリューション、コンテンツ戦略"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/
-upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
-translated_at: "2026-09-04T15:46:54+09:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:40:02.095783+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-bullhorn"></i> GitLab Product and Solution Marketing ハンドブックへようこそ
+## <i class="fas fa-bullhorn"></i> GitLab Product and Solution Marketing ハンドブックへようこそ {#welcome-to-the-gitlab-product-and-solution-marketing-handbook}
 
 私たちは、統一された[コンテンツ戦略](/handbook/marketing/product-and-technical-marketing/content/)とともに、[コアプラットフォーム](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/core-product-marketing/)と[垂直 / 水平ソリューション](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/)の価値を伝えるインサイト、ポジショニング、メッセージングを開発しています。
 
@@ -26,17 +24,17 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 1. **GitLab のメッセージングピラミッドの構築と維持**。これには、ブランドメッセージング（感情的価値の促進）、企業メッセージング（経済的価値の促進）、ユースケースメッセージング（機能的価値の促進）、製品メッセージング（テクノロジー価値の促進）が含まれます。
 
-2. **GitLab のメッセージをマーケティングコミュニケーション、顧客 / パートナーアドボカシー、グロースマーケティングに翻訳する。** 月次製品リリースをサポートするための小規模なマーケティングローンチで勢いを維持し、市場での注目を集めるために半年に一度の主要なマーケティングローンチを推進し、ターゲット顧客プロファイルとセグメントからの需要を促進するように設計された四半期マーケティングキャンペーンをサポートします。
+2. **GitLab のメッセージをマーケティングコミュニケーション、顧客 / パートナーアドボカシー、グロースマーケティングに落とし込む。** 月次製品リリースをサポートするための小規模なマーケティングローンチで勢いを維持し、市場での注目を集めるために半年に一度の主要なマーケティングローンチを推進し、ターゲット顧客プロファイルとセグメントからの需要を促進するように設計された四半期マーケティングキャンペーンをサポートします。
 
-3. **チームイネーブルメントとのパートナーシップでセールスとリセラーの生産性を加速する。** さまざまなセールスステージにわたって、GitLab のメッセージを加速されたセールス速度に翻訳することで、セールス向けのコンテンツとトレーニングセッションをサポートします。
+3. **チームイネーブルメントとのパートナーシップでセールスとリセラーの生産性を加速する。** さまざまなセールスステージにわたって、GitLab のメッセージを営業活動の加速につなげることで、セールス向けのコンテンツとトレーニングセッションをサポートします。
 
-### Product and Solution Marketing に問い合わせる
+### Product and Solution Marketing に問い合わせる {#ask-product-and-solution-marketing}
 
 すべての Product and Solution Marketing 業務は、全体的な会社およびマーケティングの優先事項に整合しています。より迅速な対応が必要な場合は、`#ask-product-marketing` Slack チャンネルに作成した Issue へのリンクを含むメッセージを送信してください。
 
-### Go-to-Market (GTM) 戦略
+### Go-to-Market (GTM) 戦略 {#go-to-market-gtm-strategies}
 
-私たちは、セールス目標、製品の強み/制限、マーケティングビークルを考慮した **Go-to-Market 戦略** を開発し、擁護しています。これらの戦略には、マーケティングおよびセールス活動の焦点となる製品およびソリューション領域に関する推奨事項が含まれ、補助的なメッセージング、ポジショニング、ペルソナ、主要アセット/コンテンツ、デモ、セールスイネーブルメントなどを提供します。私たちは、コラテラル、イベント、顧客ミーティングなどを通じて、顧客、アナリスト、プレスにストーリー/メッセージを届け、オーディエンスから直接フィードバックを得て、戦略を反復し改善します。私たちは、さまざまなカスタマータッチポイントでの体験の連続性のために、顧客視点を擁護します。
+私たちは、セールス目標、製品の強み/制限、マーケティング手段を考慮した **Go-to-Market 戦略** を開発し、擁護しています。これらの戦略には、マーケティングおよびセールス活動の焦点となる製品およびソリューション領域に関する推奨事項が含まれ、補助的なメッセージング、ポジショニング、ペルソナ、主要アセット/コンテンツ、デモ、セールスイネーブルメントなどを提供します。私たちは、コラテラル、イベント、顧客ミーティングなどを通じて、顧客、アナリスト、プレスにストーリー/メッセージを届け、オーディエンスから直接フィードバックを得て、戦略のイテレーションを行い改善します。私たちは、さまざまなカスタマータッチポイントでの体験の連続性のために、顧客視点を擁護します。
 
 Product and Solution Marketing 内の各チームは、GitLab の包括的な GTM 優先事項に対して、ユニークかつ平等に貢献します。これには以下が含まれます:
 
@@ -47,7 +45,7 @@ Product and Solution Marketing 内の各チームは、GitLab の包括的な GT
 - セールスが尋ねるべき主要な質問、競争的ポジショニング、異議の克服、その他のセールスリソース
 - インフルエンサー（プレスとアナリスト）への影響、マジッククアドラント (MQ) およびウェーブのアナリスト RFI への対応。
 
-### サブジェクトマターエキスパティーズ
+### サブジェクトマターエキスパティーズ {#subject-matter-expertise}
 
 Product and Solution Marketing のチームメンバーは、GitLab の Go-to-Market プロセスの中核であり、プロダクトマネジメント、セールス、カスタマーサクセス、マーケティングの交差点で活動しています。Product and Solution Marketing チームによってリードされるイニシアチブの例をいくつか示します:
 
@@ -58,13 +56,13 @@ Product and Solution Marketing のチームメンバーは、GitLab の Go-to-Ma
 - GitLab が参加または主催するグローバルイベントのメッセージングとコンテンツをリードします。
 - セールスイネーブルメントと認定のためのメッセージングとコンテンツをリードします。
 
-### Product and Solution Marketing とセールスイネーブルメント
+### Product and Solution Marketing とセールスイネーブルメント {#product-and-solution-marketing-and-sales-enablement}
 
 リサーチとイテレーションを通じて、Product and Solution Marketing のチームメンバーは主要な製品機能および/またはソリューションに関するサブジェクトマターエキスパートになります。私たちは、痛みから購入までの、また興味からセールスまでの、バイヤーのジャーニー体験と主要なインフルエンサーのアウトサイドイン視点を提供することによって、マーケティング機能（ウェブ、キャンペーン、デジタル広告、ABM、イベント）とセールスステージ（SDR ナーチャー、SAE/SA の追求/クローズ、CSM 拡大）の間の点を結ぶのを助ける、顧客の声を提供します。私たちは、マーケティングとセールスへの投資のリターンを効率的に達成するために、ジャーニーを最適化することを目指しています。
 
-Product and Solution Marketing のチームメンバーは、サブジェクトマターエキスパートとして機能し、[セールストレーニングチーム](/handbook/sales/training/) とパートナーマーケティングによってスケジュールされた社内およびパートナーセールストレーニングを実施します。詳細については、[セールスイネーブルメントページ](/handbook/sales/training/sales-enablement-sessions/) を参照してください。
+Product and Solution Marketing のチームメンバーは、サブジェクトマターエキスパートとして機能し、[Sales Training チーム](/handbook/sales/training/)と Partner Marketing によってスケジュールされた社内およびパートナーセールストレーニングを実施します。詳細については、[セールスイネーブルメントページ](/handbook/sales/training/sales-enablement-sessions/)を参照してください。
 
-### 主要タイムライン
+### 主要タイムライン {#key-timelines}
 
 1. **メッセージングピラミッド**: GitLab の運用ケイデンスの一部として、四半期ごとに公開および更新されます。
 
@@ -72,7 +70,7 @@ Product and Solution Marketing のチームメンバーは、サブジェクト�
 
 3. **セールスイネーブルメント**: セールスイネーブルメントポータルへのコンテンツ更新、毎週のスポットライトセッション、四半期ごとのトレーニング認証の毎週および四半期ごとの追跡。
 
-### 主要メトリクス
+### 主要メトリクス {#key-metrics}
 
 1. **メッセージングの有効性**: e-group、PLT/MLT、セールスリーダー、業界アナリストおよびインフルエンサー、リセラーパートナー、エンドカスタマーから受け取った評価。
 

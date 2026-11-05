@@ -1,18 +1,16 @@
 ---
-title: "ブランドクリエイティブハンドブック"
-description: "GitLab ブランドクリエイティブハンドブック: "
+title: "Brand Creative ハンドブック"
+description: "GitLab Brand Creative ハンドブック: "
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/brand-experience/brand-creative/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T16:33:32+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T14:08:26.699638+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-bullhorn fa-fw"></i> GitLab ブランドクリエイティブハンドブックへようこそ {#welcome-to-the-gitlab-brand-creative-handbook}
+## <i class="fas fa-bullhorn fa-fw"></i> GitLab Brand Creative ハンドブックへようこそ {#welcome-to-the-gitlab-brand-creative-handbook}
 
 私たちは、市場で関連性を保ち、製品の利点と品質を反映するために、ブランドのビジュアルアイデンティティデザインを発展させています。私たちは GitLab マーケティングのクリエイティブパートナーです。私たちは、高品質なブランド体験を創造し、概念化し、デザインします。
 
@@ -22,7 +20,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 *なぜ私たちは存在するのか*
 
-[GitLab ブランド](https://design.gitlab.com/resources)のスチュワードとして、私たちの目標は、社内外のオーディエンスに会社の活動を効果的かつ誠実に伝えるためのリソースで、より広い組織を教育し、可能にすることです。
+[GitLab ブランド](https://design.gitlab.com/resources)のスチュワードとして、私たちの目標は、社内外のオーディエンスに会社の活動を効果的かつ誠実に伝えるためのリソースで、組織全体に学びと支援を提供することです。
 
 ### ビジョン {#vision}
 
@@ -81,7 +79,7 @@ GitLab Brand Design および Video チームは、ロゴとビジュアルを�
 
 **イベントアセットリクエストでは、提出時に仕様が必要です。**
 
-イベントリクエストをそのまま制作に進められるようにするため、提出時にすべての仕様、テンプレート、寸法のいずれか、または複数を提供する必要があります。この情報がなければ、デザイン作業を開始できません。
+イベントリクエストをそのまま制作に進められるようにするため、提出時にすべての仕様、テンプレート、および/または寸法を提供する必要があります。この情報がなければ、デザイン作業を開始できません。
 
 仕様が揃う前にリクエストを提出しても、キュー内の場所が確保されたり、ターンアラウンドが速くなったりすることはありません。トリアージボードにノイズが増え、進行中のアクティブな作業を正確に把握することが難しくなります。仕様なしで提出されたイベント Issue はクローズされ、必要な情報を受け取った時点で再開されます。
 
@@ -93,7 +91,7 @@ GitLab Brand Design および Video チームは、ロゴとビジュアルを�
 
 リクエストを提出する前に、早い段階でベンダーと連携して仕様、テンプレート、寸法を確認してください。必要な情報を最初からすべて提供することは、ターンアラウンドを速め、不要なやり取りを減らすためにできる最も効果的なことです。
 
-### **ブランドデザインおよびビデオ Issue テンプレート** {#brand-design-and-video-issue-templates}
+### **Brand Design および Video の Issue テンプレート** {#brand-design-and-video-issue-templates}
 
 #### 1. **ブランドレビューリクエスト** {#1-brand-review-requests}
 
@@ -198,7 +196,7 @@ Brand Creative チームは、各プロジェクトにさまざまなビジュ�
 
 セルフサービスのニーズに対するクリエイティブアセットを調達するには、以下の手順を順番に実行してください。
 
-1. **既存のブランド承認済みコンテンツを使用する:** 写真、イラスト、アイコン、グラフィックなどの[キュレーションされたリソース](https://design.gitlab.com/resources)を閲覧します。ブランドのライブラリ内のコンテンツは、ブランドからの事前承認なしに使用できます。
+1. **既存の Brand 承認済みコンテンツを使用する:** 写真、イラスト、アイコン、グラフィックなどの[キュレーションされたリソース](https://design.gitlab.com/resources)を閲覧します。Brand のライブラリ内のコンテンツは、Brand からの事前承認なしに使用できます。
 1. **Adobe Stock でコンテンツを検索する:** [写真ガイドライン](https://design.gitlab.com/brand-design/photography)を確認してから、[Adobe Stock](https://stock.adobe.com/)から適切なものを選択します。アセットを確認してダウンロードするには、[Brand チームに連絡](/handbook/marketing/brand-experience/brand-creative/#stock-photography)してください。
 1. **新規アセットをリクエストする:** Brand チームがカスタムビジュアルコンテンツを作成するための[Issue リクエスト](/handbook/marketing/brand-experience/brand-creative/#how-to-submit-a-request)を提出します。
 1. **AI を使用してコンテンツを生成する:** すべての AI 生成コンテンツは、使用前に Brand によってレビューおよび承認される必要があり、私たちの[法的パラメータ](/handbook/legal/ip-public-materials-guidelines/#ai-generated-images)を遵守する必要があります。画像が写真およびブランドガイドラインに従っていることを確認してください。承認をリクエストするには、[Brand チームに連絡](/handbook/marketing/brand-experience/brand-creative/#stock-photography)してください。
@@ -209,7 +207,7 @@ Brand Creative チームは、各プロジェクトにさまざまなビジュ�
 
 私たちのチームは、[フォトライブラリ](https://drive.google.com/drive/folders/1VHErs-KSNX1FIIVgXJR3OmIzwU7M4E1M?usp=sharing)に承認されたすぐに使用できるストック画像を集めました。
 
-そのライブラリにある画像以外のものが必要な場合、Brand Design チームには[Adobe Stock](https://stock.adobe.com/)から無制限の画像をダウンロードするライセンスがあります（注意: 標準メディアのみ。プレミアムおよび編集コンテンツはライセンスに含まれません）。
+そのライブラリにある画像以外のものが必要な場合、Brand Design チームには[Adobe Stock](https://stock.adobe.com/)から無制限の画像をダウンロードするライセンスがあります（注意: Standard メディアのみ。Premium および Editorial コンテンツはライセンスに含まれません）。
 
 新しい画像を検索する前に、私たちの[写真ガイドライン](https://design.gitlab.com/brand-design/photography)を確認してください。承認、ダウンロード、または質問については、Slack または関連する Issue で[私たちのチームに連絡](/handbook/marketing/brand-experience/brand-creative/#contacting-the-team)してください。
 
@@ -238,7 +236,7 @@ Brand Creative チームは、各プロジェクトにさまざまなビジュ�
 
 #### マスコット {#mascots}
 
-私たちは、タヌキにインスピレーションを得たマスコットを使用したり作成したりしないという戦略的アプローチを取りました。この立場は、ブランドの真正性、顧客への結果への焦点を維持し、世界を動かすソフトウェアを作成するために GitLab を毎日使用しているコミュニティとのより深い信頼を構築します。以下のフレームワークは、マスコットキャラクターなしでブランドが生命を吹き込むためのビジョンを概説しています:
+私たちは、タヌキにインスピレーションを得たマスコットを使用したり作成したりしないという戦略的アプローチを取りました。この立場は、ブランドの真正性、顧客への結果への焦点を維持し、世界を動かすソフトウェアを作成するために GitLab を毎日使用しているコミュニティとのより深い信頼を構築します。以下のフレームワークは、マスコットキャラクターを使わずにブランドを生き生きと表現するためのビジョンを概説しています:
 
 - **競合他社からの戦略的差別化:** 私たちの主要な競合他社は、マスコットをブランドと同義にするアプローチを取っています。マスコットを諦めることで、GitLab は同じ遊び心のあるキャラクター主導の空間で競争しない明確なブランドアイデンティティを確立し、最大の競合他社から差別化するのに役立ちます。
 - **ブランドの成熟度とエンタープライズフォーカス:** GitLab のプロフェッショナルなソフトウェア開発とエンタープライズ DevSecOps への焦点は、キャラクター主導のマーケティングではなく、ビジネス価値に焦点を当てたより洗練されたブランドと一致します。
@@ -290,12 +288,12 @@ GitLab の知的財産にインスパイアされた、または基づいたア�
 
 ## Canva のベストプラクティス {#canva-best-practices}
 
-Canva は、ブランドデザインテンプレートを活用することで、チームメンバーがデザインニーズをセルフサービスで対応し、ブランドに沿ったアセットを素早く作成できるようにします。Canva は、チームメンバーが提出したデザインの内部ブランド承認をプラットフォーム上で直接サポートしています。Canva は、コンテンツの多い、または印刷物の資料ではなく、デジタル広告やプロモーションアセットに最適です。コンテンツを頻繁に更新する必要のある資料、A/B テスト用の代替バージョン、またはコアブランディングを使用する迅速なターン要求の資料については、以下の手順と Canva のテンプレートライブラリを参照してください。
+Canva は、ブランドデザインテンプレートを活用することで、チームメンバーがデザインニーズをセルフサービスで対応し、ブランドに沿ったアセットを素早く作成できるようにします。Canva は、チームメンバーが提出したデザインの内部ブランド承認をプラットフォーム上で直接サポートしています。Canva は、コンテンツの多い、または印刷物の資料ではなく、デジタル広告やプロモーションアセットに最適です。コンテンツを頻繁に更新する必要のある資料、A/B テスト用の代替バージョン、またはコアブランディングを使用する短納期のリクエストの資料については、以下の手順と Canva のテンプレートライブラリを参照してください。
 
 印刷作業、詳細なコンセプト作成、またはコアブランディングを超えたカスタムデザインを必要とするより大規模なプロジェクトについては、代わりに[デザインリクエストを提出](/handbook/marketing/brand-experience/brand-creative/#brand-design-and-video-issue-templates)してください。これは以下に適用されます:
 
 - `GitLab 主催イベント:` より高い品質を必要とする、私たちが主催またはスポンサーするイベント
-- `複数会場イベント:` ビジュアルの一貫性が必要な、複数の都市で開催されるイベント
+- `複数都市でのイベント:` ビジュアルの一貫性が必要な、複数の都市で開催されるイベント
 - `カスタムまたはイベント固有のブランディング:` 利用可能な Canva テンプレートで提供されるものを超えた、特定のルックアンドフィールを使用するアセット
 
 ### Canva を始めるには、以下のチェックリストを完了してください {#to-get-started-in-canva-please-complete-the-checklist-below}
@@ -309,7 +307,7 @@ Canva は、ブランドデザインテンプレートを活用することで�
 
 定期的に Canva でデザインを作成する場合、無料または個人アカウントを使用するのではなく、`GitLab Enterprise` Canva Pro アカウントで作業することをお願いします。アクセスを取得するには、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#access-requests-related-pages)Issue を提出してください。これが完了したら、Brand Design チームの誰かがアクセスを許可します。
 
-利用可能なシート数は限られているため、チームはアクセスが必要なチームメンバーの数を統合することをお勧めします。*注意: 共有ログインは禁止されています*。
+利用可能なシート数は限られているため、チーム内でアクセスが必要なメンバーを絞り込むことをお勧めします。*注意: 共有ログインは禁止されています*。
 
 **GitLab Enterprise アカウントで作業する利点:**
 
@@ -319,7 +317,7 @@ Canva は、ブランドデザインテンプレートを活用することで�
 
 **追加のヒント:**
 
-- Canva にいるときは GitLab Enterprise アカウントにログインしていることを確認してください。既存のログインがある場合、間違った方にログインしているのは簡単です。
+- Canva にいるときは GitLab Enterprise アカウントにログインしていることを確認してください。既存のログインがある場合、誤ったアカウントにログインしやすいためです。
 - 左側のナビゲーションメニューで、自分のデザイン (`Projects`) とチームのデザイン (`GitLab Enterprise`) を切り替えることができます。
 - Canva の[権限](https://www.canva.com/help/roles-and-permissions/)を変更する必要がある場合は、[Brand Design チームに連絡](/handbook/marketing/brand-experience/brand-creative/#contacting-the-team)してください。アカウントに参加するチームメンバーは自動的に `member` ステータスに設定され、ファイルの編集と共有が許可されます。
 
@@ -339,7 +337,7 @@ Canva は、ブランドデザインテンプレートを活用することで�
 
 **テンプレート**
 
-- Canva には独自のテンプレートが多数ありますが、これらの使用は控えめにすることをお勧めします。再デザインに多くの作業が必要であり、私たちの[ガイドライン](https://design.gitlab.com/brand-introduction)に従わないブランディングを導入するためです。
+- Canva には独自のテンプレートが多数ありますが、これらの使用は控えることをお勧めします。再デザインに多くの作業が必要であり、私たちの[ガイドライン](https://design.gitlab.com/brand-introduction)に従わないブランディングを導入するためです。
 - GitLab Enterprise アカウントのテンプレートは、ブランドに沿ったデザインを作成するための優れた出発点です。すべての[広告サイズ](https://www.canva.com/folder/FAEitL4a4no)と、その他の[プロモーションとリソース](https://www.canva.com/folder/FAEaQRRT5Qw)のテンプレートがあります。
   - *注意: テンプレートは GitLab Enterprise アカウントの `Folders` タブにあります。これは、構造のない Templates タブの代わりに、テンプレートをフォルダに整理できるようにするためです。*
 - テンプレートファイルをクリックすると、紫色のボタンに `Use this template` が表示されます。このオプションを選択すると、デザインを開始できるコピーが自動的に作成されます。
@@ -407,9 +405,9 @@ Canva の権限に応じて、`Template` > `Publish Template` を選択してフ
 #### 責任 {#responsibilities}
 
 - **リーンで効率的:** 全員の強みと専門知識を活用し、チームとブランドのために最善の決定を下すことをお互いに信頼します。
-- **多くの帽子をかぶる:** 役割の要求するさまざまなタスクに取り組む柔軟性を持ち、すべてはチームと会社の最善のために。
+- **複数の役割を担う:** 役割の要求するさまざまなタスクに取り組む柔軟性を持ち、すべてはチームと会社の最善のために。
 - **クリエイティブコンセプトを開発する:** 個々のプロジェクトのクリエイティブな方向性を推進します。大規模プロジェクトでは、Adam と Luke がコアコンセプト開発を担当し、それを議論、フィードバック、洗練のために広いチームに提示します。
-- **クリエイティブを実行する:** クリエイティブな方向性に基づいたタッチポイントの素材で、クリエイティブな方向性を生命に吹き込みます。すべては[時間を適切に管理しながら](/handbook/leadership/#managers-of-one)行います。
+- **クリエイティブを実行する:** クリエイティブな方向性に基づいたタッチポイントの素材を通じて、クリエイティブな方向性を具現化します。すべては[時間を適切に管理しながら](/handbook/leadership/#managers-of-one)行います。
 - **GitLab ブランドを擁護する:** 私たちの[ブランドガイドライン](https://design.gitlab.com/brand-introduction)を知り、貢献し、維持し、ブランドの整合性を保つために、チーム内外の素材をレビューします。
 - **ツールを知る:** Adobe Suite と Figma（デザイン用）、Mural と FigJam（ブレーンストーミング用）、Canva（セルフサービスアセット作成用）、Google Suite（全社向け素材用）に習熟していること。
 
@@ -419,7 +417,7 @@ Canva の権限に応じて、`Template` > `Publish Template` を選択してフ
 
 ### チームワークフロー {#team-workflow}
 
-- **チームチェックイン:** 私たちには 2 つの定期的なチームシンクがあります: (1) 月曜日の[ブランドクリエイティブアワー](https://docs.google.com/document/d/1SOxh6UPZ7n0oGUdxc1p4CggCXbz-uLzQN8DL-_AUEMg/edit?usp=sharing)コールで、追いつきと今後 1 週間の作業について話します。(2) 水曜日のブランドクリエイティブアワーコールで、プロジェクトに対するフィードバックを得たり、対処すべきトピックについてコラボレーションしたりします。
+- **チームチェックイン:** 私たちには 2 つの定期的なチームシンクがあります: (1) 月曜日の [Brand Creative hours](https://docs.google.com/document/d/1SOxh6UPZ7n0oGUdxc1p4CggCXbz-uLzQN8DL-_AUEMg/edit?usp=sharing) コールで、追いつきと今後 1 週間の作業について話します。(2) 水曜日の Brand Creative hours コールで、プロジェクトに対するフィードバックを得たり、対処すべきトピックについてコラボレーションしたりします。
 - **Issue での作業:** すべてのデザインリクエストには、私たちの[Issue テンプレート](#brand-design-and-video-issue-templates)を使用し、`mktg-status::triage`、`corporate-marketing`、`design` Issue ラベルを含めて、[チームのトリアージボード](https://gitlab.com/groups/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/-/boards/7300835?label_name&label_name&label_name)に表示する必要があります。チームの Senior DesignOps である Michelle は、週の初めに作業をトリアージし、チームメンバーは自分自身に作業を割り当てることもできます。
   - 注意: 検索バーの左側で現在「Brand Design TRIAGE Board」と表示されている場所のドロップダウンオプションを選択することで、誰もが個人化されたボードを見ることができます。
   - 注意: エピックは[エピックボード](https://gitlab.com/groups/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/-/epic_boards)で見ることができます。
@@ -430,18 +428,18 @@ Canva の権限に応じて、`Template` > `Publish Template` を選択してフ
 
 ### 作業の保存 {#saving-work}
 
-私たちは[ブランドデザインリポジトリ](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design)から作業をローカルにアップロードおよびプルします。機密プロジェクトと大きな印刷ファイルは、リポジトリと同じ方法で整理されているチームの[Google Drive](https://drive.google.com/drive/u/0/folders/0AG8nDFLsOkOvUk9PVA)に保存されます。共同作業のためのチームの[Figma](https://www.figma.com/files/972612628770206748/team/997176040728593838/GitLab-Brand-Design?fuid=816750625196599153)もあります。
+私たちは [Brand Design リポジトリ](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design)から作業をローカルにアップロードおよびプルします。機密プロジェクトと大きな印刷ファイルは、リポジトリと同じ方法で整理されているチームの[Google Drive](https://drive.google.com/drive/u/0/folders/0AG8nDFLsOkOvUk9PVA)に保存されます。共同作業のためのチームの[Figma](https://www.figma.com/files/972612628770206748/team/997176040728593838/GitLab-Brand-Design?fuid=816750625196599153)もあります。
 
 - リポジトリのトップレベルフォルダはプロジェクトタイプによって整理されています。そこから、カテゴリによって、場合によっては会計年度によって細分化されます。
 - デフォルトでは、すべてのソースファイルは、より小さなエクスポートファイル（デジタル広告など）と一緒にリポジトリに保存する必要があります。より大きなエクスポート（印刷可能ファイルなど）の場合は、チームドライブに保存および共有してください。
 - フォルダ名には、小文字、スペースの代わりにダッシュを使用し、特殊文字は含めないでください。
   - *例:* field-marketing-events
 
-#### ブランドデザインリポジトリにターミナルを使用する {#using-terminal-for-the-brand-design-repository}
+#### Brand Design リポジトリに Terminal を使用する {#using-terminal-for-the-brand-design-repository}
 
 - 作業を最新に保つために、少なくとも 1 日 1 回は頻繁に[プッシュとプル](https://docs.gitlab.com/ee/topics/git/commands.html#pull-and-push)してください。他の人も作業しているかもしれないファイルで作業している場合は、誰も他の人の作業を上書きしないようにチームと連絡してください。
 - デザインアセットのプッシュとプルを開始するには、`brand-design` リポジトリのローカルクローンをマシンに[セットアップ](https://docs.google.com/document/d/1u7iNFnbD4Nj4aeLRFpmnzHewgKBjCwdyjvTuOND0rfA/edit?usp=sharing)します。日常の作業のために、ここでは作業のプルとプッシュに使用される一般的な git コマンドを、使用すべき順序で示します:
-  - `cd brand-design` - このコマンドは[ターミナルアプリ](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)を開いたときに 1 回だけ使用する必要があります。マシンにリポジトリを保存した場所によっては、`brand-design` フォルダに到達するまで、`cd` [親フォルダ名] コマンドを複数回実行する必要があるかもしれません。
+  - `cd brand-design` - このコマンドは [Terminal アプリ](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)を開いたときに 1 回だけ使用する必要があります。マシンにリポジトリを保存した場所によっては、`brand-design` フォルダに到達するまで、`cd` [親フォルダ名] コマンドを複数回実行する必要があるかもしれません。
   - `git pull` - これにより、ローカルリポジトリがチームの他のメンバーが行った変更を反映するように更新されます。作業を開始する前、または新しい作業をプッシュする前にこのコマンドを実行します。
   - `git status` - オプションコマンド。これにより、リポジトリにプッシュバックする必要があるローカルでの変更の概要が提供されます。
   - `git checkout [`insert file path`]` - オプションコマンド。これは、リポジトリにプッシュしたくないファイルを削除するために使用できます。
@@ -455,7 +453,7 @@ Canva の権限に応じて、`Template` > `Publish Template` を選択してフ
 - ファイルは次の規則で命名する必要があります: [[project-type](https://docs.google.com/document/d/10RVi2eyU4Nbl2no3RdoqhdTzHoasHwDdXvebY4OZDGg/edit#heading=h.lxkdoedvr3lk)]-[project-name]-[asset-type]-[issue-number]-[asset-dimensions]-[fiscal-year]
   - *例:* display-ad-banner-0842-160x600-fy25
 - ファイル名にキャラクター記号を追加しないでください: % , _ / （必要な場合のみ、ピリオドは使用可）
-- ベンダーの仕様またはプロジェクトが特定の命名規則に従うことを要求している場合、その規則が私たちのものをオーバーライドします。配信されたらファイル名を変更する必要はありません。
+- ベンダーの仕様またはプロジェクトが特定の命名規則に従うことを要求している場合、その規則が私たちのものをオーバーライドします。納品後にファイル名を変更する必要はありません。
 - ファイル名は小文字で、スペースの代わりにハイフンを使用する必要があります。ファイル名にファイルの寸法を含めてください。[頭字語を避ける](/handbook/communication/#writing-style-guidelines)。
 - Google Drive とリポジトリの両方がバージョン履歴を保存します。そのため、ファイルへの編集が行われると、ファイルは上書き保存できます。
 
@@ -478,7 +476,7 @@ Canva の権限に応じて、`Template` > `Publish Template` を選択してフ
 
 Brand Design チームは、[design.gitlab.com](https://design.gitlab.com/brand-introduction) ([Pajamas](https://design.gitlab.com/))のブランドガイドラインを維持しています。私たちのチームの目的のために、コミットの修正を除き、[Web IDE](https://docs.gitlab.com/ee/user/project/web_ide/)を使用してガイドラインを更新できます。
 
-開始するには、以下のワークフローに従い、Product チームとの[デモ](https://youtu.be/d8vUeHCkbnk)をご確認ください。ローカルで変更を加えるか、コミットを修正するには、これらの[ターミナル用の指示](https://docs.google.com/document/d/1u7iNFnbD4Nj4aeLRFpmnzHewgKBjCwdyjvTuOND0rfA/edit?tab=t.qjs7a6jmfyjx)に従ってください。
+開始するには、以下のワークフローに従い、Product チームとの[デモ](https://youtu.be/d8vUeHCkbnk)をご確認ください。ローカルで変更を加えるか、コミットを修正するには、これらの [Terminal 用の指示](https://docs.google.com/document/d/1u7iNFnbD4Nj4aeLRFpmnzHewgKBjCwdyjvTuOND0rfA/edit?tab=t.qjs7a6jmfyjx)に従ってください。
 
 #### Web IDE の使用 {#using-web-ide}
 

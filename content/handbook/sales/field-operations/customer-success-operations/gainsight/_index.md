@@ -2,57 +2,56 @@
 title: "Gainsight 管理"
 description: "このページは、GitLab が Gainsight をどのように管理しているかについて、データ構造、統合、その他の技術情報を示します。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/gainsight/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:53:32.057904+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## Gainsight の概要
+## Gainsight の概要 {#gainsight-overview}
 
-[Gainsight](https://www.gainsight.com/) は、Customer Success Managers (CSMs) と Enterprise Sales チームが顧客をサポートしワークフローを管理するために使用するカスタマーサクセスソフトウェアです。このページは、GitLab が Gainsight をどのように使用しているかについて、データ構造、統合、その他の技術情報を示します。Gainsight は CS Operations が所有しており、Sales Operations と Sales Systems はその継続的な拡張と改善において非常に活発で重要な役割を果たしています。
+[Gainsight](https://www.gainsight.com/)は、Customer Success Managers (CSMs) と Enterprise Sales チームが顧客をサポートしワークフローを管理するために使用するカスタマーサクセスソフトウェアです。このページは、GitLab が Gainsight をどのように使用しているかについて、データ構造、統合、その他の技術情報を示します。Gainsight は CS Operations が所有しており、Sales Operations と Sales Systems はその継続的な拡張と改善において非常に活発で重要な役割を果たしています。
 
-## Gainsight サポート
+## Gainsight サポート {#gainsight-support}
 
-すべてのチームは、Gainsight に関する質問や問題について迅速な対応を得るために、`#gainsight-users` Slack チャンネルを使用してください。Customer Success Operations はすべてのカスタマーサクセスチームにサポートを提供しています。
+すべてのチームは、Gainsight に関する質問や問題について迅速な対応を得るために、`#gainsight-users` Slack チャンネルを使用してください。Customer Success Operations はすべての Customer Success チームにサポートを提供しています。
 
-### `#gainsight-users` チャンネルでの質問/懸念への対応を支援する CSOps チームのためのガイドライン
+### `#gainsight-users' チャンネルでの質問/懸念への対応を支援する CSOps チームのためのガイドライン {#guidelines-for-csops-teams-assisting-in-addressing-questionsconcerns-on-the-gainsight-users-channel}
 
 - 一般的な Gainsight の質問については、まずシステム内を探索して明らかな理由を見つけることができるかを確認します。例えば、簡単なセットアップの質問、レポートへのフィルターまたは列の追加、ルールが失敗する明らかな理由などです。
 - 製品利用レポートの質問については、通常、懸念を直接サポート/対処できる SME を巻き込みます。製品利用レポートの SME は、必要に応じて他のチームメンバーをいつ巻き込むかを決定できます。SME: @nk312
-- デジタルカスタマープログラムに関する質問については、SME @mharris3 と @jgamboa にお問い合わせください。
+- Digital Customer Programs に関する質問については、SME @mharris3 と @jgamboa にお問い合わせください。
 - Scale プログラム、プロセス、オペレーションに関する質問については、Scale SME: @rgorbanescu にお問い合わせください。
 
-### チャンネル vs Issue で処理できる項目
+### チャンネル vs Issue で処理できる項目 {#what-items-can-be-handled-via-channel-vs-an-issue}
 
-- 解決するのに最小限の時間がかかる質問（15〜30分）はチャンネルで直接処理できます
+- 解決するのに最小限の時間がかかる質問（15〜30 分）はチャンネルで直接処理できます
 - トラブルシューティング時間が積み重なる場合は、Issue を作成するよう依頼します
 - 依頼が機能強化、つまり新しいプロセス、既存のプロセスへの変更、機能リクエストなどの場合は、Issue を作成するよう依頼します
 
-セールスチームのために、私たちはこのエスカレーションパスを使用します:
+Sales チームのために、私たちはこのエスカレーションパスを使用します:
 
 1. ログイン問題（Tier 1 サポート）= Sales Ops
 1. Sales Ops が問題をログイン問題よりも重要なものと診断した場合（Tier 2）
    - 権限/アクセスバンドルの更新 = CS Ops
-   - sales-specific でないルール、コネクタなどの問題 = CS Ops
+   - Sales 固有ではないルール、コネクタなどの問題 = CS Ops
      - 例: SFDC でのコンタクトの読み込みに関する問題
-   - sales-specific なルール、コネクタなどの問題
+   - Sales 固有のルール、コネクタなどの問題
      - 例: アカウントプランニングをサポートするプロセス
      - 問題の診断と要件収集 = Sales Ops
      - 問題の修正 = CS Ops
 
-### 解決された重要な古い Issue
+### 解決された重要な古い Issue {#important-old-issues-with-resolutions}
 
 - [`Instance Data` テーブル内の重複レコード](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/255)
 - [Snowflake > Gainsight コネクタ - 既知のデータ問題](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/98)
 
-## アカウント分類フィールド (FY24)
+## アカウント分類フィールド (FY24) {#account-classification-fields-fy24}
 
 FY24 で行われたいくつかの変更により、アカウント分類目的で Gainsight で使用される一部のフィールドが変更されました。Sales 組織との整合性をより高めるために、Salesforce で使用されているのと同じフィールドと同じ命名規則が Gainsight でも使用されるようになりました。
 
-### Gainsight でもう使用されていないフィールド
+### Gainsight でもう使用されていないフィールド {#fields-no-longer-used-in-gainsight}
 
 |フィールド                             | 説明                                                                                                                                           |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -60,30 +59,30 @@ FY24 で行われたいくつかの変更により、アカウント分類目的
 | CSM Segment                      | CS で定義されたセグメント。これは FY23 で使用されていましたが、FY24 ではもはや適用されないため、Gainsight では使用されていません                                        |
 | Account Owner Team               | アカウントの Sales アカウントオーナーのチーム名。このフィールドはもはや Salesforce で使用または保守されておらず、Gainsight でも使用されていません。|
 
-### Gainsight で現在使用されているフィールド
+### Gainsight で現在使用されているフィールド {#fields-used-now-in-gainsight}
 
 |フィールド                             | 説明                                                                                       | 値の例                    |
 |----------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------|
-| Sales Segment                    | 従業員数に基づく sales で決定されたセグメント                                              | Large, Mid-Market, SMB, PubSec    |
+| Sales Segment                    | 従業員数に基づく Sales が決定したセグメント                                              | Large, Mid-Market, SMB, PubSec    |
 | Account Demographics: Geo        | アカウントが所在する世界の一般的な場所                                          | AMER, EMEA                        |
 | Account Demographics: Region     | 該当する場合、Geo 内のより具体的な場所                                              | WEST, DACH                        |
 | Account Demographics: Business Unit | ビジネスのタイプ                                                                           | ENTG, COMM                        |
 | Account Demographics: Role Type  | アカウントを担当するチームのタイプ                                                     | MAJ, STR, KEY, TERR               |
 | PubSec Type                      | アカウントが PubSec アカウントかどうか、世界のどこに位置するか (US 対 非 US) を判定  | US-PubSec, ROW-PubSec             |
 
-## Gainsight のユーザープロビジョニング
+## Gainsight のユーザープロビジョニング {#gainsight-user-provisioning}
 
 [Gainsight ユーザー管理](/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-user-management)を参照してください。
 
-## Gainsight のデータ構造
+## Gainsight のデータ構造 {#gainsight-data-structure}
 
 Gainsight は、一連の標準オブジェクトとカスタムオブジェクトを使用します。一部のオブジェクト/データは他のシステム（Salesforce など）に密接に対応し、他のオブジェクトは Gainsight 独自のものです。
 
-### 階層
+### 階層 {#hierarchy}
 
 私たちは階層のために Gainsight でアカウント構造を使用します。アカウントの下にはサブスクリプションもあります。
 
-### 標準オブジェクト
+### 標準オブジェクト {#standard-objects}
 
 これらは Gainsight の主要な標準/システムオブジェクトの一部です:
 
@@ -92,14 +91,14 @@ Gainsight は、一連の標準オブジェクトとカスタムオブジェク�
 | Company | Salesforce Account、手動入力、Gainsight 内からの計算 | 特定のアカウントに関する情報。Salesforce の Account オブジェクトへのマッピング。最もよく使用されるオブジェクト。CSM が作業を行う場所。 |
 | User | Salesforce User オブジェクト | Gainsight ユーザー、Salesforce の User オブジェクトによって入力 |
 | Person/Company Person | Salesforce Contact オブジェクト、手動入力 | Gainsight のコンタクト、Salesforce の Contact オブジェクトにマップ |
-| Scorecard オブジェクト |  |  |
+| Scorecard object |  |  |
 | Activity Timeline | Gainsight での手動入力 |  |
 | Call to Action | ルールエンジン、手動作成 |  |
 | Success Plan | ルールエンジン、手動作成 |  |
 
 <br>
 
-### カスタムオブジェクト
+### カスタムオブジェクト {#custom-objects}
 
 これらは Gainsight で作成した主要なカスタムオブジェクトの一部です:
 
@@ -110,18 +109,18 @@ Gainsight は、一連の標準オブジェクトとカスタムオブジェク�
 | Stage Adoption | Account オブジェクト (SFDC) |  |
 | CSM History Tracking | Gainsight のリアルタイムルール |  |
 | Zendesk Tickets V2 | Zendesk Organization および Ticket オブジェクト |  |
-| MonthlyMart SelfManaged Usage Data | Snowflake | [Snowflake union された dbt テーブル](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_paid_user_metrics_monthly)からのすべての基本的な製品利用。<br> この製品にはインスタンスごとに多くのレコードがあります。インスタンスごとに月ごとに1つのレコードが必要です。<br> これがどのようにセットアップされたかは[このビデオ](https://gainsight.hubs.vidyard.com/watch/oMU8aPjpxK7azFDr87iFVt?)で参照してください。 |
+| MonthlyMart SelfManaged Usage Data | Snowflake | [Snowflake union された dbt テーブル](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_paid_user_metrics_monthly)からのすべての基本的な製品利用。<br> この製品にはインスタンスごとに多くのレコードがあります。インスタンスごとに月ごとに 1 つのレコードが必要です。<br> これがどのようにセットアップされたかは[このビデオ](https://gainsight.hubs.vidyard.com/watch/oMU8aPjpxK7azFDr87iFVt?)で参照してください。 |
 | Product Usage Metrics | Data Designer: MonthlyMart SelfManaged Usage Data <br> SaaS Usage Data | MonthlyMart テーブルに基づく計算されたメトリクス（A/B = C）。 |
-| Instance Data | Data Designer: MonthlyMart SelfManaged Usage Data | 更新されたルールは、MonthlyMart データデザイナーからのフェッチを各 UUID/Hostname/SFDC_AcctID の組み合わせの単一レコードに重複排除するように設定されています。<br>  本番環境かどうかについて、どのインスタンス（セルフマネージド）かの SSOT。<br> このオブジェクトにより、CSM はインスタンスを次のいずれかとしてラベル付けできます:<br>  - Unknown (デフォルト) <br> - Production <br> - Non-production <br> - Obsolete <br> - Geo secondary mode  <br> このオブジェクトはインスタンスごとに1つのレコードのみを持ちます。 |
+| Instance Data | Data Designer: MonthlyMart SelfManaged Usage Data | 更新されたルールは、MonthlyMart データデザイナーからのフェッチを各 UUID/Hostname/SFDC_AcctID の組み合わせの単一レコードに重複排除するように設定されています。<br>  本番環境かどうかについて、どのインスタンス（セルフマネージド）かの SSOT。<br> このオブジェクトにより、CSM はインスタンスを次のいずれかとしてラベル付けできます:<br>  - Unknown (デフォルト) <br> - Production <br> - Non-production <br> - Obsolete <br> - Geo secondary mode  <br> このオブジェクトはインスタンスごとに 1 つのレコードのみを持ちます。 |
 
 <br>
 
-### Data designer オブジェクト
+### Data designer オブジェクト {#data-designer-objects}
 
 - [Issue #276: GS Documentation - Review Data Designer designs and add descriptions](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/276)
 - Google ドキュメントで定義: [Gainsight Data Dictionary](https://docs.google.com/spreadsheets/d/1NxDPleVfKK1wnD0Cp8MdfWgGlUdMVdrK4WIIJKwyKMQ/edit?usp=sharing)
 
-## Gainsight のコネクタと統合
+## Gainsight のコネクタと統合 {#gainsight-connectors-and-integrations}
 
 [Gainsight のコネクタ](https://support.gainsight.com/gainsight_nxt/Connectors)は、他のシステムから Gainsight にデータを取り込むための主要な方法です。次の外部システム用のコネクタを設定しています:
 
@@ -129,9 +128,9 @@ Gainsight は、一連の標準オブジェクトとカスタムオブジェク�
 - Snowflake
 - Salesforce
 
-### Zendesk コネクタ - もはやアクティブではない
+### Zendesk コネクタ - もはやアクティブではない {#zendesk-connector---no-longer-active}
 
-Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tickets` があります。これは `Zendesk Tickets V2` カスタムオブジェクトにマップされ、毎日実行されます。
+Zendesk コネクタには 1 つのアクティブなジョブ `Zendesk Sync - Tickets` があります。これは `Zendesk Tickets V2` カスタムオブジェクトにマップされ、毎日実行されます。
 
 `Zendesk Ticket V2 MDA` オブジェクトにデータをロードする Connector ジョブで使用される Zendesk オブジェクト:
 
@@ -145,7 +144,7 @@ Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tic
 - Closed Date
   - Zendesk はチケットのクローズ日のフィールドを提供しません。代わりに、`ticket status == closed` のフィルターと一緒に `Updated_at` を使用します。これは、チケットの最後の更新がそのクロージャーであるという仮定に基づいています。
 
-### Snowflake コネクタ
+### Snowflake コネクタ {#snowflake-connector}
 
 詳細は Product Usage Data セクションを参照してください。
 
@@ -157,7 +156,7 @@ Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tic
 
 ### Salesforce コネクタ {#salesforce-connector}
 
-`Connectors` は、Salesforce から Gainsight へのデータの主要なインポート方法の1つとして使用され、2つのシステム間に存在するネイティブの統合です。コネクタは、Salesforce インスタンスの Gainsight Integration ユーザーを使用して認証されます。コネクタとそのセットアップ方法の詳細については、[Gainsight ナレッジベース](https://support.gainsight.com/gainsight_nxt/Connectors/CRM_Integrations/Salesforce_Connector)を参照してください。
+`Connectors` は、Salesforce から Gainsight へのデータの主要なインポート方法の 1 つとして使用され、2 つのシステム間に存在するネイティブの統合です。コネクタは、Salesforce インスタンスの Gainsight Integration ユーザーを使用して認証されます。コネクタとそのセットアップ方法の詳細については、[Gainsight ナレッジベース](https://support.gainsight.com/gainsight_nxt/Connectors/CRM_Integrations/Salesforce_Connector)を参照してください。
 
 `Connectors` は、Salesforce と Gainsight のインスタンス間でこれらのオブジェクトを同期するために使用されます:
 
@@ -224,7 +223,7 @@ Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tic
 
 </details>
 
-### Gainsight のルールチェーン
+### Gainsight のルールチェーン {#gainsight-rule-chains}
 
 コネクタを介して取り込まれるデータを Gainsight 内で正しく表示し、双方向データ同期を調整するために、データを補完する必要があります。Gainsight に存在するルールがハイライトされ、Gainsight のさまざまな Rule Chains での使用を反映するように共有されています。
 
@@ -292,24 +291,24 @@ Zendesk コネクタには1つのアクティブなジョブ `Zendesk Sync - Tic
 
 </details>
 
-Gainsight から Salesforce に同期されるフィールドとオブジェクトの完全なリストについては、[Using Gainsight Data in SFDC](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)を参照してください。
+Gainsight から Salesforce に同期されるフィールドとオブジェクトの完全なリストについては、[SFDC での Gainsight データの使用](/handbook/customer-experience/product-usage-data/using-gainsight-data-in-sfdc/)を参照してください。
 
-## Gainsight のルールエンジン
+## Gainsight のルールエンジン {#gainsight-rules-engine}
 
-[ルールエンジン](https://support.gainsight.com/gainsight_nxt/03Rules_Engine)は Gainsight の主要な自動化ツールで、他のシステムとのデータの送受信、フィールド値の設定、CTAの作成、スコアの設定など、さまざまなアクションを実行できます。
+[ルールエンジン](https://support.gainsight.com/gainsight_nxt/03Rules_Engine)は Gainsight の主要な自動化ツールで、他のシステムとのデータの送受信、フィールド値の設定、CTA の作成、スコアの設定など、さまざまなアクションを実行できます。
 
 Gainsight でルール失敗のメールに使用するチームのメールアドレス cs-ops@gitlab.com があります。
 
-### CSM のアサインメントを SFDC にプッシュ
+### CSM のアサインメントを SFDC にプッシュ {#csm-assignment-push-to-sfdc}
 
 Gainsight は、このフィールド（GS では `CSM Name` というラベルが付けられた `CSM`、SFDC では `Customer Success Manager`）の単一のソースオブトゥルース (SSoT) です。
 
 - このフィールドは Gainsight で更新され、Salesforce に一方向で同期されます。Salesforce ではロックされており、ユーザーはそこで更新できません。
 - 更新は `Push CSM change to SFDC` というリアルタイムルールで行われます。これはフィールドが変更されるたびにトリガーされ、変更は数秒以内に Salesforce にロードされます。ルールは、Gainsight の `CSM` フィールドで見つかった SFDC ユーザー ID を使用して、Salesforce の `Customer Success Manager` フィールドにプッシュします。
 
-### CSM History Tracking オブジェクト
+### CSM History Tracking オブジェクト {#csm-history-tracking-object}
 
-このオブジェクトを使用して、アカウントの CSM が変更されたときにレポートを取得できます。
+このオブジェクトを使用して、アカウントの CSM がいつ変更されたかをレポートできます。
 
 `CSM Change Date Stamp` ルールは、すべてのアカウントについて、Gainsight の `CSM` フィールドが変更されるたびに実行されます。次のような情報を `CSM History Tracking` オブジェクトにロードします:
 
@@ -319,17 +318,17 @@ Gainsight は、このフィールド（GS では `CSM Name` というラベル�
 
 `CSM First Assigned Date` という `Company` オブジェクトのフィールドは、アカウントごとの CSM Change Date Stamp の MIN 日付に基づいて作成されました。
 
-### Gainsight CTA と Success Plan の作成
+### Gainsight CTA と Success Plan の作成 {#create-gainsight-ctas-and-success-plans}
 
 Gainsight に CTA や Success Plan などのアイテムを作成するルールがいくつかあります。注目すべきルールは次のとおりです:
 
 - Assignment needed CTA
 - Onboarding CTA
-- Triggered when an opportunity is greater than $50k
+- オポチュニティが $50k を超えるとトリガーされます
 - EBR cta
 - ROI success plan
 
-### スコアの設定
+### スコアの設定 {#set-score}
 
 Gainsight のすべてのスコアカード測定値は、ルールを使用して設定されます。
 
@@ -343,43 +342,43 @@ Gainsight のすべてのスコアカード測定値は、ルールを使用し�
 - ROI
 - Data designers (null)
 
-#### スコアカード測定値を null にするルール
+#### スコアカード測定値を null にするルール {#rules-to-null-scorecard-measures}
 
-非 CSM 所有のアカウント、または CSM がアカウントに割り当てられていない場合に、Health Score 測定値（ROI、Engagement、CSM Sentiment）を null にするルールがあります。このルールは月曜日に週に1回実行されます。
+非 CSM 所有のアカウント、または CSM がアカウントに割り当てられていない場合に、Health Score 測定値（ROI、Engagement、CSM Sentiment）を null にするルールがあります。このルールは月曜日に週に 1 回実行されます。
 
-### Admin Daily - Stage Adoption
+### Admin Daily - Stage Adoption {#admin-daily---stage-adoption}
 
 これらのルールは、Gainsight 内のフィールドを計算するフィールドのロールアップとして機能します:
 
 - Admin - Load Stage Counts to Company
 - Admin - Load Aggregated Stage Adoption Data to MDA
 
-## 古いレコードの削除とマージ
+## 古いレコードの削除とマージ {#deleting-and-merging-old-records}
 
 Salesforce でアカウントレコードが削除またはマージされたとき、Gainsight で一致するレコードは自動的には削除/マージされません。これらのレコードをキャッチして Gainsight でクリーンアップするために、それらを識別するためのいくつかのルールとレポートがあります。
 
-### ルール
+### ルール {#rules}
 
 - `Admin - Mark old Account records to be Deleted/Merged`: このルールは、Salesforce のすべてのアカウントのリストと Gainsight のすべてのアカウントのリストを取り込みます。次に、リストを比較し、Gainsight に存在するが Salesforce には存在しないアカウントのみを保持します。ルールは、CSM 名、CTA、Success Plan、Timeline の活動など、Gainsight レコードに重要な情報が添付されているかどうかも確認します。Gainsight レコードにこれらの項目がある場合、ブールフィールド `Merge?` がチェックされます。アカウントにこれらの項目がない場合、フィールド `Delete?` がチェックされます。アカウント名にも「TO BE MERGED NO LONGER IN SALESFORCE」または「TO BE DELETED NO LONGER IN SFDC」が付加されます。
   - ルール `Load to Company: Count CTAs`、`Load to Company: Count Success Plans`、`Load to Company: Last Timeline Activity` はすべてアカウントに関する情報を計算し、それが `Admin - Mark old Account records to be Deleted/Merged` ルールでアカウントをマージまたは削除する必要があるかどうかを判断するために使用されます。
 
-### レポート
+### レポート {#reports}
 
 以下のレポートは、Gainsight の CS Ops ダッシュボードにあります。これらのレポートは、チームのメンバーが毎週レビューするよう促すために、月曜日の朝に CS Ops のメールアドレスに送信されるようにスケジュールされています。
 
 - `Accounts Flagged to Merge`: このレポートは、`Merged?` フィールドがチェックされたアカウントを識別します。このレポートに表示されるアカウントは、レビューして正しいアカウントとマージする必要があります。これは、Gainsight の Data Operations セクションで、`Merge?` = Yes のアカウントにフィルタリングすることで行えます。Gainsight でのアカウントのマージの詳細は、[Gainsight ドキュメンテーションウェブサイト](https://support.gainsight.com/gainsight_nxt/02Data_Management/Managing_Data_in_Gainsight/Company_Merge)で見つけることができます。
 - `Accounts Flagged to Delete`: このレポートは、`Delete?` フィールドがチェックされたアカウントを識別します。これらのアカウントは、Gainsight から完全に削除する必要があります。これは、Gainsight の Data Operations セクションで、`Delete?` = Yes のアカウントにフィルタリングすることで行えます。Gainsight でのアカウントの削除の詳細は、[Gainsight ドキュメンテーションウェブサイト](https://support.gainsight.com/gainsight_nxt/02Data_Management/Managing_Data_in_Gainsight/Data_Operations_-_Old#Delete_Records)で見つけることができます。
 
-#### ダッシュボードのリセットに関する GS Admin クイックヒント
+#### ダッシュボードのリセットに関する GS Admin クイックヒント {#gs-admin-quick-tip-on-resetting-dashboards}
 
-私たちの Gainsight ユーザーとチャンピオンの一部は、GS ダッシュボードに追加された新しいフィールド、フィールド値が見えないと報告しています。これが発生する既知の理由の1つは、Gainsight がより迅速にロードするためにダッシュボードをキャッシュすることです。これには、ダッシュボードの状態とレポートのデータの両方が含まれます。GS Admin がダッシュボードに変更を加えると、ユーザーはまだキャッシュされたバージョンのダッシュボード（以前のバージョン）を見る可能性があります。
+私たちの Gainsight ユーザーとチャンピオンの一部は、GS ダッシュボードに追加された新しいフィールド、フィールド値が見えないと報告しています。これが発生する既知の理由の 1 つは、Gainsight がより迅速にロードするためにダッシュボードをキャッシュすることです。これには、ダッシュボードの状態とレポートのデータの両方が含まれます。GS Admin がダッシュボードに変更を加えると、ユーザーはまだキャッシュされたバージョンのダッシュボード（以前のバージョン）を見る可能性があります。
 
 キャッシュをリセットするには、GS Admin は次のいずれかのアクションを取ることができます:
 
-1. 「Save Layout」の横にある3つのドットをクリックし、「Clear State」を選択します。これはキャッシュされた状態をクリアし、次回ユーザーがダッシュボードをロードするときに、ダッシュボードの最新バージョンになります。
+1. 「Save Layout」の横にある 3 つのドットをクリックし、「Clear State」を選択します。これはキャッシュされた状態をクリアし、次回ユーザーがダッシュボードをロードするときに、ダッシュボードの最新バージョンになります。
 2. GS Admin はダッシュボードにフィルターを追加して削除することができます。フィルターを追加する行為は自動的に状態をクリアします。
 
-## Gainsight の同期タイミング
+## Gainsight の同期タイミング {#gainsight-sync-timing}
 
 Gainsight は、Salesforce に情報をプッシュバックする前に、まず Gainsight に更新、新しい顧客アカウントなどを同期します。
 
@@ -395,7 +394,7 @@ Gainsight は、Salesforce に情報をプッシュバックする前に、ま�
 | Push to SFDC - Weekend | Weekend | 9:00AM PST | 週末 |
 | Bi-directional Builds - Weekend | Weekend | 8:00AM PST | 週末 |
 
-## 推奨事項
+## 推奨事項 {#recommendations}
 
 用語の整理方法を明確にするために、コード化標準と命名規則を使用します。
 
@@ -405,7 +404,7 @@ Gainsight は、Salesforce に情報をプッシュバックする前に、ま�
 | Folders                            | 各タイプの Rule に対してフォルダを作成する必要があります                                                                                                                                                                                                                                                                                                                                                                                   | (CTA Rules, Load to Object Rules, Set Score Rules, etc).                                                                                                                 |
 | Rule Chains                        | より効率的な管理とワークフローのために、該当する場合はルールを Rules チェーンに入れる必要があります。                                                                                                                                                                                                                                                                                                                                                 | CTA ルールを CTA Rule Chain にグループ化します。Scorecard ルールを Scorecard Rule Chain にグループ化します。                                                                                |
 | Inactive Rules                     | 非アクティブなルールについては、将来何らかの理由で参照する必要がある場合は、ルールを無効にし、廃止されたフォルダに入れます。将来参照または使用する必要のないルールについては、インスタンスをクリーンに保ち、非アクティブなルールの数を少なく保つために、ルールを完全に削除します。                                                                                                                           |                                                                                                                                                                          |
-| Reports and Dashboards             | レポートの命名は、各管理者の裁量に任せて適切に命名する必要があります。テスト目的で作成またはクローンされたレポートを削除するアクティブな状態を維持してください。もう必要ないレポートは保持しないでください。                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                          |
+| Reports and Dashboards             | レポートの命名は、各管理者の裁量に任せて適切に命名する必要があります。テスト目的で作成またはクローンされたレポートは、積極的に削除してください。もう必要ないレポートは保持しないでください。                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                          |
 | Report Folders                     | レポートフォルダの最良の命名規則は、レポートが誰のために作成されたか、またはレポートの一般的な目的のいずれかで命名することです。                                                                                                                                                                                                                                                                                                                                                                                                          | C360 Reports TAM Reports Manager Reports Executive Reports                                                                                                               |
 | Dashboards                         | ダッシュボードは、ダッシュボードの目的/意味、またはダッシュボードが作成されたユーザープロファイル/チームを明確に示すように命名する必要があります。                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                          |
 | Dashboard Folders                  | ダッシュボードフォルダの作成は、多くの場合不要であり、繰り返しになる可能性があります。Gainsight インスタンスが非常に大きく、多くの異なるユーザープロファイル（TAM、Onboarding、CSM など）がある場合に有用です。使用されていないダッシュボードまたはダッシュボードフォルダを削除します。廃止されたダッシュボードを保持する強い理由はめったにありません。                                                                                                 |                                                                                                                                                                          |
@@ -414,7 +413,7 @@ Gainsight は、Salesforce に情報をプッシュバックする前に、ま�
 | Templates                          | Email Assist または Programs で使用されるテンプレートについては、すべてのテンプレートを次のように開始します                                                                                                                                                                                                                                                                                                                                                                                                                                       | Email Assist: {Insert Template Name} or Email Program: {insert Template Name} Email # - subject Example: Email Onboarding Program: Email 1 - Intro to GitLab             |
 | Email Template Folders             | メールの目的を示すメールテンプレートフォルダを作成します                                                                                                                                                                                                                                                                                                                                                                                              | Email Assist Templates Onboarding Templates Renewal Templates                                                                                                            |
 
-## ルールタイトルのラベリング
+## ルールタイトルのラベリング {#rule-title-labeling}
 
 ルールを作成するときは、整理と明確化のためにルールタイトルに次のプレフィックスを追加します:
 
@@ -425,7 +424,7 @@ Gainsight は、Salesforce に情報をプッシュバックする前に、ま�
 - CTA
 - Set Score
 
-ラベリングの詳細については、[この Issue](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/42) を参照してください。
+ラベリングの詳細については、[この Issue](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/42)を参照してください。
 
 <details>
 <summary markdown='span'>Gainsight ルールラベルの推奨事項</summary>
@@ -436,7 +435,7 @@ Gainsight は、Salesforce に情報をプッシュバックする前に、ま�
 | Folders | 各タイプのルールに対してフォルダを作成する必要があります。 | (CTA Rules, Load to Object Rules, Set Score Rules, etc). |
 | Rules Chains | より効率的な管理とワークフローのために、該当する場合はルールをルールチェーンに入れる必要があります。 | CTA ルールを CTA Rule Chain にグループ化します。Scorecard ルールを Scorecard Rule Chain にグループ化します。 |
 | Inactive Rules | <ul><li>非アクティブなルールについては、将来何らかの理由で参照する必要がある場合は、ルールを無効にし、廃止されたフォルダに入れます。</li><li>将来参照または使用する必要のないルールについては、インスタンスをクリーンに保ち、非アクティブなルールの数を少なく保つために、ルールを完全に削除します。</li></ul> |  |
-| Reports and Dashboards | <ul><li>レポートの命名は、各管理者の裁量に任せて適切に命名する必要があります。</li><li>テスト目的で作成またはクローンされたレポートを削除するアクティブな状態を維持してください。</li><li>もう必要ないレポートは保持しないでください。</li></ul> |  |
+| Reports and Dashboards | <ul><li>レポートの命名は、各管理者の裁量に任せて適切に命名する必要があります。</li><li>テスト目的で作成またはクローンされたレポートは、積極的に削除してください。</li><li>もう必要ないレポートは保持しないでください。</li></ul> |  |
 | Report Folders | レポートフォルダの最良の命名規則は、レポートが誰のために作成されたか、またはレポートの一般的な目的のいずれかで命名することです。 | C360 Reports CSM Reports Manager Reports Executive Reports |
 | Dashboards | ダッシュボードは、ダッシュボードの目的/意味、またはダッシュボードが作成されたユーザープロファイル/チームを明確に示すように命名する必要があります。 |  |
 | Dashboard Folders | <ul><li>ダッシュボードフォルダの作成は、多くの場合不要であり、繰り返しになる可能性があります。Gainsight インスタンスが非常に大きく、多くの異なるユーザープロファイル（Onboarding、CSM など）がある場合に有用です。</li><li>使用されていないダッシュボードまたはダッシュボードフォルダを削除してください。廃止されたダッシュボードを保持する強い理由はめったにありません。</li></ul> |  |
@@ -447,12 +446,12 @@ Gainsight は、Salesforce に情報をプッシュバックする前に、ま�
 
 </details>
 
-### 説明の推奨事項
+### 説明の推奨事項 {#description-recommendations}
 
 - ルールを作成するときは常にルールの説明を追加してください。
 - 説明に GitLab Issue へのリンクを記載します: [Issue #275: GS Documentation - Review rule descriptions and titles](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/issues/275)
 
-## Gainsight スコアカード
+## Gainsight スコアカード {#gainsight-scorecards}
 
 私たちは現在、次のスコアカードグループと測定値を使用しています:
 
@@ -470,7 +469,7 @@ Gainsight は、Salesforce に情報をプッシュバックする前に、ま�
 
 <br>
 
-## Gainsight の製品利用データ
+## Gainsight の製品利用データ {#product-usage-data-in-gainsight}
 
 製品利用データを Snowflake から直接 Gainsight に取り込みます。`MonthlyMart SelfManager Usage Data` という Data Designer プロジェクトを使用します。
 
@@ -482,15 +481,15 @@ Gainsight の Snowflake との統合はまだ新しいため、データをイ�
 - インスタンスがアカウントにどのようにロールアップするか
 - インスタンスのさまざまなタイプ
 
-### トラブルシューティングのヒント
+### トラブルシューティングのヒント {#troubleshooting-tips}
 
 - Gainsight で null 値が表示される場合、Snowflake を確認してください。Snowflake に値があり Gainsight にない場合、Data Designer のリセットとレポートの更新を試してください。
 
-### redis、namespace_ids、および snowplow コレクションの説明
+### redis、namespace_ids、および snowplow コレクションの説明 {#explanation-of-redis-namespace_ids-and-snowplow-collection}
 
 データチームは、新しい Automated Service Ping プロセスのソースとして Snowplow を使用していません。代わりに、GitLab.com postgres と GitLab.com Redis カウンターのクローンを使用します。
 
-これが私たちが持っている4つのタイプの Service Ping です:
+これが私たちが持っている 4 つのタイプの Service Ping です:
 
 1. Self-Managed Service Ping
 1. Manual SaaS Service Ping
@@ -501,7 +500,7 @@ SaaS Namespace Service Ping で使用されるネームスペースリストは�
 
 **注意点**: Redis ソースのメトリクス（メトリクスディクショナリで redis または redis_hll として記載）は、まだネームスペースレベルで利用できません。当面、SaaS Namespace Service Ping には Postgres ソースのメトリクスのみが含まれます（2021-09-08 時点）。
 
-### データ定義
+### データ定義 {#data-definitions}
 
 - [UUID](https://docs.gitlab.com/ee/api/usage_data.html#export-service-ping-sql-queries): もともと一意の識別子として意図
 - `Hostname`: 会社のオンプレミスサーバーの URL（例: gitlab.gainsight.com）
@@ -511,26 +510,26 @@ SaaS Namespace Service Ping で使用されるネームスペースリストは�
 - `Ping_date`: Service Ping の特定の日付（例: 2021-08-11 12:00）。これは週次の Ping であるため、データの行は最新の Ping 値で更新されます。
   - ユースケース: このフィールドを使用して、Ping が送信された正確な日付を確認します。
 - `Snapshot_month`: データの各行はスナップショット月に紐付けられます。ping_date フィールドは、現在の月の `Snapshot_month` の値を更新します。
-  - 例: 月次値（フィールド）は週次（金曜日）で更新されます。7月を例にすると、ping date は更新されます（7月1日、7月8日、7月15日、7月22日……）が、snapshot_month は 2021-07-01 のままです。7月と8月を比較すると、7月31日（おおよそ）と8月7日（1週間遅れと仮定）の値が表示されます。言い換えれば、7月と8月の数値は非常に似ている場合があります。
-  - ユースケース: 99% の時間、`ping_date` ではなく `snapshot_month` を使用します。
+  - 例: 月次値（フィールド）は週次（金曜日）で更新されます。7 月を例にすると、ping date は更新されます（7 月 1 日、7 月 8 日、7 月 15 日、7 月 22 日……）が、snapshot_month は 2021-07-01 のままです。7 月と 8 月を比較すると、7 月 31 日（おおよそ）と 8 月 7 日（1 週間遅れと仮定）の値が表示されます。言い換えれば、7 月と 8 月の数値は非常に似ている場合があります。
+  - ユースケース: 99% の場合、`ping_date` ではなく `snapshot_month` を使用します。
   - スナップショット月が表示されない理由:
-    - サブスクリプションのキャンセル（5月にキャンセルし、そのためデータの送信を停止）
+    - サブスクリプションのキャンセル（5 月にキャンセルし、そのためデータの送信を停止）
     - データ品質（どこかで何かが壊れた）
     - セルフマネージドの場合、顧客がデータの送信を無効化またはブロックした
 
-### 製品利用データフロー
+### 製品利用データフロー {#product-usage-data-flows}
 
-![Product Usage Data Flow Diagram](https://lucid.app/publicSegments/view/cba91861-d0aa-4f96-8848-56a2eec5798b/image.jpeg)
+![製品利用データのフロー図](https://lucid.app/publicSegments/view/cba91861-d0aa-4f96-8848-56a2eec5798b/image.jpeg)
 
-### 製品利用マッピング
+### 製品利用マッピング {#product-usage-mapping}
 
 GitLab の顧客はアカウントを持ち、複数のサブスクリプションを持つ可能性があります。各サブスクリプションは、本番またはステージングなど、複数のインスタンスを持つ可能性があります。
 
-![Instance Mapping](https://lucid.app/publicSegments/view/74e7b4aa-6e71-4f60-83bb-6439c459358c/image.png)
+![インスタンスのマッピング](https://lucid.app/publicSegments/view/74e7b4aa-6e71-4f60-83bb-6439c459358c/image.png)
 
-Gainsight にはトライレベルの構造があるため、アカウントには関連する複数のインスタンスがあります。サブスクリプション ID をマップしてどのサブスクリプションにインスタンスがあるかを確認できますが、Gainsight での可視化は1対多の関係（Account:インスタンス）です。
+Gainsight にはトライレベルの構造があるため、アカウントには関連する複数のインスタンスがあります。サブスクリプション ID をマップしてどのサブスクリプションにインスタンスがあるかを確認できますが、Gainsight での可視化は 1 対多の関係（Account:インスタンス）です。
 
-### Journey Orchestrator のプログラム名
+### Journey Orchestrator のプログラム名 {#journey-orchestrator-program-names}
 
 CS Ops チームが Journey Orchestrator で新しいプログラムを作成するとき、簡単に従える命名規則を活用することで、他の Gainsight 管理者がそのコンテキストを理解できるようになります。次の順序を使用するようにしてください:
 
@@ -547,8 +546,8 @@ CS Ops チームが Journey Orchestrator で新しいプログラムを作成す
 
 このプログラム名から、Issue #1661 に関連し、Asia-Pacific 地域の Scale セグメント顧客に焦点を当てた CI Enablement プログラムであることがすぐに理解できます。プログラムを好みのフォルダに追加することを忘れないでください！
 
-## Snowflake テーブル
+## Snowflake テーブル {#snowflake-tables}
 
-- [Monthly](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_wave_1_3_metrics_monthly) メトリクス
-- [Latest](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_wave_1_3_metrics_latest) メトリクス
-- [Self-managed と SaaS](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_paid_user_metrics_monthly)
+- [月次](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_wave_1_3_metrics_monthly) メトリクス
+- [最新](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_wave_1_3_metrics_latest) メトリクス
+- [セルフマネージドと SaaS](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.mart_product_usage_paid_user_metrics_monthly)

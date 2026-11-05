@@ -2,18 +2,16 @@
 title: "Identity インフラストラクチャ管理"
 description: "CorpSec Identity チームは、他チームとともに、Infrastructure Security チームと連携して GCP、AWS、Azure のトップレベルのクラウドプロバイダーインフラ組織レベル管理にも注力しています。私たちはすべての GCP、AWS、Azure のアクセスリクエストを処理し、GitLab Sandbox Cloud を支える HackyStack のメンテナーでもあります。インフラリソースをデプロイする各チームは、Security が定義するセキュリティ境界の中で、業界のベストプラクティスを用いて自チームのインフラワークロードを管理する責任を持ちます。"
 upstream_path: /handbook/security/identity/infrastructure/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:35:00.430322+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-25T20:13:20+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+## 概要 {#overview}
 
-## 概要
-
-RED データを扱うすべての Cloud インフラは [Infrastructure](/handbook/engineering/infrastructure) 部門が管理しています。ORANGE/YELLOW/GREEN データに対するすべてのデモ／開発／テスト／サンドボックス／ステージング／本番インフラは、CorpSec Identity チームがセルフサービスポータルまたは Issue テンプレートを通して作成しています。
+RED データを扱うすべてのクラウドインフラは [Infrastructure](/handbook/engineering/infrastructure) 部門が管理しています。ORANGE/YELLOW/GREEN データに対するすべてのデモ／開発／テスト／サンドボックス／ステージング／本番インフラは、CorpSec Identity チームがセルフサービスポータルまたは Issue テンプレートを通して作成しています。
 
 各チームメンバーは、Sandbox Cloud を使って自分の実験用に AWS アカウントと GCP プロジェクトをセルフサービスで作成できます。これは個人用のサンドボックスであり、他者と共有するものではありません。
 
@@ -29,7 +27,7 @@ RED データを扱うすべての Cloud インフラは [Infrastructure](/handb
 - Issue テンプレート: [GCP プロジェクトから IAM ユーザーを追加または削除する](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=gcp_project_iam_update)
 - 非本番インフラに関する質問は `#sandbox-cloud-questions` まで - Vlad Stoianovici にメンションしてください
 
-## Identity コントロールプレーン
+## Identity コントロールプレーン {#identity-control-plane}
 
 Identity チームは、インフラ用の管理アクセス制御プレーンを管理しています。Identity コントロールプレーンを構成するサービスは次のとおりです。
 
@@ -59,21 +57,21 @@ IDENTITY_VENDOR_NORDLAYER["NordLayer VPN<br />VPN<br />Managed by IT Security"]
 end
 ```
 
-## クラウドプロバイダー組織管理
+## クラウドプロバイダー組織管理 {#cloud-provider-organization-management}
 
 CorpSec Identity チームは、[Infrastructure Security](/handbook/security/product-security/infrastructure-security) チームと協業しながら、GCP、AWS、Azure のトップレベルのクラウドプロバイダーインフラ組織レベルの管理を担っています。
 
 インフラリソースをデプロイする各チームは、業界のベストプラクティスを用いて自チームのインフラワークロードと DevOps オペレーションを管理する責任を持ちます。Security チームは組織のスキャフォールディング（Terraform テンプレート）とセキュリティ境界を提供し、各チームはその境界の中で自チームのワークロードを管理する責任を持ちます。
 
-### AWS Organizations
+### AWS Organizations {#aws-organizations}
 
 AWS Organizations は合計で 11 個あります。以前言及されていた「AWS Billing Org」と「AWS Systems Org」は存在しません。
 
-| Organization | 目的 | データ分類 |
+| 組織 | 目的 | データ分類 |
 |---|---|---|
 | **Sandbox** | チームメンバーの実験用セルフサービス個人アカウント。ユーザーごとに 1 アカウント。 | GREEN |
 | **Services** | 内部ツール／サービス用の共有ワークロードアカウント。ワークロードごとに 1 アカウント。 | ORANGE |
-| **Marketplace** | GitLab Distribution チーム。マーケットプレイスへの掲載と配布インフラ。 | ORANGE |
+| **Marketplace** | GitLab Distribution Team。マーケットプレイスへの掲載と配布インフラ。 | ORANGE |
 | **Training** | 製品トレーニングおよびハンズオンラボ環境。 | GREEN |
 | **Dedicated Dev** | GitLab Dedicated 用の開発環境。ユーザーごとに 1 アカウント。 | YELLOW |
 | **Dedicated Prod** | GitLab Dedicated 用の本番環境。コントロールプレーンアカウントとテナント環境ごとに 1 アカウント。 | RED |
@@ -113,13 +111,13 @@ classDef yellow fill:#fcd34d,stroke:#ca8a04,stroke-width:1px;
 classDef emerald fill:#6ee7b7,stroke:#059669,stroke-width:1px;
 ```
 
-### GCP Organizations
+### GCP の組織 {#gcp-organizations}
 
-既知の GCP Organizations は 6 個あります。請求設定の都合上、請求チームが特定の組織すべてを完全に把握できるわけではないため、このリストはベストエフォートです。以前言及されていた「GCP Billing」は別組織ではなく、請求は `gitlab.com` GCP 組織の一部です。
+既知の GCP 組織 は 6 個あります。請求設定の都合上、請求チームが特定の組織すべてを完全に把握できるわけではないため、このリストはベストエフォートです。以前言及されていた「GCP Billing」は別組織ではなく、請求は `gitlab.com` GCP 組織の一部です。
 
-> **注意**: Dedicated と Cells のチームは [GCP からの移行](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/11211) を進めています。これらの GCP Organizations は近～中期的に廃止される可能性があります。
+> **注意**: Dedicated と Cells のチームは [GCP からの移行](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/11211)を進めています。これらの GCP 組織 は短期〜中期的に廃止される可能性があります。
 
-| Organization | ドメイン | 目的 | データ分類 |
+| 組織 | ドメイン | 目的 | データ分類 |
 |---|---|---|---|
 | **gitlab.com** | `gitlab.com` | プライマリ GCP 組織。SaaS 本番インフラ、Sandbox Cloud（フォルダ／レルムとして）、Services Cloud、請求を含む。 | RED |
 | **gitlab.systems** | `gitlab.systems` | 他のインフラから完全分離が必要なコンプライアンス固有アプリケーション。CorpSec Identity が所有。 | ORANGE |
@@ -153,13 +151,13 @@ classDef yellow fill:#fcd34d,stroke:#ca8a04,stroke-width:1px;
 classDef emerald fill:#6ee7b7,stroke:#059669,stroke-width:1px;
 ```
 
-## 共有責任
+## 共有責任 {#shared-responsibilities}
 
 私たちはクラウドプロバイダーに対して責任共有モデルを採用しています。
 
-### CorpSec Identity チーム
+### CorpSec Identity チーム {#corpsec-identity-team}
 
-> CorpSec Identity チームは、GitLab 全体の Identity、アクセス、クラウドインフラ管理を所有しています。私たちは、ID プロバイダーの管理からクラウド組織管理、セキュリティポリシーの強制まで、全領域をカバーする 1 つのチームです。
+> CorpSec Identity チームは、GitLab 全体の Identity、アクセス、クラウドインフラ管理を所有しています。私たちは 1 つのチームで全領域をカバーします — ID プロバイダーの管理からクラウド組織管理、セキュリティポリシーの強制までを担います。
 
 **Identity & アクセス管理**
 
@@ -186,21 +184,21 @@ classDef emerald fill:#6ee7b7,stroke:#059669,stroke-width:1px;
 - レガシーな AWS アカウントと GCP プロジェクトの技術的負債削減
 - クラウドセキュリティポリシーと構成監査
 
-**AI Enterprise Enablement**
+**企業全体での AI 活用支援**
 
 - AI ツールのセキュリティ評価および承認ワークフロー
 - AI リスクアセスメントとガバナンスフレームワーク
 - CorpSecAI 自動化エンジニアリング（データパイプライン、Webhook 自動化）
 - 組織全体での AI ツール／プラットフォームのセキュアな採用支援
 
-### Services Cloud
+### Services Cloud {#services-cloud}
 
 インフラリソースをデプロイする各チームは、業界のベストプラクティスを用いて自チームのインフラワークロードと DevOps オペレーションを管理する責任を持ちます。
 
 Security チームは組織のスキャフォールディングとセキュリティ境界を提供し、各チームはその境界の中で自チームのワークロードを管理する責任を持ちます。
 
-### Sandbox Cloud のユーザー（エンジニア）
+### Sandbox Cloud のユーザー（エンジニア） {#sandbox-cloud-users-engineers}
 
 各ユーザーは、自身のワークロードの作成と削除に責任を持ちます。
 
-詳細は [Sandbox Cloud ハンドブックページ](/handbook/company/infrastructure-standards/realms/sandbox) で学べます。
+詳細は [Sandbox Cloud ハンドブックページ](/handbook/company/infrastructure-standards/realms/sandbox)で学べます。

@@ -2,9 +2,9 @@
 title: "GitLab Dedicated for Government"
 description: "GitLab Dedicated for Government は、政府機関向けの FedRAMP 認定を受けたシングルテナント型 SaaS ソリューションです。"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/government/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-27T14:58:29-04:00"
-translated_at: "2026-11-01T05:52:50+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+lastmod: "2026-11-03T17:29:55-07:00"
+translated_at: "2026-11-05T15:07:19.941804+00:00"
 translator: claude
 stale: false
 ---
@@ -14,6 +14,8 @@ stale: false
 GitLab Dedicated for Government は [GitLab Dedicated](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)のサブオファリングであり、FedRAMP コンプライアンス、完全なインフラの分離、マネージド運用を必要とする連邦政府機関向けに専用設計されています。完全な GitLab Ultimate プラットフォームをシングルテナント型 SaaS ソリューションとして提供し、AWS GovCloud 上でのみホストされます。
 
 GitLab Dedicated はシングルテナンシーとマネージド運用という基盤を提供しますが、GitLab Dedicated for Government はその基盤を FedRAMP Moderate 認定、政府機関固有の構成、そして政府機関の DevSecOps チームに固有のニーズに基づくロードマップで拡張します。
+
+[US Public Sector Services チーム](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/us-public-sector-services/)が GitLab Dedicated for Government を構築・運用します。
 
 ## 中央 DevSecOps チームのために構築 {#built-for-central-devsecops-teams}
 

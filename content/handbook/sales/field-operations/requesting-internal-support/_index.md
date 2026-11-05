@@ -1,11 +1,11 @@
 ---
 title: Salesforce で社内サポートをリクエストする
 upstream_path: /handbook/sales/field-operations/requesting-internal-support/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T07:20:25.753128+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:44:22.914996+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-27T11:53:02-05:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
 ## サポートを得る方法 {#how-to-get-help}
@@ -67,7 +67,7 @@ Salesforce で商談やアカウントに取り組む際にヘルプを得る方
     - Escalations (CSM/CSE Accounts)
 - [GitLab Customer Support](/handbook/support/internal-support/)
 - Enterprise Applications
-  - [Enterprise Applications - CRM Team](/handbook/business-technology/enterprise-applications/entapps-crm/#i-classfas-fa-users-idbiz-tech-iconsi-how-we-operate)
+  - [Enterprise Applications - CRM Team](/handbook/business-technology/enterprise-applications/entapps-crm/#how-we-operate)
   - [Enterprise Applications - PMO](/handbook/business-technology/enterprise-applications/pmo)
 - [Revenue](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/revenue-accounting/#communicating-with-revenue-accounting)
   - Chatter @revenue

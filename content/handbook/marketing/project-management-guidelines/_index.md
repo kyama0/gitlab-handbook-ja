@@ -1,11 +1,11 @@
 ---
 title: "マーケティングプロジェクト管理ガイドライン"
 upstream_path: /handbook/marketing/project-management-guidelines/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T06:42:27+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:32:31.649177+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
 ### サブページ {#sub-pages}
@@ -18,7 +18,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 6. [Issue](/handbook/marketing/project-management-guidelines/issues/)
 7. [ボード](/handbook/marketing/project-management-guidelines/boards/)
 
-## <i class="fas fa-toolbox fa-fw color-orange font-awesome"></i> マーケティングプロジェクト管理ガイドライン {#marketing-project-management-guidelines}
+## <i class="fas fa-toolbox fa-fw"></i> マーケティングプロジェクト管理ガイドライン {#marketing-project-management-guidelines}
 
 Marketing は、[グループ](https://docs.gitlab.com/ee/user/group/)、[プロジェクト](https://docs.gitlab.com/ee/user/project/)、[エピック](https://docs.gitlab.com/ee/user/group/epics/)、[ロードマップ](https://docs.gitlab.com/ee/user/group/roadmap/)、[Issue](https://docs.gitlab.com/ee/user/project/issues/)、[ラベル](https://docs.gitlab.com/ee/user/project/labels.html)、[ボード](https://docs.gitlab.com/ee/user/project/issue_board.html)を含むアジャイルプロジェクト管理に GitLab を使用しています。これらの GitLab 機能に馴染みがない場合は、各ドキュメントを通読してください。
 
@@ -151,6 +151,6 @@ _注意_ これは Issue ボットではなく、動的な機能はありませ�
 
 ### すべての関係性 {#how-it-all-fits-together}
 
-ボード、エピック、ラベルをどこでどう作成するかを理解することは混乱しやすいかもしれません。以下の図は、すべての要素の関係性を非常に高レベルで示した例です。質問があれば、[#mktgops Slack チャンネル](https://gitlab.slack.com/messages/CGL35F20G)で尋ねてください（*アクティブなリンクは GitLab チームメンバーである必要があります）。
+ボード、エピック、ラベルをどこでどう作成するかを理解することは混乱しやすいかもしれません。以下の図は、すべての要素の関係性を非常に高レベルで示した例です。質問があれば、[#mktgops Slack チャンネル](https://gitlab.slack.com/messages/CGL35F20G)で尋ねてください（*リンクを利用するには GitLab チームメンバーである必要があります）。
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRNvAJ7LoK-6nvbOGEX-T5-tRD7PK3dU4OVbfBWwr6orNwnEo4LJBSCDCenfDfFcQwSTeOWFDS8FE15/pub?w=1056&amp;h=1344" alt="">

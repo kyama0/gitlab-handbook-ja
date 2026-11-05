@@ -1,12 +1,12 @@
 ---
 title: "Technical Writing"
-description: "Technical Writing チームは、GitLab のエンジニア、プロダクトマネージャー、デザイナー、UX リサーチャーと連携し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、拡張可能なドキュメントに落とし込みます。"
+description: "Technical Writing チームは、GitLab のエンジニア、Product Managers、デザイナー、UX Researchers と連携し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、拡張可能なドキュメントに落とし込みます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/technical-writing/"
-upstream_sha: 3640c397d2bcb6ef7ae2c76b0a6996a33b51592e
-translated_at: "2026-11-03T21:08:59.195795+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T13:40:02.095783+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-03T18:14:08Z"
+lastmod: "2026-11-04T08:45:23+01:00"
 ---
 
 Technical Writers は、ユーザーが GitLab の機能を理解し、操作し、導入する方法を左右するコンテンツに
@@ -339,8 +339,8 @@ Technical Writing チームは、満足度、見つけやすさ、有用性と�
 
 私たちは主要なドキュメントソース（GitLab、Omnibus、Charts、Operator、Runner、CLI、GitLab Orbit、Artifact Registry、リリースノート）の統計を追跡しています。
 
-- ドキュメントソースには、3,600 ページ以上のドキュメントと 5,500,000 語以上の単語があります。
-- 2020 年 5 月以降、ページ数は 205% 以上、単語数は 365% 以上増加しています。
+- ドキュメントソースには、3,600 ページを超えるドキュメントと 5,500,000 語を超える単語があります。
+- 2020 年 5 月以降、ページ数は 205% を超え、単語数は 365% を超えて増加しています。
 - 2025 年 9 月から 2026 年 9 月にかけて、ページ数は 33%、単語数は 39% 増加しました。
 - ページ数（33%）と単語数（33%）の最大の割合を占めるのは、左側のナビゲーションの **Use GitLab** セクションです。
 
@@ -482,7 +482,8 @@ Technical Writers は、次の編集レベルを使用します。
 
 次の項目は **軽度の**編集を受けます。
 
-- 6 つの主要プロジェクト（GitLab、Omnibus、Charts、Operator、Runner、CLI）以外のドキュメント。
+- 8 つの主要プロジェクト（GitLab、Omnibus、Charts、Operator、Runner、CLI、GitLab Orbit、
+  Artifact Registry）以外のドキュメント。
 - 非推奨化と削除。
 - 他の Technical Writers が作成したマージリクエスト。ただし、マージリクエストが四半期目標の一部である場合、
   または作成者がより詳細な編集を依頼した場合を除きます。
@@ -541,7 +542,7 @@ Technical Writer 自身が必要な知識を持っているか、必要な検証
 1. マージリクエストが：
    - レビュー可能な状態に見える場合は、選んだ Technical Writer をレビュアーにアサインします。
    - レビュー可能な状態に見えない場合は、準備ができたら選んだ Technical Writer をメンションするよう、貢献者に依頼するコメントを残します。
-1. ボットのコメントを編集し、チームメンションをコード形式にします。例：``Hi `@gl-docsteam`! Please review this documentation merge request.`` これにより、他の Technical Writers がマージリクエストの参加者リストから外れ、通知を受け取らなくなります。To-Do 通知も更新され、ユーザー名がバッククォートで囲まれるため、To-Do リストから作業するチームメンバーは、マージリクエストが対応済みであることを見て判断できます。
+1. ボットのコメントを編集し、チームメンションをコード形式にします。例：``こんにちは `@gl-docsteam`！このドキュメントのマージリクエストをレビューしてください。`` これにより、他の Technical Writers がマージリクエストの参加者リストから外れ、通知を受け取らなくなります。To-Do 通知も更新され、ユーザー名がバッククォートで囲まれるため、To-Do リストから作業するチームメンバーは、マージリクエストが対応済みであることを見て判断できます。
 
 ### レビュアーの選定 {#selecting-a-reviewer}
 

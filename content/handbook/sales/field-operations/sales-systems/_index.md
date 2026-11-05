@@ -2,21 +2,19 @@
 title: "Enterprise Applications - CRM チーム"
 description: "Enterprise Applications CRM チームは、GitLab 内のビジネスプロセスをサポートする専門アプリケーションを実装し、サポートしています。"
 upstream_path: /handbook/sales/field-operations/sales-systems/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T16:40:09.181479+00:00"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:44:22.914996+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
 
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
-
-## <i class="fas fa-users" id="biz-tech-icons"></i> ミッション {#mission}
+## <i class="fas fa-users"></i> ミッション {#mission}
 
 CRM Systems は、SalesforceCRM および関連する Revenue Systems を主に扱い、日常的に使用するための信頼性が高く、スケーラブルで直感的なテクノロジープラットフォームを提供することによって、GitLab フィールド組織をサポートするために存在します。私たちの目標は、エンドユーザーに継続的に機能の形で価値を提供することです。私たちはまた、ビジネスとテクノロジーの間の結合組織として機能し、社内顧客から要件を収集し、技術仕様を設計し、ソリューションの提供を実行します。
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのチーム（組織図） {#our-team-org-chart}
+## <i class="fas fa-users"></i> 私たちのチーム（組織図） {#our-team-org-chart}
 
 - **Kiran Chinthapalli - Director, CRM Systems** GitLab ユーザー名： [kchinthapalli1](https://gitlab.com/kchinthapalli1) Slack ユーザー名： @Kiran Chinthapalli
 - **Thiru Subramanian - Manager, CRM Systems** GitLab ユーザー名： [Thirusubramanian](https://gitlab.com/Thirusubramanian) Slack ユーザー名： @Thiru Subramanian
@@ -146,7 +144,7 @@ Release チームはそれをリリースリストから削除し、コメント
 
 #### デプロイメントツール {#deployment-tool}
 
-すべての変更は Gearset を使用します。メタデータ変更を含むすべての Issue には、リンクされた Merge Request が含まれます。
+すべての変更は Gearset を使用します。メタデータ変更を含むすべての Issue には、リンクされた マージリクエスト が含まれます。
 
 #### 変更管理 {#change-control}
 
@@ -154,7 +152,7 @@ Release チームはそれをリリースリストから削除し、コメント
 
 #### コード変更の追加要件 {#code-changes-additional-requirements}
 
-Apex Code、Apex Trigger、または Visualforce Page を含む Merge Request は、デプロイメントを通過するために少なくとも 1 名の追加の Salesforce Engineer の承認が必要です。
+Apex Code、Apex Trigger、または Visualforce Page を含む マージリクエスト は、デプロイメントを通過するために少なくとも 1 名の追加の Salesforce Engineer の承認が必要です。
 
 詳細については、CONTRIBUTING ファイルをご覧ください。
 
@@ -168,7 +166,7 @@ Issue サインオフには **3 つのサインオフ**が必要です:
 
 #### Release Management サインオフ {#release-management-sign-off}
 
-Gearset から作成されたすべての Merge Request は、すべての Issue サインオフを受け取り、CAB 承認が提供され、未解決の競合が解決されたことを確認するために Salesforce Release Management から最終承認を受けます。
+Gearset から作成されたすべての マージリクエスト は、すべての Issue サインオフを受け取り、CAB 承認が提供され、未解決の競合が解決されたことを確認するために Salesforce Release Management から最終承認を受けます。
 
 > **注:** この最終的な Release Management ステップは、すべての「チェックリスト」項目が完了し、Issue がデプロイメントの準備ができていることを確認するための運用上のレビューです。
 
@@ -198,7 +196,7 @@ Gearset から作成されたすべての Merge Request は、すべての Issue
 
 マイルストーンを閉じる前に、以下のステップを実行します:
 
-1. すべての非クローズ Issue は削除するか、次のマイルストーンに押し出す必要があります。
+1. 未クローズの Issue はすべて現在のマイルストーンから外すか、次のマイルストーンに移す必要があります。
 1. SalesSystems ラベルを持つすべてのクローズされた Issue は、4 つのデプロイメントステージのいずれかで終わる必要があります。
 1. すべての Issue は、デプロイメントステージに関連する必要なアーティファクトと承認を持っている必要があります。
 1. 見つかった問題はすべて、クローズの遅延を避けるために、直ちに Sales Systems のスクラムマスターに提起する必要があります。
@@ -323,7 +321,7 @@ GitLab の[パスワードセキュリティのベストプラクティス](/han
 |[Test1](https://gitlab--test1.sandbox.my.salesforce.com)|https://gitlab--test1.sandbox.my.salesforce.com|Full| \<email>.test1 |本番前の組織。 リリース前の Systems Issue の UAT に使用されます。トラブルシューティングにも使用されます。|必要に応じて、最大月 1 回、最低四半期 1 回|[10/18/2025](https://gitlab.com/gitlab-com/sales-team/field-operations/systems/-/work_items/10219)|未定 Q4 2025|Central Sandbox 2|10000796|CustomerDot|
 |[GTLBUAT](https://gitlab--gtlbuat.sandbox.my.salesforce.com)|https://gitlab--gtlbuat.sandbox.my.salesforce.com|Full| \<email>.gtlbuat |Systems の UAT に使用されます。トラブルシューティングにも使用されます。Gearset パイプラインの最後から 2 番目の組織。|必要に応じて、最大月 1 回、最低四半期 1 回|[08/14/2025](https://gitlab.com/gitlab-com/sales-team/field-operations/systems/-/work_items/9633)|未定|Central Sandbox 1（つまり "Staging Sandbox"）|10000719|CustomerDot<br>Marketo<br>RingLead<br>PSQuote|
 
-## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちの運営方法 {#how-we-operate}
+## <i class="fas fa-users"></i> 私たちの運営方法 {#how-we-operate}
 
 ## 技術ドキュメント {#technical-documentation}
 
@@ -342,7 +340,7 @@ GitLab の[パスワードセキュリティのベストプラクティス](/han
 
 ## 私たちの働き方 {#how-we-work}
 
-- Sales Systems チームは、`GitLab.com` レベルで Milestones として追跡される 2 週間のスプリント/イテレーションで作業します。これは、私たちのビジネスパートナーの多くが運営する方法と Sale Systems チームを整合させますが、[GitLab が提供する](https://about.gitlab.com/solutions/agile-delivery/)ソリューションの 1 つも活用しています
+- Sales Systems チームは、`GitLab.com` レベルで マイルストーンとして追跡される 2 週間のスプリント/イテレーションで作業します。これは、私たちのビジネスパートナーの多くが運営する方法と Sale Systems チームを整合させますが、[GitLab が提供する](https://about.gitlab.com/solutions/agile-delivery/)ソリューションの 1 つも活用しています
 - Systems チームは、私たちのチームを [GitLab のバリュー](/handbook/company/operating-principles/#acknowledging-credit)と最も効果的に整合させると信じているため、マイルストーンの計画と実行において以下の原則を実践するよう努めています
   - [「少なく始めて、多く終わらせる」](/handbook/engineering/development/sec/security-platform/secrets-manager/#starting-new-work)
   - [「Issue のチャーンを減らす」](/handbook/engineering/devops/runner)
@@ -367,7 +365,7 @@ GitLab の[パスワードセキュリティのベストプラクティス](/han
       - ![Blocked](/images/sales/SSBlocked.png)現在のマイルストーンにあり、技術的な困難により停止している Systems チームメンバーに割り当てられた Issue。および/または、進めるための情報を Systems メンバーに提供することを保留中のビジネスオーナーに割り当てられた Issue
 
 4. 私たちのアジャイル[ボード](https://gitlab.com/groups/gitlab-com/-/boards/1117318?label_name[]=SalesSystems)で Issue のステータスをご確認ください。
-5. ビジネスフローに影響する重大な事態（例: 誰も見積もりを作成できない、アカウントが作成されない、Opportunity を Closed Won にできない）がある場合は、上記のプロセスに従い、Issue を `Sales-Support` Slack Channel で共有してください
+5. ビジネスフローに影響する重大な事態（例: 誰も見積もりを作成できない、アカウントが作成されない、Opportunity を Closed Won にできない）がある場合は、上記のプロセスに従い、Issue を `Sales-Support` Slack チャンネルで共有してください
 
 ## Sales Systems Issue のデプロイメント＆コンプライアンスステップ {#sales-systems-issue-deployment--compliance-steps}
 
@@ -486,7 +484,7 @@ Issue がラベル `entapps-RM deployed-via-metadata-api` で終わった場合�
 
 パッケージには、[マネージドかアンマネージド](https://developer.salesforce.com/docs/atlas.en-us.188.0.packagingGuide.meta/packagingGuide/packaging_about_packages.htm)の 2 つの種類があります。マネージドパッケージは署名されたアプリと同等で、自己完結型のソースがパッケージ内に封印されています。アンマネージドパッケージは署名されておらず、一般的に生のコードと構成を含んでいます。
 
-通常、ベンダーは [Salesforce AppExchange](https://appexchange.salesforce.com/)を介して、または彼らのリポジトリからの直接インストールを介してマネージドパッケージを提供します。アンマネージドパッケージは一般的にベンダーから提供され、手動でインストールする必要のある生のソースまたは構成を含む場合があります。注: GitLab に提供されたコードは、特定の対応が提供されない限り（例: ベンダーの基本機能を拡張するために契約する場合）、提供したベンダーの IP のままです。これらの追加の考慮事項のため、アンマネージドパッケージはインストールプロセスの一部として追加のステップを完了する必要があります。
+通常、ベンダーは [Salesforce AppExchange](https://appexchange.salesforce.com/)を介して、またはベンダーのリポジトリからの直接インストールを介してマネージドパッケージを提供します。アンマネージドパッケージは一般的にベンダーから提供され、手動でインストールする必要のある生のソースまたは構成を含む場合があります。注: GitLab に提供されたコードは、特定の対応が提供されない限り（例: ベンダーの基本機能を拡張するために契約する場合）、提供したベンダーの IP のままです。これらの追加の考慮事項のため、アンマネージドパッケージはインストールプロセスの一部として追加のステップを完了する必要があります。
 
 パッケージコードは、それを生み出したベンダーがサポートおよびトラブルシューティングする責任があります。機能で問題が発生した場合は、問題のベンダーに連絡してトラブルシューティングしてください。ベンダーが私たちの環境への変更を推奨する場合は、以下の 2 つのプロセスのいずれかを使用して、ベンダーが要求する変更を追跡するために Systems で Issue をログします。
 
@@ -600,7 +598,7 @@ Issue がラベル `entapps-RM deployed-via-metadata-api` で終わった場合�
 
 パイプラインは以下のアクションを実行します:
 
-- Merge Request に関連するブランチにコミットが行われるたびに、SFDX CLI を Runner にインストールし、STAGING に対して検証デプロイメントを実行するために sfdx force:source:deploy メソッドを実行します。
+- マージリクエスト に関連するブランチにコミットが行われるたびに、SFDX CLI を Runner にインストールし、STAGING に対して検証デプロイメントを実行するために sfdx force:source:deploy メソッドを実行します。
 - この検証デプロイメントは、新しいコミットソースブランチで見つかったすべての ApexClass、ApexTrigger、ApexComponent、ApexPage オブジェクトをコンパイルします。
 - コンパイルが成功した場合、すべてのユニットテストが合格していることを確認するために、SANDBOX 組織のすべてのユニットテストが実行されます。
 - コンパイルまたはユニットテストが失敗した場合、パイプラインはジョブの出力にエラーを個別の行項目として表示します。

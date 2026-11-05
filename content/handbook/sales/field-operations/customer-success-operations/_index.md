@@ -1,20 +1,19 @@
 ---
-title: "カスタマーサクセスオペレーション"
-description: "カスタマーサクセスオペレーションチームのハンドブックページです。私たちのミッション、戦略、責任、プロセスをカバーしています。"
+title: "Customer Success Operations"
+description: "Customer Success Operations チームのハンドブックページです。私たちのミッション、戦略、責任、プロセスをカバーしています。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
+translated_at: "2026-11-05T12:53:32.057904+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-04T20:19:30+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## ミッション
+## ミッション {#mission}
 
 GitLab と顧客が、整列したカスタマージャーニー全体で相互に戦略的な成果と収益目標に到達できるようにすることです。
 
-## 戦略
+## 戦略 {#strategy}
 
 主要な拡大および更新イニシアチブに対してアナリティクスとインサイトを活用した顧客戦略を開発・運用化し、Net ARR の増加につなげます。
 
@@ -23,11 +22,11 @@ GitLab と顧客が、整列したカスタマージャーニー全体で相互�
 1. 複数のチャネルとカスタマーライフサイクル全体でデジタルモーションを拡大する
 1. より予測可能でスケーラブルな収益モーションのために Renewal オペレーションモーションを立ち上げる
 1. スケーラブルなビジョン、KPI、運用プロセス、ドキュメンテーションをもたらす運用上の卓越性
-1. システムとツールを通じてセールスと CS の効果を高める
+1. システムとツールを通じて Sales と CS の効果を高める
 
-## 私たちの業務内容
+## 私たちの業務内容 {#what-we-do}
 
-カスタマーサクセスオペレーションは、カスタマーサクセス組織のために既存のプロセスを作成および更新します。CS Operations は以下を監督します。
+Customer Success Operations は、Customer Success 組織のために既存のプロセスを作成および更新します。CS Operations は以下を監督します。
 
 - システムの実装と保守
 - 運用レポート
@@ -45,15 +44,15 @@ CS Ops チームは、顧客プログラム、更新、および Gainsight の�
 </div>
 <br>
 
-## 連携先
+## 連携先 {#who-we-work-with}
 
-カスタマーサクセスオペレーションは、すべてのカスタマーサクセスチームにサポート、コンテンツ、データ分析を提供します。
+Customer Success Operations は、すべての Customer Success チームにサポート、コンテンツ、データ分析を提供します。
 
-## CS Ops リクエストプロセス
+## CS Ops リクエストプロセス {#cs-ops-request-process}
 
-![CS Ops Issue Flowchart](https://lucid.app/publicSegments/view/38bb1bd5-aeb1-4d7d-93cc-94b5e8788f12/image.png "CS Ops Issue Flowchart")
+![CS Ops Issue のフローチャート](https://lucid.app/publicSegments/view/38bb1bd5-aeb1-4d7d-93cc-94b5e8788f12/image.png "CS Ops Issue のフローチャート")
 
-### プロセスフロー
+### プロセスフロー {#process-flow}
 
 上のフローチャートに沿って、新規リクエストの受付と実行に関する手順です（定義はページの下部にあります）。割り当て後、Issue Assignee は各ラベルを通して Issue を移動します。
 
@@ -69,19 +68,19 @@ CS Ops チームは、顧客プログラム、更新、および Gainsight の�
 1. **CSOps::Awaiting Feedback** - Issue Assignee は Peer Reviewer を追加し、ラベルを追加します
 1. **CSOps::Blocked** - Issue Assignee は、Issue に取り組めない場合（技術的な問題または決定事項）にラベルを適用します
 1. **CSOps::Won't Do** - 作業を行わないという決定がなされた場合、Workstream Lead はこれを選択し、Issue をクローズします
-1. **CSOps::Backlog** - 有用かつ妥当だと合意したが、優先順位が低いか、または今後90日以内に達成できない場合、Workstream Lead がラベルを適用します
-1. **Issue closing** - Issue Assignee は以下を行います:
+1. **CSOps::Backlog** - 有用かつ妥当だと合意したが、優先順位が低いか、または今後 90 日以内に達成できない場合、Workstream Lead がラベルを適用します
+1. **Issue のクローズ** - Issue Assignee は以下を行います:
    1. ハンドブックの該当セクションが更新されていることを確認する
-   1. Gainsight の changelog に追加する
+   1. Gainsight の変更履歴 に追加する
    1. ピアレビュープロセスがフォローされていることを確認する
    1. 最後のステップとしてステークホルダー（Issue 内および可能であれば Slack やチームコールなど他の媒体を使用）とコミュニケーションを取り、リクエストの完了に関する認識とフォロースルーを確実にする
    1. Workstream Lead に作業の概要と次のステップとともに認識されていることを確認する
    1. Issue Assignee は `CSOps::Completed` ラベルを追加する
    1. Issue をクローズします！
 
-## CS Ops ボード、グループ、プロジェクト、ラベル
+## CS Ops ボード、グループ、プロジェクト、ラベル {#cs-ops-board-groups-projects-and-labels}
 
-### CS Operations ボード
+### CS Operations ボード {#cs-operations-board}
 
 CS Ops チームは、Issue と Issue ボードを使用してプロジェクトとタスクを追跡します。プロジェクトでヘルプが必要な場合は、Issue をオープンして GitLab リポジトリ内のどこにでも ~CSOps ラベルを追加してください。
 
@@ -89,32 +88,32 @@ CS Operations は、リポジトリ内の任意のグループまたはサブグ
 
 CS Ops Technical Writing については、[グローバル Issue ボード](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations/-/boards/4341765?label_name[]=CS%20Ops%20Technical%20Writing)を参照してください。
 
-### グループ
+### グループ {#groups}
 
-- セールスチームグループ内外の Issue を含む可能性のあるエピックには `gitlab.com` グループを使用します。
+- Sales Team グループ内外の Issue を含む可能性のあるエピックには `gitlab.com` グループを使用します。
 - Field Operations グループ内外の Issue を含む可能性のあるエピックには GitLab Sales Team グループを使用します。
 
-### プロジェクト
+### プロジェクト {#projects}
 
 [CS Operations プロジェクト](https://gitlab.com/gitlab-com/sales-team/field-operations/customer-success-operations)に Issue を作成します。
 
-### Issue の重み付け
+### Issue の重み付け {#issue-weighting}
 
-- Weight = 1: 0〜1時間の作業
-- Weight = 3: 1〜3時間の作業
-- Weight = 5: 3〜5時間の作業
-- Weight = 7: 5〜7時間の作業
+- Weight = 1: 0〜1 時間の作業
+- Weight = 3: 1〜3 時間の作業
+- Weight = 5: 3〜5 時間の作業
+- Weight = 7: 5〜7 時間の作業
 
-1日以上かかるものは、エピック/複数の Issue でキャプチャする必要があります。
+1 日を超える作業が必要なものは、エピック/複数の Issue でキャプチャする必要があります。
 
-### ラベル
+### ラベル {#labels}
 
 CS Ops 用の新しい Issue や MR を作成するときに使用するラベル:
 
 **チーム固有またはシステムラベル**
 
 - **CSOps** - すべての CS Operations 関連の Issue と MR を追跡および管理するために使用
-- **CS Programs** - デジタルプログラムチームがコンテンツリクエスト、改善、その他のデジタル顧客マーケティング手段を追跡および管理するため
+- **CS Programs** - Digital Programs チームがコンテンツリクエスト、改善、その他のデジタル顧客マーケティング手段を追跡および管理するため
 - **CS Product Usage Reporting** - カスタマーサクセスの製品利用データに関連する Issue
 - **CS Analytics** - カスタマーサクセスアナリティクスの Issue を追跡するために使用
 - **CS RenewalOps** - 顧客の更新プロセスと体験を改善するために Renewal Ops チーム向けの Issue を指定するラベル
@@ -152,13 +151,13 @@ CS Ops 用の新しい Issue や MR を作成するときに使用するラベ�
 - **CSOpsSlack-Questions** - リクエスト/Issue が Slack 経由で来たことを示します（#gainsight-users Slack チャンネルが最大の貢献者）
 - **CSOPs-Priority** - これは Top Priority Initiatives に紐づいたイニシアチブ/Issue 用です
 
-## ピアレビュー
+## ピアレビュー {#peer-review}
 
 ピアレビュープロセス（現在 Gainsight 関連の Issue 用）は、CS Ops チームメンバーが自分の作業をチームの別のメンバーにレビューしてもらうことを可能にします。
 
 Issue 所有者は、ピアレビュアーに Issue を完了する必要があるタイミングを伝えるなど、Issue がタイムリーに完了することを確認する責任があります。ピアレビュアーは、Issue 所有者から指定された期間内にレビューを完了する責任があります。
 
-- Gainsight 管理者によるピアレビューが**必須**となるのは、ルールまたはデータオブジェクトの変更、追加、または削除（例: 新しいルールやコネクタジョブの作成、オブジェクトからのフィールドの削除、複数のルールの1つへの統合）の場合です
+- Gainsight 管理者によるピアレビューが**必須**となるのは、ルールまたはデータオブジェクトの変更、追加、または削除（例: 新しいルールやコネクタジョブの作成、オブジェクトからのフィールドの削除、複数のルールの 1 つへの統合）の場合です
 - レポートやダッシュボードの変更については、ピアレビューを強く検討してください。
 
 セカンドオピニオンを持つことが有用だと感じる他の更新については、自由にピアレビューを依頼してください。
@@ -166,6 +165,6 @@ Issue 所有者は、ピアレビュアーに Issue を完了する必要があ�
 ピアレビュープロセスを開始するには:
 
 1. GitLab Issue の **Resolution** セクションで完了した作業の要約を提供します
-2. Issue ステータスを `CSOps::Awaiting Feedback` に変更します
+2. Issue ステータスを `CS Ops::Awaiting Feedback` に変更します
 3. ピアレビューを完了するチームメイトをタグ付けし、ピアレビューの準備ができていることを Issue にコメントします
 4. Issue 所有者は、Issue の完了に最終的な責任を持つため、引き続き担当者のままになります。
