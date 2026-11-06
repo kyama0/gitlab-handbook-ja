@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: "2FA 解除リクエストを処理する方法を詳述するワークフロー"
 upstream_path: /handbook/support/workflows/2fa-removal/
-upstream_sha: 81725dc1fe315a2e7d8a91637eb11f77d81b0ff7
-translated_at: "2026-09-23T21:05:43+00:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:04:26.963167+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-23T12:53:07-04:00"
+lastmod: "2026-11-05T17:34:41-05:00"
 ---
 
 ## 概要 {#overview}
@@ -20,7 +20,7 @@ lastmod: "2026-09-23T12:53:07-04:00"
 {{% alert type="note" %}}
 **2026 年 9 月 15 日より、Enterprise ユーザーの 2FA 解除リクエストは自動化されています。**[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たさないユーザーのリクエストは、[手動検証](/handbook/support/workflows/2fa-removal/#manual-verification-fallback)に切り替わります。告知については、[2FA 解除リクエストの変更](https://support.gitlab.com/hc/en-us/articles/30223695893660-2FA-Removal-Request-Changes)を参照してください。
 
-**トップレベルグループのオーナーが、ロックアウトされたユーザーに代わってチケットを提出する必要があります。GitLab Support は、ロックアウトされたユーザー本人が直接提出する 2FA 解除チケットを受け付けなくなりました。**これは、手動検証に切り替わる非 Enterprise ユーザーを含むすべてのユーザーに適用されます。その場合も、オーナーがユーザーに代わって提出する必要があり、異なるのは検証方法（自動検証か、手動のチャレンジ質問か）のみです。
+**トップレベルグループのオーナーが、ロックアウトされたユーザーに代わってチケットを提出する必要があります。GitLab Support は、ロックアウトされたユーザー本人が直接提出する 2FA 解除チケットを受け付けなくなりました。** これは、手動検証に切り替わる非 Enterprise ユーザーを含むすべてのユーザーに適用されます。その場合も、オーナーがユーザーに代わって提出する必要があり、異なるのは検証方法（自動検証か、手動のチャレンジ質問か）のみです。
 
 {{% /alert %}}
 
@@ -70,7 +70,7 @@ GitLab.com ユーザーが 2FA リセットの対象となるためには、以�
 ## 2FA の無効化：オーナーが開始する自動ワークフロー {#disable-2fa-automated-owner-initiated-workflow}
 
 {{% alert type="note" %}}
-**このワークフローは Enterprise ユーザーに対してのみ自動化されています。**対象ユーザーが[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たす場合、Zendesk は Support の介入なしで以下のチェックを実行します。非 Enterprise ユーザーを対象とするリクエストは自動化では解決できず、必ず[手動検証](/handbook/support/workflows/2fa-removal/#manual-verification-fallback)に切り替わります。
+**このワークフローは Enterprise ユーザーに対してのみ自動化されています。** 対象ユーザーが[サポートにおける Enterprise ユーザーの定義](/handbook/support/workflows/gitlab-com_overview/#enterprise-users)を満たす場合、Zendesk は Support の介入なしで以下のチェックを実行します。非 Enterprise ユーザーを対象とするリクエストは自動化では解決できず、必ず[手動検証](/handbook/support/workflows/2fa-removal/#manual-verification-fallback)に切り替わります。
 {{% /alert %}}
 
 トップレベルグループのオーナーが、対象ユーザーのメールアドレスと、オーナー自身のアカウントから生成した Support PIN を使ってリクエストを提出します。
@@ -228,7 +228,7 @@ Email One-Time Passwords (Email OTP) 開発ガイドの
       - `json.username` の値を確認したいユーザー名に置き換えます。
 1. 必要に応じて検索ウィンドウのルックバック期間を延ばします。
 
-<https://docs.gitlab.com/development/email_one_time_passwords/#password-api-authentication-failures> も参照してください。
+その他のログクエリについては、[Email OTP の追加検索](https://docs.gitlab.com/development/email_one_time_passwords/#additional-searches)を参照してください。
 
 #### Email OTP の遅延に対するサポート介入 {#support-intervention-for-delaying-email-otp}
 

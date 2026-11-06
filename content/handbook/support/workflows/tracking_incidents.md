@@ -4,18 +4,18 @@ category: GitLab.com
 subcategory: Triaging
 description: インシデントによる顧客への影響を追跡するうえで役立つさまざまな作業の進め方。
 upstream_path: /handbook/support/workflows/tracking_incidents/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T04:02:00Z"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:14:41.180845+00:00"
 translator: claude
 stale: false
-lastmod: "2025-02-04T16:44:03+00:00"
+lastmod: "2026-11-05T16:06:54-05:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 インシデントは、通常よりも多くのユーザーが Zendesk チケットを起票する事態につながりがちです。インシデントによる影響を測定し、その後のフォローアップに備えて影響を受けたユーザーを追跡するためには、特定のインシデントに関連するすべてのチケットを素早く特定できるよう、Zendesk マクロとタグを作成することが必要です。
 
-## Zendesk マクロの作成
+## Zendesk マクロの作成 {#create-zendesk-macro}
 
 すでに多数のチケットが寄せられている場合でも、これからチケットが寄せられると見込まれる場合でも、特定のインシデントに関連するチケットを追跡するためのマクロを作成する必要があります。マクロを作成する前に、使用する文言が当該インシデントの責任者によって承認されていることを確認してください。誰が責任者になるかはインシデントの種類によって異なります。本番インシデントであれば Incident Manager、セキュリティ関連のインシデントであれば Security が責任者となります。
 
@@ -25,7 +25,7 @@ lastmod: "2025-02-04T16:44:03+00:00"
     - マクロの YAML フォーマット例は [README](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/macros/-/tree/master#some-examples) を参照するか、`incident` ディレクトリ内の過去マクロを参照できます。
     - [tag:](#naming-a-tag) と `description:` のヘッダーを必ず含めてください。
 
-1. 新しいマクロのマージリクエストを作成します。進行中のインシデントで使われる可能性が高いため、`#support_operations` と `#support_leadership` に承認の早期化を依頼しても構いません。
+1. 新しいマクロのマージリクエストを作成します。進行中のインシデントで使われる可能性が高いため、`#customer_support_systems` と `#support_leadership` に承認の早期化を依頼しても構いません。
 
 ## タグの命名 {#naming-a-tag}
 
@@ -37,6 +37,6 @@ lastmod: "2025-02-04T16:44:03+00:00"
 - [このインシデント](https://gitlab.com/gitlab-com/gl-security/security-communications/communications/-/issues/302) に対する `sec_comms_302`
 - [このインシデント](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/operations/-/issues/444) に対する `tas_incident_444`
 
-## 関連項目
+## 関連項目 {#see-also}
 
-- [How To Perform CMOC Duties](/handbook/support/workflows/cmoc_workflows/) — CMOC として本番インシデントを扱う方法。
+- [CMOC 業務の進め方](/handbook/support/workflows/cmoc_workflows/) — CMOC として本番インシデントを扱う方法。

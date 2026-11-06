@@ -3,14 +3,14 @@ title: Kibana の使い方
 description: "Kibana とは何か、検索方法、結果の解釈方法、そこから特定の情報を取得するためのヒントとコツについての情報。"
 category: Infrastructure for troubleshooting
 upstream_path: /handbook/support/workflows/kibana/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-translated_at: "2026-07-05T07:22:17+09:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:13:06.548515+00:00"
 translator: codex
 stale: false
-lastmod: 2026-06-25T15:51:50+08:00
+lastmod: "2026-11-05T16:04:58-05:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 このドキュメントでは、Kibana とは何か、検索方法、結果の解釈方法、特定の情報を取得するためのヒントとコツを提供します。
 
@@ -20,13 +20,13 @@ lastmod: 2026-06-25T15:51:50+08:00
 
 ステージング (`gstg`) のような非本番環境では https://nonprod-log.gitlab.net/ を使用してください。
 
->**Note:** Kibana はデフォルトで UTC タイムゾーンになっています。30 日より古いログは保持されません。古いログへのアクセスがあれば役立ったチケットに取り組んでいる場合は、`Support::SaaS::Log retention period reached` マクロでフラグを立ててください（これは追跡目的のみの内部マクロです）。
+>**注:** Kibana はデフォルトで UTC タイムゾーンになっています。30 日より古いログは保持されません。古いログへのアクセスがあれば役立ったチケットに取り組んでいる場合は、`Support::SaaS::Log retention period reached` マクロでフラグを立ててください（これは追跡目的のみの内部マクロです）。
 
-### パラメータ
+### パラメータ {#parameters}
 
 Kibana で *どこを* 検索するかを知ることは、適切な結果を得るために最も重要です。検索しているアプリケーション (GitLab.com) のエリアは Kibana では `Index` として知られています。検索に使われるデフォルトのインデックスは `pubsub-rails-inf-gprd-*` ですが、`(change)` ボタンをクリックすることで変更できます:
 
-![Changing search index](/images/support/kibana_index-selection.jpg)
+![検索インデックスの変更](/images/support/kibana_index-selection.jpg)
 
 インデックスはほとんどの場合、私たちの一般的な [ログ構造](https://docs.gitlab.com/administration/logs/) と密接に対応しています。その他のよく使われるインデックスは以下のとおりです:
 
@@ -38,11 +38,11 @@ Kibana で *どこを* 検索するかを知ることは、適切な結果を得
 
 インデックスとともに、追跡しようとしている特定のエラーやイベントが *いつ* 発生したかを知ることも重要であり、GitLab.com の Kibana ログは 30 日間保持されることを覚えておくことが重要です。Kibana では検索結果に対して相対時刻と絶対時刻の範囲を選択でき、これは日付範囲を操作することで変更できます:
 
-![Changing the date range](/images/support/kibana_changing-dates.jpg)
+![日付範囲の変更](/images/support/kibana_changing-dates.jpg)
 
-### フィールドとフィルタ
+### フィールドとフィルタ {#fields-and-filters}
 
-**Note:** 2022 年 3 月時点で、Kibana の検索には `Filters` を使用することが推奨されています。一般的な検索ボックスを使用すると `X of Y Shards Failed` の形式でいくつかのエラーが発生する可能性があるため、推奨されません。[Infra Issue](https://gitlab.com/gitlab-com/gl-infra/reliability/-/issues/15207) を参照してください。
+**注:** 2022 年 3 月時点で、Kibana の検索には `Filters` を使用することが推奨されています。一般的な検索ボックスを使用すると `X of Y Shards Failed` の形式でいくつかのエラーが発生する可能性があるため、推奨されません。[インフラの Issue](https://gitlab.com/gitlab-com/gl-infra/reliability/-/issues/15207) を参照してください。
 
 各ログエントリは多数の `Fields` で構成されており、エントリに関する具体的な情報がそこに表示されます。検索結果にどのフィールドを適用し、どのようにフィルタリングするかを知ることは、*どこ* と *いつ* を検索するかを知ることと同じくらい重要です。最も重要なフィールドは以下のとおりです:
 
@@ -54,35 +54,35 @@ Kibana で *どこを* 検索するかを知ることは、適切な結果を得
 
 利用可能なすべてのフィールドは左側のメニューに表示されており、それぞれの上にホバーして `add` ボタンをクリックすることで検索結果に追加できます。
 
-![Viewing the list of fields](/images/support/kibana_available-fields.jpg)
+![フィールド一覧の表示](/images/support/kibana_available-fields.jpg)
 
 特定のフィールドでフィルタリングしないと、検索クエリで多数のログエントリが返された場合に特定のものを見つけるのが困難になります。
 
 例えば、過去 15 分以内に GitLab.com ユーザー `tristan` によって生成された `404` ステータスコードを返したログイベントを見つけようとしているとします。`pubsub-rails-inf-gprd-*` インデックスで `json.username : tristan` を検索することから始めます。その時間範囲内で検索し、左側のサイドバーで `json.status` フィールドの隣にある `add` をクリックすると、次のような結果が得られます:
 
-![Unfiltered results for a specific username](/images/support/kibana_unfiltered-results.jpg)
+![特定のユーザー名のフィルター未適用の結果](/images/support/kibana_unfiltered-results.jpg)
 
-結果の大部分は `200` を返すエントリで、これらは私たちが探しているものの範囲外です。`404` が返された結果を検索するには、検索バーの下にある `+ Add Filter` をクリックし、`json.status is 404` の positive フィルタを設定すると、まさに私たちが探していた以下の結果が得られます。
+結果の大部分は `200` を返すエントリで、これらは私たちが探しているものの範囲外です。`404` が返された結果を検索するには、検索バーの下にある `+ Add Filter` をクリックし、`json.status is 404` の 一致条件のフィルターを設定すると、まさに私たちが探していた以下の結果が得られます。
 
-![Filtered results for a specific username](/images/support/kibana_filtered-results.jpg)
+![特定のユーザー名のフィルター適用後の結果](/images/support/kibana_filtered-results.jpg)
 
-### IP ブロックの原因の特定
+### IP ブロックの原因の特定 {#identify-cause-of-ip-blocks}
 
 [こちら](/handbook/support/workflows/ip-blocks/) に IP ブロックに関連するエラーについて Kibana を検索する役立つヒントがあります。
 
-### ログの特定
+### ログの特定 {#log-identification}
 
-何を探せばいいかわからない？調査しているバグ／アクションを再現するためにセルフマネージドインスタンスの利用を検討してください。これにより、Issue が GitLab.com 固有のものかどうかを確認しつつ、Kibana で検索する際の参照に簡単にアクセス可能なログも提供できます。
+何を探せばいいかわからない？調査しているバグ／アクションを再現するためにセルフマネージドインスタンスの利用を検討してください。これにより、問題が GitLab.com 固有のものかどうかを確認しつつ、Kibana で検索する際の参照に簡単にアクセス可能なログも提供できます。
 
-セルフマネージドインスタンスの設定を希望する Support エンジニアは、利用可能な（会社が提供する）ホスティングオプションのリストについて、私たちの [Sandbox Cloud ページ](/handbook/company/infrastructure-standards/realms/sandbox/) をレビューすべきです。
+セルフマネージドインスタンスの設定を希望する Support Engineer は、利用可能な（会社が提供する）ホスティングオプションのリストについて、私たちの [Sandbox Cloud ページ](/handbook/company/infrastructure-standards/realms/sandbox/) をレビューすべきです。
 
-### ログの共有
+### ログの共有 {#sharing-logs}
 
 ログ検索の現在の状態を共有するには、Elastic の [ログ共有](https://www.elastic.co/docs/explore-analyze/report-and-share#share-a-direct-link) ドキュメントに従ってください。URL を直接コピーすると、他のユーザーが使用しようとしたときに検索の読み込みに失敗します。エンコードされているため、検索パラメータは URL に含まれません。
 
-### ダッシュボード
+### ダッシュボード {#dashboards}
 
-パターンの特定に役立つ可視化を作成するために設計された、利用可能なダッシュボードがいくつかあります。製品の特定の領域を絞り込んだり、特定の Issue やバグを特定したりするのにも役立ちます。GitLab チームメンバーであれば誰でも誰でも使えるダッシュボードを作成できますが、いくつかのサポート固有のダッシュボードがあります:
+パターンの特定に役立つ可視化を作成するために設計された、利用可能なダッシュボードがいくつかあります。製品の特定の領域を絞り込んだり、特定の問題やバグを特定したりするのにも役立ちます。GitLab チームメンバーであれば、誰でも利用できるダッシュボードを作成できますが、いくつかのサポート固有のダッシュボードがあります:
 
 - Correlation Dashboard
 - Rate Limit & Requests Dashboard
@@ -93,55 +93,55 @@ Kibana で `Analytics > Dashboard` の下からダッシュボードにアクセ
 
 自分のダッシュボードの作成に興味がある場合、[ダッシュボード作成についての Elastic のガイド](https://www.elastic.co/guide/en/kibana/current/create-a-dashboard-of-panels-with-web-server-data.html) を読むことを検討してください。より広く役立ちそうなものを作成した場合、他のサポートチームメンバーが見つけやすくなるよう、ダッシュボードに `Support` タグを追加することを検討してください。
 
-ダッシュボードを使用するには、必ず `View` モードになっていることを確認してください。view モードでは値を入力でき、ビジュアルがそれに応じて更新されますが、ダッシュボードには保存されません。キャプチャしたスナップショットを共有する必要がある場合は `Share > Get Links` を使用します。
+ダッシュボードを使用するには、必ず `View` モードになっていることを確認してください。表示モードでは値を入力でき、ビジュアルがそれに応じて更新されますが、ダッシュボードには保存されません。キャプチャしたスナップショットを共有する必要がある場合は `Share > Get Links` を使用します。
 
-既存のダッシュボードを `編集` する前に、自分のコピーを作成し、それに応じてラベルを付けるよう `クローン` することを検討してください。
+既存のダッシュボードを `editing` する前に、自分のコピーを作成し、それに応じてラベルを付けるよう `cloning` することを検討してください。
 
 #### Correlation Dashboard {#correlation-dashboard}
 
-トラブルシューティングに関連する Correlation ID が見つかった場合、correlation ダッシュボードを利用して、各個別のインデックスを検索することなく、インデックス全体の関連するすべてのコンポーネントを素早く表示できます。ダッシュボードを表示したら、`json.correlation_id` フィルタをクリックして、見つけた相関 ID を入力するだけです。それから web、workhorse、sidekiq、gitaly インデックスを検索します。
+トラブルシューティングに関連する Correlation ID が見つかった場合、Correlation Dashboard を利用して、各個別のインデックスを検索することなく、インデックス全体の関連するすべてのコンポーネントを素早く表示できます。ダッシュボードを表示したら、`json.correlation_id` フィルタをクリックして、見つけた相関 ID を入力するだけです。それから web、workhorse、sidekiq、gitaly インデックスを検索します。
 
-#### Rate Limit & Requests Dashboard
+#### Rate Limit & Requests Dashboard {#rate-limit--requests-dashboard}
 
 このダッシュボードを使用してユーザー名、IP、パス、または Namespace でレコードを素早くフィルタリングできます。これは、ユーザーまたは IP がレート制限の対象になっているかを判断しようとしており、使用パターンを発見および可視化する必要がある場合に役立ちます。
 
-#### Integrations Dashboard
+#### Integrations Dashboard {#integrations-dashboard}
 
 Namespace 全体にわたる特定の連携に関連するエラーを追跡するのに役立ちます。
 
-#### Errors & Exceptions Dashboard
+#### Errors & Exceptions Dashboard {#errors--exceptions-dashboard}
 
 このダッシュボードは、Namespace またはパス／プロジェクト全体にわたって特定の HTTP ステータスを取得し、クラスで絞り込むのに使用できます。これは Namespace 全体、または GitLab.com 全体にわたるエラーパターンを理解するのに役立ちます。
 
-## ヒントとコツ
+## ヒントとコツ {#tips-and-tricks}
 
 このセクションでは、特定のフィールドを検索しフィルタリングすることで、Kibana で非常に具体的な情報を見つけられる方法を詳述します。各ヒントには、参照用に例で使用されたグループ、サブグループ、またはプロジェクトへのリンクが含まれます。
 
-### Runner 登録トークンのリセット
+### Runner 登録トークンのリセット {#runner-registration-token-reset}
 
 例のグループ: [gitlab-bronze](https://gitlab.com/gitlab-bronze)
 
 GitLab Runner 登録トークンがグループまたはプロジェクトに対してリセットされたかを確認し、どのユーザーがいつリセットしたかを確認できます。この例では、Runner 登録トークンがグループレベルの `gitlab-bronze` でリセットされました。ログエントリを見つけるには:
 
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. グループのパスについて `json.path` に positive フィルタを追加します。この例では単に `gitlab-bronze` です。
-1. `json.action` に `reset_registration_token` の positive フィルタを追加します。
+1. グループのパスについて `json.path` に 一致条件のフィルターを追加します。この例では単に `gitlab-bronze` です。
+1. `json.action` に `reset_registration_token` の 一致条件のフィルターを追加します。
 1. 結果を観察します。何かあれば、結果の `json.username` フィールドにリセットを引き起こしたユーザーのユーザー名が含まれます。
 
-### アクセストークンのアクティビティ
+### アクセストークンのアクティビティ {#access-token-activity}
 
 アクセストークン (Group、Project、Personal) が実行しているアクティビティの種類を判断できます。ログエントリを見つけるには:
 
 1. [API](https://docs.gitlab.com/api/personal_access_tokens/) または UI を使用して、関心のあるアクセストークンの `id` を見つけます。
 1. `pubsub-rails-inf-gprd-*` で、結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. ステップ 1 の `id` について `json.token_id` に positive フィルタを追加します。
+1. ステップ 1 の `id` について `json.token_id` に 一致条件のフィルターを追加します。
 1. 関心のある可能性がある他のフィルタを追加します:
     - `json.username`
     - `json.path`
     - `json.method`
     - `json.token_type`
 
-### 削除されたグループ／サブグループ／プロジェクト
+### 削除されたグループ／サブグループ／プロジェクト {#deleted-groupsubgroupproject}
 
 - 例のグループ: [gitlab-silver](https://gitlab.com/gitlab-silver/)
 - 例のプロジェクト: [gitlab-silver/test-project-to-delete](https://gitlab.com/gitlab-silver/test-project-to-delete)
@@ -149,8 +149,8 @@ GitLab Runner 登録トークンがグループまたはプロジェクトに対
 Kibana を使用して、誰が GitLab.com 上のグループ、サブグループ、またはプロジェクトの削除を実行したかを判断できます。ログエントリを見つけるには:
 
 1. `pubsub-rails-inf-gprd-*` で、結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. プロジェクトのパス（該当する場合はグループとサブグループを含む）について `json.path` に positive フィルタを追加します。この例では `gitlab-silver/test-project-to-delete` です。
-1. `json.method` に `DELETE` の positive フィルタを追加します。
+1. プロジェクトのパス（該当する場合はグループとサブグループを含む）について `json.path` に 一致条件のフィルターを追加します。この例では `gitlab-silver/test-project-to-delete` です。
+1. `json.method` に `DELETE` の 一致条件のフィルターを追加します。
 1. 結果を観察します。何かあれば、結果の `json.username` フィールドに削除を引き起こしたユーザーのユーザー名が含まれます。
 プロジェクトまたはグループが最初に保留中の削除になる際、ログエントリは `json.params.key: [_method, authenticity_token, namespace_id, id]` を持ちます。これに対し、ユーザーが [削除を強制](https://docs.gitlab.com/user/project/working_with_projects/#delete-a-project) する場合は、ログエントリはプロジェクトの場合 `json.params.key: [_method, authenticity_token, permanently_delete, namespace_id, id]` のようになり、グループの場合は `json.params.key: [_method, authenticity_token, permanently_remove, id]` のようになります。
 
@@ -159,9 +159,9 @@ Kibana を使用して、誰が GitLab.com 上のグループ、サブグルー�
 1. `json.message` を "was deleted" でフィルタリングします。
 1. 2 つ目のフィルタとして `json.message` に `path/group` を設定します。
 
-### 表示された CI/CD 変数
+### 表示された CI/CD 変数 {#viewed-cicd-variables}
 
-CI/CD 変数に対する *変更* は [グループイベントの監査ログ](https://docs.gitlab.com/user/compliance/audit_events/#group-audit-events) には特に記録されませんが、Kibana を使って variables ページを表示した可能性のあるユーザーを確認する方法があります。問題の変数を変更するには、variables ページの表示が必要です。これは、対象ページを表示した人が必ずしも変数に変更を加えたことを示すものではありませんが、変更を加えた可能性のあるユーザーのリストを絞り込むのに役立つはずです。（これらの変更を記録してほしい場合、[コメントを集めるための Issue が開かれています](https://gitlab.com/gitlab-org/gitlab/-/issues/8070)）。
+CI/CD 変数に対する *変更* は [グループイベントの監査ログ](https://docs.gitlab.com/user/compliance/audit_events/#group-audit-events) には特に記録されませんが、Kibana を使って variables ページを表示した可能性のあるユーザーを確認する方法があります。問題の変数を変更するには、variables ページの表示が必要です。これは、対象ページを表示した人が必ずしも変数に変更を加えたことを示すものでは*ありません*が、変更を加えた可能性のあるユーザーのリストを絞り込むのに役立つはずです。（これらの変更を記録してほしい場合、[コメントを集めるための Issue が開かれています](https://gitlab.com/gitlab-org/gitlab/-/issues/8070)）。
 
 1. `json.path` を `is` に設定し、関連する対象プロジェクトの完全パスに続けて `/-/variables` を入力します。例えば `tanuki-rules` という名前のプロジェクトがあれば `tanuki-rules/-/variables` と入力します。
 1. Kibana の日付を変更が行われたと思われる範囲に設定します。
@@ -169,11 +169,11 @@ CI/CD 変数に対する *変更* は [グループイベントの監査ログ](
 1. `json.graphql.operation_name` を `is` `getProjectVariables` で検索することもできます。
 1. 一般的に、`json.action` フィールドが `update` を返し `json.controller` が `Projects::VariablesController` を返す結果は、変数が更新されたことを意味する可能性が高いです。
 
-### Let's Encrypt 証明書の問題を見つける
+### Let's Encrypt 証明書の問題を見つける {#find-problems-with-lets-encrypt-certificates}
 
 場合によっては、1 つ以上の理由で Let's Encrypt 証明書の発行が失敗することがあります。正確な理由を判断するために、Kibana でこれを調べることができます。
 
-1. `json.message` に "Failed to obtain Let's Encrypt certificate" の positive フィルタを設定します。
+1. `json.message` に "Failed to obtain Let's Encrypt certificate" の 一致条件のフィルターを設定します。
 1. 検索バーで、GitLab Pages のドメイン名を入力します。例: `json.pages_domain: "sll-error.shushlin.dev"`
 1. `json.acme_error.detail` でフィルタするか見つけます。これは関連するエラーメッセージを表示します。この場合、エラー "No valid IP addresses found for sll-error.shushlin.dev" が見えます。
 
@@ -185,70 +185,70 @@ CI/CD 変数に対する *変更* は [グループイベントの監査ログ](
 
 アカウントが自己削除された場合、これらのフィルタで検索を試みます:
 
-1. ユーザーのユーザー名を取得している場合は、`json.username` に positive フィルタを追加します。
-1. `json.controller` に `RegistrationsController` の positive フィルタを追加します。
+1. ユーザーのユーザー名を取得している場合は、`json.username` に 一致条件のフィルターを追加します。
+1. `json.controller` に `RegistrationsController` の 一致条件のフィルターを追加します。
 
 アカウントが管理者によって削除された場合、これらのフィルタで検索を試みます:
 
-1. ユーザーのユーザー名について `json.params.value` に positive フィルタを追加します。
-1. `json.method` に `DELETE` の positive フィルタを追加します。
+1. ユーザーのユーザー名について `json.params.value` に 一致条件のフィルターを追加します。
+1. `json.method` に `DELETE` の 一致条件のフィルターを追加します。
 
 結果を観察します。フィルタリングされたアカウントが指定された期間内に削除された場合、結果は 1 つだけのはずです。
 
 [未確認のアカウント](https://docs.gitlab.com/user/gitlab_com/#confirmation-settings) を削除する cron ジョブによってアカウントが削除されたと疑う場合は、これらのフィルタで検索を試みます:
 
 1. インデックスを `pubsub-sidekiq-inf-gprd*` に変更します。
-1. ユーザーのユーザー名について `json.meta.user` に positive フィルタを追加します。（あるいは、ユーザーのユーザー ID を取得している場合は `json.args.keyword` を使用できます）。
-1. `json.class` に `DeleteUserWorker` の positive フィルタを追加します。
+1. ユーザーのユーザー名について `json.meta.user` に 一致条件のフィルターを追加します。（あるいは、ユーザーのユーザー ID を取得している場合は `json.args.keyword` を使用できます）。
+1. `json.class` に `DeleteUserWorker` の 一致条件のフィルターを追加します。
 
-### 二要素認証の無効化
+### 二要素認証の無効化 {#disable-two-factor-authentication}
 
 - [検索へのクイックリンク](https://log.gprd.gitlab.net/goto/5598ea40-a651-11ed-9f43-e3784d7fe3ca)
 
 Kibana を使用して、どの管理者が GitLab.com アカウントの 2FA を無効化したかを確認できます。ログエントリを表示するには:
 
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. 2FA を無効化された `username` について `json.location` に positive フィルタを追加します。
-1. `json.action` に `disable_two_factor` の positive フィルタを追加します。
+1. 2FA を無効化された `username` について `json.location` に 一致条件のフィルターを追加します。
+1. `json.action` に `disable_two_factor` の 一致条件のフィルターを追加します。
 1. 読みやすくするため、`json.location` と `json.username` フィールドのみを表示します。
 1. 結果を観察します。
 
-### SSO 強制の有効化／無効化
+### SSO 強制の有効化／無効化 {#enabledisable-sso-enforcement}
 
 Kibana を使用して、GitLab.com 上のグループで SSO 強制が有効化または無効化されたか、いつ、どのユーザーによってかを確認できます。
 
 - 例のグループ: [gitlab-silver](https://gitlab.com/gitlab-silver/)
 
-#### SSO 強制の有効化
+#### SSO 強制の有効化 {#enable-sso-enforcement}
 
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. `json.controller` に `Groups::SamlProvidersController` の positive フィルタを追加します。
-1. `json.action` に `update` の positive フィルタを追加します。
-1. `json.method` に `PATCH` の positive フィルタを追加します。
-1. グループのパスについて `json.path` に positive フィルタを追加します。この例では `gitlab-silver` です。
+1. `json.controller` に `Groups::SamlProvidersController` の 一致条件のフィルターを追加します。
+1. `json.action` に `update` の 一致条件のフィルターを追加します。
+1. `json.method` に `PATCH` の 一致条件のフィルターを追加します。
+1. グループのパスについて `json.path` に 一致条件のフィルターを追加します。この例では `gitlab-silver` です。
 1. 結果がある場合、`json.params` フィールドを観察します。`\"enforced_sso\"=>\"1\"` が存在する場合、そのエントリは `json.username` フィールドのユーザーが SSO 強制を有効化した時に記録されたものです。
 
-#### SSO 強制の無効化
+#### SSO 強制の無効化 {#disable-sso-enforcement}
 
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. `json.controller` に `Groups::SamlProvidersController` の positive フィルタを追加します。
-1. `json.action` に `update` の positive フィルタを追加します。
-1. `json.method` に `PATCH` の positive フィルタを追加します。
-1. グループのパスについて `json.path` に positive フィルタを追加します。この例では `gitlab-silver` です。
+1. `json.controller` に `Groups::SamlProvidersController` の 一致条件のフィルターを追加します。
+1. `json.action` に `update` の 一致条件のフィルターを追加します。
+1. `json.method` に `PATCH` の 一致条件のフィルターを追加します。
+1. グループのパスについて `json.path` に 一致条件のフィルターを追加します。この例では `gitlab-silver` です。
 1. 結果がある場合、`json.params` フィールドを観察します。`\"enforced_sso\"=>\"0\"` が存在する場合、そのエントリは `json.username` フィールドのユーザーが SSO 強制を無効化した時に記録されたものです。
 
-#### SAML ログイン
+#### SAML ログイン {#saml-log-in}
 
 SAML ログインの問題を調査するには:
 
 `pubsub-rails-inf-gprd-*` ログで:
 
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. [SAML グループのドキュメント](https://docs.gitlab.com/user/group/saml_sso/troubleshooting/#search-rails-logs-for-a-saml-sign-in) で推奨されている positive フィルタを追加します。
+1. [SAML グループのドキュメント](https://docs.gitlab.com/user/group/saml_sso/troubleshooting/#search-rails-logs-for-a-saml-sign-in) で推奨されている 一致条件のフィルターを追加します。
 
 SAML 応答をデコードし、選択したフィルタに対応する結果を観察すると、欠落または誤設定された属性があるかを確認できます。
 
-#### SAML 応答
+#### SAML 応答 {#saml-response}
 
 特定のユーザーの SAML 応答を取得するには:
 
@@ -258,9 +258,9 @@ SAML 応答をデコードし、選択したフィルタに対応する結果を
 `pubsub-rails-inf-gprd-*` ログで:
 
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. グループのパスについて `json.saml_response.audiences` に positive フィルタを追加します。この例では `gitlab-silver` です。
-1. `json.payload_type` に `saml_response` の positive フィルタを追加します。
-1. 取得する `saml_response` の対象ユーザーのメールアドレスについて、`json.saml_response.attributes.email` に positive フィルタを追加します。この例では `user@domain.com` です
+1. グループのパスについて `json.saml_response.audiences` に 一致条件のフィルターを追加します。この例では `gitlab-silver` です。
+1. `json.payload_type` に `saml_response` の 一致条件のフィルターを追加します。
+1. 取得する `saml_response` の対象ユーザーのメールアドレスについて、`json.saml_response.attributes.email` に 一致条件のフィルターを追加します。この例では `user@domain.com` です
 1. `json.saml_response.attributes` の値をレビューします
 
 例: 1
@@ -298,17 +298,17 @@ SAML 応答をデコードし、選択したフィルタに対応する結果を
 
 - [検索へのクイックリンク](https://log.gprd.gitlab.net/app/r/s/hdVqu)
 
-#### SCIM プロビジョニングとデプロビジョニング
+#### SCIM プロビジョニングとデプロビジョニング {#scim-provisioning-and-de-provisioning}
 
 SCIM の問題を調査するには:
 
 `pubsub-rails-inf-gprd-*` ログで:
 
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. `json.path` に positive フィルタを追加します:
+1. `json.path` に 一致条件のフィルターを追加します:
    - グループ全体の SCIM リクエストを見る場合は `/api/scim/v2/groups/<group name>`。このパスはグループの SAML 設定にも見つかります。
    - 特定のユーザーの SCIM リクエストを見る場合は `/api/scim/v2/groups/<group name>/Users/<user's SCIM identifier>`。
-1. `json.methhod` に `POST` または `PATCH` の positive フィルタを追加します（それぞれ初回プロビジョニングまたは更新／デプロビジョニング）。
+1. `json.methhod` に `POST` または `PATCH` の 一致条件のフィルターを追加します（それぞれ初回プロビジョニングまたは更新／デプロビジョニング）。
 1. 特定のアクションをさらに識別するため `json.params.value` にフィルタを追加します:
    - `json.params.value` = `Add` は初回プロビジョニング、またはアカウント詳細の変更を示します
    - `json.params.value` = `Replace` は SCIM デプロビジョニングを示します。ユーザーが IdP App/グループから削除された時に発生します
@@ -322,28 +322,28 @@ SCIM プロビジョニングされたアカウントが削除された場合:
 
 ユーザーが未確認のメールにより削除されたかを調査するには、[削除されたユーザー](#deleted-user) の手順に従ってください。
 
-### グループまたはサブグループからのユーザー削除の検索
+### グループまたはサブグループからのユーザー削除の検索 {#searching-for-remove-user-from-group-or-subgroup}
 
 保持期間内（30 日）に発生した場合、Kibana を使用して、ユーザーがグループまたはサブグループから削除されたか、いつ、誰によってかを判断できます。
 
 `pubsub-rails-inf-gprd-*` で以下のデータポイントでログエントリを見つけるには:
 
-#### ユーザー削除の確認 (DELETE)
+#### ユーザー削除の確認 (DELETE) {#confirm-the-remove-user-delete}
 
-1. `json.meta.caller_id` に `Groups::GroupMembersController#destroy` の positive フィルタを追加します
-1. UI でユーザー削除アクションを実行した人物のユーザー ID について `json.meta.user_id` に positive フィルタを追加します
-1. `json.method` に `DELETE` の positive フィルタを追加します
+1. `json.meta.caller_id` に `Groups::GroupMembersController#destroy` の 一致条件のフィルターを追加します
+1. UI でユーザー削除アクションを実行した人物のユーザー ID について `json.meta.user_id` に 一致条件のフィルターを追加します
+1. `json.method` に `DELETE` の 一致条件のフィルターを追加します
 
-#### ユーザー削除リクエストに関するさらなる詳細の取得
+#### ユーザー削除リクエストに関するさらなる詳細の取得 {#retrieve-further-details-about-the-remove-user-request}
 
 以下のフィルタは、削除されたユーザーと、対象ユーザーがどのグループまたはサブグループから削除されたかを識別するのに役立ちます
 
-1. `json.custom_message` に `Membership destroyed` の positive フィルタを追加します
-1. `json.meta.caller_id` に `Groups::GroupMembersController#destroy` の positive フィルタを追加します
+1. `json.custom_message` に `Membership destroyed` の 一致条件のフィルターを追加します
+1. `json.meta.caller_id` に `Groups::GroupMembersController#destroy` の 一致条件のフィルターを追加します
 1. ユーザー削除アクションを実行したユーザーのユーザー ID `json.meta.user_id` またはユーザー名 `json.meta.user` でフィルタを追加します
 1. ターゲットユーザー ID `json.details.target_id` でフィルタを追加します
 
-### 削除されたコンテナレジストリタグの検索
+### 削除されたコンテナレジストリタグの検索 {#searching-for-deleted-container-registry-tags}
 
 削除が過去 30 日以内に発生した場合、Kibana を使用して、コンテナレジストリタグが削除されたか、いつ、誰がトリガーしたかを判断できます。
 
@@ -351,10 +351,10 @@ SCIM プロビジョニングされたアカウントが削除された場合:
 
 1. 対象のコンテナレジストリのリンクを取得します。（例: <https://gitlab.example.com/group/project/container_registry/><ContainerRepository>)
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. `json.graphql.variables` に `*ContainerRepository/<regitsry id>.*` の positive フィルタを追加します。
-1. `json.graphql.operation_name` に `destroyContainerRepositoryTags` の positive フィルタを追加します。
+1. `json.graphql.variables` に `*ContainerRepository/<regitsry id>.*` の 一致条件のフィルターを追加します。
+1. `json.graphql.operation_name` に `destroyContainerRepositoryTags` の 一致条件のフィルターを追加します。
 
-### 500 レベルエラーの Kibana 検索
+### 500 レベルエラーの Kibana 検索 {#searching-kibana-for-500-level-errors}
 
 [14.7 以降、Correlation ID が提供されます](https://gitlab.com/gitlab-org/gitlab/-/issues/34113)。インターフェース使用時の 500 エラーページに表示されます。お客様にこれを提供してもらい、Kibana で `json.correlation_id` でフィルタリングできます。
 
@@ -369,7 +369,7 @@ SCIM プロビジョニングされたアカウントが削除された場合:
 
 GitLab.com でのエラー検索と検出について詳しくは、[500 エラーのワークフロー](/handbook/support/workflows/500_errors/) を参照してください。
 
-### IP 範囲によるフィルタ
+### IP 範囲によるフィルタ {#filter-by-ip-range}
 
 お客様は時々、Kubernetes クラスタやその他 GitLab にアクセスする必要のある外部サーバーといった、お客様のリソースの IP 範囲を提供することがあります。Elasticsearch Query DSL を使用して範囲を検索できます。
 
@@ -392,11 +392,11 @@ GitLab.com でのエラー検索と検出について詳しくは、[500 エラ�
 
 範囲によっては、この操作はコストがかかる可能性があるため、まず日付範囲を絞り込むことをお勧めします。
 
-### インポートエラー
+### インポートエラー {#import-errors}
 
 ほとんどのタイムアウト関連のインポートは、Issue やマージリクエストがほとんどまたはまったくない部分的なインポートになります。比較的小さな差（10% 以下）がある場合、それらの特定の Issue やマージリクエストにエラーがある可能性が最も高いです。
 
-エラーがあるたびに、エクスポートが [互換性のある GitLab のバージョン](https://docs.gitlab.com/user/project/settings/import_export/#version-history) から発生したことを確認します。
+エラーがあるたびに、エクスポートが [互換性のある GitLab のバージョン](https://docs.gitlab.com/user/project/settings/import_export/#compatibility) から発生したことを確認します。
 
 Kibana でインポートエラーを検索するためのいくつかのヒントを以下に示します:
 
@@ -414,9 +414,9 @@ Kibana でインポートエラーを検索するためのいくつかのヒン�
 
 エラーが見つからずインポートが部分的である場合、おそらくタイムアウトの問題です。
 
-### エクスポートエラー
+### エクスポートエラー {#export-errors}
 
-エクスポートエラーは、ユーザーが UI または [この API エンドポイント](https://docs.gitlab.com/api/project_import_export/#schedule-an-export) 経由でエクスポートを試みる時に発生する可能性があります。API のパラメータにより、事前署名された AWS S3 URL のような外部 URL へのエクスポートが可能です。通常、エクスポートプロセスは以下で構成されます:
+エクスポートエラーは、ユーザーが UI または [プロジェクトエクスポート API エンドポイント](https://docs.gitlab.com/api/project_import_export/#export-a-project) 経由でエクスポートを試みる時に発生する可能性があります。API のパラメータにより、事前署名された AWS S3 URL のような外部 URL へのエクスポートが可能です。通常、エクスポートプロセスは以下で構成されます:
 
 - エクスポートが開始されたことを確認する初期 `202` 応答をクライアントに返す
 - プロジェクトサイズに応じて、エクスポートの処理に数秒から数分かかる
@@ -465,61 +465,61 @@ XML 応答は、プロジェクトが最大許容サイズを超過している�
 </Error>
 ```
 
-### Container Cleanup Worker のログを見つける
+### Container Cleanup Worker のログを見つける {#finding-container-cleanup-worker-logs}
 
 コンテナレジストリのクリーンアップログは、レジストリクリーンアップのステータスを確認するのに使用できます。これらのログには通常とは異なるスキームがあり、ほとんどの `json.meta` タグを使用しません。
 
 Kibana でこれらのログを見つけるには:
 
 1. `pubsub-sidekiq-inf-gprd*` インデックスを使用します。
-1. `json.meta.feature_category: container_registry` の positive フィルタを追加します。
-1. 数値プロジェクト ID について `json.extra.container_expiration_policies_cleanup_container_repository_worker.project_id` に positive フィルタを追加します。
-1. 数値コンテナリポジトリ ID について `json.extra.container_expiration_policies_cleanup_container_repository_worker.container_repository_id` に positive フィルタを追加します。
+1. `json.meta.feature_category: container_registry` の 一致条件のフィルターを追加します。
+1. 数値プロジェクト ID について `json.extra.container_expiration_policies_cleanup_container_repository_worker.project_id` に 一致条件のフィルターを追加します。
+1. 数値コンテナリポジトリ ID について `json.extra.container_expiration_policies_cleanup_container_repository_worker.container_repository_id` に 一致条件のフィルターを追加します。
 
 `json.extra.container_expiration_policies_cleanup_container_repository_worker` 配下のその他のフィールドには、レジストリクリーンアップ操作に関する関連統計が含まれます。
 
-#### 既知のインポート Issue
+#### 既知のインポート Issue {#known-import-issues}
 
 - **インポートしたプロジェクトのサイズが、その元と異なる**
   - その理由については [このコメント](https://gitlab.com/gitlab-org/gitlab/-/issues/27742#note_215721494) を参照してください。アーティファクトはリポジトリサイズの一部であるため、それらが存在するかどうかは大きな違いを生む可能性があります。
 - **リポジトリのコミットが 0**。
   - [15348](https://gitlab.com/gitlab-org/gitlab/issues/15348) を参照してください。
 
-### 購入エラー
+### 購入エラー {#purchase-errors}
 
-Kibana を使用して、購入試行に関連する特定のエラーを検索できます。購入は GitLab.com または [CustomersDot](https://customers.gitlab.com/customers/sign_in) のいずれかで行えるため、お客様がどのシステムを使用して購入していたかを判断することが重要です。その後、システム固有の以下のヒントを使用してください。**Note:** チケットの送信者が購入したお客様ではない場合があります。
+Kibana を使用して、購入試行に関連する特定のエラーを検索できます。購入は GitLab.com または [CustomersDot](https://customers.gitlab.com/customers/sign_in) のいずれかで行えるため、お客様がどのシステムを使用して購入していたかを判断することが重要です。その後、システム固有の以下のヒントを使用してください。**注:** チケットの送信者が購入したお客様ではない場合があります。
 
-#### GitLab.com 購入エラー
+#### GitLab.com 購入エラー {#gitlabcom-purchase-errors}
 
-**Note**: 購入に使用されたアカウントの **GitLab ユーザー名** が必要です。場合によってはユーザーがチケットフィールドの `GitLab username` 値を埋めているか、GitLab Super App の User Lookup でチケット依頼者の GitLab ユーザー名を確認できます。
+**注**: 購入に使用されたアカウントの **GitLab ユーザー名** が必要です。場合によってはユーザーがチケットフィールドの `GitLab username` 値を埋めているか、GitLab Super App の User Lookup でチケット依頼者の GitLab ユーザー名を確認できます。
 
 1. [Kibana](https://log.gprd.gitlab.net/) に移動します
 1. `pubsub-rails-inf-gprd-*` インデックスパターン (GitLab.com ログ) が選択されていることを確認します。
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. 購入に使用されたアカウントのユーザー名について `json.user.username` に positive フィルタを追加します。
-1. `json.tags.feature_category` に `purchase` の positive フィルタを追加します。
+1. 購入に使用されたアカウントのユーザー名について `json.user.username` に 一致条件のフィルターを追加します。
+1. `json.tags.feature_category` に `purchase` の 一致条件のフィルターを追加します。
 
 面倒？ `https://log.gprd.gitlab.net/goto/6aac4580-9d9b-11ed-85ed-e7557b0a598c` に行き、`json.user.username` の値を更新してください。
 
 汎用的なエラーメッセージに遭遇した場合、より具体的なエラーのために [Kibana](#customersdot-purchase-errors) または [GCP](/handbook/support/license-and-renewals/workflows/customersdot/troubleshoot_errors_while_making_purchases#getting-error-messages-from-gcp-logs-explorer) で CustomersDot 購入エラーログを確認してみてください。
 
-**Tip:** ユーザーの購入試行の詳細を見るには、`https://log.gprd.gitlab.net/goto/45bb89c0-6ccc-11ed-9f43-e3784d7fe3ca` に行き、`json.username` の値を更新してください。
+**ヒント:** ユーザーの購入試行の詳細を見るには、`https://log.gprd.gitlab.net/goto/45bb89c0-6ccc-11ed-9f43-e3784d7fe3ca` に行き、`json.username` の値を更新してください。
 
 #### CustomersDot 購入エラー {#customersdot-purchase-errors}
 
-**Note**: 購入に使用されたアカウントの **CustomersDot 顧客 ID** が必要です。顧客 ID の取得方法については、[このセクション](/handbook/support/license-and-renewals/workflows/customersdot/troubleshoot_errors_while_making_purchases#getting-error-message-from-sentry) の `Step 1` を参照してください。
+**注**: 購入に使用されたアカウントの **CustomersDot 顧客 ID** が必要です。顧客 ID の取得方法については、[このセクション](/handbook/support/license-and-renewals/workflows/customersdot/troubleshoot_errors_while_making_purchases#getting-error-message-from-sentry) の `Step 1` を参照してください。
 
 1. [Kibana](https://log.gprd.gitlab.net/) に移動します
 1. `pubsub-rails-inf-prdsub-*` インデックスパターン (CustomersDot ログ) が選択されていることを確認します。
 1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
-1. 購入に使用されたアカウントのユーザー名について `json.customer_id` に positive フィルタを追加します。
-1. `json.severity` に `ERROR` の positive フィルタを追加します。
+1. 購入に使用されたアカウントのユーザー名について `json.customer_id` に 一致条件のフィルターを追加します。
+1. `json.severity` に `ERROR` の 一致条件のフィルターを追加します。
 
 面倒？ `https://log.gprd.gitlab.net/goto/9c28ba80-9d9b-11ed-9f43-e3784d7fe3ca` に行き、`json.customer_id` の値を更新してください。
 
 Namespace の詳細がある場合、**Namespace ID** を取得し、`https://log.gprd.gitlab.net/goto/b598dfe0-9d9b-11ed-9f43-e3784d7fe3ca` に行き、`json.params.gl_namespace_id` の値を更新してください。
 
-### リポジトリでのユーザーアクションの確認
+### リポジトリでのユーザーアクションの確認 {#check-user-actions-on-a-repository}
 
 `pubsub-rails-inf-gprd-*` インデックスを見ると、ユーザーが最近リポジトリをクローン／プッシュ (HTTPS で)、またはダウンロードしたかを判断できます。`json.username`、`json.path` (リポジトリ)、および `json.action` でフィルタリングして特定のイベントを見つけることができます:
 
@@ -534,9 +534,9 @@ SSH 経由の `git` アクティビティを検索するには、代わりに `p
 
 上記リストのリンクを使用して、関心のあるプロジェクトの `json.path` または `json.gl_project_path` を埋めることができます。
 
-### Webhook 関連のイベント
+### Webhook 関連のイベント {#webhook-related-events}
 
-GitLab.com の [Webhook イベント](https://docs.gitlab.com/user/project/integrations/webhooks/) は Kibana で見つけることができます。グループまたはプロジェクトが [強制レート制限](https://docs.gitlab.com/user/gitlab_com/#webhooks) を超えた場合の特定も含みます。レート制限はサブスクリプションプランと **加えて** サブスクリプション内のシート数に応じて変わります。
+GitLab.com の [Webhook イベント](https://docs.gitlab.com/user/project/integrations/webhooks/) は Kibana で見つけることができます。グループまたはプロジェクトが [強制レート制限](https://docs.gitlab.com/user/gitlab_com/#webhooks) を超えた場合の特定も含みます。レート制限はサブスクリプションプラン*および*サブスクリプション内のシート数に応じて変わります。
 
 いくつかの提案を示します:
 
@@ -544,11 +544,11 @@ GitLab.com の [Webhook イベント](https://docs.gitlab.com/user/project/integ
 - `pubsub-rails-inf-gprd-*` (Rails) を `json.message : "Webhook rate limit exceeded"` および `json.meta.project : "path/to/project"` フィルタとともに使用して、レート制限により送信に失敗した webhook を特定します。
   - `json.meta.related_class : "GroupHook"` または `json.meta.related_class : "ProjectHook"` を使用して、グループフックとプロジェクトフックの間でフィルタリングできます。
 
-### Service Desk メールの検索
+### Service Desk メールの検索 {#searching-for-service-desk-emails}
 
 Kibana で `json.to_address` を検索する際、これがメールの `to:` 行に表示されるアドレスであることを確認してください。たとえこれが GitLab プロジェクトのメールアドレスにエイリアスされていても同様です。プロジェクトのメールアドレスを検索し、Service Desk メールがそのエイリアス（例えば `support@domain.ext`）に送信された場合、検索には表示されません。
 
-### ID 検証 SMS ログの検索
+### ID 検証 SMS ログの検索 {#searching-for-identity-verification-sms-logs}
 
 ID 検証 SMS ログを検索する際は、`pubsub-rails-inf-gprd-*` インデックスを使用し、以下のフィルタを適用します:
   

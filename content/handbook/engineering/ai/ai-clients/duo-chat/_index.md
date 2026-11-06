@@ -2,14 +2,14 @@
 title: Duo Chat グループ
 description: "Duo Chat グループは、Web と IDE の各サーフェスで提供する、GitLab プラットフォームへの AI 自然言語インターフェースを構築し、DevSecOps の生産性向上に取り組みます。"
 upstream_path: /handbook/engineering/ai/ai-clients/duo-chat/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:50:55+09:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+lastmod: "2026-11-05T15:40:43+01:00"
+translated_at: "2026-11-06T21:02:53.377822+00:00"
 translator: codex
 stale: false
 ---
 
-## 🚀 ビジョン
+## 🚀 ビジョン {#-vision}
 
 Duo Chat グループは、他のプロダクトグループや幅広いコミュニティによる機能の統合を支援し、GitLab Duo Chat をプラットフォームとして開発することに注力しています。GitLab の製品カテゴリとしての Duo Chat について詳しくは、[製品カテゴリの方向性](https://about.gitlab.com/direction/ai-powered/duo_chat/)ページをご覧ください。
 
@@ -17,13 +17,13 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 
 ---
 
-## 👨‍💻 チームメンバー
+## 👨‍💻 チームメンバー {#-team-members}
 
 {{< group-by-slugs donaldcook enrique-alcantara tomasbulva rfrederico evakadlecova kaveh_nejad_gitlab john-slaughter >}}
 
 ---
 
-## 🤝 安定したカウンターパート
+## 🤝 安定したカウンターパート {#-stable-counterparts}
 
 私たちの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)は以下のとおりです。
 
@@ -31,18 +31,17 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 
 ---
 
-## 💬 連絡先
+## 💬 連絡先 {#-where-to-find-us}
 
-### Slack
+### Slack {#slack}
 
 - **Duo Chat ラウンジ：** [#duo-chat-lounge](https://gitlab.enterprise.slack.com/archives/C06LWENL58F)
-- **Duo Chat に関する一般的な質問：** [#g_duo_chat](https://gitlab.slack.com/archives/g_duo_chat)
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と連絡
-- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期専用
+- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.enterprise.slack.com/archives/C0BFY0ZRR7W) — チームの同期専用
 
 ---
 
-## 🏠 機能別チーム
+## 🏠 機能別チーム {#-functional-teams}
 
 | チーム | 範囲 | チャンネル |
 |---|---|---|
@@ -51,9 +50,9 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 
 ---
 
-## 📚 働き方
+## 📚 働き方 {#-how-we-work}
 
-### ホストシステム
+### ホストシステム {#host-systems}
 
 ホストシステムとは、Duo Chat が統合されるプラットフォームです。現在存在するすべてのホストシステムを以下に示します。
 
@@ -64,7 +63,7 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 | Visual Studio | Duo Chat を統合する Visual Studio 拡張機能 | [gitlab-org/editor-extensions/gitlab-visual-studio-extension](https://gitlab.com/gitlab-org/editor-extensions/gitlab-visual-studio-extension) |
 | JetBrains | Duo Chat 用の JetBrains IDE プラグイン | [gitlab-org/editor-extensions/gitlab-jetbrains-plugin](https://gitlab.com/gitlab-org/editor-extensions/gitlab-jetbrains-plugin) |
 
-### Duo Chat 統合のオーナーシップとメンテナンス
+### Duo Chat 統合のオーナーシップとメンテナンス {#ownership-and-maintenance-of-duo-chat-integrations}
 
 ここでは Duo Chat 統合のオーナーシップとメンテナンスの責任を定義し、Duo Chat チームと Developer Clients チームの役割を詳しく説明します。
 
@@ -78,17 +77,17 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 | JetBrains - Chat Webview（Web ページ） | Duo Chat グループ（サポート：Developer Clients） |
 | JetBrains - Chat ビジネスロジック | Developer Clients グループ |
 
-#### 責任
+#### 責任 {#responsibilities}
 
 1. 単純なコンポーネントの更新：UI コンポーネントグループ（Duo Chat グループ）が担当します。
 2. 複雑な機能の統合：UI コンポーネントグループ（Duo Chat グループ）が統合を主導し、ダミーデータを使用して拡張機能との通信用スタブを作成します。Developer Clients グループは IDE プラグインへの統合作業を支援します。
 3. 破壊的変更：すべての破壊的変更を早い段階で伝える必要があります。IDE 拡張機能のワークフローへの影響を避けるため、可能な限り新機能を任意で利用できるようにすることを検討してください。
 
-#### ツール
+#### ツール {#tools}
 
 - [GitLab Duo ホストステータスページ](https://jannik_lehmann.gitlab.io/gitlab-ui-hosts-status-page/)：各ホストシステムが使用する GitLab UI と Duo UI のバージョンを追跡します。
 
-### 計画プロセス
+### 計画プロセス {#planning-process}
 
 このフローチャートは、Duo Chat チームの計画プロセスを示しています。
 
@@ -108,7 +107,7 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 
 これらの質問のいずれかに対する答えが「いいえ」の場合、その Issue は `~workflow::refinement` に戻す必要があります。
 
-### Issue の見積もり
+### Issue の見積もり {#issue-estimation}
 
 タスクの見積もりには、次のシステムを使用します。
 
@@ -120,15 +119,15 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 - **8 - 特大** 時間と調査を要し、おそらく 1 つのマイルストーン内で完了するには複数のエンジニアが必要です。この規模では、より小さな Issue やタスクに分割する方法を検討する必要があります。
 - **13+ - 大きすぎる** この Issue は複雑すぎる、大きすぎる、または定義が不十分です。このウェイトのものはすべて `~workflow::refinement` に戻して詳細化し、より管理しやすい単位に分割する必要があります。
 
-### ステータス更新
+### ステータス更新 {#status-updates}
 
 ステークホルダーに情報を提供し、非同期コラボレーションを支援するため、**現在のマイルストーン**に含まれる成果物のステータス更新はすべて、以下の標準テンプレートを使用して、成果物の Issue に直接報告する必要があります。
 
-#### 更新を投稿するタイミング
+#### 更新を投稿するタイミング {#when-to-post-an-update}
 
 作業の開始、リスクの特定、スコープ変更の検討、マイルストーン中の定期的なチェックインなど、ステータスに意味のある変化があるたびに更新を投稿します。少なくとも、毎週 1 回は更新を投稿してください。
 
-#### テンプレート
+#### テンプレート {#template}
 
 Issue にコメントとして更新を投稿するときは、次のテンプレートを使用します。
 
@@ -151,9 +150,9 @@ Issue にコメントとして更新を投稿するときは、次のテンプ�
 
 ---
 
-## 🔗 その他の便利なリンク
+## 🔗 その他の便利なリンク {#-other-useful-links}
 
-### 📝 ダッシュボード（社内限定）
+### 📝 ダッシュボード（社内限定） {#-dashboards-internal-only}
 
 - [Duo Chat xAU、リテンション、イベント数、応答時間](https://10az.online.tableau.com/#/site/gitlab/views/AiFeatures/Focusview?:iid=3)
 - [スラッシュコマンドの使用状況とユーザー数](https://10az.online.tableau.com/#/site/gitlab/views/SlashUseDuo/SlashUseDashboard/3e8fd0ba-f45b-4dd0-b649-84db3636553d/8db30355-e2c0-4636-9c43-5429bb952a41?:iid=4)
@@ -164,7 +163,7 @@ Issue にコメントとして更新を投稿するときは、次のテンプ�
 - [Chat QA 評価](https://gitlab.com/gitlab-org/ai-powered/ai-framework/qa-evaluation)
 - [AI Gateway レポート](https://10az.online.tableau.com/#/site/gitlab/views/AIGatewayReporting/Overview/61d07174-d973-4552-a582-48be74efea8c/f463620d-a659-4cfb-9700-952a5c103fa8?:iid=1)
 
-### サポート
+### サポート {#support}
 
 - [Duo Chat Runbook](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/duo-chat/README.md?ref_type=heads)
 - [Duo Chat サポートプロジェクト](https://gitlab.com/gitlab-org/ai-powered/duo-chat/support)

@@ -5,9 +5,9 @@ aliases:
   - /handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/
   - /handbook/engineering/ai/ai-clients/duo-cli/
 upstream_path: /handbook/engineering/ai/ai-clients/developer-clients/duo-cli/
-upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
-lastmod: "2026-11-02T11:19:09Z"
-translated_at: "2026-11-02T20:58:49.462247+00:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+lastmod: "2026-11-05T15:40:43+01:00"
+translated_at: "2026-11-06T21:01:41.807053+00:00"
 translator: codex
 stale: false
 ---
@@ -38,7 +38,7 @@ Duo CLI 機能チームは、[Developer Clients グループ](/handbook/engineer
 
 ## 💬 Slack {#-slack}
 
-- **チームチャンネル：** [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
+- **チームチャンネル：** [#f_duo_cli](https://gitlab.enterprise.slack.com/archives/C09GLR7UK0D)
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
 
 ---
@@ -59,7 +59,7 @@ Duo CLI チームは、AI を活用したコマンドラインインターフェ
 
 ### コミュニケーションチャンネル {#communication-channels}
 
-- **Slack**： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
+- **Slack**： [#f_duo_cli](https://gitlab.enterprise.slack.com/archives/C09GLR7UK0D)
 - または、Duo CLI から [`/feedback`](https://docs.gitlab.com/user/gitlab_duo_cli/use/#slash-commands) コマンドを使用するだけで GitLab Issue を作成できます
 
 ### Issue のラベル {#issues-labels}

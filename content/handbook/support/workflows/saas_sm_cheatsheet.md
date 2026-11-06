@@ -3,30 +3,30 @@ title: SaaS / セルフマネージド / Dedicated トラブルシューティ�
 category: Support Team
 description: "GitLab の各プラットフォームタイプにおける、さまざまな問題のトラブルシューティングのヒント"
 upstream_path: /handbook/support/workflows/saas_sm_cheatsheet/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T02:00:00Z"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:13:06.548515+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-06T21:06:06+00:00"
+lastmod: "2026-11-05T15:54:57-05:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
-このページの目的は、サポートエンジニアが任意の GitLab プラットフォーム上のさまざまな問題に対するトラブルシューティングのヒントを必要としたときに使用できる、単一の参照ポイントを提供することです。これにより、各サポートエンジニアが、関係する GitLab プラットフォームに関係なく、サポートチケットをより容易に解決できるようにすることを目指します。
+このページの目的は、Support Engineer が任意の GitLab プラットフォーム上のさまざまな問題に対するトラブルシューティングのヒントを必要としたときに使用できる、単一の参照ポイントを提供することです。これにより、各 Support Engineer が、関係する GitLab プラットフォームに関係なく、サポートチケットをより容易に解決できるようにすることを目指します。
 
-## このページの使い方
+## このページの使い方 {#how-to-use-this-page}
 
 ご自身の関心のあるトピックを見つけ、対象となる GitLab プラットフォーム（セルフマネージド、SaaS、または Dedicated）に該当するテーブル行内の指示に従ってください。
 
-### ログとパフォーマンス
+### ログとパフォーマンス {#logs-and-performance}
 
 |      |       |
 |:----:| ----- |
 |セルフマネージド| [GitlabSOS](https://gitlab.com/gitlab-com/support/toolbox/gitlabsos) は、潜在的な問題をさらに調査するためにお客様のインスタンスからすべてのログを収集する優れた手段です。<br/>GitLabSOS と同様に、お客様がソースまたは omnibus インストールではなく Kubernetes を利用している場合は [KubeSOS](https://gitlab.com/gitlab-com/support/toolbox/kubesos) を使用してください。<br/>[Fast-stats](https://gitlab.com/gitlab-com/support/toolbox/fast-stats) は GitLab ログから、また GitLab ログ間でパフォーマンス分析を比較する優れた手段です。<br/>[Green-hat](https://gitlab.com/gitlab-com/support/toolbox/greenhat) は実験的な SOS およびログパーサーです。[GitLab Log Analysis](https://gitlab.com/gitlab-org/foundations/import-and-integrate/gitlab-logs-analysis): この実験的プロジェクトは、Kibana、Filebeat、Elasticsearch、Logstash を使って GitLab ログを分析するための環境を構築します。起動時にダッシュボードが自動でインポートされ、ログ分析の準備が整います。|
 |DotCom|[Kibana](https://log.gprd.gitlab.net/) は Elasticsearch クラスターでインデックス化されたコンテンツの上に可視化機能を提供し、Web ベースのクエリで情報を見つけることができます。このツールでどのような情報が引き出せるかを理解するには、[ヒントとテクニック](/handbook/support/workflows/kibana/#tips-and-tricks)を確認してください。<br/>[Sentry](https://sentry.gitlab.net/gitlab/gitlabcom/) は、たとえば Ruby コード関連のエラーなど、さまざまなアプリケーションまたは環境にまたがるエラーの調査に役立ちます。Sentry での検索は通常、Correlation ID を使用して行います。<br/>[Grafana](/handbook/engineering/monitoring/#main-monitoring-dashboards) は GitLab.com のインフラメトリクス収集に使用されています。|
-|Dedicated|[GitLab Dedicated Logs](/handbook/support/workflows/dedicated_logs/) ワークフローには、Opensearch を使ってログを表示する方法に関する情報があります。[Observability and Monitoring](/handbook/support/workflows/dedicated_instance_health/) ワークフローには、Grafana を使ってパフォーマンスの問題を診断する方法に関する情報があります。|
+|Dedicated|[GitLab Dedicated のログ](/handbook/support/workflows/dedicated_logs/) ワークフローには、Opensearch を使ってログを表示する方法に関する情報があります。[オブザーバビリティとモニタリング](/handbook/support/workflows/dedicated_instance_health/) ワークフローには、Grafana を使ってパフォーマンスの問題を診断する方法に関する情報があります。|
 
-### 構成
+### 構成 {#configuration}
 
 |      |       |
 |:----:| ----- |
@@ -34,23 +34,23 @@ lastmod: "2026-04-06T21:06:06+00:00"
 |DotCom| [GitLab.com の構成](https://docs.gitlab.com/user/gitlab_com/)はインフラチームによって管理されており、個々のお客様のニーズに合わせて変更することはできません。|
 |Dedicated|[GitLab Dedicated](https://docs.gitlab.com/subscriptions/gitlab_dedicated/) のお客様は、[Switchboard](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/) および **Admin Area** を経由してテナントを構成できます。GitLab サポートチームのメンバーは、[こちらの手順](/handbook/support/workflows/dedicated_switchboard/#accessing-switchboard)に従って Okta 経由で [Switchboard](dedicated_switchboard.md) にアクセスできます。一部の[構成変更](/handbook/support/workflows/dedicated/#configuration-changes)は、[Request for Help Issue](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team) を経由して行う必要があります。|
 
-### アーキテクチャ
+### アーキテクチャ {#architecture}
 
 |      |       |
 |:----:| ----- |
 |セルフマネージド| お客様に推奨している[リファレンスアーキテクチャ](https://docs.gitlab.com/administration/reference_architectures/)とそのさまざまなバリエーションをご確認ください。|
 |DotCom| [GitLab.com のアーキテクチャ](/handbook/engineering/infrastructure-platforms/production/architecture/#infra-current-archi-diagram)はインフラチームによって管理されており、個々のお客様のニーズに合わせて変更することはできません。|
-|Dedicated|[GitLab Dedicated](https://docs.gitlab.com/subscriptions/gitlab_dedicated/) は、[GitLab Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated) によって AWS 上で管理されている、完全に分離されたシングルテナントの SaaS サービスです。GitLab Dedicated テナントは、高可用性を有効にした GitLab の[Cloud Native Hybrid リファレンスアーキテクチャ](https://docs.gitlab.com/administration/reference_architectures/#cloud-native-hybrid)を[使用](https://docs.gitlab.com/subscriptions/gitlab_dedicated/data_residency_and_high_availability/#availability-and-scalability)しています。[リファレンスアーキテクチャからの変更点](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/architecture/Architecture/#changes-from-reference-architectures)の一覧をご確認ください。|
+|Dedicated|[GitLab Dedicated](https://docs.gitlab.com/subscriptions/gitlab_dedicated/) は、[GitLab Dedicated Group](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/)によって AWS 上で管理されている、完全に分離されたシングルテナントの SaaS サービスです。GitLab Dedicated テナントは、[高可用性を有効にした](https://docs.gitlab.com/administration/dedicated/create_instance/data_residency_high_availability/) GitLab の[Cloud Native Hybrid リファレンスアーキテクチャ](https://docs.gitlab.com/administration/reference_architectures/#cloud-native-hybrid)を使用しています。[リファレンスアーキテクチャからの変更点](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/architecture/Architecture/#changes-from-reference-architectures)の一覧をご確認ください。|
 
-### 認証
+### 認証 {#auth}
 
 |      |       |
 |:----:| ----- |
 |セルフマネージド| セルフマネージドの管理者は、希望する[認証プロバイダーを構成](https://docs.gitlab.com/administration/auth/)する必要があり、構成は gitlab.rb で直接行います。このファイルに対する設定変更は、変更を反映するために `gitlab-ctl reconfigure` の実行が必要です。|
 |DotCom| お客様は **Group > Settings > SAML SSO** に移動して、[グループ向けの SAML SSO を直接構成](https://docs.gitlab.com/user/group/saml_sso/)できます。|
-|Dedicated| SAML が[サポートされています](https://docs.gitlab.com/administration/dedicated/configure_instance/saml/)。調査は[ログを検索](/handbook/support/workflows/dedicated_logs)するところから始めてください。エスカレーションするには、[GitLab Dedicated チームに Issue を起票](/handbook/support/workflows/dedicated/#filing-issues)してください。|
+|Dedicated| [GitLab Dedicated 向け SAML SSO](https://docs.gitlab.com/administration/dedicated/configure_instance/authentication/saml/)がサポートされています。調査は[ログを検索](/handbook/support/workflows/dedicated_logs/)するところから始めてください。エスカレーションするには、[GitLab Dedicated チームに Issue を起票](/handbook/support/workflows/dedicated/#filing-issues)してください。|
 
-### Geo
+### Geo {#geo}
 
 |      |       |
 |:----:| ----- |
@@ -58,7 +58,7 @@ lastmod: "2026-04-06T21:06:06+00:00"
 |DotCom| *Geo は `gitlab.com` 上ではお客様による構成は提供されていません。*|
 |Dedicated| GitLab Geo は[いくつかの制約あり](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#operational-features)でサポートされています。[Dedicated チームに Issue を起票](/handbook/support/workflows/dedicated/#filing-issues)してください。|
 
-### Admin Area
+### Admin Area {#admin-area}
 
 |      |       |
 |:----:| ----- |
@@ -66,9 +66,9 @@ lastmod: "2026-04-06T21:06:06+00:00"
 |DotCom| GitLab.com 上では、GitLab チームメンバーのみが管理タスクを行うことができ、お客様にはアクセス権が付与されません。|
 |Dedicated| お客様には Admin Area にアクセスできるインスタンス管理者がいます。お客様向けの [GitLab Rails コンソール](https://docs.gitlab.com/administration/operations/rails_console/)アクセスはありません。|
 
-参照には [Admin Area のドキュメント](https://docs.gitlab.com/administration/admin_area/#gitlab-admin-area)を使用してください。
+参照には [Admin Area のドキュメント](https://docs.gitlab.com/administration/admin_area/)を使用してください。
 
-### Gitaly
+### Gitaly {#gitaly}
 
 |      |       |
 |:----:| ----- |
@@ -76,7 +76,7 @@ lastmod: "2026-04-06T21:06:06+00:00"
 |DotCom| Gitaly は GitLab のインフラチームによって管理されているため、お客様はアクセスできません。|
 |Dedicated| Gitaly は Environment Automation SRE によって管理されています。必要に応じて [RFH を起票](/handbook/support/workflows/dedicated/#filing-issues)してください。|
 
-### サブスクリプション
+### サブスクリプション {#subscription}
 
 |      |       |
 |:----:| ----- |
@@ -86,7 +86,7 @@ lastmod: "2026-04-06T21:06:06+00:00"
 
 [GitLab Duo アドオン](https://docs.gitlab.com/subscriptions/subscription-add-ons/)はサブスクリプションとは別に取り扱われる点にご注意ください。
 
-### Runner
+### Runner {#runners}
 
 |      |       |
 |:----:| ----- |
@@ -94,7 +94,7 @@ lastmod: "2026-04-06T21:06:06+00:00"
 |DotCom| [GitLab ホステッド Runner](https://docs.gitlab.com/ci/runners/) は GitLab.com に保存されているすべてのプロジェクトで利用できます。セルフマネージド Runner も GitLab.com に登録できます。|
 |Dedicated| [GitLab ホステッド Runner（ベータ）](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#hosted-runners)は Dedicated のお客様向けにプロビジョニングできます。セルフマネージド Runner も Dedicated 環境に登録できます。|
 
-### Rails コンソール
+### Rails コンソール {#rails-console}
 
 |      |       |
 |:----:| ----- |
@@ -102,7 +102,7 @@ lastmod: "2026-04-06T21:06:06+00:00"
 |DotCom| GitLab.com では、Rails コンソールへは[内部リクエスト](/handbook/support/workflows/internal_requests/#gitlabcom-console-escalation)を作成することでアクセスできます。|
 |Dedicated| Dedicated では Rails コンソールは利用できません。緊急の事案については、[Dedicated チームへの Request for Help](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/new) を作成してください。|
 
-### フィーチャーフラグ
+### フィーチャーフラグ {#feature-flags}
 
 |      |       |
 |:----:| ----- |

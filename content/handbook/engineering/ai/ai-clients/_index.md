@@ -2,20 +2,20 @@
 title: AI Clients
 description: "AI Clients ステージは、開発者とユーザーが GitLab Duo の AI 機能を利用するサーフェスを担当します。これには、エディター拡張機能、Duo CLI、Duo Chat の Web インターフェース、共有クライアント SDK が含まれます。"
 upstream_path: /handbook/engineering/ai/ai-clients/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-lastmod: "2026-10-19T12:44:48+02:00"
-translated_at: "2026-10-19T21:01:48+00:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+lastmod: "2026-11-05T15:40:43+01:00"
+translated_at: "2026-11-06T21:01:41.807053+00:00"
 translator: codex
 stale: false
 ---
 
-## 🚀 ミッション
+## 🚀 ミッション {#-mission}
 
 AI Clients ステージは、顧客が GitLab Duo を体験するサーフェスを担当します。顧客がすでに使用しているツール（IDE、ターミナル、GitLab の Web インターフェース）に GitLab の AI 機能を直接提供し、プラットフォームをまたいでそれらの体験を支える共有クライアント SDK を提供します。
 
 ---
 
-## 組織構造
+## 組織構造 {#organizational-structure}
 
 AI Clients ステージは 3 つのグループで構成され、各グループに機能別チームがあります。
 
@@ -41,7 +41,7 @@ graph TD
 
 ---
 
-## 👥 リーダーシップ
+## 👥 リーダーシップ {#-leadership}
 
 | 人物 | 役割 |
 |---|---|
@@ -50,7 +50,7 @@ graph TD
 
 ---
 
-## 🤝 安定したカウンターパート
+## 🤝 安定したカウンターパート {#-stable-counterparts}
 
 以下の人々は、AI Clients ステージの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)です。
 
@@ -58,9 +58,9 @@ graph TD
 
 ---
 
-## グループ
+## グループ {#groups}
 
-### Developer Clients
+### Developer Clients {#developer-clients}
 
 エディター拡張機能との統合、Duo CLI、および GitLab CLI（glab）を担当します。[Developer Clients グループのページ](developer-clients/)を参照してください。機能別チームは以下のとおりです。
 
@@ -69,13 +69,13 @@ graph TD
 - [JetBrains](developer-clients/jetbrains/)
 - [glab](developer-clients/glab/)
 
-### Duo Client SDK
+### Duo Client SDK {#duo-client-sdk}
 
 すべてのエディター拡張機能にわたる AI 機能を支える、共有 Language Server とクライアント SDK を担当します。[Duo Client SDK グループのページ](duo-client-sdk/)を参照してください。機能別チームは以下のとおりです。
 
 - [Duo Client SDK](duo-client-sdk/duo-client-sdk/)
 
-### Duo Chat
+### Duo Chat {#duo-chat}
 
 すべてのサーフェスにわたる Duo Chat 体験を担当します。[Duo Chat グループのページ](duo-chat/)を参照してください。機能別チームは以下のとおりです。
 
@@ -106,36 +106,37 @@ graph TD
 
 ---
 
-## 💬 連絡先
+## 💬 連絡先 {#-where-to-find-us}
 
-### Slack
+### Slack {#slack}
 
 私たちは、[GitLab Slack チャンネルのプレフィックス規約](/handbook/communication/chat/#channel-categories)に従います。`s_` はチーム横断のステージチャンネル、`f_` は機能別チームのチャンネルを示します。
 
 | チャンネル | 目的 |
 |---|---|
 | [`#s_ai-clients-questions`](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) | 質問や連絡に使用する公開の AI Clients ステージチャンネル |
-| [`#s_ai-clients`](https://gitlab.slack.com/archives/C0BFY0ZRR7W/p1785161570031899?thread_ts=1784037442.282119&cid=C0BFY0ZRR7W) | チームの同期のみに使用する社内ステージチャンネル |
-| [`#s_ai-clients-social`](https://gitlab.enterprise.slack.com/archives/C062W19B8NR) | ステージのソーシャルチャンネル |
+| [`#s_ai-clients`](https://gitlab.enterprise.slack.com/archives/C0BFY0ZRR7W) | チームの同期のみに使用する社内ステージチャンネル |
+| [`#s_ai-clients-social`](https://gitlab.enterprise.slack.com/archives/C0B8TE54WDS) | ステージのソーシャルチャンネル |
 | [`#f_duo_cli`](https://gitlab.enterprise.slack.com/archives/C09GLR7UK0D) | Duo CLI 機能別チーム |
 | [`#f_vscode_extension`](https://gitlab.enterprise.slack.com/archives/C013QJ9NEPL)  | VS Code 拡張機能の機能別チーム |
 | [`#f_jetbrains_plugin`](https://gitlab.enterprise.slack.com/archives/C02UY9XKABH) | JetBrains プラグインの機能別チーム |
 | [`#f_cli`](https://gitlab.enterprise.slack.com/archives/C0380FL4K1R) | glab（GitLab CLI）機能別チーム |
-| [`#f_duo-client-sdk`](https://gitlab.enterprise.slack.com/archives/C05B1PFHRPU) | Duo Client SDK 機能別チーム（`#f_language_server` から名称変更） |
+| [`#f_language_server`](https://gitlab.enterprise.slack.com/archives/C05B1PFHRPU) | 質問や連絡に使用する公開の Duo Client SDK チャンネル |
+| [`#f_duo-client-sdk`](https://gitlab.enterprise.slack.com/archives/C0BH51KLWNM) | Duo Client SDK 機能別チーム |
 | [`#duo-chat-lounge`](https://gitlab.enterprise.slack.com/archives/C06LWENL58F) | Duo Chat ラウンジ |
 
 ### 共有カレンダー {#shared-calendar}
 
 AI Clients 共有カレンダー（カレンダー ID：c_673d889354d021f7fa9f20a003b5867185a9bf12989b5eaacbc8b537cc9ef27c@group.calendar.google.com）
 
-### 休暇の設定
+### 休暇の設定 {#time-off-setup}
 
 [Workday](https://www.myworkday.com/gitlab/d/home.htmld)は、不在情報の唯一の情報源です。これらの連携を一度設定すると、休暇が Slack と AI Clients 共有カレンダーに自動的に表示されます。
 
 OOO に入るときは、GitLab プロフィールのステータスを `:palm_tree:` に設定し、必要に応じて
 プロフィール名を `John Doe (OOO back on 2030-01-01)` のように変更してください。
 
-#### 1. Workday を Slack に接続する
+#### 1. Workday を Slack に接続する {#1-connect-workday-to-slack}
 
 1. Slack で **アプリ → アプリを参照/管理 → Workday for Slack** に移動します。
 1. アプリの **ホーム** タブを開き、**Workday に接続 → 許可** を選択します。
@@ -143,7 +144,7 @@ OOO に入るときは、GitLab プロフィールのステータスを `:palm_t
 
 [Slack の Workday アプリで休暇を申請する方法](https://docs.google.com/document/d/1co0-_8YEV2iS7YIFsDdsSqw7ohCd1nNd3HCQU7jTQMo)（社内）と[休暇の種類](/handbook/people-group/time-off-and-absence/time-off-types/)を参照してください。
 
-#### 2. 休暇を Slack と Google Calendar に同期する
+#### 2. 休暇を Slack と Google Calendar に同期する {#2-sync-your-time-off-to-slack-and-google-calendar}
 
 休暇データは Workday から Time Off by Deel に渡され、Slack のステータスとカレンダーが更新されます。
 
@@ -153,7 +154,7 @@ OOO に入るときは、GitLab プロフィールのステータスを `:palm_t
 
 ステージの他のメンバーの休暇を確認できるよう、Google Calendar でも同じカレンダーを登録してください。
 
-### プロダクトカテゴリ
+### プロダクトカテゴリ {#product-categories}
 
 各 AI Clients グループはプロダクトカテゴリを担当します。詳しくは[プロダクトカテゴリのページ](/handbook/product/categories/)に記載されています。
 

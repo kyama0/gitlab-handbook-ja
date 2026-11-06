@@ -4,11 +4,11 @@ description: "IP アドレスのブロックを引き起こした原因を特定
 category: GitLab.com
 subcategory: Troubleshooting
 upstream_path: /handbook/support/workflows/ip-blocks/
-upstream_sha: 84ebb9fc88e6a42116737a8dbf279ac21828660f
-translated_at: "2026-10-27T21:08:17.929583+00:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:10:30.442757+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-26T15:35:25+05:30"
+lastmod: "2026-11-05T16:05:00-05:00"
 ---
 
 GitLab.com のユーザーは、レート制限により自身の IP アドレスがブロックされていることに気付くことがあります。現在、GitLab.com のレート制限パラメータは [GitLab.com 設定ドキュメントページ](https://docs.gitlab.com/user/gitlab_com/#account-and-limit-settings)で最も適切に説明されています。GitLab.com のレート制限の単一の信頼できる情報源は、[インフラストラクチャのレート制限ドキュメント](/handbook/engineering/infrastructure-platforms/rate-limiting/)にあります。このページは、Support Engineer がレート制限と IP ブロックに関連する問題をトラブルシューティングする際の助けになることを目的としています。
@@ -43,7 +43,7 @@ GitLab.com のユーザーは、レート制限により自身の IP アドレ�
 
 これらの結果が存在することは、このユーザーが Rack Attack によってブロックされたことを示しており、`json.fullpath` フィールドを追加して、各リクエストが GitLab.com 上のどの正確なパスにアクセスしようとしたのかを確認できます。
 
-複数の認証失敗リクエスト（401）が Rack Attack ブロックを引き起こし、403 Forbidden メッセージを生じさせるのはよくあることです。[1 つの IP から 1 分間に 300 回の失敗リクエスト](https://docs.gitlab.com/user/gitlab_com/#git-and-container-registry-failed-authentication-ban)を受け取ると IP アドレスをブロックします。デフォルトでは Git 操作は最初に認証なしで試行されるため、Git 操作のたびに 2 つの 401 応答が見られるのが通常です。
+複数の認証失敗リクエスト（401）が Rack Attack ブロックを引き起こし、403 Forbidden メッセージを生じさせるのはよくあることです。[1 つの IP から 1 分間に 300 回の失敗リクエスト](https://docs.gitlab.com/user/gitlab_com/rate_limits/#git-and-container-registry-failed-authentication-ban)を受け取ると IP アドレスをブロックします。デフォルトでは Git 操作は最初に認証なしで試行されるため、Git 操作のたびに 2 つの 401 応答が見られるのが通常です。
 
 Rack Attack はトラフィックを *スロットル* することもできます。その場合、HTTP 429 応答コードで認識できます。これに対する推奨される解決策は、ユーザーにより少ないリクエストを行ってもらうことです。詳細は [バイパスポリシー](ip-blocks.md#bypass-policy)を参照してください。
 
@@ -70,15 +70,15 @@ Rack Attack でブロックを見つけられない場合は、アプリケー�
 
 - `json.controller` - 特定のリクエストが GitLab.com のどの部分にアクセスしていたかの手がかりを提供します。
 - `json.params` - どのユーザーがリクエストを行ったか、どのアクションが実行されたか、どのリソースに対して実行されたかを示します。コンテナレジストリへのリクエストの場合、このフィールドはどのリポジトリが対象だったかを示します。
-- `json.matched` - これは、このリクエストを制限するために使用された Rack Attack ルールの名前です（`json.env` が `throttle` の場合）。これは、リクエストが [現在の上限](https://docs.gitlab.com/user/gitlab_com/#gitlabcom-specific-rate-limits)のどれを超過したかを把握するのに役立ちます。
+- `json.matched` - これは、このリクエストを制限するために使用された Rack Attack ルールの名前です（`json.env` が `throttle` の場合）。これは、リクエストが [現在の上限](https://docs.gitlab.com/user/gitlab_com/rate_limits/#current-rate-limits)のどれを超過したかを把握するのに役立ちます。
 
 ## 一般的な原因 {#common-causes}
 
 ### コンテナレジストリ {#container-registry}
 
-`registry.gitlab.com` への push または pull の失敗が多数あると、IP ブロックを引き起こす可能性があります。[ドキュメント](https://docs.gitlab.com/user/gitlab_com/#git-and-container-registry-failed-authentication-ban)より。
+`registry.gitlab.com` への push または pull の失敗が多数あると、IP ブロックを引き起こす可能性があります。[認証失敗によるアクセス禁止のドキュメント](https://docs.gitlab.com/user/gitlab_com/rate_limits/#git-and-container-registry-failed-authentication-ban)には、次のように記載されています。
 
-> GitLab.com は、単一の IP アドレスから 3 分間に 30 件の認証失敗リクエストを受け取った場合、1 時間にわたって HTTP ステータスコード 403 を返します。
+> GitLab.com は、単一の IP アドレスから 1 分間に 300 件の認証失敗リクエストが送信されると、15 分間にわたって `403 Forbidden` ステータスコードを返します。
 
 提供された IP アドレスを検索し、`json.path` に `/jwt/auth` の 一致フィルターを設定することで、コンテナレジストリへのヒットに関するすべてのログ結果をリストできます。
 
@@ -109,7 +109,7 @@ push と同様に、レジストリからの失敗した pull は常に `json.co
 
 #### `gitlab-ci-token` の pull {#gitlab-ci-token-pulls}
 
-`gitlab-ci-token` ユーザーは [レート制限](https://docs.gitlab.com/user/gitlab_com/#git-and-container-registry-failed-authentication-ban)から除外されています。
+`gitlab-ci-token` ユーザーは、コンテナレジストリ（JWT）リクエストに対する[認証失敗によるアクセス禁止](https://docs.gitlab.com/user/gitlab_com/rate_limits/#git-and-container-registry-failed-authentication-ban)の適用対象から除外されています。
 
 ### LFS {#lfs}
 
@@ -170,7 +170,7 @@ LFS オブジェクトを含むリポジトリへの push または pull は、�
 
 ### メール検証プロセス {#email-verification-process}
 
-特定のケースで、お客様がパイプラインを実行するために共有ユーザーアカウントを使用している場合、新しい IP アドレスからのサインインが [アカウントメール検証](https://docs.gitlab.com/security/email_verification/)をトリガーします。これにより、サインインが検証されるまでアカウントとすべてのトークンがブロックされます。これにより、[IP ブロック](https://docs.gitlab.com/user/gitlab_com/#ip-blocks)を引き起こすのに十分な `401` エラーが発生する可能性があります。
+特定のケースで、お客様がパイプラインを実行するために共有ユーザーアカウントを使用している場合、新しい IP アドレスからのサインインが [アカウントメール検証](https://docs.gitlab.com/security/email_verification/)をトリガーします。これにより、サインインが検証されるまでアカウントとすべてのトークンがブロックされます。これにより、[IP ブロック](https://docs.gitlab.com/user/gitlab_com/rate_limits/#ip-blocks)を引き起こすのに十分な `401` エラーが発生する可能性があります。
 
 #### 役立つフィールド {#useful-fields-4}
 

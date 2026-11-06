@@ -4,14 +4,14 @@ category: Sales
 subcategory: Accounts Receivable
 description: "アカウント／サポートホールドに関する問い合わせを処理するワークフロー"
 upstream_path: /handbook/support/workflows/support_hold/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T03:10:58Z"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:14:41.180845+00:00"
 translator: claude
 stale: false
-lastmod: "2024-08-28T23:15:44+00:00"
+lastmod: "2026-11-05T16:06:54-05:00"
 ---
 
-## アカウントホールドについて
+## アカウントホールドについて {#about-account-holds}
 
 アカウントホールドは、顧客が請求書を期日までに支払わない場合に発生します。連絡と調整を何度か試みた後、債権管理 (accounts receivable) チームは次のことを行います。
 
@@ -22,20 +22,20 @@ lastmod: "2024-08-28T23:15:44+00:00"
 
 Salesforce でホールドが解除されると、変更が Zendesk に同期され、そのアカウントの担当者がチケットを開けるようになります。
 
-## ホールド中アカウントのサポートワークフロー
+## ホールド中アカウントのサポートワークフロー {#support-workflow-for-accounts-on-hold}
 
 時折、アカウントホールドに関する支援を求める内部リクエストを目にすることがあります。
 
-これは Support の問題ではなく、debtor 管理チームと解決する必要があります。
+これは Support の問題ではなく、債権管理チームと解決する必要があります。
 
 1. 内部のリクエスト元に、これは未払いの請求書による経理上の問題であることを伝えます。
 1. SFDC のアカウントで `@[Shannon Williams]`（または現在の Accounts Receivable Manager）に Chatter で連絡するよう案内します。
 1. AR と状況が解決すれば、変更が Zendesk に同期されることを伝えます。
 
-### ホールドが解除されたアカウントのアクセス復旧
+### ホールドが解除されたアカウントのアクセス復旧 {#restoring-access-for-accounts-that-have-been-removed-from-hold}
 
 変更が行われると、Salesforce から Zendesk へ比較的速やかに同期されます。
 
 Zendesk のアカウントビューで「Support Hold」のチェックボックスを確認できます。チェックが外れていれば、そのアカウントにホールドはありません。
 
-同期に問題があると考えられ、Salesforce と Zendesk で異なるデータが表示されている場合は、`#support_operations` で Slack できます。
+同期に問題があると考えられ、Salesforce と Zendesk で異なるデータが表示されている場合は、`#customer_support_systems` で Slack できます。

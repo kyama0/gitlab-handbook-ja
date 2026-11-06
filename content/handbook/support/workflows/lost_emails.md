@@ -4,18 +4,18 @@ category: GitLab.com
 subcategory: Accounts
 description: "アカウント認証用のセキュリティメールをユーザーが受信できなくなったケースに対応するワークフロー"
 upstream_path: /handbook/support/workflows/lost_emails/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:13:06.548515+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-12T14:41:15+00:00"
+lastmod: "2026-11-05T16:04:58-05:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
-このワークフローは、ユーザーがメールアドレスの変更を要求するケースを扱います。例えば、アカウントに紐づくすべてのメールアドレスへのアクセスを失い、アカウントへのアクセスのために [Account email verification](https://docs.gitlab.com/security/email_verification/#accounts-without-two-factor-authentication-2fa) を行うよう求められた場合などです。
+このワークフローは、ユーザーがメールアドレスの変更を要求するケースを扱います。例えば、アカウントに紐づくすべてのメールアドレスへのアクセスを失い、アカウントへのアクセスのために [アカウントのメール認証](https://docs.gitlab.com/security/email_verification/)を行うよう求められた場合などです。
 
-## **ステージ 0:** チケットのトリアージ
+## **ステージ 0:** チケットのトリアージ {#stage-0-ticket-triage}
 
 チケットが以下の正しい設定になっていることを確認します。
 
@@ -24,7 +24,7 @@ lastmod: "2026-02-12T14:41:15+00:00"
 - サブカテゴリ（例: `Need to change my username/email`）
 - 影響を受けるメールアドレス
 
-## **ステージ 1:** プロセス
+## **ステージ 1:** プロセス {#stage-1-process}
 
 ユーザーは、GitLab.com アカウントに関連付けられたメールアドレスへのアクセスを失ったと報告しているため、
 別のメールアドレスを使用してチケットを起票している可能性が高いです。すべてのアカウント関連の活動と同様に、
@@ -35,11 +35,11 @@ Support がアカウントに対して取れるアクションは、無償ユー
 確認するには、Zendesk の User Lookup GitLab Super App を使用してユーザーを検索し、ユーザーのグループメンバーシップを
 確認します。ユーザーが Premium グループのメンバーでない場合、無償ユーザーとみなされます。
 
-### 有償ユーザー
+### 有償ユーザー {#paid-user}
 
 有償ユーザーで利用可能なオプションについては、[ユーザーの代わりに変更を加えアクションを取る](/handbook/support/workflows/account_changes)を参照してください。
 
-### 無償ユーザー
+### 無償ユーザー {#free-user}
 
 GitLab.com アカウント上のすべてのメールアドレスへのアクセスを失った無償ユーザーには、以下のオプションがあります。
 

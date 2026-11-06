@@ -1,47 +1,48 @@
 ---
 title: コミュニケーションのヒント
 category: References
-description: "Support Engineeringチームのための一般的なコミュニケーションのヒントを提供します"
+description: "Support Engineering チームのための一般的なコミュニケーションのヒントを提供します"
 upstream_path: /handbook/support/workflows/communication-tips/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:14:55Z"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:04:26.963167+00:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-05T15:54:11-05:00"
 ---
 
-このページは、GitLab Support部門のための一般的なコミュニケーションのヒントを
+このページは、GitLab Support 部門のための一般的なコミュニケーションのヒントを
 提供することを目的としています。この部門にとって有用な
 コミュニケーション関連の事柄であれば何でもここで歓迎されます。
-これは [GitLab Communicationハンドブックページ](/handbook/communication/) の
+これは [GitLab Communication ハンドブックページ](/handbook/communication/) の
 拡張として位置づけられています。
 
 *例:*
 
- 1. *Support Engineerは、Slack、Zoom、メールを介して他のSupport Engineerと
+ 1. *Support Engineer は、Slack、Zoom、メールを介して他の Support Engineer と
     どうすれば効率的に話せるか?*
- 1. *Support Engineerは、サポートのSlack チャンネルで投稿する
+ 1. *Support Engineer は、サポートの Slack チャンネルで投稿する
     チームメンバーとのやり取りからどうすれば最大限の効果を得られるか?*
 
 ---
 
-## Slack リアクション
+## Slack リアクション {#slack-reactions}
 
 [GitLab におけるコミュニケーションの一般ガイドライン](/handbook/communication/#general-guidelines)
 や [Slack ワークフロー](/handbook/support/#slack-emoji-reaction-workflows) で
 言及されている `:white_check_mark:` 絵文字に加えて、
-SupportのSlack チャンネル内では以下の絵文字も活用することを検討してください。
+Support の Slack チャンネル内では以下の絵文字も活用することを検討してください。
 
-1. `:idontknow:` - 別のSupport Engineerが質問しているが、その答えを
+1. `:idontknow:` - 別の Support Engineer が質問しているが、その答えを
    あなたが知らないとき
-1. `:red_circle:` - 別のSupport Engineerが何かを依頼しているが、
+1. `:red_circle:` - 別の Support Engineer が何かを依頼しているが、
    競合や時間的制約のためあなたがそれを行えないとき。たとえば、
    シフト時間中に対応できないため、別の人のオンコールシフトをカバーできない場合などです。
    注: 優先度の高いリクエスト（緊急時、お客様エスカレーション、STAR）に対応する際は、この絵文字の使用を避けるべきです。
 1. `:eyes:` - リクエストを調査中であることを示すため。
    誰かがリクエストに対応していることの目印となり、
    作業の重複を防ぎます。リクエストに答えられなかった場合は、
-   `:eyes:` を削除して、リクエストがまだ処理されていないことが他の人にわかるようにしてください。
+   `:eyes:` を削除してください - リクエストがまだ処理されていないことが他の人にわかるようにするためです。
+1. `:ack:` - メッセージやリクエストを読み、理解したことを示すため
 
 支援できないことを示すかもしれないにせよ、
 何らかのシグナルを送ることは、送信されたメッセージを無視するよりも望ましいことに注意してください。
@@ -53,11 +54,11 @@ SupportのSlack チャンネル内では以下の絵文字も活用すること�
 
 ---
 
-## チケット
+## チケット {#tickets}
 
 Slack 上でチケットに関するディスカッションが行われた場合は、
 そのディスカッションへのリンクをチケットの社内コメントとして追加することを忘れないでください。
-すべての Slack 投稿は90日後に削除されるため、その社内コメントで Slack のディスカッションを
+すべての Slack 投稿は 90 日後に削除されるため、その社内コメントで Slack のディスカッションを
 要約するか、長すぎないなら単に貼り付けてください。
 これらのアクションにより、他の人がディスカッションの情報を使って
 チケットへの貢献に役立てたり、単にそこから学べるようになります。

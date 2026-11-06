@@ -3,11 +3,11 @@ title: GitLab Dedicated のログ
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート - ログの取り扱い"
 upstream_path: /handbook/support/workflows/dedicated_logs/
-upstream_sha: "63a2533c58aee7c0cb8754e06a4a09ec7aa9344a"
-translated_at: "2026-10-29T21:07:29.058807+00:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:07:08.029569+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-28T19:06:06Z"
+lastmod: "2026-11-05T15:54:57-05:00"
 ---
 
 ## ログの取り扱い {#working-with-logs}
@@ -75,17 +75,17 @@ GitLab アプリケーションが生成するログは、チケットを通じ�
 
 上記のいずれの基準も満たさない場合、ログエントリはデフォルトでは顧客と直接共有すべきではありません。ログエントリの共有が顧客にとって有益だと考える場合は、[内部ログ・データ・グラフの共有](/handbook/support/workflows/dedicated/#sharing-internal-logs-data--graphs)を参照してください。
 
-GitLab Dedicated の顧客は [アプリケーションログへのアクセス](https://docs.gitlab.com/administration/dedicated/monitor/#request-access-to-application-logs)を要求できます。
+GitLab Dedicated の顧客は [アプリケーションログへのアクセス](https://docs.gitlab.com/administration/dedicated/monitor/#view-and-manage-application-log-access)を要求できます。
 
 #### 7 日より古いログの要求 {#log-requests-older-than-7-days}
 
-顧客が 7 日より古い期間のログを要求する場合、セキュリティ Issue を作成する必要があります。[Security - log request workflow](/handbook/support/workflows/log_requests.md)と同じ手順に従ってください。
+顧客が 7 日より古い期間のログを要求する場合、セキュリティ Issue を作成する必要があります。[セキュリティのログ要求ワークフロー](/handbook/support/workflows/log_requests.md)と同じ手順に従ってください。
 
 #### 顧客にアプリケーションログへのアクセスを許可する {#granting-customers-access-to-application-logs}
 
 顧客は [自社のインスタンスを監視する](https://docs.gitlab.com/administration/dedicated/monitor/)ために、AWS S3 バケットに保存されている自社のログへのアクセスを要求する場合があります。
 
-1. チケットで、顧客に [必要な情報](https://docs.gitlab.com/administration/dedicated/monitor/#request-access-to-application-logs)を提供するよう依頼します。この場合は **IAM principal** です。
+1. チケットで、顧客に[ログアクセスの前提条件](https://docs.gitlab.com/administration/dedicated/monitor/#view-and-manage-application-log-access)に記載された情報を提供するよう依頼します。この場合は **IAM principal** です。
 
    - IAM principal は [IAM role principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html#principal-roles)または [IAM user principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/)でなければなりません。
 
@@ -106,7 +106,7 @@ GitLab Dedicated の顧客は [アプリケーションログへのアクセス]
 
 ## ログの特定 {#log-identification}
 
-何を探せばよいかわからないとき、調査中のバグ/アクションを再現するために Self-Managed インスタンスを使うことを検討してください。これにより、Issue が特定の GitLab Dedicated テナント固有のものなのかどうかを確認できると同時に、OpenSearch を検索する際に簡単に参照できるログも得られます。
+何を探せばよいかわからないとき、調査中のバグ/アクションを再現するために Self-Managed インスタンスを使うことを検討してください。これにより、問題が特定の GitLab Dedicated テナント固有のものなのかどうかを確認できると同時に、OpenSearch を検索する際に簡単に参照できるログも得られます。
 
 Self-Managed インスタンスを構成したい Support Engineers は、会社が提供するホスティングオプションのリストについて [Sandbox Cloud ページ](/handbook/company/infrastructure-standards/realms/sandbox/)を確認してください。
 
@@ -287,7 +287,7 @@ GitLab インスタンスは、ほとんどのリクエストについて一意�
 
 #### CI/CD 変数を閲覧したのが誰かを特定する {#identify-who-viewed-cicd-variables}
 
-[グループイベントの監査ログ](https://docs.gitlab.com/administration/audit_event_reports/#group-audit-events)では CI/CD 変数の *変更* を具体的に記録しているわけではありませんが、Kibana を使って変数ページを閲覧した可能性のある人物を確認する方法があります。当該の変数を変更するには変数ページを閲覧する必要があります。これは、ページを閲覧した人物が必ずしも変数を変更したとは*限りません*が、変更を行えた可能性のあるユーザーのリストを絞り込むのに役立ちます。（これらの変更をログに記録してほしい場合は、[ご意見を集めるためにここに Issue が開いています](https://gitlab.com/gitlab-org/gitlab/-/issues/8070)。）
+CI/CD 変数の変更は、プロジェクトの監査イベント（`ci_variable_created`、`ci_variable_updated`、`ci_variable_deleted`）と[グループイベントの監査ログ](https://docs.gitlab.com/user/compliance/audit_events/#group-audit-events)（`ci_group_variable_created`、`ci_group_variable_updated`、`ci_group_variable_deleted`）に記録されます。プロジェクトの変数ページを誰が閲覧したかを確認するには、OpenSearch を使用してください。
 
 1. **Add filter** を選択
 1. **Select a field first** をクリック
@@ -341,7 +341,7 @@ GitLab Dedicated の顧客向けに [インスタンス全体の SAML シング�
 1. 上記のタイムスタンプをメモし、`kubernetes.host` の値をコピーして、その `@timestamp` フレーム内のログをフィルタします。
 1. 結果を微調整するために、フィルタを追加します。例： Filter: `message` Operator: `is one of` Value: `elasticsearch` で elasticsearch という用語を含むログを表示します。
 
-潜在的な次のステップとして [Elasticsearch のトラブルシューティング](https://docs.gitlab.com/integration/advanced_search/elasticsearch_troubleshooting/#last-resort-to-recreate-an-index)について詳しく読んでください。
+潜在的な次のステップとして [Elasticsearch のトラブルシューティング](https://docs.gitlab.com/integration/elasticsearch/troubleshooting/indexing/#last-resort-to-recreate-an-index)について詳しく読んでください。
 
 #### GitLab Dedicated の Hosted Runners をデバッグする {#debug-hosted-runners-for-gitlab-dedicated}
 

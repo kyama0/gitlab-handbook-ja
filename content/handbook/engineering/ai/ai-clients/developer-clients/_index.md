@@ -4,14 +4,14 @@ description: "Developer Clients グループは、VS Code および JetBrains ID
 aliases:
   - /handbook/engineering/ai/editor-extensions-multi-platform/
 upstream_path: /handbook/engineering/ai/ai-clients/developer-clients/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-lastmod: "2026-10-19T12:44:48+02:00"
-translated_at: "2026-10-19T21:01:48+00:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+lastmod: "2026-11-05T15:40:43+01:00"
+translated_at: "2026-11-06T21:01:41.807053+00:00"
 translator: codex
 stale: false
 ---
 
-## 🚀 ビジョン
+## 🚀 ビジョン {#-vision}
 
 私たちは GitLab のコア機能と AI 機能を開発者のワークフローに直接届け、開発者が日々使うツールから GitLab にアクセスできるようにすることで生産性を引き出します。
 
@@ -19,7 +19,7 @@ stale: false
 
 ---
 
-## 👨‍💻 チームメンバー
+## 👨‍💻 チームメンバー {#-team-members}
 
 **Engineering Manager：** Amr Elhusseiny
 
@@ -31,7 +31,7 @@ stale: false
 
 ---
 
-## 🤝 安定したカウンターパート
+## 🤝 安定したカウンターパート {#-stable-counterparts}
 
 以下が私たちの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)です。
 
@@ -39,16 +39,16 @@ stale: false
 
 ---
 
-## 💬 連絡先
+## 💬 連絡先 {#-where-to-find-us}
 
-### Slack
+### Slack {#slack}
 
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と問い合わせ
-- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期のみ
+- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.enterprise.slack.com/archives/C0BFY0ZRR7W) — チームの同期のみ
 - **機能チームの Slack チャンネル：**
-  - Duo CLI： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
-  - VS Code 拡張機能： [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
-  - JetBrains プラグイン： [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH)
+  - Duo CLI： [#f_duo_cli](https://gitlab.enterprise.slack.com/archives/C09GLR7UK0D)
+  - VS Code 拡張機能： [#f_vscode_extension](https://gitlab.enterprise.slack.com/archives/C013QJ9NEPL)
+  - JetBrains プラグイン： [#f_jetbrains_plugin](https://gitlab.enterprise.slack.com/archives/C02UY9XKABH)
   - glab（GitLab CLI）： [#f_cli](https://gitlab.enterprise.slack.com/archives/C0380FL4K1R)
 - **私たちが管理するその他の Slack チャンネル：**
   - Visual Studio 拡張機能： [#f_visual_studio_extension](https://gitlab.enterprise.slack.com/archives/C0581SE363C)
@@ -62,20 +62,20 @@ stale: false
 
 ---
 
-## 🏠 機能チーム
+## 🏠 機能チーム {#-functional-teams}
 
 | チーム | スコープ | チャンネル |
 |---|---|---|
-| [Duo CLI](/handbook/engineering/ai/ai-clients/developer-clients/duo-cli/) | AI を活用したコマンドラインインターフェース | [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli) |
-| [VS Code](/handbook/engineering/ai/ai-clients/developer-clients/vscode/) | GitLab Workflow VS Code 拡張機能と Web IDE | [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL) |
-| [JetBrains](/handbook/engineering/ai/ai-clients/developer-clients/jetbrains/) | JetBrains IDE 向け GitLab プラグイン | [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH) |
+| [Duo CLI](/handbook/engineering/ai/ai-clients/developer-clients/duo-cli/) | AI を活用したコマンドラインインターフェース | [#f_duo_cli](https://gitlab.enterprise.slack.com/archives/C09GLR7UK0D) |
+| [VS Code](/handbook/engineering/ai/ai-clients/developer-clients/vscode/) | GitLab Workflow VS Code 拡張機能と Web IDE | [#f_vscode_extension](https://gitlab.enterprise.slack.com/archives/C013QJ9NEPL) |
+| [JetBrains](/handbook/engineering/ai/ai-clients/developer-clients/jetbrains/) | JetBrains IDE 向け GitLab プラグイン | [#f_jetbrains_plugin](https://gitlab.enterprise.slack.com/archives/C02UY9XKABH) |
 | [glab](/handbook/engineering/ai/ai-clients/developer-clients/glab/) | GitLab CLI (`glab`) | [#f_cli](https://gitlab.enterprise.slack.com/archives/C0380FL4K1R) |
 
 ---
 
-## 💻 スコープ
+## 💻 スコープ {#-scope}
 
-### このグループが所有する製品
+### このグループが所有する製品 {#products-owned-by-this-group}
 
 1. **GitLab Extension for JetBrains**
    1. [リポジトリ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-jetbrains-plugin)
@@ -86,11 +86,11 @@ stale: false
    1. [リポジトリ](https://gitlab.com/gitlab-org/gitlab-vscode-extension)
    2. [ドキュメント](https://docs.gitlab.com/editor_extensions/visual_studio_code/)
    3. [バックログ](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=group%3A%3Aeditor%20extensions)
-   4. Slack チャンネル： [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
+   4. Slack チャンネル： [#f_vscode_extension](https://gitlab.enterprise.slack.com/archives/C013QJ9NEPL)
 3. **Duo CLI**
    1. [リポジトリ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/tree/main/packages/cli)
    2. [バックログ](https://gitlab.com/groups/gitlab-org/-/boards/9839597?epic_id=3743089)
-   3. Slack チャンネル： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
+   3. Slack チャンネル： [#f_duo_cli](https://gitlab.enterprise.slack.com/archives/C09GLR7UK0D)
 4. **GitLab CLI (glab)**
    1. [リポジトリ](https://gitlab.com/gitlab-org/cli)
    2. [ドキュメント](https://docs.gitlab.com/cli/)
@@ -98,9 +98,9 @@ stale: false
 
 ---
 
-## 📚 私たちの働き方
+## 📚 私たちの働き方 {#-how-we-work}
 
-### Issue のステータス
+### Issue のステータス {#issues-state}
 
 私たちは [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に従って、Issue の `Status` フィールドでステータスを示します。
 
@@ -181,7 +181,7 @@ stale: false
 
 このプロセスは v1 です。約 2 マイルストーンごとにチームチャンネルで簡単なフィードバック投票を行い、各月次計画コールには常設の 5 分間のレトロスペクティブ枠を設けます。
 
-### チーム同期ミーティング
+### チーム同期ミーティング {#team-sync-meetings}
 
 私たちは、[AI Clients ステージ](/handbook/engineering/ai/ai-clients/)全体で開催される週次同期ミーティングに参加します。
 
@@ -224,7 +224,7 @@ stale: false
 - これはマイルストーンのキャパシティを把握するための大まかなサイジングとして使用します。実装の詳細に踏み込めば変わる可能性が高いため、正確な見積もりを出そうとしすぎないでください。
 - ウェイト `8` の Issue にはそのまま取り組まず、より小さな Issue に分解するか、まずスパイクとしてタイムボックス化します。
 
-### グループ間のオーナーシップと境界
+### グループ間のオーナーシップと境界 {#cross-group-ownership-and-boundaries}
 
 エディター拡張機能のシステムは、さまざまなグループが所有する機能やモジュールをホストしています。
 
@@ -232,7 +232,7 @@ stale: false
 
 ---
 
-## 🔗 便利なリンク
+## 🔗 便利なリンク {#-useful-links}
 
 - **計画**
   - [計画ボード](#planning-boards)

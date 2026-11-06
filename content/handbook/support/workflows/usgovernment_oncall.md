@@ -1,32 +1,32 @@
 ---
 title: 米国政府向けオンコール業務の進め方
 category: On-call
-description: "サポートエンジニアリングにおける米国政府オンコールローテーションの役割と責務について"
+description: "Support Engineering における米国政府オンコールローテーションの役割と責務について"
 upstream_path: /handbook/support/workflows/usgovernment_oncall/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:31:24+09:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:14:41.180845+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-11-05T15:53:36-05:00"
 ---
 
-## はじめに
+## はじめに {#introduction}
 
-米国政府向け Emergencies ローテーションに参加するサポートエンジニアは、GitLab 顧客からの運用上の緊急事態を調整します。
+米国政府向け緊急対応ローテーションに参加する Support Engineer は、GitLab 顧客からの運用上の緊急事態を調整します。
 
-米国政府向け Emergencies ローテーションは、[GitLab Support On-call](/handbook/support/on-call/) を構成するローテーションの 1 つです。
+米国政府向け緊急対応ローテーションは、[GitLab Support On-call](/handbook/support/on-call/) を構成するローテーションの 1 つです。
 
 このページは、米国政府向けオンコールローテーションに参加するためのさまざまなワークフローの概要を示しています。緊急コールへの対応などに関するより詳細なガイドは、[PATRIOT プロジェクト](https://gitlab.com/gitlab-com/support/us-government/patriot) で確認できます。
 
-## 知っておくべきこと
+## 知っておくべきこと {#things-to-know}
 
-### 米国政府向けオンコール
+### 米国政府向けオンコール {#us-government-on-call}
 
 米国政府向けサポートを購入したすべての顧客は「12x5 Emergency Support」を受けられます。顧客は「24x7 Emergency Support」アドオンを購入することもできます。
 
-「12x5」の顧客は、月曜日から金曜日の太平洋時間 0500 から 1700 の間、本番インスタンスの [severity one](https://about.gitlab.com/support) の問題についてオンコールを呼び出せます。
+「12x5」の顧客は、月曜日から金曜日の太平洋時間 0500 から 1700 の間、本番インスタンスの [重大度 1](https://about.gitlab.com/support) の問題についてオンコールを呼び出せます。
 
-「24x7」の顧客は、いつでも本番インスタンスの severity one または severity two の問題についてオンコールを呼び出せます。
+「24x7」の顧客は、いつでも本番インスタンスの 重大度 1 または重大度 2 の問題についてオンコールを呼び出せます。
 
 現在のオンコールスケジュールは [PagerDuty](https://gitlab.pagerduty.com/schedules#P89ZYHZ)（社内リンク）で確認できます。スケジュールは現在、5a-5p / 5p-5a（太平洋時間）の 2 つの 12 時間シフトに分割されています。
 
@@ -37,18 +37,18 @@ lastmod: "2026-07-29T12:39:09-04:00"
 
 顧客は、メールまたは米国政府向けサポートポータルの緊急フォームから緊急事態を送信できます。
 
-#### 米国政府向けオンコールシフトのカバー
+#### 米国政府向けオンコールシフトのカバー {#on-call-shift-coverage-in-us-government}
 
-サポートエンジニアが予定されたオンコールシフトのカバーを必要とする場合は、`us-gov-oncall-coverage` テンプレートを使って Support Team Meta に Issue を開き、そのリンクを Slack でチームと共有します。
+Support Engineer が予定されたオンコールシフトのカバーを必要とする場合は、`us-gov-oncall-coverage` テンプレートを使って Support Team Meta に Issue を開き、そのリンクを Slack でチームと共有します。
 
-#### 業務時間外の緊急依頼
+#### 業務時間外の緊急依頼 {#emergencies-outside-working-hours}
 
 12x5 の顧客が [Government Support の営業時間](https://about.gitlab.com/support/us-government-support/#hours-of-operation) 外に緊急ケースを送信した場合、以下が発生します。
 
 - #spt_us-government チャンネルに Slack 通知がトリガーされ、時間外の緊急事態をチームに知らせ、営業時間の開始時にフォローアップが必要であることを示します
 - `Off hours emergency request` トリガーが、チケット送信者に時間外であることと、次の営業時間の開始時に米国政府向けサポートがフォローアップすることを知らせます。
 
-##### 業務時間外の緊急対応への応答
+##### 業務時間外の緊急対応への応答 {#responding-to-after-hours-emergencies}
 
 12x5 時間外に作業しているチームメンバーは、エンジニア自身の裁量で、本番の緊急事態に直面している顧客にサポートを提供することを選択できます。これに対応する際は、以下が顧客との間で明確になっていることを確認することが重要です。
 
@@ -57,11 +57,11 @@ lastmod: "2026-07-29T12:39:09-04:00"
 
 対応するエンジニアは、自身のマネージャーをフォロワーとして追加し、時間外サポートを提供している旨を内部メモで示す必要もあります。これにより、顧客のアカウントチームとの適切なフォローアップが確実に行われるようになります。
 
-### PagerDuty
+### PagerDuty {#pagerduty}
 
-私たちは、GitLab 顧客が提起した緊急事態を追跡するために PagerDuty を使用します。顧客の緊急事態については、`#support_us-government` に通知が届きます。
+私たちは、GitLab 顧客が提起した緊急事態を追跡するために PagerDuty を使用します。顧客の緊急事態については、`#spt_us-government` に通知が届きます。
 
-### PagerDuty のステータス
+### PagerDuty のステータス {#pagerduty-status}
 
 - **Triggered** - 「顧客がオンコールエンジニアの対応を要求しました」
 - **Acknowledged** - 「ページを確認し、チケットをレビュー中です」
@@ -69,9 +69,9 @@ lastmod: "2026-07-29T12:39:09-04:00"
 
 **注意:** PagerDuty における「Resolved」は、根本的な問題が解決されたことを意味するものではありません。
 
-## 緊急ケースのアラートを受け取る
+## 緊急ケースのアラートを受け取る {#getting-alerted-of-an-emergency-case}
 
-あなたの担当である*可能性のある*緊急事態について通知を受け取る方法は 2 つあります。
+あなたの担当である _可能性のある_ 緊急事態について通知を受け取る方法は 2 つあります。
 
 1. **PagerDuty 通知**
 
@@ -79,37 +79,37 @@ lastmod: "2026-07-29T12:39:09-04:00"
 
 1. **Slack ボット**
 
-これは平日の日中シフト時間帯に届き、緊急ケースを知らせるために*稼働可能な*すべてのエンジニアに通知します。
+これは平日の日中シフト時間帯に届き、緊急ケースを知らせるために _稼働可能な_ すべてのエンジニアに通知します。
 
 ![U.S. Gov Slack Bot の緊急ケース例](/images/support/usgov_pd_bot_alert.png)
 
-### フローの例
+### フローの例 {#examples-of-flow}
 
 これらの例では、顧客が緊急事態を提起してから、エンジニアがチケットで対応するまでの流れを扱います。ケースをトリアージして対応する方法については、別の場所で扱います。
 
-#### 日中シフト・ボットフロー
+#### 日中シフト・ボットフロー {#day-shift-bot-flow}
 
 平日の営業時間中に緊急事態が提起されると、[#spt_us-government](https://gitlab.enterprise.slack.com/archives/C03RTN3JEJ2) チャンネルに 2 つのメッセージが表示されます。最初に PagerDuty アラート、次に「Support Readiness Bot」からのメッセージで、稼働可能なすべてのエンジニアをタグ付けして緊急事態を知らせます。
-通知を受け取ったら、稼働可能なエンジニアはチケットをレビューし、PagerDuty アラートを `acknowledge` します。（acknowledge されていない PagerDuty アラートはエスカレーションします。）
+通知を受け取ったら、稼働可能なエンジニアはチケットをレビューし、PagerDuty アラートを `acknowledge` します。（確認応答されていない PagerDuty アラートはエスカレーションします。）
 1 人または 2 人のエンジニアがチケットの対応に同意したら、チケットに返信して PagerDuty アラートを `resolve` します。
 
-#### 日中シフトオンコールエンジニアのフロー
+#### 日中シフトオンコールエンジニアのフロー {#day-shift-engineer-on-call-flow}
 
-あなたがオンコールエンジニアである間に緊急事態が提起されると、あなたの[設定](#configuring-your-pagerduty)に従って PagerDuty 通知が届きます。通知を受け取ったら、エスカレーションを防ぐために、Slack または PagerDuty アプリのいずれかでページを `acknowledge` します。その後、チケットのレビューを開始します。顧客に対応したら、PagerDuty アラートを `resolve` します。
+あなたがオンコールエンジニアである間に緊急事態が提起されると、あなたの[設定](#configuring-your-pagerduty)に従って PagerDuty 通知が届きます。通知を受け取ったら、エスカレーションを防ぐために、Slack または PagerDuty アプリのいずれかでページを `acknowledge` します。その後、チケットのレビューを開始します。顧客に返信したら、PagerDuty アラートを `resolve` します。
 
-#### 夜間シフトのフロー
+#### 夜間シフトのフロー {#night-shift-flow}
 
-夜間シフトのエンジニアは、1 週間単位のオンコールシフトのローテーションを行います。個々のローテーションでは、最初のシフトは**金曜日**の夜（太平洋時間午後 5:00）に始まり、**土曜日**の朝（太平洋時間午前 5:00）に終わります。残りのシフトも同じスケジュールに従い、ローテーションは**金曜日**の朝（太平洋時間午前 5:00）に終わります。あなたがオンコールエンジニアである間に緊急事態が提起されると、あなたの[設定](#configuring-your-pagerduty)に従って PagerDuty 通知が届きます。通知を受け取ったら、エスカレーションを防ぐために、Slack または PagerDuty アプリのいずれかでページを `acknowledge` します。その後、チケットのレビューを開始します。顧客に対応したら、PagerDuty アラートを `resolve` します。
+夜間シフトのエンジニアは、1 週間単位のオンコールシフトのローテーションを行います。個々のローテーションでは、最初のシフトは**金曜日**の夜（太平洋時間午後 5:00）に始まり、**土曜日**の朝（太平洋時間午前 5:00）に終わります。残りのシフトも同じスケジュールに従い、ローテーションは**金曜日**の朝（太平洋時間午前 5:00）に終わります。あなたがオンコールエンジニアである間に緊急事態が提起されると、あなたの[設定](#configuring-your-pagerduty)に従って PagerDuty 通知が届きます。通知を受け取ったら、エスカレーションを防ぐために、Slack または PagerDuty アプリのいずれかでページを `acknowledge` します。その後、チケットのレビューを開始します。顧客に返信したら、PagerDuty アラートを `resolve` します。
 
-### 誰もアラートを Acknowledge しない場合
+### 誰もアラートに確認応答しない場合 {#if-no-one-acknowledges-an-alert}
 
-米国政府向け顧客の緊急事態が提起されると、PagerDuty はオンコールエンジニア、ボット、およびシャドーがいる場合はシャドーに通知します。アラートが 15 分後に `acknowledged` されていない場合、マネージャーにページが送られます。さらに 15 分後も `acknowledged` されていない場合は、Sr. Manager にページが送られます。
+米国政府向け顧客の緊急事態が提起されると、PagerDuty はオンコールエンジニア、ボット、および Shadow がいる場合は Shadow に通知します。アラートが 15 分後に `acknowledged` されていない場合、マネージャーにページが送られます。さらに 15 分後も `acknowledged` されていない場合は、Sr. Manager にページが送られます。
 
 ## PagerDuty の設定 {#configuring-your-pagerduty}
 
 個人の PagerDuty 通知設定は、プロフィールの `Notification Rules` で構成できます。通知を受け取る／聞き取れるようにし、適切に応答できるように設定してください。SMS メッセージ、電話、メール、PagerDuty アプリのアラートを、さまざまな分間隔で設定できます。
 
-## 解決後のチケット処理
+## 解決後のチケット処理 {#post-resolution-ticket-handling}
 
 解決後のチケット処理は、このオンコールページの範囲外です。緊急状態に対処した後は、[米国政府向けサポートチケットへの対応](/handbook/support/workflows/usgovernment_tickets/#emergency-ticket-handling) の解決後チケットワークフローに従ってください。
 

@@ -5,14 +5,14 @@ aliases:
   - /handbook/engineering/ai/editor-extensions-vscode/
   - /handbook/engineering/ai/ai-clients/vscode/
 upstream_path: /handbook/engineering/ai/ai-clients/developer-clients/vscode/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:30:08+09:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+lastmod: "2026-11-05T15:40:43+01:00"
+translated_at: "2026-11-06T21:01:41.807053+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
 VS Code 機能チームは、[Developer Clients グループ](/handbook/engineering/ai/ai-clients/developer-clients/)に属し、このグループは [AI Clients ステージ](/handbook/engineering/ai/ai-clients/)内にあります。
 
@@ -20,13 +20,13 @@ VS Code 機能チームは、[Developer Clients グループ](/handbook/engineer
 
 ---
 
-## 👨‍💻 チームメンバー
+## 👨‍💻 チームメンバー {#-team-members}
 
 VS Code チームは [Developer Clients グループ](/handbook/engineering/ai/ai-clients/developer-clients/)に属しています。
 
 {{< group-by-slugs aelhusseiny juhee.lee mosumah >}}
 
-### 安定したカウンターパート
+### 安定したカウンターパート {#stable-counterparts}
 
 以下の人々は、VS Code チームの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)です。
 
@@ -34,14 +34,14 @@ VS Code チームは [Developer Clients グループ](/handbook/engineering/ai/a
 
 ---
 
-## 💬 Slack
+## 💬 Slack {#-slack}
 
-- **チームチャンネル：** [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
+- **チームチャンネル：** [#f_vscode_extension](https://gitlab.enterprise.slack.com/archives/C013QJ9NEPL)
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
 
 ---
 
-## 💻 スコープ
+## 💻 スコープ {#-scope}
 
 VS Code チームは以下を担当します。
 
@@ -49,22 +49,22 @@ VS Code チームは以下を担当します。
    - [リポジトリ](https://gitlab.com/gitlab-org/gitlab-vscode-extension)
    - [ドキュメント](https://docs.gitlab.com/editor_extensions/visual_studio_code/)
    - [バックログ](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=group%3A%3Aeditor%20extensions)
-   - Slack チャンネル： [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
+   - Slack チャンネル： [#f_vscode_extension](https://gitlab.enterprise.slack.com/archives/C013QJ9NEPL)
 2. **Web IDE**
    - [リポジトリ](https://gitlab.com/gitlab-org/gitlab-web-ide)
    - Slack チャンネル： [#f_vscode_web_ide](https://gitlab.enterprise.slack.com/archives/C03CEHDPQGH)
 
-### グループ間のオーナーシップと境界
+### グループ間のオーナーシップと境界 {#cross-group-ownership-and-boundaries}
 
 AI Clients のシステムは、さまざまなグループが所有する機能やモジュールをホストしています。[オーナーシップと境界](/handbook/engineering/ai/ai-clients/ownership/)ページでは、私たちのシステムで機能を作成・保守するすべての関係者に明確さをもたらし、期待値を明確にしています。
 
-### Issue のラベル
+### Issue のラベル {#issues-labels}
 
 [AI Clients のラベル付けガイダンス](/handbook/engineering/ai/ai-clients/#-how-we-label-issues-and-merge-requests)を確認してください
 
 ---
 
-## 🔗 便利なリンク
+## 🔗 便利なリンク {#-useful-links}
 
 - [GitLab Issue 検索](https://gitlab.com/groups/gitlab-org/-/issues/?sort=due_date&state=opened&label_name%5B%5D=group%3A%3Aeditor%20extensions&first_page_size=20)
 - [GitLab エピック検索](https://gitlab.com/groups/gitlab-org/-/epics?state=opened&page=1&sort=start_date_desc&label_name[]=group::editor+extensions)

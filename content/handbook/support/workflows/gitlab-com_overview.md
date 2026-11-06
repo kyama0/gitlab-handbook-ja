@@ -1,22 +1,22 @@
 ---
 title: GitLab.com の概要
 category: GitLab.com
-description: "サポートエンジニアリングにとって、GitLab.com（SaaS）のコンテキストが他の GitLab インスタンスとどのように異なるかの全般的な概要を提供します"
+description: "Support Engineering にとって、GitLab.com（SaaS）のコンテキストが他の GitLab インスタンスとどのように異なるかの全般的な概要を提供します"
 upstream_path: /handbook/support/workflows/gitlab-com_overview/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:10:30.442757+00:00"
 translator: claude
 stale: false
-lastmod: "2026-01-23T12:25:37-06:00"
+lastmod: "2026-11-05T16:04:58-05:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 このページは、GitLab.com が GitLab のセルフマネージドインスタンスとどう異なるかの全般的な概要を提供することを目的としています。
 
-このページの以降のセクションのコンテキストは、サポートが GitLab.com を扱うときに利用するさまざまな [ワークフロー](/handbook/support/workflows) と、[GitLab.com Basics](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/.gitlab/issue_templates/GitLab-com-Basics.md) トレーニングモジュールでカバーされる予定であることに注意してください。
+このページの以降のセクションのコンテキストは、サポートが GitLab.com を扱うときに利用するさまざまな [ワークフロー](/handbook/support/workflows) と、[GitLab.com Basics](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/.gitlab/issue_templates/GitLab-com-Basics.md) トレーニングモジュールで説明されているはずであることに注意してください。
 
-## GitLab.com アーキテクチャ
+## GitLab.com アーキテクチャ {#gitlabcom-architecture}
 
 GitLab.com は既知の GitLab インスタンスとして最大規模のものです。私たちの [インフラストラクチャチーム](/handbook/engineering/infrastructure/) によって 24 時間 365 日監視・保守されています。
 
@@ -26,23 +26,23 @@ GitLab.com は既知の GitLab インスタンスとして最大規模のもの�
 
 多くのサポートチームメンバーは、[CMOC](/handbook/support/workflows/cmoc_workflows/) としてインシデントの対応も支援しています。
 
-## 法的コンテキスト
+## 法的コンテキスト {#legal-context}
 
 サインアップ時、ユーザーは私たちの [利用規約](https://about.gitlab.com/terms/) に同意し、それに拘束されることになります。
 
-DMCA や行動規範を含む規約違反は、[セキュリティオペレーション](/handbook/security/security-operations/) によって対処されます。
+DMCA や行動規範を含む規約違反は、[Security Operations](/handbook/security/security-operations/) によって対処されます。
 
-## 管理
+## 管理 {#administration}
 
 GitLab.com では、GitLab（会社）がインスタンスの管理者です。これには以下に概説する複数の影響があります。
 
-### ユーザーは管理者ではない
+### ユーザーは管理者ではない {#users-are-not-admins}
 
-お客様を含むユーザーは [管理者ロールを持つことはありません](https://docs.gitlab.com/administration/#administrator-documentation)。
+お客様を含むユーザーは [管理者ロールを持つことはありません](https://docs.gitlab.com/administration/)。
 
 これは、私たちの管理者向け固有のドキュメントがエンドユーザーには適用されず、[インスタンスレベルの設定](https://docs.gitlab.com/user/gitlab_com/) は私たちのインフラストラクチャチームによって管理されることを意味します。
 
-### アカウントはユーザーに帰属する
+### アカウントはユーザーに帰属する {#accounts-belong-to-users}
 
 現在のユーザーがアカウントに登録する方法のため、規約は個々のアカウントに適用され、情報は以下で定義する [エンタープライズユーザー](#enterprise-users) でない限り他者と共有されるべきではありません。
 
@@ -50,7 +50,7 @@ GitLab.com では、GitLab（会社）がインスタンスの管理者です。
 
 このことは時にサポートのやり取りをより難しく、もどかしくしますが、アカウントのメールアドレスといった基本的なものでさえ、それが公開されていなかったり、ユーザーが他の個人と共有することについての明示的な許可を提供していない場合は、共有されるべきではありません。
 
-### エンタープライズユーザー
+### エンタープライズユーザー {#enterprise-users}
 
 私たちの規約が最後に更新された 2021-02-01 の時点で、**エンタープライズユーザー** の定義を導入しました。
 
@@ -73,7 +73,7 @@ GitLab.com では、GitLab（会社）がインスタンスの管理者です。
     - `provisioned_by_group_id` の値が組織のグループ ID と同じである。
     - 組織のグループのメンバーであり、サブスクリプションが 2021-02-01 以降に購入または更新された。
 
-オーナーが、会社のドメインのプライマリメールアドレスを持つアカウントへのアクセスを要求しているが、上記の 2 番目の条件を *満たしていない* 場合、私たちはアカウントをユーザーに帰属するものとして扱う必要があります。この場合、オーナーが取れる手段は、ユーザーの *プライマリメール* をチケットの CC として追加することだけで、その後ユーザー自身がアカウントを検証します。
+オーナーが、会社のドメインのプライマリメールアドレスを持つアカウントへのアクセスを要求しているが、上記の 2 番目に挙げた条件のいずれも *満たしていない* 場合、私たちはアカウントをユーザーに帰属するものとして扱う必要があります。この場合、オーナーが取れる手段は、ユーザーの *プライマリメール* をチケットの CC として追加することだけで、その後ユーザー自身がアカウントを検証します。
 
 関連情報は Zendesk GitLab Super App: User Lookup、GitLab admin、または API で見つけることができます。サブスクリプション情報は CustomersDot でも追加で確認できます。
 
