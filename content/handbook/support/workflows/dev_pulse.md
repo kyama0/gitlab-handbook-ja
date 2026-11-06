@@ -4,14 +4,14 @@ category: Handling tickets
 description: Dev Pulse のサポートドキュメントページ
 canonical_path: "/handbook/support/workflows/dev_pulse"
 upstream_path: /handbook/support/workflows/dev_pulse/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:04:40+09:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:07:08.029569+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-11-05T16:06:54-05:00"
 ---
 
-## Dev Pulse とは?
+## Dev Pulse とは? {#what-is-dev-pulse}
 
 Dev Pulse は、バグの解決や機能リクエストの実装に関する Issue やマージリクエストを積極的に監視するために私たちが利用するスクリプト群と Zendesk セットアップの名称です。
 
@@ -21,7 +21,7 @@ Dev Pulse は、バグの解決や機能リクエストの実装に関する Iss
 
 Dev Pulse の実装の詳細については [ドキュメント](/handbook/eta/css/zendesk/dev-pulse) を参照してください。
 
-## どのように動作するか?
+## どのように動作するか? {#how-does-it-work}
 
 ```mermaid
 flowchart TD
@@ -43,7 +43,7 @@ D2 --> E3
 E3 --> F3
 ```
 
-## 使用方法
+## 使用方法 {#using-it}
 
 1. Zendesk チケットフィールド `Waiting on issue or merge request` にバグ Issue または MR へのリンクを追加します。URL からは余分なパラメータ（Issue または MR の IID 以降のすべて）を必ず削除してください。
 
@@ -60,25 +60,25 @@ E3 --> F3
 
 3. マクロはチケットのステータスを `On-hold` に設定するので、更新を送信してプロセスを開始してください。
 
-### Dev Pulse でどのようなビューが利用できるか
+### Dev Pulse でどのようなビューが利用できるか {#what-views-are-available-for-dev-pulse}
 
-#### バグまたは機能リクエストのチケット
+#### バグまたは機能リクエストのチケット {#bug-or-feature-request-tickets}
 
 バグ/機能リクエストの解決を待っているチケット
 
-#### バグまたは機能リクエストへのリンク
+#### バグまたは機能リクエストへのリンク {#links-to-bugs-or-feature-requests}
 
 親問題チケット
 
-#### RFH チケット
+#### RFH チケット {#rfh-tickets}
 
-request for help を待っているチケット
+支援リクエストへの対応を待っているチケット
 
-## 表示と報告
+## 表示と報告 {#viewing-and-reporting-on-this}
 
 - [Explore ダッシュボード](https://gitlab.zendesk.com/explore/dashboard/8A40804AF5438788D3839999DC2751523E962D04C5CD07AC4040B4108BB90B4F)
 
-### 同じ MR または Issue に関連付けられたすべてのチケットを一括更新できますか?
+### 同じ MR または Issue に関連付けられたすべてのチケットを一括更新できますか? {#can-i-bulk-update-all-tickets-associated-with-the-same-mr-or-issue}
 
 はい。同じバグまたは機能リクエストに依存するすべての関連サポートチケットをグループ化するために、各 Issue またはマージリクエストごとに親問題チケットが作成されます。
 
@@ -91,16 +91,16 @@ request for help を待っているチケット
 1. 表示されるポップアップモーダルを読みます
 1. 更新を送信するには `Solve this ticket and xxx linked incident(s)` をクリックします
 
-### すでに使用しているチケットでこれを使用するのを止めたい場合はどうすればよいですか?
+### すでに使用しているチケットでこれを使用するのを止めたい場合はどうすればよいですか? {#what-do-i-do-if-i-want-to-stop-using-this-on-a-ticket-already-using-it}
 
-これは非常に特定の手順を必要とするため、[#support_operations](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD) Slack チャンネルに投稿して Support Readiness チームに依頼してください。
+これは非常に特定の手順を必要とするため、[#customer_support_systems](https://gitlab.slack.com/archives/C018ZGZAMPD) Slack チャンネルに投稿して Support Readiness チームに依頼してください。
 
-### 関連する Issue または MR が重複としてマークされたり移動された場合はどうすればよいですか?
+### 関連する Issue または MR が重複としてマークされたり移動された場合はどうすればよいですか? {#what-do-i-do-if-the-related-issue-or-mr-was-marked-as-a-duplicate-or-moved}
 
 このような場合、Issue/MR が実際には解決されていないと顧客に一括で更新を送信したくはありません。代わりに、使用している Issue/MR のリンクを更新し、新しいものを監視し始める必要があります。
 
-これは非常に特定の手順を必要とするため、[#support_operations](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD) Slack チャンネルに投稿して Support Readiness チームに依頼してください。
+これは非常に特定の手順を必要とするため、[#customer_support_systems](https://gitlab.slack.com/archives/C018ZGZAMPD) Slack チャンネルに投稿して Support Readiness チームに依頼してください。
 
-### チケットでプロセスを再開する方法
+### チケットでプロセスを再開する方法 {#how-to-re-initiate-the-process-on-a-ticket}
 
 プロセスを再開する必要がある場合は、状況に応じた上記の手順に再度従ってください。マクロとセットアップは適切に対応します。

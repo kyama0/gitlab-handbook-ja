@@ -3,21 +3,21 @@ title: GitLab Dedicated 概要
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート概要。"
 upstream_path: /handbook/support/workflows/dedicated/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+translated_at: "2026-11-06T21:07:08.029569+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-05T15:54:57-05:00"
 ---
 
-### 概要
+### 概要 {#overview}
 
 [GitLab Dedicated](https://docs.gitlab.com/subscriptions/gitlab_dedicated/) は、サポートの観点から見ると、SaaS と Self-Managed の組み合わせとして機能します。顧客はインスタンスへの完全な管理者アクセス権を持ちますが、インフラストラクチャやバックエンド設定にはアクセスできません。このワークフローでは、GitLab Dedicated のサポート提供に関する違いと詳細をまとめます。
 
-GitLab Dedicated チケットに取り組む際、Issue がアプリケーションの問題なのかインフラストラクチャの問題なのかを判断する、というメンタルモデルに従うのが良いでしょう。
+GitLab Dedicated チケットに取り組む際、問題がアプリケーションの問題なのかインフラストラクチャの問題なのかを判断する、というメンタルモデルに従うのが良いでしょう。
 
-- アプリケーションの問題、つまり Issue が GitLab アプリケーション内にある場合は、[GitLab Dedicated で利用できない機能](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#unavailable-features) に注意しながら、Self-Managed インスタンスとして扱うことができます。
-- インフラストラクチャの問題の場合は、[Request for Help](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) を開いて SRE と連携するか、[インシデントの確認](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/incident-management/-/issues/?type%5B%5D=incident) や [自分でインシデントを発生させる](#raise-a-dedicated-incident) ことを検討します。SRE が使用している [runbook](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/tree/main/runbooks) は、追加のコンテキストとして役立つ場合があります。
+- アプリケーションの問題、つまり問題が GitLab アプリケーション内にある場合は、[GitLab Dedicated で利用できない機能](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#unavailable-features) に注意しながら、Self-Managed インスタンスとして扱うことができます。
+- インフラストラクチャの問題の場合は、[Request for Help](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) を開いて SRE と連携するか、[インシデントの確認](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/incident-management/-/issues/?type%5B%5D=incident) や [自分でインシデントを宣言する](#raise-a-dedicated-incident) ことを検討します。SRE が使用している [runbook](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/tree/main/runbooks) は、追加のコンテキストとして役立つ場合があります。
 
 `gitlab.com`、self-managed、GitLab Dedicated の違いについてさらに学ぶには、[SaaS、Self-Managed、Dedicated トラブルシューティング表](/handbook/support/workflows/saas_sm_cheatsheet/) を使用してください。
 
@@ -32,12 +32,12 @@ GitLab Dedicated のチケットに取り組みたい場合は、サポートト
 
 GitLab 内の他の GitLab Dedicated 関連ページへのリンクは以下のとおりです:
 
-- ドキュメント: [Configure GitLab Dedicated](https://docs.gitlab.com/administration/dedicated/)
+- ドキュメント: [GitLab Dedicated の設定](https://docs.gitlab.com/administration/dedicated/)
 - Product: [Switchboard](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/)
 - インフラストラクチャ: [GitLab Dedicated 内部ドキュメント](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/) (GitLab 内部のみ)
 - CSM: [GitLab Dedicated 顧客との関わり](https://internal.gitlab.com/handbook/customer-experience/csm/gitlab-dedicated/) (GitLab 内部のみ)
 
-### GitLab 製品自体ではなく、インフラストラクチャの取り扱いに関連するチケットへの対応
+### GitLab 製品自体ではなく、インフラストラクチャの取り扱いに関連するチケットへの対応 {#handling-tickets-that-are-not-about-gitlab-the-product-but-related-to-how-we-handle-the-infrastructure}
 
 GitLab Dedicated チケットの取り扱いは、他のチケットと同じ方法でアプローチしてください: ドキュメント、ハンドブック、さまざまな Issue トラッカーを使用して、顧客のリクエストに対処してください。テナントのプロビジョニングやインフラストラクチャ管理に関連することは、異なるアプローチが必要です:
 
@@ -45,7 +45,7 @@ GitLab Dedicated チケットの取り扱いは、他のチケットと同じ方
 - コンプライアンスに関する問い合わせは、`trust.gitlab.com` の [GitLab Trust Center](https://trust.gitlab.com/?product=gitlab-dedicated) を顧客に案内する
 - GitLab Trust Center で対応されていない質問については、CSM を顧客に案内する
 
-### GitLab Dedicated インスタンスでのテストと再現
+### GitLab Dedicated インスタンスでのテストと再現 {#test-and-reproduction-on-gitlab-dedicated-instance}
 
 GitLab サポートは、テストと問題の再現目的のために GitLab Dedicated インスタンスへのアクセス権を持っています。このインスタンスは以下の URL でアクセスできます:
 
@@ -58,7 +58,7 @@ GitLab Dedicated インスタンスへの招待を受け取るには、[#support
 
 GitLab Duo Enterprise シートの割り当てもリクエストできます。
 
-### テストの実施
+### テストの実施 {#conducting-a-test}
 
 GitLab Support Dedicated インスタンスでテストを実行する際は、
 
@@ -71,11 +71,11 @@ GitLab Support Dedicated インスタンスでテストを実行する際は、
 
 このインスタンスは [`Test` 環境](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/tree/main#deployed-environments) にデプロイされています。
 
-### Dedicated インスタンスへの管理者アクセス
+### Dedicated インスタンスへの管理者アクセス {#administrative-access-to-a-dedicated-instance}
 
 GitLab Dedicated チームは、Dedicated インスタンスの GitLab アプリケーションの [Admin Area](https://docs.gitlab.com/administration/) への管理者アクセス権を **持っていません**。GitLab サポートチームも持っていません。顧客組織内の選ばれた個人が **Admin Area** へのアクセス権を持っています。Admin Area での変更が必要なサポートリクエスト (たとえば、2FA のリセットなど) は、顧客組織内の適切なチームによって実行される必要があります。
 
-### 内部のログ、データ、グラフの共有
+### 内部のログ、データ、グラフの共有 {#sharing-internal-logs-data--graphs}
 
 GitLab Dedicated 顧客とは、内部のログ、データ、グラフをデフォルトで視覚的または物理的に共有すべきではありません。共有すべきでないものの例には、グラフのスクリーンショット、コピーされたログエントリ、生のログダンプなどが含まれます (ただしこれらに限定されません)。
 
@@ -88,94 +88,94 @@ GitLab Dedicated 顧客とは、内部のログ、データ、グラフをデフ
 1. GitLab Dedicated には Service Level Availability SLO が付帯しており、これが満たされない場合、GitLab に金銭的なペナルティが発生します。
 1. 2023 年 10 月時点で、GitLab Dedicated のエンジニアリングチームのキャパシティは限定的です。チームは時間の大半をエンジニアリング作業に費やし、重大ではない顧客の質問に答える時間を費やすのを避けたいと考えています。
 
-適切なコンテキストや説明なしに内部のログ、データ、グラフを共有すると、顧客が提供された情報を誤解し、関係するすべてのチームにより多くの作業を生み、最悪の場合、GitLab と顧客の関係に不必要なダメージを与える可能性があります。
+適切なコンテキストや説明なしに内部のログ、データ、グラフを共有すると、顧客が提供された情報を誤解し、関係する*すべて*のチームにより多くの作業を生み、最悪の場合、GitLab と顧客の関係に不必要なダメージを与える可能性があります。
 
-そのような内部ログ、データ、グラフの顧客との共有が、顧客と GitLab に成果を生み出すと評価する場合は、サポートディレクターに相談してください。これに関する正式なプロセスはまだ定義中であり、承認は現在その都度行われているため遅延が発生することに注意してください。
+そのような内部ログ、データ、グラフの顧客との共有が、顧客と GitLab に成果を生み出すと評価する場合は、Director of Support に相談してください。これに関する正式なプロセスはまだ定義中であり、承認は現在その都度行われているため遅延が発生することに注意してください。
 
-### ログの取り扱い
+### ログの取り扱い {#working-with-logs}
 
 ログの取り扱いは [移動されました](/handbook/support/workflows/dedicated_logs/)
 
-### Grafana の取り扱い
+### Grafana の取り扱い {#working-with-grafana}
 
 Grafana の取り扱いは [移動されました](/handbook/support/workflows/dedicated_instance_health/)
 
-### インスタンスメタデータの表示
+### インスタンスメタデータの表示 {#view-instance-metadata}
 
 Switchboard アプリを使用してください。詳細は [Switchboard ワークフロー](/handbook/support/workflows/dedicated_switchboard/) で確認できます。
 
-#### フィーチャーフラグはサポートされていません
+#### フィーチャーフラグはサポートされていません {#feature-flags-are-not-supported}
 
 GitLab Dedicated では、[フィーチャーフラグ](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#available-features) はサポートされていません。つまり、Dedicated インスタンスではフィーチャーフラグを有効化／無効化することはできません。顧客が GitLab Rails コンソールでのフィーチャーフラグの変更を要求した場合、GitLab サポートチームは以下を行う必要があります:
 
 - 機能を一般的に利用可能にする (フィーチャーフラグなしで) ことについて、適切な Issue トラッカーで Issue を作成または見つける。
-- [フィードバックテンプレート](/handbook/product/product-management/#feedback-template) に従ったコメントで、Issue で [適切なプロダクトマネージャー](/handbook/product/categories/) に通知する。
+- [フィードバックテンプレート](/handbook/product/product-management/#feedback-template) に従ったコメントで、Issue で [適切な Product Manager](/handbook/product/categories/) に通知する。
 - 根本的な問題が解決していない場合でも、[私たちはチケットをオープンのままにしません](https://about.gitlab.com/support/general-policies/#we-dont-keep-tickets-open-even-if-the-underlying-issue-isnt-resolved) ことを顧客に通知する。
 - 顧客が次のステップに関して質問がないか確認する。
 
 サポートチームメンバーで質問がある場合は、[`#support_gitlab-dedicated`](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) Slack チャンネルで追加のガイダンスを確認できます。
 
-### 機能提案
+### 機能提案 {#feature-proposals}
 
-GitLab Dedicated の機能提案 Issue は **公開** [`gitlab-org/gitlab` Issue トラッカー](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&first_page_size=100) に作成すべきです。機能提案 Issue を開く際は、プロダクトマネージャーにメンションしてください。[フィードバックテンプレート](/handbook/product/product-management/#feedback-template) を使用して、機能提案への顧客の関心を登録してください。
+GitLab Dedicated の機能提案 Issue は **公開** [`gitlab-org/gitlab` Issue トラッカー](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&first_page_size=100) に作成すべきです。機能提案 Issue を開く際は、Product Manager にメンションしてください。[フィードバックテンプレート](/handbook/product/product-management/#feedback-template) を使用して、機能提案への顧客の関心を登録してください。
 
-### 設定変更
+### 設定変更 {#configuration-changes}
 
 GitLab Dedicated は [Cloud Native Hybrid リファレンスアーキテクチャ](https://docs.gitlab.com/administration/reference_architectures/10k_users/#cloud-native-hybrid-reference-architecture-with-helm-charts-alternative) を使用しています。インスタンスの実装と変更は [instrumentor プロジェクト](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/instrumentor) を介して行われます。
 
-緊急の場合は、[Dedicated インシデントを発生させる](#raise-a-dedicated-incident) ようにしてください。
+緊急の場合は、[Dedicated インシデントを宣言する](#raise-a-dedicated-incident) ようにしてください。
 
 下記以外の変更が必要な場合は、[`SupportRequestTemplate-GitLabDedicated` で Issue を発生させる](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) ようにしてください。
 
-#### Inbound (フォワード) PrivateLink リクエスト
+#### インバウンド（フォワード）PrivateLink リクエスト {#inbound-forward-privatelink-request}
 
-Inbound Private Link 設定は、現在 [顧客が Switchboard でセルフサービスで利用可能](https://docs.gitlab.com/administration/dedicated/configure_instance/network_security/#inbound-private-link) であり、サポートの関与は不要となりました。
+顧客は Support の関与なしに、[Switchboard でインバウンド PrivateLink 接続を設定](https://docs.gitlab.com/administration/dedicated/configure_instance/network_security/#inbound-privatelink-connections)できます。
 
-#### Outbound (リバース) PrivateLink リクエスト
+#### アウトバウンド（リバース）PrivateLink リクエスト {#outbound-reverse-privatelink-request}
 
-顧客は、サポートの関与なしに [Switchboard で outbound private link 設定をセルフサービスで実行](https://docs.gitlab.com/administration/dedicated/configure_instance/network_security/#outbound-private-link) できます。
+顧客は Support の関与なしに、Switchboard で[アウトバウンド PrivateLink の設定をセルフサービスで実行](https://docs.gitlab.com/administration/dedicated/configure_instance/network_security/#outbound-privatelink-connections)できます。
 
-#### IP 許可リストリクエスト
+#### IP 許可リストリクエスト {#ip-allowlist-request}
 
 ほとんどの場合、顧客は **Switchboard** を使用して、自身の GitLab Dedicated インスタンスの [IP 許可リストを更新](https://docs.gitlab.com/administration/dedicated/configure_instance/network_security/#ip-allowlist) すべきです。これが不可能な場合:
 
 1. 顧客にチケットで [必要な情報](https://docs.gitlab.com/administration/dedicated/configure_instance/network_security/#ip-allowlist) を提供してもらいます。この場合、IP アドレスのカンマ区切りリストです。
 1. [Request for Help Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) を開いて、GitLab Dedicated Issue トラッカーで `support::request-for-help`) であることを確認します。
 
-##### IP 許可リスト付きの SCIM / OIDC リクエスト
+##### IP 許可リスト付きの SCIM / OIDC リクエスト {#scim--oidc-with-ip-allowlist-request}
 
 IP 許可リストを使用している顧客は、SCIM または OIDC エンドポイントをインターネットに有効化することをリクエストできます。これは単純なオン／オフの切り替えですが、Environment Automation チームによって実行される必要があります:
 
 1. GitLab Dedicated Issue トラッカーで [Request for Help Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) を開きます。(`support::request-for-help` ラベルが適用されていることを確認)
 
-#### SAML リクエスト
+#### SAML リクエスト {#saml-request}
 
 1. 顧客にチケットで [必要な情報](https://docs.gitlab.com/administration/dedicated/configure_instance/authentication/saml/#add-a-saml-provider-with-a-support-request) を提供してもらいます。この場合、SAML 設定ブロックか、顧客から提供された情報のリストになります。
 1. 新しい [SAML Config Request Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicatedSAMLConfigRequest) を開いて、`support::request-for-help` ラベルが追加されていることを確認します。
 1. 顧客から提供された情報を追加し、必要なフォーマットに合わせます。
 
-#### アプリケーションログリクエスト
+#### アプリケーションログリクエスト {#application-logs-request}
 
 [顧客にアプリケーションログへのアクセスを許可する](/handbook/support/workflows/dedicated_logs/#granting-customers-access-to-application-logs) を参照してください。
 
-### 大量アクティビティの事前通知
+### 大量アクティビティの事前通知 {#advance-notice-of-high-volume-activity}
 
 お客様が今後予定している大量アクティビティについて GitLab サポートに連絡してきた場合は、[Request for Help Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) を起票してアクティビティとそのタイミングを記録します。大量アクティビティには、大規模な移行、一括自動化、その他 GitLab Dedicated 環境への負荷を大幅に増加させる可能性のある操作が含まれます。
 
 GitLab Dedicated は、この種のアクティビティに対するライブモニタリングを提供していません。
 
-### Issue の登録
+### Issue の登録 {#filing-issues}
 
 カスタマーサポートが、テナントのリクエストで情報を収集したり問題をデバッグしたりするために Dedicated エンジニアと連携する必要がある場合 (Grafana や OpenSearch では不十分な場合)、[Request for Help Issue トラッカー](https://gitlab.com/gitlab-com/request-for-help/-/issues/) で [`Request for Help` テンプレート](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) を使用して Issue を発生させます。
 
-RFH には、すべての重大度レベルに対して 3 営業日の [SLA](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/runbooks/on-call.html#sla) があります。[サポート定義](https://support.gitlab.com/hc/en-us/articles/11626416629660-Definitions#definitions-of-support-impact) に基づく Severity 1 と 2 の Issue については、[Dedicated インシデントを発生させる](#raise-a-dedicated-incident) ことを検討してください。判断に迷う場合は、Slack `#support_gitlab-dedicated` で確認してください。
+RFH には、すべての重大度レベルに対して 3 営業日の [SLA](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/runbooks/on-call.html#sla) があります。[サポート定義](https://support.gitlab.com/hc/en-us/articles/11626416629660-Definitions#definitions-of-support-impact) に基づく Severity 1 と 2 の Issue については、[Dedicated インシデントを宣言する](#raise-a-dedicated-incident) ことを検討してください。判断に迷う場合は、Slack `#support_gitlab-dedicated` で確認してください。
 
 調査の過程で、Request for Help (RFH) Issue を別のチームにエスカレーションする必要があると気付くことがあります。既存のプロセスに従って、[GitLab 開発チームの別グループに正式に支援をリクエスト](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team) してください。これを行う際:
 
 - これまでの調査をまとめ、エスカレーション先のチームへの依頼が明確であることを確認する
 - GitLab Dedicated Issue トラッカーで RFH Issue に `~workflow-infra::Escalated` ラベルを適用する
 
-### GitLab Dedicated 緊急対応の処理
+### GitLab Dedicated 緊急対応の処理 {#handling-gitlab-dedicated-emergencies}
 
 GitLab Dedicated 顧客緊急対応は、他のすべての顧客緊急対応と同じプロセスで [緊急リクエストのトリアージ](/handbook/support/workflows/customer_emergencies_workflows/#triage-the-emergency-request) を行います。
 
@@ -186,32 +186,32 @@ GitLab Dedicated 顧客緊急対応は、他のすべての顧客緊急対応と
    - GitLab Dedicated インフラストラクチャチームが積極的に調査していることを顧客に通知します。
    - Dedicated SRE オンコールに連絡を取り、顧客がトラブルシューティングに関与する必要があるかを判断します。
    - 必要に応じて顧客と Dedicated SRE を支援します。
-1. オープンなインシデントがない場合は、[Dedicated インシデントを発生させて](#raise-a-dedicated-incident) ください。
+1. オープンなインシデントがない場合は、[Dedicated インシデントを宣言して](#raise-a-dedicated-incident) ください。
 
-#### Switchboard でのテナントステータスの理解
+#### Switchboard でのテナントステータスの理解 {#understanding-tenant-status-in-switchboard}
 
 Switchboard の Overview ページには、各 GitLab Dedicated インスタンスのリアルタイムステータス情報が表示されます。Dedicated Switchboard ワークフローの [テナントステータスインジケータの理解](dedicated_switchboard.md#understanding-tenant-status-indicators) を参照してください。
 
-#### Dedicated インシデントを発生させる {#raise-a-dedicated-incident}
+#### Dedicated インシデントを宣言する {#raise-a-dedicated-incident}
 
-GitLab Dedicated インシデントを発生させる際には、3 つすべてのステップを完了する必要があります:
+GitLab Dedicated インシデントを宣言する際には、3 つすべてのステップを完了する必要があります:
 
 1. [Slack 経由で Dedicated インシデントを宣言](../../engineering/infrastructure-platforms/incident-management/_index.md#reporting-an-incident) します。
    - [Dedicated Switchboard](dedicated_switchboard.md#accessing-switchboard) を参照して、顧客の `internal_reference` と `tenant_id` (識別子としても知られる) を提供します。
 1. Slack で自動的に作成されたインシデントチャンネルで、現在の状態のサマリーを提供します。
-1. 宣言された Dedicated インシデントは、GitLab.com とは異なり、自動的に EOC をページしません。[インシデントを GitLab Dedicated エンジニアオンコールにエスカレーションする](#escalate-to-gitlab-dedicated-engineer-on-call) に進んでください。
+1. 宣言された Dedicated インシデントは、GitLab.com とは異なり、自動的に EOC をページしません。[インシデントを GitLab Dedicated Engineer On-Call にエスカレーションする](#escalate-to-gitlab-dedicated-engineer-on-call) に進んでください。
 
-これでインシデントの発生は完了です！
+これでインシデントの宣言は完了です！
 
-#### GitLab Dedicated エンジニアオンコールへのエスカレーション {#escalate-to-gitlab-dedicated-engineer-on-call}
+#### GitLab Dedicated Engineer On-Call へのエスカレーション {#escalate-to-gitlab-dedicated-engineer-on-call}
 
-緊急の Dedicated Issue やインシデントについてすぐに注意を引くために、GitLab Dedicated SRE である GitLab Dedicated エンジニアオンコール (GDEOC) にエスカレーションする必要がある場合があります。
+緊急の Dedicated の問題やインシデントについてすぐに注意を引くために、GitLab Dedicated SRE である GitLab Dedicated Engineer On-Call (GDEOC) にエスカレーションする必要がある場合があります。
 
-GDEOC は incident.io を使用して緊急のインフラストラクチャ上の問題を管理します。既存の Dedicated インシデントがあることを確認し（存在しない場合は [Dedicated インシデントを発生させて](#raise-a-dedicated-incident)）、GDEOC をページするために **On-Call Teams** として **dedicated EOC** を選択し、以下のいずれかを行います:
+GDEOC は incident.io を使用して緊急のインフラストラクチャ上の問題を管理します。既存の Dedicated インシデントがあることを確認し（存在しない場合は [Dedicated インシデントを宣言して](#raise-a-dedicated-incident)）、GDEOC をページするために **On-Call Teams** として **dedicated EOC** を選択し、以下のいずれかを行います:
 
 - インシデントの Slack チャンネルで **📟 Escalate to someone** ボタンをクリックする
 - インシデントの Slack チャンネルに `/inc escalate` と入力する
 
-#### GitLab Dedicated CMOC を関与させる
+#### GitLab Dedicated CMOC を関与させる {#engaging-the-gitlab-dedicated-cmoc}
 
 緊急対応の性質が、顧客に非同期のステータス更新を提供するだけのレベルになった場合、引き継いでもらうために [GitLab Dedicated Communications Manager on Call](/handbook/support/workflows/dedicated_cmoc) の関与を検討してください。

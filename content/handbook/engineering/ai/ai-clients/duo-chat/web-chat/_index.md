@@ -4,14 +4,14 @@ description: "Web Chat 機能別チームは、GitLab Web UI での Duo Chat 体
 aliases:
   - /handbook/engineering/ai/ai-clients/web-chat/
 upstream_path: /handbook/engineering/ai/ai-clients/duo-chat/web-chat/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:50:55+09:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+lastmod: "2026-11-05T15:40:43+01:00"
+translated_at: "2026-11-06T21:02:53.377822+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
 Web Chat 機能別チームは、[Duo Chat グループ](/handbook/engineering/ai/ai-clients/duo-chat/)の一部であり、[AI Clients ステージ](/handbook/engineering/ai/ai-clients/)内にあります。
 
@@ -19,26 +19,25 @@ Web Chat 機能別チームは、[Duo Chat グループ](/handbook/engineering/a
 
 ---
 
-## 👨‍💻 チームメンバー
+## 👨‍💻 チームメンバー {#-team-members}
 
 {{< group-by-slugs donaldcook enrique-alcantara tomasbulva rfrederico >}}
 
-## 🤝 安定したカウンターパート
+## 🤝 安定したカウンターパート {#-stable-counterparts}
 
 {{< group-by-slugs dashaadu nickleonard >}}
 
 ---
 
-## 💬 Slack
+## 💬 Slack {#-slack}
 
 - **Duo Chat ラウンジ：** [#duo-chat-lounge](https://gitlab.enterprise.slack.com/archives/C06LWENL58F)
-- **Duo Chat に関する一般的な質問：** [#g_duo_chat](https://gitlab.slack.com/archives/g_duo_chat)
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と連絡
-- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期専用
+- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.enterprise.slack.com/archives/C0BFY0ZRR7W) — チームの同期専用
 
 ---
 
-## 💻 範囲
+## 💻 範囲 {#-scope}
 
 Web Chat チームは、GitLab Web UI での Duo Chat 体験を担当します。
 
@@ -49,7 +48,7 @@ Web Chat チームは、GitLab Web UI での Duo Chat 体験を担当します�
 
 ---
 
-## 🔗 便利なリンク
+## 🔗 便利なリンク {#-useful-links}
 
 - [Duo Chat ドキュメント](https://docs.gitlab.com/user/gitlab_duo_chat/)
 - [Duo Chat Runbook](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/duo-chat/README.md?ref_type=heads)

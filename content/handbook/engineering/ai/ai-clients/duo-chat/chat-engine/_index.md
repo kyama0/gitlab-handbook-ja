@@ -4,14 +4,14 @@ description: "Chat Engine 機能別チームは、AI バックエンド、ツー
 aliases:
   - /handbook/engineering/ai/ai-clients/chat-engine/
 upstream_path: /handbook/engineering/ai/ai-clients/duo-chat/chat-engine/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:50:55+09:00"
+upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
+lastmod: "2026-11-05T15:40:43+01:00"
+translated_at: "2026-11-06T21:02:53.377822+00:00"
 translator: codex
 stale: false
 ---
 
-## 概要
+## 概要 {#overview}
 
 Chat Engine 機能別チームは、[Duo Chat グループ](/handbook/engineering/ai/ai-clients/duo-chat/)の一部であり、[AI Clients ステージ](/handbook/engineering/ai/ai-clients/)内にあります。
 
@@ -19,11 +19,11 @@ Chat Engine 機能別チームは、[Duo Chat グループ](/handbook/engineerin
 
 ---
 
-## 👨‍💻 チームメンバー
+## 👨‍💻 チームメンバー {#-team-members}
 
 {{< group-by-slugs donaldcook evakadlecova kaveh_nejad_gitlab john-slaughter >}}
 
-## 🤝 安定したカウンターパート
+## 🤝 安定したカウンターパート {#-stable-counterparts}
 
 私たちの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)は以下のとおりです。
 
@@ -31,16 +31,15 @@ Chat Engine 機能別チームは、[Duo Chat グループ](/handbook/engineerin
 
 ---
 
-## 💬 Slack
+## 💬 Slack {#-slack}
 
 - **Duo Chat ラウンジ：** [#duo-chat-lounge](https://gitlab.enterprise.slack.com/archives/C06LWENL58F)
-- **Duo Chat に関する一般的な質問：** [#g_duo_chat](https://gitlab.slack.com/archives/g_duo_chat)
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と連絡
-- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期専用
+- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.enterprise.slack.com/archives/C0BFY0ZRR7W) — チームの同期専用
 
 ---
 
-## 💻 範囲
+## 💻 範囲 {#-scope}
 
 Chat Engine チームは、すべてのサーフェスで Duo Chat を支えるコアエンジンを担当します。
 
@@ -53,7 +52,7 @@ Chat Engine チームは、すべてのサーフェスで Duo Chat を支える�
 
 ---
 
-## 🔗 便利なリンク
+## 🔗 便利なリンク {#-useful-links}
 
 - [Duo Chat 技術戦略](/handbook/engineering/ai/duo-chat/technical-strategy/)
 - [Duo Chat ドキュメント](https://docs.gitlab.com/user/gitlab_duo_chat/)
