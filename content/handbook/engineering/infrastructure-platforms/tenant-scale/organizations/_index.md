@@ -1,10 +1,10 @@
 ---
 title: Organizations チーム
 description: "Organizations チームに関する情報"
-upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-11T10:03:08+08:00
-translated_at: "2026-06-12T21:15:09Z"
+upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+lastmod: "2026-11-06T16:03:29-05:00"
+translated_at: "2026-11-07T10:42:29Z"
 translator: claude
 stale: false
 ---
@@ -19,13 +19,13 @@ Organizations チームの主な焦点は、[Cells](/handbook/engineering/archit
 プロジェクト（通常は [GitLab](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&first_page_size=100)）に Issue を作成し、
 `~"group::organizations"` ラベルと、その他の適切なラベルを追加するのが最善です。
 
-緊急の項目については、Slack チャンネル（内部）をお気軽にご利用ください: [#g_organizations](https://gitlab.slack.com/archives/g_organizations)。
+緊急の項目については、Slack チャンネル（内部）をお気軽にご利用ください。 [#g_organizations](https://gitlab.slack.com/archives/g_organizations)。
 
 ### ビジョン {#vision}
 
 チームは、新しいトップレベルエンティティとして Organizations を実装することで、GitLab のより拡張性が高く統合されたアーキテクチャの開発に取り組んでいます。
 
-Organizations は論理的なコンテナとして機能し、[セルラーアーキテクチャ](/handbook/engineering/architecture/design-documents/cells/) 全体への分散を可能にしながら、セルフマネージドと SaaS の GitLab インスタンス間の機能ギャップを埋めます。
+Organizations は論理的なコンテナとして機能し、[セルラーアーキテクチャ](/handbook/engineering/architecture/design-documents/cells/) 全体への分散を可能にしながら、Self-Managed と SaaS の GitLab インスタンス間の機能ギャップを埋めます。
 新しい Organizations エンティティは複数のトップレベルグループの傘として機能し、企業がグループをまたいでコンテンツを集約し、組織全体のロールを実装し、他の Organizations からコンテンツを分離できるようにします。
 
 同時に、チームはいくつかの重要な課題に取り組むことでグループとプロジェクトの改善を目指しています。多様な企業構造に対応するためのより柔軟な階層の作成、グループ内のプロジェクトのネストに関する混乱の軽減、プロダクト全体での発見性の向上、削除と復旧プロセスの標準化、アーカイブ機能と可視性の改善などです。
@@ -33,11 +33,11 @@ Organizations は論理的なコンテナとして機能し、[セルラーア�
 
 ### ゴール {#goals}
 
-Organizations グループのエグゼクティブサマリーのゴールには、以下が含まれます:
+Organizations グループのエグゼクティブサマリーのゴールには、以下が含まれます。
 
 - GitLab.com の日次アクティブユーザーの成長を支える
 - 特定のデータストアでの問題がすべてのユーザーに影響を及ぼさないようにする
-- セルフマネージドのユースケースの複雑さを最小化または排除する
+- Self-Managed のユースケースの複雑さを最小化または排除する
 
 ### リリースステージ {#release-stages}
 
@@ -48,13 +48,13 @@ Experimental から Beta、Limited Availability、GA、Stable へとどのよう
 
 ### チームメンバー {#team-members}
 
-以下の人々は Organizations グループの常設メンバーです:
+以下の人々は Organizations グループの常設メンバーです。
 
 {{% team-by-manager-slug manager="mandrewsgl" team="Organizations" %}}
 
 ### 安定したカウンターパート {#stable-counterparts}
 
-他の機能チームの以下のメンバーは、私たちの安定したカウンターパートです:
+他の機能チームの以下のメンバーは、私たちの安定したカウンターパートです。
 
 {{% engineering/stable-counterparts manager="glopezfernandez" role="Tenant Scale|Principal Engineer, Data Stores|Senior Distinguished Engineer, Ops and Core Platform" %}}
 
@@ -67,15 +67,15 @@ Experimental から Beta、Limited Availability、GA、Stable へとどのよう
 ## プロジェクト {#projects}
 
 私たちはさまざまな大規模プロジェクトに取り組んでおり、各プロジェクトには [Directly Responsible Individual (DRI)](/handbook/people-group/directly-responsible-individuals/) がいます。
-DRI の役割には、プロジェクトに必要な作業の範囲の定義を支援し、3 〜 6 ヶ月先を見据えて
-潜在的なブロックやリスクを特定する責任を持ちながら、目標の明確化を確保することが含まれます。
+DRI の役割には、プロジェクトに必要な作業範囲の定義を支援し、目標を明確にすることが含まれます。
+また、3 〜 6 ヶ月先を見据えて、潜在的な障害やリスクを特定する責任も担います。
 その作業はその領域に限定されず、必要に応じて他の領域でも作業します。
 
 **グループとプロジェクト**
 
 | プロジェクト | DRI | チーム |
 | ------ | --- | ---- |
-| [State Management イテレーション 4: レガシーな状態チェックを新システムに置き換える](https://gitlab.com/groups/gitlab-org/-/work_items/17958) | Aakriti, Abdul | Shubham |
+| [状態管理イテレーション 4： レガシーな状態チェックを新システムに置き換える](https://gitlab.com/groups/gitlab-org/-/work_items/17958) | Aakriti, Abdul | Shubham |
 | [Explore > プロジェクトを Vue に移行](https://gitlab.com/groups/gitlab-org/-/epics/13786) | Peter | Shane |
 | [Explore > グループを vue_shared/components/groups_list に移行](https://gitlab.com/groups/gitlab-org/-/epics/13791) | Peter | Shane |
 | [プロジェクトアーカイブ機能をグループアーカイブと互換性を持たせる](https://gitlab.com/groups/gitlab-org/-/epics/19690) | Shubham, Abdul | Shane |
@@ -92,10 +92,10 @@ DRI の役割には、プロジェクトに必要な作業の範囲の定義を�
 プロジェクトは 1 つまたは複数のエピックで構成されます。
 プロジェクトの一部である各エピックには、実装フェーズ中にエンジニアリングから DRI が割り当てられます。
 私たちは、チームの[エピック進捗ダッシュボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/2071697?label_name%5B%5D=group%3A%3Aorganizations)で進捗を追跡しています。
-エピックのステータスは、以下のようにさまざまなチームメンバーによって更新されます:
+エピックのステータスは、以下のようにさまざまなチームメンバーによって更新されます。
 
 1. チームメンバーがプロジェクトの新しいエピックを作成し、説明にエピックの目標と利点を定義します。
-1. デザインが必要な場合、プロダクトマネージャーはエピックに `workflow::ready for design` のマークを付けます。テーブルマイグレーションやパーティショニングのようなバックエンドのみの項目には、このステップは不要です。
+1. デザインが必要な場合、Product Managerはエピックに `workflow::ready for design` のマークを付けます。テーブルマイグレーションやパーティショニングのようなバックエンドのみの項目には、このステップは不要です。
 1. デザインが完了しエピックに追加されたら、必要に応じてエピックに `workflow::refinement` のマークを付け、実装 Issue に分解します。
 1. すべての初期実装 Issue が定義されたら、エンジニアは `workflow::ready for development` ラベルを追加します。
 1. 最初の Issue に着手したときに、エピックにエンジニアリング DRI を割り当てます。この時点で、DRI はエピックのステータスを `workflow::in dev` に変更します。
@@ -109,11 +109,11 @@ DRI の役割には、プロジェクトに必要な作業の範囲の定義を�
 同期ミーティングも行います。全員がそれらのミーティングに出席できる可能性は低いため、
 ミーティングを録画し、書面のサマリーを共有します（[アジェンダ](https://docs.google.com/document/d/1Z90O_U3mrUoRkmeb5ZqtoM351ASoRTnuFiuou4IMY_k/edit?tab=t.0#heading=h.cbjs5jlz67tt)）。
 
-現在、以下の定期ミーティングがスケジュールされています:
+現在、以下の定期ミーティングがスケジュールされています。
 
-### 毎週水曜 - Organizations Team Sync {#weekly-wednesday-organizations-team-sync}
+### 毎週水曜 - Organizations Team Sync {#weekly-wednesday---organizations-team-sync}
 
-プロダクトマネージャー（PM）は、チーム、エンジニアリングマネージャー（EM）、その他のステークホルダーからの
+Product Manager（PM）は、チーム、Engineering Manager（EM）、その他のステークホルダーからの
 インプットを受けて、[プロダクトの優先順位付けプロセス](/handbook/product/product-processes/#prioritization)に従って
 Issue のリストをまとめます。
 イテレーションサイクルは月の第 2 金曜日まで続き、翌週の月曜日から新たに開始します。
@@ -122,7 +122,7 @@ Issue のリストをまとめます。
 ### マイルストーンプランニング {#milestone-planning}
 
 マイルストーンを開始する前に、グループは[プランニング Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=Planning%20Issue) を使用して調整します。
-私たちは次のプロセスに従います:
+私たちは次のプロセスに従います。
 
 - PM がマイルストーンの目標を定義します。
 - チームメンバーが、マイルストーンに関連すると考える Issue についてコメントします。
@@ -150,11 +150,11 @@ Issue のリストをまとめます。
 ガイドラインに従います。現在のマイルストーンにおけるすべての Issue のステータスの概要を把握するには、
 [開発ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/2594854)を確認してください。
 
-このプロセスは主に次のように進みます:
+このプロセスは主に次のように進みます。
 
 - `workflow::ready for design` は、Issue がデザイン作業を開始する準備ができていることを示します
 - `workflow::design` は、デザイナーが Issue に積極的に取り組んでいることを示します
-- `workflow::planning breakdown` は、デザインが完了し、実装のためにサブ Issue に分解する準備ができていることを示します。デザインプロセス中のコンテキストと決定を保持するため、可能な場合は、デザイン Issue をエピックに昇格させて再利用し、実装 Issue を追加します。そうすることで、エピックをデザインの [SSOT](/teamops/shared-reality/#single-source-of-truth-ssot) として使用でき、すべての議論が 1 か所にまとまり、元のデザイン Issue と対応する実装 Issue の間に不整合が生じることがなくなります。
+- `workflow::planning breakdown` は、デザインが完了し、実装のためにサブ Issue に分解する準備ができていることを示します。デザインプロセス中のコンテキストと決定を保持するため、可能な場合は、デザイン Issue をエピックに昇格させて再利用し、実装 Issue を追加します。そうすることで、エピックをデザインの SSOT として使用でき、すべての議論が 1 か所にまとまり、元のデザイン Issue と対応する実装 Issue の間に不整合が生じることがなくなります。
 - `workflow::refinement` は、Issue がエンジニアリングによる整理が必要であることを示します。このステップでは、実装ガイドとウェイトを Issue に追加する必要があります。
 - `workflow::ready for development` は、項目がエンジニアリングによって取り組まれる準備ができていることを示します
 
@@ -169,8 +169,8 @@ Issue のリストをまとめます。
 出発点として `workflow::in dev` ラベルを付け、
 [開発を通じて Issue を更新](/handbook/engineering/workflow/#updating-workflow-labels-throughout-development)し続けます。
 Issue をクローズする前に、`workflow::complete` ラベルを追加することが重要です。これは、完了した項目が
-毎月のリリースポストの Improvements and Bugs の概要に表示されるための要件の 1 つだからです。
-このプロセスは主に次の図のように進みます:
+毎月のリリースポストの改善とバグの概要に表示されるための要件の 1 つだからです。
+このプロセスは主に次の図のように進みます。
 
 ``` mermaid
 graph LR
@@ -194,8 +194,8 @@ graph LR
 私たち自身の領域を超えてコードベースへの変更を伴う新しい MR を作成する場合は、CODEOWNERS や同様の自動化がトリガーされない場合でも、影響を受けるチームに積極的に連絡を取るべきです。
 
 - たとえコードレビューのためではなく可視性のためだけであっても、私たちの変更について知らせるべき適切な人を見つけるために追加の努力をすべきです。
-- オーナーシップが不確かな場合（例: CODEOWNERS などがオーナーを特定しない場合）、エンジニアは明示的にこれをフラグとして示し、関与できる DRI の特定について助けを求めるべきです。
-- 何のオーナーが誰なのか不明確な場合は、次のアプローチを検討してください:
+- オーナーシップが不確かな場合（例：CODEOWNERS などがオーナーを特定しない場合）、エンジニアは明示的にこれをフラグとして示し、関与できる DRI の特定について助けを求めるべきです。
+- 何のオーナーが誰なのか不明確な場合は、次のアプローチを検討してください。
   - オープンなチームチャンネルで質問する
   - EM/PM をタグ付けして調査してもらう
   - コードベースの履歴をレビューして最近のコントリビューターを特定する
@@ -203,13 +203,13 @@ graph LR
 
 ### エピックボード {#epic-boards}
 
-私たちは進行中のイニシアチブを以下のエピックボードで追跡しています:
+私たちは進行中のイニシアチブを以下のエピックボードで追跡しています。
 
-- [Group::Organizations epic progress](https://gitlab.com/groups/gitlab-org/-/epic_boards/2071697?label_name%5B%5D=group%3A%3Aorganizations)
+- [Group::Organizations エピック進捗](https://gitlab.com/groups/gitlab-org/-/epic_boards/2071697?label_name%5B%5D=group%3A%3Aorganizations)
 
 ### Issue ボード {#issue-boards}
 
-私たちは作業を以下の Issue ボードで追跡しています:
+私たちは作業を以下の Issue ボードで追跡しています。
 
 - [Group::Organizations マイルストーンの優先順位付け](https://gitlab.com/groups/gitlab-org/-/boards/5548886?label_name[]=group%3A%3Aorganizations)
 - [Group::Organizations 機能横断的な優先順位付け](https://gitlab.com/groups/gitlab-org/-/boards/4424394?label_name[]=group%3A%3Aorganizations)
@@ -226,10 +226,10 @@ graph LR
 
 ### 追跡ダッシュボード {#tracking-dashboards}
 
-Issue ボードとエピックボードに加えて、私たちは以下のような専用ダッシュボードでも主要なイニシアチブの進捗を追跡しています:
+Issue ボードとエピックボードに加えて、私たちは以下のような専用ダッシュボードでも主要なイニシアチブの進捗を追跡しています。
 
-- [Schema migration](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/schema_migration)
-- [Sharding key migration](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/sharding_keys)
+- [スキーマのマイグレーション](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/schema_migration)
+- [シャーディングキーのマイグレーション](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/sharding_keys)
 
 これらのダッシュボードは [Cells Progress Tracker](https://gitlab.com/gitlab-org/tenant-scale-group/cells-progress-tracker) プロジェクトの一部です。
 チームはまた、[Epic Dashboards](https://gitlab.com/gitlab-org/tenant-scale-group/epic-dashboard) を、他のチームが独自のエピックベースの追跡ダッシュボードを作成するために使用できるプロジェクトとしてスピンオフしました。
@@ -249,21 +249,21 @@ Issue に関する知識のレベルに応じて、別の人にとっては異�
 
 #### ウェイト {#weights}
 
-Issue にウェイトを付けるには、以下の重要な要素を考慮してください:
+Issue にウェイトを付けるには、以下の重要な要素を考慮してください。
 
-- 作業量: コードベースへの変更の想定サイズ。
-- 複雑さ:
-  - 問題の理解: 問題がどれだけよく理解されているか。
-  - 問題解決の難しさ: 遭遇すると予想される難易度のレベル。
+- 作業量：コードベースへの変更の想定サイズ。
+- 複雑さ：
+  - 問題の理解：問題がどれだけよく理解されているか。
+  - 問題解決の難しさ：遭遇すると予想される難易度のレベル。
 
-開発作業を見積もる際は、Issue に適切なウェイトを割り当ててください:
+開発作業を見積もる際は、Issue に適切なウェイトを割り当ててください。
 
 | ウェイト | 説明 | 例 |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1: 些細 | 可能な限り最もシンプルな変更。副作用がないと確信できます。複雑さは無視できる程度です。 | ドキュメントの更新、単純なリグレッション、すでに調査・議論済みで数行のコードで修正できるその他のバグ、または対処方法が正確にわかっているがまだ時間が取れていない技術的負債。 |
-| 2: 小 | すべての要件を理解しているシンプルな変更（最小限のコード変更）。小さな不確実性は存在しますが、解決策に確信があります。 | 既存データを公開する新しい API エンドポイントのようなシンプルな機能、または調査がすべて完了している通常のバグやパフォーマンス問題。 |
-| 3: 中 | より大きなコードのフットプリントを伴う変更（例: 多数の異なるファイルや、影響を受けるテスト）。私たちが対処する必要のある不確実性があります。 | バックエンドとフロントエンドのコンポーネントを伴う可能性のある通常の機能、またはほとんどのバグやパフォーマンス問題。 |
-| 5: 大 | コードベースの複数の領域に影響を与える、より複雑な変更。リファクタリングも伴う可能性があります。要件が十分に理解されておらず、複数の重要なギャップがあると感じられます。マージリクエストを開始する前に、この Issue をより小さな単位に分解する必要があります。 | バックエンドとフロントエンドのコンポーネントを伴う大規模な機能、または初期調査は行われたものの、まだ再現・理解されていないバグやパフォーマンス問題。 |
+| 1：些細 | 可能な限り最もシンプルな変更。副作用がないと確信できます。複雑さは無視できる程度です。 | ドキュメントの更新、単純なリグレッション、すでに調査・議論済みで数行のコードで修正できるその他のバグ、または対処方法が正確にわかっているがまだ時間が取れていない技術的負債。 |
+| 2：小 | すべての要件を理解しているシンプルな変更（最小限のコード変更）。小さな不確実性は存在しますが、解決策に確信があります。 | 既存データを公開する新しい API エンドポイントのようなシンプルな機能、または調査がすべて完了している通常のバグやパフォーマンス問題。 |
+| 3：中 | より大きなコードのフットプリントを伴う変更（例：多数の異なるファイルや、影響を受けるテスト）。私たちが対処する必要のある不確実性があります。 | バックエンドとフロントエンドのコンポーネントを伴う可能性のある通常の機能、またはほとんどのバグやパフォーマンス問題。 |
+| 5：大 | コードベースの複数の領域に影響を与える、より複雑な変更。リファクタリングも伴う可能性があります。要件が十分に理解されておらず、複数の重要なギャップがあると感じられます。マージリクエストを開始する前に、この Issue をより小さな単位に分解する必要があります。 | バックエンドとフロントエンドのコンポーネントを伴う大規模な機能、または初期調査は行われたものの、まだ再現・理解されていないバグやパフォーマンス問題。 |
 
 ウェイトが 5 以上のものは、可能であれば分解すべきです。
 
@@ -276,7 +276,7 @@ Issue にウェイトを付けるには、以下の重要な要素を考慮し�
 バックログ整理プロセスに加えて、エンジニアはこのバックログ整理プロセスに従わずに
 任意の Issue を見積もることもできます。
 
-#### ステップ 1: 整理する Issue の特定 {#step-1-identifying-issues-for-refinement}
+#### ステップ 1： 整理する Issue の特定 {#step-1-identifying-issues-for-refinement}
 
 チームは `workflow::refinement` ラベルを使用して、整理が必要な Issue を特定します。
 バックログ整理プロセスの良い候補となる Issue（ウェイトなし、
@@ -286,26 +286,26 @@ Issue にウェイトを付けるには、以下の重要な要素を考慮し�
 [整理 Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/blob/main/scripts/refinement) は毎週の初めに自動生成されます。
 スクリプトは私たちの[ステージプロジェクト](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks)で調整できます。
 
-#### ステップ 2: Issue の整理 {#step-2-refining-issues}
+#### ステップ 2： Issue の整理 {#step-2-refining-issues}
 
 週を通じて、チームの各エンジニアはバックログ整理のために選ばれた Issue のリストを確認します。[現在のバックログ整理 Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=workflow%3A%3Arefinement)。
 
-各 Issue について、チームメンバーは Issue をレビューし、以下を提供します:
+各 Issue について、チームメンバーは Issue をレビューし、以下を提供します。
 
 - 見積もりウェイト
 - 必要に応じた Issue の分解
 - 実装ガイド
 
-Issue を整理する際は、以下を考慮してください:
+Issue を整理する際は、以下を考慮してください。
 
 - 会話は元の Issue 上で続けるか、コンテキストを保持するために関連する議論へのリンクを Issue に記載する
 - より多くの情報が集まるにつれて、Issue の説明、実装計画、ラベルを更新する
 - 効率のため、エンジニアは完了済みとマークされたすでに整理された Issue の整理をスキップできる
 - 修正が明確で簡単な場合、エンジニアは Issue を自分自身にアサインし、ウェイト 1 を付け、修正をプッシュし、Issue をクローズできる
 
-#### ステップ 3: 整理の確定 {#step-3-finalizing-refinement}
+#### ステップ 3： 整理の確定 {#step-3-finalizing-refinement}
 
-エンジニアがインプットを提供する機会を得た後、EM または PM が以下を行います:
+エンジニアがインプットを提供する機会を得た後、EM または PM が以下を行います。
 
 - ウェイトを割り当てる
 - 懸念がある場合は安定したカウンターパートに知らせる
@@ -332,7 +332,7 @@ PM や UX からより多くの情報を得る必要があるかどうかを確�
 ある Issue、機能、またはその他の種類のプロジェクトが、
 特に有用な学習体験になった場合、私たちはそこから学ぶために同期または
 非同期のレトロスペクティブを開催することがあります。取り組んでいる何かが
-レトロスペクティブに値すると思う場合は:
+レトロスペクティブに値すると思う場合は、
 
 1. なぜレトロスペクティブを開催したいのかを説明する [Issue を作成](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues)し、これを同期にすべきか非同期にすべきかを示します。
 1. EM と、関与すべきその他の人（PM やカウンターパートなど）を含めます。
@@ -350,9 +350,9 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 
 ## ダッシュボード {#dashboards}
 
-私たちのグループメトリクスは、以下に挙げる Tableau ビューで確認できます:
+私たちのグループメトリクスは、以下に挙げる Tableau ビューで確認できます。
 
-- [Top engineering metrics](https://10az.online.tableau.com/#/site/gitlab/workbooks/2251271/views)
-- [Merge request metrics](https://10az.online.tableau.com/#/site/gitlab/workbooks/2104461/views)
-- [Flaky test issues](https://10az.online.tableau.com/#/site/gitlab/workbooks/2283052/views)
-- [Slow RSpec test issues](https://10az.online.tableau.com/#/site/gitlab/workbooks/2354045/views)
+- [主要エンジニアリングメトリクス](https://10az.online.tableau.com/#/site/gitlab/workbooks/2251271/views)
+- [マージリクエストメトリクス](https://10az.online.tableau.com/#/site/gitlab/workbooks/2104461/views)
+- [不安定なテストの Issue](https://10az.online.tableau.com/#/site/gitlab/workbooks/2283052/views)
+- [低速な RSpec テストの Issue](https://10az.online.tableau.com/#/site/gitlab/workbooks/2354045/views)

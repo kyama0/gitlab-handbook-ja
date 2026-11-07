@@ -2,9 +2,9 @@
 title: チームプロセス
 description: "Organizations チームの運営方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-lastmod: "2026-10-02T15:40:10+01:00"
-translated_at: "2026-10-10T06:53:00+00:00"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+lastmod: "2026-11-06T16:03:29-05:00"
+translated_at: "2026-11-07T10:45:49.721973Z"
 translator: claude
 stale: false
 ---
@@ -20,7 +20,7 @@ Issue のリストをまとめます。
 ### マイルストーンプランニング {#milestone-planning}
 
 マイルストーンを開始する前に、グループは[プランニング Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=Planning%20Issue)を使用して調整します。
-私たちは次のプロセスに従います:
+私たちは次のプロセスに従います：
 
 - PM がマイルストーンの目標を定義します。
 - チームメンバーが、マイルストーンに関連すると考える Issue についてコメントします。
@@ -48,11 +48,11 @@ Issue のリストをまとめます。
 ガイドラインに従います。現在のマイルストーンにおけるすべての Issue のステータスの概要を把握するには、
 [開発ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/2594854)を確認してください。
 
-このプロセスは主に次のように進みます:
+このプロセスは主に次のように進みます：
 
 - `workflow::ready for design` は、Issue がデザイン作業を開始する準備ができていることを示します
 - `workflow::design` は、デザイナーが Issue に積極的に取り組んでいることを示します
-- `workflow::planning breakdown` は、デザインが完了し、実装のためにサブ Issue に分解する準備ができていることを示します。デザインプロセス中のコンテキストと決定を保持するため、可能な場合は、デザイン Issue をエピックに昇格させて再利用し、実装 Issue を追加します。そうすることで、エピックをデザインの [SSOT](/teamops/shared-reality/#single-source-of-truth-ssot)として使用でき、すべての議論が 1 か所にまとまり、元のデザイン Issue と対応する実装 Issue の間に不整合が生じることがなくなります。
+- `workflow::planning breakdown` は、デザインが完了し、実装のためにサブ Issue に分解する準備ができていることを示します。デザインプロセス中のコンテキストと決定を保持するため、可能な場合は、デザイン Issue をエピックに昇格させて再利用し、実装 Issue を追加します。そうすることで、エピックをデザインの SSOTとして使用でき、すべての議論が 1 か所にまとまり、元のデザイン Issue と対応する実装 Issue の間に不整合が生じることがなくなります。
 - `workflow::refinement` は、Issue がエンジニアリングによる整理が必要であることを示します。このステップでは、実装ガイドとウェイトを Issue に追加する必要があります。
 - `workflow::ready for development` は、項目がエンジニアリングによって取り組まれる準備ができていることを示します
 
@@ -68,7 +68,7 @@ Issue のリストをまとめます。
 [開発を通じて Issue を更新](/handbook/engineering/workflow/#updating-workflow-labels-throughout-development)し続けます。
 Issue をクローズする前に、`workflow::complete` ラベルを追加することが重要です。これは、完了した項目が
 毎月のリリースポストの「改善とバグ」の概要に表示されるための要件の 1 つだからです。
-このプロセスは主に次の図のように進みます:
+このプロセスは主に次の図のように進みます：
 
 ``` mermaid
 graph LR
@@ -91,7 +91,7 @@ graph LR
 
 ### Issue ボード {#issue-boards}
 
-私たちは作業を以下の Issue ボードで追跡しています:
+私たちは作業を以下の Issue ボードで追跡しています：
 
 - [Group::Organizations マイルストーンの優先順位付け](https://gitlab.com/groups/gitlab-org/-/boards/5548886?label_name[]=group%3A%3Aorganizations)
 - [Group::Organizations 機能横断的な優先順位付け](https://gitlab.com/groups/gitlab-org/-/boards/4424394?label_name[]=group%3A%3Aorganizations)
@@ -107,7 +107,7 @@ graph LR
 
 ### 追跡ダッシュボード {#tracking-dashboards}
 
-Issue ボードに加えて、私たちは以下のような専用ダッシュボードでも主要なイニシアチブの進捗を追跡しています:
+Issue ボードに加えて、私たちは以下のような専用ダッシュボードでも主要なイニシアチブの進捗を追跡しています：
 
 - [スキーマ移行](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/schema_migration)
 - [シャーディングキーの移行](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/sharding_keys)
@@ -130,20 +130,20 @@ Issue に関する知識のレベルに応じて、別の人にとっては異�
 
 #### ウェイト {#weights}
 
-Issue にウェイトを付けるには、以下の重要な要素を考慮してください:
+Issue にウェイトを付けるには、以下の重要な要素を考慮してください：
 
-- 作業量: コードベースへの変更の想定サイズ。
-- 複雑さ:
-  - 問題の理解: 問題がどれだけよく理解されているか。
-  - 問題解決の難しさ: 遭遇すると予想される難易度のレベル。
+- 作業量： コードベースへの変更の想定サイズ。
+- 複雑さ：
+  - 問題の理解： 問題がどれだけよく理解されているか。
+  - 問題解決の難しさ： 遭遇すると予想される難易度のレベル。
 
-開発作業を見積もる際は、Issue に適切なウェイトを割り当ててください:
+開発作業を見積もる際は、Issue に適切なウェイトを割り当ててください：
 
 | ウェイト   | 説明                                                                                                                                                                                                                                                                                             | 例                                                                                                                                                                                                                                               |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1: 些細 | 可能な限り最もシンプルな変更。副作用がないと確信できます。複雑さは無視できる程度です。 | ドキュメントの更新、単純なリグレッション、すでに調査・議論済みで数行のコードで修正できるその他のバグ、または対処方法が正確にわかっているがまだ時間が取れていない技術的負債。 |
 | 2: 小   | すべての要件を理解しているシンプルな変更（最小限のコード変更）。小さな不確実性は存在しますが、解決策に確信があります。 | 既存データを公開する新しい API エンドポイントのようなシンプルな機能、または調査がすべて完了している通常のバグやパフォーマンス問題。 |
-| 3: 中  | より大きなコードのフットプリントを伴う変更（例: 多数の異なるファイルや、影響を受けるテスト）。私たちが対処する必要のある不確実性があります。 | バックエンドとフロントエンドのコンポーネントを伴う可能性のある通常の機能、またはほとんどのバグやパフォーマンス問題。 |
+| 3: 中  | より大きなコードのフットプリントを伴う変更（例： 多数の異なるファイルや、影響を受けるテスト）。私たちが対処する必要のある不確実性があります。 | バックエンドとフロントエンドのコンポーネントを伴う可能性のある通常の機能、またはほとんどのバグやパフォーマンス問題。 |
 | 5: 大   | コードベースの複数の領域に影響を与える、より複雑な変更。リファクタリングも伴う可能性があります。要件が十分に理解されておらず、複数の重要なギャップがあると感じられます。マージリクエストを開始する前に、この Issue をより小さな単位に分解する必要があります。 | バックエンドとフロントエンドのコンポーネントを伴う大規模な機能、または初期調査は行われたものの、まだ再現・理解されていないバグやパフォーマンス問題。 |
 
 ウェイトが 5 以上のものは、可能であれば分解すべきです。
@@ -171,13 +171,13 @@ Issue にウェイトを付けるには、以下の重要な要素を考慮し�
 
 週を通じて、チームの各エンジニアはバックログ整理のために選ばれた Issue のリストを確認します。[現在のバックログ整理 Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=workflow%3A%3Arefinement)。
 
-各 Issue について、チームメンバーは Issue をレビューし、以下を提供します:
+各 Issue について、チームメンバーは Issue をレビューし、以下を提供します：
 
 - 見積もりウェイト
 - 必要に応じた Issue の分解
 - 実装ガイド
 
-Issue を整理する際は、以下を考慮してください:
+Issue を整理する際は、以下を考慮してください：
 
 - 会話は元の Issue 上で続けるか、コンテキストを保持するために関連する議論へのリンクを Issue に記載する
 - より多くの情報が集まるにつれて、Issue の説明、実装計画、ラベルを更新する
@@ -186,10 +186,10 @@ Issue を整理する際は、以下を考慮してください:
 
 #### ステップ 3: 整理の確定 {#step-3-finalizing-refinement}
 
-エンジニアがインプットを提供する機会を得た後、EM または PM が以下を行います:
+エンジニアがインプットを提供する機会を得た後、EM または PM が以下を行います：
 
 - ウェイトを割り当てる
-- 懸念がある場合は 固定の連携担当者に知らせる
+- 懸念がある場合は固定の連携担当者に知らせる
 - `workflow::refinement` ラベルを削除する
 - `workflow::ready for development` ラベルを追加する
 
@@ -204,7 +204,7 @@ PM や UX からより多くの情報を得る必要があるかどうかを確�
 #### マイルストーンごと {#per-milestone}
 
 私たちには[マイルストーンレトロスペクティブ Issue](https://gitlab.com/gl-retrospectives/enablement-section/tenant-scale/-/issues)があります。
-これらには EM、PM、エンジニア、UX、そしてすべての 固定の連携担当者が含まれます。
+これらには EM、PM、エンジニア、UX、そしてすべての固定の連携担当者が含まれます。
 すべてのマイルストーンへの参加が強く奨励されています。詳細については、毎月 26 日に
 現在進行中のマイルストーンについて作成される[グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)を参照してください。
 
@@ -213,7 +213,7 @@ PM や UX からより多くの情報を得る必要があるかどうかを確�
 ある Issue、機能、またはその他の種類のプロジェクトが、
 特に有用な学習体験になった場合、私たちはそこから学ぶために同期または
 非同期のレトロスペクティブを開催することがあります。取り組んでいる何かが
-レトロスペクティブに値すると思う場合は:
+レトロスペクティブに値すると思う場合は：
 
 1. なぜレトロスペクティブを開催したいのかを説明する [Issue を作成](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues)し、これを同期にすべきか非同期にすべきかを示します。
 1. EM と、関与すべきその他の人（PM やカウンターパートなど）を含めます。
@@ -242,7 +242,7 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 ## エンジニアリングの顧客／サポートローテーションプロセス {#engineering-customersupport-rotation-process}
 
 {{< alert type="note" >}}
-**注**: このプロセスは現在、チームのうち Groups & Projects 側に固有のものであり、Organizations はまだ開発中です。プロダクトが一般リリースになったときに、Organizations にも同様のものを展開する予定です。
+**注**： このプロセスは現在、チームのうち Groups & Projects 側に固有のものであり、Organizations はまだ開発中です。プロダクトが一般リリースになったときに、Organizations にも同様のものを展開する予定です。
 {{< /alert >}}
 
 2 週間ごとに、Groups & Projects のエンジニア 1 名が、顧客サポートチケットの技術評価の DRI として割り当てられ、サポート Issue や `master` パイプラインの失敗について [#g_organizations](https://gitlab.slack.com/archives/g_organizations) チャンネルを監視し、トリアージと優先順位付けが行われたバグやサポートリクエストに対処します。
@@ -256,11 +256,11 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
     1. 現在のマイルストーンでスケジュールされたサポート Issue に取り組む
     1. 現在のマイルストーンでスケジュールされたバグ Issue に取り組む
     1. 顧客サポートの[バックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AOrganizations&first_page_size=20)から新しい Issue をトリアージし、必要に応じてフォローアップ情報を求める
-- 上記の項目を一覧表示したライブ更新の Issue がここにあります: https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/2
-- DRI が何らかの理由（例: 休暇、病欠、他の責務が優先されるなど）で今後のトリアージローテーションシフトを実行できない場合は、別のチームメンバーとローテーションを交換するか、EM に通知して調整してもらうことが求められます。交換が特定されたら、スケジュールを更新する必要があります。
+- 上記の項目を一覧表示したライブ更新の Issue がここにあります： https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/2
+- DRI が何らかの理由（例： 休暇、病欠、他の責務が優先されるなど）で今後のトリアージローテーションシフトを実行できない場合は、別のチームメンバーとローテーションを交換するか、EM に通知して調整してもらうことが求められます。交換が特定されたら、スケジュールを更新する必要があります。
 - DRI は、次の参加者に引き継ぐ際に、2026 年のローテーション用のこの [Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8)を更新する必要があります。
 
-ローテーションの終わりに、各エンジニアは[チームサポート Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) 内に引き継ぎノートを提供すべきです:
+ローテーションの終わりに、各エンジニアは[チームサポート Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) 内に引き継ぎノートを提供すべきです：
 
 - Issue の説明にあるサンプル形式を使用して、ローテーション中に取り組んだ内容をまとめる
 - これを Issue に直接、新しい DRI への ping とともに、（スレッドではなく）新しいルートコメントとして投稿する
@@ -326,8 +326,8 @@ SLA があります。
 | 引き継ぎ | 引き継ぎ元 | 引き継ぎ先 | 受領確認の SLA |
 |---|---|---|---|
 | 顧客報告 → エスカレーションの判断 | ローテーション中の Support DRI | Support Team Lead | 条件成立から 30 分 |
-| エスカレーションの判断 → インシデントの宣言 | Support Team Lead | Incident Manager on-call（IMOC） | エスカレーションから 15 分 |
-| インシデントの宣言 → エンジニアリングの対応開始 | Incident Manager on-call（IMOC） | Engineering DRI | 宣言から 30 分 |
+| エスカレーションの判断 → インシデントの宣言 | Support Team Lead | Incident Manager on-call (IMOC) | エスカレーションから 15 分 |
+| インシデントの宣言 → エンジニアリングの対応開始 | Incident Manager on-call (IMOC) | Engineering DRI | 宣言から 30 分 |
 
 役割の定義：
 
@@ -336,10 +336,10 @@ SLA があります。
   現在、このローテーションの対象はチームのうち Groups & Projects 側のみです。
   Organizations に同等のローテーションが設けられるまでは、Organizations 固有の
   兆候を担当する Support DRI はいません。その場合、Support は DRI を待たず、
-  Incident Manager on-call（IMOC）に直接その兆候を報告します。
+  Incident Manager on-call (IMOC)に直接その兆候を報告します。
 - **Support Team Lead**：Support を代表してエスカレーションを判断する、
-  当番の Support チームリード。
-- **Incident Manager on-call（IMOC）**：incident.io の
+  当番の Support Team Lead。
+- **Incident Manager on-call (IMOC)**：incident.io の
   [Incident Manager - GitLab.com SaaS スケジュール](https://app.incident.io/gitlab/on-call/schedules/01K77XZFD7X7E3W8T6GDVMKAFF)の
   当番エンジニア。この役割の責任については、[インシデント管理](/handbook/engineering/infrastructure-platforms/incident-management/)を
   参照してください。
