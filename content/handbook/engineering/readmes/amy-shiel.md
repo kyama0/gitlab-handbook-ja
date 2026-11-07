@@ -20,7 +20,7 @@ lastmod: "2026-11-06T16:03:29-05:00"
 
 ## 私たちについて {#about-me}
 
-こんにちは。現在の私たちの役割は Switchboard Teamの Engineering Manager です。私たちは Infrastructure の Dedicated Groupの一部です。私たちは[Wexford](https://www.google.com/maps/place/Rathrolan,+Coddstown,+Co.+Wexford/@52.1746812,-6.5276051,11.55z/data=!4m15!1m8!3m7!1s0x486818d03f73ed71:0xe152163313858141!2sRathrolan,+Coddstown,+Co.+Wexford!3b1!8m2!3d52.21915!4d-6.43845!16s%2Fg%2F119vqzwnh!3m5!1s0x486818d03f73ed71:0xe152163313858141!8m2!3d52.21915!4d-6.43845!16s%2Fg%2F119vqzwnh)（アイルランド）を拠点としています。Maynooth University でコンピュータサイエンスとソフトウェアエンジニアリングを学び、その後 10 年間バックエンド開発者として働きました。その後 Engineering Management に移り、エンジニアが持続可能な方法で困難な問題を解決できるよう支援することを楽しんでいます。2023 年 3 月に GitLab と Switchboard Teamに参加しました。趣味は陶芸、愛犬との時間、養蜂、鶏の世話、新しい場所の訪問、そして一般的に屋外活動です。
+こんにちは。現在の私たちの役割は Switchboard Team の Engineering Manager です。私たちは Infrastructure の Dedicated Group の一部です。私たちは[Wexford](https://www.google.com/maps/place/Rathrolan,+Coddstown,+Co.+Wexford/@52.1746812,-6.5276051,11.55z/data=!4m15!1m8!3m7!1s0x486818d03f73ed71:0xe152163313858141!2sRathrolan,+Coddstown,+Co.+Wexford!3b1!8m2!3d52.21915!4d-6.43845!16s%2Fg%2F119vqzwnh!3m5!1s0x486818d03f73ed71:0xe152163313858141!8m2!3d52.21915!4d-6.43845!16s%2Fg%2F119vqzwnh)（アイルランド）を拠点としています。Maynooth University でコンピュータサイエンスとソフトウェアエンジニアリングを学び、その後 10 年間バックエンド開発者として働きました。その後 Engineering Management に移り、エンジニアが持続可能な方法で困難な問題を解決できるよう支援することを楽しんでいます。2023 年 3 月に GitLab と Switchboard Team に参加しました。趣味は陶芸、愛犬との時間、養蜂、鶏の世話、新しい場所の訪問、そして一般的に屋外活動です。
 
 ## 私たちの助けになること {#how-you-can-help-me}
 
