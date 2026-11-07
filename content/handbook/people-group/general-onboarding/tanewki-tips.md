@@ -1,12 +1,12 @@
 ---
 title: TaNewKi のヒント
-description: GitLab で開始する新入社員のガイド
+description: GitLab に入社する新入社員向けガイド
 upstream_path: /handbook/people-group/general-onboarding/tanewki-tips/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T08:44:52.736278+00:00"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+translated_at: "2026-11-07T10:45:49.721973Z"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-06T16:03:29-05:00"
 ---
 
 ## チームへようこそ {#welcome-to-the-team}
@@ -28,13 +28,13 @@ People Operations チームは、オンボーディングおよび GitLab での
 
 #### 書類 {#documentation}
 
-- **米国の新入社員**: LawLogix で I9 を完了してください（開始日の 1 週間前にメールが届きます）
-- **ベルギー/日本の新入社員**: 給与関連の書類について People Operations からのメールを確認してください
-- **特定の国のチームメンバー**: 外部パートナーからのコミュニケーションに注意してください：
+- **米国の新入社員**： LawLogix で I9 を完了してください（開始日の 1 週間前にメールが届きます）
+- **ベルギー/日本の新入社員**： 給与関連の書類について People Operations からのメールを確認してください
+- **特定の国のチームメンバー**： 外部パートナーからのコミュニケーションに注意してください：
   - フランス、ドイツ、シンガポール、英国、ニュージーランド、オーストラリア、アイルランド、スペイン、インド、イスラエル: Papaya
   - オランダ: HR Savvy
   - 韓国: Global Upside/Safeguard
-- **PEO 拠点**: PEO が必要な書類について連絡します
+- **PEO 拠点**： PEO が必要な書類について連絡します
 
 #### 入社前のコミュニケーション {#pre-start-communications}
 
@@ -59,7 +59,7 @@ People Operations チームは、オンボーディングおよび GitLab での
 
 - オンボーディングプロセスは自分のペースで進めますが、🔴 でマークされたアイテムは指定された日に完了する必要があります。他のタスクについては、日数の内訳はガイドラインとしてあるものなので、タスクを完了する必要があると感じて勤務時間を超えて働かないでください。
 - 時間をかけてください — オンボーディングには丸 2 週間が割り当てられています。マネージャー、オンボーディングバディ、GitLab 全体のサポートも受けられます。
-- 必要なときはいつでも [Compass](https://app.serval.com/new-request) または Slack を通じて People Operations チームまたは IT Ops に連絡してください。
+- 必要なときはいつでも [Compass](https://app.serval.com/new-request)または Slack を通じて People Operations チームまたは IT Ops に連絡してください。
 - オンボーディング Issue と該当するハンドブックページには有用なコンテンツがたくさんあります。上記の便利なツールセクションで便利なテキスト読み上げツールの 1 つを有効にし、休憩を取ることを忘れないでください。また、後で参照するために特定のハンドブックページをブックマークすることも自由にしてください（大きな赤い点 🔴 でマークされたものを除き、それらは即座のアクションを必要とします）。
 
 #### コミュニケーションツール {#communication-tools}
@@ -90,34 +90,34 @@ GitLab では、誰もが所属し、誰もが貢献できます。新しいチ�
 
 ##### 技術および機器のセットアップ {#technology--equipment-setup}
 
-- **標準機器**: すべての GitLab チームメンバーは、オフィス予算手当を通じて人間工学的な機器にアクセスでき、通常の IT プロセスを通じて技術にアクセスできます。
-- **配慮および調整**: 標準の提供以上の支援技術または特殊な機器は、Team Member Relations (TMR) チーム（`teammemberrelations@gitlab.com`）を通じてリクエストできます。
-- **デバイス構成**: IT チームは、標準のアクセシビリティ設定でノートパソコンを設定するか、特殊なソフトウェアのセットアップのために TMR と協力します。
+- **標準機器**： すべての GitLab チームメンバーは、オフィス予算手当を通じて人間工学的な機器にアクセスでき、通常の IT プロセスを通じて技術にアクセスできます。
+- **配慮および調整**： 標準の提供以上の支援技術または特殊な機器は、Team Member Relations (TMR) チーム（`teammemberrelations@gitlab.com`）を通じてリクエストできます。
+- **デバイス構成**： IT チームは、標準のアクセシビリティ設定でノートパソコンを設定するか、特殊なソフトウェアのセットアップのために TMR と協力します。
 
 **[アクセシビリティ Tech Stack - アクセシビリティテクノロジー](/handbook/business-technology/entapps-documentation/application-accessibility/)**
 
 ##### リモートワーク環境 {#remote-work-environment}
 
-- **標準のホームオフィス予算**: すべてのチームメンバーが利用できる標準的な人間工学的機器のための予算を提供しています — これらの標準アイテムについてはマネージャーと IT と協力してください。
-- **個別の配慮**: 標準の提供以上の特定の環境変更や特殊な機器が必要ですか？個別の評価、サポート、事前承認のために Team Member Relations チームに連絡してください。
+- **標準のホームオフィス予算**： すべてのチームメンバーが利用できる標準的な人間工学的機器のための予算を提供しています — これらの標準アイテムについてはマネージャーと IT と協力してください。
+- **個別の配慮**： 標準の提供以上の特定の環境変更や特殊な機器が必要ですか？個別の評価、サポート、事前承認のために Team Member Relations チームに連絡してください。
 
 ##### アクセシブルなコミュニケーション {#accessible-communication}
 
-- **ミーティングのアクセシビリティ**: ライブキャプション、通訳者、または代替フォーマットをマネージャーまたは IT チームを通じてリクエストしてください
-- **ドキュメントアクセス**: すべての資料は私たちのラーニングコンテンツアクセシビリティガイドラインに従っています - 特定のドキュメント形式が必要な場合は Diversity, Inclusion and Belonging (DIB) チームに連絡してください。入社後に `#diversity_inclusion_and_belonging` Slack チャンネルから連絡を取ることができます。
+- **ミーティングのアクセシビリティ**： ライブキャプション、通訳者、または代替フォーマットをマネージャーまたは IT チームを通じてリクエストしてください
+- **ドキュメントアクセス**： すべての資料は私たちのラーニングコンテンツアクセシビリティガイドラインに従っています - 特定のドキュメント形式が必要な場合は Diversity, Inclusion and Belonging (DIB) チームに連絡してください。入社後に `#diversity_inclusion_and_belonging` Slack チャンネルから連絡を取ることができます。
 
 ##### 最初のステップ {#your-first-steps}
 
-- **Day 1 より前**: 標準機器以外の職場の配慮や調整が必要な場合は、支援のために Team Member Relations チーム（teammemberrelations@gitlab.com）に連絡してください。
-- **1 〜 3 日目**: GitLab ツール（Slack、Zoom、Google Workspace）のアクセシビリティ機能を探索してください。
-- **最初の週**: 標準の人間工学的機器については、マネージャーと IT と相談してください。特殊な配慮については、Team Member Relations チームに Compass（内部システム）でリクエストを送信してください。
-- **継続的に**: 標準機器のニーズには標準的な IT プロセスを使用し、継続的な配慮および/または調整をリクエストするために Compass（内部システム）を通じて Team Member Relations (TMR) チームに連絡してください。
+- **Day 1 より前**： 標準機器以外の職場の配慮や調整が必要な場合は、支援のために Team Member Relations チーム（teammemberrelations@gitlab.com）に連絡してください。
+- **1 〜 3 日目**： GitLab ツール（Slack、Zoom、Google Workspace）のアクセシビリティ機能を探索してください。
+- **最初の週**： 標準の人間工学的機器については、マネージャーと IT と相談してください。特殊な配慮については、Team Member Relations チームに Compass（内部システム）でリクエストを送信してください。
+- **継続的に**： 標準機器のニーズには標準的な IT プロセスを使用し、継続的な配慮および/または調整をリクエストするために Compass（内部システム）を通じて Team Member Relations (TMR) チームに連絡してください。
 
 ##### サポートネットワーク {#support-network}
 
-- **IT および Compass**: 標準機器のリクエストと技術サポートはすべてのチームメンバーが利用できます。
-- **Team Member Relations**: 個別の職場の配慮、調整、および標準の提供以上の個別のサポート。
-- **Diversity, Inclusion & Belonging (DIB) チーム**: Slack を通じたポリシーの質問とアクセシビリティのコンサルテーション。
+- **IT および Compass**： 標準機器のリクエストと技術サポートはすべてのチームメンバーが利用できます。
+- **Team Member Relations**： 個別の職場の配慮、調整、および標準の提供以上の個別のサポート。
+- **Diversity, Inclusion & Belonging (DIB) チーム**： Slack を通じたポリシーの質問とアクセシビリティのコンサルテーション。
 
 ##### 私たちのコミットメント {#our-commitment}
 
@@ -231,13 +231,13 @@ A: [Family & Friends Day](/handbook/company/family-and-friends-day/)は、私た
 | E-Group | Executive Group |
 | EBA | Executive Business Administrator |
 | IC | Individual Contributor |
-| IPO | Initial Public Offering |
-| LGTM | Looks good to (me/merge)! |
-| KPIs| Key Performance Indicators |
-| MECC| [Managing so Everyone Can Contribute](/teamops/)|
-| MNPI | Material Non-Public Information  |
+| IPO | 株式の新規公開 |
+| LGTM | （私たちの目には/マージしても）良さそうです！ |
+| KPIs| 重要業績評価指標 |
+| MECC| 誰もが貢献できるようにマネジメントする|
+| MNPI | 重要な非公開情報  |
 | MR | Merge Request  |
-| MVC| Minimal Valuable Change (Model-View-Controller とは関係ありません)|
+| MVC| 最小限の価値ある変更（Model-View-Controller とは関係ありません）|
 | OKRs | [Objectives & Key Results](https://internal.gitlab.com/handbook/company/gitlab-operating-model/) |
 | PTO | [Paid Time Off](/handbook/people-group/time-off-and-absence/time-off-types/) |
 | SIRT | [Security Incident Response Team](/handbook/security/security-operations/sirt) |
@@ -249,7 +249,7 @@ A: [Family & Friends Day](/handbook/company/family-and-friends-day/)は、私た
 |:---------------|:---------------|
 | VSD |  [Value Stream Disovery](/handbook/solutions-architects/sa-practices/value-stream-discovery) |
 | VSW |  [Value Stream Workshop](/handbook/solutions-architects/sa-practices/value-stream-discovery/#value-stream-workshop) |
-| L28D |  "Last 28 days" の短縮形 |
+| L28D |  「過去 28 日間」の短縮形。 |
 
 **People Group 関連の略語**
 
@@ -265,21 +265,21 @@ A: [Family & Friends Day](/handbook/company/family-and-friends-day/)は、私た
 
 | 略語 | 単語/表現/役職 |
 |:---------------|:---------------|
-| ACV | Annual Contract Value |
-| ARR | Annual Recurring Revenue |
+| ACV | 年間契約額 |
+| ARR | 年間経常収益 |
 | ASM | Area Sales Manager |
-| ATR | Available To Renew |
-| CAC | Customer Acquisition Cost |
+| ATR | 更新可能 |
+| CAC | 顧客獲得コスト |
 | CS | Customer Success |
-| FTE | Full Time Equivalent |
-| LAM | Landed Addressable Market |
-| LTV | Life Time Value |
-| MRR | Monthly Recurring Revenue |
-| PCV | ProServe Contract Value |
+| FTE | フルタイム換算 |
+| LAM | 現在獲得している対応可能市場 |
+| LTV | 顧客生涯価値 |
+| MRR | 月間経常収益 |
+| PCV | ProServe 契約額 |
 | SA | Solution Architect |
 | SAE | Strategic Account Executive |
-| SQL | Sales Qualified Lead |
+| SQL | 営業が適格と判断した見込み客 |
 | SRE | Site Reliability Engineer |
 | CSM | Customer Success Manager |
-| TAM | Total Addressable Market |
-| TCV | Total Contract Value |
+| TAM | 対応可能な市場全体 |
+| TCV | 総契約額 |

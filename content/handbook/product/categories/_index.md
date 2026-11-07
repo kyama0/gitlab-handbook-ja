@@ -1,9 +1,9 @@
 ---
 title: 製品セクション、ステージ、グループ、カテゴリ
 upstream_path: /handbook/product/categories/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-30T14:17:26-04:00"
-translated_at: "2026-11-01T07:58:09.735475+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+lastmod: "2026-11-06T16:03:29-05:00"
+translated_at: "2026-11-07T10:48:39Z"
 translator: claude
 stale: false
 ---
@@ -14,14 +14,14 @@ stale: false
 
 私たちは、社内および幅広いコミュニティの双方で直感的なインターフェースを望んでいます。これにより、誰もが効率的に貢献したり質問に答えてもらったりできるようになります。したがって、以下のインターフェースは、本ページで定義する製品カテゴリに基づいています:
 
-- [Home ページ](https://about.gitlab.com/)
-- [Product ページ](https://about.gitlab.com/stages-devops-lifecycle/)
+- [ホームページ](https://about.gitlab.com/)
+- [製品ページ](https://about.gitlab.com/stages-devops-lifecycle/)
 - [製品機能](https://about.gitlab.com/features/)
-- [Pricing ページ](https://about.gitlab.com/pricing/)
+- [料金ページ](https://about.gitlab.com/pricing/)
 - [DevOps ライフサイクル](https://about.gitlab.com/stages-devops-lifecycle/)
 - [DevOps ツール](https://about.gitlab.com/why-gitlab/)
-- [Product Direction](https://about.gitlab.com/direction/)
-- [Stage Vision](https://about.gitlab.com/direction/#devops-stages)
+- [製品の方向性](https://about.gitlab.com/direction/)
+- [ステージのビジョン](https://about.gitlab.com/direction/#devops-stages)
 - [ドキュメント](https://docs.gitlab.com/)
 - [Engineering](/handbook/engineering/) Engineering Manager/Developer/Designer のタイトル、専門領域、部門、チーム名。
 - [Product Manager](/handbook/product/)の責任。詳細は本ページに記載されています
@@ -32,14 +32,14 @@ stale: false
 
 カテゴリは階層を形成します:
 
-1. **Section**: ステージの集合です。Dev、Sec、Ops のような共通のワークフローに沿って論理的に整合させようとしています。
-Section は [`data/sections.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/sections.yml)で管理されています。
-1. **Stage**: [`data/stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml)で管理されています。
+1. **セクション**: ステージの集合です。Dev、Sec、Ops のような共通のワークフローに沿って論理的に整合させようとしています。
+セクションは [`data/sections.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/sections.yml)で管理されています。
+1. **ステージ**: [`data/stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml)で管理されています。
 各ステージには、`gitlab-org` および `gitlab-com` グループ配下に対応する [`devops::<stage>` ラベル](https://docs.gitlab.com/development/labels/#stage-labels)があります。
-1. **Group**: ステージは 1 つ以上の [グループ](/handbook/company/structure/#product-groups)を持ちます。
+1. **グループ**: ステージは 1 つ以上の [グループ](/handbook/company/structure/#product-groups)を持ちます。
 グループは [`data/stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml)で管理されています。
 各グループには、`gitlab-org` および `gitlab-com` グループ配下に対応する [`group::<group>` ラベル](https://docs.gitlab.com/development/labels/#group-labels)があります。
-1. **Category**: グループは 1 つ以上のカテゴリを持ちます。カテゴリは、他社では単独の製品となりうるような高水準の機能群です。例えば
+1. **カテゴリ**: グループは 1 つ以上のカテゴリを持ちます。カテゴリは、他社では単独の製品となりうるような高水準の機能群です。例えば
 Portfolio Management のようなものです。可能な限り、私たちはカテゴリを [アナリスト](/handbook/marketing/corporate-communications/analyst-relations/)が定義するベンダーカテゴリにマッピングすべきです。
 カテゴリは [`data/categories.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/categories.yml)で管理されています。
 各カテゴリには、`gitlab-org` グループ配下に対応する [`Category:<Category>` ラベル](https://docs.gitlab.com/development/labels/#category-labels)があります。
@@ -59,9 +59,9 @@ Portfolio Management のようなものです。可能な限り、私たちは�
 
 ### 命名 {#naming}
 
-階層のある階層のスコープが、その上または下の階層と同じ場合、同じ名前を共有できます。
+階層内のあるレベルのスコープが、その上または下の階層と同じ場合、同じ名前を共有できます。
 
-2 つ以上のカテゴリを持ち、かつステージ内の _すべて_ のカテゴリを持つわけではないグループの場合、グループ名は [固有の単語](/handbook/communication/#mecefu-terms) または、カバーするカテゴリの集約名でなければなりません。
+2 つ以上のカテゴリを持ち、かつステージ内の _すべて_ のカテゴリを持つわけではないグループの場合、グループ名は [固有の単語](/handbook/communication/#mecefu-terms)または、カバーするカテゴリの集約名でなければなりません。
 
 ステージの文脈でグループを参照したい場合、「Stage:Group」と書けます。これはメール署名、職務名、その他のコミュニケーションで便利です。例えば、「Monitor Health」や「Monitor, Health」ではなく「Monitor:Health」とします。
 
@@ -77,7 +77,7 @@ Portfolio Management のようなものです。可能な限り、私たちは�
 
 [ソリューション](/handbook/marketing/use-cases/)は複数のカテゴリで構成でき、通常はお客様の課題 (例えば、セキュリティとコンプライアンスのリスクを低減する必要性) や、アナリストが定義した市場セグメント (Software Composition Analysis (SCA) など) に合わせるために使用されます。ソリューションはまた、業界バーティカルに固有の課題 (例えば、金融サービス) や、セールスセグメント (例えば、SMB 対 Enterprise) に合わせるためにもよく使用されます。
 
-ソリューションは通常、お客様の課題を表現し、GitLab の機能群がどのようにその課題に対応するために組み合わさるかを、私たちのソリューションを使用することのビジネス上のメリットとともに定義します。
+ソリューションは通常、お客様の課題を表現し、GitLab の機能群がどのようにその課題に対応するために組み合わさるかを、私たちのソリューションを使用することによるビジネス上のメリットとともに定義します。
 
 アナリストが定義した市場セグメントは、必ずしも GitLab のステージやカテゴリと整合せず、しばしば複数のカテゴリを含みます。最も頻繁に出会うものを 2 つ挙げます:
 
@@ -106,19 +106,19 @@ Portfolio Management のようなものです。可能な限り、私たちは�
 そうすることで、以下の目標に資します:
 
 - 私たちのグループを DevOps ライフサイクルの一部として外部からも認識可能にすることで、ステークホルダーがどのチームがどのような作業を行うかを容易に理解できるようにする
-- 内部的には、グループの数を妥当な数の安定したカウンターパートに保つことを確保する
+- 社内で各グループの安定したカウンターパートの数を妥当な範囲に保つ
 
-その結果、カテゴリが利用可能なキャパシティを懸念してグループ間を移動することは、私たちのカテゴリへの編成のアンチパターンと見なされます。
+その結果、カテゴリが利用可能なキャパシティを懸念してグループ間を移動することは、私たちの組織編成におけるアンチパターンと見なされます。
 
-階層を設計するとき、Section の数は小さく保つべきであり、[管理範囲](/handbook/company/structure/#management-group)の理由で会社が再編成する必要が生じたときにのみ増やすべきです。すなわち、各 Section は Director of Engineering 1 名と Director of Product 1 名に対応するため、追加は高コストです。ステージについては、DevOps ループの
+階層を設計するとき、セクションの数は小さく保つべきであり、[管理範囲](/handbook/company/structure/#management-group)の理由で会社が再編成する必要が生じたときにのみ増やすべきです。すなわち、各セクションは Director of Engineering 1 名と Director of Product 1 名に対応するため、追加は高コストです。ステージについては、DevOps ループの
 ステージは [外部](https://en.wikipedia.org/wiki/DevOps_toolchain)のソースから決定されているため、まったく変更すべきではありません。いずれかの時点で
 別の確立されたバケット分けに変更する、または独自に作成するかもしれませんが、それには真剣なクロスファンクショナルな議論が伴います。追加の価値
 ステージは私たち独自の構造ですが、ループステージと価値ステージの組み合わせは、私たちがマーケティング、セールスなどで話す主要な
 ステージであり、軽率に変更すべきではありません。他のステージは現時点ではマーケティングされていないため、より柔軟性があります。しかし、それでもできる限り
 最小限に保つよう努めるべきです。多数のステージが乱立すると、製品のサーフェスエリア
-について推論し、いつ/もしそのサーフェスエリアをマーケティングすると決めた場合に伝達するのが難しくなります。そのため、これらは Section と 1:1 に紐づけられ、私たちの組織構造に収まる最小限のステージ数になっています。例えば、
+について推論し、いつ/もしそのサーフェスエリアをマーケティングすると決めた場合に伝達するのが難しくなります。そのため、これらはセクションと 1:1 に紐づけられ、私たちの組織構造に収まる最小限のステージ数になっています。例えば、
 Growth は Enablement の単一グループでしたが、Growth のためにディレクター
-層を追加することを決定したときに、専門グループを持つ Section に昇格しました。非 DevOps ステージ各々の下にあるさまざまなバケットは、
+層を追加することを決定したときに、専門グループを持つセクション に昇格しました。非 DevOps ステージ各々の下にあるさまざまなバケットは、
 異なるグループとして表現されています。グループも非マーケティングの構造であるため、
 組織的な目的に応じてグループの数を拡張します。各グループは通常、backend engineering manager と product manager に対応するため、
 追加は高コストでもあり、私たちはより整った階層のためだけにグループを作るのではなく、[管理範囲](/handbook/company/structure/#management-group)の観点から、または 1 人の product manager が扱える範囲の限界から正当化される必要があります。
@@ -127,10 +127,10 @@ Growth は Enablement の単一グループでしたが、Growth のためにデ
 
 カテゴリは、投資水準と開発作業のレベルが異なります。主に 4 つの投資ステータスがあります:
 
-1. Accelerated - 翌年に追加投資を受ける、製品戦略のトップカテゴリ
-1. Sustained - 翌年に新機能が追加されるカテゴリ
-1. Reduced - スコープと野心が減らされるが、翌年も新機能は追加されるカテゴリ
-1. Maintenance - 新機能が追加されないカテゴリ
+1. 加速 - 翌年に追加投資を受ける、製品戦略で最も重要なカテゴリ
+1. 維持 - 翌年に新機能が追加されるカテゴリ
+1. 縮小 - スコープと目標水準が引き下げられるが、翌年も新機能は追加されるカテゴリ
+1. 保守 - 新機能が追加されないカテゴリ
 
 通常、製品方向性ページは、年次の製品テーマと投資水準に基づいて、その会計年度におけるカテゴリの投資ステータスを透明性をもって示します。
 
@@ -140,16 +140,16 @@ Growth は Enablement の単一グループでしたが、Growth のためにデ
 
 ### 役割と責任 {#roles-and-responsibilities}
 
-**MR 作者** は、説明に変更点の明確な [ローコンテキスト](/teamops/decision-velocity/#low-context-communication) な説明を含め、必要に応じて他の関連 Issue、ドキュメント、リソースへのリンクを含めることに責任を持ちます。
+**MR 作成者** は、説明に変更点の明確な ローコンテキストな説明を含め、必要に応じて他の関連 Issue、ドキュメント、リソースへのリンクを含めることに責任を持ちます。
 関連するチームメンバーからの明示的な承認は推奨されますが、関連する作業項目で承認していれば必須ではありません。
-ただし、作者は MR 外で必要な承認を一覧化し、直接リンクする必要があります。
-承認をリクエストする際、作者は必要な内容に基づいて承認者がマージも行うべきかを明確に述べる必要があります。
+ただし、作成者は MR 外で必要な承認を一覧化し、直接リンクする必要があります。
+承認をリクエストする際、作成者は必要な内容に基づいて承認者がマージも行うべきかを明確に述べる必要があります。
 
-**Section、Stage、Group の承認者** は、関連するすべての変更が行われていることと、Section、Stage、または Group の決定が反映されていることを確認する必要があります。
+**セクション、ステージ、グループの承認者** は、関連するすべての変更が行われていることと、セクション、ステージ、またはグループの決定が反映されていることを確認する必要があります。
 
-**カテゴリと機能の承認者** は、製品全体、異なる Section、それらがお客様にどのように関連するかを一般的に理解している Product 内のチームで構成されるべきです。Pricing & Packaging チームは「Required Approver」としてこの責任を引き受けています。彼らは懸念があればフラグを立て、すべての [「非常に重要な」変更](#very-significant)が関連する PLT メンバーによって議論・承認されていることを確認することが期待されます。追加要件については、Required Approver はタスクが完了しているか、関連する Issue がリンクされているかを記述で確認する必要があります。
+**カテゴリと機能の承認者** は、製品全体、異なるセクション、それらがお客様にどのように関連するかを一般的に理解している Product 内のチームで構成されるべきです。Pricing & Packaging チームは「Required Approver」としてこの責任を引き受けています。彼らは懸念があればフラグを立て、すべての [「非常に重要な」変更](#very-significant)が関連する PLT メンバーによって議論・承認されていることを確認することが期待されます。追加要件については、Required Approver はタスクが完了しているか、関連する Issue がリンクされているかを記述で確認する必要があります。
 
-技術的な制約により、承認が [必須でない](#less-significant) 箇所には Strategy & Operations チームメンバーが追加のコードオーナーとして加えられています。
+技術的な制約により、承認が[必須でない](#less-significant)箇所には Strategy & Operations チームメンバーが追加のコードオーナーとして加えられています。
 
 ### 承認 {#approvals}
 
@@ -157,7 +157,7 @@ Growth は Enablement の単一グループでしたが、Growth のためにデ
 
 #### カテゴリと機能の変更 {#category-and-feature-changes}
 
-該当する部門/Section の PLT メンバーが承認し、[カテゴリと機能の必要な承認者](#roles-and-responsibilities) (上記セクション参照)のうち 1 名が、状況に応じて承認するか、または認識を持つ必要があります。
+該当する部門/セクション の PLT メンバーが承認し、[カテゴリと機能の必要な承認者](#roles-and-responsibilities) (上記セクション参照)のうち 1 名が、状況に応じて承認するか、または認識を持つ必要があります。
 
 ```mermaid
 flowchart TD
@@ -192,8 +192,8 @@ flowchart TD
 例:
 
 1. カテゴリまたは機能の削除。コードレビューも完了する必要があります。[データ変更](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/issue_templates/Group-Stage-Category-Change.md#removing)と [コード変更](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Group-Stage-Category-Change.md#categories-changes)のガイダンスを参照してください。
-1. Tier-up (下位ティアから上位ティアへ移動)
-1. Tier-down (上位ティアから下位ティアへ移動)
+1. ティアの引き上げ（下位ティアから上位ティアへ移動）
+1. ティアの引き下げ（上位ティアから下位ティアへ移動）
 
 ##### 重要な変更 {#significant}
 
@@ -201,7 +201,7 @@ flowchart TD
 
 例:
 
-1. カテゴリの追加 ([opportunity canvas](/handbook/product/product-processes/#opportunity-canvas) レビューも経るべき)
+1. カテゴリの追加（[機会キャンバス](/handbook/product/product-processes/#opportunity-canvas)のレビューも必要です）
 1. 機能を別のカテゴリに移動
 
 これらのケースでは、Strategy & Operations チームメンバーに承認を求めることもできます。
@@ -238,17 +238,17 @@ flowchart TD
     Level -->|Section| SectionApproval[Section Product lead<br/>+ Section Engineering lead<br/>+ PLT member]
 ```
 
-**メンバーシップ変更** (Section、Stage、または Group の一員が誰か) は、影響を受けるチームメンバーが直属する関連マネージャーが承認する必要があります。
+**メンバー構成の変更**（セクション、ステージ、またはグループの所属者）は、影響を受けるチームメンバーが直属する関連マネージャーが承認する必要があります。
 
-**情報変更** (説明やリンクの更新など) は、関連する Product または Engineering Lead のいずれかから承認が必要です。
+**情報の変更**（説明やリンクの更新など）は、関連する Product または Engineering Lead のいずれかから承認が必要です。
 
-**Section、Stage、Group へのその他の変更** は、関連する Product Lead と 1 つ上のレベルが承認する必要があります:
+**セクション、ステージ、グループへのその他の変更** は、関連する Product Lead と、その 1 つ上のレベルの担当者が承認する必要があります。
 
-1. Group: Product Manager、加えて Stage レベルの Product Lead
-1. Stage: Stage レベルの Product Lead、加えて Section レベルの Product Lead
-1. Section: Section レベルの Product Lead と Engineering Lead、加えて関連する Product Leadership Team (PLT) メンバー
+1. グループ：Product Manager、加えて ステージレベルの Product Lead
+1. ステージ：ステージレベルの Product Lead、加えて セクションレベルの Product Lead
+1. セクション：セクションレベルの Product Lead と Engineering Lead、加えて関連する Product Leadership Team (PLT) メンバー
 
-Engineering 主導の Section、Stage、Group については、同様のことが Product Lead の代わりに Engineering Lead に対して当てはまります。
+Engineering 主導のセクション、ステージ、グループ については、同様のことが Product Lead の代わりに Engineering Lead に対して当てはまります。
 
 ### 変更の通知 {#notifications-of-changes}
 
@@ -260,37 +260,37 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
 
 以下の人々を MR でメンションして認識してもらってください:
 
-1. 影響を受ける Section の関連する Product Lead。すでに承認者になっていない場合
-1. 影響を受ける Section の関連する Product Leadership Team (PLT) メンバー。すでに承認者になっていない場合
+1. 影響を受けるセクション の関連する Product Lead。すでに承認者になっていない場合
+1. 影響を受けるセクション の関連する Product Leadership Team (PLT) メンバー。すでに承認者になっていない場合
 1. 関連する Engineering Lead、加えて「上の」Engineering Lead
-   - 例えば、Group レベルの変更の場合、Group の Engineering Lead と Group が属する Stage の Engineering Lead をメンションします。
-1. 影響を受ける Section の Engineering Lead
+   - 例えば、グループレベルの変更の場合、グループの Engineering Lead とグループが属するステージの Engineering Lead をメンションします。
+1. 影響を受けるセクション の Engineering Lead
 1. 関連する Product Marketing Manager
-1. [テクニカルライティングのカウンターパート](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments-to-devops-stages-and-groups)
-1. Technical Writing の Lead (Director)
-1. UX Research の Lead
-1. Product Design の Lead (Director)
+1. [Technical Writing のカウンターパート](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments-to-devops-stages-and-groups)
+1. Lead (Director) of Technical Writing
+1. UX Research lead
+1. Lead (Director) of Product Design
 1. Chief Design Officer
 1. Chief Product and Marketing Officer
-1. (Infrastructure) Platforms Engineering の Lead (VP)
+1. Lead (VP) of (Infrastructure) Platforms Engineering
 1. Chief Technology Officer
 
 影響を受けるすべての関連する Product _および_ Engineering リーダーをメンションすることが推奨されます。
-例えば、Section の変更の場合、すべての Stage および Group レベルのリーダーをメンションします。
+例えば、セクションの変更の場合、すべてのステージおよびグループレベルのリーダーをメンションします。
 あるいは、他のコミュニケーションチャネルを通じてこれらの人々に認識してもらうことも選択できます。
 
 ### チームタグ {#team-tags}
 
-すべての Section、Stage、Group は、以下のものを表示するために 1 つ以上の `team_tags` を持つことができます:
+すべてのセクション、ステージ、グループ は、以下のものを表示するために 1 つ以上の `team_tags` を持つことができます:
 
 1. 各グループのメンバーである IC
 1. 一部のカウンターパート
 
-`*_team_tag` の名前は [`data/sections.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/sections.yml)と [`data/stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml) (Stage と Group の場合)に存在します。各チームメンバーの個別の `data/team_members/person/` YAML には、関連する `team_tags` エントリが含まれている必要があります。
+`*_team_tag` の名前は [`data/sections.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/sections.yml)と [`data/stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml) （ステージとグループの場合）に存在します。各チームメンバーの個別の `data/team_members/person/` YAML には、関連する `team_tags` エントリが含まれている必要があります。
 
 命名を決定する際、各チームタグが一意であることを確認してください。例えば、`cs_team_tag` は `sre_team_tag` と異なる値である必要があります。これらが同じである場合、そのタグを持つすべてのチームメンバーが表示され、リストが重複してしまいます。
 
-例は [team members data README](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/team_members/person/README.md#team-tags)に示されています。
+例は [チームメンバーデータの README](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/team_members/person/README.md#team-tags)に示されています。
 
 ## DevOps ステージ {#devops-stages}
 
@@ -300,11 +300,11 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
 
 ## 将来のステージ候補 {#possible-future-stages}
 
-私たちは底のない [野心](/handbook/product/product-principles/#how-this-impacts-planning)を持っており、GitLab は DevOps ライフサイクルに新しい Stage を追加し続けると考えています。以下は、私たちが検討している将来の Stage の一覧です:
+私たちは限りない [意欲](/handbook/product/product-principles/#how-this-impacts-planning)を持っており、GitLab は DevOps ライフサイクルに新しいステージ を追加し続けると考えています。以下は、私たちが検討している将来のステージ の一覧です:
 
-1. Data。[Meltano 製品](https://meltano.com/)を活用するかもしれません
-1. Networking。[ネットワークのオープンソース標準](https://www.linux.com/news/5-open-source-software-defined-networking-projects-know/)の一部や、[Terraform networking provider](https://developer.hashicorp.com/terraform/language/providers)を活用するかもしれません
-1. Design。私たちは今日すでに [Design Management](https://gitlab.com/groups/gitlab-org/-/epics/1445)を持っています
+1. データ。[Meltano 製品](https://meltano.com/)を活用するかもしれません
+1. ネットワーク。[ネットワークのオープンソース標準](https://www.linux.com/news/5-open-source-software-defined-networking-projects-know/)の一部や、[Terraform のネットワークプロバイダー](https://developer.hashicorp.com/terraform/language/providers)を活用するかもしれません
+1. デザイン。私たちは今日すでに [Design Management](https://gitlab.com/groups/gitlab-org/-/epics/1445)を持っています
 
 ## その他の機能 {#other-functionality}
 
@@ -321,7 +321,7 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
 - [Zero Downtime Testing Tool](https://gitlab.com/gitlab-org/quality/zero-downtime-testing-tool)
 - [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)
 
-内部のお客様: [Gitaly](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/)、[SaaS Platforms セクション](/handbook/engineering/infrastructure-platforms/)、[Infrastructure 部門](/handbook/engineering/infrastructure/)、[Support 部門](/handbook/support/)、[Customer Success](/handbook/customer-experience/)
+内部のお客様: [Gitaly](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/)、[SaaS Platforms セクション](/handbook/engineering/infrastructure-platforms/)、[Infrastructure Department](/handbook/engineering/infrastructure/)、[Support Department](/handbook/support/)、[Customer Success](/handbook/customer-experience/)
 
 ### 担当グループが支援する機能 {#facilitated-functionality}
 
@@ -341,11 +341,11 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
 
 ### 共有責任機能 {#shared-responsibility-functionality}
 
-特定の製品能力には、その性質上、基盤的なものがあり、横断的にアーキテクチャのコンポーネントに影響したり関連するものがあり、機能グループとステージにまたがる影響を持ちます。
+特定の製品能力には、その性質上、基盤的なものがあり、横断的にアーキテクチャのコンポーネントに影響したり関連するものがあり、部門横断やステージ横断の影響を持ちます。
 
-これらの能力は、メンタルモデルが特定のグループによって所有される一方で、誰でも貢献できる「担当グループが支援する機能」(上記のセクションを参照) を指すこともあります。ただし、いずれの特定のグループの製品カテゴリの管掌にも明確に当てはまらないため、明確な所有者がいないものもあります。この最たる例は、組織全体の複数または全グループで使用される基礎的コンポーネント、フレームワーク、ライブラリの改善や進化に関連する Issue です。別の例としては、過去の特別タスクグループによって作成されたコンポーネントで、そのグループが解散し、それらを保守する専任の永続的なグループへの資金を正当化するための継続的な開発を必要としなかったものが考えられます。
+これらの能力は、メンタルモデルが特定のグループによって所有される一方で、誰でも貢献できる「担当グループが支援する機能」(上記のセクションを参照) を指すこともあります。ただし、いずれの特定のグループの製品カテゴリの管掌にも明確に当てはまらないため、明確な所有者がいないものもあります。代表的な例は、組織全体の複数または全グループで使用される基礎的コンポーネント、フレームワーク、ライブラリの改善や進化に関連する Issue です。別の例としては、過去の特別タスクグループによって作成されたコンポーネントで、そのグループが解散し、それらを保守する専任の永続的なグループへの資金を正当化するための継続的な開発を必要としなかったものが考えられます。
 
-機能の出所が何であれ、これらのコンポーネントを「所有者がいない」と考えるのではなく、共有責任のレンズを通して全員によって所有されていると考えることが重要です。「共有責任」とは、すべてのグループがそれらの継続的な保守、改善、イノベーションに **貢献** することにコミットし、責任を持つべきであるという意味です。
+機能の出所が何であれ、これらのコンポーネントを「所有者がいない」と考えるのではなく、共有責任の観点から全員が所有していると考えることが重要です。「共有責任」とは、すべてのグループがそれらの継続的な保守、改善、イノベーションに **貢献** することにコミットし、責任を持つべきであるという意味です。
 
 この文脈における **貢献** は、さまざまな形で現れることがあります:
 
