@@ -2,16 +2,16 @@
 title: サポートチーム ハンドブック
 description: GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 upstream_path: /handbook/support/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T12:14:25.983858+00:00"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+translated_at: "2026-11-07T00:37:58Z"
 translator: codex
 stale: false
-lastmod: "2026-11-04T20:19:30+01:00"
+lastmod: "2026-11-06T17:10:29-05:00"
 ---
 
 ## GitLab サポートチーム ハンドブックへようこそ {#welcome-to-the-gitlab-support-team-handbook}
 
-GitLab サポートチームは、GitLab.com およびセルフマネージド GitLab のお客様に技術サポートを提供しています。GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
+GitLab サポートチームは、GitLab.com および Self-Managed GitLab のお客様に技術サポートを提供しています。GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 
 | あなたが…の場合 | 必要なもの | 参照すべき場所 |
 | ---------- | --------- | --------------------- |
@@ -23,7 +23,7 @@ GitLab サポートチームは、GitLab.com およびセルフマネージド G
 私たちのチームに合いそうな方をご存知ですか？ 以下のジョブファミリーの説明を共有してください。
 
 - [Support Engineering ジョブファミリー](/job-description-library/engineering/support-engineer/)
-- [サポートマネジメント ジョブファミリー](/job-description-library/engineering/support-management/)
+- [Support Management ジョブファミリー](/job-description-library/engineering/support-management/)
 
 ## サポートチームは何をするのか？ {#what-does-the-support-team-do}
 
@@ -49,12 +49,12 @@ GitLab サポートチームは、GitLab.com およびセルフマネージド G
 しかし、商業的なオファリングの一つを通じてお客様に最もよくサービスを提供できる場合もあります。
 
 サポートは CIO が率いる [Enterprise Technology &amp; AI (ETA)](/handbook/eta/) 組織の一部であり、Support Engineer は追加サービスのアップセル、お客様の購入、またはリード獲得に対してコミッションやボーナスを受け取っていません。
-[Professional Services](https://about.gitlab.com/services/)の利用や、異なるティアやオファリングへの移行を推薦する場合は、このセクションへのリンクを推薦に含めることで、混合した動機なしにそうしていることをお客様に確認していただけます。
+[Professional Services](https://about.gitlab.com/services/)の利用や、異なるティアやサービスへの移行を推奨する場合は、このセクションへのリンクを添えることで、他の意図がないことをお客様に安心していただけます。
 
 ### GitLab 内での私たちの役割 {#our-role-within-gitlab}
 
 GitLab サポートは [Enterprise Technology &amp; AI (ETA)](/handbook/eta/) ディビジョンの一部です。
-サポートは Cost of Sales（または Cost of Goods Sold (COGS) とも呼ばれる）コストセンターの一部です。
+サポートは売上原価（Cost of Sales、または Cost of Goods Sold (COGS) とも呼ばれます）のコストセンターの一部です。
 
 この独自の取り決めは、私たちの [主要業績評価指標](/handbook/support/performance-indicators/)に反映されており、
 コストを事前定義した範囲内に抑えつつ、アウトプットを増やすことで効率を高めながら、
@@ -74,7 +74,7 @@ GitLab サポートは [Enterprise Technology &amp; AI (ETA)](/handbook/eta/) �
 
 ##### サポートシャドウプログラム {#support-shadow-program}
 
-GitLab サポートチームと私たちの責務について学びたい GitLab チームメンバーは、サポートシャドウプログラムへの参加をお勧めします。サポートシャドウプログラムは、サポート以外のチームメンバーが GitLab サポートチームとともにシャドーイング、学習、コラボレーション、協力して働く時間を過ごすための方法です。
+GitLab サポートチームと私たちの責務について学びたい GitLab チームメンバーには、サポートシャドウプログラムへの参加をお勧めします。サポートシャドウプログラムは、サポート以外のチームメンバーが GitLab サポートチームとともにシャドーイング、学習、コラボレーション、協力して働く時間を過ごすための方法です。
 
 サポートチームのメンバーではなく、このプログラムに参加したい場合は、`support-team-meta` プロジェクトに [サポートシャドウプログラム Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/new?issuable_template=Support%20Shadow%20Program)を開いてください。この Issue は、このプログラムへの進捗を整理、計画、追跡するために使用されます。
 
@@ -206,7 +206,7 @@ GitLab.com の Issue とマージリクエストでサポートチームメン�
 | [@gitlab-com/support/amer](https://gitlab.com/groups/gitlab-com/support/amer/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | AMER サポート |
 | [@gitlab-com/support/apac](https://gitlab.com/groups/gitlab-com/support/apac/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | APAC サポート |
 | [@gitlab-com/support/emea](https://gitlab.com/groups/gitlab-com/support/emea/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | EMEA サポート |
-| [@gitlab-com/support/dotcom](https://gitlab.com/groups/gitlab-com/support/dotcom/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | SaaS 主担当と GitLab.com 管理者アクセスを持つサポートメンバー |
+| [@gitlab-com/support/dotcom](https://gitlab.com/groups/gitlab-com/support/dotcom/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | 主に SaaS を担当し、GitLab.com の管理者アクセス権を持つサポートメンバー |
 | [@gitlab-com/support/dotcom/console](https://gitlab.com/groups/gitlab-com/support/dotcom/console/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | GitLab.com コンソールアクセスを持つサポートメンバー |
 | [@gitlab-com/support/customers-console](https://gitlab.com/groups/gitlab-com/support/customers-console/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | CustomersDot コンソールアクセスを持つサポートメンバー |
 | [@gitlab-com/support/licensing-subscription](https://gitlab.com/groups/gitlab-com/support/licensing-subscription/-/group_members?with_inherited_permissions=exclude&sort=last_joined) | ライセンスと更新に注力するサポートメンバー |
@@ -287,14 +287,14 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 
 | チャンネル | 誰が参加しているか | 目的 | 使用頻度 |
 | ---- | ---- | ---- | ---- |
-| `#spt-vp-directors` | ディレクター以上 | シニアリーダーシップが機密トピック / 予算 / 等について議論・調整するために使用 | 週に 3〜4 スレッド |
-| `#spt_managers-internal` | マネージャー以上 | 公開チャンネルには適さないマネージャーが対象の機密トピックに使用 | 週に 4〜5 スレッド |
-| `#spt_managers-internal-apac` | APAC マネージャー以上 | 公開チャンネルには適さない APAC マネージャーが対象の機密トピックに使用 | 週に 3〜4 スレッド |
-| `#spt_managers-emea` | EMEA マネージャー以上 | 公開チャンネルには適さない EMEA マネージャーが対象の機密トピックに使用 | 週に 4〜5 スレッド |
-| `#spt_managers-amer` | AMER マネージャー以上 | 公開チャンネルには適さない AMER マネージャーが対象の機密トピックに使用 | 週に 1〜2 スレッド |
-| `#spt_hiring-mgmt` | マネージャー以上、採用担当、財務 | オファーの調整と公開チャンネルで共有できる採用の詳細を議論するために使用 | 週に 1〜2 スレッド |
-| `#spt_leadership_internal` | マネージャー以上、スタッフ以上 | `#support_leadership` のプライベートバージョン。スタッフとマネージャーが適切な対象の機密トピックに使用 | ほとんど使用されない |
-| `#spt_staff_internal` | スタッフ以上 | 公開チャンネルには適さないスタッフエンジニアが対象の機密トピックに使用 | ほとんど使用されない |
+| `#spt-vp-directors` | Directors+ | Senior leadership が機密トピック / 予算 / 等について議論・調整するために使用 | 週に 3〜4 スレッド |
+| `#spt_managers-internal` | Managers+ | 公開チャンネルには適さないマネージャーが対象の機密トピックに使用 | 週に 4〜5 スレッド |
+| `#spt_managers-internal-apac` | APAC Managers+ | 公開チャンネルには適さない APAC マネージャーが対象の機密トピックに使用 | 週に 3〜4 スレッド |
+| `#spt_managers-emea` | EMEA Managers+ | 公開チャンネルには適さない EMEA マネージャーが対象の機密トピックに使用 | 週に 4〜5 スレッド |
+| `#spt_managers-amer` | AMER Managers+ | 公開チャンネルには適さない AMER マネージャーが対象の機密トピックに使用 | 週に 1〜2 スレッド |
+| `#spt_hiring-mgmt` | Managers+、Recruiting、Finance | オファーの調整と公開チャンネルで共有できる採用の詳細を議論するために使用 | 週に 1〜2 スレッド |
+| `#spt_leadership_internal` | Managers+、Staff+ | `#support_leadership` のプライベートバージョン。スタッフとマネージャーが適切な対象の機密トピックに使用 | ほとんど使用されない |
+| `#spt_staff_internal` | Staff+ | 公開チャンネルには適さない Staff Engineers が対象の機密トピックに使用 | ほとんど使用されない |
 
 新しいプライベートチャンネルを始める前に、*なぜここでは誰もが**貢献できない**のか？* と自問してください。適切な回答は次のとおりです:
 
@@ -381,7 +381,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 
 #### サポート月次ビジネスレビュー (MBR) {#support-monthly-business-review-mbr}
 
-リーダーシップチーム（スタッフ、マネージャー、シニアマネージャー、ディレクター）は毎月、ビジネス目標とクロスリージョンコラボレーションの調整のために会合します。SAFE データが共有されますが、より広いチームの認識のためにリードアウトが配信されます。
+リーダーシップチーム（Staff、Managers、Senior Managers、Directors）は毎月、ビジネス目標とクロスリージョンコラボレーションの調整のために会合します。SAFE データが共有されますが、より広いチームの認識のためにリードアウトが配信されます。
 
 #### サポートリージョナルチームミーティング {#support-regional-team-meetings}
 
@@ -415,7 +415,7 @@ Senior/Staff Support Engineer のオフィスアワーで期待できること�
 
 ### サポート週次レビュー {#support-week-in-review}
 
-毎週金曜日、[より大きなエンジニアリング組織の週次レビュー](https://drive.google.com/drive/u/0/search?q=type:document%20title%20%22Engineering%20week-in-review%22) からインスピレーションを受けて週次レビューを行っています。SWIR の [トピックフォーム](https://gitlab-com.gitlab.io/support/toolbox/forms_processor/SWIR/)を使用していつでもトピックを追加できます。
+毎週金曜日、[Engineering 組織全体の週次レビュー](https://drive.google.com/drive/u/0/search?q=type:document%20title%20%22Engineering%20week-in-review%22) からインスピレーションを受けて週次レビューを行っています。SWIR の [トピックフォーム](https://gitlab-com.gitlab.io/support/toolbox/forms_processor/SWIR/)を使用していつでもトピックを追加できます。
 
 ワークフローの変更や発表は SWIR で共有される必要があり、最近の変更を把握するために少なくとも週に一度は確認することをお勧めします。理想的には、ここで共有される情報は Issue やマージリクエストなどの恒久的な場所にある必要があります。
 
@@ -423,7 +423,7 @@ Senior/Staff Support Engineer のオフィスアワーで期待できること�
 
 - [SWIR プロジェクト](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review)の `SWIR::Digest` ラベルがついた [より最近の Issue](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/issues/?sort=created_date&state=all&label_name%5B%5D=SWIR%3A%3ADigest&first_page_size=20)を表示することで、サポート週次レビューを読むことができます。
 - このラベルを購読すると、最新の SWIR が生成されたときに通知を受けることができます。
-- 2022/07/01 以降に録音されたオーディオエディションについては、それぞれの Issue 内に SWIR のオーディオエディションへのリンクがあります（[SAFE フレームワーク](/handbook/legal/safe-framework/)に準拠するためです。すべてのオーディオエディションのアーカイブは Google ドライブの [サポート週次レビュー - オーディオエディションフォルダ](https://drive.google.com/drive/search?q=support%20week%20in%20review%20-%20audio%20edition)（内部のみ）で見つけることができます。
+- 2022/07/01 以降に録音されたオーディオエディションについては、それぞれの Issue 内に SWIR のオーディオエディションへのリンクがあります（[SAFE フレームワーク](/handbook/legal/safe-framework/)に準拠するためです。すべてのオーディオエディションのアーカイブは Google Drive の [サポート週次レビュー - オーディオエディションフォルダ](https://drive.google.com/drive/search?q=support%20week%20in%20review%20-%20audio%20edition)（内部のみ）で見つけることができます。
 
 チームの誰でも共有することをお勧めします。
 
@@ -431,14 +431,14 @@ Senior/Staff Support Engineer のオフィスアワーで期待できること�
 
 現在、SWIR の各セクションに以下のトピックがあります:
 
-- **Actionable（実行が必要なもの）**: 決定を下す必要があるか、または行動を取る必要があるもの（Issue のフィードバックを求めるなど）。
-- **Things to know about（知っておくべきこと）**: 取り組んでいるプロジェクト、既知のバグ、新しいワークフロー、見つけたクールな記事など、チームと共有したいものを共有します。
-- **Team Member updates（チームメンバーの更新）**: 新しいチームメンバー、社内異動、チームメンバーに関するその他のニュース！
-- **What Did we Learn this Week（今週何を学んだか）**: 発見した（または再発見した！）ことや学んだことを共有するスペース。
-- **Support Operations Corner（Support Operations からの情報）**: Support Operations チームからの発表と情報
-- **Kudos（称賛）**: 他のチームメンバーに特別な称賛を贈るか、当人が行ったことをハイライトします。
+- **行動が必要なもの**: 決定を下す必要があるか、または行動を取る必要があるもの（Issue のフィードバックを求めるなど）。
+- **知っておくべきこと**: 取り組んでいるプロジェクト、既知のバグ、新しいワークフロー、見つけたクールな記事など、チームと共有したいものを共有します。
+- **チームメンバーの近況**: 新しいチームメンバー、社内異動、チームメンバーに関するその他のニュース！
+- **今週学んだこと**: 発見した（または再発見した！）ことや学んだことを共有するスペース。
+- **Support Operations からの情報**: Support Operations チームからの発表と情報
+- **称賛**: 他のチームメンバーに特別な称賛を贈るか、当人が行ったことをハイライトします。
    -**SSAT**: 今週お客様から受け取ったポジティブな SSAT フィードバックの抜粋
-- **Metrics report（メトリクスレポート）**: 1 週間のサポートメトリクスをレビューします。
+- **メトリクスレポート**: 1 週間のサポートメトリクスをレビューします。
 
 #### SWIR ラベル {#swir-labels}
 
@@ -457,7 +457,7 @@ Sales、Channel、Product、Legal など。そして、それらのコラボレ�
 
 #### Support Stable Counterpart {#support-stable-counterpart}
 
-Support Stable Counterpart ロールは、製品チームまたは非製品チームとサポートの間に強いつながりを提供するために設計されています。目的は、製品の Issue を議論し、製品の知識を共有し、お客様のニーズを代弁するとともに、各チームの仕事に関する知識を共有し、2 つのチームがうまく協力できるようなプロセスとドキュメントを開発することです。Support Stable Counterpart になることに興味がある場合、またはロールについて詳しく知りたい場合は、
+Support Stable Counterpart ロールは、製品チームまたは非製品チームとサポートの間に強いつながりを提供するために設計されています。目的は、製品の問題を議論し、製品の知識を共有し、お客様のニーズを代弁するとともに、各チームの仕事に関する知識を共有し、2 つのチームがうまく協力できるようなプロセスとドキュメントを開発することです。Support Stable Counterpart になることに興味がある場合、またはロールについて詳しく知りたい場合は、
 [Support Stable Counterparts](/handbook/support/support-stable-counterparts)
 ページを読んでください。
 
@@ -478,9 +478,10 @@ Support Stable Counterpart ロールは、製品チームまたは非製品チ�
 - [サポートワークフロー](/handbook/support/workflows)
   - [内部ポリシーと手順 Wiki](https://gitlab.com/gitlab-com/support/internal-requests/-/wikis/home)
   - [チケットの扱い方](/handbook/support/workflows/working-on-tickets)
-  - [プロダクト/開発に Issue を提出する方法](/handbook/support/workflows/working-with-issues)
+  - [サポートチケットのライフサイクル](/handbook/support/workflows/ticket_lifecycle/)
+  - [Product/Development に Issue を提出する方法](/handbook/support/workflows/working-with-issues)
   - [GitLab アプリケーションにコードを提出する方法](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md)
-  - [お客様の Issue で作業する際のドキュメント提出方法](https://docs.gitlab.com/development/documentation/styleguide/#docs-first-methodology)
+  - [お客様の問題に対応する際のドキュメント提出方法](https://docs.gitlab.com/development/documentation/styleguide/#docs-first-methodology)
 - [ライセンスと更新のワークフロー](/handbook/support/license-and-renewals/workflows)
 
 ### Slack ワークフロー {#slack-workflows}
@@ -503,17 +504,17 @@ Support Stable Counterpart ロールは、製品チームまたは非製品チ�
 特定の絵文字でメッセージにリアクションすることで情報を提供します。
 
 - `#support_escalations`
-  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_managers_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部 Issue をエスカレーションするための適切な手順に従うようユーザーを誘導します。
+  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_managers_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部の問題をエスカレーションするための適切な手順に従うようユーザーを誘導します。
 - `#support_gitlab-com`
-  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_gitlab_com_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部 Issue をエスカレーションするための適切な手順に従うようユーザーを誘導します。
+  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_gitlab_com_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部の問題をエスカレーションするための適切な手順に従うようユーザーを誘導します。
   - [質問リダイレクト](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_gitlab_com_question_redirect.slackworkflow) - `:leftwards_arrow_with_hook:` - より適切な Slack チャンネルに質問を投稿するようユーザーを誘導します。
-  - [リンクプレビュー削除](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_gitlab_com_remove_link_preview.slackworkflow) - `:slack:` - メッセージ内のアンファールされたリンクプレビューを削除するよう丁寧に求めます。
+  - [リンクプレビュー削除](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_gitlab_com_remove_link_preview.slackworkflow) - `:slack:` - メッセージ内の展開されたリンクプレビューを削除するよう丁寧に求めます。
   - [ウェルカム](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_gitlab_com_welcome.slackworkflow) - この自動化されたワークフローは、チャンネルの新しいメンバーに役立つ情報を含むダイレクトメッセージを自動的に送信します。
   - 連絡先管理 - `:admission_tickets:` - Zendesk グローバル組織のサポート連絡先を管理するための適切な手順に従うようユーザーを誘導します。
 - `#support_self-managed`
-  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_self_managed_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部 Issue をエスカレーションするための適切な手順に従うようユーザーを誘導します。
+  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_self_managed_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部の問題をエスカレーションするための適切な手順に従うようユーザーを誘導します。
 - `#support_licensing-subscription`
-  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_licensing_subscription_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部 Issue をエスカレーションするための適切な手順に従うようユーザーを誘導します。
+  - [チケットエスカレーション](https://gitlab.com/gitlab-com/support/toolbox/slack-workflows/-/blob/master/support_licensing_subscription_ticket_escalation.slackworkflow) - `:escalate:` - サポートチケットまたは内部の問題をエスカレーションするための適切な手順に従うようユーザーを誘導します。
 
 ### 休暇 {#time-off}
 
@@ -600,14 +601,14 @@ Support Manager は定期的にボードを確認して、アイテムを前進�
   - [要件](https://docs.gitlab.com/install/requirements/)
   - [GitLab のインストール方法](https://about.gitlab.com/install/)
   - [GitLab のバックアップと復元](https://docs.gitlab.com/administration/backup_restore/)
-  - [Omnibus 設定の設定](https://docs.gitlab.com/omnibus/settings/)
+  - [Omnibus の構成設定](https://docs.gitlab.com/omnibus/settings/)
   - [Omnibus 設定オプション](https://docs.gitlab.com/omnibus/settings/configuration.html)
   - [Omnibus データベース設定](https://docs.gitlab.com/omnibus/settings/database.html#seed-the-database-fresh-installs-only)
 - GitLab のデバッグ
   - [ログシステム](https://docs.gitlab.com/administration/logs/)
   - [Rake タスク](https://docs.gitlab.com/administration/raketasks/)
   - [メンテナンス Rake タスク](https://docs.gitlab.com/administration/raketasks/maintenance/)
-  - [GitLab Support Engineer 向けデバッグリソース](https://docs.gitlab.com/administration/#support-team-docs)
+  - [GitLab Support Engineer 向けデバッグリソース](https://docs.gitlab.com/administration/troubleshooting/#support-team-troubleshooting-info)
   - [GitLab Rails コンソールチートシート](https://docs.gitlab.com/administration/troubleshooting/gitlab_rails_cheat_sheet/)
 - GitLab の機能
   - [GitLab Runner のインストール](https://docs.gitlab.com/runner/install/)

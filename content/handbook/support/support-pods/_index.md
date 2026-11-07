@@ -2,11 +2,11 @@
 title: Support Pods
 description: Support 内および各部門をまたいだ協働に焦点を当てる柔軟な関心グループ
 upstream_path: /handbook/support/support-pods/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T06:36:19+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T00:43:27.880819+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-05T15:54:21-05:00"
 ---
 
 Support Pods は、任意のチームメンバーグループが、取り組みたい任意の課題セットに対して、関心ベースの自己組織化グループを立ち上げるために利用できる柔軟なフレームワークです。
@@ -51,7 +51,7 @@ Support Pod をワークフローに組み込む方法については、[Support
 ### 開始前に {#before-starting}
 
 - Support Pod が扱う活動内容を決める。
-- 少なくとも 3 名のチームメンバーが Support Pod の活動への参加をコミットしている。
+- 少なくとも 3 名のチームメンバーに Support Pod の活動への参加を約束してもらう。
 - [Support Pod のリード](#responsibilities-of-support-pod-leads)を決定する。
 
 ### 立ち上げ {#starting-it-up}
@@ -70,13 +70,13 @@ Support Pod をワークフローに組み込む方法については、[Support
 
 ### Support Pod リードの責務 {#responsibilities-of-support-pod-leads}
 
-各 Support Pod には少なくとも 1 名のリードを置き、ポッドの目的を定義し、その目的の達成に向けて進捗をドライブする責任を担います。
+各 Support Pod には少なくとも 1 名のリードを置き、ポッドの目的を定義し、その目的の達成に向けて取り組みを推進する責任を担います。
 
 Support Pod のリードは [Support Stable Counterparts](/handbook/support/support-stable-counterparts/)（SSC）とは異なります。SSC はエンジニアリングの製品グループとの協働に注力し、Support Pod のリードは Support チーム内での協働に注力します。対応するポッドが存在する場合、SSC が同時にそのポッドのリードを務めることが理にかなっていることもあります。
 
 Support Pod のリードは、次の責務を担います。
 
-- Support Pod の活動を支援する意思のあるチームメンバーをリクルートする。
+- Support Pod の活動を支援でき、その意思のあるチームメンバーを募集する。
 - Support Pod 内、および GitLab 組織のより広いチームメンバーとの協働を組織化する。
 - Support Pod の活動に必要なリソースやツールを入手する。
 - ポッドの目的が達成された、または不要になった場合に Support Pod を解散する。
@@ -118,7 +118,7 @@ Slack を使って協働する場合は、既存のチャンネルを活用す�
 
 専用チャンネルを作成する場合は、チャンネル名のプレフィックスを `#spt-pod_` としてください。
 
-ポッド固有のペアリングセッションをチャンネル内で実施する場合は、[#pairify-app](https://gitlab.enterprise.slack.com/archives/C06LG9NBSUX)でリクエストすることで、新しいチャンネルに [Pairify](/handbook/support/workflows/pairify/)のサポートを追加できます。
+ポッド固有のペアリングセッションをチャンネル内で実施する場合は、[#spt_pairify-app](https://gitlab.enterprise.slack.com/archives/C06LG9NBSUX)でリクエストすることで、新しいチャンネルに [Pairify](/handbook/support/workflows/pairify/)のサポートを追加できます。
 
 ## ギャップの特定とアクションによる Support Pod の改善 {#improving-support-pods-by-identifying-and-actioning-on-gaps}
 
@@ -131,7 +131,7 @@ Slack を使って協働する場合は、既存のチャンネルを活用す�
 1. [SWOT 分析](https://en.wikipedia.org/wiki/SWOT_analysis)
    - アクション： 「脅威」と「弱み」に対して Issue を作成し、解決の DRI を割り当てる。
 1. 専門知識の分析。[Auth の例](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/4920)。
-   - アクション： 一定数のメンバーに Support Pod への参加を呼びかけたり、目標数のトレーニングモジュールを公開したりするなど、状況に応じて変わります。
+   - アクション： 一定数のメンバーに Support Pod への参加を呼びかけたり、目標人数のメンバーにトレーニングモジュールに着手してもらったりするなど、状況に応じて変わります。
 1. アンケートなどの方法で Support チームメンバーから困りごとのリストを集める。
    - アクション： 実行可能な点があるかリストを分析する。それぞれに対して Issue を作成し、解決の DRI を割り当てる。
 

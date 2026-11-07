@@ -2,26 +2,26 @@
 title: "GitLab システム管理者 - ハンズオンラボ: GitLab Kubernetes インスタンスの探索"
 description: "このハンズオンガイドでは、GitLab Kubernetes インスタンスでのコマンドラインツールへのアクセスと操作方法を紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2k8s/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T00:33:39.772635+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-05T15:47:39Z"
 ---
 
-## 目的
+## 目的 {#objectives}
 
-このラボでは、GitLab インスタンスに SSH 接続し、インスタンスで使用可能なさまざまなコマンドラインツールを操作します。これにより、GitLab インストールを操作するさまざまな方法を理解できます。
+このラボでは、GitLab インスタンスに SSH 接続し、インスタンスで使用可能なさまざまなコマンドラインツールを操作します。これにより、GitLab のインストール環境を操作するさまざまな方法を理解できます。
 
-## タスク A. GitLab インスタンスへのアクセス
+## タスク A. GitLab インスタンスへのアクセス {#task-a-accessing-the-gitlab-instance}
 
-SSH を使用して GitLab インストールにアクセスします。このクラスの一部として、SSH キーとインスタンス IP が提供されています。提供されたインスタンスは、Kubernetes クラスターへの helm 経由のアクティブな接続を持っています。インスタンスに SSH 接続するには、以下の手順を使用します。
+SSH を使用して GitLab のインストール環境にアクセスします。このクラスでは、この操作に使用する SSH キーとインスタンスの IP アドレスが提供されています。提供されたインスタンスは、helm を介して Kubernetes クラスターに接続済みです。インスタンスに SSH 接続するには、以下の手順を使用します。
 
 1. ローカルコンピューターでターミナルウィンドウを開きます。
 
 1. サーバーの SSH キーファイルが含まれているディレクトリに移動します。
 
-1. SSH 接続では、プライベートキーファイルに他のユーザーがアクセスできないようにする必要があります。Linux および MacOS では、次のコマンドで設定できます。
+1. SSH 接続では、秘密鍵ファイルに他のユーザーがアクセスできないようにする必要があります。Linux および MacOS では、次のコマンドで設定できます。
 
       ```bash
       chmod 400 <keyfile_name>
@@ -39,7 +39,7 @@ SSH を使用して GitLab インストールにアクセスします。この�
       ssh -i <keyfile_name> student-user@<vm_ip_address>
       ```
 
-      > WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! というエラーが表示された場合は、SSH の known hosts をリセットする必要があるかもしれません。これを行うには、`ssh-keygen -R <vm_ip_address>` コマンドを実行してください。
+      > WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! というエラーが表示された場合は、SSH の既知のホスト情報をリセットする必要があるかもしれません。これを行うには、`ssh-keygen -R <vm_ip_address>` コマンドを実行してください。
 
 1. Enter キーを押します。
 
@@ -47,7 +47,7 @@ SSH を使用して GitLab インストールにアクセスします。この�
 
 1. yes と入力すると、サーバーに接続されます。
 
-## タスク B. kubectl の操作
+## タスク B. kubectl の操作 {#task-b-interacting-with-kubectl}
 
 `kubectl` コマンドラインツールは、GitLab インスタンスのステータスを確認・検証する主な方法の一つです。このセクションでは、GitLab インスタンスのステータスを確認するさまざまな方法を探ります。
 
@@ -79,13 +79,13 @@ SSH を使用して GitLab インストールにアクセスします。この�
           gitlab-webservice-default-67f8cbfd9b-cmn7p        2/2     Running     0               4m3s
       ```
 
-      > status コマンドにより、サーバー上で実行されている GitLab コンポーネントの概要が表示されます。ここに示されているものとコンポーネント名が異なる場合があります。
+      > ステータス確認コマンドにより、サーバー上で実行されている GitLab コンポーネントの概要が表示されます。ここに示されているものとコンポーネント名が異なる場合があります。
 
 1. 次に、特定の Pod の詳細を確認してみましょう。これを行うには、`kubectl describe pod <your-webservice-pod-name>` コマンドを実行します。
 
       > この出力では、Webservice Pod に関する詳細情報が表示されます。この出力は、GitLab インスタンスコンポーネントのトラブルシューティングと監視に役立ちます。
 
-## タスク C. helm の操作
+## タスク C. helm の操作 {#task-c-working-with-helm}
 
 Kubernetes を操作する場合、管理タスクの多くは helm を通じて実行されます。まず、helm デプロイメントの値を取得し、設定に若干の調整を加えます。
 
@@ -99,13 +99,13 @@ Kubernetes を操作する場合、管理タスクの多くは helm を通じて
 
 1. 結果のファイルを保存します。
 
-1. これらの値が正常にデプロイされることを確認するために、値ファイルをデプロイしてみましょう。これを行うには、`helm upgrade gitlab gitlab/gitlab --version 9.4.3 -f values.yml` コマンドを実行します。
+1. これらの値が正常にデプロイされることを確認するために、値ファイルをデプロイしてみましょう。これを行うには、`helm upgrade gitlab gitlab/gitlab --version 9.6.0 -f values.yml` コマンドを実行します。
 
       > このコマンドの実行には数分かかる場合があります。
 
 1. コマンドが完了したら、`kubectl get pods` を実行します。すべての Pod が正常にデプロイを完了していることを確認します。
 
-## タスク D. GitLab Rails の操作
+## タスク D. GitLab Rails の操作 {#task-d-interacting-with-gitlab-rails}
 
 GitLab Rails は、Ruby on Rails を通じて GitLab と直接やり取りできるコマンドラインツールです。このツールは、インスタンスエラーのトラブルシューティングと修正に役立ちます。
 
@@ -123,10 +123,10 @@ GitLab Rails は、Ruby on Rails を通じて GitLab と直接やり取りでき
 
 1. 完了したら、`quit` と入力して Rails コンソールを終了します。
 
-## ラボガイド完了
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボ演習を完了しました。このコースの他の[ラボガイド](/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonk8s)を参照できます。
 
-## ご提案はありますか?
+## ご提案はありますか？ {#suggestions}
 
 このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

@@ -1,29 +1,29 @@
 ---
-title: サポートチームメンバーの休暇
-description: サポートチームメンバーに休暇がどのように適用され、どのような対応が必要かのガイドライン。Support Global Change Management の Issue 抜きでこのページを移動しないでください。
+title: Support チームメンバーの休暇
+description: Support チームメンバーに休暇がどのように適用され、どのような対応が必要かのガイドライン。Support Global Change Management の Issue 抜きでこのページを移動しないでください。
 upstream_path: /handbook/support/support-time-off/
-upstream_sha: "d8805f3a85d40a3a59e331fbb593dd8b06e16768"
-translated_at: "2026-09-29T21:09:28+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T00:45:41.837665+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-28T18:57:11Z"
+lastmod: "2026-11-05T16:06:56-05:00"
 ---
 
-## サポートチームメンバーの休暇
+## Support チームメンバーの休暇 {#support-team-member-time-off}
 
-サポートチームは [GitLab の有給休暇ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/)に従っています。
+Support チームは [GitLab の有給休暇ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/)に従っています。
 私たちは、毎日お客様にサポートを提供する必要性とそれをバランスさせています。
-このページは、すべてのサポートチームメンバーがそのバランスを実現するために何をすべきかを理解するためのもので、これにより、チーム全員が必要なときや希望するときに休暇を取れるようにしながら、チームとしてお客様に素晴らしいサポートとサービスを提供し続けられるようにします。
+このページは、すべての Support チームメンバーがそのバランスを実現するために何をすべきかを理解するためのもので、これにより、チーム全員が必要なときや希望するときに休暇を取れるようにしながら、チームとしてお客様に素晴らしいサポートとサービスを提供し続けられるようにします。
 
-特に強調したい点があります。それは、どのチームメンバーにとっても、休暇は *本人が本当に休暇を取った場合に* のみその目的を果たすということです。休暇中に Slack、メール、その他仕事に関係するものをチェックしようとする義務感やプレッシャーを誰も感じるべきではありません。**特に、休日に休んだり、家族や友人と過ごしたりする時間を取るときには、雪の女王エルサの永遠の名言を借りるなら「Let it go.（ありのままで）」**
+特に強調したい点があります。それは、どのチームメンバーにとっても、休暇は *本人が本当に休暇を取った場合に* のみその目的を果たすということです。休暇中に Slack、メール、その他仕事に関係するものをチェックしようとする義務感やプレッシャーを誰も感じるべきではありません。**特に、休日に休んだり、家族や友人と過ごしたりする時間を取るときには、雪の女王エルサの永遠の名言を借りるなら「手放しましょう」**
 
-### 一度だけのセットアップ作業
+### 一度だけのセットアップ作業 {#one-time-setup-actions}
 
-#### サポートの休暇カレンダー
+#### サポートの休暇カレンダー {#support-time-off-calendars}
 
 1. [**Support - Time Off**](https://calendar.google.com/calendar/embed?src=gitlab.com_as6a088eo3mrvbo57n5kddmgdg%40group.calendar.google.com)
 チームカレンダーへのアクセス権を確実に持っているか確認してください。
-   1. サポートのオンボーディング中にアクセス権が付与されているはずです。アクセスがない場合は、Support Google Group（supportteam@）のメンバーであるかを確認してください。メンバーでない場合は、（ロールベースのエンタイトルメントに従って）#support_operations Slack チャンネルで追加を依頼してください（cc @jcolyer）。
+   1. サポートのオンボーディング中にアクセス権が付与されているはずです。アクセスがない場合は、Support Google Group（supportteam@）のメンバーであるかを確認してください。メンバーでない場合は、（ロールベースのエンタイトルメントに従って）#customer_support_systems Slack チャンネルで追加を依頼してください（cc @jcolyer）。
 
 1. Time Off by Deel との Google Calendar 連携をセットアップして、個人カレンダーと「Support - Time Off」カレンダーを手動で更新する必要がないようにします。
    1. Slack の左サイドバー下部にある「Apps」横の `+` 記号をクリックします
@@ -47,14 +47,14 @@ lastmod: "2026-09-28T18:57:11Z"
    - Support OOO - EMEA - c_ev56c9rgjd9l1sn291i368jn78@group.calendar.google.com
 1. L&R チケットを定期的に扱う場合は、グローバル L&R カレンダーと該当する L&R 地域カレンダーを購読してください。
 
-##### L&R および USGov のカレンダーリンク
+##### L&R および USGov のカレンダーリンク {#lr-and-usgov-calendar-links}
 
 | グループ |        |        |        |
 | ----- | ------ | ------ | ------ |
 | [L&R](https://calendar.google.com/calendar/u/0/embed?src=c_200f3afcbd9d0e18cbd80f00163ea7ca84e08bf857bdafc2bcad4202fed64f3e@group.calendar.google.com) | [APAC](https://calendar.google.com/calendar/u/0/embed?src=c_6d683f9a00d982d28055c0ef986561adc1aacf57570b7285a14ec79c31fd5f89@group.calendar.google.com) | [EMEA](https://calendar.google.com/calendar/u/0/embed?src=c_a849778a4950b23ce10953fa4f98d49e3abdc0aa57e88d448a27d87c6286ad0d@group.calendar.google.com) | [AMER](https://calendar.google.com/calendar/u/0/embed?src=c_55ea946dce89e101efa9d377ae355a201cc96b8d91079ada092cd2d9d821d602@group.calendar.google.com) |
-| U.S. Gov | [Daytime](https://calendar.google.com/calendar/u/0?cid=Y182Y2JlZTA4ZmFiOWFjYTI2NzE4YjQ5ODFmOWI5YTk0MDNlNzEyNTRjZmYyZTE5NTc0MjBjN2RhODgwYzg2M2IzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [Evenings](https://calendar.google.com/calendar/u/0?cid=Y182MzFiMDNkNGRhYmI3NWZmNjczMDNmMTUwNjZmNTRlYzhhMTE2ZWYzNGE5ZDA4Zjg5YTE1NDJlYzA5YTM5ZjgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [Overnight](https://calendar.google.com/calendar/u/0?cid=Y19hYjlhNzM0ODJmNGM3MDE1NzI0N2EzNTEwYmQxMjdiZWE3ZTExYmUzZWQzN2IzN2FlNThiMjNhOTNhOWI3MjQ3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) |
+| U.S. Gov | [日中](https://calendar.google.com/calendar/u/0?cid=Y182Y2JlZTA4ZmFiOWFjYTI2NzE4YjQ5ODFmOWI5YTk0MDNlNzEyNTRjZmYyZTE5NTc0MjBjN2RhODgwYzg2M2IzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [夕方](https://calendar.google.com/calendar/u/0?cid=Y182MzFiMDNkNGRhYmI3NWZmNjczMDNmMTUwNjZmNTRlYzhhMTE2ZWYzNGE5ZDA4Zjg5YTE1NDJlYzA5YTM5ZjgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [夜間](https://calendar.google.com/calendar/u/0?cid=Y19hYjlhNzM0ODJmNGM3MDE1NzI0N2EzNTEwYmQxMjdiZWE3ZTExYmUzZWQzN2IzN2FlNThiMjNhOTNhOWI3MjQ3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) |
 
-##### マネージャーのカレンダーリンク
+##### マネージャーのカレンダーリンク {#manager-calendar-links}
 
 - [Support Managers AMER](https://calendar.google.com/calendar/embed?src=c_d786d5c8e42ba6058b3a5df60448c17e41255f84a0c00549d197f0466000527d%40group.calendar.google.com&ctz=America%2FChicago)
 
@@ -78,7 +78,7 @@ lastmod: "2026-09-28T18:57:11Z"
 - 上記のような手順で計画した休暇日が確実に取れることを確認するまで、返金不可の旅程を予約しない
 - 可能であれば、オンコールなど各種ローテーションへの影響を避けるように休暇を計画する
 
-## 休暇の準備
+## 休暇の準備 {#preparing-for-time-off}
 
 仕事から計画的に離れる時期が近づいてきたら、チームと顧客にあなたの不在に備えてもらうための合理的な対応を取ることはあなたの責任です。これらの準備をすることで、あなた自身も仕事から切り離して休暇を効果的に過ごしやすくなります。
 
@@ -88,19 +88,19 @@ lastmod: "2026-09-28T18:57:11Z"
 
 以下のガイダンスに従って、自分自身、お客様、同僚に備えてください。
 
-### ロールのカバー
+### ロールのカバー {#coverage-for-roles}
 
 休暇中に PagerDuty のシフト（オンコールなど）に割り当てられている場合は、カバーを手配してください:
 
 1. ボランティアを見つけてカバーを依頼する。必要であればマネージャーの助けを借りる。
 1. [PagerDuty で適切なオーバーライドを作成する](https://support.pagerduty.com/main/docs/edit-schedules#create-overrides)。
 
-### 担当チケットのカバー
+### 担当チケットのカバー {#coverage-for-assigned-tickets}
 
 PTO に入る前にキューを整理してください。ガイドラインがすべてのケースをカバーすることはできませんので、
 このセクションは、各お客様への一貫した優れたサポートを確保するために何が必要かについて、自分で批判的に考えるためのガイダンスを提供することを目的としています。
 
-#### 不在が 3 営業日未満の場合
+#### 不在が 3 営業日未満の場合 {#if-your-absence-will-be-less-than-three-business-days}
 
 PTO によりタイムリーな更新ができない場合は、お客様に対して、`on-hold` ステータスでチケットを一時停止するか、別の人に対応を引き継いでもらうかを尋ねてください。
 高優先度のチケットの場合は、別の人への引き継ぎを優先する傾向にしてください:
@@ -127,9 +127,9 @@ PTO によりタイムリーな更新ができない場合は、お客様に対�
    - OOO から戻ったらこの変更を必ず元に戻してください。
 1. 戻ってきたら、[計画休暇後のキャッチアップ](#catching-up-after-a-scheduled-time-off)のガイドラインに従ってください。
 
-## サポートにおける Family and Friends Days の扱い
+## サポートにおける Family and Friends Days の扱い {#how-support-handles-family-and-friends-days}
 
-[Family and Friends Days](/handbook/company/family-and-friends-day/#upcoming-family-and-friends-days) の期間中も GitLab Support は通常通り
+[Family and Friends Days](/handbook/company/family-and-friends-day/) の期間中も GitLab Support は通常通り
 運営します。FY26 では、合計 4 日間を都合のよいタイミングで自由に取得して、Family and Friends day として祝い記録できます。
 [休暇の選択と記録](#choosing-and-recording-time-off)と同じガイドラインに従ってください。
 
@@ -141,7 +141,7 @@ PTO によりタイムリーな更新ができない場合は、お客様に対�
 11 月後半から 1 月の最初の週まで、つまり「ホリデーシーズン」中は、
 各サポート地域はお客様のニーズに応えるために十分な人員レベルを維持できるよう、休暇を調整するための追加ステップを取ります。
 
-### APAC
+### APAC {#apac}
 
 APAC は影響の大きい祝日期間をいくつか計画します。これらの日付の詳細は [APAC support ページ](/handbook/support/apac/#holiday-coverage-planning)に記載されています。
 
@@ -160,38 +160,38 @@ APAC は影響の大きい祝日期間をいくつか計画します。これら
 
 過去の計画 Issue は、この [エピック](https://gitlab.com/groups/gitlab-com/support/-/epics/252)で確認できます。
 
-### EMEA
+### EMEA {#emea}
 
-EMEA サポートチームは、年間を通じていくつかの影響の大きい祝日期間のカバレッジを計画します。主要な計画期間はイースターと年末ホリデーシーズンの 2 つです。
+EMEA Support チームは、年間を通じていくつかの影響の大きい祝日期間のカバレッジを計画します。主要な計画期間はイースターと年末ホリデーシーズンの 2 つです。
 
-これらの各期間について、EMEA サポートマネージャーは次のような計画 Issue を作成します:
+これらの各期間について、EMEA Support Managers は次のような計画 Issue を作成します:
 
 - [EMEA Year End Coverage 2025 - 2026](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/7194) - 計画は通常 6〜8 週間前に開始
 - [EMEA Coverage Planning - Easter Long Weekend and the surrounding 2 weeks](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/5806) - 計画は通常 10 月に開始
 
-これらの計画 Issue には、サポートエンジニアが休暇計画を共有してカバレッジを調整できる関連スプレッドシートが含まれています。このアプローチにより、以下が保証されます:
+これらの計画 Issue には、Support Engineers が休暇計画を共有してカバレッジを調整できる関連スプレッドシートが含まれています。このアプローチにより、以下が保証されます:
 
 - 祝日期間中の全 EMEA タイムゾーンにわたる十分なカバレッジ
 - 事前のチームの可用性の可視化
 - 休暇時間の公平な分配
 - 十分な専門知識のカバレッジ（L&R、CEOC、CMOC、オンコールロール）
 
-チームメンバーは、より良い調整を促進するため、できるだけ早くスプレッドシートに自分の計画を追加することが推奨されます。チームはすべての休暇リクエストに対応するよう努めますが、サポートエンジニアは、マネージメントチームによってカバレッジが確認されるまで、確定的なコミットメント（返金不可の旅行の購入など）を行うことは避けてください。
+チームメンバーは、より良い調整を促進するため、できるだけ早くスプレッドシートに自分の計画を追加することが推奨されます。チームはすべての休暇リクエストに対応するよう努めますが、Support Engineers は、マネージメントチームによってカバレッジが確認されるまで、確定的なコミットメント（返金不可の旅行の購入など）を行うことは避けてください。
 
-### AMER
+### AMER {#amer}
 
-AMER サポートマネージャーは、9 月下旬に
+AMER Support Managers は、9 月下旬に
 [このテンプレート](https://gitlab.com/gitlab-com/support/support-team-meta/-/blob/master/.gitlab/issue_templates/Year%20end%20holiday%20coverage%20AMER.md?ref_type=heads)を使って Issue を作成・公開します。
 その Issue で、AMER Support の全員に、ホリデーシーズン中の休暇希望を示すための指定された Google
-フォームを使うよう招待します。フォームが 10 月 15 日頃にクローズされたら、AMER サポートマネージャーは
+フォームを使うよう招待します。フォームが 10 月 15 日頃にクローズされたら、AMER Support Managers は
 誰かの希望休暇日に変更が必要かを速やかに判断します。
 
 希望日に出勤を依頼される可能性は高くないものの、可能性はあります。そのため、
 マネージメントチームからスケジュールが確定したという通知が出されるまでは、確定的なコミットメント（返金不可の旅程の購入など）を行わないでください。
 
-### 祝日休暇のチケット管理
+### 祝日休暇のチケット管理 {#holiday-time-off-ticket-management}
 
-グローバルな祝日休暇期間中のチケット処理に関するガイダンスは、サポートチームへの影響が増大する可能性があるため、わずかに異なります。
+グローバルな祝日休暇期間中のチケット処理に関するガイダンスは、Support チームへの影響が増大する可能性があるため、わずかに異なります。
 
 以下のピーク祝日はカバレッジに影響を及ぼす可能性が最も高いです:
 
@@ -213,21 +213,21 @@ AMER サポートマネージャーは、9 月下旬に
 
 **注: AMER の祝日とカバレッジ要件については、[AMER の祝日カバレッジ目標](/handbook/support/amer/#amer-holiday-coverage-targets)を参照してください**。
 
-### ピーク祝日中に休暇を取る予定がある場合
+### ピーク祝日中に休暇を取る予定がある場合 {#if-you-are-planning-to-take-time-off-during-peak-holidays}
 
-3 日以上不在になる予定の場合は、[3 営業日以上の不在](#if-your-absence-is-three-or-more-business-days)に関するガイダンスに従ってください。
+3 日を超えて不在になる予定の場合は、[3 営業日以上の不在](#if-your-absence-is-three-or-more-business-days)に関するガイダンスに従ってください。
 それ以外の場合:
 
 1. キューにある担当チケットをできる限り解決するよう最善を尽くしてください。
-1. お客様とコミュニケーションを取り、不在の日数を伝え、不在中に支援が必要かを尋ねてください。多くのお客様は同じ祝日スケジュールに従っている可能性があり、双方が戻ってきたときにチケットの作業を再開することで問題ない場合があります。
+1. お客様とコミュニケーションを取り、不在となる日を伝え、不在中に支援が必要かを尋ねてください。多くのお客様は同じ祝日スケジュールに従っている可能性があり、双方が戻ってきたときにチケットの作業を再開することで問題ない場合があります。
 1. 祝日中にアクションが必要ないチケットについては、特別なアクションは必要ありません。
 
-### 祝日に勤務する場合
+### 祝日に勤務する場合 {#if-you-are-working-on-a-holiday}
 
 1. 引き続き FRT を最優先にし、その次に自分のチケットの管理を行います。
 1. 現在不在の担当者がアサインされているチケットの NRT に **特に** 注意してください。
 
-## 一般的なヒント
+## 一般的なヒント {#general-tips}
 
 [休暇のコミュニケーション](/handbook/people-group/time-off-and-absence/time-off-types/)に記載されている全社共通のヒントに加えて、
 仕事から切り離す能力を高め、休暇を本当に最大限活用し、仕事に戻りやすくするための以下のヒントもご覧ください:
@@ -242,9 +242,9 @@ AMER サポートマネージャーは、9 月下旬に
    1. 携帯電話で Slack と Gmail アプリを一時停止する
    1. 携帯電話で通知を送らないように Slack と Gmail を手動で設定する
 
-## 休暇後の再接続
+## 休暇後の再接続 {#re-connect-after-time-off}
 
-戻ってきたら、Support Week in Review に項目を追加して、何をしていたかを他のチームに知らせることを検討してください！
+戻ってきたら、Support Week in Review に項目を追加して、何をしていたかを他のチームメンバーに知らせることを検討してください！
 
 ## 計画休暇後のキャッチアップ {#catching-up-after-a-scheduled-time-off}
 
@@ -262,9 +262,9 @@ AMER サポートマネージャーは、9 月下旬に
 
 PTO に入る前に一部のチケットの担当を解除した場合は、それらを確認してステータスをチェックする時間を取ってください。これらに DRI がまだいない場合や、自分が引き続き解決へ向けて推進するのに最適な人だと思われる場合は、自分に再アサインするのが良い習慣です。
 
-## マネージャーの休暇
+## マネージャーの休暇 {#managers-time-off}
 
-### PTO を取得する前
+### PTO を取得する前 {#before-pto-is-taken}
 
 マネージャーは進行中のすべてのタスク、責任、プロジェクトの徹底的なレビューを実施します。
 
@@ -272,7 +272,7 @@ PTO に入る前に一部のチケットの担当を解除した場合は、そ�
 1. 優先度の決定: マネージャーは、どのタスクが時間的制約があり、どれを遅らせることができるかを評価します。緊急性、影響、チームの依存関係に基づいて任務を優先順位付けします。
 1. 委任先の選定: マネージャーは、すべてのタスクを担当する 1 人のチームメンバーを選びます。タスクのいずれかが機密の場合は別のマネージャーを選びます。
 
-### タスクの委任
+### タスクの委任 {#task-delegation}
 
 タスクが特定され、チームメンバーが選定されたら、シームレスな移行を保証するために以下のステップを取るべきです:
 
@@ -283,38 +283,38 @@ PTO に入る前に一部のチケットの担当を解除した場合は、そ�
 - 従うべき具体的な指示やチェックリスト。
 - リソースへのアクセス: 委任先がタスクを効果的に実行するためのツール、ファイル、システムへの必要なアクセスを持つようにします。
 
-### コミュニケーション
+### コミュニケーション {#communicate}
 
 マネージャーは、責任の一時的な委任についてチームと関係するステークホルダーに通知します。
 
-### PTO 後
+### PTO 後 {#after-pto}
 
 報告会の実施: マネージャーはチームメンバーと会って、進捗状況、遭遇した課題、不在中に下された決定の結果をレビューします。
 
 その他のヒントについては、[PTO からの復帰](/handbook/people-group/time-off-and-absence/time-off-types/)を確認してください。
 
-## シフトエンジニアの休暇
+## Shift Engineer の休暇 {#shift-engineer-time-off}
 
-### 休暇のカバレッジ計画
+### 休暇のカバレッジ計画 {#planning-coverage-for-time-off}
 
-休暇前に、シフトエンジニアは週末シフトのカバーを見つけるべきです。シフトをカバーする候補として、以下の人を最初に検討すべきです:
+休暇前に、Shift Engineer は週末シフトのカバーを見つけるべきです。シフトをカバーする候補として、以下の人を最初に検討すべきです:
 
-1. 他のシフトエンジニア。
-1. 週末を控えた CEOC ロールのサポートエンジニア。
-1. 他のサポートエンジニア、またはマネージャーにカバー候補を見つける支援を依頼する。
+1. 他の Shift Engineer。
+1. 週末を控えた CEOC ロールの Support Engineers。
+1. 他の Support Engineers、またはマネージャーにカバー候補を見つける支援を依頼する。
 
 カバーは休暇となる週末日についてのみ必要です。それ以外の日は通常の休暇推奨事項に従えます。
 
-### 病気休暇
+### 病気休暇 {#sick-time}
 
-病気の場合、週末に不在になることがわかったらすぐに [オンコールサポートマネージャーをページ](/handbook/support/on-call/#engaging-the-on-call-manager)してください。
+病気の場合、週末に不在になることがわかったらすぐに [オンコールの Support Manager をページ](/handbook/support/on-call/#engaging-the-on-call-manager)してください。
 
-### 週末シフトをカバーする際のガイドライン
+### 週末シフトをカバーする際のガイドライン {#guidelines-for-covering-a-weekend-shift}
 
-シフトエンジニアの代わりにカバーする場合、週末中にどのチケットに [パブリックリプライ](/handbook/support/workflows/working-on-tickets/#weekend-focus-for-shift-engineers) を投稿してよいかに注意してください。
+Shift Engineer の代わりにカバーする場合、週末中にどのチケットに [パブリックリプライ](/handbook/support/workflows/working-on-tickets/#weekend-focus-for-shift-engineers) を投稿してよいかに注意してください。
 
-### シフトエンジニアとしての祝日
+### Shift Engineer としての祝日 {#holidays-as-a-shift-engineer}
 
 祝日が週末に当たり、それを休みとして取りたい場合は、休暇のカバレッジ計画のガイダンスに従ってください。
 
-祝日に勤務して、その祝日時間を選んだ別の日にフロートすることも歓迎されます。祝日の前後 1 か月以内の任意の日にフロートすることをおすすめします。
+祝日に勤務して、その分の休暇を自分の選んだ別の日に振り替えることもできます。祝日の前後 1 か月以内の任意の日に振り替えることをおすすめします。

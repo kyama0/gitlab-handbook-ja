@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-lastmod: "2026-11-05T17:24:28Z"
-translated_at: "2026-11-05T21:46:48.566032+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+lastmod: "2026-11-06T10:49:13+01:00"
+translated_at: "2026-11-07T00:04:48.602584+00:00"
 translator: claude
 stale: false
 ---
@@ -47,8 +47,12 @@ Rails の組織を、テーブルとトークンでは ID、URL ではパスで�
 - Organizations v1 では、すべてのアンカーは `('gitlab', 'organization', '<organizations.uuid>')` です。数値 ID ではなく、組織の UUIDv7 を使用します。IAM の Relationships API は、UUIDv7 以外のオブジェクト ID を含むリクエスト全体を拒否するため、数値 ID では、祖先である組織を指定できませんでした。
 - 組織の値に、それ以外の一意性制約を課してはいけません。[組織の統合](#organization-merges)では、存続する組織が複数のネームスペースを持つ必要があるためです。
 - 新しいアンカー型は、新たな `entity_type` の値であり、スキーマの変更は不要です。
-- 別の**課金アンカー**である `(billing_entity_type, billing_entity_id)` のペアが、使用量の支払者を識別します。Artifact Registry は、これを解釈せずに、すべての課金イベントに記載します。Organizations v1 ではトップレベルグループであり、`('top_level_group', '<root_namespace_id>')` です。支払者が変わる場合、Rails は後から置き換えられます（[課金アンカーの変更](#namespace-lifecycle)を参照）。課金が組織に移行しても、Artifact Registry を変更せずに値が変わります。
-- プラットフォームは、ネームスペースの作成時に、すべてのアンカーと課金の値を提供します。いずれにもスキーマのデフォルトを設けず、Artifact Registry を、外部のアイデンティティモデルと課金モデルから独立させます。
+- 別の **課金アンカー** である `(billing_entity_type, billing_entity_id)` のペアが、使用量の支払者を識別します。
+  Artifact Registry は、保存したペアの値を解釈せず、すべての課金イベントに記載し、ペアの書き込み時にその型だけを確認します。
+  Organizations v1 ではトップレベルグループであり、`('top_level_group', '<root_namespace_id>')` です。支払者が変わる場合、Rails は後から置き換えられます（[課金アンカーの変更](#namespace-lifecycle)を参照）。
+  Artifact Registry は、自身が列挙する支払者型だけを受け付けるため、課金が組織に移行する場合の組織など、新しい支払者型の追加には Artifact Registry の変更が必要です。
+- プラットフォームは、ネームスペースの作成時に、すべてのアンカーと課金の値を提供します。
+  いずれにもスキーマのデフォルトを設けず、Artifact Registry は、受け付ける支払者型を除いて、外部のアイデンティティモデルと課金モデルから独立したままです。
 
 パーティション分割されたテーブルは、`namespace_id`、または blob ストレージではダイジェストをキーとし（[ADR-007](007_database_schema.md#blob-storage-partitioning-strategy)）、どちらも変わりません。Cells の[シャーディングキー要件](https://docs.gitlab.com/development/organization/sharding/#choosing-the-right-sharding-key)は、Rails モノリスのデータベースに適用するものであり、Cell 内のサービスには適用しません。Cell 間のデータ移動に必要なのは、行が直接または間接的に組織に帰属することだけです。ネームスペースモデルでは、`namespace_id` → アンカー → 組織によって実現します。
 

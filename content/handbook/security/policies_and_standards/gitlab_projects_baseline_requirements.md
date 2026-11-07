@@ -6,11 +6,11 @@ tags:
   - security_standard
   - security_standard_cmma
 upstream_path: /handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T07:20:25.783696+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T00:54:54.993254+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-06T12:45:56Z"
 ---
 
 ## 目的 {#purpose}
@@ -54,20 +54,28 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
    - 直接プッシュする代わりに、[保護されたブランチへのマージリクエストを必須にします](https://docs.gitlab.com/user/project/repository/branches/protected/#require-everyone-to-submit-merge-requests-for-a-protected-branch)。
    - [デフォルトブランチへの強制プッシュを無効にします](https://docs.gitlab.com/user/project/repository/branches/protected/#allow-force-push-on-a-protected-branch)。
    - [署名のないコミットを拒否するプッシュルール](https://docs.gitlab.com/user/project/repository/push_rules/#require-signed-commits)を有効にします。
+   - [未検証のユーザーを拒否するプッシュルール](https://docs.gitlab.com/user/project/repository/push_rules/#verify-users)を有効にし、コミットのコミッターのメールアドレスが、プッシュするユーザーのアカウントで検証済みのメールアドレスであることを必須にします。
+   - [一致しないユーザー名を拒否するプッシュルール](https://docs.gitlab.com/user/project/repository/push_rules/#verify-users)を有効にし、作成者とコミッターのメールアドレスが同じ場合、コミットの作成者名がプッシュするユーザーの GitLab アカウント名と一致することを必須にします。
+   - [コミットの作成者が GitLab ユーザーであるかを確認するプッシュルール](https://docs.gitlab.com/user/project/repository/push_rules/#verify-users)を有効にします。
+   - [ユーザーによる `git push` での Git タグ削除を禁止する設定](https://docs.gitlab.com/user/project/repository/push_rules/#prevent-unintended-consequences)を有効にします。UI と API からは引き続きタグを削除できるため、保護タグまたは不変タグと組み合わせてください。
+   - [シークレットファイルのプッシュを防止するプッシュルール](https://docs.gitlab.com/user/project/repository/push_rules/#prevent-pushing-secrets-to-the-repository)を有効にします。このルールはファイル名で照合するため、ファイルの内容をスキャンするシークレットプッシュ保護を置き換えるものではなく、補完するものです。
 
 1. <a id="mr-approval-rule-configurations"></a>**レビューと承認を必須にします。**
    - GitLab の[コードレビューガイドライン](/handbook/engineering/workflow/code-review/)に従います。
-   - レビューされていないコミットがマージされないよう、[マージリクエスト承認ルール](https://docs.gitlab.com/user/project/merge_requests/approvals/rules/)を設定します。デフォルトブランチへのマージ前に、少なくとも 1 件の承認を必須にします。
-   - 新しいコミットが追加されたときに承認をすべて取り消す[Remove all approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#remove-all-approvals-when-commits-are-added-to-the-source-branch)設定を有効にします。
-   - [Prevent approval by merge request creator](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approval-by-merge-request-creator)設定を有効にします。
-   - [Prevent approvals by users who add commits](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approvals-by-users-who-add-commits)設定を有効にします。
-   - [Prevent editing approval rules in merge requests](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-editing-approval-rules-in-merge-requests)設定を有効にします。
+   - レビューされていないコミットがマージされないよう、[マージリクエスト承認ルール](https://docs.gitlab.com/user/project/merge_requests/approvals/rules/)を設定します。
+   - **設定 > マージリクエスト**で、[**承認可能なすべてのユーザー**ルール](https://docs.gitlab.com/user/project/merge_requests/approvals/rules/#code-owners-as-approvers)の**必要な承認数**を 1 に設定します。これにより、承認できる Code Owner がいない場合でも、すべてのマージリクエストで作成者以外の誰かによる 1 件の承認が必要になります。[承認ルールの組み合わせ](#how-the-approval-rules-combine)を参照してください。
+   - 新しいコミットが追加されたときに承認をすべて取り消す[すべての承認を取り消す](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#remove-all-approvals-when-commits-are-added-to-the-source-branch)設定を有効にします。
+   - [マージリクエスト作成者による承認を禁止する](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approval-by-merge-request-creator)設定を有効にします。
+   - [コミットを追加したユーザーによる承認を禁止する](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-approvals-by-users-who-add-commits)設定を有効にします。
+   - [マージリクエストでの承認ルールの編集を禁止する](https://docs.gitlab.com/user/project/merge_requests/approvals/settings/#prevent-editing-approval-rules-in-merge-requests)設定を有効にします。
    - 適用される SOX や FedRAMP の統制を含め、法律、規制、または契約が要求する場合は、人による承認を必須にします。
 
 1. <a id="note-on-usage-of-code-owners"></a>**Code Owner の承認を必須にします。**
    - [Code Owners ファイルでファイルの所有者を定義します](https://docs.gitlab.com/user/project/codeowners/#codeowners-file)。
-   - 保護されたブランチの設定で、[Code Owner 承認](https://docs.gitlab.com/user/project/repository/branches/protected/#require-code-owner-approval)を有効にします。
+   - `* @group/owners` のような、すべてのファイルに一致する行を独立したセクションに追加し、`@group/owners` を自分のチームのグループに置き換えます。`*` によって、すべてのファイルに Code Owner が割り当てられます。
+   - すべての保護されたブランチで、[Code Owner 承認](https://docs.gitlab.com/user/project/repository/branches/protected/#require-code-owner-approval)を有効にします。
    - マージリクエストが Code Owner の所有するファイルを変更する場合、少なくとも 1 人の Code Owner による承認を必須にします。
+   - Code Owner によるレビューが必要なファイルには、[除外パターン（`!`）](https://docs.gitlab.com/user/project/codeowners/reference/#exclusion-patterns)と[オプションのセクション（`^`）](https://docs.gitlab.com/user/project/codeowners/reference/#optional-sections)を使用しないでください。
 
 1. **シークレットの漏えいを防ぎます。**
    - [シークレットプッシュ保護](https://docs.gitlab.com/user/application_security/secret_detection/secret_push_protection/)を有効にします。
@@ -78,7 +86,7 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 
 1. **CI/CD 変数を保護します。**
    - シークレットまたは認証情報を含むすべての CI/CD 変数を[マスクして非表示にし](https://docs.gitlab.com/ci/variables/#cicd-variable-security)、[それらの変数を保護されたブランチに制限します](https://docs.gitlab.com/ci/variables/#protect-a-cicd-variable)。
-   - パイプラインを手動で開始する際、プロジェクトメンバーによる CI/CD 変数の上書きを禁止します。[パイプライン変数の制限](https://docs.gitlab.com/ci/variables/#restrict-pipeline-variables)を参照してください。
+   - 手動で開始されたパイプラインで CI/CD 変数が上書きされないよう、[**パイプライン変数を使用するための最小ロール**](https://docs.gitlab.com/ci/variables/#restrict-pipeline-variables)を**許可しない（No one allowed）** に設定します。
 
 1. <a id="pipeline-and-cicd-configurations"></a>**CI の依存関係を検証します。**
    - [CI の依存関係を固定バージョンに固定します](/handbook/security/best-practices/supply-chain-security-for-dependencies/#supply-chain-security-best-practices)。`latest` のような参照先が変わる参照は使用しないでください。
@@ -122,6 +130,24 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 ### Code Owners を使用する承認ルール {#approval-rules-with-code-owners}
 
 ![Code Owners を使用するマージリクエスト承認ルール](/images/mr-approvals-with-code-owners.png "Code Owners を使用する承認ルール")
+
+### 承認ルールの組み合わせ {#how-the-approval-rules-combine}
+
+ファイルを承認できる Code Owner がいない場合、GitLab はそのファイルの [Code Owner 承認をスキップします](https://docs.gitlab.com/user/project/codeowners/troubleshooting/#approvals-shown-as-optional)。[レビューと承認を必須にする要件](#mr-approval-rule-configurations)にある**承認可能なすべてのユーザー**ルールにより、そのマージリクエストがレビューなしでマージされることを防ぎます。
+
+たとえば、`@alice` が `app.rb` の唯一の Code Owner で、プロジェクトを離れたとします。
+
+| 承認可能なすべてのユーザールール | 承認した人 | マージできますか？ | ベースラインを満たしますか？ |
+|---|---|---|---|
+| 無効 | 誰も承認していない | はい、レビューなしで可能 | いいえ |
+| 1 件の承認 | 誰も承認していない | いいえ | はい |
+| 1 件の承認 | 作成者ではない Bob | はい | はい |
+
+次のような設定でも、GitLab は一部のファイルの Code Owner 承認をスキップします。
+
+- **あるパスの所有者が 1 人だけの場合。** その人がマージリクエストを作成すると、承認できる人がいなくなります。直接のメンバーが少なくとも 2 人いるグループを使用し、そのグループを Developer 以上のロールでプロジェクトに招待してください。
+- **[`!` による除外](https://docs.gitlab.com/user/project/codeowners/reference/#exclusion-patterns)や[オプションの `^` セクション](https://docs.gitlab.com/user/project/codeowners/reference/#optional-sections)** を、レビューが必要なファイルに使用している場合。
+- **すべてのファイルに一致する `*` が他の行と同じセクションにある場合。** GitLab はファイルに一致する最後の行を使用するため、`*` の下に `/docs/ @alice` があると、`/docs/` の所有者は `@alice` だけになります。`*` は独立したセクションに配置してください。
 
 ## 継続的なモニタリング {#ongoing-monitoring}
 

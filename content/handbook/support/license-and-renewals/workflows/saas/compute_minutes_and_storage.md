@@ -3,22 +3,22 @@ title: コンピュート分とストレージの取り扱い
 description: コンピュート分とストレージの調整
 category: GitLab.com subscriptions & purchases
 upstream_path: /handbook/support/license-and-renewals/workflows/saas/compute_minutes_and_storage/
-upstream_sha: 83366dfb077be6f6e05ce2b9af0b0e40f01b3458
-translated_at: "2026-10-19T22:06:32+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T00:51:06.044752+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-19T18:59:08+11:00"
+lastmod: "2026-11-05T15:41:37-05:00"
 ---
 
-## 追加コンピュート分の追加
+## 追加コンピュート分の追加 {#adding-additional-compute-minutes}
 
 随時、名前空間の通常の月間クォータに *影響を与えずに* 追加のコンピュート分を付与する必要が生じることがあります。
 
 <details>
 <summary>GitLab.com ChatOps の使用</summary>
 
-詳細については <a href="/handbook/support/workflows/chatops/#setting-additional-minutes-quota-for-a-namespace">
-Support ChatOps のドキュメント</a> を参照してください。
+ChatOps コマンドのページにある[名前空間の分数クォータの設定](/handbook/support/workflows/chatops/#setting-minutes-quota-for-a-namespace)に従ってください。
+
 </details>
 
 <details>
@@ -28,7 +28,7 @@ CustomersDot Support Admin Tools の [Set extra CI minutes](/handbook/support/li
 
 </details>
 
-## ストレージの追加
+## ストレージの追加 {#adding-storage}
 
 <details>
 <summary>CustomersDot Support Admin Tools</summary>
@@ -39,7 +39,7 @@ CustomersDot Support Admin Tools の [Set additional storage](/handbook/support/
 
 このツールを使用したストレージの追加は、一時的な解決策として使用してください。恒久的な解決策が実施された後にストレージを削除するには、[内部リクエスト / リポジトリサイズ変更](https://gitlab.com/gitlab-com/support/internal-requests/-/issues/new?issuable_template=Repo%2520Size%2520Limit%2520Change#)を作成してください。実際に変更を元に戻す前に、名前空間が保有すべき量と、名前空間上の実際の量を必ず確認してください。
 
-### 善意の行為として顧客に追加コンピュート分を承認するプロセス
+### 善意の行為として顧客に追加コンピュート分を承認するプロセス {#process-for-authorising-additional-compute-minutes-for-customers-as-an-act-of-goodwill}
 
 - 既存の顧客に対して、Support は以下のシナリオで善意の行為としてコンピュート分を発行できます：
   - [Channel Ops ハンドブック](/handbook/sales/field-operations/channel-operations/partner-faq/#post-sale)に従った調達遅延中の Sales AE からのリクエスト。
@@ -48,13 +48,13 @@ CustomersDot Support Admin Tools の [Set additional storage](/handbook/support/
 
 - リクエストが上記の例の範囲外である場合、追加のコンピュート分は支払いが必要です。不明な場合は Slack の [#support_leadership](https://gitlab.slack.com/archives/C01F9S37AKT)チャンネルで確認してください。
 
-#### 調達遅延中のセールスからのリクエスト
+#### 調達遅延中の Sales からのリクエスト {#requests-from-sales-during-procurement-delays}
 
-- 顧客が追加分を購入する調達プロセスにあり、現在使用可能なクォータが切れて作業がブロックされている場合、セールスのアカウントマネージャーが Support チームに分を追加するよう内部リクエストを起票することがあります。
+- 顧客が追加分を購入する調達プロセスにあり、現在使用可能なクォータが切れて作業がブロックされている場合、sales account manager が Support チームにコンピュート分を追加するよう内部リクエストを起票することがあります。
 - リクエストは顧客のブロックを解除するために妥当な量である必要があります。この場合の妥当な量は顧客の使用状況に応じて変わります。使用状況ページの確認や履歴の確認は、ニーズを判断する良い方法です。
 - SFDC に進行中の案件が存在する必要があります。
 
-#### 製品バグまたは予期しないダウンタイムの影響を受けた顧客
+#### 製品バグまたは予期しないダウンタイムの影響を受けた顧客 {#customer-impacted-by-product-bug-or-unplanned-downtime}
 
 - 必要に応じて [GitLab Status ページ](https://status.gitlab.com/)を参照しながら、バグまたは最近のダウンタイムイベントを確認します。
 - Issue またはインシデント ID をチケットに記録します。
@@ -64,23 +64,23 @@ CustomersDot Support Admin Tools の [Set additional storage](/handbook/support/
   1. **マネージャー承認が必要かを判断します：**
      - **承認は不要：** 分の使用が顧客の制御外の製品問題（例： 確認済みのバグ、[GitLab Status ページ](https://status.gitlab.com/)で文書化された障害）に明確に起因している場合、進めて参考のために内部メモを残してかまいません。
      - **承認が必要：** 状況が不明確であるか、根本原因の特定が困難な場合（例： 顧客の構成ミスの可能性、製品関連かどうか不明、または異常な使用パターン）、Slack の [#support_leadership](https://gitlab.slack.com/archives/C01F9S37AKT)チャンネルで `Restore Compute Minutes as an act of goodwill` のマネージャー承認をリクエストします。
-       - マネージャー: Slack で承認を確認し、チケットの内部メモで承認を投稿します。
+       - マネージャー： Slack でリクエストに応答し、チケットの内部メモで承認を投稿します。
   1. [CustomersDot Support Admin Tools の Set extra CI minutes](/handbook/support/license-and-renewals/workflows/customersdot/support_tools#set-extra-ci-minutes)を使用してコンピュート分を復元します。
 - これにより、失われたコンピュート分の回復に加えて、顧客に与えた不便への配慮として追加分が提供されます。
 
 - ([チケット例 1](https://gitlab.zendesk.com/agent/tickets/294974)
 | [チケット例 2](https://gitlab.zendesk.com/agent/tickets/391109))
 
-### GitLab トライアル顧客に対する追加コンピュート分の承認プロセス
+### GitLab トライアル顧客に対する追加コンピュート分の承認プロセス {#process-for-authorizing-additional-compute-minutes-for-gitlab-trial-customers}
 
 - すべての GitLab トライアルプランはデフォルトで 400 分です。トライアルユーザーが追加分をリクエストするために Support チームに連絡してきた場合は、詳しい議論のためにセールス担当者に紹介してください。
 
-- GitLab Sales チームのメンバーは、クォータの増加をリクエストするために `Change Existing Trial Plan` の内部リクエストを起票できます。これらのリクエストは、有償プランの標準割り当てに制限されます： Premium トライアルでは 10,000 分、Ultimate トライアルでは 50,000 分です。
+- GitLab Sales のチームメンバーは、クォータの増加をリクエストするために `Change Existing Trial Plan` の内部リクエストを起票できます。これらのリクエストは、有償プランの標準割り当てに制限されます： Premium トライアルでは 10,000 分、Ultimate トライアルでは 50,000 分です。
   - 注： トライアル終了時に追加分は自動的には削除されません。顧客はすべて使い切るまで使用できます。
 
 - それ以外の場合、追加のコンピュート分やストレージは支払いが必要です。質問がある場合は `#support_leadership` Slack チャンネルで尋ねてください。
 
-### 購入したコンピュート分が顧客のグループに関連付けられていない
+### 購入したコンピュート分が顧客のグループに関連付けられていない {#purchased-compute-minutes-are-not-associated-with-customers-group}
 
 顧客が、グループ名前空間ではなく個人名前空間用に誤ってコンピュート分を購入することがあります。次の手順に従って誤購入を確認し、状況を解決してください：
 
@@ -138,7 +138,7 @@ flowchart TD
     class C7 courtesy
 ```
 
-#### BPO「Fast Track」プロセス
+#### BPO「Fast Track」プロセス {#bpo-fast-track-process}
 
 このワークフローは、誤ったコンピュート分購入チケットの大半を対象とし、BPO チームが追加の支援を必要とせずに処理するための知識とツールを提供するよう設計されています。
 
@@ -164,7 +164,7 @@ flowchart TD
    - Force Associate の実行前後で `Additional Units` 値を比較します。
    - 未解決の技術的なバグにより、分が表示されない場合があります。
    - 分が更新されている場合は、前後の値を記載した内部メモを作成し、今後の購入はグループ名前空間に対して行うよう顧客に伝えます。チケットを解決します。
-1. **善意の分（BPO Fast Track の例外のみ）:** Force Associate が失敗した場合は、善意としてグループ名前空間に 1,000 コンピュート分を付与します。
+1. **善意の分（BPO Fast Track の例外のみ）：** Force Associate が失敗した場合は、善意としてグループ名前空間に 1,000 コンピュート分を付与します。
    - **この善意の対応は、初回で、未使用の、単一の 1,000 分パック購入にのみ適用されます。** より大規模なリクエストや繰り返しのリクエストは、L&R へ転送する必要があります。
    - [Set extra CI minutes](/handbook/support/license-and-renewals/workflows/customersdot/support_tools/#set-extra-ci-minutes)ツールを使用します。
    - **重要：** このツールは増分ではなく、**合計**値を設定します。次のように新しい合計を計算します：
@@ -174,7 +174,7 @@ flowchart TD
    - グループ名前空間の `Additional Units` の**実行前**と**実行後**の値を内部メモに記録します。
 1. **説明して解決する：** 今後の購入はグループ名前空間で行うよう顧客に伝えます。チケットを解決します。
 
-#### L&R チームの標準プロセス
+#### L&R チームの標準プロセス {#lr-team-standard-process}
 
 ユーザーの個人名前空間からグループ名前空間にコンピュート分を移動するには、[CustomersDot Support Admin Tools / Namespace control (SaaS) / Force Associate](/handbook/support/license-and-renewals/workflows/customersdot/support_tools/#force-associate)を使用します。
 
@@ -205,13 +205,13 @@ flowchart TD
 - 過去のチケット確認結果（初回か繰り返しか）
 - 転送理由（このチケットに L&R／Billing のレビューが必要な理由）
 
-### 購入時に GitLab.com グループが表示されない
+### 購入時に GitLab.com グループが表示されない {#gitlabcom-group-is-not-visible-during-the-purchase}
 
-- コンピュート分を購入する際、課金ページにはコンピュート分を関連付ける名前空間を選択するドロップダウンメニューが表示されます。ユーザーが購入時に必要なグループを表示または選択できない場合、その GitLab ユーザーがそのグループの Owner ではない可能性があります。ユーザーに対して、課金ページでグループを選択できるよう自分の権限を Owner に変更してもらうか、またはグループの既存の Owner に、その Owner 自身の顧客ポータルアカウントを使用してコンピュート分を購入してもらうようリクエストする必要がある旨を返信してください。
+- コンピュート分を購入する際、課金ページにはコンピュート分を関連付ける名前空間を選択するドロップダウンメニューが表示されます。ユーザーが購入時に必要なグループを表示または選択できない場合、その GitLab ユーザーがそのグループの Owner ではない可能性が高いです。ユーザーに対して、課金ページでグループを選択できるよう自分の権限を Owner に変更してもらうか、またはグループの既存の Owner に、その Owner 自身の顧客ポータルアカウントを使用してコンピュート分を購入してもらうようリクエストする必要がある旨を返信してください。
 
-## コンピュート分の有効化
+## コンピュート分の有効化 {#enable-compute-minutes}
 
-### コミュニティコントリビューターの手動クレジットカード検証
+### コミュニティコントリビューターの手動クレジットカード検証 {#manual-credit-card-validation-for-community-contributors}
 
 要件：
 
@@ -226,21 +226,21 @@ flowchart TD
 1. [管理者メモ](/handbook/support/workflows/admin_note/)を追加します。
 1. `Save changes`。
 
-### セールス支援トライアルでのコンピュート分の有効化
+### セールス支援トライアルでのコンピュート分の有効化 {#enabling-compute-minutes-for-sales-assisted-trials}
 
 以下のプロセスにより、セールス支援トライアルに参加しているグループでコンピュート分を使用する際の制限を解除します。
 
-### 手順
+### 手順 {#steps}
 
-#### CustomersDot Support Admin Tools の使用
+#### CustomersDot Support Admin Tools の使用 {#using-customersdot-support-admin-tools}
 
 [CustomersDot Support Admin Tools によるパイプライン実行時のクレジットカード検証の回避](/handbook/support/license-and-renewals/workflows/customersdot/support_tools#bypassing-credit-card-validation-for-pipeline-execution)を使用します。
 
-#### customerDot Console の使用
+#### customerDot Console の使用 {#using-customerdot-console}
 
 customerDot Console から次の関数を実行します：
 
-##### セールス支援トライアル向け
+##### セールス支援トライアル向け {#for-sales-assisted-trials}
 
 ```ruby
 irb(main) enable_ci_minutes_trial('namespace')
@@ -248,9 +248,9 @@ irb(main) enable_ci_minutes_trial('namespace')
 => "{\"status\":\"success\",\"message\":\"namespace members are now enabled to run compute minutes\"}"
 ```
 
-### クレジットカード検証の失敗の対応
+### クレジットカード検証の失敗の対応 {#handling-failed-credit-card-verifications}
 
-共有ランナーでコンピュート分を使用するには、顧客がアイデンティティを検証する必要がある場合があります。一部の顧客はそのためにクレジットカードを使用する必要があります。検証用にクレジットカードを使用しようとしてエラーが発生したと顧客が Support に報告してきた場合、以下の手順に従う必要があります。検証プロセスではクレジットカードに対して請求は発生せず、1 ドルのオーソリゼーション取引が使用されます。
+共有ランナーでコンピュート分を使用するには、顧客が本人確認を行う必要がある場合があります。一部の顧客はそのためにクレジットカードを使用する必要があります。検証用にクレジットカードを使用しようとしてエラーが発生したと顧客が Support に報告してきた場合、以下の手順に従う必要があります。検証プロセスではクレジットカードに対して請求は発生せず、1 ドルのオーソリゼーション取引が使用されます。
 
 1. Zendesk マクロ `Support::L&R::Credit Card Authorisation Failed' を使用してチケットに応答します。
-1. 24 時間後に顧客が依然として進行できない、しかし GitLab.com 以外でクレジットカードが動作することを確認していると伝えてきた場合、追加のガイダンスのために Trust and Safety に紹介します。Trust and Safety チームの連絡先の詳細はハンドブックで確認できます： [GitLab Trust and Safety チームと連携する](/handbook/security/security-operations/trustandsafety/#working-with-gitlab-trust-and-safety-team)。
+1. 24 時間後に顧客から、依然として先に進めないものの GitLab.com 以外ではクレジットカードを使用できることを確認済みであると連絡があった場合、追加のガイダンスのために Trust and Safety に紹介します。Trust and Safety チームの連絡先の詳細はハンドブックで確認できます： [GitLab Trust and Safety チームと連携する](/handbook/security/security-operations/trustandsafety/#working-with-gitlab-trust-and-safety-team)。

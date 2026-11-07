@@ -1,18 +1,18 @@
 ---
-title: サポートエンジニアリング データ分析コミュニティ
+title: Support Engineering データ分析コミュニティ
 description:
 upstream_path: /handbook/support/data-analysis/
-upstream_sha: c5d40e13183c5a0aeeafefbee88ab3fac48ced5a
-translated_at: "2026-05-08T17:40:50Z"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+translated_at: "2026-11-07T00:37:58Z"
 translator: claude
 stale: false
-lastmod: "2025-06-17T20:54:31+00:00"
+lastmod: "2026-11-05T13:13:47-05:00"
 ---
 
-## 目的
+## 目的 {#purpose}
 
-このページは、サポートエンジニアリングのデータ分析
-[コミュニティ オブ プラクティス](https://en.wikipedia.org/wiki/Community_of_practice) の
+このページは、Support Engineering のデータ分析
+[実践コミュニティ](https://en.wikipedia.org/wiki/Community_of_practice)の
 礎となるものです。
 興味からあるいは業務の一部として、何らかの形でデータの抽出や分析に取り組む
 サポートチームのメンバーは、このページを使ってサポートチームで進行中の計画や
@@ -25,24 +25,65 @@ lastmod: "2025-06-17T20:54:31+00:00"
 - 誰がそれを担当しているか。
 - データ収集と分析に関するベストプラクティス。
 
-### これらのメトリクスは Performance Indicator とどう異なるのか？
+### これらのメトリクスはパフォーマンス指標とどう異なるのか？ {#how-do-these-metrics-differ-from-performance-indicators}
 
-[カスタマーサポート部門のパフォーマンス指標](../performance-indicators/) は、
+[Customer Support 部門のパフォーマンス指標](../performance-indicators/)は、
 サポートチーム全体としての成果を追跡するために使用される正式な指標です。
 
 このページに含まれるパラメータやメトリクスは、探索的および社内計画用のものであり、
 パフォーマンスのレポートには使用すべきではありません。
 
-カスタマーサポート部門のパフォーマンス指標は、これらの指標に関する単一の信頼できる
+Customer Support 部門のパフォーマンス指標は、これらの指標に関する単一の信頼できる
 情報源であり、矛盾がある場合はこのページの内容よりも優先されます。
 
-## パラメータ
+## パラメータ {#parameters}
 
-### サポート時間セグメント
+### 除外するチケットフォーム {#excluded-ticket-forms}
+
+- DRI: Wei-Meng Lee ([@weimeng-gtlb](https://gitlab.com/weimeng-gtlb))
+
+チケット件数や初回応答時間（FRT）の SLA 達成率など、主要な指標のレポートでは、
+Billing、Security、Support Ops のチケットフォームのチケットを除外します。これらのチケットは他の
+チームが対応するため、含めると Support のメトリクスに偏りが生じます。
+
+| チケットフォーム | Zendesk フォーム ID | 備考                                        |
+|-------------|-----------------|----------------------------------------------|
+| Billing     | `360000258393`  | 請求に関する問い合わせと返金                |
+| Security    | `360000515493`  | 廃止済み、2021 年 12 月以降は新規チケットなし  |
+| Support Ops | `360001801419`  | サポートポータルに関する事項               |
+
+Snowflake では、チケットフォーム ID は以下に格納されています。
+
+- `PROD.LEGACY.ZENDESK_TICKETS_XF.TICKET_FORM_ID`
+- `PROD.COMMON.FCT_SUPPORT_TICKET.DIM_SUPPORT_TICKET_FORM_ID`
+
+フォーム名を調べるには、`DIM_SUPPORT_TICKET_FORM_ID` をキーに `PROD.COMMON.DIM_SUPPORT_TICKET_FORM` と結合します
+（列は `FORM_NAME` と `FORM_DISPLAY_NAME`）。廃止済みの Security フォームはこの
+テーブルに含まれていないため、フォーム名ではなくフォーム ID で絞り込みます。
+
+例：
+
+```sql
+SELECT COUNT(*) AS tickets
+FROM prod.legacy.zendesk_tickets_xf
+WHERE COALESCE(ticket_form_id, 0) NOT IN (
+    360000258393, -- Billing
+    360000515493, -- Security (retired)
+    360001801419  -- Support Ops
+  )
+```
+
+古いチケットの中にはフォーム ID がないものもあります。`NOT IN` だけではフォーム ID が `NULL` の行も除外されるため、
+`COALESCE` を使うことでそれらのチケットを結果に残します。
+
+`PROD.WORKSPACE_ENGINEERING.ZENDESK_FRT` では、これらのフォームのチケットを
+すでに除外しています。
+
+### サポート時間セグメント {#support-time-segments}
 
 サポートチームのメンバーが、サポートエンジニアの可用性やワークロードのような、
 グローバルな 1 日の特定の時間帯に紐づくトピックを議論する際に参照できる、
-共通の時間セグメント。
+共通の時間セグメントです。
 
 - DRI: Wei-Meng Lee ([@weimeng](https://gitlab.com/weimeng))
 
@@ -53,7 +94,7 @@ lastmod: "2025-06-17T20:54:31+00:00"
 
 ![サポート時間セグメント](/images/support/support_time_segments.png)
 
-これらは時間セグメントであり地理的セグメントではないことに注意してください。
+これらは時間セグメントであり、地理的セグメントではないことに注意してください。
 重要なのは、これらの時間帯にサポートを実際に対応しているメンバーがいることです。
 このため、地理的位置との関連付けを避けるために、時間セグメントは「East」、
 「Central」、「West」ではなく、「Early」、「Middle」、「Late」と命名されています。
@@ -71,11 +112,11 @@ lastmod: "2025-06-17T20:54:31+00:00"
 | EMEA-Early  | CET       | 08:00       | 14:00     | 07:00     | 13:00   | 6 時間 |
 | EMEA-Late   | CET       | 14:00       | 18:00     | 13:00     | 17:00   | 4 時間 |
 
-## メトリクス
+## メトリクス {#metrics}
 
-### 顧客待機時間 (Customer wait time)
+### 顧客待機時間 {#customer-wait-time}
 
-「Customer Wait Time」は [サポート部門の KPI](../performance-indicators/#customer-wait-times) の
+「Customer Wait Time」は [サポート部門の KPI](../performance-indicators/#customer-wait-times)の
 一つで、チケットのライフサイクル全体を通じてチケットが「Open」および「New」の状態に
 費やした合計時間と定義されます。ライフサイクル時間は「Total Time To Resolve」で計測されます。
 
@@ -92,8 +133,8 @@ VALUE(Requester wait time (hrs)) - VALUE(On-hold time (hrs))
 
 - ビジネスアワーは週末に経過した時間をカウントしないものの、サポートのための優先リージョンの
   ビジネスアワー外に経過した時間もカウントしません。
-- Time to Resolution の測定との整合性を取るためです (これも上記と同じ理由でビジネスアワーを
-  使用していません)。
+- 解決までの時間の測定との整合性を取るためです（これも上記と同じ理由でビジネスアワーを
+  使用していません）。
 
 加えて、Customer Wait Time KPI のレポートには中央値を使用しています。これは、
 `Requester wait time - Business hours (hrs)` の代わりに `Requester wait time (hrs)` を

@@ -10,9 +10,9 @@ participating-stages: ["~group::runner", "~devops::verify"]
 toc_hide: true
 no_list: true
 upstream_path: "/handbook/engineering/architecture/design-documents/slsa_level_3/"
-upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
-lastmod: "2026-11-05T07:24:15+13:00"
-translated_at: "2026-11-05T15:15:16.188555+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+lastmod: "2026-11-06T03:58:01+05:30"
+translated_at: "2026-11-07T00:05:55.508019+00:00"
 translator: codex
 stale: false
 ---
@@ -554,4 +554,4 @@ verify_provenance:
 - [005: PublishProvenanceService での SHA-256 計算の実行](decisions/005_perform_sha256_in_service.md) - PublishProvenanceService 内でアーティファクトの SHA-256 ハッシュ計算を実行する。
 - [006: OCI レジストリでの SBOM と出所を使った署名](decisions/006_signing_with_sbom_and_provenance_in_oci.md) - OCI イメージの出所証明と SBOM 署名。
 - [007: プライベートリポジトリ、dedicated、self-managed インスタンスの証明](decisions/007_attestations_private_dedicated_self_hosted.md) - パブリック Sigstore インフラストラクチャを使用できない状況でソフトウェア証明を実現できる仕組み。
-- [008: LOCAL_CA 証明への署名](decisions/008_signing_local_ca_attestations.md) - `LOCAL_CA` 証明への署名に使用するリーフ証明書
+- [008: LOCAL_CA 証明への署名](decisions/008_signing_local_ca_attestations.md) - `LOCAL_CA` 証明のためのリーフ証明書と cosign による署名フロー

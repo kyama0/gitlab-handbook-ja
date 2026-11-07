@@ -3,9 +3,9 @@ layout: handbook-page-toc
 title: "ADR 007: プライベートリポジトリ、GitLab dedicated、self-managed インスタンスの証明"
 description: "この ADR は、パブリック Sigstore インフラストラクチャを使用できない状況でソフトウェア証明を実現する仕組みを定めます。"
 upstream_path: "/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted/"
-upstream_sha: ab93800e4c241789ac67785899fa20ffa1eb0854
-lastmod: "2026-11-05T07:24:15+13:00"
-translated_at: "2026-11-05T15:15:16.188555+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+lastmod: "2026-11-06T03:58:01+05:30"
+translated_at: "2026-11-07T00:07:33.395408+00:00"
 translator: codex
 stale: false
 ---
@@ -143,7 +143,7 @@ GitLab.com 内のプライベートプロジェクトは、この情報を公開
 "public-good" Sigstore インフラストラクチャを使用できなくする追加の制約があります。
 
 上記の説明では "OpenID Provider" への言及があります。これらはデフォルトで制限されており、
-Fulcio は allowlist を維持しています。GitLab.com の場合、"[GitLab.com を cosign の OIDC プロバイダーとして使用する (#10254)](https://gitlab.com/groups/gitlab-org/-/work_items/10254)"
+Fulcio は許可リストを維持しています。GitLab.com の場合、"[GitLab.com を cosign の OIDC プロバイダーとして使用する (#10254)](https://gitlab.com/groups/gitlab-org/-/work_items/10254)"
 チケットで追跡されているように、私たちの OIDC プロバイダーがリストに追加されるよう特定の作業を行いました。
 
 self-managed および dedicated デプロイメントの場合、各顧客は、自身のインスタンスが許可されるために
@@ -166,7 +166,7 @@ self-managed および dedicated デプロイメントの場合、各顧客は�
 > その投稿を削除できない掲示板のようなものだと考えることができますが、
 > 何を信じるかを情報に基づいて判断するのは閲覧者に委ねられます。
 > [...]
-> Rekor のユーザーには、Merkle tree によって有効化される inclusion proof を活用して、特定のエントリが Rekor ログに
+> Rekor のユーザーには、Merkle tree によって有効化される包含証明を活用して、特定のエントリが Rekor ログに
 > 存在するかどうかをオフラインで判定する方法もあります。
 > Merkle tree は、暗号学的ハッシュ関数、
 > つまり潜在的に大きな値を比較的短いダイジェストにマッピングする方法を使用して、
@@ -174,10 +174,10 @@ self-managed および dedicated デプロイメントの場合、各顧客は�
 > 含まれていることを証明できるデータ構造です。この証明は、
 > 一連のハッシュをユーザーに提供することで達成されます。
 > それらのハッシュを再結合すると、そのエントリが実際に Rekor ログ内にあることをユーザーに証明できます。
-> Sigstore ユーザーは、このような inclusion proof をアーティファクトに「添付」できます。つまり、アーティファクトの横に
-> inclusion proof をリポジトリ内で添付し、
+> Sigstore ユーザーは、このような包含証明をアーティファクトに「添付」できます。つまり、アーティファクトの横に
+> 包含証明をリポジトリ内で添付し、
 > そのアーティファクトが確かに Rekor に含まれていることを証明できます。
-> Merkle tree と inclusion proof の詳しい説明については、
+> Merkle tree と包含証明の詳しい説明については、
 > この章の末尾にある参考リソースのセクションを参照してください。
 
 Rekor の主な特性は次のとおりです。
@@ -290,6 +290,9 @@ CA の操作は抽象化しているため、リーフ証明書の構築方法�
 `https://gitlab.example.com/my-group/my-project//.gitlab-ci.yml@refs/heads/main`
 のような URI サブジェクト代替名にアイデンティティを格納します。
 証明書の有効期間は長く、証明のバンドルに保存します。秘密鍵は署名後に破棄します。
+
+ADR 008 では、cosign をオフライン署名用に設定する方法、署名用のデータを非公開に保つ方法、
+各証明に署名方法について何を記録するかも説明しています。
 
 ### 署名の検証 {#signature-verification}
 

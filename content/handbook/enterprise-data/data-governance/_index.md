@@ -1,21 +1,21 @@
 ---
-title: "データガバナンス"
-description: "GitLab のデータガバナンス＆品質チーム"
+title: "Data Governance"
+description: "GitLab の Data Governance and Quality チーム "
 upstream_path: /handbook/enterprise-data/data-governance/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T00:54:54.993254+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-11-06T18:17:46+05:30"
 ---
 
-## チームのアイデンティティ
+## チームのアイデンティティ {#team-identity}
 
 データガバナンスプログラムの**ビジョン**は、堅牢なポリシー・高度なテクノロジー・コラボレーション文化によって実現される整合性・信頼性・セキュアなアクセシビリティの最高基準で、私たちの組織がデータを戦略的資産として活用できるようにする、堅牢なデータガバナンスとデータ品質プログラムを構築することです。
 
-データガバナンスプログラムの**ミッション**は、ビジネス・IT・セキュリティ・法務チームとの協力のもとでデータガバナンスとデータ品質プログラムを構築し、エンタープライズ全体でのデータセキュリティ・データ品質・データライフサイクル・データの可用性の現状を改善することです。
+データガバナンスプログラムの**ミッション**は、Business、IT、Security、Legal の各チームとの協力のもとでデータガバナンスとデータ品質プログラムを構築し、エンタープライズ全体でのデータセキュリティ・データ品質・データライフサイクル・データの可用性の現状を改善することです。
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 <table>
 <thead>
@@ -25,10 +25,6 @@ lastmod: "2026-03-04T12:15:15-08:00"
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Krishna Priya Vasireddy</td>
-<td><a href="/job-description-library/marketing/enterprise-data/data-and-insights-executive/#director-data-governance-and-quality">Direction, Data and Analytics</a></td>
-</tr>
 <tr>
 <td>Sushma N</td>
 <td><a href="/job-description-library/marketing/enterprise-data/data-governance-and-quality-analyst/#staff-data-governance-and-quality-analyst">Staff Data Governance and Quality Program Manager</a></td>
@@ -41,30 +37,27 @@ lastmod: "2026-03-04T12:15:15-08:00"
 <td>Tejas Gupta</td>
 <td><a href="/job-description-library/marketing/enterprise-data/data-governance-and-quality-analyst/#data-governance-and-quality-analyst-associate">Associate Data Governance and Quality Analyst</a></td>
 </tr>
-<tr>
-<td>Varun Maheshwari</td>
-<td><a href="/job-description-library/marketing/enterprise-data/data-governance-and-quality-analyst/#data-governance-and-quality-analyst-intermediate">Data Governance and Quality Analyst</a></td>
-</tr>
+
 </tbody>
 </table>
 
-## 連携方法
+## 連携方法 {#working-with-us}
 
 - #data-governance-quality
 - #data-team
 
-## 作業方法
+## 作業方法 {#how-we-work}
 
 私たちはエピック・Issue・Issue ボードを使用して作業を整理します。
 
-- GitLab [データチームプロジェクト](https://gitlab.com/gitlab-data/analytics)では `~Team::Data Governance` ラベルを使用して Issue を管理します
-- 2週間のイテレーション
-  
-### チームページ
+- GitLab [Data Team プロジェクト](https://gitlab.com/gitlab-data/analytics)では `~Team::Data Governance` ラベルを使用して Issue を管理します
+- 2 週間のイテレーション
 
-- データガバナンスと品質プログラム _（内部限定）_
+### チームページ {#team-pages}
+
+- Data Governance and Quality Program _（内部限定）_
 - [データガイド](/handbook/enterprise-data/data-governance/data-catalog)
 - [データ品質](/handbook/enterprise-data/data-governance/data-quality)
 - [データ管理](/handbook/enterprise-data/data-governance/data-management)
 
-### ロードマップと計画
+### ロードマップと計画 {#roadmap-and-planning}

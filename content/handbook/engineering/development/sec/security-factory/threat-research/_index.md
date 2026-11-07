@@ -1,121 +1,60 @@
 ---
 title: Threat Research グループ
-description: "Threat Research グループは、GitLab のセキュリティ機能の有効性を向上させるためにセキュリティリサーチを行い、GitLab Advisory Database をメンテナンスします。"
+description: "Threat Research グループは GitLab のセキュリティ研究機関です。新たな脅威を調査し、GitLab Advisory Database を拡充し、ソフトウェアサプライチェーン攻撃の検出機能を構築します。"
 upstream_path: /handbook/engineering/development/sec/security-factory/threat-research/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T15:10:33+03:00"
-translated_at: "2026-08-14T07:25:00+09:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+lastmod: "2026-11-05T18:04:34+02:00"
+translated_at: "2026-11-07T00:54:54.993254+00:00"
 translator: codex
 stale: false
 ---
 
-Threat Research グループは、
-[Security Factory ステージ](/handbook/engineering/development/sec/security-factory/)の一部です。FY27 の Sec 再編前は Vulnerability Research という名称で、`group::vulnerability research` ラベルは `group::threat research` になりました。
+Threat Research グループは、[Security Factory ステージ](/handbook/engineering/development/sec/security-factory/)の一部です。FY27 の Sec 再編前は Vulnerability Research という名称で、`group::vulnerability research` ラベルは `group::threat research` になりました。
 
-<p align="center">
-  <img
-    alt="GitLab Threat Research"
-    src="https://gitlab.com/gitlab-org/vulnerability-research/blog/-/raw/master/logo-icon.png?inline=true"
-    width="33%"
-  />
-</p>
+## ミッション {#mission}
 
-## ミッション
+私たちは新たに現れるセキュリティの脅威を調査し、得られた知見を GitLab のお客様の保護につなげます。Dependency Scanning と Container Scanning を支える [GitLab Advisory Database](https://gitlab.com/gitlab-org/security-products/gemnasium-db)を維持し、悪意のあるパッケージやその他のサプライチェーン攻撃の検出機能を構築し、独自の脆弱性調査を行い、その成果を [Security Labs ブログ](https://about.gitlab.com/blog/categories/security-labs/)で公開します。
 
-私たちのミッションは、GitLab のセキュリティ機能を長期的なビジョンに向けて前進させ、セキュリティコミュニティにおける GitLab の存在感を高めることです。セキュリティリサーチの実施、GitLab のセキュリティ機能の有効性向上、概念実証の開発、論文の公開、カンファレンスでの講演、セキュリティの専門知識と実践的な経験の広範な共有を通じてこれを実現します。
+## 私たちの活動 {#what-we-do}
 
-## 優先事項
+私たちは、相互につながる 3 つの領域で活動しています。
 
-Threat Research（VR）はリサーチ＆ディベロップメントチームです。THR は GitLab のビジネスに貢献するため、プロダクトグループと協力して GitLab のセキュリティ製品を改善します。高度なセキュリティは GitLab Ultimate の収益の主要な推進力です。
+- **探索。** 新たな攻撃対象領域を、期間を区切って調査します。現在は主に AI コーディングエージェント、エージェントのプラグインと MCP サーバー、パッケージのエコシステムが対象です。探索では、拡充で埋めるべきデータの不足と、検出で監視する脅威の領域を特定します。
+- **拡充。** GitLab のスキャナーを支えるアドバイザリーデータの精度と網羅性を向上させます。対象は、脆弱性を扱う GitLab Advisory Database（GLAD）と、悪意のあるパッケージを扱う GitLab Advisory Database for Malware（GLAM）で、新たなアップストリームの情報源と検証ワークフローも含まれます。
+- **検出。** 私たちのサプライチェーンインテリジェンスプラットフォーム上で、大規模な検出システムを運用します。パッケージレジストリの悪意のあるコードを継続的に監視し、検出結果をアドバイザリーとして公開します。
 
-私たちの優先事項は次のとおりです。
+独自の脆弱性調査はこの 3 つの領域すべてにまたがります。また、製品に関する意思決定で脅威モデルの確認が必要な場合、私たちのチームは Sec セクションの他のグループに対し、セキュリティ分野の専門家として支援します。
 
-1. GitLab の既存のセキュリティ製品の結果の品質を分析および改善する：
-   - 業界標準またはカスタムベンチマークに対して現在の品質を評価する。
-   - 品質向上に必要な作業の種類を特定する。
-   - 検出の有効性を向上させるための新しい検出ルールの作成または既存の検出ルールのキュレーション。
+### 再編後に他の組織へ移管された業務 {#what-moved-elsewhere-after-the-reorg}
 
-2. GitLab のセキュリティプロダクトカテゴリの成熟度を高めるためのリサーチ実験を実施する：
-   - プロダクトグループと協調・調整した短期的な取り組み。
-   - Application Security Testing ステージのリーダーシップと協調・調整した長期的な取り組み。
-3. GitLab 依存関係スキャンおよびコンテナスキャンで使用される [GitLab Advisory Database](https://gitlab.com/gitlab-org/security-products/gemnasium-db)を管理・発展させる。
-4. [CVE Numbering Authority（CNA）の職務](/handbook/engineering/development/sec/security-factory/threat-research/cna/)を遂行する。GitLab は [CNA](https://docs.gitlab.com/ee/user/application_security/terminology/#cna)です。
+- SAST ルール、ベンチマーク、誤検知や見逃しのトリアージ：[Code Security](/handbook/engineering/development/sec/security-factory/code-security/)。
+- GitLab 自体のセキュリティ：[Security 部門](/handbook/security/)。
+- CVE Numbering Authority の業務は、当面は私たちが引き続き担当します。[CNA のプロセス](cna.md)を参照してください。
 
-## 共通リンク
+## 働き方 {#how-we-work}
 
-- Slack チャンネル：[#sec-threat-research](https://gitlab.slack.com/archives/sec-threat-research)
+調査は**実験**として進めます。実験は期間を 1 〜 3 か月に区切ったエピックで、到達点（具体的な終了状態）を定め、各到達点で継続、方向転換、終了のいずれかの判断を文書に記録します。実験は、成果なし、公開発表、製品の機能、オープンソースでのリリースのうち、1 つ以上の結果をもって終了します。成果が得られないことも有効な結果です。
+
+追跡のルール：
+
+- `gitlab-org` 全体で、チームが所有するすべての Issue とエピックに `group::threat research` を付けます。
+- プロダクトグループと連携する作業には `threat research::initiative::product` を、独立した調査には `threat research::initiative::independent` を付けます。
+- 他のグループのプログラム内で行う作業（例：Composition Analysis 向けのアドバイザリーの取り込み）は、そのグループのエピックの下に子エピックとして配置し、両チームが確認できるようにします。
+
+## 私たちとの連携 {#working-with-us}
+
+- 質問と依頼：Slack の [#sec-threat-research](https://gitlab.slack.com/archives/CSELDERRN) で連絡してください。
+- アドバイザリーデータの問題（アドバイザリーの欠落や誤り、CVSS、誤検知）とサポートのエスカレーション：Threat Research テンプレートを使用して[ヘルプリクエスト](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Threat-Research)を作成してください。適切なラベルと担当者が設定されます。
+- CVE の依頼：[CNA のプロセス](cna.md)を参照してください。
+- 脅威の観点からの製品設計のセキュリティレビュー：Slack チャンネルで依頼してください。実験と合わせてトリアージします。
+
+## Threat Research チーム {#threat-research-team}
+
+{{< team-by-manager-slug "dabeles" >}}
+
+## 共通リンク {#common-links}
+
 - GitLab グループ：[gitlab-org/secure/vulnerability-research](https://gitlab.com/gitlab-org/secure/vulnerability-research)
-
-## Threat Research チーム
-
-{{< team-by-departments departments="Secure:Vulnerability Research BE Team" >}}
-
-## 働き方
-
-### アイデア出し
-
-- 改善のタイプ：DevSecOps 採用、収益、セキュリティ品質／有効性、コスト、効率性
-- プロダクト志向：このアイデアからプロダクトが最も恩恵を受けられる方法は？
-- 評価基準：進捗と成功をどのように測定するか？
-- レビュアー：Application Security Testing プロダクトマネージャーとエンジニアリングマネージャー
-- 公開の可能性：この作業を発表、ブログ投稿、または特許申請できるか？
-- 追跡：[gitlab-org/gitlab の Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Athreat%20research&first_page_size=100)に `group::threat research` ラベルを使用し、[SSOT](/handbook/company/culture/all-remote/)とする
-
-これらのタイプのイニシアチブは、イニシアチブの性質に応じて `threat research::initiative` ラベルを使用して追跡されます。
-
-- プロダクト関連のイニシアチブは `threat research::initiative::product` で追跡される
-- 独立したリサーチ関連のイニシアチブは `threat research::initiative::independent` で追跡される
-
-### 優先度付け
-
-- 成功率：短期的な取り組みと長期的な取り組みのバランスを取る
-- タイミング：POC プロジェクトは常に短期または長期のプロダクトビジョンと一致させ、最終的にそれを引き継ぐプロダクトチームと協議して開発し、その予想される引き渡し時期を共同で理解しておく必要があります。
-- 公開：公開情報のソースとして使用できる可能性
-
-### プロトタイプ
-
-- タイムボックス：短期的な取り組みは 3 か月以内に継続するかどうかを判断できる成熟度に達すべきです。長期的な取り組みの期間は 6 か月以内です。
-- お客様と見込み客：プロトタイプの検証を支援するためにチーム外の人材を特定する（PM および UXR との調整を含む）
-
-### ビルドとリリース
-
-Threat Research 担当者のトッププライオリティは、必要に応じて、機能が GitLab で利用可能になるまでエンジニアリングチームをサポートすることです。次の焦点は、ブログ、講演などの形で公開情報を発信することです。
-
-## メトリクス
-
-現在取り組んでいるメトリクス：
-
-- 報告されたルールの誤検知率 - 進行中
-- アドバイザリーデータベース更新の平均公開時間 - 検討中
-- 新しい CVE 公開への平均対応時間 - 検討中
-
-## ルール更新
-
-グループはルールセットの精度と再現率の向上に焦点を当てています。前者は誤検知を減らすことで、後者は偽陰性（見逃し）を減らすことで達成します。
-
-不正確さ（誤検知）または見逃し（偽陰性）を報告するには、[新しいヘルプリクエスト Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?description_template=SupportRequestTemplate-Vulnerability-Research)を開いてください。
-
-私たちはプロダクトマネジメントの方向性に基づいてルールの更新と追加を優先します。これには次のような要因を考慮した最大のお客様価値が含まれます。
-
-1. ルールの重大度：
-   - 高重大度のルールはお客様のワークフローを妨害する可能性が高い。
-   - 偽陰性（見逃し）の結果は、より高重大度の脆弱性を報告できない場合に特に懸念される。
-
-2. 不正確または欠落したファインディングによるルールに関するお客様のエスカレーション
-
-3. 誤検知率に焦点を当てたベンチマーク結果とプラットフォーム全体のデータ分析
-
-`1` から `4` の範囲の `priority` [ラベル](https://gitlab.com/groups/gitlab-org/-/labels?subscribed=&search=priority)を適用して作業を優先します。前者が最高優先度、後者が最低優先度です。
-
-### ワークフローラベルの使用
-
-チームは Issue に次のワークフローラベルを使用しています。
-
-- ステータス `Open` - Issue はまだ検証も優先度付けもされていない。Threat Research（THR）は PM と必要に応じて協力して優先度を付け、`workflow::ready for development` ラベルを追加する
-- `workflow::refinement` - Issue は開発準備のためにチームからのさらなるインプットが必要
-- `workflow::ready for development` - Issue はリサーチャーが作業を開始できる状態
-- `workflow::in dev` - リサーチャーが作業中で、Issue に自分自身をアサインし、このラベルを追加している
-- `workflow::blocked` - 外部依存関係によりこの Issue の作業を続けられない。Issue に協力している誰でも設定でき、通常はアサインされた人。このコメントを使用する際は、Issue がブロックされている理由を記載するか、ブロックしている Issue をリンクする
-- `workflow::in review` - Issue に関連する MR が選ばれたレビュアーによってレビュー中。開発が完了したら Issue のアサインされた人がこのラベルを適用する
-- `workflow::complete` - Issue に関連するすべての MR がマージされた。Issue のアサインされた人がこのラベルを設定する
-- ステータス：`Closed` - Issue に関連する MR がお客様に利用可能なリリースに組み込まれた。Issue のアサインされた人がこの状態を設定する
+- GitLab Advisory Database：[gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db)、公開サイト [advisories.gitlab.com](https://advisories.gitlab.com)
+- Security Labs ブログ：[about.gitlab.com/blog/categories/security-labs](https://about.gitlab.com/blog/categories/security-labs/)
+- 職種：[Vulnerability Research Engineer](/job-description-library/engineering/vulnerability-research-engineer/)
