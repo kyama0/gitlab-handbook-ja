@@ -2,11 +2,11 @@
 title: "コミュニティ貢献を扱うワークフロー"
 description: Co-Create & Community Engineering チームが扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T16:13:47+00:00"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+translated_at: "2026-11-07T01:05:46+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-06T09:22:51+01:00"
 ---
 
 ## ワークフロー {#workflows}
@@ -25,8 +25,8 @@ Issue は次を満たす必要があります:
 ### ワークフローラベル {#workflow-labels}
 
 - `workflow::validation backlog`: Issue はまずバックログから始まり、チームが KPI、OKR、チーム戦略に対して労力と影響を検証できるようにします。
-- `workflow::refinement`: これらの Issue は、準備完了とマークされる前に、計画とチームでの議論を通じて検証・洗練されます。Issue は次のワークフローステージに移る前に、Implementation Plan セクションを持つべきです。
-- `workflow::ready for development`: これらの Issue は着手可能であり、Implementation Plan セクションと `priority` ラベルを持っています。
+- `workflow::refinement`: これらの Issue は、準備完了とマークされる前に、計画とチームでの議論を通じて検証・洗練されます。Issue は次のワークフローステージに移る前に、実装計画セクションを含めるべきです。
+- `workflow::ready for development`: これらの Issue は着手可能であり、実装計画セクションと `priority` ラベルを含んでいます。
 - `workflow::in dev`: 今四半期に積極的に取り組んでいる Issue。
 - `workflow::blocked`: 現在ブロックされている Issue。説明にはブロッカーを記載し、ブロックを解除する Issue へのリンクを含める必要があります。
 - `workflow::complete`: 実装後に解決された Issue。これらは、クローズする前にチームおよび Developer Relations 部門へのレポートで強調すべきです。
@@ -78,7 +78,14 @@ GitLab への貢献に興味がある人々のために、[Discord](https://disc
 誰もが貢献することを明確で簡単にするため、[triage-ops プロセッサ](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/issue_summary.rb)
 が Issue に貢献者リンクを追加し、お客様/コミュニティメンバーがラベル付け、クローズ、自身への割り当てを行えるようにします。
 
-GitLab チームメンバーではなく、ここでの初心者で、GitLab への機能、バグ修正、翻訳などの貢献を始めたいと思っていますか?
+貢献者が Contributor platform でこれらのリンクを使って Issue にラベルを付けたり、クローズしたり、自身への割り当てやその解除を行ったりすると、プラットフォームのサービスアカウントが要求された操作を実行し、自動コメントを投稿します。
+
+このコメントは**監査証跡**です。名前が記載された貢献者が操作を要求し、サービスアカウントがそれを適用したことを示します。
+情報提供を目的としており、通常、他の Issue 参加者による返信や解決は必要ありません。
+
+操作について質問がある場合は、Issue に返信し、名前が記載された貢献者をメンションしてください。
+
+GitLab チームメンバーではない方、初めて参加する方、または GitLab への機能追加、バグ修正、翻訳などの貢献を始めたい方ですか?
 [貢献者プラットフォーム](https://contributors.gitlab.com/)からオンボーディングを開始してください。
 
 GitLab チームメンバーは、`suppress-contributor-links` ラベルを追加することで貢献者リンクを抑制できます。
@@ -163,7 +170,7 @@ GitLab チームメンバーが完了する必要があります:
 - リクエスト Issue で提供された必須フィールドを入力
   - 連絡先情報: リクエストする貢献者の情報を使用
 - その他の必須フィールド:
-  - True-up: 0
+  - トゥルーアップ: 0
   - リクエストの優先度: Low
   - ライセンスタイプ: Ultimate (特に指定がない限り)
   - 有効期限:
@@ -174,7 +181,7 @@ GitLab チームメンバーが完了する必要があります:
 - リクエスト Issue にリクエストが提出されたことを示すパブリックコメントを追加
 - サポートフォームを送信すると、Zendesk でリクエストを「作成」するパイプラインへのリンクがユーザーに表示されます。後で調査が必要な問題があった場合に備えて、このパイプラインへのリンクを内部コメントに保存
 
-サポートチームは、24 時間以内に[このワークフロー](/handbook/support/license-and-renewals/workflows/self-managed/creating-wider-community-license)に従って応答します。
+Support チームは、24 時間以内に[このワークフロー](/handbook/support/license-and-renewals/workflows/self-managed/creating-wider-community-license)に従って応答します。
 
 {{% alert title="注" color="primary" %}}
 (GitLab チームメンバー) Google Drive で[ここで](https://drive.google.com/drive/u/0/search?q=Wider_EE_Developer_License_Renewal.mov)検索することで、これのビデオを見つけることができます
@@ -398,7 +405,7 @@ AI トリアージは、チームが作成した新しい Issue をすべて評�
 Issue が `quick win` に該当しないと AI が判断した場合、ラベルを追加したチームメンバーに通知します
 （ラベルは削除しません）。
 
-[GitLab Bot](https://gitlab.com/gitlab-bot)は、ラベルが 1 年以上適用されている場合、または Issue がブロックされた場合にラベルを削除します。
+[GitLab Bot](https://gitlab.com/gitlab-bot)は、ラベルが 1 年を超えて適用されている場合、または Issue がブロックされた場合にラベルを削除します。
 
 ### `quick win::first-time contributor` Issue の基準 {#criteria-for-quick-winfirst-time-contributor-issues}
 
@@ -467,7 +474,7 @@ Duo のシートは個別には削除できません。トップレベルグル�
 
 これは FY25Q4 (2024 年 11 月 - 2025 年 1 月) に実施する実験です。
 
-高価値の貢献方向をハイライトするために、Contributor Success チームは、特定の期間内に自分の領域の貢献者に与えることができる、製品マネージャー (PM) 向けの専用予算を設定する場合があります。全体の予算は、ユーザー向け製品ステージ全体に均等に共有され、PM はラベル (`community-bonus::100`、`community-bonus::200`、`community-bonus::300`、`community-bonus::500`) を適用して、特定の Issue/エピックにどれだけの価値を与えるかを示すことができます。ボーナスは Issue がクローズされたときに会計され、エピックの場合、Contributor Success チームは関連する PM が議論したように、特定の Issue に対してボーナスの一部を渡すことができます。PM は Issue を選択する際、予算内に留まることが期待されます。
+高価値の貢献方向をハイライトするために、Contributor Success チームは、特定の期間内に自分の領域の貢献者に与えることができる、製品マネージャー (PM) 向けの専用予算を設定する場合があります。全体の予算は、ユーザー向け製品ステージ全体に均等に共有され、PM はラベル (`community-bonus::100`、`community-bonus::200`、`community-bonus::300`、`community-bonus::500`) を適用して、特定の Issue/エピックにどれだけの価値を与えるかを示すことができます。ボーナスは Issue がクローズされたときに計上され、エピックの場合、Contributor Success チームは関連する PM が議論したように、特定の Issue に対してボーナスの一部を渡すことができます。PM は Issue を選択する際、予算内に留まることが期待されます。
 
 ボーナスは貢献後にも与えることができます。
 
@@ -511,7 +518,7 @@ Duo のシートは個別には削除できません。トップレベルグル�
 
 ### 貢献者への連絡 {#contacting-contributors}
 
-貢献者のプライバシーを尊重するため、彼らに連絡するために公開されている連絡データのみを使用します。
+貢献者のプライバシーを尊重するため、連絡には公開されている連絡先情報のみを使用します。
 
 貢献者に連絡する方法をいくつか紹介します:
 
@@ -535,10 +542,10 @@ Duo のシートは個別には削除できません。トップレベルグル�
 
 ### アウトリーチの目標 {#outreach-goals}
 
-Contributor Success チームは、繰り返し可能なアウトリーチキャンペーンを作成するために、3 つの目標で異なる基準とメッセージを試しました:
+Contributor Success チームは、次の 3 つの目標を持つ繰り返し実行可能なアウトリーチキャンペーンを作成するために、さまざまな基準とメッセージを試しました:
 
 1. 新しいマージリクエストを開くコミュニティメンバーを最大化
-1. キャンペーンを実行する Contributor Success の時間コミットメントを最小化
+1. キャンペーンの実行に Contributor Success が費やす時間を最小化
 1. アウトリーチキャンペーンが迷惑になったり、マーケティングスパムのように見えたりするのを防ぐ
 
 ### 復帰貢献者の候補基準 {#candidate-criteria-for-return-contributors}
@@ -576,7 +583,7 @@ Contributor Success チームは、繰り返し可能なアウトリーチキャ
 
 - これまでのところ、復帰貢献者キャンペーンは平均ユーザー復帰率 11%、24 名の復帰貢献者、38 件のマージ済みマージリクエストで成功しています。
 - 4 月の新規貢献者キャンペーンでの実験は 2% の貢献率と低調でした。
-  - このキャンペーンには、ユーザーがコミュニティフォークアクセスをリクエストしてからどれくらい前かの時間制限がなく、多くのユーザーがおそらく始めることへの興味を失っていました。
+  - このキャンペーンでは、ユーザーがコミュニティフォークへのアクセスをリクエストしてからの経過期間に制限を設けておらず、多くのユーザーは既に貢献を始めることへの関心を失っていたと考えられます。
   - 復帰貢献者は、マージリクエストを開く点で新規貢献者よりも成功しやすいことが予想されます。
 - 開かれたマージリクエストとマージされたマージリクエストの結果に加えて、Issue でのユーザーエンゲージメント、オンボーディングタスクの完了、植樹への感謝を観察しました。
 - 多くの貢献者は、これらの結果に表示されるためにアウトリーチから 1 か月以内にマージリクエストを作成する空きがないでしょう。キャンペーンは、後で貢献する機会の前向きなリマインダーになる可能性があります。
@@ -605,12 +612,12 @@ Contributor Success チームは、次のものを削除するために候補プ
 
 #### アウトリーチ Issue への対応とクローズ {#responding-and-closing-outreach-issues}
 
-- アウトリーチ Issue で質問に回答するか、フィードバックを認識します
+- アウトリーチ Issue で質問に回答するか、フィードバックを受け取ったことを伝えます
 - 2 か月後にクローズメッセージで Issue をクローズし、貢献者が Issue を再オープンしてサポートが必要な場合は連絡するよう促します
 
 ### 潜在的なイテレーション {#potential-iterations}
 
-- ロール基準または除外候補リストに対して候補をチェックすることで、自動化により手動レビューステップを削減
+- ロールの基準や除外候補リストに照らして候補を自動的にチェックし、手動レビューの手間を削減
 - アウトリーチキャンペーン後に貢献するユーザーをそれぞれの Issue で感謝し、戻ってきた理由を共有する機会を与える
 
 ## 貢献者の表彰 {#recognition-for-contributors}
@@ -688,7 +695,7 @@ gitlab.com 上のプロジェクト (たとえば CE、EE、Omnibus、Shell な�
 - これらの数値は、マージリクエストがマージされたか、クローズされたか、まだオープンかに関係なく、少なくとも 1 つのマージリクエストを開いた貢献者をカウントします。
 
 - 成功した貢献 (マージリクエストがマージされた) を持つ広範コミュニティコードコントリビューターの数は、Wider Community Dashboard を見ることで見つけることができます。
-- 広範コミュニティメンバーの定義の更新については、[トップ誤用語ページ](/handbook/communication/top-misused-terms/)を参照してください。
+- 広範コミュニティメンバーの定義を再確認するには、[トップ誤用語ページ](/handbook/communication/top-misused-terms/)を参照してください。
 
 GitLab の貢献者数について人々が尋ねたとき、彼らが総コードコントリビューターまたは広範コミュニティコードコントリビューターについて尋ねているかを明確にするのが最善です。ほとんどの場合、人々は広範コミュニティの数により興味を持つ傾向があります。
 

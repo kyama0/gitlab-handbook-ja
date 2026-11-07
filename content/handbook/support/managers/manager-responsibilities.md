@@ -3,11 +3,11 @@ title: Support Engineering Manager の責任
 description: "Support Engineering Manager の責任"
 category: Support Management
 upstream_path: /handbook/support/managers/manager-responsibilities/
-upstream_sha: 1d268efe755c0706a7fc3d454b9e304624dd0423
-translated_at: "2026-10-28T21:09:29.256623+00:00"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+translated_at: "2026-11-07T00:40:40Z"
 translator: claude
 stale: false
-lastmod: "2026-10-28T11:20:12-04:00"
+lastmod: "2026-11-05T15:53:37-05:00"
 ---
 
 ## はじめに {#introduction}
@@ -17,18 +17,18 @@ lastmod: "2026-10-28T11:20:12-04:00"
 
 ## GitLab における Support Leadership {#support-leadership-at-gitlab}
 
-GitLab でのリーダーシップは、GitLab Values を体現し模範を示す独自の機会です。Support Manager の責任は、大きく 2 つのカテゴリーに分類できます。
+GitLab でのリーダーシップは、GitLab のバリューを体現し模範を示す独自の機会です。Support Manager の責任は、大きく 2 つのカテゴリーに分類できます。
 
-| 責任 | GitLab Values |
+| 責任 | GitLab のバリュー |
 | ---------------- | ------------- |
-| 高い顧客サポート満足度を一貫して確保する | Results, Efficiency, イテレーション, Transparency |
-| カスタマーサポートのチームメンバーを支援し、育成する | Collaboration, Diversity Inclusion Belonging |
+| 高い顧客サポート満足度を一貫して確保する | 成果、効率、イテレーション、透明性 |
+| Customer Support のチームメンバーを支援し、育成する | コラボレーション、多様性・包摂・帰属意識 |
 
 [ハザードと課題のページ](/handbook/support/managers/hazards-and-challenges)では、いくつかの既知の問題と、私たちがそれらにどう対処するかを説明しています。
 
 ## 高い顧客サポート満足度を一貫して確保する {#consistently-ensure-high-customer-support-satisfaction}
 
-Support Leadership チームの主たる責任は、GitLab の顧客のために高品質のカスタマーサポートを確保することです。この責任を果たすため、私たちは目標 (GitLab 戦略とエンジニアリングの [OKR](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)と整合) を設定して達成し、Support Engineer が*Support Engineer 自身の*目標を達成できるようにします。
+Support Leadership チームの主たる責任は、GitLab の顧客のために高品質の Customer Support を確保することです。この責任を果たすため、私たちは目標 (GitLab 戦略と Engineering の [OKR](https://internal.gitlab.com/handbook/company/gitlab-operating-model/)と整合) を設定して達成し、Support Engineer が*Support Engineer 自身の*目標を達成できるようにします。
 
 | SSAT 責任 | サブ責任 |
 | ------------------- | ------------------ |
@@ -44,9 +44,9 @@ Support Leadership チームの主たる責任は、GitLab の顧客のために
 |  | 要請に応じてまたは自身の判断で SE と一緒に[顧客コール](/handbook/support/workflows/customer_calls)に参加する |
 |  | [Support Meta プロジェクトの Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues)の DRI として行動することで、サポートプロセスへの改善を提案、開発、評価する |
 | GitLab Product、戦略、価格設定などについて最新情報を把握する | 毎週 [Support Week in Review](/handbook/support/#support-week-in-review)ドキュメントに貢献し、それを読む |
-|  | (セクションレベルまたは部門横断レベルで) [Support Stable Counterparts](/handbook/support/#support-stable-counterparts)または[部門横断的な非プロダクトカウンターパート](/handbook/support/#cross-functional-non-product-counterparts)に参加する |
+|  | (セクションレベルまたは部門横断レベルで) [Support Stable Counterparts](/handbook/support/#support-stable-counterparts)または[Cross-functional non-product counterparts](/handbook/support/#cross-functional-non-product-counterparts)に参加する |
 
-## カスタマーサポートのチームメンバーを支援し、育成する {#support-and-nurture-team-members-in-customer-support}
+## Customer Support のチームメンバーを支援し、育成する {#support-and-nurture-team-members-in-customer-support}
 
 私たちは同等に、チームメンバーが GitLab での旅をサポートされ、毎日仕事に最高の自分を持ち込めるようにする責任があります。
 
@@ -58,7 +58,7 @@ Support Leadership チームの主たる責任は、GitLab の顧客のために
 |  | [インフォーマルなコミュニケーション](/handbook/company/culture/all-remote/informal-communication/)を通じて、Support Leadership の同僚との強固な仕事関係を構築する |
 |  | 各直属の部下と[毎週の 1 対 1 を実施する](#conducting-weekly-1-1-meetings) |
 |  | 直属の部下のためのプロジェクト、トレーニング、リーダーシップロールを推薦する |
-|  | [Support Stable Counterparts](/handbook/support/#support-stable-counterparts)または [部門横断的な非プロダクトカウンターパート](/handbook/support/#cross-functional-non-product-counterparts)である[直属の部下を支援する](/handbook/support/support-stable-counterparts#expectations-from-managers) |
+|  | [Support Stable Counterparts](/handbook/support/#support-stable-counterparts)または [Cross-functional non-product counterparts](/handbook/support/#cross-functional-non-product-counterparts)である[直属の部下を支援する](/handbook/support/support-stable-counterparts#expectations-from-managers) |
 |  | 各直属の部下に定期的な専門能力/キャリア開発を確保する |
 |  | 年次の [360 レビュー](/handbook/people-group/360-feedback/)と Performance Factor レビュー (報酬) を実施する |
 |  | [Performance Factor レビュー](/handbook/total-rewards/compensation/compensation-review-cycle/#performance-factor)と [報酬レビュー](/handbook/total-rewards/compensation/compensation-review-cycle/)を実施する |
@@ -71,8 +71,8 @@ Support Leadership チームの主たる責任は、GitLab の顧客のために
 |  | 面接時間枠のために柔軟なスケジュールを維持する |
 |  | 現在の[採用プロセス](/handbook/support/managers/hiring)について最新情報を把握する |
 |  | 毎週のマネージャーシンクのドキュメント/ミーティングで採用計画について最新情報を把握する |
-|  | Greenhouse で SE およびマネージャー候補者の評価を採点する |
-|  | リージョナルリクルーターと協働し、潜在的な候補者をソースする |
+|  | Greenhouse で SE および Manager 候補者の評価を採点する |
+|  | 地域の Recruiter と協働し、候補者を探す |
 |  | [面接トレーニングモジュール](https://gitlab.com/gitlab-com/support/support-training/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=#)を通じて Support Engineer をトレーニングし、技術評価の採点と技術面接の実施に備えさせる |
 | リージョン内およびリージョン間でコミュニティ感を促進する | チームメンバーが課題を解決できるよう、コーチングし励ます |
 |  | チームビルディング活動に参加する |
@@ -88,7 +88,7 @@ Slack で質問し、回答してください。(これを簡単に追跡する�
 1. `#support_leadership`
 1. `#support_ticket-attention-requests`
 1. `#spt_hiring`
-1. `#support_team_chat`
+1. `#support_team-chat`
 1. `#thanks`
 1. `#team-member-updates`
 1. `#managers`
@@ -122,7 +122,7 @@ Slack で質問し、回答してください。(これを簡単に追跡する�
 
 [GitLab Book Club](/handbook/leadership/book-clubs/)への参加、作成、または広報を検討してください。
 
-Support Engineer とマネージャーは、外部プロバイダーのコースや認定の修了も奨励されています。学習目標を計画するためにマネージャーと話してください。
+Support Engineer と Manager は、外部プロバイダーのコースや認定の修了も奨励されています。学習目標を計画するためにマネージャーと話してください。
 
 ### 顧客と Support Engineer との直接的なやり取りを通じてスキルを開発する {#develop-your-skills-through-direct-interactions-with-customers-and-support-engineers}
 
@@ -132,7 +132,7 @@ Support Engineer のワークフローと責任に精通する最善の方法は
 
 毎週、Support Manager は以下のいずれかまたは複数の活動を行うべきです。
 
-- 1 つのチケットを最初の返信から終結発言まで自分で所有して解決する
+- 1 つのチケットを初回返信から終了時のメッセージまで自分で担当して解決する
 - 1 人または複数の Support Engineer とのペアリングセッションに参加する
 - スケジュールされたコールまたは緊急コールに参加する
 

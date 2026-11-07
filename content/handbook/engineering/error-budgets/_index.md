@@ -1,170 +1,179 @@
 ---
 title: "エンジニアリングのエラーバジェット"
-description: "エラーバジェットは、1四半期内にサービスがどの程度信頼できなくてもよいかを決定する、明確で客観的な指標を提供します。"
-upstream_path: /handbook/engineering/error-budgets/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:41:40+09:00"
+description: "エラーバジェットは、1 四半期内にサービスの信頼性をどこまで低下させてもよいかを定める、明確で客観的な指標を提供します。"
 translator: claude
+upstream_path: "/handbook/engineering/error-budgets/"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+lastmod: "2026-11-06T14:28:38+01:00"
+translated_at: "2026-11-07T00:30:58.726577+00:00"
 stale: false
-lastmod: "2026-08-11T17:10:40+01:00"
 ---
 
-[エンタープライズグレードのプラットフォームとしてGitLab SaaSを強化する](https://about.gitlab.com/direction/core_platform/dotcom/)という[3年戦略](https://about.gitlab.com/direction/#3-year-strategy)の一環として、GitLab.comには特定の[可用性](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-availability)と[パフォーマンス](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-performance)の目標があります。
+ビジネスに不可欠なワークロードに対応するエンタープライズグレードのプラットフォームとして [GitLab SaaS を強化する](https://about.gitlab.com/direction/core_platform/dotcom/)という[私たちの戦略](https://about.gitlab.com/direction/#3-year-strategy)の一環として、GitLab.com には具体的な[可用性](https://internal.gitlab.com/handbook/company/performance-indicators/product/saas-platforms-section/#gitlabcom-availability-slo)と[パフォーマンス](https://internal.gitlab.com/handbook/company/performance-indicators/product/saas-platforms-section/)の目標があります（社内ハンドブック、GitLab チームメンバーのみ）。
 
-これらの目標は、ユーザーにプラットフォームの信頼性の指標を提供します。
+これらの目標は、ユーザーにプラットフォームの信頼性を示します。
 
-さらに、[GitLab.comサービスレベル可用性](/handbook/engineering/monitoring/#gitlabcom-service-availability)はプラットフォーム顧客との契約上の合意の一部でもあります。契約は特定の目標数値を定義する場合があり、その合意を守らないと財務上および評判上の負担が生じる可能性があります。
+さらに、[GitLab.com のサービスレベル可用性](/handbook/engineering/monitoring/#gitlabcom-service-availability)は、プラットフォームを利用するお客様との契約の一部でもあります。契約で具体的な目標数値を定める場合があり、その合意を守らないと財務上の負担や評判への悪影響が生じる可能性があります。
 
-## エラーバジェットとは？
+## エラーバジェットとは何ですか？ {#what-are-error-budgets}
 
-Google SREブックは一般的に推奨される読み物であり、[「エラーバジェットの動機」](https://landing.google.com/sre/sre-book/chapters/embracing-risk/#id-na2u1S2SKi1)セクションでは次のように述べられています:
+Google の SRE ブックは全般的に推奨される読み物です。[「エラーバジェットの動機」](https://landing.google.com/sre/sre-book/chapters/embracing-risk/#id-na2u1S2SKi1)セクションには、次のように記載されています。
 
-> エラーバジェットは、1四半期内にサービスがどの程度信頼できなくてもよいかを決定する、明確で客観的な指標を提供します。この指標は、どの程度のリスクを許容するかを決定する際に、SREと製品開発者の間の交渉から政治を排除します。
+> エラーバジェットは、1 四半期内にサービスの信頼性をどこまで低下させてもよいかを定める、明確で客観的な指標を提供します。この指標は、どの程度のリスクを許容するかを決める際に、SRE と製品開発者の間の交渉から政治的な駆け引きを排除します。
 
-これも私たちが目指している目標ですが、同じレベルの洗練に到達するためには、私たちの特定の状況、成熟度、追加の要件を考慮する必要があることも認識しています。**初期のアプローチ**では、エラーバジェットSLOを既存の可用性へのアプローチに直接結びつけます。
+これも私たちが目指す目標です。同時に、同じ成熟度に到達するには、私たち固有の状況、成熟度、追加の要件を考慮する必要があることも認識しています。私たちの**初期のアプローチ**では、エラーバジェットの SLO を、可用性に関する既存のアプローチに直接結びつけます。
 
-エラーバジェットの将来のイテレーションでは、リスク許容度と機能の速度のバランスをとる上でのプロダクトマネージャーの重要性をさらに発展させる予定です。開発者とSRE間の上記の明確さは、各サービスまたは製品領域に対する適切な測定値と目標を確立することで達成されます。最終的にこれは、新機能の作業の重要性とユーザーへの継続的なサービス期待のバランスをとります。
+今後のエラーバジェットのイテレーションでは、リスク許容度と機能開発の速度のバランスを取るうえでの Product Manager の重要性をさらに高めていきます。上記の開発者と SRE の間の明確な合意は、各サービスまたは製品領域に適切な測定基準と目標を設定することで実現します。最終的には、新機能への取り組みの重要性と、ユーザーが継続的にサービスに抱く期待のバランスを取ります。
 
-## エラーバジェットの構成要素は？
+## エラーバジェットの構成要素は何ですか？ {#what-are-the-components-of-error-budgets}
 
-エラーバジェットは、まずSLO（Service Level Objective、サービスレベル目標）を確立することに依存します。SLOは、目標、SLI（Service Level Indicator、サービスレベル指標）、および期間で構成されます。
+エラーバジェットは、まず SLO（サービスレベル目標）の確立を前提とします。SLO は、目標、SLI（サービスレベル指標）、期間で構成されます。
 
-- **目標**: 望ましい成功レベル、パーセンテージで表記
-- **SLI**: 失敗したイベントの数を区別するために使用される評価
-- **期間**: SLIに最近性のバイアスを強制
+- **目標**：望ましい成功の水準をパーセンテージで示したもの
+- **SLI**：失敗したイベントの数を判別するために使用する評価基準
+- **期間**：SLI で直近の状況を重視するための期間
 
-これらの要素の例:
+これらの要素の例を示します。
 
-- **目標**: 99.95%
-- **SLI**: 5分間のAPIリクエストの95パーセンタイルレイテンシが100ms未満
-- **期間**: 過去28日間
+- **目標**：99.95%
+- **SLI**：5 分間の API リクエストの 95 パーセンタイルのレイテンシが < 100ms
+- **期間**：過去 28 日間
 
-これらをすべて合わせると、上記のSLO例は次のようになります: ***過去28日間で、5分間のAPIリクエストの95パーセンタイルレイテンシが100ms未満であることが99.95%***
+すべてを合わせると、上記の SLO の例は次のようになります。***過去 28 日間において、5 分間の API リクエストの 95 パーセンタイルのレイテンシの 99.95% が < 100ms***
 
-エラーバジェットは、SLOの1 - 目標で、この場合は (1 - .9995 = .0005)。28日間の期間を使用すると、**「バジェット」のエラーは20.16分** (.0005 *(28* 24 * 60))
+エラーバジェットは 1 - SLO の目標であり、この場合は (1 - .9995 = .0005) です。28 日間の期間を使うと、**エラーの「バジェット」は 20.16 分です** (.0005 *(28* 24 * 60))
 
-上記の例ではSLIをレイテンシ測定として示していますが、他の測定（％エラーなど）もSLIに使用するのに良い要素であることに注意することが重要です。
+上記の例では SLI としてレイテンシの測定を示していますが、ほかの測定値（エラー率など）も SLI の要素として有効です。
 
-GitLabの現在のエラーバジェット実装は、SLOおよびエラーバジェットの上記の洗練の一部のみを使用していますが、将来的に洗練を増やすことを期待しています。SLOおよびエラーバジェットのプラクティスは、サービスの重要性および、それに依存する他のサービスおよびコンポーネントのレジリエンスに基づいて、目標とSLIの***両方***が（適切に）変化するように進化することが予想されます。
+GitLab の現在のエラーバジェットの実装では、上記の SLO とエラーバジェットの仕組みの一部のみを使用していますが、今後さらに高度化する予定です。SLO とエラーバジェットの運用は、サービスの重要性と、それに依存するほかのサービスやコンポーネントの耐障害性に基づいて、目標と SLI の***両方***を適切に変えるように進化することを想定しています。
 
-## どの種類のエラーが含まれますか？
+## どの種類のエラーが含まれますか？ {#which-types-of-errors-are-included}
 
-`500`ステータスコードエラーが結果となるWebリクエストがカウントされます。Sidekiqでは、未処理の例外のために失敗したジョブがカウントされます。
+ステータスコード `500` のエラーを返す Web リクエストをカウントします。Sidekiq では、未処理の例外によって失敗したジョブをカウントします。
 
-グループに[カスタムSLI](https://docs.gitlab.com/ee/development/application_slis/)がある場合、または[メトリクスカタログ](https://gitlab.com/gitlab-com/runbooks/-/tree/master/metrics-catalog)で固定の機能カテゴリーが設定されたSLIがある場合、それらのエラーもカウントされます。
+グループに[カスタム SLI](https://docs.gitlab.com/ee/development/application_slis/)がある場合、または私たちの[メトリクスカタログ](https://gitlab.com/gitlab-com/runbooks/-/tree/master/metrics-catalog)に固定の機能カテゴリを設定した SLI がある場合は、それらのエラーもカウントします。
 
-エンジニアは`Gitlab::ErrorTracking.track_exception`またはその他のログを、エラーバジェットに影響を与えることなく自由に使用できます。
+エンジニアは、エラーバジェットに影響を与えることなく、`Gitlab::ErrorTracking.track_exception` やほかのログ記録を自由に使用できます。
 
-## なぜエラーバジェットを使用しているのですか？
+## なぜエラーバジェットを使用するのですか？ {#why-are-we-using-error-budgets}
 
-GitLabは、可用性の高いSaaSプラットフォームとして提供される必要がある複雑なシステムです。何年もの間、SaaSの信頼性が継続的に向上することを保証しながら、機能提供の速度を維持するいくつかの課題に対処するために、いくつかのプロセスが導入されてきました。
+GitLab は、可用性の高い SaaS プラットフォームとして提供する必要のある複雑なシステムです。これまで、SaaS の信頼性を継続的に高めながら機能提供の速度を維持する際の課題に対処するため、いくつかのプロセスを導入してきました。
 
-[Infradevプロセス](/handbook/engineering/workflow/#infradev)は、インシデントまたは劣化が発生した後にIssueを解決することを優先するために作成されました。このプロセスは成功を証明していますが、*イベント中心*かつ*イベント駆動*です。
+[Infradev プロセス](/handbook/engineering/workflow/#infradev)は、インシデントや性能低下が発生した後に問題の解決を優先するために作られました。このプロセスは成果を上げていますが、*イベントに焦点を当て*、*イベントを起点とする*ものです。
 
-[Engineering Allocationプロセス](/handbook/product/product-processes/#prioritization-framework)は、長期的なチーム効率、パフォーマンス、セキュリティ項目に対処するために作成されました。
+[Engineering Allocation プロセス](/handbook/product/product-processes/#prioritization-framework)は、チームの長期的な効率性、パフォーマンス、セキュリティに関する項目に取り組むために作られました。
 
-GitLabでのエラーバジェットの初期のイテレーションは、客観的なデータを導入し、個々の機能が長期間にわたってどのように機能しているかについてより深い洞察を作り出すシステムを確立することを目的としています。これは、組織が焦点を正しく割り当て、リスクが適切にバランスされ、システム全体がより長い期間健全に保たれることを確保するために使用できます。
+GitLab のエラーバジェットの最初のイテレーションは、客観的なデータを導入し、個々の機能が長期にわたってどのように動作しているかをより深く把握する仕組みを確立することを目指します。組織はこれを使って適切に注力先を配分し、リスクのバランスを取り、システム全体をより長く健全に保てます。
 
-エラーバジェットを機能カテゴリーまで割り当てることで、特定の機能の基準が設定され、それによりGitLab SaaSにとって重要なものを優先することへの調整が確保されます。
+機能カテゴリ単位でエラーバジェットを割り当てることで、個々の機能のベースラインを設定し、GitLab SaaS にとって重要な事項の優先順位について認識を合わせられます。
 
-## 最優先の改善をどのように決定しますか？
+## 最優先の改善をどのように決定しますか？ {#how-do-we-determine-the-highest-priority-improvements}
 
-各グループは
-[バジェット詳細ダッシュボード](https://docs.gitlab.com/ee/development/stage_group_observability/dashboards/error_budget_detail.html)に`Budget spend attribution`セクションがあり、[バジェットがどこで使われているかを発見](https://docs.gitlab.com/ee/development/stage_group_observability/index.html#check-where-budget-is-being-spent)できます。
+各グループの
+[バジェット詳細ダッシュボード](https://docs.gitlab.com/ee/development/stage_group_observability/dashboards/error_budget_detail.html)には `Budget spend attribution` セクションがあり、[バジェットをどこで消費しているかを確認](https://docs.gitlab.com/ee/development/stage_group_observability/index.html#check-where-budget-is-being-spent)できます。
 
-`Budget failures`パネルと`Failure log links`パネル内の各リンクは、エラーの数順に並んでいます。これらのテーブルでトップオフェンダーを修正することを優先することで、バジェット支出に最大の影響を与えます。
+`Budget failures` パネルと `Failure log links` パネル内の各リンクは、どちらもエラー数の順に並んでいます。これらのテーブルで上位の原因の修正を優先すると、バジェット消費への影響が最も大きくなります。
 
-異なるトラフィックパターンを持つ単純化された違反シナリオを見てみましょう:
+トラフィックパターンが異なる、単純化した違反のシナリオを
+見てみましょう。
 
-| エンドポイント   | 合計リクエスト | スロークエスト | Apdex比率 | トラフィックシェア |
+| エンドポイント   | 総リクエスト数 | 遅いリクエスト数 | Apdex 比率 | トラフィックシェア |
 |------------|----------------|---------------|-------------|---------------|
-| エンドポイントA | 1 000          | 500           | 50%         | 1%            |
-| エンドポイントB | 99 000         | 9 000         | 90%         | 99%           |
+| Endpoint A | 1 000          | 500           | 50%         | 1%            |
+| Endpoint B | 99 000         | 9 000         | 90%         | 99%           |
 
-`エンドポイントA`の方がApdex比率が低いにもかかわらず、`エンドポイントB`からのより多くの違反を修正する方が、エラーバジェットへの影響が全体的により大きくなります。これは、エラーバジェットに影響を与える違反の大部分を占めているためです。
+`Endpoint A` の Apdex 比率のほうが低くても、`Endpoint B` の違反を
+より多く修正するほうが、エラーバジェット全体への影響は大きくなります。
+エラーバジェットに影響する違反の大半を占めているためです。
 
-次に、より複雑な違反シナリオを見てみましょう:
+次に、より複雑な違反のシナリオを見てみましょう。
 
-| エンドポイント   | 合計リクエスト | スロークエスト | Apdex比率 | トラフィックシェア |
+| エンドポイント   | 総リクエスト数 | 遅いリクエスト数 | Apdex 比率 | トラフィックシェア |
 |------------|----------------|---------------|-------------|---------------|
-| エンドポイントA | 100 000        | 30            | 99.97%      | 80%           |
-| エンドポイントB | 25 000         | 30            | 99.88%      | 20%           |
+| Endpoint A | 100 000        | 30            | 99.97%      | 80%           |
+| Endpoint B | 25 000         | 30            | 99.88%      | 20%           |
 
-`エンドポイントA`と`エンドポイントB`からの30エラーはどちらもエラーバジェットに同じ影響を持ちます。ただし、`エンドポイントB`の方がスロークエスト/全体リクエストの比率が高いため、`エンドポイントB`に取り組む方が良いでしょう。`エンドポイントA`はすでに99.95%の目標を達成しているため、ここで追加の作業は必要ありません。99.97%は良いスコアで、ここでの意図的な改善は早すぎる最適化と見なされる可能性があります。
+`Endpoint A` と `Endpoint B` の 30 件のエラーは、どちらもエラーバジェットに
+同じ影響を与えます。ただし、遅いリクエスト / 総リクエストの比率が高いため、
+`Endpoint B` に取り組むほうがよいでしょう。
+`Endpoint A` はすでに 99.95% の目標を達成しているため、追加の作業は必要ありません。
+99.97% は良好な値であり、ここで意図的に改善を加えることは時期尚早な最適化と見なされる可能性があります。
 
-`エンドポイントB`の違反の数はApdexしきい値を下回るため、これら2つのエンドポイントがトップ違反者である場合、`エンドポイントB`の改善を検討する必要があります。
+`Endpoint B` は違反数によって Apdex のしきい値を下回るため、
+この 2 つのエンドポイントが違反の上位であれば、
+`Endpoint B` の改善を検討する必要があります。
 
-## GitLab.comのエラーバジェットポリシー
+## GitLab.com のエラーバジェットポリシー {#the-error-budget-policy-for-gitlabcom}
 
-エラーバジェットプロセスにはいくつかの特徴的な項目があります:
+エラーバジェットのプロセスには、いくつかの異なる項目があります。
 
-1. バジェットステークホルダー
-1. バジェット割り当て
-1. バジェット支出と会計
+1. バジェットのステークホルダー
+1. バジェットの割り当て
+1. バジェットの消費と会計
 1. ステークホルダー間のコミュニケーション
 
-## バジェットステークホルダー
+## バジェットのステークホルダー {#budget-stakeholders}
 
-エラーバジェットプロセスのステークホルダー:
+エラーバジェットプロセスのステークホルダーは次のとおりです。
 
-1. ステージチーム（[製品カテゴリーページ](/handbook/product/categories/)で表現されているProduct部門および支援エンジニアリングチーム）
-1. Infrastructureチーム（[infrastructureチームページ](/handbook/engineering/infrastructure-platforms/)で表現されているチーム）
-1. [VP of InfrastructureとInfrastructureリーダーシップ](/handbook/engineering/infrastructure/#mstaff)
-1. VP of DevelopmentおよびVP of Product
+1. ステージチーム（[製品カテゴリページ](/handbook/product/categories/)に掲載されている Product 部門と、それを支える Engineering チーム）
+1. Infrastructure チーム（[Infrastructure チームページ](/handbook/engineering/infrastructure-platforms/)に掲載されているチーム）
+1. VP of Infrastructure と Infrastructure Leadership
+1. VP of Development と VP of Product
 
-## バジェット割り当て
+## バジェットの割り当て {#budget-allocation}
 
-エラーバジェットは、[可用性](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-availability)目標に基づいて計算されます。
+エラーバジェットは、[可用性](https://internal.gitlab.com/handbook/company/performance-indicators/product/saas-platforms-section/#gitlabcom-availability-slo)の目標（社内ハンドブック）に基づいて計算します。
 
-`99.95%`可用性の現在の目標で、許可される利用不可ウィンドウは`28日間で20分`です。
+現在の可用性目標 `99.95%` では、許容される利用不可時間は `28 日間で 20 分` です。
 
-私たちはProductのレポート方法に合わせるために28日期間を使用することを選択しました。
+Product のレポート方法に合わせるため、28 日間を使用することにしました。
 
-バジェットはSaaSプラットフォームに設定され、ステージチームとインフラチーム間で共有されます。サービス可用性計算方法論については、[GitLab.comサービス可用性ページ](/handbook/engineering/monitoring/#gitlabcom-service-availability)で詳細にカバーされています。
+バジェットは SaaS プラットフォームに設定し、ステージチームと Infrastructure チームで共有します。サービス可用性の計算方法は、[GitLab.com のサービス可用性ページ](/handbook/engineering/monitoring/#gitlabcom-service-availability)に詳しく記載されています。
 
-これには、すべてのRailsコントローラー、APIエンドポイント、Sidekiqワーカー、およびサービスカタログで定義された他のSLIが含まれます。これは、機能カテゴリーを定義することでグループに帰属されます。機能カテゴリー化に関するドキュメントは、[開発者ガイド](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)で利用できます。
+これには、すべての Rails コントローラー、API エンドポイント、Sidekiq ワーカー、サービスカタログで定義するほかの SLI が含まれます。機能カテゴリを定義することでグループに帰属させます。機能のカテゴリ分類に関するドキュメントは、[開発者ガイド](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)を参照してください。
 
-チームが所有する機能の数や複雑さ、既存の製品優先事項、チームの規模は、バジェットに影響を与えません。
+チームが所有する機能の数や複雑さ、既存の製品の優先事項、チームの規模は、バジェットに影響しません。
 
-## バジェットレポート {#budget-reporting}
+## バジェットのレポート {#budget-reporting}
 
-毎月4日に、ステージグループ別バジェット支出のエラーバジェットレポートが配信されます。
-アナウンスは`#product`、`#eng-managers`、`#f_error_budgets`、`#development`に表示されます。
+毎月 4 日に、ステージグループ別のバジェット消費に関するエラーバジェットレポートを配信します。
+`#product`、`#eng-managers`、`#f_error_budgets`、`#development` で告知します。
 
-基盤となるインフラの問題により、多くのステージグループがバジェット超過になる月があります。
-レポートが生成されるとき、5以上のグループがバジェット超過の場合（グループのトラフィックシェアが>0.1%）、Scalabilityグループがレポートを発行する前に増加した支出を調査します。レポートを発行する前に調査していることをSlackチャンネルでアナウンスします。
-目的は、複数のチームによる重複した調査を防ぐことです。
+基盤となるインフラストラクチャの問題により、多くのステージグループがバジェットを超過する月もあります。
+レポートの生成時に、バジェットを超過したグループが 5 つを超える場合（グループのトラフィックシェアが >0.1%）、Scalability Group がレポートを発行する前に消費の増加を調査します。レポートの発行前に、調査中であることを Slack チャンネルで告知します。
+複数のチームによる調査の重複を防ぐことが目的です。
 
-ステージグループは、月次エラーバジェットレポートをレビューし、機能カテゴリーでの超過支出にコメントすることが期待されます。
+ステージグループは、月次エラーバジェットレポートをレビューし、自分たちの機能カテゴリでの超過消費についてコメントすることを求められます。
 
-### Engineering Allocationミーティングでのエラーバジェット
+### Engineering Allocation ミーティングでのエラーバジェット {#error-budgets-in-the-engineering-allocation-meeting}
 
-ステージグループは、エラーバジェット支出について毎週レポートすることは期待されていません。
-3か月連続で割り当てられたバジェットを超える月次支出を持つ機能カテゴリーは、議論のためにアジェンダに追加されます。
+ステージグループは、エラーバジェット消費を毎週報告することは求められません。
+月次消費が 3 か月連続で割り当てられたバジェットを超える機能カテゴリは、議論のために議題に追加します。
 
-## バジェット支出（サービス別）
+## バジェット消費（サービス別） {#budget-spendby-service}
 
-現在のバジェット支出は[一般サービス可用性ダッシュボード](https://dashboards.gitlab.net/d/general-slas/general-slas?orgId=1&from=now-30d&to=now)で確認できます。
+現在のバジェット消費は、[サービス可用性の全体ダッシュボード](https://dashboards.gitlab.net/d/general-slas/general-slas?orgId=1&from=now-30d&to=now)で確認できます。
 
-使用されたバジェットとは、ユーザー向けサービスが指定されたしきい値以下のエラー率を経験し、レイテンシがサービスの指定された目標を上回った時間（分単位）です。サービス可用性がどのように計算されるかの詳細は、[GitLab.comサービス可用性ページ](/handbook/engineering/monitoring/#gitlabcom-service-availability)で確認できます。
+消費したバジェットとは、ユーザー向けサービスのエラー率が指定のしきい値を下回り、レイテンシがそのサービスの指定目標を上回った時間（分単位）です。サービス可用性の計算方法の詳細は、[GitLab.com のサービス可用性ページ](/handbook/engineering/monitoring/#gitlabcom-service-availability)を参照してください。
 
-バジェット支出は現在、主要なサービスレベルで集計されています。
+現在、バジェット消費は主要サービスのレベルで集計しています。
 
-![Complete budget](/images/engineering/error-budgets/complete-budget.png)
+![バジェット全体](/images/engineering/error-budgets/complete-budget.png)
 
-![Spent budget](/images/engineering/error-budgets/spent-budget.png)
+![消費したバジェット](/images/engineering/error-budgets/spent-budget.png)
 
-バジェット支出に何が貢献したかの詳細は、発生したインシデントを検査し、特定のサービスダッシュボード（およびそのリソース）を探索することでさらに見つけることができます。
+バジェット消費の要因の詳細は、報告されたインシデントを確認し、該当するサービスのダッシュボード（およびそのリソース）を調べることで把握できます。
 
-## バジェット支出（ステージグループ別）
+## バジェット消費（ステージグループ別） {#budget-spend-by-stage-group}
 
-これがどのように構築されているかの詳細を含む[例があります](error-budget-by-stage-group-example.md)。
+この仕組みの構築方法をより詳しく示す[例があります](error-budget-by-stage-group-example.md)。
 
-現在の[28日間](/handbook/enterprise-data/organization/programs/data-for-product-managers)のバジェット支出は、各[ステージグループダッシュボード](https://dashboards.gitlab.net/dashboards/f/stage-groups/stage-groups)で確認できます。そのステージグループの機能カテゴリーは単一の値にロールアップされます。
+現在の [28 日間](/handbook/enterprise-data/organization/programs/data-for-product-managers)のバジェット消費は、各[ステージグループのダッシュボード](https://dashboards.gitlab.net/dashboards/f/stage-groups/stage-groups)で確認できます。そのステージグループの機能カテゴリを 1 つの値に集約しています。
 
-ステージグループは、ダッシュボードを使用してバジェット支出の原因を探索できます。バジェット支出を調査するプロセスは、[開発者ドキュメント](https://docs.gitlab.com/ee/development/stage_group_observability/dashboards/stage_group_dashboard.html)に記載されています
+ステージグループは、ダッシュボードを使ってバジェット消費の原因を調べられます。バジェット消費の調査プロセスは、[開発者ドキュメント](https://docs.gitlab.com/ee/development/stage_group_observability/dashboards/stage_group_dashboard.html)に記載されています
 
-可用性を計算するための公式:
+可用性の計算式は次のとおりです。
 
 ```text
 the number of operations with a satisfactory apdex + the number of operations without errors
@@ -172,169 +181,172 @@ the number of operations with a satisfactory apdex + the number of operations wi
 the total number of apdex measurements + the total number of operations
 ```
 
-これは、正常に完了した操作のパーセンテージを示し、分に変換されます:
+これによって正常に完了した操作の割合が得られ、次のように分単位に変換します。
 
 ```text
 (1 - stage group availability) * (28 * 24 * 60)
 ```
 
-ApdexとErrorレートは、[ハンドブックページ](/handbook/engineering/monitoring/#gitlabcom-service-level-availability)で詳細に説明されています。
+Apdex とエラー率については、[GitLab.com のサービス可用性ページ](/handbook/engineering/monitoring/#gitlabcom-service-availability)に詳しい説明があります。
 
-エラーバジェット支出情報は、Tableauの[エラーバジェット概要ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/Draft-ErrorBudgetDashboard/ErrorBudgetOverviewDashboard)で利用できます。
+エラーバジェット消費の情報は、Tableau の[エラーバジェット概要ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/Draft-ErrorBudgetDashboard/ErrorBudgetOverviewDashboard)で確認できます。
 
-### システム全体のインシデント
+### システム全体のインシデント {#system-wide-incidents}
 
-共有サービス（データベースまたはRedisなど）に影響するシステム全体のインシデントは、チームのエラーバジェット支出に影響を与える可能性があります。28日間にわたる支出を見ているため、これらの短期間のイベントの影響はほぼ無視できるはずです。
+共有サービス（データベースや Redis など）に影響するシステム全体のインシデントは、チームの
+エラーバジェット消費に影響する可能性があります。28 日間の消費を対象とするため、これらの短期間のイベントの影響は、おおむね
+無視できるはずです。
 
-影響が大きい場合、月次レポートで、このインシデントが手動の支出調整を正当化するかどうかについて議論できます。
+影響が大きい場合は、月次レポートで、そのインシデントを理由に消費を手動で調整するべきかを議論できます。
 
-現時点では、システム全体のイベントをグループレベルのエラーバジェットから自動的に割り引くことを検討していません。チームは、各グループに関連するための十分なチューニング機能を備えた、エラーバジェットの強固な基盤を構築することに焦点を当てています。
+現時点では、システム全体のイベントをグループレベルのエラーバジェットから自動的に除外する方法の検討は進めていません。チームは、各グループに適したものにするための十分な調整機能を備えた、エラーバジェットの強固な基盤の構築に注力しています。
 
-### エラーバジェットの帰属を変更する方法
+### エラーバジェットの帰属を変更する方法 {#how-to-change-error-budget-attribution}
 
-エラーバジェットイベントは、機能カテゴリー化を介してステージグループに帰属されます。エンドポイントの機能カテゴリーを変更するには、[機能カテゴリー化開発ドキュメント](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)で説明されているようにエンドポイントを更新します。
+エラーバジェットのイベントは、機能のカテゴリ分類を通じてステージグループに帰属します。エンドポイントの機能カテゴリを変更するには、[機能のカテゴリ分類に関する開発ドキュメント](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)の説明に従ってエンドポイントを更新してください。
 
-機能カテゴリーの更新は、将来のイベントがステージグループにマップされる方法のみを変更します。以前にレポートされたイベントは遡及的に更新されません。
+機能カテゴリの更新によって変わるのは、将来のイベントのステージグループへの対応付けだけです。過去に報告したイベントは遡及して更新しません。
 
-[Observabilityチーム](/handbook/engineering/infrastructure-platforms/production-engineering/observability/)は、機能カテゴリーがWebサイトリポジトリで変更されたときに、マッピングを最新の状態に保つことを所有しています。`stages.yml`でカテゴリーが変更されると、スケジュールされたパイプラインが[ビルドボード](https://gitlab.com/gitlab-com/gl-infra/scalability/-/boards/1697160)にIssue（[Issue例](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2084)）を作成します。Issueには、パイプラインリンクと説明に従うべき指示が含まれています。カテゴリーは2つの場所に同期する必要があります:
+[Observability チーム](/handbook/engineering/infrastructure-platforms/production-engineering/observability/)は、Web サイトのリポジトリで機能カテゴリが変更されたときに、対応付けを最新に保つ責任を持ちます。`stages.yml` でカテゴリが変更されると、スケジュールされたパイプラインが[ビルドボード](https://gitlab.com/gitlab-com/gl-infra/scalability/-/boards/1697160)に Issue（[Issue の例](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2084)）を作成します。Issue の説明には、パイプラインへのリンクと従うべき手順が含まれます。カテゴリは次の 2 か所に同期する必要があります。
 
-1. [Railsアプリケーション](https://docs.gitlab.com/ee/development/feature_categorization/#updating-configfeature_categoriesyml)。
-1. [Runbooksリポジトリ](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/stage-group-mapping.jsonnet)。
+1. [Rails アプリケーション](https://docs.gitlab.com/ee/development/feature_categorization/#updating-configfeature_categoriesyml)。
+1. [Runbooks リポジトリ](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/stage-group-mapping.jsonnet)。
 
-### 新しいグループのエラーバジェット
+### 新しいグループのエラーバジェット {#error-budgets-for-new-groups}
 
-グループが作成されると、グループは[`stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml)に追加されます。そのマージリクエストで、新しいグループには新しいまたは既存の機能カテゴリーが割り当てられます。
+グループを作成すると、[`stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml)に追加します。そのマージリクエストで、新しいグループに新規または既存の機能カテゴリを割り当てます。
 
-このMRがマージされると、Scalabilityは、私たちの記録インフラのメトリクスカタログを更新するための自動Issueを受け取ります。これは、新しいグループが`stages.yml`に追加されてから1週間以内に発生します。
+この MR をマージすると、Scalability に、私たちの記録用インフラストラクチャのメトリクスカタログを更新するための Issue が自動的に届きます。これは、新しいグループを `stages.yml` に追加してから 1 週間以内に発生します。
 
-そのメトリクスカタログが更新されると、関連する機能カテゴリーのメトリクスは新しいステージグループに帰属されます。帰属が変更されたときと同様に、変更は遡及的ではありません。これは、既存の機能カテゴリーが15日に`source code`から`code review`に移動した場合、その機能カテゴリーは1日から15日まで放出されたメトリクスについて`source code`のエラーバジェットに貢献することを意味します。15日以降のメトリクスは`code review`のエラーバジェットにカウントされます。
+メトリクスカタログを更新すると、関連する機能カテゴリのメトリクスは新しいステージグループに帰属します。帰属先を変更する場合と同様に、変更は遡及しません。たとえば、既存の機能カテゴリが 15 日に `source code` から `code review` に移る場合、その機能カテゴリの 1 日から 15 日までに出力されたメトリクスは、`source code` のエラーバジェットに寄与します。15 日以降のメトリクスは、`code review` のエラーバジェットに計上します。
 
-グループが名前変更された場合、またはステージが移動した場合も同じことが当てはまります: 15日にメトリクスカタログでグループ名変更がマージされた場合、28日間のレポートには、グループの古い名前のデータが15日分含まれ、最新の日は新しい名前を持つグループに帰属されます。
+グループの名称変更やステージの移動の場合も同じです。グループの名称変更を 15 日にメトリクスカタログへマージした場合、28 日間のレポートには旧名のグループのデータが 15 日分含まれ、直近の日々のデータは新しい名前のグループに帰属します。
 
-### 契約
+### 契約 {#contract}
 
-特定の月のトラフィックシェアが>0.01%のステージグループは、機能開発と信頼性開発のバランスを取るためにこの契約を遵守する必要があります。
-ステージグループのトラフィックシェアは月次エラーバジェットレポートで表示されます。
+その月のトラフィックシェアが >0.01% のステージグループは、機能開発と信頼性向上の開発のバランスを取るため、この契約に従う必要があります。
+ステージグループのトラフィックシェアは、月次エラーバジェットレポートで確認できます。
 
-エラーバジェットは[製品開発タイムライン](/handbook/engineering/workflow/#product-development-timeline)の一部として月次でレビューされる必要があります。
+エラーバジェットは、[製品開発タイムライン](/handbook/engineering/workflow/#product-development-timeline)の一環として毎月レビューする必要があります。
 
-機能カテゴリーの機能開発と信頼性開発のバランスは次のとおりです:
+機能カテゴリの機能開発と信頼性向上の開発のバランスは、次のとおりです。
 
-|**月次支出（28日）**               |**アクション**|
+|**月次消費（28 日間）**               |**対応**|
 |------------------------------  |----------|
-| <= 20分                   | 支出を理解する - 追加のアクションは不要。 |
-| > 20分                   | [信頼性/可用性の改善](/handbook/product/product-processes/#prioritization)へのコミットメント、機能開発は二次。 |
+| <= 20 分                   | 消費状況を把握してください - 追加の対応は不要です。 |
+| > 20 分                   | [信頼性/可用性の改善](/handbook/product/product-processes/#prioritization)に取り組むことを約束し、機能開発は二次的なものとします。 |
 
-3か月連続で割り当てられたバジェットを超える月次支出を持つ機能カテゴリーは、追加の機能開発の制限が課される可能性があります。
+月次消費が 3 か月連続で割り当てられたバジェットを超える機能カテゴリには、機能開発に追加の制限を設ける場合があります。
 
-#### 異なるエラーバジェットを持つステージグループ
+#### 異なるエラーバジェットを持つステージグループ {#stage-groups-with-different-error-budgets}
 
-現在の契約は99.95%の可用性と20分の月次エラーバジェットです。ただし、以下のグループはビジネスニーズに基づいて一時的に調整されたバジェットを持っています:
+現在の契約は、99.95% の可用性と、月次 20 分のエラーバジェットです。ただし、次のグループでは、ビジネスニーズに応じて一時的にバジェットを調整しています。
 
-|**ステージグループ**   | **月次支出（28日）** | **ビジネス上の理由** | **レビュー日**|
+|**ステージグループ**   | **月次消費（28 日間）** | **ビジネス上の理由** | **レビュー日**|
 |------------------|---------------------|---------------------|---------------------|
-| Runtime: Organizations | 99.79% | 長期スケーラビリティ作業（Protocells/Organizations）に集中することを許可し、また次のAPIバージョンで導入を必要とする変更を調整する。[このMR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/108039)で説明 | 2026-10-31（または合計トラフィックシェアが5%を超えた場合） |
-| Verify: Pipeline Execution | 99.9% | 顧客所有の runner のキューイングが、グループのエラーバジェット消費の 50 〜 60% を占めています。この一時的な例外は、[runbooks#221](https://gitlab.com/gitlab-com/runbooks/-/issues/221)のメトリクス除外が実装されるまで有効です。 | 2026-09-30 |
+| Runtime: Organizations | 99.79% | グループが長期的なスケーラビリティの作業（Protocells/Organizations）に注力するとともに、次の API バージョンでの導入が必要な変更を調整できるようにするためです。[この MR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/108039)に記載しています | 2026-10-31（または合計トラフィックシェアが 5% を超えた場合） |
+| Verify: Pipeline Execution | 99.9% | 顧客所有の runner のキューイングが、グループのエラーバジェット消費の 50-60% を占めています。この一時的な例外は、[runbooks#221](https://gitlab.com/gitlab-com/runbooks/-/issues/221)のメトリクス除外を実装するまで有効です。 | 2026-09-30 |
 
 **例外**
 
-一時的な例外は、許可された例外がGitLab.comの信頼性に追加のリスクを生み出していないと推定される場合に、異なるステークホルダーがより高い優先度のビジネスニーズを満たすことを可能にする手段として付与されます。*例外*は、エンドポイント上で許容可能なパフォーマンスを定義するプロパティを設定する[Custom Targets](/handbook/engineering/error-budgets/custom-targets/)とは異なることに注意してください。
+一時的な例外は、付与した例外が GitLab.com の信頼性に追加のリスクをもたらさないと見込まれる場合に、さまざまなステークホルダーが優先度の高いビジネスニーズを満たせるようにするために認めます。*例外*は、エンドポイントにプロパティを設定して許容されるパフォーマンスを定義する[カスタムターゲット](/handbook/engineering/error-budgets/custom-targets/)とは異なります。
 
-例外の有効な理由:
+例外の正当な理由は次のとおりです。
 
-1. エラーバジェットを改善するための作業がスコープアウトされ、完全に計画され、資金提供されている。作業の完了には単一のリリース月以上かかり、作業が完了している間はエラーバジェットが定期的に使用されることが予想される。
-1. エラーバジェットを改善するための作業がスコープアウトされ、完全に計画されているが、現在は作業に資金が提供されていない。ステークホルダーは資金を確保するプロセス中であり、追加資金が確保されるまでエラーバジェットは定期的に使用される。
-1. 一時的に、最高優先度は重要なビジネス目標を達成することであり、GitLab.comの信頼性は直接的に影響を受けない。グループはこの他の優先事項に集中している間、エラーバジェットを定期的に使用する可能性が高い。
+1. エラーバジェットを改善する作業の範囲が明確で、十分に計画され、資金も確保されています。完了には 1 回のリリース月を超える期間が必要であり、作業を進める間はエラーバジェットを定期的に消費する見込みです。
+1. エラーバジェットを改善する作業の範囲が明確で、十分に計画されていますが、現時点では資金が確保されていません。ステークホルダーは資金確保を進めており、追加資金を確保するまではエラーバジェットを定期的に消費する見込みです。
+1. 一時的に、重要なビジネス目標の達成が最優先となっており、GitLab.com の信頼性には直接影響しません。グループがこの別の優先事項に注力する間は、エラーバジェットを定期的に消費する可能性が高いです。
 
-**例外をリクエストするための指示**
+**例外を申請する手順**
 
-例外をリクエストするには、MRを開き、上記のテーブルにステージグループを追加します。説明では、次の詳細を提供します:
+例外を申請するには、MR を作成し、上記のテーブルにステージグループを追加してください。説明には、次の詳細を記載してください。
 
-1. バジェット支出の原因である問題の明確な説明
-1. 作業がスコープアウトされていることを示す関連リソース
-1. 例外が再検討されなければならない目標日
+1. バジェット消費の原因となる問題の明確な説明
+1. 作業の範囲が明確になっていることを示す関連資料
+1. 例外を再検討しなければならない目標日
 
 **追加のガイダンス**
 
-1. EpicとIssueを使用して実行する作業を文書化する
-1. 作業が明確にスコープアウトされていることを確認するために、EpicとIssueに詳細な説明を追加する。
-1. 作業の完了にどれくらいの時間がかかるかが透明になるように、Epicに開始日と期日を追加する。
-1. 作業がいつ計画されるかが透明になるように、Issueにマイルストーンを追加する。
+1. エピックと Issue を使って、実施する作業を文書化してください
+1. 作業の範囲が明確になるよう、エピックと Issue に詳しい説明を追加してください。
+1. 作業の完了までの所要期間が明らかになるよう、エピックに開始日と期日を追加してください。
+1. 作業をいつ計画するかが明らかになるよう、Issue にマイルストーンを追加してください。
 
-次の質問に対する回答を提供します:
+次の質問に回答してください。
 
-1. チームのバジェットのどの部分がこの例外によるものですか？この例外でカバーされている問題のあるエンドポイントを削除した場合、エラーバジェットは緑になりますか？
-1. チームのエラーバジェット支出の主な貢献者は何ですか？それは応答時間ですか？
-1. 参照されているエピックのクロージャー時の成功はどのように見えますか？
+1. チームのバジェットのうち、この例外に起因するのはどの部分ですか？この例外の対象となる問題のあるエンドポイントを除くと、エラーバジェットは正常な状態を示す緑色になりますか？
+1. チームのエラーバジェット消費の主な要因は何ですか？応答時間ですか？
+1. 参照するエピックをクローズするとき、どのような状態であれば成功ですか？
 
-承認プロセスを迅速化するために、上記のガイダンスと指示に従います。
+承認プロセスを迅速に進めるため、上記のガイダンスと手順に従ってください。
 
-**承認のためにMRを以下に割り当てる:**
+**承認を受けるため、MR を次の担当者に割り当ててください。**
 
-1. Director of Product以上（影響を受けるステージグループの）
-    - ビジネスニーズが満たされることを確認する責任があり、変更をレポートチェーンの上下に伝達する必要があります。
-1. Senior Manager of Infrastructure以上
-    - GitLab.comが悪影響を受けないことを確認する責任があり、例外をレポートチェーンの上下に伝達する必要があります。
+1. Director of Product 以上（影響を受けるステージグループの）
+    - ビジネスニーズを満たすことに責任を持ち、指揮命令系統の上位と下位に変更を伝える必要があります。
+1. Senior Manager of Infrastructure 以上
+    - GitLab.com に悪影響がないことに責任を持ち、指揮命令系統の上位と下位に例外を伝える必要があります。
 
-### エラーバジェットの改善
+### エラーバジェットの改善 {#error-budget-improvements}
 
-エラーバジェットの改善に関連する作業はIssueに詳述する必要があります。
-これらのIssueには`Error Budget Improvement`ラベルと`group::`ラベルを付けて、レポートで追跡できるようにしてください。
+エラーバジェットの改善に関する作業は、Issue に詳しく記載してください。
+レポートで追跡できるよう、これらの Issue に `Error Budget
+Improvement` と `group::` のラベルを付けてください。
 
-### エラーバジェットDRI
+### エラーバジェットの DRI {#error-budget-dris}
 
-| 役割 | K/PI | 目標 | 現在の追跡ステータス |
+| 役割 | K/PI | 目標 | 現在の追跡状況 |
 | --- | --- | --- | --- |
-| Product Management | [エラーバジェットの支出を維持](https://10az.online.tableau.com/#/site/gitlab/views/Draft-ErrorBudgetDashboard/ErrorBudgetOverviewDashboard) | 28日間で20分（99.95%可用性に相当） | 完了 - Sisenseで |
-| Infrastructure | [エラーバジェット分と可用性目標の設定](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-availability) | 99.95%（28日間で20分のエラーバジェット） | 完了 - Grafanaで |
+| Product Management | [エラーバジェットの消費を管理する](https://10az.online.tableau.com/#/site/gitlab/views/Draft-ErrorBudgetDashboard/ErrorBudgetOverviewDashboard) | 28 日間で 20 分（99.95% の可用性に相当） | 完了 - Sisense で追跡 |
+| Infrastructure | [エラーバジェットの分数と可用性目標を設定する](https://internal.gitlab.com/handbook/company/performance-indicators/product/saas-platforms-section/#gitlabcom-availability-slo) | 99.95%（28 日間で 20 分のエラーバジェット） | 完了 - Grafana で追跡 |
 
-- [エンジニアリング割り当て](/handbook/product/product-processes/#prioritization-framework)があるグループでは、エラーバジェットの支出を維持する責任は、製品管理チームではなく開発チームにあります。
+- [Engineering Allocation](/handbook/product/product-processes/#prioritization-framework)があるグループでは、エラーバジェット消費を管理する責任は、Product Management チームではなく開発チームにあります。
 
-## 現状と将来の意図
+## 現状と今後の方針 {#current-state-and-future-intent}
 
-### 現状
+### 現状 {#current-state}
 
-1. エラーバジェットは各機能カテゴリーに存在し、標準のApdexしきい値とエラー率を組み込んでいます。
-1. エラーバジェットは、GrafanaおよびSisenseダッシュボードを通じてステージグループとステージに対して公開されています。
-1. 貢献要因は、Grafanaダッシュボードで利用可能なリンクを通じて探索可能です。
-1. エラーバジェットは[製品優先順位付けプロセス](/handbook/engineering/workflow/#product-development-timeline)に含まれています。
+1. エラーバジェットは機能カテゴリごとに存在し、標準の Apdex しきい値とエラー率を組み込んでいます。
+1. エラーバジェットは、Grafana と Sisense のダッシュボードを通じてステージグループとステージ向けに公開しています。
+1. Grafana のダッシュボードにあるリンクから、影響要因を調べられます。
+1. エラーバジェットは、[製品の優先順位付けプロセス](/handbook/engineering/workflow/#product-development-timeline)に含まれます。
 
-### ロードマップ
+### ロードマップ {#roadmap}
 
-以下の変更は、エラーバジェットの成熟度を高めることを目的としています。
+以下の変更は、エラーバジェットの成熟度を高めることを目指しています。
 
-#### 1. エラーバジェット計算の精度を向上（Apdex部分）
+#### 1. エラーバジェット計算の精度を高める（Apdex 部分） {#1-increase-precision-of-error-budget-calculations-apdex-portion}
 
 **改善**
 
-- ***キャンセル*** エラーバジェットに最初に使用されたSLO目標は、インフラ監視に使用されるアラートと結合されています。[ステージグループごとに目標を設定するためにSisenseを使用することを提案しました](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1236)が、このアプローチは支持されませんでした。インフラ監視とエラーバジェットに別々の目標を使用する方法を見つけましたが、目標を同じに保ち、エラーバジェットのApdex部分のデフォルトのレイテンシしきい値を調整するという決定が下されました（次の項目を参照）。
-- ***完了*** SLI計算はすべてのエンドポイントに適切ではなかったリクエスト持続時間しきい値を使用していました。[しきい値は9月21日に5秒に増加](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1243)され、エラーバジェットに完全な影響が表示されるには28日かかります。
-- **完了** ステージグループは、SLIリクエスト持続時間しきい値の構成可能性を拡張することにより、エンドポイントごとに独自のSLIを設定できるようになります。[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/525)。
-- 現在`not_owned`のエンドポイントは、正しい機能カテゴリーに帰属されます。これは以下によって対処されます
-  - **完了** [Sidekiqの呼び出し元情報を使用](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1200)、および
-  - [graphQLクエリから機能への相関](https://gitlab.com/gitlab-org/gitlab/-/issues/328535)を持つこと。
-- [システム全体の停止のエラーバジェットへの影響をより明確にする必要があります](https://gitlab.com/gitlab-com/Product/-/issues/2884)。
-- エラーバジェットとサービス可用性の両方にレポートするPM向けのガイダンスを提供します（RunnerやPagesなど）。
+- ***中止*** エラーバジェットに当初使用していた SLO の目標は、Infrastructure の監視に使うアラートと結びついています。[Sisense を使ってステージグループごとに目標を設定する方法を提案しました](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1236)が、支持されませんでした。Infrastructure の監視とエラーバジェットで別の目標を使う方法を見つけましたが、目標は同じに保ち、エラーバジェットの Apdex 部分のデフォルトのレイテンシしきい値を調整することに決まりました（次の項目を参照）。
+- ***完了*** SLI の計算には、すべてのエンドポイントに適しているわけではないリクエスト所要時間のしきい値を使用していました。9 月 21 日に[しきい値を 5 秒に引き上げました](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1243)。エラーバジェットに効果が完全に表れるまでには 28 日間かかります。
+- **完了** 次に、SLI のリクエスト所要時間のしきい値の設定機能を拡張し、ステージグループがエンドポイントごとに独自の SLI を設定できるようにします。[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/525)。
+- 現在 `not_owned` となっているエンドポイントを、正しい機能カテゴリに帰属させます。次の方法で対応します
+  - **完了** [Sidekiq の呼び出し元情報の使用](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1200)、および
+  - [graphQL クエリと機能の相関付け](https://gitlab.com/gitlab-org/gitlab/-/issues/328535)。
+- [システム全体の停止がエラーバジェットに与える影響を、より明確にする必要があります](https://gitlab.com/gitlab-com/Product/-/issues/2884)。
+- エラーバジェットとサービス可用性の両方を報告する PM 向けに、ガイダンスを提供します（Runner や Pages など）。
 
-**製品開発活動**
+**製品開発の活動**
 
-製品開発チームは以下を奨励されます:
+製品開発チームには、次の活動を推奨します。
 
-- [優先順位付けガイドライン](/handbook/engineering/development/principles/#prioritizing-technical-decisions)に従って、[戦略的優先順位コード](/handbook/engineering/workflow/strategic-priority-codes/)、[Infradev](/handbook/engineering/workflow/#availability-and-performance-refinement)、[是正措置](/handbook/engineering/infrastructure-platforms/incident-review/)、[セキュリティ](/handbook/security/product-security/vulnerability-management/#vulnerability-management-overview)、および[エンジニアリング割り当て](/handbook/product/product-processes/#prioritization-framework)のIssueに取り組み続けます
-- エンドポイントのSLOを提案する
-- [カスタムターゲット持続時間を使用する新しいApdex計算方法へのオプトイン](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1451)
-- エラーバジェットの将来の改善のための追加のフィードバックを提供する
+- [優先順位付けのガイドライン](/handbook/engineering/development/principles/#prioritizing-technical-decisions)に従い、[戦略的優先順位コード](/handbook/engineering/workflow/strategic-priority-codes/)、[Infradev](/handbook/engineering/workflow/#performance-refinement)、[是正措置](/handbook/engineering/infrastructure-platforms/incident-review/)、[セキュリティ](/handbook/security/product-security/vulnerability-management/)、[Engineering Allocation](/handbook/product/product-processes/#prioritization-framework)の Issue に引き続き取り組む
+- エンドポイントの SLO を提案する
+- [カスタムの目標時間を使う新しい Apdex 計算方法にオプトインする](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1451)
+- 今後のエラーバジェットの改善に向け、追加のフィードバックを提供する
 
-#### 2. エラーバジェットへの可視性を増やす（エラー部分）
+#### 2. エラーバジェットの可視性を高める（エラー部分） {#2-increase-visibility-into-error-budgets-error-portion}
 
-- ステージグループにはエラーカウント情報が提供されます。これは[Sentryでエラー情報を探索可能にすることで](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/396)、さらに詳細を提供できます。
+- ステージグループには、エラー数の情報を提供します。[Sentry でエラー情報を調べられるようにする](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/396)ことで、さらに詳細な情報を補えます。
 
-#### 3. エラーバジェットのスコープを調整する
+#### 3. エラーバジェットの範囲を調整する {#3-tune-the-scope-of-error-budgets}
 
-- P1/S1インシデントをエラーバジェット計算に組み込むことを検討します。
+- P1/S1 インシデントをエラーバジェットの計算に含めることを検討します。
 
-## 追加情報
+## 詳細情報 {#more-information}
 
-- [エラーバジェットAMA](https://docs.google.com/presentation/d/1yYnLlTN8KOYNHww91nJgnbFK7l2xf3Cy1mRvUAxHa08/edit)
-- [ステージレベルエラーバジェットダッシュボードを理解する](https://docs.gitlab.com/ee/development/stage_group_observability/#error-budget)
-- [定期的なSlack更新の設定](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/error-budget-weekly.md)
+- [エラーバジェット AMA](https://docs.google.com/presentation/d/1yYnLlTN8KOYNHww91nJgnbFK7l2xf3Cy1mRvUAxHa08/edit)
+- [ステージレベルのエラーバジェットダッシュボードを理解する](https://docs.gitlab.com/ee/development/stage_group_observability/#error-budget)
+- [定期的な Slack 更新を設定する](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/error-budget-weekly.md)

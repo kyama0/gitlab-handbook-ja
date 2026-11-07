@@ -5,22 +5,22 @@ twitter_image: /images/tweets/handbook-marketing.png
 twitter_site: '@gitlab'
 twitter_creator: '@gitlab'
 upstream_path: /handbook/marketing/demand-generation/campaigns/content-in-campaigns/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T01:01:08+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-11-05T12:09:27-06:00"
 ---
 
 ## 概要 {#overview}
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-このページでは、社内で作成されたコンテンツ、アナリストリレーションのコンテンツ、ダウンロード可能な競合コンテンツなど、キャンペーンでコンテンツが活用される方法を文書化しています。
+このページでは、社内で作成されたコンテンツ、Analyst Relations のコンテンツ、ダウンロード可能な競合コンテンツなど、キャンペーンでコンテンツが活用される方法を文書化しています。
 
-技術系のオーディエンスを最適にエンゲージするため、私たちはゲート付きランディングページの代わりに、Pathfactory トラックを活用する **ゲートなしコンテンツジャーニー** を追求しています。これにより、視聴者はコンテンツ全体を見るためにサインアップする前にプレビューできるようになります。フォームがいつどのように表示されるかは柔軟に設定でき、実証された結果で最高のエクスペリエンスを提供するためにテストします。このプロセスにより、新しいコンテンツの立ち上げもより効率的になり、キャンペーンでコンテンツを活用する方法に時間を集中できます。
+技術系のオーディエンスを最適にエンゲージするため、私たちはゲート付きランディングページの代わりに、Pathfactory トラックを活用する**ゲートなしコンテンツジャーニー**を追求しています。これにより、視聴者はコンテンツ全体を見るためにサインアップする前にプレビューできるようになります。フォームがいつどのように表示されるかは柔軟に設定でき、実証された結果で最高のエクスペリエンスを提供するためにテストします。このプロセスにより、新しいコンテンツの立ち上げもより効率的になり、キャンペーンでコンテンツを活用する方法に時間を集中できます。
 
-以下の各セクションのエピックコードは、新しいコンテンツを立ち上げるためのアクション項目のリストを「チェックオフ」するために必要な Issue を概説しています。*このページはキャンペーンチームのハンドブックページ内に存在しますが、マーケティングのすべてのチームが貢献することを意図しています。更新が必要な場合は、MR を提出して `@aoetama` に割り当ててください。*
+以下の各セクションのエピックコードは、新しいコンテンツを立ち上げるためのアクション項目のリストを「チェックオフ」するために必要な Issue を概説しています。*このページは Campaigns Team のハンドブックページ内に存在しますが、マーケティングのすべてのチームが貢献することを意図しています。更新が必要な場合は、MR を提出して `@aoetama` に割り当ててください。*
 
 - ゲートなしコンテンツジャーニー（Pathfactory）セットアッププロセスへジャンプ
 - ゲート付きコンテンツ（ランディングページ）セットアッププロセスへジャンプ - *段階的に廃止中*
@@ -29,9 +29,9 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-- **マーケティングキャンペーンでの利用のためのコンテンツ:** 私たちはマーケティングチャネル（ウェブサイト、メールナーチャー、有償デジタル、オーガニックソーシャルなど）でコンテンツを活用します
+- **マーケティングキャンペーンで利用するコンテンツ:** 私たちはマーケティングチャネル（ウェブサイト、メールナーチャー、有償デジタル、オーガニックソーシャルなど）でコンテンツを活用します
   - [GitLab 内製コンテンツ](/handbook/marketing/demand-generation/campaigns/content-in-campaigns#internal-content): 私たちが社内でコンテンツを作成・開発したもの
-  - [外部コンテンツ（例: アナリストリレーション）](/handbook/marketing/demand-generation/campaigns/content-in-campaigns#external-content): 外部ベンダー（アナリストやパブリッシャーなど）から使用権を購入したか、パートナーから受け取ったコンテンツ
+  - [外部コンテンツ（例: Analyst Relations）](/handbook/marketing/demand-generation/campaigns/content-in-campaigns#external-content): 外部ベンダー（アナリストやパブリッシャーなど）から使用権を購入したか、パートナーから受け取ったコンテンツ
   - [オンデマンドウェブキャスト](/handbook/marketing/virtual-events/webcasts/)
 - **[コンテンツシンジケーション](/handbook/marketing/marketing-operations/campaigns-and-programs/#content-syndication)** （Digital Marketing 配下）: サードパーティベンダーを通じてコンテンツをプロモートしましたが、自社サイトに人を誘導するわけではありません。これらのケースでは、彼らのオーディエンスがダウンロードできるようにリソースを提供し、アップロードされるリードを受け取ることがよくあります。
 
@@ -48,25 +48,25 @@ https://gitlab.lookbookhq.com/authoring/content-library/content
 - トピック
 - コンテンツタイプ
 - ファネルステージ
-- GTM モーション（Pathfactory 内のビジネスユニット）
+- GTM Motion（Pathfactory 内のビジネスユニット）
 - 言語
 
-**何が機能するかを見るためのレポートを表示**
+**成果を上げているコンテンツをレポートで確認する**
 
 - **分析する主要指標: エンゲージメント時間**
   - *「なぜ総閲覧数ではないのか？」* エンゲージメント時間は、コンテンツの効果性を示すより良い指標です。閲覧数は自己実現的予言になりがちで、閲覧数が多いほど使用され、他のコンテンツと比較してさらに上昇し続けるからです。
 
-## 社内作成コンテンツ（例: eBook、ガイド）{#internal-content}
+## 社内作成コンテンツ（例: eBook、ガイド） {#internal-content}
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-以下のプロセスは、すべての新しいコンテンツ（eBook、ガイド、ホワイトペーパーなど）に使用するべきです。エピックと関連 Issue の作成は、コンテンツの準備ができたときに、Pathfactory に投入するチーム（MOps）とアクティベートするチーム（Campaigns、Digital、ABM）が即座にアクションを取れるようにする **キャンペーンマネージャー** の責任です。
+以下のプロセスは、すべての新しいコンテンツ（eBook、ガイド、ホワイトペーパーなど）に使用するべきです。エピックと関連 Issue の作成は、コンテンツの準備ができたときに、Pathfactory に投入するチーム（MOps）とアクティベートするチーム（Campaigns、Digital、ABM）が即座にアクションを取れるようにする **Campaign Manager** の責任です。
 
 ### エピックコードと Issue - 社内 GitLab コンテンツ {#epic-issues-internal-content}
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-#### このプロセスのビデオ概要を見る
+#### このプロセスのビデオ概要を見る {#watch-this-video-overview-of-the-process}
 
 [このプロセスのビデオ概要を見る >>](https://youtu.be/RbQ8Hr6DuQo)
 
@@ -75,7 +75,7 @@ https://gitlab.lookbookhq.com/authoring/content-library/content
 1. **社内作成コンテンツのエピック:** 統合キャンペーンに整合する `Campaign Manager` がエピックを作成し（以下のコードを使用）、キャンペーンエピックに関連付けます
 1. **関連 Issue:** 統合キャンペーンに整合する `Campaign Manager` がエピックコードで指定された Issue を作成し、コンテンツエピックに関連付けます
 
-:calendar: タイムラインを開発する際のガイドとして、**[ワークバックタイムライン計算機](https://docs.google.com/spreadsheets/d/1RvYLEUJvh9QZJZX1uXiKJPcOOSGd7dEeNneqyA2bt3A/edit#gid=969067029)*** をご覧ください
+:calendar: タイムラインを作成する際のガイドとして、 **[ワークバックタイムライン計算機](https://docs.google.com/spreadsheets/d/1RvYLEUJvh9QZJZX1uXiKJPcOOSGd7dEeNneqyA2bt3A/edit#gid=969067029)* ご覧ください
 
 ```markdown
 <!-- NAME EPIC: [type] <Name of Asset> (ex. [eBook] A beginner's guide to GitOps) -->
@@ -154,6 +154,7 @@ https://gitlab.lookbookhq.com/authoring/content-library/content
 
 <details>
 <summary>Expand below for quick links to optional activation issues to be created and linked to the epic.</summary>
+
 [Use the workback timeline calculator to assign correct due dates based off of launch date](https://docs.google.com/spreadsheets/d/1RvYLEUJvh9QZJZX1uXiKJPcOOSGd7dEeNneqyA2bt3A/edit#gid=969067029)
 
 **Required Issues:**
@@ -176,31 +177,32 @@ https://gitlab.lookbookhq.com/authoring/content-library/content
 - [ ] [Organic Social Issue](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/issues/new?issuable_template=social-gtm-organic) - Social
 - [ ] [Blog](/handbook/marketing/blog/) - Editorial
 - [ ] [PR Announcement Issue](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/issues/new?issuable_template=announcement) - PR
+
 </details>
 
 /label ~"Content Marketing" ~"Gated Content" ~"mktg-demandgen" ~"dg-campaigns" ~"mktg-status::wip"
 ```
 
-## 外部作成コンテンツ（例: アナリストリレーション）{#external-content}
+## 外部作成コンテンツ（例: Analyst Relations） {#external-content}
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-外部コンテンツは、アナリストリレーション、パートナー、その他協業しているベンダーから入手できます。例として、ベンダー比較（Gartner/Forrester など）や業界／市場分析（DevOps Institute など）が挙げられます。
+外部コンテンツは、Analyst Relations、パートナー、その他協業しているベンダーから入手できます。例として、ベンダー比較（Gartner/Forrester など）や業界／市場分析（DevOps Institute など）が挙げられます。
 
-GitLab チームメンバー（例: AR）が潜在的なコンテンツのスポンサーシップを評価する際、コンテンツの活用方法やスポンサーシップの妥当性について GTM モーションチームと協議する責任を負います。これは、[ディシジョンマトリクス Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=decision-tree-matrix) を作成することで行えます（ステップバイステップのプロセスは下記参照）。キャンペーンマネージャーがディシジョンマトリクスのインプットを評価し、スポンサーシップの最終的なゴー／ノーゴー判断を下します。外部コンテンツをスポンサーすることが決定された場合、キャンペーンマネージャーはコンテンツアクティベーションエピックと、関連するすべてのチームの作業をリクエストする関連 Issue を作成します（効率的、包括的、再現可能になるよう以下に概説しています！）。
+GitLab チームメンバー（例: AR）が潜在的なコンテンツのスポンサーシップを評価する際、コンテンツの活用方法やスポンサーシップの妥当性について GTM Motion チームと協議する責任を負います。これは、[ディシジョンマトリクス Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=decision-tree-matrix)を作成することで行えます（ステップバイステップのプロセスは下記参照）。Campaign Manager がディシジョンマトリクスのインプットを評価し、スポンサーシップの最終的なゴー／ノーゴー判断を下します。外部コンテンツをスポンサーすることが決定された場合、Campaign Manager はコンテンツアクティベーションエピックと、関連するすべてのチームの作業をリクエストする関連 Issue を作成します（効率的、包括的、再現可能になるよう以下に概説しています！）。
 
-すべての外部コンテンツは、`少なくとも 30 営業日のローンチ日までの時間` を持って、購入の前に計画されるべきです。これにより、既存および将来の統合キャンペーンと GTM モーションへのアクティベーションを計画する時間が確保されます。
+すべての外部コンテンツは、`ローンチ日まで少なくとも 30 営業日`を確保して、購入前に計画してください。これにより、既存および将来の統合キャンペーンと GTM Motion へのアクティベーションを計画する時間が確保されます。
 
-### ディシジョンマトリクス
+### ディシジョンマトリクス {#the-decision-matrix}
 
 ディシジョンマトリクスの目的は、新しいアナリストレポートが GitLab の市場でのポジショニングを固める収益性のある投資となるかについて、クロスファンクショナルなフィードバックを集めることです。また、それが整合するキャンペーンとペルソナ、およびアクティベートされるチャネルを概説します。
 
-#### ステップバイステップのディシジョンマトリクスプロセス
+#### ステップバイステップのディシジョンマトリクスプロセス {#step-by-step-decision-matrix-process}
 
-1. **アナリストリレーション** が[ディシジョンマトリクス Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=decision-tree-matrix) を作成し、関連するキャンペーンマネージャーに割り当てます。
-1. **キャンペーンマネージャー** がディシジョンマトリクス Issue で関連するプロダクトマーケティング、SDR イネーブルメント、フィールドイネーブルメントのカウンターパートにタグを付け、合意された SLA 日までにインプットを提出するようコメントします。| `SLA: 1 営業日`
-1. **プロダクトマーケティング、SDR イネーブルメント、フィールドイネーブルメント** が、関連するチャネル、キャンペーン、ペルソナの自分たちの部分を埋めます。インプットのために関連する技術カウンターパートにタグを付けます。| `SLA: 3 営業日`
-1. **キャンペーンマネージャー** がプロモーションのための提案チャネルを埋め、スポンサーシップのゴー／ノーゴー判断を下し、アナリストリレーションにタグを付けます | `SLA: 3 営業日`
+1. **Analyst Relations** が[ディシジョンマトリクス Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=decision-tree-matrix)を作成し、関連する Campaign Manager に割り当てます。
+1. **Campaign Manager** がディシジョンマトリクス Issue で関連する Product Marketing、SDR Enablement、Field Enablement のカウンターパートにタグを付け、合意された SLA 日までにインプットを提出するようコメントします。| `SLA: 1 営業日`
+1. **Product Marketing、SDR Enablement、Field Enablement** が、関連するチャネル、キャンペーン、ペルソナの自分たちの部分を埋めます。インプットのために関連する技術カウンターパートにタグを付けます。| `SLA: 3 営業日`
+1. **Campaign Manager** がプロモーションのための提案チャネルを埋め、スポンサーシップのゴー／ノーゴー判断を下し、Analyst Relations にタグを付けます | `SLA: 3 営業日`
 
 **ディシジョンマトリクス エンドツーエンドの判断タイムライン (SLA): 7 営業日**
 
@@ -208,16 +210,16 @@ GitLab チームメンバー（例: AR）が潜在的なコンテンツのスポ
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-#### このプロセスのビデオ概要を見る
+#### このプロセスのビデオ概要を見る {#watch-this-video-overview-of-the-process-1}
 
 [このプロセスのビデオ概要を見る >>](https://youtu.be/RbQ8Hr6DuQo)
 
 このプロセスについて質問がある場合は、[#marketing-campaigns](https://gitlab.slack.com/archives/CCWUCP4MS) Slack チャンネルで `@aoetama` までご連絡ください。このプロセスは、効率性と全チームのプロジェクト管理プラクティスへの適合のために 2018 年から繰り返し改善されており、必要に応じて継続的に更新される予定です！
 
-1. **外部コンテンツのエピック:** `Campaign Manager` がエピックを作成し（以下のコードを使用）、プライマリ GTM モーションエピックに関連付けます
+1. **外部コンテンツのエピック:** `Campaign Manager` がエピックを作成し（以下のコードを使用）、プライマリ GTM Motion エピックに関連付けます
 1. **関連 Issue:** `Campaign Manager` がエピックコードで指定された Issue を作成し、外部コンテンツエピックに関連付けます
 
-タイムラインを開発する際のガイドとして、ワークバックタイムライン計算機を [こちら](https://docs.google.com/spreadsheets/d/1RvYLEUJvh9QZJZX1uXiKJPcOOSGd7dEeNneqyA2bt3A/edit#gid=969067029) でご覧ください
+タイムラインを開発する際のガイドとして、ワークバックタイムライン計算機を [こちら](https://docs.google.com/spreadsheets/d/1RvYLEUJvh9QZJZX1uXiKJPcOOSGd7dEeNneqyA2bt3A/edit#gid=969067029)でご覧ください
 
 ```markdown
 <!-- NAME EPIC: [type] <Name of Asset> (ex. [Report] Gartner MQ for ARO) -->
@@ -326,7 +328,7 @@ Adjust list as applicable for each report activation. [Use the workback timeline
 
 **ステップバイステップの手順は以下:**
 
-1. Contentful の[リソースページ](https://app.contentful.com/spaces/xz1dnu24egyd/entries/5sF9ZMv4xAffzAKEnQGozh?focusedField=title) エントリに移動
+1. Contentful の[リソースページ](https://app.contentful.com/spaces/xz1dnu24egyd/entries/5sF9ZMv4xAffzAKEnQGozh?focusedField=title)エントリに移動
 1. ページコンテンツの「Browse all resources」セクションをクリック
 1. 一番下までスクロールして、+ Add Content -> Card を選択
 1. ここから、既存のカードを開いて同じフィールドが入力されていることを確認すると役立つかもしれませんが、要点は:
@@ -341,7 +343,7 @@ Adjust list as applicable for each report activation. [Use the workback timeline
 
 そのカードを公開し、最初に表示させたい場合はリストの一番上にドラッグして、そのセクションも公開します！
 
-ページの他の部分を編集したい場合、プロセスは似ています。他のカードの既存のパターンに従ってください！注意すべき唯一のセクションは、Featured リソースです - フィーチャーしたいものはそのリストの最初にあり、画像が必要です。
+ページの他の部分を編集したい場合、プロセスは似ています。他のカードの既存のパターンに従ってください！注意すべき唯一のセクションは、Featured リソースです - 特集したいリソースはそのリストの最初にあり、画像が必要です。
 
 *注: ゲートなしジャーニーの場合、URL はランディングページではなく PF アセット／トラックに誘導します。*
 
@@ -411,15 +413,15 @@ Adjust list as applicable for each report activation. [Use the workback timeline
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-セールスで頻繁に使用されているか、キャンペーンで好成績を上げているアセットの場合、私たちはアセットの権利を延長することがあります。その場合、決定は[期限切れ Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=campaigns-expire-analyst) で示されます。
+セールスで頻繁に使用されているか、キャンペーンで好成績を上げているアセットの場合、私たちはアセットの権利を延長することがあります。その場合、決定は[期限切れ Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=campaigns-expire-analyst)で示されます。
 
-[Pathfactory Content Library ハンドブック](/handbook/marketing/marketing-operations/pathfactory/content-library/#replacing-or-updating-the-verson-of-an-asset-after-initial-upload) に概説された手順に従ってください。
+[Pathfactory Content Library ハンドブック](/handbook/marketing/marketing-operations/pathfactory/content-library/#replacing-or-updating-the-verson-of-an-asset-after-initial-upload)に概説された手順に従ってください。
 
 ## アナリストアセットの期限切れ時の廃止方法 {#retire-analyst-assets}
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-各アナリストアセットについて、キャンペーンマネージャー DRI が[期限切れ Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=campaigns-expire-analyst) を作成し、包括的なエピックに関連付けます（アセットが期限切れになる予定の期日付き）。アセットを期限切れにする決定が下されると、関係するチームはそれぞれの Issue 内のアクション項目をチェックオフします。
+各アナリストアセットについて、Campaign Manager DRI が[期限切れ Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=campaigns-expire-analyst)を作成し、包括的なエピックに関連付けます（アセットが期限切れになる予定の期日付き）。アセットを期限切れにする決定が下されると、関係するチームはそれぞれの Issue 内のアクション項目をチェックオフします。
 
 ### Marketo ランディングページの廃止 {#retire-marketo-page}
 
@@ -443,13 +445,13 @@ Adjust list as applicable for each report activation. [Use the workback timeline
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-[Emails/Nurture ハンドブック](/handbook/marketing/lifecycle-marketing/emails-nurture) に概説されているプロセスに従ってください。
+[Emails/Nurture ハンドブック](/handbook/marketing/lifecycle-marketing/emails-nurture)に概説されているプロセスに従ってください。
 
 ### Pathfactory からの削除 {#remove-pathfactory}
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-[Pathfactory ハンドブック](/handbook/marketing/marketing-operations/pathfactory/content-library/#removing-an-asset-from-the-library) に概説されているプロセスに従ってください。
+[Pathfactory ハンドブック](/handbook/marketing/marketing-operations/pathfactory/content-library/#removing-an-asset-from-the-library)に概説されているプロセスに従ってください。
 
 ### ゲート付きランディングページのための Marketo 自動化とセットアップ {#steps-gated-landing-pages}
 
@@ -474,32 +476,32 @@ Adjust list as applicable for each report activation. [Use the workback timeline
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-- [Marketo Gated Content Template](https://app-ab13.marketo.com/#PG5111A1) をクローンし、命名規則（YYYY_Type_AssetName、例: 2020_report_GarnterVOC_ARO）を使用して新しいプログラムに名前を付ける
+- [Marketo Gated Content Template](https://app-ab13.marketo.com/#PG5111A1)をクローンし、命名規則（YYYY_Type_AssetName、例: 2020_report_GarnterVOC_ARO）を使用して新しいプログラムに名前を付ける
 - SFDC プログラムを作成（Program Summary > `Salesforce campaign sync` > 「not set」をクリックしてドロップダウンから「Create New」を選択）- 自動入力される名前のままにし、エピック URL を説明に追加して「Save」
 - Marketo トークンを更新（Program Summary > 「My Tokens」タブ）
-  - `{{my.bullet1}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) のあるブレットコピー
-  - `{{my.bullet2}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) のあるブレットコピー
-  - `{{my.bullet3}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) のあるブレットコピー
-  - `{{my.bullet4}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) のあるブレットコピー
-  - `{{my.contentDescription}}`    - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) のある 2〜3 文。これはソーシャルでのページプレビューに表示され、Pathfactory の説明に使用されます。
-  - `{{my.contentDownloadURL}}` - 初期登録ページのセットアップでは更新をスキップ（オンデマンドへの切り替え時に更新）。`https://` も email トラッキング部分（`lb_email=`）も含まない Pathfactory リンク
+  - `{{my.bullet1}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)のあるブレットコピー
+  - `{{my.bullet2}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)のあるブレットコピー
+  - `{{my.bullet3}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)のあるブレットコピー
+  - `{{my.bullet4}}` - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)のあるブレットコピー
+  - `{{my.contentDescription}}`    - 承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)のある 2〜3 文。これはソーシャルでのページプレビューに表示され、Pathfactory の説明に使用されます。
+  - `{{my.contentDownloadURL}}` - 初期登録ページのセットアップでは更新をスキップ（オンデマンドへの切り替え時に更新）。`https://` もメールトラッキング部分（`lb_email=`）も含まない Pathfactory リンク
     - 含めるべき正しいリンクの例: `learn.gitlab.com/gartner-voc-aro/gartner-voc-aro` - Marketo テンプレートアセットのコードが URL `https://learn.gitlab.com/gartner-voc-aro/gartner-voc-aro?lb_email={{lead.email address}}&{{my.utm}}` を作成します
     - この URL の両方の部分にカスタム URL スラグが含まれている点に注意。トラッキングパラメータの簡素化のため、すべての Pathfactory リンクに組み込むべきです
   - `{{my.contentEpicURL}}` - 自動化では使用されなくなりましたが、参照に役立ちます
   - `{{my.contentSubtitle}}` - 視聴者に表示するコンテンツサブタイトル（ランディングページ、メールなどを通じて）
-  - `{{my.contentTitle}}`    - 視聴者に表示するコンテンツタイトル（ランディングページ、メール、興味のあるモーメントなどを通じて）、承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) あり
-  - `{{my.contentType}}`    - 視聴者に表示するコンテンツタイプ（ランディングページ、メール、興味のあるモーメントなどを通じて）
+  - `{{my.contentTitle}}`    - 視聴者に表示するコンテンツタイトル（ランディングページ、メール、Interesting Momentsなどを通じて）、承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)あり
+  - `{{my.contentType}}`    - 視聴者に表示するコンテンツタイプ（ランディングページ、メール、Interesting Momentsなどを通じて）
   - `{{my.contentTypeSFDC}}` - 以下のリストから選択（Marketo > SFDC 同期エラーを避けるために重要）: whitepaper、report、video、eBook、general
   - `{{my.emailConfirmationButtonCopy}}`    - `Download` のままにする（ただし必要に応じて更新可能）
   - `{{my.formButtonCopy}}`    - `Download  now` のままにする（ただし必要に応じて更新可能）
   - `{{my.formHeader}}`    - `Free Instant Download:` のままにする（ただし必要に応じて更新可能）
   - `{{my.formSubhead}}`    - フォームサブヘッダー（フォームを短くするため、ゲート付きコンテンツのランディングページでは現在使用されていない）
   - `{{my.heroImage}}` - ランディングページフォームの上に表示する画像（[Marketo のオプションはこちら](https://app-ab13.marketo.com/#FI0A1ZN9784)）
-  - `{{my.introParagraph}}`    - ランディングページとナーチャーメールで使用するイントロ段落、承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) あり
+  - `{{my.introParagraph}}`    - ランディングページとナーチャーメールで使用するイントロ段落、承認された [文字数制限](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)あり
   - `{{my.or}}` - `?` のままにする（ただし、Pathfactory アップロード中にカスタム URL スラグがアセットとトラックの両方に適用されなかった場合は `&` に更新可能）。これが正しく適用されず、URL に複数の `?` 疑問符がある場合、壊れます。[ビデオエクスプレイナーを見る](https://www.youtube.com/watch?v=VHgR33cNeJg)
   - `{{my.socialImage}}`    - URL が共有されたときにソーシャル、Slack などのプレビューに表示される画像。この画像は Design/Social から提供されます。ウェブキャスト固有の画像が提示されない限り、デフォルトのままにしてください。
   - `{{my.utm}}` - 整合するキャンペーン utm と一致する必要があります
-  - `{{my.valueStatement}}` ウェブキャストから視聴者が得るものに関する短いバリューステートメントのトークン。これはフォローアップメールに結びつき、[文字数制限チェッカー](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679) の最大／最小要件を満たす必要があります
+  - `{{my.valueStatement}}` ウェブキャストから視聴者が得るものに関する短いバリューステートメントのトークン。これはフォローアップメールに結びつき、[文字数制限チェッカー](https://docs.google.com/spreadsheets/d/1dKVIZGbbOLoR5BdCqXqCQ40qJlQNif9waTiHc8yWggQ/edit#gid=905304679)の最大／最小要件を満たす必要があります
 
 #### 登録ページとサンキューページの URL を編集 {#steps-gated-registration-page}
 
@@ -533,7 +535,7 @@ Adjust list as applicable for each report activation. [Use the workback timeline
 - フィルター 1 - `Filled Out Form` はすでに適切に設定されているはずです。これは `Form Name` is any、`Web Page` is（あなたのランディングページの名前）になります。
 - フィルター 2 - `Filled Out Form` は `Form Name` is "Form 2074: PF General" に設定すべきです。`Referrer` contains に Pathfactory アセット名スラグを入力します。例: `guide-to-devops`。
 - フィルター 3 - `Filled out Form` は `Form Name` is "Pathfactory Webhook" に設定すべきです。`Referrer` contains に Pathfactory アセット名スラグを入力します。例: `guide-to-devops`。`Date of Activity` はすでに過去 1 時間に設定されているはずです。
-- フィルター 4 - `Pathfactory Engagement Time` greater than 60 はデフォルトとして設定されています。60 は eBook とホワイトペーパーの Pathfactory ビュー閾値です。コンテンツがこのカテゴリに該当する場合、更新は不要です。それ以外のコンテンツタイプは、[Pathfactory スコアリング](/handbook/marketing/marketing-operations/pathfactory/#pathfactory-scoring) に概説されている閾値で更新する必要があります。例えば、アナリストレポートを作成している場合、60 の代わりに 120 を入力します。
+- フィルター 4 - `Pathfactory Engagement Time` が 60 より大きい条件 はデフォルトとして設定されています。60 は eBook とホワイトペーパーの Pathfactory ビュー閾値です。コンテンツがこのカテゴリに該当する場合、更新は不要です。それ以外のコンテンツタイプは、[Pathfactory スコアリング](/handbook/marketing/marketing-operations/pathfactory/#pathfactory-scoring)に概説されている閾値で更新する必要があります。例えば、アナリストレポートを作成している場合、60 の代わりに 120 を入力します。
 - 高度なフィルターは `1 or 2 or (3 and 4)` に設定されます
 - フロー: すべて設定済みです！最初のいくつかでは、フローを確認するのは自由です（ただし、すべてトークンを使用しているため、自動的に準備が整っているはずです）
 - スケジュールタブ: 「Activate」をクリック（注: 設定は「各人がフローを 7 日ごとに 1 回実行できる」になっているはずです - これはボットが繰り返し再送信することを避けるためです）
@@ -559,25 +561,26 @@ Adjust list as applicable for each report activation. [Use the workback timeline
 - すべてのコピーの最終 QA
 - フォームを送信
 - フォーム送信がサンキューページに移動することの最終 QA
-- サンキューページのリンクが**メールアドレスのトラッキング**（`&lb_email=[email submitted in form]`）付きで Pathfactory に送ることの最終 QA
+- サンキューページのリンクがメールアドレスのトラッキング（`&lb_email=[email submitted in form]`）を **付けて*- Pathfactory に移動することの最終 QA
 - フォローアップメールを受信したことを確認
 - 確認メールコピーの最終 QA
 - 確認メールリンクがメールアドレスのトラッキング（`&lb_email=[email submitted in form]`）付きで Pathfactory に送ることの最終 QA
 
-## 潜在的なバックアッププロセス {#retire-marketo-page}
+## 潜在的なバックアッププロセス {#potential-backup-process}
 
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
-Pathfactory アクセスが付与されている場合、コンテンツオーナーが完了する。アクセスがない場合は、上記のエピックカテゴリに基づいて Campaigns チームに Issue を作成してください。
+Pathfactory へのアクセス権がある場合は、コンテンツオーナーが実施します。アクセス権がない場合は、上記のエピックカテゴリに基づいて Campaigns チームに Issue を作成してください。
 
-**/downloads/ リポジトリに追加** （2 MB サイズ未満のアセットのみ利用可能で推奨）
+**PDF を Cloudinary にアップロードする**
 
-*このステップの目的は、Pathfactory が停止した場合に自動応答装置を切り替えることを可能にすることです。その時点で、Marketo で PDF バージョンを引き続き利用可能にして、迅速な切り替えを行います。*
+*このステップの目的は、Pathfactory で障害が発生した場合に自動応答を切り替えられるようにすることです。その際も Marketo で PDF 版を利用できるため、迅速に対応できます。*
 
-1. PDF を命名規則 `[asset-type]-short-name-asset` でコンピュータに保存（例: `ebook-agile-delivery-models`）
-1. （インデックスから除外された）[`resource/download`](https://gitlab.com/gitlab-com/www-gitlab-com/tree/master/sites/uncategorized/source/resources) ディレクトリに移動
-1. `www-gitlab-com / sites / marketing / source / resources / +` と書かれているところで、プラスのドロップダウンをクリックして「Upload File」を選択
-1. 上記の命名規則で保存したファイルをアップロード
-1. コミットメッセージとして `Upload [Asset Type]: [Asset Name]` を追加し、「create new merge request」のチェックボックスをオンにし、マージリクエストに名前を付け、「Upload file」をクリック
-1. MR に説明を追加し、作成者チェックリストを完了し、`@aoetama` に割り当てて「Submit Merge Request」をクリック
-1. Marketo プログラムで、`pdfVersion` My Token に MR がマージされたときに利用可能になる上記の命名規則を追加します。（トークンは `https://about.gitlab.com/resources/downloads/add-file-name-here.pdf` のようになります）
+PDF は about.gitlab.com ではホストされなくなりました（`/resources/downloads/` パスは廃止され、404 が返されます）。代わりに Cloudinary でホストしてください。
+
+1. 命名規則 `[asset-type]-short-name-asset` に従って PDF をコンピュータに保存します。例：`ebook-agile-delivery-models`
+1. `about-gitlab-com` クラウドの Cloudinary Media Library にログインします
+1. **Upload** をクリックして PDF を選択します（またはドラッグアンドドロップします）
+1. アップロードしたアセットを開き、URL をコピーします。`https://res.cloudinary.com/about-gitlab-com/image/upload/<version>/<public-id>.pdf` のような形式になります。Cloudinary がファイルに新しい公開 ID を生成することがありますが、これは想定どおりです。
+1. プライベートブラウザーウィンドウで URL を開き、ログインせずに PDF が読み込まれることを確認します
+1. Marketo プログラムの `pdfVersion` My Token に Cloudinary URL を貼り付けます

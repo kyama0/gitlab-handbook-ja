@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: c9949657c5872e30f062664ae031e45198aa8562
-translated_at: "2026-10-23T21:26:13+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T01:18:48+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-23T12:38:15-05:00"
+lastmod: "2026-11-05T22:58:40+01:00"
 ---
 
 ## 概要 {#overview}
@@ -29,27 +29,27 @@ lastmod: "2026-10-23T12:38:15-05:00"
 - **代名詞（任意）。** 共有したい場合は、自分の代名詞を追加します。
 - **発音（任意）。** 名前の発音ガイドを追加します。たとえば、Michael Friedrich の英語での発音は `MY-kul FREED-rick` です。
 
-**Update profile settings** を選択して変更を保存します。その他のプロフィール設定については、[GitLab のプロフィールのドキュメント](https://docs.gitlab.com/user/profile/)を参照してください。
+**プロフィール設定を更新** を選択して変更を保存します。その他のプロフィール設定については、[GitLab のプロフィールのドキュメント](https://docs.gitlab.com/user/profile/)を参照してください。
 
 ### GitLab.com でのユーザー名の変更 {#change-your-username-at-gitlabcom}
 
 各 GitLab アカウントは、数値の **ユーザー ID** で追跡されます。ユーザー名を変更してもユーザー ID は変わらないため、すべての権限、Issue、マージリクエスト、その他のアクティビティは引き続きアカウントに関連付けられます。
 
-GitLab では、プロファイル設定から直接ユーザー名を変更できるようになりました—別のアカウントやユーザー名の入れ替えは必要ありません。希望するユーザー名がすでに取得されており、非アクティブな場合は、[ネームスクワッティングのリクエストは現在サポートされていない](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/5170)ことに注意してください。別のユーザー名を選択する必要があります。
+GitLab では、プロフィール設定から直接ユーザー名を変更できるようになりました—別のアカウントやユーザー名の入れ替えは必要ありません。希望するユーザー名がすでに取得されており、非アクティブな場合は、[ネームスクワッティングのリクエストは現在サポートされていない](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/5170)ことに注意してください。別のユーザー名を選択する必要があります。
 
 **GitLab チームメンバーではありませんか？** すべての前提条件と手順について[ユーザー名の変更に関する GitLab ドキュメント](https://docs.gitlab.com/user/profile/#change-your-username)を参照してください。
 
 #### ユーザー名を変更する手順 {#steps-to-change-your-username}
 
-ユーザー名を変更する前に、自分の名前空間に [Container Registry](https://docs.gitlab.com/user/packages/container_registry/) タグを含むプロジェクトや、[GitLab Pages](https://docs.gitlab.com/user/project/pages/) をホストするプロジェクトがないことを確認してください。いずれかに該当する場合は、先に解決してください。
+ユーザー名を変更する前に、自分の名前空間に [Container Registry](https://docs.gitlab.com/user/packages/container_registry/)タグを含むプロジェクトや、[GitLab Pages](https://docs.gitlab.com/user/project/pages/)をホストするプロジェクトがないことを確認してください。いずれかに該当する場合は、先に解決してください。
 
 ユーザー名を変更するには、次の手順に従います。
 
 1. GitLab.com の右上隅でアバターを選択します。
-1. **Edit profile** を選択します。
-1. 左サイドバーで **Account** を選択します。
-1. **Change username** セクションに新しいユーザー名を入力します。
-1. **Update username** を選択します。
+1. **プロフィールを編集** を選択します。
+1. 左サイドバーで **アカウント** を選択します。
+1. **ユーザー名を変更** セクションに新しいユーザー名を入力します。
+1. **ユーザー名を更新** を選択します。
 
 GitLab は、古い名前空間から新しい名前空間へのリダイレクトを自動的に設定します。既存のリンクやクローンがどうなるかを把握するため、[パス変更後のリダイレクトの動作](https://docs.gitlab.com/user/project/repository/#repository-path-changes)を確認してください。
 
@@ -57,7 +57,7 @@ GitLab は、古い名前空間から新しい名前空間へのリダイレク�
 
 ユーザー名を変更した後、次の場所でも更新してください。
 
-1. Workday - プロファイルアクションの **Additional Data** > **Edit Effective-Dated Custom Object** にある GitLab Username
+1. Workday - プロフィールのアクションの **追加データ** > **有効日付きカスタムオブジェクトを編集** にある GitLab ユーザー名
 1. ユーザー名を手動で記載しているチームのハンドブックページ。ハンドブックプロジェクト内で自分のユーザー名を検索します
 1. 古い名前空間 URL を参照しているブックマークやローカル Git リモート
 
@@ -65,39 +65,39 @@ GitLab は、古い名前空間から新しい名前空間へのリダイレク�
 
 チームメンバーは、それぞれ異なる方法で GitLab のアクティビティを管理しています。自分に最適な方法で通知を設定してください。
 
-1. **To-do リスト:** すべてのチームメンバーには、GitLab アカウント内に [to-do リスト](https://docs.gitlab.com/ee/user/todos.html) が表示されます。これにより、さまざまなアクションアイテムを追跡できます。完了したアイテムは完了としてマークできます。
-1. **メール:** チームメンバーは、[フィルタを使用](#filters) して Gmail アカウントに表示する通知（あれば）を選択できます。
-1. **Slack 通知:** チームメンバーは、[Slack 通知](https://docs.gitlab.com/ee/user/project/integrations/gitlab_slack_application.html) を有効化することを選択できます。GitLab slack は 90 日後に期限切れとなるため、長期的なアクティビティ管理のためのツールではないことに注意してください。
+1. **To-do リスト:** すべてのチームメンバーには、GitLab アカウント内に [to-do リスト](https://docs.gitlab.com/ee/user/todos.html)が表示されます。これにより、さまざまなアクションアイテムを追跡できます。完了したアイテムは完了としてマークできます。
+1. **メール:** チームメンバーは、[フィルタを使用](#filters)して Gmail アカウントに表示する通知（あれば）を選択できます。
+1. **Slack 通知:** チームメンバーは、[Slack 通知](https://docs.gitlab.com/ee/user/project/integrations/gitlab_slack_application.html)を有効化することを選択できます。GitLab slack は 90 日後に期限切れとなるため、長期的なアクティビティ管理のためのツールではないことに注意してください。
 
 ### GitLab チームメンバーのリソース {#gitlab-team-members-resources}
 
-[GitLab チームメンバーリソースプロジェクト](https://gitlab.com/gitlab-com/gitlab-team-member-resources) には、[GitLab チームメンバー](/handbook/company/structure/) 間で共有するための wiki があります。
+[GitLab チームメンバーリソースプロジェクト](https://gitlab.com/gitlab-com/gitlab-team-member-resources)には、[GitLab チームメンバー](/handbook/company/structure/)間で共有するための wiki があります。
 
 これは、子育てなど、人々が知識を共有したいかもしれないがハンドブックには最適でないトピック向けです。
 
 ### GitLab チームメンバーのセットアップ {#gitlab-team-members-setups}
 
-[@tipyn](https://gitlab.com/tipyn) の [ホームオフィス機器と macOS セットアップ](https://gitlab.com/tipyn/tipyn/blob/master/mac-os-setup.md)
+[@tipyn](https://gitlab.com/tipyn)の [ホームオフィス機器と macOS セットアップ](https://gitlab.com/tipyn/tipyn/blob/master/mac-os-setup.md)
 
 ### Gravatar 写真のリンク {#linking-gravatar-photo}
 
-GitLab メールアドレスを GitLab、Slack、[Gravatar](https://gravatar.com/) 上の認識しやすい自分の写真にリンクします。
-すべての GitLab アカウントには、写真を使用することは会社の方針です。アバター、ストック写真、サングラスを着けたものではなく。私たちには多くの GitLab チームメンバーがおり、私たちの脳は人を認識することに慣れているので、それを活用しましょう。
+GitLab メールアドレスを GitLab、Slack、[Gravatar](https://gravatar.com/)上の認識しやすい自分の写真にリンクします。
+GitLab のすべてのアカウントでは、アバターやストック写真、サングラスをかけた写真ではなく、自分の写真を使用することが会社の方針です。GitLab には多くのチームメンバーがおり、私たちの脳は人を見分けることに慣れているので、その能力を活用しましょう。
 
-***注**： gitlab.com メールに関連付けて Gravatar に写真をアップロードした場合、GitLab と Slack のプロファイルに画像を設定する必要はなく、Gravatar の写真が自動的に使用されます。GitLab と Slack のプロファイルにすでに個別の写真をアップロードしている場合、それらを削除するだけで、デフォルトで Gravatar の写真が使用されます。*
+***注**： gitlab.com メールに関連付けて Gravatar に写真をアップロードした場合、GitLab と Slack のプロフィールに画像を設定する必要はなく、Gravatar の写真が自動的に使用されます。GitLab と Slack のプロフィールにすでに個別の写真をアップロードしている場合、それらを削除するだけで、デフォルトで Gravatar の写真が使用されます。*
 
 ### Mermaid の使用 {#using-mermaid}
 
-Mermaid は、GitLab 内でフローチャート、グラフ、図、ガントチャートなどを作成できるツールです！Mermaid の使用方法については [GitLab ドキュメントの例](https://docs.gitlab.com/ee/user/markdown.html#mermaid) をご覧ください。
+Mermaid は、GitLab 内でフローチャート、グラフ、図、ガントチャートなどを作成できるツールです！Mermaid の使用方法については [GitLab ドキュメントの例](https://docs.gitlab.com/ee/user/markdown.html#mermaid)をご覧ください。
 
 Mermaid を扱う際に役立つ追加リソース:
 
 - 作業を確認するための [ライブ Mermaid エディタ](https://mermaid-js.github.io/mermaid-live-editor)！
 - [GitHub の Mermaid 概要](https://mermaid.js.org/#/)
 - チャートに色を追加するための [CSS カラーバンク](https://www.rapidtables.com/web/css/css-color.html)。
-- Mermaid チャートに画像を追加する方法の例は [こちら](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuICBDIC0tPiBHXG4gIEcoXCI8aW1nIHNyYz0naHR0cHM6Ly9pY29uc2NvdXQuY29tL21zLWljb24tMzEweDMxMC5wbmcnOyB3aWR0aD0nMzAnIC8-XCIpIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQiLCJzZWN1cml0eUxldmVsIjoibG9vc2UifX0) で確認できます。
+- Mermaid チャートに画像を追加する方法の例は [こちら](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuICBDIC0tPiBHXG4gIEcoXCI8aW1nIHNyYz0naHR0cHM6Ly9pY29uc2NvdXQuY29tL21zLWljb24tMzEweDMxMC5wbmcnOyB3aWR0aD0nMzAnIC8-XCIpIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQiLCJzZWN1cml0eUxldmVsIjoibG9vc2UifX0)で確認できます。
 - GitLab チームメンバーが作成した Mermaid チャートの例:
-  - [Cassiana Gudgenov](https://gitlab.com/cgudgenov) (People Compliance Partner) による [人材開発プログラムのチャート](/handbook/people-group/talent-development-program/#talent-development-program-chart)
+  - [人材開発プログラムのチャート](/handbook/people-group/talent-development-program/#talent-development-program-chart)、作成者は People Compliance Partner の [Cassiana Gudgenov](https://gitlab.com/cgudgenov)
   - [CEO の年間概要](/handbook/company/cadence/#year)
   - [データインフラストラクチャのシステム図](/handbook/enterprise-data/platform/)
 - Mermaid 図の [高度なレイアウトデモ](mermaid)
@@ -106,7 +106,7 @@ Mermaid を扱う際に役立つ追加リソース:
 
 ### GitLab サーバーを区別するための視覚的な助け {#visual-help-to-differentiate-between-gitlab-servers}
 
-複数の GitLab インスタンスで作業しており、視覚的に区別したい場合は、デフォルトの [Navigation テーマ](https://docs.gitlab.com/ee/user/profile/preferences.html#navigation-theme) を別の色に変更できます。
+複数の GitLab インスタンスで作業しており、視覚的に区別したい場合は、デフォルトの [ナビゲーションテーマ](https://docs.gitlab.com/ee/user/profile/preferences.html#navigation-theme)を別の色に変更できます。
 
 ### GitLab ハンドブックのページ数の計算 {#calculating-the-gitlab-handbook-page-count}
 
@@ -114,12 +114,12 @@ Mermaid を扱う際に役立つ追加リソース:
 
 1. ハンドブックの単語数をカウントします。
 これは、リポジトリのルートディレクトリから `find source/handbook -type f | xargs wc -w` を実行することで行えます。
-1. 単語数を [WordCounter](https://wordcounter.net/words-per-page) に提出してページ数に変換します。
+1. 単語数を [WordCounter](https://wordcounter.net/words-per-page)に提出してページ数に変換します。
 
-### Trainee maintainer Issue の管理 {#trainee-maintainer-issue-upkeep}
+### メンテナー研修の Issue の管理 {#trainee-maintainer-issue-upkeep}
 
-[maintainer トレーニングプロセス](/handbook/engineering/workflow/code-review/) の一部は、レビューしたマージリクエストを追跡し、maintainer トレーニング Issue にレビューに関する評価を書き留めることです。
-maintainer トレーニング Issue の手動管理は時間がかかる場合があります。このタスクを支援するために他の人が作成したツールがあります:
+[メンテナーのトレーニングプロセス](/handbook/engineering/workflow/code-review/)の一部は、レビューしたマージリクエストを追跡し、メンテナーのトレーニング Issue にレビューに関する評価を書き留めることです。
+メンテナーのトレーニング Issue の手動管理は時間がかかる場合があります。このタスクを支援するために他の人が作成したツールがあります:
 
 - <https://gitlab.com/nolith/review-tanuki>
 - <https://gitlab.com/splattael/traintainer>
@@ -127,27 +127,27 @@ maintainer トレーニング Issue の手動管理は時間がかかる場合�
 - <https://gitlab.com/alberts-gitlab/review-tanuki>
 - <https://gitlab.com/gitlab-org/gitlab-dev-cli#maintainer-trainee-helper>
 
-**注意:** これらのツールを使用する際、既存のコメントに maintainer へのメンションを追加しないようにしてください。編集されたコメントでメンションされたユーザーがメールで通知されない [既知の Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/118779) があります。それは TODO のみを生成し、maintainer はそれを使用しない場合があります。
+**注意:** これらのツールを使用する際、既存のコメントにメンテナーへのメンションを追加しないようにしてください。編集されたコメントでメンションされたユーザーがメールで通知されない [既知の Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/118779)があります。それは TODO のみを生成し、メンテナーはそれを使用しない場合があります。
 
 ## ハンドブックのヒント {#handbook-tips}
 
-ハンドブックのアーキテクチャ、構造、およびデスクトップでローカルに編集する方法については、[Handbook Development セクション](https://handbook.gitlab.com/docs/development/) を参照してください。ブラウザでハンドブックを編集する方法については、[ハンドブック編集ページ](/handbook/about/editing-handbook/) を参照してください。
+ハンドブックのアーキテクチャ、構造、およびデスクトップでローカルに編集する方法については、[ハンドブック開発セクション](https://handbook.gitlab.com/docs/development/)を参照してください。ブラウザでハンドブックを編集する方法については、[ハンドブック編集ページ](/handbook/about/editing-handbook/)を参照してください。
 
 ## www-gitlab-com のヒント {#www-gitlab-com-tips}
 
-[https://about.gitlab.com](https://about.gitlab.com) サイトの一部は、[www-gitlab.com](https://gitlab.com/gitlab-com/www-gitlab-com/) リポジトリにあります。マーケティングウェブサイトは、[digital experience team](/handbook/marketing/digital-experience/) によって [GitLab グループ](https://gitlab.com/gitlab-com/marketing/digital-experience) で保守されています。
+[https://about.gitlab.com](https://about.gitlab.com)サイトの一部は、[www-gitlab.com](https://gitlab.com/gitlab-com/www-gitlab-com/)リポジトリにあります。マーケティングウェブサイトは、[digital experience team](/handbook/marketing/digital-experience/)によって [GitLab グループ](https://gitlab.com/gitlab-com/marketing/digital-experience)で保守されています。
 
 `data/*.yml` ファイルは `www-gitlab-com` リポジトリにあり、マーケティングウェブサイトとハンドブックを含む多数のサイトで使用されています。
 
-サイト自体のドキュメントは、[リポジトリの `doc` フォルダ](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/doc) の下のマークダウンドキュメントにあります。サイトでローカル開発を行うには、[doc/development.md](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/doc/development.md) から始めるのがおそらく最善です。
+サイト自体のドキュメントは、[リポジトリの `doc` フォルダ](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/doc)の下のマークダウンドキュメントにあります。サイトでローカル開発を行うには、[doc/development.md](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/doc/development.md)から始めるのがおそらく最善です。
 
 ## 画像と GIF のヒント {#image-and-gif-tips}
 
-このセクションで紹介されているヒントの多くは、画像操作ツールである ImageMagick を必要とします。インストール方法は [ImageMagick セクション](#imagemagick) で説明されています。
+このセクションで紹介されているヒントの多くは、画像操作ツールである ImageMagick を必要とします。インストール方法は [ImageMagick セクション](#imagemagick)で説明されています。
 
 ### ImageMagick {#imagemagick}
 
-[ImageMagick](https://imagemagick.org/) は、画像のリサイズ、ドロップシャドウの追加、GIF の編集などに使用できる `convert` CLI コマンドを提供します。
+[ImageMagick](https://imagemagick.org/)は、画像のリサイズ、ドロップシャドウの追加、GIF の編集などに使用できる `convert` CLI コマンドを提供します。
 
 macOS では、Homebrew で ImageMagick をインストールします:
 
@@ -164,21 +164,21 @@ sudo apt install imagemagick
 
 ### GIF の作成 {#creating-gifs}
 
-これについてはハンドブックに [専用セクション](/handbook/product/product-processes/making-gifs/) があります。
+これについてはハンドブックに [専用セクション](/handbook/product/product-processes/making-gifs/)があります。
 
 ### 画像のリサイズ {#resizing-images}
 
-[ImageMagick](#imagemagick) は、画像のリサイズに使用できる `convert` CLI コマンドを提供します。私たちのブログ画像は 1920x1080 を超える解像度は必要ありません。これにより帯域幅が節約され、ウェブサイトの読み込みが速くなります。
+[ImageMagick](#imagemagick)は、画像のリサイズに使用できる `convert` CLI コマンドを提供します。私たちのブログ画像は 1920x1080 を超える解像度を必要としません。これにより帯域幅が節約され、ウェブサイトの読み込みが速くなります。
 
-この例は、既存の画像を `1920x1080` 解像度に変換し、インラインで置き換えます:
+この例は、既存の画像を `1920x1080` 解像度に変換し、元のファイルに上書きします:
 
 ``` shell
 convert blogimage.jpg -resize 1920x1080 blogimage.jpg
 ```
 
-`-resize` パラメータにパーセンテージ値を使用することもできます。`convert` CLI コマンドは [ドキュメント](https://imagemagick.org/script/convert.php) で説明されているもう少し多くのことができます。
+`-resize` パラメータにパーセンテージ値を使用することもできます。`convert` CLI コマンドは [ドキュメント](https://imagemagick.org/script/convert.php)で説明されているもう少し多くのことができます。
 
-複数の画像を変換する必要がある場合は、`convert` コマンドを `find` と組み合わせます。これにより画像がインラインで置き換えられることに注意してください。
+複数の画像を変換する必要がある場合は、`convert` コマンドを `find` と組み合わせます。これにより元の画像が上書きされることに注意してください。
 
 ```shell
 find . -type f -name '*.jpg' -exec sh -c 'convert {} -resize 1920x1080 {}' \;
@@ -188,7 +188,7 @@ find . -type f -name '*.jpg' -exec sh -c 'convert {} -resize 1920x1080 {}' \;
 
 > ヒント: 最近の macOS バージョンは、Finder で右クリックメニュー `Quick Actions > Convert Image` を提供しており、画像を自動的に JPG に変換します。クイックな UI 変換にはこの方法を使用してください。
 
-[ImageMagick](#imagemagick) は、`HEIC` 画像形式をすべてのウェブサイトで受け入れられる `JPG` などの他の形式に変換できる `mogrify` CLI コマンドを提供します。
+[ImageMagick](#imagemagick)は、`HEIC` 画像形式をすべてのウェブサイトで受け入れられる `JPG` などの他の形式に変換できる `mogrify` CLI コマンドを提供します。
 
 ```shell
 mogrify -format jpg icloudphoto.HEIC
@@ -200,11 +200,11 @@ mogrify -format jpg icloudphoto.HEIC
 find . -type f -iname '*.heic' -exec sh -c 'mogrify -format jpg \"{}\"' \;
 ```
 
-シェルエイリアスの例は [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/701851b5cb36dc3fc2796e2e0f7fa3038fbd611a/.oh-my-zsh/custom/aliases.zsh) にあります。
+シェルエイリアスの例は [@dnsmichi の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/blob/701851b5cb36dc3fc2796e2e0f7fa3038fbd611a/.oh-my-zsh/custom/aliases.zsh)にあります。
 
 ### 画像にドロップシャドウを追加 {#add-drop-shadow-to-images}
 
-[ImageMagick をインストール](#imagemagick) し、`convert` CLI コマンドを使用してドロップシャドウを追加します。`-shadow` パラメータの寸法を調整する必要があるかもしれません。
+[ImageMagick をインストール](#imagemagick)し、`convert` CLI コマンドを使用してドロップシャドウを追加します。`-shadow` パラメータの寸法を調整する必要があるかもしれません。
 
 ```shell
 convert input.png \( +clone -background black -shadow 80x20+0+15 \) +swap -background transparent -layers merge +repage output.png
@@ -254,7 +254,7 @@ Netstat はネットワーク接続、ルーティングテーブル、インタ
 #### 既知のポートの競合 {#known-port-conflicts}
 
 GitLab Development Kit が `./run` コマンドで起動できず、ポート 3000 がすでに使用されているために Unicorn が終了する場合、何のプロセスがそれを使用しているかを確認する必要があります。
-`sudo lsof -iTCP:3000 -sTCP:LISTEN -n -P` を実行すると違反者が表示されるので、このプロセスを終了できます。
+`sudo lsof -iTCP:3000 -sTCP:LISTEN -n -P` を実行すると該当するプロセスが表示されるので、このプロセスを終了できます。
 このコマンドをシェルの `.bash_profile` または同等のものでエイリアスとして設定すると賢明かもしれません。
 
 シェル用の `.bash_profile`（または同等のファイル）に次のような関数を追加することもできます:
@@ -265,7 +265,7 @@ function killport() {
 }
 ```
 
-これは次のように使用できます:
+次のように使用できます。
 
 ``` shell
 > killport 3000
@@ -299,8 +299,8 @@ source ~/.bashrc
 
 **Zsh 用:**
 
-macOS Catalina では、ZSH が [デフォルトシェル](https://support.apple.com/en-us/102360) です。
-[Oh My ZSH!](https://ohmyz.sh/) をインストールすると、git プラグインが自動的に読み込まれ、現在の git ブランチが表示されます。
+macOS Catalina では、ZSH が [デフォルトシェル](https://support.apple.com/en-us/102360)です。
+[Oh My ZSH!](https://ohmyz.sh/)をインストールすると、git プラグインが自動的に読み込まれ、現在の git ブランチが表示されます。
 
 別のオプションは:
 
@@ -313,7 +313,7 @@ parse_git_branch() {
 PROMPT="%n@%d~%f%\$(parse_git_branch) %# "
 ```
 
-変更は次のターミナルに表示されるか、実行することですぐに表示されます。
+変更は次に開くターミナルに反映されます。また、次のコマンドを実行するとすぐに反映されます。
 
 ``` sh
 . ~/.zshrc
@@ -322,7 +322,7 @@ PROMPT="%n@%d~%f%\$(parse_git_branch) %# "
 ### シェルエイリアス {#shell-aliases}
 
 シェルでコマンドエイリアスを使用してワークフローを高速化します。
-[これらのエイリアス](https://gitlab.com/sytses/dotfiles/blob/master/zsh/aliases.zsh) と [Sid の dotfiles プロジェクト](https://gitlab.com/sytses/dotfiles/tree/master) のその他のものを見てください。
+[これらのエイリアス](https://gitlab.com/sytses/dotfiles/blob/master/zsh/aliases.zsh)と [Sid の dotfiles プロジェクト](https://gitlab.com/sytses/dotfiles/tree/master)のその他のものを見てください。
 たとえば、`.bash_profile` または同等のシェル用に次を追加することで、<kbd>s</kbd>を入力するだけで、このウェブサイトの `master` ブランチをチェックアウトし、最新の変更をプルし、Sublime Text でリポジトリを開くことができます:
 
 ``` sh
@@ -336,17 +336,17 @@ alias s='www;subl .;gco master;gl'
 
 編集後は、<kbd>gca</kbd>を入力してすべての変更をコミットし、続いて<kbd>gp</kbd>を入力してリモートブランチにプッシュできます。
 
-[Oh My ZSH!](https://ohmyz.sh/) を使用している場合、以下に示すカスタムエイリアスを追加できます。ファイル名は自由に定義でき、`.zsh` という接尾辞のみが重要です。
+[Oh My ZSH!](https://ohmyz.sh/)を使用している場合、以下に示すカスタムエイリアスを追加できます。ファイル名は自由に定義でき、`.zsh` という接尾辞のみが重要です。
 
 ``` sh
 vim ~/.oh-my-zsh/custom/aliases.zsh
 ```
 
-例は [Michael Friedrich の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/tree/701851b5cb36dc3fc2796e2e0f7fa3038fbd611a/.oh-my-zsh/custom) にあります。
+例は [Michael Friedrich の dotfiles プロジェクト](https://gitlab.com/dnsmichi/dotfiles/-/tree/701851b5cb36dc3fc2796e2e0f7fa3038fbd611a/.oh-my-zsh/custom)にあります。
 
 #### リモートブランチが削除されたローカル Git ブランチを削除する {#delete-local-git-branches-where-remote-branch-was-deleted}
 
-リモートサーバーで削除されたローカル Git ブランチを削除するには、`--prune` プル/フェッチコマンドを他のコマンドと組み合わせる必要があります。`git branch -vv` はローカルブランチのすべての詳細をリストし、続く `grep` はデフォルトのリモート `origin` で gone とマークされたすべてのものをフィルタリングし、結果を `awk` で印刷します。この引数は `git branch -d` に渡され、すべての一致する結果に対して実行されます。`-d` はマージされていないブランチを削除しないことに注意してください。`-D` はより影響が大きいですが、誤ってブランチを削除する可能性があります。
+リモートサーバーで削除されたローカル Git ブランチを削除するには、`--prune` プル/フェッチコマンドを他のコマンドと組み合わせる必要があります。`git branch -vv` はローカルブランチのすべての詳細をリストし、続く `grep` はデフォルトのリモート `origin` で gone とマークされたすべてのものをフィルタリングし、結果を `awk` で出力します。この引数は `git branch -d` に渡され、すべての一致する結果に対して実行されます。`-d` はマージされていないブランチを削除しないことに注意してください。`-D` はより影響が大きいですが、誤ってブランチを削除する可能性があります。
 
 ```sh
 # Delete all remote tracking Git branches where the upstream branch has been deleted
@@ -376,37 +376,37 @@ dotfiles を使用してシステムをカスタマイズし、すべての構�
 注意: これらのアイテムは自分で支払う必要があります。
 
 - [Quiet comfort Bose オーバーイヤーノイズキャンセリングヘッドフォン](https://www.bose.com/p/noise-cancelling-headphones/quietcomfort-acoustic-noise-cancelling-headphones/QC-HEADPHONEARN.html)（乾いた目に触れないように）
-- カスタム成形耳栓（補聴器店で最大 200 ドルかかる場合がありますが、多くの状況で使用可能。[DIY キット](https://www.amazon.com/Radians-CEP001-Custom-Molded-Earplugs/dp/B003A28P4I) もありますが、Sid は試したことがありません）
+- カスタム成形耳栓（補聴器店で最大 200 ドルかかる場合がありますが、多くの状況で使用可能。[DIY キット](https://www.amazon.com/Radians-CEP001-Custom-Molded-Earplugs/dp/B003A28P4I)もありますが、Sid は試したことがありません）
 - メラトニン（妊娠中および授乳中は安全でない可能性があります）
 - 睡眠薬（市販薬で問題ありません）
 
 ### WorkFrom {#workfrom}
 
-[WorkFrom](https://workfrom.co/) は、リモートワークに優しいコーヒーショップやそのような場所のクラウドソースリソースです。
+[WorkFrom](https://workfrom.co/)は、リモートワークに優しいコーヒーショップやそのような場所のクラウドソースリソースです。
 
 ### Wi-Fi の使用 {#wi-fi-usage}
 
-セキュリティのない Wi-Fi を使用する場合、GitLab のために旅行する、または未知のネットワークを頻繁に使用するなら、[個人用 VPN](/handbook/tools-and-tips/personal-vpn/) を検討してください。
+セキュリティのない Wi-Fi を使用する場合、GitLab のために旅行する、または未知のネットワークを頻繁に使用するなら、[個人用 VPN](/handbook/tools-and-tips/personal-vpn/)を検討してください。
 
 地理的位置に基づく制限がある仕事の場合（たとえば、特定のデータ制限と国別アクセスを持つ顧客をサポートする）、個人用 VPN は最善の選択肢ではない可能性があることを覚えておいてください。VPN ベンダーはしばしばトラフィックを他の国経由でルーティングするためです。
 この制限が当てはまる場合は、テザリングを検討してください。
-[テザリング](https://en.wikipedia.org/wiki/Tethering) は、携帯電話をホットスポットとして設定し、Wi-Fi 経由でラップトップを接続することで、安全でない Wi-Fi ネットワークを避けます。
-このトピックについての詳細情報は[こちら](https://www.computerworld.com/article/1536443/how-to-use-a-smartphone-as-a-mobile-hotspot.html) にあり、データプランがそれをサポートしていれば問題なく使用できます。
+[テザリング](https://en.wikipedia.org/wiki/Tethering)は、携帯電話をホットスポットとして設定し、Wi-Fi 経由でラップトップを接続することで、安全でない Wi-Fi ネットワークを避けます。
+このトピックについての詳細情報は[こちら](https://www.computerworld.com/article/1536443/how-to-use-a-smartphone-as-a-mobile-hotspot.html)にあり、データプランがそれをサポートしていれば問題なく使用できます。
 国際旅行の前にダブルチェックしてください。サポートされていても隠れたコストがある場合があります。
 
-[キャプティブポータル](https://en.wikipedia.org/wiki/Captive_portal) のあるネットワークに接続するとき、現代のサイトは HTTPS を使用するため、ほとんどのウェブサイトは読み込まれません。キャプティブポータルはそのプロセスを中断します。
+[キャプティブポータル](https://en.wikipedia.org/wiki/Captive_portal)のあるネットワークに接続するとき、現代のサイトは HTTPS を使用するため、ほとんどのウェブサイトは読み込まれません。キャプティブポータルはそのプロセスを中断します。
 デバイスはこれを補おうとしますが、手動で管理するのは難しい場合があります。
-問題がある場合は、まず [https://captive.apple.com/](https://captive.apple.com/) に接続してみてください。これは意図的に HTTP のみで、キャプティブポータルを読み込みます。
+問題がある場合は、まず [https://captive.apple.com/](https://captive.apple.com/)に接続してみてください。これは意図的に HTTP のみで、キャプティブポータルを読み込みます。
 
 ### FIDO2 / WebAuthn {#fido2--webauthn}
 
-FIDO2 は、暗号的に強力な 2FA（2 要素認証）方法です。これはハードウェアベースで、通常は USB、NFC、または MacBook の Touch ID や iPhone の Face ID などのデバイスに組み込まれて展開されます。標準はオープンで、[FIDO Alliance](https://fidoalliance.org/) によって維持されています。[WebAuthn](https://www.okta.com/sites/default/files/pdf/How_WebAuthn_Works_0.pdf) は、公開鍵暗号化を使用したウェブアプリケーションによる検証をサポートする FIDO2 のコンポーネントです。FIDO2/WebAuthn は推奨される 2FA の方法であり、GitLab のセキュリティ部門から強く推奨されています。2FA のポイントの 1 つは、最初の要因のためにユーザー名とパスワードで認証する一方で、二次要因は認証のために別の通信チャネル（または「アウトオブバンド (OOB)」）を使用するべきであるということです。FIDO2/WebAuthn デバイスは、確かに他のすべての方法よりもこの基準を満たしています。他にも [以下に概説されている](#other-2fa-methods) 2FA 方法があります。
+FIDO2 は、暗号的に強力な 2FA（2 要素認証）方法です。これはハードウェアベースで、通常は USB、NFC、または MacBook の Touch ID や iPhone の Face ID などのデバイスに組み込まれて展開されます。標準はオープンで、[FIDO Alliance](https://fidoalliance.org/)によって維持されています。[WebAuthn](https://www.okta.com/sites/default/files/pdf/How_WebAuthn_Works_0.pdf)は、公開鍵暗号化を使用したウェブアプリケーションによる検証をサポートする FIDO2 のコンポーネントです。FIDO2/WebAuthn は推奨される 2FA の方法であり、GitLab の Security Departmentから強く推奨されています。2FA のポイントの 1 つは、第 1 要素としてユーザー名とパスワードで認証し、第 2 要素の認証には別の通信チャネル（または「アウトオブバンド (OOB)」）を使用するべきであるということです。FIDO2/WebAuthn デバイスは、他のどの方法よりも確実にこの基準を満たしています。他にも [以下に概説されている](#other-2fa-methods) 2FA 方法があります。
 
 #### 仕組み {#how-it-works}
 
-認証プロセス中、ユーザー名とパスワードを入力します。2FA が有効で FIDO2/WebAuthn を使用するシステムでは、ハードウェアトークンが照会されます。FIDO2 デバイスのボタンを押すかセンサーをタップすることで、FIDO2 デバイスは暗号的に強力な方法で認証プロセスを完了します。これは一般に最も安全な形式の 2FA とされています。また、[TOTP](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) アプリケーションによって生成されたコードを手動で入力するよりも便利です。
+認証プロセス中、ユーザー名とパスワードを入力します。2FA が有効で FIDO2/WebAuthn を使用するシステムでは、ハードウェアトークンが照会されます。FIDO2 デバイスのボタンを押すかセンサーをタップすることで、FIDO2 デバイスは暗号的に強力な方法で認証プロセスを完了します。これは一般に最も安全な形式の 2FA とされています。また、[TOTP](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)アプリケーションによって生成されたコードを手動で入力するよりも便利です。
 
-FIDO2/WebAuthn デバイスの登録時、公開/秘密キーペアが生成され、公開キーは認証するサービスに登録され、秘密キーはデバイス上の安全なチップに保存されます。認証時、ユーザー名とパスワードを入力した後、デバイスは秘密キーによってのみ認証できる暗号化されたメッセージで照会されるため、デバイス上のボタンまたはセンサーが押されてクエリが完了し、ユーザーがシステムへのアクセスが許可されます。
+FIDO2/WebAuthn デバイスの登録時、公開/秘密キーペアが生成され、公開キーは認証するサービスに登録され、秘密キーはデバイス上の安全なチップに保存されます。認証時、ユーザー名とパスワードを入力した後、デバイスは秘密キーによってのみ認証できる暗号化されたメッセージで照会されるため、デバイス上のボタンまたはセンサーが押されてクエリが完了し、ユーザーにシステムへのアクセスが許可されます。
 
 #### FIDO2/WebAuthn デバイス {#fido2webauthn-devices}
 
@@ -414,33 +414,33 @@ YubiKey: 最も人気のある FIDO2/WebAuthn デバイスは Yubico の YubiKey
 
 #### 安全ですか？ {#are-they-secure}
 
-YubiKey は、セキュリティ業界全体、サードパーティ監査、およびセキュリティチームによって調査されています。YubiKey は GitLab 内での使用に十分適しており、FIDO2/WebAuthn 互換システムでうまく機能します。
+YubiKey は、セキュリティ業界全体、サードパーティ監査、および Security Team によって調査されています。YubiKey は GitLab 内での使用に十分適しており、FIDO2/WebAuthn 互換システムでうまく機能します。
 
-YubiKey にはいくつかの [セキュリティ上の問題](https://www.yubico.com/support/security-advisories/) があり、通常は迅速に解決されます。Yubico はセキュリティ勧告のための専用ページを持っています。
-まれに、ハードウェアトークンを含むセキュリティ上の問題 が発生し、ファームウェアの更新では問題を緩和できないため、ハードウェアトークンの交換が必要になります。これは [2017 年の Yubico](https://support.yubico.com/hc/en-us/articles/360021803580-Infineon-RSA-Key-Generation-Issue-Customer-Portal) で発生しました。
+YubiKey にはいくつかの [セキュリティ上の問題](https://www.yubico.com/support/security-advisories/)があり、通常は迅速に解決されます。Yubico はセキュリティ勧告のための専用ページを持っています。
+まれに、ハードウェアトークンを含むセキュリティ上の問題が発生し、ファームウェアの更新では問題を緩和できないため、ハードウェアトークンの交換が必要になります。これは [2017 年の Yubico](https://support.yubico.com/hc/en-us/articles/360021803580-Infineon-RSA-Key-Generation-Issue-Customer-Portal)で発生しました。
 
-FIDO2/WebAuthn トークンに影響するほとんどの攻撃モデルは、トークン自体への物理的アクセスを必要とします。つまり、セキュリティ勧告には、トークンまたはトークンが差し込まれたコンピュータへのアクセスを介してのみ悪用できるコーディング上の問題 が関係します。これにより、デバイス自体の安全性がさらに高まります。
+FIDO2/WebAuthn トークンに影響するほとんどの攻撃モデルは、トークン自体への物理的アクセスを必要とします。つまり、セキュリティ勧告には、トークンまたはトークンが差し込まれたコンピュータへのアクセスを介してのみ悪用できるコーディング上の問題が関係します。これにより、デバイス自体の安全性がさらに高まります。
 
 ### 推奨事項 {#recommendations}
 
 GitLab で機能するその他のハードウェアトークンもまずまずですが、いくつか制限があります。チームメンバーへの推奨ソリューションは、Yubico の YubiKey です。
 
-- YubiKey を注文する前にこの [フォーム](https://forms.gle/VZ7Q4RWXfmfB58FJ9) に記入してください。グループ購入サブスクリプションを通じて YubiKey を提供できる可能性があります。
+- YubiKey を注文する前にこの [フォーム](https://forms.gle/VZ7Q4RWXfmfB58FJ9)に記入してください。グループ購入サブスクリプションを通じて YubiKey を提供できる可能性があります。
 - 推奨される YubiKey モデルには、YubiKey 5Ci（iPhone ユーザー向け）と YubiKey 5 NFC（Android ユーザー向け）が含まれます。
 
 GitLab チームメンバーが心に留めておくべきことは、会社のラップトップを持って旅行する場合 - 出張、家族や友人の訪問だが仕事を続けるつもり、または単に地元のコーヒーショップへの旅行 - トークンをクレジットカードと同じレベルの注意で扱うことです。盗まれる可能性のある場所に置いておかないでください。
 
-ハードウェアトークンを失う可能性が心配な場合は、[Touch ID](/handbook/eta/corporate-it/end-user-services/onboarding101/#set-up-okta-verify-on-mac) と、可能であれば [モバイルデバイス](/handbook/eta/corporate-it/end-user-services/onboarding101/onboarding-mobile-devices) を承認された認証トークンとして追加してください。FIDO2/WebAuthn 標準に従うサイトは、複数のトークンをサポートする必要があります。これにより、1 つを紛失または盗まれた場合でも、別の方法でログインできます。現在、YubiKey はユーザーごとに 1 つに制限されており、紛失または破損した場合は、#it_security_help Slack チャンネルで連絡してください。交換のサポートをします。
+ハードウェアトークンを失う可能性が心配な場合は、[Touch ID](/handbook/eta/corporate-it/end-user-services/onboarding101/#set-up-okta-verify-on-mac)と、可能であれば [モバイルデバイス](/handbook/eta/corporate-it/end-user-services/onboarding101/onboarding-mobile-devices)を承認された認証トークンとして追加してください。FIDO2/WebAuthn 標準に従うサイトであれば、複数のトークンをサポートしているはずです。これにより、1 つを紛失または盗まれた場合でも、別の方法でログインできます。現在、YubiKey はユーザーごとに 1 つに制限されており、紛失または破損した場合は、#it_security_help Slack チャンネルで連絡してください。交換のサポートをします。
 
 GitLab チームメンバーには 2FA の使用が必須です。
 
 ## その他の 2FA 方法 {#other-2fa-methods}
 
-[FIDO2/WebAuthn](#fido2--webauthn) に加えて、2FA に使用される追加のプロトコルがあります。「暗号プッシュ」、[TOTP](https://en.wikipedia.org/wiki/Time-based_One-Time_Password)、SMS ベースの認証（テキストメッセージ）があります。それぞれの長所と短所を以下に列挙します。
+[FIDO2/WebAuthn](#fido2--webauthn)に加えて、2FA に使用される追加のプロトコルがあります。「暗号プッシュ」、[TOTP](https://en.wikipedia.org/wiki/Time-based_One-Time_Password)、SMS ベースの認証（テキストメッセージ）があります。それぞれの長所と短所を以下に列挙します。
 
 ### 暗号プッシュ {#cryptographic-push}
 
-これは通常、単に「プッシュテクノロジー」と短縮されます。「プッシュ」と呼ばれるのは、認証プロセス中、ユーザー名とパスワードを入力した後、認証するサービスが、所有しているデバイスへの別の通信チャネルを介して二次認証を自動的に「プッシュ」するためです。これは通常、電話で、そのプロセス専用の電話アプリを介して促進されます。登録プロセス中、暗号的に安全なキーペアが生成され、アプリはそのキーペアを使用して認証先のサービスから来るプッシュを一意に識別します。通常、アプリは直接通知するか、アクセスすると、認証を試みていたかを尋ねるメッセージがポップアップ表示されます。「はい」と答えると認証プロセスが完了します。GitLab チームメンバーは、[Okta Verify](https://help.okta.com/eu/en-us/Content/Topics/end-user/ov-overview.htm) で使用されるため、このプッシュ方法に精通しているかもしれません。
+これは通常、単に「プッシュテクノロジー」と短縮されます。「プッシュ」と呼ばれるのは、認証プロセス中、ユーザー名とパスワードを入力した後、認証するサービスが、所有しているデバイスへの別の通信チャネルを介して二次認証を自動的に「プッシュ」するためです。これは通常、電話で、そのプロセス専用の電話アプリを介して促進されます。登録プロセス中、暗号的に安全なキーペアが生成され、アプリはそのキーペアを使用して認証先のサービスから来るプッシュを一意に識別します。通常、アプリは直接通知するか、アクセスすると、認証を試みていたかを尋ねるメッセージがポップアップ表示されます。「はい」と答えると認証プロセスが完了します。GitLab チームメンバーは、[Okta Verify](https://help.okta.com/eu/en-us/Content/Topics/end-user/ov-overview.htm)で使用されるため、このプッシュ方法に精通しているかもしれません。
 
 #### プッシュの注意事項 {#push-caveats}
 
@@ -448,7 +448,7 @@ GitLab チームメンバーには 2FA の使用が必須です。
 
 ### TOTP {#totp}
 
-Time-based One-Time Password はかなり安全です。この方法は、サービスとエンドユーザーが認証する間の通信を一意に識別するために使用される暗号シードに基づく回転値を含みます。値は通常、30 秒ごとに変わる 6 桁の数字で、ユーザー名とパスワードを正常に入力した後の認証プロセス中、その値を入力するように求められます。GitLab チームメンバーは、TOTP コードを管理するために [1Password](/handbook/security/corporate/systems/1password/) を使用する必要があります。
+時間ベースのワンタイムパスワードはかなり安全です。この方法では、サービスと認証を行うエンドユーザーの間の通信を一意に識別するための暗号シードに基づいて、定期的に変化する値を使用します。値は通常、30 秒ごとに変わる 6 桁の数字で、ユーザー名とパスワードを正常に入力した後の認証プロセス中、その値を入力するように求められます。GitLab チームメンバーは、TOTP コードを管理するために [1Password](/handbook/security/corporate/systems/1password/)を使用する必要があります。
 
 #### TOTP の注意事項 {#totp-caveats}
 
@@ -462,62 +462,62 @@ TOTP の主な問題は、この 2FA プロセス中、エンドユーザーが�
 
 注意事項の数のため、SMS は他に 2FA オプションがない場合にのみ推奨されます。SMS メッセージングの主な問題を以下に示します。
 
-- SMS は TOTP と同じフィッシュスタイルの攻撃の対象です。主な違いは、一部の SMS ベースの認証スキームは 30 秒ではなく 60 秒後にタイムアウトすることで、フィッシュスタイルの攻撃を攻撃者にとってわずかに容易にします。
+- SMS は TOTP と同じフィッシング攻撃の対象です。主な違いは、一部の SMS ベースの認証スキームは 30 秒ではなく 60 秒後にタイムアウトすることで、フィッシング攻撃を攻撃者にとってわずかに容易にします。
 - 携帯電話番号に関する情報は、電話の SIM カードに保存されています。電話への物理的アクセスを持つ攻撃者が SIM を盗む場合、自分の電話からあなたを偽装することができます。もちろん、ハードウェアトークンでも同じことができますが、ハードウェアトークンを使用するにはユーザー名とパスワードがまだ必要です。残念ながら、サービスに電話してパスワードのリセットを依頼することは、しばしば SMS メッセージングを使用して確認されるため、SIM カードを所持する攻撃者は、あなたを装うことができます。再び、電話をクレジットカードや現金と同じように扱う場合、このタイプの攻撃は最小限に抑えられます。
-- 攻撃者は携帯電話会社に連絡し、あなたを偽装し、電話を失ったと主張し、新しい SIM カードを設定する可能性があります。残念ながら、多くの場合、アカウントは「母親の旧姓」、「お気に入りのレストラン」、または家系図ウェブサイトや、夕食の写真を投稿するソーシャルメディアから判断できる単純な質問でセキュリティ質問で保護されます。
-- 「[SIMJacker](https://www.enea.com/info/simjacker/)」として知られる古い攻撃により、攻撃者は悪意のあるペイロードを含む SMS メッセージを電話に送信し、SIM カード自体の直接操作を可能にしました。この攻撃は古い SIM カードでもまだ機能しますが、より現代の SIM はもはや脆弱ではありません。SIMJacker を使用した既知の攻撃のほとんどは、ラテンアメリカと南アメリカ、中東、北アフリカ、東ヨーロッパの一部、東南アジアの一部に関与していました。
+- 攻撃者は携帯電話会社に連絡し、あなたになりすまして、電話を紛失したと主張し、新しい SIM カードを設定する可能性があります。残念ながら、多くの場合、アカウントは「母親の旧姓」、「お気に入りのレストラン」、またはその他の単純な質問といったセキュリティ質問で保護されています。これらの情報はすべて、家系図のウェブサイトや、夕食の写真を投稿しているソーシャルメディアから割り出せる可能性があります。
+- 「[SIMJacker](https://www.enea.com/info/simjacker/)」として知られる古い攻撃により、攻撃者は悪意のあるペイロードを含む SMS メッセージを電話に送信し、SIM カード自体の直接操作を可能にしました。この攻撃は古い SIM カードでもまだ機能しますが、より現代の SIM はもはや脆弱ではありません。SIMJacker を使用した既知の攻撃のほとんどは、ラテンアメリカと南アメリカ、中東、北アフリカ、東ヨーロッパの一部、東南アジアの一部で発生しました。
 
 #### SMS を使用する必要がある場合 {#if-you-must-use-sms}
 
 SMS を 2FA ソリューションとしてのみ提供するサービスがある場合があります。それらの場合、何もないよりはましです。これが事実である場合、わずかに物事を保護するためにいくつかのことを行うことができます。
 
-- 古い電話（5 年以上前）がある場合、SIM を最近のものにアップグレードすることを検討してください。これらは SIMJacker の問題 の影響を受けません。
-- 携帯電話会社に連絡し、PIN などのセキュリティ質問以外にアカウントを保護する追加のセキュリティ対策があるかどうかを尋ねてください。または、母親の旧姓や家族のペットのセキュリティ質問を、もっとユニーク（例えば、`Hdyla86kajDF64asdlui`）に設定することもできます。
-- SIM PIN を設定します。iOS デバイスには、[Apple のこれらの手順](https://support.apple.com/en-us/118228) に従ってください。Android デバイスには、[これらの手順](https://www.digitalcitizen.life/how-change-or-remove-sim-pin-android-2-steps/) から始めますが、特定のモデルに合わない場合は、電話メーカーのウェブサイトに問い合わせてください。
+- 古い電話（5 年以上前）がある場合、SIM を最近のものにアップグレードすることを検討してください。これらは SIMJacker の問題の影響を受けません。
+- 携帯電話会社に連絡し、PIN などのセキュリティ質問以外にアカウントを保護する追加のセキュリティ対策があるかどうかを尋ねてください。または、母親の旧姓や家族のペットについてのセキュリティ質問の回答を、もっとユニークなもの（例えば、`Hdyla86kajDF64asdlui`）に設定することもできます。
+- SIM PIN を設定します。iOS デバイスには、[Apple のこれらの手順](https://support.apple.com/en-us/118228)に従ってください。Android デバイスには、[これらの手順](https://www.digitalcitizen.life/how-change-or-remove-sim-pin-android-2-steps/)から始めますが、特定のモデルに合わない場合は、電話メーカーのウェブサイトに問い合わせてください。
 - SMS のみではなく、より多くの 2FA を提供するようサービスに苦情を申し立ててください！苦情が増えるほど、より安全なオプションを提供する可能性が高くなります。
 
 ### その他の 2FA に関する懸念 {#additional-2fa-concerns}
 
 2FA の目的を覚えておいてください - これは、主要な認証方法が成功した後に呼び出される二次認証方法です。直前に主要な認証を正常に完了した場合のみ、2FA リクエストを承認するべきです。要求されていない 2FA リクエストは、誰かがあなたのパスワードを持っていて、あなたとしてログインしようとしていることを意味します。これが 2FA が存在する理由で、パスワードを含む攻撃からユーザーアカウントを保護するためです。
 
-このような不規則性が発生した場合は、セキュリティチームの注意を喚起してください。詳細については、[セキュリティ意識](/handbook/security/security-assurance/governance/sec-awareness-training/) に関するハンドブックを確認してください
+このような異常に気づいた場合は、Security Team に知らせてください。詳細については、[セキュリティ意識向上](/handbook/security/security-assurance/governance/sec-awareness-training/)に関するハンドブックを確認してください
 
 ## Slack {#slack}
 
-Slack に関する多くの情報があります。これは GitLab のコミュニケーションの重要な部分です。[Slack ハンドブックページ](slack.md) をご覧ください。
+Slack に関する多くの情報があります。これは GitLab のコミュニケーションの重要な部分です。[Slack ハンドブックページ](slack.md)をご覧ください。
 
 ## Zoom {#zoom}
 
 Zoom に関する多くの情報があります。これは GitLab のコミュニケーションの重要な部分です。
-[Zoom ハンドブックページ](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/) をご覧ください。
+[Zoom ハンドブックページ](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/)をご覧ください。
 
-[Google Calendar](/handbook/tools-and-tips/#google-calendar) の招待は Zoom リンクの真実の唯一のソースです。Google Docs アジェンダで Zoom リンクをリンクすることを避けてください。これは、すぐに最新ではなくなる可能性があります。会議の開始頃に Zoom リンクが変更された場合、一時的にそこに置いておくことは大丈夫です。
+[Google Calendar](/handbook/tools-and-tips/#google-calendar)の招待は、Zoom リンクの唯一の正式な参照先です。Google Docs のアジェンダに Zoom リンクを記載するとすぐに古くなる可能性があるため、記載は避けてください。会議の開始前後に Zoom リンクが変更された場合は、一時的にアジェンダに記載しても構いません。
 
 ## Google {#google}
 
-新しい文書または新しいスライドデックを素早く必要としていますか？<https://doc.new> や <https://slide.new> などのショートカットを使用してください。完全なリスト（Google 製品に限定されない）は <https://whats.new/shortcuts/> にあります。
+新しいドキュメントやスライド資料をすぐに作成したいですか？<https://doc.new> や <https://slide.new> などのショートカットを使用してください。完全なリスト（Google 製品に限定されない）は <https://whats.new/shortcuts/> にあります。
 
 ### Google Docs {#google-docs}
 
-#### Google Docs プロのヒント {#google-docs-pro-tips}
+#### Google Docs 活用のヒント {#google-docs-pro-tips}
 
 1. Chrome で Google Docs を素早く作成する: Chrome のアドレスバーに「docs.new」を入力します。
-同様に、Google Sheet には「sheets.new」など…
+同様に、Google Sheets の場合は「sheets.new」などを入力します…
 1. 多くの他の編集者がいる文書内では、文書の上部にあるユーザーの画像またはアイコンをクリックして、そのユーザーのカーソルと文書に何を入力しているかにフォーカスを移動できます。
 これは、誰かがビデオ通話で何かを話しており、文書のどこにいるかわからないときに便利です。
-1. [`followup:actionitems` の検索](https://drive.google.com/drive/search?q=followup:actionitems) であなたに割り当てられたすべてのアクションアイテムを素早く見つけます。
-1. Google Docs の番号付きリストに追加の行を追加するには、`Return` を押して文書内の既存の番号付きリストの下に追加スペースを追加し、それらのスペースをハイライトし、フォーマットバーの番号付きリストアイコンをクリック（または Mac で `Command ⌘ + Shift + 7` を押す）してスペースから番号付きリストを作成します。クイックチュートリアルとして [番号付きリストに行を追加する方法](https://www.youtube.com/watch?v=dgyttEJi-ZQ) のビデオをご覧ください。
-1. `@` 文字を入力して、何もクリックせずに今日の日付、他の文書のタイトル、人への参照などを素早く埋め込みます（メニューがポップアップ表示されます）。詳細は [Smart Canvas](https://cloud.google.com/blog/products/workspace/delivering-new-innovations-in-google-workspace-with-smart-canvas) ブログ記事と [@ メニューでの項目の追加](https://support.google.com/docs/answer/11276813?hl=en) サポート文書を参照してください。
-    - [絵文字ライブ検索](https://support.google.com/docs/answer/3371015) は `@:` を入力するか、`:` 文字を使用してアクセスできます。絵文字を検索するために入力を開始し、Enter を押して挿入します。
-1. ページ分けなしのドキュメントは、印刷する予定のない文書に最適で、[GitLab で推奨される形式](/handbook/communication/#pageless-is-the-gitlab-preferred-format) です。[File > Page setup で切り替えることができます](https://support.google.com/docs/answer/11528737)。
+1. [`followup:actionitems` の検索](https://drive.google.com/drive/search?q=followup:actionitems)であなたに割り当てられたすべてのアクションアイテムを素早く見つけます。
+1. Google Docs の番号付きリストに追加の行を追加するには、`Return` を押して文書内の既存の番号付きリストの下に追加スペースを追加し、それらのスペースをハイライトし、フォーマットバーの番号付きリストアイコンをクリック（または Mac で `Command ⌘ + Shift + 7` を押す）してスペースから番号付きリストを作成します。クイックチュートリアルとして [番号付きリストに行を追加する方法](https://www.youtube.com/watch?v=dgyttEJi-ZQ)のビデオをご覧ください。
+1. `@` 文字を入力して、何もクリックせずに今日の日付、他の文書のタイトル、人への参照などを素早く埋め込みます（メニューがポップアップ表示されます）。詳細は [Smart Canvas](https://cloud.google.com/blog/products/workspace/delivering-new-innovations-in-google-workspace-with-smart-canvas)ブログ記事と [@ メニューでの項目の追加](https://support.google.com/docs/answer/11276813?hl=en)サポート文書を参照してください。
+    - [絵文字ライブ検索](https://support.google.com/docs/answer/3371015)は `@:` を入力するか、`:` 文字を使用してアクセスできます。絵文字を検索するために入力を開始し、Enter を押して挿入します。
+1. ページ分けなしのドキュメントは、印刷する予定のない文書に最適で、[GitLab で推奨される形式](/handbook/communication/#pageless-is-the-gitlab-preferred-format)です。[ファイル > ページ設定で切り替えられます](https://support.google.com/docs/answer/11528737)。
 
-その他の Google Doc のヒントについては、[Live Doc Meetings](/handbook/company/culture/all-remote/live-doc-meetings/) もご覧ください。
+その他の Google Doc のヒントについては、[Live Doc Meetings](/handbook/company/culture/all-remote/live-doc-meetings/)もご覧ください。
 
 ### Google Analytics {#google-analytics}
 
-[Google Analytics (GA)](https://analytics.google.com/) は、データ駆動の意思決定を行うための必須ツールです。
+[Google Analytics (GA)](https://analytics.google.com/)は、データ駆動の意思決定を行うための必須ツールです。
 about.gitlab.com と docs.gitlab.com の両方のウェブサイトからデータを受信します。
-GA に関する詳細情報は、[Google Analytics ハンドブック](/handbook/enterprise-data/marketing-analytics/google-analytics-4/) を読んでください。
+GA に関する詳細情報は、[Google Analytics ハンドブック](/handbook/enterprise-data/marketing-analytics/google-analytics-4/)を読んでください。
 
 たとえば、選択した期間内に特定のページがどれだけ訪問されたかを GA データを見て分析できます。
 ユーザーがどこから来てどこに行くかを理解するために GA リファラルデータを見ることもできます。
@@ -540,50 +540,50 @@ Google Docs やその他の Google サービスでチームメンバーがあな
 
 #### Google で名前の発音を追加する {#add-name-pronunciation-in-google}
 
-名前の発音記号や発音録音を Google プロフィールに追加することを検討してください。
+名前の発音を表す表記や発音の録音を Google プロフィールに追加することを検討してください。
 
-- 任意の Google アカウントページ（つまり Google Docs、Google Sheets）の右上のプロフィールアイコンをクリックします
-- 「Manage your Google account」を選択します
-- 左側のサイドパネルで「Personal info」を選択 >> ページの中央で「Name & pronunciation」に進みます
-- 録音または発音記号を追加します。例: Rochana (Rosh-ah-na)
+- 任意の Google アカウントページ（例： Google Docs、Google Sheets）の右上のプロフィールアイコンをクリックします
+- 「Google アカウントを管理」を選択します
+- 左側のサイドパネルで「個人情報」を選択 >> ページの中央で「名前と発音」に進みます
+- 録音または発音を表す表記を追加します。例: Rochana (Rosh-ah-na)
 
 ### Google Calendar {#google-calendar}
 
 #### 時間を見つける {#finding-a-time}
 
-世界の他の場所のチームメイトとイベントをスケジュールするときは、特に Google Calendar の Find a Time タブを活用してください:
+世界の他の場所のチームメイトとイベントをスケジュールするときは、特に Google Calendar の時間を探すタブを活用してください:
 
 ![Google Calendar - 時間を探す](/images/tools-and-tips/google-calendar-find-a-time.png)
 
-Find a Time は、必要に応じてタイムゾーンを調整して、すべての参加者の新しいまたは既存のイベントの時間を提示します。
-Find a Time を使用するには:
+時間を探すタブでは、必要に応じてタイムゾーンを調整して、すべての参加者の新しいまたは既存のイベントの時間を提示します。
+時間を探すタブを使用するには:
 
 1. 新しいイベントを作成するか、既存のイベントを変更します。
-1. 「Find a Time」タブをクリックします。招待されたゲストは可用性テーブルに表示され、列で表されます。
-    - 誰かの労働時間外（デフォルトでは午前 9 時から午後 5 時）は薄いグレーで表示されます。
-    - オプショナルなゲストは、デフォルトでは可用性テーブルに表示されません。
-    右側の「Guests」エリアで名前をチェックすることで追加できます。
+1. 「時間を探す」タブをクリックします。招待されたゲストは空き時間の表に表示され、列で表されます。
+    - 参加者の勤務時間外（デフォルトでは午前 9 時から午後 5 時）は薄いグレーで表示されます。
+    - 参加任意のゲストは、デフォルトでは空き時間の表に表示されません。
+    右側の「ゲスト」エリアで名前をチェックすることで追加できます。
 
-複数のタイムゾーンと外部関係者にまたがる会議では、[Time & Date Calculator](https://www.timeanddate.com/worldclock/meeting.html) がスケジュールに最適な時間を決定するのに役立ちます。
+複数のタイムゾーンと外部関係者にまたがる会議では、[Time & Date Calculator](https://www.timeanddate.com/worldclock/meeting.html)がスケジュールに最適な時間を決定するのに役立ちます。
 
 #### GitLab の可用性カレンダー {#gitlab-availability-calendar}
 
 GitLab Availability Calendar は、GitLab を効果的にスケーリングするために廃止されました。
-私たちは [休暇を管理するためのツールとヒント](/handbook/people-group/time-off-and-absence/time-off-types/) を作成しました。
+私たちは [休暇を管理するためのツールとヒント](/handbook/people-group/time-off-and-absence/time-off-types/)を作成しました。
 
-#### 労働時間と場所の設定 {#setting-working-hours--location}
+#### 勤務時間と場所の設定 {#setting-working-hours--location}
 
-他のチームメンバーがあなたと会議をスケジュールするのを手助けするために、[Google Calendar で通常の労働時間と場所](https://support.google.com/calendar/answer/7638168) を設定できます。誰かがあなたとミーティングをスケジュールしようとすると、優先時間が表示されます。
+他のチームメンバーがあなたと会議をスケジュールするのを手助けするために、[Google Calendar で通常の勤務時間と場所](https://support.google.com/calendar/answer/7638168)を設定できます。誰かがあなたとミーティングをスケジュールしようとすると、優先時間が表示されます。
 
-労働時間を設定するには、`Settings` -> `General` -> `Working Hours & Location` に進みます。`Working location` はここで、または `All day` 行のピルをクリックして直接カレンダーで設定できます。Settings には便利な `Copy to all` オプションもあります。
+勤務時間を設定するには、`Settings` -> `General` -> `Working Hours & Location` に進みます。`Working location` はここで、または `All day` 行の丸みのあるボタンをクリックして直接カレンダーで設定できます。Settings には便利な `Copy to all` オプションもあります。
 
-すべての GitLab チームメンバーがリモートで働くため、`Home` は曖昧な選択肢です。人々は旅行する可能性があり、タイムゾーンに関するコンテキストを提供しないからです。よろしければ、`Somewhere else`（Settings 内）または `Edit pencil` -> `+` -> `Another location`（ピルから）を選択して、`City, State, Country (GMT-#)` のような形式に設定し、旅行時やタイムゾーン変更時に最新の状態に保つことで、計画とタイムゾーンの理解に役立ちます。
+すべての GitLab チームメンバーがリモートで働くため、`Home` は曖昧な選択肢です。人々は旅行する可能性があり、タイムゾーンに関するコンテキストを提供しないからです。よろしければ、`Somewhere else`（Settings 内）または `Edit pencil` -> `+` -> `Another location`（丸みのあるボタンから）を選択して、`City, State, Country (GMT-#)` のような形式に設定し、旅行時やタイムゾーン変更時に最新の状態に保つことで、計画とタイムゾーンの理解に役立ちます。
 
 #### GitLab Team Meetings カレンダー {#gitlab-team-meetings-calendar}
 
 GitLab Team Meetings カレンダーはすべてのチームメンバーが利用でき、追加後にカレンダーリストに表示されます。GitLab Team Meetings カレンダーをカレンダーリストに追加するには:
 
-1. [カレンダー](https://calendar.google.com/) に移動
+1. [カレンダー](https://calendar.google.com/)に移動
 1. 左サイドバーを下にスクロールして `Other calendars` まで
 1. `+` を押す
 1. `Subscribe to calendar` を選択
@@ -595,9 +595,9 @@ GitLab Team Meetings カレンダーはすべてのチームメンバーが利�
 
 これらのミーティングは GitLab のすべての人に開かれています。
 
-新しいチームミーティングを作成する場合は、GitLab Team Meetings カレンダーに [追加](#adding-an-event-to-the-gitlab-team-meetings-calendar) してください
+新しいチームミーティングを作成する場合は、GitLab Team Meetings カレンダーに [追加](#adding-an-event-to-the-gitlab-team-meetings-calendar)してください
 
-GitLab Team Meetings カレンダーに関する質問、リクエスト、変更については、[Compass](https://app.serval.com/new-request) 経由で People Operations Team にお問い合わせください。
+GitLab Team Meetings カレンダーに関する質問、リクエスト、変更については、[Compass](https://app.serval.com/new-request)経由で People Operations Team にお問い合わせください。
 
 ##### GitLab Team Meetings カレンダーへのイベントの追加 {#adding-an-event-to-the-gitlab-team-meetings-calendar}
 
@@ -607,7 +607,7 @@ GitLab Team Meetings カレンダーに関する質問、リクエスト、変�
 1. ゲストの追加で、招待したい他の人に加えて `GitLab Team Meetings` を追加する（会社全体を招待したい場合は everyone@ を使用）
 
    {{% note %}}
-   これは部屋を追加するように見えますが、これは予想通りです
+   会議室を追加するように表示されますが、想定どおりの動作です
    {{% /note %}}
 
    ![GitLab Team Meetings の追加](/images/tools-and-tips/adding-gitlab-team-meetings.png)
@@ -623,15 +623,24 @@ Gmail のクエリに精通している場合、次のクエリでフィルタ�
 - 件名: "invitation" OR "accepted" OR "rejected" OR "updated" OR "canceled event" OR "declined"
 - 含む単語: *.ics
 
-次に Create filter をクリック:
+次に「フィルタを作成」をクリックします。
 
-- Skip the Inbox
+- 受信トレイをスキップ
 - ラベル（あなたの選択）を適用
+
+#### カレンダーへの招待の追加 {#add-invitations-to-my-calendar}
+
+デフォルトでは、Google Calendar は既知の送信者からの招待のみをカレンダーに追加します。
+ベンダーや顧客との通話など、外部アドレスからの招待はメールでしか届かないため、見落としがちです。
+
+カレンダーに自動的に追加するには、[イベントの設定](https://calendar.google.com/calendar/r/settings)で **カレンダーに招待状を追加（Add invitations to my calendar）** を **すべてのユーザーから（From everyone）** に設定してください。
+
+![Google Calendar - カレンダーへの招待の追加設定](/images/tools-and-tips/google-calendar-add-invitations.png)
 
 #### イベントの変更 {#modifying-events}
 
-「Guests can modify event」をクリックして、人々が他のチャネル経由で連絡することなくカレンダーで時間を更新できるようにしてください。
-これは [Event Settings](https://calendar.google.com/calendar/r/settings) でデフォルトでチェックされるよう設定できます。
+「ゲストによる予定の変更」をクリックして、人々が他のチャネル経由で連絡することなくカレンダーで時間を更新できるようにしてください。
+これは [予定の設定](https://calendar.google.com/calendar/r/settings)でデフォルトでチェックされるよう設定できます。
 
 ![Google Calendar - ゲストがイベントを変更できる設定](/images/tools-and-tips/google-calendar-guestsmodifyevent.png)
 
@@ -643,31 +652,31 @@ Gmail のクエリに精通している場合、次のクエリでフィルタ�
 
 #### 削除されたカレンダーアイテムの復元 {#restore-deleted-calendar-items}
 
-（これは [Google の新しい Calendar](https://support.google.com/calendar/answer/7541906) を使用していると仮定しています）。
+（これは [Google の新しい Calendar](https://support.google.com/calendar/answer/7541906)を使用していると仮定しています）。
 
 Team Meetings カレンダーから誤って何かを削除した場合、次の方法で復元できます:
 
-- [Google Calendar](https://calendar.google.com/calendar/r) に進み、画面の左上の歯車アイコンをクリックします。
-- [Trash](https://calendar.google.com/calendar/r/trash) を選択します。
+- [Google Calendar](https://calendar.google.com/calendar/r)に進み、画面の左上の歯車アイコンをクリックします。
+- [ゴミ箱](https://calendar.google.com/calendar/r/trash)を選択します。
 - 左サイドバーのカレンダー名をクリックして、正しいカレンダーにいることを確認してください。
-- 復元したいアイテムにマウスオーバーし、矢印をクリックして「Restore」します。
+- 復元したいアイテムにマウスオーバーし、矢印をクリックして「復元」します。
 
-#### 拒否されたイベントの表示 {#show-declined-events}
+#### 辞退したイベントの表示 {#show-declined-events}
 
-ミーティングに参加できないが、引き続きアジェンダや出席リストに非同期で貢献する場合は、「Show declined events」設定を有効にすることをお勧めします。他の何らかの理由で拒否されたミーティングをカレンダービューで見ることが役立つ場合は、この設定を使用してください。
+ミーティングに参加できないが、引き続きアジェンダや出席リストに非同期で貢献する場合は、「辞退した予定を表示」設定を有効にすることをお勧めします。他の何らかの理由で辞退したミーティングをカレンダービューで見ることが役立つ場合は、この設定を使用してください。
 
-- [Event settings](https://calendar.google.com/calendar/u/0/r/settings) に移動
-- 「View options」の下の「Show declined events」のボックスをチェック
+- [予定の設定](https://calendar.google.com/calendar/u/0/r/settings)に移動
+- 「表示オプション」の下の「辞退した予定を表示」のボックスをチェック
 
-![Google Calendar - 拒否されたイベントの表示](/images/tools-and-tips/showdeclinedevents.png)
+![Google Calendar - 辞退したイベントの表示](/images/tools-and-tips/showdeclinedevents.png)
 
 #### 共有 {#sharing}
 
-Google Calendar のアクセス権限を「Make available for GitLab - See all event details」に設定することをお勧めします。チームメンバーのカレンダーは、機密データの露出と[ズーム爆撃](https://en.wikipedia.org/wiki/Zoombombing) のリスクのため、アクセス権限を「Make available to public」に設定するべき**ではありません**。
+Google Calendar のアクセス権限を「GitLab で利用可能にする - すべての予定の詳細を表示」に設定することをお勧めします。チームメンバーのカレンダーは、機密データの露出と[Zoom 会議への迷惑行為](https://en.wikipedia.org/wiki/Zoombombing)のリスクのため、アクセス権限を「一般公開して誰でも利用できるようにする」に設定するべき**ではありません**。
 
-以下の予約を「Private」としてマークすることを検討してください:
+以下の予定を「非公開」としてマークすることを検討してください:
 
-- 個人的な予約
+- 個人的な予定
 - GitLab 外部の第三者との機密性の高いミーティング
 - 1 対 1 のパフォーマンスまたは評価ミーティング
 - 組織変更に関するミーティング
@@ -675,15 +684,15 @@ Google Calendar のアクセス権限を「Make available for GitLab - See all e
 GitLab のすべての人とカレンダーを共有することのいくつかの利点と理由があります:
 
 1. 透明性は私たちの価値観の 1 つで、何に取り組んでいるかを共有することは「できるだけ多くのことについてオープンである」というメッセージに沿っています。
-1. タイムゾーンの違いにより、可用性が重なる小さな時間帯があります。
+1. タイムゾーンの違いにより、互いに都合がつく時間帯は限られています。
 他のメンバーが新しいミーティングをスケジュールする必要がある場合、定期的なミーティング（1 対 1 など）の詳細を見ることで、チームメンバーからの確認を待つことなくスケジュールに柔軟性が得られます。
 これは、より効率的であるという私たちの価値観に沿っています。
 
 ![Google Calendar - カレンダーを利用可能にする設定](/images/tools-and-tips/google-calendar-share.png)
 
-Google Calendar をセットアップする際は、必ず[労働時間を設定](https://support.google.com/calendar/answer/7638168?hl=en) してください。
+Google Calendar をセットアップする際は、必ず[勤務時間を設定](https://support.google.com/calendar/answer/7638168?hl=en)してください。
 
-例えばパートナーとカレンダーを共有したい場合は、「Share with specific people」機能を使用し、権限を「See only free/busy (hide details)」に設定することができます:
+例えばパートナーとカレンダーを共有したい場合は、「特定のユーザーと共有」機能を使用し、権限を「時間枠のみを表示（詳細を非表示）」に設定することができます:
 
 ![特定の人と共有](/images/tools-and-tips/share-with-specific-people.png)
 
@@ -700,24 +709,24 @@ Google Calendar で `Settings -> World Clock` に進むことで、必要なだ�
 
 ![Google Calendar - 世界時計](/images/tools-and-tips/world-clock.png)
 
-[TimeAndDate](https://www.timeanddate.com/worldclock/converter.html) のようなサイトを使用して、たとえば UTC との時間変換も可能です。
+[TimeAndDate](https://www.timeanddate.com/worldclock/converter.html)のようなサイトを使用して、たとえば UTC との時間変換も可能です。
 
 #### タイムゾーン {#time-zone}
 
-`Display secondary time zone` をチェックし、`(GMT+00:00) Coordinated Universal Time` (UTC) を選択します。これにより、チームメンバーがミーティングが行われるときの単一のタイムゾーンに標準化することができます。
+`Display secondary time zone` をチェックし、`(GMT+00:00) Coordinated Universal Time` (UTC) を選択します。これにより、チームメンバーがミーティングの開催日時を伝える際に、共通のタイムゾーンを使用できます。
 
 ![Google Calendar - タイムゾーン](/images/tools-and-tips/google-calendar-timezone.png)
 
 ### Google Cloud Platform {#google-cloud-platform}
 
-クラウドリソースのリストとそれらにアクセスする方法については、[Sandbox Cloud ページ](/handbook/company/infrastructure-standards/realms/sandbox) を参照してください。
+クラウドリソースのリストとそれらにアクセスする方法については、[Sandbox Cloud ページ](/handbook/company/infrastructure-standards/realms/sandbox)を参照してください。
 
 ### Google Drive {#google-drive}
 
 #### 最初に重要なメッセージ - Google Drive/Apps を使用しないでください（必要な場合を除く） {#first-an-important-message---dont-use-google-driveapps-unless-you-have-to}
 
 このセクションをこの重要なメッセージで始めるのを欠かすことはできません: **会社で他の人が利用できるよう永続化する必要のある情報のデフォルトの保存場所は、Google Drive と Google Apps ファイルではなく、ウェブサイト/会社のハンドブックにあるべきです！！** これは上層部からのものです。
-これは私たちの運営方法です。Google Docs/Apps はチームメンバーによってのみ見つけることができ、貢献できます。ユーザー、顧客、アドボケイト、将来の従業員、Google ハンドブック検索、または開発者によってはできません。
+これは私たちの運営方法です。Google Docs/Apps はチームメンバーしか検索・編集できず、ユーザー、顧客、アドボケイト、将来の従業員、Google でハンドブックを検索する人、開発者は検索・編集できないからです。
 
 #### Google Drive/Apps に直接リンクしないでください {#do-not-link-directly-to-google-driveapps}
 
@@ -731,9 +740,9 @@ Google Calendar で `Settings -> World Clock` に進むことで、必要なだ�
 そうすることで、他の人がコンテンツを見つけて作業することが難しくなります。
 Google Drive のコンテンツを整理するためのいくつかのガイドライン:
 
-- 最初に部門別（例: strategic marketing）
-- 次にサブジェクト別（例: analysts relations）
-- 次にサブサブジェクト別、必要なだけ深く（例: Gartner -> 2018 ARO MQ）
+- 最初に部門別（例: Strategic Marketing）
+- 次にテーマ別（例: アナリストリレーションズ）
+- 次にサブテーマ別に、必要なだけ深く（例: Gartner -> 2018 ARO MQ）
 
 #### Google Drive の使用 {#using-google-drive}
 
@@ -746,14 +755,14 @@ Google Drive のコンテンツを整理するためのいくつかのガイド�
 1. これで、ホームディレクトリのような Google Drive（My Drive と呼ばれる）に移動します。
 Google Apps を使用して Google ファイルを作成し、保存場所を指定しない場合、それらはこのホームディレクトリに置かれます。
 
-これは独自の作業ファイルを保存するのに最適です。
-すでに述べたように、**これは会社（またはそれ以外）の残りの人が使用することを目的とした共有ファイルの最終的な保管場所であってはなりません**。
+自分の作業ファイルを保存するには最適です。
+すでに述べたように、**これは社内の他の人々（または社外の人々）が使用することを目的とした共有ファイルの最終的な保管場所であってはなりません**。
 
 #### 既存の GitLab Google Drive リポジトリ {#existing-gitlab-google-drive-repositories}
 
 GitLab 共有ファイルの Google Drive リポジトリがいくつかあります（もっとあるかもしれませんが、リストにない場合は追加してください）:
 
-- [UX Research Drive](https://drive.google.com/drive/folders/0AH_zdtW5aioNUk9PVA) - これは [Customer Discovery Meetings](/handbook/product/product-processes/#customer-discovery-meetings) からのすべての発見と、Design、UX Research、Product、Customer Success と共有された顧客からの生の機密資料を保管します。[ユーザーリサーチ](/handbook/upstream-studios/experience-research/) からの抽出された発見は [UXR_Insights リポジトリ](https://gitlab.com/gitlab-org/uxr_insights/) に保管されます。
+- [UX Research Drive](https://drive.google.com/drive/folders/0AH_zdtW5aioNUk9PVA) - これは [Customer Discovery Meetings](/handbook/product/product-processes/#customer-discovery-meetings)からのすべての発見と、Design、UX Research、Product、Customer Success と共有された顧客からの生の機密資料を保管します。[ユーザーリサーチ](/handbook/upstream-studios/experience-research/)からの抽出された発見は [UXR_Insights リポジトリ](https://gitlab.com/gitlab-org/uxr_insights/)に保管されます。
 - [GitLab Marketing Drive](https://drive.google.com/drive/u/0/folders/0Bz6KrzE1R_3helZZQlV3ajFNTzg) - これはマーケティング組織全体からのすべての共有ファイルを保管します。
 ベストプラクティスは、サブ組織がこのスペース内に独自のディレクトリを持つことです（例: [Strategic Marketing](https://drive.google.com/drive/u/0/folders/0Bz6KrzE1R_3hNjJMNUt2LUJGREU)）。
 - [Sales Drive](https://drive.google.com/drive/u/0/folders/0BzQII5CcGHkKSFFJWkx3R1lUdGM) - これはセールス組織からのすべての共有ファイルを保管します。
@@ -764,14 +773,14 @@ GitLab 共有ファイルの Google Drive リポジトリがいくつかあり�
 これらをどう使うのですか？これらの URL を覚える必要はありません。
 これらのリンクを Google Drive My Drive ディレクトリに追加するには、次のようにします:
 
-![Drive にアニメーションを追加](/images/tools-and-tips/add2drive.gif)
+![Drive への追加手順のアニメーション](/images/tools-and-tips/add2drive.gif)
 
 1. ブラウザで GitLab アカウントの Google Drive にログインしていることを確認
 1. 上記から興味のあるリンクを開いて、そのディレクトリに移動
-1. （「Search Drive」フィールドの下の）上部に渡るディレクトリパスを見つける
+1. （「ドライブを検索」フィールドの下の）上部に渡るディレクトリパスを見つける
 1. 自分のドライブに追加したいパス内のディレクトリの名前を見つける（例: Sales）
 1. その横の下矢印をクリック
-1. 結果のポップアップメニューから「Add to My Drive」を選択
+1. 結果のポップアップメニューから「マイドライブに追加」を選択
 1. これで、まずドライブに移動し（<https://drive.google.com>）、次にそのリンクを開いてそのディレクトリに行けるようになります
 
 #### Mac に Google Drive を追加する {#adding-google-drive-to-your-mac}
@@ -785,33 +794,33 @@ Google Drive にアクセスしやすくするために、Mac Finder で通常�
 
 1. ブラウザで GitLab アカウントの Google Drive にログインしていることを確認
 1. Google Drive に進む（<https://drive.google.com>）
-1. 検索フィールドの右側の「Settings」アイコン（歯車）をクリック
-1. 結果のメニューから「Get Drive for desktop」を選択
+1. 検索フィールドの右側の「設定」アイコン（歯車）をクリック
+1. 結果のメニューから「パソコン版ドライブをダウンロード」を選択
 1. 新しいページ/タブが表示され、個人ログインを使用する可能性があります。
-これが起こると、ページに「Download & install Drive for desktop」が表示されません。
+これが起こると、ページに「パソコン版ドライブをダウンロードしてインストール」が表示されません。
 GitLab アカウントに切り替えてください。
 1. ダウンロードしてインストール
 
 ### Google Forms {#google-forms}
 
-内部または外部のアンケートやフォームを作成するときは、これらの [GitLab ブランドフォームテンプレート](https://drive.google.com/open?id=0BxrZ6azkqZ1bVDl1TTZuelFOb1k) を使用してください。
+内部または外部のアンケートやフォームを作成するときは、これらの [GitLab ブランドフォームテンプレート](https://drive.google.com/open?id=0BxrZ6azkqZ1bVDl1TTZuelFOb1k)を使用してください。
 フォームのコピーを作成し、コピーのみを編集してください。テンプレート自体を編集しないでください。
 
-[GitLab でデータプライバシーが意味するもの](/handbook/legal/privacy/#what-data-privacy-means) を確認してください。次のガイドラインを適用して、参加者が情報に基づいた意思決定を行うことを支援してください:
+[GitLab でデータプライバシーが意味するもの](/handbook/legal/privacy/#what-data-privacy-means)を確認してください。次のガイドラインを適用して、参加者が情報に基づいた意思決定を行うことを支援してください:
 
-- *外部フォームの場合*: 収集された個人データは [GitLab プライバシーステートメント](https://about.gitlab.com/privacy/) に従って処理されることを述べてください。
-- *内部フォームの場合*: データを収集する目的を [チームメンバープライバシーポリシー](/handbook/legal/privacy/employee-privacy-policy/) に基づいて述べ、この目的がチームメンバーに明確になるようにしてください。
+- *外部フォームの場合*: 収集された個人データは [GitLab プライバシーステートメント](https://about.gitlab.com/privacy/)に従って処理されることを述べてください。
+- *内部フォームの場合*: データを収集する目的を [チームメンバープライバシーポリシー](/handbook/legal/privacy/employee-privacy-policy/)に基づいて述べ、この目的がチームメンバーに明確になるようにしてください。
 - 個人データのフォームフィールドは、処理を達成するために絶対に必要でない限り、必須にしないでください。収集された不要な個人データは、自発的なフォームフィールドを通じて収集してください。
 - 当初収集された理由のためのみに個人データを処理してください。例: Google Form が旅行者情報を収集した場合、その個人データを使用してマーケティングリストを作成しないでください。
 
 ### Google Mail (Gmail) {#google-mail-gmail}
 
-#### Auto-advance {#auto-advance}
+#### 自動表示 {#auto-advance}
 
-アーカイブ機能を使用すると、通常は概要に戻ります。
-Auto-advance を使用すると、次のメッセージまたは前のメッセージに進むかを選択できます。
-「Auto-advance」は Settings の Advanced セクションから有効にできます。
-これにより、Settings の General セクションに Auto-advance 設定が表示されます。
+アーカイブ機能を使用すると、通常は一覧に戻ります。
+自動表示を使用すると、次のメッセージまたは前のメッセージに進むかを選択できます。
+「自動表示」は「設定」の「詳細」セクションから有効にできます。
+これにより、「設定」の「全般」セクションに自動表示の設定が表示されます。
 通常、前の（古い）メッセージを表示するデフォルト設定が好まれます。
 
 #### メール署名 {#email-signature}
@@ -831,14 +840,14 @@ Auto-advance を使用すると、次のメッセージまたは前のメッセ�
 
 #### ドイツ法人で雇用されている場合のメール署名 {#email-signature-if-employed-by-our-german-entity}
 
-オンボーディング中に、GitLab Gmail を設定し、[次の例をガイドラインとして](/handbook/tools-and-tips/#email-signature) メール署名を設定するよう依頼された可能性があります。ドイツ法人で雇用されている場合、メール署名の最後に [こちら](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/legal-and-compliance/germany/germany-works-council/#email-signature-if-employed-by-our-german-entity) に記載されている会社関連の詳細を追加する必要があります（*GitLab 社内のみアクセス可能*）。
+オンボーディング中に、GitLab Gmail を設定し、[次の例をガイドラインとして](/handbook/tools-and-tips/#email-signature)メール署名を設定するよう依頼された可能性があります。ドイツ法人で雇用されている場合、メール署名の最後に [こちら](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/legal-and-compliance/germany/germany-works-council/#email-signature-if-employed-by-our-german-entity)に記載されている会社関連の詳細を追加する必要があります（*GitLab 社内のみアクセス可能*）。
 
 #### ドイツ法人で雇用されている場合の特定の社外コミュニケーションへの会社詳細の追加 {#add-company-details-to-certain-company-communications-if-employed-by-our-german-entity}
 
-以下にリストされたコミュニケーションフォームには、ドイツ法人 GitLab GmbH に雇用されているチームメンバーが社外に送信し、GitLab のビジネス活動に関連する場合、署名として特定の会社詳細を追加する必要があります:
+以下にリストされたコミュニケーションの形式には、ドイツ法人 GitLab GmbH に雇用されているチームメンバーが社外に送信し、GitLab のビジネス活動に関連する場合、署名として特定の会社詳細を追加する必要があります:
 
 - 注文書
-- 物理メール
+- 郵便
 - ファックス
 - ポストカード
 - メール
@@ -847,9 +856,9 @@ Auto-advance を使用すると、次のメッセージまたは前のメッセ�
 - Zendesk
 - その他の電子コミュニケーション
 
-そのようなコミュニケーションを外部に送信する場合は、関連するアプリケーションの設定を確認し、コミュニケーションの最後に以下の会社詳細を追加してください。疑問がある場合は、詳細を追加してください。何らかの理由でこの情報を追加できない場合は、legal-employment@gitlab.com にアラートしてください。
+そのようなコミュニケーションを外部に送信する場合は、関連するアプリケーションの設定を確認し、コミュニケーションの最後に以下の会社詳細を追加してください。疑問がある場合は、詳細を追加してください。何らかの理由でこの情報を追加できない場合は、legal-employment@gitlab.com に知らせてください。
 
-ドイツ法人で雇用されている場合、オンボーディング中に必要な場所で署名を設定し、特定の会社詳細を含めるよう依頼された可能性があり、依頼されていない場合は、[こちら](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/legal-and-compliance/germany/germany-works-council/#add-company-details-to-certain-company-communications-if-employed-by-our-german-entity) に記載されているように今すぐ行ってください（*GitLab 社内のみアクセス可能*）。
+ドイツ法人で雇用されている場合、オンボーディング中に必要な場所で署名を設定し、特定の会社詳細を含めるよう依頼された可能性があり、依頼されていない場合は、[こちら](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/legal-and-compliance/germany/germany-works-council/#add-company-details-to-certain-company-communications-if-employed-by-our-german-entity)に記載されているように今すぐ行ってください（*GitLab 社内のみアクセス可能*）。
 
 #### フィルタ {#filters}
 
@@ -859,10 +868,10 @@ Auto-advance を使用すると、次のメッセージまたは前のメッセ�
 
 1. `from:(gitlab@mg.gitlab.com) "you+have+been+mentioned+on"` を検索します。
 1. 検索フィールドの右側の下矢印をクリックします。
-1. **Create filter with this search** をクリックします。
-1. **Apply the label:** をチェックし、追加するラベルを選択するか、「Mentioned」のような新しいラベルを作成します。
-1. **Also apply filter to matching conversations** をチェックします。
-1. **Create filter** をクリックします。
+1. **この検索条件でフィルタを作成** をクリックします。
+1. **ラベルを付ける:** をチェックし、追加するラベルを選択するか、「Mentioned」のような新しいラベルを作成します。
+1. **一致するスレッドにもフィルタを適用する** をチェックします。
+1. **フィルタを作成** をクリックします。
 
 ##### レビュアーに割り当てられた時にラベルを適用 {#apply-label-when-assigned-as-reviewer}
 
@@ -870,10 +879,10 @@ Auto-advance を使用すると、次のメッセージまたは前のメッセ�
 
 1. `from:(gitlab@mg.gitlab.com) "(Reviewer) (Firstname Lastname)"` を検索します。
 1. 検索フィールドの右側の下矢印をクリックします。
-1. **Create filter with this search** をクリックします。
-1. **Apply the label:** をチェックし、追加するラベルを選択するか、「Assigned」のような新しいラベルを作成します。
-1. **Also apply filter to matching conversations** をチェックします。
-1. **Create filter** をクリックします。
+1. **この検索条件でフィルタを作成** をクリックします。
+1. **ラベルを付ける:** をチェックし、追加するラベルを選択するか、「Assigned」のような新しいラベルを作成します。
+1. **一致するスレッドにもフィルタを適用する** をチェックします。
+1. **フィルタを作成** をクリックします。
 
 ##### MR がマージされた時にラベルを適用 {#apply-label-when-mr-is-merged}
 
@@ -881,35 +890,35 @@ MR がマージされた GitLab 通知メールにラベルを追加する Gmail
 
 1. `from:(gitlab@mg.gitlab.com) "Merge Request"+"was merged"` を検索します。
 1. 検索フィールドの右側の下矢印をクリックします。
-1. **Create filter with this search** をクリックします。
-1. **Apply the label:** をチェックし、追加するラベルを選択するか、「Merged」のような新しいラベルを作成します。
-1. **Also apply filter to matching conversations** をチェックします。
-1. **Create filter** をクリックします。
+1. **この検索条件でフィルタを作成** をクリックします。
+1. **ラベルを付ける:** をチェックし、追加するラベルを選択するか、「Merged」のような新しいラベルを作成します。
+1. **一致するスレッドにもフィルタを適用する** をチェックします。
+1. **フィルタを作成** をクリックします。
 
 ##### すべての GitLab 生成メールにラベルを適用 {#apply-label-to-all-gitlab-generated-emails}
 
 GitLab Issue とマージリクエストは、設定とあなたの注意がどれだけ求められているかによって、多くのメール通知を生成する可能性があります。
-これらの生成されたメールにラベルを適用し、すぐの受信トレイから移動することが役立つ場合があります。
+これらの生成されたメールにラベルを適用し、普段見る受信トレイから移動することが役立つ場合があります。
 
 1. `from:gitlab@mg.gitlab.com` を検索します。
 1. 検索フィールドの右側の下矢印をクリックします。
-1. **Create filter with this search** をクリックします。
-1. **Skip the Inbox (Archive it)** をチェックします。
-1. **Apply the label:** をチェックし、追加するラベルを選択するか、「GitLab.com」のような新しいラベルを作成します。
-1. **Also apply filter to matching conversations** をチェックします。
-1. **Create filter** をクリックします。
+1. **この検索条件でフィルタを作成** をクリックします。
+1. **受信トレイをスキップ（アーカイブする）** をチェックします。
+1. **ラベルを付ける:** をチェックし、追加するラベルを選択するか、「GitLab.com」のような新しいラベルを作成します。
+1. **一致するスレッドにもフィルタを適用する** をチェックします。
+1. **フィルタを作成** をクリックします。
 
-[生産性向上のヒントの動画](https://www.youtube.com/watch?v=YOgm-vZVqng) で、Gmail フィルタを使用して受信トレイを整理する方法について詳しく学べます。
-ダウンロードした [フィルタエクスポート](https://drive.google.com/file/d/1vm_psZOXjYZ9ulKYmdMqrTk435KcR1DL/view) をインポートするには、Gmail => Settings => Filters and Blocked Addresses => Import filters に進みます。
+[生産性向上のヒントの動画](https://www.youtube.com/watch?v=YOgm-vZVqng)で、Gmail フィルタを使用して受信トレイを整理する方法について詳しく学べます。
+ダウンロードした [フィルタエクスポート](https://drive.google.com/file/d/1vm_psZOXjYZ9ulKYmdMqrTk435KcR1DL/view)をインポートするには、Gmail => 設定 => フィルタとブロック中のアドレス => フィルタをインポート に進みます。
 
 #### キーボードショートカット {#keyboard-shortcuts}
 
-キーボードショートカットは Gmail Settings でオンにしている場合のみ機能します。
+キーボードショートカットは Gmail の設定でオンにしている場合のみ機能します。
 
-下のステップ:
+手順は次のとおりです。
 
-- 「Settings」で「Keyboard shortcuts」セクションまでスクロールダウン
-- キーボードショートカットを「on」に切り替え
+- 「設定」で「キーボードショートカット」セクションまでスクロールダウン
+- キーボードショートカットを「オン」に切り替え
 - 下にスクロールして変更を保存
 
 [使用できるショートカット](https://support.google.com/mail/answer/6594?hl=en&ref_topic=3394150)
@@ -919,20 +928,20 @@ GitLab Issue とマージリクエストは、設定とあなたの注意がど�
 この設定変更で、1 つのビューで受信トレイをリストし、メールをプレビューできます:
 
 - 受信トレイの右上の歯車/設定。
-- Settings オプション。
-- Inbox タブ
-- Reading pane: enable
-- 読み取りペインの位置を選択、Right of Inbox または Below Inbox
+- 設定を選択します。
+- 受信トレイのタブを開きます
+- 閲覧ウィンドウを有効にします
+- 閲覧ウィンドウの位置を、受信トレイの右側または下に設定します
 - 変更を保存
 - 受信トレイをリロード
 
 #### Inbox Zero {#inbox-zero}
 
-Gmail を最大限に活用するために、[Inbox Zero](https://www.youtube.com/watch?v=oLdHnWLbn4A) 戦略を採用することを検討してください。これは Google 従業員が Gmail を使用する方法と同じです。
+Gmail を最大限に活用するために、[Inbox Zero](https://www.youtube.com/watch?v=oLdHnWLbn4A)戦略を採用することを検討してください。これは Google 従業員が Gmail を使用する方法と同じです。
 
 これについての内部トレーニング録画もあります。詳細を扱い、より「パワーユーザー」に焦点を当て、キーボードショートカットなどを扱います。
 
-- [ビデオ](https://youtu.be/IwngC9NmcRs)（プライベートに設定されているので、GitLab Unfiltered でログインして視聴してください: 右上隅 > プロフィール画像をクリック > スイッチアカウント > GitLab Unfiltered）
+- [ビデオ](https://youtu.be/IwngC9NmcRs)（プライベートに設定されているので、GitLab Unfiltered でログインして視聴してください: 右上隅 > プロフィール画像をクリック > アカウントを切り替え > GitLab Unfiltered）
 - [ミーティングノート](https://docs.google.com/document/d/1EXEIENJrUkP75MmG6Nn9Ld4-T0P9SfpcQA4xmpx9Bck/edit?usp=sharing)
 
 ### Google Mail で Google Meet と Chat を無効化 {#disable-google-meet-and-chat-in-google-mail}
@@ -946,32 +955,32 @@ Google Meet と Google Chat の統合はデフォルトで有効です。メー�
 
 ### Google Slides {#google-slides}
 
-内部および外部使用のスライドデックを作成するときは、汎用の [GitLab Slide Template](https://docs.google.com/presentation/u/0/?tgif=d&ftv=1) を使用してください。
-スライドデックのコピーを作成し、コピーのみを編集してください。テンプレート自体を編集しないでください。誤ってソースデックを編集することを避けるために、Template ギャラリーで `[Fiscal Year] GitLab Slide Template` を選択して、すぐにコピーを作成し、新しいデックを開始します。スライドデックのすべてのページに番号を付け、タイトルページが常に番号 1 であることを確認してください。
+内部および外部使用のスライド資料を作成するときは、汎用の [GitLab Slide Template](https://docs.google.com/presentation/u/0/?tgif=d&ftv=1)を使用してください。
+スライド資料のコピーを作成し、コピーのみを編集してください。テンプレート自体を編集しないでください。誤って元のスライド資料を編集することを避けるために、テンプレートギャラリーで `[Fiscal Year] GitLab Slide Template` を選択して、すぐにコピーを作成し、新しいスライド資料を開始します。スライド資料のすべてのページに番号を付け、タイトルページが常に番号 1 であることを確認してください。
 
-#### セールススライドデック {#sales-slide-decks}
+#### 営業用スライド資料 {#sales-slide-decks}
 
-スライドデックは [Highspot](/handbook/sales/field-communications/gitlab-highspot/) の [GitLab の公式営業スライドライブラリ](https://gitlab.highspot.com/items/650461a504701b188c124951?lfrm=shp.6) で利用できます。
+スライド資料は [Highspot](/handbook/sales/field-communications/gitlab-highspot/)の [GitLab の公式営業スライドライブラリ](https://gitlab.highspot.com/items/650461a504701b188c124951?lfrm=shp.6)で利用できます。
 
 ### Google Jamboard {#google-jamboard}
 
-Jamboard は <https://jamboard.google.com/> でアクセスできるコラボレーティブホワイトボードプラットフォームです。結果は Drive に永続化され、他のオブジェクトのように共有可能です。
+Jamboard は <https://jamboard.google.com/> でアクセスできる共同作業用ホワイトボードプラットフォームです。結果は Drive に永続化され、他のオブジェクトのように共有可能です。
 
 ### Google Chrome {#google-chrome}
 
-- ドキュメント/Issue/などのページタイトルからの単語を URL バーに入力して、物事を検索して見つけます（ページタイトルに表示されるすべてのもの）。検索は「ベストエフォート」ですが、最近アクセスしたドキュメントや Issue を見つけるのに驚くほど効率的です。
-- 「Search engines」がさらに役立ちます！「drive」を入力して Tab を押すと、Google Drive で検索されます。これらを発見してカスタマイズするには、`Settings > Search engine` に移動します。
-- [Chrome キーボードショートカット](https://support.google.com/chrome/answer/157179?hl=en) を練習しましょう。よく使う便利なショートカットをいくつか:
+- ドキュメント/Issue などのページタイトルからの単語を URL バーに入力して、物事を検索して見つけます（ページタイトルに表示されるすべてのもの）。検索は「ベストエフォート」ですが、最近アクセスしたドキュメントや Issue を見つけるのに驚くほど効率的です。
+- 「検索エンジン」がさらに役立ちます！「drive」を入力して Tab を押すと、Google Drive で検索されます。これらを発見してカスタマイズするには、`Settings > Search engine` に移動します。
+- [Chrome キーボードショートカット](https://support.google.com/chrome/answer/157179?hl=en)を練習しましょう。よく使う便利なショートカットをいくつか:
   - アドレスバーにジャンプ: `cmd l`
   - 新しいタブを作成 `cmd t`、タブを閉じる `cmd w`、閉じたタブを元に戻す `cmd shift t`
   - 新しいシークレットウィンドウを開く: `cmd shift n`（例: UI バグやログイン問題を再現する）
   - すべての開いているタブを検索: `cmd shift a`
   - ブックマークバーを非表示にする: `cmd shift b`（例: スクリーンショットや共有画面プレゼンテーション用）
   - 開発者ツールを開く: `cmd option i`（例: ウェブサイトエラーのデバッグ用）
-- [タブをタブグループに整理](https://www.google.com/chrome/tips/#organize) し、名前とカスタムカラーを割り当て、折りたたみまたは並べ替えできます。タブをグループ間で移動することは、ブラウザウィンドウ間でも機能します。
-- ブラウザにログイン（GitLab Workspace アカウントで）すると、[インストール間でプロフィールが保持](https://www.google.com/chrome/tips/#customize) されます。これは、[ラップトップを更新するとき](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/#laptop-refreshes) にブックマーク、拡張機能、構成を移行するのに役立ちます。
+- [タブをタブグループに整理](https://www.google.com/chrome/tips/#organize)し、名前とカスタムカラーを割り当て、折りたたみまたは並べ替えできます。タブをグループ間で移動することは、ブラウザウィンドウ間でも機能します。
+- ブラウザにログイン（GitLab Workspace アカウントで）すると、[インストール間でプロフィールが保持](https://www.google.com/chrome/tips/#customize)されます。これは、[ラップトップを更新するとき](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/#laptop-refreshes)にブックマーク、拡張機能、構成を移行するのに役立ちます。
 
 #### Chrome のパフォーマンス設定 {#chrome-performance-settings}
 
-1. [メモリセーバー](https://support.google.com/chrome/answer/12929150?hl=en) を有効にします。これにより、非アクティブなタブが一時停止され、メモリ消費が削減されます。
-1. [エネルギーセーバー](https://support.google.com/chrome/answer/12929150?hl=en) を有効にします。これは Chrome にバックグラウンドタスク活動を減らすよう指示することで、バッテリー寿命を延ばすのに役立ちます。
+1. [メモリセーバー](https://support.google.com/chrome/answer/12929150?hl=en)を有効にします。これにより、非アクティブなタブが一時停止され、メモリ消費が削減されます。
+1. [エネルギーセーバー](https://support.google.com/chrome/answer/12929150?hl=en)を有効にします。これは Chrome にバックグラウンドタスク活動を減らすよう指示することで、バッテリー寿命を延ばすのに役立ちます。

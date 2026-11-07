@@ -2,11 +2,11 @@
 title: "DevOps ソリューションリソース: DevSecOps"
 description: "GitLab が DevSecOps ソリューションをどのように実現するか、メッセージングや、マーケティングと営業を支援する主要リソースを含めて解説します。"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+translated_at: "2026-11-07T01:08:38+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-06T14:26:17-06:00"
 ---
 
 **GitLab の DevSecOps 機能の顧客向け概要をお探しですか？ [DevSecOps ソリューション](https://about.gitlab.com/solutions/security-compliance/)をご覧ください**
@@ -15,15 +15,15 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 このページは、DevSecOps に関する Go-to-Market の取り組みについて、GitLab の営業・マーケティング活動の整合をとる単一の情報源とすることを目的としています。
 
-### 連絡先
+### 連絡先 {#who-to-contact}
 
-|     プロダクトマーケティング    |    デベロッパーアドボケイト    |
+|     Product Marketing    |    Developer Advocate    |
 | ------------------------ | ------------------------- |
 | Brian Mason ( @BrianMason )  | Fernando Diaz ( @fjdiaz ) |
 
-## 市場の視点
+## 市場の視点 {#the-market-viewpoint}
 
-## DevSecOps
+## DevSecOps {#devsecops}
 
 DevSecOps ユースケースは、DevOps 方法論の中でセキュリティ脆弱性をより早く見つけるために「シフトレフト」を試みているが、期待された結果を達成できていないお客様に当てはまります。
 
@@ -31,13 +31,13 @@ DevSecOps ユースケースは、DevOps 方法論の中でセキュリティ脆
 
 DevSecOps は CI パイプライン内に自動セキュリティスキャンとコンプライアンス制御を統合します。GitLab はこのアプローチをさらに進め、DevOps プラットフォームにシームレスにセキュリティとコンプライアンスを組み込み、シンプルさ、可視性、制御を提供します。
 
-### なぜ DevSecOps が必要なのか？
+### なぜ DevSecOps が必要なのか？ {#why-is-devsecops-needed}
 
-セキュリティ専門家は常に開発者よりも数で劣ります。アプリケーションセキュリティの取り組みをスケールさせるには、開発者が自身でコードを作業しているときに、自分でソフトウェアのセキュリティ脆弱性を見つけて修正できるようにする必要があります。さらに、コンプライアンスと監査可能性のニーズはこれまでも重要でしたが、ソフトウェアサプライチェーンに対する高プロファイル攻撃や、それに関連する米国大統領の[サイバーセキュリティ向上に関する大統領令](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/)を受けて、これらの要件への注目はさらに高まっています。
+セキュリティ専門家は常に開発者よりも数で劣ります。アプリケーションセキュリティの取り組みをスケールさせるには、開発者が自身でコードを作業しているときに、自分でソフトウェアのセキュリティ脆弱性を見つけて修正できるようにする必要があります。さらに、コンプライアンスと監査可能性のニーズはこれまでも重要でしたが、ソフトウェアサプライチェーンに対する注目を集める攻撃や、それに関連する米国大統領の[サイバーセキュリティ向上に関する大統領令](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/)を受けて、これらの要件への注目はさらに高まっています。
 
 アプリケーションセキュリティテストは依然として基盤ですが、いまや「ソフトウェア工場」全体にわたる可視性と制御がさらに重要になっています。これを DevSecOps 2.0 と考えてください。GitLab の DevOps へのプラットフォームアプローチは、これらの新しい、より広範な DevSecOps 要件を満たす上で明確な優位性を提供します。
 
-### 期待されるビジネス成果
+### 期待されるビジネス成果 {#desired-business-outcomes}
 
 - シフトレフトして、修正コストが低い段階で脆弱性を見つけて修正
 - 既存ツールでシフトレフトを試みたがスケールせず、よりシンプルなソリューションを探している
@@ -47,7 +47,7 @@ DevSecOps は CI パイプライン内に自動セキュリティスキャンと
 
 ### ペルソナ {#personas}
 
-#### ユーザーペルソナ
+#### ユーザーペルソナ {#user-personas}
 
 ユーザーには開発者とセキュリティ専門家の両方が含まれます。私たちはソフトウェア脆弱性とその解決状況に対する統一されたビューを持つことを誇りにしています。
 
@@ -55,13 +55,13 @@ DevSecOps は CI パイプライン内に自動セキュリティスキャンと
 
 開発者はセキュリティを気にしてはいるものの、セキュリティの専門家になりたくはありません。セキュアなコードを書く主な動機は、個人的・職業的な評判を守ることです。自身が書いた脆弱なコードによって会社を倒すような人にはなりたくないのです。同時に、彼らは主にユーザー要件を満たすコードを素早く出すことを目標とされています。多くの場合、彼らはセキュリティ欠陥で評価されません。セキュリティは必要悪のように感じられることがあります。コンテキストスイッチなしにワークフローに収まるツールが最も受け入れられます。GitLab がコードコミット時に脆弱性をレポートして提供する明瞭性は役立ちます。
 
-**[Amy アプリケーションセキュリティエンジニア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer)** は GitLab を主に Security Dashboard と脆弱性レポートで利用します
+**[Application Security Engineer の Amy](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer)** は GitLab を主に Security Dashboard と脆弱性レポートで利用します
 
 セキュリティ専門家はエンタープライズ／機関のリスク管理を最も気にします。プロセス改善の領域を探してプロセスを広く見て、リスクを低減し繰り返しのミスを避けます。リスクを気にするため、未解決の脆弱性、その重大度、修復状況を特定したいと考えています。時系列の傾向や集計改善を気にします。多くの場合、彼らの指標は平均修復時間です。セキュリティ担当者自身がソフトウェアセキュリティ欠陥を修復できることはまれで、開発者に依存することが多いです。この目標の不一致は、グループ間の対立の原因となることがよくあります。SDLC の最後にテストが行われる従来のアプリセキュリティ環境では、彼らは脆弱性ステータスの追跡・レポート、結果の精査、開発チームへのトリアージに多くの時間を費やすかもしれません。開発がより自動化されている場所では、ポリシーの設定とツールによるその適用に集中できる場合があります。多くの場合、新たな Critical／High 脆弱性が本番に入ることを避けたいと考え、これを徹底するためにビルドを失敗させることを好みます。
 
 開発者と DevOps チームは GitLab をセキュリティに使うのを好む傾向がありますが、セキュリティ専門家はしばしば懐疑的で、お気に入りの既存スキャナーと比較します。彼らは独自の複雑なダッシュボードを構築しており、お気に入りのスキャナーにキャリアを賭けてきたかもしれません。たとえ作業を簡素化できる場合でも、置き換えに消極的なことが多いです。
 
-#### バイヤーペルソナ
+#### バイヤーペルソナ {#buyer-personas}
 
 **Security Manager または CISO（Sam の上司）は通常、Ultimate ティアのバイヤーです**
 
@@ -70,9 +70,9 @@ DevSecOps は CI パイプライン内に自動セキュリティスキャンと
 彼らの心を掴む鍵は、**シンプルさと制御** に焦点を当てることです。
 
 - 複雑性は CISO の主要な不満の一つです。1 つのツールで一箇所に幅広いスキャン結果を提供し、継続的な統合・保守なしで運用できれば、彼らの努力を大きく簡素化できます。
-- CISO はおそらく制御不能と感じている、または少なくとも進化する脅威、高プロファイルなサイバー攻撃、新しいコンプライアンス上の懸念、開発ツールの肥大化の中でセキュアであるよう圧力を感じています。これらのソフトウェアリスクを管理するのは難しいことです。エンドツーエンドのシンプルさ、可視性、制御を提供する単一プラットフォームでソフトウェア開発を制御してください。GitLab を選んでください。
+- CISO はおそらく制御不能と感じている、または少なくとも進化する脅威、注目を集めるサイバー攻撃、新しいコンプライアンス上の懸念、開発ツールの肥大化の中でセキュアであるよう圧力を感じています。これらのソフトウェアリスクを管理するのは難しいことです。エンドツーエンドのシンプルさ、可視性、制御を提供する単一プラットフォームでソフトウェア開発を制御してください。GitLab を選んでください。
 
-## 業界アナリストカバレッジ
+## 業界アナリストカバレッジ {#industry-analyst-coverage}
 
 [2021 Gartner Magic Quadrant for Application Security Testing](https://page.gitlab.com/resources-report-gartner-magic-quadrant-ast-2023.html)
 
@@ -85,8 +85,8 @@ DevSecOps は CI パイプライン内に自動セキュリティスキャンと
 | コードとコンポーネントのアプリケーションセキュリティテスト | しばしば Software Composition Analysis (SCA) と呼ばれ、すべてのコードコンポーネント（カスタムコードとオープンソース）をどこにあっても（コンテナ内などでも）テストします。GitLab の調査では Dependency Scanning が最も頻繁に使われるスキャンタイプです。 | SAST、Dependency Scanning、Container Scanning、Secrets Detection、（オプションで）License Compliance | セキュリティおよびコンプライアンスリスクを低減。|
 | 動作中アプリのアプリケーションセキュリティテスト | コード実行時に脆弱なコードの挙動を探すスキャン。| DAST、IAST、Input Fuzzing、UEBA／脅威モデリング、モバイルアプリセキュリティテスト | セキュリティおよびコンプライアンスリスクを低減。 |
 | セキュリティガバナンス | ソリューションは、適切なリスクのみが取られるようにセキュリティポリシーを自動的にコードに適用します。リスクを表すアプリケーション脆弱性は追跡・管理・レポートされます。ソリューションはリスク、コンプライアンス、監査、プロセス改善（通常は教育目的）の機会を評価するためのセキュリティプラクティスの定期的な評価を可能にします。 |  セキュリティポリシー自動化、リスクとコンプライアンスのレポート、監査レポート、各種セキュリティメトリクスとプロセスレポート、脆弱性データベースと管理 | リスクを効率的に監視・管理・低減。例外を特定し、ポリシーを段階的に改善する能力。 |
-| セキュリティガードレール（予防的 - CI/CD 前） | 予防的アプリケーションセキュリティはガードレールを使ってチームが最初からセキュアなものを一貫して構築できるよう支援します。 | 開発者がタイプする際に安全でないフレーズを識別するスペルチェッカーのような機能、開発者の選択を事前承認済みコードライブラリに限定する Bill of Materials、すべてのサードパーティコードをカタログ化する自動検出。 | 新しい脆弱性の作成を防止。 |
-| 既存・多様なツールと共存| セキュリティスキャナーは、サードパーティ CI やセキュリティスキャナーを使用している既存環境に統合できる必要があります。 | API とプラグイン | 既存投資の継続利用を可能にし、置き換え＝大手術となるシナリオを回避。 |
+| セキュリティガードレール（予防的 - CI/CD 前） | 予防的アプリケーションセキュリティはガードレールを使ってチームが最初からセキュアなものを一貫して構築できるよう支援します。 | 開発者がタイプする際に安全でないフレーズを識別するスペルチェッカーのような機能、開発者の選択を事前承認済みコードライブラリに限定する 部品表、すべてのサードパーティコードをカタログ化する自動検出。 | 新しい脆弱性の作成を防止。 |
+| 既存・多様なツールと共存| セキュリティスキャナーは、サードパーティ CI やセキュリティスキャナーを使用している既存環境に統合できる必要があります。 | API とプラグイン | 既存投資の継続利用を可能にし、既存システムを全面的に置き換える事態を回避。 |
 
 ## GitLab のソリューション {#the-gitlab-solution}
 
@@ -102,10 +102,10 @@ GitLab DevSecOps ユースケースの概要
 | 共通のコンプライアンス制御 |  GitLab は SDLC 全体で[多くの共通制御](https://docs.gitlab.com/ee/administration/compliance.html)を提供 | Manage ステージ内の Access and Compliance | [![コンプライアンスパイプライン](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) コンプライアンスパイプライン](https://www.youtube.com/watch?v=jKA_e_jimoI) |
 | 開発者向けスキャン結果 | 高速で反復的なスキャンのためのインクリメンタルスキャン。スキャン結果を CI パイプラインに統合。Auto Remediation で自動的に修正を作成。 | CI（[MR パイプライン](https://docs.gitlab.com/ee/user/application_security/)用）、[Auto remediation](https://docs.gitlab.com/ee/user/application_security/#solutions-for-vulnerabilities-auto-remediation) | [![CI/CD パイプラインにセキュリティを追加](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) CI/CD パイプラインにセキュリティを追加](https://youtu.be/Fd5DhebtScg) |
 | コードとコンポーネントのアプリケーションセキュリティテスト | SAST、Dependency Scanning、Container Scanning、Secrets Detection、License Compliance | [SAST](https://docs.gitlab.com/ee/user/application_security/sast/)、[Dependency Scanning](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/)、[Container Scanning](https://docs.gitlab.com/ee/user/application_security/container_scanning/)、[Secrets Detection](https://docs.gitlab.com/ee/user/application_security/secret_detection/#:~:text=GitLab%2011.9%20includes%20a%20new,Security%20Dashboard)、[License Compliance](https://docs.gitlab.com/ee/user/compliance/license_scanning_of_cyclonedx_files/) | [![SAST とシークレット検出](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) SAST とシークレット検出](https://youtu.be/8sOjvlkl8QY)<BR>[![依存関係スキャン](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) 依存関係スキャン](https://youtu.be/39RvTMLDszc)<BR>[![コンテナスキャン](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) コンテナスキャン](https://youtu.be/wIcaSerMfFQ)<BR>[![ライセンスコンプライアンス](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) ライセンスコンプライアンス](https://youtu.be/42f9LiP5J_4)<BR>[![モバイル SAST](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) モバイル SAST](https://youtu.be/v0GhEHZWtdw)|
-| 動作中アプリのアプリケーションセキュリティテスト | GitLab は CI 中に立ち上げられた Review App を使って動的アプリケーションセキュリティテストを実行します。最近の買収により、API スキャンに有用な多次元ファズテスト機能が提供されます。モバイルアプリのセキュリティテストは、当社の言語スキャン機能内のあらゆるアプリで実行可能です。 | [DAST](https://docs.gitlab.com/ee/user/application_security/dast/)、[Input Fuzzing](https://about.gitlab.com/direction/application_security_testing/dynamic-analysis/fuzz-testing/)、モバイルアプリセキュリティテスト（パートナーが必要） | [![DAST](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) DAST](https://youtu.be/9tIrrByOum4) |
+| 動作中アプリのアプリケーションセキュリティテスト | GitLab は CI 中に立ち上げられた Review App を使って動的アプリケーションセキュリティテストを実行します。最近の買収により、API スキャンに有用な多次元ファズテスト機能が提供されます。モバイルアプリのセキュリティテストは、私たちの言語スキャン機能内のあらゆるアプリで実行可能です。 | [DAST](https://docs.gitlab.com/ee/user/application_security/dast/)、[Input Fuzzing](https://about.gitlab.com/direction/application_security_testing/dynamic-analysis/fuzz-testing/)、モバイルアプリセキュリティテスト（パートナーが必要） | [![DAST](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) DAST](https://youtu.be/9tIrrByOum4) |
 | セキュリティガバナンス | セキュリティポリシー自動化、コンプライアンス評価、セキュリティリスク評価、監査評価、セキュリティプロセス改善／評価、脆弱性管理、Advisory Database  | [Security Dashboards](https://docs.gitlab.com/ee/user/application_security/security_dashboard/)、[脆弱性管理](/handbook/security/product-security/vulnerability-management/)、[Audit Events](https://docs.gitlab.com/ee/administration/audit_event_reports.html) [Compliance Management](https://about.gitlab.com/direction/software_supply_chain_security/compliance/compliance-management/) | [![GitLab Security Dashboard で AppSec の効率を向上](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) GitLab Security Dashboard で AppSec の効率を向上](https://youtu.be/p3qt2z1rQk8) |
-| セキュリティガードレール（予防的 - CI/CD 前） | GitLab は依存関係を示す Bill of Materials を提供します。現時点では、これを使って開発者を事前承認済みの依存関係のみに制限することはできていません。 | [Bill of Materials 機能](https://docs.gitlab.com/ee/user/application_security/dependency_list/) | [![GitLab でアプリケーションの依存関係を管理](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) GitLab でアプリケーションの依存関係を管理](https://youtu.be/scNS4UuPvLI)|
-| 既存・多様なツールと共存 | GitLab は、外部 CI ツールを GitLab CI と並行して動作させることが可能で、Jenkins ユーザーも GitLab Secure 機能を利用できるようにします。同様に、ユーザーがサードパーティセキュリティスキャナーに投資している、もしくは GitLab がカバーしていない言語向けに別のスキャナーが必要な場合もあります。当社はサードパーティスキャナーが GitLab の MR と Security Dashboard に統合しやすくしました。 | CI（[MR パイプライン](https://docs.gitlab.com/ee/user/application_security/)用）、[Security Dashboards](https://docs.gitlab.com/ee/user/application_security/security_dashboard/) | [![Jenkins で GitLab のアプリケーションセキュリティ機能を使用](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) Jenkins で GitLab のアプリケーションセキュリティ機能を使用](https://youtu.be/8VoxulxxM4Y)<BR>[![GitLab の脆弱性から Jira Issue を作成](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) GitLab の脆弱性から Jira Issue を作成](https://youtu.be/fTELCoSkBiY) |
+| セキュリティガードレール（予防的 - CI/CD 前） | GitLab は依存関係を示す 部品表 を提供します。現時点では、これを使って開発者を事前承認済みの依存関係のみに制限することはできていません。 | [部品表 機能](https://docs.gitlab.com/ee/user/application_security/dependency_list/) | [![GitLab でアプリケーションの依存関係を管理](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) GitLab でアプリケーションの依存関係を管理](https://youtu.be/scNS4UuPvLI)|
+| 既存・多様なツールと共存 | GitLab は、外部 CI ツールを GitLab CI と並行して動作させることが可能で、Jenkins ユーザーも GitLab Secure 機能を利用できるようにします。同様に、ユーザーがサードパーティセキュリティスキャナーに投資している、もしくは GitLab がカバーしていない言語向けに別のスキャナーが必要な場合もあります。私たちはサードパーティスキャナーが GitLab の MR と Security Dashboard に統合しやすくしました。 | CI（[MR パイプライン](https://docs.gitlab.com/ee/user/application_security/)用）、[Security Dashboards](https://docs.gitlab.com/ee/user/application_security/security_dashboard/) | [![Jenkins で GitLab のアプリケーションセキュリティ機能を使用](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) Jenkins で GitLab のアプリケーションセキュリティ機能を使用](https://youtu.be/8VoxulxxM4Y)<BR>[![GitLab の脆弱性から Jira Issue を作成](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) GitLab の脆弱性から Jira Issue を作成](https://youtu.be/fTELCoSkBiY) |
 
 ## トップ差別化要因 {#top-differentiators}
 
@@ -117,7 +117,7 @@ GitLab DevSecOps ユースケースの概要
 | **カバレッジガイド付きファズテスト** | GitLab はソースコードからのコンテキスト情報を活用してファズテストの精度を高めるとともに、ファズテストのクラッシュ結果を脆弱なコード領域に直接相関させるのに役立ちます。これにより初期ファズテストからクラッシュ、脆弱領域の更新までのサイクルタイムが劇的に改善します。 | **-** | [![カバレッジガイド付きファズテストでバグを発見](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) カバレッジガイド付きファズテストでバグを発見](https://youtu.be/4ROYvNfRZVU) |
 | **オフライン環境** | GitLab はオフラインまたは限定接続環境で動作する様々なスキャナーを提供します。この機能により、オフライン環境にあるコードのセキュリティ脆弱性を検出できます。 | **-** | [![接続が制限された環境とオフライン環境で GitLab セキュリティスキャンを実行](/images/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/youtube_social_icon_red-32x23.png) 接続が制限された環境とオフライン環境で GitLab セキュリティスキャンを実行](https://youtu.be/FoLmRvTcOAY) |
 
-### GitLab DevOps プラットフォームが DevSecOps の達成にどう役立つか
+### GitLab DevOps プラットフォームが DevSecOps の達成にどう役立つか {#how-the-gitlab-devops-platform-helps-achieve-devsecops}
 
 **シンプルさ／効率**
 
@@ -137,17 +137,17 @@ GitLab DevSecOps ユースケースの概要
 - [ロールベースアクセス制御](https://docs.gitlab.com/ee/user/permissions.html)は職務分掌を提供し、悪意のある内部脅威や偶発的な事象から保護します
 - 幅広い追加[コンプライアンス制御](https://docs.gitlab.com/ee/administration/compliance.html)は、ソフトウェア開発、提供、利用に対する優れたガバナンスを提供します。
 
-### GitLab の優位性とは？
+### GitLab の優位性とは？ {#what-are-the-gitlab-advantages}
 
 **プラットフォームアプローチ**。SDLC 全体に対する単一プラットフォームを持つことで、GitLab はセキュリティスキャンを組み込むシンプルさと、ポイントソリューションでは不可能なエンドツーエンドの可視性・制御を実現します。脆弱性はワンクリックでフォローアップ用の Issue にできます。修復ステータスは常に明白です。コードの変更と、コードが依存するクラウドネイティブ環境の変更が追跡されます。GitLab を使えば、アプリセキュリティとチケッティング、CI/CD などの間に追加の統合は不要です。
 
 **DevOps プロセスとの整合性**。主にセキュリティ専門家による使用を想定した従来のアプリケーションセキュリティツールとは異なり、GitLab のセキュリティスキャンは開発者が活動する CI/CD ワークフローに組み込まれています。開発サイクルの早い段階で開発者が脆弱性を特定し排除できるようにします。同時に、開発者によって解決されなかった脆弱性をプロジェクト・グループ横断で評価・トリアージ・管理する能力をセキュリティ専門家に提供します。
 
-**現代的なアプリケーションに包括的**。GitLab Ultimate は SAST、DAST、Dependency Scanning（あらゆるソフトウェアセキュリティプログラムにとってのテーブルステーク）に加え、今日のクラウドネイティブアプリケーションに不可欠な包括的なスキャンを含みます。スキャンには Infrastructure-as-Code (IaC)、API、コンテナ、Kubernetes クラスターイメージ、ファズテストが含まれます。これらはすべて、ソフトウェアサプライチェーンの一部として保護すべき新しい攻撃面を表しています。
+**現代的なアプリケーションに包括的**。GitLab Ultimate は SAST、DAST、Dependency Scanning（あらゆるソフトウェアセキュリティプログラムの基本要件）に加え、今日のクラウドネイティブアプリケーションに不可欠な包括的なスキャンを含みます。スキャンには Infrastructure-as-Code (IaC)、API、コンテナ、Kubernetes クラスターイメージ、ファズテストが含まれます。これらはすべて、ソフトウェアサプライチェーンの一部として保護すべき新しい攻撃面を表しています。
 
 **一貫性と制御**。自動スキャンに加えて、開発者が速く、しかし安全に走れるガードレールを提供するためにポリシーを自動化することも重要です。コンプライアンス用の共通制御、承認ルール、中央管理されるコンプライアンスパイプラインワークフローはすべて連携してソフトウェアサプライチェーンの保護に役立ちます。
 
-## メッセージハウス
+## メッセージハウス {#message-house}
 
 DevSecOps の[メッセージハウス](message-house/)は、ユースケースの価値と差別化要因を記述・議論するための構造を提供します。
 
@@ -158,14 +158,14 @@ DevSecOps の[メッセージハウス](message-house/)は、ユースケース�
 ガバナンスの比較:
 
 1. 職務分掌のためのロールベースアクセス制御 (RBAC)。競合製品のロールはより広範で、人物が役割を変えると権限を手動で変更する必要があります。なぜ重要なのでしょうか？ 本番にプッシュする権限を持つ人が降格や別グループに移動した場合、内部脅威を避けるために権限を自動的に変更したいでしょう。
-1. 当社のワークフローは MR 承認内にコンプライアンスを含めます。スピードに影響する手動チェックは不要です（実質、コンプライアンスもシフトレフトしています）。
+1. 私たちのワークフローは MR 承認内にコンプライアンスを含めます。スピードに影響する手動チェックは不要です（実質、コンプライアンスもシフトレフトしています）。
 1. [外部ステータスチェック](https://docs.gitlab.com/ee/user/project/merge_requests/status_checks.html)は規制業界にとって重要な機能です。変更は承認され、所定の期限内に本番にプッシュする必要があります。遅延が発生すると承認プロセスをやり直す必要があるかもしれません。
 1. GitLab はプロジェクトとグループを持ち、プロジェクトはグループからポリシーを継承します。競合は GitLab ほど柔軟にポリシーを構造化できません。エンタープライズユーザーにとって重要な機能です。例として、グループレベルのランナーが挙げられます。
 1. コンプライアンスパイプラインにより、GitLab ユーザーはコンプライアンスフレームワーク（PCI、HIPPA など）を選択でき、それらのポリシーが使われ、開発者はそれを無効化できません（RBAC のため）
 
-## ティアごとの主要価値
+## ティアごとの主要価値 {#key-value-by-tier}
 
-### Free と Premium
+### Free と Premium {#free-and-premium}
 
 **なぜ DevSecOps に GitLab Free または Premium を選ぶのか？** セキュリティはすべての人にとって重要であり、私たちは完全にセキュアでコンプライアントな SDLC への障壁を下げることに尽力しています。そのために、Brakeman SAST スキャンと Secret Detection を Free に移行し、すべての製品ティアの開発者がソースコードを既知の脆弱性についてスキャンできるようにしました。
 
@@ -174,7 +174,7 @@ DevSecOps の[メッセージハウス](message-house/)は、ユースケース�
 - [静的アプリケーションセキュリティテスト](https://docs.gitlab.com/ee/user/application_security/sast/) - 静的コードを評価して潜在的なセキュリティ問題をチェック
 - [Secret Detection](https://docs.gitlab.com/ee/user/application_security/secret_detection/) - シークレットや認証情報の漏洩を回避し、悪用される可能性を防止
 
-### Ultimate
+### Ultimate {#ultimate}
 
 **なぜ DevSecOps に GitLab Ultimate を選ぶのか？** エンタープライズレベルのアプリケーションセキュリティ機能で高度な DevOps 成熟度を達成。
 
@@ -199,7 +199,7 @@ DevSecOps の[メッセージハウス](message-house/)は、ユースケース�
 - [License Compliance](https://docs.gitlab.com/ee/user/compliance/license_scanning_of_cyclonedx_files/) - プロジェクトに含まれる新しいソフトウェアライセンスの存在を特定し、プロジェクト依存関係を追跡。特定ライセンスの組み込みを承認・拒否
 - [Compliance Dashboard](https://docs.gitlab.com/ee/user/compliance/compliance_center/) - マージリクエストが承認されたか、誰が承認したかを確認
 
-## 技術パートナーシップ
+## 技術パートナーシップ {#technology-partnerships}
 
 私たちは主要業界ベンダーと提携し、GitLab がお客様のニーズに対応し市場要件を満たす能力を拡張しています。
 
@@ -213,9 +213,9 @@ DevSecOps の[メッセージハウス](message-house/)は、ユースケース�
 
 あなたまたはお客様が GitLab に統合したいサードパーティをお持ちの場合は、手順について [パートナー統合ページ](https://about.gitlab.com/partners/technology-partners/integrate/)をご紹介ください。
 
-## DevSecOps ソリューションを売る
+## DevSecOps ソリューションを売る {#selling-the-devsecops-solution}
 
-## 顧客向けスライド
+## 顧客向けスライド {#customer-facing-slides}
 
 - [セキュリティ顧客向けプレゼンテーション](https://docs.google.com/presentation/d/1WHTyUDOMuSVK9uK7hhSIQ_JbeUbo7k5AW3D6WwBReOg/edit?usp=sharing)
 
@@ -238,7 +238,7 @@ C レベルと話す際は、ガバナンスと制御の課題について尋ね
 
 **1. セキュリティ脆弱性の発見**
 
-- 脆弱性発見の主要手段としてペネトレーションテストにどの程度頼っていますか？（自動化が少ないことを示す。当社のすぐに使えるスキャンが素早く始める助けになる）
+- 脆弱性発見の主要手段としてペネトレーションテストにどの程度頼っていますか？（自動化が少ないことを示す。私たちのすぐに使えるスキャンが素早く始める助けになる）
 - DevOps プロセス内でアプリセキュリティテストを自動化していますか？ もう少し詳しく教えていただけますか？
 - どのアプリケーションセキュリティスキャンが最も重要ですか？（SAST、DAST、IAST、Dependency Scanning、Container Scanning、Secrets Detection、License Compliance？ モバイルアプリテスト？ ファズテスト？） 多層防御のために複数タイプのスキャンを実行できることに価値はありますか？ そうしていない場合、何が妨げていますか？
 - 開発者が自分で脆弱性を見つけて修正できるようにするためにどのようなステップを取っていますか？ スキャン結果は CI パイプラインにありますか？
@@ -296,11 +296,11 @@ C レベルと話す際は、ガバナンスと制御の課題について尋ね
 - スキャンの発見項目は開発者のネイティブワークフロー内で実行可能ですか？
 - プラグイン管理と互換性が継続的な懸念事項ですか？
 
-また、これらのツールのコストはどのくらい予測可能ですか？ より多くの脆弱性を見つけたり、より多くのアプリをテストすると、コストが増えますか？ より多くのテストを実質的にペナルティとして課されていますか？ DevOps が[マイクロサービス](https://about.gitlab.com/topics/microservices/)にアプリを分割し、より頻繁なパイプラインを実行することと、それはどう機能しますか？ 実際、Gartner はアプリセキュリティプログラムを安価にセットアップする方法に関するレポートで当社を取り上げました（[7 Tips to Set Up an Application Security Program Without Breaking the Bank](https://www.gartner.com/document/3986206)）。
+また、これらのツールのコストはどのくらい予測可能ですか？ より多くの脆弱性を見つけたり、より多くのアプリをテストすると、コストが増えますか？ テストを増やすほど、実質的にペナルティを課される仕組みになっていますか？ DevOps が[マイクロサービス](https://about.gitlab.com/topics/microservices/)にアプリを分割し、より頻繁なパイプラインを実行することと、それはどう機能しますか？ 実際、Gartner はアプリセキュリティプログラムを安価にセットアップする方法に関するレポートで私たちを取り上げました（[7 Tips to Set Up an Application Security Program Without Breaking the Bank](https://www.gartner.com/document/3986206)）。
 
 **Fortify、Veracode、Synopsys を使用している場合**
 
-- スキャン時間はソフトウェアの反復に追いついていますか、それとも反復を阻害していますか？
+- スキャン時間はソフトウェアのイテレーションに追いついていますか、それともイテレーションを阻害していますか？
 - すべてのコード変更をスキャンできますか？
 - 発見項目の数に圧倒されていませんか？ すべてが修復されていますか？ そうでない場合、どのように優先順位付けし、どのくらい時間／労力が必要ですか？ もし開発者が、セキュリティと同じガイドラインを使って優先順位付けし、自身が作成した脆弱性を修正できたら？
 - すべてのコードをスキャンする余裕がありますか？
@@ -326,17 +326,17 @@ NIST は 2002 年に[セキュリティをシフトレフトすることによ�
 - 関連するリスクエクスポージャーを持つ脆弱性が少なくなる
 - 後付けでセキュリティ欠陥を修正するためにビジネスイノベーションを止める必要が減る
 
-他のアプリセキュリティツールのコストはどのくらい予測可能ですか？ より多くの脆弱性を見つけたり、より多くのアプリをテストすると、コストが増えますか？ より多くのテストを実質的にペナルティとして課されていますか？ DevOps がアプリをマイクロサービスに分割し、より頻繁なパイプラインを実行することと、それはどう機能しますか？ 今後すべてのコード変更をスキャンする価値はどのくらいですか？ 時間の経過に伴う技術的負債への影響は？ 他のツールですべてのソフトウェア変更をスキャンするにはいくらかかりますか？
+他のアプリセキュリティツールのコストはどのくらい予測可能ですか？ より多くの脆弱性を見つけたり、より多くのアプリをテストすると、コストが増えますか？ テストを増やすほど、実質的にペナルティを課される仕組みになっていますか？ DevOps がアプリをマイクロサービスに分割し、より頻繁なパイプラインを実行することと、それはどう機能しますか？ 今後すべてのコード変更をスキャンする価値はどのくらいですか？ 時間の経過に伴う技術的負債への影響は？ 他のツールですべてのソフトウェア変更をスキャンするにはいくらかかりますか？
 
 ## 証跡 - 顧客 {#proof-points---customers}
 
-### 引用とレビュー
+### 引用とレビュー {#quotes-and-reviews}
 
 GitLab のお客様 HERE は、GitLab を使ってシフトレフトした[体験を共有](https://www.here.com/learn/blog/shifting-security-left-in-the-here-platform)し、[GitLab Commit 2021](https://learn.gitlab.com/commit-2021/teaching-old-cicd-ne?lx=UqDHIY)でも講演しました。
 
 GitLab のお客様 Arctic Engine は、GitLab のファズテストを使って未知の脆弱性を発見した[体験を共有](https://about.gitlab.com/blog/2020/08/19/arctic-engine-fuzz-testing-blog/)しています。
 
-#### Gartner Peer Insights
+#### Gartner Peer Insights {#gartner-peer-insights}
 
 *Gartner Peer Insights のレビューは、個々のエンドユーザーが自身の経験に基づいて述べた主観的な意見であり、Gartner またはその関連会社の見解を代表するものではありません。明らかな誤字は修正しています。*
 
@@ -348,12 +348,12 @@ GitLab のお客様 Arctic Engine は、GitLab のファズテストを使って
 >
 > - Native Android Application Developer, [Gartner Peer Insights Review](https://www.gartner.com/reviews/market/application-security-testing/vendor/gitlab/product/gitlab/review/view/1320427)
 
-#### G2
+#### G2 {#g2}
 
 - GitLab は [G2 Grid® for Static Application Security Testing (SAST)](https://www.g2.com/categories/static-application-security-testing-sast/)のリーダーです
 - GitLab は [G2 Grid® for Dynamic Application Security Testing (DAST)](https://www.g2.com/categories/dynamic-application-security-testing-dast/)のリーダーです
 
-### 顧客ケーススタディ
+### 顧客ケーススタディ {#customer-case-studies}
 
 **[HackerOne](https://about.gitlab.com/customers/hackerone/)**
 
@@ -372,17 +372,17 @@ GitLab のお客様 Arctic Engine は、GitLab のファズテストを使って
 
 - **課題:** 何年も前に作成された大規模なレガシーコードベースを持っていた。手動テストとオンプレミスインフラへの手動デプロイを排除（または大幅に削減）したかった。
 - **ソリューション:** GitLab Ultimate (SCM, CI, DevSecOps)
-- **結果:** **1 日 10 倍のデプロイ** ツールチェーンを簡素化し、以前の Git ツールから GitLab に移行。GitLab への移行の結果、コラボレーションとリリースペースの即座の改善が見られた。
+- **結果:** **1 日あたりのデプロイ回数が 10 倍** ツールチェーンを簡素化し、以前の Git ツールから GitLab に移行。GitLab への移行の結果、コラボレーションとリリースペースの即座の改善が見られた。
 - **販売セグメント:** ミッドマーケット
 
 **[Chorus](https://about.gitlab.com/customers/chorus/)**
 
 - **課題:** Chorus の創業者は最初から GitLab を使ってツールを構築。
 - **ソリューション:** GitLab Ultimate (SCM, CI, DevSecOps)
-- **結果:** **6 週間の本番サイクルが 1 週間に短縮** SOC2 コンプライアンスの最近の監査中、監査担当者は Chorus が見たことのある中で最速の監査プロセスを持っており、その大部分が GitLab の機能によるものだと述べた。
+- **結果:** **6 週間の本番サイクルが 1 週間に短縮** SOC2 コンプライアンスの最近の監査中、監査担当者は、これまでに見た中で Chorus の監査プロセスが最速であり、その大部分が GitLab の機能によるものだと述べた。
 - **販売セグメント:** SMB
 
-### クロージングを支援するリファレンス
+### クロージングを支援するリファレンス {#references-to-help-you-close}
 
 [紹介可能なセキュア顧客の SFDC レポート](https://gitlab.my.salesforce.com/a6l4M000000kDw2)注意: 営業チームメンバーはこのレポートにアクセスできるはずです。アクセスできない場合は、[顧客リファレンスチーム](/handbook/marketing/growth-marketing/growth-community-programs/)に支援を求めてください。
 
@@ -390,11 +390,11 @@ GitLab のお客様 Arctic Engine は、GitLab のファズテストを使って
 
 以下のセクションでは、CSM が機能の採用をリードするためのリソースを提供しますが、GitLab のステージとカテゴリーの採用に関心のある見込み客やお客様にも使用できます。
 
-### Playbook の手順
+### プレイブックの手順 {#playbook-steps}
 
 - 最初の 6 つのディスカバリー質問から始めて、さらに掘り下げる領域を特定します。
 
-### 採用推奨
+### 採用推奨 {#adoption-recommendation}
 
 GitLab の DevSecOps ワークフローを採用する道筋は、お客様の現状によって複数あります。次の図は採用シーケンスとシナリオ間の関係を示しています。
 
@@ -405,7 +405,7 @@ GitLab の DevSecOps ワークフローを採用する道筋は、お客様の�
 | 機能 / シナリオ                                  |    Free   |    Premium  | Ultimate | Product Analytics | 備考                      |
 | --------------------------------------------------- | :-------: | :-------: | :------: | :---------------: | :------------------------- |
 | GitLab Flow を採用                                   |     X     |      X    |    X     |                   |                            |
-| Auto DevOps を試す／活用                           | *Partial* | *Partial* |    X     |                   |                            |
+| Auto DevOps を試す／活用                           | *一部* | *一部* |    X     |                   |                            |
 | CI による自動テスト                           |     X     |     X     |    X     |                   |    すべてのティアで SAST のみ                        |
 | Review App                                          |     X     |     X     |    X     |                   | CI/CD パイプラインで DAST を実行するために必要 |
 | [マージリクエスト承認フロー / ルール](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/index.html)                 |           |     X     |    X     |   counts.merged_merge_requests_using_approval_rules            |                            |
@@ -418,7 +418,7 @@ GitLab の DevSecOps ワークフローを採用する道筋は、お客様の�
 | [Container Scanning](https://docs.gitlab.com/ee/user/application_security/container_scanning/)                                        |           |           |    X     | user_container_scanning_jobs  | |
 | [Dependency Scanning](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/)                                      |           |           |    X     | user_dependency_scanning_jobs | |
 | [License Compliance](https://docs.gitlab.com/ee/user/compliance/license_scanning_of_cyclonedx_files/)                                                  |           |           |    X     | user_license_management_jobs  | |
-| [API Fuzzing](https://docs.gitlab.com/ee/user/application_security/api_fuzzing/)                                                      |           |           |    X     | user_api_fuzzing_jobs, user_api_fuzzing_dnd_jobs on self-managed | |
+| [API Fuzzing](https://docs.gitlab.com/ee/user/application_security/api_fuzzing/)                                                      |           |           |    X     | user_api_fuzzing_jobs, user_api_fuzzing_dnd_jobs（Self-Managed の場合） | |
 | [Coverage Fuzzing](https://docs.gitlab.com/ee/user/application_security/coverage_fuzzing/)                                            |          |        |    X     | user_coverage_fuzzing_jobs    | |
 | [セキュリティ承認](https://docs.gitlab.com/ee/user/application_security/#security-approvals-in-merge-requests)                      |           |           |    X     |                   |                            |
 
@@ -428,14 +428,14 @@ GitLab の DevSecOps ワークフローを採用する道筋は、お客様の�
 - S/P = Premium
 - G/U = Ultimate
 
-### 追加のドキュメントリンク
+### 追加のドキュメントリンク {#additional-documentation-links}
 
 - [SCM と CI からセキュリティへ](https://docs.google.com/presentation/d/1Oq8znDkHrgGK5Xe5D23SdiRLt33OIJZ30OWCHNNDV14/edit?usp=sharing) *（GitLab 内部限定）*
 - [GitLab セキュリティコンプライアンス制御](/handbook/security/security-assurance/security-compliance/sec-controls/)
 - [GitLab セキュリティプラクティス](/handbook/security/)
 - [セキュリティプランニング](/handbook/security/planning/)
 
-### イネーブルメントとトレーニング
+### イネーブルメントとトレーニング {#enablement-and-training}
 
 以下では、イネーブルメントとトレーニングの動画とコンテンツへのリンクを提供します。
 
@@ -443,7 +443,7 @@ GitLab の DevSecOps ワークフローを採用する道筋は、お客様の�
 - [高速なアプリケーションセキュリティ](https://www.youtube.com/watch?v=VN6Z6qtlMjg)
 - [パイプラインへのセキュリティ追加](https://www.youtube.com/watch?v=Fd5DhebtScg&t=3s)
 
-### プロフェッショナルサービスの提供
+### プロフェッショナルサービスの提供 {#professional-service-offers}
 
 GitLab はお客様とパートナーに対し [様々なパッケージ済みおよびカスタムサービス](https://about.gitlab.com/services/)を提供しています。本ソリューションに特化したサービスは以下のとおりです。その他のサービスについては、[フルサービスカタログ](https://about.gitlab.com/services/catalog/)をご覧ください。
 
@@ -451,48 +451,44 @@ GitLab はお客様とパートナーに対し [様々なパッケージ済み�
 - [GitLab CI/CD トレーニング](https://university.gitlab.com/pages/ci-cd-training/)
 - [統合サービス](https://about.gitlab.com/services/catalog/ )
 
-## リソース
+## リソース {#resources}
 
-### ホワイトペーパー
+### eBook: 次世代アプリケーションをセキュアにするためにすべての CISO が取るべき 10 のステップ {#ebook-ten-steps-every-ciso-should-take-to-secure-next-gen-applications}
 
-- [大きなシフトレフト](https://about.gitlab.com/resources/downloads/gitlab-seismic-shift-in-application-security-whitepaper.pdf)
+- [登録が必要](https://lnkd.in/er8tjQg)
+- [登録不要](https://drive.google.com/file/d/0B-ZpQfvLs-2AVFI5VmNybTBvWWttRWxENWpGVnlNbVBFODNZ/view?usp=sharing)
 
-### eBook: 次世代アプリケーションをセキュアにするためにすべての CISO が取るべき 10 のステップ
-
-- [Gated](https://lnkd.in/er8tjQg)
-- [Ungated](https://drive.google.com/file/d/0B-ZpQfvLs-2AVFI5VmNybTBvWWttRWxENWpGVnlNbVBFODNZ/view?usp=sharing)
-
-### サードパーティ商用スキャナーとの統合
+### サードパーティ商用スキャナーとの統合 {#integration-with-third-party-commercial-scanners}
 
 - [WhiteSource](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/security-integrations-whitesource/)
 
-### ブログ
+### ブログ {#blogs}
 
 - [アプリケーションセキュリティエンジニアが GitLab を使ってプロジェクトをセキュアにする方法](https://about.gitlab.com/blog/2020/07/07/secure-stage-for-appsec/)
 - [外部 CI で GitLab セキュリティツールを活用する方法](https://docs.gitlab.com/ee/integration/jenkins.html)
 
-### その他の DevSecOps 動画
+### その他の DevSecOps 動画 {#other-devsecops-videos}
 
 - [セキュリティデモの詳細](https://youtu.be/k4vEJnGYy84)
 - [DevSecOps の成功には統合が鍵](https://about.gitlab.com/blog/2018/09/11/what-south-africa-taught-me-about-cybersecurity/)を参照
 
-### クリックスルー & ライブデモ
+### クリックスルー & ライブデモ {#clickthrough--live-demos}
 
 - [すべてのマーケティングクリックスルーデモ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/#click-throughs)
 - [すべてのマーケティングライブデモ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/#live-instructions)
 
-### ロードマップ
+### ロードマップ {#roadmap}
 
 - [Secure と Govern のロードマップ](https://docs.google.com/presentation/d/1XcOmwUvaSEYhj87dvHj05l3t-JuBEcLaFdhSEDvX4EY/edit#slide=id.g1364cbe562a_0_269)
 
-## ソリューションアーキテクト向け技術リソース
+## ソリューションアーキテクト向け技術リソース {#technical-resources-for-solution-architects}
 
 お客様や見込み客には、好みのスキャンツールの使用や、ツールチェーンの他の部分との統合に関する独自の要件があることが多いです。あなたまたはお客様が GitLab に統合したいサードパーティをお持ちの場合は、手順について [パートナー統合ページ](https://about.gitlab.com/partners/technology-partners/integrate/)をご紹介ください。GitLab はお客様のすべてのニーズを満たす単一プラットフォームとなり得ますが、移行を支援するオンランプや GitLab を購入する前の統合の証明が必要なことが多いです。以下のリソースが役立つ場合があります。
-**注意:** GitLab が[公式に認識](https://about.gitlab.com/partners/technology-partners/)していないサードパーティ製品の統合をユーザーに期待されるような立場に GitLab を置くために、これらを使用しないでください。
+**注意:** これらのリソースを使って、GitLab が[公式に認識](https://about.gitlab.com/partners/technology-partners/)していないサードパーティ製品との統合のサポートをユーザーが GitLab に期待する状況を生まないでください。
 
 - [OSS Review をデフォルトのライセンススキャナーとして使用](https://youtu.be/dNmH_kYJ34g)
 - [GitLab と Sonarqube の統合](https://www.youtube.com/watch?time_continue=1&v=OItsDDzIP8g)
 
-## バイヤーズジャーニー
+## バイヤーズジャーニー {#buyers-journey}
 
 [バイヤーズジャーニーの主要アセットのインベントリ](https://docs.google.com/spreadsheets/d/15-yai90Ol7k4D2exHXqHXtFastR6FcE6HABD_GisAl8/edit#gid=0)

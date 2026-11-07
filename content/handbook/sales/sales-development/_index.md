@@ -1,29 +1,29 @@
 ---
-title: セールス開発
-description: "このページの目的は、セールス開発組織のハンドブック上のホームページとして機能することです。"
+title: Sales Development
+description: "このページの目的は、Sales Development 組織のハンドブック上のホームページとして機能することです。"
 upstream_path: /handbook/sales/sales-development/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-30T14:17:26-04:00"
-translated_at: "2026-11-01T17:57:07+00:00"
+upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
+lastmod: "2026-11-06T16:03:29-05:00"
+translated_at: "2026-11-07T01:14:28+00:00"
 translator: claude
 stale: false
 ---
 
-GitLab のセールス開発組織へようこそ！私たちは、インバウンドとアウトバウンドの両方の戦略を通じて顧客のための結果を促進するために設計されたチームです。私たちの構造は、アウトリーチ活動における効率性、応答性、創造性を最大化するように設計されています。
+GitLab の Sales Development 組織へようこそ！私たちは、インバウンドとアウトバウンドの両方の戦略を通じて、お客様の成果につなげるためのチームです。アウトリーチ活動の効率性、応答性、創造性を最大限に高める組織構成を採用しています。
 
 私たちの組織のクイック Roadshow プレゼンテーションは[こちらのスライド](https://docs.google.com/presentation/d/1SHal9oaX1C_eaVjIMACWjkK9RZZNtnTXTZVuIKR4TgA/edit)で確認できます。
 
-**1. Sales Development Representatives (SDR) — インバウンドフォーカス**
+**1. Sales Development Representatives (SDRs) — インバウンドフォーカス**
 
-主要属性: 迅速な応答時間 · グローバルカバレッジ · SLA とキャンペーンフィードバックのためのマーケティングとのアライメント · 定義された規定的なインバウンドプロセス · ラウンドロビン割り当てルール · BDR チームのタレントインキュベーター。
+主な特徴: 迅速な応答 · グローバルな対応範囲 · SLA とキャンペーンフィードバックに関する Marketing との連携 · 定義された規定的なインバウンドプロセス · ラウンドロビン割り当てルール · BDR チームのタレントインキュベーター。
 
-**2. Business Development Representatives (BDR) — アウトバウンドフォーカス**
+**2. Business Development Representatives (BDRs) — アウトバウンドフォーカス**
 
-主要属性: SAE/AE および Sales Leadership とのアライメント · Field Marketing と ABM とのコラボレーション · 戦略的なアカウントプランニングと調査 · ターゲットを絞った創造的なメッセージング · セールスチームのタレントインキュベーター。
+主な特徴: SAE/AE および Sales Leadership との連携 · Field Marketing と ABM とのコラボレーション · 戦略的なアカウントプランニングと調査 · ターゲットを絞った創造的なメッセージング · Sales チームのタレントインキュベーター。
 
 ---
 
-## セールス開発インデックス {#the-sales-dev-index}
+## Sales Dev インデックス {#the-sales-dev-index}
 
 `cmd+F` を使ってこのページを検索してください。リードスコアリングを検索するなら、`score`、`scoring`、`lead`、`MQL` のように、複数の組み合わせを試してください。
 
@@ -31,18 +31,18 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 
 | ページ | 何が見つかるか |
 | ---- | ---------------- |
-| [How-Tos ページ](/handbook/sales/sales-development/#how-tos-for-the-inbound-and-outbound-processes) | リードとアカウントの検索、インバウンド/アウトバウンドパイプラインの実行、SAO の作成、そしてすべての主要な日常プロセス。 |
+| [操作方法のページ](/handbook/sales/sales-development/#how-tos-for-the-inbound-and-outbound-processes) | リードとアカウントの検索、インバウンド/アウトバウンドパイプラインの実行、SAO の作成、そしてすべての主要な日常プロセス。 |
 | [RoE、FAQ、KPI ページ](/handbook/sales/sales-development/#frequently-asked-questions-faq) | キャリア進行、エンゲージメントルール、一般的な役割への期待、商談クレジット、ランプ期間、リードルーティング、報酬。 |
-| [Tanuki Tech ページ](/handbook/sales/sales-development/tanuki-tech/) | セールス開発チームの一員として継続するイネーブルメント。 |
+| [Tanuki Tech ページ](/handbook/sales/sales-development/tanuki-tech/) | Sales Dev チームの一員として継続するイネーブルメント。 |
 | [Sales Dev Knowledge Vault](/handbook/sales/sales-development/#general-resources) | マネージャーレベルのプロセス、マネージャーまたはチームメンバーのオンボーディング、ツールのウォークスルー。 |
 
 ### 一緒に働くチームを通常どのように支援するか {#how-we-typically-help-the-teams-we-work-with}
 
-| あなたの役割と要望は何ですか | セールス開発組織はどう支援するか |
+| あなたの役割と要望は何ですか | Sales Development 組織はどう支援するか |
 | -------------------------- | ------------------------------- |
-| 私は Field Marketer で、自分のイベントに人々を招待してほしい | 通常は[こちら](https://gitlab.com/gitlab-com/marketing/sales-development/-/issues/new)で見つけられる `FM-BDR-Collaboration-Template` という Issue テンプレートで概説されている [FM プロセス](/handbook/sales/sales-development/#field-marketing-and-bdr-collaboration-process)で協業しますが、あなたのイベントをより成功させるために常にコラボレーションに熱心です。テンプレートでカバーされていない要望の場合は、`#sales_dev_global` にご記入ください。すぐにサポートに入ります。 |
+| 私は Field Marketer で、自分のイベントに人々を招待してほしい | 通常は [FM プロセス](/handbook/sales/sales-development/#field-marketing-and-bdr-collaboration-process)に従って協業します。このプロセスは、[こちら](https://gitlab.com/gitlab-com/marketing/sales-development/-/issues/new)にある `FM-BDR-Collaboration-Template` という Issue テンプレートで説明されていますが、あなたのイベントをより成功させるために常にコラボレーションに熱心です。テンプレートでカバーされていない要望の場合は、`#sales_dev_global` にご記入ください。すぐにサポートに入ります。 |
 | 私は Account Executive で、アウトバウンド活動のためのアカウントをノミネートしたい | エンドツーエンドのアウトバウンドプロセスは[こちら](/handbook/sales/sales-development/#first-order-fo-outbound-process)です。ワークフローを自動化する最も簡単な方法は、SFDC Account レコードで **BDR Prospecting Status** フィールドを見つけ、`Queued` を選択することです。BDR チームがそれを拾い上げ、アウトバウンドパイプラインのために調査します。 |
-| 私は Account Executive で、自分のテリトリー内のアカウントの状態や見込み客の質をチェックしたい | BDR チームは、すべての関連リソースを 1 か所に集約した [1:1 ダッシュボード](/handbook/sales/sales-development/#salesforce-and-tableau-dashboards-for-team-members)のセットを使用しています。これらは通常、より良いアカウントとテリトリーのプランニングを促進するためにセールスチームとの 1:1 で使用しています。 |
+| 私は Account Executive で、自分のテリトリー内のアカウントの状態や見込み客の質をチェックしたい | BDR チームは、すべての関連リソースを 1 か所に集約した [1:1 ダッシュボード](/handbook/sales/sales-development/#salesforce-and-tableau-dashboards-for-team-members)のセットを使用しています。これらは通常、より良いアカウントとテリトリーのプランニングを促進するために Sales チームとの 1:1 で使用しています。 |
 | 私は Sales Manager で、自分のチームに提供された SAO の品質と進捗を測りたい | 結果を細かい詳細に分解する強力な[パイプライン進捗ダッシュボード](/handbook/sales/sales-development/#salesforce-and-tableau-dashboards-for-leaders)のセットがあります。SDR/BDR チームから AE チームへ案件を引き継ぐための構造化されたパスもあります。 |
 
 ### 私たちの Slack チャネル {#our-slack-channels}
@@ -88,7 +88,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 ### 私たちのダッシュボード {#our-dashboards}
 
 - [1:1 アカウントとリードレベルのダッシュボードコーチングガイダンス](/handbook/sales/sales-development/#11-account-and-lead-level-dashboard-coaching-guidance)
-- [Pipeline Dashboard コーチングガイダンス](/handbook/sales/sales-development/#pipeline-dashboard-coaching-guidance)
+- [パイプラインダッシュボードのコーチングガイダンス](/handbook/sales/sales-development/#pipeline-dashboard-coaching-guidance)
 
 #### チームメンバー向けの Salesforce および Tableau ダッシュボード {#salesforce-and-tableau-dashboards-for-team-members}
 
@@ -102,7 +102,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 | [Tableau Self-Managed Instances Database](https://10az.online.tableau.com/#/site/gitlab/views/FreetoPaidCockpitSSAOfficial/FreeSelf-ManagedInstances?%3Aiid=1) | Self-Managed Free Instances の内訳。 |
 | [Tableau Inbound Lead Database](https://10az.online.tableau.com/#/site/gitlab/views/InboundInterestFeedSSAOfficial/InboundInterestFeed-ProspectLevel?:iid=1) | インバウンドと既存リードの内訳。 |
 | [Tableau Prospecting 360 — Master](https://10az.online.tableau.com/#/site/gitlab/views/DraftProspect360V1SAFEFinal/Prospect360LandingPage?:iid=2) | 調査用の複数データポイントの結合ビュー。 |
-| [Prospecting 360 — Pursuit or FO Accounts](https://10az.online.tableau.com/#/site/gitlab/views/DraftProspect360V1SAFEFinal/Prospect360LandingPage/581358d3-3472-4006-b973-c4db683df21c/dc1a9440-5587-4720-ae06-007bc65299f1) | 過去 30 日以内にエンゲージしたリードがあり、オープン opp がないアカウント。 |
+| [Prospecting 360 — Pursuit or FO Accounts](https://10az.online.tableau.com/#/site/gitlab/views/DraftProspect360V1SAFEFinal/Prospect360LandingPage/581358d3-3472-4006-b973-c4db683df21c/dc1a9440-5587-4720-ae06-007bc65299f1) | 過去 30 日以内にエンゲージしたリードがあり、オープンな商談がないアカウント。 |
 | [Prospecting 360 — Surging & On Fire Accounts](https://10az.online.tableau.com/#/site/gitlab/views/DraftProspect360V1SAFEFinal/Prospect360LandingPage/c06f518d-df0e-4db0-8b98-f5e1a8a45ed3/da2db280-9f02-4a4e-9748-dcef783af2db) | Qualified で Surging および On Fire の新規またはエンゲージしたリードのあるアカウント。 |
 | [Prospecting 360 — Qualifying by 6Sense](https://10az.online.tableau.com/#/site/gitlab/views/DraftProspect360V1SAFEFinal/Prospect360LandingPage/b2fb7cbe-ef20-4e9c-a2ac-eb238b0021a9/UseCase3Qualifiedby6Sense?:iid=7) | Qualified パイプライン上に重ねた 6Sense インテントで優先順位付けされたアカウント。 |
 | [Prospecting 360 — AWA'd last 30 days](https://10az.online.tableau.com/#/site/gitlab/views/DraftProspect360V1SAFEFinal/Prospect360LandingPage/c58f4573-263b-4ea4-8818-8f1890d3aef8/AccountswithActivelyWorkingStartDateinLast30Days) | 過去 30 日以内に Actively Working とマークされたアカウント。 |
@@ -113,7 +113,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 
 | 名前/リンク | 説明 |
 | --------- | ----------- |
-| [Pipeline Dashboard: EMEA](https://gitlab.lightning.force.com/lightning/r/Dashboard/01ZQq000005sKjdMAE/view) | 新規リードから既存 opp までのパイプラインの俯瞰ビュー — EMEA。 |
+| [Pipeline Dashboard: EMEA](https://gitlab.lightning.force.com/lightning/r/Dashboard/01ZQq000005sKjdMAE/view) | 新規リードから既存商談までのパイプラインの俯瞰ビュー — EMEA。 |
 | [Pipeline Dashboard: APJ](https://gitlab.lightning.force.com/lightning/r/Dashboard/01ZQq000005sMFBMA2/view) | パイプラインの俯瞰ビュー — APJ。 |
 | [Pipeline Dashboard: AMER](https://gitlab.lightning.force.com/lightning/r/Dashboard/01ZQq000005shEnMAI/view) | パイプラインの俯瞰ビュー — AMER。 |
 | [Pipeline Dashboard: Global SDR](https://gitlab.lightning.force.com/lightning/r/Dashboard/01ZQq000005uFntMAE/view) | パイプラインの俯瞰ビュー — Global SDR チーム。 |
@@ -143,7 +143,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 | [Go to Market ページ](/handbook/sales/field-operations/gtm-resources/) | GTM 戦略リソース。 |
 | [Sales Development Org ジョブファミリー/レベル](/job-description-library/marketing/sales-development-representative/) | Sales Dev 組織内のジョブファミリーとレベル。 |
 | [Enterprise BDR Outbound Process Framework](https://drive.google.com/drive/search?q=%20Outbound%20Process%20Framework%22%40gitlab.com) | Enterprise BDR アウトバウンドプロセスフレームワーク。 |
-| [Sales Development Enablement Videos](https://www.youtube.com/playlist?list=PL05JrBw4t0KrjbznnEEiCtxUfT8-OV6X8) | イネーブルメント動画と How-To。 |
+| [Sales Development Enablement Videos](https://www.youtube.com/playlist?list=PL05JrBw4t0KrjbznnEEiCtxUfT8-OV6X8) | イネーブルメント動画と操作方法。 |
 | [Lead Lifecycle Handbook Page](/handbook/marketing/marketing-operations/lead-lifecycle/) | リードステータスとライフサイクル管理。 |
 | [Marketing Resource Links](https://docs.google.com/spreadsheets/d/1NK_0Lr0gA0kstkzHwtWx8m4n-UwOWWpK3Dbn4SjLu8I/edit?usp=sharing) | ホワイトペーパー、e ブック、ウェブキャスト、アナリストレポート。 |
 | [GitLab Buyer Personas](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) | バイヤーペルソナのリファレンス。 |
@@ -153,7 +153,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 
 ---
 
-## インバウンドおよびアウトバウンドプロセスの How-To {#how-tos-for-the-inbound-and-outbound-processes}
+## インバウンドおよびアウトバウンドプロセスの操作方法 {#how-tos-for-the-inbound-and-outbound-processes}
 
 インバウンドおよびアウトバウンドプロセスを順を追って説明する前に、SLA と KPI を認識することが重要です。
 
@@ -276,9 +276,9 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 
 - アカウントが Public Sector としてフラグが立っている（ウェブサイトで `.gov` パートナーシップや政府契約を確認）→ PubSec マネージャーにルーティングします。リードを自分で扱わないでください。
 
-- アカウントが `BDR Prospecting Status = Restricted` の Major テリトリーアカウントの場合 → リードをコンタクトに変換し、AE をチャタリングします。リードを扱わないでください。
+- アカウントが `BDR Prospecting Status = Restricted` の Major テリトリーアカウントの場合 → リードをコンタクトに変換し、Chatter で AE に連絡します。リードを扱わないでください。
 
-- アカウントが Actively Working でない → そのアカウントで重複リードまたはコンタクトをチェックします（ステップ 1 の結果から）。重複が存在する場合、それらをマージし、生き残るレコードで最古の `Initial Source` 値を保持します。
+- アカウントが Actively Working でない → そのアカウントで重複リードまたはコンタクトをチェックします（ステップ 1 の結果から）。重複が存在する場合、それらをマージし、存続するレコードで最古の `Initial Source` 値を保持します。
 
 - リードの `Company Address` が外部調査と一致しない → `Lead/Contact Review Admin` セクションの `Admin Company Override` フィールドを設定します。これはリード変換の必須前提条件です。
 
@@ -304,7 +304,7 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 
 **2 つのリードのマージ — [動画のウォークスルー](https://www.youtube.com/watch?v=Q_EyDQdaLZw&ab_channel=GitLabUnfiltered)**
 
-2 つのリードをマージする場合、1 つのレコードがマスター（生き残る）レコードになります。どの値を保持するかを決定するには、以下のルールを使用します:
+2 つのリードをマージする場合、1 つのレコードがマスター（存続する）レコードになります。どの値を保持するかを決定するには、以下のルールを使用します:
 
 | フィールド | ルール |
 | ----- | ---- |
@@ -327,17 +327,17 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 5. **Initial Source** を、いずれかのレコードのうち Created Date が早い方の値（通常はリード）に設定します。
 6. アカウントが SMB または Mid-Market で Customer の場合 → コンタクトのみに変換し、アカウントの AE をチャタリングして、リードの Last Interesting Moment や任意のトライアルやアウトリーチアクティビティについて通知します。
 
-### トラブルシューティング用 SFDC チャタリングガイド {#sfdc-chatter-guide-for-troubleshooting}
+### トラブルシューティング用 SFDC Chatter ガイド {#sfdc-chatter-guide-for-troubleshooting}
 
-| 問題 | 誰にチャタリングするか |
+| 問題 | Chatter で連絡する相手 |
 | ------- | -------------- |
 | SMB/MM Contact Request でアカウントが顧客 | Account Owner — メッセージのコンテキストを提供。 |
 | BDR が Actively Working でないアカウントからの MQL を受け取る | `@mktops` |
 | リードのルーティングが間違っているように見える | `@mktops` — まず `Admin Company Override` フィールドで正しい住所情報を更新し、リードレコードで **"Re-route Traction"** をクリック。特定のチームにルーティングする場合: PubSec リード → PubSec マネージャー。Startup の問い合わせ → Alex Karsten。その他のセグメント → テリトリーレポートに基づいてルーティング。 |
 | 重複アカウント | Sales Support — マージを依頼。正式にエスカレートするには、SFDC で**ケースを作成**し、重複アカウントへのリンクを含めて Sales Support に割り当てます。 |
-| Opp が誤ったデータで Stage 1 に移動 | あなたのマネージャー → 彼らが Director または Sales Dev Operations（Ramona または Sam）に連絡します。Sales Dev では他の誰も Stage 1+ の案件を編集できません。 |
+| 商談が誤ったデータで Stage 1 に移動 | あなたのマネージャー → マネージャーが Director または Sales Dev Operations（Ramona または Sam）に連絡します。Sales Dev では他の誰も Stage 1+ の案件を編集できません。 |
 | テリトリー割り当てが不明確 | 候補となる各テリトリーの AE。 |
-| opp の SAO クレジット要求 | Sales Dev Ops または担当の Sales Dev Director。 |
+| 商談の SAO クレジット要求 | Sales Dev Ops または担当の Sales Dev Director。 |
 | Restricted Status のアカウント（非 Major テリトリー） | SAE — 連絡許可を求める。AE は 48 時間以内に応答。 |
 | Restricted Status のアカウント（Major テリトリー） | AE — すぐにリードをコンタクトに変換して通知。リードを扱わないでください。 |
 
@@ -354,7 +354,7 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 
 1. リードが上記の基準を満たし、プロスペクティングの価値がないことを確認します。
 2. リードを **SPAM DELETION** Salesforce キャンペーンに追加します。キャンペーンメンバーシップのみが重要 — 選択するステータス値は削除に影響しません。
-3. 削除は Marketo を介して毎日**午前 12:05 PDT に自動的に**実行されます。緊急の削除については `#mktgops` で支援を要請 — 控えめに使用してください。
+3. 削除は Marketo を介して**毎日午前 0 時 5 分（PDT）に自動的に**実行されます。緊急の削除については `#mktgops` で支援を要請 — 控えめに使用してください。
 
 > ⚠️ このプロセスで削除されたリードは**回復できません**。100% 確信がない場合は、このキャンペーンにリードを追加しないでください。
 
@@ -362,7 +362,7 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 
 ---
 
-## リードを実行する方法 {#how-to-action-your-leads}
+## リードに対応する方法 {#how-to-action-your-leads}
 
 ### High Touch と Low Touch のリード {#high-vs-low-touch-leads}
 
@@ -389,18 +389,18 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 通話を実施する前に、SFDC の Lead または Contact レコードの **Do Not Call** フィールドを確認します。
 
 - Do Not Call = true → 通話しないでください。これを回避しようとしないでください。
-- Do Not Call = false → 現地法と任意の Marketo 自動化に従って通話が許可されます。
+- Do Not Call = false → 現地法と適用される Marketo 自動化に従って通話が許可されます。
 
-**見込み客が通話されないように求めた場合:** Do Not Call を true に設定します。電話番号を削除しないでください — どの番号がこれ以上通話されないように求めたかの記録を保持する必要があります。
+**見込み客が電話をかけないよう求めた場合:** Do Not Call を true に設定します。電話番号を削除しないでください — どの番号に対してこれ以上の電話を拒否されたかの記録を保持する必要があります。
 
 **Do Not Call のチェックを外すには**、以下の両方の条件が真でなければなりません:
 
 - 個人がメールにオプトインしている（Do Not Email フラグが false）、かつ
-- 通話または SFDC のログ記録されたメールで、通話されることを希望することを明示的に述べている。
+- 通話または SFDC のログ記録されたメールで、電話を受けることを希望すると明示的に述べている。
 
 フィールドのチェックを外す前に、オプトインメールを証拠として SFDC にログ記録してください。
 
-> ⚠️ 通話されたいかどうかを尋ねるためにオプトインしていない連絡先にメールを送ることはできません。
+> ⚠️ 電話を希望するかどうかを尋ねるために、メールへのオプトインをしていないコンタクトにメールを送ることはできません。
 
 #### メール、配信停止、Do Not Contact の自動化 {#email-unsubscribe-and-do-not-contact-automations}
 
@@ -415,14 +415,14 @@ BDR が送信するすべてのアウトバウンドメール（返信を含む�
 
 ### White Glove イベントフォローアップシーケンス {#white-glove-event-follow-up-sequences}
 
-Executive Roundtables などのハイタッチイベントの場合、リードレコードの **Last Event Notes** フィールドには、見込み客と対話した GitLab チームメンバーの名前など、特定の指示が含まれる場合があります。これらの状況には**white glove** シーケンスが必要で、Outreach Collection の `White Glove` でフィルタリングすると見つかります。
+Executive Roundtables などのハイタッチイベントの場合、リードレコードの **Last Event Notes** フィールドには、見込み客と対話した GitLab チームメンバーの名前など、特定の指示が含まれる場合があります。これらの状況には**特別対応の**シーケンスが必要で、Outreach Collection の `White Glove` でフィルタリングすると見つかります。
 
 目的は、迅速にフォローアップし、最初のタッチポイントから関連する SAE/AE を会話に参加させることです。
 
-1. 見込み客を適切な white glove シーケンスに登録します。
-2. Last Event Notes で指定された個人を参照および／または CC するように、最初のメールステップをカスタマイズします。SAE/AE がインプットを提供する時間が必要な場合は、アクティブ化する前に最初のステップを適宜遅延させます。
+1. 見込み客を適切な特別対応のシーケンスに登録します。
+2. Last Event Notes で指定された個人を参照および／または CC するように、最初のメールステップをカスタマイズします。SAE/AE が情報を提供する時間が必要な場合は、アクティブ化する前に最初のステップを適宜遅延させます。
 3. CC した SAE/AE にカスタマイズされた最初のメールのスクリーンショットを送信し、見込み客が応答しない場合により個別化されたフォローアップを可能にするために含まれていることを説明します。
-4. Day 12 に、見込み客のエンゲージメントが発生していない場合に SAE/AE にフォローアップするよう促す内蔵タスクがあります。このタッチポイントを使用して、更新を共有し、次のステップについてアライメントします。
+4. 12 日目に、見込み客のエンゲージメントが発生していない場合に SAE/AE にフォローアップするよう促す内蔵タスクがあります。このタッチポイントを使用して、更新を共有し、次のステップについてアライメントします。
 
 ### High Priority キャンペーンとリード {#high-priority-campaigns-and-leads}
 
@@ -450,7 +450,7 @@ High Priority のリードは、SFDC の **B1 priority view** に自動的に表
 
 **シーケンスの翻訳** — 上記のガバナンスプロセスを完了したシーケンスのみを翻訳します。[Localization Issue Tracker](https://gitlab.com/gitlab-com/localization/issue-tracker/-/issues)で英語のシーケンスリンク、ターゲット言語、ゴーライブ日（少なくとも 2 週間先）、ペルソナ/モーションのコンテキストを含む Issue を開きます。Outreach で英語のシーケンスをクローンし、ステップを翻訳されたコンテンツに置き換え、ステップの順序、リンク、トラッキング、トークンを保持します。
 
-| 言語 | Sales Dev DRI | Localization Support | 備考 |
+| 言語 | Sales Dev DRI | ローカライズ支援 | 備考 |
 | -------- | ------------- | -------------------- | ----- |
 | AMER スペイン語 | Kenia Rodriguez | ✅ | — |
 | AMER ポルトガル語 | Leo Viera | ✅ | — |
@@ -489,10 +489,10 @@ FO アウトバウンドは、親レベルで以前のコマーシャル関係�
 | **BDR Recycle Date** | Actively Working Start Date から 2 か月後に自動設定。手動で延長可能。 |
 | **Worked in FY Reason** | Worked in FY に遷移したときに自動入力。早期に移動する場合は手動で設定する必要があります（例: `No FO potential`、`Territory change`）。 |
 | **6QA Acceptance Status** | `Accepted` または `Disputed` — 6QA によって AW に自動移動されたアカウントについて**当日中に**設定する必要があります。 |
-| **6QA Dispute Reason** | 6QA Acceptance Status = Disputed のときに必須。SDR がアクティブな opp を持つ場合は `Account in open opportunity` を使用。アカウントの価値の潜在性が低い場合は `Low LAM Dev Count` を使用。 |
+| **6QA Dispute Reason** | 6QA Acceptance Status = Disputed のときに必須。SDR がアクティブな商談を持つ場合は `Account in open opportunity` を使用。アカウントの価値の潜在性が低い場合は `Low LAM Dev Count` を使用。 |
 | **Days in Actively Working Status** | Worked in FY に移動する前の Actively Working の自動計算された期間。サイクルタイムとデータの管理状態に関するレポートに使用。 |
 
-> **6QA 注:** 6QA アカウントが FO アカウントでない場合、BDR Prospecting Status はまず `SDR Hold` に 14 日間設定される場合があります。opp が作成されない場合、BDR 所有権で `Actively Working / Showing Intent` に自動遷移します。
+> **6QA 注:** 6QA アカウントが FO アカウントでない場合、BDR Prospecting Status はまず `SDR Hold` に 14 日間設定される場合があります。商談が作成されない場合、BDR 所有権で `Actively Working / Showing Intent` に自動遷移します。
 
 ### FO アウトバウンドフェーズ 1 — プランニング {#fo-outbound-phase-1--planning}
 
@@ -506,17 +506,17 @@ FO アウトバウンドは、親レベルで以前のコマーシャル関係�
 
 Account オブジェクトの **Traction Hierarchies** タブで、`Domestic Parent Account` がターゲットアカウントの DPA と一致するすべてのアカウントを確認します。Domestic Region 内のいずれのアカウントも、Customer Status が `Customer` であってはならず、`CARR (This Account)` の値がゼロより大きくてはいけません（コンピュート分のみを購入した場合を除きます。費用が $10 の整数倍なので簡単に識別できます）。
 
-**条件 2 — 過去 180 日以内に失われた更新がない**
+**条件 2 — 過去 180 日以内に更新商談の失注がない**
 
-Domestic Region 内で `Domestic Parent Account` にリンクされた `Former Customer` アカウントのすべての opp を確認します。Closed-Lost opp の `Close Date` が過去 180 日以内であってはなりません。
+Domestic Region 内で `Domestic Parent Account` にリンクされた `Former Customer` アカウントのすべての商談を確認します。Closed-Lost 商談の `Close Date` が過去 180 日以内であってはなりません。
 
-**条件 3 — オープンな opp がない**
+**条件 3 — オープンな商談がない**
 
 **Traction Hierarchies** タブで、同じ `Domestic Parent Account` にリンクされたアカウントの `Number of open opportunities` 列を確認します。
 
-→ 3 つの条件すべてがパス → アカウントは First Order として認定されます。
+→ 3 つの条件すべてを満たす → アカウントは First Order として認定されます。
 
-→ いずれかの条件が失敗 → アカウントは FO ではありません。First Order として追求しないでください。
+→ いずれかの条件を満たさない → アカウントは FO ではありません。First Order として追求しないでください。
 
 検証後、アカウントをコホート（例: `FO: high 6Sense intent`、`FO: strategic logos`、`FO: Free users`）にグループ化し、週あたり何アカウントを AWA に移動するか、アカウントあたり何見込み客をシーケンスするか（推奨: 5〜10）、ペルソナ、価値ドライバー、または組み合わせで集中するかを決定します。
 
@@ -529,7 +529,7 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 | シグナル | どこで見つけるか | プロスペクティングの価値 |
 | ------ | ---------------- | ----------------- |
 | 過去のプロスペクティング | `BDR Account Research`、`BDR Next Steps`、`BDR Prospecting Status` の履歴 | 以前のメッセージングと、アカウントがリサイクルされた理由を明らかにし、重複を避けます。 |
-| 過去の案件 | Opportunity オブジェクト — `Stage`、`Close Reason`、`Qualification Notes`、`AE notes` を確認 | クローズロストの opp は反論を明らかにします。6〜12 か月前に失われた opp は、更新されたメッセージングで再エンゲージする価値がある場合があります。 |
+| 過去の案件 | Opportunity オブジェクト — `Stage`、`Close Reason`、`Qualification Notes`、`AE notes` を確認 | クローズロストの商談は反論を明らかにします。6〜12 か月前に失われた商談は、更新されたメッセージングで再エンゲージする価値がある場合があります。 |
 | 過去のリードとコンタクト | Lead および Contact オブジェクト — `Last Interesting Moment`、`Last Activity Date`、`Marketo activity` を確認 | ウォームコンタクトと以前のコールドリードを特定して、ターゲットを絞った再エンゲージメントに使用します。 |
 | アカウントのインテントシグナル | `6Sense Timeline` と `keyword activity`（6Sense 統合タブを介してアカウントレコードで表示） | アカウントが積極的に調査しているトピックを示し、アウトリーチのタイミングに使用します。 |
 | アカウントの健全性と製品の使用 | `Account health` フィールド、`product usage data`（利用可能な場合） | コマーシャルライセンスなしでの高い使用量 = 強力な Free-to-Paid トリガー。 |
@@ -581,19 +581,19 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 
 ### アウトバウンドアカウントランキングマトリックス {#outbound-account-ranking-matrix}
 
-| 優先度 | AWA の % | ICP フィット | トリガー | 戦略 | Next Step のケイデンス |
+| 優先度 | AWA の % | ICP フィット | トリガー | 戦略 | 次のステップの実行頻度 |
 | -------- | -------- | ------- | -------- | -------- | ----------------- |
-| **Priority 1** | 15% | 強い | あり — 特定で時限式 | アカウントごとにテーラリング | 未来日付、特定のノート |
-| **Priority 2** | 35% | 良好 | なし | ペルソナまたは業界別にターゲット | 毎週または隔週で更新 |
-| **Priority 3** | 50% | 良好 | 最近のトリガーなし | ナーチャーベース | 毎月更新 |
+| **優先度 1** | 15% | 強い | あり — 具体的で期限がある | アカウントごとにテーラリング | 将来の日付を設定した具体的なノート |
+| **優先度 2** | 35% | 良好 | なし | ペルソナまたは業界別にターゲット | 毎週または隔週で更新 |
+| **優先度 3** | 50% | 良好 | 最近のトリガーなし | ナーチャーベース | 毎月更新 |
 
-**追加のスコアリング修飾子:**
+**スコアリングの追加条件:**
 
 - 現在の Community Edition (CE) 使用
 - 250 人以上の従業員
 - 高成長、テクノロジー、金融サービス、ヘルスケア、または規制対象業界
 - 早期 DevOps 採用者: Kubernetes、コンテナ、マイクロサービス、マルチクラウド、CI/CD、SAST/DAST、デジタルトランスフォーメーション
-- スタッフ上の複数の DevOps 役割または積極的に採用中
+- 複数の DevOps 職のスタッフが在籍、または積極的に採用中
 
 ### 成長戦略、ランキング、RoE {#growth-strategies-ranking-and-roe}
 
@@ -611,11 +611,11 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 
 | ランク | プロファイル | 戦略 |
 | ---- | ------- | -------- |
-| **Rank 1 — EwP** | 高い 6Sense インテントスコア | AE との緊密な戦略的パートナーシップで BDR がハイタッチ。 |
-| **Rank 2** | 階層に Core/CE ユーザーがいる ICP Domestic Parent Account、Total CARR/LAM が利用可能、中または低い 6Sense インテント、現在の FQ で小規模な更新 | 標準 BDR アウトバウンドケイデンス。 |
-| **Rank 3** | Rank 2 と同様だが ICP ではない | ナーチャーベースのモーション。 |
+| **ランク 1 — EwP** | 高い 6Sense インテントスコア | AE との緊密な戦略的パートナーシップで BDR がハイタッチ。 |
+| **ランク 2** | 階層に Core/CE ユーザーがいる ICP Domestic Parent Account、Total CARR/LAM が利用可能、中または低い 6Sense インテント、現在の FQ で小規模な更新 | 標準 BDR アウトバウンドケイデンス。 |
+| **ランク 3** | ランク 2 と同様だが ICP ではない | ナーチャーベースのモーション。 |
 
-**プロフェッショナルサービス機会:** PS Opportunity は、別途販売され、別途請求される任意の統合、コンサルティング、トレーニングをカバーします。PS の opp は Sales Development に**クレジットされません** — アカウント AE に直接渡します。
+**Professional Services の商談:** PS Opportunity は、別途販売され、別途請求される任意の統合、コンサルティング、トレーニングをカバーします。PS の商談は Sales Development に**クレジットされません** — アカウント AE に直接渡します。
 
 ## エンゲージメントルール (RoE) {#rules-of-engagement-roe}
 
@@ -623,25 +623,25 @@ Domestic Region 内で `Domestic Parent Account` にリンクされた `Former C
 
 ### SDR インバウンド RoE {#sdr-inbound-roe}
 
-> インバウンドリードを実行する前に、上記の [ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認します。満たす場合は、実行しないでください — ISR キューに保留します。
+> インバウンドリードに対応する前に、上記の [ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認します。満たす場合は、対応しないでください — ISR キューに保留します。
 
 **SMB (0〜250 従業員)**
 
-→ 顧客 → 実行しないでください。あなたにルーティングされた場合は SMB チームに渡します。更新の必要性がある場合は、コンタクトに変換して更新ケースを作成します。
+→ 顧客 → 対応しないでください。あなたにルーティングされた場合は SMB チームに渡します。更新の必要性がある場合は、コンタクトに変換して更新ケースを作成します。
 
-→ 見込み客 → SDR が実行できます。
+→ 見込み客 → SDR が対応できます。
 
 **Mid-Market (250〜4,000 従業員)**
 
-→ 顧客 → 実行しないでください。BDR Assigned（Actively Working の場合）、AE Account Owner（AWA でない場合）、Base BDR（Base テリトリーの場合）、または Account Owner（パートナーアカウントの場合）にルーティングします。
+→ 顧客 → 対応しないでください。BDR Assigned（Actively Working の場合）、AE Account Owner（AWA でない場合）、Base BDR（Base テリトリーの場合）、または Account Owner（パートナーアカウントの場合）にルーティングします。
 
-→ 見込み客 → アカウントが Actively Working でなく、オープンな Opportunity がなく、Base テリトリーの一部でない場合、実行できます。
+→ 見込み客 → アカウントが Actively Working でなく、オープンな Opportunity がなく、Base テリトリーの一部でない場合、対応できます。
 
 **Large / Enterprise (4,000+ 従業員)**
 
-→ 顧客 → アカウントが Actively Working、Base テリトリーの一部、またはオープンな Opportunity がある場合、実行しないでください。AWA の場合は BDR Assigned に渡します。顧客を実行する場合は、まず AE とアライメントします。
+→ 顧客 → アカウントが Actively Working、Base テリトリーの一部、またはオープンな Opportunity がある場合、実行しないでください。AWA の場合は BDR Assigned に渡します。顧客に対応する場合は、まず AE とアライメントします。
 
-→ 見込み客 → アカウントが Actively Working でなく、Base テリトリーの一部でない場合、実行できます。
+→ 見込み客 → アカウントが Actively Working でなく、Base テリトリーの一部でない場合、対応できます。
 
 ### ISR インバウンド RoE {#isr-inbound-roe}
 
@@ -677,7 +677,7 @@ Inside Sales Representative (ISR) チームは、プロダクトレッドグロ�
 
 **ステップ 2 — リードは既存のアカウントからですか？**
 
-→ いいえ → リードが [ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認。はいの場合 → ISR キューに保留。ここで停止。いいえの場合 → SDR チームがこのリードを実行。ここで停止。
+→ いいえ → リードが [ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認。はいの場合 → ISR キューに保留。ここで停止。いいえの場合 → SDR チームがこのリードに対応。ここで停止。
 
 → はい → ステップ 3 に進む。
 
@@ -685,17 +685,17 @@ Inside Sales Representative (ISR) チームは、プロダクトレッドグロ�
 
 → いいえ → ステップ 4 に進む。
 
-→ はい → ステップ 4 に進む（更新 opp を確認）。
+→ はい → ステップ 4 に進む（更新商談を確認）。
 
 **ステップ 4 — 既存の更新 Opportunity がありますか？**
 
-→ はい → [更新の Sales RoE](https://internal.gitlab.com/handbook/sales/go-to-market/rules-of-engagement/#crediting--splits)とアライメント。SDR/BDR は更新 opp でクレジットを受け取りません。例外が必要だと考える場合は Sales Ops に連絡してください。ここで停止。
+→ はい → [更新の Sales RoE](https://internal.gitlab.com/handbook/sales/go-to-market/rules-of-engagement/#crediting--splits)とアライメント。SDR/BDR は更新商談でクレジットを受け取りません。例外が必要だと考える場合は Sales Ops に連絡してください。ここで停止。
 
 → いいえ → ステップ 5 に進む。
 
 **ステップ 5 — アカウントは Actively Working ですか？**
 
-→ いいえ → リードが [ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認。はいの場合 → ISR キューに保留。ここで停止。いいえの場合 → SDR チームがこのリードを実行。ここで停止。
+→ いいえ → リードが [ISR 基準](/handbook/sales/sales-development/#isr-inbound-roe)を満たすかを確認。はいの場合 → ISR キューに保留。ここで停止。いいえの場合 → SDR チームがこのリードに対応。ここで停止。
 
 → はい → ステップ 6 に進む。
 
@@ -703,29 +703,29 @@ Inside Sales Representative (ISR) チームは、プロダクトレッドグロ�
 
 SFDC のアカウントレベルで確認するか、[このレポート](https://gitlab.my.salesforce.com/00O8X000008RfvU)を使用 — 会社名とメールドメインでフィルタし、過去 30 日のアクティビティを探します。
 
-→ はい → BDR Assigned がこのリードを実行。ここで停止。
+→ はい → BDR Assigned がこのリードに対応。ここで停止。
 
-→ いいえ → SDR チームがこのリードを実行。SDR は BDR Assigned とそのマネージャーをチャタリングして通知します。BDR マネージャーは BDR Prospecting Status を適宜更新します。ここで停止。
+→ いいえ → SDR チームがこのリードに対応。SDR は BDR Assigned とそのマネージャーをチャタリングして通知します。BDR マネージャーは BDR Prospecting Status を適宜更新します。ここで停止。
 
 **ステップ 7 — アカウントの BDR Prospecting Status は何ですか？**
 
-→ Queued または Worked in FY → SDR チームがこのリードを実行。ここで停止。
+→ Queued または Worked in FY → SDR チームがこのリードに対応。ここで停止。
 
-→ Restricted → BDR Assigned にルーティング。BDR は SAE をチャタリング: SAE は BDR にアウトリーチを希望するか、それとも SAE が自分で管理するか？SAE は 48 時間以内に応答する必要があります。BDR が承認された場合 → リードレコードを進めます。AE が所有することを希望する場合 → リードをコンタクトに変換。ここで停止。
+→ Restricted → BDR Assigned にルーティング。BDR は Chatter で SAE に確認します。BDR にアウトリーチしてほしいのか、それとも SAE が自分で対応するのか？SAE は 48 時間以内に応答する必要があります。BDR が承認された場合 → リードレコードを進めます。AE が所有することを希望する場合 → リードをコンタクトに変換。ここで停止。
 
 **ステップ 8 — 新しい MQL は同じ会社の既存の MQL と関連していますか？**
 
 会社名またはメールドメインでマッチ。
 
-→ いいえ → ラウンドロビン経由で受け取った SDR がこのリードを実行。ここで停止。
+→ いいえ → ラウンドロビン経由で受け取った SDR がこのリードに対応。ここで停止。
 
 → はい → ステップ 9 に進む。
 
-**ステップ 9 — 既存の MQL は過去 30 日以内のアクティビティ、または未来のタスクがスケジュールされた Accepted または Qualifying ステータスですか？**
+**ステップ 9 — 既存の MQL は Accepted または Qualifying ステータスで、過去 30 日以内のアクティビティ、またはスケジュール済みの今後のタスクがありますか？**
 
 → はい → 既存の MQL のオーナーに割り当て。ここで停止。
 
-→ いいえ → ラウンドロビン経由で受け取った SDR がこのリードを実行。不明な場合は関連 SDR と再確認。ここで停止。
+→ いいえ → ラウンドロビン経由で受け取った SDR がこのリードに対応。不明な場合は関連 SDR と再確認。ここで停止。
 
 **ステップ 10 — リードは UserGems によって自動生成されましたか？**
 
@@ -739,9 +739,9 @@ SFDC のアカウントレベルで確認するか、[このレポート](https:
 
 テリトリーが 1 つの BDR から別の BDR に移動し、出ていく BDR が同じチームに留まる場合、出ていく BDR は特定のアカウントの所有権を一時的に保持できる場合があります — マネージャーの承認次第です。保留時に Issue が作成され、30 日後にレビューされます。
 
-**双方向のエンゲージメントアカウント:** 出ていく BDR は、IQM と新しい opp につながる可能性のある双方向のエンゲージメントを実証できる任意のアカウントを保持できます。30 日後に IQM が設定されておらず、Stage 0 opp が存在しない場合 → アカウントは新しい BDR に移動します。新しい opp が作成された場合 → opp が認定されるかされないまで、アカウントは出ていく BDR に留まります。
+**双方向のエンゲージメントアカウント:** 出ていく BDR は、IQM と新しい商談につながる可能性のある双方向のエンゲージメントを実証できる任意のアカウントを保持できます。30 日後に IQM が設定されておらず、Stage 0 商談が存在しない場合 → アカウントは新しい BDR に移動します。新しい商談が作成された場合 → 商談の見込み評価で適格または不適格と判断されるまで、アカウントは出ていく BDR に留まります。
 
-**既存の Stage 0 案件アカウント:** 出ていく BDR は、これらを 30 日間保持できます。30 日後に opp が認定されない場合 → アカウントは新しい BDR に移動します。
+**既存の Stage 0 案件アカウント:** 出ていく BDR は、これらを 30 日間保持できます。30 日後に商談が認定されない場合 → アカウントは新しい BDR に移動します。
 
 **自発的に戻ってきた見込み客:** アカウントが再割り当てされ、見込み客が新しい BDR からの事前アクティビティなしで戻ってきた場合 → マネージャーのチームが SAO クレジットを受け取ります。
 
@@ -777,7 +777,7 @@ SFDC 案件を作成するための完全なウォークスルーは[こちら](
 
 AE/SAL は、Next Steps Date フィールドに反映されたミーティング日から 48 時間以内に IQM の後に Opportunity を Stage 1 Discovery に移動します。Opportunity の Close Date はデフォルトで四半期の最終日になります — ベストプラクティスは作成日から少なくとも 90 日先に設定することです。
 
-Opportunity が Stage 1 に移動した後に誤ったデータがある場合 → マネージャーをチャタリング → 彼らが Sales Dev Operations の誰か（Ramona または Sam）をチャタリング。Sales Dev では他の誰も Stage 1 以降の Opportunity を編集できません。
+Opportunity が Stage 1 に移動した後に誤ったデータがある場合 → マネージャーをチャタリング → マネージャーが Sales Dev Operations の担当者（Ramona または Sam）をチャタリング。Sales Dev では他の誰も Stage 1 以降の Opportunity を編集できません。
 
 Opportunity が既存の中央 Opportunity を持つ Large アカウント内の新しいユーザーグループに対するものである場合 → あなたの Opportunity はそれにマージされるべきです。[Stage 8 ガイダンス](/handbook/sales/field-operations/gtm-resources/#opportunity-stages)を参照してください。
 
@@ -805,7 +805,7 @@ Opportunity が既存の中央 Opportunity を持つ Large アカウント内の
 
 **シナリオ C — 新規アカウントからのリード:**
 
-→ 見込み客の会社の従業員数と本社所在地を、メールまたはログ記録された通話ノートで確認。
+→ 会社の従業員数と本社所在地を、メールまたは記録した通話ノートを通じて見込み客に確認。
 
 → ZoomInfo、Cognism、Sales Navigator とクロスリファレンス。
 
@@ -838,7 +838,7 @@ BDR-AE 引き継ぎプロセスには 3 つのゴールがあります: 見込�
 - IQM は少なくとも 48 営業時間前に予約する。
 - アウトバウンド SAO 認定基準を完全に満たすか、相互のコマンドプランを構築するために AE と協力する。
 - AE は IQM から 8 営業時間以内に SAO を受け入れ、認定と引き継ぎフィードバックを伴って BDR と AE マネージャーをタグ付けしたチャタリングノートを残す必要があります。
-- AE は引き継ぎ後に見込み客の関係を所有 — 再スケジュールや衝突の管理を含む。
+- AE は引き継ぎ後の見込み客との関係を担当します — 再スケジュールや予定の重複の調整を含みます。
 
 #### 1. BDR Qualified Meeting {#1-bdr-qualified-meeting}
 
@@ -859,8 +859,8 @@ Joint IQM は、事前に合意された Actively Working アカウントから�
 **コール前の BDR のステップ:**
 
 1. AE のカレンダーに直接 Outreach を介してスケジュール — 15 分の Discovery Call 形式。
-2. SFDC opportunity を作成し、事前決定された調査をログ記録。
-3. AE とアライメントし、相互のコマンドプランを構築。キックオフ時に、BDR の調査と購買判断を促すきっかけを要約。見込み客が彼らの状況を認めた後、事前に合意された発見構造を続行。
+2. SFDC 商談を作成し、事前決定された調査をログ記録。
+3. AE とアライメントし、相互のコマンドプランを構築。キックオフ時に、BDR の調査と購買判断を促すきっかけを要約。見込み客が自分たちの状況を確認した後、事前に合意したヒアリングの構成に従って進めます。
 
 #### IQM のスケジュール — チェックリスト {#scheduling-iqms--checklist}
 
@@ -876,11 +876,11 @@ Joint IQM は、事前に合意された Actively Working アカウントから�
 
 6. **時間通りに出席** → AE と BDR/SDR の両方が 5 分前にカメラオン、静かな屋内の場所で出席すべきです。
 
-7. **24 時間以内に振り返り** → ゴール: AE と BDR/SDR が opp がフリップされたか、認定されなかったかについて振り返り。書面でのフィードバックを Slack またはメール経由で、AE が SFDC に追加。
+7. **24 時間以内に振り返り** → ゴール: AE と BDR/SDR が商談がフリップされたか、認定されなかったかについて振り返り。書面でのフィードバックを Slack またはメール経由で、AE が SFDC に追加。
 
-8. **IQM ノートをログ記録** → opportunity の Initiative セクションに追加: 出席者、生のノート、質問、要約、Next Steps。
+8. **IQM ノートをログ記録** → 商談の Initiative セクションに追加: 出席者、生のノート、質問、要約、Next Steps。
 
-9. **ノーショーの再予約** → BDR/SDR が構造化された Outreach シーケンスを介して再予約を所有。最大 2 週間アウトリーチ。IQM を再スケジュールできない場合、AE は opportunity を認定解除します。
+9. **ノーショーの再予約** → BDR/SDR が構造化された Outreach シーケンスを介して再予約を所有。最大 2 週間アウトリーチ。IQM を再スケジュールできない場合、AE は商談を認定解除します。
 
 #### リセラーとの作業 {#working-with-resellers}
 
@@ -890,9 +890,9 @@ Joint IQM は、事前に合意された Actively Working アカウントから�
 | ---- | ------ |
 | 1. 請求とエンドユーザーの詳細を集める | 請求会社名/住所、請求コンタクト/メール、エンドユーザー会社名/住所、エンドユーザーコンタクト/メール。 |
 | 2. エンドユーザーの詳細で新しいリードレコードを作成 | 元のリードからすべてのノートをコピー。これが変換されるレコードです。 |
-| 3. 新しいリードを変換 | opp を命名: `[End-user account] via [Reseller account]`。元のリセラーリードを、リセラーアカウントの Contact に変換（アカウントが存在しない場合は作成）。同じアカウントオーナーに割り当て。このリードで新しい opp を作成しないでください。 |
-| 4. opportunity にアクティビティを添付 | Activity History → 関連する各アクティビティを編集 → Related To ドロップダウンから `Opportunity` を選択 → 新しい opp を検索 → 保存。 |
-| 5. opportunity を更新 | Business type = New Business、stage = Pending Acceptance。Contacts の下: リセラーコンタクトを `Reseller`（主要）として追加。Partners の下: リセラーアカウントを `VAR/Reseller` として追加。 |
+| 3. 新しいリードを変換 | 商談を命名: `[End-user account] via [Reseller account]`。元のリセラーリードを、リセラーアカウントの Contact に変換（アカウントが存在しない場合は作成）。同じアカウントオーナーに割り当て。このリードで新しい商談を作成しないでください。 |
+| 4. 商談にアクティビティを添付 | Activity History → 関連する各アクティビティを編集 → Related To ドロップダウンから `Opportunity` を選択 → 新しい商談を検索 → 保存。 |
+| 5. 商談を更新 | Business type = New Business、stage = Pending Acceptance。Contacts の下: リセラーコンタクトを `Reseller`（主要）として追加。Partners の下: リセラーアカウントを `VAR/Reseller` として追加。 |
 
 ---
 
@@ -906,15 +906,15 @@ Outreach は、Sales および Sales Dev 向けのアウトバウンドエンゲ
 
 - **MM+ の有望なトライアル – MQL 化とルーティングの自動化**
 
- すべての **MM+ の「有望な」トライアル**（ビジネスメール + トライアル開始、SaaS および self-managed）は、**Marketo スコアリングを介して自動的に MQL 化** するよう構成されており、追加で週あたり 160〜180 件の FO MM+ MQL を生成し、それらは FY27 リード/コンタクトルーティングルールに基づいて Traction 経由で Sales Dev (BDR/SDR/ISR) にルーティングされます。[Scoring Change: Auto-MQL all MM+ Trials](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11062)、[Scoring Change: Valuable MM+ ICP SaaS Trials update to auto-MQL](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/10947)、[MM+ Trials – Route to SDR](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11097)、[Marketo MQL とリードスコアリングのドキュメント](/handbook/marketing/marketing-operations/marketo/#mql-and-lead-scoring)を参照。
+ すべての **MM+ の「有望な」トライアル**（ビジネスメール + トライアル開始、SaaS および self-managed）は、**Marketo スコアリングを介して自動的に MQL 化** するよう構成されており、追加で週あたり 160〜180 件の FO MM+ MQL を生成し、それらは FY27 リード/コンタクトルーティングルールに基づいて Traction 経由で Sales Dev (BDR/SDR/ISR) にルーティングされます。[スコアリングの変更: すべての MM+ トライアルを自動で MQL 化](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11062)、[スコアリングの変更: 有望な MM+ ICP SaaS トライアルを自動で MQL 化するための更新](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/10947)、[MM+ トライアル – SDR へのルーティング](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11097)、[Marketo MQL とリードスコアリングのドキュメント](/handbook/marketing/marketing-operations/marketo/#mql-and-lead-scoring)を参照。
 
 - **MM+ トライアルの英語版自動シーケンス登録の試験運用（シーケンス 1495）**
 
- MM+ トライアルの実験の一部として、**英語版試験運用コホート（AMER/EMEA、優先言語なし）に属する MM+ の有望なトライアルリード**は、以前は単一の SDR にルーティングされていましたが、現在は **SDR に代わって Outreach シーケンス 1495 に自動シーケンス化** され、よりクローズ指向のメッセージングをテストし、今後の ISR モーションに情報を提供します。[Create automation for English pilot trials to automatically be sequenced](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11520)（上記の MM+ トライアルの自動 MQL 化ワークアイテムに関連）を参照。
+ MM+ トライアルの実験の一部として、**英語版試験運用コホート（AMER/EMEA、優先言語なし）に属する MM+ の有望なトライアルリード**は、以前は単一の SDR にルーティングされていましたが、現在は **SDR に代わって Outreach シーケンス 1495 に自動シーケンス化** され、よりクローズ指向のメッセージングをテストし、今後の ISR モーションに情報を提供します。[英語版試験運用トライアルを自動でシーケンスに登録する自動化の作成](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11520)（上記の MM+ トライアルの自動 MQL 化ワークアイテムに関連）を参照。
 
 - **FO MM+ の有望な無料 SaaS 登録 – XDR の Outreach シーケンス**
 
- **FO MM+ の有望な無料 SaaS 登録**の取り組みは、見込み評価済みの無料グループネームスペースへの登録 (MM+ FO) を Marketo/SFDC にロードし、それらを XDR が所有する Outreach シーケンスに**追加し始めます**。これにより、オプトイン済みで製品利用に基づく見込み評価を通過した無料ユーザーがナーチャーだけでなく構造化されたフォローアップを受け取れるようにし、トリガー、キャンペーン、ナーチャー除外のための支援ワークアイテムも備えます。[Begin to add FO MM+ Valuable Free SaaS Signups to XDR Outreach Sequence](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11274)、[Build Email for MM+ Valuable Free Users Signup](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11277)、[Marketo & SFDC Campaign Creation – FO MM+ Valuable Free Users](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11278)を参照。
+ **FO MM+ の有望な無料 SaaS 登録**の取り組みは、見込み評価済みの無料グループネームスペースへの登録 (MM+ FO) を Marketo/SFDC にロードし、それらを XDR が所有する Outreach シーケンスに**追加し始めます**。これにより、オプトイン済みで製品利用に基づく見込み評価を通過した無料ユーザーがナーチャーだけでなく構造化されたフォローアップを受け取れるようにし、トリガー、キャンペーン、ナーチャー除外のための支援ワークアイテムも備えます。[FO MM+ の有望な無料 SaaS 登録を XDR の Outreach シーケンスに追加開始](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11274)、[MM+ の有望な無料ユーザー登録向けメールの作成](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11277)、[Marketo と SFDC のキャンペーン作成 – FO MM+ の有望な無料ユーザー](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/work_items/11278)を参照。
 
 追加の Outreach 駆動の自動化（トリガー、ルールセット、シーケンス、レポート）については、メインの [Marketing Operations Outreach ページ](/handbook/marketing/marketing-operations/outreach/)を参照してください。
 
@@ -945,7 +945,7 @@ RelevanceAI は、GitLab の Sales Development 向け AI ワークフォース�
 | EMA | インバウンド SDR | 対象となる購買意欲の低いトライアルリードに合わせた最初のメールを作成・送信し、承認済みシーケンスに登録 | 承認済みの低意欲トライアルのユースケースのみで稼働中 |
 | Quali | SDR および BDR の見込み評価 | Qualifying ステータスのリードを監査し、フォローアップ、リサイクル、連絡途絶、完了した作業を特定 | 見込み評価中のリード全体で稼働中、継続的にイテレーションを実施 |
 | Atlas | アウトバウンド BDR | アカウントをリサーチし、優先度をスコア化し、コンタクトを推奨して、訴求の切り口を提示 | BDR チーム全体で稼働中、利用とワークフローの拡大を継続 |
-| Prose | アウトバウンド BDR | Atlas のリサーチから、Outreach で確認するための見込み客ごとのメールコンテンツを下書き | 展開・構築中、BDR による確認が引き続き必須 |
+| Prose | アウトバウンド BDR | Atlas のリサーチから、Outreach で確認するための見込み客ごとのメールコンテンツを下書き | BDR チーム全体で稼働中 |
 | Ghosty | SDR の見込み評価中のフォローアップ | 見込み客の反応がなくなった際に SDR が確認するためのフォローアップメールの下書きを作成、自動送信は行わない | SDR 向けに稼働中、下書きの作成のみ |
 | WALL-E | SDR および BDR のデータ品質 | Quali がタグ付けしたリードのリサイクル適格性をスケジュールに従って確認し、対象のリードを Salesforce で Recycle に移行 | 稼働中、スケジュールに従って実行 |
 
@@ -1023,9 +1023,63 @@ BDR は最初に短い概要を確認し、その後、完全な概要、アカ�
 
 Atlas が推奨した見込み客であることだけで、シーケンスに登録すべきだと判断しないでください。所有者、既存の活動、アカウントの状況、コンタクトの質、その人物がまったく新しい対象なのか、すでに対応中なのかを確認してください。
 
-#### Prose と今後のアウトバウンド自動化 {#prose-and-future-outbound-automation}
+#### Prose: アウトバウンドメールのシーケンス登録 {#prose-outbound-email-sequencing}
 
-Prose は、Atlas が推奨した見込み客向けのメール作成機能として計画されています。現在の設計では、Atlas のリサーチから見込み客ごとの下書きを作成し、BDR が確認できるよう Outreach に配置します。Prose を完全に自律的な送信機能として説明しないでください。BDR は、送信前に下書きの確認、編集、削除、却下ができなければなりません。
+Prose は、BDR 向けにコールドアウトバウンドメールのシーケンスを作成する Relevance AI エージェントです。Atlas と連携し、Atlas が調査を、Prose が文章作成を担当します。どちらもバックグラウンドで動作するため、BDR は Salesforce と Outreach だけで作業します。
+
+Prose はアカウントごとに Atlas の調査から上位 5 人のコンタクトを選び、各コンタクトに 5 通のメールを下書きして、BDR の Outreach シーケンスで確認できるようにします。
+
+##### Atlas と Prose の役割 {#what-atlas-and-prose-do}
+
+| トリガー（Salesforce 内） | エージェントの動作 | 得られるもの |
+|---|---|---|
+| **Atlas** — Account を *Actively Working* に設定します（予備の方法: *Request Relevance Research* にチェックを入れます） | アカウントの商談と活動、ニュース、LinkedIn、ZoomInfo、6sense のインテントを読み取り、コンタクトを Tier 0–3 に順位付けします | Account 上に、調査概要、Tier 0–3 のコンタクト、Lead として追加された未登録のコンタクトが表示されます |
+| **Prose** — Atlas の調査が反映された後、同じ Account の *Request Relevance Outreach* にチェックを入れます | Atlas の調査を確認し、上位 5 人のコンタクトを選んで、それぞれに 5 通のメールを作成します | Outreach シーケンスにコンタクトごとに 5 通のメールが用意され、確認後に自分のメールボックスから送信されます |
+
+Prose が選ばなかったコンタクトも Atlas の調査には残るため、手動で対応できます。
+
+##### 5 通のメールで構成されるシーケンス {#the-five-email-sequence}
+
+1. 紹介: 自分と担当 AE
+2. 実際に確認できたシグナルを 1 つ
+3. コンタクトの役職に基づく質問
+4. 「よく耳にするのは…」
+5. 紹介の依頼
+
+Prose はコールドアウトバウンド専用です。他の営業施策には別のシーケンスを使ってください。
+
+##### Prose の使い方 {#how-to-use-prose}
+
+順序が重要です。Prose が文章を作成するには、事前に Atlas の調査が必要です。調査には数分、下書きにはそれ以上の時間がかかります。
+
+1. Salesforce で Account を **Actively Working** に設定します。Atlas が自動で開始します。調査結果が表示されない場合は、予備の方法として **Request Relevance Research** にチェックを入れます。
+2. 調査結果（概要 + Tier 0–3 のコンタクト）が Account に反映されるまで待ちます。
+3. 同じ Account の **Request Relevance Outreach** にチェックを入れます。
+4. Outreach シーケンスで、各コンタクトの 5 通すべてのメールを確認します。下書きの品質は高いものの、承認が必要です。
+5. **送信します。** 承認すると、メールはシーケンスの通話ステップとあわせて、スケジュールに従って送信されます。
+
+コンタクトは Prose のシーケンスに残してください。別のシーケンスに移動すると、下書きした文面が失われます。
+
+###### Request Relevance Outreach に先にチェックを入れた場合 {#if-you-tick-request-relevance-outreach-first}
+
+- Prose は調査を約 75 分待ちます。その時間内に調査結果が届かなければ、メールは作成されません。
+- 30 日以内に **Request Relevance Outreach** に再度チェックを入れても再実行されません。Prose は 30 日目まで待ちます。
+- 調査結果はあるのに下書きがない場合は、以下の制限条件を確認してください。
+
+##### 制限条件: Prose が対象から外す、または処理を停止する場合 {#guardrails-when-prose-skips-or-stops}
+
+| チェック | データが示す状態… | Prose の動作… | 自分が行うこと… |
+|---|---|---|---|
+| **アカウントの確認** | 進行中または最近（過去 180 日以内）の商談がある、または BDR が割り当てられていない | アカウント全体のメールを作成しません | 担当 AE に連絡して参加してもらいます |
+| **コンタクトの確認** | オプトアウト済み、Do Not Contact、すでに別のシーケンスに登録済み、またはメールアドレスがない | そのコンタクトを対象から外します | 対応不要 |
+| **適合性の確認** | コンタクトが退職している、または役職が ICP に該当しない | 各 Tier の次のコンタクトを代わりに選びます | 対応不要 |
+| **登録時** | メールが英語ではない | 下書きは作成しますが、シーケンスには登録しません | Outreach で手動登録します |
+
+##### ヘルプとフィードバック {#help-and-feedback}
+
+- **操作方法に関する質問:** このハンドブックページを参照してください。
+- **メッセージングに関するフィードバックや、おかしいと感じた点:** Slack の `#sales-dev-outbound-support` に投稿してください。
+- **編集内容が改善につながります:** Sales Dev Ops と Relevance support は、皆さんの編集内容を学習し、エージェントの調整に役立てます。
 
 #### Ghosty: 連絡が途絶えた見込み客へのフォローアップ {#ghosty-ghosted-by-prospect-follow-up}
 
@@ -1046,7 +1100,7 @@ Ghosty はやり取りを読み取り、見込み客のトライアル、GitLab 
 
 ##### Ghosty が作成する内容 {#what-ghosty-writes}
 
-Ghosty は、件名を **Finalizing next step with GitLab** としたメールを 1 通作成します。このメールは:
+Ghosty は、件名を **GitLab との次のステップを確定する** としたメールを 1 通作成します。このメールは:
 
 - 評価やアプローチがどこまで進んでいたかを見込み客に思い出してもらいます。
 - 見込み客が返信している場合は、その人の状況を軸にします。
@@ -1057,9 +1111,9 @@ Ghosty は、件名を **Finalizing next step with GitLab** としたメール�
 
 見込み客が返信している場合、Ghosty は実際に起きたことを記述し、合意や次のステップを作り上げることはありません。
 
-見込み客が返信していない場合、Ghosty は会話が行われたような表現をしません。*When we last spoke*、*As discussed*、*Following up on our conversation*、*You mentioned*、*You were going to* といった表現を避けます。
+見込み客が返信していない場合、Ghosty は会話が行われたような表現をしません。*前回お話ししたとき*、*お話ししたとおり*、*私たちの会話のフォローアップとして*、*おっしゃっていた*、*予定されていた* といった表現を避けます。
 
-Ghosty はメールを *Thank you in advance* で締めくくり、本文には SDR の名前や署名を追加しません（署名は OpenSense が処理します）。
+Ghosty はメールを *どうぞよろしくお願いいたします* で締めくくり、本文には SDR の名前や署名を追加しません（署名は OpenSense が処理します）。
 
 ##### 言語に関する要件 {#language-expectations}
 
@@ -1087,7 +1141,7 @@ Ghosty は、トライアル中の GitLab の使用やテストに関する質�
 
 Ghosty が下書きを作成しても、最終確認と送信の判断は引き続き SDR が担います。SDR は、下書きが今も適切であること、宛先が正しいこと、トライアルの日付やタイミングが今も正確であることを確認してください。
 
-Ghosty は、見込み客が経緯を思い出し、会話を再開するかどうかを判断できるようにすることにメッセージの焦点を絞ります。リンク、予約 URL、電話番号、メールアドレス、社内プロセス用語、*today*、*tomorrow*、*next week* といった古くなった相対的な日付表現は使いません。
+Ghosty は、見込み客が経緯を思い出し、会話を再開するかどうかを判断できるようにすることにメッセージの焦点を絞ります。リンク、予約 URL、電話番号、メールアドレス、社内プロセス用語、*今日*、*明日*、*来週* といった古くなった相対的な日付表現は使いません。
 
 ---
 
@@ -1201,7 +1255,7 @@ Sales Navigator 経由でのリード/コンタクトの更新は許可されて
 
 → Accepted の場合 → ZoomInfo ワークフローが自動的にトリガーされ、関連する意思決定者を B6 リードビューに追加します。
 
-6QA アカウントが First Order でない場合、BDR Prospecting Status はまず `SDR Hold` に 14 日間設定されます。14 日以内に opportunity が作成されない場合、BDR の所有権で `Actively Working / Showing Intent` に自動遷移します。
+6QA アカウントが First Order でない場合、BDR Prospecting Status はまず `SDR Hold` に 14 日間設定されます。14 日以内に商談が作成されない場合、BDR の所有権で `Actively Working / Showing Intent` に自動遷移します。
 
 完全な自動化の内訳: [社内ハンドブック](https://internal.gitlab.com/handbook/marketing/marketing-ops-and-analytics/marketing-operations/6sense/#workflow-breakdown)。
 
@@ -1209,7 +1263,7 @@ Sales Navigator 経由でのリード/コンタクトの更新は許可されて
 
 UserGems は、私たちが関心を持つアカウントでの転職や新規採用を追跡し、ウォームリードを自動的に表示します。
 
-**ユースケース 1 — Contact tracking（転職）**
+**ユースケース 1 — コンタクトの追跡（転職）**
 
 追跡対象の人が転職すると、更新された詳細で新しい Lead が SFDC に作成されます。**Initial Source** フィールドには `UserGems Contact Tracking` と表示されます。
 
@@ -1225,7 +1279,7 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 
 **ユースケース 3 — オープン案件のコンタクト**
 
-オープンな opportunity のあるアカウントに誰かが参加または離脱した場合、Stage 3+ opp → Sales チームのみ、Stage 0–2 opp → Sales と Sales Dev の両チームに通知されます。
+オープンな商談のあるアカウントに誰かが参加または離脱した場合、Stage 3+ 商談 → Sales チームのみ、Stage 0–2 商談 → Sales と Sales Dev の両チームに通知されます。
 
 これらのリードをレビューするには[このレポート](https://gitlab.my.salesforce.com/00OPL000007z6XV)を使用してください。特定のシーケンスは存在しません — シナリオに基づいてテンプレートメッセージを Outreach で検索します。
 
@@ -1233,7 +1287,7 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 
 認定 UserGems リードは、AI 生成のパーソナライゼーションで UserGems Outreach シーケンスに自動登録されます。[SMB レポート](https://gitlab.lightning.force.com/lightning/r/Report/00OPL00000E1hpG2AR/view)と [MM/ENTG レポート](https://gitlab.lightning.force.com/lightning/r/Report/00OPL00000E1bYY2AZ/view)で進捗を追跡。
 
-**Gem-E Meeting Assistant:** **Initial Source** = `UserGems - Meeting Assistant` を使用して、SFDC にまだないミーティング出席者のリードとコンタクトを自動的に作成します。マルチスレッディングを続けるために既存のアカウントまたは opportunity に割り当てます。
+**Gem-E Meeting Assistant:** **Initial Source** = `UserGems - Meeting Assistant` を使用して、SFDC にまだないミーティング出席者のリードとコンタクトを自動的に作成します。マルチスレッディングを続けるために既存のアカウントまたは商談に割り当てます。
 
 ### その他のツール {#other-tools}
 
@@ -1257,7 +1311,7 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 **意思決定者の発見質問:**
 
 - "[company] でツールを評価する際、誰が関与しますか？"
-- "あなたの取り組みに異議を唱えそうな人はいますか？ ほかの関係者につなぐお手伝いはできますか？"
+- "あなたの取り組みに異議を唱えそうな人はいますか？ そちらのほかの関係者と私がつながることで、お手伝いできますか？"
 - "[title] の立場で GitLab を購入する場合、社内でどのようなプロセスを踏む必要がありますか？ また、その進行をどう支援できますか？"
 - "この変更を社内で提案するとき、どのような課題が予想されますか？ 誰に発言権があり、その人たちは何を最も重視しますか？"
 
@@ -1265,28 +1319,28 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 
 ### 月次監査プロセス {#monthly-audit-process}
 
-毎月、Sales Dev のメンバーにクレジットされたすべての opportunity に対して、BDR Manager による完全な監査が実施されます。
+毎月、Sales Dev のメンバーにクレジットされたすべての商談に対して、BDR Manager による完全な監査が実施されます。
 
-**必須 SLA:** 監査と XDR の応答は翌月の初日までに完了。ルーリングは 2 日目の終わりまでに完了。
+**必須 SLA:** 監査と XDR の応答は翌月の初日までに完了。判定は 2 日目の終わりまでに完了。
 
 **何を探すか:**
 
 | チェック | 確認するもの | 根拠 |
 | ----- | -------------- | --------- |
-| Opportunity 作成者 | XDR である必要があります。**Sales Qualified Source** = Sales Dev Generated で AE が作成した場合、事前の意味のあるエンゲージメントが証拠付けられる必要があります。 | 私たちの標準は、XDR が opportunity を作成することです。 |
+| Opportunity 作成者 | XDR である必要があります。**Sales Qualified Source** = Sales Dev Generated で AE が作成した場合、事前の意味のあるエンゲージメントが証拠付けられる必要があります。 | 私たちの標準は、XDR が商談を作成することです。 |
 | Web Direct — タイムスタンプとエンゲージメント | エンゲージメントは購入より前である必要があります。 | クレジットには購入決定に対する実証された影響が必要です。 |
 | 認定フィールドが入力されている | すべての Stage 0 Qualification Questions フィールドが完了している必要があります。 | 不完全なフィールドは、パイプライン進行プロセスから説明責任を取り除きます。 |
-| Opportunity 作成日 | アクティブなエンゲージメントと一致する必要があります。IQM 後に作成された子/関連 opp は、関連タスクとして IQM アクティビティが必要です。 | opportunity がどのようにソースされたかの明確な監査証跡を作成します。 |
-| 意味のあるエンゲージメントのあるコンタクト | コンタクトを添付する必要があり、opportunity が作成される前に事前のエンゲージメントを示している必要があります。 | SAO クレジットに必要です。 |
+| Opportunity 作成日 | アクティブなエンゲージメントと一致する必要があります。IQM 後に作成された子/関連商談は、関連タスクとして IQM アクティビティが必要です。 | 商談がどのようにソースされたかの明確な監査証跡を作成します。 |
+| 意味のあるエンゲージメントのあるコンタクト | コンタクトを添付する必要があり、商談が作成される前に事前のエンゲージメントを示している必要があります。 | SAO クレジットに必要です。 |
 | アクティビティが Outreach と一致 | SFDC のアクティビティを Outreach のレコードとクロスリファレンス。Outreach は争うべくもない信頼できる情報源 — SFDC のアクティビティは自由に編集できます。 | Outreach は常に最後のバックアップとして使用されます。 |
 | AWA アカウントの RoE 遵守 | アクティビティはチームメンバーに割り当てられたテリトリー内に該当する必要があります。 | パイプラインが正しい地域にカウントされることを保証します。 |
 
 **典型的な赤旗:**
 
 - 文書化されたソーシングケースなしで Sales Qualified Source が `SDR Generated` でない
-- 説明なしで AE が作成した opportunity
+- 説明なしで AE が作成した商談
 - 事前アクティビティなしで同日に IQM が設定され完了した
-- 重複した opportunity
+- 重複した商談
 - Net ARR が欠落またはゼロ
 
 **SAO クレジットを保護するベストプラクティス:**
@@ -1295,9 +1349,9 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 2. 意味のあるエンゲージメントをどう推進したかを示すすべてのアクティビティをログ記録します。
 3. すべての Qualification Questions フィールドを入力します。
 4. 後ではなくコール時にコールノートをログ記録します。
-5. ミーティングが行われる前に Stage 0 opp を作成します。
-6. LinkedIn または WhatsApp のエンゲージメントについては、スクリーンショットを撮ってチャタリングまたは opp に添付します。
-7. イベントからのソースされたミーティングについては、イベント直後に Stage 0 opp を作成し、会話を要約するフォローアップメールを送信します。
+5. ミーティングが行われる前に Stage 0 商談を作成します。
+6. LinkedIn または WhatsApp のエンゲージメントについては、スクリーンショットを撮ってチャタリングまたは商談に添付します。
+7. イベントからのソースされたミーティングについては、イベント直後に Stage 0 商談を作成し、会話を要約するフォローアップメールを送信します。
 
 SAO レポート: [SDRs](https://gitlab.my.salesforce.com/00O8X000008QeFh?sdtd=1) · [BDRs](https://gitlab.my.salesforce.com/00O8X000008QdwB)
 
@@ -1313,15 +1367,15 @@ BDR Director として、最初に主要 DRI としてタグ付けされます�
 
 テンプレートは [6Sense セグメントリスト](https://gitlab.abm.6sense.com/segments/manage)の #5 フォルダにあります。チーム用にクローンして編集します。
 
-**[Currently Actively Working Accounts Template](https://gitlab.abm.6sense.com/segments/segment/495284/accounts/?mode=edit&segment_type=6sense_network)**
+**[現在 Actively Working のアカウントのテンプレート](https://gitlab.abm.6sense.com/segments/segment/495284/accounts/?mode=edit&segment_type=6sense_network)**
 
 チームの AWA を 6Sense インテントデータとクロスリファレンスします。現在パイプラインにある最良の ICP アカウントを強調表示します。編集: BDR Assigned フィルターにあなたの名前を追加します。
 
-**[CE/SFDC Accounts not in Actively Working Status](https://gitlab.abm.6sense.com/segments/segment/495296/accounts/?mode=edit&segment_type=6sense_network)**
+**[Actively Working ステータスではない CE/SFDC アカウント](https://gitlab.abm.6sense.com/segments/segment/495296/accounts/?mode=edit&segment_type=6sense_network)**
 
 既存のデータベースで現在積極的に追求されていない最良の ICP アカウントを強調表示します。編集: BDR Assigned フィルターにあなたの名前を追加します。
 
-**[Greenfield Accounts not in Actively Working](https://gitlab.abm.6sense.com/segments/segment/495295/accounts/?mode=edit&segment_type=6sense_network)**
+**[Actively Working ではない未開拓アカウント](https://gitlab.abm.6sense.com/segments/segment/495295/accounts/?mode=edit&segment_type=6sense_network)**
 
 現在 SFDC データベースにない最良の ICP アカウントを強調表示します。注: 私たちの TAM の約 15% が SFDC にあります — これは他の 85% からアカウントを表示します。編集: フィルター #8 (Address) に地域、都市、または国を追加します。テリトリー特定のフィルターのヘルプは Sales Dev Ops に連絡してください。
 
@@ -1329,9 +1383,9 @@ BDR Director として、最初に主要 DRI としてタグ付けされます�
 
 これらのレポートは、より短いセールスサイクルを持ち、SAO により早く変換する可能性が高いアカウントを特定します。
 
-**[6Sense Short Sales Cycle Accounts](https://gitlab.abm.6sense.com/segments/segment/2226154/accounts)**
+**[6Sense のセールスサイクルが短いアカウント](https://gitlab.abm.6sense.com/segments/segment/2226154/accounts)**
 
-**[SFDC Short Sales Cycle Accounts](https://gitlab.my.salesforce.com/00OPL00000J9kru)**
+**[SFDC のセールスサイクルが短いアカウント](https://gitlab.my.salesforce.com/00OPL00000J9kru)**
 
 #### チャーンと拡張の商談レポート {#churn-and-expand-opportunity-reports}
 
@@ -1339,35 +1393,35 @@ BDR Director として、最初に主要 DRI としてタグ付けされます�
 
 これらのテンプレートを使用する際は、テンプレートをクローンし、**Account Demographics: Territory** フィールドをテリトリーに変更します。アカウント健全性メトリックと Propensity to Churn データを使用して結果をソートします。[これらのデータポイントに関するガイダンスはこちら](https://docs.google.com/presentation/d/184RA89u_vYuSy6xuH9kkiWZUNIjH6BWSOVWfODq_LOc/edit)を参照してください。**BDR Account Strategy** を `Growth - Upgrade` または `Risk Of Churn` に設定して、どのアカウントをターゲットにしているかを示します。
 
-**[Expand Prospect Accounts](https://gitlab.my.salesforce.com/00OQq000003heJp)**
+**[拡張を見込めるアカウント](https://gitlab.my.salesforce.com/00OQq000003heJp)**
 
-**[Churn Prospect Accounts](https://gitlab.my.salesforce.com/00OQq000003heGb)**
+**[チャーンが見込まれるアカウント](https://gitlab.my.salesforce.com/00OQq000003heGb)**
 
 #### Sales Dev テリトリーと役割レポート {#sales-dev-territory-and-role-reports}
 
-**[Sales Dev by Salesforce Profile and Role](https://gitlab.my.salesforce.com/00O8X000008gonx)**
+**[Salesforce のプロファイルと役割別の Sales Dev](https://gitlab.my.salesforce.com/00O8X000008gonx)**
 
-役割別の主要権限: Sales Dev Ops プロファイルは、Stage 0 を超えて opp にメンバーを追加できる唯一のプロファイルです。Team Lead 役割はリードを転送できます。Director 役割はアカウントの住所と従業員サイズを更新できます。テリトリー可視性は、役割名（AMER、APAC、EMEA）の地域によって決定されます。
+役割別の主要権限: Sales Dev Ops プロファイルは、Stage 0 を超えて商談にメンバーを追加できる唯一のプロファイルです。Team Lead 役割はリードを転送できます。Director 役割はアカウントの住所と従業員サイズを更新できます。テリトリー可視性は、役割名（AMER、APAC、EMEA）の地域によって決定されます。
 
-**[Sales Dev Territories by Team Role/Member](https://gitlab.my.salesforce.com/00O8X000008gpBL)**
+**[チームの役割／メンバー別の Sales Dev テリトリー](https://gitlab.my.salesforce.com/00O8X000008gpBL)**
 
 これを使用して、各テリトリーにどのメンバーと役割が関連付けられているかを確認します。BDR の割り当て変更をリクエストする際は、アカウント名ではなく、**テリトリー名**を Sales Dev Ops と共有してください。
 
 #### 新規アカウント AE レポート {#new-account-ae-reports}
 
-新規アカウントに対する適切な AE を見つけるには、ステップ 1 は[このレポート](https://gitlab.my.salesforce.com/00O8X000008gmAA)を使用してテリトリー名を見つけることです — cmd+F を使用して zip/state/country で検索します。ステップ 2 は[このレポート](https://gitlab.my.salesforce.com/00O8X000008glPn)を使用すること — ステップ 1 のテリトリー名を入力して正しい AE を見つけます。新しいアカウントを作成するためにリードを変換する前に、リード上のすべての所在地情報が正しいことを確認してください。
+新規アカウントに対する適切な AE を見つけるには、ステップ 1 は[このレポート](https://gitlab.my.salesforce.com/00O8X000008gmAA)を使用してテリトリー名を見つけることです — cmd+F を使用して郵便番号、州、国で検索します。ステップ 2 は[このレポート](https://gitlab.my.salesforce.com/00O8X000008glPn)を使用すること — ステップ 1 のテリトリー名を入力して正しい AE を見つけます。新しいアカウントを作成するためにリードを変換する前に、リード上のすべての所在地情報が正しいことを確認してください。
 
 ### Sales Development クレジットマトリックス {#sales-development-credit-matrix}
 
 | 考慮される製品 | 誰 | 注文タイプ | セグメント | クレジット |
 | ------------------- | --- | ---------- | ------- | ------ |
-| GitLab Ultimate/Premium、アドオン | SDR | FO、New Connected、Growth | すべてのセグメント | 1 opp |
-| GitLab Ultimate/Premium、アドオン | BDR | FO | Commercial、Enterprise | 1 opp |
-| GitLab Ultimate/Premium、アドオン | BDR | New Connected、Growth | Commercial、Enterprise | 1 opp |
-| 現在の顧客部門での追加シート | 全員 | Growth | すべてのセグメント | 1 opp |
-| ティアアップグレード | 全員 | Growth | すべてのセグメント | 1 opp |
-| GitLab Duo | 全員 | Growth | すべてのセグメント | 1 opp |
-| アジャイルプランニング | 全員 | Growth | すべてのセグメント | 1 opp |
+| GitLab Ultimate/Premium、アドオン | SDR | FO、New Connected、Growth | すべてのセグメント | 1 件 |
+| GitLab Ultimate/Premium、アドオン | BDR | FO | Commercial、Enterprise | 1 件 |
+| GitLab Ultimate/Premium、アドオン | BDR | New Connected、Growth | Commercial、Enterprise | 1 件 |
+| 現在の顧客部門での追加シート | 全員 | Growth | すべてのセグメント | 1 件 |
+| ティアアップグレード | 全員 | Growth | すべてのセグメント | 1 件 |
+| GitLab Duo | 全員 | Growth | すべてのセグメント | 1 件 |
+| アジャイルプランニング | 全員 | Growth | すべてのセグメント | 1 件 |
 | ストレージ、コンピュート | 全員 | Growth | すべてのセグメント | 0 |
 | プロフェッショナルサービス | 全員 | すべてのモーション | すべてのセグメント | 0 |
 
@@ -1378,11 +1432,11 @@ BDR Director として、最初に主要 DRI としてタグ付けされます�
 | 構成要素 | 詳細 |
 | --------- | ------- |
 | **XDR OTE スプリット** | 70% ベース / 30% 変動 |
-| **SDR/FO BDR 変動** | 100% New Business SAO Quota · フロアまたはシーリングなし · 目標の 100% を超えた後のアクセラレーター ×1.5 |
-| **Hybrid BDR 変動** | 50% FO SAO Quota · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.5 · 25% Stage 1 Net ARR Quota · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.5 · 25% Stage 3 Net ARR Quota · 200% シーリング · 100% を超えた後のアクセラレーター x1.25 |
-| **Growth PubSec BDR 変動** | 50% Stage 1 Net ARR Quota · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.5 · 50% Stage 3 Net ARR Quota · 200% シーリング · 100% を超えた後のアクセラレーター x1.25 |
-| **SDR Manager/FO BDR Manager/SDR Director 変動** | 100% New Business SAO Quota · フロアまたはシーリングなし · 目標の 100% を超えた後のアクセラレーター ×1.75 |
-| **Hybrid BDR Manager/Director 変動** | 50% FO SAO Quota · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.75 · 25% Stage 1 Net ARR Quota · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.75 · 25% Stage 3 Net ARR Quota · 200% シーリング · 100% を超えた後のアクセラレーター x1.25 |
+| **SDR/FO BDR 変動** | 100% 新規ビジネス SAO クォータ · フロアまたはシーリングなし · 目標の 100% を超えた後のアクセラレーター ×1.5 |
+| **Hybrid BDR 変動** | 50% FO SAO クォータ · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.5 · 25% Stage 1 Net ARR クォータ · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.5 · 25% Stage 3 Net ARR クォータ · 200% シーリング · 100% を超えた後のアクセラレーター x1.25 |
+| **Growth PubSec BDR 変動** | 50% Stage 1 Net ARR クォータ · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.5 · 50% Stage 3 Net ARR クォータ · 200% シーリング · 100% を超えた後のアクセラレーター x1.25 |
+| **SDR Manager/FO BDR Manager/SDR Director 変動** | 100% 新規ビジネス SAO クォータ · フロアまたはシーリングなし · 目標の 100% を超えた後のアクセラレーター ×1.75 |
+| **Hybrid BDR Manager/Director 変動** | 50% FO SAO クォータ · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.75 · 25% Stage 1 Net ARR クォータ · フロアまたはシーリングなし · 100% を超えた後のアクセラレーター ×1.75 · 25% Stage 3 Net ARR クォータ · 200% シーリング · 100% を超えた後のアクセラレーター x1.25 |
 
 クレジットを取得するには、Opportunity の Contact で双方向のコミュニケーションが文書化されている必要があります。この文書化が欠けている Opportunity は、報酬の検討対象になりません。
 
@@ -1396,9 +1450,9 @@ BDR Director として、最初に主要 DRI としてタグ付けされます�
 
 | 移行 | 最低在籍期間 | クォータ閾値 | 追加基準 |
 | ---------- | -------------- | --------------- | ------------------- |
-| SDR → SDR Team Lead | 8 か月（ランプ含む） | 完全にランプアップした最後の 5 か月で累積 100% クォータ | コーチングへの意欲、SDR 経営陣からの推薦、GitLab Values、SDR Q1〜Q3 Tanuki Tech。Team Lead 役割への 6 か月最低コミットメント。 |
+| SDR → SDR Team Lead | 8 か月（ランプ含む） | 完全にランプアップした最後の 5 か月で累積 100% クォータ | コーチングへの意欲、SDR 管理職からの推薦、GitLab Values、SDR Q1〜Q3 Tanuki Tech。Team Lead 役割への 6 か月最低コミットメント。 |
 | SDR → BDR | 12 か月（ランプ含む） | 完全にランプアップした最後の 2 四半期で累積 100%（いずれも 80% 以上） | SDR マネージャーからの推薦、GitLab Values、SDR Q1〜Q4 Tanuki Tech。正式な応募 + インタビュー必須。 |
-| BDR → Senior BDR | 9 か月（ランプ含む） | 完全にランプアップした最後の 6 か月で累積 100% | BDR 経営陣からの推薦、GitLab Values、BDR Q1〜Q3 Tanuki Tech。 |
+| BDR → Senior BDR | 9 か月（ランプ含む） | 完全にランプアップした最後の 6 か月で累積 100% | BDR 管理職からの推薦、GitLab Values、BDR Q1〜Q3 Tanuki Tech。 |
 | BDR → BDR Team Lead | 8 か月（ランプ含む） | 完全にランプアップした最後の 5 か月で累積 100% | コーチングへの意欲、推薦、GitLab Values、BDR Q1〜Q3 Tanuki Tech。6 か月最低コミットメント。 |
 | BDR/TL → Next Step | 12 か月（ランプ含む） | 完全にランプアップした最後の 2 四半期で累積 100%（いずれも 80% 以上） | 推薦、GitLab Values、BDR Q1〜Q4 Tanuki Tech。正式な応募 + インタビュー必須。 |
 
@@ -1428,7 +1482,7 @@ President's Club への資格と立場は、各チームメンバー個別の報
 | ------ | ---------------- |
 | **1. 日次アクティビティメトリクスの維持** | 2 時間 MQL SLA と毎日の 6QA Acceptance を遵守 · 1 日 50 件以上のデジタルタッチポイント（個別化された LinkedIn/メール）· Golden Call 時間中に 100 通話（または 50 通話以上かつ 7 件のポジティブな接続）· 週 3 件以上の発見ミーティング · 期日と同日にシーケンスステップを実行 · アウトバウンドワークフロー全体で SFDC データの整合性を維持 · AE と各 IQM に出席 · SFDC で正確で最新のノートを文書化 |
 | **2. ビジネスとセールスの感覚を示す** | CoM メール作成原則を使用してインバウンド/アウトバウンドリードを個別化 · CoM コールドコール原則を使用してコールドコールに備える · 地域チームの期待に従って毎週のケイデンスでアウトバウンドアカウントを追加 |
-| **3. クロスファンクショナルな関係を維持する** | アカウントプランニングでセールスチームとコラボレーション · イベントアウトリーチで Field Marketing とコラボレーション |
+| **3. クロスファンクショナルな関係を維持する** | アカウントプランニングで Sales チームとコラボレーション · イベントアウトリーチで Field Marketing とコラボレーション |
 
 ***現在、これらの国における Nooks の使用について Netherlands/Germany/France Works Councils と協議中です。このプロセス中、オランダ、ドイツ、フランスを拠点とするチームメンバーと、Nooks にアクセスしないその他のチームメンバーについては、通話目標を 1 日 50 件のままにします。***
 
@@ -1439,12 +1493,12 @@ President's Club への資格と立場は、各チームメンバー個別の報
 | レベル | 期間 | リードルーティング (Traction) | Qualified Chat | クォータ |
 | ----- | --------- | ----------------------- | -------------- | ----- |
 | オンボーディング | 月 0 | オフ | オフ | なし |
-| Ramping 1 | 月 1 | 50% | オフ | 25% |
-| Ramping 2 | 月 2 | 100% | オフ | 50% |
-| Ramping 3 | 月 3 | 100% | オフ | 75% |
-| Expert | 月 4+ | 100% | オン | 100% |
+| ランプアップ 1 | 月 1 | 50% | オフ | 25% |
+| ランプアップ 2 | 月 2 | 100% | オフ | 50% |
+| ランプアップ 3 | 月 3 | 100% | オフ | 75% |
+| 熟練者 | 月 4+ | 100% | オン | 100% |
 
-Expert レベルの BDR は、承認を待って自分自身の Outreach シーケンスを作成できます。
+熟練者レベルの BDR は、承認を条件に独自の Outreach シーケンスを作成できます。
 
 マネージャーは Traction で MQL ラウンドロビンプールを更新できます。動画: [チームと MQL ラウンドロビンの管理](https://www.youtube.com/watch?v=45uJCxoiP1s) · [担当者の可用性の更新](https://www.youtube.com/watch?v=TvuKYotFI-Q)。
 
@@ -1460,7 +1514,7 @@ Expert レベルの BDR は、承認を待って自分自身の Outreach シー�
 
 ### PTO とフレキシブル勤務 {#pto-and-flexible-working}
 
-[Time Off Policy](/handbook/people-group/time-off-and-absence/time-off-types/)に従い、予定された休暇についてはマネージャーに早めの通知をしてください。PTO Territory Planning リクエストをログ記録するには、[SDR GitLab プロジェクト](https://gitlab.com/gitlab-com/marketing/sdr/-/issues/new#)に移動し、`PTO_Coverage_Template` を選択します。
+[休暇ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/)に従い、予定された休暇についてはマネージャーに早めの通知をしてください。PTO Territory Planning リクエストをログ記録するには、[SDR GitLab プロジェクト](https://gitlab.com/gitlab-com/marketing/sdr/-/issues/new#)に移動し、`PTO_Coverage_Template` を選択します。
 
 Sales Development の見込み客対応の役割では、見込み客との通話やメールの際に以下を念頭においてください: 通話するベストタイミングはビジネス日の早朝と夕方。Outreach では早朝と夕方の配信向けにメールをスケジュールできます。昼食時間はアウトリーチに適しています。地域の見込み客の通常のビジネス時間にスケジュールを合わせるべきです。
 
@@ -1470,12 +1524,12 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 | ---- | ---------- |
 | Accepted Lead | SDR または BDR が認定済みまたは不認定になるまで担当することに同意したリード。 |
 | Account | SFDC で追跡される組織。見込み客、顧客、元顧客、インテグレーター、リセラー、または見込みリセラーになり得ます。 |
-| Actively Working | BDR Prospecting Status = Actively Working。戦略的アウトリーチに選ばれたアカウント。10 週間担当されない場合にリサイクル。BDR Account Strategy が入力されていること、10 日以内に Research と Next Steps のノートが必要、シーケンス内に最低 5 人の人員。 |
+| Actively Working | BDR Prospecting Status = Actively Working。戦略的アウトリーチに選ばれたアカウント。10 週間担当されない場合にリサイクル。BDR Account Strategy が入力されていること、10 日以内に Research と Next Steps のノートが必要、シーケンスに最低 5 人を登録すること。 |
 | AE | Account Executive、AMER/EMEA Enterprise では Major または Strategic になり得ます。 |
 | APJ | Asia-Pacific and Japan。 |
 | BDR | Business Development Representative — アウトバウンドにフォーカス。 |
 | CoM | Command of the Message — GitLab の価値駆動型セールス会話フレームワーク。 |
-| EwP | Expand with Purpose — 6Sense インテントが高く、SAE と緊密に作業する Rank 1 戦略的アカウント。 |
+| EwP | Expand with Purpose — 6Sense インテントが高く、SAE と緊密に作業するランク 1 の戦略的アカウント。 |
 | FO | First Order — Ultimate Parent Account レベルで以前のコマーシャル関係のないアカウント。 |
 | Groundswell | ファネルの上部でエンゲージメント、オプトイン、MQL、インテントシグナルを生成することに焦点を当てたアウトバウンド戦略。 |
 | High Priority Lead | キャンペーンメンバーシップと Actively Working アカウントのマッチにより High Priority としてフラグ付けされたリード。 |
@@ -1484,11 +1538,11 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 | MQL | Marketing Qualified Lead — リードスコアリング（デモグラフィック/ファーモグラフィック/行動的）を介して認定された問い合わせ。 |
 | Queued | BDR Prospecting Status = Queued。Actively Working に移動するのを待っているアカウント。SDR はこのステータスのアカウントからの MQL を担当。 |
 | Restricted | BDR Prospecting Status = Restricted。アカウントに対する SAE が指示した制限。BDR はステータス変更を処理し、理由をメモし、割り当てられた BDR に再ルーティングします。 |
-| SAO | Sales Accepted Opportunity — IQM 後にセールスが追求することに同意した opportunity。 |
+| SAO | Sales Accepted Opportunity — IQM 後にセールスが追求することに同意した商談。 |
 | SDR | Sales Development Representative — インバウンドにフォーカス。 |
 | TEDD | Technology, Engineering, Development, and Design — 会社で GitLab の最大潜在ユーザー数を推定するために使用。 |
 | UPA | Ultimate Parent Account — SFDC の企業階層内の最上位アカウント。 |
-| Worked in FY | BDR Prospecting Status = Worked in FY。アカウントがこの FY 中に Actively Working を通過したことを示します。後で Actively Working に戻すことができます。 |
+| Worked in FY | BDR Prospecting Status = Worked in FY。アカウントがこの FY 中に Actively Working で対応されたことを示します。後で Actively Working に戻すことができます。 |
 | 6QA | 6Sense Qualified Account — インテントシグナルに基づいて 6Sense の認定しきい値に達し、SFDC に自動インポートされたアカウント。 |
 
 ---
@@ -1500,7 +1554,7 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 **Q:** 特定の Outreach コレクションを表示できません。
 **A:** Outreach で誤った Sales Dev Team に追加された可能性が高いです。Sales Dev Operations に連絡してください。
 
-**Q:** 私の Salesforce バージョンが非常に基本的です。
+**Q:** 私の Salesforce には、ごく基本的な機能しか表示されないようです。
 **A:** Sales バージョンを使用していることを確認してください。右上隅 → 青いドロップダウンボタン → "Sales" を選択。
 
 **Q:** 私はすべてのツールへのアクセスを受け取っておらず、1 週間経っています。
@@ -1519,10 +1573,10 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 **A:** すべての見込み客とアカウント（PubSec を除く）にわたって Sales Dev と Sales の可視性を向上させるためです。**BDR Assigned** フィールドを使用してアカウントをフィルタリングします。
 
 **Q:** 見込み客は私たちのウェブサイトから購入するつもりだと言いました。彼らがそうしたかどうかをどうやってわかりますか？
-**A:** SDR は、ウェブ直接購入の前に 60 日以内に見込み客と意味のある双方向のコミュニケーションを持っていた opportunity でクレジットを取得します。[このレポート](https://gitlab.my.salesforce.com/00O4M000004dkX4)を使用 — 日付範囲を設定して、見込み客のアカウントに紐づいた opportunity を見つけます。次に、以下のウェブ直接 SAO クレジットリクエストプロセスに従います。
+**A:** SDR は、ウェブ直接購入の前に 60 日以内に見込み客と意味のある双方向のコミュニケーションを持っていた商談でクレジットを取得します。[このレポート](https://gitlab.my.salesforce.com/00O4M000004dkX4)を使用 — 日付範囲を設定して、見込み客のアカウントに紐づいた商談を見つけます。次に、以下のウェブ直接 SAO クレジットリクエストプロセスに従います。
 
-**Q:** ウェブ直接 opportunity のクレジットをどうやってリクエストしますか？
-**A:** opportunity レコードでチャタリング: (1) Ramona Elliott、Sam Bradley、または Brian Tabbert にタグ付け — Sales Support に直接タグ付けしないでください。(2) 過去 60 日以内の双方向のアクティビティを示す SFDC レコードへのリンク。コールノートは、後ではなくコール時に Qualification Notes フィールドに入力されている必要があります。(3) 購入決定に影響を与えた方法を説明します。担当者がウェブ直接評価の結果について質問や懸念を持つ場合は、まず Manager に相談する必要があります。
+**Q:** ウェブ直接商談のクレジットをどうやってリクエストしますか？
+**A:** 商談 レコードでチャタリング: (1) Ramona Elliott、Sam Bradley、または Brian Tabbert にタグ付け — Sales Support に直接タグ付けしないでください。(2) 過去 60 日以内の双方向のアクティビティを示す SFDC レコードへのリンク。コールノートは、後ではなくコール時に Qualification Notes フィールドに入力されている必要があります。(3) 購入決定に影響を与えた方法を説明します。担当者がウェブ直接評価の結果について質問や懸念を持つ場合は、まず Manager に相談する必要があります。
 
 ### RoE のよくある質問 {#roe-common-questions}
 
@@ -1530,10 +1584,10 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 **A:** はい。BDR は自分でアカウントをマージできません — 関連する SFDC レコード内の Request Support ボタンを直接使用し、関連するすべてのアカウントリンクを提供してください。
 
 **Q:** SAO クレジットの紛争をどう解決しますか？
-**A:** SDR と BDR が最初に話し合います。合意しない場合: マネージャーが決定します。マネージャーが同意しない場合: シニアリーダーシップにエスカレートします。ダブルクレジットとダブル報酬は与えられません。
+**A:** SDR と BDR が最初に話し合います。合意しない場合: マネージャーが決定します。マネージャーが同意しない場合: Senior Leadership にエスカレートします。ダブルクレジットとダブル報酬は与えられません。
 
 **Q:** アカウントが Actively Working でなくなった後に見込み客が BDR に直接戻ってきた場合はどうしますか？
-**A:** 彼らがメールを送る、LinkedIn で返信する、または BDR に直接電話する場合、BDR はリードがキュー所有権にあることを確認し、アカウントを Actively Working に戻してリードを彼らの所有権に移せるようにする必要があります。
+**A:** 彼らがメールを送る、LinkedIn で返信する、または BDR に直接電話する場合、BDR はリードがキュー所有権にあることを確認し、アカウントを Actively Working に戻してリードを BDR 自身の所有に移せるようにする必要があります。
 
 **Q:** なぜ私のリードが Inquiry Queue に再割り当てされていますか？
 **A:** Marketing Ops が毎日午後 10:30 EST に Lead Status = Inquiry を Inquiry Queue に更新するクリーンを実行します。これを防ぐには、リードを Accepted ステータスに更新するか、Outreach シーケンスに追加します。
@@ -1576,7 +1630,7 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 
 ### Sales Dev Operations チームの地域別対応 {#sales-dev-operations-team-regional-availability}
 
-私たちの[共有現実](/teamops/shared-reality/)を維持するために、以下の DRI を `#sales_dev_global` でタグ付けしてください。彼らの空き状況に基づいて誰にでも自由に連絡してください — EMEA で営業時間外で誰かが急ぎで必要な場合、AMER の Sam が支援できます。
+私たちの共有現実を維持するために、以下の DRI を `#sales_dev_global` でタグ付けしてください。彼らの空き状況に基づいて誰にでも自由に連絡してください — EMEA で営業時間外で誰かが急ぎで必要な場合、AMER の Sam が支援できます。
 
 | 地域 / タイムゾーン | Ops DRI | 補完的 DRI |
 | ----------------- | ------- | ----------------- |
@@ -1614,7 +1668,7 @@ Sales Dev Ops チームは、AWA アカウントリストの管理を支援す�
 
 ### マネージャーオンボーディング {#manager-onboarding}
 
-[Becoming a GitLab Manager](https://gitlab.com/gitlab-com/people-group/Training/blob/master/.gitlab/issue_templates/becoming-a-gitlab-manager.md) Issue は、マネージャーが入社または昇進した際に各マネージャーに対して作成されます。
+[GitLab Manager になるための](https://gitlab.com/gitlab-com/people-group/Training/blob/master/.gitlab/issue_templates/becoming-a-gitlab-manager.md) Issue は、マネージャーが入社または昇進した際に各マネージャーに対して作成されます。
 
 #### アウトバウンド BDR プロセスマネージャーオンボーディング {#outbound-bdr-process-manager-onboarding}
 
@@ -1635,62 +1689,62 @@ Manager Attention Needed ボードを、チームが BDR プロセスにどう�
 
 | ダッシュボード | コンポーネント | 期待/アクション | コーチング機会 |
 | --------- | --------- | ------------------ | -------------------- |
-| 1:1 Accounts Dashboard | 0. Queued Accounts | 週次でクリア — Actively Working に移動するか、データに基づいた理由を説明するチャタリングノートを残します。 | Sales-queued アカウントのタイムリーな精査は、クロスファンクショナルな説明責任とより良いテリトリープランニングを構築します。 |
-| 1:1 Accounts Dashboard | 1. Review Existing Pipeline | AWA 量は 125 (MM) または 75 (Enterprise) を超えてはいけません。週次でレビュー。 | レポートを使用して一目でアカウントをスクリーニング — アクティビティと調査フィールドをインテントデータと組み合わせることで、何を手動レビューする必要があるかを素早く表示します。 |
-| 1:1 Accounts Dashboard | 2. Research Accounts to be Recycled | 自動 BDR Recycle Date に近づいています。レポート 1 のフォールバックとして機能します。 | 決定: アカウントを延長するか、現在のクォータ位置を考慮してより高インテントのアカウントに置き換えるか。 |
-| 1:1 Accounts Dashboard | 3. Re-evaluate newly flagged accounts | 最近 AWA'd されたが、少なくとも 1 つのインテントツールで弱いとフラグ付けされています。 | ハイパーターゲットモーションでは、すべてのツールがアカウントが追求する価値があると合意すべきです。シグナルがアライメントしない場合は、レビューして削除。 |
-| 1:1 Account Dashboard | 4. Check past opportunities | 再エンゲージメントのために表示されたクローズロストの opportunity。 | クローズロストの再エンゲージメントは、最もコンバージョン率の高いパイプラインソースの 1 つです。上記の差し迫った AWA レポートをレビューした後にこれを確認します。 |
-| 1:1 Account Dashboard | 5, 6, 7. Assess high priority individuals | 高インテントデータ、キャンペーンエンゲージメント、または最近の興味深い瞬間を示す AWA アカウント上の個人。 | 今日彼らに対する直接的なアクションが必要ない場合でも、彼らの行動はアカウント内の現在の状況を示すことができます。 |
-| 1:1 Account Dashboard | 8–12. Review High Intent Accounts | インテントベースのバケットに分割された非 AWA アカウント。週次でレビュー — ほとんどの新しい AWA アカウントは、これらの 1 つからソースされるべきです。 | これらのレポートはインテントツール、RoE、追求アカウントを参照します — すべての新しいアカウント決定を導くべきです。 |
-| 1:1 Account Dashboard | 13. Consider AE-ranked accounts | セールスチームによって手動でランク付けされたアカウント。インテントベースのレポート後にレビュー。 | セールスチームは私たちと同じデータアクセスを持っていません — 彼らの手動調査は、クロスリファレンスに役立つフォールバックです。 |
-| 1:1 Account Dashboard | 14, 15. Individuals from non-AWA accounts | キャンペーンエンゲージメントまたは強いインテントシグナルを示す非 AWA アカウントの個人。 | より広いアカウントがアウトバウンドの調査に値することを示す指標として扱います。 |
-| 1:1 Account Dashboard | 16. Individuals in flight | 現在 Outreach シーケンスにある見込み客。さらなるアクションのためにレビュー。 | 特定のアカウントのためにシーケンスにさらに多くの個人を追加することが理にかなっているかを検討。 |
-| 1:1 Account Dashboard | 17. Past Actively Worked Accounts | あなたのテリトリーで以前にアウトバウンドされたアカウント。再エンゲージメントを正当化するものはありますか？ | アウトバウンドは多くの場合変換に時間がかかります — 新しいインテントデータは再エンゲージメントタイミングの強いシグナルです。 |
-| 1:1 Account Dashboard | 18. CE User Accounts | Community Edition GitLab インスタンスを持つ非顧客アカウント。使用パターンと成長指標をレビュー。 | CE ユーザーはすでに GitLab を選択しています — コマーシャルライセンスなしでの高い使用量は、最も強力な FO トリガーの 1 つです。 |
-| 1:1 Account Dashboard | 20. Accounts with customers in hierarchy | GitLab を使用する他のビジネスユニットを持つ大きな親会社の一部である非顧客アカウント | 非顧客アカウントは既存顧客と同様の課題に直面している可能性が高いため、他の既存顧客に関する情報を使用して、非顧客アカウントが購入を検討する動機を作れます。 |
-| Tableau Dashboard | Inbound Interest Dashboard | アカウントレベルダッシュボードを補完。事前構築されたレポートよりも柔軟性を持ってデータベースを探索するためにフィルターを使用。 | BDR が事前構築されたレポートロジックの外でデータベースを探索したい場合に有用。 |
-| Tableau Self-Dashboard | Self-Managed Instances | 見込み客またはクライアントによって自己デプロイされたインスタンスを追跡。 | アップグレードの可能性と Free-to-Paid 機会を特定。 |
-| Prospect 360 | Prospect 360 Dashboard | SFDC、6Sense、Qualified、Marketo のデータを 1 つのビューに統合した[ダッシュボード](https://internal.gitlab.com/handbook/enterprise-data/data-governance/data-catalog/customer-intelligence/#prospect-360)。[イネーブルメント動画はこちら。](https://www.youtube.com/watch?v=iYnSiISeXYQ) | アカウントアクティビティ、エンゲージメント履歴、リードインタラクションの全体的なビュー — アカウントレベルのプロスペクティングの素晴らしい開始点。 |
+| 1:1 アカウントダッシュボード | 0. Queued のアカウント | 週次でクリア — Actively Working に移動するか、データに基づいた理由を説明するチャタリングノートを残します。 | Sales が Queued に設定したアカウントのタイムリーな精査は、クロスファンクショナルな説明責任とより良いテリトリープランニングを構築します。 |
+| 1:1 アカウントダッシュボード | 1. 既存パイプラインのレビュー | AWA 量は 125 (MM) または 75 (Enterprise) を超えてはいけません。週次でレビュー。 | レポートを使用して一目でアカウントをスクリーニング — アクティビティと調査フィールドをインテントデータと組み合わせることで、何を手動レビューする必要があるかを素早く表示します。 |
+| 1:1 アカウントダッシュボード | 2. リサイクル予定のアカウントの調査 | 自動 BDR Recycle Date に近づいています。レポート 1 のフォールバックとして機能します。 | 決定: アカウントを延長するか、現在のクォータ位置を考慮してより高インテントのアカウントに置き換えるか。 |
+| 1:1 アカウントダッシュボード | 3. 新たにフラグが付いたアカウントの再評価 | 最近 AWA に移行したが、少なくとも 1 つのインテントツールで弱いとフラグ付けされています。 | ハイパーターゲットモーションでは、すべてのツールがアカウントが追求する価値があると合意すべきです。シグナルがアライメントしない場合は、レビューして削除。 |
+| 1:1 アカウントダッシュボード | 4. 過去の商談の確認 | 再エンゲージメントのために表示されたクローズロストの商談。 | クローズロストの再エンゲージメントは、最もコンバージョン率の高いパイプラインソースの 1 つです。上記の差し迫った AWA レポートをレビューした後にこれを確認します。 |
+| 1:1 アカウントダッシュボード | 5, 6, 7. 優先度の高い個人の評価 | 高インテントデータ、キャンペーンエンゲージメント、または最近の興味深い瞬間を示す AWA アカウント上の個人。 | 今日彼らに対する直接的なアクションが必要ない場合でも、彼らの行動はアカウント内の現在の状況を示すことができます。 |
+| 1:1 アカウントダッシュボード | 8–12. インテントの高いアカウントのレビュー | インテントベースのバケットに分割された非 AWA アカウント。週次でレビュー — ほとんどの新しい AWA アカウントは、これらの 1 つからソースされるべきです。 | これらのレポートはインテントツール、RoE、追求アカウントを参照します — すべての新しいアカウント決定を導くべきです。 |
+| 1:1 アカウントダッシュボード | 13. AE が順位付けしたアカウントの検討 | Sales チームによって手動でランク付けされたアカウント。インテントベースのレポート後にレビュー。 | Sales チームは私たちと同じデータアクセスを持っていません — 彼らの手動調査は、クロスリファレンスに役立つフォールバックです。 |
+| 1:1 アカウントダッシュボード | 14, 15. 非 AWA アカウントの個人 | キャンペーンエンゲージメントまたは強いインテントシグナルを示す非 AWA アカウントの個人。 | より広いアカウントがアウトバウンドの調査に値することを示す指標として扱います。 |
+| 1:1 アカウントダッシュボード | 16. 対応中の個人 | 現在 Outreach シーケンスにある見込み客。さらなるアクションのためにレビュー。 | 特定のアカウントのためにシーケンスにさらに多くの個人を追加することが理にかなっているかを検討。 |
+| 1:1 アカウントダッシュボード | 17. 過去に積極的に対応したアカウント | あなたのテリトリーで以前にアウトバウンドされたアカウント。再エンゲージメントを正当化するものはありますか？ | アウトバウンドは多くの場合変換に時間がかかります — 新しいインテントデータは再エンゲージメントタイミングの強いシグナルです。 |
+| 1:1 アカウントダッシュボード | 18. CE ユーザーアカウント | Community Edition GitLab インスタンスを持つ非顧客アカウント。使用パターンと成長指標をレビュー。 | CE ユーザーはすでに GitLab を選択しています — コマーシャルライセンスなしでの高い使用量は、最も強力な FO トリガーの 1 つです。 |
+| 1:1 アカウントダッシュボード | 20. 階層内に顧客がいるアカウント | GitLab を使用する他のビジネスユニットを持つ大きな親会社の一部である非顧客アカウント | 非顧客アカウントは既存顧客と同様の課題に直面している可能性が高いため、他の既存顧客に関する情報を使用して、非顧客アカウントが購入を検討する動機を作れます。 |
+| Tableau ダッシュボード | インバウンドの関心度ダッシュボード | アカウントレベルダッシュボードを補完。事前構築されたレポートよりも柔軟性を持ってデータベースを探索するためにフィルターを使用。 | BDR が事前構築されたレポートロジックの外でデータベースを探索したい場合に有用。 |
+| Tableau セルフダッシュボード | Self-Managed インスタンス | 見込み客またはクライアントによって自己デプロイされたインスタンスを追跡。 | アップグレードの可能性と Free-to-Paid 機会を特定。 |
+| Prospect 360 | Prospect 360 ダッシュボード | SFDC、6Sense、Qualified、Marketo のデータを 1 つのビューに統合した[ダッシュボード](https://internal.gitlab.com/handbook/enterprise-data/data-governance/data-catalog/customer-intelligence/#prospect-360)。[イネーブルメント動画はこちら。](https://www.youtube.com/watch?v=iYnSiISeXYQ) | アカウントアクティビティ、エンゲージメント履歴、リードインタラクションの全体的なビュー — アカウントレベルのプロスペクティングの素晴らしい開始点。 |
 
-### Pipeline Dashboard コーチングガイダンス {#pipeline-dashboard-coaching-guidance}
+### パイプラインダッシュボードのコーチングガイダンス {#pipeline-dashboard-coaching-guidance}
 
 | ダッシュボード | コンポーネント | 期待/アクション | コーチング機会 |
 | --------- | --------- | ------------------ | -------------------- |
-| Pipeline Dashboard | 1. Total Activities This Week | 1 日 100 通話（または 50 通話以上*かつ* 7 件のポジティブな接続）、1 日 50 件以上のオムニチャネルデジタルアクティビティ（週 250 件）。SFDC にログ記録され、Outreach を介して追跡される個別化されたメール、LinkedIn メッセージ、InMail。 | 低いアクティビティは、低いコンバージョン率とクォータ未達と直接的に相関する場合が多いです。これを使用して時間管理とツール使用のギャップを診断します。 |
-| Pipeline Dashboard | 2. Leads Sequenced This Week | パイプラインのフローを維持するための継続的なシーケンス化。インバウンドリードの 70% を超える割合を High Touch シーケンスに。 | 低いシーケンス化は、手動の一回限りのアウトリーチに過度に依存していることを示します — 将来のパイプライン問題の早期指標です。 |
-| Pipeline Dashboard | 3. Calls Per Outcome This Week | Golden Call 時間中の週 500 通話以上。アウトカムは SFDC にログ記録。 | 接続率は高いがコンバージョンが低い = メッセージングまたは認定の問題。接続率が低い = タイミングまたはコンタクトデータ品質の問題。 |
-| Pipeline Dashboard | 4. Unworked New Lead MQLs | 空またはほぼ空であるべきです。新規 MQL は 2 営業時間内に実行する必要があります。 | ここでの SLA 違反はインバウンドプロセスの破綻を示します — より速い応答を要求する前にルート原因を調査。 |
-| Pipeline Dashboard | 5. Unworked New Contact MQLs | リード MQL と同じ — 2 営業時間内に実行。1 日数回クリア。 | コンタクト MQL は既存アカウントからの拡張機会を表すことが多いです。遅延した応答は特にコストが高いです。 |
-| Pipeline Dashboard | 6. Leads In-Flight With Past Due Tasks | タスクの 10% 以下のみが保留中。90% は適切に完了され、スキップされていない。 | タスクが山積みになっていることは、パイプラインの管理が不十分であることを示します。シーケンスを使用するのではなく手動タスクにコミットしすぎていること、または日次プランニングが不十分であることが原因です。 |
-| Pipeline Dashboard | 7. Overdue UserGems Tracked Leads | 作成から 48 時間以内にレビューおよび実行。標準 RoE が適用されます。 | UserGems のリードは効果的なウィンドウが限られています — 長く置かれるほど、競合が先に到達する可能性が高くなります。 |
-| Pipeline Dashboard | 8. Qualifying Leads Without Next Steps | Qualifying のすべてのリードにはアクティブシーケンス、アクティブタスク、または未来のミーティングが必要です。 | 停滞した認定リードは、認定の会話が曖昧であることを示します。コール終了前に明確な次のステップを設定するようコーチングします。 |
-| Pipeline Dashboard | 9. Qualifying Contacts Without Next Steps | 認定リードと同じ要件。週次でレビューおよびクリア。 | 次のステップのないコンタクトは、UFC が効果的に使用されていなかったことを示すことが多いです。 |
-| Pipeline Dashboard | 10. Lead SLAs | 2 時間 MQL SLA と 8 時間インバウンド応答 SLA の 90%+ の遵守。 | 低い遵守は、ワークロード、ルーティング、通知、または時間管理のギャップを示す可能性があります — ルート原因を調査。 |
-| Pipeline Dashboard | 11. Contact SLAs | リードと同じ SLA 要件。個別に追跡し、パターンに即座に対処。 | コンタクト SLA 違反は特にコストが高いです — 既存アカウントからのコンタクトはより高いクローズ率を持ちます。 |
-| Pipeline Dashboard | 12. Opportunities In Stage 0 More Than 7 Days | Stage 0 に 7 日を超えて留まるべきではありません。AE は IQM から 48 時間以内に Stage 1 に移動する必要があります。詰まったら AE とマネージャーをチャタリング。 | Stage 0 の経過は、認定不足、スケジュールの遅延、または AE のパイプライン管理問題を示します。 |
-| Pipeline Dashboard | 13. Stage 1 Opportunities Without Activity In Last 7 Days | ソースされた opp の健全性を追跡。AE との会話に情報を提供するために使用。 | 停滞した Stage 1 opp は不十分な認定を示す可能性があります — 追加のコンタクトを見つけたり、競合インテルを提供してサポートを申し出る。 |
-| Pipeline Dashboard | 14. Stage 2 Opportunities Without Activity In Last 7 Days | Stage 1 と同様 — ソースされた opp の健全性を理解。 | 追加のステークホルダーを見つける、競合インテリジェンスを提供する、またはマルチスレッディングを支援することでサポートする機会。 |
-| Pipeline Dashboard | 15. [SDR] Opps Per Volume Of Contacts | マルチスレッディングの効果。opportunity あたり 2〜3 件の関連コンタクトを目指す。 | シングルスレッドの opp は低いクローズ率を持ちます。認定中に複数のステークホルダーを特定するようコーチング。 |
+| パイプラインダッシュボード | 1. 今週の総アクティビティ | 1 日 100 通話（または 50 通話以上*かつ* 7 件のポジティブな接続）、1 日 50 件以上のオムニチャネルデジタルアクティビティ（週 250 件）。SFDC にログ記録され、Outreach を介して追跡される個別化されたメール、LinkedIn メッセージ、InMail。 | 低いアクティビティは、低いコンバージョン率とクォータ未達と直接的に相関する場合が多いです。これを使用して時間管理とツール使用のギャップを診断します。 |
+| パイプラインダッシュボード | 2. 今週シーケンスに登録したリード | パイプラインのフローを維持するための継続的なシーケンス化。インバウンドリードの 70% を超える割合を High Touch シーケンスに。 | 低いシーケンス化は、手動の一回限りのアウトリーチに過度に依存していることを示します — 将来のパイプライン問題の早期指標です。 |
+| パイプラインダッシュボード | 3. 今週の結果別通話数 | Golden Call 時間中の週 500 通話以上。アウトカムは SFDC にログ記録。 | 接続率は高いがコンバージョンが低い = メッセージングまたは認定の問題。接続率が低い = タイミングまたはコンタクトデータ品質の問題。 |
+| パイプラインダッシュボード | 4. 未対応の新規 Lead MQL | 空またはほぼ空であるべきです。新規 MQL は 2 営業時間内に実行する必要があります。 | ここでの SLA 違反はインバウンドプロセスの破綻を示します — より速い応答を要求する前に根本原因を調査。 |
+| パイプラインダッシュボード | 5. 未対応の新規 Contact MQL | リード MQL と同じ — 2 営業時間内に実行。1 日数回クリア。 | コンタクト MQL は既存アカウントからの拡張機会を表すことが多いです。遅延した応答は特にコストが高いです。 |
+| パイプラインダッシュボード | 6. 期限超過タスクがある対応中のリード | タスクの 10% 以下のみが保留中。90% は適切に完了され、スキップされていない。 | タスクが山積みになっていることは、パイプラインの管理が不十分であることを示します。シーケンスを使用するのではなく手動タスクにコミットしすぎていること、または日次プランニングが不十分であることが原因です。 |
+| パイプラインダッシュボード | 7. 対応期限を超えた UserGems 追跡リード | 作成から 48 時間以内にレビューおよび実行。標準 RoE が適用されます。 | UserGems のリードは効果的なウィンドウが限られています — 長く置かれるほど、競合が先に到達する可能性が高くなります。 |
+| パイプラインダッシュボード | 8. 次のステップがない Qualifying リード | Qualifying のすべてのリードにはアクティブシーケンス、アクティブタスク、または未来のミーティングが必要です。 | 停滞した認定リードは、認定の会話が曖昧であることを示します。コール終了前に明確な次のステップを設定するようコーチングします。 |
+| パイプラインダッシュボード | 9. 次のステップがない Qualifying コンタクト | 認定リードと同じ要件。週次でレビューおよびクリア。 | 次のステップのないコンタクトは、UFC が効果的に使用されていなかったことを示すことが多いです。 |
+| パイプラインダッシュボード | 10. リードの SLA | 2 時間 MQL SLA と 8 時間インバウンド応答 SLA の 90%+ の遵守。 | 低い遵守は、ワークロード、ルーティング、通知、または時間管理のギャップを示す可能性があります — 根本原因を調査。 |
+| パイプラインダッシュボード | 11. コンタクトの SLA | リードと同じ SLA 要件。個別に追跡し、パターンに即座に対処。 | コンタクト SLA 違反は特にコストが高いです — 既存アカウントからのコンタクトはより高いクローズ率を持ちます。 |
+| パイプラインダッシュボード | 12. Stage 0 に 7 日を超えて留まる商談 | Stage 0 に 7 日を超えて留まるべきではありません。AE は IQM から 48 時間以内に Stage 1 に移動する必要があります。詰まったら AE とマネージャーをチャタリング。 | Stage 0 の経過は、認定不足、スケジュールの遅延、または AE のパイプライン管理問題を示します。 |
+| パイプラインダッシュボード | 13. 過去 7 日間アクティビティがない Stage 1 の商談 | ソースされた商談の健全性を追跡。AE との会話に情報を提供するために使用。 | 停滞した Stage 1 商談は不十分な認定を示す可能性があります — 追加のコンタクトを見つけたり、競合情報を提供してサポートを申し出る。 |
+| パイプラインダッシュボード | 14. 過去 7 日間アクティビティがない Stage 2 の商談 | Stage 1 と同様 — ソースされた商談の健全性を理解。 | 追加のステークホルダーを見つける、競合インテリジェンスを提供する、またはマルチスレッディングを支援することでサポートする機会。 |
+| パイプラインダッシュボード | 15. [SDR] コンタクト数に対する商談数 | マルチスレッディングの効果。商談あたり 2〜3 件の関連コンタクトを目指す。 | シングルスレッドの商談は低いクローズ率を持ちます。認定中に複数のステークホルダーを特定するようコーチング。 |
 
 ### 一般的な Sales Development リーダーシップリソース {#general-sales-development-leadership-resources}
 
 | リソース | 目的 |
 | -------- | ------- |
-| [Leadership Handbook](/handbook/leadership/) | GitLab のピープルマネージャーのためのツールとリソース |
-| [Compensation Review Cycle](/handbook/total-rewards/compensation/compensation-review-cycle/) | Compa Review の実施方法 |
-| [Sales Dev Manager Onboarding Checklist](https://docs.google.com/spreadsheets/d/1cnKc757SWenlJRoa_zqPhFyekp4mq56oSMFXPSDW-CU/edit#gid=0) | コピーを作成して完了し、ツールとプロセスの知識を確認 |
-| [360 Feedback](/handbook/people-group/360-feedback/) | クロスファンクショナルフィードバックサイクルのスケジュールとガイダンス |
+| [リーダーシップハンドブック](/handbook/leadership/) | GitLab のピープルマネージャーのためのツールとリソース |
+| [報酬レビューサイクル](/handbook/total-rewards/compensation/compensation-review-cycle/) | Compa Review の実施方法 |
+| [Sales Dev Manager オンボーディングチェックリスト](https://docs.google.com/spreadsheets/d/1cnKc757SWenlJRoa_zqPhFyekp4mq56oSMFXPSDW-CU/edit#gid=0) | コピーを作成して完了し、ツールとプロセスの知識を確認 |
+| [360 度フィードバック](/handbook/people-group/360-feedback/) | クロスファンクショナルフィードバックサイクルのスケジュールとガイダンス |
 | [Workday](/handbook/people-group/360-feedback/) | すべてのチームメンバーの HR 情報 |
-| [Transitioning to a Manager Role at GitLab](/handbook/people-group/learning-and-development/manager-development/) | 新マネージャーリソース |
+| [GitLab での Manager ロールへの移行](/handbook/people-group/learning-and-development/manager-development/) | 新マネージャーリソース |
 
 ### リードルーティングとアライメントリソース {#lead-routing-and-alignment-resources}
 
 | リソース | 目的 |
 | -------- | ------- |
-| [Territory Change Request Issue Board](https://gitlab.com/gitlab-com/marketing/sales-development/-/boards/5569691) | `BDR_Territory_Change` テンプレートを使用して担当者のテリトリー変更をリクエスト。 |
-| [Sales Dev Internal Onboarding and Transition template](https://gitlab.com/gitlab-com/marketing/sales-development/-/blob/main/.gitlab/issue_templates/Internal_Onboarding_and_Transition_Template.md) | チームメンバーが初めて Sales Dev 組織に参加する、または SDR と BDR の役割間で移行する際に使用。 |
-| [BDR Territory Change Request template](https://gitlab.com/gitlab-com/marketing/sales-development/-/issues/new) | BDR のテリトリー変更をリクエスト。 |
-| [Sales Dev Exit Handover Template](https://gitlab.com/gitlab-com/marketing/sales-development/-/blob/main/.gitlab/issue_templates/BDR_Territory_Change.md) | チームを離れるチームメンバーが保留中のタスクをピアに引き継ぐため。 |
+| [テリトリー変更リクエストの Issue ボード](https://gitlab.com/gitlab-com/marketing/sales-development/-/boards/5569691) | `BDR_Territory_Change` テンプレートを使用して担当者のテリトリー変更をリクエスト。 |
+| [Sales Dev 社内オンボーディングと異動のテンプレート](https://gitlab.com/gitlab-com/marketing/sales-development/-/blob/main/.gitlab/issue_templates/Internal_Onboarding_and_Transition_Template.md) | チームメンバーが初めて Sales Dev 組織に参加する、または SDR と BDR の役割間で移行する際に使用。 |
+| [BDR テリトリー変更リクエストのテンプレート](https://gitlab.com/gitlab-com/marketing/sales-development/-/issues/new) | BDR のテリトリー変更をリクエスト。 |
+| [Sales Dev 離任時の引き継ぎテンプレート](https://gitlab.com/gitlab-com/marketing/sales-development/-/blob/main/.gitlab/issue_templates/BDR_Territory_Change.md) | チームを離れるチームメンバーが保留中のタスクをピアに引き継ぐため。 |
 
 ### GitLab リソース {#gitlab-resources}
 
@@ -1703,17 +1757,17 @@ Manager Attention Needed ボードを、チームが BDR プロセスにどう�
 | [ハンドブックを編集する](/handbook/about/editing-handbook/) | ハンドブック編集ガイド。すべての新人はオンボーディングの一部としてこれを完了する必要があります。 |
 | [ハンドブックに新しいページを追加する](https://www.youtube.com/watch?v=9NcJG9Bv6sQ) | 新しいハンドブックページを作成するための動画ウォークスルー。 |
 | [MR 作成時の失敗したパイプラインを解決](https://www.youtube.com/watch?v=WlgH-6cX1k8&feature=youtu.be) | 失敗した MR パイプラインを特定して修正する方法。 |
-| [Sales Development Onboarding Job Specific Task Section](https://gitlab.com/gitlab-com/people-group/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding_tasks/department_sales_development.md) | 役割に基づいて新しい SDR オンボーディング Issue に自動追加。 |
+| [Sales Development オンボーディングの職務別タスクセクション](https://gitlab.com/gitlab-com/people-group/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding_tasks/department_sales_development.md) | 役割に基づいて新しい SDR オンボーディング Issue に自動追加。 |
 
 ### Sales Development オンボーディング {#sales-development-onboarding}
 
-BDR および SDR として、オンボーディングはマーケティングとセールスのトレーニングをブレンドします。これには、一般会社全体のオンボーディング Issue、Sales Development 特定の Issue、[Sales Quick Start (SQS)](/handbook/sales/onboarding/) (セールス開発またはセールスの役割の新人向けの 3 日間対面ワークショップ) に備えるための Google Classroom コースが含まれます。
+BDR および SDR として、オンボーディングはマーケティングとセールスのトレーニングをブレンドします。これには、一般会社全体のオンボーディング Issue、Sales Development 特定の Issue、[Sales Quick Start (SQS)](/handbook/sales/onboarding/) (Sales Development またはセールスの役割の新人向けの 3 日間対面ワークショップ) に備えるための Google Classroom コースが含まれます。
 
 #### Sales Development オンボーディングプロセス {#sales-development-onboarding-process}
 
 1. People Team が一般的な GitLab オンボーディング Issue を開始します。初日に、特定のオンボーディング Issue へのリンクが含まれたウェルカムメールを受け取ります。
 2. 3 日以内: [Command of the Message (CoM)](/handbook/sales/command-of-the-message/) e ラーニング教材へのアクセス。
-3. 2 週目: Sales Enablement Team が SQS のカレンダー招待と、Google Classroom の [Sales Quick Start learning path](/handbook/sales/onboarding/sales-learning-path/)へのアクセスを送信。
+3. 2 週目: Sales Enablement Team が SQS のカレンダー招待と、Google Classroom の [Sales Quick Start の学習パス](/handbook/sales/onboarding/sales-learning-path/)へのアクセスを送信。
 4. SQS 参加後 1 週間以内: 13 週間の CoM Fast Start プログラムへのアクセス。
 5. 最初の数週間: Sales Development Technical Development トレーニングへのアクセス。最初の 180 日以内に完了する必要があります — SDR の[進行](/handbook/sales/sales-development/#graduating-from-sales-development-onboarding)に直接結びついています。
 
@@ -1730,7 +1784,7 @@ BDR および SDR として、オンボーディングはマーケティング�
 - [チームページに自分を追加する](/handbook/about/editing-handbook/#add-yourself-to-the-team-page)
 - [ハンドブックの変更/編集を行う](/handbook/about/editing-handbook/)
 - ハンドブック編集に関する質問？Slack の `#handbook` または `#mr-buddies` を使用。
-- オンボーディングに関する質問？Slack の `#new_team_members` に入れてください。
+- Sales Dev のオンボーディングに関する質問がある場合は、マネージャーまたは Sales Dev Ops に連絡して支援を求めてください。
 
 #### マネージャーオンボーディングチェックリスト {#manager-onboarding-checklist}
 
@@ -1746,12 +1800,12 @@ BDR および SDR として、オンボーディングはマーケティング�
 
 #### 新人の初日 {#new-hires-first-day}
 
-新人の初日に、約 06:00am（現地時間）に GitLab にアクセスしてオンボーディングを開始する方法を詳細に説明したウェルカムメールを受け取ります。
+新人は初日の午前 6 時ごろ（現地時間）に、GitLab にアクセスしてオンボーディングを開始する方法を詳しく説明したウェルカムメールを受け取ります。
 
 #### マネージャーの責任 {#manager-responsibilities}
 
-- [SDR New Hire 1:1 Template](https://docs.google.com/document/d/1hiIksiDQjZBYCevA36J5Tfa4_bItuDuDOisfIK93Ihw/edit?usp=sharing)
-- [BDR New Hire 1:1 Template](https://docs.google.com/document/d/1ymdIfeGhFzFLJkz0_1qZhzVlLMaTpNaiTowfdbVJEao/edit?usp=sharing)
+- [SDR 新人向け 1:1 テンプレート](https://docs.google.com/document/d/1hiIksiDQjZBYCevA36J5Tfa4_bItuDuDOisfIK93Ihw/edit?usp=sharing)
+- [BDR 新人向け 1:1 テンプレート](https://docs.google.com/document/d/1ymdIfeGhFzFLJkz0_1qZhzVlLMaTpNaiTowfdbVJEao/edit?usp=sharing)
 
 ### 組織変更 Issue {#organizational-change-issues}
 

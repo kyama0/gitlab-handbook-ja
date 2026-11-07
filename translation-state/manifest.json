@@ -1018,11 +1018,11 @@
     },
     "content/handbook/company/culture/all-remote/remote-work-report.md": {
       "path": "content/handbook/company/culture/all-remote/remote-work-report.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T20:55:48+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:54:54.993254+00:00",
       "model": "codex",
-      "input_hash": "9dfa6b30572d840f8a44e47f3e23ad9e9ac5fb9782f535d6c81c1104b1377e3b",
-      "upstream_committed_at": "2026-06-29T08:59:00-04:00"
+      "input_hash": "a34c9108b30f171380ad6a6642012860911a0d605f62004a8e745f82dab24744",
+      "upstream_committed_at": "2026-11-06T14:26:17-06:00"
     },
     "content/handbook/company/culture/all-remote/remote-work-starter-guide.md": {
       "path": "content/handbook/company/culture/all-remote/remote-work-starter-guide.md",
@@ -1074,11 +1074,11 @@
     },
     "content/handbook/company/culture/all-remote/work-from-home-field-guide.md": {
       "path": "content/handbook/company/culture/all-remote/work-from-home-field-guide.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T20:48:59+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:54:54.993254+00:00",
       "model": "codex",
-      "input_hash": "4fb77bb392271a99026c249e99883b76d8f85aaf1bf896ec747b6b1acd5ec505",
-      "upstream_committed_at": "2026-06-29T08:59:00-04:00"
+      "input_hash": "84011c7f47dbf23ec325b76b19173fcd7f2dc790859b56942f8f03ca3cd731a7",
+      "upstream_committed_at": "2026-11-06T14:26:17-06:00"
     },
     "content/handbook/company/culture/all-remote/working-while-traveling.md": {
       "path": "content/handbook/company/culture/all-remote/working-while-traveling.md",
@@ -5890,11 +5890,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md",
-      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
-      "translated_at": "2026-11-05T21:32:49.837260+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:02:49.296141+00:00",
       "model": "codex",
-      "input_hash": "60064b47677db9a4e20cb9c94d5bf9bea8531449416290bfe6d0215face15ade",
-      "upstream_committed_at": "2026-11-05T17:24:28Z"
+      "input_hash": "6d2f3e759af011fb179715ee3ae4abb2fbf344c7db996b5b079e7e63cdd63935",
+      "upstream_committed_at": "2026-11-06T09:12:48-08:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md",
@@ -5906,19 +5906,19 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
-      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
-      "translated_at": "2026-11-05T21:46:48.557056+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:02:49.296141+00:00",
       "model": "codex",
-      "input_hash": "df04c25e5dd2355b00e939e514fa1b3f36d0aee1cdf2941e1c98066388435eba",
-      "upstream_committed_at": "2026-11-05T17:24:28Z"
+      "input_hash": "cd14b397e1c4e5a5d990408d882c6eb05f2eb50a86b665c7e412505d8452cd59",
+      "upstream_committed_at": "2026-11-06T15:14:06Z"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
-      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
-      "translated_at": "2026-11-05T21:46:48.566032+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:04:48.602584+00:00",
       "model": "codex",
-      "input_hash": "8fcdbc1a4921aff226ca91c5c8f00b90727081d08ef9265bf1e1fdbae17521e9",
-      "upstream_committed_at": "2026-11-05T17:24:28Z"
+      "input_hash": "cf731cae1dc81e743ab39a4f9b895a0502a5a2604d434e7f4b33fa442adbf5bc",
+      "upstream_committed_at": "2026-11-06T10:49:13+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md",
@@ -9146,11 +9146,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/slsa_level_3/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/slsa_level_3/_index.md",
-      "upstream_sha": "ab93800e4c241789ac67785899fa20ffa1eb0854",
-      "translated_at": "2026-11-05T15:15:16.188555+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:05:55.508019+00:00",
       "model": "codex",
-      "input_hash": "f414a1f28004777167671963afa85ef5d3f67bf55e0cab0ce45ca65e84b2bd51",
-      "upstream_committed_at": "2026-11-05T07:24:15+13:00"
+      "input_hash": "ed2e496edf31e8b5f718a8f7f56a64da0612f334528bce28192adb3ed1b58b14",
+      "upstream_committed_at": "2026-11-06T03:58:01+05:30"
     },
     "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/001_verification_component.md": {
       "path": "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/001_verification_component.md",
@@ -11898,11 +11898,11 @@
     },
     "content/handbook/engineering/error-budgets/_index.md": {
       "path": "content/handbook/engineering/error-budgets/_index.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:41:40+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:30:58.726577+00:00",
       "model": "codex",
-      "input_hash": "d06c10f28e0eaf827d857722cfd3e5aad9057ae080c5e8b497b2c537694f6fbb",
-      "upstream_committed_at": "2026-08-11T17:10:40+01:00"
+      "input_hash": "ea5260c271818605d62171b8f4aca44f5ff4936ee0e51e39897068cc41dc3602",
+      "upstream_committed_at": "2026-11-06T14:28:38+01:00"
     },
     "content/handbook/engineering/error-budgets/custom-targets.md": {
       "path": "content/handbook/engineering/error-budgets/custom-targets.md",
@@ -12962,11 +12962,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/_index.md",
-      "upstream_sha": "84ebb9fc88e6a42116737a8dbf279ac21828660f",
-      "translated_at": "2026-10-27T21:11:18.294005+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:24:24.603706+00:00",
       "model": "codex",
-      "input_hash": "4392f5d19071223bd1574c31491dd1382f3d5891c2e31e584d98487b675f9ba5",
-      "upstream_committed_at": "2026-10-23T18:56:03+02:00"
+      "input_hash": "10c5f30141b1c520c13909ef7e576ceac29b34e1cce0f72fee597b01e66fe9d3",
+      "upstream_committed_at": "2026-11-06T14:27:25+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/labeling-strategy.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/labeling-strategy.md",
@@ -14338,11 +14338,11 @@
     },
     "content/handbook/enterprise-data/data-governance/_index.md": {
       "path": "content/handbook/enterprise-data/data-governance/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f5cdb9fd923ce697da28f32b9dd652d8e297f3492d14d54c6fcab4ca7c33e5d5",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:54:54.993254+00:00",
+      "model": "codex",
+      "input_hash": "6f5e6205446f0eb014d7bebaa238fd9065737701e2062f4b7b60af315875e01b",
+      "upstream_committed_at": "2026-11-06T18:17:46+05:30"
     },
     "content/handbook/enterprise-data/data-governance/data-catalog/_index.md": {
       "path": "content/handbook/enterprise-data/data-governance/data-catalog/_index.md",
@@ -15074,11 +15074,11 @@
     },
     "content/handbook/entity/india-pvt-ltd.md": {
       "path": "content/handbook/entity/india-pvt-ltd.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "upstream_committed_at": "2026-10-27T16:32:37-07:00",
-      "translated_at": "2026-11-01T07:33:26+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:57:49.258353+00:00",
       "model": "codex",
-      "input_hash": "787f3a202ef7d39175b5689050ddb13aa79c439e229b0d4684ab5e488ef5ed2e"
+      "input_hash": "f67958786dbe07c3da60deebb9748a58d5dd99e41b2e62c8f63b69cc148ba2f8",
+      "upstream_committed_at": "2026-11-06T08:31:14-08:00"
     },
     "content/handbook/entity/israel-ltd.md": {
       "path": "content/handbook/entity/israel-ltd.md",
@@ -17466,11 +17466,11 @@
     },
     "content/handbook/marketing/campaigns/cicd.md": {
       "path": "content/handbook/marketing/campaigns/cicd.md",
-      "upstream_sha": "4246c71d16beefada2a847b698b152ff280860c5",
-      "translated_at": "2026-09-11T21:12:37+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:57:49.258353+00:00",
       "model": "codex",
-      "input_hash": "d90ecbc7fb5dbae63141bf1e93935e19aacbe3fb6055ddb007e6e3cb9009e201",
-      "upstream_committed_at": "2026-09-11T17:02:17+02:00"
+      "input_hash": "7dca2aeb14818b89746bba35d31ab44ce54c51e5767cfc2069e206e0d1db47f4",
+      "upstream_committed_at": "2026-11-06T14:26:17-06:00"
     },
     "content/handbook/marketing/campaigns/devsecops2.md": {
       "path": "content/handbook/marketing/campaigns/devsecops2.md",
@@ -17554,11 +17554,11 @@
     },
     "content/handbook/marketing/demand-generation/campaigns/content-in-campaigns.md": {
       "path": "content/handbook/marketing/demand-generation/campaigns/content-in-campaigns.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:01:08+00:00",
       "model": "codex",
-      "input_hash": "d96a29b2674c707ee32b6d62230aecacc158314fdc81699c7aefd4b49199c142",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "c0bb040d9eb2916239d8960ce745a45586e160e679b11c9159b22d05f103ee26",
+      "upstream_committed_at": "2026-11-05T12:09:27-06:00"
     },
     "content/handbook/marketing/demand-generation/campaigns/direct-mail.md": {
       "path": "content/handbook/marketing/demand-generation/campaigns/direct-mail.md",
@@ -17730,11 +17730,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T16:13:47+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:05:46+00:00",
       "model": "codex",
-      "input_hash": "a8278cdff4c6245d9cba3c08900d22ffc208a333ea4ff195fe752a7256a498bf",
-      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
+      "input_hash": "e281d394634fcb94baab7a30501fa14ba840e3ef2e2a67b7097e1b4298453965",
+      "upstream_committed_at": "2026-11-06T09:22:51+01:00"
     },
     "content/handbook/marketing/developer-relations/engineering/community-hackathons.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-hackathons.md",
@@ -18882,11 +18882,11 @@
     },
     "content/handbook/marketing/marketing-operations/pathfactory/content-library.md": {
       "path": "content/handbook/marketing/marketing-operations/pathfactory/content-library.md",
-      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T08:02:21+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:01:08+00:00",
       "model": "codex",
-      "input_hash": "492907f196f95b1d3c8a7c41285fda753328622a5223bb0fb6ba678725b2bb9c",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "d643e53bbf71657ffb0a5d9ba7f7cdfb2bcc7a143427f34c4fb7565f6bc47bda",
+      "upstream_committed_at": "2026-11-06T14:26:17-06:00"
     },
     "content/handbook/marketing/marketing-operations/pathfactory/pathfactory-analytics.md": {
       "path": "content/handbook/marketing/marketing-operations/pathfactory/pathfactory-analytics.md",
@@ -19106,11 +19106,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "c9949657c5872e30f062664ae031e45198aa8562",
-      "translated_at": "2026-10-23T21:26:13+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:18:48+00:00",
       "model": "codex",
-      "input_hash": "47124c052c5c69ca074f92cbdf4677e4cd108fb7a82c8a226d19bcb0b422f499",
-      "upstream_committed_at": "2026-10-23T12:38:15-05:00"
+      "input_hash": "4b3056d20b61c3d8c7d403494544c4e11ecb8505db252177f7d4748d7d4661f2",
+      "upstream_committed_at": "2026-11-05T22:58:40+01:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -19562,11 +19562,11 @@
     },
     "content/handbook/support/_index.md": {
       "path": "content/handbook/support/_index.md",
-      "upstream_sha": "ab93800e4c241789ac67785899fa20ffa1eb0854",
-      "translated_at": "2026-11-05T12:14:25.983858+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:37:58Z",
       "model": "codex",
-      "input_hash": "a8f8dd060798eb96064506dd78691df7daf791070f392e0ade8f636a4ea6a8e1",
-      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
+      "input_hash": "db55a3377e9bdfd69f3390983ee6518454e9cc9d9976adc0dd645af38e324841",
+      "upstream_committed_at": "2026-11-06T17:10:29-05:00"
     },
     "content/handbook/support/amer.md": {
       "path": "content/handbook/support/amer.md",
@@ -19602,19 +19602,19 @@
     },
     "content/handbook/support/data-analysis.md": {
       "path": "content/handbook/support/data-analysis.md",
-      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
-      "translated_at": "2026-05-08T17:40:50Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f2c7a660b7a1249639a7130c6dfb88094f57190aa220ec7a23c3244531e618cd",
-      "upstream_committed_at": "2025-06-17T20:54:31+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:37:58Z",
+      "model": "codex",
+      "input_hash": "a818e711fcdd807b885c8725b3c24c46b1d33a3a951a018cde9c6a6134329684",
+      "upstream_committed_at": "2026-11-05T13:13:47-05:00"
     },
     "content/handbook/support/gratis-support.md": {
       "path": "content/handbook/support/gratis-support.md",
-      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
-      "translated_at": "2026-05-08T17:40:50Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6233faab81422ead9e17292bc4995f381d9527cd58375f42cf64cbbac0b1bb27",
-      "upstream_committed_at": "2026-04-09T20:14:47+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:37:58Z",
+      "model": "codex",
+      "input_hash": "5b09a207f235cb3b9c69598406f938f0c7893e009e1075a7acf4b0d227850595",
+      "upstream_committed_at": "2026-11-05T16:06:54-05:00"
     },
     "content/handbook/support/on-call.md": {
       "path": "content/handbook/support/on-call.md",
@@ -19690,11 +19690,11 @@
     },
     "content/handbook/support/managers/manager-responsibilities.md": {
       "path": "content/handbook/support/managers/manager-responsibilities.md",
-      "upstream_sha": "1d268efe755c0706a7fc3d454b9e304624dd0423",
-      "translated_at": "2026-10-28T21:09:29.256623+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:40:40Z",
       "model": "codex",
-      "input_hash": "5b10371e82b379ab36a7873453043d64fb20334df6445732836ed72b5464e98a",
-      "upstream_committed_at": "2026-10-28T11:20:12-04:00"
+      "input_hash": "23c37ab77f2fee7d2c222e9858d17ab34b0f560b41752856d0520bb1cf31b0ed",
+      "upstream_committed_at": "2026-11-05T15:53:37-05:00"
     },
     "content/handbook/support/managers/performance-management.md": {
       "path": "content/handbook/support/managers/performance-management.md",
@@ -19706,11 +19706,11 @@
     },
     "content/handbook/support/managers/promoting-a-support-team-member.md": {
       "path": "content/handbook/support/managers/promoting-a-support-team-member.md",
-      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
-      "translated_at": "2026-10-18T09:31:30Z",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:40:40Z",
       "model": "codex",
-      "input_hash": "cdca1ceffe51dc3c1508b308737893fadc5070bc18ae5ae210310bff75afa340",
-      "upstream_committed_at": "2026-10-16T09:24:31-07:00"
+      "input_hash": "585716986978fbf53b401dea990992e34d01e082789a505c82f9dc50a679af37",
+      "upstream_committed_at": "2026-11-05T15:53:36-05:00"
     },
     "content/handbook/support/managers/senior-leadership-sync.md": {
       "path": "content/handbook/support/managers/senior-leadership-sync.md",
@@ -19778,19 +19778,19 @@
     },
     "content/handbook/support/license-and-renewals/workflows/aws_marketplace_license.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/aws_marketplace_license.md",
-      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
-      "translated_at": "2026-05-08T09:50:12Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2356dcf98ee5d82640d4850a25b7d808c1bc1d8f93037b0c66e6b8fb30615fb4",
-      "upstream_committed_at": "2025-06-10T15:27:47+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:48:39.009036+00:00",
+      "model": "codex",
+      "input_hash": "c8c6089fedb3c95243ad369d9f420a06402aa60b3057421d446d48943d7d62c0",
+      "upstream_committed_at": "2026-11-05T16:03:26-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/billing_contact_change_payments.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/billing_contact_change_payments.md",
-      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
-      "upstream_committed_at": "2026-10-19T18:59:08+11:00",
-      "translated_at": "2026-10-19T22:06:32+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:48:39.075371+00:00",
       "model": "codex",
-      "input_hash": "7c7d454fb39a22a59f14f05098d31c8f2efd698163fafb366c5f5b46de13182b"
+      "input_hash": "7229bc3dfe05a67523aa0f9aca4565fd0f1a1399ebd60a6f7c6b01fece6b74e4",
+      "upstream_committed_at": "2026-11-05T15:46:53-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/communicating_lnr_workflow_changes.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/communicating_lnr_workflow_changes.md",
@@ -19850,11 +19850,11 @@
     },
     "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:36:19Z",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:48:39.148212+00:00",
       "model": "codex",
-      "input_hash": "bcd8ae82e0a9def3f4037db778b72fff1afdab6e76109be885dcb131e6ef5cee",
-      "upstream_committed_at": "2026-10-19T18:59:08+11:00"
+      "input_hash": "234756591881d5e5f937d43f56a345c516a26448f426de084ae1b306f0aaf5f4",
+      "upstream_committed_at": "2026-11-05T16:03:26-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md",
@@ -19922,11 +19922,11 @@
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/handling_flagged_provisioning_failures.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/handling_flagged_provisioning_failures.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:36:19Z",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:51:06.109265+00:00",
       "model": "codex",
-      "input_hash": "2a329412e34a5fd6b9d554cca1663c9f8e06439c235eba9564a09eab2d57ba6a",
-      "upstream_committed_at": "2026-10-19T18:59:08+11:00"
+      "input_hash": "0a7c305ccce334106bd9b068eed9e62b76b9f8a21cae6997ee7afbfdaaf763df",
+      "upstream_committed_at": "2026-11-05T15:41:37-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/handling_multi-years_subscription.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/handling_multi-years_subscription.md",
@@ -20058,19 +20058,19 @@
     },
     "content/handbook/support/partnerships/open.md": {
       "path": "content/handbook/support/partnerships/open.md",
-      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2e450951c5f29739f980e0b884ead7a85deb5899c372913d2c3cad39fe6dd5e3",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:43:27.864751+00:00",
+      "model": "codex",
+      "input_hash": "a966577c1b2d316c597e4621c1c3725db6ce32460e52683532a866f5881c3f72",
+      "upstream_committed_at": "2026-11-05T15:34:25-05:00"
     },
     "content/handbook/support/partnerships/select.md": {
       "path": "content/handbook/support/partnerships/select.md",
-      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "15ac68b815889d780582b5d1d60a9c40542cd61c64ef370423dc83eb9a9796bc",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:43:27.870106+00:00",
+      "model": "codex",
+      "input_hash": "095308448c569d0ac21a9debbd28b903081010525430db43848d951a1a7b3ab1",
+      "upstream_committed_at": "2026-11-05T15:34:25-05:00"
     },
     "content/handbook/support/performance-indicators.md": {
       "path": "content/handbook/support/performance-indicators.md",
@@ -20098,11 +20098,11 @@
     },
     "content/handbook/support/providing_excellent_customer_service.md": {
       "path": "content/handbook/support/providing_excellent_customer_service.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T07:04:40+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:43:27.875336+00:00",
       "model": "codex",
-      "input_hash": "649f6a402e2225b6cab5fba3012eb74d546c2a13d87b13f79990fc9da863a80f",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "3cdd45550ef80464e58ffdf265714b4da12dad1f0d97eea3dd86cbb9772668ce",
+      "upstream_committed_at": "2026-11-05T16:06:54-05:00"
     },
     "content/handbook/support/readiness/_index.md": {
       "path": "content/handbook/support/readiness/_index.md",
@@ -20162,11 +20162,11 @@
     },
     "content/handbook/support/support-stable-counterparts.md": {
       "path": "content/handbook/support/support-stable-counterparts.md",
-      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
-      "translated_at": "2026-09-03T22:19:44+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:45:41.770320+00:00",
       "model": "codex",
-      "input_hash": "0f58bb3cadf747d9a38a5b7f3901ba475c0507dff8cf64dd84314f6cd3c5556e",
-      "upstream_committed_at": "2026-09-01T12:00:09-04:00"
+      "input_hash": "8f926d009e176920dff5ff4875c1c9a4448e1238e164297c63d9c55724daf18e",
+      "upstream_committed_at": "2026-11-05T15:34:25-05:00"
     },
     "content/handbook/support/support-time-off-buddies.md": {
       "path": "content/handbook/support/support-time-off-buddies.md",
@@ -20178,19 +20178,19 @@
     },
     "content/handbook/support/support-time-off.md": {
       "path": "content/handbook/support/support-time-off.md",
-      "upstream_sha": "d8805f3a85d40a3a59e331fbb593dd8b06e16768",
-      "translated_at": "2026-09-29T21:09:28+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:45:41.837665+00:00",
       "model": "codex",
-      "input_hash": "e040644f2a5b5193ec9e2698c2e7f6398aeab3d95acabc7de565f95e234ce6d9",
-      "upstream_committed_at": "2026-09-28T18:57:11Z"
+      "input_hash": "f7701d2cf6e9fa02d9e13df516205503061ae8b2b4643cdb916705ba9ed46e82",
+      "upstream_committed_at": "2026-11-05T16:06:56-05:00"
     },
     "content/handbook/support/support-pods/_index.md": {
       "path": "content/handbook/support/support-pods/_index.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "upstream_committed_at": "2026-10-30T14:17:26-04:00",
-      "translated_at": "2026-11-01T06:36:19+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:43:27.880819+00:00",
       "model": "codex",
-      "input_hash": "92021eb47a1cf79338eea6101f7628265808b890a7b72b8efe20e36170e8b2ab"
+      "input_hash": "fd47c6f513d558cbc4d095cc38feaa87acfe14e47c9b71837b748a4cd768a75e",
+      "upstream_committed_at": "2026-11-05T15:54:21-05:00"
     },
     "content/handbook/support/support-pods/advanced-search/_index.md": {
       "path": "content/handbook/support/support-pods/advanced-search/_index.md",
@@ -20234,11 +20234,11 @@
     },
     "content/handbook/support/support-pods/database/_index.md": {
       "path": "content/handbook/support/support-pods/database/_index.md",
-      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "97ebd07da98f45441b9aa3df72190d29066079c85ec86a9e15824a165d16bd2b",
-      "upstream_committed_at": "2024-08-15T15:04:43+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:43:27.885955+00:00",
+      "model": "codex",
+      "input_hash": "89b6e40e4d12aef87fbc9498212dfd9bf17b376e2ccba24bb5a192487d30c2e7",
+      "upstream_committed_at": "2026-11-05T15:54:19-05:00"
     },
     "content/handbook/support/support-pods/docs/_index.md": {
       "path": "content/handbook/support/support-pods/docs/_index.md",
@@ -20346,11 +20346,11 @@
     },
     "content/handbook/support/support-pods/sec/_index.md": {
       "path": "content/handbook/support/support-pods/sec/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:43:27.891046+00:00",
       "model": "codex",
-      "input_hash": "a211b52cb4f1546c8e29e178069d50e44fc12987f51166e0148b854d2f1386b2",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "e435a64e88ffd1d3c574cff1e482e00954d15908f694dd2d22a2d6d8789d7b56",
+      "upstream_committed_at": "2026-11-05T15:54:19-05:00"
     },
     "content/handbook/support/support-pods/training/_index.md": {
       "path": "content/handbook/support/support-pods/training/_index.md",
@@ -20394,11 +20394,11 @@
     },
     "content/handbook/support/training/onboarding_hybrid_path_checkpoints.md": {
       "path": "content/handbook/support/training/onboarding_hybrid_path_checkpoints.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5dd759f2a86928d7c1cd439195512b9265959bb1bcdfb5cb0ce24ca3875b0816",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:45:41.909927+00:00",
+      "model": "codex",
+      "input_hash": "87d1b191b0ad1094f3ae462f985cab598b699490ad9b02839f15eba1cc63a473",
+      "upstream_committed_at": "2026-11-05T15:34:25-05:00"
     },
     "content/handbook/support/training/specialised_domain_tracks.md": {
       "path": "content/handbook/support/training/specialised_domain_tracks.md",
@@ -21586,19 +21586,19 @@
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/trials.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/trials.md",
-      "upstream_sha": "dae94b0752e749cce0ad81e818ba66cae5ba4a11",
-      "translated_at": "2026-10-19T10:36:19Z",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:51:12.816722+00:00",
       "model": "codex",
-      "input_hash": "8caf90a6b574cd51b00e5f5ce7a9969a73b655e99655aa130fad80ff62b39c10",
-      "upstream_committed_at": "2026-10-19T18:59:08+11:00"
+      "input_hash": "e5613f3106b6883cb1c10d191f4105a7bcfa11d2256a7c9efd5c8fbce871b455",
+      "upstream_committed_at": "2026-11-05T15:41:37-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_cloud_licensing.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_cloud_licensing.md",
-      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
-      "translated_at": "2026-05-08T12:45:20Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ca5c0284489c5376b271b49c16b972098320e1f2416c8f2690ca60e3e4e128ea",
-      "upstream_committed_at": "2025-02-24T23:06:08+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:51:12.882180+00:00",
+      "model": "codex",
+      "input_hash": "a7216057ccb2317bf5fb0dc82d5f32526918254651017799e65b05ae41fe4db9",
+      "upstream_committed_at": "2026-11-05T16:03:26-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_license_purchase_issues.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_license_purchase_issues.md",
@@ -21626,19 +21626,19 @@
     },
     "content/handbook/support/license-and-renewals/workflows/saas/associate_subscription_and_namespace.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/saas/associate_subscription_and_namespace.md",
-      "upstream_sha": "ab93800e4c241789ac67785899fa20ffa1eb0854",
-      "translated_at": "2026-11-05T12:14:25.983858+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:48:39.213994+00:00",
       "model": "codex",
-      "input_hash": "81de4a3fa04cd8a21372c93e9e3f56146a437b8f701870ea835f4ac5297d1e39",
-      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
+      "input_hash": "b6dd02d31b7aabef5fc4f276950b4a744b88af301fc865cf44e7138150bf1352",
+      "upstream_committed_at": "2026-11-05T16:03:27-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/saas/compute_minutes_and_storage.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/saas/compute_minutes_and_storage.md",
-      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
-      "upstream_committed_at": "2026-10-19T18:59:08+11:00",
-      "translated_at": "2026-10-19T22:06:32+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:51:06.044752+00:00",
       "model": "codex",
-      "input_hash": "bd73c18351e46c5bf1ab6c1760a7def56074b1d1100c6c731503f4a9da36ea2d"
+      "input_hash": "128b9d3045fa936bfe1c24653fcefbb36fe2c7b88371b987c7fa2b80f2195e97",
+      "upstream_committed_at": "2026-11-05T15:41:37-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md",
@@ -21810,19 +21810,19 @@
     },
     "content/handbook/support/internal-support/_index.md": {
       "path": "content/handbook/support/internal-support/_index.md",
-      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
-      "translated_at": "2026-10-18T09:31:30Z",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:40:40Z",
       "model": "codex",
-      "input_hash": "23b70a2edd9f3e60dd6222366edd359862a648e6d9a3a1b4b3a713eab93267fa",
-      "upstream_committed_at": "2026-10-16T18:56:09+08:00"
+      "input_hash": "3b19dc5d4f90cc82fd6cc1c0cf4f909f92f667eccf5cea3dcbbe9232165e4f74",
+      "upstream_committed_at": "2026-11-05T16:03:26-05:00"
     },
     "content/handbook/support/internal-support/support-ticket-attention-requests.md": {
       "path": "content/handbook/support/internal-support/support-ticket-attention-requests.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:40:40Z",
       "model": "codex",
-      "input_hash": "b39753682bc7dee2273ee12e5f1d098c64ec95e55bdd210b1a389188da07f8c5",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "d3950c69995418983158de1a0914851f7a499ba09c3f1cb5bd01dc8f6479e2f0",
+      "upstream_committed_at": "2026-11-05T16:06:54-05:00"
     },
     "content/handbook/support/enhanced-support-offerings/_index.md": {
       "path": "content/handbook/support/enhanced-support-offerings/_index.md",
@@ -21962,11 +21962,11 @@
     },
     "content/handbook/support/engineering/mentorship.md": {
       "path": "content/handbook/support/engineering/mentorship.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "beafa3a9880b65fb7f8aef24539250d94237def94b4b461f418ad1a757360304",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:37:58Z",
+      "model": "codex",
+      "input_hash": "527950cf1cc8cbdd150a0fa0591a10621aee27caca038055a2c60396e4ce1d91",
+      "upstream_committed_at": "2026-11-05T15:53:36-05:00"
     },
     "content/handbook/support/engineering/staff.md": {
       "path": "content/handbook/support/engineering/staff.md",
@@ -26050,11 +26050,11 @@
     },
     "content/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements.md": {
       "path": "content/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "upstream_committed_at": "2026-10-30T14:17:26-04:00",
-      "translated_at": "2026-11-01T07:20:25.783696+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:54:54.993254+00:00",
       "model": "codex",
-      "input_hash": "41f540423f19d7c9eaa0df4f6a01a1e8dc5eb8352a571ca876d632ed4fbb9395"
+      "input_hash": "e017ebbbab562e4e395a7219fed7bb05c5936adaebbf98e845b3536a601dc8a9",
+      "upstream_committed_at": "2026-11-06T12:45:56Z"
     },
     "content/handbook/security/policies_and_standards/password-standard.md": {
       "path": "content/handbook/security/policies_and_standards/password-standard.md",
@@ -31602,11 +31602,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md",
-      "upstream_sha": "1d017e2417c7510ed270a22e03f038e968fdb679",
-      "upstream_committed_at": "2026-10-20T17:17:44+01:00",
-      "translated_at": "2026-10-21T21:00:03Z",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:02:49.296141+00:00",
       "model": "codex",
-      "input_hash": "57fe0495da8834094ce7cf7d7e353fa6ce73f0fcd4b610e756df5f47be498bf6"
+      "input_hash": "877c514f93963c4add23bad6ba24424e425e8c028cf978b743cef1eebfd2d7b1",
+      "upstream_committed_at": "2026-11-06T17:15:22+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md",
@@ -31946,11 +31946,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md",
-      "upstream_sha": "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f",
-      "translated_at": "2026-09-20T02:21:36.161890+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:22:02.833721+00:00",
       "model": "codex",
-      "input_hash": "3824c794c6cdeb5908b4902c50246e0dc8a1d249040022ac9f6ba683399cb14e",
-      "upstream_committed_at": "2026-09-15T08:36:14Z"
+      "input_hash": "2566867b65dcc34d25d55098dea1c772b4c0f1879cc51120e4c0dd27aede7310",
+      "upstream_committed_at": "2026-11-06T22:23:31+05:30"
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md",
@@ -31978,11 +31978,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted.md": {
       "path": "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted.md",
-      "upstream_sha": "ab93800e4c241789ac67785899fa20ffa1eb0854",
-      "upstream_committed_at": "2026-11-05T07:24:15+13:00",
-      "translated_at": "2026-11-05T15:15:16.188555+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:07:33.395408+00:00",
       "model": "codex",
-      "input_hash": "96d8351bb1dff6124f74358b84fd3aa8874546959870fb6b3eddd0c6a76e641e"
+      "input_hash": "fced5458389140a329de787ef5725108efe9635c7b47087765b4c673d75d5826",
+      "upstream_committed_at": "2026-11-06T03:58:01+05:30"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md",
@@ -33730,11 +33730,11 @@
     },
     "content/handbook/eta/css/gitlab/support-team-yaml-files.md": {
       "path": "content/handbook/eta/css/gitlab/support-team-yaml-files.md",
-      "upstream_sha": "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152",
-      "translated_at": "2026-08-08T08:52:01+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:57:49.258353+00:00",
       "model": "codex",
-      "input_hash": "483a4017831c3cd6388981d407d06427bb828e3c518f579e64fba03582047b5b",
-      "upstream_committed_at": "2026-08-07T09:55:15-05:00"
+      "input_hash": "e317a4266869d39762c30946ed31f550f0d3eb59ef0a56ea0807504fae97a617",
+      "upstream_committed_at": "2026-11-05T08:37:21-06:00"
     },
     "content/handbook/eta/css/zendesk/searching/_index.md": {
       "path": "content/handbook/eta/css/zendesk/searching/_index.md",
@@ -34890,11 +34890,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/025_garbage_collection.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/025_garbage_collection.md",
-      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
-      "translated_at": "2026-11-05T21:53:05.532094+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:05:22.798302+00:00",
       "model": "codex",
-      "input_hash": "0046ca87973047b9642bbdc6a5622b95c6211887fceb543c22db6e59f2d32c5a",
-      "upstream_committed_at": "2026-11-05T17:24:28Z"
+      "input_hash": "70adacb7cf36b9e08974342a26f9b1b19dd6becee269326e67b62be14960693c",
+      "upstream_committed_at": "2026-11-06T08:33:26+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/orbit/decisions/01-delivery.md": {
       "path": "content/handbook/engineering/architecture/design-documents/orbit/decisions/01-delivery.md",
@@ -35210,11 +35210,11 @@
     },
     "content/handbook/engineering/development/sec/security-factory/threat-research/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/threat-research/_index.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T07:25:00+09:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:54:54.993254+00:00",
       "model": "codex",
-      "input_hash": "eabdd16c9a0e6f6b233c48540bef99f7822f6595183f7081b51abe01e834e2ec",
-      "upstream_committed_at": "2026-08-13T15:10:33+03:00"
+      "input_hash": "47194f4f1b1f073dbbeac75060f1ba27f59142ad75b2e20f079429214e5df490",
+      "upstream_committed_at": "2026-11-05T18:04:34+02:00"
     },
     "content/handbook/engineering/development/sec/security-factory/threat-research/cna.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/threat-research/cna.md",
@@ -35906,11 +35906,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/secure-applications.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/secure-applications.md",
-      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c1f50529a8c896f6e0d47bc5fc1fe4f4a7843a4ec389c8ff6a103b2d322d600c",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:08:38+00:00",
+      "model": "codex",
+      "input_hash": "ba499ebd5a1f6f8f21b76079f526bd093eb11046fd149db51d56bd9d92f65250",
+      "upstream_committed_at": "2026-11-06T14:26:17-06:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/organize.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/organize.md",
@@ -36650,11 +36650,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/_index.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "translated_at": "2026-09-26T23:49:49.632104+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:08:38+00:00",
       "model": "codex",
-      "input_hash": "c2d098eae93b61e84b32d5902a04391c8b0e68260129113f23b97d2f6c3e1cb0",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00"
+      "input_hash": "28a2f383e9416db5b2a0bd93555199e796d5d9072e5e9f9f08653455894af052",
+      "upstream_committed_at": "2026-11-06T14:26:17-06:00"
     },
     "content/handbook/marketing/brand-experience/_index.md": {
       "path": "content/handbook/marketing/brand-experience/_index.md",
@@ -36914,19 +36914,19 @@
     },
     "content/handbook/sales/sales-development/_index.md": {
       "path": "content/handbook/sales/sales-development/_index.md",
-      "upstream_sha": "52419353ea755a1ac823553385f8636ff2fcde17",
-      "translated_at": "2026-11-01T17:57:07+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:14:28+00:00",
       "model": "codex",
-      "input_hash": "6b40ad04b282ab3a77a00f53d9f414a909d87ba4d454cb1aecf4c36d670b75db",
-      "upstream_committed_at": "2026-10-30T14:17:26-04:00"
+      "input_hash": "8faf2c0c4c6fab9c010af84c9cf9f5c31bf39e459f6ba298588fb7ec813c1b34",
+      "upstream_committed_at": "2026-11-06T16:03:29-05:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/content/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/content/_index.md",
-      "upstream_sha": "ab93800e4c241789ac67785899fa20ffa1eb0854",
-      "translated_at": "2026-11-05T13:40:02.095783+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T01:01:08+00:00",
       "model": "codex",
-      "input_hash": "230fbfea38bd4f0f7bce585ecb365b1f4c6aff88497f36602c3041f68d0796d0",
-      "upstream_committed_at": "2026-11-04T20:19:30+01:00"
+      "input_hash": "d71b6ecf44f3944d88963f254a4d2ea91ae5a37b7264fdb09227a792cd7df480",
+      "upstream_committed_at": "2026-11-06T14:26:17-06:00"
     },
     "content/handbook/marketing/product-and-technical-marketing/content/editorial-team.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/content/editorial-team.md",
@@ -37522,11 +37522,11 @@
     },
     "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/forum.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/forum.md",
-      "upstream_sha": "83366dfb077be6f6e05ce2b9af0b0e40f01b3458",
-      "upstream_committed_at": "2026-10-16T19:52:00+02:00",
-      "translated_at": "2026-10-19T22:38:26+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "upstream_committed_at": "2026-11-05T20:46:20+01:00",
+      "translated_at": "2026-11-07T01:05:46+00:00",
       "model": "codex",
-      "input_hash": "641358608e4bebfdaebb290d17f560c5657b4201fbfc7d236b4a57e618b91227"
+      "input_hash": "08f9cdb181de251a9cf68eac39e6bd3f78272f777effe4b4eeed9ea4cd1b148d"
     },
     "content/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/_index.md",
@@ -38962,19 +38962,19 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3k8s.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3k8s.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:34:02.803449+00:00",
       "model": "codex",
-      "input_hash": "c6edd3861c2501843250ce90f2bf4d923184d8c26f77c38e5546e40e8710ece0"
+      "input_hash": "60f252081f1a4bc53f457c2a08d4c542fb89198c4842d73959cd02d823fbe632",
+      "upstream_committed_at": "2026-11-05T15:47:39Z"
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4k8s.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4k8s.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:34:25.759821+00:00",
       "model": "codex",
-      "input_hash": "9207754958222f83892f70172c796d36e690bc42eabc6f23d71d002be5535592"
+      "input_hash": "51a564db99e35a4646dd79b393ec2b4f83275b63586a7169c0b98aaf95f57571",
+      "upstream_committed_at": "2026-11-05T15:47:39Z"
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab6.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab6.md",
@@ -38986,11 +38986,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2k8s.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2k8s.md",
-      "upstream_sha": "7a2e264cb798305fd5c92b586ef9fe633a730244",
-      "upstream_committed_at": "2026-09-24T21:34:11+02:00",
-      "translated_at": "2026-09-27T06:13:05+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:33:39.772635+00:00",
       "model": "codex",
-      "input_hash": "4685b51ccd54b0ffc5435b22d362bd52cbfcd45749bc5de2cec877e4457f5479"
+      "input_hash": "154f0cf6b48058775998898d38883281b5b4cab8fa8e36951a5bf5fc8fb155ca",
+      "upstream_committed_at": "2026-11-05T15:47:39Z"
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab6.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab6.md",
@@ -39682,11 +39682,11 @@
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab4.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab4.md",
-      "upstream_sha": "ab93800e4c241789ac67785899fa20ffa1eb0854",
-      "upstream_committed_at": "2026-11-04T12:01:28-05:00",
-      "translated_at": "2026-11-05T15:23:57.350605+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:33:15.705716+00:00",
       "model": "codex",
-      "input_hash": "ac8b010ecea619865e13c67ecad222a85539cdf2e8bfeb13ac27c286e629e3af"
+      "input_hash": "00488c86379d05b031968deab34baa65a04acd2943937e579738de64b377b953",
+      "upstream_committed_at": "2026-11-05T12:14:29Z"
     },
     "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab3.md": {
       "path": "content/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab3.md",
@@ -40962,11 +40962,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/008_signing_local_ca_attestations.md": {
       "path": "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/008_signing_local_ca_attestations.md",
-      "upstream_sha": "ab93800e4c241789ac67785899fa20ffa1eb0854",
-      "upstream_committed_at": "2026-11-05T07:24:15+13:00",
-      "translated_at": "2026-11-05T15:15:16.188555+00:00",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:09:35.180591+00:00",
       "model": "codex",
-      "input_hash": "8c10ffa0efc2ae0f41f35170fe8f55550caf55efbefb21aec716518dee425878"
+      "input_hash": "3d1a66c51f02f6f077898c949c4236f421d394f5647bfebaff6b3a06369823e8",
+      "upstream_committed_at": "2026-11-06T03:58:01+05:30"
     },
     "content/handbook/engineering/architecture/abstractions/candidate/backend_languages.md": {
       "path": "content/handbook/engineering/architecture/abstractions/candidate/backend_languages.md",
@@ -40999,6 +40999,22 @@
       "model": "codex",
       "input_hash": "661d946f1d375415abe5d81d682efa2867b27cd4bb47c73aca1d89691a6589a7",
       "upstream_committed_at": "2026-11-05T10:52:01+01:00"
+    },
+    "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/glossary.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/glossary.md",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:25:45.563460+00:00",
+      "model": "codex",
+      "input_hash": "4773618fd6653b4a96c48584f6ffd73c6e60d9830248ca8b836cb1833e1dfd82",
+      "upstream_committed_at": "2026-11-06T14:27:25+01:00"
+    },
+    "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/opportunities.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/opportunities.md",
+      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
+      "translated_at": "2026-11-07T00:27:31.339857+00:00",
+      "model": "codex",
+      "input_hash": "43ba2007c2319b8eac68a8012e97ccd413709b60f41e32dd1dc17fd606b5c824",
+      "upstream_committed_at": "2026-11-06T14:27:25+01:00"
     }
   }
 }

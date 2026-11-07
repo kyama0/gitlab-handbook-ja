@@ -2,24 +2,24 @@
 title: "GitLab システム管理者 - ハンズオンラボ: Kubernetes のバックアップとリストア"
 description: "このハンズオンガイドでは、GitLab Kubernetes インスタンスのバックアップとリストア方法を紹介します。"
 upstream_path: /handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3k8s/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
+translated_at: "2026-11-07T00:34:02.803449+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-05T15:47:39Z"
 ---
 
-> 推定所要時間: 30 分
+> 推定所要時間： 30 分
 
-## 目的
+## 目的 {#objectives}
 
 このラボの目的は、仮想マシン上の GitLab インスタンスをバックアップし、以前の状態にリストアする方法を示すことです。[GitLab インスタンスのバックアップ/リストアの詳細については、こちらをクリックしてください](https://docs.gitlab.com/ee/administration/backup_restore/)。
 
-## タスク A. バックアップ設定の構成
+## タスク A. バックアップ設定の構成 {#task-a-configure-backup-settings}
 
 1. GitLab インスタンスサーバーで SSH セッションを開きます。
 
-1. お好みのテキストエディターで helm 値を開きます。
+1. お好みのテキストエディターで helm の値を開きます。
 
 1. このファイル内で、バックアップを有効にするためにいくつかの設定を更新する必要があります。まず、次の `global` 設定を追加します。
 
@@ -47,11 +47,22 @@ lastmod: "2026-09-24T21:34:11+02:00"
                 gcpProject: demosys-ilt-training-cloud
       ```
 
+1. このタスクの最後のステップの `helm upgrade` は、GitLab の Pod を再起動します。クラスターの CPU は限られているため、古い `sidekiq` Pod がまだ実行中の間、新しい Pod が `Pending` のままになる可能性があります。これを避けるため、古い `sidekiq` Pod を停止してから新しい Pod を起動するよう、`gitlab` ブロックに次の設定を追加します。
+
+      ```yml
+        sidekiq:
+          deployment:
+            strategy:
+              type: Recreate
+      ```
+
 1. これらのバケットにアクセスできるようにするには、AWS サービスアカウントの認証情報を提供する必要があります。これを行うには、`kubectl create secret generic storage-config --from-file=config=storage.config` コマンドを実行します。
 
-1. この設定を追加したら、`helm upgrade --install gitlab gitlab/gitlab --version 9.4.3 --timeout 100s -f values.yml` コマンドを実行します。
+1. この設定を追加したら、`helm upgrade --install gitlab gitlab/gitlab --version 9.6.0 --timeout 100s -f values.yml` コマンドを実行します。
 
-## タスク B. GitLab インスタンスのバックアップ
+      > `--version` は、インスタンスのデプロイに使用しているチャートのバージョンと一致する必要があります。確認するには、`helm list` を実行して `CHART` 列を確認します（このラボでは `gitlab-9.6.0`）。Helm と GitLab はダウングレードに対応しておらず、インスタンスが応答しなくなるため、古いバージョンを使用しないでください。
+
+## タスク B. GitLab インスタンスのバックアップ {#task-b-backup-the-gitlab-instance}
 
 1. フルバックアップを取得するには、まず `toolbox` Pod を見つけます。
 
@@ -75,11 +86,11 @@ lastmod: "2026-09-24T21:34:11+02:00"
       kubectl get secrets <rails-secret-name> -o jsonpath="{.data['secrets\.yml']}" | base64 --decode > gitlab-secrets.yaml
       ```
 
-この時点で、バックアップはオブジェクトストレージに保存されます。ファイル名をメモしておきます。例: `s3://bucket/1729261040_2024_10_18_17.4.1-ee_gitlab_backup.tar`
+この時点で、バックアップはオブジェクトストレージに保存されます。ファイル名をメモしておきます。例： `s3://bucket/1729261040_2024_10_18_17.4.1-ee_gitlab_backup.tar`
 
-**重要:** タイムスタンプをメモしておきます（この例では: 1729261040_2024_10_18_17.4.1-ee）。リストアプロセスで必要になります。
+**重要：** タイムスタンプをメモしておきます（この例では： 1729261040_2024_10_18_17.4.1-ee）。リストアプロセスで必要になります。
 
-## タスク C. GitLab 設定の変更
+## タスク C. GitLab 設定の変更 {#task-c-make-some-changes-to-gitlab-settings}
 
 1. Web ブラウザーで GitLab インスタンスにサインインし、サイドバーを開きます。左下隅の **Admin area** をクリックします。
 
@@ -91,7 +102,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 5. ページを更新して変更が適用されたことを確認します。
 
-## タスク D. バックアップからのリストア
+## タスク D. バックアップからのリストア {#task-d-restore-from-backup}
 
 1. GitLab インスタンスサーバーの SSH セッションに戻ります。
 
@@ -107,7 +118,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
       kubectl create secret generic <rails-secret-name> --from-file=secrets.yml=gitlab-secrets.yaml
       ```
 
-1. シークレットを適用するために Kubernetes Pod を再起動します。
+1. シークレットを適用するために Kubernetes の Pod を再起動します。
 
       ```bash
       kubectl delete pods -lapp=sidekiq,release=gitlab
@@ -137,7 +148,7 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
       > リストアプロセスを開始するよう求められた場合は、**yes** と入力します。
 
-1. リストアプロセスが完了したら、Pod をスケールアップします。
+1. リストアプロセスが完了したら、Pod を元の数にスケールアップします。
 
       ```bash
       kubectl scale deploy -lapp=sidekiq,release=gitlab --replicas=1
@@ -147,10 +158,10 @@ lastmod: "2026-09-24T21:34:11+02:00"
 
 1. Kubernetes インスタンスにアクセスして、リストアが正常に完了したことを確認します。
 
-## ラボガイド完了
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボ演習を完了しました。このコースの他の[ラボガイド](/handbook/customer-experience/professional-services-engineering/education-services/ilt-labs/sysadminhandsonk8s)を参照できます。
 
-## ご提案はありますか?
+## ご提案はありますか？ {#suggestions}
 
 このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。
