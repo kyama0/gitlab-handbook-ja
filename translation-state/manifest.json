@@ -12146,11 +12146,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/_index.md",
-      "upstream_sha": "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a",
-      "translated_at": "2026-10-06T22:25:54+00:00",
+      "upstream_sha": "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d",
+      "translated_at": "2026-11-12T14:20:07+00:00",
       "model": "codex",
-      "input_hash": "04fb94228ee6f2c780b380f977aa7ca08f4ee24346e0f6f9814ea41e9c536d05",
-      "upstream_committed_at": "2026-10-06T14:53:30+02:00"
+      "input_hash": "5140ef7e77273f82a9e062e537451ffb1345117f294624163fb55008000de157",
+      "upstream_committed_at": "2026-11-11T15:33:17Z"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/ai/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/ai/_index.md",
@@ -12170,11 +12170,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/api/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/api/_index.md",
-      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
-      "translated_at": "2026-10-08T21:04:47+00:00",
+      "upstream_sha": "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d",
+      "translated_at": "2026-11-12T14:20:07+00:00",
       "model": "codex",
-      "input_hash": "a36aa96848f04ea2d032c64f203914a8b564368961ce3e53865bcd0f837e7da4",
-      "upstream_committed_at": "2026-10-08T16:39:44+01:00"
+      "input_hash": "c2318401fae3761cf2055fe6c1cdab7a5262f63ec18e5e61676bf52da68031ef",
+      "upstream_committed_at": "2026-11-11T10:41:57Z"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization.md",
@@ -12194,11 +12194,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/dashboards.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/dashboards.md",
-      "upstream_sha": "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a",
-      "translated_at": "2026-10-06T22:25:54+00:00",
+      "upstream_sha": "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d",
+      "translated_at": "2026-11-12T14:20:07+00:00",
       "model": "codex",
-      "input_hash": "da42cbb7510131650cbd331aa049b42a982736cbe4b6a9affc80727a06315a5c",
-      "upstream_committed_at": "2026-10-05T13:20:55-07:00"
+      "input_hash": "4f62406c109f34ce0c8a4c8a7996ac2d21d8314ef333bec12919ec7a2a164888",
+      "upstream_committed_at": "2026-11-11T16:10:12+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/data-golden-path.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/data-golden-path.md",
@@ -12306,11 +12306,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/onboarding.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/onboarding.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T07:03:07+09:00",
+      "upstream_sha": "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d",
+      "translated_at": "2026-11-12T14:20:07+00:00",
       "model": "codex",
-      "input_hash": "4c251df571d5f51fdb436b260f80aa8fc9382c9664e8cb5522398ee951e2dc86",
-      "upstream_committed_at": "2026-07-07T16:51:00+02:00"
+      "input_hash": "124500a0b8e6f775dc9ca2de401e3ab8ab0cf744f449dbacab44ef2245d3fda8",
+      "upstream_committed_at": "2026-11-11T16:12:39+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement/_index.md",
@@ -37058,19 +37058,19 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/instance-configuration.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/instance-configuration.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T22:10:05+09:00",
+      "upstream_sha": "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d",
+      "translated_at": "2026-11-12T14:20:07+00:00",
       "model": "codex",
-      "input_hash": "fadf3b37f3cd428ace6bbf7f7b5483e828b309917826cc07265bc70c659ea13c",
-      "upstream_committed_at": "2026-08-21T10:31:23+10:00"
+      "input_hash": "9578cc4d37bbfea91dfd94c6c3d5a3fcb4dcd0398833ba5266dda300e6db61d1",
+      "upstream_committed_at": "2026-11-11T15:33:17Z"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/lifecycle-management.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/lifecycle-management.md",
-      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
-      "translated_at": "2026-09-04T22:10:05+09:00",
+      "upstream_sha": "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d",
+      "translated_at": "2026-11-12T14:20:07+00:00",
       "model": "codex",
-      "input_hash": "0605de164c358336dd5bcf748ebdf5e11b12c84d1de5852ddb503686875cd66c",
-      "upstream_committed_at": "2026-08-21T10:31:23+10:00"
+      "input_hash": "5c1390d73a3e5f72d7032ee01baa73fe71cb1a3a8b85645b3a4570331d747f37",
+      "upstream_committed_at": "2026-11-11T15:33:17Z"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/platform-readiness.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/platform-readiness.md",
@@ -40170,11 +40170,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/_index.md",
-      "upstream_sha": "e8a5a866cb11056dc11bec53f53747ceddafc748",
-      "translated_at": "2026-10-08T21:04:47+00:00",
+      "upstream_sha": "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d",
+      "translated_at": "2026-11-12T14:20:07+00:00",
       "model": "codex",
-      "input_hash": "8aeee7f53e25a8ba0d227c560879e65bb216844f29f0f70f0a555e8456f47eac",
-      "upstream_committed_at": "2026-10-08T14:15:26+02:00"
+      "input_hash": "0eeba82c6510c512a3fb60d1c1a14012b490bf8e07b2fce3649740225e276890",
+      "upstream_committed_at": "2026-11-11T14:57:41+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/test-health.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/development-health/test-health.md",

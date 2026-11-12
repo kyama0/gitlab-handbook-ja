@@ -2,17 +2,16 @@
 title: "Developer Experience ダッシュボード"
 description: "このハンドブックページは、すべての Developer Experience ダッシュボードの詳細の中央リポジトリとして機能します"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/dashboards/"
-upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
-translated_at: "2026-10-06T22:25:54+00:00"
+upstream_sha: "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d"
+translated_at: "2026-11-12T14:20:07+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-05T13:20:55-07:00"
+lastmod: "2026-11-11T16:10:12+01:00"
 ---
 
-> 耐障害性があり効率的で堅牢なプラットフォームを追求するにあたり、私たちのテストプラットフォームサブ部門は
-> 多数のダッシュボードの作成と維持を通じて重要なサポートを提供しています。これらの重要なツールは、
-> 環境全体の詳細なテストヘルスを把握し、パフォーマンスの異常をフラグし、
-> 厳格なテストインフラに貢献します。
+> 耐障害性があり効率的で堅牢なプラットフォームを追求するため、Developer Experience セクションは、
+> 多数のダッシュボードの作成と維持を通じて重要なサポートを提供しています。これらの重要なツールは、環境全体の詳細な
+> テストの健全性を把握し、パフォーマンスの異常を検知し、堅牢なテストインフラに貢献します。
 
 ## ダッシュボード
 
