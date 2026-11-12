@@ -2,41 +2,28 @@
 title: "Developer Experience オンボーディング"
 description: "新しい Developer Experience セクションメンバーとしてオンボーディングするためのガイドライン"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/onboarding/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:03:07+09:00"
-translator: claude
+upstream_sha: "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d"
+translated_at: "2026-11-12T14:20:07+00:00"
+translator: codex
 stale: false
-lastmod: "2026-07-07T16:51:00+02:00"
+lastmod: "2026-11-11T16:12:39+01:00"
 ---
 
 ここに記載されている手順は、People Ops がチームメンバーの初日に割り当てるオンボーディング Issue に加えて行うものです。
 
-[Test Platform チームのオンボーディング Issue テンプレート](https://gitlab.com/gitlab-org/quality/quality-engineering/team-tasks/-/blob/master/.gitlab/issue_templates/Onboarding.md)を [TP Team Tasks](https://gitlab.com/gitlab-org/quality/quality-engineering/team-tasks/-/issues/new) の新しい Issue にコピーして完了させてください。
+Developer Experience 内の一部のチームには、チーム固有のオンボーディング Issue があります。まだ作成されていない場合は、[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/)に確認してください。
 
-## 一般チームリソース
+## 一般リソース
 
-* GitLab QA
-  * [テストガイド / E2E テスト](https://docs.gitlab.com/ee/development/testing_guide/end_to_end/)
-  * [GitLab QA オーケストレータードキュメント](https://gitlab.com/gitlab-org/gitlab-qa/blob/master/README.md)
-  * [GitLab QA テストドキュメント](https://gitlab.com/gitlab-org/gitlab-qa/blob/master/README.md#documentation)
-* 一般的なテストガイドライン
+* 私たちのテストインフラについて
   * [テスト標準とスタイルガイドライン](https://docs.gitlab.com/ee/development/testing_guide/index.html)
-* CE と EE の CI インフラストラクチャ
-  * [GitLab プロジェクトパイプライン](https://docs.gitlab.com/ee/development/testing_guide/end_to_end/)
-  * [CI からのテスト](https://docs.gitlab.com/ee/development/cicd/)
+  * [エンドツーエンドテストの仕組み](https://docs.gitlab.com/ee/development/testing_guide/end_to_end/)
+  * [私たち自身の CI/CD の仕組み](https://docs.gitlab.com/ee/development/cicd/)
+  * [GitLab QA Orchestrator ドキュメント](https://gitlab.com/gitlab-org/gitlab-qa/blob/master/README.md)
 * テスト統計
   * [Redash テストスイート統計](https://redash.gitlab.com/dashboard/test-suite-statistics)
-* インサイトダッシュボード
-  * [Quality ダッシュボード](https://quality-dashboard.gitlap.com/)
-  * [Quality ダッシュボードドキュメント](https://gitlab.com/gitlab-org/gitlab-insights/blob/master/README.md)
 * トリアージ
   * [トリアージオンボーディング](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/onboarding/)
-* QA ランナー
-  * [QA ランナーオーナーシップ Issue](https://gitlab.com/gitlab-org/gitlab-qa/issues/261)
-* プロジェクト
-  * [gitlab-org](https://gitlab.com/gitlab-org)
-  * [gitlab-com](https://gitlab.com/gitlab-com)
-  * [triage-ops](https://gitlab.com/gitlab-org/quality/triage-ops)
 * 環境
   * [dev.gitlab.org](https://dev.gitlab.org)
   * [本番](https://gitlab.com)
@@ -45,30 +32,21 @@ lastmod: "2026-07-07T16:51:00+02:00"
   * [Staging-canary](https://staging.gitlab.com) - `gitlab_canary=true`
   * [Staging-ref](https://staging-ref.gitlab.com)
   * [Preprod](https://pre.gitlab.com/)
-  * [Customer-dot](https://customers.staging.gitlab.com/)
+  * [Customer-dot（ステージング）](https://customers.staging.gitlab.com/)
+  * [Ops](https://ops.gitlab.net/)
 * CI 環境
   * Main - Slack チャンネル [#e2e-run-master](https://gitlab.slack.com/archives/CNV2N29DM)
-  * Performance - Slack チャンネル [#gpt-performance-run](https://gitlab.slack.com/archives/CH8J9EG49)
-* コードレビュー
-  * [Test Platform チームのコードレビューチェックリスト](https://gitlab.com/gitlab-org/quality/code-review-checklists)
+  * Performance - Slack チャンネル [#ref-arch-performance-tests](https://gitlab.slack.com/archives/CH8J9EG49)
 
 ### Slack チャンネル
 
 以下の内部 Slack チャンネルへの参加が役立つ可能性があります。
 
 * 部門
-  * [#infrastructure-department](https://gitlab.slack.com/archives/C02GR2DV5QT) - 部門全般チャンネル
-  * [#test-platform](https://gitlab.slack.com/messages/C3JJET4Q6) - サブ部門全般チャンネル
-  * [#test-platform-lounge](https://gitlab.slack.com/archives/CGZQCTU8J) - Test Platform サブ部門が集まり週次アップデートを投稿するチャンネル
-  * [#test-platform-maintainers](https://gitlab.slack.com/archives/C0437FV9KBN) - テストプラットフォームメンテナーがリクエストするためのチャンネル。必要に応じてメンテナーレビューの優先対応をリクエストするために使用できます
-  * [#infrastructure-managers](https://gitlab.slack.com/archives/C017BFF9CJU) - Infrastructure のすべてのエンジニアリングマネージャーとコミュニケーション・協力するためのチャンネル
-  * [#e2e-run-master](https://gitlab.slack.com/archives/CNV2N29DM) - マスターパイプラインのエンドツーエンドテスト結果が届くチャンネル
-  * [#e2e-run-preprod](https://gitlab.slack.com/messages/CCNNKFP8B) - pre.gitlab.com への実行に対するエンドツーエンドテスト結果が届くチャンネル
-  * [#e2e-run-staging](https://gitlab.slack.com/messages/CBS3YKMGD) - staging.gitlab.com への実行に対するエンドツーエンドテスト結果が届くチャンネル
-  * [#e2e-run-production](https://gitlab.slack.com/messages/CCNNKFP8B) - gitlab.com への実行に対するエンドツーエンドテスト結果が届くチャンネル
-  * [#gpt-performance-run](https://gitlab.slack.com/messages/CH8J9EG49) - パフォーマンステスト結果が届くチャンネル
-  * [#quality-reports](https://gitlab.slack.com/archives/C02MH85L5EF) - さまざまなエンドツーエンドテストメトリクスレポートが届くチャンネル
+  * [#s_developer_experience](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) - 議論とお知らせのための Developer Experience のメインチャンネル
+  * [#s_developer_experience-lounge](https://gitlab.enterprise.slack.com/archives/CGZQCTU8J) - Developer Experience の雑談や業務外の会話
 * 会社全体
+  * [#engineering-fyi](https://gitlab.enterprise.slack.com/archives/CJWA4E9UG) - エンジニアリング全体に関係するお知らせ
   * [#product](https://gitlab.slack.com/messages/C0NFPSFA8) - 製品チームのメンバーを観察し交流する
   * [#development](https://gitlab.slack.com/messages/C02PF508L) - マスターブロークン、環境の問題、その他の開発関連のステータス項目を把握する
   * [#is-this-known](https://gitlab.slack.com/messages/CETG54GQ0) - Canary の障害やバグに関する情報を見つける

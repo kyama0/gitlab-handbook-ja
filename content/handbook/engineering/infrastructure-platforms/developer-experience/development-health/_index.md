@@ -2,11 +2,11 @@
 title: "Development Health グループ"
 description: "Developer Experience セクション配下の Development Health グループ"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/development-health/"
-upstream_sha: "e8a5a866cb11056dc11bec53f53747ceddafc748"
-translated_at: "2026-10-08T21:04:47+00:00"
+upstream_sha: "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d"
+translated_at: "2026-11-12T14:20:07+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-08T14:15:26+02:00"
+lastmod: "2026-11-11T14:57:41+01:00"
 ---
 
 ## 戦略 {#strategy}
@@ -33,121 +33,11 @@ GitLab Engineering に組み込まれた社内ラボとして運用します。�
 
 Triage Ops、Roulette、Dangerfiles、EP Infrastructure など、GitLab エンジニアリングが依存するツールを維持します。カスタムツールを並行して運用するのではなく、段階的に製品へ移行します。現在人間またはスクリプトが行っている L1 自動化作業は、AI エージェントが引き継ぎます。
 
-## FY27 ロードマップ {#fy27-roadmap}
+## ロードマップ {#roadmap}
 
 社内で何を構築する場合でも、私たちは製品を念頭に置いて構築します。Customer Zero とは、まず GitLab 内でシグナルパターンを検証し、その後、すべての GitLab 顧客が恩恵を受けられるよう製品に取り込むことです。
 
-### Q2
-
-チームが現在取り組んでいる内容の最新の状況については、[Q2 計画 Issue](https://gitlab.com/gitlab-org/quality/analytics/team/-/work_items/573)を参照してください。
-
-### Q3
-
-| イニシアチブ | キャパシティ | エンジニア |
-| :---- | :---- | :---- |
-| [CI 健全性インシデント — 運用、フィードバック、改善](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/47) | 主担当（チーム全体） | 全 3 名 |
-| [Theseus — モジュラー機能の CI/CD とテストの可観測性](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/49) | ベストエフォート | 1〜2 名 |
-| [テスト健全性インデックス](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/46) | ベストエフォート、Q3 で完了 | 1 名 |
-
-#### CI 健全性インシデント — 運用、フィードバック、改善 {#ci-health-incidents--operations-feedback--evolution}
-
-CI 健全性インシデントの検出はすでに稼働しており、旧 master-broken システムと比べてノイズを約 91% 削減しています。エンジニアと EM が master-broken インシデントの影響を定量化し、解決までの時間を短縮し、防止のためのガードレールを追加できるよう支援できる、よい位置にいます。
-
-製品面での直接的な機会もあります。GitLab は[製品内のフレーキーテスト検出](https://gitlab.com/gitlab-org/gitlab/-/work_items/606069)を試作しており、DH が持つ過去のテストシグナル、つまり統計的なフレーキネスの定義、失敗シグネチャ、影響範囲のデータは、この製品イニシアチブを堅牢にするためにまさに必要なものです。
-
-*エピック: [CI 健全性インシデント — 運用、フィードバック、改善](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/47)*
-
-- **Q3:** 3 名のエンジニア全員がここに注力します。シグナル品質の改善（トレースなしのジョブ/パイプライン失敗の検出）、master-broken 廃止監査、オーナーシップ/対応プロセスを進めます。
-- **Q4:** レガシー master-broken インシデントの扱い（廃止、リダイレクト、または統合）を決め、ハンドブック/ドキュメントを適宜更新します。
-- **その後:** 高度な自動化（AI 支援による MR の特定、自動作成されるリバート MR）。インシデントから学び、再発を防ぎます。
-
----
-
-#### Theseus — モジュラー機能の CI/CD とテストの可観測性 *(ベストエフォート)* {#theseus--cicd--test-observability-for-modular-features-best-effort}
-
-Theseus は GitLab の将来の開発プラットフォームです。新しい Modular Component はすべてこれを基盤とします。DH は早期に関与し、Modular Components にとって優れた可観測性とは何かを確立する機会があります。DH では、Theseus ベースのコンポーネントのエンドツーエンド CI/CD とテストシグナルフローをまだ誰も検証していません。まず試験プロジェクトで実施し、Artifact Registry で検証すれば、将来のすべてのモジュラーチームに従うべき舗装済みの道筋を提供できます。
-
-*エピック: [Theseus のテストと CI の可観測性](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/49)*
-
-- **Q3（ベストエフォート）:** 小規模なプロジェクト（Ruby/Go/Jest テストを含む）を計測し、テスト結果、テスト時間、ジョブ時間、パイプライン時間、失敗カテゴリ、失敗シグネチャを私たちの ClickHouse に送信します。既存のダッシュボードを検証します。同じアプローチを Artifact Registry に適用します。ギャップは Issue として登録します。
-- **Q4（主担当）:** 全力で注力します。SDLC ライフサイクルに沿ってより多くのメトリクスを追加し、対象をより多くの Modular Component に拡大し、エピックを洗練させます。
-- **その後:** 私たちが定義する可観測性標準が、新しい GitLab プロジェクトの標準になります。すべてのプロジェクトが、カスタム計測作業なしで SDLC 全体の CI/CD とテストメトリクスを出力します。
-
----
-
-#### テスト健全性インデックス *(ベストエフォート、Q3 で完了)* {#test-health-index-best-effort-completes-q3}
-
-GitLab のテストスイートには、隔離テスト、フレーキーテスト、低速テストという 3 つの柱にまたがる、実在し増加し続ける負債があります。現在、これらをグループごとの健全性として集約して表示するものはありません。フェーズ 1（可視化）はほぼ完了し、フェーズ 2（キャリブレーション）はすでに進行中です。
-
-*エピック: [テスト健全性インデックスの導入](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/46)*
-
-- **Q3（ベストエフォート）:** フェーズ 1（可視化）とフェーズ 2（キャリブレーション）を完了します。テスト健全性インデックスのダッシュボード、グループごとの詳細生成機能、Investigation バケットのワークフロー、triage-ops 統合、調整済みの RAG バンドしきい値を完了します。
-- **その後:** フェーズ 3（アラート）とフェーズ 4（強制）は、エンジニアリングリーダーシップの支持を条件とします。
-
----
-
-### Q4
-
-| イニシアチブ | キャパシティ | エンジニア |
-| :---- | :---- | :---- |
-| [Theseus — モジュラー機能の CI/CD とテストの可観測性](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/49) | 主担当 | 1〜2 名 |
-| [Orbit 統合 — CI シグナルをナレッジグラフへ取り込む](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/52) | 調査スパイク | 1 名 |
-| [フレーキーテスト検出を Jest、Go、Rust に拡大する](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/53) | 調査スパイク | 1 名 |
-| [CI 健全性インシデント — 運用、フィードバック、改善](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/47) | 保守 | 必要に応じて |
-
-#### Orbit 統合 — CI シグナルをナレッジグラフへ取り込む {#orbit-integration--bringing-ci-signal-into-the-knowledge-graph}
-
-現在、エージェントは CI ジョブまでの経路をたどれますが、そのジョブの内部で何が起きているかは見えません。DH の ClickHouse データ（フレーキーテスト、失敗カテゴリ、CI 健全性インシデント、失敗シグネチャ、コードカバレッジ）があれば、エージェントはさらに 1 段深く掘り下げられ、CI 健全性に関する質問への回答能力を大きく向上できます。ハッカソンの試作（[リポジトリ](https://gitlab.com/gitlab-ai-hackathon/transcend/8043245)、[記事](https://dev.to/arek_h/finding-the-root-cause-of-production-incidents-in-seconds-with-gitlab-orbit-ai-244i)）では、すでに Orbit を通じたインシデントから MR へのトラバーサルパターンが実証されています。DH の CI シグナルレイヤーが欠けている要素です。
-
-*エピック: [Orbit 統合 — CI シグナルをナレッジグラフへ取り込む](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/52)*
-
-- **Q4:** 調査スパイクを実施します。チームの ClickHouse から本番 ClickHouse にデータを移すには何が必要でしょうか。Orbit 統合には技術的に何が必要でしょうか。GitLab 社内向けと製品向けではどのような形になるでしょうか。可能な箇所から移行と統合を開始します。
-- **その後:** DH の CI シグナルは Orbit の第一級データソースとなり、GitLab の顧客が利用できるようになります。
-
----
-
-#### フレーキーテスト検出を Jest、Go、Rust に拡大する {#expand-flaky-test-detection-to-jest-go-and-rust}
-
-現在、フレーキーテスト検出は RSpec でしか機能しません。Jest、Go、Rust のテストには、フレーキネスが同じように現実の問題であるにもかかわらず、参加する方法がありません。この拡大は、GitLab が構築している製品内フレーキーテスト検出イニシアチブを直接支援します。
-
-*エピック: [フレーキーテスト検出を Jest、Go、Rust に拡大する](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/53)*
-
-- **Q4:** Jest と Go の実際の再試行確認を組み込みます。Orbit 自身のテストスイートを含む Rust エクスポーターを構築します。既存のダッシュボードやアラートに大量に流入しないよう、各フレームワークを明示的な許可リストの背後に置きます。
-- **その後:** DH がサポートするすべての主要フレームワークで、フレーキーシグナルの同等性を実現します。
-
----
-
-### 将来の作業 / 候補 {#future-work--candidates}
-
-*このサイクルではコミットしません。レビュー担当者が価値を確認し、必要に応じて優先順位を変更できるよう掲載しています。*
-
-#### 体系的な本番インシデントの根本原因分析 {#systematic-production-incident-root-cause-analysis}
-
-テストカバレッジ、隔離状態、CI シグナルを本番インシデントに結び付け、「なぜパイプラインはグリーンだったのか？」に答えます。ハッカソンの試作（[リポジトリ](https://gitlab.com/gitlab-ai-hackathon/transcend/8043245)、[記事](https://dev.to/arek_h/finding-the-root-cause-of-production-incidents-in-seconds-with-gitlab-orbit-ai-244i)）では、すでに Orbit を通じたインシデントから MR へのトラバーサルパターンが実証されています。DH の CI シグナルレイヤーが、体系的かつ再現可能な根本原因分析に欠けている要素です。
-
-*エピック: [体系的なインシデント根本原因分析](https://gitlab.com/gitlab-org/quality/analytics/team/-/work_items/39)*
-
----
-
-#### Development Health 向け Tier-1 エージェント {#tier-1-agents-for-development-health}
-
-DH で Tier-1 エージェントを責任を持って運用するための設計図を調査します。実行場所、ガードレール、良い/悪い結果の定義を扱います。DH は、他の DevEx チームや社内チームが追随できるリファレンス実装になります。現在の GitLab には、このための共通パターンがありません。
-
-*エピック: [Development Health 向け Tier-1 エージェント](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/51)*
-
----
-
-#### ClickHouse のエンジニアリングデータカバレッジを拡大する {#expand-engineering-data-coverage-in-clickhouse}
-
-より多くの欠けているデータソースを ClickHouse に追加します。ファクトリープロファイリング、MR レビューメタデータ、CI/CD コストテレメトリが対象です。データギャップを 1 つ埋めるたびに、検証し、製品チームに提供し、最終的に顧客へ届けられるシグナルカテゴリが増えます。
-
-*エピック: [ClickHouse のエンジニアリングデータカバレッジを拡大する](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/54)*
-
-候補のサブプロジェクト:
-
-- **MR プロセスの可視性** — レビュアールーレットプールの規模、承認リセットの頻度、レビュータイムラインを表示します。製品がすでに解決していないことを確認するため、まず簡単な調査 Issue が必要です。[エピック](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/45)
-- **ファクトリーが多用される RSpec テストの可観測性、ガードレール、修復** — CI におけるファクトリーの時間コスト（以前は 1 つのファクトリーに対して実行ごとに約 11.7 CI 時間）をプロファイリングし、その後 RuboCop のガードレールと修復を追加します。[エピック](https://gitlab.com/groups/gitlab-org/quality/-/work_items/403)
-- **ClickHouse と Grafana で CI/CD パイプラインコストを追跡する** — プロジェクト、ジョブ種別、リソースカテゴリ別のコスト内訳です。[エピック](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/34)
+今四半期と次四半期に取り組むイニシアチブについては、[Development Health のロードマップ Issue](https://gitlab.com/gitlab-org/quality/analytics/team/-/work_items/921)を参照してください。
 
 ## 働き方 {#how-we-work}
 

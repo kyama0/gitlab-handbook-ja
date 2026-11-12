@@ -2,16 +2,16 @@
 title: "Developer Experience"
 description: "Developer Experience セクションは、すべてのチームが高品質な変更をリリースできるよう、開発者体験の向上に取り組んでいます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/"
-upstream_sha: "60e1e842aebbbe87a0eecbd25b42d9650d13ed6a"
-translated_at: "2026-10-06T22:25:54+00:00"
+upstream_sha: "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d"
+translated_at: "2026-11-12T14:20:07+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-06T14:53:30+02:00"
+lastmod: "2026-11-11T15:33:17Z"
 ---
 
 ## ミッション
 
-エンジニアリングのツール、プラクティス、データを単一の見つけやすい場所に統合する一貫性のある開発エコシステムへとチームをつなげることで、すべての人にとって機能する形で、GitLab のエンジニアリング速度を加速させ、品質基準を引き上げます。
+チーム、ツール、インサイトを、すべての人にとって機能する一貫した開発エコシステムへとつなげることで、GitLab のエンジニアリング速度を加速させながら、品質基準を引き上げます。
 
 ## ビジョン
 
@@ -134,6 +134,12 @@ graph TD
     click PE "/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement"
     DE --> AL[Application Lifecycle]
     click AL "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle"
+    AL --> LM[Lifecycle Management]
+    click LM "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/lifecycle-management"
+    AL --> IC[Instance Configuration]
+    click IC "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/instance-configuration"
+    AL --> PR[Platform Readiness]
+    click PR "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/platform-readiness"
 ```
 
 ## チームメンバー
