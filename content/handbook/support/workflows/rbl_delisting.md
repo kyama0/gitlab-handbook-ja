@@ -3,11 +3,11 @@ title: リアルタイムブロックリストの解除
 category: GitLab.com
 description: Mailgun サポートに連絡して、私たちの IP アドレスをリアルタイムブロックリスト（RBL）から削除してもらう方法
 upstream_path: /handbook/support/workflows/rbl_delisting/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T01:46:59Z"
+upstream_sha: "bd4ec993fb708237c42096d728863f50647c9fe2"
+translated_at: "2026-11-12T21:07:44.630137+00:00"
 translator: claude
 stale: false
-lastmod: "2024-11-14T23:18:47+00:00"
+lastmod: "2026-11-12T14:42:27-05:00"
 ---
 
 ### 概要
@@ -16,7 +16,7 @@ lastmod: "2024-11-14T23:18:47+00:00"
 
 ### Mailgun での Suppression の確認
 
-カスタマーから確認メールが届かないと報告された場合、まず [confirmation email](/handbook/support/workflows/confirmation_emails) ワークフローを実施してください。Mailgun パネルで [suppression を確認](/handbook/support/workflows/confirmation_emails/#checking-mailgun) します。
+カスタマーから確認メールが届かないと報告された場合、まず [confirmation email](/handbook/support/workflows/confirmation_emails/) ワークフローを実施してください。Mailgun パネルで [suppression を確認](/handbook/support/workflows/confirmation_emails/#checking-mailgun-logs) します。
 
 ### RBL リスティングの確認
 

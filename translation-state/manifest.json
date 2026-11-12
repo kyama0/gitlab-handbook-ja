@@ -19954,11 +19954,11 @@
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/license_for_weekend_emergencies.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/license_for_weekend_emergencies.md",
-      "upstream_sha": "4684d72f27f3401d3ae72a26d72ae46eaeaab929",
-      "translated_at": "2026-10-18T09:31:30Z",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:05:07.949965+00:00",
       "model": "codex",
-      "input_hash": "8ddc7a0a61cb2b06ee704b42f54103b5b08f1d1c8af511489447c0b39066bb5b",
-      "upstream_committed_at": "2026-10-14T20:25:01-07:00"
+      "input_hash": "3b03b3ad4c2c882f743d1260ed69796895d5cc1629fcc9855d1fd681ab880f85",
+      "upstream_committed_at": "2026-11-12T14:58:17-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/opt-out_service-usage-data.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/opt-out_service-usage-data.md",
@@ -19978,11 +19978,11 @@
     },
     "content/handbook/support/license-and-renewals/workflows/updating_customer_organization_name.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/updating_customer_organization_name.md",
-      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
-      "translated_at": "2026-05-22T21:47:45Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "00c9d58a03e810500a74af5894f30ca88313b5b07196354b81473908f5ab7028",
-      "upstream_committed_at": "2026-05-21T12:17:18-04:00"
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:05:07.949965+00:00",
+      "model": "codex",
+      "input_hash": "551403cb25a703ba504afed0462fba7df072e7d28d7f914cc04a29d551be23a2",
+      "upstream_committed_at": "2026-11-12T14:34:04-05:00"
     },
     "content/handbook/support/license-and-renewals/workflows/usage_billing.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/usage_billing.md",
@@ -20482,11 +20482,11 @@
     },
     "content/handbook/support/workflows/account_verification.md": {
       "path": "content/handbook/support/workflows/account_verification.md",
-      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
-      "translated_at": "2026-09-03T22:19:44+09:00",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:05:07.949965+00:00",
       "model": "codex",
-      "input_hash": "c406a6fbca644a2b3cb7c8621bd46c9cef8e88f3d9cafe118759bfe3bb94225f",
-      "upstream_committed_at": "2026-09-01T14:14:23+12:00"
+      "input_hash": "95c0c0ae376548c5954e0b6a779b0de4a4cb2e0fbbdf21f452353ff28d0991c9",
+      "upstream_committed_at": "2026-10-13T10:46:33-04:00"
     },
     "content/handbook/support/workflows/admin_note.md": {
       "path": "content/handbook/support/workflows/admin_note.md",
@@ -20562,11 +20562,11 @@
     },
     "content/handbook/support/workflows/communication-tips.md": {
       "path": "content/handbook/support/workflows/communication-tips.md",
-      "upstream_sha": "a2c133ac0b90478eaeb060e8ad64034a95cee1b8",
-      "translated_at": "2026-11-06T21:04:26.963167+00:00",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:05:07.949965+00:00",
       "model": "codex",
-      "input_hash": "8f6d4b6b36f87d1d0657f8ba30095d5741351aef160d3b77618da0f15e65d6ce",
-      "upstream_committed_at": "2026-11-05T15:54:11-05:00"
+      "input_hash": "9f736e6671106ff4413e845c6059c6f143a1d387e6b14fd6719b12d2fa1ce4d5",
+      "upstream_committed_at": "2026-11-12T14:42:30-05:00"
     },
     "content/handbook/support/workflows/community-support.md": {
       "path": "content/handbook/support/workflows/community-support.md",
@@ -20666,11 +20666,11 @@
     },
     "content/handbook/support/workflows/dedicated_logs.md": {
       "path": "content/handbook/support/workflows/dedicated_logs.md",
-      "upstream_sha": "a2c133ac0b90478eaeb060e8ad64034a95cee1b8",
-      "translated_at": "2026-11-06T21:07:08.029569+00:00",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:05:07.949965+00:00",
       "model": "codex",
-      "input_hash": "85132091313538596cdfe21cb1ac30e9dbf30c594da8402d0226e4715425b014",
-      "upstream_committed_at": "2026-11-05T15:54:57-05:00"
+      "input_hash": "1b5192f76bdf6bdbe89616ec8d258d4ef9acd0ac7b50ef91de5afd387dc6a3fa",
+      "upstream_committed_at": "2026-11-12T14:42:30-05:00"
     },
     "content/handbook/support/workflows/dedicated_runners.md": {
       "path": "content/handbook/support/workflows/dedicated_runners.md",
@@ -20850,11 +20850,11 @@
     },
     "content/handbook/support/workflows/how-to-create-npm-package.md": {
       "path": "content/handbook/support/workflows/how-to-create-npm-package.md",
-      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "164a902f6d78518cfcfdd49e0036f65fb60de8db18f800db59fa61c2943c7141",
-      "upstream_committed_at": "2025-02-24T23:06:08+00:00"
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:05:07.949965+00:00",
+      "model": "codex",
+      "input_hash": "6182803fb71a9686c77bc266f4f124969c5c75e1d9ac68887332a69d34fc0489",
+      "upstream_committed_at": "2026-11-12T14:52:02-05:00"
     },
     "content/handbook/support/workflows/how-to-get-help.md": {
       "path": "content/handbook/support/workflows/how-to-get-help.md",
@@ -21058,11 +21058,11 @@
     },
     "content/handbook/support/workflows/ooo-ticket-management.md": {
       "path": "content/handbook/support/workflows/ooo-ticket-management.md",
-      "upstream_sha": "0a3ee6d988174ce935c5be0c230371ec02739f3d",
-      "translated_at": "2026-08-08T09:25:46+09:00",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:07:44.630137+00:00",
       "model": "codex",
-      "input_hash": "65087123edb16019f46e473fa77a767323850e4e33bf915332c29fbb2eeb51e5",
-      "upstream_committed_at": "2026-08-07T17:18:03-07:00"
+      "input_hash": "7bdac303ad9ce9ee3589a5175fbb38b5f8b4d0c1f68c15e02437b1ab29c9f13d",
+      "upstream_committed_at": "2026-11-12T14:40:23-05:00"
     },
     "content/handbook/support/workflows/pairify.md": {
       "path": "content/handbook/support/workflows/pairify.md",
@@ -21130,11 +21130,11 @@
     },
     "content/handbook/support/workflows/rbl_delisting.md": {
       "path": "content/handbook/support/workflows/rbl_delisting.md",
-      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
-      "translated_at": "2026-05-08T01:46:59Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6c45bf52f19e6a84208b0456e0a0d9c2a9ac44fca1ce1378deafdd77bcd8f324",
-      "upstream_committed_at": "2024-11-14T23:18:47+00:00"
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:07:44.630137+00:00",
+      "model": "codex",
+      "input_hash": "590361a2da1838cc4a868bb388a077951bb056896bbe0637bde6ddbcbdb0eebb",
+      "upstream_committed_at": "2026-11-12T14:42:27-05:00"
     },
     "content/handbook/support/workflows/reinstating-blocked-accounts.md": {
       "path": "content/handbook/support/workflows/reinstating-blocked-accounts.md",
@@ -21194,11 +21194,11 @@
     },
     "content/handbook/support/workflows/saas_sm_cheatsheet.md": {
       "path": "content/handbook/support/workflows/saas_sm_cheatsheet.md",
-      "upstream_sha": "a2c133ac0b90478eaeb060e8ad64034a95cee1b8",
-      "translated_at": "2026-11-06T21:13:06.548515+00:00",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:07:44.630137+00:00",
       "model": "codex",
-      "input_hash": "8d1c30c61c3a2411d707f7cb66bde019bb48825e2a7bc8bcc4bc39ca512a90b0",
-      "upstream_committed_at": "2026-11-05T15:54:57-05:00"
+      "input_hash": "b10d22fd39d8f9177a83e5e79da53c19e148a20b90b7a337cebce1f355ba54d6",
+      "upstream_committed_at": "2026-11-12T14:42:30-05:00"
     },
     "content/handbook/support/workflows/sending_notices.md": {
       "path": "content/handbook/support/workflows/sending_notices.md",
@@ -21258,11 +21258,11 @@
     },
     "content/handbook/support/workflows/support-sales-escalations.md": {
       "path": "content/handbook/support/workflows/support-sales-escalations.md",
-      "upstream_sha": "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb",
-      "translated_at": "2026-10-10T07:02:52+00:00",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:07:44.630137+00:00",
       "model": "codex",
-      "input_hash": "e3f75057ca9aef4b591c45eba62b4742f4600c4a22ef49fd361337d9600b9e5f",
-      "upstream_committed_at": "2026-10-09T17:05:37Z"
+      "input_hash": "36fe16e0b4d799e7d7f4dc80d9208860fdcaa1e32989b61dcc70999eb73bad0c",
+      "upstream_committed_at": "2026-11-12T14:42:27-05:00"
     },
     "content/handbook/support/workflows/support_hold.md": {
       "path": "content/handbook/support/workflows/support_hold.md",
@@ -21282,11 +21282,11 @@
     },
     "content/handbook/support/workflows/test_env.md": {
       "path": "content/handbook/support/workflows/test_env.md",
-      "upstream_sha": "37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329",
-      "translated_at": "2026-10-24T21:12:53.658976+00:00",
+      "upstream_sha": "bd4ec993fb708237c42096d728863f50647c9fe2",
+      "translated_at": "2026-11-12T21:07:44.630137+00:00",
       "model": "codex",
-      "input_hash": "a555f6bc7bfbbb7d369698aec00b3356645171dffcb568e9dedd1bae326e5496",
-      "upstream_committed_at": "2026-10-20T14:59:33+02:00"
+      "input_hash": "20c0914c7ada5a929c6e8416afeda62187528c43184ad5e55202b77431365089",
+      "upstream_committed_at": "2026-11-12T14:42:27-05:00"
     },
     "content/handbook/support/workflows/ticket-transfers.md": {
       "path": "content/handbook/support/workflows/ticket-transfers.md",

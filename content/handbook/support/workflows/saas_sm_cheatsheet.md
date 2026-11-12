@@ -3,11 +3,11 @@ title: SaaS / セルフマネージド / Dedicated トラブルシューティ�
 category: Support Team
 description: "GitLab の各プラットフォームタイプにおける、さまざまな問題のトラブルシューティングのヒント"
 upstream_path: /handbook/support/workflows/saas_sm_cheatsheet/
-upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
-translated_at: "2026-11-06T21:13:06.548515+00:00"
+upstream_sha: "bd4ec993fb708237c42096d728863f50647c9fe2"
+translated_at: "2026-11-12T21:07:44.630137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-05T15:54:57-05:00"
+lastmod: "2026-11-12T14:42:30-05:00"
 ---
 
 ## 概要 {#overview}
@@ -23,7 +23,7 @@ lastmod: "2026-11-05T15:54:57-05:00"
 |      |       |
 |:----:| ----- |
 |セルフマネージド| [GitlabSOS](https://gitlab.com/gitlab-com/support/toolbox/gitlabsos) は、潜在的な問題をさらに調査するためにお客様のインスタンスからすべてのログを収集する優れた手段です。<br/>GitLabSOS と同様に、お客様がソースまたは omnibus インストールではなく Kubernetes を利用している場合は [KubeSOS](https://gitlab.com/gitlab-com/support/toolbox/kubesos) を使用してください。<br/>[Fast-stats](https://gitlab.com/gitlab-com/support/toolbox/fast-stats) は GitLab ログから、また GitLab ログ間でパフォーマンス分析を比較する優れた手段です。<br/>[Green-hat](https://gitlab.com/gitlab-com/support/toolbox/greenhat) は実験的な SOS およびログパーサーです。[GitLab Log Analysis](https://gitlab.com/gitlab-org/foundations/import-and-integrate/gitlab-logs-analysis): この実験的プロジェクトは、Kibana、Filebeat、Elasticsearch、Logstash を使って GitLab ログを分析するための環境を構築します。起動時にダッシュボードが自動でインポートされ、ログ分析の準備が整います。|
-|DotCom|[Kibana](https://log.gprd.gitlab.net/) は Elasticsearch クラスターでインデックス化されたコンテンツの上に可視化機能を提供し、Web ベースのクエリで情報を見つけることができます。このツールでどのような情報が引き出せるかを理解するには、[ヒントとテクニック](/handbook/support/workflows/kibana/#tips-and-tricks)を確認してください。<br/>[Sentry](https://sentry.gitlab.net/gitlab/gitlabcom/) は、たとえば Ruby コード関連のエラーなど、さまざまなアプリケーションまたは環境にまたがるエラーの調査に役立ちます。Sentry での検索は通常、Correlation ID を使用して行います。<br/>[Grafana](/handbook/engineering/monitoring/#main-monitoring-dashboards) は GitLab.com のインフラメトリクス収集に使用されています。|
+|DotCom|[Kibana](https://log.gprd.gitlab.net/) は Elasticsearch クラスターでインデックス化されたコンテンツの上に可視化機能を提供し、Web ベースのクエリで情報を見つけることができます。このツールでどのような情報が引き出せるかを理解するには、[ヒントとテクニック](/handbook/support/workflows/kibana/#tips-and-tricks)を確認してください。<br/>[Sentry](https://sentry.gitlab.net/gitlab/gitlabcom/) は、たとえば Ruby コード関連のエラーなど、さまざまなアプリケーションまたは環境にまたがるエラーの調査に役立ちます。Sentry での検索は通常、Correlation ID を使用して行います。<br/>[Grafana](/handbook/engineering/monitoring/#monitoring-dashboards) は GitLab.com のインフラメトリクス収集に使用されています。|
 |Dedicated|[GitLab Dedicated のログ](/handbook/support/workflows/dedicated_logs/) ワークフローには、Opensearch を使ってログを表示する方法に関する情報があります。[オブザーバビリティとモニタリング](/handbook/support/workflows/dedicated_instance_health/) ワークフローには、Grafana を使ってパフォーマンスの問題を診断する方法に関する情報があります。|
 
 ### 構成 {#configuration}

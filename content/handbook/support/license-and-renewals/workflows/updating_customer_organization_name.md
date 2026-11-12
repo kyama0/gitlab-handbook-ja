@@ -3,9 +3,9 @@ title: 顧客組織名の更新
 category: General
 description: 顧客の組織名を更新する手順について説明します。
 upstream_path: /handbook/support/license-and-renewals/workflows/updating_customer_organization_name/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-21T12:17:18-04:00"
-translated_at: "2026-05-22T21:47:45Z"
+upstream_sha: bd4ec993fb708237c42096d728863f50647c9fe2
+lastmod: "2026-11-12T14:34:04-05:00"
+translated_at: "2026-11-12T21:05:07.949965+00:00"
 translator: claude
 stale: false
 ---
@@ -23,7 +23,7 @@ stale: false
 [CustomersDot](https://customers.gitlab.com/customers/sign_in) の情報を更新するための案内として、以下の手順を提供できます。
 
 1. [customers portal](https://customers.gitlab.com/customers/sign_in) にサインインします
-1. [会社情報の変更手順に従います](https://docs.gitlab.com/subscriptions/customers_portal/#change-your-company-details)。
+1. [会社情報の変更手順に従います](https://docs.gitlab.com/subscriptions/billing_account/#change-your-company-details)。
 
 これにより、今後自動生成される請求書が更新されます。CustomersDot の情報を更新すると、`Zuora` への同期もトリガーされ、Zuora 側の情報も更新されます。
 

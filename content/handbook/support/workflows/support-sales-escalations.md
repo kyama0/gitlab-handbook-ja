@@ -3,11 +3,11 @@ title: Sales および Customer Success へのエスカレーション
 description: "Support から GitLab Sales または Customer Success へエスカレーションする方法"
 category: Handling tickets
 upstream_path: /handbook/support/workflows/support-sales-escalations/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-translated_at: "2026-10-10T07:02:52+00:00"
+upstream_sha: "bd4ec993fb708237c42096d728863f50647c9fe2"
+translated_at: "2026-11-12T21:07:44.630137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-09T17:05:37Z"
+lastmod: "2026-11-12T14:42:27-05:00"
 ---
 
 ## 目的 {#purpose}
@@ -40,7 +40,7 @@ CSM は [特定の基準](/handbook/customer-experience/csm/services/#csm-alignm
 |--|--|--|
 |緊急および／または高優先度チケットを CSM に通知|Zendesk: cc @CSM、Slack: CSM に @ メンション|チケットワークフロー: 全キュー|
 |顧客がチケットでエスカレーションを要求した場合に CSM を関与させる|Zendesk: cc @CSM、Slack: CSM に @ メンション|チケットワークフロー: 全キュー|
-|顧客が [アップグレード支援](/handbook/support/workflows/upgrade-assistance#the-process)を求めるチケットを起票したが、対応する内部 Issue がない場合に CSM を関与させる|Zendesk: cc @CSM、Slack: CSM に @ メンション|チケットワークフロー: Self Managed|
+|顧客が [アップグレード支援](/handbook/support/workflows/upgrade-assistance/#initiating-the-process)を求めるチケットを起票したが、対応する内部 Issue がない場合に CSM を関与させる|Zendesk: cc @CSM、Slack: CSM に @ メンション|チケットワークフロー: Self Managed|
 |顧客側のユーザーへのトレーニングが必要だと判断した場合、または顧客が直接それを求めた場合に CSM を関与させる|Zendesk: cc @CSM、Slack: CSM に @ メンション|チケットワークフロー: 全キュー|
 |期待値のミスマッチによる顧客関係の管理が必要なチケットを CSM に通知|Zendesk: cc @CSM、Slack: CSM に @ メンション|チケットワークフロー: 全キュー|
 |顧客を組織に追加する |Slack: #account-management|Needs Org ワークフロー|

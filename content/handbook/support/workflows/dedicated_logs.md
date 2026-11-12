@@ -3,11 +3,11 @@ title: GitLab Dedicated のログ
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート - ログの取り扱い"
 upstream_path: /handbook/support/workflows/dedicated_logs/
-upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
-translated_at: "2026-11-06T21:07:08.029569+00:00"
+upstream_sha: bd4ec993fb708237c42096d728863f50647c9fe2
+translated_at: "2026-11-12T21:05:07.949965+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-05T15:54:57-05:00"
+lastmod: "2026-11-12T14:42:30-05:00"
 ---
 
 ## ログの取り扱い {#working-with-logs}
@@ -40,7 +40,7 @@ curl -k -vvv -A"GitLabSupport012345" "https://tenant.gitlab-dedicated.com/users/
 
 ## テナントの特定 {#identifying-tenants}
 
-各顧客には、OpenSearch でログを調査するために必要な専用の認証情報セットがあります。その顧客の OpenSearch インスタンスへの認証情報および URL は `GitLab Dedicated - Support` [1Password vault](/handbook/security/#vaults)に保管されています。各顧客は vault 内で 3 単語の **Internal reference** で示されているため、その顧客に使用する適切な認証情報を識別するには `<tenant name>` を参照する必要があります。これはアクセス可能な URL の一部として使用されます（例： `opensearch.<tenant name>.gitlab-dedicated.com`）。GitLab Dedicated インスタンスの URL からテナントの **Internal reference** を識別する単一の信頼できる情報源として [Switchboard を使用](/handbook/support/workflows/dedicated_switchboard/#accessing-customer-configuration)してください。
+各顧客には、OpenSearch でログを調査するために必要な専用の認証情報セットがあります。その顧客の OpenSearch インスタンスへの認証情報および URL は `GitLab Dedicated - Support` [1Password vault](/handbook/security/password-guidelines/#vaults)に保管されています。各顧客は vault 内で 3 単語の **Internal reference** で示されているため、その顧客に使用する適切な認証情報を識別するには `<tenant name>` を参照する必要があります。これはアクセス可能な URL の一部として使用されます（例： `opensearch.<tenant name>.gitlab-dedicated.com`）。GitLab Dedicated インスタンスの URL からテナントの **Internal reference** を識別する単一の信頼できる情報源として [Switchboard を使用](/handbook/support/workflows/dedicated_switchboard/#accessing-customer-configuration)してください。
 
 ## ログへのアクセス {#accessing-logs}
 
