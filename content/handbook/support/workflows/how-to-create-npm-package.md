@@ -1,11 +1,11 @@
 ---
 title: NPM GitLab レジストリの利用
 upstream_path: /handbook/support/workflows/how-to-create-npm-package/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: bd4ec993fb708237c42096d728863f50647c9fe2
+translated_at: "2026-11-12T21:05:07.949965+00:00"
 translator: claude
 stale: false
-lastmod: "2025-02-24T23:06:08+00:00"
+lastmod: "2026-11-12T14:52:02-05:00"
 ---
 
 ## 概要
@@ -88,18 +88,7 @@ NOTE **注**: この特定のプロジェクトはまだインストールも公
 
 ## 5. 一般的なトラブルシューティングのヒント
 
-注: **注**: 11.9 未満の場合、[パッケージ名にドットが含まれるパッケージは npm install で 403 が返されます](https://gitlab.com/gitlab-org/gitlab-ee/issues/10248) @test.group/project は @test として読み取られます。回避策は次のいずれかです:
-
-- グループ/ユーザー名を変更して URL にドットを含めないようにします（sara-ahbabou/saraahbabou）
-- 新しいスコープでパッケージを再公開します。`package.json` の `publichConfig` の値を更新することを忘れないでください:
-
-    `"publishConfig": {
-        "@username-dash:registry":"http://localhost:3001/api/v4/projects/24/packages/npm/"
-    }`
-
-- `.npmrc` ファイルを更新して、新しいグループ名/ユーザー名を反映させます（@sara-ahbabou:registry または @saraahbabou:registry）
-
-40x エラーが発生した場合は、`--verbose` フラグを付けて同じコマンドを再実行し、正しいレジストリにアクセスしているかを確認します
+40x エラーが発生した場合は、失敗した npm コマンド（たとえば `npm install` や `npm publish`）を `--verbose` フラグを付けて再実行し、正しいレジストリにアクセスしているかを確認します
 
 - 401: `~/.npmrc` 内の URL の末尾にスラッシュ / がないことを確認します
 - 403: 適切な権限を持つ正しいトークンを使用していることを確認します

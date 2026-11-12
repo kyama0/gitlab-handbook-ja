@@ -3,11 +3,11 @@ title: コミュニケーションのヒント
 category: References
 description: "Support Engineering チームのための一般的なコミュニケーションのヒントを提供します"
 upstream_path: /handbook/support/workflows/communication-tips/
-upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
-translated_at: "2026-11-06T21:04:26.963167+00:00"
+upstream_sha: bd4ec993fb708237c42096d728863f50647c9fe2
+translated_at: "2026-11-12T21:05:07.949965+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-05T15:54:11-05:00"
+lastmod: "2026-11-12T14:42:30-05:00"
 ---
 
 このページは、GitLab Support 部門のための一般的なコミュニケーションのヒントを
@@ -27,9 +27,9 @@ lastmod: "2026-11-05T15:54:11-05:00"
 
 ## Slack リアクション {#slack-reactions}
 
-[GitLab におけるコミュニケーションの一般ガイドライン](/handbook/communication/#general-guidelines)
-や [Slack ワークフロー](/handbook/support/#slack-emoji-reaction-workflows) で
-言及されている `:white_check_mark:` 絵文字に加えて、
+[GitLab におけるコミュニケーションの一般ガイドライン](/handbook/communication/#general-guidelines)で
+言及されている `:white_check_mark:` 絵文字や、
+[Slack 絵文字リアクションワークフロー](/handbook/support/#emoji-reaction)で使用される絵文字に加えて、
 Support の Slack チャンネル内では以下の絵文字も活用することを検討してください。
 
 1. `:idontknow:` - 別の Support Engineer が質問しているが、その答えを

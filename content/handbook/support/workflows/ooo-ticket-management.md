@@ -3,11 +3,11 @@ title: OOO チケット管理
 category: Handling tickets
 description: 予定された PTO に入る際、割り当て済みチケットを管理する方法
 upstream_path: /handbook/support/workflows/ooo-ticket-management/
-upstream_sha: "0a3ee6d988174ce935c5be0c230371ec02739f3d"
-translated_at: "2026-08-08T09:25:46+09:00"
+upstream_sha: "bd4ec993fb708237c42096d728863f50647c9fe2"
+translated_at: "2026-11-12T21:07:44.630137+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-08-07T17:18:03-07:00"
+lastmod: "2026-11-12T14:40:23-05:00"
 ---
 
 ## 概要

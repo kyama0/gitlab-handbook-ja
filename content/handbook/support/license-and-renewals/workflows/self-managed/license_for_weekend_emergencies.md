@@ -3,11 +3,11 @@ title: 週末の緊急事態 - セルフマネージドライセンスリクエ�
 description: "セルフマネージドの週末ライセンス緊急事態に対するサポートプロセス"
 category: GitLab Self-Managed licenses
 upstream_path: /handbook/support/license-and-renewals/workflows/self-managed/license_for_weekend_emergencies/
-upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
-translated_at: "2026-10-18T09:31:30Z"
+upstream_sha: bd4ec993fb708237c42096d728863f50647c9fe2
+translated_at: "2026-11-12T21:05:07.949965+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-14T20:25:01-07:00"
+lastmod: "2026-11-12T14:58:17-05:00"
 ---
 
 ## 概要
@@ -43,7 +43,7 @@ lastmod: "2026-10-14T20:25:01-07:00"
 
 ### Step 2: トライアルライセンスを生成する
 
-セルフマネージドの一時ライセンスを発行する旧 Mechanizer ベースのワークフローは**廃止**されました。代わりに、新しい CustomersDot Admin Support Tool ワークフロー [Legacy license trials](../customersdot/support_tools.md#legacy-license-trials)を使用してください。
+CustomersDot Admin Support Tool のワークフロー [Legacy license trials](../customersdot/support_tools.md#legacy-license-trials)を使用してください。
 
 **Legacy license trials** ツールを使用して以下を行います。
 
@@ -52,4 +52,4 @@ lastmod: "2026-10-14T20:25:01-07:00"
 - ライセンスをリクエスト元のメールアドレス（またはチケットで別途指定されたアドレス）に送信します。
 - アクションを監査可能にするため、フォームに **Zendesk チケットリンク**を追加します。
 
-これは旧 Mechanizer ZenDesk アプリのプロセスを置き換えるものであり、すべての緊急セルフマネージドトライアルライセンスは現在 CustomersDot の "Legacy license trials" ワークフローに従う必要があります。
+すべての緊急セルフマネージドトライアルライセンスは、CustomersDot の "Legacy license trials" ワークフローに従う必要があります。

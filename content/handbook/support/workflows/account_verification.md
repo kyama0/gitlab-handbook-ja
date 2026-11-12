@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: "2FA 解除を含む、アカウント所有権を確認する方法と時期を詳述するワークフロー"
 upstream_path: /handbook/support/workflows/account_verification/
-upstream_sha: "e044d1dc3f45ac23717b964db35ac97ee11f88a7"
-translated_at: "2026-09-03T22:19:44+09:00"
+upstream_sha: bd4ec993fb708237c42096d728863f50647c9fe2
+translated_at: "2026-11-12T21:05:07.949965+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-01T14:14:23+12:00"
+lastmod: "2026-10-13T10:46:33-04:00"
 ---
 
 ## 概要
@@ -61,7 +61,7 @@ GitLab.com では、2FA を有効化していないユーザーがログイン�
 | 有償ユーザー | 同じ有償グループの他のメンバー | ターゲットユーザーが自分のアカウントでチャレンジに合格する | N/A | オーナーが必要な場合、オーナーは新しいチケットを開かなければならない。|
 | 無償ユーザー | グループの非メンバーで追加される予定の人 | 不可 - リクエストはグループオーナーから来なければならない | オーナーの保証が必要 |  |
 
-Enterprise オーナーは、Enterprise ユーザーがいる有償グループのトップレベルでの `owner` です。さらに Enterprise ユーザーでもある必要があります。
+Enterprise オーナーは、Enterprise ユーザーがいる有償グループのトップレベルでの `owners` です。さらに Enterprise ユーザーでもある必要があります。
 ユーザーが Enterprise ユーザーかどうかを識別する方法については、[Enterprise ユーザーセクション](../workflows/gitlab-com_overview.md#enterprise-users) を参照してください。
 
 ### Step 1: チャレンジの送信
@@ -116,7 +116,7 @@ Enterprise オーナーは、Enterprise ユーザーがいる有償グループ�
 
 なお、Enterprise オーナーが自分の [Support PIN](https://docs.gitlab.com/user/profile/#generate-or-change-your-support-pin) を作成して共有してもらうことも、Owner 保証の一形式としてリクエストできます。
 
-注: この [bug](https://gitlab.com/gitlab-org/gitlab/-/issues/337939) により、一部のグループオーナーはスニペットを作成できません。その場合、代わりに Owner に [Support PIN](https://docs.gitlab.com/user/profile/#generate-or-change-your-support-pin) を生成して共有してもらうように依頼できます。
+注: この[バグ](https://gitlab.com/gitlab-org/gitlab/-/issues/337939) により、一部のグループオーナーはスニペットを作成できません。その場合、代わりに Owner に [Support PIN](https://docs.gitlab.com/user/profile/#generate-or-change-your-support-pin) を生成して共有してもらうように依頼できます。
 
 > **注**: 別のユーザーがチケットに CC されている場合、PIN を検証したらユーザーに新しい PIN を生成して以前のものを無効化するよう依頼してください。
 

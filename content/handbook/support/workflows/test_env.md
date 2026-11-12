@@ -3,11 +3,11 @@ title: テスト環境
 category: Infrastructure for troubleshooting
 description: "Support Engineer のテスト環境のセットアップ選択肢とガイドライン"
 upstream_path: /handbook/support/workflows/test_env/
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-translated_at: "2026-10-24T21:12:53.658976+00:00"
+upstream_sha: "bd4ec993fb708237c42096d728863f50647c9fe2"
+translated_at: "2026-11-12T21:07:44.630137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-20T14:59:33+02:00"
+lastmod: "2026-11-12T14:42:27-05:00"
 ---
 
 ## 適切なテスト環境の選択 {#selecting-the-right-testing-environment}
@@ -350,7 +350,7 @@ self-managed GitLab インスタンスとの LDAP 統合のテストでは、こ
 
 テストインスタンスはデフォルトでインターネット上で公開アクセス可能です。多くの場合、リモート侵害に対して脆弱な特定のバージョンや構成をテストする必要があります。テストインスタンスを保護し、それが侵害されてクラウド環境への攻撃に使われないようにする責任はあなたにあります。
 
-[GitLab Red Team](/handbook/engineering/security/threat-management/red-team/)は、既知の脆弱性を持つ公開アクセス可能なインスタンスについて、GitLab のクラウド環境を定期的にスキャンしています。既知の RCE やその他のエクスプロイトに脆弱なインスタンスは、自動スキャンで検出されると警告なしにシャットダウンされます。
+[GitLab Red Team](/handbook/security/security-operations/red-team/)は、既知の脆弱性を持つ公開アクセス可能なインスタンスについて、GitLab のクラウド環境を定期的にスキャンしています。既知のリモートコード実行（RCE）やその他のエクスプロイトに脆弱なインスタンスは、自動スキャンで検出されると警告なしにシャットダウンされます。
 
 ### IP フィルタリング {#ip-filtering}
 
