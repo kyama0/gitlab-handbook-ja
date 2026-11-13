@@ -3,16 +3,16 @@ title: ドキュメントの改善
 description: "サポートチームから GitLab ドキュメントの改善を提出するためのワークフロー"
 category: Handling tickets
 upstream_path: /handbook/support/workflows/improving-documentation/
-upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
-translated_at: "2026-09-03T22:19:44+09:00"
+upstream_sha: "8718485295fc613818105db3bc05f52db3e6ed99"
+translated_at: "2026-11-13T21:04:53.586537Z"
 translator: codex
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-11-13T12:02:43-05:00"
 ---
 
 ## ドキュメントの改善
 
-**チケットへの応答方法** ワークフローの [ドキュメントセクション](/handbook/support/workflows/how-to-respond-to-tickets#documentation) で説明されているとおり、包括的なドキュメントはチケット偏向のための強力なツールです。
+**チケットへの応答方法** ワークフローの [ドキュメントセクション](/handbook/support/workflows/how-to-respond-to-tickets#documentation) で説明されているとおり、包括的なドキュメントはチケットの発生を減らすための強力なツールです。
 
 > 応答に [docs-first](https://docs.gitlab.com/development/documentation/styleguide/#docs-first-methodology) アプローチを取ることで、ドキュメントが非常に有用な [単一の情報源](https://docs.gitlab.com/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot) であり続けることを保証できます。実際の問題に基づいて構築されたドキュメントのコーパスを構築することで、GitLab の顧客が必要な答えや解決策をキューに来る前に見つけるのを助けます。
 
@@ -49,7 +49,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
   - documentation（テンプレートが自動的にこのラベルを追加するはずですが、確認してください）。
   - グループ [スコープラベル](https://docs.gitlab.com/user/project/labels/#scoped-labels)（迷った場合は、ドキュメントページの上部にリストされているはずです）
   - customer（チケットに関連する場合）
-  - *注: ボットは、指定されない場合、ステージ、セクション、[Support Team Contributions](/handbook/support/#support-fixes)、および docs-only ラベルを追加します*
+  - *注: ボットは、指定されない場合、ステージ、セクション、[Support Team Contributions](/handbook/support/engineering/#support-team-contributions)、および docs-only ラベルを追加します*
 - [コードレビューガイドライン](https://docs.gitlab.com/development/code_review/) に従い、関連するテクニカルライター（TW）をレビュアーとして設定します。
   - ドキュメントテンプレートにはこれを見つける方法の指示がありますが、基本的にはドキュメントページのソース版の上部にあるメタデータ情報を参照します。
   - 編集したページに適切なテクニカルライターを見つけるには、[Technical Writing Assignments](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments) を確認します。

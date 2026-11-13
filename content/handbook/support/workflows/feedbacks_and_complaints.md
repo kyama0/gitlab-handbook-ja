@@ -4,11 +4,11 @@ category: Handling tickets
 subcategory: Writing responses and handling feedback
 description: "お客様からのフィードバックを受け取り、それに応答するためのサポートエンジニアリングワークフロー"
 upstream_path: /handbook/support/workflows/feedbacks_and_complaints/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: "8718485295fc613818105db3bc05f52db3e6ed99"
+translated_at: "2026-11-13T21:04:53.586537Z"
 translator: claude
 stale: false
-lastmod: "2025-02-04T16:44:03+00:00"
+lastmod: "2026-11-13T11:57:24-05:00"
 ---
 
 ### 概要
@@ -45,7 +45,7 @@ lastmod: "2025-02-04T16:44:03+00:00"
 
 ### 不満をぶつけるお客様への対応
 
-お客様が、直面している（または過去に直面した）問題を解決するために提示されたすべての解決策や手順に単純に満足しないというケースもあります。状況をできる限り和らげるために、必要に応じて謝罪し、有効な解決策や代替案を提案してください。最も重要なことは、このような状況ではお客様に不満を吐き出させ、フィードバックが真摯に受け止められることを保証することです。場合によっては、特に [脅迫やハラスメントを感じる場合](/handbook/support/engineering/#what-if-i-feel-threatened-or-harassed-while-handling-a-support-request)、マネージャーを CC に入れたいと思うかもしれません。
+お客様が、直面している（または過去に直面した）問題を解決するために提示されたすべての解決策や手順に単純に満足しないというケースもあります。状況をできる限り和らげるために、必要に応じて謝罪し、有効な解決策や代替案を提案してください。最も重要なことは、このような状況ではお客様に不満を吐き出させ、フィードバックが真摯に受け止められることを保証することです。場合によっては、特に [脅迫やハラスメントを感じる場合](/handbook/support/engineering/#what-if-i-feel-that-a-customer-is-not-following-our-code-of-conduct)、マネージャーを CC に入れたいと思うかもしれません。
 
 謝罪は誠実であるべきだという点に注意することが重要です。これには、必要でないときに謝罪しないことも含まれます。「ご面倒をおかけして申し訳ありません…」のようなフレーズは、不誠実で「スクリプト的」に聞こえることがあります。謝罪は罪の自認と見なされることもあるため、問題が GitLab の責任ではない場合（機能が意図通り動作しているがお客様の望む動作ではない場合など）は、謝罪すべきではありません。
 

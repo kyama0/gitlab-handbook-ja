@@ -2,11 +2,11 @@
 title: サポートチーム ハンドブック
 description: GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 upstream_path: /handbook/support/
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-translated_at: "2026-11-07T00:37:58Z"
+upstream_sha: "8718485295fc613818105db3bc05f52db3e6ed99"
+translated_at: "2026-11-13T21:04:53.586537Z"
 translator: codex
 stale: false
-lastmod: "2026-11-06T17:10:29-05:00"
+lastmod: "2026-11-13T10:34:31-05:00"
 ---
 
 ## GitLab サポートチーム ハンドブックへようこそ {#welcome-to-the-gitlab-support-team-handbook}
@@ -124,7 +124,7 @@ KPI と OKR を達成するために、成功を収めるためにバランス�
 
 ### サポートチームについて {#about-the-support-team}
 
-サポートチームメンバーに関する情報の [唯一の信頼できる情報源](/handbook/company/culture/all-remote/) — メールアドレスや個人的な興味から製品スキルやグループメンバーシップまで — は、
+サポートチームメンバーに関する情報の [唯一の信頼できる情報源](/handbook/about/handbook-usage/#single-source-of-truth) — メールアドレスや個人的な興味から製品スキルやグループメンバーシップまで — は、
 [support-team プロジェクト](https://gitlab.com/gitlab-support-readiness/support-team)です。
 [サポートチームホームページ](https://gitlab-com.gitlab.io/support/team-pages/)は
 そのプロジェクトの情報から構築されています。他の多くのサポートツールと
@@ -215,7 +215,7 @@ GitLab.com の Issue とマージリクエストでサポートチームメン�
 | [@gitlab-com/support/managers](https://gitlab.com/groups/gitlab-com/support/managers/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 Support Manager |
 | [@gitlab-com/support/managers/amer](https://gitlab.com/groups/gitlab-com/support/managers/amer/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 AMER Support Manager |
 | [@gitlab-com/support/managers/apac](https://gitlab.com/groups/gitlab-com/support/managers/apac/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 APAC Support Manager |
-| [@gitlab-com/support/managers/emea](https://gitlab.com/groups/gitlab-com/support/managers/emea-managers/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 EMEA Support Manager |
+| [@gitlab-com/support/managers/emea-managers](https://gitlab.com/groups/gitlab-com/support/managers/emea-managers/-/group_members?with_inherited_permissions=exclude&sort=recent_last_activity) | 全 EMEA Support Manager |
 
 #### プロジェクト {#projects}
 
@@ -250,7 +250,7 @@ GitLab、私たちの FOSS プロジェクト、または GitLab コンポーネ
 に従っています。90 日間のアクティビティのみが保持されるため、
 チームハンドブック、製品ドキュメント、Issue トラッカー、またはお客様チケットに重要な情報を移してください。
 
-#### spt_ と support_ プレフィックス {#spt_vs-support_-prefix}
+#### `spt_` と `support_` プレフィックス {#spt_vs-support_-prefix}
 
 チャンネル名付けの際、「spt」はサポートチームにとって主に役立つ内部チャンネルを意味します。これらは、他の人が希望すれば参加できるように公開にする必要があります。チャンネルが「support」プレフィックスを持つ場合は、他のチームがサポートチームと交流するための公開インターフェースを意図しています。
 
@@ -323,7 +323,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 | `@support-managers-emea` | Support Manager EMEA |
 
 これらのグループの 1 つ以上に追加される必要がある場合は、
-[アクセスリクエストプロジェクト](https://gitlab.com/gitlab-com/access-requests)に Issue を開いてください。
+[アクセスリクエストプロジェクト](https://gitlab.com/gitlab-com/team-member-epics/access-requests)に Issue を開いてください。
 
 ### Google Calendar {#google-calendar}
 
@@ -356,8 +356,8 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 - Senior Support Engineer: `Name | Sr. Support Engineer | GitLab` - `Shen Hua Li | Sr. Support Engineer | GitLab`
 - Staff Support Engineer: `Name | Staff Support Engineer | GitLab` - `Jabulani Achebe | Staff Support Engineer | GitLab`
 - Support Manager: `Name | Manager, Sub-department | GitLab` - `Sneha Sharma | Manager, Support Operations | GitLab`
-- Senior Support Manager: `Name | Sr. Manager, Sub-department | GitLab` | `Joo Hee Ko | Sr. Manager, U.S. Government Support | GitLab`
-- Director: `Name | Director, Sub-department | GitLab` | `Noémie Blanchet | Director, Support Engineering | GitLab`
+- Senior Support Manager: `Name | Sr. Manager, Sub-department | GitLab` - `Joo Hee Ko | Sr. Manager, U.S. Government Support | GitLab`
+- Director: `Name | Director, Sub-department | GitLab` - `Noémie Blanchet | Director, Support Engineering | GitLab`
 - Vice President: `Name | VP, Department | GitLab` - `Kalina Nowak | VP, Customer Support | GitLab`
 
 ### 週次ミーティング {#weekly-meetings}
@@ -423,7 +423,7 @@ Senior/Staff Support Engineer のオフィスアワーで期待できること�
 
 - [SWIR プロジェクト](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review)の `SWIR::Digest` ラベルがついた [より最近の Issue](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/issues/?sort=created_date&state=all&label_name%5B%5D=SWIR%3A%3ADigest&first_page_size=20)を表示することで、サポート週次レビューを読むことができます。
 - このラベルを購読すると、最新の SWIR が生成されたときに通知を受けることができます。
-- 2022/07/01 以降に録音されたオーディオエディションについては、それぞれの Issue 内に SWIR のオーディオエディションへのリンクがあります（[SAFE フレームワーク](/handbook/legal/safe-framework/)に準拠するためです。すべてのオーディオエディションのアーカイブは Google Drive の [サポート週次レビュー - オーディオエディションフォルダ](https://drive.google.com/drive/search?q=support%20week%20in%20review%20-%20audio%20edition)（内部のみ）で見つけることができます。
+- 2022/07/01 以降に録音されたオーディオエディションについては、それぞれの Issue 内に SWIR のオーディオエディションへのリンクがあります（[SAFE フレームワーク](/handbook/legal/safe-framework/)に準拠するためです）。すべてのオーディオエディションのアーカイブは Google Drive の [サポート週次レビュー - オーディオエディションフォルダ](https://drive.google.com/drive/search?q=support%20week%20in%20review%20-%20audio%20edition)（内部のみ）で見つけることができます。
 
 チームの誰でも共有することをお勧めします。
 
@@ -437,16 +437,15 @@ Senior/Staff Support Engineer のオフィスアワーで期待できること�
 - **今週学んだこと**: 発見した（または再発見した！）ことや学んだことを共有するスペース。
 - **Support Operations からの情報**: Support Operations チームからの発表と情報
 - **称賛**: 他のチームメンバーに特別な称賛を贈るか、当人が行ったことをハイライトします。
-   -**SSAT**: 今週お客様から受け取ったポジティブな SSAT フィードバックの抜粋
+  - **SSAT**: 今週お客様から受け取ったポジティブな SSAT フィードバックの抜粋
 - **メトリクスレポート**: 1 週間のサポートメトリクスをレビューします。
 
 #### SWIR ラベル {#swir-labels}
 
 SWIR Issue は、GitLab プロジェクトで独自のタグやラベルを持つこともできます。これらは特定のフォーカスエリア（L&R、SaaS など）をハイライトするために使用されます。ラベルは Issue のみに使用されており、ダイジェスト Issue や Google Docs には表示されません。
 
-`Manager Attention` という 1 つのラベルは、Support Manager が特に認識しておくべきポリシーの変更やその他のトピックに使用されます。`Manager Attention` ラベルは
-[こちら](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/labels?search=manager+attention)]
-で見つけて購読することができます。
+`Manager Attention` という 1 つのラベルは、Support Manager が特に認識しておくべきポリシーの変更やその他のトピックに使用されます。[`Manager Attention` ラベル](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/labels?search=manager+attention)を
+見つけて購読できます。
 
 自動生成された SWIR の起源については、[この Issue](https://gitlab.com/gitlab-com/support/support-team-meta/issues/1394)で読むことができます。
 
@@ -581,7 +580,7 @@ Support Manager は定期的にボードを確認して、アイテムを前進�
 - [Support Manager](/handbook/support/managers/)
 - [サポート採用](/handbook/support/managers/hiring/)
 - [サポートチャンネル](/handbook/support/channels/)
-- [オンコール](/handbook/engineering/on-call/)
+- [オンコール](/handbook/support/on-call/)
 - [ライセンスと更新](/handbook/support/license-and-renewals/)
 - [高度なトピック](/handbook/support/advanced-topics/)
 - [ブラウザ拡張機能](/handbook/support/browser-extensions)
