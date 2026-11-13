@@ -3,11 +3,11 @@ title: GitLab Dedicated のオブザーバビリティとモニタリング (Gra
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート - オブザーバビリティとモニタリング"
 upstream_path: /handbook/support/workflows/dedicated_instance_health/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-translated_at: "2026-11-05T21:10:02.001696+00:00"
-translator: claude
+upstream_sha: "a8cc2359102ed497a1f4304a53c23ab6ca0f8554"
+translated_at: "2026-11-13T13:54:55+00:00"
+translator: codex
 stale: false
-lastmod: "2026-11-05T11:49:14+08:00"
+lastmod: "2026-11-10T17:57:42+08:00"
 ---
 
 
@@ -25,7 +25,7 @@ Grafana インスタンスは認証に Okta を使用します。ログインペ
 
 アクセスを申請するには、Lumos で **GitLab Dedicated Observability (Prod)** および／または **GitLab Dedicated Observability (PreProd)** へのリクエストを提出します。supportsandbox テナントについては、**GitLab Dedicated Observability (Test)** を申請します。
 
-> **注:** supportsandbox テナントは、引き続き 1Password に保存された認証情報を使用します。本番環境でこれらの非推奨の認証情報を使用すると、`"Login failed: RBAC: access denied"` エラーが発生します。
+**注:** Okta SSO への移行前、Grafana の認証では 1Password の `GitLab Dedicated - Support` 保管庫に保存された認証情報を使用していました。現在、これらの認証情報はデフォルトでは無効で、緊急時の特別なアクセス（'break glass'）のためにのみ確保されています。移行済みのテナントでこれらを使用すると、`"Login failed: RBAC: access denied"` エラーが発生します。
 
 ### Preprod デプロイ {#preprod-deployments}
 

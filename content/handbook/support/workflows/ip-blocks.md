@@ -4,11 +4,11 @@ description: "IP アドレスのブロックを引き起こした原因を特定
 category: GitLab.com
 subcategory: Troubleshooting
 upstream_path: /handbook/support/workflows/ip-blocks/
-upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
-translated_at: "2026-11-06T21:10:30.442757+00:00"
-translator: claude
+upstream_sha: "a8cc2359102ed497a1f4304a53c23ab6ca0f8554"
+translated_at: "2026-11-13T13:54:55+00:00"
+translator: codex
 stale: false
-lastmod: "2026-11-05T16:05:00-05:00"
+lastmod: "2026-11-11T11:38:00+05:30"
 ---
 
 GitLab.com のユーザーは、レート制限により自身の IP アドレスがブロックされていることに気付くことがあります。現在、GitLab.com のレート制限パラメータは [GitLab.com 設定ドキュメントページ](https://docs.gitlab.com/user/gitlab_com/#account-and-limit-settings)で最も適切に説明されています。GitLab.com のレート制限の単一の信頼できる情報源は、[インフラストラクチャのレート制限ドキュメント](/handbook/engineering/infrastructure-platforms/rate-limiting/)にあります。このページは、Support Engineer がレート制限と IP ブロックに関連する問題をトラブルシューティングする際の助けになることを目的としています。
@@ -45,7 +45,16 @@ GitLab.com のユーザーは、レート制限により自身の IP アドレ�
 
 複数の認証失敗リクエスト（401）が Rack Attack ブロックを引き起こし、403 Forbidden メッセージを生じさせるのはよくあることです。[1 つの IP から 1 分間に 300 回の失敗リクエスト](https://docs.gitlab.com/user/gitlab_com/rate_limits/#git-and-container-registry-failed-authentication-ban)を受け取ると IP アドレスをブロックします。デフォルトでは Git 操作は最初に認証なしで試行されるため、Git 操作のたびに 2 つの 401 応答が見られるのが通常です。
 
-Rack Attack はトラフィックを *スロットル* することもできます。その場合、HTTP 429 応答コードで認識できます。これに対する推奨される解決策は、ユーザーにより少ないリクエストを行ってもらうことです。詳細は [バイパスポリシー](ip-blocks.md#bypass-policy)を参照してください。
+Rack Attack または LabKit レートリミッターは、トラフィックを *スロットル* することもできます。その場合、HTTP 429 応答コードで認識できます。これに対する推奨される解決策は、ユーザーにより少ないリクエストを行ってもらうことです。詳細は [バイパスポリシー](ip-blocks.md#bypass-policy)を参照してください。
+
+LabKit レートリミッターは、以前 Rack Attack のスロットリングが返していた 429 応答を返すことがあります。
+この場合、GitLab は対応する `Rack_Attack` のログ行を書き込みません。
+`Rack_Attack` フィルターで結果が見つからない場合は、`json.message` のフィルターに `Rate_Limit_Block` も指定してみてください。
+LabKit は、ブロックしたリクエストの一部のみをログに記録します。各レート制限ウィンドウ内で、ルールの上限を最初に超えたリクエストと、その後、上限の 2 のべき乗倍（2、4、8 倍など）に達したリクエストが対象です。
+特定のリクエストのログ行が見つからなくても、そのリクエストがレート制限されていた可能性はあります。
+[検索条件](#search-condition)から `json.meta.remote_ip` フィルターを削除してください。`Rack_Attack` と `Rate_Limit_Block` のログ行には、いずれもこのフィールドがありません。
+代わりに `json.remote_ip` で結果を絞り込んでください。ユーザーやデプロイトークンなど、認証済みのリクエスト元ごとにカウントするルールでは、`json.counted_by.requester_type` と `json.counted_by.requester_id` で絞り込むこともできます。
+詳細は [LabKit レートリミッター](/handbook/engineering/infrastructure-platforms/rate-limiting/troubleshooting/#labkit-rate-limiter)を参照してください。
 
 ### アプリケーションレートリミッターのチェック {#checking-the-application-rate-limiter}
 
@@ -62,7 +71,7 @@ Rack Attack でブロックを見つけられない場合は、アプリケー�
 - `json.status` - リクエストに対して返された HTTP ステータスコードを出力します。通常は `401`（Unauthorized）および／または `403`（Forbidden）を探しています。
 - `json.path` - リクエストによってアクセスされた GitLab.com 上のパス、または使用された API エンドポイント。
 - `json.method` - `GET`、`POST`、`PUT`、`PATCH`、または `DELETE` のいずれかになります。最初の 3 つが最も一般的です。
-- `json.env` - `blocklist`、`throttle`、`track` のいずれかになります。`track` はレート制限設定を変更する際の診断に使用され、ユーザーには影響しません。サポートの観点からは `track` は無視してください。`blocklist` は、例えば自動化された Git HTTP トラフィックのように、認証失敗が多すぎることへの反応として発生します。`throttle` はユーザーまたは IP が 1 分あたりのリクエスト数が多すぎることを意味します。
+- `json.env` - `blocklist`、`throttle`、`track` のいずれかになります。`track` はレート制限設定を変更する際の診断に使用され、ユーザーには影響しません。サポートの観点からは `track` は無視してください。`blocklist` は、例えば自動化された Git HTTP トラフィックのように、認証失敗が多すぎることへの反応として発生します。`throttle` はユーザーまたは IP が 1 分あたりのリクエスト数が多すぎることを意味します。`Rate_Limit_Block` のログ行には `json.env` フィールドがないため、`json.env` フィルターを指定すると表示されなくなります。
 
 #### 二次的なフィールド {#secondary}
 
@@ -70,7 +79,7 @@ Rack Attack でブロックを見つけられない場合は、アプリケー�
 
 - `json.controller` - 特定のリクエストが GitLab.com のどの部分にアクセスしていたかの手がかりを提供します。
 - `json.params` - どのユーザーがリクエストを行ったか、どのアクションが実行されたか、どのリソースに対して実行されたかを示します。コンテナレジストリへのリクエストの場合、このフィールドはどのリポジトリが対象だったかを示します。
-- `json.matched` - これは、このリクエストを制限するために使用された Rack Attack ルールの名前です（`json.env` が `throttle` の場合）。これは、リクエストが [現在の上限](https://docs.gitlab.com/user/gitlab_com/rate_limits/#current-rate-limits)のどれを超過したかを把握するのに役立ちます。
+- `json.matched` - これは、このリクエストを制限するために使用された Rack Attack ルールの名前です（`json.env` が `throttle` の場合、または `Rate_Limit_Block` のログ行の場合）。これは、リクエストが [現在の上限](https://docs.gitlab.com/user/gitlab_com/rate_limits/#current-rate-limits)のどれを超過したかを把握するのに役立ちます。
 
 ## 一般的な原因 {#common-causes}
 
