@@ -3,11 +3,11 @@ title: プロダクトオファリング移行チケットの処理方法
 description: "プロダクトオファリング移行チケットを処理する方法"
 category: Handling tickets
 upstream_path: /handbook/support/workflows/handling_offer_migration_tickets/
-upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
-translated_at: "2026-11-06T21:10:30.442757+00:00"
+upstream_sha: "8718485295fc613818105db3bc05f52db3e6ed99"
+translated_at: "2026-11-13T21:04:53.586537Z"
 translator: claude
 stale: false
-lastmod: "2026-11-05T16:06:54-05:00"
+lastmod: "2026-11-13T12:08:24-05:00"
 ---
 
 ## 概要 {#overview}
@@ -31,7 +31,7 @@ lastmod: "2026-11-05T16:06:54-05:00"
    1. まず、お客様は現在のオファリング上のサポートにのみ権利を有していますが、私たちはお客様をサポートする意向であることを説明します。
    1. 新しいオファリング上で購入予定のサポートレベルを確認するよう依頼します。
    1. 移行完了の目標日を尋ねます。
-1. [このプロジェクト](https://gitlab.com/gitlab-com/support/support-ops/zendesk-organizations) で Support Ops Issue を開きます:
+1. [Zendesk Global organizations プロジェクト](https://gitlab.com/gitlab-com/support/zendesk-global/organizations)で Support Ops Issue を開きます:
    1. リクエストがプロダクトオファリングの移行をサポートするためのものであることを明示します。
    1. 組織に適用される新しいサポートレベルを明示します。
    1. 移行の目標日を明示します。

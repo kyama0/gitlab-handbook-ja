@@ -3,11 +3,11 @@ title: ライセンスアクティベーションエラーのトラブルシュ�
 description: "GitLab ライセンスアクティベーションエラーのトラブルシューティングと分類方法"
 category: GitLab Self-Managed licenses
 upstream_path: /handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_license_upload_issues/
-upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
-translated_at: "2026-05-08T12:45:20Z"
+upstream_sha: "8718485295fc613818105db3bc05f52db3e6ed99"
+translated_at: "2026-11-13T21:04:53.586537Z"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-13T12:23:42-05:00"
 ---
 
 顧客が GitLab Self-Managed インスタンスにライセンスをアップロードする際、次のエラーメッセージに遭遇したと報告することがあります:
@@ -20,11 +20,11 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
 | キーフィールド | 定義および真実の情報源 |
 |------|-------|
-| Users count |   **GitLab 13.6 以降**: billable.users コマンドで最小値を特定できます: `sudo gitlab-rails runner 'p User.billable.count'` <br/><br/>**GitLab 13.5 以前**: active.users コマンドで最小値を特定します: `sudo gitlab-rails runner 'p User.active.count'`  |
+| Users count |   billable.users コマンドで最小値を特定できます: `sudo gitlab-rails runner 'p User.billable.count'`  |
 | Previous users count |   CustomerDot や使用状況などの内部数値に基づいて推定を試みることができます。ただし、1 つの期間に対して複数のライセンスが生成される可能性があるため、これは確実ではありません。代わりに、最良の識別子はシステム自体です。このため、`Admin Area -> Overview -> Dashboard` のユーザー統計パネルのスクリーンショットをリクエストします。Previous users count は左上のウィジェットの `Users in License` です。 |
-| True-up count |   この値の最良の識別子は、Max Users から Previous users count を引いた値です。Max カウントには historical.max コマンドを使用することを推奨します: `sudo gitlab-rails runner 'p ::HistoricalData.max_historical_user_count'`。<br/><br/> **重要**: [GitLab 13.9 以降](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/54221)、`max_historical_user_count` メソッドは `from:` および `to:` で指定される日付範囲の 2 つの引数を必要とします: `sudo gitlab-rails runner 'p ::HistoricalData.max_historical_user_count(from: "2020-01-01", to: "2021-01-01")'`。 |
+| True-up count |   この値を特定する最良の方法は、Max Users から Previous users count を引くことです。Max カウントには historical.max コマンドの使用を推奨します。`max_historical_user_count` メソッドには、`from:` および `to:` で指定する日付範囲が必要です: `sudo gitlab-rails runner 'p ::HistoricalData.max_historical_user_count(from: "2020-01-01", to: "2021-01-01")'`。 |
 
-**注**: Ultimate ライセンスでは、ゲストユーザーはライセンス対象ユーザー数にカウントされません。そのため、GitLab 13.5 以前では、`User.active.count` は Admin UI ダッシュボードに表示される `Active Users` カウントよりも大きな値となります。GitLab 13.6 以降では、`User.billable.count` がカウントからゲストを正確に除外します。これは、顧客が Ultimate からダウングレードする場合や Ultimate トライアルを利用している場合に混乱を招く可能性があります。なぜなら、`Active Users` として表示されている数ではなく `User.active.count` の数に対するライセンスが必要だからです。
+**注:** Ultimate ライセンスでは、ゲストユーザーはライセンス対象ユーザー数にカウントされないため、`User.billable.count` はゲストを除外します。顧客が Ultimate からダウングレードする場合や Ultimate トライアルを利用している場合、新しいライセンスではゲストがカウントされるため、Admin UI に表示される `Active Users` の数ではなく、`User.active.count` の数に対するライセンスが必要です。
 
 Zendesk マクロ [`Subscriptions::Active Users`](https://gitlab.com/search?utf8=%E2%9C%93&group_id=2573624&project_id=17008590&scope=&search_code=true&snippets=false&repository_ref=master&nav_source=navbar&search=id%3A+360062275600) を使用して、顧客にこの情報を尋ねることができます。
 
