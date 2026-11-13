@@ -20658,11 +20658,11 @@
     },
     "content/handbook/support/workflows/dedicated_instance_health.md": {
       "path": "content/handbook/support/workflows/dedicated_instance_health.md",
-      "upstream_sha": "f656f02435661ffa63fe51e9b75469265e9ed794",
-      "translated_at": "2026-11-05T21:10:02.001696+00:00",
+      "upstream_sha": "a8cc2359102ed497a1f4304a53c23ab6ca0f8554",
+      "translated_at": "2026-11-13T13:54:55+00:00",
       "model": "codex",
-      "input_hash": "d69243b6946d5e5d9897ede638d60634d3806a2897b02cd58d51e61414481b2d",
-      "upstream_committed_at": "2026-11-05T11:49:14+08:00"
+      "input_hash": "6a94ed778196ea6e45f89d9fbd89f15df566c8a5096530eda60ed4a3d8e64b8d",
+      "upstream_committed_at": "2026-11-10T17:57:42+08:00"
     },
     "content/handbook/support/workflows/dedicated_logs.md": {
       "path": "content/handbook/support/workflows/dedicated_logs.md",
@@ -20682,11 +20682,11 @@
     },
     "content/handbook/support/workflows/dedicated_switchboard.md": {
       "path": "content/handbook/support/workflows/dedicated_switchboard.md",
-      "upstream_sha": "a2c133ac0b90478eaeb060e8ad64034a95cee1b8",
-      "translated_at": "2026-11-06T21:07:08.029569+00:00",
+      "upstream_sha": "a8cc2359102ed497a1f4304a53c23ab6ca0f8554",
+      "translated_at": "2026-11-13T13:54:55+00:00",
       "model": "codex",
-      "input_hash": "46dd74e48cb50bed0efc27e3b7af1d818527b9e8a5369a3b7c8774656a3ed26f",
-      "upstream_committed_at": "2026-11-05T15:54:57-05:00"
+      "input_hash": "cf1057d7bad6a3c1cb730393eefe3fe7a97491568084762fabc7a997b5792c3f",
+      "upstream_committed_at": "2026-11-11T11:59:12Z"
     },
     "content/handbook/support/workflows/dev_pulse.md": {
       "path": "content/handbook/support/workflows/dev_pulse.md",
@@ -20946,11 +20946,11 @@
     },
     "content/handbook/support/workflows/ip-blocks.md": {
       "path": "content/handbook/support/workflows/ip-blocks.md",
-      "upstream_sha": "a2c133ac0b90478eaeb060e8ad64034a95cee1b8",
-      "translated_at": "2026-11-06T21:10:30.442757+00:00",
+      "upstream_sha": "a8cc2359102ed497a1f4304a53c23ab6ca0f8554",
+      "translated_at": "2026-11-13T13:54:55+00:00",
       "model": "codex",
-      "input_hash": "1da116f6242800e3475e35b4698eeee688fb3d2e3855dbff9bca56fab562646a",
-      "upstream_committed_at": "2026-11-05T16:05:00-05:00"
+      "input_hash": "051ce50a76ca7a8c8d236292e679063aab7be3099cb312546c2608b8521e53c8",
+      "upstream_committed_at": "2026-11-11T11:38:00+05:30"
     },
     "content/handbook/support/workflows/jira-server.md": {
       "path": "content/handbook/support/workflows/jira-server.md",
@@ -21338,11 +21338,11 @@
     },
     "content/handbook/support/workflows/troubleshooting_kubernetes.md": {
       "path": "content/handbook/support/workflows/troubleshooting_kubernetes.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T04:02:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9bd1e9c31bff84dd71208f3c24ab366d5e17b387cb70171ed02f1a674235e155",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
+      "upstream_sha": "a8cc2359102ed497a1f4304a53c23ab6ca0f8554",
+      "translated_at": "2026-11-13T13:54:55+00:00",
+      "model": "codex",
+      "input_hash": "1de047d86d100aeabef912b7013c90e51d444c2839215cab23026e291e00b4ee",
+      "upstream_committed_at": "2026-11-10T11:03:36+01:00"
     },
     "content/handbook/support/workflows/upgrade-assistance.md": {
       "path": "content/handbook/support/workflows/upgrade-assistance.md",
@@ -21834,11 +21834,11 @@
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/_index.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/_index.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "edcdcb107ac676b01f4bf0e428f9d4442f1290b47e53974bb3b280b0d65aa968",
-      "upstream_committed_at": "2026-04-13T18:35:28+00:00"
+      "upstream_sha": "a8cc2359102ed497a1f4304a53c23ab6ca0f8554",
+      "translated_at": "2026-11-13T13:54:55+00:00",
+      "model": "codex",
+      "input_hash": "9e1d42de011c31dcbe73d53113e21695cc57bf3c80e9330ff6f9b798a387da8a",
+      "upstream_committed_at": "2026-11-09T11:17:00+01:00"
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/becoming-and-being-an-ase.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/becoming-and-being-an-ase.md",

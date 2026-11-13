@@ -3,16 +3,16 @@ title: GitLab Cloud Native chart デプロイのトラブルシューティン�
 category: Self-managed
 description: kubeSOS を使った GitLab Cloud Native chart デプロイのトラブルシューティング
 upstream_path: /handbook/support/workflows/troubleshooting_kubernetes/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T04:02:00Z"
-translator: claude
+upstream_sha: "a8cc2359102ed497a1f4304a53c23ab6ca0f8554"
+translated_at: "2026-11-13T13:54:55+00:00"
+translator: codex
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-11-10T11:03:36+01:00"
 ---
 
 ## KubeSOS とは
 
-[KubeSos](https://gitlab.com/gitlab-com/support/toolbox/kubesos/-/tree/master) は、[kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) と [helm](https://helm.sh/) を使って GitLab Cloud Native chart デプロイから GitLab クラスタの構成情報やログを取得するツールです。これらの情報は tar ファイルに圧縮され、GitLab デプロイのトラブルシューティングを支援するためにサポートチームと共有されます。
+[KubeSos](https://gitlab.com/gitlab-com/support/toolbox/kubesos/-/tree/main) は、[kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) と [helm](https://helm.sh/) を使って GitLab Cloud Native chart デプロイから GitLab クラスタの構成情報やログを取得するツールです。これらの情報は tar ファイルに圧縮され、GitLab デプロイのトラブルシューティングを支援するためにサポートチームと共有されます。
 
 ### 必要要件
 
@@ -24,7 +24,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 スクリプトをダウンロードする方法:
 
 ```bash
-wget https://gitlab.com/gitlab-com/support/toolbox/kubesos/-/raw/master/kubeSOS.sh
+wget https://gitlab.com/gitlab-com/support/toolbox/kubesos/-/raw/main/kubeSOS.sh
 
 chmod +x kubeSOS.sh
 ./kubeSOS.sh [flags]
@@ -34,13 +34,13 @@ chmod +x kubeSOS.sh
 または `curl` を使う方法:
 
 ```bash
-curl https://gitlab.com/gitlab-com/support/toolbox/kubesos/raw/master/kubeSOS.sh | bash -s -- [flags]
+curl https://gitlab.com/gitlab-com/support/toolbox/kubesos/-/raw/main/kubeSOS.sh | bash -s -- [flags]
 ```
 
-| Flags | 説明 | 必須 | デフォルト |
+| フラグ | 説明 | 必須 | デフォルト |
 | :---- | :---------- | :--------- | :------ |
-| `-n`  | namespace   | いいえ | "default" |
-| `-r`  | helm chart のリリース | いいえ | "gitlab" |
+| `-n`  | 名前空間   | いいえ | "default" |
+| `-r`  | Helm チャートのリリース | いいえ | "gitlab" |
 | `-l app`  | ログ取得対象とするアプリケーションラベル（複数指定可） | いいえ | |
 | `-L` | ログ取得対象アプリをインタラクティブに選択 | いいえ | n/a |
 | `-s time`  | 5s、2m、3h のような相対指定で、それより新しいログのみ返す | いいえ | 0=全ログ |
@@ -99,7 +99,7 @@ Kubernetes 上に GitLab をデプロイするには、セットアップが [�
 % more kubectl-check
 ```
 
-### Helm version
+### Helm のバージョン {#helm-version}
 
 ```bash
 % more helm-version
@@ -264,4 +264,6 @@ Kubernetes 環境ではログの取得には次のような制約があること
 
 すでに述べた通り、`kubectl logs` で取得できるログには制限があります。コンテナをホストしているワーカーノード上にも追加のログが存在し、通常は次の場所にあります:
 
-- ホストノードの `/var/log/containers`
+- `/var/log/containers`
+
+ホストノード上のディレクトリです。

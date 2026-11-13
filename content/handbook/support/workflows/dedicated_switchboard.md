@@ -3,11 +3,11 @@ title: GitLab Dedicated Switchboard のトラブルシューティング
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート - Switchboard"
 upstream_path: "/handbook/support/workflows/dedicated_switchboard/"
-upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
-translated_at: "2026-11-06T21:07:08.029569+00:00"
-translator: claude
+upstream_sha: "a8cc2359102ed497a1f4304a53c23ab6ca0f8554"
+translated_at: "2026-11-13T13:54:55+00:00"
+translator: codex
 stale: false
-lastmod: "2026-11-05T15:54:57-05:00"
+lastmod: "2026-11-11T11:59:12Z"
 ---
 
 ## 概要 {#overview}
@@ -128,19 +128,34 @@ Switchboard では [Communications Lead](/handbook/engineering/infrastructure-pl
 
 - **使用されるメール件名**
 
-  - お客様の GitLab Dedicated インスタンスのアラートを調査中
-  - 更新：お客様の GitLab Dedicated インスタンスを調査中
-  - 更新：お客様の GitLab Dedicated インスタンスへの優先度の高い対応
-  - 更新：お客様の GitLab Dedicated インスタンスの問題解決に取り組んでいます
-  - 解決済み：お客様の GitLab Dedicated インスタンスは稼働しています
-  - お客様の GitLab Dedicated インスタンスの緊急メンテナンスを予定しています
-  - 緊急メンテナンスが完了しました
+  - Investigating alerts on your GitLab Dedicated instance（お客様の GitLab Dedicated インスタンスのアラートを調査中）
+  - Update: Investigating your GitLab Dedicated instance（更新：お客様の GitLab Dedicated インスタンスを調査中）
+  - Update: High-priority response for your GitLab Dedicated instance（更新：お客様の GitLab Dedicated インスタンスへの優先度の高い対応）
+  - Update: Working to resolve your GitLab Dedicated instance issue（更新：お客様の GitLab Dedicated インスタンスの問題解決に取り組んでいます）
+  - Resolved: Your GitLab Dedicated instance is operational（解決済み：お客様の GitLab Dedicated インスタンスは稼働しています）
+  - Emergency maintenance scheduled for your GitLab Dedicated instance（お客様の GitLab Dedicated インスタンスの緊急メンテナンスを予定しています）
+  - Emergency maintenance completed（緊急メンテナンスが完了しました）
 
   これらは [テンプレート](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/switchboard/-/tree/main/lib/tenants/notification_templates)でも確認でき、新しいものが時間とともに追加されることがあります。
 
 - **顧客のメールサーバーにメールが配信されたかを確認する可能なバックエンドチェック**
 
   これは利用できません。Switchboard はメールが送信されたことを確認でき、Switchboard を使って過去の通知にアクセスできますが、メールが顧客のメールサーバーに正常に配信されたかどうかは確認できません。送信されたことのみ確認できます。
+
+### 各メンテナンス通知の意味 {#what-each-maintenance-notification-means}
+
+GitLab Dedicated のメンテナンスライフサイクル全体に対応する自動通知です（[&1021](https://gitlab.com/groups/gitlab-com/gl-infra/gitlab-dedicated/-/work_items/1021)）。これらは、上記の手動で送信する Customer Notifications とは別の、完全に自動化されたシステムです。件名が似ていても異なることに注意してください（たとえば、上記の "Emergency maintenance scheduled..." に対して、下記は "Emergency maintenance is scheduled..." です）。
+
+- **"Maintenance is scheduled for your GitLab Dedicated instance on [date]"** - このテナントのメンテナンスウィンドウ（毎週またはカスタム）が計画されました。
+- **"Maintenance has started on your GitLab Dedicated instance"** - 計画されたウィンドウが開始し、作業が進行中です。
+- **"Maintenance is complete on your GitLab Dedicated instance"** - ウィンドウが終了し、バージョンが適用されました。ウィンドウに設定変更も含まれていた場合、この通知は送信されません。代わりに設定変更メールで結果を報告するため、テナントが受け取る「完了」メッセージは 2 通ではなく 1 通になります（下記の緊急メンテナンスのフローにも同じ送信抑制が適用されます）。
+- **"Your GitLab Dedicated maintenance window has moved" / "...target version has changed"** - すでに通知した計画に重要な変更が加えられました（ウィンドウが 30 分を超えて移動した、または対象の GitLab マイナーバージョンが変更された場合）。パッチバージョンのみの変更では、テナント側で対応できることがないため、何も送信されません。
+- **"Maintenance on your GitLab Dedicated instance has been cancelled and will not run on [date]"** - すでに通知した計画が却下されました。設計上、理由は提示されません。
+- **"Emergency maintenance is scheduled for your GitLab Dedicated instance"** - メンテナンスウィンドウを指定するモードまたは Immediate モードで、緊急（セキュリティ）対応の計画が作成されました。
+- **"Emergency maintenance has started on your GitLab Dedicated instance"** - 緊急メンテナンスのウィンドウが開始しました。
+- **"Emergency maintenance is complete on your GitLab Dedicated instance"** - 緊急更新が終了し、新しいバージョンが適用されました。
+
+緊急対応の計画では、"Changed"（変更）通知は送信されません。作成後は変更不可として扱われ、キャンセルするか実行するかのいずれかになります。キャンセル通知は両方のフローで共通のため、どちらの場合もテナントには同じように表示されます。
 
 ### バージョン情報 {#version-information}
 
