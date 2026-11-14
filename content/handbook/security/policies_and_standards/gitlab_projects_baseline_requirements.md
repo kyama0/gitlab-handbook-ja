@@ -6,11 +6,11 @@ tags:
   - security_standard
   - security_standard_cmma
 upstream_path: /handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-translated_at: "2026-11-07T00:54:54.993254+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:27:14.053995+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-06T12:45:56Z"
+lastmod: "2026-11-09T01:11:23+01:00"
 ---
 
 ## 目的 {#purpose}
@@ -101,8 +101,8 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
    - マージ前に CI パイプラインの成功を必須にします。
    - ターゲットブランチと比較して、セキュリティスキャンで新たに検出された High または Critical の脆弱性について承認を必須にするよう、[マージリクエスト承認ポリシー](https://docs.gitlab.com/user/application_security/policies/merge_request_approval_policies/)を設定します。
 
-1. **公開された CI コンポーネントを保護します。**
-   - CI コンポーネントをホストするプロジェクトでは、下流のパイプラインが利用するコンポーネントの内容が不正に変更されないよう、すべての semver バージョンタグに不変タグを使用します。
+1. **公開されたリリースタグを保護します。**
+   - セマンティックバージョニングに従うリリースタグからソフトウェア（CI コンポーネント、CLI、パッケージなど）を配布するすべてのプロジェクトでは、[保護されたタグ](https://docs.gitlab.com/user/project/protected_tags/)を Maintainer、または特定のユーザーやグループに制限します。
 
 1. **公開されたパッケージを保護します。**
    - 公開レジストリにパッケージを公開する前に、許可されたファイルやファイルパターンの承認済みリストに照らして内容を確認します。npm パッケージの場合は、[パッケージの内容に関するガイダンス](https://docs.gitlab.com/development/npmjs/#securing-package-metadata)に従います。

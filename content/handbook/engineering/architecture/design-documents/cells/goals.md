@@ -4,9 +4,9 @@ group: Tenant Scale
 title: 'Cells: ゴール'
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/goals/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-16T14:23:05-10:00"
-translated_at: "2026-09-20T02:53:45+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+lastmod: "2026-11-10T12:30:12+13:00"
+translated_at: "2026-11-14T08:53:32.358803+00:00"
 translator: claude
 stale: false
 ---
@@ -28,8 +28,6 @@ Cells アーキテクチャは、次の仕組みによって水平スケーラ�
   インスタンスと Organization の 1 対 1 の対応を確立します。
 - **スケーラビリティ**: 複数の Cells が独立して動作できるため、成長に対応し、
   [レガシー Cell](#legacy-cell)のデータベースの負荷を軽減できます。
-- **機能の同等性**: すべてのデプロイモデル（GitLab.com、Self-Managed、Dedicated）で、
-  Organizations と Cells の機能の一貫性を維持します。
 
 ### スケーラビリティ {#scalability}
 
@@ -56,7 +54,7 @@ Cell 全体を読み取り専用のスタンバイにレプリケーションし
 
 ### 一貫したエクスペリエンス {#a-consistent-experience}
 
-Organizations は、セルフマネージド GitLab インスタンスと同じユーザーエクスペリエンスを SaaS プラットフォームで体験できるべきです。
+Organizations は、セルフマネージド GitLab インスタンスまたは GitLab Dedicated と同じユーザーエクスペリエンスを SaaS プラットフォームで体験できるべきです。
 
 ### マーケットセグメント {#market-segment}
 

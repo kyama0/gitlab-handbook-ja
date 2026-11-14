@@ -3,11 +3,11 @@ title: テスト環境
 category: Infrastructure for troubleshooting
 description: "Support Engineer のテスト環境のセットアップ選択肢とガイドライン"
 upstream_path: /handbook/support/workflows/test_env/
-upstream_sha: "bd4ec993fb708237c42096d728863f50647c9fe2"
-translated_at: "2026-11-12T21:07:44.630137+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:25:05+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-12T14:42:27-05:00"
+lastmod: "2026-11-12T16:53:46-05:00"
 ---
 
 ## 適切なテスト環境の選択 {#selecting-the-right-testing-environment}
@@ -501,7 +501,7 @@ Vagrant をインストールするには、[tutorials/vagrant/getting-started-i
 
 Multipass は、Linux、macOS、Windows でクラウドスタイルの Ubuntu VM を素早く生成するためのツールです。この方法は Vagrant に似ています。
 
-[brew でインストール](https://canonical.com/multipass/docs/install-multipass)するか [パッケージインストーラ](https://canonical.com/multipass/docs/install-multipass)でインストールできます。
+[brew でインストール](https://canonical.com/multipass/docs/latest/how-to-guides/install-multipass/)するか [パッケージインストーラ](https://canonical.com/multipass/docs/latest/how-to-guides/install-multipass/)でインストールできます。
 
 注： 古い OS の Mac ユーザーは、MacOS のファイアウォールが Multipass の一貫した機能を妨げる [長年のバグ](https://github.com/canonical/multipass/issues/2387)に遭遇する可能性があります。MacOS 15 以降ではこの問題はもうないはずです。
 
@@ -543,7 +543,7 @@ multipass を使用するソリューションについては [GitLab-in-a-VM](h
     - `multipass list` または `multipass ls` ですべてのインスタンスを確認
     - `multipass stop gitlab-omnibus` でインスタンスを停止
     - `multipass delete gitlab-omnibus` でインスタンスを削除
-    - [duti を使用](https://canonical.com/multipass/docs/changing-terminal)してデフォルトの `open shell` メニュー項目を変更
+    - [duti を使用](https://canonical.com/multipass/docs/latest/how-to-guides/customise-multipass/use-a-different-terminal-from-the-system-icon/)してデフォルトの `open shell` メニュー項目を変更
 
 ##### GitLab Runner {#gitlab-runner}
 

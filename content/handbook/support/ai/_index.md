@@ -2,11 +2,11 @@
 title: AI とサポート業務
 description: ツールの推奨、ワークフロー統合、責任ある AI 原則を含む、サポートチームの AI 利用に関するガイドラインとベストプラクティス
 upstream_path: /handbook/support/ai/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:21:18+09:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:27:14.053995+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-11-12T16:52:33-05:00"
 ---
 
 ## 概要
@@ -235,7 +235,7 @@ AI を使用するときは、Claude Sonnet 4 のような LLM が必要なの�
 
 1. ログとデータの処理
 
-   サポートエンジニアは GitLab Duo Chat を以下に使います:
+   サポートエンジニアは GitLab Duo Chat を以下に使えます:
 
    - 顧客環境からのログ/データの処理と要約
    - 一般的な問題の fast-stats 出力の分析

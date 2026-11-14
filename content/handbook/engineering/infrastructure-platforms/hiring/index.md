@@ -2,11 +2,11 @@
 title: "Infrastructure Platforms 採用プロセス"
 description: "Infrastructure Platforms グループの採用プロセスとリソース"
 upstream_path: "/handbook/engineering/infrastructure-platforms/hiring/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:41:43+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-24T12:53:30-05:00"
+lastmod: "2026-11-13T11:13:25+01:00"
 ---
 
 ## Platforms での採用
@@ -32,4 +32,5 @@ lastmod: "2026-02-24T12:53:30-05:00"
 
 * [面接官パネル](https://gitlab.com/gitlab-com/people-group/hiring-processes/-/tree/master/Engineering/Infrastructure/Platforms) は新規ロールの面接官を特定するために使用されます。
 * [Infrastructure Platforms シャドーイングページ](https://gitlab.com/gitlab-com/people-group/hiring-processes/-/blob/master/Engineering/Infrastructure/Shadowing.md) は新しいキックオフ Issue が作成された際にシャドーイング対象者が面接パネルに含まれていることを確認するために参照されます。
+* [Developer Experience の技術的専門性を深掘りする面接](/handbook/engineering/infrastructure-platforms/developer-experience/technical-depth-interview/)では、Developer Experience の職種における面接形式と実施方法を説明しています。
 * [採用ドキュメント＆リソース](https://gitlab.com/gitlab-com/people-group/hiring-processes/-/tree/master/Engineering/Infrastructure/Platforms) は面接テンプレートを含む Platforms 採用リソースの信頼できる唯一の情報源（SSOT）です。

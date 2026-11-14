@@ -2,11 +2,11 @@
 title: "GitLab のオンボーディング"
 description: "GitLab のオンボーディングと、オンボーディング Issue テンプレート"
 upstream_path: /handbook/people-group/general-onboarding/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T13:27:46.354529+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:35:06.703137+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-04T20:19:30+01:00"
+lastmod: "2026-11-12T19:20:03+01:00"
 ---
 
 GitLab では、オンボーディングは[非常に重要](/handbook/company/culture/all-remote/onboarding/)なものです。私たちは初日からすぐに業務をフル稼働で進めることを期待していません。
@@ -27,7 +27,7 @@ GitLab では、自社製品を使うことに大きな誇りを持っていま�
 
 ## TaNewKi ウェルカムコール {#tanewki-welcome-call}
 
-People Operations チームは、**プレオンボーディングコール** として知られる Ta-New-Ki コールを開催しています（私たちのロゴに描かれた抽象的なタヌキの名前をもじったものです）。このコールは Zoom で開催され、近日中にオンボーディング予定のチームメンバーに、入社日の **前** に顔を合わせて交流する機会と、残った質問をする機会を提供することを目的としています。社内ではこれを AMA（Ask Me Anything）コールと呼んでいます。
+People Operations チームは、**プレオンボーディングコール** として知られる Ta-New-Ki コールを開催しています（私たちの[ロゴ](https://design.gitlab.com/brand-logo/logomark/)の着想源となった日本の動物「タヌキ」の名前をもじったものです）。このコールは Zoom で開催され、近日中にオンボーディング予定のチームメンバーに、入社日の **前** に顔を合わせて交流する機会と、残った質問をする機会を提供することを目的としています。社内ではこれを AMA（Ask Me Anything）コールと呼んでいます。
 
 採用マネージャーや現在のチームメンバー（オンボーディングバディなど）も、このコールに参加することを歓迎します。
 

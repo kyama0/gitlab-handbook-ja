@@ -2,9 +2,9 @@
 title: Tenant Scale グループ
 description: Tenant Scale グループに関する情報
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-25T13:34:19+02:00
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+lastmod: "2026-11-12T10:46:57+01:00"
+translated_at: "2026-11-14T08:41:43+00:00"
 translator: claude
 stale: false
 ---
@@ -17,49 +17,31 @@ GitLab のマルチテナントプラットフォームの実行可能性を確�
 
 GitLab の次世代マルチテナント、水平スケーラブルな SaaS プラットフォームを構築し、顧客がニーズの進化に応じて GitLab のプラットフォーム間を移行できるよう論理的なアプリケーションコンテナを提供します。
 
-## チームメンバー
+## チームメンバー {#team-members}
 
-### グループリード
+### グループリード {#group-leads}
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/#group-leads" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-### Geo
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/#geo" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< member-and-role-by-gitlab "glopezfernandez" "ayufan" "tkuah" "rymai" >}}
 
 ### Organizations
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/#organizations" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug manager="mandrewsgl" >}}
 
 ### Cells Infrastructure
 
+{{< team-by-departments "Cells Infrastructure Team" >}}
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/#cells-infrastructure" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+### Transport
 
-
-### Tenant Services
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/#tenant-services" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< member-and-role-by-gitlab "brianlegault" "mkozono" "nsilva5" "victorprete" >}}
 
 ### Gitaly
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/#gitaly" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-departments "Gitaly Team" >}}
 
 ### Git
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/#git" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-departments "Git Team" >}}
 
 ## リソース
 

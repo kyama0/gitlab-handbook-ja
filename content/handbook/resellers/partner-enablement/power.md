@@ -2,11 +2,11 @@
 title: "GitLab POWER"
 description: "GitLab パートナーのオンボーディングワークフローとイネーブルメントリソース"
 upstream_path: /handbook/resellers/partner-enablement/power/
-upstream_sha: 59a18d6d88e73b26232d1d6773e5d793fcb29e49
-translated_at: "2026-10-05T21:09:19+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:35:06.703137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T08:04:05Z"
+lastmod: "2026-11-09T12:18:30Z"
 ---
 
 このページは、パートナー向けの GitLab イネーブルメントリソースを集めたものです。主な目的は、パートナーのテクニカルプリセールスチームを私たちの [Channel Partner Program](/handbook/resellers/) にオンボーディングすることです。他のセールスプロフェッショナルやサービスエンジニアにとっても、有用な情報が多数含まれています。
@@ -94,21 +94,9 @@ GitLab の学習プラットフォームです。このページで参照する�
 
 GitLab とは何か、また市場にある他の DevSecOps ソリューションとどのように比較されるかに関する情報です。
 
-* **GitLab Overview for Partners**
+* [**GitLab Overview for Partners**](https://partners.gitlab.com/prm/api/objects/v1/asset/e1lzrbla31dn/_view)
 
-  2024-12-13 に提供された 1 時間のトレーニングセッションのアセットです。
-  GitLab についてほとんど知らない可能性がある新規パートナー向けです。プラットフォームの概要を提供し、GitLab を DevSecOps マップ上に位置付け、GitLab の主要な機能と独自の差別化要因を説明します。
-  技術系と非技術系の両方のセールスプロフェッショナルが、製品を高レベルで理解するために使用できます。
-
-  * [動画録画](https://partners.gitlab.com/prm/api/objects/v1/asset/f1ieucalmjef/_view)
-
-  * [スライドデッキ](https://partners.gitlab.com/prm/api/objects/v1/asset/jemg8nqkecvc/_view)
-
-* **GitLab Duo Agent Platform for Partners**
-
-  GitLab のエージェント型 AI プラットフォームについて必要なすべての情報は、[GitLab Duo Agent Platform Partner Portal ページ](https://partners.gitlab.com/px/-/gitlab-duo)で確認できます。
-
-  自分自身と顧客の両方をトレーニングするために使用できる複数章のスライドデッキは、そのページで「GitLab Duo Agent Platform for Partners」を検索してください。同じタイトルでデッキの内容を説明する動画もあります。
+  新規パートナーを GitLab にオンボーディングするための標準スライドデッキです。プラットフォームの概要、カスタマージャーニー、ライセンスとサービス、個々の機能に関する技術的な詳細を含みます。DevSecOps マップにおける GitLab の位置付けを示し、主要な機能と独自の差別化要因を説明します。セールス担当者、技術担当者、およびその両方が参加する場で利用できます。
 
 ## 3. GitLab を販売する
 

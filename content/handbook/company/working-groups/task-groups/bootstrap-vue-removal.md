@@ -2,11 +2,11 @@
 title: "BootstrapVue 削除グループ"
 description: "BootstrapVue 削除タスクグループの属性、目標、役割と責任についての詳細はこちら。"
 upstream_path: /handbook/company/working-groups/task-groups/bootstrap-vue-removal/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: 2026-04-25T23:31:04Z
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:56:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-13T17:06:49+02:00"
+lastmod: "2026-11-09T08:31:01+01:00"
 ---
 
 ## 属性
@@ -22,25 +22,38 @@ lastmod: "2026-04-13T17:06:49+02:00"
 
 ## 現在のステータス
 
-> **ステータス更新（2026 年 4 月）**: デザインシステムチームが最も複雑なコンポーネントを担当することで、スコープが縮小されました。タスクグループは現在、コンポーネントごとに残りのコンポーネントを移行することに集中しており、新しい目標終了日は 2026 年 11 月 30 日です。タスクグループは単一の調整機関として継続します。[チームからのフィードバック](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18107#note_3041079557)の後、コンセンサスは明確でした: コンポーネントの移行間には重複が多すぎて小さなグループに分割できず、実際のブロッカーはスコープや計画ではなく時間の配分でした。
+> **ステータス更新（2026 年 11 月）**: ボタン、リンク、および `GlFormGroup` を除くすべてのフォームコンポーネントの移行が完了しました。残るコンポーネントは `GlFormGroup`、`GlTabs`、`GlTab` の 3 つです。進捗は[作業アイテム &16231](https://gitlab.com/groups/gitlab-org/-/work_items/16231)で追跡しています。
+>
+> **ステータス更新（2026 年 4 月）**: Design System チームが最も複雑なコンポーネントを担当することで、スコープが縮小されました。タスクグループは現在、コンポーネントごとに残りのコンポーネントを移行することに集中しており、新しい目標終了日は 2026 年 11 月 30 日です。タスクグループは単一の調整機関として継続します。[チームからのフィードバック](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18107#note_3041079557)の後、コンセンサスは明確でした: コンポーネントの移行間には重複が多すぎて小さなグループに分割できず、実際のブロッカーはスコープや計画ではなく時間の配分でした。
 
-### 縮小されたスコープ
+### 縮小されたスコープ {#reduced-scope}
 
-[デザインシステムチームが最も複雑なコンポーネントを担当](https://gitlab.com/gitlab-org/gitlab/-/issues/589623)することで、タスクグループのスコープが大幅に縮小されました。タスクグループは現在、約 15 の残りコンポーネントの移行に集中しています:
+[Design System チームが最も複雑なコンポーネントを担当](https://gitlab.com/gitlab-org/gitlab/-/issues/589623)することで、タスクグループのスコープが大幅に縮小されました。タスクグループは当初、約 15 のコンポーネント、つまりすべてのフォームコンポーネント（2 つのレイアウトコンポーネントを含む）、タブ、リンク、ボタンに集中していました。
 
-- すべてのフォームコンポーネント（2 つのレイアウトコンポーネントを含む）
-- タブ（複数）
-- リンク
-- ボタン
+残りのコンポーネント：
 
-タスクグループが処理すべき残りのディレクティブはありません（モーダルとツールチップのディレクティブはデザインシステムチームが担当しています）。
+- `GlFormGroup`: [design.gitlab.com#2250](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/work_items/2250)
+- `GlTabs`: [design.gitlab.com#2240](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/work_items/2240)
+- `GlTab`: [design.gitlab.com#2241](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/work_items/2241)
+
+完了したコンポーネント：
+
+- **ボタン**: `GlButton`, `GlButtonGroup`
+- **リンク**: `GlLink`, `GlBadge`, `GlBreadcrumbItem`, `GlDisclosureDropdownItem`
+- **フォーム**: `GlForm`, `GlFormInput`, `GlFormInputGroup`, `GlInputGroupText`, `GlFormSelect`, `GlFormCheckbox`, `GlFormCheckboxGroup`, `GlFormRadio`, `GlFormRadioGroup`, `GlFormTextarea`
+
+タスクグループが処理すべき残りのディレクティブはありません（モーダルとツールチップのディレクティブは Design System チームが担当しています）。
+
+### 次のフェーズ {#next-phase}
+
+タスクグループが残りのコンポーネントの作業を終えても、Design System チームは担当するコンポーネント（たとえばモーダル、テーブル、ポップオーバー、ドロップダウン）の作業を続けている可能性があります。その場合は、このタスクグループの目標終了日を更新し、Design System チームによる残りのコンポーネントの移行を支援します。
 
 ### マイグレーションアプローチ
 
 - **コンポーネントごとのマイグレーション**: 複数のコンポーネントにまたがる破壊的変更をまとめるのではなく、コンポーネントを一度に 1 つずつ移行します。
 - **破壊的変更**: メジャーバージョンアップを避けません。API の一部が削除された場合、暗黙的な BootstrapVue API であっても、メジャーバージョンにする必要があります（[Mark Florian による説明](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18107#note_2395901234)）。破壊的変更はケースバイケースで処理されます。
 - **AI をアクセラレーターとして活用**: AI ツールを活用して、シンプルから中程度の複雑さのコンポーネントのマイグレーションドラフトを作成することが検討されており、エンジニアがレビューと改善を行います。エンジニアは複雑なアーキテクチャの決定に専門知識を集中させます。
-- **ユーティリティとミックスインのクリーンアップ**: 残りの BootstrapVue ユーティリティとミックスイン（例: `looseEqual`、`looseIndexOf`、`formOptionsMixin`）は、コンポーネントのマイグレーションの一部として対処する必要があります。
+- **ユーティリティとミックスインのクリーンアップ**: 完了しました。移行済みのコンポーネントが使用する BootstrapVue ユーティリティ（例：`looseEqual`、`looseIndexOf`）は、現在 GitLab UI 独自の `utils/equality_utils.js` にあり、`formOptionsMixin` は使用されなくなりました。
 
 ### コントリビューション
 
@@ -58,7 +71,7 @@ BootstrapVue は過去には適していましたが、現在は移行を検討�
 2. **二次目標: 開発者エクスペリエンス（DX）の改善**
    - **シングルソースオブトゥルース**: GitLab UI リポジトリは現在 BootstrapVue コンポーネントを「ミラー」しています。私たちは 2 つのドキュメントソースを維持しています: Pajamas デザインシステムと Vue コンポーネントの Storybook です。Storybook は完全な情報については BootstrapVue のドキュメントを参照するよう案内しています。これらのリソースを単一のソースオブトゥルースに統合することで、DX が向上し、デザインシステムの理解が深まります。
    - **デザイントークンの移行**: BootstrapVue コンポーネントを使用すると、ネストされた CSS セレクターのオーバーライドや Bootstrap スタイルと HTML 構造への対応などの回避策が必要になり、デザイントークンの追加が複雑になります。
-   - **デザインシステムチームの効率**: GitLab の開発者向けにコンポーネントを拡張するには、多大な労力が必要であり、BootstrapVue コンポーネントを使用する代わりに、Monorepo に手動で実装することになります。
+   - **Design System チームの効率**: GitLab の開発者向けにコンポーネントを拡張するには、多大な労力が必要であり、BootstrapVue コンポーネントを使用する代わりに、Monorepo に手動で実装することになります。
    - **コンポーネントの使用性**: `<table>` コンポーネントは私たちのほとんどのユースケースで使用できないことが判明し、カスタム実装が必要でした。
    - **オーナーシップと責任**: 独自のコンポーネントを開発することで、コンポーネントシステム内の明確な責任と、それらを構築・維持する専任チームが確保されます。
    - **他のリポジトリの有効化**: たとえば、BootstrapVue に依存しなくなった場合、Compat モードまたは Vue 3 モードへの移行を検討できます。
@@ -69,7 +82,7 @@ BootstrapVue は過去には適していましたが、現在は移行を検討�
 - **アクセシビリティの改善**: BootstrapVue の一部の複雑なコンポーネント（Popover など）にはアクセシビリティの問題があります。独自の UI ライブラリを作成・維持することで、アクセシビリティを改善し、回避策に費やす時間を削減できます。
 - **柔軟性の向上**: 外部ライブラリに依存することなく、必要に応じてさまざまな機能やツールを統合できます。
 - **メンテナンスの簡素化**: UI コンポーネントシステムの維持には労力が必要ですが、BootstrapVue などの外部ライブラリへの依存を避けることで、継続的な更新と関連するメンテナンスの課題が不要になります。
-- **リポジトリへの影響**: BootstrapVue の削除は [gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui) リポジトリで行われます。これにより、少ないコードを配信することで [gitlab](https://gitlab.com/gitlab-org/gitlab/) リポジトリのバンドルサイズが削減され、GitLab の特定のニーズに対応するための柔軟性が向上します。
+- **リポジトリへの影響**: BootstrapVue の削除は、現在 [design.gitlab.com](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui) リポジトリ内にある GitLab UI で行われます。これにより、少ないコードを配信することで [gitlab](https://gitlab.com/gitlab-org/gitlab/) リポジトリのバンドルサイズが削減され、GitLab の特定のニーズに対応するための柔軟性が向上します。
 
 ### 課題
 
@@ -81,7 +94,7 @@ BootstrapVue は過去には適していましたが、現在は移行を検討�
 
 ## 終了基準 {#exit-criteria}
 
-> **注**: 以下の終了基準は完全なスコープを表しています。[デザインシステムチーム](https://gitlab.com/gitlab-org/gitlab/-/issues/589623)は最も複雑なコンポーネント（トースト、ツールチップ、ポップオーバー、ドロップダウン、モーダル、テーブル）を担当しています。タスクグループは残りの約 15 コンポーネント（フォームコンポーネント、タブ、リンク、ボタン）に集中しています。
+> **注**: 以下の終了基準は完全なスコープを表しています。[Design System チーム](https://gitlab.com/gitlab-org/gitlab/-/issues/589623)は最も複雑なコンポーネント（トースト、ツールチップ、ポップオーバー、ドロップダウン、モーダル、テーブル）を担当しています。タスクグループは[残りのコンポーネント](#reduced-scope)に集中しています。
 
 1. `/src/vendor/bootstrapvue` から未使用のファイルを削除: [Epic &13075](https://gitlab.com/groups/gitlab-org/-/epics/13075)。
 2. ドキュメントを更新してアクセス可能にする: [Issue #2754](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/2754)。
@@ -96,9 +109,9 @@ BootstrapVue は過去には適していましたが、現在は移行を検討�
 
 | タスクグループの役割 | 担当者 | 職位 |
 | --------------- | ------------------------ | ----------------------------------------------------- |
-| DRI | Vanessa Otto | Staff Frontend Engineer, AI-Powered:Workflow Catalog |
+| DRI | Vanessa Otto | Staff Frontend Engineer, Plan::Spec-Driven Development |
 | メンバー | Peter Hegman | Staff Frontend Engineer, Tenant Scale::Organizations |
-| メンバー | Paul Gascou-Vaillancourt | Senior Frontend Engineer, Growth::Engagement |
-| メンバー | Lorenz van Herwaarden | Senior Frontend Engineer, SRM::Security Insights |
-| メンバー | Chaoyue Zhao | Frontend Engineer, Create::Source Code |
-| メンバー | Thomas Hutterer | Senior Fullstack Engineer, Foundations::Design System |
+| メンバー | Paul Gascou-Vaillancourt | Staff Fullstack Engineer, Growth::Engagement |
+| メンバー | Lorenz van Herwaarden | Staff Software Engineer, Security Factory::Vulnerability Management |
+| メンバー | Chaoyue Zhao | Senior Software Engineer, Create::Source Code Hardening and Modernization |
+| メンバー | Thomas Hutterer | Senior Frontend Engineer, Foundations::Design System |

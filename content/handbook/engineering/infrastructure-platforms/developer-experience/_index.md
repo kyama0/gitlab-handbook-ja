@@ -2,11 +2,11 @@
 title: "Developer Experience"
 description: "Developer Experience セクションは、すべてのチームが高品質な変更をリリースできるよう、開発者体験の向上に取り組んでいます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/"
-upstream_sha: "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d"
-translated_at: "2026-11-12T14:20:07+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:41:43+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-11T15:33:17Z"
+lastmod: "2026-11-13T11:13:25+01:00"
 ---
 
 ## ミッション
@@ -77,6 +77,10 @@ DevEx チームは、自分たちの作業を加速させ、GitLab の AI 機能
 - 迅速にリクエストをトリアージできるよう、テンプレートのすべてのセクションを記入してください
 - Developer Experience は 1 週間以内にリクエストをトリアージし、適切なラベルを追加し、リクエストの種類と優先度に基づいてチームメンバーを割り当てます。
 - より緊急のリクエストについては、上記のマネジメントチームにタグ付けしていただいて構いません。
+
+## 採用 {#hiring}
+
+Developer Experience の職種の面接には、候補者の深い技術的専門性が職種の要件を満たしているかを評価する[技術的専門性を深掘りする面接](technical-depth-interview/)が含まれます。[Infrastructure Platforms の採用プロセス](/handbook/engineering/infrastructure-platforms/hiring/)では、面接官のトレーニングを扱っています。
 
 ## プロジェクトマネジメント
 

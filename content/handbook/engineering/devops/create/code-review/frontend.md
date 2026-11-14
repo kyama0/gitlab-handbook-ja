@@ -2,11 +2,11 @@
 title: "Create:Code Review FE チーム"
 description: Create:Code Review FE チームは、Create ステージの Code Review グループ配下のプロダクトカテゴリにおけるすべてのフロントエンドを担当します。
 upstream_path: /handbook/engineering/devops/create/code-review/frontend/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-translated_at: "2026-05-22T21:55:06Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:44:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-11-10T12:33:30+01:00"
 ---
 
 ## 共通リンク
@@ -33,19 +33,18 @@ GitLab ユーザーの体験における中心的な存在として、[DevOps �
 * [Milestone Planning Issues](https://gitlab.com/gitlab-org/create-stage/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&label_name%5B%5D=group%3A%3Acode%20review&first_page_size=20)
 * [Triage reports](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/?sort=created_date&state=opened&label_name%5B%5D=type%3A%3Aignore&label_name%5B%5D=group%3A%3Acode%20review&first_page_size=20)
 * [Feature flag reports](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/?sort=created_date&state=opened&label_name%5B%5D=triage%20report&label_name%5B%5D=feature%20flag&label_name%5B%5D=group%3A%3Acode%20review&first_page_size=20)
-* [OKR (機密)](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=created_date&state=opened&assignee_username%5B%5D=andr3&label_name%5B%5D=group%3A%3Acode%20review&first_page_size=20)
 
 ## チームメンバー
 
 以下は Create:Code Review FE チームの常設メンバーです。
 
-{{< team-by-manager-role role="Senior Engineering Manager(.*)Create:Code Review" team=".*(Frontend|Fullstack).*Create:Code Review" >}}
+{{< team-by-manager-role role="Engineering Manager, Create:Code Review" team=".*(Frontend|Fullstack).*Create:Code Review" >}}
 
 ## ステーブルカウンターパート
 
 以下のメンバーは、ほかの機能チームに所属する私たちのステーブルカウンターパートです。
 
-{{< engineering/stable-counterparts manager-role="Senior Engineering Manager(.*)Create:Code Review" role="(Product Manager|Technical Writer|Senior Security Engineer|Product Designer).*(Create:Code Review|Create \(Code)|Dev\:Create|Code Review" >}}
+{{< engineering/stable-counterparts manager-role="Engineering Manager, Create:Code Review" role="(Product Manager|Technical Writer|Senior Security Engineer|Product Designer).*(Create:Code Review|Create \(Code)|Dev\:Create" >}}
 
 ## 主な責務
 

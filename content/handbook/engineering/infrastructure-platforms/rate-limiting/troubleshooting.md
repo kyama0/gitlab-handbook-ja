@@ -2,11 +2,11 @@
 title: "レート制限トラブルシューティング"
 description: "このドキュメントは、GitLab.com のレート制限および潜在的な IP ブロックに関する調査を支援することを目的としています。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/rate-limiting/troubleshooting/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T03:49:37Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:41:43+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-18T17:49:08+00:00"
+lastmod: "2026-11-11T11:38:00+05:30"
 ---
 
 ## 概要
@@ -226,7 +226,7 @@ GitLab アプリケーションには2つの主要なスロットリングメカ
 ### クイックリンク
 
 - [Metrics: Rate Limiting Overview ダッシュボード](https://dashboards.gitlab.net/d/rate-limiting-rate-limiting_overview/rate-limiting3a-rate-limiting3a-overview?orgId=1)
-- [Logs: RackAttack](https://log.gprd.gitlab.net/app/discover#/view/0026cc97-6b9a-445a-a364-7197e04053a2?_g=())
+- [ログ: RackAttack と LabKit レートリミッター](https://log.gprd.gitlab.net/app/discover#/view/0026cc97-6b9a-445a-a364-7197e04053a2?_g=())
 - [Logs: ApplicationRateLimiter](https://log.gprd.gitlab.net/app/discover#/view/2d2cf10e-b22a-4c07-bbda-45bb665c31ee?_g=())
 - [Logs: Rate Limit Dashboard](https://log.gprd.gitlab.net/app/r/s/AJDZC)
 
@@ -240,6 +240,28 @@ GitLab アプリケーションには2つの主要なスロットリングメカ
 - `json.matched` を使用したスロットル
 - `json.path` を使用したパス
 
+### LabKit レートリミッター {#labkit-rate-limiter}
+
+LabKit レートリミッターがリクエストをブロックすると、レスポンスには `RateLimit-*` レスポンスヘッダーも含まれます。
+GitLab は、そのリクエストに対する `Rack_Attack` 行をログに記録しません。
+代わりに、Rails ログに `json.subcomponent: auth_json` を含む `Rate_Limit_Block` 行を記録します。
+
+LabKit は、ブロックしたリクエストの一部だけをログに記録します。各レート制限ウィンドウで、ルールの上限を超えた最初のリクエストと、その後は上限の 2 の累乗倍（2、4、8 など）に達したリクエストを記録します。
+ブロックされたリクエストのほとんどにはログ行がないため、Workhorse の `correlation_id` は通常、一致するものが見つかりません。
+
+[RackAttack ログ](https://log.gprd.gitlab.net/app/discover#/view/0026cc97-6b9a-445a-a364-7197e04053a2?_g=())には、`Rack_Attack` と `Rate_Limit_Block` の両方の行が表示されます。
+`json.message: Rate_Limit_Block` でフィルタリングしてから、次の項目で絞り込んでください。
+
+- `json.remote_ip` を使用した IP アドレス
+- `json.counted_by.ip` を使用した、そのルールがカウントしたクライアント。認証済みのリクエスト元でカウントするルールの場合は、`json.counted_by.requester_type` と `json.counted_by.requester_id` を使用します（`requester_type` は `user` または `deploy_token` です）
+- `json.matched` を使用したスロットル、または `json.rule` を使用した LabKit ルール
+- `json.path` を使用したパス
+
+`json.remote_ip`、`json.matched`、`json.path` は RackAttack ログと同じ名前なので、1 つのフィルターで両方の行を検索できます。
+`json.path` にはクエリ文字列は含まれません。
+
+すべてのフィールドについては、ランブックの [429 の発生元を見つける](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/labkit-cohort-flags.md#find-the-source-of-a-429)を参照してください。
+
 ### ApplicationRateLimiter
 
 [ApplicationRateLimiter ログ](https://log.gprd.gitlab.net/app/discover#/view/2d2cf10e-b22a-4c07-bbda-45bb665c31ee?_g=()) は次のようにフィルタリングできます。
@@ -252,7 +274,7 @@ GitLab アプリケーションには2つの主要なスロットリングメカ
 
 ### Workhorse
 
-Cloudflare、RackAttack、または ApplicationRateLimiter でリクエストが見つからない場合は、
+Cloudflare、RackAttack、LabKit レートリミッター、または ApplicationRateLimiter でリクエストが見つからない場合は、
 [Workhorse ログ](https://log.gprd.gitlab.net/app/discover#/view/7b6dc396-5b27-4e86-b150-72b476255faf?_g=()) でレート制限されたレスポンスを検索できます。
 
 - `json.remote_ip` を使用した IP

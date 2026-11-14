@@ -9,11 +9,11 @@ owning-stage: "~devops::security platform"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/
-upstream_sha: 1d017e2417c7510ed270a22e03f038e968fdb679
-translated_at: "2026-10-21T21:04:44Z"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:53:32.358803+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-21T06:16:14+02:00"
+lastmod: "2026-11-11T10:55:09Z"
 ---
 
 
@@ -85,6 +85,7 @@ GitLab ユーザーに以下の方法を提供します。
 - [ADR-013: OpenBao 別個の論理データベース](decisions/013_openbao_separate_database.md)
 - [ADR-014: 非 CI/CD ワークロード向けの直接 API アクセス](decisions/014_non_ci_api_access.md)
 - [ADR-015: ローカルサイドカーを介した監査イベントの中継](decisions/015_audit_relay.md)
+- [ADR-016: Cells で Secrets Manager をグローバルサービスとして実行する](decisions/016_cells_global_service.md)
 
 ### 廃止済み {#superseded}
 
@@ -267,7 +268,7 @@ OpenBao のマウントパスの設計はセキュリティパラメーターに
 
 トップテナントレベルでは、ネームスペースは将来的に[シールメカニズム](https://github.com/openbao/openbao/issues/1170)をネームスペースごとに持つことができ、マルチテナントの暗号鍵分離を可能にします。
 
-スコープごとの追加ネームスペースにより、[Cells](#cells)のマウントの分割と移動を実現できます。
+スコープごとの追加ネームスペースにより、ネームスペースを分割せずに組織を分割できます（[Cells](#cells)を参照）。
 
 #### シークレット {#secrets}
 
@@ -625,20 +626,13 @@ OpenBao はネイティブに[高可用性](https://openbao.org/docs/internals/h
 
 #### Cells {#cells}
 
-当初は、インスタンスごとに 1 つのグローバルな OpenBao クラスターをサポートします。将来的に [Cells](/handbook/engineering/architecture/design-documents/cells/)を使用する場合、各テナントにクラスターアフィニティを持たせることを期待します。各 GitLab Cell は独自の OpenBao クラスターを持ちます。各 Cell には独自のローカルデータベース（中央データベースの一部またはシークレットマネージャー用の Secondary PostgreSQL インスタンス）があります。エンジニアリングの観点からは、すべてのデータは現在プロジェクトまたはグループ内に分離されており、1 つの Cell に存在するため、クロス Cell データアクセスパターンは存在しません。したがって、Cells の統合はほぼ運用上のものです。
+現時点では、Secrets Manager はすべての [Cells](/handbook/engineering/architecture/design-documents/cells/)で共有する単一のグローバルな OpenBao デプロイとして稼働します。すべての Cell の Rails、ランナー、API クライアントは、同じ JWT 発行者と署名鍵を使用して、そのデプロイにアクセスします。この決定、Cells との連携方法、トレードオフについては [ADR-016](decisions/016_cells_global_service.md)を参照してください。
 
-最大の課題は、お客様を Cells アーキテクチャに[移行](/handbook/engineering/architecture/design-documents/organization-data-migration/)して、オペレーターが Cells を再バランスできるようにする機能のサポートです。これには 2 つの部分が必要です。
+Secrets Manager を Cell 内に配置し、Cell ごとに 1 つの OpenBao クラスターを設ける取り組みは、[gitlab-org&24097](https://gitlab.com/groups/gitlab-org/-/epics/24097)で追跡しています。
 
-1. シークレットを持つ既存の組織またはリポジトリセットを[分割](https://gitlab.com/gitlab-org/gitlab/-/issues/543014)できること。
-2. さまざまな Cells 間で組織を[移動](https://gitlab.com/gitlab-org/gitlab/-/issues/543001)できること。
+グローバルなデプロイでは、組織を別の Cell に移行しても OpenBao のデータは移動しません。
 
-Tenant Scale チームとの議論から、この機能を OpenBao にプッシュすることを選択しました。これにより、2 つのアップストリーム [RFC](https://gist.github.com/cipherboy/d658f06b871d5bee0d9a5cd130b1173b)（ネームスペースのフェデレーションとクロスクラスターネームスペース移動）が生まれ、ほぼゼロダウンタイムの移行が可能になります。
-
-現在は実行中のパイプラインのみに焦点を当てています。組織が Cells 間を移動している際、[Org Mover](https://gitlab.com/groups/gitlab-org/-/epics/12859)はまず、既存の親 Cell のネームスペースに戻すフェデレーションを宛先 Cell のすべてのネームスペースに設定できます。これにより、パイプラインはどちらの Cell でもシームレスに実行でき、Rails は [インライン認証](https://openbao.org/docs/rfcs/inline-auth/)を使用して OpenBao への読み取り専用アクセスを維持できます。
-
-組織の残りの部分が移動した後、Org Mover は OpenBao データ移動をトリガーできます。これは上記のクロスクラスターネームスペース移動 RFC を通じて OpenBao によって処理されます。完了したら、Org Mover または Rails は移動を最終化し、宛先 Cell の OpenBao インスタンスのクローンされたネームスペースを有効化して、元のソース Cell の OpenBao インスタンスからネームスペースを削除できます（残留するジョブが新しい OpenBao インスタンスのネームスペースと通信し続けられるように、ソース Cell インスタンスにリバースフェデレーションを維持する可能性があります）。
-
-分割をサポートするために、OpenBao に追加のネームスペースを導入します。GitLab テナントレベルの単一のネームスペースではなく、各シークレットのスコープ（プロジェクトまたはグループ）にも独自のネームスペースが存在します。これにより、ネームスペースは分割されず、アトミックに保たれます。このアプローチは上記の階層に反映されています。
+[組織の分割](https://gitlab.com/gitlab-org/gitlab/-/issues/543014)をサポートするために、OpenBao に追加のネームスペースを導入します。GitLab テナントレベルの単一のネームスペースではなく、各シークレットのスコープ（プロジェクトまたはグループ）にも独自のネームスペースが存在します。これにより、ネームスペースは分割されず、アトミックに保たれます。このアプローチは上記の階層に反映されています。
 
 #### デュアルネットワークパスアーキテクチャ {#dual-network-path-architecture}
 
@@ -648,6 +642,8 @@ OpenBao は、2 つの異なるネットワークルートを通じてアクセ�
 2. **外部ルート（Runners）**: ロードバランサーとパブリックエンドポイントを通じたインターネットアクセス可能なパス
 
 このアーキテクチャにより、同じ OpenBao インスタンスが内部の GitLab Rails リクエストを効率的に処理しながら、適切なネットワークインフラを通じて外部のランナーからもアクセス可能になります。
+
+実装: [GitLab.com Rails から OpenBao への内部ルート](https://gitlab.com/gitlab-org/gitlab/-/work_items/638356)
 
 #### 必要な拡張 {#required-enhancements}
 

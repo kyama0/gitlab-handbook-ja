@@ -3,11 +3,11 @@ title: "Michael 'dnsmichi' Friedrich README（Principal Developer Advocate）"
 description: "GitLab の Principal Developer Advocate である Michael 'dnsmichi' Friedrich とのコラボレーションについてご紹介します。"
 job: "Principal Developer Advocate"
 upstream_path: /handbook/marketing/readmes/michael-friedrich/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T13:32:31.649177+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:38:42.466927+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-04T14:10:51+01:00"
+lastmod: "2026-11-11T19:41:08+01:00"
 ---
 
 このページは、私がどのように働き、どう連絡を取り、どこで一番役に立てるかを理解してもらうためのものです。私は意図的に自分の弱さを見せ、フィードバックを受け入れる姿勢でいます。
@@ -79,7 +79,7 @@ lastmod: "2026-11-04T14:10:51+01:00"
 
 ### エネルギーとフォーカスの管理方法 {#how-i-manage-energy-and-focus}
 
-- **フォーカスブロックと「事前に相談がない限りミーティングを入れない」** 時間を使います。これらの時間帯に予定を入れる前に確認してください。
+- **フォーカスブロックと「事前に相談がない限りミーティングを入れない」** 時間を使います。これらの時間帯に予定を入れる前に確認してください。緊急の用件や良いトピックであれば、それでも声をかけてください。推測してもらうより、コンテキストを踏まえて私たち自身で判断したいと思っています。
 - **重い出張／イベント期間と前後の休養** を組み合わせます。そうした時期の前後は、応答スピードが変わることがあります。
 - 文字通りデスクの上に[アイゼンハワーマトリックス](https://slab.com/blog/eisenhower-matrix/)を置き、時間をどこに投資するかを選ぶのに使っています。
 - 私がオーバーコミットしていたり、完璧主義になっていたり、手を広げすぎているのを見かけたら、率直に教えてもらえるとありがたいです。
@@ -100,6 +100,7 @@ lastmod: "2026-11-04T14:10:51+01:00"
   - メールトリアージは苦手で、複数プラットフォームから多くの DM を受け取っています。
   - DM で返事がない場合は、**Issue を開くか更新して、私を @-mention** してください。そこで優先的に対応します。
   - 社外フォローアップでは、リマインダーまたはトラッキング Issue が大いに役立ちます。
+  - 依頼内容、コンテキスト、期限が明確な Issue には最も早く返答できます。Issue へのリンクを添えた短い Slack メッセージも歓迎します。
 
 ### 会議とカレンダー {#meetings--calendar}
 
@@ -108,13 +109,14 @@ lastmod: "2026-11-04T14:10:51+01:00"
   - 推奨される会議時間帯: **CET 13:30〜18:30**（太平洋時間 4:30〜9:30）。
   - 朝は集中作業や個人の用事のために確保しています。
 - **アジェンダ必須。**
-  - [アジェンダがなければ参加なし](/handbook/communication/#external-communication): アジェンダがなければ、招待を受け入れないことがあります。
+  - [アジェンダがなければ参加なし](/handbook/communication/#scheduling-meetings): トピックや依頼のコンテキストを共有して、ミーティングに向けた非同期での準備を手伝ってください。アジェンダがなければ、招待を受け入れないことがあります。
 
 - **柔軟な招待。**
-  - 私のカレンダーの招待は GitLab チームメンバーが編集可能です。より良い時間に移動してください。
+  - 私のカレンダーの招待は GitLab チームメンバーが編集可能です。より良い時間に移動してください。役立つのであれば、私たちの希望時間帯以外でも、都合の良い時間を提案してください。
   - 直前のリスケも問題ありません。常に別の意味のある仕事を見つけます。
 - **定期的な同期。**
   - 定期的なコーヒーチャットやトピック別の 1:1 が役立つなら、継続的なノート用のアジェンダドキュメントと共に提案してください。
+  - コーヒーチャットや 1:1 は歓迎します。トピックを持ち寄っても、ただ好奇心だけでもかまいません。
 
 ### クロスファンクショナルなコラボレーション {#cross-functional-collaboration}
 
@@ -132,14 +134,17 @@ lastmod: "2026-11-04T14:10:51+01:00"
   - ストーリーライン、ライブデモ設計（「壊れるかもしれない」シナリオを含む）、5 分の成功モーメント。
 - **DevRel とイベント戦略**
   - ナラティブ、ターゲットペルソナ、AI と組込みの角度、製品／フィールド／コミュニティの点と点をつなぐ。
+- **製品のユースケース、GTM、フィールドイネーブルメントに関するコンサルティング**
+  - Product & Technical Marketing のニーズやフィールドイネーブルメントのための、実践的なユースケースの検証、デモ、ワークショップ。
+  - Issue で [Developer Advocacy のコンサルティング](/handbook/marketing/product-and-technical-marketing/developer-advocacy/consultancy/)を依頼し、私たちにも声をかけてください。
 
-不確かな場合は尋ねてください。より良い DRI にリダイレクトしたり、Issue でニーズを捉える方法を提案することがあります。
+不確かな場合は尋ねてください。より良い [DRI](/handbook/people-group/directly-responsible-individuals/)にリダイレクトしたり、Issue でニーズを捉える方法を提案することがあります。完成度よりも早さが大切です。大まかな Issue や 1 行の質問だけで、イテレーションを始められます。
 
-私のクロスファンクショナルな関与の例としては、[競合調査](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/competitive-research/)、AI SME（[Slack の `#sme-ai`](https://gitlab.enterprise.slack.com/archives/C05GK6M7FBQ)）、[GitLab Duo Agent Platform のローンチサポート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/878)、[DevRel の FY27 イベント戦略](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/527)などがあります。
+私のクロスファンクショナルな関与の例としては、[競合調査](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/competitive-research/)、[GitLab Duo Agent Platform](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/878)の[製品および GTM のローンチサポート](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/product-launch-support/)、[プロセスタスク](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items/543)や [Developer Advocacy チーム向けの Agent Skills](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/developer-advocacy/-/work_items/91)による社内チームのイネーブルメント、[DevRel の FY27 イベント戦略](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items/527)、[DevRel の FY28 イベント戦略](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items/546)などがあります。
 
 ### フィードバックと DIB {#feedback--dib}
 
-- **率直で具体的なフィードバック** をありがたく思います。理想的にはまずプライベートで、例を添えてください。
+- **率直で具体的なフィードバック** をありがたく思います。理想的にはまずプライベートで、例を添えてください。その場でのフィードバックも、Slack やドキュメントを通じた非同期のフィードバックも歓迎します。
 - 私はとても熱心で率直になることがあります。何かが押し付けがましく感じたり、威圧的に感じたら教えてください – 改善したいです。
 
   > 率直であるとは、お互いに透明性を持つことです。 [...] フィードバックは常に仕事についてのもので、人格についてのものではありません。だからといって、伝えたり受け取ったりするのが簡単だという意味ではありません。
@@ -176,9 +181,9 @@ lastmod: "2026-11-04T14:10:51+01:00"
 
 ### 成長領域 {#growth-areas}
 
-- **オーバーコミット。** 今でも「はい」と言いすぎることがあります。アイゼンハワーマトリックスを使い、時には「いいえ」と言ったり、スコープを下げたり、リダイレクトしたりします。
+- **オーバーコミット。** 今でも「はい」と言いすぎることがあります。アイゼンハワーマトリックスを使い、時には「いいえ」と言ったり、スコープを下げたり、リダイレクトしたりします。「これをするために何をやめますか？」と尋ねて、優先順位付けを手伝ってください。
 - **率直さと情熱。** 私の熱意は強く感じられることがあります。提案を指示ではなく招待として枠組みすることに取り組んでいます。
-- **メール／DM の過負荷。** すべての DM やメールには対応できません。明確なコンテキストのある Issue が私に届く最良の方法です。
+- **メール／DM の過負荷。** すべての DM やメールには対応できません。明確なコンテキストのある Issue が私に届く最良の方法です。期限のある用件なら、最初の行で伝えてください。たとえば、[2026-11-11 10am PT](/handbook/communication/#communicating-dates-and-time) までにフィードバックが必要です、と書いてください。
 - **完璧主義。** 「すべてを記述する」ドキュメントよりも[最小限の価値ある変更](/handbook/product/product-principles/#the-minimal-valuable-change-mvc)とイテレーションを好むよう、自分自身を訓練しています。
 
 ### 私の学び方 {#how-i-learn-best}
@@ -187,7 +192,9 @@ lastmod: "2026-11-04T14:10:51+01:00"
 
 また、予想外のことが起こりうるライブデモも大好きで、開発者が日常的に行うのと同じように、自分の経験を活用してデバッグし前進することが求められます。これは真正性と信頼を生み、ユーザーが直面するかもしれない問題について多くを学べます。多くのコンテンツアイデアの源にもなります。
 
-私の GitLab 機能に関する知識は、[GitLab コミュニティフォーラム](https://forum.gitlab.com/u/dnsmichi/activity)でユーザーを助けたり、Slack で AI SME としてフィールドチームメンバーを助けたりすることから継続的に得られています。また [GitLab ハンドブックのバックエンドのメンテナンス](https://gitlab.com/groups/gitlab-com/content-sites/-/group_members?with_inherited_permissions=exclude)にも携わっており、安定稼働が必要な本番環境の運用を加えています。
+解決できない問題、お客様からの質問、失敗するかもしれないデモのアイデアがありますか？私たちにも声をかけてください。
+
+私の GitLab 機能に関する知識は、[GitLab コミュニティフォーラム](https://forum.gitlab.com/u/dnsmichi/activity)でユーザーを助けたり、[GitLab DACH Epic on Tour 2026](https://about.gitlab.com/events/dach-epicontour-2026/)などのイベントで実践的なライブデモやワークショップを通じてお客様を助けたりすることから継続的に得られています。また [GitLab ハンドブックのバックエンドのメンテナンス](https://gitlab.com/groups/gitlab-com/content-sites/-/group_members?with_inherited_permissions=exclude)にも携わっており、安定稼働が必要な本番環境の運用を加えています。
 
 ---
 
@@ -200,20 +207,20 @@ lastmod: "2026-11-04T14:10:51+01:00"
   - [Developer Advocacy のコンテンツライブラリのメンテナンス対象講演](/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/#maintained-talks)で確認できます。
 
 - **ポートフォリオ:** https://dnsmichi.com/portfolio/
-- **GitLab ブログ記事:** https://about.gitlab.com/blog/authors/dnsmichi/
+- **GitLab ブログ記事:** https://about.gitlab.com/blog/authors/michael-friedrich/
 - **個人ブログ（年次の振り返りと実験）:** https://dnsmichi.com
 
 オールリモートの振り返り:
 
 1. ブログ: [10 年分に相当する 1 年: GitLab での 6 年目](https://dnsmichi.com/2026/03/02/one-year-worth-for-ten-my-6th-year-at-gitlab/)
-1. ブログ: [GitLab での 5 年目: Developer Advocate の歩み、AI の冒険、バランスの発見](https://dnsmichi.at/2025/03/02/my-5th-year-at-gitlab-developer-advocate-journey-ai-adventures-and-finding-balance/)
-1. ブログ: [Michi、限定版 - GitLab でオールリモートの 4 年間](https://dnsmichi.at/2024/03/02/michi-limited-edition-4-years-all-remote-at-gitlab/)
-1. ブログ: [GitLab でオールリモートの 3 年間: 未知の未知を知る（成長、生活、仕事）](https://dnsmichi.at/2023/03/02/three-years-all-remote-at-gitlab-know-the-unknown-unknowns-growth-life-work/)
-1. ブログ: [オールリモートの 2 年間と私の 2022 年のビジョン](https://dnsmichi.at/2022/03/02/2-years-all-remote-and-2022-vision/)
-1. ブログ: [GitLab でオールリモートの 1 年目](https://dnsmichi.at/2021/03/02/my-1st-year-all-remote-at-gitlab/)
+1. ブログ: [GitLab での 5 年目: Developer Advocate の歩み、AI の冒険、バランスの発見](https://dnsmichi.com/2025/03/02/my-5th-year-at-gitlab-developer-advocate-journey-ai-adventures-and-finding-balance/)
+1. ブログ: [Michi、限定版 - GitLab でオールリモートの 4 年間](https://dnsmichi.com/2024/03/02/michi-limited-edition-4-years-all-remote-at-gitlab/)
+1. ブログ: [GitLab でオールリモートの 3 年間: 未知の未知を知る（成長、生活、仕事）](https://dnsmichi.com/2023/03/02/three-years-all-remote-at-gitlab-know-the-unknown-unknowns-growth-life-work/)
+1. ブログ: [オールリモートの 2 年間と私の 2022 年のビジョン](https://dnsmichi.com/2022/03/02/2-years-all-remote-and-2022-vision/)
+1. ブログ: [GitLab でオールリモートの 1 年目](https://dnsmichi.com/2021/03/02/my-1st-year-all-remote-at-gitlab/)
 
 ---
 
 ## 読んでくれてありがとう {#thanks-for-reading}
 
-この README を読む時間を取ってくれてありがとうございます。もっと知りたい場合や、背景にあるイースターエッグを見つけたい場合は、[私のオールリモートのワークスペース](https://dnsmichi.com/all-remote-workspace/)を見て、お気軽にコーヒーチャットをスケジュールしてください。
+この README を読む時間を取ってくれてありがとうございます。もっと知りたい場合や、背景にあるイースターエッグを見つけたい場合は、[私のオールリモートのワークスペース](https://dnsmichi.com/all-remote-workspace/)を見て、お気軽にコーヒーチャットをスケジュールしてください。欠けている情報や古い情報を見つけたら、MR を開いて私たちにレビューを依頼してください。

@@ -2,11 +2,11 @@
 title: 休暇の種類
 description: このページでは、柔軟な有給休暇（PTO）、祝日、病気休暇、家族介護休暇、忌引休暇、ボランティア休暇、法的な市民の義務（陪審員の務め）を含む GitLab の休暇ポリシーを説明します。
 upstream_path: /handbook/people-group/time-off-and-absence/time-off-types/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T14:42:54.581550+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:35:06.703137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-09T11:02:44-05:00"
 ---
 
 ご自身の場所に特化した情報については、[このページ](/handbook/total-rewards/benefits/general-and-entity-benefits/)を確認してください。
@@ -17,7 +17,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 ### 概要 {#overview}
 
-GitLab は、ビジネス継続性を確保しながら、チームメンバーが必要な時間を取ることをエンパワーする柔軟な有給休暇（PTO）ポリシーを提供しています。このポリシーは、透明性、コラボレーションの価値観、および GitLab の [業務から離れることへの全体的な理念](/handbook/people-group/time-off-and-absence/time-away-philosophy/#gitlabs-philosophy-to-time-away-from-work)を反映しています。
+GitLab は、ビジネス継続性を確保しながら、チームメンバーが必要な時間を取ることをエンパワーする柔軟な有給休暇（PTO）ポリシーを提供しています。このポリシーは、私たちの[当事者意識](/handbook/company/operating-principles/#ownership-mindset)という運営原則、および GitLab の [業務から離れることへの全体的な理念](/handbook/people-group/time-off-and-absence/time-away-philosophy/#gitlabs-philosophy-to-time-away-from-work)を反映しています。
 
 - 私たちの柔軟な有給休暇（PTO）ポリシーは、計画的な休暇についてマネージャーと調整し、カバレッジ計画を作成している限り、自由に PTO を取れることを意味します。
 - GitLab は、チームメンバーが年間に取得できる PTO の量に特定の制限を設けていません。ただし、連続 25 暦日（週末と祝日を含む）を超える休暇には、マネージャー、People Business Partner、および leaves@gitlab.com の Absence Management チームからの特別な許可が必要です。
@@ -116,7 +116,7 @@ GitLab は、ビジネス継続性を確保しながら、チームメンバー�
 
 ### 概要 {#overview-2}
 
-GitLab の病気休暇ポリシーは、病気から回復するために休暇が必要なチームメンバーをサポートします。このポリシーは、私たちの CREDIT 価値観に沿っています。
+GitLab の病気休暇ポリシーは、病気から回復するために休暇が必要なチームメンバーをサポートします。このポリシーは、私たちの[卓越の文化](/handbook/company/operating-principles/#culture-of-excellence)を反映しています。
 
 - 病気休暇は、短期の病気から回復するため、または予防的ケアのために必要な休暇を指します。
 - これには個人的な病気（COVID-19、風邪/インフルエンザ、生理痛、手術など）が含まれます。
@@ -185,7 +185,7 @@ GitLab の病気休暇ポリシーは、病気から回復するために休暇�
 
 ### 概要 {#overview-3}
 
-GitLab の家族介護休暇ポリシーは、病気の家族を世話するために休暇が必要なチームメンバーをサポートします。このポリシーは、私たちの CREDIT 価値観に沿っています。
+GitLab の家族介護休暇ポリシーは、病気の家族を世話するために休暇が必要なチームメンバーをサポートします。このポリシーは、私たちの[卓越の文化](/handbook/company/operating-principles/#culture-of-excellence)を反映しています。
 
 - 家族介護休暇は、病気の家族を世話するために必要な休暇を指します。
 - 対象となる家族には、親、子供、配偶者、ドメスティックパートナー、祖父母、孫、または兄弟姉妹が含まれます。
@@ -319,7 +319,7 @@ GitLab は、悲しみを経験するチームメンバーをサポートする�
 
 ### 概要 {#overview-5}
 
-GitLab は、チームメンバーが他者の世話をするためにコミュニティ内でボランティアをすることを推奨します。GitLab のボランティア休暇は、私たちの柔軟な有給休暇（PTO）フレームワークの下に含まれており、自分と GitLab の価値観（ダイバーシティ、インクルージョン、ビロンギングなど）への個人的なコミットメントにとって重要な大義を支援するために休暇を取ることができます。
+GitLab は、チームメンバーが他者の世話をするためにコミュニティ内でボランティアをすることを推奨します。GitLab のボランティア休暇は、私たちの柔軟な有給休暇（PTO）フレームワークに含まれます。チームメンバーは、自分にとって重要な活動や、GitLab の[卓越の文化](/handbook/company/operating-principles/#culture-of-excellence)の一部であるダイバーシティ、インクルージョン、ビロンギングへの個人的なコミットメントを支援するために休暇を取れます。
 
 {{% details summary="リクエストプロセス" %}}
 

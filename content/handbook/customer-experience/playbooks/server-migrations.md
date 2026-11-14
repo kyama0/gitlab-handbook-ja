@@ -1,11 +1,11 @@
 ---
 title: "GitLab サーバー移行プレイブック"
 upstream_path: /handbook/customer-experience/playbooks/server-migrations/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:56:34+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-11T15:33:17Z"
 ---
 
 追加のカスタマーサクセス ハンドブックコンテンツについては、[カスタマーサクセスホームページ](/handbook/customer-experience/)を参照してください。
@@ -108,5 +108,5 @@ CSM と顧客が移行プロセスを支援するために利用できるチー�
 - [GitLab Performance Tool](https://gitlab.com/gitlab-org/quality/performance) - 新サーバーのパフォーマンステストに最適なツールで、品質チームが自社のリファレンスアーキテクチャのテストに使用しているもの。
 - [GitLab Smoke Tests](https://gitlab.com/gitlab-com/support/toolbox/gitlab-smoke-tests) - GitLab CI を使用して、GitLab の機能が正常に動作しているかを迅速にテストするテスト。
 - [GitLab サポート](https://gitlab.com/gitlab-com/support/support-team-meta) - Premium サポートを持つ顧客が移行中に障害問題が発生した場合、サポートチームが支援できる。
-- [Reference Architecture グループ](https://gitlab.com/gitlab-org/reference-architectures) - GitLab のリファレンスアーキテクチャを構築・維持する [GitLab Delivery: Operate](../../engineering/infrastructure-platforms/gitlab-delivery/operate/_index.md) チームが主導する内部グループ。ドキュメント化されていない新しい環境設計に対して、ハイレベルなアドバイスと妥当性確認を提供できる。
+- [Reference Architecture グループ](https://gitlab.com/gitlab-org/reference-architectures) - GitLab のリファレンスアーキテクチャを構築・維持する [Application Lifecycle](../../engineering/infrastructure-platforms/developer-experience/application-lifecycle/_index.md) チームが主導する内部グループ。ドキュメント化されていない新しい環境設計に対して、ハイレベルなアドバイスと妥当性確認を提供できる。
 - GitLab Geo - このチームへの連絡は、社内 Slack の **#g_geo** チャンネルが最善。

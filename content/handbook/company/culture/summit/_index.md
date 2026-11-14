@@ -1,16 +1,16 @@
 ---
 title: GitLab Summit
 upstream_path: "/handbook/company/culture/summit/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:59:32.041411+00:00"
 translator: claude
 stale: false
-lastmod: "2024-11-19T02:21:38+00:00"
+lastmod: "2026-11-09T09:39:43-05:00"
 ---
 
 長年にわたり、GitLab は GitLab Summit というグローバルなチームメンバーイベントを開催してきました。過去には Contributes と呼ばれることもありました。
 
-Summit は、コラボレーション・連携・モチベーションを高めるための全社チームメンバーの集まりです。直接顔を合わせ、新しいチームメンバーを歓迎し、旧友と再会し、楽しみながらコアバリューを通じてビジネスを強化します！
+Summit は、コラボレーション・連携・モチベーションを高めるための全社チームメンバーの集まりです。直接顔を合わせ、新しいチームメンバーを歓迎し、旧友と再会し、楽しみながら運営原則を通じてビジネスを強化します！
 
 ## Summit の目標
 

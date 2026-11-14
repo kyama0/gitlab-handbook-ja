@@ -2,11 +2,11 @@
 title: "Infrastructure Security"
 description: "Infrastructure Security は、商用、社内向け、FedRAMP にわたり、GitLab が稼働するクラウド環境を保護します。"
 upstream_path: /handbook/security/product-security/infrastructure-security/
-upstream_sha: 84ebb9fc88e6a42116737a8dbf279ac21828660f
-translated_at: "2026-10-27T21:08:17.929583+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:27:14.053995+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-28T09:06:43+13:00"
+lastmod: "2026-11-09T19:29:06+13:00"
 ---
 
 Infrastructure Security（InfraSec）は、Platform Security グループに属する [Product Security](/handbook/security/product-security/)内のチームです。
@@ -70,6 +70,22 @@ KTLO または BAU の業務に取りかかる際は、[FY27 InfraSec Planning �
 
 これは見た目以上に重要です。依頼・事象に応じて発生する業務は私たちの仕事の大きな割合を占めており、KTLO/BAU エピックはそれを把握し、報告できる唯一の場所です。リンクされていなければ、計画上は実施されなかったことになります。
 
+### KTLO と BAU の業務の優先順位付け {#prioritising-ktlo-and-bau-work}
+
+KTLO の業務は一度に処理できる量を超えているため、その四半期の KTLO/BAU エピック内の各項目には、レビュー後に優先順位ラベルを付けます。優先順位の高いものから取り組んでください。
+
+| ラベル | 意味 |
+|-------|---------------|
+| `~priority::1` | 直前に発生した重大な業務。この分類はまれであるべきです |
+| `~priority::2` | 優先的に対応し、時間的制約がある業務 |
+| `~priority::3` | 優先的に対応するものの、時間的制約は比較的少ない業務 |
+| `~priority::4` | レビュー済みですが、対応はまだ確約していません。1 から 3 が完了した後に取り組みます |
+| 優先順位ラベルなし | まだレビューしていません |
+
+FedRAMP など、一部の領域には KTLO の業務が十分に多く、その四半期の KTLO/BAU エピックの配下に独自のサブエピックを設けています。そこでも同じラベルを適用します。
+
+これらのラベルは、私たち自身の業務を計画するためのものです。他チームからの依頼は引き続き、まず[トリアージ](issue-lifecycle/)を行い、KTLO/BAU エピックに追加してから優先順位ラベルを付けます。
+
 ### ラベル {#labels}
 
 デリバリーエピックとデリバリー Issue には、チームラベルと当該四半期のラベルの両方が必要です。計画用エピックのクエリは、それらを使って進行中の業務を見つけるため、どちらかのラベルがないものは表示されません。
@@ -79,6 +95,7 @@ KTLO または BAU の業務に取りかかる際は、[FY27 InfraSec Planning �
 | `~"Infrastructure Security Team"` | InfraSec のすべての業務 |
 | `~"Department::Product Security"` | InfraSec のすべての業務 |
 | `~FY27-Q4`（当該四半期） | デリバリーエピックとデリバリー Issue のみ。計画用エピック、KTLO/BAU エピック、KTLO/BAU の項目には付けません |
+| `~priority::1` から `~priority::4` | KTLO/BAU の項目。[KTLO と BAU の業務の優先順位付け](#prioritising-ktlo-and-bau-work)を参照してください |
 | `~"InfraSec::triage"` | トリアージが必要な新しい依頼 |
 
 デリバリー業務を次の四半期に持ち越す場合は、新しい四半期のラベルを追加し、古いラベルは履歴として残します。

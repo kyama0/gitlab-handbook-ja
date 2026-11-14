@@ -9,11 +9,11 @@ owning-stage: "~devops::create"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/code_review_database_size_reduction/
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-translated_at: "2026-06-24T07:02:38+09:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:53:32.358803+00:00"
 translator: codex
 stale: false
-lastmod: "2026-06-23T20:14:55+01:00"
+lastmod: "2026-11-09T09:50:20Z"
 ---
 
 {{< engineering/design-document-header >}}
@@ -91,10 +91,13 @@ GitLab.com 上の大きなテーブルは、運用と開発の両方にとって
 | システムノートを分解 | `notes` | 大 | 800 GB |
 | `merge_request_diffs` の保持ポリシー | `merge_request_diffs`、`merge_request_diff_commits`、`merge_request_diff_files` | 大 | TBD (大きいと予想) |
 | 位置列を構造化テーブルに変換 | `notes` | 大 | 200 GB |
-| **小計** | | | **~2,150 GB + TBD** |
+| `note` を辞書として zstd で `note_html` を圧縮 | `notes` | 大 | 600 GB（他の `notes` 項目と重複） |
+| **小計** | | | **~2,150–2,750 GB + TBD** |
 
 **`merge_request_diffs` の保持ポリシー。** [Issue #594843 (コメント)](https://gitlab.com/gitlab-org/gitlab/-/issues/594843#note_3194219248) で議論されています。
 `merge_request_diffs` の保持ポリシーは `merge_request_diff_commits` と `merge_request_diff_files` も削減するため、節約は大きいと予想されますが、これはこれらのテーブルにすでに対処している別のエピック ([エピック &16385](https://gitlab.com/groups/gitlab-org/-/epics/16385) と [エピック &11272](https://gitlab.com/groups/gitlab-org/-/epics/11272)) と重複するため、そこで調整する必要があります。その調整の一部として節約見積もりを生成すべきです。
+
+**zstd による `note_html` の圧縮。** [作業項目 #634344](https://gitlab.com/gitlab-org/gitlab/-/work_items/634344)で提案されています。行自身の `note` を圧縮辞書として使用し、キャッシュされた HTML を zstd で圧縮して保存します。本番環境の Database Lab での測定では、`note_html` 全体に適用すると約 600 GB を節約できますが、上記の `note_html` のクリアとシステムノートの分解の行と重複する可能性があります。これらの取り組みでクリアまたは移動される行は圧縮が不要になるため、小計では 600 GB 全体を加算せず、範囲で示しています。詳細な分析は [`notes` のセクション](#compress-note_html-with-zstd-using-note-as-the-dictionary)を参照してください。
 
 ### 小規模イニシアチブ
 
@@ -116,7 +119,7 @@ GitLab.com 上の大きなテーブルは、運用と開発の両方にとって
 | マージ済み MR の `merge_params` を削除 | `merge_requests` | 小 | 25 GB |
 | **小計** | | | **~459 GB** |
 
-**両トラックの合計: ~2,604 GB + TBD。**
+**両トラックの合計: ~2,604–3,204 GB + TBD。**
 
 ### スコープ外の機会 {#out-of-scope-opportunities}
 
@@ -160,6 +163,26 @@ GitLab.com 上の大きなテーブルは、運用と開発の両方にとって
 過去にマークダウンキャッシュバージョンのバンプ (`492f0853`、`e7a98807` など) があり、これらは本質的に同じ再生成をトリガーしていることから、パフォーマンスへの影響は管理可能であることが示唆されます。
 
 このパターンは、後で `merge_requests`、`issues`、および `work_items` テーブルの `description_html` と `title_html` に適用できます。Plan グループの Nicolas Dular は、このアプローチへの支持を表明し、`issues` テーブルにも利益をもたらす可能性があると指摘しています。
+
+#### `note` を辞書として使用し、zstd で `note_html` を圧縮 {#compress-note_html-with-zstd-using-note-as-the-dictionary}
+
+- **推定節約:** ~600 GB（現在の `note_html` の 52%。他の `notes` の取り組みと重複する可能性があります）
+- **労力:** 大
+- **ステータス:** [作業項目 #634344](https://gitlab.com/gitlab-org/gitlab/-/work_items/634344)で議論中
+
+レンダリングされた HTML には、元の Markdown の大部分が繰り返し含まれます。zstd は任意のバイト列を圧縮辞書として受け付けるため、行自身の `note` を辞書として圧縮した `note_html` を保存すれば、`note` を可読な `text` 列のまま保持しながら、その繰り返しを取り除けます。圧縮値は `STORAGE EXTERNAL` を設定した `bytea` 列に保存するため、PostgreSQL が再度圧縮することはありません。PostgreSQL 単独ではこれを実現できません。pglz と lz4 は辞書をサポートせず、約 2 KB 未満の行の値は TOAST 圧縮されず、各列は個別に圧縮されるため、HTML から Markdown を参照できないためです。
+
+これまでの測定結果:
+
+- 1,132 件の実際のコメントのサンプルでは、圧縮スキーマは同じデータを現在の 65% の容量で保存しました。すでにバンドルに含まれる `zstd-ruby` では、1 件のノートの HTML の展開時間の中央値は約 3 µs でした。そのため、100 件のコメントを表示するページで展開にかかる時間は約 0.3 ms です。
+- 本番環境の Database Lab で、最近のキャッシュ済み行 10,000 件を対象に測定したところ、圧縮したエンベロープのサイズは、現在の `note_html` のディスク使用量の 48%（コメントは 43%、システムノートは 51%）でした。
+
+設計は、2 つの安全性要件に基づいています。
+
+- `Zstd.decompress` は入力全体からフレームのマジックバイトを探し、見つかった位置からデコードします。そのため、保存されたバイト列を gem に渡す際は、必ずアプリケーションが管理するエンベロープに格納し、バージョンバイト、整合性チェック、固定オフセットに置かれたフレームを含める必要があります。
+- 誤った `note` を辞書として展開しても、エラーにはならず、検出されないデータ破損が起こります。辞書の 1 文字を変更したところ、サンプル行の 73% で誤った HTML が返され、例外は一切発生しませんでした。そのため、エンベロープには辞書に紐づいた整合性チェックが必要であり、不一致はキャッシュミスとして扱って `note` から再レンダリングしなければなりません。
+
+この機会は、キャッシュのクリアとシステムノートの分解の項目と相互に影響します。古いためにクリアした行は 100% を節約でき、圧縮は不要です。また、システムノートを分解すれば、その部分の圧縮も不要になります。長期的な対象は、クリアの対象にならない、活発に読まれているコメントの HTML です。
 
 #### システムノートの分解
 

@@ -1,9 +1,9 @@
 ---
 title: Temporary Service Provider サービス（契約ユーザー）
 upstream_path: /handbook/eta/corporate-it/end-user-services/temporary-users/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:01:08+09:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+lastmod: "2026-11-11T22:54:30Z"
+translated_at: "2026-11-14T08:38:42.466927+00:00"
 translator: codex
 stale: false
 ---
@@ -26,7 +26,7 @@ Temporary Service Provider は、認可された契約に基づき、限られ�
 * PO が Coupa で承認され、契約終了日が確定していること。
 * Security と Legal のレビューを Zip で完了していること。
 * [オレンジ／レッドデータ](/handbook/security/policies_and_standards/data-classification-standard/)にアクセスする場合は、バックグラウンドチェックを完了していること。
-* オレンジ／レッドデータにアクセスする場合、臨時従業員には GitLab 支給のラップトップが必要です。ラップトップは[これらの国](/handbook/finance/procurement/contingent-worker-policy/#4-country-hiring-guidelines)に配送できます。
+* オレンジ／レッドデータにアクセスする場合、臨時従業員には GitLab 支給のラップトップが必要です。ラップトップは[臨時従業員の雇用が承認されている国](https://internal.gitlab.com/handbook/finance/procurement/gitlab-contingent-workforce-policy-msp-program/#approved-countries)に配送できます。
 * 臨時従業員のアカウントを無期限に開設することはできず、終了日を指定する必要があります。最長期間は 2 年です。
 
 >ラップトップの注文、アクセスリクエスト、オリエンテーション情報については、社内の [Temporary Service Provider](https://internal.gitlab.com/handbook/it/end-user-services/access-request/temporary-service-providers/#during-the-engagementlifecycle) ハンドブックページを参照してください。

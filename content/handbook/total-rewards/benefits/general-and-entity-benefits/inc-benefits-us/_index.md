@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-10-31T21:01:53+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:25:05+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T15:12:09-07:00"
+lastmod: "2026-11-12T15:46:11-08:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -24,10 +24,13 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 ### クイックスタートリソース {#quick-start-resources}
 
 - プラン選びでお困りですか？[Flimp PlanSelect ツール](https://v2.flimpdecisions.net/welcome/633c8d6807f8b)を使って、あなたと家族のニーズに最も適したプランを見つけてください。
+- [米国の福利厚生の LOOP ページ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/landing-page/dashboard)を参照してください
 - 主な内容と更新情報については、[2027 年の福利厚生メモ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/page/6179981b-f2de-4afc-a474-051ae1f26d3c)を確認してください
 - GitLab の福利厚生プランの詳しい説明については、[2027 年の米国福利厚生ガイド](https://drive.google.com/file/d/1vC3BQ6rorJiu_6e7bO9kzKcD3nIBIEQT/view)を参照してください
+- 福利厚生の概要については、[2027 年の福利厚生一覧](https://drive.google.com/file/d/1xW_MxdKVj7g1DusLaksL_ITs687Rv85t/view?usp=sharing)を確認してください
 - 2027 年の[権利に関する年次通知](https://drive.google.com/file/d/1Vls3ry_huyCcfKDZ6IoCraRozzsFz8fR/view?usp=sharing)を参照してください
 - GitLab は [Modern Health](/handbook/total-rewards/benefits/modern-health/)を通じてメンタルウェルネスサービスを提供しています。これらのサービスに加えて、Cigna と Kaiser のプランに加入するチームメンバーは、各社のネットワークの[メンタルヘルスプログラムとリソース](https://drive.google.com/file/d/1LT_LG1Px3xrGMBP0-iMPXaFyQvopfSiL/view?usp=sharing)を利用できます
+- [健康保険マーケットプレイスの保障選択肢に関する通知](https://drive.google.com/file/d/1Zo917jADi66YfzO_rXIm40NnewAymiac/view?usp=sharing)
 - [Transparency in Coverage](https://www.cigna.com/legal/compliance/machine-readable-files)を参照してください。これらの機械可読ファイルは、連邦の Transparency in Coverage Rule に対応して提供されており、健康保険プランと医療提供者の間で交渉されたサービス料金と、ネットワーク外の医療に対する支払対象額が含まれます。研究者、規制当局、アプリケーション開発者がデータにアクセスして分析しやすい形式になっています
 
 ## 2026 プラン年の情報 {#2026-plan-year-information}
@@ -679,6 +682,7 @@ MetLife Pet Insurance、柔軟なプラン:
 - [2025 Annual Rights and Notices](https://drive.google.com/file/d/1t17_KcSPt4l09YQL3Iiy544yxXf5z8Bx/view)
 - [Summary of Material Modifications](https://drive.google.com/file/d/1_j61NVNqUQ0A4RBWM3ihooRuf094QdWr/view)
 - [Transparency in Coverage](https://www.cigna.com/legal/compliance/machine-readable-files)
+- [健康保険マーケットプレイスの保障選択肢に関する通知](https://drive.google.com/file/d/1Zo917jADi66YfzO_rXIm40NnewAymiac/view?usp=sharing)
 
 </details>
 

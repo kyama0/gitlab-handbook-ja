@@ -6,11 +6,11 @@ tags:
   - security_policy
   - security_policy_caplscsi
 upstream_path: /handbook/people-group/acceptable-use-policy/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:35:48+09:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:35:06.703137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-11-09T10:58:28-06:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -43,7 +43,7 @@ GitLab が提供する資産を受け取る者は、GitLab が管理するコン
 
 ハンドブックに記載されている[オンボーディング Issue の手順](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)に従って、オンボーディング期間の完了前に、デバイスの暗号化およびデバイスのシリアル番号の証拠を IT Ops に提供する必要があります。
 
-現在、Mac ラップトップのエンドポイント管理ソリューションとして Jamf を使用しています。GitLab が調達するすべての macOS ラップトップは、[Jamf](https://internal.gitlab.com/handbook/it/endpoint-tools/) が設定された状態で出荷されます。Mac ラップトップを自身で調達し経費として申請する GitLab チームメンバーは、[Jamf](https://internal.gitlab.com/handbook/it/endpoint-tools/) のインストールが [Day 1 Security tasks](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md#day-1-getting-started-accounts-and-paperwork) の一環として必要です。CorpSec は、その裁量により、Jamf を介して追加のセキュリティツールをインストールすることがあります。
+現在、Mac ラップトップのエンドポイント管理ソリューションとして [Fleet](/handbook/security/corporate/systems/macos/) を使用しています。GitLab が調達するすべての macOS ラップトップは、Fleet が設定された状態で出荷されます。Mac ラップトップを自身で調達し経費として申請する GitLab チームメンバーは、[Day 1 Security tasks](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md#day-1-getting-started-accounts-and-paperwork) の一環として、Mac を [Fleet に登録](/handbook/eta/corporate-it/end-user-services/onboarding101/)する必要があります。CorpSec は、その裁量により、Fleet を介して追加のセキュリティツールをインストールすることがあります。
 
 現在、Linux ラップトップのエンドポイント管理ソリューションとして [Fleet](https://internal.gitlab.com/handbook/security/corporate/tooling/fleet/) を使用しています。Linux ラップトップを使用する GitLab チームメンバーは、[Day 1 Security tasks](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md#day-1-getting-started-accounts-and-paperwork) の一環として、デバイスを Fleet に登録する必要があります。デバイスが登録されると、Fleet は Endpoint Detection and Response（EDR）を含む必要なセキュリティツールを自動的にインストールし、継続的に適用します。Linux エンドポイント要件の完全なリストについては、[Linux Desktop OS](/handbook/security/corporate/systems/linux/) ページを参照してください。CorpSec は、その裁量により、Fleet を介して追加のセキュリティツールをインストールすることがあります。
 

@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/downstream_consumers/"
-upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
-lastmod: "2026-11-02T11:02:28+11:00"
-translated_at: "2026-11-02T21:11:17+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+lastmod: "2026-11-11T19:46:14+01:00"
+translated_at: "2026-11-14T08:49:10+00:00"
 translator: "claude"
 stale: false
 ---
@@ -27,13 +27,17 @@ Workplan の価値は、下流のエージェントがそれを使用するこ�
 
 Workplan が存在するとき、ユーザーは Implementation ウィジェットまたは Workplan パネルで **Implement** を選択します。これにより、Duo Chat を開かずに、Duo Developer フロー（`developer/v1`）が非同期に開始します（[Issue 628801](https://gitlab.com/gitlab-org/gitlab/-/work_items/628801)）。
 
+ユーザーは、Workplan がないワークアイテムの **Plan** ドロップダウンで **Implement** を選択することもできます。これにより、ヘッダーの **Implement** ボタンと同じ利用可否のチェックを使用し、ワークアイテムを背景情報として Developer フローを開始します。計画は有効にしません（[マージリクエスト 264754](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264754)）。
+
 Duo Developer は、Workplan を主要な仕様として扱います。ワークアイテムの説明とコメントは、追加の背景情報としてのみ使用します。また、[準備状況](readiness.md)のフィードバックの各項目を、ブロッキングでないものも含め、解決すべき指摘として扱います。各項目について、解決するか、解決しなかった理由をマージリクエストの説明に記載します（[マージリクエスト 265980](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265980)）。
 
 前提条件として、Duo Agent Platform のリモートフローを有効にする必要があります。Developer フローが設定されていない場合、**Implement** ボタンは無効になり、ツールチップが表示されます（[Issue 629904](https://gitlab.com/gitlab-org/gitlab/-/work_items/629904)）。
 
 クローズされたワークアイテムでは、ウィジェットと Workplan パネルの両方で **Implement** ボタンを非表示にします（[マージリクエスト 261747](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/261747)）。Developer フローの開始には CI フローの権限も必要です。ワークアイテムのアクション権限との整合は、[Issue 634208](https://gitlab.com/gitlab-org/gitlab/-/work_items/634208)で追跡しています。
 
-Implementation ウィジェットに実装フェーズとマージリクエストのステータスを表示する作業は、[Issue 628976](https://gitlab.com/gitlab-org/gitlab/-/work_items/628976)で引き続き未解決です。実行中の **Implement** の繰り返しクリックに対処しつつ、意図的な再実行を可能にすることも、この進行中の設計作業に含まれます。
+並行した実装を防ぐため、ワークアイテムに Developer フローのセッションが作成されると、直ちにウィジェットと Workplan パネルで **Implement** を非表示にし、そのセッションがキャンセルされると再び表示します。セッションの読み込み中や読み込みに失敗した場合も、非表示のままにします（[マージリクエスト 267709](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267709)）。
+
+Implementation ウィジェットに実装フェーズとマージリクエストのステータスを表示する作業は、[Issue 628976](https://gitlab.com/gitlab-org/gitlab/-/work_items/628976)で引き続き未解決です。
 
 ## Duo Review による検証（先送り） {#duo-review-validation-deferred}
 

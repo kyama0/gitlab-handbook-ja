@@ -2,11 +2,11 @@
 title: 高度なサポートトピック
 description: サポートチームメンバーが専門スキルを身につけるために完了できるトレーニングモジュール。
 upstream_path: /handbook/support/advanced-topics/
-upstream_sha: cf317047d2c9678524c0db59ab7ed8c050713245
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:27:14.053995+00:00"
 translator: claude
 stale: false
-lastmod: "2025-09-03T10:16:03+00:00"
+lastmod: "2026-11-12T16:52:30-05:00"
 ---
 
 ### サポートトレーニングモジュール
@@ -45,7 +45,7 @@ lastmod: "2025-09-03T10:16:03+00:00"
 ディープダイブの例:
 
 - Omnibus 上の GitLab Geo（[Geo モジュール](https://gitlab.com/gitlab-com/support/support-training/blob/main/.gitlab/issue_templates/Geo.md)を基に）
-- GitLab を用いた ElasticSearch（[GitLab の ElasticSearch ドキュメント](https://docs.gitlab.com/integration/advanced_search/elasticsearch/)を基に）
+- GitLab を用いた Elasticsearch（[GitLab の Elasticsearch ドキュメント](https://docs.gitlab.com/integration/advanced_search/elasticsearch/)を基に）
 - 高度なユースケースのための CI 構成（例: docker-in-docker の構成、それを使ったイメージのビルド、Docker レイヤーキャッシングを活用したイメージビルド時間の最適化）（[CI モジュール](https://gitlab.com/gitlab-com/support/support-training/blob/main/.gitlab/issue_templates/CI.md)を基に）
 
 #### ゴール {#goals}
@@ -83,7 +83,7 @@ lastmod: "2025-09-03T10:16:03+00:00"
 
 ディープダイブは講義ではなく、円卓ディスカッションを意図しています。誰もがトピックや既存のトレーニングを通った経験についての質問や考えを持ち寄ることが奨励されています。ドキュメントやハンドブックの改善のアイデア、より明確さが必要な箇所、機能改善のアイデアなどはすべて歓迎されます。このより深いレベルの参加が行われるためには、参加者がすでに基礎に精通していて、トピックへのこのより深い掘り下げが行えることが期待されます。
 
-ディープダイブが完了する前後にいくつかのタスクを完了します。通話前のタスクはトピックの基礎を素早く教えることを意図しており、通話後のタスクは通話および通話に至るまでの経験を永続的な変化に変えることを意図しています。
+ディープダイブの前後にいくつかのタスクを完了します。通話前のタスクはトピックの基礎を素早く教えることを意図しており、通話後のタスクは通話および通話に至るまでの経験を永続的な変化に変えることを意図しています。
 
 提案:
 

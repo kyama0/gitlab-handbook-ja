@@ -1,11 +1,11 @@
 ---
 title: 計画外のアップグレード停止ワークフロー
 upstream_path: /handbook/engineering/workflow/unplanned-upgrade-stop/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:41:43+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-11-11T16:10:12+01:00"
 ---
 
 計画外のアップグレード停止は、ロールバックと追加のメンテナンス作業を必要とするため、お客様にとって大きな支障をきたします。計画外の停止はインシデントとして扱うべきです。以下のプロセスは、インシデント解決プロセスのさまざまな段階と、対応するチームおよびDRI（Directly Responsible Individuals）が取るべき手順を概説しています。
@@ -52,7 +52,7 @@ _（DRI: バグを所有するチームのエンジニアリングマネージ�
 1. DRI は修正をバックポートできるかどうかを確認します。バックポートが不可能な場合は、Distribution チームと協力してアップグレードパスを更新し、即時解決のために[計画外の停止を遡及的に追加](https://docs.gitlab.com/ee/development/avoiding_required_stops.html#retroactively-adding-required-stops)します。
 1. EM は計画外のアップグレード停止 RCA を実施するための DRI を特定します。
 1. RCA DRI は根本原因分析を実施し、是正措置を提起します。
-1. RCA DRI はテストカバレッジ分析について Test Platform と協力し、是正措置を提起します。
+1. RCA DRI はテストカバレッジ分析について Developer Experience と協力し、是正措置を提起します。
 1. EM は RCA の深刻度に対する [GitLab の Priority ラベル](/handbook/product-development/how-we-work/issue-triage/#priority) ガイドラインに従って是正措置に優先順位を付けます。
 
 ## メトリクス
