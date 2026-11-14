@@ -2,11 +2,11 @@
 title: People Group
 description: "GitLab の People Group は、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
 upstream_path: /handbook/people-group/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T08:17:34+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:35:06.703137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-09T11:02:44-05:00"
 ---
 
 ## ようこそ {#welcome}
@@ -17,7 +17,7 @@ People Group のハンドブックへようこそ！ここでほとんどの質�
 
 People Group は、多様で包括的なチームが意義あるキャリアを経験できる、ハイパフォーマンスで結果重視の文化を確立するために協働します。
 
-私たちは、人々が GitLab のビジネス成果の向上に完全に貢献しながら、最高の仕事をし、キャリアを進めることを可能にする文化を支援します。私たちは、価値観を最もよく体現するチームメンバーを採用、昇進、称賛します。
+私たちは、人々が GitLab のビジネス成果の向上に完全に貢献しながら、最高の仕事をし、キャリアを進めることを可能にする文化を支援します。私たちは、[運営原則](/handbook/company/operating-principles/)を最もよく体現するチームメンバーを採用、昇進、称賛します。
 
 People Group の戦略は、FY27 Plan の実現を支援することに焦点を当て、世代を超えた会社を構築する基盤を整えながら、[GitLab の会社戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)と整合しています。
 
@@ -32,7 +32,7 @@ People Group の戦略は、FY27 Plan の実現を支援することに焦点を
 - 機密／プライベートな事項（チームをめぐる機微な事項を含む）について議論する必要がある場合は、Team Member Relations チームの [Compass](https://app.serval.com/new-request) ケースを開くことができます。すべてのチームメンバーは、所在地にかかわらず、プライベートな機微な事項について議論するためにこのフォームを使用できます。
 - 技術的事項（たとえば 2FA）について助けが必要な場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com で IT に連絡してください。
 
-People Group は、GitLab の[ミッション](/handbook/company/mission/)を支援するために存在しています。その方法は、トップタレントを GitLab に迎え入れ、その後、チームメンバーが私たちの価値観に沿って意義ある貢献をできるようにすることです。質問があるとき、またはサポートを求めるときは、[ご連絡](#how-to-reach-the-right-member-of-the-people-group)をためらわないでください！
+People Group は、GitLab の[ミッション](/handbook/company/mission/)を支援するために存在しています。その方法は、トップタレントを GitLab に迎え入れ、その後、チームメンバーが私たちの[運営原則](/handbook/company/operating-principles/)に沿って意義ある貢献をできるようにすることです。質問があるとき、またはサポートを求めるときは、[ご連絡](#how-to-reach-the-right-member-of-the-people-group)をためらわないでください！
 
 ## 助けが必要ですか？ {#need-help}
 

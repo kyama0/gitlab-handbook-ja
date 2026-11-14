@@ -2,11 +2,11 @@
 title: "チャネルパートナー: GitLab との協業"
 description: "チャネルパートナーが GitLab と協業する方法。"
 upstream_path: /handbook/resellers/channel-working-with-gitlab/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:50:18+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:35:06.703137+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-15T18:35:57Z"
+lastmod: "2026-11-11T03:58:33Z"
 ---
 
 _このガイドは主に既存の GitLab Services および Reseller Partner 向けです。チャネルパートナー候補は GitLab パートナープログラムについて学び、[こちら](/handbook/resellers/)からサインアップしてください。_
@@ -98,22 +98,27 @@ Open Partner と Select Partner のトラックごとに異なる認定要件な
 
 #### Partner Sourced Deal Registration のルール・オブ・エンゲージメント
 
-1. 提出された登録は Ecosystem Operations にレビューのためルーティングされます
-2. Ecosystem Ops は新しい機会を作成するか、既存の機会を登録にリンクします
-
-- **機会がまだ存在しない場合**
-  - Ecosystem Ops はディール登録を承認し、機会を作成します
-- **機会がステージ 0 から 2 に存在する場合**
-  - Ecosystem Ops は機会をリンクし、ESM に承認のためルーティングします
-  - ESM が承認すれば、登録は最終承認のため ASM にルーティングされます
-  - ASM が 10 日以内に承認しない場合、Ecosystem Ops が登録を承認します
-- **機会がステージ 3 から 6 に存在する場合**
-  - Ecosystem Ops は Sales Last Activity Date フィールドをレビューします
-  - セールス活動がある場合、Ecosystem Ops は登録を却下します
-  - 最後の活動から 180 日を超えて経過している場合、Ecosystem Ops は登録を承認します
-  - 機会がパートナーの創出した売上増を伴う更新の場合、Ecosystem Ops は ESM に承認のためルーティングします
-    - ESM が承認すれば、登録は承認のため ASM にルーティングされます
-    - 提出から 10 日以内に登録が承認されない場合、Ecosystem Ops が登録を承認します
+- **Partner Sourced 割引**
+  - Partner Sourced 割引が適用された見積もりを受け取るには、パートナーはその機会の Partner Sourced Deal Registration を提出し、GitLab の承認を受ける必要があります。
+  - 1 つの機会につき、Partner Sourced 割引を獲得できるパートナーは 1 社のみです。承認済みの Partner Sourced Deal Registration がない場合、通常は基本/共同販売マージンが適用されます。
+- **承認プロセス**: ディール登録の承認は、(i) 受領順、(ii) 機会の適格性、(iii) パートナーの国内/リージョン内サポート能力、(iv) 顧客とパートナーの関係を組み合わせて判断します
+- **排他性**: 1 つの機会につき、ディール登録マージンを獲得できるパートナーは 1 社のみです
+- **適格性**: 新規または既存顧客の機会、既存顧客との新規機会、売上増を伴う更新へのアドオン販売が対象となります。売上増のない更新は対象外です。
+- **要件**: GitLab Partner Program Agreement に署名した認定パートナーのみがディールを登録できます。少なくとも 1 名のパートナー従業員が GitLab Foundations for Partners トレーニングを完了する必要があります。
+- **GitLab の SLA**
+  - GitLab が Partner Sourced Deal Registration についてパートナーに連絡する SLA は 2 営業日です。登録について話し合うための初回連絡、追加情報の依頼、承認、却下のいずれであっても、登録したパートナーに 2 営業日以内に連絡する必要があります。
+  - GitLab RD は、登録が自身の承認キューに入ってから 1 営業日以内に承認または却下します。承認が 1 営業日の SLA を超えると予想される場合、RD は _必ず_ GitLab Ecosystem Sales Manager に連絡する必要があります。
+- **代理承認者の指定と通知**
+  - GitLab Ecosystem Sales Manager と RD は、不在にする前に _必ず_ 代理承認者を指定して通知し、SFDC の[承認委任プロセス](/handbook/sales/field-operations/order-processing/#reassign-quote-approvals)を使って自身に代わり登録を承認できるようにしてください。これにより、不在中も承認リクエストに対応でき、SLA を満たすうえで極めて重要です（上記の **GitLab の SLA** を参照）。
+- **標準有効期間と延長**
+  - 承認済みのディール登録は、最初の承認日から標準で 90 日後に失効します。
+  - 最初の 90 日間の承認期間を超えるディール登録の延長は、GitLab の単独の裁量によります。標準の 30 日間の延長を受けるには、GitLab パートナーは Partner Portal の Deal Registration フォームから延長を申請する必要があります。Ecosystem Sales Manager は登録の `Extension Approval Status` フィールドをクリックし、Approved、Denied、Pending のいずれかを選択できます。30 日を超える標準外の延長については、登録レコードの `Request Support` ボタンで Ecosystem Ops にケースを開き、新たな失効日を指定してください。
+- **セールスプロセスにおける GitLab とパートナーの協業**
+  - _再販および MSP の機会_ - GitLab は、承認済みの Partner Sourced Deal Registration を持つパートナーと協業し、セールスプロセス全体を通じてパートナーをサポートできます。
+  - _紹介の機会_ - パートナーは GitLab を適切な顧客担当者に紹介し、その結果として GitLab の有望な機会が生まれます。その後、通常は GitLab がセールスプロセスを完了まで主導します。
+- **失注した登録済み機会**
+  - GitLab Sales Rep は通常、機会が進展しないことを電話またはメールでパートナーに通知し、SFDC の機会を Closed Lost に更新します。
+  - システム内の Deal Registration が Closed Lost に更新され、パートナーに通知が届きます。
 
 ### サービス付帯登録
 

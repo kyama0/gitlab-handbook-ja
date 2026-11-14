@@ -2,11 +2,11 @@
 title: Import グループ
 description: Import グループはマイグレーションを支援します。
 upstream_path: /handbook/engineering/devops/create/import/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T14:57:35.491656+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:44:55+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-13T14:45:41+11:00"
 ---
 
 ## 概要 {#about}
@@ -136,7 +136,7 @@ Engineering チームにヘルプを依頼する前に、まず関心のある�
 
 プライマリドクターのマイルストーンキャパシティは 100% この役割の責任に割り当てられます。何も残っていない場合、エンジニアは `~type::maintenance` または `~type::bug` Issue に取り組み、コードレビューのキャパシティを増やすことを検討すべきです。
 
-現在のドクターは `@gitlab-com/create-team/import/reaction-rotation` でタグ付けできます。
+現在のドクターは `@gitlab-org/import-team/reaction-rotation` でタグ付けできます。
 
 #### 責任 {#responsibilities}
 
@@ -150,7 +150,7 @@ Engineering チームにヘルプを依頼する前に、まず関心のある�
   必要な変更のための Issue を作成する
 - エラーがないか [`#import_exceptions`](https://gitlab.enterprise.slack.com/archives/C061EPC0RST)と [Direct Transfer Kibana Dashboard](https://log.gprd.gitlab.net/app/dashboards#/view/f2640580-a8bd-11ed-85ed-e7557b0a598c)を監視し、必要に応じてトリアージ、エスカレーション、フォローアップ Issue の作成を行う
 - マイルストーンごとに 1 回、[エラーバジェット](#error-budgets)をレビューし、リグレッションを調査して、見つかった問題についてフォローアップ Issue を作成する
-- マイルストーンの終わりに [`@gitlab-com/create-team/import/reaction-rotation` のメンバーシップ](https://gitlab.com/groups/gitlab-com/create-team/import/reaction-rotation/-/group_members?with_inherited_permissions=exclude)を更新する
+- マイルストーンの終わりに [`@gitlab-org/import-team/reaction-rotation` のメンバーシップ](https://gitlab.com/groups/gitlab-org/import-team/reaction-rotation/-/group_members?with_inherited_permissions=exclude)を更新する
 
 ##### インポーターの依存関係 {#importer-dependencies}
 

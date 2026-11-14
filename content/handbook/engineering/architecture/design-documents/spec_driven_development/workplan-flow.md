@@ -8,9 +8,9 @@ authors: [ "@vanessaotto" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/workplan-flow/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-30T06:05:11+01:00"
-translated_at: "2026-11-01T06:49:50+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+lastmod: "2026-11-11T19:46:14+01:00"
+translated_at: "2026-11-14T08:49:10+00:00"
 translator: "codex"
 stale: false
 ---
@@ -84,7 +84,7 @@ sequenceDiagram
 - **プロジェクトのワークアイテムのみ**：フローは CI で実行するため、グループレベルのワークアイテムには対応していません。
 - **ツールの承認**：フローが使用するツールは事前に承認する必要があるため、フローはツールの承認のために停止しません。承認するツールを限定するために、専用の Workplan ツールが必要になる可能性があります。
 - **人の入力を求めるゲート**：調査、計画、背景情報の各ゲートでは、外部でのやり取りを使います。ユーザーがワークアイテムで操作し、明示的に再開します。これらは、セッションドロワーでのツール呼び出しの承認や却下を求めるリクエストではありません。
-- **可観測性**：フローには LangSmith による計測を組み込んでいます。追跡イベントは、[Issue 631134](https://gitlab.com/gitlab-org/gitlab/-/work_items/631134)で追跡しています。生成の実行には、独自のワークフローソースタイプである `work_item_workplan`（GraphQL では `WORK_ITEM_WORKPLAN`）を使います。これはフロートリガーや、`work_item_plan_to_merge_request` で追跡する **Implement** への引き渡しとは別です（[マージリクエスト 263691](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263691)）。
+- **可観測性**：フローには LangSmith による計測を組み込んでいます。追跡イベントは、[Issue 631134](https://gitlab.com/gitlab-org/gitlab/-/work_items/631134)で追跡しています。生成の実行には、独自のワークフローソースタイプである `work_item_workplan`（GraphQL では `WORK_ITEM_WORKPLAN`）を使います。これはフロートリガーや、`work_item_plan_to_merge_request` で追跡する **Implement** への引き渡しとは別です（[マージリクエスト 263691](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263691)）。再開時には独自のイベントを送信します。このイベントには、実行を開始したユーザーではなく **Continue** を選択したユーザーを記録し、回答を送信したか、回答なしだったか、背景情報のリクエストだったかを示すラベルを付けます（[マージリクエスト 268657](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/268657)）。
 
 ## 未完了の作業 {#open-work}
 
@@ -92,6 +92,7 @@ sequenceDiagram
 - [起動時に未解決の質問をフローに渡す](https://gitlab.com/gitlab-org/gitlab/-/work_items/628043)
 - [起動したユーザーを目標に含める](https://gitlab.com/gitlab-org/gitlab/-/work_items/628042)
 - [Duo Chat で作成したワークアイテムに対して計画を自動的に開始する](https://gitlab.com/gitlab-org/gitlab/-/work_items/630062)
+- Workplan の並列トラックを子タスクに変換し、依存するトラック間にブロッキングのリンクを作成します。Workplan フローのバージョン 1.3.0 はこれを実装してマージ済みですが、デフォルトバージョンではなく、まだ展開されていません（[マージリクエスト 7807](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7807)）。
 - [フローのコメントを解決可能なディスカッションとして投稿する](https://gitlab.com/gitlab-org/gitlab/-/work_items/633575)。ワークアイテムの UI は、最初の返信前にディスカッションを解決する機能にすでに対応しています（[マージリクエスト 259967](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259967)、[マージリクエスト 263718](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263718)）。
 
 ## 決定 {#decisions}

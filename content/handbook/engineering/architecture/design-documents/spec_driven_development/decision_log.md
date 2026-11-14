@@ -8,11 +8,11 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/decision_log/"
-upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
-translated_at: "2026-11-02T21:11:17+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:49:10+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-02T11:02:28+11:00"
+lastmod: "2026-11-11T19:46:14+01:00"
 ---
 
 SDD の詳細は、[Spec-Driven Development](_index.md)を参照してください。
@@ -82,6 +82,8 @@ API とモデルでは、決定が答える質問に `question` を使用しま�
 内部イベントで、解決済みとしての決定の記録、未解決の決定の解決、意思決定ログのパネルのオープンを追跡します。解決イベントには、どのように決定したかを含めます。未解決の質問を作成しただけでは、解決済みの決定として集計しません（[マージリクエスト 261013](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/261013)）。
 
 未解決の決定の編集、アーカイブ、削除でもイベントを送信します。これらのイベントには、ワークアイテム、決定、リクエスト元（Web UI、API、または AI ワークフロー）を含めます（[マージリクエスト 263772](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263772)）。パネルの表示イベントには、ワークアイテム ID と、ディープリンクとヘッダーボタンのどちらからパネルを開いたかを含めます（[マージリクエスト 264363](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264363)）。
+
+Workplan フローが Duo の質問を投稿すると、ペイロードが有効で未解決の決定を作成したか、無効だったかをイベントに記録します（[マージリクエスト 267241](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267241)）。回答なしで解決した Duo の質問は、`reject_all` ではなく `skipped` として記録します（[マージリクエスト 267690](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267690)）。
 
 ## 決定 {#decisions}
 

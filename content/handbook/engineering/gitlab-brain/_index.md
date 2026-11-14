@@ -2,9 +2,9 @@
 title: "GitLab Brain"
 description: "エージェントの時代における GitLab の強みは、コード、レビュー、パイプライン、およびそれらを管理する権限モデルについての知識にあります。GitLab Brain は、その知識を機能する知性に変えます — 発生した出来事を観測し（イベント）、永続的なインフラストラクチャに記憶し（ストレージ）、即座に呼び出し（検索）、推論によって洞察を導きます。このようにして、GitLab はインテリジェンスのシステムになります。"
 upstream_path: /handbook/engineering/gitlab-brain/
-upstream_sha: ddc319726d9e3f1cfd7f88faf4798bf31af6bf10
-lastmod: "2026-10-09T15:20:41-07:00"
-translated_at: "2026-10-20T13:31:55+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+lastmod: "2026-11-12T20:51:43-08:00"
+translated_at: "2026-11-14T08:41:43+00:00"
 translator: codex
 stale: false
 ---
@@ -58,6 +58,7 @@ flowchart LR
 
 ## 私たちの働き方 {#how-we-work}
 
+- [ポートフォリオと人員数の計画](/handbook/engineering/gitlab-brain/portfolio-and-headcount-planning/): ポートフォリオ、ロードマップ、採用を 1 つのスプレッドシートで計画する方法です。閲覧またはダウンロードできるテンプレートも用意しています。その中のサンプルデータは架空のものです。
 - [四半期計画](/handbook/engineering/data-engineering/quarterly-planning/): 四半期の計画方法です。キャパシティの上限内で、優先順位を付け、適切な規模に調整した施策を計画し、14 日ごとに 20 分間のレビューを実施します。入れ替えと優先順位引き下げのルール、および四半期末の say/do スコアも扱います。
 - [優先事項トラッカーのガイド](/handbook/engineering/data-engineering/priorities-tracker/): トラッカースプレッドシートの補足リファレンスです。タブ、2 ページ資料、各行の列、キャパシティの計算方法、および計画確定前に各行が満たす必要のあるチェック項目を説明します。
 - [リリースのプレモーテム](/handbook/engineering/data-engineering/pre-mortems/): 出荷日前にリリース固有のリスクを洗い出すための、任意の 45 分間の取り組みです。実施するかどうかはリリースの DRI が判断します。

@@ -2,11 +2,11 @@
 title: "GitLab 面接の実施"
 description: "GitLab の面接を準備・実施するための役立つ情報"
 upstream_path: /handbook/hiring/conducting-a-gitlab-interview/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T07:53:59+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:38:42.466927+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-12T15:47:53+01:00"
 ---
 ## **概要** {#overview}
 
@@ -14,7 +14,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 ## 面接官トレーニングの要件 {#interviewer-training-requirements}
 
-新しい社内面接官は、[Level Up の面接官トレーニングモジュール](https://levelup.csod.com/samldefault.aspx?ouid=1&returnUrl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d5c9f6b01-8189-418a-bb52-30b2c6d42b96)を完了するか、[GitLab マネージャーになることの Issue テンプレート](https://gitlab.com/gitlab-com/people-group/Training/-/blob/master/.gitlab/issue_templates/becoming-a-gitlab-manager.md)の一部として完了する必要があります。
+新しい社内面接官は、[Level Up の面接官トレーニングモジュール](https://levelup.csod.com/ui/lms-learning-details/app/course/afa79781-4b74-44fc-9bee-9cc19a302be4)を完了するか、[GitLab マネージャーになることの Issue テンプレート](https://gitlab.com/gitlab-com/people-group/Training/-/blob/master/.gitlab/issue_templates/becoming-a-gitlab-manager.md)の一部として完了する必要があります。
 
 通常、新入社員は面接チームに参加する前に少なくとも 2 週間はオンボーディングに集中して完了することが期待されます。場合によってはこれより早く面接に参加する必要があるチームメンバーもいるかもしれませんが、LevelUp での面接トレーニングモジュールを完了し、面接チームに参加する前にマネージャーとリクルーターに役割についてしっかりと話し合う必要があります。
 
@@ -47,7 +47,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 - 最新のヘッドカウント、注目すべき受賞歴、メッセージング、GitLab での就労に関するその他の事実を把握してください。これらのタレントブランドリソースを見て、候補者との会話をガイドしてください。
 
-面接前の準備について詳しくは、[Level Up](https://levelup.csod.com/samldefault.aspx?ouid=1&returnUrl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d5c9f6b01-8189-418a-bb52-30b2c6d42b96)の面接官トレーニングモジュールでご確認ください。
+面接前の準備について詳しくは、[Level Up](https://levelup.csod.com/ui/lms-learning-details/app/course/afa79781-4b74-44fc-9bee-9cc19a302be4)の面接官トレーニングモジュールでご確認ください。
 
 ## 面接中 {#during-the-interview}
 

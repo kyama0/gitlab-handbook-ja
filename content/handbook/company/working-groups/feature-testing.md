@@ -1,13 +1,13 @@
 ---
 title: "機能テストワーキンググループ"
 description: "機能テストにおける Capybara の代替として、永続的な代替手段の信頼性を確立します。"
-status: active
+status: disbanded
 upstream_path: "/handbook/company/working-groups/feature-testing/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:56:34+00:00"
 translator: "claude"
 stale: false
-lastmod: "2025-05-29T13:59:37-07:00"
+lastmod: "2026-11-10T12:33:30+01:00"
 ---
 
 ## 属性
@@ -16,6 +16,7 @@ lastmod: "2025-05-29T13:59:37-07:00"
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | 作成日      | 2024-11-01                                                                                                                           |
 | 目標終了日   | 2025-02-01                                                                                                                           |
+| 終了日          | 2025-05-29                                                                                                                           |
 | Slack             | [#wg_feature-testing](https://gitlab.enterprise.slack.com/archives/C082VBQSFSQ)                                                      |
 | Google Doc        | https://docs.google.com/document/d/1ZS4L-vVVVqRAjdOmr4X8ENYD5YEyFxEV8wxuR1OtNvE/edit?tab=t.0                                         |
 | Epic              |                                                                 |
@@ -108,8 +109,8 @@ Playwright の実験の終了に伴い、ワーキンググループは解散し
 | ------------------ | ------------------- | --------------------------------------------------- |
 | エグゼクティブスポンサー  | Tim Zallmann        | VP of Engineering, Core Development                      |
 | ファシリテーター        | Donald Cook        | Engineering Manager, Plan:Project Management             |
-| 機能リード    | Natalia Tepluhina        | Principal Engineer, Plan         |
-| 機能リード    | Ksenia Kolpakova         | Engineering Manager, Test Engineering |
-| 機能リード    | Javiera Tapia            | Backend Engineer, Create:Source Code  |
+| ファンクショナルリード    | Natalia Tepluhina        | Principal Engineer, Plan         |
+| ファンクショナルリード    | Ksenia Kolpakova         | Engineering Manager, Test Engineering |
+| ファンクショナルリード    | Javiera Tapia            | Backend Engineer, Create:Source Code  |
 | メンバー             | Désirée Chevalier        | Senior Software Engineer in Test, Plan |
 | メンバー             | Doug Stull               | Staff FullStack Engineer in Growth |

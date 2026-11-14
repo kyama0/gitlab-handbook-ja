@@ -9,11 +9,11 @@ owning-stage: "~devops::plan"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/work_items_custom_status/
-upstream_sha: d5f4aa38819ae2b572eb32e0d967394d0361a975
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:44:55+00:00"
 translator: claude
 stale: false
-lastmod: "2025-11-06T10:01:09+01:00"
+lastmod: "2026-11-12T10:01:17+11:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -663,6 +663,7 @@ MVC2 を `18.5` で["Issue とタスクのステータスライフサイクル�
 1. MVC2 リリースの一部として[グローバル検索とワークアイテムリストフィルタリングの Elastic Search サポートのステータスを追加しません](https://gitlab.com/groups/gitlab-org/-/epics/17575#note_2712401620)。
 1. ステータス移行中の即座のユーザーフィードバックのための[永続的な追加としてのランタイムマッピング解決](https://gitlab.com/gitlab-org/gitlab/-/issues/556439)、ミスマッチした現在のステータスをクリーンアップすることでパフォーマンスを最適化するための将来のデータ移行が計画されています。
 1. `valid_from` と `valid_until` カラムを使用した[時間ベースの有効性を持つステータスマッピングシステム](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/204229)で、時間的マッピングシナリオとフィルタリングの過去の正確性をサポートします。
+1. ステータスを持つすべてのワークアイテムタイプについて、[`CurrentStatus` レコードのないワークアイテムは、そのライフサイクルの現在のデフォルトステータスとして解決されます](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263458#note_4120903179)。表示、フィルタリング、ステータス削除のチェック、バックフィルはこのルールに従い、ステータスマッピングは保存されたレコードにのみ適用されます。これにより、デフォルトステータスの変更は新しい遷移と新しいアイテムにのみ影響するという以前の決定をより具体化します。レコードのあるアイテムはステータスを維持し、レコードのないアイテムは新しいデフォルトに従います。
 
 ## リソース
 

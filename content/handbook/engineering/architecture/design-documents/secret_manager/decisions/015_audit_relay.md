@@ -4,9 +4,9 @@ description: 'ADR-011 の改訂: OpenBao は、リクエストの処理経路で
 owning-stage: "~devops::security platform"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/decisions/015_audit_relay/
-upstream_sha: 1d017e2417c7510ed270a22e03f038e968fdb679
-lastmod: "2026-10-21T06:16:14+02:00"
-translated_at: "2026-10-21T21:04:44Z"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+lastmod: "2026-11-10T06:26:28+01:00"
+translated_at: "2026-11-14T08:53:32.358803+00:00"
 translator: codex
 stale: false
 
@@ -41,7 +41,8 @@ POST をリクエストの処理経路から外すための選択肢を、[gitla
 
 OpenBao の `http` 監査デバイスは、`127.0.0.1` 上の [Vector](https://vector.dev) サイドカーに POST します。Vector は各エントリを Rails に再度 POST します。
 
-- **メモリバッファー**を使用し、`when_full: drop_newest` を設定して、確認応答を無効にします。Rails の状態にかかわらず、OpenBao はすぐに応答を受け取ります（2026 年 10 月のローカルテストでは約 1 ms）。
+- **メモリバッファー**を使用し、`when_full: drop_newest` を設定して、確認応答を無効にします。Rails の状態にかかわらず、OpenBao はすぐに応答を受け取ります（2026 年 10 月のローカルテストでは約 1 ms）。バッファーのサイズにより、対応できる停止時間が決まります。イベント発生率 ×（Rails の停止時間 + Rails の起動時間 + 滞留イベントの送信時間）です。
+- **配信の上限設定**: Vector のデフォルトの適応型同時実行制御ではなく、Rails の処理能力に合わせた固定の `request.concurrency` をシンクに設定します。Vector は Rails が受け付ける速度で滞留イベントを送信するため、上限のない中継は Rails のリクエストキューを埋め尽くします（リスクを参照）。
 - 接続エラー、タイムアウト、5xx レスポンスでは、バックオフを伴う**再試行**を行います。4xx レスポンスは再試行しません。
 - **ボディは変更せずに転送**し、リクエストごとに 1 つのエントリを、同じヘッダーで送信します。Rails のエンドポイントを変更する必要はありません。
 - Rails が破棄するため、Vector で**リクエストタイプのエントリを破棄**します。Rails が不明なイベントとして無視する、`auth.metadata` に `group_id` も `project_id` もないエントリも破棄します。
@@ -78,11 +79,20 @@ OpenBao の `http` 監査デバイスは、`127.0.0.1` 上の [Vector](https://v
 
 いずれもメトリクスで確認できます。中継自体に到達できない場合はリクエストを拒否するため、イベントが黙って失われることはありません。
 
+### 検証 {#validation}
+
+中継は実装前に、単一ノードの GKE サンドボックス上で GitLab と OpenBao のチャートを使用した Self-Managed インスタンスでテストしました（2026 年 10 月）。以下の数値はそのサンドボックスで得たサンプルであり、GitLab.com の測定値ではありません（[サンドボックスのテスト結果](https://gitlab.com/gitlab-org/gitlab/-/work_items/635495#note_4130399258)）。
+
+- 負荷がかかった状態で OpenBao が監査エントリの書き込みに費やした平均時間は、Rails への直接 POST では約 1.2 秒だったのに対し、Vector の使用では約 23 ms となり、イベントの損失はありませんでした。
+- Rails が停止しても、OpenBao のリクエストは影響を受けませんでした。直接 POST の場合、各監査エントリは 5 秒のタイムアウトを待ちました。
+- Rails が飽和し、Vector のデフォルトの適応型同時実行制御を使用した場合、OpenBao から Rails への OIDC ディスカバリーリクエストが失敗し、36 個のシークレットマネージャーのうち 16 個でプロビジョニングが失敗しました。`request.concurrency: 2`（Puma スレッド 8 個に対して）では失敗はありませんでした。
+- Rails の 5 分間の停止中に 10,000 イベントのバッファーが満杯になり、イベントの約 3 分の 1 が破棄されました。
+
 ## 結果 {#consequences}
 
 ### 利点 {#benefits}
 
-- OpenBao が Rails を待つ必要がなくなります。Rails が遅い場合や利用できない場合、監査の配信は遅延しますが、OpenBao のリクエストが遅くなったり失敗したりすることはありません。
+- OpenBao が Rails を待つ必要がなくなります。Rails が遅い場合や利用できない場合、監査の配信は遅延しますが、配信に上限を設定している限り、OpenBao のリクエストが遅くなったり失敗したりすることはありません（リスクを参照）。
 - 現状よりイベントの損失が減ります。Rails が遅い場合は、タイムアウト後にイベントを破棄する代わりに、キューに保存して再試行します。
 - 失敗を観測できます。OpenBao にはデバイスごとの失敗カウンターがあり、Vector にはバッファーでの破棄数とシンクのエラーがあります。
 - 同じ中継が、GKE、EKS、任意の Self-Managed Kubernetes クラスターで動作します。クラウドサービスは使用しません。
@@ -91,7 +101,9 @@ OpenBao の `http` 監査デバイスは、`127.0.0.1` 上の [Vector](https://v
 ### トレードオフとリスク {#trade-offs-and-risks}
 
 - **コンポーネントの追加。** Vector イメージのビルド、スキャン、アップグレードに加え、設定とアラートが必要です。
-- **可用性は中継に依存します。** `required` を設定すると、Vector に到達できない間、OpenBao はリクエストを拒否します。Vector はローカルで稼働しており、数秒で再起動します。また、環境変数を通じてフラグを無効にできます。
+- **可用性は中継に依存します。** `required` を設定すると、Vector に到達できない間、OpenBao はリクエストを拒否します。Vector はローカルで稼働しており、数秒で再起動します。また、環境変数を通じてフラグを無効にできます。Vector の設定が不正だと、サイドカーがクラッシュと再起動を繰り返し、OpenBao が停止したままになるため、CI で各設定を `vector validate` によって検証します。
+- **中継の配信は他の Rails トラフィックと競合します。** 停止後やイベントの急増後、Vector は Rails が受け付ける速度で滞留イベントを送信します。上限がなければ Rails のリクエストキューが埋まり、JWT 認証の設定時に OpenBao が Rails に送る OIDC ディスカバリーリクエストを含め、他のリクエストが遅延します。これにより、OpenBao のリクエストの処理経路が再び Rails に依存することになります。固定の同時実行数上限はこれを防ぎますが、滞留イベントの送信が遅くなり、イベント発生率が上限付きの配信速度を上回るたびに滞留イベントが増えるという代償があります。
+- **バッファーが対応できる停止時間を制限します。** `max_events` を超えると、新しいイベントは破棄されます。メモリバッファーを大きくするとメモリ使用量が増え、ディスクバッファーには永続ボリュームが必要です（代替案を参照）。
 - **ベストエフォートの配信。** 将来、Compliance や使用状況の追跡で配信保証が必要になった場合には適しません。その場合、永続ボリューム上のディスクバッファーやマネージドキューなど、永続的なバッファーが必要になります（代替案を参照）。
 - **Runway 上で Vector の設定を変更すると、OpenBao が再起動します。** サイドカーは ConfigMaps をマウントできないため、設定をイメージに組み込んでおり、変更には新しいデプロイが必要です。チャートでは、ライブリロードを備えた ConfigMap によってこれを回避できます。
 - **重複。** Rails がイベントを処理した後にタイムアウトして再試行すると、同じイベントが再び配信されます。Rails はすでに `request.id` によって重複を除去しています（`AuditLogWorker`）。
@@ -153,4 +165,5 @@ OpenBao の `http` 監査デバイスは、`127.0.0.1` 上の [Vector](https://v
 - リクエストをブロックする同期的な監査 POST: [gitlab-org/gitlab#602179](https://gitlab.com/gitlab-org/gitlab/-/work_items/602179)
 - Runway サイドカーのフィールド: [runwayctl!1750](https://gitlab.com/gitlab-com/gl-infra/platform/runway/runwayctl/-/merge_requests/1750)
 - シークレット読み取りの追跡: [gitlab-org/gitlab#597888](https://gitlab.com/gitlab-org/gitlab/-/work_items/597888)
+- 実装前の検証: [gitlab-org/gitlab#635495](https://gitlab.com/gitlab-org/gitlab/-/work_items/635495#note_4130399258)
 - 改訂対象: [ADR-011: 顧客監査の取り込みにストリーミング監査イベントを使用する](011_http_audit.md)

@@ -2,9 +2,9 @@
 title: 有効性チェックの開発プロセス
 description: 調査と YAML 定義から実際のトークンによるテスト、レビューまで、Secret Detection にベンダーの有効性チェックを追加する方法。
 upstream_path: /handbook/engineering/development/sec/security-factory/secret-detection/validity-check-development-process/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-23T19:27:19+02:00"
-translated_at: "2026-11-01T18:28:14+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+lastmod: "2026-11-11T11:50:25-08:00"
+translated_at: "2026-11-14T08:44:55+00:00"
 translator: codex
 stale: false
 ---
@@ -19,18 +19,35 @@ stale: false
 検出結果は、それに一致した検出ルールの ID に基づいて該当するチェックに振り分けられます。ルール自体については、
 [ルール開発プロセス](rule-development-process)で説明します。
 
-前提条件:
+ジェネレーターは、以下のすべてを満たす場合にのみ機能します。それ以外の場合は、
+[ジェネレーターで対応できない場合](#when-the-generator-is-not-enough)を参照してください。
 
-- トークン種別の検出ルールが
-  [secret-detection-rules](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-rules)に存在すること。
-- ベンダーに、有効なトークンと失効したトークンで異なるステータスコードを返す、
-  認証付きのエンドポイントがあること。
-
-どちらかの前提条件を満たさない場合は、[ジェネレーターで対応できない場合](#when-the-generator-is-not-enough)を参照してください。
+1. トークン種別の検出ルールが
+   [secret-detection-rules](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-rules)に存在すること。
+1. 検出したシークレットが、クライアント ID、テナント、その他の値なしで単独で認証できること。
+1. 1 つのエンドポイントが、すべてのお客様のトークンで機能すること。
+1. サポートされている認証方式を使用して、シークレットをヘッダー内の認証情報として送信すること。
+1. エンドポイントの呼び出しに副作用がないこと。
+1. 有効なトークンが決して受け取らないステータスコードが存在すること。[レビュアーのチェックリスト](#reviewer-checklist)を参照してください。
 
 ## 1. ベンダーを調査する {#1-research-the-vendor}
 
 各回答の情報源を記録してください。これらの回答は、手順 5 で MR の説明に記載します。
+
+調査の進め方:
+
+1. ベンダーのロールアウト用ワークアイテムや
+   [有効性チェックのためにすでにレビューしたルールの一覧](https://gitlab.com/gitlab-org/gitlab/-/work_items/631759)など、過去の調査メモを確認し、
+   サポート対象外と判明しているルール ID を調べてください。
+1. ルールの正規表現を読んでください。検証処理に渡るのは、キャプチャされた部分だけ、またはキャプチャグループがなければ一致全体です。
+   ホストやアカウント ID などのコンテキストは失われます。
+1. ベンダーの REST API 認証ページを探してください。通常は、シークレットとともに送信する情報と、
+   シークレットの送信方法が記載されています。複数の製品を提供するベンダーには、たとえば
+   [Azure Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-access-keys-shared-access-signatures)のように製品ごとのページがあります。
+1. ベンダーの例に記載されたリクエスト先ホストを確認してください。
+   `{resource}.vendor.com` のようにホストにプレースホルダーが含まれている場合、固定のエンドポイントはありません。
+
+続いて、次の項目を記録してください:
 
 - ルール ID: ルールの TOML ファイルにある `id` を、大文字と小文字、スペースも含めて正確に使用します。レジストリはこの値で振り分けるため、
   一致しないとチェックが実行されません。複数のトークン種別を持つベンダーでは、
@@ -42,10 +59,12 @@ stale: false
   - `bearer`: `Authorization: Bearer <token>`。
   - `header`: `auth_param` で指定した名前のカスタムヘッダー。必要に応じて `auth_prefix` でスキームを指定します。
   - `basic_username`: トークンをユーザー名として使用する HTTP Basic 認証。
-  - `basic_password`: トークンをパスワードとして使用し、`auth_param` に固定のユーザー名を指定する HTTP Basic 認証。
-- ステータスコード: 有効なトークン、失効したトークン、スコープが制限された有効なトークンに対するコードを確認します。
-  形式は正しいが無効なトークンを curl で送信し、コードを記録してください。コードをマッピングするのは、
-  常に同じ結果を意味する場合だけです。マッピングされていないコードは `unknown` と判定します。
+  - `basic_password`: トークンをパスワードとして使用する HTTP Basic 認証。`auth_param` に固定のユーザー名を設定するか、
+    ベンダーが空のユーザー名を受け入れる場合は空欄にします。
+- ステータスコード: 定義には、有効なトークン、失効したトークン、スコープが制限された有効なトークンに対する
+  コードが必要です。この段階では、形式は正しいが無効なトークンを curl で送信し、
+  そのコードを記録してください。コードをマッピングするのは、常に同じ結果を意味する場合だけです。マッピングされていないコードは
+  `unknown` と判定します。その他のコードは、[実際のトークンによるテスト](#4-test-with-a-live-token)で記録してください。
 - リージョン別ホストとセルフホスト版: ベンダーがリージョン別の API を運用している場合や、セルフホスト版で
   同じトークン形式を使用する場合、誤ったホストに送信すると有効なトークンでも `401` を受け取る可能性があります。
   異なるリージョンへの送信をテストしてください。その結果、`401` を `unknown` にマッピングする必要があり、失効を意味するほかのコードもない場合は、
@@ -63,7 +82,7 @@ stale: false
 ---
 token_type: "Acme API token"              # the rule id, verbatim
 class_name: "AcmeClient"
-partner_name: "acme"                      # metrics label, lowercase; optional, derived from class_name
+partner_name: "acme"                      # metrics label, lowercase; set explicitly
 endpoint: "https://api.acme.dev/v1/whoami"
 http_method: "get"
 auth_style: "bearer"
@@ -112,6 +131,13 @@ YAML の編集後に再生成する場合は、`FORCE=true` を設定してく�
    ベンダーの上限がそれより低くない限り、プロジェクトごとに毎分 50 リクエストとします。
 1. トークン種別と、新規の場合はエンドポイント URL を `doc/user/application_security/vulnerabilities/validity_check.md` に追加します。
    アルファベット順を保ち、ベンダー自身の製品名を使用してください。
+1. `bundle exec rake gitlab:secret_detection:validity_docs:compile` を実行して、
+   `doc/user/application_security/secret_detection/detected_secrets.md` の該当ルールの有効性チェック列を更新します。
+   古いままだと CI が失敗します。ルールに対応するテーブル行がないという警告が出た場合は、ルールの同期でまだ追加されていません。
+   行を手動で追加して、タスクを再実行してください。
+
+5 つすべての手動編集の例は、
+[Ionic のコミット](https://gitlab.com/gitlab-org/gitlab/-/commit/15cea7104606)を参照してください。
 
 生成されたクライアントや仕様テストを手で編集しないでください。`generated_client_sync_spec.rb` はすべての
 定義を再生成し、コミット済みファイルと異なる場合は失敗します。次を実行してください:

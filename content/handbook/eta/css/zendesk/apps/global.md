@@ -1,10 +1,10 @@
 ---
 title: 'Global アプリ'
 description: 'Zendesk Global アプリに関するドキュメント'
-upstream_path: "/handbook/eta/css/zendesk/apps/global/"
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-lastmod: "2026-08-19T13:20:01-05:00"
-translated_at: "2026-09-04T13:16:58+09:00"
+upstream_path: /handbook/eta/css/zendesk/apps/global/
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+lastmod: "2026-11-09T12:52:15-06:00"
+translated_at: "2026-11-14T08:38:42.466927+00:00"
 translator: codex
 stale: false
 ---
@@ -168,34 +168,6 @@ Support Ticket Attention Requests（STAR）は、GitLab チームメンバーが
 
 - 場所: チケットサイドバー
 - このアプリケーションは社内で開発され、[STAR プロジェクト](https://gitlab.com/gitlab-support-readiness/zendesk-global/apps/star)で確認できます。
-
-{{% /alert %}}
-
-## Support Ops Super App
-
-Customer Support Systems 関連の複数の操作を実行できる、プラグイン制御型アプリです。
-
-現在のプラグインは次のとおりです。
-
-- Namespace Lookup
-  > gitlab.com でネームスペースを検索できます。結果に基づく情報を表示します。GitLab Super App のものと関連していますが、こちらはより少ない情報を表示し、関連付けられた SFDC ID を表示します。
-- Project Lookup
-  > gitlab.com でプロジェクトを検索できます。結果に基づく情報を表示します。
-- Attempt Association
-  > プロダクトタイプが GitLab.com のチケットでは、プラグインのボタンをクリックすると、リクエスターを組織に自動関連付けしようとします。それが不可能な場合は、不可能な理由を詳しく示します。
-- Associate User
-  > Support Ops チケットで、メールアドレスを求められます。その後、現在のチケットの組織を使用して、指定したメールアドレスをその組織に関連付けます。
-- Deassociate user
-  > Support Ops チケットで、メールアドレスを求められます。その後、現在のチケットの組織を使用して、指定したメールアドレスとその組織の関連付けを解除します。
-- CMP Developers
-  > 組織に CMP がある場合、その組織の CMP 開発者（メールアドレス別）のリストを出力します。
-
-{{% alert title="技術的な詳細" color="primary" %}}
-
-- 場所: チケットサイドバー
-- ロールによる制限:
-  - Admin
-- このアプリケーションは社内で開発され、[Support Ops Super App プロジェクト](https://gitlab.com/gitlab-support-readiness/zendesk-global/apps/support-ops-super-app)で確認できます。
 
 {{% /alert %}}
 

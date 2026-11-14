@@ -2,11 +2,11 @@
 title: "多様性、インクルージョン、帰属意識"
 description: "多様性、インクルージョン、帰属意識は GitLab の成功に不可欠です。私たちはあらゆる方法で、私たちが行うすべてのことにそれを取り入れています。"
 upstream_path: "/handbook/company/culture/inclusion/"
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T14:35:46+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:59:32.041411+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-09T09:39:43-05:00"
 ---
 
 <!-- blank line -->
@@ -16,7 +16,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 多様性、インクルージョン、帰属意識は GitLab の成功に不可欠です。私たちはあらゆる方法で、私たちが行うすべてのことにそれを取り入れています。私たちは、グローバルに分散したすべての声が聞かれ歓迎される透明な環境を目指しています。私たちは、人々が毎日完全な自分自身として現れ、最高の能力で貢献できる環境を目指しています。そして、世界中で 10 万を超える組織が GitLab を活用していることから、私たちはユーザーを代表するチームを目指しています。
 
-多様性は、私たちの他の価値観、特に Collaboration、Efficiency、Results を補完します。
+多様性、インクルージョン、帰属意識は、私たちの運営原則の基盤である[卓越の文化](/handbook/company/operating-principles/#culture-of-excellence)の一部です。
 そして、リーダーシップにおける多様性は[イノベーションを支え](https://www.bcg.com/publications/2018/how-diverse-leadership-teams-boost-innovation)、[より良い意思決定を促進し](https://www.cloverpop.com/hacking-diversity-with-inclusive-decision-making-white-paper)、[財務成果を改善します](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/why-diversity-matters)。
 
 ## GitLab の多様性、インクルージョン、帰属意識のミッション {#gitlabs-diversity-inclusion-and-belonging-mission}
@@ -184,7 +184,7 @@ GitLab の[オールリモートカルチャー](/handbook/company/culture/all-r
 
 ### インクルーシブな言葉遣い {#inclusive-language}
 
-GitLab のバリューでは、'インクルーシブな言葉遣いをします。たとえば、"Hi guys" よりも "Hi everybody" や "Hi people" を使います。と記載しています。
+[対人関係における卓越性](/handbook/company/operating-principles/#culture-of-excellence)の一環として、私たちは皆さんに次のことを求めています：'インクルーシブな言葉遣いをしてください。たとえば、"Hi guys" よりも "Hi everybody" や "Hi people" を使ってください。
 
 ### TMRG - Team Member Resource Groups {#tmrgs---team-member-resource-groups}
 

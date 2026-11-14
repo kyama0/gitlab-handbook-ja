@@ -2,11 +2,11 @@
 title: "IT Compliance"
 description: "IT Complianceは GitLab 組織全体の複数の職能チームと連携して、財務報告とセキュリティに関連するさまざまな要件へのコンプライアンスを確保します。"
 upstream_path: "/handbook/business-technology/enterprise-applications/it-compliance/"
-upstream_sha: "74bb2fbdef354f57211295638ac65cfae7c767f8"
-translated_at: "2026-11-04T21:08:15.601207+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:59:32.041411+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-11-04T20:19:30+01:00"
+lastmod: "2026-11-12T21:30:15-05:00"
 ---
 ## 私たちについて {#who-we-are}
 
@@ -18,13 +18,13 @@ GitLab の IT Compliance機能は、会社として IT 一般コントロール�
   <div>
     <h5>Issue トラッカー</h5>
 
-  <a href="https://gitlab.com/gitlab-com/business-technology/it-compliance/it-compliance-issue-tracker/-/issues/new" class="btn btn-purple" style="width:180px;margin:5px;">IT Compliance Issue トラッカー</a>
+  <a href="https://gitlab.com/gitlab-com/gl-security/security-assurance/it-compliance/it-compliance-issue-tracker/-/issues/new" class="btn btn-purple" style="width:180px;margin:5px;">IT Compliance Issue トラッカー</a>
   </div>
  </div>
 
 IT Complianceは GitLab 組織全体の複数の職能チームと連携して働いています。マネジメントとビジネスチームとパートナーを組んでソリューションを実装しています。現在の主な焦点は対象範囲内の SOX アプリケーションに対する監査準備の特定と確保に関連していますが、BCP 計画、IAM アドバイザリー、その他のセキュリティイニシアチブへの支援にまで作業範囲を拡大し続ける必要があります。
 
-私たちの作業は [IT Compliance GitLab グループ](https://gitlab.com/gitlab-com/business-technology/it-compliance)で追跡できます。
+私たちの作業は [IT Compliance GitLab グループ](https://gitlab.com/gitlab-com/gl-security/security-assurance/it-compliance)で追跡できます。
 
 ## 私たちのミッション {#our-mission}
 
@@ -36,7 +36,7 @@ IT Complianceは GitLab 組織全体の複数の職能チームと連携して�
 
 ## 私たちの働き方 {#how-we-work}
 
-[IT Compliance](https://gitlab.com/groups/gitlab-com/-/boards/1802558?label_name[]=IT%20Compliance)ボードは一部の作業を追跡できる場所です。何かお手伝いが必要な場合や質問がある場合は、Issue に `IT Compliance` ラベルを追加してください。IT Complianceのどこに連絡すべきかわからない場合は、`@gitlab-com/business-technology/it-compliance` をタグ付けすると IT Complianceの誰かが対応します。
+[IT Compliance](https://gitlab.com/groups/gitlab-com/-/boards/1802558?label_name[]=IT%20Compliance)ボードは一部の作業を追跡できる場所です。何かお手伝いが必要な場合や質問がある場合は、Issue に `IT Compliance` ラベルを追加してください。IT Complianceのどこに連絡すべきかわからない場合は、`@gitlab-com/gl-security/security-assurance/it-compliance` をタグ付けすると IT Complianceの誰かが対応します。
 
 ## 私たちの業務 {#what-we-do}
 

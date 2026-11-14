@@ -2,9 +2,9 @@
 title: "Database Excellence ステージ"
 description: "Database Excellence セクションは、GitLab のデータベースがスケールにおいて確実に稼働することを保証しながら、すべてのデータストアにわたるデータアーキテクチャ、配置、ライフサイクル管理についてチームが情報に基づいた意思決定を行えるようにします。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/
-upstream_sha: dae94b0752e749cce0ad81e818ba66cae5ba4a11
-lastmod: "2026-10-16T11:46:58+13:00"
-translated_at: "2026-10-19T10:15:57Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+lastmod: "2026-11-10T13:14:27+13:00"
+translated_at: "2026-11-14T08:44:55+00:00"
 translator: codex
 stale: false
 ---
@@ -35,13 +35,13 @@ GitLab.com と GitLab を自ら運用するお客様の両方で、GitLab のデ
 
 ### Self-Managed Database Experience {#self-managed-database-experience}
 
-[Self-Managed Database Experience](/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/)グループは、Self-Managed のお客様に、データベースの状態の可視性、より高速なデータベースマイグレーション、明確なアップグレード経路を提供します。
+[Self-Managed Database Experience](/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/)グループは、Self-Managed のお客様に、データベースの状態の可視性、より高速なデータベースマイグレーション、アップグレードにかかる時間の予測を提供します。
 
 優先事項:
 
 * アップグレード前にデータベースの整合性を、アップグレードの間にデータベースの健全性をチェックする
 * すべてのマイグレーションを、お客様に届く前にデータを使ってテストする
-* 管理者自身のインスタンスのデータに基づき、アップグレード経路を示す
+* インスタンス自体のデータに基づき、アップグレードにかかる時間を予測する
 * マイグレーションを依存関係の順序で実行し、中間バージョンで停止することなくアップグレードを短縮する
 
 {{< group-by-slugs nbelokolodov amsingh6 imanpalsingh krasimirangelov >}}

@@ -2,11 +2,11 @@
 title: AI ツール選択
 description: 業務に最適な AI ツールを選択するためのガイドライン
 upstream_path: /handbook/support/ai/ai-tool-selection/
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T06:06:15+09:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:27:14.053995+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-17T14:14:19-07:00"
+lastmod: "2026-11-12T16:54:47-05:00"
 ---
 
 GitLab サポートは、さまざまな機能と専門性を持つ複数の AI ツールへのアクセスを提供しています。このガイドは、特定のタスク要件に基づいて適切なツールを選択するのに役立ちます。
@@ -244,7 +244,7 @@ Zoom 組み込みの AI アシスタントで、ミーティングの文字起�
 
 ## サポートのエージェント型ハーネス
 
-通常、[Duo CLI](https://docs.gitlab.com/cli/duo/cli/) または `[OpenCode](https://opencode.ai/)` を [Model Context Protocol (MCP)](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/) を介して GitLab やその他のシステムに接続しており、チケット業務、調査、ワークフロー自動化向けに調整されています。
+サポートのエージェント型ハーネスは通常、[Duo CLI](https://docs.gitlab.com/cli/duo/cli/) または [OpenCode](https://opencode.ai/)を [Model Context Protocol (MCP)](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/)を介して GitLab やその他のシステムに接続し、チケット業務、調査、ワークフロー自動化向けに調整されています。
 
 ### duo-helper-image
 

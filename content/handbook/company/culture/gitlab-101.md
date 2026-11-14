@@ -2,21 +2,21 @@
 title: "GitLab CEO 101"
 description: "CEO と新入社員の月次 GitLab CEO 101 コールがあります。"
 upstream_path: "/handbook/company/culture/gitlab-101/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T04:47:33+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:59:32.041411+00:00"
 translator: "claude"
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-09T09:39:43-05:00"
 ---
 
 ## GitLab 101 セッション {#gitlab-101s}
 
 ### 新入社員との CEO AMA {#ceo-ama-with-new-hires}
 
-CEO と新入社員の四半期ごとの GitLab CEO AMA があります。これは参加できない人のために録画される Zoom コールです。以下に示す歴史および価値観へのリンクを読み、カレンダー招待に含まれるメモドキュメントに質問を追加した上で参加してください。個人的な性質の質問や家族・友人に関する質問も歓迎され、奨励されます（例: お気に入りの食べ物は？お気に入りの旅行先は？）コールは新入社員からの質問によって進行します。
+CEO と新入社員の四半期ごとの GitLab CEO AMA があります。これは参加できない人のために録画される Zoom コールです。以下に示す歴史および運営原則へのリンクを読み、カレンダー招待に含まれるメモドキュメントに質問を追加した上で参加してください。個人的な性質の質問や家族・友人に関する質問も歓迎され、奨励されます（例: お気に入りの食べ物は？お気に入りの旅行先は？）コールは新入社員からの質問によって進行します。
 
 1. GitLab の歴史についての質問 [/handbook/company/history/](/handbook/company/history/)
-1. 私たちの価値観についての質問
+1. 私たちの[運営原則](/handbook/company/operating-principles/)についての質問
 1. チーム構成 [/handbook/company/structure/](/handbook/company/structure/) または [組織図](https://comp-calculator.gitlab.net/org_chart)
 1. 働き方 [/handbook](/handbook)
 

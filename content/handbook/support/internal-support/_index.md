@@ -2,11 +2,11 @@
 title: GitLab サポートとの連携
 description: GitLab チームメンバーが GitLab サポートと連携する方法とサポートに連絡する最善の方法。
 upstream_path: /handbook/support/internal-support/
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-translated_at: "2026-11-07T00:40:40Z"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+translated_at: "2026-11-14T08:25:05+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-05T16:03:26-05:00"
+lastmod: "2026-11-12T16:52:36-05:00"
 ---
 
 ## 概要 {#overview}
@@ -49,11 +49,11 @@ GitLab サポートの Slack チャンネルは、GitLab サポートのさま�
 
 顧客が技術サポートを必要としてあなたに連絡してきた場合、以下のオプションが利用可能です。
 
-1. （推奨）多くの場合、[サポートポータル経由でチケットを開く](https://gitlab.zendesk.com) ように案内してください。私たちの顧客に技術サポートを提供することがサポートの主要な機能であり、有料ユーザーとして顧客は私たちにアクセスする権利があります。このオプションは、顧客が自分自身の問題とニーズを最もよく説明できる立場にあるため推奨されます。サポートに直接連絡することがほぼ常に最も早い回答への道であることを顧客が理解していることを確認してください。
+1. （推奨）多くの場合、[サポートポータル経由でチケットを開く](https://support.gitlab.com/hc/en-us/requests/new) ように案内してください。私たちの顧客に技術サポートを提供することがサポートの主要な機能であり、有料ユーザーとして顧客は私たちにアクセスする権利があります。このオプションは、顧客が自分自身の問題とニーズを最もよく説明できる立場にあるため推奨されます。サポートに直接連絡することがほぼ常に最も早い回答への道であることを顧客が理解していることを確認してください。
 
 1. 顧客を **GitLab サポートポータル** に案内する際、[サポート連絡先として追加されている](https://about.gitlab.com/support/managing-support-contacts/) ことを確認するように知らせてください。そうしないと、チケットが自動的にクローズされる可能性があります（ライセンスと更新のチケットを除く）。これに関連して、顧客の同僚もサポートチケットを送信できるようにしたい場合、管理対象連絡先のリストも提供する必要があります。顧客は [連絡先の管理](https://about.gitlab.com/support/managing-support-contacts/)の手順に従ってサポート連絡先を追加または管理できます。有効なサポートポータルアカウントを持つことを顧客に促すことで、サポートプロセスが合理化され、顧客と私たちのサポートチームの双方にとってよりスムーズな体験が保証されることに注意してください。
 
-1. ライセンス、サブスクリプション、更新、トライアル、トライアル延長、一時ライセンスなどの調整を依頼するには、[LnR 社内リクエストを開く](#internal-requests) ことができます（[詳細は下記](#internal-requests)）。
+1. ライセンス、サブスクリプション、更新、トライアル、トライアル延長、一時ライセンスなどの調整を依頼するには、[L&R 社内リクエストを開く](#internal-requests) ことができます（[詳細は下記](#internal-requests)）。
     - **注:** 顧客がすでにライセンス/サブスクリプションを所有しており、それを適用する際にエラーが発生している場合は、顧客が直接私たちにサポートチケットを開くのが最善です。
     - **注:** フォームを送信するには、[Zendesk Light Agent アカウント](#requesting-a-zendesk-light-agent-account)が必要です。すべての GitLab チームメンバーがリクエストできます。このアカウントにより、チームメンバーは Zendesk で顧客チケットを表示し、サポートチームにメモを残すこともできます。
 
@@ -62,7 +62,7 @@ GitLab サポートの Slack チャンネルは、GitLab サポートのさま�
      - 組織のサポート連絡先の追加。この場合、顧客は自分でサポートチームに直接連絡する必要があります。
      - L&R 社内リクエスト。
 
-外部の顧客は社内リクエストの cc に含めるべきではありません。顧客とのコミュニケーションは、顧客自身が開始した [サポートチケット](https://gitlab.zendesk.com)、または顧客の代理で開かれたチケットを通じてのみ提供されます。
+外部の顧客は社内リクエストの cc に含めるべきではありません。顧客とのコミュニケーションは、顧客自身が開始した [サポートチケット](https://support.gitlab.com/hc/en-us/requests/new)、または顧客の代理で開かれたチケットを通じてのみ提供されます。
 
 #### サポートは Slack ではアクションを実行しません {#support-does-not-action-out-of-slack}
 
@@ -75,7 +75,7 @@ GitLab サポートの Slack チャンネルは、GitLab サポートのさま�
 - 私たちが現在の顧客の問題を解決しようとしているとき、Zendesk で解決済みのチケットを頻繁に検索します。Slack のコンテンツは 90 日後に削除されるため、顧客の問題やその解決策が Zendesk チケットの代わりに Slack で議論されると、貴重な情報が失われる可能性があります。
 - 私たちは顧客の技術サポート問題とその解決策のすべての記録を一箇所（Zendesk）に保管したいと考えています。
 
-**既存の** チケットまたは社内リクエストに追加の注意を向けるよう依頼したい場合は、[Support Ticket Attention Request フォーム](https://gitlab-com.gitlab.io/support/toolbox/forms_processor/support_escalation/)（[ハンドブックエントリー](/handbook/support/internal-support/support-ticket-attention-requests)）を使用してください。
+**既存の** チケットまたは社内リクエストに追加の注意を向けるよう依頼したい場合は、Zendesk の `STAR` アプリを使用して [Support Ticket Attention Request（STAR）](/handbook/support/internal-support/support-ticket-attention-requests/#via-the-zendesk-star-app)を送信してください。
 
 ### アカウントまたはログインの問題のある GitLab.com ユーザーのサポートを依頼する {#requesting-support-for-gitlabcom-users-that-have-account-or-login-issues}
 
@@ -157,7 +157,7 @@ GitLab チームメンバーが GitLab.com の Ultimate ライセンスを希望
 社内リクエスト（IR）には通常 2 つのタイプがあります。
 
 1. Customer Support 社内リクエスト
-詳細は [無償サポート](../gratis-support/)を参照してください。
+詳細は [無償サポート](/handbook/support/gratis-support/)を参照してください。
 
 1. L&R 社内リクエスト
 ライセンス、サブスクリプション、トライアルに関するすべての社内リクエストは、[グローバルサポート](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780) または [米国政府サポート](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588)のいずれかの GitLab Support Internal Zendesk インスタンスを使用して提出する必要があります。`Customer Support Internal Request` ではなく、`L&R Internal Request` フォームを選択していることを確認してください。これらは別々のキューにルーティングされ、そうしないとあなたや顧客、見込み顧客にとって遅延が発生する可能性があります。
@@ -423,7 +423,7 @@ Infrastructure チームが GitLab.com の管理者であり、製品の調整�
 ### トライアルおよび見込み顧客のサポート {#trials-and-prospect-support}
 
 優先見込み顧客に関する情報については、
-[Priority Prospects](../priority_prospects)を参照してください。
+[見込み顧客向けの無償サポート](/handbook/support/priority_prospects/)を参照してください。
 
 ### 顧客が GitLab.com サブスクリプションの適用に困っている {#my-customer-is-having-trouble-applying-their-gitlabcom-subscription}
 

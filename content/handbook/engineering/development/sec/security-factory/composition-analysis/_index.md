@@ -2,11 +2,11 @@
 title: Application Security Testing, Composition Analysis
 description: "GitLab の Composition Analysis グループは、コンテナスキャン、依存関係スキャン、ライセンスコンプライアンスを行うソリューションの開発を担当しています。"
 upstream_path: /handbook/engineering/development/sec/security-factory/composition-analysis/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T22:50:04+09:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:44:55+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-17T10:24:47+02:00"
+lastmod: "2026-11-09T10:45:45+01:00"
 ---
 
 ## Composition Analysis
@@ -234,7 +234,7 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 1. [アナライザー脆弱性レポート](https://gitlab.com/groups/gitlab-org/security-products/analyzers/-/security/vulnerabilities/?state=DETECTED&severity=CRITICAL,HIGH&projectId=13150952,15369510,24673064,52241202,6126012,9450192&activity=STILL_DETECTED)
     - レポートを手動で設定するには、すべての[共有](#shared)、[コンテナスキャン](#container-scanning)、[依存関係スキャン](#dependency-scanning)プロジェクトを選択し、`Still detected` アクティビティフィルターと `Needs Triage` ステータスを適用します。
-1. [License-db 脆弱性レポート](https://gitlab.com/groups/gitlab-org/security-products/license-db/-/security/vulnerabilities/?state=DETECTED&severity=CRITICAL,HIGH&projectId=39193358,39229232,39233486,39298809,39622674,40857363,45266022&activity=STILL_DETECTED)
+1. [License-db 脆弱性レポート](https://gitlab.com/groups/gitlab-org/security-products/license-db/-/security/vulnerabilities/?state=DETECTED&severity=CRITICAL,HIGH&projectId=39193358,39229232,39233486,39298809,39622674,40857363,45266022,88460680&activity=STILL_DETECTED)
     - レポートを手動で設定するには、すべての [license-db](#license-db) プロジェクトを選択し、`Still detected` アクティビティフィルターと `Needs Triage` ステータスを適用します。
 
 各項目について調査し、[却下](#dismissing-a-vulnerability)または[確認](#confirming-a-vulnerability)します。確かな脅威があるか不明な場合は、[エスカレート](#creating-security-issues)して、私たちの[アプリケーションセキュリティチーム](/handbook/security/product-security/security-platforms-architecture/application-security/)に確認してください。
@@ -420,6 +420,7 @@ Composition Analysis グループはスキャン機能を提供するために�
 - [license-feeder](https://gitlab.com/gitlab-org/security-products/license-db/license-feeder)
 - [license-interfacer](https://gitlab.com/gitlab-org/security-products/license-db/license-interfacer)
 - [license-processor](https://gitlab.com/gitlab-org/security-products/license-db/license-processor)
+- [package-versions-ingester](https://gitlab.com/gitlab-org/security-products/license-db/package-versions-ingester)
 - [schema](https://gitlab.com/gitlab-org/security-products/license-db/schema)
 - [PMDB tools](https://gitlab.com/gitlab-org/security-products/license-db/pmdb-tools)
 - [Static Reachability Modules Scraper](https://gitlab.com/gitlab-org/security-products/license-db/static-reachability-modules-scraper)

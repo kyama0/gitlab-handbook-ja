@@ -3,9 +3,9 @@ title: "モジュール化された機能の OpenAPI 仕様の公開"
 description: "モジュール化された機能を担当するチームが OpenAPI 3.1 仕様を公開 API リファレンスに掲載し、内部オペレーションやドキュメントを除外するための手順です。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/openapi_publishing/
-upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
-lastmod: "2026-11-02T12:24:35Z"
-translated_at: "2026-11-02T21:17:59+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+lastmod: "2026-11-12T14:49:04Z"
+translated_at: "2026-11-14T08:49:10+00:00"
 translator: codex
 stale: false
 ---
@@ -33,10 +33,10 @@ stale: false
 
 | # | 手順 | ファイル | 実施者 |
 |-|-|-|-|
-| 1 | API 領域ごとに 1 つのドキュメントを作成する | `openapi/*.yaml` | チーム |
+| 1 | アセンブリごとに 1 つのドキュメントを作成する | `openapi/<assembly>-v1.yaml` | チーム |
 | 2 | 公開ドキュメントに絶対 `servers` URL を設定する | 公開ドキュメント | チーム |
 | 3 | ドキュメントごとに `apis` エントリーを 1 つ追加する | `openapi/redocly.yaml` | チーム |
-| 4 | 内部オペレーションに印を付ける | オペレーションの `x-gitlab-internal` | チーム |
+| 4 | 内部オペレーションに印を付ける | オペレーションの `x-internal` | チーム |
 | 5 | 各公開ドキュメントを登録する | api-docs の `src/config/registrations.json` | チームが MR を作成します。API Platform のコードオーナーが承認します。Maintainer がマージします。 |
 | 6 | トリガートークンを作成する | infra-mgmt の `environments/gitlab-com/project_api_docs_trigger_tokens.tf` | チームが MR を作成します。infra-mgmt 承認者が承認します。Atlantis が適用します。 |
 | 7 | `api-docs-refresh` を組み込む | `.gitlab-ci.yml` | チーム |
@@ -49,18 +49,18 @@ stale: false
 具体例は Artifact Registry です。
 あくまで例です。そのリポジトリは `gitlab-org/ops/artifact-registry` です。
 
-## 手順 1. API 領域ごとに 1 つのドキュメントを作成する {#step-1-write-one-document-per-api-surface}
+## 手順 1. アセンブリごとに 1 つのドキュメントを作成する {#step-1-write-one-document-per-assembly}
 
-各ドキュメントを、コンポーネントのリポジトリの `openapi/` に置いてください。
+受信 HTTP エンドポイントを持つ各アセンブリには、コンポーネントのリポジトリの `openapi/<assembly>-v1.yaml` に 1 つのドキュメントを置きます。
+`<assembly>` は、`bench.yaml` 内のアセンブリの `name` です。
 ドキュメントが複数のアセンブリにまたがることはありません。
 コンポーネントのリポジトリには複数のアセンブリを置けるため、それらのドキュメントは `openapi/` を共有します。
-ドキュメント名は、提供するアセンブリ、記述する API 領域、メジャーバージョンに基づいて付けてください。
+`bench scaffold` は `bench.yaml` のルートからドキュメントの初期内容を生成し、`bench build` はドキュメントがない場合に書き込みます。
+名前を変更しないでください。変更すると、`bench build` が新しい `openapi/<assembly>-v1.yaml` を書き込みます。
+ドキュメントの残りの部分をどのように作成するかは、自分で選択します。
 
-- アセンブリの主要な API 領域には `<assembly>-v<major>.yaml` を使用します。
-- 追加の各領域には `<assembly>-<surface>-v<major>.yaml` を使用します（例: `<assembly>-internal-v1.yaml`）。
-
-`<assembly>` は、`bench.yaml` 内のアセンブリの `name` です。
-各ドキュメントをどのように生成するかは、自分で選択します。
+内部 API など、別の API 領域を追加するには、同じコンポーネントのリポジトリに別のアセンブリのひな形を生成してください。
+そのアセンブリには独自のドキュメントが用意され、独自のリスナーを持つ独自のサービスとしてデプロイされます。
 
 ## 手順 2. 公開ドキュメントに絶対 `servers` URL を設定する {#step-2-give-the-public-document-an-absolute-servers-url}
 
@@ -86,8 +86,8 @@ servers:
 
 `bench scaffold` は `openapi/redocly.yaml` を作成します。
 このファイルは、完全なリリースタグで指定した共有ルールセットを拡張します。
-`openapi/` の各ドキュメントに対し、`apis` エントリーを 1 つ追加してください。
-次は、Artifact Registry の 2 つのドキュメントを追加した後のファイルです。
+`openapi/` の各ドキュメントに対し、アセンブリごとに `apis` エントリーを 1 つ追加してください。
+次は、アセンブリを 1 つ持つコンポーネントのファイルです。
 
 ```yaml
 # openapi/redocly.yaml
@@ -96,10 +96,8 @@ servers:
 extends:
   - https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/raw/v5.37.0/openapi-ruleset.yaml
 apis:
-  management@v1:
-    root: v1.yaml
-  gitlab@v1:
-    root: gitlab-v1.yaml
+  <assembly>@v1:
+    root: <assembly>-v1.yaml
 ```
 
 後でルールセットの固定バージョンを変更する場合は、マイナータグではなく、必ず完全なリリースタグを使用してください。
@@ -108,19 +106,19 @@ apis:
 
 ## 手順 4. 内部オペレーションに印を付ける {#step-4-mark-internal-operations}
 
-内部オペレーションには、オペレーションオブジェクトの `x-gitlab-internal: true` で印を付けてください。
+内部オペレーションには、オペレーションオブジェクトの `x-internal: true` で印を付けてください。
 
 ```yaml
 paths:
   /example:
     get:
-      x-gitlab-internal: true
+      x-internal: true
       # ... rest of the operation
 ```
 
-暫定ルール: api-docs はドキュメント全体を公開するため、この印ではまだ何も非表示になりません。
-api-docs のフィルターが提供されるまでは、内部オペレーションを別のドキュメントに分け、そのドキュメントを `registrations.json` に登録しないでください。
-Artifact Registry では、`gitlab-v1.yaml` でこのようにしています。
+API リファレンスの UI は、印を付けたオペレーションを非表示にします。
+オペレーションは公開ドキュメントに残るため、引き続きリントの対象となり、`bench.yaml` とも比較されます。
+内部 API 全体をリファレンスから除外するには、独自のアセンブリに配置し（手順 1）、そのアセンブリのドキュメントを登録しないでください（手順 5）。
 [内部オペレーションとドキュメント](#internal-operations-and-documents)を参照してください。
 
 ## 手順 5. 各公開ドキュメントを登録する {#step-5-list-each-public-document}
@@ -244,7 +242,7 @@ include:
   - component: $CI_SERVER_FQDN/gitlab-com/gl-infra/common-ci-tasks/api-docs-refresh@v5.38
     inputs:
       spec_paths:
-        - openapi/v1.yaml
+        - openapi/<assembly>-v1.yaml
 ```
 
 他の common-ci-tasks コンポーネントと同じバージョンを使用してください。
@@ -265,14 +263,12 @@ Artifact Registry の場合は、`https://api.gitlab.com/rest/#artifact-central`
 
 内部用であることは、秘密であることを意味しません。
 upstream リポジトリは公開されているため、印を付けたオペレーションは誰でも読めます。
-この印は、公開 API リファレンスからそれらを除外するだけです。
+この印は、レンダリングされた API リファレンスでそれらを非表示にするだけです。公開ドキュメントには引き続き含まれます。
 
-内部オペレーションには、`x-gitlab-internal: true` で印を付けます（手順 4）。
-api-docs のフィルターが提供されると、api-docs は公開ドキュメントから印付きのオペレーションを除去してから公開します。
-<!-- TODO: link the api-docs filter issue once it exists. -->
+内部オペレーションには、`x-internal: true` で印を付けます（手順 4）。
 
-内部専用のドキュメント全体は、`registrations.json` にも `spec_paths` にも登録しません。
-Artifact Registry の `gitlab-v1.yaml` が一例です。
+内部 API 全体は、独自のアセンブリに配置します（手順 1）。
+そのアセンブリのドキュメントは、`registrations.json` にも `spec_paths` にも登録しません。
 
 ## 公開を行わない場合 {#opting-out}
 

@@ -3,11 +3,11 @@ title: "プロダクトアクセシビリティグループ"
 description: "アクセシビリティガイドラインへの GitLab プロダクトの準拠を確保します"
 status: active
 upstream_path: "/handbook/company/working-groups/product-accessibility/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:56:34+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-16T09:24:13+02:00"
+lastmod: "2026-11-10T12:33:30+01:00"
 ---
 
 ## 属性
@@ -56,7 +56,6 @@ lastmod: "2025-10-16T09:24:13+02:00"
 | ------------------ | -------------------------- | ---------------------------------------------|
 | エグゼクティブスポンサー | Tim Zallmann               | VP of Engineering, Core Development          |
 | ファシリテーター        |                            |                                              |
-| ファンクショナルリード   | Paulina Sędłak-Jakubowska  | Senior Frontend Engineer, Create:Source Code |
 | ファンクショナルリード   | Rahul Chanila              | Senior Frontend Engineer, Package            |
 | ファンクショナルリード   | Jeremy Elder               | Staff Product Designer, Manage:Foundations   |
 | メンバー             | Lisa Falcone               | Senior Paralegal, Legal & Corporate Affairs  |

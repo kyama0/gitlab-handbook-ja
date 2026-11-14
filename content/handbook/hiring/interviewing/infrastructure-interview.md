@@ -2,11 +2,11 @@
 title: "GitLab での面接 - Infrastructure"
 description: "面接の準備方法に関するヒント - Infrastructure"
 upstream_path: /handbook/hiring/interviewing/infrastructure-interview/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T06:24:27+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:38:42.466927+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-13T11:13:25+01:00"
 ---
 
 ## Infrastructure で最もよく募集されているロール {#most-common-open-roles-in-infrastructure}
@@ -77,6 +77,8 @@ GitLab のロールに応募する際は、注目してもらえるように、�
 - [GitLab.com の解決済み・未解決インシデント](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=incident&first_page_size=20)
 
 面接するチームについてもっと理解できるよう、各チーム面接の前にインタビュアー（GitLab プロフィールを含む）に関する情報を Guide 経由で共有します。
+
+Developer Experience のロールには、過去の仕事を通じて技術的専門知識を掘り下げる、60 分間の[技術的な深さを評価する面接](/handbook/engineering/infrastructure-platforms/developer-experience/technical-depth-interview/)も含まれます。
 
 タスクの指示／最終目標が明確でない場合は、遠慮なく確認を求めてください。それに加えて、私たちのエンジニアへの質問をいつでも準備してください！技術面接から 3 営業日以内にメールでフィードバックを受け取ることが期待できます。
 

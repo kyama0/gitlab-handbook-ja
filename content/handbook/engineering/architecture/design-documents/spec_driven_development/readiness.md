@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/readiness/"
-upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
-lastmod: "2026-11-02T11:02:28+11:00"
-translated_at: "2026-11-02T21:11:17+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+lastmod: "2026-11-11T19:46:14+01:00"
+translated_at: "2026-11-14T08:49:10+00:00"
 translator: "codex"
 stale: false
 ---
@@ -58,7 +58,7 @@ Implementation ウィジェットは、ゼロも含めた数値のスコアが�
 
 インジケーターバーは、0–100 の範囲に制限されたスコアに応じて伸びるため、スコアが 85 の場合と 100 の場合では見た目が異なります。レベル、色、ラベルには、引き続き上記のしきい値を適用します（[マージリクエスト 263153](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263153)）。
 
-**Readiness details** は、**Readiness** というタイトルのオーバーレイドロワーを開きます。タイトルは、どのスコア状態でも同じです。フィードバックがある場合は、ドロワーの本文で **How to improve readiness** という見出しの下に表示するため、100% の状態など、状態ごとの他のコンテンツを表示する余地を残せます（[マージリクエスト 263908](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263908)）。ドロワーは独自のクエリでレンダリング済みのフィードバックを取得します。ドロワーを閉じている間はクエリを実行せず、その後はキャッシュから取得します。スコアが変わるか、Workplan の実行が完了するとフィードバックを再取得するため、ページを再読み込みしなくても最新のフィードバックをドロワーに表示します（[マージリクエスト 265399](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265399)、[マージリクエスト 265706](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265706)）。フィードバックの読み込み中は、ドロワーにスケルトンを表示します。読み込みに失敗すると、**Try again** を含むインラインエラーを表示します。準備状況の説明はドロワーのフッターに固定します（[マージリクエスト 264391](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264391)）。準備状況のレベルはウィジェット内に維持します。ドロワーを開いても、ワークアイテムのサイズや URL は変わりません。閉じると、開くきっかけとなった要素にフォーカスを戻します（[マージリクエスト 259135](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259135)）。
+**Readiness details** は、**Readiness** というタイトルのオーバーレイドロワーを開きます。タイトルは、どのスコア状態でも同じです。フィードバックがある場合は、ドロワーの本文で **How to improve readiness** という見出しの下に表示するため、状態ごとの他のコンテンツを表示する余地を残せます（[マージリクエスト 263908](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263908)）。フィードバックが空で読み込みが成功した場合、ドロワーには **Ready to implement** と短い説明を表示します（[マージリクエスト 267040](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267040)）。ドロワーは独自のクエリでレンダリング済みのフィードバックを取得します。ドロワーを閉じている間はクエリを実行せず、その後はキャッシュから取得します。スコアが変わるか、Workplan の実行が完了するとフィードバックを再取得するため、ページを再読み込みしなくても最新のフィードバックをドロワーに表示します（[マージリクエスト 265399](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265399)、[マージリクエスト 265706](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/265706)）。フィードバックの読み込み中は、ドロワーにスケルトンを表示します。読み込みに失敗すると、**Try again** を含むインラインエラーを表示します。準備状況の説明はドロワーのフッターに固定します（[マージリクエスト 264391](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264391)）。準備状況のレベルはウィジェット内に維持します。ドロワーを開いても、ワークアイテムのサイズや URL は変わりません。閉じると、開くきっかけとなった要素にフォーカスを戻します（[マージリクエスト 259135](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259135)）。
 
 スコアが存在しない場合、UI はまだ、評価中、失敗、キャンセル、未評価の状態を区別しません。専用の `readinessScoreStatus` フィールドが、[マージリクエスト 262079](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/262079)で提案されており、UI は [Issue 633076](https://gitlab.com/gitlab-org/gitlab/-/work_items/633076)で追跡しています。
 
@@ -77,6 +77,5 @@ Implementation ウィジェットは、ゼロも含めた数値のスコアが�
 ## 未解決の質問 {#open-questions}
 
 - 計画生成前にもスコアリングするかどうかと、計画の実行とは独立してスコアリングに対応する方法。
-- フィードバックがないスコアの表示方法。スコアリング段階は空のフィードバックを書き込めるようになりましたが、ドロワーにはまだその場合の本文がありません（[Issue 633996](https://gitlab.com/gitlab-org/gitlab/-/work_items/633996)）。
 - 引き渡し前の警告に対するデフォルトのしきい値。
 - スコアの履歴を保存するか、現在のスコアのみを保存するか。

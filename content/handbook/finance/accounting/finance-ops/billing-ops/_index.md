@@ -1,11 +1,11 @@
 ---
 title: "Billing Operations"
-upstream_path: "/handbook/finance/accounting/finance-ops/billing-ops/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:41:07+09:00"
+upstream_path: /handbook/finance/accounting/finance-ops/billing-ops/
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:38:42.466927+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-11-12T21:34:31+08:00"
 ---
 
 Billing Operationsハンドブックへようこそ
@@ -26,18 +26,17 @@ Billing OperationsチームはRevenue Operations組織の一部です。私た�
 ## チーム紹介
 
 - [Tim Cheeney](https://gitlab.com/tcheeney) - Director, Billing & Collections (Global)
-- [Josephine Hararah](https://gitlab.com/josephinehararah) - Senior Manager, Billing Operations (Global)
-- [Kinga Polgardi](https://gitlab.com/kingapolgardi) - Manager, Billing Operations (EMEA and APAC)
-- [Cristine Sotomango Marquardt](https://gitlab.com/csotomango) - Manager, Billing Operations (AMER)
+- [Josephine Hararah](https://gitlab.com/josephinehararah) - Sr. Manager, Billing Global Process Owner (Global)
+- [Kinga Polgardi](https://gitlab.com/kingapolgardi) - Manager, Billing Operations (Global)
+- [Cristine Sotomango Marquardt](https://gitlab.com/csotomango) - Lead Billing Operations Analyst, GPO (Global)
+- [Alan Murray](https://gitlab.com/a_murray) - Manager, Billing Operations GPO (Global)
 - [Karen McKinney](https://gitlab.com/k.mckinney) - Senior Billing Operations Analyst (AMER)
-- [Ausha Saptouw](https://gitlab.com/aushas) - Senior Billing Operations Analyst (EMEA)
 - [Laura Robins](https://gitlab.com/laurarobins) - Senior Billing Operations Analyst (EMEA)
-- [Nicole Ann Garcia](https://gitlab.com/nprecilla) - Billing Operations Analyst (EMEA/APAC)
-- [Christian Willis](https://gitlab.com/christianwillis) - Senior Billing Operations Analyst (AMER)
-- [Diana Quitevis](https://gitlab.com/dquitevis) - Senior Billing Operations Analyst (AMER)
-- [Bernie Jones](https://gitlab.com/berniej) - Billing Operations Analyst (EMEA/APAC)
-- [Francisco da Silva](https://gitlab.com/franciscodasilva) - Billing Operations Associate (EMEA/APAC)
-- [Joel Javier](https://gitlab.com/jjavier3) - Billing Operations Analyst (EMEA/APAC)
+- [Nicole Ann Garcia](https://gitlab.com/nprecilla) - Billing Operations Analyst (APAC)
+- [Diana Quitevis](https://gitlab.com/dquitevis) - Lead Billing Operations Analyst (AMER)
+- [Bernie Jones](https://gitlab.com/berniej) - Billing Operations Analyst (EMEA)
+- [Francisco da Silva](https://gitlab.com/franciscodasilva) - Billing Operations Analyst (EMEA)
+- [Philbert Lin](https://gitlab.com/philbertlin) - Billing Operations Analyst (AMER)
 
 *BillingチームはSales、Deal Desk、Accounts Receivable、Revenue Operationsと緊密に連携しています。*
 

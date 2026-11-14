@@ -1,11 +1,11 @@
 ---
 title: DevOps エンジニアリング
 upstream_path: /handbook/engineering/devops/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T14:50:46.277923+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T08:41:43+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-10T12:33:30+01:00"
 ---
 
 ## ビジョン {#vision}
@@ -216,10 +216,10 @@ GitLab アプリケーションは、PostgreSQL データベース、Redis、Sid
 | GitLab K8S Agent  | 特定のチームでの集中型 | @nicholasklick<br />Configure |  |
 | GitLab Pages | 特定のチームでの集中型 | @armin.pasalic<br />[Planner Intelligence](/handbook/engineering/devops/plan/planner-intelligence/) |  |
 | GitLab Rails  | 分散化 |  | 各コントローラーの DRI は、クラスで指定された機能カテゴリーによって決定されます。[app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/controllers)および [ee/app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/controllers) |
-| GitLab Shell | 特定のチームでの集中型 | @andrevr<br />[Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) | [参照](/handbook/product/categories/#source-code-group-1) |
+| GitLab Shell | 特定のチームでの集中型 | [Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) | [参照](/handbook/product/categories/#source-code-group-1) |
 | HAproxy  | 特定のチームでの集中型 |  [Infrastructure](/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/) |  |
 | Jaeger  | 特定のチームでの集中型 | @dawsmith<br />Infrastructure:Observability | Observability チームが[最初の実装/デプロイ](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/210)を行いました。 |
-| LFS  | 特定のチームでの集中型 | @andr3<br />[Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) |  |
+| LFS  | 特定のチームでの集中型 | [Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) |  |
 | Logrotate  | 特定のチームでの集中型 | @plu8<br />[Distribution](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/) | Distribution チームはバージョンのパッケージングとアップグレードに責任があります。機能の問題はベンダーに向けられる可能性があります。 |
 | Mattermost  | 特定のチームでの集中型 | @plu8<br />[Distribution](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/) | Distribution チームはバージョンのパッケージングとアップグレードに責任があります。機能の問題はベンダーに向けられる可能性があります。 |
 | MinIO  | 分散化 | | 一部の Issue は、グループ固有の Issue に分解できます。一部の Issue は、DRI を見つけるためにユーザーまたは開発者の影響を識別するためにより多くの作業が必要な場合があります。 |
@@ -235,7 +235,7 @@ GitLab アプリケーションは、PostgreSQL データベース、Redis、Sid
 | Redis  | 分散化 |   | DRI は Sidekiq と類似しており、クラスで指定された機能カテゴリーによって決定されます。[app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/workers)および [ee/app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/workers) |
 | Sentry  | 分散化 |   | DRI は GitLab Rails と類似しており、クラスで指定された機能カテゴリーによって決定されます。[app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/controllers)および [ee/app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/controllers) |
 | Sidekiq  | 分散化 |   | 各ワーカーの DRI は、クラスで指定された機能カテゴリーによって決定されます。[app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/workers)および [ee/app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/workers) |
-| Workhorse  | 特定のチームでの集中型 | @andrevr<br />[Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) |  |
+| Workhorse  | 特定のチームでの集中型 | [Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) |  |
 
 ## 顧客のサポート {#supporting-customers}
 

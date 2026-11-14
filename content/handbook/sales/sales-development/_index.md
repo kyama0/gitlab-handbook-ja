@@ -2,9 +2,9 @@
 title: Sales Development
 description: "このページの目的は、Sales Development 組織のハンドブック上のホームページとして機能することです。"
 upstream_path: /handbook/sales/sales-development/
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-lastmod: "2026-11-06T16:03:29-05:00"
-translated_at: "2026-11-07T01:14:28+00:00"
+upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
+lastmod: "2026-11-12T10:20:33-05:00"
+translated_at: "2026-11-14T08:32:30+00:00"
 translator: claude
 stale: false
 ---
@@ -213,25 +213,31 @@ Domestic Parent Account RoE: 自分の国のリードのみを扱います。既
 
 #### BDR リードビュー {#bdr-lead-views}
 
+> **B1A = MQL。B1B = High Priority。** High Priority のレコードは、以前は MQL とともに B1 に表示されていました。MQL のフォローアップを妨げないよう、現在は専用のビューに表示されます。MQL を見つけて対応する際は、主に B1A を使用します。B1B は `Lead Status` ではなく `High Priority` フラグに基づいているため、High Priority でもある MQL は両方のビューに表示される場合があります。その場合は B1A から対応してください。
+
 | ビュー | 説明 |
 | ---- | ----------- |
-| FY26 B1 — My Leads, Action Needed | `MQL` リードステータスのリード、または `High Priority` としてマークされたリード。2 時間 SLA が適用されます。**High Priority Reason**、**Last Event Notes**、**Last Interesting Moment** の各フィールドでより多くのコンテキストを確認してください。 |
-| FY26 B2 — AWA leads w/ LIM | あなたのアカウントのうち `Actively Working` BDR Prospecting Status にマッチする、あなたの名前のリード。**Last Interesting Moment Date** で並べ替え、**Lead Classification Score** とクロスリファレンスして、どれを最初にシーケンスするか決定します。過去 14 日以内にシーケンスに追加されたリードは除外。 |
-| FY26 B3 — Change Owner AWA's (Clone) | あなたがアカウントを `Actively Working` BDR Prospecting Status に移動したときに `Accepted`、`MQL`、`Qualifying` ステータスだったため、まだあなたの名前に移動されていないリード。このビューを使用してリードを自分の所有に移動します |
-| FY26 B4 — My HT Leads W/ Phone | `phone` データポイントを持つ High Touch シーケンスのリード。コールブリッツや、Outreach の通話タスクが日次 KPI を下回る場合に使用。 |
-| FY26 B5 — My Qualifying Leads | `Qualifying` ステータスでアクティブな双方向の会話にあるリード。各リードはアクティブシーケンス、Outreach で設定されたアクティブタスク、または未来のミーティングがスケジュールされている必要があります（未来の Last Activity Date で表示）。 |
-| FY26 B6 — 6QA Imported Leads | 関連アカウントが 6Sense によって自動的に `Showing Intent` ステータスに移動された後、BDR が `6QA Acceptance Status` データポイントを使用して承認した後、ZoomInfo 経由で自動インポートされた Raw および Inquiry ステータスのリード。 |
-| FY26 B7 — AWA Prospecting Last 7 Days | 過去 7 日間に Zoominfo/Cognism から取得された AWA BDR 由来のリード。 |
-| FY26 B8 — AWA Leads w/ no LIM | Last Interesting Moment Date が 12 か月以上前の Recycle Queue ステータスのリード — 以前はエンゲージしていたが現在は非アクティブ。 |
+| FY27 B1A — My MQL Leads, Action | リードステータスが `MQL` のリードのみ。2 時間 SLA が適用されます（自分の地域の営業時間内）。**Last Event Notes**、**Last Interesting Moment** の各フィールドで詳細なコンテキストを確認してください。このビューから先に対応します。 |
+| FY27 B1B — My Leads, High Priority | `High Priority` フラグが付いたリード。**High Priority Reason**、**Last Event Notes**、**Last Interesting Moment** の各フィールドで詳細なコンテキストを確認してください。 |
+| FY27 B2 — AWA leads w/ LIM | あなたのアカウントのうち `Actively Working` BDR Prospecting Status にマッチする、あなたの名前のリード。**Last Interesting Moment Date** で並べ替え、**Lead Classification Score** とクロスリファレンスして、どれを最初にシーケンスするか決定します。過去 14 日以内にシーケンスに追加されたリードは除外。 |
+| FY27 B3 — Change Owner AWA's (Clone) | あなたがアカウントを `Actively Working` BDR Prospecting Status に移動したときに `Accepted`、`MQL`、`Qualifying` ステータスだったため、まだあなたの名前に移動されていないリード。このビューを使用してリードを自分の所有に移動します |
+| FY27 B4 — My HT Leads W/ Phone | `phone` データポイントを持つ High Touch シーケンスのリード。コールブリッツや、Outreach の通話タスクが日次 KPI を下回る場合に使用。 |
+| FY27 B5 — My Qualifying Leads | `Qualifying` ステータスでアクティブな双方向の会話にあるリード。各リードはアクティブシーケンス、Outreach で設定されたアクティブタスク、または未来のミーティングがスケジュールされている必要があります（未来の Last Activity Date で表示）。 |
+| FY27 B6 — 6QA Imported Leads | 関連アカウントが 6Sense によって自動的に `Showing Intent` ステータスに移動された後、BDR が `6QA Acceptance Status` データポイントを使用して承認した後、ZoomInfo 経由で自動インポートされた Raw および Inquiry ステータスのリード。 |
+| FY27 B7 — AWA Prospecting Last 7 Days | 過去 7 日間に Zoominfo/Cognism から取得された AWA BDR 由来のリード。 |
+| FY27 B8 — AWA Leads w/ no LIM | Last Interesting Moment Date が 12 か月以上前の Recycle Queue ステータスのリード — 以前はエンゲージしていたが現在は非アクティブ。 |
+| FY27 B10 — My Atlas Surfaced Leads | Atlas のリサーチで見つかったリード。純新規と既存の両方のリードを含みます。[Prose](#prose-outbound-email-sequencing)に追加するか、手動でシーケンスに登録します。 |
 
 ### コンタクトビュー {#contact-views}
 
 | ビュー | 説明 |
 | ---- | ----------- |
-| FY26 B1 — My Contacts, Action Needed | `MQL` ステータスのコンタクト、または `High Priority` としてマークされたコンタクト。2 時間 SLA が適用されます。**High Priority Reason**、**Last Event Notes**、**Last Interesting Moment** の各フィールドでより多くのコンテキストを確認してください。アカウントを担当する予定なら、`Actively Working` BDR Prospecting Status に移動してください。 |
-| FY26 B2 — AWA Contacts | あなたのアカウントのうち `Actively Working` BDR Prospecting Status にマッチする、あなたの名前のコンタクト。**Last Interesting Moment Date** で並べ替え、**Lead Classification Score** とクロスリファレンスし、最初にシーケンスするものを決定します。 |
-| FY26 B3 — My HT Contacts W/ Phone | `phone` データポイントを持つ High Touch シーケンスのコンタクト。コールブリッツや、Outreach の通話タスクが日次 KPI を下回る場合に使用。 |
-| FY26 B4 — My Qualifying Contacts | `Qualifying` ステータスでアクティブな双方向の会話にあるコンタクト。各コンタクトはアクティブシーケンス、Outreach で設定されたアクティブタスク、または未来のミーティングがスケジュールされている必要があります（未来の Last Activity Date で表示）。 |
+| FY27 B1A — My MQL Contacts, Action | `MQL` ステータスのコンタクトのみ。2 時間 SLA が適用されます（自分の地域の営業時間内）。**Last Event Notes**、**Last Interesting Moment** の各フィールドで詳細なコンテキストを確認してください。アカウントを担当する予定なら、`Actively Working` BDR Prospecting Status に移動してください。 |
+| FY27 B1B — My Contacts, High Priority | `High Priority` としてマークされたコンタクトのみ。**High Priority Reason**、**Last Event Notes**、**Last Interesting Moment** の各フィールドで詳細なコンテキストを確認してください。アカウントを担当する予定なら、`Actively Working` BDR Prospecting Status に移動してください。 |
+| FY27 B2 — AWA Contacts | あなたのアカウントのうち `Actively Working` BDR Prospecting Status にマッチする、あなたの名前のコンタクト。**Last Interesting Moment Date** で並べ替え、**Lead Classification Score** とクロスリファレンスし、最初にシーケンスするものを決定します。 |
+| FY27 B3 — My HT Contacts W/ Phone | `phone` データポイントを持つ High Touch シーケンスのコンタクト。コールブリッツや、Outreach の通話タスクが日次 KPI を下回る場合に使用。 |
+| FY27 B4 — My Qualifying Contacts | `Qualifying` ステータスでアクティブな双方向の会話にあるコンタクト。各コンタクトはアクティブシーケンス、Outreach で設定されたアクティブタスク、または未来のミーティングがスケジュールされている必要があります（未来の Last Activity Date で表示）。 |
+| FY27 B6 — My Atlas Surfaced Contacts | Atlas のリサーチで見つかったコンタクト。純新規と既存の両方のコンタクトを含みます。[Prose](#prose-outbound-email-sequencing)に追加するか、手動でシーケンスに登録します。 |
 
 ### アカウントビュー {#account-views}
 
@@ -951,6 +957,17 @@ RelevanceAI は、GitLab の Sales Development 向け AI ワークフォース�
 
 この一覧と状態は、Relevance プログラムの報告資料と運用ノートで管理されています。ユースケースが試験運用から本番運用に移るにつれて、名前や自動化の範囲が変わる場合があります。
 
+#### Relevance のサポートとフィードバックのチャネル {#relevance-support-and-feedback-channels}
+
+Relevance のエージェントについてサポートが必要な場合や、フィードバックを送りたい場合は、そのエージェントのチャネルに投稿してください:
+
+| Slack チャネル | 対象エージェント |
+|---|---|
+| [#sales_dev_inbound_relevance_support](https://gitlab.enterprise.slack.com/archives/C0C72S0R0DT) | インバウンドエージェント: Mona、EMA、Doope、Ghosty |
+| [#sales_dev_outbound_relevance_support](https://gitlab.enterprise.slack.com/archives/C0C6XN73UCT) | アウトバウンドおよび見込み評価のエージェント: Atlas、Prose、Quali、WALL-E |
+
+問題の追跡が必要な場合は、[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)も送信してください。
+
 #### Mona: インバウンド MQL のトリアージ {#mona-inbound-mql-triage}
 
 Mona は、インバウンドリードが MQL ステータスになり、SDR にアサインされると実行されます。繰り返し発生する事前作業の代わりに、リードレコードにアクションにつながる要約を提供します。Mona は次のことができます:
@@ -988,7 +1005,7 @@ EMA が管理するリードについては、次に従ってください:
 - EMA がリードを登録した後に、最初のメールを重複して手動送信しないでください。
 - シーケンスを監視し、通常の SDR ワークフローを通じて見込み客の返信に対応します。
 - 返信を受け取ったときに、テリトリーと所有者を確認します。特に、自動シーケンス登録によって通常の登録前チェックが省略された場合は確認してください。
-- 誤ったパーソナライズ、古いトライアル日付、宛先の間違い、シーケンス登録の失敗は、`#wg-relevance-ai-xdr-ext` または[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)で報告してください。
+- 誤ったパーソナライズ、古いトライアル日付、宛先の間違い、シーケンス登録の失敗は、[#sales_dev_inbound_relevance_support](https://gitlab.enterprise.slack.com/archives/C0C72S0R0DT)または[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)で報告してください。
 
 #### Quali: 見込み評価段階のフォローアップ {#quali-qualifying-stage-follow-through}
 
@@ -1078,7 +1095,7 @@ Prose はコールドアウトバウンド専用です。他の営業施策に�
 ##### ヘルプとフィードバック {#help-and-feedback}
 
 - **操作方法に関する質問:** このハンドブックページを参照してください。
-- **メッセージングに関するフィードバックや、おかしいと感じた点:** Slack の `#sales-dev-outbound-support` に投稿してください。
+- **メッセージングに関するフィードバックや、おかしいと感じた点:** Slack の [#sales_dev_outbound_relevance_support](https://gitlab.enterprise.slack.com/archives/C0C6XN73UCT)に投稿してください。
 - **編集内容が改善につながります:** Sales Dev Ops と Relevance support は、皆さんの編集内容を学習し、エージェントの調整に役立てます。
 
 #### Ghosty: 連絡が途絶えた見込み客へのフォローアップ {#ghosty-ghosted-by-prospect-follow-up}
@@ -1205,11 +1222,11 @@ WALL-E は、今回の適格性確認の実行対象となったリードのみ�
 3. レコードを開き、根拠となるリサーチ、活動、所有者、タイミングを検証します。
 4. Salesforce または Outreach で、人が行うべき適切なアクションを実行します。
 5. 自動送信と重複する送信や、エージェントが管理するレビューフィールドの編集は行わないでください。
-6. 繰り返し発生する問題や重大な問題は、調査に十分なコンテキストを添えて、`#wg-relevance-ai-xdr-ext` または[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)で報告します。
+6. 繰り返し発生する問題や重大な問題は、調査に十分なコンテキストを添えて、[インバウンドまたはアウトバウンドの Relevance サポートチャネル](#relevance-support-and-feedback-channels)または[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)で報告します。
 
 #### フィードバックとガバナンス {#feedback-and-governance}
 
-不正確なリサーチ、誤ったルーティング、重複のフラグ、フォローアップの漏れ、Quali の誤分類、古いパーソナライズ情報、シーケンスの失敗、わかりにくい出力など、エージェントに関するすべてのフィードバックは、`#wg-relevance-ai-xdr-ext` または[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)で報告してください。次を含めます:
+不正確なリサーチ、誤ったルーティング、重複のフラグ、フォローアップの漏れ、Quali の誤分類、古いパーソナライズ情報、シーケンスの失敗、わかりにくい出力など、エージェントに関するすべてのフィードバックは、[インバウンドまたはアウトバウンドの Relevance サポートチャネル](#relevance-support-and-feedback-channels)または[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)で報告してください。次を含めます:
 
 - Salesforce の Lead、Contact、または Account のリンク。
 - 関係するエージェントとフィールド。
@@ -1217,7 +1234,7 @@ WALL-E は、今回の適格性確認の実行対象となったリードのみ�
 - 期待される動作。
 - 関連する活動、所有者、タイミング、言語、テリトリーのコンテキスト。
 
-議論には `#wg-relevance-ai-xdr-ext` を使用し、問題の追跡が必要な場合は[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)を使用してください。
+議論には [#sales_dev_inbound_relevance_support](https://gitlab.enterprise.slack.com/archives/C0C72S0R0DT)（Mona、EMA、Doope、Ghosty）または [#sales_dev_outbound_relevance_support](https://gitlab.enterprise.slack.com/archives/C0C6XN73UCT)（Atlas、Prose、Quali、WALL-E）を使用し、問題の追跡が必要な場合は[エージェントフィードバックフォーム](https://gitlab.com/gitlab-com/eta/ent-ai/ext-vendors/relevance/workspace/-/issues/new?issuable_template=agent-feedback)を使用してください。
 
 ### ZoomInfo {#zoominfo}
 
@@ -1288,6 +1305,137 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 認定 UserGems リードは、AI 生成のパーソナライゼーションで UserGems Outreach シーケンスに自動登録されます。[SMB レポート](https://gitlab.lightning.force.com/lightning/r/Report/00OPL00000E1hpG2AR/view)と [MM/ENTG レポート](https://gitlab.lightning.force.com/lightning/r/Report/00OPL00000E1bYY2AZ/view)で進捗を追跡。
 
 **Gem-E Meeting Assistant:** **Initial Source** = `UserGems - Meeting Assistant` を使用して、SFDC にまだないミーティング出席者のリードとコンタクトを自動的に作成します。マルチスレッディングを続けるために既存のアカウントまたは商談に割り当てます。
+
+### Nooks {#nooks}
+
+Nooks は、私たちの AI 搭載の通話プラットフォームです。[Outreach](#outreach)上で動作し、コールドコールの定型作業（発信ボタンのクリック、呼び出し中の待機、不在や留守番電話の記録）を自動化することで、通話に使う時間を実際の会話により多く充てられるようにします。また、複数の見込み客に同時に発信でき、発信件数と接続率の両方を高められます。このセクションは、Nooks の機能と日々の業務への取り入れ方を理解するための出発点です。
+
+#### アクセスとセットアップ {#access-and-setup}
+
+→ **アクセス:** Okta の Lumos アプリから Nooks をリクエストします。利用権限が付与されたら、メールの招待を承諾してください（見当たらない場合は迷惑メールフォルダーを確認してください）。
+
+→ **サポート:** 質問、問題の報告、フィードバックの共有は [#ext-nooks-gitlab-users-trial](https://gitlab.enterprise.slack.com/archives/C0ASN6BHRRT)で行ってください。Nooks Customer Success チームがこのチャネルを確認しています。
+
+→ **Outreach の接続:** **Settings → Integrations** に移動して Outreach を接続します。手動のパスワード入力を求める画面で先に進めなくなった場合は、まず同じブラウザープロファイルの別のタブで Outreach にログインしてから、もう一度試してください。それでも失敗する場合は、サポートチャネルに投稿してください。
+
+→ **プロフィールの設定:** Settings で名前と写真を追加し、セールスフロアでチームメンバーが自分を認識できるようにします。
+
+→ **地域ごとの承認:** 一部の国では、アクセスに現地の承認が必要です（たとえば、ドイツでは事業所委員会の承認）。招待を受け取っていない場合は、マネージャーまたはサポートチャネルに確認してください。
+
+#### Nooks と Outreach の連携 {#how-nooks-works-with-outreach}
+
+見込み客、シーケンス、タスクの記録の正本は引き続き Outreach です。Nooks は、その上に重ねる通話用のレイヤーです。
+
+1. **通常どおり Outreach で見込み客を探し、シーケンスに登録します。** 常に十分な発信先を確保できるよう、シーケンスに通話ステップを含め、新しい見込み客を定期的に追加してください。
+2. **Nooks に通話タスクを読み込みます。** ダイヤラーの左上のセレクターで **Outreach → All tasks** を選択し、Outreach で**実行期日を迎えた**シーケンスの通話タスクと単発の通話タスクをすべて読み込みます。期日がまだ来ていないタスクは取り込まれません。
+3. **Nooks で発信します。** パワーダイヤラーまたはパラレルダイヤラーでセッションを実行します（下記参照）。
+4. **活動が Outreach に同期されます。** 不在や留守番電話は自動的に記録され、見込み客は次のシーケンスステップに進みます。接続した通話や設定したミーティングは、選択した通話結果で記録されます。ミーティング設定の通話結果は、ミーティング件数に計上され、見込み客をシーケンスから外します。
+
+活動が Outreach に同期されるため、Nooks の通話は活動指標に計上されます。
+
+セッションの終了後も Outreach の通話タスクが未完了のままの場合は、Nooks の **uncallable** セクションを確認してください。電話番号がない、または無効な見込み客は、自分で対応するまでそこに残ります（[発信できない見込み客とデータ補完](#uncallable-prospects-and-enrichment)を参照）。
+
+#### 通話リストを読み込むその他の方法 {#other-ways-to-load-a-call-list}
+
+→ **Salesforce のレポートとリストビュー:** Nooks は Salesforce に接続されているため、キャンペーンリストや[プロスペクティングレポート](#prospecting-reports)などの Salesforce のレポートやリストビューをダイヤラーに直接読み込めます。
+
+→ **スマートリスト:** Nooks で通話を行うと、スマートリストから簡単に再度連絡できるようになります。たとえば、今週（または過去 3 日間や 7 日間）発信して応答がなかった見込み客や、今週フォローアップする必要がある見込み客などです。次のシーケンス通話ステップの期日がまだ来ていない見込み客に、追加で発信する際に便利です。
+
+→ **単発の通話タスク:** シーケンスに登録されていない人について、Outreach で単発の通話タスクを作成できます。
+
+**対応中の見込み客は Outreach のシーケンスに登録しておいてください。** リードステータスの自動化は、シーケンス内の活動に基づいて動作します。たとえば、肯定的な通話結果によってリードが `Qualifying` に移行するのは、そのリードがシーケンスに登録されている場合のみです。見込み客がシーケンスに登録されていない場合は、単発のタスクから 1 回発信するのではなく、通話のみのシーケンス（通話ステップが 3 つか 4 つ）に追加してください。
+
+#### 電話番号、折り返しの電話、留守番電話 {#phone-numbers-callbacks-and-voicemail}
+
+→ **自分の電話番号:** **+ Phone number** をクリックし、都市を選択して、最初に Nooks の電話番号を 4〜5 個追加します（最大 10 個）。これらは自分で管理でき、迷惑電話として表示されるようになった番号は削除して入れ替えられます。Nooks が電話番号を提供していない国に発信する場合などには、個人の電話番号を追加して認証できます。
+
+→ **Smart Presence（推奨）:** 有効にすると、Nooks は共有の番号プールから自動的に発信し、見込み客が最も応答しそうな地域の市外局番（米国）または国番号（国際通話）を相手に表示します。国を一致させる機能は、Nooks の電話番号が承認されている国で動作します。それ以外の国では、その地域で接続率が最も高い番号を Nooks が選択します。Smart Presence の番号への折り返しは自分に転送され、専用の番号は迷惑電話としてフラグ付けされることから保護されます。シーケンスの最初の数回の通話ステップには Smart Presence を使い、それ以降は専用の番号のいずれかに切り替える方法もあります。
+
+→ **折り返しの電話:** 携帯電話を予備として Nooks で折り返しを受けるか、常に携帯電話で受けるかを選択します。**SMS** を有効にし、携帯電話番号を追加してください。見込み客から折り返しがあると、誰からの電話かを知らせるテキストメッセージが届くため、GitLab の活動への折り返しだとわかります。見込み客は Nooks の番号に電話をかけているため、自分の携帯電話番号は開示されません。Nooks で受ける折り返しには、見込み客の名前、会社、電話番号が表示されます。
+
+→ **留守番電話メッセージの自動送信:** 汎用の留守番電話メッセージをいくつか録音し（人名や会社名は入れません）、それぞれにわかりやすい名前を付け、特定のシーケンスステップに割り当てます。そのステップでダイヤラーが留守番電話につながると、メッセージを自動的に残し、待たずに次へ進みます。多くの担当者は、2 回目の通話ステップで留守番電話メッセージを残し、その後の数回は省略しています。
+
+#### 発信モード {#dialing-modes}
+
+→ **パワーダイヤリング**は、リストの見込み客に 1 人ずつ順番に発信します。**skip voicemails**、**skip dial trees**、**voicemail grace period** を有効にしてください。最後の設定により、操作を引き継いで個別の留守番電話メッセージを残すために 3 秒間の猶予が得られます。
+
+→ **パラレルダイヤリング**は、複数の見込み客に同時に発信し、応答した人につなぎます。まずパワーダイヤリングで流れに慣れてから、パラレルダイヤリングに移行してください。2〜3 回線での運用がおすすめです。見込み客に複数の電話番号がある場合、Nooks は同時ではなく順番に発信します。
+
+→ **アダプティブダイヤリング**は、応答する可能性が高い見込み客（炎のアイコンで表示）には回線数を自動的に減らし、関心の低い見込み客には増やします。**Turbo mode** も同じように調整しますが、同時に最大 6 回線を使用します。
+
+→ **自動音声案内:** パラレルダイヤリングでは、Nooks は名前による電話帳検索の案内を自動的に操作して、見込み客につなげられます。できない場合は、受付につながることもあります。電話を切らず、連絡を取りたい人への取り次ぎを依頼してください。
+
+→ **バーチャルアシスタント:** バーチャルアシスタントが着信を確認する見込み客（名前を尋ねる Google の通話スクリーニングなど）は、専用のセクションにまとめられます。こうした見込み客にはパワーダイヤリングを使い、立ち止まって電話の目的を伝えられるようにしてください。紹介を伝えるか、短く明確な自己紹介をするのが最も効果的です。
+
+→ **その他のオプション:** **double dial** は、同じ見込み客に 2 回続けて発信して Do Not Disturb（おやすみモード）による通知制限を突破します（驚かれることが増えると想定してください）。**Skip duplicate numbers** は、同じ番号を共有する見込み客を発信不可のセクションに移し、同じ代表番号に繰り返し発信するのを防ぎます。
+
+**ビープ音が聞こえたら話し始めてください。** Nooks は人を検出するとビープ音を鳴らします（音楽は一時停止します）。見込み客の発言の最初の 1 秒間は、人が応答したことを検出するために使用されるため聞こえませんが、画面にはリアルタイムの文字起こしが表示されます。
+
+#### 通話リストの整理 {#organizing-your-call-list}
+
+ひとまとまりのリストの中のどの見込み客につながるかわからないため、誰が応答しても対応できるようにリストを設定してください。
+
+→ シーケンスまたはアカウント別にタスクを**グループ化**し、各グループのコンテキストを把握できるようにします。1 つのグループだけを対象にセッションを開始でき、そのグループの最後で発信は自動的に停止します。
+
+→ タイムゾーン、ペルソナ、シーケンス、Outreach のタグで**絞り込み**、**business hours only** を有効にして、見込み客の現地時間で深夜に発信することがないようにします。タイムゾーンは見込み客の市外局番に基づいています。各タイムゾーンの昼休み中に電話をかける方法で成果を上げている担当者もいます。
+
+→ 上部の**列をカスタマイズ**し（自分の発信回数、タグ、シーケンス名、シーケンスステップなど）、**通話接続時のレイアウト**もカスタマイズします。便利なカードには、見込み客とアカウントのフィールド、メモ、バトルカード（見込み客が競合他社やその他のキーワードに言及するとリアルタイムで表示）、LinkedIn、アカウント内のほかの活動も含む活動履歴があります。**first sequence email** カードには、見込み客の現在のシーケンスの最初のメールが表示されます。そのメールをパーソナライズしている場合は、画面中央の目立つ位置に配置するとよいでしょう。アカウントのメモは Outreach のアカウントメモフィールドと同期します。
+
+→ Outreach または Salesforce で利用できるフィールドは、管理者が Nooks にマッピングして、フィルターや列として使用できます。必要なフィールドがない場合は、サポートチャネルで依頼してください。
+
+→ 単発の電話をかける場合は、ダイヤラーで見込み客の名前を検索し、そのレコードから発信して、正しい人物に通話が記録されるようにします。単発の電話は控えめにしてください。多くの自動化（MQL を Accepted や Qualifying に移行するなど）は、Outreach のシーケンス内の活動に依存しています。可能な限り、シーケンスの外で電話をかけるのではなく、見込み客をシーケンスに追加してください。
+
+#### 通話と通話結果の記録 {#logging-calls-and-dispositions}
+
+Nooks は Outreach と同じ通話結果を使用し、さらに自動化が追加されています:
+
+→ **No answer** と **left voicemail** は自動的に記録されます。
+
+→ 接続した通話については、Nooks が AI で通話結果を事前選択します。シーケンスの流れや、接続とミーティングの指標に影響するため、**送信する前に必ず確認し、修正してください**。
+
+→ 各通話結果には、次に何が起こるかが表示されます。**keep in sequence** は見込み客をシーケンスに残し、それ以外の結果では、見込み客のシーケンスを終了します。
+
+→ 赤色で表示される通話結果（**wrong number** など）は、その電話番号を無効としてフラグ付けし、再発信を防ぎます。
+
+→ **IQM Set** は、指標上のミーティング設定件数に計上され、チームの Slack チャネルにミーティング設定の通知が投稿されます。
+
+→ **follow-up task** の通話結果では、フォローアップの日時を選択できます。見込み客がフォローアップのスマートリストに追加され、設定を有効にしている場合は、会話の要約が含まれたカレンダー招待が自分に送信されます。
+
+→ **録音と AI による要約:** 一方当事者の同意で録音できる州の米国の番号への通話は録音され、AI による要約がメモに自動で追加されます。現在、国際通話は録音されません。
+
+#### 発信できない見込み客とデータ補完 {#uncallable-prospects-and-enrichment}
+
+電話番号がない、無効、または利用停止中の見込み客は、**uncallable** セクションに移され、それぞれの理由が表示されます。そこから見込み客を選択して、次を行えます:
+
+→ **新しい電話番号を探す:** **Enrich** をクリックし、Nooks のデータ補完ウォーターフォールで携帯電話番号や直通番号を検索します。データ補完にはクレジットを使用します。ウォーターフォールは [ZoomInfo](#zoominfo)や Cognism などのデータプロバイダーを利用しますが、地域のデータ規制により AMER と EMEA では利用可能なプロバイダーが異なります。自分の地域の現在の設定は、サポートチャネルで確認してください。
+
+→ データ補完で使える電話番号が見つからない場合は、見込み客を**次のシーケンスステップに進める**か、シーケンスを**終了**します。
+
+#### セールスフロアとルーム {#salesfloor-and-rooms}
+
+Nooks のセールスフロアは、オフィスの営業フロアの活気をリモートチームにもたらします。参加は任意ですが（参加せずにダイヤラーを使用できます）、同僚から学ぶ最も手軽な方法の 1 つです。
+
+→ セールスフロアに参加して、チームメンバーと一緒に発信し、チャットし、GIF や称賛の言葉で成果を祝います。
+
+→ 見込み客につながると、Nooks は自分を個室の **phone booth** に移動し、集中を妨げられることなく、フロアに通話が聞こえないようにします。
+
+→ チームメンバーやマネージャーは、進行中の通話を**傾聴**して、ほかの人がどのように会話を切り出し、反論に対応しているかを聞けます。誰が聞いているかを確認できます。
+
+→ チームメンバーを呼び出して短く話し、その後ロビーに戻れます。
+
+→ チーム用の**ルーム**を作成して、予定している通話時間や、一緒に発信したいときに使用します。
+
+→ Settings で Spotify を接続し、発信中に音楽を再生できます。通話がつながると、自動的に一時停止します。
+
+一部の市場では、現地の規則により傾聴が制限されている場合があります。この機能を利用する前にマネージャーに確認してください。
+
+#### 練習とベストプラクティス {#practice-and-best-practices}
+
+→ **まず練習する:** **AI Role Play** で AI の見込み客との通話を練習するか、**Dialer Simulator** で実際の見込み客に発信する前にパラレルダイヤリングを体験してください。
+
+→ **集中する時間を確保する:** 少なくとも 60 分間の通話時間を設け、その間は通話だけを行います（メール、Slack、テキストメッセージは行いません）。Nooks はリストを自動的に進めるため、相手が応答したらすぐに対応できるようにしておく必要があります。集中した 1 時間で、約 100 回発信できることもあります。
+
+→ **パイプラインを十分に保つ:** パラレルダイヤリングはリストをすぐに消化し、新しい見込み客が接続率を左右します。シーケンスに通話ステップがあることと、毎週新しい見込み客を追加していることを確認してください。Nooks は週に 50〜75 人を推奨していますが、マネージャーの指示に従ってください。
 
 ### その他のツール {#other-tools}
 
@@ -1576,7 +1724,7 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 **A:** SDR は、ウェブ直接購入の前に 60 日以内に見込み客と意味のある双方向のコミュニケーションを持っていた商談でクレジットを取得します。[このレポート](https://gitlab.my.salesforce.com/00O4M000004dkX4)を使用 — 日付範囲を設定して、見込み客のアカウントに紐づいた商談を見つけます。次に、以下のウェブ直接 SAO クレジットリクエストプロセスに従います。
 
 **Q:** ウェブ直接商談のクレジットをどうやってリクエストしますか？
-**A:** 商談 レコードでチャタリング: (1) Ramona Elliott、Sam Bradley、または Brian Tabbert にタグ付け — Sales Support に直接タグ付けしないでください。(2) 過去 60 日以内の双方向のアクティビティを示す SFDC レコードへのリンク。コールノートは、後ではなくコール時に Qualification Notes フィールドに入力されている必要があります。(3) 購入決定に影響を与えた方法を説明します。担当者がウェブ直接評価の結果について質問や懸念を持つ場合は、まず Manager に相談する必要があります。
+**A:** 商談レコードの Chatter で次を行います: (1) Sam Bradley、Karolin Shublaq、および自分のマネージャー（情報共有のため）にタグ付けします。Sales Support に直接タグ付けしないでください。(2) 過去 60 日以内の双方向の活動を示す SFDC レコードへのリンクを記載します。通話メモは、後からではなく通話時に Qualification Notes フィールドに入力されている必要があります。(3) 購入の決定にどのように影響を与えたかを説明します。(4) リクエストに 24 時間以内（暦時間）に応答がない場合は、同じ Chatter スレッドで Robin Falkowski にタグ付けします。担当者がウェブ直接評価の結果について質問や懸念を持つ場合は、まずマネージャーに相談してください。
 
 ### RoE のよくある質問 {#roe-common-questions}
 
