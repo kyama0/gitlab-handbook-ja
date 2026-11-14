@@ -3,11 +3,11 @@ title: ライセンスファイルの配信
 description: "ライセンスの生成と配信"
 category: GitLab Self-Managed licenses
 upstream_path: /handbook/support/license-and-renewals/workflows/self-managed/license_delivery/
-upstream_sha: 460f0fe6722bfe52b151b6a8641368ea38885df5
-translated_at: "2026-05-08T12:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T17:15:14+09:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-11-12T16:55:22-05:00"
 ---
 
 ## 概要
@@ -36,6 +36,6 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
 メール配信は MailGun に 30 日間ログとして残ります。ライセンスが 30 日以上前に生成されたものであれば、配信されたかどうかを知ることはできません。ライセンスのメール配信ログを確認するには：
 
-1. [checking mailgun](/handbook/support/workflows/confirmation_emails#checking-mailgun) の手順に従います。
+1. [Mailgun ログの確認](/handbook/support/workflows/confirmation_emails/#checking-mailgun-logs)の手順に従います。
 1. mailgun 確認手順の **Step 4** で、`Domain` として `customers.gitlab.com` を使用します。
 1. ライセンス生成日をカバーするように日付範囲を更新します。

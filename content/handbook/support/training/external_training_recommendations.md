@@ -2,11 +2,11 @@
 title: 外部トレーニングのおすすめ
 description: サポートエンジニア向けに、GitLab の外部トレーニングパートナーから推奨するコース、ラーニングパス、認定資格
 upstream_path: /handbook/support/training/external_training_recommendations/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T17:15:14+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-21T14:25:32+00:00"
+lastmod: "2026-11-12T16:45:08-05:00"
 ---
 
 このページでは、サポートエンジニアにとって関連性の高い、GitLab の外部トレーニングパートナーが提供する具体的なコース、ラーニングパス、認定資格を推奨します。まず内部の [サポートトレーニングモジュール](/handbook/support/training/) と [特化ドメイントラック](/handbook/support/training/specialised_domain_tracks/) を完了し、その後に下記のリソースを使って知識を補強したり、特定の領域で中級・上級レベルへステップアップしたりすることを推奨します。
@@ -55,12 +55,6 @@ lastmod: "2026-05-21T14:25:32+00:00"
 ### Git 内部
 
 サポートエンジニアは Git の操作を毎日のようにトラブルシューティングしています。プッシュ／プルの失敗、リポジトリの破損、マージ衝突、LFS の問題、サーバーサイドフックなどです。Git の内部（packfile、ref、オブジェクト、転送プロトコル）を理解することは直接的に役立ちます。
-
-#### Linux Foundation
-
-| タイトル | 種別 | レベル |
-|---|---|---|
-| [LFD109 - Git for Distributed Software Development](https://training.linuxfoundation.org/training/git-for-distributed-software-development-lfd109x/) | コース | 初級 |
 
 #### O'Reilly Learning
 
