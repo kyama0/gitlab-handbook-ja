@@ -3,11 +3,11 @@ title: お客様向けプロジェクトエクスポート
 description: "GitLab チームメンバーがお客様に代わってプロジェクトのエクスポートを提案する場面と、その手順について案内します。"
 category: GitLab.com
 upstream_path: /handbook/support/workflows/exporting_projects/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T17:15:14+09:00"
 translator: claude
 stale: false
-lastmod: "2024-12-20T00:01:10+00:00"
+lastmod: "2026-11-12T16:45:41-05:00"
 ---
 
 ## プロジェクトエクスポート
@@ -22,7 +22,7 @@ Issue が作成または既存のものへコメントされたら、[`Support::
 
 お客様が提案を受け入れた場合、エクスポート自体は成功した（メールが届いた、または「Download export」ボタンが出ている）にもかかわらず、ダウンロード時にエラーが発生していますか？例: [gitlab#330833](https://gitlab.com/gitlab-org/gitlab/-/issues/330833)。
 
-1. はいの場合、[インフラエクスポートリクエスト](https://gitlab.com/gitlab-com/gl-infra/infrastructure/-/issues/new?issuable_template=Project%20Export.md) を開き、関連情報をすべて記入します。これによりサポートコンソールでの試行をスキップできます。プロジェクトエクスポートから 30 日以内に実施可能です。
+1. はいの場合、[インフラエクスポートリクエスト](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new?issuable_template=Project%20Export.md) を開き、関連情報をすべて記入します。これによりサポートコンソールでの試行をスキップできます。プロジェクトエクスポートから 30 日以内に実施可能です。
 1. いいえ（または不明）の場合、[内部リクエストトラッカーでエクスポートリクエストを開きます](https://gitlab.com/gitlab-com/support/internal-requests/-/issues/new?issuable_template=GitLab.com%20Console%20Export%20Request)。
 1. **インフラエクスポートリクエストが開かれた** 際にはいつでも、関連する GitLab バグ Issue に「infradev」ラベルが追加されていることを確認してください。
 

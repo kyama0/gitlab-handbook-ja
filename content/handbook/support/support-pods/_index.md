@@ -2,11 +2,11 @@
 title: Support Pods
 description: Support 内および各部門をまたいだ協働に焦点を当てる柔軟な関心グループ
 upstream_path: /handbook/support/support-pods/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-translated_at: "2026-11-07T00:43:27.880819+00:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T17:15:14+09:00"
 translator: codex
 stale: false
-lastmod: "2026-11-05T15:54:21-05:00"
+lastmod: "2026-11-12T16:56:08-05:00"
 ---
 
 Support Pods は、任意のチームメンバーグループが、取り組みたい任意の課題セットに対して、関心ベースの自己組織化グループを立ち上げるために利用できる柔軟なフレームワークです。
@@ -56,9 +56,9 @@ Support Pod をワークフローに組み込む方法については、[Support
 
 ### 立ち上げ {#starting-it-up}
 
-1. [ポッドの例](example-pod.md)テンプレートページを複製する。
-1. 新しく作成したページを Support Pod の名前にリネームする。
+1. Support Pod 用のディレクトリを作成し、その中に[ポッドの例](example-pod.md)テンプレートページを `_index.md` としてコピーする。
 1. Support Pod のページを、ポッドに関連する内容に修正する。
+1. Slack チャンネルとリードを含めて、Support Pod を[ディレクトリ](#directory)のテーブルに追加する。
 1. [CODEOWNERS](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/.gitlab/CODEOWNERS?ref_type=heads)ファイルの `^[support-pods]` セクションに自分（と他のリード）を追加する。
 
 ### 開始後 {#after-starting}
@@ -84,8 +84,7 @@ Support Pod のリードは、次の責務を担います。
 各 Support Pod は自己組織化されているため、リードは各 Support Pod がどのように意思決定を行うかを自由に決められます。その際、GitLab のバリューと次の原則を念頭に置いてください。
 
 - GitLab ハンドブック： [Directly Responsible Individuals](/handbook/people-group/directly-responsible-individuals/)。
-- チケット対応の Support ワークフロー： [主要な原則](/handbook/support/workflows/working-on-tickets/#key-principles)
-  および [優先順位と影響](/handbook/support/workflows/working-on-tickets/#priorities-and-impact)。
+- Support ワークフロー： [チケット対応](/handbook/support/workflows/working-on-tickets/)。
 
 ### 協働の手段 {#collaboration-mediums}
 
@@ -94,8 +93,6 @@ Support Pod のリードは、次の責務を担います。
 #### Zendesk {#zendesk}
 
 個人ビューを作成し、その設定を Support Pod のメンバーと共有することで、メンバー全員が同じチケットビューを参照できるようにすることもできます。残念ながら現時点では、これを行う最も実用的な方法は、スクリーンショットを取得して共有するなどの手作業です。
-
-Zendesk の共有ビューを使うアプローチは [Support Team Meta Issue #6187](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6187)で検討されています。
 
 #### GitLab.com の Issue {#gitlabcom-issues}
 
@@ -116,7 +113,7 @@ Slack を使って協働する場合は、既存のチャンネルを活用す�
 - 顧客を対象とする場合は、顧客アカウントの内部チャンネル（`#a_XYZ-internal`）が適切な場合があります。
 - GitLab 製品を対象とする場合は、ステージ（`#s_`）、グループ（`#g_`）、機能（`#f_`）チャンネルが適切な場合があります。
 
-専用チャンネルを作成する場合は、チャンネル名のプレフィックスを `#spt-pod_` としてください。
+専用チャンネルを作成する場合は、チャンネル名のプレフィックスを `#spt_pod_` としてください。
 
 ポッド固有のペアリングセッションをチャンネル内で実施する場合は、[#spt_pairify-app](https://gitlab.enterprise.slack.com/archives/C06LG9NBSUX)でリクエストすることで、新しいチャンネルに [Pairify](/handbook/support/workflows/pairify/)のサポートを追加できます。
 

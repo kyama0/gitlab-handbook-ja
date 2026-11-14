@@ -5,11 +5,11 @@ category: Zendesk
 subcategory:
 last-reviewed: 2024-05-23
 upstream_path: /handbook/support/workflows/zendesk_agent_personalization/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:21:26+09:00"
+upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
+translated_at: "2026-11-14T17:15:14+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-11T11:43:02+10:00"
+lastmod: "2026-11-12T16:38:53-05:00"
 ---
 
 ## Zendesk エージェントのパーソナライズ
@@ -40,12 +40,12 @@ support-team.yaml で編集可能な Zendesk のフィールドの詳細につ�
 
 1. [support-team プロジェクトのエントリ](https://gitlab.com/gitlab-support-readiness/support-team/-/tree/master/data/agents) ページを編集します。
 2. 更新したい Zendesk インスタンス（Global の場合は `main`、U.S. Government の場合は `us-federal`）のセクションを見つけます。
-3. `show_in_signature:,  gitlab_handle:` セクションを `false` から `true` に更新します。
+3. `show_in_signature` 内の `gitlab_handle` を `false` から `true` に変更します。
 
 ### 挨拶文 (Salutations)
 
 チケット更新時に署名の前に常に挿入される、パーソナライズされた挨拶文を設定できます。たとえば `Regards,` のようなものです。私たちは一般的に、デフォルトの挨拶文を作成せず、対応中のチケットの状況に合わせて挨拶文を選ぶことを推奨します。ただし、設定したい場合は次の手順で行えます:
 
-1. [support-team.yaml](https://gitlab.com/gitlab-com/support/team/-/blob/master/data/agents/) ページを編集します。
+1. [support-team プロジェクトのエントリ](https://gitlab.com/gitlab-support-readiness/support-team/-/tree/master/data/agents)ページを編集します。
 2. 更新したい Zendesk インスタンス（Global の場合は `main`、U.S. Government の場合は `us-federal`）のセクションを見つけます。
 3. `salutations:` 行を希望のフレーズに更新します。
