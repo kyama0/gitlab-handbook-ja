@@ -2,9 +2,9 @@
 title: "Database Excellence ステージ"
 description: "Database Excellence セクションは、GitLab のデータベースがスケールにおいて確実に稼働することを保証しながら、すべてのデータストアにわたるデータアーキテクチャ、配置、ライフサイクル管理についてチームが情報に基づいた意思決定を行えるようにします。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: "2026-11-10T13:14:27+13:00"
-translated_at: "2026-11-14T08:44:55+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+lastmod: "2026-11-16T16:52:11+13:00"
+translated_at: "2026-11-16T21:08:18+00:00"
 translator: codex
 stale: false
 ---
@@ -44,7 +44,7 @@ GitLab.com と GitLab を自ら運用するお客様の両方で、GitLab のデ
 * インスタンス自体のデータに基づき、アップグレードにかかる時間を予測する
 * マイグレーションを依存関係の順序で実行し、中間バージョンで停止することなくアップグレードを短縮する
 
-{{< group-by-slugs nbelokolodov amsingh6 imanpalsingh krasimirangelov >}}
+{{< group-by-slugs nbelokolodov amsingh6 imanpalsingh krasimirangelov pradumkumar10 >}}
 
 ### Database Automation {#database-automation}
 

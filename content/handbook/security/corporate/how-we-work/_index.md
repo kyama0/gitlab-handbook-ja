@@ -1,11 +1,11 @@
 ---
 title: 私たちの働き方（CorpSec）
 upstream_path: /handbook/security/corporate/how-we-work/
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-translated_at: "2026-10-24T21:08:36.079799+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:05:36+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-23T12:38:14-05:00"
+lastmod: "2026-11-16T14:31:44+01:00"
 ---
 
 私たちには 4 つの働き方のアプローチがあります：
@@ -349,7 +349,6 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 より広範なニーズについては、[チーム](#team-label)ラベルを参照してください。
 
 - [corpsys-1password](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-1password)
-- [corpsys-accessctl](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-accessctl)
 - [corpsys-aws-billing](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-aws-billing)
 - [corpsys-aws-marketplace](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-aws-marketplace)
 - [corpsys-aws-services](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-aws-services)

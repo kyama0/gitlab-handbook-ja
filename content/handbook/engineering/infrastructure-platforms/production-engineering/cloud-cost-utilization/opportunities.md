@@ -2,9 +2,9 @@
 title: "FinOps の機会"
 description: "GitLab 全体で FinOps の機会を追跡する方法：ライフサイクルのステージ、担当者、ラベル、ステータスノート"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/opportunities/"
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-lastmod: "2026-11-06T14:27:25+01:00"
-translated_at: "2026-11-07T00:27:31.339857+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+lastmod: "2026-11-16T18:08:42+01:00"
+translated_at: "2026-11-16T21:08:18+00:00"
 translator: codex
 stale: false
 ---
@@ -66,7 +66,7 @@ GitLab 全体のすべての FinOps の機会は、どのチームが作成し�
 
 1. 変更を担当するチームのプロジェクトで、そのプロジェクトの通常のテンプレートを使って Issue を作成してください。
 1. コストの金額を記載せずに、機会を説明してください。[Issue の説明](#issue-description)の各項目を含めてください。
-1. `FinOps::Cost-Optimization` と `FinOps::Opportunity::Proposed` のラベルを追加してください。
+1. `FinOps::Opportunity::Proposed` ラベルを追加してください。
 1. 担当チームの `group::<group>` ラベルを追加し、該当する場合は影響を受けるサービスの `Service::<service>` ラベルも追加してください。[ラベル](#labels)を参照してください。担当グループがまだわからない場合は、機会が Proposed の間に特定してください。Confirmed になる前に設定する必要があります。
 1. カテゴリラベルなど、担当チームが通常使うほかのラベルを追加し、チームのボードにも Issue が表示されるようにしてください。
 1. [ステータスノート](#status-note-format)を社内ノートとして投稿し、見積もりがある場合は含めてください。
@@ -144,7 +144,6 @@ flowchart TD
 
 `gitlab-com` と `gitlab-org` の両グループで [FinOps の Issue ラベル](https://gitlab.com/groups/gitlab-com/-/labels?subscribed=&archived=false&sort=relevance&search=finops#)を使用します。すべての機会の Issue に、次のラベルを付けます。
 
-- `FinOps::Cost-Optimization` は、ステージに関係なく FinOps の機会であることを示します。
 - 現在のステージを示す `FinOps::Opportunity::<Stage>` スコープ付きラベルを、必ず 1 つだけ付けます。たとえば `FinOps::Opportunity::Confirmed` です。スコープ付きラベルのため、新しいステージラベルを追加すると、以前のラベルが削除されます。
 - 担当チームを示す、`group::gitaly` などの担当チームの `group::<group>` ラベルを付けます。Confirmed 以降では必須であり、Issue の作成時に追加することを推奨します。
 - 機会が特定のサービスに影響する場合は、`Service::Gitaly` などの `Service::<service>` ラベルを付けます。これは任意です。請求モデルの変更など、単一のサービスに影響するものではない機会もあります。`Service::` ラベルは `gitlab-com` グループにのみ存在します。

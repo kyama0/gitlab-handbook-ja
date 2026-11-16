@@ -3,18 +3,18 @@ title: "Spec-Driven Development (SDD)"
 description: "Spec-Driven Development の設計ドキュメント。GitLab のワークアイテム上で意図を捉え、エージェントによる実行を推進するための構造化された計画レイヤー。"
 status: ongoing
 creation-date: "2026-04-16"
-authors: [ "@fredericcaplette" ]
+authors: [ "@fredericcaplette", "@vanessaotto" ]
 coaches: [ "@ntepluhina" ]
-dris: [ "@fredericcaplette", "@vanessaotto", "@marcsaleiko" ]
+dris: [ "@fredericcaplette", "@vanessaotto", "@msaleiko" ]
 owning-stage: "~devops::plan"
 participating-stages: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/"
-upstream_sha: "2de6fd8dc3b16760e36ce5d9b9fbfcd697d431d8"
-translated_at: "2026-10-20T21:03:45Z"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:08:18+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-20T13:32:50-04:00"
+lastmod: "2026-11-16T10:27:57+01:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->

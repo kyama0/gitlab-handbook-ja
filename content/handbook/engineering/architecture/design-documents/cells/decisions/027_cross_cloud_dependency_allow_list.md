@@ -8,9 +8,9 @@ coach:
 approvers: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/decisions/027_cross_cloud_dependency_allow_list/"
-upstream_sha: "30048133aad0232ed4d59fa0c80643620c85adb3"
-lastmod: "2026-08-03T14:06:01+12:00"
-translated_at: "2026-08-04T06:05:19+09:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+lastmod: "2026-11-16T13:03:38+13:00"
+translated_at: "2026-11-16T21:09:50+00:00"
 translator: codex
 stale: false
 ---
@@ -51,7 +51,7 @@ ADR-016 は、コスト、レジリエンス、明確な分離のために、Cel
 | 任意の Cell &rarr; GCP AI Gateway | 中央ホスト型の Duo/AI モデル仲介。クラウドごとの同等物がない。AWS 上の Dedicated ですでに稼働中。 | AI / Cloud Connector | リージョン別 / クラウド別の AI Gateway ホスティング、またはテナントごとのセルフホスト型モデルオプション |
 | AWS Cell &rarr; GCP Topology Service | Org の分類 / claim、Cell の発見 / ヘルス、SSH ルーティング &mdash; 現在は単一の中央インスタンス（ADR-019 を参照） | Cells Infrastructure | Topology Service のクラウドごとのレプリケーション（決定保留中） |
 | GCP &rarr; AWS via Siphon+NATS (HA-VPN / Transit Gateway) | Legacy Cell から AWS Protocell への Org データ移行 | ODM / Cells migration tooling | コホートの移行完了後に自動的に削除 |
-| AWS Cell &rarr; Artifact Registry | GCP にのみデプロイされています | Artifact Registry | [Cellular Target](../../artifact_registry/decisions/024_infrastructure_delivery.md#phase-2--cellular-target) |
+| AWS Cell &rarr; Artifact Registry | GCP にのみデプロイされています | Artifact Registry | [Cellular Target](../../artifact_registry/decisions/024_infrastructure_delivery.md) |
 | AWS Cell &rarr; Secrets Manager | GCP にのみデプロイされています | Secrets Manager | [Cellular Target](https://gitlab.com/groups/gitlab-org/-/work_items/17846) |
 | AWS S3 &rarr; GCP Elastic Agent (OIDC workload identity) | 中央運用の Elasticsearch への Cells ログ取り込み | Security Logging | クラウドごとのログシンク（正当化される場合 / 時期） |
 | AWS Cell &rarr; GCP GitLab Observability Backend (GOB) | ハードコードされた `observe.gitlab.com` URL（`lib/gitlab/observability.rb`）の背後にある単一の中央ホスト型バックエンド。テレメトリはプロジェクト／グループをキーとして外部に保存され、OAuth のスコープは最上位の親グループごとに設定されるため、Cell や Org を認識しない外部 SaaS のように動作します | Observability | Cell ごとの Observability Backend。[gitlab#606874](https://gitlab.com/gitlab-org/gitlab/-/work_items/606874)で追跡中 |

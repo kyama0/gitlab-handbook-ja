@@ -4,12 +4,15 @@ description: "OAK の高度なコンポーネント向けデータベースプ�
 owning-stage: "~devops::gitlab delivery"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/omnibus_adjacent_kubernetes/decisions/006_no_automated_database_preparation/
-upstream_sha: "a2af0b1d81734a87d89ce13f0302597755181359"
-lastmod: "2026-08-04T10:45:08-04:00"
-translated_at: "2026-08-05T06:33:12+09:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+lastmod: "2026-11-16T11:43:18-03:00"
+translated_at: "2026-11-16T21:09:50+00:00"
 translator: codex
 stale: false
 ---
+
+[ADR-008: Omnibus は高度なコンポーネントのデータストアを管理しない](008_no_omnibus_managed_data_stores.md)により**置き換えられています**。
+高度なコンポーネントは外部のデータストアを使用する必要があり、Omnibus はそれらのデータベースオブジェクトを作成しません。
 
 ## コンテキスト
 

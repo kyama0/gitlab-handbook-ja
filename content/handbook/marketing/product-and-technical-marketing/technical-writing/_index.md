@@ -2,11 +2,11 @@
 title: "Technical Writing"
 description: "Technical Writing チームは、GitLab のエンジニア、Product Managers、デザイナー、UX Researchers と連携し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、拡張可能なドキュメントに落とし込みます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/technical-writing/"
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T13:40:02.095783+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:06:51+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-04T08:45:23+01:00"
+lastmod: "2026-11-16T14:19:44Z"
 ---
 
 Technical Writers は、ユーザーが GitLab の機能を理解し、操作し、導入する方法を左右するコンテンツに
@@ -413,7 +413,8 @@ Technical Writers は、担当業務とともに、毎月次の定期タスク�
 
 | バージョン | 月 | リリースノートとドキュメントリリース | メンテナンスタスク |
 |---------|-------|----------------------------------------|-------------------|
-| 19.10 | 2027 年 3 月 | TBD | {{< member-by-name "Brendan Lynch" >}} |
+| 19.11 | 2027 年 4 月 | TBD | {{< member-by-name "Uma Chandran" >}} |
+| 19.10 | 2027 年 3 月 | {{< member-by-name "Uma Chandran" >}} | {{< member-by-name "Brendan Lynch" >}} |
 | 19.9 | 2027 年 2 月 | {{< member-by-name "Brendan Lynch" >}} | {{< member-by-name "Evan Read" >}} |
 | 19.8 | 2027 年 1 月 | {{< member-by-name "Evan Read" >}} | {{< member-by-name "Marcel Amirault" >}} |
 | 19.7 | 2026 年 12 月 | {{< member-by-name "Marcel Amirault" >}} | {{< member-by-name "Isaac Durham" >}} |

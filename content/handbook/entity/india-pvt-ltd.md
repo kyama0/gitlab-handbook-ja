@@ -2,11 +2,11 @@
 title: GitLab India Private Limited の情報と福利厚生
 description: インド在住チームメンバー向けの GitLab India Private Limited の福利厚生と情報
 upstream_path: "/handbook/entity/india-pvt-ltd/"
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-translated_at: "2026-11-07T00:57:49.258353+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:08:18+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-06T08:31:14-08:00"
+lastmod: "2026-11-16T12:37:38-08:00"
 ---
 
 {{% panel header="**これはセキュアなドキュメントです**" header-bg="orange" %}}
@@ -55,7 +55,6 @@ lastmod: "2026-11-06T08:31:14-08:00"
 - 出産・不妊治療の補償
 - OPD（外来）給付
 - [India Benefits Guide](https://drive.google.com/file/d/17K153BSQZdg3sf5a8JHEp_6HgLGqLpfC/view)を参照
-- [GitLab Plum 管理ガイド](https://drive.google.com/drive/folders/1zpaW78pD49KtFf_JqEBLh6S25A-u62tT)
 
 </details>
 
@@ -67,11 +66,11 @@ lastmod: "2026-11-06T08:31:14-08:00"
 
 新入社員には、入社日の次の月曜日までに Plum からウェルカムメールが届く予定です。登録は毎週木曜日に処理され、処理後にウェルカムメールが生成されるまで最大 48 時間かかります。
 
-Plum プラットフォームにログインすると、扶養家族の登録と受取人の設定を直接行えます。詳しい手順は、[GitLab Plum 管理ガイド](https://drive.google.com/drive/folders/1zpaW78pD49KtFf_JqEBLh6S25A-u62tT)を参照してください。
+Plum プラットフォームにログインすると、扶養家族の登録と受取人の設定を直接行えます。詳しい手順は、[GitLab Plum 管理ガイド](https://drive.google.com/file/d/17eDXfmbP6zkxyV4rmXDpAFHXCXy_bu_c/view)を参照してください。
 
 **ライフイベント後の扶養家族の追加**
 
-養子縁組、出産、結婚があった場合は、Plum ポータルから新しい扶養家族を直接追加できます。手順は、[GitLab Plum 管理ガイド](https://drive.google.com/drive/folders/1zpaW78pD49KtFf_JqEBLh6S25A-u62tT)のスライド 10 を参照してください。
+養子縁組、出産、結婚があった場合は、Plum ポータルから新しい扶養家族を直接追加できます。手順は、[GitLab Plum 管理ガイド](https://drive.google.com/file/d/17eDXfmbP6zkxyV4rmXDpAFHXCXy_bu_c/view)のスライド 10 を参照してください。
 
 *重要な期限：*
 
@@ -161,7 +160,7 @@ GitLab は、Axis Max Life Insurance を通じて会社負担の団体定期生�
 - 補償額が無診査限度額を超える場合は、Plum が手順、期限、提出方法を直接連絡します
 - 詳細と保険金請求手続きについては、[India Benefits Guide](https://drive.google.com/file/d/17K153BSQZdg3sf5a8JHEp_6HgLGqLpfC/view)を参照してください
 - ご質問は Plum（care@plumhq.com）に連絡してください
-- チームメンバーは [このフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdtcAHEi5CDKE2jhZcksEspkIcTRqmI6qv818N64cMSUQlgYA/viewform?usp=sharing&ouid=115600862362829120699)を使って受取人を更新／指定できます
+- チームメンバーは Plum ポータルで受取人を直接更新／指定できます。手順は、[GitLab Plum 管理ガイド](https://drive.google.com/file/d/17eDXfmbP6zkxyV4rmXDpAFHXCXy_bu_c/view)のスライド 6 を参照してください。
 
 </details>
 

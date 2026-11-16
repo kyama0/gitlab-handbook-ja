@@ -2,9 +2,9 @@
 title: "Self-Managed Database Experience チーム"
 description: "Self-Managed Database Experience チームは、Self-Managed のお客様にデータベースの状態を把握する手段、より高速なデータベースマイグレーション、アップグレードにかかる時間の予測を提供します。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: "2026-11-10T13:14:27+13:00"
-translated_at: "2026-11-14T08:44:55+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+lastmod: "2026-11-16T16:52:11+13:00"
+translated_at: "2026-11-16T21:08:18+00:00"
 translator: codex
 stale: false
 ---
@@ -33,7 +33,7 @@ Self-Managed Database Experience チームは、[Database Health](/handbook/engi
 
 チームは、PostgreSQL と Rails のマイグレーションに関する豊富な経験を持つバックエンドエンジニアで構成されています。役割にかかわらず、すべてのチームメンバーは他の Database Excellence チームとともに、データベースレビュー、オンコールローテーション、運用上のニーズへの対応を含むステージレベルの責任を共有します。
 
-{{< group-by-slugs nbelokolodov amsingh6 imanpalsingh krasimirangelov >}}
+{{< group-by-slugs nbelokolodov amsingh6 imanpalsingh krasimirangelov pradumkumar10 >}}
 
 ## プロジェクト管理プロセス {#project-management-process}
 
