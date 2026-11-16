@@ -2,11 +2,11 @@
 title: CorpSec システムと Tech Stack
 description: Corporate Security 部門は、私たちが管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー（業務委託者、ベンダーなど）向けに構成管理エンジニアリングとテックサポートヘルプデスクサービスを提供しています。システムディレクトリには、私たちのすべてのシステムの一覧と、管理ランブック、エンドユーザードキュメント、Issue テンプレート、メンション可能なグループ、GitLab のエピック・Issue・マージリクエストで使用されるタグへのクイックリファレンスリンクが記載されています。
 upstream_path: /handbook/security/corporate/systems/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T12:38:30.233546+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:05:36+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-04T20:19:30+01:00"
+lastmod: "2026-11-16T14:31:44+01:00"
 ---
 
 ## 部門横断的な System Owners {#cross-department-system-owners}
@@ -62,28 +62,6 @@ Corporate Security 部門は、私たちが管理する全社規模のシステ�
 <i class="fas fa-shield-halved me-2"></i>
 <span style="background-color: #eab308; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER PASS</span>
 <span style="background-color: #d97706; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN PASS</span>
-<span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN APP ROLE</span>
-</td>
-</tr>
-<!-- Access Control -->
-<tr>
-<td><a href="/handbook/security/corporate/systems/accessctl">Access Control (accessctl)</a><br><code>access.gitlab.systems</code><br><small>FY25-Q3 に利用可能</small></td>
-<td>
-<i class="fas fa-gear me-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=accessctl_default">エンジニアリング Issue</a>
-</td>
-<td>
-<a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?label_name%5B%5D=corpsys-accessctl">ARs</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?label_name%5B%5D=corpsys-accessctl">Issue</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?label_name[]=corpsys-accessctl">エピック</a>
-<br>
-<i class="fas fa-book me-2"></i><a href="https://handbook.gitlab.systems/accessctl">管理ランブック</a><br>
-<i class="fas fa-tag me-2"></i><code>corpsys-accessctl</code><br>
-<i class="fa-brands fa-gitlab me-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/accessctl">@gitlab-com/corpsys/accessctl</a><br>
-<i class="fa-brands fa-slack me-2"></i><code>@corpsysadmins-accessctl</code><br>
-<i class="fas fa-shield-halved me-2"></i>
-<span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
-<span style="background-color: #16a34a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER APP ROLE</span>
-<span style="background-color: #b91c1c; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN SSO</span>
 <span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN APP ROLE</span>
 </td>
 </tr>

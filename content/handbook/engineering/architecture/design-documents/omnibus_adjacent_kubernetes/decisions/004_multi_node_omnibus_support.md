@@ -3,12 +3,16 @@ title: "ADR-004: OAK でのマルチノード Omnibus サポート"
 owning-stage: "~devops::gitlab delivery"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/omnibus_adjacent_kubernetes/decisions/004_multi_node_omnibus_support/
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:09:50+00:00"
 translator: claude
 stale: false
-lastmod: 2026-06-25T17:30:06-03:00
+lastmod: "2026-11-16T11:43:18-03:00"
 ---
+
+[ADR-008: Omnibus は高度なコンポーネントのデータストアを管理しない](008_no_omnibus_managed_data_stores.md)により**一部が置き換えられています**。
+高度なコンポーネントは外部の PostgreSQL と Redis を使用するため、この ADR にある
+Omnibus 管理下の PostgreSQL と Redis の公開に関するガイダンスは適用されなくなりました。Gitaly へのアクセスに変更はありません。
 
 ## 概要
 
@@ -30,6 +34,10 @@ GKE 上の OpenBao でマルチノード Omnibus デプロイメントを検証�
 OAK はマルチノード Omnibus デプロイメントをサポートします。高度なコンポーネントには PostgreSQL、Redis、Gitaly へのアクセスが必要です。Omnibus は計画された OAK 設定オプションと Helm values 生成を提供します。ネットワーク設定とサービス公開はお客様の責任です。
 
 ### データストレージの考慮事項
+
+このセクションの PostgreSQL と Redis に関するガイダンスは、
+[ADR-008: Omnibus は高度なコンポーネントのデータストアを管理しない](008_no_omnibus_managed_data_stores.md)により**置き換えられています**。
+高度なコンポーネントは外部の PostgreSQL と Redis を使用する必要があります。Gitaly に関するガイダンスは引き続き適用されます。
 
 高度なコンポーネントは GitLab の 3 つのステートフルサービス（PostgreSQL、Redis、Gitaly）へのアクセスが必要な場合があります。
 

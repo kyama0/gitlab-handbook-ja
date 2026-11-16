@@ -1,12 +1,12 @@
 ---
-title: "契約、バックグラウンドスクリーニング、試用期間、PIAA"
+title: "契約、バックグラウンドスクリーニング、試用期間、PIAA (Proprietary Information and Assignment Agreement)"
 description: "GitLab の契約情報および関連する手順。"
 upstream_path: /handbook/people-group/contracts-probation-periods/
-upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
-translated_at: "2026-09-15T21:54:37Z"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:06:51+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-11-16T10:21:04+01:00"
 ---
 
 ## 契約テンプレート

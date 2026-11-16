@@ -10,11 +10,11 @@ participating-stages: []
 # Hides this page in the left sidebar. Recommended so we don't pollute it.
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/omnibus_adjacent_kubernetes/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:09:50+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-05T14:21:07-03:00"
+lastmod: "2026-11-16T11:43:18-03:00"
 ---
 
 <!--
@@ -64,6 +64,7 @@ GitLab のプロダクトロードマップには、クラウドネイティブ�
 - [ADR-003: Omnibus is agnostic to Kubernetes service exposure](./decisions/003_omnibus_agnostic_k8s_service_exposure.md)
 - [ADR-004: Multi-node Omnibus support in OAK](decisions/004_multi_node_omnibus_support.md)
 - [ADR-005: Zero-Downtime Upgrades](decisions/005_zero_downtime_upgrades.md)
+- [ADR-008: Omnibus は高度なコンポーネントのデータストアを管理しない](decisions/008_no_omnibus_managed_data_stores.md)
 
 ## 提案
 

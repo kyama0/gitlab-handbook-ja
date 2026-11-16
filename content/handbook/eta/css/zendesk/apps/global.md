@@ -2,9 +2,9 @@
 title: 'Global アプリ'
 description: 'Zendesk Global アプリに関するドキュメント'
 upstream_path: /handbook/eta/css/zendesk/apps/global/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: "2026-11-09T12:52:15-06:00"
-translated_at: "2026-11-14T08:38:42.466927+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+lastmod: "2026-11-16T14:33:28-06:00"
+translated_at: "2026-11-16T21:06:51+00:00"
 translator: codex
 stale: false
 ---
@@ -60,7 +60,7 @@ Advanced Search は、チケット、ユーザー、組織（orgs）に対する
 このアプリは、次のようなポリシー上の制限を回避しないことに注意してください。
 
 - `Support Ops` フォームを使ってチケット外でアクションを実行すること
-- サポート連絡先の上限である 30 人を超えること
+- サポート連絡先の上限である 50 人を超えること
 - 連絡先管理プロジェクトを使っている組織のサポート連絡先を変更すること
 
 {{% alert title="技術的な詳細" color="primary" %}}

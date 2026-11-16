@@ -2,11 +2,11 @@
 title: 'コーディング標準'
 description: 'チームのコーディング標準に関するドキュメント'
 upstream_path: "/handbook/eta/css/resources/coding-standards/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T14:42:54.581550+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:06:51+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-16T11:26:36-06:00"
 ---
 
 
@@ -758,46 +758,30 @@ Salesforce に接続する必要がある場合は、[開始点](#writing-a-ruby
 <summary>クリックして展開</summary>
 
 ```ruby
-def base_salesforce_url
-  'https://login.salesforce.com'
-end
-
 def instance_url
-  'https://gitlab.my.salesforce.com'
+  sandbox? ? 'https://gitlab--gtlbuat.sandbox.my.salesforce.com' : 'https://gitlab.my.salesforce.com'
 end
 
 def salesforce_client_id
+  return ENV.fetch('SB_SFDC_CLIENTID') if sandbox?
+
   ENV.fetch('SFDC_CLIENTID')
 end
 
 def salesforce_client_secret
+  return ENV.fetch('SB_SFDC_CLIENTSECRET') if sandbox?
+
   ENV.fetch('SFDC_CLIENTSECRET')
 end
 
-def salesforce_username
-  ENV.fetch('SFDC_USERNAME')
-end
-
-def salesforce_password
-  ENV.fetch('SFDC_PASSWORD')
-end
-
-def salesforce_security_token
-  ENV.fetch('SFDC_SECURITYTOKEN')
-end
-
 def initial_connection
-  @initial_connection ||= Faraday.new(base_salesforce_url) do |c|
+  @initial_connection ||= Faraday.new(instance_url) do |c|
     c.options.timeout = request_timeout
     c.options.open_timeout = open_timeout
     c.headers['Accept'] = 'application/json'
     c.headers['Content-Type'] = 'application/x-www-form-urlencoded'
     c.request :url_encoded
   end
-end
-
-def bearer_token
-  @bearer_token ||= generate_token_with_retry
 end
 
 def salesforce_client
@@ -809,13 +793,15 @@ def salesforce_client
   end
 end
 
+def bearer_token
+  @bearer_token ||= generate_token_with_retry
+end
+
 def generate_token_with_retry
   data = {
-    'grant_type' => 'password',
+    'grant_type' => 'client_credentials',
     'client_id' => salesforce_client_id,
-    'client_secret' => salesforce_client_secret,
-    'username' => salesforce_username,
-    'password' => "#{salesforce_password}#{salesforce_security_token}"
+    'client_secret' => salesforce_client_secret
   }
   url = 'services/oauth2/token'
   page_data = request_with_retry(initial_connection, :post, url, data)

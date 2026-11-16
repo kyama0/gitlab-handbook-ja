@@ -2,11 +2,11 @@
 title: "レッドチームの運用方法"
 no_list: true
 upstream_path: /handbook/security/security-operations/red-team/how-we-operate/
-upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
-translated_at: "2026-09-08T21:10:47+00:00"
+upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
+translated_at: "2026-11-16T21:05:36+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-08T20:14:58Z"
+lastmod: "2026-11-16T14:31:44+01:00"
 ---
 
 ## 一般的な運用ガイドライン
@@ -58,7 +58,7 @@ lastmod: "2026-09-08T20:14:58Z"
 
 推奨事項は GitLab 内のどのグループに対しても提起でき、組織全体でセキュリティ改善のための柔軟なシステムを作成します。推奨事項を提起するときは:
 
-- **適切なグループを対象とする** - インフラストラクチャチーム、プロダクトチーム、または[インフラストラクチャセキュリティ](/handbook/security/product-security/infrastructure-security/)、[セキュリティアイデンティティ](/handbook/security/identity/)、[コーポレートセキュリティ](/handbook/security/corporate/)などのセキュリティチームに対して推奨事項を直接送ります。
+- **適切なグループを対象とする** - インフラストラクチャチーム、プロダクトチーム、または[インフラストラクチャセキュリティ](/handbook/security/product-security/infrastructure-security/)、[Identity Engineering](/handbook/security/corporate/engineering/identity/)、[コーポレートセキュリティ](/handbook/security/corporate/)などのセキュリティチームに対して推奨事項を直接送ります。
   - 適切な Issue トラッカーで Issue を作成し、適切なテンプレートを使用して、適切なチームに可視化されることを確保します。
 - **明確なコンテキストを提供する** - リスク、影響、推奨事項の根拠に関する情報を含めます。[このテンプレート](https://gitlab.com/gitlab-com/gl-security/security-operations/redteam/redteam-public/resources/red-team-issue-templates/-/blob/main/.gitlab/issue_templates/recommendation.md)を使用してください。
 - **ドメイン専門知識を活用する** - 受け取るグループが最も適切な実装アプローチを決定します。
