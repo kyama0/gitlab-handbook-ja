@@ -9,9 +9,9 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/
-upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
-lastmod: "2026-10-30T11:45:11Z"
-translated_at: "2026-11-02T21:17:59+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:21:56.719409+00:00"
 translator: codex
 stale: false
 ---
@@ -462,6 +462,7 @@ each alternative solution/path.
 1. [ADR-026: ライフサイクル管理機能（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/026_lifecycle_management_functionality/) - ライフサイクル管理機能の一覧と段階ごとの対象範囲
 1. [ADR-027: レジストリデータの Orbit への複製](decisions/027_replicating_registry_data_to_orbit.md) - Siphon CDC を使用して固定された一群のレジストリテーブルを Orbit に複製します。認可は Artifact Registry が引き続き担当します
 1. [ADR-029: エグレス使用量の計測（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/029_egress_metering/) - GitLab.com における組織ごとのダウンロードエグレス使用量の計測
+1. [ADR-030: リポジトリ署名キー](decisions/030_repository_signing_keys.md) - 1 つの OpenPGP キー設計で Debian と RPM のリポジトリメタデータに署名します。形式ごとのテーブルに暗号化したネームスペース単位の認証情報を格納し、署名機構を介して利用します
 
 ## インターフェース合意事項 {#interface-agreements}
 

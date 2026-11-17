@@ -9,9 +9,9 @@ owning-stage: "~devops::verify"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/runner_suspendable_environments/
-upstream_sha: 4684d72f27f3401d3ae72a26d72ae46eaeaab929
-lastmod: "2026-10-14T09:05:18+05:30"
-translated_at: "2026-10-17T08:39:16+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T07:34:44-08:00"
+translated_at: "2026-11-17T21:14:57.510431+00:00"
 translator: codex
 stale: false
 ---
@@ -64,7 +64,7 @@ Runner は `suspend_on_success` と `suspend_on_failure` という 2 つのサ�
 
 ## Rails との統合 {#rails-integration}
 
-Rails は環境キーを永続化し、再開時の認証を適用し、再開するワークロードを正しい Runner にルーティングします。これは [Runner Environment Service](../runner_job_router/) が存在するまでの一時的な代替です。このサービスができれば、不透明なキーの背後で環境ライフサイクルを管理し、その時点でこれらのテーブルとルーティングルールは廃止されます。以下のスキーマは、意図的に最小限かつ使い捨てにしています。
+Rails は環境キーを永続化し、再開時の認証を適用し、再開するワークロードを正しい Runner にルーティングします。[Environment Service](../environment_service/)が環境ライフサイクルを担当しますが、Rails は引き続き CI ジョブと環境を関連付け、その使用を認可します。従来のキーとルーティングは、それらの環境を移行または削除するまで残ります。
 
 ### 永続化 {#persistence}
 
@@ -205,7 +205,7 @@ TTL は Runner の設定です。マネージャーが作成するすべての�
 
 ### エージェントが開始するサスペンド {#agent-initiated-suspension}
 
-エージェントやスクリプト自体が一時停止するタイミングを決めるインタラクティブなワークフローでは、環境にインバンドのサスペンド API が必要です。前述したジョブ完了トリガーだけでは不十分です。[Runner Environment Service](../runner_job_router/) はこの形を定義しています。環境ライフサイクル用の `Create`、`Stop`、`Start`、`Terminate` と、環境内で実行するための `Run`/`Exec` であり、[step-runner proto](https://gitlab.com/gitlab-org/step-runner/-/blob/e0f48aa3d1049f510c015878d93d08c410e6822d/proto/sandbox.proto)に概要が示されています。このブループリントのサスペンド/再開メカニズムは、そのモデルにおける `Stop`/`Start` の実装です。これらの操作を環境内のエージェントに公開し、エージェントが意思決定ポイントでサスペンドして人間に質問を提示し、回答とともに再開できるようにすることは、このメカニズムを基盤とする今後のイテレーションです。
+インタラクティブなワークフローでは、ジョブが完了する前にエージェントが一時停止する必要がある場合があります。[Environment Service](../environment_service/)は、このライフサイクルに `Stop`/`Start` を、実行には `Run`/`Exec` を提案しています。サスペンドのメカニズムをそれらの API に対応付け、認可された呼び出し元アプリケーションを通じてエージェントに公開することは、今後の統合作業として残ります。
 
 ### デタッチ可能なストレージ {#detachable-storage}
 
@@ -219,6 +219,6 @@ Instance のサスペンドでは、VM を停止状態に保つことで、イ�
 
 - [CI とエージェントセッション向けの再開可能なジョブ](https://gitlab.com/groups/gitlab-org/-/work_items/21159)
 - [ブループリント - CI とエージェントセッション向けの再開可能なジョブ](https://gitlab.com/gitlab-org/gitlab/-/work_items/593314)
-- [GitLab Runner ジョブルーター](../runner_job_router/) - Runner Environment Service を定義します
+- [Environment Service](../environment_service/)
 - [Kubernetes 上のサスペンド可能な環境 - 調査](https://gitlab.com/-/snippets/5973444)
 - [duo タグ向けに最新のエグゼキューターを使用する Runner フリートをプロビジョニングする](https://gitlab.com/gitlab-org/gitlab/-/work_items/597038)

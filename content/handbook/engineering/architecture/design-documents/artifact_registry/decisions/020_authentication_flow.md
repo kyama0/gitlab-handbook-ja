@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認証設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-lastmod: "2026-11-06T15:14:06Z"
-translated_at: "2026-11-07T00:02:49.296141+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: codex
 stale: false
 ---
@@ -53,6 +53,7 @@ Rails は Cloud Connector v1 キーでトークンに署名し、すべてのト
 | 8 | **サービストークンを、ダウンタイムなしにローテーションできます。** 現在の値と次の値を同時に受け付けます。 | はい。ローテーション中は、どちらの値でも認証できます |
 | 9 | **開発用認証情報を、トークン交換や認可の強制と同時に使用しません。** | はい。それらを組み合わせた設定は読み込みに失敗します |
 | 10 | **Kubernetes のピアは、その経路が有効で、アイデンティティが許可リストに含まれ、ルートがオプトインしている場合にのみ受け入れます。** 検証に失敗したクラスター発行トークンを、エンドユーザートークンとして再試行することはありません。 | はい。いずれかが欠けたピアは拒否されます |
+| 11 | **複合アイデンティティは認証しません。** 主体が別の当事者のために行動するトークンは、拒否します。 | はい。`gitlab.identities` が何らかの当事者を指定する、または読み取れないトークンは拒否し、そのクレームが存在しないか空の場合は受け入れます |
 
 ### 非本番開発モード {#non-production-development-mode}
 
@@ -258,6 +259,8 @@ ID トークンは、CI ジョブがすでに保持する認証情報の中で�
    相互 TLS を再検討する条件を含む、クラスター内のトランスポートセキュリティについては、[ADR-024](024_infrastructure_delivery.md#transport-security)に記載します。
 1. **クラスター内サービスの呼び出し元の組織スコープ。** [同じクラスター内で受け入れられた](#services-in-the-same-cluster-kubernetes-service-account-tokens)サービスアカウントは、それを許可するルートが到達するすべての組織で動作します。
    設定や署名付きクレームによって、呼び出し元をそのサービス提供先の組織に結び付ける方法は未解決です。
+
+1. **複合アイデンティティ。** 現在、エージェントはユーザー自身のトークンで動作し、複合トークンが Artifact Registry に届くことはないため、エージェントフローが独自のアイデンティティでユーザーのために動作する必要が生じたときに、制約 11 を再検討します。
 
 ## 参考文献 {#references}
 

@@ -2,11 +2,11 @@
 title: エンドツーエンドパイプラインモニタリング
 description: E2E モニタリングツールと実践の概要
 upstream_path: /handbook/engineering/testing/end-to-end-pipeline-monitoring/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:06:25+09:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:10:23.948269+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-07T16:51:00+02:00"
+lastmod: "2026-11-16T09:35:27+01:00"
 ---
 
 ## エンドツーエンド（E2E）テストパイプライン {#end-to-end-e2e-test-pipelines}
@@ -27,7 +27,6 @@ lastmod: "2026-07-07T16:51:00+02:00"
 | リリース                                  | [パイプライン](https://ops.gitlab.net/gitlab-org/quality/release) \| [定義](https://gitlab.com/gitlab-com/gl-infra/deployer/-/blob/10cc4811f5aae0a38b77cd5c9def954a0e2afac1/ci/environments/release.yml#L82-93)                                                                                                                                                                                     | スモーク      | [最終リリース後の毎月](https://ops.gitlab.net/gitlab-org/quality/release/-/pipeline_schedules)および、セキュリティとパッチリリース中に[リリースへのデプロイ後](/handbook/engineering/infrastructure-platforms/environments/#release)                 | [`#e2e-run-release`](https://gitlab.slack.com/archives/C0154HCFLRE)                                                                         | [リリース](https://gitlab-qa-allure-reports.s3.amazonaws.com/release-sanity/master/index.html)                      |
 | GitLab `master` `e2e:test-on-omnibus-ee` | [パイプライン](https://gitlab.com/gitlab-org/gitlab/pipelines) \| [定義](https://gitlab.com/gitlab-org/gitlab/-/blob/77a5b0b3f8f910d4fe89a3fed46c4da53b1e587e/.gitlab/ci/qa.gitlab-ci.yml#L77-88)                                                                                                                                                                                                   | フル       | [2時間ごとにスケジュールされたパイプライン](https://gitlab.com/gitlab-org/gitlab/pipeline_schedules)                                                                                                                                                    | [`#e2e-run-master`](https://gitlab.slack.com/archives/CNV2N29DM)                                                                            | [Master EE](https://gitlab-qa-allure-reports.s3.amazonaws.com/e2e-test-on-omnibus/master/index.html)               |
 | GitLab `master` `e2e:test-on-omnibus-ce` | [パイプライン](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules) \| [定義](https://gitlab.com/gitlab-org/gitlab/-/blob/77a5b0b3f8f910d4fe89a3fed46c4da53b1e587e/.gitlab/ci/qa.gitlab-ci.yml#L121-135)                                                                                                                                                                                      | フル       | [毎日4:00am UTC](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules)                                                                                                                                                               | [`#e2e-run-master`](https://gitlab.slack.com/archives/CNV2N29DM)                                                                            | [Master CE](https://gitlab-qa-allure-reports.s3.amazonaws.com/e2e-test-on-omnibus-ce/master/index.html)            |
-| GitLab `master` `e2e:test-on-gdk`        | [パイプライン](https://gitlab.com/gitlab-org/gitlab/-/pipelines?ref=master&amp;source=schedule) \| [定義](https://gitlab.com/gitlab-org/gitlab/-/blob/77a5b0b3f8f910d4fe89a3fed46c4da53b1e587e/.gitlab/ci/qa.gitlab-ci.yml#L151-164)                                                                                                                                                                | フル       | [2時間ごとにスケジュールされたパイプライン](https://gitlab.com/gitlab-org/gitlab/pipeline_schedules)                                                                                                                                                    | [`#e2e-run-master`](https://gitlab.slack.com/archives/CNV2N29DM)                                                                            | [Master GDK](https://gitlab-qa-allure-reports.s3.amazonaws.com/e2e-test-on-gdk/master/index.html)                  |
 | GitLab `master` `e2e:test-on-cng`        | [パイプライン](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules) \| [定義](https://gitlab.com/gitlab-org/gitlab/-/blob/77a5b0b3f8f910d4fe89a3fed46c4da53b1e587e/.gitlab/ci/qa.gitlab-ci.yml#L166-178)                                                                                                                                                                                      | スモーク      | [2時間ごとにスケジュールされたパイプライン](https://gitlab.com/gitlab-org/gitlab/pipeline_schedules)                                                                                                                                                    | [`#e2e-run-master`](https://gitlab.slack.com/archives/CNV2N29DM)                                                                            | [Master CNG](https://gitlab-qa-allure-reports.s3.amazonaws.com/e2e-test-on-cng/master/index.html)                  |
 | GitLab `master` ナイトリー                  | [パイプライン](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules) \| [定義](https://gitlab.com/gitlab-org/gitlab/-/blob/77a5b0b3f8f910d4fe89a3fed46c4da53b1e587e/.gitlab/ci/qa.gitlab-ci.yml#L137-149)                                                                                                                                                                                      | フル       | [毎日4:00am UTC](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules)                                                                                                                                                               | [`#e2e-run-master`](https://gitlab.slack.com/archives/CNV2N29DM)                                                                            | [Master ナイトリー](https://gitlab-qa-allure-reports.s3.amazonaws.com/nightly/master/index.html)                      |
 
@@ -37,6 +36,9 @@ NOTE:
 ## ビジュアルパイプライン環境マップ
 
 ![E2Eテストパイプライン環境マップ](/images/engineering/infrastructure-platforms/developer-experience/E2E%20test%20suite_pipeline%20mapping%20-%20Current.png)
+
+注：
+この図は古いものです。2026 年 9 月に削除された、廃止済みの `e2e:test-on-gdk` パイプラインがまだ表示されています。LucidChart の元の図を更新する必要があります。https://gitlab.com/groups/gitlab-org/quality/test-governance/-/work_items/7 を参照してください。
 
 この図は、エンドツーエンドテストパイプラインがインフラストラクチャの様々な環境にどのようにマッピングされるかを視覚的に示しています。マージリクエスト、開発、ステージング、プレプロ、本番環境でのテストのフローを示し、テストがいつトリガーされるか（コミット時、デプロイ後、設定変更後など）と各環境でどの種類のテストが実行されるか（スモーク、フルなど）を示しています。
 
@@ -62,7 +64,6 @@ NOTE:
 
 | 環境                  | 説明                                                                                                                                               | リンク                                                     |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| `master` (`gdk`)             | `Docker`コンテナにパッケージされた[`gitlab-development-kit`](https://gitlab.com/gitlab-org/gitlab-development-kit)環境に対するE2Eテスト実行。 | `e2e-test-on-gdk`     |
 | `master` (`test-on-omnibus`) | `omnibus`イメージの様々な設定に対するE2Eテスト実行。                                                                                    | `e2e-test-on-omnibus` |
 | `nightly`                    | `omnibus`ナイトリーイメージの様々な設定に対するE2Eテスト実行。                                                                            | `nightly`             |
 | `staging-full`               | `https://staging.gitlab.com`環境に対するE2Eテスト実行。                                                                                      | `staging-full`        |

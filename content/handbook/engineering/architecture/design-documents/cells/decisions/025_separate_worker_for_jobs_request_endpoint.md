@@ -8,11 +8,11 @@ approvers: ["@sxuereb"]
 coach: "@sxuereb"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/decisions/025_separate_worker_for_jobs_request_endpoint/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:21:56.719409+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-05T10:38:47+01:00"
+lastmod: "2026-11-17T07:34:44-08:00"
 ---
 
 ## コンテキスト
@@ -35,7 +35,7 @@ HTTP Router のアラートの正確なエラーレートメトリクスは、�
 2. jobs-requests エンドポイント用の 2 つの新しい環境をデプロイするためにデプロイメントパイプラインを更新します。
 3. Cloudflare 設定で `/api/v4/jobs/request` に対する明示的な Worker ルートを追加します。Cloudflare のルートマッチング動作は最も具体的なものから一般的なものへの順序であるため、このルートは一般的な HTTP Router ルートよりも優先されます。
 
-[Job Router](../../runner_job_router/_index.md) が実装されてすべての Runner がロングポーリングから切り替わったら、この独立した Worker を削除してルーティングをメイン HTTP Router に統合できます。
+[プッシュベースのジョブディスパッチ](https://gitlab.com/groups/gitlab-org/-/work_items/21091)がすべての Runner のジョブポーリングを置き換えたら、この独立した Worker を削除してルーティングをメイン HTTP Router に統合できます。
 
 ## 結果と影響
 
@@ -61,7 +61,7 @@ WebSocket 接続に切り替えることでロングポーリングを排除し�
 
 以下の理由で即時実施が困難：
 
-- すでに [Job Router](../../runner_job_router/_index.md) の一部として開発中。
+- 既存の Relay プロキシは、引き続きポーリングリクエストを Rails に転送します。
 - 本番環境での実装に相当な時間がかかります。
 - 後方互換性のためにロングポーリングを引き続きサポートする必要があります。
 

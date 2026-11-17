@@ -3,9 +3,9 @@ title: "dbt ガイド"
 description: "data build tool (dbt) ガイド"
 math: true
 upstream_path: /handbook/enterprise-data/platform/dbt-guide/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-lastmod: "2026-11-04T09:48:40+01:00"
-translated_at: "2026-11-05T14:47:17.928953+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T09:22:54Z"
+translated_at: "2026-11-17T21:10:23.948269+00:00"
 translator: codex
 stale: false
 ---
@@ -1748,9 +1748,7 @@ Data Team は、GDPR のために Snowflake データウェアハウスから個
 
 dbt モデルを削除するには、ローカルの IDE で関連するファイルを削除し、変更をコミットして、CI パイプラインで実行するためにマージリクエストの一部としてプッシュします。
 
-本番の Snowflake テーブルは自動的には削除されず、Data Platform チームによって別途処理する必要があることに注意してください。
-
-MR の作成者は、フォローアップの Issue を作成し、テーブルの削除を完了するために Data Platform チームに割り当てるべきです。
+本番の Snowflake テーブルは自動的には削除されません。MR の作成者は、削除用の Issue で、トリアージを担当する Data Engineer にテーブルの削除を依頼します。Issue がない場合は作成します。削除までの待機期間やロールバックの方法を含む全手順については、[dbt モデルの非推奨化](/handbook/enterprise-data/how-we-work/dbt-model-deprecation/)を参照し、削除したモデルを[エピック gitlab-data&1850](https://gitlab.com/groups/gitlab-data/-/epics/1850)のリストに追加します。
 
 場合によっては、dbt モデルが削除された後も、履歴目的でテーブルを保持する必要があることがあります。つまり、それらは更新されなくなりますが、参照のためにそのまま残されます。
 

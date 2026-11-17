@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "Artifact Registry のストレージ、アーティファクトサイズ、API レート、エンティティ数の上限"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-translated_at: "2026-11-05T21:20:52.583755+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:21:56.719409+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-05T17:24:28Z"
+lastmod: "2026-11-17T11:47:24+01:00"
 ---
 
 
@@ -113,7 +113,7 @@ GitLab.com の CDN と Runway の制限は、アプリケーションの制限�
 - 単一の大規模なネームスペースによる、インスタンス容量の消費を防げません
 - 課金やキャパシティプランニングのために、使用量をネームスペースに帰属させられません
 
-**却下理由：** GitLab.com の公平なマルチテナンシーには、ネームスペース単位の上限が必要です。組織は課金アンカーのままであり（[ADR-001](001_organizations_as_anchor_point.md)）、そのネームスペースの使用量を集計します。
+**却下理由：** GitLab.com の公平なマルチテナンシーには、ネームスペース単位の上限が必要です。課金アンカー（[ADR-022](022_namespace_decoupling.md)）は、引き続きそのネームスペースの使用量を集計します。
 
 ### 代替案 3：CDN／ロードバランサーのみで制限 {#alternative-3-limit-at-cdnload-balancer-only}
 

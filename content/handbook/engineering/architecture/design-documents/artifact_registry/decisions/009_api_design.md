@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリの API エンドポイント構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-translated_at: "2026-11-05T21:28:52.021336+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-05T17:24:28Z"
+lastmod: "2026-11-17T11:47:24+01:00"
 ---
 
 
@@ -118,7 +118,7 @@ API の領域は、異なるルールを持つ 3 つのカテゴリーに明確�
 
 仮想リポジトリがアップストリームとして登録しているリポジトリは、**どちらの値でも** `409 Conflict` を返します。破壊的な操作の意図は、この関連付けには及びません。この関連付けは、対象リポジトリの内容ではなく、仮想リポジトリの設定であるためです。呼び出し元は、先に関連付けを削除します。`409` は条件を示しますが、参照を持つ仮想リポジトリの一覧は示しません。
 
-このパラメーターを必須にするのは、後にパラメーターを廃止したときに、明確なエラーを返せるようにするためです。GA では、論理削除が唯一の削除経路になります（[ADR-010](010_data_retention.md#release-phasing)）。そのため API はこのパラメーターを廃止し、引き続き送信するクローズドベータの利用者には、一般的な不明フィールドの `400` ではなく、**復旧手段としてゴミ箱を示す明示的な拒否**を返します。
+API は、`/api/v1` の全期間でこのパラメーターを維持します。永久削除でもゴミ箱への移動でも、2 つの値がすべてのリポジトリ削除を保護するためです。
 
 #### リポジトリ単位の API {#repository-level-apis}
 
@@ -212,7 +212,7 @@ GitLab API は、提供先のプラットフォームバージョン間で後方
 ## 参考文献 {#references}
 
 - [ADR-001：アンカーポイントとしての組織](001_organizations_as_anchor_point.md)
-- [ADR-010：データ保持](010_data_retention.md#release-phasing) - クローズドベータと GA にわたる削除の段階的導入
+- [ADR-010：データ保持](010_data_retention.md#release-phasing) - ゴミ箱の提供開始までは永久削除
 - [ADR-022：ネームスペースデカップリング](022_namespace_decoupling.md)
 - [Cells アーキテクチャ](/handbook/engineering/architecture/design-documents/cells/)
 - [Container Registry Routing Service (Cells)](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/14825)

@@ -1,260 +1,158 @@
 ---
 title: "Artifact Registry ADR 006: 技術スタック"
 owning-stage: "~devops::package"
-description: "システム要件とアーキテクチャ決定に基づく Artifact Registry サテライトサービスの技術選定"
+description: "Artifact Registry に使用する Go、PostgreSQL、オブジェクトストレージ、Redis プロトコルのサービス。2 つのジョブキューと、任意の CDN および分析ストア。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-translated_at: "2026-11-05T21:20:52.594353+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:21:56.719409+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-05T17:24:28Z"
+lastmod: "2026-11-17T11:47:24+01:00"
 ---
 
+<!-- Design Documents often contain forward-looking statements -->
+<!-- vale gitlab.FutureTense = NO -->
 
 ## 背景 {#context}
 
-本 ADR では、システム要件（[ADR-003](003_system_requirements.md)）を Artifact Registry サテライトサービス向けの具体的な技術にマッピングします。
+Artifact Registry は、Rails モノリスの外にある独立したサービスです。GitLab.com では、[ADR-024](024_infrastructure_delivery.md)に記載した方法で稼働します。
+単独で [ADR-003](003_system_requirements.md) の要件を満たす必要があるため、独自の言語、データストア、補助サービスが必要です。
 
-Artifact Registry は Rails モノリス外のスタンドアローンサービスとして構築され、[Runway GKE ランタイム](https://docs.runway.gitlab.com/runtimes/kubernetes/getting-started/)を使ってデプロイされます。これには、すべてのシステム要件を独立して満たし、より広い GitLab プラットフォームと統合できる技術スタックの選定が必要でした。
+選定には、次の 2 つの事実が影響しました。
 
-技術選択は次の 2 つの要因によって情報を得ています。
-
-1. **GitLab LabKit**: LabKit は GitLab サービスのために、相関、ロギング、トレーシング、メトリクスなど共通機能を提供するミニマリストなライブラリです。[Go](https://gitlab.com/gitlab-org/labkit)と [Ruby](https://gitlab.com/gitlab-org/ruby/gems/labkit-ruby) の両方で利用可能です。最近の動向では、LabKit を [Rust](https://gitlab.com/gitlab-org/rust/labkit-rs)に移植する作業が進んでいます。
-1. **Package ステージチームの専門知識**: [Package ステージ](/handbook/engineering/devops/package/) チームは、Go（Container Registry の構築・運用）と Rails（モノリス内の Package Registry の構築・運用）の両方に深い経験を持っています。
-
-3 つの選択肢が検討されました。
-
-1. **Go** — Gitaly、Workhorse、Container Registry といった他の GitLab サテライトサービスのパターンに従う。
-1. **Ruby on Rails** — スタンドアローン Rails API 専用アプリケーションとして、GitLab モノリスから選択したパターンとライブラリを再利用する。
-1. **Rust** — Knowledge Graph や新しい Auth サービスなどの新しい GitLab プロジェクトの道を辿り、Rust のパフォーマンスと安全性保証を活用する。
+1. **LabKit。** [LabKit](https://gitlab.com/gitlab-org/labkit) は、サテライトサービス向けの GitLab 共通ライブラリであり、相関付け、ログ、トレース、メトリクスを提供します。Go 版と Ruby 版があります。
+1. **チームの経験。** Package ステージのチームは、Go の Container Registry と、Rails モノリス内の Package Registry を構築し、運用しています。
 
 ## 決定 {#decision}
 
-**Go** が新しい GitLab サテライトサービス向けに推奨される言語です。
+**サービスは Go で記述します。リレーショナルデータは独自の PostgreSQL データベースに、ブロブはオブジェクトストレージに、短命な共有状態は Redis プロトコルのサービスに保持します。データの変更と同時にコミットする必要があるジョブは、同じトランザクション内で PostgreSQL ベースのキューに入れ、それ以外のジョブはデフォルトで Redis ベースのキューに入れます。CDN と分析ストアは任意です。**
 
-Go は GitLab のサテライトサービス（Gitaly、Runner、Workhorse、Container Registry）で最も使用されており、本プロジェクトに対してパフォーマンス、エコシステム成熟度、組織的整合性の最良のバランスを提供します。
+### 常に満たすべき条件 {#what-must-always-hold}
 
-**長所**:
-
-1. **十分に確立された**: GitLab サテライトサービス全体で最も使用されており（Gitaly、Runner、Workhorse、Container Registry）、実証された Go ライブラリとパターンがある。
-1. **組織的投資**: LabKit が、可観測性、ロギング、トレーシング、利用イベント、ビリングイベントなどを最初から提供する。Go を中心に構築されたサポートツールとインフラは、既存のサービスにも恩恵をもたらしやすい。Artifact Registry のために構築されたツールやデプロイの改善は、既存の Go サテライトサービスに後付けで適用してメンテナンス負担を軽減できる可能性がある。Go が引き続き最も使用される選択肢である場合、初期投資は Rails サービスのために既存ツールを作成または適応するよりも価値が高い可能性がある。
-1. **パフォーマンス特性**: 高スループット、並行 I/O ワークロード（アーティファクトのアップロード／ダウンロード）に対する優れたパフォーマンス、低メモリフットプリント、効率的なリソース活用。長期間のストリーミング接続を含む多数の同時アーティファクト転送を処理するのに適した、強力な並行性プリミティブ（goroutine、channel）。
-1. **エージェント開発のための型安全性**: コンパイル時の型安全性と静的型付けにより、AI エージェントが推論しやすい明確なコントラクトを動的型付け言語に比べて提供する。ただし Go の保証は Rust よりも弱い（例えば Go は構造体の意図しない変更を防がない）。Go のツールチェーンも、レース検出器や goroutine リーク検出器など、エージェントワークフローのためのランタイム品質ゲートを提供する。
-1. **クラウドネイティブな整合性**: 静的バイナリは、すべてのインストールタイプにわたるデプロイと配布をシンプルにする。
-1. **広範な貢献者プール**: Go は GitLab 内で Rust に比べて熟練した貢献者のプールが大きく、スタンドアローン Rails アプリケーションよりサテライトサービスで作業しているチームに馴染み深い。
-1. **ベンダーサポートの SDK エコシステム**: すべての主要クラウドプロバイダー（[AWS](https://github.com/aws/aws-sdk-go-v2)、[GCP](https://pkg.go.dev/cloud.google.com/go/storage)、[Azure](https://github.com/Azure/azure-sdk-for-go)）が公式の Go SDK を維持しており、オブジェクトストレージなどクラウドネイティブ統合の長期サポートを保証する。
-
-**短所**:
-
-1. **ツールギャップ**: データベースマイグレーション、データベースロードバランシング、バックグラウンドジョブ、フィーチャーフラグのためのライブラリを構築または採用する必要がある。既存のモノリスツールを直接抽出することはできず、Database Frameworks チームはサテライトサービス向けに同等の機能を提供する計画はない。
-   - 部分的な緩和: Container Registry で使用されているデータベースロードバランサーを抽出して再利用できる可能性がある
-1. **より小さな貢献者プール**: GitLab 内で Ruby/Rails と比較して Go の貢献者が少なく、チームをまたぐ貢献を遅らせる可能性がある。
-1. **仮想レジストリの書き直し**: Rails モノリス内の現在の仮想レジストリは完全な書き直しが必要。
-   - 部分的な緩和: [PoC](https://gitlab.com/jdrpereira/artifact-registry-poc/-/blob/main/README.md)により、書き直しが実現可能な選択肢であることが証明された。
+| # | 制約 | 機械的に検証可能か？ |
+| --- | --- | --- |
+| 1 | **Go。** サービスは Go で記述します。 | はい：サービスが提供するすべてのバイナリを Go からビルドします |
+| 2 | **専用のデータベース。** リレーショナルデータは、Rails モノリスのどの部分とも共有しない PostgreSQL データベースに格納します。 | いいえ：デプロイ環境でどのデータベースを用意するかは、インフラの選択です |
+| 3 | **移行はリリースに同梱し、起動時に実行します。** Pod は、起動時に未適用の移行を適用し、外部のオーケストレーションやデプロイ後のフェーズを必要としません。 | はい：新しいリリースは、起動時に古いスキーマを最新にし、同時に起動する Pod は各移行を 1 回だけ適用します |
+| 4 | **スキーマ変更は、ブロックを最小限にする形式を使い、アップグレード後も動作します。** PostgreSQL にノンブロッキングな形式がある文では、パーティションテーブルも含めてその形式を使い、ロールバック可能にします。ローリングデプロイ中は、前のリリースも移行後のスキーマで動作し続けます。 | 一部：ノンブロッキングな形式があるのに書き込みをブロックする文は、マージ前に拒否し、すべての移行にダウンの手順を設けます。前のリリースとの互換性にはレビューが必要です |
+| 5 | **データの変更と同時にコミットする必要があるジョブは、そのトランザクション内でキューに入れます。** ジョブが失われるとデータが不整合となり、自動回復できない場合は、変更と同じトランザクション内で PostgreSQL ベースのキューに入れます。 | はい：ロールバックされたトランザクションはジョブを残さず、コミットされたトランザクションは必ずそのジョブを残します |
+| 6 | **それ以外のジョブは、デフォルトで Redis ベースのキューに入れます。** | いいえ：失われたジョブが回復するかどうかは、各ジョブの仕様に記録する判断です |
+| 7 | **両方のキューが同じ方法で報告します。** どちらのキューのジョブも、同じトレースとメトリクスを備えた、1 つの可観測性レイヤーを通ります。 | はい：どちらのキューのジョブも、同じ形式のトレースとメトリクスを出力します |
+| 8 | **Redis プロトコルのサービスが短命な共有状態を保持します。** キャッシュ、レート制限、分散ロック、Redis ベースのキューには、Redis や Valkey などの Redis プロトコルのサービスを使います。 | はい：サービスは Redis と Valkey のどちらに接続しても同様に動作します |
+| 9 | **ブロブはオブジェクトストレージに格納し、ローカルディスクには格納しません。** | はい：オブジェクトストレージプロバイダーを指定しないストレージ設定は、起動時に拒否します |
+| 10 | **各プロバイダーには、それぞれ専用の SDK で接続します。** サービスは、1 つの内部インターフェースの背後で、各プロバイダーのベンダーが保守する SDK を通じてそのストレージにアクセスし、複数のプロバイダーを扱うサードパーティーライブラリは使いません。 | はい：各プロバイダーには、そのベンダーの SDK からのみアクセスします |
+| 11 | **デフォルトで専用のバケット。** デプロイ環境はサービスに専用のバケットを用意し、ライフサイクルポリシー、アクセス制御、コスト追跡、運用を他の GitLab ストレージと分けます。ストレージの配置は、共有バケット内のパスプレフィックス配下でも動作します。 | いいえ：バケットは運用者が選択します |
+| 12 | **任意の依存先は任意のままにします。** CDN も、ClickHouse などの分析ストアもなくても、サービスは完全に機能します。 | はい：CDN と分析ストアを設定しなくても、すべてのルートが動作します |
+| 13 | **直接呼び出しを使い、イベントバスは使いません。** サービスは、まず Rails モノリスをはじめとする他のサービスと、直接の API 呼び出しで通信し、メッセージブローカーなしで稼働します。 | はい：アクセスできるメッセージブローカーがなくても、サービスが起動し、すべてのルートに応答します |
 
 ## コンポーネントと依存関係 {#components-and-dependencies}
 
-以下のライブラリの一部は確定した選択肢（明記されている場合）で、その他は初期候補のままです。フォローアップ MR で残りの候補を調査し、本 ADR は適宜更新されます。
+### 1. バックグラウンドジョブ処理 {#1-background-job-processing}
 
-### 1. バックグラウンドジョブ処理: ハイブリッド (River + asynq) {#1-background-job-processing-hybrid-river--asynq}
+失われるとデータが不整合になるジョブと、後のスイープや再集計で修復できるジョブがあります。
+1 つのキューでは、両方に適切に対応できません。
 
-Artifact Registry は、ライフサイクルポリシー実行、ガベージコレクション、アップロードのパージ、イベント処理、アナリティクス集計、カウンタバッチ処理、クリーンアップ操作のためにバックグラウンドジョブ処理を必要とします。これには、信頼性のあるスケジューリング（cron スタイルおよび 1 回限り）、リトライと失敗処理、優先度キュー、モニタリングと可観測性が含まれます。
+- **PostgreSQL ベースのキュー**は、データを変更するトランザクション内でジョブをキューに入れます。これにより、書き込みと別個のキュー投入との間にクラッシュし、自動回復できない孤立データが残る隙間をなくします。その代償は行の更新負荷です。各ジョブは、アプリケーションのデータベース内で行の挿入、更新、削除を行います。件数の少ない重要なジョブだけをここに振り分けることで、負荷を抑えます。
+- **Redis ベースのキュー**は、PostgreSQL に負荷をかけず、新しいインフラも必要ありません。キュー、再試行、デッドレターキューは、GitLab のエンジニアが慣れ親しんでいる Sidekiq と同じように動作します。
 
-[正式な評価](https://gitlab.com/gitlab-org/gitlab/-/work_items/594600)では、両ツールを個別に、またハイブリッド組み合わせとして評価しました。結論は **ハイブリッドアーキテクチャ** です: 整合性が重要なジョブには River、高スループットで結果整合的なジョブには asynq を使用します。両者は、バックエンドをまたいで一貫した OTel トレーシングと Prometheus メトリクスを提供する統一抽象の背後にラップできます。
+たとえば、ガベージコレクションとライフサイクルポリシーの実行は PostgreSQL ベースのキューに、イベント処理と分析の集計は Redis ベースのキューに入れます。
 
-#### River — PostgreSQL ベース、整合性が重要なジョブ向け {#river--postgresql-backed-for-consistency-critical-jobs}
+### 2. リレーショナルデータベース：PostgreSQL {#2-relational-database-postgresql}
 
-[River](https://github.com/riverqueue/river)は、行レベルロックを使った並行デキューによる PostgreSQL ベースの Go ジョブキューで、GitLab.com 規模で Container Registry の[オンラインガベージコレクション](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/gitlab/online-garbage-collection.md) で使われているのと同じ仕組みです。
+PostgreSQL は GitLab のデータベース標準に適合し、GitLab.com の規模で実績があります。GitLab は、その専門知識、ランブック、バックアップと復旧の手順をすでに備えています。
+重要なメタデータに対し、強い整合性を提供します。
+専用のデータベースにより、モノリスの複数データベースへの分解を伴わずに、サービスをモノリスから分離します。
 
-**重要ジョブで River を選ぶ理由:**
+#### 2.1 データベーススキーマの移行 {#21-database-schema-migrations}
 
-- **トランザクショナルなエンキュー**: ジョブはデータ変更と同じ PostgreSQL トランザクション内でエンキューされます。トランザクションがロールバックされれば、ジョブは決して作成されません。これにより、ビジネス書き込みと別個のキュー登録の間のクラッシュウィンドウが排除され、孤立データに自動的な復旧経路がなくなる事態を防げます。同等の機能セットを持つ、これを実現する他のアクティブにメンテナンスされている Go + PostgreSQL ジョブキューはありません。
-- **PgBouncer 互換**: ポーリング専用モードで動作し、PgBouncer のトランザクションプーリングと互換性があります。
-- メンテナンスタスク向けの**ビルトインリーダー選出**、定期/cron スケジューリング、ユニークジョブ重複排除、グレースフルシャットダウン、ネイティブな OTel サポート。
-- **リニアなスループットスケーリング**: スループットがワーカー数に対してリニアにスケールします。[公式ベンチマーク](https://riverqueue.com/docs/benchmarks)では、2,000 ワーカーで毎秒 46K ジョブが報告されています。
+サテライトサービスにはモノリスの移行ツールがないため、サービス独自の移行レイヤーが、ゼロダウンタイム移行、安全なスキーマ変更（パーティションテーブルを含む）、ロールバック、移行状態の追跡を提供する必要があります。
 
-**運用上の考慮事項:**
+### 3. ブロブストレージ：オブジェクトストレージ {#3-blob-storage-object-storage}
 
-- **デッドタプルの発生**: 各ジョブはジョブテーブルで insert、update、delete を巡回し、ジョブごとに約 2.4 倍のデッドタプルを生成します。緩和策: (a) 低ボリュームの重要ジョブだけを River にルーティングする、(b) ジョブテーブルでの [autovacuum チューニング](https://www.postgresql.org/docs/16/routine-vacuuming.html#AUTOVACUUM)、(c) 完了ジョブの短い保持期間。ハイブリッドアーキテクチャは影響範囲を限定します。詳細な計測値は [評価](https://gitlab.com/gitlab-org/gitlab/-/work_items/594600)を参照してください。
-- **ライセンス**: [MPL-2.0](https://github.com/riverqueue/river/blob/master/LICENSE)（弱いコピーレフト、ファイルレベルのみ）。River をライブラリ依存として使用し、そのソースを改変しない限り、AR のコードには影響しません。法務レビュー済み（[gitlab-com/legal-and-compliance#3437](https://gitlab.com/gitlab-com/legal-and-compliance/-/work_items/3437)）。
-- **Pro 機能は不要**: River OSS は AR のすべてのニーズをカバーします。Pro 限定機能（グローバル並行性制限、ワークフロー、DLQ、永続的 cron）は AR のワークロードには必要ありません。キューごとのワーカー上限で十分な並行性制御が得られます。
+オブジェクトストレージは、GitLab の[統合オブジェクトストレージ](https://docs.gitlab.com/administration/object_storage/)戦略に従い、すべての主要プロバイダーで動作し、大きなブロブに対して費用対効果が高く、GitLab のレジストリや CI アーティファクトで大規模運用の実績があります。
+セルフマネージドの顧客は、サポート対象のプロバイダーを選択します。
 
-#### asynq — Redis ベース、高スループットで結果整合的なジョブ向け {#asynq--redis-backed-for-high-throughput-and-eventually-consistent-jobs}
+### 4. コンテンツ配信ネットワーク（CDN） {#4-content-delivery-network-cdn}
 
-- [asynq](https://github.com/hibiken/asynq)は MIT ライセンスで Redis ベースです。追加のインフラ依存関係はありません。Redis はキャッシング、レート制限、分散ロックに既に必要です。
-- GitLab エンジニアに馴染みの Sidekiq に似たセマンティクス（キュー、リトライ、デッドレターキュー）。
-- 重み付き優先度キュー、分散シングルファイアによる cron スタイルスケジューリング、ユニークジョブ重複排除をサポート。
-- 内蔵の Prometheus メトリクスエクスポーターと web UI（[asynqmon](https://github.com/hibiken/asynqmon)）。
-- PostgreSQL への影響ゼロ — ジョブはアプリケーションデータベースに触れません。
-- OTel トレース伝播にはカスタムミドルウェアが必要。
-- **単一メンテナーリスク**: [Ken Hibino](https://github.com/hibiken)が主要コントリビュータです。緩和策: asynq には 結果を待たないジョブだけを乗せ、統一抽象によりバックエンドのスワップがルーティング変更で済むようにしています。
+ストレージの前段に CDN を配置するか、どの CDN を使うかは、デプロイ環境によって異なります。
+[ADR-013](013_storage_backend_interaction.md)で、CDN とブロブストレージのすべての組み合わせが満たすルールを定めます。
 
-#### ルーティングガイドライン {#routing-guideline}
+### 5. 分析エンジン：ClickHouse {#5-analytics-engine-clickhouse}
 
-トランザクショナルなエンキューやデータベース書き込みとのアトミック性を必要とするジョブ（例: ガベージコレクション、ライフサイクルポリシー実行）には River を使用します。高スループット、結果整合的、または 結果を待たないワークロード（例: イベント処理、アナリティクス集計、カウンタバッチ処理）には asynq を使用します。判断に迷う場合は、エンキュー境界でのアトミック性が必要でない限り、デフォルトで asynq を使用します。
+ClickHouse などの分析ストアは任意であり、なくてもサービスは完全に機能します。
 
-#### 参考文献 {#references}
+### 6. キャッシュ：Redis プロトコル互換サービス {#6-cache-redis-protocol-compatible-service}
 
-- [WI #594600 — バックグラウンドジョブ処理の評価](https://gitlab.com/gitlab-org/gitlab/-/work_items/594600)（権威ソース: 評価、PoC、ベンチマーク、議論）
-
-### 2. リレーショナルデータベース: PostgreSQL {#2-relational-database-postgresql}
-
-**PostgreSQL を選ぶ理由**:
-
-- GitLab の既存インフラとデータベース基準と整合
-- GitLab.com の巨大なデータセットでスケールが実証済み
-- 豊富な機能セット: 柔軟なメタデータ向けの JSONB、全文検索、高度なインデックス
-- 既存の専門知識、運用ランブック、バックアップ／リカバリ手順
-- 重要なメタデータに対する強い整合性保証
-
-**データベース分離**: Artifact Registry サテライトサービスは独自の専用 PostgreSQL データベースを使用し、[複数データベース](https://docs.gitlab.com/ee/development/database/multiple_databases.html) 分解パターンを必要とせずに Rails モノリスからの完全な分離を提供します。
-
-#### 2.1 データベーススキーママイグレーション {#21-database-schema-migrations}
-
-サテライトサービスは高度なマイグレーションツールを欠いており、開発速度に影響します。データベーススキーママイグレーションは、すべてのサテライトサービスのための再利用可能なインフラとして LabKit 抽象でラップされ、ゼロダウンタイムマイグレーション、安全なスキーマ変更（パーティショニングテーブルを含む）、ロールバック機能、マイグレーション状態追跡を提供します。マイグレーションは自己完結し、分散ロック（PostgreSQL アドバイザリロックまたは Redis）を使ってポッド起動時にトリガーされる必要があり、外部のオーケストレーションやモノリスのポストデプロイマイグレーションモデルを必要としません。アプリケーションはアップグレード周辺で後方スキーマ互換性を強制する必要があります。
-
-**[goose](https://github.com/pressly/goose)** が選択されたマイグレーションツールで、マイグレーションリンティング向けに **[squawk](https://github.com/sbdchd/squawk)** とペアになります。詳細は [データベースツールの評価](https://gitlab.com/gitlab-org/gitlab/-/work_items/592409)を参照してください。
-
-#### 2.2 データベースクエリレイヤー {#22-database-query-layer}
-
-**[go-jet/jet](https://github.com/go-jet/jet)** が選択されたクエリツールで、GraphQL 向けに **[gqlgen](https://gqlgen.com/)** とペアになります。詳細は [データベースツールの評価](https://gitlab.com/gitlab-org/gitlab/-/work_items/592409)を参照してください。
-
-### 3. Blob ストレージ: オブジェクトストレージ {#3-blob-storage-object-storage}
-
-**オブジェクトストレージを選ぶ理由**:
-
-- GitLab の [統合オブジェクトストレージ](https://docs.gitlab.com/administration/object_storage/#configure-a-single-storage-connection-for-all-object-types-consolidated-form) 戦略と整合
-- すべての [サポートされているプロバイダー](https://docs.gitlab.com/administration/object_storage/#supported-object-storage-providers)（AWS S3、Google Cloud Storage、Azure Blob Storage、MinIO など）と互換
-- 既存の GitLab レジストリと CI アーティファクトでスケールが実証済み
-- 大規模 Blob ストレージにとってコスト効率が良い
-- 既存の運用専門知識と統合パターン
-
-**デプロイメント固有の選択**:
-
-- **GitLab.com (SaaS)**: Google Cloud Storage (GCS)。既存のインフラと運用専門知識を活用
-- **Dedicated**: Amazon S3。確立された Dedicated デプロイメントパターンと整合
-- **Self-Managed**: GCS、S3、または S3 互換プロバイダー。ローカルファイルシステムはサポートされない（サービスは Kubernetes 専用のため）。追加の[プロバイダー](https://docs.gitlab.com/administration/object_storage/#supported-object-storage-providers)は後で追加可能。
-
-**ネイティブ SDK**: Artifact Registry は、サードパーティクライアントや抽象ではなく、内部インターフェースの背後でネイティブプロバイダー SDK を使用します。これにより、抽象ライブラリが最低共通分母 API の背後に隠す可能性のある、プロバイダー固有のプリミティブ（例: GCS のアトミックオブジェクト移動、再開可能なアップロード、細粒度の並列性を持つ S3 マルチパートアップロード）へのアクセスが保証されます。このような依存プロファイルを持つサービスにとって、これらの SDK の長期的なベンダーメンテナンスも不可欠です。
-
-**バケット分離**: 設計はパスプレフィックスを使った共有バケットをサポートしますが、Artifact Registry は専用バケットを使用すべきです。これにより、ライフサイクルポリシー、アクセス制御、コストトラッキング、運用管理を他の GitLab ストレージから分離できます。
-
-### 4. コンテンツデリバリーネットワーク (CDN) {#4-content-delivery-network-cdn}
-
-CDN はデプロイメント固有でオプショナルです。
-
-- **GitLab.com (SaaS)**: Container Registry が現在行っているように Google Cloud CDN（[~87% のキャッシュヒット率](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17524#note_3023542021)を達成）。Cells には AWS CloudFront が必要になる可能性がある。
-- **Dedicated**: AWS CloudFront のオプショナル使用、Container Registry でもサポートされている
-- **Self-Managed**: オプショナル。顧客は Cloud CDN または CloudFront のいずれかを構成可能
-
-### 5. アナリティクスエンジン: ClickHouse {#5-analytics-engine-clickhouse}
-
-ClickHouse は MVP のスコープ外です。後で高度なアナリティクス機能（長期イベントレコード、利用トレンド、AI 駆動インサイト）に必要になります。これはオプショナルな依存関係です。Artifact Registry は ClickHouse なしで完全に機能する必要があります。
-
-### 6. キャッシュ: Redis プロトコル互換サービス {#6-cache-redis-protocol-compatible-service}
-
-Redis プロトコル互換サービス（例: Redis、Valkey）は、asynq バックグラウンドジョブ処理（セクション 1）、キャッシング、レート制限、分散ロック、エフェメラルな共有アプリケーション状態のために必要です。
-
-**候補ライブラリ: [go-redis](https://github.com/redis/go-redis)**。サテライトサービス全体で一貫した使用のため、Redis クライアントを LabKit 抽象でラップすることが関連する可能性があります。
+1 つの Redis プロトコルのサービスが、キャッシュ、レート制限、分散ロック、その他の短命な共有状態、Redis ベースのジョブキューを担うため、キューを分けてもインフラは増えません。
 
 ### 7. イベントバス {#7-event-bus}
 
-MVP では、サービス間通信（主に Rails モノリスとの）は直接 API 呼び出しを使用します。
+イベントバスは先送りします（[代替案](#an-event-bus-now)を参照）。
 
-**将来の代替案: NATS**
+## 影響 {#consequences}
 
-レジストリが MVP を超えて発展するにつれ、次の場合に **NATS**（具体的には [NATS JetStream](/handbook/engineering/architecture/abstractions/candidate/nats/)）を検討する可能性があります。
+### 利点 {#positive}
 
-- イベント永続化と再生が重要要件になる
-- 監査とコンプライアンス要件がイベントソーシングを要求する
-- 複雑なイベントルーティングとフィルタリングパターンが現れる
-- GitLab のインフラが標準コンポーネントとして NATS を含む
+1. **GitLab で広く定着。** Gitaly、Runner、Workhorse、Container Registry は Go で記述され、実績のあるライブラリとパターンがあります。
+1. **組織としての投資。** LabKit は標準で可観測性に対応しており、ここで構築するツールを、他の Go サテライトサービスにも後から適用できます。
+1. **パフォーマンス。** Go は、多数の同時転送や長時間のストリームなど、スループットの高い並行 I/O を、少ないメモリ使用量で処理します。
+1. **エージェントによる開発のための型安全性。** 静的な型は、より明確な契約をエージェントに与えます。
+1. **デプロイ。** 静的バイナリは、すべてのインストール形態で配布を簡単にします。
+1. **コントリビューターと SDK。** GitLab では Rust より Go を知るエンジニアが多く、すべての主要クラウドプロバイダーが公式の Go SDK を保守しています。
 
-**NATS を選ぶ理由（将来の検討用）**:
+### 欠点 {#negative}
 
-- JetStream による永続的なイベントストリーミング
-- メッセージ再生とコンシューマグループ
-- イベントソーシングパターンに優れている
-- [GitLab の NATS 抽象](/handbook/engineering/architecture/abstractions/candidate/nats/)と整合
-- 複雑なイベントルーティングとフィルタリングをサポート
-
-**NATS の現状**:
-
-- **提案段階**: Self-Managed と Dedicated インストール向けに [NATS をパッケージ化する提案](https://gitlab.com/gitlab-org/architecture/gitlab-data-analytics/design-doc/-/work_items/184)がある
-- **本番使用**: NATS は CustomersDot 環境上の Data Insights Platform (DIP) の本番で現在デプロイされており、[運用ランブック](https://runbooks.gitlab.com/nats/)が利用可能
-- **標準インストール**: NATS はまだすべての GitLab インストールタイプで標準インフラとして利用可能ではないため、Artifact Registry には将来のオプションのまま
-- **抽象の成熟度**: [NATS の抽象化のページ](/handbook/engineering/architecture/abstractions/candidate/nats/)は開発中
+1. **ツールの不足。** データベース移行、データベースの負荷分散、バックグラウンドジョブ、フィーチャーフラグを構築または採用する必要があります。モノリスのツールを、そのまま抽出することはできません。
+1. **Ruby より少ないコントリビューター。** GitLab の Go のコントリビューターは Ruby on Rails より少なく、チームをまたぐ貢献が遅れる場合があります。
+1. **仮想レジストリの書き直し。** Rails モノリス内の仮想レジストリを書き直す必要があります。
 
 ## 代替案 {#alternatives}
 
-### Ruby on Rails（スタンドアローンアプリケーション） {#ruby-on-rails-standalone-application}
+### 何もしない：Rails モノリス内に留まる {#do-nothing-stay-in-the-rails-monolith}
 
-サテライトサービスをモノリスから分離されたスタンドアローン Rails アプリケーションとして構築するが、Rails エコシステムを再利用する。
+Package Registry や現在の仮想レジストリと並んで、モノリス内で構築を続けます。
+却下理由：[Artifact Registry の設計ドキュメント](/handbook/engineering/architecture/design-documents/artifact_registry/#architecture-overview)で、レジストリを別サービスと定めており、この ADR は、そのサービスの技術スタックを選定します。
 
-**長所**:
+### 独立したアプリケーションとしての Ruby on Rails {#ruby-on-rails-as-a-standalone-application}
 
-- API 専用アプリケーションモードは Rails でネイティブにサポート
-- GitLab エンジニアの大多数に馴染みのある技術
-- モノリスの既知のパターンと gem を再利用できる（例: ActiveRecord 拡張、Sidekiq）
-- 抽出して再利用できる既存のデータベースとバックグラウンドジョブツール（ゼロダウンタイムデータベースマイグレーション、バックグラウンドマイグレーション、データベースロードバランサー、Sidekiq reliable fetcher）。[PoC](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18455#note_3105411409) でこれが技術的に実現可能であることを実証
-- 抽出して再利用できる既存の GraphQL ツール（複雑度分析、バッチローダー）
-- スタンドアローン gem であるため、既存の認証ロジック（declarative policy）を直接再利用可能
-- GitLab スケールでの Rails パフォーマンス最適化の既存専門知識を再利用
-- 仮想レジストリロジックを抽出して再利用できる
+GitLab のエンジニアの大半が慣れ親しんでいる、Rails の API 専用アプリケーションです。
+ゼロダウンタイム移行とバックグラウンド移行、データベースロードバランサー、Sidekiq、GraphQL ツール、宣言的ポリシー、仮想レジストリのコードなど、モノリスの gem とパターンを再利用できます。
 
-**短所**:
+却下理由：
 
-- Rails スタンドアローンサービスは GitLab で確立されたパターンではない。サテライトサービスは Go または Rust で書かれており、サポートインフラとツールの抽出または構築に費やされる時間は、Rails サービスへの投資を始める意欲がない限り、より低い ROI をもたらす可能性が高い。
-- プロセスあたりのメモリフットプリントが高く、コンパイル済みランタイムに比べて起動時間が遅く、ストリーミングファイルアップロード／ダウンロードのような高並行性 I/O ワークロードに対して効率が悪い。
-- モノリスから抽出するツールをスタンドアローンライブラリに変換するのは、スコープが不明確で簡単ではない。特にバックグラウンドデータマイグレーションは、Helm がネイティブに表現できない方法でアップグレードライフサイクルに結合されており、init コンテナスクリプトとカスタムオーケストレーションを必要とし、別の長時間実行プロセスとしての Sidekiq に依存する。
-  - 緩和: AI ツールが抽出と適応の作業を加速できる
-- Delivery は新しいサービスでモノリスのマイグレーションパターンを複製することを [避けるよう積極的に勧めている](https://docs.google.com/document/d/1tZLY4px_wiWBe9F2PEcE3M8avp52TCyc1hAS0dF34YM/edit?tab=t.0)。これらは運用上の負担と見なされ、クラウドネイティブデプロイメントと互換性がない。
-- 依存関係管理オーバーヘッド（Bundler、ネイティブ拡張）がパッケージングと配布を複雑にする。
-- モノリスのパターンに密結合する蓄積リスクがあり、サービスを独立して進化させるのが難しくなる。
-  - 緩和: モノリスから抽出するコンポーネントの慎重な選択により、問題のあるパターンの継承を回避できる
-- 一部のクライアント（例: `npm`）は直接アップロード用の署名付き URL をサポートせず、Self-Managed セットアップではオブジェクトストレージアクセスを GitLab コンポーネントのみに制限する可能性があるため、長時間アップロードを処理するためのプロキシサイドカー（Workhorse の機能と類似）が必要。これによりランタイムコンポーネントの総数が増え（Redis、PostgreSQL、Rails、プロキシサイドカー）、可用性に影響する可能性のある追加のハード依存関係が追加される（認証にすでに必要なモノリスを超えて）。
-- プロキシサイドカーは二重のソフトウェアサプライチェーンを導入する: 1 つはプロキシ用、もう 1 つは Rails アプリケーション用。これにより依存関係管理、セキュリティ監査、脆弱性修正の対象範囲が拡大する。
-- プロキシサイドカーはプロキシされる各リクエストに追加のネットワークホップを追加する。リクエストあたりのオーバーヘッドは小さいかもしれないが、既存のプロキシ層（ロードバランサー、ingress、認証用モノリス）と複合し、負荷下のテイルレイテンシに影響する。
-- 弱いオブジェクトストレージ SDK エコシステム: Microsoft は公式 Azure Storage Ruby クライアントライブラリを [廃止した](https://azure.microsoft.com/en-us/updates?id=retirement-notice-the-azure-storage-ruby-client-libraries-will-be-retired-on-13-september-2024)。コミュニティの代替が存在するが、ベンダーメンテナンスではない。
-- Ruby はインタープリタ型の動的型付け言語であり、コンパイル済みの静的型付け言語と比べて、エージェント開発ワークフロー向けの品質ゲートが弱い。
-
-**却下理由**: サテライトサービスの確立されたパターンではなく、長時間アップロードのためにプロキシサイドカーが必要で、モノリスツールの抽出への投資は Go への投資より組織的 ROI が低くなる可能性が高い。
+- 独立した Rails サービスは GitLab で確立されたパターンではないため、そのツールを構築するより、Go に投資するほうが見返りを得られると考えられます。
+- プロセスごとのメモリが多く、起動が遅く、同時実行数の高いストリーミング I/O の効率が劣ります。
+- モノリスのツールを抽出することは容易ではありません。バックグラウンドのデータ移行は、Helm では表現できない形でアップグレードのライフサイクルと結び付いており、Delivery は、新しいサービスでモノリスの移行パターンを使うことを推奨していません。
+- Bundler とネイティブ拡張はパッケージ化を複雑にし、サービスがモノリスのパターンと結合するリスクがあります。
+- npm など一部のクライアントは署名済み URL にアップロードできず、セルフマネージド環境ではオブジェクトストレージへのアクセスを制限する場合があるため、長時間のアップロードには、モノリスでの Workhorse のようなプロキシサイドカーが必要です。サイドカーにより、ランタイムコンポーネント、必須の依存先、2 つ目のサプライチェーン、プロキシされるすべてのリクエストでのネットワークホップが増えます。
+- Ruby のオブジェクトストレージ SDK のエコシステムは、Go より弱いものです。
+- 動的型付け言語は、エージェントによる開発での品質ゲートが弱くなります。
 
 ### Rust {#rust}
 
-サテライトサービスを Rust で構築し、そのパフォーマンス特性と型システム保証を活用する。
+Rust にはガベージコレクターによる停止がなく、コンパイラーがメモリ安全性を強制するため、生成されたコードに対する強い品質ゲートになります。
 
-Rust は GitLab 内で勢いを増しています: [Knowledge Graph](https://gitlab.com/gitlab-org/orbit/knowledge-graph)、GLQL、GLFM gem は Rust で構築されています。Rust 用の LabKit が開発中で、Auth Architecture チームはサービスに Rust を選択しました。
+却下理由：
 
-**長所**:
+- GitLab では、3 つの言語の中でコントリビューターが最も少ない言語です。
+- LabKit とプラットフォーム連携は、Rust をサポートしていません。
+- レジストリには、データエンジニアリングやコンパイラーなどで価値を発揮する、Rust の追加の保証は必要ありません。
+- 非同期ランタイムは外部ライブラリで提供する一方、Go の並行処理は言語の一部です。
+- Go のツールは、より多くの GitLab サービスに役立ちます。
 
-- ガベージコレクタオーバーヘッドなし、ゼロコスト抽象。Go の GC は大幅に改善されているが、GC 一時停止がないことはレイテンシに敏感なワークロードにとって意味のある利点
-- コンパイラ強制のメモリ安全性が、ランタイムオーバーヘッドなしにバグの大カテゴリ（解放後使用、データ競合、null ポインタ参照外し）を排除
-- Rust への GitLab の投資の成長（Knowledge Graph、GLQL、GLFM、Auth Architecture サービス）が内部の前例と専門知識の拡大を提供
-- Rust 用 LabKit が開発中
-- Rust のコンパイラが AI 生成コードの自然な品質ゲートとして機能
+### すべてのジョブに 1 つのジョブキュー {#one-job-queue-for-every-job}
 
-**短所**:
+- **PostgreSQL ベースのみ。** すべてのジョブの行の更新負荷がアプリケーションのデータベースにかかり、イベント処理など大量の作業がそれを増幅します。
+- **Redis ベースのみ。** キュー投入をデータベースのトランザクションに参加させられないため、書き込みとキュー投入の間でクラッシュすると、自動回復できない孤立データが残ります。
 
-- Go はすでにこのユースケースに必要な型安全性とコンパイルの恩恵を提供している。このコンテキストで Rust の追加保証（例: ガベージコレクタなしのメモリ安全性）への具体的な必要性はない。
-- 3 つの選択肢の中で GitLab 内で最も小さな貢献者プール。Go は熟練した貢献者のプールが大幅に大きい。
-  - 緩和: AI ツールがオンボーディングを加速し、学習曲線を緩和できる
-- すぐに利用可能なエコシステムと GitLab 製品全体の既存統合（LabKit、可観測性、デプロイメントツール）は、強く Go を支持する。Rust 用 LabKit はまだ開発中。プラットフォーム統合はまだ本番準備が整っていない。
-- Rust は、データエンジニアリング（Knowledge Graph）やコンパイラなど、より高いパフォーマンスやより表現力のある型システムを必要とする例外的なケースに適している。Artifact Registry はそのカテゴリに該当しない。
-- Rust の async ランタイムは言語の一部ではなく、外部クレート（例: tokio）を必要とする。Go の並行性モデル（goroutine、channel）は言語の第一級機能であり、より直接的。
-- Go を中心に構築されたインフラツールはより広い組織に恩恵をもたらすが、Rust ツールはより小さなサービスセットに役立つ。
-- 現在の仮想レジストリは書き直しが必要。
+### 複数のプロバイダーを扱うストレージライブラリ {#a-storage-library-that-spans-providers}
 
-**却下理由**: Go は GitLab 内でより大きな貢献者プールと、サテライトサービス向けのより成熟したエコシステムを持つ。Rust はより強い保証を提供するが、実用的な利益は、このユースケースで Go のエコシステムと貢献者の利点を上回らない。
+すべてのプロバイダーに 1 つのクライアントを使えば、プロバイダーごとのコードを減らせます。
+却下理由：オブジェクトのアトミックな移動、再開可能なアップロード、並列マルチパートアップロードなど、プロバイダーの基本機能を共通部分だけに絞ったインターフェースの背後に隠してしまい、長期にわたって保守するベンダーもありません。
 
-## 参考文献 {#references-1}
+### 今すぐイベントバスを導入する {#an-event-bus-now}
 
-- [ADR-003: システム要件](003_system_requirements.md)
-<!-- - [ADR-005: Implementation Architecture](005_implementation_architecture.md) -->
-<!-- - [ADR-010: Data Retention](010_data_retention.md) - Audit log retention policies stored in ClickHouse -->
-- [GitLab のオブジェクトストレージドキュメント](https://docs.gitlab.com/administration/object_storage/)
-- [GitLab の NATS 抽象化](/handbook/engineering/architecture/abstractions/candidate/nats/)
-- [複数データベースのドキュメント](https://docs.gitlab.com/ee/development/database/multiple_databases.html)
-- [Sidekiq 開発ガイドライン](https://docs.gitlab.com/ee/development/sidekiq/)
-- [Lab Bench: GitLab SOA アーキテクチャ](https://docs.google.com/document/d/11Zj918LuZeY3fPcU50ZPhzJtcqzvyXaO0SDamW7cDc8/edit?tab=t.0)
+[NATS JetStream](/handbook/engineering/architecture/abstractions/candidate/nats/) などのイベントバスは、イベントソーシングに適した、永続的なストリーミング、リプレイ、コンシューマーグループを提供します。
+先送りの理由：NATS は、すべてのインストール形態で標準のインフラではありません。
+イベントの永続化とリプレイ、監査用のイベントソーシング、複雑なイベントルーティングが要件になったとき、またはすべてのインストール形態に同梱されるようになったときに、再検討します。

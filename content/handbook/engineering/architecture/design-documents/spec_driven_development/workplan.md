@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette", "@vanessaotto" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/workplan/"
-upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
-lastmod: "2026-11-11T19:46:14+01:00"
-translated_at: "2026-11-14T08:49:10+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T21:10:26+05:30"
+translated_at: "2026-11-17T21:14:57.510431+00:00"
 translator: "codex"
 stale: false
 ---
@@ -48,13 +48,14 @@ Workplan は、GraphQL ウィジェット型 `WorkItemWidgetAgentPlan` を通じ
 | `aiPlanningEnabled` | ワークアイテムで AI 計画が有効かどうか。 |
 | `content`, `contentHtml` | Workplan の Markdown と、そのレンダリング済み HTML。1 リクエストにつき、1 つのワークアイテムに対してのみ解決できます。 |
 | `hasContent` | Workplan に内容があるかどうか。データベースのカラムから読み取るため、一覧のすべてのワークアイテムについてリクエストできます。 |
+| `updatedAt` | Workplan レコードの最終更新日時。準備状況スコア、そのフィードバック、または AI 計画の設定が変わった場合にも変わります。Workplan に内容がない場合は null です（[マージリクエスト 262844](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/262844)）。 |
 | `generationStatus` | 最新の `workplan/v1` フローのステータス。`NOT_STARTED`、`GENERATING`、`NEEDS_INPUT`、`COMPLETED`、`CANCELED`、`FAILED` のいずれかです。 |
 | `questions`, `openQuestionsCount` | すべての Workplan 実行のフローノートのスレッドを古い順に並べたもので、回答済みの状態と未解決の件数はスレッドの解決状況に基づきます。1 リクエストにつき、1 つのワークアイテムに対してのみ解決できます。[質問間の移動と現在の制約](human-in-the-loop.md#question-navigation)を参照してください。 |
 | `readinessScore`, `readinessScoreFeedback`, `readinessScoreFeedbackHtml` | 準備状況スコア、その Markdown の説明、レンダリング済み HTML。フィードバックは、1 リクエストにつき、1 つのワークアイテムに対してのみ解決でき、準備状況ドロワーを開いたときに取得します。 |
 
 非同期フローは、`WorkItemGenerateWorkplan` と `WorkItemResumeWorkplan` の各ミューテーションで開始および再開します。[非同期 Workplan フロー](workplan-flow.md)を参照してください。
 
-Workplan は、MCP ワークアイテムツールを通じても読み書きできるため、外部のエージェントやツールが利用できます。
+Workplan は、MCP ワークアイテムツールを通じても読み書きできるため、外部のエージェントやツールが利用できます。ワークアイテムの REST API には、内容、準備状況スコア、フィードバックを扱う `agent_plan` 機能があり、`work_item_rest_api` フィーチャーフラグで制御します（[マージリクエスト 259712](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259712)）。
 
 ## ウィジェット {#widget}
 
@@ -67,11 +68,13 @@ Implementation ウィジェットは、デフォルトでは非表示です。�
 
 生成に失敗すると、ウィジェットは **Try again** と **Create manually** を表示するため、ユーザーは引き続き Workplan を手動で記述できます。生成がキャンセルされた場合は、エラーの色ではなく中立的なステータスの色を使用します（[マージリクエスト 266500](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/266500)）。
 
-フローを開始または再開すると、そのセッションを Duo ドロワーで開きます。これには、**Plan**、**Generate**、**Regenerate**、**Try again**、**Continue** が含まれます。生成した Workplan は要求されたときにのみ開くため、バックグラウンドの実行が完了してもユーザーの作業を中断しません。ステータスインジケーター上の、セッションへの直接のショートカットは、[Issue 631233](https://gitlab.com/gitlab-org/gitlab/-/work_items/631233)で引き続きフォローアップとなっています。
+フローを開始または再開すると、そのセッションを Duo ドロワーで開きます。これには、**Plan**、**Generate**、**Regenerate**、**Try again**、**Continue** が含まれます。セッションの開始または再開中は、そのきっかけとなったアクションを非表示にし、読み込み中のボタンの代わりに **Preparing...** のプレースホルダーをウィジェットに表示します（[マージリクエスト 269975](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/269975)）。フローが入力を待っている間はウィジェットのポーリングを停止し、**Continue** の後に再開します（[マージリクエスト 267874](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267874)）。生成した Workplan は要求されたときにのみ開くため、バックグラウンドの実行が完了してもユーザーの作業を中断しません。ステータスインジケーター上の、セッションへの直接のショートカットは、[Issue 631233](https://gitlab.com/gitlab-org/gitlab/-/work_items/631233)で引き続きフォローアップとなっています。
 
-Workplan はサイドパネルで開きます。ウィジェット、そのポーリング、サブスクリプションは、表示内容の判断に `hasContent` を使用し、Workplan の内容はパネルを開いている間にのみ取得します。内容の読み込み中は、パネルにスケルトンを表示します（[マージリクエスト 266958](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/266958)）。ユーザーは、必要に応じてテンプレートを使用し、Workplan を手動で作成することもできます。Workplan のテンプレートは、ファイル名が `.plan` で終わる説明テンプレートです。
+Workplan はサイドパネルで開きます。ウィジェット、そのポーリング、サブスクリプションは、表示内容の判断に `hasContent` を使用し、Workplan の内容はパネルを開いている間にのみ取得します。内容の読み込み中は、パネルにスケルトンを表示します（[マージリクエスト 266958](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/266958)）。パネルのヘッダーには、Workplan の最終更新日時を表示します（[マージリクエスト 269522](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/269522)）。Workplan の追加、更新、削除を行うと、ワークアイテムにシステムノートを追加します。このノートは、Workplan を表示できないユーザーには非表示です（[マージリクエスト 269589](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/269589)）。ユーザーは、必要に応じてテンプレートを使用し、Workplan を手動で作成することもできます。Workplan のテンプレートは、ファイル名が `.plan` で終わる説明テンプレートです。
 
 ユーザーが AI によるフローを開始した場合にのみ Implementation ウィジェットを表示することは、[Issue 605174](https://gitlab.com/gitlab-org/gitlab/-/work_items/605174)で決定しました。計画を有効にした後は、無効にできません。
+
+クローズされたワークアイテムに Workplan がない場合、そのワークアイテムを更新できるユーザーには、ウィジェットと **Plan** を非表示にします。更新できないユーザーには、読み取り専用のウィジェットを引き続き表示します。Workplan がある場合は、**Continue**、**Regenerate workplan**、**Implement** を非表示にしますが、Workplan の表示、編集、削除は引き続き利用できます（[マージリクエスト 264899](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/264899)）。
 
 ## 生成 {#generation}
 
@@ -86,8 +89,6 @@ Workplan はサイドパネルで開きます。ウィジェット、そのポ�
 
 未完了のフォローアップは、次のとおりです。
 
-- [Workplan の作成と更新のタイムスタンプを表示する](https://gitlab.com/gitlab-org/gitlab/-/work_items/634222)
-- [クローズされたワークアイテムでの計画コントロールの動作](https://gitlab.com/gitlab-org/gitlab/-/work_items/631847)。**Implement** ボタンは、クローズされたアイテムではすでに非表示です。残る計画コントロールは、別のフォローアップです。
 - [`hasAgentPlan` の型ポリシーを、`widgets` フィールドの廃止後に追加する](https://gitlab.com/gitlab-org/gitlab/-/work_items/623135)
 
 ## 決定 {#decisions}

@@ -9,9 +9,9 @@ owning-stage: "Plan"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-lastmod: "2026-11-05T09:36:04-05:00"
-translated_at: "2026-11-05T21:18:38.759097+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-12T16:11:19+02:00"
+translated_at: "2026-11-17T21:14:57.510431+00:00"
 translator: codex
 stale: false
 ---
@@ -103,6 +103,9 @@ Duo Chat や Work Items などの製品領域は、
   通信だけです。通信チャネルや共有状態のソリューションを追加する前に、
   `#g-ui_platform` で新しい要望を提起してください。
 
+- [ADR 006: マウント契約 v1 とその拡張性](decisions/006_mount_contract.md) -
+  ADR 003 で未定義だったマウント契約を確定します。5 つの `MountProps` キー、マニフェストが宣言しホストが遅延構築するクライアント、名前空間付きの機能 ID、利用側を壊さずに契約を拡張するためのメジャー/マイナーのルールを定めます。
+
 ## MFE としての抽出に向けてアプリケーションを準備する {#preparing-your-application-for-mfe-extraction}
 
 モノリス内のフロントエンド領域を所有するチームは、現在から MFE と互換性のある
@@ -130,14 +133,7 @@ Duo Chat や Work Items などの製品領域は、
 
 ### HAML からのデータ注入を最小限にする {#minimize-haml-data-injection}
 
-HAML から Vue のマウントポイントに渡す `data-*` 属性は、1 つひとつが
-Rails のレンダリングレイヤーとの結合点です。マウント時の入力を最小限に保ち、
-代わりに API 呼び出しを利用してください。正確なマウント契約は、
-まだ定義中です（
-[ADR 003 の決定 7](decisions/003_module_carried_packaging_and_serving.md#7-mount-contract-and-shared-runtime)を参照）。
-ただし、方向性は明確です。プロジェクトパス、フィーチャーフラグ、
-ユーザー権限などの情報について、サーバーがレンダリングする HTML 属性への依存が
-少ないほど、アプリケーションを抽出しやすくなります。
+HAML から Vue のマウントポイントに渡す `data-*` 属性は、1 つひとつが Rails のレンダリングレイヤーとの結合点です。マウント時の入力を最小限に保ち、代わりに API 呼び出しを利用してください。マウント契約は、[ADR 006](decisions/006_mount_contract.md)で確定しています。ホストが渡すのは、ページのリソース、宣言されたクライアント、配置の props、設定、サービスだけです。プロジェクトパス、フィーチャーフラグ、ユーザー権限などの情報について、サーバーがレンダリングする HTML 属性への依存が少ないほど、アプリケーションを抽出しやすくなります。
 
 ## 先行事例と既存の取り組み {#prior-art-and-existing-work}
 

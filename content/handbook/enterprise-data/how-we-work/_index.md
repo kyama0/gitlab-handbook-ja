@@ -2,11 +2,11 @@
 title: "Data Team - 働き方"
 description: "GitLab Data Team のワークフロー"
 upstream_path: "/handbook/enterprise-data/how-we-work/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T16:23:16+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:10:23.948269+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-17T09:22:54Z"
 ---
 
 ---
@@ -14,6 +14,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 ### <i class="fas fa-map-marked-alt fa-fw -text-purple"></i>クイックリンク {#quick-links}
 
 - [カレンダー](/handbook/enterprise-data/how-we-work/calendar/)
+- [dbt モデルの非推奨化](/handbook/enterprise-data/how-we-work/dbt-model-deprecation/)
 - [インシデント管理](/handbook/enterprise-data/data-governance/incident-management/)
 - [MR の役割と責任](/handbook/enterprise-data/how-we-work/mr-review/)
 - [新しいデータソース](/handbook/enterprise-data/how-we-work/new-data-source/)

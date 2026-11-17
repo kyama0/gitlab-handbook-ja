@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "ストレージバックエンドと CDN のペアリング、署名付き URL の生成、リダイレクト先のルーティング、ダウンロードメタデータの伝播"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-lastmod: "2026-11-06T17:15:22+01:00"
-translated_at: "2026-11-07T00:02:49.296141+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: claude
 stale: false
 ---
@@ -22,7 +22,7 @@ stale: false
 
 Container Registry は GitLab.com で何年もこの方法でダウンロードを配信し、月間数十ペタバイトの外向き転送と 85% を超える CDN キャッシュヒット率を実現してきました。
 Artifact Registry は同じ設計を採用します。
-各デプロイメントの blob ストレージと CDN は [ADR-006](006_technology_stack.md)で選択し、この ADR はすべてのペアリングが満たすべきルールを定めます。
+[ADR-006](006_technology_stack.md)では、blob をオブジェクトストレージに保持し、CDN は任意としています。この ADR は、その 2 つのすべての組み合わせが満たすべきルールを定めます。
 
 ## 決定 {#decision}
 

@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-lastmod: "2026-11-06T10:49:13+01:00"
-translated_at: "2026-11-07T00:04:48.602584+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: claude
 stale: false
 ---
@@ -65,7 +65,7 @@ Rails の組織を、テーブルとトークンでは ID、URL ではパスで�
 - **グローバルに一意**：2 つのネームスペースが、スラッグを共有することはできません。
 - **パスの先頭**：OCI の `GET /v2/` プローブを除く、すべてのクライアント向け URL で、API またはプロトコルのプレフィックスの次の最初のパスセグメントをスラッグとし、数値 ID はどのクライアント向け URL にも現れません（[ADR-009](009_api_design.md)）。リポジトリ名も不変であるため、URL パス全体が永続的に安定します。
 
-検証ルール、組織名からのデフォルト値の導出、予約ポリシー、ライフサイクルの制御（セキュリティブロックと移管）は、[ADR-015：スラッグポリシー（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/)で定義します。
+検証ルール、予約ポリシー、ライフサイクルの制御（セキュリティブロック）は、[ADR-015：スラッグポリシー（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/)で定義します。
 
 リクエストは、インデックスを使った 1 回の検索で、スラッグをネームスペース ID に解決します。この対応付けは不変であるため、自由にキャッシュできます。
 
@@ -94,7 +94,7 @@ Rails の組織を、テーブルとトークンでは ID、URL ではパスで�
 Artifact Registry は、各条件を保存し、Rails のキャッシュに関係なく、リクエストごとにステータスを適用し、API で公開します（[スラッグの検出](#slug-discovery)を参照）。
 Rails が条件を設定した理由を知ることは、一切ありません。
 
-**削除：** Artifact Registry は、ネームスペースをソフト削除します。リポジトリ名の再取得と同じセキュリティリスク（認可バイパス、キャッシュポイズニング）を避けるため、スラッグは予約し、別の顧客が再取得できないようにします。完全なライフサイクル（再取得を認めるソフト削除期間、永久廃止を伴うハード削除）とセキュリティブロックや移管の制御は、[ADR-015（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#slug-lifecycle)を参照してください。
+**削除：** Artifact Registry は、ネームスペースをソフト削除します。リポジトリ名の再取得と同じセキュリティリスク（認可バイパス、キャッシュポイズニング）を避けるため、スラッグは予約し、別の顧客が再取得できないようにします。完全なライフサイクル（再取得を認めるソフト削除期間、永久廃止を伴うハード削除）とセキュリティブロックは、[ADR-015（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#slug-lifecycle)を参照してください。
 
 ### 組織の統合 {#organization-merges}
 
@@ -151,7 +151,7 @@ Self-Managed の Rails と SaaS Artifact Registry を組み合わせるハイブ
 1. **ネームスペースの作成は明示的な操作です**：クライアントのリクエストが成功する前に、ネームスペースをプロビジョニングする必要があります。設定していない組織には、Artifact Registry はサービスを提供できません。
 1. **トポロジーサービスへの依存**：Artifact Registry は、スラッグを取得するため、トポロジーサービスと統合します。
 1. **スラッグの発見可能性**：GitLab でユーザーがすでに把握している組織パスとは異なり、スラッグは新しい概念です。クライアント設定のドキュメントと UI で、明示する必要があります。
-1. **重複排除境界**：重複排除は、組織（[ADR-002](002_storage_deduplication_scope.md)）からネームスペースへ移ります。Organizations v1 では、ネームスペースは組織に 1 対 1 で対応しますが、複数のネームスペースを持つ組織では、それぞれが独立した重複排除境界を持ちます。ネームスペース間の重複排除は、対象外です。
+1. **重複排除境界**：重複排除は、組織単位ではなく、ネームスペース単位です（[ADR-002](002_storage_deduplication_scope.md)）。Organizations v1 では、ネームスペースは組織に 1 対 1 で対応しますが、複数のネームスペースを持つ組織では、それぞれが独立した重複排除境界を持ちます。ネームスペース間の重複排除は、対象外です。
 
 ## 参考文献 {#references}
 

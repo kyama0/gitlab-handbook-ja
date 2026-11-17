@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "データ調整機能のタイミングと要件に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-lastmod: "2026-11-06T09:12:48-08:00"
-translated_at: "2026-11-07T00:02:49.296141+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: claude
 stale: false
 ---
@@ -59,7 +59,7 @@ GC が何を回収するかは [ADR-010](010_data_retention.md)で、その方�
 
 - **GC の後付けは高コストです。** Container Registry は本番で数年間運用した後、何十億ものオブジェクトが存在し、その参照を何も追跡していないシステムに[オンライン GC](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/gitlab/online-garbage-collection.md)を追加しました。新しいサービスなら最初から組み込めます。
 - **機会は今です。** データ量が少なければ、GC のバグが危険にさらすオブジェクトは少なく、GC と API トラフィックの間でストレージやデータベース接続の競合が少なく、データを手動で調べられます。GC と API の競合状態はどの規模でも存在しますが、その代償はサービスが新しいときに最も小さく、この機会は再び訪れません。
-- **孤立した blob は増える一方です。** GC がなければ、何からも参照されていない blob を解放するものがありません。Container Registry は GitLab.com で何十億ものオブジェクトと数十ペタバイトの規模に成長しました（[ADR-003](003_system_requirements.md)、[ADR-002](002_storage_deduplication_scope.md)）。
+- **孤立した blob は増える一方です。** GC がなければ、何からも参照されていない blob を解放するものがありません。
 - **GC は参照追跡を実証します。** 参照の追加、削除、参照が残っていないことの確認、削除という参照ライフサイクル全体を使用する唯一の機能です。早期に実行することで、データ量によってバグの代償が大きくなる前に、スキーマが参照を正しく追跡していることを示せます（[ADR-007](007_database_schema.md)）。
 
 ### データ検証を延期できる理由 {#why-data-validation-can-wait}

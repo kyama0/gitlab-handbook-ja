@@ -4,115 +4,72 @@ owning-stage: "~devops::package"
 description: "Artifact Registry を Organizations にアンカーする決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/001_organizations_as_anchor_point/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-translated_at: "2026-11-05T21:18:38.769540+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:21:56.719409+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-05T17:24:28Z"
+lastmod: "2026-11-17T11:47:24+01:00"
 ---
-
 
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
 
 ## 背景 {#context}
 
-Artifact Registry は、レジストリインスタンス、ストレージ、コスト按分、アクセス制御の主要境界として機能するアンカーポイントを GitLab のエンティティから必要とします。この基礎的な決定は、システム内の他のすべてのアーキテクチャ選択に影響します。
+Artifact Registry には、データ、アクセス制御、分離の境界となる、アンカーとしての GitLab エンティティが 1 つ必要です。
+候補となるエンティティは、次の 2 つです。
 
-候補は 2 つあります。
+1. **[Organizations](https://docs.gitlab.com/user/organization/)**：グループとプロジェクトを格納し、会社全体や事業部門を表すものです。
+1. **トップレベルグループ**：グループ階層のルートです。
 
-1. **[Organizations](https://docs.gitlab.com/user/organization/)**: グループとプロジェクトのトップレベルコンテナとして設計され、トップレベルグループに代わる主要組織境界として意図された新しい GitLab エンティティ
-1. **トップレベルグループ**: 現在 GitLab で利用可能な最上位のグループエンティティで、グループ階層のルートとして機能するもの
-
-Organizations はエンタープライズユースケースに完全に整合します。会社全体またはビジネスユニットを表す単一エンティティが、そのすべてのグループ、プロジェクト、そしてアーティファクトを含む形になります。
-
-### Organizations の可用性 {#organizations-availability}
-
-Organizations は技術的には利用可能ですが、まだ GA ではありません。[Organizations チーム](/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/)との協議の後、タイムライン情報を更新しました。
-
-1. **可用性**: Organizations は GitLab のすべてのインストールタイプにわたって技術的に利用可能です
-1. **GA タイムライン**: Organizations は顧客のオプトインアプローチで 1 年以内にローンチされる予定です
-1. **戦略的方向性**: Organizations は、エンタープライズの組織境界に対する GitLab の長期的な方向性を表します
-
-最初から Organizations 向けに構築することには、大きな利点があります。
-
-1. **将来のマイグレーション負荷なし**: 顧客は後でトップレベルグループから Organizations へ再構成する必要がありません
-1. **GitLab の方向性との整合**: Artifact Registry は Organizations の採用が拡大するにつれて準備が整います
-1. **概念的な正しさ**: Organizations はエンタープライズアーティファクト管理の自然な境界を表します
+会社は複数のトップレベルグループを持つことが多く、そのアーティファクトはグループをまたいで共有されます。
 
 ## 決定 {#decision}
 
-**Artifact Registry は Organizations のみにアンカーします。**
+**Artifact Registry は、Organizations のみにアンカーします。**
 
-この機能は Organizations レベルでのみ利用可能になります。Organizations とトップレベルグループの両方のレベルでは提供しません。これにより、二重実装の維持の複雑さを回避し、明確な単一のアーキテクチャパスを確保します。
+レジストリが保持するものはすべて、Organization が所有するネームスペースを通じて Organization に属します（[ADR-022](022_namespace_decoupling.md)）。
+トップレベルグループをアンカーにはしないため、実装経路は 1 つです。
 
-これは次のことを意味します。
+### 常に満たすべき条件 {#what-must-always-hold}
 
-- すべてのリポジトリ、アーティファクト、ライフサイクルポリシー、アクセス制御は Organization に属します
-- ストレージとコスト按分は Organization 境界で計算されます
-- 重複排除は Organization にスコープされます（[ADR-002](002_storage_deduplication_scope.md)を参照）
-- Organizations は分離およびシャーディング境界として機能します
+| # | 制約 | 機械的に検証可能か？ |
+| --- | --- | --- |
+| 1 | **すべてのネームスペースは Organization にアンカーします。** GitLab では、ネームスペースのアンカーは Organization を指し、グループ、プロジェクト、ユーザーを指すことはありません。 | はい：すべてのネームスペースのアンカーが Organization を指します |
+| 2 | **すべてのものは 1 つのネームスペースに属します。** リポジトリ、アーティファクト、ライフサイクルポリシーはそれぞれ、必ず 1 つのネームスペースと、それを通じて 1 つの Organization に属するため、Organization のデータを一体として Cells 間で移動できます。 | はい：すべてのレコードの帰属先が必ず 1 つのネームスペースに定まります |
+| 3 | **ネームスペースは分離します。** あるネームスペースのリクエストや参照が、別のネームスペースのレコードに到達することはありません。 | はい：1 つのネームスペースをスコープとする操作が、別のネームスペースのレコードを読み取ったり変更したりすることはありません |
 
-## 結果 {#consequences}
+## 影響 {#consequences}
 
-### ポジティブ {#positive}
+### 利点 {#positive}
 
-1. **GitLab のターゲット組織モデルとの整合**: 初日から Organizations 向けに構築することで、後でアーキテクチャの方向転換が不要になります
-1. **将来のマイグレーション負荷なし**: 顧客は最初からターゲットアーキテクチャを採用し、破壊的なマイグレーションを回避できます
-1. **概念的に正しいアンカーポイント**: Organizations は会社全体またはビジネスユニットを表します - エンタープライズアーティファクト管理の自然な境界
-1. **クリーンなエンタープライズマッピング**: 1 つの Organization が 1 つのアーティファクトレジストリインスタンスに等しく、顧客のメンタルモデルを単純化します
-1. **Cells アーキテクチャと前方互換**: Organizations は Cells の意図されたシャーディング境界であり、整合性を保証します
-1. **改善されたストレージ重複排除**: Organizations は階層内でトップレベルグループの上に位置します。同じ Organization 内の複数のトップレベルグループにまたがる同一の Blob は重複排除され、トップレベルグループスコープの重複排除に比べてより大きなストレージ効率を提供します
+1. **会社全体で 1 つの境界**：Organization はトップレベルグループを包含するため、グループ間で権限を同期せずに、1 つのネームスペースですべてのグループに対応できます。
+1. **後からの移行が不要**：顧客は、組織の境界としてトップレベルグループを置き換えるエンティティから使い始めるため、レジストリをグループから Organizations に移動する必要がありません。
+1. **Cells との整合性**：Organizations は Cells のシャーディング境界であるため、レジストリのデータは Organization とともに移動します。
 
-### ネガティブ {#negative}
+### 欠点 {#negative}
 
-1. **顧客のオプトインが必要**: Organizations のロールアウト期間中、顧客は明示的に Organizations を有効化する必要があります
-1. **Organizations タイムラインへの依存**: レジストリの可用性は、すべてのインストールタイプにわたって Organizations の準備状況と調整します
+1. **Organizations が必須**：Organization がない顧客はレジストリを利用できないため、各インストール形態で利用できるのは、Organizations が利用可能な場合だけです。
 
-## インストールタイプごとの影響 {#implications-by-installation-type}
+## 代替案 {#alternatives}
 
-### GitLab.com (SaaS) {#gitlabcom-saas}
+### 何もしない：アーティファクトをプロジェクトとグループに保持する {#do-nothing-keep-artifacts-in-projects-and-groups}
 
-顧客はアーティファクト管理のために Organization を作成または使用します。これは、主要組織境界としての Organizations への GitLab.com の方向性と整合します。
+アーティファクトをプロジェクトやグループに紐付けたまま、Package Registry と Container Registry に保持します。
 
-### Self-Managed と Dedicated {#self-managed-and-dedicated}
+却下理由：会社のアーティファクト、アクセスルール、ストレージは、多くのグループとプロジェクトにまたがっており、トップレベルグループより上でそれらをまとめるものがありません。
 
-Organizations はすべてのインストールタイプにわたって利用可能になります。顧客は Artifact Registry を使用するために Organizations を有効化します。これにより、すべての GitLab デプロイメントモデルにわたって一貫した体験が提供されます。
+### トップレベルグループ {#top-level-groups}
 
-## Blob ストレージの重複排除 {#blob-storage-deduplication}
+レジストリをトップレベルグループにアンカーし、後から Organizations に移行します。
 
-Organizations へのアンカーは、ストレージ重複排除に直接的な影響があります（詳細な重複排除設計は [ADR-002](002_storage_deduplication_scope.md)を参照）。
+却下理由：
 
-Organizations は GitLab 階層内でトップレベルグループの上に位置します。重複排除をトップレベルグループではなく Organizations にスコープすることで、次のような効果があります。
+- 顧客は後から、レジストリをグループから Organizations に移動することになります。
+- GitLab のように複数のトップレベルグループを持つ会社では、レジストリを分割するか、アーティファクト専用の別グループを用意し、グループ間で権限を同期する必要があります。
 
-- **より広い重複排除スコープ**: 同じ Organization 内の複数のトップレベルグループにまたがる同一の Blob が 1 度だけ保存されます
-- **より大きなストレージ効率**: 異なるトップレベルグループにまたがって使用される共通のアーティファクト（ベースイメージ、共有ライブラリ、パブリックパッケージ）が重複排除の恩恵を受けます
-- **改善されたコスト按分**: ストレージコストが Organization レベルで計算され、より明確な請求境界を提供します
+### Organizations とトップレベルグループの両方 {#both-organizations-and-top-level-groups}
 
-## 検討した代替案 {#alternatives-considered}
+どちらのレベルでもレジストリを提供します。
 
-### 代替案: トップレベルグループ {#alternative-top-level-groups}
-
-#### アプローチ {#approach}
-
-レジストリを現在利用可能な最上位グループエンティティであるトップレベルグループにアンカーし、Organizations が安定して広く採用されたら Organizations へマイグレーションする計画。
-
-**注**: トップレベルグループは、Organizations のタイムラインに不確実性が高かった初期計画段階で検討されました。Organizations のタイムラインの更新と顧客のオプトインアプローチにより、ターゲットアーキテクチャ向けの構築が現実的になりました。
-
-#### 採用されなかった理由 {#why-not-chosen}
-
-1. **将来のマイグレーション負荷**: 顧客は後でトップレベルグループから Organizations へマイグレーションする必要があり、慎重な計画と実行が必要です
-1. **概念的な不一致**: トップレベルグループは階層的なコンテナですが、アーティファクトレジストリは概念的には組織全体（複数のトップレベルグループにまたがる可能性あり）にサービスを提供します
-1. **Organizations タイムラインの整合**: Organizations は Artifact Registry プロジェクトのタイムライン内にローンチされる見込みであり、暫定的なアプローチを不要にしています
-1. **前例の落とし穴の回避**: トップレベルグループを選択した他の機能（Security Dashboard、Compliance Center、Value Stream Analytics）は現在マイグレーションの考慮に直面しています。最初から Organizations 向けに構築することで、このパターンを回避します
-1. **重複排除効率の低下**: トップレベルグループスコープの重複排除では、同じ Organization 内のトップレベルグループにまたがる同一 Blob を重複排除する機会を逃します
-1. **複雑な Blob マイグレーション**: トップレベルグループから Organizations へのマイグレーションには、トップレベルグループにまたがる Blob の統合が必要となり、マイグレーションの複雑さが大幅に増加します
-1. **統合は実現不可能**: 複数のトップレベルグループを持つすべての顧客（例: GitLab 自体は `gitlab-org`、`gitlab-com` などを使用）が、1 つのグループに統合できるとは限りません。アーティファクト専用に別個のトップレベルグループを作ることも検討しましたが、グループ間で同期した権限を維持する複雑さのために却下されました。
-
-## 参考文献 {#references}
-
-- [Organizations 開発ドキュメント](https://docs.gitlab.com/ee/development/organization/)
-- [Organizations チームのハンドブック](/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/)
-- [Cells 設計文書](/handbook/engineering/architecture/design-documents/cells/)
-- [ADR-002: ストレージ重複排除のスコープ](002_storage_deduplication_scope.md) - 重複排除境界
-- [ADR-007: データベーススキーマ](007_database_schema.md)
+却下理由：いずれ顧客が離れるトップレベルグループの経路のために、2 つの実装を構築し、整合性を維持することになります。

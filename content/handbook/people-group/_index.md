@@ -2,11 +2,11 @@
 title: People Group
 description: "GitLab の People Group は、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
 upstream_path: /handbook/people-group/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-translated_at: "2026-11-14T08:35:06.703137+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:10:23.948269+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-09T11:02:44-05:00"
+lastmod: "2026-11-17T16:09:08Z"
 ---
 
 ## ようこそ {#welcome}
@@ -165,19 +165,6 @@ People Operations Team のその他のリストされたプロセスは[こち�
 
 - 郵送住所については、当社の [訪問案内](https://about.gitlab.com/company/visiting/) ページを参照してください。
 - NL オフィスについては、[addpost](https://www.addpost.nl)を使用して郵便物をスキャンし、要求に応じて物理的な住所に送信します。
-
-## 不正確である可能性のある LinkedIn プロフィールの報告 {#reporting-potential-inaccurate-linkedin-profiles}
-
-GitLab は、GitLab チームメンバーであることに関する不正確な情報を持つ LinkedIn プロフィールを積極的に検索しません。ただし、プロフィールが特定され、その人が本当に GitLab チームメンバーであるかどうかに疑問がある場合があります。以下は、潜在的に不正確なプロフィールにフラグを立てるプロセスと、People Operations チームがプロフィールを確認し、潜在的に報告するために行うアクションです。
-
-- チームメンバーはまず、その人が現在の GitLab チームメンバーかどうかを判断するため、Slack および／または組織のページで確認すべきです。
-- チームメンバーがプロフィールを確認できない場合、チームメンバーは [Compass](https://app.serval.com/new-request)を介して、対象となる LinkedIn プロフィールと共に People Operations Team に連絡すべきです。
-- People Operations チームメンバーは、その人がチームメンバーでないこと／なかったことを Workday で確認します。
-- People Operations チームメンバーは、その人が面接を受けたこと、オファーを受けたこと、または採用を見送られたことがあるかを確認するため、Talent Acquisition に確認します。
-- People Operations チームメンバーは、より広いコミュニティのアクティブなメンバーかどうかを確認するため、[Developer Advocacy チーム](/handbook/marketing/product-and-technical-marketing/developer-advocacy/)に、[#developer-advocacy](https://gitlab.enterprise.slack.com/archives/CMELFQS4B) Slack チャンネルで `@devrel-team` タグを使用して連絡します。
-- より広いコミュニティの確認されたメンバーであるがチームメンバーでない場合、Developer Relations チームはプロフィールに連絡を取り、プロフィールを GitLab への関与に合わせるよう依頼します。
-- より広いコミュニティの現在のメンバーでなく、Talent Acquisition が Greenhouse にプロフィールがないことを確認した場合、Talent Acquisition は Do Not Hire プロフィールを作成します。
-- People Operations チームメンバーは、[他のメンバーのプロフィールの不正確な情報を報告する方法](https://www.linkedin.com/help/linkedin/answer/30200?src=or-search&veh=www.google.com%7Cor-search)を介して LinkedIn にアカウントを報告します。
 
 ## Workday の使用 {#using-workday}
 
