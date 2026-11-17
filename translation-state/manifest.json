@@ -18210,11 +18210,11 @@
     },
     "content/handbook/marketing/digital-experience/_index.md": {
       "path": "content/handbook/marketing/digital-experience/_index.md",
-      "upstream_sha": "ae7cb222d67ee0dd31f3319c8c70f0fabda2633b",
-      "translated_at": "2026-11-17T21:10:23.948269+00:00",
-      "model": "codex",
-      "input_hash": "88c00482f3d24498425ba3e3a0819e735da3dc1df5704e7233f4a06ba862ab60",
-      "upstream_committed_at": "2026-11-17T11:17:06-08:00"
+      "upstream_sha": "f2054c8e129a54110908cd865077f4487b8f9534",
+      "translated_at": "2026-11-18T07:28:15+09:00",
+      "model": "gpt-6.2-sol",
+      "input_hash": "062fd3b2d9effd4e0fb9d12432434a6c074ca5425a2dfd6a078ca7f9bc212807",
+      "upstream_committed_at": "2026-11-17T14:22:53-08:00"
     },
     "content/handbook/marketing/digital-experience/analytics/_index.md": {
       "path": "content/handbook/marketing/digital-experience/analytics/_index.md",
