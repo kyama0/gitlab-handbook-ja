@@ -2,11 +2,11 @@
 title: "インシデント対応マトリクス"
 description: "マーケティングサイトで発生する可能性のあるインシデントへのガイド"
 upstream_path: /handbook/marketing/digital-experience/engineering/incident-response-playbook/
-upstream_sha: 84ebb9fc88e6a42116737a8dbf279ac21828660f
-translated_at: "2026-10-27T21:09:41.005052+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:10:23.948269+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-26T17:06:50-07:00"
+lastmod: "2026-11-17T11:17:06-08:00"
 ---
 
 ## 概要 {#overview}
@@ -78,7 +78,7 @@ lastmod: "2026-10-26T17:06:50-07:00"
 
 現在、サイト停止の記録には、Issue の代わりに[インシデント](https://docs.gitlab.com/ee/operations/incident_management/incidents.html)を使用しています。インシデントは Issue と同じように動作し、停止の記録に適したテンプレートを使用できます。この方法により、サイトの信頼性をより詳しく把握し、プロジェクト全体でダウンタイムの追跡と解決を確実に行えます。
 
-**担当者：** [Chris Fraser](https://gitlab.enterprise.slack.com/team/U0803EXMHE3)、Engineering Manager、EST 午前 9 時 30 分 - 午後 5 時 30 分
+**担当者：** [Chris Fraser](https://gitlab.enterprise.slack.com/team/U0803EXMHE3)、Senior Engineering Manager、EST 午前 9 時 30 分 - 午後 5 時 30 分
 
 1. Slack の #digital-experience チャンネルに投稿し、@digital-experience をタグ付けします。
 1. 5 分以内に応答がない場合は、次の人にテキストメッセージまたは電話で連絡してください。

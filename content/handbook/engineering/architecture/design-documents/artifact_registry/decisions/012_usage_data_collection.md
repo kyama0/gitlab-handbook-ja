@@ -4,222 +4,155 @@ owning-stage: "~devops::package"
 description: "SaaS および Self-Managed のデプロイにまたがるプロダクトアナリティクスとビジネスインテリジェンスのために、Artifact Registry が使用状況データを収集する方法に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-lastmod: "2026-11-05T17:24:28Z"
-translated_at: "2026-11-05T21:32:49.842021+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: codex
 stale: false
 ---
 
-
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
 
-## コンテキスト {#context}
+## 背景 {#context}
 
-Artifact Registry は、プロダクトアナリティクスとビジネスインテリジェンスのための使用状況データ収集と、それとは別に課金イベントを必要とします。使用状況データは、重要な問いに答えます。どのアーティファクトフォーマットが最も採用されているか、何個のアーティファクトがプッシュ/プルされているか、ストレージが時間とともにどう増加するか、何人のユニークユーザーがレジストリを利用しているか、仮想リポジトリのキャッシュヒット率はどうなっているか、といった問いです。
+Artifact Registry には、プロダクト分析とビジネスインテリジェンスのための利用データと、それとは別に課金イベントが必要です。
+利用データは、どの形式が最も採用されているか、アーティファクトの push と pull が何回行われるか、ストレージがどう増加するか、何人のユーザーがレジストリを使うか、仮想リポジトリがどの程度の頻度でキャッシュにヒットするか、といった質問に答えます。
 
-Artifact Registry は、Rails モノリスの外部にデプロイされるスタンドアロンの Go サービスです（[ADR-006](006_technology_stack.md)）。GitLab の主要なインストルメンテーションフレームワークの [Internal Event Tracking](https://docs.gitlab.com/ee/development/internal_analytics/)（Snowplow をバックエンドとする）は、Rails モノリスとの統合を中心に設計されています。サテライトサービスから使用状況データを収集するには、意図的な戦略が必要です。
+Artifact Registry は、Rails モノリスの外にある Go サービスです（[ADR-006](006_technology_stack.md)）。
+GitLab の主要な計測フレームワークである [Internal Event Tracking](https://docs.gitlab.com/ee/development/internal_analytics/) は、モノリスを中心に Snowplow 上に構築されています。
+Snowplow のイベントは、コレクターから仮名化を行うパイプラインを通り、Snowflake のウェアハウスへ流れます。
+[LabKit v2](https://gitlab.com/gitlab-org/labkit) は、Go サービスに推奨する経路である、ネイティブの Snowplow トラッカーを提供します。
+イベントはバックグラウンドでバッチ送信し、再試行も行います。
+AI Gateway や GitLab Language Server など、他のサテライトサービスも、すでに Snowplow にイベントを直接送信しています。
 
-収集はすべてのデプロイタイプで機能しなければなりません。
-
-- **GitLab.com (SaaS)**: マルチテナントで GitLab が運用するインフラ。アナリティクスパイプラインへのフルアクセスがあります
-- **Self-Managed**: 顧客がホストするインスタンス。データ収集はデフォルトで有効であり、管理者がオプトアウトできます
-- **GitLab Dedicated**: GitLab が管理するシングルテナントのクラウドインスタンス。データ収集の観点では機能的に Self-Managed と類似しています
-
-### Snowplow を介した Internal Event Tracking {#internal-event-tracking-via-snowplow}
-
-GitLab の主要なインストルメンテーションフレームワークです。イベントは Snowplow コレクターに送信され、仮名化を伴う AWS パイプラインを経由し、データレイクに到達して Snowflake データウェアハウスに取り込まれます。
-SaaS では常に利用可能であり、Self-Managed／Dedicated では GitLab 18.0 以降で、管理者がオプトアウトしない限りデフォルトで有効です。
-
-Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-org/labkit)はネイティブな Snowplow トラッカー（`v2/events/snowplow/`）を提供しており、次の機能があります。
-
-- [`custom_event`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/custom_event/jsonschema) スキーマを使用したカスタム使用状況イベント。型付けされ、スキーマ検証された属性を運ぶために、1 つ以上の自己記述カスタムコンテキストを付加します。
-- [`billable_usage`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema) スキーマを使用した課金対象の使用状況イベント。このスキーマのファーストクラスフィールドには、課金キー（`billing_entity_type` と `billing_entity_id` のペア、`root_namespace_id`、`unique_instance_id`）、`realm`、`deployment_type`、`quantity`、`unit_of_measure` が含まれ、さらにスキーマがモデル化していないディメンション用の自由形式の `metadata` オブジェクトがあります。
-- 自動リトライと FIFO キュー管理を備えた非同期バッチ送信
-- エミッターの可観測性のための組み込み Prometheus メトリクス
-- インメモリのイベントストレージ（10,000 イベントの容量）とオーバーフロー保護
-
-これは他のサテライトサービス（AI Gateway、GitLab Language Server）でも使用されているのと同じメカニズムであり、Go サービスにとって組織として推奨されるパスです。
-
-### カスタムイベントのコンテキストスキーマ {#context-schemas-for-custom-events}
-
-すべての AR カスタムイベントは、スコープごとに層を成す 2 つのコンテキストを付加します。
-
-- **[`gitlab_standard`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema)** — 共通の ID および環境フィールド（`environment`、`realm`、`instance_id`、`deployment_type`、`organization_uuid`、`user_id`）。Artifact Registry は Organization の UUID のみを保存するため（[ADR-022](022_namespace_decoupling.md)）、`organization_uuid` を設定し、数値の `organization_id` は決して設定しません。AR イベントをモノリスイベントと同じウェアハウスの列に格納し、プロダクト横断の分析を可能にします。
-- **[`artifact_registry_context`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema)** — AR 固有のディメンション: `ar_instance_version`（必須）、`ar_namespace_id`（ネームスペース UUID）と `ar_namespace_slug`、`format`、`repository_kind`（`hosted`/`virtual`/`remote`）、`repository_id`（リポジトリ UUID）と `repository_name`、`cache_hit`、`upstream_type`（`hosted`/`remote`）。ネームスペースとリポジトリは、それぞれ UUID と人が読める識別子を保持します。UUID はアナリティクス用の安定した結合キーです。これは、スラッグは顧客にとって不変であるものの、管理上の再取得（スクワッティング紛争、法的請求）によって変更される可能性があるためです。
-
-イベント固有の単発フィールド（例: `auth_method`、`deletion_type`、`artifacts_removed_count`）は、いずれのコンテキストでもなく、イベント自身の `custom_event` ペイロードに入れます。
+収集は、GitLab.com、Self-Managed、GitLab Dedicated のすべてのデプロイ環境で動作する必要があります。
 
 ## 決定 {#decision}
 
-**Artifact Registry は、LabKit v2 Snowplow トラッカーを唯一の使用状況データ収集メカニズムとして使用します。** 使用状況データはベストエフォートで収集します。イベントは Go サービスから Snowplow コレクターのエンドポイントに直接送出されます。アナリティクスのデータフローに Rails モノリスとの統合は不要です。
-課金は使用状況データではなく、信頼性を保証する必要があるため、専用のルールに従います（[課金イベント](#billing-events)を参照）。
+**Artifact Registry は、利用データの唯一の仕組みとして LabKit v2 の Snowplow トラッカーを使い、サービスから Snowplow コレクターへイベントを直接送信します。**
+各イベントは、push、pull、削除など、発生したことを記録します。
+利用データはベストエフォートです。
+課金は利用データとは異なり、信頼性が必要であるため、独自のルールに従います（[課金イベント](#billing-events)）。
 
-これは、MVP に対してイベントレベルのプロダクトアナリティクスを提供する最もシンプルなパスです。他の Go サテライトサービス（AI Gateway、GitLab Language Server）ですでに採用されているアプローチを踏襲しています。集計メトリクスの収集（例: Service Ping 経由）は意図的にスコープ外としています。Snowplow をオプトアウトする Self-Managed インスタンスに対する将来的なニーズが生じた場合は、フォローアップの ADR で対応できます。
+GitLab.com では、利用データを常に有効にします。
+Self-Managed と Dedicated はデフォルトで送信し、管理者はオプトアウトできます。
 
-### LabKit v2 Snowplow を介したイベントレベルのトラッキング {#event-level-tracking-via-labkit-v2-snowplow}
+Service Ping などによる集計メトリクスは対象外です（[オプトアウトしたインスタンス向けの Service Ping](#service-ping-for-opt-out-instances)）。
+リクエストの遅延やエラー率などの運用メトリクスは利用データではなく、この ADR では扱いません。
 
-**何を追跡するか**（初期セット。イテレーションで拡張する）。すべてのイベントは、カスタムコンテキストとして `gitlab_standard` と `artifact_registry_context` の両方を運びます。共通フィールド（`organization_uuid`、`realm`、`deployment_type`、`instance_id`、`environment`、`user_id`）は `gitlab_standard` に由来するため、以下では再掲しません。
+### 常に満たすべき条件 {#what-must-always-hold}
 
-| イベント | `artifact_registry_context` フィールド | イベントペイロード（単発）フィールド |
+| # | 制約 | 機械的に検証可能か？ |
 | --- | --- | --- |
-| `artifact_registry_artifact_pushed` | `format`、`repository_kind=hosted`、`repository_id`、`ar_namespace_id` | `auth_method` |
-| `artifact_registry_artifact_pulled` | `format`、`repository_kind`（`hosted`/`virtual`）、`repository_id`、`ar_namespace_id`、`cache_hit`（仮想リポジトリのみ） | `auth_method`、`delivery_mode`（`proxy`/`redirect`） |
-| `artifact_registry_artifact_deleted` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | `deletion_type`（`manual`/`lifecycle_policy`） |
-| `artifact_registry_namespace_created` | `ar_namespace_id` | — |
-| `artifact_registry_repository_created` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | — |
-| `artifact_registry_repository_deleted` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | — |
-| `artifact_registry_virtual_cache_miss` | `format`、`repository_kind=virtual`、`repository_id`、`ar_namespace_id`、`upstream_type`（`hosted`/`remote`） | — |
-| `artifact_registry_lifecycle_policy_executed` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | `artifacts_removed_count` |
+| 1 | **イベントは Snowplow に直接送信します。** すべてのデプロイ環境で、サービス自身が GitLab の Snowplow コレクターに分析イベントを送信します。分析イベントは、Rails や他のサービスを経由しません。 | はい：分析イベントは、設定されたコレクターに向けてのみサービスから送信します |
+| 2 | **分析はベストエフォートです。** 追跡はサービス自身のプロセス内で実行し、他のサービスを待たないため、コレクターの遅延や障害がリクエストの遅延や失敗を招くことはありません。再起動や停止による分析イベントの損失は許容します。 | はい：コレクターが応答しても、停滞しても、停止していても、リクエストは同じように完了します |
+| 3 | **オプトアウトで停止するのは分析であり、課金ではありません。** オプトアウトしたインスタンスは分析イベントを送信しません。課金イベントには、オプトアウトを適用しません。 | はい：オプトアウトを設定すると、分析イベントはインスタンスから送信せず、課金イベントは引き続き送信します |
+| 4 | **課金イベントを黙って失うことはありません。** 課金の配信は、プロセスの再起動やコレクターの停止に耐え、再送するイベントは同じイベント ID を保持するため、1 回だけ計上します。 | はい：再起動前または停止中にキューに入れた課金イベントは、その後、元のイベント ID のまま配信します |
+| 5 | **課金は分析と別に送信します。** GitLab.com では、課金イベントを別のトラッカーで認証付きの課金コレクターに送信します。サービスは、LabKit v2 の課金 API を使わず、独自の [`billable_usage`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema) コンテキストを構築します。 | はい：GitLab.com では、課金イベントは課金コレクターにのみ到達し、分析イベントはそこに到達しません |
+| 6 | **すべての分析イベントが両方のコンテキストを持ちます。** [`gitlab_standard`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema) は、共通のアイデンティティと環境のフィールドを保持し、イベントをモノリスと同じウェアハウスの列に格納します。[`artifact_registry_context`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema) は、形式やリポジトリ種別など、AR 固有のディメンションを保持します。イベント固有の一度限りの情報は、そのイベント自身のペイロードに入れます。繰り返し使う AR 固有のディメンションにウェアハウスの専用列が必要な場合は、新しいマイナーバージョンで `artifact_registry_context` を拡張します。 | 一部：すべてのイベントが両方のコンテキストを持つことは検証できますが、新しいディメンションをどこに置くかは判断が必要です |
+| 7 | **識別子は安定しています。** サービスが UUID だけを保存するため、分析イベントは、組織を整数 ID ではなく UUID で指定します（[ADR-022](022_namespace_decoupling.md)）。スラッグは管理者による再取得で変わる場合があるため、ネームスペースやリポジトリは、読みやすいスラッグや名前とともに、結合キーである UUID を送信します。 | はい：組織の整数 ID を持つ分析イベントはなく、ネームスペースやリポジトリを指定する分析イベントは、必ずその UUID を持ちます |
+| 8 | **AR のネームスペースが計測の境界です。** 分析イベントは `artifact_registry_context` に、課金イベントは `billable_usage.metadata` に `ar_namespace_id` を持つため、両方を同じ粒度で集計します。組織の UUID を使って、ネームスペースを組織単位に集計します。課金パイプラインは、`billable_usage` のトップレベルのフィールドと `metadata` だけを読み取り、カスタムコンテキストは読み取らないため、AR 固有の課金ディメンションは、すべて `metadata` に入れます。 | はい：すべての課金イベントはメタデータに `ar_namespace_id` を持ち、ネームスペースに関するすべての分析イベントは、AR コンテキストにそれを持ちます |
+| 9 | **pull イベントは、実際の配信モードで観測できる最も強いシグナルを報告します。** プロキシされた pull は、ペイロードのコピーが正常に完了した後にのみ発生します。リダイレクトされた pull は、サービスがリダイレクトを発行したときに発生します。イベントには、設定されたモードではなく、レスポンスで実際に使ったモードを記録します。 | はい：プロキシされた pull は、正常なコピーの後に 1 つのイベントを出力し、コピーが途中で終わった場合は出力しません。リダイレクトは、発行時に 1 つ出力し、各イベントは使用したモードを持ちます |
+| 10 | **課金量をリダイレクトモードの pull イベントに基づいて算出することはありません。** サービスがストリーミングしなかったバイト数は、ストレージと CDN のアクセスログから取得します。 | はい：課金量に、リダイレクトモードの pull イベントを計上することはありません |
 
-#### プルイベントが発火するタイミング {#when-a-pull-event-fires}
+### pull イベントが発生するタイミング {#when-a-pull-event-fires}
 
-上のカタログはディメンションを示しますが、タイミングは示しません。レスポンスのステータスがコミットされた後に失敗する可能性があるため、「ダウンロード成功」は曖昧です。各フォーマットのスライスはその曖昧さを独自に解決していたため、解釈が分かれていました。ルールは、**各配信モードが観測できる最も強いシグナルを報告する**ことです。
+ステータスを確定した後にレスポンスが失敗する可能性があると、「ダウンロードの成功」は曖昧になります。
+プロキシモードでは、サービスがバイト列をストリーミングするため、配信が完了したかどうかを把握できます。
+ステータスの確定後にクライアントが切断したり、ストレージの読み取りに障害が起きたりした場合は、何も出力しません。部分的な転送はダウンロードではないためです。
+リダイレクトモードでは、サービスは署名済みのストレージ URL または CDN URL をクライアントに渡し、転送を観測することはありません。
+リダイレクトを発行するときだけが観測できる時点であり、それを 1 回の pull と数えます。
+プロキシモードをリダイレクトのルールに合わせて制限すると、サービスが持つ配信シグナルを捨てることになります。また、リダイレクトモードをプロキシのルールに合わせて強化することは不可能です。
 
-[ADR-005](005_artifact_delivery_mode.md)は 2 つのモードを定義します。モードはインスタンスレベルのデフォルトであり、常に利用可能なネームスペースごとのオーバーライドがあるため、同じアーティファクトでも、提供するネームスペースに応じていずれのルールでもカウントされ得ます。イベントは設定値ではなく、レスポンスが実際にどのように配信されたかを記録します。
-
-1. **プロキシモード**： サービスがバイトをストリーミングするため、配信が完了したかを把握できます。ペイロードのコピーが正常に完了した後にのみイベントが発火します。レスポンスステータスのコミット後にクライアントの接続が切断された場合やストレージ読み取り障害が起きた場合、部分転送はダウンロードではないため何も発行しません。
-1. **リダイレクトモード**： サービスはクライアントに署名付きストレージまたは CDN URL を渡し、転送を確認しません。サービスがリダイレクトを発行した時点でイベントが発火します。それが唯一観測可能なタイミングであり、プロダクトの使用状況として 1 回のプルとしてカウントします。
-
-プロキシモードをリダイレクトのルールまで下げると、サービスが保持している配信シグナルを捨てることになります。一方、リダイレクトモードをプロキシのルールまで上げることは不可能です。
-
-したがって、2 つのモードは異なる信頼度を持ちます。リダイレクトモードのプルは過大計上する可能性があります（クライアントがリダイレクトに従わない場合があります）。また、過小計上する可能性もあります（1 つの署名付き URL が TTL 内に複数の転送を提供でき、CDN が 1 回のオリジンフェッチから多くのクライアントに提供できるためです）。上のカタログに従い、イベントペイロードはモードを運ぶため、分析で両者を分離できます。両者を合計すると信頼度の水準が混ざります。特に請求対象の数量はリダイレクトモードのイベントに依拠できず、ストレージまたは CDN のアクセスログが必要です。
-
-AR ネームスペースは [ADR-022](022_namespace_decoupling.md)のスラッグをアンカーとするエンティティであり、1 つの Organization が複数の AR ネームスペースを所有できます。[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/design-doc/-/merge_requests/27)は計量境界を AR ネームスペースに設定しています。課金対象イベントの `ar_namespace_id` は `billable_usage.metadata` に、アナリティクスイベントでは `artifact_registry_context` に含まれるため、両方のデータセットを同じ粒度で集計できます。`organization_uuid`（`gitlab_standard` 内）は、ネームスペース横断のロールアップをサポートします。
-
-**設定**： Snowplow コレクターのエンドポイントはサービス構成ファイルで提供されます。SaaS ではこれは `snowplowprd.trx.gitlab.net` を指します。
-オプトアウトしていない Self-Managed および Dedicated インスタンスでは、同じコレクターを指すように設定します。
-オプトアウトしたインスタンスでは、アナリティクス用のエミッターを無効にします（アナリティクスイベントを送信しません）。
-課金イベントは、オプトアウトに左右されません（[課金イベント](#billing-events)を参照）。
-
-**カバレッジ**： SaaS（常時）、Self-Managed および Dedicated（デフォルトで有効。管理者はオプトアウトできます）。
-
-**データの宛先**： イベントは標準的な Snowplow パイプライン（コレクター、エンリッチャー、仮名化、S3）を経由して Snowflake データウェアハウスに流れます。カスタムなパイプラインインフラは不要です。
+[ADR-005](005_artifact_delivery_mode.md)では、ネームスペースがインスタンスの配信モードを上書きできるため、同じアーティファクトを、どちらのルールでも計数する場合があります。
+2 つのモードは、確信度が異なります。
+リダイレクトモードの pull は、クライアントがリダイレクトをたどらなければ過大計数になり、1 つの署名済み URL が有効期間内に複数の転送に使われたり、CDN が 1 回のオリジンからの取得で多くのクライアントに配信したりすると、過小計数になります。
+イベントはモードを持つため、分析で両者を区別できます。両方を合算すると、異なる 2 つの確信度を混ぜることになります。
+課金量をリダイレクトモードのイベントに基づいて算出することはできません。ストレージまたは CDN のアクセスログが必要です。
 
 ### 課金イベント {#billing-events}
 
-課金対象の使用量はテレメトリではなく、信頼性を保証する必要があるため、課金イベントは専用のルールに従います。
+計測対象は、デプロイ環境ごとに異なります。
 
-- **オプトアウト**：課金イベントは、プロダクト使用状況データのオプトアウトに従いません。オプトアウトは、アナリティクスイベントにのみ適用します。
-- **GitLab.com での送信先**：サービスは、専用の課金トラッカーを使い、アナリティクス用とは別の、認証を要求する課金コレクターに課金イベントを送信します。
-- **スキーマ**：サービスは LabKit v2 の課金 API ではなく、独自の `billable_usage` コンテキストを送信します。
-- **配信**：課金イベントが気付かれずに失われることはありません。プロセスの再起動やコレクターの停止があっても配信を維持し、再送するイベントはイベント ID を保持して、1 回だけカウントします。
-
-計量項目は、デプロイメントごとに異なります。
-
-| 計量項目 | GitLab.com | 接続された Self-Managed と Dedicated | エアギャップ環境の Self-Managed（オフラインライセンス） |
+| 計測対象 | GitLab.com | 接続された Self-Managed と Dedicated | エアギャップの Self-Managed（オフラインライセンス） |
 | --- | --- | --- | --- |
-| コンポーネントのバージョン | はい | はい | イベントはありません。Rails がサービスの日次コンポーネント数を取得し、オフラインの使用量エクスポートに含めます |
-| ストレージ | はい。blob 回収が提供されてから課金します | いいえ | いいえ |
-| 外向き転送 | はい | いいえ | いいえ |
+| コンポーネントのバージョン | はい | はい | イベントなし。Rails がサービスの日次コンポーネント数を取得し、オフラインの使用量エクスポートに含めます |
+| ストレージ | はい | いいえ | いいえ |
+| エグレス | はい | いいえ | いいえ |
 
-外向き転送のイベントは、1 つのネームスペース、1 つの配信モードで、1 時間に送信したバイト数を含みます。
-サービスは、自身がストリーミングするバイト数をカウントします。
-リダイレクトした転送は観測できないため、そのバイト数は、[プルイベントが発火するタイミング](#when-a-pull-event-fires)の要件に従い、ストレージと CDN のアクセスログから取得します（[ADR-029（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/029_egress_metering/)）。
+エグレスイベントは、1 つのネームスペースと 1 つの配信モードについて、1 時間に送信したバイト数を持ちます。
+サービスは、自身がストリーミングしたバイト数を数えます。
+リダイレクトされた転送は観測しないため、[pull イベントが発生するタイミング](#when-a-pull-event-fires)で求めるとおり、そのバイト数はストレージと CDN のアクセスログから取得します（[ADR-029（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/029_egress_metering/)）。
 
-エアギャップ環境での取得は、[代替案 3](#alternative-3-add-service-ping-integration-for-self-managed-opt-out-coverage)で却下する Service Ping API とは異なります。ネームスペースごとに、保存済みの日次件数を 1 つ読み取るため、カーディナリティとクエリコストを小さく保てます。
+エアギャップ環境での取得は、[オプトアウトしたインスタンス向けの Service Ping](#service-ping-for-opt-out-instances)で却下した Service Ping API ではありません。ネームスペースごとに保存された 1 つの日次数を読み取るため、カーディナリティとクエリコストは小さいままです。
 
-Self-Managed と Dedicated で、コンポーネントのイベントを課金コレクターへ届ける方法と、その認証方法は未決定です。
+課金のキーは、GitLab.com ではネームスペースの課金アンカー（[ADR-022](022_namespace_decoupling.md)）、Self-Managed と Dedicated ではインスタンスの `unique_instance_id` です。
 
-### 運用メトリクス（非プロダクト） {#operational-metrics-non-product}
+### 導入手順 {#adoption-path}
 
-Artifact Registry はすでに、Prometheus メトリクス（リクエストレイテンシ、エラー率、コネクションプールの統計）に LabKit v2 を使用しています。これらはインフラのダッシュボードやアラートで消費される運用メトリクスであり、プロダクトアナリティクスではありません。完全を期すためにここで触れていますが、使用状況データ収集の決定の一部ではありません。
-
-LabKit の Snowplow エミッター自体が Prometheus メトリクス（エンキュー数、送信成功/失敗、バッチ配信時間、キュー深度）を公開しており、イベントパイプラインの健全性に対する運用上の可視性のために登録すべきです。
-
-## 結果 {#consequences}
-
-### ポジティブ {#positive}
-
-1. **初日からの完全な SaaS カバレッジ**： LabKit v2 の Snowplow トラッカーは本番で実証済みであり、追加のインフラなしにイベントレベルの粒度を提供します
-1. **シンプルで単一パスのインストルメンテーション**： 1 つのメカニズム、1 つのコードパス。アナリティクスのデータフローのために Rails モノリスと調整する必要がありません
-1. **Organization スコープのコンテキスト**： すべてのイベントが `gitlab_standard.organization_uuid` を運び、Organization アンカーアーキテクチャに整合します（[ADR-001](001_organizations_as_anchor_point.md)）。サービスは UUID のみを保存するため、数値の `organization_id` フィールドは設定されません。課金の結合キーには、`billing_entity_type`／`billing_entity_id` のペア（SaaS。ネームスペースの課金アンカーから取得。[ADR-007](007_database_schema.md)）と `unique_instance_id`（Self-Managed および Dedicated）を使用します
-1. **デフォルトでのプライバシー**： イベントは GitLab の既存の仮名化パイプライン（HMAC-SHA256）を経由し、追加のプライバシーエンジニアリングは不要です
-1. **カスタムインフラ不要**： 既存の Snowplow パイプラインと Snowflake ウェアハウスを使用します
-1. **課金対応**：サービスは LabKit v2 の課金 API ではなく、専用の課金トラッカーで、独自の `billable_usage` コンテキストを送信します（[課金イベント](#billing-events)）。これにより、GitLab Credits による使用量ベース課金に、realm、測定単位、数量などの必要なフィールドを提供します
-1. **サテライトサービスの前例に整合**： AI Gateway と GitLab Language Server はすでに LabKit v2 Snowplow を直接使用しています。Artifact Registry も同じパターンに従います。
-
-### ネガティブ {#negative}
-
-1. **LabKit v2 と iglu の最低バージョン依存**： カスタムイベントにカスタムコンテキストを送出するには、それをサポートする LabKit v2 リリースが必要であり、また `artifact_registry_context` スキーマが Snowplow エンリッチメントパイプラインにデプロイされてから、それを使用する AR イベントが検証を通過します。
-1. **Snowplow をオプトアウトしたインスタンスからはアナリティクスデータが得られません**：Snowplow 転送をオプトアウトする Self-Managed および Dedicated インスタンスは、アナリティクスデータを提供しません。
-   課金イベントは、オプトアウトに左右されません（[課金イベント](#billing-events)）。
-   顧客の明示的なオプトアウトを踏まえれば、MVP では許容できます。オプトアウトしたインスタンスの集計カバレッジがプロダクト要件になれば、後続の ADR で Service Ping 統合を追加できます。
-1. **インメモリイベントバッファのリスク**： LabKit v2 の Snowplow エミッターはインメモリストレージ（最大 10,000 イベント）を使用します。プロセス再起動時にイベントは失われます。Artifact Registry の想定イベント量では、アナリティクスイベントに関しては許容できます。これはアナリティクスデータであり、トランザクションレコードではないためです。課金イベントでこの損失は許容しません（[課金イベント](#billing-events)）。エミッターの Prometheus メトリクスが、オーバーフローやドロップ率の可視性を提供します。
+1. push、pull、削除、リポジトリ作成などの主要な操作について、それぞれ両方のコンテキストを持つ分析イベントを導入します。
+1. 分析のフェーズとは独立して、各デプロイ環境の計測対象に対する課金イベントを導入します。
+1. プロダクト分析の要望に応じて、イベントとディメンションを追加します。
 
 ## 検討した代替案 {#alternatives-considered}
 
-### 代替案 1: すべてのイベントを Rails モノリス経由でルーティング {#alternative-1-route-all-events-through-the-rails-monolith}
+### 何もしない {#do-nothing}
 
-#### アプローチ {#approach}
+利用データや課金イベントなしで提供します。
+却下理由：前述の採用状況や利用状況に関する質問に答えるものがなくなり、GitLab Credits による従量課金には課金イベントが必要です。
 
-Artifact Registry が、内部 API を介してすべての使用状況イベントを Rails モノリスに送信します。モノリスはその後、既存の Rails 統合された Snowplow パイプラインを使用して、レジストリに代わって `track_internal_event()` 呼び出しを発火します。
+### すべてのイベントを Rails 経由にする {#route-all-events-through-rails}
 
-#### 選択しなかった理由 {#why-not-chosen}
+サービスが、内部 API を通じてすべてのイベントをモノリスに送信し、モノリスが Internal Event Tracking で追跡します。
+却下理由：
 
-1. **密結合**： 追跡されるすべてのアクションがモノリスへの API 呼び出しを必要とし、クリティカルパス上にアナリティクスのランタイム依存性を生むか、またはサービス間にバックグラウンドジョブキューを生みます
-1. **レイテンシと可用性のリスク**： モノリスが遅いか利用不可の場合、イベント追跡が劣化またはブロックします。LabKit のインプロセスエミッターは、追跡を外部サービスから切り離します
-1. **不要な間接参照**： LabKit v2 は、モノリスが内部的に使用するのと同じ Snowplow トラッカーを提供しており、仲介者を不要にします
-1. **サテライトサービスのアンチパターン**： 他の Go サービス（AI Gateway、GitLab Language Server）はすでに Snowplow イベントを直接送出しています。Rails 経由のルーティングは、確立されたパターンからの後退になります
+- 追跡するすべての操作がモノリスへの呼び出しになり、リクエスト経路に実行時の依存関係、または 2 つのサービス間にジョブキューが生じます。
+- モノリスの遅延や停止が追跡を劣化させたり妨げたりする一方、プロセス内のエミッターは他のサービスに依存しません。
+- LabKit v2 はモノリスと同じ Snowplow パイプラインに送信するため、追加のホップに利点はありません。
+- 他のサテライトサービスは、すでに Snowplow に直接送信しており、そのパターンから外れることになります。
 
-### 代替案 2: ClickHouse への OpenTelemetry (OTLP) {#alternative-2-opentelemetry-otlp-to-clickhouse}
+### OpenTelemetry から ClickHouse へ {#opentelemetry-to-clickhouse}
 
-#### アプローチ {#approach-1}
+[CI Job Telemetry](/handbook/engineering/architecture/design-documents/ci_job_telemetry/) のパターンに従い、ClickHouse に書き込むコレクターに OTLP トレースとメトリクスを送信し、Snowflake の代わりにそこで分析します。
+却下理由：
 
-[CI Job Telemetry](/handbook/engineering/architecture/design-documents/ci_job_telemetry/) パターンに従い、ClickHouse に書き込む OTEL Collector に OTLP トレース/メトリクスを送出します。アナリティクスストアとして Snowflake の代わりに ClickHouse を使用します。
+- CI Job Telemetry が扱うのは運用トレースです。利用データはプロダクト分析であり、クエリも利用者も異なります。
+- ClickHouse はすべてのデプロイ環境で利用できるわけではなく、Snowplow と Snowflake が、確立されたプロダクト分析の技術スタックです。
+- Analytics Instrumentation チームが Snowplow パイプラインと Snowflake ウェアハウスを所有し、Product Manager とアナリストが Snowflake をクエリしています。ClickHouse には、新しいクエリ基盤とデータモデルが必要です。
+- この選択は固定ではありません。ClickHouse が標準の分析ストアになれば、サービスを変更せずに、パイプラインで Snowplow イベントの送信先を切り替えられます。
 
-#### 選択しなかった理由 {#why-not-chosen-1}
+### オプトアウトしたインスタンス向けの Service Ping {#service-ping-for-opt-out-instances}
 
-1. **異なるユースケース**： CI Job Telemetry は、運用パフォーマンストレース（ジョブステージのスパンレベルのタイミング）に OTLP を使用します。Artifact Registry の使用状況データはプロダクトアナリティクス（誰が何をどれだけ使うか、採用トレンド）です。これらはクエリパターンも消費者も異なる別のドメインです
-1. **ClickHouse の可用性**： ClickHouse はまだすべてのデプロイタイプで広く利用できるわけではありません。Snowplow/Snowflake は確立されたプロダクトアナリティクスインフラです
-1. **組織的な整合性**： Analytics Instrumentation チームが Snowplow パイプラインと Snowflake ウェアハウスを所有しています。プロダクトアナリティクスの消費者（Product Manager、Data Analyst）は Snowflake にクエリします。ClickHouse を使用すると、確立されたワークフローの外に新しいクエリインフラとデータモデルを構築する必要が生じます
-1. **将来の互換性**： ClickHouse が標準のプロダクトアナリティクスストアになった場合、LabKit v2 の Snowplow イベントは、アプリケーションコードを変更することなくパイプラインレベルで再ルーティングできます。この決定は将来の OTLP 採用と相互排他的ではありません
+Snowplow に加え、毎週の Service Ping 実行時に Rails がクエリする内部 API を公開し、Snowplow からオプトアウトしたインスタンスもカバーする集計メトリクスを提供します。
+却下理由：
 
-### 代替案 3: Self-Managed オプトアウトカバレッジのために Service Ping 統合を追加 {#alternative-3-add-service-ping-integration-for-self-managed-opt-out-coverage}
+- Service Ping は、メトリクスごとに毎週 1 つの数値を送信します。形式、リポジトリ種別、認証方法、組織、アップストリーム種別などのディメンションを組み合わせると、多数のメトリクスの派生形になります。Service Ping では、それらを平坦化するか、数百の事前集計されたメトリクス定義が必要になります。Snowplow は、各イベントにディメンションを保存します。
+- SQL でメトリクスを計算すると、ネームスペースでパーティション分割され、GitLab.com で何十億行にも増加するテーブルを、毎回走査することになります（[ADR-007](007_database_schema.md)、[ADR-003](003_system_requirements.md)）。ウェアハウスには、本番データベースに触れずに、すでに同じデータがあります。
+- SQL の代わりに Redis カウンターを使うと、有効期限やフラッシュ後の復旧を伴う運用上の依存関係と、すべての push と pull での計測ポイントが増えます。Snowplow は、その場所ですでに同じデータを取得しています。
+- メトリクスの定義はモノリス内にあるため、変更のたびにモノリスのチームが必要です。
+- オプトアウトした顧客は、データを共有しないことを選びました。カバレッジの不足は限定的であり、その意図と一致します。
+- オプトアウト率が分かった後、プロダクトにそれらのインスタンスの集計カバレッジが必要になれば、後の ADR で再検討できます。
 
-#### アプローチ {#approach-2}
+## 影響 {#consequences}
 
-Snowplow に加えて、Rails モノリスが毎週の Service Ping 組み立て時にクエリして集計メトリクスを収集する内部 API を Artifact Registry に公開します。これにより、Snowplow イベント転送をオプトアウトしたインスタンスに対しても、集計カバレッジが提供されます。
+### 利点 {#positive}
 
-#### 選択しなかった理由 {#why-not-chosen-2}
+1. 既存の Snowplow パイプラインと Snowflake ウェアハウスを使い、新しいインフラなしでイベント単位の分析を実現します。
+1. 分析のために Rails と調整せず、1 つの仕組みと 1 つのコード経路を使います。
+1. イベントが既存の仮名化パイプラインを通る、プライバシーを標準とした設計です。
+1. Organization にアンカーしたアーキテクチャに沿い、UUID を通じて Organization 単位で分析を集計できます（[ADR-001](001_organizations_as_anchor_point.md)）。
+1. 課金に対応します。`billable_usage` コンテキストが、realm、計測単位、数量など、GitLab Credits による従量課金に必要なフィールドを提供します。
 
-1. **カーディナリティの問題**： Service Ping のペイロードは、フラットなスカラーメトリクス（メトリクスごと、週ごとに 1 つの数値）に集計されます。Artifact Registry の興味深いディメンション（フォーマット、リポジトリの種類（ホスト型／仮想／リモート）、認証方法、Organization、上流の種類）は、クロス集計するとメトリクスのバリエーションが膨大に膨れ上がります。これを Service Ping でモデル化するには、カーディナリティをフラット化する（分析的価値を失う）か、数百の事前集計されたメトリクス YAML 定義を登録する（運用負担）かのいずれかが必要になります。Snowplow イベントは、ディメンションが各イベントとともにウェアハウスに格納されるため、高いカーディナリティを自然に扱えます。
-1. **高価な SQL 集計**： Service Ping は、ライブデータベースに対する SQL クエリでメトリクスを計算します。Artifact Registry のテーブル（アーティファクト、blob 参照、キャッシュエントリ）はネームスペースでパーティション分割され、GitLab.com スケールでは数十億行に成長します（[ADR-007](007_database_schema.md)、[ADR-003](003_system_requirements.md)）。毎週の Service Ping メトリクスを埋めるためのネームスペース横断の `COUNT`/`SUM` クエリは、サイクルごとに大量のデータをスキャンします。Snowplow がすでに本番データベースに触れることなくウェアハウスから同じ情報を提供するのに、正当化する必要のない高価な操作です。
-1. **Redis カウンターインフラの回避**： ライブ SQL の代替は、すべてのアーティファクト操作でインクリメントされ Service Ping が読み取る Redis ベースのカウンターを維持することです。これは Rails モノリスが HyperLogLog や Redis HLL メトリクスに使用するパターンです。ここでこれを採用すると、新しい運用依存性（Redis カウンター、有効期限処理、Redis フラッシュ時の復旧セマンティクス）と、すべてのプッシュ/プルのホットパスにおける新しいインストルメンテーション面が追加されます。Snowplow はすでに同じインストルメンテーションポイントでこのデータを捕捉するため、Redis カウンター層は純粋な重複になります。
-1. **サービス間の調整**： YAML メトリクス定義のために Rails モノリスチームへの依存性を追加します。これは、この ADR で回避しようとしているサービス間結合の一種です。
-1. **限定的なギャップ**： Snowplow をオプトアウトする Self-Managed 顧客は、データを共有しないことを明示的に選択しています。カバレッジのギャップは限定的であり、顧客の意図に整合しています。
-1. **将来の選択肢を閉ざさない**： このオプションは、プロダクトがオプトアウトインスタンスの集計カバレッジを必要とする場合のフォローアップとして引き続き利用できます。オプトアウト率に関するデータが得られた時点で、別の ADR がトレードオフを再検討できます。
+### 欠点 {#negative}
 
-## 実装シーケンス {#implementation-sequence}
-
-1. **フェーズ 1（MVP）**: LabKit v2 Snowplow トラッカーを統合します。`gitlab_standard` と `artifact_registry_context` を付加して、コアアクション（プッシュ、プル、削除、リポジトリ作成）のイベントを送出します。エミッターの Prometheus メトリクスを登録します。ステージングで両方のコンテキストが入った状態で、イベントが Snowflake に到着することを検証します。
-1. **フェーズ 2（課金）**：
-   各デプロイメントの計量項目について、`billable_usage` スキーマに準拠する課金イベントを送信します（[課金イベント](#billing-events)）。
-   SaaS では `billing_entity_type` と `billing_entity_id` が支払者を識別します（AR はネームスペースに保存したペアから両方の値を取得します。[ADR-022](022_namespace_decoupling.md)）。`root_namespace_id` は、スキーマで必須であり、ペアがない場合に CustomersDot がフォールバックとして使用するため、SaaS のイベントに残します（AR はペアだけを保存するため、タイプが `top_level_group` の間は `billing_entity_id` を `root_namespace_id` としても送信し、タイプが変わるとスキーマで許容される `null` を送信します）。`ar_namespace_id`（[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/design-doc/-/merge_requests/27)で定める計量境界）は、イベントの `metadata` オブジェクトに `feature_qualified_name` とともに含めます。
-   Self-Managed と Dedicated でのコンポーネントのイベントの転送方法は未決定であり、それに伴い `unique_instance_id` の取得元も未決定です（[課金イベント](#billing-events)）。
-   課金パイプラインは、トップレベルの `billable_usage` フィールドと `metadata` だけを読み取り、Snowplow のカスタムコンテキストは読み取らないため、AR 固有の課金ディメンションは `artifact_registry_context` ではなく `metadata` に置きます。
-   フェーズ 1 とは独立しています。
-1. **フェーズ 3（イテレーション）**： プロダクトアナリティクスの要求に基づいてイベントカバレッジを拡張します（仮想リポジトリの使用パターン、ライフサイクルポリシーの有効性、フォーマット固有の採用）。繰り返し現れる AR 固有のディメンションがファーストクラスのウェアハウス列に値する場合は、`artifact_registry_context` を拡張します（新しいマイナーバージョン）。
+1. コンテキストのスキーマは、このリポジトリの外にある GitLab のスキーマレジストリにあります。変更したコンテキストを使うイベントが検証を通過するには、先にそこで変更を公開する必要があります。
+1. オプトアウトしたインスタンスは分析を送信しませんが、課金イベントは引き続き流れます。これは、顧客の明示的な選択を踏まえて許容します。それらのインスタンスの集計カバレッジがプロダクトに必要になれば、後の ADR で Service Ping と連携できます。
+1. エミッターは、分析イベントをメモリ内にバッファリングするため、再起動やオーバーフローで失います。これは分析には許容できますが、課金には許容できません。エミッターのメトリクスに、オーバーフロー率とドロップ率を表示します。
 
 ## 参考資料 {#references}
 
-- [LabKit v2 Snowplow トラッカー](https://gitlab.com/gitlab-org/labkit/-/tree/master/v2/events/snowplow) — サテライトサービスで使用される Go Snowplow クライアント
-- [Iglu `custom_event` スキーマ](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/custom_event/jsonschema) — カスタムイベントペイロードのスキーマ
-- [Iglu `billable_usage` スキーマ](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema) — 課金対象使用状況イベントペイロードのスキーマ（課金キー: `billing_entity_type`、`billing_entity_id`、`root_namespace_id`、`unique_instance_id`）
-- [Iglu `gitlab_standard` スキーマ](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema) — AR カスタムイベントに付加される共通の ID/環境コンテキスト
-- [Iglu `artifact_registry_context` スキーマ](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema) — AR 固有のコンテキストスキーマ（[iglu!190](https://gitlab.com/gitlab-org/iglu/-/merge_requests/190)でマージ）
-- [labkit!498](https://gitlab.com/gitlab-org/labkit/-/merge_requests/498) — LabKit v2 の Snowplow トラッカーにカスタムコンテキストサポートを追加
-- [labkit#103](https://gitlab.com/gitlab-org/labkit/-/work_items/103) — LabKit v2 のカスタムコンテキストサポートの追跡作業アイテム（labkit!498 で解決）
-- [使用量課金設計ドキュメント !27](https://gitlab.com/gitlab-org/architecture/usage-billing/design-doc/-/merge_requests/27) — AR ネームスペースを計量境界に設定します。課金対象イベントは `ar_namespace_id` を `metadata` 内に、アナリティクスイベントは `artifact_registry_context` 内に含めます
-- [ADR-022: ネームスペースの分離](022_namespace_decoupling.md) — AR ネームスペースを Rails ネームスペースとは異なるスラッグアンカーされたエンティティとして定義します
-- [内部アナリティクスドキュメント](https://docs.gitlab.com/ee/development/internal_analytics/) — GitLab のアナリティクスインストルメンテーションガイド
-- [Self-Managed と Dedicated のイベントデータ収集](https://docs.gitlab.com/administration/settings/event_data) — Self-Managed の Snowplow 収集に関する設定とプライバシーの詳細（18.0 以降）
-- [顧客のプロダクト使用状況イベントに関する FAQ](/handbook/legal/privacy/product-usage-events-faq/) — Self-Managed のイベント収集、オプトアウトの仕組み、17.11→18.0 のロールアウトに関する顧客向け FAQ
-- [顧客のプロダクト使用状況情報](/handbook/legal/privacy/customer-product-usage-information/) — Service Ping、Snowplow、License Sync のデータ収集に関するプライバシーおよび法的フレームワーク
-- [内部イベントデータフロー](/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/internal-events-data-flows/) — デプロイタイプ横断のイベント収集のシーケンス図
-- [Analytics Instrumentation のインフラストラクチャ](/handbook/engineering/data-engineering/analytics/analytics-instrumentation/infrastructure/) — Snowplow と Service Ping のインフラの詳細
-- [CI Job Telemetry 設計ドキュメント](/handbook/engineering/architecture/design-documents/ci_job_telemetry/) — OTLP ベースのテレメトリアプローチ（検討した代替案）
-- [ADR-001: アンカーポイントとしての Organization](001_organizations_as_anchor_point.md) — Organization スコープのアーキテクチャ
-- [ADR-006: 技術スタック](006_technology_stack.md) — Go 言語と LabKit v2 の採用
-- [ADR-009: API 設計](009_api_design.md) — Management API と Client API の構造
+- [LabKit v2 の Snowplow トラッカー](https://gitlab.com/gitlab-org/labkit/-/tree/master/v2/events/snowplow)
+- [Self-Managed と Dedicated のイベントデータ収集](https://docs.gitlab.com/administration/settings/event_data)
+- [顧客の製品利用情報](/handbook/legal/privacy/customer-product-usage-information/)
+- [内部イベントのデータフロー](/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/internal-events-data-flows/)

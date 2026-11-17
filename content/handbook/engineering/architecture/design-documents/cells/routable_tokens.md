@@ -4,11 +4,11 @@ group: Tenant Scale
 title: 'Cells: ルーティング可能なトークン'
 status: proposed
 upstream_path: /handbook/engineering/architecture/design-documents/cells/routable_tokens/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:21:56.719409+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-03T10:32:11+05:30"
+lastmod: "2026-11-17T21:32:07+13:00"
 ---
 
 このドキュメントでは、Cells が使用するルーティング可能なトークン（Routable Tokens）の設計目標とアーキテクチャを説明します。このドキュメントは特に [Phase 4](https://gitlab.com/groups/gitlab-org/-/epics/14510) の目標に焦点を当てています。
@@ -217,9 +217,9 @@ u:3w5e11264sgsf
 
 **オプションフィールド（`g`、`p`、`u`、`t`）:**
 
-各トークンタイプに最も具体的なオプションフィールドを含めることが推奨されます。Topology Service は特異性によってルーティングします（`p` が `g` より、`g` が `o` より、`o` が `u` より、`u` が `c` より優先されます）。より具体的なフィールドを含めることでルーティングの精度が向上します。
+各トークンタイプに最も具体的なオプションフィールドを含めることを推奨します。HTTP Router と Topology Service は、[ルーティングの優先順位](#routing-precedence)に従い、利用可能な最も具体的なフィールドでルーティングする必要があるため、より具体的なフィールドを含めることで、ルーティングの精度が向上します。
 
-これは、トップレベルグループが Organization 間を移動する可能性がある移行期間中（例えばデフォルト Organization から）に特に重要です。トークンに `p` または `g` を含めることで、Organization の関連付けが変更されても、ルーティングが正確であり続けます。例えば:
+これは、トップレベルグループとそのユーザーが Organization 間を移動する可能性がある移行期間中（たとえばデフォルト Organization から）に特に重要です。トークンに `p`、`g`、または `u` を含めることで、Organization の関連付けが変更されても、正しいルーティングを維持します。たとえば：
 
 - **プロジェクトアクセストークン**には `p`（プロジェクト ID）を含めます。
 - **グループアクセストークン**には `g`（グループ ID）を含めます。
@@ -229,7 +229,7 @@ u:3w5e11264sgsf
 
 Topology Service の Classify エンドポイントがルーティング可能なトークンのペイロード全体（`r` を除く）を受け取り、利用可能な情報に基づいて最善のルーティング決定を自律的に行えることが強く求められます。
 
-Topology Service がフルペイロードを受け取ったら、ID のカーディナリティに基づいてルーティング決定を行い、プロジェクト ID、グループ ID、Organization ID、ユーザー ID、Cell ID の順で検索することを優先します。そのため、Topology Service に新しい識別子のサポートを追加しても HTTP ルーターの実装は変わらず、Topology Service によって自動的にサポートされます。
+Topology Service はフルペイロードを受け取ったら、HTTP Router と Topology Service が共有する[ルーティングの優先順位](#routing-precedence)に従って、ルーティングを決定する必要があります。そのため、Topology Service に新しい識別子のサポートを追加しても HTTP Router の実装は変わらず、その識別子を Topology Service が自動的にサポートします。
 
 Topology Service に送られるリクエストには、トークンが本当に一意であることを確保するための `r` フィールドを含めてはなりません。`r` を送ることは必要ではなく、送らないことで Topology Service への攻撃対象領域を減らします。`r` なしでは Topology Service はトークンを再構成できないからです。
 
@@ -271,13 +271,15 @@ classify_service.classify(
 )
 ```
 
-Topology Service は次の優先順位で利用可能な情報によってルーティングします。
+### ルーティングの優先順位 {#routing-precedence}
 
-1. `p`
-1. `g`
-1. `o`
-1. `u`
-1. `c`
+HTTP Router と Topology Service は、利用可能な情報に基づき、次の優先順位でルーティングする必要があります。
+
+1. `p`：プロジェクトの Organization、次にその Organization の Cell、最後に Cell のアドレス。
+1. `g`：グループの Organization、次にその Organization の Cell、最後に Cell のアドレス。
+1. `u`：ユーザーの Organization、次にその Organization の Cell、最後に Cell のアドレス。
+1. `o`：Organization の Cell、次に Cell のアドレス。
+1. `c`：Cell のアドレスに直接ルーティング。
 
 ### Token Authenticatable への統合
 

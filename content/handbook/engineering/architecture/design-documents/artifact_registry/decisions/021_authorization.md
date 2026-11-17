@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認可設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-lastmod: "2026-11-05T17:24:28Z"
-translated_at: "2026-11-05T21:46:48.562053+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: codex
 stale: false
 ---
@@ -81,7 +81,7 @@ Organization Administrator には、ネームスペースレベルの Artifact A
 
 各ロールは独立した権限バケットです。自身の権限だけを付与し、ロール間の階層や継承はありません。
 
-ロール割り当ての管理は、Artifact Registry の権限ではありません。Artifact Admin だけが、この能力を持ちます（[ロール割り当て](#role-assignment)）。
+ロール割り当ての管理は、Artifact Registry の権限ではありません。relationships API が書き込みごとに認可し、GLAZ は、割り当ての読み取り、作成、削除を、それぞれ `read_membership`、`create_membership`、`delete_membership` としてモデル化します。これらを持つのは Artifact Admin と、そのブートストラップを通じた Organization Administrator だけです（[ロール](#roles)、[ロール割り当て](#role-assignment)）。
 
 ### リポジトリの可視性 {#repository-visibility}
 
@@ -177,7 +177,7 @@ sequenceDiagram
 
 判断は、オプトインで、**管理 API のドメインレスポンスに埋め込みます**。リポジトリ詳細レスポンスはそのリポジトリの判断を、リポジトリ一覧レスポンスはネームスペースと各行の判断を含み、1 ページにつき 1 回呼び出します。**埋め込み要素も、自身の判断を持てます。** これは、その要素が表すリソースについての判断です。ネームスペースの判断は、そのために作成するネームスペース詳細レスポンスに埋め込みます（[ADR-009](009_api_design.md#management-apis)）。ほかのドメイン呼び出しがないページで、ネームスペーススコープの操作機能を提供し、ネームスペースがユーザー向けエンティティになるにつれて追加的に拡張します。
 
-各領域のアクションセットはリソースレベルに従い、OpenAPI 契約で公開します。フロントエンドは、独自にアクションを考案せず、それを読み取ります。権限の判断は、[リソースレベル](#namespace-level-and-repository-level-resources)に従います。`*_role_assignment` アクションのロール判断には、relationships API のロール割り当て書き込みルールを適用し、そのリポジトリまたはネームスペースの Artifact Admin、あるいは Organization Administrator にのみ許可します。
+各領域のアクションセットはリソースレベルに従い、OpenAPI 契約で公開します。フロントエンドは、独自にアクションを考案せず、それを読み取ります。権限の判断は、[リソースレベル](#namespace-level-and-repository-level-resources)に従います。`*_role_assignment` アクションのロール判断には、GLAZ のメンバーシップ権限を通じて回答します。これは relationships API のロール割り当て書き込みルールに対応し、そのリポジトリまたはネームスペースの Artifact Admin、あるいは Organization Administrator にのみ許可します。
 
 この契約には、4 つのルールがあります。
 

@@ -8,9 +8,9 @@ authors: [ "@vanessaotto" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/workplan-flow/"
-upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
-lastmod: "2026-11-11T19:46:14+01:00"
-translated_at: "2026-11-14T08:49:10+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T21:10:26+05:30"
+translated_at: "2026-11-17T21:14:57.510431+00:00"
 translator: "codex"
 stale: false
 ---
@@ -43,7 +43,7 @@ sequenceDiagram
 
     User->>WI: Select Plan
     WI->>Rails: WorkItemGenerateWorkplan
-    Rails->>DAP: Create and start workflow (runs in CI)
+    Rails->>DAP: Create and start workflow (CI or Workhorse)
     DAP->>WI: Read work item, comments, and project
     alt Decision needed
         DAP->>WI: Post clarifying question and mention user
@@ -67,7 +67,7 @@ sequenceDiagram
 ```
 
 1. ユーザーが **Plan** を選択します。フロントエンドは、`WorkItemGenerateWorkplan` ミューテーションを呼び出します。
-1. `Ai::DuoWorkflows::GenerateWorkplanService` が、ワークアイテムのプロジェクトに対して `workplan/v1` の基盤フローを開始します。フローは、Duo Agent Platform を通じて CI で実行します。目標には、対象のワークアイテムのみを指定します。AI Gateway にあるフローのシステムプロンプトで、計画の形式、曖昧さへの対応、質問するタイミングを定義します。
+1. `Ai::DuoWorkflows::GenerateWorkplanService` が、ワークアイテムのプロジェクトに対して `workplan/v1` の基盤フローを開始します。フローは、Duo Agent Platform を通じて、CI または Workhorse 上で実行します（[ランタイム](#runtime)を参照）。目標には、対象のワークアイテムのみを指定します。AI Gateway にあるフローのシステムプロンプトで、計画の形式、曖昧さへの対応、質問するタイミングを定義します。
 1. 調査では、GitLab API ツールを通じて要件、コメント、リポジトリの背景情報を収集し、その結果を計画担当に渡します。どちらの段階でも、明確化のための質問を投稿してユーザーにメンションし、`input_required` 状態で一時停止できます。
 1. 明確化のための質問には、ユーザーが返信して **Continue** を選択します。フロントエンドは `WorkItemResumeWorkplan` を呼び出し、プロジェクトで Guest より上のロールを持つユーザーからの有効な返信を転送します。質問として含めるのは、質問のペイロードを持つフローノートのみです。進捗ノートや背景情報のリクエストは除外します。再開にスレッドの解決は必要なく、未回答の質問が再開を妨げることもありません。有効な返信がない場合、フローには、最も妥当と考えられる仮定に基づいて続行するよう指示します。
 1. 説明に調査に十分な背景情報がない場合、どちらの段階でも `context_gate` に進みます。ユーザーは説明を追加し、**Continue** を選択します。再開サービスは元の目標を送信するため、調査は、返信がないことを推測の許可と見なすのではなく、更新されたワークアイテムを読み取ります。これは、[マージリクエスト 257208](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/257208)で実装されています。
@@ -75,13 +75,21 @@ sequenceDiagram
 
 ウィジェットは、`generationStatus` を通じて進捗を表示します。値は、`NOT_STARTED`、`GENERATING`、`NEEDS_INPUT`、`COMPLETED`、`CANCELED`、`FAILED` のいずれかです。キャンセルは失敗と区別します（[マージリクエスト 258021](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/258021)）。実行を開始または再開すると、そのセッションを Duo ドロワーで開きます。
 
+## ランタイム {#runtime}
+
+フローは GitLab API ツールを通じてのみリポジトリを読み取るため、`workplan/v1` はコーディング環境を宣言せず、リポジトリのクローンも必要としません。セッションのユーザーに対して `workplan_on_workhorse` フィーチャーフラグが有効な場合、フローはクローンなしで Workhorse 上で実行します。フラグが無効な間は、クローンを伴う CI で実行します。このフラグはデフォルトでは無効で、段階的な展開が進行中です（[マージリクエスト 267832](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267832)）。
+
+- 再開時はセッション所有者のランタイムに従うため、チームメンバーが **Continue** を選択しても、同じランタイムを使用します。
+- 再開の処理中に **Continue** をもう一度クリックすると、同じ返信を再びキューに入れず、拒否します。
+- クローンなしの場合の計画の品質と API 負荷は、[Issue 636936](https://gitlab.com/gitlab-org/gitlab/-/work_items/636936)で評価しています。
+
 ## ライフサイクルと安全性 {#lifecycle-and-safety}
 
 - **ワークアイテムごとに単一のフロー**：1 つのワークアイテムには、終了状態にない Workplan フローを 1 つだけ保持できます。排他的なリースにより、2 つの同時リクエストが両方ともフローを開始することを防ぎます。
 - **ワークアイテム間でのフローの同時実行**：異なるワークアイテムのフローは同時に実行できるため、ユーザーは複数のワークアイテムを並列に詳細化できます。
 - **権限**：ワークアイテムのミューテーションは `update_work_item` を確認しますが、CI フローの開始には、加えて `create_duo_workflow_for_ci`（現在は Developer 以上）が必要です。再開時には、ワークアイテムの更新権限とプロジェクトでのリモートフローの利用可否を確認し、元のフロー所有者の ID を維持します。これらの境界は、まだ整合していません。ロールポリシーは、[Issue 634208](https://gitlab.com/gitlab-org/gitlab/-/work_items/634208)で追跡しています。
 - **回答の資格**：再開サービスは、Guest 以下のロールからの返信を除外し、スレッドの解決状況にかかわらず有効な返信を収集します。これは、スレッドの解決状況を使う質問カウンターとは異なります。Guest による回答について両者を整合させる作業は、[Issue 631546](https://gitlab.com/gitlab-org/gitlab/-/work_items/631546)で追跡しています。
-- **プロジェクトのワークアイテムのみ**：フローは CI で実行するため、グループレベルのワークアイテムには対応していません。
+- **プロジェクトのワークアイテムのみ**：フローはプロジェクトのコンテキストで実行するため、グループレベルのワークアイテムには対応していません。
 - **ツールの承認**：フローが使用するツールは事前に承認する必要があるため、フローはツールの承認のために停止しません。承認するツールを限定するために、専用の Workplan ツールが必要になる可能性があります。
 - **人の入力を求めるゲート**：調査、計画、背景情報の各ゲートでは、外部でのやり取りを使います。ユーザーがワークアイテムで操作し、明示的に再開します。これらは、セッションドロワーでのツール呼び出しの承認や却下を求めるリクエストではありません。
 - **可観測性**：フローには LangSmith による計測を組み込んでいます。追跡イベントは、[Issue 631134](https://gitlab.com/gitlab-org/gitlab/-/work_items/631134)で追跡しています。生成の実行には、独自のワークフローソースタイプである `work_item_workplan`（GraphQL では `WORK_ITEM_WORKPLAN`）を使います。これはフロートリガーや、`work_item_plan_to_merge_request` で追跡する **Implement** への引き渡しとは別です（[マージリクエスト 263691](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263691)）。再開時には独自のイベントを送信します。このイベントには、実行を開始したユーザーではなく **Continue** を選択したユーザーを記録し、回答を送信したか、回答なしだったか、背景情報のリクエストだったかを示すラベルを付けます（[マージリクエスト 268657](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/268657)）。
@@ -91,7 +99,7 @@ sequenceDiagram
 - [Workplan の調査を、計画担当が委任するサブエージェントにする](https://gitlab.com/gitlab-org/gitlab/-/work_items/621869)
 - [起動時に未解決の質問をフローに渡す](https://gitlab.com/gitlab-org/gitlab/-/work_items/628043)
 - [起動したユーザーを目標に含める](https://gitlab.com/gitlab-org/gitlab/-/work_items/628042)
-- [Duo Chat で作成したワークアイテムに対して計画を自動的に開始する](https://gitlab.com/gitlab-org/gitlab/-/work_items/630062)
+- [Duo Chat で作成したワークアイテムに対して AI 計画を有効にすることをやめる](https://gitlab.com/gitlab-org/gitlab/-/work_items/630062)。生成を開始するのは、**Plan** を選択したとき、またはユーザーが AI ツールに開始を依頼したときだけになります。
 - Workplan の並列トラックを子タスクに変換し、依存するトラック間にブロッキングのリンクを作成します。Workplan フローのバージョン 1.3.0 はこれを実装してマージ済みですが、デフォルトバージョンではなく、まだ展開されていません（[マージリクエスト 7807](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7807)）。
 - [フローのコメントを解決可能なディスカッションとして投稿する](https://gitlab.com/gitlab-org/gitlab/-/work_items/633575)。ワークアイテムの UI は、最初の返信前にディスカッションを解決する機能にすでに対応しています（[マージリクエスト 259967](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259967)、[マージリクエスト 263718](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263718)）。
 

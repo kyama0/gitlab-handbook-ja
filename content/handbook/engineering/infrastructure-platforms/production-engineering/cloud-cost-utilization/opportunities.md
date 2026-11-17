@@ -2,9 +2,9 @@
 title: "FinOps の機会"
 description: "GitLab 全体で FinOps の機会を追跡する方法：ライフサイクルのステージ、担当者、ラベル、ステータスノート"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/opportunities/"
-upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
-lastmod: "2026-11-16T18:08:42+01:00"
-translated_at: "2026-11-16T21:08:18+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T15:06:56+01:00"
+translated_at: "2026-11-17T21:14:57.510431+00:00"
 translator: codex
 stale: false
 ---
@@ -43,7 +43,7 @@ GitLab 全体のすべての FinOps の機会は、どのチームが作成し�
 
 私たちは節約額ではなく、ランレート削減によって機会を追跡します。これらの用語は異なるものを測定しています。
 
-- **ランレート削減**はエンジニアリング上の数値です。検証済みのサービス月額コスト削減額を 12 倍したものです。担当チームが機会の Issue に記録し、FinOps が請求データから検証します。変更ごとに総額で計上し、削減効果を後退させる増加分は併記します。
+- **ランレート削減**はエンジニアリング上の数値です。サービス月額コスト削減額を 12 倍したものです。担当チームが機会の Issue に記録し、FinOps が請求データと照合できます。変更ごとに総額で計上し、削減効果を後退させる増加分は併記します。
 - **節約額**は財務上の数値です。年間事業計画（AOP）から実際のコストを差し引き、月次決算時に一度だけ計上します。それまでは見積節約額です。節約額には比較対象となる予算が必要です。ランレートを削減しても、最終的に AOP を超過する場合があります。
 - **コスト回避**は、私たちが先に対策したために、請求に至らなかったコストです。独立した項目で計上し、ランレート削減の目標には決して算入しません。請求額には、比較対象となる「対策前」がないためです。
 
@@ -80,7 +80,7 @@ Issue を新しいステージに進める人が、ステージラベルを変�
 1. **Proposed ⟶ Confirmed**：作成者と CCU チームが担当チームと連携します。担当チームが機会とランレート削減の見積もりを確認したら、Issue に担当チームの `group::<group>` ラベル（該当する場合は `Service::<service>` ラベルも）が付いていることを確認し、ラベルを `FinOps::Opportunity::Confirmed` に変更してください。
 1. **Confirmed ⟶ Committed**：担当チームの EM が期日までに変更を実施することを約束します。Issue に期日を設定し、ラベルを `FinOps::Opportunity::Committed` に変更してください。
 1. **Committed ⟶ Implemented**：担当チームが変更をリリースします。完全に稼働したら、ラベルを `FinOps::Opportunity::Implemented` に変更してください。
-1. **Implemented ⟶ Realized**：14 日以内に、担当チームが CCU チームと FinOps TPM の支援を受け、ランレート削減を測定して文書化します。ラベルを `FinOps::Opportunity::Realized` に変更し、最後のステータスノートを投稿して、Issue をクローズしてください。
+1. **Implemented ⟶ Realized**：14 日以内に、担当チームが CCU チームと FinOps TPM の支援を受け、ランレート削減を測定して文書化します。影響を測定するか合意したら、ラベルを `FinOps::Opportunity::Realized` に変更し、最後のステータスノートを投稿して、Issue をクローズします。ランレート削減の機会では、実現した数値を `realized_annual_run_rate_reduction` に記載します（[ステータスノートの形式](#status-note-format)を参照）。それまでは Issue を開いたままにします。影響を測定できないと判断した場合も、ラベルを `FinOps::Opportunity::Realized` に変更し、`Measurement basis:` にその旨を記載して、実現した数値は省略し、Issue をクローズします。効率化やコスト回避の機会では、`Measurement basis:` に得られた価値を記録したら、`yaml` ブロックを付けずに Realized に移し、Issue をクローズします。
 
 Implemented に達する前に、実現不可能、コストが削減されないなど、何らかの理由で機会に取り組まないと決めた場合は、ラベルを `FinOps::Opportunity::Discarded` に変更し、Issue に理由を説明してクローズしてください。
 
@@ -98,7 +98,7 @@ flowchart TD
   C["<b>Confirmed</b><br/>Opportunity and estimate confirmed"]
   CM["<b>Committed</b><br/>Delivery committed with a due date"]
   IM["<b>Implemented</b><br/>Change shipped and fully live"]
-  R["<b>Realized</b><br/>Run-rate reduction measured and documented<br/><i>Final, issue closed</i>"]
+  R["<b>Realized</b><br/>Run-rate reduction measured and documented,<br/>or recorded as not measurable<br/><i>Final, issue closed</i>"]
   DS["<b>Discarded</b><br/>Not pursued, reason in the issue<br/><i>Final, issue closed</i>"]
   subgraph main[" "]
     direction LR
@@ -129,8 +129,8 @@ flowchart TD
 | Proposed | 提案済みですが、担当チームがまだレビューまたは確認していません。 | 担当チームが機会を確認し、Issue に担当チームの `group::` ラベルが付いている。 | 担当チームと連携する作成者と CCU チーム | 未定義 |
 | Confirmed | 担当チームが機会とランレート削減の見積もりを確認済みです。Issue に担当チームの `group::` ラベルが付いています。 | 担当チームが実施を約束する。 | 担当チームの EM | 未定義 |
 | Committed | 担当チームが期日までに変更を実施することを約束済みです。 | 変更をリリースする。 | 担当チーム | 約束した期日 |
-| Implemented | 変更をリリースし、完全に稼働しています。 | ランレート削減を測定する。 | CCU チームと FinOps TPM の支援を受ける担当チーム | 14 日 |
-| Realized | ランレート削減を測定し、文書化済みです。 | 最終ステージ：Issue をクローズする。 | 該当なし | 該当なし |
+| Implemented | 変更をリリースし、完全に稼働しています。 | ランレート削減を測定するか、担当チームが測定できないと判断する。 | CCU チームと FinOps TPM の支援を受ける担当チーム | 14 日 |
+| Realized | ランレート削減を測定して文書化済み、または担当チームが測定できないと判断して、その旨を記載済みです。 | 最終ステージ：Issue をクローズする。 | 該当なし | 該当なし |
 | Discarded | 実現不可能、コストが削減されないなど、何らかの理由で取り組まないことにしました。Issue に理由を記載します。 | 最終ステージ：Issue をクローズする。 | 該当なし | 該当なし |
 
 ### サービスレベル目標 {#service-level-objectives}
@@ -151,7 +151,7 @@ flowchart TD
 
 ### ステータスノートの形式 {#status-note-format}
 
-ステータスノートは、機会の現在のステータスと見積もりを記録します。ステージまたは見積もりが変わるたびに、**社内ノート**として投稿してください。コメントは `/internal_note` で始めてください。
+ステータスノートは、機会の現在のステータスと数値を記録します。ステージまたは数値が変わるたびに、**社内ノート**として投稿してください。コメントは `/internal_note` で始めてください。
 
 ````markdown
 /internal_note
@@ -164,20 +164,40 @@ Status: <Where does this stand at the moment?>
 estimated_annual_run_rate_reduction: 120000
 ```
 
-Estimation basis: <How can we estimate (and later measure) the run-rate reduction in billing data?>
+Estimation basis: <How can we estimate the run-rate reduction, and how could it later be measured?>
+````
+
+ランレート削減の機会が Realized に移るときは、最後のステータスノートに実現した数値を記載します。
+
+````markdown
+/internal_note
+
+## FinOps status
+
+Status: Realized. <What shipped, and when.>
+
+```yaml
+realized_annual_run_rate_reduction: 96000
+```
+
+Measurement basis: <Whether the realized figure was measured or agreed, how you arrived at it, and why it differs from the estimate.>
 ````
 
 | 部分 | 形式 | 内容 |
 |---|---|---|
 | `Status:` | ラベルの後に続くテキスト | 機会の現在の状況。 |
 | `estimated_annual_run_rate_reduction` | 年間の米ドル額を整数で、数字のみで記載。たとえば `120000` | この機会によるランレート削減額。月額コスト削減額の 12 倍です。ランレート削減の機会にのみ使用します。 |
-| `Estimation basis:` | ラベルの後に続くテキスト | ランレート削減の見積もり方法と、後から請求データで測定する方法。数値が実測値か見積もりかを明記してください。効率化やコスト回避の機会では、代わりに得られる価値をここで説明してください。 |
+| `realized_annual_run_rate_reduction` | 年間の米ドル額を整数で、数字のみで記載。たとえば `96000` | チームが影響として測定した、または合意したランレート削減額です。前年比ではなく、対象をそのままにした場合のコストに対する年間削減額です。変更によっては、チームが根拠を示せて、`Measurement basis:` にその旨を記載する場合、基礎となる傾向を 1 年間にわたって予測しても構いません。Realized 以降でのみ使用します。ランレート削減の機会にのみ使用します。 |
+| `Estimation basis:` | ラベルの後に続くテキスト | ランレート削減の見積もり方法と、後から測定できる方法（請求データなど）。数値が実測値か見積もりかを明記してください。効率化やコスト回避の機会では、代わりに得られる価値をここで説明してください。 |
+| `Measurement basis:` | ラベルの後に続くテキスト | 実現した数値が測定したものか合意したものか、担当チームがどのようにその数値に至ったか、見積もりと異なる理由を記載します。方法はチームに任せ、可能な範囲で構いません。CCU チームと FinOps TPM が支援できます。効率化やコスト回避の機会では、代わりに得られた価値を説明してください。 |
 
 ツールがノートを読み取れるよう、次のルールに従ってください。
 
-- `## FinOps status` 見出し、`Status:` と `Estimation basis:` のラベル、`estimated_annual_run_rate_reduction` フィールド名は、表示されているとおりに保持してください。
+- `## FinOps status` 見出しと、`estimated_annual_run_rate_reduction` および `realized_annual_run_rate_reduction` のフィールド名は、表示されているとおりに保持してください。
 - 金額は `yaml` ブロック内に、数字のみで記載してください。
-- 見積もりがまだ不明の場合は、`yaml` ブロックを省略してください。不明な値に `0` を記載してはいけません。
+- 数値がまだ不明の場合は、そのキーを省略し、どちらも不明な場合は `yaml` ブロックを省略してください。不明な値に `0` を記載してはいけません。
+- 変更による削減がなかった場合の、実現した数値であるゼロは既知の値です。`0` と記載してください。そのキーを省略するのは、数値がまだ不明な間、または `Measurement basis:` に測定できない旨を記載した場合だけです。
+- 各数値について、その値を記載した最新のノートを採用するため、ノートには追加または変更する数値だけを含めれば十分です。
 - 効率化とコスト回避の機会では、`yaml` ブロックを省略してください。これらはランレートを削減しないため、そこに金額を記載するとランレート削減に算入されてしまいます。
 - 古いノートを編集せず、新しいノートを投稿してください。最新のノートが現在のステータスであり、それ以前のノートが履歴になります。
 

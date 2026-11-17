@@ -4,13 +4,12 @@ owning-stage: "~devops::package"
 description: "GitLab の Rails フロントエンドと Artifact Registry の連携モデル"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/014_frontend_to_artifact_registry/
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-lastmod: "2026-11-05T17:24:28Z"
-translated_at: "2026-11-05T21:32:49.845992+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:28:02.744958+00:00"
 translator: claude
 stale: false
 ---
-
 
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
@@ -19,358 +18,106 @@ stale: false
 
 **提案中。**
 
-## コンテキスト {#context}
+## 背景 {#context}
 
-Artifact Registry は、GitLab モノリスとは別のドメインで動作します（例: モノリスが
-`gitlab.com` や `gitlab.acme.com` にある一方で、
-`artifact-registry.gitlab.com` で動作する）。
+Artifact Registry は、GitLab モノリスとは別の独自ドメインで稼働します。
+この ADR は、ネームスペースの一覧表示、リポジトリの閲覧、アーティファクトのメタデータ表示、管理操作を提供する Vue UI であるブラウザーのフロントエンドが、レジストリにどのようにアクセスするかを決定します。
 
-この ADR は、ブラウザのフロントエンドを扱います。ネームスペースを一覧表示し、
-リポジトリを閲覧し、アーティファクトのメタデータを表示し、管理アクションを
-公開する Vue UI です。
+レジストリが保存するのは、GitLab の識別子であり、それらが指すデータではありません。
+何かを作成、更新、公開したユーザーの ID を記録し、プロジェクトやコミットも参照として保持します。
+名前、アバター、プロフィールリンク、プロジェクトのメタデータ、コミットの詳細は、Rails のデータベースにあります。
+ユーザー向けのレジストリ画面の大半には、その少なくとも 1 つが必要であるため、ユーザー向けのすべての読み取りで、レジストリの識別子を Rails のレコードと結合します。
+これは、ユーザー、プロジェクト、コミットのデータをレジストリにコピーせず、識別子を保持することから生じるため、レジストリの提供方法やデプロイ方法にかかわらず成り立ちます。
 
-[ADR-009](009_api_design.md) は、Artifact Registry が管理 API を
-公開することを規定しています。[ADR-022](022_namespace_decoupling.md) は、
-レジストリが Rails の識別子とは独立してネームスペースを解決する
-方法を定義しています。Rails と Artifact Registry の間の認証メカニズムは
-[認証合意](/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/) に従います。この ADR は、それらの
-契約を消費します。
+レジストリは現在、集中型であり、セルフマネージドのデプロイも予定しています。また、Rails モノリスより速いペースでリリースします。
 
-Artifact Registry は現在は中央集約されており、Self-Managed の
-デプロイが計画されています。Artifact Registry は Rails モノリスよりも
-速いペースでリリースされます。
+[ADR-009](009_api_design.md)はレジストリの管理 API、[ADR-020](020_authentication_flow.md)は Rails がユーザーをレジストリに認証するトークンを発行する方法、[ADR-021](021_authorization.md)はそのユーザーができること、[ADR-022](022_namespace_decoupling.md)は Rails とは別にネームスペースを識別する方法を定義します。
+この ADR は、それらの決定を前提にします。
 
 ## 決定 {#decision}
 
-**Rails の GraphQL リゾルバーパターンを採用し、Rails モノリス内の
-Ruby クライアントが Artifact Registry REST API と直接通信します。**
+**Rails GraphQL リゾルバーのパターンを採用します。ブラウザーは Rails GraphQL だけと通信し、Rails のリゾルバーが、モノリス内の Ruby クライアントを通じて Artifact Registry の REST API を直接呼び出します。**
 
-Rails のリゾルバーは、Container Registry の `lib/container_registry/client.rb` が
-行っているのと同じ方法で、Artifact Registry REST エンドポイントに 1 対 1 で
-マッピングされる Ruby メソッドを通じてレジストリと通信します。
+Container Registry の UI も同じように動作しており、その Rails クライアントを手本にします。レジストリの REST エンドポイントごとに、1 つの Ruby メソッドを用意します。
+リポジトリやバージョンなど、フロントエンドがレンダリングするレジストリの各リソースは、専用の Rails GraphQL 型を持ちます。
 
-### 認証とリクエストフロー {#authentication-and-request-flow}
+### 常に満たすべき条件 {#what-must-always-hold}
 
-ブラウザは、セッションクッキーと CSRF トークンで認証された GraphQL の
-クエリとミューテーションを `/api/graphql` に送信します。ブラウザは
-同一オリジンに留まります。Artifact Registry の認証情報は Ruby クライアントが
-サーバー側で取得・保持し、ブラウザに渡ることはありません。
+| # | 制約 | 機械的に検証可能か？ |
+| --- | --- | --- |
+| 1 | **ブラウザーは、Rails GraphQL を通じてのみレジストリにアクセスします。** GitLab の画面が行うすべてのレジストリの読み取りとミューテーションは、セッション Cookie と CSRF トークンで認証する、モノリスへの同一オリジンの GraphQL 呼び出しです。 | はい：レジストリ画面のデータリクエストは、モノリスの GraphQL エンドポイントに送信し、レジストリのオリジンには送信しません |
+| 2 | **レジストリの認証情報はサーバー内に留めます。** Ruby クライアントは、ログインしたユーザーのために、[ADR-020](020_authentication_flow.md)で発行する認証情報を取得し、レジストリへの各呼び出しに付けます。レジストリ自身が認証と認可を行います。GraphQL のレスポンスやページに認証情報を含めません。 | はい：ブラウザーが受信するレスポンスに、レジストリの認証情報は含まれません |
+| 3 | **Rails がレジストリの GitLab 識別子を結合します。** リゾルバーは、既存の Rails GraphQL 型を通じて、ページが参照するユーザー、プロジェクト、コミットをバッチで読み込みます。ページの行数にかかわらず、結合による追加は、参照する型ごとに 1 つの Rails クエリだけであり、レジストリ呼び出しは増えません。 | はい：画面の Rails クエリ数は、行数が増えても増加しません |
+| 4 | **一覧画面のレジストリ呼び出しは、行数が増えても増加しません。** 一覧エンドポイントは、その一覧画面がレンダリングする情報を返すため、どの行にも追加の呼び出しは必要ありません。親ごとに呼び出しが分岐する子フィールドもバッチ化し、N 個の親の解決を、子フィールドごとに 1 回の Artifact Registry 呼び出しにまとめます。組織のレジストリ状態など、レジストリが一括読み取りを提供しないフィールドは、1 つの親を表示する画面で使います。一覧で使うと、行ごとに 1 回の呼び出しが必要になるためです。 | はい：一覧画面のレジストリ呼び出し数は、行数が増えても増加しません |
+| 5 | **リゾルバーは、レジストリのすべての失敗を GraphQL の結果に変換します。** Container Registry のリゾルバーと同じように失敗を対応付け、[ADR-021](021_authorization.md)の存在を隠す動作を維持します。たとえば、拒否されたミューテーションは利用不可、拒否された読み取りはエラーではなく null、通信の失敗はサービス利用不可として表示します。 | はい：レジストリの各失敗が、対応する GraphQL の結果として表示され、拒否された読み取りは null に解決されます |
+| 6 | **Rails は、自身のマッピングとキャッシュからネームスペースを解決します。** Rails は、ネームスペースの UUID を保持し、レジストリから解決したスラッグとステータスをキャッシュします（[ADR-022](022_namespace_decoupling.md#slug-discovery)）。ナビゲーションの表示制御とクライアントは、ページを読み込むたびにレジストリを呼び出すのではなく、それらを読み取ります。 | はい：キャッシュが利用可能な状態では、ページのナビゲーションをレンダリングしても、レジストリを呼び出しません |
 
-Ruby クライアントは認証を自身で処理します。現在の Rails ユーザーを与えられると、
-クライアントはトークン交換を実行し、得られた認証情報をリクエストに付加します。
-Artifact Registry 自身の認証および認可ミドルウェアがリクエストを検証します。
+## 影響 {#consequences}
 
-```mermaid
-sequenceDiagram
-    participant FE as Frontend (gitlab.com)
-    participant GQL as Rails GraphQL (gitlab.com)
-    participant ARC as ArtifactRegistry::Client
-    participant AR as Artifact Registry (artifact-registry.gitlab.com)
+### 利点 {#positive}
 
-    FE->>GQL: GraphQL query (session cookie + CSRF)
-    GQL->>GQL: Authenticate user
-    GQL->>ARC: Call (current_user, request args)
-    ARC->>ARC: Acquire Artifact Registry credential for current_user
-    ARC->>AR: HTTP call (Artifact Registry credential)
-    AR->>AR: Authenticate and authorize the request
-    AR->>ARC: Response (or 401/403)
-    ARC->>GQL: Domain object
-    GQL->>FE: GraphQL response
-```
+1. **フロントエンドの基盤を再利用します。** セッション Cookie、CSRF、Apollo クライアント、フィーチャーフラグ、既存のエラー処理が、そのまま動作します。
+   Container Registry と Orbit の UI も、同じパターンを使います。
+1. **サービスをまたぐ結合が低コストです。** Rails は、既存の GraphQL 型を使い、1 つのリクエスト内でユーザー、プロジェクト、コミットの検索をバッチ化するため、フロントエンドに追加の往復や結合コードは必要ありません。
+1. **認証はサーバー内に留まります。** Ruby クライアントは、Rails セッションのアイデンティティからレジストリの認証情報を取得します。
 
-### サービス間のデータ結合 {#cross-service-data-joining}
+### 欠点 {#negative}
 
-Artifact Registry は、GitLab の識別子を保存しますが、それが指すデータ自体は
-保存しません。ユーザーが何かを作成、更新、公開すると、Artifact Registry は
-ユーザーの ID を記録します。関連するプロジェクトやコミットも参照として
-保存されます。実際の名前、アバター、プロフィールリンク、プロジェクトの
-メタデータ、コミットの詳細はすべて Rails のデータベースに存在します。
-ユーザー向けの Artifact Registry のビューのほとんどは、それらの少なくとも
-1 つを必要とするため、Artifact Registry の識別子から Rails エンティティへの
-結合は、ユーザー向けのすべての読み取りで実行されます。
-
-Rails が結合自体を行います。参照の種類ごとに、リゾルバーが
-`BatchLoader::GraphQL` を使用して ID でレコードを取得し、既存の
-`Types::UserType`、`Types::ProjectType`、`Types::CommitType` を
-再利用します。このパターンはモノリス内の他の場所でも使用されています。
-実際の例については `app/graphql/types/container_registry/container_repository_type.rb`
-を参照してください。ページ上にレコードが何件あっても、ビューのコストは
-Artifact Registry への 1 回の呼び出しに加えて、参照される型ごとに Rails への
-1 回のクエリです。
-
-これは、Artifact Registry がどのように出荷されるか、互換性ポリシーが何であるか、
-どのようにデプロイされるかにかかわらず成り立ちます。これは、ユーザー、
-プロジェクト、コミットのデータを Artifact Registry にコピーするのではなく、
-識別子を保持するという Artifact Registry の選択から生じるものです。
-
-### API 契約 {#api-contract}
-
-GraphQL は、Container Registry に合わせて、ブラウザ駆動の読み取りと
-ミューテーションのための面です。各 Artifact Registry リソースには対応する
-Rails GraphQL 型があります。Namespace、Repository、Artifact、Tag、Version です。
-リゾルバーは、`namespacePath` や `repositoryPath` などの引数から対象リソースの
-識別子を導出します。リゾルバーは、Artifact Registry の認可失敗を「利用不可」
-エラーに、トランスポート失敗を「サービス利用不可」エラーにマッピングし、
-Container Registry のリゾルバーに合わせます。
-
-### Rails 側コンポーネント {#rails-side-components}
-
-3 つの Rails 側コンポーネント。それぞれに Container Registry のアナログがあります。
-
-| コンポーネント | パス | Container Registry のアナログ |
-|---|---|---|
-| HTTP クライアント | `lib/artifact_registry/client.rb` | `lib/container_registry/client.rb` |
-| GraphQL の型とリゾルバー | `app/graphql/types/artifact_registry/`、`app/graphql/resolvers/artifact_registry/` | `app/graphql/types/container_registry/`、`app/graphql/resolvers/container_repositories_resolver.rb` |
-| Vue エントリ | `app/assets/javascripts/packages_and_registries/artifact_registry/` | `app/assets/javascripts/packages_and_registries/container_registry/explorer/` |
-
-Rails は Organization からネームスペースへのマッピングを、ネームスペースの
-UUID として永続化します。この UUID はネームスペース作成時に書き込まれ（[gitlab#603023](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)）、
-Rails は Artifact Registry からスラッグとネームスペースのステータスを解決し、
-両方をキャッシュします（[ADR-022](022_namespace_decoupling.md#slug-discovery)）。
-クライアントとナビゲーションゲーティング（Organization にレジストリエントリを表示するかどうか）は、
-ページがロードされるたびに Artifact Registry を呼び出すのではなく、この永続化されたマッピングと
-キャッシュされたスラッグ／ステータスから読み取ります。
-
-Rails 側の認証情報の取得は [認証合意](/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/) に
-従います。具体的なサービスと交換プロトコルは未解決です
-（[未解決の問い](#open-questions) を参照）。
-
-リゾルバーは、ロードされたリソース上のキャッシュされたヘルパーを通じて
-クライアントを取得します（`ContainerRepository#registry` と同じパターン）。
-親ごとにファンアウトする子フィールドは、[サービス間のデータ結合](#cross-service-data-joining)
-で説明されているのと同じバッチ化されたルックアップパターンを使用し、
-N 個の親解決を子フィールドごとの 1 回の Artifact Registry 呼び出しに
-まとめます。
-
-## 結果 {#consequences}
-
-### ポジティブ {#positive}
-
-1. **既存のフロントエンドインフラを再利用します。** セッションクッキー、
-   CSRF、axios のデフォルト、Apollo クライアント、フィーチャーフラグ、
-   そしてすでに整備されているエラー処理がそのまま機能します。Container Registry
-   と Orbit (GKG) の UI が使用するのと同じパターンです。
-1. **サービス間の結合がより安価。** Rails は既存の GraphQL 型でユーザー、
-   プロジェクト、コミットのデータを取得し、単一のリクエスト内でルックアップを
-   バッチ化するため、フロントエンド側の結合が必要とする余分な往復と
-   フロントエンドのマージコードを回避できます。Artifact Registry 側での
-   バッチ化は Artifact Registry の REST API に依存する別の問題である
-   （ネガティブ #3 を参照）。
-1. **サーバー側認証。** Ruby クライアントが Rails のセッションアイデンティティから
-   トークン交換を処理します。
-
-### ネガティブ {#negative}
-
-1. **リゾルバーの面が Artifact Registry の API に応じて拡大します。** フロントエンドが
-   消費する Artifact Registry のすべてのエンドポイントに Rails GraphQL リゾルバーが
-   必要になります。
-1. **ドメインモデルが二重に表現されます。** Artifact Registry のドメインは自身の
-   契約と Rails GraphQL 型の両方で記述され、ドリフトが起こりうる。
-   契約テストでこれを緩和できます。
-1. **Artifact Registry の API 設計が制約されます。** N+1 の緩和は、フロントエンドが
-   レンダリングするすべてのコレクション境界で Artifact Registry がバルク読み取りを
-   公開することに依存します。
-1. **追加のレイテンシ。** 各リクエストは 2 つのネットワークホップを必要とします。
-   フロントエンドから Rails、そして Rails から Artifact Registry です。これは
-   GraphQL の呼び出しを REST API ではなく gRPC エンドポイントに接続することで
-   緩和できる可能性があります。これは両サービスが同じプラットフォームに同居している
-   場合（例: .com <-> .com）に機能し得ます。これには Artifact Registry が gRPC を
-   公開する必要があり、追加の作業となる。
-1. **フロントエンドのリリースペースが Rails に縛られます。** フロントエンドは
-   Rails モノリスとともに出荷されるため、新しい Artifact Registry 向けの機能が
-   ユーザーに届くのは、そのインストールが対応する Rails リリースを取り込んだ
-   ときのみです。Dedicated のインストールは m-2 で動作するため、Dedicated の
-   ユーザーは、新しい Artifact Registry の UI が GitLab.com で利用可能になってから
-   おおよそ 2 マイルストーン後にそれを見ることになります。
+1. **リゾルバーの範囲は、レジストリの API とともに増えます。** フロントエンドが使うレジストリの各エンドポイントには、Rails のリゾルバーが必要です。
+1. **ドメインモデルを 2 回記述します。** レジストリ自身の契約と Rails GraphQL の型に記述するため、両者にずれが生じる場合があります。
+   契約テストで軽減できます。
+1. **レジストリの API 設計に制約が生じます。** 制約 4 が成り立つのは、フロントエンドがレンダリングするすべてのコレクション境界で、レジストリが一括読み取りを提供する場合だけです。
+1. **各リクエストで 2 回のネットワークホップが発生します。** ブラウザーから Rails、次に Rails からレジストリです。
+1. **フロントエンドは Rails とともに提供します。** 新しいレジストリ UI がユーザーに届くのは、そのインストールで対応する Rails リリースを導入したときだけです。
+   たとえば、Dedicated は GitLab.com より 2 マイルストーン遅れて稼働するため、ユーザーに新しいレジストリ UI が届くのは、約 2 マイルストーン後になります。
 
 ## 代替案 {#alternatives}
 
-### 代替案 1: 薄いパススループロキシ {#alternative-1-thin-pass-through-proxy}
+### 何もしない：ブラウザーが自身の認証情報でレジストリを呼び出す {#do-nothing-the-browser-calls-the-registry-with-its-own-credential}
 
-Rails が `/-/artifact_registry/proxy/graphql` を公開し、生の GraphQL ボディを
-Artifact Registry に転送し、Rails が署名した JWT を付加します。CustomersDot は
-`ee/app/controllers/customers_dot/proxy_controller.rb` でこの形を使用しています。
+Rails の層を設けず、フロントエンドがクロスオリジンでレジストリを呼び出し、自身でレジストリの認証情報を保持します。
+フロントエンドがメモリ内に保持し Bearer トークンとして送信するアイデンティティトークンと、KAS の連携のように Rails がレジストリのドメインにスコープを設定する暗号化セッション Cookie の、2 つの方式を検討しました。
+リゾルバーごとの Rails の作業は不要になります。
 
-**長所:**
+却下理由：
 
-- Rails のコードが少なくなります。リゾルバーごとの作業がありません。
-- Artifact Registry のスキーマが直接流れる。新しいフィールドが Rails の変更なしに
-  フロントエンドに現れる。Artifact Registry の追加のみのコミットメントと、その
-  速いリリースペースが、スキーマのドリフトをブラウザから遠ざける。
+- サービスをまたぐ結合をフロントエンドが担うことになり、ユーザー、プロジェクト、コミットを表示するすべての画面で、追加の Rails への往復と結合コードが必要です。
+- レジストリは、モノリスのオリジン向けに CORS を提供する必要があります。Bearer リクエストごとのプリフライト、または明示的なオリジン許可リストと `SameSite=None; Secure` Cookie を伴う、認証情報付きの CORS が必要です。
+- どちらの方式も、ブラウザーに認証情報を置き、レジストリに認証経路を追加します。
+  アイデンティティトークンでは、取得、保存、有効期限、更新というライフサイクルを JavaScript に移します。キャッシュミスでは 2 回の交換が発生し、Rails を通る 1 回の呼び出しより遅くなります。
+  Cookie は、KAS のような長時間の接続に適しており、その都度再検証する多数の短い REST 呼び出しには適しません。
+  セルフマネージドのインスタンスでも、モノリスとレジストリの両方をカバーする Cookie ドメインが必要です。また、Rails の Cookie 暗号化とキーのローテーションをレジストリでも再現する必要があり、[認証の合意](/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/)の JWT ベースの方向性に反します。
 
-**短所:**
+### 薄いパススループロキシ {#thin-pass-through-proxy}
 
-- サービス間の結合がフロントエンドに移る。Artifact Registry は、その基となる
-  ユーザー、プロジェクト、コミットのデータではなく、GitLab の識別子を保存します。
-- ユーザー帰属のビューごとに 2 回の連続した往復があり、加えて多くの Vue
-  コンポーネント間で重複するマージユーティリティがあります。
-- フロントエンドが Artifact Registry のスキーマに直接依存します。Rails 側の
-  エラーバッファがありません。
-- フロントエンドに 2 つ目の GraphQL エンドポイントが導入されます。
-- Artifact Registry が追加の API（GraphQL）を実装する必要があります。これは
-  Artifact Registry での追加の作業となる。
+CustomersDot のプロキシのように、Rails が 1 つのプロキシルートで生の GraphQL 本文をレジストリに転送し、Rails が署名した JWT を付けます。
+Rails のコードを減らせ、新しいレジストリのフィールドを、Rails を変更せずフロントエンドに公開できます。
 
-**却下した理由:**
+却下理由：
 
-- サービス間の結合が、きれいな実装パスのないフロントエンドの問題になります。
-  ユーザー帰属のビューごとに、追加の Rails 往復と FE 側のマージユーティリティの
-  コストがかかります。
-- Vue コンポーネント間のマージロジックの重複は、フロントエンドの面積に対して
-  スケールが悪い。
+- サービスをまたぐ結合がフロントエンドに移り、ユーザー、プロジェクト、コミットを表示するすべての画面で、2 回の順次の往復と、Vue コンポーネントごとの結合コードが必要になります。UI が大きくなるにつれて、拡張しにくくなります。
+- フロントエンドは、レジストリのエラーを吸収する Rails の層なしに、レジストリのスキーマに直接依存し、2 つ目の GraphQL エンドポイントを持つことになります。
+- レジストリは、REST に加えて GraphQL API を構築し、運用する必要があります。
 
-### 代替案 2: GraphQL スキーマスティッチング {#alternative-2-graphql-schema-stitching}
+### GraphQL スキーマスティッチング {#graphql-schema-stitching}
 
-Rails が、スキーマスティッチングゲートウェイを使用して `GitlabSchema` と
-Artifact Registry の GraphQL スキーマを `/api/graphql` で統一されたスーパーグラフに
-合成します。スティッチング gem は Rails 内で動作し、Artifact Registry の型への
-リクエストは HTTP 経由で Go サービスにルーティングされ、それ以外のクエリは
-`GitlabSchema` に留まります。`graphql-stitching` gem を使用した POC 実装が
-[gitlab-org/gitlab!227224](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/227224) に存在します。
+Rails 内のスティッチングゲートウェイが、モノリスのスキーマとレジストリの GraphQL スキーマを、同じエンドポイントの 1 つのスーパーグラフに合成します。
+フロントエンドのエンドポイントは 1 つのままで、Rails にレジストリの各フィールド用のリゾルバーは不要です。リポジトリの作成者などのサービスをまたぐ参照は宣言的に解決し、ゲートウェイがバッチ取得を計画します。
 
-**長所:**
+却下理由：
 
-- フロントエンドに 1 つの GraphQL エンドポイント（選択したパターンと同じ）。
-- Artifact Registry のスキーマが直接消費されます。Rails は各 Artifact Registry
-  フィールドのためのリゾルバーを必要とせず、ゲートウェイがスキーマを再ロードすれば、
-  新しいフィールドが Rails MR なしにフロントエンドに届きます。
-- サービス間の結合が宣言的に表現されます。Artifact Registry の SDL が
-  サービス間の参照を宣言し（例: `Repository.createdBy: User`）、Rails が `id` で
-  `User` を解決できることを宣言すると、スティッチング gem がサービス間のフェッチと
-  バッチ化を自動的にプランニングします。
+- レジストリは、REST に加えて GraphQL API を構築し、運用する必要があります。
+- リゾルバーに対する明確な利点なしに、ゲートウェイとスキーマ合成パイプラインをモノリスに追加します。
+- Rails は、変更のたびにレジストリのスキーマをモノリスのリポジトリに同期するか、起動時にレジストリをイントロスペクションし、自身の起動と公開スキーマをレジストリのデプロイに結び付ける必要があります。
+- レジストリが参照する Rails の各型には、Rails 側の境界リゾルバーと、レジストリ側のキー宣言が必要です。
 
-**短所:**
+### `postMessage` で認証情報を送る iframe 埋め込み {#iframe-embed-with-credentials-sent-by-postmessage}
 
-- Artifact Registry が追加の API（GraphQL）を実装する必要があります。これは
-  Artifact Registry での追加の作業となる。
-- モノリスに `graphql-stitching` gem とスキーマ合成パイプラインを追加します。
-- Rails は、Artifact Registry の SDL をモノリスのリポジトリに同期する
-  （スキーマ変更ごとにリポジトリ間の調整が必要）か、起動時に Artifact Registry を
-  イントロスペクトする（Rails の起動と公開 GraphQL の面が Artifact Registry の
-  デプロイペースに縛られる）かのいずれかが必要になります。
-- Artifact Registry が参照する各 Rails エンティティ型には、Rails 側に境界
-  リゾルバーが、Artifact Registry 側に `@key` 宣言が必要になります。
+GitLab Observability のように、レジストリが iframe 内で独自の UI を提供し、親ページから `postMessage` で認証情報を受け取ります。
+レジストリが UI 全体を所有し、Rails のリリースを待たずに、レジストリのリリース直後に、新しい機能を GitLab.com、Dedicated、セルフマネージドに届けられます。
 
-**却下した理由:**
+却下理由：
 
-- リゾルバーパターンに対する明確な利点なしにゲートウェイインフラを追加します。
-- Rails 側のスキーマ統合が、リポジトリ間の SDL 同期か、Artifact Registry への
-  起動時依存性のいずれかを追加します。
-
-### 代替案 3: ブラウザ保持の認証情報によるクロスドメイン直接通信 {#alternative-3-direct-cross-domain-with-a-browser-held-credential}
-
-フロントエンドが、独自の認証情報を Artifact Registry に運びながら、クロスオリジンで
-Artifact Registry と通信します。モノリスに存在する 2 つのバリアントを検討しました。
-アイデンティティトークンのベアラー認証情報（フロントエンドがアイデンティティ
-トークンを取得し、メモリ内に保持し、`Authorization: Bearer` として Artifact Registry に
-直接送信する）と、暗号化されたセッションクッキー（Rails が
-`app/controllers/concerns/kas_cookie.rb` の `KasCookie` に似た、Artifact Registry の
-サブドメインにスコープされた暗号化クッキーを設定し、ブラウザがクロスオリジン
-リクエストで送信する）です。
-
-**長所:**
-
-- Artifact Registry がフロントエンドを直接提供します。リゾルバーごとの Rails の
-  作業がありません。
-
-**短所:**
-
-- サービス間の結合は依然としてフロントエンドに落ちる（代替案 1 と同じ形）。
-- ブラウザが Artifact Registry へオリジンをまたぐため、Artifact Registry は
-  モノリスのオリジンに対して CORS を提供しなければなりません。アイデンティティ
-  トークンのバリアントは `Authorization` を運ぶリクエストにプリフライトを必要とし、
-  クッキーのバリアントは `Access-Control-Allow-Credentials: true`、明示的な
-  オリジン許可リスト（ワイルドカード不可）、`SameSite=None; Secure` クッキーを
-  必要とします。
-- アイデンティティトークンのバリアント: 認証情報のライフサイクルが JavaScript に
-  移る（取得、メモリ内ストレージ、有効期限処理、401 時のリフレッシュ、SPA
-  ナビゲーション）。また、キャッシュミス時の二重交換フロー
-  （FE → Artifact Registry → Rails → Artifact Registry）は、単一の
-  FE → Rails → Artifact Registry 呼び出しよりも遅い。
-- クッキーのバリアント: KAS は、1 回のハンドシェイクが接続の存続期間にわたって
-  償却される長寿命の WebSocket にこのパターンを使用します。Artifact Registry の
-  交換は多数の短命な REST 呼び出しであり、それぞれがクッキーの再検証を必要とします。
-  Rails のクッキー暗号化とキーローテーションを Go で再現することは、
-  [認証合意](/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/) の JWT ベースの認証の方向性と矛盾します。
-  Artifact Registry の認可モデルはロール強制を伴うスコープ付き JWT を中心に
-  構築されており、クッキー認証では Artifact Registry 内に並行する認可パスが
-  必要になります。クッキードメインは、`gitlab.com` と `artifact-registry.gitlab.com`
-  の両方を含む親にスコープされ、場合によっては Self-Managed インスタンスでも
-  機能する必要があります。
-
-**却下した理由:**
-
-- サービス間の結合を未解決のまま残す。
-- 各バリアントが、ブラウザ側の認証情報の面（JS が保持するアイデンティティ
-  トークンか、親スコープの暗号化クッキー）と、Artifact Registry 内の並行する
-  認証パスを追加します。
-
-### 代替案 4: `postMessage` による認証情報受け渡しを伴う iframe 埋め込み {#alternative-4-iframe-embed-with-postmessage-credential-delivery}
-
-Artifact Registry が、ロード時に `postMessage` 経由で渡される認証情報とともに
-UI を iframe として提供します。
-`app/assets/javascripts/observability/utils/auth_manager.js` に似ています。
-
-**長所:**
-
-- Artifact Registry サービスが自身の UI 全体を所有できます。
-- Rails のインスタンスバージョンを Artifact Registry のバージョンから切り離す。
-  UI を伴う新しい Artifact Registry のバックエンド機能が、Rails のリリースを
-  待つことなく、Artifact Registry が出荷されるとすぐに SaaS、Dedicated、
-  Self-Managed のセットアップに届きます。
-
-**短所:**
-
-- iframe は Artifact Registry のオリジンで動作し、Rails への直接のパスがない
-  （CORS に加えてセッション共有なし）。サービス間の結合は、ユーザー、プロジェクト、
-  コミットのデータを求めて親への `postMessage` リクエストを通じて起こるか、
-  または Artifact Registry に保存して Rails と同期させる必要があります。
-- iframe 通信は、ディープリンク、ブラウザシェルのナビゲーション、GitLab モノリスが
-  インシェルビューに期待するアクセシビリティパターンを壊します。
-
-**却下した理由:**
-
-- サービス間の結合と CORS。`postMessage` パスは代替案 3 と同じコストがかかります。
-  保存・同期の代替は、PII の重複、同期インフラ、GDPR 削除の複雑さを追加します。
-- iframe 固有の UX 制約がすべてのインシェルビューに適用されます。
-
-## 未解決の問い {#open-questions}
-
-1. Self-Managed のデプロイでは、Artifact Registry のエンドポイント
-   URL はどのように Rails に提示されるか。可能なメカニズムには `gitlab.yml` の
-   設定キーや Admin UI の設定があります。Self-Managed のオペレーター向けに、
-   Rails と Artifact Registry の間の設定契約を誰が所有するか。
-1. Rails と Artifact Registry の間のトークン交換は
-   [認証合意](/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/) のレベルでコミットされているが、
-   認証情報のフォーマット、クレームの形、ミンティングサービスはまだ規定されていません。
-   Ruby クライアントの認証情報取得ステップはそれらの決定に依存しており、
-   この ADR では意図的に抽象的なままにしている。
-1. Artifact Registry のリスト系エンドポイントに対する要素ごとの形と
-   ページネーションの形（カーソルフォーマット、ページサイズの上限）は、
-   まだ ADR-009 で規定されていません。この ADR の N+1 緩和は、リスト系
-   エンドポイントが、要素ごとのフォローアップ呼び出しなしにリストビューを
-   レンダリングするのに十分な要素ごとのデータを返すことに依存します。
-
-## 将来の作業 {#future-work}
-
-GitLab Adaptive Trust Environment が確定すると、Rails 側の認証情報取得は
-それに移行します。この ADR のフロントエンドパターンは変更なくそのまま
-引き継がれます。
-
-将来のプロダクト要件が、ブラウザ側からの Artifact Registry への直接アクセス
-（例: ブラウザからの署名付き URL によるアーティファクトアップロード）を確立する
-場合、それは CORS、認証情報のライフサイクル、スコープ内の具体的なリソースを
-扱うフォローアップ ADR を必要とします。
-
-## 参考文献 {#references}
-
-- [ADR-009：API 設計](009_api_design.md)
-- [ADR-022：ネームスペースの分離](022_namespace_decoupling.md)
-- [認証合意](/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/)
-- Container Registry のフロントエンド： `app/assets/javascripts/packages_and_registries/container_registry/explorer/`
-- Container Registry のリゾルバー： `app/graphql/resolvers/container_repositories_resolver.rb`, `app/graphql/resolvers/container_repository_tags_resolver.rb`
-- Container Registry の認証サービス： `app/services/auth/container_registry_authentication_service.rb`
-- Container Registry の Ruby クライアント： `lib/container_registry/client.rb`, `lib/container_registry/gitlab_api_client.rb`
-- KAS の Cookie パターン： `app/controllers/concerns/kas_cookie.rb`
-- CustomersDot のプロキシ： `ee/app/controllers/customers_dot/proxy_controller.rb`, `ee/app/assets/javascripts/lib/customers_dot_graphql.js`
-- GitLab Observability の iframe と postMessage 認証： `app/assets/javascripts/observability/utils/auth_manager.js`
-- GraphQL スキーマスティッチングのドラフト： [gitlab-org/gitlab!227224](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/227224)
+- iframe は、Rails への経路がないレジストリのオリジンで動作します。
+  そのため、サービスをまたぐ結合には、レジストリを直接呼び出す場合のコストを伴う、親への `postMessage` リクエストか、ユーザー、プロジェクト、コミットのデータをレジストリにコピーすることが必要になります。コピーは個人データを複製し、同期基盤を必要とし、GDPR に基づく削除を複雑にします。
+- iframe は、深い階層へのリンク、シェルのナビゲーション、GitLab がシェル内の画面に求めるアクセシビリティのパターンを壊します。

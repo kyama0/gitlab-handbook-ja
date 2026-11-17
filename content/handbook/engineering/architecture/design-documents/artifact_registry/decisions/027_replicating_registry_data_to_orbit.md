@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "認可を Artifact Registry 内に維持しながら、固定された Artifact Registry のテーブル群を Siphon CDC で Orbit にレプリケーションする決定"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/artifact_registry/decisions/027_replicating_registry_data_to_orbit/"
-upstream_sha: f656f02435661ffa63fe51e9b75469265e9ed794
-lastmod: "2026-11-05T17:24:28Z"
-translated_at: "2026-11-05T21:53:05.536250+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T11:47:24+01:00"
+translated_at: "2026-11-17T21:38:01.885854+00:00"
 translator: codex
 stale: false
 ---
@@ -418,4 +418,4 @@ Rails が、Artifact Registry のリソースごとに読み取り専用の Acti
 - [ADR-020：認証フロー](020_authentication_flow.md)
 - [ADR-021：認可](021_authorization.md)
 - [ADR-022：名前空間の分離](022_namespace_decoupling.md)
-- [ADR-024：GitLab.com ベータ版の提供に向けたインフラ](024_infrastructure_delivery.md)
+- [ADR-024：GitLab.com の提供に向けたインフラ](024_infrastructure_delivery.md)

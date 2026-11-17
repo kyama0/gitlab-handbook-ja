@@ -9,11 +9,11 @@ owning-stage: "~devops::verify"
 participating-stages: [ ~"devops::developer experience", ~"devops::analytics" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ci_job_telemetry/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:14:57.510431+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-30T14:33:45+02:00"
+lastmod: "2026-11-17T07:34:44-08:00"
 ---
 
 {{< engineering/design-document-header >}}
@@ -131,7 +131,7 @@ CI Functions モデルはより細かい粒度を追加しますが、基礎的�
 - **MVC でのプロダクト内可視化**: MVC はデータ収集と Grafana ダッシュボードに焦点を当てます。
   GitLab でのプロダクト内 UI 可視化は [Phase 3](#phase-3-insights-layer) で計画されています
 
-## 主要な定義
+## 主要な定義 {#key-definitions}
 
 このドキュメントを通じて以下の用語が使用されています。実装の詳細 (どの ID がどの OTEL 概念にマップされるかなど) はここで一度定義され、将来の変更に対してドキュメントの残りの部分を回復力のあるものにします。
 
@@ -153,7 +153,7 @@ CI Functions モデルはより細かい粒度を追加しますが、基礎的�
 | **`otel_traces`** | OTEL Collector が生のスパンを書き込むサービスに依存しない ClickHouse テーブル。標準の OTEL スキーマに従い、すべての計装されたサービス間で共有されます。 |
 | **`ci_job_telemetry_traces`** | ([Phase 3](#phase-3-insights-layer)) `otel_traces` から CI 固有の列をクエリ最適化されたスキーマに投影する ClickHouse [Materialized View](https://clickhouse.com/docs/en/sql-reference/statements/create/view#materialized-view)。`otel_traces` への挿入時にトリガーされ、`ServiceName` でフィルタリングされます。これは、[クエリレイヤー](https://gitlab.com/gitlab-org/gitlab/-/issues/590589) によってクエリされる主要なテーブルです。 |
 | **Job Router** | CI ジョブのスケジューリングと runner 割り当てを担当する [KAS](https://docs.gitlab.com/ee/administration/clusters/kas/) モジュール。[Phase 2](#phase-2-complete-telemetry-pipeline) でルーティングスパン (`router_job_pending` から `router_job_running`) を送信します。 |
-| **Capability fingerprint** | ジョブと runner の互換性を決定するすべての要因を一意に識別する安定したハッシュ: タグ、runner タイプ (instance/group/project)、保護ステータス、プロジェクトアクセス。同じフィンガープリントを共有する runner は同じジョブセットを処理できます。[Runner Job Router architecture](/handbook/engineering/architecture/design-documents/runner_job_router/) で定義されています。MVC ではスパン属性として含まれ (Rails ワークストリーム)、「どの capability グループが遅いキャッシュ復元を持つか?」 や capability グループごとの SLO などのテレメトリクエリを可能にします。 |
+| **Capability fingerprint** | ジョブと runner の互換性を決定するすべての要因を一意に識別する安定したハッシュ: タグ、runner タイプ (instance/group/project)、保護ステータス、プロジェクトアクセス。同じフィンガープリントを共有する runner は同じジョブセットを処理できます。[Runner Job Router architecture](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/1049575e1c7da0fda85f7cf380b4d49a8e5d69f7/content/handbook/engineering/architecture/design-documents/runner_job_router/_index.md#capability-fingerprinting) で定義されています。MVC ではスパン属性として含まれ (Rails ワークストリーム)、「どの capability グループが遅いキャッシュ復元を持つか?」 や capability グループごとの SLO などのテレメトリクエリを可能にします。 |
 
 ## 提案
 
@@ -421,6 +421,64 @@ MVC の **Rails 統合** ワークストリームでゲートされており、�
 
 完全なフィールド仕様、SQL スキーマ、シーケンス図、コード例については、[原文 (英語)](https://handbook.gitlab.com/handbook/engineering/architecture/design-documents/ci_job_telemetry/) を参照してください。設計の正確性については常に英語の原文が信頼できる情報源です。
 
+### マルチソースのトレース調整 {#multi-source-trace-coordination}
+
+複数のコンポーネント（Rails、Job Router、Runner）が同じパイプラインのスパンを提供します。これらのソースをまたいで統一されたトレースを実現するため、次のようにします。
+
+1. **Rails がトレースコンテキストを初期化します**：ジョブが pending になると、Rails がトレースコンテキストを作成します。
+   - `trace_id`：**ルートパイプライン** ID から派生します（32 文字の 16 進エンコーディング）。パイプライン階層（親、子、孫のパイプライン）のすべてのジョブがこの値を共有します
+   - `span_id`：このジョブの[ジョブスパン](#key-definitions)用に生成します
+
+1. **トレースコンテキストを Runner に渡します**：トレースコンテキストをジョブリクエストのペイロード（`/api/v4/jobs/request` のレスポンス）に含め、Runner が正しいジョブスパンの下に自身のスパンを紐付けられるようにします。
+
+1. **すべてのジョブが同じ Trace ID を共有します**：パイプライン階層全体のすべてのジョブが、ルートパイプラインから派生する同じ [Trace ID](#key-definitions) を共有します。これにより、可観測性プラットフォームは、各ジョブを最上位のスパンとして、パイプラインの実行全体を単一のトレースで表示できます。
+
+1. **子パイプラインのネスト**：子パイプラインは、ルートパイプラインの Trace ID を継承します。子パイプラインのジョブの Rails `job_lifecycle` スパンは、トリガー（bridge）ジョブのスパンの子として作成するため、トレースツリーでは子パイプラインのスパンがトリガージョブの下にネストして表示されます。これは、複数階層のパイプライン（子の子）にも再帰的に適用します。`features.tracing` の `span_parent_id` は、常に Rails の `job_running` スパン ID を参照し（トリガージョブのスパン ID ではありません）、`job_lifecycle` → `job_running` → `job_execution` という階層を作ります。
+
+```mermaid
+sequenceDiagram
+    participant Rails as GitLab Rails
+    participant Runner as GitLab Runner
+    participant Collector as OTEL Collector
+
+    Note over Rails: Job becomes pending
+    Rails->>Rails: Initialize trace context<br/>(trace_id from root pipeline_id, job span_id)
+
+    Runner->>Rails: Request job
+    Rails->>Rails: Set job status to running
+    Rails-->>Runner: Job payload + features.tracing<br/>(trace_id, span_parent_id pointing at the job_running span)
+
+    Note over Runner: Runner executes job, streams spans as they complete
+    Runner->>Collector: Stream prepare_executor span
+    Runner->>Collector: Stream pull_image span
+    Runner->>Collector: Stream get_sources span
+    Runner->>Collector: Stream step_script span
+    Runner->>Collector: Stream upload_artifacts span
+    Runner->>Collector: Stream root job_execution span
+
+    Runner->>Rails: Update job status (success/failed)
+```
+
+注：
+スパンは、開始時と終了時ではなく、**完了したとき**に全期間の情報とともにストリーミングします。
+この図は MVC のシナリオ（Runner のテレメトリと Rails のライフサイクルスパン）を示します。Phase 2 のワークストリームでは、次を追加します。
+
+- **Phase 2、Job Router ワークストリーム**：Job Router（KAS）のスパン（`router_job_pending`、`router_job_routing`、`router_job_admitted`、`router_job_assigned`、`router_job_running`）
+
+#### Rails リクエストの境界をまたぐスパン ID の調整 {#coordinating-span-ids-across-rails-request-boundaries}
+
+`span_parent_id` はジョブペイロードに含めて送信しますが、その参照先である Rails の `job_running` スパンは、ペイロードを送信した*後*に `pending → running` 遷移が発生するまで存在しません。Rails は、スパンが存在する前にスパン ID を確定し、その後 OTel SDK がまったく同じ ID のスパンを出力するようにする必要があります。SDK の `start_span` API はスパン ID の引数を受け付けないため、サポートされている注入ポイントは、カスタムの [`IdGenerator`](https://github.com/open-telemetry/opentelemetry-ruby/blob/opentelemetry-sdk%2Fv1.11.0/sdk/lib/opentelemetry/sdk/trace/tracer_provider.rb#L145) だけです。
+
+CI テレメトリの `TracerProvider` は、1 回限りのスレッドローカルな事前設定 API を公開する `DeterministicIdGenerator` を組み込みます（CI 以外でも再利用できるパターンです）。「確定した」ID は保存しません。`POST /api/v4/jobs/request` ハンドラー（`features.tracing.span_parent_id` に設定する側）と、`pending → running` 状態遷移（スパン作成をラップするために使う側）の両方で利用できるジョブ識別子から、決定論的に派生します。両方の経路が、共有状態なしに同じ値を独立して計算します。
+
+```ruby
+id_generator.with_span_id(committed_hex_id) do
+  tracer.start_span("job_running") { ... }   # emits a span whose ID == committed_hex_id
+end
+```
+
+事前設定した値はスレッドごとに保持し、そのスレッドの次のスパンが消費します。それ以外はすべてランダムのままです。ID は保存せず派生するため、放棄されたジョブにコストはかかりません。DB への書き込みもクリーンアップも不要です。
+
 ## 脅威モデル
 
 このセクションでは、テレメトリエンドポイントのセキュリティ考慮事項を分析します。
@@ -519,9 +577,9 @@ Rails は、作成から完了までの完全なジョブライフサイクル�
 
 ### ワークストリーム: Job Router テレメトリ
 
-[Job Router](/handbook/engineering/architecture/design-documents/runner_job_router/) (KAS Job Router モジュール) は、内部信頼として信頼されたインフラストラクチャで実行されるため、ワークロード ID を使用して独自のスパンを OTEL Collector に直接プッシュします。
+[Job Router](/handbook/engineering/architecture/design-documents/environment_service/) (KAS Job Router モジュール) は、内部信頼として信頼されたインフラストラクチャで実行されるため、ワークロード ID を使用して独自のスパンを OTEL Collector に直接プッシュします。
 
-Job Router スパンは [ジョブ状態遷移](/handbook/engineering/architecture/design-documents/runner_job_router/#phase-3-full-job-orchestration) をキャプチャします:
+Job Router スパンは [ジョブ状態遷移](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/1049575e1c7da0fda85f7cf380b4d49a8e5d69f7/content/handbook/engineering/architecture/design-documents/runner_job_router/_index.md#phase-3-full-job-orchestration) をキャプチャします:
 
 - `router_job_pending`: キュー内の待機時間
 - `router_job_routing`: capability フィンガープリントマッチングと runner 選択
@@ -638,7 +696,7 @@ MVC の Grafana のみのアプローチを置き換える、パイプライン�
 
 - Epic: [スケーラブルな CI ジョブテレメトリレポーティングを構築](https://gitlab.com/groups/gitlab-org/quality/analytics/-/epics/22)
 - 関連: [Pipeline Insights epic #11835](https://gitlab.com/groups/gitlab-org/-/epics/11835)
-- [GitLab Runner Job Router](/handbook/engineering/architecture/design-documents/runner_job_router/) - capability フィンガープリンティングを使用した KAS ベースのインテリジェントなジョブルーティング
+- [GitLab Runner Job Router](/handbook/engineering/architecture/design-documents/environment_service/) - capability フィンガープリンティングを使用した KAS ベースのインテリジェントなジョブルーティング
 - [Data Insights Platform](/handbook/engineering/architecture/design-documents/data_insights_platform/)
 - [Self-Managed Segmentation (OAK)](/handbook/engineering/architecture/design-documents/selfmanaged_segmentation/) - セルフマネージドデプロイ用 Omnibus Alternative Kit
 - [GitLab Observability](https://docs.gitlab.com/operations/observability/) - `GITLAB_OBSERVABILITY_EXPORT` を使用した自動 CI/CD パイプライン計装

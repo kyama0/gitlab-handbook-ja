@@ -2,9 +2,9 @@
 title: "FinOps 用語集"
 description: "Cloud Cost Utilization チームが FinOps の機会、クラウドコストデータ、コスト配分、コスト帰属に使用する用語の定義"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/glossary/"
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-lastmod: "2026-11-06T14:27:25+01:00"
-translated_at: "2026-11-07T00:25:45.563460+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+lastmod: "2026-11-17T15:06:56+01:00"
+translated_at: "2026-11-17T21:10:23.948269+00:00"
 translator: codex
 stale: false
 ---
@@ -41,9 +41,9 @@ FinOps の機会が進むステージは Proposed、Confirmed、Committed、Impl
 
 ### ランレート削減 {#run-rate-reduction}
 
-私たちが目指す成果であり、FinOps の機会を追跡するための数値です。検証済みのサービス月額コスト削減額を 12 倍し、年間の米ドル額で表します。これはエンジニアリング上の数値です。
+私たちが目指す成果であり、FinOps の機会を追跡するための数値です。サービス月額コスト削減額を 12 倍し、年間の米ドル額で表します。これはエンジニアリング上の数値です。
 
-担当チームが機会の[ステータスノート](#status-note)に見積もりを記録し、FinOps が変更対象の[実効コスト](#effective-cost)を変更前後で比較して、請求データから結果を検証します。ランレート削減は変更ごとに総額で計上し、削減効果を後退させる増加分は相殺せずに併記します。
+担当チームは、機会の[ステータスノート](#status-note)に見積もりを記録し、機会が Realized になったら、影響として測定した数値または合意した数値を記録します。FinOps は、たとえば変更対象の[実効コスト](#effective-cost)を変更前後で比較することで、請求データと照合できます。ランレート削減は変更ごとに総額で計上し、削減効果を後退させる増加分は相殺せずに併記します。
 
 機会の成果を説明するときは、「コスト節約」ではなく「ランレート削減」と表現してください。
 
@@ -79,7 +79,7 @@ FinOps の機会が進むステージは Proposed、Confirmed、Committed、Impl
 
 ### ステータスノート {#status-note}
 
-機会の Issue に投稿する、`## FinOps status` を見出しとする社内ノートです。機会の現在の状況とランレート削減の見積もりを、決まった形式で記録します。最新のノートが現在のステータスです。[ステータスノートの形式](opportunities.md#status-note-format)を参照してください。
+機会の Issue に投稿する、`## FinOps status` を見出しとする社内ノートです。機会の現在の状況を記録し、ランレート削減の見積もりや実現額などのデータを集めるために使います。各数値について、その値を記載した最新のノートを採用します。[ステータスノートの形式](opportunities.md#status-note-format)を参照してください。
 
 ### 担当チーム {#owning-team}
 

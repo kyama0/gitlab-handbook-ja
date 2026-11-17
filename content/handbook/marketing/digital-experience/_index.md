@@ -3,11 +3,11 @@ title: Digital Experience ハンドブック
 description: >-
   このハンドブックでは、Digital Experience のパーパス、ビジョン、ミッション、目標などについて学べます。
 upstream_path: /handbook/marketing/digital-experience/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T14:35:46+00:00"
+upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
+translated_at: "2026-11-17T21:10:23.948269+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-17T11:17:06-08:00"
 ---
 
 ## 概要 {#overview}
@@ -27,14 +27,14 @@ lastmod: "2026-10-30T14:17:26-04:00"
 | Product Designer |[Sylvie Le](https://gitlab.com/s.le) |
 | Frontend Engineer | [Javi Garcia](https://gitlab.com/jgarc)|
 | Frontend Engineer | [Eliezer Toribio Camacho](https://gitlab.com/eliezert)|
-| Senior Frontend Engineer| [Megan Filo](https://gitlab.com/meganfilo) |
+| Staff Frontend Engineer | [Megan Filo](https://gitlab.com/meganfilo) |
 | Senior Frontend Engineer | [Laura Duggan](https://gitlab.com/lduggan) |
 | Senior Fullstack Engineer | [John Arias](https://gitlab.com/jariasc-ext) |
 | Senior Fullstack Engineer | [Mateo Penagos](https://gitlab.com/mpenagos-ext) |
 | Senior Fullstack Engineer | [Rasam Hossain](https://gitlab.com/rasamhossain) |
 | Fullstack Engineer, Technical Writing | [Hiru Fernando](https://gitlab.com/HiruFernando12) |
 | Senior Growth Marketing Manager | [Hanif Smith-Watson](https://gitlab.com/hsmith-watson) |
-| Engineering Manager | [Chris Fraser](https://gitlab.com/chrisfraser) |
+| Senior Engineering Manager | [Chris Fraser](https://gitlab.com/chrisfraser) |
 | Director | [Filza Qureshi](https://gitlab.com/fqureshi)|
 
 ## スコープ {#scope}
