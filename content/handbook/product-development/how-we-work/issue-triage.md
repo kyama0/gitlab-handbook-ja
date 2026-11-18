@@ -2,11 +2,11 @@
 title: Issue のトリアージ
 description: "GitLab.com プロジェクトにおける Issue のトリアージとラベル付けのガイドライン"
 upstream_path: /handbook/product-development/how-we-work/issue-triage/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-translated_at: "2026-11-14T08:35:06.703137+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-11T15:33:17Z"
+lastmod: "2026-11-18T08:57:21-08:00"
 ---
 
 GitLab は [オープンな開発](https://about.gitlab.com/blog/2015/12/16/improving-open-development-for-everyone/)を信じており、[GitLab.com](https://gitlab.com/groups/gitlab-org) 上のプロジェクトに対してコミュニティが Issue を立て、マージリクエストを開くことを推奨しています。コミュニティのコントリビューションは貴重であり、私たちはできるだけ効果的に対応すべきです。その中心にあるのがトリアージ、すなわちタイプと深刻度に応じた分類のプロセスです。
@@ -236,7 +236,7 @@ Issue のトリアージ担当者として、あなたは後で浮上する追�
 
 #### UX バグ {#ux-bugs}
 
-一部の UX 関連の Issue は、私たちの[システムユーザビリティスケール (SUS) スコア](/handbook/product/ux/performance-indicators/system-usability-scale/)に影響することが知られており、これは私たちの[3 か年戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)における焦点です。私たちは特に `bug::ux` ラベルが *付いた* Issue を対象とします。これらの Issue には深刻度ラベルが適用され、`type::bug` Issue の[深刻度](/handbook/product-development/how-we-work/issue-triage/#severity)と [SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)に従います。
+一部の UX 関連の Issue は、私たちの[システムユーザビリティスケール (SUS) スコア](/handbook/upstream-studios/performance-indicators/system-usability-scale/)に影響することが知られており、これは私たちの[3 か年戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)における焦点です。私たちは特に `bug::ux` ラベルが *付いた* Issue を対象とします。これらの Issue には深刻度ラベルが適用され、`type::bug` Issue の[深刻度](/handbook/product-development/how-we-work/issue-triage/#severity)と [SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)に従います。
 
 #### Deferred UX {#deferred-ux}
 

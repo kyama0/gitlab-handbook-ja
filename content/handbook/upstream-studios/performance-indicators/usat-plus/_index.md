@@ -1,12 +1,12 @@
 ---
 title: "User Satisfaction Plus（USAT+）調査"
 description: "User Satisfaction（USAT+）調査は、プロダクト健全性を主要な次元にわたって追跡するためにプロダクト＆マーケティング部門内で年2回使用する統合された指標調査です。"
-upstream_path: /handbook/product/ux/performance-indicators/usat-plus/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:15:54+09:00"
+upstream_path: /handbook/upstream-studios/performance-indicators/usat-plus/
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:24:36+00:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 ### USAT+データ収集スケジュール
@@ -210,7 +210,7 @@ USAT 結果を提示するための Tableau には、2 つの内部ダッシュ�
 - [USAT Scores](https://10az.online.tableau.com/#/site/gitlab/views/DRAFT-UXKPIs/WIPDRAFTCSATScores?:iid=7): このダッシュボードは、GitLab のプロダクトに満足しているユーザー（`satisfied`と`very satisfied`の評価）と満足していないユーザー（`neutral`、`dissatisfied`、`very dissatisfied`の評価）の回答数とパーセンテージを示します。
 - [USAT Line Chart](https://10az.online.tableau.com/#/site/gitlab/views/DRAFT-UXKPIs/WIPDRAFTCSATLineChart?:iid=7): このダッシュボードは、スコアを時間の経過とともに追跡するために、USAT スコアを四半期ごとに示します。
 
-これらのダッシュボードは[UX 部門パフォーマンス指標ページ](/handbook/product/ux/performance-indicators/#regular-performance-indicators)でも見つけることができます。
+これらのダッシュボードは[Upstream Studios のパフォーマンス指標ページ](/handbook/upstream-studios/performance-indicators/)でも確認できます。
 
 [分析テンプレート](https://docs.google.com/spreadsheets/d/1Klb9RO83F7EiB6TojIxvr-qEqyXjr36P7LJ-S4b0924/edit?usp=sharing)の調査データは Tableau に接続され、現在と前の四半期のデータを示します。UX リサーチは、Product Data Insights と協力して、これらの Tableau ダッシュボードを四半期ごとに更新する責任があります。
 
@@ -289,5 +289,5 @@ USAT+の手法、管理、結果に関する質問については、UX リサー
 
 ### 関連ハンドブックページ
 
-- [UX 部門パフォーマンス指標](/handbook/product/ux/performance-indicators/)
-  - [System Usability Scale（SUS）指標](/handbook/product/ux/performance-indicators/system-usability-scale/)
+- [Upstream Studios のパフォーマンス指標](/handbook/upstream-studios/performance-indicators/)
+  - [System Usability Scale（SUS）指標](/handbook/upstream-studios/performance-indicators/system-usability-scale/)

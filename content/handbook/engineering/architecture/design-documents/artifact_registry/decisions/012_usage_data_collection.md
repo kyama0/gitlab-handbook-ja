@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "SaaS および Self-Managed のデプロイにまたがるプロダクトアナリティクスとビジネスインテリジェンスのために、Artifact Registry が使用状況データを収集する方法に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection/
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T11:47:24+01:00"
-translated_at: "2026-11-17T21:28:02.744958+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T14:43:04+01:00"
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: codex
 stale: false
 ---
@@ -81,7 +81,7 @@ Service Ping などによる集計メトリクスは対象外です（[オプト
 | ストレージ | はい | いいえ | いいえ |
 | エグレス | はい | いいえ | いいえ |
 
-エグレスイベントは、1 つのネームスペースと 1 つの配信モードについて、1 時間に送信したバイト数を持ちます。
+エグレスイベントは、1 つのネームスペースと 1 つの配信モードについて、1 つの使用期間内に送信したバイト数を記録します。
 サービスは、自身がストリーミングしたバイト数を数えます。
 リダイレクトされた転送は観測しないため、[pull イベントが発生するタイミング](#when-a-pull-event-fires)で求めるとおり、そのバイト数はストレージと CDN のアクセスログから取得します（[ADR-029（社内向け）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/029_egress_metering/)）。
 

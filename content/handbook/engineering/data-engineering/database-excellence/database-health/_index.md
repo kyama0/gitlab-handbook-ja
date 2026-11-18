@@ -2,9 +2,9 @@
 title: "Database Health チーム"
 description: "Database Health チームは FY27 初めから 2026 年 9 月まで活動し、その時点で担当範囲が Self-Managed Database Experience と Database Automation に分割されました。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/database-health/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-18T12:11:14-05:00"
-translated_at: "2026-09-20T02:04:59.673212+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+lastmod: "2026-11-19T08:22:09+13:00"
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: claude
 stale: false
 ---
@@ -13,7 +13,7 @@ Database Health チームは、[Database Frameworks チーム](/handbook/enginee
 
 ## 業務の移管先 {#where-the-work-went}
 
-* **セルフマネージドのヘルスフレームワーク**は、別の Database Migrations チームが担当する予定だったアップグレードおよびマイグレーションの業務とともに、新設された [Self-Managed Database Experience](/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/) チームに移管されました。
+* **セルフマネージドのヘルスフレームワーク**は、別の Database Migrations チームが担当する予定だったアップグレードおよびマイグレーションの業務とともに、新設された [Self-Managed Database Experience](/handbook/engineering/data-engineering/database-excellence/self-managed-database/)チームに移管されました。
 * **GitLab.com のヘルスモニタリング、シフトレフトによる飽和の特定、マネージド Postgres のモニタリング**は、その業務を担当していたエンジニアとともに [Database Automation](/handbook/engineering/data-engineering/database-excellence/database-automation/) に移管されました。
 
 現在発生している飽和ポイントの特定と緩和は、このチームの存続時と同様、引き続きすべての Database Excellence チームで共有する責任です。

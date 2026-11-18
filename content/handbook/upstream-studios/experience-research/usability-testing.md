@@ -2,9 +2,9 @@
 title: "ユーザビリティテスト"
 description: "GitLab でユーザビリティテストを実施する方法です"
 upstream_path: /handbook/upstream-studios/experience-research/usability-testing/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T08:32:10+09:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T08:57:11-08:00"
+translated_at: "2026-11-19T06:22:23+09:00"
 translator: codex
 stale: false
 ---
@@ -61,7 +61,7 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
 1. プロトタイプまたはデモ環境を準備します。
    - テストするモードを考慮します。調査間の一貫性を確保しながらテスト効率を維持するため、ユーザビリティテストにはデフォルトでライトモードを使用します。ダークモードでのテストは意図的な方法論上の選択とし、そのモードがリサーチの主な焦点である場合、モードの違いが調査結果に大きな影響を及ぼす可能性がある場合、または特定のユーザーの好みやアクセシビリティ要件に対応する場合にのみ考慮してください。ダークモードのテストを考慮すべき例: モード間での視覚的階層の影響の調査、異なるモードでのタスクパフォーマンスの違いの調査、照明などの環境コンテキストへのモード適応の分析、モード間でのユーザーエンゲージメントパターンの探索、デジタルエコシステム内でのモード互換性と技術統合の検討。
 1. [収集するタスクと指標を含むテストスクリプトを作成します](https://docs.google.com/document/d/135OtPVzguF8ZmbtfVL9hqVeehcN48IxWceWr5g070T8/copy)。
-    - テストを設定して、これらの[ユーザビリティ要因](/handbook/upstream-studios/experience-research/usability-testing/#usability-factors-to-measure)を測定します。これにより、時間の経過とともに一貫して改善を測定し、[システムユーザビリティ](/handbook/product/ux/performance-indicators/system-usability-scale/)への影響を評価できます。エラー率やユーザーが助けを必要とした回数など、ユーザビリティ上の問題を理解するために測定できる他の多くの指標があります。リサーチトピックに役立つ場合は、自由に使用してください。
+    - テストを設定して、これらの[ユーザビリティ要因](/handbook/upstream-studios/experience-research/usability-testing/#usability-factors-to-measure)を測定します。これにより、時間の経過とともに一貫して改善を測定し、[システムユーザビリティ](/handbook/upstream-studios/performance-indicators/system-usability-scale/)への影響を評価できます。エラー率やユーザーが助けを必要とした回数など、ユーザビリティ上の問題を理解するために測定できる他の多くの指標があります。リサーチトピックに役立つ場合は、自由に使用してください。
     - 特にモデレーターなしのテストでは、タスクを進めながら思考を発話するよう参加者に伝えます。
     - 優れたユーザビリティテストスクリプトの書き方について、より[詳細なヒントとコツ](/handbook/upstream-studios/experience-research/writing-usability-testing-script/)を確認してください。
     - UserTesting でモデレーターなしのユーザビリティテストを実施する場合は、「Account templates」セクションにある[ユーザビリティ指標テンプレート](https://app.usertesting.com/share/314d003c-cba4-4fde-91bb-c524a169addd)からテストを作成します。UserTesting には私たちのものに似た指標を取得するための *task success* と *difficulty* のネイティブオプションがありますが、これらは調査に必要な同じユーザビリティ指標ではありません。代わりにこのテンプレートに記載されたオプションを使用してください。
@@ -121,7 +121,7 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
     - *「あなたは今、<Feature/Scenario> の私たちの実装を体験しました。次の記述にどの程度同意または反対しますか: <Feature/Scenario> には、私自身の仕事で行う必要があることに必要な能力があります。」* <br> *- 強く同意する* <br> *- 同意する* <br> *- 同意も反対もしない* <br> *- 反対する* <br> *- 強く反対する*
   - 参加者が回答した直後に、そのように評価した*理由*を尋ねるようにしてください。
 - なぜ測定しますか？
-  - このスコアは、通常の[パフォーマンス指標](/handbook/product/ux/performance-indicators/#system-usability-scale-sus-score)の 1 つである [System Usability Scale](/handbook/product/ux/performance-indicators/system-usability-scale/) (SUS) スコアと高く相関します。
+  - このスコアは、通常の[パフォーマンス指標](/handbook/upstream-studios/performance-indicators/)の 1 つである [System Usability Scale](/handbook/upstream-studios/performance-indicators/system-usability-scale/) (SUS) スコアと高く相関します。
   - 特に評価が低い場合は、参加者が評価を付けた理由を理解することが重要です。参加者数も少ないユーザビリティテストでは、これは特に重要です。
 
 ## よくある質問 {#frequently-asked-questions}

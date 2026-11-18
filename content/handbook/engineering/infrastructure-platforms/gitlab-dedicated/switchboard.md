@@ -1,11 +1,11 @@
 ---
 title: Switchboard チーム
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T15:27:34.435677+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-17T16:04:48-07:00"
 ---
 
 ## 概要 {#summary}
@@ -145,26 +145,55 @@ Switchboard チームと関わるには：
 
 ## Switchboard アプリケーションへのアクセスのリクエスト {#requesting-access-to-the-switchboard-application}
 
-アクセスのプロビジョニングは環境によって異なります：
+アクセスのプロビジョニング方法は、製品（Commercial または Government）と環境によって異なります。
 
-### Test 環境 {#test-environment}
+<span id="test-environment"></span>
 
-**Test** 環境へのアクセスは **[Lumos](https://app.lumos.app/)** を通じてプロビジョニングされます。Test アクセスに以前使用されていた Okta グループはもう存在しません。
+### Commercial の Test 環境 {#commercial-test-environment}
+
+Commercial の **Test** 環境へのアクセスは **[Lumos](https://app.lumos.app/)** を通じてプロビジョニングされます。Test 環境へのアクセスに以前使っていた Okta グループは廃止されました。
 
 1. `Switchboard Test` の Lumos アクセスリクエストを開きます。
 1. 必要なロールを指定します（下記の [ロールの説明](#roles)を参照）。
 1. **Permissions** では、**Other** を選択します（`Dedicated Team Users` が特に必要な場合を除く）。
 1. アクセスの正当性を記載します。
 
-### Beta および Production 環境 {#beta-and-production-environments}
+<span id="beta-and-production-environments"></span>
 
-**Beta** および **Production** 環境へのアクセスでは、引き続き既存の Google/Okta グループプロセスを使用します：
+### Commercial の Beta および Production 環境 {#commercial-beta-and-production-environments}
+
+Commercial の **Beta** および **Production** 環境へのアクセスには、引き続き既存の Google/Okta グループを使った手順に従います。
 
 - 以下を指定して [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を作成
   - 特定の環境 (Beta / Production)
   - 必要なロール (下記の [ロールの説明](#roles)を参照)
   - アクセスの正当性
-- アプリケーションのアクセス＆プロビジョニングの詳細は [Tech Stack](/handbook/business-technology/tech-stack-applications/)の `Switchboard - GitLab Dedicated` セクションにあります
+- アプリケーションへのアクセスとプロビジョニングの詳細は、[Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)の `Switchboard - GitLab Dedicated` の項目にあります。
+
+### Switchboard for Government {#switchboard-for-government}
+
+| 環境 | URL | FedRAMP の境界 |
+|-------------|-----|------------------|
+| Sandbox | <https://console.testpony.net> | 境界外 |
+| Test | <https://console.gitlab-private.us> | 境界外 |
+| Production | <https://console.gitlab-dedicated.us> | 境界内 |
+
+Switchboard for Government のユーザーは全員、SSO でサインインします。ロールは Switchboard Commercial と同じです（下記の[ロールの説明](#roles)を参照）。
+
+#### Sandbox と Test {#sandbox-and-test}
+
+Government の **Sandbox** および **Test** 環境へのアクセスは、**[Lumos](https://app.lumos.app/)** を通じてプロビジョニングされます。
+
+1. Lumos で `Switchboard for Government (Sandbox)` または `Switchboard for Government (Test)` のアクセスリクエストを作成します。
+1. 必要なロールを指定します（下記の[ロールの説明](#roles)を参照）。
+1. アクセスが必要な理由を記載します。
+
+#### Production {#production}
+
+Government の **Production** 環境は FedRAMP の認可境界内にあるため、社内のアクセスリクエストと境界内のアクセスリクエストの両方が必要です。
+
+1. `Switchboard for Government (Production)` の [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を作成し、アクセス先 URL、必要なロール（下記の[ロールの説明](#roles)を参照）、アクセスが必要な理由を記載します。
+1. マネージャーの承認後、[#g_dedicated-us-pubsec](https://gitlab.slack.com/archives/C03R5837WCV) で US PubSec のチームメンバーに、境界内のアクセスリクエストの作成と社内の Access Request への相互リンクを依頼します。ISSO がリクエストを審査し、アクセスをプロビジョニングします。
 
 <details><summary>Switchboard 内部ロールと権限</summary>
 

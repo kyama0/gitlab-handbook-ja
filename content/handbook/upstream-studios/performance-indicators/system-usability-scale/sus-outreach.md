@@ -1,12 +1,12 @@
 ---
 title: "System Usability Scale回答者アウトリーチ"
 description: "System Usability Scale（SUS）は、プロダクトの長期的なユーザビリティを測定するために使用するパフォーマンス指標です。このページでは、UXチームとのフォローアップディスカッションにオプトインした調査回答者にアウトリーチするプロセスを概説します。"
-upstream_path: /handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-17T06:29:12+09:00"
+upstream_path: /handbook/upstream-studios/performance-indicators/system-usability-scale/sus-outreach/
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:24:36+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 四半期ごとに、SUS 調査に、回答者が GitLab チームメンバーと自分の回答について話し合うことに関心があるかどうかを尋ねる質問を含めます。これは、プロダクトデザイナーとプロダクトマネージャーが、自分の特定のプロダクト領域のユーザビリティの課題についてより詳しく学ぶ素晴らしい機会です。

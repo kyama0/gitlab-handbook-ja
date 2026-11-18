@@ -2,9 +2,9 @@
 title: "Secrets Manager グループ"
 description: "Application チームと OpenBAO チームを扱う、GitLab Secrets Manager グループのハンドブックページ"
 upstream_path: /handbook/engineering/development/sec/security-platform/secrets-manager/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-lastmod: "2026-08-13T15:10:33+03:00"
-translated_at: "2026-08-14T06:13:39+09:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T08:57:11-08:00"
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: codex
 stale: false
 ---
@@ -169,7 +169,7 @@ Engineering Manager は、毎週エラーバジェットダッシュボードを
 
 #### 技術的負債と Deferred UX の優先順位付け {#prioritizing-technical-debt-and-deferred-ux}
 
-私たちは、技術的負債と Deferred UX の優先順位付けについて、[会社のガイダンス](/handbook/engineering/development/principles/#prioritizing-technical-decisions)と [Deferred UX](/handbook/product/ux/performance-indicators/#deferred-ux)の指針に従います。これを効果的に管理するため、私たちは、取り組む準備ができている技術的負債、Deferred UX、機能メンテナンスの Issue を「~workflow::scheduling」列で追跡することにしました。Product によって優先順位付けされますが、これらの Issue が私たちの将来のベロシティに与える影響によって情報が与えられます。私たちは、各マイルストーンで重みベースのキャパシティの一定の割合（約 30%）を、技術的負債と deferred UX の返済に充てるよう努めます。私たちはバグを負債とは見なさず、残りの重みベースのキャパシティの一環として優先順位付けします。
+私たちは、[会社のガイダンス](/handbook/engineering/development/principles/#prioritizing-technical-decisions)に従って、技術的負債と [Deferred UX](/handbook/upstream-studios/operations/#ux-labels)の優先順位を決めます。これを効果的に管理するため、私たちは、取り組む準備ができている技術的負債、Deferred UX、機能メンテナンスの Issue を「~workflow::scheduling」列で追跡することにしました。Product が、これらの Issue が私たちの将来のベロシティに与える影響を踏まえて、優先順位を決めます。私たちは、各マイルストーンで重みベースのキャパシティの一定の割合（約 30%）を、技術的負債と Deferred UX の解消に充てるよう努めます。私たちはバグを負債とは見なさず、残りの重みベースのキャパシティの一環として優先順位付けします。
 
 #### マイルストーンの成果物
 

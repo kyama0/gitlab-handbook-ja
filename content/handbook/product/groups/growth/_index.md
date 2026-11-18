@@ -1,11 +1,11 @@
 ---
 title: Growth セクションの仕組み
 upstream_path: /handbook/product/groups/growth/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T23:30:57+02:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 ## 概要
@@ -136,7 +136,7 @@ Growth は製品のエリアを所有しませんが、GitLab アプリケーシ
 
 - 全員が何をしているかを確認できるように Issue ボードがあります。計画 Issue で Issue ボードを参照してください。たとえば、これは [Acquisition Planning Issue のテンプレート](https://gitlab.com/gitlab-org/growth/team-tasks/-/blob/master/.gitlab/issue_templates/growth_acquisition_planning_template.md)です。
 - Issue には `UX`、`devops::growth`、`group::` で**ラベル**を付けます。
-- [UX Research Workflow](/handbook/product/ux/operations/#ux-labels) の定義に従って、実験が達成する学習のタイプを示すために、実験に `UX problem validation` と `UX solution validation` のラベルを付けます。これらのラベルの目的は、研究速度に関連する [この UX KPI](/handbook/product/ux/performance-indicators/#ux-research-velocity) を追跡することです。
+- 実験でどのような知見が得られるかを示すため、[UX リサーチのワークフロー](/handbook/upstream-studios/operations/#ux-labels)の定義に従って、実験に `UX problem validation` と `UX solution validation` のラベルを付けます。
 - 通常の Issue には [ワークフローラベル](https://gitlab.com/groups/gitlab-org/-/labels?utf8=%E2%9C%93&subscribed=&search=workflow%3A%3A) を、実験 Issue には [実験ワークフローラベル](/handbook/engineering/development/growth/experimentation/#overview) を使用します。
 - Acquisition、Conversion、Expansion、Retention の 4 つの growth グループの計画と優先順位付けを支援するために**マイルストーン**を使用します。
   - PM は [実験用 ICE スコア](https://docs.google.com/spreadsheets/d/1yvLW0qM0FpvcBzvtnyFrH6O5kAlV1TEFn0TB8KM-Y1s/edit#gid=0)を提供し、他の Issue には [優先度ラベル](https://docs.gitlab.com/development/labels/#priority-labels)を使用します。

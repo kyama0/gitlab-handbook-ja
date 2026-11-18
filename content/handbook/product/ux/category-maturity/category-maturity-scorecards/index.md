@@ -5,11 +5,11 @@ description: >-
   Job to be Done (JTBD)によって定義された全体的なエクスペリエンス
   を考慮します
 upstream_path: /handbook/product/ux/category-maturity/category-maturity-scorecards/
-upstream_sha: "7a2e264cb798305fd5c92b586ef9fe633a730244"
-translated_at: "2026-09-26T23:49:49.632104+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 ## イントロとゴール
@@ -172,7 +172,7 @@ CM Scorecard IssueテンプレートとCM Scorecard Dovetailテンプレート�
 
 **質問3: UMUX Lite, adjusted**
 
-[UMUX Lite](https://measuringu.com/umux-lite/) スコアは、Finstadによって作成されたUMUX（Usability Metric for User Experience）に基づいており、[SUS](/handbook/product/ux/performance-indicators/system-usability-scale/) およびNet Promoter Scoreと高度に相関しています。SUSと類似することを意図していますが、より短く、[ISO 9241のユーザビリティの定義](https://www.w3.org/2002/Talks/0104-usabilityprocess/slide3-0.html)（有効性、効率性、満足度）を対象としています。この質問は、UX Scorecardの形成的評価アプローチでも使われます。
+[UMUX Lite](https://measuringu.com/umux-lite/) スコアは、Finstadによって作成されたUMUX（Usability Metric for User Experience）に基づいており、[SUS](/handbook/upstream-studios/performance-indicators/system-usability-scale/) およびNet Promoter Scoreと高度に相関しています。SUSと類似することを意図していますが、より短く、[ISO 9241のユーザビリティの定義](https://www.w3.org/2002/Talks/0104-usabilityprocess/slide3-0.html)（有効性、効率性、満足度）を対象としています。この質問は、UX Scorecardの形成的評価アプローチでも使われます。
 
 *Q3: 「あなたは私たちの* `<Scenario>` *の実装を経験しました。次のステートメントにどの程度同意するか、または同意しないか:*
 

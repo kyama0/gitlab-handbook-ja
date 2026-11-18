@@ -2,9 +2,9 @@
 title: "MR Risk Labeler"
 description: "MR Risk Labeler がマージリクエストを低・中・高リスクに評価する方法と、その評価によるレビュー・承認担当者の変化。"
 upstream_path: /handbook/engineering/architecture/non-linear-productivity/mr-risk-labeler/
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T11:05:34-08:00"
-translated_at: "2026-11-17T21:38:01.885854+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T11:28:32-06:00"
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: codex
 stale: false
 ---
@@ -17,12 +17,12 @@ Compliance が支持するエージェントによる承認経路はこれです
 
 ## 評価があなたにとって意味すること {#what-the-rating-means-for-you}
 
-![作成者とリスクごとのマージ可能者。低リスク：@gitlab-bot が承認し、Maintainer の作成者は自分でマージでき、それ以外の作成者は、人間のレビューなしに Maintainer にマージしてもらう必要があります。中リスク：一部のマージリクエストでは、GitLab Duo、次に @gitlab-bot が承認すれば、Maintainer の作成者は自分でマージできます。それ以外の作成者には、人間の Maintainer が承認します。高リスク：自分でマージできず、人間の Maintainer が承認します。](/images/handbook/engineering/architecture/non-linear-productivity/mr-self-merge-risk-matrix.svg)
+![作成者とリスクごとのマージ可能者。低リスク：@gitlab-bot が承認し、Maintainer の作成者は自分でマージでき、それ以外の作成者は、人間のレビューなしに Maintainer にマージしてもらう必要があります。中リスク：Maintainer の経路を使用するプロジェクトでは、GitLab Duo に続いて @gitlab-bot が承認すれば、Maintainer の作成者は自分でマージできます。それ以外の作成者の場合は、人間の Maintainer が承認します。高リスク：自分でマージできず、人間の Maintainer が承認します。](/images/handbook/engineering/architecture/non-linear-productivity/mr-self-merge-risk-matrix.svg)
 
 | 作成者 | 低 | 中 | 高 |
 | --- | --- | --- | --- |
 | Maintainer ではない | `@gitlab-bot` が承認します。人間のレビューは不要ですが、Maintainer がマージします | 人間の Maintainer が承認します | 人間の Maintainer が承認します |
-| 直接付与された Maintainer | `@gitlab-bot` が承認し、あなたがマージします | GitLab Duo の承認後に `@gitlab-bot` が承認し、あなたがマージします（[サンプルのみ](#how-approval-works)） | 人間の Maintainer が承認します |
+| 直接付与された Maintainer | `@gitlab-bot` が承認し、あなたがマージします | GitLab Duo の承認後に `@gitlab-bot` が承認し、あなたがマージします（[Maintainer の経路](#how-approval-works)のみ） | 人間の Maintainer が承認します |
 
 すべてのリスクレベルで、次が適用されます。
 
@@ -64,7 +64,7 @@ Compliance が支持するエージェントによる承認経路はこれです
 [`triage-ops`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/mr_approval_flow/reconcile_approval.rb) が、`@gitlab-bot` として承認します。`triage-ops` が開始した実行による、現在のコミットの最新の評価についてのみ承認します。プロジェクトごとの設定は、[`config/mr_approval_flow.yml`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/config/mr_approval_flow.yml) にあります。
 
 - **低リスク：** `@gitlab-bot` が承認します。作成者が Maintainer ならマージでき、それ以外は Maintainer がレビューせずにマージします。自動マージを設定するのは、bot による依存関係の更新だけです。
-- **Maintainer の経路：** 直接 Maintainer を付与された人の、低または中リスクと評価されたマージリクエストでは、レビュー担当者の依頼、変更要求、bot によるコミットがなければ、GitLab Duo の承認後に `@gitlab-bot` が承認します。作成者がマージします。この経路を適用するのは、`config/mr_approval_flow.yml` の `maintainer_path` で定めたマージリクエストのサンプルだけであり、`triage-ops` の `MR_RISK_MAINTAINER_PATH` CI/CD 変数が `1` の間だけです。
+- **Maintainer の経路：** 直接 Maintainer を付与された人の、低または中リスクと評価されたマージリクエストでは、レビュー担当者の依頼、変更要求、bot によるコミットがなければ、GitLab Duo の承認後に `@gitlab-bot` が承認します。作成者がマージします。この経路は、`config/mr_approval_flow.yml` に `maintainer_path` を設定しているプロジェクトで、`triage-ops` の `MR_RISK_MAINTAINER_PATH` CI/CD 変数が `1` の間に限り、`sample` で指定した割合のマージリクエストに適用されます。`gitlab-org/gitlab` では `sample: 100` を設定しているため、すべてのマージリクエストが対象です。
 
 push、ドラフトへの切り替え、評価ラベルの削除によって、承認を取り消します。
 
@@ -91,7 +91,7 @@ push、ドラフトへの切り替え、評価ラベルの削除によって、�
 
 Maintainer の経路で、以下をすべて満たす場合に限ります。
 
-- IID が、[`config/mr_approval_flow.yml`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/config/mr_approval_flow.yml) の `maintainer_path` で設定したサンプルに含まれます。`sample: 10` なら、末尾が `00` から `09` の IID です。
+- IID が、[`config/mr_approval_flow.yml`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/config/mr_approval_flow.yml) の `maintainer_path` で設定したサンプルに含まれます。`gitlab-org/gitlab` では `sample: 100` を設定しているため、すべてのマージリクエストが対象です。
 - プロジェクトの Maintainer を直接付与されています。グループを通じた Maintainer アクセスは、対象になりません。
 - GitLab Duo が、評価対象のコミットを承認しました。
 - 人間のレビュー担当者を依頼しておらず、誰も変更を要求していません。

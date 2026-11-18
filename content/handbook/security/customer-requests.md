@@ -2,11 +2,11 @@
 title: 顧客起因のセキュリティインシデント発生時に GitLab.com 顧客へ提供する支援
 description: GitLab.com の実装または利用に起因してセキュリティインシデントを経験した GitLab.com 顧客にどのように支援を提供するかのプロセス概要
 upstream_path: /handbook/security/customer-requests/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-19T06:16:51+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-30T16:01:30-07:00"
+lastmod: "2026-11-18T15:32:51Z"
 ---
 
 GitLab は、顧客の成功を支援することにコミットしています。GitLab.com の顧客が GitLab の実装または利用の結果としてセキュリティインシデントの支援を求めて連絡してきた場合、当社は可能な限りイベントに関する追加情報を提供することで調査を支援します。
@@ -101,3 +101,11 @@ GitLab Premium または Ultimate プランは [Audit Events](https://docs.gitla
 1. 顧客はリクエストの時間枠、スコープ、関心のあるリソースを提供する必要があります。
 1. SIRT Issue を作成し、アカウント所有権の検証を行います。
 1. これが顧客にとって受け入れられない場合は、[Support Manager on Call](/handbook/support/on-call/#engaging-the-on-call-manager) に相談します。状況によっては、[Security Engineer On-Call](/handbook/security/security-operations/sirt/engaging-security-on-call/#engage-the-security-engineer-on-call) を関与させることが適切な場合があります。
+
+### 機密の SIRT Issue へのアクセスをリクエストする {#requesting-access-to-a-confidential-sirt-issue}
+
+デフォルトでは、`/security` フォームを送信した人だけが、その送信によって作成された SIRT Issue にアクセスできます。たとえば、フォロー・ザ・サン形式で対応を引き継ぐなど、別の Support Engineer が関連チケットを担当するためにアクセスが必要な場合は、Slack で `@sirt-oncall` をメンションし、アクセスをリクエストしてください。リクエストには以下を含めてください。
+
+- Zendesk チケットの ID
+- SIRT Issue へのリンク
+- アクセスが必要な理由の簡潔な説明

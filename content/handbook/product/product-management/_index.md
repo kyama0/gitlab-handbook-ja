@@ -1,11 +1,11 @@
 ---
 title: GitLab プロダクトマネジメント
 upstream_path: /handbook/product/product-management/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T15:46:26.289393+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 このドキュメントでは、プロダクトマネジメントの業務内容、関わり方の場、タイミング、そしてプロダクトマネジメントチームとの関わり方について説明します。
@@ -369,7 +369,7 @@ GitLab 製品が成熟するにつれて、[Product Development Flow](/handbook/
 
 DRI として、他のチームメンバーからのインプットを考慮し、彼らの経験と判断を信頼すべきタイミングを知ることが重要です。[opportunity canvas lite](/handbook/product/product-processes/#opportunity-canvas-lite)の使用をお勧めします。PM は、プロダクトデザイナーやエンジニアリングマネージャーからのインプットでキャンバスライトを編集することが期待されます。PM はその後、必要に応じてプロダクトデザイナーとエンジニアリングからのインプットを比較検討して決定を下します。PM は次に、待つことのコスト、より少ない磨きで早期に出荷すること、およびこの決定の一部として、より小さなイテレーションが存在しない理由を明確にして、決定を共有すべきです。
 
-磨きが少なく、ユーザー体験が劣っている、または何らかの形でこの UI が目指す水準に達していないものを構築する決定がなされた場合、チームは次回のマイルストーンで対処する [Deferred UX](/handbook/product/ux/performance-indicators/#deferred-ux) Issue のフォローアップを生成すべきです。
+磨きが少なく、ユーザー体験が劣っている、または何らかの形でこの UI が目指す水準に達していないものを構築する決定がなされた場合、チームは次回のマイルストーンで対処する [Deferred UX](/handbook/upstream-studios/operations/#ux-labels) Issue のフォローアップを生成すべきです。
 
 クワッドメンバーが PM DRI の決定に懸念を抱き、強く同意できない場合、その人は私たちの異議を述べ、コミットし、再び異議を述べるという価値観を実践し、上位の経営層を意思決定に巻き込むために[エスカレーション](/handbook/leadership/#effective-escalations)を開始すべきです。
 

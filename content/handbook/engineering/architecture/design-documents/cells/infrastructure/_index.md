@@ -8,11 +8,11 @@ coach: [ "@andrewn" ]
 status: proposed
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/infrastructure/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T08:29:27.696085+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-18T13:58:07+13:00"
 ---
 
 
@@ -432,7 +432,7 @@ Cell 以外のインフラストラクチャには引き続き使用されます
 | オブザーバビリティ                    | team::Scalability-Observability   | [ブループリント](observability.md)                                             | 👎         |
 | Cell アーキテクチャとツール    | team::Foundations                 | [ブループリント](cell_arch_tooling.md)                                         | 👍         |
 | プロビジョニング                     | team::Foundations                 | 未対応                                                                     | 👎         |
-| 設定管理/ロールアウト | team::Foundations                 | [ブループリント](../proposal-admin_area_setting_sychronization_in_cells.md)                                                                     | 👎         |
+| 設定管理 | group::tenant scale | [ブループリント](../proposal-admin_area_setting_sychronization_in_cells.md) | 👎         |
 | 障害復旧                | team::Production Engineering       | [ブループリント](disaster_recovery.md)                                        | 👎         |
 
 以下の設計ドキュメントには、まだ大規模ドメインの表に行がありません（オーナーと信頼度は

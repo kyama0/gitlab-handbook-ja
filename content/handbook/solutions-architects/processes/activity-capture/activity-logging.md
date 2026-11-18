@@ -3,16 +3,16 @@ title: ソリューションアーキテクチャの活動ロギング
 description: >-
   SA の活動記録のプロセスマニュアルです。GitLab SA Activity Form の Phase 1 展開に関する変更の理由、よくあるケースの記録方法、既知の制限、FAQ をまとめています。
 upstream_path: /handbook/solutions-architects/processes/activity-capture/activity-logging/
-upstream_sha: "fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f"
-lastmod: "2026-09-13T16:53:02-04:00"
-translated_at: "2026-09-20T03:25:02+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+lastmod: "2026-11-17T16:44:26-07:00"
+translated_at: "2026-11-19T06:16:51+09:00"
 translator: claude
 stale: false
 ---
 
 Phase 1 の展開に関する理由、方法、例外的なケースの記録方法、既知の制限、FAQ を、Solutions Architecture 組織全体が参照できるよう 1 か所にまとめています。
 
-**ステータス:** Phase 1 は 2026-09-07 に開始 · Rattle での活動記録は廃止 · 最終更新 2026-09-09
+**ステータス:** Phase 1 は 2026-09-07 に開始 · Rattle での活動記録は廃止 · 最終更新 2026-11-12
 
 ## 1. この変更の理由 {#1-why-this-change}
 
@@ -34,6 +34,8 @@ Phase 1 の展開に関する理由、方法、例外的なケースの記録方
 **Rattle の会議後の通知：** Rattle は、顧客向け会議の後に引き続き従来どおり Slack 通知を送信します。`Log Activity` ボタンは、新しい SA Activity Form を開く `Capture Activity` リンクに置き換わりました。この通知の対象は顧客との会議のみです。準備、調査、移動、フォローアップ、社内への貢献など、より幅広い活動は引き続き自分で積極的に記録する必要があります。
 
 ## 3. よくあるケースの記録方法 {#3-how-to-log-common-scenarios}
+
+AMER の SA は、カレンダーにある会議の記録の下書きを [SA Bot](#6-draft-entries-from-your-calendar-with-sa-bot)で作成し、内容を確認して承認できます。それ以外の活動は、以下のケースを参考にフォームへ直接記録してください。
 
 | ケース | 記録方法 |
 |---|---|
@@ -68,16 +70,59 @@ Salesforce でのアカウント ID または商談 ID の確認方法: アカ�
 - **ドロップダウンに表示されない商談。** New Business SA などから、SFDC で実際に割り当てられている商談よりも、表示される商談が大幅に少ないという報告があります。Account レベルではなく Opportunity レベルで割り当てられていることが原因かもしれません（Command Center でも同じ根本原因が指摘されています）。2026-09-07 時点で未解決です。回避策は商談 ID を手動で貼り付けることです。
 - **過去の送信内容を確認する方法がありません。** ツールには、すでに記録した内容の履歴やダッシュボードがありません。「Download backup CSV」ボタンはありますが、読みやすい名前ではなく Salesforce ID だけが表示されます。自分で参照できるよう、Notes にアカウント名/商談名を追加することを検討してください。
 - **ローカルバックアップは失われやすい状態です。** 記録は「このデバイス上のローカルバックアップ」として保存され、ブラウザーのキャッシュを消去すると削除されます。展開開始から最初の数週間は、念のため毎日 CSV のローカルバックアップをダウンロードしてください。
-- **カレンダー連携はまだありません。** Rattle の Slack による会議の通知とは異なり、新しいフォームにはカレンダーに基づく記録や会議の自動検出がありません。Phase 2 で最も要望の多い機能です。[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)でリクエストを提出・追跡してください。
+- **フォーム自体にはカレンダー連携がありません。** Rattle の Slack での会議通知と異なり、フォーム自体にはカレンダーに基づく記録や会議の自動検出はありません。AMER の SA は [SA Bot](#6-draft-entries-from-your-calendar-with-sa-bot)を使って、カレンダーから記録の下書きを作成できます。フォームとの直接連携は引き続き Phase 2 で最も要望の多い機能の 1 つです。[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)でリクエストを提出・追跡してください。
 - **Ecosystem/Partner SA 向けのカテゴリが不足しています。** 「Customer-facing」は Ecosystem SA の業務の大半に当てはまらず、「Partner enablement」と「Workshop」の分類も曖昧です。最初の数か月分のデータが集まった後に調整する項目として指摘されています。
 - **不足している活動タイプ。** Rattle にあった「Post-sales support」は、新しいフォームのドロップダウンにはまだありません。追加が要望されていますが、まだ追加されていません。
 - **フォーム自体に費やす時間のカテゴリがありません。** 新しいプロセス自体の負担を測定できるようにするため、追加が要望されています。
 - **アクセシビリティ/作業負荷に関する懸念。** 複数の SA（特に多数のアカウントを担当する SA やニューロダイバージェントな SA）から、Rattle/Troops にあったカレンダーに基づく通知がなく、自動化されていない手作業の記録は認知負荷と過少報告のリスクを増やすとの指摘がありました。
-- **自動化を進めています。** データ入力を支援するツールは、2026-09-07 時点で社内レビュー中です。
+- **AMER では自動化を利用できます。** [SA Bot](#6-draft-entries-from-your-calendar-with-sa-bot)がカレンダーから記録の下書きを作成し、自分で内容を確認して承認できます。
 
 **フィードバックと機能リクエスト：** 体系的なフィードバック、バグ報告、機能リクエストには[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)を使用してください。「この活動はどのように記録すればよいですか？」などの一般的な質問には Slack スレッドを使用してください。
 
-## 6. FAQ {#6-faq}
+## 6. SA Bot でカレンダーから記録の下書きを作成する {#6-draft-entries-from-your-calendar-with-sa-bot}
+
+SA Bot は、カレンダーから SA Activity Form に入力する記録の下書きを作成します。1 件ずつ手入力する代わりに、下書きの内容を確認して承認します。初回のセットアップを済ませれば、`./run.sh` コマンド 1 つですべてが起動します。SA Bot は AMER の SA チームが利用できます。
+
+SA Bot は、Google Calendar、Gong、Salesforce から 1 週間分の情報を読み取り、各記録の商談、製品、時間、メモをあらかじめ入力します。下書きはカレンダーに基づいて作成します。カレンダーにない活動は、これまでどおり [GitLab SA Activity Form](https://sa-activity-e4fb10.gitlab.io/)に直接記録してください。
+
+**安全性を考慮した設計：**
+
+- SA Bot は、利用者本人のデータだけを扱います。
+- すべての記録について、内容を確認して承認する手順があります。承認するまで、何も記録されません。
+- 利用者情報を設定するまで、SA Bot は何も投稿しません。
+
+**利用を開始する：** セットアップには約 10 分かかり、その後は週に数分で済みます。
+
+1. [SA Bot の概要](https://sa-bot-0bfda5.gitlab.io/)に目を通してください（所要時間は約 2 分）。
+1. [SA Bot プロジェクト](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/amer-sa/amer-initiatives/sa-bot)をフォークまたはクローンしてください。
+1. [SA Bot のセットアップガイド（`GETTING_STARTED.md`）](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/amer-sa/amer-initiatives/sa-bot/-/blob/main/GETTING_STARTED.md)に従ってください。
+
+### 1 つのコマンドで SA Bot を実行する {#run-sa-bot-with-one-command}
+
+初回のセットアップを済ませれば、コマンド 1 つですべてが起動します。サーバーの起動、アプリを開く操作、Claude の起動を個別に行う必要はありません。
+
+1. `sa-bot` フォルダーで、最新版を取得し、SA Bot を起動してください。
+
+   ```shell
+   git pull
+   ./run.sh
+   ```
+
+1. このコマンド 1 つで、アプリサーバーが起動し（以前の実行で残った SA Bot サーバーがあれば置き換えます）、確認用のアプリがブラウザーで開き、Claude Code が起動して `/sa-draft` を実行します。
+1. 下書きが完成したら、アプリで **Run** を選択し、これまでどおり記録を確認して承認してください。
+1. Claude を終了すると、サーバーも停止します。
+
+### 補足 {#good-to-know}
+
+- `./run.sh` は Claude を VS Code 拡張機能上ではなくターミナルで実行するため、`sa-bot` フォルダーに対して Glean を登録する必要があります。`claude mcp list` で確認してください。
+- `.env` ファイルで `SA_PORT` を設定している場合、SA Bot はそのポートを使用します。
+- 別のプログラムがすでにそのポートを使用している場合、スクリプトはそのプログラムには手を加えず、どのプログラムが使用しているかを通知します。
+
+SA Bot について質問がある場合は、Slack の `#solutions-architects` チャンネルで問い合わせてください。
+
+<span id="6-faq"></span>
+
+## 7. FAQ {#7-faq}
 
 **1:1、チーム通話、コーヒーチャット、メンタリングなど、すべての社内会議を記録する必要がありますか？**
 
@@ -125,7 +170,7 @@ Non-Customer Facing → Activity Type の「Other」を選択 → Notes で説�
 
 **カレンダーと連携し、会議のたびに手動で記録しなくてもよくなりますか？**
 
-まだできません。その種の自動化（Salesforce に直接書き込む MCP 機能）は Phase 2 で計画されていますが、2026-09-07 時点では、承認を条件として今後数か月以内の予定です。機能リクエストは[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)で提出してください。
+AMER の SA は現在、[SA Bot](#6-draft-entries-from-your-calendar-with-sa-bot)を使ってカレンダーから記録の下書きを作成し、確認して承認できます。フォーム自体とカレンダーの直接連携は、Phase 2 で予定しています（Salesforce に直接書き込む MCP 機能）。2026-09-07 時点では、承認を条件として今後数か月以内の予定です。機能リクエストは[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)で提出してください。
 
 **New Business SA として割り当てられた商談の大半がドロップダウンに表示されないのはなぜですか？**
 
@@ -139,7 +184,9 @@ Salesforce で New Business SA が Account レベルではなく Opportunity レ
 
 体系的なフィードバック、バグ、機能リクエストには[SA Activity Form のフィードバック Issue](https://gitlab.com/gitlab-com/customer-success/solutions-architecture-leaders/sa-initiatives/-/work_items/744)を使用してください。特定の活動の記録方法についての簡単な質問には Slack スレッドを使用してください。
 
-## 7. 活動タイプ {#7-activity-types}
+<span id="7-activity-types"></span>
+
+## 8. 活動タイプ {#8-activity-types}
 
 以下は活動を記録するときに選択できる活動タイプです。従来のプロセスから引き継いだもので、一部の説明には Rattle のフィールド名が残っています。フォームのドロップダウンの変更に合わせて更新を進めています。
 

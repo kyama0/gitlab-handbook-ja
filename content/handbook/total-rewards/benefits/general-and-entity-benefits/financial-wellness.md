@@ -2,11 +2,11 @@
 title: ファイナンシャルウェルネス
 description: GitLab のチームメンバーが利用可能なファイナンシャルウェルネスリソースの概要。
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness/
-upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
-translated_at: "2026-09-15T06:06:55+09:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:21:32+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-11-18T11:28:22-08:00"
 ---
 
 ## ファイナンシャルウェルネス: あなたをしっかりカバーします
@@ -53,7 +53,7 @@ Modern Health プラットフォーム経由でサポートにアクセスして
 
 ---
 
-## SageView ファイナンシャルウェルネスプログラム
+## Creative Planning（旧 SageView）のファイナンシャルウェルネスプログラム
 
 専任のファイナンシャルウェルネススペシャリストが、GitLab の株式プランを含む、あなたの完全な財務状況を理解するのに役立ちます。重点分野は、投資資産、資産保護、所得保護、債務管理、エステートプランニングです。
 
@@ -68,20 +68,18 @@ Modern Health プラットフォーム経由でサポートにアクセスして
 **アクセス方法**
 
 1. **コンサルテーションのスケジュール:** [スケジューリングフライヤー](https://drive.google.com/file/d/1FNdQ4i-Jx-jUMjjcAR4Uw4ErB8hyODGN/view?usp=sharing)を使用
-2. **リソースへのアクセス:** 一般的な質問については [Sage411.com](https://sage411.com/) を訪問
-3. **ワークショップへの参加:** ファイナンシャルウェルネスワークショップに参加
-4. **資料の確認:** 定期的な SageView コミュニケーションにアクセス
+2. **ウェビナーへの参加:** [ファイナンシャルウェルネスのウェビナーに参加](https://creativeplanning.com/livewell/upcoming-webinars/)
+3. **資料の確認:** [Creative Planning の定期配信資料を確認](https://creativeplanning.com/livewell/)
 
 **始め方**
 
-- **プログラムの概要:** [キックオフプレゼンテーション](https://www.youtube.com/watch?v=2rsUjnjjYQ0) または [AMA セッション](https://www.youtube.com/watch?v=kKJii7YbFxY)
-- **セッションの詳細:** [プログラムの説明](https://drive.google.com/file/d/1rPc_7iCiZV33BMuoithOlaJefeWNYgAK/view?usp=sharing)
+- **セッションの詳細:** [プログラムの説明](https://drive.google.com/file/d/14dTxTeR0y_AYGRZ6ESMA1uJhkn6ZTxaF/view?usp=sharing)
 
 **重要な情報**
-SageView は教育的なガイダンスを提供しますが、特定の税務、法的、または財務アドバイスを提供することはできません。すべてのコンサルテーションは機密扱いです。
+Creative Planning は学習のためのガイダンスを提供しますが、個別の税務、法律、財務の助言はできません。すべての相談は機密扱いです。
 
 **ご質問は？**
-スケジューリングシステムを通じて SageView にお問い合わせいただくか、total-rewards@gitlab.com までご連絡ください。
+[予約システム](https://calendly.com/heather-mazander-creativeplanning/financial-wellness)を通じて Creative Planning にお問い合わせください。
 
 ---
 
@@ -148,9 +146,9 @@ SageView は教育的なガイダンスを提供しますが、特定の税務�
 ### 連絡先情報
 
 - **一般的な福利厚生:** [Compass](https://app.serval.com/new-request)
-- **Modern Health:** プラットフォーム経由
-- **SageView:** スケジューリングシステムを使用
-- **株式に関する質問:** Stock Admin チーム
+- **Modern Health:** help@joinmodernhealth.com
+- **Creative Planning（旧 SageView）:** [予約システム](https://calendly.com/heather-mazander-creativeplanning/financial-wellness)を使用
+- **株式に関する質問:** [Compass](https://app.serval.com/new-request)から Stock Admin チームに連絡
 
 ---
 

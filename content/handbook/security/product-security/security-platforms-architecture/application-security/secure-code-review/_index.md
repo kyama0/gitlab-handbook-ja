@@ -2,9 +2,9 @@
 title: "Secure Code Review"
 description: "GitLab で Application Security team がコードのセキュリティ脆弱性をレビューする方法。"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: 2026-05-22T09:57:56-04:00
-translated_at: "2026-05-22T21:16:58Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-17T22:59:57Z"
+translated_at: "2026-11-19T06:16:51+09:00"
 translator: claude
 stale: false
 ---
@@ -17,14 +17,14 @@ Secure code review とは、本番に到達する前に悪用可能な脆弱性�
 
 **これは AppSec の triage rotation／アドホック MR セキュリティレビューにおける推奨手法です**
 
-AppSec team は、マージリクエストのセキュリティ問題を自動的にレビューする実験的な AI 駆動のセキュリティレビューフローを運用しています。このフローは MR でサービスアカウントをメンションすることでトリガーされ、人間の AppSec エンジニアが開始しなくても多段階の分析を実行します。
+GitLab Duo の [Security Review Flow](security-review-flow/)は、マージリクエストにセキュリティ上の問題がないかを確認します。対象プロジェクトは順次拡大しており、それらのプロジェクトでは MR に対して自動で実行されます。レビュアーとして指名することもできます。実行される条件や使い方は、[Security Review Flow](security-review-flow/)のページを参照してください。
 
-使い方と設定の詳細は [Automated MR Security Reviewer](automated-mr-reviewer/) のページを参照してください。
+Security Review Flow は、MR でサービスアカウントをメンションすると実行される従来のカスタムフロー [Automated MR Security Reviewer](automated-mr-reviewer/)を置き換えます。カスタムフローを使っているプロジェクトでは、移行まで引き続き使用できます。
 
 ### 手動レビュー
 
 手動の AppSec レビューは、Application Security エンジニアが 2 つの方法で実施します。
 
-**Triage rotation reviews** は、アドホックでスケジュールされていない MR レビューです。フルでスケジュールされたレビューを必要としない MR についてセキュリティ観点での簡易チェックが必要な場合は、週次の [triage rotation](/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation/) の AppSec エンジニアに連絡する前に、[Automated MR Security Reviewer](automated-mr-reviewer/) を試してください。
+**トリアージローテーションでのレビュー**は、事前に日程を決めず、必要に応じて行う MR レビューです。日程を組んで全面的にレビューするほどではないものの、セキュリティの観点から簡単な確認が必要な MR では、まず [Security Review Flow](security-review-flow/)を試してください。まだ従来のフローを使っているプロジェクトでは、[従来の Automated MR Security Reviewer](automated-mr-reviewer/)を試してください。そのうえで、必要に応じて週次の[トリアージローテーション](/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation/)を担当する AppSec エンジニアに連絡してください。
 
 **Scheduled reviews** は、優先度の高い機能、インフラ変更、および [AppSec review process](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/) を通じて提出されたその他の業務を対象とします。これらのレビューがどのように構成され、文書化されるかについては [AppSec Review Template Process](/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process/) を参照してください。

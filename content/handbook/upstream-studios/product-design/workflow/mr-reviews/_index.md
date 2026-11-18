@@ -2,11 +2,11 @@
 title: マージリクエストレビュー
 description: "Product Designers がマージリクエスト（MR）をレビューする際のガイドライン。UX レビューまたは Product Design MR レビューとも呼ばれます。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/mr-reviews/
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-translated_at: "2026-10-24T21:14:17.168608+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-19T06:22:23+09:00"
 translator: codex
 stale: false
-lastmod: "2026-10-20T18:40:19+02:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 ## 要件 {#requirements}
@@ -50,7 +50,7 @@ MR レビューを他のタスクとバランスを取るのは難しい場合�
 
 MR で過負荷になっている場合は、すぐにマネージャーに知らせてください。チーム内の別の designer や、#ux_coworking Slack チャンネルで支援を依頼してください。Product Design Managers は、これらの発生をエスカレートしてモニタリングし、より広範な傾向を示しているかどうかを判断する必要があります。
 
-[GitLab Review Workload Dashboard](https://gitlab-org.gitlab.io/gitlab-roulette/?sortKey=stats.avg30&order=-1&hourFormat24=true&visible=reviewer%7CUX)と[Product Design MR レビューボリューム](/handbook/product/ux/performance-indicators/#product-design-mr-review-volume)を使用して MR レビューの分配状況をモニタリングしてください。
+[GitLab Review Workload Dashboard](https://gitlab-org.gitlab.io/gitlab-roulette/?sortKey=stats.avg30&order=-1&hourFormat24=true&visible=reviewer%7CUX)と[Product Design MR レビューボリューム](/handbook/upstream-studios/performance-indicators/)を使用して MR レビューの分配状況をモニタリングしてください。
 
 ## レビュー {#reviewing}
 
@@ -184,7 +184,7 @@ MR の説明に以下が含まれていることを確認してください。
 **レビュー後**:
 
 - [自分をレビュアーとして残し](https://docs.gitlab.com/development/code_review/#dogfooding-the-reviewers-feature)、[まとめのコメント付きでレビューを提出](https://docs.gitlab.com/user/project/merge_requests/reviews/#submit-a-review)し、適切なレビューステータスを選択してください。例： 変更が必要な場合は `Request changes` を選択してください。
-- Minimal Valuable Change（MVC）から逸脱する未解決の UX 上の懸念事項について、フォローアップ Issue を作成し、`Deferred UX` としてラベル付けしてください（[UX ラベル](/handbook/product/ux/operations/#ux-labels)に関する詳細）。
+- Minimal Valuable Change（MVC）から逸脱する未解決の UX 上の懸念事項について、フォローアップ Issue を作成し、`Deferred UX` としてラベル付けしてください（[UX ラベル](/handbook/upstream-studios/operations/#ux-labels)に関する詳細）。
 
 **作成者とのフォローアップ**:
 
@@ -197,4 +197,4 @@ MR の説明に以下が含まれていることを確認してください。
 
 ## パフォーマンス指標 {#performance-indicator}
 
-[Product Design マージリクエスト（MR）レビューボリューム](/handbook/product/ux/performance-indicators/#product-design-mr-review-volume)は、UX 部門の主要パフォーマンス指標（KPI）として追跡されています。
+[Product Design マージリクエスト（MR）レビューボリューム](/handbook/upstream-studios/performance-indicators/)は、UX 部門の主要パフォーマンス指標（KPI）として追跡されています。

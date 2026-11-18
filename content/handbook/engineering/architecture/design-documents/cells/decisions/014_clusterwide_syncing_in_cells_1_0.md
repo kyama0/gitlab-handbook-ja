@@ -3,11 +3,11 @@ owning-stage: "~devops::tenant scale"
 title: "Cells ADR 014: Protocell ではクラスター全体の同期を行わない"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/decisions/014_clusterwide_syncing_in_cells_1_0/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-08-21T08:26:37+02:00"
+lastmod: "2026-11-18T13:58:07+13:00"
 ---
 
 ## コンテキスト
@@ -22,7 +22,9 @@ lastmod: "2025-08-21T08:26:37+02:00"
    良い例として [VisibilityLevel](https://gitlab.com/gitlab-org/gitlab/-/blob/5ae43dface737373c50798ccd909174bcdd9b664/lib/gitlab/visibility_level.rb#L25-27) があります。
 1. `application_settings` のような Cell 設定テーブルは独立して設定できます。
    [Terraform](https://gitlab.com/gitlab-org/gitlab/-/issues/505685) のような外部のシングルソースオブトゥルースが、Cell の各[リング](../infrastructure/_index.md#rings)に対して目標値を伝播します。
-   これをサポートするために、各 Cell 設定テーブルに内部 API が必要です。
+   これをサポートするために、各 Cell 設定テーブルに内部 API が必要です。詳しい設計は、
+   [リングベースの設定同期のプロポーザル](../proposal-admin_area_setting_sychronization_in_cells.md)を
+   参照してください。
 
 ## 長所
 
@@ -52,7 +54,8 @@ lastmod: "2025-08-21T08:26:37+02:00"
 
 #### application_settings
 
-関連 Issue: [issue 505685](https://gitlab.com/gitlab-org/gitlab/-/issues/505685) を参照してください。
+関連する [Issue 505685](https://gitlab.com/gitlab-org/gitlab/-/issues/505685)と、
+[リングベースの設定同期のプロポーザル](../proposal-admin_area_setting_sychronization_in_cells.md)を参照してください。
 
 要約すると、外部のシングルソースオブトゥルースを使用して各 Cell の Application Settings を設定します。
 

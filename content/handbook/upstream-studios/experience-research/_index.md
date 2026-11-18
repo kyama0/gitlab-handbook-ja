@@ -2,9 +2,9 @@
 title: "Upstream Studios の Experience Research"
 description: "私たちは Brand から Product まで、何を構築し、どのように位置づけるかに情報を与えるエンドツーエンドのインサイトを提供し、すべての段階の意思決定を形作ります。"
 upstream_path: /handbook/upstream-studios/experience-research/
-upstream_sha: 2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb
-lastmod: "2026-10-07T09:03:11-04:00"
-translated_at: "2026-10-11T21:08:19+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T08:57:11-08:00"
+translated_at: "2026-11-19T06:22:23+09:00"
 translator: codex
 stale: false
 ---
@@ -256,8 +256,8 @@ Experience Research チームはいつでも支援します! リサーチに関�
 
 #### UX Research チームが責任を持つ測定とプロセス {#measures-and-processes-the-ux-research-team-is-responsible-for}
 
-- [User Satisfaction Plus (USAT+) アンケート](/handbook/product/ux/performance-indicators/usat-plus/)
-  - [System Usability Scale](/handbook/product/ux/performance-indicators/system-usability-scale/)
+- [User Satisfaction Plus (USAT+) アンケート](/handbook/upstream-studios/performance-indicators/usat-plus/)
+  - [System Usability Scale](/handbook/upstream-studios/performance-indicators/system-usability-scale/)
   - [USAT+ 回答者アウトリーチ](/handbook/product/product-processes/#usat-responder-outreach)
 - [リサーチベロシティの追跡](/handbook/upstream-studios/experience-research/tracking-research-velocity/)
 - [ゴールド、シルバー、ブロンズの UX リサーチプロジェクトの追跡](/handbook/upstream-studios/experience-research/tracking-research-projects/)

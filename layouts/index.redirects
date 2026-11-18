@@ -354,6 +354,15 @@
 # Redirect legacy ProdSecEng requirements page to new ProdSec to Product process - remove 2026-06-25
 /handbook/security/product-security/security-platforms-architecture/product-security-engineering/product-security-requirements/ /handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/ 301
 
+# Self-Managed Database Experience team renamed to Self-Managed Database - remove 2027-02-17
+/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/ /handbook/engineering/data-engineering/database-excellence/self-managed-database/ 301
+
+# Performance Indicators and Operations moved to upstream-studios - remove 2027-07-01
+/handbook/product/ux/performance-indicators/ /handbook/upstream-studios/performance-indicators/ 301
+/handbook/product/ux/performance-indicators/* /handbook/upstream-studios/performance-indicators/:splat 301
+/handbook/product/ux/operations/ /handbook/upstream-studios/operations/ 301
+/handbook/product/ux/operations/* /handbook/upstream-studios/operations/:splat 301
+
 # Technical Writing moved from UX to Marketing - remove 2027-08-05
 /handbook/product/ux/technical-writing/ /handbook/marketing/technical-writing/ 301
 /handbook/product/ux/technical-writing/* /handbook/marketing/technical-writing/:splat 301

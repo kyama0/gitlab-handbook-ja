@@ -1,11 +1,11 @@
 ---
 title: "GitLab Dedicated グループ"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/
-upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
-translated_at: "2026-09-17T21:03:55+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: codex
 stale: false
-lastmod: "2026-09-16T15:42:58-06:00"
+lastmod: "2026-11-17T16:36:32-07:00"
 ---
 
 ![GitLab Dedicated グループロゴ](/images/engineering/infrastructure-platforms/gitlab-dedicated/dedicated_team_logo.png)
@@ -133,8 +133,10 @@ PCL は以下の要件が満たされた場合に手動で実施されます：
 
 | プラットフォーム | 日程 | タイプ | 理由 |
 |-----------------------------------|----------------------------------------------|--------|---------------------------------------------------|
-| Dedicated for Gov | 2026-07-20 01:00 UTC -> 2026-07-27 01:00 UTC | Hard | 2026 R&D Summit（チームメンバーの可用性低下） |
-| Dedicated Commercial | 2026-07-20 01:00 UTC -> 2026-07-27 01:00 UTC | Hard | 2026 R&D Summit（チームメンバーの可用性低下） |
+| Dedicated for Gov | 2026-11-20 15:00 UTC -> 2026-11-30 15:00 UTC | Hard | 2026 年の米国の感謝祭（対応可能なチームメンバーが少ないため） |
+| Dedicated for Gov | 2026-12-18 15:00 UTC -> 2027-01-08 15:00 UTC | Hard | 2026 年末の休暇（対応可能なチームメンバーが少ないため） |
+| Dedicated Commercial | 2026-11-24 01:00 UTC -> 2026-12-01 01:00 UTC | Hard | 2026 年の米国の感謝祭（対応可能なチームメンバーが少ないため） |
+| Dedicated Commercial | 2026-12-22 01:00 UTC -> 2027-01-12 01:00 UTC | Hard | 2026 年末の休暇（対応可能なチームメンバーが少ないため） |
 
 時間が指定されていない日程は 09:00 UTC に始まり、翌日の 09:00 UTC に終了します。
 

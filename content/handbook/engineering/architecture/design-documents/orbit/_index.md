@@ -10,9 +10,9 @@ owning-stage: "~devops::analytics"
 participating-stages: ["~devops::secure", "~devops::platforms", "~devops::ai-powered"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/orbit/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-27T13:55:29-04:00"
-translated_at: "2026-11-01T04:36:39+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+lastmod: "2026-11-18T16:03:00Z"
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: codex
 stale: false
 ---
@@ -78,8 +78,8 @@ flowchart LR
 |---|---|
 | リポジトリ | [gitlab-org/orbit/knowledge-graph](https://gitlab.com/gitlab-org/orbit/knowledge-graph) |
 | ユーザードキュメント | [docs.gitlab.com/orbit](https://docs.gitlab.com/orbit/) |
-| ロードマップ | [Orbit ロードマップ](https://gitlab-org.gitlab.io/orbit/knowledge-graph/roadmap/) |
-| 動画とデモ | [Orbit コンテンツ](https://gitlab-org.gitlab.io/orbit/knowledge-graph/content/) |
+| 近日公開 | [Orbit Next](https://gitlab-org.gitlab.io/orbit/knowledge-graph/next) |
+| 動画とデモ | [GitLab Orbit について](https://gitlab-org.gitlab.io/orbit/knowledge-graph/about) |
 | チーム | [Orbit チーム](https://gitlab-org.gitlab.io/orbit/knowledge-graph/team/) |
 | 主要エピック | [Orbit as a Service - GA](https://gitlab.com/groups/gitlab-org/-/work_items/19744) |
 | プログラムページ | [社内ハンドブック](https://internal.gitlab.com/handbook/engineering/r-and-d-pmo/programs/knowledge-graph-ga/) |

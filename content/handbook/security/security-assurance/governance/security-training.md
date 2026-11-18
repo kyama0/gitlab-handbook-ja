@@ -2,11 +2,11 @@
 title: "セキュリティトレーニング"
 description: "セキュリティトレーニングに関するすべて。どこで見つけられるか、どう作成するかを含む。"
 upstream_path: /handbook/security/security-assurance/governance/security-training/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T12:27:15.686378+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-19T06:16:51+09:00"
 translator: claude
 stale: false
-lastmod: "2026-11-04T20:19:30+01:00"
+lastmod: "2026-11-18T18:20:20Z"
 ---
 
 
@@ -22,7 +22,7 @@ Security Assurance の詳細については、[Security Assurance](/handbook/sec
 
 ## セキュリティ意識向上トレーニング {#security-awareness-training}
 
-GitLab のチームメンバーがおそらく最もよく知っているのは[セキュリティ意識向上トレーニング](/handbook/security/security-assurance/governance/sec-awareness-training/)で、これは [ProofPoint](https://gitlab.ws01-securityeducation.com/)を介して提供される、ハンドブックファーストの GitLab 向けにカスタマイズされたトレーニング + 年次ポリシーレビューです。GitLab はオンボーディングプロセスの一部として、すべての新入社員に[新入社員向けセキュリティオリエンテーショントレーニング](/handbook/security/security-assurance/governance/sec-awareness-training/#when-will-security-awareness-training-occur)を完了することを求め、その後も毎年トレーニングを受講することを求めています。
+GitLab のチームメンバーがおそらく最もよく知っているのは[セキュリティ意識向上トレーニング](/handbook/security/security-assurance/governance/sec-awareness-training/)です。ハンドブックファーストで GitLab 向けにカスタマイズしたトレーニングと年次ポリシーレビューを組み合わせ、LevelUp で提供しています。GitLab はすべての新入社員に、オンボーディングの一環として[新入社員向けセキュリティオリエンテーショントレーニング](/handbook/security/security-assurance/governance/sec-awareness-training/#when-will-security-awareness-training-occur)を修了し、その後も毎年トレーニングを受講するよう求めています。
 
 GitLab のセキュリティ意識向上トレーニングは、[GitLab Security](/handbook/security/)の [Governance Program](_index.md)によって開発されています。トレーニングの目的は次のとおりです。
 
@@ -44,9 +44,8 @@ GitLab のセキュリティ意識向上トレーニングは、[GitLab Security
 
 トレーニングの背後にあるチームに関与し、フィードバックを提供したり、トレーニング内容に関する質問をしたりすることを強くお勧めします。以下の方法でできます。
 
-1. 新入社員トレーニング向けの四半期ごとにレビューされる GitLab [フィードバック Issue](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance/security-awareness-training/security-awareness-training-program/-/issues/13)。
-1. 年次セキュリティ意識向上トレーニングの[フィードバック Issue](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance/security-awareness-training/security-awareness-training-program/-/issues/16)。
-1. security-training@gitlab.com にメールを送信する。
+1. トレーニング内容についての質問やフィードバックは、Slack の [#security_help](https://gitlab.slack.com/archives/C094L6F5D2A) チャンネルに投稿してください。
+1. アクセスや修了に関する問題など、LevelUp 自体のサポートが必要な場合は、Slack の [#fy27-levelup-support](https://gitlab.slack.com/archives/C08JXLMH5K4) チャンネルで問い合わせてください。
 
 ## セキュアコーディングトレーニング {#secure-coding-training}
 
@@ -88,7 +87,7 @@ GitLab 向けのセキュリティトレーニングコースを開発するこ�
 - ビジネスパートナーシップ、特定の顧客、特定の会社のイニシアチブ、その他の関連する非公開情報を含むセキュリティ関連のコンテンツは、公開アクセス可能なトレーニングコンテンツに含めることはできません。良い例は、GitLab が政府機関と仕事をしている場合です。その機関自体は何が公開できるかについて非常に厳格なルールを持っているかもしれず、GitLab 自身の基準では公開とみなされるものが、その機関の基準の一部ではないかもしれません。
 - 内部のプライベートコンテンツへのリンクを含むハンドブックエントリのように、内部のプライベートコンテンツを指す公開コンテンツを *持つことができます*。ただし、公開コンテンツ内でそのプライベートコンテンツを *引用してはいけません*。
 
-分類、公開対非公開のデータ、公開トレーニングコンテンツに含めることができるものについての質問があれば、お問い合わせください。`#security` Slack チャンネルでお問い合わせいただけます。
+データの分類、公開と非公開の区別、公開トレーニングコンテンツに含められる内容について質問があれば、Slack の `#security_help` チャンネルで私たちにお問い合わせください。
 
 ### 私たちのビジョン {#our-vision}
 

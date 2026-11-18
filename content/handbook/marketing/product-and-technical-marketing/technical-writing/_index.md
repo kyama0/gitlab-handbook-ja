@@ -2,11 +2,11 @@
 title: "Technical Writing"
 description: "Technical Writing チームは、GitLab のエンジニア、Product Managers、デザイナー、UX Researchers と連携し、機能や設計上の決定を、ユーザーのニーズに応える直感的で使いやすい UI テキストと、拡張可能なドキュメントに落とし込みます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/technical-writing/"
-upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
-translated_at: "2026-11-16T21:06:51+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: claude
 stale: false
-lastmod: "2026-11-16T14:19:44Z"
+lastmod: "2026-11-18T08:57:21-08:00"
 ---
 
 Technical Writers は、ユーザーが GitLab の機能を理解し、操作し、導入する方法を左右するコンテンツに
@@ -65,6 +65,14 @@ Technical Writing チームは、[ドキュメントサイト](https://docs.gitl
 
 - [Technical Writers](/job-description-library/product/technical-writer/)
 - [Technical Writing Managers](/job-description-library/product/technical-writing-manager/)
+
+### ヘッドカウント計画 {#headcount-planning}
+
+各 Technical Writer は複数のステージグループを支援します。
+
+- Technical Writer 1 人に対してステージグループ 3 つ
+- Technical Writer 1 人に対してエンジニア約 21 人
+- マネージャー 1 人に対して直属の部下約 7 人
 
 ## 連絡先 {#contact-us}
 

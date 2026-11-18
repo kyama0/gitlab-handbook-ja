@@ -2,9 +2,9 @@
 title: "Database Excellence ステージ"
 description: "Database Excellence セクションは、GitLab のデータベースがスケールにおいて確実に稼働することを保証しながら、すべてのデータストアにわたるデータアーキテクチャ、配置、ライフサイクル管理についてチームが情報に基づいた意思決定を行えるようにします。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/
-upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
-lastmod: "2026-11-16T16:52:11+13:00"
-translated_at: "2026-11-16T21:08:18+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-19T08:22:09+13:00"
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: codex
 stale: false
 ---
@@ -33,9 +33,11 @@ GitLab.com と GitLab を自ら運用するお客様の両方で、GitLab のデ
 
 {{< group-by-slugs alexander-sosna amritasinha l.rosa mattkasa maximeorefice panoskanell praba.m7n vporalla >}}
 
-### Self-Managed Database Experience {#self-managed-database-experience}
+<span id="self-managed-database-experience"></span>
 
-[Self-Managed Database Experience](/handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/)グループは、Self-Managed のお客様に、データベースの状態の可視性、より高速なデータベースマイグレーション、アップグレードにかかる時間の予測を提供します。
+### Self-Managed Database {#self-managed-database}
+
+[Self-Managed Database](/handbook/engineering/data-engineering/database-excellence/self-managed-database/)グループは、Self-Managed のお客様に、データベースの状態の可視性、より高速なデータベースマイグレーション、アップグレードにかかる時間の予測を提供します。
 
 優先事項:
 

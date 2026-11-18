@@ -2,9 +2,9 @@
 title: "GitLab Ireland Ltd"
 description: "アイルランドのチームメンバー向けの GitLab の福利厚生を見つけよう"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-lastmod: "2026-10-14T15:43:05-07:00"
-translated_at: "2026-10-19T22:50:18+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+lastmod: "2026-11-12T15:26:14-05:00"
+translated_at: "2026-11-18T21:21:32+00:00"
 translator: claude
 stale: false
 ---
@@ -530,6 +530,13 @@ TravelHub を通じて、自転車と公共交通機関の税金節約を利用�
 - **会社印の請求**: People Connect 1 Password 内の「Company Stamp Ireland」を参照
 
 ## ジェンダー賃金格差の報告 {#gender-pay-gap-reporting}
+
+<details markdown="1">
+<summary>2026</summary>
+
+- [2026 年アイルランド・ジェンダー賃金格差レポート](https://drive.google.com/file/d/19Uu6vrHZ5a0Khkh5BjdoAenKZdwnwhfr/view?usp=drive_link)
+
+</details>
 
 <details markdown="1">
 <summary>2025</summary>

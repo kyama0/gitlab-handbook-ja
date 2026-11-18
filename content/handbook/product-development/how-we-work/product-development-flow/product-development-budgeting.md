@@ -1,9 +1,9 @@
 ---
 title: プロダクト開発の予算策定プロセス
 upstream_path: /handbook/product-development/how-we-work/product-development-flow/product-development-budgeting/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-22T14:47:44+02:00"
-translated_at: "2026-05-22T00:00:00Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T08:57:11-08:00"
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: claude
 stale: false
 ---
@@ -14,7 +14,7 @@ stale: false
 
 | DRI | タスク |
 | --- | --- |
-| [プロダクトマネージャー](/job-description-library/product/product-manager/) | プロダクトマネージャーは、将来の投資候補について事前に計画を立てます。これは [`potential investment` Issue テンプレートを使って Issue を作成すること](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=Investment-Case)で、すぐに実行可能なビジネスケースのリストを事前に用意するという形を取ります。これらの提案を作成する際は、[UX デザイナー](/handbook/product/ux/performance-indicators/#product-designer-gearing-ratio)、[UX リサーチャー](/handbook/product/ux/performance-indicators/#ux-researcher-gearing-ratio)、[テクニカルライター](/handbook/product/ux/performance-indicators/#technical-writer-gearing-ratio) など、さまざまなギアリング比率を考慮します。 |
+| [プロダクトマネージャー](/job-description-library/product/product-manager/) | プロダクトマネージャーは、将来の投資候補について事前に計画を立てます。これは [`potential investment` Issue テンプレートを使って Issue を作成すること](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=Investment-Case)で、すぐに実行可能なビジネスケースのリストを事前に用意するという形を取ります。これらの提案を作成する際は、[product designer](/handbook/upstream-studios/operations/#product-design)、[experience researcher](/handbook/upstream-studios/operations/#ux-research)、[Tech Writer](/handbook/marketing/product-and-technical-marketing/technical-writing/#headcount-planning) など、さまざまなギアリング比率を考慮します。 |
 | プロダクトマネージャー | Issue テンプレートを使用して非公開の Issue を作成し、適切な開発ディレクター、UX のステーブルカウンターパートなどを必要に応じてタグ付けすることで、PM チームおよび Engineering チームと協働します。 |
 | セクションリーダー | セクション内の提案から精査された次の投資要望について、優先順位を付けたリストを維持します。 |
 

@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T11:47:24+01:00"
-translated_at: "2026-11-17T21:28:02.744958+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T14:43:04+01:00"
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: claude
 stale: false
 ---
@@ -48,8 +48,9 @@ Rails の組織を、テーブルとトークンでは ID、URL ではパスで�
 - 組織の値に、それ以外の一意性制約を課してはいけません。[組織の統合](#organization-merges)では、存続する組織が複数のネームスペースを持つ必要があるためです。
 - 新しいアンカー型は、新たな `entity_type` の値であり、スキーマの変更は不要です。
 - 別の **課金アンカー** である `(billing_entity_type, billing_entity_id)` のペアが、使用量の支払者を識別します。
-  Artifact Registry は、保存したペアの値を解釈せず、すべての課金イベントに記載し、ペアの書き込み時にその型だけを確認します。
-  Organizations v1 ではトップレベルグループであり、`('top_level_group', '<root_namespace_id>')` です。支払者が変わる場合、Rails は後から置き換えられます（[課金アンカーの変更](#namespace-lifecycle)を参照）。
+  Artifact Registry は、保存したペアの値を解釈せず、すべての課金イベントに記載します。ペアの書き込み時に確認するのは、その型と、型が要求する ID の形式だけです。
+  Organizations v1 の課金アンカーはトップレベルグループであり、`('top_level_group', '<root_namespace_id>')` です。支払者が変わる場合、Rails は後から置き換えられます（
+  [課金アンカーの変更](#namespace-lifecycle)を参照）。
   Artifact Registry は、自身が列挙する支払者型だけを受け付けるため、課金が組織に移行する場合の組織など、新しい支払者型の追加には Artifact Registry の変更が必要です。
 - プラットフォームは、ネームスペースの作成時に、すべてのアンカーと課金の値を提供します。
   いずれにもスキーマのデフォルトを設けず、Artifact Registry は、受け付ける支払者型を除いて、外部のアイデンティティモデルと課金モデルから独立したままです。
