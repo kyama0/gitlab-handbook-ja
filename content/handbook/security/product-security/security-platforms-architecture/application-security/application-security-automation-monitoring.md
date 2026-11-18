@@ -1,9 +1,9 @@
 ---
 title: "Application Security - 自動化とモニタリング"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/application-security-automation-monitoring/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-22T09:57:56-04:00"
-translated_at: "2026-05-22T00:00:00Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-17T22:59:57Z"
+translated_at: "2026-11-19T06:16:51+09:00"
 translator: claude
 stale: false
 ---
@@ -12,7 +12,8 @@ stale: false
 
 Application Security チームは、GitLab のセキュリティを確保するために多数の自動化イニシアチブを活用しています。すべてが AppSec チームの作成によるものではありませんが、いずれも私たちにとって有用です。項目に特定の順序はありません。
 
-- [Security MR Reviewer Flow](/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/automated-mr-reviewer/) は、GitLab プロジェクトのマージリクエストに対して AI 駆動のセキュリティコードレビューを実行できる実験的な自動アプリケーションセキュリティレビューフローです。
+- [Security Review Flow](/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/security-review-flow/)は、マージリクエストにセキュリティ上の問題がないかを確認する GitLab Duo のフローです。一部のプロジェクトで MR に対して自動で実行され、下記の従来の Security MR Reviewer Flow を順次置き換えます。
+- [従来の Security MR Reviewer Flow](/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/automated-mr-reviewer/)は、GitLab プロジェクトのマージリクエストに対して AI 駆動のセキュリティコードレビューを実行できる実験的な自動アプリケーションセキュリティレビューフローです。
 - [Gem Checker](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/gem-checker) は、GitLab で使用している gem に関する RubyGems.org 上の不審なアクティビティを監視します
 - [sec-appsec-mr-alerts](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/tooling/sec-appsec-mr-alerts) は、私たちのプロジェクトで使用している依存関係を変更する MR を特定します
 - [Public MR Confidential Issue Detector](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/tooling/public-mr-confidential-issue-detector/) は、本来 security ミラーで作成されるべきだったパブリックなマージリクエストを監視します

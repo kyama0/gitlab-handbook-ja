@@ -8,9 +8,9 @@ coach:
 approvers: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/decisions/027_cross_cloud_dependency_allow_list/"
-upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
-lastmod: "2026-11-16T13:03:38+13:00"
-translated_at: "2026-11-16T21:09:50+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T19:47:24+13:00"
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: codex
 stale: false
 ---
@@ -55,12 +55,15 @@ ADR-016 は、コスト、レジリエンス、明確な分離のために、Cel
 | AWS Cell &rarr; Secrets Manager | GCP にのみデプロイされています | Secrets Manager | [Cellular Target](https://gitlab.com/groups/gitlab-org/-/work_items/17846) |
 | AWS S3 &rarr; GCP Elastic Agent (OIDC workload identity) | 中央運用の Elasticsearch への Cells ログ取り込み | Security Logging | クラウドごとのログシンク（正当化される場合 / 時期） |
 | AWS Cell &rarr; GCP GitLab Observability Backend (GOB) | ハードコードされた `observe.gitlab.com` URL（`lib/gitlab/observability.rb`）の背後にある単一の中央ホスト型バックエンド。テレメトリはプロジェクト／グループをキーとして外部に保存され、OAuth のスコープは最上位の親グループごとに設定されるため、Cell や Org を認識しない外部 SaaS のように動作します | Observability | Cell ごとの Observability Backend。[gitlab#606874](https://gitlab.com/gitlab-org/gitlab/-/work_items/606874)で追跡中 |
+| AWS Cell &rarr; GCP iam-auth | GATE は GitLab の新しい認証スタックで、iam-auth はその OAuth および OIDC プロバイダーです。OAuth クライアント、トークン、署名鍵は GitLab.com 全体で共有するため、Runway（GKE、us-east1）上の 1 つの iam-auth デプロイメントが Legacy Cell とすべての Cell に対応します。Rails は共有サービストークンを使って iam-auth の gRPC API を呼び出し、OAuth アプリケーションのレプリケーション、サインインと同意、トークンの失効を行います。Rails は HTTPS 経由で iam-auth の公開署名鍵（JWKS）も取得してキャッシュし、JWT をローカルで検証します。現在、Runway は Cloudflare からのトラフィックのみを受け入れるため、トラフィックは Cloudflare を経由してパブリックインターネットを通過します。 | GATE Infra | クラウドごとの iam-auth デプロイメント（決定保留中、[gitlab#640378](https://gitlab.com/gitlab-org/gitlab/-/work_items/640378)）。決定にあたっては、iam-auth が GCP 上の YugabyteDB プライマリに書き込む点に対処する必要があります。[gitlab#613464](https://gitlab.com/gitlab-org/gitlab/-/work_items/613464)のホップ分析を参照してください。 |
 
 この表にない依存関係は、単一クラウド内に封じ込める必要があります。
 
 ### ネイティブなクロスクラウドレプリケーションとの関係
 
-**ネイティブデータレプリケーション**によってクラウド間で単一の論理サービスを維持するコンポーネント（たとえば、1 つの GitLab.com realm を維持するために YugabyteDB のクロスクラウドレプリケーションを使う GATE/Auth スタック）は、許可リストのエントリでは**ありません**。これは実行時のクロスクラウド呼び出しを行いません。各 Cell はクラウド内のレプリカとのみ通信します。これは、真に共有されるステートフルなケースに推奨されるパターンであり、ADR-016 に準拠したままです。許可リストは、**実行時のクロスクラウド依存関係**のみに限定されます。
+**ネイティブデータレプリケーション**によってクラウド間で単一の論理サービスを維持するコンポーネントは、実行時のクロスクラウド呼び出しが発生しないため、許可リストの**対象外**です。たとえば、GATE の L1 設計では AWS に YugabyteDB の読み取りレプリカを追加し、Cell 内の iam-data-access がクラウドをまたぐことなく IAM データを読み取れるようにします（[gitlab#613464](https://gitlab.com/gitlab-org/gitlab/-/work_items/613464)）。この設計は [ADR-016](016_cross_cloud_dependecies.md) に準拠しています。レプリカから GCP の us-east1 にあるプライマリクラスター（L0）への書き込み転送は YugabyteDB 自体が行うため、Cell からの呼び出しは発生しません。この構成は、実際に共有されるステートフルなサービスで推奨されます。
+
+許可リストは、**実行時のクロスクラウド依存関係**のみに限定されます。
 
 ## 結果
 

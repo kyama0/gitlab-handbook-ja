@@ -1,15 +1,15 @@
 ---
-title: "Self-Managed Database Experience チーム"
-description: "Self-Managed Database Experience チームは、Self-Managed のお客様にデータベースの状態を把握する手段、より高速なデータベースマイグレーション、アップグレードにかかる時間の予測を提供します。"
-upstream_path: /handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/
-upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
-lastmod: "2026-11-16T16:52:11+13:00"
-translated_at: "2026-11-16T21:08:18+00:00"
+title: "Self-Managed Database チーム"
+description: "Self-Managed Database チームは、Self-Managed のお客様にデータベースの状態を把握する手段、より高速なデータベースマイグレーション、アップグレードにかかる時間の予測を提供します。"
+upstream_path: /handbook/engineering/data-engineering/database-excellence/self-managed-database/
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-19T08:22:09+13:00"
+translated_at: "2026-11-18T21:24:36+00:00"
 translator: codex
 stale: false
 ---
 
-Self-Managed Database Experience チームは、[Database Health](/handbook/engineering/data-engineering/database-excellence/database-health/) チームの Self-Managed を担当していた部分と、別の Database Migrations チームが担当する予定だったアップグレードおよびマイグレーションの業務を統合し、2026 年 9 月に発足しました。
+Self-Managed Database チームは、[Database Health](/handbook/engineering/data-engineering/database-excellence/database-health/) チームの Self-Managed を担当していた部分と、別の Database Migrations チームが担当する予定だったアップグレードおよびマイグレーションの業務を統合し、2026 年 9 月に発足しました。2026 年 11 月まで、このチームは Self-Managed Database Experience と呼ばれ、GitLab のグループラベルは `group::database health` でした。
 
 ## 対象範囲 {#scope}
 
@@ -80,14 +80,14 @@ Self-Managed Database Experience チームは、[Database Health](/handbook/engi
 1. 最終計画
     1. EM: 現在のマイルストーンから持ち越される可能性の高い Issue を追加します。
     1. EM と PM: ウェイトに基づいて Issue を追加または削除します。
-    1. EM: [次のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/11667448?milestone_title=Upcoming&label_name[]=group%3A%3Adatabase%20health)で Issue に優先順位を付けます。
+    1. EM: [次のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/11667448?milestone_title=Upcoming&label_name[]=group%3A%3Aself-managed%20database)で Issue に優先順位を付けます。
     1. EM と PM: 現在のマイルストーンの最後のチーム同期ミーティングで計画を提示します。
 
 #### 開発フェーズ {#development-phase}
 
 このフェーズは、新しいマイルストーンの初日に始まります。
 
-- エンジニアは、関心と経験に基づき、[現在のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/11648246?milestone_title=Started&label_name[]=group%3A%3Adatabase%20health)の Issue を優先順位に従って自分に割り当てます。
+- エンジニアは、関心と経験に基づき、[現在のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/11648246?milestone_title=Started&label_name[]=group%3A%3Aself-managed%20database)の Issue を優先順位に従って自分に割り当てます。
 - Issue が残っていない場合、エンジニアはまず他のエンジニアが担当している Issue を手伝います。手伝うことがなければ EM に伝え、EM が次のマイルストーンから Issue を追加します。
 
 #### マイルストーンのコミットメント {#milestone-commitment}
@@ -109,7 +109,7 @@ Self-Managed Database Experience チームは、[Database Health](/handbook/engi
 
 私たちは予測可能性よりも速度を重視します。見積もりは、MVC に集中し、見落としを見つけるのに役立ちます。予測可能性の目標は 90% ではなく 70% です。
 
-[ウェイト未設定の今後の Issue](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=group::database+health&weight=None&milestone_title=Upcoming)を参照してください。
+[ウェイト未設定の今後の Issue](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=group::self-managed+database&weight=None&milestone_title=Upcoming)を参照してください。
 
 #### 見積もりの例 {#estimation-examples}
 

@@ -1,15 +1,15 @@
 ---
 title: "System Usability Scale (SUS)"
 description: "System Usability Scale（SUS）は、プロダクトの長期的なユーザビリティを測定するために使用するパフォーマンス指標です。"
-upstream_path: /handbook/product/ux/performance-indicators/system-usability-scale/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:13:04Z"
+upstream_path: /handbook/upstream-studios/performance-indicators/system-usability-scale/
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:24:36+00:00"
 translator: claude
 stale: false
-lastmod: 2026-06-15T07:58:19-05:00
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
-[System Usability Scale](https://measuringu.com/sus/)（SUS）は、コンピューターインターフェースのユーザビリティ認識を測定するために使用される標準化された指標です。現在および過去の SUS スコアは、[UX 部門パフォーマンス指標](/handbook/product/ux/performance-indicators/#system-usability-scale-sus-score)で見つけることができます。
+[System Usability Scale](https://measuringu.com/sus/)（SUS）は、コンピューターインターフェースのユーザビリティ認識を測定するために使用される標準化された指標です。現在および過去の SUS スコアは、[Upstream Studios のパフォーマンス指標](/handbook/upstream-studios/performance-indicators/)で確認できます。
 
 SUS は合計 10 の質問で構成され、これらは肯定的および否定的な方向で構成されています:
 
@@ -36,7 +36,7 @@ SUS は合計 10 の質問で構成され、これらは肯定的および否定
 
 ## SUS と GitLab
 
-GitLab では、FY20-Q1 に System Usability Scale を採用しました。SaaS と Self-Managed の両方のユーザーに、四半期ごとに 2 回調査を展開しています。これにより、プロダクトの全体的なユーザビリティを理解し、時間の経過に伴う変化を追跡できました。SUS を[UX 部門の KPI](/handbook/product/ux/performance-indicators/#system-usability-scale-sus-score)として依存し始め、スコアを改善するために複数の OKR 関連の取り組みを進めています。
+GitLab では、FY20-Q1 に System Usability Scale を採用しました。SaaS と Self-Managed の両方のユーザーに、四半期ごとに 2 回調査を展開しています。これにより、プロダクトの全体的なユーザビリティを理解し、時間の経過に伴う変化を追跡できました。SUS を [Upstream Studios の KPI](/handbook/upstream-studios/performance-indicators/)として活用し始め、スコアを改善するために複数の OKR 関連の取り組みを進めています。
 
 この強調により、SUS が厳格で持続可能な方法で展開されることが重要です。
 
@@ -160,7 +160,7 @@ Let me know if you have any questions or if you're interested in pursuing some o
 
 ## SUS 回答者アウトリーチ
 
-SUS 調査の最後に、回答者が GitLab チームメンバーと自分の回答について話し合うことに関心があるかどうかを尋ねる質問を含めています。プロダクトマネージャー（PM）とプロダクトデザイナー（PD）がフォローアップインタビューを行って、回答者が経験しているユーザビリティの問題をよりよく理解できるようにプロセスを作成しました。このアウトリーチはチームメンバーにとってオプションですが、強く推奨されます。プロセスの詳細については、[SUS Responder Outreach ページ](/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach/)を参照してください。
+SUS 調査の最後に、回答者が GitLab チームメンバーと自分の回答について話し合うことに関心があるかどうかを尋ねる質問を含めています。プロダクトマネージャー（PM）とプロダクトデザイナー（PD）がフォローアップインタビューを行って、回答者が経験しているユーザビリティの問題をよりよく理解できるようにプロセスを作成しました。このアウトリーチはチームメンバーにとってオプションですが、強く推奨されます。プロセスの詳細については、[SUS Responder Outreach ページ](/handbook/upstream-studios/performance-indicators/system-usability-scale/sus-outreach/)を参照してください。
 
 ## 制限事項
 
@@ -188,4 +188,4 @@ A: この質問に単一の答えはありません。サンプルサイズは�
 
 **Q: SUS に関連するオープン Issue を見つけるにはどうすればいいですか？**
 
-A: SUS に関連する Issue には、UX 部門ハンドブックの[ラベルの使用方法](/handbook/product/ux/operations/#ux-labels)セクションに示されているラベルのいずれかが付けられます。最近の SUS 発見と一致するユーザビリティ問題に関連する Issue を見た場合は、自由にラベルのいずれかを追加してください。疑問がある場合は、マネージャーに連絡するか、`#upstream-studios` Slack チャンネルで尋ねてください。
+A: SUS に関連する Issue には、UX 部門ハンドブックの[ラベルの使用方法](/handbook/upstream-studios/operations/#ux-labels)セクションに示されているラベルのいずれかが付けられます。最近の SUS 発見と一致するユーザビリティ問題に関連する Issue を見た場合は、自由にラベルのいずれかを追加してください。疑問がある場合は、マネージャーに連絡するか、`#upstream-studios` Slack チャンネルで尋ねてください。

@@ -8,11 +8,11 @@ coach:
 approvers: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/deployments/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-10-03T14:17:43-06:00"
+lastmod: "2026-11-18T10:56:21Z"
 ---
 
 
@@ -361,7 +361,7 @@ Cell をデプロイメントパイプラインに統合する前に、いくつ
 #### マインドマップ
 
 ```mermaid
-%%{init: {'theme':'default'}}%%
+%%{init: {'theme':'default', 'layout':'cose-bilkent'}}%%
 mindmap
   root((Cells Deployment))
     Core concepts 📚

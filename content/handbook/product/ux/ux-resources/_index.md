@@ -2,9 +2,9 @@
 title: UX リソース
 description: "Upstream Studios の一部である Product Design、UX Research、Technical Writing、Design System の各 UX チームメンバー向けのリソースとツール。"
 upstream_path: /handbook/product/ux/ux-resources/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-04T07:56:05+09:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T08:57:11-08:00"
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: codex
 stale: false
 ---
@@ -19,7 +19,7 @@ stale: false
 - [プロダクトデザインオペレーション](/handbook/upstream-studios/product-design/operations/) - Issue 管理、ラベリング、スケジューリング
 - [UX リサーチャーのワークフロー](/handbook/upstream-studios/experience-research/)
 - [テクニカルライティングのワークフロー](/handbook/marketing/product-and-technical-marketing/technical-writing/)
-- [UX オペレーション](/handbook/product/ux/operations/) - 人員計画、調達、ラベル、カレンダー
+- [UX オペレーション](/handbook/upstream-studios/operations/) - 人員計画、調達、ラベル、カレンダー
 
 ### デザインシステム
 
@@ -58,7 +58,7 @@ stale: false
 
 ### Upstream Studios カレンダー
 
-[Upstream Studios の Google カレンダー](/handbook/product/ux/operations/#upstream-studios-calendar) は、Upstream Studios チームのミーティングとイベントの SSOT です。
+[Upstream Studios の Google カレンダー](/handbook/upstream-studios/operations/#upstream-studios-calendar) は、Upstream Studios チームのミーティングとイベントの SSOT です。
 
 ### ツール
 

@@ -9,9 +9,9 @@ owning-stage: "~group::gitaly"
 participating-stages: [ "~group::git" ]
 toc_hide: false
 upstream_path: "/handbook/engineering/architecture/design-documents/scaling-git/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-21T12:17:33+01:00"
-translated_at: "2026-11-01T15:46:26.289393+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+lastmod: "2026-11-18T19:09:45Z"
+translated_at: "2026-11-19T06:12:11+09:00"
 translator: codex
 stale: false
 ---
@@ -334,6 +334,8 @@ Git の処理が完了したら、Gitaly は新しい状態を検査しなけれ
 マージでは、これら 3 つの異なるバージョン間で変更された参照を読み取り、マージします。いずれかの参照が競合する更新を受けている場合は論理的な競合となり、書き込みを拒否します。複数回書き込まれた参照がなければ、書き込みを受け入れ、新たな現在の世代に対して条件付き書き込みを再試行できます。
 
 オブジェクトには 3 ウェイマージが不要であることに注意してください。代わりに、競合がないものとして扱い、常に和集合を取得できます。
+
+1 つのリポジトリに同時にプッシュする場合の書き込み経路の提案については、サブページの[プッシュのスループット](./push-throughput.md)を参照してください。取り込みは任意の Pod で行い、リポジトリごとにコミッターを 1 つ、バッチごとに世代を 1 つとします。
 
 ### リポジトリのハウスキーピング {#repository-housekeeping}
 

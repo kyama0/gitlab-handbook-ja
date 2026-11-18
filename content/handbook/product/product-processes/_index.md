@@ -3,11 +3,11 @@ title: プロダクトプロセス
 description: >-
   プロダクト組織として、私たちは顧客が愛し価値を見出す製品を開発するための、柔軟でありながら簡潔な製品開発フレームワークを作ることに取り組んでいます。
 upstream_path: /handbook/product/product-processes/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T13:23:46.024670+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-04T13:17:02-05:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 <!-- include omitted: includes/product/product-handbook-links.md -->
@@ -1094,7 +1094,7 @@ Product Manager は、ステージが持つかもしれない内部顧客を活�
 
 ### USAT+ レスポンダーへのアウトリーチ {#usat-responder-outreach}
 
-年に 2 回、私たちは [User Satisfaction (USAT+)](/handbook/product/ux/performance-indicators/usat-plus/)サーベイのレスポンダーで、私たちと話すことに参加したいと言った人にアプローチします。これは、エンドユーザーとの橋渡しを築き、Product Manager と Product Designer が担当する特定の製品領域に対する直接のフィードバックを得るための素晴らしい機会です。ユーザーが私たちに自由記述の回答を共有する時間を取り、会話に応じると申し出た場合、特にユーザーが GitLab に不満を持っている場合、そのユーザーへのフォローアップを行うべきです。
+年に 2 回、私たちは [User Satisfaction (USAT+)](/handbook/upstream-studios/performance-indicators/usat-plus/)サーベイのレスポンダーで、私たちと話すことに参加したいと言った人にアプローチします。これは、エンドユーザーとの橋渡しを築き、Product Manager と Product Designer が担当する特定の製品領域に対する直接のフィードバックを得るための素晴らしい機会です。ユーザーが私たちに自由記述の回答を共有する時間を取り、会話に応じると申し出た場合、特にユーザーが GitLab に不満を持っている場合、そのユーザーへのフォローアップを行うべきです。
 
 このワークフロー中にユーザーと直接話すとき、プロダクト内の他のドキュメンテーションやコミュニケーションと同様に、[Product Legal のガイダンス](/handbook/product/product-processes/product-safe-guidance/)と [SAFE フレームワーク](/handbook/legal/safe-framework/)に注意する必要があります。
 

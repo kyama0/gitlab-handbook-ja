@@ -1,20 +1,20 @@
 ---
-title: UX オペレーション
+title: Upstream Studios のオペレーション
 description: >-
-  ヘッドカウント計画、調達、ラベル、チームプロセスを含む、UX チームメンバー向けの運用ガイダンス。
-upstream_path: /handbook/product/ux/operations/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T06:06:56+00:00"
+  ヘッドカウント計画、調達、ラベル、チームプロセスを含む、Upstream Studios のチームメンバー向けの運用ガイダンス。
+upstream_path: /handbook/upstream-studios/operations/
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-18T21:24:36+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
-このページには、GitLab の UX 部門で働くための運用情報が記載されています。
+このページには、GitLab の Upstream Studios で働くための運用情報が記載されています。
 
 ## ヘッドカウント計画 {#headcount-planning}
 
-UX チームメンバーは、Product Management および Engineering 全体の安定したカウンターパートと協力して働きます。アライメントのモデルは、職種や作業の種類によって異なります。
+Upstream Studios のチームメンバーは、Product Management と Engineering の固定のカウンターパートと協力します。連携の形は職種や業務の種類によって異なります。
 
 ### Product Design {#product-design}
 
@@ -35,23 +35,15 @@ UX Researcher はセクション内の複数グループをサポートします
 - UX Researcher 対 Product Manager 比率 = 1:5
 - UX Researcher 対エンジニア比率 = 約 1:35
 
-### Technical Writing {#technical-writing}
-
-Technical Writer はそれぞれ複数のステージグループをサポートします。
-
-- Technical Writer 対ステージグループ比率 = 1:3
-- Technical Writer 対エンジニア比率 = 約 1:21
-
 ### Design System {#design-system}
 
-Design System チームは独立して運営されており、すべての Product Designer、エンジニア、Technical Writer に役立つプラットフォーム全体のインフラを構築しています。このチームは、特定のステージグループや PM には割り当てられていません。
+Design System チームは独立して運営されており、すべての Product Designer とエンジニアに役立つプラットフォーム全体のインフラを構築しています。このチームは、特定のステージグループや PM には割り当てられていません。
 
 ### マネジメント {#management}
 
 各機能に応じて、マネージャーのサポート体制が適切に整えられています。
 
 - UX Research および Product Design の場合、マネージャー対直接の部下比率 = 約 1:5
-- Technical Writing の場合、マネージャー対直接の部下比率 = 約 1:7
 
 ## 調達リクエスト {#procurement-requests}
 
@@ -79,8 +71,8 @@ GitLab では、ラベルを使用して作業を分類、優先順位付け、�
   - `workflow::design`
   - `workflow::solution validation`
 - **Pajamas コンポーネントライフサイクルラベル** は、[Pajamas](https://design.gitlab.com) コンポーネントを作成・更新するために使用される scoped ラベルです。ラベルの使用ガイドラインは [Pajamas コンポーネントライフサイクルドキュメント](https://design.gitlab.com/get-started/lifecycle/)を参照してください。
-- [**UX problem validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20problem%20validation): Issue が、ユーザーに関連する問題であることを検証するために UX 作業を必要としていることを示します。このラベルは Product Development Flow の scoped ラベルに加えて使用し、[UX パフォーマンス指標](/handbook/product/ux/performance-indicators/)で経時的に検証努力を追跡できるようにします。
-- [**UX solution validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20solution%20validation): Issue が、提案された解決策が技術的に実行可能でユーザーニーズを満たしていることを検証するためのタスクを必要としていることを示します。このラベルは Product Development Flow の scoped ラベルに加えて使用し、[UX パフォーマンス指標](/handbook/product/ux/performance-indicators/)で経時的に検証努力を追跡できるようにします。
+- [**UX problem validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20problem%20validation): Issue が、ユーザーに関連する問題であることを検証するために UX 作業を必要としていることを示します。このラベルは Product Development Flow のスコープ付きラベルに加えて使用し、検証の取り組みを継続的に追跡します。
+- [**UX solution validation** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20solution%20validation): Issue が、提案された解決策が技術的に実行可能でユーザーニーズを満たしていることを検証するためのタスクを必要としていることを示します。このラベルは Product Development Flow のスコープ付きラベルに加えて使用し、検証の取り組みを継続的に追跡します。
 - [**UI polish** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&state=opened&utf8=%E2%9C%93&label_name%5B%5D=UI+polish): 既存のユーザーインターフェースへの視覚的改善*のみ*を扱う Issue であることを示します。
 - [**Deferred UX** ラベル](https://gitlab.com/groups/gitlab-org/-/labels?subscribed=&sort=relevance&search=deferred+ux): Deferred UX は、UX ビジョンや MVC から意図的に逸脱する決定によって生じ、ユーザー体験を犠牲にするものです。Deferred UX のラベルが付いた Issue は、後続のリリースに含まれる必要があります。次のいずれかを満たさないリリース UX を示すためにこのラベルを使用してください。
   - UX および Pajamas の仕様
@@ -93,10 +85,10 @@ GitLab では、ラベルを使用して作業を分類、優先順位付け、�
 
    このラベルをいつ適用するか迷う場合は、次のルールを使用してください。「この UX 問題は Issue やマージリクエストから生じたものではない」と言える場合は、それは単に UX であり、Deferred UX ではありません。Deferred UX を含む MVC を出荷する決定をチームが行った場合、変更がリリースされ次第、追跡するための Issue を作成することが推奨されます。
 
-- [**Deferred UX を UX 部門のパフォーマンス指標として詳しく知る**](/handbook/product/ux/performance-indicators/#deferred-ux)。
+- [**Upstream Studios のパフォーマンス指標について詳しく知る**](/handbook/upstream-studios/performance-indicators/)。
 - [**Seeking community contributions**](https://gitlab.com/groups/gitlab-org/-/issues?state=opened&label_name[]=Seeking+community+contributions&assignee_id=0&sort=weight)
 - [**System Usability Scale (SUS)** ラベル](https://gitlab.com/gitlab-org/gitlab/-/labels?subscribed=&search=sus): Issue が、SUS リサーチ活動のいずれかで明らかになったユーザビリティ問題に関連していることを示します。より具体的には、優先順位が付けられた SUS 関連の Issue は、対応する会計年度と四半期でラベル付けできます。例: `SUS::FY22 Q2 - Incomplete`。
-[**SUS スコアを UX 部門のパフォーマンス指標として詳しく知る**](/handbook/product/ux/performance-indicators/#perception-of-system-usability)
+[**System Usability Scale について詳しく知る**](/handbook/upstream-studios/performance-indicators/system-usability-scale/)
 - [**Regression** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&state=opened&utf8=%E2%9C%93&label_name%5B%5D=regression): 最新のリリースで導入された、正しい動作を破壊するバグを示します（詳細は [貢献ガイドライン](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#regression-issues)を参照）。
 - [**UX scorecard** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20scorecard): [UX Scorecard](/handbook/product/ux/ux-scorecards/)のメイン Issue またはエピックを示します。このラベルを使用して、現在の作業を簡単に見つけ、経時的に活動を追跡できるようにしています。
 - [**UX scorecard-rec** ラベル](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=UX%20scorecard-rec): この Issue が UX scorecard レビューの結果として生まれた推奨事項であることを示します。スコアカードが行われる前に Issue が作成されていても問題ありません。それでも推奨事項のセットに引き入れることができます。
@@ -115,4 +107,4 @@ GitLab では、ラベルを使用して作業を分類、優先順位付け、�
 
 ## レトロスペクティブ {#retrospectives}
 
-UX 部門が直面する具体的な課題を理解するために、各マイルストーン終了後に非同期 UX レトロスペクティブを実施しています。このレトロは、[ux-retrospectives](https://gitlab.com/gl-retrospectives/ux-retrospectives/issues) プロジェクトで最近のリリース用に作成された新しい Issue を通じて実施されます。目標は、うまくいったこと、うまくいかなかったこと、改善できることを評価することです。
+Upstream Studios が直面する具体的な課題を理解するために、各マイルストーン終了後に非同期 UX レトロスペクティブを実施しています。このレトロは、[ux-retrospectives](https://gitlab.com/gl-retrospectives/ux-retrospectives/issues) プロジェクトで最近のリリース用に作成された新しい Issue を通じて実施されます。目標は、うまくいったこと、うまくいかなかったこと、改善できることを評価することです。

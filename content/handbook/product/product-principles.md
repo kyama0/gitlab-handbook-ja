@@ -2,9 +2,9 @@
 title: プロダクト原則
 description: "これらは、世界クラスのプロダクト組織が示すと私たちが信じる中核的な原則です。目標は、GitLab に合った方法でこれらの原則を育み、尊重する PM システムを構築することです。"
 upstream_path: /handbook/product/product-principles/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-30T14:17:26-04:00"
-translated_at: "2026-11-01T17:21:10+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T08:57:11-08:00"
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: claude
 stale: false
 ---
@@ -90,7 +90,7 @@ MVC アプローチは、私たちのイテレーションの精神の副産物�
 
 #### 引き算の思考 {#subtractive-thinking}
 
-人間は、[機能を取り除くほうが効率的であっても、機能を取り除くソリューションより追加するソリューションを好む](https://www.nature.com/articles/d41586-021-00592-0)傾向があります。優れた PM はこのバイアスを認識し、引き算の思考を活用して優れたユーザーエクスペリエンスを生み出します。顧客は、自分たちが必要とするものが欠けているときには教えてくれますが、望まない機能で圧倒しているときに、それを明示的に教えてくれることはまずありません。とはいえ、この課題がすでに私たちにとって考慮事項であることを示す証拠はあります。それは、私たちの [System Usability Scale のコメント](/handbook/product/ux/performance-indicators/system-usability-scale/)に一貫して反映されています。このバイアスをさらに掘り下げた [Hidden Brain ポッドキャストのエピソード](https://hiddenbrain.org/podcast/do-less/)があります。
+人間は、[機能を取り除くほうが効率的であっても、機能を取り除くソリューションより追加するソリューションを好む](https://www.nature.com/articles/d41586-021-00592-0)傾向があります。優れた PM はこのバイアスを認識し、引き算の思考を活用して優れたユーザーエクスペリエンスを生み出します。顧客は、自分たちが必要とするものが欠けているときには教えてくれますが、望まない機能で圧倒しているときに、それを明示的に教えてくれることはまずありません。とはいえ、この課題がすでに私たちにとって考慮事項であることを示す証拠はあります。それは、私たちの [System Usability Scale のコメント](/handbook/upstream-studios/performance-indicators/system-usability-scale/)に一貫して反映されています。このバイアスをさらに掘り下げた [Hidden Brain ポッドキャストのエピソード](https://hiddenbrain.org/podcast/do-less/)があります。
 
 #### SaaS ファースト {#saas-first}
 

@@ -3,11 +3,11 @@ title: "GitLab パーパス"
 description: "GitLab は、ナレッジシェアリング、仕事へのアクセス、そして私たちのソフトウェアプラットフォームを通じて、すべての人をエンパワーします。"
 canonical_path: "/company/purpose/"
 upstream_path: "/handbook/company/purpose/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T06:45:40+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: "codex"
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 ## パーパス {#purpose}
@@ -109,7 +109,7 @@ DevSecOps プラットフォームは、開発者・運用担当者・セキュ�
 #### よりアクセスしやすく {#more-accessible}
 
 1. 誰でも創り手になれるようにする
-1. GitLab をより使いやすくし、[System Usability Scale (SUS)](/handbook/product/ux/performance-indicators/system-usability-scale/)スコアを高くする
+1. GitLab をより使いやすくし、[System Usability Scale (SUS)](/handbook/upstream-studios/performance-indicators/system-usability-scale/)スコアを高くする
 1. DevSecOps の成功を可視化する
 
 ## ケイデンスと整合 {#cadence-and-alignment}

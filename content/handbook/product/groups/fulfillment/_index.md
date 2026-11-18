@@ -2,11 +2,11 @@
 title: Fulfillment ガイド
 description: "Fulfillment サブ部署は、ユーザー購入プロセスに影響を与えるシステム間のインフラストラクチャに責任を持ちます。"
 upstream_path: /handbook/product/groups/fulfillment/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T17:26:27+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:21:32+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-29T09:52:32-04:00"
+lastmod: "2026-11-18T10:19:37-05:00"
 ---
 
 ## 主要な Fulfillment ドキュメントリンク {#key-fulfillment-documentation-links}
@@ -107,7 +107,7 @@ lastmod: "2026-10-29T09:52:32-04:00"
 
 1. アカウントチームが、製品の Issue テンプレートを使用して [gitlab-org/fulfillment/meta](https://gitlab.com/gitlab-org/fulfillment/meta)にトライアルクレジットリクエスト Issue を作成し、[トライアルクレジットリクエスト用 Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C0AC0TF748N)のワークフローを通じて承認を申請します。
 1. 承認は製品のクレジット区分に従います（各製品のセクションを参照）。承認者のサインオフが必要な区分では、Slack 承認のスクリーンショットを Issue に追加します。
-1. SA manager（または Fulfillment チーム）が、[CustomersDot Admin](https://customers.gitlab.com/admin/)の **Sales** > **Bonus Trial Wallets** から、**Add Credits** フォームで製品のウォレットを選択してクレジットをプロビジョニングします。
+1. SA manager（または Fulfillment チーム）が、[CustomersDot Admin](https://customers.gitlab.com/admin/)の **Sales** > **Bonus Trial Wallets** から、**Add Credits** フォームで製品のウォレットを選択してクレジットをプロビジョニングします。サブスクリプションのない Security Sprint トライアルの場合は、トライアル自体を選択します（[Security Sprint：有料サブスクリプションのないトライアルへのクレジット付与](#security-sprint-granting-credits-to-a-trial-without-a-paid-subscription)を参照）。
 1. CustomersDot は製品のトライアルウォレットにクレジットを作成し、承認リンクとクレジットを追加したウォレットを含む監査イベントを記録して、サブスクリプションの `SoldTo` 連絡先に製品のトライアル確認メールを送信します。
 
 この方式の対象製品:
@@ -197,7 +197,7 @@ CustomersDot はプロビジョニング時に適格性を検証します。サ�
 1. [CustomersDot Admin](https://customers.gitlab.com/admin/)にログインします。
 1. **Sales** > **Bonus Trial Wallets** に移動します。
 1. **Add Credits** タブを選択してプロビジョニングフォームを開き、必須フィールドを入力します:
-   - **Subscription name**: クレジットをプロビジョニングするサブスクリプション (例: `A-S00330622`)。
+   - **Subscription name**: クレジットをプロビジョニングするサブスクリプション（例：`A-S00330622`）。サブスクリプションのない Security Sprint トライアルの場合は空欄にし、**Trial** フィールドを使います。[Security Sprint：有料サブスクリプションのないトライアルへのクレジット付与](#security-sprint-granting-credits-to-a-trial-without-a-paid-subscription)を参照してください。
    - **Approval link**: GitLab.com のトライアルクレジットリクエスト Issue のリンク。フォームは GitLab.com の Issue URL であることを検証します。
    - **Wallet**: トライアルを行う製品のウォレットを選択します。DAP トライアルの場合はデフォルトの `bonus_trial` のままにします。Orbit トライアルの場合は `orbit_trial` を選択します。[ウォレットの選択](#choosing-the-wallet)を参照してください。
    - **Credit amount**: 0 より大きい整数。
@@ -220,12 +220,13 @@ CustomersDot はプロビジョニング時に適格性を検証します。サ�
 
 #### トップアップ時の期限切れ日の選択 {#choosing-the-expiration-date-for-a-top-up}
 
-プロビジョニングフォームは 2 つの期限切れオプションを提供しており、新しいクレジットと既存の期限切れでないクレジットの両方の実効期限を決定します:
+プロビジョニングフォームには 3 つの有効期限オプションがあり、新しいクレジットと有効な既存クレジットの両方に適用する有効期限を決定します:
 
 1. **Default (30 days)**: 新しいクレジットは今日から 30 日後に期限切れになります。ウォレットに既により遅い期限切れ日を持つアクティブなクレジットがある場合、新しいクレジットと既存のクレジットの両方が、その遅い日付を使用します。これは標準オプションであり、**延長された日付での**トップアップが機能する方法です。
+1. **14 days**: 新しいクレジットは今日から 14 日後に期限切れになります。Security Sprint などの期間が短いオファーに使います。既存の有効なクレジットにこれより先の有効期限がある場合は、同じく遅いほうの日付が適用されます。
 1. **Use existing expiration**: 新しいクレジットは既存のアクティブなクレジットの期限切れ日を採用するため、期限切れは変更されません。顧客が現在のトライアルウィンドウ内でより多くのクレジットのみを必要とする場合の **同日** のトップアップに使用します。このオプションは、アクティブなクレジットが既に存在する場合にのみ使用できます。
 
-どちらの場合も、システムは既存の期限切れを短縮することはありません。実効期限は、リクエストされた日付と最新の既存のアクティブな期限切れのうち、遅い方になります。
+どの場合も、システムは既存の有効期限を短縮しません。実際に適用する有効期限は、リクエストした日付と既存の有効なクレジットのうち最も遅い有効期限を比較し、遅いほうの日付になります。
 
 > プロビジョニングが月次の請求サイクル移行ウィンドウ (毎月 1 日 00:00-06:00 UTC) 中に発生した場合、CustomersDot は前月の消費が完了した後にプロビジョニングを実行するように自動的にスケジュールし、即座にプロビジョニングしません。
 
@@ -240,6 +241,87 @@ CustomersDot はプロビジョニング時に適格性を検証します。サ�
    - **Approval link**: GitLab.com の延長リクエスト Issue のリンク。フォームは GitLab.com の Issue URL であることを検証します。
    - **Add days**: **7、14、または 30 日** の延長を選択します (7 日がデフォルト)。
 1. **Save** を選択します。既存のクレジット残高は変更されません。アクティブなクレジットの期限切れ日のみが先送りされます。システムは期限切れを延長するのみで、短縮することはありません。
+
+### Security Sprint：有料サブスクリプションのないトライアルへのクレジット付与 {#security-sprint-granting-credits-to-a-trial-without-a-paid-subscription}
+
+[Security at Machine Speed](https://about.gitlab.com/security-at-machine-speed/)の Security Sprint（リクエスト受付は 2026 年 11 月 13 日または承認 100 件到達時に終了）では、承認されたチームに Ultimate と Duo Agent Platform を 14 日間、無料クレジット付きで提供します。承認されたチームの多くは、GitLab.com Ultimate トライアルまたは Self-Managed Ultimate トライアルを利用している見込み客や Free ティアの組織で、有料サブスクリプションを持っていません。この場合、**Add Credits** フォームからトライアル専用のウォレットに直接クレジットを付与できるため、$0 の注文は不要です。
+
+この手順は Security Sprint の承認済みリクエストに限られ、2026 年 11 月 18 日から CustomersDot の本番環境で利用できます（フィーチャーフラグ `sales_assisted_trial_wallet_top_ups`）。Orbit はトライアルでは利用できないため、Sprint が Orbit に依存する場合に限り、引き続き Deal Desk を通じた $0 の注文が必要です（下記参照）。
+
+#### 対象となる条件 {#who-qualifies}
+
+- 組織が Security Sprint トラッカー（Salesforce キャンペーン「Request - Security Sprint」）で承認されています。リクエスト Issue に Salesforce の商談へのリンクを記載します。SA のリーダーは [Security Sprint キャンペーンレポート](https://gitlab.lightning.force.com/lightning/r/Report/00OjB000000yLrBUAU/view)で承認を確認できます。
+- 組織に **現在有効な** Ultimate トライアルがあります。Ultimate トライアル中の GitLab.com のトップレベルグループ、または Ultimate トライアルのアクティベーションコードで有効化した Self-Managed インスタンスが該当します。期限切れや開始前のトライアルはフォームで拒否されます。
+- 顧客が Security Sprint の評価条件と DPA に同意しています。トライアルには同意を記録する請求アカウントがないため、アカウントチームはプロビジョニングを依頼する前に同意をリクエスト Issue に記録します。
+- 有効な有料の Premium または Ultimate サブスクリプションを持つチームは、サブスクリプションに対して標準の [DAP ボーナストライアルクレジット](#dap-bonus-trial-credits)のワークフローを使用し、期間を 14 日間に設定します。フォームではこの条件を検証するため、有料サブスクリプションを持つ GitLab.com ネームスペースは、トライアルも利用している場合でも拒否されます。
+
+#### アカウントチーム（AE と SA）の作業 {#what-the-account-team-ae-and-sa-does}
+
+1. Security Sprint トラッカーでリクエストが承認され、評価条件と DPA に同意済みであることを確認します。
+1. 顧客からトライアルの識別子を取得します。識別子は顧客が保有しており、Sales では照会できません。
+
+   | デプロイメント | 依頼する識別子 | 顧客が確認する場所 |
+   | ---------- | --------------------- | --------------------------- |
+   | GitLab.com | トップレベルグループのネームスペース ID（数値） | グループの **Settings** > **General** で、グループ名の下にあります。Ultimate トライアル中のトップレベルグループである必要があります。サブグループは対象外です。 |
+   | Self-Managed | トライアルのアクティベーションコード | トライアルのリクエスト時に送信される「Action required: Your GitLab trial activation code」というメールに記載されています。**Admin** > **Subscription** で入力したものと同じコードです。 |
+
+   Self-Managed の場合は、そのコードでインスタンスが有効化されており、GitLab 18.9 以降を使用していることも確認します。この条件を満たさないと、使用量が CustomersDot に届かず、クレジットを消費できません。
+1. [gitlab-org/fulfillment/meta](https://gitlab.com/gitlab-org/fulfillment/meta) で、[トライアルクレジットリクエストテンプレート](https://gitlab.com/gitlab-org/fulfillment/meta/-/blob/master/.gitlab/issue_templates/trial_credit_requests.md)を使ってトライアルクレジットリクエスト Issue を作成します。タイトルは `[Security Sprint] [Trial] <Customer Name>, <credits> credits, <date>` とします。Issue には、サブスクリプション名の代わりにトライアルの識別子を記載し、Security Sprint であることを明記して **14 days** を選択し、Salesforce の商談と評価条件への同意へのリンクを追加します。
+1. GitLab がユースケースごとに定めた Sprint のクレジット数に従ってリクエストします。承認は [リクエストテンプレート](https://gitlab.com/gitlab-org/fulfillment/meta/-/blob/master/.gitlab/issue_templates/trial_credit_requests.md)の初回トライアルの基準に従います。5,000 クレジットまでは SA Manager、SA Director、VP of Solutions Architecture のいずれかが承認し、5,000 クレジットを超える場合は CPMO が承認します。Slack での承認のスクリーンショットを Issue に追加します。
+1. [トライアルクレジットリクエスト用の Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C0AC0TF748N)のワークフローを通じて Issue を提出します。
+1. プロビジョニングが完了したら、クレジットが利用可能になったことを顧客に伝えます。トライアルには `SoldTo` 連絡先がないため、**トライアルへの付与では確認メールは送信されません**。GitLab.com では、付与後に Secrets Manager が表示されるまで最大 1 時間かかることがあります（下記参照）。
+
+#### SA manager が CustomersDot Admin で行う作業 {#what-the-sa-manager-does-in-customersdot-admin}
+
+1. Issue に Salesforce の商談リンク、評価条件と DPA への同意、トライアルの識別子、SA のリーダー（5,000 クレジットを超える場合は CPMO）による Slack での承認のスクリーンショットがあることを確認します。プロビジョニングの前に、[Security Sprint キャンペーンレポート](https://gitlab.lightning.force.com/lightning/r/Report/00OjB000000yLrBUAU/view)で組織を確認します。
+1. [CustomersDot Admin](https://customers.gitlab.com/admin/)にログインし、**Sales** > **Bonus Trial Wallets** > **Add Credits** に移動します。
+1. フォームに入力します:
+
+   | フィールド | Security Sprint トライアルの入力内容 |
+   | ----- | ----------------------------------------- |
+   | **Subscription name** | 空欄にします。フォームでは Subscription name と Trial のどちらか一方だけを入力する必要があります。 |
+   | **Trial** | Issue に記載されたネームスペース ID（GitLab.com）またはアクティベーションコード（Self-Managed）を入力します。 |
+   | **Approval link** | リクエスト Issue の URL です。 |
+   | **Wallet** | デフォルトのままにします。トライアルの場合、この選択は無視され、クレジットは常にトライアル専用のウォレットに付与されます。 |
+   | **Credit amount** | 承認されたクレジット数です。 |
+   | **Expiration date** | **14 days** を選択します。トライアルの終了日がそれより早い場合、CustomersDot は有効期限をトライアル終了日まで自動的に短縮します。トライアル終了後に有効なクレジットはありません。 |
+   | **Additional notes** | 任意です。たとえば、Sprint トラッカーの行を記載します。 |
+
+   ![CustomersDot のステージング環境にある Add Credits フォーム。Subscription name の下に Trial フィールドがあります](/images/product/groups/fulfillment/security-sprint-add-credits-trial-form.png)
+
+   Self-Managed トライアルの入力例（ステージング環境）：**Trial** にアクティベーションコードを入力し、Subscription name を空欄にして、**14 days** を選択します。
+
+   ![ステージング環境で Self-Managed トライアルの情報を入力した Add Credits フォーム](/images/product/groups/fulfillment/security-sprint-add-credits-sm-filled.png)
+
+1. **Save** を選択し、ダイアログで確定します。成功バナーにはトライアルと実際の有効期限が表示されます。例：「トライアル 98765（1234567）にトライアルクレジットを追加しました。クレジットは 2026 年 11 月 26 日に期限切れになります。確認メールは送信されませんでした。」カッコ内の値は、GitLab.com トライアルではネームスペース ID です。Self-Managed トライアルでは `trial-` で始まる自動生成されたトライアルのサブスクリプション名が表示されます。アクティベーションコードは認証情報であるため、再表示されません。
+
+   ![ステージング環境で GitLab.com トライアルにクレジットを付与した後の成功バナー](/images/product/groups/fulfillment/security-sprint-trial-success-banner.png)
+
+   ![ステージング環境で Self-Managed トライアルにクレジットを付与した後の成功バナー。アクティベーションコードに代わり、トライアルのサブスクリプション名が表示されています](/images/product/groups/fulfillment/security-sprint-sm-trial-success-banner.png)
+
+1. Self-Managed トライアルでは「キルスイッチによってこのトライアルの DAP クレジットは無効化されていましたが、今回の付与でこの設定を上書きします。」と表示されることもあります。Trust and Safety が新規 Self-Managed トライアルクレジット用のキルスイッチをオンにしている間にトライアルを作成すると、その状態がトライアルに記録されます。このバナーが表示されるのはその場合だけです。執筆時点ではキルスイッチがオフになっているため、ほとんどの Sprint トライアルで 2 つ目のバナーが表示されないのは正常です。表示された場合は Sprint のクレジット付与が承認済みの例外となり、上書きは監査イベントに記録されます。
+1. Issue でリクエスト者をタグ付けしてクローズし、クレジットが利用可能になったことを Slack スレッドに記載します。監査イベントにはトライアル ID、ネームスペース ID、トライアルのサブスクリプション名、クレジット数、有効期限、承認リンクが記録され、**Sales Admin Tool Audit Events** で検索できます。アクティベーションコードは監査イベントやログに保存されません。
+
+上のスクリーンショットは CustomersDot のステージング環境のものです。このトライアルにはキルスイッチの状態が記録されていないため、上書きバナーは表示されていません。表示される条件は手順 5 を参照してください。
+
+#### 顧客が利用できる機能と制限事項 {#what-the-customer-gets-and-what-they-do-not}
+
+- **Duo Agent Platform**: 付与されたクレジットは、トライアルグループまたはインスタンスのすべてのユーザーが使えます。トライアルの使用量上限は付与されたクレジット数だけ自動的に引き上げられるため、標準のトライアル上限である 120 クレジットで Sprint が制限されることはありません。
+- **Secrets Manager（GitLab.com のみ）**: トライアルにクレジットを付与すると Secrets Manager も有効になります。クレジットが付与されたトライアルを GitLab に報告する CustomersDot の変更は、同じフィーチャーフラグの下で 2026 年 11 月 18 日にリリースされました。付与されたクレジットに残高があり、有効期限内であれば、グループのオーナーは **Secure** > **Secrets manager** から利用できます。Sprint 中の Secrets Manager の使用量はトライアルウォレットで計測されないため、Sprint のクレジットは消費されません。GitLab は次回の使用量パイプラインの実行まで CustomersDot の応答をキャッシュするため、付与後に Secrets Manager が表示されるまで時間がかかります。毎時実行のパイプラインでは最大 60 分、継続実行のパイプラインでは最大 20 分です。グループのオーナーが付与前にページを開いてアクセスを拒否されていた場合は、どちらもさらに 5 分かかります。設計は [Security Sprint トライアルウォレットの仕様](https://gitlab.com/gitlab-org/customers-gitlab-com/-/work_items/19800)を参照してください。Self-Managed トライアルではクレジットの付与の有無にかかわらず Secrets Manager を利用できません。
+- **Orbit**: トライアルでは利用できません。Orbit には有料サブスクリプションが必要なため、Sprint で Orbit を使う見込み客には引き続き $0 の注文手順が必要です。
+- **Ultimate の機能**: Ultimate トライアル自体で提供されます。クレジットの付与には含まれません。
+- クレジットは、選択した有効期限またはトライアル終了日のうち、早いほうの日付に期限切れになります。同じトライアルへの再付与も可能で、有効期限は共通です。
+
+#### 表示される可能性のあるエラー {#errors-you-may-see}
+
+| バナー | 原因 | 対処方法 |
+| ------ | ----- | ---------- |
+| Subscription name と Trial のいずれか一方だけの入力が必要です | 両方のフィールドに入力されているか、両方とも空欄 | 該当しないほうのフィールドを空欄にする |
+| 入力した Trial 識別子に対応する有効なトライアルが見つかりません | 識別子が誤っているか期限切れである、トップレベルグループの ID の代わりにサブグループの ID が入力されている、またはネームスペースに Ultimate や Premium のトライアルがなく、Duo アドオンのトライアルだけがある | 顧客に再確認を依頼する。GitLab.com の場合は Ultimate トライアル中のトップレベルグループであることを確認する |
+| ネームスペースには有料サブスクリプションがあります。そのサブスクリプションにクレジットを付与してください | GitLab.com ネームスペースに有効な有料サブスクリプションがある。追加のトライアルの有無は問わない | そのサブスクリプションに対して、標準の [DAP ボーナストライアルクレジット](#dap-bonus-trial-credits)のワークフローを使用する |
+| トライアルへのクレジット付与は無効です | フィーチャーフラグがオフになっている | $0 の注文に切り替える前に `#s_fulfillment` で確認する |
+| トライアルでは今回の付与でまかなえる数を超えるクレジットをすでに使用しているため、使用量上限が引き続き適用されます | トライアルの消費量が新しい上限を超えている | 同じ Issue でより多くのクレジットをリクエストする |
+| 使用量課金のプロビジョニング機能は無効です | 使用量課金のプロビジョニングが一時停止されている | Fulfillment に連絡する |
 
 ### プロビジョニング後 {#after-provisioning}
 

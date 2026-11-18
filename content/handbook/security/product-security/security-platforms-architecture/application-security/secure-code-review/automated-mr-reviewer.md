@@ -2,12 +2,16 @@
 title: "Automated MR Security Reviewer"
 description: "GitLab のマージリクエストに対する AppSec の自動セキュリティレビューフローの使い方"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/automated-mr-reviewer/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-22T09:57:56-04:00"
-translated_at: "2026-05-22T12:00:00Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-17T22:59:57Z"
+translated_at: "2026-11-19T06:16:51+09:00"
 translator: claude
 stale: false
 ---
+
+{{% alert title="Security Review Flow への移行" color="info" %}}
+各プロジェクトでは、このフローから GitLab Duo の [Security Review Flow](/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/security-review-flow/)への移行を進めています。移行が済むと、そのプロジェクトからこのフローが削除されます。すでに Security Review Flow を使用しているプロジェクトについては、リンク先のページを参照してください。
+{{% /alert %}}
 
 {{% alert title="Proof of Concept" color="warning" %}}
 AppSec チームは、このレビューフローが人間の介在なく確実に動作できるかを評価するため、概念実証 (PoC) を実施しています。**このフローからのすべての発見事項は、対処を行う前に必ず人間がレビュー・検証する必要があります。** このフローのアウトプットのみを根拠にマージ、ブロック、エスカレーションをしないでください。このフェーズにおける発見事項はあくまで助言的なものです。

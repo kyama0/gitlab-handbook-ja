@@ -3,11 +3,11 @@ title: 顧客緊急対応業務の遂行方法
 category: On-call
 description: "Support Engineering における顧客緊急対応ローテーションの役割と責任の説明"
 upstream_path: /handbook/support/workflows/customer_emergencies_workflows/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T17:16:51+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-19T06:16:51+09:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-18T15:32:51Z"
 ---
 
 ## はじめに {#introduction}
@@ -897,6 +897,14 @@ Self-managed SIRT 緊急対応については、問題を軽減し、フォレ�
 1. 潜在的な緊急対応について [Support Manager オンコールに通知](../on-call.md#engaging-the-on-call-manager)し、ログ分析、コンサルティング、フォレンジック分析、インシデント対応、検出エンジニアリングのために [SIRT インシデント](https://internal.gitlab.com/handbook/security/cross_functional_runbooks/customer_security_incidents/#runbook)を発生させるべきかを評価します。
 
 Support Manager オンコールに連絡を取らずに通話を提案したり参加したりしないでください。チケットを通じて顧客と一致して期待値を設定するためです。
+
+#### 機密の SIRT Issue へのアクセスをリクエストする {#requesting-access-to-a-confidential-sirt-issue}
+
+デフォルトでは、`/security` フォームを送信した人だけが、その送信によって作成された SIRT Issue にアクセスできます。たとえば、フォロー・ザ・サン形式で対応を引き継ぐなど、別の Support Engineer が関連チケットを担当するためにアクセスが必要な場合は、Slack で `@sirt-oncall` をメンションし、アクセスをリクエストしてください。リクエストには以下を含めてください。
+
+- Zendesk チケットの ID
+- SIRT Issue へのリンク
+- アクセスが必要な理由の簡潔な説明
 
 ### 特別な処理に関する注意 {#special-handling-notes}
 

@@ -2,11 +2,11 @@
 title: "BootstrapVue 削除グループ"
 description: "BootstrapVue 削除タスクグループの属性、目標、役割と責任についての詳細はこちら。"
 upstream_path: /handbook/company/working-groups/task-groups/bootstrap-vue-removal/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-translated_at: "2026-11-14T08:56:34+00:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:08:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-09T08:31:01+01:00"
+lastmod: "2026-11-18T11:35:43+01:00"
 ---
 
 ## 属性
@@ -115,3 +115,4 @@ BootstrapVue は過去には適していましたが、現在は移行を検討�
 | メンバー | Lorenz van Herwaarden | Staff Software Engineer, Security Factory::Vulnerability Management |
 | メンバー | Chaoyue Zhao | Senior Software Engineer, Create::Source Code Hardening and Modernization |
 | メンバー | Thomas Hutterer | Senior Frontend Engineer, Foundations::Design System |
+| メンバー | Rafa Frederico | Senior Frontend Engineer, AI Engineering::Chat |

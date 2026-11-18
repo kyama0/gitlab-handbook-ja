@@ -2,9 +2,9 @@
 title: "UX リサーチのリクルーティングメールに関するヒント"
 description: "UX リサーチ参加者をメールでリクルーティングする方法に関するガイダンス"
 upstream_path: /handbook/upstream-studios/experience-research/recruiting-participants/recruiting-email-tips/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T07:37:26+09:00"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+lastmod: "2026-11-18T08:57:11-08:00"
+translated_at: "2026-11-19T06:22:23+09:00"
 translator: codex
 stale: false
 ---
@@ -31,7 +31,7 @@ Qualtrics または Marketo 経由でメールを送信する必要がある特�
 
 #### System Usability Scale アンケート {#system-usability-scale-survey}
 
-[System Usability Scale](/handbook/product/ux/performance-indicators/system-usability-scale/)
+[System Usability Scale](/handbook/upstream-studios/performance-indicators/system-usability-scale/)
 
 - 件名：`SURVEY: How would you score GitLab's usability?` `New! Help us measure GitLab's usability over time` `Survey for you! How would you rate GitLab's usability?`
 - 本文：

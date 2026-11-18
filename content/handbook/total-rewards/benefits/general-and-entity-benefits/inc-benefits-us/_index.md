@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
-translated_at: "2026-11-14T08:25:05+00:00"
+upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
+translated_at: "2026-11-18T21:21:32+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-12T15:46:11-08:00"
+lastmod: "2026-11-17T16:22:24-08:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -23,11 +23,11 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 
 ### クイックスタートリソース {#quick-start-resources}
 
+- 福利厚生の概要については、[2027 年の福利厚生一覧](https://drive.google.com/file/d/1xW_MxdKVj7g1DusLaksL_ITs687Rv85t/view?usp=sharing)を確認してください
 - プラン選びでお困りですか？[Flimp PlanSelect ツール](https://v2.flimpdecisions.net/welcome/633c8d6807f8b)を使って、あなたと家族のニーズに最も適したプランを見つけてください。
-- [米国の福利厚生の LOOP ページ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/landing-page/dashboard)を参照してください
+- [米国の LOOP ページ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/landing-page/dashboard)で 2027 年の福利厚生に関するすべての資料とセッションの録画を確認できます
 - 主な内容と更新情報については、[2027 年の福利厚生メモ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/page/6179981b-f2de-4afc-a474-051ae1f26d3c)を確認してください
 - GitLab の福利厚生プランの詳しい説明については、[2027 年の米国福利厚生ガイド](https://drive.google.com/file/d/1vC3BQ6rorJiu_6e7bO9kzKcD3nIBIEQT/view)を参照してください
-- 福利厚生の概要については、[2027 年の福利厚生一覧](https://drive.google.com/file/d/1xW_MxdKVj7g1DusLaksL_ITs687Rv85t/view?usp=sharing)を確認してください
 - 2027 年の[権利に関する年次通知](https://drive.google.com/file/d/1Vls3ry_huyCcfKDZ6IoCraRozzsFz8fR/view?usp=sharing)を参照してください
 - GitLab は [Modern Health](/handbook/total-rewards/benefits/modern-health/)を通じてメンタルウェルネスサービスを提供しています。これらのサービスに加えて、Cigna と Kaiser のプランに加入するチームメンバーは、各社のネットワークの[メンタルヘルスプログラムとリソース](https://drive.google.com/file/d/1LT_LG1Px3xrGMBP0-iMPXaFyQvopfSiL/view?usp=sharing)を利用できます
 - [健康保険マーケットプレイスの保障選択肢に関する通知](https://drive.google.com/file/d/1Zo917jADi66YfzO_rXIm40NnewAymiac/view?usp=sharing)
@@ -133,7 +133,7 @@ Workday プロファイルを通じて PlanSource にアクセス:
 
 ### ID カードとアクセス {#id-cards--access}
 
-- **Cigna:** [myCigna](https://my.cigna.com/web/public/guest)ウェブサイトとモバイルアプリを通じてデジタルカードが利用可能
+- **Cigna:** デジタルカードは [myCigna](https://my.cigna.com/web/public/guest)のウェブサイトとモバイルアプリでのみ利用可能
 - **Kaiser:** 物理カードが 3 週間以内に郵送されます。デジタルカードは [Kaiser オンラインポータル](https://healthy.kaiserpermanente.org/front-door)とモバイルアプリを通じて利用可能
 
 ### 適格ライフイベント {#qualifying-life-events}
@@ -143,7 +143,6 @@ Workday プロファイルを通じて PlanSource にアクセス:
 - 結婚または離婚
 - 子の出生または養子縁組
 - 配偶者の雇用の変更
-- 別の州への引越し
 
 **プロセス：** 適格イベントから 30 日以内に PlanSource にログインして変更を提出します。PlanSource で適格ライフイベント（QLE）を提出する方法（扶養家族の追加や書類のアップロードを含む）の詳しい手順については、[適格ライフイベント（QLE）のプロセスと書類に関するガイド](https://docs.google.com/document/d/1Ce2x5GU0tZpLxFQ3x2QF0t_hGboO82WVyg-ZIquvddo/edit?tab=t.0)を参照してください。
 
@@ -168,28 +167,34 @@ GitLab は Cigna を通じて全国的に医療保険を提供し、Kaiser オ�
 
 #### Cigna EPO {#cigna-epo}
 
-EPO: [2026 SBC](https://drive.google.com/file/d/1mBHIR5xsAEpyArBLrDSMIZSOUhV3yn3R/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1AHoN2uuG_qd6bwu-fDGOYPTuB6zOewFk/view?usp=sharing)
+2026 EPO: [2026 SBC](https://drive.google.com/file/d/1mBHIR5xsAEpyArBLrDSMIZSOUhV3yn3R/view?usp=sharing) | [2026 年の概要](https://drive.google.com/file/d/1AHoN2uuG_qd6bwu-fDGOYPTuB6zOewFk/view?usp=sharing)
 
-RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
+2027 EPO: [2027 SBC](https://drive.google.com/file/d/1lhJ6SmdZxj9rQLYbJ_LgjF6FJTyOlhf5/view?usp=drive_link) | [2027 年の概要](https://drive.google.com/file/d/1yhcvoKImT0lEl5sfub7irNBUQ-PGsPZ4/view?usp=drive_link)
+
+RX プラン: [2026 年の標準 3 階層の医薬品リスト](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing) | [2027 年の標準 3 階層の医薬品リスト](https://drive.google.com/file/d/15lQjA_ASVnPzBVYqso4A_N0x-C4Bhwvv/view?usp=drive_link)
 
 *重要なカバレッジ注を参照してください
 
 #### Cigna 高免責額医療プラン {#cigna-high-deductible-health-plan}
 
-HDHP: [2026 SBC](https://drive.google.com/file/d/1jh3QmCvkt1rfjcLaoJqisz13rXPrsaJ7/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/1-8zHX89X1EX5yf3HAzAmvJlFcO-XZnei/view?usp=sharing)
+2026 HDHP: [2026 SBC](https://drive.google.com/file/d/1jh3QmCvkt1rfjcLaoJqisz13rXPrsaJ7/view?usp=sharing) | [2026 年の概要](https://drive.google.com/file/d/1-8zHX89X1EX5yf3HAzAmvJlFcO-XZnei/view?usp=sharing)
+
+2027 HDHP: [2027 SBC](https://drive.google.com/file/d/1VtLCGyU8Zd6mQ8Co_-KJUc6mePXf3572/view?usp=drive_link) | [2027 年の概要](https://drive.google.com/file/d/1QPuRhsk7NuyvLiruUxp4e6yHD6-irfYi/view?usp=drive_link)
 
 **GitLab HSA 拠出:**
 
 - チームメンバーのみカバレッジ: 月額 $100
 - チームメンバー + 配偶者/子/家族カバレッジ: $125
 
-RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
+RX プラン: [2026 年の標準 3 階層の医薬品リスト](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing) | [2027 年の標準 3 階層の医薬品リスト](https://drive.google.com/file/d/15lQjA_ASVnPzBVYqso4A_N0x-C4Bhwvv/view?usp=drive_link)
 
 #### Cigna PPO {#cigna-ppo}
 
-PPO: [2026 Summary](https://drive.google.com/file/d/1o6IHytz5ddiOedimgyFWU8obquF5BxFx/view?usp=sharing) | [2026 Summary Utah](https://drive.google.com/file/d/1uNHA_0Xtk7EEUscovappLZa5PD8sdG68/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1dwKYobzRKSdulXDDzSXzlOieMN_U7jsp/view?usp=sharing) | [2026 SBC Utah](https://drive.google.com/file/d/1WsiTvy5PYVhTgcjwUqNNc3s5CDUETTCt/view?usp=sharing)
+2026 PPO: [2026 年の概要](https://drive.google.com/file/d/1o6IHytz5ddiOedimgyFWU8obquF5BxFx/view?usp=sharing) | [2026 年の概要（Utah）](https://drive.google.com/file/d/1uNHA_0Xtk7EEUscovappLZa5PD8sdG68/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1dwKYobzRKSdulXDDzSXzlOieMN_U7jsp/view?usp=sharing) | [2026 SBC（Utah）](https://drive.google.com/file/d/1WsiTvy5PYVhTgcjwUqNNc3s5CDUETTCt/view?usp=sharing)
 
-RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing)
+2027 PPO: [2027 年の概要](https://drive.google.com/file/d/1k4ALpdSzOuTAbCj4mSZUdgyA1d1OD30W/view?usp=drive_link) | [2027 年の概要（Utah）](https://drive.google.com/file/d/1zAya2Iu5K0xEqHfT90rRkLobi5fXAQrI/view?usp=drive_link) | [2027 SBC](https://drive.google.com/file/d/1_dg47mqeJPJyff0Ycsgi3EfOOPLqSio1/view?usp=drive_link) | [2027 SBC（Utah）](https://drive.google.com/file/d/1npQsP_86B1fP6BLyE70g69ikDd3M73dx/view?usp=drive_link)
+
+RX プラン: [2026 年の標準 3 階層の医薬品リスト](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view?usp=sharing) | [2027 年の標準 3 階層の医薬品リスト](https://drive.google.com/file/d/15lQjA_ASVnPzBVYqso4A_N0x-C4Bhwvv/view?usp=drive_link)
 
 *Utah Network の詳細は重要なカバレッジ注を参照してください
 
@@ -230,9 +235,17 @@ RX プラン: [2026 Standard 3-Tier](https://drive.google.com/file/d/1b_YCRHDNsf
 <details markdown="1">
 <summary>プランサマリー</summary>
 
-- Kaiser NorCal: [2026 Summary](https://drive.google.com/file/d/1qcZtEM28dus7ltdd7aym5IJUptSOEd65/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1UOsMV37R8QyiljsubawhcRNIxeDTnvhm/view?usp=sharing)
-- Kaiser SoCal: [2026 Summary](https://drive.google.com/file/d/1pG3cKY2qroZMVVncOSpDS6LOUZ7Huptg/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1VTHmUutjRvFpuJt-2zYBANKjQTkWFLiZ/view?usp=sharing)
-- Kaiser Hawaii: [2026 SBC](https://drive.google.com/file/d/1YBpS1-Kh6jtygJNs61lc0oJ2ZWuVHF3A/view?usp=sharing) | [2026 Summary](https://drive.google.com/file/d/15MigkT822LXKQx6tRIUWy1WXE9MS9D_M/view?usp=sharing)
+2026 Kaiser NorCal: [2026 年の概要](https://drive.google.com/file/d/1qcZtEM28dus7ltdd7aym5IJUptSOEd65/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1UOsMV37R8QyiljsubawhcRNIxeDTnvhm/view?usp=sharing)
+
+2027 Kaiser NorCal: [2027 年の概要](https://drive.google.com/file/d/1_n1ddGNizaD9ReEl8YayKmG59MGyGlVD/view?usp=drive_link) | [2027 SBC](https://drive.google.com/file/d/1EsVrnx-86wklET0vmv2RcaNMSvz-7HCM/view?usp=drive_link) | [2027 年のカイロプラクティック・鍼治療](https://drive.google.com/file/d/1MkPQtNIR_YpmNA5KvWE0Oeib9BPb9FYe/view?usp=drive_link)
+
+2026 Kaiser SoCal: [2026 年の概要](https://drive.google.com/file/d/1pG3cKY2qroZMVVncOSpDS6LOUZ7Huptg/view?usp=sharing) | [2026 SBC](https://drive.google.com/file/d/1VTHmUutjRvFpuJt-2zYBANKjQTkWFLiZ/view?usp=sharing)
+
+2027 Kaiser SoCal: [2027 年の概要](https://drive.google.com/file/d/1LrRLvhlOAELerW2hWRrEedd1cuUOMQqR/view?usp=drive_link) | [2027 SBC](https://drive.google.com/file/d/13MHqqvtrtaYFFH2ngNl6L4MPeVhHj9Pm/view?usp=drive_link) | [2027 年のカイロプラクティック・鍼治療](https://drive.google.com/file/d/1UpkCln-iGCtY9A5pyzch2IAw3w7rHFyO/view?usp=drive_link)
+
+2026 Kaiser Hawaii: [2026 SBC](https://drive.google.com/file/d/1YBpS1-Kh6jtygJNs61lc0oJ2ZWuVHF3A/view?usp=sharing) | [2026 年の概要](https://drive.google.com/file/d/15MigkT822LXKQx6tRIUWy1WXE9MS9D_M/view?usp=sharing)
+
+2027 Kaiser Hawaii: [2027 SBC](https://drive.google.com/file/d/1KMvJuLQfU0djNQeFFcUF3FM9bYSwAeFl/view?usp=drive_link) | [2027 年の概要](https://drive.google.com/file/d/1MfRHkeHPhOzROeJD9EQZl3PxIsP_Q_5m/view?usp=drive_link)
 
 </details>
 
@@ -252,8 +265,8 @@ Cigna を通じた包括的な歯科ケアは、2 つのカバレッジレベル
 
 **プランサマリー:**
 
-- [DPPO 2026 Base Plan](https://drive.google.com/file/d/1-XZvZjN2sz_CWtHz5q-iOvKNdsIGNTVi/view?usp=sharing)
-- [DPPO 2026 Buy Up Plan](https://drive.google.com/file/d/1VZBbNZX9M5A8P0cs_b1Q5kkTMRSL_vMX/view?usp=sharing)
+- [DPPO 2026 Base Plan](https://drive.google.com/file/d/1-XZvZjN2sz_CWtHz5q-iOvKNdsIGNTVi/view?usp=sharing) | [DPPO 2027 Base Plan](https://drive.google.com/file/d/1M6qb2nyE5wlzQlMuHwiiki73dsSd11bT/view?usp=drive_link)
+- [DPPO 2026 Buy Up Plan](https://drive.google.com/file/d/1VZBbNZX9M5A8P0cs_b1Q5kkTMRSL_vMX/view?usp=sharing) | [DPPO 2027 Buy Up Plan](https://drive.google.com/file/d/1h_-kT6fwGEw88cVXh3n-pqY1WDN1JSq-/view?usp=drive_link)
 
 ### 視力カバレッジ {#vision-coverage}
 
@@ -261,8 +274,8 @@ EyeMed と提携した Cigna を通じた視力ケア。プランの詳細と費
 
 **プランサマリー:**
 
-- [Vision 2026 Base](https://drive.google.com/file/d/1qfDmbwsiAhKf-h_GI6_ZcMr9CMqqSor6/view?usp=sharing)
-- [Vision 2026 Buy Up](https://drive.google.com/file/d/1_omcfVakTHoJqvmEjKdrPyJ3Mvd_M6tU/view?usp=sharing)
+- [Vision 2026 Base](https://drive.google.com/file/d/1qfDmbwsiAhKf-h_GI6_ZcMr9CMqqSor6/view?usp=sharing) | [Vision 2027 Base](https://drive.google.com/file/d/1fc84BIIN1HJ5qD29HOHjy-6a0d7U3Srw/view?usp=drive_link)
+- [Vision 2026 Buy Up](https://drive.google.com/file/d/1_omcfVakTHoJqvmEjKdrPyJ3Mvd_M6tU/view?usp=sharing) | [Vision 2027 Buy Up](https://drive.google.com/file/d/1MkoGHbhwZrmh0ZHP4VgR9Sjr8hhN-JlA/view?usp=drive_link)
 
 ### 任意加入の傷害保険、入院保険、重大疾病保険 {#voluntary-accident-hospital-and-critical-illness-insurance}
 
@@ -327,7 +340,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 **リソース**
 
 - [Voluntary Life Insurance Details](https://drive.google.com/file/d/1q10xugbtFJMhoMJ6tCzD4It5bSdoKEf4/view?usp=sharing)
-- [2026 Cost Sheet](https://drive.google.com/file/d/1MqQGQFYHj2tq2r85Ey3lDvqIdxo8W0gR/view?usp=sharing)
+- [費用一覧](https://drive.google.com/file/d/1MqQGQFYHj2tq2r85Ey3lDvqIdxo8W0gR/view?usp=sharing)
 
 <details markdown="1">
 <summary>保険適格性の証拠と退職者</summary>
@@ -413,7 +426,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 
 自動 Roth in-plan 変換付きで税引後拠出を行うことができます。設定するには、[これらの手順](https://drive.google.com/file/d/16Xpn4FiuX0EcCOkegSG5KwYi8IQhr3--/view?usp=sharing)に従ってください。自動変換のためには、Fidelity に 800-835-5097 で電話する必要があります。
 
-利点と考慮事項の詳細については、[Fidelity FAQ](https://drive.google.com/file/d/1WtisN4O4O7X_vtS6YP4X8nVP1xukc2uL/view?usp=sharing)と私たちの [SageView ウェビナー](https://drive.google.com/file/d/1u0LrgJFh3-_lQ-vgXlI2CBbnKJ0t7eX6/view?usp=sharing)を参照してください。
+利点と考慮事項の詳細については、[Fidelity FAQ](https://drive.google.com/file/d/1WtisN4O4O7X_vtS6YP4X8nVP1xukc2uL/view?usp=sharing)と私たちの [Creative Planning（旧 SageView）のウェビナー](https://drive.google.com/file/d/1u0LrgJFh3-_lQ-vgXlI2CBbnKJ0t7eX6/view?usp=sharing)を参照してください。
 
 **重要:** 税引後控除は ESPP 拠出よりも優先されます。両方を希望する場合、十分な資金があることを確認するために慎重に計算してください。
 
@@ -427,7 +440,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 **質問とサポート:**
 
 - **401(k) の変更、ローン、変換:** Fidelity に 800-835-5097 で電話
-- **財務計画:** [SageView との無料相談](https://calendly.com/elamb-financial/30min?month=2023-10)をスケジュール
+- **財務計画:** [Creative Planning（旧 SageView）との無料相談](https://calendly.com/elamb-financial/30min?month=2023-10)をスケジュール
 - **一般的な質問:** [Compass](https://app.serval.com/new-request)に連絡
 
 </details>
@@ -654,8 +667,8 @@ MetLife Pet Insurance、柔軟なプラン:
 
 [WEX (Discovery Benefits)](https://drive.google.com/file/d/0B4eFM43gu7VPek1Ia0ZqYjhuT25zYjdYTUpiS1NFSXFXc0Vn/view?usp=sharing)を通じた税優遇された交通給付:
 
-- 駐車場に月最大 $340
-- 交通機関に月最大 $340
+- **2026 年:** 駐車場は月額最大 $340、公共交通機関は月額最大 $340
+- **2027 年:** 駐車場は月額最大 $350、公共交通機関は月額最大 $350
 - 資金は月から月へロールオーバー
 - **年中の変更:** Qualifying Life Event プロセスを通じて利用可能
 

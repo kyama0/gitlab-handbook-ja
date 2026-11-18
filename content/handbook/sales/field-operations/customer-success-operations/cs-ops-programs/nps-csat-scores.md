@@ -2,11 +2,11 @@
 title: "顧客満足度サーベイ"
 description: "これらのサーベイの詳細、定義方法、対応方法についての解説。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/cs-ops-programs/nps-csat-scores/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T12:00:00Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: claude
 stale: false
-lastmod: "2025-12-23T11:06:16-05:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 ## **顧客満足度サーベイとは？**
@@ -17,7 +17,7 @@ lastmod: "2025-12-23T11:06:16-05:00"
 
 **GitLab における顧客満足度サーベイの例:**
 
-* [**User Satisfaction Plus (USAT+)**](/handbook/product/ux/performance-indicators/usat-plus/)**:** UX Research チームが Rally UXR と Qualtrics を通じて GitLab.com の有料エンドユーザーの代表サンプルに対して実施するこれらのサーベイは、GitLab という製品への満足度を年 2 回測定することに焦点を当てています。
+* [**User Satisfaction Plus (USAT+)**](/handbook/upstream-studios/performance-indicators/usat-plus/)**:** UX Research チームが Rally UXR と Qualtrics を通じて GitLab.com の有料エンドユーザーの代表サンプルに対して実施するこれらのサーベイは、GitLab という製品への満足度を年 2 回測定することに焦点を当てています。
 * **Customer Satisfaction CSAT**: Customer Success が所有するこの年 2 回のサーベイは、製品とチームとのエンゲージメント両方の満足度を測定します。
 * **Service CSAT:** Customer Success チームが Gainsight を通じてより広範な対象に実施するこれらのサーベイは、GitLab の全体的なサポート、サービスレベル、カスタマーエクスペリエンスに対する顧客満足度を評価します。これらは取引的なものになる傾向があり、私たちのチームとの最も直近のやり取りに焦点を当てています。
 
@@ -36,9 +36,9 @@ lastmod: "2025-12-23T11:06:16-05:00"
 * [全顧客向け CSAT サーベイ（Customer Success）](/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs/)
 * Post-Scale Engagement CSAT Survey
 * HVS-FO [Case Closure Survey](/handbook/sales/commercial/high_velocity_sales_first_orders/#email-to-case) CSAT Survey
-* [USAT+ Survey (UX Research)](/handbook/product/ux/performance-indicators/usat-plus/)
+* [USAT+ Survey (UX Research)](/handbook/upstream-studios/performance-indicators/usat-plus/)
 
-### **全顧客向け CSAT と USAT サーベイの違いは何ですか？**
+### **全顧客向け CSAT と USAT サーベイの違いは何ですか？** {#what-are-the-differences-between-the-all-customer-csat-and-usat-surveys}
 
 | 質問 | 全顧客向け CSAT | USAT |
 | :---- | :---- | :---- |
@@ -64,7 +64,7 @@ GitLab とのサービス、製品、やり取り、または体験の満足度�
 
 * Owner または GitLab Admin としてアカウントに設定された、特定された Billing または Procurement ペルソナ
 * アカウントの Guest、Reporter、Developer、Maintainer 役割
-* UX Research チームが実施する [USAT](/handbook/product/ux/performance-indicators/#regular-performance-indicators) サーベイなど、過去 8 週間以内に他の関連サーベイから連絡を受けたユーザー。
+* UX Research チームが実施する [USAT](/handbook/upstream-studios/performance-indicators/usat-plus/) サーベイなど、過去 8 週間以内に他の関連サーベイから連絡を受けたユーザー。
 
 ## **CSAT サーベイ結果の閲覧**
 

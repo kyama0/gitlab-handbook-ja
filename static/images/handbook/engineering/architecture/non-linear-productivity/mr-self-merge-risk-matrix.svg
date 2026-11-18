@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1010" width="2000" height="1010" role="img" aria-labelledby="title desc">
+  <title id="title">Who can merge, by author and MR Risk Labeler rating</title>
+  <desc id="desc">Author not a maintainer: low risk, @gitlab-bot approves and a maintainer merges without a human review; medium risk, a human maintainer approves; high risk, a human maintainer approves. Author is a direct Maintainer: low risk, self-merge after @gitlab-bot approves; medium risk, self-merge after GitLab Duo and then @gitlab-bot approve, in projects on the maintainer path; high risk, a human maintainer approves.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; }
+    .head { font-size: 44px; font-weight: 600; fill: #1f1e24; }
+    .rowhead { font-size: 44px; font-weight: 600; fill: #1f1e24; }
+    .rowsub { font-size: 32px; fill: #535158; }
+    .muted { font-size: 36px; fill: #535158; }
+    .title { font-size: 42px; font-weight: 600; }
+    .sub { font-size: 30px; }
+    .note { font-size: 30px; fill: #535158; text-anchor: start; }
+    .neutral { fill: #fbfafd; stroke: #dcdcde; stroke-width: 2; }
+    .green { fill: #ecf4ee; stroke: #2f7a3e; stroke-width: 2; }
+    .red { fill: #fcf1ef; stroke: #c0362c; stroke-width: 2; }
+    .g1 { fill: #1d5a2c; } .g2 { fill: #2f7a3e; }
+    .r1 { fill: #8d1300; } .r2 { fill: #c0362c; }
+  </style>
+  <rect width="2000" height="1010" fill="#ffffff"/>
+
+  <!-- Header row -->
+  <rect class="neutral" x="60" y="60" width="380" height="110" rx="12"/>
+  <text class="muted" x="250" y="128">Author vs risk</text>
+  <rect class="neutral" x="460" y="60" width="480" height="110" rx="12"/>
+  <text class="head" x="700" y="130">Low risk</text>
+  <rect class="neutral" x="960" y="60" width="480" height="110" rx="12"/>
+  <text class="head" x="1200" y="130">Medium risk</text>
+  <rect class="neutral" x="1460" y="60" width="480" height="110" rx="12"/>
+  <text class="head" x="1700" y="130">High risk</text>
+
+  <!-- Row 1: author not a maintainer -->
+  <rect class="neutral" x="60" y="190" width="380" height="190" rx="12"/>
+  <text class="rowhead" x="250" y="275">Author</text>
+  <text class="rowsub" x="250" y="325">not a maintainer</text>
+
+  <rect class="green" x="460" y="190" width="480" height="190" rx="12"/>
+  <text class="title g1" x="700" y="258">No human review</text>
+  <text class="sub g2" x="700" y="308">@gitlab-bot approves;</text>
+  <text class="sub g2" x="700" y="348">a maintainer merges</text>
+
+  <rect class="red" x="960" y="190" width="480" height="190" rx="12"/>
+  <text class="title r1" x="1200" y="275">No self-merge</text>
+  <text class="sub r2" x="1200" y="325">A human maintainer approves</text>
+
+  <rect class="red" x="1460" y="190" width="480" height="190" rx="12"/>
+  <text class="title r1" x="1700" y="275">No self-merge</text>
+  <text class="sub r2" x="1700" y="325">A human maintainer approves</text>
+
+  <!-- Row 2: author is a direct Maintainer -->
+  <rect class="neutral" x="60" y="400" width="380" height="190" rx="12"/>
+  <text class="rowhead" x="250" y="485">Author</text>
+  <text class="rowsub" x="250" y="535">is a maintainer</text>
+
+  <rect class="green" x="460" y="400" width="480" height="190" rx="12"/>
+  <text class="title g1" x="700" y="485">Self-merge</text>
+  <text class="sub g2" x="700" y="535">@gitlab-bot approves</text>
+
+  <rect class="green" x="960" y="400" width="480" height="190" rx="12"/>
+  <text class="title g1" x="1200" y="468">Self-merge *</text>
+  <text class="sub g2" x="1200" y="518">@gitlab-bot approves after</text>
+  <text class="sub g2" x="1200" y="558">GitLab Duo approves</text>
+
+  <rect class="red" x="1460" y="400" width="480" height="190" rx="12"/>
+  <text class="title r1" x="1700" y="485">No self-merge</text>
+  <text class="sub r2" x="1700" y="535">A human maintainer approves</text>
+
+  <!-- Notes -->
+  <rect class="neutral" x="60" y="620" width="1880" height="350" rx="12"/>
+  <text class="note" x="110" y="680">@gitlab-bot approves through triage-ops, based on the MR Risk Labeler's rating of the head commit.</text>
+  <text class="note" x="110" y="730">Its approval counts only on CODEOWNERS entries that list @gitlab-bot. Other paths still need a code owner.</text>
+  <text class="note" x="110" y="780">* Only in projects that set maintainer_path in triage-ops' config/mr_approval_flow.yml,</text>
+  <text class="note" x="134" y="820">and only while the MR_RISK_MAINTAINER_PATH switch is on.</text>
+  <text class="note" x="110" y="870">Authors can always ask another human to review, at any risk level.</text>
+  <text class="note" x="110" y="920">GitLab Duo approvals still count: resolve every GitLab Duo finding before merging.</text>
+</svg>

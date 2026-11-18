@@ -2,11 +2,11 @@
 title: "UX 品質メトリクスフレームワーク"
 description: "コンセプト、デザイン、アプリ内体験の UX 品質を評価するために、何を測定し、どう測定するかを定義するフレームワークです。"
 upstream_path: /handbook/product/ux/ux-quality-metrics-framework/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:37:21Z"
+upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
+translated_at: "2026-11-18T21:13:27+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-11-18T08:57:11-08:00"
 ---
 
 最終更新: 2026-01-22
@@ -177,7 +177,7 @@ B2B システムの優先順位:
 
 あなたのニーズに適した方法を実行するために UX リサーチと連携してください。
 
-- 全体プロダクトの認識のための [USAT+ サーベイ](/handbook/product/ux/performance-indicators/usat-plus/) - 四半期ごとの実施（UX リサーチが管理）
+- 全体プロダクトの認識のための [USAT+ サーベイ](/handbook/upstream-studios/performance-indicators/usat-plus/) - 四半期ごとの実施（UX リサーチが管理）
 - フォローアップインタビュー - 2-3 週間（たとえば、USAT+ 経由でオプトインしたユーザーに連絡できます）
 - [縦断的研究](/handbook/upstream-studios/experience-research/longitudinal-studies/) - 4-12 週間
 
