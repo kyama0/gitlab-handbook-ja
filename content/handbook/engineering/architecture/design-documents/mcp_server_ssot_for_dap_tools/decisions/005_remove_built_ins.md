@@ -1,14 +1,14 @@
 ---
 title: "DAP ツールの SSoT としての MCP サーバー ADR 005：Rails は置き換えられたネイティブツールを外し、古い名前は引き続き使えるようにする"
 description: "Rails は MCP ツールが置き換えたネイティブツールの提供をやめ、DWS はサポート対象の GitLab バージョンが必要とする間、Python ツールを保持します。"
-status: proposed
+status: accepted
 creation-date: "2026-10-28"
 authors: [ "@terrichu" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/decisions/005_remove_built_ins/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:12:02+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---

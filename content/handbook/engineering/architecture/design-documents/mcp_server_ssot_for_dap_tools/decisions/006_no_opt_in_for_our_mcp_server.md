@@ -1,14 +1,14 @@
 ---
 title: "DAP ツールの SSoT としての MCP サーバー ADR 006：私たちの MCP サーバーを MCP のオプトイン設定の対象外にする"
 description: "最初のフェーズとして、外部 MCP ツールの設定と `mcp_client` フラグが私たちの MCP サーバーのツールをブロックしないようにします。"
-status: proposed
+status: accepted
 creation-date: "2026-10-28"
 authors: [ "@terrichu" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/decisions/006_no_opt_in_for_our_mcp_server/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:12:02+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---

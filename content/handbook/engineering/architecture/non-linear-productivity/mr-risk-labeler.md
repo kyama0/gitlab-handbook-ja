@@ -2,16 +2,16 @@
 title: "MR Risk Labeler"
 description: "MR Risk Labeler がマージリクエストを低・中・高リスクに評価する方法と、その評価によるレビュー・承認担当者の変化。"
 upstream_path: /handbook/engineering/architecture/non-linear-productivity/mr-risk-labeler/
-upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
-lastmod: "2026-11-18T11:28:32-06:00"
-translated_at: "2026-11-19T06:12:11+09:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T15:51:58-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
 
 ## 概要 {#overview}
 
-MR Risk Labeler は、各マージリクエストを低、中、高リスクに評価します。この評価によって、必要な人間のレビューの程度を決めます。`gitlab-org/gitlab`（2026-11-16 から）と `gitlab-merge-request` で稼働しており、他のプロジェクトも[導入中](#pilot-projects)です。[Non-Linear Productivity チーム](/handbook/engineering/architecture/non-linear-productivity/)の [MR Bot](https://gitlab.com/groups/gitlab-org/-/work_items/24135) プロジェクトの一部です。
+MR Risk Labeler は、各マージリクエストを低、中、高リスクに評価します。この評価によって、必要な人間のレビューの程度を決めます。`gitlab-org/gitlab`（2026-11-16 から）、`ai-assist`、`gitlab-merge-request` で稼働しており、他のプロジェクトも[導入中](#pilot-projects)です。[Non-Linear Productivity チーム](/handbook/engineering/architecture/non-linear-productivity/)の [MR Bot](https://gitlab.com/groups/gitlab-org/-/work_items/24135) プロジェクトの一部です。
 
 Compliance が支持するエージェントによる承認経路はこれです。GitLab Duo が承認して作成者がマージするなど、他の経路は支持していません。チームが別のエージェントを使ってマージリクエストを承認している場合は、`#non_linear_productivity_initiatives` で相談してください。移行を支援します。
 
@@ -64,13 +64,13 @@ Compliance が支持するエージェントによる承認経路はこれです
 [`triage-ops`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/mr_approval_flow/reconcile_approval.rb) が、`@gitlab-bot` として承認します。`triage-ops` が開始した実行による、現在のコミットの最新の評価についてのみ承認します。プロジェクトごとの設定は、[`config/mr_approval_flow.yml`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/config/mr_approval_flow.yml) にあります。
 
 - **低リスク：** `@gitlab-bot` が承認します。作成者が Maintainer ならマージでき、それ以外は Maintainer がレビューせずにマージします。自動マージを設定するのは、bot による依存関係の更新だけです。
-- **Maintainer の経路：** 直接 Maintainer を付与された人の、低または中リスクと評価されたマージリクエストでは、レビュー担当者の依頼、変更要求、bot によるコミットがなければ、GitLab Duo の承認後に `@gitlab-bot` が承認します。作成者がマージします。この経路は、`config/mr_approval_flow.yml` に `maintainer_path` を設定しているプロジェクトで、`triage-ops` の `MR_RISK_MAINTAINER_PATH` CI/CD 変数が `1` の間に限り、`sample` で指定した割合のマージリクエストに適用されます。`gitlab-org/gitlab` では `sample: 100` を設定しているため、すべてのマージリクエストが対象です。
+- **Maintainer の経路：** 直接 Maintainer を付与された人の、低または中リスクと評価されたマージリクエストでは、レビュー担当者の依頼、変更要求、bot によるコミットがなければ、GitLab Duo の承認後に `@gitlab-bot` が承認します。作成者がマージします。この経路は、`gitlab-org/gitlab` など、`config/mr_approval_flow.yml` に `maintainer_path` を設定しているプロジェクトで、`triage-ops` の `MR_RISK_MAINTAINER_PATH` CI/CD 変数が `1` の間に限り適用されます。
 
 push、ドラフトへの切り替え、評価ラベルの削除によって、承認を取り消します。
 
 ## 試行プロジェクト {#pilot-projects}
 
-ラベラーは、`gitlab-org/gitlab` と `gitlab-merge-request` で稼働しています。他のプロジェクトは導入中です。その状況と、自分のプロジェクトを追加する方法は、[試行 Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/638927)にあります。導入するには、[導入手順](https://gitlab.com/components/agents-and-flows/gitlab-merge-request/#onboarding-a-project-to-the-mr-risk-labeler)に従います。コミュニティからの貢献と、フォークからのマージリクエストは対象外です。
+ラベラーは、`gitlab-org/gitlab`、[`ai-assist`](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist)、`gitlab-merge-request` で稼働しています。他のプロジェクトは導入中です。その状況と、自分のプロジェクトを追加する方法は、[試行 Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/638927)にあります。導入するには、[導入手順](https://gitlab.com/components/agents-and-flows/gitlab-merge-request/#onboarding-a-project-to-the-mr-risk-labeler)に従います。コミュニティからの貢献と、フォークからのマージリクエストは対象外です。
 
 ## FAQ {#faq}
 
@@ -91,7 +91,9 @@ push、ドラフトへの切り替え、評価ラベルの削除によって、�
 
 Maintainer の経路で、以下をすべて満たす場合に限ります。
 
-- IID が、[`config/mr_approval_flow.yml`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/config/mr_approval_flow.yml) の `maintainer_path` で設定したサンプルに含まれます。`gitlab-org/gitlab` では `sample: 100` を設定しているため、すべてのマージリクエストが対象です。
+- `gitlab-org/gitlab` と同様に、対象のプロジェクトで Maintainer の経路が有効になっています。
+  [`config/mr_approval_flow.yml`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/config/mr_approval_flow.yml) の
+  `maintainer_path` を確認してください。
 - プロジェクトの Maintainer を直接付与されています。グループを通じた Maintainer アクセスは、対象になりません。
 - GitLab Duo が、評価対象のコミットを承認しました。
 - 人間のレビュー担当者を依頼しておらず、誰も変更を要求していません。

@@ -1,16 +1,32 @@
 ---
 title: "MFE Platform ADR 002: 再利用可能なテストのアプローチ"
-description: "モノリス、MFE、LabBench モジュールで共有するユニット、統合、ブラウザー駆動テストの各層を備えた、単一の @gitlab/frontend-tests パッケージを提案します。"
+description: "モノリス、MFE、LabBench モジュールで共有するユニット、統合、ブラウザー駆動テストの各層を備えた、単一の @gitlab/frontend-tests パッケージを提案します。2026-11-18 の改訂で、マウント契約とホストランタイムは @gitlab/mfe-shell が提供し、ホスト側のテストはマーケットプレイスに従い、ひな形の生成には @gitlab/mfe-scripts を使用することになりました。"
 creation-date: "2026-10-07"
 authors: ["@fredericcaplette"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/decisions/002_reusable_testing_approach/
-upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
-lastmod: "2026-11-02T09:37:44-05:00"
-translated_at: "2026-11-02T21:17:59+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T23:06:48+02:00"
+translated_at: "2026-11-19T21:13:17+00:00"
 translator: codex
 stale: false
 ---
+
+## 改訂 {#amendments}
+
+- **2026-11-18。** 後続の ADR に合わせ、Module Federation の互換性とブラウザー駆動テストの各セクション、
+  パッケージの設定、決定、結果を改訂します。
+  - マウント契約は、モノリスの CI アーティファクトとしてではなく、`@gitlab/mfe-shell/contract` に同梱して提供します
+    （[ADR 006](006_mount_contract.md)）。
+  - すべてのテストは、手作業で設定したフェデレーションプラグインやテストパッケージ独自のホストページの代わりに、
+    唯一のホストランタイムである `@gitlab/mfe-shell` を通じて MFE をマウントします
+    （[ADR 009](009_host_runtime.md)）。
+  - モノリスのテストは、モノリス側でバージョンを更新する代わりに、マーケットプレイスの掲載内容に従います
+    （[ADR 007](007_marketplace.md)、[ADR 008](008_version_overrides.md)）。
+  - `@gitlab/mfe-scripts create` がテストのセットアップを書き出します（[ADR 010](010_scaffolding.md)）。
+
+  MFE を何にマウントするか、モノリスのどの要件に対してテストするかという問いは解決済みです。
+  以下では改訂箇所に *改訂* と記しています。元の記述はこのファイルの履歴を参照してください。
 
 ## 背景 {#context}
 
@@ -133,6 +149,14 @@ Rstest には、この隔たりを埋める Module Federation プラグインが
 
 これを双方で実行します。MFE のパイプラインでは、バンドルをビルドし、モノリスが期待する内容（共有ライブラリのバージョンとマウント契約）をモノリスの CI 出力からダウンロードして、そのビルドに対してテストを実行します。GraphQL スキーマや Rails フィクスチャと同じ考え方です。モノリスをチェックアウトせずに、ビルドの破損やバージョンの不一致を、それを引き起こした MR で検出できます。モノリス側では、MFE のバージョンを更新したときと `master` 上で、公開された MFE パッケージに対して同じテストを実行します。これにより、MFE が依存していたものをモノリスが変更した場合に検出できます。
 
+*改訂*。マウント契約はモノリスの CI からダウンロードしません。`@gitlab/mfe-shell/contract` に同梱し、そのメジャーバージョンがマニフェストの `schema` 番号になります（[ADR 006](006_mount_contract.md#5-versioning-and-extensibility)）。MFE は他の依存関係と同様に、`@gitlab/mfe-shell` のバージョンを固定します。モノリスの CI アーティファクトには、共有ライブラリのバージョンのみが残ります。
+
+*改訂*。テスト自体にフェデレーションプラグインを設定しません。`@gitlab/mfe-shell` が唯一のフェデレーションランタイムを提供し、マニフェスト URL からリモートを登録します。また、モノリスや `mfe-shell dev-host` と同じ方法でアプリケーションをマウントするテスト用ユーティリティを同梱します（[ADR 009](009_host_runtime.md#1-gitlabmfe-shell-is-the-only-host-runtime)）。MFE 側は Rstest で、モノリス側はパッケージの `require` 向けビルドを通じて Jest でテストを実行します。テストは 6 つの `MountProps` キーを渡して `mount(el, props)` を呼び出し、続いて `unmount(el)` を呼び出します（[ADR 006](006_mount_contract.md#1-the-shape-of-mountprops)）。`mfe-scripts create` が、すべての新しいアプリケーションにこのテストを契約テストとして書き出します（[ADR 010](010_scaffolding.md#1-gitlabmfe-scripts-create---into-owns-the-frontend-setup-everywhere)）。
+
+*改訂*。モノリスは MFE のバージョンを更新しません。リリースはマーケットプレイスのロックファイルを更新する MR を通じて GitLab.com に届きます。インスタンスはソースのデフォルトまたは管理者のオーバーライドに従って配信します（[ADR 007](007_marketplace.md)、[ADR 008](008_version_overrides.md)）。モノリスのコードにアプリケーション名を記述してはいけないため（[ADR 009](009_host_runtime.md#constraints)）、MFE ごとにテストを用意せず、テストでマーケットプレイスのインデックスを読み取ります。すべてのアプリケーションを現行のデフォルトバージョンで組み合わせてマウントします。さらに、各アプリケーションの掲載上の直前バージョンを、他のアプリケーションの現行デフォルトと組み合わせてマウントします（[ADR 008](008_version_overrides.md#consequences)）。テストは `master` 上とインデックスが変更されたときに実行します。
+
+以下の元の例は、この考え方を示しています。*改訂*。プラグインの設定はシェルのテスト用ユーティリティに置き換わります。リモートとして指定するのは、`remoteEntry.js` ではなく、アプリケーションのマニフェスト URL です。
+
 ```ts
 // rstest.config.ts
 import { defineConfig } from '@rstest/core';
@@ -161,10 +185,12 @@ it('exposes a mount function', async () => {
 - テストパッケージは、そのファイルを読み取って Rstest のフェデレーションプラグインを設定するプリセットを提供するため、MFE が手動で設定を書く必要はありません。
 - 双方に CI ジョブを設けます。MFE は自身のビルドに対してテストし、モノリスは最新の公開済みパッケージに対してテストします。
 
+*改訂*。アーティファクトには共有ライブラリのバージョンだけを含めます。マウント契約は、バージョンを固定した `@gitlab/mfe-shell` が提供します。プリセットはフェデレーションプラグインに代わり、シェルのテスト用ユーティリティをセットアップします。モノリス側のジョブは、前述のとおり、マーケットプレイスのインデックスに掲載されたバージョンをテストします。
+
 #### 未解決の問い {#open-questions-2}
 
 - MFE の MR で、実物をテストするためにモノリスのパイプラインも起動するべきでしょうか。最も忠実な確認になりますが、MFE の MR ごとにモノリスのパイプライン全体を実行するコストが生じ、2 つの CI セットアップが結合します。
-- MFE は、モノリスの期待する内容のうち、最新の `master` とタグ付きバージョンのどちらに対してテストするべきでしょうか。
+- MFE は、モノリスの期待する内容のうち、最新の `master` とタグ付きバージョンのどちらに対してテストするべきでしょうか。**[ADR 006](006_mount_contract.md#5-versioning-and-extensibility)と [ADR 008](008_version_overrides.md#6-compatibility-in-v1-lockstep-with-gitlabcom)で解決済み**。契約のバージョンは、MFE が固定する `@gitlab/mfe-shell` のバージョンです。v1 では、掲載されるすべてのバージョンが、提供側が現行のモノリスに対してリリースを行う GitLab.com と互換性があるものとします。
 
 ### ブラウザー駆動テスト {#browser-driven-tests}
 
@@ -211,9 +237,11 @@ test('renders work item list', async ({ page }) => {
 
 `host.html` は、パッケージが提供する静的ページです。マウント要素、基本の `@gitlab/ui` CSS、フェデレーションのリモートを読み込み、注入された設定でマウント関数を呼び出すスクリプトを含みます。モノリスと LabBench モジュールも実装するホストのマウント契約（マウント要素、注入される設定、発行されるイベント、共有依存関係、基本の CSS）を実装します。
 
+*改訂*。テストパッケージには独自のホストページを同梱しません。別のホストを作ると、[ADR 009](009_host_runtime.md#alternatives-considered)で単一のパッケージに集約するランタイムの再実装になります。Playwright は `mfe-shell dev-host`、または基本の `@gitlab/ui` CSS とテスト用クライアントを使って `MfeShell.init` を呼び出すページを読み込みます。アプリケーションは `remoteEntry.js` ではなく、マニフェスト URL（`/-/mfe/<app>/<version>/gitlab-mfe-manifest.json`）から登録します。ホストは [ADR 006](006_mount_contract.md#1-the-shape-of-mountprops)の `MountProps`、つまり `context`、`clients`、`props`、`features`、`preferences`、`services` を渡します。
+
 #### 新しい仕組み {#new-systems-3}
 
-1. MFE アプリをマウントするホストページと、`page.route` をダウンロード済みの Rails フィクスチャに接続する Playwright フィクスチャ。
+1. MFE アプリをマウントするホストページと、`page.route` をダウンロード済みの Rails フィクスチャに接続する Playwright フィクスチャ。*改訂*。ホストページには `mfe-shell dev-host` を使用し、テストパッケージが追加するのは Playwright フィクスチャのみです。
 1. 場合によっては、既存の契約から生成する GitLab の骨組み。
 
 #### 未解決の問い {#open-questions-3}
@@ -227,6 +255,8 @@ test('renders work item list', async ({ page }) => {
 1. リポジトリの CI 出力から取得または生成した完全な GitLab ページ。
 
 最初はおそらく選択肢 1 で十分です。それ以上は、早い段階でツールを増やしすぎるリスクがあります。パッケージが連携して機能することをテストする責任は、GitLab モノリスが引き続き担えます。
+
+**[ADR 009](009_host_runtime.md)で解決済み**。選択肢 1 を採用します。6 つの `MountProps` キーを使い、契約に準拠するアプリケーションをマウントするスタンドアロンホスト `mfe-shell dev-host` がこれを提供します。
 
 ## パッケージでの利用方法 {#how-a-package-consumes-it}
 
@@ -273,21 +303,24 @@ export default defineConfig({
 
 ADR 004 の `new-gitlab-module` は、パッケージを作成するときにこれら 3 つのファイルを書き出します。`@gitlab/frontend-config` の `ci/base.yml` は、`test` と `fixtures:download && test:integration` を別々のジョブとして実行します。
 
+*改訂*。MFE アプリケーションでは、`mfe-scripts create --into` がテストのセットアップと契約テストのひな形を生成する際に、これらのファイルを書き出します。リポジトリジェネレーターと LabBench は、独自のテンプレートを保持せずにこのコマンドを呼び出します（[ADR 010](010_scaffolding.md)）。プラットフォームの CI テンプレートは、すべてのマージリクエストで `mfe-scripts validate` を実行します（[ADR 010](010_scaffolding.md#4-one-validator-one-ci-template)）。
+
 ## 決定 {#decision}
 
 1. ユニットテスト環境に Rstest を使用し、インポートして使う共有の Rstest 設定を提供します。
 1. テストパッケージに、GraphQL スキーマに基づくモックデータジェネレーターを提供させます。
-1. Rstest を使って双方で Module Federation の互換性のスモークテストを行います。MFE は自身のビルドに対して、ホストは公開済みパッケージに対してテストし、jsdom 内で各 MFE の公開モジュールを、実際にビルドされたリモートエントリーからインポートします。
+1. Rstest を使って双方で Module Federation の互換性のスモークテストを行います。MFE は自身のビルドに対して、ホストは公開済みパッケージに対してテストし、jsdom 内で各 MFE の公開モジュールを、実際にビルドされたリモートエントリーからインポートします。*改訂*。双方とも `@gitlab/mfe-shell` のテスト用ユーティリティを通じてマウントし、MFE 側では Rstest、モノリスでは Jest を使用します。ホスト側はマーケットプレイスに掲載されたバージョンをテストします（[ADR 008](008_version_overrides.md#consequences)、[ADR 009](009_host_runtime.md)）。
 1. 統合テストには MSW を維持し、最新の Rails フィクスチャをダウンロードする再利用可能なスクリプトを追加します。
 1. 統合層を、MFE の動作をテストする主要な層とします。
-1. パッケージでブラウザー駆動テストを提供する場合は、Playwright を使用します。
+1. パッケージでブラウザー駆動テストを提供する場合は、Playwright を使用します。*改訂*。テストでは `mfe-shell dev-host` にマウントします（[ADR 009](009_host_runtime.md)）。
 
-**未決定**: スキーマに基づく REST 生成、MFE の MR でモノリスのパイプラインを起動するべきか、MFE がモノリスの期待する内容のどのバージョンに対してテストするか、ブラウザー駆動テストをパッケージ内に置くべきか、MFE を何にマウントするか。
+**未決定**なのは、スキーマに基づく REST 生成、MFE の MR でモノリスのパイプラインを起動するべきか、ブラウザー駆動テストをパッケージ内に置くべきかです。*改訂*。モノリスの要件のどのバージョンに対してテストするか、MFE を何にマウントするかについては、上記のとおり解決済みです。
 
 ## 結果 {#consequences}
 
 - `gitlab-org/frontend/tests` リポジトリに、既存の `integration/` に加え、`unit/`、`utils/`、場合によっては `e2e/` を設けます。
 - リポジトリを `gitlab-org/frontend/toolkit` に移動し、CI、ESLint、TSConfig のセットアップに `@gitlab/frontend-config` を使用します。[ADR 004](004_packages_group_and_shared_setup.md#migrating-the-existing-packages) を参照してください。npm パッケージ名は変更しません。
 - 各層をサブパス `@gitlab/frontend-tests/<layer>` として公開し、モノリス、MFE、LabBench モジュールが同様に利用します。
-- テストパッケージは、CI も含め、GraphQL スキーマ、Rails フィクスチャ、ホスト契約について、ビルド時にモノリスに依存します。
-- ホスト（モノリス、LabBench モジュール）は、公開済みパッケージに対するブラウザーのスモークテストを MFE ごとに 1 つ維持します。
+- テストパッケージは、CI も含め、GraphQL スキーマ、Rails フィクスチャ、ホスト契約について、ビルド時にモノリスに依存します。*改訂*。ホスト契約は `@gitlab/mfe-shell/contract` が提供するため、モノリスへの依存は、スキーマ、フィクスチャ、共有ライブラリのバージョンに限られます。
+- ホスト（モノリス、LabBench モジュール）は、公開済みパッケージに対するブラウザーのスモークテストを MFE ごとに 1 つ維持します。*改訂*。モノリスに MFE ごとのテストコードは置きません。単一のデータ駆動スモークテストがマーケットプレイスのインデックスを読み取り、現行のデフォルトバージョン同士の組み合わせと、各アプリケーションの掲載上の直前バージョンをカバーします。他のバージョンの組み合わせは設計上、テストの対象外です（[ADR 008](008_version_overrides.md#consequences)）。
+- *改訂*。`@gitlab/frontend-tests` はマウント処理を `@gitlab/mfe-shell` に依存し、ホストを再実装しません。

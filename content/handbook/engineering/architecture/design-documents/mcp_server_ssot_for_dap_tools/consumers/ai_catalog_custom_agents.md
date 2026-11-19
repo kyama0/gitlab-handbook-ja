@@ -3,9 +3,9 @@ title: "DAP ツールの SSoT としての MCP サーバー: AI Catalog のカ�
 description: "AI Catalog のカスタムエージェントを、組み込みツールからその置き換えとなる MCP ツールに移行する方法です。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/consumers/ai_catalog_custom_agents/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:16:01+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -24,9 +24,9 @@ AI Catalog のカスタムエージェントは、使用可能なツールを保
 
 Rails は保存済みの各組み込みツールを、その置き換えとなる MCP ツールに対応付け、DWS は Chat と同じコードで置き換えます（[決定 005](../decisions/005_remove_built_ins.md)）。どちらも置き換えフラグで制御します（[決定 007](../decisions/007_rollout_flags.md)）。
 
-1. ピッカーは、MCP ツールによって置き換えられる組み込みツールの列挙をやめます。MCP ツールの名前とエイリアスからペアを読み取るため（[決定 002](../decisions/002_pairs_in_meta.md)）、タイトルの比較と `duo_agentic_chat_prefer_mcp_tools` フラグを廃止できます。
+1. ペアが `true` に設定され、置き換えフラグと `duo_mcp_tool_governance` がオンになると、ピッカーは該当の組み込みツールを一覧に表示しなくなります（[決定 011](../decisions/011_turn_on_each_pair.md)）。ピッカーは `native_tool_swaps` から `true` のペアを読み取ります。キーは、MCP ツールの名前やエイリアスのうち、組み込みツール名に当たるものです（[決定 002](../decisions/002_pairs_in_meta.md)）。これにより、タイトルの比較と `duo_agentic_chat_prefer_mcp_tools` フラグを廃止できます。
 1. 置き換え対象の組み込みツール ID を指定する作成または更新リクエストでも、引き続きその ID を保存するため、API スクリプトは動作し続けます。レスポンスには、置き換えとなる MCP ツールの名前を示す警告を含めます。それ以降、このエージェントは他の保存済みエージェントと同じように扱います（項目 3）。
-1. 保存済みバージョンは、保存時の ID を維持します。セッションが開始すると、Rails は保存済みの各組み込みツールと並べて、その置き換えとなる MCP ツールを送信します。その後、DWS は[ルール 1](../_index.md#rules-that-apply-everywhere)を適用します。MCP ツールが到着した場合はそれを使用し、それ以外の場合はネイティブツールを使用します。エージェントの次のセッション以降、エージェントを編集できるすべての人に、AI Catalog のエージェントページ上で置き換えに関する通知を表示します。誰もこれを承諾する必要はありません。現在、Rails がエイリアスを解決するのはエージェントの MCP ツールのみで、組み込みツールではないため、この対応付けは新しいものです。
+1. 保存済みバージョンは、保存時の ID を維持します。セッションが開始すると、ペアが `true` に設定されている保存済みの組み込みツールごとに、Rails はその組み込みツールと置き換え先の MCP ツールを並べて送信します。その後、DWS は[ルール 1](../_index.md#rules-that-apply-everywhere)を適用します。MCP ツールが到着した場合はそれを使用し、それ以外の場合はネイティブツールを使用します。エージェントの次のセッション以降、エージェントを編集できるすべての人に、AI Catalog のエージェントページ上で置き換えに関する通知を表示します。誰もこれを承諾する必要はありません。現在、Rails がエイリアスを解決するのはエージェントの MCP ツールのみで、組み込みツールではないため、この対応付けは新しいものです。
 1. モデルには MCP ツール自身の名前である `gitlab_get_job` が表示され、説明には「`get_job_logs` を置き換えます。」が追加されます（[決定 004](../decisions/004_tool_name.md)）。「`get_job_logs` を使用してください」というエージェントのプロンプトでも、モデルを適切なツールに導きます。
 
 ## ロールアウト {#rollout}
@@ -41,4 +41,4 @@ Rails は保存済みの各組み込みツールを、その置き換えとな�
 1. **破壊的な相違がある入力スキーマをどのように扱いますか？** 各ペアの MCP ツールの引数は、ネイティブツールと異なる場合があります。引数の名前の変更、削除、新たな必須化、型や列挙値の変更です。選択肢は次のとおりです。
    - 可能な場合は呼び出しを変換します。たとえば `id` を `project_id` に、または `list_merge_request_diffs` を `include: ["diffs"]` を指定した `get_merge_request` に変換します。
    - 新しい引数の名前を示すエラーをエージェントに返します。その後、モデルは再試行しますが、毎回最初の呼び出しでトークンを消費します。
-1. **アクセスを拡大する統合をどのように扱いますか？** `get_merge_request_conflicts` を選択したエージェントには、`get_merge_request` 全体が渡されます。[決定 009](../decisions/009_accept_widening_under_governance.md)は、ツールガバナンスが対応する場合にこれを受け入れることを提案しています。
+1. **アクセスを拡大する統合をどのように扱いますか？** `get_merge_request_conflicts` を選択したエージェントには、`get_merge_request` 全体が渡されます。[決定 009](../decisions/009_accept_widening_under_governance.md)では、ツールガバナンスが適用される場合にこれを受け入れます。

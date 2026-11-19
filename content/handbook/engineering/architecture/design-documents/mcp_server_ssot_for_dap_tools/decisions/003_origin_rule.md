@@ -1,14 +1,14 @@
 ---
 title: "DAP ツールの SSoT としての MCP サーバー ADR 003：私たちの MCP サーバーのツールがちょうど 1 つある場合だけネイティブツールを置き換える"
 description: "DWS は私たちの MCP サーバーのツールがちょうど 1 つある場合だけネイティブツールを置き換え、他のサーバーやクライアントがネイティブツールを非表示にできないようにします。"
-status: proposed
+status: accepted
 creation-date: "2026-10-28"
 authors: [ "@terrichu" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/decisions/003_origin_rule/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:10:14+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---

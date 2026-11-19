@@ -3,9 +3,9 @@ title: "DAP ツールの SSoT としての MCP サーバー: DAP Chat"
 description: "DAP Chat を、ネイティブツールからその置き換えとなる MCP ツールに移行する方法です。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/consumers/dap_chat/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:16:01+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -23,10 +23,10 @@ DAP Chat は、フローレジストリ内の従来の `chat` ワークフロー
 
 ## 計画 {#plan}
 
-1. **置き換えをツールレジストリに移し**、Chat を利用するすべての側が 1 つのルールを使用するようにします。私たちの MCP サーバーから登録されたツールが `com.gitlab/replaces` にネイティブツールを列挙している場合、DWS はそのネイティブツールを除外します（[決定 002](../decisions/002_pairs_in_meta.md)、[決定 003](../decisions/003_origin_rule.md)）。MCP サーバーがそのフィールドを追加するのは、置き換えフラグが有効な間だけです（[決定 007](../decisions/007_rollout_flags.md)）。
+1. **置き換えをツールレジストリに移し**、Chat を利用するすべての側が 1 つのルールを使用するようにします。私たちの MCP サーバーから登録されたツールが `com.gitlab/replaces` にネイティブツールを列挙している場合、DWS はそのネイティブツールを除外します（[決定 002](../decisions/002_pairs_in_meta.md)、[決定 003](../decisions/003_origin_rule.md)）。MCP サーバーは、置き換えフラグがオンの間に限り、`true` に設定されたペアについてのみそのフィールドを追加します（[決定 011](../decisions/011_turn_on_each_pair.md)、[決定 007](../decisions/007_rollout_flags.md)）。
 1. モデルに表示する MCP ツールに、**説明の行を追加します**。「`get_job_logs` を置き換えます。」という行です。
 1. **説明の行を含めて、セッション再開のテストを再実行します。** 最初の新しいペアを有効にする前に、再開したセッションが引き続き MCP ツールに切り替わることと、以前の呼び出しは誤りだったとモデルがユーザーに伝えなくなることを確認します。
 1. **`search` を修正します。** `com.gitlab/replaces` を送信しない GitLab バージョンのために既存の対応表を維持しつつ、MCP の `search` ツールが実際に登録された場合にのみネイティブの検索ツールを除外します。
-1. [フェーズ](../_index.md#phases)のとおり、**ペアをグループごとに有効にします**。同じ名前のペアとエイリアスのペアをまとめて有効にし、次に作業が必要な各ペアを個別に、統合を待つ各ペアを統合後に有効にします。DWS で出力処理を行うペアは、MCP ツールが同じ処理を行うまで待ちます。
+1. [フェーズ](../_index.md#phases)に沿って、マージリクエストで `native_tool_swaps` 内の該当項目を `true` に設定して**各ペアを有効にします**（[決定 011](../decisions/011_turn_on_each_pair.md)）。DWS で出力処理を行うペアは、MCP ツールが同じ処理を行うまで `false` のままにします。
 
 置き換えは `toolset:` と `tools:` コンポーネントで実行するため（[決定 010](../decisions/010_swap_in_toolset_and_tools_components.md)）、提供している Chat の設定は、[提案中の ADR-005](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7550)の計画どおり `tools:` に移行できます。Agentic Chat は、その設定が移行するまで、DWS が自動追加する MCP ツールを維持します。
