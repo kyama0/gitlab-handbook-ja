@@ -5,11 +5,11 @@ subcategory: Legal
 description: "アカウント削除およびデータアクセスのリクエスト処理を行う方法"
 controlled_document: true
 upstream_path: "/handbook/support/workflows/account_deletion_access_request_workflows/"
-upstream_sha: 37ce9f1fc6cb7cd8a0a8cf470c0de27d2cb53329
-translated_at: "2026-10-24T21:12:05.163783+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
-lastmod: "2026-10-23T15:27:45-04:00"
+lastmod: "2026-11-19T09:56:36+01:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -115,6 +115,8 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 `Support Engineer (Zendesk/cDot Deletion)` は、ユーザーの Customers Portal アカウントおよび/または Zendesk アカウントが存在するかどうかを判断する役割を担います。このタスク内では削除は行われません。ただし、Customers Portal の削除を実行する Console Engineers と、Zendesk アカウントを削除する Support Readiness に対し、後続のタスクが割り当てられるトリガーとして機能します。
 
 ###### **Step 1:** リスク評価のレビュー、アカウントタイプの確認、追加検証質問の送信 {#step-1-review-risk-rating-confirm-account-type-and-send-additional-verification-questions}
+
+**Request Details** セクションで、確認に使うアカウントとメールアドレスについて Privacy チームからの注記がないか確認します。メールアドレスは、コア識別子と異なる場合があります。
 
 1.1. アカウントが Enterprise User かどうか
 

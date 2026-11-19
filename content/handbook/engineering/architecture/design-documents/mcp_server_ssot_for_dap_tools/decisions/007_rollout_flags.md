@@ -1,14 +1,14 @@
 ---
 title: "DAP ツールの SSoT としての MCP サーバー ADR 007：ネイティブツールの置き換えに 1 つのフィーチャーフラグを使う"
 description: "1 つのフィーチャーフラグでネイティブツールの置き換えを有効化・無効化し、問題のある個別のペアは DWS で無効化します。"
-status: proposed
+status: accepted
 creation-date: "2026-10-28"
 authors: [ "@terrichu" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/decisions/007_rollout_flags/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:12:02+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -28,8 +28,9 @@ stale: false
   （[決定 002](002_pairs_in_meta.md)）。そのため、DWS 独自のフラグは不要です。この
   フィールドが届き、かつセッションのツールガバナンスが有効な場合に置き換えます（[ルール 1](../_index.md#rules-that-apply-everywhere)）。
   フラグと `duo_workflow_local_tool_governance` は、異なる人にロールアウトされる可能性があるためです。
-- フラグが有効になる時点で存在するペアは、一斉に有効になります（フェーズ 3）。後から追加するペアは、そのペアを成立させる
-  エイリアスがマージされた時点で有効になります（[決定 002](002_pairs_in_meta.md)）。
+- フラグが切り替えるのは `native_tool_swaps` で `true` に設定されたペアだけです（[決定 011](011_turn_on_each_pair.md)）。
+  マージリクエストで `true` に設定されたペアは、フラグがオンならそのマージリクエストがマージされた時点で有効になり、
+  オフならフラグがオンになった時点で有効になります。
 - 問題のあるペアを 1 つだけ無効にするには、DWS がそのネイティブツールの `com.gitlab/replaces` を無視し、ネイティブ
   ツールを外さないようにします。次のターンから、現在の Chat と同じく、セッションには再び両方のツールが含まれます。ホスト型 DWS は
   [`main` へのマージごとにデプロイされる](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/22eff5dacc4d95b0f0211b7a43dc8b9f6f06d928/.gitlab-ci.yml#L153-160)ため、

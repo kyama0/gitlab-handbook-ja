@@ -1,14 +1,14 @@
 ---
 title: "DAP ツールの SSoT としての MCP サーバー ADR 004：モデルには MCP ツール自身の名前を提示する"
 description: "置き換え後、モデルは MCP ツール自身の名前で呼び出し、その説明にはどのネイティブツールを置き換えるかを記載します。"
-status: proposed
+status: accepted
 creation-date: "2026-10-28"
 authors: [ "@terrichu" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/decisions/004_tool_name/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:12:02+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---

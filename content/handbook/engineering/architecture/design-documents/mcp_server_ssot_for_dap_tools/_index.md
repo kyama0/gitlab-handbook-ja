@@ -1,7 +1,7 @@
 ---
 title: "DAP ツールの唯一の情報源としての GitLab MCP サーバー"
 description: "GitLab MCP サーバーを DAP の GitLab ツールの唯一の提供元にする計画：現在ツールが重複している箇所、ネイティブツールを置き換えるルール、利用側ごとの計画、決定事項。"
-status: proposed
+status: accepted
 creation-date: "2026-10-28"
 authors: [ "@terrichu" ]
 coaches: [ "@jessieay" ]
@@ -10,9 +10,9 @@ owning-stage: "~devops::agent foundations"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:06:35+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -79,37 +79,37 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
    - 切り替えフラグ（[決定 007](decisions/007_rollout_flags.md)）は、
      `duo_workflow_local_tool_governance`（[#613544](https://gitlab.com/gitlab-org/gitlab/-/issues/613544)）がオンの場所でのみロールアウトし、
      DWS はツールガバナンスが有効なセッションでのみ切り替えるため、両方のツールに同じルールが適用されます。
-   - #613544 がフェーズ 3 に間に合わない場合、提供されるまでの代替策として、ツールガバナンスがないセッションでは
-     読み取り専用のペアのみを切り替えます。
-2. **同等性がなければ切り替えません。** ペアは、MCP ツールが次の点でネイティブツールをカバーする場合にのみ有効になります。
-   - 引数と出力
+2. **同等性がなければ切り替えません。** `native_tool_swaps` でペアを `true` に設定するマージリクエストでは、
+   MCP ツールがネイティブツールをカバーすることを確認します（[決定 011](decisions/011_turn_on_each_pair.md)）。確認項目は次のとおりです。
+   - 引数と出力。
    - 読み取りか書き込みか。承認の扱いが変わらないようにします。Rails は `readOnlyHint` が true の MCP ツールを事前承認し
      （[`preapproved_tools_from_annotations`](https://gitlab.com/gitlab-org/gitlab/-/blob/457086d081040a46b5c4ece463b084bb350b554b/ee/app/services/ai/duo_workflows/mcp_config_service.rb#L180-191)）、
      DWS は `read_only_gitlab` に含まれるネイティブツールを事前承認します
      （[`_READ_ONLY_GITLAB_TOOLS`](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/e805bf7877976975dc70a5d3c549cd38ff6ab39f/duo_workflow_service/components/tools_registry.py#L143-201)）。
      この 2 つは一致する必要があります。
-   - 差分の除外など、現在 DWS が行う出力処理
+   - 差分の除外など、現在 DWS が行う出力処理。
    - アクセス範囲。ツールガバナンスが拡大分をカバーしない限り、MCP ツールがネイティブツールを超える範囲にアクセスしてはなりません
      （[決定 009](decisions/009_accept_widening_under_governance.md)）。アクセス範囲が広がるペアは、
-     決定 009 の事前承認ルールも待ちます。
+     決定 009 の事前承認ルールが整うまで `false` のままにします。
 
-   ネイティブツールにツールオプションを設定するフローコンポーネントは、オプションが MCP ツールへ引き継がれないため、
-   ネイティブツールを維持します。他のコンポーネントと Chat は切り替えます。2026 年 11 月 9 日時点では、`workplan` が
-   `create_work_item_note` に、`fix_pipeline` が `get_pipeline_failing_jobs` と `get_job_logs` にオプションを設定しています。コンポーネントは、
-   MCP ツールが同じオプションを受け取れ、
-   [提案中の ADR-005](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/59a7d5abb8a2cfeb15fdbd966b5bd03bfe251a43/docs/flow_registry/decisions/adr-005-toolset-selectors.md#L84-88)で
-   MCP ツールにオプション（`ops`）を設定できるようになってから、新しいメジャーフローバージョンで MCP ツールへ移行します。
-
-   ガバナンスについて別途チェックする必要はありません。ペアが存在するのは、ネイティブ名が一覧に表示される MCP ツールの名前か、
-   そのエイリアスのいずれかである場合だけであり（[決定 002](decisions/002_pairs_in_meta.md)）、ペアを切り替えるのはツールガバナンスが有効な場所だけです
-   （ルール 1）。
+   次の 2 つのケースは扱いが異なります。
+   - ガバナンスについて別途チェックする必要はありません。ペアが存在するのは、ネイティブ名が一覧に表示される MCP ツールの名前か、
+     そのエイリアスのいずれかである場合だけであり（[決定 002](decisions/002_pairs_in_meta.md)）、ペアを切り替えるのはツールガバナンスが有効な場所だけです
+     （ルール 1）。
+   - ネイティブツールにツールオプションを設定するフローコンポーネントは、オプションが MCP ツールへ引き継がれないため、
+     ネイティブツールを維持します。他のコンポーネントと Chat は切り替えます。2026 年 11 月 9 日時点では、`workplan` が
+     `create_work_item_note` に、`fix_pipeline` が `get_pipeline_failing_jobs` と `get_job_logs` にオプションを設定しています。コンポーネントは、
+     MCP ツールが同じオプションを受け取れ、
+     [提案中の ADR-005](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/59a7d5abb8a2cfeb15fdbd966b5bd03bfe251a43/docs/flow_registry/decisions/adr-005-toolset-selectors.md#L84-88)で
+     MCP ツールにオプション（`ops`）を設定できるようになってから、新しいメジャーフローバージョンで MCP ツールへ移行します。
 3. **保存済みのものは書き換えません。** 保存済みのエージェントとフローのバージョンは、保存時のツール名を維持します。保存済み
    エージェントは Chat と同じ切り替えによって MCP ツールを取得し、その編集権限を持つ人に通知します。決定論的なフローの
    ステップは、新しいメジャーフローバージョンでのみ変更します。
-4. **ネイティブツールと重複する新しい MCP ツールは、ペアとともにリリースします。** MCP ツールを追加する MR は、そのペアを
-   [ペアのページ](pairs.md)に記載します。ペアを成立させるエイリアスは、そのペアが同等性チェックに合格してからマージし、
-   それによってペアが有効になります。ネイティブツールと同じ名前の MCP ツールは、マージと同時にペアになるため、先に同等性チェックに
-   合格する必要があります。
+4. **ネイティブツールと重複する新しい MCP ツールは、ペアとともにリリースします。** MCP ツールを追加するマージリクエストで、そのペアを
+   [ペアのページ](pairs.md)に記載し、`native_tool_swaps` で `false` に設定します
+   （[決定 011](decisions/011_turn_on_each_pair.md)）。ペアが同等性チェックに合格したら、後続のマージリクエストで `true` に設定し、
+   有効にします。一覧に表示される MCP ツールの名前またはエイリアスが組み込みツール名と一致し、対応するエントリがない場合はテストが失敗します。
+   したがって、新しいペアには必ず `true` か `false` を明示する必要があります。
 5. **Rails は置き換えられたネイティブツールを削除します。DWS は古い GitLab のためにのみ Python コードを残します。**
    - Rails は、その GitLab バージョンのすべてのセッションに置き換え先の MCP ツールが届くようになると、ネイティブツールの提供を停止します。
    - DWS はホストされており、古い Self-Managed と Dedicated のバージョンにもサービスを提供するため、それらの
@@ -145,34 +145,55 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
 
 ## フェーズ {#phases}
 
-- **フェーズ 1、私たちの MCP サーバーを
-  [ロールアウトのゲート](#rollout-gates)の外へ出します。** DWS は、私たちの MCP サーバーの信頼されたツールを
-  **Allow external MCP tools** の適用対象から除外します。これは
-  [Orbit にすでに適用している](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7058)扱いと同じです。
-  また、`mcp_client` をデフォルトでオンにします（[決定 006](decisions/006_no_opt_in_for_our_mcp_server.md)）。リリースするのは、
-  [#613544](https://gitlab.com/gitlab-org/gitlab/-/issues/613544)によってツールガバナンスがオンになる場所のみとし、
-  [ルール 6](#rules-that-apply-everywhere)の ai-assist チェックを追加します。これをリリースするまで、
-  [ルール 5](#rules-that-apply-everywhere)による Python ツールの削除を含め、どのコードもネイティブツールを削除しません。
-- **フェーズ 2、動作の変更はありません。** MCP ツールの名前とエイリアスからペアのリストを作ります。
-  [#635112](https://gitlab.com/gitlab-org/gitlab/-/work_items/635112)（機密）の契約変更をリリースし、Workhorse が DWS へ各
-  ツールのサーバー、オリジン、`com.gitlab/replaces` を送るようにします。DWS の切り替え処理と説明行を追加します。同等性の
-  チェックリストを書きます。
-- **フェーズ 3、準備ができているペア。** [ペアのページ](pairs.md)の「同じ名前」と「ネイティブ名がすでにエイリアスになっている」の
-  グループを、すべての利用側で扱います。これらのペアはすでに存在するため、切り替えフラグをオンにするとまとめて有効になり、
-  それぞれが事前に同等性チェックに合格します。利用側は作業が完成した順に有効にします。最初は DAP Chat、
-  次に AI Catalog のカスタムエージェント、その次が基盤エージェントです。Chat の対応には `search` の修正が含まれるため、DWS は
-  MCP の `search` ツールが届いた場合にのみ、ネイティブの検索ツールを除外します。このフェーズは、ガバナンスが有効な DAP セッションが
-  これらのペアについてネイティブツールと置き換え先の MCP ツールの両方を提供することがなくなり、AI Catalog のツール選択画面が MCP ツールのみを提供するようになった時点で完了します。
-- **フェーズ 4、先に作業が必要なペア。** 「先に作業が必要」のグループの各ペアは、その作業が完成し、
-  ペアを成立させるエイリアスをマージした時点で有効になります。
-- **フェーズ 5、統合を待つペア。** 「統合待ち」のグループの各ペアは、MCP ツールを
-  統合した後で有効になり、統合先のツールを指すようになります。
-
-フロー、Orbit、Python コードの削除はフェーズに含めません。フローは私たちの MCP ツールを取得できるまで待ち
-（[フローのページ](consumers/flows.md)）、Orbit は[目標に含めず](#non-goals)、Python コードは
-[ルール 5](#rules-that-apply-everywhere)に従って削除します。
-
 1 つのフィーチャーフラグで、すべての場所の切り替えをオン・オフします（[決定 007](decisions/007_rollout_flags.md)）。
+
+### フェーズ 1：私たちの MCP サーバーをロールアウトのゲートから外す {#phase-1-take-our-mcp-server-out-from-behind-the-rollout-gates}
+
+- DWS は、私たちの MCP サーバーの信頼されたツールを **Allow external MCP tools** の適用対象から除外します。
+  [Orbit にすでに適用している](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7058)扱いと同じです
+  （[ロールアウトのゲート](#rollout-gates)）。
+- `mcp_client` をデフォルトでオンにします（[決定 006](decisions/006_no_opt_in_for_our_mcp_server.md)）。
+- [#613544](https://gitlab.com/gitlab-org/gitlab/-/issues/613544)によってツールガバナンスが有効になる場所にのみリリースします。
+- [ルール 6](#rules-that-apply-everywhere)で規定した ai-assist のチェックを追加します。
+- このフェーズの内容をリリースするまで、[ルール 5](#rules-that-apply-everywhere)による Python ツールの削除を含め、
+  どのコードもネイティブツールを削除しません。
+
+### フェーズ 2：動作を変えずに準備する {#phase-2-no-change-in-behavior}
+
+- MCP ツールの名前とエイリアスからペアのリストを作ります。
+- `native_tool_swaps` とそのテストを追加し、すべてのペアを `false` に設定します
+  （[決定 011](decisions/011_turn_on_each_pair.md)）。
+- [#635112](https://gitlab.com/gitlab-org/gitlab/-/work_items/635112)（機密）のインターフェース仕様の変更をリリースし、
+  Workhorse が DWS に各ツールのサーバー、オリジン、`com.gitlab/replaces` を送るようにします。
+- DWS の切り替え処理と説明行を追加します。
+- 同等性チェックのチェックリストを作成します。
+
+### フェーズ 3：準備ができているペア {#phase-3-the-pairs-that-are-ready}
+
+- このフェーズでは、すべての利用側について、[ペアのページ](pairs.md)の「同じ名前」と「ネイティブ名がすでにエイリアスになっている」のグループを扱います。
+- 各ペアは、同等性チェックに合格し、`true` に設定するマージリクエストがマージされた時点で有効になります
+  （[決定 011](decisions/011_turn_on_each_pair.md)）。
+- 利用側は作業が完了した順に有効にします。まず DAP Chat、次に AI Catalog のカスタムエージェント、そして基盤エージェントです。
+- Chat の対応には `search` の修正が含まれるため、DWS は MCP の `search` ツールが届いた場合にのみ、ネイティブの検索ツールを除外します。
+- ガバナンスが有効な DAP セッションで、対象のペアのネイティブツールと置き換え先の MCP ツールを両方出すことがなくなり、
+  AI Catalog のツール選択画面に MCP ツールだけが表示されるようになった時点で、このフェーズは完了します。
+
+### フェーズ 4：先に作業が必要なペア {#phase-4-the-pairs-that-need-work-first}
+
+- このフェーズでは、[ペアのページ](pairs.md)の「先に作業が必要」のグループを扱います。
+- 各ペアは、必要な作業が完了し、マージリクエストで `true` に設定された時点で有効になります。
+
+### フェーズ 5：統合を待つペア {#phase-5-the-pairs-that-wait-on-a-fold}
+
+- このフェーズでは、[ペアのページ](pairs.md)の「統合待ち」のグループを扱います。
+- 各ペアは、MCP ツールを統合し、マージリクエストで `true` に設定した後に有効になります。
+- その後、ペアは統合先のツールを指します。
+
+### フェーズに含まれない項目 {#not-in-a-phase}
+
+- フローは私たちの MCP ツールを取得できるようになるまで待ちます（[フローのページ](consumers/flows.md)）。
+- Orbit は[目標に含みません](#non-goals)。
+- [ルール 5](#rules-that-apply-everywhere)に従って Python コードを削除します。
 
 ## ロールアウトのゲート {#rollout-gates}
 
@@ -189,7 +210,7 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
 このグループ設定は、ユーザーが IDE で設定するサードパーティーの MCP サーバー向けに 2025 年に追加されました。私たちの MCP サーバーの
 ツールは、後から同じ経路で DAP に届くようになったため、現在はこの設定がそれらにも適用されています。信頼された Orbit ツールは
 [すでに適用対象から除外されています](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7058)。
-この計画は、最初のフェーズとして、私たちの MCP サーバーにも同じ除外を提案します
+この計画では、最初のフェーズとして、私たちの MCP サーバーにも同じ適用除外を設けます
 （[決定 006](decisions/006_no_opt_in_for_our_mcp_server.md)）。
 
 ## 決定事項 {#decisions}
@@ -204,6 +225,7 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
 1. [008：フローは Workhorse を通じて MCP ツールを実行する](decisions/008_flows_through_workhorse.md)
 1. [009：ガバナンスがカバーする場合、アクセス範囲の拡大を受け入れる](decisions/009_accept_widening_under_governance.md)
 1. [010：DWS は `toolset:` と `tools:` コンポーネントでツールを切り替える](decisions/010_swap_in_toolset_and_tools_components.md)
+1. [011：各ペアは同等性チェックに合格してから有効にする](decisions/011_turn_on_each_pair.md)
 
 ## 基本的な設計上の論点 {#fundamental-design-areas}
 
@@ -279,8 +301,9 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
 | クライアントや別の MCP サーバーが、自分のツールに `com.gitlab/replaces` を設定して、ネイティブツールを隠す | Workhorse は、私たちの MCP サーバーからの `com.gitlab/replaces` のみを転送し、クライアントのツールでは、すでに `trusted` を解除している箇所でこれも解除します。DWS も、[決定 003](decisions/003_origin_rule.md)の条件を満たすツールでのみ読み取ります。 |
 | 管理者がネイティブツールを拒否しているのに、MCP ツールがそのルールを迂回する | ペアが存在するのは、ネイティブ名が一覧に表示される MCP ツールの名前かエイリアスである場合だけなので、ツールガバナンスは同じルールを MCP ツールにも適用します。MCP サーバーは、`duo_mcp_tool_governance` がオンの間だけ `com.gitlab/replaces` を追加します。Rails は拒否された MCP ツールを提供せず、ネイティブツールも拒否されたままです。切り替えはツールガバナンスが有効な場所でのみ実行します（ルール 1）。 |
 | 切り替えにより、読み取りツールが承認を必要とするツールに変わる、またはその逆になる | 読み取りか書き込みかは、同等性チェックの一部です。 |
+| ペアが同等性チェックに合格する前に有効になる | ペアは、マージリクエストで `native_tool_swaps` 内の該当項目を `true` に設定した場合にのみ有効になります。MCP ツールが受け付ける組み込みツール名に対応するエントリがない場合は、テストが失敗します（[決定 011](decisions/011_turn_on_each_pair.md)）。 |
 | 切り替えや統合によって、保存済みエージェントがアクセスできる範囲が広がる | ガバナンスがカバーする場所でのみ受け入れます。古い名前のルールは新しいツール全体に適用し、管理者のルールが許可しない限り、書き込み呼び出しには引き続き承認が必要です（[決定 009](decisions/009_accept_widening_under_governance.md)）。 |
-| シェルコマンドを実行するリモートフローなど、ワークフロートークンを保持するコードが GitLab REST ルートを直接呼び出し、ツールガバナンスを迂回する | 現時点では受け入れます。これは新しい問題ではありません。現在、ネイティブツールは同じトークンでこれらのルートを呼び出すため、ペアが切り替わるまで、そのトークンにはこれらのルートが必要です。[#638125](https://gitlab.com/gitlab-org/gitlab/-/work_items/638125)は `mcp` スコープの同じ抜け道を塞ぎますが、`ai_workflows` は対象外です。 |
+| シェルコマンドを実行するリモートフローなど、ワークフロートークンを保持するコードが GitLab REST ルートを直接呼び出し、ツールガバナンスを迂回する | 現時点では受け入れます。これは新しい問題ではありません。現在、ネイティブツールは同じトークンでこれらのルートを呼び出すため、ペアが切り替わるまで、そのトークンにはこれらのルートが必要です。[#638125](https://gitlab.com/gitlab-org/gitlab/-/work_items/638125)は `mcp` スコープの同じ抜け道を塞ぎますが、`ai_workflows` は対象外です。[#640476](https://gitlab.com/gitlab-org/gitlab/-/work_items/640476)では、ネイティブツールが削除されるにつれて `ai_workflows` の書き込みアクセスを制限します。 |
 
 Application Security がこの脅威モデルをレビューします。
 

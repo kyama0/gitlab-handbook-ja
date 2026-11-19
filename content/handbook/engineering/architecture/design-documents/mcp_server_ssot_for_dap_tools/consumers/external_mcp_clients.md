@@ -3,9 +3,9 @@ title: "DAP ツールの SSoT としての MCP サーバー: 外部 MCP クラ�
 description: "MCP サーバーを直接呼び出すクライアントでの変更点です。置き換え対象のツールはエイリアスになり、すべての古い名前は動作し続けます。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/consumers/external_mcp_clients/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:17:27+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -54,7 +54,7 @@ MCP サーバーはすでにエイリアス（ツールの `tool_aliases`）を�
 
 ### `tools/list` での変更点 {#what-changes-in-toolslist}
 
-エイリアスは、現在と同じように `tools/list` に載せません。変更点は 1 つだけで、ネイティブの DAP ツールを置き換えるツールは、`_meta` に `com.gitlab/replaces` を持ちます（[決定 002](../decisions/002_pairs_in_meta.md)）。他のクライアントはこれを無視できます。
+エイリアスは、現在と同じように `tools/list` に載せません。変更点は 1 つだけです。ペアを `true` に設定すると、ネイティブの DAP ツールを置き換えるツールの `_meta` に `com.gitlab/replaces` が入ります（[決定 002](../decisions/002_pairs_in_meta.md)、[決定 011](../decisions/011_turn_on_each_pair.md)）。他のクライアントはこれを無視できます。
 
 ## 未解決の問題 {#open-questions}
 

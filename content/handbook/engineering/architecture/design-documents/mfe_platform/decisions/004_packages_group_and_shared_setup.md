@@ -5,9 +5,9 @@ creation-date: "2026-10-21"
 authors: ["@fredericcaplette"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/decisions/004_packages_group_and_shared_setup/
-upstream_sha: d5f4e694763c3ac443cc3d58c6a9a81bafa06880
-lastmod: "2026-11-02T09:37:44-05:00"
-translated_at: "2026-11-02T21:17:59+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T23:06:48+02:00"
+translated_at: "2026-11-19T21:13:17+00:00"
 translator: codex
 stale: false
 ---
@@ -123,7 +123,9 @@ AI だけにひな形生成を頼らず、新しいパッケージの初期設�
 
 これは、`@gitlab/frontend-config` に含まれ、`npx` で実行する Node スクリプトであるため、他にインストールするものはありません。ファイルの生成に加え、グループ内にプロジェクトを作成し、保護タグ `v*` を設定します。[このグループに必要なルール](#what-rules-does-this-group-need)を参照してください。
 
-LabBench モジュールは、ひな形生成に Python のテンプレートツール `copier` を使用します。フロントエンド部分ではこれを再利用しません。すべてのパッケージとパイプラインに Python を持ち込むことになるうえ、更新機能が、[パッケージの同期をどう維持するか](#how-do-we-keep-packages-in-sync)で却下するコピーして差分を比較する方式だからです。代わりに、LabBench テンプレートは UI 向けに `new-gitlab-module` を呼び出し、あらゆる場所で 1 つのスクリプトがフロントエンドのセットアップを管理するようにします。
+LabBench モジュールは、ひな形生成に Python のテンプレートツール `copier` を使用します。フロントエンド部分ではこれを再利用しません。すべてのパッケージとパイプラインに Python を持ち込むことになるうえ、更新機能が、[パッケージの同期をどう維持するか](#how-do-we-keep-packages-in-sync)で却下するコピーして差分を比較する方式だからです。LabBench は独自のフロントエンドテンプレートも保持しません。モジュールの UI はマイクロフロントエンドアプリケーションで、そのセットアップに使用するツールは次の段落で説明します。
+
+再利用可能なパッケージとは異なり、マイクロフロントエンド*アプリケーション*では、[ADR 010](010_scaffolding.md)がこの手順を具体化しています。アプリケーションのフロントエンドのセットアップ（マニフェストのメタデータ、`rspack` 設定、検証、CI の include）は `@gitlab/mfe-scripts create --into` が担います。新しいプロジェクトがアプリケーションなら `new-gitlab-module` がこれを呼び出し、LabBench はモジュールの UI 用に直接呼び出します。どちらも独自のフロントエンドテンプレートは保持しません。ここで説明したパッケージとプロジェクトの処理は、引き続き `new-gitlab-module` が担います。
 
 ## パッケージの同期をどう維持するか？ {#how-do-we-keep-packages-in-sync}
 

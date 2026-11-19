@@ -6,9 +6,9 @@ status: accepted
 creation-date: "2026-11-12"
 authors: [ "@pshutsin" ]
 upstream_path: /handbook/engineering/architecture/design-documents/workforce_hierarchy/decisions/001-workforce_hierarchy_architecture/
-upstream_sha: "000b58dcbc2a482a76ad9c605d66f7a602ebfd63"
-lastmod: "2026-11-16T19:50:32+01:00"
-translated_at: "2026-11-16T21:15:41+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-19T16:14:47+01:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -120,7 +120,16 @@ ClickHouse を利用できない場合は PostgreSQL の現在の状態を読み
 | ユニットが空か、不明なユニットが指定された人物 | 人物は、そのタイプのメンバーシップを持たない状態で残ります |
 | 別の人物と同じ業務用メールアドレスを持つ人物 | 人物は未照合のまま残ります |
 
-不備は読み取り結果に表示しません。実行開始時に不備を消去し、終了時に書き込みます。
+不備は読み取り結果に表示しません。スナップショットが検証に合格してから前回の不備を消去し、
+実行終了時に今回の不備を書き込みます。
+
+#### 同期ワークフロー {#sync-workflow}
+
+以下の図は、あるテナントでの 1 回の同期実行を示しています。
+
+![ワークフォース階層の同期ワークフロー](/images/engineering/architecture/design-documents/workforce_hierarchy/sync-workflow.svg)
+
+<!-- To edit, open the SVG in Excalidraw. The scene is embedded in the file. -->
 
 ### ID の照合 {#identity-matching}
 

@@ -3,15 +3,16 @@ title: "DAP ツールの SSoT としての MCP サーバー：ネイティブツ
 description: "MCP ツールで置き換え可能なネイティブ DAP ツールを、各ペアに必要な作業量ごとにまとめます。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/pairs/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-lastmod: 2026-11-12T21:20:00-08:00
-translated_at: "2026-11-14T09:10:14+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T13:21:18-08:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
 
 MCP ツールで置き換え可能なネイティブ DAP ツールです。どのペアも、有効にする前に入力
-スキーマを含めた同等性の確認が必要です。
+スキーマを含めた同等性の確認が必要です。マージリクエストで MCP ツールの `native_tool_swaps` の該当項目を `true` に設定すると、
+ペアが有効になります（[決定 011](decisions/011_turn_on_each_pair.md)）。
 
 各ペアの両ツールは、同じ GitLab データを読み書きします。「引数の差分」列には、ネイティブツールの引数のうち
 MCP ツールが受け取らないものを記載しています。2026-11-09 時点の内容であり、ツールの変更に伴って変わります。

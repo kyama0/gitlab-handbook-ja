@@ -2,9 +2,9 @@
 title: Growth and Development ファンド
 description: G&D ファンドを利用する際にチームメンバーがアクセスできるプログラムとリソースの説明。
 upstream_path: /handbook/people-group/learning-and-development/growth-and-development/
-upstream_sha: 494ec44577df92226718c2ecdc2df1632b5848a2
-lastmod: "2026-09-13T04:09:59-04:00"
-translated_at: "2026-09-15T21:58:00Z"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-18T17:36:37-06:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -177,11 +177,11 @@ G&D ファンドを通じたコーチングは、Manager レベル以上のチ�
 
 Parentaly は、出産する親と出産しない親を含め、育児休職を予定しているすべてのチームメンバーがグローバルに利用できる、専門家主導のプログラムです。このプログラムは、強固なカバープランの構築、効果的な業務移行、自信を持った復職を支援するために、休職前、休職中、休職後のパーソナライズされた 1:1 サポートを提供します。テンプレート、パーソナライズされたツールキットと資料に加え、育児休職を経験する数百人を支援してきた専任の Parentaly Expert との最大 9 回のセッションにアクセスできます。
 
-Parentaly の費用は $2,500 で、G&D アロケーションから資金提供されます。ただし、**ほとんどの G&D 機会とは異なり、前払いして払い戻しを申請する必要はありません。** GitLab があなたに代わって Parentaly に直接支払います。G&D Issue でマネージャー承認を受けた後、サインアップするだけです。
+Parentaly の費用は $2,700 で、G&D の支給枠から賄われます。ただし、**ほとんどの G&D 機会とは異なり、前払いして払い戻しを申請する必要はありません。** GitLab があなたに代わって Parentaly に直接支払います。G&D Compass で申請が承認されたら、申し込むだけです。
 
 プログラムの効果を最大限得るため、休職開始の少なくとも 2〜3 ヶ月前にサインアップすることを推奨します。ただし、復職時を含め、休職のどの段階でもサインアップできます。
 
-**払い戻し要件:** Parentaly は GitLab に直接請求します。あなたによる支払いまたは払い戻し手続きは不要です。G&D リクエストでマネージャー承認を受けた後、[Parentaly コーチングプログラムにサインアップ](https://www.parentaly.com/join/coaching-program/gitlab)してください。
+**払い戻し要件:** Parentaly は GitLab に直接請求します。自分で支払いや払い戻しの手続きを行う必要はありません。G&D Compass で申請が承認されたら、そのまま [Parentaly のコーチングプログラムに申し込んで](https://www.parentaly.com/join/coaching-program/gitlab)ください。
 
 マネージャーも、[Manager Toolkit](https://gitlab.parentaly.com) を有効化するか、[Manager Training](https://www.parentaly.com/join/events/manager-training) に参加することで Parentaly のサポートにアクセスできます。これにより、育児休職の移行を効果的にリードするためのリアルタイムサポートとガイド、リソースにアクセスできます。
 

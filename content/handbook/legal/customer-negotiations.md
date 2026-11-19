@@ -2,11 +2,11 @@
 title: Sales Guide | GitLab Legal との協働
 description: このリソースは、顧客との交渉において GitLab Legal と協働する際の運用面・教育面の要素について、GitLab Sales チームを支援するものです
 upstream_path: "/handbook/legal/customer-negotiations/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+translated_at: "2026-11-19T21:12:30Z"
 translator: claude
 stale: false
-lastmod: "2026-05-21T12:17:18-04:00"
+lastmod: "2026-11-19T13:01:59-05:00"
 ---
 
  この Handbook リソースの目的は、あらゆる種類の go-to-market のコマーシャル Legal リクエストやプロセスをナビゲートする上で、すべての GitLab チームメンバーに明確な道筋を提供することです。以下の情報は、皆さんが特定の情報を自分自身で見つけてアクセスできるよう支援するとともに、GitLab Commercial Legal チームと最善の形でつながり、その支援を調整する方法を明確に示すことを目的としています。
@@ -98,6 +98,22 @@ GitLab は、署名済みバージョンの DPA を Terms of Use のウェブサ
 ### RFP プロセス
 
 Request for Proposal（「RFP」、RFI、RFQ、RFX と呼ばれることもあります）の完了に関しては、[RFP Process handbook ページ](/handbook/security/security-assurance/field-security/field-security-rfp/)で、Sales チームメンバーが DRI として既存の Answer Base を活用し、部門横断のステークホルダーから関連情報を収集する方法に関する情報をご覧ください。
+
+#### RFP における顧客の契約条件 {#customer-terms-in-an-rfp}
+
+RFP によっては、顧客独自の取引条件、発注書の条件、またはサプライヤー向けの条件に同意するよう GitLab に求めるものがあります。「当社の取引条件に同意しますか」と直接質問する場合もあれば、回答に例外を記載しない限り、入札者は顧客の条件に同意したとみなす条項を設けている場合もあります。
+
+GitLab は RFP への回答を通じて顧客の条件に同意しません。直接質問された場合は「いいえ」と答え、以下の文言を記載します。入札者が条件に同意したとみなす旨が RFP に記載されている場合は、回答の例外事項として以下の文言を記載します。
+
+> RFP の対象ソフトウェアのベンダーとして GitLab が選定された場合、GitLab は、すべてのお客様に現状有姿で販売され、稼働する GitLab の標準ソフトウェアを正確に反映した GitLab の T&C（about.gitlab.com/terms で参照できます）に基づき、当該取引に適用する双方が合意できる取引条件を交渉したいと考えています。したがって、両当事者がそれぞれ受け入れ可能な取引条件について書面で合意するまでは、GitLab は本 RFP に基づいてソフトウェアやサービスを提供する義務を負いません。
+
+GitLab は、顧客の行動規範にも同意せず、これに従いません。直接質問された場合は「いいえ」と答え、以下の文言を記載します。入札者が顧客の行動規範に同意したとみなす旨が RFP に記載されている場合は、回答の例外事項として以下の文言を記載します。
+
+> GitLab は独自の Code of Conduct & Business Ethics（以下「規範」）を定めています。この規範は最高水準の基準を掲げ、GitLab の活動全体に即して策定され、そのすべてに適用されます。顧客ごとに事業や業界に応じた多種多様な行動規範があり、互いに矛盾したり、GitLab に適用されない事項を扱っていたりするため、GitLab がそれぞれに従うことは効率的でも合理的でも実用的でもありません。GitLab のスタッフ全員は、あらゆる状況で規範とその原則やルールに従う義務を負い、毎年その研修を受け、これらを行動の指針としています。GitLab の規範はこちらで確認できます。 https://handbook.gitlab.com/handbook/legal/gitlab-code-of-business-conduct-and-ethics/
+>
+> また、私たちの透明性の原則に沿って、GitLab が企業として掲げる価値観へのコミットメントと関連情報は、ポリシーセンターでご確認いただけます。 https://handbook.gitlab.com/handbook/legal/#gitlab-policies
+
+顧客の NDA、監査権、その他の特定の契約条件への同意を GitLab に求める質問には、これらの文言は適用されません。その場合は、SFDC で Legal Case を作成します。
 
 ### ベンダーリクエストフォームの記入
 

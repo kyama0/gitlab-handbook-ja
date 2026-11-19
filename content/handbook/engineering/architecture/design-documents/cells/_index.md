@@ -10,9 +10,9 @@ participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/"
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-27T19:36:56+13:00"
-translated_at: "2026-11-01T07:37:58+00:00"
+upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
+lastmod: "2026-11-19T15:01:05+13:00"
+translated_at: "2026-11-19T21:12:30Z"
 translator: codex
 stale: false
 ---
@@ -248,6 +248,7 @@ Cells アーキテクチャは多くの機能に影響を与え、その中に�
 - [Cells: Git アクセス](impacted_features/git-access.md)
 - [Cells: グローバル検索](impacted_features/global-search.md)
 - [Cells: GraphQL](impacted_features/graphql.md)
+- [Cells: 受信メール](impacted_features/incoming-email.md)
 - [Cells: Organization](impacted_features/organizations.md)
 - [Cells: パーソナルアクセストークン](impacted_features/personal-access-tokens.md)
 - [Cells: 個人の名前空間](impacted_features/personal-namespaces.md)
