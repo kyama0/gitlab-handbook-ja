@@ -6,9 +6,9 @@ creation-date: "2026-10-28"
 authors: [ "@terrichu" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/decisions/007_rollout_flags/
-upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
-lastmod: "2026-11-18T13:21:18-08:00"
-translated_at: "2026-11-19T21:12:30Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+lastmod: "2026-11-19T20:26:03-05:00"
+translated_at: "2026-11-20T21:19:00Z"
 translator: codex
 stale: false
 ---
@@ -29,8 +29,9 @@ stale: false
   フィールドが届き、かつセッションのツールガバナンスが有効な場合に置き換えます（[ルール 1](../_index.md#rules-that-apply-everywhere)）。
   フラグと `duo_workflow_local_tool_governance` は、異なる人にロールアウトされる可能性があるためです。
 - フラグが切り替えるのは `native_tool_swaps` で `true` に設定されたペアだけです（[決定 011](011_turn_on_each_pair.md)）。
-  マージリクエストで `true` に設定されたペアは、フラグがオンならそのマージリクエストがマージされた時点で有効になり、
-  オフならフラグがオンになった時点で有効になります。
+  `true` に設定されたペアは、置き換えフラグと `duo_mcp_tool_governance` の両方がオンの間のみ使われます。GitLab.com では、
+  両方がオンであればペアを設定するマージリクエストがデプロイされた時点で有効になり、そうでなければ両方がオンになった時点で有効になります。
+  Self-Managed と Dedicated のインスタンスでは、両方のフラグがオンなら、そのマージリクエストを含む最初の GitLab リリースでペアが有効になります。
 - 問題のあるペアを 1 つだけ無効にするには、DWS がそのネイティブツールの `com.gitlab/replaces` を無視し、ネイティブ
   ツールを外さないようにします。次のターンから、現在の Chat と同じく、セッションには再び両方のツールが含まれます。ホスト型 DWS は
   [`main` へのマージごとにデプロイされる](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/22eff5dacc4d95b0f0211b7a43dc8b9f6f06d928/.gitlab-ci.yml#L153-160)ため、

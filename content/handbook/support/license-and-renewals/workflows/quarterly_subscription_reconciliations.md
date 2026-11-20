@@ -3,11 +3,11 @@ title: 四半期サブスクリプションリコンサイル (QSR)
 category: General
 description: QSR の異議申し立て、QSR の一時停止、最大シートの解決、リコンサイルの再実行に関するワークフロー。
 upstream_path: /handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-translated_at: "2026-11-07T00:48:39.148212+00:00"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+translated_at: "2026-11-20T21:28:14Z"
 translator: codex
 stale: false
-lastmod: "2026-11-05T16:03:26-05:00"
+lastmod: "2026-11-20T12:03:48+01:00"
 ---
 ## 概要 {#overview}
 
@@ -17,7 +17,7 @@ lastmod: "2026-11-05T16:03:26-05:00"
 
 お客様が QSR に関してサポートに連絡してきた場合、最初の対応として [`Support::L&R::Refund or cancellation request on quarterly subscription reconciliation` マクロ](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/macros/-/blob/master/macros/active/Support/L&R/Refund%20or%20cancellation%20request%20on%20quarterly%20subscription%20reconciliation.yaml)を使用するか、それをベースに手動で返信を作成できます。自分の言葉で返信を送る場合は、マクロで使用されている一般的なガイドラインと情報に従って、適切で一貫した期待値を設定することが重要です。
 
-QSR とその仕組みを説明し、[四半期リコンサイルのドキュメント](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/)へのリンクも検討してください。シート管理ページの [GitLab.com の請求と使用量](https://docs.gitlab.com/subscriptions/manage_seats/#gitlabcom-billing-and-usage)および [Self-Managed の請求と使用量](https://docs.gitlab.com/subscriptions/manage_seats/#self-managed-billing-and-usage)セクションでは、請求対象シートの計算方法を説明しています。
+QSR とその仕組みを説明し、[四半期リコンサイルのドキュメント](https://docs.gitlab.com/subscriptions/quarterly_reconciliation/)へのリンクも検討してください。シート管理ページの [GitLab.com の請求と使用量](https://docs.gitlab.com/subscriptions/manage_seats/#gitlabcom-billing-and-usage)および [GitLab Self-Managed の請求と使用量](https://docs.gitlab.com/subscriptions/manage_seats/#gitlab-self-managed-billing-and-usage)セクションでは、請求対象シートの計算方法を説明しています。
 
 詳しい説明は [この Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/3540#quarterly-subscription-reconciliation)を参照してください。
 

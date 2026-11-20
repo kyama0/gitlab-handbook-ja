@@ -5,14 +5,15 @@ group: Tenant Scale
 description: 'GitLab.com Cells のプロビジョニング、デプロイメント、運用のためのインフラストラクチャ設計'
 authors: [ "@sxuereb" ]
 coach: [ "@andrewn" ]
+dris: [ "@tkuah", "@vglafirov" ]
 status: proposed
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/infrastructure/"
-upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
-translated_at: "2026-11-18T21:08:04+00:00"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:09:11Z"
 translator: claude
 stale: false
-lastmod: "2026-11-18T13:58:07+13:00"
+lastmod: "2026-11-20T19:29:12+13:00"
 ---
 
 

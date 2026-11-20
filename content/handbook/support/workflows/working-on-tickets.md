@@ -3,11 +3,11 @@ title: チケットへの対応
 category: Handling tickets
 description: サポートチケットの探し方、選び方、着手方法
 upstream_path: "/handbook/support/workflows/working-on-tickets/"
-upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
-translated_at: "2026-10-03T00:49:31+00:00"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:29:23Z"
 translator: codex
 stale: false
-lastmod: "2026-09-30T13:43:01Z"
+lastmod: "2026-11-20T09:09:14+01:00"
 ---
 
 ## はじめに
@@ -192,7 +192,7 @@ GitLab の [Success Signature](https://gitlab.zendesk.com/agent/search/1?copy&ty
 | SaaS Accounts | 28 件  |
 | L&R           | 14 件 |
 
-これらの目標は、自分の役割に該当するチケットタイプについて、毎週最初の実質的な応答を提供すべき新規チケットの平均数を表します。意図は、業務量、エスカレーション、プロジェクト作業に基づく週ごとの変動を許容しつつ、チーム全体でチケットの公平な分配を確保することです。コア L&R および Associate SE 役職を除く中堅およびシニアエンジニアは、Self-managed、SaaS、Dedicated チケットのバランスの取れた組み合わせを一貫して取り組むことで、バランスの取れた貢献者として育成することが期待されます。
+これらの目標は、週あたりに割り当てられるチケットの平均件数と、役割ごとに担当するチケットタイプを示します。業務量、エスカレーション、プロジェクト作業に応じた週ごとの変動を認めつつ、チーム全体でチケットを公平に分配することが目的です。コア L&R と Associate SE の役割を除き、中堅およびシニアエンジニアには、Self-managed、SaaS、Dedicated のチケットを継続的にバランスよく担当し、幅広く貢献できるようになることが求められます。2026 年 11 月時点では、キューの健全性を保つため、Account チケットもこの組み合わせに含まれます。
 これらのアサインチケットベースラインは、サポートエンジニアにとって 2 つの主要なチケット関連ベースラインの 1 つです。もう 1 つは、チケットタイプ別の目標を持つ Median Time to Resolve（TTR/MTTR）です:
 
 - Median TTR – Self-Managed: 目標 141 時間

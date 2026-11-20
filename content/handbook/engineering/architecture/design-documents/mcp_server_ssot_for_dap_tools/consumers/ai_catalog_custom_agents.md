@@ -3,9 +3,9 @@ title: "DAP ツールの SSoT としての MCP サーバー: AI Catalog のカ�
 description: "AI Catalog のカスタムエージェントを、組み込みツールからその置き換えとなる MCP ツールに移行する方法です。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/consumers/ai_catalog_custom_agents/
-upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
-lastmod: "2026-11-18T13:21:18-08:00"
-translated_at: "2026-11-19T21:12:30Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+lastmod: "2026-11-19T20:26:03-05:00"
+translated_at: "2026-11-20T21:19:00Z"
 translator: codex
 stale: false
 ---

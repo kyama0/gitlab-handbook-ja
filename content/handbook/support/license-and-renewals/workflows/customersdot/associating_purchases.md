@@ -3,11 +3,11 @@ title: 購入を追加のアカウントと関連付ける
 category: CustomersDot
 description: サブスクリプションを他の CustomersDot ユーザーと関連付けたり、サブスクリプションオーナーを変更したりします。
 upstream_path: /handbook/support/license-and-renewals/workflows/customersdot/associating_purchases/
-upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
-translated_at: "2026-05-08T13:00:00Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+translated_at: "2026-11-20T21:25:13Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T11:53:14+03:00"
+lastmod: "2026-11-20T13:42:49+05:30"
 ---
 
 ---
@@ -193,7 +193,7 @@ lastmod: "2026-05-01T11:53:14+03:00"
 1. そこから、レコード上の `Bill To:` または `Sold To:` の既存メールアドレスで検索することで、Zuora で更新するアカウントを検索できます。
 1. アカウントが見つかったら、ページの右側にある小さな鉛筆アイコンを選択して編集できます。
 1. 編集ページの上部近くにハイライトされた警告バナーが表示され、`sold to contact`、`bill to contact`、または `sold to and bill to contact` のどれを編集するのかが示されます。
-1. `CustomerDot Admin` ページの `Billing account contacts` セクションで正しいアカウントを確認したら、関連フィールドを更新できます。通常は `First name`、`Last name`、`Email address` です。希望すれば物理アドレスもここで更新できます。
+1. `CustomersDot Admin` ページの `Billing account contacts` セクションで正しいアカウントを確認したら、該当するフィールドを更新できます。通常は `First name`、`Last name`、`Email address` です。必要に応じて、住所もここで更新できます。
 1. 変更が完了したら、ページ下部の `Save` ボタンをクリックします。
 1. 変更が正しく伝播したかを確認するには、Zuora で `Sold To:` および／または `Bill To:` の連絡先が更新されていることを確認します。
 

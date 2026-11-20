@@ -5,11 +5,11 @@ status: accepted
 creation-date: "2025-09-04"
 authors: [ "@rymai" ]
 upstream_path: /handbook/engineering/architecture/design-documents/group_and_project_operations_and_state_management/decisions/003_state_propagation_model/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T16:13:47+00:00"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:16:35Z"
 translator: claude
 stale: false
-lastmod: "2026-10-28T20:15:05+05:30"
+lastmod: "2026-11-20T13:53:33+01:00"
 ---
 
 ## コンテキスト {#context}
@@ -244,8 +244,8 @@ sequenceDiagram
 | **deletion_in_progress** | :x: 拒否                 | :x: 拒否                  | :white_check_mark: 許可             | -                                   | :white_check_mark: 許可           | :x: 拒否                         | :x: 拒否                            | :x: 拒否                              |
 | **deletion_scheduled**   | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :white_check_mark: 許可             | -                                 | :white_check_mark: 許可          | :x: 拒否                            | :x: 拒否                              |
 | **maintenance**          | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :x: 拒否                            | :white_check_mark: 許可           | -                                | :x: 拒否                            | :white_check_mark: 許可               |
-| **transfer_in_progress** | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :x: 拒否                            | :x: 拒否                          | :x: 拒否                         | -                                   | :white_check_mark: 許可               |
-| **transfer_scheduled**   | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :x: 拒否                            | :x: 拒否                          | :white_check_mark: 許可          | :x: 拒否                            | -                                     |
+| **transfer_in_progress** | :white_check_mark: 許可  | :x: 拒否                  | :x: 拒否                            | :x: 拒否                            | :x: 拒否                          | :x: 拒否                         | -                                   | :white_check_mark: 許可               |
+| **transfer_scheduled**   | :white_check_mark: 許可  | :x: 拒否                  | :x: 拒否                            | :x: 拒否                            | :x: 拒否                          | :white_check_mark: 許可          | :x: 拒否                            | -                                     |
 
 #### 有効な状態遷移 {#valid-state-transitions}
 
@@ -261,7 +261,7 @@ sequenceDiagram
 | deletion_in_progress → archived             | アーカイブされたネームスペースからトリガーされた削除が失敗した。リトライループを防ぐため deletion_scheduled をスキップ |
 | deletion_scheduled → archived               | アーカイブされたネームスペースからトリガーされた削除                                               |
 | maintenance → archived                      | メンテナンスモードを終了し、archived 状態に戻す                                                    |
-| transfer_in_progress → archived             | アーカイブされたアイテムの移転完了を許可                                                           |
+| transfer_in_progress → archived             | 移転実行中にターゲット階層がアーカイブされた状態で、移転が完了する                                 |
 | creation_in_progress → deletion_in_progress | 致命的な作成失敗                                                                                   |
 | deletion_scheduled → deletion_in_progress   | ネームスペースの削除を開始                                                                         |
 | active → deletion_scheduled                 | 削除スケジュール                                                                                   |
@@ -274,10 +274,8 @@ sequenceDiagram
 | transfer_scheduled → maintenance            | 移転スケジュール中にメンテナンスモードに移行                                                       |
 | maintenance → transfer_scheduled            | メンテナンスモードを終了し、transfer_scheduled 状態に戻す                                          |
 | active → transfer_in_progress               | ネームスペースを移転                                                                               |
-| archived → transfer_in_progress             | アーカイブされたネームスペースを移転                                                               |
 | transfer_scheduled → transfer_in_progress   | スケジュールされた移転を開始                                                                       |
 | active → transfer_scheduled                 | 移転をスケジュール                                                                                 |
-| archived → transfer_scheduled               | アーカイブされたネームスペースの移転をスケジュール                                                 |
 
 #### 無効な状態遷移 {#invalid-state-transitions}
 
@@ -294,6 +292,8 @@ sequenceDiagram
 | transfer_scheduled → creation_in_progress   | creation_in_progress に戻せない                                                           |
 | transfer_scheduled → active                 | スケジュールされた移転はキャンセルできない                                               |
 | transfer_scheduled → archived               | スケジュールされた移転はキャンセルできない                                               |
+| archived → transfer_in_progress             | アーカイブされたネームスペースは移転できない                                             |
+| archived → transfer_scheduled               | アーカイブされたネームスペースは移転できない                                             |
 | active → deletion_in_progress               | 最初に deletion_scheduled を経由する必要がある                                            |
 | archived → deletion_in_progress             | 最初に deletion_scheduled を経由する必要がある                                            |
 | maintenance → transfer_in_progress          | メンテナンスモードでは進行中の操作がブロックされる                                       |
@@ -327,7 +327,7 @@ sequenceDiagram
 | active → archived                           | NOT archived, NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress | 親はアーカイブ、deletion_in_progress、deletion_scheduled、transfer_in_progress であってはならない | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親のアーカイブをブロックする       |
 | deletion_in_progress → archived             | NOT archived                                                                             | 親はすでにアーカイブ済み、代わりに active を使用                                                | -                                                  | アーカイブ状態への復元として許可                                                          |
 | deletion_scheduled → archived               | NOT archived                                                                             | 親はすでにアーカイブ済み、代わりに active を使用                                                | -                                                  | アーカイブ状態への復元として許可                                                          |
-| transfer_in_progress → archived             | -                                                                                        | アーカイブされたネームスペースの移転成功完了                                                    | -                                                  | 移転完了 - 子は自身の状態を維持                                                           |
+| transfer_in_progress → archived             | -                                                                                        | 移転実行中にターゲット階層がアーカイブされた                                                    | -                                                  | 移転完了 - 子は自身の状態を維持                                                           |
 | creation_in_progress → deletion_in_progress | -                                                                                        | 致命的な作成失敗時のクリーンアップ                                                              | -                                                  | creation_in_progress 中は子が存在しない                                                   |
 | deletion_scheduled → deletion_in_progress   | -                                                                                        | 猶予期間後に削除プロセスを開始                                                                  | -                                                  | すべての子状態が許可                                                                      |
 | active → deletion_scheduled                 | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress               | 親は deletion_in_progress、deletion_scheduled、transfer_in_progress であってはならない          | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の削除スケジュールをブロックする |
@@ -341,11 +341,9 @@ sequenceDiagram
 | maintenance → archived                      | -                                                                                        | メンテナンスモードを終了 - 階層全体が maintenance のため、親チェックは不要                      | -                                                  | 子はメンテナンスモードの終了を継承                                                        |
 | maintenance → deletion_scheduled            | -                                                                                        | メンテナンスモードを終了 - 階層全体が maintenance のため、親チェックは不要                      | -                                                  | 子はメンテナンスモードの終了を継承                                                        |
 | maintenance → transfer_scheduled            | -                                                                                        | メンテナンスモードを終了 - 階層全体が maintenance のため、親チェックは不要                      | -                                                  | 子はメンテナンスモードの終了を継承                                                        |
-| active → transfer_in_progress               | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT maintenance | 親は active または archived である必要がある                                                    | すべての子は active または archived のみ           | すべての子は active または archived である必要がある                                      |
-| archived → transfer_in_progress             | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT maintenance | 親は active または archived である必要がある                                                    | すべての子は active または archived のみ           | すべての子は active または archived である必要がある                                      |
+| active → transfer_in_progress               | NOT archived, NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT maintenance | 親は active である必要がある                                                                    | すべての子は active または archived のみ           | すべての子は active または archived である必要がある                                      |
 | transfer_scheduled → transfer_in_progress   | -                                                                                        | スケジュールされた移転を開始                                                                    | -                                                  | 移転実行 - 子は自身の状態を維持                                                           |
-| active → transfer_scheduled                 | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT transfer_scheduled | 親は deletion_in_progress、deletion_scheduled、transfer_in_progress、transfer_scheduled であってはならない | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の移転スケジュールをブロックする |
-| archived → transfer_scheduled               | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT transfer_scheduled | 親は deletion_in_progress、deletion_scheduled、transfer_in_progress、transfer_scheduled であってはならない | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の移転スケジュールをブロックする |
+| active → transfer_scheduled                 | NOT archived, NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT transfer_scheduled | 親は archived、deletion_in_progress、deletion_scheduled、transfer_in_progress、transfer_scheduled であってはならない | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の移転スケジュールをブロックする |
 
 ### 実装アプローチ {#implementation-approach}
 

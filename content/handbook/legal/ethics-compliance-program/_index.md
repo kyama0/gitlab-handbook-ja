@@ -1,11 +1,11 @@
 ---
 title: "GitLab の倫理・コンプライアンスプログラム"
 upstream_path: "/handbook/legal/ethics-compliance-program/"
-upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
-translated_at: "2026-08-01T15:50:15+09:00"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:24:19Z"
 translator: codex
 stale: false
-lastmod: "2026-07-31T20:42:15+00:00"
+lastmod: "2026-11-20T08:43:11-07:00"
 ---
 
 ## ミッション
@@ -28,7 +28,7 @@ GitLab のポリシーと手続き、ならびにガイダンスおよびその�
 - [ハラスメント防止ポリシー（Anti-Harassment Policy）](/handbook/people-group/anti-harassment/)
 - [報復禁止ポリシー（Anti-Retaliation Policy）](/handbook/legal/anti-retaliation-policy/)
 - [承認マトリクス（Authorization Matrix）](/handbook/finance/authorization-matrix/)
-- [行動規範・倫理規範（Code of Business Conduct and Ethics）](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf)
+- [行動規範・倫理規範（Code of Business Conduct and Ethics）](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/2026/Code-of-Conduct-Update-9-24-26.pdf)
 - [コーポレートコミュニケーションポリシー（Corporate Communication Policy）](/handbook/legal/corporate-communications/)
 - [従業員プライバシーポリシー（Employee Privacy Policy）](/handbook/legal/privacy/employee-privacy-policy/)
 - [エンティティ固有の雇用ポリシー（Entity-Specific Employment Policies）](/handbook/people-policies/#entity-specific-employment-policies)

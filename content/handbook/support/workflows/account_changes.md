@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: GitLab.com ユーザーに代わって変更を加えるかアクションを取るというリクエストへの対応のためのワークフロー
 upstream_path: /handbook/support/workflows/account_changes/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+translated_at: "2026-11-20T21:28:58Z"
 translator: claude
 stale: false
-lastmod: "2026-05-08T13:36:41+00:00"
+lastmod: "2026-11-20T16:36:30+13:00"
 ---
 
 ## 概要
@@ -107,6 +107,39 @@ Owner／Maintainer が許可を提供したら、それが希望であれば元�
 
 Enterprise ユーザーは [プライマリーメールアドレスを未検証ドメインのメールに変更できません](https://docs.gitlab.com/user/enterprise_user/#primary-email-change)。Enterprise ユーザーは、検証済みドメインに従って組織が所有するメールアドレスにのみプライマリーメールを変更できます。Enterprise ユーザーまたはトップレベルグループのオーナーは、プライマリーメールアドレスの変更をリクエストするためにサポートに連絡できます。
 **プライマリーメールアドレスをグループドメイン検証の一部ではないメールに変更すると、[ユーザーが切り離されます](https://docs.gitlab.com/user/enterprise_user/#remove-enterprise-management-features-from-an-account)**: ユーザーは Enterprise ユーザーではなくなります。
+
+### Enterprise ライセンスを使用しなくなったグループ（無料）からのリクエスト
+
+SSO やドメイン検証などの機能設定は、ネームスペースのライセンスやトライアルが期限切れになった後も引き続き適用されます。
+これが発生した場合、設定は UI に表示されなくなるため、グループの Owner はこれらの設定を無効化できません。
+セキュリティ上の理由から、ライセンスが失効した後もこれらの設定を保持するように設計されています。詳細は [gitlab-org/gitlab#406277: ドメインの削除や失効、またはグループプランの変更時に、関連付けられたユーザーの Enterprise 指定を解除すべきか](https://gitlab.com/gitlab-org/gitlab/-/work_items/406277)を参照してください。
+
+グループがこれらの設定を解除するためには、ネームスペースに一時的なトライアルライセンスが必要になります。
+
+注: グループはドメイン名を解放できますが、すでに Enterprise ユーザーとして関連付けられているユーザーは Enterprise ユーザーのままになります。
+現在の設計では、ユーザーの Enterprise 指定を解除するには Support の対応が必要です。この件についてはマネージャーと相談する必要があります。
+
+- トライアルを一度も使用したことがないグループは、グループの請求ページ（**Top Level Group Sidebar > Settings > Billing**）からトライアルを有効化できます。
+- トライアルがすでに使用されているグループは、一時的なライセンスを有効化するために Support の支援が必要です。一時的なライセンスを有効化する手順は以下に示します。
+
+セットアップが完了すると、グループの Owner はネームスペース上の Enterprise レベルの設定を無効化できます。
+
+Support の介入が必要な場合:
+
+1. #support_leadership でマネージャーの承認を得て進めます。
+1. [アカウント所有権検証ワークフロー](/handbook/support/workflows/account_verification)を使用して、トップレベルグループの Owner のアカウント所有権を確認します。
+1. 管理者として…
+    1. `https://gitlab.com/admin/groups/<group-name>/edit` にアクセスします。
+    1. **Permissions and group features** で、プランを「Ultimate Trial」に更新します。
+    1. **Admin Notes** に、変更内容のコメントを追加します: `yyyy-mm-dd | Moving to Ultimate Trial for domain removal per ticket <zendesk ticket>`
+1. お客様に返信します:
+
+   > Thank you for stepping through our identity verification process.
+   >
+   > I have temporarily enabled an ultimate trial for your namespace. This trial will be removed and your group will be placed back under the free plan on [insert date]. Please make any necessary changes before then.
+   > Please let us know once that is complete.
+1. トライアルを解除する必要がある日付について、チケットにリマインダーを設定します。
+1. 期日に、プランを「Free」に戻します。
 
 ### トップレベルグループオーナーからのリクエスト
 

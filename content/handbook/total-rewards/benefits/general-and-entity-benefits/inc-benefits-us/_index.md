@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
-translated_at: "2026-11-18T21:21:32+00:00"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:30:53Z"
 translator: claude
 stale: false
-lastmod: "2026-11-17T16:22:24-08:00"
+lastmod: "2026-11-20T14:31:04-06:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -28,6 +28,7 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 - [米国の LOOP ページ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/landing-page/dashboard)で 2027 年の福利厚生に関するすべての資料とセッションの録画を確認できます
 - 主な内容と更新情報については、[2027 年の福利厚生メモ](https://theloop.gitlab.com/site/cdd5f8a8-3cb0-4d48-a561-721e360418c2/page/6179981b-f2de-4afc-a474-051ae1f26d3c)を確認してください
 - GitLab の福利厚生プランの詳しい説明については、[2027 年の米国福利厚生ガイド](https://drive.google.com/file/d/1vC3BQ6rorJiu_6e7bO9kzKcD3nIBIEQT/view)を参照してください
+- **請求手続きでお困りですか？** 福利厚生の請求が却下されたり、遅延したり、問題にぶつかったりしたときは、私たちの WTW Claim Escalation Services チームがサポートいたします。[BenefitsHelpline2@willistowerswatson.com](mailto:BenefitsHelpline2@willistowerswatson.com) まで直接ご連絡ください
 - 2027 年の[権利に関する年次通知](https://drive.google.com/file/d/1Vls3ry_huyCcfKDZ6IoCraRozzsFz8fR/view?usp=sharing)を参照してください
 - GitLab は [Modern Health](/handbook/total-rewards/benefits/modern-health/)を通じてメンタルウェルネスサービスを提供しています。これらのサービスに加えて、Cigna と Kaiser のプランに加入するチームメンバーは、各社のネットワークの[メンタルヘルスプログラムとリソース](https://drive.google.com/file/d/1LT_LG1Px3xrGMBP0-iMPXaFyQvopfSiL/view?usp=sharing)を利用できます
 - [健康保険マーケットプレイスの保障選択肢に関する通知](https://drive.google.com/file/d/1Zo917jADi66YfzO_rXIm40NnewAymiac/view?usp=sharing)
@@ -41,6 +42,7 @@ GitLab では、チームメンバーの福利厚生は理解しやすく、必�
 - GitLab Benefit Plan の完全なレビューについては[2026 US Benefits Guide](https://drive.google.com/file/d/1-jY-rzDFxkxwVzJlOuVGcku2oHVfyLsv/view?usp=drive_link)を参照してください
 - プラン選択にお困りですか？[2026 Flimp PlanSelect ツール](https://flimpdecisions.net/welcome/633c8d6807f8b)を使用して、あなたと家族のニーズに最も適したプランを見つけてください。
 - [2026 Cigna Formulary](https://drive.google.com/file/d/1b_YCRHDNsfHlgnc-ls0xwc173krF_RT7/view)を参照してください
+- **請求手続きでお困りですか？** 福利厚生の請求が却下されたり、遅延したり、問題にぶつかったりしたときは、私たちの WTW Claim Escalation Services チームがサポートいたします。[BenefitsHelpline2@willistowerswatson.com](mailto:BenefitsHelpline2@willistowerswatson.com) まで直接ご連絡ください
 - 私たちの [2026 Annual Rights Notices](https://drive.google.com/file/d/1YK79mgmrv3qwkD-7DqWF8ZfBlOTFsEoq/view)を参照してください
 - [Transparency in Coverage](https://www.cigna.com/legal/compliance/machine-readable-files)を参照してください。これらの機械可読ファイルは、連邦の Transparency in Coverage Rule に対応して提供されており、健康プランと医療提供者間の交渉済みサービス料金とアウトオブネットワーク許容額が含まれます。機械可読ファイルは、研究者、規制当局、アプリケーション開発者がデータをより簡単にアクセス・分析できるようにフォーマットされています。
 
