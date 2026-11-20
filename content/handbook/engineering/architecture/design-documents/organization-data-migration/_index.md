@@ -5,16 +5,15 @@ creation-date: "2024-05-01"
 authors: [ "@dbalexandre", "@mkozono" ]
 coaches: [ "@ayufan", "@sxuereb" ]
 dris: [ "@sranasinghe", "@luciezhao" ]
-approvers: [ "@sranasinghe", "@luciezhao" ]
 owning-stage: "~devops::tenant scale"
 participating-stages: ["~devops::data stores", "~devops::systems"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T06:33:04+00:00"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+translated_at: "2026-11-20T21:23:30Z"
 translator: claude
 stale: false
-lastmod: "2026-10-27T08:21:18-10:00"
+lastmod: "2026-11-20T19:29:12+13:00"
 ---
 
 {{< engineering/design-document-header >}}

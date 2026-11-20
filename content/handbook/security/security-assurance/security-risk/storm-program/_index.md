@@ -5,11 +5,11 @@ tags:
   - security_standard
   - security_standard_ra
 upstream_path: /handbook/security/security-assurance/security-risk/storm-program/
-upstream_sha: d717b9da633f2989a0b1854384a69a0c31bae680
-translated_at: "2026-11-07T10:48:39Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+translated_at: "2026-11-20T21:27:48Z"
 translator: claude
 stale: false
-lastmod: "2026-11-06T16:03:29-05:00"
+lastmod: "2026-11-19T14:51:21-08:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -75,7 +75,7 @@ GitLab は次のリスクアペタイトマトリクスを利用しています�
 
 |リスク回避型|リスク中立型|リスク受容型|リスク追求型|
 |:---------:|:---------:|:---------:|:---------:|
-|1-5|1-10|11-15|16-20|
+|≤5|≤10|≤15|≤20|
 
 20 を超えるリスクスコア（高または重大のリスクレーティング）は、許容範囲内とみなすにはリスクが高すぎるとみなされます。言い換えれば、高および重大と評価されたリスクには対応する必要があります。年ごとの現在および過去のリスクアペタイトは、[内部ハンドブック](https://internal.gitlab.com/handbook/security/security-assurance/#historical-and-current-record-of-gitlabs-security-risk-appetite)で確認できます。
 
@@ -226,7 +226,7 @@ Executive Risk Owner は、各トップ 5 リスクに対して長期的な対�
 - 各 KR の依存関係を特定する。
 - 各 KR の提供を担当する Risk Owner を特定する。この人物は、対応活動を実施する責任を持つ部門にいるべきです。
 - 各 KR の現実的な目標納期を確立する。運用リスクの性質上、納期は将来 4 年間まで及ぶと予想されます。漸進的な進捗を示すために、四半期ごとに少なくとも 1 つの KR を確立してください。
-- スコアリング: 現在のリスクスコアから「10」（現在のリスクアペタイトに基づくリスク許容閾値）を差し引いて、リスクを許容範囲内に移動させるために必要な削減を特定する。この差を予測される KR の数で割る。商/剰余は、KR が完了するたびにスコアが削減される量です。この数値は必要に応じて判断的に調整できます。
+- スコアリング: 現在のリスクスコアから[現在の許容閾値](https://internal.gitlab.com/handbook/security/security-assurance/#historical-and-current-record-of-gitlabs-security-risk-appetite)（社内のみ）を差し引いて、リスクを許容範囲内に移動させるために必要な削減を特定する。この差を予測される KR の数で割る。商/剰余は、KR が完了するたびにスコアが削減される量です。この数値は必要に応じて判断的に調整できます。
 
 競合する優先事項のために、Executive Risk Owner が特定の四半期でリスク是正に関連する KR を追求しないことを選択した場合、ビジネスの根拠を文書化するために [リスク受け入れ](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-security-notice-process)を正式化する必要があります。このリスク受け入れには、追加のリスク是正を遅延させるリスクが、競合する優先事項を実施しないリスクよりも低い理由を説明する根拠が含まれている必要があります。
 

@@ -7,9 +7,9 @@ authors: [ "@terrichu" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/decisions/011_turn_on_each_pair/
 translator: codex
-upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
-lastmod: "2026-11-18T13:21:18-08:00"
-translated_at: "2026-11-19T21:12:30Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+lastmod: "2026-11-19T20:26:03-05:00"
+translated_at: "2026-11-20T21:19:00Z"
 stale: false
 ---
 
@@ -23,7 +23,7 @@ stale: false
   一斉に切り替わります。これには `action` が必須の `save_vulnerability` も含まれますが、そのエイリアスではこの引数を設定していません。
 - ルール 2 は、アクセス範囲が広がるペアについて、[決定 009](009_accept_widening_under_governance.md)の
   事前承認ルールが整うまで待つよう求めていますが、それを強制する仕組みはありません。
-- 名前の変更など、別の理由でエイリアスを追加した場合も、マージされた時点でペアが有効になります。
+- 名前の変更など、別の理由でエイリアスを追加した場合、同等性チェックなしでペアが有効になります。
 
 ## 決定 {#decision}
 
@@ -31,8 +31,8 @@ stale: false
   それぞれ `true` または `false` に対応付けるハッシュです。`true` はペアが同等性チェックに合格したことを示します。デフォルトは空のハッシュです。
 - `tool_aliases` の動作は従来どおりです。ネイティブツールと MCP ツールのどちらに由来するかを問わず、すべての古い名前を列挙し、
   MCP ツールにもガバナンスを適用します（[決定 002](002_pairs_in_meta.md)）。
-- MCP サーバーは、`true` に設定された名前だけを `com.gitlab/replaces` に含めます。ペアは `true` に設定するマージリクエストが
-  マージされた時点で有効になります。そのマージリクエストで同等性チェックを行います。
+- MCP サーバーは、`true` に設定された名前だけを `com.gitlab/replaces` に含めます。マージリクエストで、同等性チェックの後に
+  ペアを `true` に設定します。ペアが有効になるタイミングは[決定 007](007_rollout_flags.md)で定めます。
 - すべての利用側は `true` に設定されたペアだけを使います。DWS は `com.gitlab/replaces` を通じて使い、AI Catalog のピッカーと
   保存済みエージェントの Rails 側の対応付け処理はペアを検索するときに使います（[決定 005](005_remove_built_ins.md)）。
 - ピッカーと Rails の対応付け処理が `true` のペアを使うのは、ユーザーのガバナンスを管轄する名前空間で切り替えフラグと

@@ -2,11 +2,11 @@
 title: "贈答品・寄付に関するポリシー"
 description: "このポリシー群は、贈答品・接待・寄付の付与および受け取りに関する GitLab の方針とプロセスに関するものです"
 upstream_path: "/handbook/legal/policies/gifts-contributions/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T12:00:00Z"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:24:54Z"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-11-20T07:17:39-07:00"
 ---
 ## 贈答品・接待ポリシー
 
@@ -14,7 +14,7 @@ lastmod: "2025-10-14T17:59:32+00:00"
 
 本ポリシーは、従業員、請負業者、役員、取締役会メンバーを含むすべての GitLab チームメンバー、ならびに GitLab を代表して行動するすべての人に適用されます。本ポリシーは、GitLab の評判を守り、法令遵守を確保し、誠実さへのコミットメントを維持するために、贈答品・接待の提供または受け取りにあたって倫理的な判断を下すためのガイダンスを提供します。
 
-チームメンバーは、GitLab の[企業行動・倫理規範](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf)、[汚職防止ポリシー](/handbook/legal/anti-corruption-policy/)、および適用される法律・規制に加えて、本ポリシーに従わなければなりません。
+チームメンバーは、GitLab の[企業行動・倫理規範](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/2026/Code-of-Conduct-Update-9-24-26.pdf)、[汚職防止ポリシー](/handbook/legal/anti-corruption-policy/)、および適用される法律・規制に加えて、本ポリシーに従わなければなりません。
 
 ### 定義
 

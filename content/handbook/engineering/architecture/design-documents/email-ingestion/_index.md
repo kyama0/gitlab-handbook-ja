@@ -9,11 +9,11 @@ owning-stage: "devops::plan"
 participating-stages: [ ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/email-ingestion/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T07:24:53.853824+00:00"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:14:35Z"
 translator: claude
 stale: false
-lastmod: "2026-10-20T14:59:33+02:00"
+lastmod: "2026-11-20T12:23:14+01:00"
 ---
 
 <!-- vale gitlab.CurrentStatus = NO -->
@@ -161,6 +161,21 @@ Sidekiq ジョブにサイズ制限を設けており、メールジョブペイ
 
 その後、`mail_room` の削除をスケジュールする必要があります（GitLab 17.0 以降）。これは破壊的変更になります。セルフマネージドの顧客がアクションを取らなくてもいいよう、事前に新しいメール取り込みをデフォルトにすることも検討できます。
 
+## Cells {#cells}
+
+Cells では、GitLab.com の共有メールボックスがすべての Cell 向けのメールを受信しますが、宛先のプロジェクトやネームスペースはどの Cell にも存在し得ます。
+このドキュメントが提案するように GitLab アプリケーション内でメールを取り込む場合、処理は Cell 内で実行されるため、その Cell に存在するリソース宛てのメールしか処理できません。
+
+Cells 向けのメール取り込みには、Cell 群の前段で動作する、`mail_room` ベースのフリート共通メールゲートウェイを使用します。ゲートウェイは各メールを、宛先のリソースを所有する Cell へ転送します。
+設計については [Cells: 受信メール](/handbook/engineering/architecture/design-documents/cells/impacted_features/incoming-email/)を参照してください。
+背景については [ADR 001](decisions/001_cells_email_routing.md) を参照してください。
+
+このドキュメントが提案する Sidekiq ベースの取り込みはまだ実装されておらず、GitLab は引き続き `mail_room` でメールを取り込んでいます。
+
+## 決定事項 {#decisions}
+
+- [ADR 001: フリート共通のゲートウェイで Cells のメールをルーティングする](decisions/001_cells_email_routing.md)
+
 ## 代替ソリューション {#alternative-solutions}
 
 ### 何もしない {#do-nothing}
@@ -174,3 +189,4 @@ Sidekiq ジョブにサイズ制限を設けており、メールジョブペイ
 ## タイムライン {#timeline}
 
 - 2023-09-26: ブループリントの初版がマージされました。
+- 2026-11-12: メール取り込みが Cells でどのように機能するか、および ADR 001 を追加しました。

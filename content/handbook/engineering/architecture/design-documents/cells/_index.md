@@ -4,15 +4,15 @@ status: ongoing
 creation-date: "2022-09-07"
 authors: ["@ayufan", "@fzimmer", "@DylanGriffith", "@lohrc", "@tkuah", "@sxuereb"]
 coaches: ["@ayufan", "@tkuah"]
-dris: ["@daveyleach"]
+dris: ["@tkuah"]
 owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/"
-upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
-lastmod: "2026-11-19T15:01:05+13:00"
-translated_at: "2026-11-19T21:12:30Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+lastmod: "2026-11-20T19:29:12+13:00"
+translated_at: "2026-11-20T21:09:11Z"
 translator: codex
 stale: false
 ---

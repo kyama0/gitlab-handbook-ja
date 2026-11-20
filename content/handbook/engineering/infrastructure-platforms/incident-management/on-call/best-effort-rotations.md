@@ -1,11 +1,11 @@
 ---
 title: オンコールのプロセスとポリシー - ベストエフォートローテーション
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/on-call/best-effort-rotations/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+translated_at: "2026-11-20T21:24:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-07T17:41:36+00:00"
+lastmod: "2026-11-20T12:40:44+01:00"
 ---
 
 一部のシステムでは、オンコールシステムではなく、ベストエフォートローテーションを使用しています。例えば、Release Manager のローテーションは、一度に 1 週間、2 名のエンジニアのペアが担当するベストエフォート方式です。
@@ -45,3 +45,11 @@ lastmod: "2026-05-07T17:41:36+00:00"
 #### 詳細情報
 
 Database Operations - ([詳細](/handbook/engineering/data-engineering/database-excellence/help/))
+
+### Analytics Instrumentation
+
+- ローテーションリーダー: Ashwin Bilgi
+- カバレッジ: ベストエフォート、業務時間のみ。
+- スケジュール: なし。各チームメンバーには、それぞれの業務時間中に呼び出しの通知が届きます。
+- カバー対象: versiondot ([version.gitlab.com](https://version.gitlab.com)) および Snowflake への夜間エクスポート。
+- 追跡用 Issue: [production-engineering#30236](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/30236)

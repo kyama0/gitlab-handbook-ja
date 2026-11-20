@@ -10,9 +10,9 @@ participating-stages: []
 toc_hide: true
 description: "ユーザー、プロジェクト、管理者が管理する複数のソースから、文書化された優先順位とマージ戦略によって GitLab AI クライアントの設定を解決するためのアーキテクチャ決定記録。"
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/012_enterprise_managed_ai_clients/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-27T11:43:37+13:00"
-translated_at: "2026-11-01T08:29:27.696085+00:00"
+upstream_sha: "e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8"
+lastmod: "2026-11-20T12:31:02+01:00"
+translated_at: "2026-11-20T21:09:11Z"
 translator: codex
 stale: false
 ---
@@ -144,6 +144,7 @@ interface SettingDefinition<T, R = T> {
   onUnavailable?:                           // when an administrator source cannot be loaded
     | 'fallthrough'
     | { failClosedTo: DeepReadonly<R>; perKey?: { failClosedTo: V } }; // V = the record's value type; perKey only with a perKey merge on a record
+  dropInvalidElements?: boolean;            // lists only: validate each element on its own, see failure handling
   clients?: Array<'cli' | 'editor' | 'ci'>; // where the setting applies; omit = every client
 }
 
@@ -300,7 +301,7 @@ WSL は対象外です。WSL 内で実行されるクライアントは、Window
 
 1. 存在しないファイルは `absent` です。リゾルバーは次のソースへ進みます。
 1. 解析できないファイルは `unavailable` です。クライアントはパスと解析エラーを示して 1 回警告し、次へ進みます。エラーから復旧するために設定ファイルを削除したり、その内容を置き換えたりすることはありません。ユーザーが修正できるよう、ファイルはそのまま残します。
-1. 検証に失敗した値は、キーと期待する型を示す警告とともに破棄します。ファイルの残りの部分は保持します。`perKey.failClosedTo` を宣言した `perKey` レコードはエントリごとに検証するため、無効なエントリだけを破棄します。
+1. 検証に失敗した値は、キーと期待する型を示す警告とともに破棄します。ファイルの残りの部分は保持します。`perKey.failClosedTo` を宣言した `perKey` レコードはエントリごとに検証するため、無効なエントリだけを破棄します。リスト型の設定も `dropInvalidElements: true` を指定することで同じ扱いを選択できます。各要素を個別に検証し、無効な要素は破棄して、取得元のソースを添えて報告します。有効な要素は保持します。生成される JSON Schema は厳格なままなので、エディタも引き続き無効な要素を指摘します。ただし、フェイルクローズする設定の強制適用ソースは例外です。1 つでも無効な要素があれば値全体を無効とします。無効な要素を破棄するとポリシーが緩くなりうるため（たとえば `deny` 文が破棄される場合）、その設定は自身の `failClosedTo` にフェイルクローズします。
 1. 未知のキーは無視するため、時間の経過とともにキーを追加または削除できます。
 1. ある設定を指定できる管理者のソースが、管理ファイルを読み取れない、リモート取得が失敗するなどの理由で読み込めない場合や、その設定のスキーマに適合しない値を提供した場合、デフォルトの動作は `fallthrough` です。そのソースは存在しないものとして扱い、次のソースを適用します。好みの設定には適切ですが、ガバナンスの設定では、まさにポリシーにアクセスできなくなった時点で制限を解除することになります。そのような設定は `onUnavailable: { failClosedTo: value }` を宣言し、空の許可リストや有効化フラグの `false` など、ポリシーを読み取れない間に維持する値を指定します。ほとんどのマージ戦略では、クライアントがスキーマから安全な方向を導き出せないため、値を明示的に宣言します。また、`default` は、どのソースもその設定を指定していないときの値という、本来の意味を保ちます。ポリシーを再び読み取れるようになるまで、クライアントは制限された状態で利用可能なままとなり、その設定は読み取り専用になります。
 

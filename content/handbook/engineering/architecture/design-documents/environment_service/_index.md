@@ -11,9 +11,9 @@ owning-stage: "~devops::verify"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/environment_service/
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T07:34:44-08:00"
-translated_at: "2026-11-17T21:44:36.076738+00:00"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+lastmod: "2026-11-20T11:45:02+05:30"
+translated_at: "2026-11-20T21:15:46Z"
 translator: codex
 stale: false
 ---
@@ -57,12 +57,12 @@ API は、サービス間のものです。エンドユーザーの認可は、�
 
 | ID | 要件 |
 |---|---|
-| NF1：永続性 | サービスの再起動で、受け付けたリクエストや保存した結果を失ってはいけません。結果は、文書化された保持期間中、読み取れる必要があります。失われたコンピュートやディスクの状態の復旧を保証するものではありません。 |
+| NF1：永続性 | 受け付けたリクエストと保存した結果は、再起動を越えて維持しなければなりません。結果は、文書化された保持期間中、読み取れる必要があります。失われたコンピュートやディスクの状態の復旧を保証するものではありません。 |
 | NF2：安全な再試行 | 文書化された再試行期間内に、応答が失われた同じリクエストを再試行しても、別の環境を作成したり、同じ操作を再び実行したりしてはいけません。応答がないことや失敗したことを理由に、実行済みの可能性がある作業を自動で再実行してはいけません。 |
 | NF3：一貫した状態 | 同時のリクエストや遅延したメッセージによって、競合する割り当てを生じさせたり、終了を取り消したり、最終的な実行結果を変えたりしてはいけません。 |
-| NF4：セキュリティ | サービスの接続を認証し、環境、Run、結果、設定へのアクセスを認可します。マネージャーは、同じワークロード所有者に属する環境も含め、ある環境の作業が、別の環境の非公開のプロセス、ディスク、認証情報にアクセスすることを防がなければなりません。通信中と保存中の認証情報と機密データを保護し、診断情報には含めません。 |
-| NF5：制御されたリソース使用 | 待機中のリクエスト、API ペイロードのサイズ、実行時間、環境の存続期間、接続、保持データに、文書化された上限を適用します。呼び出し元が終了を要求しない場合も、環境の存続期間の上限を適用する必要があります。過剰な負荷は明示的に拒否し、遅いクライアントが他の作業やクリーンアップを妨げてはいけません。 |
-| NF6：復旧 | 一時的な接続障害や Environment Service の再起動後、実行を重複させずに、マネージャーとの通信と、受け付けたリクエストの追跡を復旧します。失われた環境やディスクの状態の復元を保証するものではありません。環境や実行結果を復旧できない場合は、理由を付けて失敗を報告します。 |
+| NF4：セキュリティ | 接続を認証し、環境、Run、結果、設定へのアクセスを認可します。ある環境の作業は、同じワークロード所有者に属する環境も含め、別の環境の非公開のプロセス、ディスク、認証情報にアクセスしてはいけません。通信中と保存中の認証情報と機密データを保護し、診断情報には含めません。 |
+| NF5：運用上の上限 | 待機中のリクエスト、API ペイロードのサイズ、実行時間、環境の存続期間、接続に、文書化された上限を適用します。呼び出し元が終了を要求しない場合も、環境の存続期間の上限を適用する必要があります。[データ保持ポリシー](https://docs.gitlab.com/development/database/database_growth_control/data_retention_policy/)を定義して適用します。過剰な負荷は明示的に拒否し、遅いクライアントが他の作業やクリーンアップを妨げてはいけません。 |
+| NF6：復旧 | 一時的な接続障害や再起動から、受け付けた作業の追跡を失ったり、実行を繰り返したりせずに復旧します。環境や実行結果を復旧できない場合は、理由を付けて失敗を報告します。 |
 | NF7：可観測性 | 作業が待機中、失敗、クリーンアップ待ちとなっている理由を説明できる、十分な状態、エラー、メトリクス、診断情報を公開します。 |
 
 ## 全体的なアーキテクチャ {#high-level-architecture}
@@ -269,11 +269,11 @@ sequenceDiagram
 
 ### AutoFlow との連携 {#autoflow-integration}
 
-Environment Service 内の AutoFlow リモートモジュールが、ライフサイクルと Run の操作を、ワークフローのアクションとして公開します。`autoflow_module` エージェントとして AutoFlow に接続し、Environment API と同じサービス操作と保存された状態を使います。
+Environment Service 内の AutoFlow リモートモジュールは、環境のライフサイクルと実行の操作を、ワークフローのアクションとして公開します。Environment API と、サービスが保存する状態を使います。
 
-ワークフローは、`create` または `run` に `channel()` を渡します。モジュールは、チャネルトークンを受け付けたリクエストとともに保存し、環境または Run の ID を返します。再試行時は、AutoFlow のアクションの冪等性キーを使い、別の操作を行わず、同じ ID を返します。
+ワークフローは操作を送信し、AutoFlow のチャネルでステータス更新を待ちます。待機状態は永続化されるため、ワーカーを稼働させ続けたり、監視用の接続を維持したりする必要はありません。AutoFlow が冪等性キーを提供するため、再配信時は新たな操作を開始せず、最初の受け付け結果を返します。
 
-`create` に渡したチャネルは、その後の停止、開始、終了の更新も受信します。`run` は、その Run の更新の送信先を指定します。ワークフローは、`gather(c)` で必要な状態を待ちます。AutoFlow は、待機を永続化し、更新が届くまでワークフローワーカーを解放します。ポーリングや監視ストリームは不要です。
+`create` に渡したチャネルは、その後の停止、開始、終了を含む、環境の更新を受信します。`run` は、その Run の更新用のチャネルを指定します。モジュールは、受け付けた各リクエストとともに各チャネルを保存し、Environment Service の再起動後も含め、そのチャネルを通じて更新を送信します。
 
 ```mermaid
 sequenceDiagram
@@ -285,24 +285,24 @@ sequenceDiagram
     end
 
     Module->>AutoFlow: Register actions and open invocation tunnel
-    Workflow->>AutoFlow: Invoke create with a channel
-    AutoFlow->>Module: Action invocation with channel token and idempotency key
-    Module->>API: Accept request and save notification destination
+    Workflow->>AutoFlow: Request environment with update channel
+    AutoFlow->>Module: Deliver request, channel, and idempotency key
+    Module->>API: Accept request and save update channel
     API-->>Module: Environment ID
-    Module-->>AutoFlow: Action result: environment ID
+    Module-->>AutoFlow: Accepted: environment ID
     AutoFlow-->>Workflow: Environment ID
-    Note over Workflow: Wait for ready update in gather(c)
+    Note over Workflow: Wait durably for readiness
     Note over API: Wait for capacity and create environment
     API->>API: Save status update and record notification to send
     API->>Module: Deliver stored update
-    Module->>AutoFlow: SendToChannel with stable idempotency key
+    Module->>AutoFlow: Send update to channel with idempotency key
     AutoFlow-->>Module: Accepted
     AutoFlow-->>Workflow: Deliver update and wake workflow
 ```
 
-保存された環境と Run の更新は、増加するバージョン番号を持ちます。モジュールは、リソース、バージョン、送信先に対応する冪等性キーを使い、`SendToChannel` を通じて送信します。配信の再試行で、実行を繰り返すことはありません。利用側は古いバージョンを無視します。AutoFlow が通知を受け付けても、ワークフローがそれを処理したことを意味しません。
+環境や Run の更新を保存するたびに、バージョンが上がります。各通知は、環境または Run、更新のバージョン、チャネルに対応する冪等性キーを持ち、再試行ではそのキーを再利用します。ワークフローはバージョンを使い、重複する更新や古い更新を無視します。AutoFlow が通知を受け付けても、ワークフローがそれを処理したことを意味しません。
 
-監視とは異なり、チャネル配信は、受け付けられるか、定義されたポリシーに従って終了するまで、保留中の通知を保持します。AutoFlow が利用できなくても、受け付けた操作やサービス自身のクリーンアップを妨げてはいけません。通知の保持と期限切れチャネルの扱いは、未解決です。
+保留中の通知は、受け付けられるか、定義されたポリシーに従って終了するまで保持します。AutoFlow が利用できなくても、受け付けた操作やサービス自身のクリーンアップを妨げてはいけません。通知の保持と期限切れの AutoFlow チャネルの扱いは、未解決です。
 
 [AutoFlow モジュールガイド](https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent/-/blob/master/www/autoflow/content/guides/write-a-module.md)では、リモートモジュールの認証情報をロードマップの作業に挙げています。子ワークフローからのチャネル配信も、呼び出し元が依存する前に、検証が必要です。
 
@@ -450,7 +450,7 @@ sequenceDiagram
 
 ### 復旧と運用上の上限 {#recovery-and-operational-limits}
 
-- API ペイロードのサイズ、待機中のリクエスト、作成時間、Run の実行時間、結果の保持に、どのような上限とデフォルト値を適用しますか？
+- API ペイロードのサイズ、待機中のリクエスト、作成時間、Run の実行時間、データの保持に、どのような上限とデフォルト値を適用しますか？
 - 呼び出し元は、同じリクエストをどれくらいの期間、再試行できますか？未完了の作業を失敗とするまでに、どれくらい復旧を続けるべきですか？終了とクリーンアップは、削除を確認するまで保留したままです。
 - マネージャーが戻らず、削除を確認できないリソースを、運用者はどう扱うべきですか？
 - サービスは、どのようなリクエスト量、遅延、可用性、復旧の目標に対応する必要がありますか？

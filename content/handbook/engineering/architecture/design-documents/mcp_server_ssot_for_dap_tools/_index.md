@@ -10,9 +10,9 @@ owning-stage: "~devops::agent foundations"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mcp_server_ssot_for_dap_tools/
-upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
-lastmod: "2026-11-18T13:21:18-08:00"
-translated_at: "2026-11-19T21:12:30Z"
+upstream_sha: e645aac6dc6fbb0b759b92ed32f016aaed5ef4b8
+lastmod: "2026-11-19T20:26:03-05:00"
+translated_at: "2026-11-20T21:19:00Z"
 translator: codex
 stale: false
 ---
@@ -107,8 +107,8 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
    ステップは、新しいメジャーフローバージョンでのみ変更します。
 4. **ネイティブツールと重複する新しい MCP ツールは、ペアとともにリリースします。** MCP ツールを追加するマージリクエストで、そのペアを
    [ペアのページ](pairs.md)に記載し、`native_tool_swaps` で `false` に設定します
-   （[決定 011](decisions/011_turn_on_each_pair.md)）。ペアが同等性チェックに合格したら、後続のマージリクエストで `true` に設定し、
-   有効にします。一覧に表示される MCP ツールの名前またはエイリアスが組み込みツール名と一致し、対応するエントリがない場合はテストが失敗します。
+   （[決定 011](decisions/011_turn_on_each_pair.md)）。ペアが同等性チェックに合格したら、後続のマージリクエストで `true` に設定します。
+   ペアが有効になるタイミングは[決定 007](decisions/007_rollout_flags.md)で定めます。一覧に表示される MCP ツールの名前またはエイリアスが組み込みツール名と一致し、対応するエントリがない場合はテストが失敗します。
    したがって、新しいペアには必ず `true` か `false` を明示する必要があります。
 5. **Rails は置き換えられたネイティブツールを削除します。DWS は古い GitLab のためにのみ Python コードを残します。**
    - Rails は、その GitLab バージョンのすべてのセッションに置き換え先の MCP ツールが届くようになると、ネイティブツールの提供を停止します。
@@ -171,8 +171,8 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
 ### フェーズ 3：準備ができているペア {#phase-3-the-pairs-that-are-ready}
 
 - このフェーズでは、すべての利用側について、[ペアのページ](pairs.md)の「同じ名前」と「ネイティブ名がすでにエイリアスになっている」のグループを扱います。
-- 各ペアは、同等性チェックに合格し、`true` に設定するマージリクエストがマージされた時点で有効になります
-  （[決定 011](decisions/011_turn_on_each_pair.md)）。
+- マージリクエストで、同等性チェックの後に各ペアを `true` に設定します（[決定 011](decisions/011_turn_on_each_pair.md)）。
+  ペアが有効になるタイミングは[決定 007](decisions/007_rollout_flags.md)で定めます。
 - 利用側は作業が完了した順に有効にします。まず DAP Chat、次に AI Catalog のカスタムエージェント、そして基盤エージェントです。
 - Chat の対応には `search` の修正が含まれるため、DWS は MCP の `search` ツールが届いた場合にのみ、ネイティブの検索ツールを除外します。
 - ガバナンスが有効な DAP セッションで、対象のペアのネイティブツールと置き換え先の MCP ツールを両方出すことがなくなり、
@@ -181,12 +181,14 @@ MCP サーバーに一本化するための計画です。MCP サーバーは一
 ### フェーズ 4：先に作業が必要なペア {#phase-4-the-pairs-that-need-work-first}
 
 - このフェーズでは、[ペアのページ](pairs.md)の「先に作業が必要」のグループを扱います。
-- 各ペアは、必要な作業が完了し、マージリクエストで `true` に設定された時点で有効になります。
+- 必要な作業が完了すると、マージリクエストで、同等性チェックの後に各ペアを `true` に設定します。
+  ペアが有効になるタイミングは[決定 007](decisions/007_rollout_flags.md)で定めます。
 
 ### フェーズ 5：統合を待つペア {#phase-5-the-pairs-that-wait-on-a-fold}
 
 - このフェーズでは、[ペアのページ](pairs.md)の「統合待ち」のグループを扱います。
-- 各ペアは、MCP ツールを統合し、マージリクエストで `true` に設定した後に有効になります。
+- MCP ツールの統合後、マージリクエストで、同等性チェックの後に各ペアを `true` に設定します。
+  ペアが有効になるタイミングは[決定 007](decisions/007_rollout_flags.md)で定めます。
 - その後、ペアは統合先のツールを指します。
 
 ### フェーズに含まれない項目 {#not-in-a-phase}
