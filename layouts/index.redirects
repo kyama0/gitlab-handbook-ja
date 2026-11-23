@@ -357,6 +357,10 @@
 # Self-Managed Database Experience team renamed to Self-Managed Database - remove 2027-02-17
 /handbook/engineering/data-engineering/database-excellence/self-managed-database-experience/ /handbook/engineering/data-engineering/database-excellence/self-managed-database/ 301
 
+# Co-Create and Community Engineering reporting and metrics consolidated - remove 2027-02-18
+/handbook/marketing/developer-relations/engineering/how-we-report/ /handbook/marketing/developer-relations/engineering/reporting/ 301
+/handbook/marketing/developer-relations/engineering/metrics/ /handbook/marketing/developer-relations/engineering/reporting/ 301
+
 # Performance Indicators and Operations moved to upstream-studios - remove 2027-07-01
 /handbook/product/ux/performance-indicators/ /handbook/upstream-studios/performance-indicators/ 301
 /handbook/product/ux/performance-indicators/* /handbook/upstream-studios/performance-indicators/:splat 301

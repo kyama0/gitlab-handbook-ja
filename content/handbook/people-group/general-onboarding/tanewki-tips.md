@@ -2,11 +2,11 @@
 title: TaNewKi のヒント
 description: GitLab に入社する新入社員向けガイド
 upstream_path: /handbook/people-group/general-onboarding/tanewki-tips/
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-translated_at: "2026-11-07T10:45:49.721973Z"
+upstream_sha: 2d1f6094c6d7396f74007d0e3058ac3e143c7e72
+translated_at: "2026-11-23T21:06:25Z"
 translator: claude
 stale: false
-lastmod: "2026-11-06T16:03:29-05:00"
+lastmod: "2026-11-20T11:27:24Z"
 ---
 
 ## チームへようこそ {#welcome-to-the-team}
@@ -247,7 +247,7 @@ A: [Family & Friends Day](/handbook/company/family-and-friends-day/)は、私た
 
 | 略語 | 単語/表現/役職 |
 |:---------------|:---------------|
-| VSD |  [Value Stream Disovery](/handbook/solutions-architects/sa-practices/value-stream-discovery) |
+| VSD |  [Value Stream Discovery](/handbook/solutions-architects/sa-practices/value-stream-discovery) |
 | VSW |  [Value Stream Workshop](/handbook/solutions-architects/sa-practices/value-stream-discovery/#value-stream-workshop) |
 | L28D |  「過去 28 日間」の短縮形。 |
 
