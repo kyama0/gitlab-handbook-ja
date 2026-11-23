@@ -2,70 +2,18 @@
 title: "コミュニティ貢献を扱うワークフロー"
 description: Co-Create & Community Engineering チームが扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-translated_at: "2026-11-07T01:05:46+00:00"
+upstream_sha: "2d1f6094c6d7396f74007d0e3058ac3e143c7e72"
+lastmod: "2026-11-23T09:47:57Z"
+translated_at: "2026-11-23T21:11:54+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-06T09:22:51+01:00"
 ---
 
 ## ワークフロー {#workflows}
 
-## 私たちの作業計画の立て方 {#how-we-plan-work}
+{{% a "how-we-plan-work" %}}{{% a "workflow-labels" %}}{{% a "priority-labels" %}}{{% a "how-to-pick-issues" %}}{{% a "retrospective" %}}{{% a "stand-up" %}}
 
-このチームは [Contributor Success のかんばんボード](https://gitlab.com/groups/gitlab-org/-/boards/7745119?label_name[]=Contributor%20Success)を使用します。
-Issue は次を満たす必要があります:
-
-- `gitlab-org` グループで作成されていること
-- `Contributor Success` ラベルが付いていること
-- 以下のリストから少なくとも 1 つの `workflow` ラベルが付いていること
-
-私たちは `priority` ラベルを使って、四半期ごとの注力分野を指定します。
-
-### ワークフローラベル {#workflow-labels}
-
-- `workflow::validation backlog`: Issue はまずバックログから始まり、チームが KPI、OKR、チーム戦略に対して労力と影響を検証できるようにします。
-- `workflow::refinement`: これらの Issue は、準備完了とマークされる前に、計画とチームでの議論を通じて検証・洗練されます。Issue は次のワークフローステージに移る前に、実装計画セクションを含めるべきです。
-- `workflow::ready for development`: これらの Issue は着手可能であり、実装計画セクションと `priority` ラベルを含んでいます。
-- `workflow::in dev`: 今四半期に積極的に取り組んでいる Issue。
-- `workflow::blocked`: 現在ブロックされている Issue。説明にはブロッカーを記載し、ブロックを解除する Issue へのリンクを含める必要があります。
-- `workflow::complete`: 実装後に解決された Issue。これらは、クローズする前にチームおよび Developer Relations 部門へのレポートで強調すべきです。
-
-### 優先度ラベル {#priority-labels}
-
-- `priority::1`（最高優先度）: 今四半期の KPI と OKR に不可欠な Issue、またはコントリビューターの作業をブロックする緊急のバグ。
-- `priority::2`: 今四半期の目標に沿っているが、緊急の期限がない Issue。
-- `priority::3`: 今四半期の目標に影響しないが、長期的な目標を支える Issue。
-- `priority::4`（最低優先度）: 段階的な価値をもたらすが、追加のキャパシティを待てる Issue。
-
-### Issue の選び方 {#how-to-pick-issues}
-
-チームメンバーは、`workflow::ready for development` から、`priority` ラベルに基づいて Issue を選択すべきです。
-チームは今四半期の `priority::1` と `priority::2` の Issue に注力しますが、大きなプロジェクトの合間に優先度の低いタスクに取り組むのが理にかなう場合もあります。
-私たちはタスクを選ぶ際、効率とイテレーションという GitLab のバリューに導かれ、Manager of One として行動します。
-
-### レトロスペクティブ {#retrospective}
-
-四半期ごとに、GitLab の Issue を使って非同期のレトロスペクティブ[（例）](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/665)を実施します。
-
-質問は次のとおりです:
-
-- 何を始めるべきか?
-- 何をやめるべきか?
-- 何を続けるべきか?
-
-チームの DRI は、将来簡単に取り出せるよう、チームトラッカー
-[`gitlab-org/developer-relations/contributor-success/team-task`](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues)
-に Issue を作成する責任を負います。
-
-チームの DRI は、フィードバックを整理し、投票後に新しい四半期へ持ち込む 1 つの Issue を選ぶ責任を負います。
-
-### スタンドアップ {#stand-up}
-
-このスタンドアップの目的は、チームメンバー間で協力することです。これは、ブロッカーや進捗を確認し、異なる視点で考え、私たちの目標に向けてイテレーションするための、チーム固有の
-ミーティングです。
-
-- アジェンダ: <https://docs.google.com/document/d/1chIzCdg1CNRrRRuYR7c7OW_BF1mBxKFTJoXyP2HLt4E/edit#heading=h.o6qzal1u0b7i>
+チームの計画、優先順位付け、定例ミーティングについては、[私たちの仕事の進め方](/handbook/marketing/developer-relations/engineering/how-we-work/)を参照してください。
 
 ## リアルタイムコミュニケーション {#real-time-communications}
 

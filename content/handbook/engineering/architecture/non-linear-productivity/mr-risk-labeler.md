@@ -2,9 +2,9 @@
 title: "MR Risk Labeler"
 description: "MR Risk Labeler がマージリクエストを低・中・高リスクに評価する方法と、その評価によるレビュー・承認担当者の変化。"
 upstream_path: /handbook/engineering/architecture/non-linear-productivity/mr-risk-labeler/
-upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
-lastmod: "2026-11-18T15:51:58-08:00"
-translated_at: "2026-11-19T21:12:30Z"
+upstream_sha: 2d1f6094c6d7396f74007d0e3058ac3e143c7e72
+lastmod: "2026-11-23T12:42:17-06:00"
+translated_at: "2026-11-23T21:06:25Z"
 translator: codex
 stale: false
 ---
@@ -64,7 +64,7 @@ Compliance が支持するエージェントによる承認経路はこれです
 [`triage-ops`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/mr_approval_flow/reconcile_approval.rb) が、`@gitlab-bot` として承認します。`triage-ops` が開始した実行による、現在のコミットの最新の評価についてのみ承認します。プロジェクトごとの設定は、[`config/mr_approval_flow.yml`](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/config/mr_approval_flow.yml) にあります。
 
 - **低リスク：** `@gitlab-bot` が承認します。作成者が Maintainer ならマージでき、それ以外は Maintainer がレビューせずにマージします。自動マージを設定するのは、bot による依存関係の更新だけです。
-- **Maintainer の経路：** 直接 Maintainer を付与された人の、低または中リスクと評価されたマージリクエストでは、レビュー担当者の依頼、変更要求、bot によるコミットがなければ、GitLab Duo の承認後に `@gitlab-bot` が承認します。作成者がマージします。この経路は、`gitlab-org/gitlab` など、`config/mr_approval_flow.yml` に `maintainer_path` を設定しているプロジェクトで、`triage-ops` の `MR_RISK_MAINTAINER_PATH` CI/CD 変数が `1` の間に限り適用されます。
+- **Maintainer の経路：** Maintainer の権限を直接付与された作成者のマージリクエストが低または中リスクと評価され、変更要求も bot によるコミットもなければ、GitLab Duo の承認後に `@gitlab-bot` が承認します。作成者がマージします。この経路は、`gitlab-org/gitlab` など、`config/mr_approval_flow.yml` に `maintainer_path` を設定しているプロジェクトで、`triage-ops` の `MR_RISK_MAINTAINER_PATH` CI/CD 変数が `1` の間に限り適用されます。
 
 push、ドラフトへの切り替え、評価ラベルの削除によって、承認を取り消します。
 
@@ -96,10 +96,10 @@ Maintainer の経路で、以下をすべて満たす場合に限ります。
   `maintainer_path` を確認してください。
 - プロジェクトの Maintainer を直接付与されています。グループを通じた Maintainer アクセスは、対象になりません。
 - GitLab Duo が、評価対象のコミットを承認しました。
-- 人間のレビュー担当者を依頼しておらず、誰も変更を要求していません。
+- 誰も変更を要求していません。
 - `@gitlab-bot` または GitLab Duo によるコミットがなく、フォークからのマージリクエストではありません。
 
-確実に判断するには、`@gitlab-bot` の承認と、**No human has reviewed this change.** で始まる社内ノートを確認します。あればマージできます。なければ、人間の Maintainer が承認します。
+確実に判断するには、`@gitlab-bot` の承認と、**Maintainer の経路で承認した**ことを示す内部ノートを確認します。両方があればマージできます。なければ、人間の Maintainer が承認します。
 
 ### `@gitlab-bot` が承認したのに、マージできないのはなぜですか？ {#gitlab-bot-approved-so-why-cant-i-merge}
 
@@ -109,7 +109,7 @@ Maintainer の経路で、以下をすべて満たす場合に限ります。
 
 ### 引き続き、人にレビューを依頼できますか？ {#can-i-still-ask-a-person-to-review}
 
-はい。通常どおりレビュー担当者を依頼してください。`@gitlab-bot` の承認を削除する必要はありません。自動マージが設定されており、レビューを待ちたい場合は、キャンセルします。Maintainer の経路では、レビュー担当者を依頼すると、`@gitlab-bot` の承認を自動的に取り消します。
+はい。通常どおりレビュアーにレビューを依頼してください。どちらの経路でも、レビューの依頼で `@gitlab-bot` の承認が取り消されることはなく、承認を削除する必要もありません。自動マージが設定されていてレビューを待ちたい場合は、自動マージをキャンセルしてください。Maintainer の経路では、レビュアーが変更を要求すると、`@gitlab-bot` が承認を取り消します。
 
 ### 誰に連絡すればよいですか？ {#who-do-i-contact}
 

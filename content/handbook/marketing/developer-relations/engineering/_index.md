@@ -2,78 +2,122 @@
 title: "Co-Create & Community Engineering チーム"
 description: "Co-Create & Community Engineering チーム"
 upstream_path: /handbook/marketing/developer-relations/engineering/
-upstream_sha: fa96dbec1adcd6457e8819e6bd3d28fddfdddf4f
-translated_at: "2026-09-20T01:27:10+00:00"
+upstream_sha: "2d1f6094c6d7396f74007d0e3058ac3e143c7e72"
+lastmod: "2026-11-23T09:47:57Z"
+translated_at: "2026-11-23T21:11:54+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-18T16:54:43+02:00"
-model: claude-opus-4-7
 ---
 
-## 共通リンク
+## 共通リンク {#common-links}
 
 |  | |
 |-----|-----|
 | **GitLab チームハンドル** | [`@gitlab-org/developer-relations/contributor-success`](https://gitlab.com/gitlab-org/developer-relations/contributor-success) |
 | **Slack チャンネル** | [`#co-create-and-community-engineering`](https://gitlab.slack.com/archives/C02R0NE6P6C) |
-| **チームボード** | N/A |
+| **チームボード** | [コントリビューターのフライホイールボード](https://flywheel-97bd65.gitlab.io/) |
 | **Issue トラッカー** | [`gitlab-org/developer-relations/contributor-success/team-task`](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues) |
 
 ---
 
-## サブページ
+## サブページ {#sub-pages}
 
 |  | |
 |-----|-----|
 | **ワークフロー** | [コントリビューターワークフロー](/handbook/marketing/developer-relations/engineering/community-contributors-workflows) |
-| **メトリクス** | [コントリビューターのメトリクスとダッシュボード](/handbook/marketing/developer-relations/engineering/metrics) |
+| **報告** | [報告と測定](/handbook/marketing/developer-relations/engineering/reporting/) |
 | **コントリビューターのユーザージャーニー** | [ユーザージャーニー](/handbook/marketing/developer-relations/engineering/user-journey) |
 | **コミュニティペアリングセッション** | [コミュニティペアリングセッション](/handbook/marketing/developer-relations/engineering/community-pairing-sessions) |
 | **イノベーションピッチコンペティション** | [イノベーションピッチコンペティション](/handbook/marketing/developer-relations/engineering/innovation-pitch-competition) |
 | **あなたのコントリビューションを紹介する** | [あなたのコントリビューションを紹介する](/handbook/marketing/developer-relations/engineering/showcase-your-contributions) |
 | **オブザーバビリティアラートのトリアージ** | [コントリビュータープラットフォームのアラートを調査してクローズする方法](/handbook/marketing/developer-relations/engineering/observability-alert-triage) |
-| **進捗報告の方法** | [進捗報告の方法](/handbook/marketing/developer-relations/engineering/how-we-report) |
+| **私たちの仕事の進め方** | [作業の整理、優先順位付け、デリバリー](/handbook/marketing/developer-relations/engineering/how-we-work/) |
 
 ---
 
-## 戦略
+## 戦略 {#strategy}
 
-このチームは、[オープンソース成長戦略](/handbook/engineering/open-source/growth-strategy/)に示された戦略に直接従います。
+コントリビューターのフライホイールは、コントリビューターファネルの各段階における私たちの取り組みを、顧客アカウントと製品の成長につなげます。
 
-## ミッション
+### コントリビューターのフライホイール {#contributor-flywheel}
 
-想像力の速さで共創します。私たちはコントリビュータープログラムをリードし、私たちと一緒に GitLab を共創するお客様を支援して惹きつけ、技術面とプロセス面の改善を通じてコントリビューションプロセスの効率を高めます。これは、[**すべてのチームが想像力の速さで信頼できるソフトウェアをリリースできるようにする**](/handbook/company/mission/)という GitLab のミッションと、[3 年間の社内会社戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)に沿っています。
+```mermaid
+block-beta
+    columns 4
+    space awareness(["Awareness"]):2 space
+    space:4
+    space onboarding(["Onboarding"]):2 space
+    advocacy(["Advocacy"]) space:3
+    space enablement(["Enablement"]):2 space
+    space:4
+    space contributing(["Contributing"]):2 space
+    space:4
+    customer(["Customer Growth"]):2 product(["Product Growth"]):2
 
-### ノーススター
+    awareness --> onboarding
+    onboarding --> enablement
+    enablement --> contributing
+    contributing -.-> advocacy
+    advocacy --> awareness
+    contributing --> customer
+    contributing --> product
 
-私たちのノーススターは、5 年後の到達点です。四半期ごとに変わるものではありません。各四半期の主要な成果は、そこへ向かう一歩です。
+    style advocacy color:#ffffff,fill:#9B51E0,stroke:#9B51E0
+    style customer fill:transparent,stroke:#9B51E0,stroke-width:2px
+    style product fill:transparent,stroke:#9B51E0,stroke-width:2px
+```
 
-- **月間のコミュニティコントリビューションを 5 年以内に 6,000 件へ増やす。** コントリビューションとは、別の GitLab ユーザーが利用、再利用、学習、コピーできる、リリース済みの成果物です。これには、コード、エージェント、フロー、スキル、CI/CD コンポーネントが含まれます。
-- **SHIP Time を 5 年以内に約 10 倍改善する。** SHIP Time（Scope Handoff to Impact Published）は、割り当てられたアイデアがデリバリーに入ってから、再利用可能な成果物としてリリースされるまでの時間です。SHIP Time は Open Community MR Age（OCMA）に代わる指標です。
+ファネルには、主に次の 4 つの支援領域があります。
 
-いずれも 10 倍規模の目標です。1 四半期だけで達成するものではありません。
+1. [認知](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/54)：コントリビューションの機会を見つけられるようにします。
+1. [オンボーディング](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/55)：取り組み始める際の障壁を取り除き、最初の一歩を支援します。
+1. [コントリビューション支援](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/56)：最初のコントリビューションをやり遂げられるように支援します。
+1. [コントリビューション](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/57)：価値のあるコントリビューションや協力が続くように支援します。
 
-### FY27 の方向性
+[アドボカシー](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/58)はフライホイールを加速させます。コントリビューターが開催するイベントや作成するコンテンツ、SNS への投稿が認知を広げます。
+アドボカシーはコントリビューターのジャーニーのどの段階でも生まれ得ます。
+必須の第 5 段階ではありません。
 
-FY27 では、2 つの主要な成果を通じてノーススターに向けた最初の測定可能な一歩を踏み出します。それぞれがチームの 2 つの役割に対応します。
+フライホイール全体で、成長の成果とその解釈に役立つ兆候や活動をどのように区別するかは、[報告と測定](/handbook/marketing/developer-relations/engineering/reporting/#measuring-the-flywheel)を参照してください。
 
-#### Co-Create: お客様との共創によるアカウントの成長
+## ミッション {#mission}
+
+想像力の速さで共創します。
+私たちはコントリビューターの参加を促す取り組みを主導し、私たちと一緒に GitLab を共創するお客様を支援するとともに、そうしたお客様を呼び込みます。また、技術面とプロセス面の改善を通じて、コントリビューターの体験を向上させます。
+これは、[**すべてのチームが想像力の速さで信頼できるソフトウェアをリリースできるようにする**](/handbook/company/mission/)という GitLab のミッションと、[社内向けの 3 年間の会社戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)に沿っています。
+
+### ノーススター {#north-star}
+
+私たちのノーススターは、次の 2 つの成果を通じて、お客様やコミュニティと生み出す価値を高めることです。
+
+- [顧客アカウントの成長](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/35)：共創を通じた既存顧客での拡大案件のパイプライン。
+- [製品の成長](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/36)：価値のあるコントリビューション。
+
+### FY28 の方向性 {#fy28-direction}
+
+FY28 の取り組みでは、ファネルの各段階をこれら 2 つの成果につなげます。
+これまでの計画で掲げた数値目標は、更新後の成果に照らして再確認する必要があります。
+
+#### Co-Create: お客様との共創によるアカウントの成長 {#co-create-with-customers-to-grow-accounts}
 
 お客様と共に構築する取り組みを、持続的なアカウント拡大につなげます。
 
-- **指標:** Co-Create が影響を与えた拡大パイプライン。
+- **成果：** [顧客アカウントの成長](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/35)。
+  アトリビューション（共創が創出した案件と、共創が影響を与えた案件の区別）、測定対象期間、基準値、目標値を策定中です。
 
-#### Community Engineering: コミュニティとの共創によるロードマップの加速
+#### コミュニティとの共創による製品価値の向上 {#co-create-with-the-community-to-add-value-to-the-product}
 
-コミュニティが提供する再利用可能な製品価値を増やし、より速く提供します。
+コントリビューターが提供する再利用可能な製品価値を増やし、より速く提供します。
 
-- **指標:** 月間 1,100 件を目標とするコミュニティコントリビューション数と SHIP Time。
+- **成果：** [製品の成長](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/36)。
+  価値の定義、対象とするコントリビューションの範囲、指標、基準値、目標値を策定中です。
+  コントリビューションの件数と SHIP Time は、価値を評価する際の参考情報です。それだけで価値を立証することはできません。
 
-## チームの責務
+## チームの責務 {#team-responsibilities}
 
-以下は上位レベルの責務です。それぞれが上記の 2 つの主要な成果に寄与します。
+以下は、コントリビューターのフライホイールと 2 つの成長の成果を支える主な責務です。
 
-- コントリビュータープログラムをリードし、ノーススターに向けてコミュニティコントリビューションを増やす。
+- コントリビューターの参加を促す取り組みを主導し、コミュニティからの価値あるコントリビューションを増やす。
 - 私たちと一緒に GitLab を共創するお客様を支援し、惹きつける。
 - 技術面とプロセス面の改善を通じてコントリビューションプロセスの効率を高め、SHIP Time を短縮する。
 - コミュニティコントリビューションのエスカレーション先として、コーチング、レビュー、ブロッカーの解消を行い、GitLab の DRI につなぐ。
@@ -83,75 +127,35 @@ FY27 では、2 つの主要な成果を通じてノーススターに向けた�
 
 これらの責務の運用上の詳細は、サブページの[コントリビューターワークフロー](/handbook/marketing/developer-relations/engineering/community-contributors-workflows)に記載されています。
 
-## Co-Create プログラム
+## Co-Create プログラム {#co-create-program}
 
-GitLab の [Co-Create プログラム](https://about.gitlab.com/community/co-create/)は、Product および Engineering と連携して Co-Create & Community Engineering チームが主導する、部門横断的な取り組みです。GitLab 固有のより詳しい手順は、私たちの [cocreate ハンドブックページ](/handbook/marketing/developer-relations/programs/cocreate/)に記載されています。
+GitLab の [Co-Create プログラム](https://about.gitlab.com/community/co-create/)は、Product および Engineering と連携して Co-Create & Community Engineering チームが主導する、部門横断的な取り組みです。
+GitLab 固有のより詳しい手順は、私たちの [Co-Create のハンドブックページ](/handbook/marketing/developer-relations/programs/cocreate/)に記載されています。
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 {{< team-by-departments "Co-Create & Community Engineering" >}}
 
-## コントリビュータープラットフォーム
+## コントリビュータープラットフォーム {#contributor-platform}
 
-私たちの[コントリビュータープラットフォーム](https://contributors.gitlab.com)は、GitLab へのオープンソースコントリビューターとコミュニティ活動の中心的なハブです。複数のプラットフォームからコントリビューションデータを取り込んでおり、[contributors-gitlab-com プロジェクトの README](https://contributors.gitlab.com/docs/README) に完全に文書化されています。
+私たちの[コントリビュータープラットフォーム](https://contributors.gitlab.com)は、GitLab へのオープンソースコントリビューターとコミュニティ活動の中心的なハブです。
+複数のプラットフォームからコントリビューションデータを取り込んでおり、[contributors-gitlab-com プロジェクトの README](https://contributors.gitlab.com/docs/README)に詳細を記載しています。
 
 [@leetickett-gitlab](https://gitlab.com/leetickett-gitlab) が技術およびエンジニアリングの DRI です。
 
-## プロジェクト管理
+## 私たちの仕事の進め方 {#how-we-work}
 
-- 私たちの[チームプロジェクト](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task)は、すべてのタスクとバックログに関する唯一の情報源です。
-- 複数の部門にまたがる部門横断的な作業を含むエピックは、`gitlab-org` の[レベル](https://gitlab.com/groups/gitlab-org/-/epics?label_name[]=Contributor+Success)で作成できます。
+{{% a "project-management" %}}{{% a "file-an-issue" %}}{{% a "gitlab-orggitlab" %}}{{% a "gitlab-orgdeveloper-relationscontributor-successteam-task" %}}
 
-### Issue を起票する
+作業を追跡する場所、エピックと Issue の整理方法、影響と工数の評価、優先順位付け、デリバリーについては、[私たちの仕事の進め方](/handbook/marketing/developer-relations/engineering/how-we-work/)を参照してください。
 
-#### gitlab-org/gitlab
+## 報告 {#reporting}
 
-オープンソースプロジェクト GitLab に関連し、コントリビューターのフローを向上させるのに役立ち、本質的に公開されるべきすべての Issue は、デフォルトでここに作成してください。私たちは、コントリビューターと GitLab チームメンバーの間に区別を設けないことを目指しており、デフォルトでは誰もがコントリビュートできるべきだと考えています。
+{{% a "okrs" %}}{{% a "performance-indicators" %}}{{% a "unique-wider-community-contributors-per-month" %}}{{% a "community-contributions-and-ship-time" %}}
 
-- 場所: [gitlab-org/gitlab](https://gitlab.com/gitlab-org/gitlab)
-- 必須ラベル: `Contributor Success`
+成長の成果、その解釈に役立つ兆候、報告のカテゴリと担当者、指標やダッシュボードの参照先については、[報告と測定](/handbook/marketing/developer-relations/engineering/reporting/)を参照してください。
 
-#### gitlab-org/developer-relations/contributor-success/team-task
+## 私たちの作業計画の立て方 {#how-we-plan-work}
 
-会社 GitLab の内部的な仕組みに関連するすべての Issue（特定の社内チームの作業、オンボーディングの Issue、オープンソースプロジェクト GitLab とは分離すべきお客様に関連する Issue を含む）は、ここに配置できます。
-
-- 場所: [gitlab-org/developer-relations/contributor-success/team-task](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/)
-- 必須ラベル: `Contributor Success`
-
-## OKR
-
-OKR は公開されていません。ただし、四半期の目標と主要な成果を含め、これらの目標を常に念頭に置いていることはご安心ください。目標、主要な成果、そしてそれらを実現するための作業をどのように構成するかは、[進捗報告の方法](/handbook/marketing/developer-relations/engineering/how-we-report)に記載しています。
-
-## パフォーマンス指標
-
-私たちは以下のパフォーマンス指標を持っています。
-
-### 月間のユニークなワイダーコミュニティコントリビューター数
-
-[月間のユニークなワイダーコミュニティコントリビューター数](/handbook/marketing/developer-relations/performance-indicators/#unique-wider-community-contributors-per-month)
-
-- 活動:
-  - Developer Relations チームとのパートナーシップ。
-  - コミュニティオフィスアワーの開催。
-  - ハッカソンの開催。
-  - フォークからの QA テスト実行の許可。
-  - コミュニティコントリビューション（フォーク内）の CI 実行時間の短縮。
-
-詳細は、[月間のユニークなワイダーコミュニティコントリビューター数のマーケティング PI セクション](/handbook/marketing/developer-relations/performance-indicators/#unique-wider-community-contributors-per-month)に記載されています
-
-### コミュニティコントリビューションと SHIP Time
-
-私たちは、月間のコミュニティコントリビューション数と SHIP Time（Scope Handoff to Impact Published）を追跡します。この 2 つを組み合わせることで、コミュニティが提供する価値の量と速度の両方を測定します。
-
-- 活動:
-  - コミュニティコントリビューションの CI 時間を短縮
-  - コミュニティコントリビューションのオートメーションの改善
-  - フォークでの QA テスト実行を可能にする
-  - コーチの人数を増やす
-  - Engineering Productivity と連携してコントリビューションツールを改善する
-
-注: SHIP Time は Open Community MR Age（OCMA）に代わる指標です。SHIP Time のベースラインが確立されるまで、過去との連続性を保つため、OCMA は [Developer Relations のパフォーマンス指標](/handbook/marketing/developer-relations/performance-indicators/#open-community-mr-age)に残します。
-
-## 私たちの作業計画の立て方
-
-Issue のワークフロー、ワークフローと優先度のラベル、Issue の選び方、四半期ごとのレトロスペクティブ、チームのスタンドアップは、サブページの[コントリビューターワークフロー](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#how-we-plan-work)に記載されています。
+計画とワークフローについては、[評価と優先順位付け](/handbook/marketing/developer-relations/engineering/how-we-work/#assess-and-prioritise)と[作業のデリバリー](/handbook/marketing/developer-relations/engineering/how-we-work/#deliver-work)を参照してください。
+四半期ごとのレトロスペクティブとチームのスタンドアップについては、[チームの定例活動](/handbook/marketing/developer-relations/engineering/how-we-work/#team-cadence)を参照してください。

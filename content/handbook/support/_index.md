@@ -2,11 +2,11 @@
 title: サポートチーム ハンドブック
 description: GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 upstream_path: /handbook/support/
-upstream_sha: "8718485295fc613818105db3bc05f52db3e6ed99"
-translated_at: "2026-11-13T21:04:53.586537Z"
+upstream_sha: 2d1f6094c6d7396f74007d0e3058ac3e143c7e72
+translated_at: "2026-11-23T21:06:25Z"
 translator: codex
 stale: false
-lastmod: "2026-11-13T10:34:31-05:00"
+lastmod: "2026-11-23T13:15:34+13:00"
 ---
 
 ## GitLab サポートチーム ハンドブックへようこそ {#welcome-to-the-gitlab-support-team-handbook}
@@ -415,7 +415,21 @@ Senior/Staff Support Engineer のオフィスアワーで期待できること�
 
 ### サポート週次レビュー {#support-week-in-review}
 
-毎週金曜日、[Engineering 組織全体の週次レビュー](https://drive.google.com/drive/u/0/search?q=type:document%20title%20%22Engineering%20week-in-review%22) からインスピレーションを受けて週次レビューを行っています。SWIR の [トピックフォーム](https://gitlab-com.gitlab.io/support/toolbox/forms_processor/SWIR/)を使用していつでもトピックを追加できます。
+毎週金曜日、[Engineering 組織全体の週次レビュー](https://drive.google.com/drive/u/0/search?q=type:document%20title%20%22Engineering%20week-in-review%22)を参考に、私たちは週次レビューを行っています。Slack では、次の方法でいつでもトピックを追加できます。
+
+- [`#spt_swir`](https://gitlab.enterprise.slack.com/archives/C05VDJX6KSR)を開き、**Workflows** にカーソルを合わせて **Submit a SWIR item** を選択します
+
+  ![spt_swir チャンネルの Workflows メニューを開き、Submit a SWIR item を選択するデモアニメーション](/images/support/swir-bot-workflow-v1-1.gif)
+
+- 上の方法でフォームを一度でも開いたことがあれば、Slack で `/swir` と入力して **Submit a SWIR item** を選択できます
+
+  ![スラッシュコマンド /swir で Workflows メニューを開き、Submit a SWIR item を選択するデモアニメーション](/images/support/swir-bot-workflow-v1-2.gif)
+
+フォームが Slack 内で直接開いて GitLab のユーザー名が自動入力され、[Support Week in Review](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review) プロジェクトに SWIR の Issue がすぐに作成されます。
+
+{{% alert title="警告" color="warning" %}}
+**従来の方法（廃止予定）:** SWIR の[トピックフォーム](https://gitlab-com.gitlab.io/support/toolbox/forms_processor/SWIR/)からもトピックを追加できます。この方法は Slack アプリ `/swir` への移行に伴って段階的に廃止され、後日削除されます。
+{{% /alert %}}
 
 ワークフローの変更や発表は SWIR で共有される必要があり、最近の変更を把握するために少なくとも週に一度は確認することをお勧めします。理想的には、ここで共有される情報は Issue やマージリクエストなどの恒久的な場所にある必要があります。
 
