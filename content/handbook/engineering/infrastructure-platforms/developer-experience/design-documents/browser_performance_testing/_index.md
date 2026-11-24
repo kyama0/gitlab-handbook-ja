@@ -10,11 +10,11 @@ owning-stage: "~stage::developer-experience"
 participating-stages: []
 toc_hide: true
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/design-documents/browser_performance_testing/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T16:51:32Z"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: claude
 stale: false
-lastmod: "2026-01-13T10:32:02+01:00"
+lastmod: "2026-11-24T16:46:19+01:00"
 ---
 
 
@@ -361,6 +361,6 @@ flowchart LR
 * [シフトレフトとシフトライトのパフォーマンステスト](../shift_left_right_performance/)
 * [GitLab Performance Tool (GPT)](https://gitlab.com/gitlab-org/quality/performance)
 * [GitLab ブラウザパフォーマンステスト (GBPT)](https://gitlab.com/gitlab-org/quality/performance-sitespeed)
-* [リファレンスアーキテクチャテスト環境の詳細](https://gitlab.com/gitlab-org/quality/gitlab-environment-toolkit-configs/quality/-/wikis/Performance-environments-setup)
+* [リファレンスアーキテクチャテスト環境の詳細](https://gitlab.com/gitlab-com/gl-infra/software-delivery/operate/get-environments/ra-test-environments/-/wikis/Performance-environments-setup)
 * [Runway ドキュメント](https://runway-docs-4jdf82.runway.gitlab.net/welcome/onboarding/)
 * [GitLab シーディングオプションランブック](https://gitlab.com/gitlab-org/quality/runbooks/-/blob/main/gitlab_seeding_options/index.md?ref_type=heads)

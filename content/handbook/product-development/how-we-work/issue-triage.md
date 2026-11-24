@@ -2,11 +2,11 @@
 title: Issue のトリアージ
 description: "GitLab.com プロジェクトにおける Issue のトリアージとラベル付けのガイドライン"
 upstream_path: /handbook/product-development/how-we-work/issue-triage/
-upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
-translated_at: "2026-11-18T21:13:27+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-18T08:57:21-08:00"
+lastmod: "2026-11-24T16:46:19+01:00"
 ---
 
 GitLab は [オープンな開発](https://about.gitlab.com/blog/2015/12/16/improving-open-development-for-everyone/)を信じており、[GitLab.com](https://gitlab.com/groups/gitlab-org) 上のプロジェクトに対してコミュニティが Issue を立て、マージリクエストを開くことを推奨しています。コミュニティのコントリビューションは貴重であり、私たちはできるだけ効果的に対応すべきです。その中心にあるのがトリアージ、すなわちタイプと深刻度に応じた分類のプロセスです。
@@ -228,9 +228,9 @@ Issue のトリアージ担当者として、あなたは後で浮上する追�
 **パフォーマンスの改善**: 意図したレスポンスタイムに 1 イテレーションで到達することはできないかもしれません。
 私たちは、パフォーマンスの改善を分割することを推奨します。できるところで改善し、新しいレスポンスタイムに基づいて次の適切なレベルの深刻度と優先度を再評価してください。
 
-[^1]: API、Web Controller、Git 呼び出しに対する私たちの現在のレスポンスタイム目標は、[GitLab Performance Tool (GPT)](https://gitlab.com/gitlab-org/quality/performance)がラボのような条件下で [200 RPS / 10k ユーザーのリファレンスアーキテクチャクラスの環境](https://docs.gitlab.com/ee/administration/reference_architectures/10k_users.html)に対して実行した TTFB P90 結果に基づいています。この実行は毎晩行われ、結果は [Reference Architecture プロジェクトの wiki](https://gitlab.com/gitlab-org/quality/performance/-/wikis/Benchmarks/Latest/10k)に出力されます。これらの目標は [Application Lifecycle](/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/) チームが所有しています。
+[^1]: API、Web Controller、Git 呼び出しに対する私たちの現在のレスポンスタイム目標は、[GitLab Performance Tool (GPT)](https://gitlab.com/gitlab-org/quality/performance)がラボのような条件下で [200 RPS / 10k ユーザーのリファレンスアーキテクチャクラスの環境](https://docs.gitlab.com/ee/administration/reference_architectures/10k_users.html)に対して実行した TTFB P90 結果に基づいています。この実行は毎晩行われ、結果は [Reference Architecture プロジェクトの wiki](https://gitlab.com/gitlab-org/reference-architectures/-/wikis/Benchmarks/Latest/10k)に出力されます。これらの目標は [Application Lifecycle](/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/) チームが所有しています。
 
-[^2]: [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp)と [Total Blocking Time (TBT)](https://web.dev/articles/tbt)に対する私たちの現在のブラウザレンダリング目標は、[SiteSpeed](https://gitlab.com/gitlab-org/quality/performance-sitespeed)がラボのような条件下で [20 RPS / 1k ユーザーのリファレンスアーキテクチャクラスの環境](https://docs.gitlab.com/ee/administration/reference_architectures/1k_users.html)に対して実行した結果に基づいています。この実行は毎晩行われ、結果は [GBPT プロジェクトの wiki](https://gitlab.com/gitlab-org/quality/performance-sitespeed/-/wikis/Benchmarks/SiteSpeed/1k)に出力されます。これらの目標は [Developer Experience: Performance Enablement](/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement/) チームが所有しています。
+[^2]: [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp)と [Total Blocking Time (TBT)](https://web.dev/articles/tbt)に対する私たちの現在のブラウザレンダリング目標は、[SiteSpeed](https://gitlab.com/gitlab-org/quality/performance-sitespeed)がラボのような条件下で [20 RPS / 1k ユーザーのリファレンスアーキテクチャクラスの環境](https://docs.gitlab.com/ee/administration/reference_architectures/1k_users.html)に対して実行した結果に基づいています。直近に公開された結果は、[GBPT プロジェクトの wiki](https://gitlab.com/gitlab-org/quality/performance-sitespeed/-/wikis/Benchmarks/SiteSpeed/1k)で確認できます。これらの目標は [Developer Experience: Performance Enablement](/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement/) チームが所有しています。
 
 ### UX {#ux}
 

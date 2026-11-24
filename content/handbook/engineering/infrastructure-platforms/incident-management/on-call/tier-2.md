@@ -1,11 +1,11 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: "1baa88ac2579deb214fe3750bbd0b21139610306"
-translated_at: "2026-10-03T00:54:37+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-01T08:11:54+02:00"
+lastmod: "2026-11-24T10:06:49+13:00"
 ---
 
 Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
@@ -256,7 +256,7 @@ Fleet Visibility、Design Management、Environments、Deployments、Release Mana
 
 ### Database Excellence {#database-excellence}
 
-- ローテーションリーダー: Alex Ives
+- ローテーションリーダー: Daniel Zhu
 - カバレッジ: 24x5 (月曜日〜金曜日)、勤務時間内のみ
 - ギャップ: 05:00 - 07:00 および 22:00 - 23:00
 - スケジュール: [スケジュール](https://app.incident.io/gitlab/on-call/schedules/01KVWT063XW0P0YBDTMYHYQ12Q)

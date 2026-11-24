@@ -2,11 +2,11 @@
 title: "サポートアーキテクチャ"
 controlled_document: true
 upstream_path: /handbook/engineering/infrastructure-platforms/production/architecture/supporting-architecture/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T03:12:43Z"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: claude
 stale: false
-lastmod: "2026-01-23T12:25:37-06:00"
+lastmod: "2026-11-02T16:11:41+01:00"
 ---
 
 このドキュメントは GitLab.com の機能をサポートするアーキテクチャを対象としていますが、ユーザー向けではなく、[インフラチーム](../)が管理しています。
@@ -46,6 +46,12 @@ Ops.gitlab.net は GCP でホストされている GitLab インスタンスで�
 GitLab.com インフラの管理用リポジトリと、インフラリポジトリのミラーが含まれています。
 また、デプロイ管理のためのさまざまなツールや、Slack から送信される便利な chatops コマンドもホストしています。
 ops.gitlab.net の管理者は、インフラマネージャー（Reliability、Scalability、Delivery）です。
+
+### 未使用アカウントの無効化 {#inactive-account-deactivation}
+
+チームメンバーが 90 日間サインインしていない場合、ops.gitlab.net はそのアカウントを[無効化](https://docs.gitlab.com/administration/moderate_users/#deactivate-and-reactivate-users)します。無効化されると、ChatOps を使用したり、ops.gitlab.net の API にアクセスしたりできなくなります。
+
+この場合、インスタンスは `notify@mg.ops.gitlab.net` から「Your account has been deactivated」という件名のメールを送信します。アカウントを再有効化するには、ops.gitlab.net にもう一度サインインしてください。
 
 ### アーキテクチャ
 

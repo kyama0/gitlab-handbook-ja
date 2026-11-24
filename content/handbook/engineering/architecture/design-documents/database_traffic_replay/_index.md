@@ -4,16 +4,16 @@ status: proposed
 creation-date: "2025-05-07"
 authors: [ "@mattkasa", "@stomlinson", "@zbraddock" ]
 coaches: [ "@tkuah" ]
-dris: [ "@alexives", "@rmar1" ]
+dris: [ "@alexander-sosna", "@rmar1" ]
 owning-stage: "~devops::data access"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/database_traffic_replay/
-upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-11-03T17:49:46+01:00"
+lastmod: "2026-11-24T10:06:49+13:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->

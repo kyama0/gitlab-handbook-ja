@@ -2,9 +2,9 @@
 title: "キャンペーンとプログラム"
 description: "キャンペーンは、マーケティング施策の取り組みを追跡するために使用します"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: "d5f4e694763c3ac443cc3d58c6a9a81bafa06880"
-lastmod: "2026-11-02T13:55:37-07:00"
-translated_at: "2026-11-02T21:03:48+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-23T15:39:11-07:00"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: codex
 stale: false
 ---
@@ -1012,6 +1012,10 @@ _および_ Brilliant Gifts の使用が必要になることがあります。�
 
 私たちのマーチャンダイズベンダーである Brilliant Gifts は、自社側で Preferred Gift キャンペーンをセットアップする必要があります。これには最大 1 ヶ月かかることがあり、私たちのアカウントの CSM への連絡が必要です。Qualified ワークフローを使用するには、現在の Qualified テックオーナーが Qualified のミーティング予約リンクをセットアップする必要があります。適切な連絡先については、[Tech Stack](/handbook/business-technology/tech-stack-applications/)を参照してください。Marketo テンプレートは簡単にクローンできるようにセットアップされているため、セットアップ中はゆっくりと慎重に進めてください
 
+Brilliant の代わりに Marketo から招待メールを送り、そのメールにギフトの引き換えリンクを含める場合は、Marketo のプログラムとスマートキャンペーンを Brilliant のバックエンドに接続してから、リードを `Nominated` ステータスでプログラムに追加し（次のステップ）、そのステータスで Brilliant の webhook が実行されることを確認してください。この処理用のスマートキャンペーンはテンプレートに組み込まれています。リードが Preferred Gift キャンペーンに送られると、個別のギフト引き換えリンクが `program member` の `Brilliant Gift Url` フィールドに送られます。メール送信時にはトークンの外側に `https://` を付けますが、Brilliant はギフトリンクを `https://` が付いた状態でそのフィールドに入力します。このフィールドをトークンとして使うと、メール内のリンクが正しく生成されず、開けなくなります。リストのアップロードを使って、`Brilliant Gift Url` の値から `https://` を取り除き、`Brilliant Gift Link` フィールドに移すことを推奨します。Marketo と Brilliant が同じリードのプロファイルを選ぶとは限らないため、重複レコードすべての `Brilliant Gift Link` フィールドにも値を入れてください
+
+注意: 現在は Marketo からのメール送信に注力しているため、Outreach ストアフロントの確認メールを無効にしています。Brilliant のインテグレーション設定で、確認メールを再度有効にできます
+
 注意: 複数の Marketo プログラムを同じ Preferred Gift キャンペーンに接続すると、プログラムステータスの重複やメンバーの二重登録が発生し、アトリビューションやキャンペーンの成功の追跡に影響する可能性があります。複数のプログラムで同じ Preferred Gift キャンペーンを使用する必要がある場合は、1 つの Marketo プログラムを Brilliant に接続し、別の Marketo プログラムから、Brilliant に接続したその Marketo プログラムとスマートキャンペーンを呼び出すのが最適です。これは電子ギフトキャンペーンで一般的なセットアップになります
 
 ### ステップ 1: Marketo プログラムと Salesforce キャンペーンを作成する {#step-1-create-the-marketo-program-and-salesforce-campaign}
@@ -1030,12 +1034,14 @@ _および_ Brilliant Gifts の使用が必要になることがあります。�
 - `no show` アクティビティを登録するために、単一または親プログラムで `03 Change to No Show` を有効化します * この機能は現時点では実験的です
 - Sales へのメールアラートを求められた場合は、`Delivered Alerts` スマートキャンペーンを有効化します。ギフトが引き換えられたときと配達されたときに、リードオーナーへ通知します
 
+上記の内容を繰り返します。Brilliant の代わりに Marketo から招待メールを送り、そのメールにギフトの引き換えリンクを含める場合は、Marketo のプログラムとスマートキャンペーンを Brilliant のバックエンドに接続してから、リードを `Nominated` ステータスでプログラムに追加し（次のステップ）、そのステータスで Brilliant の webhook が実行されることを確認してください。この処理用のスマートキャンペーンはテンプレートに組み込まれています。リードが Preferred Gift キャンペーンに送られると、個別のギフト引き換えリンクが `program member` の `Brilliant Gifts Url` フィールドに送られます。メール送信時にはトークンの外側に `https://` を付けますが、Brilliant はギフトリンクを `https://` が付いた状態でそのフィールドに入力します。このフィールドをトークンとして使うと、メール内のリンクが正しく生成されず、開けなくなります。リストのアップロードを使って、`Brilliant Gift Url` の値から `https://` を取り除き、`Brilliant Gift Link` フィールドに移すことを推奨します。Marketo と Brilliant が同じリードのプロファイルを選ぶとは限らないため、重複レコードすべての `Brilliant Gift Link` フィールドにも値を入れてください
+
 ### ステップ 3: ターゲットリストと指名されたリードのロード {#step-3-target-lists-and-loading-nominated-leads}
 
 プログラムテンプレートには、ターゲットリスト用のスマートリストアセットが含まれています。この段階では MktgOps に相談することを推奨します。
 
 - ターゲットリストを計画するには、`Target List NEW` を使用します。ターゲットリストとして別のスマートリストを使用する場合は、処理用のスマートキャンペーン内の必要な箇所を更新します
-- ターゲットリスト全体を、クローンしたプログラムに `Nominated` ステータスで追加することを推奨します
+- ターゲットリストの全リードを、クローンしたプログラムに `Nominated` ステータスで追加し、それぞれに固有のギフトリンクが届いたことを再確認することを推奨します
 
 ### ステップ 4: ターゲットリストへのメール送信 {#step-4-emailing-target-list}
 

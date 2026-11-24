@@ -2,9 +2,9 @@
 title: "私たちの仕事の進め方"
 description: Co-Create & Community Engineering チームが作業を整理し、優先順位を付け、デリバリーする方法
 upstream_path: /handbook/marketing/developer-relations/engineering/how-we-work/
-upstream_sha: "2d1f6094c6d7396f74007d0e3058ac3e143c7e72"
-lastmod: "2026-11-23T09:47:57Z"
-translated_at: "2026-11-23T21:11:54+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-23T22:57:46Z"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: codex
 stale: false
 ---
@@ -67,9 +67,22 @@ stale: false
 
 ### 影響と工数 {#impact-and-effort}
 
-Issue またはエピックの説明に、[影響](#impact)と[工数](#effort)をそれぞれ低・中・高の 3 段階で記録し、その根拠も記載してください。
+新しい Issue では、Issue テンプレートを使って当初の判断の根拠を記載してください。
+
+- **[影響](#impact)：** 誰にメリットがあり、何が変わるか。
+- **[工数](#effort)：** おおよその規模、前提、不確実性。
+- **[優先度](#priority-labels)。**
+
+影響と工数は、低・中・高の 3 段階で評価してください。
 これらは今後調整していくための当初の目安です。GitLab 全体で使用する `Impact::` や `Effort::` ラベルの定義とは異なります。
-期限、コントリビューターの作業を妨げるバグ、先送りする場合のコストなど、緊急度も説明してください。
+新しいエピックの説明にも同じ内容を記載してください。
+
+[週次トリアージレポート](#weekly-triage-report)の対象項目には、作成時や内容を具体化する際に、必要なスコープ付きラベルを付けてください。
+ラベルは根拠を補足するものです。根拠も記載してください。
+
+既存の Issue やエピックを再評価する際は、作業の順序やスコープに影響する場合など、評価が実質的に変わるときに、その理由をコメントで説明してください。
+作業のスコープが変わる場合は、説明欄に残しておくべき背景情報を更新してください。
+機械的なラベル修正や、評価に影響しないラベルの一括付与では、コメントを控えてください。
 
 作業内容を具体化する際は、数値による採点式を使わず、概算を比較して判断してください。
 原則として[優先度マトリクス](#priority-labels)に従い、例外は記録してください。
@@ -120,7 +133,7 @@ Issue またはエピックの説明に、[影響](#impact)と[工数](#effort)�
 
 `priority::1` が最も高く、`priority::4` が最も低い優先度です。
 緊急度、依存関係、戦略上のコミットメントに応じて、表の優先度を変更できます。
-変更する理由は、Issue またはエピックの説明に記録してください。
+表の優先度を変更する理由は、当初の判断の根拠に含めてください。既存の作業を再評価する場合は、コメントで説明してください。
 
 ## 作業のデリバリー {#deliver-work}
 
@@ -142,6 +155,28 @@ Issue またはエピックの説明に、[影響](#impact)と[工数](#effort)�
 [チームのスタンドアップ](#stand-up)を活用し、作業を進めたりブロッカーを解消したりするために協力してください。
 
 ## チームの定例活動 {#team-cadence}
+
+### 週次トリアージレポート {#weekly-triage-report}
+
+トリアージの自動処理は月曜日の 02:00 UTC に実行されるよう設定されており、[team-task](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues)に機密 Issue として **Contributor Success 週次トリアージレポート**を作成します。
+指摘事項がなければレポートは作成されません。
+
+レポートは、Contributor Success グループ直下のオープンなエピックと、`team-task` のオープンな Issue を対象に、次の点を確認します。
+
+- `Impact::*`、`Effort::*`、`priority::*` のいずれかのラベルが欠けている。
+- 担当者が割り当てられている作業の最終更新から 14 日を超えている。
+- [デリバリーの分類](#epics-and-delivery-groups)につながる上位エピックがないか、階層が間違っている。
+
+ラベルのチェックでは、必要なラベルがそろっているかどうかだけを確認します。
+サブグループのエピックや他のプロジェクトの Issue は、対象のエピックに紐づいている場合も対象外です。
+[トリアージレポートのヘルパー](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/lib/contributor_success_triage_report_helper.rb)はチェック項目と例外を定義し、[レポートポリシー](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/policies/groups/gitlab-org/contributor-success/weekly-triage-report.yml)は Issue の作成方法を定義します。
+
+レポートの自分のセクションにある項目を確認し、対象の Issue やエピックでラベルやエピックの階層を修正してください。
+更新が滞っている担当作業は、具体的な進捗を共有してください。担当を外れている場合は、自分の割り当てを解除してください。
+指摘事項に対応したら、それぞれのチェックボックスにチェックを入れてください。チェックを入れても、対象の項目は更新されません。
+
+レポートの自分のセクションで割り当てられるのは、トリアージ後の対応です。実装の担当を割り当てるものではありません。
+自動処理によって、対象項目の担当者やその他のデータが変わることはありません。
 
 ### レトロスペクティブ {#retrospective}
 

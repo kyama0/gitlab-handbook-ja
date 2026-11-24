@@ -10,11 +10,11 @@ participating-stages: [~"devops::analytics", ~"devops::ai-powered", ~"devops::so
 # Hides this page in the left sidebar. Recommended so we don't pollute it.
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/selfmanaged_segmentation/
-upstream_sha: 86cfa2bd7d73df5a673fe5ebd33b028d0f540434
-translated_at: "2026-04-27T08:00:00Z"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:13:59+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-15T18:25:32-05:00"
+lastmod: "2026-11-24T10:22:48-06:00"
 ---
 
 <!--
@@ -116,7 +116,7 @@ Advanced を通じて、すべてのお客様が完全にクラウドネイテ�
 数千のデプロイにわたる GitLab 管理者が各リリースで新しいサービスを継続的に追加・維持・バックアップすることを期待することはできません。
 ますます増加するリソース要求、指数関数的な複雑さ、および運用コストの増大をお客様が受け入れることを期待することはできません。
 
-マイクロサービスベースのアーキテクチャに向けて製品が移行することを提唱したり、促進したりするものではありません。
+GitLab の内部サービスアーキテクチャは、この提案では規定しません。新機能は原則としてモジュール化されたサービスとして構築します（[Theseus Platform Vision](/handbook/engineering/architecture/design-documents/theseus_platform_vision/)を参照）。上記で問題にしているのは、セルフマネージドの管理者に稼働・運用を求めるコンポーネントの数です。
 
 機能とコンポーネントの追加に関して常に存在してきた同じ考慮事項は、引き続き存在します。
 [コンポーネントオーナーシップモデル](../../../infrastructure-platforms/production/component-ownership-model/)と準備アセスメントを参照してください。
@@ -129,6 +129,7 @@ Advanced を通じて、すべてのお客様が完全にクラウドネイテ�
 - [エアギャップ](https://en.wikipedia.org/wiki/Air_gap_(networking)) vs 非エアギャップ環境の議論。
 - Omnibus GitLab メタパッケージイニシアティブ。
 - コンポーネントごとのバージョニングと整合したバージョンの追跡。
+- リリース頻度。セルフマネージドと Dedicated では、GitLab.com の安定したコードを元に月次でスナップショットをリリースする方式へ移行しつつあります。
 - 新しい Premium/Ultimate コンポーネントを別の有料 SKU として扱う議論はこの提案のスコープ外です。
 - お客様向けに Kubernetes クラスターをデプロイする特定の方法を決定したり、OAK のためにお客様が自分のクラスターを持ち込むことを要求したりすること。
 

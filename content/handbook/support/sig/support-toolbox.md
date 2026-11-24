@@ -2,9 +2,9 @@
 title: Support Toolbox プロジェクトのライフサイクル
 description: Support Toolbox グループのプロジェクトを Experimental、Staging、Toolbox、Archive に分類する方法、Toolbox の要件、および各移行の承認者について説明します。
 upstream_path: /handbook/support/sig/support-toolbox/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-29T08:56:35+13:00"
-translated_at: "2026-11-01T18:15:14+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-24T16:03:30+13:00"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: codex
 stale: false
 ---
@@ -77,7 +77,7 @@ Staging のプロジェクトの中には、利用が広がるにつれて SIG �
 
 これらの基準を満たさないプロジェクトは、Toolbox に追加しません。
 
-**Toolbox プロジェクトへの変更は、すべて SIG の承認が必要です。** Toolbox へのプロジェクトの追加、Toolbox からの削除、アーカイブが含まれます。[Toolbox プロジェクトの SIG 承認を申請する](#requesting-sig-approval-for-a-toolbox-project)を参照してください。
+**Toolbox プロジェクトへの変更は、すべて SIG の承認が必要です。** Toolbox へのプロジェクトの追加、Toolbox からの移管、プロジェクトのアーカイブと削除が含まれます。[Toolbox プロジェクトの SIG 承認を申請する](#requesting-sig-approval-for-a-toolbox-project)を参照してください。
 
 ### Archive {#archive}
 
@@ -90,7 +90,7 @@ Archive はプロジェクトの状態であり、グループではありませ
 - 別のツールに置き換えられている
 - 所有者が退職している
 
-アーカイブされたプロジェクトは、移動も削除もしません。[プロジェクトのアーカイブ](https://docs.gitlab.com/user/project/working_with_projects/#archive-a-project)と[プロジェクトのアーカイブ解除](https://docs.gitlab.com/user/project/working_with_projects/#unarchive-a-project)の方法について、GitLab のドキュメントを参照してください。アーカイブすると、スケジュールされたパイプラインとプルミラーリングも停止し、デプロイされた Pages が削除されます。
+プロジェクトをアーカイブしても、移動や削除は行われません。[プロジェクトのアーカイブ](https://docs.gitlab.com/user/project/working_with_projects/#archive-a-project)と[プロジェクトのアーカイブ解除](https://docs.gitlab.com/user/project/working_with_projects/#unarchive-a-project)の方法について、GitLab のドキュメントを参照してください。アーカイブすると、スケジュールされたパイプラインとプルミラーリングも停止し、デプロイされた Pages が削除されます。
 
 ## カテゴリ間でプロジェクトを移動する {#moving-projects-between-categories}
 
@@ -100,17 +100,22 @@ Archive はプロジェクトの状態であり、グループではありませ
 | Staging から Toolbox、または Toolbox から Staging | SIG が承認します。[Toolbox プロジェクトの SIG 承認を申請する](#requesting-sig-approval-for-a-toolbox-project)を参照してください。 |
 | Experimental または Staging から Archive | プロジェクトの所有者、または所有者が退職している場合は Support Leader が、プロジェクトが使用または保守されていないことを示す根拠に基づいて決定し、その後、告知して異議申し立ての期間を設けます。 |
 | Toolbox から Archive | SIG の承認後、プロジェクトは[プロジェクトをアーカイブする](#archiving-a-project)の手順に従います。 |
+| Experimental のプロジェクトを削除する | プロジェクトの所有者。承認は不要です。[プロジェクトを削除する](#deleting-a-project)を参照してください。 |
+| Staging または Toolbox のプロジェクトを削除する | SIG が承認します。[プロジェクトを削除する](#deleting-a-project)を参照してください。 |
+
+プロジェクトの移管、アーカイブ、削除には、そのプロジェクトの Owner ロールが必要です。Support Engineers にはこのロールがないため、変更が決まったら Support Leader に実施を依頼してください。
 
 ### Toolbox プロジェクトの SIG 承認を申請する {#requesting-sig-approval-for-a-toolbox-project}
 
-SIG が申請を承認する前に、Toolbox プロジェクトを追加、削除、アーカイブしないでください。
+SIG が申請を承認する前に、プロジェクトを Toolbox に追加したり、Toolbox から移管したり、アーカイブや削除を行ったりしないでください。
 
-1. [SIG Intake Request Form](https://gitlab.com/gitlab-com/support/support-project-portfolio/-/work_items/new?description_template=sig_intake)を使って申請を作成してください。プロジェクト、行いたいこと（追加、削除、アーカイブ）、および Toolbox の基準をどのように満たすか、または満たさなくなった理由を記載してください。
+1. [SIG Intake Request Form](https://gitlab.com/gitlab-com/support/support-project-portfolio/-/work_items/new?description_template=sig_intake)を使って申請を作成してください。対象のプロジェクト、希望する変更（追加、Toolbox からの移管、アーカイブ、削除）、および Toolbox の基準をどのように満たすか、または満たさなくなった理由を記載してください。
 1. SIG が申請をレビューし、[SIG のワークフローと承認プロセス](support-innovation-group.md)を通じて承認するのを待ってください。
 1. 承認後、変更を行い、完了したら申請にコメントしてください。
    - **Toolbox に追加する:** Support Leader が、Staging から Toolbox グループのルートへ[プロジェクトを移管](https://docs.gitlab.com/user/project/working_with_projects/#transfer-a-project)します。Toolbox グループにプロジェクトを追加できるのは Support Leader のみであり、その権限があっても SIG の承認に代えることはできません。
-   - **Toolbox から削除する:** プロジェクトの所有者または Support Leader が、プロジェクトを Staging グループに移管します。
+   - **Toolbox から移管する:** Support Leader が、プロジェクトを Staging グループに移管します。
    - **アーカイブする:** [プロジェクトをアーカイブする](#archiving-a-project)に従ってください。
+   - **削除する:** [プロジェクトを削除する](#deleting-a-project)に従ってください。
 1. 移管後、古いプロジェクトパスに依存していた CI/CD パイプライン、インテグレーション、リンクを確認してください。
 
 ### プロジェクトをアーカイブする {#archiving-a-project}
@@ -121,3 +126,8 @@ SIG が申請を承認する前に、Toolbox プロジェクトを追加、削�
 1. スケジュールされたパイプラインなど、実行中の自動化を無効にしてください。
 1. 告知した日にプロジェクトをアーカイブしてください。
 1. 古いプロジェクトパスに依存していた CI/CD パイプライン、インテグレーション、リンクなど、動かなくなったものがあれば報告するようチームに依頼してください。
+
+### プロジェクトを削除する {#deleting-a-project}
+
+1. プロジェクトが Staging または Toolbox にある場合は、先に [SIG Intake Request Form](https://gitlab.com/gitlab-com/support/support-project-portfolio/-/work_items/new?description_template=sig_intake)を使って SIG の承認を得てください。Experimental にある場合は、プロジェクトの所有者が判断します。
+1. Support Leader に[プロジェクトの削除](https://docs.gitlab.com/user/project/working_with_projects/#delete-a-project)を依頼してください。

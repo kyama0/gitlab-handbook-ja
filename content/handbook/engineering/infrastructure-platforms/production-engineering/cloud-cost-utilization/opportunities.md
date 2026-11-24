@@ -2,9 +2,9 @@
 title: "FinOps の機会"
 description: "GitLab 全体で FinOps の機会を追跡する方法：ライフサイクルのステージ、担当者、ラベル、ステータスノート"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/opportunities/"
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T15:06:56+01:00"
-translated_at: "2026-11-17T21:14:57.510431+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-24T16:49:11+01:00"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: codex
 stale: false
 ---
@@ -79,8 +79,8 @@ Issue を新しいステージに進める人が、ステージラベルを変�
 
 1. **Proposed ⟶ Confirmed**：作成者と CCU チームが担当チームと連携します。担当チームが機会とランレート削減の見積もりを確認したら、Issue に担当チームの `group::<group>` ラベル（該当する場合は `Service::<service>` ラベルも）が付いていることを確認し、ラベルを `FinOps::Opportunity::Confirmed` に変更してください。
 1. **Confirmed ⟶ Committed**：担当チームの EM が期日までに変更を実施することを約束します。Issue に期日を設定し、ラベルを `FinOps::Opportunity::Committed` に変更してください。
-1. **Committed ⟶ Implemented**：担当チームが変更をリリースします。完全に稼働したら、ラベルを `FinOps::Opportunity::Implemented` に変更してください。
-1. **Implemented ⟶ Realized**：14 日以内に、担当チームが CCU チームと FinOps TPM の支援を受け、ランレート削減を測定して文書化します。影響を測定するか合意したら、ラベルを `FinOps::Opportunity::Realized` に変更し、最後のステータスノートを投稿して、Issue をクローズします。ランレート削減の機会では、実現した数値を `realized_annual_run_rate_reduction` に記載します（[ステータスノートの形式](#status-note-format)を参照）。それまでは Issue を開いたままにします。影響を測定できないと判断した場合も、ラベルを `FinOps::Opportunity::Realized` に変更し、`Measurement basis:` にその旨を記載して、実現した数値は省略し、Issue をクローズします。効率化やコスト回避の機会では、`Measurement basis:` に得られた価値を記録したら、`yaml` ブロックを付けずに Realized に移し、Issue をクローズします。
+1. **Committed ⟶ Implemented**：担当チームが変更をリリースします。完全に稼働したら、ラベルを `FinOps::Opportunity::Implemented` に変更してください。ラベルを変更した日が変更の稼働日と異なる場合は、ステータスノートの `delivered_on` に稼働日を記載してください（[ステータスノートの形式](#status-note-format)を参照）。変更の稼働前には `delivered_on` を記載しないでください。
+1. **Implemented ⟶ Realized**：14 日以内に、担当チームが CCU チームと FinOps TPM の支援を受け、ランレート削減を測定して文書化します。影響を測定できた時点、または影響について合意できた時点で、ラベルを `FinOps::Opportunity::Realized` に変更し、最後のステータスノートを投稿して、Issue をクローズします。ランレート削減の機会では、実現した数値を `realized_annual_run_rate_reduction` に記載します（[ステータスノートの形式](#status-note-format)を参照）。それまでは Issue を開いたままにします。影響を測定できないと判断した場合も、ラベルを `FinOps::Opportunity::Realized` に変更し、`Measurement basis:` にその旨を記載して、実現した数値は省略し、Issue をクローズします。効率化やコスト回避の機会では、`Measurement basis:` に得られた価値を記録したら、`yaml` ブロックを付けずに Realized に移し、Issue をクローズします。
 
 Implemented に達する前に、実現不可能、コストが削減されないなど、何らかの理由で機会に取り組まないと決めた場合は、ラベルを `FinOps::Opportunity::Discarded` に変更し、Issue に理由を説明してクローズしてください。
 
@@ -151,7 +151,7 @@ flowchart TD
 
 ### ステータスノートの形式 {#status-note-format}
 
-ステータスノートは、機会の現在のステータスと数値を記録します。ステージまたは数値が変わるたびに、**社内ノート**として投稿してください。コメントは `/internal_note` で始めてください。
+ステータスノートは、機会の現在のステータスと数値を記録します。ステージや数値が変わったときや、変更の稼働日を記録するときは、**社内ノート**として投稿してください。コメントは `/internal_note` で始めてください。
 
 ````markdown
 /internal_note
@@ -183,21 +183,37 @@ realized_annual_run_rate_reduction: 96000
 Measurement basis: <Whether the realized figure was measured or agreed, how you arrived at it, and why it differs from the estimate.>
 ````
 
+ステージラベルを Implemented または直接 Realized に変更した日が変更の稼働日と異なる場合は、`delivered_on` に稼働日を記載してください。日付だけを記載することもできます。
+
+````markdown
+/internal_note
+
+## FinOps status
+
+Status: Implemented. <When the change went live, and when the label moved.>
+
+```yaml
+delivered_on: 2026-11-05
+```
+````
+
 | 部分 | 形式 | 内容 |
 |---|---|---|
 | `Status:` | ラベルの後に続くテキスト | 機会の現在の状況。 |
 | `estimated_annual_run_rate_reduction` | 年間の米ドル額を整数で、数字のみで記載。たとえば `120000` | この機会によるランレート削減額。月額コスト削減額の 12 倍です。ランレート削減の機会にのみ使用します。 |
 | `realized_annual_run_rate_reduction` | 年間の米ドル額を整数で、数字のみで記載。たとえば `96000` | チームが影響として測定した、または合意したランレート削減額です。前年比ではなく、対象をそのままにした場合のコストに対する年間削減額です。変更によっては、チームが根拠を示せて、`Measurement basis:` にその旨を記載する場合、基礎となる傾向を 1 年間にわたって予測しても構いません。Realized 以降でのみ使用します。ランレート削減の機会にのみ使用します。 |
+| `delivered_on` | `YYYY-MM-DD` 形式の日付。たとえば `2026-11-05` | 任意。変更が稼働した日です。ステージラベルを Implemented または直接 Realized に変更した日が稼働日と異なる場合にのみ記載してください。この日付を基にランレート削減を計上する四半期が決まります。省略した場合は、ラベルを変更した日を使用します。機会が Implemented または Realized の間のみ有効で、ノートの投稿日より後の日付は指定できません。ランレート削減の機会にのみ使用します。 |
 | `Estimation basis:` | ラベルの後に続くテキスト | ランレート削減の見積もり方法と、後から測定できる方法（請求データなど）。数値が実測値か見積もりかを明記してください。効率化やコスト回避の機会では、代わりに得られる価値をここで説明してください。 |
 | `Measurement basis:` | ラベルの後に続くテキスト | 実現した数値が測定したものか合意したものか、担当チームがどのようにその数値に至ったか、見積もりと異なる理由を記載します。方法はチームに任せ、可能な範囲で構いません。CCU チームと FinOps TPM が支援できます。効率化やコスト回避の機会では、代わりに得られた価値を説明してください。 |
 
 ツールがノートを読み取れるよう、次のルールに従ってください。
 
-- `## FinOps status` 見出しと、`estimated_annual_run_rate_reduction` および `realized_annual_run_rate_reduction` のフィールド名は、表示されているとおりに保持してください。
-- 金額は `yaml` ブロック内に、数字のみで記載してください。
-- 数値がまだ不明の場合は、そのキーを省略し、どちらも不明な場合は `yaml` ブロックを省略してください。不明な値に `0` を記載してはいけません。
+- `## FinOps status` 見出しと、`estimated_annual_run_rate_reduction`、`realized_annual_run_rate_reduction`、`delivered_on` のフィールド名は、表示されているとおりに保持してください。
+- 数値と日付は `yaml` ブロック内に記載してください。数値には数字のみを使用し、日付は `YYYY-MM-DD` 形式で記載してください。
+- 数値や日付がまだ不明な場合は該当するキーを省略し、すべて不明な場合は `yaml` ブロックを省略してください。不明な数値に `0` を記載してはいけません。
 - 変更による削減がなかった場合の、実現した数値であるゼロは既知の値です。`0` と記載してください。そのキーを省略するのは、数値がまだ不明な間、または `Measurement basis:` に測定できない旨を記載した場合だけです。
-- 各数値について、その値を記載した最新のノートを採用するため、ノートには追加または変更する数値だけを含めれば十分です。
+- 各数値と日付について、その値を記載した最新のノートを採用するため、ノートには追加または変更する値だけを記載すれば十分です。
+- `delivered_on` は機会が Implemented または Realized の間のみ有効です。日付を変更するには、正しい日付を記載した新しいノートを投稿してください。機会が以前のステージに戻った場合は、変更が再び稼働した時点で日付を改めて記載してください。
 - 効率化とコスト回避の機会では、`yaml` ブロックを省略してください。これらはランレートを削減しないため、そこに金額を記載するとランレート削減に算入されてしまいます。
 - 古いノートを編集せず、新しいノートを投稿してください。最新のノートが現在のステータスであり、それ以前のノートが履歴になります。
 

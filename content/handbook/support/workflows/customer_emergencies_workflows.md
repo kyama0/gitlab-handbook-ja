@@ -3,11 +3,11 @@ title: 顧客緊急対応業務の遂行方法
 category: On-call
 description: "Support Engineering における顧客緊急対応ローテーションの役割と責任の説明"
 upstream_path: /handbook/support/workflows/customer_emergencies_workflows/
-upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
-translated_at: "2026-11-19T06:16:51+09:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-18T15:32:51Z"
+lastmod: "2026-11-24T18:21:56+13:00"
 ---
 
 ## はじめに {#introduction}
@@ -869,7 +869,7 @@ Support Manager オンコールは常にあなたを支援するために対応�
 
 ### SIRT 緊急対応 {#sirt-emergencies}
 
-侵害された self-managed インスタンスや GitLab.com グループに関する緊急対応が発生した場合、以下のいずれかのワークフローに従って SIRT チームを関与させることができます。
+侵害された GitLab.com グループに関する緊急対応が発生した場合は、以下の GitLab.com のワークフローに従って SIRT チームに対応を依頼できます。Self-managed インスタンスが侵害された場合は、以下の self-managed のワークフローに従ってください。
 
 #### GitLab.com SIRT 緊急対応 {#gitlabcom-sirt-emergency}
 
@@ -881,7 +881,7 @@ SIRT Issue が作成されたら、[優先順位付け SLA](https://internal.git
 
 #### Self-managed SIRT 緊急対応 {#self-managed-sirt-emergency}
 
-Self-managed SIRT 緊急対応については、問題を軽減し、フォレンジックデータを収集するために、以下のステップに従うよう顧客に依頼してください。
+Self-managed の SIRT 緊急対応では、問題の影響を抑えてフォレンジックデータを保全するため、以下の手順に従うよう顧客に依頼してください。顧客は、保全したデータを自社のセキュリティチームやセキュリティパートナーに共有し、分析を依頼できます。GitLab のセキュリティインシデントに関するドキュメントの[インスタンスの侵害が疑われる場合](https://docs.gitlab.com/security/responding_to_security_incidents/#suspected-compromised-instance)も案内できます。以下は、そのセクションに含まれる手順の一部です。
 
 1. インスタンスをすぐにシャットダウンします。
 1. 同じバージョンで新しいインスタンスを作成し、最新のバックアップをそれに復元します。
@@ -894,9 +894,8 @@ Self-managed SIRT 緊急対応については、問題を軽減し、フォレ�
 1. このインスタンスを侵害するために使用されたエクスプロイトが既知の場合は、その修正が含まれるバージョンに **新しいインスタンス** をアップグレードするか、既知のパッチ／回避策を適用します。
    - 組織が公開アクセスを必要とする場合は、新しいインスタンスが適切に保護された後にネットワークアクセス制限を削除します。
 1. フォレンジックと追加のデータ復旧のために侵害されたインスタンスを保持します。
-1. 潜在的な緊急対応について [Support Manager オンコールに通知](../on-call.md#engaging-the-on-call-manager)し、ログ分析、コンサルティング、フォレンジック分析、インシデント対応、検出エンジニアリングのために [SIRT インシデント](https://internal.gitlab.com/handbook/security/cross_functional_runbooks/customer_security_incidents/#runbook)を発生させるべきかを評価します。
 
-Support Manager オンコールに連絡を取らずに通話を提案したり参加したりしないでください。チケットを通じて顧客と一致して期待値を設定するためです。
+緊急対応が必要な可能性があることを [Support Manager オンコールに通知](../on-call.md#engaging-the-on-call-manager)してください。個別のケースで SIRT の支援を受けられるか不明な場合は、[Security Engineer オンコールに連絡する](/handbook/security/security-operations/sirt/engaging-security-on-call/#engage-the-security-engineer-on-call)に従い、トリアージ中に Slack で `@sirt-oncall` をメンションして確認してください。通話を提案したり通話に参加したりする前に、Support Manager オンコールに連絡し、チケットを通じて顧客と対応の見通しをすり合わせてください。
 
 #### 機密の SIRT Issue へのアクセスをリクエストする {#requesting-access-to-a-confidential-sirt-issue}
 

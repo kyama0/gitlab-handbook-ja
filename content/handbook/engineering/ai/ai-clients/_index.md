@@ -2,9 +2,9 @@
 title: AI Clients
 description: "AI Clients ステージは、開発者とユーザーが GitLab Duo の AI 機能を利用するサーフェスを担当します。これには、エディター拡張機能、Duo CLI、Duo Chat の Web インターフェース、共有クライアント SDK が含まれます。"
 upstream_path: /handbook/engineering/ai/ai-clients/
-upstream_sha: a2c133ac0b90478eaeb060e8ad64034a95cee1b8
-lastmod: "2026-11-05T15:40:43+01:00"
-translated_at: "2026-11-06T21:01:41.807053+00:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+lastmod: "2026-11-24T12:37:48-08:00"
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: codex
 stale: false
 ---
@@ -55,6 +55,16 @@ graph TD
 以下の人々は、AI Clients ステージの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)です。
 
 {{< group-by-slugs james.casey dashaadu ychen16 nickleonard jglassman1 erran >}}
+
+### Principal Engineer
+
+{{< member-by-gitlab "erran" >}} は Tim Zallmann (VP of AI) の直属で、AI Clients の 3 グループすべてを横断して活動します。この役割では、クライアントアーキテクチャとセキュリティに注力します。具体的には、共有クライアントスタックの構成、クライアントと AI プラットフォームの他の部分との統合方法、ユーザーのマシンに届けるすべてのもののセキュリティ態勢を扱います。
+
+Erran に相談するには、以下を参照してください。
+
+- クライアントアーキテクチャを変更する設計や、認証、認証情報の取り扱い、サンドボックス化、新たな連携箇所などセキュリティに関わる設計には、早い段階から Principal Engineer に参加してもらってください。Issue、[設計ドキュメント](/handbook/engineering/architecture/design-documents/)、またはマージリクエストで `@erran` にメンションしてください。
+- 簡単な質問は、ステージ内の他のメンバーも回答を確認できるよう、[`#s_ai-clients-questions`](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)で `@erran` をタグ付けして尋ねてください。
+- 各グループの日々の優先順位は、引き続きそのグループの Engineering Manager と Product Manager が決めます。Principal Engineer は技術的な方向性とレビューについて助言し、各グループでの計画策定は引き続きグループが担います。
 
 ---
 

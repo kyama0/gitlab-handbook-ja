@@ -3,11 +3,11 @@ title: U.S. Government Support チケットへの対応
 category: Handling tickets
 description: "U.S. Government Support チケットへの対応方法を解説する Support Engineering のワークフロー"
 upstream_path: /handbook/support/workflows/usgovernment_tickets/
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-translated_at: "2026-11-07T10:54:48+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-06T17:07:25-05:00"
+lastmod: "2026-11-24T14:58:35Z"
 ---
 
 U.S. Government Support は、Zendesk U.S. Government インスタンスにおける新規チケットの割り当てに、重み付きラウンドロビンワークフローを使用します。
@@ -244,10 +244,13 @@ CompSecGov で RFH を開くには、`Customer Support` グループに移動し
 
 #### 顧客のメンテナンス時間帯を確認する {#finding-a-customers-maintenance-hours}
 
-米国政府の顧客のメンテナンス時間帯は、現在
-[Switchboard PubSec リポジトリ](https://gitlab.com/gitlab-com/gl-infra/us-public-sector/switchboard_pubsec/-/tree/main/customers?ref_type=heads)に記録されています。
+各テナントのメンテナンス時間帯は、Switchboard for Government で確認できます。
 
-テナントが Switchboard に移行すると、この情報はそちらで確認できるようになります。現時点では、この移行の ETA はありません。
+1. [Okta](https://gitlabus.okta.com/)にサインインします。
+2. Okta のダッシュボードで、Switchboard for Government (Prod) のタイルを選択します。
+3. 入力を求められたら、GitLab のメールアドレスを入力します。
+4. 左側のナビゲーションにある Tenants セクションで、顧客を選択します。
+5. テナントの詳細ページで Maintenance Window フィールドを確認します。
 
 #### 緊急対応 {#handling-emergencies}
 

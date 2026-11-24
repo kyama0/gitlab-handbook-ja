@@ -2,9 +2,9 @@
 title: "Database Excellence ステージ"
 description: "Database Excellence セクションは、GitLab のデータベースがスケールにおいて確実に稼働することを保証しながら、すべてのデータストアにわたるデータアーキテクチャ、配置、ライフサイクル管理についてチームが情報に基づいた意思決定を行えるようにします。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/
-upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
-lastmod: "2026-11-19T08:22:09+13:00"
-translated_at: "2026-11-19T06:12:11+09:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+lastmod: "2026-11-24T10:06:49+13:00"
+translated_at: "2026-11-24T21:13:59+00:00"
 translator: codex
 stale: false
 ---
@@ -15,7 +15,7 @@ GitLab.com と GitLab を自ら運用するお客様の両方で、GitLab のデ
 
 ## ステージのリーダーシップ {#stage-leadership}
 
-{{< group-by-slugs alexives rsontam >}}
+{{< group-by-slugs chopras rsontam >}}
 
 ## グループ {#groups}
 

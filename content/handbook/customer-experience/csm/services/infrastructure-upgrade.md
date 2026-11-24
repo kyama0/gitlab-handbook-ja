@@ -1,11 +1,11 @@
 ---
 title: "CSM インフラアップグレード調整"
 upstream_path: /handbook/customer-experience/csm/services/infrastructure-upgrade/
-upstream_sha: 7a2e264cb798305fd5c92b586ef9fe633a730244
-translated_at: "2026-09-27T06:13:05+00:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-24T21:34:11+02:00"
+lastmod: "2026-11-24T16:46:19+01:00"
 ---
 
 ## 概要
@@ -39,7 +39,7 @@ CSM がインフラアップグレードを調整するための高レベルの�
 1. 顧客がリファレンスに従えない、または従わないと主張する場合は、その理由を調べる。会社のポリシーや予算の制限など、有効で避けられない理由がある場合があります。
    1. さらに進む前に期待値を適切に管理するために、[パフォーマンスとその後のサポートに影響が出る可能性があること](https://docs.gitlab.com/ee/administration/reference_architectures/#deviating-from-the-suggested-reference-architectures)を顧客に明確にする。
 1. インスタンスに対して [GitLab Performance Tool](https://gitlab.com/gitlab-org/quality/performance) を実行し、アーキテクチャ図と並んでレビューのためにその結果を提供するよう案内する。
-1. [ベンチマーク GPT 結果](https://gitlab.com/gitlab-org/quality/performance/-/wikis/Benchmarks/Latest)を比較用に提供し、ベンチマーク数値に対してその結果をレビューする。
+1. [ベンチマーク GPT 結果](https://gitlab.com/gitlab-org/reference-architectures/-/wikis/Benchmarks/Latest)を比較用に提供し、ベンチマーク数値に対してその結果をレビューする。
    1. GPT の結果がベンチマーク結果と同等またはそれ以上であれば、提案されたアーキテクチャから良好なパフォーマンスが見込める可能性が高い。
    1. GPT の結果がベンチマーク結果を下回る場合、そのスケールのリファレンスアーキテクチャと比較してアーキテクチャのパフォーマンス低下が予想される可能性がある。
 1. 上記の情報をすべて収集した後、サポートチームに連絡して詳細のレビューと提案されたアーキテクチャのサポート可能性についてのアドバイス、および改善のための推奨事項を依頼する。このレビューはシニアサポートエンジニア以上が担当する必要があります。

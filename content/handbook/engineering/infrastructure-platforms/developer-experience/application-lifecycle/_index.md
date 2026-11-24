@@ -2,9 +2,9 @@
 title: "Developer Experience: Application Lifecycle"
 description: "Application Lifecycle チームは、標準化されたツール、リファレンスアーキテクチャ、オペレーショナルエクセレンスのフレームワークを通じて、あらゆる規模の GitLab 環境をオペレーターがデプロイし、維持できるようにします。私たちは、GitLab デプロイのためのデプロイインフラストラクチャと運用ツールを提供します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/"
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-30T14:17:26-04:00"
-translated_at: "2026-11-01T06:24:27+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-24T16:46:19+01:00"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: "codex"
 stale: false
 ---
@@ -110,7 +110,7 @@ Reference Architectures に従ってスケーリングされた GitLab 環境を
 
 ### Reference Architectures {#reference-architectures}
 
-**リポジトリ:** [gitlab-org/quality/reference-architectures](https://gitlab.com/gitlab-org/quality/reference-architectures)
+**リポジトリ:** [gitlab-org/reference-architectures](https://gitlab.com/gitlab-org/reference-architectures)
 
 スケーリングされたデプロイパターンであり、次を提供します。
 

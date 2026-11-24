@@ -2,11 +2,11 @@
 title: "Geo とディザスタリカバリ"
 description: "Geo チームに関する情報"
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/geo/"
-upstream_sha: "0b4843d337f9f8173d56982fff942cb2b5a78543"
-translated_at: "2026-09-11T12:49:40+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: claude
 stale: false
-lastmod: "2026-09-11T10:31:43+10:00"
+lastmod: "2026-11-24T16:05:47+11:00"
 ---
 
 ## Geo チーム
@@ -56,6 +56,31 @@ Geo はデータの冗長性を提供します。お客様は別の場所にデ�
 お客様が Geo チームの支援を必要とする場合、Issue の使用を好みます。これにより、作業を優先順位付けし、Slack の保存ポリシーが適用された際に履歴を失わずコンテキストを維持することができます。リクエスターには [Request for Help プロジェクト](https://gitlab.com/gitlab-com/request-for-help)で Issue を作成するようお願いしています。
 
 Geo 関連の質問には [Geo サポートリクエスト Issue テンプレート](https://gitlab.com/gitlab-com/request-for-help/-/blob/main/.gitlab/issue_templates/SupportRequestTemplate-Geo.md)を、バックアップとリストア機能エリアに関連する Issue には [バックアップとリストアサポートリクエスト Issue テンプレート](https://gitlab.com/gitlab-com/request-for-help/-/blob/main/.gitlab/issue_templates/SupportRequestTemplate-BackupAndRestore.md)を必ず使用して記入してください。リクエスターは「お客様情報」と「サポートの質問」セクション**のみ**を記入する必要があります。
+
+### お客様対応とサポートのローテーション {#customer-and-support-rotation}
+
+マイルストーンごとに、Geo エンジニア 1 人がカスタマーサポートの Primary DRI、別の 1 人が Secondary DRI を担当します。現在および今後の担当者は、進行中の計画エピックの [Customer/Support Rotation セクション](https://gitlab.com/groups/gitlab-org/geo-team/-/work_items/3#customersupport-rotation)で確認できます。現在の DRI には `@gitlab-org/geo-team/rotation` で連絡できます。
+
+Primary DRI は担当マイルストーンの間、[支援依頼のバックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AGeo&first_page_size=100)と [#g_geo](https://gitlab.enterprise.slack.com/archives/C32LCGC1H) のサポートに関する質問に対応します。依頼をチームの通常のワークフローに載せられるように、トリアージ、Issue の作成、初期調査の記録、優先度ラベルの追加を行います。Secondary DRI は Primary DRI を補佐し、Primary DRI が対応できない場合は引き継ぎます。
+
+DRI は担当マイルストーンの開始時に [`@gitlab-org/geo-team/rotation` のメンバー構成](https://gitlab.com/groups/gitlab-org/geo-team/rotation/-/group_members?with_inherited_permissions=exclude)を更新します。終了時には、[ローテーションを追跡する Issue](https://gitlab.com/gitlab-org/geo-team/discussions/-/issues/5170)か、支援依頼に直接、引き継ぎ事項を記載します。
+
+### Dedicated Migrations の週末のカットオーバー対応 {#weekend-cutover-coverage-for-dedicated-migrations}
+
+Geo には週末のオンコールローテーションがなく、チームの規模が小さいため設けられません。週末の [Dedicated Migrations](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations/) のカットオーバーでは、有志のエンジニアが可能な範囲で対応します。対応できるエンジニアがいるとは限りません。
+
+対応を依頼するには、次の手順に従ってください。
+
+1. カットオーバーの日付がわかり次第、遅くとも実施の 1 週間前までに [#g_dedicated-geo-for-self-managed](https://gitlab.enterprise.slack.com/archives/C0BE87JC6CW) に投稿してください。Geo チームに対応できる人を募ってください。
+1. お客様、テナント、カットオーバーの開始時刻と終了時刻（UTC）、期待するサポートの内容、Dedicated Migrations の Issue へのリンクを記載してください。
+
+対応できる Geo エンジニアは、対応可能な時間帯をスレッドに返信します。参加は任意です。Geo の Engineering Manager が担当者と対応時間帯を確定し、その内容をスレッドで共有します。有志のエンジニアには、担当時間帯に Slack で連絡できます。PagerDuty のローテーションはありません。
+
+Migrations チームは、対応するエンジニアを自チームの案件 Issue に記録します。
+
+対応したエンジニアは翌週に代休を取得します。[Incident Manager 向けの週末と休日のガイダンス](/handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding/#what-if-i-work-a-shift-on-a-weekend-or-holiday)に、取得する代休の長さと記録方法が記載されています。
+
+対応できる人がいない場合、Geo の Engineering Manager がその旨をスレッドで伝えます。対応を前提とせず、Geo と Migrations の Engineering Manager が別の計画を立てます。
 
 ## よく使うリンク
 

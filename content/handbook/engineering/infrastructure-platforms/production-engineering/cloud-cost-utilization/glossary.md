@@ -2,9 +2,9 @@
 title: "FinOps 用語集"
 description: "Cloud Cost Utilization チームが FinOps の機会、クラウドコストデータ、コスト配分、コスト帰属に使用する用語の定義"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/glossary/"
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T15:06:56+01:00"
-translated_at: "2026-11-17T21:10:23.948269+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-24T16:49:11+01:00"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: codex
 stale: false
 ---
@@ -34,6 +34,10 @@ GitLab のクラウドインフラストラクチャへの支出を減らす、�
 ### 機会のステージ {#opportunity-stages}
 
 FinOps の機会が進むステージは Proposed、Confirmed、Committed、Implemented、Realized です。取り組まないと決めた場合は Discarded になります。各ステージには `FinOps::Opportunity::<Stage>` スコープ付きラベルがあります。各ステージの意味と、誰が機会を次のステージに進めるかについては、[ステージ](opportunities.md#stages)を参照してください。
+
+### 導入済み {#delivered}
+
+Implemented または Realized ステージにある機会です。[ステータスノート](#status-note)の `delivered_on` に変更が稼働した日が記載されていれば、その日からランレート削減を計上します。記載がなければ、Implemented に移った日、または直接 Realized に移った日から計上します。
 
 ### ランレート {#run-rate}
 
@@ -79,7 +83,7 @@ FinOps の機会が進むステージは Proposed、Confirmed、Committed、Impl
 
 ### ステータスノート {#status-note}
 
-機会の Issue に投稿する、`## FinOps status` を見出しとする社内ノートです。機会の現在の状況を記録し、ランレート削減の見積もりや実現額などのデータを集めるために使います。各数値について、その値を記載した最新のノートを採用します。[ステータスノートの形式](opportunities.md#status-note-format)を参照してください。
+機会の Issue に投稿する、`## FinOps status` を見出しとする社内ノートです。機会の現在の状況を記録し、ランレート削減の見積もりや実現額、変更が稼働した日などのデータを集めるために使います。各項目について、その値を記載した最新のノートを採用します。[ステータスノートの形式](opportunities.md#status-note-format)を参照してください。
 
 ### 担当チーム {#owning-team}
 

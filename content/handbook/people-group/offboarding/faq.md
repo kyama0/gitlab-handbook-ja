@@ -2,11 +2,11 @@
 title: "GitLab オフボーディング FAQ"
 description: "オフボーディングプロセスに関するよくある質問"
 upstream_path: "/handbook/people-group/offboarding/faq/"
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:48:05+09:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-11-24T10:57:14-08:00"
 ---
 
 ## タイミング
@@ -48,10 +48,6 @@ Alumni チャンネルの[対象](/handbook/people-group/offboarding#gitlab-alum
 
 - 自分の割り当てを解除し、オープンなプロジェクト、Issue、マージリクエストを他のチームメンバーまたは Manager に再割り当てする。
 - スケジュール済みパイプラインの所有権を、他のチームメンバーまたは Manager に移管する。自分が所有するスケジュール済みパイプラインは、Profile > Settings > Account > Scheduled pipelines you own から確認できます
-
-### 1Password
-
-- 1Password に現在保存されている個人用パスワードをコピーしておく（オフボーディングが処理されると無効化され、個人用パスワードには一切アクセスできなくなります）。
 
 ### Google Drive
 

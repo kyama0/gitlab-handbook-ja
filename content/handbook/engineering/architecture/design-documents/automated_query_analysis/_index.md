@@ -4,16 +4,16 @@ status: proposed
 creation-date: "2023-02-08"
 authors: [ "@mattkasa", "@jon_jenkins" ]
 coach: "@DylanGriffith"
-approvers: [ "@rogerwoo", "@alexives" ]
+approvers: [ "@rogerwoo", "@alexander-sosna" ]
 owning-stage: "~devops::data stores"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/automated_query_analysis/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-11-24T10:06:49+13:00"
 ---
 
 
