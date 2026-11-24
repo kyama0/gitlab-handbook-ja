@@ -10,11 +10,11 @@ owning-stage:
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/design-documents/performance_datastore/
-upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
-translated_at: "2026-04-28T17:23:43Z"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: claude
 stale: false
-lastmod: "2025-05-13T13:02:12-07:00"
+lastmod: "2026-11-24T16:46:19+01:00"
 ---
 
 
@@ -246,8 +246,8 @@ sequenceDiagram
 ## 参考資料
 
 - [GitLab Performance Tool (GPT)](https://gitlab.com/gitlab-org/quality/performance)
-- [GPT ベンチマーク Wiki](https://gitlab.com/gitlab-org/quality/performance/-/wikis/Benchmarks/Latest)
-- [リファレンスアーキテクチャテスト環境の詳細](https://gitlab.com/gitlab-org/quality/gitlab-environment-toolkit-configs/quality/-/wikis/Performance-environments-setup)
+- [GPT ベンチマーク Wiki](https://gitlab.com/gitlab-org/reference-architectures/-/wikis/Benchmarks/Latest)
+- [リファレンスアーキテクチャテスト環境の詳細](https://gitlab.com/gitlab-com/gl-infra/software-delivery/operate/get-environments/ra-test-environments/-/wikis/Performance-environments-setup)
 - InfluxDB を Prometheus InfluxDB エクスポーターに置き換える
   - [MR](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/merge_requests/174)
   - [Issue](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/issues/98)

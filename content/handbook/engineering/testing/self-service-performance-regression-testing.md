@@ -2,11 +2,11 @@
 title: セルフサービスパフォーマンスリグレッションテスト
 description: チームが独自にパフォーマンスリグレッションテストを実行するためのガイド
 upstream_path: /handbook/engineering/testing/self-service-performance-regression-testing/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T10:00:00Z"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-25T17:41:52-08:00"
+lastmod: "2026-11-24T16:46:19+01:00"
 ---
 
 ## 概要
@@ -256,7 +256,7 @@ all:
   # ... rest of file ...
 ```
 
-**GPT テストの場合**：必要なレート制限が無効になっていること、カスタムポストコンフィギュレーションタスクが使用されていることを確認してください。https://gitlab.com/gitlab-org/quality/gitlab-environment-toolkit-configs/quality/-/blob/main/custom_task_files/gitlab_tasks/post_configure.yml#L1-35 は自動的に適用されます（https://gitlab.com/gitlab-org/quality/gitlab-environment-toolkit-configs/quality/-/blob/main/configs/reference_architectures/10k/ansible/inventory/vars.yml#L24-40 と https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_advanced.md#custom-tasks を参照）。
+**GPT テストの場合**：必要なレート制限が無効になっていること、カスタムポストコンフィギュレーションタスクが使用されていることを確認してください。https://gitlab.com/gitlab-com/gl-infra/software-delivery/operate/get-environments/ra-test-environments/-/blob/main/custom_task_files/gitlab_tasks/post_configure.yml#L1-35 で定義されたカスタムタスクが、レート制限を自動で無効にします（https://gitlab.com/gitlab-com/gl-infra/software-delivery/operate/get-environments/ra-test-environments/-/blob/main/configs/reference_architectures/10k/ansible/inventory/vars.yml#L24-40 と https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_advanced.md#custom-tasks を参照）。
 
 ### テストインフラのセットアップ
 

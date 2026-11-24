@@ -2,11 +2,11 @@
 title: "GitLab Canada Corp"
 description: "カナダ在住のチームメンバー向けの GitLab Canada Corp 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/
-upstream_sha: 6236b6b556b62f5a236bd17cf28b3b604d551c92
-translated_at: "2026-09-15T06:06:55+09:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: codex
 stale: false
-lastmod: "2026-09-13T04:09:59-04:00"
+lastmod: "2026-11-23T12:35:00-08:00"
 ---
 
 ## あなたをしっかりカバーします
@@ -79,7 +79,7 @@ Canada Life を通じた GitLab のグループ RRSP で経済的な未来を構
 #### 登録方法
 
 1. [mycanadalifeatwork.com](https://mycanadalifeatwork.com) を訪問
-2. [enrollment express PDF](https://drive.google.com/file/d/16K333QPsXllZFolC_yiXZYb3rUYJwXvu/view?usp=sharing) と[動画ガイド](https://www.brainshark.com/1/player/grs?pi=zGWz97lF4zPVigz0&r3f1=c5ff81d2ded38b99c999f69cca80c7ded98198f2dbc5c1cd9e&fb=0)を使用
+2. [加入手続きの簡易ガイド（PDF）](https://drive.google.com/file/d/1wkO0nG2vnXCG9pq4tzvkzDHtLYL4OpLY/view?usp=sharing)と[動画ガイド](https://www.brainshark.com/1/player/grs?pi=zGWz97lF4zPVigz0&r3f1=c5ff81d2ded38b99c999f69cca80c7ded98198f2dbc5c1cd9e&fb=0)を使用
 3. 拠出を設定: 「Member」フィールドに最初の 3%、追加分は「Member Voluntary」に
 4. 受益者を選択（生命保険とは別）
 

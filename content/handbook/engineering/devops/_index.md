@@ -1,11 +1,11 @@
 ---
 title: DevOps エンジニアリング
 upstream_path: /handbook/engineering/devops/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-translated_at: "2026-11-14T08:41:43+00:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:13:59+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-10T12:33:30+01:00"
+lastmod: "2026-11-24T10:06:49+13:00"
 ---
 
 ## ビジョン {#vision}
@@ -228,7 +228,7 @@ GitLab アプリケーションは、PostgreSQL データベース、Redis、Sid
 | Patroni<br />Geo セカンダリクラスター以外の一般 | 特定のチームでの集中型 | @plu8<br />[Distribution](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/) |  |
 | Patroni<br />Geo セカンダリスタンバイクラスター | 特定のチームでの集中型 | @luciezhao<br />[Geo](/handbook/engineering/infrastructure-platforms/tenant-scale/geo/) |  |
 | PgBouncer  | 特定のチームでの集中型 | @plu8<br />[Distribution](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/) |  |
-| PostgreSQL<br />フレームワークとツーリング | 特定のチームでの集中型 | @alexives<br />[Database](/handbook/engineering/data-engineering/database-excellence/database-frameworks/) | PostgreSQL の開発部分に固有（基本的なアーキテクチャ、テストユーティリティ、その他の生産性ツーリングなど） |
+| PostgreSQL<br />フレームワークとツーリング | 特定のチームでの集中型 | @alexander-sosna<br />[Database Architecture](/handbook/engineering/data-engineering/database-excellence/database-architecture/) | PostgreSQL の開発部分に固有（基本的なアーキテクチャ、テストユーティリティ、その他の生産性ツーリングなど） |
 | PostgreSQL<br />GitLab 製品機能 | 分散化 |   | 機能固有のスキーマ変更および/またはパフォーマンスチューニングなどの例 |
 | Prometheus  | 分散化 |    | 各グループは独自のメトリクスを維持します。  |
 | Puma  | 特定のチームでの集中型 | @pjphillips |  |

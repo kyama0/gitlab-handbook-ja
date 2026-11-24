@@ -1,9 +1,9 @@
 ---
 title: AI Engineering
 upstream_path: /handbook/engineering/ai/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-30T14:17:26-04:00"
-translated_at: "2026-11-01T04:40:39+00:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+lastmod: "2026-11-24T12:37:48-08:00"
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: codex
 stale: false
 ---
@@ -33,7 +33,6 @@ GitLab 独自の非同期な働き方、ハンドブックファーストの手�
 **** Duo CLI
 **** VSCode
 *** Duo Client SDK
-*** Erran Carey - Principal Engineer
 ** Martin Wortschack - Models, Gateway & Infra
 *** Duo Service Infra
 *** Model Evaluation Infra
@@ -60,8 +59,7 @@ GitLab 独自の非同期な働き方、ハンドブックファーストの手�
 *** François Rosé
 **** Code Review
 ** Direct ICs
-*** Shekhar Patnaik
-*** Liki Simonot
+*** Erran Carey - Principal Engineer, AI Clients (client architecture and security)
 *** Denys Mishunov
 *** Igor Drozdov
 *** Jessie Young

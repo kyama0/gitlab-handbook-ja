@@ -2,9 +2,9 @@
 title: Dedicated Migration チーム
 description: Geo マイグレーションを Dedicated へスムーズに進めることに注力するチーム。ツール、プロセス、エンジニアリングを担当します
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations/
-upstream_sha: 12cfa1f3ba8963fc7267e7fc51bbd09f9a543bd1
-lastmod: "2026-09-16T15:42:58-06:00"
-translated_at: "2026-09-17T21:03:55+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-24T16:05:47+11:00"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: claude
 stale: false
 ---
@@ -93,7 +93,7 @@ Dedicated Migrations は実行中の第一線のトラブルシューティン�
 1. 現在[サポートローテーション](https://gitlab.com/groups/gitlab-org/geo-team/-/work_items/3#customersupport-rotation)を担当している Geo エンジニア。
 2. そのエンジニアが勤務時間外などで対応できない場合は、下記の Geo for Self-Managed ドメインエキスパートのいずれか。
 
-カットオーバーに Geo エンジニアが事前に割り当てられることはありません。
+カットオーバーに Geo エンジニアが事前に割り当てられることはなく、Geo には週末のオンコールローテーションもありません。週末のカットオーバーの対応者を募るには、Geo のページにある[週末のカットオーバー対応手順](/handbook/engineering/infrastructure-platforms/tenant-scale/geo/#weekend-cutover-coverage-for-dedicated-migrations)に従ってください。
 
 ##### Geo for Self-Managed ドメインエキスパート
 
@@ -149,7 +149,7 @@ Dedicated Migrations は実行中の第一線のトラブルシューティン�
 
 ##### SRE と Geo のカバレッジ
 
-Engineering Manager がカットオーバーウィンドウの適切なリソースを見つけるよう調整します。PM がカットオーバーの日付と時刻を確定し、カバレッジ確認が必要な場合、@glen_miller に連絡することで、他の EM との調整を行えます。EM は各カットオーバースロットのカバレッジを追跡するために単一のエピックを使用します。
+Engineering Manager がカットオーバーウィンドウの適切なリソースを見つけるよう調整します。PM がカットオーバーの日付と時刻を確定し、カバレッジ確認が必要な場合、@glen_miller に連絡することで、他の EM との調整を行えます。EM は各カットオーバースロットのカバレッジを追跡するために単一のエピックを使用します。Geo は週末のカットオーバーを可能な範囲でサポートします。[Geo の週末のカットオーバー対応手順](/handbook/engineering/infrastructure-platforms/tenant-scale/geo/#weekend-cutover-coverage-for-dedicated-migrations)に従って依頼してください。
 
 * [FY27](https://gitlab.com/groups/gitlab-com/gl-infra/gitlab-dedicated/dedicated-migrations-group/-/work_items/179)
 
@@ -164,7 +164,7 @@ Geo マイグレーションのカットオーバースロットは現在限ら�
 * カットオーバースロットは先着順でスケジュールされる
 * スロットは通常、お客様への影響を最小化するため週末に提供される
 * スロットは案件クローズ時に設定すべきです。そうでない場合は、スロット日の遅くとも 14 週間前までに確定すべきです。
-* スロットは、それぞれの EM により SRE と Geo のカバレッジが確認された後にのみ確定される
+* スロットは EM が SRE のカバレッジを確認した時点で確定します。Geo は可能な範囲で対応するため、Geo のカバレッジは確定の条件ではありません。スロットがわかり次第、Geo に対応を依頼してください。
 
 ### Dedicated Migration チームの休暇
 

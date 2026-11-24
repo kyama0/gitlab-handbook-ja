@@ -5,17 +5,17 @@ creation-date: "2021-06-23"
 authors: [ "@abrandl", "@tkuah" ]
 coach: ""
 approvers: []
-dris: [ "@alexives" ]
+dris: [ "@alexander-sosna" ]
 owning-stage: "~devops::data stores"
 participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: /handbook/engineering/architecture/design-documents/database_size_limits/
-upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: claude
 stale: false
-lastmod: "2025-11-19T13:56:02-06:00"
+lastmod: "2026-11-24T10:06:49+13:00"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
@@ -193,7 +193,7 @@ limit 30;
 | 役割               | 担当者 |
 |--------------------|-----|
 | 著者             | Andreas Brandl |
-| エンジニアリングリーダー | Alex Ives |
+| エンジニアリングリーダー | Alexander Sosna |
 | プリンシパルエンジニア | Thong Kuah |
 | シニアエンジニア    | Maxime Orefice |
 

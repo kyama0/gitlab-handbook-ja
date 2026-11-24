@@ -2,9 +2,9 @@
 title: "Developer Experience: Application Lifecycle / Lifecycle Management"
 description: "GitLab Helm チャート、プラットフォームチャート、GitLab Operator、Bridge など、GitLab デプロイのライフサイクルツールを担当します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/lifecycle-management/"
-upstream_sha: "3dfe7f05ed4a09b9eb0c0f24cd7eb7f1ac83404d"
-lastmod: "2026-11-11T15:33:17Z"
-translated_at: "2026-11-12T14:20:07+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-24T16:46:19+01:00"
+translated_at: "2026-11-24T21:09:35+00:00"
 translator: codex
 stale: false
 ---
@@ -41,7 +41,7 @@ GitLab Helm Charts、GitLab Operator、クラウドネイティブのコンテ�
 
 ### GitLab Environment Toolkit（GET）と Reference Architectures {#gitlab-environment-toolkit-get-and-reference-architectures}
 
-- [GET](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) と [Reference Architectures](https://gitlab.com/gitlab-org/quality/reference-architectures) は、現在、保守と移行の段階にあります。長期的な扱いが決まるまで、チームは引き続きこれらを維持します。
+- [GET](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) と [Reference Architectures](https://gitlab.com/gitlab-org/reference-architectures) は、現在、保守と移行の段階にあります。長期的な扱いが決まるまで、チームは引き続きこれらを維持します。
 - GET に関する質問は `#gitlab_environment_toolkit` に送ってください。Reference Architectures に関する質問は `#reference-architectures` に送ってください。
 
 ### 対象外 {#out-of-scope}

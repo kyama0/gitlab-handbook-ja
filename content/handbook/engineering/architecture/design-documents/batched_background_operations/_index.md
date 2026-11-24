@@ -4,16 +4,16 @@ status: proposed
 creation-date: "2025-07-16"
 authors: [ "@praba.m7n", "@morefice" ]
 coaches: [ "@DylanGriffith", "@ahegyi" ]
-dris: [ "@alexives" ]
+dris: [ "@alexander-sosna" ]
 owning-stage: "~devops::data access"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/batched_background_operations/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: claude
 stale: false
-lastmod: "2026-01-28T13:52:51+01:00"
+lastmod: "2026-11-24T10:06:49+13:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->

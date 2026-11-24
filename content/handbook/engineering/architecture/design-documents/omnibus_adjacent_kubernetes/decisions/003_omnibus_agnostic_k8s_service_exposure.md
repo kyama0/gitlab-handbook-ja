@@ -3,12 +3,16 @@ title: "GitLab Omnibus-Adjacent Kubernetes ADR 003: Omnibus は Kubernetes サ�
 owning-stage: "~devops::gitlab delivery"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/omnibus_adjacent_kubernetes/decisions/003_omnibus_agnostic_k8s_service_exposure/
-upstream_sha: a27a2f7fbaedbd4b422d73ed991c16ee9a112ca9
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:19:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-03-27T14:54:26-04:00"
+lastmod: "2026-11-24T16:41:22-03:00"
 ---
+
+[ADR-007: Omnibus ホストの外部で稼働する Kubernetes クラスターのみをサポートする](007_external_kubernetes_clusters_only.md)により**一部が置き換えられています**。
+Omnibus は引き続き Kubernetes サービスの公開方法に依存せず、NGINX コンポーネントプロキシは
+ユーザーが指定したアップストリームに転送します。以下の `oak` 設定モデルは非推奨となり、`nginx['component_proxy']` 設定に置き換わります。
 
 ## コンテキスト
 
@@ -35,11 +39,11 @@ Omnibus は Kubernetes サービスの公開方法に依存しない必要があ
 設定は `oak` クックブックの名前空間に存在します。グローバルアドレスがすべてのコンポーネントのデフォルトとして機能します。コンポーネントごとのオーバーライドにより、コンポーネントが個別に公開されている場合（例えば、各コンポーネントが独自の NodePort を持つ場合）にユーザーが個別のアドレスを指定できます:
 
 ```ruby
-# グローバルアドレス — 上書きされない限りすべてのコンポーネントに使用される。
-# 共有イングレス/LB IP、ClusterIP（同一 VM）、または到達可能な任意のアドレスで可能。
+# Global address — used for all components unless overridden.
+# May be a shared ingress/LB IP, a ClusterIP (same-VM), or any reachable address.
 oak['address'] = "10.43.25.7"
 
-# コンポーネントごとのオーバーライド — コンポーネントが独自のアドレスで公開される場合に使用。
+# Per-component override — used when a component is exposed on its own address.
 oak['components']['openbao']['address'] = "127.0.0.1:32080"
 ```
 

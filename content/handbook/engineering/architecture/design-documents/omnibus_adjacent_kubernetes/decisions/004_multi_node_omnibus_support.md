@@ -3,12 +3,15 @@ title: "ADR-004: OAK でのマルチノード Omnibus サポート"
 owning-stage: "~devops::gitlab delivery"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/omnibus_adjacent_kubernetes/decisions/004_multi_node_omnibus_support/
-upstream_sha: 000b58dcbc2a482a76ad9c605d66f7a602ebfd63
-translated_at: "2026-11-16T21:09:50+00:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:19:28+00:00"
 translator: claude
 stale: false
-lastmod: "2026-11-16T11:43:18-03:00"
+lastmod: "2026-11-24T16:41:22-03:00"
 ---
+
+[ADR-007: Omnibus ホストの外部で稼働する Kubernetes クラスターのみをサポートする](007_external_kubernetes_clusters_only.md)により**一部が置き換えられています**。
+Omnibus は Helm values を生成しなくなったため、この ADR に記載された Helm values の生成は適用されません。
 
 [ADR-008: Omnibus は高度なコンポーネントのデータストアを管理しない](008_no_omnibus_managed_data_stores.md)により**一部が置き換えられています**。
 高度なコンポーネントは外部の PostgreSQL と Redis を使用するため、この ADR にある
@@ -90,7 +93,7 @@ PostgreSQL 接続の詳細、Redis と Gitaly の接続の詳細（該当する�
 
 前のステップの接続の詳細を使用して、クラスターに高度なコンポーネントをデプロイします。
 
-### フィーチャーチーム向け: サービス要件の文書化
+### 機能担当チーム向け: サービス要件の文書化
 
 Omnibus サービスへのアクセスが必要な新しい高度なコンポーネントを導入する際は、必要なサービス、設定が必要な Omnibus ノード、ネットワーク要件（ポート、プロトコル、認証）、マルチノードの考慮事項（例えば、非同期ワーカーの設定が必要な Sidekiq ノード）を文書化してください。
 
@@ -105,5 +108,5 @@ Geo セットアップでは、Helm values はプライマリサイトの Rails 
 ## 参考資料
 
 - [OAK デザインドキュメント](../_index.md)
-- [マルチノード Omnibus PoC — work item #9691](https://gitlab.com/gitlab-org/omnibus-gitlab/-/work_items/9691)
+- [マルチノード Omnibus PoC — 作業アイテム #9691](https://gitlab.com/gitlab-org/omnibus-gitlab/-/work_items/9691)
 - PoC: [デモ（内部リンク）](https://drive.google.com/file/d/1ZriEHz1Sjg-9rJLSi0EpUurmaHVscPTP/view) と [実装の詳細](https://gitlab.com/-/snippets/5974860)

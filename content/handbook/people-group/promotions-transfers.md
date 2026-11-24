@@ -2,16 +2,18 @@
 title: 昇進と異動
 description: "GitLab の昇進と異動に関する情報とプロトコル。"
 upstream_path: /handbook/people-group/promotions-transfers/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-lastmod: "2026-10-16T09:24:31-07:00"
-translated_at: "2026-10-19T22:44:53+00:00"
+upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
+lastmod: "2026-11-24T15:36:43Z"
+translated_at: "2026-11-24T21:06:28+00:00"
 translator: claude
 stale: false
 ---
 
-## このページは現在レビューおよび作成中です {#this-page-is-currently-under-review-and-construction}
+## ⚠️ このページは現在レビューおよび作成中です {#this-page-is-currently-under-review-and-construction}
 
-最新情報については、[こちらの Loop ページ](https://theloop.gitlab.com/site/2730fca4-4f91-431d-9564-b61ae1d58fbe/page/069c99f3-8c95-444a-b74b-151adec9c16c)を参照してください。
+{{% alert title="レビュー中" color="warning" %}}
+最新情報については、[Loop の「GitLab での昇進」](https://theloop.gitlab.com/site/2730fca4-4f91-431d-9564-b61ae1d58fbe/page/069c99f3-8c95-444a-b74b-151adec9c16c)を参照してください。
+{{% /alert %}}
 
 ## VP+ 役割の採用 {#hiring-for-vp-roles}
 

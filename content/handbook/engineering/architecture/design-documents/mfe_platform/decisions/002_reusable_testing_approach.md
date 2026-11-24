@@ -5,9 +5,9 @@ creation-date: "2026-10-07"
 authors: ["@fredericcaplette"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/decisions/002_reusable_testing_approach/
-upstream_sha: 6a074296e089e7f9f68bce1aa5bd5f410a75d3cb
-lastmod: "2026-11-18T23:06:48+02:00"
-translated_at: "2026-11-19T21:13:17+00:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+lastmod: "2026-11-23T20:28:12Z"
+translated_at: "2026-11-24T21:13:59+00:00"
 translator: codex
 stale: false
 ---
@@ -303,7 +303,7 @@ export default defineConfig({
 
 ADR 004 の `new-gitlab-module` は、パッケージを作成するときにこれら 3 つのファイルを書き出します。`@gitlab/frontend-config` の `ci/base.yml` は、`test` と `fixtures:download && test:integration` を別々のジョブとして実行します。
 
-*改訂*。MFE アプリケーションでは、`mfe-scripts create --into` がテストのセットアップと契約テストのひな形を生成する際に、これらのファイルを書き出します。リポジトリジェネレーターと LabBench は、独自のテンプレートを保持せずにこのコマンドを呼び出します（[ADR 010](010_scaffolding.md)）。プラットフォームの CI テンプレートは、すべてのマージリクエストで `mfe-scripts validate` を実行します（[ADR 010](010_scaffolding.md#4-one-validator-one-ci-template)）。
+*改訂*。MFE アプリケーションでは、`mfe-scripts create --into` がテストのセットアップと契約テストのひな形を生成する際に、これらのファイルを書き出します。リポジトリジェネレーターと LabBench は、独自のテンプレートを保持せずにこのコマンドを呼び出します（[ADR 010](010_scaffolding.md)）。プラットフォームの CI テンプレートは、すべてのマージリクエストで `mfe-scripts validate` を実行します（[ADR 010](010_scaffolding.md#5-one-validator-one-ci-template)）。
 
 ## 決定 {#decision}
 

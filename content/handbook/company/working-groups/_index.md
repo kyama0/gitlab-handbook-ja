@@ -3,11 +3,11 @@ title: "ワーキンググループ"
 description: "GitLab の他のグループと同様に、ワーキンググループはさまざまな職能を持つメンバーで構成されます。詳細をご確認ください！"
 no_list: true
 upstream_path: /handbook/company/working-groups/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T14:21:31+00:00"
+upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
+translated_at: "2026-11-24T21:11:04+00:00"
 translator: codex
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-24T08:44:34-05:00"
 ---
 
 ## ワーキンググループとは？ {#whats-a-working-group}
@@ -199,6 +199,7 @@ DRI はワーキンググループに適切なケイデンスでミーティン�
 1. [プロダクト部門における HPT](/handbook/company/working-groups/hpt-product-division/)
 1. [保持対象の参照](/handbook/company/working-groups/keep-around-refs/)
 1. [プロダクトアクセシビリティ](/handbook/company/working-groups/product-accessibility/)
+1. [サードパーティデータ](/handbook/company/working-groups/third-party-data/)
 
 ## 過去のワーキンググループ（アルファベット順） {#past-working-groups-alphabetic-order}
 
