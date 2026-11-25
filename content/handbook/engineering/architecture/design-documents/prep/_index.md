@@ -9,11 +9,11 @@ owning-stage: "~devops::platforms"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/prep/
-upstream_sha: 4c7d94ca4f485376c886b7c2b9575091c8b7d3cf
-translated_at: "2026-04-27T06:00:00Z"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-12T17:55:48-04:00"
+lastmod: "2026-11-24T10:23:06-06:00"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
@@ -67,6 +67,8 @@ GitLab でのプラットフォーム準備状況の評価は PREP よりも前�
 PREP は現在、[`gitlab-org/architecture/readiness` リポジトリ](https://gitlab.com/gitlab-org/architecture/readiness/)で管理されるガイド付きのチェックリスト駆動プロセスとして GA プロモーションのために運用されています。製品チームは PoC、ベータ、Pre-GA 段階を通じて機能が成熟するにつれて、関連する評価テンプレートを段階的に完成させ、インフラストラクチャとプラットフォームのステークホルダーが GA プロモーションが付与される前にレビューして承認します。
 
 このアーキテクチャは、リポジトリベースのチェックリストからライフサイクルに組み込まれた AI 支援準備システムへのそのプロセスの次の進化を定義します。
+
+プロセスの進化に伴い、GA までの標準の進め方にも次の方針を反映する予定です。すべての主要プロジェクトで、GA 前に実際の Customer Zero と、支払いの意思があるデザインパートナーを確保します。機能チームは、リリースする機能の本番準備とオンコールに責任を持ち、SRE とプラットフォームのチームがこれを支援します。Self-Managed と Dedicated は、GitLab.com の安定したコードを基にした月次スナップショットリリースへの移行を進めています。
 
 ## 提案
 

@@ -1,17 +1,19 @@
 ---
 title: "Co-Create プログラム"
-description: "エンタープライズ顧客がガイド付きのコラボレーションを通じて GitLab に直接コントリビュートできるようにする"
+description: "支援付きの Co-Create エンゲージメントなどを通じて、顧客、パートナー、コミュニティと一緒に GitLab を開発する"
 upstream_path: /handbook/marketing/developer-relations/programs/cocreate/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-translated_at: "2026-09-04T13:37:38+09:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:06:15+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-27T19:08:12+02:00"
+lastmod: "2026-11-25T19:45:06Z"
 ---
 
 ## 概要
 
-Co-Create プログラムは、新機能の開発、既存機能の拡張、バグ修正に必要なサポートを提供することにより、エンタープライズ顧客を GitLab のアクティブなコントリビューターへと変革します。ワークショップ、ペアプログラミング、継続的なガイダンスを通じて、顧客は GitLab エンジニアと直接協働し、GitLab コミュニティ全体に利益をもたらす意義のある改善にコントリビュートします。
+Co-Create プログラムは、私たちが GitLab を共創するすべての取り組みを対象とします。顧客との共創では顧客アカウントの成長を、コミュニティとの共創では製品価値の向上を目指します。
+
+Co-Create エンゲージメントでは、参加者が支援を受けながらコントリビュートします。エンタープライズ顧客と GitLab パートナーが GitLab のアクティブなコントリビューターになれるよう、新機能の開発、既存機能の拡張、バグ修正に必要な支援を提供します。顧客とパートナーは、ワークショップ、ペアプログラミング、継続的なガイダンスを通じて GitLab エンジニアと直接協働し、GitLab コミュニティ全体に役立つ改善にコントリビュートします。
 
 ### 私たちが提供するもの
 
@@ -29,19 +31,22 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 
 ### プログラムのヘルスメトリクス
 
-プログラムの成功は、カスタマージャーニー全体で複数のメトリクスを通じて追跡されます。詳細な追跡方法と現在のパフォーマンスについては、[Co-Create 成功メトリクス](/handbook/marketing/developer-relations/programs/cocreate/success-metrics/)をご覧ください。
+カスタマージャーニー全体で複数の指標を使ってプログラムの成果を追跡します。現在の KPI と OKR の更新手順については、[Co-Create プログラムの成功指標](/handbook/marketing/developer-relations/programs/cocreate/success-metrics/)を参照してください。
 
 ## ターゲットオーディエンスと基準
 
 ### 適格性要件
 
-1. Premium または Ultimate ティアの顧客（CSM がリードするアカウント）
+次の方が Co-Create エンゲージメントに参加できます。
+
+1. Premium または Ultimate ティアの顧客
+1. GitLab パートナー
 
 ### 理想的な顧客プロファイル
 
 #### 組織特性
 
-1. Premium または Ultimate ティアの顧客（CSM がリードするアカウントが必要）
+1. Premium または Ultimate ティアの顧客、または GitLab パートナー
 1. コントリビュートに時間を割く余力のあるエンジニアリングチーム
 1. オープンソース経験または OSPO を持つ組織（望ましいが必須ではない）
 1. GitLab ロードマップに沿った特定のプラットフォーム拡張を求める企業
@@ -55,7 +60,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 
 ### 応募プロセス
 
-顧客は [Co-Create ランディングページ](https://about.gitlab.com/community/co-create/#form)から応募できます。応募は以下に基づいて評価されます:
+顧客とパートナーは [Co-Create ランディングページ](https://about.gitlab.com/community/co-create/#form)から Co-Create エンゲージメントに応募できます。応募は以下の基準で評価します。
 
 1. コントリビューションの目標と GitLab 製品の方向性の整合
 2. 顧客チームの準備状況と可用性
@@ -130,7 +135,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 #### アクティビティ
 
 1. マージリクエストのレビューとイテレーション
-1. Developer Relations Engineering チームからの継続的なメンタリング - [詳細](/handbook/marketing/developer-relations/programs/cocreate/on-site-engineer-guide/#building-long-term-success)
+1. Co-Create and Community Engineering チームからの継続的なメンタリング - [詳細](/handbook/marketing/developer-relations/programs/cocreate/on-site-engineer-guide/#building-long-term-success)
 1. 広範な GitLab コミュニティとの接続
 
 #### 成果物
@@ -180,8 +185,6 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 1. 知識移転とメンタリング
 1. Co-Create プログラム用にキュレートされた Issue リストの維持
 
-**コーディネーター**： Shekhar Patnaik @shekharpatnaik
-
 ### Product Management
 
 1. コントリビューションと製品ロードマップの整合性を検証
@@ -207,7 +210,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 1. [GitLab へのコントリビュート](https://about.gitlab.com/community/contribute/)
 1. [チュートリアル: GitLab へのコントリビューションを行う](https://docs.gitlab.com/ee/development/contributing/)
 1. [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)
-1. [キュレートされた Co-Create Issues](https://cocreate.gitlab.com/?label=co-create)
+1. [選定済みの Co-Create Issue](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=co-create)
 1. [GitLab のコントリビューターライセンス契約](https://about.gitlab.com/community/contribute/dco-cla/)
 1. [コントリビューション FAQ](https://about.gitlab.com/community/contribute/dco-cla/#frequently-asked-questions)
 1. [GitLab Community Discord](https://discord.gg/gitlab)
@@ -230,7 +233,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 - **メール**： co-create@gitlab.com
 - **コミュニティ**： [GitLab Community Discord](https://discord.gg/gitlab)
 
-#### チームの連絡先
+#### チームの連絡先 {#team-contacts}
 
 1. **Co-Create ストラテジーリード**： Isa Huerga Ayza - @ihuerga
 1. **テクニカルリード**： Raimund Hook - @stingrayza
@@ -244,7 +247,9 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 
 #### プロジェクト管理と追跡
 
-すべての Co-Create 顧客は、[Co-Create GitLab プロジェクト](https://gitlab.com/gitlab-org/developer-relations/strategy-programs/contributor/co-create-program)を通じて管理されます。
+[パイプライントラッカー](https://docs.google.com/spreadsheets/d/1Eo_u0PAD31TyZISrJcz9Qit7D7vL91i0rq7my9T1a18/edit?gid=0#gid=0)（Google スプレッドシート、社内限定）が、エンゲージメントの状況に関する唯一の情報源です。Co-Create Strategy Lead は、パイプライントラッカーを今後もエンゲージメント状況の正式な参照元とするかどうかを検討しています。
+
+エンゲージメントに関する Issue は、[Co-Create GitLab プロジェクト](https://gitlab.com/gitlab-org/developer-relations/strategy-programs/contributor/co-create-program)（社内限定）で管理します。
 
 ##### プロジェクト構造
 
@@ -257,7 +262,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 
 ##### ステータスの維持
 
-GitLab プロジェクトはエンゲージメントステータスの唯一の情報源として機能します。プログラムマネージャーは以下を実行する必要があります:
+Program Manager は以下を行います。
 
 1. 新しい顧客がプログラムに参加したときにエピックを作成
 1. フェーズ固有の Issue を作成し、顧客のエピックにリンク
@@ -265,8 +270,9 @@ GitLab プロジェクトはエンゲージメントステータスの唯一の�
 1. ブロッカー、決定、主要なマイルストーンを Issue コメントに記録
 1. フェーズが完了したら Issue をクローズ
 1. 高レベルのエンゲージメント概要でエピックの説明を最新に保つ
+1. エンゲージメントの状況が変わったら、パイプライントラッカーの該当行を更新
 
-注意: 正確なプログラムステータスを確保するため、週次同期と OKR レポートの前に必ず GitLab プロジェクトを更新してください。
+プログラムの状況を正確に把握できるよう、週次の打ち合わせと OKR の報告の前には、必ずパイプライントラッカーと GitLab プロジェクトを更新してください。
 
 #### エンゲージメント実行
 
@@ -310,44 +316,7 @@ GitLab プロジェクトはエンゲージメントステータスの唯一の�
 
 #### OKR 更新プロセス
 
-Co-Create プログラムは、定期的な更新を必要とする四半期 OKR を追跡します。このプロセスにより、プログラムに深く精通していない PM でもレポートを生成できます。
-
-##### データの場所
-
-OKR データは [Co-Create メトリクススプレッドシート](https://docs.google.com/spreadsheets/d/1JqhcR2PSpKG3lQRU3Y8llo0K71aWWTrJNFjsjzGQiM4/edit?gid=1447987221#gid=1447987221)で維持されます。このデータは自動パイプラインを介して更新されます。
-
-##### 更新パイプラインの実行
-
-1. [DevRel Engineering Toolbox パイプライン](https://gitlab.com/gitlab-org/developer-relations/contributor-success/toolbox/-/pipelines/new)に移動
-1. "Run pipeline" をクリック
-1. 以下の変数を追加:
-   - `CO_CREATE_TRACKER = 1`
-   - `PERIOD_START_DATE = YYYY-MM-DD` (四半期の開始)
-   - `PERIOD_END_DATE = YYYY-MM-DD` (現在の週末または四半期末)
-   - `DRY_RUN = 0`
-   - `CI_PIPELINE_SOURCE = schedule`
-   - `CO_CREATE_REPORT_SHEET_ID = 1JqhcR2PSpKG3lQRU3Y8llo0K71aWWTrJNFjsjzGQiM4`
-1. "Run pipeline" をクリックして完了を待つ（通常は数分）
-1. "job succeeded" または "job failed" と表示されるまでステータスを監視
-
-##### パイプラインの失敗のトラブルシューティング
-
-1. パイプラインの "Jobs" タブにアクセス
-1. 失敗したジョブを開いてエラー詳細を確認
-1. 問題に対処してパイプラインを再実行
-
-##### 結果の使用
-
-1. [Co-Create 結果ファイル](https://docs.google.com/spreadsheets/d/1JqhcR2PSpKG3lQRU3Y8llo0K71aWWTrJNFjsjzGQiM4)を開くか更新
-1. "Calculator" タブに移動
-1. Source sheet フィールドをパイプラインで使用した日付（シート名に対応）で更新
-1. 計算された結果を使用して以下を更新:
-   - 四半期 OKR 進捗
-   - 週末レポート
-
-##### 更新頻度
-
-このパイプラインを四半期中は週次、またはレポート用に必要に応じて実行します。注意: 自動スケジューリングは実装待ちです。現在は手動実行が必要です。
+Co-Create プログラムの成功指標ページの [OKR 更新プロセス](/handbook/marketing/developer-relations/programs/cocreate/success-metrics/#okr-update-process)を参照してください。
 
 #### CSM/AE から新しい Co-Create リードを受領した場合
 
@@ -364,7 +333,7 @@ CSM、AE、または SA が（通常は Slack 経由で）Co-Create に興味の
 | 情報 | 不足している場合のアクション |
 | ----- | ----- |
 | 顧客名 | すぐに尋ねる |
-| アカウントティア (Premium/Ultimate) | SFDC で確認するか尋ねる |
+| アカウントティア（Premium/Ultimate）または GitLab パートナーであること | SFDC で確認するか尋ねる |
 | 特定の Issue または機能領域 | TBD として記録 \- ディスカバリーで探る |
 | 特定された顧客の連絡先 | 顧客側で興味を持っている人を尋ねる |
 | コンテキスト（エスカレーション、ロードショー、プロアクティブアウトリーチ） | 何が興味を引き起こしたかを尋ねる |
@@ -381,7 +350,7 @@ CSM、AE、または SA が（通常は Slack 経由で）Co-Create に興味の
 
 返信例:
 
-"このリードを共有してくれてありがとう\! \[Customer\] は素晴らしいフィットのようです。追跡用 Issue を作成する前に、Ultimate であることと、彼らの側で誰が興味を表明したか確認できますか？アプローチについて合意するために短い電話をスケジュールできて嬉しいです。"
+"ご紹介ありがとうございます\! \[Customer\] は Co-Create に合っていそうです。追跡用 Issue を作る前に、Premium または Ultimate ティアの顧客か GitLab パートナーか、先方のどなたが関心を示しているかを確認していただけますか？進め方をすり合わせるため、短い打ち合わせを設定できます。"
 
 ##### タイミングの考慮事項を確認
 
@@ -395,10 +364,10 @@ CSM、AE、または SA が（通常は Slack 経由で）Co-Create に興味の
 
 ##### 追跡用 Issue の作成
 
-基本情報が確認されたら、[Co-Create プログラムプロジェクト](https://gitlab.com/gitlab-org/developer-relations/strategy-programs/contributor/co-create-program)に初期エンゲージメント Issue を作成します:
+基本情報を確認したら、[Co-Create プログラムプロジェクト](https://gitlab.com/gitlab-org/developer-relations/strategy-programs/contributor/co-create-program)（社内限定）に初期エンゲージメント Issue を作成します。
 
 1. `Company Name - Initial Engagement` テンプレートを使用
-2. 自分と CSM を割り当てる
+2. 自分と、アカウントに担当者がいる場合は CSM/CSA を割り当てる
 3. 適切な顧客エピックに追加（必要に応じて [Contributor エピック](https://gitlab.com/groups/gitlab-org/developer-relations/strategy-programs/contributor/-/epics)の下に作成）
 4. `Strategy Programs::Co-Create` ラベルを適用
 5. 次のステップを含むコメントでアカウントチームメンバーをタグ付け
@@ -421,7 +390,7 @@ CSM、AE、または SA が（通常は Slack 経由で）Co-Create に興味の
 **出席者**：
 
 - プログラムマネージャー（あなた）
-- CSM（必須）
+- CSM/CSA（アカウントに担当者がいる場合）
 - SA（技術的深さが必要な場合）
 - 顧客: エンジニアリングリード \+ マネージャーが理想的
 
@@ -669,7 +638,7 @@ PM の応答と会話からの関連コンテキストで追跡用 Issue を更�
 
 | 理由 | 典型的な状況 |
 | :---- | :---- |
-| **基準を満たさない** | CSM がリードしない、ティアが違う、または明確なコントリビューションフィットがない |
+| **基準を満たさない** | 対象外のティアである、またはコントリビューションの適合性が明確でない |
 | **適切な Issue がない** | PM が彼らの Issue を断り、代替に興味を持たない |
 | **エンジニアリングキャパシティ** | 彼らのタイムフレームでオンサイトエンジニアをスケジュールできない |
 
@@ -703,7 +672,7 @@ PM の応答と会話からの関連コンテキストで追跡用 Issue を更�
 
 **顧客が明示的に断った場合**
 
-彼らの決定を認め、扉を開いておきます。チャンネルまたは CSM への簡潔なメッセージで十分です \- 検討してくれたことに感謝し、いつでも再検討できることを伝えます。
+顧客の判断を尊重し、再検討の余地を残します。チャンネルまたは CSM/CSA に短いメッセージを送るだけで十分です \- 検討への感謝と、いつでも再検討できることを伝えます。
 
 **顧客が沈黙した場合**
 
@@ -789,7 +758,7 @@ CSM/AE とのクイック同期で:
 
 1. Co-Create を独自の GitLab パートナーシップ機会として紹介
 2. 関連する成功事例を共有（Thales、Scania、Kitware など）
-3. 価値を説明: "あなたのエンジニアが機能をコントリビュートし、GitLab が永久にそれを維持します"
+3. 価値を説明: "お客様のエンジニアが機能をコントリビュートし、GitLab が長期にわたって保守します"
 4. 機能リクエストプロセスと比較した提供の加速を強調
 5. 興味を測り、技術的ステークホルダーを特定
 
@@ -828,11 +797,19 @@ A: 機能リクエストは、タイムラインが不確実な製品の優先�
 
 A: GitLab はオープンコア企業であり、コミュニティからのコントリビューションは製品を構築する方法の一部です。顧客のコントリビューションは、実際のユースケースで検証された機能によってロードマップを加速させます。また、エンジニアリングレベルでプラットフォームを理解している顧客との、より深い関係を築きます。これは一方的な取り決めではなく、真のパートナーシップです。
 
+**Q: 誰が参加できますか？**
+
+A: Premium または Ultimate ティアの顧客と GitLab パートナーです。開発に人員や時間を割く余裕があり、技術的な好奇心とプラットフォームの改善への関心がある組織が理想的です。オープンソースの経験があると役立ちますが、必須ではありません。
+
+**Q: Premium または Ultimate ティアの顧客でも GitLab パートナーでもない場合、コントリビュートできますか？**
+
+A: コミュニティでの通常の手順を通じてコントリビュートできます。オンサイトエンジニアや専用ワークショップなど、Co-Create エンゲージメントの手厚い支援は、Premium または Ultimate ティアの顧客と GitLab パートナーが対象です。
+
 #### スコープと Issue の選定
 
 **Q: 取り組みたいものに何でも取り組めますか？**
 
-A: コントリビューションは GitLab の製品の方向性と整合する必要があります。事前承認済み Issue の[キュレートされたリスト](https://cocreate.gitlab.com/?label=co-create)を管理していますが、特定の案がある場合は、担当の Product Manager と適合性を評価します。この承認はオンサイトを確約する前に行われるため、想定外のことはありません。
+A: コントリビューションは GitLab の製品の方向性と整合する必要があります。[事前承認済み Issue のリスト](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=co-create)を管理しています。取り組みたい具体的な案がある場合は、担当の Product Manager と適合性を評価します。オンサイトを確約する前に承認を得るため、想定外の事態を防げます。
 
 **Q: 関心のある内容がキュレートされたリストにない場合はどうなりますか？**
 
@@ -846,11 +823,15 @@ A: 一般的なエンゲージメントでは、少なくとも 1 件のマー�
 
 A: バグ修正は Co-Create に非常によく適合します。Issue を直接経験している顧客は、多くの場合、それを解決するのに最適な人です。引き続き Product Manager との整合は必要ですが、PM は通常、顧客主導のバグ修正に非常に前向きです。
 
+**Q: コントリビューションが受け入れられなかった場合はどうなりますか？**
+
+A: 方向性をそろえるため、オンサイトの週が始まる前に Product Manager の承認を得ます。開発中は、品質基準を満たせるように GitLab のエンジニアが支援します。このような支援があるため、コントリビューションが受け入れられないことはごくまれです。
+
 #### チームと時間のコミットメント
 
 **Q: 何人のエンジニアを専任にする必要がありますか？**
 
-A: オンサイトの 1 週間には 4 〜 8 名のエンジニアを推奨しますが、より小規模なグループでも成功したエンゲージメントがあります。また、事前に GDK セットアップワークショップのための 2 〜 3 時間が必要です。重要なのは、参加するエンジニアがオンサイトの週に専用の時間を確保することであり、通常のスプリント作業と競合させないでください。
+A: オンサイトの 1 週間には 1 〜 8 名のエンジニアを推奨します。また、事前に GDK セットアップワークショップのための 2 〜 3 時間が必要です。参加するエンジニアがオンサイトの週にこの取り組みに専念できるよう、通常のスプリント作業と重ならない時間を確保してください。
 
 **Q: エンジニアには Ruby または Go の経験が必要ですか？**
 
@@ -910,7 +891,7 @@ A: もちろんです。再参加する顧客は、多くの場合、新しい�
 
 **Q: コントリビューションはどれくらい早く GitLab リリースに含まれますか？**
 
-A: マージリクエストが承認・マージされると、次の GitLab リリースに含まれます。GitLab は毎月リリースするため、比較的迅速に反映されます。オンサイトの週から本番環境まで 2 か月未満だったコントリビューションもあります。
+A: マージリクエストがマージされると、次の GitLab の月次リリースに含まれます。レビューにかかる時間はコントリビューションの複雑さによって異なります。
 
 #### 参加の公表
 
@@ -927,71 +908,6 @@ A: はい。公開されている例には次のものがあります。
 1. **Kitware**: ハイパフォーマンスコンピューティングのユースケース向けに OAuth2 デバイス認可グラントフローを追加
 
 ディスカバリーコール中またはその後に、詳細と [Co-Create ブログ記事](https://about.gitlab.com/blog/2025/01/30/the-co-create-program-how-customers-are-collaborating-to-build-gitlab/)を共有できます。
-
-### アカウントチーム向け
-
-**Q: どの顧客が適格ですか？**
-
-A: CSM サポート付きの Premium または Ultimate ティア顧客。理想的な候補者は、エンジニアリングキャパシティ、技術的好奇心、プラットフォーム拡張への関心を持ちます。事前のオープンソース経験は有益ですが必須ではありません。
-
-**Q: 顧客がコントリビュートしたいが Premium/Ultimate でない場合は？**
-
-A: 標準のコミュニティコントリビューションパスを通じてコントリビュートできます。Co-Create プログラムのホワイトグローブサービス（オンサイトエンジニア、専用ワークショップ）は Premium/Ultimate 顧客のために予約されています。
-
-**Q: 顧客にこれが彼らの時間に値することをどう納得させますか？**
-
-A: これらのポイントを共有してください:
-
-1. 研究により、コントリビュートする企業は最大 2 倍の生産性向上を達成することが示されています
-1. GitLab は彼らのコントリビューションを永久に維持します—継続的なメンテナンス負担はゼロ
-1. 従来の機能リクエストプロセスより高速
-1. 内部 GitLab 使用を改善する深いプラットフォーム専門知識を構築
-
-**Q: 私の顧客の時間コミットメントは？**
-
-A: 通常、1 〜 3 名のエンジニアで 1 週間オンサイト、加えて事前の GDK セットアップワークショップに 2 〜 3 時間。エンゲージメント後の時間はマージリクエストフィードバックサイクルにより異なります。
-
-**Q: 顧客は望む任意の Issue に取り組めますか？**
-
-A: コントリビューションは GitLab の製品方向性と整合する必要があります。事前承認された Issue の [キュレートされたリスト](https://cocreate.gitlab.com/?label=co-create)を維持しています。カスタム Issue にはプロダクトマネージャーの承認が必要です。
-
-**Q: 法務がコントリビューションを懸念している場合は？**
-
-A: [企業コントリビューター向け互換性ガイド](/handbook/marketing/developer-relations/programs/cocreate/license-compatibility-guide)があり、法務専門家との相談を手配できます。企業コントリビューター契約は、オープンソースコントリビューションを持つテック企業全体で標準です。
-
-**Q: これは機能リクエストとどう異なりますか？**
-
-A: 機能リクエストは不確定なタイムラインで製品の優先順位付けプロセスに入ります。Co-Create により顧客は必要なものをすぐに開発でき、GitLab が長期的にそれを維持します。
-
-### 顧客向け
-
-**Q: Ruby や Go の経験が必要ですか？**
-
-A: 必要ありません。GitLab エンジニアがペアプログラミングサポートを提供し、コーディング中に教えます。任意のプログラミング言語の事前経験で十分です。
-
-**Q: 私たちがコントリビュートするコードは誰が所有しますか？**
-
-A: https://about.gitlab.com/community/contribute/dco-cla/#do-i-retain-rights-in-my-contributions を参照してください
-
-**Q: コントリビューションが受け入れられない場合は？**
-
-A: プロダクトマネージャー承認はオンサイト週前に行われ、整合性を確保します。開発中、GitLab エンジニアが品質基準を満たすようにガイドします。このレベルのサポートで拒否は非常に稀です。
-
-**Q: 複数の領域にコントリビュートできますか？**
-
-A: はい！リピート顧客はしばしばコントリビューションを拡大します。初回エンゲージメントは通常、自信を構築しプロセスを確立するため 1 つの領域に焦点を当てます。
-
-**Q: 特定のネットワーク設定が必要、またはローカルで GDK を実行できない場合は？**
-
-A: 解決策を見つけるためにお客様と協力します。GitLab Workspaces はネットワーク制限を克服するのに役立ちます。イネーブルメントワークショップはオンサイト週前に環境の課題に対処します。
-
-**Q: 私たちのコントリビューションはどのくらい早く GitLab リリースに入りますか？**
-
-A: タイムラインはコントリビューションの複雑さとレビューサイクルにより異なります。コントリビューションは常にマージリクエスト承認後の次のリリースで出荷されます。
-
-**Q: 参加を公表できますか？**
-
-A: はい！奨励しています。共同発表、ブログ投稿、カンファレンス発表をサポートできます。多くの顧客が Co-Create を彼らのオープンソースプログラムオフィスイニシアチブの一部として使用します。
 
 ### GitLab チームメンバー向け
 

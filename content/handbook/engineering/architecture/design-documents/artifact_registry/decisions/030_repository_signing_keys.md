@@ -5,9 +5,9 @@ owning-stage: "~devops::package"
 description: "1 つの OpenPGP キー設計で Debian と RPM のリポジトリメタデータに署名します。形式ごとのテーブルに暗号化したネームスペース単位の認証情報を格納し、署名機構を介して利用します。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/030_repository_signing_keys/
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T11:47:24+01:00"
-translated_at: "2026-11-17T21:38:01.885854+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T10:26:17+01:00"
+translated_at: "2026-11-25T23:19:01+00:00"
 translator: codex
 stale: false
 ---
@@ -123,7 +123,7 @@ Security は、次の条件でフレーミングに `go-crypto` を使うこと�
 
 署名するリポジトリは、ローテーション用に 2 つ目のキーを選択し、クライアントは両方の公開キーを取得できます。レジストリの署名方法は、クライアントによって異なります。
 
-- **Debian は、両方のキーで署名します。** apt はキーを取得できないため、クライアントは、ユーザーが変更するまでキーを保持します。apt が 2 つの署名を拒否する場合（未解決の質問 1）、Debian も RPM と同じ方法でローテーションします。
+- **Debian は、両方のキーで署名します。** apt はキーを取得できないため、クライアントは、ユーザーが変更するまでキーを保持します。サポート対象のすべてのリリースで、apt は片方のキーだけを信頼している場合でも 2 つの署名を受け入れます。apt の[統合テスト](https://github.com/Debian/apt/blob/3.0.3/test/integration/test-releasefile-verification#L163-L170)でこの動作を確認できます。
 - **RPM は、1 つのキーで署名し、両方を公開します。** `dnf5` は二重の署名を拒否するため、レジストリは署名を新しいキーに切り替え、両方の公開キーを公開します。検証に失敗した `dnf` クライアントは、キーを再取得し、新しいキーのインポートを求めます。そのため、重複期間の長さにかかわらず、RPM の各ホストで新しいキーを 1 回確認します。
 
 ## 代替案 {#alternative-solutions}
@@ -181,9 +181,3 @@ Security は、次の条件でフレーミングに `go-crypto` を使うこと�
 顧客の署名手順が不要になります。
 
 **却下理由。** 署名のたびにブロブのハッシュが変わり、パッケージごとに署名機構の呼び出しが 2 回必要になり、アップロードの遅延が増えます。後から、そのコストを明記したオプトインとして追加することは可能です。
-
-## 未解決の質問 {#open-questions}
-
-この質問によって、決定は変わりません。
-
-1. **サポートするすべての Debian と Ubuntu のリリースで、apt は二重の署名を受け入れるか？** 受け入れない場合は、Debian も RPM と同じ方法でローテーションします。

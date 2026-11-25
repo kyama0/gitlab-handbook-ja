@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1010" width="2000" height="1010" role="img" aria-labelledby="title desc">
   <title id="title">Who can merge, by author and MR Risk Labeler rating</title>
-  <desc id="desc">Author not a maintainer: low risk, @gitlab-bot approves and a maintainer merges without a human review; medium risk, a human maintainer approves; high risk, a human maintainer approves. Author is a direct Maintainer: low risk, self-merge after @gitlab-bot approves; medium risk, self-merge after GitLab Duo and then @gitlab-bot approve, in projects on the maintainer path; high risk, a human maintainer approves.</desc>
+  <desc id="desc">Author not a maintainer: low risk, @gitlab-bot approves and a maintainer merges without a human review; medium risk, a human maintainer approves; high risk, a human maintainer approves. Author is a Maintainer: low risk, self-merge after @gitlab-bot approves; medium risk, self-merge after GitLab Duo and then @gitlab-bot approve, in projects on the maintainer path; high risk, a human maintainer approves.</desc>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; }
     .head { font-size: 44px; font-weight: 600; fill: #1f1e24; }
@@ -46,7 +46,7 @@
   <text class="title r1" x="1700" y="275">No self-merge</text>
   <text class="sub r2" x="1700" y="325">A human maintainer approves</text>
 
-  <!-- Row 2: author is a direct Maintainer -->
+  <!-- Row 2: author is a Maintainer -->
   <rect class="neutral" x="60" y="400" width="380" height="190" rx="12"/>
   <text class="rowhead" x="250" y="485">Author</text>
   <text class="rowsub" x="250" y="535">is a maintainer</text>

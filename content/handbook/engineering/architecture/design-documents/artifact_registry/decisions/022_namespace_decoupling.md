@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
-lastmod: "2026-11-18T14:43:04+01:00"
-translated_at: "2026-11-18T21:08:04+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T10:26:17+01:00"
+translated_at: "2026-11-25T23:19:01+00:00"
 translator: claude
 stale: false
 ---
@@ -47,15 +47,30 @@ Rails の組織を、テーブルとトークンでは ID、URL ではパスで�
 - Organizations v1 では、すべてのアンカーは `('gitlab', 'organization', '<organizations.uuid>')` です。数値 ID ではなく、組織の UUIDv7 を使用します。IAM の Relationships API は、UUIDv7 以外のオブジェクト ID を含むリクエスト全体を拒否するため、数値 ID では、祖先である組織を指定できませんでした。
 - 組織の値に、それ以外の一意性制約を課してはいけません。[組織の統合](#organization-merges)では、存続する組織が複数のネームスペースを持つ必要があるためです。
 - 新しいアンカー型は、新たな `entity_type` の値であり、スキーマの変更は不要です。
-- 別の **課金アンカー** である `(billing_entity_type, billing_entity_id)` のペアが、使用量の支払者を識別します。
-  Artifact Registry は、保存したペアの値を解釈せず、すべての課金イベントに記載します。ペアの書き込み時に確認するのは、その型と、型が要求する ID の形式だけです。
-  Organizations v1 の課金アンカーはトップレベルグループであり、`('top_level_group', '<root_namespace_id>')` です。支払者が変わる場合、Rails は後から置き換えられます（
-  [課金アンカーの変更](#namespace-lifecycle)を参照）。
+- 別の **課金アンカー** である `(billing_entity_type, billing_entity_id)` のペアが、GitLab.com で使用量の支払者を識別します。
+  Artifact Registry は、ペアの書き込み時に、その型と、型が要求する ID の形式だけを確認します。
+  GitLab.com では、保存したペアの値を解釈せず、すべての課金イベントに記載します。
+  GitLab.com の Organizations v1 では、課金アンカーは組織唯一のトップレベルグループを示す `('top_level_group', '<root_namespace_id>')` です。
+  支払者が変わると、Rails はこのアンカーを置き換えられます（[課金アンカーの変更](#namespace-lifecycle)を参照）。
+  Self-Managed と Dedicated では、有効化時、トップレベルグループの数を問わず、実在するグループに対応しない ID を持つ `top_level_group` 型のプレースホルダーを課金アンカーとして保存します。
+  これらのデプロイメントで Rails が作成する課金イベントには、グループも支払者のペアも含まれません。課金処理は、インスタンスの `unique_instance_id` で特定したインスタンスのサブスクリプションに請求します（[ADR-012](012_usage_data_collection.md#billing-events)）。
+  既存のクローズドベータのインスタンスでは、引き続き実在するグループをアンカーとして使います。請求額は変わりません。
+  これらのインスタンスのアンカーは、後でプレースホルダーに移行します。
   Artifact Registry は、自身が列挙する支払者型だけを受け付けるため、課金が組織に移行する場合の組織など、新しい支払者型の追加には Artifact Registry の変更が必要です。
 - プラットフォームは、ネームスペースの作成時に、すべてのアンカーと課金の値を提供します。
   いずれにもスキーマのデフォルトを設けず、Artifact Registry は、受け付ける支払者型を除いて、外部のアイデンティティモデルと課金モデルから独立したままです。
 
 パーティション分割されたテーブルは、`namespace_id`、または blob ストレージではダイジェストをキーとし（[ADR-007](007_database_schema.md#blob-storage-partitioning-strategy)）、どちらも変わりません。Cells の[シャーディングキー要件](https://docs.gitlab.com/development/organization/sharding/#choosing-the-right-sharding-key)は、Rails モノリスのデータベースに適用するものであり、Cell 内のサービスには適用しません。Cell 間のデータ移動に必要なのは、行が直接または間接的に組織に帰属することだけです。ネームスペースモデルでは、`namespace_id` → アンカー → 組織によって実現します。
+
+### プレースホルダーを課金アンカーに使う理由 {#why-a-placeholder-billing-anchor}
+
+Self-Managed と Dedicated では、有効化時にグループのアンカーに代えてプレースホルダーを保存します。
+
+- これらのデプロイメントでは、インスタンスの 1 つの組織にすべてのトップレベルグループが属します。トップレベルグループがない組織や複数持つ組織は有効化が拒否されるため、実際のインスタンスの多くで有効化できません。
+- これらのデプロイメントの支払者は課金アンカーでは決まりません。課金処理はインスタンスの `unique_instance_id` をキーとし（[ADR-012](012_usage_data_collection.md#billing-events)）、課金イベントにはグループも支払者のペアも含まれません。
+- プレースホルダーは無効になりません。管理者はどのトップレベルグループも削除でき、削除から保護されるのは組織だけです。
+- プレースホルダーだと判断できます。ID で検索してもグループが見つからないので、参照した人はすぐにプレースホルダーだと分かります。
+- 有効な値です。受け付ける支払者型と、その型で Artifact Registry が許容する範囲内の ID を使うため、新しい支払者型やスキーマのデフォルト値が不要です。
 
 ### スラッグ設計 {#slug-design}
 
@@ -153,6 +168,15 @@ Self-Managed の Rails と SaaS Artifact Registry を組み合わせるハイブ
 1. **トポロジーサービスへの依存**：Artifact Registry は、スラッグを取得するため、トポロジーサービスと統合します。
 1. **スラッグの発見可能性**：GitLab でユーザーがすでに把握している組織パスとは異なり、スラッグは新しい概念です。クライアント設定のドキュメントと UI で、明示する必要があります。
 1. **重複排除境界**：重複排除は、組織単位ではなく、ネームスペース単位です（[ADR-002](002_storage_deduplication_scope.md)）。Organizations v1 では、ネームスペースは組織に 1 対 1 で対応しますが、複数のネームスペースを持つ組織では、それぞれが独立した重複排除境界を持ちます。ネームスペース間の重複排除は、対象外です。
+
+## 検討した代替案 {#alternatives-considered}
+
+Self-Managed と Dedicated の課金アンカーについて、次の案を却下しました。
+
+- **現状を維持します。** トップレベルグループがない組織や複数持つ組織は引き続き有効化が拒否されるため、Self-Managed と Dedicated の大半のインスタンスで有効化できません。
+- **唯一または最も古いグループなど、実在するトップレベルグループを使います。** 管理者が削除すると、アンカーが存在しないグループを指すことになります。また、グループが支払うように見えますが、実際の支払者ではありません。
+- **ID に 0 を使うか、アンカーを空にします。** `top_level_group` の ID は正の整数である必要があり、アンカーの値にはデフォルトがないので、Artifact Registry はこれを拒否します。
+- **`instance` などの支払者型を新設します。** 課金処理で参照されない値のために、Artifact Registry とモノリスの両方で新しい型を受け付ける必要があります。
 
 ## 参考文献 {#references}
 

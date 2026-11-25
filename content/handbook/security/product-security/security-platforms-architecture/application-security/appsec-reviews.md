@@ -1,25 +1,25 @@
 ---
 title: "Application Security レビュープロセス"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T08:53:47+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-25T23:10:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-09T13:35:12+01:00"
 ---
 <!-- markdownlint-disable MD052 -->
 
 このページでは、AppSec エンジニア向けのアプリケーションセキュリティレビュープロセスについて詳しく説明します。
 アプリケーションセキュリティレビューの目的は、リスクを軽減し、最終的に会社のミッションを成功させるために、GitLab が開発またはデプロイしたアプリケーションの脆弱性を予防的に発見し緩和することです。
 
-アプリケーションセキュリティレビューには、以下のすべてまたは一部のステージが含まれる場合があります。
+アプリケーションセキュリティレビューでは、実装を確認します。以下のすべてまたは一部のステージを含む場合があります。
 
-- 脅威モデリング
 - 詳細なコードレビュー
 - 動的テスト
 
-各ステージの結果は、次のステージで実施するレビューに反映されます。
-理想的には、すべての新機能が何らかの脅威モデリングを受け、後者 2 つのステージはリスクプロファイルに基づいて実施されます。すでに開発中または本番環境にある機能も AppSec レビューを受けることができます。実施されるテストは状況に依存します。
+レビューは、その機能に関連する脅威と必要なセキュリティ対策を記録した[脅威モデル](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/)を出発点とします。脅威モデルをもとにレビューの範囲を定めます。レビューで新たな脅威や既存の脅威に関する変更点が見つかった場合は、レビュアーが脅威モデルへのマージリクエストで変更を提案します。両者の関係については、[脅威モデルと AppSec レビュー](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/#threat-models-and-appsec-reviews)を参照してください。
+
+理想的には、すべての新機能について脅威モデルを作成し、リスクプロファイルに応じてレビューを実施します。すでに開発中または本番環境にある機能も AppSec レビューを受けられます。実施するテストは状況に応じて決まります。
 
 ### プロセス概要 {#process-overview}
 
@@ -52,8 +52,8 @@ rectangle "Findings/Issue\ncreation\n---\nAppSec" as S7
 
 rectangle "Review\nFinalization\n---\nAppSec" as S8
 
-' Threat Modeling - no input, feeds into Documentation
-rectangle "Threat Modeling\n---\nEngineering Team\n+ AppSec" as TM
+' Threat model - separate process that sets the review scope
+rectangle "Threat model\n(separate process)\n---\nEngineering Team\n+ AppSec" as TM
 
 ' Main flow
 S1 --> S2
@@ -64,9 +64,9 @@ S5 --> S6
 S6 --> S7
 S7 --> S8
 
-' Threat Modeling feeds into Documentation
-S3 --> TM
-TM --> S4
+' Threat model informs the scope, the review proposes threat changes by MR
+TM --> S2
+S7 --> TM : threat model MR
 
 @enduml
 ```
@@ -123,7 +123,9 @@ application security team によって行われるセキュリティレビュー
 
 ### レビューに脅威モデリングを含める {#including-threat-modeling-in-the-review}
 
-レビュー中に[脅威モデリング](threat-modeling)を行うべき場合は、元の Issue またはエピックと AppSec レビュー Issue に `threat model::needed` ラベルを追加してください。これにより、GitLab 全体で脅威モデリングの採用を追跡できます。脅威モデリングのステップが完了したら、関連するすべての Issue とエピックに `threat model::done` ラベルを追加する必要があります。脅威モデリングのプロセスは[専用のハンドブックページ](runbooks/threat-modeling)でさらに定義されています。
+機能の脅威モデルへのリンクを AppSec レビューの Issue に記載してください。脅威モデルがなくてもレビューを進められます。[脅威モデルがない場合](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/#when-no-threat-model-exists)を参照してください。
+
+機能に脅威モデルが必要な場合は、元の Issue またはエピックと AppSec レビューの Issue に `threat model::needed` ラベルを追加してください。これにより、GitLab 全体で脅威モデリングの導入状況を追跡できます。脅威モデルがマージされたら、関連するすべての Issue とエピックに `threat model::done` ラベルを追加してください。手順は[脅威モデリングのハンドブックページ](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/)を参照してください。
 
 ### 対話の定量化 {#quantifying-interactions}
 

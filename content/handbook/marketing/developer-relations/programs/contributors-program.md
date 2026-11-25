@@ -2,11 +2,11 @@
 title: "GitLab Contributors Program"
 description: "Developer Relations 配下の Contributor Success チームによる GitLab Contributors Program について"
 upstream_path: /handbook/marketing/developer-relations/programs/contributors-program/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:06:15+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-24T10:58:12+02:00"
+lastmod: "2026-11-25T19:45:06Z"
 ---
 
 ## サマリー
@@ -16,7 +16,7 @@ lastmod: "2026-08-24T10:58:12+02:00"
 GitLab Contributors Program は、オープンソースコントリビューターコミュニティの戦略的成長を推進し、測定可能な製品改善と、貢献するエンドユーザーの持続可能なパイプラインを実現します。
 ユーザーをアクティブなコントリビューターに変え、さらに GitLab のチャンピオンへと変えることで、コントリビューターが実際の課題を解決し、GitLab に関する知識を深め、何百万人ものユーザーに影響を与えるより大きなイニシアチブに取り組むスケーラブルなモデルを作ります。
 
-[Developer Relations Engineering チーム](/handbook/marketing/developer-relations/engineering/) は、既存の GitLab ユーザー、顧客、学習者、パートナーへのターゲットを絞ったアウトリーチ戦略を実施し、トップコントリビューターを [Contributors プラットフォーム](https://contributors.gitlab.com/) のプログラムに送り込みます。
+[Co-Create and Community Engineering チーム](/handbook/marketing/developer-relations/engineering/)は、既存の GitLab ユーザー、顧客、学習者、パートナーに対象を絞って働きかけ、主要なコントリビューターを [Contributors プラットフォーム](https://contributors.gitlab.com/)上のプログラムに案内します。
 プログラムはコードと非コード両方の貢献に焦点を当てており、技術的な改善からドキュメント、翻訳、デザイン、ユーザーエクスペリエンスまで、包括的なプラットフォーム強化を確保します。
 
 ## 主要目的
@@ -36,7 +36,7 @@ GitLab Contributors Program は、オープンソースコントリビュータ�
 ### 1. 主要フォーカス: GitLab ユーザーと顧客
 
 * プラットフォームの経験と解決すべき Issue があるため、意義ある貢献の可能性が最も高い
-* Co-Create を通じて顧客のコントリビューターを育成
+* Co-Create エンゲージメントを通じて顧客のコントリビューターを育成
   * [Co-Create 成功事例とメリット](https://about.gitlab.com/community/co-create/)
   * [Co-Create ハンドブック概要](/handbook/marketing/developer-relations/programs/cocreate/)
   * すべての GitLab エンドユーザーに対する貢献機会のターゲットアウトリーチ

@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "認可を Artifact Registry 内に維持しながら、固定された Artifact Registry のテーブル群を Siphon CDC で Orbit にレプリケーションする決定"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/artifact_registry/decisions/027_replicating_registry_data_to_orbit/"
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T11:47:24+01:00"
-translated_at: "2026-11-17T21:38:01.885854+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T10:26:17+01:00"
+translated_at: "2026-11-25T23:19:01+00:00"
 translator: codex
 stale: false
 ---
@@ -20,402 +20,193 @@ stale: false
 
 ## 背景 {#context}
 
-### Orbit の概要と、この設計で重要な理由 {#what-orbit-is-and-why-it-matters-here}
+Orbit は GitLab のナレッジグラフです。
+GitLab のエンティティをノードとエッジとして保存し、人や AI エージェントがエンティティをまたぐ質問をできるようにします。
+モノリスのパッケージはすでに Orbit に含まれており、Artifact Registry のデータも同じ方式で扱うべきです。
 
-Orbit は GitLab のナレッジグラフです。GitLab のエンティティをノードとエッジとして保存し、人や AI エージェントが
-エンティティをまたぐ質問をできるようにします。グラフは
-[knowledge-graph リポジトリ](https://gitlab.com/gitlab-org/orbit/knowledge-graph)で構築します。
-
-モノリスのパッケージは、すでに Orbit に `Package`、`HAS_PACKAGE`、`BUILT_BY`、
-`HAS_VULNERABILITY` として存在します。Artifact Registry のデータも同じパターンに従うべきです。この取り組みは、
-[gitlab#605695](https://gitlab.com/gitlab-org/gitlab/-/work_items/605695)と
-[エピック 22707](https://gitlab.com/groups/gitlab-org/-/epics/22707)で追跡しています。
-
-### グラフだけが答えられること {#what-only-the-graph-can-answer}
-
-Artifact Registry API は、自身のデータに関する質問に答えます。グラフが価値を発揮するのは、質問が
-Artifact Registry とモノリスをまたぐ場合です。
-
-**v0 で答える質問**：
+Artifact Registry API は、Artifact Registry 自体のデータに関する質問に答えます。
+グラフが価値を発揮するのは、Artifact Registry とモノリスをまたぐ質問です。
 
 - このリポジトリに公開したのは、どのプロジェクトですか？
 - このプロジェクトは、Artifact Registry の全リポジトリを通じて何を公開しましたか？
-- 特定の組織の範囲で、これらのモノリスのプロジェクトやグループについて Artifact Registry が保持しているものを、
-  1 回のクエリで取得できますか？
+- ある組織の範囲に絞って、これらのモノリスのプロジェクトやグループについて Artifact Registry が保持しているものを、1 回のクエリで取得できますか？
 
-依存関係と脆弱性が Artifact Registry のグラフに含まれた**後で答える質問**：
+これらの質問だけで得られる価値は限られています。
+依存関係と脆弱性がグラフに加わると、その価値が高まります。ある脆弱性の影響を受ける Artifact Registry のバージョンや、アップストリームから脆弱なバージョンを提供している仮想リポジトリが分かります。
 
-- この脆弱性の影響を受ける Artifact Registry のバージョンはどれですか？
-- アップストリームから脆弱なバージョンを提供している仮想リポジトリはどれですか？
+Orbit はモノリスのデータを Siphon から取得します。
+Siphon は論理レプリケーションで Postgres を読み取り、NATS を経由して変更を ClickHouse に書き込みます。
+Orbit のインデクサーは、それらのテーブルからノードとエッジを構築します。
+クエリ実行時に、Rails はすべての結果に秘匿処理を行います。秘匿処理はフェイルクローズで、不明な型や存在しない行は拒否します。
 
-v0 だけでは価値は限られます。依存関係と脆弱性を含めることで、グラフの意義が大きくなります。Orbit の
-`HAS_VULNERABILITY` が現在対象としているのは、Artifact Registry のバージョンではなく、モノリスのパッケージです。
+Artifact Registry は、次の 4 点でモノリスと異なります。
 
-### 現在 Orbit にデータが届く仕組み {#how-data-reaches-orbit-today}
-
-Orbit は、Siphon を通じてモノリスのデータを取得します。
-
-1. Siphon は、論理レプリケーションでモノリスの Postgres データベースを読み取ります。
-1. Siphon のプロデューサーが、変更を NATS に公開します。
-1. Siphon のコンシューマーが、それを ClickHouse に書き込みます。
-1. Orbit のインデクサーが、それらのテーブルからグラフのノードとエッジを構築します。
-1. クエリ実行時に、Rails が結果を秘匿処理します。
-
-Artifact Registry では、次の 2 つの制約が重要です。
-
-- **Siphon のデータソースはモノリスのデータベースに限られます。** Siphon がレプリケーションするのは、モノリスの `main`、`ci`、`sec` データベース
-  だけです。
-- **秘匿処理はフェイルクローズです。** Rails は、すべての結果を `Ability.allowed?` でチェックします。不明な型や存在しない行は
-  拒否します。
-
-### 現在の Artifact Registry が適合しない理由 {#why-the-artifact-registry-does-not-fit-today}
-
-| Orbit が前提とするもの | Artifact Registry の実態 |
+| Orbit が前提とするもの | Artifact Registry が持つもの |
 | --- | --- |
-| モノリス内のソースデータベース（`main`、`ci`、`sec`） | 独立した Postgres データベース（[ADR-006](006_technology_stack.md)、[ADR-024](024_infrastructure_delivery.md)） |
-| ノードとエッジの `Int64` ID | UUIDv7 の ID（[ADR-007](007_database_schema.md)）。Orbit には UUID のネイティブサポートが必要です。 |
-| 名前空間に属するすべての行の `traversal_path`（`org_id/ns/.../`） | `traversal_path` はありません。すべてのテーブルに `namespace_id` があります。 |
-| ActiveRecord モデル上の `Ability.allowed?` による認可 | Artifact Registry 内での認可（[ADR-021](021_authorization.md)） |
+| モノリス内のソースデータベース | 独立した Postgres データベース（[ADR-006](006_technology_stack.md)、[ADR-024](024_infrastructure_delivery.md)） |
+| ノードとエッジの `Int64` ID | UUIDv7 の ID（[ADR-007](007_database_schema.md)） |
+| ネームスペースに属するすべての行の `traversal_path` | 各行のネームスペース ID と、各ネームスペースの組織アンカー（[ADR-022](022_namespace_decoupling.md)） |
+| Rails の Ability による認可 | Artifact Registry 内での認可。Rails からはそこで使用するロールが見えません（[ADR-021](021_authorization.md)） |
 
-この表の背景には、次の 4 つの事情があります。
-
-- **初めての外部プロデューサー。** Siphon がサポートするのは PostgreSQL のみです。データソースの追加には、Siphon と
-  データベース間のネットワーク接続、新しい Siphon プロデューサー、取得するテーブルのメタデータが必要です。Artifact Registry は、
-  モノリス外のデータベースを対象とする初めてのプロデューサーになります。
-- **組織カラムがありません。** Artifact Registry には組織カラムがありません。組織の UUID は、
-  `entity_type = 'organization'` のときの `namespaces.entity_id` にあります（[ADR-022](022_namespace_decoupling.md)）。
-- **外部から見えないロール。** Artifact Registry は、ロール（Artifact Viewer、Contributor、Manager、Admin）を
-  認証・認可プラットフォームの Relationships API 内にタプルとして保存します。GLAZ ポリシーエンジンのサイドカーが評価します（[ADR-021](021_authorization.md)）。
-  Rails と Orbit からは見えません。現状では、Artifact Registry のすべての行が、すべてのユーザーから隠されます。
-- **イベントストリームがありません。** Artifact Registry には、アウトボックスやドメインイベントのテーブルがありません。Snowplow に送信するのは、
-  利用イベントのみです（[ADR-012](012_usage_data_collection.md)）。
-
-### Cells の制約 {#the-cells-constraint}
-
-GitLab の ClickHouse はセルローカルです。グローバルサービスからセルローカルの ClickHouse にデータを送ることはできません。Orbit チームは、次の 2 点を
-確認しました。
-
-- 短期から中期では、従来の SaaS インスタンスの ClickHouse への接続が可能です。Orbit は、すでに
-  そのインスタンスからインデックスを作成しています。他のセルからその ClickHouse へのデータ流入はありません。
-- Artifact Registry がセルローカルになれば、現在の Cells と Siphon の設計に適合します。
-
-今後 1 年にわたり、新しい環境をデプロイします。従来の SaaS インスタンスからデータを移行し、そのインスタンスは最終的に
-廃止します。Orbit 自体をセルローカルにするかグローバルにするかは、未決定です。
+GitLab の ClickHouse は Cell 内にあり、グローバルサービスは Cell 内の ClickHouse にデータを送れません。
+短期から中期にかけては、Artifact Registry はレガシー SaaS インスタンスの ClickHouse にデータを送れます。Orbit はすでにこの ClickHouse をインデックス化しています。
+Orbit 自体をグローバルに配置するか Cell 内に配置するかは未定です。
 
 ## 決定 {#decision}
 
-**固定された Artifact Registry のテーブル群を、Siphon CDC で従来の SaaS の ClickHouse にレプリケーションします。Orbit は、そこからグラフの
-インデックスを作成します。認可は Artifact Registry 内に維持します。**
+**Siphon CDC を使い、あらかじめ定めた Artifact Registry のテーブル群をレガシー SaaS の ClickHouse にレプリケーションします。
+Orbit はそのデータをもとにグラフをインデックス化します。
+認可は Artifact Registry が引き続き担当します。**
 
-### 1. Siphon CDC によるレプリケーション {#1-replicate-with-siphon-cdc}
+この決定は GitLab.com のみを対象とします。
+Self-Managed と Dedicated は、すべてのデプロイメントに ClickHouse があるわけではないため、別途決定が必要です（[ADR-012](012_usage_data_collection.md)）。
 
-Artifact Registry の Postgres データベースを、新しい Siphon のデータソースとして追加します。Siphon は、論理レプリケーションで読み取ります。
-行は、従来の SaaS の ClickHouse に `siphon_ar_*` テーブルとして取り込まれます。Orbit は、モノリスのテーブルと同様に、
-それらのテーブルからインデックスを作成します。
+### 常に満たすべき制約 {#what-must-always-hold}
 
-- **適用範囲**：当面は GitLab.com のみです。
-- **方向**：データは Postgres からの一方向にのみ流れます。この経路のどの部分も、Artifact Registry の実行場所には依存しません。
-- **鮮度**：CDC はほぼリアルタイムです。鮮度は Siphon の遅延と等しくなります。Orbit チームと目標に合意します。
+| # | 制約 | 機械的に検証可能か？ |
+| --- | --- | --- |
+| 1 | **データソースは Postgres に限ります。** Orbit へのデータの受け渡しは、Artifact Registry のデータベースからのレプリケーションだけで行います。リクエスト処理経路ではグラフ用の書き込みをせず、その処理は Artifact Registry の稼働場所に依存しません。 | はい。リクエストは自身に関わるデータベース行にのみ書き込み、グラフが変わるのはレプリケーション対象の行が変わったときだけです |
+| 2 | **レプリケーション対象のテーブルは連携時の契約です。** Orbit が読み取るテーブルや列を変更するには、Orbit と Siphon のレビューが必要です。Orbit がインデックス化に同意したテーブルのみ、対象に追加します。 | 一部。対象テーブルのスキーマ変更は検出できます。レビューは人が行います |
+| 3 | **削除済みのデータはグラフから取り除きます。** ソフト削除は、削除操作ではなく更新操作としてレプリケーションします（[ADR-010](010_data_retention.md)）。グラフからは、ソフト削除済みの行、削除済みのネームスペースに属する行、パージ済みの行を取り除きます。 | はい。グラフの応答に該当する行が含まれません |
+| 4 | **Artifact Registry のデータは専用のノード型とエッジを使います。** モノリスのパッケージとノード型やエッジテーブルを共有しません。 | はい。Artifact Registry の行が、モノリスの管理するノード型やエッジテーブルに入ることはありません |
+| 5 | **ID は処理全体で UUID のまま扱います。** Orbit は、Artifact Registry の ID をすべての境界で不透明な UUID 文字列として保持し、ハッシュ化して `Int64` に変換することはありません。Artifact Registry も、数値の ID を別に追加しません。 | はい。グラフ内の Artifact Registry のノードとエッジの ID は、すべて元の行の UUID と一致します |
+| 6 | **グラフの行は組織ルートのパスを使います。** Artifact Registry のグラフの各行には、所属する組織のルート `traversal_path` を格納します。グローバルパスやネームスペースごとのパスは使いません。 | はい。Artifact Registry のグラフの各行のパスは、組織を示す 1 つのセグメントだけで構成されます |
+| 7 | **組織ルートパスの付与だけではデータを読み取れません。** Rails が組織ルートパスを付与するのは、Artifact Registry を有効にした組織のメンバーに限ります。付与に用いるアクセスレベルは全テーブルの最低レベルを下回り、ロールとしては付与しません。Orbit で付与済みのパスを使う読み取りは、ステータス確認やインデックス化のための読み取りを含め、すべてアクセスレベルに従います。 | はい。組織ルートパスの付与しか受けていないユーザーは、Artifact Registry 以外のテーブルの行や件数を読み取れません |
+| 8 | **秘匿処理はエンドユーザーとして Artifact Registry に問い合わせます。** 秘匿処理はエンドユーザー自身のトークンで、Artifact Registry のリソース ID を Artifact Registry に送信します（[ADR-020](020_authentication_flow.md)）。サービストークンでユーザーの身元を表明することはありません（[ADR-021](021_authorization.md)）。Rails は Artifact Registry のロールをミラーリングしません。 | はい。秘匿処理の呼び出しにはすべてエンドユーザーのトークンが含まれ、Rails は Artifact Registry のロールを保持しません |
+| 9 | **秘匿処理はフェイルクローズで動作します。** 型が不明、Artifact Registry に到達できない、タイムアウトが発生、または判定結果がない場合、その行へのアクセスを拒否します。秘匿処理が認識しないノード型については、行を返しません。 | はい。いずれの場合も行を返しません |
+| 10 | **1 回のチェックで Artifact Registry と同じ対象を非表示にします。** 1 人のユーザーについて、型を問わず複数の ID を 1 回の呼び出しで確認します。セキュリティ上の理由でブロックされたか、無効化されたレジストリ内の ID は拒否します。利用停止中や使用量上限によりブロックされたレジストリは読み取りに応じるため（[ADR-022](022_namespace_decoupling.md)）、それらの ID へのアクセスはユーザーのロールに従います。 | はい。セキュリティ上の理由でブロックされたか、無効化されたレジストリの ID は拒否され、利用停止中のレジストリの ID に対する判定は、直接読み取る場合と同じになります |
+| 11 | **すべての件数に秘匿処理を適用します。** 件数の秘匿処理に対応するまでは、Orbit は管理者以外に Artifact Registry ノードの集計結果を返しません。表示できない行が件数に含まれると、非表示のリソースの存在が分かってしまいます（[ADR-021](021_authorization.md)）。 | はい。管理者以外が Artifact Registry ノードを集計しようとすると、拒否されるか、結果に秘匿処理が適用されます |
+| 12 | **ユーザーは複数の組織に所属できます。** ユーザーが所属する組織ごとに、その組織のルートパスを 1 つ追加します。 | はい。2 つの組織に所属するメンバーは、両方の組織の行を参照でき、それ以外の組織の行は参照できません |
+| 13 | **Orbit にアクセスできることが前提です。** ユーザーが Orbit 内の Artifact Registry データにアクセスするには、自身が Orbit にアクセスできる必要があります。Artifact Registry へのアクセス権限だけでは閲覧できません。 | はい。Orbit にアクセスできないユーザーには Artifact Registry の行が返りません |
+| 14 | **レプリケーションによるデータベースのディスク枯渇を防ぎます。** レプリケーションスロットが停止すると、先行書き込みログがインスタンスに残ります。ログの保持量にディスク容量を下回る上限を設け、NATS が停止している間は Siphon が Postgres の外でバッファリングします。スロットの遅延により上限に達する前にアラートを出します。 | 一部。保持上限の設定は読み取って検証できます。バッファとアラートは運用で対応します |
 
-これは、[gitlab#605695](https://gitlab.com/gitlab-org/gitlab/-/work_items/605695)の送出メカニズムに関する問いに答えるものです。
-仕組みは継続的なレプリケーションであり、定期的な整合処理ではありません。
+### レプリケーションを採用する理由 {#why-replication}
 
-### 2. レプリケーション対象テーブルの一覧は契約 {#2-the-replicated-table-list-is-a-contract}
+レプリケーションは先行書き込みログを読み取るため、リクエスト処理経路は変わりません。
+データの鮮度は Siphon の遅延で決まります。削除は変更として届くため、ポーリングで欠落を探す必要がありません。
+モノリスのパッケージも、すでに同じ Siphon、ClickHouse、インデクサーの経路を利用しています。
+どのトポロジーでもデータソースは Postgres のままなので、この経路は Cells でも使えます（[Cells](#cells)を参照）。
 
-レプリケーションするテーブル群と、Orbit が読み取るカラムは、Artifact Registry と
-Orbit/Siphon チーム間の契約です。v0 の正確な一覧は、
-[gitlab#605695](https://gitlab.com/gitlab-org/gitlab/-/work_items/605695)で追跡しています。
+### ID に UUID を使う理由 {#why-uuid-ids}
 
-- レプリケーションするテーブルのスキーマ変更には、Orbit/Siphon のレビューが必要です。
-- 一覧は、Artifact Registry のマイグレーションとともにバージョン管理します。
-- Orbit がインデックス作成に合意したテーブルだけを、一覧に追加します。
-- Artifact Registry は行を論理削除します（[ADR-010](010_data_retention.md#soft-delete)）。論理削除は、削除ではなく更新としてレプリケーション
-  されます。ノードの抽出では、論理削除された行と、削除された名前空間の配下の行を除外する必要があります。そうしないと、グラフに
-  残ります。
+UUID をハッシュ化して `Int64` に変換すると、衝突する可能性があります。
+衝突が起きると、あるノードが別のノードに気付かないうちに置き換わります。組織が異なる場合もあるため、安全性はすべてのクエリ経路で秘匿処理が正しく機能することに依存します。
+Artifact Registry のテーブルに数値の列を設けるには、パーティション分割されたテーブルのマイグレーションと 2 つ目の ID が必要です。
+UUID キーは Artifact Registry の要件です（[ADR-007](007_database_schema.md)）。モノリスから分離されるサービスは、どれも UUID キーを持ち込みます。
 
-### 3. v0 のグラフモデル {#3-v0-graph-model}
+### 組織ルートのパスを使う理由 {#why-the-org-root-path}
 
-ドメインは `artifact_registry` です。v0 の対象は、リポジトリ、パッケージ、バージョン、仮想リポジトリと
-アップストリームリポジトリ間のアップストリームリンク、およびバージョンからそれを公開したモノリスのプロジェクトへのリンクです。
+Orbit は組織ルートのパスを使って、秘匿処理の前に低コストで絞り込めるため、Artifact Registry への呼び出しを減らせます。
+組織ルートのパスにロールを付けると、管理者以外に組織内の大部分へのアクセスを許可してしまうため、この付与にはすべてのテーブルの最低レベルを下回るアクセスレベルを使います。
+Artifact Registry のノード型では、このアクセスレベルを明示的に有効化します。アクセス可否は引き続き秘匿処理で判定します。
+共有エッジテーブルの最低アクセスレベルでは組織ルートの行を参照できないため、Artifact Registry のエッジには専用のテーブルが必要です（制約 4）。
 
-コンテナイメージ、リモートキャッシュテーブル、ファイルとブロブ、依存関係は v0 の対象外です。正確なノード名とエッジ名、
-および実装計画は、[gitlab#605695](https://gitlab.com/gitlab-org/gitlab/-/work_items/605695)
-と[エピック 22707](https://gitlab.com/groups/gitlab-org/-/epics/22707)で追跡しています。
+### Artifact Registry が認可を担当し続ける理由 {#why-authorization-stays-in-the-artifact-registry}
 
-これは、
-[gitlab#605695](https://gitlab.com/gitlab-org/gitlab/-/work_items/605695)のエンティティとエッジに関する問いに答えるものです。`gitlab_project_id` は外部キーのない不透明なテキスト
-なので、モノリスのプロジェクトへのリンクは、Orbit がそれをモノリスの `Project` ノードに解決できるかに依存します。
+アクセス可否を決めるのは引き続き Artifact Registry だけです。ロールのコピーがないため、ロール間の不整合は生じません。
+コールバックを禁止するルール（[ADR-020](020_authentication_flow.md)、[ADR-021](021_authorization.md)）では、Artifact Registry がリクエストの処理中に GitLab インスタンスを呼び出すことを禁止しています。
+秘匿処理では GitLab インスタンスから Artifact Registry を呼び出すため、このルールを守れます。
 
-### 4. Orbit は UUID の ID をネイティブにサポートする必要がある {#4-orbit-must-support-uuid-ids-natively}
+### 続行可否の判断：認可のレイテンシー {#gono-go-authorization-latency}
 
-Orbit は、ノードとエッジの UUID の ID をネイティブにサポートする必要があります。これは要件であり、Orbit チームへの依存事項です。
+Artifact Registry データに触れるすべての Orbit の応答に権限確認の呼び出しが必要だと、グラフは Artifact Registry API を直接呼ぶエージェントと同じ程度まで遅くなるおそれがあります。その場合、データの鮮度も低く、関わるコンポーネントも増えます。
 
-- **ハッシュ化は採用しません**：v0 であっても、UUID を `Int64` にハッシュ化しません。衝突が起きると、あるノードが、場合によっては別の
-  組織のノードを、気付かれずに置き換えてしまいます。その場合、安全性が、すべてのクエリ経路で秘匿処理を完璧に実行することに依存してしまいます。
-- **`bigint` カラムは採用しません**：Artifact Registry のテーブルへの追加には、パーティション分割されたテーブルのマイグレーション
-  と、2 つ目の ID が必要になります。
-- **UUID キーは Artifact Registry の要件です**：[ADR-007](007_database_schema.md#namespace-id-type)（名前空間 ID の型の
-  セクション）を参照してください。モノリスから切り出すすべてのサービスで、UUID キーを使用します。
+**判断基準**：Artifact Registry のデータを扱う Orbit クエリは、権限チェックを含めても、Artifact Registry API の直接呼び出しから同じ回答を組み立てる場合より、p95 で速いことが条件です。
+Orbit チームと先に基準値を合意し、本番環境に向けた作業を始める前に計測します。
 
-UUID のネイティブサポートが実現するまで、Artifact Registry のデータは Orbit に取り込めません。予定の有無と時期は、
-Orbit チームへの未解決の質問です。
+基準に達しない場合、次の順で代替策を取ります。
 
-### 5. グラフの行は組織ルートのパスを使用する {#5-graph-rows-use-an-org-root-path}
+1. 最初に組織ルートのパスで絞り込み、リクエスト内で権限の判定結果をキャッシュします。
+1. ロールのタプルをレプリケーションします（[代替案 4](#alternative-4-replicate-role-tuples-into-clickhouse)）。
+1. Artifact Registry のデータをグラフに含めません。エージェントは Artifact Registry API を使います。
 
-グラフの行は、グローバルノードではなく、組織ルートの `traversal_path`（`<org_id>/`）を使用します。組織ルートのパスによって、
-秘匿処理の前に低コストでフィルタリングできるため、Orbit から Artifact Registry への呼び出しが減ります。
+### Cells {#cells}
 
-`traversal_path` は `organization_id` をエンコードします
-（[構造](https://docs.gitlab.com/development/database/clickhouse/clickhouse_table_design_with_siphon/#traversal_path-structure)）。
-ClickHouse には、組織の UUID から数値の組織 ID へのマッピングが必要です。Rails は名前空間の UUID の行を保持しており
-（[gitlab#603023](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)）、それをレプリケーションできる可能性があります。
+Artifact Registry が Cell 内で稼働するようになっても、この設計は書き直さずに使えます。
+組織の移動は、移動先 Cell での挿入と移動元 Cell での削除としてレプリケーションされ、ClickHouse と Orbit はその両方を反映します。
 
-未解決事項：Rails が組織ルートのパスを付与するかの確認。
-
-### 6. 認可は Artifact Registry 内に維持する {#6-authorization-stays-in-the-artifact-registry}
-
-Orbit は Artifact Registry の権限をコピーしません。Orbit の秘匿処理は、Artifact Registry に問い合わせます。
-
-- 秘匿処理に、Artifact Registry のリソース型向けの非 ActiveRecord の分岐を追加します。この分岐は、リソース ID を
-  Artifact Registry に送信します。
-- 分岐は、エンドユーザーのトークンで、エンドユーザーとして呼び出します（[ADR-020](020_authentication_flow.md)）。サービス
-  トークンを使ってユーザーの身元を主張することは、決してしません。[ADR-021](021_authorization.md)がこれを禁止しており、この ADR でもそのルールを維持します。
-- 秘匿処理には、新しい Artifact Registry のエンドポイントが必要です。GLAZ の `BatchCheck` の契約は、Artifact
-  Registry 内部のものです。現在、Rails が取得するのは、名前空間の範囲に限定された読み取りに埋め込まれた判定のみで、対象も名前空間と
-  リポジトリに限られます。
-- 新しいエンドポイントは、1 人のユーザーについて、任意の型の ID のリストをチェックします。無効化、一時停止、ブロックされた
-  レジストリも隠す必要があります。
-- Rails は、Artifact Registry のロールを決してミラーリングしません。
-- 分岐はフェイルクローズです。不明な型、Artifact Registry への到達不能、タイムアウト、判定の欠落があれば、
-  その行を拒否します。
-
-この方向性は、[ADR-020](020_authentication_flow.md)と
-[ADR-021](021_authorization.md)のコールバック禁止の制約に沿っています。この制約は、Artifact Registry がリクエストを処理している間に
-GitLab インスタンスを呼び出すことを禁じます。GitLab インスタンスから Artifact Registry を呼び出すことは禁止していません。秘匿処理は、
-GitLab から Artifact Registry への呼び出しです。Artifact Registry から GitLab への新しい呼び出しは発生しません。
-
-これは、[gitlab#605695](https://gitlab.com/gitlab-org/gitlab/-/work_items/605695)の権限に関する問いに答えるものです。
-強制適用は、クエリ実行時の秘匿処理で行います。グラフ層は、Artifact Registry の権限を一切保持しません。
-
-新しいノード型は、EE の秘匿処理サービスにも登録する必要があります。登録しないと、結果は 0 行になります。
-
-### 7. 続行可否の判断：認可のレイテンシー {#7-gono-go-authorization-latency}
-
-Artifact Registry のデータに関係する Orbit の回答すべてで Artifact Registry への権限確認が必要になると、グラフは、
-エージェントが Artifact Registry API を直接呼び出すのと同じくらい遅くなるおそれがあります。そのうえ、データの鮮度は低くなり、
-構成要素も増えます。
-
-**合格条件**：Artifact Registry のデータに関係する Orbit のクエリは、権限チェックを含めた p95 が、
-Artifact Registry API の直接呼び出しで同じ回答を組み立てる場合よりも高速でなければなりません。
-
-- 本番向けの作業に入る前に、最初のローカルでの技術検証で測定します。
-- 技術検証の前に、Orbit チームと絶対値に合意します。
-
-合格条件を満たせなければ、次の順に代替策を取ります。
-
-1. 最初に組織ルートのパスでフィルタリングし、その後、リクエスト内で権限の判定をキャッシュします。
-1. ロールのタプルをレプリケーションします（代替案 4）。
-1. Artifact Registry のデータをグラフに含めません。エージェントは Artifact Registry API を使用します。
-
-### 8. データベースの要件 {#8-database-requirements}
-
-Artifact Registry のデータベースには、以下が必要です。`wal_level` やパブリケーションの設定は、まだありません。
-
-- **論理デコード**：Runway の CloudSQL インスタンスで有効にします（[ADR-024](024_infrastructure_delivery.md)）。
-- **パブリケーションとユーザー**：モノリスの Siphon のセットアップに従う、パブリケーションと Siphon のユーザーです
-  （[`gitlab:siphon:setup`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/tasks/gitlab/siphon/setup.rake)）。
-- **ネットワーク経路**：Siphon のインフラとデータベース間の接続です。
-- **WAL の保護策**：Siphon が停止すると、レプリケーションスロットがインスタンス上に WAL を保持し、ディスクが満杯になるおそれがあります。そうなると、
-  Artifact Registry が停止します。次の 3 つの保護策を追加します。
-  - モノリスのデータベースと同様に、`max_slot_wal_keep_size` を、プロビジョニングしたディスクの約 10% に設定します。
-  - Siphon の
-    [緊急モード](https://gitlab.com/gitlab-org/analytics-section/siphon/#emergency-mode-nats-unavailable)を有効にします。NATS が利用できないときに
-    WAL データをオブジェクトストレージにバッファリングするため、Postgres に WAL が蓄積しません。
-  - レプリケーションスロットの遅延アラートを追加します。
-
-Siphon チームがコンシューマーについて確認したとおり、パーティション分割されたテーブルは `publish_via_partition_root` なしでレプリケーションできます。
-レプリケーション対象のすべてのテーブルに主キーがあるため、デフォルトのレプリカ識別が機能します。
-
-### 9. Cells {#9-cells}
-
-Artifact Registry がセルローカルになっても、この設計は書き直さずに使えます。Postgres が引き続き信頼できる唯一の情報源です。
-組織が別のセルに移動するときは、次のようになります。
-
-1. 移動先のセルが INSERT を受け取ります。
-1. その後、移動元のセルが DELETE を実行します。
-1. Siphon は両方をレプリケーションします。
-1. ClickHouse と Orbit が追随します。
-
-この設計は、
-[Siphon のテーブル設計ドキュメント](https://docs.gitlab.com/development/database/clickhouse/clickhouse_table_design_with_siphon/#working-in-cells-environment)に記載されています。
-
-| 維持するもの | 変更するもの |
+| 維持する点 | 変わる点 |
 | --- | --- |
-| レプリケーション対象テーブルの一覧とグラフモデル | Siphon は、従来のインスタンスに対する 1 つのプロデューサーの代わりに、セルごとに 1 つのプロデューサーを実行します |
-| Postgres が唯一のデータソースであること | ClickHouse の送信先が、従来の SaaS インスタンスからセルローカルの ClickHouse に移ります |
-| Artifact Registry 内での認可 | 秘匿処理は、正しいセルの Artifact Registry に到達する必要があります |
-| 組織移動時の動作（INSERT の後に DELETE） | Orbit 自体の配置（グローバルかセルローカルか）によって、セルをまたいでグラフをクエリする方法が決まります |
+| レプリケーション対象のテーブルとグラフモデル | Siphon はレガシーインスタンス向けの 1 つのプロデューサーから、Cell ごとに 1 つのプロデューサーを実行する構成に移行します |
+| Postgres を唯一のデータソースとすること | レプリケーション先は、レガシー SaaS インスタンスの ClickHouse から Cell 内の ClickHouse に変わります |
+| Artifact Registry 内での認可 | 秘匿処理は該当する Cell の Artifact Registry に到達する必要があります |
+| 組織の移動を挿入とそれに続く削除で扱うこと | Cell をまたぐグラフのクエリ方法は、Orbit 自体の配置によって決まります |
+
+### 導入手順 {#adoption-path}
+
+1. Orbit が、処理全体での UUID ID、組織ルートパスの付与、組織を範囲とするデータソースのインデックス化に対応します。3 つがそろうまで、Artifact Registry のデータは Orbit に入りません。
+1. 続行可否の基準を満たすか測定します。
+1. Artifact Registry のデータベースに、論理デコーディング、パブリケーション、Siphon 用のユーザー、Siphon へのネットワーク経路、制約 14 の保護措置を用意します。
+1. 最初のグラフの対象は、リポジトリ、パッケージ、バージョン、仮想リポジトリとそのアップストリームリポジトリを結ぶリンク、および各バージョンと、その元になったモノリスのプロジェクト、パイプライン、ユーザーを結ぶリンクです。
+1. コンテナイメージ、リモートキャッシュデータ、ファイルと blob、依存関係、およびバージョンを pull したプロジェクトへのリンクを追加するには、項目ごとに別途決定が必要です。
 
 ## 影響 {#consequences}
 
 ### 利点 {#positive}
 
-1. **実績のあるパイプラインを再利用します**：同じ Siphon、ClickHouse、インデクサーの経路が、モノリスのパッケージにも使われています。
-1. **データのために Artifact Registry の実行時動作を変更する必要がありません**：レプリケーションは、先行書き込みログを読み取ります。リクエスト
-   経路に新しいイベントやジョブはありません。認可には、新しいエンドポイントが 1 つ必要です。
-1. **ほぼリアルタイムです**：CDC の鮮度は、Siphon の遅延と等しくなります。
-1. **権限の信頼できる情報源が 1 つです**：引き続き、アクセスを判断するのは Artifact Registry だけです。ロールの
-   ミラーが乖離することはありません。
-1. **Cells への移行時にも無駄になりません**：データは Postgres からの一方向にのみ流れるため、この経路を引き継げます。
-1. **削除もレプリケーションします**：Siphon は削除された行を論理削除された行に変換するため、グラフからパージされた行が除かれます。
+1. **実績のあるパイプラインを再利用できます**：モノリスのパッケージは同じ経路で Orbit に届きます。
+1. **データ処理のためのランタイム変更が不要です**：レプリケーションは先行書き込みログを読み取ります。認可には新しいエンドポイントが 1 つ必要です。
+1. **ほぼリアルタイムで反映できます**：データの鮮度は Siphon の遅延で決まります。
+1. **権限の情報源が 1 つにまとまります**：ロールのコピーとの不整合が起こりません。
+1. **Cells に移行しても機能します**：データは Postgres からのみ流れます。
 
 ### 欠点 {#negative}
 
-1. **初めての外部プロデューサーです**：Siphon は、これまでモノリス外のデータベースを読み取ったことがありません。初回は、Orbit チームと腰を据えて
-   話し合う必要があります。
-1. **スキーマの結合があります**：Siphon のテーブル用の ClickHouse スキーマは、現在モノリス内にあります（外部への移動を予定しています）。
-   レプリケーションする Artifact Registry のテーブルを追加または変更するには、モノリス内に対応する ClickHouse のマイグレーションが
-   必要です。これにより、該当テーブルの Artifact Registry のマイグレーションが遅くなります。
-1. **Artifact Registry のノードに関係するすべての Orbit クエリでレイテンシーが増えます**：秘匿処理で、エンドユーザーとして Artifact
-   Registry を呼び出します。決定 7 の続行可否の合格条件によって、このリスクを抑えます。
-1. **Artifact Registry に新たな負荷がかかります**：Orbit のクエリが、新しい認可エンドポイントの呼び出し元になります。
-1. **Orbit チームに依存します**：Orbit が UUID の ID をネイティブにサポートするまで、Artifact Registry のデータを Orbit に取り込めません。
-1. **インフラの作業が必要です**：論理デコード、パブリケーション、レプリケーション用ユーザー、ネットワークアクセスは、いずれも Infra の
-   作業が必要です。
-1. **GitLab.com のみです**：Self-Managed と Dedicated では、Orbit に Artifact Registry のデータを取り込みません。
-1. **レプリケーションスロットが停止すると、データベースのディスクが満杯になるおそれがあります**：そうなると、Artifact Registry が停止します。決定 8 の WAL の
-   保護策によって、このリスクを抑えます。
+1. **初めての外部プロデューサーです**：Siphon がモノリス外のデータベースを読み取ったことはありません。
+1. **スキーマが結合します**：レプリケーション対象のテーブルを変更するたびに、対応する ClickHouse のマイグレーションが必要となり、それらのテーブルの Artifact Registry 側のマイグレーションが遅くなります。
+1. **修復が ClickHouse の ID 型に依存します**：Siphon の整合性チェックと補正によって UUID を主キーとする行を修復できるのは、ClickHouse がそのキーを文字列として保持する場合だけです。ClickHouse の `UUID` 型の列は Postgres とソート順が異なるため、チェックの対象外になり、欠落した行が復元されません。
+1. **レイテンシーが増えます**：Artifact Registry のノードを扱うすべての Orbit クエリで、秘匿処理によって Artifact Registry への呼び出しが増えます。続行可否の判断基準によってこのリスクを抑えます。
+1. **新たな負荷が生じます**：Orbit クエリが新しい認可エンドポイントを呼び出すようになります。
+1. **Orbit チームに依存します**：Orbit が UUID ID、組織ルートパスの付与、組織を範囲とするデータソースのインデックス化に対応するまで、データは取り込まれません。
+1. **インフラ作業が必要です**：論理デコーディング、パブリケーション、レプリケーション用のユーザー、ネットワークアクセスが必要です。
+1. **当初は回答できる内容が限られます**：最初に挙げた 3 つの質問はすべて、バージョンとそのプロジェクトの間のリンクに依存します。プロジェクトを記録しているバージョンが少なければ、グラフの構造が正しくても、ほとんど回答できません。
+1. **GitLab.com に限定されます**：Self-Managed と Dedicated の Artifact Registry データは Orbit に入りません。
+1. **ディスク容量にリスクがあります**：レプリケーションスロットが停止すると、データベースのディスクが埋まり、Artifact Registry が停止する可能性があります。制約 14 でこのリスクを抑えます。
 
 ## 検討した代替案 {#alternatives-considered}
 
-| 代替案 | 判断 |
-| --- | --- |
-| API ベースの定期同期 | 不採用 |
-| Artifact Registry 内のドメインイベントのアウトボックス | 不採用 |
-| Snowplow から Snowflake への経路を再利用 | 不採用 |
-| ロールのタプルを ClickHouse にレプリケーション | v0 では不採用 |
-| Rails が Artifact Registry のリソースを ActiveRecord モデルとしてミラーリング | 不採用 |
+### 現状を維持し、Artifact Registry のデータをグラフに含めない {#do-nothing-keep-artifact-registry-data-out-of-the-graph}
+
+エージェントは Artifact Registry API を呼び出します。
+Artifact Registry とモノリスをまたぐ質問には 1 回で回答できないため、デフォルトの方針としては却下しました。
+続行可否の判断では、最後の代替策として残します。
 
 ### 代替案 1：API ベースの定期同期 {#alternative-1-api-based-periodic-sync}
 
-#### アプローチ {#approach}
-
-Artifact Registry が一覧取得エンドポイントを公開します。GitLab 側または Orbit 内のジョブが、定期的にそれらを呼び出し、
-結果をグラフに書き込みます。
-
-#### 採用しなかった理由 {#why-not-chosen}
-
-1. **鮮度**：グラフの鮮度はポーリング間隔に制限されます。CDC はほぼリアルタイムです。
-1. **削除**：削除された行を見つけるには、ポーリングで全件一覧の差分を取る必要があります。CDC は削除を直接報告します。
-1. **双方に新しいコードが必要です**：新しい一覧取得エンドポイント、ページング、同期ジョブが必要です。Siphon はすでに存在します。
-1. **負荷**：名前空間をまたぐスキャンが、リクエストのトラフィックとリソースを取り合います。
+スケジュール済みジョブが Artifact Registry の一覧取得エンドポイントを呼び出し、結果をグラフに書き込みます。
+データの鮮度がポーリング間隔で決まり、削除を検出するために一覧全体の差分を取る必要があり、新しい一覧取得エンドポイントと同期ジョブが必要で、ネームスペースをまたぐスキャンが通常のリクエスト処理とリソースを取り合うため、却下しました。
 
 ### 代替案 2：Artifact Registry 内のドメインイベントのアウトボックス {#alternative-2-domain-event-outbox-in-the-artifact-registry}
 
-#### アプローチ {#approach-1}
-
-Artifact Registry が、各変更と同じトランザクション内でイベントの行を書き込みます。リレーが、それらの行を Orbit に公開します。
-
-#### 採用しなかった理由 {#why-not-chosen-1}
-
-1. **アウトボックスが存在しません**：Artifact Registry には、アウトボックスやドメインイベントのテーブルがありません。Snowplow に送られるのは、利用イベントのみです。
-1. **書き込み経路に新しいコードが必要です**：すべての変更経路でイベントを書き込みます。漏れた経路があると、気付かれないままグラフに欠落が生じます。
-1. **リレーが必要です**：Siphon は、すでに先行書き込みログを読み取っています。アウトボックスを追加すると、同じデータについて 2 つ目の変更フィードができます。
-1. **将来の採用を排除しません**：Orbit が行の変更ではなく意味を持つイベントを必要とする場合、後からアウトボックスを追加できます。
+Artifact Registry は、各変更と同じトランザクションでイベントの行を書き込み、リレーが公開します。
+すべての変更経路でイベントを書き込む必要があり、漏れがあるとグラフに気付かないうちに欠落が生じます。また、Siphon がすでに読み取っているデータについて、リレーが 2 つ目の変更フィードになるため、却下しました。
+Orbit に行の変更ではなく意味を持つイベントが必要になった場合の選択肢として残します。
 
 ### 代替案 3：Snowplow から Snowflake への経路を再利用 {#alternative-3-reuse-snowplow-to-snowflake}
 
-#### アプローチ {#approach-2}
-
-[ADR-012](012_usage_data_collection.md)の利用イベントのパイプラインでレジストリの状態を送り、データウェアハウスから
-グラフを構築します。
-
-#### 採用しなかった理由 {#why-not-chosen-2}
-
-1. **データが適しません**：[ADR-012](012_usage_data_collection.md)のイベントは、操作（プッシュ、プル、削除）を表します。
-   現在の状態は表しません。Orbit に必要なのは、状態と関係です。
-1. **コンシューマーが異なります**：Snowplow のパイプラインは、プロダクト分析のために Snowflake にデータを送ります。Orbit は、ClickHouse からインデックスを作成します。
-1. **仮名化**：パイプラインはデータを仮名化します。グラフには実際の識別子が必要です。
-1. **オプトアウトによる対象範囲の制限**：Self-Managed と Dedicated の管理者は Snowplow を無効にできるため、いずれにしても全範囲を網羅できません。
+使用量イベントのパイプラインを通じてレジストリの状態を送信します（[ADR-012](012_usage_data_collection.md)）。
+イベントが表すのは操作であり現在の状態ではないこと、パイプラインの送信先が ClickHouse ではなく Snowflake であること、グラフに必要な識別子を仮名化すること、管理者がこのパイプラインを無効化できることから、却下しました。
 
 ### 代替案 4：ロールのタプルを ClickHouse にレプリケーション {#alternative-4-replicate-role-tuples-into-clickhouse}
 
-#### アプローチ {#approach-3}
+Orbit はレプリケーションしたロール割り当てに基づいて行をフィルタリングし、Artifact Registry を呼び出しません。
+Orbit 側に Artifact Registry と完全に同じ結果を返す 2 つ目の判定機構が必要です。結果の食い違いがデータ漏えいにつながるため、現時点では却下しました。
+続行可否の判断では、2 番目の代替策とします。
 
-Artifact Registry のロール割り当てを ClickHouse にレプリケーションします。Orbit は、それらのタプルに基づいて行をフィルタリングし、Artifact
-Registry を呼び出しません。
+### 代替案 5：Rails が Artifact Registry リソースを ActiveRecord モデルとしてミラーリング {#alternative-5-rails-mirrors-artifact-registry-resources-as-activerecord-models}
 
-#### 採用しなかった理由 {#why-not-chosen-3}
-
-1. **2 つ目の評価器が必要です**：タプルは、認証・認可プラットフォームの Relationships API 内にあり、GLAZ が評価します。Orbit には、
-   GLAZ と完全に一致する独自の評価器が必要になります。
-1. **乖離のリスク**：2 つの評価器の不一致は、単なるバグではなくデータ漏えいです。
-1. **対象範囲が広くなります**：Relationships API 用の新しいレプリケーション元と、Orbit 内の新しいフィルタリング経路が必要です。
-1. **将来の採用を排除しません**：認可の呼び出しが遅すぎる場合の、続行可否の合格条件（決定 7）における 2 番目の
-   代替策です。
-
-### 代替案 5：Rails が Artifact Registry のリソースを ActiveRecord モデルとしてミラーリング {#alternative-5-rails-mirrors-artifact-registry-resources-as-activerecord-models}
-
-#### アプローチ {#approach-4}
-
-Rails が、Artifact Registry のリソースごとに読み取り専用の ActiveRecord モデルを保持します。既存の秘匿処理サービスが、
-それらのモデルを読み込み、`Ability.allowed?` を実行します。
-
-#### 採用しなかった理由 {#why-not-chosen-4}
-
-1. **状態が重複します**：Rails が、Artifact Registry のデータの 2 つ目のコピーを保持し、同期を維持します。
-1. **権限が重複します**：`Ability.allowed?` には、Rails が保持していない Artifact Registry のロールが必要になります。
-   それらのミラーリングは、ロールのタプルをミラーリングすることを意味します（代替案 4 を参照）。
-1. **分離の目標に反します**：[ADR-022](022_namespace_decoupling.md)では、Artifact Registry 内に Rails の識別子を
-   持ち込みません。Rails がすでに保存しているのは、名前空間ごとに 1 行の名前空間 UUID のみです
-   （[gitlab#603023](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)）。
+秘匿処理では Artifact Registry リソースの Rails モデルを読み込み、Rails の Ability で確認します。
+Rails はデータのコピーを保持し、Artifact Registry のロールも必要とします。これは代替案 4 に該当するため、却下しました。
+また、Rails が保持するのはネームスペースごとに 1 行と定める [ADR-022](022_namespace_decoupling.md)にも反します。
 
 ## 未解決の質問 {#open-questions}
 
-1. **Orbit の UUID ネイティブサポート。** 予定はありますか、また、いつですか？これが実現するまで、Artifact Registry のデータを Orbit に
-   取り込めません。これには、
-   Orbit チームの対応が必要です。
-1. **Rails の組織ルートのパス。** Rails は、組織ルートのパスを付与する必要があります。実際に付与することを確認する必要があります。
-1. **Siphon 設定の配置場所。** `db/siphon/tables` が受け付けるのは、`main`、`ci`、`sec` のみです。
-   - **短期**：ClickHouse のマイグレーションと Siphon のテーブル定義は、モノリス内に配置します。
-     ClickHouse のマイグレーションと Siphon の生成ツールが、そこにしか存在しないためです。そのテストは、対象テーブルが
-     モノリスの PostgreSQL データベース内にあることを前提としますが、Artifact Registry のテーブルには当てはまらないため、ツールの改修が必要です。
-   - **長期**：Artifact Registry リポジトリが、独自の ClickHouse のマイグレーションと Siphon のテーブル
-     定義を持ちます。より多くのサービスがモノリスから切り出されれば、モノリスは Siphon の信頼できる唯一の情報源ではなくなります。
-   - **未解決事項**：2 つのリポジトリ間でスキーマ変更の整合性を維持する方法。
-1. **アラートとオンコールの担当。**
-   - **テーブル変更**：Artifact Registry チームは、自動化されたエンドツーエンドテストを通じて、テーブルの変更時に Siphon の動作を
-     維持します。
-   - **NATS**：共有インフラなので、NATS のアラートは Siphon/DIP チームに送ります。
-   - **Siphon のプロデューサー**：Artifact Registry チームが十分な Siphon の経験を積むまでは、共同で担当します。
-   - **ClickHouse への取り込み**：テーブルや識別子のプレフィックス、
-     たとえば `artifact_registry_` を使って、Artifact Registry チームにアラートを送ることができます。
-   - **DBRE の担当範囲**：現在、Siphon が読み取るのは DBRE がサポートするモノリスのデータベースのみです。DBRE のサポートは、
-     Siphon のデータソースの要件でしょうか？Artifact Registry のデータベースは Runway の CloudSQL インスタンスなので、誰が
-     担当するか確認する必要があります。
-1. **秘匿処理時のエンドユーザーのトークン。** 秘匿処理は、ユーザー自身のリクエストではなく、`gkg-server` が呼び出す内部 Orbit API 内で
-   実行されます。Rails には、その時点で、そのユーザーの Artifact Registry のトークンを取得する方法が必要です。これには、
-   Auth Platform チームの対応が必要です。
-1. **鮮度の目標。** CDC の鮮度は、Siphon の遅延と等しくなります。Orbit は SLA を表明していません。Orbit チームと目標に
-   合意します。
-1. **Orbit はグローバルかセルローカルか。** これは未決定です。Cells の議題の最優先項目です。この答えによって、
-   Cells への移行後のグラフのクエリ方法が変わります。
-1. **Self-Managed と Dedicated。** ClickHouse は、すべてのデプロイ環境で利用できるわけではありません
-   （[ADR-012](012_usage_data_collection.md)）。この ADR の対象は GitLab.com のみです。他のデプロイ環境には、別の
-   決定が必要です。
-
-## 参考資料 {#references}
-
-- [Siphon のテーブル設計：Cells 環境での運用](https://docs.gitlab.com/development/database/clickhouse/clickhouse_table_design_with_siphon/#working-in-cells-environment)
-- [Siphon のテーブル設計：traversal_path の構造](https://docs.gitlab.com/development/database/clickhouse/clickhouse_table_design_with_siphon/#traversal_path-structure)
-- [Siphon の緊急モード](https://gitlab.com/gitlab-org/analytics-section/siphon/#emergency-mode-nats-unavailable)
-- [Orbit の knowledge-graph リポジトリ](https://gitlab.com/gitlab-org/orbit/knowledge-graph)
-- [gitlab#605695：Orbit 内の Artifact Registry データ](https://gitlab.com/gitlab-org/gitlab/-/work_items/605695)
-- [エピック 22707](https://gitlab.com/groups/gitlab-org/-/epics/22707)
-- [gitlab#603023：Rails が名前空間の UUID を保存](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)
-- [ADR-007：データベーススキーマ](007_database_schema.md)
-- [ADR-012：利用データの収集](012_usage_data_collection.md)
-- [ADR-020：認証フロー](020_authentication_flow.md)
-- [ADR-021：認可](021_authorization.md)
-- [ADR-022：名前空間の分離](022_namespace_decoupling.md)
-- [ADR-024：GitLab.com の提供に向けたインフラ](024_infrastructure_delivery.md)
+1. **Orbit 側の依存事項。** 現時点では Orbit は対応していませんが、処理全体での UUID ID のサポート（制約 5）、すべての読み取りでアクセスレベルを考慮する組織ルートパスの付与（制約 7）、組織を範囲とするデータソースのインデックス化が必要です。誰が実装しますか？ Orbit チームの関与が必要です。
+1. **組織ルートパスに使う組織 ID。** `traversal_path` には組織の数値 ID をエンコードします（[構造](https://docs.gitlab.com/development/database/clickhouse/clickhouse_table_design_with_siphon/#traversal_path-structure)）。そのため、制約 6 を満たすには、組織 UUID から数値 ID への対応表が ClickHouse に必要です。Rails はネームスペース UUID の行を保持しているため、その行をレプリケーションできる可能性があります。誰が対応表を提供しますか？
+1. **UUID ノードと `Int64` ノードをつなぐエッジ。** バージョンからモノリスのプロジェクト、パイプライン、ユーザーへのリンクは、UUID ノードと `Int64` ノードをつなぎます。グラフをたどる際、その比較にはどれだけのコストがかかりますか？ Orbit チームの関与が必要です。
+1. **リモートに由来するキャッシュ済みバージョン。** 問題のあるパッケージは通常アップストリームから来るため、バージョンを利用者と結び付けるには、リモートに由来するキャッシュ済みバージョンをグラフに含める必要があります。それらはバージョンノードにするのか、専用のノード型にするのかを決める必要があります。Artifact Registry チームと Orbit チームの関与が必要です。
+1. **Siphon の設定を置く場所。** 現時点ではツールがモノリスにしかなく、ソーステーブルもモノリスのデータベースにあることを前提とするため、短期的には ClickHouse のマイグレーションと Siphon のテーブル定義をモノリスに置きます。長期的には Artifact Registry が自ら定義します。2 つのリポジトリでスキーマ変更の整合性をどのように維持しますか？
+1. **アラートとオンコールの担当。** Artifact Registry チームは自チームのテーブルが変わっても Siphon が動作するように対応します。NATS のアラートは Siphon チームが受け取ります。Artifact Registry チームが Siphon の経験を積むまではプロデューサーを共有します。ClickHouse への取り込みに関するアラートは、テーブル名のプレフィックスで振り分けられます。Siphon のデータソースとしてのデータベースは誰が担当しますか？
+1. **秘匿処理時のエンドユーザーのトークン。** 秘匿処理は Orbit の内部呼び出しで実行され、ユーザー自身のリクエストでは実行されません。その時点で Rails は、そのユーザーの Artifact Registry トークンをどのように取得しますか？ Auth Platform チームの関与が必要です。
+1. **データの鮮度の目標。** Orbit は SLA を明示していません。Orbit チームと目標値を合意します。
+1. **Orbit のグローバル配置と Cell 内配置。** どちらを選ぶかにより、Cells への移行後にグラフをクエリする方法が変わります。

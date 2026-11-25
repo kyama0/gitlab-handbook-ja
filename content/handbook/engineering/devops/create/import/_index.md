@@ -2,11 +2,11 @@
 title: Import グループ
 description: Import グループはマイグレーションを支援します。
 upstream_path: /handbook/engineering/devops/create/import/
-upstream_sha: 8fce82673398dbfad74c667e7b35eb75d101d55d
-translated_at: "2026-11-14T08:44:55+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: claude
 stale: false
-lastmod: "2026-11-13T14:45:41+11:00"
+lastmod: "2026-11-25T11:38:13+11:00"
 ---
 
 ## 概要 {#about}
@@ -80,6 +80,7 @@ Issue がエピックの一部である場合、DRI がそれをリファイン�
 #### リファインメント対象 Issue の特定 {#identifying-issues-for-refinement}
 
 Engineering Manager が Issue をスケジュールし、それらがマイルストーン計画 Issue に含まれます。
+ただし、バグのスケジューリングは毎週の自動処理で行います。[バグのスケジューリング](#bug-scheduling)を参照してください。
 
 マイルストーンにおける各エンジニアの割り当てに基づき、`Ready for Development` ステータスでない Issue を特定します。
 これらは通常 `Refinement` または `Planning breakdown` ステータスですが、任意の
@@ -115,6 +116,15 @@ Import グループでは、Issue がそれらのガイドラインに加え、�
 
 [バグテンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Bug.md?ref_type=heads)
 にはこれらのフィールドが含まれています。
+
+### バグのスケジューリング {#bug-scheduling}
+
+毎週月曜日に[自動処理を実行](https://gitlab.com/group-thiagocsf/bug-scheduler)し、バグをマイルストーンに割り当てます。
+Import グループと Geo グループの未解決のバグを、優先度、重大度、`security`、`customer`、
+`SLO::Missed`、`SLO::Near Miss` の各ラベルに基づいて並べ、続いてステータスと経過期間（古いものから）で並べます。その順に、
+進行中のマイルストーンより後のマイルストーンへ、プロジェクトで設定した上限までバグを割り当てます。
+担当者が割り当てられているバグ、進行中のマイルストーンにあるバグ、番号付きマイルストーンのないバグ（`Backlog` など）は移動しません。
+Engineering Manager は計画を適用する前に毎回レビューします。
 
 ### ヘルプの依頼 {#requesting-help}
 

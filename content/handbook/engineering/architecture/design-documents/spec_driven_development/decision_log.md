@@ -8,11 +8,11 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/decision_log/"
-upstream_sha: "8fce82673398dbfad74c667e7b35eb75d101d55d"
-translated_at: "2026-11-14T08:49:10+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: claude
 stale: false
-lastmod: "2026-11-11T19:46:14+01:00"
+lastmod: "2026-11-25T09:01:50+01:00"
 ---
 
 SDD の詳細は、[Spec-Driven Development](_index.md)を参照してください。
@@ -35,7 +35,7 @@ SDD の詳細は、[Spec-Driven Development](_index.md)を参照してくださ�
 
 - Issue とタスク、およびそれらに基づくカスタムのワークアイテムタイプで利用できます。
 - ワークアイテムに意思決定ログを設けるために、Workplan や AI 計画は必要ありません。
-- 決定の表示と記録は、Planner、Reporter、Security Manager、Developer、Maintainer、Owner の各ロールで利用できます。より厳格な権限モデルについては、引き続き議論中です。
+- 決定の読み取り、作成、更新、削除には、それぞれ専用の権限があり、いずれにも内部ノートへのアクセス権が必要です。これらの権限は Planner および Reporter 以上のロールに付与され、監査担当者は対象外です（[マージリクエスト 270798](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/270798)）。決定を扱うサービスとウィジェットがこれらの権限を確認するため、Guest ロールの作成者や担当者は決定を読み取ることも変更することもできません（[マージリクエスト 272369](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/272369)）。GraphQL ミューテーションをこれらの権限に切り替える作業は今後の対応です。
 - 意思決定ログは、ワークアイテムのヘッダーからサイドパネルで開きます。ヘッダーのボタンには、解決済みでアーカイブされていない決定の件数を表示します。今回のイテレーションでは、未解決の決定は保存しますが、パネルには表示しません（[Issue 631883](https://gitlab.com/gitlab-org/gitlab/-/work_items/631883)）。
 
 ## データモデル {#data-model}
@@ -96,4 +96,4 @@ Workplan フローが Duo の質問を投稿すると、ペイロードが有効
 
 - パネルで未解決の決定とその選択肢をどのように表示するか（[Issue 631615](https://gitlab.com/gitlab-org/gitlab/-/work_items/631615)）。
 - 解決済みの決定を再オープンする際に、その決定を直接変更するか、別の決定で置き換えるか（[Issue 632762](https://gitlab.com/gitlab-org/gitlab/-/work_items/632762)）。
-- アーカイブされたプロジェクトでの動作も含め、ワークアイテムの更新権限と内部ノートへのアクセス権の両方を要求すること（[Issue 632270](https://gitlab.com/gitlab-org/gitlab/-/work_items/632270)）。
+- アーカイブされたプロジェクトでの動作と、GraphQL ミューテーションを決定専用の権限に切り替えること（[Issue 632270](https://gitlab.com/gitlab-org/gitlab/-/work_items/632270)）。

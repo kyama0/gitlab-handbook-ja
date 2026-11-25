@@ -1,11 +1,12 @@
 ---
-title: "Corporate Contributor 向け互換性ガイド: プロジェクトのライセンス要件をナビゲートする"
+title: "法人コントリビューター向け互換性ガイド：プロジェクトのライセンス要件を理解する"
+description: "法人コントリビューターが GitLab プロジェクトにコントリビュートする際に適用されるライセンス契約"
 upstream_path: /handbook/marketing/developer-relations/programs/cocreate/license-compatibility-guide/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:06:15+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-11-25T19:45:06Z"
 ---
 
 ## 貢献に関するライセンス契約の概要
@@ -61,5 +62,5 @@ Co-Create に参加する組織には、2 つの道があります。
 
 ## 連絡先情報
 
-法務に関する質問: cla_managers@gitlab.com
-Co-Create プログラムに関する質問: contributors@gitlab.com
+- 法務に関する質問：cla_managers@gitlab.com
+- Co-Create プログラムに関する質問：co-create@gitlab.com

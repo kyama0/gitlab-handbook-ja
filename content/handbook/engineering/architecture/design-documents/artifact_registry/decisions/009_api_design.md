@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリの API エンドポイント構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-translated_at: "2026-11-17T21:28:02.744958+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-25T23:19:01+00:00"
 translator: codex
 stale: false
-lastmod: "2026-11-17T11:47:24+01:00"
+lastmod: "2026-11-25T10:26:17+01:00"
 ---
 
 
@@ -181,6 +181,8 @@ Self-Managed または Dedicated のモノリスが SaaS レジストリを呼�
 プラットフォームは所有者アンカーに対してネームスペースをプロビジョニングし、返されたネームスペース UUID を永続化します。プロビジョニングは、アンカーに対して冪等です。プラットフォームは、UUID によってネームスペースを所有者アンカー、スラッグ、ステータスに解決し、スラッグとステータスをキャッシュします（[ADR-022](022_namespace_decoupling.md)、[ADR-014](014_frontend_to_artifact_registry.md)）。[ADR-022](022_namespace_decoupling.md#namespace-lifecycle)の可逆的なサービス条件は、アクションごとに 1 つのエンドポイントを通じて適用、解除します。
 
 スラッグが不要なルートは、[Cells](/handbook/engineering/architecture/design-documents/cells/) ルーティングを弱めません。ネームスペースの作成は、まだルーティング対象が存在しないため、キーでルーティングできません。Cell 内のモノリスは、その Cell のローカルレジストリを直接呼び出し、ネームスペースはその Cell に配置されます。ハイブリッドの呼び出し元には Cell がないため、その呼び出しはエッジに入り、エッジが対象の Cell を決定します。どちらの経路もネームスペース UUID をルーティングキーとして登録し、スラッグを取得した時点で、それが第 2 のキーになります。それ以外のすべての GitLab API エンドポイントは、その UUID をキーとし、呼び出し元の場所に関係なく、スラッグをプレフィックスに持つリクエストと同じトポロジー機構を通じてルーティングします。UUID をキーとするルーティングが不十分だと判明した場合は、GitLab API リクエストに所有者アンカーをルーティングヒントとして埋め込むこともできます。
+唯一の例外は、Self-Managed または Dedicated インスタンスのすべてのネームスペースをまたいで読み取るルートです。
+ルーティングに使えるキーがないため、GitLab.com ではこのルートを提供しません。
 
 #### リソース検証 {#resource-verifications}
 
