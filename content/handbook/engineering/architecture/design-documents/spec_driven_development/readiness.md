@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/readiness/"
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T21:10:26+05:30"
-translated_at: "2026-11-17T21:14:57.510431+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T09:01:50+01:00"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: "codex"
 stale: false
 ---
@@ -46,6 +46,8 @@ SDD の詳細は、[Spec-Driven Development](_index.md)を参照してくださ�
 
 スコアとフィードバックは Workplan とともに保存し、`readinessScore`、`readinessScoreFeedback`、`readinessScoreFeedbackHtml` を通じて公開します。AI Gateway のワークアイテムツールは、スコアとフィードバックの両方を永続化します（[マージリクエスト 7144](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7144)）。MCP ワークアイテムツールはスコアに対応しています。フィードバックへの対応は、引き続き [Issue 627234](https://gitlab.com/gitlab-org/gitlab/-/work_items/627234)で別途追跡しています。
 
+準備状況の利用可否は、GraphQL でも REST の `agent_plan` 機能でも、ワークアイテムのルート名前空間の `workplan` フィーチャーフラグに従います。サブグループ、プロジェクト、ユーザーに対してのみ `workplan` を有効にしても、スコアは表示されません。従来の `workplan_score` フラグは削除しました（[マージリクエスト 268375](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/268375)、[マージリクエスト 271667](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/271667)）。
+
 ## 表示 {#display}
 
 Implementation ウィジェットは、ゼロも含めた数値のスコアが存在する場合にのみ、準備状況インジケーターを表示します。
@@ -76,7 +78,7 @@ Implementation ウィジェットは、ゼロも含めた数値のスコアが�
 
 ## 未解決の質問 {#open-questions}
 
-- 計画生成前にもスコアリングするかどうかと、計画の実行とは独立してスコアリングに対応する方法。
-- Workplan フロー自体がフィードバックに基づいて対応すべきかどうか。フィードバックをユーザーに表示して **Implement** に渡すだけでなく、人が計画を見る前に準備状況のフィードバックを計画担当に戻し、1 回改善する提案があります（[Issue 3609](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/work_items/3609)）。
+- 計画生成前にもスコアリングするかどうか。独立した `readiness_score/v1` フロー、その `workItemGenerateReadinessScore` ミューテーション、および `readiness_score_on_workhorse` フラグを削除したため、スコアリングは `workplan/v1` 内でのみ実行します。独立したスコアリングが必要になれば、専用フローを再導入できます（[マージリクエスト 271836](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/271836)）。
+- Workplan フロー自体がフィードバックをどう反映するか。Product と UX は、生成中に準備状況のフィードバックを自動で反映することを優先しました。人が計画を確認する前にフィードバックを計画担当へ戻し、計画を 1 回改善します（[Issue 3609](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/work_items/3609)）。準備状況が低いままの場合に人のレビューを待つためフローを一時停止するか、実装の開始にしきい値を設けるかは、引き続き検討中です。
 - 引き渡し前の警告に対するデフォルトのしきい値。
 - スコアの履歴を保存するか、現在のスコアのみを保存するか。

@@ -1,11 +1,11 @@
 ---
 title: グローバル出張・経費ポリシー
 upstream_path: /handbook/finance/expenses/
-upstream_sha: "ab93800e4c241789ac67785899fa20ffa1eb0854"
-translated_at: "2026-11-05T14:20:54.720006+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:06:15+09:00"
 translator: codex
 stale: false
-lastmod: "2026-11-04T08:29:57-07:00"
+lastmod: "2026-11-25T06:54:19-08:00"
 ---
 
 {{% alert title="これは管理対象ドキュメントです" color="danger" %}}
@@ -700,7 +700,7 @@ Navan の航空運賃ポリシーは「Dynamic Policy」として設定されて
 - チームメンバーは Navan を通じて経費を提出する必要があります。
 - GitLab Inc、GitLab Federal、GitLab Ltd（英国）、GitLab BV（ベルギーおよびオランダ）、GitLab GmbH（ドイツ）、GitLab PTY Ltd（オーストラリアおよびニュージーランド）、GitLab GK（日本） GitLab LTD（アイルランド）、GitLab Israel Ltd.、GitLab Korea Limited、GitLab Canada Corp、GitLab Singapore PTE. LTD. の経費は、ポリシー内の経費については、または Accounts Payable チームによる承認後（ポリシー外経費の場合）、Navan を介して 7 営業日以内に払い戻されます。
 - 支払いを完了するには、チームメンバーの銀行口座が Navan にセットアップされている必要があります。
-- GitLab France S.A.S および GitLab BV Finland の経費は、当月の給与に含まれるよう、毎月 6 日までに提出および承認を完了する必要があります（ポリシー外経費の承認は Accounts Payable チームが行います）。
+- GitLab France S.A.S および GitLab BV Finland の経費は、当月の給与に含まれるよう、毎月 3 日までに提出および承認を完了する必要があります（ポリシー外経費の承認は Accounts Payable チームが行います）。
 - Navan は、Navan を介して直接払い戻されるチームメンバーのためにバッチ支払いシステムを実装します。週中に複数の経費を提出した場合、Navan はこれらの経費を 1 つの週次支払いにまとめ、月曜日に支払います。これらの支払いには、前日曜日の夕方までのすべての承認済み経費が含まれ、チームメンバーの銀行口座には火曜日または水曜日に入金されるはずです。
 
 #### PEO（Professional Employer Organization/ Employer of Record、GitLab 法人または支店ではない） {#peo-professional-employer-organization-employer-of-record-and-not-a-gitlab-entity-or-branch}

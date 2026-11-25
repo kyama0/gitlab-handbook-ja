@@ -8,9 +8,9 @@ authors: [ "@vanessaotto" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/workplan-flow/"
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T21:10:26+05:30"
-translated_at: "2026-11-17T21:14:57.510431+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T09:01:50+01:00"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: "codex"
 stale: false
 ---
@@ -75,6 +75,8 @@ sequenceDiagram
 
 ウィジェットは、`generationStatus` を通じて進捗を表示します。値は、`NOT_STARTED`、`GENERATING`、`NEEDS_INPUT`、`COMPLETED`、`CANCELED`、`FAILED` のいずれかです。キャンセルは失敗と区別します（[マージリクエスト 258021](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/258021)）。実行を開始または再開すると、そのセッションを Duo ドロワーで開きます。
 
+Rails はプロジェクトごとにフローのバージョンを選択します。プロジェクトまたはルート名前空間で `dap_software_factory` フィーチャーフラグが有効な場合は、バージョン 1.3.0 を実行します。それ以外の場合は 1.1.0 を実行します（[フローの定義](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/models/ai/catalog/foundational_flow/workplan/definition.rb)）。バージョン 1.3.0 では、Workplan の並列トラックを子タスクに変換し、依存関係のあるトラック間にブロッキングのリンクを設定します（[マージリクエスト 7807](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7807)）。トラック間の依存関係が直列につながる場合は分割せず、計画を 1 つのワークアイテムに残します（[マージリクエスト 8171](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/8171)）。
+
 ## ランタイム {#runtime}
 
 フローは GitLab API ツールを通じてのみリポジトリを読み取るため、`workplan/v1` はコーディング環境を宣言せず、リポジトリのクローンも必要としません。セッションのユーザーに対して `workplan_on_workhorse` フィーチャーフラグが有効な場合、フローはクローンなしで Workhorse 上で実行します。フラグが無効な間は、クローンを伴う CI で実行します。このフラグはデフォルトでは無効で、段階的な展開が進行中です（[マージリクエスト 267832](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267832)）。
@@ -100,7 +102,6 @@ sequenceDiagram
 - [起動時に未解決の質問をフローに渡す](https://gitlab.com/gitlab-org/gitlab/-/work_items/628043)
 - [起動したユーザーを目標に含める](https://gitlab.com/gitlab-org/gitlab/-/work_items/628042)
 - [Duo Chat で作成したワークアイテムに対して AI 計画を有効にすることをやめる](https://gitlab.com/gitlab-org/gitlab/-/work_items/630062)。生成を開始するのは、**Plan** を選択したとき、またはユーザーが AI ツールに開始を依頼したときだけになります。
-- Workplan の並列トラックを子タスクに変換し、依存するトラック間にブロッキングのリンクを作成します。Workplan フローのバージョン 1.3.0 はこれを実装してマージ済みですが、デフォルトバージョンではなく、まだ展開されていません（[マージリクエスト 7807](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/merge_requests/7807)）。
 - [フローのコメントを解決可能なディスカッションとして投稿する](https://gitlab.com/gitlab-org/gitlab/-/work_items/633575)。ワークアイテムの UI は、最初の返信前にディスカッションを解決する機能にすでに対応しています（[マージリクエスト 259967](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/259967)、[マージリクエスト 263718](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/263718)）。
 
 ## 決定 {#decisions}

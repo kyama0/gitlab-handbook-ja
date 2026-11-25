@@ -2,11 +2,11 @@
 title: "Geo とディザスタリカバリ"
 description: "Geo チームに関する情報"
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/geo/"
-upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
-translated_at: "2026-11-24T21:09:35+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: claude
 stale: false
-lastmod: "2026-11-24T16:05:47+11:00"
+lastmod: "2026-11-25T11:38:14+11:00"
 ---
 
 ## Geo チーム
@@ -26,6 +26,9 @@ lastmod: "2026-11-24T16:05:47+11:00"
 私たちの優先事項はプロダクトの方向性と整合しています。現在および今後の作業は、[オープンな `group::geo` エピック](https://gitlab.com/groups/gitlab-org/-/epics/?state=opened&label_name%5B%5D=group%3A%3Ageo)で確認できます。
 
 これらの優先事項に加えて、お客様から寄せられる Issue を常に評価する必要があります。これらはバグレポートや機能リクエストの形を取ることがあります。Geo のユーザーは多くの場合、私たちの最大のお客様であり、Geo をワークフローの重要な部分として利用している方もいます。
+
+毎週の自動実行でバグをマイルストーンに割り当てます。仕組みの詳細は、Import グループの
+[バグのスケジューリング](/handbook/engineering/devops/create/import/#bug-scheduling)を参照してください。
 
 また、ハウスキーピング作業を管理可能なレベルに保つために常に取り組んでいます。可能な限り、関連するプロジェクトの一部としてこれらの Issue に対処します。それが不可能な場合は、プロジェクト間の時間を使ってこれを実現します。
 
@@ -111,10 +114,6 @@ Migrations チームは、対応するエンジニアを自チームの案件 Is
 チャットチャンネルを使用してください
 - [Geo YouTube プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KoY_6FXXVgj7wPE9ZDS4cOw)
 - [staging.gitlab.com 上の Geo](staging.html)
-
-## プランニングとプロセス
-
-私たちのプランニングとビルドプロセスは[プロセスページ](process.html)に記載されています。
 
 ## デモ
 

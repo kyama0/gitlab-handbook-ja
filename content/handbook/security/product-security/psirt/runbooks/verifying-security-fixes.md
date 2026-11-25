@@ -1,14 +1,15 @@
 ---
 title: "セキュリティ修正の検証"
+description: "PSIRT のセキュリティエンジニア向けに、セキュリティ修正の確認、GDK または package-and-qa を使った検証、CVE の申請を説明するランブックです。"
 upstream_path: /handbook/security/product-security/psirt/runbooks/verifying-security-fixes/
-upstream_sha: "322e725aa43e37884fdc7aeb27f1e822a696a656"
-translated_at: "2026-10-22T21:16:55Z"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-25T23:10:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-20T18:40:19+02:00"
+lastmod: "2026-11-25T11:23:56+01:00"
 ---
 
-アプリケーションセキュリティエンジニアによる修正のレビューは、修正を実装するエンジニアによって発動されます。脆弱性報告をトリアージしたセキュリティエンジニアが、修正に関するマージリクエストの検証を担当します。検証作業を行うエンジニアとしては、以下の手順に従ってください。
+修正を実装するエンジニアが、PSIRT のセキュリティエンジニアに修正のレビューを依頼します。脆弱性報告をトリアージしたセキュリティエンジニアが、修正に関するマージリクエストの検証を担当します。検証を担当するエンジニアは、以下の手順に従ってください。
 
 1. セキュリティの観点からコードレビューを実施します。
 1. `package-and-qa` で生成された Docker イメージを使用してセキュリティ修正を検証します。詳細は[以下のセクション](#validating-security-fixes-using-package-and-qa)を参照してください。

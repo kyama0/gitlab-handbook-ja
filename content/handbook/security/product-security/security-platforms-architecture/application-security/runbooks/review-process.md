@@ -2,11 +2,11 @@
 title: "AppSec レビューテンプレートプロセス"
 description: "このレビューテンプレートは、GitLab 機能のアプリケーションセキュリティレビュー向けに調整されています。一部は他のソフトウェアにも適用できる場合がありますが、適用できない部分もあります。"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T06:01:13+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+translated_at: "2026-11-25T23:10:11+00:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-09T13:35:12+01:00"
 ---
 
 ## :warning: 優先順位付けに関する注意 {#warning-prioritization-note}
@@ -18,6 +18,8 @@ lastmod: "2026-10-30T14:17:26-04:00"
 実際のレビューを開始するには、すべてのレビュアーの間で体系的かつ理解しやすいアプローチを取るために、いくつかの準備手順を行う必要があります。準備ステップの主な成果物は、**スコープ定義**と**所要時間の見積もり**です。
 
 ### スコープ定義 {#scope-definition}
+
+機能の脅威モデルから始めます。各脅威には設計に必要な対策が記載されており、それらが主なテスト項目です。脅威モデルがない場合は、[脅威モデルがない場合](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/#when-no-threat-model-exists)の手順に従い、機能を担当するチームとレビューの範囲について合意してください。
 
 レビュー Issue で提供された情報に基づいて、レビュアーはレビューの範囲内にあり、レビュー内でテストされるサブ機能とテスト可能項目の優先順位付きリストを作成できる必要があります。多くの場合、テスト**しない**項目/サブ機能を定義することも必要です。
 
@@ -46,7 +48,7 @@ lastmod: "2026-10-30T14:17:26-04:00"
 
 ### 脅威モデリング {#threat-modeling}
 
-[脅威モデリングランブックページ](/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/threat-modeling/)を参照してください。
+このレビューでは脅威モデルを作成しません。レビュー Issue に機能の脅威モデルへのリンクを記載し、レビュー範囲を決める際に参照してください。レビューで新たな脅威が見つかったり、評価や必要な対策に誤りが判明したりした場合は、脅威モデルへのマージリクエストを作成してください。マージするかどうかは、機能を担当するチームが判断します。両者の関係については、[脅威モデルと AppSec レビュー](/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/#threat-models-and-appsec-reviews)を参照してください。
 
 ### 所要時間の見積もり {#time-estimation}
 
@@ -67,9 +69,12 @@ lastmod: "2026-10-30T14:17:26-04:00"
 ```markdown
 ### short description
 ** Severity: Informational/Low/Medium/High/Critical **
+** Threat: link to the threat, the threat model MR that adds it, or "none" **
 
 details and reproduction steps
 ```
+
+各検出結果を、関連する脅威にリンクしてください。該当する脅威がない場合は、脅威モデルへのマージリクエストで脅威を追加し、そのマージリクエストにリンクしてください。標準の欠如など、脅威に対応付けられない検出結果には「none」を使ってください。
 
 見出しには Issue の簡潔な説明を含めるべきです。例えば「検索パラメーターにおける反射型クロスサイトスクリプティング」や「バックエンド通信における証明書検証の欠如」などです。詳細は、Issue が明確に理解可能で、適用可能であれば妥当な労力で再現できるよう、深く掘り下げるべきです。
 
@@ -83,11 +88,15 @@ details and reproduction steps
 
 #### カバレッジ {#coverage}
 
-カバレッジセクションは、スコープがどれだけよくカバーされたか、何がテストされ、何がレビューできなかったかを記録するために使用されるべきです。可能であれば、検出結果を生成しなかったテストおよびレビューステップも記録されるべきです。
+カバレッジセクションには、スコープをどこまで網羅できたか、何をテストしたか、何をレビューできなかったかを記録してください。可能であれば、検出結果がなかったテストやレビュー手順も記録してください。スコープ内の各脅威について、必要な対策ごとに、導入済み、未導入、効果なし、未確認のいずれかを記録してください。
 
 #### 検出結果 {#findings}
 
 検出結果セクションには、レビュー中に作成されたすべての検出結果のリストを含めるべきです。[`finding_table.rb`](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews/-/tree/master/tools/finding_table.rb) スクリプトがこのためのテーブルを事前に作成しようとします。`Remediation` 列は手動で記入し、対応する修正 MR や Issue を指す必要があります。
+
+#### 脅威モデルの更新 {#threat-model-updates}
+
+レビュー中に作成した脅威モデルへのマージリクエストと、その状態を一覧にしてください。状態は、マージ済み、機能を担当するチームがクローズ済み、またはオープン中です。
 
 #### 問題 {#problems}
 

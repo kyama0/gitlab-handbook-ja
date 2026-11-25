@@ -8,9 +8,9 @@ authors: [ "@fredericcaplette", "@vanessaotto" ]
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/spec_driven_development/workplan/"
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T21:10:26+05:30"
-translated_at: "2026-11-17T21:14:57.510431+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T09:01:50+01:00"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: "codex"
 stale: false
 ---
@@ -50,6 +50,7 @@ Workplan は、GraphQL ウィジェット型 `WorkItemWidgetAgentPlan` を通じ
 | `hasContent` | Workplan に内容があるかどうか。データベースのカラムから読み取るため、一覧のすべてのワークアイテムについてリクエストできます。 |
 | `updatedAt` | Workplan レコードの最終更新日時。準備状況スコア、そのフィードバック、または AI 計画の設定が変わった場合にも変わります。Workplan に内容がない場合は null です（[マージリクエスト 262844](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/262844)）。 |
 | `generationStatus` | 最新の `workplan/v1` フローのステータス。`NOT_STARTED`、`GENERATING`、`NEEDS_INPUT`、`COMPLETED`、`CANCELED`、`FAILED` のいずれかです。 |
+| `latestWorkflowId` | 実験的なフィールドです。最新の `workplan/v1` ワークフローのグローバル ID です。実行がない場合やユーザーに `read_duo_workflow` 権限がない場合は null です。1 リクエストにつき、1 つのワークアイテムに対してのみ解決できます（[マージリクエスト 267094](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267094)）。 |
 | `questions`, `openQuestionsCount` | すべての Workplan 実行のフローノートのスレッドを古い順に並べたもので、回答済みの状態と未解決の件数はスレッドの解決状況に基づきます。1 リクエストにつき、1 つのワークアイテムに対してのみ解決できます。[質問間の移動と現在の制約](human-in-the-loop.md#question-navigation)を参照してください。 |
 | `readinessScore`, `readinessScoreFeedback`, `readinessScoreFeedbackHtml` | 準備状況スコア、その Markdown の説明、レンダリング済み HTML。フィードバックは、1 リクエストにつき、1 つのワークアイテムに対してのみ解決でき、準備状況ドロワーを開いたときに取得します。 |
 
@@ -66,9 +67,11 @@ Implementation ウィジェットは、デフォルトでは非表示です。�
 - フローが入力を待っている間の、未解決の質問の件数と質問間の移動機能。
 - Workplan の表示、編集、再生成、削除、および **Implement** のアクション。
 
+**View** は分割ボタンです。ワークアイテムを更新できるユーザーには、ドロップダウンに **Regenerate** を表示します。ワークアイテムがクローズされている場合や Workplan の編集中は **Regenerate** を非表示にします。生成を実行できない場合は無効にし、利用できない理由を示すポップオーバーを表示します（[マージリクエスト 268677](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/268677)）。
+
 生成に失敗すると、ウィジェットは **Try again** と **Create manually** を表示するため、ユーザーは引き続き Workplan を手動で記述できます。生成がキャンセルされた場合は、エラーの色ではなく中立的なステータスの色を使用します（[マージリクエスト 266500](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/266500)）。
 
-フローを開始または再開すると、そのセッションを Duo ドロワーで開きます。これには、**Plan**、**Generate**、**Regenerate**、**Try again**、**Continue** が含まれます。セッションの開始または再開中は、そのきっかけとなったアクションを非表示にし、読み込み中のボタンの代わりに **Preparing...** のプレースホルダーをウィジェットに表示します（[マージリクエスト 269975](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/269975)）。フローが入力を待っている間はウィジェットのポーリングを停止し、**Continue** の後に再開します（[マージリクエスト 267874](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267874)）。生成した Workplan は要求されたときにのみ開くため、バックグラウンドの実行が完了してもユーザーの作業を中断しません。ステータスインジケーター上の、セッションへの直接のショートカットは、[Issue 631233](https://gitlab.com/gitlab-org/gitlab/-/work_items/631233)で引き続きフォローアップとなっています。
+フローを開始または再開すると、そのセッションを Duo ドロワーで開きます。これには、**Plan**、**Generate**、**Regenerate**、**Try again**、**Continue** が含まれます。セッションの開始または再開中は、そのきっかけとなったアクションを非表示にし、読み込み中のボタンの代わりに **Preparing...** のプレースホルダーをウィジェットに表示します（[マージリクエスト 269975](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/269975)）。フローが入力を待っている間はウィジェットのポーリングを停止し、**Continue** の後に再開します（[マージリクエスト 267874](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267874)）。生成した Workplan は要求されたときにのみ開くため、バックグラウンドの実行が完了してもユーザーの作業を中断しません。Workplan のステータスの横にあるアイコンのみの **View session** ボタンは、最新の Workplan セッションを Duo ドロワーで開きます。もう一度選択するとドロワーを閉じます。このボタンは、フローがワークアイテムをレビュー中または Workplan を生成中の場合と、初回の実行で Workplan が作られる前に失敗した場合に表示します。フローが入力待ちの場合やユーザーにセッションの読み取り権限がない場合は非表示にします（[マージリクエスト 267096](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/267096)）。
 
 Workplan はサイドパネルで開きます。ウィジェット、そのポーリング、サブスクリプションは、表示内容の判断に `hasContent` を使用し、Workplan の内容はパネルを開いている間にのみ取得します。内容の読み込み中は、パネルにスケルトンを表示します（[マージリクエスト 266958](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/266958)）。パネルのヘッダーには、Workplan の最終更新日時を表示します（[マージリクエスト 269522](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/269522)）。Workplan の追加、更新、削除を行うと、ワークアイテムにシステムノートを追加します。このノートは、Workplan を表示できないユーザーには非表示です（[マージリクエスト 269589](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/269589)）。ユーザーは、必要に応じてテンプレートを使用し、Workplan を手動で作成することもできます。Workplan のテンプレートは、ファイル名が `.plan` で終わる説明テンプレートです。
 

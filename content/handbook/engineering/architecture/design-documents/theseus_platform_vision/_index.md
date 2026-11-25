@@ -10,9 +10,9 @@ owning-stage: ""
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-lastmod: "2026-10-22T12:32:10+01:00"
-translated_at: "2026-11-01T17:50:29+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-24T10:24:34-06:00"
+translated_at: "2026-11-26T08:13:28+09:00"
 translator: codex
 stale: false
 ---
@@ -773,6 +773,7 @@ GitLab.com SAAS のみに提供するコンポーネント、
 たとえば [GATE](https://gitlab.com/gitlab-org/architecture/auth-architecture/design-doc) Tier 1 または GATE Tier 2 の範囲に含まれるコンポーネントや
 `customers.gitlab.com` では、
 導入は任意ですが、強く推奨します。
+新機能をモジュール化されたサービスとして構築する方針は引き続きデフォルトです。その構築と実行には Theseus を推奨します。
 
 Platform Engineering の責務は、アプリケーションサービスがすべての GitLab デプロイターゲット、
 つまり GitLab.com、Dedicated、Dedicated for Government、
@@ -1955,6 +1956,10 @@ DORA はデリバリーを測定します。
   人間によるフォーム入力が引き続き必要な質問数を比較します。
   Theseus が吸収したトイルを直接測定します。
   設計ルールについては[セクション 5.1](#51-planning-and-requirements--readiness-as-code-manifests-as-spec)、今後の作業については[セクション 7.2](#72-critical-near-term-gaps)を参照してください。
+
+- **受け入れられた変更 1 件あたりのコスト。**
+  舗装された道を利用するチームについて、受け入れられた変更 1 件あたりの人の作業工数、AI とインフラストラクチャへの支出、遅延コストを測定します。
+  プラットフォームがより多くの作業を引き受けるにつれて、このコストは下がるはずです。
 
 ### 8.4 Platform-as-a-Product の SLA {#84-platform-as-a-product-slas}
 

@@ -2,9 +2,9 @@
 title: "報告と測定"
 description: Co-Create & Community Engineering チームが成長の成果を測定し、進捗を報告し、成果の解釈に役立つ指標やダッシュボードを使用する方法
 upstream_path: /handbook/marketing/developer-relations/engineering/reporting/
-upstream_sha: "2d1f6094c6d7396f74007d0e3058ac3e143c7e72"
-lastmod: "2026-11-23T09:47:57Z"
-translated_at: "2026-11-23T21:11:54+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T21:03:52Z"
+translated_at: "2026-11-26T08:06:15+09:00"
 translator: codex
 stale: false
 ---
@@ -39,8 +39,7 @@ OKR は公開していません。
 | 段階 | 例 | 何がわかるか |
 |---|---|---|
 | **認知** | リーチ、コントリビュータープラットフォームへの訪問、応募。 | 関心を早い段階で示す兆候です。価値のあるコントリビューションや顧客アカウントの成長の根拠にはなりません。 |
-| **オンボーディング** | コントリビューターのオンボーディング用 Issue、Co-Create ワークショップ。 | 活動の指標です。オンボーディング作業が完了しても、その後にコントリビューションが行われたことまではわかりません。 |
-| **コントリビューション支援** | コントリビューターによる初回のコントリビューション。 | 開始からコントリビューションに至るまでの進展です。その価値を示すには、別途根拠が必要です。 |
+| **オンボーディングとコントリビューション支援** | 完了したオンボーディング用 Issue、Co-Create ワークショップ、コントリビューターによる初回のコントリビューション。 | 完了したオンボーディング用 Issue とワークショップは活動の指標です。その後にコントリビューションが行われたことまではわかりません。初回のコントリビューションは、取り組みを始めてから実際にコントリビュートするまでの進展を示します。その価値を示すには、別途根拠が必要です。 |
 | **コントリビューション** | 価値のあるコントリビューションや協力の継続。 | コントリビューションが継続している根拠になります。価値は件数と切り離して評価します。 |
 
 アドボカシーはジャーニーのどの段階でも認知を広げられます。
@@ -72,13 +71,12 @@ SHIP Time の基準値は策定中です。以下の従来の Tableau ドキュ�
 - コントリビューションは顧客アカウントと製品の両方の成長に影響する場合があるため、デリバリー項目を一方の成果だけに割り当てることはしません。
 
 フライホイールは、デリバリー作業と測定を結び付けます。
-作業はエピック 54 〜 60 の下に整理し、可視化では関連する測定値と指標を作業と併せて表示する予定です。
+作業は以下のデリバリーエピックの下に整理し、可視化では関連する測定値と指標を作業と併せて表示する予定です。
 KPI と PI の記録は測定対象を示します。デリバリー作業の親項目にはなりません。
 デリバリーに関するすべての Issue とエピックは、直接、または子エピックを介して、次のエピックのいずれかの下に置きます。
 
 - [認知（54）](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/54)
-- [オンボーディング（55）](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/55)
-- [コントリビューション支援（56）](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/56)
+- [オンボーディングとコントリビューション支援（56）](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/56)
 - [コントリビューション（57）](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/57)
 - [アドボカシー（58）](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/58)
 - [目標外の取り組み（59）](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/59)

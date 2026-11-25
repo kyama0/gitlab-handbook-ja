@@ -2,9 +2,9 @@
 title: "Application Security"
 description: Application Securityのホームページ
 upstream_path: "/handbook/security/product-security/security-platforms-architecture/application-security/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-16T07:30:25+09:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-03T18:18:51+01:00"
+translated_at: "2026-11-25T23:10:11+00:00"
 translator: codex
 stale: false
 ---
@@ -24,7 +24,7 @@ Application Securityサブ部門は、DevSecOpsエンジニアリングと方法
 私たちは、伝統的なDevSecOpsプログラムの文脈で開発者UXを重視する5つの柱に作業を組織しています。これをSecure Developer eXperience(SDX)と呼びます。
 
 - **SDX: Learn**: セキュリティトレーニング、ガバナンス、ポリシー、ドキュメント、標準。
-- **SDX: Design**: [脅威モデリング](threat-modeling/_index.md)、機能設計のガイダンスとコンサルテーション、[設計レビュー](appsec-reviews.md)。
+- **SDX: Design**: [脅威モデリング](threat-modeling/_index.md)、機能設計のガイダンスとコンサルテーション、設計レビュー。
 - **SDX: Code**: 静的解析、ソフトウェアコンポーネント解析とサプライチェーンセキュリティ、開発における承認済みツールおよび方法論の使用、安全でない関数の非推奨化など。
 - **SDX: Verify**: 動的解析テスト、ペネトレーションテスト、重大な脆弱性の修正、リリース前の[最終セキュリティレビュー](appsec-reviews.md)。
 - **SDX: Maintain**: インシデント対応計画の策定、[Coordinated Vulnerability Disclosure](https://about.gitlab.com/security/disclosure/)の管理、[バグバウンティプログラムの運営](https://hackerone.com/gitlab?type=team)、重大なプロダクトセキュリティインシデント対応の[リリース](https://about.gitlab.com/releases/categories/releases/)およびリリース後のオペレーション。
@@ -49,7 +49,7 @@ Application Securityチームの責任は、[SD&D](appsec-operations/sdd-service
 
 #### Secure by design
 
-Secure Design and Developmentチームの責任は機能に焦点を当てており、[脅威モデリング](threat-modeling/_index.md)と[機能設計レビュー](appsec-reviews.md)を通じて脅威を評価します(SDX: Design)。[Security Platforms & Architectureチーム](../../security-platforms-architecture/)は全社的な脅威モデリング戦略のDRIであり、AppSecはこの戦略の重要なステークホルダーです。
+Secure Design and Development チームは機能に焦点を当て、[脅威モデリング](threat-modeling/_index.md)と機能設計レビューを通じて脅威を評価します（SDX: Design）。[Security Platforms & Architecture チーム](../../security-platforms-architecture/)は全社的な脅威モデリング戦略の DRI であり、AppSec はこの戦略の重要なステークホルダーです。
 
 #### セキュリティレスポンス
 

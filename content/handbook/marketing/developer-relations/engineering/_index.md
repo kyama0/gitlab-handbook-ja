@@ -2,9 +2,9 @@
 title: "Co-Create & Community Engineering チーム"
 description: "Co-Create & Community Engineering チーム"
 upstream_path: /handbook/marketing/developer-relations/engineering/
-upstream_sha: "2d1f6094c6d7396f74007d0e3058ac3e143c7e72"
-lastmod: "2026-11-23T09:47:57Z"
-translated_at: "2026-11-23T21:11:54+00:00"
+upstream_sha: "c376e869c4e8737e946fb52ff739963c44730e6d"
+lastmod: "2026-11-25T21:03:52Z"
+translated_at: "2026-11-26T08:06:15+09:00"
 translator: claude
 stale: false
 ---
@@ -46,17 +46,14 @@ block-beta
     columns 4
     space awareness(["Awareness"]):2 space
     space:4
-    space onboarding(["Onboarding"]):2 space
-    advocacy(["Advocacy"]) space:3
-    space enablement(["Enablement"]):2 space
+    advocacy(["Advocacy"]) onboardingEnablement(["Onboarding & Enablement"]):2 space
     space:4
     space contributing(["Contributing"]):2 space
     space:4
     customer(["Customer Growth"]):2 product(["Product Growth"]):2
 
-    awareness --> onboarding
-    onboarding --> enablement
-    enablement --> contributing
+    awareness --> onboardingEnablement
+    onboardingEnablement --> contributing
     contributing -.-> advocacy
     advocacy --> awareness
     contributing --> customer
@@ -67,16 +64,15 @@ block-beta
     style product fill:transparent,stroke:#9B51E0,stroke-width:2px
 ```
 
-ファネルには、主に次の 4 つの支援領域があります。
+ファネルには、主に次の 3 つの支援領域があります。
 
 1. [認知](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/54)：コントリビューションの機会を見つけられるようにします。
-1. [オンボーディング](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/55)：取り組み始める際の障壁を取り除き、最初の一歩を支援します。
-1. [コントリビューション支援](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/56)：最初のコントリビューションをやり遂げられるように支援します。
+1. [オンボーディングとコントリビューション支援](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/56)：取り組み始める際の障壁を取り除き、最初の一歩から初回のコントリビューションをやり遂げるまで支援します。
 1. [コントリビューション](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/57)：価値のあるコントリビューションや協力が続くように支援します。
 
 [アドボカシー](https://gitlab.com/groups/gitlab-org/developer-relations/contributor-success/-/work_items/58)はフライホイールを加速させます。コントリビューターが開催するイベントや作成するコンテンツ、SNS への投稿が認知を広げます。
 アドボカシーはコントリビューターのジャーニーのどの段階でも生まれ得ます。
-必須の第 5 段階ではありません。
+必須の第 4 段階ではありません。
 
 フライホイール全体で、成長の成果とその解釈に役立つ兆候や活動をどのように区別するかは、[報告と測定](/handbook/marketing/developer-relations/engineering/reporting/#measuring-the-flywheel)を参照してください。
 
@@ -130,6 +126,8 @@ FY28 の取り組みでは、ファネルの各段階をこれら 2 つの成果
 ## Co-Create プログラム {#co-create-program}
 
 GitLab の [Co-Create プログラム](https://about.gitlab.com/community/co-create/)は、Product および Engineering と連携して Co-Create & Community Engineering チームが主導する、部門横断的な取り組みです。
+お客様との共創による顧客アカウントの成長と、コミュニティとの共創による製品価値の向上という 2 つの取り組みを含みます。
+Co-Create エンゲージメントは、お客様とパートナーが支援を受けながらコントリビュートするための取り組みです。
 GitLab 固有のより詳しい手順は、私たちの [Co-Create のハンドブックページ](/handbook/marketing/developer-relations/programs/cocreate/)に記載されています。
 
 ## チームメンバー {#team-members}
