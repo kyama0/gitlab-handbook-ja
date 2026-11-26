@@ -2,9 +2,9 @@
 title: チームプロセス
 description: "Organizations チームの運営方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process/
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-lastmod: "2026-11-06T16:03:29-05:00"
-translated_at: "2026-11-07T10:45:49.721973Z"
+upstream_sha: "0eaa099425ab844e331fd93ea6729b3c367711db"
+lastmod: "2026-11-26T05:59:26+01:00"
+translated_at: "2026-11-26T20:23:38+09:00"
 translator: claude
 stale: false
 ---
@@ -239,28 +239,24 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 グループが長期的なスケーラビリティ作業に集中できるように、99.79% のエラーバジェット例外が
 [承認](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/16897)されました。
 
-## エンジニアリングの顧客／サポートローテーションプロセス {#engineering-customersupport-rotation-process}
+## エンジニアリングの顧客サポート当番の手順 {#engineering-customer-support-rotation-process}
 
-{{< alert type="note" >}}
-**注**： このプロセスは現在、チームのうち Groups & Projects 側に固有のものであり、Organizations はまだ開発中です。プロダクトが一般リリースになったときに、Organizations にも同様のものを展開する予定です。
-{{< /alert >}}
-
-2 週間ごとに、Groups & Projects のエンジニア 1 名が、顧客サポートチケットの技術評価の DRI として割り当てられ、サポート Issue や `master` パイプラインの失敗について [#g_organizations](https://gitlab.slack.com/archives/g_organizations) チャンネルを監視し、トリアージと優先順位付けが行われたバグやサポートリクエストに対処します。
+各チームでは、2 週間ごとにエンジニア 1 名が DRI を務めます。DRI は顧客サポートチケットの技術評価を行い、[#g_organizations](https://gitlab.slack.com/archives/g_organizations)でサポート上の問題や `master` パイプラインの失敗を監視し、トリアージと優先順位付けが済んだバグやサポート依頼に対応します。
 
 ### プロセスのまとめ {#process-summary}
 
-- 2 週間ごとに、[#g_organizations_standup](https://gitlab.enterprise.slack.com/archives/C054LN3G0CE) チャンネルの Slack リマインダーが、技術評価トリアージの新しいサポートシフトが始まることをグループに知らせます。
+- 2 週間ごとに、チームの Slack チャンネルにリマインダーが届き、技術評価のトリアージを担当する新しい当番の開始をグループに知らせます。
+- 当番は、Groups & Projects と Organizations の 2 つの機能別チームで個別に管理します。
 - 各エンジニアは、今後の自分のローテーション（以下のスケジュールに従う）を認識し、Slack リマインダーに従って行動することが求められます。
 - 現在ローテーション中の DRI は、その 2 週間を以下の作業に充てるべきです（優先順位順）:
     1. [#g_organizations](https://gitlab.slack.com/archives/g_organizations)でトリガーされた壊れた `master` パイプラインの失敗に関する[アラート](https://gitlab.com/gitlab-org/gitlab/-/pipelines/1858249063)に対応する
     1. 現在のマイルストーンでスケジュールされたサポート Issue に取り組む
     1. 現在のマイルストーンでスケジュールされたバグ Issue に取り組む
-    1. 顧客サポートの[バックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AOrganizations&first_page_size=20)から新しい Issue をトリアージし、必要に応じてフォローアップ情報を求める
-- 上記の項目を一覧表示したライブ更新の Issue がここにあります： https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/2
+    1. 顧客サポートのバックログにある新しい Issue をトリアージし、必要に応じて追加情報を求める
 - DRI が何らかの理由（例： 休暇、病欠、他の責務が優先されるなど）で今後のトリアージローテーションシフトを実行できない場合は、別のチームメンバーとローテーションを交換するか、EM に通知して調整してもらうことが求められます。交換が特定されたら、スケジュールを更新する必要があります。
-- DRI は、次の参加者に引き継ぐ際に、2026 年のローテーション用のこの [Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8)を更新する必要があります。
+- DRI は当番を終えたら、自分のチームの引き継ぎ用 Issue を更新します（[リンクと Issue](#links-and-issues)を参照）。
 
-ローテーションの終わりに、各エンジニアは[チームサポート Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) 内に引き継ぎノートを提供すべきです：
+当番を終えたエンジニアは、次の手順でチームのサポート用 Issue に引き継ぎメモを残します。
 
 - Issue の説明にあるサンプル形式を使用して、ローテーション中に取り組んだ内容をまとめる
 - これを Issue に直接、新しい DRI への ping とともに、（スレッドではなく）新しいルートコメントとして投稿する
@@ -269,7 +265,14 @@ GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使
 
 ### ローテーションスケジュール {#rotation-schedule}
 
-スケジュールは [Google スプレッドシート（内部リンク）](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?usp=sharing)で追跡されます。変更する前にお尋ねください。
+スケジュールは Google スプレッドシートで管理します。変更する前に相談してください。
+
+### リンクと Issue {#links-and-issues}
+
+| 機能別チーム | Issue 一覧 | 引き継ぎメモ | スケジュール表 |
+|---|---|---|---|
+| Organizations | [Organizations の Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/team/-/work_items/43) | [Organizations の引き継ぎメモ](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/team/-/work_items/44) | [Organizations のスケジュール](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?gid=1158210921#gid=1158210921) |
+| Groups & Projects | [G&P の Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/2) | [G&P の引き継ぎメモ](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) | [G&P のスケジュール](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?gid=1799419370#gid=1799419370) |
 
 ## Support から Incident Management へのエスカレーションプロセス {#support-to-incident-escalation-process}
 
@@ -332,11 +335,9 @@ SLA があります。
 役割の定義：
 
 - **Support DRI**：現在、
-  [エンジニアリングの顧客/サポートローテーション](#engineering-customersupport-rotation-process)を担当しているエンジニア。
-  現在、このローテーションの対象はチームのうち Groups & Projects 側のみです。
-  Organizations に同等のローテーションが設けられるまでは、Organizations 固有の
-  兆候を担当する Support DRI はいません。その場合、Support は DRI を待たず、
-  Incident Manager on-call (IMOC)に直接その兆候を報告します。
+  [エンジニアリングの顧客サポート当番](#engineering-customer-support-rotation-process)を担当しているエンジニア。
+  Groups & Projects と Organizations は当番を個別に管理しており、
+  それぞれのチームに Support DRI がいます。
 - **Support Team Lead**：Support を代表してエスカレーションを判断する、
   当番の Support Team Lead。
 - **Incident Manager on-call (IMOC)**：incident.io の

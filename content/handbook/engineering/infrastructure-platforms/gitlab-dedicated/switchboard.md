@@ -1,11 +1,11 @@
 ---
 title: Switchboard チーム
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/
-upstream_sha: "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd"
-translated_at: "2026-11-19T06:12:11+09:00"
+upstream_sha: "0eaa099425ab844e331fd93ea6729b3c367711db"
+translated_at: "2026-11-26T20:23:38+09:00"
 translator: codex
 stale: false
-lastmod: "2026-11-17T16:04:48-07:00"
+lastmod: "2026-11-26T08:50:53Z"
 ---
 
 ## 概要 {#summary}
@@ -170,6 +170,10 @@ Commercial の **Beta** および **Production** 環境へのアクセスには�
   - アクセスの正当性
 - アプリケーションへのアクセスとプロビジョニングの詳細は、[Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications)の `Switchboard - GitLab Dedicated` の項目にあります。
 
+### エンジニアリングチームの Temporal Web UI へのアクセス {#temporal-web-ui-access-for-engineering-teams}
+
+Dedicated チーム以外のエンジニアが Commercial の **Test** または **Beta** 環境で Temporal Web UI だけを必要とする場合は、[Lumos](https://app.lumos.app/)で `Engineering Team Users` 権限を申請します。マネージャーと Switchboard の承認者の両者が申請を承認します。この権限で Temporal Web UI の利用と Switchboard へのログインができます。Grafana へのアクセスは含まれません。**Production** 環境で Temporal Web UI を利用できるのは、引き続き `Dedicated Team Users` のみです。
+
 ### Switchboard for Government {#switchboard-for-government}
 
 | 環境 | URL | FedRAMP の境界 |
@@ -202,7 +206,7 @@ Government の **Production** 環境は FedRAMP の認可境界内にあるた�
 - **Read only**: テナントインスタンスを表示のみ可能。例： CSM、Compliance チームメンバー。
 - **Provisioner**: アカウントをプロビジョニングし、ユーザーを管理。
 - **Support**: テナントインスタンスを表示し、ユーザーを管理。例： Professional Services (PS)、Support チームメンバー。
-- **Migration Operator**: マイグレーション準備のためにテナントインスタンスを一時的に運用。このロールは Site Reliability Engineers (SRE) と Switchboard チームメンバーに制限されています。
+- **Tenant operator**: マイグレーション準備のためにテナントインスタンスを一時的に運用。このロールは Site Reliability Engineers (SRE) と Switchboard チームメンバーに制限されています。
 - **Hosted Runner Operator**: テナントインスタンスを表示し、Hosted Runner の設定を管理。このロールは Site Reliability Engineers (SRE) と Switchboard チームメンバーに制限されています。
 - **Operator**: テナントインスタンスを運用。このロールは Site Reliability Engineers (SRE) と Switchboard チームメンバーに制限されています。
 
@@ -213,7 +217,7 @@ Government の **Production** 環境は FedRAMP の認可境界内にあるた�
 | **Read only**              | いいえ            | はい                     | いいえ                 | いいえ                 | いいえ                        | いいえ                        | いいえ                        | はい        | はい        |
 | **Provisioner**            | はい           | はい                     | いいえ                 | いいえ                 | いいえ                        | はい                       | いいえ                        | はい        | はい        |
 | **Support**                | いいえ            | はい                     | いいえ                 | いいえ                 | いいえ                        | はい                       | いいえ                        | はい        | はい        |
-| **Migration Operator**     | はい           | 特定のテナントのみ | はい                | はい                | はい                       | はい                       | いいえ                        | はい        | はい        |
+| **Tenant operator**        | はい           | 特定のテナントのみ | はい                | はい                | はい                       | はい                       | いいえ                        | はい        | はい        |
 | **Hosted Runner Operator** | いいえ            | はい                     | いいえ                 | Hosted Runner のみ | いいえ                        | いいえ                        | いいえ                        | はい        | はい        |
 | **Operator**               | はい           | はい                     | はい                | はい                | はい                       | はい                       | はい                       | はい        | はい        |
 
@@ -522,7 +526,7 @@ Switchboard のフィーチャーフラグは、新機能の安全で段階的�
 
 | User role | Visible | Notes |
 |-----------|---------|-------|
-| [Internal - Operator / Migration Operator](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/#roles) |  |  |
+| [Internal - Operator / Tenant operator](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/#roles) |  |  |
 | [Internal - Hosted Runner Operator](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/#roles) |  |  |
 | [Internal - Provisioner](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/#roles) |  |  |
 | [Internal - Support](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/#roles) |  |  |
