@@ -12490,11 +12490,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard.md",
-      "upstream_sha": "cc6de46eb0003927fce00d6bb2ac38cf31e1cffd",
-      "translated_at": "2026-11-19T06:12:11+09:00",
-      "model": "gpt-6.2-sol",
-      "input_hash": "e59e262b8e5fd29266d649a95f067aa8da4b0b2060729c6f9ed0fd3176132064",
-      "upstream_committed_at": "2026-11-17T16:04:48-07:00"
+      "upstream_sha": "0eaa099425ab844e331fd93ea6729b3c367711db",
+      "translated_at": "2026-11-26T20:23:38+09:00",
+      "model": "gpt-6.2-astra",
+      "input_hash": "fc925717339ed0f00dbec222761a4893403a10d1db660be6928a2d75a8bde238",
+      "upstream_committed_at": "2026-11-26T08:50:53Z"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/us-public-sector-services.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/us-public-sector-services.md",
@@ -13482,19 +13482,19 @@
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md",
-      "upstream_sha": "d717b9da633f2989a0b1854384a69a0c31bae680",
-      "translated_at": "2026-11-07T10:45:49.721973Z",
-      "model": "codex",
-      "input_hash": "5a4ff4a1ed119054d85c80e930642ecc7bd18a5c8575d08757e2b947236f9ecf",
-      "upstream_committed_at": "2026-11-06T16:03:29-05:00"
+      "upstream_sha": "0eaa099425ab844e331fd93ea6729b3c367711db",
+      "translated_at": "2026-11-26T20:23:38+09:00",
+      "model": "gpt-6.2-astra",
+      "input_hash": "b540a23b91abe284db07866d12354d3514adcfde700d72dd914ce76c6a7dede8",
+      "upstream_committed_at": "2026-11-26T05:59:26+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/request-for-help.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/request-for-help.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T04:54:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "bf478a2be1295301e572d085e5f84bf1d67fce3641951fc7da332156d91dc3cf",
-      "upstream_committed_at": "2026-03-10T11:40:11+13:00"
+      "upstream_sha": "0eaa099425ab844e331fd93ea6729b3c367711db",
+      "translated_at": "2026-11-26T20:23:38+09:00",
+      "model": "gpt-6.2-astra",
+      "input_hash": "1244bc270b4a89aa97c80a8f445f2142d385fef149a89042e9b91441a5182a0c",
+      "upstream_committed_at": "2026-11-26T05:59:26+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/tenant-services/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/tenant-services/_index.md",
@@ -14978,11 +14978,11 @@
     },
     "content/handbook/enterprise-data/platform/sql-style-guide.md": {
       "path": "content/handbook/enterprise-data/platform/sql-style-guide.md",
-      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
-      "translated_at": "2026-04-29T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "95bb50899f97e7ebc681425701377061ddf795cf0ac3226609d084722a44456f",
-      "upstream_committed_at": "2025-09-03T10:40:33+02:00"
+      "upstream_sha": "0eaa099425ab844e331fd93ea6729b3c367711db",
+      "translated_at": "2026-11-26T20:23:38+09:00",
+      "model": "gpt-6.2-astra",
+      "input_hash": "159ff7f70dd5748b824b40cf0f8a0aa647daba2961ab7449113f3d47d56dcc48",
+      "upstream_committed_at": "2026-11-26T04:46:26-06:00"
     },
     "content/handbook/enterprise-data/platform/tableau/_index.md": {
       "path": "content/handbook/enterprise-data/platform/tableau/_index.md",

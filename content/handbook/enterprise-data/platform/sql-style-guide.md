@@ -2,11 +2,11 @@
 title: "SQL スタイルガイド"
 description: "GitLab における SQL 記述の規約とガイドライン"
 upstream_path: "/handbook/enterprise-data/platform/sql-style-guide/"
-upstream_sha: "b751749fb746d2e0131db68b13218fc2e08cf6b2"
-translated_at: "2026-04-29T10:00:00Z"
+upstream_sha: "0eaa099425ab844e331fd93ea6729b3c367711db"
+translated_at: "2026-11-26T20:23:38+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-03T10:40:33+02:00"
+lastmod: "2026-11-26T04:46:26-06:00"
 ---
 
 ## SQL スタイルガイド
@@ -61,7 +61,7 @@ SQLFluff には、可能な場合にルール違反に修正を適用する `fix
   - L016 行の長さ
   - L031 FROM または JOIN 句のテーブルエイリアスなし
   - L034 SELECT 文での単純ターゲットと計算の順序
-- SELECT 文内でのカラムエイリアスの整列
+- 各 SELECT 文内でカラムエイリアスの位置を揃える（CTE やサブクエリごとに個別に揃える）
 - ハンギングインデントの使用を除外
 - タブサイズを 2 スペースに設定
 - キーワード、データ型、関数を常に大文字にする
@@ -419,7 +419,7 @@ Data Team が使用する設定ファイルは [GitLab Data Team リポジトリ
 
 ### 関数
 
-- `NVL` より `IFNULL` を優先してください。
+- `IFNULL` や `NVL` よりも `COALESCE` を優先してください。
 - 単一行の `CASE` 文より `IFF` を優先してください：
 
     ```sql

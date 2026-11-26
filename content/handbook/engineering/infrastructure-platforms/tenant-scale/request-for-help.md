@@ -2,11 +2,11 @@
 title: Tenant Scale グループ
 description: Tenant Scale グループへのサポート依頼
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/request-for-help/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T04:54:37Z"
+upstream_sha: "0eaa099425ab844e331fd93ea6729b3c367711db"
+translated_at: "2026-11-26T20:23:38+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-10T11:40:11+13:00"
+lastmod: "2026-11-26T05:59:26+01:00"
 ---
 
 ## Group Tenant Scale（GTS）チームからのサポートの受け方
@@ -81,7 +81,7 @@ GTS には以下のチームが含まれており、それぞれ独自の専門�
 
 - **Geo チーム**: Geo 固有の詳細なガイダンスについては [Geo サポートプロセス](geo/#how-to-ask-for-support-from-geo)を参照
 - **Cells と Organizations**: Cells 固有の情報については [Cells 設計ドキュメント](/handbook/engineering/architecture/design-documents/cells/)と [Organizations 設計ドキュメント](/handbook/engineering/architecture/design-documents/organization/)を確認
-- **Organizations チーム**: Organization 固有のガイダンスについては [Organizations プロセスページ](organizations/process/#engineering-customersupport-rotation-process)を参照
+- **Organizations チーム**: Organization 固有のガイダンスについては [Organizations プロセスページ](organizations/process/#engineering-customer-support-rotation-process)を参照
 
 ### ベストプラクティス
 
