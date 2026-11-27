@@ -1,11 +1,11 @@
 ---
 title: "GitLab Dedicated グループ"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/
-upstream_sha: cc6de46eb0003927fce00d6bb2ac38cf31e1cffd
-translated_at: "2026-11-19T06:12:11+09:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+translated_at: "2026-11-28T06:14:44+09:00"
 translator: codex
 stale: false
-lastmod: "2026-11-17T16:36:32-07:00"
+lastmod: "2026-11-27T11:51:55-05:00"
 ---
 
 ![GitLab Dedicated グループロゴ](/images/engineering/infrastructure-platforms/gitlab-dedicated/dedicated_team_logo.png)
@@ -232,6 +232,25 @@ GitLab Dedicated の作業に関する個人間の即興 Zoom ミーティング
 通話の結果は永続的な場所で共有されます（Slack は永続的ではありません）。これは、早期段階で行われた決定が後でチームが大きくなった際に疑問視されるため、特にチームの成長とともに重要です。
 
 `1*` 録画ルールの例外は：1-1 通話、プロジェクト以外の作業に関する議論、当事者が録画に不快感を感じる場合。ただし、例外があっても、プロジェクト関連の議論の結果は、メインの Issue トラッカーなどの永続的な場所に記録する必要があります。
+
+### 休暇とチームカレンダー {#time-off-and-the-team-calendar}
+
+[GitLab の有給休暇ポリシー](/handbook/people-group/time-off-and-absence/)に従って、Workday で休暇を申請してください。チームでは [Dedicated Group Team Calendar](https://calendar.google.com/calendar/embed?src=c_s4lmot0m9eecjbu3f1uvq884ag%40group.calendar.google.com) を共有して、誰が休暇中か分かるようにしています。
+
+Time Off by Deel からチームカレンダーに休暇を同期するには、次の手順に従ってください。
+
+1. Slack で **Time Off by Deel** を開き、**Home** に移動します。
+1. `Create OOO` と `Chat with Support` のボタンの下にあるドロップダウンをクリックします。
+1. **Settings** の見出しの下で、`Calendar Sync` を選択します。
+1. `Add Calendar` をクリックし、Dedicated Group Team Calendar の ID `c_s4lmot0m9eecjbu3f1uvq884ag@group.calendar.google.com` を入力します。
+
+カレンダーを追加すると、登録済みの休暇もコピーされます。この手順がオンボーディングに追加される前にチームに参加した場合も、1 回設定すれば同期できます。
+
+休暇を計画するときは、以下の点に留意してください。
+
+- 申請前にチームカレンダーを見て、不在時の担当を確保できるか確認してください。
+- できるだけ早く休暇を申請してください。
+- 5 日以上休む場合は、[チームプロジェクトの `pto_coverage` テンプレート](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/new?issuable_template=pto_coverage)から、休暇中の担当を調整する Issue を作成してください。
 
 ### 顧客情報の保護
 

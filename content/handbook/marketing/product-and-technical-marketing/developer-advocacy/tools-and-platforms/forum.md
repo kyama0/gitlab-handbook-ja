@@ -3,9 +3,9 @@ linkTitle: "Forum"
 description: "GitLab コミュニティフォーラムのアカウントアクセス、モデレーション、管理のワークフロー。"
 title: "フォーラムのワークフロー"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/forum/"
-upstream_sha: "d717b9da633f2989a0b1854384a69a0c31bae680"
-lastmod: "2026-11-05T20:46:20+01:00"
-translated_at: "2026-11-07T01:05:46+00:00"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+lastmod: "2026-11-27T10:42:08+01:00"
+translated_at: "2026-11-28T06:05:49+09:00"
 translator: codex
 stale: false
 ---
@@ -550,7 +550,7 @@ Discourse は GDPR リクエストを処理するためのさまざまなパス�
 
 ### Discourse でのスパム対策 {#fighting-spam-on-discourse}
 
-分析、戦略、アクションについては、[社内ハンドブック](https://internal.gitlab.com/handbook/marketing/developer-relations/workflow-tools/forum/#fighting-spam-on-discourse)を参照してください。
+分析、戦略、アクションについては、[社内ハンドブック](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/tools-and-platforms/forum/#fighting-spam-on-discourse)を参照してください。
 
 ## Slack で私たちとつながる {#connect-with-us-in-slack}
 

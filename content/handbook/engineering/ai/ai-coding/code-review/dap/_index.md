@@ -2,9 +2,9 @@
 title: "AI Coding：DAP Code Review"
 description: "AI Coding 内の DAP Code Review ファンクショナルチーム。マージリクエスト向けの AI を活用したコードレビュー機能に注力しています。"
 upstream_path: /handbook/engineering/ai/ai-coding/code-review/dap/
-upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
-lastmod: "2026-06-22T12:16:47-05:00"
-translated_at: "2026-06-23T07:32:46+09:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+lastmod: "2026-11-27T18:04:05Z"
+translated_at: "2026-11-28T06:21:47+09:00"
 translator: codex
 stale: false
 ---
@@ -27,7 +27,7 @@ DAP Code Review チームは、[Duo Code Review](https://docs.gitlab.com/user/pr
 | **Slack チャンネル** | `#g_code-review` |
 | **Stage ラベル** | `devops::ai coding` |
 | **Group ラベル** | `group::code review` |
-| **Category ラベル** | `Category:DAP Code Review` |
+| **Category ラベル** | `category:dap code review` |
 
 ## ダッシュボードと監視
 

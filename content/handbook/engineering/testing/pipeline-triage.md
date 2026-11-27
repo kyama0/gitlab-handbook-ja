@@ -2,14 +2,14 @@
 title: パイプライントリアージ
 description: GitLab の E2E パイプライントリアージプロセスの概要
 upstream_path: /handbook/engineering/testing/pipeline-triage/
-upstream_sha: "83366dfb077be6f6e05ce2b9af0b0e40f01b3458"
-translated_at: "2026-10-19T22:30:34+00:00"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+translated_at: "2026-11-28T06:14:44+09:00"
 translator: codex
 stale: false
-lastmod: "2026-10-15T14:01:05Z"
+lastmod: "2026-11-26T18:50:49Z"
 ---
 
-> ⚠️ 注： DevOps の変革の一環として、**Developer Experience はパイプライントリアージを行わなくなり**、中央集約型の Pipeline DRI プロセスは廃止されつつあります。テストパイプライン障害のトリアージとデバッグは、`feature_category`/`product_group` ごとの**所有機能チーム**の責任です。Developer Experience（DevEx）は、トリアージの所有者ではなく、**重大なエスカレーション先に限られます**。以下の手順ガイダンスは、トリアージを行う人にとって引き続き役立ちます。Software Engineer in Test（SET）のロールも Backend Engineer に移行しました。以下の「SET」は、所有チーム内の該当するエンジニアを意味します。
+> ⚠️ 注： DevOps の変革の一環として、**Developer Experience はパイプライントリアージを行わなくなり**、中央集約型の Pipeline DRI プロセスは廃止されつつあります。テストパイプライン障害のトリアージとデバッグは、`feature_category`/`product_group` ごとの**所有機能チーム**の責任です。Developer Experience（DevEx）は、トリアージの所有者ではなく、**重大なエスカレーション先に限られます**。以下の手順ガイダンスは、トリアージを行う人にとって引き続き役立ちます。Software Engineer in Test（SET）のロールも Backend Engineer に移行しました。
 
 ## 概要
 
@@ -77,7 +77,7 @@ flowchart TB
         monitor_incident(participate in incident process)
             tag_issue_for_report(add your emoji to issue for the DRI gem)
             publish_results(publish your results to the triage issue with the DRI gem)
-            dri_handoff(handoff to next DRI anything that is still in flight)
+            dri_handoff(hand off anything still in flight to a teammate)
 
         %% external links
         click failed_pipeline "#review-the-failure-logs"
@@ -210,7 +210,7 @@ flowchart TB
 
 ### 根本原因を調査する {#investigate-the-root-cause}
 
-テストとその関連セットアップに対する自分のコンテキストのレベルに応じて、自分で根本原因を調査することに自信があるかもしれませんし、すぐに他の SET から助けを得るかもしれません。
+テストや関連する環境設定への理解度に応じて、自分で根本原因を調査するか、担当チームのほかのエンジニアにすぐに協力を求めるかを判断してください。エージェントを使うと調査を早められます。[Duo を使ったテスト失敗とライブ環境の問題のデバッグ](using-duo-to-debug-test-failures.md)に、失敗の原因を診断し、修正を提案するためのプロンプトを掲載しています。
 
 自分で調査する場合、根本原因を能動的に見つけようとするのに最大 20〜30 分を費やすことをお勧めします（これには障害のレポート、障害ログのレビュー、テストのセットアップやパイプライン実行にかかる時間は含まれません）。その時点を過ぎたとき、またはアイデアが尽きたと感じたときは、ブロックを解消するために助けを求めることをお勧めします。
 
@@ -389,13 +389,13 @@ cc する適切なチームメンバーを見つけるには、[組織図](https
 
 #### すべての場合でグループに通知する {#notify-group-in-all-cases}
 
-SET や EM など、プロダクトグループの適切なチームメンバーを巻き込んで認識を高めてください。SET/EM は、その [ステージ/グループ](/handbook/product/categories/#devops-stages)に誰がアサインされているかを見ることで特定できます。多くのテストには `product_group` がタグ付けされており、特定に役立ちます。障害の影響に応じて、Quality の Slack チャンネル `#quality` に投稿することもおすすめします。
+担当するプロダクトグループのエンジニアや EM など、適切なチームメンバーにも知らせてください。該当する[ステージまたはグループ](/handbook/product/categories/#devops-stages)の担当者を確認すると、連絡先を特定できます。多くのテストに付いている `product_group` タグも、担当者の特定に役立ちます。担当グループの Slack チャンネルに投稿し、高度な専門知識が必要な重大な障害は、[`#s_developer_experience`](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H)で Developer Experience にエスカレーションしてください。
 
 ## テスト障害のフォローアップ
 
 ### テストの修正 {#fixing-the-test}
 
-テストが障害の原因である（アプリケーションコードが変更されたか、テスト自体にバグがあるかのいずれか）ことがわかった場合は、修正が必要です。これは他の SET か自分自身によって行われるかもしれません。いずれにせよ、できるだけ早く修正すべきです。いずれの場合も、従う手順は次のとおりです：
+テストが障害の原因だと分かった場合（アプリケーションコードが変更されたか、テスト自体にバグがある場合）は、修正が必要です。自分や担当チームのほかのエンジニアが修正でき、エージェントに修正コードを作成させることもできます。いずれの場合も、以下の手順に従って、できるだけ早く修正してください。
 
 - テスト障害の修正を含むマージリクエスト (MR) を作成します。
 - 修正が緊急でデプロイのブロック解除に必要な場合は、~"Pick into auto-deploy"、~"priority::1"、~"severity::1" ラベルを適用します。

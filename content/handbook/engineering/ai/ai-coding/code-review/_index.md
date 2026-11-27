@@ -2,9 +2,9 @@
 title: "AI Coding：Code Review"
 description: "AI Coding 内の Code Review 組織。AI を活用したコードレビュー機能と、開発者のコードレビュー体験に注力しています。"
 upstream_path: /handbook/engineering/ai/ai-coding/code-review/
-upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
-lastmod: "2026-06-22T12:16:47-05:00"
-translated_at: "2026-06-23T07:32:46+09:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+lastmod: "2026-11-27T17:30:34Z"
+translated_at: "2026-11-28T06:21:47+09:00"
 translator: codex
 stale: false
 ---
@@ -25,3 +25,15 @@ AI Coding 内の Code Review 組織は、AI を通じてコードレビューを
 | **Slack チャンネル** | `#g_code-review` |
 | **Stage ラベル** | `devops::ai coding` |
 | **Group ラベル** | `group::code review` |
+
+## グループメンバー
+
+以下のメンバーは、Code Review グループの常設メンバーです。
+
+{{< team-by-manager-role role="Engineering Manager, Create:Code Review" team="Code Review" >}}
+
+## ステーブルカウンターパート
+
+以下は、他の機能チームに所属する私たちのステーブルカウンターパートです。
+
+{{< engineering/stable-counterparts role="Code Review" manager-role="Engineering Manager, Create:Code Review" >}}

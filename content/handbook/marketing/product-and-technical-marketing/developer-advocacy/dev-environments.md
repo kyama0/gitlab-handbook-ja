@@ -3,9 +3,9 @@ description: "Developer Advocacy のデモや技術作業のための開発環�
 linkTitle: "Development environments"
 title: "Developer Advocates の開発環境"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/"
-upstream_sha: "2c77a1f5b8c8a80cb7b5151ff11cfad84f98bfbb"
-lastmod: "2026-09-29T20:25:23+02:00"
-translated_at: "2026-10-10T21:10:21.636842+00:00"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+lastmod: "2026-11-27T10:42:08+01:00"
+translated_at: "2026-11-28T06:05:49+09:00"
 translator: codex
 stale: false
 ---
@@ -36,7 +36,7 @@ GitLab Duo は、[VS Code マーケットプレイスの GitLab Workflow 拡張�
 
 > **注**
 >
-> 初期セットアップ完了後、[開発環境の内部向けガイド](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments/)を確認してください。
+> 初期セットアップ完了後、[開発環境の内部向けガイド](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/)を確認してください。
 
 ![VS Code、ライトテーマ、右パネルに Duo Agentic Chat。エディタはエージェント編集後の差分ビューを表示。](/images/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/vscode_light_theme_dap_agentic_chat_right_pane_diff_view.png)
 
@@ -139,7 +139,7 @@ GitLab Duo は、[JetBrains マーケットプレイスの GitLab Duo プラグ�
 
 > **注**
 >
-> 初期セットアップ完了後、[開発環境の内部向けガイド](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments/)を確認してください。
+> 初期セットアップ完了後、[開発環境の内部向けガイド](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/)を確認してください。
 
 ![JetBrains IntelliJ IDEA、Duo Agentic Chat で Java 8 を 21 にモダナイズ、エディタはエージェント編集の差分ビューを表示。](/images/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/jetbrains_intellij_idea_light_theme_dap_java_modernize_agentic_edits.png)
 
@@ -168,7 +168,7 @@ GitLab Duo は、[Visual Studio マーケットプレイスの GitLab 拡張機�
 
 > **注**
 >
-> 初期セットアップ完了後、[開発環境の内部向けガイド](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments/)を確認してください。
+> 初期セットアップ完了後、[開発環境の内部向けガイド](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/)を確認してください。
 
 ### Eclipse {#eclipse}
 

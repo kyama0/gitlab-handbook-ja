@@ -2,35 +2,12 @@
 title: "Create:Code Review BE チーム"
 description: Create:Code Review BE チームは、Create ステージの Code Review グループに含まれるプロダクトカテゴリーのバックエンド側面のすべてを担当しています。
 upstream_path: /handbook/engineering/devops/create/code-review/backend/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-translated_at: "2026-11-01T07:24:53.853824+00:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+translated_at: "2026-11-28T06:21:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-27T18:04:05Z"
 ---
-
-## チームのビジョンとミッション {#team-vision--mission}
-
-これらのプロダクトの現在の戦略と 1 年計画については、[Code Review Workflow](https://about.gitlab.com/direction/create/code_review_workflow/)と [GitLab CLI](https://about.gitlab.com/direction/create/gitlab_cli/)のカテゴリー方針を参照してください。
-
-## 主要な責務 {#core-responsibilities}
-
-Create:Code Review BE チームは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [Create ステージ](/handbook/product/categories/#create-stage)に属する [Code Review グループ](/handbook/product/categories/#code-review-group)のプロダクトカテゴリーのバックエンドに関するすべての側面を担当します。
-
-- [Code Review Workflow](https://about.gitlab.com/stages-devops-lifecycle/create/)、主に[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)機能
-- [GitLab CLI](https://gitlab.com/gitlab-org/cli)
-
-## グループメンバー {#group-members}
-
-以下のメンバーが Create:Code Review グループの恒久的なメンバーです。
-
-{{< team-by-manager-role role="Engineering Manager, Create:Code Review" team="Code Review" >}}
-
-## ステーブルカウンターパート {#stable-counterparts}
-
-他の機能チームから、以下のメンバーが私たちのステーブルカウンターパートとなっています。
-
-{{< engineering/stable-counterparts role="Code Review" manager-role="Engineering Manager, Create:Code Review" >}}
 
 ## 共通リンク {#common-links}
 
@@ -202,4 +179,3 @@ AI 機能の監視に特化したダッシュボードもあります: [Create: 
 
 - [Create:Code Review BE エンジニア向けリソース](/handbook/engineering/devops/create/code-review/backend/engineers)。チームビルディングやキャリア開発などの内容です。
 - [Create:Code Review BE Engineering Manager の責務](/handbook/engineering/devops/create/code-review/backend/manager)。マイルストーンプランニング、人材アセスメント、プロジェクトマネジメントなどの内容です。
-- [Create:Code Review AI prompts](/handbook/engineering/devops/create/code-review/ai-prompts/)。私たちが効率を高めるためによく使うプロンプト集です。

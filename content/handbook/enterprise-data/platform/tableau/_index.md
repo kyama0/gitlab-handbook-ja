@@ -2,11 +2,11 @@
 title: "Tableau"
 description: "GitLab における Tableau"
 upstream_path: "/handbook/enterprise-data/platform/tableau/"
-upstream_sha: "b751749fb746d2e0131db68b13218fc2e08cf6b2"
-translated_at: "2026-04-29T10:00:00Z"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+translated_at: "2026-11-28T06:11:48+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-11-27T15:31:09Z"
 ---
 
 | クイックリンク | 開発者リソース | コミュニケーション |
@@ -386,7 +386,7 @@ Tableau ライセンスを維持するには、ユーザーは 90 日以内に�
 
 **権限の保持:** ユーザーがデプロビジョニングされると、ライセンスのみを失い、グループメンバーシップや権限設定は失いません。これにより、アクセスが復元されたときに、追加の設定なしに以前のすべてのプロジェクト、ダッシュボード、コンテンツへのアクセスが自動的に再取得されます。
 
-このアプローチにより、アクティブユーザーにライセンスが利用可能になり、必要な場合に簡単にアクセスが復元され、[データヘルスとセキュリティの実践](/handbook/enterprise-data/data-governance/data-management/#tableau)に従います。
+このアプローチにより、アクティブユーザーにライセンスが利用可能になり、必要な場合に簡単にアクセスが復元され、[データヘルスとセキュリティの実践](/handbook/enterprise-data/data-governance/data-management/#quarterly-data-health-and-security-audit)に従います。
 
 上記のガイドラインに加えて、通常は主にアナリティクスベースの役割を持つチームメンバー（機能チーム内のアナリスト、チームのレポート開発が主要な責任のチームメンバーなど）に Creator ライセンスを予約します。
 

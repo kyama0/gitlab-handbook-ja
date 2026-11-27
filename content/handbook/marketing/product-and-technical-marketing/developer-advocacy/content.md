@@ -3,9 +3,9 @@ linkTitle: "Content"
 title: "Developer Advocates のコンテンツライブラリとワークフロー"
 description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/developer-advocacy/content/"
-upstream_sha: 819fcd03ca3ddcde75fbd60bf7799c95d23d49f9
-lastmod: "2026-10-26T14:38:59-04:00"
-translated_at: "2026-10-26T21:06:13.194319+00:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+lastmod: "2026-11-27T10:42:08+01:00"
+translated_at: "2026-11-28T06:05:49+09:00"
 translator: codex
 stale: false
 ---
@@ -368,10 +368,10 @@ Developer Advocates は、導入と効率化のユースケースを支援する
 - VS Code： 必要だと思う回数より 1 〜 2 回多くズーム（`cmd` + `+`）します
 - JetBrains： `Settings > Appearance & Behavior > Appearance > Accessibility > Zoom` - テストでは `125%` が最適でした
 - 不要なタブやツールバー項目を閉じて IDE をシンプルにします
-- [IDE ベンダーのすべての AI 統合を無効化](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)します
+- [IDE ベンダーのすべての AI 統合を無効化](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/)します
 - 不要なアイコンを非表示にするか、Zen モード（`cmd`+`k`+`z`）を使って表示をシンプルにします
 
-追加のガイダンス： [開発環境（内部ハンドブック）](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)
+追加のガイダンス： [開発環境（内部ハンドブック）](https://internal.gitlab.com/handbook/marketing/product-and-technical-marketing/developer-advocacy/dev-environments/)
 
 #### 外部コンテンツリクエストのチェックリスト {#checklist-for-external-content-requests}
 

@@ -4,9 +4,9 @@ description: >-
   Security Platform ステージは、GitLab プラットフォームの認証、認可、不正利用防止、
   シークレット管理、ソフトウェアサプライチェーンの基盤を構築します。
 upstream_path: /handbook/engineering/development/sec/security-platform/
-upstream_sha: "52419353ea755a1ac823553385f8636ff2fcde17"
-lastmod: "2026-10-29T12:50:31+11:00"
-translated_at: "2026-11-01T05:03:57+00:00"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+lastmod: "2026-11-26T18:24:14Z"
+translated_at: "2026-11-28T06:18:54+09:00"
 translator: codex
 stale: false
 ---
@@ -32,7 +32,7 @@ Security Platform エンジニアリングステージは、GitLab の他のす�
 | [Authorization](authorization/) | Jordon Proctor（`@jpr0c`） | Ian Anderson（`@imand3r`） | `group::authorization` |
 | [Abuse Engineering](abuse-engineering/) | Jordon Proctor（`@jpr0c`） | Jay Swain（`@jayswain`） | `group::abuse engineering` |
 | [Build Security](build-security/) | Mark Mishaev（`@mmishaev`、暫定） | 採用予定 | `group::build security` |
-| [Dependency Firewall](dependency-firewall/) | Mike Eddington（`@mikeeddington`） | Mike Eddington（`@mikeeddington`） | `group::dependency firewall` |
+| [Dependency Firewall](dependency-firewall/) | Ryan Wells（`@ryaanwells`） | Rane Hebden（`@ranehebden`） | `group::dependency firewall` |
 | [Secrets Manager (Application)](secrets-manager/application/) | Connor Fleming（`@cfleming3`） | Erick Bajao（`@iamricecake`） | `group::secrets manager application` |
 | [Secrets Manager (OpenBAO)](secrets-manager/openbao/) | Connor Fleming（`@cfleming3`） | Fabien Catteau（`@fcatteau`） | `group::secrets manager openbao` |
 

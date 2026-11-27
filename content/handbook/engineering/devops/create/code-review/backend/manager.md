@@ -2,11 +2,11 @@
 title: "Create:Code Review BE エンジニアリングマネージャーの責務"
 description: Create:Code Review BE エンジニアリングマネージャーの責務とリソース一覧
 upstream_path: /handbook/engineering/devops/create/code-review/backend/manager/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T10:21:26Z"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+translated_at: "2026-11-28T06:21:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-11-27T18:04:05Z"
 ---
 
 [GitLab のバックエンドエンジニアリングマネージャー職](/job-description-library/engineering/development/management/engineering-manager/)は、幅広い責務を包括する刺激的でダイナミックなポジションです。優秀なエンジニアチームのリードと管理に加え、プロジェクトを最初から最後まで監督し、すべてが円滑に進み高い水準を満たすことを確認します。エンジニアリングマネージャーとしては、採用活動に積極的に参加してチームを形成する機会もあります。この役割の重要な側面の一つは、OKR（目標と主要な結果）を通じて野心的な目標を設定し進捗を測定することで、成功への明確なロードマップを提供することです。さらに、異なる部門やチーム間のコラボレーションを促進することは、シームレスで効率的なワークフローを確保するために不可欠です。これはリーダーシップ、プロジェクトマネジメント、チームビルディングの最良の要素を組み合わせた多面的な役割であり、毎日多様で刺激的な課題に満ちています。
@@ -27,7 +27,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 リリースは[毎月第3木曜日](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)に行われます。作業を完了させるためのカットオフ日はその前の金曜日を使用します。[リリースプロセスの詳細はこちら](/handbook/engineering/releases/)をご覧ください。
 
-毎月1日に、次のマイルストーン向けの新しい[計画 Issue](https://gitlab.com/gitlab-org/create-stage/-/issues/?sort=created_date&state=opened&label_name%5B%5D=group%3A%3Acode%20review&label_name%5B%5D=Planning%20Issue)が自動的に作成されます。さまざまなプロジェクト / トピック（例: Rapid Diffs、CLI、バグ）のスレッドを作成し、バックエンドチームにタグ付けして、来るマイルストーン計画に含めるべきアイデアを募ります。
+毎月 1 日に、次のマイルストーン向けの新しい[計画 Issue](https://gitlab.com/gitlab-org/create-stage/-/issues/?sort=created_date&state=opened&label_name%5B%5D=group%3A%3Acode%20review&label_name%5B%5D=Planning%20Issue)が自動的に作成されます。さまざまなプロジェクト / トピック（例: Rapid Diffs、バグ）のスレッドを作成し、バックエンドチームにタグ付けして、来るマイルストーン計画に含めるべきアイデアを募ります。
 
 ### 計画週の活動
 

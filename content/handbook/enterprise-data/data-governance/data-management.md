@@ -2,11 +2,11 @@
 title: "データチームのデータ管理ページ"
 description: "データ管理ページは、エンタープライズデータプラットフォームの管理・保護・ガバナンスおよび関連活動に関するコンテンツをカバーします。"
 upstream_path: /handbook/enterprise-data/data-governance/data-management/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+translated_at: "2026-11-28T06:11:48+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-22T09:32:55+01:00"
+lastmod: "2026-11-27T15:31:09Z"
 ---
 
 ## 目的
@@ -95,46 +95,21 @@ GitLab のデータプラットフォームには複数のカテゴリがあり�
 * **データウェアハウスコントロール**: エンタープライズデータウェアハウスは Tier 1 システムです。
 * **エンドポイントデバイス**: データウェアハウスにアクセスできるすべてのエンドポイントは Tier 1 に分類されます
 
-### 四半期ごとのデータヘルス＆セキュリティ監査
+### 四半期ごとのデータヘルス＆セキュリティ監査 {#quarterly-data-health-and-security-audit}
 
-**四半期ごとの監査**は、適切な人が正しいデータアクセス設定を持ち、データパイプラインが正しく動作していることを確認するなど、システムセキュリティを検証するために実施されます。
+**四半期ごとの監査**では、適切な人に正しいデータアクセス権限が設定され、データパイプラインが正常に動作していることなどを確認し、システムのセキュリティを検証します。監査結果は Security Assurance のユーザーアクセスレビューに活用します。
 
-このプロセスは[四半期ごとのデータヘルス＆セキュリティ Issue テンプレート](https://gitlab.com/gitlab-data/analytics/-/blob/master/.gitlab/issue_templates/Platform%3A%20Quarterly%20Data%20Health%20and%20Security%20Audit.md)によってサポートされています。`~"Quarterly Data Health and Security Audit"` ラベルは、四半期ごとの監査に関連するすべての Issue とマージリクエストに使用されます。
+以前は監査の大部分を手作業で行っていました。現在は公開プロジェクト [gitlab-data/extract](https://gitlab.com/gitlab-data/extract) で自動化しており、このプロジェクトがチェック内容の唯一の情報源です。DAG が四半期ごとに自動で実行されて Issue を作成するため、担当者が監査の開始を覚えておく必要はありません。その後、チームメンバーが作成された Issue に対して quarterly-audit スキルを手動で実行し、各チェックの最終判断は人が行います。チェック内容は随時変わるため、ここには列挙していません。現在の内容は下記のチェックフォルダーで確認してください。
 
-活動のサンプルチェックリスト:
+1. 四半期ごとに、[`quarterly_audit` DAG](https://gitlab.com/gitlab-data/extract/-/blob/main/dags/general/quarterly_audit.py) が[四半期監査スクリプト](https://gitlab.com/gitlab-data/extract/-/blob/main/extract/audit/quarterly/scripts/quarterly_audit.py)を実行します。スクリプトは機密の親 Issue を 1 件と、チェックごとに子 Issue を 1 件作成します。
+1. チームメンバーが、作成された Issue に対して [quarterly-audit スキル](https://gitlab.com/gitlab-data/extract/-/tree/main/agents/skills/quarterly-audit)を手動で起動します。このスキルは担当者とともに子 Issue を順に確認し、最終判断は担当者が行います。自動処理がアクセス権を取り消したり、アカウントを無効化したり、テーブルを削除したりすることはありません。
 
-#### Snowflake
+参照先
 
-* オフボードされた従業員のアカウントを Snowflake から削除します
-  * オフボードされた GitLab チームメンバーのすべての Snowflake アカウントは、オフボード日から削除する必要があります。このアクティビティは `roles.yml` 内のオフボードされた GitLab チームメンバーのアクティブなアカウントを確認します。非アクティブユーザーが `roles.yml` から削除されると、週次 DAG `snowflake_cleanup` がそれらを Snowflake から削除します。削除されたアクティブなアカウントは、以後すべてのデータ・スクリプト・その他の成果物を保持しなくなります。
-* すべてのユーザーアカウントにパスワードが設定されていないことを検証します。
-* 孤立したテーブルを削除します
-  * dbt で管理されているテーブルは、dbt で管理されなくなったり不要になった場合に手動で削除する必要があります。このアクティビティは dbt で管理されているテーブルと比較して、孤立したテーブルを調べます。特定された孤立テーブルは使用されていないことを検証した上で削除されます。
-* 未使用モデルを削除します
-  * 使用されていないモデル（テーブルとビュー）は削除され、それらを生成するコードはアナリティクスリポジトリから削除されます。未使用モデルは以下のように定義できます:
-    * 3か月以上クエリされていない。
-          または
-    * Airflow アカウントが唯一のユーザーであり、下流のモデルがそれに依存していない。
-  * 削除対象としてフラグが立てられたテーブルのレビューは、削除前にアナリティクスコミュニティによって行われます。これにより、誤ってフラグが立てられたテーブルを保持できるようにします。
+* [監査の README](https://gitlab.com/gitlab-data/extract/-/blob/main/extract/audit/quarterly/README.md)には、監査の実行方法が記載されています。
+* [チェックフォルダー](https://gitlab.com/gitlab-data/extract/-/tree/main/extract/audit/quarterly/checks)には、各チェックに使うすべてのクエリと手順があります。
 
-#### Airflow
-
-* 90日より古いログファイルを削除します。
-  * [このランブック](https://gitlab.com/gitlab-data/runbooks/-/blob/main/airflow_infrastructure/archival_pvc_volume/delete_pvc_volume.md)に従って、PVC を削減するために古い Airflow のログファイルを削除してください。ディスクスペースが不足すると Airflow が動作しなくなります。
-
-#### Monte Carlo
-
-* オフボードされた従業員を Monte Carlo から無効化します
-  * オフボードされた GitLab チームメンバーのすべての Monte Carlo アカウントは、オフボード日から無効化する必要があります。このアクティビティはオフボードされた GitLab チームメンバーのアクティブなアカウントを確認します。その後、アクティブなアカウントはすべて無効化されます。
-* 監査実施時点から過去90日以内にログインしていないアカウントを Monte Carlo から無効化します。
-  * 90日以上ログインしていない名前付き Monte Carlo アカウントは無効化されます。GitLab チームメンバーが再度アクセスを希望する場合は、通常の AR を作成する必要があります。マネージャーの承認後、ライセンスが利用可能であればアカウントが有効化されます。
-
-注記: 90日間は変更される可能性があります。現時点では、Monte Carlo の使用頻度が低いチームメンバーもいるため（Snowflake や Tableau ほど頻繁には必要ない）、90日間のしきい値を設定しています。将来的にはこれを変更する可能性があります。
-
-#### Tableau
-
-* オフボードされた従業員のユーザーを Tableau から削除します
-* 90日以上 Tableau アクセスを持っているが、過去90日間ログインしていないユーザーを削除します
+非公開のランブックには、誰をメンションするか、機密性の高いクエリなど、機密情報のみを記載しています。その他の情報はすべて公開の extract プロジェクトにあります。四半期ごとの監査に関連するすべての Issue とマージリクエストには、`~"Quarterly Data Health and Security Audit"` ラベルを使用します。
 
 ## 例外
 

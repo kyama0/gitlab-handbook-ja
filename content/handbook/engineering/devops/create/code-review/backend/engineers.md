@@ -2,24 +2,14 @@
 title: "Create:Code Review バックエンドエンジニアリングリソース"
 description: Create:Code Review グループのバックエンドチームメンバー向けリソース
 upstream_path: /handbook/engineering/devops/create/code-review/backend/engineers/
-upstream_sha: 8e5460327d5f02f1967a05539db73f8e5cfebbb3
-translated_at: "2026-04-28T09:42:29Z"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+translated_at: "2026-11-28T06:21:47+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-11-27T17:30:34Z"
 ---
 
 このページには Create:Code Review バックエンドチームのエンジニアリングリソースが含まれています。チームの日常業務については、[Create:Code Review BE ハンドブックページ](/handbook/engineering/devops/create/code-review/backend/)をご確認ください。
-
-## チームビルディング
-
-2週間ごとに、コードレビューバックエンドの Slack チャンネルで質問/活動が投稿され、チームが互いにより気軽なインタラクションを持てるようにします。現在、チーム内では全員を同期コールに集めることは不可能であり、チームデイはうまく機能していますが Create ステージレベルです。このチームビルディング演習は、[Code Review バックエンドチーム](/handbook/engineering/devops/create/code-review/backend/#group-members)を特に対象としています。
-
-例:
-
-- アイスブレーカースタイルの質問: 「あなたが一番好きな料理は何ですか？（写真も共有してください）」「あなたが一番好きな休暇はどこで、なぜですか？」
-- 「GIF バトル」: トピックを決めて（最もかわいい動物、最もクレイジーなダンスムーブなど）、それぞれがトップ GIF を投稿する
-- 写真を共有: 週中に撮った写真をそれぞれが共有する
 
 ## フィードバック
 
