@@ -1,20 +1,20 @@
 ---
 title: Distributionグループのテストプラットフォーム
 upstream_path: /handbook/engineering/testing/distribution/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-15T21:34:06Z"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+translated_at: "2026-11-28T06:14:44+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T17:51:54+00:00"
+lastmod: "2026-11-26T18:52:25Z"
 ---
 
 ## 概要
 
-このページの目的は、Distributionグループにおける既存の品質エンジニアリング活動を文書化することです。
+このページでは、Distribution グループがリリースする成果物の品質にどう責任を持つかを説明します。Distribution チームは自分たちのテスト、バグの優先順位付け、品質に関する計画を担当します。Developer Experience は、共有テストインフラストラクチャとガイダンスを提供します。
 
 ### ダッシュボード
 
-- [QE Distributionダッシュボード](https://gitlab.com/groups/gitlab-org/-/boards/2187925?label_name%5B%5D=Quality&label_name%5B%5D=devops%3A%3Asystems&label_name%5B%5D=group%3A%3Adistribution) - 品質エンジニアリングの作業項目を追跡するダッシュボード
+- [Distribution の品質ダッシュボード](https://gitlab.com/groups/gitlab-org/-/boards/2187925?label_name%5B%5D=Quality&label_name%5B%5D=devops%3A%3Asystems&label_name%5B%5D=group%3A%3Adistribution) - チームの品質に関する作業項目を追跡するダッシュボード
 - [Distribution Issues](https://10az.online.tableau.com/#/site/gitlab/views/OpenBugAgeOBA/OpenBugAgeOBADashboard) - バグの優先順位付けに重要なメトリクスを視覚化するダッシュボード
 - [バグ優先順位付けメトリクス](https://10az.online.tableau.com/#/site/gitlab/views/OpenBugAgeOBA/BugPrioritizationDashboard?:iid=2) - [バグ優先順位付け](#bug-prioritization)に必要なバグメトリクス（Distributionグループでフィルタリングすることを確認してください）
 
@@ -65,4 +65,4 @@ Distributionチームは[バグ優先順位付け](/handbook/engineering/infrast
 
 ### クアッドプランニング
 
-品質チームは[クアッドプランニングプロセス](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/?sort=created_date&state=opened&label_name%5B%5D=section%3A%3Aenablement&label_name%5B%5D=Quality&first_page_size=20)に従って、クアッドプランニング用のオープンなIssueを確認します。
+Distribution チームは、クアッドプランニングのプロセスに従い、[クアッドプランニング用のオープンな Issue](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/?sort=created_date&state=opened&label_name%5B%5D=section%3A%3Aenablement&label_name%5B%5D=Quality&first_page_size=20)を確認します。

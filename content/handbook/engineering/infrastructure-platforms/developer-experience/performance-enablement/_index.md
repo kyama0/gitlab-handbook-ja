@@ -2,11 +2,11 @@
 title: "Performance Enablement"
 description: "Developer Experience セクション内の Performance Enablement グループ"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T21:28:32Z"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+translated_at: "2026-11-28T06:14:44+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-25T17:35:05+01:00"
+lastmod: "2026-11-26T18:46:52Z"
 ---
 
 ![DevPerfOps Logo](/images/engineering/infrastructure-platforms/developer-experience/performance-enablement/devperfops-diagram.svg)
@@ -118,7 +118,7 @@ lastmod: "2026-02-25T17:35:05+01:00"
 
 ### ミーティングと定期的な通話
 
-私たちはプロジェクトの Issue トラッカー内で非同期的に作業することを好みます。
+私たちは、チーム内では同期的に連携し、他チームとはプロジェクトの Issue トラッカーを使って非同期で作業します。
 
 チームには定期的な同期通話があります:
 
@@ -163,6 +163,8 @@ lastmod: "2026-02-25T17:35:05+01:00"
 パフォーマンスは、ローカル開発から MR・CI/CD パイプライン・本番監視まで SDLC 全体を通じて、各チームの責任の基本的な部分となります。開発チームは私たちのツール・プラットフォーム・一般的なガイダンスを活用して、問題をテスト・解釈・修正します。
 
 トレードオフ: 開発チームはパフォーマンステストと監視の追加責任を負いますが、より速いフィードバックループを得て、早期に問題を発見し、顧客へのパフォーマンス問題の漏洩を防げます。自律性を得る代わりに、パフォーマンス成果に対する説明責任を受け入れます。
+
+パフォーマンスは、各チームがリリースする成果物の品質と信頼性に対して負う責任の一部です。チームはパフォーマンス基準を守り、リグレッションが判明した場合はそのままリリースせず、対象範囲を縮小します。エラーバジェットを導入したチームでは、バジェットを使い切った時点で機能開発を中断し、信頼性が回復するまで再開しません。
 
 パフォーマンス上の意思決定の方法: チームが自分たちのパフォーマンス閾値を選択します。これには、顧客に近い PM やその他の担当者からの意見が含まれます。チームは Performance Enablement プラットフォームとツールの Issue をエスカレーションしたり、Performance Enablement チームに追加機能を要求したりすることができます。Performance Enablement チームは、最大の潜在的な顧客インパクトを持つ作業を優先します。
 

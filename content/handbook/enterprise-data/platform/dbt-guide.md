@@ -3,9 +3,9 @@ title: "dbt ガイド"
 description: "data build tool (dbt) ガイド"
 math: true
 upstream_path: /handbook/enterprise-data/platform/dbt-guide/
-upstream_sha: ae7cb222d67ee0dd31f3319c8c70f0fabda2633b
-lastmod: "2026-11-17T09:22:54Z"
-translated_at: "2026-11-17T21:10:23.948269+00:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+lastmod: "2026-11-27T15:31:09Z"
+translated_at: "2026-11-28T06:11:48+09:00"
 translator: codex
 stale: false
 ---
@@ -59,7 +59,7 @@ dbt を使って Data Team のプロジェクトに貢献したい場合は、�
 
 これらの開発データベース内に構築されたデータは、ローカル開発でのみ使用されるものであるため、一時的なものと見なすべきです。dbt を最適に使用し、適切なセキュリティとコンプライアンスを確保するために、これらのデータベースは所有ユーザーによって定期的にクリーンアップされるべきです。[開発用データベースのクリーンアップクエリ](/handbook/enterprise-data/how-we-work/triage/analytics-engineering-triage/#clean-up-your-dev-databases)を使うとそのプロセスを素早く簡単に行うことができ、各開発サイクルの終わりまたは始まりに実行することが推奨されます。さらに、私たちのデータ保持ポリシーおよび手順へのコンプライアンスを確保するため、変更されないまま **80 日** が経過した開発環境のすべてのテーブルを自動的に削除します。この保持期間は dbt プロジェクト内で `dev_db_object_expiration` 変数によって設定されており、テーブルは毎週末に削除されます。
 
-注: 開発データベースは、対応するチームメンバーが Snowflake へのアクセスをデプロビジョニングされ次第（つまりオフボーディングや[非アクティブな利用](/handbook/enterprise-data/data-governance/data-management/#snowflake-1)の場合削除されます。開発データベースには[バックアップ](/handbook/enterprise-data/platform/#backups)プロセスはありません。
+該当するチームメンバーの Snowflake へのアクセス権が取り消されると（たとえば、[四半期ごとのデータヘルス＆セキュリティ監査](/handbook/enterprise-data/data-governance/data-management/#quarterly-data-health-and-security-audit)で確認するオフボーディングの場合）、開発データベースはすぐに削除される点に注意してください。開発データベースには[バックアップ](/handbook/enterprise-data/platform/#backups)プロセスはありません。
 
 #### 設定 {#configuration}
 

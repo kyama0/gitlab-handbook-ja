@@ -9,9 +9,9 @@ owning-stage: "Plan"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/mfe_platform/
-upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
-lastmod: "2026-11-24T13:11:00-05:00"
-translated_at: "2026-11-24T21:13:59+00:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+lastmod: "2026-11-26T11:01:10-05:00"
+translated_at: "2026-11-28T06:25:43+09:00"
 translator: codex
 stale: false
 ---
@@ -130,6 +130,9 @@ Duo Chat や Work Items などの製品領域は、
   各 MFE は英語の原文をキーとする vue-i18n カタログを所有し、CI を通じて `gitlab-ee` とは別の単一の共有
   Crowdin プロジェクトに文字列を送り、翻訳を取り込みます。移植した文字列にはモノリスの翻訳を引き継ぎ、
   翻訳を変更できる人は段階的に制限します。新しい文字列を誰が翻訳するかは、ローカリゼーションチームと引き続き検討します。
+- [ADR 012: アクセシビリティテスト](decisions/012_accessibility_testing.md) -
+  ドラフト。マイクロフロントエンドでアクセシビリティのチェックに重複や漏れが生じないよう、
+  `@gitlab/frontend-tests` の各テスト層がどのチェックを担当するかを定めます。
 
 ## MFE としての抽出に向けてアプリケーションを準備する {#preparing-your-application-for-mfe-extraction}
 

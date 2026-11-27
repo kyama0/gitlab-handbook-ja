@@ -165,7 +165,7 @@ GitLab チームメンバーが起票したサポートチケットは、Zendesk
 
 一部の顧客には Assigned Support Engineer（ASE）がいて、その顧客のチケットを所有します。これはチケットの組織ノートから明らかとなります。これらの顧客については、[ASE ワークフロー](../enhanced-support-offerings/offering-assigned-support-engineer/working-with-ases/global-support-and-ases.md)を参照してください。
 
-### シフトエンジニアの週末のフォーカス
+### シフトエンジニアの週末のフォーカス {#weekend-focus-for-shift-engineers}
 
 GitLab の [Success Signature](https://gitlab.zendesk.com/agent/search/1?copy&type=organization&q=sub_ss_enterprise%3Atrue) および [Success Advanced](https://gitlab.zendesk.com/agent/search/1?copy&type=organization&q=sub_ss_growth%3Atrue) 顧客の高優先度チケットに対するオンコールの責任を理解しておきましょう。
 

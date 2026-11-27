@@ -3,11 +3,11 @@ title: 顧客緊急対応業務の遂行方法
 category: On-call
 description: "Support Engineering における顧客緊急対応ローテーションの役割と責任の説明"
 upstream_path: /handbook/support/workflows/customer_emergencies_workflows/
-upstream_sha: "be228760349beb5ac063e32579ee6507e09f8b6e"
-translated_at: "2026-11-24T21:06:28+00:00"
+upstream_sha: "3f489816f1fcde506cae1427b280d744ab382621"
+translated_at: "2026-11-28T06:05:49+09:00"
 translator: claude
 stale: false
-lastmod: "2026-11-24T18:21:56+13:00"
+lastmod: "2026-11-27T16:11:37+11:00"
 ---
 
 ## はじめに {#introduction}
@@ -153,8 +153,10 @@ GitLab 顧客が発生させた緊急対応を追跡するために、PagerDuty 
 - [AMER グループ 1 スケジュール](https://gitlab.pagerduty.com/schedules#PBLAHV7)
 - [AMER グループ 2 スケジュール](https://gitlab.pagerduty.com/schedules#P9FKYZC)
 - [AMER グループ 3 スケジュール](https://gitlab.pagerduty.com/schedules#PP28N7L)
-- [APAC グループ 1 スケジュール](https://gitlab.pagerduty.com/schedules#PQB9Q6K)
-- [APAC グループ 2 スケジュール](https://gitlab.pagerduty.com/schedules#PKPXM8K)
+- [APAC グループ 1 Primary（1.1）のスケジュール](https://gitlab.pagerduty.com/schedules/PQB9Q6K)
+- [APAC グループ 1 Secondary（1.2）のスケジュール](https://gitlab.pagerduty.com/schedules/PKAUGWW)
+- [APAC グループ 2 Primary（2.1）のスケジュール](https://gitlab.pagerduty.com/schedules/PKPXM8K)
+- [APAC グループ 2 Secondary（2.2）のスケジュール](https://gitlab.pagerduty.com/schedules/PZ42YQR)
 - [EMEA グループ 1 スケジュール](https://gitlab.pagerduty.com/schedules#P9SV029)
 - [EMEA グループ 2 スケジュール](https://gitlab.pagerduty.com/schedules#P7ML12U)
 
@@ -325,6 +327,8 @@ CEOC として、緊急対応を以下の段階で解決するために、顧客
 
 #### 複数の同時緊急対応の処理 {#handling-multiple-simultaneous-emergencies}
 
+APAC では各シフトに Secondary のエンジニアが割り当てられ、専用のワークフローがあるため、[APAC で緊急対応が重なった場合](#concurrent-emergencies-in-apac)の手順に従ってください。
+
 まれに、オンコールエンジニアは別々の顧客から発生する同時緊急対応を経験することがあります。これがあなたに起こった場合、あなたは一人ではないことを覚えておいてください。各緊急対応の適切な関与と解決を確保するためには、以下のプロセスの最初のステップを取るだけで済みます:
 
 1. **あなた**: 新しい入ってくる緊急対応について知らせるために、[オンコールの Support Manager に連絡](/handbook/support/on-call/#engaging-the-on-call-manager)します。Support Manager は、新しい緊急ページを所有するエンジニアを見つける責任があります。
@@ -335,30 +339,37 @@ CEOC として、緊急対応を以下の段階で解決するために、顧客
 
 GitLab インシデントが顧客緊急対応の原因である場合、CMOC とオンコールの Support Manager に [サポート対応](/handbook/support/workflows/cmoc_workflows.md#about-coordinating-a-support-response)が関連するかをチェックインしてください。インシデントがサポートからの非標準ワークフローまたはコミュニケーションを必要とする場合、[サポート対応 Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/blob/master/.gitlab/issue_templates/Support%20Response.md)が作成されます。緊急対応に取り組む際にこの Issue をガイドとして使用してください。ワークフローで協力したり、関連するチケットの処理に Support Engineer の役に立つ情報を共有したりすることもできます。
 
-#### APAC の週末バックアップエンジニア {#backup-engineers-on-weekends-in-apac}
+#### APAC で緊急対応が重なった場合 {#concurrent-emergencies-in-apac}
 
-同時緊急対応は週末により頻繁になることが予想されます。APAC マネージャーと次のイテレーションの緊急対応カバレッジについて活発な議論があります。当面の解決策として、APAC Support チームには、必要な場合に同時緊急対応を支援するためにオンコールマネージャーがページできる Support Engineer のバックアッププールがあります。
+APAC の CEOC シフトでは、エンジニアが **Primary** と **Secondary** を 1 人ずつ担当します。毎日、グループ 1 は 00:00 から 04:00 UTC まで、グループ 2 は 04:00 から 08:00 UTC までをカバーします。シフトのローテーションは火曜日の 00:00 UTC に切り替わります。
 
-バックアッププールに参加する Support Engineer は **バックアップエンジニア** と呼ばれ、厳密にボランティアベースです。
+| 役割 | 平日（火曜から金曜、および月曜） | 週末（土曜と日曜） |
+| ---- | ---------------------------------------- | ------------------------------ |
+| Primary | CEOC x.1 のエンジニア | 同じ CEOC x.1 のエンジニアがオンコールを担当 |
+| Secondary | CEOC x.2 のエンジニア（通常、Primary を担当する週の直前の週に Secondary に割り当てられます） | その日に勤務している[シフトエンジニア](/handbook/support/workflows/working-on-tickets/#weekend-focus-for-shift-engineers)が両グループを担当 |
 
-このプールは、概説のとおり、PagerDuty の既存のエスカレーションポリシーから独立しています:
+新しいページはすべて Primary が受け取ります。緊急対応が重なった場合に限り、Primary を担当する CEOC がツールでエスカレーションを行い、Secondary にページを送信します。週末のシフトエンジニアは、Secondary としてページを受け取るまでは、Advanced および Signature Success Tier の顧客の Severity 2 チケットに対する初回応答時間（FRT）を守ることを最優先します。
 
-```text
-Pool 1: On call engineer -> Support Manager on call -> Directors
-Pool 2: Backup engineers
-```
+Primary が緊急対応中に別の緊急対応が入った場合は、以下の手順に従います。
 
-バックアップポリシーへの変更 (メンバーの追加／削除を含む) は、[既存のエスカレーションポリシーを編集](https://gitlab.com/gitlab-com/support/support-ops/other-software/pagerduty/-/blob/master/.gitlab/issue_templates/Edit%20an%20existing%20escalation%20policy.md?ref_type=heads) Issue テンプレートを使用して PagerDuty プロジェクト内に Issue を作成することで、Support Manager と Support Engineer によって行うことができます。
+1. **Primary** は、Slack の PagerDuty または PagerDuty の Web インターフェースで、新しい未解決のインシデントに対して **Escalate** を使用します。PagerDuty は、`Customer Emergency Rotation` エスカレーションポリシーのレベル 2 にあたる `Customer Emergencies - APAC Group 1 Secondary` または `Customer Emergencies - APAC Group 2 Secondary` のスケジュールに従ってページを送信します。PagerDuty では、インシデントに対する Reassign オプションは廃止されています。
+1. **Secondary** は、ページを Acknowledge し、チケットを自分に割り当てます。顧客に連絡した後、ページを Resolve します。
+1. **Primary または Secondary** は、両者が緊急対応中の場合、再度 **Escalate** を使用します。PagerDuty は次のレベルであるオンコールの Support Manager にページを送信します。オンコールの Support Manager は、新しい緊急ページを担当するエンジニアを見つける責任を負います。
 
-*詳細については、[STM#4583](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/4583)を参照してください。*
+Secondary のスケジュールにオンコールの担当者がいない場合も、PagerDuty はレベル 2 に Secondary を表示します。この場合、ページはオンコールの Support Manager に送信されます。送信された通知にオンコールの Support Manager の名前が表示されていれば、オンコールの Secondary はいません。
 
-##### バックアップエンジニアへのページを開始するためにエスカレートする {#escalate-to-initiate-page-to-backup-engineers}
+ページがすでに解決済みの場合は、**Escalate** オプションが表示されません。ページを再オープンすると、PagerDuty が現在のレベルに再度ページを送信します。ページを Acknowledge してから **Escalate** を使用してください。
 
-現在の緊急対応に取り組んでいる間に同時緊急対応が入ってきた場合:
+特定の担当者に直接ページを送るには、[PagerDuty の Web インターフェース](https://gitlab.pagerduty.com/)または Slack のスラッシュコマンド `/pd declare` で新しいインシデントを宣言します。
 
-1. **あなた**: ページを Acknowledge／Resolve するのではなく、**Escalate** します。Support Manager は、新しい緊急ページを所有するエンジニアを見つける責任があります。
-1. **Support Manager**: 状況を評価します。状況が必要とする場合、[バックアッププールへのページを開始](/handbook/support/workflows/support-leader-on-the-hook)して、バックアップエンジニアからの支援を要請することが可能です。
-1. **バックアップ Support Engineer**: 緊急ページを Acknowledge して Resolve し、ケースで顧客を支援していることを示します。
+- **Primary** に送る場合は、影響を受けるサービスとして `Customer Support` を選択します。レベル 1 でオンコールの Primary にページが送信されます。
+- **Secondary またはオンコールの Support Manager** に送る場合は、影響を受けるサービスを選択せずに下にスクロールし、**Assign to** でオンコールの担当者を検索して割り当てます。担当者は、Secondary のスケジュール、Slack ハンドルの `@support-manager-oncall`、または Support Manager のスケジュールで確認してください。
+
+担当者を割り当てると新しいページが作成されるため、新しいページの説明に元のページへの参照を記載してください。
+
+週末のシフトエンジニアは、APAC の両グループの Secondary スケジュールで、PagerDuty の標準のオーバーライドレイヤーに登録されています。Secondary のスケジュールには PTO が反映されません。シフトエンジニアが担当する週末の勤務日に対応できない場合は、自分のオーバーライドを削除し、`#spt_shift` でオンコールの Support Manager に連絡して、その週末の Primary にも共有します。Secondary の代わりの担当者が見つからなければ、その日のエスカレーションはオンコールの Support Manager に直接送られます。
+
+Primary と Secondary の担当者は、[APAC のスケジュール](#ceoc-handover-schedules)で確認してください。背景と現在の担当者一覧は [STM#7702](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7702)を参照してください。
 
 ### 緊急対応かもしれない、そうでないかもしれない状況 {#situations-that-might-or-might-not-be-emergencies}
 
@@ -514,11 +525,12 @@ Customer Support は、GitLab の Advanced および Signature Success Tier に�
 
 |      | 土曜日 | 日曜日  |
 | ---- | -------- | ------- |
-| APAC | :white_check_mark: シフト  | CEOC    |
+| APAC | :white_check_mark: シフト  | :white_check_mark: シフト |
 | EMEA | :white_check_mark: シフト  | :white_check_mark: シフト |
 | AMER | :white_check_mark: シフト  | CEOC    |
 
-これは、土曜日にはすべてのリージョンでカバレッジがありますが、日曜日にはないことを意味します。
+土曜日は全リージョン、日曜日は APAC と EMEA をシフトエンジニアがカバーします。APAC の週末は、シフトエンジニアが CEOC の Secondary も担当します。[APAC で緊急対応が重なった場合](#concurrent-emergencies-in-apac)を参照してください。
+
 これは、[STM#6743 24/7 シフトの役割とその実装](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6743)でさらに詳述されている 3 段階アプローチのフェーズ 2 です。
 
 ### PagerDuty アラート {#pagerduty-alerts}

@@ -2,43 +2,30 @@
 title: "Create:Code Review グループ"
 description: Create:Code Review グループは、Create ステージの Code Review グループに属するすべてのプロダクトカテゴリを担当しています。
 upstream_path: /handbook/engineering/devops/create/code-review/
-upstream_sha: be228760349beb5ac063e32579ee6507e09f8b6e
-translated_at: "2026-11-24T21:13:59+00:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+translated_at: "2026-11-28T06:21:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-11-24T16:46:19+01:00"
+lastmod: "2026-11-27T18:04:05Z"
 ---
 
 Create:Code Review グループは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [Create ステージ](/handbook/product/categories/#create-stage)の [Code Review グループ](/handbook/product/categories/#code-review-group)に属するプロダクトカテゴリのすべての側面を担当しています。
 
 ## グループ概要
 
-### グループメンバー
-
-以下の方々が Create:Code Review グループの常設メンバーです。
-
-{{<team-by-departments "Create:Code Review" >}}
-
 ### サブ部門固有のページ
 
 - [バックエンド](/handbook/engineering/devops/create/code-review/backend/)
 - [フロントエンド](/handbook/engineering/devops/create/code-review/frontend/)
-
-### プロダクトカテゴリ
-
-Code Review グループは以下のプロダクトカテゴリを担当しています。
-
-- [コードレビュー](https://about.gitlab.com/direction/create/code_review_workflow/)
-- [GitLab CLI](https://about.gitlab.com/direction/create/gitlab_cli/)
 
 ### カテゴリパフォーマンス指標
 
 - [コードレビューカテゴリ MAU](https://internal.gitlab.com/handbook/company/performance-indicators/product/dev-section/#createcode-review---category-mau---unique-users-using-merge-requests)（内部のみ）
 - [Editor Extension カテゴリ MAU](https://internal.gitlab.com/handbook/company/performance-indicators/product/dev-section/#createcode-review---editor-extension---category-mau)（内部のみ）
 
-## 作業
+## 作業 {#work}
 
-### 作業方法
+### 作業方法 {#how-we-work}
 
 一般的に、私たちは標準の GitLab [エンジニアリングワークフロー](/handbook/engineering/workflow/)を使用しています。Create:Code Review チームに連絡するには、関連プロジェクト（通常は [GitLab](https://gitlab.com/gitlab-org/gitlab)）に Issue を作成し、`~"group::code review"` ラベルと他の適切なラベル（`~devops::create`、`~section::dev`）を追加するのが最善です。その後、上記のリストの関連するプロダクトマネージャーおよび/またはエンジニアリングマネージャーに自由に ping してください。
 
@@ -107,6 +94,19 @@ PM 以外の安定したカウンターパートと必要に応じて密接に�
 ### GitLab より広いコミュニティとの協力
 
 私たちは非常に大きな機能セットをサポートしているため、チームはしばしば GitLab のより広いコミュニティからのコミュニティ貢献をレビューします。各コントリビューターに私たちの「[ホワイトグローブ対応](https://www.merriam-webster.com/dictionary/white-glove)」を提供することが奨励されます。寄贈された時間への認識を示し、非常に役立つレビューを行い、貢献を励ますことはすべてコミュニティ意識を築く優れた方法です。レビューや提案への ping に応答する時間がない場合は、別の人に ping できるよう ping した人に素早く知らせてください。
+
+### グループ外からのマージリクエスト {#merge-requests-from-outside-the-group}
+
+マージリクエスト、承認、マージ可否、自動マージ、差分は、GitLab の中でも特に相互の関連が深い領域です。一見小さな変更でも、差分からは分からない形でマージトレイン、承認ルール、キャッシュに影響を及ぼすことがあります。作成者が変更を説明できなければ、レビュアーはレビューの SLO が定める時間内に自力で変更内容を把握する必要があります。その結果、作成者が担うべき負担がレビュアーに移ります。
+
+これらの領域でマージリクエストを作成する前に、自分が変更に責任を持てるか確認してください。
+
+- **変更に責任を持てる場合。** AI ツールを使ったかどうかにかかわらず、差分を自分で説明し、レビューでの質問に答えられます（[自分自身として伝える](/handbook/engineering/infrastructure-platforms/ai_usage_principles/#communicate-as-yourself)を参照）。レビューを依頼する前に修正を検証し、検証方法をマージリクエストの説明に記載してください。変更が大規模または複雑な場合や、私たちの機能の動作が変わる場合は、ドラフトとして作成し、レビュー可能にする前にグループと進め方について合意してください。Issue で相談することもできます。
+- **変更に責任を持てない場合。** [作業方法](#how-we-work)に記載のとおり、代わりに `~"group::code review"` ラベルを付けた Issue を作成してください。問題の再現手順を記載し、エージェントが修正案を作成していれば、そのリンクを添えてください。私たちは通常の作業と同様に計画に組み込むため、レビューよりも時間がかかります。
+
+インシデントや `master` の不具合への対応など、優先度の高い修正は、この手続きの完了を待つ必要はありません。作成者がその領域に不慣れな場合でも、修正が正しく機能するようにグループが支援します。
+
+これらの手順が省略されたマージリクエストについては、グループのレビュアーがドラフトに戻し、このセクションへのリンクを添えて、まずグループに意見を求めることがあります。
 
 ### ヘルプリクエスト（RFH）
 
@@ -190,7 +190,3 @@ Code Review グループは、チームメンバーが関心のあるプロダ�
 ## ヒントとコツ
 
 開発者向けドキュメントやハンドブックに追加するほど「準備が整っていない」、または十分でないヒント、コツ、クイックシェルスクリプトには、[Create ステージウィキ](https://gitlab.com/groups/gitlab-com/create-stage/-/wikis/home)を使用しています。
-
-### AI プロンプト
-
-より効率的になるために使用する[一般的な AI プロンプト](/handbook/engineering/devops/create/code-review/ai-prompts/)のリストを維持しています。

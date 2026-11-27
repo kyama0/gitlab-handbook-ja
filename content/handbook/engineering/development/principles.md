@@ -1,11 +1,11 @@
 ---
 title: エンジニアリング原則
 upstream_path: "/handbook/engineering/development/principles/"
-upstream_sha: 52419353ea755a1ac823553385f8636ff2fcde17
-translated_at: "2026-11-01T08:09:23+00:00"
+upstream_sha: 3f489816f1fcde506cae1427b280d744ab382621
+translated_at: "2026-11-28T06:18:54+09:00"
 translator: claude
 stale: false
-lastmod: "2026-10-30T14:17:26-04:00"
+lastmod: "2026-11-24T10:24:22-06:00"
 ---
 
 ## エンジニアリング原則 {#engineering-principles}
@@ -102,7 +102,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ### レビュー時間を短縮する {#reduce-review-time}
 
-コードレビューのレイテンシーに注意してください。著者をコードレビューに長く待たせないでください。
+コードレビューにかかる時間に注意し、マージリクエストの作成者を長く待たせないでください。私たちは、レビューサイクルを 24 時間以内に収めることを目指しています。人によるレビューの度合いを変更のリスクに応じて決める方式に移行しています。[コードレビューガイドライン](/handbook/engineering/workflow/code-review/)を参照してください。
 
 多くの人にとって、コンテキストスイッチングは非常にコストのかかることで、生産性に悪影響を与えます。コードをレビューしたり、チームメンバーと非同期で協力したりする際にはこれを念頭に置いてください。質問への回答が不要な場合や、コードの提案が対処する必要のない些細な指摘である場合は、これらを行うために必要なコンテキストスイッチングの価値がないかもしれません。
 
@@ -129,6 +129,14 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 機能が GitLab の他の部分からより独立しているほど、より多くのリスクを取ることができます。なぜなら、実験的機能の問題が一般提供（GA）機能やプロダクト全体に悪影響を与える可能性が低いからです。
 
 このルールには 1 つの例外があります： 可用性とセキュリティです。成熟度モデルに関わらず、コードは常にできる限り安全であるべきで、GitLab.com をダウンさせるべきではありません。
+
+### エージェントを使って開発する {#develop-with-agents}
+
+私たちは、エージェントを活用した開発に移行しています。FY28（2027 年 2 月）からは、すべてのエンジニアが手作業によるコード編集から、エージェントによるコードの作成、テスト、改善に切り替えます。より長時間かかるタスクも、作業全体をエージェントに委ねます。
+
+### 新機能をモジュール化されたサービスとして構築する {#build-new-features-as-modular-services}
+
+すべての新機能は、モジュール化されたサービスとして構築します。モノリスでの作業は、バグ修正、既存機能の強化、信頼性とスケーラビリティの改善、コスト最適化、モダナイゼーション、顧客にとって重要な作業に限ります。
 
 ### メンテナンスのバランスを取る {#balance-maintenance}
 
@@ -167,7 +175,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ## 品質 {#quality}
 
-品質はすべての人の責任であることを覚えておくことが重要です。master にマージするすべてのものは本番環境への準備ができているべきです。[完了の定義](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)に慣れてください。
+品質はすべての人の責任です。各チームは、リリースする成果物の品質、セキュリティ、信頼性に責任を持ちます。品質基準を守り、必要に応じてリリースの対象範囲を縮小してください。master にマージする変更はすべて、本番環境で使用できる状態にしてください。[完了の定義](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)を把握してください。
 
 ### 準備ができたらリリースする {#release-when-its-ready}
 
@@ -190,7 +198,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 これらの理由などから、私たちは意図的に Self-Managed の月次リリースに含めるためにマージすべきコードの[特定の日付を定義しません](/handbook/engineering/releases/monthly-releases#timelines)。早くマージされるほど良いです。これはまた以下を意味します：
 
 1. マージリクエストの著者が期限に間に合わせるために時間外に作業することや急ぐことを望みません。
-1. [レビュアーとメンテナー](/handbook/engineering/workflow/code-review/)が[通常の SLO](/handbook/engineering/workflow/code-review/#review-response-slo)を満たす以外のことをするためにプレッシャーをかけられることを望みません。
+1. レビュアーには、[コードレビューガイドライン](/handbook/engineering/workflow/code-review/)に従ってもらいます。それを超える対応を迫ることは望みません。
 
 マージリクエストが特定のリリースに入ることが不可欠な場合は、エンジニアとすべてのレビュアーがそのコミットメントを果たせるよう、事前に十分に伝えることが必要です。重大なバグを短い準備期間で修正する必要がある場合は、修正を急ぐより、原因となった変更を元に戻すか、場合によっては修正の準備が整うまでリリースを遅らせる方が適切です。
 
@@ -199,6 +207,8 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 ### ドッグフーディング {#dogfooding}
 
 私たちは[すべてのものをドッグフーディングします](/handbook/product/product-processes/dogfooding-for-r-d/)。[プロダクト原則](/handbook/product/#product-principles)に基づき、機能のドッグフーディングや Product へのフィードバックのために必要な調査業務を行うことは、Engineering 部門の責任です。改善の優先順位付けや GitLab 内での機能の再構築は Product の責任です。
+
+すべての R&D チームは、社内の Software Factory を使い、同ツールを対象にバグを報告し、フィードバックを共有し、マージリクエストを提出します。すべての主要プロジェクトで、一般提供（GA）に達する前に、実際の Customer Zero と支払いの意思があるデザインパートナーを確保する必要があります。
 
 #### ドッグフーディングのアンチパターン {#dogfooding-antipatterns}
 
